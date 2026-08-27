@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-08-27T20:34:06.636Z",
-  "count": 8,
+  "generatedAt": "2026-08-27T20:59:03.166Z",
+  "count": 120,
   "results": [
     {
       "restaurantId": "edna",
       "name": "EDNA",
       "website": "https://www.ednarestaurant.com/",
       "status": 200,
-      "observedAt": "2026-08-27T20:34:00.828Z",
+      "observedAt": "2026-08-27T20:57:32.430Z",
       "keywordHits": [
         "event",
         "events",
@@ -34,7 +34,7 @@
       "name": "Highwayman",
       "website": "https://www.highwaymanhfx.com/",
       "status": 200,
-      "observedAt": "2026-08-27T20:34:00.946Z",
+      "observedAt": "2026-08-27T20:57:33.110Z",
       "keywordHits": [
         "happy hour",
         "event",
@@ -99,7 +99,7 @@
       "name": "Field Guide",
       "website": "https://fieldguidehfx.com",
       "status": 200,
-      "observedAt": "2026-08-27T20:34:01.089Z",
+      "observedAt": "2026-08-27T20:57:33.519Z",
       "keywordHits": [
         "happy hour",
         "menu",
@@ -127,7 +127,7 @@
       "name": "2 Crows Brewing",
       "website": "https://www.2crowsbrewing.com/",
       "status": 200,
-      "observedAt": "2026-08-27T20:34:01.803Z",
+      "observedAt": "2026-08-27T20:57:34.462Z",
       "keywordHits": [
         "special",
         "event",
@@ -141,7 +141,7 @@
       "name": "7 Peppers Grill",
       "website": "https://www.7peppersgrill.net/",
       "status": 200,
-      "observedAt": "2026-08-27T20:34:02.092Z",
+      "observedAt": "2026-08-27T20:57:34.892Z",
       "keywordHits": [
         "special",
         "event",
@@ -165,7 +165,7 @@
       "name": "9 + Nine",
       "website": "https://9plus9.ca/",
       "error": "fetch failed",
-      "observedAt": "2026-08-27T20:34:02.151Z",
+      "observedAt": "2026-08-27T20:57:34.929Z",
       "reviewState": "needs-review"
     },
     {
@@ -173,7 +173,7 @@
       "name": "A&W",
       "website": "https://web.aw.ca/en/locations/6012/dartmouth/240-victoria-rd",
       "status": 200,
-      "observedAt": "2026-08-27T20:34:02.276Z",
+      "observedAt": "2026-08-27T20:57:35.283Z",
       "keywordHits": [
         "event"
       ],
@@ -185,7 +185,7 @@
       "name": "aFrite",
       "website": "https://afrite.ca/",
       "status": 200,
-      "observedAt": "2026-08-27T20:34:06.635Z",
+      "observedAt": "2026-08-27T20:57:48.939Z",
       "keywordHits": [
         "special",
         "event",
@@ -221,6 +221,3036 @@
         {
           "text": "",
           "href": "https://i0.wp.com/afrite.ca/wp-content/uploads/2021/04/Summer-Menu-2.jpg?fit=1080%2C1350&#038;ssl=1"
+        }
+      ],
+      "reviewState": "needs-review"
+    },
+    {
+      "restaurantId": "osm-node-8158663930-almonak",
+      "name": "Almonak",
+      "website": "https://www.almonak.com/",
+      "status": 200,
+      "observedAt": "2026-08-27T20:57:49.171Z",
+      "keywordHits": [
+        "event",
+        "events",
+        "menu",
+        "brunch"
+      ],
+      "candidateLinks": [
+        {
+          "text": "Book an Event",
+          "href": "https://www.almonak.com/book-an-event"
+        },
+        {
+          "text": "Book an Event",
+          "href": "https://www.almonak.com/book-an-event"
+        }
+      ],
+      "reviewState": "needs-review"
+    },
+    {
+      "restaurantId": "osm-node-7465073827-antojo-tacos-tequila",
+      "name": "Antojo Tacos + Tequila",
+      "website": "https://antojo.ca",
+      "status": 200,
+      "observedAt": "2026-08-27T20:57:49.642Z",
+      "keywordHits": [
+        "event",
+        "events",
+        "menu",
+        "cocktail"
+      ],
+      "candidateLinks": [
+        {
+          "text": "Menus",
+          "href": "https://antojo.ca/#menus"
+        },
+        {
+          "text": "food &amp; dessert menu",
+          "href": "https://antojo.ca/wp-content/uploads/2026/05/Antojo-Food-Menus.pdf"
+        },
+        {
+          "text": "drink menu",
+          "href": "https://antojo.ca/wp-content/uploads/2026/08/Antojo_Beverage_Summer2026_Tall-2.pdf"
+        },
+        {
+          "text": "🍹 WE’RE HIRING! 🌮 Know your way around a cocktail",
+          "href": "https://www.instagram.com/p/DcTuUgsxE55/"
+        }
+      ],
+      "reviewState": "needs-review"
+    },
+    {
+      "restaurantId": "osm-node-3104067229-ardmore-tea-room",
+      "name": "Ardmore Tea Room",
+      "website": "https://www.ardmoretearoom.ca/",
+      "status": 200,
+      "observedAt": "2026-08-27T20:57:50.034Z",
+      "keywordHits": [
+        "event",
+        "events",
+        "menu"
+      ],
+      "candidateLinks": [
+        {
+          "text": "Menu",
+          "href": "https://www.ardmoretearoom.ca/menu"
+        },
+        {
+          "text": "Menu",
+          "href": "https://www.ardmoretearoom.ca/menu"
+        }
+      ],
+      "reviewState": "needs-review"
+    },
+    {
+      "restaurantId": "osm-node-9652937830-arirang-korean-and-japanese",
+      "name": "Arirang Korean & Japanese",
+      "website": "https://arirang-restaurant.com/",
+      "error": "fetch failed",
+      "observedAt": "2026-08-27T20:58:00.244Z",
+      "reviewState": "needs-review"
+    },
+    {
+      "restaurantId": "osm-node-12143582175-asia-restaurant-and-bar",
+      "name": "Asia Restaurant & Bar",
+      "website": "https://asiahalifax.com/",
+      "status": 200,
+      "observedAt": "2026-08-27T20:58:00.437Z",
+      "keywordHits": [
+        "special",
+        "event",
+        "menu"
+      ],
+      "candidateLinks": [
+        {
+          "text": "Our Menu",
+          "href": "https://asiahalifax.com/menus"
+        },
+        {
+          "text": "Our Menu",
+          "href": "https://asiahalifax.com/menus"
+        }
+      ],
+      "reviewState": "needs-review"
+    },
+    {
+      "restaurantId": "osm-node-4474954245-bai-wei-grill-bar",
+      "name": "Bai Wei Grill Bar",
+      "website": "http://baiweigrillbar.com",
+      "error": "fetch failed",
+      "observedAt": "2026-08-27T20:58:00.470Z",
+      "reviewState": "needs-review"
+    },
+    {
+      "restaurantId": "osm-node-8600605850-barburrito",
+      "name": "BarBurrito",
+      "website": "https://www.barburrito.ca/location/dartmouth/",
+      "status": 200,
+      "observedAt": "2026-08-27T20:58:01.353Z",
+      "keywordHits": [
+        "event",
+        "menu"
+      ],
+      "candidateLinks": [
+        {
+          "text": "Menu",
+          "href": "https://www.barburrito.ca/#menu"
+        }
+      ],
+      "reviewState": "needs-review"
+    },
+    {
+      "restaurantId": "osm-node-3801064263-barrios-kitchen-and-bar",
+      "name": "Barrios Kitchen & Bar",
+      "website": "https://www.barrioshfx.ca/",
+      "status": 200,
+      "observedAt": "2026-08-27T20:58:01.832Z",
+      "keywordHits": [
+        "event",
+        "events",
+        "menu",
+        "brunch",
+        "cocktail"
+      ],
+      "candidateLinks": [
+        {
+          "text": "Barrios Menu",
+          "href": "https://www.barrioshfx.ca/barrios-menu"
+        },
+        {
+          "text": "Sunday Brunch",
+          "href": "https://www.barrioshfx.ca/sunday-brunch"
+        },
+        {
+          "text": "Menu Guide",
+          "href": "https://www.barrioshfx.ca/menu-guide"
+        },
+        {
+          "text": "Barrios Menu",
+          "href": "https://www.barrioshfx.ca/barrios-menu"
+        },
+        {
+          "text": "Sunday Brunch",
+          "href": "https://www.barrioshfx.ca/sunday-brunch"
+        },
+        {
+          "text": "Menu Guide",
+          "href": "https://www.barrioshfx.ca/menu-guide"
+        },
+        {
+          "text": "View Menu",
+          "href": "https://www.barrioshfx.ca/barrios-menu"
+        },
+        {
+          "text": "Menu Guide",
+          "href": "https://www.barrioshfx.ca/menu-guide"
+        },
+        {
+          "text": "Filipino brunch",
+          "href": "https://barrioshfx.ca/sunday-brunch-halifax"
+        }
+      ],
+      "reviewState": "needs-review"
+    },
+    {
+      "restaurantId": "osm-way-83552117-bedford-beer-garden",
+      "name": "Bedford Beer Garden",
+      "website": "https://www.bedfordbeergarden.com/",
+      "status": 200,
+      "observedAt": "2026-08-27T20:58:01.957Z",
+      "keywordHits": [
+        "event",
+        "events",
+        "live music",
+        "menu"
+      ],
+      "candidateLinks": [
+        {
+          "text": "Food Menu",
+          "href": "https://www.bedfordbeergarden.com/foodmenu"
+        },
+        {
+          "text": "Drink Menu",
+          "href": "https://www.bedfordbeergarden.com/drinkmenu"
+        },
+        {
+          "text": "Events",
+          "href": "https://www.bedfordbeergarden.com/events"
+        },
+        {
+          "text": "Food Menu",
+          "href": "https://www.bedfordbeergarden.com/foodmenu"
+        },
+        {
+          "text": "Drink Menu",
+          "href": "https://www.bedfordbeergarden.com/drinkmenu"
+        },
+        {
+          "text": "Events",
+          "href": "https://www.bedfordbeergarden.com/events"
+        },
+        {
+          "text": "Food Menu",
+          "href": "https://www.bedfordbeergarden.com/foodmenu"
+        },
+        {
+          "text": "Drink Menu",
+          "href": "https://www.bedfordbeergarden.com/drinkmenu"
+        },
+        {
+          "text": "Events",
+          "href": "https://www.bedfordbeergarden.com/events"
+        }
+      ],
+      "reviewState": "needs-review"
+    },
+    {
+      "restaurantId": "osm-node-10665783054-ben-and-florentine",
+      "name": "Ben & Florentine",
+      "website": "https://benetflorentine.com/",
+      "status": 200,
+      "observedAt": "2026-08-27T20:58:02.409Z",
+      "keywordHits": [
+        "event",
+        "menu"
+      ],
+      "candidateLinks": [
+        {
+          "text": "Menu",
+          "href": "https://benetflorentine.com/en/menu"
+        },
+        {
+          "text": "Menu",
+          "href": "https://benetflorentine.com/en/menu"
+        }
+      ],
+      "reviewState": "needs-review"
+    },
+    {
+      "restaurantId": "osm-node-1116387649-bicycle-thief",
+      "name": "Bicycle Thief",
+      "website": "https://bicyclethief.ca/",
+      "status": 200,
+      "observedAt": "2026-08-27T20:58:02.901Z",
+      "keywordHits": [
+        "special",
+        "menu",
+        "wine"
+      ],
+      "candidateLinks": [
+        {
+          "text": "Food / Wine",
+          "href": "https://bicyclethief.ca/food-wine/"
+        },
+        {
+          "text": "Menu Menu",
+          "href": "https://bicyclethief.ca/#"
+        }
+      ],
+      "reviewState": "needs-review"
+    },
+    {
+      "restaurantId": "osm-node-10038454787-bird-s-nest-cafe",
+      "name": "Bird's Nest Cafe",
+      "website": "https://www.birdsnesthalifax.com/",
+      "status": 200,
+      "observedAt": "2026-08-27T20:58:03.067Z",
+      "keywordHits": [
+        "special",
+        "specials",
+        "event",
+        "events",
+        "menu"
+      ],
+      "candidateLinks": [
+        {
+          "text": "ORDER TAKE OUT &amp; VIEW MENU",
+          "href": "http://birds-nest-cafe.square.site/"
+        }
+      ],
+      "reviewState": "needs-review"
+    },
+    {
+      "restaurantId": "osm-node-13141457102-bitter-end-martini-bar-and-restaurant",
+      "name": "Bitter End Martini Bar & Restaurant",
+      "website": "https://www.bitterend.ca/",
+      "status": 200,
+      "observedAt": "2026-08-27T20:58:03.249Z",
+      "keywordHits": [
+        "menu"
+      ],
+      "candidateLinks": [
+        {
+          "text": "menu",
+          "href": "https://www.bitterend.ca/menu.html"
+        }
+      ],
+      "reviewState": "needs-review"
+    },
+    {
+      "restaurantId": "osm-node-267592735-bluenose-ii",
+      "name": "Bluenose II",
+      "website": "https://www.bluenoseii.ca/",
+      "status": 200,
+      "observedAt": "2026-08-27T20:58:03.886Z",
+      "keywordHits": [
+        "special",
+        "event",
+        "events",
+        "menu",
+        "wine"
+      ],
+      "candidateLinks": [
+        {
+          "text": "Please select a menu in this location",
+          "href": "https://bluenoseii.ca/wp-admin/nav-menus.php?action=locations"
+        },
+        {
+          "text": "",
+          "href": "https://bluenoseii.ca/wp-content/uploads/2019/03/8oz_striploin_with_wine_45_img_6613_small.jpg"
+        },
+        {
+          "text": "View The Full Menu",
+          "href": "https://www.bluenoseii.ca/menu/"
+        }
+      ],
+      "reviewState": "needs-review"
+    },
+    {
+      "restaurantId": "osm-node-4420916900-board-room-game-cafe",
+      "name": "Board Room Game Cafe",
+      "website": "http://boardroomgames.ca/",
+      "status": 200,
+      "observedAt": "2026-08-27T20:58:04.219Z",
+      "keywordHits": [
+        "special",
+        "event",
+        "events",
+        "menu"
+      ],
+      "candidateLinks": [
+        {
+          "text": "Menus",
+          "href": "https://boardroomgames.wixsite.com/tbrgc/menu"
+        },
+        {
+          "text": "Events",
+          "href": "https://boardroomgames.wixsite.com/tbrgc/upcoming-events"
+        },
+        {
+          "text": "TTRPG Events",
+          "href": "https://boardroomgames.wixsite.com/tbrgc/info"
+        },
+        {
+          "text": "events@boardroomgames.ca",
+          "href": "mailto:events@boardroomgames.ca?subject=Large%20Group%20Booking!"
+        },
+        {
+          "text": "Read More &gt;",
+          "href": "https://boardroomgames.wixsite.com/tbrgc/upcoming-events"
+        },
+        {
+          "text": "events@boardroomgames.ca",
+          "href": "mailto:events@boardroomgames.ca?subject=Events%20at%20the%20Board%20Room!"
+        },
+        {
+          "text": "Contact Us",
+          "href": "mailto:Events@boardroomgames.ca"
+        }
+      ],
+      "reviewState": "needs-review"
+    },
+    {
+      "restaurantId": "osm-node-8636456775-booster-juice",
+      "name": "Booster Juice",
+      "website": "https://www.boosterjuice.com/",
+      "status": 200,
+      "observedAt": "2026-08-27T20:58:04.941Z",
+      "keywordHits": [
+        "special",
+        "event",
+        "events",
+        "menu"
+      ],
+      "candidateLinks": [
+        {
+          "text": "SPECIALTY SHOTS",
+          "href": "https://www.boosterjuice.com/en-ca/collections/specialty-shots"
+        },
+        {
+          "text": "CORPORATE &amp; EVENT PROGRAM",
+          "href": "https://www.boosterjuice.com/en-ca/pages/catering"
+        },
+        {
+          "text": "FIND YOUR PERFECT SPECIALTY SHOT",
+          "href": "https://www.boosterjuice.com/en-ca/collections/specialty-shots"
+        },
+        {
+          "text": "Specialty Shots",
+          "href": "https://www.boosterjuice.com/en-ca/collections/specialty-shots"
+        }
+      ],
+      "reviewState": "needs-review"
+    },
+    {
+      "restaurantId": "osm-way-393886756-boston-pizza",
+      "name": "Boston Pizza",
+      "website": "https://bostonpizza.com/en/index.html",
+      "status": 200,
+      "observedAt": "2026-08-27T20:58:05.049Z",
+      "keywordHits": [
+        "event",
+        "live music",
+        "menu"
+      ],
+      "candidateLinks": [
+        {
+          "text": "Menu",
+          "href": "https://bostonpizza.com/en/menu.html"
+        },
+        {
+          "text": "LIVE MUSIC",
+          "href": "https://bostonpizza.com/en/promotions/summer-promotion.html"
+        },
+        {
+          "text": "FEAST LIKE A HOCKEY GOD",
+          "href": "https://bostonpizza.com/en/promotions/playoff-feature-menu.html"
+        },
+        {
+          "text": "VIEW MENU",
+          "href": "https://bostonpizza.com/en/promotions/winter-cravings.html"
+        },
+        {
+          "text": "LIVE MUSIC",
+          "href": "https://bostonpizza.com/en/promotions/summer-promotion.html"
+        },
+        {
+          "text": "",
+          "href": "https://bostonpizza.com/en/promotions/summer-feature-menu.html"
+        },
+        {
+          "text": "View Lunch Menu",
+          "href": "https://bostonpizza.com/en/promotions/lunch-menu.html"
+        },
+        {
+          "text": "VIEW LUNCH MENU",
+          "href": "https://bostonpizza.com/en/promotions/lunch-menu.html"
+        },
+        {
+          "text": "VIEW LUNCH MENU",
+          "href": "https://bostonpizza.com/en/promotions/lunch-menu.html"
+        },
+        {
+          "text": "",
+          "href": "https://bostonpizza.com/en/menu.html"
+        },
+        {
+          "text": "Menu",
+          "href": "https://bostonpizza.com/en/menu.html"
+        }
+      ],
+      "reviewState": "needs-review"
+    },
+    {
+      "restaurantId": "osm-node-11752691591-bramble-cafe",
+      "name": "Bramble Cafe",
+      "website": "https://www.instagram.com/bramble.hfx",
+      "status": 200,
+      "observedAt": "2026-08-27T20:58:05.513Z",
+      "keywordHits": [
+        "special",
+        "event",
+        "events",
+        "menu"
+      ],
+      "candidateLinks": [],
+      "reviewState": "needs-review"
+    },
+    {
+      "restaurantId": "osm-node-7465111619-brawta-jamaican-jerk-joint",
+      "name": "Brawta Jamaican Jerk Joint",
+      "website": "https://brawtajerk.ca/",
+      "status": 200,
+      "observedAt": "2026-08-27T20:58:05.814Z",
+      "keywordHits": [
+        "special",
+        "event",
+        "events",
+        "menu"
+      ],
+      "candidateLinks": [
+        {
+          "text": "Grafton St Menu",
+          "href": "https://brawtajerk.ca/menu"
+        },
+        {
+          "text": "Grafton St Menu",
+          "href": "https://brawtajerk.ca/menu"
+        },
+        {
+          "text": "Grafton St Menu",
+          "href": "https://brawtajerk.ca/menu"
+        },
+        {
+          "text": "Our Menu",
+          "href": "https://brawtajerk.ca/menu"
+        }
+      ],
+      "reviewState": "needs-review"
+    },
+    {
+      "restaurantId": "osm-node-11526163882-brief-break",
+      "name": "Brief Break",
+      "website": "https://dal.campusdish.com/LocationsAndMenus/WeldonLawBuilding",
+      "status": 200,
+      "observedAt": "2026-08-27T20:58:06.443Z",
+      "keywordHits": [
+        "special",
+        "event",
+        "events",
+        "menu",
+        "brunch"
+      ],
+      "candidateLinks": [
+        {
+          "text": "Skip to Content",
+          "href": "https://dal.campusdish.com/LocationsAndMenus/WeldonLawBuilding#main-content"
+        },
+        {
+          "text": "My Menu",
+          "href": "https://dal.campusdish.com/en/account?section=my-menu"
+        },
+        {
+          "text": "Meal Plans",
+          "href": "https://dal.campusdish.com/LocationsAndMenus/WeldonLawBuilding#"
+        },
+        {
+          "text": "Locations &amp; Menus",
+          "href": "https://dal.campusdish.com/en/locations"
+        },
+        {
+          "text": "Health &amp; Wellness",
+          "href": "https://dal.campusdish.com/LocationsAndMenus/WeldonLawBuilding#"
+        },
+        {
+          "text": "Sustainability",
+          "href": "https://dal.campusdish.com/LocationsAndMenus/WeldonLawBuilding#"
+        },
+        {
+          "text": "About Us",
+          "href": "https://dal.campusdish.com/LocationsAndMenus/WeldonLawBuilding#"
+        }
+      ],
+      "reviewState": "needs-review"
+    },
+    {
+      "restaurantId": "osm-node-9330955319-budapest-bisztro",
+      "name": "Budapest Bisztro",
+      "website": "https://budapestbisztro.ca/",
+      "status": 200,
+      "observedAt": "2026-08-27T20:58:07.075Z",
+      "keywordHits": [],
+      "candidateLinks": [],
+      "reviewState": "needs-review"
+    },
+    {
+      "restaurantId": "osm-node-3791528457-cabin-coffee",
+      "name": "Cabin Coffee",
+      "website": "https://cabincoffeehalifax.com/",
+      "status": 200,
+      "observedAt": "2026-08-27T20:58:07.499Z",
+      "keywordHits": [],
+      "candidateLinks": [],
+      "reviewState": "needs-review"
+    },
+    {
+      "restaurantId": "osm-node-11752614922-cafe-good-luck",
+      "name": "Café Good Luck",
+      "website": "https://www.manualfoodanddrinkco.com/goodluck",
+      "status": 200,
+      "observedAt": "2026-08-27T20:58:08.025Z",
+      "keywordHits": [
+        "special",
+        "specials",
+        "event",
+        "events",
+        "menu",
+        "brunch"
+      ],
+      "candidateLinks": [],
+      "reviewState": "needs-review"
+    },
+    {
+      "restaurantId": "osm-node-9089629991-cafe-lara",
+      "name": "Café Lara",
+      "website": "https://cafelara.ca",
+      "error": "fetch failed",
+      "observedAt": "2026-08-27T20:58:08.117Z",
+      "reviewState": "needs-review"
+    },
+    {
+      "restaurantId": "osm-node-11751643550-cafe-lunette",
+      "name": "Café Lunette",
+      "website": "https://www.cafelunette.com/",
+      "status": 200,
+      "observedAt": "2026-08-27T20:58:08.335Z",
+      "keywordHits": [
+        "happy hour",
+        "special",
+        "event",
+        "events",
+        "menu",
+        "brunch",
+        "wine",
+        "cocktail"
+      ],
+      "candidateLinks": [
+        {
+          "text": "Menu",
+          "href": "https://www.cafelunette.com/bistro-menu/"
+        },
+        {
+          "text": "Café",
+          "href": "https://www.cafelunette.com/cafe-menu/"
+        },
+        {
+          "text": "Menu",
+          "href": "https://www.cafelunette.com/bistro-menu/"
+        },
+        {
+          "text": "Café",
+          "href": "https://www.cafelunette.com/cafe-menu/"
+        },
+        {
+          "text": "Explore Our Menu",
+          "href": "https://www.cafelunette.com/bistro-menu/"
+        },
+        {
+          "text": "Order Online Grab + Go",
+          "href": "https://silverpay.app/cafelunette/menu"
+        },
+        {
+          "text": "VIEW MENUS",
+          "href": "https://www.cafelunette.com/bistro-menu/"
+        },
+        {
+          "text": "Private Events",
+          "href": "https://www.cafelunette.com/private-events/"
+        },
+        {
+          "text": "Private Events",
+          "href": "https://www.cafelunette.com/private-events/"
+        },
+        {
+          "text": "Café",
+          "href": "https://www.cafelunette.com/cafe-menu/"
+        },
+        {
+          "text": "Café",
+          "href": "https://www.cafelunette.com/cafe-menu/"
+        },
+        {
+          "text": "Wine Wednesdays, à la Lunette",
+          "href": "https://www.opentable.ca/booking/experiences-availability?rid=1226047&restref=1226047&experienceId=696902&utm_source=external&utm_medium=referral&utm_campaign=shared"
+        }
+      ],
+      "reviewState": "needs-review"
+    },
+    {
+      "restaurantId": "osm-node-4421124794-cafe-marco-polo",
+      "name": "Cafe Marco Polo",
+      "website": "https://justuscoffee.com/locations/kings-wharf-dartmouth",
+      "status": 404,
+      "observedAt": "2026-08-27T20:58:08.751Z",
+      "keywordHits": [
+        "event",
+        "events",
+        "menu"
+      ],
+      "candidateLinks": [],
+      "reviewState": "needs-review"
+    },
+    {
+      "restaurantId": "osm-node-30825944-canton-garden",
+      "name": "Canton Garden",
+      "website": "https://www.cantongardenhalifax.com/",
+      "status": 200,
+      "observedAt": "2026-08-27T20:58:09.550Z",
+      "keywordHits": [
+        "special",
+        "specials",
+        "event",
+        "events",
+        "menu"
+      ],
+      "candidateLinks": [
+        {
+          "text": "All Day Menu",
+          "href": "https://www.cantongardenhalifax.com/?menu=All+Day+Menu"
+        },
+        {
+          "text": "Lunch Menu",
+          "href": "https://www.cantongardenhalifax.com/?menu=Lunch+Menu"
+        },
+        {
+          "text": "🤩 POPULAR 1. Spring Roll (1pc) Pastry filled with vegetables. $ 3.50",
+          "href": "https://www.cantongardenhalifax.com/yik8nsx2/restaurant/order-online/menus/all-day-menu/42050420?menu=All+Day+Menu&amp;category=Appetizers"
+        },
+        {
+          "text": "1a. Shrimp Roll (4) $ 15.50",
+          "href": "https://www.cantongardenhalifax.com/yik8nsx2/restaurant/order-online/menus/all-day-menu/42050421?menu=All+Day+Menu&amp;category=Appetizers"
+        },
+        {
+          "text": "🤩 POPULAR 2. Egg Roll (1pc) Crispy fried roll filled with vegetables and served with a sweet chili sauce. $ 3.50",
+          "href": "https://www.cantongardenhalifax.com/yik8nsx2/restaurant/order-online/menus/all-day-menu/42050422?menu=All+Day+Menu&amp;category=Appetizers"
+        },
+        {
+          "text": "3. Fried Wontons (12) Crispy fried wontons with a delicate filling. $ 7.25",
+          "href": "https://www.cantongardenhalifax.com/yik8nsx2/restaurant/order-online/menus/all-day-menu/42050423?menu=All+Day+Menu&amp;category=Appetizers"
+        },
+        {
+          "text": "4. Spicy Fried Tofu $ 7.25",
+          "href": "https://www.cantongardenhalifax.com/yik8nsx2/restaurant/order-online/menus/all-day-menu/42050424?menu=All+Day+Menu&amp;category=Appetizers"
+        },
+        {
+          "text": "5. Pan Fried Dumplings (12 pcs) $ 16.50",
+          "href": "https://www.cantongardenhalifax.com/yik8nsx2/restaurant/order-online/menus/all-day-menu/42050425?menu=All+Day+Menu&amp;category=Appetizers"
+        },
+        {
+          "text": "6. Fried Chicken Wings Crispy fried chicken wings, served hot and ready to enjoy. $ 16.50",
+          "href": "https://www.cantongardenhalifax.com/yik8nsx2/restaurant/order-online/menus/all-day-menu/42050426?menu=All+Day+Menu&amp;category=Appetizers"
+        },
+        {
+          "text": "7. Deep Fried Shrimp Balls (12 pcs) $ 26.25",
+          "href": "https://www.cantongardenhalifax.com/yik8nsx2/restaurant/order-online/menus/all-day-menu/42050427?menu=All+Day+Menu&amp;category=Appetizers"
+        },
+        {
+          "text": "8. Moo Shu Pork (6 pcs) Tender pork, scrambled eggs, and vegetables wrapped in thin pancakes $ 17.25",
+          "href": "https://www.cantongardenhalifax.com/yik8nsx2/restaurant/order-online/menus/all-day-menu/42050428?menu=All+Day+Menu&amp;category=Appetizers"
+        },
+        {
+          "text": "9. Combination Appetizer Dumpling, Spare Ribs, Fried Meat Wonton, Spring Roll, BBQ Pork $ 35.95",
+          "href": "https://www.cantongardenhalifax.com/yik8nsx2/restaurant/order-online/menus/all-day-menu/42050429?menu=All+Day+Menu&amp;category=Appetizers"
+        }
+      ],
+      "reviewState": "needs-review"
+    },
+    {
+      "restaurantId": "osm-node-5810620690-castello-cafe",
+      "name": "Castello Café",
+      "website": "https://www.facebook.com/CastelloCafeCatering/",
+      "status": 200,
+      "observedAt": "2026-08-27T20:58:10.202Z",
+      "keywordHits": [
+        "special",
+        "event",
+        "events",
+        "menu"
+      ],
+      "candidateLinks": [],
+      "reviewState": "needs-review"
+    },
+    {
+      "restaurantId": "osm-node-2721708515-cha-baa-thai",
+      "name": "Cha Baa Thai",
+      "website": "https://www.chabaathairestaurant.ca/",
+      "error": "fetch failed",
+      "observedAt": "2026-08-27T20:58:12.617Z",
+      "reviewState": "needs-review"
+    },
+    {
+      "restaurantId": "osm-node-5134046822-chain-yard-urban-cidery",
+      "name": "Chain Yard Urban Cidery",
+      "website": "http://://www.chainyardcider.com",
+      "error": "Failed to parse URL from http://://www.chainyardcider.com",
+      "observedAt": "2026-08-27T20:58:12.617Z",
+      "reviewState": "needs-review"
+    },
+    {
+      "restaurantId": "osm-node-11525752766-charm-school",
+      "name": "Charm School",
+      "website": "https://unfuckingfiltered.com/",
+      "status": 200,
+      "observedAt": "2026-08-27T20:58:13.072Z",
+      "keywordHits": [
+        "menu"
+      ],
+      "candidateLinks": [
+        {
+          "text": "Menu",
+          "href": "https://unfuckingfiltered.com/#"
+        }
+      ],
+      "reviewState": "needs-review"
+    },
+    {
+      "restaurantId": "osm-node-2715382299-cheese-curds-and-habaneros",
+      "name": "Cheese Curds and Habaneros",
+      "website": "https://cheesecurdsgourmetburgersandpoutinerie.unuhub.net/",
+      "status": 200,
+      "observedAt": "2026-08-27T20:58:14.822Z",
+      "keywordHits": [
+        "special",
+        "event",
+        "events",
+        "menu"
+      ],
+      "candidateLinks": [],
+      "reviewState": "needs-review"
+    },
+    {
+      "restaurantId": "osm-node-2333319166-cheese-curds-burgers",
+      "name": "Cheese Curds Burgers",
+      "website": "https://www.cheesecurdsburgers.com/",
+      "status": 200,
+      "observedAt": "2026-08-27T20:58:14.944Z",
+      "keywordHits": [
+        "special",
+        "event",
+        "events",
+        "menu"
+      ],
+      "candidateLinks": [
+        {
+          "text": "MENU",
+          "href": "https://www.cheesecurdsburgers.com/menu"
+        },
+        {
+          "text": "MENU",
+          "href": "https://www.cheesecurdsburgers.com/menu"
+        },
+        {
+          "text": "",
+          "href": "https://bigseventravel.com/2020/02/best-burgers-canada/"
+        },
+        {
+          "text": "",
+          "href": "https://www.cheesecurdsburgers.com/featuremenu"
+        },
+        {
+          "text": "",
+          "href": "https://www.cheesecurdsburgers.com/menu"
+        },
+        {
+          "text": "",
+          "href": "https://www.cheesecurdsburgers.com/featuremenu"
+        }
+      ],
+      "reviewState": "needs-review"
+    },
+    {
+      "restaurantId": "osm-node-5152065724-cheese-curds-gourmet-burgers-and-poutinerie-habaneros-modern-taco-bar",
+      "name": "Cheese Curds Gourmet Burgers and Poutinerie/Habaneros Modern Taco Bar",
+      "website": "https://www.cheesecurdsburgers.com/",
+      "status": 200,
+      "observedAt": "2026-08-27T20:58:14.976Z",
+      "keywordHits": [
+        "special",
+        "event",
+        "events",
+        "menu"
+      ],
+      "candidateLinks": [
+        {
+          "text": "MENU",
+          "href": "https://www.cheesecurdsburgers.com/menu"
+        },
+        {
+          "text": "MENU",
+          "href": "https://www.cheesecurdsburgers.com/menu"
+        },
+        {
+          "text": "",
+          "href": "https://bigseventravel.com/2020/02/best-burgers-canada/"
+        },
+        {
+          "text": "",
+          "href": "https://www.cheesecurdsburgers.com/featuremenu"
+        },
+        {
+          "text": "",
+          "href": "https://www.cheesecurdsburgers.com/menu"
+        },
+        {
+          "text": "",
+          "href": "https://www.cheesecurdsburgers.com/featuremenu"
+        }
+      ],
+      "reviewState": "needs-review"
+    },
+    {
+      "restaurantId": "osm-way-319792807-chinatown",
+      "name": "Chinatown",
+      "website": "https://www.chinatownhalifax.com/",
+      "status": 200,
+      "observedAt": "2026-08-27T20:58:15.084Z",
+      "keywordHits": [
+        "event",
+        "events",
+        "menu"
+      ],
+      "candidateLinks": [
+        {
+          "text": "Menu",
+          "href": "https://www.chinatownhalifax.com/menu/"
+        },
+        {
+          "text": "中文菜单 Chinese Menu",
+          "href": "https://www.chinatownhalifax.com/chinese-menu/"
+        },
+        {
+          "text": "点心菜单 Dim Sum Menu",
+          "href": "https://www.chinatownhalifax.com/dim-sum-menu/"
+        },
+        {
+          "text": "Order Online",
+          "href": "https://order.tbdine.com/pickup/22146/menu"
+        },
+        {
+          "text": "Order Online",
+          "href": "https://order.tbdine.com/pickup/22146/menu"
+        },
+        {
+          "text": "Menu",
+          "href": "https://www.chinatownhalifax.com/menu/"
+        },
+        {
+          "text": "中文菜单 Chinese Menu",
+          "href": "https://www.chinatownhalifax.com/chinese-menu/"
+        },
+        {
+          "text": "点心菜单 Dim Sum Menu",
+          "href": "https://www.chinatownhalifax.com/dim-sum-menu/"
+        },
+        {
+          "text": "Order Online",
+          "href": "https://order.tbdine.com/pickup/22146/menu"
+        },
+        {
+          "text": "Explore Menu",
+          "href": "https://www.chinatownhalifax.com/menu/"
+        },
+        {
+          "text": "Explore Dim Sum Menu",
+          "href": "https://www.chinatownhalifax.com/dim-sum-menu/"
+        }
+      ],
+      "reviewState": "needs-review"
+    },
+    {
+      "restaurantId": "osm-node-7032915871-chkn-chop",
+      "name": "Chkn Chop",
+      "website": "https://www.chknchop.com/",
+      "status": 200,
+      "observedAt": "2026-08-27T20:58:15.345Z",
+      "keywordHits": [
+        "special",
+        "specials",
+        "event",
+        "events",
+        "menu"
+      ],
+      "candidateLinks": [
+        {
+          "text": "Menu",
+          "href": "https://www.chknchop.com/menu"
+        },
+        {
+          "text": "Menu",
+          "href": "https://www.chknchop.com/menu"
+        }
+      ],
+      "reviewState": "needs-review"
+    },
+    {
+      "restaurantId": "osm-node-12908610736-classic-pizza",
+      "name": "Classic Pizza",
+      "website": "https://classic-pizza.order-online.ai/",
+      "status": 200,
+      "observedAt": "2026-08-27T20:58:15.476Z",
+      "keywordHits": [],
+      "candidateLinks": [],
+      "reviewState": "needs-review"
+    },
+    {
+      "restaurantId": "osm-node-7185511974-clay-west-bar-and-grill",
+      "name": "Clay West Bar & Grill",
+      "website": "https://claywesthalifax.business.site/",
+      "status": 404,
+      "observedAt": "2026-08-27T20:58:15.748Z",
+      "keywordHits": [],
+      "candidateLinks": [],
+      "reviewState": "needs-review"
+    },
+    {
+      "restaurantId": "osm-node-11752773940-colleen-s-pub",
+      "name": "Colleen's Pub",
+      "website": "https://www.facebook.com/oldwrinkleranch/",
+      "status": 200,
+      "observedAt": "2026-08-27T20:58:16.358Z",
+      "keywordHits": [
+        "special",
+        "event",
+        "events",
+        "menu"
+      ],
+      "candidateLinks": [],
+      "reviewState": "needs-review"
+    },
+    {
+      "restaurantId": "osm-node-3799422457-cora",
+      "name": "Cora",
+      "website": "https://www.chezcora.com/en/breakfast-lunch-restaurants/cora-halifax-downtown/",
+      "status": 200,
+      "observedAt": "2026-08-27T20:58:17.762Z",
+      "keywordHits": [
+        "event",
+        "events",
+        "menu"
+      ],
+      "candidateLinks": [
+        {
+          "text": "Menu",
+          "href": "https://www.chezcora.com/en/menu/"
+        },
+        {
+          "text": "Menu",
+          "href": "https://www.chezcora.com/en/menu/"
+        },
+        {
+          "text": "Crêpes",
+          "href": "https://www.chezcora.com/en/menu/crepes/"
+        },
+        {
+          "text": "Fresh fruit",
+          "href": "https://www.chezcora.com/en/menu/fresh-fruits/"
+        },
+        {
+          "text": "French toast",
+          "href": "https://www.chezcora.com/en/menu/french-toast/"
+        },
+        {
+          "text": "Waffles",
+          "href": "https://www.chezcora.com/en/menu/waffles/"
+        },
+        {
+          "text": "Eggs",
+          "href": "https://www.chezcora.com/en/menu/eggs/"
+        },
+        {
+          "text": "Pancakes",
+          "href": "https://www.chezcora.com/en/menu/pancakes/"
+        },
+        {
+          "text": "Sweet 'n salty",
+          "href": "https://www.chezcora.com/en/menu/sweet-salty/"
+        },
+        {
+          "text": "Skillets",
+          "href": "https://www.chezcora.com/en/menu/skillets/"
+        },
+        {
+          "text": "Ben and Dictine",
+          "href": "https://www.chezcora.com/en/menu/eggs-ben-and-dictine/"
+        },
+        {
+          "text": "Omelettes and Crêpomelettes",
+          "href": "https://www.chezcora.com/en/menu/omelettes/"
+        }
+      ],
+      "reviewState": "needs-review"
+    },
+    {
+      "restaurantId": "osm-node-11867490075-cora",
+      "name": "Cora",
+      "website": "https://www.chezcora.com/en/",
+      "status": 200,
+      "observedAt": "2026-08-27T20:58:18.864Z",
+      "keywordHits": [
+        "special",
+        "event",
+        "events",
+        "menu"
+      ],
+      "candidateLinks": [
+        {
+          "text": "Menu",
+          "href": "https://www.chezcora.com/en/menu/"
+        },
+        {
+          "text": "Menu",
+          "href": "https://www.chezcora.com/en/menu/"
+        },
+        {
+          "text": "Crêpes",
+          "href": "https://www.chezcora.com/en/menu/crepes/"
+        },
+        {
+          "text": "Fresh fruit",
+          "href": "https://www.chezcora.com/en/menu/fresh-fruits/"
+        },
+        {
+          "text": "French toast",
+          "href": "https://www.chezcora.com/en/menu/french-toast/"
+        },
+        {
+          "text": "Waffles",
+          "href": "https://www.chezcora.com/en/menu/waffles/"
+        },
+        {
+          "text": "Eggs",
+          "href": "https://www.chezcora.com/en/menu/eggs/"
+        },
+        {
+          "text": "Pancakes",
+          "href": "https://www.chezcora.com/en/menu/pancakes/"
+        },
+        {
+          "text": "Sweet 'n salty",
+          "href": "https://www.chezcora.com/en/menu/sweet-salty/"
+        },
+        {
+          "text": "Skillets",
+          "href": "https://www.chezcora.com/en/menu/skillets/"
+        },
+        {
+          "text": "Ben and Dictine",
+          "href": "https://www.chezcora.com/en/menu/eggs-ben-and-dictine/"
+        },
+        {
+          "text": "Omelettes and Crêpomelettes",
+          "href": "https://www.chezcora.com/en/menu/omelettes/"
+        }
+      ],
+      "reviewState": "needs-review"
+    },
+    {
+      "restaurantId": "osm-node-1749780391-cousins-restaurant",
+      "name": "Cousins Restaurant",
+      "website": "https://cousinsrestaurant.webs.com/",
+      "error": "fetch failed",
+      "observedAt": "2026-08-27T20:58:18.985Z",
+      "reviewState": "needs-review"
+    },
+    {
+      "restaurantId": "osm-node-7108250973-creative-cup-cafe",
+      "name": "Creative Cup Cafe",
+      "website": "https://facebook.com/Creative-Cup-Cafe-112888013737872/",
+      "status": 200,
+      "observedAt": "2026-08-27T20:58:19.568Z",
+      "keywordHits": [
+        "special",
+        "event",
+        "events",
+        "menu"
+      ],
+      "candidateLinks": [],
+      "reviewState": "needs-review"
+    },
+    {
+      "restaurantId": "osm-node-13286456320-creme",
+      "name": "Crème",
+      "website": "https://cremehalifax.com/",
+      "status": 200,
+      "observedAt": "2026-08-27T20:58:19.715Z",
+      "keywordHits": [
+        "special",
+        "event",
+        "menu",
+        "cocktail"
+      ],
+      "candidateLinks": [
+        {
+          "text": "Menu",
+          "href": "https://cremehalifax.com/menu"
+        },
+        {
+          "text": "Menu",
+          "href": "https://cremehalifax.com/menu"
+        },
+        {
+          "text": "Menu",
+          "href": "https://cremehalifax.com/menu"
+        },
+        {
+          "text": "",
+          "href": "https://immediac.blob.core.windows.net/cremecafeasiarestaurant/Creme%20Menus/breakfast-menu.png"
+        },
+        {
+          "text": "",
+          "href": "https://immediac.blob.core.windows.net/cremecafeasiarestaurant/Creme%20Menus/lunch-menu.png"
+        },
+        {
+          "text": "",
+          "href": "https://immediac.blob.core.windows.net/cremecafeasiarestaurant/Creme%20Menus/dinner-sharables-menu.png"
+        },
+        {
+          "text": "Menu",
+          "href": "https://cremehalifax.com/menu"
+        }
+      ],
+      "reviewState": "needs-review"
+    },
+    {
+      "restaurantId": "osm-node-2721708504-curry-village",
+      "name": "Curry Village",
+      "website": "https://www.curryvillage.ca/",
+      "status": 526,
+      "observedAt": "2026-08-27T20:58:20.561Z",
+      "keywordHits": [
+        "event"
+      ],
+      "candidateLinks": [],
+      "reviewState": "needs-review"
+    },
+    {
+      "restaurantId": "osm-node-703490468-cut-contemporary-steak-house-and-urban-grill",
+      "name": "Cut Contemporary Steak House & Urban Grill",
+      "website": "https://www.cutsteakhouse.ca/",
+      "status": 200,
+      "observedAt": "2026-08-27T20:58:21.109Z",
+      "keywordHits": [
+        "special",
+        "event",
+        "events",
+        "menu",
+        "wine",
+        "cocktail"
+      ],
+      "candidateLinks": [
+        {
+          "text": "Menu",
+          "href": "javascript:void(0);"
+        },
+        {
+          "text": "Dinner Menu",
+          "href": "https://www.rcr.ca/content/uploads/2018/02/CUT-Steakhouse-Menu-SUMMER-2026.pdf"
+        },
+        {
+          "text": "White Wine",
+          "href": "https://www.rcr.ca/content/uploads/2018/02/CUT-Bottle-Whites-15.pdf"
+        },
+        {
+          "text": "Red Wine",
+          "href": "https://www.rcr.ca/content/uploads/2018/02/CUT-Bottle-Reds-18.pdf"
+        },
+        {
+          "text": "Desserts",
+          "href": "https://www.rcr.ca/content/uploads/2018/02/CUT-Dessert-Menu-Winter-2026.pdf"
+        },
+        {
+          "text": "Cocktails & BTG wines",
+          "href": "https://www.rcr.ca/content/uploads/2018/02/CUT-Steakhouse-Cocktails-Wine-BTG-SPRING-2026.pdf"
+        }
+      ],
+      "reviewState": "needs-review"
+    },
+    {
+      "restaurantId": "osm-node-1031603952-darrell-s",
+      "name": "Darrell's",
+      "website": "https://darrellsrestaurants.com",
+      "status": 200,
+      "observedAt": "2026-08-27T20:58:21.195Z",
+      "keywordHits": [
+        "event",
+        "events",
+        "menu"
+      ],
+      "candidateLinks": [
+        {
+          "text": "Email",
+          "href": "mailto:events@darrellsrestaurants.com"
+        },
+        {
+          "text": "MENU/ORDER NOW",
+          "href": "https://darrellsrestaurants.order-online.app/"
+        },
+        {
+          "text": "Catering Menu",
+          "href": "https://darrellsrestaurants.com/catering-menu/"
+        },
+        {
+          "text": "Catering Menu",
+          "href": "https://darrellsrestaurants.com/catering-menu/"
+        }
+      ],
+      "reviewState": "needs-review"
+    },
+    {
+      "restaurantId": "osm-node-5863968654-dharma-sushi",
+      "name": "Dharma sushi",
+      "website": "https://dharmasushi.ca",
+      "error": "fetch failed",
+      "observedAt": "2026-08-27T20:58:21.751Z",
+      "reviewState": "needs-review"
+    },
+    {
+      "restaurantId": "osm-node-5188870965-donnini-s-pizza",
+      "name": "Donnini's Pizza",
+      "website": "https://donninispizza.com/",
+      "status": 200,
+      "observedAt": "2026-08-27T20:58:22.027Z",
+      "keywordHits": [
+        "special",
+        "specials",
+        "menu"
+      ],
+      "candidateLinks": [
+        {
+          "text": "Donnini&#8217;s Menu",
+          "href": "https://donninispizza.com/#"
+        },
+        {
+          "text": "Specials",
+          "href": "https://donninispizza.com/specials/"
+        },
+        {
+          "text": "View The Specials",
+          "href": "https://donninispizza.com/specials/"
+        },
+        {
+          "text": "Donnini&#8217;s Menu",
+          "href": "https://donninispizza.com/#"
+        },
+        {
+          "text": "Specials",
+          "href": "https://donninispizza.com/specials/"
+        }
+      ],
+      "reviewState": "needs-review"
+    },
+    {
+      "restaurantId": "osm-node-2623078934-dooly-s",
+      "name": "Dooly's",
+      "website": "https://www.doolys.ca",
+      "status": 200,
+      "observedAt": "2026-08-27T20:58:22.278Z",
+      "keywordHits": [
+        "special",
+        "event",
+        "events"
+      ],
+      "candidateLinks": [
+        {
+          "text": "",
+          "href": "https://www.doolys.ca/about-your-event-1"
+        },
+        {
+          "text": "",
+          "href": "https://www.doolys.ca/about-your-event-1"
+        },
+        {
+          "text": "",
+          "href": "https://www.doolys.ca/about-your-event-1"
+        },
+        {
+          "text": "",
+          "href": "https://www.doolys.ca/about-your-event-1/"
+        },
+        {
+          "text": "",
+          "href": "https://www.doolys.ca/promotions-and-events"
+        },
+        {
+          "text": "",
+          "href": "https://www.doolys.ca/promotions-and-events"
+        }
+      ],
+      "reviewState": "needs-review"
+    },
+    {
+      "restaurantId": "osm-node-11551984275-doraku",
+      "name": "Doraku",
+      "website": "https://doraku.yolasite.com",
+      "status": 200,
+      "observedAt": "2026-08-27T20:58:22.519Z",
+      "keywordHits": [
+        "menu"
+      ],
+      "candidateLinks": [],
+      "reviewState": "needs-review"
+    },
+    {
+      "restaurantId": "osm-node-4797459277-downtown-pizza",
+      "name": "Downtown Pizza",
+      "website": "https://downtownpizza.ca/",
+      "status": 200,
+      "observedAt": "2026-08-27T20:58:22.812Z",
+      "keywordHits": [
+        "special",
+        "event",
+        "events",
+        "menu"
+      ],
+      "candidateLinks": [
+        {
+          "text": "Menu",
+          "href": "https://downtownpizza.ca/menu-2/"
+        },
+        {
+          "text": "Order Now",
+          "href": "https://www.restaurantlogin.com/ordering/restaurant/menu?company_uid=f1700aa0-5a7b-44b4-ab4a-86c9a6a853a8&#038;restaurant_uid=eede31fb-faf0-4119-8023-69a7d96124b8&#038;facebook=true"
+        },
+        {
+          "text": "Menu",
+          "href": "https://downtownpizza.ca/menu-2/"
+        },
+        {
+          "text": "Order Now",
+          "href": "https://www.restaurantlogin.com/ordering/restaurant/menu?company_uid=f1700aa0-5a7b-44b4-ab4a-86c9a6a853a8&#038;restaurant_uid=eede31fb-faf0-4119-8023-69a7d96124b8&#038;facebook=true"
+        },
+        {
+          "text": "Pizzas",
+          "href": "https://downtownpizza.ca/menu-2/"
+        },
+        {
+          "text": "SEE MENU",
+          "href": "https://downtownpizza.ca/menu-2/"
+        },
+        {
+          "text": "",
+          "href": "https://downtownpizza.ca/menu-2/"
+        },
+        {
+          "text": "Soft Drinks",
+          "href": "https://downtownpizza.ca/menu-2/"
+        },
+        {
+          "text": "SEE MENU",
+          "href": "https://downtownpizza.ca/menu-2/"
+        },
+        {
+          "text": "",
+          "href": "https://downtownpizza.ca/menu-2/"
+        },
+        {
+          "text": "Appetizers",
+          "href": "https://downtownpizza.ca/menu-2/"
+        },
+        {
+          "text": "SEE MENU",
+          "href": "https://downtownpizza.ca/menu-2/"
+        }
+      ],
+      "reviewState": "needs-review"
+    },
+    {
+      "restaurantId": "osm-node-37132580-durty-nelly-s-irish-pub",
+      "name": "Durty Nelly's Irish Pub",
+      "website": "https://durtynellys.ca/",
+      "status": 200,
+      "observedAt": "2026-08-27T20:58:22.898Z",
+      "keywordHits": [
+        "event",
+        "events",
+        "live music",
+        "menu"
+      ],
+      "candidateLinks": [
+        {
+          "text": "Menu",
+          "href": "https://durtynellys.ca/menu/"
+        },
+        {
+          "text": "Food",
+          "href": "https://durtynellys.ca/menu/"
+        },
+        {
+          "text": "Drinks",
+          "href": "https://durtynellys.ca/menu/"
+        },
+        {
+          "text": "Sunday Roast",
+          "href": "https://durtynellys.ca/menu/#sunday-roast"
+        },
+        {
+          "text": "Entertainment",
+          "href": "https://durtynellys.ca/events"
+        },
+        {
+          "text": "Menu",
+          "href": "https://durtynellys.ca/menu/"
+        },
+        {
+          "text": "Food",
+          "href": "https://durtynellys.ca/menu/"
+        },
+        {
+          "text": "Drinks",
+          "href": "https://durtynellys.ca/menu/"
+        },
+        {
+          "text": "Sunday Roast",
+          "href": "https://durtynellys.ca/menu/#sunday-roast"
+        },
+        {
+          "text": "Entertainment",
+          "href": "https://durtynellys.ca/events"
+        },
+        {
+          "text": "menu",
+          "href": "https://durtynellys.ca/menu/"
+        },
+        {
+          "text": "Entertainment",
+          "href": "https://durtynellys.ca/events/"
+        }
+      ],
+      "reviewState": "needs-review"
+    },
+    {
+      "restaurantId": "osm-node-11752717941-east-cup-cafe",
+      "name": "East Cup Cafe",
+      "website": "https://eastcupcafe.com/",
+      "status": 200,
+      "observedAt": "2026-08-27T20:58:23.418Z",
+      "keywordHits": [
+        "special",
+        "event",
+        "events",
+        "menu"
+      ],
+      "candidateLinks": [
+        {
+          "text": "Signature Blends",
+          "href": "https://eastcupcafe.com/collections/specialty-blends"
+        },
+        {
+          "text": "Signature Blends",
+          "href": "https://eastcupcafe.com/collections/specialty-blends"
+        }
+      ],
+      "reviewState": "needs-review"
+    },
+    {
+      "restaurantId": "osm-node-2721708503-efendy-turkish-and-mediterranean-grill",
+      "name": "Efendy Turkish & Mediterranean Grill",
+      "website": "http://www.efendyrestaurant.com/",
+      "error": "fetch failed",
+      "observedAt": "2026-08-27T20:58:23.598Z",
+      "reviewState": "needs-review"
+    },
+    {
+      "restaurantId": "osm-node-762250248-ela-greek-taverna",
+      "name": "Ela Greek Taverna",
+      "website": "https://elagreektaverna.com/",
+      "status": 200,
+      "observedAt": "2026-08-27T20:58:25.460Z",
+      "keywordHits": [
+        "special",
+        "event",
+        "events",
+        "menu"
+      ],
+      "candidateLinks": [
+        {
+          "text": "Menu",
+          "href": "https://elagreektaverna.com/menu/"
+        },
+        {
+          "text": "Private Dining",
+          "href": "https://elagreektaverna.com/events/"
+        },
+        {
+          "text": "View Our Menus",
+          "href": "https://elagreektaverna.com/dinner/"
+        },
+        {
+          "text": "",
+          "href": "https://elagreektaverna.com/wp-content/uploads/2020/07/private-events.jpg"
+        },
+        {
+          "text": "Contact our events team",
+          "href": "https://elagreektaverna.com/contact/"
+        }
+      ],
+      "reviewState": "needs-review"
+    },
+    {
+      "restaurantId": "osm-node-2705686566-ela-greek-taverna",
+      "name": "ela! Greek Taverna",
+      "website": "https://www.elagreektaverna.com/",
+      "status": 200,
+      "observedAt": "2026-08-27T20:58:25.969Z",
+      "keywordHits": [
+        "special",
+        "event",
+        "events",
+        "menu"
+      ],
+      "candidateLinks": [
+        {
+          "text": "Menu",
+          "href": "https://elagreektaverna.com/menu/"
+        },
+        {
+          "text": "Private Dining",
+          "href": "https://elagreektaverna.com/events/"
+        },
+        {
+          "text": "View Our Menus",
+          "href": "https://elagreektaverna.com/dinner/"
+        },
+        {
+          "text": "",
+          "href": "https://elagreektaverna.com/wp-content/uploads/2020/07/private-events.jpg"
+        },
+        {
+          "text": "Contact our events team",
+          "href": "https://elagreektaverna.com/contact/"
+        }
+      ],
+      "reviewState": "needs-review"
+    },
+    {
+      "restaurantId": "osm-node-5823814053-espresso-46",
+      "name": "Espresso 46",
+      "website": "https://espresso46.com/",
+      "error": "fetch failed",
+      "observedAt": "2026-08-27T20:58:26.003Z",
+      "reviewState": "needs-review"
+    },
+    {
+      "restaurantId": "osm-node-620808566-fan-s-chinese-restaurant",
+      "name": "Fan's Chinese Restaurant",
+      "website": "https://www.fansrestaurant.ca/",
+      "status": 200,
+      "observedAt": "2026-08-27T20:58:26.232Z",
+      "keywordHits": [
+        "special",
+        "specials",
+        "event",
+        "events",
+        "menu"
+      ],
+      "candidateLinks": [
+        {
+          "text": "Dim Sum Menu",
+          "href": "https://www.fansrestaurant.ca/dim-sum-menu"
+        },
+        {
+          "text": "Fusion Menu",
+          "href": "https://www.fansrestaurant.ca/menu"
+        },
+        {
+          "text": "View Menu",
+          "href": "https://www.fansrestaurant.ca/dim-sum-menu"
+        },
+        {
+          "text": "Dim Sum Menu",
+          "href": "https://www.fansrestaurant.ca/dim-sum-menu"
+        },
+        {
+          "text": "Fusion Menu",
+          "href": "https://www.fansrestaurant.ca/menu"
+        }
+      ],
+      "reviewState": "needs-review"
+    },
+    {
+      "restaurantId": "osm-node-8018171257-fattoush-mediterranean-grill",
+      "name": "Fattoush Mediterranean Grill",
+      "website": "https://m.facebook.com/FattoushMediterraneanGrill/",
+      "status": 200,
+      "observedAt": "2026-08-27T20:58:26.508Z",
+      "keywordHits": [],
+      "candidateLinks": [],
+      "reviewState": "needs-review"
+    },
+    {
+      "restaurantId": "osm-node-11526163877-fillings-bistro-32",
+      "name": "Fillings Bistro 32",
+      "website": "https://dal.campusdish.com/LocationsAndMenus/FillingsBistroatDentistry",
+      "status": 200,
+      "observedAt": "2026-08-27T20:58:26.838Z",
+      "keywordHits": [
+        "special",
+        "event",
+        "events",
+        "menu",
+        "brunch"
+      ],
+      "candidateLinks": [
+        {
+          "text": "Skip to Content",
+          "href": "https://dal.campusdish.com/LocationsAndMenus/FillingsBistroatDentistry#main-content"
+        },
+        {
+          "text": "My Menu",
+          "href": "https://dal.campusdish.com/en/account?section=my-menu"
+        },
+        {
+          "text": "Meal Plans",
+          "href": "https://dal.campusdish.com/LocationsAndMenus/FillingsBistroatDentistry#"
+        },
+        {
+          "text": "Locations &amp; Menus",
+          "href": "https://dal.campusdish.com/en/locations"
+        },
+        {
+          "text": "Health &amp; Wellness",
+          "href": "https://dal.campusdish.com/LocationsAndMenus/FillingsBistroatDentistry#"
+        },
+        {
+          "text": "Sustainability",
+          "href": "https://dal.campusdish.com/LocationsAndMenus/FillingsBistroatDentistry#"
+        },
+        {
+          "text": "About Us",
+          "href": "https://dal.campusdish.com/LocationsAndMenus/FillingsBistroatDentistry#"
+        }
+      ],
+      "reviewState": "needs-review"
+    },
+    {
+      "restaurantId": "osm-node-3789811257-flynn-s-dairy-bar",
+      "name": "Flynn's Dairy Bar",
+      "website": "https://www.facebook.com/flynns711/",
+      "status": 200,
+      "observedAt": "2026-08-27T20:58:27.194Z",
+      "keywordHits": [
+        "special",
+        "event",
+        "events",
+        "menu"
+      ],
+      "candidateLinks": [],
+      "reviewState": "needs-review"
+    },
+    {
+      "restaurantId": "osm-node-3802788957-food-court-of-spring-garden-place",
+      "name": "Food Court of Spring Garden Place",
+      "website": "https://www.starbucks.ca/store-locator/store/4085-255631/5640-spring-garden-road-5640-spring-garden-road-301-halifax-ns-b-3-j-3-m-7",
+      "status": 200,
+      "observedAt": "2026-08-27T20:58:27.413Z",
+      "keywordHits": [
+        "special",
+        "event",
+        "events",
+        "menu"
+      ],
+      "candidateLinks": [],
+      "reviewState": "needs-review"
+    },
+    {
+      "restaurantId": "osm-node-11282329952-freeman-s-little-new-york",
+      "name": "Freeman's Little New York",
+      "website": "https://www.freemanspizza.ca/",
+      "status": 200,
+      "observedAt": "2026-08-27T20:58:27.537Z",
+      "keywordHits": [
+        "special",
+        "event",
+        "events",
+        "menu",
+        "wine"
+      ],
+      "candidateLinks": [
+        {
+          "text": "Our Menus",
+          "href": "https://www.freemanspizza.ca/our-menus"
+        },
+        {
+          "text": "Events",
+          "href": "https://www.freemanspizza.ca/event-list"
+        },
+        {
+          "text": "See Menus",
+          "href": "https://www.freemanspizza.ca/our-menus"
+        }
+      ],
+      "reviewState": "needs-review"
+    },
+    {
+      "restaurantId": "osm-node-1570206711-fries-and-co",
+      "name": "Fries & Co.",
+      "website": "http://www.facebook.com/pages/Fries-Co/339657883852",
+      "status": 200,
+      "observedAt": "2026-08-27T20:58:27.732Z",
+      "keywordHits": [
+        "special",
+        "event",
+        "events",
+        "menu"
+      ],
+      "candidateLinks": [],
+      "reviewState": "needs-review"
+    },
+    {
+      "restaurantId": "osm-node-5863968643-fujiyama",
+      "name": "Fujiyama",
+      "website": "http://www.sushifujiyama.com/",
+      "status": 200,
+      "observedAt": "2026-08-27T20:58:28.059Z",
+      "keywordHits": [],
+      "candidateLinks": [],
+      "reviewState": "needs-review"
+    },
+    {
+      "restaurantId": "osm-node-7082566318-g-street-pizza",
+      "name": "G-Street Pizza",
+      "website": "https://gstreetpizza.ca",
+      "error": "fetch failed",
+      "observedAt": "2026-08-27T20:58:30.449Z",
+      "reviewState": "needs-review"
+    },
+    {
+      "restaurantId": "osm-node-7674194896-gahan-house",
+      "name": "Gahan House",
+      "website": "https://gahan.ca",
+      "status": 200,
+      "observedAt": "2026-08-27T20:58:30.616Z",
+      "keywordHits": [
+        "event",
+        "menu"
+      ],
+      "candidateLinks": [],
+      "reviewState": "needs-review"
+    },
+    {
+      "restaurantId": "osm-node-4550022070-genji-sushi",
+      "name": "Genji Sushi",
+      "website": "http://www.genjisushi.ca/",
+      "status": 200,
+      "observedAt": "2026-08-27T20:58:32.374Z",
+      "keywordHits": [
+        "event",
+        "menu",
+        "wine"
+      ],
+      "candidateLinks": [
+        {
+          "text": "AYCE Menu",
+          "href": "http://www.genjisushi.ca/?page_id=534"
+        },
+        {
+          "text": "Take Out Menu",
+          "href": "http://www.genjisushi.ca/?page_id=535"
+        },
+        {
+          "text": "Sake and Wine Menu",
+          "href": "http://www.genjisushi.ca/?page_id=533"
+        },
+        {
+          "text": "&nbsp;Menu",
+          "href": "http://www.genjisushi.ca/#"
+        },
+        {
+          "text": "&raquo;&nbsp;AYCE Menu",
+          "href": "http://www.genjisushi.ca/?page_id=534"
+        },
+        {
+          "text": "&raquo;&nbsp;Take Out Menu",
+          "href": "http://www.genjisushi.ca/?page_id=535"
+        },
+        {
+          "text": "&raquo;&nbsp;Sake and Wine Menu",
+          "href": "http://www.genjisushi.ca/?page_id=533"
+        },
+        {
+          "text": "Better Ingredients. Better Sushi. Genji has been offering quality Japanese cuisine since 2012 and is renowned for the large variety of fresh and quality dishes offered for dine-in, take-out or delivery service. To complement your dining experience, we have expanded our menu beyond Japanese cuisine. You will find a diversity of Thai, Korean and Chinese culinary on our recent menu, such as Pad Thai, Thai Curry, Dim Sum, and more for you to discover. Online Reservation",
+          "href": "http://www.genjisushi.ca/?page_id=49"
+        }
+      ],
+      "reviewState": "needs-review"
+    },
+    {
+      "restaurantId": "osm-node-2611287045-gingerbread-haus-bakery",
+      "name": "Gingerbread Haus Bakery",
+      "website": "https://www.gingerbreadhausbakery.com/",
+      "status": 200,
+      "observedAt": "2026-08-27T20:58:36.554Z",
+      "keywordHits": [
+        "event",
+        "menu"
+      ],
+      "candidateLinks": [],
+      "reviewState": "needs-review"
+    },
+    {
+      "restaurantId": "osm-node-4416774495-glitter-bean-cafe",
+      "name": "Glitter Bean Cafe",
+      "website": "https://www.glitterbeancafe.com/",
+      "status": 200,
+      "observedAt": "2026-08-27T20:58:38.621Z",
+      "keywordHits": [
+        "event",
+        "menu"
+      ],
+      "candidateLinks": [],
+      "reviewState": "needs-review"
+    },
+    {
+      "restaurantId": "osm-node-5150122721-good-robot-brewing-company",
+      "name": "Good Robot Brewing Company",
+      "website": "https://goodrobotbrewing.ca/",
+      "status": 200,
+      "observedAt": "2026-08-27T20:58:38.725Z",
+      "keywordHits": [
+        "event",
+        "events",
+        "menu"
+      ],
+      "candidateLinks": [
+        {
+          "text": "Events",
+          "href": "https://goodrobotbrewing.ca/events/"
+        },
+        {
+          "text": "Events",
+          "href": "https://goodrobotbrewing.ca/events/"
+        },
+        {
+          "text": "Events",
+          "href": "https://goodrobotbrewing.ca/events/"
+        },
+        {
+          "text": "Events",
+          "href": "https://goodrobotbrewing.ca/events/"
+        },
+        {
+          "text": "Events",
+          "href": "https://goodrobotbrewing.ca/events/"
+        }
+      ],
+      "reviewState": "needs-review"
+    },
+    {
+      "restaurantId": "osm-node-3792869657-great-wall-restaurant",
+      "name": "Great Wall Restaurant",
+      "website": "http://www.thegreatwall.ca/",
+      "status": 200,
+      "observedAt": "2026-08-27T20:58:38.989Z",
+      "keywordHits": [
+        "event",
+        "menu",
+        "brunch"
+      ],
+      "candidateLinks": [
+        {
+          "text": "Menu",
+          "href": "http://www.thegreatwall.ca/menu.html"
+        },
+        {
+          "text": "Menu",
+          "href": "http://www.thegreatwall.ca/menu.html"
+        }
+      ],
+      "reviewState": "needs-review"
+    },
+    {
+      "restaurantId": "osm-node-2714920436-greco-pizza",
+      "name": "Greco Pizza",
+      "website": "https://greco.ca/",
+      "status": 200,
+      "observedAt": "2026-08-27T20:58:40.308Z",
+      "keywordHits": [
+        "event",
+        "events",
+        "menu"
+      ],
+      "candidateLinks": [
+        {
+          "text": "Menu",
+          "href": "https://greco.ca/ourmenu/"
+        },
+        {
+          "text": "Menu",
+          "href": "https://greco.ca/ourmenu/"
+        },
+        {
+          "text": "",
+          "href": "https://greco.ca/ourmenu"
+        },
+        {
+          "text": "Delicious Pizza &amp; More",
+          "href": "https://greco.ca/ourmenu/"
+        },
+        {
+          "text": "Menu",
+          "href": "https://grecopizza.weborder.net/Items/deals-1024/"
+        }
+      ],
+      "reviewState": "needs-review"
+    },
+    {
+      "restaurantId": "osm-node-11526163883-green-cafe",
+      "name": "Green Café",
+      "website": "https://dal.campusdish.com/LocationsAndMenus/GreenCafeatRoweManagementBuilding",
+      "status": 200,
+      "observedAt": "2026-08-27T20:58:40.640Z",
+      "keywordHits": [
+        "special",
+        "event",
+        "events",
+        "menu",
+        "brunch"
+      ],
+      "candidateLinks": [
+        {
+          "text": "Skip to Content",
+          "href": "https://dal.campusdish.com/LocationsAndMenus/GreenCafeatRoweManagementBuilding#main-content"
+        },
+        {
+          "text": "My Menu",
+          "href": "https://dal.campusdish.com/en/account?section=my-menu"
+        },
+        {
+          "text": "Meal Plans",
+          "href": "https://dal.campusdish.com/LocationsAndMenus/GreenCafeatRoweManagementBuilding#"
+        },
+        {
+          "text": "Locations &amp; Menus",
+          "href": "https://dal.campusdish.com/en/locations"
+        },
+        {
+          "text": "Health &amp; Wellness",
+          "href": "https://dal.campusdish.com/LocationsAndMenus/GreenCafeatRoweManagementBuilding#"
+        },
+        {
+          "text": "Sustainability",
+          "href": "https://dal.campusdish.com/LocationsAndMenus/GreenCafeatRoweManagementBuilding#"
+        },
+        {
+          "text": "About Us",
+          "href": "https://dal.campusdish.com/LocationsAndMenus/GreenCafeatRoweManagementBuilding#"
+        }
+      ],
+      "reviewState": "needs-review"
+    },
+    {
+      "restaurantId": "osm-node-11526163881-grille-works",
+      "name": "Grille Works",
+      "website": "https://dal.campusdish.com/LocationsAndMenus/LifeSciencesCentre/GrilleWorks",
+      "status": 200,
+      "observedAt": "2026-08-27T20:58:40.796Z",
+      "keywordHits": [
+        "special",
+        "event",
+        "events",
+        "menu",
+        "brunch"
+      ],
+      "candidateLinks": [
+        {
+          "text": "Skip to Content",
+          "href": "https://dal.campusdish.com/LocationsAndMenus/LifeSciencesCentre/GrilleWorks#main-content"
+        },
+        {
+          "text": "My Menu",
+          "href": "https://dal.campusdish.com/en/account?section=my-menu"
+        },
+        {
+          "text": "Meal Plans",
+          "href": "https://dal.campusdish.com/LocationsAndMenus/LifeSciencesCentre/GrilleWorks#"
+        },
+        {
+          "text": "Locations &amp; Menus",
+          "href": "https://dal.campusdish.com/en/locations"
+        },
+        {
+          "text": "Health &amp; Wellness",
+          "href": "https://dal.campusdish.com/LocationsAndMenus/LifeSciencesCentre/GrilleWorks#"
+        },
+        {
+          "text": "Sustainability",
+          "href": "https://dal.campusdish.com/LocationsAndMenus/LifeSciencesCentre/GrilleWorks#"
+        },
+        {
+          "text": "About Us",
+          "href": "https://dal.campusdish.com/LocationsAndMenus/LifeSciencesCentre/GrilleWorks#"
+        }
+      ],
+      "reviewState": "needs-review"
+    },
+    {
+      "restaurantId": "osm-node-11526163885-ground-zero",
+      "name": "Ground Zero",
+      "website": "https://dal.campusdish.com/LocationsAndMenus/GroundZero",
+      "status": 200,
+      "observedAt": "2026-08-27T20:58:40.949Z",
+      "keywordHits": [
+        "special",
+        "event",
+        "events",
+        "menu",
+        "brunch"
+      ],
+      "candidateLinks": [
+        {
+          "text": "Skip to Content",
+          "href": "https://dal.campusdish.com/LocationsAndMenus/GroundZero#main-content"
+        },
+        {
+          "text": "My Menu",
+          "href": "https://dal.campusdish.com/en/account?section=my-menu"
+        },
+        {
+          "text": "Meal Plans",
+          "href": "https://dal.campusdish.com/LocationsAndMenus/GroundZero#"
+        },
+        {
+          "text": "Locations &amp; Menus",
+          "href": "https://dal.campusdish.com/en/locations"
+        },
+        {
+          "text": "Health &amp; Wellness",
+          "href": "https://dal.campusdish.com/LocationsAndMenus/GroundZero#"
+        },
+        {
+          "text": "Sustainability",
+          "href": "https://dal.campusdish.com/LocationsAndMenus/GroundZero#"
+        },
+        {
+          "text": "About Us",
+          "href": "https://dal.campusdish.com/LocationsAndMenus/GroundZero#"
+        }
+      ],
+      "reviewState": "needs-review"
+    },
+    {
+      "restaurantId": "osm-node-3802931964-hamachi-kita",
+      "name": "Hamachi Kita",
+      "website": "https://www.hamachikita.com",
+      "status": 200,
+      "observedAt": "2026-08-27T20:58:41.295Z",
+      "keywordHits": [
+        "special",
+        "event",
+        "events",
+        "menu"
+      ],
+      "candidateLinks": [
+        {
+          "text": "Menu",
+          "href": "https://www.hamachikita.com/menu-feed"
+        },
+        {
+          "text": "Menu",
+          "href": "https://www.hamachikita.com/menu-feed"
+        },
+        {
+          "text": "Menu",
+          "href": "https://www.hamachikita.com/menu-feed"
+        }
+      ],
+      "reviewState": "needs-review"
+    },
+    {
+      "restaurantId": "osm-node-9152231317-harvest",
+      "name": "HARVEST",
+      "website": "https://www.orderharvest.ca/",
+      "status": 200,
+      "observedAt": "2026-08-27T20:58:41.921Z",
+      "keywordHits": [
+        "event",
+        "events",
+        "menu"
+      ],
+      "candidateLinks": [
+        {
+          "text": "Menu",
+          "href": "https://www.orderharvest.ca/menu"
+        },
+        {
+          "text": "ORDER ONLINE",
+          "href": "https://smooth.menu/harvest-clean-eats/menu/"
+        },
+        {
+          "text": "Menu",
+          "href": "https://www.orderharvest.ca/menu"
+        },
+        {
+          "text": "ORDER ONLINE",
+          "href": "https://smooth.menu/harvest-clean-eats/menu/"
+        },
+        {
+          "text": "Menu",
+          "href": "https://www.orderharvest.ca/menu"
+        },
+        {
+          "text": "ORDER ONLINE",
+          "href": "https://smooth.menu/harvest-clean-eats/menu/"
+        },
+        {
+          "text": "TRY IT TODAY",
+          "href": "https://smooth.menu/harvest-clean-eats/menu/"
+        },
+        {
+          "text": "TRY ONE TODAY",
+          "href": "https://smooth.menu/harvest-clean-eats/menu/"
+        },
+        {
+          "text": "EXPLORE OUR MENU",
+          "href": "https://www.orderharvest.ca/menu"
+        },
+        {
+          "text": "Menu",
+          "href": "https://www.orderharvest.ca/menu"
+        }
+      ],
+      "reviewState": "needs-review"
+    },
+    {
+      "restaurantId": "osm-way-88879193-henry-house",
+      "name": "Henry House",
+      "website": "http://henryhouse.ca/",
+      "status": 200,
+      "observedAt": "2026-08-27T20:58:41.994Z",
+      "keywordHits": [],
+      "candidateLinks": [],
+      "reviewState": "needs-review"
+    },
+    {
+      "restaurantId": "osm-node-4421306590-heppy-s-pie-lady",
+      "name": "Heppy's Pie Lady",
+      "website": "http://www.heppys.com",
+      "status": 200,
+      "observedAt": "2026-08-27T20:58:42.325Z",
+      "keywordHits": [
+        "event",
+        "menu"
+      ],
+      "candidateLinks": [],
+      "reviewState": "needs-review"
+    },
+    {
+      "restaurantId": "osm-node-5631529440-hmcs-king-s-wardroom",
+      "name": "HMCS King’s Wardroom",
+      "website": "https://ukings.ca/hmcs-kings-wardroom/",
+      "status": 200,
+      "observedAt": "2026-08-27T20:58:42.645Z",
+      "keywordHits": [
+        "special",
+        "event",
+        "events",
+        "menu"
+      ],
+      "candidateLinks": [
+        {
+          "text": "Conference &#038; Event Services",
+          "href": "https://ukings.ca/conference-event-services/"
+        },
+        {
+          "text": "Campus Tours &#038; Recruitment Events",
+          "href": "https://ukings.ca/admissions/campus-tours-recruitment/"
+        },
+        {
+          "text": "Events at King&#8217;s",
+          "href": "https://ukings.ca/events/"
+        },
+        {
+          "text": "Sexualized Violence Prevention and Response",
+          "href": "https://ukings.ca/campus-community/student-services/campus-safety/sexualized-violence/"
+        },
+        {
+          "text": "What’s Happening",
+          "href": "https://ukings.ca/alumni/events/"
+        },
+        {
+          "text": "Special Projects",
+          "href": "https://ukings.ca/alumni/giving/support/special-projects/"
+        }
+      ],
+      "reviewState": "needs-review"
+    },
+    {
+      "restaurantId": "osm-node-7393868699-hop-sing-restaurant",
+      "name": "Hop Sing Restaurant",
+      "website": "https://hopsingrestaurant.ca/",
+      "status": 200,
+      "observedAt": "2026-08-27T20:58:42.870Z",
+      "keywordHits": [
+        "menu"
+      ],
+      "candidateLinks": [
+        {
+          "text": "Main Menu",
+          "href": "https://hopsingrestaurant.ca/menu.html"
+        },
+        {
+          "text": "View Menu",
+          "href": "https://hopsingrestaurant.ca/menu.html"
+        }
+      ],
+      "reviewState": "needs-review"
+    },
+    {
+      "restaurantId": "osm-node-4421959790-humani-t",
+      "name": "Humani-T",
+      "website": "https://humanitea.com/",
+      "status": 200,
+      "observedAt": "2026-08-27T20:58:43.053Z",
+      "keywordHits": [],
+      "candidateLinks": [],
+      "reviewState": "needs-review"
+    },
+    {
+      "restaurantId": "osm-node-11239721834-humble-pie-kitchen",
+      "name": "Humble Pie Kitchen",
+      "website": "https://humblepiekitchen.ca/",
+      "status": 200,
+      "observedAt": "2026-08-27T20:58:43.641Z",
+      "keywordHits": [
+        "event",
+        "menu"
+      ],
+      "candidateLinks": [
+        {
+          "text": "PIE MENU",
+          "href": "https://humblepiekitchen.ca/pie-menu/"
+        }
+      ],
+      "reviewState": "needs-review"
+    },
+    {
+      "restaurantId": "osm-node-9629211483-ihop",
+      "name": "IHOP",
+      "website": "https://restaurants.ihop.com/en-ca/ns/bedford/breakfast-80-hogan-court-4023",
+      "status": 200,
+      "observedAt": "2026-08-27T20:58:44.402Z",
+      "keywordHits": [
+        "event",
+        "events",
+        "menu"
+      ],
+      "candidateLinks": [],
+      "reviewState": "needs-review"
+    },
+    {
+      "restaurantId": "osm-node-7674251740-in-spring-asian-fusion-cuisine",
+      "name": "in spring asian fusion cuisine",
+      "website": "https://www.inspringhotpot.com/",
+      "status": 200,
+      "observedAt": "2026-08-27T20:58:45.176Z",
+      "keywordHits": [
+        "special",
+        "event",
+        "events",
+        "menu",
+        "brunch",
+        "wine"
+      ],
+      "candidateLinks": [
+        {
+          "text": "Breakfast &amp; Brunch",
+          "href": "https://www.inspringhotpot.com/cuisines/breakfast&amp;brunch"
+        },
+        {
+          "text": "Wine",
+          "href": "https://www.inspringhotpot.com/cuisines/wine"
+        },
+        {
+          "text": "Pizza 73",
+          "href": "https://www.inspringhotpot.com/brands/pizza-seventy-three"
+        },
+        {
+          "text": "The Wine Shop",
+          "href": "https://www.inspringhotpot.com/brands/the-wine-shop"
+        },
+        {
+          "text": "Wine Rack",
+          "href": "https://www.inspringhotpot.com/brands/wine-rack"
+        }
+      ],
+      "reviewState": "needs-review"
+    },
+    {
+      "restaurantId": "osm-node-13141377001-india-paradise",
+      "name": "India Paradise",
+      "website": "https://www.indiaparadise.ca/",
+      "status": 200,
+      "observedAt": "2026-08-27T20:58:45.363Z",
+      "keywordHits": [
+        "special",
+        "event",
+        "events",
+        "menu"
+      ],
+      "candidateLinks": [
+        {
+          "text": "Mar 12, 2026 Calgary News Opening on March 18th in Calgary New Spot Alert: India Paradise is coming to Calgary! 🥘🔥Mark your calendars for March 18th. We aren&#x27;t just opening our doors; we’re opening the kitchen to the most authentic flavors in YYC. 🎁 GRAND OPENING SPECIAL:Get a complimentary Jilebi Rabdi on us when you dine in!(Available March 18 – April 12) Don&#x27;t just take our word for it—come taste the magic yours",
+          "href": "https://www.indiaparadise.ca/post/opening-on-march-18th-in-calgary"
+        },
+        {
+          "text": "View Menu",
+          "href": "https://www.indiaparadise.ca/mississauga/food-menu"
+        }
+      ],
+      "reviewState": "needs-review"
+    },
+    {
+      "restaurantId": "osm-node-12410003853-jacky-s-cafe",
+      "name": "Jacky's Cafe",
+      "website": "https://jackyscafehalifax.com/",
+      "status": 200,
+      "observedAt": "2026-08-27T20:58:45.610Z",
+      "keywordHits": [
+        "special",
+        "specials",
+        "event",
+        "menu"
+      ],
+      "candidateLinks": [
+        {
+          "text": "Polo Bun Special",
+          "href": "https://jackyscafehalifax.com/c/polo-bun-special/"
+        },
+        {
+          "text": "",
+          "href": "https://jackyscafehalifax.com/c/polo-bun-special/"
+        },
+        {
+          "text": "Stir-Fry Specials (Chicken)",
+          "href": "https://jackyscafehalifax.com/c/stirfry-specials-chicken/"
+        },
+        {
+          "text": "",
+          "href": "https://jackyscafehalifax.com/c/stirfry-specials-chicken/"
+        },
+        {
+          "text": "Stir-Fry Specials (Beef)",
+          "href": "https://jackyscafehalifax.com/c/stirfry-specials-beef/"
+        },
+        {
+          "text": "",
+          "href": "https://jackyscafehalifax.com/c/stirfry-specials-beef/"
+        },
+        {
+          "text": "Stir-Fry Specials (Veggie)",
+          "href": "https://jackyscafehalifax.com/16-mixed-veggies-stirfried//"
+        },
+        {
+          "text": "Stir-Fry Specials (Shrimp)",
+          "href": "https://jackyscafehalifax.com/c/stirfry-specials-shrimp/"
+        },
+        {
+          "text": "",
+          "href": "https://jackyscafehalifax.com/c/stirfry-specials-shrimp/"
+        },
+        {
+          "text": "Special - Drinks (Hot / Cold)",
+          "href": "https://jackyscafehalifax.com/c/special-drinks-hot-cold/"
+        },
+        {
+          "text": "",
+          "href": "https://jackyscafehalifax.com/c/special-drinks-hot-cold/"
+        },
+        {
+          "text": "Stir-Fry Specials (BBQ Pork)",
+          "href": "https://jackyscafehalifax.com/22-cha-siu-bbq-pork//"
+        }
+      ],
+      "reviewState": "needs-review"
+    },
+    {
+      "restaurantId": "osm-node-2624400763-java-blend",
+      "name": "Java Blend",
+      "website": "https://javablendcoffee.com/contact",
+      "status": 404,
+      "observedAt": "2026-08-27T20:58:46.152Z",
+      "keywordHits": [],
+      "candidateLinks": [],
+      "reviewState": "needs-review"
+    },
+    {
+      "restaurantId": "osm-node-13912668535-jean-s-chinese-restaurant",
+      "name": "Jean's Chinese Restaurant",
+      "website": "https://www.jeansrestaurant.ca/",
+      "status": 200,
+      "observedAt": "2026-08-27T20:58:46.407Z",
+      "keywordHits": [
+        "special",
+        "event",
+        "events",
+        "menu"
+      ],
+      "candidateLinks": [
+        {
+          "text": "Order Online",
+          "href": "https://www.foodbooking.com/ordering/restaurant/menu?restaurant_uid=de8fb584-7d18-406d-9040-426509400230"
+        },
+        {
+          "text": "Menu Download",
+          "href": "https://www.jeansrestaurant.ca/_files/ugd/762b6e_eef30358765c4c19aa23d8d85d48e49c.pdf"
+        }
+      ],
+      "reviewState": "needs-review"
+    },
+    {
+      "restaurantId": "osm-node-1920646706-jenny-s-place",
+      "name": "Jenny's Place",
+      "website": "https://www.facebook.com/people/Jennys-Place-Pub/100028409456739/",
+      "status": 200,
+      "observedAt": "2026-08-27T20:58:46.682Z",
+      "keywordHits": [
+        "special",
+        "specials",
+        "event",
+        "events",
+        "menu"
+      ],
+      "candidateLinks": [],
+      "reviewState": "needs-review"
+    },
+    {
+      "restaurantId": "osm-node-32335616-jim-s-family-restaurant",
+      "name": "Jim's Family Restaurant",
+      "website": "https://www.jimsfamilyrestauranthalifax.com/cl",
+      "error": "fetch failed",
+      "observedAt": "2026-08-27T20:58:46.837Z",
+      "reviewState": "needs-review"
+    },
+    {
+      "restaurantId": "osm-node-4995047387-john-s-lunch",
+      "name": "John's Lunch",
+      "website": "https://johnslunch.com/",
+      "error": "fetch failed",
+      "observedAt": "2026-08-27T20:58:47.031Z",
+      "reviewState": "needs-review"
+    },
+    {
+      "restaurantId": "osm-node-5503919661-jukai",
+      "name": "Jukai",
+      "website": "https://jukairestaurant.com",
+      "status": 200,
+      "observedAt": "2026-08-27T20:58:47.760Z",
+      "keywordHits": [
+        "special",
+        "event",
+        "events",
+        "menu"
+      ],
+      "candidateLinks": [
+        {
+          "text": "Order Online",
+          "href": "https://order.mrsdigi.com/060314181012095/67ef2367-3e38-5cfd-8bd7-e9d1f9b36312#/menu-full"
+        }
+      ],
+      "reviewState": "needs-review"
+    },
+    {
+      "restaurantId": "osm-node-11552505443-jukai-japanese-and-thai",
+      "name": "JUKAI Japanese & Thai",
+      "website": "https://www.jukairestaurant.com",
+      "status": 200,
+      "observedAt": "2026-08-27T20:58:47.817Z",
+      "keywordHits": [
+        "special",
+        "event",
+        "events",
+        "menu"
+      ],
+      "candidateLinks": [
+        {
+          "text": "Order Online",
+          "href": "https://order.mrsdigi.com/060314181012095/67ef2367-3e38-5cfd-8bd7-e9d1f9b36312#/menu-full"
+        }
+      ],
+      "reviewState": "needs-review"
+    },
+    {
+      "restaurantId": "osm-node-8841366531-jungle-jim-s",
+      "name": "Jungle Jim's",
+      "website": "https://junglejims.ca/",
+      "status": 200,
+      "observedAt": "2026-08-27T20:58:48.038Z",
+      "keywordHits": [
+        "event",
+        "events",
+        "menu"
+      ],
+      "candidateLinks": [
+        {
+          "text": "Menu",
+          "href": "https://junglejims.ca/menu"
+        },
+        {
+          "text": "Bay Roberts, N.L.",
+          "href": "https://junglejims.ca/menu/bay-roberts"
+        },
+        {
+          "text": "CBS (Manuels), N.L.",
+          "href": "https://junglejims.ca/menu/cbs-manuels"
+        },
+        {
+          "text": "Clarenville, N.L.",
+          "href": "https://junglejims.ca/menu/clarenville"
+        },
+        {
+          "text": "Corner Brook, N.L.",
+          "href": "https://junglejims.ca/menu/corner-brook"
+        },
+        {
+          "text": "Deer Lake, N.L.",
+          "href": "https://junglejims.ca/menu/deer-lake"
+        },
+        {
+          "text": "Fredericton, N.B.",
+          "href": "https://junglejims.ca/menu/fredericton"
+        },
+        {
+          "text": "Gander, N.L.",
+          "href": "https://junglejims.ca/menu/gander"
+        },
+        {
+          "text": "Goulds, N.L.",
+          "href": "https://junglejims.ca/menu/goulds"
+        },
+        {
+          "text": "Grand Falls-Windsor, N.L.",
+          "href": "https://junglejims.ca/menu/grand-falls-windsor"
+        },
+        {
+          "text": "Halifax (Bayers Lake), N.S.",
+          "href": "https://junglejims.ca/menu/halifax-bayers-lake"
+        },
+        {
+          "text": "Happy Valley-Goose Bay, LAB",
+          "href": "https://junglejims.ca/menu/happy-valley-goose-bay"
+        }
+      ],
+      "reviewState": "needs-review"
+    },
+    {
+      "restaurantId": "osm-node-7139174640-kajohn-thai",
+      "name": "Kajohn Thai",
+      "website": "https://www.kajohnthairestaurant.ca",
+      "status": 200,
+      "observedAt": "2026-08-27T20:58:48.245Z",
+      "keywordHits": [
+        "special",
+        "event",
+        "events",
+        "menu"
+      ],
+      "candidateLinks": [
+        {
+          "text": "MENU",
+          "href": "https://www.kajohnthairestaurant.ca/menu"
+        },
+        {
+          "text": "MENU",
+          "href": "https://www.kajohnthairestaurant.ca/menu"
+        },
+        {
+          "text": "EXPLORE OUR MENU",
+          "href": "https://www.kajohnthairestaurant.ca/menu"
+        },
+        {
+          "text": "MENU",
+          "href": "https://www.kajohnthairestaurant.ca/menu"
+        }
+      ],
+      "reviewState": "needs-review"
+    },
+    {
+      "restaurantId": "osm-node-5723553932-kam-moon",
+      "name": "Kam-moon",
+      "website": "https://kam-moon.com/",
+      "error": "fetch failed",
+      "observedAt": "2026-08-27T20:58:48.373Z",
+      "reviewState": "needs-review"
+    },
+    {
+      "restaurantId": "osm-node-11552081912-kanpai-izakaya",
+      "name": "Kanpai Izakaya",
+      "website": "https://kanpaiizakaya.com",
+      "status": 200,
+      "observedAt": "2026-08-27T20:58:48.514Z",
+      "keywordHits": [
+        "event",
+        "events",
+        "menu"
+      ],
+      "candidateLinks": [
+        {
+          "text": "Menu",
+          "href": "https://kanpaiizakaya.com/menu"
+        },
+        {
+          "text": "Menu",
+          "href": "https://kanpaiizakaya.com/menu"
+        },
+        {
+          "text": "Menu",
+          "href": "https://kanpaiizakaya.com/menu"
+        }
+      ],
+      "reviewState": "needs-review"
+    },
+    {
+      "restaurantId": "osm-node-2712744143-kebab-kitchen",
+      "name": "Kebab Kitchen",
+      "website": "http://www.kebabkitchens.com/",
+      "error": "fetch failed",
+      "observedAt": "2026-08-27T20:58:48.605Z",
+      "reviewState": "needs-review"
+    },
+    {
+      "restaurantId": "osm-node-11506685695-kenny-s-pizza",
+      "name": "Kenny's Pizza",
+      "website": "http://kennyspizzakearneylake.ca/",
+      "status": 200,
+      "observedAt": "2026-08-27T20:58:49.758Z",
+      "keywordHits": [
+        "special",
+        "specials",
+        "event",
+        "menu"
+      ],
+      "candidateLinks": [
+        {
+          "text": "Order Menu",
+          "href": "https://kennyspizzakearneylake.ca/"
+        },
+        {
+          "text": "Menu Close",
+          "href": "https://kennyspizzakearneylake.ca/#mobile-menu-toggle"
+        },
+        {
+          "text": "Order Menu",
+          "href": "https://kennyspizzakearneylake.ca/"
+        },
+        {
+          "text": "",
+          "href": "https://kennyspizzakearneylake.ca/product-category/specials/"
+        },
+        {
+          "text": "Specials (8)",
+          "href": "https://kennyspizzakearneylake.ca/product-category/specials/"
+        },
+        {
+          "text": "Specials",
+          "href": "https://kennyspizzakearneylake.ca/product-category/specials/"
+        }
+      ],
+      "reviewState": "needs-review"
+    },
+    {
+      "restaurantId": "osm-node-3104142670-king-of-donair",
+      "name": "King of Donair",
+      "website": "https://www.kingofdonair.ca",
+      "status": 200,
+      "observedAt": "2026-08-27T20:58:50.048Z",
+      "keywordHits": [
+        "event",
+        "events",
+        "menu"
+      ],
+      "candidateLinks": [
+        {
+          "text": "Menu",
+          "href": "https://www.kingofdonair.ca/menu/"
+        }
+      ],
+      "reviewState": "needs-review"
+    },
+    {
+      "restaurantId": "osm-node-9128392205-king-of-donair",
+      "name": "King of Donair",
+      "website": "https://www.kingofdonair.ca/",
+      "status": 200,
+      "observedAt": "2026-08-27T20:58:50.115Z",
+      "keywordHits": [
+        "event",
+        "events",
+        "menu"
+      ],
+      "candidateLinks": [
+        {
+          "text": "Menu",
+          "href": "https://www.kingofdonair.ca/menu/"
+        }
+      ],
+      "reviewState": "needs-review"
+    },
+    {
+      "restaurantId": "osm-node-11552119505-kofuku-japanese-and-thai",
+      "name": "Kofuku Japanese and Thai",
+      "website": "https://www.kofukujapaneseandthai.ca",
+      "status": 200,
+      "observedAt": "2026-08-27T20:58:50.419Z",
+      "keywordHits": [
+        "special",
+        "event",
+        "menu"
+      ],
+      "candidateLinks": [],
+      "reviewState": "needs-review"
+    },
+    {
+      "restaurantId": "osm-node-3791840157-krave-burger",
+      "name": "Krave Burger",
+      "website": "http://kraveburger.com",
+      "status": 200,
+      "observedAt": "2026-08-27T20:58:50.512Z",
+      "keywordHits": [
+        "menu"
+      ],
+      "candidateLinks": [
+        {
+          "text": "Menu",
+          "href": "http://kraveburger.com/menu"
+        },
+        {
+          "text": "Burgers",
+          "href": "http://kraveburger.com/menu"
+        },
+        {
+          "text": "Chicken & More",
+          "href": "http://kraveburger.com/menu"
+        },
+        {
+          "text": "Mac & Cheese",
+          "href": "http://kraveburger.com/menu"
+        },
+        {
+          "text": "Salads",
+          "href": "http://kraveburger.com/menu"
+        },
+        {
+          "text": "Shakes",
+          "href": "http://kraveburger.com/menu"
+        },
+        {
+          "text": "Sides",
+          "href": "http://kraveburger.com/menu"
+        }
+      ],
+      "reviewState": "needs-review"
+    },
+    {
+      "restaurantId": "osm-node-12143325435-krave-burger",
+      "name": "Krave Burger",
+      "website": "http://kraveburger.com",
+      "status": 200,
+      "observedAt": "2026-08-27T20:58:50.547Z",
+      "keywordHits": [
+        "menu"
+      ],
+      "candidateLinks": [
+        {
+          "text": "Menu",
+          "href": "http://kraveburger.com/menu"
+        },
+        {
+          "text": "Burgers",
+          "href": "http://kraveburger.com/menu"
+        },
+        {
+          "text": "Chicken & More",
+          "href": "http://kraveburger.com/menu"
+        },
+        {
+          "text": "Mac & Cheese",
+          "href": "http://kraveburger.com/menu"
+        },
+        {
+          "text": "Salads",
+          "href": "http://kraveburger.com/menu"
+        },
+        {
+          "text": "Shakes",
+          "href": "http://kraveburger.com/menu"
+        },
+        {
+          "text": "Sides",
+          "href": "http://kraveburger.com/menu"
+        }
+      ],
+      "reviewState": "needs-review"
+    },
+    {
+      "restaurantId": "osm-way-460939327-la-piazza-ristorante",
+      "name": "La Piazza Ristorante",
+      "website": "https://www.lapiazzarestocafe.com/",
+      "error": "fetch failed",
+      "observedAt": "2026-08-27T20:59:01.001Z",
+      "reviewState": "needs-review"
+    },
+    {
+      "restaurantId": "osm-node-11577869162-lady-hammond-grill",
+      "name": "Lady Hammond Grill",
+      "website": "https://chebuctoinn.com/lhg-diner/",
+      "status": 200,
+      "observedAt": "2026-08-27T20:59:02.679Z",
+      "keywordHits": [
+        "special",
+        "specials",
+        "event",
+        "events",
+        "menu",
+        "brunch"
+      ],
+      "candidateLinks": [
+        {
+          "text": "Our Menu",
+          "href": "https://chebuctoinn.com/lady-hammond-grill-menu/"
+        },
+        {
+          "text": "Eggs Benny Special",
+          "href": "https://chebuctoinn.com/lhg-specials/"
+        },
+        {
+          "text": "VIEW OUR MENU",
+          "href": "https://chebuctoinn.com/lady-hammond-grill-menu/"
+        }
+      ],
+      "reviewState": "needs-review"
+    },
+    {
+      "restaurantId": "osm-node-13122094789-latitude-44",
+      "name": "Latitude 44°",
+      "website": "https://www.lat44hfx.com/",
+      "status": 200,
+      "observedAt": "2026-08-27T20:59:03.038Z",
+      "keywordHits": [
+        "happy hour",
+        "event",
+        "events",
+        "menu",
+        "wine"
+      ],
+      "candidateLinks": [
+        {
+          "text": "OUR MENU",
+          "href": "https://www.lat44hfx.com/our-menus"
+        }
+      ],
+      "reviewState": "needs-review"
+    },
+    {
+      "restaurantId": "osm-node-3575616966-layla-s-mediterranean-cuisine",
+      "name": "Layla's Mediterranean Cuisine",
+      "website": "http://laylacuisine.ca",
+      "error": "fetch failed",
+      "observedAt": "2026-08-27T20:59:03.073Z",
+      "reviewState": "needs-review"
+    },
+    {
+      "restaurantId": "osm-node-4420843802-le-bistro-by-liz",
+      "name": "Le Bistro by Liz",
+      "website": "https://www.lebistrohalifax.com",
+      "status": 200,
+      "observedAt": "2026-08-27T20:59:03.155Z",
+      "keywordHits": [
+        "event",
+        "events",
+        "menu",
+        "brunch",
+        "wine"
+      ],
+      "candidateLinks": [
+        {
+          "text": "Menus",
+          "href": "https://www.lebistrohalifax.com/#"
+        },
+        {
+          "text": "Brunch Menu",
+          "href": "https://www.lebistrohalifax.com/brunch-menu/"
+        },
+        {
+          "text": "Lunch &#038; Dinner Menu",
+          "href": "https://www.lebistrohalifax.com/lunch-dinner-menu/"
+        },
+        {
+          "text": "Vegan Menu",
+          "href": "https://www.lebistrohalifax.com/vegan-menu/"
+        },
+        {
+          "text": "Kids Menu",
+          "href": "https://www.lebistrohalifax.com/kids-menu/"
+        },
+        {
+          "text": "Wines",
+          "href": "https://www.lebistrohalifax.com/wines/"
+        },
+        {
+          "text": "Take-out",
+          "href": "https://www.lebistrohalifax.com/take-out-menu/"
+        },
+        {
+          "text": "Menus",
+          "href": "https://www.lebistrohalifax.com/#"
+        },
+        {
+          "text": "Brunch Menu",
+          "href": "https://www.lebistrohalifax.com/brunch-menu/"
+        },
+        {
+          "text": "Lunch &#038; Dinner Menu",
+          "href": "https://www.lebistrohalifax.com/lunch-dinner-menu/"
+        },
+        {
+          "text": "Vegan Menu",
+          "href": "https://www.lebistrohalifax.com/vegan-menu/"
+        },
+        {
+          "text": "Kids Menu",
+          "href": "https://www.lebistrohalifax.com/kids-menu/"
         }
       ],
       "reviewState": "needs-review"

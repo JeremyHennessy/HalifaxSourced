@@ -700,3 +700,51 @@ button:focus-visible {
     grid-template-columns: 1fr;
   }
 }
+
+.map-plot {
+  min-height: 420px;
+  height: min(56vh, 560px);
+  background: #eef2eb;
+}
+
+.map-plot::before {
+  content: none;
+}
+
+.map-fallback {
+  display: grid;
+  min-height: 320px;
+  place-items: center;
+  padding: 24px;
+  color: var(--muted);
+  font-weight: 800;
+}
+
+.leaflet-container {
+  font: inherit;
+  background: #eef2eb;
+}
+
+.leaflet-popup-content-wrapper,
+.leaflet-popup-tip {
+  border-radius: 8px;
+}
+
+.leaflet-popup-content {
+  margin: 10px 12px;
+  line-height: 1.4;
+}
+
+.leaflet-overlay-pane .map-pin {
+  position: static;
+  width: auto;
+  height: auto;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  transform: none;
+}
+
+.leaflet-overlay-pane .map-pin.is-selected {
+  outline: none;
+}

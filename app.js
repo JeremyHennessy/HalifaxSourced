@@ -1,6 +1,10 @@
 const curatedRestaurants = window.HALIFAX_RESTAURANTS ?? [];
 const osmRestaurants = window.HALIFAX_OSM_RESTAURANTS ?? [];
 const osmMeta = window.HALIFAX_OSM_META ?? null;
+const nsFoodInspectionPayload = window.HALIFAX_NS_FOOD_INSPECTIONS ?? null;
+const nsFoodInspectionRecords = nsFoodInspectionPayload?.records ?? [];
+let leafletMap = null;
+let leafletMarkerLayer = null;
 
 const state = {
   query: "",
@@ -71,6 +75,68 @@ function mergeSources(a = [], b = []) {
   });
 }
 
+function normalizeLookup(value) {
+  return String(value ?? "")
+    .toLowerCase()
+    .normalize("NFKD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/\bthe\b/g, "")
+    .replace(/[^a-z0-9]+/g, "")
+    .trim();
+}
+
+function addressLookup(value) {
+  return String(value ?? "")
+    .toLowerCase()
+    .normalize("NFKD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/\b(street|st|avenue|ave|road|rd|drive|dr|boulevard|blvd|lane|ln|nova scotia|halifax|dartmouth|bedford)\b/g, "")
+    .replace(/[^a-z0-9]+/g, "")
+    .trim();
+}
+
+const nsInspectionByName = new Map();
+for (const record of nsFoodInspectionRecords) {
+  const key = normalizeLookup(record.name);
+  if (!key) continue;
+  if (!nsInspectionByName.has(key)) nsInspectionByName.set(key, []);
+  nsInspectionByName.get(key).push(record);
+}
+
+function findInspectionMatches(restaurant) {
+  const nameKey = normalizeLookup(restaurant.name);
+  const addressKey = addressLookup(restaurant.address);
+  const candidates = nsFoodInspectionRecords.filter((record) => {
+    const recordName = normalizeLookup(record.name);
+    const recordAddress = addressLookup(record.address);
+    const nameMatch = recordName === nameKey || (nameKey.length > 8 && recordName.includes(nameKey)) || (recordName.length > 8 && nameKey.includes(recordName));
+    const addressMatch = addressKey && recordAddress && (recordAddress.includes(addressKey.slice(0, 12)) || addressKey.includes(recordAddress.slice(0, 12)));
+    return nameMatch || (addressMatch && recordName.slice(0, 6) === nameKey.slice(0, 6));
+  });
+
+  const exact = nsInspectionByName.get(nameKey) ?? [];
+  return [...exact, ...candidates]
+    .filter((record, index, all) => all.findIndex((item) => item.id === record.id) === index)
+    .slice(0, 5);
+}
+
+function attachInspectionEvidence(restaurant) {
+  const inspectionRecords = findInspectionMatches(restaurant);
+  if (!inspectionRecords.length) return { ...restaurant, inspectionRecords: [] };
+
+  const inspectionSources = inspectionRecords.map((record) => ({
+    label: `NS inspection: ${record.name}`,
+    type: "ns_food_inspection",
+    url: record.detailUrl,
+    status: "verified"
+  }));
+
+  return {
+    ...restaurant,
+    inspectionRecords,
+    sources: mergeSources(restaurant.sources, inspectionSources)
+  };
+}
 function mergeRestaurantLayers(curated, osm) {
   const byName = new Map();
   const merged = curated.map((restaurant) => ({ ...restaurant, sourceLayer: "curated" }));
@@ -97,7 +163,7 @@ function mergeRestaurantLayers(curated, osm) {
   return merged;
 }
 
-const restaurants = mergeRestaurantLayers(curatedRestaurants, osmRestaurants);
+const restaurants = mergeRestaurantLayers(curatedRestaurants, osmRestaurants).map(attachInspectionEvidence);
 state.selectedId = restaurants[0]?.id ?? null;
 
 function daysSince(dateValue) {
@@ -192,7 +258,8 @@ function renderStats() {
   if (osmMeta) {
     const generated = osmMeta.generatedAt ? new Date(osmMeta.generatedAt).toLocaleString() : "not generated";
     elements.sourceScope.textContent = osmMeta.scope;
-    elements.sourceUpdated.textContent = `${osmMeta.count} OSM places imported · updated ${generated}`;
+    const nsPart = nsFoodInspectionPayload ? ` · ${nsFoodInspectionPayload.count} NS inspection records indexed` : "";
+    elements.sourceUpdated.textContent = `${osmMeta.count} OSM places imported · updated ${generated}${nsPart}`;
   }
 }
 
@@ -249,33 +316,71 @@ function renderCards() {
   renderDetail(restaurants.find((restaurant) => restaurant.id === state.selectedId));
 }
 
+function markerColor(restaurant) {
+  const key = categoryKey(restaurant);
+  if (key === "cafe") return "#9a6a1f";
+  if (key === "bar") return "#2f5f89";
+  if (key === "quick") return "#a6473e";
+  return "#2f6f54";
+}
+
+function initLeafletMap() {
+  if (leafletMap || !window.L) return Boolean(leafletMap);
+
+  leafletMap = L.map(elements.mapPlot, {
+    scrollWheelZoom: false,
+    preferCanvas: true
+  }).setView([44.6488, -63.5752], 13);
+
+  L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+    maxZoom: 19,
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+  }).addTo(leafletMap);
+
+  leafletMarkerLayer = L.layerGroup().addTo(leafletMap);
+  setTimeout(() => leafletMap.invalidateSize(), 0);
+  return true;
+}
+
 function renderMap(visible) {
-  const bbox = osmMeta?.bbox ?? { south: 44.575, west: -63.69, north: 44.705, east: -63.505 };
-  const plotted = visible.filter((restaurant) => restaurant.coordinates).slice(0, 500);
-  elements.mapPlot.innerHTML = "";
+  const plotted = visible.filter((restaurant) => restaurant.coordinates).slice(0, 700);
+  if (!initLeafletMap()) {
+    elements.mapPlot.innerHTML = '<div class="map-fallback">Interactive map could not load. The list view is still available.</div>';
+    return;
+  }
+
+  leafletMarkerLayer.clearLayers();
+  window.__halifaxMapMarkerCount = 0;
+  const bounds = [];
 
   for (const restaurant of plotted) {
     const { lat, lon } = restaurant.coordinates;
-    const x = ((lon - bbox.west) / (bbox.east - bbox.west)) * 100;
-    const y = ((bbox.north - lat) / (bbox.north - bbox.south)) * 100;
-    if (x < 0 || x > 100 || y < 0 || y > 100) continue;
+    const selected = restaurant.id === state.selectedId;
+    const marker = L.circleMarker([lat, lon], {
+      radius: selected ? 8 : 5,
+      color: "#ffffff",
+      weight: selected ? 3 : 2,
+      fillColor: markerColor(restaurant),
+      fillOpacity: selected ? 1 : 0.82,
+      className: `map-pin ${categoryKey(restaurant)}${selected ? " is-selected" : ""}`
+    });
 
-    const pin = document.createElement("button");
-    pin.className = `map-pin ${categoryKey(restaurant)}`;
-    pin.type = "button";
-    pin.title = restaurant.name;
-    pin.style.left = `${x}%`;
-    pin.style.top = `${y}%`;
-    pin.setAttribute("aria-label", restaurant.name);
-    pin.classList.toggle("is-selected", restaurant.id === state.selectedId);
-    pin.addEventListener("click", () => {
+    marker.bindPopup(`<strong>${escapeHtml(restaurant.name)}</strong><br>${escapeHtml(restaurant.neighborhood)}<br>${escapeHtml(restaurant.category ?? "Food and drink")}`);
+    marker.on("click", () => {
       state.selectedId = restaurant.id;
       render();
+      marker.openPopup();
     });
-    elements.mapPlot.append(pin);
+    marker.addTo(leafletMarkerLayer);
+    window.__halifaxMapMarkerCount += 1;
+    bounds.push([lat, lon]);
+  }
+
+  if (bounds.length && !leafletMap._halifaxInitialFit) {
+    leafletMap.fitBounds(bounds, { padding: [24, 24], maxZoom: 14 });
+    leafletMap._halifaxInitialFit = true;
   }
 }
-
 function detailFact(label, value, href = null) {
   if (!value) return "";
   const content = href ? `<a href="${escapeHtml(href)}" target="_blank" rel="noreferrer">${escapeHtml(value)}</a>` : `<strong>${escapeHtml(value)}</strong>`;
@@ -300,6 +405,10 @@ function renderDetail(restaurant) {
     ? restaurant.events.map((event) => `<li><strong>${escapeHtml(event.title)}</strong><small>${escapeHtml(event.timing)} · ${escapeHtml(statusText(event.sourceStatus))}</small></li>`).join("")
     : "<li>No upcoming event captured yet.<small>Ready for calendar, ticketing, or restaurant-owned channel.</small></li>";
 
+
+  const inspectionMarkup = restaurant.inspectionRecords?.length
+    ? restaurant.inspectionRecords.map((record) => `<li><strong><a href="${escapeHtml(record.detailUrl)}" target="_blank" rel="noreferrer">${escapeHtml(record.name)}</a></strong><small>${escapeHtml(record.address)} · current as of ${escapeHtml(record.currentAsOf || "source search")}</small></li>`).join("")
+    : "<li>No inspection registry match captured yet.<small>Ready for name/address review against Government of Nova Scotia records.</small></li>";
   const sourceMarkup = restaurant.sources.map((source) => {
     const url = safeUrl(source.url);
     const link = url ? `<a href="${escapeHtml(url)}" target="_blank" rel="noreferrer">${escapeHtml(source.label)}</a>` : `<strong>${escapeHtml(source.label)}</strong>`;
@@ -325,6 +434,7 @@ function renderDetail(restaurant) {
 
     <section class="detail-section"><h3>Specials</h3><ul class="detail-list">${specialsMarkup}</ul></section>
     <section class="detail-section"><h3>Events</h3><ul class="detail-list">${eventsMarkup}</ul></section>
+    <section class="detail-section"><h3>Inspection Registry</h3><ul class="detail-list">${inspectionMarkup}</ul></section>
     <section class="detail-section"><h3>Best for</h3><div class="tags">${restaurant.vibe.map((tag) => `<span class="tag">${escapeHtml(tag)}</span>`).join("")}</div></section>
     <section class="detail-section"><h3>Review Needs</h3><div class="tags">${reviewReasons(restaurant).slice(0, 8).map((reason) => `<span class="tag alert">${escapeHtml(reason)}</span>`).join("")}</div></section>
     <section class="detail-section"><h3>Source Evidence</h3><div class="source-list">${sourceMarkup}</div></section>

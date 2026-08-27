@@ -2,7 +2,7 @@ import { readFile } from "node:fs/promises";
 import { Script, createContext } from "node:vm";
 
 const context = createContext({ window: {} });
-for (const file of ["../data/restaurants.js", "../data/osm-restaurants.js"]) {
+for (const file of ["../data/restaurants.js", "../data/osm-restaurants.js", "../data/ns-food-inspections.js"]) {
   const source = await readFile(new URL(file, import.meta.url), "utf8");
   new Script(source, { filename: file }).runInContext(context);
 }
@@ -15,6 +15,7 @@ const errors = [];
 const ids = new Set();
 const requiredFields = ["id", "name", "neighborhood", "cuisines", "vibe", "qualityScore", "freshnessDate", "evidenceStatus", "sources"];
 const statuses = new Set(["verified", "needs-review", "restricted"]);
+const nsFoodInspections = context.window.HALIFAX_NS_FOOD_INSPECTIONS ?? null;
 
 for (const { label, records } of groups) {
   if (!Array.isArray(records)) {
@@ -48,10 +49,34 @@ for (const { label, records } of groups) {
   }
 }
 
+if (!nsFoodInspections || !Array.isArray(nsFoodInspections.records)) {
+  errors.push("Nova Scotia food inspection payload must expose a records array.");
+} else {
+  if (nsFoodInspections.count !== nsFoodInspections.records.length) {
+    errors.push("Nova Scotia food inspection count must match records length.");
+  }
+
+  for (const [index, record] of nsFoodInspections.records.entries()) {
+    for (const field of ["id", "name", "address", "city", "detailUrl", "source", "currentAsOf"]) {
+      if (!record[field]) errors.push(`Nova Scotia food inspection record ${index} is missing ${field}.`);
+    }
+
+    if (record.detailUrl) {
+      try {
+        const url = new URL(record.detailUrl);
+        if (url.protocol !== "https:") errors.push(`${record.id} detailUrl must use https.`);
+      } catch {
+        errors.push(`${record.id} has invalid detailUrl: ${record.detailUrl}`);
+      }
+    }
+  }
+}
+
 if (errors.length) {
   console.error(errors.join("\n"));
   process.exit(1);
 }
 
 const total = groups.reduce((count, group) => count + group.records.length, 0);
-console.log(`Validated ${total} records (${groups.map((group) => `${group.records.length} ${group.label}`).join(", ")}).`);
+const nsCount = nsFoodInspections?.records?.length ?? 0;
+console.log(`Validated ${total} directory records (${groups.map((group) => `${group.records.length} ${group.label}`).join(", ")}) and ${nsCount} Nova Scotia inspection records.`);

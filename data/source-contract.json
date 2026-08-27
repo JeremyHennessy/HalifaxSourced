@@ -1,21 +1,23 @@
 {
   "name": "Halifax Sourced source contract",
-  "version": 2,
+  "version": 3,
   "principles": [
     "Store restaurant-owned facts and source links separately from third-party platform content.",
     "Keep restricted platform records as source references unless the API terms permit display and retention.",
     "Track when each captured fact was observed, where it came from, and whether it needs human review.",
     "Never treat missing data as a negative signal; mark it as missing, stale, restricted, or unverified.",
-    "OpenStreetMap directory records are discovery/practical-data records, not editorial quality verification."
+    "OpenStreetMap directory records are discovery/practical-data records, not editorial quality verification.",
+    "Inspection registry records are evidence links and compliance context, not quality ratings."
   ],
   "scope": {
-    "starter_area": "Halifax peninsula, Dartmouth, Armdale, Fairview, and immediately surrounding areas",
+    "starter_area": "Halifax peninsula, Dartmouth, Bedford, Armdale, Fairview, and immediately surrounding areas",
     "bbox": {
       "south": 44.575,
       "west": -63.69,
       "north": 44.705,
       "east": -63.505
-    }
+    },
+    "inspection_cities": ["Halifax", "Dartmouth", "Bedford"]
   },
   "restaurant": {
     "id": "stable-slug",
@@ -37,10 +39,20 @@
       "lat": "Latitude when available from a permitted source",
       "lon": "Longitude when available from a permitted source"
     },
+    "inspectionRecords": [
+      {
+        "id": "Nova Scotia registry record id",
+        "name": "Registry establishment name",
+        "address": "Registry establishment address",
+        "city": "Registry city",
+        "detailUrl": "Government detail page URL",
+        "currentAsOf": "Registry search current-as-of timestamp"
+      }
+    ],
     "sources": [
       {
         "label": "Human-readable source",
-        "type": "restaurant_site | openstreetmap | google_places | meta_owned_page | review_site | owner_submission | event_feed",
+        "type": "restaurant_site | openstreetmap | google_places | meta_owned_page | review_site | owner_submission | event_feed | ns_food_inspection",
         "url": "Source URL",
         "status": "verified | needs-review | restricted"
       }
@@ -62,11 +74,22 @@
     "sourceUrl": "Official calendar, ticketing page, or restaurant-owned announcement",
     "sourceStatus": "verified | needs-review | restricted"
   },
+  "map": {
+    "library": "Leaflet 1.9.4",
+    "tileUrl": "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+    "attribution": "OpenStreetMap contributors",
+    "constraints": [
+      "Use visible attribution.",
+      "Use browser caching and valid referrers.",
+      "Do not bulk download, prefetch, or package public OSM tiles for offline use."
+    ]
+  },
   "buildArtifacts": {
     "catalogJson": "data/build/catalog.json",
     "sqliteDatabase": "data/build/halifax_sourced.sqlite",
     "officialSiteSignals": "data/build/official-site-signals.json",
     "ownerSubmissions": "data/build/owner-submissions.normalized.json",
+    "novaScotiaFoodInspections": "data/build/ns-food-inspections.json and data/ns-food-inspections.js",
     "googlePlaceLinks": "data/build/google-place-links.json when GOOGLE_PLACES_API_KEY is supplied"
   }
 }

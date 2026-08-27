@@ -45,9 +45,14 @@ if (dartmouthCount < 2) {
 }
 
 await page.locator("#search").fill("");
-const mapPins = await page.locator(".map-pin").count();
-if (mapPins < 100) {
-  throw new Error(`Expected expanded map pins, found ${mapPins}.`);
+const mapState = await page.evaluate(() => ({
+  markers: window.__halifaxMapMarkerCount ?? 0,
+  canvases: document.querySelectorAll(".leaflet-overlay-pane canvas").length,
+  tiles: document.querySelectorAll(".leaflet-tile-loaded").length,
+  leaflet: Boolean(window.L)
+}));
+if (!mapState.leaflet || mapState.markers < 100 || mapState.canvases < 1 || mapState.tiles < 1) {
+  throw new Error(`Expected expanded Leaflet map, got ${JSON.stringify(mapState)}.`);
 }
 
 await page.locator('button[data-filter="events"]').click();

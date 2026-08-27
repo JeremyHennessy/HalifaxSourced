@@ -13,6 +13,7 @@ conn = sqlite3.connect(db_path)
 cur = conn.cursor()
 cur.executescript(
     """
+    drop table if exists restaurant_inspection_records;
     drop table if exists restaurant_sources;
     drop table if exists specials;
     drop table if exists events;
@@ -40,6 +41,16 @@ cur.executescript(
       osm_type text,
       osm_id text,
       osm_amenity text
+    );
+
+    create table restaurant_inspection_records (
+      restaurant_id text not null references restaurants(id),
+      facility_id text,
+      name text not null,
+      address text,
+      city text,
+      detail_url text,
+      current_as_of text
     );
 
     create table restaurant_sources (
@@ -101,6 +112,20 @@ for restaurant in catalog["restaurants"]:
             osm.get("amenity"),
         ),
     )
+
+    for inspection in restaurant.get("inspectionRecords", []):
+        cur.execute(
+            "insert into restaurant_inspection_records values (?, ?, ?, ?, ?, ?, ?)",
+            (
+                restaurant["id"],
+                inspection.get("facilityId"),
+                inspection.get("name"),
+                inspection.get("address"),
+                inspection.get("city"),
+                inspection.get("detailUrl"),
+                inspection.get("currentAsOf"),
+            ),
+        )
 
     for source in restaurant.get("sources", []):
         cur.execute(
