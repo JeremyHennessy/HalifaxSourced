@@ -45,11 +45,24 @@ if (dartmouthCount < 2) {
 }
 
 await page.locator("#search").fill("");
-await page.getByRole("button", { name: "Events" }).click();
+const mapPins = await page.locator(".map-pin").count();
+if (mapPins < 100) {
+  throw new Error(`Expected expanded map pins, found ${mapPins}.`);
+}
+
+await page.locator('button[data-filter="events"]').click();
 const eventCards = await page.locator(".restaurant-card").count();
 if (eventCards < 1) {
   throw new Error("Expected at least one event-capable restaurant.");
 }
+
+await page.locator('button[data-filter="all"]').click();
+await page.locator('button[data-view="admin"]').click();
+const adminCards = await page.locator(".admin-card").count();
+if (adminCards < 100) {
+  throw new Error(`Expected expanded admin review queue, found ${adminCards}.`);
+}
+await page.locator('button[data-view="public"]').click();
 
 const overlay = await page
   .locator("[data-nextjs-dialog], .vite-error-overlay, #webpack-dev-server-client-overlay")

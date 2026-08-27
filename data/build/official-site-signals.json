@@ -1,0 +1,229 @@
+{
+  "generatedAt": "2026-08-27T20:34:06.636Z",
+  "count": 8,
+  "results": [
+    {
+      "restaurantId": "edna",
+      "name": "EDNA",
+      "website": "https://www.ednarestaurant.com/",
+      "status": 200,
+      "observedAt": "2026-08-27T20:34:00.828Z",
+      "keywordHits": [
+        "event",
+        "events",
+        "menu"
+      ],
+      "candidateLinks": [
+        {
+          "text": "Menu",
+          "href": "https://www.ednarestaurant.com/menu"
+        },
+        {
+          "text": "Menu",
+          "href": "https://www.ednarestaurant.com/menu"
+        },
+        {
+          "text": "Menu",
+          "href": "https://www.ednarestaurant.com/menu"
+        }
+      ],
+      "reviewState": "needs-review"
+    },
+    {
+      "restaurantId": "highwayman",
+      "name": "Highwayman",
+      "website": "https://www.highwaymanhfx.com/",
+      "status": 200,
+      "observedAt": "2026-08-27T20:34:00.946Z",
+      "keywordHits": [
+        "happy hour",
+        "event",
+        "events",
+        "menu",
+        "cocktail"
+      ],
+      "candidateLinks": [
+        {
+          "text": "FOOD",
+          "href": "https://www.highwaymanhfx.com/food-menu"
+        },
+        {
+          "text": "DRINKS",
+          "href": "https://www.highwaymanhfx.com/drink-menu"
+        },
+        {
+          "text": "HAPPY HOUR",
+          "href": "https://www.highwaymanhfx.com/happyhour"
+        },
+        {
+          "text": "FOOD",
+          "href": "https://www.highwaymanhfx.com/food-menu"
+        },
+        {
+          "text": "DRINKS",
+          "href": "https://www.highwaymanhfx.com/drink-menu"
+        },
+        {
+          "text": "HAPPY HOUR",
+          "href": "https://www.highwaymanhfx.com/happyhour"
+        },
+        {
+          "text": "Folder: MENUS",
+          "href": "https://www.highwaymanhfx.com/menus"
+        },
+        {
+          "text": "FOOD",
+          "href": "https://www.highwaymanhfx.com/food-menu"
+        },
+        {
+          "text": "DRINKS",
+          "href": "https://www.highwaymanhfx.com/drink-menu"
+        },
+        {
+          "text": "HAPPY HOUR",
+          "href": "https://www.highwaymanhfx.com/happyhour"
+        },
+        {
+          "text": "OUR FOOD MENU",
+          "href": "https://www.highwaymanhfx.com/food-menu"
+        },
+        {
+          "text": "OUR DRINK MENU",
+          "href": "https://www.highwaymanhfx.com/drink-menu"
+        }
+      ],
+      "reviewState": "needs-review"
+    },
+    {
+      "restaurantId": "field-guide",
+      "name": "Field Guide",
+      "website": "https://fieldguidehfx.com",
+      "status": 200,
+      "observedAt": "2026-08-27T20:34:01.089Z",
+      "keywordHits": [
+        "happy hour",
+        "menu",
+        "wine",
+        "cocktail"
+      ],
+      "candidateLinks": [
+        {
+          "text": "Menu",
+          "href": "https://fieldguidehfx.com/#menus"
+        },
+        {
+          "text": "Cocktails",
+          "href": "https://fieldguidehfx.com/#cocktails"
+        },
+        {
+          "text": "Wine",
+          "href": "https://fieldguidehfx.com/#wine"
+        }
+      ],
+      "reviewState": "needs-review"
+    },
+    {
+      "restaurantId": "osm-node-5150058322-2-crows-brewing",
+      "name": "2 Crows Brewing",
+      "website": "https://www.2crowsbrewing.com/",
+      "status": 200,
+      "observedAt": "2026-08-27T20:34:01.803Z",
+      "keywordHits": [
+        "special",
+        "event",
+        "events"
+      ],
+      "candidateLinks": [],
+      "reviewState": "needs-review"
+    },
+    {
+      "restaurantId": "osm-node-2714150704-7-peppers-grill",
+      "name": "7 Peppers Grill",
+      "website": "https://www.7peppersgrill.net/",
+      "status": 200,
+      "observedAt": "2026-08-27T20:34:02.092Z",
+      "keywordHits": [
+        "special",
+        "event",
+        "events",
+        "menu"
+      ],
+      "candidateLinks": [
+        {
+          "text": "Menu",
+          "href": "https://www.7peppersgrill.net/menu"
+        },
+        {
+          "text": "Menu",
+          "href": "https://www.7peppersgrill.net/menu"
+        }
+      ],
+      "reviewState": "needs-review"
+    },
+    {
+      "restaurantId": "osm-node-2702737179-9-nine",
+      "name": "9 + Nine",
+      "website": "https://9plus9.ca/",
+      "error": "fetch failed",
+      "observedAt": "2026-08-27T20:34:02.151Z",
+      "reviewState": "needs-review"
+    },
+    {
+      "restaurantId": "osm-node-13944251182-a-and-w",
+      "name": "A&W",
+      "website": "https://web.aw.ca/en/locations/6012/dartmouth/240-victoria-rd",
+      "status": 200,
+      "observedAt": "2026-08-27T20:34:02.276Z",
+      "keywordHits": [
+        "event"
+      ],
+      "candidateLinks": [],
+      "reviewState": "needs-review"
+    },
+    {
+      "restaurantId": "osm-node-5987565464-afrite",
+      "name": "aFrite",
+      "website": "https://afrite.ca/",
+      "status": 200,
+      "observedAt": "2026-08-27T20:34:06.635Z",
+      "keywordHits": [
+        "special",
+        "event",
+        "events",
+        "menu",
+        "brunch"
+      ],
+      "candidateLinks": [
+        {
+          "text": "Menu",
+          "href": "https://afrite.ca/menu/"
+        },
+        {
+          "text": "Menu",
+          "href": "https://afrite.ca/menu/"
+        },
+        {
+          "text": "DINE IN MENUS",
+          "href": "https://afrite.ca/menu/"
+        },
+        {
+          "text": "",
+          "href": "https://i0.wp.com/afrite.ca/wp-content/uploads/2021/04/SummerMenu-4.jpg?fit=1080%2C1350&#038;ssl=1"
+        },
+        {
+          "text": "",
+          "href": "https://i0.wp.com/afrite.ca/wp-content/uploads/2021/04/Summer-Menu-8-1.jpg?fit=1080%2C1350&#038;ssl=1"
+        },
+        {
+          "text": "",
+          "href": "https://i0.wp.com/afrite.ca/wp-content/uploads/2021/04/Summer-Menu-5.jpg?fit=1080%2C1350&#038;ssl=1"
+        },
+        {
+          "text": "",
+          "href": "https://i0.wp.com/afrite.ca/wp-content/uploads/2021/04/Summer-Menu-2.jpg?fit=1080%2C1350&#038;ssl=1"
+        }
+      ],
+      "reviewState": "needs-review"
+    }
+  ]
+}

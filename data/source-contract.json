@@ -1,25 +1,46 @@
 {
   "name": "Halifax Sourced source contract",
-  "version": 1,
+  "version": 2,
   "principles": [
     "Store restaurant-owned facts and source links separately from third-party platform content.",
     "Keep restricted platform records as source references unless the API terms permit display and retention.",
     "Track when each captured fact was observed, where it came from, and whether it needs human review.",
-    "Never treat missing data as a negative signal; mark it as missing, stale, restricted, or unverified."
+    "Never treat missing data as a negative signal; mark it as missing, stale, restricted, or unverified.",
+    "OpenStreetMap directory records are discovery/practical-data records, not editorial quality verification."
   ],
+  "scope": {
+    "starter_area": "Halifax peninsula, Dartmouth, Armdale, Fairview, and immediately surrounding areas",
+    "bbox": {
+      "south": 44.575,
+      "west": -63.69,
+      "north": 44.705,
+      "east": -63.505
+    }
+  },
   "restaurant": {
     "id": "stable-slug",
     "name": "Display name",
     "neighborhood": "Halifax, Dartmouth, Bedford, or local district",
+    "category": "Restaurant | Cafe | Bar | Pub | Quick eats | Food court | Dessert",
     "cuisines": ["type labels"],
     "vibe": ["occasion labels"],
     "qualityScore": "internal 0-100 score from weighted, source-attributed signals",
     "freshnessDate": "YYYY-MM-DD date when facts were last checked",
     "evidenceStatus": "verified | needs-review | restricted",
+    "sourceLayer": "curated | openstreetmap | owner_submission | licensed_api",
+    "summary": "Short source-aware description",
+    "address": "Postal address when available from a permitted source",
+    "phone": "Phone number when available from a permitted source",
+    "website": "Restaurant-owned website when available from a permitted source",
+    "openingHours": "Opening hours expression when available from a permitted source",
+    "coordinates": {
+      "lat": "Latitude when available from a permitted source",
+      "lon": "Longitude when available from a permitted source"
+    },
     "sources": [
       {
         "label": "Human-readable source",
-        "type": "restaurant_site | google_places | meta_owned_page | review_site | owner_submission | event_feed",
+        "type": "restaurant_site | openstreetmap | google_places | meta_owned_page | review_site | owner_submission | event_feed",
         "url": "Source URL",
         "status": "verified | needs-review | restricted"
       }
@@ -40,5 +61,12 @@
     "timing": "Date/time if verified",
     "sourceUrl": "Official calendar, ticketing page, or restaurant-owned announcement",
     "sourceStatus": "verified | needs-review | restricted"
+  },
+  "buildArtifacts": {
+    "catalogJson": "data/build/catalog.json",
+    "sqliteDatabase": "data/build/halifax_sourced.sqlite",
+    "officialSiteSignals": "data/build/official-site-signals.json",
+    "ownerSubmissions": "data/build/owner-submissions.normalized.json",
+    "googlePlaceLinks": "data/build/google-place-links.json when GOOGLE_PLACES_API_KEY is supplied"
   }
 }
