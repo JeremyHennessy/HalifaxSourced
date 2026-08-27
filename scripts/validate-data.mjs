@@ -2,7 +2,7 @@ import { readFile } from "node:fs/promises";
 import { Script, createContext } from "node:vm";
 
 const context = createContext({ window: {} });
-for (const file of ["../data/restaurants.js", "../data/osm-restaurants.js", "../data/ns-food-inspections.js"]) {
+for (const file of ["../data/restaurants.js", "../data/osm-restaurants.js", "../data/ns-food-inspections.js", "../data/official-site-signals.js"]) {
   const source = await readFile(new URL(file, import.meta.url), "utf8");
   new Script(source, { filename: file }).runInContext(context);
 }
@@ -16,6 +16,7 @@ const ids = new Set();
 const requiredFields = ["id", "name", "neighborhood", "cuisines", "vibe", "qualityScore", "freshnessDate", "evidenceStatus", "sources"];
 const statuses = new Set(["verified", "needs-review", "restricted"]);
 const nsFoodInspections = context.window.HALIFAX_NS_FOOD_INSPECTIONS ?? null;
+const officialSiteSignals = context.window.HALIFAX_OFFICIAL_SITE_SIGNALS ?? null;
 
 for (const { label, records } of groups) {
   if (!Array.isArray(records)) {
@@ -72,6 +73,21 @@ if (!nsFoodInspections || !Array.isArray(nsFoodInspections.records)) {
   }
 }
 
+if (!officialSiteSignals || !Array.isArray(officialSiteSignals.results)) {
+  errors.push("Official site signal payload must expose a results array.");
+} else {
+  if (officialSiteSignals.count !== officialSiteSignals.results.length) {
+    errors.push("Official site signal count must match results length.");
+  }
+
+  for (const [index, result] of officialSiteSignals.results.entries()) {
+    for (const field of ["restaurantId", "name", "website", "observedAt", "sourceKind", "reviewState"]) {
+      if (!result[field]) errors.push(`Official site signal ${index} is missing ${field}.`);
+    }
+    if (!result.error && typeof result.status !== "number") errors.push(`Official site signal ${index} is missing HTTP status or error.`);
+  }
+}
+
 if (errors.length) {
   console.error(errors.join("\n"));
   process.exit(1);
@@ -79,4 +95,5 @@ if (errors.length) {
 
 const total = groups.reduce((count, group) => count + group.records.length, 0);
 const nsCount = nsFoodInspections?.records?.length ?? 0;
-console.log(`Validated ${total} directory records (${groups.map((group) => `${group.records.length} ${group.label}`).join(", ")}) and ${nsCount} Nova Scotia inspection records.`);
+const officialCount = officialSiteSignals?.results?.length ?? 0;
+console.log(`Validated ${total} directory records (${groups.map((group) => `${group.records.length} ${group.label}`).join(", ")}), ${nsCount} Nova Scotia public registry records, and ${officialCount} official website signal records.`);

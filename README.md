@@ -1,6 +1,6 @@
 # Halifax Sourced
 
-A source-aware restaurant intelligence app for Halifax, focused on happy hours, specials, events, cuisine types, occasions, quality signals, map discovery, and admin review workflow.
+A public discovery app for Halifax food and drink: events, happy hours, specials, patios, openings, menus, hours, and practical details. The app cross-references public and permitted sources so each lead can be traced back to where it came from.
 
 ## Live app
 
@@ -10,7 +10,9 @@ https://jeremyhennessy.github.io/HalifaxSourced/
 
 ## Current scope
 
-The expanded directory starts with the Halifax peninsula plus nearby Dartmouth, Bedford, Armdale, Fairview, and immediate surrounding areas. Curated records are layered on top of OpenStreetMap discovery records, Nova Scotia food-establishment inspection registry records, restaurant-owned website signal checks, owner submissions, and optional Google Places place-ID links.
+The expanded directory starts with the Halifax peninsula plus nearby Dartmouth, Bedford, Armdale, Fairview, and immediate surrounding areas. Curated starter records are layered on top of OpenStreetMap discovery records, restaurant-owned website signal checks, Nova Scotia public registry records, owner/community submissions, and optional Google Places place-ID links.
+
+This is not an ownership or compliance review app. Public registry and inspection links are used only as cross-references for matching active establishments and addresses. The product should lead with what people are looking for: what is open, where the patios are, what has specials, what has events, and where to find the official source.
 
 ## Run locally
 
@@ -24,14 +26,15 @@ Then open `http://localhost:5173`.
 
 ## What exists now
 
-- Public directory with search, category filters, sorting, restaurant cards, detail panes, and a Leaflet map using OpenStreetMap public tiles.
-- Admin review queue for stale, OSM-only, missing-site, missing-address, no-special, no-event, and inspection/evidence review states.
+- Public directory with search, category filters, patio/opening filters, sorting, restaurant cards, detail panes, and a Leaflet map using OpenStreetMap public tiles.
+- Source Gap Workbench for missing menus, missing direct websites, no special/event lead, patio unknown, stale source checks, and directory-only records.
 - 735 OpenStreetMap food/drink records plus 10 curated starter records, merged into 739 public records.
-- 1,919 Government of Nova Scotia food inspection registry records for Halifax, Dartmouth, and Bedford, with 496 public records currently matched to at least one inspection entry.
-- Official website signal cache covering 120 restaurant-owned sites for menu, specials, happy-hour, and event evidence review.
+- 282 official restaurant websites scanned for discovery signals.
+- Current official-site signal leads: 163 menu, 108 specials, 74 events, 19 patio, 9 opening, 37 brunch, 102 reservation, and 92 takeout/delivery leads.
+- 1,919 Government of Nova Scotia public registry records for Halifax, Dartmouth, and Bedford, with 496 public records currently matched to at least one registry entry.
 - Source-aware data model in `data/source-contract.json`.
 - Local development catalog and SQLite database in `data/build/`.
-- Import jobs for OpenStreetMap, Nova Scotia food inspections, owner submissions, official website signals, and Google Places place-ID linking.
+- Import jobs for OpenStreetMap, Nova Scotia public registry records, owner/community submissions, official website signals, and Google Places place-ID linking.
 
 ## Data commands
 
@@ -39,7 +42,7 @@ Then open `http://localhost:5173`.
 node .\scripts\import-osm-restaurants.mjs
 node .\scripts\import-ns-food-inspections.mjs
 node .\scripts\import-owner-submissions.mjs
-$env:OFFICIAL_SITE_LIMIT='120'; node .\scripts\import-official-sites.mjs
+$env:OFFICIAL_SITE_LIMIT='9999'; node .\scripts\import-official-sites.mjs
 node .\scripts\validate-data.mjs
 node .\scripts\export-catalog.mjs
 C:\Users\JeremyHennessy\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe .\scripts\build-sqlite-db.py
@@ -51,7 +54,7 @@ The SQLite database is written to:
 data/build/halifax_sourced.sqlite
 ```
 
-Current SQLite tables include `restaurants`, `restaurant_sources`, `specials`, `events`, `review_queue`, and `restaurant_inspection_records`.
+Current SQLite tables include `restaurants`, `restaurant_sources`, `specials`, `events`, `source_gap_queue`, `official_site_signals`, `official_site_signal_links`, and `restaurant_inspection_records`.
 
 ## Import jobs
 
@@ -61,16 +64,16 @@ OpenStreetMap discovery:
 node .\scripts\import-osm-restaurants.mjs
 ```
 
-Nova Scotia food inspection registry:
+Nova Scotia public registry cross-reference:
 
 ```powershell
 $env:NS_FOOD_CITIES='Halifax,Dartmouth,Bedford'
 node .\scripts\import-ns-food-inspections.mjs
 ```
 
-This writes permitted government registry records to `data/ns-food-inspections.js` and `data/build/ns-food-inspections.json`. The app treats registry matches as evidence links, not quality ratings.
+This writes permitted government registry records to `data/ns-food-inspections.js` and `data/build/ns-food-inspections.json`. The app treats registry matches as establishment/address cross-references, not ratings or rankings.
 
-Owner submissions:
+Owner/community submissions:
 
 ```powershell
 node .\scripts\import-owner-submissions.mjs
@@ -78,14 +81,14 @@ node .\scripts\import-owner-submissions.mjs
 
 Put CSV or JSON files in `data/imports/`. See `data/imports/owner-submissions.example.csv` for the starter shape.
 
-Official website signals:
+Official website discovery signals:
 
 ```powershell
-$env:OFFICIAL_SITE_LIMIT='120'
+$env:OFFICIAL_SITE_LIMIT='9999'
 node .\scripts\import-official-sites.mjs
 ```
 
-This checks restaurant-owned websites for candidate menu, special, happy-hour, and event links. It writes review-needed signals rather than auto-promoting facts.
+This checks restaurant-owned websites for candidate menu, happy-hour, special, event, patio, opening, brunch, reservation, takeout, and delivery links. It writes public lead data to `data/official-site-signals.js` and build data to `data/build/official-site-signals.json`.
 
 Google Places place-ID linking:
 
@@ -102,7 +105,7 @@ This job is intentionally conservative: it stores place IDs for matching only. G
 - The public map uses Leaflet 1.9.4 and OpenStreetMap tiles from `https://tile.openstreetmap.org/{z}/{x}/{y}.png` with visible attribution.
 - Do not bulk-download, prefetch, or package OSM tiles for offline use from the public tile service.
 - OpenStreetMap data requires attribution: Map data (c) OpenStreetMap contributors, ODbL.
-- Government of Nova Scotia inspection records are source/evidence links, not restaurant rankings.
-- Facebook and Instagram content should only be imported through authorized API access or owner submissions.
+- Government of Nova Scotia registry records are cross-reference links, not restaurant rankings.
+- Facebook and Instagram content should only be imported through authorized API access, permitted embeds, or owner/community submissions.
 - Google reviews/ratings/photos should only be displayed through permitted Google Places API use with attribution and retention controls.
-- Missing data is not a negative rating. It stays visible as a review-needed coverage state.
+- Missing data is not a negative rating. It stays visible as a source gap for future cross-reference.

@@ -1,4 +1,4 @@
-{
+window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
   "generatedAt": "2026-08-27T21:21:54.804Z",
   "count": 282,
   "kindCounts": {
@@ -25262,4 +25262,4 @@
       "reviewState": "cross-check"
     }
   ]
-}
+};

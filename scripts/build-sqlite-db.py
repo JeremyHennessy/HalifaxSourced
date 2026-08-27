@@ -4,19 +4,39 @@ from pathlib import Path
 
 root = Path(__file__).resolve().parents[1]
 catalog_path = root / "data" / "build" / "catalog.json"
+official_signals_path = root / "data" / "build" / "official-site-signals.json"
 db_path = root / "data" / "build" / "halifax_sourced.sqlite"
 
 catalog = json.loads(catalog_path.read_text(encoding="utf-8"))
+official_signals = json.loads(official_signals_path.read_text(encoding="utf-8")) if official_signals_path.exists() else {"results": []}
+official_by_id = {signal.get("restaurantId"): signal for signal in official_signals.get("results", []) if signal.get("restaurantId")}
 db_path.parent.mkdir(parents=True, exist_ok=True)
+
+
+def signal_has(restaurant_id, kind):
+    signal = official_by_id.get(restaurant_id) or {}
+    if signal.get("signalMatches", {}).get(kind):
+        return True
+    return any((link.get("signalMatches", {}).get(kind) or []) for link in signal.get("candidateLinks", []))
+
+
+def has_patio_signal(restaurant):
+    raw_tags = (restaurant.get("osm") or {}).get("rawTags") or {}
+    raw_text = json.dumps(raw_tags).lower()
+    return raw_tags.get("outdoor_seating") == "yes" or any(token in raw_text for token in ["patio", "terrace", "rooftop", "beer garden", "outdoor seating"]) or signal_has(restaurant["id"], "patio")
+
 
 conn = sqlite3.connect(db_path)
 cur = conn.cursor()
 cur.executescript(
     """
+    drop table if exists official_site_signal_links;
+    drop table if exists official_site_signals;
     drop table if exists restaurant_inspection_records;
     drop table if exists restaurant_sources;
     drop table if exists specials;
     drop table if exists events;
+    drop table if exists source_gap_queue;
     drop table if exists review_queue;
     drop table if exists restaurants;
 
@@ -27,7 +47,7 @@ cur.executescript(
       category text,
       cuisines_json text not null,
       vibe_json text not null,
-      quality_score integer not null,
+      source_coverage_score integer not null,
       freshness_date text not null,
       evidence_status text not null,
       source_layer text not null,
@@ -75,9 +95,29 @@ cur.executescript(
       source_status text
     );
 
-    create table review_queue (
+    create table source_gap_queue (
       restaurant_id text not null references restaurants(id),
       reason text not null
+    );
+
+    create table official_site_signals (
+      restaurant_id text not null references restaurants(id),
+      name text not null,
+      website text not null,
+      http_status integer,
+      error text,
+      observed_at text,
+      keyword_hits_json text not null,
+      signal_matches_json text not null,
+      source_kind text,
+      review_state text
+    );
+
+    create table official_site_signal_links (
+      restaurant_id text not null references restaurants(id),
+      text text,
+      href text not null,
+      signal_matches_json text not null
     );
     """
 )
@@ -146,21 +186,55 @@ for restaurant in catalog["restaurants"]:
         )
 
     reasons = []
-    if restaurant.get("evidenceStatus") != "verified":
-        reasons.append(restaurant.get("evidenceStatus", "needs-review"))
-    if restaurant.get("sourceLayer") == "openstreetmap":
-        reasons.append("OSM-only directory record")
     if not restaurant.get("website"):
-        reasons.append("missing official website")
+        reasons.append("missing direct website")
     if not restaurant.get("address"):
         reasons.append("missing address")
-    if not restaurant.get("specials"):
-        reasons.append("no captured specials")
-    if not restaurant.get("events"):
-        reasons.append("no captured events")
+    if not signal_has(restaurant["id"], "menu") and not ((restaurant.get("osm") or {}).get("rawTags") or {}).get("website:menu"):
+        reasons.append("missing menu link")
+    if not restaurant.get("specials") and not signal_has(restaurant["id"], "specials"):
+        reasons.append("no special or happy-hour lead")
+    if not restaurant.get("events") and not signal_has(restaurant["id"], "events"):
+        reasons.append("no event or live-music lead")
+    if not has_patio_signal(restaurant):
+        reasons.append("patio unknown")
+    if restaurant.get("sourceLayer") == "openstreetmap":
+        reasons.append("directory-only source")
     for reason in dict.fromkeys(reasons):
-        cur.execute("insert into review_queue values (?, ?)", (restaurant["id"], reason))
+        cur.execute("insert into source_gap_queue values (?, ?)", (restaurant["id"], reason))
+
+restaurant_ids = {restaurant["id"] for restaurant in catalog["restaurants"]}
+for signal in official_signals.get("results", []):
+    if signal.get("restaurantId") not in restaurant_ids:
+        continue
+    cur.execute(
+        "insert into official_site_signals values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
+        (
+            signal.get("restaurantId"),
+            signal.get("name"),
+            signal.get("website"),
+            signal.get("status"),
+            signal.get("error"),
+            signal.get("observedAt"),
+            json.dumps(signal.get("keywordHits", [])),
+            json.dumps(signal.get("signalMatches", {})),
+            signal.get("sourceKind"),
+            signal.get("reviewState"),
+        ),
+    )
+    for link in signal.get("candidateLinks", []):
+        if not link.get("href"):
+            continue
+        cur.execute(
+            "insert into official_site_signal_links values (?, ?, ?, ?)",
+            (
+                signal.get("restaurantId"),
+                link.get("text"),
+                link.get("href"),
+                json.dumps(link.get("signalMatches", {})),
+            ),
+        )
 
 conn.commit()
 conn.close()
-print(f"Built SQLite database at {db_path} with {len(catalog['restaurants'])} restaurants.")
+print(f"Built SQLite database at {db_path} with {len(catalog['restaurants'])} restaurants and {len(official_signals.get('results', []))} official site signal records.")

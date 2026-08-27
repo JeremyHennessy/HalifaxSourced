@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Halifax Sourced lighthouse logo</title>
+  <desc id="desc">A lighthouse, Halifax skyline, wave and leaf mark in navy, teal and gold.</desc>
+  <defs>
+    <linearGradient id="teal" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#67c4bd"/>
+      <stop offset="1" stop-color="#147d86"/>
+    </linearGradient>
+    <linearGradient id="sea" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#0d6f9b"/>
+      <stop offset="1" stop-color="#06345f"/>
+    </linearGradient>
+  </defs>
+  <path d="M73 330C43 247 70 150 146 94c72-53 173-52 244 1" fill="none" stroke="#062b55" stroke-width="16" stroke-linecap="round"/>
+  <path d="M335 86c56 19 93 67 102 123" fill="none" stroke="#f5ae37" stroke-width="13" stroke-linecap="round"/>
+  <path d="M118 312l39-44 58 14 38 48z" fill="#062b55"/>
+  <path d="M179 138h54l9 146h-72z" fill="#062b55"/>
+  <path d="M169 132h84l-42-34zM185 103h52v28h-52z" fill="#062b55"/>
+  <rect x="198" y="169" width="18" height="32" rx="9" fill="#fff"/>
+  <rect x="188" y="126" width="12" height="27" rx="3" fill="#fff"/>
+  <rect x="222" y="126" width="12" height="27" rx="3" fill="#fff"/>
+  <path d="M262 252h26v-55h31v55h19v-38h29v38h35v69H262z" fill="url(#teal)" opacity=".78"/>
+  <path d="M77 342c78 18 115 9 178-18 71-31 125-28 198 7-68 32-121 42-184 17-60-24-107-23-192-6z" fill="url(#teal)"/>
+  <path d="M63 378c67 19 137 21 209-8 74-29 127-23 180 9-68 56-171 73-256 34-46-22-81-34-133-35z" fill="url(#sea)"/>
+  <path d="M320 388c42-70 84-83 134-80-15 56-53 86-106 103l-16 52h-22l20-64c-31-6-55-16-75-32 25 2 47 9 65 21z" fill="url(#teal)"/>
+  <path d="M317 150c24-22 50-22 76 0-29-9-48-9-76 0zM378 183c20-17 39-17 59 0-23-7-37-7-59 0z" fill="#062b55"/>
+</svg>

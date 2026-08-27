@@ -31,11 +31,20 @@ page.on("pageerror", (error) => {
 });
 
 await page.goto(url, { waitUntil: "networkidle" });
-await page.locator("h1", { hasText: "Halifax Sourced" }).waitFor();
+await page.locator(".brand", { hasText: "Halifax" }).waitFor();
+await page.locator("h1", { hasText: "Find Halifax" }).waitFor();
 
 const cardCount = await page.locator(".restaurant-card").count();
-if (cardCount < 8) {
-  throw new Error(`Expected at least 8 restaurant cards, found ${cardCount}.`);
+if (cardCount < 100) {
+  throw new Error(`Expected expanded restaurant cards, found ${cardCount}.`);
+}
+
+const dataState = await page.evaluate(() => ({
+  restaurants: window.__halifaxRestaurantCount ?? 0,
+  officialSignals: window.__halifaxOfficialSignalCount ?? 0
+}));
+if (dataState.restaurants < 700 || dataState.officialSignals < 100) {
+  throw new Error(`Expected expanded discovery data, got ${JSON.stringify(dataState)}.`);
 }
 
 await page.locator("#search").fill("Dartmouth");
@@ -58,14 +67,20 @@ if (!mapState.leaflet || mapState.markers < 100 || mapState.canvases < 1 || mapS
 await page.locator('button[data-filter="events"]').click();
 const eventCards = await page.locator(".restaurant-card").count();
 if (eventCards < 1) {
-  throw new Error("Expected at least one event-capable restaurant.");
+  throw new Error("Expected at least one event-capable place.");
+}
+
+await page.locator('button[data-filter="patio"]').click();
+const patioCards = await page.locator(".restaurant-card").count();
+if (patioCards < 10) {
+  throw new Error(`Expected patio leads, found ${patioCards}.`);
 }
 
 await page.locator('button[data-filter="all"]').click();
-await page.locator('button[data-view="admin"]').click();
-const adminCards = await page.locator(".admin-card").count();
-if (adminCards < 100) {
-  throw new Error(`Expected expanded admin review queue, found ${adminCards}.`);
+await page.locator('button[data-view="sources"]').click();
+const sourceCards = await page.locator(".admin-card").count();
+if (sourceCards < 100) {
+  throw new Error(`Expected expanded source gap workbench, found ${sourceCards}.`);
 }
 await page.locator('button[data-view="public"]').click();
 
@@ -82,6 +97,20 @@ if (consoleErrors.length) {
 
 await mkdir("artifacts", { recursive: true });
 await page.screenshot({ path: screenshotPath, fullPage: true });
+
+await page.setViewportSize({ width: 390, height: 844 });
+await page.goto(url, { waitUntil: "networkidle" });
+await page.locator(".mobile-tabbar").waitFor();
+const mobileState = await page.evaluate(() => ({
+  overflow: document.documentElement.scrollWidth - document.documentElement.clientWidth,
+  bottomNavVisible: getComputedStyle(document.querySelector(".mobile-tabbar")).display !== "none",
+  cards: document.querySelectorAll(".restaurant-card").length,
+  heroHeight: Math.round(document.querySelector(".hero-shell").getBoundingClientRect().height)
+}));
+if (mobileState.overflow > 2 || !mobileState.bottomNavVisible || mobileState.cards < 100 || mobileState.heroHeight < 300) {
+  throw new Error(`Expected polished mobile layout, got ${JSON.stringify(mobileState)}.`);
+}
+await page.screenshot({ path: resolve("artifacts", "ui-check-mobile.png"), fullPage: true });
 await browser.close();
 
-console.log(`UI verified. Screenshot saved to ${screenshotPath}`);
+console.log(`UI verified. Screenshot saved to ${screenshotPath} and artifacts\\ui-check-mobile.png`);

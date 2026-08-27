@@ -1,13 +1,20 @@
 {
   "name": "Halifax Sourced source contract",
-  "version": 3,
+  "version": 4,
+  "productIntent": "Public Halifax food and drink discovery for events, specials, happy hours, patios, openings, menus, hours, and practical source-linked details.",
+  "notInScope": [
+    "Ownership review workflow",
+    "Compliance or inspection scoring",
+    "Restaurant quality rankings from restricted third-party review content"
+  ],
   "principles": [
+    "Cross-reference public and permitted sources, then keep source links attached to every lead.",
     "Store restaurant-owned facts and source links separately from third-party platform content.",
     "Keep restricted platform records as source references unless the API terms permit display and retention.",
-    "Track when each captured fact was observed, where it came from, and whether it needs human review.",
+    "Track when each captured fact was observed, where it came from, and whether it needs cross-checking.",
     "Never treat missing data as a negative signal; mark it as missing, stale, restricted, or unverified.",
     "OpenStreetMap directory records are discovery/practical-data records, not editorial quality verification.",
-    "Inspection registry records are evidence links and compliance context, not quality ratings."
+    "Public registry records are establishment/address cross-references, not quality ratings or compliance scores."
   ],
   "scope": {
     "starter_area": "Halifax peninsula, Dartmouth, Bedford, Armdale, Fairview, and immediately surrounding areas",
@@ -26,11 +33,11 @@
     "category": "Restaurant | Cafe | Bar | Pub | Quick eats | Food court | Dessert",
     "cuisines": ["type labels"],
     "vibe": ["occasion labels"],
-    "qualityScore": "internal 0-100 score from weighted, source-attributed signals",
+    "qualityScore": "legacy field used as a source coverage score from weighted public/practical source signals",
     "freshnessDate": "YYYY-MM-DD date when facts were last checked",
     "evidenceStatus": "verified | needs-review | restricted",
     "sourceLayer": "curated | openstreetmap | owner_submission | licensed_api",
-    "summary": "Short source-aware description",
+    "summary": "Short source-aware discovery description",
     "address": "Postal address when available from a permitted source",
     "phone": "Phone number when available from a permitted source",
     "website": "Restaurant-owned website when available from a permitted source",
@@ -39,9 +46,19 @@
       "lat": "Latitude when available from a permitted source",
       "lon": "Longitude when available from a permitted source"
     },
+    "discoverySignals": {
+      "menu": "Official menu or menu keyword/link lead",
+      "specials": "Happy hour, daily special, feature, promo, or offer lead",
+      "events": "Live music, trivia, event, calendar, ticket, or show lead",
+      "patio": "Patio, rooftop, terrace, outdoor seating, beer garden, or sidewalk lead",
+      "openings": "Opening soon, now open, grand opening, soft opening, new location, or coming soon lead",
+      "brunch": "Brunch or breakfast lead",
+      "reservations": "Reservation or booking lead",
+      "takeout": "Takeout, pickup, online order, or delivery lead"
+    },
     "inspectionRecords": [
       {
-        "id": "Nova Scotia registry record id",
+        "id": "Nova Scotia public registry record id",
         "name": "Registry establishment name",
         "address": "Registry establishment address",
         "city": "Registry city",
@@ -57,6 +74,13 @@
         "status": "verified | needs-review | restricted"
       }
     ]
+  },
+  "officialSiteSignal": {
+    "restaurantId": "Restaurant id from catalog",
+    "website": "Restaurant-owned website checked",
+    "observedAt": "Fetch timestamp",
+    "signalMatches": "Keyword groups found in page text",
+    "candidateLinks": "Official links whose text or URL indicates menus, specials, events, patios, openings, brunch, reservations, takeout, or delivery"
   },
   "special": {
     "restaurantId": "stable-slug",
@@ -87,7 +111,7 @@
   "buildArtifacts": {
     "catalogJson": "data/build/catalog.json",
     "sqliteDatabase": "data/build/halifax_sourced.sqlite",
-    "officialSiteSignals": "data/build/official-site-signals.json",
+    "officialSiteSignals": "data/build/official-site-signals.json and data/official-site-signals.js",
     "ownerSubmissions": "data/build/owner-submissions.normalized.json",
     "novaScotiaFoodInspections": "data/build/ns-food-inspections.json and data/ns-food-inspections.js",
     "googlePlaceLinks": "data/build/google-place-links.json when GOOGLE_PLACES_API_KEY is supplied"

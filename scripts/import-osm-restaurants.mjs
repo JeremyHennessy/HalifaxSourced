@@ -71,7 +71,7 @@ function neighborhoodFor(lat, lon, tags) {
   return "Halifax Peninsula";
 }
 
-function qualityFromTags(tags) {
+function sourceCoverageFromTags(tags) {
   let score = 62;
   if (tags.website || tags["contact:website"]) score += 7;
   if (tags.phone || tags["contact:phone"]) score += 4;
@@ -102,10 +102,10 @@ function transformElement(element) {
     category,
     cuisines,
     vibe: vibeByAmenity[amenity] ?? ["food and drink"],
-    qualityScore: qualityFromTags(tags),
+    qualityScore: sourceCoverageFromTags(tags),
     freshnessDate: new Date().toISOString().slice(0, 10),
     evidenceStatus: "needs-review",
-    summary: `${category} captured from OpenStreetMap${address ? ` at ${address}` : ""}. Needs restaurant-owned confirmation for specials, events, and quality notes.`,
+    summary: `${category} captured from OpenStreetMap${address ? ` at ${address}` : ""}. Needs cross-reference for menus, specials, events, patios, and opening signals.`,
     address: address || null,
     phone,
     website,

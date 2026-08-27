@@ -12,6 +12,10 @@ const osm = context.window.HALIFAX_OSM_RESTAURANTS ?? [];
 const osmMeta = context.window.HALIFAX_OSM_META ?? null;
 const nsFoodInspections = context.window.HALIFAX_NS_FOOD_INSPECTIONS ?? null;
 const nsRecords = nsFoodInspections?.records ?? [];
+let officialSiteSignals = null;
+try {
+  officialSiteSignals = JSON.parse(await readFile(new URL("../data/build/official-site-signals.json", import.meta.url), "utf8"));
+} catch {}
 
 function keyForName(name) {
   return String(name ?? "").toLowerCase().normalize("NFKD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-z0-9]+/g, "").trim();
@@ -91,11 +95,12 @@ for (const restaurant of osm) {
 const enrichedRestaurants = restaurants.map(withInspectionEvidence);
 const catalog = {
   generatedAt: new Date().toISOString(),
-  sourceMeta: { openStreetMap: osmMeta, novaScotiaFoodInspections: nsFoodInspections },
+  sourceMeta: { openStreetMap: osmMeta, novaScotiaFoodInspections: nsFoodInspections, officialSiteSignals },
   counts: {
     curated: curated.length,
     openStreetMap: osm.length,
     novaScotiaFoodInspections: nsRecords.length,
+    officialSiteSignals: officialSiteSignals?.count ?? 0,
     merged: enrichedRestaurants.length,
     withInspectionMatches: enrichedRestaurants.filter((restaurant) => restaurant.inspectionRecords.length > 0).length
   },

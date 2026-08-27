@@ -6,34 +6,56 @@
     <title>Halifax Sourced</title>
     <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
-    <link rel="stylesheet" href="./styles.css?v=20260827-map-sources" />
+    <link rel="stylesheet" href="./styles.css?v=20260827-coastal-ui" />
   </head>
   <body>
     <div class="app-shell">
       <header class="topbar">
-        <div>
-          <p class="eyebrow">Halifax restaurant intelligence</p>
-          <h1>Halifax Sourced</h1>
+        <a class="brand" href="#" aria-label="Halifax Sourced home">
+          <img src="./assets/logo-mark.svg" alt="" />
+          <span><strong>Halifax</strong><em>Sourced</em></span>
+        </a>
+
+        <div class="search-wrap nav-search">
+          <label class="sr-only" for="search">Search</label>
+          <input id="search" type="search" placeholder="Search restaurants, cuisines, events, or neighbourhoods..." />
         </div>
-        <div class="top-actions" aria-label="Views and data status">
-          <div class="view-toggle" role="tablist" aria-label="Application views">
-            <button class="view-button is-active" type="button" data-view="public">Directory</button>
-            <button class="view-button" type="button" data-view="admin">Review</button>
-          </div>
-          <div class="status-pill" aria-label="data status">
-            <span class="dot"></span>
-            Source-aware beta
-          </div>
+
+                <nav class="nav-links" aria-label="Primary">
+          <button class="view-button is-active" type="button" data-view="public">Restaurants</button>
+          <button class="nav-filter" type="button" data-nav-filter="events">Events</button>
+          <button class="nav-filter" type="button" data-nav-filter="specials">Specials</button>
+          <button class="nav-filter" type="button" data-nav-filter="all" data-scroll-target="restaurantGrid">Menus</button>
+          <a href="#mapPanel">Map</a>
+        </nav>
+
+        <div class="top-actions" aria-label="Saved places and source tools">
+          <button class="icon-button" type="button" aria-label="Saved places">&hearts;</button>
+          <button class="view-button utility" type="button" data-view="sources">Sources</button>
         </div>
       </header>
 
       <main>
-        <section class="control-band" aria-label="Search and filters">
-          <div class="search-wrap">
-            <label for="search">Search</label>
-            <input id="search" type="search" placeholder="Restaurant, dish, vibe, neighborhood" />
+        <section class="hero-shell" aria-label="Halifax discovery intro">
+          <div class="hero-copy">
+            <p class="eyebrow">Halifax food and event finder</p>
+            <h1>Find Halifax's best bites, events & specials</h1>
+            <p>Discover local restaurants, limited-time offers, patios, openings, menus, and events across HRM.</p>
+            <div class="hero-actions">
+              <a class="primary-action" href="#restaurantGrid">Explore Restaurants</a>
+              <a class="secondary-action" href="#mapPanel">View Map</a>
+            </div>
           </div>
+          <div class="hero-art" aria-hidden="true">
+            <div class="sun"></div>
+            <div class="skyline"></div>
+            <div class="lighthouse"></div>
+            <div class="sailboat"></div>
+            <div class="water"></div>
+          </div>
+        </section>
 
+        <section class="control-band" aria-label="Search and filters">
           <div class="filter-group" aria-label="Quick filters">
             <button class="filter-chip is-active" type="button" data-filter="all">All</button>
             <button class="filter-chip" type="button" data-filter="restaurant">Restaurants</button>
@@ -43,13 +65,14 @@
             <button class="filter-chip" type="button" data-filter="happy-hour">Happy hour</button>
             <button class="filter-chip" type="button" data-filter="specials">Specials</button>
             <button class="filter-chip" type="button" data-filter="events">Events</button>
-            <button class="filter-chip" type="button" data-filter="needs-review">Needs review</button>
+            <button class="filter-chip" type="button" data-filter="patio">Patios</button>
+            <button class="filter-chip" type="button" data-filter="openings">Openings</button>
           </div>
 
           <div class="sort-wrap">
             <label for="sort">Sort</label>
             <select id="sort">
-              <option value="quality">Quality score</option>
+              <option value="quality">Source coverage</option>
               <option value="freshness">Freshness</option>
               <option value="name">Name</option>
               <option value="neighborhood">Neighborhood</option>
@@ -64,31 +87,56 @@
           </div>
           <div>
             <span id="statSpecials">0</span>
-            <small>active offers</small>
+            <small>special leads</small>
           </div>
           <div>
             <span id="statEvents">0</span>
-            <small>events</small>
+            <small>event leads</small>
           </div>
           <div>
             <span id="statEvidence">0</span>
-            <small>needs review</small>
+            <small>patio leads</small>
           </div>
         </section>
 
         <section class="source-note" aria-label="Source coverage">
           <strong id="sourceScope">Halifax peninsula and nearby areas</strong>
           <span id="sourceUpdated">Bulk directory source not loaded yet.</span>
-          <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noreferrer">Map data © OpenStreetMap contributors</a>
+          <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noreferrer">Map data (c) OpenStreetMap contributors</a>
         </section>
 
         <section id="publicView" class="content-grid">
-          <div>
+          <div class="main-stack">
             <div class="section-head">
-              <h2>Restaurants</h2>
+              <h2>Featured Restaurants</h2>
               <p id="resultCount">Showing 0 places</p>
             </div>
+            <div id="restaurantGrid" class="restaurant-grid" aria-live="polite"></div>
+
+            <div class="split-panels">
+              <section class="lead-panel">
+                <div class="section-head compact">
+                  <h2>Today's Specials</h2>
+                  <span>Official leads</span>
+                </div>
+                <div id="specialLeadList" class="lead-list"></div>
+              </section>
+              <section class="lead-panel">
+                <div class="section-head compact">
+                  <h2>Events This Week</h2>
+                  <span>Music, markets, pop-ups</span>
+                </div>
+                <div id="eventLeadList" class="lead-list"></div>
+              </section>
+            </div>
+
             <div id="mapPanel" class="map-panel" aria-label="Public map view">
+              <div class="section-head compact map-heading">
+                <div>
+                  <h2>Explore Halifax</h2>
+                  <span>Popular places near you</span>
+                </div>
+              </div>
               <div id="mapPlot" class="map-plot"></div>
               <div class="map-legend">
                 <span><i class="pin-dot restaurant"></i> Restaurants</span>
@@ -97,41 +145,69 @@
                 <span><i class="pin-dot quick"></i> Quick eats</span>
               </div>
             </div>
-            <div id="restaurantGrid" class="restaurant-grid" aria-live="polite"></div>
           </div>
 
-          <aside class="detail-panel" aria-label="Restaurant detail">
-            <div id="emptyDetail" class="empty-detail">
-              <h2>Pick a place</h2>
-              <p>Open a restaurant to inspect happy hours, specials, events, practical details, quality notes, and source evidence.</p>
-            </div>
-            <div id="restaurantDetail" class="restaurant-detail" hidden></div>
+                    <aside class="side-stack" aria-label="Recommendations and restaurant detail">
+            <section class="tonight-panel" aria-label="Tonight near you">
+              <div class="section-head compact">
+                <div>
+                  <span class="sparkle" aria-hidden="true"></span>
+                  <h2>Tonight Near You</h2>
+                  <span>Fresh local leads</span>
+                </div>
+              </div>
+              <div id="tonightList" class="tonight-list"></div>
+            </section>
+
+            <section class="detail-panel" aria-label="Restaurant detail">
+              <div id="emptyDetail" class="empty-detail">
+                <h2>Pick a place</h2>
+                <p>Open a place to inspect happy hours, specials, events, patios, opening signals, menus, and source links.</p>
+              </div>
+              <div id="restaurantDetail" class="restaurant-detail" hidden></div>
+            </section>
           </aside>
         </section>
 
         <section id="adminView" class="admin-view" hidden>
           <div class="section-head">
-            <h2>Admin Review Queue</h2>
-            <p id="reviewCount">0 records need review</p>
+            <h2>Source Gap Workbench</h2>
+            <p id="reviewCount">0 records to cross-check</p>
           </div>
           <div id="adminQueue" class="admin-grid"></div>
         </section>
       </main>
     </div>
 
+    <footer class="coastal-footer" aria-label="Halifax Sourced values">
+      <div><strong>Local First</strong><span>Restaurants, producers, patios, and events across HRM.</span></div>
+      <div><strong>Fresh Leads</strong><span>Menus, specials, openings, and event links from public sources.</span></div>
+      <div><strong>Coast to City</strong><span>From the waterfront to the North End and beyond.</span></div>
+      <div><strong>Made for Halifax</strong><span>Built for finding what is happening tonight.</span></div>
+    </footer>
+    <nav class="mobile-tabbar" aria-label="Mobile navigation">
+      <button class="quick-nav is-active" type="button" data-nav-filter="all">Home</button>
+      <button class="quick-nav" type="button" data-nav-filter="specials">Specials</button>
+      <a href="#mapPanel">Map</a>
+      <button class="quick-nav" type="button" data-nav-filter="events">Events</button>
+      <button class="quick-nav" type="button" data-nav-filter="patio">Patios</button>
+    </nav>
     <template id="restaurantCardTemplate">
       <article class="restaurant-card">
         <button class="card-button" type="button">
-          <div class="card-topline">
-            <span class="neighborhood"></span>
-            <span class="freshness"></span>
-          </div>
-          <h3></h3>
-          <p class="meta"></p>
-          <div class="tags"></div>
-          <div class="score-row">
-            <span class="score"></span>
-            <span class="evidence-badge"></span>
+          <div class="card-photo"><span class="save-dot" aria-hidden="true">&hearts;</span></div>
+          <div class="card-body">
+            <div class="card-topline">
+              <span class="neighborhood"></span>
+              <span class="freshness"></span>
+            </div>
+            <h3></h3>
+            <p class="meta"></p>
+            <div class="tags"></div>
+            <div class="score-row">
+              <span class="score"></span>
+              <span class="evidence-badge"></span>
+            </div>
           </div>
         </button>
       </article>
@@ -141,6 +217,7 @@
     <script src="./data/restaurants.js?v=20260827-map-sources"></script>
     <script src="./data/osm-restaurants.js?v=20260827-map-sources"></script>
     <script src="./data/ns-food-inspections.js?v=20260827-map-sources"></script>
-    <script src="./app.js?v=20260827-map-sources"></script>
+    <script src="./data/official-site-signals.js?v=20260827-discovery"></script>
+    <script src="./app.js?v=20260827-coastal-ui"></script>
   </body>
 </html>
