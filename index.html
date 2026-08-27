@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Halifax Sourced</title>
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">Halifax restaurant intelligence</p>
+          <h1>Halifax Sourced</h1>
+        </div>
+        <div class="status-pill" aria-label="data status">
+          <span class="dot"></span>
+          Source-aware beta
+        </div>
+      </header>
+
+      <main>
+        <section class="control-band" aria-label="Search and filters">
+          <div class="search-wrap">
+            <label for="search">Search</label>
+            <input id="search" type="search" placeholder="Restaurant, dish, vibe, neighborhood" />
+          </div>
+
+          <div class="filter-group" aria-label="Quick filters">
+            <button class="filter-chip is-active" type="button" data-filter="all">All</button>
+            <button class="filter-chip" type="button" data-filter="happy-hour">Happy hour</button>
+            <button class="filter-chip" type="button" data-filter="specials">Specials</button>
+            <button class="filter-chip" type="button" data-filter="events">Events</button>
+            <button class="filter-chip" type="button" data-filter="verified">Verified</button>
+            <button class="filter-chip" type="button" data-filter="needs-review">Needs review</button>
+          </div>
+
+          <div class="sort-wrap">
+            <label for="sort">Sort</label>
+            <select id="sort">
+              <option value="quality">Quality score</option>
+              <option value="freshness">Freshness</option>
+              <option value="name">Name</option>
+              <option value="neighborhood">Neighborhood</option>
+            </select>
+          </div>
+        </section>
+
+        <section class="summary-strip" aria-label="Collection summary">
+          <div>
+            <span id="statRestaurants">0</span>
+            <small>restaurants</small>
+          </div>
+          <div>
+            <span id="statSpecials">0</span>
+            <small>active offers</small>
+          </div>
+          <div>
+            <span id="statEvents">0</span>
+            <small>events</small>
+          </div>
+          <div>
+            <span id="statEvidence">0%</span>
+            <small>verified</small>
+          </div>
+        </section>
+
+        <section class="content-grid">
+          <div>
+            <div class="section-head">
+              <h2>Restaurants</h2>
+              <p id="resultCount">Showing 0 places</p>
+            </div>
+            <div id="restaurantGrid" class="restaurant-grid" aria-live="polite"></div>
+          </div>
+
+          <aside class="detail-panel" aria-label="Restaurant detail">
+            <div id="emptyDetail" class="empty-detail">
+              <h2>Pick a place</h2>
+              <p>Open a restaurant to inspect happy hours, specials, event signals, quality notes, and source evidence.</p>
+            </div>
+            <div id="restaurantDetail" class="restaurant-detail" hidden></div>
+          </aside>
+        </section>
+      </main>
+    </div>
+
+    <template id="restaurantCardTemplate">
+      <article class="restaurant-card">
+        <button class="card-button" type="button">
+          <div class="card-topline">
+            <span class="neighborhood"></span>
+            <span class="freshness"></span>
+          </div>
+          <h3></h3>
+          <p class="meta"></p>
+          <div class="tags"></div>
+          <div class="score-row">
+            <span class="score"></span>
+            <span class="evidence-badge"></span>
+          </div>
+        </button>
+      </article>
+    </template>
+
+    <script src="./data/restaurants.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>

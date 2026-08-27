@@ -1,0 +1,44 @@
+{
+  "name": "Halifax Sourced source contract",
+  "version": 1,
+  "principles": [
+    "Store restaurant-owned facts and source links separately from third-party platform content.",
+    "Keep restricted platform records as source references unless the API terms permit display and retention.",
+    "Track when each captured fact was observed, where it came from, and whether it needs human review.",
+    "Never treat missing data as a negative signal; mark it as missing, stale, restricted, or unverified."
+  ],
+  "restaurant": {
+    "id": "stable-slug",
+    "name": "Display name",
+    "neighborhood": "Halifax, Dartmouth, Bedford, or local district",
+    "cuisines": ["type labels"],
+    "vibe": ["occasion labels"],
+    "qualityScore": "internal 0-100 score from weighted, source-attributed signals",
+    "freshnessDate": "YYYY-MM-DD date when facts were last checked",
+    "evidenceStatus": "verified | needs-review | restricted",
+    "sources": [
+      {
+        "label": "Human-readable source",
+        "type": "restaurant_site | google_places | meta_owned_page | review_site | owner_submission | event_feed",
+        "url": "Source URL",
+        "status": "verified | needs-review | restricted"
+      }
+    ]
+  },
+  "special": {
+    "restaurantId": "stable-slug",
+    "title": "Happy hour, daily special, tasting menu, or promo",
+    "cadence": "Days/times if verified",
+    "validFrom": "YYYY-MM-DD or null",
+    "validTo": "YYYY-MM-DD or null",
+    "sourceUrl": "Evidence URL",
+    "sourceStatus": "verified | needs-review | restricted"
+  },
+  "event": {
+    "restaurantId": "stable-slug",
+    "title": "Event name",
+    "timing": "Date/time if verified",
+    "sourceUrl": "Official calendar, ticketing page, or restaurant-owned announcement",
+    "sourceStatus": "verified | needs-review | restricted"
+  }
+}
