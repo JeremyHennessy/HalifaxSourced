@@ -1,0 +1,116 @@
+/* Rights-aware restaurant media layer.
+   Until a record carries explicit permitted/owner-approved imagery, cards use
+   branded cuisine-specific artwork rather than reusing the homepage hero. */
+
+.card-media,.event-thumb,.special-image,.map-thumb{
+  overflow:hidden;
+  isolation:isolate;
+  background-color:#dceff0;
+  background-image:
+    linear-gradient(145deg,rgba(6,43,80,.08),rgba(69,170,165,.16)),
+    url("./assets/backgrounds/subtle-pattern.webp");
+  background-repeat:no-repeat,repeat;
+  background-size:cover,520px auto;
+  background-position:center,center;
+}
+
+.media-seafood{
+  background-image:
+    radial-gradient(circle at 78% 28%,rgba(242,179,75,.28) 0 7%,transparent 8%),
+    linear-gradient(135deg,#0e4f7d 0%,#268eb0 48%,#75c6bd 100%),
+    url("./assets/backgrounds/subtle-pattern.webp");
+  background-size:auto,cover,460px auto;
+  background-blend-mode:normal,normal,soft-light;
+}
+.media-bar{
+  background-image:
+    radial-gradient(circle at 76% 24%,rgba(242,179,75,.3) 0 9%,transparent 10%),
+    linear-gradient(135deg,#062b50 0%,#104876 52%,#278f8c 100%),
+    url("./assets/backgrounds/subtle-pattern.webp");
+  background-size:auto,cover,500px auto;
+  background-blend-mode:normal,normal,soft-light;
+}
+.media-cafe{
+  background-image:
+    radial-gradient(circle at 72% 30%,rgba(255,255,255,.72) 0 12%,transparent 13%),
+    linear-gradient(135deg,#f8f3e8 0%,#d9f1ef 45%,#65bdb6 100%),
+    url("./assets/backgrounds/subtle-pattern.webp");
+  background-size:auto,cover,440px auto;
+  background-blend-mode:normal,normal,multiply;
+}
+.media-asian{
+  background-image:
+    radial-gradient(circle at 78% 26%,rgba(239,140,118,.45) 0 9%,transparent 10%),
+    linear-gradient(135deg,#0b5573 0%,#2d9ca0 52%,#e6b45d 100%),
+    url("./assets/backgrounds/subtle-pattern.webp");
+  background-size:auto,cover,480px auto;
+  background-blend-mode:normal,normal,soft-light;
+}
+.media-dining{
+  background-image:
+    radial-gradient(circle at 76% 25%,rgba(242,179,75,.25) 0 8%,transparent 9%),
+    linear-gradient(135deg,#173f67 0%,#3b8da0 48%,#88c7bf 100%),
+    url("./assets/backgrounds/subtle-pattern.webp");
+  background-size:auto,cover,500px auto;
+  background-blend-mode:normal,normal,soft-light;
+}
+
+.card-media::after,.event-thumb::after,.special-image::after,.map-thumb::after{
+  content:"";
+  position:absolute;
+  inset:auto -10% -24% -10%;
+  height:52%;
+  z-index:0;
+  background:
+    linear-gradient(168deg,transparent 0 25%,rgba(255,255,255,.78) 26% 30%,transparent 31%),
+    linear-gradient(173deg,transparent 0 42%,rgba(217,241,239,.88) 43% 57%,rgba(8,53,95,.28) 58% 100%);
+  opacity:.75;
+  pointer-events:none;
+}
+
+.media-photo{
+  position:absolute;
+  inset:0;
+  z-index:1;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center;
+}
+.media-badge,.save-button,.special-image>span{z-index:3}
+
+.restaurant-hero.has-permitted-image{background-image:none}
+.restaurant-hero.has-permitted-image::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:1;
+  background:linear-gradient(90deg,rgba(4,31,57,.9),rgba(4,31,57,.55) 55%,rgba(4,31,57,.25));
+  pointer-events:none;
+}
+.restaurant-hero-photo{
+  position:absolute;
+  inset:0;
+  z-index:0;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+.restaurant-hero-overlay{position:relative;z-index:2}
+
+.footer-brand-lockup{display:flex;align-items:center;gap:12px;margin-bottom:14px}
+.footer-brand-lockup img{
+  width:58px;
+  height:58px;
+  border-radius:50%;
+  object-fit:cover;
+  background:#fff;
+  padding:3px;
+}
+.footer-brand-lockup>strong{font-size:19px;color:#fff;letter-spacing:-.02em}
+.footer-brand>p:first-of-type{margin-top:0}
+
+@media (max-width:767px){
+  .footer-brand-lockup img{width:52px;height:52px}
+  .footer-brand-lockup>strong{font-size:17px}
+}
