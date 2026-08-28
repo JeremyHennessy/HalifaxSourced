@@ -4,13 +4,13 @@ on:
   workflow_dispatch:
   schedule:
     - cron: "41 8 * * *"
-  push:
+  pull_request:
     branches:
-      - source-expansion-social-20260828
-      - events-social-expansion-20260828
+      - main
     paths:
       - .github/workflows/social-source-preview.yml
       - data/discovered-restaurants.js
+      - data/social-platform-registry.json
       - scripts/discover-first-party-sources.mjs
       - scripts/sanitize-first-party-sources.mjs
       - scripts/import-first-party-feed-signals.mjs
@@ -23,7 +23,7 @@ permissions:
 jobs:
   social-refresh:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 20
     steps:
       - name: Checkout
         uses: actions/checkout@v6
@@ -33,15 +33,17 @@ jobs:
         with:
           node-version: 22
 
-      - name: Discover restaurant-owned feeds, social profiles, and related links
+      - name: Discover restaurant-owned feeds, social profiles, link hubs, and related links
         env:
           FIRST_PARTY_SOURCE_LIMIT: 9999
           FIRST_PARTY_SOURCE_DELAY_MS: 150
           FIRST_PARTY_SOURCE_TIMEOUT_MS: 10000
           FIRST_PARTY_SOURCE_CONCURRENCY: 10
+          FIRST_PARTY_OWNED_PAGE_LIMIT: 3
+          FIRST_PARTY_LINK_HUB_LIMIT: 2
         run: node scripts/discover-first-party-sources.mjs
 
-      - name: Sanitize discovered profile and related-link paths
+      - name: Sanitize discovered social, link-hub, and related-link paths
         run: node scripts/sanitize-first-party-sources.mjs
 
       - name: Pull restaurant-owned RSS and Atom signals
