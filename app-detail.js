@@ -6,32 +6,37 @@ function renderRestaurantDetail(id) {
     return;
   }
   const website = safeUrl(restaurant.website);
-  const menuLink = restaurant.menuLinks[0]?.url || null;
-  const reservation = restaurant.reservationLinks[0]?.url;
+  const menuLink = safeUrl(restaurant.menuLinks?.[0]?.url);
+  const reservation = safeUrl(restaurant.reservationLinks?.[0]?.url);
+  const ordering = safeUrl(restaurant.orderingLinks?.[0]?.url);
   const sourceLinks = uniqueSourceLinks(restaurant);
+  const socialProfiles = (restaurant.socialProfiles || []).filter((profile) => safeUrl(profile.url));
+  const relatedLinks = (restaurant.relatedLinks || []).filter((link) => safeUrl(link.url));
 
   appView.innerHTML = `
     <section class="restaurant-hero media-${mediaTone(restaurant)}${permittedImageClass(restaurant)}">
       ${mediaImageMarkup(restaurant, { loading: "eager", className: "restaurant-hero-photo", alt: `${restaurant.name} restaurant` })}
-      <div class="restaurant-hero-overlay page-shell"><a class="back-link" href="#explore">← Back to results</a><div class="restaurant-title"><div><div class="title-badges">${restaurant.sourceLayer === "curated" ? "<span>Local pick</span>" : ""}${restaurant.signal ? "<span>Official site scanned</span>" : ""}</div><h1>${escapeHtml(restaurant.name)}</h1><p>${escapeHtml(primaryCuisine(restaurant))} · ${escapeHtml(restaurant.neighborhood || "Halifax")}</p><p class="hero-summary">${escapeHtml(restaurant.summary || "Local restaurant listing with public source coverage.")}</p><div class="card-tags">${consumerTags(restaurant).slice(0, 5).map((tag) => `<span>${escapeHtml(tag)}</span>`).join("")}</div><div class="hero-actions">${menuLink ? `<a class="button light" href="${menuLink}" target="_blank" rel="noreferrer">View menu ↗</a>` : ""}<button class="button secondary save-detail" type="button" data-save-id="${escapeHtml(restaurant.id)}">${state.saved.has(restaurant.id) ? "♥ Saved" : "♡ Save"}</button>${website ? `<a class="button secondary" href="${website}" target="_blank" rel="noreferrer">Official site ↗</a>` : ""}</div></div></div></div>
+      <div class="restaurant-hero-overlay page-shell"><a class="back-link" href="#explore">← Back to results</a><div class="restaurant-title"><div><div class="title-badges">${restaurant.sourceLayer === "curated" ? "<span>Local pick</span>" : ""}${restaurant.sourceLayer === "local_discovery" ? "<span>New discovery</span>" : ""}${restaurant.signal ? "<span>Official site scanned</span>" : ""}${socialProfiles.length ? `<span>${socialProfiles.length} social link${socialProfiles.length === 1 ? "" : "s"}</span>` : ""}</div><h1>${escapeHtml(restaurant.name)}</h1><p>${escapeHtml(primaryCuisine(restaurant))} · ${escapeHtml(restaurant.neighborhood || "Halifax")}</p><p class="hero-summary">${escapeHtml(restaurant.summary || "Local restaurant listing with public source coverage.")}</p><div class="card-tags">${consumerTags(restaurant).slice(0, 6).map((tag) => `<span>${escapeHtml(tag)}</span>`).join("")}</div><div class="hero-actions">${menuLink ? `<a class="button light" href="${escapeHtml(menuLink)}" target="_blank" rel="noreferrer">View menu ↗</a>` : ""}<button class="button secondary save-detail" type="button" data-save-id="${escapeHtml(restaurant.id)}">${state.saved.has(restaurant.id) ? "♥ Saved" : "♡ Save"}</button>${website ? `<a class="button secondary" href="${escapeHtml(website)}" target="_blank" rel="noreferrer">Official site ↗</a>` : ""}</div></div></div></div>
     </section>
     <section class="page-shell detail-layout">
       <div class="detail-main">
-        <nav class="detail-tabs"><a href="#detailMenu">Menu</a><a href="#detailSpecials">Specials</a><a href="#detailEvents">Events</a><a href="#detailInfo">Info</a><a href="#detailSources">Sources</a></nav>
+        <nav class="detail-tabs"><a href="#detailMenu">Menu</a><a href="#detailSpecials">Specials</a><a href="#detailEvents">Events</a><a href="#detailLinks">Links</a><a href="#detailInfo">Info</a><a href="#detailSources">Sources</a></nav>
         <section id="detailMenu" class="detail-section"><div class="section-heading no-top"><div><h2>Menu sources</h2><p>Direct menu links observed from the restaurant's official source pages.</p></div></div>${restaurant.menuLinks.length ? `<div class="link-list">${restaurant.menuLinks.slice(0, 8).map(sourceLinkRow).join("")}</div>` : `<div class="info-message">No dedicated menu link is represented in the current source data.${website ? " The official website remains available in the Info panel." : ""}</div>`}</section>
         <section id="detailSpecials" class="detail-section"><div class="section-heading no-top"><div><h2>Specials</h2><p>Time-sensitive claims remain source leads until separate structured data establishes current terms, price, and timing.</p></div></div>${restaurant.specialLinks.length ? `<div class="link-list">${restaurant.specialLinks.map(sourceLinkRow).join("")}</div>` : restaurant.specials.length ? `<div class="link-list">${restaurant.specials.map((s) => `<div class="source-link-row"><span>✦</span><div><strong>${escapeHtml(s.title)}</strong><small>${escapeHtml(s.cadence || "Check current details")}</small></div></div>`).join("")}</div>` : `<div class="info-message">No current special source is represented in the loaded data.</div>`}</section>
-        <section id="detailEvents" class="detail-section"><div class="section-heading no-top"><div><h2>Events</h2><p>${restaurant.structuredEvents.length ? "Structured upcoming dates from restaurant-owned sources. Times are shown in Halifax time." : "Use the official link to confirm dates, times, tickets, and availability."}</p></div></div>${restaurant.structuredEvents.length ? `<div class="link-list">${restaurant.structuredEvents.map(structuredEventDetailRow).join("")}</div>` : restaurant.eventLinks.length ? `<div class="link-list">${restaurant.eventLinks.map(sourceLinkRow).join("")}</div>` : restaurant.events.length ? `<div class="link-list">${restaurant.events.map((event) => `<div class="source-link-row"><span>◫</span><div><strong>${escapeHtml(event.title)}</strong><small>${escapeHtml(event.timing || "Check current details")}</small></div></div>`).join("")}</div>` : `<div class="info-message">No event lead is represented in the loaded sources.</div>`}</section>
-        <section id="detailSources" class="detail-section"><div class="section-heading no-top"><div><h2>Source evidence</h2><p>What Halifax Sourced has actually observed for this listing.</p></div></div><div class="source-evidence-grid"><div><strong>${restaurant.score || 0}</strong><span>source coverage score</span></div><div><strong>${restaurant.sources.length}</strong><span>listing sources</span></div><div><strong>${restaurant.inspections.length}</strong><span>public registry matches</span></div><div><strong>${restaurant.signal ? "Yes" : "No"}</strong><span>official site scan</span></div></div><div class="link-list">${sourceLinks.length ? sourceLinks.map(sourceLinkRow).join("") : '<div class="info-message">No direct source links are available.</div>'}</div></section>
+        <section id="detailEvents" class="detail-section"><div class="section-heading no-top"><div><h2>Restaurant events</h2><p>${restaurant.structuredEvents.length ? "Structured upcoming dates from restaurant-owned sources. Times are shown in Halifax time." : "Use the official link to confirm dates, times, tickets, and availability."}</p></div></div>${restaurant.structuredEvents.length ? `<div class="link-list">${restaurant.structuredEvents.map(structuredEventDetailRow).join("")}</div>` : restaurant.eventLinks.length ? `<div class="link-list">${restaurant.eventLinks.map(sourceLinkRow).join("")}</div>` : restaurant.events.length ? `<div class="link-list">${restaurant.events.map((event) => `<div class="source-link-row"><span>◫</span><div><strong>${escapeHtml(event.title)}</strong><small>${escapeHtml(event.timing || "Check current details")}</small></div></div>`).join("")}</div>` : `<div class="info-message">No restaurant-specific event lead is represented in the loaded sources.</div>`}</section>
+        <section id="detailLinks" class="detail-section"><div class="section-heading no-top"><div><h2>Social & related links</h2><p>Accounts and actions discovered directly from the restaurant-owned website. Shared brand accounts are retained as navigation links but are not treated as location-specific post evidence.</p></div></div>${socialProfiles.length || relatedLinks.length ? `${socialProfiles.length ? `<h3 class="detail-subheading">Official social profiles</h3><div class="link-list">${socialProfiles.map((profile) => socialProfileRow(profile, restaurant.sharedSocialProfiles || [])).join("")}</div>` : ""}${relatedLinks.length ? `<h3 class="detail-subheading">Restaurant links</h3><div class="link-list">${relatedLinks.map(relatedLinkRow).join("")}</div>` : ""}` : `<div class="info-message">No restaurant-owned social or related links have been discovered yet.</div>`}</section>
+        <section id="detailSources" class="detail-section"><div class="section-heading no-top"><div><h2>Source evidence</h2><p>What Halifax Sourced has actually observed for this listing.</p></div></div><div class="source-evidence-grid"><div><strong>${restaurant.score || 0}</strong><span>source coverage score</span></div><div><strong>${restaurant.sources.length}</strong><span>listing sources</span></div><div><strong>${restaurant.inspections.length}</strong><span>public registry matches</span></div><div><strong>${socialProfiles.length}</strong><span>official social links</span></div></div><div class="link-list">${sourceLinks.length ? sourceLinks.map(sourceLinkRow).join("") : '<div class="info-message">No direct source links are available.</div>'}</div></section>
       </div>
       <aside class="detail-sidebar" id="detailInfo">
         ${infoCard("Hours", restaurant.openingHours || "Hours not available in the current source data.", "◷")}
         ${infoCard("Location", restaurant.address || restaurant.neighborhood || "Halifax", "⌖")}
         ${restaurant.phone ? infoCard("Phone", restaurant.phone, "☎") : ""}
-        ${website ? `<div class="sidebar-card"><h2>Official links</h2><a class="sidebar-link" href="${website}" target="_blank" rel="noreferrer">Website ↗</a>${menuLink ? `<a class="sidebar-link" href="${menuLink}" target="_blank" rel="noreferrer">Menu ↗</a>` : ""}${reservation ? `<a class="sidebar-link" href="${reservation}" target="_blank" rel="noreferrer">Reservations ↗</a>` : ""}</div>` : ""}
+        ${website || menuLink || reservation || ordering ? `<div class="sidebar-card"><h2>Official actions</h2>${website ? `<a class="sidebar-link" href="${escapeHtml(website)}" target="_blank" rel="noreferrer">Website ↗</a>` : ""}${menuLink ? `<a class="sidebar-link" href="${escapeHtml(menuLink)}" target="_blank" rel="noreferrer">Menu ↗</a>` : ""}${reservation ? `<a class="sidebar-link" href="${escapeHtml(reservation)}" target="_blank" rel="noreferrer">Reservations ↗</a>` : ""}${ordering ? `<a class="sidebar-link" href="${escapeHtml(ordering)}" target="_blank" rel="noreferrer">Order online ↗</a>` : ""}</div>` : ""}
+        ${socialProfiles.length ? `<div class="sidebar-card"><h2>Follow</h2>${socialProfiles.slice(0, 8).map((profile) => `<a class="sidebar-link" href="${escapeHtml(safeUrl(profile.url))}" target="_blank" rel="noreferrer">${escapeHtml(socialPlatformLabel(profile.platform))}${profile.handle ? ` · @${escapeHtml(String(profile.handle).replace(/^@/, ""))}` : ""} ↗</a>`).join("")}</div>` : ""}
         ${restaurant.coordinates ? `<div class="sidebar-card"><h2>Map</h2><div id="detailMap" class="detail-map"></div><a class="sidebar-link" href="https://www.openstreetmap.org/?mlat=${restaurant.coordinates.lat}&mlon=${restaurant.coordinates.lon}#map=17/${restaurant.coordinates.lat}/${restaurant.coordinates.lon}" target="_blank" rel="noreferrer">Open map ↗</a></div>` : ""}
       </aside>
     </section>
-    <div class="mobile-detail-actions">${menuLink ? `<a class="button primary" href="${menuLink}" target="_blank" rel="noreferrer">View menu</a>` : ""}${reservation ? `<a class="button teal" href="${reservation}" target="_blank" rel="noreferrer">Book table</a>` : website ? `<a class="button teal" href="${website}" target="_blank" rel="noreferrer">Official site</a>` : ""}</div>`;
+    <div class="mobile-detail-actions">${menuLink ? `<a class="button primary" href="${escapeHtml(menuLink)}" target="_blank" rel="noreferrer">View menu</a>` : ordering ? `<a class="button primary" href="${escapeHtml(ordering)}" target="_blank" rel="noreferrer">Order online</a>` : ""}${reservation ? `<a class="button teal" href="${escapeHtml(reservation)}" target="_blank" rel="noreferrer">Book table</a>` : website ? `<a class="button teal" href="${escapeHtml(website)}" target="_blank" rel="noreferrer">Official site</a>` : ""}</div>`;
   bindCommonActions();
   if (restaurant.coordinates) requestAnimationFrame(() => initDetailMap(restaurant));
 }
@@ -44,6 +49,27 @@ function structuredEventDetailRow(event) {
   return source ? `<a class="source-link-row" href="${escapeHtml(source)}" target="_blank" rel="noreferrer">${body}</a>` : `<div class="source-link-row">${body}</div>`;
 }
 
+function socialPlatformLabel(platform) {
+  const labels = { instagram: "Instagram", facebook: "Facebook", x: "X", tiktok: "TikTok", youtube: "YouTube", linkedin: "LinkedIn", threads: "Threads", bluesky: "Bluesky", linktree: "Linktree" };
+  return labels[String(platform || "").toLowerCase()] || String(platform || "Social");
+}
+
+function socialProfileRow(profile, sharedProfiles = []) {
+  const url = safeUrl(profile.url);
+  if (!url) return "";
+  const shared = sharedProfiles.some((item) => String(item.platform).toLowerCase() === String(profile.platform).toLowerCase() && String(item.handle).toLowerCase() === String(profile.handle).toLowerCase());
+  const handle = profile.handle ? `@${String(profile.handle).replace(/^@/, "")}` : new URL(url).hostname.replace(/^www\./, "");
+  return `<a class="source-link-row" href="${escapeHtml(url)}" target="_blank" rel="noreferrer"><span>↗</span><div><strong>${escapeHtml(socialPlatformLabel(profile.platform))}</strong><small>${escapeHtml(handle)}${shared ? " · shared brand profile" : " · linked from official site"}</small></div></a>`;
+}
+
+function relatedLinkRow(link) {
+  const url = safeUrl(link.url);
+  if (!url) return "";
+  const kindLabels = { menu: "Menu", reservations: "Reservations", events: "Events", ordering: "Order online", newsletter: "Newsletter", tickets: "Tickets" };
+  const kind = kindLabels[link.kind] || link.kind || "Official link";
+  return `<a class="source-link-row" href="${escapeHtml(url)}" target="_blank" rel="noreferrer"><span>↗</span><div><strong>${escapeHtml(link.label || kind)}</strong><small>${escapeHtml(kind)} · ${escapeHtml(new URL(url).hostname.replace(/^www\./, ""))}</small></div></a>`;
+}
+
 function uniqueSourceLinks(restaurant) {
   const links = [];
   for (const source of restaurant.sources || []) {
@@ -51,12 +77,14 @@ function uniqueSourceLinks(restaurant) {
     if (url) links.push({ label: source.label || source.type || "Source", url });
   }
   if (restaurant.signal?.website) links.push({ label: "Official website", url: safeUrl(restaurant.signal.website) });
-  return links.filter((link) => link.url && links.findIndex((item) => item.url === link.url) === links.indexOf(link)).slice(0, 12);
+  return links.filter((link) => link.url && links.findIndex((item) => item.url === link.url) === links.indexOf(link)).slice(0, 24);
 }
 
 function sourceLinkRow(link) {
-  const sourceNote = link.verified ? " · verified direct source" : "";
-  return `<a class="source-link-row" href="${link.url}" target="_blank" rel="noreferrer"><span>↗</span><div><strong>${escapeHtml(link.label || "Official source")}</strong><small>${escapeHtml(new URL(link.url).hostname.replace(/^www\./, ""))}${escapeHtml(sourceNote)}</small></div></a>`;
+  const url = safeUrl(link.url);
+  if (!url) return "";
+  const sourceNote = link.verified ? " · verified direct source" : link.verifiedLink ? " · official-site link" : "";
+  return `<a class="source-link-row" href="${escapeHtml(url)}" target="_blank" rel="noreferrer"><span>↗</span><div><strong>${escapeHtml(link.label || "Official source")}</strong><small>${escapeHtml(new URL(url).hostname.replace(/^www\./, ""))}${escapeHtml(sourceNote)}</small></div></a>`;
 }
 
 function infoCard(title, text, icon) {
