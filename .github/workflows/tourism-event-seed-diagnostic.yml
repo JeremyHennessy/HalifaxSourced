@@ -19,3 +19,5 @@ jobs:
           node-version: 22
       - name: Inspect event listing HTML received by GitHub Actions
         run: node scripts/diagnose-tourism-event-seed.mjs
+      - name: Inspect a known future Halifax event detail page
+        run: node scripts/diagnose-tourism-event-detail.mjs
