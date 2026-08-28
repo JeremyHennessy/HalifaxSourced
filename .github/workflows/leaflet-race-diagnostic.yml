@@ -31,6 +31,19 @@ jobs:
           npm install --no-save playwright@1.55.0
           npx playwright install --with-deps chromium
 
+      - name: Add diagnostic error-stack capture
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          path = Path('scripts/verify-ui.mjs')
+          text = path.read_text()
+          text = text.replace(
+              'page.on("console", (message) => { if (message.type() === "error") consoleErrors.push(message.text()); });\npage.on("pageerror", (error) => consoleErrors.push(error.message));',
+              'page.on("console", (message) => { if (message.type() === "error") consoleErrors.push(`CONSOLE: ${message.text()}`); });\npage.on("pageerror", (error) => consoleErrors.push(`PAGEERROR: ${error.stack || error.message}`));'
+          )
+          path.write_text(text)
+          PY
+
       - name: Start local app
         run: |
           node scripts/dev-server.mjs > /tmp/halifax-sourced-server.log 2>&1 &
@@ -52,7 +65,7 @@ jobs:
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: leaflet-race-attempt-${{ matrix.attempt }}
+          name: leaflet-race-stack-attempt-${{ matrix.attempt }}
           path: artifacts/
           if-no-files-found: ignore
           retention-days: 7
