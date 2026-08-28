@@ -8,7 +8,7 @@ async function json(path, fallback = {}) {
 const coverage = await json("data/build/content-coverage-report.json");
 const placeResolution = await json("data/build/place-source-resolutions.json", { resolutions: [], reviewQueue: [] });
 const facts = await json("data/build/structured-place-facts.json", { records: [], failures: [] });
-const specials = await json("data/build/structured-specials.json", { records: [] });
+const specials = await json("data/build/structured-specials.json", { records: [], orphanSources: [] });
 const cityEvents = await json("data/build/city-events.json", { events: [] });
 const eventResolution = await json("data/build/event-entity-resolution.json", {});
 const firstParty = await json("data/build/first-party-sources.json", { records: [], failures: [] });
@@ -54,6 +54,7 @@ for (const event of cityEvents.events || []) addBucket(freshness.events, event.l
 const conflictItems = (placeResolution.reviewQueue || []).filter((item) => String(item.state || "").includes("conflict") || (item.conflicts || []).length);
 const nameOnlyItems = (placeResolution.reviewQueue || []).filter((item) => item.state === "name_only_review");
 const unresolvedItems = (placeResolution.reviewQueue || []).filter((item) => item.state === "unresolved");
+const orphanSpecialSources = Array.isArray(specials.orphanSources) ? specials.orphanSources : [];
 const blockedEventSources = (eventCandidates.candidates || []).filter((item) => /blocked/i.test(String(item.status || "")));
 const adapterReviewSources = (eventCandidates.candidates || []).filter((item) => /review/i.test(String(item.status || "")));
 const sourceFailures = [
@@ -69,7 +70,7 @@ const eventMunicipalities = countBy(cityEvents.events || [], (event) => event.ci
 const specialStates = countBy(specials.records || [], (item) => item.status || "unknown");
 
 const report = {
-  version: 1,
+  version: 2,
   generatedAt: new Date().toISOString(),
   coverageReportGeneratedAt: coverage.generatedAt || null,
   summary: {
@@ -82,6 +83,7 @@ const report = {
     structuredOrdering: facts.counts?.ordering || 0,
     structuredSpecials: specials.records?.length || 0,
     verifiedCurrentSpecials: specials.verifiedCurrent || 0,
+    orphanSpecialSources: orphanSpecialSources.length,
     cityEvents: cityEvents.events?.length || 0,
     venueResolvedEvents: eventResolution.venueResolved || cityEvents.entityResolution?.venueResolved || 0,
     organizerResolvedEvents: eventResolution.organizerResolved || cityEvents.entityResolution?.organizerResolved || 0,
@@ -101,6 +103,7 @@ const report = {
     placeConflicts: conflictItems.slice(0, 250),
     nameOnlyMatches: nameOnlyItems.slice(0, 250),
     unresolvedPlaces: unresolvedItems.slice(0, 250),
+    orphanSpecialSources: orphanSpecialSources.slice(0, 250),
     blockedEventSources,
     eventSourceAdapterReview: adapterReviewSources
   },
@@ -122,8 +125,8 @@ const report = {
   contentBreakdown: { specialStates, eventCategories, eventMunicipalities },
   knownExternalConstraints: [
     "Facebook/Instagram post-level signals remain API-only and are unavailable when Meta credentials are not configured.",
-    "Alderney Landing is documented as a blocked pending event adapter because GitHub Actions receives HTTP 403; no bypass is used.",
-    "Discover Halifax event/place adapters remain review targets until a stable compliant ingest interface is established.",
+    "Alderney Landing is documented as a blocked pending event adapter because both its official calendar and tested Tixr fallback return HTTP 403 to GitHub Actions; no bypass is used.",
+    "Discover Halifax event/place ingestion requires permission/licensed access or another authorized reusable interface.",
     "Media coverage remains provenance-gated; missing approved rights are not treated as permission to copy images."
   ]
 };
@@ -141,6 +144,7 @@ const lines = [
   `- Place source conflicts: ${conflictItems.length}`,
   `- Name-only place matches: ${nameOnlyItems.length}`,
   `- Unresolved place candidates: ${unresolvedItems.length}`,
+  `- Orphan special-source relationships: ${orphanSpecialSources.length}`,
   `- Blocked event source adapters: ${blockedEventSources.length}`,
   `- Event source adapters under review: ${adapterReviewSources.length}`, "",
   "## External constraints", "", ...report.knownExternalConstraints.map((item) => `- ${item}`), ""
