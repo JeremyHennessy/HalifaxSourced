@@ -1,0 +1,15 @@
+{
+  "generatedAt": "2026-08-28T22:15:48.826Z",
+  "sourceCommit": "08c205d05a7f4fc5fd27998d0afdb6317a27d9a1",
+  "checkedPlaces": 210,
+  "sourceFailures": 3,
+  "records": 162,
+  "hours": 13,
+  "phone": 70,
+  "email": 7,
+  "address": 27,
+  "features": 127,
+  "menus": 129,
+  "reservations": 49,
+  "ordering": 74
+}
