@@ -1,4 +1,4 @@
-# Final settled review generation after specials orphan/freshness, rich discovery, quality, and drift gates.
+# Final review generation with structured runtime loading diagnostics.
 name: Phase FIJ Generate
 
 on:
@@ -51,19 +51,7 @@ jobs:
           const health=JSON.parse(fs.readFileSync('artifacts/source-link-health-report.json','utf8'));
           if((specials.records?.length||0)<1) throw new Error('No structured special/source-lead records produced');
           if(!quality.summary) throw new Error('Content quality summary missing');
-          const record={
-            generatedAt:new Date().toISOString(),
-            sourceCommit:process.env.GITHUB_SHA,
-            structuredSpecials:specials.count||0,
-            verifiedCurrentSpecials:specials.verifiedCurrent||0,
-            recurringSpecialsToVerify:specials.recurringVerify||0,
-            specialSourceLeads:specials.sourceLeads||0,
-            staleSpecials:specials.stale||0,
-            expiredSpecials:specials.expired||0,
-            orphanSpecialSources:specials.orphanSourceCount||0,
-            linkHealth:health.counts||{},
-            qualitySummary:quality.summary
-          };
+          const record={generatedAt:new Date().toISOString(),sourceCommit:process.env.GITHUB_SHA,structuredSpecials:specials.count||0,verifiedCurrentSpecials:specials.verifiedCurrent||0,recurringSpecialsToVerify:specials.recurringVerify||0,specialSourceLeads:specials.sourceLeads||0,staleSpecials:specials.stale||0,expiredSpecials:specials.expired||0,orphanSpecialSources:specials.orphanSourceCount||0,linkHealth:health.counts||{},qualitySummary:quality.summary};
           fs.writeFileSync('data/build/phase-fij-generation.json',JSON.stringify(record,null,2)+'\n');
           console.log(JSON.stringify(record,null,2));
           NODE
@@ -81,6 +69,12 @@ jobs:
               text=re.sub(r'(\s*<script src="\./app-home\.js[^\n]*</script>)', r'\1\n    <script src="./app-home-rich.js?v=20260828-rich-home"></script>', text, count=1)
           p.write_text(text)
           PY
+          grep -E 'structured-place-facts|structured-specials|app-place-facts|app-rich|app-home-rich' index.html
+          test -f data/structured-place-facts.js
+          test -f data/structured-specials.js
+          test -f app-place-facts.js
+          test -f app-rich-search.js
+          test -f app-home-rich.js
       - name: Start local app
         run: |
           node scripts/dev-server.mjs >/tmp/halifax-sourced-server.log 2>&1 &
@@ -98,14 +92,6 @@ jobs:
         run: |
           git config user.name "Halifax Sourced Data Bot"
           git config user.email "actions@users.noreply.github.com"
-          git add \
-            index.html \
-            data/structured-specials.js \
-            data/build/structured-specials.json \
-            data/build/content-coverage-report.json \
-            docs/content-coverage-report.md \
-            data/build/content-quality-report.json \
-            docs/content-quality-report.md \
-            data/build/phase-fij-generation.json
+          git add index.html data/structured-specials.js data/build/structured-specials.json data/build/content-coverage-report.json docs/content-coverage-report.md data/build/content-quality-report.json docs/content-quality-report.md data/build/phase-fij-generation.json
           git commit -m "Generate reviewed structured specials and quality reports"
           git push origin HEAD:phase-fij-final/content-surfacing-quality-20260828
