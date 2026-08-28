@@ -6,7 +6,7 @@ function renderRestaurantDetail(id) {
     return;
   }
   const website = safeUrl(restaurant.website);
-  const menuLink = restaurant.menuLinks[0]?.url || website;
+  const menuLink = restaurant.menuLinks[0]?.url || null;
   const reservation = restaurant.reservationLinks[0]?.url;
   const sourceLinks = uniqueSourceLinks(restaurant);
 
@@ -18,8 +18,8 @@ function renderRestaurantDetail(id) {
     <section class="page-shell detail-layout">
       <div class="detail-main">
         <nav class="detail-tabs"><a href="#detailMenu">Menu</a><a href="#detailSpecials">Specials</a><a href="#detailEvents">Events</a><a href="#detailInfo">Info</a><a href="#detailSources">Sources</a></nav>
-        <section id="detailMenu" class="detail-section"><div class="section-heading no-top"><div><h2>Menu links</h2><p>Direct links discovered from the restaurant's source pages.</p></div></div>${restaurant.menuLinks.length ? `<div class="link-list">${restaurant.menuLinks.slice(0, 8).map(sourceLinkRow).join("")}</div>` : `<div class="info-message">No dedicated menu link was detected. ${website ? "Use the official website to check current menus." : "A direct website is not currently available in the source data."}</div>`}</section>
-        <section id="detailSpecials" class="detail-section"><div class="section-heading no-top"><div><h2>Specials</h2><p>Time-sensitive claims are shown as leads until confirmed from the linked source.</p></div></div>${restaurant.specialLinks.length ? `<div class="link-list">${restaurant.specialLinks.map(sourceLinkRow).join("")}</div>` : restaurant.specials.length ? `<div class="link-list">${restaurant.specials.map((s) => `<div class="source-link-row"><span>✦</span><div><strong>${escapeHtml(s.title)}</strong><small>${escapeHtml(s.cadence || "Check current details")}</small></div></div>`).join("")}</div>` : `<div class="info-message">No current special lead is represented in the loaded sources.</div>`}</section>
+        <section id="detailMenu" class="detail-section"><div class="section-heading no-top"><div><h2>Menu sources</h2><p>Direct menu links observed from the restaurant's official source pages.</p></div></div>${restaurant.menuLinks.length ? `<div class="link-list">${restaurant.menuLinks.slice(0, 8).map(sourceLinkRow).join("")}</div>` : `<div class="info-message">No dedicated menu link is represented in the current source data.${website ? " The official website remains available in the Info panel." : ""}</div>`}</section>
+        <section id="detailSpecials" class="detail-section"><div class="section-heading no-top"><div><h2>Specials</h2><p>Time-sensitive claims remain source leads until separate structured data establishes current terms, price, and timing.</p></div></div>${restaurant.specialLinks.length ? `<div class="link-list">${restaurant.specialLinks.map(sourceLinkRow).join("")}</div>` : restaurant.specials.length ? `<div class="link-list">${restaurant.specials.map((s) => `<div class="source-link-row"><span>✦</span><div><strong>${escapeHtml(s.title)}</strong><small>${escapeHtml(s.cadence || "Check current details")}</small></div></div>`).join("")}</div>` : `<div class="info-message">No current special source is represented in the loaded data.</div>`}</section>
         <section id="detailEvents" class="detail-section"><div class="section-heading no-top"><div><h2>Events</h2><p>${restaurant.structuredEvents.length ? "Structured upcoming dates from restaurant-owned sources. Times are shown in Halifax time." : "Use the official link to confirm dates, times, tickets, and availability."}</p></div></div>${restaurant.structuredEvents.length ? `<div class="link-list">${restaurant.structuredEvents.map(structuredEventDetailRow).join("")}</div>` : restaurant.eventLinks.length ? `<div class="link-list">${restaurant.eventLinks.map(sourceLinkRow).join("")}</div>` : restaurant.events.length ? `<div class="link-list">${restaurant.events.map((event) => `<div class="source-link-row"><span>◫</span><div><strong>${escapeHtml(event.title)}</strong><small>${escapeHtml(event.timing || "Check current details")}</small></div></div>`).join("")}</div>` : `<div class="info-message">No event lead is represented in the loaded sources.</div>`}</section>
         <section id="detailSources" class="detail-section"><div class="section-heading no-top"><div><h2>Source evidence</h2><p>What Halifax Sourced has actually observed for this listing.</p></div></div><div class="source-evidence-grid"><div><strong>${restaurant.score || 0}</strong><span>source coverage score</span></div><div><strong>${restaurant.sources.length}</strong><span>listing sources</span></div><div><strong>${restaurant.inspections.length}</strong><span>public registry matches</span></div><div><strong>${restaurant.signal ? "Yes" : "No"}</strong><span>official site scan</span></div></div><div class="link-list">${sourceLinks.length ? sourceLinks.map(sourceLinkRow).join("") : '<div class="info-message">No direct source links are available.</div>'}</div></section>
       </div>
@@ -27,7 +27,7 @@ function renderRestaurantDetail(id) {
         ${infoCard("Hours", restaurant.openingHours || "Hours not available in the current source data.", "◷")}
         ${infoCard("Location", restaurant.address || restaurant.neighborhood || "Halifax", "⌖")}
         ${restaurant.phone ? infoCard("Phone", restaurant.phone, "☎") : ""}
-        ${website ? `<div class="sidebar-card"><h2>Official links</h2><a class="sidebar-link" href="${website}" target="_blank" rel="noreferrer">Website ↗</a>${menuLink && menuLink !== website ? `<a class="sidebar-link" href="${menuLink}" target="_blank" rel="noreferrer">Menu ↗</a>` : ""}${reservation ? `<a class="sidebar-link" href="${reservation}" target="_blank" rel="noreferrer">Reservations ↗</a>` : ""}</div>` : ""}
+        ${website ? `<div class="sidebar-card"><h2>Official links</h2><a class="sidebar-link" href="${website}" target="_blank" rel="noreferrer">Website ↗</a>${menuLink ? `<a class="sidebar-link" href="${menuLink}" target="_blank" rel="noreferrer">Menu ↗</a>` : ""}${reservation ? `<a class="sidebar-link" href="${reservation}" target="_blank" rel="noreferrer">Reservations ↗</a>` : ""}</div>` : ""}
         ${restaurant.coordinates ? `<div class="sidebar-card"><h2>Map</h2><div id="detailMap" class="detail-map"></div><a class="sidebar-link" href="https://www.openstreetmap.org/?mlat=${restaurant.coordinates.lat}&mlon=${restaurant.coordinates.lon}#map=17/${restaurant.coordinates.lat}/${restaurant.coordinates.lon}" target="_blank" rel="noreferrer">Open map ↗</a></div>` : ""}
       </aside>
     </section>
@@ -55,7 +55,8 @@ function uniqueSourceLinks(restaurant) {
 }
 
 function sourceLinkRow(link) {
-  return `<a class="source-link-row" href="${link.url}" target="_blank" rel="noreferrer"><span>↗</span><div><strong>${escapeHtml(link.label || "Official source")}</strong><small>${escapeHtml(new URL(link.url).hostname.replace(/^www\./, ""))}</small></div></a>`;
+  const sourceNote = link.verified ? " · verified direct source" : "";
+  return `<a class="source-link-row" href="${link.url}" target="_blank" rel="noreferrer"><span>↗</span><div><strong>${escapeHtml(link.label || "Official source")}</strong><small>${escapeHtml(new URL(link.url).hostname.replace(/^www\./, ""))}${escapeHtml(sourceNote)}</small></div></a>`;
 }
 
 function infoCard(title, text, icon) {
