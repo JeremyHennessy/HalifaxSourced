@@ -1,0 +1,106 @@
+name: Source Expansion Preview
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 9 * * *"
+  push:
+    branches:
+      - source-expansion-social-20260828
+    paths:
+      - .github/workflows/source-expansion-preview.yml
+      - scripts/import-official-sites.mjs
+      - scripts/verify-official-source-pages.mjs
+      - scripts/import-structured-events.mjs
+      - scripts/discover-first-party-sources.mjs
+      - scripts/import-first-party-feed-signals.mjs
+      - scripts/import-meta-social.mjs
+      - scripts/check-expanded-sources.mjs
+
+permissions:
+  contents: read
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Refresh official website signals
+        env:
+          OFFICIAL_SITE_LIMIT: 9999
+          OFFICIAL_SITE_DELAY_MS: 120
+          OFFICIAL_SITE_TIMEOUT_MS: 12000
+        run: node scripts/import-official-sites.mjs
+
+      - name: Verify direct menu and specials pages
+        env:
+          SOURCE_VERIFY_DELAY_MS: 250
+          SOURCE_VERIFY_PAGE_LIMIT: 300
+        run: node scripts/verify-official-source-pages.mjs
+
+      - name: Refresh structured event dates
+        env:
+          STRUCTURED_EVENT_PAGE_LIMIT: 180
+          STRUCTURED_EVENT_PAGES_PER_RESTAURANT: 3
+          STRUCTURED_EVENT_DELAY_MS: 400
+        run: node scripts/import-structured-events.mjs
+
+      - name: Discover first-party feeds and social profiles
+        env:
+          FIRST_PARTY_SOURCE_LIMIT: 9999
+          FIRST_PARTY_SOURCE_DELAY_MS: 180
+        run: node scripts/discover-first-party-sources.mjs
+
+      - name: Pull restaurant-owned RSS and Atom signals
+        env:
+          FEED_PULL_LIMIT: 120
+          FEED_PULL_DELAY_MS: 200
+          FEED_LOOKBACK_DAYS: 180
+        run: node scripts/import-first-party-feed-signals.mjs
+
+      - name: Pull Facebook and Instagram signals through Meta APIs
+        env:
+          META_GRAPH_VERSION: v25.0
+          META_FB_ACCESS_TOKEN: ${{ secrets.META_FB_ACCESS_TOKEN }}
+          META_IG_ACCESS_TOKEN: ${{ secrets.META_IG_ACCESS_TOKEN }}
+          META_IG_USER_ID: ${{ secrets.META_IG_USER_ID }}
+          SOCIAL_PROFILE_LIMIT: 100
+          SOCIAL_POST_LIMIT: 15
+          SOCIAL_LOOKBACK_DAYS: 60
+          SOCIAL_PULL_DELAY_MS: 250
+        run: node scripts/import-meta-social.mjs
+
+      - name: Validate source datasets
+        run: |
+          node scripts/check-data-integrity.mjs
+          node scripts/check-expanded-sources.mjs
+
+      - name: Upload source expansion preview
+        uses: actions/upload-artifact@v4
+        with:
+          name: source-expansion-preview
+          path: |
+            data/official-site-signals.js
+            data/build/official-site-signals.json
+            data/verified-source-pages.js
+            data/build/verified-source-pages.json
+            data/structured-events.js
+            data/build/structured-events.json
+            data/first-party-sources.js
+            data/build/first-party-sources.json
+            data/website-feed-signals.js
+            data/build/website-feed-signals.json
+            data/social-signals.js
+            data/build/social-signals.json
+            artifacts/data-integrity-report.json
+            artifacts/expanded-source-integrity-report.json
+          if-no-files-found: error
+          retention-days: 30
