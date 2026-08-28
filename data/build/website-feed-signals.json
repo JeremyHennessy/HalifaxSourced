@@ -1,13 +1,13 @@
 {
   "version": 1,
-  "generatedAt": "2026-08-28T21:31:30.024Z",
-  "feedsDiscovered": 251,
+  "generatedAt": "2026-08-28T21:37:40.511Z",
+  "feedsDiscovered": 254,
   "uniqueRestaurantFeeds": 200,
   "sharedFeedUrlsSkipped": 17,
   "feedHostGroups": 66,
   "concurrency": 10,
-  "feedsChecked": 185,
-  "failedFeeds": 15,
+  "feedsChecked": 186,
+  "failedFeeds": 14,
   "signals": [
     {
       "restaurantId": "osm-node-11751643550-cafe-lunette",
@@ -17,7 +17,7 @@
       "postUrl": "https://www.cafelunette.com/your-parisian-patio-awaits/",
       "feedUrl": "https://www.cafelunette.com/feed/",
       "publishedAt": "2026-05-11T15:04:47.000Z",
-      "observedAt": "2026-08-28T21:30:52.129Z",
+      "observedAt": "2026-08-28T21:37:02.399Z",
       "signalMatches": {
         "openings": [
           "now open"
@@ -36,7 +36,7 @@
       "postUrl": "https://www.cafelunette.com/mothers-day-brunch-at-cafe-lunette/",
       "feedUrl": "https://www.cafelunette.com/feed/",
       "publishedAt": "2026-04-28T18:12:21.000Z",
-      "observedAt": "2026-08-28T21:30:52.129Z",
+      "observedAt": "2026-08-28T21:37:02.399Z",
       "signalMatches": {
         "brunch": [
           "brunch"
@@ -55,7 +55,7 @@
       "postUrl": "https://www.barburrito.ca/6-99-burrito-or-bowl-for-cinco-de-mayo-%f0%9f%8c%af/",
       "feedUrl": "https://www.barburrito.ca/feed/",
       "publishedAt": "2026-04-27T13:00:00.000Z",
-      "observedAt": "2026-08-28T21:31:01.935Z",
+      "observedAt": "2026-08-28T21:37:12.086Z",
       "signalMatches": {
         "specials": [
           "offer"
@@ -74,7 +74,7 @@
       "postUrl": "https://www.birdsnesthalifax.com/post/five-things-to-do-in-halifax-this-spring-we-ll-handle-breakfast",
       "feedUrl": "https://www.birdsnesthalifax.com/blog-feed.xml",
       "publishedAt": "2026-04-02T11:40:44.000Z",
-      "observedAt": "2026-08-28T21:30:50.409Z",
+      "observedAt": "2026-08-28T21:37:00.799Z",
       "signalMatches": {
         "brunch": [
           "breakfast"
@@ -93,7 +93,7 @@
       "postUrl": "https://www.cafelunette.com/a-parisian-inspired-easter-weekend/",
       "feedUrl": "https://www.cafelunette.com/feed/",
       "publishedAt": "2026-04-01T19:30:03.000Z",
-      "observedAt": "2026-08-28T21:30:52.129Z",
+      "observedAt": "2026-08-28T21:37:02.399Z",
       "signalMatches": {
         "specials": [
           "offer",
@@ -126,28 +126,18 @@
       "reason": "http_403"
     },
     {
+      "restaurantId": "osm-node-4550022070-genji-sushi",
+      "feedUrl": "http://www.genjisushi.ca/index.php?rest_route=%2Foembed%2F1.0%2Fembed&#038;url=http%3A%2F%2Fwww.genjisushi.ca%2F&#038;format=xml",
+      "reason": "http_400"
+    },
+    {
       "restaurantId": "osm-node-11526055082-noggins-coburg",
       "feedUrl": "https://nogginsfarm.ca/comments/feed/",
       "reason": "http_403"
     },
     {
       "restaurantId": "osm-node-4550022070-genji-sushi",
-      "feedUrl": "http://www.genjisushi.ca/index.php?rest_route=%2Foembed%2F1.0%2Fembed&#038;url=http%3A%2F%2Fwww.genjisushi.ca%2F&#038;format=xml",
-      "reason": "http_400"
-    },
-    {
-      "restaurantId": "osm-node-4550022070-genji-sushi",
       "feedUrl": "http://www.genjisushi.ca/index.php?rest_route=%2Foembed%2F1.0%2Fembed&#038;url=http%3A%2F%2Fwww.genjisushi.ca%2F%3Fpage_id%3D234&#038;format=xml",
-      "reason": "http_400"
-    },
-    {
-      "restaurantId": "osm-node-11526055082-noggins-coburg",
-      "feedUrl": "https://nogginsfarm.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fnogginsfarm.ca%2Ffarm-markets%2Fcoburg-market%2F&#038;format=xml",
-      "reason": "http_403"
-    },
-    {
-      "restaurantId": "osm-node-4550022070-genji-sushi",
-      "feedUrl": "http://www.genjisushi.ca/index.php?rest_route=%2Foembed%2F1.0%2Fembed&#038;url=http%3A%2F%2Fwww.genjisushi.ca%2F%3Fpage_id%3D50&#038;format=xml",
       "reason": "http_400"
     },
     {
@@ -156,9 +146,9 @@
       "reason": "http_404"
     },
     {
-      "restaurantId": "osm-node-8841366531-jungle-jim-s",
-      "feedUrl": "https://junglejims.ca/feedback",
-      "reason": "http_403"
+      "restaurantId": "osm-node-4550022070-genji-sushi",
+      "feedUrl": "http://www.genjisushi.ca/index.php?rest_route=%2Foembed%2F1.0%2Fembed&#038;url=http%3A%2F%2Fwww.genjisushi.ca%2F%3Fpage_id%3D50&#038;format=xml",
+      "reason": "http_400"
     },
     {
       "restaurantId": "osm-node-9128392205-king-of-donair",
@@ -166,13 +156,18 @@
       "reason": "http_403"
     },
     {
-      "restaurantId": "osm-node-5987565464-afrite",
-      "feedUrl": "https://afrite.ca/feed/",
-      "reason": "timeout"
+      "restaurantId": "osm-node-11526055082-noggins-coburg",
+      "feedUrl": "https://nogginsfarm.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fnogginsfarm.ca%2Ffarm-markets%2Fcoburg-market%2F&#038;format=xml",
+      "reason": "http_403"
     },
     {
       "restaurantId": "osm-node-4428984290-stone-pizza",
-      "feedUrl": "https://stonepizza.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fstonepizza.ca%2F&#038;format=xml",
+      "feedUrl": "https://stonepizza.ca/feed/",
+      "reason": "timeout"
+    },
+    {
+      "restaurantId": "osm-node-5987565464-afrite",
+      "feedUrl": "https://afrite.ca/feed/",
       "reason": "timeout"
     },
     {

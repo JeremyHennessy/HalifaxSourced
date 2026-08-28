@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "generatedAt": "2026-08-28T21:31:30.261Z",
-  "baselineCommitHint": "c3062fa77417b72790c756c5c0b828fbdeb18def",
+  "generatedAt": "2026-08-28T21:37:40.761Z",
+  "baselineCommitHint": "48fa1ab2212a1d23c625ad57f4cd9007036ad1e4",
   "definitions": {
     "canonicalPlaces": "Current user-facing merge of catalog restaurants plus reviewed discovery records, matching the app's existing name-based discovery merge behavior.",
     "verifiedOfficialWebsite": "Official-site fetch returned a successful HTTP status or the first-party discovery layer successfully fetched the restaurant-owned site.",
@@ -32,11 +32,11 @@
     "withAtLeastOneSocialProfile": 137,
     "withAnySocialOrLinkHub": 137,
     "socialByPlatform": {
-      "instagram": 126,
+      "instagram": 127,
       "facebook": 109,
       "tiktok": 13,
       "threads": 0,
-      "x": 57,
+      "x": 58,
       "youtube": 11,
       "linkedin": 6,
       "bluesky": 2,
@@ -89,17 +89,18 @@
     "cuisine": 100,
     "accessibility": 30.8,
     "patio": 5.4,
-    "media": 0
+    "media": 0,
+    "linkHub": 0
   },
   "socialAudit": {
     "placesWithSocial": 137,
     "placesWithLinkHub": 0,
     "platformPlaceCounts": {
-      "instagram": 126,
+      "instagram": 127,
       "facebook": 109,
       "tiktok": 13,
       "threads": 0,
-      "x": 57,
+      "x": 58,
       "youtube": 11,
       "linkedin": 6,
       "bluesky": 2,
@@ -111,7 +112,7 @@
       "campsite": 0,
       "bento": 0
     },
-    "profileAssociations": 347,
+    "profileAssociations": 349,
     "sharedProfileKeys": 24,
     "sharedBrandOnlyPlaces": 24,
     "candidatePlacesAwaitingVerification": 0,
@@ -1123,7 +1124,10 @@
           "neighborhood": "Downtown"
         }
       ]
-    }
+    },
+    "linkHubAssociations": 0,
+    "reconciledFromDedicatedLinkHubField": true,
+    "reconciledAt": "2026-08-28T21:37:41.085Z"
   },
   "eventCoverage": {
     "currentCityEvents": 166,
@@ -1176,10 +1180,10 @@
   },
   "sourceFailures": {
     "officialWebsiteChecks": 51,
-    "firstPartyWebsiteDiscovery": 77,
+    "firstPartyWebsiteDiscovery": 75,
     "verifiedSourcePages": 15,
     "structuredRestaurantEvents": 12,
-    "websiteFeeds": 15,
+    "websiteFeeds": 14,
     "socialApis": 3,
     "cityEventSources": 0,
     "openingWatchSources": 0,

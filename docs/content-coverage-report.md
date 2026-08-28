@@ -1,6 +1,6 @@
 # Halifax Sourced content coverage baseline
 
-Generated: 2026-08-28T21:31:30.261Z
+Generated: 2026-08-28T21:37:40.761Z
 
 This report measures the currently committed production data layers. It is a content-completeness baseline, **not a restaurant quality or popularity rating**. Unknown data remains unknown; source leads are not converted into fabricated facts.
 
@@ -36,11 +36,11 @@ Raw layers: 10 curated, 735 OpenStreetMap, 6 reviewed local-discovery records, 7
 
 | Platform | Places | Coverage |
 | --- | ---: | ---: |
-| instagram | 126 | 17% |
+| instagram | 127 | 17.1% |
 | facebook | 109 | 14.7% |
 | tiktok | 13 | 1.7% |
 | threads | 0 | 0% |
-| x | 57 | 7.7% |
+| x | 58 | 7.8% |
 | youtube | 11 | 1.5% |
 | linkedin | 6 | 0.8% |
 | bluesky | 2 | 0.3% |
@@ -109,10 +109,10 @@ Raw layers: 10 curated, 735 OpenStreetMap, 6 reviewed local-discovery records, 7
 ## Source failures visible in the current data
 
 - officialWebsiteChecks: 51
-- firstPartyWebsiteDiscovery: 77
+- firstPartyWebsiteDiscovery: 75
 - verifiedSourcePages: 15
 - structuredRestaurantEvents: 12
-- websiteFeeds: 15
+- websiteFeeds: 14
 - socialApis: 3
 - cityEventSources: 0
 - openingWatchSources: 0
