@@ -29,9 +29,21 @@ jobs:
           npm install --no-save playwright@1.55.0
           npx playwright install --with-deps chromium
 
-      - name: Capture deployed reference shots
+      - name: Start branch app
+        run: |
+          node scripts/dev-server.mjs > /tmp/halifax-sourced-server.log 2>&1 &
+          for i in {1..30}; do
+            if curl --fail --silent http://127.0.0.1:5173/ >/dev/null; then
+              exit 0
+            fi
+            sleep 1
+          done
+          cat /tmp/halifax-sourced-server.log
+          exit 1
+
+      - name: Capture branch reference shots
         env:
-          APP_URL: https://jeremyhennessy.github.io/HalifaxSourced
+          APP_URL: http://127.0.0.1:5173
         run: node scripts/capture-reference-shots.mjs
 
       - name: Upload reference shots
