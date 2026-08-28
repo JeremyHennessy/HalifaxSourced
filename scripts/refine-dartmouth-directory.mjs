@@ -1,6 +1,7 @@
 import { readFile, writeFile } from "node:fs/promises";
 
 const registry = JSON.parse(await readFile(new URL("../data/place-source-registry.json", import.meta.url), "utf8"));
+const catalog = JSON.parse(await readFile(new URL("../data/build/catalog.json", import.meta.url), "utf8"));
 const payloadPath = new URL("../data/build/directory-restaurant-leads.json", import.meta.url);
 const jsPath = new URL("../data/directory-restaurant-leads.js", import.meta.url);
 const payload = JSON.parse(await readFile(payloadPath, "utf8"));
@@ -149,7 +150,7 @@ for (let index = 0; index < anchors.length; index += 1) {
 }
 
 const existing = (payload.records || []).filter((record) => record.sourceId !== source.id);
-const knownNames = new Set(existing.filter((record) => record.alreadyInCatalogByName).map((record) => normalize(record.name)));
+const knownNames = new Set((catalog.restaurants || []).map((record) => normalize(record.name)));
 const deduped = records.filter((record, index, all) => all.findIndex((item) => normalize(item.name) === normalize(record.name) && normalize(item.address) === normalize(record.address)) === index)
   .map((record) => ({ ...record, alreadyInCatalogByName: knownNames.has(normalize(record.name)), alreadyInCatalog: knownNames.has(normalize(record.name)) }));
 
@@ -159,6 +160,6 @@ payload.newToCatalogCount = payload.records.filter((record) => !record.alreadyIn
 payload.sources = (payload.sources || []).filter((item) => item.id !== source.id).concat({ id: source.id, name: source.name, kind: source.kind, url: source.url, directoryEntriesObserved: deduped.length, parserMode: "view_website_address_blocks" });
 await writeFile(payloadPath, JSON.stringify(payload, null, 2));
 await writeFile(jsPath, `window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = ${JSON.stringify(payload, null, 2)};\n`);
-console.log(`Downtown Dartmouth refinement: anchors=${anchors.length}, records=${deduped.length}.`);
+console.log(`Downtown Dartmouth refinement: anchors=${anchors.length}, records=${deduped.length}, already-in-catalog=${deduped.filter((record) => record.alreadyInCatalogByName).length}.`);
 for (const record of deduped.slice(0, 12)) console.log(`- ${record.name} | ${record.address} | ${record.website || record.socialProfiles[0]?.url || record.actionLinks[0]?.url || "no outbound"}`);
 if (deduped.length < 10) throw new Error(`downtown_dartmouth_parse_too_thin:${deduped.length}`);
