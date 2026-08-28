@@ -1,8 +1,6 @@
 # Halifax Sourced content coverage baseline
 
-Production baseline: `add04dd5f30b5678071ce55745d568b0146b6df2`
-
-Generated: 2026-08-28T20:29:56.287Z
+Generated: 2026-08-28T21:31:30.261Z
 
 This report measures the currently committed production data layers. It is a content-completeness baseline, **not a restaurant quality or popularity rating**. Unknown data remains unknown; source leads are not converted into fabricated facts.
 
@@ -18,11 +16,11 @@ This report measures the currently committed production data layers. It is a con
 | Verified menu link | 86 | 11.6% |
 | Special evidence | 53 | 7.1% |
 | Verified specials source | 25 | 3.4% |
-| Reservation link | 58 | 7.8% |
-| Online ordering link | 75 | 10.1% |
+| Reservation link | 60 | 8.1% |
+| Online ordering link | 79 | 10.6% |
 | Event evidence | 47 | 6.3% |
 | Structured upcoming restaurant events | 2 | 0.3% |
-| At least one social network profile | 132 | 17.8% |
+| At least one social network profile | 137 | 18.4% |
 | Phone | 245 | 33% |
 | Hours | 219 | 29.5% |
 | Coordinates | 734 | 98.8% |
@@ -38,15 +36,15 @@ Raw layers: 10 curated, 735 OpenStreetMap, 6 reviewed local-discovery records, 7
 
 | Platform | Places | Coverage |
 | --- | ---: | ---: |
-| instagram | 120 | 16.2% |
-| facebook | 99 | 13.3% |
-| tiktok | 12 | 1.6% |
+| instagram | 126 | 17% |
+| facebook | 109 | 14.7% |
+| tiktok | 13 | 1.7% |
 | threads | 0 | 0% |
-| x | 55 | 7.4% |
-| youtube | 10 | 1.3% |
-| linkedin | 5 | 0.7% |
+| x | 57 | 7.7% |
+| youtube | 11 | 1.5% |
+| linkedin | 6 | 0.8% |
 | bluesky | 2 | 0.3% |
-| pinterest | 0 | 0% |
+| pinterest | 2 | 0.3% |
 | snapchat | 0 | 0% |
 | linktree | 0 | 0% |
 | beacons | 0 | 0% |
@@ -54,9 +52,9 @@ Raw layers: 10 curated, 735 OpenStreetMap, 6 reviewed local-discovery records, 7
 | campsite | 0 | 0% |
 | bento | 0 | 0% |
 
-- Website but no social network found: **153**
+- Website but no social network found: **148**
 - No official website in the canonical record: **459**
-- Shared-profile keys: **20**; places with shared-brand profiles only: **23**
+- Shared-profile keys: **24**; places with shared-brand profiles only: **24**
 - Candidate social associations awaiting verification: **0**
 - Social source observations older than 90 days: **0**
 
@@ -111,10 +109,10 @@ Raw layers: 10 curated, 735 OpenStreetMap, 6 reviewed local-discovery records, 7
 ## Source failures visible in the current data
 
 - officialWebsiteChecks: 51
-- firstPartyWebsiteDiscovery: 73
+- firstPartyWebsiteDiscovery: 77
 - verifiedSourcePages: 15
 - structuredRestaurantEvents: 12
-- websiteFeeds: 6
+- websiteFeeds: 15
 - socialApis: 3
 - cityEventSources: 0
 - openingWatchSources: 0

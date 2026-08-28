@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "generatedAt": "2026-08-28T20:29:56.287Z",
-  "baselineCommitHint": "623a83a669270dfa975201ead00730df654dbbd8",
+  "generatedAt": "2026-08-28T21:31:30.261Z",
+  "baselineCommitHint": "c3062fa77417b72790c756c5c0b828fbdeb18def",
   "definitions": {
     "canonicalPlaces": "Current user-facing merge of catalog restaurants plus reviewed discovery records, matching the app's existing name-based discovery merge behavior.",
     "verifiedOfficialWebsite": "Official-site fetch returned a successful HTTP status or the first-party discovery layer successfully fetched the restaurant-owned site.",
@@ -25,22 +25,22 @@
     "withVerifiedMenuLink": 86,
     "withSpecials": 53,
     "withVerifiedSpecials": 25,
-    "withReservationLink": 58,
-    "withOnlineOrderingLink": 75,
+    "withReservationLink": 60,
+    "withOnlineOrderingLink": 79,
     "withEventEvidence": 47,
     "withStructuredUpcomingEvents": 2,
-    "withAtLeastOneSocialProfile": 132,
-    "withAnySocialOrLinkHub": 132,
+    "withAtLeastOneSocialProfile": 137,
+    "withAnySocialOrLinkHub": 137,
     "socialByPlatform": {
-      "instagram": 120,
-      "facebook": 99,
-      "tiktok": 12,
+      "instagram": 126,
+      "facebook": 109,
+      "tiktok": 13,
       "threads": 0,
-      "x": 55,
-      "youtube": 10,
-      "linkedin": 5,
+      "x": 57,
+      "youtube": 11,
+      "linkedin": 6,
       "bluesky": 2,
-      "pinterest": 0,
+      "pinterest": 2,
       "snapchat": 0,
       "linktree": 0,
       "beacons": 0,
@@ -77,11 +77,11 @@
     "verifiedMenu": 11.6,
     "specials": 7.1,
     "verifiedSpecials": 3.4,
-    "reservations": 7.8,
-    "ordering": 10.1,
+    "reservations": 8.1,
+    "ordering": 10.6,
     "events": 6.3,
     "structuredUpcomingEvents": 0.3,
-    "social": 17.8,
+    "social": 18.4,
     "phone": 33,
     "hours": 29.5,
     "coordinates": 98.8,
@@ -92,18 +92,18 @@
     "media": 0
   },
   "socialAudit": {
-    "placesWithSocial": 132,
+    "placesWithSocial": 137,
     "placesWithLinkHub": 0,
     "platformPlaceCounts": {
-      "instagram": 120,
-      "facebook": 99,
-      "tiktok": 12,
+      "instagram": 126,
+      "facebook": 109,
+      "tiktok": 13,
       "threads": 0,
-      "x": 55,
-      "youtube": 10,
-      "linkedin": 5,
+      "x": 57,
+      "youtube": 11,
+      "linkedin": 6,
       "bluesky": 2,
-      "pinterest": 0,
+      "pinterest": 2,
       "snapchat": 0,
       "linktree": 0,
       "beacons": 0,
@@ -111,13 +111,13 @@
       "campsite": 0,
       "bento": 0
     },
-    "profileAssociations": 310,
-    "sharedProfileKeys": 20,
-    "sharedBrandOnlyPlaces": 23,
+    "profileAssociations": 347,
+    "sharedProfileKeys": 24,
+    "sharedBrandOnlyPlaces": 24,
     "candidatePlacesAwaitingVerification": 0,
     "staleSocialVerificationPlaces": 0,
     "noWebsitePlaces": 459,
-    "websiteButNoSocialPlaces": 153,
+    "websiteButNoSocialPlaces": 148,
     "priorityGapQueue": {
       "websiteButNoSocial": [
         {
@@ -144,11 +144,6 @@
           "id": "osm-node-4474954245-bai-wei-grill-bar",
           "name": "Bai Wei Grill Bar",
           "website": "http://baiweigrillbar.com"
-        },
-        {
-          "id": "osm-node-10665783054-ben-and-florentine",
-          "name": "Ben & Florentine",
-          "website": "https://benetflorentine.com/"
         },
         {
           "id": "osm-node-13141457102-bitter-end-martini-bar-and-restaurant",
@@ -182,7 +177,7 @@
         },
         {
           "id": "osm-node-9089629991-cafe-lara",
-          "name": "Caf\u00e9 Lara",
+          "name": "Café Lara",
           "website": "https://cafelara.ca"
         },
         {
@@ -197,7 +192,7 @@
         },
         {
           "id": "osm-node-5810620690-castello-cafe",
-          "name": "Castello Caf\u00e9",
+          "name": "Castello Café",
           "website": "https://www.facebook.com/CastelloCafeCatering/"
         },
         {
@@ -561,11 +556,6 @@
           "website": "https://pgcafeandgrill.com/"
         },
         {
-          "id": "osm-node-1666719782-pho-hoang-minh",
-          "name": "Ph\u1edf Hoang Minh",
-          "website": "https://www.phohoangminh.ca/"
-        },
-        {
           "id": "osm-node-3789869157-piece-of-cake-bakery-and-cafe",
           "name": "Piece of Cake Bakery and Cafe",
           "website": "https://bishopslanding.com/dining/piece-of-cake-fine-bakery-cafe/"
@@ -619,6 +609,16 @@
           "id": "osm-node-11726396167-rush-hour-pizza",
           "name": "Rush Hour Pizza",
           "website": "https://rushhourpizza.ca/"
+        },
+        {
+          "id": "osm-node-9652977384-saffron-multi-cuisine-indian-restaurant",
+          "name": "Saffron Multi Cuisine Indian Restaurant",
+          "website": "https://saffron-indian-restaurant.com/"
+        },
+        {
+          "id": "osm-node-8443747544-saj-house",
+          "name": "Saj House",
+          "website": "https://www.sajhouse.ca/"
         }
       ],
       "noWebsite": [
@@ -739,7 +739,7 @@
         },
         {
           "id": "osm-node-6152777540-annie-s-place-cafe-and-catering",
-          "name": "Annie's Place Caf\u00e9 & Catering",
+          "name": "Annie's Place Café & Catering",
           "neighborhood": "Downtown"
         },
         {
@@ -964,17 +964,17 @@
         },
         {
           "id": "osm-node-12838650881-cafe-du-port",
-          "name": "Caf\u00e9 du Port",
+          "name": "Café du Port",
           "neighborhood": "Downtown"
         },
         {
           "id": "osm-node-12824690512-cafe-lara",
-          "name": "Caf\u00e9 Lara",
+          "name": "Café Lara",
           "neighborhood": "West End"
         },
         {
           "id": "osm-node-12984675528-cafe-lunette",
-          "name": "Caf\u00e9 Lunette",
+          "name": "Café Lunette",
           "neighborhood": "Downtown"
         },
         {
@@ -984,7 +984,7 @@
         },
         {
           "id": "osm-node-5647941370-cafe-tayaiki-52",
-          "name": "Caf\u00e9 Tayaiki 52",
+          "name": "Café Tayaiki 52",
           "neighborhood": "Downtown"
         },
         {
@@ -1176,10 +1176,10 @@
   },
   "sourceFailures": {
     "officialWebsiteChecks": 51,
-    "firstPartyWebsiteDiscovery": 73,
+    "firstPartyWebsiteDiscovery": 77,
     "verifiedSourcePages": 15,
     "structuredRestaurantEvents": 12,
-    "websiteFeeds": 6,
+    "websiteFeeds": 15,
     "socialApis": 3,
     "cityEventSources": 0,
     "openingWatchSources": 0,
@@ -1190,10 +1190,9 @@
     "instagram": "missing"
   },
   "unresolved": {
-    "sharedSocialAssociations": 20,
+    "sharedSocialAssociations": 24,
     "possibleDuplicateCurrentEvents": 0,
     "staleRestaurantRecords": 0,
     "unknownFreshnessRestaurantRecords": 0
-  },
-  "productionBaselineCommit": "add04dd5f30b5678071ce55745d568b0146b6df2"
+  }
 }
