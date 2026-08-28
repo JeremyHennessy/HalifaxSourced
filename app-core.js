@@ -9,6 +9,9 @@ const inspectionPayload = window.HALIFAX_NS_FOOD_INSPECTIONS ?? null;
 const inspectionRecords = Array.isArray(inspectionPayload?.records) ? inspectionPayload.records : [];
 const structuredEventPayload = window.HALIFAX_STRUCTURED_EVENTS ?? null;
 const structuredEvents = Array.isArray(structuredEventPayload?.events) ? structuredEventPayload.events : [];
+const verifiedSourcePayload = window.HALIFAX_VERIFIED_SOURCE_PAGES ?? null;
+const verifiedMenuSources = Array.isArray(verifiedSourcePayload?.menuSources) ? verifiedSourcePayload.menuSources : [];
+const verifiedSpecialSources = Array.isArray(verifiedSourcePayload?.specialSources) ? verifiedSourcePayload.specialSources : [];
 
 const appView = document.querySelector("#appView");
 const globalSearch = document.querySelector("#globalSearch");
@@ -94,6 +97,27 @@ for (const event of structuredEvents) {
 }
 for (const events of structuredEventsByRestaurant.values()) events.sort((a, b) => String(a.startAt || "").localeCompare(String(b.startAt || "")));
 
+function groupVerifiedSources(records) {
+  const grouped = new Map();
+  for (const record of records) {
+    if (!record?.restaurantId || !record?.url || record.reviewState !== "verified") continue;
+    const url = safeUrl(record.url);
+    if (!url) continue;
+    if (!grouped.has(record.restaurantId)) grouped.set(record.restaurantId, []);
+    grouped.get(record.restaurantId).push({
+      label: record.label || (record.kind === "menu" ? "Menu" : "Specials"),
+      url,
+      verified: true,
+      verifiedAt: record.verifiedAt || null,
+      sourceKind: record.sourceKind || "official_page"
+    });
+  }
+  return grouped;
+}
+
+const verifiedMenuSourcesByRestaurant = groupVerifiedSources(verifiedMenuSources);
+const verifiedSpecialSourcesByRestaurant = groupVerifiedSources(verifiedSpecialSources);
+
 function mergeRestaurantLayers() {
   const merged = curatedRestaurants.map((restaurant) => ({ ...restaurant, sourceLayer: "curated" }));
   const byName = new Map(merged.map((restaurant) => [normalize(restaurant.name), restaurant]));
@@ -163,6 +187,11 @@ function signalLinks(signal, kind) {
   return links.filter((link, index, all) => all.findIndex((item) => item.url === link.url) === index);
 }
 
+function preferredSourceLinks(verifiedMap, restaurantId, fallback) {
+  const verified = verifiedMap.get(restaurantId) || [];
+  return verified.length ? verified : fallback;
+}
+
 function rawTags(restaurant) {
   return restaurant.osm?.rawTags || {};
 }
@@ -182,8 +211,10 @@ function hasOpening(restaurant, signal) {
 function enrichRestaurant(restaurant) {
   const signal = officialById.get(restaurant.id) || null;
   const inspections = inspectionMatches(restaurant);
-  const menuLinks = signalLinks(signal, "menu");
-  const specialLinks = signalLinks(signal, "specials");
+  const candidateMenuLinks = signalLinks(signal, "menu");
+  const candidateSpecialLinks = signalLinks(signal, "specials");
+  const menuLinks = preferredSourceLinks(verifiedMenuSourcesByRestaurant, restaurant.id, candidateMenuLinks);
+  const specialLinks = preferredSourceLinks(verifiedSpecialSourcesByRestaurant, restaurant.id, candidateSpecialLinks);
   const eventLinks = signalLinks(signal, "events");
   const reservationLinks = signalLinks(signal, "reservations");
   const structuredRestaurantEvents = structuredEventsByRestaurant.get(restaurant.id) || [];
@@ -204,8 +235,8 @@ function enrichRestaurant(restaurant) {
     eventLinks,
     reservationLinks,
     website,
-    hasMenu: menuLinks.length > 0 || Boolean(website),
-    hasSpecial: specialLinks.length > 0 || (restaurant.specials || []).length > 0 || signalHas(signal, "specials"),
+    hasMenu: menuLinks.length > 0,
+    hasSpecial: specialLinks.length > 0 || (restaurant.specials || []).length > 0,
     hasEvent: structuredRestaurantEvents.length > 0 || eventLinks.length > 0 || (restaurant.events || []).length > 0 || signalHas(signal, "events"),
     hasPatio: hasPatio(restaurant, signal),
     hasOpening: hasOpening(restaurant, signal),
@@ -230,6 +261,8 @@ const restaurants = mergeRestaurantLayers();
 window.__halifaxRestaurantCount = restaurants.length;
 window.__halifaxOfficialSignalCount = officialSignals.length;
 window.__halifaxStructuredEventCount = structuredEvents.length;
+window.__halifaxVerifiedMenuSourceCount = verifiedMenuSources.length;
+window.__halifaxVerifiedSpecialSourceCount = verifiedSpecialSources.length;
 
 const cuisines = countValues(restaurants.flatMap((restaurant) => restaurant.cuisines || []));
 const neighbourhoods = countValues(restaurants.map((restaurant) => restaurant.neighborhood || "Halifax"));
@@ -262,6 +295,8 @@ function searchableText(restaurant) {
     ...(restaurant.cuisines || []),
     ...(restaurant.vibe || []),
     ...(restaurant.signal?.keywordHits || []),
+    ...(restaurant.menuLinks || []).map((link) => link.label),
+    ...(restaurant.specialLinks || []).map((link) => link.label),
     ...(restaurant.structuredEvents || []).map((event) => event.title)
   ].filter(Boolean).join(" ").toLowerCase();
 }
