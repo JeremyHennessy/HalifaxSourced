@@ -39,6 +39,7 @@ for (const item of resolutions.resolutions || []) {
   resolutionIds.add(item.candidateId);
   if (item.state.startsWith("resolved_")) {
     if (!item.matchedRestaurantId || !canonicalIds.has(item.matchedRestaurantId)) errors.push(`resolved_unknown_restaurant:${item.candidateId}:${item.matchedRestaurantId || "missing"}`);
+    if (!Array.isArray(item.evidence) || !item.evidence.some((evidence) => ["exact_normalized_name", "compatible_name"].includes(evidence))) errors.push(`resolved_without_compatible_name:${item.candidateId}`);
     if (!Array.isArray(item.evidence) || !item.evidence.some((evidence) => !["exact_normalized_name", "compatible_name"].includes(evidence))) errors.push(`resolved_without_non_name_evidence:${item.candidateId}`);
     if (item.conflicts?.length) errors.push(`resolved_with_conflict:${item.candidateId}`);
   }
