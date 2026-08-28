@@ -1,0 +1,36 @@
+name: Rich Discovery Load Diagnostic
+
+on:
+  push:
+    branches:
+      - diag/rich-discovery-load-20260828
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  diagnose:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Build structured specials
+        run: node scripts/build-structured-specials.mjs
+      - name: Install Playwright
+        run: |
+          npm install --no-save playwright@1.55.0
+          npx playwright install --with-deps chromium
+      - name: Start app
+        run: |
+          node scripts/dev-server.mjs >/tmp/halifax-sourced-server.log 2>&1 &
+          for i in {1..30}; do curl --fail --silent http://127.0.0.1:5173/ >/dev/null && exit 0; sleep 1; done
+          cat /tmp/halifax-sourced-server.log
+          exit 1
+      - name: Diagnose browser script loading
+        env:
+          APP_URL: http://127.0.0.1:5173
+        run: node scripts/diagnose-rich-discovery-load.mjs
