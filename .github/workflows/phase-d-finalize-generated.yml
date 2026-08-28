@@ -1,0 +1,88 @@
+name: Phase D Finalize Generated Sources
+
+on:
+  push:
+    branches:
+      - phase-d/social-evidence-expansion-20260828
+    paths:
+      - .github/workflows/phase-d-finalize-generated.yml
+
+permissions:
+  contents: write
+
+jobs:
+  finalize:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    steps:
+      - name: Checkout Phase D branch
+        uses: actions/checkout@v6
+        with:
+          ref: phase-d/social-evidence-expansion-20260828
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Preserve previous verified first-party relationships
+        run: cp data/build/first-party-sources.json /tmp/first-party-sources.previous.json
+
+      - name: Discover current first-party relationships
+        env:
+          FIRST_PARTY_SOURCE_LIMIT: 9999
+          FIRST_PARTY_SOURCE_DELAY_MS: 150
+          FIRST_PARTY_SOURCE_TIMEOUT_MS: 10000
+          FIRST_PARTY_SOURCE_CONCURRENCY: 10
+          FIRST_PARTY_OWNED_PAGE_LIMIT: 3
+          FIRST_PARTY_LINK_HUB_LIMIT: 2
+        run: node scripts/discover-first-party-sources.mjs
+
+      - name: Carry forward recent verified relationships missed by refresh
+        env:
+          FIRST_PARTY_PREVIOUS_PATH: /tmp/first-party-sources.previous.json
+          FIRST_PARTY_CARRY_FORWARD_MAX_DAYS: 180
+        run: node scripts/merge-first-party-history.mjs
+
+      - name: Sanitize first-party relationships
+        run: node scripts/sanitize-first-party-sources.mjs
+
+      - name: Run social sanitation regression
+        run: node scripts/test-social-platform-registry.mjs
+
+      - name: Refresh website feed signals
+        env:
+          FEED_PULL_LIMIT: 200
+          FEED_PULL_DELAY_MS: 150
+          FEED_PULL_TIMEOUT_MS: 10000
+          FEED_PULL_CONCURRENCY: 10
+          FEED_LOOKBACK_DAYS: 180
+        run: node scripts/import-first-party-feed-signals.mjs
+
+      - name: Validate source layers
+        run: node scripts/check-expanded-sources.mjs
+
+      - name: Rebuild and reconcile coverage
+        run: |
+          node scripts/build-content-coverage-report.mjs
+          node scripts/reconcile-social-coverage.mjs
+
+      - name: Commit reviewed generated layers and remove temporary promotion gates
+        run: |
+          git config user.name "Halifax Sourced Data Bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add \
+            data/first-party-sources.js \
+            data/build/first-party-sources.json \
+            data/website-feed-signals.js \
+            data/build/website-feed-signals.json \
+            data/build/content-coverage-report.json \
+            docs/content-coverage-report.md
+          git rm --ignore-unmatch .github/workflows/phase-d-promote-reviewed-sources.yml
+          git rm --ignore-unmatch .github/workflows/phase-d-finalize-generated.yml
+          if git diff --cached --quiet; then
+            echo "No generated changes to finalize."
+            exit 0
+          fi
+          git commit -m "Finalize reviewed first-party social evidence"
+          git push origin HEAD:phase-d/social-evidence-expansion-20260828
