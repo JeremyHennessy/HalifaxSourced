@@ -118,6 +118,15 @@ if (eventState.loaded > 0) {
 }
 await page.screenshot({ path: resolve("artifacts", "ui-check-events.png"), fullPage: true });
 
+// Explore filters intentionally persist across routes. Reset test state before asserting a full-map population.
+await page.evaluate(() => {
+  state.query = "";
+  state.cuisine = "all";
+  state.neighbourhood = "all";
+  state.feature = "all";
+  state.page = 1;
+  state.sort = "recommended";
+});
 await page.goto(`${url}/#map`, { waitUntil: "networkidle" });
 await page.locator("#mainMap").waitFor();
 await page.waitForTimeout(1200);
