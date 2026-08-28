@@ -3,20 +3,18 @@ import { mkdir, readFile, writeFile } from "node:fs/promises";
 const catalog = JSON.parse(await readFile(new URL("../data/build/catalog.json", import.meta.url), "utf8"));
 const targets = (catalog.restaurants || []).filter((restaurant) => restaurant.website).slice(0, Number(process.env.FIRST_PARTY_SOURCE_LIMIT ?? 9999));
 const delayMs = Number(process.env.FIRST_PARTY_SOURCE_DELAY_MS ?? 180);
+const timeoutMs = Number(process.env.FIRST_PARTY_SOURCE_TIMEOUT_MS ?? 12000);
+const concurrency = Math.max(1, Math.min(16, Number(process.env.FIRST_PARTY_SOURCE_CONCURRENCY ?? 8)));
 const userAgent = "HalifaxSourced/0.3 (+https://github.com/JeremyHennessy/HalifaxSourced)";
 const robotsCache = new Map();
 
-function sleep(ms) {
-  return new Promise((resolve) => setTimeout(resolve, ms));
-}
+function sleep(ms) { return new Promise((resolve) => setTimeout(resolve, ms)); }
 
 function safeUrl(value, base) {
   try {
     const url = new URL(String(value ?? ""), base);
     return ["http:", "https:"].includes(url.protocol) ? url : null;
-  } catch {
-    return null;
-  }
+  } catch { return null; }
 }
 
 function hostKey(value) {
@@ -84,7 +82,11 @@ async function robotsFor(url) {
   if (!robotsCache.has(parsed.origin)) {
     robotsCache.set(parsed.origin, (async () => {
       try {
-        const response = await fetch(new URL("/robots.txt", parsed.origin), { headers: { "User-Agent": userAgent }, redirect: "follow" });
+        const response = await fetch(new URL("/robots.txt", parsed.origin), {
+          headers: { "User-Agent": userAgent },
+          redirect: "follow",
+          signal: AbortSignal.timeout(Math.min(timeoutMs, 8000))
+        });
         if (response.status === 401 || response.status === 403) return { disallow: ["/"], sitemaps: [] };
         if (!response.ok) return { disallow: [], sitemaps: [] };
         return parseRobots(await response.text());
@@ -167,29 +169,31 @@ function discoverFeeds(html, baseUrl) {
   return found.slice(0, 8);
 }
 
-const records = [];
+const records = new Array(targets.length);
 const failures = [];
-let checked = 0;
-for (const restaurant of targets) {
-  const website = safeUrl(restaurant.website)?.href;
-  if (!website) continue;
+
+async function scanRestaurant(item) {
+  const { restaurant, index, website } = item;
   if (!(await robotsAllows(website))) {
     failures.push({ restaurantId: restaurant.id, name: restaurant.name, website, reason: "robots_disallow" });
-    continue;
+    return;
   }
-  if (delayMs > 0) await sleep(delayMs);
   const observedAt = new Date().toISOString();
   try {
-    const response = await fetch(website, { headers: { "User-Agent": userAgent, Accept: "text/html,application/xhtml+xml" }, redirect: "follow" });
+    const response = await fetch(website, {
+      headers: { "User-Agent": userAgent, Accept: "text/html,application/xhtml+xml" },
+      redirect: "follow",
+      signal: AbortSignal.timeout(timeoutMs)
+    });
     const contentType = response.headers.get("content-type") || "";
     if (!response.ok || !/html|xhtml/i.test(contentType)) {
       failures.push({ restaurantId: restaurant.id, name: restaurant.name, website, reason: response.ok ? "not_html" : `http_${response.status}` });
-      continue;
+      return;
     }
     const html = await response.text();
     const resolvedUrl = response.url || website;
     const robots = await robotsFor(resolvedUrl);
-    records.push({
+    records[index] = {
       restaurantId: restaurant.id,
       name: restaurant.name,
       website,
@@ -200,31 +204,59 @@ for (const restaurant of targets) {
       sitemaps: (robots.sitemaps || []).filter((url) => sameSite(url, resolvedUrl)).slice(0, 8),
       sourceKind: "official_website_discovery",
       reviewState: "verified"
-    });
-    checked += 1;
+    };
   } catch (error) {
-    failures.push({ restaurantId: restaurant.id, name: restaurant.name, website, reason: error.message });
+    failures.push({ restaurantId: restaurant.id, name: restaurant.name, website, reason: error.name === "TimeoutError" ? "timeout" : error.message });
   }
 }
 
-const profileCount = records.reduce((sum, record) => sum + record.socialProfiles.length, 0);
-const facebookCount = records.reduce((sum, record) => sum + record.socialProfiles.filter((profile) => profile.platform === "facebook").length, 0);
-const instagramCount = records.reduce((sum, record) => sum + record.socialProfiles.filter((profile) => profile.platform === "instagram").length, 0);
-const feedCount = records.reduce((sum, record) => sum + record.feeds.length, 0);
+const groups = new Map();
+for (const [index, restaurant] of targets.entries()) {
+  const website = safeUrl(restaurant.website)?.href;
+  if (!website) {
+    failures.push({ restaurantId: restaurant.id, name: restaurant.name, website: restaurant.website, reason: "invalid_url" });
+    continue;
+  }
+  const host = hostKey(website) || `invalid-${index}`;
+  if (!groups.has(host)) groups.set(host, []);
+  groups.get(host).push({ restaurant, index, website });
+}
+
+const hostGroups = [...groups.values()];
+let nextGroup = 0;
+async function worker() {
+  while (true) {
+    const current = nextGroup++;
+    if (current >= hostGroups.length) return;
+    for (const item of hostGroups[current]) {
+      await scanRestaurant(item);
+      if (delayMs > 0) await sleep(delayMs);
+    }
+  }
+}
+await Promise.all(Array.from({ length: Math.min(concurrency, hostGroups.length || 1) }, () => worker()));
+
+const finalRecords = records.filter(Boolean);
+const profileCount = finalRecords.reduce((sum, record) => sum + record.socialProfiles.length, 0);
+const facebookCount = finalRecords.reduce((sum, record) => sum + record.socialProfiles.filter((profile) => profile.platform === "facebook").length, 0);
+const instagramCount = finalRecords.reduce((sum, record) => sum + record.socialProfiles.filter((profile) => profile.platform === "instagram").length, 0);
+const feedCount = finalRecords.reduce((sum, record) => sum + record.feeds.length, 0);
 const output = {
   version: 1,
   generatedAt: new Date().toISOString(),
-  checkedWebsites: checked,
+  checkedWebsites: finalRecords.length,
   failedWebsites: failures.length,
+  hostGroups: hostGroups.length,
+  concurrency,
   profileCount,
   facebookCount,
   instagramCount,
   feedCount,
   failures: failures.slice(0, 100),
-  records
+  records: finalRecords
 };
 
 await mkdir(new URL("../data/build", import.meta.url), { recursive: true });
 await writeFile(new URL("../data/build/first-party-sources.json", import.meta.url), JSON.stringify(output, null, 2));
 await writeFile(new URL("../data/first-party-sources.js", import.meta.url), `window.HALIFAX_FIRST_PARTY_SOURCES = ${JSON.stringify(output, null, 2)};\n`);
-console.log(`First-party source discovery: websites=${checked}, failures=${failures.length}, profiles=${profileCount} (facebook=${facebookCount}, instagram=${instagramCount}), feeds=${feedCount}.`);
+console.log(`First-party source discovery: websites=${finalRecords.length}, failures=${failures.length}, profiles=${profileCount} (facebook=${facebookCount}, instagram=${instagramCount}), feeds=${feedCount}, hosts=${hostGroups.length}, concurrency=${concurrency}.`);
