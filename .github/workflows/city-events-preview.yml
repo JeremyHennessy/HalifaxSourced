@@ -1,0 +1,49 @@
+name: City Events Preview
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "23 */6 * * *"
+  push:
+    branches:
+      - events-social-expansion-20260828
+    paths:
+      - .github/workflows/city-events-preview.yml
+      - data/event-source-registry.json
+      - scripts/import-city-events.mjs
+      - scripts/check-city-events.mjs
+
+permissions:
+  contents: read
+
+jobs:
+  refresh-events:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Import Halifax-wide events
+        env:
+          CITY_EVENT_TIMEOUT_MS: 15000
+        run: node scripts/import-city-events.mjs
+
+      - name: Validate city event dataset
+        run: node scripts/check-city-events.mjs
+
+      - name: Upload city event preview
+        uses: actions/upload-artifact@v4
+        with:
+          name: city-events-preview
+          path: |
+            data/city-events.js
+            data/build/city-events.json
+            artifacts/city-event-integrity-report.json
+          if-no-files-found: error
+          retention-days: 30
