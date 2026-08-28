@@ -127,7 +127,8 @@ function parsePage(page, filter) {
     const when = libraryWhen(block);
     if (!title || !when || !inRange(when.startAt, when.endAt)) continue;
     const eventUrl = absoluteUrl(current[1], page.resolvedUrl) || source.url;
-    const event = {
+    const isFree = /\bfree\b/i.test(block);
+    events.push({
       id: `${source.id}-${hashId(title, when.startAt, filter.name)}`,
       title: title.slice(0, 240),
       startAt: when.startAt,
@@ -139,8 +140,8 @@ function parsePage(page, filter) {
       categories: libraryCategories(block, title),
       eventUrl,
       ticketUrl: source.url,
-      price: /\bfree\b/i.test(block) ? "Free" : null,
-      free: /\bfree\b/i.test(block),
+      price: isFree ? "Free" : null,
+      free: isFree,
       sourceId: source.id,
       sourceName: source.name,
       sourceKind: source.kind,
@@ -148,8 +149,7 @@ function parsePage(page, filter) {
       observedAt: new Date().toISOString(),
       reviewState: "source_observed",
       associationBasis: `bibliocommons_location_filter:${filter.code}`
-    };
-    events.push(event);
+    });
   }
   return events;
 }
@@ -171,7 +171,7 @@ for (const filter of filters) {
       const events = parsePage(page, filter);
       regional.push(...events);
       collected += events.length;
-      if (libraryDelayMs) await sleep(delayMs);
+      if (delayMs) await sleep(delayMs);
     }
     locationStats.push({ code: filter.code, name: filter.name, city: filter.city, status: "ok", eventCount: collected, durationMs: Date.now() - started });
     console.log(`${filter.name}: ${collected} regional library events.`);
