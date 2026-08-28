@@ -36,6 +36,7 @@ function validUrl(value) {
     return ["http:", "https:"].includes(url.protocol);
   } catch { return false; }
 }
+function hasEscapedUrlEntities(value) { return /&(?:amp|#0*38|#x0*26);/i.test(String(value ?? "")); }
 function validDate(value) { return Number.isFinite(Date.parse(String(value ?? ""))); }
 function hasSignalMatches(value) { return value && typeof value === "object" && Object.values(value).some((hits) => Array.isArray(hits) && hits.length > 0); }
 function duplicates(items, keyFn) {
@@ -80,7 +81,7 @@ for (const record of records) {
     }
   }
   for (const related of record.relatedLinks || []) {
-    if (!validUrl(related.url) || !["reservations", "ordering", "menu", "events", "newsletter", "tickets"].includes(related.kind) || related.reviewState !== "verified_link" || !associationBases.has(related.associationBasis) || !confidenceValues.has(related.confidence) || !validDate(related.observedAt) || !validDate(related.lastVerifiedAt)) {
+    if (!validUrl(related.url) || hasEscapedUrlEntities(related.url) || !["reservations", "ordering", "menu", "events", "newsletter", "tickets"].includes(related.kind) || related.reviewState !== "verified_link" || !associationBases.has(related.associationBasis) || !confidenceValues.has(related.confidence) || !validDate(related.observedAt) || !validDate(related.lastVerifiedAt)) {
       failures.push({ type: "invalid_related_link_discovery", restaurantId: record.restaurantId, kind: related.kind, url: related.url });
     }
   }
