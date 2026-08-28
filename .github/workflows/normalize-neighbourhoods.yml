@@ -1,0 +1,39 @@
+name: Normalize OSM Neighbourhoods
+
+on:
+  push:
+    branches:
+      - qa-polish-20260828
+    paths:
+      - .github/workflows/normalize-neighbourhoods.yml
+
+permissions:
+  contents: write
+
+jobs:
+  normalize:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Normalize existing OSM neighbourhoods
+        run: node scripts/normalize-osm-neighbourhoods.mjs
+
+      - name: Commit normalized data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/osm-restaurants.js
+          if git diff --cached --quiet; then
+            echo "No neighbourhood changes required."
+            exit 0
+          fi
+          git commit -m "Normalize OSM neighbourhood assignments"
+          git push origin HEAD:qa-polish-20260828
