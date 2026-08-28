@@ -93,9 +93,7 @@ function mergeRestaurantLayers() {
     const key = normalize(osm.name);
     const existing = byName.get(key);
     if (!existing) {
-      const item = { ...osm, sourceLayer: "openstreetmap" };
-      merged.push(item);
-      byName.set(key, item);
+      merged.push({ ...osm, sourceLayer: "openstreetmap" });
       continue;
     }
     existing.category ||= osm.category;
