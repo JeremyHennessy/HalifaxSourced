@@ -1,0 +1,43 @@
+name: Content Quality Audit
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 12 * * 3"
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Audit source link health
+        env:
+          LINK_HEALTH_LIMIT: 1500
+          LINK_HEALTH_TIMEOUT_MS: 8000
+          LINK_HEALTH_CONCURRENCY: 10
+        run: node scripts/check-source-links.mjs
+      - name: Rebuild content quality report
+        run: |
+          node scripts/build-content-coverage-report.mjs
+          node scripts/build-content-quality-report.mjs
+      - name: Upload quality audit
+        uses: actions/upload-artifact@v4
+        with:
+          name: content-quality-audit
+          path: |
+            artifacts/source-link-health-report.json
+            data/build/content-coverage-report.json
+            data/build/content-quality-report.json
+            docs/content-coverage-report.md
+            docs/content-quality-report.md
+          if-no-files-found: error
+          retention-days: 30
