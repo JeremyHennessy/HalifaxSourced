@@ -1,0 +1,136 @@
+name: Phase FIJ Clean Finalize
+
+on:
+  push:
+    branches:
+      - phase-fij-clean/content-surfacing-quality-20260828
+    paths:
+      - .github/workflows/phase-fij-clean-finalize.yml
+
+permissions:
+  contents: write
+
+jobs:
+  finalize:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 40
+    steps:
+      - name: Checkout clean final branch
+        uses: actions/checkout@v6
+        with:
+          ref: phase-fij-clean/content-surfacing-quality-20260828
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Install Playwright
+        run: |
+          npm install --no-save playwright@1.55.0
+          npx playwright install --with-deps chromium
+
+      - name: Build and validate structured specials
+        run: |
+          node scripts/build-structured-specials.mjs
+          node scripts/check-structured-specials.mjs
+
+      - name: Run deterministic source-drift regression
+        run: node scripts/test-city-event-source-drift.mjs
+
+      - name: Audit source-link health
+        env:
+          LINK_HEALTH_TIMEOUT_MS: 8000
+          LINK_HEALTH_CONCURRENCY: 10
+          LINK_HEALTH_LIMIT: 1500
+        run: node scripts/check-source-links.mjs
+
+      - name: Build current coverage and quality reports
+        run: |
+          node scripts/build-content-coverage-report.mjs
+          node scripts/build-content-quality-report.mjs
+
+      - name: Require useful and internally consistent final output
+        run: |
+          node - <<'NODE'
+          const fs = require('fs');
+          const specials = JSON.parse(fs.readFileSync('data/build/structured-specials.json','utf8'));
+          const facts = JSON.parse(fs.readFileSync('data/build/structured-place-facts.json','utf8'));
+          const city = JSON.parse(fs.readFileSync('data/build/city-events.json','utf8'));
+          const quality = JSON.parse(fs.readFileSync('data/build/content-quality-report.json','utf8'));
+          const health = JSON.parse(fs.readFileSync('artifacts/source-link-health-report.json','utf8'));
+          if ((specials.records?.length || 0) < 1) throw new Error('No structured special/source-lead records produced');
+          if ((facts.records?.length || 0) < 1) throw new Error('Structured place facts unexpectedly missing');
+          if ((city.events?.length || 0) < 1) throw new Error('City event graph unexpectedly empty');
+          if (!quality.summary) throw new Error('Content quality summary missing');
+          if ((health.counts?.checked || 0) < 1) throw new Error('Source-link health audit checked no URLs');
+          const record = {
+            generatedAt: new Date().toISOString(),
+            sourceCommit: process.env.GITHUB_SHA,
+            structuredSpecials: specials.count || 0,
+            verifiedCurrentSpecials: specials.verifiedCurrent || 0,
+            recurringSpecialsToVerify: specials.recurringVerify || 0,
+            specialSourceLeads: specials.sourceLeads || 0,
+            staleSpecials: specials.stale || 0,
+            expiredSpecials: specials.expired || 0,
+            orphanSpecialSources: specials.orphanSourceCount || 0,
+            structuredPlaceFacts: facts.records?.length || 0,
+            cityEvents: city.events?.length || 0,
+            linkHealth: health.counts || {},
+            qualitySummary: quality.summary
+          };
+          fs.writeFileSync('data/build/phase-fij-generation.json', JSON.stringify(record,null,2)+'\n');
+          console.log(JSON.stringify(record,null,2));
+          NODE
+
+      - name: Wire structured specials and rich discovery into static runtime
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import re
+          p = Path('index.html')
+          text = p.read_text()
+          if 'data/structured-specials.js' not in text:
+              text = re.sub(r'(\s*<script src="\./data/structured-place-facts\.js[^\n]*</script>)', r'\1\n    <script src="./data/structured-specials.js?v=20260828-structured-specials"></script>', text, count=1)
+          if 'app-structured-specials.js' not in text:
+              text = re.sub(r'(\s*<script src="\./app-place-facts-display\.js[^\n]*</script>)', r'\1\n    <script src="./app-structured-specials.js?v=20260828-structured-specials"></script>\n    <script src="./app-rich-search.js?v=20260828-rich-search"></script>', text, count=1)
+          if 'app-home-rich.js' not in text:
+              text = re.sub(r'(\s*<script src="\./app-home\.js[^\n]*</script>)', r'\1\n    <script src="./app-home-rich.js?v=20260828-rich-home"></script>', text, count=1)
+          p.write_text(text)
+          PY
+          grep -E 'structured-place-facts|structured-specials|app-place-facts|app-rich-search|app-home-rich' index.html
+
+      - name: Start local app
+        run: |
+          node scripts/dev-server.mjs >/tmp/halifax-sourced-server.log 2>&1 &
+          for i in {1..30}; do
+            curl --fail --silent http://127.0.0.1:5173/ >/dev/null && exit 0
+            sleep 1
+          done
+          cat /tmp/halifax-sourced-server.log
+          exit 1
+
+      - name: Run full consumer browser acceptance
+        env:
+          APP_URL: http://127.0.0.1:5173
+        run: |
+          node scripts/verify-ui.mjs
+          node scripts/test-explore-minimap-lifecycle.mjs
+          node scripts/test-rich-discovery.mjs
+
+      - name: Commit reviewed generated outputs and remove finalizer
+        run: |
+          git config user.name "Halifax Sourced Data Bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add \
+            index.html \
+            data/structured-specials.js \
+            data/build/structured-specials.json \
+            data/build/content-coverage-report.json \
+            docs/content-coverage-report.md \
+            data/build/content-quality-report.json \
+            docs/content-quality-report.md \
+            data/build/phase-fij-generation.json
+          git rm .github/workflows/phase-fij-clean-finalize.yml
+          git commit -m "Generate reviewed specials and final quality reports"
+          git push origin HEAD:phase-fij-clean/content-surfacing-quality-20260828
