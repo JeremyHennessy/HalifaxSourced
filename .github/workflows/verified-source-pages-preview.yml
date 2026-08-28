@@ -1,0 +1,39 @@
+name: Verified Source Pages Preview
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Verify menu and specials source pages
+        env:
+          SOURCE_VERIFY_DELAY_MS: 250
+          SOURCE_VERIFY_PAGE_LIMIT: 300
+        run: node scripts/verify-official-source-pages.mjs
+
+      - name: Validate generated data
+        run: node scripts/check-data-integrity.mjs
+
+      - name: Upload verified source preview
+        uses: actions/upload-artifact@v4
+        with:
+          name: verified-source-pages-preview
+          path: |
+            data/verified-source-pages.js
+            data/build/verified-source-pages.json
+            artifacts/data-integrity-report.json
+          if-no-files-found: error

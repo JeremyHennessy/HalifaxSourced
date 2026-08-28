@@ -60,6 +60,7 @@ const osmWindow = await loadWindowScript(resolve("data", "osm-restaurants.js"));
 const officialWindow = await loadWindowScript(resolve("data", "official-site-signals.js"));
 const mediaWindow = await loadWindowScript(resolve("data", "restaurant-media.js"));
 const structuredEventWindow = await loadWindowScript(resolve("data", "structured-events.js"));
+const verifiedSourceWindow = await loadWindowScript(resolve("data", "verified-source-pages.js"));
 const ownerPayload = JSON.parse(await readFile(resolve("data", "build", "owner-submissions.normalized.json"), "utf8").catch(() => "{\"submissions\":[]}"));
 
 const curated = Array.isArray(curatedWindow.HALIFAX_RESTAURANTS) ? curatedWindow.HALIFAX_RESTAURANTS : [];
@@ -71,6 +72,9 @@ const mediaPayload = mediaWindow.HALIFAX_RESTAURANT_MEDIA ?? null;
 const mediaRecords = Array.isArray(mediaPayload?.records) ? mediaPayload.records : [];
 const structuredEventPayload = structuredEventWindow.HALIFAX_STRUCTURED_EVENTS ?? null;
 const structuredEvents = Array.isArray(structuredEventPayload?.events) ? structuredEventPayload.events : [];
+const verifiedSourcePayload = verifiedSourceWindow.HALIFAX_VERIFIED_SOURCE_PAGES ?? null;
+const verifiedMenuSources = Array.isArray(verifiedSourcePayload?.menuSources) ? verifiedSourcePayload.menuSources : [];
+const verifiedSpecialSources = Array.isArray(verifiedSourcePayload?.specialSources) ? verifiedSourcePayload.specialSources : [];
 const ownerSubmissions = Array.isArray(ownerPayload?.submissions) ? ownerPayload.submissions : [];
 
 const failures = [];
@@ -168,6 +172,30 @@ if (invalidStructuredEvents.length) failures.push({ type: "invalid_structured_ev
 const staleStructuredEvents = structuredEvents.filter((event) => validDate(event.endAt || event.startAt) && Date.parse(event.endAt || event.startAt) < Date.now() - 24 * 60 * 60 * 1000);
 if (staleStructuredEvents.length) warnings.push({ type: "stale_structured_events", count: staleStructuredEvents.length, examples: staleStructuredEvents.slice(0, 20).map(({ id, restaurantId, title, startAt, endAt }) => ({ id, restaurantId, title, startAt, endAt })) });
 
+const verifiedSources = [...verifiedMenuSources, ...verifiedSpecialSources];
+const duplicateVerifiedSources = duplicateValues(verifiedSources, (record) => record.restaurantId && record.kind && record.url ? `${record.restaurantId}|${record.kind}|${record.url}` : null);
+if (duplicateVerifiedSources.length) failures.push({ type: "duplicate_verified_source_pages", values: duplicateVerifiedSources.slice(0, 25) });
+const allowedVerifiedSourceKinds = new Set(["official_page", "official_outbound_link"]);
+const allowedVerificationMethods = new Set(["reachable_official_page", "reachable_official_pdf", "linked_from_official_site"]);
+const invalidVerifiedSources = verifiedSources.filter((record) => {
+  const kind = token(record.kind);
+  return !rawIds.has(record.restaurantId) ||
+    !["menu", "specials"].includes(kind) ||
+    !String(record.label ?? "").trim() ||
+    !validHttpUrl(record.url) ||
+    !validHttpUrl(record.sourceWebsite) ||
+    !allowedVerifiedSourceKinds.has(token(record.sourceKind)) ||
+    !allowedVerificationMethods.has(token(record.verificationMethod)) ||
+    !validDate(record.observedAt) ||
+    !validDate(record.verifiedAt) ||
+    token(record.reviewState) !== "verified";
+});
+if (invalidVerifiedSources.length) failures.push({ type: "invalid_verified_source_pages", count: invalidVerifiedSources.length, examples: invalidVerifiedSources.slice(0, 20) });
+const misplacedMenuSources = verifiedMenuSources.filter((record) => token(record.kind) !== "menu");
+const misplacedSpecialSources = verifiedSpecialSources.filter((record) => token(record.kind) !== "specials");
+if (misplacedMenuSources.length || misplacedSpecialSources.length) failures.push({ type: "verified_source_wrong_collection", menu: misplacedMenuSources.slice(0, 10), specials: misplacedSpecialSources.slice(0, 10) });
+if (Number(verifiedSourcePayload?.failedPages || 0) > 0) warnings.push({ type: "verified_source_page_failures", count: Number(verifiedSourcePayload.failedPages), examples: (verifiedSourcePayload.failures || []).slice(0, 20) });
+
 const halifaxTaggedAsDartmouth = osm.filter((item) => /halifax/i.test(item.osm?.rawTags?.["addr:city"] ?? "") && item.neighborhood === "Dartmouth");
 if (halifaxTaggedAsDartmouth.length) warnings.push({ type: "halifax_city_tagged_as_dartmouth", count: halifaxTaggedAsDartmouth.length, examples: halifaxTaggedAsDartmouth.slice(0, 25).map(({ id, name, neighborhood, address, coordinates }) => ({ id, name, neighborhood, address, coordinates })) });
 
@@ -188,6 +216,9 @@ const report = {
     ownerMediaPendingReview: pendingOwnerMedia.length,
     structuredEvents: structuredEvents.length,
     staleStructuredEvents: staleStructuredEvents.length,
+    verifiedMenuSources: verifiedMenuSources.length,
+    verifiedSpecialSources: verifiedSpecialSources.length,
+    verifiedSourceFailures: Number(verifiedSourcePayload?.failedPages || 0),
     multiLocationNameGroups: multiLocationGroups.length,
     nearDuplicatePairs: nearDuplicatePairs.length,
     ambiguousCuratedMatches: ambiguousCuratedMatches.length,
@@ -213,4 +244,4 @@ if (failures.length) {
   console.error(JSON.stringify(failures, null, 2));
   process.exit(1);
 }
-console.log("Data integrity hard checks passed; unapproved media and invalid structured events remain excluded from trusted production rendering.");
+console.log("Data integrity hard checks passed; unapproved media, invalid structured events, and malformed direct source pages remain excluded from trusted production rendering.");
