@@ -1,4 +1,4 @@
-window.HALIFAX_SOCIAL_SIGNALS = {
+{
   "version": 1,
   "generatedAt": "2026-08-28T17:37:35.789Z",
   "graphVersion": "v25.0",
@@ -28,4 +28,4 @@ window.HALIFAX_SOCIAL_SIGNALS = {
       "reason": "META_IG_USER_ID_missing"
     }
   ]
-};
+}

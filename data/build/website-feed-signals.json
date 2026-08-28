@@ -1,4 +1,4 @@
-window.HALIFAX_WEBSITE_FEED_SIGNALS = {
+{
   "version": 1,
   "generatedAt": "2026-08-28T17:37:35.739Z",
   "feedsDiscovered": 166,
@@ -117,4 +117,4 @@ window.HALIFAX_WEBSITE_FEED_SIGNALS = {
       "reason": "http_404"
     }
   ]
-};
+}

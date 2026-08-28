@@ -1,4 +1,4 @@
-window.HALIFAX_FIRST_PARTY_SOURCES = {
+{
   "version": 1,
   "generatedAt": "2026-08-28T17:37:13.776Z",
   "checkedWebsites": 208,
@@ -6563,4 +6563,4 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
     "removedGenericOrInvalidProfiles": 6,
     "duplicateProfilesRemoved": 0
   }
-};
+}
