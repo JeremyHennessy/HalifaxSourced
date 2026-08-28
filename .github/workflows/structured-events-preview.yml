@@ -2,12 +2,6 @@ name: Structured Events Preview
 
 on:
   workflow_dispatch:
-  push:
-    branches:
-      - structured-events-preview-run
-    paths:
-      - .github/workflows/structured-events-preview.yml
-      - scripts/import-structured-events.mjs
 
 permissions:
   contents: read
