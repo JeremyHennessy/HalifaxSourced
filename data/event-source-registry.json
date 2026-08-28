@@ -1,5 +1,5 @@
 {
-  "version": 4,
+  "version": 5,
   "scope": {
     "cities": ["Halifax", "Dartmouth", "Bedford"],
     "regionLabels": ["Halifax Metro"],
@@ -69,6 +69,16 @@
       "url": "https://www.neptunetheatre.com/visit/ticket-packages",
       "venueName": "Neptune Theatre",
       "venueAddress": "1593 Argyle Street, Halifax, NS",
+      "priority": 96
+    },
+    {
+      "id": "alderney-landing",
+      "name": "Alderney Landing",
+      "kind": "official_venue_calendar",
+      "mode": "html_calendar",
+      "url": "https://alderneylanding.com/events/",
+      "venueName": "Alderney Landing",
+      "venueAddress": "2 Ochterloney Street, Dartmouth, NS",
       "priority": 96
     },
     {
