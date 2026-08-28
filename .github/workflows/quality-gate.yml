@@ -31,6 +31,9 @@ jobs:
             node --check "$file"
           done
 
+      - name: Build deterministic structured specials
+        run: node scripts/build-structured-specials.mjs
+
       - name: Run social platform sanitation regression
         run: node scripts/test-social-platform-registry.mjs
 
@@ -67,6 +70,7 @@ jobs:
             data/build/event-entity-resolution.json
             data/build/structured-place-facts.json
             data/build/structured-specials.json
+            data/structured-specials.js
             data/build/content-coverage-report.json
             docs/content-coverage-report.md
             data/build/content-quality-report.json
@@ -84,6 +88,9 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 22
+
+      - name: Build structured specials for browser verification
+        run: node scripts/build-structured-specials.mjs
 
       - name: Install Playwright
         run: |
