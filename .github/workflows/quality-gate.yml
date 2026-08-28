@@ -34,7 +34,7 @@ jobs:
       - name: Run social platform sanitation regression
         run: node scripts/test-social-platform-registry.mjs
 
-      - name: Run data integrity checks
+      - name: Run data integrity and deterministic regressions
         run: |
           node scripts/check-data-integrity.mjs
           node scripts/check-expanded-sources.mjs
@@ -43,9 +43,13 @@ jobs:
           node scripts/check-event-entity-resolution.mjs
           node scripts/check-structured-place-facts.mjs
           node scripts/test-hours-state.mjs
+          node scripts/check-structured-specials.mjs
+          node scripts/test-city-event-source-drift.mjs
 
-      - name: Build content coverage report
-        run: node scripts/build-content-coverage-report.mjs
+      - name: Build content coverage and quality reports
+        run: |
+          node scripts/build-content-coverage-report.mjs
+          node scripts/build-content-quality-report.mjs
 
       - name: Upload integrity reports
         if: always()
@@ -59,10 +63,14 @@ jobs:
             artifacts/city-event-integrity-report.json
             artifacts/event-entity-resolution-report.json
             artifacts/structured-place-facts-report.json
+            artifacts/structured-specials-report.json
             data/build/event-entity-resolution.json
             data/build/structured-place-facts.json
+            data/build/structured-specials.json
             data/build/content-coverage-report.json
             docs/content-coverage-report.md
+            data/build/content-quality-report.json
+            docs/content-quality-report.md
           if-no-files-found: ignore
 
   ui-verification:
@@ -94,12 +102,13 @@ jobs:
           cat /tmp/halifax-sourced-server.log
           exit 1
 
-      - name: Verify routes, map, search, and responsive UI
+      - name: Verify routes, map, search, responsive UI, and rich discovery
         env:
           APP_URL: http://127.0.0.1:5173
         run: |
           node scripts/verify-ui.mjs
           node scripts/test-explore-minimap-lifecycle.mjs
+          node scripts/test-rich-discovery.mjs
 
       - name: Upload UI screenshots
         if: always()
