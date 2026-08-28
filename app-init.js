@@ -68,8 +68,11 @@ function initMiniMap(items) {
   const map = L.map(element, { attributionControl: false, zoomControl: false, dragging: false, scrollWheelZoom: false, doubleClickZoom: false, boxZoom: false, keyboard: false, tap: false, zoomAnimation: false, fadeAnimation: false, markerZoomAnimation: false }).setView(MAP_DEFAULT, 12, { animate: false });
   L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", { maxZoom: 19 }).addTo(map);
   const renderer = L.canvas();
-  items.filter((r) => r.coordinates).slice(0, 80).forEach((restaurant) => L.circleMarker([restaurant.coordinates.lat, restaurant.coordinates.lon], { radius: 5, color: "#0b3a67", weight: 2, fillColor: "#45aaa5", fillOpacity: 0.9, renderer }).addTo(map));
+  const layer = L.layerGroup().addTo(map);
+  items.filter((r) => r.coordinates).slice(0, 80).forEach((restaurant) => L.circleMarker([restaurant.coordinates.lat, restaurant.coordinates.lon], { radius: 5, color: "#0b3a67", weight: 2, fillColor: "#45aaa5", fillOpacity: 0.9, renderer }).addTo(layer));
   state.map = map;
+  state.mapLayer = layer;
+  state.mapRenderer = renderer;
 }
 
 function initMainMap(items) {
@@ -138,6 +141,7 @@ function categoryColor(restaurant) {
 
 function destroyMap() {
   const map = state.map;
+  const layer = state.mapLayer;
   // Clear app references first so delayed input/animation callbacks cannot reuse a map
   // that is being torn down during a hash-route transition.
   state.map = null;
@@ -148,7 +152,11 @@ function destroyMap() {
   try { map.stop?.(); } catch { /* no-op */ }
   try { map.closeTooltip?.(); } catch { /* no-op */ }
   try { map.closePopup?.(); } catch { /* no-op */ }
-  try { map.eachLayer?.((layer) => layer.closeTooltip?.()); } catch { /* no-op */ }
+  try { map.eachLayer?.((mapLayer) => mapLayer.closeTooltip?.()); } catch { /* no-op */ }
+  // Remove Canvas-backed paths while their renderer is still attached. Leaflet 1.9.x
+  // can otherwise destroy the shared Canvas first and schedule a stale redraw while
+  // removing path layers later in map.remove().
+  try { layer?.clearLayers?.(); } catch { /* no-op */ }
   try { map.off?.(); } catch { /* no-op */ }
   try { map.remove(); } catch { /* stale Leaflet container; route teardown continues */ }
 }
