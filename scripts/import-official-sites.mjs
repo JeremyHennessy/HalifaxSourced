@@ -4,6 +4,7 @@ const catalog = JSON.parse(await readFile(new URL("../data/build/catalog.json", 
 const targets = (catalog.restaurants || []).filter((restaurant) => restaurant.website).slice(0, Number(process.env.OFFICIAL_SITE_LIMIT ?? 9999));
 const delayMs = Number(process.env.OFFICIAL_SITE_DELAY_MS ?? 120);
 const timeoutMs = Number(process.env.OFFICIAL_SITE_TIMEOUT_MS ?? 12000);
+const concurrency = Math.max(1, Math.min(16, Number(process.env.OFFICIAL_SITE_CONCURRENCY ?? 8)));
 const userAgent = "HalifaxSourced/0.3 (+https://github.com/JeremyHennessy/HalifaxSourced)";
 const robotsCache = new Map();
 const signalGroups = {
@@ -17,7 +18,7 @@ const signalGroups = {
   takeout: ["takeout", "take away", "pickup", "pick up", "order online", "delivery"]
 };
 const keywords = [...new Set(Object.values(signalGroups).flat())];
-const results = [];
+const results = new Array(targets.length);
 
 function sleep(ms) { return new Promise((resolve) => setTimeout(resolve, ms)); }
 function safeUrl(value, base) {
@@ -25,6 +26,9 @@ function safeUrl(value, base) {
     const url = new URL(String(value ?? ""), base);
     return ["http:", "https:"].includes(url.protocol) ? url : null;
   } catch { return null; }
+}
+function hostKey(value) {
+  try { return new URL(value).hostname.toLowerCase().replace(/^www\./, ""); } catch { return "invalid"; }
 }
 function parseRobotsGroup(text, wantedAgent) {
   const groups = [];
@@ -104,31 +108,25 @@ function linksFromHtml(html, baseUrl) {
   }
   return uniqueLinks(links).slice(0, 24);
 }
-
-for (const restaurant of targets) {
+async function scanRestaurant(item) {
+  const { restaurant, index, website } = item;
   const observedAt = new Date().toISOString();
-  const website = safeUrl(restaurant.website)?.href;
-  if (!website) {
-    results.push({ restaurantId: restaurant.id, name: restaurant.name, website: restaurant.website, error: "invalid_url", observedAt, sourceKind: "official_website", reviewState: "cross-check" });
-    continue;
-  }
   if (!(await robotsAllows(website))) {
-    results.push({ restaurantId: restaurant.id, name: restaurant.name, website, error: "robots_disallow", observedAt, sourceKind: "official_website", reviewState: "restricted" });
-    continue;
+    results[index] = { restaurantId: restaurant.id, name: restaurant.name, website, error: "robots_disallow", observedAt, sourceKind: "official_website", reviewState: "restricted" };
+    return;
   }
-  if (delayMs > 0) await sleep(delayMs);
   try {
     const response = await fetch(website, { headers: { "User-Agent": userAgent, Accept: "text/html,application/xhtml+xml" }, redirect: "follow", signal: AbortSignal.timeout(timeoutMs) });
     const contentType = response.headers.get("content-type") || "";
     if (!/html|xhtml/i.test(contentType)) {
-      results.push({ restaurantId: restaurant.id, name: restaurant.name, website, status: response.status, error: "not_html", observedAt, sourceKind: "official_website", reviewState: "cross-check" });
-      continue;
+      results[index] = { restaurantId: restaurant.id, name: restaurant.name, website, status: response.status, error: "not_html", observedAt, sourceKind: "official_website", reviewState: "cross-check" };
+      return;
     }
     const html = await response.text();
     const pageText = cleanText(html);
     const resolvedWebsite = response.url || website;
     const signalMatches = classifySignal(`${resolvedWebsite} ${pageText}`);
-    results.push({
+    results[index] = {
       restaurantId: restaurant.id,
       name: restaurant.name,
       website: resolvedWebsite,
@@ -139,19 +137,46 @@ for (const restaurant of targets) {
       candidateLinks: linksFromHtml(html, resolvedWebsite),
       sourceKind: "official_website",
       reviewState: response.ok ? "cross-check" : "needs-review"
-    });
+    };
   } catch (error) {
-    results.push({ restaurantId: restaurant.id, name: restaurant.name, website, error: error.name === "TimeoutError" ? "timeout" : error.message, observedAt, sourceKind: "official_website", reviewState: "cross-check" });
+    results[index] = { restaurantId: restaurant.id, name: restaurant.name, website, error: error.name === "TimeoutError" ? "timeout" : error.message, observedAt, sourceKind: "official_website", reviewState: "cross-check" };
   }
 }
 
+const groups = new Map();
+for (const [index, restaurant] of targets.entries()) {
+  const website = safeUrl(restaurant.website)?.href;
+  if (!website) {
+    results[index] = { restaurantId: restaurant.id, name: restaurant.name, website: restaurant.website, error: "invalid_url", observedAt: new Date().toISOString(), sourceKind: "official_website", reviewState: "cross-check" };
+    continue;
+  }
+  const host = hostKey(website);
+  if (!groups.has(host)) groups.set(host, []);
+  groups.get(host).push({ restaurant, index, website });
+}
+
+const hostGroups = [...groups.values()];
+let nextGroup = 0;
+async function worker() {
+  while (true) {
+    const current = nextGroup++;
+    if (current >= hostGroups.length) return;
+    for (const item of hostGroups[current]) {
+      await scanRestaurant(item);
+      if (delayMs > 0) await sleep(delayMs);
+    }
+  }
+}
+await Promise.all(Array.from({ length: Math.min(concurrency, hostGroups.length || 1) }, () => worker()));
+
+const finalResults = results.filter(Boolean);
 const kindCounts = Object.fromEntries(Object.keys(signalGroups).map((group) => [
   group,
-  results.filter((result) => (result.signalMatches?.[group]?.length ?? 0) > 0 || result.candidateLinks?.some((link) => (link.signalMatches?.[group]?.length ?? 0) > 0)).length
+  finalResults.filter((result) => (result.signalMatches?.[group]?.length ?? 0) > 0 || result.candidateLinks?.some((link) => (link.signalMatches?.[group]?.length ?? 0) > 0)).length
 ]));
-const payload = { generatedAt: new Date().toISOString(), count: results.length, kindCounts, signalGroups, results };
+const payload = { generatedAt: new Date().toISOString(), count: finalResults.length, kindCounts, signalGroups, results: finalResults };
 await mkdir(new URL("../data/build", import.meta.url), { recursive: true });
 await writeFile(new URL("../data/build/official-site-signals.json", import.meta.url), JSON.stringify(payload, null, 2));
 await writeFile(new URL("../data/official-site-signals.js", import.meta.url), `window.HALIFAX_OFFICIAL_SITE_SIGNALS = ${JSON.stringify(payload, null, 2)};\n`);
-console.log(`Checked ${results.length} official websites for menu/special/event/patio/opening signals.`);
+console.log(`Checked ${finalResults.length} official websites across ${hostGroups.length} host groups with concurrency=${concurrency}.`);
 console.log(`Signal counts: ${Object.entries(kindCounts).map(([key, value]) => `${key}=${value}`).join(", ")}`);
