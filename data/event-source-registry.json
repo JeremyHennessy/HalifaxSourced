@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 2,
   "scope": {
     "cities": ["Halifax", "Dartmouth", "Bedford"],
     "regionLabels": ["Halifax Metro"],
@@ -41,6 +41,7 @@
       "mode": "jsonld_index",
       "url": "https://www.scotiabank-centre.com/",
       "venueName": "Scotiabank Centre",
+      "venueAddress": "1800 Argyle Street, Halifax, NS",
       "priority": 95
     },
     {
@@ -50,6 +51,7 @@
       "mode": "jsonld_index",
       "url": "https://www.lighthouseartscentre.ca/events/",
       "venueName": "Light House Arts Centre",
+      "venueAddress": "1800 Argyle Street, Halifax, NS",
       "priority": 95
     },
     {
@@ -59,6 +61,7 @@
       "mode": "html_calendar",
       "url": "https://www.thecarleton.ca/music/upcoming-performances/",
       "venueName": "The Carleton",
+      "venueAddress": "1685 Argyle Street, Halifax, NS",
       "priority": 95
     },
     {
@@ -68,6 +71,7 @@
       "mode": "jsonld_index",
       "url": "https://www.neptunetheatre.com/",
       "venueName": "Neptune Theatre",
+      "venueAddress": "1593 Argyle Street, Halifax, NS",
       "priority": 95
     },
     {
@@ -76,6 +80,9 @@
       "kind": "official_sports_schedule",
       "mode": "embedded_event_data",
       "url": "https://www.tidesfc.ca/schedule",
+      "homeTeamTokens": ["Halifax", "HFX", "Halifax Tides"],
+      "venueName": "Wanderers Grounds",
+      "venueAddress": "5819 Sackville Street, Halifax, NS",
       "priority": 90
     },
     {
@@ -84,6 +91,9 @@
       "kind": "official_sports_schedule",
       "mode": "embedded_event_data",
       "url": "https://chl.ca/lhjmq/en/schedule/5/214/",
+      "homeTeamTokens": ["Halifax", "Mooseheads"],
+      "venueName": "Scotiabank Centre",
+      "venueAddress": "1800 Argyle Street, Halifax, NS",
       "priority": 90
     },
     {
@@ -92,6 +102,9 @@
       "kind": "official_sports_schedule",
       "mode": "embedded_event_data",
       "url": "https://www.halifaxthunderbirds.com/",
+      "homeTeamTokens": ["Halifax", "Thunderbirds"],
+      "venueName": "Scotiabank Centre",
+      "venueAddress": "1800 Argyle Street, Halifax, NS",
       "priority": 90
     },
     {
@@ -100,6 +113,9 @@
       "kind": "official_sports_schedule",
       "mode": "embedded_event_data",
       "url": "https://www.cplsoccer.com/hfxwanderersfc",
+      "homeTeamTokens": ["Halifax", "HFX Wanderers", "Wanderers"],
+      "venueName": "Wanderers Grounds",
+      "venueAddress": "5819 Sackville Street, Halifax, NS",
       "priority": 90
     }
   ]
