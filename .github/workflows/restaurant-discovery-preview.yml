@@ -4,15 +4,18 @@ on:
   workflow_dispatch:
   schedule:
     - cron: "43 10 * * *"
-  push:
+  pull_request:
     branches:
-      - restaurant-discovery-expansion-20260828
+      - main
     paths:
       - .github/workflows/restaurant-discovery-preview.yml
       - scripts/import-directory-restaurants.mjs
       - scripts/import-opening-watch.mjs
+      - scripts/resolve-place-candidates.mjs
       - scripts/build-discovered-restaurants.mjs
+      - scripts/check-place-source-resolution.mjs
       - scripts/check-restaurant-discovery.mjs
+      - data/place-source-registry.json
       - data/discovery-overrides.json
 
 permissions:
@@ -37,6 +40,12 @@ jobs:
           DOWNTOWN_DIRECTORY_DETAIL_LIMIT: 120
         run: node scripts/import-directory-restaurants.mjs
 
+      - name: Resolve directory candidates to canonical places
+        run: node scripts/resolve-place-candidates.mjs
+
+      - name: Validate place source and resolution data
+        run: node scripts/check-place-source-resolution.mjs
+
       - name: Refresh local opening watch
         env:
           OPENING_WATCH_LOOKBACK_DAYS: 180
@@ -55,10 +64,12 @@ jobs:
           path: |
             data/directory-restaurant-leads.js
             data/build/directory-restaurant-leads.json
+            data/build/place-source-resolutions.json
             data/opening-watch-leads.js
             data/build/opening-watch-leads.json
             data/discovered-restaurants.js
             data/build/discovered-restaurants.json
+            artifacts/place-source-resolution-report.json
             artifacts/restaurant-discovery-report.json
           if-no-files-found: error
           retention-days: 30
