@@ -47,7 +47,7 @@ jobs:
           fs.writeFileSync('data/build/phase-e-generation.json',JSON.stringify(record,null,2)+'\n');
           console.log(JSON.stringify(record,null,2));
           NODE
-      - name: Wire facts into runtime and permanent Quality Gate
+      - name: Wire facts into runtime
         run: |
           python3 - <<'PY'
           from pathlib import Path
@@ -60,16 +60,6 @@ jobs:
           if 'app-place-facts.js' not in text:
               text=re.sub(r'(\s*<script src="\./app-source-signals\.js[^\n]*</script>)', r'\1\n    <script src="./app-place-facts.js?v=20260828-place-facts"></script>\n    <script src="./app-place-facts-display.js?v=20260828-place-facts"></script>', text, count=1)
           p.write_text(text)
-          q=Path('.github/workflows/quality-gate.yml'); qt=q.read_text()
-          needle='          node scripts/check-event-entity-resolution.mjs\n'
-          add='          node scripts/check-structured-place-facts.mjs\n          node scripts/test-hours-state.mjs\n'
-          if 'node scripts/check-structured-place-facts.mjs' not in qt:
-              if needle not in qt: raise SystemExit('Quality Gate event-entity insertion point missing')
-              qt=qt.replace(needle, needle+add, 1)
-          artifact='            artifacts/event-entity-resolution-report.json\n'
-          if 'artifacts/structured-place-facts-report.json' not in qt:
-              qt=qt.replace(artifact, artifact+'            artifacts/structured-place-facts-report.json\n            data/build/structured-place-facts.json\n',1)
-          q.write_text(qt)
           PY
       - name: Start local app
         run: |
@@ -83,11 +73,10 @@ jobs:
         run: |
           node scripts/verify-ui.mjs
           node scripts/test-explore-minimap-lifecycle.mjs
-      - name: Commit generated facts and remove generator
+      - name: Commit generated fact outputs
         run: |
           git config user.name "Halifax Sourced Data Bot"
           git config user.email "actions@users.noreply.github.com"
-          git add index.html .github/workflows/quality-gate.yml data/structured-place-facts.js data/build/structured-place-facts.json data/build/phase-e-generation.json
-          git rm .github/workflows/phase-e-clean-generate.yml
+          git add index.html data/structured-place-facts.js data/build/structured-place-facts.json data/build/phase-e-generation.json
           git commit -m "Generate reviewed structured first-party place facts"
           git push origin HEAD:phase-e-clean/structured-place-facts-20260828
