@@ -2,9 +2,15 @@ name: Verified Source Pages Preview
 
 on:
   workflow_dispatch:
+  push:
+    branches:
+      - verified-source-pages-preview-run
+    paths:
+      - .github/workflows/verified-source-pages-preview.yml
+      - scripts/verify-official-source-pages.mjs
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   verify:
@@ -37,3 +43,15 @@ jobs:
             data/build/verified-source-pages.json
             artifacts/data-integrity-report.json
           if-no-files-found: error
+
+      - name: Commit validated preview output to isolated branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/verified-source-pages.js data/build/verified-source-pages.json
+          if git diff --cached --quiet; then
+            echo "No verified source page changes to commit."
+            exit 0
+          fi
+          git commit -m "Capture validated verified source page preview output"
+          git push origin HEAD:verified-source-pages-preview-run
