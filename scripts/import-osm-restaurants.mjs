@@ -56,18 +56,41 @@ function formatAddress(tags) {
 }
 
 function neighborhoodFor(lat, lon, tags) {
-  const suburb = tags["addr:suburb"] ?? tags["is_in:neighbourhood"];
-  const city = tags["addr:city"];
-  if (suburb) return suburb;
-  if (/dartmouth/i.test(city ?? "")) return "Dartmouth";
-  if (/bedford/i.test(city ?? "")) return "Bedford";
-  if (/halifax/i.test(city ?? "") && lon < -63.64) return "Armdale / Fairview";
-  if (lon > -63.57) return "Dartmouth";
-  if (lat < 44.622) return "South End";
+  const city = String(tags["addr:city"] ?? tags["is_in:city"] ?? "").trim();
+  const suburb = String(tags["addr:suburb"] ?? tags["is_in:neighbourhood"] ?? "").trim();
+
+  // Prefer an explicit municipality before coordinate heuristics. Halifax and Dartmouth
+  // face one another across the harbour and overlap in longitude, so a simple longitude
+  // split incorrectly classified Halifax waterfront addresses as Dartmouth.
+  if (/dartmouth/i.test(city)) return "Dartmouth";
+  if (/bedford/i.test(city)) return "Bedford";
+
+  if (/halifax/i.test(city)) {
+    if (lon < -63.64) return "Armdale / Fairview";
+    if (lat < 44.632) return "South End";
+    if (lon > -63.574 && lat >= 44.635 && lat <= 44.655) return "Waterfront";
+    if (lat >= 44.6505 && lon > -63.61) return "North End";
+    if (lat >= 44.648 && lon <= -63.595) return "West End";
+    if (lat < 44.655 && lon > -63.60) return "Downtown";
+    return "Halifax Peninsula";
+  }
+
+  // When the municipality tag is absent, keep a useful explicit neighbourhood label.
+  if (suburb) {
+    if (/woodside|portland estates|russell lake|shannon park/i.test(suburb)) return "Dartmouth";
+    if (/south end terminal/i.test(suburb)) return "South End";
+    if (/bloomfield|richmond|hydrostone/i.test(suburb)) return "North End";
+    if (/westmou?t/i.test(suburb)) return "West End";
+    return suburb;
+  }
+
+  // Conservative coordinate fallbacks for records without municipal/neighbourhood tags.
   if (lon < -63.64) return "Armdale / Fairview";
-  if (lat > 44.665) return "North End";
-  if (lat > 44.648 && lon < -63.595) return "West End";
-  if (lon > -63.595 && lat < 44.655) return "Downtown";
+  if (lat < 44.632 && lon < -63.57) return "South End";
+  if (lat > 44.665 && lon < -63.57) return "North End";
+  if (lat >= 44.648 && lon < -63.595) return "West End";
+  if (lon > -63.595 && lon < -63.565 && lat < 44.655) return "Downtown";
+  if (lon >= -63.565) return "Dartmouth";
   return "Halifax Peninsula";
 }
 
