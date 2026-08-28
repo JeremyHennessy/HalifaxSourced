@@ -13,6 +13,11 @@ function slug(value) { return String(value || "").toLowerCase().normalize("NFKD"
 function to24(hour, minute, ampm) { let h = Number(hour) % 12; if (String(ampm).toLowerCase() === "pm") h += 12; return `${String(h).padStart(2, "0")}:${String(minute || "00").padStart(2, "0")}`; }
 function parsedStamp(value) { const stamp = Date.parse(String(value || "")); return Number.isFinite(stamp) ? stamp : null; }
 function recentlyVerified(value) { const stamp = parsedStamp(value); return stamp !== null && stamp <= nowStamp + 86400000 && nowStamp - stamp <= CURRENT_VERIFY_DAYS * 86400000; }
+function numericPrice(value) {
+  if (value === null || value === undefined || String(value).trim() === "") return null;
+  const parsed = Number(value);
+  return Number.isFinite(parsed) ? parsed : null;
+}
 
 const dayNames = { mon: "monday", tue: "tuesday", wed: "wednesday", thu: "thursday", fri: "friday", sat: "saturday", sun: "sunday" };
 function parseCadence(value) {
@@ -77,7 +82,7 @@ for (const place of catalog.restaurants || []) {
     const sourceUrl = safeUrl(special.sourceUrl) || safeUrl(special.url) || (place.sources || []).map((source) => safeUrl(source.url)).find(Boolean);
     if (!sourceUrl) continue;
     const cadence = parseCadence(special.cadence || special.timing || "");
-    const verifiedAt = special.verifiedAt || special.observedAt || place.freshnessDate || null;
+    const verifiedAt = special.verifiedAt || special.observedAt || null;
     const sourceVerified = special.sourceStatus === "verified" || special.status === "verified";
     const record = {
       specialId: `${place.id}-${slug(special.title || "special")}-${records.length + 1}`,
@@ -90,7 +95,7 @@ for (const place of catalog.restaurants || []) {
       endTime: cadence.endTime,
       validFrom: special.validFrom || null,
       validTo: special.validTo || null,
-      price: Number.isFinite(Number(special.price)) ? Number(special.price) : null,
+      price: numericPrice(special.price),
       currency: special.currency || null,
       recurrence: cadence.recurrence,
       sourceUrl,
