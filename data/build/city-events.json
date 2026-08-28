@@ -1,119 +1,174 @@
 {
   "version": 1,
-  "generatedAt": "2026-08-28T18:17:43.711Z",
+  "generatedAt": "2026-08-28T18:23:38.380Z",
   "range": {
-    "start": "2026-08-28T12:17:27.726Z",
-    "end": "2027-10-02T18:17:27.726Z"
+    "start": "2026-08-28T12:23:36.265Z",
+    "end": "2027-10-02T18:23:36.265Z"
   },
-  "eventCount": 29,
+  "eventCount": 10,
   "categoryCounts": {
-    "Music": 8,
+    "Music": 7,
     "Festivals": 1,
-    "Arts": 20,
+    "Arts": 1,
     "Sports": 1,
-    "Other": 3,
-    "Comedy": 2
+    "Other": 3
   },
   "sourceStats": [
     {
       "sourceId": "tourism-ns-events",
       "sourceName": "Tourism Nova Scotia Events",
-      "mode": "tribe_api",
-      "observedAt": "2026-08-28T18:17:28.650Z",
+      "mode": "tourism_event_crawl",
+      "observedAt": "2026-08-28T18:23:36.265Z",
       "eventCount": 0,
-      "durationMs": 924,
+      "durationMs": 0,
       "status": "failed",
-      "reason": "http_404"
+      "reason": "unsupported_mode_tourism_event_crawl"
     },
     {
       "sourceId": "scotiabank-centre",
       "sourceName": "Scotiabank Centre",
-      "mode": "jsonld_index",
-      "observedAt": "2026-08-28T18:17:29.369Z",
+      "mode": "scotiabank_calendar",
+      "observedAt": "2026-08-28T18:23:36.267Z",
       "eventCount": 0,
-      "durationMs": 719,
-      "status": "ok"
+      "durationMs": 0,
+      "status": "failed",
+      "reason": "unsupported_mode_scotiabank_calendar"
+    },
+    {
+      "sourceId": "halifax-mooseheads-home",
+      "sourceName": "Halifax Mooseheads Home Schedule",
+      "mode": "mooseheads_home_table",
+      "observedAt": "2026-08-28T18:23:36.267Z",
+      "eventCount": 0,
+      "durationMs": 0,
+      "status": "failed",
+      "reason": "unsupported_mode_mooseheads_home_table"
+    },
+    {
+      "sourceId": "hfx-wanderers-home",
+      "sourceName": "HFX Wanderers 2026 Home Schedule",
+      "mode": "wanderers_article_schedule",
+      "observedAt": "2026-08-28T18:23:36.267Z",
+      "eventCount": 0,
+      "durationMs": 0,
+      "status": "failed",
+      "reason": "unsupported_mode_wanderers_article_schedule"
+    },
+    {
+      "sourceId": "halifax-tides-home",
+      "sourceName": "Halifax Tides 2026 Home Schedule",
+      "mode": "tides_article_schedule",
+      "observedAt": "2026-08-28T18:23:36.267Z",
+      "eventCount": 0,
+      "durationMs": 0,
+      "status": "failed",
+      "reason": "unsupported_mode_tides_article_schedule"
     },
     {
       "sourceId": "light-house-arts-centre",
       "sourceName": "Light House Arts Centre",
-      "mode": "jsonld_index",
-      "observedAt": "2026-08-28T18:17:31.933Z",
-      "eventCount": 19,
-      "durationMs": 2564,
-      "status": "ok"
+      "mode": "lighthouse_index",
+      "observedAt": "2026-08-28T18:23:36.267Z",
+      "eventCount": 0,
+      "durationMs": 0,
+      "status": "failed",
+      "reason": "unsupported_mode_lighthouse_index"
     },
     {
       "sourceId": "the-carleton",
       "sourceName": "The Carleton",
       "mode": "html_calendar",
-      "observedAt": "2026-08-28T18:17:32.972Z",
+      "observedAt": "2026-08-28T18:23:37.128Z",
       "eventCount": 10,
-      "durationMs": 1039,
+      "durationMs": 861,
       "status": "ok"
     },
     {
       "sourceId": "neptune-theatre",
       "sourceName": "Neptune Theatre",
-      "mode": "jsonld_index",
-      "observedAt": "2026-08-28T18:17:33.723Z",
+      "mode": "neptune_season",
+      "observedAt": "2026-08-28T18:23:37.128Z",
       "eventCount": 0,
-      "durationMs": 751,
-      "status": "ok"
-    },
-    {
-      "sourceId": "halifax-tides",
-      "sourceName": "Halifax Tides FC",
-      "mode": "embedded_event_data",
-      "observedAt": "2026-08-28T18:17:36.720Z",
-      "eventCount": 0,
-      "durationMs": 2997,
-      "status": "ok"
-    },
-    {
-      "sourceId": "halifax-mooseheads",
-      "sourceName": "Halifax Mooseheads",
-      "mode": "embedded_event_data",
-      "observedAt": "2026-08-28T18:17:37.427Z",
-      "eventCount": 0,
-      "durationMs": 707,
-      "status": "ok"
+      "durationMs": 0,
+      "status": "failed",
+      "reason": "unsupported_mode_neptune_season"
     },
     {
       "sourceId": "halifax-thunderbirds",
       "sourceName": "Halifax Thunderbirds",
       "mode": "embedded_event_data",
-      "observedAt": "2026-08-28T18:17:37.867Z",
+      "observedAt": "2026-08-28T18:23:38.359Z",
       "eventCount": 0,
-      "durationMs": 440,
-      "status": "ok"
-    },
-    {
-      "sourceId": "hfx-wanderers",
-      "sourceName": "HFX Wanderers FC",
-      "mode": "embedded_event_data",
-      "observedAt": "2026-08-28T18:17:38.227Z",
-      "eventCount": 0,
-      "durationMs": 360,
+      "durationMs": 1230,
       "status": "ok"
     },
     {
       "sourceId": "halifax-events-community",
       "sourceName": "HalifaxEvents.ca",
-      "mode": "halifaxevents_categories",
-      "observedAt": "2026-08-28T18:17:43.661Z",
+      "mode": "tribe_list_crawl",
+      "observedAt": "2026-08-28T18:23:38.359Z",
       "eventCount": 0,
-      "durationMs": 5434,
-      "status": "ok"
+      "durationMs": 0,
+      "status": "failed",
+      "reason": "unsupported_mode_tribe_list_crawl"
     }
   ],
   "failures": [
     {
       "sourceId": "tourism-ns-events",
       "sourceName": "Tourism Nova Scotia Events",
-      "url": "https://novascotia.com/explore-nova-scotia/events/",
-      "reason": "http_404",
-      "observedAt": "2026-08-28T18:17:28.650Z"
+      "url": "https://novascotia.com/explore-nova-scotia/events/?region=29",
+      "reason": "unsupported_mode_tourism_event_crawl",
+      "observedAt": "2026-08-28T18:23:36.265Z"
+    },
+    {
+      "sourceId": "scotiabank-centre",
+      "sourceName": "Scotiabank Centre",
+      "url": "https://www.scotiabank-centre.com/premium-seating/eventcalendar",
+      "reason": "unsupported_mode_scotiabank_calendar",
+      "observedAt": "2026-08-28T18:23:36.267Z"
+    },
+    {
+      "sourceId": "halifax-mooseheads-home",
+      "sourceName": "Halifax Mooseheads Home Schedule",
+      "url": "https://www.scotiabank-centre.com/events/2026-2027-halifax-mooseheads",
+      "reason": "unsupported_mode_mooseheads_home_table",
+      "observedAt": "2026-08-28T18:23:36.267Z"
+    },
+    {
+      "sourceId": "hfx-wanderers-home",
+      "sourceName": "HFX Wanderers 2026 Home Schedule",
+      "url": "https://www.cplsoccer.com/hfxwanderersfc/news/wanderers-announce-full-2026-schedule-presented-by-westjet",
+      "reason": "unsupported_mode_wanderers_article_schedule",
+      "observedAt": "2026-08-28T18:23:36.267Z"
+    },
+    {
+      "sourceId": "halifax-tides-home",
+      "sourceName": "Halifax Tides 2026 Home Schedule",
+      "url": "https://www.nsl.ca/news/from-breakout-debut-to-season-two-northern-super-league-releases-2026-schedule",
+      "reason": "unsupported_mode_tides_article_schedule",
+      "observedAt": "2026-08-28T18:23:36.267Z"
+    },
+    {
+      "sourceId": "light-house-arts-centre",
+      "sourceName": "Light House Arts Centre",
+      "url": "https://www.lighthouseartscentre.ca/events/",
+      "reason": "unsupported_mode_lighthouse_index",
+      "observedAt": "2026-08-28T18:23:36.267Z"
+    },
+    {
+      "sourceId": "neptune-theatre",
+      "sourceName": "Neptune Theatre",
+      "url": "https://www.neptunetheatre.com/visit/ticket-packages",
+      "reason": "unsupported_mode_neptune_season",
+      "observedAt": "2026-08-28T18:23:37.128Z"
+    },
+    {
+      "sourceId": "halifax-events-community",
+      "sourceName": "HalifaxEvents.ca",
+      "url": "https://halifaxevents.ca/events/list/",
+      "reason": "unsupported_mode_tribe_list_crawl",
+      "observedAt": "2026-08-28T18:23:38.359Z"
     }
   ],
   "events": [
@@ -136,7 +191,7 @@
       "sourceId": "the-carleton",
       "sourceName": "The Carleton",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-08-28T18:17:32.971Z",
+      "observedAt": "2026-08-28T18:23:37.125Z",
       "reviewState": "source-observed"
     },
     {
@@ -158,7 +213,7 @@
       "sourceId": "the-carleton",
       "sourceName": "The Carleton",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-08-28T18:17:32.971Z",
+      "observedAt": "2026-08-28T18:23:37.125Z",
       "reviewState": "source-observed"
     },
     {
@@ -181,7 +236,7 @@
       "sourceId": "the-carleton",
       "sourceName": "The Carleton",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-08-28T18:17:32.972Z",
+      "observedAt": "2026-08-28T18:23:37.126Z",
       "reviewState": "source-observed"
     },
     {
@@ -203,29 +258,7 @@
       "sourceId": "the-carleton",
       "sourceName": "The Carleton",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-08-28T18:17:32.972Z",
-      "reviewState": "source-observed"
-    },
-    {
-      "id": "light-house-arts-centre-e616c2b214832027",
-      "title": "Geordie Kieffer — Light House Arts Centre",
-      "startAt": "2026-09-04T00:00:00.000Z",
-      "endAt": "2026-09-04T03:59:00.000Z",
-      "allDay": false,
-      "venueName": "Light House Arts Centre",
-      "address": "1800 Argyle Street Suite 301\nHalifax, NS, B3J 3N8\nCanada",
-      "city": "Halifax",
-      "categories": [
-        "Arts"
-      ],
-      "price": null,
-      "ticketUrl": "https://www.lighthouseartscentre.ca/events/",
-      "eventUrl": "https://www.lighthouseartscentre.ca/events/geordie-kieffer",
-      "sourceUrl": "https://www.lighthouseartscentre.ca/events/geordie-kieffer",
-      "sourceId": "light-house-arts-centre",
-      "sourceName": "Light House Arts Centre",
-      "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-08-28T18:17:29.687Z",
+      "observedAt": "2026-08-28T18:23:37.126Z",
       "reviewState": "source-observed"
     },
     {
@@ -248,7 +281,7 @@
       "sourceId": "the-carleton",
       "sourceName": "The Carleton",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-08-28T18:17:32.972Z",
+      "observedAt": "2026-08-28T18:23:37.126Z",
       "reviewState": "source-observed"
     },
     {
@@ -270,7 +303,7 @@
       "sourceId": "the-carleton",
       "sourceName": "The Carleton",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-08-28T18:17:32.972Z",
+      "observedAt": "2026-08-28T18:23:37.127Z",
       "reviewState": "source-observed"
     },
     {
@@ -293,7 +326,7 @@
       "sourceId": "the-carleton",
       "sourceName": "The Carleton",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-08-28T18:17:32.972Z",
+      "observedAt": "2026-08-28T18:23:37.127Z",
       "reviewState": "source-observed"
     },
     {
@@ -315,7 +348,7 @@
       "sourceId": "the-carleton",
       "sourceName": "The Carleton",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-08-28T18:17:32.972Z",
+      "observedAt": "2026-08-28T18:23:37.127Z",
       "reviewState": "source-observed"
     },
     {
@@ -337,7 +370,7 @@
       "sourceId": "the-carleton",
       "sourceName": "The Carleton",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-08-28T18:17:32.972Z",
+      "observedAt": "2026-08-28T18:23:37.128Z",
       "reviewState": "source-observed"
     },
     {
@@ -359,406 +392,7 @@
       "sourceId": "the-carleton",
       "sourceName": "The Carleton",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-08-28T18:17:32.972Z",
-      "reviewState": "source-observed"
-    },
-    {
-      "id": "light-house-arts-centre-92cc511a679f5160",
-      "title": "Tickets | Thunder From Down Under (Friday September 18 2026) | Halifax — Light House Arts Centre",
-      "startAt": "2026-09-19T00:00:00.000Z",
-      "endAt": "2026-09-19T03:59:00.000Z",
-      "allDay": false,
-      "venueName": "Light House Arts Centre",
-      "address": "1800 Argyle Street Suite 301\nHalifax, NS, B3J 3N8\nCanada",
-      "city": "Halifax",
-      "categories": [
-        "Arts"
-      ],
-      "price": null,
-      "ticketUrl": "https://www.lighthouseartscentre.ca/events/",
-      "eventUrl": "https://www.lighthouseartscentre.ca/events/thunder-from-down-under-friday",
-      "sourceUrl": "https://www.lighthouseartscentre.ca/events/thunder-from-down-under-friday",
-      "sourceId": "light-house-arts-centre",
-      "sourceName": "Light House Arts Centre",
-      "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-08-28T18:17:29.706Z",
-      "reviewState": "source-observed"
-    },
-    {
-      "id": "light-house-arts-centre-c8acae6ecf4e62cf",
-      "title": "Tickets | Thunder From Down Under (Saturday September 19 2026) | Halifax — Light House Arts Centre",
-      "startAt": "2026-09-20T00:00:00.000Z",
-      "endAt": "2026-09-20T03:59:00.000Z",
-      "allDay": false,
-      "venueName": "Light House Arts Centre",
-      "address": "1800 Argyle Street Suite 301\nHalifax, NS, B3J 3N8\nCanada",
-      "city": "Halifax",
-      "categories": [
-        "Arts"
-      ],
-      "price": null,
-      "ticketUrl": "https://www.lighthouseartscentre.ca/events/",
-      "eventUrl": "https://www.lighthouseartscentre.ca/events/thunder-from-down-under-saturday",
-      "sourceUrl": "https://www.lighthouseartscentre.ca/events/thunder-from-down-under-saturday",
-      "sourceId": "light-house-arts-centre",
-      "sourceName": "Light House Arts Centre",
-      "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-08-28T18:17:29.916Z",
-      "reviewState": "source-observed"
-    },
-    {
-      "id": "light-house-arts-centre-e22e08a3e8ffa6c3",
-      "title": "Tickets | July Talk | Halifax | September 27 2026 — Light House Arts Centre",
-      "startAt": "2026-09-28T00:00:00.000Z",
-      "endAt": "2026-09-28T03:59:00.000Z",
-      "allDay": false,
-      "venueName": "Light House Arts Centre",
-      "address": "1800 Argyle Street Suite 301\nHalifax, NS, B3J 3N8\nCanada",
-      "city": "Halifax",
-      "categories": [
-        "Arts"
-      ],
-      "price": null,
-      "ticketUrl": "https://www.lighthouseartscentre.ca/events/",
-      "eventUrl": "https://www.lighthouseartscentre.ca/events/july-talk-touch-x-tour",
-      "sourceUrl": "https://www.lighthouseartscentre.ca/events/july-talk-touch-x-tour",
-      "sourceId": "light-house-arts-centre",
-      "sourceName": "Light House Arts Centre",
-      "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-08-28T18:17:29.909Z",
-      "reviewState": "source-observed"
-    },
-    {
-      "id": "light-house-arts-centre-31c03196839b4542",
-      "title": "Josh Thomas Official Halifax Tickets | October 1 2026 | Comedy Show — Light House Arts Centre",
-      "startAt": "2026-10-01T23:00:00.000Z",
-      "endAt": "2026-10-02T03:59:00.000Z",
-      "allDay": false,
-      "venueName": "Light House Arts Centre",
-      "address": "1800 Argyle Street Suite 301\nHalifax, NS, B3J 3N8\nCanada",
-      "city": "Halifax",
-      "categories": [
-        "Arts",
-        "Comedy"
-      ],
-      "price": null,
-      "ticketUrl": "https://www.lighthouseartscentre.ca/events/",
-      "eventUrl": "https://www.lighthouseartscentre.ca/events/mrg-live-presents-josh-thomas-jiggle-jiggle",
-      "sourceUrl": "https://www.lighthouseartscentre.ca/events/mrg-live-presents-josh-thomas-jiggle-jiggle",
-      "sourceId": "light-house-arts-centre",
-      "sourceName": "Light House Arts Centre",
-      "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-08-28T18:17:29.920Z",
-      "reviewState": "source-observed"
-    },
-    {
-      "id": "light-house-arts-centre-3a0e66b18c091cd5",
-      "title": "Tickets | The Sheepdogs (Friday October 16 2026) | Halifax — Light House Arts Centre",
-      "startAt": "2026-10-17T00:00:00.000Z",
-      "endAt": "2026-10-17T03:59:00.000Z",
-      "allDay": false,
-      "venueName": "Light House Arts Centre",
-      "address": "1800 Argyle Street Suite 301\nHalifax, NS, B3J 3N8\nCanada",
-      "city": "Halifax",
-      "categories": [
-        "Arts"
-      ],
-      "price": null,
-      "ticketUrl": "https://www.lighthouseartscentre.ca/events/",
-      "eventUrl": "https://www.lighthouseartscentre.ca/events/the-sheepdogs-friday",
-      "sourceUrl": "https://www.lighthouseartscentre.ca/events/the-sheepdogs-friday",
-      "sourceId": "light-house-arts-centre",
-      "sourceName": "Light House Arts Centre",
-      "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-08-28T18:17:29.923Z",
-      "reviewState": "source-observed"
-    },
-    {
-      "id": "light-house-arts-centre-c7c2f523c32e4fd8",
-      "title": "Tickets | The Sheepdogs (Saturday October 17 2026) | Halifax — Light House Arts Centre",
-      "startAt": "2026-10-18T00:00:00.000Z",
-      "endAt": "2026-10-18T03:59:00.000Z",
-      "allDay": false,
-      "venueName": "Light House Arts Centre",
-      "address": "1800 Argyle Street Suite 301\nHalifax, NS, B3J 3N8\nCanada",
-      "city": "Halifax",
-      "categories": [
-        "Arts"
-      ],
-      "price": null,
-      "ticketUrl": "https://www.lighthouseartscentre.ca/events/",
-      "eventUrl": "https://www.lighthouseartscentre.ca/events/the-sheepdogs-saturday",
-      "sourceUrl": "https://www.lighthouseartscentre.ca/events/the-sheepdogs-saturday",
-      "sourceId": "light-house-arts-centre",
-      "sourceName": "Light House Arts Centre",
-      "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-08-28T18:17:30.047Z",
-      "reviewState": "source-observed"
-    },
-    {
-      "id": "light-house-arts-centre-676e6ad4127520b7",
-      "title": "Official Tickets | Jimmy Rankin - Song Dog: 25th Anniversary Tour | Halifax — Light House Arts Centre",
-      "startAt": "2026-10-31T00:00:00.000Z",
-      "endAt": "2026-10-31T03:59:00.000Z",
-      "allDay": false,
-      "venueName": "Light House Arts Centre",
-      "address": "1800 Argyle Street Suite 301\nHalifax, NS, B3J 3N8\nCanada",
-      "city": "Halifax",
-      "categories": [
-        "Arts"
-      ],
-      "price": null,
-      "ticketUrl": "https://www.lighthouseartscentre.ca/events/",
-      "eventUrl": "https://www.lighthouseartscentre.ca/events/jimmy-rankin-song-dog-25th-anniversary-tour",
-      "sourceUrl": "https://www.lighthouseartscentre.ca/events/jimmy-rankin-song-dog-25th-anniversary-tour",
-      "sourceId": "light-house-arts-centre",
-      "sourceName": "Light House Arts Centre",
-      "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-08-28T18:17:30.215Z",
-      "reviewState": "source-observed"
-    },
-    {
-      "id": "light-house-arts-centre-d85b861e6b284847",
-      "title": "Official Tickets | Hawksley Workman | Halifax — Light House Arts Centre",
-      "startAt": "2026-11-07T01:00:00.000Z",
-      "endAt": "2026-11-07T04:59:00.000Z",
-      "allDay": false,
-      "venueName": "Light House Arts Centre",
-      "address": "1800 Argyle Street Suite 301\nHalifax, NS, B3J 3N8\nCanada",
-      "city": "Halifax",
-      "categories": [
-        "Arts"
-      ],
-      "price": null,
-      "ticketUrl": "https://www.lighthouseartscentre.ca/events/",
-      "eventUrl": "https://www.lighthouseartscentre.ca/events/hawksley-workman",
-      "sourceUrl": "https://www.lighthouseartscentre.ca/events/hawksley-workman",
-      "sourceId": "light-house-arts-centre",
-      "sourceName": "Light House Arts Centre",
-      "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-08-28T18:17:30.061Z",
-      "reviewState": "source-observed"
-    },
-    {
-      "id": "light-house-arts-centre-33e9945fe126232f",
-      "title": "Tickets for The East Pointers in Halifax | November 20 2026 — Light House Arts Centre",
-      "startAt": "2026-11-21T01:00:00.000Z",
-      "endAt": "2026-11-21T04:59:00.000Z",
-      "allDay": false,
-      "venueName": "Light House Arts Centre",
-      "address": "1800 Argyle Street Suite 301\nHalifax, NS, B3J 3N8\nCanada",
-      "city": "Halifax",
-      "categories": [
-        "Arts"
-      ],
-      "price": null,
-      "ticketUrl": "https://www.lighthouseartscentre.ca/events/",
-      "eventUrl": "https://www.lighthouseartscentre.ca/events/the-east-pointers",
-      "sourceUrl": "https://www.lighthouseartscentre.ca/events/the-east-pointers",
-      "sourceId": "light-house-arts-centre",
-      "sourceName": "Light House Arts Centre",
-      "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-08-28T18:17:30.063Z",
-      "reviewState": "source-observed"
-    },
-    {
-      "id": "light-house-arts-centre-0920184cc9dd79b9",
-      "title": "Colin Mochrie & Asad Mecci: HYPROV: Improv Under Hypnosis — Light House Arts Centre",
-      "startAt": "2026-11-27T01:00:00.000Z",
-      "endAt": "2026-11-27T04:59:00.000Z",
-      "allDay": false,
-      "venueName": "Light House Arts Centre",
-      "address": "1800 Argyle Street Suite 301\nHalifax, NS, B3J 3N8\nCanada",
-      "city": "Halifax",
-      "categories": [
-        "Arts",
-        "Comedy"
-      ],
-      "price": null,
-      "ticketUrl": "https://www.lighthouseartscentre.ca/events/",
-      "eventUrl": "https://www.lighthouseartscentre.ca/events/colin-mochrie-asad-mecci-hyprov-improv-under-hypnosis",
-      "sourceUrl": "https://www.lighthouseartscentre.ca/events/colin-mochrie-asad-mecci-hyprov-improv-under-hypnosis",
-      "sourceId": "light-house-arts-centre",
-      "sourceName": "Light House Arts Centre",
-      "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-08-28T18:17:30.338Z",
-      "reviewState": "source-observed"
-    },
-    {
-      "id": "light-house-arts-centre-b99b2dbd32dc6778",
-      "title": "Official Tickets for Lennie Gallant | Christmas Show in Halifax — Light House Arts Centre",
-      "startAt": "2026-12-10T01:00:00.000Z",
-      "endAt": "2026-12-10T04:59:00.000Z",
-      "allDay": false,
-      "venueName": "Light House Arts Centre",
-      "address": "1800 Argyle Street Suite 301\nHalifax, NS, B3J 3N8\nCanada",
-      "city": "Halifax",
-      "categories": [
-        "Arts"
-      ],
-      "price": null,
-      "ticketUrl": "https://www.lighthouseartscentre.ca/events/",
-      "eventUrl": "https://www.lighthouseartscentre.ca/events/lennie-gallant-christmas",
-      "sourceUrl": "https://www.lighthouseartscentre.ca/events/lennie-gallant-christmas",
-      "sourceId": "light-house-arts-centre",
-      "sourceName": "Light House Arts Centre",
-      "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-08-28T18:17:30.341Z",
-      "reviewState": "source-observed"
-    },
-    {
-      "id": "light-house-arts-centre-d3eee6b768217d49",
-      "title": "Official Tickets | Matt Dusk A Very Special Christmas | Halifax — Light House Arts Centre",
-      "startAt": "2026-12-17T00:30:00.000Z",
-      "endAt": "2026-12-17T04:59:00.000Z",
-      "allDay": false,
-      "venueName": "Light House Arts Centre",
-      "address": "1800 Argyle Street Suite 301\nHalifax, NS, B3J 3N8\nCanada",
-      "city": "Halifax",
-      "categories": [
-        "Arts"
-      ],
-      "price": null,
-      "ticketUrl": "https://www.lighthouseartscentre.ca/events/",
-      "eventUrl": "https://www.lighthouseartscentre.ca/events/matt-dusk-a-very-sinatra-christmas",
-      "sourceUrl": "https://www.lighthouseartscentre.ca/events/matt-dusk-a-very-sinatra-christmas",
-      "sourceId": "light-house-arts-centre",
-      "sourceName": "Light House Arts Centre",
-      "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-08-28T18:17:30.348Z",
-      "reviewState": "source-observed"
-    },
-    {
-      "id": "light-house-arts-centre-ca84b7dd6bf5f015",
-      "title": "COUNTRY BOYS | Tribute to Alan Jackson, Garth Brooks, Brad Paisley & George Strait | CHRISTMAS SHOW — Light House Arts Centre",
-      "startAt": "2026-12-20T19:00:00.000Z",
-      "endAt": "2026-12-21T04:59:00.000Z",
-      "allDay": false,
-      "venueName": "Light House Arts Centre",
-      "address": "1800 Argyle Street Suite 301\nHalifax, NS, B3J 3N8\nCanada",
-      "city": "Halifax",
-      "categories": [
-        "Music",
-        "Arts"
-      ],
-      "price": null,
-      "ticketUrl": "https://www.lighthouseartscentre.ca/events/",
-      "eventUrl": "https://www.lighthouseartscentre.ca/events/country-boys-a-tribute-to-alan-jackson-garth-brooks-brad-paisley-george-strait-christmas-edition",
-      "sourceUrl": "https://www.lighthouseartscentre.ca/events/country-boys-a-tribute-to-alan-jackson-garth-brooks-brad-paisley-george-strait-christmas-edition",
-      "sourceId": "light-house-arts-centre",
-      "sourceName": "Light House Arts Centre",
-      "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-08-28T18:17:30.347Z",
-      "reviewState": "source-observed"
-    },
-    {
-      "id": "light-house-arts-centre-0ec9c156a5ca1dee",
-      "title": "A Saucerful of Floyd | Pink Floyd Tribute in Halifax | Tickets — Light House Arts Centre",
-      "startAt": "2027-01-09T01:00:00.000Z",
-      "endAt": "2027-01-10T04:59:00.000Z",
-      "allDay": false,
-      "venueName": "Light House Arts Centre",
-      "address": "1800 Argyle Street Suite 301\nHalifax, NS, B3J 3N8\nCanada",
-      "city": "Halifax",
-      "categories": [
-        "Arts"
-      ],
-      "price": null,
-      "ticketUrl": "https://www.lighthouseartscentre.ca/events/",
-      "eventUrl": "https://www.lighthouseartscentre.ca/events/a-saucerful-of-floyd-2-nights-of-the-best-of-pink-floyd",
-      "sourceUrl": "https://www.lighthouseartscentre.ca/events/a-saucerful-of-floyd-2-nights-of-the-best-of-pink-floyd",
-      "sourceId": "light-house-arts-centre",
-      "sourceName": "Light House Arts Centre",
-      "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-08-28T18:17:30.476Z",
-      "reviewState": "source-observed"
-    },
-    {
-      "id": "light-house-arts-centre-2db799520b52b84e",
-      "title": "Official Tickets | Hells Bells AC/DC Tribute | February 5 2027 | Halifax — Light House Arts Centre",
-      "startAt": "2027-02-06T00:30:00.000Z",
-      "endAt": "2027-02-06T04:59:00.000Z",
-      "allDay": false,
-      "venueName": "Light House Arts Centre",
-      "address": "1800 Argyle Street Suite 301\nHalifax, NS, B3J 3N8\nCanada",
-      "city": "Halifax",
-      "categories": [
-        "Arts"
-      ],
-      "price": null,
-      "ticketUrl": "https://www.lighthouseartscentre.ca/events/",
-      "eventUrl": "https://www.lighthouseartscentre.ca/events/hells-bells-the-worlds-longest-touring-tribute-to-acdc",
-      "sourceUrl": "https://www.lighthouseartscentre.ca/events/hells-bells-the-worlds-longest-touring-tribute-to-acdc",
-      "sourceId": "light-house-arts-centre",
-      "sourceName": "Light House Arts Centre",
-      "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-08-28T18:17:30.479Z",
-      "reviewState": "source-observed"
-    },
-    {
-      "id": "light-house-arts-centre-8e9ebe28a219ee96",
-      "title": "Piano Men - Billy Joel and Elton John Tribute | Live in Halifax | Tickets — Light House Arts Centre",
-      "startAt": "2027-02-20T00:30:00.000Z",
-      "endAt": "2027-02-20T04:59:00.000Z",
-      "allDay": false,
-      "venueName": "Light House Arts Centre",
-      "address": "1800 Argyle Street Suite 301\nHalifax, NS, B3J 3N8\nCanada",
-      "city": "Halifax",
-      "categories": [
-        "Arts"
-      ],
-      "price": null,
-      "ticketUrl": "https://www.lighthouseartscentre.ca/events/",
-      "eventUrl": "https://www.lighthouseartscentre.ca/events/piano-men-billy-joel-and-elton-john-tribute",
-      "sourceUrl": "https://www.lighthouseartscentre.ca/events/piano-men-billy-joel-and-elton-john-tribute",
-      "sourceId": "light-house-arts-centre",
-      "sourceName": "Light House Arts Centre",
-      "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-08-28T18:17:30.491Z",
-      "reviewState": "source-observed"
-    },
-    {
-      "id": "light-house-arts-centre-2ea041c1c35d9287",
-      "title": "Official Tickets for Solitary Man - A Tribute to Neil Diamond | Halifax NS — Light House Arts Centre",
-      "startAt": "2027-02-21T00:30:00.000Z",
-      "endAt": "2027-02-21T04:59:00.000Z",
-      "allDay": false,
-      "venueName": "Light House Arts Centre",
-      "address": "1800 Argyle Street Suite 301\nHalifax, NS, B3J 3N8\nCanada",
-      "city": "Halifax",
-      "categories": [
-        "Arts"
-      ],
-      "price": null,
-      "ticketUrl": "https://www.lighthouseartscentre.ca/events/",
-      "eventUrl": "https://www.lighthouseartscentre.ca/events/solitary-man-a-tribute-to-neil-diamond",
-      "sourceUrl": "https://www.lighthouseartscentre.ca/events/solitary-man-a-tribute-to-neil-diamond",
-      "sourceId": "light-house-arts-centre",
-      "sourceName": "Light House Arts Centre",
-      "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-08-28T18:17:30.487Z",
-      "reviewState": "source-observed"
-    },
-    {
-      "id": "light-house-arts-centre-4cbcb23d8a0dccd7",
-      "title": "Official Tickets for Blushing Brides The Original Rolling Stones Tribute | Halifax — Light House Arts Centre",
-      "startAt": "2027-03-19T00:00:00.000Z",
-      "endAt": "2027-03-19T03:59:00.000Z",
-      "allDay": false,
-      "venueName": "Light House Arts Centre",
-      "address": "1800 Argyle Street Suite 301\nHalifax, NS, B3J 3N8\nCanada",
-      "city": "Halifax",
-      "categories": [
-        "Arts"
-      ],
-      "price": null,
-      "ticketUrl": "https://www.lighthouseartscentre.ca/events/",
-      "eventUrl": "https://www.lighthouseartscentre.ca/events/the-rolling-stones-experience-featuring-the-blushing-brides",
-      "sourceUrl": "https://www.lighthouseartscentre.ca/events/the-rolling-stones-experience-featuring-the-blushing-brides",
-      "sourceId": "light-house-arts-centre",
-      "sourceName": "Light House Arts Centre",
-      "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-08-28T18:17:30.620Z",
+      "observedAt": "2026-08-28T18:23:37.128Z",
       "reviewState": "source-observed"
     }
   ]
