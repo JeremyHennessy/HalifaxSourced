@@ -1,0 +1,36 @@
+name: Data Integrity Check
+
+on:
+  push:
+    branches:
+      - qa-polish-20260828
+    paths:
+      - .github/workflows/data-integrity.yml
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  data-integrity:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Run data integrity checks
+        run: node scripts/check-data-integrity.mjs
+
+      - name: Upload integrity report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: data-integrity-report
+          path: artifacts/data-integrity-report.json
+          if-no-files-found: error
