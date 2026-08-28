@@ -31,6 +31,9 @@ jobs:
             node --check "$file"
           done
 
+      - name: Run social platform sanitation regression
+        run: node scripts/test-social-platform-registry.mjs
+
       - name: Run data integrity checks
         run: |
           node scripts/check-data-integrity.mjs
