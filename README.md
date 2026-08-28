@@ -33,6 +33,8 @@ The site is static and GitHub Pages-friendly. Hash routing is used so the discov
 
 The UI distinguishes source coverage from consumer ratings. It does not fabricate live review scores, event dates, special prices, or reservations when those fields are not present in the collected data. Event and special signals are presented as leads when they require confirmation.
 
+Restaurant imagery is separately provenance-gated. Production photos are loaded from `data/restaurant-media.js` only when the media record has an exact restaurant ID, approved review state, explicit permission confirmation, source URL, source type, and documented rights basis. Unreviewed or merely public images are not rendered. See `docs/media-provenance.md`.
+
 ## Development
 
 Serve the repository root over HTTP. For example:
@@ -45,4 +47,17 @@ Then open the local URL printed by the script.
 
 ## Data refresh
 
-Existing import scripts remain under `scripts/`. See `docs/ingestion-compliance.md` and `data/source-contract.json` before extending collection.
+Existing import scripts remain under `scripts/`. See `docs/ingestion-compliance.md`, `docs/media-provenance.md`, and `data/source-contract.json` before extending collection.
+
+Owner media workflow:
+
+```bash
+node scripts/import-owner-submissions.mjs
+# review normalized media and set reviewState=approved only when rights are verified
+node scripts/build-restaurant-media.mjs
+node scripts/check-data-integrity.mjs
+```
+
+## Deployment
+
+GitHub Pages deployment is gated behind the `Quality Gate` workflow. The gated workflow deploys the exact `main` commit SHA that passed data-integrity and Playwright UI verification.

@@ -20,6 +20,10 @@ function normalize(value) {
     .trim();
 }
 
+function token(value) {
+  return String(value ?? "").trim().toLowerCase().replace(/[^a-z0-9]+/g, "_").replace(/^_+|_+$/g, "");
+}
+
 function parseUrl(value) {
   if (!value) return null;
   try { return new URL(String(value).replaceAll("&amp;", "&")); } catch { return null; }
@@ -28,6 +32,10 @@ function parseUrl(value) {
 function validHttpUrl(value) {
   const url = parseUrl(value);
   return Boolean(url && (url.protocol === "http:" || url.protocol === "https:"));
+}
+
+function validMediaUrl(value) {
+  return validHttpUrl(value) || /^(?:\.\/)?assets\/[a-zA-Z0-9._/-]+$/.test(String(value ?? ""));
 }
 
 function distanceMeters(a, b) {
@@ -46,12 +54,17 @@ function distanceMeters(a, b) {
 const curatedWindow = await loadWindowScript(resolve("data", "restaurants.js"));
 const osmWindow = await loadWindowScript(resolve("data", "osm-restaurants.js"));
 const officialWindow = await loadWindowScript(resolve("data", "official-site-signals.js"));
+const mediaWindow = await loadWindowScript(resolve("data", "restaurant-media.js"));
+const ownerPayload = JSON.parse(await readFile(resolve("data", "build", "owner-submissions.normalized.json"), "utf8").catch(() => "{\"submissions\":[]}"));
 
 const curated = Array.isArray(curatedWindow.HALIFAX_RESTAURANTS) ? curatedWindow.HALIFAX_RESTAURANTS : [];
 const osm = Array.isArray(osmWindow.HALIFAX_OSM_RESTAURANTS) ? osmWindow.HALIFAX_OSM_RESTAURANTS : [];
 const osmMeta = osmWindow.HALIFAX_OSM_META ?? null;
 const officialPayload = officialWindow.HALIFAX_OFFICIAL_SITE_SIGNALS ?? null;
 const official = Array.isArray(officialPayload?.results) ? officialPayload.results : [];
+const mediaPayload = mediaWindow.HALIFAX_RESTAURANT_MEDIA ?? null;
+const mediaRecords = Array.isArray(mediaPayload?.records) ? mediaPayload.records : [];
+const ownerSubmissions = Array.isArray(ownerPayload?.submissions) ? ownerPayload.submissions : [];
 
 const failures = [];
 const warnings = [];
@@ -91,12 +104,7 @@ for (const item of osm) {
 }
 const multiLocationGroups = [...byNormalizedName.entries()]
   .filter(([, items]) => items.length > 1)
-  .map(([key, items]) => ({
-    key,
-    name: items[0]?.name,
-    count: items.length,
-    locations: items.slice(0, 12).map((item) => ({ id: item.id, neighborhood: item.neighborhood, address: item.address, coordinates: item.coordinates }))
-  }))
+  .map(([key, items]) => ({ key, name: items[0]?.name, count: items.length, locations: items.slice(0, 12).map((item) => ({ id: item.id, neighborhood: item.neighborhood, address: item.address, coordinates: item.coordinates })) }))
   .sort((a, b) => b.count - a.count);
 
 const nearDuplicatePairs = [];
@@ -113,12 +121,7 @@ if (nearDuplicatePairs.length) warnings.push({ type: "near_duplicate_same_name_o
 
 const curatedMatches = curated.map((item) => {
   const matches = byNormalizedName.get(normalize(item.name)) ?? [];
-  return {
-    curatedId: item.id,
-    name: item.name,
-    matchCount: matches.length,
-    matches: matches.map((match) => ({ id: match.id, neighborhood: match.neighborhood, address: match.address, coordinates: match.coordinates, website: match.website }))
-  };
+  return { curatedId: item.id, name: item.name, matchCount: matches.length, matches: matches.map((match) => ({ id: match.id, neighborhood: match.neighborhood, address: match.address, coordinates: match.coordinates, website: match.website })) };
 });
 const ambiguousCuratedMatches = curatedMatches.filter((item) => item.matchCount > 1);
 if (ambiguousCuratedMatches.length) warnings.push({ type: "ambiguous_curated_name_matches", count: ambiguousCuratedMatches.length, examples: ambiguousCuratedMatches });
@@ -142,6 +145,26 @@ for (const signal of official) {
 }
 if (ignoredCandidateLinks.length) warnings.push({ type: "non_http_candidate_links_ignored_by_ui", count: ignoredCandidateLinks.length, examples: ignoredCandidateLinks.slice(0, 25) });
 
+const allowedMediaSources = new Set(["owner", "owner_submission", "restaurant_owner", "first_party", "official_site_permitted", "licensed"]);
+const allowedMediaPermissions = new Set(["permitted", "owner_approved", "written_permission", "licensed"]);
+const duplicateMedia = duplicateValues(mediaRecords, (record) => record.restaurantId && record.url ? `${record.restaurantId}|${record.url}` : null);
+if (duplicateMedia.length) failures.push({ type: "duplicate_media_records", values: duplicateMedia.slice(0, 25) });
+
+const invalidApprovedMedia = mediaRecords.filter((record) => {
+  return token(record.reviewState) !== "approved" ||
+    !rawIds.has(record.restaurantId) ||
+    !validMediaUrl(record.url) ||
+    !validHttpUrl(record.sourceUrl) ||
+    !allowedMediaSources.has(token(record.sourceType)) ||
+    !allowedMediaPermissions.has(token(record.permission)) ||
+    record.permissionConfirmed !== true ||
+    !String(record.rightsBasis ?? "").trim();
+});
+if (invalidApprovedMedia.length) failures.push({ type: "production_media_missing_provenance", count: invalidApprovedMedia.length, examples: invalidApprovedMedia.slice(0, 20) });
+
+const pendingOwnerMedia = ownerSubmissions.flatMap((submission) => (submission.images ?? []).map((image) => ({ restaurantId: submission.restaurantId, name: submission.name, ...image }))).filter((image) => token(image.reviewState) !== "approved");
+if (pendingOwnerMedia.length) warnings.push({ type: "owner_media_pending_review", count: pendingOwnerMedia.length, examples: pendingOwnerMedia.slice(0, 20).map(({ restaurantId, name, url, sourceType, reviewState }) => ({ restaurantId, name, url, sourceType, reviewState })) });
+
 const halifaxTaggedAsDartmouth = osm.filter((item) => /halifax/i.test(item.osm?.rawTags?.["addr:city"] ?? "") && item.neighborhood === "Dartmouth");
 if (halifaxTaggedAsDartmouth.length) warnings.push({ type: "halifax_city_tagged_as_dartmouth", count: halifaxTaggedAsDartmouth.length, examples: halifaxTaggedAsDartmouth.slice(0, 25).map(({ id, name, neighborhood, address, coordinates }) => ({ id, name, neighborhood, address, coordinates })) });
 
@@ -157,6 +180,9 @@ const report = {
     officialSignals: official.length,
     officialWithValidSite,
     officialCandidateLinks,
+    productionMedia: mediaRecords.length,
+    ownerSubmissions: ownerSubmissions.length,
+    ownerMediaPendingReview: pendingOwnerMedia.length,
     multiLocationNameGroups: multiLocationGroups.length,
     nearDuplicatePairs: nearDuplicatePairs.length,
     ambiguousCuratedMatches: ambiguousCuratedMatches.length,
@@ -182,4 +208,4 @@ if (failures.length) {
   console.error(JSON.stringify(failures, null, 2));
   process.exit(1);
 }
-console.log("Data integrity hard checks passed; warnings require review but are not rendered as trusted web links.");
+console.log("Data integrity hard checks passed; unapproved media remains excluded from production rendering.");
