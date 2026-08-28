@@ -38,6 +38,10 @@ function validMediaUrl(value) {
   return validHttpUrl(value) || /^(?:\.\/)?assets\/[a-zA-Z0-9._/-]+$/.test(String(value ?? ""));
 }
 
+function validDate(value) {
+  return Number.isFinite(Date.parse(String(value ?? "")));
+}
+
 function distanceMeters(a, b) {
   const lat1 = Number(a?.lat);
   const lon1 = Number(a?.lon);
@@ -55,6 +59,7 @@ const curatedWindow = await loadWindowScript(resolve("data", "restaurants.js"));
 const osmWindow = await loadWindowScript(resolve("data", "osm-restaurants.js"));
 const officialWindow = await loadWindowScript(resolve("data", "official-site-signals.js"));
 const mediaWindow = await loadWindowScript(resolve("data", "restaurant-media.js"));
+const structuredEventWindow = await loadWindowScript(resolve("data", "structured-events.js"));
 const ownerPayload = JSON.parse(await readFile(resolve("data", "build", "owner-submissions.normalized.json"), "utf8").catch(() => "{\"submissions\":[]}"));
 
 const curated = Array.isArray(curatedWindow.HALIFAX_RESTAURANTS) ? curatedWindow.HALIFAX_RESTAURANTS : [];
@@ -64,6 +69,8 @@ const officialPayload = officialWindow.HALIFAX_OFFICIAL_SITE_SIGNALS ?? null;
 const official = Array.isArray(officialPayload?.results) ? officialPayload.results : [];
 const mediaPayload = mediaWindow.HALIFAX_RESTAURANT_MEDIA ?? null;
 const mediaRecords = Array.isArray(mediaPayload?.records) ? mediaPayload.records : [];
+const structuredEventPayload = structuredEventWindow.HALIFAX_STRUCTURED_EVENTS ?? null;
+const structuredEvents = Array.isArray(structuredEventPayload?.events) ? structuredEventPayload.events : [];
 const ownerSubmissions = Array.isArray(ownerPayload?.submissions) ? ownerPayload.submissions : [];
 
 const failures = [];
@@ -149,21 +156,17 @@ const allowedMediaSources = new Set(["owner", "owner_submission", "restaurant_ow
 const allowedMediaPermissions = new Set(["permitted", "owner_approved", "written_permission", "licensed"]);
 const duplicateMedia = duplicateValues(mediaRecords, (record) => record.restaurantId && record.url ? `${record.restaurantId}|${record.url}` : null);
 if (duplicateMedia.length) failures.push({ type: "duplicate_media_records", values: duplicateMedia.slice(0, 25) });
-
-const invalidApprovedMedia = mediaRecords.filter((record) => {
-  return token(record.reviewState) !== "approved" ||
-    !rawIds.has(record.restaurantId) ||
-    !validMediaUrl(record.url) ||
-    !validHttpUrl(record.sourceUrl) ||
-    !allowedMediaSources.has(token(record.sourceType)) ||
-    !allowedMediaPermissions.has(token(record.permission)) ||
-    record.permissionConfirmed !== true ||
-    !String(record.rightsBasis ?? "").trim();
-});
+const invalidApprovedMedia = mediaRecords.filter((record) => token(record.reviewState) !== "approved" || !rawIds.has(record.restaurantId) || !validMediaUrl(record.url) || !validHttpUrl(record.sourceUrl) || !allowedMediaSources.has(token(record.sourceType)) || !allowedMediaPermissions.has(token(record.permission)) || record.permissionConfirmed !== true || !String(record.rightsBasis ?? "").trim());
 if (invalidApprovedMedia.length) failures.push({ type: "production_media_missing_provenance", count: invalidApprovedMedia.length, examples: invalidApprovedMedia.slice(0, 20) });
-
 const pendingOwnerMedia = ownerSubmissions.flatMap((submission) => (submission.images ?? []).map((image) => ({ restaurantId: submission.restaurantId, name: submission.name, ...image }))).filter((image) => token(image.reviewState) !== "approved");
 if (pendingOwnerMedia.length) warnings.push({ type: "owner_media_pending_review", count: pendingOwnerMedia.length, examples: pendingOwnerMedia.slice(0, 20).map(({ restaurantId, name, url, sourceType, reviewState }) => ({ restaurantId, name, url, sourceType, reviewState })) });
+
+const duplicateEventIds = duplicateValues(structuredEvents, (event) => event.id);
+if (duplicateEventIds.length) failures.push({ type: "duplicate_structured_event_ids", values: duplicateEventIds.slice(0, 25) });
+const invalidStructuredEvents = structuredEvents.filter((event) => !event.id || !rawIds.has(event.restaurantId) || !String(event.title ?? "").trim() || !validDate(event.startAt) || !validDate(event.endAt || event.startAt) || !validHttpUrl(event.sourceUrl) || (event.eventUrl && !validHttpUrl(event.eventUrl)) || token(event.sourceKind) !== "official_jsonld" || token(event.reviewState) !== "verified" || token(event.confidence) !== "structured_official");
+if (invalidStructuredEvents.length) failures.push({ type: "invalid_structured_events", count: invalidStructuredEvents.length, examples: invalidStructuredEvents.slice(0, 20) });
+const staleStructuredEvents = structuredEvents.filter((event) => validDate(event.endAt || event.startAt) && Date.parse(event.endAt || event.startAt) < Date.now() - 24 * 60 * 60 * 1000);
+if (staleStructuredEvents.length) warnings.push({ type: "stale_structured_events", count: staleStructuredEvents.length, examples: staleStructuredEvents.slice(0, 20).map(({ id, restaurantId, title, startAt, endAt }) => ({ id, restaurantId, title, startAt, endAt })) });
 
 const halifaxTaggedAsDartmouth = osm.filter((item) => /halifax/i.test(item.osm?.rawTags?.["addr:city"] ?? "") && item.neighborhood === "Dartmouth");
 if (halifaxTaggedAsDartmouth.length) warnings.push({ type: "halifax_city_tagged_as_dartmouth", count: halifaxTaggedAsDartmouth.length, examples: halifaxTaggedAsDartmouth.slice(0, 25).map(({ id, name, neighborhood, address, coordinates }) => ({ id, name, neighborhood, address, coordinates })) });
@@ -183,6 +186,8 @@ const report = {
     productionMedia: mediaRecords.length,
     ownerSubmissions: ownerSubmissions.length,
     ownerMediaPendingReview: pendingOwnerMedia.length,
+    structuredEvents: structuredEvents.length,
+    staleStructuredEvents: staleStructuredEvents.length,
     multiLocationNameGroups: multiLocationGroups.length,
     nearDuplicatePairs: nearDuplicatePairs.length,
     ambiguousCuratedMatches: ambiguousCuratedMatches.length,
@@ -208,4 +213,4 @@ if (failures.length) {
   console.error(JSON.stringify(failures, null, 2));
   process.exit(1);
 }
-console.log("Data integrity hard checks passed; unapproved media remains excluded from production rendering.");
+console.log("Data integrity hard checks passed; unapproved media and invalid structured events remain excluded from trusted production rendering.");
