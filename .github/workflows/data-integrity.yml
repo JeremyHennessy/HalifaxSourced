@@ -6,6 +6,10 @@ on:
       - qa-polish-20260828
     paths:
       - .github/workflows/data-integrity.yml
+      - scripts/check-data-integrity.mjs
+      - data/restaurants.js
+      - data/osm-restaurants.js
+      - data/official-site-signals.js
   workflow_dispatch:
 
 permissions:
