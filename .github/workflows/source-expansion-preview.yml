@@ -13,6 +13,7 @@ on:
       - scripts/verify-official-source-pages.mjs
       - scripts/import-structured-events.mjs
       - scripts/discover-first-party-sources.mjs
+      - scripts/sanitize-first-party-sources.mjs
       - scripts/import-first-party-feed-signals.mjs
       - scripts/import-meta-social.mjs
       - scripts/check-expanded-sources.mjs
@@ -38,6 +39,7 @@ jobs:
           OFFICIAL_SITE_LIMIT: 9999
           OFFICIAL_SITE_DELAY_MS: 120
           OFFICIAL_SITE_TIMEOUT_MS: 12000
+          OFFICIAL_SITE_CONCURRENCY: 8
         run: node scripts/import-official-sites.mjs
 
       - name: Verify direct menu and specials pages
@@ -56,13 +58,20 @@ jobs:
       - name: Discover first-party feeds and social profiles
         env:
           FIRST_PARTY_SOURCE_LIMIT: 9999
-          FIRST_PARTY_SOURCE_DELAY_MS: 180
+          FIRST_PARTY_SOURCE_DELAY_MS: 150
+          FIRST_PARTY_SOURCE_TIMEOUT_MS: 10000
+          FIRST_PARTY_SOURCE_CONCURRENCY: 10
         run: node scripts/discover-first-party-sources.mjs
+
+      - name: Sanitize discovered profile paths
+        run: node scripts/sanitize-first-party-sources.mjs
 
       - name: Pull restaurant-owned RSS and Atom signals
         env:
-          FEED_PULL_LIMIT: 120
-          FEED_PULL_DELAY_MS: 200
+          FEED_PULL_LIMIT: 160
+          FEED_PULL_DELAY_MS: 150
+          FEED_PULL_TIMEOUT_MS: 10000
+          FEED_PULL_CONCURRENCY: 10
           FEED_LOOKBACK_DAYS: 180
         run: node scripts/import-first-party-feed-signals.mjs
 
@@ -72,10 +81,11 @@ jobs:
           META_FB_ACCESS_TOKEN: ${{ secrets.META_FB_ACCESS_TOKEN }}
           META_IG_ACCESS_TOKEN: ${{ secrets.META_IG_ACCESS_TOKEN }}
           META_IG_USER_ID: ${{ secrets.META_IG_USER_ID }}
-          SOCIAL_PROFILE_LIMIT: 100
+          SOCIAL_PROFILE_LIMIT: 150
           SOCIAL_POST_LIMIT: 15
           SOCIAL_LOOKBACK_DAYS: 60
-          SOCIAL_PULL_DELAY_MS: 250
+          SOCIAL_PULL_DELAY_MS: 200
+          SOCIAL_PULL_TIMEOUT_MS: 10000
         run: node scripts/import-meta-social.mjs
 
       - name: Validate source datasets
