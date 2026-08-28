@@ -1,39 +1,41 @@
 {
   "name": "Halifax Sourced source contract",
-  "version": 6,
-  "productIntent": "Public Halifax food and drink discovery for events, specials, happy hours, patios, openings, menus, hours, and practical source-linked details.",
+  "version": 7,
+  "productIntent": "Public Halifax food and drink discovery for events, specials, happy hours, patios, openings, menus, hours, official social profiles, and practical source-linked details.",
   "notInScope": [
     "Ownership review workflow",
     "Compliance or inspection scoring",
     "Restaurant quality rankings from restricted third-party review content",
-    "Unapproved scraping of Facebook or Instagram HTML"
+    "Unapproved scraping of Facebook, Instagram, TikTok, or other login-restricted social HTML"
   ],
   "principles": [
     "Cross-reference public and permitted sources, then keep source links attached to every lead.",
     "Store restaurant-owned facts and source links separately from third-party platform content.",
     "Keep restricted platform records as source references unless the API terms permit display and retention.",
-    "Associate social profiles to a restaurant only through restaurant-owned links, owner submissions, or another approved source with explicit provenance.",
+    "Associate a social profile as Official only through restaurant-owned links, JSON-LD sameAs, an official link hub reached from the restaurant-owned site, owner submissions, or another explicitly approved evidence chain.",
+    "Keep social networks, link hubs, reservation services, ordering services, newsletters, and ticket providers as distinct relationship types.",
     "Do not promote a shared brand feed or social handle into a location-specific signal unless the source association is uniquely tied to that restaurant.",
     "Classify social post text in memory and retain only source IDs, permalinks, timestamps, and matched discovery signals unless platform terms explicitly allow more.",
     "Treat unstructured feed/social signals as current consumer leads only while their publication timestamp is within the configured freshness window; older signals remain historical evidence.",
-    "Track when each captured fact was observed, where it came from, and whether it needs cross-checking.",
-    "Never treat missing data as a negative signal; mark it as missing, stale, restricted, or unverified.",
+    "Track when each captured fact was observed, where it came from, how it was associated, and whether it needs cross-checking.",
+    "Never treat missing data as a negative signal; mark it as missing, stale, restricted, candidate, or unverified.",
     "OpenStreetMap directory records are discovery/practical-data records, not editorial quality verification.",
     "Public registry records are establishment/address cross-references, not quality ratings or compliance scores."
   ],
   "scope": {
     "starter_area": "Halifax peninsula, Dartmouth, Bedford, Armdale, Fairview, and immediately surrounding areas",
-    "bbox": {
-      "south": 44.575,
-      "west": -63.69,
-      "north": 44.705,
-      "east": -63.505
-    },
+    "bbox": {"south": 44.575, "west": -63.69, "north": 44.705, "east": -63.505},
     "inspection_cities": ["Halifax", "Dartmouth", "Bedford"]
   },
   "consumerFreshness": {
     "unstructuredSourceSignalMaxAgeDays": 60,
     "rule": "Feed/social items older than the maximum age, items without a parseable publication timestamp, and future-dated items more than one day ahead do not set current special/event/opening/patio flags."
+  },
+  "socialVocabulary": {
+    "registry": "data/social-platform-registry.json",
+    "socialPlatforms": ["instagram", "facebook", "tiktok", "threads", "x", "youtube", "linkedin", "bluesky", "pinterest", "snapchat"],
+    "linkHubs": ["linktree", "beacons", "linkinbio", "campsite", "bento"],
+    "rule": "The registry is authoritative for platform values, host validation, generic-path sanitation, evidence bases, confidence values, review states, and status values."
   },
   "restaurant": {
     "id": "stable-slug",
@@ -42,19 +44,16 @@
     "category": "Restaurant | Cafe | Bar | Pub | Quick eats | Food court | Dessert",
     "cuisines": ["type labels"],
     "vibe": ["occasion labels"],
-    "qualityScore": "legacy field used as a source coverage score from weighted public/practical source signals",
+    "qualityScore": "legacy field used as a source coverage score from weighted public/practical source signals; not a consumer quality rating",
     "freshnessDate": "YYYY-MM-DD date when facts were last checked",
     "evidenceStatus": "verified | needs-review | restricted",
-    "sourceLayer": "curated | openstreetmap | owner_submission | licensed_api",
+    "sourceLayer": "curated | openstreetmap | local_discovery | owner_submission | licensed_api",
     "summary": "Short source-aware discovery description",
     "address": "Postal address when available from a permitted source",
     "phone": "Phone number when available from a permitted source",
     "website": "Restaurant-owned website when available from a permitted source",
     "openingHours": "Opening hours expression when available from a permitted source",
-    "coordinates": {
-      "lat": "Latitude when available from a permitted source",
-      "lon": "Longitude when available from a permitted source"
-    },
+    "coordinates": {"lat": "Latitude when available from a permitted source", "lon": "Longitude when available from a permitted source"},
     "discoverySignals": {
       "menu": "Official menu or menu keyword/link lead",
       "specials": "Happy hour, daily special, feature, promo, or offer lead",
@@ -65,24 +64,20 @@
       "reservations": "Reservation or booking lead",
       "takeout": "Takeout, pickup, online order, or delivery lead"
     },
-    "inspectionRecords": [
-      {
-        "id": "Nova Scotia public registry record id",
-        "name": "Registry establishment name",
-        "address": "Registry establishment address",
-        "city": "Registry city",
-        "detailUrl": "Government detail page URL",
-        "currentAsOf": "Registry search current-as-of timestamp"
-      }
-    ],
-    "sources": [
-      {
-        "label": "Human-readable source",
-        "type": "restaurant_site | restaurant_feed | facebook_page | instagram_professional | openstreetmap | google_places | owner_submission | event_feed | ns_food_inspection",
-        "url": "Source URL",
-        "status": "verified | verified_link | needs-review | restricted"
-      }
-    ]
+    "inspectionRecords": [{
+      "id": "Nova Scotia public registry record id",
+      "name": "Registry establishment name",
+      "address": "Registry establishment address",
+      "city": "Registry city",
+      "detailUrl": "Government detail page URL",
+      "currentAsOf": "Registry search current-as-of timestamp"
+    }],
+    "sources": [{
+      "label": "Human-readable source",
+      "type": "restaurant_site | restaurant_feed | social_profile | official_link_hub | openstreetmap | owner_submission | event_feed | ns_food_inspection",
+      "url": "Source URL",
+      "status": "verified | verified_link | needs-review | restricted"
+    }]
   },
   "officialSiteSignal": {
     "restaurantId": "Restaurant id from catalog",
@@ -93,10 +88,28 @@
   },
   "firstPartySource": {
     "restaurantId": "Restaurant id from catalog",
-    "website": "Restaurant-owned website used as association authority",
+    "website": "Restaurant-owned website used as primary association authority",
+    "resolvedUrl": "Resolved restaurant-owned website after redirects",
     "observedAt": "Fetch timestamp",
-    "socialProfiles": "Facebook and Instagram profile links found on the restaurant-owned site; generic platform paths are sanitized before publication",
-    "feeds": "RSS/Atom links discovered on the restaurant-owned site",
+    "lastVerifiedAt": "Most recent successful source verification timestamp",
+    "scannedOwnedPages": "Small robots-permitted set of owned homepage/about/contact/location pages used for evidence discovery",
+    "socialProfiles": [{
+      "platform": "Supported social platform ID from data/social-platform-registry.json",
+      "handle": "Stable profile identifier/handle",
+      "profileUrl": "Official profile URL",
+      "locationSpecific": "true when the association is explicitly location-specific",
+      "sharedBrandProfile": "false at discovery; calculated across restaurant associations in the consumer layer",
+      "discoveredFrom": "Owned page, JSON-LD page, or official link-hub URL that established the relationship",
+      "associationBasis": "linked_from_official_website | linked_from_official_location_page | jsonld_sameAs | linked_from_official_link_hub | other registry-approved basis",
+      "observedAt": "Observation timestamp",
+      "lastVerifiedAt": "Verification timestamp",
+      "reviewState": "verified_link",
+      "confidence": "authoritative | very_high | high | medium | candidate",
+      "status": "active | redirected | stale | broken | unknown"
+    }],
+    "linkHubs": "Official Linktree/Beacons/Linkin.bio/Campsite/Bento relationships kept separately from social networks; hubs are only traversed when linked from restaurant-owned evidence.",
+    "relatedLinks": "Menu/reservation/ordering/event/newsletter/ticket relationships kept separately from social profiles and link hubs.",
+    "feeds": "RSS/Atom links discovered on restaurant-owned pages",
     "sitemaps": "Same-site sitemap URLs declared in robots.txt",
     "sourceKind": "official_website_discovery",
     "reviewState": "verified"
@@ -118,7 +131,7 @@
   "socialSignal": {
     "restaurantId": "Restaurant id from catalog",
     "platform": "facebook | instagram",
-    "profileHandle": "Official profile handle discovered from the restaurant-owned website",
+    "profileHandle": "Official profile handle discovered from an eligible first-party association",
     "profileUrl": "Official profile URL",
     "postId": "Meta platform object id",
     "postUrl": "Permalink returned by Meta API",
@@ -132,7 +145,7 @@
   },
   "sharedBrandExclusion": {
     "feeds": "A feed URL linked to more than one restaurant ID is excluded from restaurant-specific signal generation.",
-    "socialProfiles": "A platform+handle linked to more than one restaurant ID is excluded from location-specific Meta post collection and from restaurant-local profile source display."
+    "socialProfiles": "A platform+handle linked to more than one restaurant ID remains a navigation relationship but is excluded from location-specific Meta post collection unless separately resolved to a location."
   },
   "special": {
     "restaurantId": "stable-slug",
@@ -154,11 +167,7 @@
     "library": "Leaflet 1.9.4",
     "tileUrl": "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
     "attribution": "OpenStreetMap contributors",
-    "constraints": [
-      "Use visible attribution.",
-      "Use browser caching and valid referrers.",
-      "Do not bulk download, prefetch, or package public OSM tiles for offline use."
-    ]
+    "constraints": ["Use visible attribution.", "Use browser caching and valid referrers.", "Do not bulk download, prefetch, or package public OSM tiles for offline use."]
   },
   "buildArtifacts": {
     "catalogJson": "data/build/catalog.json",
@@ -167,6 +176,7 @@
     "verifiedSourcePages": "data/build/verified-source-pages.json and data/verified-source-pages.js",
     "structuredEvents": "data/build/structured-events.json and data/structured-events.js",
     "firstPartySources": "data/build/first-party-sources.json and data/first-party-sources.js",
+    "socialPlatformRegistry": "data/social-platform-registry.json",
     "websiteFeedSignals": "data/build/website-feed-signals.json and data/website-feed-signals.js",
     "socialSignals": "data/build/social-signals.json and data/social-signals.js",
     "ownerSubmissions": "data/build/owner-submissions.normalized.json",

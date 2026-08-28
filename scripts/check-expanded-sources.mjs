@@ -10,6 +10,7 @@ async function loadWindowScript(path) {
 }
 
 const catalog = JSON.parse(await readFile(new URL("../data/build/catalog.json", import.meta.url), "utf8"));
+const socialRegistry = JSON.parse(await readFile(new URL("../data/social-platform-registry.json", import.meta.url), "utf8"));
 const discoveredWindow = await loadWindowScript("data/discovered-restaurants.js").catch(() => ({ HALIFAX_DISCOVERED_RESTAURANTS: [] }));
 const discoveredRestaurants = Array.isArray(discoveredWindow.HALIFAX_DISCOVERED_RESTAURANTS) ? discoveredWindow.HALIFAX_DISCOVERED_RESTAURANTS : [];
 const restaurantIds = new Set([...(catalog.restaurants || []), ...discoveredRestaurants].map((restaurant) => restaurant.id));
@@ -25,17 +26,9 @@ const socialSignals = Array.isArray(socialPayload.signals) ? socialPayload.signa
 const failures = [];
 const warnings = [];
 
-const socialHosts = {
-  facebook: /(^|\.)facebook\.com$/i,
-  instagram: /(^|\.)instagram\.com$/i,
-  x: /(^|\.)(x|twitter)\.com$/i,
-  tiktok: /(^|\.)tiktok\.com$/i,
-  youtube: /(^|\.)(youtube\.com|youtu\.be)$/i,
-  threads: /(^|\.)threads\.net$/i,
-  linkedin: /(^|\.)linkedin\.com$/i,
-  bluesky: /(^|\.)bsky\.app$/i,
-  linktree: /(^|\.)linktr\.ee$/i
-};
+const platformById = new Map((socialRegistry.platforms || []).map((platform) => [platform.id, platform]));
+const associationBases = new Set(socialRegistry.associationBases || []);
+const confidenceValues = new Set(socialRegistry.confidenceValues || []);
 
 function validUrl(value) {
   try {
@@ -54,6 +47,19 @@ function duplicates(items, keyFn) {
   }
   return [...counts.entries()].filter(([, count]) => count > 1);
 }
+function host(value) {
+  try { return new URL(String(value ?? "")).hostname.toLowerCase().replace(/^www\./, "").replace(/^m\./, ""); }
+  catch { return ""; }
+}
+function platformLinkValid(item, expectedKind) {
+  const metadata = platformById.get(String(item?.platform || "").toLowerCase());
+  if (!metadata || metadata.kind !== expectedKind || !item.handle || !validUrl(item.url || item.profileUrl)) return false;
+  const actualHost = host(item.url || item.profileUrl);
+  if (!(metadata.hosts || []).some((expected) => actualHost === expected || actualHost.endsWith(`.${expected}`))) return false;
+  if (!associationBases.has(item.associationBasis) || !confidenceValues.has(item.confidence) || item.reviewState !== "verified_link") return false;
+  if (!validDate(item.observedAt) || !validDate(item.lastVerifiedAt) || item.status !== "active") return false;
+  return true;
+}
 
 const duplicateRecords = duplicates(records, (record) => record.restaurantId);
 if (duplicateRecords.length) failures.push({ type: "duplicate_first_party_source_records", values: duplicateRecords.slice(0, 30) });
@@ -64,15 +70,17 @@ for (const record of records) {
     continue;
   }
   for (const profile of record.socialProfiles || []) {
-    let host = "";
-    try { host = new URL(profile.url).hostname; } catch {}
-    const expectedHost = socialHosts[profile.platform];
-    if (!expectedHost || !expectedHost.test(host) || !profile.handle || profile.reviewState !== "verified_link" || profile.associationBasis !== "linked_from_official_website") {
-      failures.push({ type: "invalid_social_profile_discovery", restaurantId: record.restaurantId, platform: profile.platform, url: profile.url });
+    if (!platformLinkValid(profile, "social")) {
+      failures.push({ type: "invalid_social_profile_discovery", restaurantId: record.restaurantId, platform: profile.platform, url: profile.url, associationBasis: profile.associationBasis });
+    }
+  }
+  for (const hub of record.linkHubs || []) {
+    if (!platformLinkValid(hub, "link_hub")) {
+      failures.push({ type: "invalid_link_hub_discovery", restaurantId: record.restaurantId, platform: hub.platform, url: hub.url, associationBasis: hub.associationBasis });
     }
   }
   for (const related of record.relatedLinks || []) {
-    if (!validUrl(related.url) || !["reservations", "ordering", "menu", "events", "newsletter", "tickets"].includes(related.kind) || related.reviewState !== "verified_link" || related.associationBasis !== "linked_from_official_website") {
+    if (!validUrl(related.url) || !["reservations", "ordering", "menu", "events", "newsletter", "tickets"].includes(related.kind) || related.reviewState !== "verified_link" || !associationBases.has(related.associationBasis) || !confidenceValues.has(related.confidence) || !validDate(related.observedAt) || !validDate(related.lastVerifiedAt)) {
       failures.push({ type: "invalid_related_link_discovery", restaurantId: record.restaurantId, kind: related.kind, url: related.url });
     }
   }
@@ -105,15 +113,27 @@ if ((socialPayload.sharedProfileAssociationsSkipped || 0) > 0) warnings.push({ t
 if ((feedPayload.sharedFeedUrlsSkipped || 0) > 0) warnings.push({ type: "shared_brand_feeds_excluded", count: feedPayload.sharedFeedUrlsSkipped });
 
 const platformCounts = {};
-for (const record of records) for (const profile of record.socialProfiles || []) platformCounts[profile.platform] = (platformCounts[profile.platform] || 0) + 1;
+const linkHubCounts = {};
+const associationBasisCounts = {};
+for (const record of records) {
+  for (const profile of record.socialProfiles || []) {
+    platformCounts[profile.platform] = (platformCounts[profile.platform] || 0) + 1;
+    associationBasisCounts[profile.associationBasis] = (associationBasisCounts[profile.associationBasis] || 0) + 1;
+  }
+  for (const hub of record.linkHubs || []) linkHubCounts[hub.platform] = (linkHubCounts[hub.platform] || 0) + 1;
+}
 const relatedKindCounts = {};
 for (const record of records) for (const link of record.relatedLinks || []) relatedKindCounts[link.kind] = (relatedKindCounts[link.kind] || 0) + 1;
 const report = {
   generatedAt: new Date().toISOString(),
+  socialPlatformRegistryVersion: socialRegistry.version,
   counts: {
     firstPartyRecords: records.length,
     socialProfiles: records.reduce((sum, record) => sum + (record.socialProfiles?.length || 0), 0),
     platformCounts,
+    linkHubs: records.reduce((sum, record) => sum + (record.linkHubs?.length || 0), 0),
+    linkHubCounts,
+    associationBasisCounts,
     relatedLinks: records.reduce((sum, record) => sum + (record.relatedLinks?.length || 0), 0),
     relatedKindCounts,
     websiteFeeds: records.reduce((sum, record) => sum + (record.feeds?.length || 0), 0),

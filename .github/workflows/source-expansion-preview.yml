@@ -4,15 +4,17 @@ on:
   workflow_dispatch:
   schedule:
     - cron: "17 9 * * *"
-  push:
+  pull_request:
     branches:
-      - source-expansion-social-20260828
+      - main
     paths:
       - .github/workflows/source-expansion-preview.yml
+      - data/social-platform-registry.json
       - scripts/import-official-sites.mjs
       - scripts/verify-official-source-pages.mjs
       - scripts/import-structured-events.mjs
       - scripts/discover-first-party-sources.mjs
+      - scripts/merge-first-party-history.mjs
       - scripts/sanitize-first-party-sources.mjs
       - scripts/import-first-party-feed-signals.mjs
       - scripts/import-meta-social.mjs
@@ -33,6 +35,9 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 22
+
+      - name: Preserve previously verified first-party relationships
+        run: cp data/build/first-party-sources.json /tmp/first-party-sources.previous.json
 
       - name: Refresh official website signals
         env:
@@ -55,15 +60,23 @@ jobs:
           STRUCTURED_EVENT_DELAY_MS: 400
         run: node scripts/import-structured-events.mjs
 
-      - name: Discover first-party feeds and social profiles
+      - name: Discover first-party feeds, social profiles, link hubs, and related links
         env:
           FIRST_PARTY_SOURCE_LIMIT: 9999
           FIRST_PARTY_SOURCE_DELAY_MS: 150
           FIRST_PARTY_SOURCE_TIMEOUT_MS: 10000
           FIRST_PARTY_SOURCE_CONCURRENCY: 10
+          FIRST_PARTY_OWNED_PAGE_LIMIT: 3
+          FIRST_PARTY_LINK_HUB_LIMIT: 2
         run: node scripts/discover-first-party-sources.mjs
 
-      - name: Sanitize discovered profile paths
+      - name: Carry forward recent verified relationships missed by this refresh
+        env:
+          FIRST_PARTY_PREVIOUS_PATH: /tmp/first-party-sources.previous.json
+          FIRST_PARTY_CARRY_FORWARD_MAX_DAYS: 180
+        run: node scripts/merge-first-party-history.mjs
+
+      - name: Sanitize discovered and carried profile paths
         run: node scripts/sanitize-first-party-sources.mjs
 
       - name: Pull restaurant-owned RSS and Atom signals
