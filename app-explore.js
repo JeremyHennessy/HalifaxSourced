@@ -1,5 +1,6 @@
 "use strict";
 function renderExplore() {
+  destroyMap();
   document.body.classList.remove("filter-drawer-open");
   const liveCuisines = countValues(restaurants.flatMap((restaurant) => restaurant.cuisines || []));
   const liveNeighbourhoods = countValues(restaurants.map((restaurant) => restaurant.neighborhood || "Halifax"));
