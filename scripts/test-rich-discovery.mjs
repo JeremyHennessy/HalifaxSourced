@@ -14,6 +14,14 @@ page.on("console", (message) => { if (message.type() === "error") errors.push(me
 page.on("response", (response) => { if (response.status() >= 400) responseFailures.push(`${response.status()} ${response.url()}`); });
 page.on("requestfailed", (request) => responseFailures.push(`FAILED ${request.url()} ${request.failure()?.errorText || "unknown"}`));
 await page.goto(`${url}/#home`, { waitUntil: "networkidle" });
+await page.waitForFunction(() => (
+  document.readyState === "complete" &&
+  window.__halifaxStructuredPlaceFactCount > 0 &&
+  window.__halifaxStructuredSpecialCount > 0 &&
+  typeof mergeActionLinks === "function" &&
+  typeof searchableText === "function" &&
+  typeof homeRichSections === "function"
+), null, { timeout: 10_000 });
 const state = await page.evaluate(() => {
   const structuredRestaurant = restaurants.find((restaurant) => restaurant.structuredFacts && (restaurant.structuredFeatures || []).length);
   const specialRestaurant = restaurants.find((restaurant) => (restaurant.structuredSpecials || []).length);
@@ -21,6 +29,7 @@ const state = await page.evaluate(() => {
   const featureSearch = structuredRestaurant ? searchableText(structuredRestaurant) : "";
   const featureTerm = structuredRestaurant?.structuredFeatures?.[0]?.feature?.replaceAll("_", " ") || null;
   return {
+    readyState: document.readyState,
     structuredFactCount: window.__halifaxStructuredPlaceFactCount ?? null,
     structuredHoursCount: window.__halifaxStructuredHoursCount ?? null,
     structuredSpecialCount: window.__halifaxStructuredSpecialCount ?? null,
@@ -46,11 +55,12 @@ const state = await page.evaluate(() => {
 });
 if (errors.length) throw new Error(`Rich discovery emitted browser errors:\n${errors.join("\n")}`);
 if (responseFailures.length) throw new Error(`Rich discovery resource failures:\n${responseFailures.join("\n")}\nSTATE=${JSON.stringify(state)}`);
+if (state.readyState !== "complete") throw new Error(`Application never reached complete ready state: ${JSON.stringify(state)}`);
 if (!(state.structuredFactCount > 0)) throw new Error(`Structured facts not loaded: ${JSON.stringify(state)}`);
 if (!(state.structuredSpecialCount > 0)) throw new Error(`Structured specials not loaded: ${JSON.stringify(state)}`);
 if (!state.hasStructuredRestaurant || !state.featureIndexed) throw new Error(`Structured features are not searchable: ${JSON.stringify(state)}`);
 if (!state.hasSpecialRestaurant || !state.specialIndexed) throw new Error(`Structured specials are not searchable: ${JSON.stringify(state)}`);
 if (!state.richFunctionLoaded || state.richMarkupLength < 0) throw new Error(`Rich home renderer not loaded: ${JSON.stringify(state)}`);
 console.log(JSON.stringify(state, null, 2));
-console.log("Rich discovery regression passed: structured facts, specials, expanded search, and conditional home enrichment are loaded without browser errors.");
+console.log("Rich discovery regression passed: structured facts, specials, expanded search, and conditional home enrichment are loaded after explicit application readiness without browser errors.");
 await browser.close();
