@@ -1,0 +1,94 @@
+name: Phase E Finalize Structured Place Facts
+
+on:
+  push:
+    branches:
+      - phase-e/structured-place-facts-20260828
+    paths:
+      - .github/workflows/phase-e-finalize.yml
+
+permissions:
+  contents: write
+
+jobs:
+  finalize:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: phase-e/structured-place-facts-20260828
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Install Playwright
+        run: |
+          npm install --no-save playwright@1.55.0
+          npx playwright install --with-deps chromium
+      - name: Extract structured first-party facts
+        env:
+          STRUCTURED_PLACE_FACT_LIMIT: 9999
+          STRUCTURED_PLACE_FACT_DELAY_MS: 120
+          STRUCTURED_PLACE_FACT_TIMEOUT_MS: 10000
+          STRUCTURED_PLACE_FACT_CONCURRENCY: 8
+        run: node scripts/import-structured-place-facts.mjs
+      - name: Validate structured facts and hours
+        run: |
+          node scripts/check-structured-place-facts.mjs
+          node scripts/test-hours-state.mjs
+      - name: Require observed structured data, not empty scaffolding
+        run: |
+          node - <<'NODE'
+          const fs=require('fs'); const f=JSON.parse(fs.readFileSync('data/build/structured-place-facts.json','utf8'));
+          if((f.records?.length||0)<1) throw new Error('No structured place fact records were produced');
+          if((f.counts?.hours||0)<1) throw new Error('No structured official hours were produced');
+          if((f.counts?.menus||0)<1) throw new Error('No structured menu relationships were produced');
+          if((f.counts?.reservations||0)<1) throw new Error('No structured reservation relationships were produced');
+          if((f.counts?.ordering||0)<1) throw new Error('No structured ordering relationships were produced');
+          fs.writeFileSync('data/build/phase-e-acceptance.json',JSON.stringify({acceptedAt:new Date().toISOString(),testedCommit:process.env.GITHUB_SHA,checkedPlaces:f.checkedPlaces,sourceFailures:f.failures?.length||0,...f.counts,result:'data_acceptance_passed'},null,2)+'\n');
+          console.log(JSON.stringify(f.counts,null,2));
+          NODE
+      - name: Wire structured facts into static runtime and Quality Gate
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import re
+          p=Path('index.html'); text=p.read_text()
+          if 'data/structured-place-facts.js' not in text:
+              text=re.sub(r'(\s*<script src="\./data/first-party-sources\.js[^\n]*</script>)', r'\1\n    <script src="./data/structured-place-facts.js?v=20260828-structured-facts"></script>', text, count=1)
+          if 'app-hours.js' not in text:
+              text=re.sub(r'(\s*<script src="\./app-core\.js[^\n]*</script>)', r'\n    <script src="./app-hours.js?v=20260828-hours"></script>\1', text, count=1)
+          if 'app-place-facts.js' not in text:
+              text=re.sub(r'(\s*<script src="\./app-source-signals\.js[^\n]*</script>)', r'\1\n    <script src="./app-place-facts.js?v=20260828-place-facts"></script>\n    <script src="./app-place-facts-display.js?v=20260828-place-facts"></script>', text, count=1)
+          p.write_text(text)
+          q=Path('.github/workflows/quality-gate.yml'); qt=q.read_text()
+          needle='          node scripts/check-city-events.mjs\n'
+          add='          node scripts/check-structured-place-facts.mjs\n          node scripts/test-hours-state.mjs\n'
+          if 'node scripts/check-structured-place-facts.mjs' not in qt:
+              if needle not in qt: raise SystemExit('Quality Gate insertion point missing')
+              qt=qt.replace(needle, needle+add, 1)
+              q.write_text(qt)
+          PY
+      - name: Start app
+        run: |
+          node scripts/dev-server.mjs >/tmp/halifax-sourced-server.log 2>&1 &
+          for i in {1..30}; do curl --fail --silent http://127.0.0.1:5173/ >/dev/null && exit 0; sleep 1; done
+          cat /tmp/halifax-sourced-server.log
+          exit 1
+      - name: Browser acceptance
+        env:
+          APP_URL: http://127.0.0.1:5173
+        run: |
+          node scripts/verify-ui.mjs
+          node scripts/test-explore-minimap-lifecycle.mjs
+      - name: Commit accepted facts and remove finalizer
+        run: |
+          node - <<'NODE'
+          const fs=require('fs'); const p='data/build/phase-e-acceptance.json'; const v=JSON.parse(fs.readFileSync(p,'utf8')); v.result='accepted'; v.browserAcceptance='verify-ui + mini-map lifecycle passed'; fs.writeFileSync(p,JSON.stringify(v,null,2)+'\n');
+          NODE
+          git config user.name "Halifax Sourced Data Bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add index.html .github/workflows/quality-gate.yml app-hours.js app-place-facts.js app-place-facts-display.js scripts/import-structured-place-facts.mjs scripts/check-structured-place-facts.mjs scripts/test-hours-state.mjs data/structured-place-facts.js data/build/structured-place-facts.json data/build/phase-e-acceptance.json
+          git rm .github/workflows/phase-e-finalize.yml
+          git commit -m "Promote structured first-party place facts"
+          git push origin HEAD:phase-e/structured-place-facts-20260828
