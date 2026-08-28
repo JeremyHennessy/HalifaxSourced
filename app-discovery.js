@@ -1,0 +1,50 @@
+"use strict";
+function renderSpecials() {
+  const items = restaurants.filter((restaurant) => restaurant.hasSpecial).sort((a, b) => (b.score || 0) - (a.score || 0));
+  appView.innerHTML = `
+    <section class="page-shell page-intro"><span class="eyebrow">Worth checking now</span><h1>Specials & happy-hour leads</h1><p>Official-source signals for happy hours, rotating features, promos, and special pages — with verification links instead of fabricated prices or times.</p></section>
+    <section class="page-shell specials-grid">${items.length ? items.map((restaurant, index) => specialCard(restaurant, index)).join("") : emptyPageState("No specials are currently represented in the source data.")}</section>`;
+  bindCommonActions();
+}
+
+function specialCard(restaurant, index) {
+  const link = restaurant.specialLinks[0];
+  const curated = restaurant.specials?.[0];
+  return `<article class="special-card"><div class="special-image media-${mediaTone(restaurant)}" style="--media-pos:${20 + ((index * 13) % 60)}%"><span>Special lead</span></div><div><p class="special-kicker">${escapeHtml(restaurant.neighborhood || "Halifax")}</p><h2>${escapeHtml(curated?.title || link?.label || `${restaurant.name} specials`)}</h2><p>${escapeHtml(restaurant.name)} · ${escapeHtml(primaryCuisine(restaurant))}</p><small>${curated?.cadence ? escapeHtml(curated.cadence) : "Confirm current terms, price, and timing on the official source."}</small><div class="special-actions"><a class="button tertiary" href="#restaurant/${encodeURIComponent(restaurant.id)}">View place</a>${link ? `<a class="text-link" href="${link.url}" target="_blank" rel="noreferrer">Official source ↗</a>` : ""}</div></div></article>`;
+}
+
+function renderMenus() {
+  const items = restaurants.filter((restaurant) => restaurant.hasMenu).sort((a, b) => (b.score || 0) - (a.score || 0));
+  appView.innerHTML = `
+    <section class="menus-hero"><div class="page-shell"><span class="eyebrow">Browse before you choose</span><h1>Menus across Halifax</h1><p>Find restaurants with direct website or menu-source coverage, then open the official menu for the latest dishes and prices.</p><form class="inline-search" data-menu-search><input type="search" value="${escapeHtml(state.query)}" placeholder="Search dish, cuisine, restaurant, or neighbourhood" aria-label="Search menus"/><button class="button primary">Search</button></form></div></section>
+    <section class="page-shell section-block"><div class="section-heading"><div><h2>${items.length.toLocaleString()} menu-ready places</h2><p>Direct menu links are preferred when the official-site scan found one.</p></div></div><div class="restaurant-grid">${filteredRestaurants({ feature: "menus" }).slice(0, 60).map((r, i) => restaurantCard(r, { index: i })).join("")}</div></section>`;
+  bindCommonActions();
+  document.querySelector("[data-menu-search]")?.addEventListener("submit", (event) => {
+    event.preventDefault();
+    const input = event.currentTarget.querySelector("input");
+    state.query = input.value.trim();
+    renderMenus();
+  });
+}
+
+function renderMapPage() {
+  const areas = ["All neighbourhoods", "Downtown", "North End", "South End", "Waterfront", "Dartmouth", "Bedford"];
+  const results = filteredRestaurants({ neighbourhood: state.neighbourhood });
+  appView.innerHTML = `
+    <section class="page-shell page-intro map-intro"><div><span class="eyebrow">Neighbourhood discovery</span><h1>Explore Halifax</h1><p>Browse local places by neighbourhood and move between the map and source-backed listings.</p></div><a class="button secondary" href="#explore">View as list</a></section>
+    <section class="page-shell map-page">
+      <div class="map-chips">${areas.map((area) => `<button type="button" data-map-area="${area === "All neighbourhoods" ? "all" : escapeHtml(area)}" class="${(area === "All neighbourhoods" && state.neighbourhood === "all") || area === state.neighbourhood ? "is-active" : ""}">${escapeHtml(area)}</button>`).join("")}</div>
+      <div class="map-split"><div class="map-large" id="mainMap"></div><aside class="map-results"><div class="results-toolbar"><strong>${results.length.toLocaleString()} places</strong><label>Sort <select id="mapSort"><option value="recommended">Recommended</option><option value="name">Name</option></select></label></div><div class="local-picks"><h2>Local picks</h2>${results.slice(0, 2).map((r, i) => restaurantCard(r, { compact: true, index: i })).join("")}</div><div class="map-result-list">${results.slice(0, 18).map(mapResultRow).join("")}</div></aside></div>
+    </section>`;
+  bindCommonActions();
+  document.querySelectorAll("[data-map-area]").forEach((button) => button.addEventListener("click", () => {
+    state.neighbourhood = button.dataset.mapArea;
+    renderMapPage();
+  }));
+  document.querySelector("#mapSort")?.addEventListener("change", (event) => { state.sort = event.target.value; renderMapPage(); });
+  requestAnimationFrame(() => initMainMap(results));
+}
+
+function mapResultRow(restaurant) {
+  return `<article class="map-result-row"><div class="map-thumb media-${mediaTone(restaurant)}"></div><div><strong>${escapeHtml(restaurant.name)}</strong><span>${escapeHtml(primaryCuisine(restaurant))} · ${escapeHtml(restaurant.neighborhood || "Halifax")}</span><small>${consumerTags(restaurant).slice(0, 2).map(escapeHtml).join(" · ")}</small></div><a href="#restaurant/${encodeURIComponent(restaurant.id)}">View</a><button class="row-save ${state.saved.has(restaurant.id) ? "is-saved" : ""}" data-save-id="${escapeHtml(restaurant.id)}" aria-label="Save ${escapeHtml(restaurant.name)}">${state.saved.has(restaurant.id) ? "♥" : "♡"}</button></article>`;
+}

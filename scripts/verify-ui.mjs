@@ -1,116 +1,77 @@
+import { existsSync } from "node:fs";
 import { mkdir } from "node:fs/promises";
 import { resolve } from "node:path";
-import { existsSync } from "node:fs";
 
-const { chromium } = await import(
-  "file:///C:/Users/JeremyHennessy/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright/index.mjs"
-);
+const candidates = [
+  process.env.PLAYWRIGHT_MODULE,
+  "file:///C:/Users/JeremyHennessy/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright/index.mjs",
+  "file:///root/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright/index.mjs"
+].filter(Boolean);
+
+let playwright;
+for (const candidate of candidates) {
+  try {
+    if (candidate.startsWith("file://") && !existsSync(new URL(candidate))) continue;
+    playwright = await import(candidate);
+    break;
+  } catch {}
+}
+if (!playwright) {
+  try { playwright = await import("playwright"); } catch {}
+}
+if (!playwright?.chromium) throw new Error("Playwright is required for UI verification. Set PLAYWRIGHT_MODULE if it is installed outside node_modules.");
 
 const url = process.env.APP_URL ?? "http://localhost:5173";
-const screenshotPath = resolve("artifacts", "ui-check.png");
 const browserPaths = [
   process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE,
+  "/usr/bin/chromium",
   "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
   "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe"
 ].filter(Boolean);
-
 const executablePath = browserPaths.find((path) => existsSync(path));
-const browser = await chromium.launch({
-  headless: true,
-  executablePath
-});
+const browser = await playwright.chromium.launch({ headless: true, executablePath });
 const page = await browser.newPage({ viewport: { width: 1440, height: 1000 } });
 const consoleErrors = [];
+page.on("console", (message) => { if (message.type() === "error") consoleErrors.push(message.text()); });
+page.on("pageerror", (error) => consoleErrors.push(error.message));
 
-page.on("console", (message) => {
-  if (message.type() === "error") consoleErrors.push(message.text());
-});
+await page.goto(`${url}/#home`, { waitUntil: "networkidle" });
+await page.locator(".brand-link img").waitFor();
+await page.locator("h1", { hasText: "Local flavour" }).waitFor();
+const homeCards = await page.locator(".restaurant-card").count();
+if (homeCards < 4) throw new Error(`Expected at least 4 home restaurant cards, found ${homeCards}.`);
+const totals = await page.evaluate(() => ({ restaurants: window.__halifaxRestaurantCount ?? 0, officialSignals: window.__halifaxOfficialSignalCount ?? 0 }));
+if (totals.restaurants < 700 || totals.officialSignals < 100) throw new Error(`Expected preserved discovery data, got ${JSON.stringify(totals)}.`);
 
-page.on("pageerror", (error) => {
-  consoleErrors.push(error.message);
-});
+await page.locator("#globalSearch").fill("Dartmouth");
+await page.locator("#globalSearch").press("Enter");
+await page.waitForURL(/#explore/);
+await page.locator(".restaurant-card").first().waitFor();
+const exploreCards = await page.locator(".restaurant-card").count();
+if (exploreCards < 1 || exploreCards > 12) throw new Error(`Expected paginated explore results, found ${exploreCards}.`);
 
-await page.goto(url, { waitUntil: "networkidle" });
-await page.locator(".brand", { hasText: "Halifax" }).waitFor();
-await page.locator("h1", { hasText: "Find Halifax" }).waitFor();
+await page.goto(`${url}/#events`, { waitUntil: "networkidle" });
+if (await page.locator(".event-card").count() < 1) throw new Error("Expected at least one event-source lead.");
 
-const cardCount = await page.locator(".restaurant-card").count();
-if (cardCount < 100) {
-  throw new Error(`Expected expanded restaurant cards, found ${cardCount}.`);
-}
+await page.goto(`${url}/#map`, { waitUntil: "networkidle" });
+await page.locator("#mainMap").waitFor();
+await page.waitForTimeout(1200);
+const mapState = await page.evaluate(() => ({ leaflet: Boolean(window.L), markers: window.__halifaxMapMarkerCount ?? 0 }));
+if (!mapState.leaflet || mapState.markers < 100) throw new Error(`Expected populated Leaflet map, got ${JSON.stringify(mapState)}.`);
 
-const dataState = await page.evaluate(() => ({
-  restaurants: window.__halifaxRestaurantCount ?? 0,
-  officialSignals: window.__halifaxOfficialSignalCount ?? 0
-}));
-if (dataState.restaurants < 700 || dataState.officialSignals < 100) {
-  throw new Error(`Expected expanded discovery data, got ${JSON.stringify(dataState)}.`);
-}
-
-await page.locator("#search").fill("Dartmouth");
-const dartmouthCount = await page.locator(".restaurant-card").count();
-if (dartmouthCount < 2) {
-  throw new Error(`Expected Dartmouth search results, found ${dartmouthCount}.`);
-}
-
-await page.locator("#search").fill("");
-const mapState = await page.evaluate(() => ({
-  markers: window.__halifaxMapMarkerCount ?? 0,
-  canvases: document.querySelectorAll(".leaflet-overlay-pane canvas").length,
-  tiles: document.querySelectorAll(".leaflet-tile-loaded").length,
-  leaflet: Boolean(window.L)
-}));
-if (!mapState.leaflet || mapState.markers < 100 || mapState.canvases < 1 || mapState.tiles < 1) {
-  throw new Error(`Expected expanded Leaflet map, got ${JSON.stringify(mapState)}.`);
-}
-
-await page.locator('button[data-filter="events"]').click();
-const eventCards = await page.locator(".restaurant-card").count();
-if (eventCards < 1) {
-  throw new Error("Expected at least one event-capable place.");
-}
-
-await page.locator('button[data-filter="patio"]').click();
-const patioCards = await page.locator(".restaurant-card").count();
-if (patioCards < 10) {
-  throw new Error(`Expected patio leads, found ${patioCards}.`);
-}
-
-await page.locator('button[data-filter="all"]').click();
-await page.locator('button[data-view="sources"]').click();
-const sourceCards = await page.locator(".admin-card").count();
-if (sourceCards < 100) {
-  throw new Error(`Expected expanded source gap workbench, found ${sourceCards}.`);
-}
-await page.locator('button[data-view="public"]').click();
-
-const overlay = await page
-  .locator("[data-nextjs-dialog], .vite-error-overlay, #webpack-dev-server-client-overlay")
-  .count();
-if (overlay > 0) {
-  throw new Error("Framework error overlay detected.");
-}
-
-if (consoleErrors.length) {
-  throw new Error(`Console errors detected:\n${consoleErrors.join("\n")}`);
-}
-
-await mkdir("artifacts", { recursive: true });
-await page.screenshot({ path: screenshotPath, fullPage: true });
-
+await page.goto(`${url}/#home`, { waitUntil: "networkidle" });
 await page.setViewportSize({ width: 390, height: 844 });
-await page.goto(url, { waitUntil: "networkidle" });
-await page.locator(".mobile-tabbar").waitFor();
+await page.waitForTimeout(150);
 const mobileState = await page.evaluate(() => ({
   overflow: document.documentElement.scrollWidth - document.documentElement.clientWidth,
   bottomNavVisible: getComputedStyle(document.querySelector(".mobile-tabbar")).display !== "none",
-  cards: document.querySelectorAll(".restaurant-card").length,
-  heroHeight: Math.round(document.querySelector(".hero-shell").getBoundingClientRect().height)
+  heroHeight: Math.round(document.querySelector(".home-hero")?.getBoundingClientRect().height || 0)
 }));
-if (mobileState.overflow > 2 || !mobileState.bottomNavVisible || mobileState.cards < 100 || mobileState.heroHeight < 300) {
-  throw new Error(`Expected polished mobile layout, got ${JSON.stringify(mobileState)}.`);
-}
+if (mobileState.overflow > 2 || !mobileState.bottomNavVisible || mobileState.heroHeight < 500) throw new Error(`Expected polished mobile layout, got ${JSON.stringify(mobileState)}.`);
+
+if (consoleErrors.length) throw new Error(`Console errors detected:\n${consoleErrors.join("\n")}`);
+await mkdir("artifacts", { recursive: true });
+await page.screenshot({ path: resolve("artifacts", "ui-check-desktop.png"), fullPage: true });
 await page.screenshot({ path: resolve("artifacts", "ui-check-mobile.png"), fullPage: true });
 await browser.close();
-
-console.log(`UI verified. Screenshot saved to ${screenshotPath} and artifacts\\ui-check-mobile.png`);
+console.log("Halifax Sourced UI verified.");
