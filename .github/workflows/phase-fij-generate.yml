@@ -1,4 +1,4 @@
-# Final review generation rerun after orphan special-source segregation.
+# Final settled review generation after specials orphan/freshness, rich discovery, quality, and drift gates.
 name: Phase FIJ Generate
 
 on:
