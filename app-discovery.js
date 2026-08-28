@@ -2,22 +2,22 @@
 function renderSpecials() {
   const items = restaurants.filter((restaurant) => restaurant.hasSpecial).sort((a, b) => (b.score || 0) - (a.score || 0));
   appView.innerHTML = `
-    <section class="page-shell page-intro"><span class="eyebrow">Worth checking now</span><h1>Specials & happy-hour leads</h1><p>Official-source signals for happy hours, rotating features, promos, and special pages — with verification links instead of fabricated prices or times.</p></section>
-    <section class="page-shell specials-grid">${items.length ? items.map((restaurant, index) => specialCard(restaurant, index)).join("") : emptyPageState("No specials are currently represented in the source data.")}</section>`;
+    <section class="page-shell page-intro"><span class="eyebrow">Worth checking now</span><h1>Specials & happy-hour leads</h1><p>Direct official-source pages for happy hours, rotating features, promos, and specials — with verification links instead of fabricated prices or times.</p></section>
+    <section class="page-shell specials-grid">${items.length ? items.map((restaurant, index) => specialCard(restaurant, index)).join("") : emptyPageState("No direct specials sources are currently represented in the source data.")}</section>`;
   bindCommonActions();
 }
 
 function specialCard(restaurant, index) {
   const link = restaurant.specialLinks[0];
   const curated = restaurant.specials?.[0];
-  return `<article class="special-card"><div class="special-image media-${mediaTone(restaurant)}${permittedImageClass(restaurant)}" style="--media-pos:${20 + ((index * 13) % 60)}%">${mediaImageMarkup(restaurant)}<span>Special lead</span></div><div><p class="special-kicker">${escapeHtml(restaurant.neighborhood || "Halifax")}</p><h2>${escapeHtml(curated?.title || link?.label || `${restaurant.name} specials`)}</h2><p>${escapeHtml(restaurant.name)} · ${escapeHtml(primaryCuisine(restaurant))}</p><small>${curated?.cadence ? escapeHtml(curated.cadence) : "Confirm current terms, price, and timing on the official source."}</small><div class="special-actions"><a class="button tertiary" href="#restaurant/${encodeURIComponent(restaurant.id)}">View place</a>${link ? `<a class="text-link" href="${link.url}" target="_blank" rel="noreferrer">Official source ↗</a>` : ""}</div></div></article>`;
+  return `<article class="special-card"><div class="special-image media-${mediaTone(restaurant)}${permittedImageClass(restaurant)}" style="--media-pos:${20 + ((index * 13) % 60)}%">${mediaImageMarkup(restaurant)}<span>${link?.verified ? "Verified source" : "Special lead"}</span></div><div><p class="special-kicker">${escapeHtml(restaurant.neighborhood || "Halifax")}</p><h2>${escapeHtml(curated?.title || link?.label || `${restaurant.name} specials`)}</h2><p>${escapeHtml(restaurant.name)} · ${escapeHtml(primaryCuisine(restaurant))}</p><small>${curated?.cadence ? escapeHtml(curated.cadence) : "Confirm current terms, price, and timing on the official source."}</small><div class="special-actions"><a class="button tertiary" href="#restaurant/${encodeURIComponent(restaurant.id)}">View place</a>${link ? `<a class="text-link" href="${link.url}" target="_blank" rel="noreferrer">${link.verified ? "Verified source" : "Official source"} ↗</a>` : ""}</div></div></article>`;
 }
 
 function renderMenus() {
   const items = restaurants.filter((restaurant) => restaurant.hasMenu).sort((a, b) => (b.score || 0) - (a.score || 0));
   appView.innerHTML = `
-    <section class="menus-hero"><div class="page-shell"><span class="eyebrow">Browse before you choose</span><h1>Menus across Halifax</h1><p>Find restaurants with direct website or menu-source coverage, then open the official menu for the latest dishes and prices.</p><form class="inline-search" data-menu-search><input type="search" value="${escapeHtml(state.query)}" placeholder="Search dish, cuisine, restaurant, or neighbourhood" aria-label="Search menus"/><button class="button primary">Search</button></form></div></section>
-    <section class="page-shell section-block"><div class="section-heading"><div><h2>${items.length.toLocaleString()} menu-ready places</h2><p>Direct menu links are preferred when the official-site scan found one.</p></div></div><div class="restaurant-grid">${filteredRestaurants({ feature: "menus" }).slice(0, 60).map((r, i) => restaurantCard(r, { index: i })).join("")}</div></section>`;
+    <section class="menus-hero"><div class="page-shell"><span class="eyebrow">Browse before you choose</span><h1>Menus across Halifax</h1><p>Find restaurants with direct menu-source coverage, then open the official menu for the latest dishes and prices.</p><form class="inline-search" data-menu-search><input type="search" value="${escapeHtml(state.query)}" placeholder="Search cuisine, restaurant, or neighbourhood" aria-label="Search menus"/><button class="button primary">Search</button></form></div></section>
+    <section class="page-shell section-block"><div class="section-heading"><div><h2>${items.length.toLocaleString()} places with direct menu sources</h2><p>Verified source pages are preferred; direct menu links from the official-site scan remain the fallback while verification coverage grows.</p></div></div><div class="restaurant-grid">${filteredRestaurants({ feature: "menus" }).slice(0, 60).map((r, i) => restaurantCard(r, { index: i })).join("")}</div></section>`;
   bindCommonActions();
   document.querySelector("[data-menu-search]")?.addEventListener("submit", (event) => {
     event.preventDefault();
