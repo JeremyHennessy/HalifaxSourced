@@ -1,8 +1,9 @@
 "use strict";
 const EVENT_EDITORIAL_LIMIT = 8;
+const HALIFAX_EVENT_TIME_ZONE = "America/Halifax";
 
 function activeStructuredEvents() {
-  const cutoff = Date.now() - 6 * 60 * 60 * 1000;
+  const cutoff = Date.now() - 30 * 60 * 1000;
   return structuredEvents
     .filter((event) => Number.isFinite(Date.parse(event.startAt)) && Date.parse(event.endAt || event.startAt) >= cutoff)
     .sort((a, b) => a.startAt.localeCompare(b.startAt) || a.title.localeCompare(b.title));
@@ -31,7 +32,7 @@ function renderStructuredEvents(items) {
     <section class="page-shell two-column-page">
       <div>
         <div class="chip-row"><span class="chip is-active">Upcoming</span><span class="chip">Structured dates</span><span class="chip">Official sources</span></div>
-        <div class="section-heading no-top"><div><h2>Upcoming events</h2><p>Dates come from structured Event data on restaurant-owned pages. Source links remain available for final confirmation.</p></div><span class="editorial-count">Showing ${visibleItems.length} of ${items.length} upcoming events</span></div>
+        <div class="section-heading no-top"><div><h2>Upcoming events</h2><p>Dates come from structured Event data on restaurant-owned pages. Times are shown in Halifax time. Source links remain available for final confirmation.</p></div><span class="editorial-count">Showing ${visibleItems.length} of ${items.length} upcoming events</span></div>
         <div class="event-list">${visibleItems.map(structuredEventCard).join("")}</div>
         ${items.length > visibleItems.length ? `<div class="editorial-more"><a class="button secondary" href="#explore?feature=events">Explore event-ready places</a><p>More structured events are available through restaurant discovery.</p></div>` : ""}
       </div>
@@ -72,8 +73,8 @@ function renderEventLeads() {
 function structuredEventCard(event) {
   const restaurant = restaurants.find((item) => item.id === event.restaurantId);
   const date = new Date(event.startAt);
-  const month = date.toLocaleDateString("en-CA", { month: "short" }).toUpperCase();
-  const day = date.toLocaleDateString("en-CA", { day: "numeric" });
+  const month = date.toLocaleDateString("en-CA", { month: "short", timeZone: HALIFAX_EVENT_TIME_ZONE }).toUpperCase();
+  const day = date.toLocaleDateString("en-CA", { day: "numeric", timeZone: HALIFAX_EVENT_TIME_ZONE });
   const source = safeUrl(event.eventUrl) || safeUrl(event.sourceUrl);
   return `<article class="event-card"><div class="event-date"><span>${escapeHtml(month)}</span><strong>${escapeHtml(day)}</strong></div><div class="event-thumb media-${restaurant ? mediaTone(restaurant) : "dining"}${restaurant ? permittedImageClass(restaurant) : ""}">${restaurant ? mediaImageMarkup(restaurant) : ""}</div><div class="event-copy"><div class="event-title-line"><h3>${escapeHtml(event.title)}</h3><span>${escapeHtml(String(event.eventType || "Event").replace(/Event$/, "") || "Event")}</span></div><p>${escapeHtml(event.venueName || restaurant?.name || "Halifax")}</p><small>${escapeHtml(structuredEventWhen(event))}${restaurant?.neighborhood ? ` · ${escapeHtml(restaurant.neighborhood)}` : ""}</small><div class="card-tags"><span>Structured date</span><span>Official source</span></div></div>${source ? `<a class="button tertiary" href="${escapeHtml(source)}" target="_blank" rel="noreferrer">Source ↗</a>` : restaurant ? `<a class="button tertiary" href="#restaurant/${encodeURIComponent(restaurant.id)}">View</a>` : ""}</article>`;
 }
@@ -81,27 +82,44 @@ function structuredEventCard(event) {
 function structuredEventWhen(event) {
   const start = new Date(event.startAt);
   if (Number.isNaN(start.getTime())) return "Date unavailable";
-  const date = start.toLocaleDateString("en-CA", { weekday: "short", month: "short", day: "numeric" });
+  const date = start.toLocaleDateString("en-CA", { weekday: "short", month: "short", day: "numeric", timeZone: HALIFAX_EVENT_TIME_ZONE });
   const hasTime = /T\d{2}:\d{2}/.test(String(event.startAt || ""));
   if (!hasTime) return date;
-  return `${date} · ${start.toLocaleTimeString("en-CA", { hour: "numeric", minute: "2-digit" })}`;
+  const time = start.toLocaleTimeString("en-CA", { hour: "numeric", minute: "2-digit", timeZone: HALIFAX_EVENT_TIME_ZONE, timeZoneName: "short" });
+  return `${date} · ${time}`;
 }
 
 function eventSourceCard(item) {
   const restaurant = item.restaurant;
   const link = item.credibleLinks[0];
-  const observed = restaurant.signal?.observedAt ? new Date(restaurant.signal.observedAt).toLocaleDateString("en-CA", { month: "short", day: "numeric" }) : "SOURCE";
+  const observed = restaurant.signal?.observedAt ? new Date(restaurant.signal.observedAt).toLocaleDateString("en-CA", { month: "short", day: "numeric", timeZone: HALIFAX_EVENT_TIME_ZONE }) : "SOURCE";
   const label = displayEventLabel(link?.label, item.curatedEvents[0]?.title || "Official channel contains event-related information");
   return `<article class="event-card"><div class="event-date"><span>CHECKED</span><strong>${escapeHtml(observed)}</strong></div><div class="event-thumb media-${mediaTone(restaurant)}${permittedImageClass(restaurant)}">${mediaImageMarkup(restaurant)}</div><div class="event-copy"><div class="event-title-line"><h3>${escapeHtml(restaurant.name)}</h3><span>Event lead</span></div><p>${escapeHtml(label)}</p><small>${escapeHtml(restaurant.neighborhood || "Halifax")} · Confirm current details</small><div class="card-tags"><span>Official source</span>${restaurant.hasPatio ? "<span>Patio</span>" : ""}</div></div><a class="button tertiary" href="#restaurant/${encodeURIComponent(restaurant.id)}">View</a></article>`;
 }
 
+function halifaxDateParts(value) {
+  const date = value instanceof Date ? value : new Date(value);
+  if (Number.isNaN(date.getTime())) return null;
+  const parts = new Intl.DateTimeFormat("en-CA", {
+    timeZone: HALIFAX_EVENT_TIME_ZONE,
+    year: "numeric",
+    month: "numeric",
+    day: "numeric"
+  }).formatToParts(date);
+  const get = (type) => Number(parts.find((part) => part.type === type)?.value);
+  return { year: get("year"), month: get("month"), day: get("day") };
+}
+
 function simpleCalendar(events = []) {
-  const now = new Date();
-  const month = now.toLocaleDateString("en-CA", { month: "long", year: "numeric" });
-  const first = new Date(now.getFullYear(), now.getMonth(), 1);
-  const days = new Date(now.getFullYear(), now.getMonth() + 1, 0).getDate();
-  const blanks = first.getDay();
-  const eventDays = new Set(events.map((event) => new Date(event.startAt)).filter((date) => !Number.isNaN(date.getTime()) && date.getMonth() === now.getMonth() && date.getFullYear() === now.getFullYear()).map((date) => date.getDate()));
+  const today = halifaxDateParts(new Date());
+  const year = today?.year || new Date().getUTCFullYear();
+  const month = today?.month || new Date().getUTCMonth() + 1;
+  const day = today?.day || new Date().getUTCDate();
+  const monthStart = new Date(Date.UTC(year, month - 1, 1));
+  const monthLabel = monthStart.toLocaleDateString("en-CA", { month: "long", year: "numeric", timeZone: "UTC" });
+  const blanks = monthStart.getUTCDay();
+  const days = new Date(Date.UTC(year, month, 0)).getUTCDate();
+  const eventDays = new Set(events.map((event) => halifaxDateParts(event.startAt)).filter((parts) => parts && parts.month === month && parts.year === year).map((parts) => parts.day));
   const cells = [...Array(blanks).fill(""), ...Array.from({ length: days }, (_, i) => String(i + 1))];
-  return `<div class="calendar-heading"><span>▣</span><h2>${escapeHtml(month)}</h2></div><div class="calendar-week"><span>S</span><span>M</span><span>T</span><span>W</span><span>T</span><span>F</span><span>S</span></div><div class="calendar-grid">${cells.map((day) => `<span class="${Number(day) === now.getDate() ? "today" : ""}"${eventDays.has(Number(day)) ? ' title="Structured event available"' : ""}>${eventDays.has(Number(day)) ? "•" : ""}${day}</span>`).join("")}</div><p>${events.length ? "Dots mark structured event dates in the current month." : "Calendar dates are illustrative until structured event dates are collected."}</p>`;
+  return `<div class="calendar-heading"><span>▣</span><h2>${escapeHtml(monthLabel)}</h2></div><div class="calendar-week"><span>S</span><span>M</span><span>T</span><span>W</span><span>T</span><span>F</span><span>S</span></div><div class="calendar-grid">${cells.map((cell) => `<span class="${Number(cell) === day ? "today" : ""}"${eventDays.has(Number(cell)) ? ' title="Structured event available"' : ""}>${eventDays.has(Number(cell)) ? "•" : ""}${cell}</span>`).join("")}</div><p>${events.length ? "Dots mark structured event dates in the current month." : "Calendar dates are illustrative until structured event dates are collected."}</p>`;
 }
