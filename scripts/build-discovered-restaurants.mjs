@@ -13,7 +13,8 @@ function normalize(value) {
     .trim();
 }
 
-function sourceFor(item) {
+function legacySourceFor(item) {
+  if (!item.sourceUrl) return null;
   return {
     label: item.sourceName || "Local discovery source",
     type: item.sourceType || "local_discovery",
@@ -22,10 +23,18 @@ function sourceFor(item) {
   };
 }
 
+function sourcesFor(item) {
+  const sources = Array.isArray(item.sources) ? item.sources.filter((source) => source?.url) : [];
+  const legacy = legacySourceFor(item);
+  if (legacy && !sources.some((source) => source.url === legacy.url && source.type === legacy.type)) sources.push(legacy);
+  return sources;
+}
+
 const restaurants = approved.map((item) => {
+  const sourceUrls = new Set(sourcesFor(item).map((source) => source.url));
   const sourceMatch = openingLeads.find((lead) =>
     normalize(lead.name) === normalize(item.name) &&
-    (!item.sourceUrl || lead.sourceUrl === item.sourceUrl)
+    (!sourceUrls.size || sourceUrls.has(lead.sourceUrl))
   );
 
   return {
@@ -42,11 +51,13 @@ const restaurants = approved.map((item) => {
     address: item.address || sourceMatch?.locationHint || null,
     phone: item.phone || null,
     website: item.website || null,
+    openingHours: item.openingHours || null,
+    openingStatus: item.openingStatus || sourceMatch?.status || null,
     coordinates: item.coordinates || null,
     summary: item.summary || `New local restaurant discovery lead from ${item.sourceName || sourceMatch?.sourceName || "a local source"}.`,
-    specials: [],
-    events: [],
-    sources: [sourceFor(item)],
+    specials: Array.isArray(item.specials) ? item.specials : [],
+    events: Array.isArray(item.events) ? item.events : [],
+    sources: sourcesFor(item),
     discoveryReview: {
       approvedByOverride: true,
       sourceLeadObserved: Boolean(sourceMatch),
@@ -56,6 +67,6 @@ const restaurants = approved.map((item) => {
 });
 
 await writeFile(new URL("../data/discovered-restaurants.js", import.meta.url), `window.HALIFAX_DISCOVERED_RESTAURANTS = ${JSON.stringify(restaurants, null, 2)};\n`);
-await writeFile(new URL("../data/build/discovered-restaurants.json", import.meta.url), JSON.stringify({ version: 1, generatedAt: new Date().toISOString(), count: restaurants.length, restaurants }, null, 2));
+await writeFile(new URL("../data/build/discovered-restaurants.json", import.meta.url), JSON.stringify({ version: 2, generatedAt: new Date().toISOString(), count: restaurants.length, restaurants }, null, 2));
 console.log(`Built ${restaurants.length} approved discovered restaurant records.`);
-for (const restaurant of restaurants) console.log(`- ${restaurant.name}: source-lead-observed=${restaurant.discoveryReview.sourceLeadObserved}`);
+for (const restaurant of restaurants) console.log(`- ${restaurant.name}: sources=${restaurant.sources.length}, source-lead-observed=${restaurant.discoveryReview.sourceLeadObserved}`);
