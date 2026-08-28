@@ -1,0 +1,74 @@
+name: Social Source Preview
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - source-expansion-social-20260828
+    paths:
+      - .github/workflows/social-source-preview.yml
+      - scripts/discover-first-party-sources.mjs
+      - scripts/import-first-party-feed-signals.mjs
+      - scripts/import-meta-social.mjs
+      - scripts/check-expanded-sources.mjs
+
+permissions:
+  contents: read
+
+jobs:
+  social-refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Discover restaurant-owned feeds and social profiles
+        env:
+          FIRST_PARTY_SOURCE_LIMIT: 9999
+          FIRST_PARTY_SOURCE_DELAY_MS: 150
+          FIRST_PARTY_SOURCE_TIMEOUT_MS: 10000
+          FIRST_PARTY_SOURCE_CONCURRENCY: 10
+        run: node scripts/discover-first-party-sources.mjs
+
+      - name: Pull restaurant-owned RSS and Atom signals
+        env:
+          FEED_PULL_LIMIT: 160
+          FEED_PULL_DELAY_MS: 150
+          FEED_LOOKBACK_DAYS: 180
+        run: node scripts/import-first-party-feed-signals.mjs
+
+      - name: Pull Facebook and Instagram signals through Meta APIs
+        env:
+          META_GRAPH_VERSION: v25.0
+          META_FB_ACCESS_TOKEN: ${{ secrets.META_FB_ACCESS_TOKEN }}
+          META_IG_ACCESS_TOKEN: ${{ secrets.META_IG_ACCESS_TOKEN }}
+          META_IG_USER_ID: ${{ secrets.META_IG_USER_ID }}
+          SOCIAL_PROFILE_LIMIT: 150
+          SOCIAL_POST_LIMIT: 15
+          SOCIAL_LOOKBACK_DAYS: 60
+          SOCIAL_PULL_DELAY_MS: 200
+        run: node scripts/import-meta-social.mjs
+
+      - name: Validate expanded source data
+        run: node scripts/check-expanded-sources.mjs
+
+      - name: Upload social source preview
+        uses: actions/upload-artifact@v4
+        with:
+          name: social-source-preview
+          path: |
+            data/first-party-sources.js
+            data/build/first-party-sources.json
+            data/website-feed-signals.js
+            data/build/website-feed-signals.json
+            data/social-signals.js
+            data/build/social-signals.json
+            artifacts/expanded-source-integrity-report.json
+          if-no-files-found: error
+          retention-days: 30
