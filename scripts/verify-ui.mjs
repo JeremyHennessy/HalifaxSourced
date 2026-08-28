@@ -30,7 +30,7 @@ const browserPaths = [
 ].filter(Boolean);
 const executablePath = browserPaths.find((path) => existsSync(path));
 const browser = await playwright.chromium.launch({ headless: true, executablePath });
-const page = await browser.newPage({ viewport: { width: 1440, height: 1000 } });
+const page = await browser.newPage({ viewport: { width: 1440, height: 1000 }, acceptDownloads: true });
 const consoleErrors = [];
 page.on("console", (message) => { if (message.type() === "error") consoleErrors.push(message.text()); });
 page.on("pageerror", (error) => consoleErrors.push(error.message));
@@ -89,29 +89,91 @@ await page.goto(`${url}/${socialDetailHref}`, { waitUntil: "networkidle" });
 await page.locator("#detailLinks").waitFor();
 if (await page.locator("#detailLinks .source-link-row").count() < 1) throw new Error("Expected official social or related links on a social-linked restaurant detail page.");
 
+// Event discovery: every filter must change actual result state, not just visual controls.
 await page.goto(`${url}/#events`, { waitUntil: "networkidle" });
+await page.locator(".event-filter-panel").waitFor();
 const eventState = await page.evaluate(() => ({
   loaded: window.HALIFAX_CITY_EVENTS?.eventCount ?? 0,
   rendered: document.querySelectorAll(".event-card").length,
   filters: document.querySelectorAll("[data-event-category]").length,
   windows: document.querySelectorAll("[data-event-window]").length,
-  loadMore: Boolean(document.querySelector("[data-event-load-more]"))
+  selects: document.querySelectorAll(".event-filter-grid select").length,
+  matched: window.__halifaxEventFilterState?.matched ?? 0,
+  mobileEventsNav: Boolean(document.querySelector('.mobile-tabbar [data-route-link="events"]'))
 }));
 if (eventState.loaded > 0) {
-  if (eventState.rendered < 1 || eventState.rendered > 24) throw new Error(`Expected paginated/editorial city event cards (1-24), got ${JSON.stringify(eventState)}.`);
-  if (eventState.filters < 1 || eventState.windows < 4) throw new Error(`Expected category and date-window controls for city events, got ${JSON.stringify(eventState)}.`);
-  if (eventState.loaded > 24 && !eventState.loadMore) throw new Error(`Expected progressive event loading when more than 24 events exist, got ${JSON.stringify(eventState)}.`);
-  if (eventState.loadMore) {
-    const before = eventState.rendered;
-    await page.locator("[data-event-load-more]").click();
+  if (eventState.rendered < 1 || eventState.rendered > 24) throw new Error(`Expected paginated city event cards (1-24), got ${JSON.stringify(eventState)}.`);
+  if (eventState.filters < 2 || eventState.windows < 6 || eventState.selects < 6) throw new Error(`Expected expanded category/date/advanced event controls, got ${JSON.stringify(eventState)}.`);
+  if (!eventState.mobileEventsNav) throw new Error("Expected Events in the mobile primary navigation.");
+
+  const categoryButton = page.locator('[data-event-category]:not([data-event-category="All"])').first();
+  const category = await categoryButton.getAttribute("data-event-category");
+  if (!category) throw new Error("Expected at least one event category filter.");
+  await categoryButton.click();
+  await page.waitForFunction((value) => window.__halifaxEventFilterState?.category === value, category);
+  const categoryCards = await page.locator(".event-card").evaluateAll((nodes, value) => nodes.map((node) => String(node.dataset.eventCategories || "").split("|").includes(value)), category);
+  if (categoryCards.length && categoryCards.some((matches) => !matches)) throw new Error(`Category filter ${category} rendered a card outside that category.`);
+
+  const categoryMatched = await page.evaluate(() => window.__halifaxEventFilterState?.matched ?? 0);
+  await page.locator('[data-event-window="7"]').click();
+  await page.waitForFunction(() => window.__halifaxEventFilterState?.windowDays === "7");
+  const windowMatched = await page.evaluate(() => window.__halifaxEventFilterState?.matched ?? 0);
+  if (windowMatched > categoryMatched) throw new Error(`7-day event window expanded results unexpectedly: category=${categoryMatched}, window=${windowMatched}.`);
+
+  await page.locator("[data-event-clear]").click();
+  await page.waitForFunction(() => window.__halifaxEventFilterState?.category === "All" && window.__halifaxEventFilterState?.windowDays === "all");
+
+  const cityOptions = await page.locator("#eventCityFilter option").evaluateAll((options) => options.map((option) => option.value).filter((value) => value !== "all"));
+  if (cityOptions.length) {
+    const city = cityOptions[0];
+    await page.locator("#eventCityFilter").selectOption(city);
+    await page.waitForFunction((value) => window.__halifaxEventFilterState?.city === value, city);
+    const cityCards = await page.locator(".event-card").evaluateAll((nodes, value) => nodes.map((node) => node.dataset.eventCity === value), city);
+    if (cityCards.length && cityCards.some((matches) => !matches)) throw new Error(`Area filter ${city} rendered an event from another area.`);
+  }
+
+  await page.locator("[data-event-clear]").click();
+  await page.locator("#eventCostFilter").selectOption("paid");
+  await page.waitForFunction(() => window.__halifaxEventFilterState?.cost === "paid");
+  const paidCards = await page.locator(".event-card").evaluateAll((nodes) => nodes.map((node) => node.dataset.eventCost));
+  if (paidCards.length && paidCards.some((value) => value !== "paid")) throw new Error("Paid event filter rendered a non-paid event.");
+
+  await page.locator("[data-event-clear]").click();
+  const firstEventTitle = await page.locator(".event-card h3").first().innerText();
+  await page.locator("#eventSearchInput").fill(firstEventTitle);
+  await page.locator("[data-event-search-form]").press("Enter");
+  await page.waitForFunction((value) => window.__halifaxEventFilterState?.query === value, firstEventTitle);
+  if (await page.locator(".event-card").count() < 1) throw new Error("Exact event-title search returned no event cards.");
+
+  // The global search becomes event-aware while the Events route is active.
+  await page.locator("#globalSearch").fill(firstEventTitle);
+  await page.locator("#globalSearch").press("Enter");
+  await page.waitForFunction((value) => location.hash.startsWith("#events") && window.__halifaxEventFilterState?.query === value, firstEventTitle);
+  if (!String(page.url()).includes("#events")) throw new Error("Global search navigated away from Events while searching event content.");
+
+  await page.locator("[data-event-clear]").click();
+  const firstSaveButton = page.locator("[data-save-event-id]").first();
+  const savedEventId = await firstSaveButton.getAttribute("data-save-event-id");
+  if (!savedEventId) throw new Error("Expected save controls on event cards.");
+  await firstSaveButton.click();
+  if (await firstSaveButton.getAttribute("aria-pressed") !== "true") throw new Error("Event save action did not update saved state.");
+  await page.locator("#eventSavedFilter").check();
+  await page.waitForFunction(() => window.__halifaxEventFilterState?.savedOnly === true);
+  const savedCards = await page.locator(".event-card").evaluateAll((nodes, id) => nodes.map((node) => node.dataset.eventId === id), savedEventId);
+  if (!savedCards.length || savedCards.some((matches) => !matches)) throw new Error("Saved-only event filter did not restrict results to the saved event.");
+
+  await page.locator("[data-event-clear]").click();
+  const downloadPromise = page.waitForEvent("download");
+  await page.locator("[data-event-calendar]").first().click();
+  const calendarDownload = await downloadPromise;
+  if (!calendarDownload.suggestedFilename().endsWith(".ics")) throw new Error(`Expected .ics event calendar download, got ${calendarDownload.suggestedFilename()}.`);
+
+  const loadMore = page.locator("[data-event-load-more]");
+  if (await loadMore.count()) {
+    const before = await page.locator(".event-card").count();
+    await loadMore.click();
     const after = await page.locator(".event-card").count();
     if (after <= before) throw new Error(`Expected Load More to increase visible events, before=${before}, after=${after}.`);
-  }
-  const sportsFilter = page.locator('[data-event-category="Sports"]');
-  if (await sportsFilter.count()) {
-    await sportsFilter.click();
-    await page.locator(".event-card").first().waitFor();
-    if (await page.locator(".event-card").count() < 1) throw new Error("Expected Sports category to return city events.");
   }
 } else if (eventState.rendered < 1 || eventState.rendered > 24) {
   throw new Error(`Expected event-source fallback cards (1-24), got ${JSON.stringify(eventState)}.`);
@@ -171,12 +233,18 @@ const detailState = await page.evaluate(() => ({
 if (detailState.overflow > 2 || !detailState.stickyActions || detailState.actionCount < 1) throw new Error(`Expected usable mobile restaurant actions, got ${JSON.stringify(detailState)}.`);
 
 await page.goto(`${url}/#events`, { waitUntil: "networkidle" });
-const mobileEventOverflow = await page.evaluate(() => document.documentElement.scrollWidth - document.documentElement.clientWidth);
-if (mobileEventOverflow > 2) throw new Error(`Expected mobile events without horizontal overflow, got ${mobileEventOverflow}px.`);
+await page.locator(".event-filter-panel").waitFor();
+const mobileEventState = await page.evaluate(() => ({
+  overflow: document.documentElement.scrollWidth - document.documentElement.clientWidth,
+  filterGridWidth: Math.round(document.querySelector(".event-filter-grid")?.getBoundingClientRect().width || 0),
+  viewport: document.documentElement.clientWidth,
+  eventsNavActive: document.querySelector('.mobile-tabbar [data-route-link="events"]')?.classList.contains("is-active") || false
+}));
+if (mobileEventState.overflow > 2 || mobileEventState.filterGridWidth > mobileEventState.viewport || !mobileEventState.eventsNavActive) throw new Error(`Expected usable mobile event discovery, got ${JSON.stringify(mobileEventState)}.`);
 
 await page.goto(`${url}/#home`, { waitUntil: "networkidle" });
 await page.screenshot({ path: resolve("artifacts", "ui-check-mobile.png"), fullPage: true });
 
 if (consoleErrors.length) throw new Error(`Console errors detected:\n${consoleErrors.join("\n")}`);
 await browser.close();
-console.log("Halifax Sourced UI verified: discovery, first-party social links, bookings, ordering, expanded events, event filters, progressive loading, map/list sync, desktop, and mobile actions.");
+console.log("Halifax Sourced UI verified: discovery, social links, booking/ordering, functional event filters, event search, saved events, calendar export, map/list sync, desktop, and mobile navigation.");
