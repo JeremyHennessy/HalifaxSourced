@@ -10,7 +10,7 @@ on:
       - scripts/import-structured-events.mjs
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   extract:
@@ -44,3 +44,15 @@ jobs:
             data/build/structured-events.json
             artifacts/data-integrity-report.json
           if-no-files-found: error
+
+      - name: Commit validated preview output to isolated branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/structured-events.js data/build/structured-events.json
+          if git diff --cached --quiet; then
+            echo "No structured event data changes to commit."
+            exit 0
+          fi
+          git commit -m "Capture validated structured events preview output"
+          git push origin HEAD:structured-events-preview-run
