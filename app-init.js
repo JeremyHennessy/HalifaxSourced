@@ -67,8 +67,7 @@ function initMiniMap(items) {
   if (!element || !window.L) return;
   const map = L.map(element, { attributionControl: false, zoomControl: false, dragging: false, scrollWheelZoom: false, doubleClickZoom: false, boxZoom: false, keyboard: false, tap: false, zoomAnimation: false, fadeAnimation: false, markerZoomAnimation: false }).setView(MAP_DEFAULT, 12, { animate: false });
   L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", { maxZoom: 19 }).addTo(map);
-  const renderer = L.canvas();
-  items.filter((r) => r.coordinates).slice(0, 80).forEach((restaurant) => L.circleMarker([restaurant.coordinates.lat, restaurant.coordinates.lon], { radius: 5, color: "#0b3a67", weight: 2, fillColor: "#45aaa5", fillOpacity: 0.9, renderer }).addTo(map));
+  items.filter((r) => r.coordinates).slice(0, 80).forEach((restaurant) => L.circleMarker([restaurant.coordinates.lat, restaurant.coordinates.lon], { radius: 5, color: "#0b3a67", weight: 2, fillColor: "#45aaa5", fillOpacity: 0.9 }).addTo(map));
   state.map = map;
 }
 
