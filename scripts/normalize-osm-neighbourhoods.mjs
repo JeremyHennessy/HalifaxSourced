@@ -14,12 +14,13 @@ const restaurants = Array.isArray(context.window.HALIFAX_OSM_RESTAURANTS) ? cont
 function neighborhoodFor(lat, lon, tags) {
   const city = String(tags["addr:city"] ?? tags["is_in:city"] ?? "").trim();
   const suburb = String(tags["addr:suburb"] ?? tags["is_in:neighbourhood"] ?? "").trim();
+  const street = String(tags["addr:street"] ?? "").trim();
   if (/dartmouth/i.test(city)) return "Dartmouth";
   if (/bedford/i.test(city)) return "Bedford";
   if (/halifax/i.test(city)) {
     if (lon < -63.64) return "Armdale / Fairview";
-    if (lat < 44.632) return "South End";
-    if (lon > -63.574 && lat >= 44.635 && lat <= 44.655) return "Waterfront";
+    if (/lower water|upper water|hollis/i.test(street) && lon > -63.578) return "Waterfront";
+    if (lat < 44.642) return "South End";
     if (lat >= 44.6505 && lon > -63.61) return "North End";
     if (lat >= 44.648 && lon <= -63.595) return "West End";
     if (lat < 44.655 && lon > -63.60) return "Downtown";
@@ -33,7 +34,7 @@ function neighborhoodFor(lat, lon, tags) {
     return suburb;
   }
   if (lon < -63.64) return "Armdale / Fairview";
-  if (lat < 44.632 && lon < -63.57) return "South End";
+  if (lat < 44.642 && lon < -63.565) return "South End";
   if (lat > 44.665 && lon < -63.57) return "North End";
   if (lat >= 44.648 && lon < -63.595) return "West End";
   if (lon > -63.595 && lon < -63.565 && lat < 44.655) return "Downtown";
