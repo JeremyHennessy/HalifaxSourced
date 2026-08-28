@@ -1,5 +1,5 @@
 {
-  "version": 2,
+  "version": 3,
   "scope": {
     "cities": ["Halifax", "Dartmouth", "Bedford"],
     "regionLabels": ["Halifax Metro"],
@@ -11,48 +11,43 @@
       "id": "tourism-ns-events",
       "name": "Tourism Nova Scotia Events",
       "kind": "official_tourism_calendar",
-      "mode": "tribe_api",
-      "url": "https://novascotia.com/explore-nova-scotia/events/",
-      "endpoint": "https://novascotia.com/wp-json/tribe/events/v1/events",
+      "mode": "tourism_event_crawl",
+      "url": "https://novascotia.com/explore-nova-scotia/events/?region=29",
+      "detailHost": "novascotia.com",
+      "detailPathPrefix": "/event/",
+      "maxDetailPages": 180,
       "priority": 100
     },
     {
       "id": "halifax-events-community",
       "name": "HalifaxEvents.ca",
       "kind": "local_event_directory",
-      "mode": "halifaxevents_categories",
-      "url": "https://halifaxevents.ca/events/",
-      "categoryUrls": [
-        "https://halifaxevents.ca/events/category/music",
-        "https://halifaxevents.ca/events/category/festivals",
-        "https://halifaxevents.ca/events/category/food-drink",
-        "https://halifaxevents.ca/events/category/markets",
-        "https://halifaxevents.ca/events/category/arts",
-        "https://halifaxevents.ca/events/category/comedy",
-        "https://halifaxevents.ca/events/category/sports",
-        "https://halifaxevents.ca/events/category/outdoor"
-      ],
-      "priority": 75
+      "mode": "tribe_list_crawl",
+      "url": "https://halifaxevents.ca/events/list/",
+      "detailHost": "halifaxevents.ca",
+      "maxPages": 35,
+      "priority": 80
     },
     {
       "id": "scotiabank-centre",
       "name": "Scotiabank Centre",
       "kind": "official_venue_calendar",
-      "mode": "jsonld_index",
-      "url": "https://www.scotiabank-centre.com/",
+      "mode": "scotiabank_calendar",
+      "url": "https://www.scotiabank-centre.com/premium-seating/eventcalendar",
       "venueName": "Scotiabank Centre",
       "venueAddress": "1800 Argyle Street, Halifax, NS",
-      "priority": 95
+      "priority": 98
     },
     {
       "id": "light-house-arts-centre",
       "name": "Light House Arts Centre",
       "kind": "official_venue_calendar",
-      "mode": "jsonld_index",
+      "mode": "lighthouse_index",
       "url": "https://www.lighthouseartscentre.ca/events/",
       "venueName": "Light House Arts Centre",
       "venueAddress": "1800 Argyle Street, Halifax, NS",
-      "priority": 95
+      "detailPathPrefix": "/events/",
+      "priority": 96
     },
     {
       "id": "the-carleton",
@@ -62,39 +57,47 @@
       "url": "https://www.thecarleton.ca/music/upcoming-performances/",
       "venueName": "The Carleton",
       "venueAddress": "1685 Argyle Street, Halifax, NS",
-      "priority": 95
+      "priority": 96
     },
     {
       "id": "neptune-theatre",
       "name": "Neptune Theatre",
       "kind": "official_venue_calendar",
-      "mode": "jsonld_index",
-      "url": "https://www.neptunetheatre.com/",
+      "mode": "neptune_season",
+      "url": "https://www.neptunetheatre.com/visit/ticket-packages",
       "venueName": "Neptune Theatre",
       "venueAddress": "1593 Argyle Street, Halifax, NS",
-      "priority": 95
+      "priority": 96
     },
     {
-      "id": "halifax-tides",
-      "name": "Halifax Tides FC",
+      "id": "halifax-mooseheads-home",
+      "name": "Halifax Mooseheads Home Schedule",
       "kind": "official_sports_schedule",
-      "mode": "embedded_event_data",
-      "url": "https://www.tidesfc.ca/schedule",
-      "homeTeamTokens": ["Halifax", "HFX", "Halifax Tides"],
-      "venueName": "Wanderers Grounds",
-      "venueAddress": "5819 Sackville Street, Halifax, NS",
-      "priority": 90
-    },
-    {
-      "id": "halifax-mooseheads",
-      "name": "Halifax Mooseheads",
-      "kind": "official_sports_schedule",
-      "mode": "embedded_event_data",
-      "url": "https://chl.ca/lhjmq/en/schedule/5/214/",
-      "homeTeamTokens": ["Halifax", "Mooseheads"],
+      "mode": "mooseheads_home_table",
+      "url": "https://www.scotiabank-centre.com/events/2026-2027-halifax-mooseheads",
       "venueName": "Scotiabank Centre",
       "venueAddress": "1800 Argyle Street, Halifax, NS",
-      "priority": 90
+      "priority": 97
+    },
+    {
+      "id": "hfx-wanderers-home",
+      "name": "HFX Wanderers 2026 Home Schedule",
+      "kind": "official_sports_schedule",
+      "mode": "wanderers_article_schedule",
+      "url": "https://www.cplsoccer.com/hfxwanderersfc/news/wanderers-announce-full-2026-schedule-presented-by-westjet",
+      "venueName": "Wanderers Grounds",
+      "venueAddress": "5819 Sackville Street, Halifax, NS",
+      "priority": 97
+    },
+    {
+      "id": "halifax-tides-home",
+      "name": "Halifax Tides 2026 Home Schedule",
+      "kind": "official_sports_schedule",
+      "mode": "tides_article_schedule",
+      "url": "https://www.nsl.ca/news/from-breakout-debut-to-season-two-northern-super-league-releases-2026-schedule",
+      "venueName": "Wanderers Grounds",
+      "venueAddress": "5819 Sackville Street, Halifax, NS",
+      "priority": 97
     },
     {
       "id": "halifax-thunderbirds",
@@ -105,17 +108,6 @@
       "homeTeamTokens": ["Halifax", "Thunderbirds"],
       "venueName": "Scotiabank Centre",
       "venueAddress": "1800 Argyle Street, Halifax, NS",
-      "priority": 90
-    },
-    {
-      "id": "hfx-wanderers",
-      "name": "HFX Wanderers FC",
-      "kind": "official_sports_schedule",
-      "mode": "embedded_event_data",
-      "url": "https://www.cplsoccer.com/hfxwanderersfc",
-      "homeTeamTokens": ["Halifax", "HFX Wanderers", "Wanderers"],
-      "venueName": "Wanderers Grounds",
-      "venueAddress": "5819 Sackville Street, Halifax, NS",
       "priority": 90
     }
   ]
