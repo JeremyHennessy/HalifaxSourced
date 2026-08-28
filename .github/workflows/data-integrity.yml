@@ -7,6 +7,7 @@ on:
     paths:
       - .github/workflows/data-integrity.yml
       - scripts/check-data-integrity.mjs
+      - scripts/import-osm-restaurants.mjs
       - data/restaurants.js
       - data/osm-restaurants.js
       - data/official-site-signals.js
