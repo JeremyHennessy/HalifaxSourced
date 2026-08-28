@@ -1,0 +1,42 @@
+name: Reference Screenshot Capture
+
+on:
+  push:
+    branches:
+      - qa-polish-20260828
+    paths:
+      - .github/workflows/reference-capture.yml
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  capture:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Install Playwright
+        run: |
+          npm install --no-save playwright@1.55.0
+          npx playwright install --with-deps chromium
+
+      - name: Capture deployed reference shots
+        env:
+          APP_URL: https://jeremyhennessy.github.io/HalifaxSourced
+        run: node scripts/capture-reference-shots.mjs
+
+      - name: Upload reference shots
+        uses: actions/upload-artifact@v4
+        with:
+          name: halifax-sourced-reference-shots
+          path: artifacts/reference/
+          if-no-files-found: error
