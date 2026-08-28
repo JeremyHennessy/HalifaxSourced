@@ -53,6 +53,23 @@ jobs:
         run: |
           npm install --no-save playwright@1.55.0
           npx playwright install --with-deps chromium
+      - name: Add Canvas lifecycle diagnostics
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          path = Path('scripts/verify-ui.mjs')
+          text = path.read_text()
+          text = text.replace(
+              'page.on("console", (message) => { if (message.type() === "error") consoleErrors.push(message.text()); });\npage.on("pageerror", (error) => consoleErrors.push(error.message));',
+              'page.on("console", (message) => { if (message.type() === "error") consoleErrors.push(`CONSOLE @ ${page.url()}: ${message.text()}`); });\npage.on("pageerror", (error) => consoleErrors.push(`PAGEERROR @ ${page.url()}: ${error.stack || error.message}`));'
+          )
+          needle = 'await page.goto(`${url}/#home`, { waitUntil: "networkidle" });'
+          inject = '''await page.goto(`${url}/#home`, { waitUntil: "networkidle" });\nawait page.evaluate(() => {\n  const proto = window.L?.Canvas?.prototype;\n  if (!proto || proto.__halifaxLifecycleDiagnostic) return;\n  proto.__halifaxLifecycleDiagnostic = true;\n  const originalDestroy = proto._destroyContainer;\n  const originalClear = proto._clear;\n  proto._destroyContainer = function (...args) {\n    this.__halifaxDestroyInfo = {\n      mapId: this._map?.getContainer?.()?.id || null,\n      destroyRoute: location.hash,\n      pathCount: Object.keys(this._layers || {}).length,\n      redrawRequest: this._redrawRequest ?? null\n    };\n    return originalDestroy.apply(this, args);\n  };\n  proto._clear = function (...args) {\n    if (!this._ctx) {\n      console.error("HS_CANVAS_CLEAR_WITHOUT_CONTEXT", JSON.stringify({\n        ...(this.__halifaxDestroyInfo || {}),\n        currentRoute: location.hash,\n        mapConnected: Boolean(this._map?.getContainer?.()?.isConnected),\n        currentPathCount: Object.keys(this._layers || {}).length,\n        redrawRequest: this._redrawRequest ?? null\n      }));\n    }\n    return originalClear.apply(this, args);\n  };\n});'''
+          if needle not in text:
+              raise SystemExit('home navigation insertion point not found')
+          text = text.replace(needle, inject, 1)
+          path.write_text(text)
+          PY
       - name: Start local app
         run: |
           node scripts/dev-server.mjs > /tmp/halifax-sourced-server.log 2>&1 &
