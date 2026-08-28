@@ -1,16 +1,19 @@
 {
   "name": "Halifax Sourced source contract",
-  "version": 4,
+  "version": 5,
   "productIntent": "Public Halifax food and drink discovery for events, specials, happy hours, patios, openings, menus, hours, and practical source-linked details.",
   "notInScope": [
     "Ownership review workflow",
     "Compliance or inspection scoring",
-    "Restaurant quality rankings from restricted third-party review content"
+    "Restaurant quality rankings from restricted third-party review content",
+    "Unapproved scraping of Facebook or Instagram HTML"
   ],
   "principles": [
     "Cross-reference public and permitted sources, then keep source links attached to every lead.",
     "Store restaurant-owned facts and source links separately from third-party platform content.",
     "Keep restricted platform records as source references unless the API terms permit display and retention.",
+    "Associate social profiles to a restaurant only through restaurant-owned links, owner submissions, or another approved source with explicit provenance.",
+    "Classify social post text in memory and retain only source IDs, permalinks, timestamps, and matched discovery signals unless platform terms explicitly allow more.",
     "Track when each captured fact was observed, where it came from, and whether it needs cross-checking.",
     "Never treat missing data as a negative signal; mark it as missing, stale, restricted, or unverified.",
     "OpenStreetMap directory records are discovery/practical-data records, not editorial quality verification.",
@@ -69,7 +72,7 @@
     "sources": [
       {
         "label": "Human-readable source",
-        "type": "restaurant_site | openstreetmap | google_places | meta_owned_page | review_site | owner_submission | event_feed | ns_food_inspection",
+        "type": "restaurant_site | restaurant_feed | facebook_page | instagram_professional | openstreetmap | google_places | owner_submission | event_feed | ns_food_inspection",
         "url": "Source URL",
         "status": "verified | needs-review | restricted"
       }
@@ -81,6 +84,43 @@
     "observedAt": "Fetch timestamp",
     "signalMatches": "Keyword groups found in page text",
     "candidateLinks": "Official links whose text or URL indicates menus, specials, events, patios, openings, brunch, reservations, takeout, or delivery"
+  },
+  "firstPartySource": {
+    "restaurantId": "Restaurant id from catalog",
+    "website": "Restaurant-owned website used as association authority",
+    "observedAt": "Fetch timestamp",
+    "socialProfiles": "Facebook and Instagram profile links found on the restaurant-owned site; each carries handle, profile URL, discoveredFrom, associationBasis, and reviewState",
+    "feeds": "RSS/Atom links discovered on the restaurant-owned site",
+    "sitemaps": "Same-site sitemap URLs declared in robots.txt",
+    "sourceKind": "official_website_discovery",
+    "reviewState": "verified"
+  },
+  "websiteFeedSignal": {
+    "restaurantId": "Restaurant id from catalog",
+    "platform": "website_feed",
+    "title": "Short feed item title",
+    "postUrl": "Restaurant-owned item URL",
+    "feedUrl": "Restaurant-owned RSS/Atom source",
+    "publishedAt": "Publication timestamp when parseable",
+    "observedAt": "Fetch timestamp",
+    "signalMatches": "Matched discovery keywords only; feed body is not retained",
+    "sourceKind": "official_feed",
+    "reviewState": "source_signal | needs_date_review"
+  },
+  "socialSignal": {
+    "restaurantId": "Restaurant id from catalog",
+    "platform": "facebook | instagram",
+    "profileHandle": "Official profile handle discovered from the restaurant-owned website",
+    "profileUrl": "Official profile URL",
+    "postId": "Meta platform object id",
+    "postUrl": "Permalink returned by Meta API",
+    "publishedAt": "Platform publication timestamp",
+    "observedAt": "API observation timestamp",
+    "signalMatches": "Matched discovery keywords only; message/caption text is not retained",
+    "sourceKind": "meta_graph_api | meta_graph_api_business_discovery",
+    "associationBasis": "linked_from_official_website",
+    "confidence": "official_social_api_signal",
+    "reviewState": "api_observed"
   },
   "special": {
     "restaurantId": "stable-slug",
@@ -95,7 +135,7 @@
     "restaurantId": "stable-slug",
     "title": "Event name",
     "timing": "Date/time if verified",
-    "sourceUrl": "Official calendar, ticketing page, or restaurant-owned announcement",
+    "sourceUrl": "Official calendar, ticketing page, restaurant-owned announcement, or permitted official social API permalink",
     "sourceStatus": "verified | needs-review | restricted"
   },
   "map": {
@@ -112,6 +152,11 @@
     "catalogJson": "data/build/catalog.json",
     "sqliteDatabase": "data/build/halifax_sourced.sqlite",
     "officialSiteSignals": "data/build/official-site-signals.json and data/official-site-signals.js",
+    "verifiedSourcePages": "data/build/verified-source-pages.json and data/verified-source-pages.js",
+    "structuredEvents": "data/build/structured-events.json and data/structured-events.js",
+    "firstPartySources": "data/build/first-party-sources.json and data/first-party-sources.js",
+    "websiteFeedSignals": "data/build/website-feed-signals.json and data/website-feed-signals.js",
+    "socialSignals": "data/build/social-signals.json and data/social-signals.js",
     "ownerSubmissions": "data/build/owner-submissions.normalized.json",
     "novaScotiaFoodInspections": "data/build/ns-food-inspections.json and data/ns-food-inspections.js",
     "googlePlaceLinks": "data/build/google-place-links.json when GOOGLE_PLACES_API_KEY is supplied"
