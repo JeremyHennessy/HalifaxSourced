@@ -11,6 +11,7 @@ on:
       - .github/workflows/city-events-preview.yml
       - data/event-source-registry.json
       - scripts/import-city-events.mjs
+      - scripts/sanitize-city-events.mjs
       - scripts/check-city-events.mjs
 
 permissions:
@@ -35,6 +36,9 @@ jobs:
         env:
           CITY_EVENT_TIMEOUT_MS: 15000
         run: node scripts/import-city-events.mjs
+
+      - name: Restrict events to Halifax metro and normalize categories
+        run: node scripts/sanitize-city-events.mjs
 
       - name: Validate city event dataset
         run: node scripts/check-city-events.mjs
