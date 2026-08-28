@@ -1,0 +1,37 @@
+name: Source Link Health Audit
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "11 12 * * 1"
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Audit source links without mutating production data
+        env:
+          LINK_HEALTH_TIMEOUT_MS: 8000
+          LINK_HEALTH_CONCURRENCY: 10
+          LINK_HEALTH_LIMIT: 1500
+        run: node scripts/check-source-links.mjs
+      - name: Rebuild quality report with URL-health evidence
+        run: node scripts/build-content-quality-report.mjs
+      - name: Upload source health and quality reports
+        uses: actions/upload-artifact@v4
+        with:
+          name: source-link-health
+          path: |
+            artifacts/source-link-health-report.json
+            data/build/content-quality-report.json
+            docs/content-quality-report.md
+          if-no-files-found: error
+          retention-days: 30
