@@ -11,7 +11,8 @@ function renderRestaurantDetail(id) {
   const sourceLinks = uniqueSourceLinks(restaurant);
 
   appView.innerHTML = `
-    <section class="restaurant-hero media-${mediaTone(restaurant)}">
+    <section class="restaurant-hero media-${mediaTone(restaurant)}${permittedImageClass(restaurant)}">
+      ${mediaImageMarkup(restaurant, { loading: "eager", className: "restaurant-hero-photo", alt: `${restaurant.name} restaurant` })}
       <div class="restaurant-hero-overlay page-shell"><a class="back-link" href="#explore">← Back to results</a><div class="restaurant-title"><div><div class="title-badges">${restaurant.sourceLayer === "curated" ? "<span>Local pick</span>" : ""}${restaurant.signal ? "<span>Official site scanned</span>" : ""}</div><h1>${escapeHtml(restaurant.name)}</h1><p>${escapeHtml(primaryCuisine(restaurant))} · ${escapeHtml(restaurant.neighborhood || "Halifax")}</p><p class="hero-summary">${escapeHtml(restaurant.summary || "Local restaurant listing with public source coverage.")}</p><div class="card-tags">${consumerTags(restaurant).slice(0, 5).map((tag) => `<span>${escapeHtml(tag)}</span>`).join("")}</div><div class="hero-actions">${menuLink ? `<a class="button light" href="${menuLink}" target="_blank" rel="noreferrer">View menu ↗</a>` : ""}<button class="button secondary save-detail" type="button" data-save-id="${escapeHtml(restaurant.id)}">${state.saved.has(restaurant.id) ? "♥ Saved" : "♡ Save"}</button>${website ? `<a class="button secondary" href="${website}" target="_blank" rel="noreferrer">Official site ↗</a>` : ""}</div></div></div></div>
     </section>
     <section class="page-shell detail-layout">

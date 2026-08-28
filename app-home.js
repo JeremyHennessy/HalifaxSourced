@@ -91,7 +91,8 @@ function restaurantCard(restaurant, options = {}) {
   const index = options.index || 0;
   return `
     <article class="restaurant-card" data-restaurant-id="${escapeHtml(restaurant.id)}">
-      <div class="card-media media-${mediaTone(restaurant)}" style="--media-pos:${15 + ((index * 17) % 70)}%">
+      <div class="card-media media-${mediaTone(restaurant)}${permittedImageClass(restaurant)}" style="--media-pos:${15 + ((index * 17) % 70)}%">
+        ${mediaImageMarkup(restaurant)}
         ${restaurant.sourceLayer === "curated" ? '<span class="media-badge">Local pick</span>' : ""}
         <button class="save-button ${saved ? "is-saved" : ""}" type="button" data-save-id="${escapeHtml(restaurant.id)}" aria-label="${saved ? "Remove from saved" : "Save"} ${escapeHtml(restaurant.name)}">${saved ? "♥" : "♡"}</button>
       </div>
