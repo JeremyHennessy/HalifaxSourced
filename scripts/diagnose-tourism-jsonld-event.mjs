@@ -1,3 +1,4 @@
+// Isolated diagnostic only; rerun marker 2026-08-28T22:31Z.
 const url = "https://novascotia.com/event/festa-italiana-halifax/";
 const response = await fetch(url, { headers: { "User-Agent": "HalifaxSourced/0.9 (+https://github.com/JeremyHennessy/HalifaxSourced)", Accept: "text/html" }, signal: AbortSignal.timeout(15000) });
 const html = await response.text();
