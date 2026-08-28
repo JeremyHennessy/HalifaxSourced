@@ -107,7 +107,7 @@ function highlightMapResult(id, scroll = true) {
 function focusMapResult(id) {
   const marker = state.mapMarkers?.get(id);
   if (!marker || !state.map) return;
-  state.map.setView(marker.getLatLng(), Math.max(state.map.getZoom(), 15), { animate: true });
+  state.map.setView(marker.getLatLng(), Math.max(state.map.getZoom(), 15), { animate: false });
   marker.openTooltip();
   highlightMapResult(id, false);
 }
