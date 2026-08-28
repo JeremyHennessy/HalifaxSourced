@@ -9,6 +9,9 @@ on:
       - source-expansion-social-20260828
     paths:
       - .github/workflows/source-expansion-preview.yml
+      - scripts/import-official-sites.mjs
+      - scripts/verify-official-source-pages.mjs
+      - scripts/import-structured-events.mjs
       - scripts/discover-first-party-sources.mjs
       - scripts/import-first-party-feed-signals.mjs
       - scripts/import-meta-social.mjs
@@ -33,6 +36,8 @@ jobs:
       - name: Refresh official website signals
         env:
           OFFICIAL_SITE_LIMIT: 9999
+          OFFICIAL_SITE_DELAY_MS: 120
+          OFFICIAL_SITE_TIMEOUT_MS: 12000
         run: node scripts/import-official-sites.mjs
 
       - name: Verify direct menu and specials pages
