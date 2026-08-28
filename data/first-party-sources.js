@@ -558,7 +558,7 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
         },
         {
           "kind": "reservations",
-          "url": "https://www.opentable.com/r/edna-restaurant-reservations-halifax?lang=en-US&amp;ot_source=Restaurant%20website&amp;restref=342271",
+          "url": "https://www.opentable.com/r/edna-restaurant-reservations-halifax?lang=en-US&ot_source=Restaurant%20website&restref=342271",
           "label": "Book a Table",
           "discoveredFrom": "https://www.ednarestaurant.com/",
           "associationBasis": "linked_from_official_website",
@@ -826,7 +826,7 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "reviewState": "verified_link"
         },
         {
-          "url": "https://matadorahfx.ca/index.php?rest_route=%2Foembed%2F1.0%2Fembed&#038;url=https%3A%2F%2Fmatadorahfx.ca%2F&#038;format=xml",
+          "url": "https://matadorahfx.ca/index.php?rest_route=%2Foembed%2F1.0%2Fembed&url=https%3A%2F%2Fmatadorahfx.ca%2F&format=xml",
           "type": "text/xml+oembed",
           "title": "oEmbed (XML)",
           "discoveredFrom": "https://matadorahfx.ca/",
@@ -1055,21 +1055,21 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "reviewState": "verified_link"
         },
         {
-          "url": "https://darrellsrestaurants.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdarrellsrestaurants.com%2F&#038;format=xml",
+          "url": "https://darrellsrestaurants.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdarrellsrestaurants.com%2F&format=xml",
           "type": "text/xml+oembed",
           "title": "oEmbed (XML)",
           "discoveredFrom": "https://darrellsrestaurants.com/",
           "reviewState": "verified_link"
         },
         {
-          "url": "https://darrellsrestaurants.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdarrellsrestaurants.com%2Fabout-darrells%2F&#038;format=xml",
+          "url": "https://darrellsrestaurants.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdarrellsrestaurants.com%2Fabout-darrells%2F&format=xml",
           "type": "text/xml+oembed",
           "title": "oEmbed (XML)",
           "discoveredFrom": "https://darrellsrestaurants.com/about-darrells/",
           "reviewState": "verified_link"
         },
         {
-          "url": "https://darrellsrestaurants.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdarrellsrestaurants.com%2Fcontact%2F&#038;format=xml",
+          "url": "https://darrellsrestaurants.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdarrellsrestaurants.com%2Fcontact%2F&format=xml",
           "type": "text/xml+oembed",
           "title": "oEmbed (XML)",
           "discoveredFrom": "https://darrellsrestaurants.com/contact/",
@@ -1159,7 +1159,7 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
         },
         {
           "kind": "ordering",
-          "url": "https://benetflorentine.order-online.ai/en/?_gl=1*14maqhv*_ga*NTUwODUzMDkyLjE3MDY4MDA3MDI.*_ga_PJXXT66P1Z*MTcwNzEzNDQwNy45LjEuMTcwNzEzNDUyNC41NS4wLjA.#/?showItem=&amp;amp;_ga=2.190243565.738223456.1707134407-550853092.1706800702",
+          "url": "https://benetflorentine.order-online.ai/en/?_gl=1*14maqhv*_ga*NTUwODUzMDkyLjE3MDY4MDA3MDI.*_ga_PJXXT66P1Z*MTcwNzEzNDQwNy45LjEuMTcwNzEzNDUyNC41NS4wLjA.#/?showItem=&_ga=2.190243565.738223456.1707134407-550853092.1706800702",
           "label": "ORDER ONLINE",
           "discoveredFrom": "https://locations.benetflorentine.com/",
           "associationBasis": "linked_from_official_website",
@@ -1171,7 +1171,7 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
         },
         {
           "kind": "ordering",
-          "url": "https://benetflorentine.order-online.ai/en/?_gl=1*1rhmqpy*_ga*NTUwODUzMDkyLjE3MDY4MDA3MDI.*_ga_PJXXT66P1Z*MTcwNzEzNDQwNy45LjEuMTcwNzEzNTI5My41Mi4wLjA.#/?showItem=&amp;amp;_ga=2.201779671.738223456.1707134407-550853092.1706800702",
+          "url": "https://benetflorentine.order-online.ai/en/?_gl=1*1rhmqpy*_ga*NTUwODUzMDkyLjE3MDY4MDA3MDI.*_ga_PJXXT66P1Z*MTcwNzEzNDQwNy45LjEuMTcwNzEzNTI5My41Mi4wLjA.#/?showItem=&_ga=2.201779671.738223456.1707134407-550853092.1706800702",
           "label": "Order online",
           "discoveredFrom": "https://locations.benetflorentine.com/",
           "associationBasis": "linked_from_official_website",
@@ -1354,7 +1354,7 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "reviewState": "verified_link"
         },
         {
-          "url": "https://lemon.dog/wp-json/oembed/1.0/embed?url=https%3A%2F%2Flemon.dog%2F&#038;format=xml",
+          "url": "https://lemon.dog/wp-json/oembed/1.0/embed?url=https%3A%2F%2Flemon.dog%2F&format=xml",
           "type": "text/xml+oembed",
           "title": "oEmbed (XML)",
           "discoveredFrom": "https://lemon.dog/",
@@ -1530,14 +1530,14 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "reviewState": "verified_link"
         },
         {
-          "url": "https://bicyclethief.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fbicyclethief.ca%2F&#038;format=xml",
+          "url": "https://bicyclethief.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fbicyclethief.ca%2F&format=xml",
           "type": "text/xml+oembed",
           "title": "Website feed",
           "discoveredFrom": "https://bicyclethief.ca/",
           "reviewState": "verified_link"
         },
         {
-          "url": "https://bicyclethief.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fbicyclethief.ca%2Fcontact-us-reservations%2F&#038;format=xml",
+          "url": "https://bicyclethief.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fbicyclethief.ca%2Fcontact-us-reservations%2F&format=xml",
           "type": "text/xml+oembed",
           "title": "Website feed",
           "discoveredFrom": "https://bicyclethief.ca/contact-us-reservations/",
@@ -1642,7 +1642,7 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "reviewState": "verified_link"
         },
         {
-          "url": "https://humblepiekitchen.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fhumblepiekitchen.ca%2F&#038;format=xml",
+          "url": "https://humblepiekitchen.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fhumblepiekitchen.ca%2F&format=xml",
           "type": "text/xml+oembed",
           "title": "oEmbed (XML)",
           "discoveredFrom": "https://humblepiekitchen.ca/",
@@ -1921,7 +1921,7 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "reviewState": "verified_link"
         },
         {
-          "url": "https://unfuckingfiltered.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Funfuckingfiltered.com%2F&#038;format=xml",
+          "url": "https://unfuckingfiltered.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Funfuckingfiltered.com%2F&format=xml",
           "type": "text/xml+oembed",
           "title": "oEmbed (XML)",
           "discoveredFrom": "https://unfuckingfiltered.com/",
@@ -1935,7 +1935,7 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "reviewState": "verified_link"
         },
         {
-          "url": "https://unfuckingfiltered.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Funfuckingfiltered.com%2Fcontact-us%2F&#038;format=xml",
+          "url": "https://unfuckingfiltered.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Funfuckingfiltered.com%2Fcontact-us%2F&format=xml",
           "type": "text/xml+oembed",
           "title": "oEmbed (XML)",
           "discoveredFrom": "https://unfuckingfiltered.com/contact-us/",
@@ -2000,7 +2000,7 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "carriedForwardAt": "2026-08-28T21:37:00.343Z"
         },
         {
-          "url": "https://nogginsfarm.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fnogginsfarm.ca%2Ffarm-markets%2Fcoburg-market%2F&#038;format=xml",
+          "url": "https://nogginsfarm.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fnogginsfarm.ca%2Ffarm-markets%2Fcoburg-market%2F&format=xml",
           "type": "text/xml+oembed",
           "title": "oEmbed (XML)",
           "discoveredFrom": "https://nogginsfarm.ca/farm-markets/coburg-market/",
@@ -2779,14 +2779,14 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "reviewState": "verified_link"
         },
         {
-          "url": "https://sushisquare.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fsushisquare.ca%2F&#038;format=xml",
+          "url": "https://sushisquare.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fsushisquare.ca%2F&format=xml",
           "type": "text/xml+oembed",
           "title": "oEmbed (XML)",
           "discoveredFrom": "https://sushisquare.ca/",
           "reviewState": "verified_link"
         },
         {
-          "url": "https://sushisquare.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fsushisquare.ca%2Fcontact%2F&#038;format=xml",
+          "url": "https://sushisquare.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fsushisquare.ca%2Fcontact%2F&format=xml",
           "type": "text/xml+oembed",
           "title": "oEmbed (XML)",
           "discoveredFrom": "https://sushisquare.ca/contact/",
@@ -3196,14 +3196,14 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "reviewState": "verified_link"
         },
         {
-          "url": "https://sushinami.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fsushinami.ca%2F&#038;format=xml",
+          "url": "https://sushinami.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fsushinami.ca%2F&format=xml",
           "type": "text/xml+oembed",
           "title": "oEmbed (XML)",
           "discoveredFrom": "https://sushinami.ca/",
           "reviewState": "verified_link"
         },
         {
-          "url": "https://sushinami.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fsushinami.ca%2Fdowntown-halifax%2F&#038;format=xml",
+          "url": "https://sushinami.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fsushinami.ca%2Fdowntown-halifax%2F&format=xml",
           "type": "text/xml+oembed",
           "title": "oEmbed (XML)",
           "discoveredFrom": "https://sushinami.ca/downtown-halifax/",
@@ -3365,21 +3365,21 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "reviewState": "verified_link"
         },
         {
-          "url": "https://chebuctoinn.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fchebuctoinn.com%2Flhg-diner%2F&#038;format=xml",
+          "url": "https://chebuctoinn.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fchebuctoinn.com%2Flhg-diner%2F&format=xml",
           "type": "text/xml+oembed",
           "title": "oEmbed (XML)",
           "discoveredFrom": "https://chebuctoinn.com/lhg-diner/",
           "reviewState": "verified_link"
         },
         {
-          "url": "https://chebuctoinn.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fchebuctoinn.com%2Four-story%2F&#038;format=xml",
+          "url": "https://chebuctoinn.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fchebuctoinn.com%2Four-story%2F&format=xml",
           "type": "text/xml+oembed",
           "title": "oEmbed (XML)",
           "discoveredFrom": "https://chebuctoinn.com/our-story/",
           "reviewState": "verified_link"
         },
         {
-          "url": "https://chebuctoinn.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fchebuctoinn.com%2Fcontact-us%2F&#038;format=xml",
+          "url": "https://chebuctoinn.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fchebuctoinn.com%2Fcontact-us%2F&format=xml",
           "type": "text/xml+oembed",
           "title": "oEmbed (XML)",
           "discoveredFrom": "https://chebuctoinn.com/contact-us/",
@@ -3845,7 +3845,7 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "reviewState": "verified_link"
         },
         {
-          "url": "https://secondcup.com/en/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fsecondcup.com%2Fen%2Flocation%2Fbayers-lake%2F&#038;format=xml",
+          "url": "https://secondcup.com/en/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fsecondcup.com%2Fen%2Flocation%2Fbayers-lake%2F&format=xml",
           "type": "text/xml+oembed",
           "title": "oEmbed (XML)",
           "discoveredFrom": "https://secondcup.com/en/location/bayers-lake/",
@@ -3959,7 +3959,7 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "reviewState": "verified_link"
         },
         {
-          "url": "https://skettiandballco.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fskettiandballco.ca%2F&#038;format=xml",
+          "url": "https://skettiandballco.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fskettiandballco.ca%2F&format=xml",
           "type": "text/xml+oembed",
           "title": "oEmbed (XML)",
           "discoveredFrom": "https://skettiandballco.ca/",
@@ -4176,7 +4176,7 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
         },
         {
           "kind": "reservations",
-          "url": "https://www.opentable.ca/booking/restref/availability?lang=en-CA&#038;correlationId=a802e0e6-ee0e-4402-b5a5-aaca6d40dd38&#038;restRef=1226047&#038;otSource=Restaurant%20website",
+          "url": "https://www.opentable.ca/booking/restref/availability?lang=en-CA&correlationId=a802e0e6-ee0e-4402-b5a5-aaca6d40dd38&restRef=1226047&otSource=Restaurant%20website",
           "label": "reserve your table",
           "discoveredFrom": "https://www.cafelunette.com/",
           "associationBasis": "linked_from_official_website",
@@ -4224,7 +4224,7 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
         },
         {
           "kind": "reservations",
-          "url": "https://www.opentable.ca/r/cafe-lunette-reservations-halifax?restref=1226047&#038;lang=en-CA&#038;ot_source=Restaurant%20website",
+          "url": "https://www.opentable.ca/r/cafe-lunette-reservations-halifax?restref=1226047&lang=en-CA&ot_source=Restaurant%20website",
           "label": "RESERVATIONS",
           "discoveredFrom": "https://www.cafelunette.com/",
           "associationBasis": "linked_from_official_website",
@@ -4275,21 +4275,21 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "reviewState": "verified_link"
         },
         {
-          "url": "https://www.cafelunette.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.cafelunette.com%2F&#038;format=xml",
+          "url": "https://www.cafelunette.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.cafelunette.com%2F&format=xml",
           "type": "text/xml+oembed",
           "title": "oEmbed (XML)",
           "discoveredFrom": "https://www.cafelunette.com/",
           "reviewState": "verified_link"
         },
         {
-          "url": "https://www.cafelunette.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.cafelunette.com%2Fabout%2F&#038;format=xml",
+          "url": "https://www.cafelunette.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.cafelunette.com%2Fabout%2F&format=xml",
           "type": "text/xml+oembed",
           "title": "oEmbed (XML)",
           "discoveredFrom": "https://www.cafelunette.com/about/",
           "reviewState": "verified_link"
         },
         {
-          "url": "https://www.cafelunette.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.cafelunette.com%2Fcontact%2F&#038;format=xml",
+          "url": "https://www.cafelunette.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.cafelunette.com%2Fcontact%2F&format=xml",
           "type": "text/xml+oembed",
           "title": "oEmbed (XML)",
           "discoveredFrom": "https://www.cafelunette.com/contact/",
@@ -4763,21 +4763,21 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "reviewState": "verified_link"
         },
         {
-          "url": "https://www.chezcora.com/en/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.chezcora.com%2Fen%2F&#038;format=xml",
+          "url": "https://www.chezcora.com/en/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.chezcora.com%2Fen%2F&format=xml",
           "type": "text/xml+oembed",
           "title": "oEmbed (XML)",
           "discoveredFrom": "https://www.chezcora.com/en/",
           "reviewState": "verified_link"
         },
         {
-          "url": "https://www.chezcora.com/en/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.chezcora.com%2Fen%2Fbreakfast-lunch-restaurants%2Fcora-abbotsford%2F&#038;format=xml",
+          "url": "https://www.chezcora.com/en/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.chezcora.com%2Fen%2Fbreakfast-lunch-restaurants%2Fcora-abbotsford%2F&format=xml",
           "type": "text/xml+oembed",
           "title": "oEmbed (XML)",
           "discoveredFrom": "https://www.chezcora.com/en/breakfast-lunch-restaurants/cora-abbotsford/",
           "reviewState": "verified_link"
         },
         {
-          "url": "https://www.chezcora.com/en/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.chezcora.com%2Fen%2Fbreakfast-lunch-restaurants%2Fcora-acadie-montreal%2F&#038;format=xml",
+          "url": "https://www.chezcora.com/en/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.chezcora.com%2Fen%2Fbreakfast-lunch-restaurants%2Fcora-acadie-montreal%2F&format=xml",
           "type": "text/xml+oembed",
           "title": "oEmbed (XML)",
           "discoveredFrom": "https://www.chezcora.com/en/breakfast-lunch-restaurants/cora-acadie-montreal/",
@@ -4869,7 +4869,7 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "reviewState": "verified_link"
         },
         {
-          "url": "https://station1lebanesekitchen.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fstation1lebanesekitchen.com%2F&#038;format=xml",
+          "url": "https://station1lebanesekitchen.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fstation1lebanesekitchen.com%2F&format=xml",
           "type": "text/xml+oembed",
           "title": "oEmbed (XML)",
           "discoveredFrom": "https://station1lebanesekitchen.com/",
@@ -5247,7 +5247,7 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "relatedLinks": [
         {
           "kind": "reservations",
-          "url": "https://www.opentable.ca/restref/client/?restref=1379650&amp;lang=en-CA&amp;ot_source=Restaurant%20website&amp;corrid=2d533fb7-4bda-4272-bac5-0d79533dcd3a",
+          "url": "https://www.opentable.ca/restref/client/?restref=1379650&lang=en-CA&ot_source=Restaurant%20website&corrid=2d533fb7-4bda-4272-bac5-0d79533dcd3a",
           "label": "Make A Reservation",
           "discoveredFrom": "https://asiahalifax.com/",
           "associationBasis": "linked_from_official_website",
@@ -5271,7 +5271,7 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
         },
         {
           "kind": "reservations",
-          "url": "https://www.opentable.ca/restref/client/?restref=1379650&amp;lang=en-CA&amp;ot_source=Restaurant%20website&amp;corrid=76c426ee-9133-4153-88e2-7eeff47f7855",
+          "url": "https://www.opentable.ca/restref/client/?restref=1379650&lang=en-CA&ot_source=Restaurant%20website&corrid=76c426ee-9133-4153-88e2-7eeff47f7855",
           "label": "Make A Reservation",
           "discoveredFrom": "https://asiahalifax.com/",
           "associationBasis": "linked_from_official_website",
@@ -5416,7 +5416,7 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
         },
         {
           "kind": "reservations",
-          "url": "https://www.opentable.ca/r/mic-mac-bar-and-grill-reservations-dartmouth?restref=342265&#038;lang=en-CA&#038;ot_source=Restaurant%20website",
+          "url": "https://www.opentable.ca/r/mic-mac-bar-and-grill-reservations-dartmouth?restref=342265&lang=en-CA&ot_source=Restaurant%20website",
           "label": "Reservations",
           "discoveredFrom": "https://micmacbarandgrill.com/",
           "associationBasis": "linked_from_official_website",
@@ -5452,7 +5452,7 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
         },
         {
           "kind": "reservations",
-          "url": "https://www.opentable.ca/r/mic-mac-bar-and-grill-reservations-dartmouth?restref=342265&amp;lang=en-CA&amp;ot_source=Restaurant%20website",
+          "url": "https://www.opentable.ca/r/mic-mac-bar-and-grill-reservations-dartmouth?restref=342265&lang=en-CA&ot_source=Restaurant%20website",
           "label": "Reservations",
           "discoveredFrom": "https://micmacbarandgrill.com/",
           "associationBasis": "linked_from_official_website",
@@ -5796,21 +5796,21 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "relatedLinks": [],
       "feeds": [
         {
-          "url": "https://www.rcr.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.rcr.ca%2Frestaurants%2Fpublic-cafe-bakery-bar%2F&#038;format=xml",
+          "url": "https://www.rcr.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.rcr.ca%2Frestaurants%2Fpublic-cafe-bakery-bar%2F&format=xml",
           "type": "text/xml+oembed",
           "title": "oEmbed (XML)",
           "discoveredFrom": "https://www.rcr.ca/restaurants/public-cafe-bakery-bar/",
           "reviewState": "verified_link"
         },
         {
-          "url": "https://www.rcr.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.rcr.ca%2Frestaurants%2F&#038;format=xml",
+          "url": "https://www.rcr.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.rcr.ca%2Frestaurants%2F&format=xml",
           "type": "text/xml+oembed",
           "title": "oEmbed (XML)",
           "discoveredFrom": "https://www.rcr.ca/restaurants/",
           "reviewState": "verified_link"
         },
         {
-          "url": "https://www.rcr.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.rcr.ca%2Fabout%2Fcareers%2F&#038;format=xml",
+          "url": "https://www.rcr.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.rcr.ca%2Fabout%2Fcareers%2F&format=xml",
           "type": "text/xml+oembed",
           "title": "oEmbed (XML)",
           "discoveredFrom": "https://www.rcr.ca/about/careers/",
@@ -5880,7 +5880,7 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "reviewState": "verified_link"
         },
         {
-          "url": "https://matadorahfx.ca/index.php?rest_route=%2Foembed%2F1.0%2Fembed&#038;url=https%3A%2F%2Fmatadorahfx.ca%2F&#038;format=xml",
+          "url": "https://matadorahfx.ca/index.php?rest_route=%2Foembed%2F1.0%2Fembed&url=https%3A%2F%2Fmatadorahfx.ca%2F&format=xml",
           "type": "text/xml+oembed",
           "title": "oEmbed (XML)",
           "discoveredFrom": "https://matadorahfx.ca/",
@@ -6031,7 +6031,7 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
         },
         {
           "kind": "reservations",
-          "url": "https://www.opentable.ca/restref/client/?restref=1395742&amp;lang=en-CA&amp;ot_source=Restaurant%2520website&amp;corrid=6e2aee20-0e50-4b76-bdae-b08db2b808ef&amp;fbclid=PAZXh0bgNhZW0CMTEAAaYBK_oqaYbKfdPmSbV0UaGFZP5UvEcIu0j0tjkNMstqkaHGXTy0LEG5xQ4_aem_GyAEP8nt_duDFB5MCY9sBw",
+          "url": "https://www.opentable.ca/restref/client/?restref=1395742&lang=en-CA&ot_source=Restaurant%2520website&corrid=6e2aee20-0e50-4b76-bdae-b08db2b808ef&fbclid=PAZXh0bgNhZW0CMTEAAaYBK_oqaYbKfdPmSbV0UaGFZP5UvEcIu0j0tjkNMstqkaHGXTy0LEG5xQ4_aem_GyAEP8nt_duDFB5MCY9sBw",
           "label": "Make a Reservation",
           "discoveredFrom": "https://cremehalifax.com/",
           "associationBasis": "linked_from_official_website",
@@ -6134,8 +6134,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "platform": "tiktok",
           "platformKind": "social",
           "handle": "wix",
-          "url": "https://www.tiktok.com/@wix?_d=secCgYIASAHKAESPgo8bJWqrWC4Nr%2BRYzP%2BVtrmkW1yv8onKe340Iy%2FTDOE1GiC5K1C6e8qw19A1ZDHAm8CRSncDs9zU2FiADwVGgA%3D&amp;checksum=6ee3b8ed09a7b80754f53d8d9654f3607efacb929e1fe7cb2168ab163f9c106d&amp;language=en&amp;sec_uid=MS4wLjABAAAAYHhFoEGKGLJwnIBxd-QXc1KVcUtlG1sHpsa0HQUHGw4zmND_lFqx6z2IPJH7chg_&amp;sec_user_id=MS4wLjABAAAAgPHZ_FdpBZBJUM3ddmqfpjOvm-vJLKHpFiyv4dstvGcgdF3_apqTw54z5V4uOXel&amp;share_app_id=1233&amp;share_author_id=6795533291946083333&amp;share_link_id=830633BB-5464-41EC-A582-52B78B5041AC&amp;tt_from=copy&amp;u_code=dccm9a1hm10m3e&amp;user_id=6827810298247119878&amp;utm_campaign=client_share&amp;utm_medium=ios&amp;utm_source=copy&amp;source=h5_m&amp;_r=1",
-          "profileUrl": "https://www.tiktok.com/@wix?_d=secCgYIASAHKAESPgo8bJWqrWC4Nr%2BRYzP%2BVtrmkW1yv8onKe340Iy%2FTDOE1GiC5K1C6e8qw19A1ZDHAm8CRSncDs9zU2FiADwVGgA%3D&amp;checksum=6ee3b8ed09a7b80754f53d8d9654f3607efacb929e1fe7cb2168ab163f9c106d&amp;language=en&amp;sec_uid=MS4wLjABAAAAYHhFoEGKGLJwnIBxd-QXc1KVcUtlG1sHpsa0HQUHGw4zmND_lFqx6z2IPJH7chg_&amp;sec_user_id=MS4wLjABAAAAgPHZ_FdpBZBJUM3ddmqfpjOvm-vJLKHpFiyv4dstvGcgdF3_apqTw54z5V4uOXel&amp;share_app_id=1233&amp;share_author_id=6795533291946083333&amp;share_link_id=830633BB-5464-41EC-A582-52B78B5041AC&amp;tt_from=copy&amp;u_code=dccm9a1hm10m3e&amp;user_id=6827810298247119878&amp;utm_campaign=client_share&amp;utm_medium=ios&amp;utm_source=copy&amp;source=h5_m&amp;_r=1",
+          "url": "https://www.tiktok.com/@wix?_d=secCgYIASAHKAESPgo8bJWqrWC4Nr%2BRYzP%2BVtrmkW1yv8onKe340Iy%2FTDOE1GiC5K1C6e8qw19A1ZDHAm8CRSncDs9zU2FiADwVGgA%3D&checksum=6ee3b8ed09a7b80754f53d8d9654f3607efacb929e1fe7cb2168ab163f9c106d&language=en&sec_uid=MS4wLjABAAAAYHhFoEGKGLJwnIBxd-QXc1KVcUtlG1sHpsa0HQUHGw4zmND_lFqx6z2IPJH7chg_&sec_user_id=MS4wLjABAAAAgPHZ_FdpBZBJUM3ddmqfpjOvm-vJLKHpFiyv4dstvGcgdF3_apqTw54z5V4uOXel&share_app_id=1233&share_author_id=6795533291946083333&share_link_id=830633BB-5464-41EC-A582-52B78B5041AC&tt_from=copy&u_code=dccm9a1hm10m3e&user_id=6827810298247119878&utm_campaign=client_share&utm_medium=ios&utm_source=copy&source=h5_m&_r=1",
+          "profileUrl": "https://www.tiktok.com/@wix?_d=secCgYIASAHKAESPgo8bJWqrWC4Nr%2BRYzP%2BVtrmkW1yv8onKe340Iy%2FTDOE1GiC5K1C6e8qw19A1ZDHAm8CRSncDs9zU2FiADwVGgA%3D&checksum=6ee3b8ed09a7b80754f53d8d9654f3607efacb929e1fe7cb2168ab163f9c106d&language=en&sec_uid=MS4wLjABAAAAYHhFoEGKGLJwnIBxd-QXc1KVcUtlG1sHpsa0HQUHGw4zmND_lFqx6z2IPJH7chg_&sec_user_id=MS4wLjABAAAAgPHZ_FdpBZBJUM3ddmqfpjOvm-vJLKHpFiyv4dstvGcgdF3_apqTw54z5V4uOXel&share_app_id=1233&share_author_id=6795533291946083333&share_link_id=830633BB-5464-41EC-A582-52B78B5041AC&tt_from=copy&u_code=dccm9a1hm10m3e&user_id=6827810298247119878&utm_campaign=client_share&utm_medium=ios&utm_source=copy&source=h5_m&_r=1",
           "label": "TikTok",
           "locationSpecific": false,
           "sharedBrandProfile": false,
@@ -6382,14 +6382,14 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "reviewState": "verified_link"
         },
         {
-          "url": "https://phohoangminh.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fphohoangminh.ca%2Fabout%2F&#038;format=xml",
+          "url": "https://phohoangminh.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fphohoangminh.ca%2Fabout%2F&format=xml",
           "type": "text/xml+oembed",
           "title": "oEmbed (XML)",
           "discoveredFrom": "https://phohoangminh.ca/about/",
           "reviewState": "verified_link"
         },
         {
-          "url": "https://phohoangminh.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fphohoangminh.ca%2Fcontact%2F&#038;format=xml",
+          "url": "https://phohoangminh.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fphohoangminh.ca%2Fcontact%2F&format=xml",
           "type": "text/xml+oembed",
           "title": "oEmbed (XML)",
           "discoveredFrom": "https://phohoangminh.ca/contact/",
@@ -6709,7 +6709,7 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "reviewState": "verified_link"
         },
         {
-          "url": "https://www.gingerbreadhausbakery.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.gingerbreadhausbakery.com%2F&#038;format=xml",
+          "url": "https://www.gingerbreadhausbakery.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.gingerbreadhausbakery.com%2F&format=xml",
           "type": "text/xml+oembed",
           "title": "oEmbed (XML)",
           "discoveredFrom": "https://www.gingerbreadhausbakery.com/",
@@ -6723,7 +6723,7 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "reviewState": "verified_link"
         },
         {
-          "url": "https://www.gingerbreadhausbakery.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.gingerbreadhausbakery.com%2Fcontact%2F&#038;format=xml",
+          "url": "https://www.gingerbreadhausbakery.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.gingerbreadhausbakery.com%2Fcontact%2F&format=xml",
           "type": "text/xml+oembed",
           "title": "oEmbed (XML)",
           "discoveredFrom": "https://www.gingerbreadhausbakery.com/contact/",
@@ -6783,14 +6783,14 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "reviewState": "verified_link"
         },
         {
-          "url": "https://www.salvatorespizza.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.salvatorespizza.ca%2F&#038;format=xml",
+          "url": "https://www.salvatorespizza.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.salvatorespizza.ca%2F&format=xml",
           "type": "text/xml+oembed",
           "title": "Website feed",
           "discoveredFrom": "https://www.salvatorespizza.ca/",
           "reviewState": "verified_link"
         },
         {
-          "url": "https://www.salvatorespizza.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.salvatorespizza.ca%2Ffind-us%2F&#038;format=xml",
+          "url": "https://www.salvatorespizza.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.salvatorespizza.ca%2Ffind-us%2F&format=xml",
           "type": "text/xml+oembed",
           "title": "Website feed",
           "discoveredFrom": "https://www.salvatorespizza.ca/find-us/",
@@ -6975,14 +6975,14 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "reviewState": "verified_link"
         },
         {
-          "url": "https://blacksheephalifax.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fblacksheephalifax.com%2F&#038;format=xml",
+          "url": "https://blacksheephalifax.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fblacksheephalifax.com%2F&format=xml",
           "type": "text/xml+oembed",
           "title": "oEmbed (XML)",
           "discoveredFrom": "https://blacksheephalifax.com/",
           "reviewState": "verified_link"
         },
         {
-          "url": "https://blacksheephalifax.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fblacksheephalifax.com%2Fabout%2F&#038;format=xml",
+          "url": "https://blacksheephalifax.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fblacksheephalifax.com%2Fabout%2F&format=xml",
           "type": "text/xml+oembed",
           "title": "oEmbed (XML)",
           "discoveredFrom": "https://blacksheephalifax.com/about/",
@@ -7064,14 +7064,14 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "reviewState": "verified_link"
         },
         {
-          "url": "https://bluenoseii.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fbluenoseii.ca%2F&#038;format=xml",
+          "url": "https://bluenoseii.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fbluenoseii.ca%2F&format=xml",
           "type": "text/xml+oembed",
           "title": "oEmbed (XML)",
           "discoveredFrom": "https://bluenoseii.ca/",
           "reviewState": "verified_link"
         },
         {
-          "url": "https://bluenoseii.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fbluenoseii.ca%2Fabout%2F&#038;format=xml",
+          "url": "https://bluenoseii.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fbluenoseii.ca%2Fabout%2F&format=xml",
           "type": "text/xml+oembed",
           "title": "oEmbed (XML)",
           "discoveredFrom": "https://bluenoseii.ca/about/",
@@ -7352,21 +7352,21 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "reviewState": "verified_link"
         },
         {
-          "url": "https://elagreektaverna.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Felagreektaverna.com%2F&#038;format=xml",
+          "url": "https://elagreektaverna.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Felagreektaverna.com%2F&format=xml",
           "type": "text/xml+oembed",
           "title": "oEmbed (XML)",
           "discoveredFrom": "https://elagreektaverna.com/",
           "reviewState": "verified_link"
         },
         {
-          "url": "https://elagreektaverna.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Felagreektaverna.com%2Fabout%2F&#038;format=xml",
+          "url": "https://elagreektaverna.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Felagreektaverna.com%2Fabout%2F&format=xml",
           "type": "text/xml+oembed",
           "title": "oEmbed (XML)",
           "discoveredFrom": "https://elagreektaverna.com/about/",
           "reviewState": "verified_link"
         },
         {
-          "url": "https://elagreektaverna.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Felagreektaverna.com%2Fcontact%2F&#038;format=xml",
+          "url": "https://elagreektaverna.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Felagreektaverna.com%2Fcontact%2F&format=xml",
           "type": "text/xml+oembed",
           "title": "oEmbed (XML)",
           "discoveredFrom": "https://elagreektaverna.com/contact/",
@@ -7469,14 +7469,14 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "reviewState": "verified_link"
         },
         {
-          "url": "https://pzzaco.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fpzzaco.ca%2F&#038;format=xml",
+          "url": "https://pzzaco.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fpzzaco.ca%2F&format=xml",
           "type": "text/xml+oembed",
           "title": "oEmbed (XML)",
           "discoveredFrom": "https://pzzaco.ca/",
           "reviewState": "verified_link"
         },
         {
-          "url": "https://pzzaco.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fpzzaco.ca%2Fcontact-us%2F&#038;format=xml",
+          "url": "https://pzzaco.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fpzzaco.ca%2Fcontact-us%2F&format=xml",
           "type": "text/xml+oembed",
           "title": "oEmbed (XML)",
           "discoveredFrom": "https://pzzaco.ca/contact-us/",
@@ -8207,7 +8207,7 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "reviewState": "verified_link"
         },
         {
-          "url": "http://wasabihouse.ca/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwasabihouse.ca%2Fabout%2F&#038;format=xml",
+          "url": "http://wasabihouse.ca/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwasabihouse.ca%2Fabout%2F&format=xml",
           "type": "text/xml+oembed",
           "title": "Website feed",
           "discoveredFrom": "http://wasabihouse.ca/about/",
@@ -8274,21 +8274,21 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "reviewState": "verified_link"
         },
         {
-          "url": "https://durtynellys.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdurtynellys.ca%2F&#038;format=xml",
+          "url": "https://durtynellys.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdurtynellys.ca%2F&format=xml",
           "type": "text/xml+oembed",
           "title": "oEmbed (XML)",
           "discoveredFrom": "https://durtynellys.ca/",
           "reviewState": "verified_link"
         },
         {
-          "url": "https://durtynellys.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdurtynellys.ca%2Fabout%2F&#038;format=xml",
+          "url": "https://durtynellys.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdurtynellys.ca%2Fabout%2F&format=xml",
           "type": "text/xml+oembed",
           "title": "oEmbed (XML)",
           "discoveredFrom": "https://durtynellys.ca/about/",
           "reviewState": "verified_link"
         },
         {
-          "url": "https://durtynellys.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdurtynellys.ca%2Fcontact%2F&#038;format=xml",
+          "url": "https://durtynellys.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdurtynellys.ca%2Fcontact%2F&format=xml",
           "type": "text/xml+oembed",
           "title": "oEmbed (XML)",
           "discoveredFrom": "https://durtynellys.ca/contact/",
@@ -8823,21 +8823,21 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "reviewState": "verified_link"
         },
         {
-          "url": "https://www.chezcora.com/en/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.chezcora.com%2Fen%2Fbreakfast-lunch-restaurants%2Fcora-halifax-downtown%2F&#038;format=xml",
+          "url": "https://www.chezcora.com/en/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.chezcora.com%2Fen%2Fbreakfast-lunch-restaurants%2Fcora-halifax-downtown%2F&format=xml",
           "type": "text/xml+oembed",
           "title": "oEmbed (XML)",
           "discoveredFrom": "https://www.chezcora.com/en/breakfast-lunch-restaurants/cora-halifax-downtown/",
           "reviewState": "verified_link"
         },
         {
-          "url": "https://www.chezcora.com/en/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.chezcora.com%2Fen%2Fbreakfast-lunch-restaurants%2Fcora-abbotsford%2F&#038;format=xml",
+          "url": "https://www.chezcora.com/en/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.chezcora.com%2Fen%2Fbreakfast-lunch-restaurants%2Fcora-abbotsford%2F&format=xml",
           "type": "text/xml+oembed",
           "title": "oEmbed (XML)",
           "discoveredFrom": "https://www.chezcora.com/en/breakfast-lunch-restaurants/cora-abbotsford/",
           "reviewState": "verified_link"
         },
         {
-          "url": "https://www.chezcora.com/en/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.chezcora.com%2Fen%2Fbreakfast-lunch-restaurants%2Fcora-acadie-montreal%2F&#038;format=xml",
+          "url": "https://www.chezcora.com/en/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.chezcora.com%2Fen%2Fbreakfast-lunch-restaurants%2Fcora-acadie-montreal%2F&format=xml",
           "type": "text/xml+oembed",
           "title": "oEmbed (XML)",
           "discoveredFrom": "https://www.chezcora.com/en/breakfast-lunch-restaurants/cora-acadie-montreal/",
@@ -9628,7 +9628,7 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "reviewState": "verified_link"
         },
         {
-          "url": "https://theostrichclub.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Ftheostrichclub.ca%2F&#038;format=xml",
+          "url": "https://theostrichclub.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Ftheostrichclub.ca%2F&format=xml",
           "type": "text/xml+oembed",
           "title": "Website feed",
           "discoveredFrom": "https://theostrichclub.ca/",
@@ -9668,7 +9668,7 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       ],
       "feeds": [
         {
-          "url": "https://lucyshydrostone.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Flucyshydrostone.ca%2F&#038;format=xml",
+          "url": "https://lucyshydrostone.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Flucyshydrostone.ca%2F&format=xml",
           "type": "text/xml+oembed",
           "title": "oEmbed (XML)",
           "discoveredFrom": "https://lucyshydrostone.ca/",
@@ -9808,7 +9808,7 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "reviewState": "verified_link"
         },
         {
-          "url": "https://www.stubborngoat.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.stubborngoat.ca%2F&#038;format=xml",
+          "url": "https://www.stubborngoat.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.stubborngoat.ca%2F&format=xml",
           "type": "text/xml+oembed",
           "title": "oEmbed (XML)",
           "discoveredFrom": "https://www.stubborngoat.ca/",
@@ -9896,21 +9896,21 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "relatedLinks": [],
       "feeds": [
         {
-          "url": "https://twoifbyseacafe.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Ftwoifbyseacafe.ca%2F&#038;format=xml",
+          "url": "https://twoifbyseacafe.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Ftwoifbyseacafe.ca%2F&format=xml",
           "type": "text/xml+oembed",
           "title": "oEmbed (XML)",
           "discoveredFrom": "https://twoifbyseacafe.ca/",
           "reviewState": "verified_link"
         },
         {
-          "url": "https://twoifbyseacafe.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Ftwoifbyseacafe.ca%2Fabout-us%2F&#038;format=xml",
+          "url": "https://twoifbyseacafe.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Ftwoifbyseacafe.ca%2Fabout-us%2F&format=xml",
           "type": "text/xml+oembed",
           "title": "oEmbed (XML)",
           "discoveredFrom": "https://twoifbyseacafe.ca/about-us/",
           "reviewState": "verified_link"
         },
         {
-          "url": "https://twoifbyseacafe.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Ftwoifbyseacafe.ca%2Fcontact%2F&#038;format=xml",
+          "url": "https://twoifbyseacafe.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Ftwoifbyseacafe.ca%2Fcontact%2F&format=xml",
           "type": "text/xml+oembed",
           "title": "oEmbed (XML)",
           "discoveredFrom": "https://twoifbyseacafe.ca/contact/",
@@ -10127,21 +10127,21 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "reviewState": "verified_link"
         },
         {
-          "url": "https://www.lebistrohalifax.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.lebistrohalifax.com%2F&#038;format=xml",
+          "url": "https://www.lebistrohalifax.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.lebistrohalifax.com%2F&format=xml",
           "type": "text/xml+oembed",
           "title": "oEmbed (XML)",
           "discoveredFrom": "https://www.lebistrohalifax.com/",
           "reviewState": "verified_link"
         },
         {
-          "url": "https://www.lebistrohalifax.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.lebistrohalifax.com%2Four-story%2F&#038;format=xml",
+          "url": "https://www.lebistrohalifax.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.lebistrohalifax.com%2Four-story%2F&format=xml",
           "type": "text/xml+oembed",
           "title": "oEmbed (XML)",
           "discoveredFrom": "https://www.lebistrohalifax.com/our-story/",
           "reviewState": "verified_link"
         },
         {
-          "url": "https://www.lebistrohalifax.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.lebistrohalifax.com%2Fcontact%2F&#038;format=xml",
+          "url": "https://www.lebistrohalifax.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.lebistrohalifax.com%2Fcontact%2F&format=xml",
           "type": "text/xml+oembed",
           "title": "oEmbed (XML)",
           "discoveredFrom": "https://www.lebistrohalifax.com/contact/",
@@ -10309,21 +10309,21 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "reviewState": "verified_link"
         },
         {
-          "url": "https://stonepizza.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fstonepizza.ca%2F&#038;format=xml",
+          "url": "https://stonepizza.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fstonepizza.ca%2F&format=xml",
           "type": "text/xml+oembed",
           "title": "oEmbed (XML)",
           "discoveredFrom": "https://stonepizza.ca/",
           "reviewState": "verified_link"
         },
         {
-          "url": "https://stonepizza.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fstonepizza.ca%2Fcontact%2F&#038;format=xml",
+          "url": "https://stonepizza.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fstonepizza.ca%2Fcontact%2F&format=xml",
           "type": "text/xml+oembed",
           "title": "oEmbed (XML)",
           "discoveredFrom": "https://stonepizza.ca/contact/",
           "reviewState": "verified_link"
         },
         {
-          "url": "https://stonepizza.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fstonepizza.ca%2Fabout%2F&#038;format=xml",
+          "url": "https://stonepizza.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fstonepizza.ca%2Fabout%2F&format=xml",
           "type": "text/xml+oembed",
           "title": "oEmbed (XML)",
           "discoveredFrom": "https://stonepizza.ca/about/",
@@ -10446,7 +10446,7 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "reviewState": "verified_link"
         },
         {
-          "url": "https://www.stlouiswings.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.stlouiswings.com%2F&amp;format=xml",
+          "url": "https://www.stlouiswings.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.stlouiswings.com%2F&format=xml",
           "type": "text/xml+oembed",
           "title": "oEmbed (XML)",
           "discoveredFrom": "https://locations.stlouiswings.com/ns-dartmouth-2201/",
@@ -10731,42 +10731,42 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       ],
       "feeds": [
         {
-          "url": "http://www.genjisushi.ca/?feed=rss2&#038;page_id=352",
+          "url": "http://www.genjisushi.ca/?feed=rss2&page_id=352",
           "type": "application/rss+xml",
           "title": "Genji Sushi &raquo; home Comments Feed",
           "discoveredFrom": "http://www.genjisushi.ca/",
           "reviewState": "verified_link"
         },
         {
-          "url": "http://www.genjisushi.ca/index.php?rest_route=%2Foembed%2F1.0%2Fembed&#038;url=http%3A%2F%2Fwww.genjisushi.ca%2F&#038;format=xml",
+          "url": "http://www.genjisushi.ca/index.php?rest_route=%2Foembed%2F1.0%2Fembed&url=http%3A%2F%2Fwww.genjisushi.ca%2F&format=xml",
           "type": "text/xml+oembed",
           "title": "Website feed",
           "discoveredFrom": "http://www.genjisushi.ca/",
           "reviewState": "verified_link"
         },
         {
-          "url": "http://www.genjisushi.ca/?feed=rss2&#038;page_id=234",
+          "url": "http://www.genjisushi.ca/?feed=rss2&page_id=234",
           "type": "application/rss+xml",
           "title": "Genji Sushi &raquo; About Comments Feed",
           "discoveredFrom": "http://www.genjisushi.ca/?page_id=234",
           "reviewState": "verified_link"
         },
         {
-          "url": "http://www.genjisushi.ca/index.php?rest_route=%2Foembed%2F1.0%2Fembed&#038;url=http%3A%2F%2Fwww.genjisushi.ca%2F%3Fpage_id%3D234&#038;format=xml",
+          "url": "http://www.genjisushi.ca/index.php?rest_route=%2Foembed%2F1.0%2Fembed&url=http%3A%2F%2Fwww.genjisushi.ca%2F%3Fpage_id%3D234&format=xml",
           "type": "text/xml+oembed",
           "title": "Website feed",
           "discoveredFrom": "http://www.genjisushi.ca/?page_id=234",
           "reviewState": "verified_link"
         },
         {
-          "url": "http://www.genjisushi.ca/?feed=rss2&#038;page_id=50",
+          "url": "http://www.genjisushi.ca/?feed=rss2&page_id=50",
           "type": "application/rss+xml",
           "title": "Genji Sushi &raquo; Our restaurant Comments Feed",
           "discoveredFrom": "http://www.genjisushi.ca/?page_id=50",
           "reviewState": "verified_link"
         },
         {
-          "url": "http://www.genjisushi.ca/index.php?rest_route=%2Foembed%2F1.0%2Fembed&#038;url=http%3A%2F%2Fwww.genjisushi.ca%2F%3Fpage_id%3D50&#038;format=xml",
+          "url": "http://www.genjisushi.ca/index.php?rest_route=%2Foembed%2F1.0%2Fembed&url=http%3A%2F%2Fwww.genjisushi.ca%2F%3Fpage_id%3D50&format=xml",
           "type": "text/xml+oembed",
           "title": "Website feed",
           "discoveredFrom": "http://www.genjisushi.ca/?page_id=50",
@@ -10866,7 +10866,7 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "reviewState": "verified_link"
         },
         {
-          "url": "https://www.ristoranteamano.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.ristoranteamano.ca%2F&#038;format=xml",
+          "url": "https://www.ristoranteamano.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.ristoranteamano.ca%2F&format=xml",
           "type": "text/xml+oembed",
           "title": "Website feed",
           "discoveredFrom": "https://www.ristoranteamano.ca/",
@@ -11258,14 +11258,14 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "reviewState": "verified_link"
         },
         {
-          "url": "https://downtownpizza.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdowntownpizza.ca%2F&#038;format=xml",
+          "url": "https://downtownpizza.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdowntownpizza.ca%2F&format=xml",
           "type": "text/xml+oembed",
           "title": "oEmbed (XML)",
           "discoveredFrom": "https://downtownpizza.ca/",
           "reviewState": "verified_link"
         },
         {
-          "url": "https://downtownpizza.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdowntownpizza.ca%2Fcontact%2F&#038;format=xml",
+          "url": "https://downtownpizza.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdowntownpizza.ca%2Fcontact%2F&format=xml",
           "type": "text/xml+oembed",
           "title": "oEmbed (XML)",
           "discoveredFrom": "https://downtownpizza.ca/contact/",
@@ -11681,7 +11681,7 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "relatedLinks": [
         {
           "kind": "reservations",
-          "url": "https://www.opentable.ca/restref/client/?restref=269812&amp;lang=en-CA&amp;corrid=23ed6e1b-92ac-4ee2-b80a-63ca393a1432",
+          "url": "https://www.opentable.ca/restref/client/?restref=269812&lang=en-CA&corrid=23ed6e1b-92ac-4ee2-b80a-63ca393a1432",
           "label": "Reserve Now",
           "discoveredFrom": "https://thekeg.com/en/locations/halifax",
           "associationBasis": "linked_from_official_website",
@@ -11717,7 +11717,7 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
         },
         {
           "kind": "reservations",
-          "url": "https://www.opentable.ca/restref/client/?restref=1027105&amp;lang=en-CA&amp;corrid=886e38ee-e4fa-44bb-8b88-8b42e9f69bcb",
+          "url": "https://www.opentable.ca/restref/client/?restref=1027105&lang=en-CA&corrid=886e38ee-e4fa-44bb-8b88-8b42e9f69bcb",
           "label": "Reserve Now",
           "discoveredFrom": "https://thekeg.com/en/locations",
           "associationBasis": "linked_from_official_location_page",
@@ -11741,7 +11741,7 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
         },
         {
           "kind": "reservations",
-          "url": "https://www.opentable.ca/restref/client/?restref=189073&amp;lang=en-CA&amp;corrid=c1c442e7-6e31-449e-888e-90449157020d",
+          "url": "https://www.opentable.ca/restref/client/?restref=189073&lang=en-CA&corrid=c1c442e7-6e31-449e-888e-90449157020d",
           "label": "Reserve Now",
           "discoveredFrom": "https://thekeg.com/en/locations",
           "associationBasis": "linked_from_official_location_page",
@@ -11765,7 +11765,7 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
         },
         {
           "kind": "reservations",
-          "url": "https://www.opentable.ca/restref/client/?restref=169774&amp;lang=en-CA&amp;corrid=43656ac5-b077-41d6-8872-95523d97cbc8",
+          "url": "https://www.opentable.ca/restref/client/?restref=169774&lang=en-CA&corrid=43656ac5-b077-41d6-8872-95523d97cbc8",
           "label": "Reserve Now",
           "discoveredFrom": "https://thekeg.com/en/locations",
           "associationBasis": "linked_from_official_location_page",
@@ -11789,7 +11789,7 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
         },
         {
           "kind": "reservations",
-          "url": "https://www.opentable.com/restref/client/?restref=187069&amp;lang=en-US&amp;corrid=1d896089-083c-438c-85df-34e7c079d060",
+          "url": "https://www.opentable.com/restref/client/?restref=187069&lang=en-US&corrid=1d896089-083c-438c-85df-34e7c079d060",
           "label": "Reserve Now",
           "discoveredFrom": "https://thekeg.com/en/locations",
           "associationBasis": "linked_from_official_location_page",
@@ -11813,7 +11813,7 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
         },
         {
           "kind": "reservations",
-          "url": "https://www.opentable.ca/r/the-keg-steakhouse-and-bar-aurora-reservations-aurora?restref=1273216&amp;lang=en-CA&amp;ot_source=Restaurant%20website",
+          "url": "https://www.opentable.ca/r/the-keg-steakhouse-and-bar-aurora-reservations-aurora?restref=1273216&lang=en-CA&ot_source=Restaurant%20website",
           "label": "Reserve Now",
           "discoveredFrom": "https://thekeg.com/en/locations",
           "associationBasis": "linked_from_official_location_page",
@@ -11837,7 +11837,7 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
         },
         {
           "kind": "reservations",
-          "url": "https://www.opentable.ca/restref/client/?restref=269221&amp;lang=en-CA&amp;corrid=64259a20-a675-416e-93c5-0e985f8d0c8f",
+          "url": "https://www.opentable.ca/restref/client/?restref=269221&lang=en-CA&corrid=64259a20-a675-416e-93c5-0e985f8d0c8f",
           "label": "Reserve Now",
           "discoveredFrom": "https://thekeg.com/en/locations",
           "associationBasis": "linked_from_official_location_page",
@@ -11861,7 +11861,7 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
         },
         {
           "kind": "reservations",
-          "url": "https://www.opentable.ca/restref/client/?restref=268987&amp;lang=en-CA&amp;corrid=7da4cf8f-9332-4262-801d-71f0ac3346c4",
+          "url": "https://www.opentable.ca/restref/client/?restref=268987&lang=en-CA&corrid=7da4cf8f-9332-4262-801d-71f0ac3346c4",
           "label": "Reserve Now",
           "discoveredFrom": "https://thekeg.com/en/locations",
           "associationBasis": "linked_from_official_location_page",
@@ -11885,7 +11885,7 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
         },
         {
           "kind": "reservations",
-          "url": "https://www.opentable.ca/restref/client/?restref=255922&amp;lang=en-CA&amp;corrid=8b47b36b-2cf6-4c07-9396-21caf4b7be11",
+          "url": "https://www.opentable.ca/restref/client/?restref=255922&lang=en-CA&corrid=8b47b36b-2cf6-4c07-9396-21caf4b7be11",
           "label": "Reserve Now",
           "discoveredFrom": "https://thekeg.com/en/locations",
           "associationBasis": "linked_from_official_location_page",
@@ -11991,7 +11991,7 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "reviewState": "verified_link"
         },
         {
-          "url": "https://sullyandporter.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fsullyandporter.com%2F&#038;format=xml",
+          "url": "https://sullyandporter.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fsullyandporter.com%2F&format=xml",
           "type": "text/xml+oembed",
           "title": "oEmbed (XML)",
           "discoveredFrom": "https://sullyandporter.com/",
@@ -12095,7 +12095,7 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
         },
         {
           "kind": "tickets",
-          "url": "https://www.eventbrite.ca/e/new-years-eve-tickets-1977500641652?aff=ebdssbcategorybrowse&amp;keep_tld=1",
+          "url": "https://www.eventbrite.ca/e/new-years-eve-tickets-1977500641652?aff=ebdssbcategorybrowse&keep_tld=1",
           "label": "Purchase ticket",
           "discoveredFrom": "https://sweetandsassy.ca/",
           "associationBasis": "linked_from_official_website",
@@ -12177,14 +12177,14 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       ],
       "feeds": [
         {
-          "url": "https://www.thesummitcafe.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.thesummitcafe.ca%2F&#038;format=xml",
+          "url": "https://www.thesummitcafe.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.thesummitcafe.ca%2F&format=xml",
           "type": "text/xml+oembed",
           "title": "oEmbed (XML)",
           "discoveredFrom": "https://www.thesummitcafe.ca/",
           "reviewState": "verified_link"
         },
         {
-          "url": "https://www.thesummitcafe.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.thesummitcafe.ca%2Fcontact-us%2F&#038;format=xml",
+          "url": "https://www.thesummitcafe.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.thesummitcafe.ca%2Fcontact-us%2F&format=xml",
           "type": "text/xml+oembed",
           "title": "oEmbed (XML)",
           "discoveredFrom": "https://www.thesummitcafe.ca/contact-us/",
@@ -12372,7 +12372,7 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
         },
         {
           "kind": "reservations",
-          "url": "https://www.opentable.ca/r/studio-east-halifax?corrid=46ab8db6-a438-466c-8be6-c7bd8f78ca55&amp;avt=eyJ2IjoyLCJtIjowLCJwIjowLCJzIjoxLCJuIjowfQ&amp;p=2&amp;sd=2026-01-06T22%3A30%3A00",
+          "url": "https://www.opentable.ca/r/studio-east-halifax?corrid=46ab8db6-a438-466c-8be6-c7bd8f78ca55&avt=eyJ2IjoyLCJtIjowLCJwIjowLCJzIjoxLCJuIjowfQ&p=2&sd=2026-01-06T22%3A30%3A00",
           "label": "reservations",
           "discoveredFrom": "https://www.studioeastfood.ca/aboutus",
           "associationBasis": "linked_from_official_website",
@@ -12447,7 +12447,7 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "reviewState": "verified_link"
         },
         {
-          "url": "https://2crowsbrewing.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2F2crowsbrewing.com%2F&#038;format=xml",
+          "url": "https://2crowsbrewing.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2F2crowsbrewing.com%2F&format=xml",
           "type": "text/xml+oembed",
           "title": "oEmbed (XML)",
           "discoveredFrom": "https://2crowsbrewing.com/",
@@ -12638,21 +12638,21 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "reviewState": "verified_link"
         },
         {
-          "url": "https://shop.goodrobotbrewing.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshop.goodrobotbrewing.ca%2F&#038;format=xml",
+          "url": "https://shop.goodrobotbrewing.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshop.goodrobotbrewing.ca%2F&format=xml",
           "type": "text/xml+oembed",
           "title": "oEmbed (XML)",
           "discoveredFrom": "https://goodrobotbrewing.ca/",
           "reviewState": "verified_link"
         },
         {
-          "url": "https://goodrobotbrewing.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fgoodrobotbrewing.ca%2Flocations%2F&#038;format=xml",
+          "url": "https://goodrobotbrewing.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fgoodrobotbrewing.ca%2Flocations%2F&format=xml",
           "type": "text/xml+oembed",
           "title": "oEmbed (XML)",
           "discoveredFrom": "https://goodrobotbrewing.ca/locations/",
           "reviewState": "verified_link"
         },
         {
-          "url": "https://goodrobotbrewing.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fgoodrobotbrewing.ca%2Fcontact%2F&#038;format=xml",
+          "url": "https://goodrobotbrewing.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fgoodrobotbrewing.ca%2Fcontact%2F&format=xml",
           "type": "text/xml+oembed",
           "title": "oEmbed (XML)",
           "discoveredFrom": "https://goodrobotbrewing.ca/contact/",
@@ -13253,14 +13253,14 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "reviewState": "verified_link"
         },
         {
-          "url": "https://sushinami.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fsushinami.ca%2F&#038;format=xml",
+          "url": "https://sushinami.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fsushinami.ca%2F&format=xml",
           "type": "text/xml+oembed",
           "title": "oEmbed (XML)",
           "discoveredFrom": "https://sushinami.ca/",
           "reviewState": "verified_link"
         },
         {
-          "url": "https://sushinami.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fsushinami.ca%2Fdowntown-halifax%2F&#038;format=xml",
+          "url": "https://sushinami.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fsushinami.ca%2Fdowntown-halifax%2F&format=xml",
           "type": "text/xml+oembed",
           "title": "oEmbed (XML)",
           "discoveredFrom": "https://sushinami.ca/downtown-halifax/",
@@ -13360,7 +13360,7 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "reviewState": "verified_link"
         },
         {
-          "url": "https://donninispizza.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdonninispizza.com%2F&#038;format=xml",
+          "url": "https://donninispizza.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdonninispizza.com%2F&format=xml",
           "type": "text/xml+oembed",
           "title": "oEmbed (XML)",
           "discoveredFrom": "https://donninispizza.com/",
@@ -13723,21 +13723,21 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       ],
       "feeds": [
         {
-          "url": "https://ukings.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fukings.ca%2Fcampus-community%2Fstudent-life%2Fthe-wardroom%2F&#038;format=xml",
+          "url": "https://ukings.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fukings.ca%2Fcampus-community%2Fstudent-life%2Fthe-wardroom%2F&format=xml",
           "type": "text/xml+oembed",
           "title": "oEmbed (XML)",
           "discoveredFrom": "https://ukings.ca/campus-community/student-life/the-wardroom/",
           "reviewState": "verified_link"
         },
         {
-          "url": "https://ukings.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fukings.ca%2Fcampus-community%2Fabout-kings%2F&#038;format=xml",
+          "url": "https://ukings.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fukings.ca%2Fcampus-community%2Fabout-kings%2F&format=xml",
           "type": "text/xml+oembed",
           "title": "oEmbed (XML)",
           "discoveredFrom": "https://ukings.ca/campus-community/about-kings/",
           "reviewState": "verified_link"
         },
         {
-          "url": "https://ukings.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fukings.ca%2Falumni%2Fconnect%2F&#038;format=xml",
+          "url": "https://ukings.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fukings.ca%2Falumni%2Fconnect%2F&format=xml",
           "type": "text/xml+oembed",
           "title": "oEmbed (XML)",
           "discoveredFrom": "https://ukings.ca/alumni/connect/",
@@ -13885,21 +13885,21 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       ],
       "feeds": [
         {
-          "url": "https://orsopub.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Forsopub.ca%2F&#038;format=xml",
+          "url": "https://orsopub.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Forsopub.ca%2F&format=xml",
           "type": "text/xml+oembed",
           "title": "oEmbed (XML)",
           "discoveredFrom": "https://orsopub.ca/",
           "reviewState": "verified_link"
         },
         {
-          "url": "https://orsopub.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Forsopub.ca%2Fabout%2F&#038;format=xml",
+          "url": "https://orsopub.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Forsopub.ca%2Fabout%2F&format=xml",
           "type": "text/xml+oembed",
           "title": "oEmbed (XML)",
           "discoveredFrom": "https://orsopub.ca/about/",
           "reviewState": "verified_link"
         },
         {
-          "url": "https://orsopub.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Forsopub.ca%2Fcontact%2F&#038;format=xml",
+          "url": "https://orsopub.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Forsopub.ca%2Fcontact%2F&format=xml",
           "type": "text/xml+oembed",
           "title": "oEmbed (XML)",
           "discoveredFrom": "https://orsopub.ca/contact/",
@@ -14106,7 +14106,7 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "carriedForwardAt": "2026-08-28T21:37:00.343Z"
         },
         {
-          "url": "https://afrite.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fafrite.ca%2F&#038;format=xml",
+          "url": "https://afrite.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fafrite.ca%2F&format=xml",
           "type": "text/xml+oembed",
           "title": "oEmbed (XML)",
           "discoveredFrom": "https://afrite.ca/",
@@ -14671,14 +14671,14 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "reviewState": "verified_link"
         },
         {
-          "url": "https://www.mexicalirosas.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.mexicalirosas.com%2Fhalifax%2F&#038;format=xml",
+          "url": "https://www.mexicalirosas.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.mexicalirosas.com%2Fhalifax%2F&format=xml",
           "type": "text/xml+oembed",
           "title": "oEmbed (XML)",
           "discoveredFrom": "https://www.mexicalirosas.com/halifax/",
           "reviewState": "verified_link"
         },
         {
-          "url": "https://www.mexicalirosas.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.mexicalirosas.com%2Fcontact-us%2F&#038;format=xml",
+          "url": "https://www.mexicalirosas.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.mexicalirosas.com%2Fcontact-us%2F&format=xml",
           "type": "text/xml+oembed",
           "title": "oEmbed (XML)",
           "discoveredFrom": "https://www.mexicalirosas.com/contact-us/",
@@ -14828,21 +14828,21 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       ],
       "feeds": [
         {
-          "url": "https://www.rcr.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.rcr.ca%2Frestaurants%2Fcut-steakhouse%2F&#038;format=xml",
+          "url": "https://www.rcr.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.rcr.ca%2Frestaurants%2Fcut-steakhouse%2F&format=xml",
           "type": "text/xml+oembed",
           "title": "oEmbed (XML)",
           "discoveredFrom": "https://www.rcr.ca/restaurants/cut-steakhouse/",
           "reviewState": "verified_link"
         },
         {
-          "url": "https://www.rcr.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.rcr.ca%2Frestaurants%2F&#038;format=xml",
+          "url": "https://www.rcr.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.rcr.ca%2Frestaurants%2F&format=xml",
           "type": "text/xml+oembed",
           "title": "oEmbed (XML)",
           "discoveredFrom": "https://www.rcr.ca/restaurants/",
           "reviewState": "verified_link"
         },
         {
-          "url": "https://www.rcr.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.rcr.ca%2Fabout%2Fcareers%2F&#038;format=xml",
+          "url": "https://www.rcr.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.rcr.ca%2Fabout%2Fcareers%2F&format=xml",
           "type": "text/xml+oembed",
           "title": "oEmbed (XML)",
           "discoveredFrom": "https://www.rcr.ca/about/careers/",
@@ -15239,7 +15239,7 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "reviewState": "verified_link"
         },
         {
-          "url": "https://antojo.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fantojo.ca%2F&#038;format=xml",
+          "url": "https://antojo.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fantojo.ca%2F&format=xml",
           "type": "text/xml+oembed",
           "title": "oEmbed (XML)",
           "discoveredFrom": "https://antojo.ca/",
@@ -15515,21 +15515,21 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "reviewState": "verified_link"
         },
         {
-          "url": "https://elagreektaverna.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Felagreektaverna.com%2F&#038;format=xml",
+          "url": "https://elagreektaverna.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Felagreektaverna.com%2F&format=xml",
           "type": "text/xml+oembed",
           "title": "oEmbed (XML)",
           "discoveredFrom": "https://elagreektaverna.com/",
           "reviewState": "verified_link"
         },
         {
-          "url": "https://elagreektaverna.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Felagreektaverna.com%2Fabout%2F&#038;format=xml",
+          "url": "https://elagreektaverna.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Felagreektaverna.com%2Fabout%2F&format=xml",
           "type": "text/xml+oembed",
           "title": "oEmbed (XML)",
           "discoveredFrom": "https://elagreektaverna.com/about/",
           "reviewState": "verified_link"
         },
         {
-          "url": "https://elagreektaverna.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Felagreektaverna.com%2Fcontact%2F&#038;format=xml",
+          "url": "https://elagreektaverna.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Felagreektaverna.com%2Fcontact%2F&format=xml",
           "type": "text/xml+oembed",
           "title": "oEmbed (XML)",
           "discoveredFrom": "https://elagreektaverna.com/contact/",
@@ -15942,7 +15942,7 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
         },
         {
           "kind": "ordering",
-          "url": "https://order.online/store/moxies-plano-609847/?hideModal=true&#038;pickup=true&#038;display=order",
+          "url": "https://order.online/store/moxies-plano-609847/?hideModal=true&pickup=true&display=order",
           "label": "Pickup",
           "discoveredFrom": "https://moxies.com/",
           "associationBasis": "linked_from_official_website",
@@ -15954,7 +15954,7 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
         },
         {
           "kind": "ordering",
-          "url": "https://order.online/store/moxies-plano-609847/?delivery=true&#038;hideModal=true&#038;display=order",
+          "url": "https://order.online/store/moxies-plano-609847/?delivery=true&hideModal=true&display=order",
           "label": "Delivery",
           "discoveredFrom": "https://moxies.com/",
           "associationBasis": "linked_from_official_website",
@@ -16002,7 +16002,7 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
         },
         {
           "kind": "ordering",
-          "url": "https://www.doordash.com/en-CA/store/moxies-scottsdale-25657288/?srsltid=AfmBOor3tJw08ROGwmpjii2XhpL7aujQCBQ5hqaT2Trdj4Xyek55eNbi&#038;display=order",
+          "url": "https://www.doordash.com/en-CA/store/moxies-scottsdale-25657288/?srsltid=AfmBOor3tJw08ROGwmpjii2XhpL7aujQCBQ5hqaT2Trdj4Xyek55eNbi&display=order",
           "label": "Door Dash",
           "discoveredFrom": "https://moxies.com/",
           "associationBasis": "linked_from_official_website",
@@ -16161,14 +16161,14 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "reviewState": "verified_link"
         },
         {
-          "url": "https://moxies.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmoxies.com%2F&#038;format=xml",
+          "url": "https://moxies.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmoxies.com%2F&format=xml",
           "type": "text/xml+oembed",
           "title": "oEmbed (XML)",
           "discoveredFrom": "https://moxies.com/",
           "reviewState": "verified_link"
         },
         {
-          "url": "https://moxies.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmoxies.com%2Fabout%2F&#038;format=xml",
+          "url": "https://moxies.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmoxies.com%2Fabout%2F&format=xml",
           "type": "text/xml+oembed",
           "title": "oEmbed (XML)",
           "discoveredFrom": "https://moxies.com/about/",
@@ -16240,21 +16240,21 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "reviewState": "verified_link"
         },
         {
-          "url": "https://gahan.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fgahan.ca%2F&#038;format=xml",
+          "url": "https://gahan.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fgahan.ca%2F&format=xml",
           "type": "text/xml+oembed",
           "title": "oEmbed (XML)",
           "discoveredFrom": "https://gahan.ca/",
           "reviewState": "verified_link"
         },
         {
-          "url": "https://gahan.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fgahan.ca%2Frestaurants%2F&#038;format=xml",
+          "url": "https://gahan.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fgahan.ca%2Frestaurants%2F&format=xml",
           "type": "text/xml+oembed",
           "title": "oEmbed (XML)",
           "discoveredFrom": "https://gahan.ca/restaurants/",
           "reviewState": "verified_link"
         },
         {
-          "url": "https://gahan.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fgahan.ca%2Four-story%2F&#038;format=xml",
+          "url": "https://gahan.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fgahan.ca%2Four-story%2F&format=xml",
           "type": "text/xml+oembed",
           "title": "oEmbed (XML)",
           "discoveredFrom": "https://gahan.ca/our-story/",
@@ -16431,21 +16431,21 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       ],
       "feeds": [
         {
-          "url": "https://www.rcr.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.rcr.ca%2Frestaurants%2Fshuck-seafood-raw-bar%2F&#038;format=xml",
+          "url": "https://www.rcr.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.rcr.ca%2Frestaurants%2Fshuck-seafood-raw-bar%2F&format=xml",
           "type": "text/xml+oembed",
           "title": "oEmbed (XML)",
           "discoveredFrom": "https://www.rcr.ca/restaurants/shuck-seafood-raw-bar/",
           "reviewState": "verified_link"
         },
         {
-          "url": "https://www.rcr.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.rcr.ca%2Frestaurants%2F&#038;format=xml",
+          "url": "https://www.rcr.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.rcr.ca%2Frestaurants%2F&format=xml",
           "type": "text/xml+oembed",
           "title": "oEmbed (XML)",
           "discoveredFrom": "https://www.rcr.ca/restaurants/",
           "reviewState": "verified_link"
         },
         {
-          "url": "https://www.rcr.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.rcr.ca%2Fabout%2Fcareers%2F&#038;format=xml",
+          "url": "https://www.rcr.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.rcr.ca%2Fabout%2Fcareers%2F&format=xml",
           "type": "text/xml+oembed",
           "title": "oEmbed (XML)",
           "discoveredFrom": "https://www.rcr.ca/about/careers/",
@@ -16630,21 +16630,21 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       ],
       "feeds": [
         {
-          "url": "https://www.rcr.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.rcr.ca%2Frestaurants%2Fwaterfront-warehouse%2F&#038;format=xml",
+          "url": "https://www.rcr.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.rcr.ca%2Frestaurants%2Fwaterfront-warehouse%2F&format=xml",
           "type": "text/xml+oembed",
           "title": "oEmbed (XML)",
           "discoveredFrom": "https://www.rcr.ca/restaurants/waterfront-warehouse/",
           "reviewState": "verified_link"
         },
         {
-          "url": "https://www.rcr.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.rcr.ca%2Frestaurants%2F&#038;format=xml",
+          "url": "https://www.rcr.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.rcr.ca%2Frestaurants%2F&format=xml",
           "type": "text/xml+oembed",
           "title": "oEmbed (XML)",
           "discoveredFrom": "https://www.rcr.ca/restaurants/",
           "reviewState": "verified_link"
         },
         {
-          "url": "https://www.rcr.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.rcr.ca%2Fabout%2Fcareers%2F&#038;format=xml",
+          "url": "https://www.rcr.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.rcr.ca%2Fabout%2Fcareers%2F&format=xml",
           "type": "text/xml+oembed",
           "title": "oEmbed (XML)",
           "discoveredFrom": "https://www.rcr.ca/about/careers/",
@@ -16773,7 +16773,7 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "reviewState": "verified_link"
         },
         {
-          "url": "https://smokehousebrewery.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fsmokehousebrewery.ca%2F&#038;format=xml",
+          "url": "https://smokehousebrewery.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fsmokehousebrewery.ca%2F&format=xml",
           "type": "text/xml+oembed",
           "title": "oEmbed (XML)",
           "discoveredFrom": "https://smokehousebrewery.ca/",
@@ -17169,7 +17169,7 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "reviewState": "verified_link"
         },
         {
-          "url": "https://www.barburrito.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.barburrito.ca%2Flocation%2Fdartmouth%2F&#038;format=xml",
+          "url": "https://www.barburrito.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.barburrito.ca%2Flocation%2Fdartmouth%2F&format=xml",
           "type": "text/xml+oembed",
           "title": "Website feed",
           "discoveredFrom": "https://www.barburrito.ca/location/dartmouth/",
@@ -17426,7 +17426,7 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "relatedLinks": [
         {
           "kind": "reservations",
-          "url": "https://www.opentable.ca/widget/comms/mural?rid=1069090&amp;lang=en-CA",
+          "url": "https://www.opentable.ca/widget/comms/mural?rid=1069090&lang=en-CA",
           "label": "SIGN ME UP",
           "discoveredFrom": "https://lionshead.ca/",
           "associationBasis": "linked_from_official_website",
@@ -17849,8 +17849,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "platform": "instagram",
           "platformKind": "social",
           "handle": "trident_cafe_halifax",
-          "url": "https://www.instagram.com/trident_cafe_halifax?igsh=bWV6NDEwcjg1azZ3&#038;utm_source=website",
-          "profileUrl": "https://www.instagram.com/trident_cafe_halifax?igsh=bWV6NDEwcjg1azZ3&#038;utm_source=website",
+          "url": "https://www.instagram.com/trident_cafe_halifax?igsh=bWV6NDEwcjg1azZ3&utm_source=website",
+          "profileUrl": "https://www.instagram.com/trident_cafe_halifax?igsh=bWV6NDEwcjg1azZ3&utm_source=website",
           "label": "Instagram",
           "locationSpecific": false,
           "sharedBrandProfile": false,
@@ -17918,7 +17918,7 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "reviewState": "verified_link"
         },
         {
-          "url": "https://tridenthalifax.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Ftridenthalifax.ca%2Fcontact-the-trident%2F&#038;format=xml",
+          "url": "https://tridenthalifax.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Ftridenthalifax.ca%2Fcontact-the-trident%2F&format=xml",
           "type": "text/xml+oembed",
           "title": "oEmbed (XML)",
           "discoveredFrom": "https://tridenthalifax.ca/contact-the-trident/",
@@ -18045,7 +18045,7 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
         },
         {
           "kind": "reservations",
-          "url": "https://www.opentable.ca/restaurant/profile/1336126/reserve?rid=1336126&amp;restref=1336126",
+          "url": "https://www.opentable.ca/restaurant/profile/1336126/reserve?rid=1336126&restref=1336126",
           "label": "reservations",
           "discoveredFrom": "https://www.rcr.ca/restaurants/pazzo-italian-ristorante/",
           "associationBasis": "linked_from_official_website",
@@ -18058,21 +18058,21 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       ],
       "feeds": [
         {
-          "url": "https://www.rcr.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.rcr.ca%2Frestaurants%2Fpazzo-italian-ristorante%2F&#038;format=xml",
+          "url": "https://www.rcr.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.rcr.ca%2Frestaurants%2Fpazzo-italian-ristorante%2F&format=xml",
           "type": "text/xml+oembed",
           "title": "oEmbed (XML)",
           "discoveredFrom": "https://www.rcr.ca/restaurants/pazzo-italian-ristorante/",
           "reviewState": "verified_link"
         },
         {
-          "url": "https://www.rcr.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.rcr.ca%2Frestaurants%2F&#038;format=xml",
+          "url": "https://www.rcr.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.rcr.ca%2Frestaurants%2F&format=xml",
           "type": "text/xml+oembed",
           "title": "oEmbed (XML)",
           "discoveredFrom": "https://www.rcr.ca/restaurants/",
           "reviewState": "verified_link"
         },
         {
-          "url": "https://www.rcr.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.rcr.ca%2Fabout%2Fcareers%2F&#038;format=xml",
+          "url": "https://www.rcr.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.rcr.ca%2Fabout%2Fcareers%2F&format=xml",
           "type": "text/xml+oembed",
           "title": "oEmbed (XML)",
           "discoveredFrom": "https://www.rcr.ca/about/careers/",
@@ -18278,7 +18278,7 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       ],
       "feeds": [
         {
-          "url": "https://www.kingofdonair.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.kingofdonair.ca%2Forder-online-choose-a-location%2F&#038;format=xml",
+          "url": "https://www.kingofdonair.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.kingofdonair.ca%2Forder-online-choose-a-location%2F&format=xml",
           "type": "text/xml+oembed",
           "title": "oEmbed (XML)",
           "discoveredFrom": "https://www.kingofdonair.ca/order-online-choose-a-location/",
@@ -18541,21 +18541,21 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "reviewState": "verified_link"
         },
         {
-          "url": "https://motherspizzahalifax.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmotherspizzahalifax.ca%2F&#038;format=xml",
+          "url": "https://motherspizzahalifax.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmotherspizzahalifax.ca%2F&format=xml",
           "type": "text/xml+oembed",
           "title": "oEmbed (XML)",
           "discoveredFrom": "https://motherspizzahalifax.ca/",
           "reviewState": "verified_link"
         },
         {
-          "url": "https://motherspizzahalifax.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmotherspizzahalifax.ca%2Fmenu-restaurant%2F&#038;format=xml",
+          "url": "https://motherspizzahalifax.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmotherspizzahalifax.ca%2Fmenu-restaurant%2F&format=xml",
           "type": "text/xml+oembed",
           "title": "oEmbed (XML)",
           "discoveredFrom": "https://motherspizzahalifax.ca/menu-restaurant/",
           "reviewState": "verified_link"
         },
         {
-          "url": "https://motherspizzahalifax.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmotherspizzahalifax.ca%2Fabout-us%2F&#038;format=xml",
+          "url": "https://motherspizzahalifax.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmotherspizzahalifax.ca%2Fabout-us%2F&format=xml",
           "type": "text/xml+oembed",
           "title": "oEmbed (XML)",
           "discoveredFrom": "https://motherspizzahalifax.ca/about-us/",
@@ -18684,7 +18684,7 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "reviewState": "verified_link"
         },
         {
-          "url": "https://ihop.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fihop.ca%2F&#038;format=xml",
+          "url": "https://ihop.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fihop.ca%2F&format=xml",
           "type": "text/xml+oembed",
           "title": "oEmbed (XML)",
           "discoveredFrom": "https://ihop.ca/",
@@ -19301,21 +19301,21 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "reviewState": "verified_link"
         },
         {
-          "url": "https://www.thearmview.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.thearmview.com%2F&#038;format=xml",
+          "url": "https://www.thearmview.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.thearmview.com%2F&format=xml",
           "type": "text/xml+oembed",
           "title": "oEmbed (XML)",
           "discoveredFrom": "https://www.thearmview.com/",
           "reviewState": "verified_link"
         },
         {
-          "url": "https://www.thearmview.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.thearmview.com%2Fabout-the-armview%2F&#038;format=xml",
+          "url": "https://www.thearmview.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.thearmview.com%2Fabout-the-armview%2F&format=xml",
           "type": "text/xml+oembed",
           "title": "oEmbed (XML)",
           "discoveredFrom": "https://www.thearmview.com/about-the-armview/",
           "reviewState": "verified_link"
         },
         {
-          "url": "https://www.thearmview.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.thearmview.com%2Fcontact-us%2F&#038;format=xml",
+          "url": "https://www.thearmview.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.thearmview.com%2Fcontact-us%2F&format=xml",
           "type": "text/xml+oembed",
           "title": "oEmbed (XML)",
           "discoveredFrom": "https://www.thearmview.com/contact-us/",
@@ -19418,21 +19418,21 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "reviewState": "verified_link"
         },
         {
-          "url": "https://www.chinatownhalifax.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.chinatownhalifax.com%2F&#038;format=xml",
+          "url": "https://www.chinatownhalifax.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.chinatownhalifax.com%2F&format=xml",
           "type": "text/xml+oembed",
           "title": "oEmbed (XML)",
           "discoveredFrom": "https://www.chinatownhalifax.com/",
           "reviewState": "verified_link"
         },
         {
-          "url": "https://www.chinatownhalifax.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.chinatownhalifax.com%2Fabout-us%2F&#038;format=xml",
+          "url": "https://www.chinatownhalifax.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.chinatownhalifax.com%2Fabout-us%2F&format=xml",
           "type": "text/xml+oembed",
           "title": "oEmbed (XML)",
           "discoveredFrom": "https://www.chinatownhalifax.com/about-us/",
           "reviewState": "verified_link"
         },
         {
-          "url": "https://www.chinatownhalifax.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.chinatownhalifax.com%2Fcontact-us%2F&#038;format=xml",
+          "url": "https://www.chinatownhalifax.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.chinatownhalifax.com%2Fcontact-us%2F&format=xml",
           "type": "text/xml+oembed",
           "title": "oEmbed (XML)",
           "discoveredFrom": "https://www.chinatownhalifax.com/contact-us/",
@@ -19813,21 +19813,21 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "reviewState": "verified_link"
         },
         {
-          "url": "https://maygarden.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmaygarden.ca%2F&#038;format=xml",
+          "url": "https://maygarden.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmaygarden.ca%2F&format=xml",
           "type": "text/xml+oembed",
           "title": "oEmbed (XML)",
           "discoveredFrom": "https://maygarden.ca/",
           "reviewState": "verified_link"
         },
         {
-          "url": "https://maygarden.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmaygarden.ca%2Fabout-2%2F&#038;format=xml",
+          "url": "https://maygarden.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmaygarden.ca%2Fabout-2%2F&format=xml",
           "type": "text/xml+oembed",
           "title": "oEmbed (XML)",
           "discoveredFrom": "https://maygarden.ca/about-2/",
           "reviewState": "verified_link"
         },
         {
-          "url": "https://maygarden.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmaygarden.ca%2Fcontact-us-2%2F&#038;format=xml",
+          "url": "https://maygarden.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmaygarden.ca%2Fcontact-us-2%2F&format=xml",
           "type": "text/xml+oembed",
           "title": "oEmbed (XML)",
           "discoveredFrom": "https://maygarden.ca/contact-us-2/",
