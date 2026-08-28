@@ -18,7 +18,7 @@ on:
       - scripts/check-expanded-sources.mjs
 
 permissions:
-  contents: write
+  contents: read
 
 jobs:
   social-refresh:
@@ -27,8 +27,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v6
-        with:
-          fetch-depth: 0
 
       - name: Set up Node
         uses: actions/setup-node@v4
@@ -85,18 +83,3 @@ jobs:
             artifacts/expanded-source-integrity-report.json
           if-no-files-found: error
           retention-days: 30
-
-      - name: Capture reviewed source output on isolated branch
-        if: github.ref == 'refs/heads/events-social-expansion-20260828'
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/first-party-sources.js data/build/first-party-sources.json data/website-feed-signals.js data/build/website-feed-signals.json data/social-signals.js data/build/social-signals.json
-          if git diff --cached --quiet; then
-            echo "No source output changes to commit."
-            exit 0
-          fi
-          git commit -m "Refresh restaurant social and related source data"
-          git fetch origin events-social-expansion-20260828
-          git rebase origin/events-social-expansion-20260828
-          git push origin HEAD:events-social-expansion-20260828
