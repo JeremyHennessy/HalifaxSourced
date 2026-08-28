@@ -20,8 +20,11 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 22
-      - name: Check script syntax
-        run: node --check scripts/import-regional-library-events.mjs
+      - name: Check script syntax and deterministic parser semantics
+        run: |
+          node --check scripts/regional-library-lib.mjs
+          node --check scripts/import-regional-library-events.mjs
+          node scripts/test-regional-library-parser.mjs
       - name: Pull source-filtered Dartmouth and Bedford library events
         env:
           LIBRARY_REGIONAL_PAGE_LIMIT: 12
