@@ -1,0 +1,51 @@
+{
+  "version": 1,
+  "updatedAt": "2026-08-28",
+  "candidates": [
+    {
+      "id": "alderney-landing",
+      "name": "Alderney Landing",
+      "kind": "official_venue_calendar",
+      "url": "https://alderneylanding.com/events/",
+      "venueId": "alderney-landing-dartmouth",
+      "city": "Dartmouth",
+      "status": "blocked_pending_adapter",
+      "lastAttemptAt": "2026-08-28",
+      "lastFailure": "http_403 from GitHub Actions runner",
+      "recommendedNextInterface": "official structured calendar/feed/ticket interface if published",
+      "notes": "The public website is a valid official source target and is visible to ordinary browsers, but the automated GitHub runner receives HTTP 403. Halifax Sourced will not bypass the protection or claim this as active event coverage until a permitted stable interface is available."
+    },
+    {
+      "id": "discover-halifax-events",
+      "name": "Discover Halifax Events",
+      "kind": "official_tourism_calendar",
+      "url": "https://discoverhalifaxns.com/events/",
+      "status": "adapter_review",
+      "notes": "High-value HRM discovery target; establish a stable compliant interface before ingestion."
+    },
+    {
+      "id": "music-nova-scotia-events",
+      "name": "Music Nova Scotia Events",
+      "kind": "music_industry_calendar",
+      "url": "https://musicnovascotia.ca/events/",
+      "status": "adapter_review",
+      "notes": "Potential music coverage source; verify public structured interface and location filtering before enabling."
+    },
+    {
+      "id": "dalhousie-public-events",
+      "name": "Dalhousie University Public Events",
+      "kind": "university_calendar",
+      "url": "https://events.dal.ca/",
+      "status": "adapter_review",
+      "notes": "Use public-discovery events only; do not import internal administrative calendar items."
+    },
+    {
+      "id": "saint-marys-public-events",
+      "name": "Saint Mary's University Public Events",
+      "kind": "university_calendar",
+      "url": "https://www.smu.ca/events/",
+      "status": "adapter_review",
+      "notes": "Use public-discovery events only; verify durable calendar interface before enabling."
+    }
+  ]
+}
