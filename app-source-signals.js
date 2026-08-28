@@ -60,7 +60,7 @@ function socialSourceMeta(profile) {
   };
   const types = {
     facebook: "facebook_page",
-    instagram: "instagram_professional",
+    instagram: "instagram_profile",
     x: "x_profile",
     tiktok: "tiktok_profile",
     youtube: "youtube_channel",
@@ -93,15 +93,24 @@ for (const restaurant of restaurants) {
   const apiSignals = socialByRestaurant.get(restaurant.id) || [];
   const allSignals = [...feedSignals, ...apiSignals];
   const currentSignals = allSignals.filter((signal) => sourceSignalFresh(signal));
-  const uniqueProfiles = (firstParty?.socialProfiles || []).filter((profile) => profileAssociationCounts.get(profileKey(profile)) === 1);
+  const allProfiles = Array.isArray(firstParty?.socialProfiles) ? firstParty.socialProfiles : [];
+  const uniqueProfiles = allProfiles.filter((profile) => profileAssociationCounts.get(profileKey(profile)) === 1);
+  const sharedProfiles = allProfiles.filter((profile) => profileAssociationCounts.get(profileKey(profile)) > 1);
   const relatedLinks = Array.isArray(firstParty?.relatedLinks) ? firstParty.relatedLinks : [];
 
   restaurant.firstPartySources = firstParty;
   restaurant.websiteFeedSignals = feedSignals;
   restaurant.socialSignals = apiSignals;
   restaurant.currentSourceSignals = currentSignals;
-  restaurant.socialProfiles = uniqueProfiles;
+  // All profiles are useful navigation links when the restaurant-owned site links to them.
+  // Unique profiles remain a separate subset for unambiguous post-level Meta API association.
+  restaurant.socialProfiles = allProfiles;
+  restaurant.uniqueSocialProfiles = uniqueProfiles;
+  restaurant.sharedSocialProfiles = sharedProfiles;
   restaurant.relatedLinks = relatedLinks;
+  restaurant.orderingLinks = relatedLinks.filter((link) => link.kind === "ordering");
+  restaurant.newsletterLinks = relatedLinks.filter((link) => link.kind === "newsletter");
+  restaurant.ticketLinks = relatedLinks.filter((link) => link.kind === "tickets");
 
   const specialSignalLinks = currentSignals
     .filter((signal) => sourceSignalHas(signal, "specials"))
@@ -125,19 +134,32 @@ for (const restaurant of restaurants) {
       publishedAt: signal.publishedAt || null
     }));
 
+  const relatedMenuLinks = relatedLinks.filter((link) => link.kind === "menu").map((link) => ({ ...link, verifiedLink: true, sourceKind: "official_website_link" }));
+  const relatedReservationLinks = relatedLinks.filter((link) => link.kind === "reservations").map((link) => ({ ...link, verifiedLink: true, sourceKind: "official_website_link" }));
   const relatedSpecialLinks = relatedLinks.filter((link) => ["menu", "ordering"].includes(link.kind) && /special|happy hour|feature|deal|promo/i.test(link.label || ""));
   const relatedEventLinks = relatedLinks.filter((link) => ["events", "tickets"].includes(link.kind));
 
+  restaurant.menuLinks = uniqueSourceSignalLinks(restaurant.menuLinks, relatedMenuLinks);
+  restaurant.reservationLinks = uniqueSourceSignalLinks(restaurant.reservationLinks, relatedReservationLinks);
   restaurant.specialLinks = uniqueSourceSignalLinks(restaurant.specialLinks, [...specialSignalLinks, ...relatedSpecialLinks]);
   restaurant.eventLinks = uniqueSourceSignalLinks(restaurant.eventLinks, [...eventSignalLinks, ...relatedEventLinks]);
+  restaurant.hasMenu = Boolean(restaurant.hasMenu || relatedMenuLinks.length);
   restaurant.hasSpecial = Boolean(restaurant.hasSpecial || specialSignalLinks.length || relatedSpecialLinks.length);
   restaurant.hasEvent = Boolean(restaurant.hasEvent || eventSignalLinks.length || relatedEventLinks.length);
   restaurant.hasOpening = Boolean(restaurant.hasOpening || currentSignals.some((signal) => sourceSignalHas(signal, "openings")));
   restaurant.hasPatio = Boolean(restaurant.hasPatio || currentSignals.some((signal) => sourceSignalHas(signal, "patio")));
+  restaurant.hasSocial = allProfiles.length > 0;
+  restaurant.hasReservation = Boolean(restaurant.hasReservation || relatedReservationLinks.length);
+  restaurant.hasOrdering = restaurant.orderingLinks.length > 0;
 
-  const profileSources = uniqueProfiles.map((profile) => {
+  const profileSources = allProfiles.map((profile) => {
     const meta = socialSourceMeta(profile);
-    return { ...meta, url: profile.url, status: "verified_link" };
+    return {
+      ...meta,
+      url: profile.url,
+      status: "verified_link",
+      sharedBrandProfile: profileAssociationCounts.get(profileKey(profile)) > 1
+    };
   });
   const relatedSources = relatedLinks.map((link) => ({
     label: link.label || link.kind,
