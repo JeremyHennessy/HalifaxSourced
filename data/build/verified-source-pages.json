@@ -1,4 +1,4 @@
-window.HALIFAX_VERIFIED_SOURCE_PAGES = {
+{
   "version": 1,
   "generatedAt": "2026-08-28T12:07:01.521Z",
   "scannedPages": 250,
@@ -3618,4 +3618,4 @@ window.HALIFAX_VERIFIED_SOURCE_PAGES = {
       "reviewState": "verified"
     }
   ]
-};
+}
