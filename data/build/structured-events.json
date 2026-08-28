@@ -1,4 +1,4 @@
-window.HALIFAX_STRUCTURED_EVENTS = {
+{
   "version": 1,
   "generatedAt": "2026-08-28T11:45:37.023Z",
   "scannedPages": 103,
@@ -421,4 +421,4 @@ window.HALIFAX_STRUCTURED_EVENTS = {
       "notes": "JSON-LD Event extracted from a restaurant-owned page."
     }
   ]
-};
+}
