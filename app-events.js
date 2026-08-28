@@ -2,22 +2,20 @@
 const EVENT_EDITORIAL_LIMIT = 8;
 
 function renderEvents() {
-  const items = restaurants
-    .filter((restaurant) => (restaurant.eventLinks?.length ?? 0) > 0 || (restaurant.events?.length ?? 0) > 0)
-    .sort((a, b) => (b.score || 0) - (a.score || 0));
+  const items = eventLeadItems();
   const featured = items[0];
   const visibleItems = items.slice(0, EVENT_EDITORIAL_LIMIT);
   appView.innerHTML = `
     <section class="editorial-hero events-hero">
       <div class="page-shell editorial-hero-inner">
         <div><span class="eyebrow">What's happening</span><h1>Events in Halifax</h1><p>Food, music, community, market, and venue event leads gathered from restaurant and venue source pages.</p></div>
-        ${featured ? `<div class="featured-event"><span>FEATURED SOURCE LEAD</span><h2>${escapeHtml(featured.name)}</h2><p>${escapeHtml(featured.eventLinks[0]?.label || featured.events?.[0]?.title || "Event information available from official channels")}</p><a class="button light" href="#restaurant/${encodeURIComponent(featured.id)}">View details</a></div>` : ""}
+        ${featured ? `<div class="featured-event"><span>FEATURED SOURCE LEAD</span><h2>${escapeHtml(featured.restaurant.name)}</h2><p>${escapeHtml(displayEventLabel(featured.credibleLinks[0]?.label, featured.curatedEvents[0]?.title || "Event information available from official channels"))}</p><a class="button light" href="#restaurant/${encodeURIComponent(featured.restaurant.id)}">View details</a></div>` : ""}
       </div>
     </section>
     <section class="page-shell two-column-page">
       <div>
         <div class="chip-row"><button class="chip is-active">All events</button><button class="chip">Food & drink</button><button class="chip">Live music</button><button class="chip">Community</button></div>
-        <div class="section-heading no-top"><div><h2>Event leads</h2><p>Only explicit event links or curated event records are promoted here. Follow the official source before making plans.</p></div><span class="editorial-count">Showing ${visibleItems.length} of ${items.length} strongest leads</span></div>
+        <div class="section-heading no-top"><div><h2>Event leads</h2><p>Only concise event-labelled links, event-specific URLs, or curated event records are promoted here. Follow the official source before making plans.</p></div><span class="editorial-count">Showing ${visibleItems.length} of ${items.length} strongest leads</span></div>
         <div class="event-list">${visibleItems.length ? visibleItems.map(eventSourceCard).join("") : emptyPageState("No explicit event links are loaded yet.")}</div>
         ${items.length > visibleItems.length ? `<div class="editorial-more"><a class="button secondary" href="#explore">Explore all places</a><p>Additional source signals remain searchable through restaurant discovery.</p></div>` : ""}
       </div>
@@ -29,10 +27,12 @@ function renderEvents() {
   bindCommonActions();
 }
 
-function eventSourceCard(restaurant) {
-  const link = restaurant.eventLinks[0];
+function eventSourceCard(item) {
+  const restaurant = item.restaurant;
+  const link = item.credibleLinks[0];
   const observed = restaurant.signal?.observedAt ? new Date(restaurant.signal.observedAt).toLocaleDateString("en-CA", { month: "short", day: "numeric" }) : "SOURCE";
-  return `<article class="event-card"><div class="event-date"><span>CHECKED</span><strong>${escapeHtml(observed)}</strong></div><div class="event-thumb media-${mediaTone(restaurant)}${permittedImageClass(restaurant)}">${mediaImageMarkup(restaurant)}</div><div class="event-copy"><div class="event-title-line"><h3>${escapeHtml(restaurant.name)}</h3><span>Event lead</span></div><p>${escapeHtml(link?.label || restaurant.events?.[0]?.title || "Official channel contains event-related information")}</p><small>${escapeHtml(restaurant.neighborhood || "Halifax")} · Confirm current details</small><div class="card-tags"><span>Official source</span>${restaurant.hasPatio ? "<span>Patio</span>" : ""}</div></div><a class="button tertiary" href="#restaurant/${encodeURIComponent(restaurant.id)}">View</a></article>`;
+  const label = displayEventLabel(link?.label, item.curatedEvents[0]?.title || "Official channel contains event-related information");
+  return `<article class="event-card"><div class="event-date"><span>CHECKED</span><strong>${escapeHtml(observed)}</strong></div><div class="event-thumb media-${mediaTone(restaurant)}${permittedImageClass(restaurant)}">${mediaImageMarkup(restaurant)}</div><div class="event-copy"><div class="event-title-line"><h3>${escapeHtml(restaurant.name)}</h3><span>Event lead</span></div><p>${escapeHtml(label)}</p><small>${escapeHtml(restaurant.neighborhood || "Halifax")} · Confirm current details</small><div class="card-tags"><span>Official source</span>${restaurant.hasPatio ? "<span>Patio</span>" : ""}</div></div><a class="button tertiary" href="#restaurant/${encodeURIComponent(restaurant.id)}">View</a></article>`;
 }
 
 function simpleCalendar() {
