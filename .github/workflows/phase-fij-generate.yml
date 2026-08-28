@@ -1,3 +1,4 @@
+# Final review generation rerun after orphan special-source segregation.
 name: Phase FIJ Generate
 
 on:
@@ -59,6 +60,7 @@ jobs:
             specialSourceLeads:specials.sourceLeads||0,
             staleSpecials:specials.stale||0,
             expiredSpecials:specials.expired||0,
+            orphanSpecialSources:specials.orphanSourceCount||0,
             linkHealth:health.counts||{},
             qualitySummary:quality.summary
           };
