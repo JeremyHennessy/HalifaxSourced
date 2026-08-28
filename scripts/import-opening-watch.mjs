@@ -36,12 +36,23 @@ function tagText(block, tags) {
   return "";
 }
 
+function tagRaw(block, tags) {
+  for (const tag of tags) {
+    const match = String(block).match(new RegExp(`<${tag}\\b[^>]*>([\\s\\S]*?)<\\/${tag}>`, "i"));
+    if (match) return match[1];
+  }
+  return "";
+}
+
 function itemBlocks(xml) {
   return [...String(xml).matchAll(/<item\b[^>]*>([\s\S]*?)<\/item>/gi)].map((match) => match[1]);
 }
 
 function sentenceCandidates(text) {
-  return decode(text)
+  const withBoundaries = String(text ?? "")
+    .replace(/<br\s*\/?>/gi, ". ")
+    .replace(/<\/(?:p|div|li|h[1-6])\s*>/gi, ". ");
+  return decode(withBoundaries)
     .split(/(?<=[.!?])\s+|\s{2,}/)
     .map((value) => value.trim())
     .filter((value) => value.length >= 12 && value.length <= 700);
@@ -123,7 +134,7 @@ for (const source of sources) {
 
       const articleTitle = tagText(item, ["title"]).slice(0, 180);
       const sourceUrl = tagText(item, ["link"]);
-      const content = tagText(item, ["content:encoded", "description"]);
+      const content = tagRaw(item, ["content:encoded", "description"]);
       for (const sentence of sentenceCandidates(content)) {
         const status = openingStatus(sentence);
         if (!status) continue;
