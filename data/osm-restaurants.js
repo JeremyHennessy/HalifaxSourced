@@ -1693,7 +1693,7 @@ window.HALIFAX_OSM_RESTAURANTS = [
   {
     "id": "osm-node-4474954245-bai-wei-grill-bar",
     "name": "Bai Wei Grill Bar",
-    "neighborhood": "Waterfront",
+    "neighborhood": "South End",
     "category": "Restaurant",
     "cuisines": [
       "Restaurant"
@@ -1939,7 +1939,7 @@ window.HALIFAX_OSM_RESTAURANTS = [
   {
     "id": "osm-node-3801064263-barrios-kitchen-and-bar",
     "name": "Barrios Kitchen & Bar",
-    "neighborhood": "Waterfront",
+    "neighborhood": "Downtown",
     "category": "Restaurant",
     "cuisines": [
       "Filipino"
@@ -2244,7 +2244,7 @@ window.HALIFAX_OSM_RESTAURANTS = [
   {
     "id": "osm-node-11526163886-bento-sushi",
     "name": "Bento Sushi",
-    "neighborhood": "Downtown",
+    "neighborhood": "South End",
     "category": "Quick eats",
     "cuisines": [
       "Sushi"
@@ -2339,7 +2339,7 @@ window.HALIFAX_OSM_RESTAURANTS = [
   {
     "id": "osm-node-8187610240-bi-one",
     "name": "Bi One",
-    "neighborhood": "Downtown",
+    "neighborhood": "South End",
     "category": "Restaurant",
     "cuisines": [
       "Korean"
@@ -2808,7 +2808,7 @@ window.HALIFAX_OSM_RESTAURANTS = [
   {
     "id": "osm-node-4420916900-board-room-game-cafe",
     "name": "Board Room Game Cafe",
-    "neighborhood": "Waterfront",
+    "neighborhood": "South End",
     "category": "Cafe",
     "cuisines": [
       "Cafe"
@@ -2870,7 +2870,7 @@ window.HALIFAX_OSM_RESTAURANTS = [
   {
     "id": "osm-node-886758495-boneheads-bbq",
     "name": "Boneheads BBQ",
-    "neighborhood": "Downtown",
+    "neighborhood": "South End",
     "category": "Restaurant",
     "cuisines": [
       "Restaurant"
@@ -3591,7 +3591,7 @@ window.HALIFAX_OSM_RESTAURANTS = [
   {
     "id": "osm-node-4420899697-brenton-grill-and-wine-bar",
     "name": "Brenton Grill & Wine bar",
-    "neighborhood": "Downtown",
+    "neighborhood": "South End",
     "category": "Restaurant",
     "cuisines": [
       "Restaurant"
@@ -3682,7 +3682,7 @@ window.HALIFAX_OSM_RESTAURANTS = [
   {
     "id": "osm-node-11526163882-brief-break",
     "name": "Brief Break",
-    "neighborhood": "Downtown",
+    "neighborhood": "South End",
     "category": "Cafe",
     "cuisines": [
       "Cafe"
@@ -4147,7 +4147,7 @@ window.HALIFAX_OSM_RESTAURANTS = [
   {
     "id": "osm-node-1785456866-burrito-jax",
     "name": "Burrito Jax",
-    "neighborhood": "Waterfront",
+    "neighborhood": "Downtown",
     "category": "Restaurant",
     "cuisines": [
       "Mexican"
@@ -4253,7 +4253,7 @@ window.HALIFAX_OSM_RESTAURANTS = [
   {
     "id": "osm-node-6031036960-buta-ramen",
     "name": "Buta Ramen",
-    "neighborhood": "Downtown",
+    "neighborhood": "South End",
     "category": "Restaurant",
     "cuisines": [
       "Japanese"
@@ -4559,7 +4559,7 @@ window.HALIFAX_OSM_RESTAURANTS = [
   {
     "id": "osm-node-475880058-cafe-chianti",
     "name": "Cafe Chianti",
-    "neighborhood": "Downtown",
+    "neighborhood": "South End",
     "category": "Restaurant",
     "cuisines": [
       "Restaurant"
@@ -5250,7 +5250,7 @@ window.HALIFAX_OSM_RESTAURANTS = [
   {
     "id": "osm-node-5810620690-castello-cafe",
     "name": "Castello Café",
-    "neighborhood": "Downtown",
+    "neighborhood": "South End",
     "category": "Cafe",
     "cuisines": [
       "Cafe"
@@ -7365,7 +7365,7 @@ window.HALIFAX_OSM_RESTAURANTS = [
   {
     "id": "osm-node-5139886025-crepe-crepe-cafe",
     "name": "Crepe Crepe Cafe",
-    "neighborhood": "Waterfront",
+    "neighborhood": "South End",
     "category": "Restaurant",
     "cuisines": [
       "Restaurant"
@@ -7514,7 +7514,7 @@ window.HALIFAX_OSM_RESTAURANTS = [
   {
     "id": "osm-node-1689418194-da-zero-ristorante",
     "name": "Da Zero Ristorante",
-    "neighborhood": "Downtown",
+    "neighborhood": "South End",
     "category": "Restaurant",
     "cuisines": [
       "Restaurant"
@@ -7774,7 +7774,7 @@ window.HALIFAX_OSM_RESTAURANTS = [
   {
     "id": "osm-node-1031603952-darrell-s",
     "name": "Darrell's",
-    "neighborhood": "Waterfront",
+    "neighborhood": "South End",
     "category": "Restaurant",
     "cuisines": [
       "Restaurant"
@@ -9166,7 +9166,7 @@ window.HALIFAX_OSM_RESTAURANTS = [
   {
     "id": "osm-node-3800916658-el-este-tacqueria",
     "name": "El Este Tacqueria",
-    "neighborhood": "Waterfront",
+    "neighborhood": "Downtown",
     "category": "Restaurant",
     "cuisines": [
       "Mexican"
@@ -9736,7 +9736,7 @@ window.HALIFAX_OSM_RESTAURANTS = [
   {
     "id": "osm-node-11526163877-fillings-bistro-32",
     "name": "Fillings Bistro 32",
-    "neighborhood": "Downtown",
+    "neighborhood": "South End",
     "category": "Cafe",
     "cuisines": [
       "Cafe"
@@ -10542,7 +10542,7 @@ window.HALIFAX_OSM_RESTAURANTS = [
   {
     "id": "osm-node-5863968643-fujiyama",
     "name": "Fujiyama",
-    "neighborhood": "Waterfront",
+    "neighborhood": "Downtown",
     "category": "Restaurant",
     "cuisines": [
       "Japanese",
@@ -10758,7 +10758,7 @@ window.HALIFAX_OSM_RESTAURANTS = [
   {
     "id": "osm-node-8064219419-gangnam",
     "name": "Gangnam",
-    "neighborhood": "Waterfront",
+    "neighborhood": "South End",
     "category": "Restaurant",
     "cuisines": [
       "Thai",
@@ -10812,7 +10812,7 @@ window.HALIFAX_OSM_RESTAURANTS = [
   {
     "id": "osm-way-88879257-garrison-brewery",
     "name": "Garrison Brewery",
-    "neighborhood": "Downtown",
+    "neighborhood": "South End",
     "category": "Pub",
     "cuisines": [
       "Pub"
@@ -10912,7 +10912,7 @@ window.HALIFAX_OSM_RESTAURANTS = [
   {
     "id": "osm-node-5150250521-george-s-bubble-tea",
     "name": "George's Bubble Tea",
-    "neighborhood": "Waterfront",
+    "neighborhood": "South End",
     "category": "Cafe",
     "cuisines": [
       "Cafe"
@@ -10967,7 +10967,7 @@ window.HALIFAX_OSM_RESTAURANTS = [
   {
     "id": "osm-node-2611287045-gingerbread-haus-bakery",
     "name": "Gingerbread Haus Bakery",
-    "neighborhood": "Waterfront",
+    "neighborhood": "South End",
     "category": "Restaurant",
     "cuisines": [
       "Cake",
@@ -11071,7 +11071,7 @@ window.HALIFAX_OSM_RESTAURANTS = [
   {
     "id": "osm-node-4416774495-glitter-bean-cafe",
     "name": "Glitter Bean Cafe",
-    "neighborhood": "Downtown",
+    "neighborhood": "South End",
     "category": "Cafe",
     "cuisines": [
       "Coffee Shop"
@@ -11289,7 +11289,7 @@ window.HALIFAX_OSM_RESTAURANTS = [
   {
     "id": "osm-node-4422097393-grawood",
     "name": "Grawood",
-    "neighborhood": "Downtown",
+    "neighborhood": "South End",
     "category": "Restaurant",
     "cuisines": [
       "Restaurant"
@@ -11336,7 +11336,7 @@ window.HALIFAX_OSM_RESTAURANTS = [
   {
     "id": "osm-node-3792869657-great-wall-restaurant",
     "name": "Great Wall Restaurant",
-    "neighborhood": "Waterfront",
+    "neighborhood": "Downtown",
     "category": "Restaurant",
     "cuisines": [
       "Chinese"
@@ -11442,7 +11442,7 @@ window.HALIFAX_OSM_RESTAURANTS = [
   {
     "id": "osm-node-11526163883-green-cafe",
     "name": "Green Café",
-    "neighborhood": "Downtown",
+    "neighborhood": "South End",
     "category": "Cafe",
     "cuisines": [
       "Cafe"
@@ -11491,7 +11491,7 @@ window.HALIFAX_OSM_RESTAURANTS = [
   {
     "id": "osm-node-11526163881-grille-works",
     "name": "Grille Works",
-    "neighborhood": "Downtown",
+    "neighborhood": "South End",
     "category": "Quick eats",
     "cuisines": [
       "Quick eats"
@@ -11544,7 +11544,7 @@ window.HALIFAX_OSM_RESTAURANTS = [
   {
     "id": "osm-node-11526163885-ground-zero",
     "name": "Ground Zero",
-    "neighborhood": "Downtown",
+    "neighborhood": "South End",
     "category": "Cafe",
     "cuisines": [
       "Cafe"
@@ -11751,7 +11751,7 @@ window.HALIFAX_OSM_RESTAURANTS = [
   {
     "id": "osm-node-5150265222-halal-basha-restaurant",
     "name": "Halal Basha Restaurant",
-    "neighborhood": "Waterfront",
+    "neighborhood": "South End",
     "category": "Restaurant",
     "cuisines": [
       "Restaurant"
@@ -12607,7 +12607,7 @@ window.HALIFAX_OSM_RESTAURANTS = [
   {
     "id": "osm-way-88879193-henry-house",
     "name": "Henry House",
-    "neighborhood": "Waterfront",
+    "neighborhood": "South End",
     "category": "Restaurant",
     "cuisines": [
       "Pub"
@@ -12672,7 +12672,7 @@ window.HALIFAX_OSM_RESTAURANTS = [
   {
     "id": "osm-node-4421306590-heppy-s-pie-lady",
     "name": "Heppy's Pie Lady",
-    "neighborhood": "Halifax Peninsula",
+    "neighborhood": "South End",
     "category": "Restaurant",
     "cuisines": [
       "Restaurant"
@@ -12779,7 +12779,7 @@ window.HALIFAX_OSM_RESTAURANTS = [
   {
     "id": "osm-node-9099100702-highwayman",
     "name": "Highwayman",
-    "neighborhood": "Waterfront",
+    "neighborhood": "Downtown",
     "category": "Restaurant",
     "cuisines": [
       "Spanish",
@@ -12890,7 +12890,7 @@ window.HALIFAX_OSM_RESTAURANTS = [
   {
     "id": "osm-node-5631529440-hmcs-king-s-wardroom",
     "name": "HMCS King’s Wardroom",
-    "neighborhood": "Downtown",
+    "neighborhood": "South End",
     "category": "Pub",
     "cuisines": [
       "Pub"
@@ -13086,7 +13086,7 @@ window.HALIFAX_OSM_RESTAURANTS = [
   {
     "id": "osm-node-4421959790-humani-t",
     "name": "Humani-T",
-    "neighborhood": "Downtown",
+    "neighborhood": "South End",
     "category": "Cafe",
     "cuisines": [
       "Cafe"
@@ -13394,7 +13394,7 @@ window.HALIFAX_OSM_RESTAURANTS = [
   {
     "id": "osm-node-7674251740-in-spring-asian-fusion-cuisine",
     "name": "in spring asian fusion cuisine",
-    "neighborhood": "Waterfront",
+    "neighborhood": "Downtown",
     "category": "Restaurant",
     "cuisines": [
       "Asian"
@@ -13600,7 +13600,7 @@ window.HALIFAX_OSM_RESTAURANTS = [
   {
     "id": "osm-node-12410003853-jacky-s-cafe",
     "name": "Jacky's Cafe",
-    "neighborhood": "Downtown",
+    "neighborhood": "South End",
     "category": "Restaurant",
     "cuisines": [
       "Asian"
@@ -16015,7 +16015,7 @@ window.HALIFAX_OSM_RESTAURANTS = [
   {
     "id": "osm-node-4420843802-le-bistro-by-liz",
     "name": "Le Bistro by Liz",
-    "neighborhood": "Downtown",
+    "neighborhood": "South End",
     "category": "Restaurant",
     "cuisines": [
       "Restaurant"
@@ -16761,7 +16761,7 @@ window.HALIFAX_OSM_RESTAURANTS = [
   {
     "id": "osm-node-475879562-man-bean",
     "name": "Man Bean",
-    "neighborhood": "Downtown",
+    "neighborhood": "South End",
     "category": "Restaurant",
     "cuisines": [
       "Vietnamese"
@@ -16866,7 +16866,7 @@ window.HALIFAX_OSM_RESTAURANTS = [
   {
     "id": "osm-node-4416786989-manhattan-pizza",
     "name": "Manhattan Pizza",
-    "neighborhood": "Downtown",
+    "neighborhood": "South End",
     "category": "Quick eats",
     "cuisines": [
       "Quick eats"
@@ -16922,7 +16922,7 @@ window.HALIFAX_OSM_RESTAURANTS = [
   {
     "id": "osm-node-13262595504-mappatura-bistro",
     "name": "Mappatura Bistro",
-    "neighborhood": "Downtown",
+    "neighborhood": "South End",
     "category": "Restaurant",
     "cuisines": [
       "Restaurant"
@@ -17022,7 +17022,7 @@ window.HALIFAX_OSM_RESTAURANTS = [
   {
     "id": "osm-node-9099100703-marigold-kitchen",
     "name": "Marigold Kitchen",
-    "neighborhood": "Waterfront",
+    "neighborhood": "Downtown",
     "category": "Restaurant",
     "cuisines": [
       "Mediterranean"
@@ -17273,7 +17273,7 @@ window.HALIFAX_OSM_RESTAURANTS = [
   {
     "id": "osm-node-5503919646-mary-s-african-cuisine",
     "name": "Mary‘s African Cuisine",
-    "neighborhood": "Waterfront",
+    "neighborhood": "Downtown",
     "category": "Cafe",
     "cuisines": [
       "Cafe"
@@ -17322,7 +17322,7 @@ window.HALIFAX_OSM_RESTAURANTS = [
   {
     "id": "osm-node-9102296735-masala-delight",
     "name": "Masala Delight",
-    "neighborhood": "Waterfront",
+    "neighborhood": "South End",
     "category": "Restaurant",
     "cuisines": [
       "Indian"
@@ -18820,7 +18820,7 @@ window.HALIFAX_OSM_RESTAURANTS = [
   {
     "id": "osm-node-5863968671-mirchi-tandoor",
     "name": "Mirchi Tandoor",
-    "neighborhood": "Waterfront",
+    "neighborhood": "Downtown",
     "category": "Restaurant",
     "cuisines": [
       "Chinese",
@@ -19175,7 +19175,7 @@ window.HALIFAX_OSM_RESTAURANTS = [
   {
     "id": "osm-node-475879583-morris-east",
     "name": "Morris East",
-    "neighborhood": "Waterfront",
+    "neighborhood": "South End",
     "category": "Restaurant",
     "cuisines": [
       "Restaurant"
@@ -19529,7 +19529,7 @@ window.HALIFAX_OSM_RESTAURANTS = [
   {
     "id": "osm-node-472067793-mr-chang-s-chinese-food-emporium",
     "name": "Mr. Chang's Chinese Food Emporium",
-    "neighborhood": "Downtown",
+    "neighborhood": "South End",
     "category": "Restaurant",
     "cuisines": [
       "Restaurant"
@@ -19768,7 +19768,7 @@ window.HALIFAX_OSM_RESTAURANTS = [
   {
     "id": "osm-node-2611276563-narrow-espresso",
     "name": "Narrow Espresso",
-    "neighborhood": "Waterfront",
+    "neighborhood": "South End",
     "category": "Cafe",
     "cuisines": [
       "Coffee Shop"
@@ -20228,7 +20228,7 @@ window.HALIFAX_OSM_RESTAURANTS = [
   {
     "id": "osm-node-37132515-niche-supper-club-lounge",
     "name": "Niche Supper Club Lounge",
-    "neighborhood": "Waterfront",
+    "neighborhood": "Downtown",
     "category": "Restaurant",
     "cuisines": [
       "Restaurant"
@@ -20280,7 +20280,7 @@ window.HALIFAX_OSM_RESTAURANTS = [
   {
     "id": "osm-node-11526055082-noggins-coburg",
     "name": "Noggins Coburg",
-    "neighborhood": "Downtown",
+    "neighborhood": "South End",
     "category": "Cafe",
     "cuisines": [
       "Cafe"
@@ -21081,7 +21081,7 @@ window.HALIFAX_OSM_RESTAURANTS = [
   {
     "id": "osm-node-9099103635-pazzo-ristorante-and-enoteca",
     "name": "Pazzo Ristorante & Enoteca",
-    "neighborhood": "Waterfront",
+    "neighborhood": "Downtown",
     "category": "Restaurant",
     "cuisines": [
       "Italian"
@@ -21180,7 +21180,7 @@ window.HALIFAX_OSM_RESTAURANTS = [
   {
     "id": "osm-node-5150087023-peter-s-pizzeria",
     "name": "Peter's Pizzeria",
-    "neighborhood": "Waterfront",
+    "neighborhood": "South End",
     "category": "Quick eats",
     "cuisines": [
       "Quick eats"
@@ -21391,7 +21391,7 @@ window.HALIFAX_OSM_RESTAURANTS = [
   {
     "id": "osm-node-3801556957-piatto",
     "name": "Piatto",
-    "neighborhood": "Downtown",
+    "neighborhood": "South End",
     "category": "Restaurant",
     "cuisines": [
       "Restaurant"
@@ -22331,7 +22331,7 @@ window.HALIFAX_OSM_RESTAURANTS = [
   {
     "id": "osm-node-11526163880-pizza-pizza",
     "name": "Pizza Pizza",
-    "neighborhood": "Downtown",
+    "neighborhood": "South End",
     "category": "Quick eats",
     "cuisines": [
       "Pizza"
@@ -22922,7 +22922,7 @@ window.HALIFAX_OSM_RESTAURANTS = [
   {
     "id": "osm-node-4417927494-primal-kitchen",
     "name": "Primal Kitchen",
-    "neighborhood": "Downtown",
+    "neighborhood": "South End",
     "category": "Restaurant",
     "cuisines": [
       "Meat",
@@ -24500,7 +24500,7 @@ window.HALIFAX_OSM_RESTAURANTS = [
   {
     "id": "osm-node-11526163888-second-cup",
     "name": "Second Cup",
-    "neighborhood": "Downtown",
+    "neighborhood": "South End",
     "category": "Cafe",
     "cuisines": [
       "Coffee Shop"
@@ -24789,7 +24789,7 @@ window.HALIFAX_OSM_RESTAURANTS = [
   {
     "id": "osm-node-7674254025-shuck-seafood-raw-bar",
     "name": "Shuck Seafood + Raw Bar",
-    "neighborhood": "Waterfront",
+    "neighborhood": "Downtown",
     "category": "Restaurant",
     "cuisines": [
       "Seafood"
@@ -25408,7 +25408,7 @@ window.HALIFAX_OSM_RESTAURANTS = [
   {
     "id": "osm-node-475879370-snappy-tomato-s-pizzeria",
     "name": "Snappy Tomato's Pizzeria",
-    "neighborhood": "Downtown",
+    "neighborhood": "South End",
     "category": "Quick eats",
     "cuisines": [
       "Quick eats"
@@ -26501,7 +26501,7 @@ window.HALIFAX_OSM_RESTAURANTS = [
   {
     "id": "osm-node-11526163876-starbucks",
     "name": "Starbucks",
-    "neighborhood": "Downtown",
+    "neighborhood": "South End",
     "category": "Cafe",
     "cuisines": [
       "Coffee Shop"
@@ -26989,7 +26989,7 @@ window.HALIFAX_OSM_RESTAURANTS = [
   {
     "id": "osm-node-3796264081-stayner-s-wharf",
     "name": "Stayner's Wharf",
-    "neighborhood": "Waterfront",
+    "neighborhood": "Downtown",
     "category": "Pub",
     "cuisines": [
       "Pub"
@@ -27151,7 +27151,7 @@ window.HALIFAX_OSM_RESTAURANTS = [
   {
     "id": "osm-node-3801495263-stillwell",
     "name": "Stillwell",
-    "neighborhood": "Waterfront",
+    "neighborhood": "Downtown",
     "category": "Pub",
     "cuisines": [
       "Pub"
@@ -27314,7 +27314,7 @@ window.HALIFAX_OSM_RESTAURANTS = [
   {
     "id": "osm-node-475877099-stories",
     "name": "Stories",
-    "neighborhood": "Downtown",
+    "neighborhood": "South End",
     "category": "Restaurant",
     "cuisines": [
       "Restaurant"
@@ -27956,7 +27956,7 @@ window.HALIFAX_OSM_RESTAURANTS = [
   {
     "id": "osm-node-4081593184-subway",
     "name": "Subway",
-    "neighborhood": "Halifax Peninsula",
+    "neighborhood": "South End",
     "category": "Quick eats",
     "cuisines": [
       "Sandwich"
@@ -28068,7 +28068,7 @@ window.HALIFAX_OSM_RESTAURANTS = [
   {
     "id": "osm-node-4416665991-subway",
     "name": "Subway",
-    "neighborhood": "Waterfront",
+    "neighborhood": "South End",
     "category": "Quick eats",
     "cuisines": [
       "Sandwich"
@@ -28580,7 +28580,7 @@ window.HALIFAX_OSM_RESTAURANTS = [
   {
     "id": "osm-node-11526163887-subway",
     "name": "Subway",
-    "neighborhood": "Downtown",
+    "neighborhood": "South End",
     "category": "Quick eats",
     "cuisines": [
       "Sandwich"
@@ -28691,7 +28691,7 @@ window.HALIFAX_OSM_RESTAURANTS = [
   {
     "id": "osm-node-11808562718-subway",
     "name": "Subway",
-    "neighborhood": "Downtown",
+    "neighborhood": "South End",
     "category": "Quick eats",
     "cuisines": [
       "Sandwich"
@@ -30095,7 +30095,7 @@ window.HALIFAX_OSM_RESTAURANTS = [
   {
     "id": "osm-node-6031039163-talay-thai",
     "name": "Talay Thai",
-    "neighborhood": "Waterfront",
+    "neighborhood": "South End",
     "category": "Restaurant",
     "cuisines": [
       "Thai"
@@ -30251,7 +30251,7 @@ window.HALIFAX_OSM_RESTAURANTS = [
   {
     "id": "osm-node-5149948722-tart-and-soul",
     "name": "Tart & Soul",
-    "neighborhood": "Downtown",
+    "neighborhood": "South End",
     "category": "Cafe",
     "cuisines": [
       "Cafe"
@@ -30779,7 +30779,7 @@ window.HALIFAX_OSM_RESTAURANTS = [
   {
     "id": "osm-node-4411880103-the-bg",
     "name": "The BG",
-    "neighborhood": "Waterfront",
+    "neighborhood": "Downtown",
     "category": "Pub",
     "cuisines": [
       "Pub"
@@ -31015,7 +31015,7 @@ window.HALIFAX_OSM_RESTAURANTS = [
   {
     "id": "osm-node-9099103643-the-bread-lounge",
     "name": "The Bread Lounge",
-    "neighborhood": "Waterfront",
+    "neighborhood": "Downtown",
     "category": "Cafe",
     "cuisines": [
       "Coffee Shop",
@@ -31225,7 +31225,7 @@ window.HALIFAX_OSM_RESTAURANTS = [
   {
     "id": "osm-node-8622604791-the-brown-hound",
     "name": "The Brown Hound",
-    "neighborhood": "Waterfront",
+    "neighborhood": "Downtown",
     "category": "Restaurant",
     "cuisines": [
       "Restaurant"
@@ -32116,7 +32116,7 @@ window.HALIFAX_OSM_RESTAURANTS = [
   {
     "id": "osm-node-13188991858-the-loaded-ladle",
     "name": "The Loaded Ladle",
-    "neighborhood": "Downtown",
+    "neighborhood": "South End",
     "category": "Restaurant",
     "cuisines": [
       "Restaurant"
@@ -32203,7 +32203,7 @@ window.HALIFAX_OSM_RESTAURANTS = [
   {
     "id": "osm-node-37132665-the-loose-cannon",
     "name": "The Loose Cannon",
-    "neighborhood": "Waterfront",
+    "neighborhood": "Downtown",
     "category": "Pub",
     "cuisines": [
       "Pub"
@@ -32470,7 +32470,7 @@ window.HALIFAX_OSM_RESTAURANTS = [
   {
     "id": "osm-node-3801119557-the-middle-spoon-desserterie-and-bar",
     "name": "The Middle Spoon Desserterie & Bar",
-    "neighborhood": "Waterfront",
+    "neighborhood": "Downtown",
     "category": "Restaurant",
     "cuisines": [
       "Dessert",
@@ -32688,7 +32688,7 @@ window.HALIFAX_OSM_RESTAURANTS = [
   {
     "id": "osm-node-1689418207-the-old-triangle-irish-pub",
     "name": "The Old Triangle Irish Pub",
-    "neighborhood": "Waterfront",
+    "neighborhood": "Downtown",
     "category": "Pub",
     "cuisines": [
       "Pub"
@@ -33045,7 +33045,7 @@ window.HALIFAX_OSM_RESTAURANTS = [
   {
     "id": "osm-node-9239328852-the-submarine",
     "name": "The Submarine",
-    "neighborhood": "Waterfront",
+    "neighborhood": "South End",
     "category": "Quick eats",
     "cuisines": [
       "Quick eats"
@@ -33861,7 +33861,7 @@ window.HALIFAX_OSM_RESTAURANTS = [
   {
     "id": "osm-node-4421918890-tim-hortons",
     "name": "Tim Hortons",
-    "neighborhood": "Downtown",
+    "neighborhood": "South End",
     "category": "Cafe",
     "cuisines": [
       "Coffee Shop"
@@ -34356,7 +34356,7 @@ window.HALIFAX_OSM_RESTAURANTS = [
   {
     "id": "osm-node-11526163878-tim-hortons",
     "name": "Tim Hortons",
-    "neighborhood": "Downtown",
+    "neighborhood": "South End",
     "category": "Cafe",
     "cuisines": [
       "Coffee Shop"
@@ -34407,7 +34407,7 @@ window.HALIFAX_OSM_RESTAURANTS = [
   {
     "id": "osm-way-88610789-tim-hortons",
     "name": "Tim Hortons",
-    "neighborhood": "Waterfront",
+    "neighborhood": "South End",
     "category": "Cafe",
     "cuisines": [
       "Coffee Shop"
@@ -35519,7 +35519,7 @@ window.HALIFAX_OSM_RESTAURANTS = [
   {
     "id": "osm-node-5157417348-tomavinos-pizzeria",
     "name": "Tomavinos Pizzeria",
-    "neighborhood": "Waterfront",
+    "neighborhood": "South End",
     "category": "Restaurant",
     "cuisines": [
       "Pizza"
@@ -35677,7 +35677,7 @@ window.HALIFAX_OSM_RESTAURANTS = [
   {
     "id": "osm-node-11526163884-topio-s-pizzeria",
     "name": "Topio's Pizzeria",
-    "neighborhood": "Downtown",
+    "neighborhood": "South End",
     "category": "Quick eats",
     "cuisines": [
       "Pizza"
@@ -35812,7 +35812,7 @@ window.HALIFAX_OSM_RESTAURANTS = [
   {
     "id": "osm-node-3804189857-trattoria-vesso",
     "name": "Trattoria Vesso",
-    "neighborhood": "Waterfront",
+    "neighborhood": "South End",
     "category": "Restaurant",
     "cuisines": [
       "Restaurant"
@@ -36266,7 +36266,7 @@ window.HALIFAX_OSM_RESTAURANTS = [
   {
     "id": "osm-node-11466743651-uncommon-grounds",
     "name": "Uncommon Grounds",
-    "neighborhood": "Downtown",
+    "neighborhood": "South End",
     "category": "Cafe",
     "cuisines": [
       "Coffee Shop",
@@ -36517,7 +36517,7 @@ window.HALIFAX_OSM_RESTAURANTS = [
   {
     "id": "osm-node-8762146265-waegwoltic-dining-room",
     "name": "Waegwoltic Dining Room",
-    "neighborhood": "Halifax Peninsula",
+    "neighborhood": "South End",
     "category": "Restaurant",
     "cuisines": [
       "Restaurant"
@@ -37571,7 +37571,7 @@ window.HALIFAX_OSM_RESTAURANTS = [
   {
     "id": "osm-node-475876928-wired-monk",
     "name": "Wired Monk",
-    "neighborhood": "Waterfront",
+    "neighborhood": "Downtown",
     "category": "Cafe",
     "cuisines": [
       "Coffee Shop"
@@ -38204,7 +38204,7 @@ window.HALIFAX_OSM_RESTAURANTS = [
   {
     "id": "osm-node-11526163879-zoca",
     "name": "Zoca",
-    "neighborhood": "Downtown",
+    "neighborhood": "South End",
     "category": "Quick eats",
     "cuisines": [
       "Mexican"
