@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "updatedAt": "2026-08-28",
+  "organizers": [
+    {"organizerId":"halifax-mooseheads","name":"Halifax Mooseheads","website":"https://halifaxmooseheads.ca/","sourceIds":["halifax-mooseheads-home"],"type":"sports_team"},
+    {"organizerId":"hfx-wanderers","name":"HFX Wanderers FC","website":"https://hfxwanderersfc.canpl.ca/","sourceIds":["hfx-wanderers-home"],"type":"sports_team"},
+    {"organizerId":"halifax-tides","name":"Halifax Tides FC","website":"https://www.tidesfc.ca/","sourceIds":["halifax-tides-home"],"type":"sports_team"},
+    {"organizerId":"halifax-thunderbirds","name":"Halifax Thunderbirds","website":"https://www.halifaxthunderbirds.com/","sourceIds":["halifax-thunderbirds"],"type":"sports_team"},
+    {"organizerId":"symphony-nova-scotia","name":"Symphony Nova Scotia","website":"https://symphonynovascotia.ca/","sourceIds":["symphony-nova-scotia"],"sourceNameTokens":["Symphony Nova Scotia"],"type":"arts_organization"},
+    {"organizerId":"neptune-theatre","name":"Neptune Theatre","website":"https://www.neptunetheatre.com/","sourceIds":["neptune-theatre"],"type":"theatre_company"},
+    {"organizerId":"halifax-public-libraries","name":"Halifax Public Libraries","website":"https://www.halifaxpubliclibraries.ca/","sourceNameTokens":["Halifax Public Libraries","Public Library","Library"],"type":"public_institution"},
+    {"organizerId":"halifax-convention-centre","name":"Halifax Convention Centre","website":"https://www.halifaxconventioncentre.com/","sourceIds":["halifax-convention-centre"],"type":"venue_operator"},
+    {"organizerId":"light-house-arts-centre","name":"Light House Arts Centre","website":"https://www.lighthouseartscentre.ca/","sourceIds":["light-house-arts-centre"],"type":"venue_operator"},
+    {"organizerId":"the-carleton","name":"The Carleton","website":"https://www.thecarleton.ca/","sourceIds":["the-carleton"],"type":"venue_operator"},
+    {"organizerId":"scotiabank-centre","name":"Scotiabank Centre","website":"https://www.scotiabank-centre.com/","sourceIds":["scotiabank-centre"],"type":"venue_operator"}
+  ]
+}
