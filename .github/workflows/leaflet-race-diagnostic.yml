@@ -31,7 +31,7 @@ jobs:
           npm install --no-save playwright@1.55.0
           npx playwright install --with-deps chromium
 
-      - name: Add diagnostic error-stack capture
+      - name: Add diagnostic Canvas lifecycle capture
         run: |
           python3 - <<'PY'
           from pathlib import Path
@@ -39,8 +39,13 @@ jobs:
           text = path.read_text()
           text = text.replace(
               'page.on("console", (message) => { if (message.type() === "error") consoleErrors.push(message.text()); });\npage.on("pageerror", (error) => consoleErrors.push(error.message));',
-              'page.on("console", (message) => { if (message.type() === "error") consoleErrors.push(`CONSOLE: ${message.text()}`); });\npage.on("pageerror", (error) => consoleErrors.push(`PAGEERROR: ${error.stack || error.message}`));'
+              'page.on("console", (message) => { if (message.type() === "error") consoleErrors.push(`CONSOLE @ ${page.url()}: ${message.text()}`); });\npage.on("pageerror", (error) => consoleErrors.push(`PAGEERROR @ ${page.url()}: ${error.stack || error.message}`));'
           )
+          needle = 'await page.goto(`${url}/#home`, { waitUntil: "networkidle" });'
+          inject = '''await page.goto(`${url}/#home`, { waitUntil: "networkidle" });\nawait page.evaluate(() => {\n  const proto = window.L?.Canvas?.prototype;\n  if (!proto || proto.__halifaxLifecycleDiagnostic) return;\n  proto.__halifaxLifecycleDiagnostic = true;\n  const originalDestroy = proto._destroyContainer;\n  const originalRedraw = proto._redraw;\n  proto._destroyContainer = function (...args) {\n    this.__halifaxDestroyInfo = {\n      mapId: this._map?.getContainer?.()?.id || null,\n      destroyRoute: location.hash,\n      pathCount: Object.keys(this._layers || {}).length,\n      redrawRequest: this._redrawRequest ?? null\n    };\n    return originalDestroy.apply(this, args);\n  };\n  proto._redraw = function (...args) {\n    if (!this._ctx) {\n      console.error("HS_STALE_CANVAS_REDRAW", JSON.stringify({\n        ...(this.__halifaxDestroyInfo || {}),\n        currentRoute: location.hash,\n        mapConnected: Boolean(this._map?.getContainer?.()?.isConnected),\n        currentPathCount: Object.keys(this._layers || {}).length,\n        redrawRequest: this._redrawRequest ?? null\n      }));\n    }\n    return originalRedraw.apply(this, args);\n  };\n});'''
+          if needle not in text:
+              raise SystemExit('home navigation insertion point not found')
+          text = text.replace(needle, inject, 1)
           path.write_text(text)
           PY
 
@@ -65,7 +70,7 @@ jobs:
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: leaflet-race-stack-attempt-${{ matrix.attempt }}
+          name: leaflet-race-instance-attempt-${{ matrix.attempt }}
           path: artifacts/
           if-no-files-found: ignore
           retention-days: 7
