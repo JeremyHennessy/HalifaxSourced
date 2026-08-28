@@ -6,6 +6,7 @@ on:
       - qa-polish-20260828
     paths:
       - .github/workflows/normalize-neighbourhoods.yml
+      - scripts/normalize-osm-neighbourhoods.mjs
 
 permissions:
   contents: write
