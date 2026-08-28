@@ -10,6 +10,7 @@ on:
     paths:
       - .github/workflows/restaurant-discovery-preview.yml
       - scripts/import-directory-restaurants.mjs
+      - scripts/refine-dartmouth-directory.mjs
       - scripts/import-opening-watch.mjs
       - scripts/resolve-place-candidates.mjs
       - scripts/build-discovered-restaurants.mjs
@@ -39,6 +40,9 @@ jobs:
           NS_TOURISM_PAGE_LIMIT: 30
           DOWNTOWN_DIRECTORY_DETAIL_LIMIT: 120
         run: node scripts/import-directory-restaurants.mjs
+
+      - name: Refine Downtown Dartmouth directory candidates
+        run: node scripts/refine-dartmouth-directory.mjs
 
       - name: Resolve directory candidates to canonical places
         run: node scripts/resolve-place-candidates.mjs
