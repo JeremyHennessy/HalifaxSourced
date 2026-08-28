@@ -1,4 +1,4 @@
-window.HALIFAX_CITY_EVENTS = {
+{
   "version": 1,
   "generatedAt": "2026-08-28T18:17:43.711Z",
   "range": {
@@ -762,4 +762,4 @@ window.HALIFAX_CITY_EVENTS = {
       "reviewState": "source-observed"
     }
   ]
-};
+}
