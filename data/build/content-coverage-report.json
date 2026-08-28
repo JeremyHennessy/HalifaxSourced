@@ -1,0 +1,1199 @@
+{
+  "version": 1,
+  "generatedAt": "2026-08-28T20:29:56.287Z",
+  "baselineCommitHint": "623a83a669270dfa975201ead00730df654dbbd8",
+  "definitions": {
+    "canonicalPlaces": "Current user-facing merge of catalog restaurants plus reviewed discovery records, matching the app's existing name-based discovery merge behavior.",
+    "verifiedOfficialWebsite": "Official-site fetch returned a successful HTTP status or the first-party discovery layer successfully fetched the restaurant-owned site.",
+    "menuLink": "Verified menu source, first-party menu action, or official-site menu candidate link. Verified menu is reported separately.",
+    "specials": "Curated special, verified specials page, first-party specials-related action, or official-site specials signal. Exact terms are not assumed current unless separately structured.",
+    "socialCoverage": "Count of canonical places associated with at least one supported profile; link hubs are reported separately from social networks.",
+    "staleRestaurant": "Latest available restaurant freshness/official-site/first-party observation is more than 90 days old. Unknown dates are reported separately.",
+    "eventVenueMatch": "Conservative exact normalized venue-name match to a canonical place; no canonical venue entity exists yet.",
+    "duplicateEventCount": "Additional current event records sharing normalized title, local date, and normalized venue/address key."
+  },
+  "restaurantCoverage": {
+    "totalCanonicalPlaces": 743,
+    "curatedRestaurants": 10,
+    "osmRestaurants": 735,
+    "locallyDiscoveredRestaurants": 6,
+    "catalogMergedRestaurants": 739,
+    "withOfficialWebsite": 284,
+    "withVerifiedOfficialWebsite": 236,
+    "withInspectionMatch": 496,
+    "withMenuLink": 152,
+    "withVerifiedMenuLink": 86,
+    "withSpecials": 53,
+    "withVerifiedSpecials": 25,
+    "withReservationLink": 58,
+    "withOnlineOrderingLink": 75,
+    "withEventEvidence": 47,
+    "withStructuredUpcomingEvents": 2,
+    "withAtLeastOneSocialProfile": 132,
+    "withAnySocialOrLinkHub": 132,
+    "socialByPlatform": {
+      "instagram": 120,
+      "facebook": 99,
+      "tiktok": 12,
+      "threads": 0,
+      "x": 55,
+      "youtube": 10,
+      "linkedin": 5,
+      "bluesky": 2,
+      "pinterest": 0,
+      "snapchat": 0,
+      "linktree": 0,
+      "beacons": 0,
+      "linkinbio": 0,
+      "campsite": 0,
+      "bento": 0
+    },
+    "withLinkHub": 0,
+    "withPhone": 245,
+    "withStructuredOrSourceHours": 219,
+    "withCoordinates": 734,
+    "withNeighbourhood": 743,
+    "withCuisineClassification": 743,
+    "withAccessibilityInformation": 229,
+    "withPatioInformation": 40,
+    "withUsableMedia": 0,
+    "freshness": {
+      "lt7Days": 735,
+      "days7To30": 8,
+      "days30To90": 0,
+      "gt90Days": 0,
+      "unknown": 0
+    },
+    "staleRestaurantRecords": 0,
+    "currentResolutionRisks": {
+      "discoveryNameOnlyMerges": 2
+    }
+  },
+  "restaurantCoveragePercent": {
+    "officialWebsite": 38.2,
+    "verifiedOfficialWebsite": 31.8,
+    "inspection": 66.8,
+    "menu": 20.5,
+    "verifiedMenu": 11.6,
+    "specials": 7.1,
+    "verifiedSpecials": 3.4,
+    "reservations": 7.8,
+    "ordering": 10.1,
+    "events": 6.3,
+    "structuredUpcomingEvents": 0.3,
+    "social": 17.8,
+    "phone": 33,
+    "hours": 29.5,
+    "coordinates": 98.8,
+    "neighbourhood": 100,
+    "cuisine": 100,
+    "accessibility": 30.8,
+    "patio": 5.4,
+    "media": 0
+  },
+  "socialAudit": {
+    "placesWithSocial": 132,
+    "placesWithLinkHub": 0,
+    "platformPlaceCounts": {
+      "instagram": 120,
+      "facebook": 99,
+      "tiktok": 12,
+      "threads": 0,
+      "x": 55,
+      "youtube": 10,
+      "linkedin": 5,
+      "bluesky": 2,
+      "pinterest": 0,
+      "snapchat": 0,
+      "linktree": 0,
+      "beacons": 0,
+      "linkinbio": 0,
+      "campsite": 0,
+      "bento": 0
+    },
+    "profileAssociations": 310,
+    "sharedProfileKeys": 20,
+    "sharedBrandOnlyPlaces": 23,
+    "candidatePlacesAwaitingVerification": 0,
+    "staleSocialVerificationPlaces": 0,
+    "noWebsitePlaces": 459,
+    "websiteButNoSocialPlaces": 153,
+    "priorityGapQueue": {
+      "websiteButNoSocial": [
+        {
+          "id": "field-guide",
+          "name": "Field Guide",
+          "website": "https://fieldguidehfx.com"
+        },
+        {
+          "id": "osm-node-2702737179-9-nine",
+          "name": "9 + Nine",
+          "website": "https://9plus9.ca/"
+        },
+        {
+          "id": "osm-node-13944251182-a-and-w",
+          "name": "A&W",
+          "website": "https://web.aw.ca/en/locations/6012/dartmouth/240-victoria-rd"
+        },
+        {
+          "id": "osm-node-9652937830-arirang-korean-and-japanese",
+          "name": "Arirang Korean & Japanese",
+          "website": "https://arirang-restaurant.com/"
+        },
+        {
+          "id": "osm-node-4474954245-bai-wei-grill-bar",
+          "name": "Bai Wei Grill Bar",
+          "website": "http://baiweigrillbar.com"
+        },
+        {
+          "id": "osm-node-10665783054-ben-and-florentine",
+          "name": "Ben & Florentine",
+          "website": "https://benetflorentine.com/"
+        },
+        {
+          "id": "osm-node-13141457102-bitter-end-martini-bar-and-restaurant",
+          "name": "Bitter End Martini Bar & Restaurant",
+          "website": "https://www.bitterend.ca/"
+        },
+        {
+          "id": "osm-node-267592735-bluenose-ii",
+          "name": "Bluenose II",
+          "website": "https://www.bluenoseii.ca/"
+        },
+        {
+          "id": "osm-node-4420916900-board-room-game-cafe",
+          "name": "Board Room Game Cafe",
+          "website": "http://boardroomgames.ca/"
+        },
+        {
+          "id": "osm-node-11752691591-bramble-cafe",
+          "name": "Bramble Cafe",
+          "website": "https://www.instagram.com/bramble.hfx"
+        },
+        {
+          "id": "osm-node-9330955319-budapest-bisztro",
+          "name": "Budapest Bisztro",
+          "website": "https://budapestbisztro.ca/"
+        },
+        {
+          "id": "osm-node-3791528457-cabin-coffee",
+          "name": "Cabin Coffee",
+          "website": "https://cabincoffeehalifax.com/"
+        },
+        {
+          "id": "osm-node-9089629991-cafe-lara",
+          "name": "Caf\u00e9 Lara",
+          "website": "https://cafelara.ca"
+        },
+        {
+          "id": "osm-node-4421124794-cafe-marco-polo",
+          "name": "Cafe Marco Polo",
+          "website": "https://justuscoffee.com/locations/kings-wharf-dartmouth"
+        },
+        {
+          "id": "osm-node-30825944-canton-garden",
+          "name": "Canton Garden",
+          "website": "https://www.cantongardenhalifax.com/"
+        },
+        {
+          "id": "osm-node-5810620690-castello-cafe",
+          "name": "Castello Caf\u00e9",
+          "website": "https://www.facebook.com/CastelloCafeCatering/"
+        },
+        {
+          "id": "osm-node-2721708515-cha-baa-thai",
+          "name": "Cha Baa Thai",
+          "website": "https://www.chabaathairestaurant.ca/"
+        },
+        {
+          "id": "osm-way-319792807-chinatown",
+          "name": "Chinatown",
+          "website": "https://www.chinatownhalifax.com/"
+        },
+        {
+          "id": "osm-node-7032915871-chkn-chop",
+          "name": "Chkn Chop",
+          "website": "https://www.chknchop.com/"
+        },
+        {
+          "id": "osm-node-12908610736-classic-pizza",
+          "name": "Classic Pizza",
+          "website": "https://classic-pizza.order-online.ai/"
+        },
+        {
+          "id": "osm-node-7185511974-clay-west-bar-and-grill",
+          "name": "Clay West Bar & Grill",
+          "website": "https://claywesthalifax.business.site/"
+        },
+        {
+          "id": "osm-node-11752773940-colleen-s-pub",
+          "name": "Colleen's Pub",
+          "website": "https://www.facebook.com/oldwrinkleranch/"
+        },
+        {
+          "id": "osm-node-1749780391-cousins-restaurant",
+          "name": "Cousins Restaurant",
+          "website": "https://cousinsrestaurant.webs.com/"
+        },
+        {
+          "id": "osm-node-7108250973-creative-cup-cafe",
+          "name": "Creative Cup Cafe",
+          "website": "https://facebook.com/Creative-Cup-Cafe-112888013737872/"
+        },
+        {
+          "id": "osm-node-2721708504-curry-village",
+          "name": "Curry Village",
+          "website": "https://www.curryvillage.ca/"
+        },
+        {
+          "id": "osm-node-5863968654-dharma-sushi",
+          "name": "Dharma sushi",
+          "website": "https://dharmasushi.ca"
+        },
+        {
+          "id": "osm-node-11551984275-doraku",
+          "name": "Doraku",
+          "website": "https://doraku.yolasite.com"
+        },
+        {
+          "id": "osm-node-4797459277-downtown-pizza",
+          "name": "Downtown Pizza",
+          "website": "https://downtownpizza.ca/"
+        },
+        {
+          "id": "osm-node-37132580-durty-nelly-s-irish-pub",
+          "name": "Durty Nelly's Irish Pub",
+          "website": "https://durtynellys.ca/"
+        },
+        {
+          "id": "osm-node-2721708503-efendy-turkish-and-mediterranean-grill",
+          "name": "Efendy Turkish & Mediterranean Grill",
+          "website": "http://www.efendyrestaurant.com/"
+        },
+        {
+          "id": "osm-node-5823814053-espresso-46",
+          "name": "Espresso 46",
+          "website": "https://espresso46.com/"
+        },
+        {
+          "id": "osm-node-8018171257-fattoush-mediterranean-grill",
+          "name": "Fattoush Mediterranean Grill",
+          "website": "https://m.facebook.com/FattoushMediterraneanGrill/"
+        },
+        {
+          "id": "osm-node-3789811257-flynn-s-dairy-bar",
+          "name": "Flynn's Dairy Bar",
+          "website": "https://www.facebook.com/flynns711/"
+        },
+        {
+          "id": "osm-node-3802788957-food-court-of-spring-garden-place",
+          "name": "Food Court of Spring Garden Place",
+          "website": "https://www.starbucks.ca/store-locator/store/4085-255631/5640-spring-garden-road-5640-spring-garden-road-301-halifax-ns-b-3-j-3-m-7"
+        },
+        {
+          "id": "osm-node-11282329952-freeman-s-little-new-york",
+          "name": "Freeman's Little New York",
+          "website": "https://www.freemanspizza.ca/"
+        },
+        {
+          "id": "osm-node-1570206711-fries-and-co",
+          "name": "Fries & Co.",
+          "website": "http://www.facebook.com/pages/Fries-Co/339657883852"
+        },
+        {
+          "id": "osm-node-5863968643-fujiyama",
+          "name": "Fujiyama",
+          "website": "http://www.sushifujiyama.com/"
+        },
+        {
+          "id": "osm-node-7082566318-g-street-pizza",
+          "name": "G-Street Pizza",
+          "website": "https://gstreetpizza.ca"
+        },
+        {
+          "id": "osm-node-2611287045-gingerbread-haus-bakery",
+          "name": "Gingerbread Haus Bakery",
+          "website": "https://www.gingerbreadhausbakery.com/"
+        },
+        {
+          "id": "osm-node-4416774495-glitter-bean-cafe",
+          "name": "Glitter Bean Cafe",
+          "website": "https://www.glitterbeancafe.com/"
+        },
+        {
+          "id": "osm-node-3792869657-great-wall-restaurant",
+          "name": "Great Wall Restaurant",
+          "website": "http://www.thegreatwall.ca/"
+        },
+        {
+          "id": "osm-node-2714920436-greco-pizza",
+          "name": "Greco Pizza",
+          "website": "https://greco.ca/"
+        },
+        {
+          "id": "osm-way-88879193-henry-house",
+          "name": "Henry House",
+          "website": "http://henryhouse.ca/"
+        },
+        {
+          "id": "osm-node-4421306590-heppy-s-pie-lady",
+          "name": "Heppy's Pie Lady",
+          "website": "http://www.heppys.com"
+        },
+        {
+          "id": "osm-node-7393868699-hop-sing-restaurant",
+          "name": "Hop Sing Restaurant",
+          "website": "https://hopsingrestaurant.ca/"
+        },
+        {
+          "id": "osm-node-4421959790-humani-t",
+          "name": "Humani-T",
+          "website": "https://humanitea.com/"
+        },
+        {
+          "id": "osm-node-7674251740-in-spring-asian-fusion-cuisine",
+          "name": "in spring asian fusion cuisine",
+          "website": "https://www.inspringhotpot.com/"
+        },
+        {
+          "id": "osm-node-13141377001-india-paradise",
+          "name": "India Paradise",
+          "website": "https://www.indiaparadise.ca/"
+        },
+        {
+          "id": "osm-node-12410003853-jacky-s-cafe",
+          "name": "Jacky's Cafe",
+          "website": "https://jackyscafehalifax.com/"
+        },
+        {
+          "id": "osm-node-2624400763-java-blend",
+          "name": "Java Blend",
+          "website": "https://javablendcoffee.com/contact"
+        },
+        {
+          "id": "osm-node-1920646706-jenny-s-place",
+          "name": "Jenny's Place",
+          "website": "https://www.facebook.com/people/Jennys-Place-Pub/100028409456739/"
+        },
+        {
+          "id": "osm-node-32335616-jim-s-family-restaurant",
+          "name": "Jim's Family Restaurant",
+          "website": "https://www.jimsfamilyrestauranthalifax.com/cl"
+        },
+        {
+          "id": "osm-node-4995047387-john-s-lunch",
+          "name": "John's Lunch",
+          "website": "https://johnslunch.com/"
+        },
+        {
+          "id": "osm-node-5503919661-jukai",
+          "name": "Jukai",
+          "website": "https://jukairestaurant.com"
+        },
+        {
+          "id": "osm-node-11552505443-jukai-japanese-and-thai",
+          "name": "JUKAI Japanese & Thai",
+          "website": "https://www.jukairestaurant.com"
+        },
+        {
+          "id": "osm-node-5723553932-kam-moon",
+          "name": "Kam-moon",
+          "website": "https://kam-moon.com/"
+        },
+        {
+          "id": "osm-node-2712744143-kebab-kitchen",
+          "name": "Kebab Kitchen",
+          "website": "http://www.kebabkitchens.com/"
+        },
+        {
+          "id": "osm-node-11506685695-kenny-s-pizza",
+          "name": "Kenny's Pizza",
+          "website": "http://kennyspizzakearneylake.ca/"
+        },
+        {
+          "id": "osm-node-3104142670-king-of-donair",
+          "name": "King of Donair",
+          "website": "https://www.kingofdonair.ca"
+        },
+        {
+          "id": "osm-way-460939327-la-piazza-ristorante",
+          "name": "La Piazza Ristorante",
+          "website": "https://www.lapiazzarestocafe.com/"
+        },
+        {
+          "id": "osm-node-11577869162-lady-hammond-grill",
+          "name": "Lady Hammond Grill",
+          "website": "https://chebuctoinn.com/lhg-diner/"
+        },
+        {
+          "id": "osm-node-3575616966-layla-s-mediterranean-cuisine",
+          "name": "Layla's Mediterranean Cuisine",
+          "website": "http://laylacuisine.ca"
+        },
+        {
+          "id": "osm-node-8836681495-lion-s-head-tavern",
+          "name": "Lion's Head Tavern",
+          "website": "https://lionshead.ca/"
+        },
+        {
+          "id": "osm-node-3802952557-lucy-s-hydrostone-cafe",
+          "name": "Lucy's Hydrostone Cafe",
+          "website": "https://lucyshydrostone.ca/"
+        },
+        {
+          "id": "osm-node-4416786989-manhattan-pizza",
+          "name": "Manhattan Pizza",
+          "website": "http://www.manhattanpizza.ca/locations.html"
+        },
+        {
+          "id": "osm-node-9099100703-marigold-kitchen",
+          "name": "Marigold Kitchen",
+          "website": "https://marigoldkitchen.ca"
+        },
+        {
+          "id": "osm-node-9102296735-masala-delight",
+          "name": "Masala Delight",
+          "website": "https://masaladelight.com"
+        },
+        {
+          "id": "osm-node-2721720399-mashawee-mediterranean-grill",
+          "name": "Mashawee Mediterranean Grill",
+          "website": "https://www.mashaweemediterraneangrill.ca/"
+        },
+        {
+          "id": "osm-node-13286396472-matadora-tapas-bar",
+          "name": "Matadora Tapas Bar",
+          "website": "https://matadorahfx.ca/"
+        },
+        {
+          "id": "osm-node-33078674-mcdonald-s",
+          "name": "McDonald's",
+          "website": "http://www.mcdonalds.ca/"
+        },
+        {
+          "id": "osm-node-478118760-mcdonald-s",
+          "name": "McDonald's",
+          "website": "http://www.mcdonalds.ca/"
+        },
+        {
+          "id": "osm-node-2712689447-mcdonald-s",
+          "name": "McDonald's",
+          "website": "http://www.mcdonalds.ca/"
+        },
+        {
+          "id": "osm-node-3034604253-mcdonald-s",
+          "name": "McDonald's",
+          "website": "http://www.mcdonalds.ca/"
+        },
+        {
+          "id": "osm-node-8593116375-mcdonald-s",
+          "name": "McDonald's",
+          "website": "http://www.mcdonalds.ca/"
+        },
+        {
+          "id": "osm-node-13141551801-mcdonald-s",
+          "name": "McDonald's",
+          "website": "https://www.mcdonalds.com/ca/en-ca.html"
+        },
+        {
+          "id": "osm-way-181621820-mcdonald-s",
+          "name": "McDonald's",
+          "website": "https://www.mcdonalds.com/ca/en-ca/location/halifax/halifax-kempt/3486-kempt-road/3141.html"
+        },
+        {
+          "id": "osm-way-364014694-mcdonald-s",
+          "name": "McDonald's",
+          "website": "http://www.mcdonalds.ca/"
+        },
+        {
+          "id": "osm-node-1920618295-metro-pizza",
+          "name": "Metro Pizza",
+          "website": "https://metropizzahalifax.ca/"
+        },
+        {
+          "id": "osm-node-5863968671-mirchi-tandoor",
+          "name": "Mirchi Tandoor",
+          "website": "https://mirchitandoor.com/"
+        },
+        {
+          "id": "osm-node-11552509410-mizu-sushi",
+          "name": "Mizu Sushi",
+          "website": "https://mizutakeout.ca"
+        },
+        {
+          "id": "osm-node-11552529320-mizu-sushi",
+          "name": "Mizu Sushi",
+          "website": "https://mizutakeout.ca"
+        },
+        {
+          "id": "osm-node-8142450011-montana-s",
+          "name": "Montana's",
+          "website": "https://www.montanas.ca/en/locations/3617/halifax-chain-lake-dr.html"
+        },
+        {
+          "id": "osm-node-2611276563-narrow-espresso",
+          "name": "Narrow Espresso",
+          "website": "http://narrowespresso.com/"
+        },
+        {
+          "id": "osm-node-7674271948-new-asia",
+          "name": "New Asia",
+          "website": "http://www.newasiahalifax.ca/"
+        },
+        {
+          "id": "osm-node-7393838887-new-wing-wah",
+          "name": "New Wing Wah",
+          "website": "https://newwingwah.ca/"
+        },
+        {
+          "id": "osm-node-4965917621-patrons-golf-and-lounge",
+          "name": "Patrons Golf & Lounge",
+          "website": "https://www.patronsgolflounge.ca/"
+        },
+        {
+          "id": "osm-node-5150087023-peter-s-pizzeria",
+          "name": "Peter's Pizzeria",
+          "website": "https://www.peterspizzeriahfx.com/"
+        },
+        {
+          "id": "osm-node-7674255992-pg-cafe-and-grill",
+          "name": "PG Cafe and Grill",
+          "website": "https://pgcafeandgrill.com/"
+        },
+        {
+          "id": "osm-node-1666719782-pho-hoang-minh",
+          "name": "Ph\u1edf Hoang Minh",
+          "website": "https://www.phohoangminh.ca/"
+        },
+        {
+          "id": "osm-node-3789869157-piece-of-cake-bakery-and-cafe",
+          "name": "Piece of Cake Bakery and Cafe",
+          "website": "https://bishopslanding.com/dining/piece-of-cake-fine-bakery-cafe/"
+        },
+        {
+          "id": "osm-node-6393893025-pizza-hut",
+          "name": "Pizza Hut",
+          "website": "https://www.pizzahut.ca/huts/ca-1/R30103/"
+        },
+        {
+          "id": "osm-way-358577265-pizza-hut",
+          "name": "Pizza Hut",
+          "website": "https://www.pizzahut.ca/huts/ca-1/R30104/"
+        },
+        {
+          "id": "osm-node-9991598303-pizza-hut-delivery",
+          "name": "Pizza Hut Delivery",
+          "website": "https://www.pizzahut.ca/huts/ca-1/R30102/"
+        },
+        {
+          "id": "osm-node-5863968665-pizza-pizza",
+          "name": "Pizza Pizza",
+          "website": "https://www.pizzapizza.ca/"
+        },
+        {
+          "id": "osm-node-13073162601-pizza-pizza",
+          "name": "Pizza Pizza",
+          "website": "https://www.pizzapizza.ca/"
+        },
+        {
+          "id": "osm-node-5584342024-pleasant-street-diner",
+          "name": "Pleasant Street Diner",
+          "website": "https://pleasantstdiner.com"
+        },
+        {
+          "id": "osm-node-8376551845-portland-street-creperie",
+          "name": "Portland Street Creperie",
+          "website": "http://www.portlandstreetcreperie.com/"
+        },
+        {
+          "id": "osm-node-4417927494-primal-kitchen",
+          "name": "Primal Kitchen",
+          "website": "https://www.primalhfx.ca/"
+        },
+        {
+          "id": "osm-node-13073155301-rollz-ice-cream",
+          "name": "Rollz Ice Cream",
+          "website": "https://rollzicecream.ca/"
+        },
+        {
+          "id": "osm-node-11726396167-rush-hour-pizza",
+          "name": "Rush Hour Pizza",
+          "website": "https://rushhourpizza.ca/"
+        }
+      ],
+      "noWebsite": [
+        {
+          "id": "bar-kismet",
+          "name": "Bar Kismet",
+          "neighborhood": "North End"
+        },
+        {
+          "id": "the-bicycle-thief",
+          "name": "The Bicycle Thief",
+          "neighborhood": "Waterfront"
+        },
+        {
+          "id": "the-press-gang",
+          "name": "The Press Gang",
+          "neighborhood": "Downtown"
+        },
+        {
+          "id": "the-narrows",
+          "name": "The Narrows Public House",
+          "neighborhood": "North End"
+        },
+        {
+          "id": "2-doors-down",
+          "name": "2 Doors Down",
+          "neighborhood": "Downtown"
+        },
+        {
+          "id": "battery-park",
+          "name": "Battery Park Beer Bar",
+          "neighborhood": "Dartmouth"
+        },
+        {
+          "id": "dear-friend",
+          "name": "Dear Friend Bar",
+          "neighborhood": "Dartmouth"
+        },
+        {
+          "id": "osm-node-5150027725-100-cha-baa-tai",
+          "name": "100 Cha Baa Tai",
+          "neighborhood": "Dartmouth"
+        },
+        {
+          "id": "osm-node-11726220084-2-crows-oxford-taproom",
+          "name": "2 Crows Oxford Taproom",
+          "neighborhood": "West End"
+        },
+        {
+          "id": "osm-node-13262605851-a-pria",
+          "name": "a Pria",
+          "neighborhood": "Downtown"
+        },
+        {
+          "id": "osm-node-3030042567-a-taste-of-india",
+          "name": "A Taste of India",
+          "neighborhood": "Downtown"
+        },
+        {
+          "id": "osm-node-2712744136-a-and-w",
+          "name": "A&W",
+          "neighborhood": "Downtown"
+        },
+        {
+          "id": "osm-node-8066235499-a-and-w",
+          "name": "A&W",
+          "neighborhood": "Dartmouth"
+        },
+        {
+          "id": "osm-way-171149714-a-and-w",
+          "name": "A&W",
+          "neighborhood": "Armdale / Fairview"
+        },
+        {
+          "id": "osm-way-1047164106-a-and-w",
+          "name": "A&W",
+          "neighborhood": "Armdale / Fairview"
+        },
+        {
+          "id": "osm-node-3790789371-agricola-street-brasserie",
+          "name": "Agricola Street Brasserie",
+          "neighborhood": "Downtown"
+        },
+        {
+          "id": "osm-node-2721708499-alex-oh-sushi-rolls",
+          "name": "Alex Oh Sushi Rolls",
+          "neighborhood": "Downtown"
+        },
+        {
+          "id": "osm-node-1139388774-alexandra-s-pizza",
+          "name": "Alexandra's Pizza",
+          "neighborhood": "Downtown"
+        },
+        {
+          "id": "osm-node-2714920427-alexandra-s-pizza",
+          "name": "Alexandra's Pizza",
+          "neighborhood": "West End"
+        },
+        {
+          "id": "osm-node-6299280970-alexandra-s-pizza",
+          "name": "Alexandra's Pizza",
+          "neighborhood": "North Woodside"
+        },
+        {
+          "id": "osm-node-4797021954-alexandras-pizza",
+          "name": "Alexandras pizza",
+          "neighborhood": "South End"
+        },
+        {
+          "id": "osm-node-2624375974-alter-egos",
+          "name": "Alter Egos",
+          "neighborhood": "Downtown"
+        },
+        {
+          "id": "osm-node-3796325157-angelique-french-bakery-and-cafe",
+          "name": "Angelique French Bakery & Cafe",
+          "neighborhood": "Halifax Peninsula"
+        },
+        {
+          "id": "osm-node-6152777540-annie-s-place-cafe-and-catering",
+          "name": "Annie's Place Caf\u00e9 & Catering",
+          "neighborhood": "Downtown"
+        },
+        {
+          "id": "osm-node-30899821-arirang",
+          "name": "Arirang",
+          "neighborhood": "Clayton Park West"
+        },
+        {
+          "id": "osm-node-2718816606-as-you-like-it",
+          "name": "As You Like It",
+          "neighborhood": "Armdale / Fairview"
+        },
+        {
+          "id": "osm-node-37132635-asap-mabuhay",
+          "name": "ASAP Mabuhay",
+          "neighborhood": "Downtown"
+        },
+        {
+          "id": "osm-node-12986790096-au-liban",
+          "name": "Au Liban",
+          "neighborhood": "Dartmouth"
+        },
+        {
+          "id": "osm-node-5863968672-baan-thai",
+          "name": "Baan Thai",
+          "neighborhood": "Downtown"
+        },
+        {
+          "id": "osm-node-3533780877-baba-s-pizzeria",
+          "name": "Baba's Pizzeria",
+          "neighborhood": "South End"
+        },
+        {
+          "id": "osm-node-11577572437-banh-mi-a-and-b",
+          "name": "Banh Mi A&B",
+          "neighborhood": "Halifax Peninsula"
+        },
+        {
+          "id": "osm-node-5125389651-baton-rouge",
+          "name": "Baton Rouge",
+          "neighborhood": "Downtown"
+        },
+        {
+          "id": "osm-way-372779849-bearly-s-house-of-blues",
+          "name": "Bearly's House of Blues",
+          "neighborhood": "Downtown"
+        },
+        {
+          "id": "osm-node-11698520839-bells-lane-kitchen-at-purdy-s-wharf",
+          "name": "Bells Lane Kitchen at Purdy's Wharf",
+          "neighborhood": "Downtown"
+        },
+        {
+          "id": "osm-node-11526163886-bento-sushi",
+          "name": "Bento Sushi",
+          "neighborhood": "Downtown"
+        },
+        {
+          "id": "osm-node-2714920433-best-choice-chinese-food",
+          "name": "Best Choice Chinese Food",
+          "neighborhood": "West End"
+        },
+        {
+          "id": "osm-node-8187610240-bi-one",
+          "name": "Bi One",
+          "neighborhood": "Downtown"
+        },
+        {
+          "id": "osm-node-9074868976-big-al-s-pizza",
+          "name": "Big Al's Pizza",
+          "neighborhood": "Downtown"
+        },
+        {
+          "id": "osm-node-5017275565-blooming-cafe",
+          "name": "Blooming cafe",
+          "neighborhood": "South End"
+        },
+        {
+          "id": "osm-node-8142485078-blue-elephant-thai-restaurant",
+          "name": "Blue Elephant Thai Restaurant",
+          "neighborhood": "Armdale / Fairview"
+        },
+        {
+          "id": "osm-node-11577593719-blue-olive-greek-tavern",
+          "name": "Blue Olive Greek Tavern",
+          "neighborhood": "Halifax Peninsula"
+        },
+        {
+          "id": "osm-node-886758495-boneheads-bbq",
+          "name": "Boneheads BBQ",
+          "neighborhood": "Dartmouth"
+        },
+        {
+          "id": "osm-node-4401772591-boomburger",
+          "name": "boomburger",
+          "neighborhood": "Armdale / Fairview"
+        },
+        {
+          "id": "osm-node-2716971771-booster-juice",
+          "name": "Booster Juice",
+          "neighborhood": "Armdale / Fairview"
+        },
+        {
+          "id": "osm-node-7139174643-booster-juice",
+          "name": "Booster Juice",
+          "neighborhood": "West End"
+        },
+        {
+          "id": "osm-node-12007395292-booster-juice",
+          "name": "Booster Juice",
+          "neighborhood": "Dartmouth"
+        },
+        {
+          "id": "osm-node-1139389219-boston-pizza",
+          "name": "Boston Pizza",
+          "neighborhood": "Downtown"
+        },
+        {
+          "id": "osm-way-171149704-boston-pizza",
+          "name": "Boston Pizza",
+          "neighborhood": "Armdale / Fairview"
+        },
+        {
+          "id": "osm-node-13889594821-bourbon-st-grill",
+          "name": "Bourbon St Grill",
+          "neighborhood": "Dartmouth"
+        },
+        {
+          "id": "osm-node-11577527761-bravado",
+          "name": "Bravado",
+          "neighborhood": "Downtown"
+        },
+        {
+          "id": "osm-node-13073337403-brawta-jamaican-jerk-hut",
+          "name": "Brawta Jamaican Jerk Hut",
+          "neighborhood": "Dartmouth"
+        },
+        {
+          "id": "osm-node-4420899697-brenton-grill-and-wine-bar",
+          "name": "Brenton Grill & Wine bar",
+          "neighborhood": "Downtown"
+        },
+        {
+          "id": "osm-node-815496300-brewdebaker-s",
+          "name": "Brewdebaker's",
+          "neighborhood": "Armdale / Fairview"
+        },
+        {
+          "id": "osm-node-11734614941-broth-house",
+          "name": "Broth House",
+          "neighborhood": "Downtown"
+        },
+        {
+          "id": "osm-node-2721726004-bubba-ray-s-sports-bar",
+          "name": "Bubba Ray's Sports Bar",
+          "neighborhood": "Downtown"
+        },
+        {
+          "id": "osm-node-3789619357-bubba-ray-s-sports-bar",
+          "name": "Bubba Ray's Sports Bar",
+          "neighborhood": "Downtown"
+        },
+        {
+          "id": "osm-node-620090343-burger-king",
+          "name": "Burger King",
+          "neighborhood": "North End"
+        },
+        {
+          "id": "osm-node-1920486474-burger-king",
+          "name": "Burger King",
+          "neighborhood": "West End"
+        },
+        {
+          "id": "osm-way-171149719-burger-king",
+          "name": "Burger King",
+          "neighborhood": "Armdale / Fairview"
+        },
+        {
+          "id": "osm-way-240110431-burger-king",
+          "name": "Burger King",
+          "neighborhood": "Dartmouth"
+        },
+        {
+          "id": "osm-node-1785456866-burrito-jax",
+          "name": "Burrito Jax",
+          "neighborhood": "Downtown"
+        },
+        {
+          "id": "osm-node-11532103797-burrito-jax",
+          "name": "Burrito Jax",
+          "neighborhood": "Kempt Road Commercial District"
+        },
+        {
+          "id": "osm-node-6031036960-buta-ramen",
+          "name": "Buta Ramen",
+          "neighborhood": "Downtown"
+        },
+        {
+          "id": "osm-node-4952843922-byblos-lebanese-restaurant",
+          "name": "Byblos Lebanese Restaurant",
+          "neighborhood": "Dartmouth"
+        },
+        {
+          "id": "osm-node-13104234102-byron",
+          "name": "Byron",
+          "neighborhood": "Downtown"
+        },
+        {
+          "id": "osm-node-5150636926-cafe-98",
+          "name": "Cafe 98",
+          "neighborhood": "Dartmouth"
+        },
+        {
+          "id": "osm-node-3790838157-cafe-aroma-latino",
+          "name": "Cafe Aroma Latino",
+          "neighborhood": "Halifax Peninsula"
+        },
+        {
+          "id": "osm-node-475880058-cafe-chianti",
+          "name": "Cafe Chianti",
+          "neighborhood": "Downtown"
+        },
+        {
+          "id": "osm-node-12838650881-cafe-du-port",
+          "name": "Caf\u00e9 du Port",
+          "neighborhood": "Downtown"
+        },
+        {
+          "id": "osm-node-12824690512-cafe-lara",
+          "name": "Caf\u00e9 Lara",
+          "neighborhood": "West End"
+        },
+        {
+          "id": "osm-node-12984675528-cafe-lunette",
+          "name": "Caf\u00e9 Lunette",
+          "neighborhood": "Downtown"
+        },
+        {
+          "id": "osm-node-475876899-cafe-ristretto",
+          "name": "Cafe Ristretto",
+          "neighborhood": "Dartmouth"
+        },
+        {
+          "id": "osm-node-5647941370-cafe-tayaiki-52",
+          "name": "Caf\u00e9 Tayaiki 52",
+          "neighborhood": "Downtown"
+        },
+        {
+          "id": "osm-node-13073317016-caffe-lucca",
+          "name": "Caffe Lucca",
+          "neighborhood": "Dartmouth"
+        },
+        {
+          "id": "osm-node-12984673749-cannery-kitchen-and-social",
+          "name": "Cannery Kitchen & Social",
+          "neighborhood": "Downtown"
+        },
+        {
+          "id": "osm-node-2714920437-captain-sub",
+          "name": "Captain Sub",
+          "neighborhood": "West End"
+        },
+        {
+          "id": "osm-node-3800103657-celtic-corner-public-house",
+          "name": "Celtic Corner Public House",
+          "neighborhood": "Dartmouth"
+        },
+        {
+          "id": "osm-node-7196212747-cempoal-de-la-calavera-negra",
+          "name": "Cempoal de la Calavera Negra",
+          "neighborhood": "Downtown"
+        },
+        {
+          "id": "osm-node-11609580961-cha-baa-thai",
+          "name": "Cha Baa Thai",
+          "neighborhood": "West End"
+        },
+        {
+          "id": "osm-node-3796313457-chaii-samosa",
+          "name": "Chaii Samosa",
+          "neighborhood": "Halifax Peninsula"
+        },
+        {
+          "id": "osm-node-5134046822-chain-yard-urban-cidery",
+          "name": "Chain Yard Urban Cidery",
+          "neighborhood": "Bloomfield"
+        },
+        {
+          "id": "osm-node-5160893922-chatime",
+          "name": "Chatime",
+          "neighborhood": "Downtown"
+        },
+        {
+          "id": "osm-way-1268243127-chatime",
+          "name": "Chatime",
+          "neighborhood": "West End"
+        },
+        {
+          "id": "osm-node-773014548-cheelin-chinese-food",
+          "name": "Cheelin Chinese Food",
+          "neighborhood": "Downtown"
+        },
+        {
+          "id": "osm-node-1139389526-cheers-live-country-bar",
+          "name": "Cheers Live Country Bar",
+          "neighborhood": "Downtown"
+        },
+        {
+          "id": "osm-node-11726000908-chef-abod",
+          "name": "Chef Abod",
+          "neighborhood": "West End"
+        },
+        {
+          "id": "osm-node-3799399358-cherry-berry",
+          "name": "Cherry Berry",
+          "neighborhood": "Downtown"
+        },
+        {
+          "id": "osm-node-12938312911-churned",
+          "name": "Churned",
+          "neighborhood": "Dartmouth"
+        },
+        {
+          "id": "osm-node-8066924821-cinnabon",
+          "name": "Cinnabon",
+          "neighborhood": "Dartmouth"
+        },
+        {
+          "id": "osm-node-12444860718-city-shawarma",
+          "name": "City Shawarma",
+          "neighborhood": "Clayton Park West"
+        },
+        {
+          "id": "osm-node-13098723101-coastal-curry",
+          "name": "Coastal Curry",
+          "neighborhood": "Dartmouth"
+        },
+        {
+          "id": "osm-node-13958623779-coffee-street",
+          "name": "Coffee Street",
+          "neighborhood": "Dartmouth"
+        },
+        {
+          "id": "osm-node-815416385-cora-s",
+          "name": "Cora's",
+          "neighborhood": "Armdale / Fairview"
+        },
+        {
+          "id": "osm-node-12718532662-costco-food-court",
+          "name": "Costco Food Court",
+          "neighborhood": "Armdale / Fairview"
+        },
+        {
+          "id": "osm-node-12718612064-costco-food-court",
+          "name": "Costco Food Court",
+          "neighborhood": "Dartmouth"
+        },
+        {
+          "id": "osm-way-651356633-cosy-snack-bar",
+          "name": "Cosy Snack Bar",
+          "neighborhood": "West End"
+        },
+        {
+          "id": "osm-node-12496044778-cottage-cafe",
+          "name": "Cottage Cafe",
+          "neighborhood": "Dartmouth"
+        },
+        {
+          "id": "osm-node-3791471657-cow-s",
+          "name": "Cow's",
+          "neighborhood": "Downtown"
+        },
+        {
+          "id": "osm-node-11165031880-cow-s",
+          "name": "Cow's",
+          "neighborhood": "Dartmouth"
+        },
+        {
+          "id": "osm-node-12893501701-cows-cable-wharf",
+          "name": "COWS Cable Wharf",
+          "neighborhood": "Downtown"
+        }
+      ]
+    }
+  },
+  "eventCoverage": {
+    "currentCityEvents": 166,
+    "allStoredCityEvents": 166,
+    "cityEventSources": 11,
+    "bySource": {
+      "Tourism Nova Scotia Events": 23,
+      "Halifax Public Libraries": 3,
+      "The Carleton": 10,
+      "Halifax Convention Centre": 1,
+      "Scotiabank Centre": 31,
+      "Light House Arts Centre": 19,
+      "HFX Wanderers 2026 Home Schedule": 5,
+      "Halifax Tides 2026 Home Schedule": 4,
+      "Halifax Mooseheads Home Schedule": 32,
+      "Symphony Nova Scotia": 35,
+      "Neptune Theatre": 3
+    },
+    "byCategory": {
+      "Arts": 42,
+      "Comedy": 4,
+      "Sports": 61,
+      "Community": 11,
+      "Festivals": 10,
+      "Music": 58,
+      "Outdoor": 1,
+      "Other": 2,
+      "Food & Drink": 3
+    },
+    "byMunicipality": {
+      "Halifax": 166
+    },
+    "withVenueRestaurantNameMatch": 10,
+    "withCoordinates": 0,
+    "withTicketLink": 166,
+    "withPrice": 11,
+    "freeEvents": 0,
+    "duplicateEventCount": 0,
+    "structuredRestaurantEvents": 19,
+    "structuredUpcomingRestaurantEvents": 19,
+    "expiredStructuredRestaurantEvents": 0,
+    "next7Days": 9,
+    "next30Days": 35
+  },
+  "discoveryCoverage": {
+    "directoryRecords": 0,
+    "directoryNewToCatalog": 0,
+    "openingWatchLeads": 0,
+    "reviewedDiscoveredRestaurants": 6
+  },
+  "sourceFailures": {
+    "officialWebsiteChecks": 51,
+    "firstPartyWebsiteDiscovery": 73,
+    "verifiedSourcePages": 15,
+    "structuredRestaurantEvents": 12,
+    "websiteFeeds": 6,
+    "socialApis": 3,
+    "cityEventSources": 0,
+    "openingWatchSources": 0,
+    "restaurantDirectorySources": 0
+  },
+  "credentials": {
+    "facebook": "missing",
+    "instagram": "missing"
+  },
+  "unresolved": {
+    "sharedSocialAssociations": 20,
+    "possibleDuplicateCurrentEvents": 0,
+    "staleRestaurantRecords": 0,
+    "unknownFreshnessRestaurantRecords": 0
+  },
+  "productionBaselineCommit": "add04dd5f30b5678071ce55745d568b0146b6df2"
+}
