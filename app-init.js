@@ -65,7 +65,7 @@ function bindCommonActions() {
 function initMiniMap(items) {
   const element = document.querySelector("#exploreMiniMap");
   if (!element || !window.L) return;
-  const map = L.map(element, { attributionControl: false, zoomControl: false, dragging: false, scrollWheelZoom: false, doubleClickZoom: false, boxZoom: false, keyboard: false, tap: false }).setView(MAP_DEFAULT, 12);
+  const map = L.map(element, { attributionControl: false, zoomControl: false, dragging: false, scrollWheelZoom: false, doubleClickZoom: false, boxZoom: false, keyboard: false, tap: false, zoomAnimation: false, fadeAnimation: false, markerZoomAnimation: false }).setView(MAP_DEFAULT, 12, { animate: false });
   L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", { maxZoom: 19 }).addTo(map);
   const renderer = L.canvas();
   items.filter((r) => r.coordinates).slice(0, 80).forEach((restaurant) => L.circleMarker([restaurant.coordinates.lat, restaurant.coordinates.lon], { radius: 5, color: "#0b3a67", weight: 2, fillColor: "#45aaa5", fillOpacity: 0.9, renderer }).addTo(map));
@@ -75,7 +75,7 @@ function initMiniMap(items) {
 function initMainMap(items) {
   const element = document.querySelector("#mainMap");
   if (!element || !window.L) return;
-  const map = L.map(element, { preferCanvas: true }).setView(MAP_DEFAULT, 12);
+  const map = L.map(element, { preferCanvas: true, zoomAnimation: false, fadeAnimation: false, markerZoomAnimation: false }).setView(MAP_DEFAULT, 12, { animate: false });
   L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", { maxZoom: 19, attribution: "&copy; OpenStreetMap contributors" }).addTo(map);
   const renderer = L.canvas({ padding: 0.5 });
   const layer = L.layerGroup().addTo(map);
@@ -106,17 +106,23 @@ function highlightMapResult(id, scroll = true) {
 
 function focusMapResult(id) {
   const marker = state.mapMarkers?.get(id);
-  if (!marker || !state.map) return;
-  state.map.setView(marker.getLatLng(), Math.max(state.map.getZoom(), 15), { animate: true });
-  marker.openTooltip();
-  highlightMapResult(id, false);
+  const map = state.map;
+  if (!marker || !map || !map.getContainer()?.isConnected) return;
+  try {
+    map.stop();
+    map.setView(marker.getLatLng(), Math.max(map.getZoom(), 15), { animate: false, reset: true });
+    if (map.getContainer()?.isConnected && state.map === map) marker.openTooltip();
+    highlightMapResult(id, false);
+  } catch {
+    // Route transitions can invalidate a marker between input and render. Ignore stale interactions.
+  }
 }
 
 function initDetailMap(restaurant) {
   const element = document.querySelector("#detailMap");
   if (!element || !window.L || !restaurant.coordinates) return;
   const center = [restaurant.coordinates.lat, restaurant.coordinates.lon];
-  const map = L.map(element, { attributionControl: false, zoomControl: false, dragging: false, scrollWheelZoom: false, doubleClickZoom: false, boxZoom: false, keyboard: false }).setView(center, 15);
+  const map = L.map(element, { attributionControl: false, zoomControl: false, dragging: false, scrollWheelZoom: false, doubleClickZoom: false, boxZoom: false, keyboard: false, zoomAnimation: false, fadeAnimation: false, markerZoomAnimation: false }).setView(center, 15, { animate: false });
   L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", { maxZoom: 19 }).addTo(map);
   L.circleMarker(center, { radius: 8, color: "#ffffff", weight: 3, fillColor: "#0b3a67", fillOpacity: 1 }).addTo(map);
   state.map = map;
@@ -131,13 +137,20 @@ function categoryColor(restaurant) {
 }
 
 function destroyMap() {
-  if (state.map) {
-    try { state.map.remove(); } catch { /* no-op */ }
-    state.map = null;
-    state.mapLayer = null;
-    state.mapRenderer = null;
-    state.mapMarkers = null;
-  }
+  const map = state.map;
+  // Clear app references first so delayed input/animation callbacks cannot reuse a map
+  // that is being torn down during a hash-route transition.
+  state.map = null;
+  state.mapLayer = null;
+  state.mapRenderer = null;
+  state.mapMarkers = null;
+  if (!map) return;
+  try { map.stop?.(); } catch { /* no-op */ }
+  try { map.closeTooltip?.(); } catch { /* no-op */ }
+  try { map.closePopup?.(); } catch { /* no-op */ }
+  try { map.eachLayer?.((layer) => layer.closeTooltip?.()); } catch { /* no-op */ }
+  try { map.off?.(); } catch { /* no-op */ }
+  try { map.remove(); } catch { /* stale Leaflet container; route teardown continues */ }
 }
 
 function toast(message) {
