@@ -14,7 +14,7 @@ on:
       - scripts/check-expanded-sources.mjs
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   social-refresh:
@@ -79,3 +79,16 @@ jobs:
             artifacts/expanded-source-integrity-report.json
           if-no-files-found: error
           retention-days: 30
+
+      - name: Capture reviewed source output on isolated branch
+        if: github.ref == 'refs/heads/source-expansion-social-20260828'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/first-party-sources.js data/build/first-party-sources.json data/website-feed-signals.js data/build/website-feed-signals.json data/social-signals.js data/build/social-signals.json
+          if git diff --cached --quiet; then
+            echo "No source output changes to commit."
+            exit 0
+          fi
+          git commit -m "Capture sanitized website and social source preview output"
+          git push origin HEAD:source-expansion-social-20260828
