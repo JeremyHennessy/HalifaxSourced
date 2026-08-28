@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "updatedAt": "2026-08-28",
+  "platforms": [
+    {"id":"instagram","kind":"social","label":"Instagram","hosts":["instagram.com"],"genericPaths":["p","reel","reels","stories","explore","accounts","tv","direct"]},
+    {"id":"facebook","kind":"social","label":"Facebook","hosts":["facebook.com","fb.com"],"genericPaths":["share","sharer","dialog","plugins","login","groups","events","watch","reel","reels","photo","photos","posts"]},
+    {"id":"tiktok","kind":"social","label":"TikTok","hosts":["tiktok.com"],"genericPaths":["discover","login","foryou","music","tag"]},
+    {"id":"threads","kind":"social","label":"Threads","hosts":["threads.net"],"genericPaths":["login","search","activity"]},
+    {"id":"x","kind":"social","label":"X","hosts":["x.com","twitter.com"],"genericPaths":["home","share","intent","search","explore","i","login"]},
+    {"id":"youtube","kind":"social","label":"YouTube","hosts":["youtube.com","youtu.be"],"genericPaths":["watch","shorts","playlist","results","feed"]},
+    {"id":"linkedin","kind":"social","label":"LinkedIn","hosts":["linkedin.com"],"genericPaths":["feed","login","jobs","learning","posts"]},
+    {"id":"bluesky","kind":"social","label":"Bluesky","hosts":["bsky.app"],"genericPaths":["search","notifications","settings"]},
+    {"id":"pinterest","kind":"social","label":"Pinterest","hosts":["pinterest.com","pinterest.ca","pin.it"],"genericPaths":["pin","search","ideas","login"]},
+    {"id":"snapchat","kind":"social","label":"Snapchat","hosts":["snapchat.com"],"genericPaths":["add","discover","spotlight","lens","login"]},
+    {"id":"linktree","kind":"link_hub","label":"Linktree","hosts":["linktr.ee"],"genericPaths":[]},
+    {"id":"beacons","kind":"link_hub","label":"Beacons","hosts":["beacons.ai"],"genericPaths":[]},
+    {"id":"linkinbio","kind":"link_hub","label":"Linkin.bio","hosts":["linkin.bio"],"genericPaths":[]},
+    {"id":"campsite","kind":"link_hub","label":"Campsite","hosts":["campsite.bio"],"genericPaths":[]},
+    {"id":"bento","kind":"link_hub","label":"Bento","hosts":["bento.me"],"genericPaths":[]}
+  ],
+  "associationBases": [
+    "linked_from_official_website",
+    "linked_from_official_location_page",
+    "jsonld_sameAs",
+    "linked_from_official_link_hub",
+    "linked_from_verified_social_profile",
+    "trusted_directory_explicit_link",
+    "verified_search_match",
+    "manual_review",
+    "shared_brand_profile"
+  ],
+  "confidenceValues": ["authoritative","very_high","high","medium","candidate"],
+  "reviewStates": ["verified_link","verified","needs-review","candidate","rejected"],
+  "statusValues": ["active","redirected","stale","broken","unknown"]
+}
