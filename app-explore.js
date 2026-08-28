@@ -12,7 +12,7 @@ function renderExplore() {
 
   appView.innerHTML = `
     <section class="page-shell page-intro compact-intro">
-      <div><span class="eyebrow">Discover</span><h1>Explore Halifax</h1><p>${state.query ? `Showing places matching “${escapeHtml(state.query)}”.` : "Search restaurants and venues by cuisine, neighbourhood, and source-backed features."}</p></div>
+      <div><span class="eyebrow">Discover</span><h1>Explore Halifax</h1><p>${state.query ? `Showing places matching “${escapeHtml(state.query)}”.` : "Search restaurants and venues by cuisine, neighbourhood, social presence, booking links, and source-backed features."}</p></div>
     </section>
     <div class="page-shell mobile-filter-bar"><button class="mobile-filter-toggle" type="button" data-open-filters aria-controls="exploreFilters" aria-expanded="false">Filters${filterCount ? `<span>${filterCount}</span>` : ""}</button><span>${results.length.toLocaleString()} places</span></div>
     <div class="filter-drawer-backdrop" data-filter-backdrop></div>
@@ -21,7 +21,7 @@ function renderExplore() {
         <div class="filter-title"><h2>Filters</h2><div class="filter-title-actions"><button type="button" data-clear-filters>Clear all</button><button class="filter-close" type="button" data-close-filters aria-label="Close filters">×</button></div></div>
         ${filterSelect("Cuisine", "cuisineFilter", state.cuisine, [["all", "All cuisines"], ...liveCuisines.slice(0, 24).map(([name, count]) => [name, `${name} (${count})`])])}
         ${filterSelect("Neighbourhood", "neighbourhoodFilter", state.neighbourhood, [["all", "All neighbourhoods"], ...liveNeighbourhoods.slice(0, 24).map(([name, count]) => [name, `${name} (${count})`])])}
-        ${filterSelect("Feature", "featureFilter", state.feature, [["all", "All places"], ["menus", "Menu link"], ["specials", "Special signal"], ["events", "Event signal"], ["patio", "Patio"], ["opening", "Opening signal"]])}
+        ${filterSelect("Feature", "featureFilter", state.feature, [["all", "All places"], ["menus", "Menu link"], ["specials", "Special signal"], ["events", "Event signal"], ["patio", "Patio"], ["opening", "New / opening"], ["social", "Official social profiles"], ["reservations", "Reservations"], ["ordering", "Online ordering"]])}
         <button class="button primary filter-apply" type="button" data-filter-apply>Apply filters</button>
       </aside>
       <div class="results-area">
@@ -34,8 +34,8 @@ function renderExplore() {
       </div>
       <aside class="context-column">
         <div class="mini-map-card"><div id="exploreMiniMap" class="mini-map"></div><a href="#map">Open full map →</a></div>
-        <div class="tip-card"><span>♧</span><div><h2>Local tip</h2><p>Menu, specials, event, patio and opening badges indicate source-backed signals. Confirm time-sensitive details with the restaurant.</p></div></div>
-        <div class="source-card"><h2>Source coverage</h2><p>${restaurants.length.toLocaleString()} combined restaurant and venue records are loaded from curated, public-map and reviewed discovery layers.</p><p>${officialPayload ? `${(officialPayload.count ?? officialSignals.length).toLocaleString()} restaurant-owned sites checked for menu, event, special and reservation links.` : "Official-site signal data not loaded."}</p></div>
+        <div class="tip-card"><span>♧</span><div><h2>Local tip</h2><p>Menu, social, reservation, ordering, specials, event, patio and opening badges indicate source-backed links or signals. Confirm time-sensitive details with the restaurant.</p></div></div>
+        <div class="source-card"><h2>Source coverage</h2><p>${restaurants.length.toLocaleString()} combined restaurant and venue records are loaded from curated, public-map and reviewed discovery layers.</p><p>${officialPayload ? `${(officialPayload.count ?? officialSignals.length).toLocaleString()} restaurant-owned sites checked for menu, event, special, reservation and social links.` : "Official-site signal data not loaded."}</p><p>${window.__halifaxFirstPartySocialProfileCount ? `${window.__halifaxFirstPartySocialProfileCount.toLocaleString()} official-site-linked social profiles and ${window.__halifaxFirstPartyRelatedLinkCount.toLocaleString()} related first-party links are indexed.` : "Social and related-link discovery data is still growing."}</p></div>
       </aside>
     </section>`;
 
@@ -49,10 +49,11 @@ function filterSelect(label, id, selected, options) {
 }
 
 function activeFilterPills() {
+  const labels = { social: "Social profiles", reservations: "Reservations", ordering: "Online ordering", opening: "New / opening" };
   const pills = [];
   if (state.cuisine !== "all") pills.push(state.cuisine);
   if (state.neighbourhood !== "all") pills.push(state.neighbourhood);
-  if (state.feature !== "all") pills.push(state.feature);
+  if (state.feature !== "all") pills.push(labels[state.feature] || state.feature);
   return pills.length ? `<div class="active-pills">${pills.map((pill) => `<span>${escapeHtml(pill)}</span>`).join("")}</div>` : "";
 }
 
