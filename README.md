@@ -23,8 +23,8 @@ The site is static and GitHub Pages-friendly. Hash routing is used so the discov
 - `#home` — editorial discovery homepage
 - `#explore` — searchable/filterable restaurant results
 - `#events` — structured upcoming events when available, otherwise source leads
-- `#specials` — specials/happy-hour leads
-- `#menus` — menu-ready restaurants
+- `#specials` — direct specials/happy-hour source leads
+- `#menus` — restaurants with direct menu-source coverage
 - `#map` — Leaflet map/list discovery
 - `#restaurant/<id>` — restaurant detail and source evidence
 - `#saved` — device-local saved places
@@ -36,6 +36,8 @@ The UI distinguishes source coverage from consumer ratings. It does not fabricat
 Restaurant imagery is separately provenance-gated. Production photos are loaded from `data/restaurant-media.js` only when the media record has an exact restaurant ID, approved review state, explicit permission confirmation, source URL, source type, and documented rights basis. Unreviewed or merely public images are not rendered. See `docs/media-provenance.md`.
 
 Structured event dates are kept separate from keyword/link leads. `data/structured-events.js` accepts only exact-ID official JSON-LD Event records with valid dates and source provenance. The Events view automatically prefers these records when they exist and falls back to source leads when none are available. See `docs/structured-events.md`.
+
+Menu and specials discovery now separates a general website/keyword signal from a direct source page. `data/verified-source-pages.js` stores exact-ID menu/specials links that passed the source-page verification contract. The UI prefers those records, falls back to direct official-site candidate links while verification coverage grows, and no longer treats any generic restaurant website as proof that a menu is available. See `docs/verified-source-pages.md`.
 
 ## Development
 
@@ -49,7 +51,7 @@ Then open the local URL printed by the script.
 
 ## Data refresh
 
-Existing import scripts remain under `scripts/`. See `docs/ingestion-compliance.md`, `docs/media-provenance.md`, `docs/structured-events.md`, and `data/source-contract.json` before extending collection.
+Existing import scripts remain under `scripts/`. See `docs/ingestion-compliance.md`, `docs/media-provenance.md`, `docs/structured-events.md`, `docs/verified-source-pages.md`, and `data/source-contract.json` before extending collection.
 
 Owner media workflow:
 
@@ -67,7 +69,14 @@ node scripts/import-structured-events.mjs
 node scripts/check-data-integrity.mjs
 ```
 
-The `Structured Events Preview` workflow performs the same scan in GitHub Actions and uploads the generated data for review without modifying `main`.
+Verified menu/specials source preview:
+
+```bash
+node scripts/verify-official-source-pages.mjs
+node scripts/check-data-integrity.mjs
+```
+
+The `Structured Events Preview` and `Verified Source Pages Preview` workflows perform source checks in GitHub Actions and upload generated data for review without modifying `main`.
 
 ## Deployment
 
