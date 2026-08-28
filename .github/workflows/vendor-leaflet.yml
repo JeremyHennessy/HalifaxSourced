@@ -1,0 +1,45 @@
+name: Vendor Leaflet Runtime
+
+on:
+  push:
+    branches:
+      - qa-polish-20260828
+    paths:
+      - .github/workflows/vendor-leaflet.yml
+
+permissions:
+  contents: write
+
+jobs:
+  vendor-leaflet:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Install Leaflet package
+        run: npm install --no-save leaflet@1.9.4
+
+      - name: Copy runtime files
+        run: |
+          mkdir -p vendor/leaflet
+          cp node_modules/leaflet/dist/leaflet.js vendor/leaflet/leaflet.js
+          cp node_modules/leaflet/dist/leaflet.css vendor/leaflet/leaflet.css
+
+      - name: Commit vendored runtime
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add vendor/leaflet/leaflet.js vendor/leaflet/leaflet.css
+          if git diff --cached --quiet; then
+            echo "Leaflet runtime already vendored."
+            exit 0
+          fi
+          git commit -m "Vendor Leaflet runtime"
+          git push origin HEAD:qa-polish-20260828
