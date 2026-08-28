@@ -62,8 +62,7 @@ function bindCommonActions() {
   document.querySelector("[data-newsletter-form]")?.addEventListener("submit", (event) => { event.preventDefault(); toast("Newsletter service is not connected yet."); });
 }
 
-function initMiniMap(items) {
-  const element = document.querySelector("#exploreMiniMap");
+function initMiniMap(items, element = document.querySelector("#exploreMiniMap")) {
   if (!element || !window.L) return;
   const map = L.map(element, { attributionControl: false, zoomControl: false, dragging: false, scrollWheelZoom: false, doubleClickZoom: false, boxZoom: false, keyboard: false, tap: false, zoomAnimation: false, fadeAnimation: false, markerZoomAnimation: false }).setView(MAP_DEFAULT, 12, { animate: false });
   L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", { maxZoom: 19 }).addTo(map);
