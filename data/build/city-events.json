@@ -1,177 +1,686 @@
 {
-  "version": 1,
-  "generatedAt": "2026-08-28T18:25:29.357Z",
+  "version": 2,
+  "generatedAt": "2026-08-28T18:31:15.535Z",
   "range": {
-    "start": "2026-08-28T12:25:27.537Z",
-    "end": "2027-10-02T18:25:27.537Z"
+    "start": "2026-08-28T12:30:58.486Z",
+    "end": "2027-10-02T18:30:58.486Z"
   },
-  "eventCount": 10,
+  "eventCount": 172,
   "categoryCounts": {
-    "Music": 7,
-    "Festivals": 1,
-    "Arts": 1,
-    "Sports": 1,
-    "Other": 3
+    "Food & Drink": 15,
+    "Arts": 105,
+    "Outdoor": 21,
+    "Community": 24,
+    "Comedy": 5,
+    "Sports": 68,
+    "Music": 35,
+    "Festivals": 24
   },
   "sourceStats": [
     {
       "sourceId": "tourism-ns-events",
       "sourceName": "Tourism Nova Scotia Events",
       "mode": "tourism_event_crawl",
-      "observedAt": "2026-08-28T18:25:27.537Z",
-      "eventCount": 0,
-      "durationMs": 0,
-      "status": "failed",
-      "reason": "unsupported_mode_tourism_event_crawl"
+      "observedAt": "2026-08-28T18:31:10.697Z",
+      "eventCount": 218,
+      "durationMs": 12211,
+      "status": "ok"
     },
     {
       "sourceId": "halifax-mooseheads-home",
       "sourceName": "Halifax Mooseheads Home Schedule",
       "mode": "mooseheads_home_table",
-      "observedAt": "2026-08-28T18:25:27.539Z",
-      "eventCount": 0,
-      "durationMs": 0,
-      "status": "failed",
-      "reason": "unsupported_mode_mooseheads_home_table"
+      "observedAt": "2026-08-28T18:31:10.971Z",
+      "eventCount": 32,
+      "durationMs": 273,
+      "status": "ok"
     },
     {
       "sourceId": "scotiabank-centre",
       "sourceName": "Scotiabank Centre",
       "mode": "scotiabank_calendar",
-      "observedAt": "2026-08-28T18:25:27.539Z",
-      "eventCount": 0,
-      "durationMs": 0,
-      "status": "failed",
-      "reason": "unsupported_mode_scotiabank_calendar"
+      "observedAt": "2026-08-28T18:31:11.010Z",
+      "eventCount": 34,
+      "durationMs": 38,
+      "status": "ok"
     },
     {
       "sourceId": "hfx-wanderers-home",
       "sourceName": "HFX Wanderers 2026 Home Schedule",
       "mode": "sports_bullet_schedule",
-      "observedAt": "2026-08-28T18:25:27.539Z",
-      "eventCount": 0,
-      "durationMs": 0,
-      "status": "failed",
-      "reason": "unsupported_mode_sports_bullet_schedule"
+      "observedAt": "2026-08-28T18:31:11.045Z",
+      "eventCount": 5,
+      "durationMs": 35,
+      "status": "ok"
     },
     {
       "sourceId": "halifax-tides-home",
       "sourceName": "Halifax Tides 2026 Home Schedule",
       "mode": "sports_bullet_schedule",
-      "observedAt": "2026-08-28T18:25:27.539Z",
-      "eventCount": 0,
-      "durationMs": 1,
-      "status": "failed",
-      "reason": "unsupported_mode_sports_bullet_schedule"
+      "observedAt": "2026-08-28T18:31:11.078Z",
+      "eventCount": 4,
+      "durationMs": 33,
+      "status": "ok"
     },
     {
       "sourceId": "light-house-arts-centre",
       "sourceName": "Light House Arts Centre",
       "mode": "lighthouse_index",
-      "observedAt": "2026-08-28T18:25:27.540Z",
-      "eventCount": 0,
-      "durationMs": 0,
-      "status": "failed",
-      "reason": "unsupported_mode_lighthouse_index"
+      "observedAt": "2026-08-28T18:31:11.927Z",
+      "eventCount": 19,
+      "durationMs": 849,
+      "status": "ok"
     },
     {
       "sourceId": "the-carleton",
       "sourceName": "The Carleton",
       "mode": "html_calendar",
-      "observedAt": "2026-08-28T18:25:28.667Z",
+      "observedAt": "2026-08-28T18:31:12.856Z",
       "eventCount": 10,
-      "durationMs": 1127,
+      "durationMs": 928,
       "status": "ok"
     },
     {
       "sourceId": "neptune-theatre",
       "sourceName": "Neptune Theatre",
       "mode": "neptune_season",
-      "observedAt": "2026-08-28T18:25:28.668Z",
-      "eventCount": 0,
-      "durationMs": 0,
-      "status": "failed",
-      "reason": "unsupported_mode_neptune_season"
+      "observedAt": "2026-08-28T18:31:13.259Z",
+      "eventCount": 3,
+      "durationMs": 403,
+      "status": "ok"
     },
     {
       "sourceId": "halifax-thunderbirds",
       "sourceName": "Halifax Thunderbirds",
       "mode": "embedded_event_data",
-      "observedAt": "2026-08-28T18:25:29.337Z",
+      "observedAt": "2026-08-28T18:31:13.931Z",
       "eventCount": 0,
-      "durationMs": 669,
+      "durationMs": 672,
       "status": "ok"
     },
     {
       "sourceId": "halifax-events-community",
       "sourceName": "HalifaxEvents.ca",
       "mode": "tribe_list_crawl",
-      "observedAt": "2026-08-28T18:25:29.337Z",
+      "observedAt": "2026-08-28T18:31:15.521Z",
       "eventCount": 0,
-      "durationMs": 0,
-      "status": "failed",
-      "reason": "unsupported_mode_tribe_list_crawl"
+      "durationMs": 1590,
+      "status": "ok"
     }
   ],
-  "failures": [
+  "failures": [],
+  "events": [
     {
+      "id": "tourism-ns-events-8d394cf969c6a230",
+      "title": "Ta’n me’j Tel-keknuo’ltiek: How Unique We Still Are",
+      "startAt": "2025-10-01T15:00:00.000Z",
+      "endAt": "2028-11-28T20:00:00.000Z",
+      "allDay": false,
+      "venueName": "Maritime Museum of the Atlantic",
+      "address": "1675 Lower Water Street, Halifax, NS, Canada",
+      "city": "Halifax",
+      "categories": [
+        "Food & Drink",
+        "Arts",
+        "Outdoor",
+        "Community"
+      ],
+      "price": "$2 CAD",
+      "ticketUrl": "https://novascotia.com/explore-nova-scotia/events/?region=29",
+      "eventUrl": "https://novascotia.com/event/tan-mej-tel-keknuoltiek-how-unique-we-still-are/",
+      "sourceUrl": "https://novascotia.com/event/tan-mej-tel-keknuoltiek-how-unique-we-still-are/",
       "sourceId": "tourism-ns-events",
       "sourceName": "Tourism Nova Scotia Events",
-      "url": "https://novascotia.com/explore-nova-scotia/events/?region=29",
-      "reason": "unsupported_mode_tourism_event_crawl",
-      "observedAt": "2026-08-28T18:25:27.537Z"
+      "sourceKind": "official_tourism_calendar",
+      "observedAt": "2026-08-28T18:30:59.752Z",
+      "reviewState": "source-observed",
+      "alternateSources": [
+        {
+          "sourceId": "tourism-ns-events",
+          "sourceName": "Tourism Nova Scotia Events",
+          "sourceUrl": "https://novascotia.com/event/tan-mej-tel-keknuoltiek-how-unique-we-still-are/"
+        }
+      ]
     },
     {
-      "sourceId": "halifax-mooseheads-home",
-      "sourceName": "Halifax Mooseheads Home Schedule",
-      "url": "https://www.scotiabank-centre.com/events/2026-2027-halifax-mooseheads",
-      "reason": "unsupported_mode_mooseheads_home_table",
-      "observedAt": "2026-08-28T18:25:27.539Z"
+      "id": "https://novascotia.com/event/better-times-comedy/#event",
+      "title": "Better Times Comedy",
+      "startAt": "2026-01-08T19:00:00.000Z",
+      "endAt": "2026-12-17T22:00:00.000Z",
+      "allDay": false,
+      "venueName": "Good Robot Robie Street",
+      "address": "2736 Robie St, Halifax, NS B3K 4P2, Halifax, NS, CA",
+      "city": "Halifax",
+      "categories": [
+        "Arts",
+        "Comedy"
+      ],
+      "price": "15",
+      "ticketUrl": "https://www.jumpcomedy.com/e/better-times-comedy",
+      "eventUrl": "https://novascotia.com/event/better-times-comedy/",
+      "sourceUrl": "https://novascotia.com/event/better-times-comedy/",
+      "sourceId": "tourism-ns-events",
+      "sourceName": "Tourism Nova Scotia Events",
+      "sourceKind": "official_tourism_calendar",
+      "observedAt": "2026-08-28T18:30:59.732Z",
+      "reviewState": "source-observed",
+      "alternateSources": [
+        {
+          "sourceId": "tourism-ns-events",
+          "sourceName": "Tourism Nova Scotia Events",
+          "sourceUrl": "https://novascotia.com/event/better-times-comedy/"
+        }
+      ]
     },
     {
-      "sourceId": "scotiabank-centre",
-      "sourceName": "Scotiabank Centre",
-      "url": "https://www.scotiabank-centre.com/premium-seating/eventcalendar",
-      "reason": "unsupported_mode_scotiabank_calendar",
-      "observedAt": "2026-08-28T18:25:27.539Z"
+      "id": "tourism-ns-events-780b75f272d3c505",
+      "title": "Halifax Wanderers 2026 Season",
+      "startAt": "2026-04-18T15:00:00.000Z",
+      "endAt": "2026-10-25T19:00:00.000Z",
+      "allDay": false,
+      "venueName": "Wanderers Grounds",
+      "address": "5819 Sackville St, Halifax, NS, Canada",
+      "city": "Halifax",
+      "categories": [
+        "Sports",
+        "Food & Drink",
+        "Arts",
+        "Outdoor",
+        "Community"
+      ],
+      "price": "$24.95 CAD",
+      "ticketUrl": "https://hfxwanderersfc.canpl.ca/tickets",
+      "eventUrl": "https://novascotia.com/event/halifax-wanderers-2026-season/",
+      "sourceUrl": "https://novascotia.com/event/halifax-wanderers-2026-season/",
+      "sourceId": "tourism-ns-events",
+      "sourceName": "Tourism Nova Scotia Events",
+      "sourceKind": "official_tourism_calendar",
+      "observedAt": "2026-08-28T18:30:59.813Z",
+      "reviewState": "source-observed",
+      "alternateSources": [
+        {
+          "sourceId": "tourism-ns-events",
+          "sourceName": "Tourism Nova Scotia Events",
+          "sourceUrl": "https://novascotia.com/event/halifax-wanderers-2026-season/"
+        }
+      ]
     },
     {
-      "sourceId": "hfx-wanderers-home",
-      "sourceName": "HFX Wanderers 2026 Home Schedule",
-      "url": "https://novascotia.com/event/halifax-wanderers-2026-season/",
-      "reason": "unsupported_mode_sports_bullet_schedule",
-      "observedAt": "2026-08-28T18:25:27.539Z"
+      "id": "tourism-ns-events-f941db3adc789b9c",
+      "title": "Halifax Tides FC 2026 Season",
+      "startAt": "2026-04-25T15:00:00.000Z",
+      "endAt": "2026-10-26T19:00:00.000Z",
+      "allDay": false,
+      "venueName": "Wanderers Grounds",
+      "address": "5819 Sackville St, Halifax, NS, Canada",
+      "city": "Halifax",
+      "categories": [
+        "Sports",
+        "Food & Drink",
+        "Arts",
+        "Outdoor",
+        "Community"
+      ],
+      "price": "$25.56 CAD",
+      "ticketUrl": "https://am.ticketmaster.com/halifaxtidesfc/buy?",
+      "eventUrl": "https://novascotia.com/event/halifax-tides-2026-season/",
+      "sourceUrl": "https://novascotia.com/event/halifax-tides-2026-season/",
+      "sourceId": "tourism-ns-events",
+      "sourceName": "Tourism Nova Scotia Events",
+      "sourceKind": "official_tourism_calendar",
+      "observedAt": "2026-08-28T18:30:59.807Z",
+      "reviewState": "source-observed",
+      "alternateSources": [
+        {
+          "sourceId": "tourism-ns-events",
+          "sourceName": "Tourism Nova Scotia Events",
+          "sourceUrl": "https://novascotia.com/event/halifax-tides-2026-season/"
+        }
+      ]
     },
     {
-      "sourceId": "halifax-tides-home",
-      "sourceName": "Halifax Tides 2026 Home Schedule",
-      "url": "https://novascotia.com/event/halifax-tides-2026-season/",
-      "reason": "unsupported_mode_sports_bullet_schedule",
-      "observedAt": "2026-08-28T18:25:27.539Z"
+      "id": "https://novascotia.com/event/cooking-with-fire/#event",
+      "title": "Cooking with Fire: Waterfront Sunset & Dinner",
+      "startAt": "2026-05-22T18:00:00.000Z",
+      "endAt": "2026-09-26T21:00:00.000Z",
+      "allDay": false,
+      "venueName": "Long Table Social Club",
+      "address": "5611 NS-358, Canning, NS B0P 1H0, Scots Bay, NS, CA",
+      "city": "Scots Bay",
+      "categories": [
+        "Food & Drink",
+        "Arts",
+        "Outdoor"
+      ],
+      "price": "128",
+      "ticketUrl": "https://www.opentable.com/r/the-long-table-socia-canning?corrid=6ede3f50-ec17-4df2-8ff1-50b0662c90a3&avt=eyJ2IjoyLCJtIjowLCJwIjowLCJzIjowLCJuIjowfQ&p=2&sd=2026-06-19T14%3A00%3A00",
+      "eventUrl": "https://novascotia.com/event/cooking-with-fire/",
+      "sourceUrl": "https://novascotia.com/event/cooking-with-fire/",
+      "sourceId": "tourism-ns-events",
+      "sourceName": "Tourism Nova Scotia Events",
+      "sourceKind": "official_tourism_calendar",
+      "observedAt": "2026-08-28T18:31:06.983Z",
+      "reviewState": "source-observed"
     },
     {
-      "sourceId": "light-house-arts-centre",
-      "sourceName": "Light House Arts Centre",
-      "url": "https://www.lighthouseartscentre.ca/events/",
-      "reason": "unsupported_mode_lighthouse_index",
-      "observedAt": "2026-08-28T18:25:27.540Z"
+      "id": "tourism-ns-events-5dd813db152cc906",
+      "title": "Gold Rush! Escape Room at Sherbrooke Village",
+      "startAt": "2026-06-03T12:30:00.000Z",
+      "endAt": "2026-12-05T20:00:00.000Z",
+      "allDay": false,
+      "venueName": "Sherbrooke Village",
+      "address": "42 Main St., Sherbrooke, NS, B0J 3C0, Canada",
+      "city": "Halifax",
+      "categories": [
+        "Food & Drink",
+        "Arts",
+        "Outdoor",
+        "Community"
+      ],
+      "price": "$7 CAD",
+      "ticketUrl": "https://sherbrookevillage.ca/pages/escaperoom",
+      "eventUrl": "https://novascotia.com/event/gold-rush-escape-room-sherbrooke-village/",
+      "sourceUrl": "https://novascotia.com/event/gold-rush-escape-room-sherbrooke-village/",
+      "sourceId": "tourism-ns-events",
+      "sourceName": "Tourism Nova Scotia Events",
+      "sourceKind": "official_tourism_calendar",
+      "observedAt": "2026-08-28T18:31:02.507Z",
+      "reviewState": "source-observed",
+      "alternateSources": [
+        {
+          "sourceId": "tourism-ns-events",
+          "sourceName": "Tourism Nova Scotia Events",
+          "sourceUrl": "https://novascotia.com/event/gold-rush-escape-room-sherbrooke-village/"
+        }
+      ]
     },
     {
-      "sourceId": "neptune-theatre",
-      "sourceName": "Neptune Theatre",
-      "url": "https://www.neptunetheatre.com/visit/ticket-packages",
-      "reason": "unsupported_mode_neptune_season",
-      "observedAt": "2026-08-28T18:25:28.668Z"
+      "id": "tourism-ns-events-0d89f4ce45dfa3e1",
+      "title": "Baddeck Gathering Ceilidhs",
+      "startAt": "2026-06-13T22:30:00.000Z",
+      "endAt": "2026-10-19T00:30:00.000Z",
+      "allDay": false,
+      "venueName": "St. Michael's Parish Hall",
+      "address": "6 Margaree Road, Baddeck, Baddeck, NS, Canada",
+      "city": "Halifax",
+      "categories": [
+        "Music",
+        "Food & Drink",
+        "Arts",
+        "Outdoor",
+        "Community"
+      ],
+      "price": "15-25 CAD",
+      "ticketUrl": "https://novascotia.com/explore-nova-scotia/events/?region=29",
+      "eventUrl": "https://novascotia.com/event/baddeck-gathering-ceilidhs/",
+      "sourceUrl": "https://novascotia.com/event/baddeck-gathering-ceilidhs/",
+      "sourceId": "tourism-ns-events",
+      "sourceName": "Tourism Nova Scotia Events",
+      "sourceKind": "official_tourism_calendar",
+      "observedAt": "2026-08-28T18:31:09.033Z",
+      "reviewState": "source-observed"
     },
     {
-      "sourceId": "halifax-events-community",
-      "sourceName": "HalifaxEvents.ca",
-      "url": "https://halifaxevents.ca/events/list/",
-      "reason": "unsupported_mode_tribe_list_crawl",
-      "observedAt": "2026-08-28T18:25:29.337Z"
-    }
-  ],
-  "events": [
+      "id": "https://novascotia.com/event/the-barn-concert-ceilidhs-normaway-inn-music-room-series/#event",
+      "title": "The Barn Music Concert-Ceilidhs and Normaway Inn Music Room Series",
+      "startAt": "2026-06-26T00:00:00.000Z",
+      "endAt": "2026-10-16T00:00:00.000Z",
+      "allDay": false,
+      "venueName": "The Barn music venue at the Normaway Inn",
+      "address": "691 Egypt Rd, Margaree Valley, NS, B0E 2C0, Canada, Margaree Valley, NS, CA",
+      "city": "Margaree Valley",
+      "categories": [
+        "Music",
+        "Arts"
+      ],
+      "price": "1525",
+      "ticketUrl": "https://thebarnmusic.ca/tickets/",
+      "eventUrl": "https://novascotia.com/event/the-barn-concert-ceilidhs-normaway-inn-music-room-series/",
+      "sourceUrl": "https://novascotia.com/event/the-barn-concert-ceilidhs-normaway-inn-music-room-series/",
+      "sourceId": "tourism-ns-events",
+      "sourceName": "Tourism Nova Scotia Events",
+      "sourceKind": "official_tourism_calendar",
+      "observedAt": "2026-08-28T18:31:08.246Z",
+      "reviewState": "source-observed"
+    },
+    {
+      "id": "https://novascotia.com/event/traditional-music-on-thursdays-at-port-royal/#event",
+      "title": "Traditional Music on Thursdays at Port-Royal",
+      "startAt": "2026-07-02T13:00:00.000Z",
+      "endAt": "2026-10-09T15:00:00.000Z",
+      "allDay": false,
+      "venueName": "Port-Royal National Historic Site",
+      "address": "53 Historic Ln, Granville Ferry, NS, B0S 1K0, Canada, Port Royal, NS, CA",
+      "city": "Port Royal",
+      "categories": [
+        "Music",
+        "Arts"
+      ],
+      "price": null,
+      "ticketUrl": "https://novascotia.com/explore-nova-scotia/events/?region=29",
+      "eventUrl": "https://novascotia.com/event/traditional-music-on-thursdays-at-port-royal/",
+      "sourceUrl": "https://novascotia.com/event/traditional-music-on-thursdays-at-port-royal/",
+      "sourceId": "tourism-ns-events",
+      "sourceName": "Tourism Nova Scotia Events",
+      "sourceKind": "official_tourism_calendar",
+      "observedAt": "2026-08-28T18:31:06.942Z",
+      "reviewState": "source-observed"
+    },
+    {
+      "id": "https://novascotia.com/event/ceilidh-at-highland-village/#event",
+      "title": "Céilidh at Highland Village",
+      "startAt": "2026-07-02T14:00:00.000Z",
+      "endAt": "2026-10-15T15:00:00.000Z",
+      "allDay": false,
+      "venueName": "Highland Village Museum",
+      "address": "4119 NS-223, Iona, NS B2C 1A3, Iona, NS, CA",
+      "city": "Iona",
+      "categories": [
+        "Arts"
+      ],
+      "price": null,
+      "ticketUrl": "https://novascotia.com/explore-nova-scotia/events/?region=29",
+      "eventUrl": "https://novascotia.com/event/ceilidh-at-highland-village/",
+      "sourceUrl": "https://novascotia.com/event/ceilidh-at-highland-village/",
+      "sourceId": "tourism-ns-events",
+      "sourceName": "Tourism Nova Scotia Events",
+      "sourceKind": "official_tourism_calendar",
+      "observedAt": "2026-08-28T18:31:08.876Z",
+      "reviewState": "source-observed"
+    },
+    {
+      "id": "https://novascotia.com/event/spors-beag-at-highland-village/#event",
+      "title": "Spòrs Beag at Highland Village",
+      "startAt": "2026-07-03T10:00:00.000Z",
+      "endAt": "2026-08-28T14:00:00.000Z",
+      "allDay": false,
+      "venueName": "Highland Village Museum",
+      "address": "4119 NS-223, Iona, NS B2C 1A3, Iona, NS, CA",
+      "city": "Iona",
+      "categories": [
+        "Arts"
+      ],
+      "price": null,
+      "ticketUrl": "https://novascotia.com/explore-nova-scotia/events/?region=29",
+      "eventUrl": "https://novascotia.com/event/spors-beag-at-highland-village/",
+      "sourceUrl": "https://novascotia.com/event/spors-beag-at-highland-village/",
+      "sourceId": "tourism-ns-events",
+      "sourceName": "Tourism Nova Scotia Events",
+      "sourceKind": "official_tourism_calendar",
+      "observedAt": "2026-08-28T18:31:02.349Z",
+      "reviewState": "source-observed",
+      "alternateSources": [
+        {
+          "sourceId": "tourism-ns-events",
+          "sourceName": "Tourism Nova Scotia Events",
+          "sourceUrl": "https://novascotia.com/event/spors-beag-at-highland-village/"
+        }
+      ]
+    },
+    {
+      "id": "https://novascotia.com/event/sip-shuck-at-inverary-resort/#event",
+      "title": "Sip & Shuck at Inverary Resort",
+      "startAt": "2026-07-03T14:00:00.000Z",
+      "endAt": "2026-08-30T17:00:00.000Z",
+      "allDay": false,
+      "venueName": "Inverary Resort",
+      "address": "368 Shore Rd, Baddeck, NS B0E 1B0, Baddeck, NS, CA",
+      "city": "Baddeck",
+      "categories": [
+        "Arts"
+      ],
+      "price": null,
+      "ticketUrl": "https://novascotia.com/explore-nova-scotia/events/?region=29",
+      "eventUrl": "https://novascotia.com/event/sip-shuck-at-inverary-resort/",
+      "sourceUrl": "https://novascotia.com/event/sip-shuck-at-inverary-resort/",
+      "sourceId": "tourism-ns-events",
+      "sourceName": "Tourism Nova Scotia Events",
+      "sourceKind": "official_tourism_calendar",
+      "observedAt": "2026-08-28T18:31:05.084Z",
+      "reviewState": "source-observed",
+      "alternateSources": [
+        {
+          "sourceId": "tourism-ns-events",
+          "sourceName": "Tourism Nova Scotia Events",
+          "sourceUrl": "https://novascotia.com/event/sip-shuck-at-inverary-resort/"
+        }
+      ]
+    },
+    {
+      "id": "tourism-ns-events-6b39b4b79036459b",
+      "title": "Fiddle Fridays at The Barn with Howie MacDonald & Friends",
+      "startAt": "2026-07-03T22:00:00.000Z",
+      "endAt": "2026-08-28T23:00:00.000Z",
+      "allDay": false,
+      "venueName": "Margaree Valley",
+      "address": "691 Egypt Road, Margaree Valley, NS, B0E 2C0, Canada",
+      "city": "Halifax",
+      "categories": [
+        "Music",
+        "Food & Drink",
+        "Arts",
+        "Outdoor",
+        "Community"
+      ],
+      "price": "15-25 CAD",
+      "ticketUrl": "https://novascotia.com/explore-nova-scotia/events/?region=29",
+      "eventUrl": "https://novascotia.com/event/fiddle-fridays-at-the-barn-howie-macdonald-friends/",
+      "sourceUrl": "https://novascotia.com/event/fiddle-fridays-at-the-barn-howie-macdonald-friends/",
+      "sourceId": "tourism-ns-events",
+      "sourceName": "Tourism Nova Scotia Events",
+      "sourceKind": "official_tourism_calendar",
+      "observedAt": "2026-08-28T18:31:01.730Z",
+      "reviewState": "source-observed",
+      "alternateSources": [
+        {
+          "sourceId": "tourism-ns-events",
+          "sourceName": "Tourism Nova Scotia Events",
+          "sourceUrl": "https://novascotia.com/event/fiddle-fridays-at-the-barn-howie-macdonald-friends/"
+        }
+      ]
+    },
+    {
+      "id": "https://novascotia.com/event/guided-storytelling-tour-milling-frolic-experience-at-highland-village/#event",
+      "title": "Guided Storytelling Tour & Milling Frolic Experience at Highland Village",
+      "startAt": "2026-07-04T10:30:00.000Z",
+      "endAt": "2026-08-29T12:30:00.000Z",
+      "allDay": false,
+      "venueName": "Highland Village Museum",
+      "address": "4119 NS-223, Iona, NS B2C 1A3, Iona, NS, CA",
+      "city": "Iona",
+      "categories": [
+        "Music",
+        "Arts"
+      ],
+      "price": null,
+      "ticketUrl": "https://novascotia.com/explore-nova-scotia/events/?region=29",
+      "eventUrl": "https://novascotia.com/event/guided-storytelling-tour-milling-frolic-experience-at-highland-village/",
+      "sourceUrl": "https://novascotia.com/event/guided-storytelling-tour-milling-frolic-experience-at-highland-village/",
+      "sourceId": "tourism-ns-events",
+      "sourceName": "Tourism Nova Scotia Events",
+      "sourceKind": "official_tourism_calendar",
+      "observedAt": "2026-08-28T18:31:01.709Z",
+      "reviewState": "source-observed",
+      "alternateSources": [
+        {
+          "sourceId": "tourism-ns-events",
+          "sourceName": "Tourism Nova Scotia Events",
+          "sourceUrl": "https://novascotia.com/event/guided-storytelling-tour-milling-frolic-experience-at-highland-village/"
+        }
+      ]
+    },
+    {
+      "id": "https://novascotia.com/event/land-and-culture-walk-at-highland-village/#event",
+      "title": "Land and Culture Walk at Highland Village",
+      "startAt": "2026-07-06T14:00:00.000Z",
+      "endAt": "2026-08-31T15:00:00.000Z",
+      "allDay": false,
+      "venueName": "Highland Village Museum",
+      "address": "4119 NS-223, Iona, NS B2C 1A3, Iona, NS, CA",
+      "city": "Iona",
+      "categories": [
+        "Arts",
+        "Community"
+      ],
+      "price": null,
+      "ticketUrl": "https://novascotia.com/explore-nova-scotia/events/?region=29",
+      "eventUrl": "https://novascotia.com/event/land-and-culture-walk-at-highland-village/",
+      "sourceUrl": "https://novascotia.com/event/land-and-culture-walk-at-highland-village/",
+      "sourceId": "tourism-ns-events",
+      "sourceName": "Tourism Nova Scotia Events",
+      "sourceKind": "official_tourism_calendar",
+      "observedAt": "2026-08-28T18:31:05.225Z",
+      "reviewState": "source-observed",
+      "alternateSources": [
+        {
+          "sourceId": "tourism-ns-events",
+          "sourceName": "Tourism Nova Scotia Events",
+          "sourceUrl": "https://novascotia.com/event/land-and-culture-walk-at-highland-village/"
+        }
+      ]
+    },
+    {
+      "id": "https://novascotia.com/event/thursday-night-lobster-suppers-at-white-point-beach-resort/#event",
+      "title": "Thursday Night Lobster Suppers at White Point Beach Resort",
+      "startAt": "2026-07-09T16:30:00.000Z",
+      "endAt": "2026-09-10T23:59:00.000Z",
+      "allDay": false,
+      "venueName": "White Point Beach Resort",
+      "address": "75 White Point Rd #2, Hunts Point, NS B0T 1G0, White Point (Liverpool area), NS, CA",
+      "city": "White Point (Liverpool area)",
+      "categories": [
+        "Arts",
+        "Outdoor"
+      ],
+      "price": null,
+      "ticketUrl": "https://novascotia.com/explore-nova-scotia/events/?region=29",
+      "eventUrl": "https://novascotia.com/event/thursday-night-lobster-suppers-at-white-point-beach-resort/",
+      "sourceUrl": "https://novascotia.com/event/thursday-night-lobster-suppers-at-white-point-beach-resort/",
+      "sourceId": "tourism-ns-events",
+      "sourceName": "Tourism Nova Scotia Events",
+      "sourceKind": "official_tourism_calendar",
+      "observedAt": "2026-08-28T18:31:05.354Z",
+      "reviewState": "source-observed",
+      "alternateSources": [
+        {
+          "sourceId": "tourism-ns-events",
+          "sourceName": "Tourism Nova Scotia Events",
+          "sourceUrl": "https://novascotia.com/event/thursday-night-lobster-suppers-at-white-point-beach-resort/"
+        }
+      ]
+    },
+    {
+      "id": "https://novascotia.com/event/family-fun-at-the-fair/#event",
+      "title": "Family Fun at the Fair!",
+      "startAt": "2026-07-27T00:00:00.000Z",
+      "endAt": "2026-10-04T00:00:00.000Z",
+      "allDay": false,
+      "venueName": null,
+      "address": "Halifax, NS, CA",
+      "city": "Halifax",
+      "categories": [
+        "Festivals",
+        "Arts",
+        "Community"
+      ],
+      "price": null,
+      "ticketUrl": "https://novascotia.com/explore-nova-scotia/events/?region=29",
+      "eventUrl": "https://novascotia.com/event/family-fun-at-the-fair/",
+      "sourceUrl": "https://novascotia.com/event/family-fun-at-the-fair/",
+      "sourceId": "tourism-ns-events",
+      "sourceName": "Tourism Nova Scotia Events",
+      "sourceKind": "official_tourism_calendar",
+      "observedAt": "2026-08-28T18:30:59.904Z",
+      "reviewState": "source-observed",
+      "alternateSources": [
+        {
+          "sourceId": "tourism-ns-events",
+          "sourceName": "Tourism Nova Scotia Events",
+          "sourceUrl": "https://novascotia.com/event/family-fun-at-the-fair/"
+        }
+      ]
+    },
+    {
+      "id": "https://novascotia.com/event/nova-scotia-flower-festival/#event",
+      "title": "Nova Scotia Flower Festival",
+      "startAt": "2026-08-13T00:00:00.000Z",
+      "endAt": "2026-09-07T00:00:00.000Z",
+      "allDay": true,
+      "venueName": "Riverbreeze Farm & Cornmaze",
+      "address": "699 Onslow Rd, Upper Onslow, NS B6L 5L5, Truro, NS, CA",
+      "city": "Truro",
+      "categories": [
+        "Festivals",
+        "Arts"
+      ],
+      "price": null,
+      "ticketUrl": "https://riverbreeze.info/collections/tickets",
+      "eventUrl": "https://novascotia.com/event/nova-scotia-flower-festival/",
+      "sourceUrl": "https://novascotia.com/event/nova-scotia-flower-festival/",
+      "sourceId": "tourism-ns-events",
+      "sourceName": "Tourism Nova Scotia Events",
+      "sourceKind": "official_tourism_calendar",
+      "observedAt": "2026-08-28T18:31:06.949Z",
+      "reviewState": "source-observed",
+      "alternateSources": [
+        {
+          "sourceId": "tourism-ns-events",
+          "sourceName": "Tourism Nova Scotia Events",
+          "sourceUrl": "https://novascotia.com/event/nova-scotia-flower-festival/"
+        }
+      ]
+    },
+    {
+      "id": "https://novascotia.com/event/sherbrooke-village-harvest-feast/#event",
+      "title": "Sherbrooke Village Harvest Feast",
+      "startAt": "2026-08-28T17:30:00.000Z",
+      "endAt": "2026-08-28T19:00:00.000Z",
+      "allDay": false,
+      "venueName": "Sherbrooke Village Museum",
+      "address": "42 Main St, Sherbrooke, NS B2H 1E4, Sherbrooke, NS, CA",
+      "city": "Sherbrooke",
+      "categories": [
+        "Arts"
+      ],
+      "price": "3060",
+      "ticketUrl": "https://sherbrookevillage.ca/pages/culinary-experiences",
+      "eventUrl": "https://novascotia.com/event/sherbrooke-village-harvest-feast/",
+      "sourceUrl": "https://novascotia.com/event/sherbrooke-village-harvest-feast/",
+      "sourceId": "tourism-ns-events",
+      "sourceName": "Tourism Nova Scotia Events",
+      "sourceKind": "official_tourism_calendar",
+      "observedAt": "2026-08-28T18:31:07.119Z",
+      "reviewState": "source-observed"
+    },
+    {
+      "id": "https://novascotia.com/event/grandmother-moon-ceremony-at-cheticamp-campground/#event",
+      "title": "Grandmother Moon Ceremony at Chéticamp Campground",
+      "startAt": "2026-08-28T19:00:00.000Z",
+      "endAt": "2026-08-28T19:00:00.000Z",
+      "allDay": false,
+      "venueName": "Chéticamp Campground",
+      "address": "Chéticamp Campground, Chéticamp, NS, Canada, Chéticamp, NS, CA",
+      "city": "Chéticamp",
+      "categories": [
+        "Arts"
+      ],
+      "price": null,
+      "ticketUrl": "https://novascotia.com/explore-nova-scotia/events/?region=29",
+      "eventUrl": "https://novascotia.com/event/grandmother-moon-ceremony-at-cheticamp-campground/",
+      "sourceUrl": "https://novascotia.com/event/grandmother-moon-ceremony-at-cheticamp-campground/",
+      "sourceId": "tourism-ns-events",
+      "sourceName": "Tourism Nova Scotia Events",
+      "sourceKind": "official_tourism_calendar",
+      "observedAt": "2026-08-28T18:31:01.722Z",
+      "reviewState": "source-observed",
+      "alternateSources": [
+        {
+          "sourceId": "tourism-ns-events",
+          "sourceName": "Tourism Nova Scotia Events",
+          "sourceUrl": "https://novascotia.com/event/grandmother-moon-ceremony-at-cheticamp-campground/"
+        }
+      ]
+    },
     {
       "id": "the-carleton-7d83ec423aad8c34",
       "title": "Southbound Sinners",
@@ -182,7 +691,8 @@
       "address": "1685 Argyle Street, Halifax, NS",
       "city": "Halifax",
       "categories": [
-        "Music"
+        "Music",
+        "Arts"
       ],
       "price": null,
       "ticketUrl": "https://www.thecarleton.ca/music/upcoming-performances/",
@@ -191,8 +701,124 @@
       "sourceId": "the-carleton",
       "sourceName": "The Carleton",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-08-28T18:25:28.663Z",
+      "observedAt": "2026-08-28T18:31:12.855Z",
       "reviewState": "source-observed"
+    },
+    {
+      "id": "https://novascotia.com/event/nova-hollandia-reenactment-at-fort-anne-national-historic-site/#event",
+      "title": "Nova Hollandia Reenactment at Fort Anne National Historic Site",
+      "startAt": "2026-08-29T00:00:00.000Z",
+      "endAt": "2026-08-30T00:00:00.000Z",
+      "allDay": true,
+      "venueName": "Fort Anne National Historic Site",
+      "address": "323 St George St, Annapolis Royal, NS B0S 1K0, Annapolis Royal, NS, CA",
+      "city": "Annapolis Royal",
+      "categories": [
+        "Arts"
+      ],
+      "price": null,
+      "ticketUrl": "https://novascotia.com/explore-nova-scotia/events/?region=29",
+      "eventUrl": "https://novascotia.com/event/nova-hollandia-reenactment-at-fort-anne-national-historic-site/",
+      "sourceUrl": "https://novascotia.com/event/nova-hollandia-reenactment-at-fort-anne-national-historic-site/",
+      "sourceId": "tourism-ns-events",
+      "sourceName": "Tourism Nova Scotia Events",
+      "sourceKind": "official_tourism_calendar",
+      "observedAt": "2026-08-28T18:31:01.744Z",
+      "reviewState": "source-observed",
+      "alternateSources": [
+        {
+          "sourceId": "tourism-ns-events",
+          "sourceName": "Tourism Nova Scotia Events",
+          "sourceUrl": "https://novascotia.com/event/nova-hollandia-reenactment-at-fort-anne-national-historic-site/"
+        }
+      ]
+    },
+    {
+      "id": "https://novascotia.com/event/hope-for-wildlifes-annual-open-house/#event",
+      "title": "Hope for Wildlife’s Annual Open House",
+      "startAt": "2026-08-29T12:00:00.000Z",
+      "endAt": "2026-08-29T12:00:00.000Z",
+      "allDay": false,
+      "venueName": "Hope for Wildlife",
+      "address": "5909 Highway 207, Seaforth, Nova Scotia, B0J 2L0, Canada, Seaforth, NS, CA",
+      "city": "Seaforth",
+      "categories": [
+        "Arts"
+      ],
+      "price": null,
+      "ticketUrl": "https://novascotia.com/explore-nova-scotia/events/?region=29",
+      "eventUrl": "https://novascotia.com/event/hope-for-wildlifes-annual-open-house/",
+      "sourceUrl": "https://novascotia.com/event/hope-for-wildlifes-annual-open-house/",
+      "sourceId": "tourism-ns-events",
+      "sourceName": "Tourism Nova Scotia Events",
+      "sourceKind": "official_tourism_calendar",
+      "observedAt": "2026-08-28T18:30:59.893Z",
+      "reviewState": "source-observed",
+      "alternateSources": [
+        {
+          "sourceId": "tourism-ns-events",
+          "sourceName": "Tourism Nova Scotia Events",
+          "sourceUrl": "https://novascotia.com/event/hope-for-wildlifes-annual-open-house/"
+        }
+      ]
+    },
+    {
+      "id": "https://novascotia.com/event/parkas-great-sleepover-fortress-of-louisbourg-national-historic-site/#event",
+      "title": "Parka’s Great Sleepover – Fortress of Louisbourg National Historic Site",
+      "startAt": "2026-08-29T17:30:00.000Z",
+      "endAt": "2026-08-29T17:30:00.000Z",
+      "allDay": false,
+      "venueName": "Fortress of Louisbourg National Historic Site",
+      "address": "58 Wolfe Street, Louisbourg, NS, B1C 2J2, Canada, Louisbourg, NS, CA",
+      "city": "Louisbourg",
+      "categories": [
+        "Arts"
+      ],
+      "price": null,
+      "ticketUrl": "https://novascotia.com/explore-nova-scotia/events/?region=29",
+      "eventUrl": "https://novascotia.com/event/parkas-great-sleepover-fortress-of-louisbourg-national-historic-site/",
+      "sourceUrl": "https://novascotia.com/event/parkas-great-sleepover-fortress-of-louisbourg-national-historic-site/",
+      "sourceId": "tourism-ns-events",
+      "sourceName": "Tourism Nova Scotia Events",
+      "sourceKind": "official_tourism_calendar",
+      "observedAt": "2026-08-28T18:31:01.740Z",
+      "reviewState": "source-observed",
+      "alternateSources": [
+        {
+          "sourceId": "tourism-ns-events",
+          "sourceName": "Tourism Nova Scotia Events",
+          "sourceUrl": "https://novascotia.com/event/parkas-great-sleepover-fortress-of-louisbourg-national-historic-site/"
+        }
+      ]
+    },
+    {
+      "id": "https://novascotia.com/event/old-man-luedecke-with-rose-morrison/#event",
+      "title": "Old Man Luedecke with Rose Morrison",
+      "startAt": "2026-08-29T19:30:00.000Z",
+      "endAt": "2026-08-29T21:00:00.000Z",
+      "allDay": false,
+      "venueName": "Chester Playhouse",
+      "address": "22 Pleasant St, Chester, NS B2Y 1G4, Chester, NS, CA",
+      "city": "Chester",
+      "categories": [
+        "Arts"
+      ],
+      "price": null,
+      "ticketUrl": "https://www.facebook.com/share/1CRjVS4GSr/",
+      "eventUrl": "https://novascotia.com/event/old-man-luedecke-with-rose-morrison/",
+      "sourceUrl": "https://novascotia.com/event/old-man-luedecke-with-rose-morrison/",
+      "sourceId": "tourism-ns-events",
+      "sourceName": "Tourism Nova Scotia Events",
+      "sourceKind": "official_tourism_calendar",
+      "observedAt": "2026-08-28T18:31:01.749Z",
+      "reviewState": "source-observed",
+      "alternateSources": [
+        {
+          "sourceId": "tourism-ns-events",
+          "sourceName": "Tourism Nova Scotia Events",
+          "sourceUrl": "https://novascotia.com/event/old-man-luedecke-with-rose-morrison/"
+        }
+      ]
     },
     {
       "id": "the-carleton-c3e2af1bd7f4bb60",
@@ -204,7 +830,8 @@
       "address": "1685 Argyle Street, Halifax, NS",
       "city": "Halifax",
       "categories": [
-        "Music"
+        "Music",
+        "Arts"
       ],
       "price": null,
       "ticketUrl": "https://www.thecarleton.ca/music/upcoming-performances/",
@@ -213,8 +840,43 @@
       "sourceId": "the-carleton",
       "sourceName": "The Carleton",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-08-28T18:25:28.664Z",
+      "observedAt": "2026-08-28T18:31:12.855Z",
       "reviewState": "source-observed"
+    },
+    {
+      "id": "tourism-ns-events-2cf36350a7852eeb",
+      "title": "Berwick & District Gala Days",
+      "startAt": "2026-09-02T03:00:00.000Z",
+      "endAt": "2026-09-07T03:00:00.000Z",
+      "allDay": false,
+      "venueName": null,
+      "address": null,
+      "city": "Halifax",
+      "categories": [
+        "Sports",
+        "Food & Drink",
+        "Festivals",
+        "Arts",
+        "Comedy",
+        "Outdoor",
+        "Community"
+      ],
+      "price": "$128 CAD",
+      "ticketUrl": "https://novascotia.com/explore-nova-scotia/events/?region=29",
+      "eventUrl": "https://novascotia.com/event/berwick-district-gala-days/",
+      "sourceUrl": "https://novascotia.com/event/berwick-district-gala-days/",
+      "sourceId": "tourism-ns-events",
+      "sourceName": "Tourism Nova Scotia Events",
+      "sourceKind": "official_tourism_calendar",
+      "observedAt": "2026-08-28T18:31:06.956Z",
+      "reviewState": "source-observed",
+      "alternateSources": [
+        {
+          "sourceId": "tourism-ns-events",
+          "sourceName": "Tourism Nova Scotia Events",
+          "sourceUrl": "https://novascotia.com/event/berwick-district-gala-days/"
+        }
+      ]
     },
     {
       "id": "the-carleton-8d803040b30111a7",
@@ -227,7 +889,8 @@
       "city": "Halifax",
       "categories": [
         "Music",
-        "Festivals"
+        "Festivals",
+        "Arts"
       ],
       "price": null,
       "ticketUrl": "https://www.thecarleton.ca/music/upcoming-performances/",
@@ -236,8 +899,72 @@
       "sourceId": "the-carleton",
       "sourceName": "The Carleton",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-08-28T18:25:28.664Z",
+      "observedAt": "2026-08-28T18:31:12.855Z",
       "reviewState": "source-observed"
+    },
+    {
+      "id": "https://novascotia.com/event/the-halifax-fringe-festival/#event",
+      "title": "The Halifax Fringe Festival",
+      "startAt": "2026-09-03T00:00:00.000Z",
+      "endAt": "2026-09-13T00:00:00.000Z",
+      "allDay": true,
+      "venueName": "Neptune Theatre's Scotiabank Stage, as well as various venues throughout Halifax, including the Bus Stop Theatre, Art Gallery of Nova Scotia, and Halifax Central Library.",
+      "address": "6068 Quinpool Road, Halifax, B3L 1A1 , Halifax, NS, CA",
+      "city": "Halifax",
+      "categories": [
+        "Festivals",
+        "Arts"
+      ],
+      "price": null,
+      "ticketUrl": "https://novascotia.com/explore-nova-scotia/events/?region=29",
+      "eventUrl": "https://novascotia.com/event/the-halifax-fringe-festival/",
+      "sourceUrl": "https://novascotia.com/event/the-halifax-fringe-festival/",
+      "sourceId": "tourism-ns-events",
+      "sourceName": "Tourism Nova Scotia Events",
+      "sourceKind": "official_tourism_calendar",
+      "observedAt": "2026-08-28T18:30:59.965Z",
+      "reviewState": "source-observed",
+      "alternateSources": [
+        {
+          "sourceId": "tourism-ns-events",
+          "sourceName": "Tourism Nova Scotia Events",
+          "sourceUrl": "https://novascotia.com/event/the-halifax-fringe-festival/"
+        }
+      ]
+    },
+    {
+      "id": "tourism-ns-events-bff4ad41a8964090",
+      "title": "Wharf Rat Rally",
+      "startAt": "2026-09-03T03:00:00.000Z",
+      "endAt": "2026-09-06T03:00:00.000Z",
+      "allDay": false,
+      "venueName": "Wharf Rat Rally HQ",
+      "address": "7 Birch St, Digby, NS, B0V 1A0, Canada",
+      "city": "Halifax",
+      "categories": [
+        "Sports",
+        "Food & Drink",
+        "Festivals",
+        "Arts",
+        "Outdoor",
+        "Community"
+      ],
+      "price": null,
+      "ticketUrl": "https://novascotia.com/explore-nova-scotia/events/?region=29",
+      "eventUrl": "https://novascotia.com/event/wharf-rat-rally/",
+      "sourceUrl": "https://novascotia.com/event/wharf-rat-rally/",
+      "sourceId": "tourism-ns-events",
+      "sourceName": "Tourism Nova Scotia Events",
+      "sourceKind": "official_tourism_calendar",
+      "observedAt": "2026-08-28T18:31:06.979Z",
+      "reviewState": "source-observed",
+      "alternateSources": [
+        {
+          "sourceId": "tourism-ns-events",
+          "sourceName": "Tourism Nova Scotia Events",
+          "sourceUrl": "https://novascotia.com/event/wharf-rat-rally/"
+        }
+      ]
     },
     {
       "id": "the-carleton-369a5dda18a3eadd",
@@ -249,7 +976,8 @@
       "address": "1685 Argyle Street, Halifax, NS",
       "city": "Halifax",
       "categories": [
-        "Music"
+        "Music",
+        "Arts"
       ],
       "price": null,
       "ticketUrl": "https://www.thecarleton.ca/music/upcoming-performances/",
@@ -258,8 +986,119 @@
       "sourceId": "the-carleton",
       "sourceName": "The Carleton",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-08-28T18:25:28.665Z",
+      "observedAt": "2026-08-28T18:31:12.855Z",
       "reviewState": "source-observed"
+    },
+    {
+      "id": "scotiabank-centre-ee0d359e46d4aece",
+      "title": "Australian Pink Floyd",
+      "startAt": "2026-09-03T23:00:00.000Z",
+      "endAt": "2026-09-03T23:00:00.000Z",
+      "allDay": false,
+      "venueName": "Scotiabank Centre",
+      "address": "1800 Argyle Street, Halifax, NS",
+      "city": "Halifax",
+      "categories": [
+        "Music"
+      ],
+      "price": null,
+      "ticketUrl": "https://www.scotiabank-centre.com/premium-seating/eventcalendar",
+      "eventUrl": "https://www.scotiabank-centre.com/premium-seating/eventcalendar",
+      "sourceUrl": "https://www.scotiabank-centre.com/premium-seating/eventcalendar",
+      "sourceId": "scotiabank-centre",
+      "sourceName": "Scotiabank Centre",
+      "sourceKind": "official_venue_calendar",
+      "observedAt": "2026-08-28T18:31:11.009Z",
+      "reviewState": "source-observed"
+    },
+    {
+      "id": "light-house-arts-centre-e616c2b214832027",
+      "title": "Geordie Kieffer — Light House Arts Centre",
+      "startAt": "2026-09-04T00:00:00.000Z",
+      "endAt": "2026-09-04T03:59:00.000Z",
+      "allDay": false,
+      "venueName": "Light House Arts Centre",
+      "address": "1800 Argyle Street Suite 301\nHalifax, NS, B3J 3N8\nCanada",
+      "city": "Halifax",
+      "categories": [
+        "Arts"
+      ],
+      "price": null,
+      "ticketUrl": "https://www.lighthouseartscentre.ca/events/",
+      "eventUrl": "https://www.lighthouseartscentre.ca/events/geordie-kieffer",
+      "sourceUrl": "https://www.lighthouseartscentre.ca/events/geordie-kieffer",
+      "sourceId": "light-house-arts-centre",
+      "sourceName": "Light House Arts Centre",
+      "sourceKind": "official_venue_calendar",
+      "observedAt": "2026-08-28T18:31:11.365Z",
+      "reviewState": "source-observed"
+    },
+    {
+      "id": "tourism-ns-events-06d790170c15ee40",
+      "title": "Kings of Hali 9 – Premier Video Gaming Tournament",
+      "startAt": "2026-09-04T12:00:00.000Z",
+      "endAt": "2026-09-07T02:00:00.000Z",
+      "allDay": false,
+      "venueName": "Lighthouse Arts Centre",
+      "address": "1800 Argyle St, Halifax, NS, B3J 3N8, Canada",
+      "city": "Halifax",
+      "categories": [
+        "Sports",
+        "Food & Drink",
+        "Arts",
+        "Outdoor",
+        "Community"
+      ],
+      "price": "$2 CAD",
+      "ticketUrl": "https://novascotia.com/explore-nova-scotia/events/?region=29",
+      "eventUrl": "https://novascotia.com/event/kings-of-hali-9-premier-video-gaming-tournament/",
+      "sourceUrl": "https://novascotia.com/event/kings-of-hali-9-premier-video-gaming-tournament/",
+      "sourceId": "tourism-ns-events",
+      "sourceName": "Tourism Nova Scotia Events",
+      "sourceKind": "official_tourism_calendar",
+      "observedAt": "2026-08-28T18:30:59.957Z",
+      "reviewState": "source-observed",
+      "alternateSources": [
+        {
+          "sourceId": "tourism-ns-events",
+          "sourceName": "Tourism Nova Scotia Events",
+          "sourceUrl": "https://novascotia.com/event/kings-of-hali-9-premier-video-gaming-tournament/"
+        }
+      ]
+    },
+    {
+      "id": "tourism-ns-events-85483d33f0182377",
+      "title": "Acoustic Roots Festival",
+      "startAt": "2026-09-04T22:00:00.000Z",
+      "endAt": "2026-09-06T23:00:00.000Z",
+      "allDay": false,
+      "venueName": "Two Rivers Wildlife Park",
+      "address": "4581 Grand Mira North Road, Huntington, NS, B1K 1V5, Canada",
+      "city": "Halifax",
+      "categories": [
+        "Music",
+        "Food & Drink",
+        "Festivals",
+        "Arts",
+        "Outdoor",
+        "Community"
+      ],
+      "price": "15-25 CAD",
+      "ticketUrl": "https://novascotia.com/explore-nova-scotia/events/?region=29",
+      "eventUrl": "https://novascotia.com/event/acoustic-roots-festival/",
+      "sourceUrl": "https://novascotia.com/event/acoustic-roots-festival/",
+      "sourceId": "tourism-ns-events",
+      "sourceName": "Tourism Nova Scotia Events",
+      "sourceKind": "official_tourism_calendar",
+      "observedAt": "2026-08-28T18:31:05.209Z",
+      "reviewState": "source-observed",
+      "alternateSources": [
+        {
+          "sourceId": "tourism-ns-events",
+          "sourceName": "Tourism Nova Scotia Events",
+          "sourceUrl": "https://novascotia.com/event/acoustic-roots-festival/"
+        }
+      ]
     },
     {
       "id": "the-carleton-5653652a17ce28b1",
@@ -281,7 +1120,7 @@
       "sourceId": "the-carleton",
       "sourceName": "The Carleton",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-08-28T18:25:28.665Z",
+      "observedAt": "2026-08-28T18:31:12.856Z",
       "reviewState": "source-observed"
     },
     {
@@ -294,7 +1133,8 @@
       "address": "1685 Argyle Street, Halifax, NS",
       "city": "Halifax",
       "categories": [
-        "Music"
+        "Music",
+        "Arts"
       ],
       "price": null,
       "ticketUrl": "https://www.thecarleton.ca/music/upcoming-performances/",
@@ -303,7 +1143,7 @@
       "sourceId": "the-carleton",
       "sourceName": "The Carleton",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-08-28T18:25:28.666Z",
+      "observedAt": "2026-08-28T18:31:12.856Z",
       "reviewState": "source-observed"
     },
     {
@@ -317,7 +1157,8 @@
       "city": "Halifax",
       "categories": [
         "Sports",
-        "Music"
+        "Music",
+        "Arts"
       ],
       "price": null,
       "ticketUrl": "https://www.thecarleton.ca/music/upcoming-performances/",
@@ -326,7 +1167,112 @@
       "sourceId": "the-carleton",
       "sourceName": "The Carleton",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-08-28T18:25:28.666Z",
+      "observedAt": "2026-08-28T18:31:12.856Z",
+      "reviewState": "source-observed"
+    },
+    {
+      "id": "https://novascotia.com/event/labour-day-festivities-at-ross-ferry-marine-park/#event",
+      "title": "Labour Day festivities at Ross Ferry Marine Park",
+      "startAt": "2026-09-07T08:00:00.000Z",
+      "endAt": "2026-09-07T17:00:00.000Z",
+      "allDay": false,
+      "venueName": "Ross Ferry Marine Park",
+      "address": "9685 Kempt Head Rd, Ross Ferry, NS B1X 1N9, Ross Ferry, NS, CA",
+      "city": "Ross Ferry",
+      "categories": [
+        "Arts",
+        "Outdoor"
+      ],
+      "price": null,
+      "ticketUrl": "https://novascotia.com/explore-nova-scotia/events/?region=29",
+      "eventUrl": "https://novascotia.com/event/labour-day-festivities-at-ross-ferry-marine-park/",
+      "sourceUrl": "https://novascotia.com/event/labour-day-festivities-at-ross-ferry-marine-park/",
+      "sourceId": "tourism-ns-events",
+      "sourceName": "Tourism Nova Scotia Events",
+      "sourceKind": "official_tourism_calendar",
+      "observedAt": "2026-08-28T18:31:05.219Z",
+      "reviewState": "source-observed",
+      "alternateSources": [
+        {
+          "sourceId": "tourism-ns-events",
+          "sourceName": "Tourism Nova Scotia Events",
+          "sourceUrl": "https://novascotia.com/event/labour-day-festivities-at-ross-ferry-marine-park/"
+        }
+      ]
+    },
+    {
+      "id": "https://novascotia.com/event/free-family-fun-day-in-privateer-park/#event",
+      "title": "Free Family Fun Day in Privateer Park",
+      "startAt": "2026-09-07T11:30:00.000Z",
+      "endAt": "2026-09-07T14:00:00.000Z",
+      "allDay": false,
+      "venueName": "Privateer Park",
+      "address": "94 Henry Hensey Dr, Liverpool, NS B0T 1P0, Liverpool, NS, CA",
+      "city": "Liverpool",
+      "categories": [
+        "Arts",
+        "Outdoor",
+        "Community"
+      ],
+      "price": null,
+      "ticketUrl": "https://novascotia.com/explore-nova-scotia/events/?region=29",
+      "eventUrl": "https://novascotia.com/event/free-family-fun-day-in-privateer-park/",
+      "sourceUrl": "https://novascotia.com/event/free-family-fun-day-in-privateer-park/",
+      "sourceId": "tourism-ns-events",
+      "sourceName": "Tourism Nova Scotia Events",
+      "sourceKind": "official_tourism_calendar",
+      "observedAt": "2026-08-28T18:31:05.358Z",
+      "reviewState": "source-observed",
+      "alternateSources": [
+        {
+          "sourceId": "tourism-ns-events",
+          "sourceName": "Tourism Nova Scotia Events",
+          "sourceUrl": "https://novascotia.com/event/free-family-fun-day-in-privateer-park/"
+        }
+      ]
+    },
+    {
+      "id": "hfx-wanderers-home-756f8bf6829dc15e",
+      "title": "HFX Wanderers FC vs Cavalry FC",
+      "startAt": "2026-09-07T19:00:00.000Z",
+      "endAt": "2026-09-07T19:00:00.000Z",
+      "allDay": false,
+      "venueName": "Wanderers Grounds",
+      "address": "5819 Sackville Street, Halifax, NS",
+      "city": "Halifax",
+      "categories": [
+        "Sports"
+      ],
+      "price": null,
+      "ticketUrl": "https://novascotia.com/event/halifax-wanderers-2026-season/",
+      "eventUrl": "https://novascotia.com/event/halifax-wanderers-2026-season/",
+      "sourceUrl": "https://novascotia.com/event/halifax-wanderers-2026-season/",
+      "sourceId": "hfx-wanderers-home",
+      "sourceName": "HFX Wanderers 2026 Home Schedule",
+      "sourceKind": "official_tourism_sports_schedule",
+      "observedAt": "2026-08-28T18:31:11.044Z",
+      "reviewState": "source-observed"
+    },
+    {
+      "id": "scotiabank-centre-176001ab42281a2a",
+      "title": "Max McNown - RESCHEDULED",
+      "startAt": "2026-09-08T22:30:00.000Z",
+      "endAt": "2026-09-08T22:30:00.000Z",
+      "allDay": false,
+      "venueName": "Scotiabank Centre",
+      "address": "1800 Argyle Street, Halifax, NS",
+      "city": "Halifax",
+      "categories": [
+        "Music"
+      ],
+      "price": null,
+      "ticketUrl": "https://www.scotiabank-centre.com/premium-seating/eventcalendar",
+      "eventUrl": "https://www.scotiabank-centre.com/premium-seating/eventcalendar",
+      "sourceUrl": "https://www.scotiabank-centre.com/premium-seating/eventcalendar",
+      "sourceId": "scotiabank-centre",
+      "sourceName": "Scotiabank Centre",
+      "sourceKind": "official_venue_calendar",
+      "observedAt": "2026-08-28T18:31:11.009Z",
       "reviewState": "source-observed"
     },
     {
@@ -339,7 +1285,8 @@
       "address": "1685 Argyle Street, Halifax, NS",
       "city": "Halifax",
       "categories": [
-        "Other"
+        "Music",
+        "Arts"
       ],
       "price": null,
       "ticketUrl": "https://www.thecarleton.ca/music/upcoming-performances/",
@@ -348,7 +1295,7 @@
       "sourceId": "the-carleton",
       "sourceName": "The Carleton",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-08-28T18:25:28.666Z",
+      "observedAt": "2026-08-28T18:31:12.856Z",
       "reviewState": "source-observed"
     },
     {
@@ -361,7 +1308,8 @@
       "address": "1685 Argyle Street, Halifax, NS",
       "city": "Halifax",
       "categories": [
-        "Other"
+        "Music",
+        "Arts"
       ],
       "price": null,
       "ticketUrl": "https://www.thecarleton.ca/music/upcoming-performances/",
@@ -370,8 +1318,67 @@
       "sourceId": "the-carleton",
       "sourceName": "The Carleton",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-08-28T18:25:28.667Z",
+      "observedAt": "2026-08-28T18:31:12.856Z",
       "reviewState": "source-observed"
+    },
+    {
+      "id": "https://novascotia.com/event/festa-italiana-halifax/#event",
+      "title": "Festa Italiana Halifax – Experience Italy in the Heart of Halifax",
+      "startAt": "2026-09-11T00:00:00.000Z",
+      "endAt": "2026-12-09T23:59:00.000Z",
+      "allDay": false,
+      "venueName": null,
+      "address": "Halifax, NS, CA",
+      "city": "Halifax",
+      "categories": [
+        "Arts"
+      ],
+      "price": "2",
+      "ticketUrl": "https://festaitalianahalifax.ca/",
+      "eventUrl": "https://novascotia.com/event/festa-italiana-halifax/",
+      "sourceUrl": "https://novascotia.com/event/festa-italiana-halifax/",
+      "sourceId": "tourism-ns-events",
+      "sourceName": "Tourism Nova Scotia Events",
+      "sourceKind": "official_tourism_calendar",
+      "observedAt": "2026-08-28T18:30:59.969Z",
+      "reviewState": "source-observed",
+      "alternateSources": [
+        {
+          "sourceId": "tourism-ns-events",
+          "sourceName": "Tourism Nova Scotia Events",
+          "sourceUrl": "https://novascotia.com/event/festa-italiana-halifax/"
+        }
+      ]
+    },
+    {
+      "id": "https://novascotia.com/event/2026-international-gathering-of-clan-macneacail-flag-raising-welcome/#event",
+      "title": "2026 International Gathering of Clan MacNeacail – Flag Raising & Welcome",
+      "startAt": "2026-09-11T15:00:00.000Z",
+      "endAt": "2026-11-09T17:00:00.000Z",
+      "allDay": false,
+      "venueName": "Halifax Grand Parade",
+      "address": "1770 Barrington Street, Halifax, Nova Scotia, B3J 3A5, Canada, Halifax, NS, CA",
+      "city": "Halifax",
+      "categories": [
+        "Arts",
+        "Community"
+      ],
+      "price": null,
+      "ticketUrl": "https://www.clanmacnicol.org/explore",
+      "eventUrl": "https://novascotia.com/event/2026-international-gathering-of-clan-macneacail-flag-raising-welcome/",
+      "sourceUrl": "https://novascotia.com/event/2026-international-gathering-of-clan-macneacail-flag-raising-welcome/",
+      "sourceId": "tourism-ns-events",
+      "sourceName": "Tourism Nova Scotia Events",
+      "sourceKind": "official_tourism_calendar",
+      "observedAt": "2026-08-28T18:31:00.111Z",
+      "reviewState": "source-observed",
+      "alternateSources": [
+        {
+          "sourceId": "tourism-ns-events",
+          "sourceName": "Tourism Nova Scotia Events",
+          "sourceUrl": "https://novascotia.com/event/2026-international-gathering-of-clan-macneacail-flag-raising-welcome/"
+        }
+      ]
     },
     {
       "id": "the-carleton-978ede45bcb00916",
@@ -383,7 +1390,8 @@
       "address": "1685 Argyle Street, Halifax, NS",
       "city": "Halifax",
       "categories": [
-        "Other"
+        "Music",
+        "Arts"
       ],
       "price": null,
       "ticketUrl": "https://www.thecarleton.ca/music/upcoming-performances/",
@@ -392,7 +1400,2987 @@
       "sourceId": "the-carleton",
       "sourceName": "The Carleton",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-08-28T18:25:28.667Z",
+      "observedAt": "2026-08-28T18:31:12.856Z",
+      "reviewState": "source-observed"
+    },
+    {
+      "id": "https://novascotia.com/event/hike-the-highlands-festival/#event",
+      "title": "Hike the Highlands Festival 2026",
+      "startAt": "2026-09-12T00:00:00.000Z",
+      "endAt": "2026-09-12T00:00:00.000Z",
+      "allDay": false,
+      "venueName": "St. John's Hall, Ingonish",
+      "address": "35981 Cabot Trail, Ingonish, NS, Canada, Ingonish, NS, CA",
+      "city": "Ingonish",
+      "categories": [
+        "Festivals",
+        "Arts"
+      ],
+      "price": "80200",
+      "ticketUrl": "https://www.hikethehighlands.com/nova-scotia/the-festival/registration/",
+      "eventUrl": "https://novascotia.com/event/hike-the-highlands-festival/",
+      "sourceUrl": "https://novascotia.com/event/hike-the-highlands-festival/",
+      "sourceId": "tourism-ns-events",
+      "sourceName": "Tourism Nova Scotia Events",
+      "sourceKind": "official_tourism_calendar",
+      "observedAt": "2026-08-28T18:31:05.197Z",
+      "reviewState": "source-observed",
+      "alternateSources": [
+        {
+          "sourceId": "tourism-ns-events",
+          "sourceName": "Tourism Nova Scotia Events",
+          "sourceUrl": "https://novascotia.com/event/hike-the-highlands-festival/"
+        }
+      ]
+    },
+    {
+      "id": "https://novascotia.com/event/nhl-street-harbour-fest-2026/#event",
+      "title": "NHL STREET Harbour Fest 2026",
+      "startAt": "2026-09-12T00:00:00.000Z",
+      "endAt": "2026-09-13T23:59:00.000Z",
+      "allDay": false,
+      "venueName": "Emera Oval",
+      "address": "5775 Cogswell St, Halifax, NS B3K 4B2, Halifax, NS, CA",
+      "city": "Halifax",
+      "categories": [
+        "Festivals",
+        "Arts",
+        "Outdoor"
+      ],
+      "price": null,
+      "ticketUrl": "https://app.eventconnect.io/events/47028/registration-type/create?nav=hidden",
+      "eventUrl": "https://novascotia.com/event/nhl-street-harbour-fest-2026/",
+      "sourceUrl": "https://novascotia.com/event/nhl-street-harbour-fest-2026/",
+      "sourceId": "tourism-ns-events",
+      "sourceName": "Tourism Nova Scotia Events",
+      "sourceKind": "official_tourism_calendar",
+      "observedAt": "2026-08-28T18:31:00.115Z",
+      "reviewState": "source-observed",
+      "alternateSources": [
+        {
+          "sourceId": "tourism-ns-events",
+          "sourceName": "Tourism Nova Scotia Events",
+          "sourceUrl": "https://novascotia.com/event/nhl-street-harbour-fest-2026/"
+        }
+      ]
+    },
+    {
+      "id": "https://novascotia.com/event/keji-multisport-festival/#event",
+      "title": "Keji Multisport Festival",
+      "startAt": "2026-09-12T08:00:00.000Z",
+      "endAt": "2026-09-12T08:00:00.000Z",
+      "allDay": false,
+      "venueName": "Kejimkujik National Park and National Historic Site",
+      "address": "3005 Kejimkujik Main Parkway, Maitland Bridge, NS, B0T 1B0, Canada, Maitland Bridge, NS, CA",
+      "city": "Maitland Bridge",
+      "categories": [
+        "Sports",
+        "Festivals",
+        "Arts",
+        "Outdoor"
+      ],
+      "price": null,
+      "ticketUrl": "https://novascotia.com/explore-nova-scotia/events/?region=29",
+      "eventUrl": "https://novascotia.com/event/keji-multisport-festival/",
+      "sourceUrl": "https://novascotia.com/event/keji-multisport-festival/",
+      "sourceId": "tourism-ns-events",
+      "sourceName": "Tourism Nova Scotia Events",
+      "sourceKind": "official_tourism_calendar",
+      "observedAt": "2026-08-28T18:31:10.285Z",
+      "reviewState": "source-observed"
+    },
+    {
+      "id": "https://novascotia.com/event/windsor-garlic-fest/#event",
+      "title": "Windsor Garlic Fest",
+      "startAt": "2026-09-12T11:00:00.000Z",
+      "endAt": "2026-09-12T17:00:00.000Z",
+      "allDay": false,
+      "venueName": "Gerrish Street, downtown Windsor",
+      "address": "Gerrish Street, Windsor, Nova Scotia, Canada, Windsor, NS, CA",
+      "city": "Windsor",
+      "categories": [
+        "Festivals",
+        "Arts"
+      ],
+      "price": null,
+      "ticketUrl": "https://novascotia.com/explore-nova-scotia/events/?region=29",
+      "eventUrl": "https://novascotia.com/event/windsor-garlic-fest/",
+      "sourceUrl": "https://novascotia.com/event/windsor-garlic-fest/",
+      "sourceId": "tourism-ns-events",
+      "sourceName": "Tourism Nova Scotia Events",
+      "sourceKind": "official_tourism_calendar",
+      "observedAt": "2026-08-28T18:31:06.971Z",
+      "reviewState": "source-observed"
+    },
+    {
+      "id": "https://novascotia.com/event/musique-royale-concert/#event",
+      "title": "Musique Royale Concert",
+      "startAt": "2026-09-12T17:00:00.000Z",
+      "endAt": "2026-09-12T21:00:00.000Z",
+      "allDay": false,
+      "venueName": "Memory Lane Heritage Village",
+      "address": "5435 Clam Harbour Rd, Lake Charlotte, NS, B0J 2L0, Canada, Lake Charlotte, NS, CA",
+      "city": "Lake Charlotte",
+      "categories": [
+        "Music",
+        "Arts",
+        "Community"
+      ],
+      "price": null,
+      "ticketUrl": "https://novascotia.com/explore-nova-scotia/events/?region=29",
+      "eventUrl": "https://novascotia.com/event/musique-royale-concert/",
+      "sourceUrl": "https://novascotia.com/event/musique-royale-concert/",
+      "sourceId": "tourism-ns-events",
+      "sourceName": "Tourism Nova Scotia Events",
+      "sourceKind": "official_tourism_calendar",
+      "observedAt": "2026-08-28T18:31:02.481Z",
+      "reviewState": "source-observed",
+      "alternateSources": [
+        {
+          "sourceId": "tourism-ns-events",
+          "sourceName": "Tourism Nova Scotia Events",
+          "sourceUrl": "https://novascotia.com/event/musique-royale-concert/"
+        }
+      ]
+    },
+    {
+      "id": "https://novascotia.com/event/asbury-short-film-concert/#event",
+      "title": "Asbury Short Film Concert",
+      "startAt": "2026-09-12T19:00:00.000Z",
+      "endAt": "2026-09-12T21:00:00.000Z",
+      "allDay": false,
+      "venueName": "Chester Playhouse",
+      "address": "22 Pleasant St, Chester, B2Y 1G4, Chester, NS, CA",
+      "city": "Chester",
+      "categories": [
+        "Music",
+        "Arts"
+      ],
+      "price": null,
+      "ticketUrl": "https://www.facebook.com/share/17sbWsLuht/",
+      "eventUrl": "https://novascotia.com/event/asbury-short-film-concert/",
+      "sourceUrl": "https://novascotia.com/event/asbury-short-film-concert/",
+      "sourceId": "tourism-ns-events",
+      "sourceName": "Tourism Nova Scotia Events",
+      "sourceKind": "official_tourism_calendar",
+      "observedAt": "2026-08-28T18:31:06.021Z",
+      "reviewState": "source-observed",
+      "alternateSources": [
+        {
+          "sourceId": "tourism-ns-events",
+          "sourceName": "Tourism Nova Scotia Events",
+          "sourceUrl": "https://novascotia.com/event/asbury-short-film-concert/"
+        }
+      ]
+    },
+    {
+      "id": "https://novascotia.com/event/atlantic-international-film-festival-aiff/#event",
+      "title": "Atlantic International Film Festival (AIFF)",
+      "startAt": "2026-09-16T00:00:00.000Z",
+      "endAt": "2026-09-16T00:00:00.000Z",
+      "allDay": false,
+      "venueName": "Cineplex Park Lane",
+      "address": "5657 Spring Garden Rd, Halifax, NS, B3J 3R4, Canada, Halifax, NS, CA",
+      "city": "Halifax",
+      "categories": [
+        "Festivals",
+        "Arts",
+        "Outdoor"
+      ],
+      "price": null,
+      "ticketUrl": "https://novascotia.com/explore-nova-scotia/events/?region=29",
+      "eventUrl": "https://novascotia.com/event/atlantic-international-film-festival-aiff/",
+      "sourceUrl": "https://novascotia.com/event/atlantic-international-film-festival-aiff/",
+      "sourceId": "tourism-ns-events",
+      "sourceName": "Tourism Nova Scotia Events",
+      "sourceKind": "official_tourism_calendar",
+      "observedAt": "2026-08-28T18:31:00.092Z",
+      "reviewState": "source-observed",
+      "alternateSources": [
+        {
+          "sourceId": "tourism-ns-events",
+          "sourceName": "Tourism Nova Scotia Events",
+          "sourceUrl": "https://novascotia.com/event/atlantic-international-film-festival-aiff/"
+        }
+      ]
+    },
+    {
+      "id": "https://novascotia.com/event/harvest-moon-music-festival-pijinuiskaq-paddle-festival/#event",
+      "title": "Harvest Moon Music Festival & Pijinuiskaq Paddle Festival",
+      "startAt": "2026-09-18T00:00:00.000Z",
+      "endAt": "2026-09-20T00:00:00.000Z",
+      "allDay": true,
+      "venueName": "Pijinuiskaq Park",
+      "address": "480 King St, Bridgewater, NS B4V 1B2, Bridgewater, NS, CA",
+      "city": "Bridgewater",
+      "categories": [
+        "Sports",
+        "Music",
+        "Festivals",
+        "Arts",
+        "Outdoor"
+      ],
+      "price": null,
+      "ticketUrl": "https://novascotia.com/explore-nova-scotia/events/?region=29",
+      "eventUrl": "https://novascotia.com/event/harvest-moon-music-festival-pijinuiskaq-paddle-festival/",
+      "sourceUrl": "https://novascotia.com/event/harvest-moon-music-festival-pijinuiskaq-paddle-festival/",
+      "sourceId": "tourism-ns-events",
+      "sourceName": "Tourism Nova Scotia Events",
+      "sourceKind": "official_tourism_calendar",
+      "observedAt": "2026-08-28T18:31:06.153Z",
+      "reviewState": "source-observed",
+      "alternateSources": [
+        {
+          "sourceId": "tourism-ns-events",
+          "sourceName": "Tourism Nova Scotia Events",
+          "sourceUrl": "https://novascotia.com/event/harvest-moon-music-festival-pijinuiskaq-paddle-festival/"
+        }
+      ]
+    },
+    {
+      "id": "https://novascotia.com/event/the-kempt-shore-appreciation-campout/#event",
+      "title": "The Kempt Shore Appreciation Campout",
+      "startAt": "2026-09-18T00:00:00.000Z",
+      "endAt": "2026-09-18T00:00:00.000Z",
+      "allDay": false,
+      "venueName": "Kempt Shore Ocean View Campground",
+      "address": "5701 Hwy. 215, Kempt Shore, Hants County, Nova Scotia, Kempt Shore, NS, B0N 2A0, Canada, Kempt Shore, NS, CA",
+      "city": "Kempt Shore",
+      "categories": [
+        "Arts"
+      ],
+      "price": null,
+      "ticketUrl": "https://novascotia.com/explore-nova-scotia/events/?region=29",
+      "eventUrl": "https://novascotia.com/event/the-kempt-shore-appreciation-campout/",
+      "sourceUrl": "https://novascotia.com/event/the-kempt-shore-appreciation-campout/",
+      "sourceId": "tourism-ns-events",
+      "sourceName": "Tourism Nova Scotia Events",
+      "sourceKind": "official_tourism_calendar",
+      "observedAt": "2026-08-28T18:31:06.982Z",
+      "reviewState": "source-observed"
+    },
+    {
+      "id": "https://novascotia.com/event/bridgewaters-harvest-moon-music-festival/#event",
+      "title": "Bridgewater’s 5th Annual Harvest Moon Music Festival – Presented by Arby’s",
+      "startAt": "2026-09-18T18:00:00.000Z",
+      "endAt": "2026-09-19T21:00:00.000Z",
+      "allDay": false,
+      "venueName": "Pijinuiskaq Park",
+      "address": "480 King St, Bridgewater, NS B4V 1B2, Bridgewater, NS, CA",
+      "city": "Bridgewater",
+      "categories": [
+        "Music",
+        "Festivals",
+        "Arts",
+        "Outdoor"
+      ],
+      "price": null,
+      "ticketUrl": "https://explorebridgewater.ca/2026/08/20/harvest-moon-music-festival-2026/",
+      "eventUrl": "https://novascotia.com/event/bridgewaters-harvest-moon-music-festival/",
+      "sourceUrl": "https://novascotia.com/event/bridgewaters-harvest-moon-music-festival/",
+      "sourceId": "tourism-ns-events",
+      "sourceName": "Tourism Nova Scotia Events",
+      "sourceKind": "official_tourism_calendar",
+      "observedAt": "2026-08-28T18:31:05.367Z",
+      "reviewState": "source-observed",
+      "alternateSources": [
+        {
+          "sourceId": "tourism-ns-events",
+          "sourceName": "Tourism Nova Scotia Events",
+          "sourceUrl": "https://novascotia.com/event/bridgewaters-harvest-moon-music-festival/"
+        }
+      ]
+    },
+    {
+      "id": "https://novascotia.com/event/combo-show-sept-18/#event",
+      "title": "Combo Show Sept 18",
+      "startAt": "2026-09-18T19:30:00.000Z",
+      "endAt": "2026-09-18T21:00:00.000Z",
+      "allDay": false,
+      "venueName": "The Bus Stop Theatre Co-operative",
+      "address": "2203 Gottingen St, Halifax, NS B3K 3B5, Halifax, NS, CA",
+      "city": "Halifax",
+      "categories": [
+        "Arts",
+        "Music"
+      ],
+      "price": null,
+      "ticketUrl": "https://novascotia.com/explore-nova-scotia/events/?region=29",
+      "eventUrl": "https://novascotia.com/event/combo-show-sept-18/",
+      "sourceUrl": "https://novascotia.com/event/combo-show-sept-18/",
+      "sourceId": "tourism-ns-events",
+      "sourceName": "Tourism Nova Scotia Events",
+      "sourceKind": "official_tourism_calendar",
+      "observedAt": "2026-08-28T18:31:00.753Z",
+      "reviewState": "source-observed",
+      "alternateSources": [
+        {
+          "sourceId": "tourism-ns-events",
+          "sourceName": "Tourism Nova Scotia Events",
+          "sourceUrl": "https://novascotia.com/event/combo-show-sept-18/"
+        }
+      ]
+    },
+    {
+      "id": "light-house-arts-centre-92cc511a679f5160",
+      "title": "Tickets | Thunder From Down Under (Friday September 18 2026) | Halifax — Light House Arts Centre",
+      "startAt": "2026-09-19T00:00:00.000Z",
+      "endAt": "2026-09-19T03:59:00.000Z",
+      "allDay": false,
+      "venueName": "Light House Arts Centre",
+      "address": "1800 Argyle Street Suite 301\nHalifax, NS, B3J 3N8\nCanada",
+      "city": "Halifax",
+      "categories": [
+        "Arts"
+      ],
+      "price": null,
+      "ticketUrl": "https://www.lighthouseartscentre.ca/events/",
+      "eventUrl": "https://www.lighthouseartscentre.ca/events/thunder-from-down-under-friday",
+      "sourceUrl": "https://www.lighthouseartscentre.ca/events/thunder-from-down-under-friday",
+      "sourceId": "light-house-arts-centre",
+      "sourceName": "Light House Arts Centre",
+      "sourceKind": "official_venue_calendar",
+      "observedAt": "2026-08-28T18:31:11.429Z",
+      "reviewState": "source-observed"
+    },
+    {
+      "id": "halifax-tides-home-33086c7ad705ed9e",
+      "title": "Halifax Tides FC vs. AFC Toronto",
+      "startAt": "2026-09-19T18:00:00.000Z",
+      "endAt": "2026-09-19T18:00:00.000Z",
+      "allDay": false,
+      "venueName": "Wanderers Grounds",
+      "address": "5819 Sackville Street, Halifax, NS",
+      "city": "Halifax",
+      "categories": [
+        "Sports"
+      ],
+      "price": null,
+      "ticketUrl": "https://novascotia.com/event/halifax-tides-2026-season/",
+      "eventUrl": "https://novascotia.com/event/halifax-tides-2026-season/",
+      "sourceUrl": "https://novascotia.com/event/halifax-tides-2026-season/",
+      "sourceId": "halifax-tides-home",
+      "sourceName": "Halifax Tides 2026 Home Schedule",
+      "sourceKind": "official_tourism_sports_schedule",
+      "observedAt": "2026-08-28T18:31:11.078Z",
+      "reviewState": "source-observed"
+    },
+    {
+      "id": "halifax-mooseheads-home-8023463dc7bbbbbd",
+      "title": "Halifax Mooseheads vs Moncton",
+      "startAt": "2026-09-19T22:00:00.000Z",
+      "endAt": "2026-09-19T22:00:00.000Z",
+      "allDay": false,
+      "venueName": "Scotiabank Centre",
+      "address": "1800 Argyle Street, Halifax, NS",
+      "city": "Halifax",
+      "categories": [
+        "Sports"
+      ],
+      "price": null,
+      "ticketUrl": "https://www.scotiabank-centre.com/events/2026-2027-halifax-mooseheads",
+      "eventUrl": "https://www.scotiabank-centre.com/events/2026-2027-halifax-mooseheads",
+      "sourceUrl": "https://www.scotiabank-centre.com/events/2026-2027-halifax-mooseheads",
+      "sourceId": "halifax-mooseheads-home",
+      "sourceName": "Halifax Mooseheads Home Schedule",
+      "sourceKind": "official_sports_schedule",
+      "observedAt": "2026-08-28T18:31:10.970Z",
+      "reviewState": "source-observed"
+    },
+    {
+      "id": "scotiabank-centre-e647d8ab6e9fb73a",
+      "title": "Halifax Mooseheads vs Moncton Wildcats (Home Opener)",
+      "startAt": "2026-09-19T22:00:00.000Z",
+      "endAt": "2026-09-19T22:00:00.000Z",
+      "allDay": false,
+      "venueName": "Scotiabank Centre",
+      "address": "1800 Argyle Street, Halifax, NS",
+      "city": "Halifax",
+      "categories": [
+        "Sports"
+      ],
+      "price": null,
+      "ticketUrl": "https://www.scotiabank-centre.com/premium-seating/eventcalendar",
+      "eventUrl": "https://www.scotiabank-centre.com/premium-seating/eventcalendar",
+      "sourceUrl": "https://www.scotiabank-centre.com/premium-seating/eventcalendar",
+      "sourceId": "scotiabank-centre",
+      "sourceName": "Scotiabank Centre",
+      "sourceKind": "official_venue_calendar",
+      "observedAt": "2026-08-28T18:31:11.009Z",
+      "reviewState": "source-observed"
+    },
+    {
+      "id": "light-house-arts-centre-c8acae6ecf4e62cf",
+      "title": "Tickets | Thunder From Down Under (Saturday September 19 2026) | Halifax — Light House Arts Centre",
+      "startAt": "2026-09-20T00:00:00.000Z",
+      "endAt": "2026-09-20T03:59:00.000Z",
+      "allDay": false,
+      "venueName": "Light House Arts Centre",
+      "address": "1800 Argyle Street Suite 301\nHalifax, NS, B3J 3N8\nCanada",
+      "city": "Halifax",
+      "categories": [
+        "Arts"
+      ],
+      "price": null,
+      "ticketUrl": "https://www.lighthouseartscentre.ca/events/",
+      "eventUrl": "https://www.lighthouseartscentre.ca/events/thunder-from-down-under-saturday",
+      "sourceUrl": "https://www.lighthouseartscentre.ca/events/thunder-from-down-under-saturday",
+      "sourceId": "light-house-arts-centre",
+      "sourceName": "Light House Arts Centre",
+      "sourceKind": "official_venue_calendar",
+      "observedAt": "2026-08-28T18:31:11.499Z",
+      "reviewState": "source-observed"
+    },
+    {
+      "id": "hfx-wanderers-home-ef9a4bae80ef976e",
+      "title": "HFX Wanderers FC vs Inter Toronto FC",
+      "startAt": "2026-09-20T19:00:00.000Z",
+      "endAt": "2026-09-20T19:00:00.000Z",
+      "allDay": false,
+      "venueName": "Wanderers Grounds",
+      "address": "5819 Sackville Street, Halifax, NS",
+      "city": "Halifax",
+      "categories": [
+        "Sports"
+      ],
+      "price": null,
+      "ticketUrl": "https://novascotia.com/event/halifax-wanderers-2026-season/",
+      "eventUrl": "https://novascotia.com/event/halifax-wanderers-2026-season/",
+      "sourceUrl": "https://novascotia.com/event/halifax-wanderers-2026-season/",
+      "sourceId": "hfx-wanderers-home",
+      "sourceName": "HFX Wanderers 2026 Home Schedule",
+      "sourceKind": "official_tourism_sports_schedule",
+      "observedAt": "2026-08-28T18:31:11.045Z",
+      "reviewState": "source-observed"
+    },
+    {
+      "id": "https://novascotia.com/event/women-of-the-fur-trade/#event",
+      "title": "Women of the Fur Trade",
+      "startAt": "2026-09-22T19:30:00.000Z",
+      "endAt": "2026-10-11T22:00:00.000Z",
+      "allDay": false,
+      "venueName": "Neptune Theatre",
+      "address": "1593 Argyle Street, Halifax, NS B3J 2B2, Halifax, NS, CA",
+      "city": "Halifax",
+      "categories": [
+        "Arts"
+      ],
+      "price": "2949",
+      "ticketUrl": "https://sales.neptunetheatre.com/Online/default.asp",
+      "eventUrl": "https://novascotia.com/event/women-of-the-fur-trade/",
+      "sourceUrl": "https://novascotia.com/event/women-of-the-fur-trade/",
+      "sourceId": "tourism-ns-events",
+      "sourceName": "Tourism Nova Scotia Events",
+      "sourceKind": "official_tourism_calendar",
+      "observedAt": "2026-08-28T18:31:04.116Z",
+      "reviewState": "source-observed",
+      "alternateSources": [
+        {
+          "sourceId": "tourism-ns-events",
+          "sourceName": "Tourism Nova Scotia Events",
+          "sourceUrl": "https://novascotia.com/event/women-of-the-fur-trade/"
+        }
+      ]
+    },
+    {
+      "id": "https://novascotia.com/event/lunenburg-doc-fest/#event",
+      "title": "Lunenburg Doc Fest",
+      "startAt": "2026-09-23T00:00:00.000Z",
+      "endAt": "2026-09-23T00:00:00.000Z",
+      "allDay": false,
+      "venueName": "Various locations in Lunenburg",
+      "address": "Lunenburg, Nova Scotia, Lunenburg, NS, CA",
+      "city": "Lunenburg",
+      "categories": [
+        "Festivals",
+        "Arts"
+      ],
+      "price": null,
+      "ticketUrl": "https://novascotia.com/explore-nova-scotia/events/?region=29",
+      "eventUrl": "https://novascotia.com/event/lunenburg-doc-fest/",
+      "sourceUrl": "https://novascotia.com/event/lunenburg-doc-fest/",
+      "sourceId": "tourism-ns-events",
+      "sourceName": "Tourism Nova Scotia Events",
+      "sourceKind": "official_tourism_calendar",
+      "observedAt": "2026-08-28T18:31:06.802Z",
+      "reviewState": "source-observed",
+      "alternateSources": [
+        {
+          "sourceId": "tourism-ns-events",
+          "sourceName": "Tourism Nova Scotia Events",
+          "sourceUrl": "https://novascotia.com/event/lunenburg-doc-fest/"
+        }
+      ]
+    },
+    {
+      "id": "scotiabank-centre-4bc8dd5de1e95de4",
+      "title": "Sabaton",
+      "startAt": "2026-09-23T22:00:00.000Z",
+      "endAt": "2026-09-23T22:00:00.000Z",
+      "allDay": false,
+      "venueName": "Scotiabank Centre",
+      "address": "1800 Argyle Street, Halifax, NS",
+      "city": "Halifax",
+      "categories": [
+        "Music"
+      ],
+      "price": null,
+      "ticketUrl": "https://www.scotiabank-centre.com/premium-seating/eventcalendar",
+      "eventUrl": "https://www.scotiabank-centre.com/premium-seating/eventcalendar",
+      "sourceUrl": "https://www.scotiabank-centre.com/premium-seating/eventcalendar",
+      "sourceId": "scotiabank-centre",
+      "sourceName": "Scotiabank Centre",
+      "sourceKind": "official_venue_calendar",
+      "observedAt": "2026-08-28T18:31:11.009Z",
+      "reviewState": "source-observed"
+    },
+    {
+      "id": "https://novascotia.com/event/cape-breton-pro-rodeo/#event",
+      "title": "Cape Breton Pro Rodeo",
+      "startAt": "2026-09-24T00:00:00.000Z",
+      "endAt": "2026-09-27T00:00:00.000Z",
+      "allDay": false,
+      "venueName": "Centre 200",
+      "address": "481 George St, Sydney, NS B1P 1K5, Sydney, NS, CA",
+      "city": "Sydney",
+      "categories": [
+        "Arts"
+      ],
+      "price": null,
+      "ticketUrl": "https://am.ticketmaster.com/c200tickets/buy?id=Mjk=",
+      "eventUrl": "https://novascotia.com/event/cape-breton-pro-rodeo/",
+      "sourceUrl": "https://novascotia.com/event/cape-breton-pro-rodeo/",
+      "sourceId": "tourism-ns-events",
+      "sourceName": "Tourism Nova Scotia Events",
+      "sourceKind": "official_tourism_calendar",
+      "observedAt": "2026-08-28T18:31:08.241Z",
+      "reviewState": "source-observed"
+    },
+    {
+      "id": "https://novascotia.com/event/a-world-of-colour-quilt-show-and-sale/#event",
+      "title": "A World of Colour, Quilt Show and Sale",
+      "startAt": "2026-09-25T10:00:00.000Z",
+      "endAt": "2026-09-25T10:00:00.000Z",
+      "allDay": false,
+      "venueName": "Mahone Bay Centre",
+      "address": "45 School Street, Mahone Bay, NS, B0J 2E0, Canada, Mahone Bay, NS, CA",
+      "city": "Mahone Bay",
+      "categories": [
+        "Arts"
+      ],
+      "price": null,
+      "ticketUrl": "https://novascotia.com/explore-nova-scotia/events/?region=29",
+      "eventUrl": "https://novascotia.com/event/a-world-of-colour-quilt-show-and-sale/",
+      "sourceUrl": "https://novascotia.com/event/a-world-of-colour-quilt-show-and-sale/",
+      "sourceId": "tourism-ns-events",
+      "sourceName": "Tourism Nova Scotia Events",
+      "sourceKind": "official_tourism_calendar",
+      "observedAt": "2026-08-28T18:31:06.824Z",
+      "reviewState": "source-observed",
+      "alternateSources": [
+        {
+          "sourceId": "tourism-ns-events",
+          "sourceName": "Tourism Nova Scotia Events",
+          "sourceUrl": "https://novascotia.com/event/a-world-of-colour-quilt-show-and-sale/"
+        }
+      ]
+    },
+    {
+      "id": "https://novascotia.com/event/paranormal-investigation-at-the-fortress-all-ages-event/#event",
+      "title": "Paranormal Investigation at the Fortress – all ages event",
+      "startAt": "2026-09-25T17:00:00.000Z",
+      "endAt": "2026-09-25T23:00:00.000Z",
+      "allDay": false,
+      "venueName": "Fortress of Louisbourg National Historic Site",
+      "address": "7495 Main St, Louisbourg, NS B1C 1H6, Louisbourg, NS, CA",
+      "city": "Louisbourg",
+      "categories": [
+        "Arts"
+      ],
+      "price": null,
+      "ticketUrl": "https://novascotia.com/explore-nova-scotia/events/?region=29",
+      "eventUrl": "https://novascotia.com/event/paranormal-investigation-at-the-fortress-all-ages-event/",
+      "sourceUrl": "https://novascotia.com/event/paranormal-investigation-at-the-fortress-all-ages-event/",
+      "sourceId": "tourism-ns-events",
+      "sourceName": "Tourism Nova Scotia Events",
+      "sourceKind": "official_tourism_calendar",
+      "observedAt": "2026-08-28T18:31:09.842Z",
+      "reviewState": "source-observed"
+    },
+    {
+      "id": "https://novascotia.com/event/magnetic-world-music-festival/#event",
+      "title": "Magnetic World Music Festival",
+      "startAt": "2026-09-25T19:00:00.000Z",
+      "endAt": "2026-09-26T23:00:00.000Z",
+      "allDay": false,
+      "venueName": "Garrison Grounds",
+      "address": "Citadel Hill, Halifax, NS, B3J 3Y3, Canada, Halifax, NS, CA",
+      "city": "Halifax",
+      "categories": [
+        "Music",
+        "Festivals",
+        "Arts"
+      ],
+      "price": null,
+      "ticketUrl": "https://novascotia.com/explore-nova-scotia/events/?region=29",
+      "eventUrl": "https://novascotia.com/event/magnetic-world-music-festival/",
+      "sourceUrl": "https://novascotia.com/event/magnetic-world-music-festival/",
+      "sourceId": "tourism-ns-events",
+      "sourceName": "Tourism Nova Scotia Events",
+      "sourceKind": "official_tourism_calendar",
+      "observedAt": "2026-08-28T18:31:03.329Z",
+      "reviewState": "source-observed",
+      "alternateSources": [
+        {
+          "sourceId": "tourism-ns-events",
+          "sourceName": "Tourism Nova Scotia Events",
+          "sourceUrl": "https://novascotia.com/event/magnetic-world-music-festival/"
+        }
+      ]
+    },
+    {
+      "id": "https://novascotia.com/event/prismatic-arts-festival/#event",
+      "title": "Prismatic Arts Festival",
+      "startAt": "2026-09-26T00:00:00.000Z",
+      "endAt": "2026-10-04T00:00:00.000Z",
+      "allDay": false,
+      "venueName": "Downtown Halifax",
+      "address": "Halifax, NS, Canada, Halifax, NS, CA",
+      "city": "Halifax",
+      "categories": [
+        "Festivals",
+        "Arts"
+      ],
+      "price": null,
+      "ticketUrl": "https://novascotia.com/explore-nova-scotia/events/?region=29",
+      "eventUrl": "https://novascotia.com/event/prismatic-arts-festival/",
+      "sourceUrl": "https://novascotia.com/event/prismatic-arts-festival/",
+      "sourceId": "tourism-ns-events",
+      "sourceName": "Tourism Nova Scotia Events",
+      "sourceKind": "official_tourism_calendar",
+      "observedAt": "2026-08-28T18:31:01.588Z",
+      "reviewState": "source-observed",
+      "alternateSources": [
+        {
+          "sourceId": "tourism-ns-events",
+          "sourceName": "Tourism Nova Scotia Events",
+          "sourceUrl": "https://novascotia.com/event/prismatic-arts-festival/"
+        }
+      ]
+    },
+    {
+      "id": "https://novascotia.com/event/honey-harvest-festival/#event",
+      "title": "Honey Harvest Festival",
+      "startAt": "2026-09-26T10:00:00.000Z",
+      "endAt": "2026-09-26T10:00:00.000Z",
+      "allDay": false,
+      "venueName": "Avon Spirit Shipyard",
+      "address": "15 Belmont Rd, Newport, Nova Scotia, B0N 2A0, Canada, Avondale, NS, CA",
+      "city": "Avondale",
+      "categories": [
+        "Festivals",
+        "Arts"
+      ],
+      "price": null,
+      "ticketUrl": "https://novascotia.com/explore-nova-scotia/events/?region=29",
+      "eventUrl": "https://novascotia.com/event/honey-harvest-festival/",
+      "sourceUrl": "https://novascotia.com/event/honey-harvest-festival/",
+      "sourceId": "tourism-ns-events",
+      "sourceName": "Tourism Nova Scotia Events",
+      "sourceKind": "official_tourism_calendar",
+      "observedAt": "2026-08-28T18:31:06.996Z",
+      "reviewState": "source-observed"
+    },
+    {
+      "id": "https://novascotia.com/event/the-womens-show-wellness-lifestyle-beauty/#event",
+      "title": "The Women’s Show: Wellness, Lifestyle & Beauty",
+      "startAt": "2026-09-26T10:00:00.000Z",
+      "endAt": "2026-09-26T17:00:00.000Z",
+      "allDay": false,
+      "venueName": "Cedar Event Centre",
+      "address": "111 Clayton Park Dr, Halifax, NS B3M 1M3, Halifax, NS, CA",
+      "city": "Halifax",
+      "categories": [
+        "Arts"
+      ],
+      "price": "11.69",
+      "ticketUrl": "https://www.thehalifaxhealthandwellnessshow.ca/event-details/the-fall-womens-show",
+      "eventUrl": "https://novascotia.com/event/the-womens-show-wellness-lifestyle-beauty/",
+      "sourceUrl": "https://novascotia.com/event/the-womens-show-wellness-lifestyle-beauty/",
+      "sourceId": "tourism-ns-events",
+      "sourceName": "Tourism Nova Scotia Events",
+      "sourceKind": "official_tourism_calendar",
+      "observedAt": "2026-08-28T18:31:00.805Z",
+      "reviewState": "source-observed",
+      "alternateSources": [
+        {
+          "sourceId": "tourism-ns-events",
+          "sourceName": "Tourism Nova Scotia Events",
+          "sourceUrl": "https://novascotia.com/event/the-womens-show-wellness-lifestyle-beauty/"
+        }
+      ]
+    },
+    {
+      "id": "hfx-wanderers-home-34df7fbf20c16478",
+      "title": "HFX Wanderers FC vs Atlético Ottawa FC",
+      "startAt": "2026-09-26T19:00:00.000Z",
+      "endAt": "2026-09-26T19:00:00.000Z",
+      "allDay": false,
+      "venueName": "Wanderers Grounds",
+      "address": "5819 Sackville Street, Halifax, NS",
+      "city": "Halifax",
+      "categories": [
+        "Sports"
+      ],
+      "price": null,
+      "ticketUrl": "https://novascotia.com/event/halifax-wanderers-2026-season/",
+      "eventUrl": "https://novascotia.com/event/halifax-wanderers-2026-season/",
+      "sourceUrl": "https://novascotia.com/event/halifax-wanderers-2026-season/",
+      "sourceId": "hfx-wanderers-home",
+      "sourceName": "HFX Wanderers 2026 Home Schedule",
+      "sourceKind": "official_tourism_sports_schedule",
+      "observedAt": "2026-08-28T18:31:11.045Z",
+      "reviewState": "source-observed"
+    },
+    {
+      "id": "https://novascotia.com/event/the-once-chester-playhouse/#event",
+      "title": "The Once at Chester Playhouse",
+      "startAt": "2026-09-26T19:30:00.000Z",
+      "endAt": "2026-09-26T21:00:00.000Z",
+      "allDay": false,
+      "venueName": "Chester Playhouse",
+      "address": "22 Pleasant St, Chester, NS B2Y 1G4, Chester, NS, CA",
+      "city": "Chester",
+      "categories": [
+        "Arts"
+      ],
+      "price": null,
+      "ticketUrl": "https://www.facebook.com/share/1B8e8sucTW/",
+      "eventUrl": "https://novascotia.com/event/the-once-chester-playhouse/",
+      "sourceUrl": "https://novascotia.com/event/the-once-chester-playhouse/",
+      "sourceId": "tourism-ns-events",
+      "sourceName": "Tourism Nova Scotia Events",
+      "sourceKind": "official_tourism_calendar",
+      "observedAt": "2026-08-28T18:31:06.831Z",
+      "reviewState": "source-observed",
+      "alternateSources": [
+        {
+          "sourceId": "tourism-ns-events",
+          "sourceName": "Tourism Nova Scotia Events",
+          "sourceUrl": "https://novascotia.com/event/the-once-chester-playhouse/"
+        }
+      ]
+    },
+    {
+      "id": "https://novascotia.com/event/surfside-studio-tour/#event",
+      "title": "Surfside Studio Tour",
+      "startAt": "2026-09-27T10:00:00.000Z",
+      "endAt": "2026-09-27T17:00:00.000Z",
+      "allDay": false,
+      "venueName": null,
+      "address": "Seaforth, NS, CA",
+      "city": "Seaforth",
+      "categories": [
+        "Music",
+        "Arts"
+      ],
+      "price": null,
+      "ticketUrl": "https://novascotia.com/explore-nova-scotia/events/?region=29",
+      "eventUrl": "https://novascotia.com/event/surfside-studio-tour/",
+      "sourceUrl": "https://novascotia.com/event/surfside-studio-tour/",
+      "sourceId": "tourism-ns-events",
+      "sourceName": "Tourism Nova Scotia Events",
+      "sourceKind": "official_tourism_calendar",
+      "observedAt": "2026-08-28T18:31:07.121Z",
+      "reviewState": "source-observed"
+    },
+    {
+      "id": "halifax-tides-home-59f89f492d1b73c7",
+      "title": "Halifax Tides FC vs. Montréal Roses FC",
+      "startAt": "2026-09-27T16:00:00.000Z",
+      "endAt": "2026-09-27T16:00:00.000Z",
+      "allDay": false,
+      "venueName": "Wanderers Grounds",
+      "address": "5819 Sackville Street, Halifax, NS",
+      "city": "Halifax",
+      "categories": [
+        "Sports"
+      ],
+      "price": null,
+      "ticketUrl": "https://novascotia.com/event/halifax-tides-2026-season/",
+      "eventUrl": "https://novascotia.com/event/halifax-tides-2026-season/",
+      "sourceUrl": "https://novascotia.com/event/halifax-tides-2026-season/",
+      "sourceId": "halifax-tides-home",
+      "sourceName": "Halifax Tides 2026 Home Schedule",
+      "sourceKind": "official_tourism_sports_schedule",
+      "observedAt": "2026-08-28T18:31:11.078Z",
+      "reviewState": "source-observed"
+    },
+    {
+      "id": "light-house-arts-centre-e22e08a3e8ffa6c3",
+      "title": "Tickets | July Talk | Halifax | September 27 2026 — Light House Arts Centre",
+      "startAt": "2026-09-28T00:00:00.000Z",
+      "endAt": "2026-09-28T03:59:00.000Z",
+      "allDay": false,
+      "venueName": "Light House Arts Centre",
+      "address": "1800 Argyle Street Suite 301\nHalifax, NS, B3J 3N8\nCanada",
+      "city": "Halifax",
+      "categories": [
+        "Arts"
+      ],
+      "price": null,
+      "ticketUrl": "https://www.lighthouseartscentre.ca/events/",
+      "eventUrl": "https://www.lighthouseartscentre.ca/events/july-talk-touch-x-tour",
+      "sourceUrl": "https://www.lighthouseartscentre.ca/events/july-talk-touch-x-tour",
+      "sourceId": "light-house-arts-centre",
+      "sourceName": "Light House Arts Centre",
+      "sourceKind": "official_venue_calendar",
+      "observedAt": "2026-08-28T18:31:11.461Z",
+      "reviewState": "source-observed"
+    },
+    {
+      "id": "light-house-arts-centre-31c03196839b4542",
+      "title": "Josh Thomas Official Halifax Tickets | October 1 2026 | Comedy Show — Light House Arts Centre",
+      "startAt": "2026-10-01T23:00:00.000Z",
+      "endAt": "2026-10-02T03:59:00.000Z",
+      "allDay": false,
+      "venueName": "Light House Arts Centre",
+      "address": "1800 Argyle Street Suite 301\nHalifax, NS, B3J 3N8\nCanada",
+      "city": "Halifax",
+      "categories": [
+        "Arts",
+        "Comedy"
+      ],
+      "price": null,
+      "ticketUrl": "https://www.lighthouseartscentre.ca/events/",
+      "eventUrl": "https://www.lighthouseartscentre.ca/events/mrg-live-presents-josh-thomas-jiggle-jiggle",
+      "sourceUrl": "https://www.lighthouseartscentre.ca/events/mrg-live-presents-josh-thomas-jiggle-jiggle",
+      "sourceId": "light-house-arts-centre",
+      "sourceName": "Light House Arts Centre",
+      "sourceKind": "official_venue_calendar",
+      "observedAt": "2026-08-28T18:31:11.484Z",
+      "reviewState": "source-observed"
+    },
+    {
+      "id": "tourism-ns-events-d57002e06a52dab8",
+      "title": "Nova Scotia Forest Festival",
+      "startAt": "2026-10-03T14:00:00.000Z",
+      "endAt": "2026-10-03T19:00:00.000Z",
+      "allDay": false,
+      "venueName": "Memory Lane Heritage Village",
+      "address": "5435 Clam Harbour Rd, Lake Charlotte, NS, B0J 2L0, Canada",
+      "city": "Halifax",
+      "categories": [
+        "Sports",
+        "Food & Drink",
+        "Festivals",
+        "Arts",
+        "Outdoor",
+        "Community"
+      ],
+      "price": "30-60 CAD",
+      "ticketUrl": "https://novascotia.com/explore-nova-scotia/events/?region=29",
+      "eventUrl": "https://novascotia.com/event/nova-scotia-forest-festival/",
+      "sourceUrl": "https://novascotia.com/event/nova-scotia-forest-festival/",
+      "sourceId": "tourism-ns-events",
+      "sourceName": "Tourism Nova Scotia Events",
+      "sourceKind": "official_tourism_calendar",
+      "observedAt": "2026-08-28T18:31:03.143Z",
+      "reviewState": "source-observed",
+      "alternateSources": [
+        {
+          "sourceId": "tourism-ns-events",
+          "sourceName": "Tourism Nova Scotia Events",
+          "sourceUrl": "https://novascotia.com/event/nova-scotia-forest-festival/"
+        }
+      ]
+    },
+    {
+      "id": "tourism-ns-events-29eec1a52dea9a84",
+      "title": "Wine Fair Halifax",
+      "startAt": "2026-10-03T16:00:00.000Z",
+      "endAt": "2026-10-04T01:00:00.000Z",
+      "allDay": false,
+      "venueName": "Halifax Convention Centre",
+      "address": "1650 Argyle Street, Halifax, NS, B3J 0E6, Canada",
+      "city": "Halifax",
+      "categories": [
+        "Food & Drink",
+        "Festivals",
+        "Arts",
+        "Outdoor",
+        "Community"
+      ],
+      "price": "$95.38 CAD",
+      "ticketUrl": "https://www.eventbrite.ca/e/wine-fair-halifax-2026-tickets-1974262691857?aff=erellivmlt",
+      "eventUrl": "https://novascotia.com/event/wine-fair-halifax/",
+      "sourceUrl": "https://novascotia.com/event/wine-fair-halifax/",
+      "sourceId": "tourism-ns-events",
+      "sourceName": "Tourism Nova Scotia Events",
+      "sourceKind": "official_tourism_calendar",
+      "observedAt": "2026-08-28T18:31:00.954Z",
+      "reviewState": "source-observed",
+      "alternateSources": [
+        {
+          "sourceId": "tourism-ns-events",
+          "sourceName": "Tourism Nova Scotia Events",
+          "sourceUrl": "https://novascotia.com/event/wine-fair-halifax/"
+        }
+      ]
+    },
+    {
+      "id": "halifax-tides-home-3e53835f014e898e",
+      "title": "Halifax Tides FC vs. Calgary Wild FC",
+      "startAt": "2026-10-03T18:00:00.000Z",
+      "endAt": "2026-10-03T18:00:00.000Z",
+      "allDay": false,
+      "venueName": "Wanderers Grounds",
+      "address": "5819 Sackville Street, Halifax, NS",
+      "city": "Halifax",
+      "categories": [
+        "Sports"
+      ],
+      "price": null,
+      "ticketUrl": "https://novascotia.com/event/halifax-tides-2026-season/",
+      "eventUrl": "https://novascotia.com/event/halifax-tides-2026-season/",
+      "sourceUrl": "https://novascotia.com/event/halifax-tides-2026-season/",
+      "sourceId": "halifax-tides-home",
+      "sourceName": "Halifax Tides 2026 Home Schedule",
+      "sourceKind": "official_tourism_sports_schedule",
+      "observedAt": "2026-08-28T18:31:11.078Z",
+      "reviewState": "source-observed"
+    },
+    {
+      "id": "halifax-mooseheads-home-2e9484941dbf4bd4",
+      "title": "Halifax Mooseheads vs Rouyn-Noranda",
+      "startAt": "2026-10-08T22:00:00.000Z",
+      "endAt": "2026-10-08T22:00:00.000Z",
+      "allDay": false,
+      "venueName": "Scotiabank Centre",
+      "address": "1800 Argyle Street, Halifax, NS",
+      "city": "Halifax",
+      "categories": [
+        "Sports"
+      ],
+      "price": null,
+      "ticketUrl": "https://www.scotiabank-centre.com/events/2026-2027-halifax-mooseheads",
+      "eventUrl": "https://www.scotiabank-centre.com/events/2026-2027-halifax-mooseheads",
+      "sourceUrl": "https://www.scotiabank-centre.com/events/2026-2027-halifax-mooseheads",
+      "sourceId": "halifax-mooseheads-home",
+      "sourceName": "Halifax Mooseheads Home Schedule",
+      "sourceKind": "official_sports_schedule",
+      "observedAt": "2026-08-28T18:31:10.970Z",
+      "reviewState": "source-observed"
+    },
+    {
+      "id": "scotiabank-centre-17a0d9531d73646c",
+      "title": "Halifax Mooseheads vs Rouyn-Noranda Huskies",
+      "startAt": "2026-10-08T22:00:00.000Z",
+      "endAt": "2026-10-08T22:00:00.000Z",
+      "allDay": false,
+      "venueName": "Scotiabank Centre",
+      "address": "1800 Argyle Street, Halifax, NS",
+      "city": "Halifax",
+      "categories": [
+        "Sports"
+      ],
+      "price": null,
+      "ticketUrl": "https://www.scotiabank-centre.com/premium-seating/eventcalendar",
+      "eventUrl": "https://www.scotiabank-centre.com/premium-seating/eventcalendar",
+      "sourceUrl": "https://www.scotiabank-centre.com/premium-seating/eventcalendar",
+      "sourceId": "scotiabank-centre",
+      "sourceName": "Scotiabank Centre",
+      "sourceKind": "official_venue_calendar",
+      "observedAt": "2026-08-28T18:31:11.009Z",
+      "reviewState": "source-observed"
+    },
+    {
+      "id": "https://novascotia.com/event/celtic-colours-international-festival/#event",
+      "title": "Celtic Colours International Festival",
+      "startAt": "2026-10-09T00:00:00.000Z",
+      "endAt": "2026-10-09T00:00:00.000Z",
+      "allDay": false,
+      "venueName": null,
+      "address": "Baddeck, NS, CA",
+      "city": "Baddeck",
+      "categories": [
+        "Festivals",
+        "Arts"
+      ],
+      "price": null,
+      "ticketUrl": "https://novascotia.com/explore-nova-scotia/events/?region=29",
+      "eventUrl": "https://novascotia.com/event/celtic-colours-international-festival/",
+      "sourceUrl": "https://novascotia.com/event/celtic-colours-international-festival/",
+      "sourceId": "tourism-ns-events",
+      "sourceName": "Tourism Nova Scotia Events",
+      "sourceKind": "official_tourism_calendar",
+      "observedAt": "2026-08-28T18:31:09.023Z",
+      "reviewState": "source-observed"
+    },
+    {
+      "id": "https://novascotia.com/event/don-ross-julie-malia/#event",
+      "title": "Don Ross & Julie Malía",
+      "startAt": "2026-10-10T19:30:00.000Z",
+      "endAt": "2026-10-10T21:30:00.000Z",
+      "allDay": false,
+      "venueName": "Chester Playhouse",
+      "address": "22 Pleasant St, Chester, B0J 1J0, Chester, NS, CA",
+      "city": "Chester",
+      "categories": [
+        "Arts"
+      ],
+      "price": null,
+      "ticketUrl": "https://purchase.chesterplayhouse.ca/ChooseSeats/29201",
+      "eventUrl": "https://novascotia.com/event/don-ross-julie-malia/",
+      "sourceUrl": "https://novascotia.com/event/don-ross-julie-malia/",
+      "sourceId": "tourism-ns-events",
+      "sourceName": "Tourism Nova Scotia Events",
+      "sourceKind": "official_tourism_calendar",
+      "observedAt": "2026-08-28T18:31:09.990Z",
+      "reviewState": "source-observed"
+    },
+    {
+      "id": "halifax-mooseheads-home-b8cd97060b31415b",
+      "title": "Halifax Mooseheads vs Drummondville",
+      "startAt": "2026-10-10T22:00:00.000Z",
+      "endAt": "2026-10-10T22:00:00.000Z",
+      "allDay": false,
+      "venueName": "Scotiabank Centre",
+      "address": "1800 Argyle Street, Halifax, NS",
+      "city": "Halifax",
+      "categories": [
+        "Sports"
+      ],
+      "price": null,
+      "ticketUrl": "https://www.scotiabank-centre.com/events/2026-2027-halifax-mooseheads",
+      "eventUrl": "https://www.scotiabank-centre.com/events/2026-2027-halifax-mooseheads",
+      "sourceUrl": "https://www.scotiabank-centre.com/events/2026-2027-halifax-mooseheads",
+      "sourceId": "halifax-mooseheads-home",
+      "sourceName": "Halifax Mooseheads Home Schedule",
+      "sourceKind": "official_sports_schedule",
+      "observedAt": "2026-08-28T18:31:10.971Z",
+      "reviewState": "source-observed"
+    },
+    {
+      "id": "scotiabank-centre-0e94a2e36a22459e",
+      "title": "Halifax Mooseheads vs Drummondville Voltigeurs",
+      "startAt": "2026-10-10T22:00:00.000Z",
+      "endAt": "2026-10-10T22:00:00.000Z",
+      "allDay": false,
+      "venueName": "Scotiabank Centre",
+      "address": "1800 Argyle Street, Halifax, NS",
+      "city": "Halifax",
+      "categories": [
+        "Sports"
+      ],
+      "price": null,
+      "ticketUrl": "https://www.scotiabank-centre.com/premium-seating/eventcalendar",
+      "eventUrl": "https://www.scotiabank-centre.com/premium-seating/eventcalendar",
+      "sourceUrl": "https://www.scotiabank-centre.com/premium-seating/eventcalendar",
+      "sourceId": "scotiabank-centre",
+      "sourceName": "Scotiabank Centre",
+      "sourceKind": "official_venue_calendar",
+      "observedAt": "2026-08-28T18:31:11.009Z",
+      "reviewState": "source-observed"
+    },
+    {
+      "id": "hfx-wanderers-home-315de978d06b24da",
+      "title": "HFX Wanderers FC vs Cavalry FC",
+      "startAt": "2026-10-12T20:00:00.000Z",
+      "endAt": "2026-10-12T20:00:00.000Z",
+      "allDay": false,
+      "venueName": "Wanderers Grounds",
+      "address": "5819 Sackville Street, Halifax, NS",
+      "city": "Halifax",
+      "categories": [
+        "Sports"
+      ],
+      "price": null,
+      "ticketUrl": "https://novascotia.com/event/halifax-wanderers-2026-season/",
+      "eventUrl": "https://novascotia.com/event/halifax-wanderers-2026-season/",
+      "sourceUrl": "https://novascotia.com/event/halifax-wanderers-2026-season/",
+      "sourceId": "hfx-wanderers-home",
+      "sourceName": "HFX Wanderers 2026 Home Schedule",
+      "sourceKind": "official_tourism_sports_schedule",
+      "observedAt": "2026-08-28T18:31:11.045Z",
+      "reviewState": "source-observed"
+    },
+    {
+      "id": "scotiabank-centre-54927ff18c4e1c83",
+      "title": "The Black Keys",
+      "startAt": "2026-10-14T22:30:00.000Z",
+      "endAt": "2026-10-14T22:30:00.000Z",
+      "allDay": false,
+      "venueName": "Scotiabank Centre",
+      "address": "1800 Argyle Street, Halifax, NS",
+      "city": "Halifax",
+      "categories": [
+        "Music"
+      ],
+      "price": null,
+      "ticketUrl": "https://www.scotiabank-centre.com/premium-seating/eventcalendar",
+      "eventUrl": "https://www.scotiabank-centre.com/premium-seating/eventcalendar",
+      "sourceUrl": "https://www.scotiabank-centre.com/premium-seating/eventcalendar",
+      "sourceId": "scotiabank-centre",
+      "sourceName": "Scotiabank Centre",
+      "sourceKind": "official_venue_calendar",
+      "observedAt": "2026-08-28T18:31:11.009Z",
+      "reviewState": "source-observed"
+    },
+    {
+      "id": "https://novascotia.com/event/nocturne-art-at-night/#event",
+      "title": "Nocturne: Art at Night",
+      "startAt": "2026-10-15T00:00:00.000Z",
+      "endAt": "2026-10-15T00:00:00.000Z",
+      "allDay": false,
+      "venueName": null,
+      "address": "Halifax, NS, CA",
+      "city": "Halifax",
+      "categories": [
+        "Arts"
+      ],
+      "price": null,
+      "ticketUrl": "https://novascotia.com/explore-nova-scotia/events/?region=29",
+      "eventUrl": "https://novascotia.com/event/nocturne-art-at-night/",
+      "sourceUrl": "https://novascotia.com/event/nocturne-art-at-night/",
+      "sourceId": "tourism-ns-events",
+      "sourceName": "Tourism Nova Scotia Events",
+      "sourceKind": "official_tourism_calendar",
+      "observedAt": "2026-08-28T18:31:01.591Z",
+      "reviewState": "source-observed",
+      "alternateSources": [
+        {
+          "sourceId": "tourism-ns-events",
+          "sourceName": "Tourism Nova Scotia Events",
+          "sourceUrl": "https://novascotia.com/event/nocturne-art-at-night/"
+        }
+      ]
+    },
+    {
+      "id": "https://novascotia.com/event/halifax-paranormal-symposium/#event",
+      "title": "Halifax Paranormal Symposium",
+      "startAt": "2026-10-16T19:00:00.000Z",
+      "endAt": "2026-10-16T19:00:00.000Z",
+      "allDay": false,
+      "venueName": "Halifax Tower Hotel & Conference Centre",
+      "address": "15 Lakelands Blvd, Halifax, NS, Canada, Halifax, NS, CA",
+      "city": "Halifax",
+      "categories": [
+        "Arts"
+      ],
+      "price": null,
+      "ticketUrl": "https://www.eventbrite.ca/e/2026-halifax-paranormal-symposium-tickets-1984184904462?aff=oddtdtcreator",
+      "eventUrl": "https://novascotia.com/event/halifax-paranormal-symposium/",
+      "sourceUrl": "https://novascotia.com/event/halifax-paranormal-symposium/",
+      "sourceId": "tourism-ns-events",
+      "sourceName": "Tourism Nova Scotia Events",
+      "sourceKind": "official_tourism_calendar",
+      "observedAt": "2026-08-28T18:31:03.482Z",
+      "reviewState": "source-observed",
+      "alternateSources": [
+        {
+          "sourceId": "tourism-ns-events",
+          "sourceName": "Tourism Nova Scotia Events",
+          "sourceUrl": "https://novascotia.com/event/halifax-paranormal-symposium/"
+        }
+      ]
+    },
+    {
+      "id": "halifax-mooseheads-home-fd19871c9a8e2c98",
+      "title": "Halifax Mooseheads vs Val-d'Or",
+      "startAt": "2026-10-16T22:00:00.000Z",
+      "endAt": "2026-10-16T22:00:00.000Z",
+      "allDay": false,
+      "venueName": "Scotiabank Centre",
+      "address": "1800 Argyle Street, Halifax, NS",
+      "city": "Halifax",
+      "categories": [
+        "Sports"
+      ],
+      "price": null,
+      "ticketUrl": "https://www.scotiabank-centre.com/events/2026-2027-halifax-mooseheads",
+      "eventUrl": "https://www.scotiabank-centre.com/events/2026-2027-halifax-mooseheads",
+      "sourceUrl": "https://www.scotiabank-centre.com/events/2026-2027-halifax-mooseheads",
+      "sourceId": "halifax-mooseheads-home",
+      "sourceName": "Halifax Mooseheads Home Schedule",
+      "sourceKind": "official_sports_schedule",
+      "observedAt": "2026-08-28T18:31:10.971Z",
+      "reviewState": "source-observed"
+    },
+    {
+      "id": "scotiabank-centre-638412effa784c83",
+      "title": "Halifax Mooseheads vs Val-d'Or Foreurs",
+      "startAt": "2026-10-16T22:00:00.000Z",
+      "endAt": "2026-10-16T22:00:00.000Z",
+      "allDay": false,
+      "venueName": "Scotiabank Centre",
+      "address": "1800 Argyle Street, Halifax, NS",
+      "city": "Halifax",
+      "categories": [
+        "Sports"
+      ],
+      "price": null,
+      "ticketUrl": "https://www.scotiabank-centre.com/premium-seating/eventcalendar",
+      "eventUrl": "https://www.scotiabank-centre.com/premium-seating/eventcalendar",
+      "sourceUrl": "https://www.scotiabank-centre.com/premium-seating/eventcalendar",
+      "sourceId": "scotiabank-centre",
+      "sourceName": "Scotiabank Centre",
+      "sourceKind": "official_venue_calendar",
+      "observedAt": "2026-08-28T18:31:11.009Z",
+      "reviewState": "source-observed"
+    },
+    {
+      "id": "light-house-arts-centre-3a0e66b18c091cd5",
+      "title": "Tickets | The Sheepdogs (Friday October 16 2026) | Halifax — Light House Arts Centre",
+      "startAt": "2026-10-17T00:00:00.000Z",
+      "endAt": "2026-10-17T03:59:00.000Z",
+      "allDay": false,
+      "venueName": "Light House Arts Centre",
+      "address": "1800 Argyle Street Suite 301\nHalifax, NS, B3J 3N8\nCanada",
+      "city": "Halifax",
+      "categories": [
+        "Arts"
+      ],
+      "price": null,
+      "ticketUrl": "https://www.lighthouseartscentre.ca/events/",
+      "eventUrl": "https://www.lighthouseartscentre.ca/events/the-sheepdogs-friday",
+      "sourceUrl": "https://www.lighthouseartscentre.ca/events/the-sheepdogs-friday",
+      "sourceId": "light-house-arts-centre",
+      "sourceName": "Light House Arts Centre",
+      "sourceKind": "official_venue_calendar",
+      "observedAt": "2026-08-28T18:31:11.540Z",
+      "reviewState": "source-observed"
+    },
+    {
+      "id": "https://novascotia.com/event/memory-lane-fibre-arts-festival/#event",
+      "title": "Memory Lane Fibre Arts Festival",
+      "startAt": "2026-10-17T10:00:00.000Z",
+      "endAt": "2026-10-17T10:00:00.000Z",
+      "allDay": false,
+      "venueName": "Memory Lane Heritage Village",
+      "address": "5435 Clam Harbour Rd, Lake Charlotte, NS, B0J 2L0, Canada, Lake Charlotte, NS, CA",
+      "city": "Lake Charlotte",
+      "categories": [
+        "Festivals",
+        "Arts",
+        "Community"
+      ],
+      "price": "7",
+      "ticketUrl": "https://visitmemorylane.ca/events/fibre-arts-festival",
+      "eventUrl": "https://novascotia.com/event/memory-lane-fibre-arts-festival/",
+      "sourceUrl": "https://novascotia.com/event/memory-lane-fibre-arts-festival/",
+      "sourceId": "tourism-ns-events",
+      "sourceName": "Tourism Nova Scotia Events",
+      "sourceKind": "official_tourism_calendar",
+      "observedAt": "2026-08-28T18:31:03.185Z",
+      "reviewState": "source-observed",
+      "alternateSources": [
+        {
+          "sourceId": "tourism-ns-events",
+          "sourceName": "Tourism Nova Scotia Events",
+          "sourceUrl": "https://novascotia.com/event/memory-lane-fibre-arts-festival/"
+        }
+      ]
+    },
+    {
+      "id": "halifax-tides-home-10fc07df1d74c80c",
+      "title": "Halifax Tides FC vs. Montréal Roses FC",
+      "startAt": "2026-10-17T18:00:00.000Z",
+      "endAt": "2026-10-17T18:00:00.000Z",
+      "allDay": false,
+      "venueName": "Wanderers Grounds",
+      "address": "5819 Sackville Street, Halifax, NS",
+      "city": "Halifax",
+      "categories": [
+        "Sports"
+      ],
+      "price": null,
+      "ticketUrl": "https://novascotia.com/event/halifax-tides-2026-season/",
+      "eventUrl": "https://novascotia.com/event/halifax-tides-2026-season/",
+      "sourceUrl": "https://novascotia.com/event/halifax-tides-2026-season/",
+      "sourceId": "halifax-tides-home",
+      "sourceName": "Halifax Tides 2026 Home Schedule",
+      "sourceKind": "official_tourism_sports_schedule",
+      "observedAt": "2026-08-28T18:31:11.078Z",
+      "reviewState": "source-observed"
+    },
+    {
+      "id": "light-house-arts-centre-c7c2f523c32e4fd8",
+      "title": "Tickets | The Sheepdogs (Saturday October 17 2026) | Halifax — Light House Arts Centre",
+      "startAt": "2026-10-18T00:00:00.000Z",
+      "endAt": "2026-10-18T03:59:00.000Z",
+      "allDay": false,
+      "venueName": "Light House Arts Centre",
+      "address": "1800 Argyle Street Suite 301\nHalifax, NS, B3J 3N8\nCanada",
+      "city": "Halifax",
+      "categories": [
+        "Arts"
+      ],
+      "price": null,
+      "ticketUrl": "https://www.lighthouseartscentre.ca/events/",
+      "eventUrl": "https://www.lighthouseartscentre.ca/events/the-sheepdogs-saturday",
+      "sourceUrl": "https://www.lighthouseartscentre.ca/events/the-sheepdogs-saturday",
+      "sourceId": "light-house-arts-centre",
+      "sourceName": "Light House Arts Centre",
+      "sourceKind": "official_venue_calendar",
+      "observedAt": "2026-08-28T18:31:11.534Z",
+      "reviewState": "source-observed"
+    },
+    {
+      "id": "halifax-mooseheads-home-02f24f9892495cb4",
+      "title": "Halifax Mooseheads vs Shawinigan",
+      "startAt": "2026-10-18T18:00:00.000Z",
+      "endAt": "2026-10-18T18:00:00.000Z",
+      "allDay": false,
+      "venueName": "Scotiabank Centre",
+      "address": "1800 Argyle Street, Halifax, NS",
+      "city": "Halifax",
+      "categories": [
+        "Sports"
+      ],
+      "price": null,
+      "ticketUrl": "https://www.scotiabank-centre.com/events/2026-2027-halifax-mooseheads",
+      "eventUrl": "https://www.scotiabank-centre.com/events/2026-2027-halifax-mooseheads",
+      "sourceUrl": "https://www.scotiabank-centre.com/events/2026-2027-halifax-mooseheads",
+      "sourceId": "halifax-mooseheads-home",
+      "sourceName": "Halifax Mooseheads Home Schedule",
+      "sourceKind": "official_sports_schedule",
+      "observedAt": "2026-08-28T18:31:10.971Z",
+      "reviewState": "source-observed"
+    },
+    {
+      "id": "scotiabank-centre-46c40d7bc54876a2",
+      "title": "Halifax Mooseheads vs Shawinigan Cataractes",
+      "startAt": "2026-10-18T18:00:00.000Z",
+      "endAt": "2026-10-18T18:00:00.000Z",
+      "allDay": false,
+      "venueName": "Scotiabank Centre",
+      "address": "1800 Argyle Street, Halifax, NS",
+      "city": "Halifax",
+      "categories": [
+        "Sports"
+      ],
+      "price": null,
+      "ticketUrl": "https://www.scotiabank-centre.com/premium-seating/eventcalendar",
+      "eventUrl": "https://www.scotiabank-centre.com/premium-seating/eventcalendar",
+      "sourceUrl": "https://www.scotiabank-centre.com/premium-seating/eventcalendar",
+      "sourceId": "scotiabank-centre",
+      "sourceName": "Scotiabank Centre",
+      "sourceKind": "official_venue_calendar",
+      "observedAt": "2026-08-28T18:31:11.009Z",
+      "reviewState": "source-observed"
+    },
+    {
+      "id": "scotiabank-centre-3bd0fd3ce9be738c",
+      "title": "STYX",
+      "startAt": "2026-10-21T22:30:00.000Z",
+      "endAt": "2026-10-21T22:30:00.000Z",
+      "allDay": false,
+      "venueName": "Scotiabank Centre",
+      "address": "1800 Argyle Street, Halifax, NS",
+      "city": "Halifax",
+      "categories": [
+        "Music"
+      ],
+      "price": null,
+      "ticketUrl": "https://www.scotiabank-centre.com/premium-seating/eventcalendar",
+      "eventUrl": "https://www.scotiabank-centre.com/premium-seating/eventcalendar",
+      "sourceUrl": "https://www.scotiabank-centre.com/premium-seating/eventcalendar",
+      "sourceId": "scotiabank-centre",
+      "sourceName": "Scotiabank Centre",
+      "sourceKind": "official_venue_calendar",
+      "observedAt": "2026-08-28T18:31:11.009Z",
+      "reviewState": "source-observed"
+    },
+    {
+      "id": "https://novascotia.com/event/francofest/#event",
+      "title": "Francofest",
+      "startAt": "2026-10-22T00:00:00.000Z",
+      "endAt": "2026-10-22T00:00:00.000Z",
+      "allDay": false,
+      "venueName": null,
+      "address": "Halifax, NS, CA",
+      "city": "Halifax",
+      "categories": [
+        "Festivals",
+        "Arts"
+      ],
+      "price": null,
+      "ticketUrl": "https://novascotia.com/explore-nova-scotia/events/?region=29",
+      "eventUrl": "https://novascotia.com/event/francofest/",
+      "sourceUrl": "https://novascotia.com/event/francofest/",
+      "sourceId": "tourism-ns-events",
+      "sourceName": "Tourism Nova Scotia Events",
+      "sourceKind": "official_tourism_calendar",
+      "observedAt": "2026-08-28T18:31:08.085Z",
+      "reviewState": "source-observed"
+    },
+    {
+      "id": "halifax-mooseheads-home-ab1412cf5b77d85c",
+      "title": "Halifax Mooseheads vs Cape Breton",
+      "startAt": "2026-10-23T22:00:00.000Z",
+      "endAt": "2026-10-23T22:00:00.000Z",
+      "allDay": false,
+      "venueName": "Scotiabank Centre",
+      "address": "1800 Argyle Street, Halifax, NS",
+      "city": "Halifax",
+      "categories": [
+        "Sports"
+      ],
+      "price": null,
+      "ticketUrl": "https://www.scotiabank-centre.com/events/2026-2027-halifax-mooseheads",
+      "eventUrl": "https://www.scotiabank-centre.com/events/2026-2027-halifax-mooseheads",
+      "sourceUrl": "https://www.scotiabank-centre.com/events/2026-2027-halifax-mooseheads",
+      "sourceId": "halifax-mooseheads-home",
+      "sourceName": "Halifax Mooseheads Home Schedule",
+      "sourceKind": "official_sports_schedule",
+      "observedAt": "2026-08-28T18:31:10.971Z",
+      "reviewState": "source-observed"
+    },
+    {
+      "id": "scotiabank-centre-4cfab057e22445a7",
+      "title": "Halifax Mooseheads vs Cape Breton Eagles",
+      "startAt": "2026-10-23T22:00:00.000Z",
+      "endAt": "2026-10-23T22:00:00.000Z",
+      "allDay": false,
+      "venueName": "Scotiabank Centre",
+      "address": "1800 Argyle Street, Halifax, NS",
+      "city": "Halifax",
+      "categories": [
+        "Sports"
+      ],
+      "price": null,
+      "ticketUrl": "https://www.scotiabank-centre.com/premium-seating/eventcalendar",
+      "eventUrl": "https://www.scotiabank-centre.com/premium-seating/eventcalendar",
+      "sourceUrl": "https://www.scotiabank-centre.com/premium-seating/eventcalendar",
+      "sourceId": "scotiabank-centre",
+      "sourceName": "Scotiabank Centre",
+      "sourceKind": "official_venue_calendar",
+      "observedAt": "2026-08-28T18:31:11.009Z",
+      "reviewState": "source-observed"
+    },
+    {
+      "id": "halifax-mooseheads-home-774b090badc454a5",
+      "title": "Halifax Mooseheads vs Charlottetown",
+      "startAt": "2026-10-24T22:00:00.000Z",
+      "endAt": "2026-10-24T22:00:00.000Z",
+      "allDay": false,
+      "venueName": "Scotiabank Centre",
+      "address": "1800 Argyle Street, Halifax, NS",
+      "city": "Halifax",
+      "categories": [
+        "Sports"
+      ],
+      "price": null,
+      "ticketUrl": "https://www.scotiabank-centre.com/events/2026-2027-halifax-mooseheads",
+      "eventUrl": "https://www.scotiabank-centre.com/events/2026-2027-halifax-mooseheads",
+      "sourceUrl": "https://www.scotiabank-centre.com/events/2026-2027-halifax-mooseheads",
+      "sourceId": "halifax-mooseheads-home",
+      "sourceName": "Halifax Mooseheads Home Schedule",
+      "sourceKind": "official_sports_schedule",
+      "observedAt": "2026-08-28T18:31:10.971Z",
+      "reviewState": "source-observed"
+    },
+    {
+      "id": "scotiabank-centre-6f876a6c15e19412",
+      "title": "Halifax Mooseheads vs Charlottetown Islanders",
+      "startAt": "2026-10-24T22:00:00.000Z",
+      "endAt": "2026-10-24T22:00:00.000Z",
+      "allDay": false,
+      "venueName": "Scotiabank Centre",
+      "address": "1800 Argyle Street, Halifax, NS",
+      "city": "Halifax",
+      "categories": [
+        "Sports"
+      ],
+      "price": null,
+      "ticketUrl": "https://www.scotiabank-centre.com/premium-seating/eventcalendar",
+      "eventUrl": "https://www.scotiabank-centre.com/premium-seating/eventcalendar",
+      "sourceUrl": "https://www.scotiabank-centre.com/premium-seating/eventcalendar",
+      "sourceId": "scotiabank-centre",
+      "sourceName": "Scotiabank Centre",
+      "sourceKind": "official_venue_calendar",
+      "observedAt": "2026-08-28T18:31:11.010Z",
+      "reviewState": "source-observed"
+    },
+    {
+      "id": "hfx-wanderers-home-f09490b61552ad2d",
+      "title": "HFX Wanderers FC vs FC Supra Du Quebec FC",
+      "startAt": "2026-10-25T20:00:00.000Z",
+      "endAt": "2026-10-25T20:00:00.000Z",
+      "allDay": false,
+      "venueName": "Wanderers Grounds",
+      "address": "5819 Sackville Street, Halifax, NS",
+      "city": "Halifax",
+      "categories": [
+        "Sports"
+      ],
+      "price": null,
+      "ticketUrl": "https://novascotia.com/event/halifax-wanderers-2026-season/",
+      "eventUrl": "https://novascotia.com/event/halifax-wanderers-2026-season/",
+      "sourceUrl": "https://novascotia.com/event/halifax-wanderers-2026-season/",
+      "sourceId": "hfx-wanderers-home",
+      "sourceName": "HFX Wanderers 2026 Home Schedule",
+      "sourceKind": "official_tourism_sports_schedule",
+      "observedAt": "2026-08-28T18:31:11.045Z",
+      "reviewState": "source-observed"
+    },
+    {
+      "id": "light-house-arts-centre-676e6ad4127520b7",
+      "title": "Official Tickets | Jimmy Rankin - Song Dog: 25th Anniversary Tour | Halifax — Light House Arts Centre",
+      "startAt": "2026-10-31T00:00:00.000Z",
+      "endAt": "2026-10-31T03:59:00.000Z",
+      "allDay": false,
+      "venueName": "Light House Arts Centre",
+      "address": "1800 Argyle Street Suite 301\nHalifax, NS, B3J 3N8\nCanada",
+      "city": "Halifax",
+      "categories": [
+        "Music",
+        "Arts"
+      ],
+      "price": null,
+      "ticketUrl": "https://www.lighthouseartscentre.ca/events/",
+      "eventUrl": "https://www.lighthouseartscentre.ca/events/jimmy-rankin-song-dog-25th-anniversary-tour",
+      "sourceUrl": "https://www.lighthouseartscentre.ca/events/jimmy-rankin-song-dog-25th-anniversary-tour",
+      "sourceId": "light-house-arts-centre",
+      "sourceName": "Light House Arts Centre",
+      "sourceKind": "official_venue_calendar",
+      "observedAt": "2026-08-28T18:31:11.541Z",
+      "reviewState": "source-observed"
+    },
+    {
+      "id": "halifax-mooseheads-home-ea5695217e11be27",
+      "title": "Halifax Mooseheads vs Cape Breton",
+      "startAt": "2026-11-06T23:00:00.000Z",
+      "endAt": "2026-11-06T23:00:00.000Z",
+      "allDay": false,
+      "venueName": "Scotiabank Centre",
+      "address": "1800 Argyle Street, Halifax, NS",
+      "city": "Halifax",
+      "categories": [
+        "Sports"
+      ],
+      "price": null,
+      "ticketUrl": "https://www.scotiabank-centre.com/events/2026-2027-halifax-mooseheads",
+      "eventUrl": "https://www.scotiabank-centre.com/events/2026-2027-halifax-mooseheads",
+      "sourceUrl": "https://www.scotiabank-centre.com/events/2026-2027-halifax-mooseheads",
+      "sourceId": "halifax-mooseheads-home",
+      "sourceName": "Halifax Mooseheads Home Schedule",
+      "sourceKind": "official_sports_schedule",
+      "observedAt": "2026-08-28T18:31:10.971Z",
+      "reviewState": "source-observed"
+    },
+    {
+      "id": "scotiabank-centre-0ef968ea58f5fd18",
+      "title": "Halifax Mooseheads vs Cape Breton Eagles",
+      "startAt": "2026-11-06T23:00:00.000Z",
+      "endAt": "2026-11-06T23:00:00.000Z",
+      "allDay": false,
+      "venueName": "Scotiabank Centre",
+      "address": "1800 Argyle Street, Halifax, NS",
+      "city": "Halifax",
+      "categories": [
+        "Sports"
+      ],
+      "price": null,
+      "ticketUrl": "https://www.scotiabank-centre.com/premium-seating/eventcalendar",
+      "eventUrl": "https://www.scotiabank-centre.com/premium-seating/eventcalendar",
+      "sourceUrl": "https://www.scotiabank-centre.com/premium-seating/eventcalendar",
+      "sourceId": "scotiabank-centre",
+      "sourceName": "Scotiabank Centre",
+      "sourceKind": "official_venue_calendar",
+      "observedAt": "2026-08-28T18:31:11.010Z",
+      "reviewState": "source-observed"
+    },
+    {
+      "id": "light-house-arts-centre-d85b861e6b284847",
+      "title": "Official Tickets | Hawksley Workman | Halifax — Light House Arts Centre",
+      "startAt": "2026-11-07T01:00:00.000Z",
+      "endAt": "2026-11-07T04:59:00.000Z",
+      "allDay": false,
+      "venueName": "Light House Arts Centre",
+      "address": "1800 Argyle Street Suite 301\nHalifax, NS, B3J 3N8\nCanada",
+      "city": "Halifax",
+      "categories": [
+        "Arts"
+      ],
+      "price": null,
+      "ticketUrl": "https://www.lighthouseartscentre.ca/events/",
+      "eventUrl": "https://www.lighthouseartscentre.ca/events/hawksley-workman",
+      "sourceUrl": "https://www.lighthouseartscentre.ca/events/hawksley-workman",
+      "sourceId": "light-house-arts-centre",
+      "sourceName": "Light House Arts Centre",
+      "sourceKind": "official_venue_calendar",
+      "observedAt": "2026-08-28T18:31:11.538Z",
+      "reviewState": "source-observed"
+    },
+    {
+      "id": "halifax-mooseheads-home-4a0ca5f665137039",
+      "title": "Halifax Mooseheads vs Saint John",
+      "startAt": "2026-11-07T23:00:00.000Z",
+      "endAt": "2026-11-07T23:00:00.000Z",
+      "allDay": false,
+      "venueName": "Scotiabank Centre",
+      "address": "1800 Argyle Street, Halifax, NS",
+      "city": "Halifax",
+      "categories": [
+        "Sports"
+      ],
+      "price": null,
+      "ticketUrl": "https://www.scotiabank-centre.com/events/2026-2027-halifax-mooseheads",
+      "eventUrl": "https://www.scotiabank-centre.com/events/2026-2027-halifax-mooseheads",
+      "sourceUrl": "https://www.scotiabank-centre.com/events/2026-2027-halifax-mooseheads",
+      "sourceId": "halifax-mooseheads-home",
+      "sourceName": "Halifax Mooseheads Home Schedule",
+      "sourceKind": "official_sports_schedule",
+      "observedAt": "2026-08-28T18:31:10.971Z",
+      "reviewState": "source-observed"
+    },
+    {
+      "id": "scotiabank-centre-4aa74d0134a4c494",
+      "title": "Halifax Mooseheads vs Saint John Sea Dogs",
+      "startAt": "2026-11-07T23:00:00.000Z",
+      "endAt": "2026-11-07T23:00:00.000Z",
+      "allDay": false,
+      "venueName": "Scotiabank Centre",
+      "address": "1800 Argyle Street, Halifax, NS",
+      "city": "Halifax",
+      "categories": [
+        "Sports"
+      ],
+      "price": null,
+      "ticketUrl": "https://www.scotiabank-centre.com/premium-seating/eventcalendar",
+      "eventUrl": "https://www.scotiabank-centre.com/premium-seating/eventcalendar",
+      "sourceUrl": "https://www.scotiabank-centre.com/premium-seating/eventcalendar",
+      "sourceId": "scotiabank-centre",
+      "sourceName": "Scotiabank Centre",
+      "sourceKind": "official_venue_calendar",
+      "observedAt": "2026-08-28T18:31:11.010Z",
+      "reviewState": "source-observed"
+    },
+    {
+      "id": "neptune-theatre-d7569dda4dddd653",
+      "title": "Our Town",
+      "startAt": "2026-11-11T16:00:00.000Z",
+      "endAt": "2026-11-15T16:00:00.000Z",
+      "allDay": true,
+      "venueName": "Scotiabank Studio Stage",
+      "address": "1593 Argyle Street, Halifax, NS",
+      "city": "Halifax",
+      "categories": [
+        "Arts"
+      ],
+      "price": null,
+      "ticketUrl": "https://www.neptunetheatre.com/visit/ticket-packages",
+      "eventUrl": "https://www.neptunetheatre.com/visit/ticket-packages",
+      "sourceUrl": "https://www.neptunetheatre.com/visit/ticket-packages",
+      "sourceId": "neptune-theatre",
+      "sourceName": "Neptune Theatre",
+      "sourceKind": "official_venue_calendar",
+      "observedAt": "2026-08-28T18:31:13.259Z",
+      "reviewState": "source-observed"
+    },
+    {
+      "id": "https://novascotia.com/event/dr-seusss-how-the-grinch-stole-christmas-the-musical/#event",
+      "title": "Dr. Seuss’s How the Grinch Stole Christmas! The Musical",
+      "startAt": "2026-11-12T19:30:00.000Z",
+      "endAt": "2027-01-10T17:00:00.000Z",
+      "allDay": false,
+      "venueName": "Neptune Theatre",
+      "address": "1593 Argyle St, Halifax, NS B3J 2B2, Halifax, NS, CA",
+      "city": "Halifax",
+      "categories": [
+        "Music",
+        "Arts"
+      ],
+      "price": "4099",
+      "ticketUrl": "https://sales.neptunetheatre.com/Online/default.asp?BOparam::WScontent::loadArticle::permalink=Grinch&amp;BOparam::WScontent::loadArticle::context_id=",
+      "eventUrl": "https://novascotia.com/event/dr-seusss-how-the-grinch-stole-christmas-the-musical/",
+      "sourceUrl": "https://novascotia.com/event/dr-seusss-how-the-grinch-stole-christmas-the-musical/",
+      "sourceId": "tourism-ns-events",
+      "sourceName": "Tourism Nova Scotia Events",
+      "sourceKind": "official_tourism_calendar",
+      "observedAt": "2026-08-28T18:31:08.095Z",
+      "reviewState": "source-observed"
+    },
+    {
+      "id": "https://novascotia.com/event/craft-nova-scotia-designer-craft-show/#event",
+      "title": "Craft Nova Scotia Designer Craft Show",
+      "startAt": "2026-11-13T12:00:00.000Z",
+      "endAt": "2026-11-15T16:00:00.000Z",
+      "allDay": false,
+      "venueName": "Pier 22 Pavilion",
+      "address": "1031 Marginal Rd, Halifax, NS, B3H 4P7, Canada, Halifax, NS, CA",
+      "city": "Halifax",
+      "categories": [
+        "Arts"
+      ],
+      "price": "TBD",
+      "ticketUrl": "https://www.designercraftshop.ca/",
+      "eventUrl": "https://novascotia.com/event/craft-nova-scotia-designer-craft-show/",
+      "sourceUrl": "https://novascotia.com/event/craft-nova-scotia-designer-craft-show/",
+      "sourceId": "tourism-ns-events",
+      "sourceName": "Tourism Nova Scotia Events",
+      "sourceKind": "official_tourism_calendar",
+      "observedAt": "2026-08-28T18:31:04.919Z",
+      "reviewState": "source-observed",
+      "alternateSources": [
+        {
+          "sourceId": "tourism-ns-events",
+          "sourceName": "Tourism Nova Scotia Events",
+          "sourceUrl": "https://novascotia.com/event/craft-nova-scotia-designer-craft-show/"
+        }
+      ]
+    },
+    {
+      "id": "https://novascotia.com/event/traditional-1940s-christmas-dinners/#event",
+      "title": "Traditional 1940s Christmas Dinners",
+      "startAt": "2026-11-14T00:00:00.000Z",
+      "endAt": "2026-11-14T00:00:00.000Z",
+      "allDay": false,
+      "venueName": "Memory Lane Heritage Village",
+      "address": "5435 Clam Harbour Rd, Lake Charlotte, NS, B0J 2L0, Canada, Lake Charlotte, NS, CA",
+      "city": "Lake Charlotte",
+      "categories": [
+        "Food & Drink",
+        "Arts",
+        "Community"
+      ],
+      "price": null,
+      "ticketUrl": "https://novascotia.com/explore-nova-scotia/events/?region=29",
+      "eventUrl": "https://novascotia.com/event/traditional-1940s-christmas-dinners/",
+      "sourceUrl": "https://novascotia.com/event/traditional-1940s-christmas-dinners/",
+      "sourceId": "tourism-ns-events",
+      "sourceName": "Tourism Nova Scotia Events",
+      "sourceKind": "official_tourism_calendar",
+      "observedAt": "2026-08-28T18:31:07.800Z",
+      "reviewState": "source-observed"
+    },
+    {
+      "id": "halifax-mooseheads-home-2680accbee69c324",
+      "title": "Halifax Mooseheads vs Quebec",
+      "startAt": "2026-11-14T23:00:00.000Z",
+      "endAt": "2026-11-14T23:00:00.000Z",
+      "allDay": false,
+      "venueName": "Scotiabank Centre",
+      "address": "1800 Argyle Street, Halifax, NS",
+      "city": "Halifax",
+      "categories": [
+        "Sports"
+      ],
+      "price": null,
+      "ticketUrl": "https://www.scotiabank-centre.com/events/2026-2027-halifax-mooseheads",
+      "eventUrl": "https://www.scotiabank-centre.com/events/2026-2027-halifax-mooseheads",
+      "sourceUrl": "https://www.scotiabank-centre.com/events/2026-2027-halifax-mooseheads",
+      "sourceId": "halifax-mooseheads-home",
+      "sourceName": "Halifax Mooseheads Home Schedule",
+      "sourceKind": "official_sports_schedule",
+      "observedAt": "2026-08-28T18:31:10.971Z",
+      "reviewState": "source-observed"
+    },
+    {
+      "id": "scotiabank-centre-35e094b8d4d906e1",
+      "title": "Halifax Mooseheads vs Quebec Remparts",
+      "startAt": "2026-11-14T23:00:00.000Z",
+      "endAt": "2026-11-14T23:00:00.000Z",
+      "allDay": false,
+      "venueName": "Scotiabank Centre",
+      "address": "1800 Argyle Street, Halifax, NS",
+      "city": "Halifax",
+      "categories": [
+        "Sports",
+        "Arts"
+      ],
+      "price": null,
+      "ticketUrl": "https://www.scotiabank-centre.com/premium-seating/eventcalendar",
+      "eventUrl": "https://www.scotiabank-centre.com/premium-seating/eventcalendar",
+      "sourceUrl": "https://www.scotiabank-centre.com/premium-seating/eventcalendar",
+      "sourceId": "scotiabank-centre",
+      "sourceName": "Scotiabank Centre",
+      "sourceKind": "official_venue_calendar",
+      "observedAt": "2026-08-28T18:31:11.010Z",
+      "reviewState": "source-observed"
+    },
+    {
+      "id": "halifax-mooseheads-home-536853c05094e224",
+      "title": "Halifax Mooseheads vs Newfoundland",
+      "startAt": "2026-11-15T19:00:00.000Z",
+      "endAt": "2026-11-15T19:00:00.000Z",
+      "allDay": false,
+      "venueName": "Scotiabank Centre",
+      "address": "1800 Argyle Street, Halifax, NS",
+      "city": "Halifax",
+      "categories": [
+        "Sports"
+      ],
+      "price": null,
+      "ticketUrl": "https://www.scotiabank-centre.com/events/2026-2027-halifax-mooseheads",
+      "eventUrl": "https://www.scotiabank-centre.com/events/2026-2027-halifax-mooseheads",
+      "sourceUrl": "https://www.scotiabank-centre.com/events/2026-2027-halifax-mooseheads",
+      "sourceId": "halifax-mooseheads-home",
+      "sourceName": "Halifax Mooseheads Home Schedule",
+      "sourceKind": "official_sports_schedule",
+      "observedAt": "2026-08-28T18:31:10.971Z",
+      "reviewState": "source-observed"
+    },
+    {
+      "id": "scotiabank-centre-5fc3601b9887c6a8",
+      "title": "Halifax Mooseheads vs Newfoundland Regiment",
+      "startAt": "2026-11-15T19:00:00.000Z",
+      "endAt": "2026-11-15T19:00:00.000Z",
+      "allDay": false,
+      "venueName": "Scotiabank Centre",
+      "address": "1800 Argyle Street, Halifax, NS",
+      "city": "Halifax",
+      "categories": [
+        "Sports"
+      ],
+      "price": null,
+      "ticketUrl": "https://www.scotiabank-centre.com/premium-seating/eventcalendar",
+      "eventUrl": "https://www.scotiabank-centre.com/premium-seating/eventcalendar",
+      "sourceUrl": "https://www.scotiabank-centre.com/premium-seating/eventcalendar",
+      "sourceId": "scotiabank-centre",
+      "sourceName": "Scotiabank Centre",
+      "sourceKind": "official_venue_calendar",
+      "observedAt": "2026-08-28T18:31:11.010Z",
+      "reviewState": "source-observed"
+    },
+    {
+      "id": "light-house-arts-centre-33e9945fe126232f",
+      "title": "Tickets for The East Pointers in Halifax | November 20 2026 — Light House Arts Centre",
+      "startAt": "2026-11-21T01:00:00.000Z",
+      "endAt": "2026-11-21T04:59:00.000Z",
+      "allDay": false,
+      "venueName": "Light House Arts Centre",
+      "address": "1800 Argyle Street Suite 301\nHalifax, NS, B3J 3N8\nCanada",
+      "city": "Halifax",
+      "categories": [
+        "Arts"
+      ],
+      "price": null,
+      "ticketUrl": "https://www.lighthouseartscentre.ca/events/",
+      "eventUrl": "https://www.lighthouseartscentre.ca/events/the-east-pointers",
+      "sourceUrl": "https://www.lighthouseartscentre.ca/events/the-east-pointers",
+      "sourceId": "light-house-arts-centre",
+      "sourceName": "Light House Arts Centre",
+      "sourceKind": "official_venue_calendar",
+      "observedAt": "2026-08-28T18:31:11.537Z",
+      "reviewState": "source-observed"
+    },
+    {
+      "id": "https://novascotia.com/event/memory-lane-heritage-village-christmas-walk/#event",
+      "title": "Memory Lane Heritage Village Christmas Walk",
+      "startAt": "2026-11-21T16:00:00.000Z",
+      "endAt": "2026-11-21T16:00:00.000Z",
+      "allDay": false,
+      "venueName": "Memory Lane Heritage Village",
+      "address": "5435 Clam Harbour Rd, Lake Charlotte, NS, B0J 2L0, Canada, Lake Charlotte, NS, CA",
+      "city": "Lake Charlotte",
+      "categories": [
+        "Arts",
+        "Community"
+      ],
+      "price": null,
+      "ticketUrl": "https://novascotia.com/explore-nova-scotia/events/?region=29",
+      "eventUrl": "https://novascotia.com/event/memory-lane-heritage-village-christmas-walk/",
+      "sourceUrl": "https://novascotia.com/event/memory-lane-heritage-village-christmas-walk/",
+      "sourceId": "tourism-ns-events",
+      "sourceName": "Tourism Nova Scotia Events",
+      "sourceKind": "official_tourism_calendar",
+      "observedAt": "2026-08-28T18:31:02.487Z",
+      "reviewState": "source-observed",
+      "alternateSources": [
+        {
+          "sourceId": "tourism-ns-events",
+          "sourceName": "Tourism Nova Scotia Events",
+          "sourceUrl": "https://novascotia.com/event/memory-lane-heritage-village-christmas-walk/"
+        }
+      ]
+    },
+    {
+      "id": "scotiabank-centre-f695e64e519597f3",
+      "title": "Jimmy Carr",
+      "startAt": "2026-11-22T00:00:00.000Z",
+      "endAt": "2026-11-22T00:00:00.000Z",
+      "allDay": false,
+      "venueName": "Scotiabank Centre",
+      "address": "1800 Argyle Street, Halifax, NS",
+      "city": "Halifax",
+      "categories": [
+        "Comedy"
+      ],
+      "price": null,
+      "ticketUrl": "https://www.scotiabank-centre.com/premium-seating/eventcalendar",
+      "eventUrl": "https://www.scotiabank-centre.com/premium-seating/eventcalendar",
+      "sourceUrl": "https://www.scotiabank-centre.com/premium-seating/eventcalendar",
+      "sourceId": "scotiabank-centre",
+      "sourceName": "Scotiabank Centre",
+      "sourceKind": "official_venue_calendar",
+      "observedAt": "2026-08-28T18:31:11.010Z",
+      "reviewState": "source-observed"
+    },
+    {
+      "id": "light-house-arts-centre-0920184cc9dd79b9",
+      "title": "Colin Mochrie & Asad Mecci: HYPROV: Improv Under Hypnosis — Light House Arts Centre",
+      "startAt": "2026-11-27T01:00:00.000Z",
+      "endAt": "2026-11-27T04:59:00.000Z",
+      "allDay": false,
+      "venueName": "Light House Arts Centre",
+      "address": "1800 Argyle Street Suite 301\nHalifax, NS, B3J 3N8\nCanada",
+      "city": "Halifax",
+      "categories": [
+        "Arts",
+        "Comedy"
+      ],
+      "price": null,
+      "ticketUrl": "https://www.lighthouseartscentre.ca/events/",
+      "eventUrl": "https://www.lighthouseartscentre.ca/events/colin-mochrie-asad-mecci-hyprov-improv-under-hypnosis",
+      "sourceUrl": "https://www.lighthouseartscentre.ca/events/colin-mochrie-asad-mecci-hyprov-improv-under-hypnosis",
+      "sourceId": "light-house-arts-centre",
+      "sourceName": "Light House Arts Centre",
+      "sourceKind": "official_venue_calendar",
+      "observedAt": "2026-08-28T18:31:11.579Z",
+      "reviewState": "source-observed"
+    },
+    {
+      "id": "halifax-mooseheads-home-c677118fcbe06833",
+      "title": "Halifax Mooseheads vs Moncton",
+      "startAt": "2026-11-27T23:00:00.000Z",
+      "endAt": "2026-11-27T23:00:00.000Z",
+      "allDay": false,
+      "venueName": "Scotiabank Centre",
+      "address": "1800 Argyle Street, Halifax, NS",
+      "city": "Halifax",
+      "categories": [
+        "Sports"
+      ],
+      "price": null,
+      "ticketUrl": "https://www.scotiabank-centre.com/events/2026-2027-halifax-mooseheads",
+      "eventUrl": "https://www.scotiabank-centre.com/events/2026-2027-halifax-mooseheads",
+      "sourceUrl": "https://www.scotiabank-centre.com/events/2026-2027-halifax-mooseheads",
+      "sourceId": "halifax-mooseheads-home",
+      "sourceName": "Halifax Mooseheads Home Schedule",
+      "sourceKind": "official_sports_schedule",
+      "observedAt": "2026-08-28T18:31:10.971Z",
+      "reviewState": "source-observed"
+    },
+    {
+      "id": "scotiabank-centre-b65256d5b48b1e8a",
+      "title": "Halifax Mooseheads vs Moncton Wildcats",
+      "startAt": "2026-11-27T23:00:00.000Z",
+      "endAt": "2026-11-27T23:00:00.000Z",
+      "allDay": false,
+      "venueName": "Scotiabank Centre",
+      "address": "1800 Argyle Street, Halifax, NS",
+      "city": "Halifax",
+      "categories": [
+        "Sports"
+      ],
+      "price": null,
+      "ticketUrl": "https://www.scotiabank-centre.com/premium-seating/eventcalendar",
+      "eventUrl": "https://www.scotiabank-centre.com/premium-seating/eventcalendar",
+      "sourceUrl": "https://www.scotiabank-centre.com/premium-seating/eventcalendar",
+      "sourceId": "scotiabank-centre",
+      "sourceName": "Scotiabank Centre",
+      "sourceKind": "official_venue_calendar",
+      "observedAt": "2026-08-28T18:31:11.010Z",
+      "reviewState": "source-observed"
+    },
+    {
+      "id": "https://novascotia.com/event/halifax-international-wine-festival/#event",
+      "title": "Halifax International Wine Festival",
+      "startAt": "2026-11-28T14:00:00.000Z",
+      "endAt": "2026-11-28T22:00:00.000Z",
+      "allDay": false,
+      "venueName": "Halifax Convention Centre",
+      "address": "1650 Argyle Street, Halifax, NS, B3J 0E6, Canada, Halifax, NS, CA",
+      "city": "Halifax",
+      "categories": [
+        "Food & Drink",
+        "Festivals",
+        "Arts"
+      ],
+      "price": null,
+      "ticketUrl": "https://www.hfxwinefest.ca/event-details-registration/halifax-international-wine-festival-1",
+      "eventUrl": "https://novascotia.com/event/halifax-international-wine-festival/",
+      "sourceUrl": "https://novascotia.com/event/halifax-international-wine-festival/",
+      "sourceId": "tourism-ns-events",
+      "sourceName": "Tourism Nova Scotia Events",
+      "sourceKind": "official_tourism_calendar",
+      "observedAt": "2026-08-28T18:31:04.284Z",
+      "reviewState": "source-observed",
+      "alternateSources": [
+        {
+          "sourceId": "tourism-ns-events",
+          "sourceName": "Tourism Nova Scotia Events",
+          "sourceUrl": "https://novascotia.com/event/halifax-international-wine-festival/"
+        }
+      ]
+    },
+    {
+      "id": "scotiabank-centre-0c0ed01206106b42",
+      "title": "Dean Brody and The Reklaws",
+      "startAt": "2026-11-28T23:30:00.000Z",
+      "endAt": "2026-11-28T23:30:00.000Z",
+      "allDay": false,
+      "venueName": "Scotiabank Centre",
+      "address": "1800 Argyle Street, Halifax, NS",
+      "city": "Halifax",
+      "categories": [
+        "Music"
+      ],
+      "price": null,
+      "ticketUrl": "https://www.scotiabank-centre.com/premium-seating/eventcalendar",
+      "eventUrl": "https://www.scotiabank-centre.com/premium-seating/eventcalendar",
+      "sourceUrl": "https://www.scotiabank-centre.com/premium-seating/eventcalendar",
+      "sourceId": "scotiabank-centre",
+      "sourceName": "Scotiabank Centre",
+      "sourceKind": "official_venue_calendar",
+      "observedAt": "2026-08-28T18:31:11.010Z",
+      "reviewState": "source-observed"
+    },
+    {
+      "id": "halifax-mooseheads-home-b22e7d2960d85578",
+      "title": "Halifax Mooseheads vs Blainville-Boisbriand",
+      "startAt": "2026-11-29T18:00:00.000Z",
+      "endAt": "2026-11-29T18:00:00.000Z",
+      "allDay": false,
+      "venueName": "Scotiabank Centre",
+      "address": "1800 Argyle Street, Halifax, NS",
+      "city": "Halifax",
+      "categories": [
+        "Sports"
+      ],
+      "price": null,
+      "ticketUrl": "https://www.scotiabank-centre.com/events/2026-2027-halifax-mooseheads",
+      "eventUrl": "https://www.scotiabank-centre.com/events/2026-2027-halifax-mooseheads",
+      "sourceUrl": "https://www.scotiabank-centre.com/events/2026-2027-halifax-mooseheads",
+      "sourceId": "halifax-mooseheads-home",
+      "sourceName": "Halifax Mooseheads Home Schedule",
+      "sourceKind": "official_sports_schedule",
+      "observedAt": "2026-08-28T18:31:10.971Z",
+      "reviewState": "source-observed"
+    },
+    {
+      "id": "scotiabank-centre-0342c403f89d593c",
+      "title": "Halifax Mooseheads vs Blainville-Boisbriand Armada",
+      "startAt": "2026-11-29T18:00:00.000Z",
+      "endAt": "2026-11-29T18:00:00.000Z",
+      "allDay": false,
+      "venueName": "Scotiabank Centre",
+      "address": "1800 Argyle Street, Halifax, NS",
+      "city": "Halifax",
+      "categories": [
+        "Sports"
+      ],
+      "price": null,
+      "ticketUrl": "https://www.scotiabank-centre.com/premium-seating/eventcalendar",
+      "eventUrl": "https://www.scotiabank-centre.com/premium-seating/eventcalendar",
+      "sourceUrl": "https://www.scotiabank-centre.com/premium-seating/eventcalendar",
+      "sourceId": "scotiabank-centre",
+      "sourceName": "Scotiabank Centre",
+      "sourceKind": "official_venue_calendar",
+      "observedAt": "2026-08-28T18:31:11.010Z",
+      "reviewState": "source-observed"
+    },
+    {
+      "id": "scotiabank-centre-637283ec2f78bc3b",
+      "title": "The Price Is Right Live",
+      "startAt": "2026-12-06T00:00:00.000Z",
+      "endAt": "2026-12-06T00:00:00.000Z",
+      "allDay": false,
+      "venueName": "Scotiabank Centre",
+      "address": "1800 Argyle Street, Halifax, NS",
+      "city": "Halifax",
+      "categories": [
+        "Arts",
+        "Community"
+      ],
+      "price": null,
+      "ticketUrl": "https://www.scotiabank-centre.com/premium-seating/eventcalendar",
+      "eventUrl": "https://www.scotiabank-centre.com/premium-seating/eventcalendar",
+      "sourceUrl": "https://www.scotiabank-centre.com/premium-seating/eventcalendar",
+      "sourceId": "scotiabank-centre",
+      "sourceName": "Scotiabank Centre",
+      "sourceKind": "official_venue_calendar",
+      "observedAt": "2026-08-28T18:31:11.010Z",
+      "reviewState": "source-observed"
+    },
+    {
+      "id": "halifax-mooseheads-home-1d07144605afd61a",
+      "title": "Halifax Mooseheads vs Gatineau",
+      "startAt": "2026-12-06T19:00:00.000Z",
+      "endAt": "2026-12-06T19:00:00.000Z",
+      "allDay": false,
+      "venueName": "Scotiabank Centre",
+      "address": "1800 Argyle Street, Halifax, NS",
+      "city": "Halifax",
+      "categories": [
+        "Sports"
+      ],
+      "price": null,
+      "ticketUrl": "https://www.scotiabank-centre.com/events/2026-2027-halifax-mooseheads",
+      "eventUrl": "https://www.scotiabank-centre.com/events/2026-2027-halifax-mooseheads",
+      "sourceUrl": "https://www.scotiabank-centre.com/events/2026-2027-halifax-mooseheads",
+      "sourceId": "halifax-mooseheads-home",
+      "sourceName": "Halifax Mooseheads Home Schedule",
+      "sourceKind": "official_sports_schedule",
+      "observedAt": "2026-08-28T18:31:10.971Z",
+      "reviewState": "source-observed"
+    },
+    {
+      "id": "scotiabank-centre-601d54cd62df4b9e",
+      "title": "Halifax Mooseheads vs Gatineau Olympiques",
+      "startAt": "2026-12-06T19:00:00.000Z",
+      "endAt": "2026-12-06T19:00:00.000Z",
+      "allDay": false,
+      "venueName": "Scotiabank Centre",
+      "address": "1800 Argyle Street, Halifax, NS",
+      "city": "Halifax",
+      "categories": [
+        "Sports"
+      ],
+      "price": null,
+      "ticketUrl": "https://www.scotiabank-centre.com/premium-seating/eventcalendar",
+      "eventUrl": "https://www.scotiabank-centre.com/premium-seating/eventcalendar",
+      "sourceUrl": "https://www.scotiabank-centre.com/premium-seating/eventcalendar",
+      "sourceId": "scotiabank-centre",
+      "sourceName": "Scotiabank Centre",
+      "sourceKind": "official_venue_calendar",
+      "observedAt": "2026-08-28T18:31:11.010Z",
+      "reviewState": "source-observed"
+    },
+    {
+      "id": "light-house-arts-centre-b99b2dbd32dc6778",
+      "title": "Official Tickets for Lennie Gallant | Christmas Show in Halifax — Light House Arts Centre",
+      "startAt": "2026-12-10T01:00:00.000Z",
+      "endAt": "2026-12-10T04:59:00.000Z",
+      "allDay": false,
+      "venueName": "Light House Arts Centre",
+      "address": "1800 Argyle Street Suite 301\nHalifax, NS, B3J 3N8\nCanada",
+      "city": "Halifax",
+      "categories": [
+        "Arts"
+      ],
+      "price": null,
+      "ticketUrl": "https://www.lighthouseartscentre.ca/events/",
+      "eventUrl": "https://www.lighthouseartscentre.ca/events/lennie-gallant-christmas",
+      "sourceUrl": "https://www.lighthouseartscentre.ca/events/lennie-gallant-christmas",
+      "sourceId": "light-house-arts-centre",
+      "sourceName": "Light House Arts Centre",
+      "sourceKind": "official_venue_calendar",
+      "observedAt": "2026-08-28T18:31:11.579Z",
+      "reviewState": "source-observed"
+    },
+    {
+      "id": "scotiabank-centre-ac0c621415f6cbd1",
+      "title": "Amanda Marshall",
+      "startAt": "2026-12-11T23:30:00.000Z",
+      "endAt": "2026-12-11T23:30:00.000Z",
+      "allDay": false,
+      "venueName": "Scotiabank Centre",
+      "address": "1800 Argyle Street, Halifax, NS",
+      "city": "Halifax",
+      "categories": [
+        "Music"
+      ],
+      "price": null,
+      "ticketUrl": "https://www.scotiabank-centre.com/premium-seating/eventcalendar",
+      "eventUrl": "https://www.scotiabank-centre.com/premium-seating/eventcalendar",
+      "sourceUrl": "https://www.scotiabank-centre.com/premium-seating/eventcalendar",
+      "sourceId": "scotiabank-centre",
+      "sourceName": "Scotiabank Centre",
+      "sourceKind": "official_venue_calendar",
+      "observedAt": "2026-08-28T18:31:11.010Z",
+      "reviewState": "source-observed"
+    },
+    {
+      "id": "halifax-mooseheads-home-e940213ac465fffe",
+      "title": "Halifax Mooseheads vs Newfoundland",
+      "startAt": "2026-12-12T23:00:00.000Z",
+      "endAt": "2026-12-12T23:00:00.000Z",
+      "allDay": false,
+      "venueName": "Scotiabank Centre",
+      "address": "1800 Argyle Street, Halifax, NS",
+      "city": "Halifax",
+      "categories": [
+        "Sports"
+      ],
+      "price": null,
+      "ticketUrl": "https://www.scotiabank-centre.com/events/2026-2027-halifax-mooseheads",
+      "eventUrl": "https://www.scotiabank-centre.com/events/2026-2027-halifax-mooseheads",
+      "sourceUrl": "https://www.scotiabank-centre.com/events/2026-2027-halifax-mooseheads",
+      "sourceId": "halifax-mooseheads-home",
+      "sourceName": "Halifax Mooseheads Home Schedule",
+      "sourceKind": "official_sports_schedule",
+      "observedAt": "2026-08-28T18:31:10.971Z",
+      "reviewState": "source-observed"
+    },
+    {
+      "id": "scotiabank-centre-0c1a1e33ba23dd60",
+      "title": "Halifax Mooseheads vs Newfoundland Regiment",
+      "startAt": "2026-12-12T23:00:00.000Z",
+      "endAt": "2026-12-12T23:00:00.000Z",
+      "allDay": false,
+      "venueName": "Scotiabank Centre",
+      "address": "1800 Argyle Street, Halifax, NS",
+      "city": "Halifax",
+      "categories": [
+        "Sports"
+      ],
+      "price": null,
+      "ticketUrl": "https://www.scotiabank-centre.com/premium-seating/eventcalendar",
+      "eventUrl": "https://www.scotiabank-centre.com/premium-seating/eventcalendar",
+      "sourceUrl": "https://www.scotiabank-centre.com/premium-seating/eventcalendar",
+      "sourceId": "scotiabank-centre",
+      "sourceName": "Scotiabank Centre",
+      "sourceKind": "official_venue_calendar",
+      "observedAt": "2026-08-28T18:31:11.010Z",
+      "reviewState": "source-observed"
+    },
+    {
+      "id": "halifax-mooseheads-home-10bc587ce84dcc87",
+      "title": "Halifax Mooseheads vs Saint John",
+      "startAt": "2026-12-13T18:00:00.000Z",
+      "endAt": "2026-12-13T18:00:00.000Z",
+      "allDay": false,
+      "venueName": "Scotiabank Centre",
+      "address": "1800 Argyle Street, Halifax, NS",
+      "city": "Halifax",
+      "categories": [
+        "Sports"
+      ],
+      "price": null,
+      "ticketUrl": "https://www.scotiabank-centre.com/events/2026-2027-halifax-mooseheads",
+      "eventUrl": "https://www.scotiabank-centre.com/events/2026-2027-halifax-mooseheads",
+      "sourceUrl": "https://www.scotiabank-centre.com/events/2026-2027-halifax-mooseheads",
+      "sourceId": "halifax-mooseheads-home",
+      "sourceName": "Halifax Mooseheads Home Schedule",
+      "sourceKind": "official_sports_schedule",
+      "observedAt": "2026-08-28T18:31:10.971Z",
+      "reviewState": "source-observed"
+    },
+    {
+      "id": "scotiabank-centre-12dc1b0fb5db979e",
+      "title": "Halifax Mooseheads vs Saint John Sea Dogs",
+      "startAt": "2026-12-13T18:00:00.000Z",
+      "endAt": "2026-12-13T18:00:00.000Z",
+      "allDay": false,
+      "venueName": "Scotiabank Centre",
+      "address": "1800 Argyle Street, Halifax, NS",
+      "city": "Halifax",
+      "categories": [
+        "Sports"
+      ],
+      "price": null,
+      "ticketUrl": "https://www.scotiabank-centre.com/premium-seating/eventcalendar",
+      "eventUrl": "https://www.scotiabank-centre.com/premium-seating/eventcalendar",
+      "sourceUrl": "https://www.scotiabank-centre.com/premium-seating/eventcalendar",
+      "sourceId": "scotiabank-centre",
+      "sourceName": "Scotiabank Centre",
+      "sourceKind": "official_venue_calendar",
+      "observedAt": "2026-08-28T18:31:11.010Z",
+      "reviewState": "source-observed"
+    },
+    {
+      "id": "light-house-arts-centre-d3eee6b768217d49",
+      "title": "Official Tickets | Matt Dusk A Very Special Christmas | Halifax — Light House Arts Centre",
+      "startAt": "2026-12-17T00:30:00.000Z",
+      "endAt": "2026-12-17T04:59:00.000Z",
+      "allDay": false,
+      "venueName": "Light House Arts Centre",
+      "address": "1800 Argyle Street Suite 301\nHalifax, NS, B3J 3N8\nCanada",
+      "city": "Halifax",
+      "categories": [
+        "Arts"
+      ],
+      "price": null,
+      "ticketUrl": "https://www.lighthouseartscentre.ca/events/",
+      "eventUrl": "https://www.lighthouseartscentre.ca/events/matt-dusk-a-very-sinatra-christmas",
+      "sourceUrl": "https://www.lighthouseartscentre.ca/events/matt-dusk-a-very-sinatra-christmas",
+      "sourceId": "light-house-arts-centre",
+      "sourceName": "Light House Arts Centre",
+      "sourceKind": "official_venue_calendar",
+      "observedAt": "2026-08-28T18:31:11.581Z",
+      "reviewState": "source-observed"
+    },
+    {
+      "id": "halifax-mooseheads-home-fed236e812ce687d",
+      "title": "Halifax Mooseheads vs Newfoundland",
+      "startAt": "2026-12-18T23:00:00.000Z",
+      "endAt": "2026-12-18T23:00:00.000Z",
+      "allDay": false,
+      "venueName": "Scotiabank Centre",
+      "address": "1800 Argyle Street, Halifax, NS",
+      "city": "Halifax",
+      "categories": [
+        "Sports"
+      ],
+      "price": null,
+      "ticketUrl": "https://www.scotiabank-centre.com/events/2026-2027-halifax-mooseheads",
+      "eventUrl": "https://www.scotiabank-centre.com/events/2026-2027-halifax-mooseheads",
+      "sourceUrl": "https://www.scotiabank-centre.com/events/2026-2027-halifax-mooseheads",
+      "sourceId": "halifax-mooseheads-home",
+      "sourceName": "Halifax Mooseheads Home Schedule",
+      "sourceKind": "official_sports_schedule",
+      "observedAt": "2026-08-28T18:31:10.971Z",
+      "reviewState": "source-observed"
+    },
+    {
+      "id": "scotiabank-centre-5cd25f2f6fabf656",
+      "title": "Halifax Mooseheads vs Newfoundland Regiment",
+      "startAt": "2026-12-18T23:00:00.000Z",
+      "endAt": "2026-12-18T23:00:00.000Z",
+      "allDay": false,
+      "venueName": "Scotiabank Centre",
+      "address": "1800 Argyle Street, Halifax, NS",
+      "city": "Halifax",
+      "categories": [
+        "Sports"
+      ],
+      "price": null,
+      "ticketUrl": "https://www.scotiabank-centre.com/premium-seating/eventcalendar",
+      "eventUrl": "https://www.scotiabank-centre.com/premium-seating/eventcalendar",
+      "sourceUrl": "https://www.scotiabank-centre.com/premium-seating/eventcalendar",
+      "sourceId": "scotiabank-centre",
+      "sourceName": "Scotiabank Centre",
+      "sourceKind": "official_venue_calendar",
+      "observedAt": "2026-08-28T18:31:11.010Z",
+      "reviewState": "source-observed"
+    },
+    {
+      "id": "light-house-arts-centre-ca84b7dd6bf5f015",
+      "title": "COUNTRY BOYS | Tribute to Alan Jackson, Garth Brooks, Brad Paisley & George Strait | CHRISTMAS SHOW — Light House Arts Centre",
+      "startAt": "2026-12-20T19:00:00.000Z",
+      "endAt": "2026-12-21T04:59:00.000Z",
+      "allDay": false,
+      "venueName": "Light House Arts Centre",
+      "address": "1800 Argyle Street Suite 301\nHalifax, NS, B3J 3N8\nCanada",
+      "city": "Halifax",
+      "categories": [
+        "Music",
+        "Arts"
+      ],
+      "price": null,
+      "ticketUrl": "https://www.lighthouseartscentre.ca/events/",
+      "eventUrl": "https://www.lighthouseartscentre.ca/events/country-boys-a-tribute-to-alan-jackson-garth-brooks-brad-paisley-george-strait-christmas-edition",
+      "sourceUrl": "https://www.lighthouseartscentre.ca/events/country-boys-a-tribute-to-alan-jackson-garth-brooks-brad-paisley-george-strait-christmas-edition",
+      "sourceId": "light-house-arts-centre",
+      "sourceName": "Light House Arts Centre",
+      "sourceKind": "official_venue_calendar",
+      "observedAt": "2026-08-28T18:31:11.577Z",
+      "reviewState": "source-observed"
+    },
+    {
+      "id": "scotiabank-centre-1f594f3972fc5eef",
+      "title": "Disney On Ice: Magic of Family",
+      "startAt": "2026-12-24T18:00:00.000Z",
+      "endAt": "2026-12-24T18:00:00.000Z",
+      "allDay": false,
+      "venueName": "Scotiabank Centre",
+      "address": "1800 Argyle Street, Halifax, NS",
+      "city": "Halifax",
+      "categories": [
+        "Arts",
+        "Community"
+      ],
+      "price": null,
+      "ticketUrl": "https://www.scotiabank-centre.com/premium-seating/eventcalendar",
+      "eventUrl": "https://www.scotiabank-centre.com/premium-seating/eventcalendar",
+      "sourceUrl": "https://www.scotiabank-centre.com/premium-seating/eventcalendar",
+      "sourceId": "scotiabank-centre",
+      "sourceName": "Scotiabank Centre",
+      "sourceKind": "official_venue_calendar",
+      "observedAt": "2026-08-28T18:31:11.010Z",
+      "reviewState": "source-observed"
+    },
+    {
+      "id": "scotiabank-centre-ab7b08db55337279",
+      "title": "Disney On Ice: Magic of Family",
+      "startAt": "2026-12-26T15:00:00.000Z",
+      "endAt": "2026-12-26T15:00:00.000Z",
+      "allDay": false,
+      "venueName": "Scotiabank Centre",
+      "address": "1800 Argyle Street, Halifax, NS",
+      "city": "Halifax",
+      "categories": [
+        "Arts",
+        "Community"
+      ],
+      "price": null,
+      "ticketUrl": "https://www.scotiabank-centre.com/premium-seating/eventcalendar",
+      "eventUrl": "https://www.scotiabank-centre.com/premium-seating/eventcalendar",
+      "sourceUrl": "https://www.scotiabank-centre.com/premium-seating/eventcalendar",
+      "sourceId": "scotiabank-centre",
+      "sourceName": "Scotiabank Centre",
+      "sourceKind": "official_venue_calendar",
+      "observedAt": "2026-08-28T18:31:11.010Z",
+      "reviewState": "source-observed",
+      "alternateSources": [
+        {
+          "sourceId": "scotiabank-centre",
+          "sourceName": "Scotiabank Centre",
+          "sourceUrl": "https://www.scotiabank-centre.com/premium-seating/eventcalendar"
+        }
+      ]
+    },
+    {
+      "id": "scotiabank-centre-15e26a90e4a9a61f",
+      "title": "Disney On Ice: Magic of Family",
+      "startAt": "2026-12-27T15:00:00.000Z",
+      "endAt": "2026-12-27T15:00:00.000Z",
+      "allDay": false,
+      "venueName": "Scotiabank Centre",
+      "address": "1800 Argyle Street, Halifax, NS",
+      "city": "Halifax",
+      "categories": [
+        "Arts",
+        "Community"
+      ],
+      "price": null,
+      "ticketUrl": "https://www.scotiabank-centre.com/premium-seating/eventcalendar",
+      "eventUrl": "https://www.scotiabank-centre.com/premium-seating/eventcalendar",
+      "sourceUrl": "https://www.scotiabank-centre.com/premium-seating/eventcalendar",
+      "sourceId": "scotiabank-centre",
+      "sourceName": "Scotiabank Centre",
+      "sourceKind": "official_venue_calendar",
+      "observedAt": "2026-08-28T18:31:11.010Z",
+      "reviewState": "source-observed",
+      "alternateSources": [
+        {
+          "sourceId": "scotiabank-centre",
+          "sourceName": "Scotiabank Centre",
+          "sourceUrl": "https://www.scotiabank-centre.com/premium-seating/eventcalendar"
+        }
+      ]
+    },
+    {
+      "id": "halifax-mooseheads-home-2e1f71f0c22c76f8",
+      "title": "Halifax Mooseheads vs Cape Breton",
+      "startAt": "2026-12-31T18:00:00.000Z",
+      "endAt": "2026-12-31T18:00:00.000Z",
+      "allDay": false,
+      "venueName": "Scotiabank Centre",
+      "address": "1800 Argyle Street, Halifax, NS",
+      "city": "Halifax",
+      "categories": [
+        "Sports"
+      ],
+      "price": null,
+      "ticketUrl": "https://www.scotiabank-centre.com/events/2026-2027-halifax-mooseheads",
+      "eventUrl": "https://www.scotiabank-centre.com/events/2026-2027-halifax-mooseheads",
+      "sourceUrl": "https://www.scotiabank-centre.com/events/2026-2027-halifax-mooseheads",
+      "sourceId": "halifax-mooseheads-home",
+      "sourceName": "Halifax Mooseheads Home Schedule",
+      "sourceKind": "official_sports_schedule",
+      "observedAt": "2026-08-28T18:31:10.971Z",
+      "reviewState": "source-observed"
+    },
+    {
+      "id": "scotiabank-centre-490e852f4c41382d",
+      "title": "Halifax Mooseheads vs Cape Breton Eagles",
+      "startAt": "2026-12-31T18:00:00.000Z",
+      "endAt": "2026-12-31T18:00:00.000Z",
+      "allDay": false,
+      "venueName": "Scotiabank Centre",
+      "address": "1800 Argyle Street, Halifax, NS",
+      "city": "Halifax",
+      "categories": [
+        "Sports"
+      ],
+      "price": null,
+      "ticketUrl": "https://www.scotiabank-centre.com/premium-seating/eventcalendar",
+      "eventUrl": "https://www.scotiabank-centre.com/premium-seating/eventcalendar",
+      "sourceUrl": "https://www.scotiabank-centre.com/premium-seating/eventcalendar",
+      "sourceId": "scotiabank-centre",
+      "sourceName": "Scotiabank Centre",
+      "sourceKind": "official_venue_calendar",
+      "observedAt": "2026-08-28T18:31:11.010Z",
+      "reviewState": "source-observed"
+    },
+    {
+      "id": "halifax-mooseheads-home-bc37448b281102d5",
+      "title": "Halifax Mooseheads vs Newfoundland",
+      "startAt": "2027-01-03T18:00:00.000Z",
+      "endAt": "2027-01-03T18:00:00.000Z",
+      "allDay": false,
+      "venueName": "Scotiabank Centre",
+      "address": "1800 Argyle Street, Halifax, NS",
+      "city": "Halifax",
+      "categories": [
+        "Sports"
+      ],
+      "price": null,
+      "ticketUrl": "https://www.scotiabank-centre.com/events/2026-2027-halifax-mooseheads",
+      "eventUrl": "https://www.scotiabank-centre.com/events/2026-2027-halifax-mooseheads",
+      "sourceUrl": "https://www.scotiabank-centre.com/events/2026-2027-halifax-mooseheads",
+      "sourceId": "halifax-mooseheads-home",
+      "sourceName": "Halifax Mooseheads Home Schedule",
+      "sourceKind": "official_sports_schedule",
+      "observedAt": "2026-08-28T18:31:10.971Z",
+      "reviewState": "source-observed"
+    },
+    {
+      "id": "halifax-mooseheads-home-c2bc145d9b94d479",
+      "title": "Halifax Mooseheads vs Baie-Comeau",
+      "startAt": "2027-01-07T23:00:00.000Z",
+      "endAt": "2027-01-07T23:00:00.000Z",
+      "allDay": false,
+      "venueName": "Scotiabank Centre",
+      "address": "1800 Argyle Street, Halifax, NS",
+      "city": "Halifax",
+      "categories": [
+        "Sports"
+      ],
+      "price": null,
+      "ticketUrl": "https://www.scotiabank-centre.com/events/2026-2027-halifax-mooseheads",
+      "eventUrl": "https://www.scotiabank-centre.com/events/2026-2027-halifax-mooseheads",
+      "sourceUrl": "https://www.scotiabank-centre.com/events/2026-2027-halifax-mooseheads",
+      "sourceId": "halifax-mooseheads-home",
+      "sourceName": "Halifax Mooseheads Home Schedule",
+      "sourceKind": "official_sports_schedule",
+      "observedAt": "2026-08-28T18:31:10.971Z",
+      "reviewState": "source-observed"
+    },
+    {
+      "id": "light-house-arts-centre-0ec9c156a5ca1dee",
+      "title": "A Saucerful of Floyd | Pink Floyd Tribute in Halifax | Tickets — Light House Arts Centre",
+      "startAt": "2027-01-09T01:00:00.000Z",
+      "endAt": "2027-01-10T04:59:00.000Z",
+      "allDay": false,
+      "venueName": "Light House Arts Centre",
+      "address": "1800 Argyle Street Suite 301\nHalifax, NS, B3J 3N8\nCanada",
+      "city": "Halifax",
+      "categories": [
+        "Arts"
+      ],
+      "price": null,
+      "ticketUrl": "https://www.lighthouseartscentre.ca/events/",
+      "eventUrl": "https://www.lighthouseartscentre.ca/events/a-saucerful-of-floyd-2-nights-of-the-best-of-pink-floyd",
+      "sourceUrl": "https://www.lighthouseartscentre.ca/events/a-saucerful-of-floyd-2-nights-of-the-best-of-pink-floyd",
+      "sourceId": "light-house-arts-centre",
+      "sourceName": "Light House Arts Centre",
+      "sourceKind": "official_venue_calendar",
+      "observedAt": "2026-08-28T18:31:11.578Z",
+      "reviewState": "source-observed"
+    },
+    {
+      "id": "halifax-mooseheads-home-86932f7dde0bb1d4",
+      "title": "Halifax Mooseheads vs Charlottetown",
+      "startAt": "2027-01-10T18:00:00.000Z",
+      "endAt": "2027-01-10T18:00:00.000Z",
+      "allDay": false,
+      "venueName": "Scotiabank Centre",
+      "address": "1800 Argyle Street, Halifax, NS",
+      "city": "Halifax",
+      "categories": [
+        "Sports"
+      ],
+      "price": null,
+      "ticketUrl": "https://www.scotiabank-centre.com/events/2026-2027-halifax-mooseheads",
+      "eventUrl": "https://www.scotiabank-centre.com/events/2026-2027-halifax-mooseheads",
+      "sourceUrl": "https://www.scotiabank-centre.com/events/2026-2027-halifax-mooseheads",
+      "sourceId": "halifax-mooseheads-home",
+      "sourceName": "Halifax Mooseheads Home Schedule",
+      "sourceKind": "official_sports_schedule",
+      "observedAt": "2026-08-28T18:31:10.971Z",
+      "reviewState": "source-observed"
+    },
+    {
+      "id": "halifax-mooseheads-home-c399b8ce558af317",
+      "title": "Halifax Mooseheads vs Charlottetown",
+      "startAt": "2027-01-20T23:00:00.000Z",
+      "endAt": "2027-01-20T23:00:00.000Z",
+      "allDay": false,
+      "venueName": "Scotiabank Centre",
+      "address": "1800 Argyle Street, Halifax, NS",
+      "city": "Halifax",
+      "categories": [
+        "Sports"
+      ],
+      "price": null,
+      "ticketUrl": "https://www.scotiabank-centre.com/events/2026-2027-halifax-mooseheads",
+      "eventUrl": "https://www.scotiabank-centre.com/events/2026-2027-halifax-mooseheads",
+      "sourceUrl": "https://www.scotiabank-centre.com/events/2026-2027-halifax-mooseheads",
+      "sourceId": "halifax-mooseheads-home",
+      "sourceName": "Halifax Mooseheads Home Schedule",
+      "sourceKind": "official_sports_schedule",
+      "observedAt": "2026-08-28T18:31:10.971Z",
+      "reviewState": "source-observed"
+    },
+    {
+      "id": "halifax-mooseheads-home-746bb63030ecec64",
+      "title": "Halifax Mooseheads vs Saint John",
+      "startAt": "2027-01-23T23:00:00.000Z",
+      "endAt": "2027-01-23T23:00:00.000Z",
+      "allDay": false,
+      "venueName": "Scotiabank Centre",
+      "address": "1800 Argyle Street, Halifax, NS",
+      "city": "Halifax",
+      "categories": [
+        "Sports"
+      ],
+      "price": null,
+      "ticketUrl": "https://www.scotiabank-centre.com/events/2026-2027-halifax-mooseheads",
+      "eventUrl": "https://www.scotiabank-centre.com/events/2026-2027-halifax-mooseheads",
+      "sourceUrl": "https://www.scotiabank-centre.com/events/2026-2027-halifax-mooseheads",
+      "sourceId": "halifax-mooseheads-home",
+      "sourceName": "Halifax Mooseheads Home Schedule",
+      "sourceKind": "official_sports_schedule",
+      "observedAt": "2026-08-28T18:31:10.971Z",
+      "reviewState": "source-observed"
+    },
+    {
+      "id": "halifax-mooseheads-home-710b7ca4a4465b9e",
+      "title": "Halifax Mooseheads vs Chicoutimi",
+      "startAt": "2027-01-27T23:00:00.000Z",
+      "endAt": "2027-01-27T23:00:00.000Z",
+      "allDay": false,
+      "venueName": "Scotiabank Centre",
+      "address": "1800 Argyle Street, Halifax, NS",
+      "city": "Halifax",
+      "categories": [
+        "Sports"
+      ],
+      "price": null,
+      "ticketUrl": "https://www.scotiabank-centre.com/events/2026-2027-halifax-mooseheads",
+      "eventUrl": "https://www.scotiabank-centre.com/events/2026-2027-halifax-mooseheads",
+      "sourceUrl": "https://www.scotiabank-centre.com/events/2026-2027-halifax-mooseheads",
+      "sourceId": "halifax-mooseheads-home",
+      "sourceName": "Halifax Mooseheads Home Schedule",
+      "sourceKind": "official_sports_schedule",
+      "observedAt": "2026-08-28T18:31:10.971Z",
+      "reviewState": "source-observed"
+    },
+    {
+      "id": "halifax-mooseheads-home-5e0dc918881f01b6",
+      "title": "Halifax Mooseheads vs Rimouski",
+      "startAt": "2027-02-04T23:00:00.000Z",
+      "endAt": "2027-02-04T23:00:00.000Z",
+      "allDay": false,
+      "venueName": "Scotiabank Centre",
+      "address": "1800 Argyle Street, Halifax, NS",
+      "city": "Halifax",
+      "categories": [
+        "Sports"
+      ],
+      "price": null,
+      "ticketUrl": "https://www.scotiabank-centre.com/events/2026-2027-halifax-mooseheads",
+      "eventUrl": "https://www.scotiabank-centre.com/events/2026-2027-halifax-mooseheads",
+      "sourceUrl": "https://www.scotiabank-centre.com/events/2026-2027-halifax-mooseheads",
+      "sourceId": "halifax-mooseheads-home",
+      "sourceName": "Halifax Mooseheads Home Schedule",
+      "sourceKind": "official_sports_schedule",
+      "observedAt": "2026-08-28T18:31:10.971Z",
+      "reviewState": "source-observed"
+    },
+    {
+      "id": "light-house-arts-centre-2db799520b52b84e",
+      "title": "Official Tickets | Hells Bells AC/DC Tribute | February 5 2027 | Halifax — Light House Arts Centre",
+      "startAt": "2027-02-06T00:30:00.000Z",
+      "endAt": "2027-02-06T04:59:00.000Z",
+      "allDay": false,
+      "venueName": "Light House Arts Centre",
+      "address": "1800 Argyle Street Suite 301\nHalifax, NS, B3J 3N8\nCanada",
+      "city": "Halifax",
+      "categories": [
+        "Arts"
+      ],
+      "price": null,
+      "ticketUrl": "https://www.lighthouseartscentre.ca/events/",
+      "eventUrl": "https://www.lighthouseartscentre.ca/events/hells-bells-the-worlds-longest-touring-tribute-to-acdc",
+      "sourceUrl": "https://www.lighthouseartscentre.ca/events/hells-bells-the-worlds-longest-touring-tribute-to-acdc",
+      "sourceId": "light-house-arts-centre",
+      "sourceName": "Light House Arts Centre",
+      "sourceKind": "official_venue_calendar",
+      "observedAt": "2026-08-28T18:31:11.623Z",
+      "reviewState": "source-observed"
+    },
+    {
+      "id": "halifax-mooseheads-home-c265053b331d39e8",
+      "title": "Halifax Mooseheads vs Charlottetown",
+      "startAt": "2027-02-06T20:00:00.000Z",
+      "endAt": "2027-02-06T20:00:00.000Z",
+      "allDay": false,
+      "venueName": "Scotiabank Centre",
+      "address": "1800 Argyle Street, Halifax, NS",
+      "city": "Halifax",
+      "categories": [
+        "Sports"
+      ],
+      "price": null,
+      "ticketUrl": "https://www.scotiabank-centre.com/events/2026-2027-halifax-mooseheads",
+      "eventUrl": "https://www.scotiabank-centre.com/events/2026-2027-halifax-mooseheads",
+      "sourceUrl": "https://www.scotiabank-centre.com/events/2026-2027-halifax-mooseheads",
+      "sourceId": "halifax-mooseheads-home",
+      "sourceName": "Halifax Mooseheads Home Schedule",
+      "sourceKind": "official_sports_schedule",
+      "observedAt": "2026-08-28T18:31:10.971Z",
+      "reviewState": "source-observed"
+    },
+    {
+      "id": "scotiabank-centre-22fc2c574fd24d6b",
+      "title": "Hilary Duff",
+      "startAt": "2027-02-07T23:30:00.000Z",
+      "endAt": "2027-02-07T23:30:00.000Z",
+      "allDay": false,
+      "venueName": "Scotiabank Centre",
+      "address": "1800 Argyle Street, Halifax, NS",
+      "city": "Halifax",
+      "categories": [
+        "Music"
+      ],
+      "price": null,
+      "ticketUrl": "https://www.scotiabank-centre.com/premium-seating/eventcalendar",
+      "eventUrl": "https://www.scotiabank-centre.com/premium-seating/eventcalendar",
+      "sourceUrl": "https://www.scotiabank-centre.com/premium-seating/eventcalendar",
+      "sourceId": "scotiabank-centre",
+      "sourceName": "Scotiabank Centre",
+      "sourceKind": "official_venue_calendar",
+      "observedAt": "2026-08-28T18:31:11.010Z",
+      "reviewState": "source-observed"
+    },
+    {
+      "id": "halifax-mooseheads-home-2957947ea3d5600e",
+      "title": "Halifax Mooseheads vs Cape Breton",
+      "startAt": "2027-02-13T23:00:00.000Z",
+      "endAt": "2027-02-13T23:00:00.000Z",
+      "allDay": false,
+      "venueName": "Scotiabank Centre",
+      "address": "1800 Argyle Street, Halifax, NS",
+      "city": "Halifax",
+      "categories": [
+        "Sports"
+      ],
+      "price": null,
+      "ticketUrl": "https://www.scotiabank-centre.com/events/2026-2027-halifax-mooseheads",
+      "eventUrl": "https://www.scotiabank-centre.com/events/2026-2027-halifax-mooseheads",
+      "sourceUrl": "https://www.scotiabank-centre.com/events/2026-2027-halifax-mooseheads",
+      "sourceId": "halifax-mooseheads-home",
+      "sourceName": "Halifax Mooseheads Home Schedule",
+      "sourceKind": "official_sports_schedule",
+      "observedAt": "2026-08-28T18:31:10.971Z",
+      "reviewState": "source-observed"
+    },
+    {
+      "id": "halifax-mooseheads-home-272919a6da116f6d",
+      "title": "Halifax Mooseheads vs Moncton",
+      "startAt": "2027-02-15T18:00:00.000Z",
+      "endAt": "2027-02-15T18:00:00.000Z",
+      "allDay": false,
+      "venueName": "Scotiabank Centre",
+      "address": "1800 Argyle Street, Halifax, NS",
+      "city": "Halifax",
+      "categories": [
+        "Sports"
+      ],
+      "price": null,
+      "ticketUrl": "https://www.scotiabank-centre.com/events/2026-2027-halifax-mooseheads",
+      "eventUrl": "https://www.scotiabank-centre.com/events/2026-2027-halifax-mooseheads",
+      "sourceUrl": "https://www.scotiabank-centre.com/events/2026-2027-halifax-mooseheads",
+      "sourceId": "halifax-mooseheads-home",
+      "sourceName": "Halifax Mooseheads Home Schedule",
+      "sourceKind": "official_sports_schedule",
+      "observedAt": "2026-08-28T18:31:10.971Z",
+      "reviewState": "source-observed"
+    },
+    {
+      "id": "neptune-theatre-0234f7976c2b6015",
+      "title": "Urinetown The Musical",
+      "startAt": "2027-02-16T16:00:00.000Z",
+      "endAt": "2027-02-28T16:00:00.000Z",
+      "allDay": true,
+      "venueName": "Scotiabank Studio Stage",
+      "address": "1593 Argyle Street, Halifax, NS",
+      "city": "Halifax",
+      "categories": [
+        "Arts",
+        "Music"
+      ],
+      "price": null,
+      "ticketUrl": "https://www.neptunetheatre.com/visit/ticket-packages",
+      "eventUrl": "https://www.neptunetheatre.com/visit/ticket-packages",
+      "sourceUrl": "https://www.neptunetheatre.com/visit/ticket-packages",
+      "sourceId": "neptune-theatre",
+      "sourceName": "Neptune Theatre",
+      "sourceKind": "official_venue_calendar",
+      "observedAt": "2026-08-28T18:31:13.259Z",
+      "reviewState": "source-observed"
+    },
+    {
+      "id": "light-house-arts-centre-8e9ebe28a219ee96",
+      "title": "Piano Men - Billy Joel and Elton John Tribute | Live in Halifax | Tickets — Light House Arts Centre",
+      "startAt": "2027-02-20T00:30:00.000Z",
+      "endAt": "2027-02-20T04:59:00.000Z",
+      "allDay": false,
+      "venueName": "Light House Arts Centre",
+      "address": "1800 Argyle Street Suite 301\nHalifax, NS, B3J 3N8\nCanada",
+      "city": "Halifax",
+      "categories": [
+        "Arts"
+      ],
+      "price": null,
+      "ticketUrl": "https://www.lighthouseartscentre.ca/events/",
+      "eventUrl": "https://www.lighthouseartscentre.ca/events/piano-men-billy-joel-and-elton-john-tribute",
+      "sourceUrl": "https://www.lighthouseartscentre.ca/events/piano-men-billy-joel-and-elton-john-tribute",
+      "sourceId": "light-house-arts-centre",
+      "sourceName": "Light House Arts Centre",
+      "sourceKind": "official_venue_calendar",
+      "observedAt": "2026-08-28T18:31:11.624Z",
+      "reviewState": "source-observed"
+    },
+    {
+      "id": "light-house-arts-centre-2ea041c1c35d9287",
+      "title": "Official Tickets for Solitary Man - A Tribute to Neil Diamond | Halifax NS — Light House Arts Centre",
+      "startAt": "2027-02-21T00:30:00.000Z",
+      "endAt": "2027-02-21T04:59:00.000Z",
+      "allDay": false,
+      "venueName": "Light House Arts Centre",
+      "address": "1800 Argyle Street Suite 301\nHalifax, NS, B3J 3N8\nCanada",
+      "city": "Halifax",
+      "categories": [
+        "Arts"
+      ],
+      "price": null,
+      "ticketUrl": "https://www.lighthouseartscentre.ca/events/",
+      "eventUrl": "https://www.lighthouseartscentre.ca/events/solitary-man-a-tribute-to-neil-diamond",
+      "sourceUrl": "https://www.lighthouseartscentre.ca/events/solitary-man-a-tribute-to-neil-diamond",
+      "sourceId": "light-house-arts-centre",
+      "sourceName": "Light House Arts Centre",
+      "sourceKind": "official_venue_calendar",
+      "observedAt": "2026-08-28T18:31:11.618Z",
+      "reviewState": "source-observed"
+    },
+    {
+      "id": "halifax-mooseheads-home-bc64ecbc5aefc4e7",
+      "title": "Halifax Mooseheads vs Saint John",
+      "startAt": "2027-02-21T19:00:00.000Z",
+      "endAt": "2027-02-21T19:00:00.000Z",
+      "allDay": false,
+      "venueName": "Scotiabank Centre",
+      "address": "1800 Argyle Street, Halifax, NS",
+      "city": "Halifax",
+      "categories": [
+        "Sports"
+      ],
+      "price": null,
+      "ticketUrl": "https://www.scotiabank-centre.com/events/2026-2027-halifax-mooseheads",
+      "eventUrl": "https://www.scotiabank-centre.com/events/2026-2027-halifax-mooseheads",
+      "sourceUrl": "https://www.scotiabank-centre.com/events/2026-2027-halifax-mooseheads",
+      "sourceId": "halifax-mooseheads-home",
+      "sourceName": "Halifax Mooseheads Home Schedule",
+      "sourceKind": "official_sports_schedule",
+      "observedAt": "2026-08-28T18:31:10.971Z",
+      "reviewState": "source-observed"
+    },
+    {
+      "id": "halifax-mooseheads-home-9c675071041ace85",
+      "title": "Halifax Mooseheads vs Sherbrooke",
+      "startAt": "2027-03-04T23:00:00.000Z",
+      "endAt": "2027-03-04T23:00:00.000Z",
+      "allDay": false,
+      "venueName": "Scotiabank Centre",
+      "address": "1800 Argyle Street, Halifax, NS",
+      "city": "Halifax",
+      "categories": [
+        "Sports"
+      ],
+      "price": null,
+      "ticketUrl": "https://www.scotiabank-centre.com/events/2026-2027-halifax-mooseheads",
+      "eventUrl": "https://www.scotiabank-centre.com/events/2026-2027-halifax-mooseheads",
+      "sourceUrl": "https://www.scotiabank-centre.com/events/2026-2027-halifax-mooseheads",
+      "sourceId": "halifax-mooseheads-home",
+      "sourceName": "Halifax Mooseheads Home Schedule",
+      "sourceKind": "official_sports_schedule",
+      "observedAt": "2026-08-28T18:31:10.971Z",
+      "reviewState": "source-observed"
+    },
+    {
+      "id": "halifax-mooseheads-home-339a73256d6d8c35",
+      "title": "Halifax Mooseheads vs Victoriaville",
+      "startAt": "2027-03-06T23:00:00.000Z",
+      "endAt": "2027-03-06T23:00:00.000Z",
+      "allDay": false,
+      "venueName": "Scotiabank Centre",
+      "address": "1800 Argyle Street, Halifax, NS",
+      "city": "Halifax",
+      "categories": [
+        "Sports"
+      ],
+      "price": null,
+      "ticketUrl": "https://www.scotiabank-centre.com/events/2026-2027-halifax-mooseheads",
+      "eventUrl": "https://www.scotiabank-centre.com/events/2026-2027-halifax-mooseheads",
+      "sourceUrl": "https://www.scotiabank-centre.com/events/2026-2027-halifax-mooseheads",
+      "sourceId": "halifax-mooseheads-home",
+      "sourceName": "Halifax Mooseheads Home Schedule",
+      "sourceKind": "official_sports_schedule",
+      "observedAt": "2026-08-28T18:31:10.971Z",
+      "reviewState": "source-observed"
+    },
+    {
+      "id": "light-house-arts-centre-4cbcb23d8a0dccd7",
+      "title": "Official Tickets for Blushing Brides The Original Rolling Stones Tribute | Halifax — Light House Arts Centre",
+      "startAt": "2027-03-19T00:00:00.000Z",
+      "endAt": "2027-03-19T03:59:00.000Z",
+      "allDay": false,
+      "venueName": "Light House Arts Centre",
+      "address": "1800 Argyle Street Suite 301\nHalifax, NS, B3J 3N8\nCanada",
+      "city": "Halifax",
+      "categories": [
+        "Arts"
+      ],
+      "price": null,
+      "ticketUrl": "https://www.lighthouseartscentre.ca/events/",
+      "eventUrl": "https://www.lighthouseartscentre.ca/events/the-rolling-stones-experience-featuring-the-blushing-brides",
+      "sourceUrl": "https://www.lighthouseartscentre.ca/events/the-rolling-stones-experience-featuring-the-blushing-brides",
+      "sourceId": "light-house-arts-centre",
+      "sourceName": "Light House Arts Centre",
+      "sourceKind": "official_venue_calendar",
+      "observedAt": "2026-08-28T18:31:11.614Z",
+      "reviewState": "source-observed"
+    },
+    {
+      "id": "halifax-mooseheads-home-ba57b1104c08b977",
+      "title": "Halifax Mooseheads vs Moncton",
+      "startAt": "2027-03-20T19:00:00.000Z",
+      "endAt": "2027-03-20T19:00:00.000Z",
+      "allDay": false,
+      "venueName": "Scotiabank Centre",
+      "address": "1800 Argyle Street, Halifax, NS",
+      "city": "Halifax",
+      "categories": [
+        "Sports"
+      ],
+      "price": null,
+      "ticketUrl": "https://www.scotiabank-centre.com/events/2026-2027-halifax-mooseheads",
+      "eventUrl": "https://www.scotiabank-centre.com/events/2026-2027-halifax-mooseheads",
+      "sourceUrl": "https://www.scotiabank-centre.com/events/2026-2027-halifax-mooseheads",
+      "sourceId": "halifax-mooseheads-home",
+      "sourceName": "Halifax Mooseheads Home Schedule",
+      "sourceKind": "official_sports_schedule",
+      "observedAt": "2026-08-28T18:31:10.971Z",
+      "reviewState": "source-observed"
+    },
+    {
+      "id": "neptune-theatre-7dcc35560803a5ab",
+      "title": "Seis Grados en Mayo / Six Degrees in May",
+      "startAt": "2027-05-04T15:00:00.000Z",
+      "endAt": "2027-05-23T15:00:00.000Z",
+      "allDay": true,
+      "venueName": "Scotiabank Studio Stage",
+      "address": "1593 Argyle Street, Halifax, NS",
+      "city": "Halifax",
+      "categories": [
+        "Arts"
+      ],
+      "price": null,
+      "ticketUrl": "https://www.neptunetheatre.com/visit/ticket-packages",
+      "eventUrl": "https://www.neptunetheatre.com/visit/ticket-packages",
+      "sourceUrl": "https://www.neptunetheatre.com/visit/ticket-packages",
+      "sourceId": "neptune-theatre",
+      "sourceName": "Neptune Theatre",
+      "sourceKind": "official_venue_calendar",
+      "observedAt": "2026-08-28T18:31:13.259Z",
       "reviewState": "source-observed"
     }
   ]
