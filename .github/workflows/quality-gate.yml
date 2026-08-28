@@ -41,6 +41,8 @@ jobs:
           node scripts/check-restaurant-discovery.mjs
           node scripts/check-city-events.mjs
           node scripts/check-event-entity-resolution.mjs
+          node scripts/check-structured-place-facts.mjs
+          node scripts/test-hours-state.mjs
 
       - name: Build content coverage report
         run: node scripts/build-content-coverage-report.mjs
@@ -56,7 +58,9 @@ jobs:
             artifacts/restaurant-discovery-report.json
             artifacts/city-event-integrity-report.json
             artifacts/event-entity-resolution-report.json
+            artifacts/structured-place-facts-report.json
             data/build/event-entity-resolution.json
+            data/build/structured-place-facts.json
             data/build/content-coverage-report.json
             docs/content-coverage-report.md
           if-no-files-found: ignore

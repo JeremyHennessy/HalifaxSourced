@@ -1,0 +1,51 @@
+name: Structured Place Facts Preview
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "29 11 * * 2"
+  pull_request:
+    branches:
+      - main
+    paths:
+      - .github/workflows/structured-place-facts-preview.yml
+      - scripts/import-structured-place-facts.mjs
+      - scripts/check-structured-place-facts.mjs
+      - scripts/test-hours-state.mjs
+      - app-hours.js
+      - data/build/first-party-sources.json
+      - data/build/verified-source-pages.json
+
+permissions:
+  contents: read
+
+jobs:
+  refresh:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Extract structured first-party facts
+        env:
+          STRUCTURED_PLACE_FACT_LIMIT: 9999
+          STRUCTURED_PLACE_FACT_DELAY_MS: 120
+          STRUCTURED_PLACE_FACT_TIMEOUT_MS: 10000
+          STRUCTURED_PLACE_FACT_CONCURRENCY: 8
+        run: node scripts/import-structured-place-facts.mjs
+      - name: Validate structured facts and hours semantics
+        run: |
+          node scripts/check-structured-place-facts.mjs
+          node scripts/test-hours-state.mjs
+      - name: Upload structured place facts preview
+        uses: actions/upload-artifact@v4
+        with:
+          name: structured-place-facts-preview
+          path: |
+            data/structured-place-facts.js
+            data/build/structured-place-facts.json
+            artifacts/structured-place-facts-report.json
+          if-no-files-found: error
+          retention-days: 30
