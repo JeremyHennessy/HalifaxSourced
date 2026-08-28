@@ -1,0 +1,54 @@
+{
+  "version": 2,
+  "updatedAt": "2026-08-28",
+  "candidates": [
+    {
+      "id": "alderney-landing",
+      "name": "Alderney Landing",
+      "kind": "official_venue_calendar",
+      "url": "https://alderneylanding.com/events/",
+      "venueId": "alderney-landing-dartmouth",
+      "city": "Dartmouth",
+      "status": "blocked_pending_adapter",
+      "lastAttemptAt": "2026-08-28",
+      "lastFailures": [
+        {"interface":"official_calendar","url":"https://alderneylanding.com/events/","failure":"http_403 from GitHub Actions runner"},
+        {"interface":"official_ticket_group","url":"https://www.tixr.com/groups/alderneylanding","failure":"http_403 from GitHub Actions runner"}
+      ],
+      "recommendedNextInterface": "official structured calendar/feed/API or licensed partner feed if published",
+      "notes": "Both the venue calendar and its public Tixr group are visible in normal web indexing but return HTTP 403 to GitHub Actions. Halifax Sourced will not bypass those protections or claim active Alderney coverage until a permitted stable interface is available."
+    },
+    {
+      "id": "discover-halifax-events",
+      "name": "Discover Halifax Events",
+      "kind": "official_tourism_calendar",
+      "url": "https://discoverhalifaxns.com/events/",
+      "status": "permission_or_license_review",
+      "notes": "High-value HRM discovery target. Published website terms restrict copying beyond private personal use; obtain permission/licensed access or another authorized data interface before ingestion."
+    },
+    {
+      "id": "music-nova-scotia-events",
+      "name": "Music Nova Scotia Events",
+      "kind": "music_industry_calendar",
+      "url": "https://musicnovascotia.ca/events/",
+      "status": "adapter_review",
+      "notes": "Potential music coverage source; verify public structured interface, reuse terms, and location filtering before enabling."
+    },
+    {
+      "id": "dalhousie-public-events",
+      "name": "Dalhousie University Public Events",
+      "kind": "university_calendar",
+      "url": "https://events.dal.ca/",
+      "status": "adapter_review",
+      "notes": "Use public-discovery events only; verify durable public interface and exclude internal administrative calendar items."
+    },
+    {
+      "id": "saint-marys-public-events",
+      "name": "Saint Mary's University Public Events",
+      "kind": "university_calendar",
+      "url": "https://www.smu.ca/events/",
+      "status": "adapter_review",
+      "notes": "Use public-discovery events only; verify durable calendar interface and reuse terms before enabling."
+    }
+  ]
+}
