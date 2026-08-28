@@ -1,6 +1,6 @@
 {
   "name": "Halifax Sourced source contract",
-  "version": 5,
+  "version": 6,
   "productIntent": "Public Halifax food and drink discovery for events, specials, happy hours, patios, openings, menus, hours, and practical source-linked details.",
   "notInScope": [
     "Ownership review workflow",
@@ -13,7 +13,9 @@
     "Store restaurant-owned facts and source links separately from third-party platform content.",
     "Keep restricted platform records as source references unless the API terms permit display and retention.",
     "Associate social profiles to a restaurant only through restaurant-owned links, owner submissions, or another approved source with explicit provenance.",
+    "Do not promote a shared brand feed or social handle into a location-specific signal unless the source association is uniquely tied to that restaurant.",
     "Classify social post text in memory and retain only source IDs, permalinks, timestamps, and matched discovery signals unless platform terms explicitly allow more.",
+    "Treat unstructured feed/social signals as current consumer leads only while their publication timestamp is within the configured freshness window; older signals remain historical evidence.",
     "Track when each captured fact was observed, where it came from, and whether it needs cross-checking.",
     "Never treat missing data as a negative signal; mark it as missing, stale, restricted, or unverified.",
     "OpenStreetMap directory records are discovery/practical-data records, not editorial quality verification.",
@@ -28,6 +30,10 @@
       "east": -63.505
     },
     "inspection_cities": ["Halifax", "Dartmouth", "Bedford"]
+  },
+  "consumerFreshness": {
+    "unstructuredSourceSignalMaxAgeDays": 60,
+    "rule": "Feed/social items older than the maximum age, items without a parseable publication timestamp, and future-dated items more than one day ahead do not set current special/event/opening/patio flags."
   },
   "restaurant": {
     "id": "stable-slug",
@@ -74,7 +80,7 @@
         "label": "Human-readable source",
         "type": "restaurant_site | restaurant_feed | facebook_page | instagram_professional | openstreetmap | google_places | owner_submission | event_feed | ns_food_inspection",
         "url": "Source URL",
-        "status": "verified | needs-review | restricted"
+        "status": "verified | verified_link | needs-review | restricted"
       }
     ]
   },
@@ -89,7 +95,7 @@
     "restaurantId": "Restaurant id from catalog",
     "website": "Restaurant-owned website used as association authority",
     "observedAt": "Fetch timestamp",
-    "socialProfiles": "Facebook and Instagram profile links found on the restaurant-owned site; each carries handle, profile URL, discoveredFrom, associationBasis, and reviewState",
+    "socialProfiles": "Facebook and Instagram profile links found on the restaurant-owned site; generic platform paths are sanitized before publication",
     "feeds": "RSS/Atom links discovered on the restaurant-owned site",
     "sitemaps": "Same-site sitemap URLs declared in robots.txt",
     "sourceKind": "official_website_discovery",
@@ -105,6 +111,8 @@
     "observedAt": "Fetch timestamp",
     "signalMatches": "Matched discovery keywords only; feed body is not retained",
     "sourceKind": "official_feed",
+    "associationBasis": "unique_feed_link_from_official_website",
+    "confidence": "official_source_signal",
     "reviewState": "source_signal | needs_date_review"
   },
   "socialSignal": {
@@ -118,9 +126,13 @@
     "observedAt": "API observation timestamp",
     "signalMatches": "Matched discovery keywords only; message/caption text is not retained",
     "sourceKind": "meta_graph_api | meta_graph_api_business_discovery",
-    "associationBasis": "linked_from_official_website",
+    "associationBasis": "unique_profile_link_from_official_website",
     "confidence": "official_social_api_signal",
     "reviewState": "api_observed"
+  },
+  "sharedBrandExclusion": {
+    "feeds": "A feed URL linked to more than one restaurant ID is excluded from restaurant-specific signal generation.",
+    "socialProfiles": "A platform+handle linked to more than one restaurant ID is excluded from location-specific Meta post collection and from restaurant-local profile source display."
   },
   "special": {
     "restaurantId": "stable-slug",
