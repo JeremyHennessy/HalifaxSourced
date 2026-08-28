@@ -17,7 +17,7 @@ on:
       - scripts/check-city-events.mjs
 
 permissions:
-  contents: write
+  contents: read
 
 jobs:
   refresh-events:
@@ -26,8 +26,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v6
-        with:
-          fetch-depth: 0
 
       - name: Set up Node
         uses: actions/setup-node@v4
@@ -65,18 +63,3 @@ jobs:
             artifacts/city-event-integrity-report.json
           if-no-files-found: error
           retention-days: 30
-
-      - name: Capture validated event output on isolated branch
-        if: github.ref == 'refs/heads/events-social-expansion-20260828'
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/city-events.js data/build/city-events.json
-          if git diff --cached --quiet; then
-            echo "No city event output changes to commit."
-            exit 0
-          fi
-          git commit -m "Refresh Halifax city event data"
-          git fetch origin events-social-expansion-20260828
-          git rebase origin/events-social-expansion-20260828
-          git push origin HEAD:events-social-expansion-20260828
