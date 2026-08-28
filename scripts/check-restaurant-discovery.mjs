@@ -20,6 +20,11 @@ const discovered = Array.isArray(discoveredWindow.HALIFAX_DISCOVERED_RESTAURANTS
 const knownIds = new Set((catalog.restaurants || []).map((restaurant) => restaurant.id));
 const failures = [];
 const warnings = [];
+const allowedDirectoryKinds = new Set([
+  "nova_scotia_tourism_directory",
+  "downtown_halifax_directory",
+  "business_improvement_district_directory"
+]);
 
 function validUrl(value) {
   try {
@@ -45,7 +50,7 @@ for (const record of directoryRecords) {
   if (!record.name || !record.sourceKind || !validUrl(record.sourceUrl) || !record.observedAt) {
     failures.push({ type: "invalid_directory_record", id: record.id, name: record.name });
   }
-  if (!["nova_scotia_tourism_directory", "downtown_halifax_directory"].includes(record.sourceKind)) {
+  if (!allowedDirectoryKinds.has(record.sourceKind)) {
     failures.push({ type: "unexpected_directory_source_kind", id: record.id, sourceKind: record.sourceKind });
   }
 }
