@@ -8,6 +8,7 @@ on:
     branches:
       - main
       - qa-polish-20260828
+      - restaurant-discovery-expansion-20260828
   workflow_dispatch:
 
 permissions:
@@ -36,6 +37,7 @@ jobs:
         run: |
           node scripts/check-data-integrity.mjs
           node scripts/check-expanded-sources.mjs
+          node scripts/check-restaurant-discovery.mjs
 
       - name: Upload integrity reports
         if: always()
@@ -45,6 +47,7 @@ jobs:
           path: |
             artifacts/data-integrity-report.json
             artifacts/expanded-source-integrity-report.json
+            artifacts/restaurant-discovery-report.json
           if-no-files-found: ignore
 
   ui-verification:

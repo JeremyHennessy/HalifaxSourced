@@ -1,0 +1,64 @@
+name: Restaurant Discovery Preview
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "43 10 * * *"
+  push:
+    branches:
+      - restaurant-discovery-expansion-20260828
+    paths:
+      - .github/workflows/restaurant-discovery-preview.yml
+      - scripts/import-directory-restaurants.mjs
+      - scripts/import-opening-watch.mjs
+      - scripts/build-discovered-restaurants.mjs
+      - scripts/check-restaurant-discovery.mjs
+      - data/discovery-overrides.json
+
+permissions:
+  contents: read
+
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Refresh directory restaurant candidates
+        env:
+          NS_TOURISM_PAGE_LIMIT: 30
+          DOWNTOWN_DIRECTORY_DETAIL_LIMIT: 120
+        run: node scripts/import-directory-restaurants.mjs
+
+      - name: Refresh local opening watch
+        env:
+          OPENING_WATCH_LOOKBACK_DAYS: 180
+        run: node scripts/import-opening-watch.mjs
+
+      - name: Build approved discovery listings
+        run: node scripts/build-discovered-restaurants.mjs
+
+      - name: Validate restaurant discovery data
+        run: node scripts/check-restaurant-discovery.mjs
+
+      - name: Upload restaurant discovery preview
+        uses: actions/upload-artifact@v4
+        with:
+          name: restaurant-discovery-preview
+          path: |
+            data/directory-restaurant-leads.js
+            data/build/directory-restaurant-leads.json
+            data/opening-watch-leads.js
+            data/build/opening-watch-leads.json
+            data/discovered-restaurants.js
+            data/build/discovered-restaurants.json
+            artifacts/restaurant-discovery-report.json
+          if-no-files-found: error
+          retention-days: 30

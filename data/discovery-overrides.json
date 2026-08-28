@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "approved": [
+    {
+      "id": "sakaba-halifax",
+      "name": "Sakaba",
+      "neighborhood": "Waterfront",
+      "category": "Restaurant",
+      "cuisines": ["Japanese", "Hand rolls", "Cocktails"],
+      "vibe": ["new opening", "hand rolls", "drinks"],
+      "qualityScore": 62,
+      "freshnessDate": "2026-08-16",
+      "evidenceStatus": "needs-review",
+      "address": "Lower Water Street, Halifax, NS",
+      "summary": "New hand-roll and drinks restaurant reported open on Lower Water Street near the Brewery Market. First-party details are still being collected.",
+      "sourceName": "Halifax ReTales",
+      "sourceUrl": "https://halifax.retales.ca/2026/08/some-notable-closures/",
+      "sourceType": "local_opening_watch",
+      "status": "needs-review",
+      "reviewNote": "Accepted as a provisional discovery listing so the new opening is visible while first-party website/social and exact-address evidence are collected."
+    }
+  ]
+}
