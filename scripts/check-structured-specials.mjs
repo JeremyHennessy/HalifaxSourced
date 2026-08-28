@@ -35,7 +35,16 @@ for (const record of payload.records || []) {
     if (!Number.isFinite(validTo) || validTo >= now) errors.push(`expired_without_past_valid_to:${record.specialId}`);
   }
 }
+
+for (const orphan of payload.orphanSources || []) {
+  if (!orphan.restaurantId || ids.has(orphan.restaurantId) || !orphan.title || !validUrl(orphan.sourceUrl) || orphan.reason !== "restaurant_id_not_in_canonical_catalog") {
+    errors.push(`invalid_orphan_source:${orphan.restaurantId || "missing"}:${orphan.sourceUrl || "missing"}`);
+  }
+}
+if ((payload.orphanSources || []).length !== Number(payload.orphanSourceCount || 0)) errors.push(`orphan_count_mismatch:${payload.orphanSourceCount || 0}:${(payload.orphanSources || []).length}`);
+if ((payload.orphanSources || []).length) warnings.push(`orphan_special_sources_need_entity_review:${payload.orphanSources.length}`);
 if (!(payload.records || []).length) warnings.push("zero_structured_special_records");
+
 const report = {
   generatedAt: new Date().toISOString(),
   count: payload.count || 0,
@@ -44,6 +53,7 @@ const report = {
   sourceLeads: payload.sourceLeads || 0,
   stale: payload.stale || 0,
   expired: payload.expired || 0,
+  orphanSourceCount: payload.orphanSourceCount || 0,
   currentVerificationMaxAgeDays: currentVerifyDays,
   errors,
   warnings
