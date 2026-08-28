@@ -10,7 +10,9 @@ on:
     paths:
       - .github/workflows/city-events-preview.yml
       - data/event-source-registry.json
+      - data/event-source-supplements.json
       - scripts/import-city-events.mjs
+      - scripts/import-supplemental-city-events.mjs
       - scripts/sanitize-city-events.mjs
       - scripts/check-city-events.mjs
 
@@ -20,7 +22,7 @@ permissions:
 jobs:
   refresh-events:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 30
     steps:
       - name: Checkout
         uses: actions/checkout@v6
@@ -37,7 +39,17 @@ jobs:
           CITY_EVENT_TIMEOUT_MS: 15000
         run: node scripts/import-city-events.mjs
 
-      - name: Restrict events to Halifax metro and normalize categories
+      - name: Restrict primary sources to Halifax metro
+        run: node scripts/sanitize-city-events.mjs
+
+      - name: Add convention, symphony, and public-library events
+        env:
+          SUPPLEMENTAL_EVENT_TIMEOUT_MS: 15000
+          LIBRARY_EVENT_PAGE_LIMIT: 120
+          LIBRARY_EVENT_DELAY_MS: 100
+        run: node scripts/import-supplemental-city-events.mjs
+
+      - name: Recheck event scope and normalize categories
         run: node scripts/sanitize-city-events.mjs
 
       - name: Validate city event dataset
