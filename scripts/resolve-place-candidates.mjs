@@ -113,9 +113,11 @@ function scorePair(candidate, place) {
 
 function classify(best, second) {
   if (!best) return "unresolved";
+  const hasCompatibleName = best.evidence.some((item) => ["exact_normalized_name", "compatible_name"].includes(item));
   const strongEvidence = best.evidence.filter((item) => !["exact_normalized_name", "compatible_name"].includes(item)).length;
   const margin = second ? best.score - second.score : best.score;
   if (best.conflicts.length) return best.score >= 80 && margin >= 20 ? "review_conflict" : "unresolved_conflict";
+  if (!hasCompatibleName && strongEvidence) return "non_name_evidence_review";
   if (best.score >= 75 && strongEvidence >= 1 && margin >= 20) return "resolved_high";
   if (best.score >= 60 && best.evidence.length >= 2 && margin >= 15) return "resolved_probable";
   if (best.score >= 35 && best.evidence.includes("exact_normalized_name")) return "name_only_review";
@@ -165,9 +167,10 @@ const payload = {
   resolvedCount: resolved.length,
   counts,
   resolutionPolicy: {
-    high: "score >=75, at least one non-name identity signal, margin >=20, no conflicts",
-    probable: "score >=60, at least two evidence signals, margin >=15, no conflicts",
+    high: "compatible name, score >=75, at least one non-name identity signal, margin >=20, no conflicts",
+    probable: "compatible name, score >=60, at least two evidence signals, margin >=15, no conflicts",
     nameOnly: "exact normalized name without sufficient location/identity evidence remains review-only",
+    nonNameEvidence: "address, coordinates, phone or domain evidence without a compatible name remains review-only",
     conflicts: "address/domain/phone conflicts prevent automatic resolution"
   },
   resolutions,
