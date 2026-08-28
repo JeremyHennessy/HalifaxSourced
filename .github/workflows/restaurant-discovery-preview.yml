@@ -7,7 +7,6 @@ on:
   push:
     branches:
       - restaurant-discovery-expansion-20260828
-      - fix/opening-watch-article-detail-20260828
     paths:
       - .github/workflows/restaurant-discovery-preview.yml
       - scripts/import-directory-restaurants.mjs
