@@ -1,18 +1,22 @@
 "use strict";
 function renderExplore() {
+  document.body.classList.remove("filter-drawer-open");
   const results = filteredRestaurants();
   const pages = Math.max(1, Math.ceil(results.length / PAGE_SIZE));
   state.page = Math.min(state.page, pages);
   const start = (state.page - 1) * PAGE_SIZE;
   const pageItems = results.slice(start, start + PAGE_SIZE);
+  const filterCount = [state.cuisine, state.neighbourhood, state.feature].filter((value) => value !== "all").length;
 
   appView.innerHTML = `
     <section class="page-shell page-intro compact-intro">
       <div><span class="eyebrow">Discover</span><h1>Explore Halifax</h1><p>${state.query ? `Showing places matching “${escapeHtml(state.query)}”.` : "Search restaurants and venues by cuisine, neighbourhood, and source-backed features."}</p></div>
     </section>
+    <div class="page-shell mobile-filter-bar"><button class="mobile-filter-toggle" type="button" data-open-filters aria-controls="exploreFilters" aria-expanded="false">Filters${filterCount ? `<span>${filterCount}</span>` : ""}</button><span>${results.length.toLocaleString()} places</span></div>
+    <div class="filter-drawer-backdrop" data-filter-backdrop></div>
     <section class="page-shell explore-layout">
-      <aside class="filters-panel" aria-label="Restaurant filters">
-        <div class="filter-title"><h2>Filters</h2><button type="button" data-clear-filters>Clear all</button></div>
+      <aside class="filters-panel" id="exploreFilters" data-filter-drawer aria-label="Restaurant filters">
+        <div class="filter-title"><h2>Filters</h2><div class="filter-title-actions"><button type="button" data-clear-filters>Clear all</button><button class="filter-close" type="button" data-close-filters aria-label="Close filters">×</button></div></div>
         ${filterSelect("Cuisine", "cuisineFilter", state.cuisine, [["all", "All cuisines"], ...cuisines.slice(0, 18).map(([name, count]) => [name, `${name} (${count})`])])}
         ${filterSelect("Neighbourhood", "neighbourhoodFilter", state.neighbourhood, [["all", "All neighbourhoods"], ...neighbourhoods.slice(0, 20).map(([name, count]) => [name, `${name} (${count})`])])}
         ${filterSelect("Feature", "featureFilter", state.feature, [["all", "All places"], ["menus", "Menu link"], ["specials", "Special signal"], ["events", "Event signal"], ["patio", "Patio"], ["opening", "Opening signal"]])}
