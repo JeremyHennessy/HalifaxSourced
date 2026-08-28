@@ -38,6 +38,9 @@ jobs:
           node scripts/check-restaurant-discovery.mjs
           node scripts/check-city-events.mjs
 
+      - name: Build content coverage report
+        run: node scripts/build-content-coverage-report.mjs
+
       - name: Upload integrity reports
         if: always()
         uses: actions/upload-artifact@v4
@@ -48,6 +51,8 @@ jobs:
             artifacts/expanded-source-integrity-report.json
             artifacts/restaurant-discovery-report.json
             artifacts/city-event-integrity-report.json
+            data/build/content-coverage-report.json
+            docs/content-coverage-report.md
           if-no-files-found: ignore
 
   ui-verification:
