@@ -11,7 +11,7 @@ permissions:
 jobs:
   diagnose:
     runs-on: ubuntu-24.04
-    timeout-minutes: 10
+    timeout-minutes: 12
     steps:
       - uses: actions/checkout@v6
       - uses: actions/setup-node@v4
@@ -27,3 +27,29 @@ jobs:
         run: node scripts/diagnose-tourism-robots.mjs
       - name: Compare concurrent and sequential detail requests
         run: node scripts/diagnose-tourism-concurrency.mjs
+      - name: Run exact importer with only Tourism Nova Scotia and instrumentation
+        run: |
+          cp data/event-source-registry.json /tmp/event-source-registry.full.json
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          registry=Path('data/event-source-registry.json')
+          data=json.loads(registry.read_text())
+          data['sources']=[s for s in data.get('sources',[]) if s.get('id')=='tourism-ns-events']
+          registry.write_text(json.dumps(data,indent=2)+'\n')
+          p=Path('scripts/import-city-events.mjs')
+          text=p.read_text()
+          needle='  const queue = tourismEventLinks(seed.text, seed.resolvedUrl, source);\n'
+          text=text.replace(needle, needle+'  console.log(`[TOURISM_DIAG] seedQueue=${queue.length} ${queue.slice(0,12).join(" | ")}`);\n',1)
+          old='''        const page = await fetchText(url);\n        return { events: parseTourismDetail(page.text, source, page.resolvedUrl), links: tourismEventLinks(page.text, page.resolvedUrl, source) };\n      } catch { return { events: [], links: [] }; }'''
+          new='''        const page = await fetchText(url);\n        const parsedEvents = parseTourismDetail(page.text, source, page.resolvedUrl);\n        const parsedLinks = tourismEventLinks(page.text, page.resolvedUrl, source);\n        console.log(`[TOURISM_DIAG] detail=${url} parsedEvents=${parsedEvents.length} discoveredLinks=${parsedLinks.length}`);\n        return { events: parsedEvents, links: parsedLinks };\n      } catch (error) { console.log(`[TOURISM_DIAG] detail=${url} ERROR=${error.message}`); return { events: [], links: [] }; }'''
+          if old not in text:
+              raise SystemExit('Tourism detail instrumentation target not found')
+          p.write_text(text.replace(old,new,1))
+          PY
+          node scripts/import-city-events.mjs
+          node - <<'NODE'
+          const fs=require('fs'); const p=JSON.parse(fs.readFileSync('data/build/city-events.json','utf8'));
+          console.log(JSON.stringify({eventCount:p.eventCount,sourceStats:p.sourceStats,failures:p.failures,events:(p.events||[]).slice(0,12).map(e=>({title:e.title,startAt:e.startAt,city:e.city,sourceId:e.sourceId}))},null,2));
+          if((p.sourceStats?.[0]?.eventCount||0)<1) throw new Error('exact_tourism_importer_still_zero');
+          NODE
