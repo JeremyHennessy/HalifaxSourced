@@ -1,0 +1,87 @@
+name: Phase GH Acceptance
+
+on:
+  push:
+    branches:
+      - phase-gh/event-venue-expansion-20260828
+    paths:
+      - .github/workflows/phase-gh-acceptance.yml
+
+permissions:
+  contents: write
+
+jobs:
+  accept:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: phase-gh/event-venue-expansion-20260828
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Install Playwright
+        run: |
+          npm install --no-save playwright@1.55.0
+          npx playwright install --with-deps chromium
+      - name: Validate JavaScript and event entities
+        run: |
+          for file in app-*.js scripts/*.mjs; do node --check "$file"; done
+          node scripts/check-data-integrity.mjs
+          node scripts/check-expanded-sources.mjs
+          node scripts/check-restaurant-discovery.mjs
+          node scripts/check-city-events.mjs
+          node scripts/check-event-entity-resolution.mjs
+      - name: Enforce entity/source acceptance
+        run: |
+          node - <<'NODE'
+          const fs=require('fs');
+          const city=JSON.parse(fs.readFileSync('data/build/city-events.json','utf8'));
+          const resolution=JSON.parse(fs.readFileSync('data/build/event-entity-resolution.json','utf8'));
+          const active=JSON.parse(fs.readFileSync('data/event-source-registry.json','utf8'));
+          const candidates=JSON.parse(fs.readFileSync('data/event-source-candidates.json','utf8'));
+          const venues=JSON.parse(fs.readFileSync('data/venue-registry.json','utf8'));
+          const organizers=JSON.parse(fs.readFileSync('data/organizer-registry.json','utf8'));
+          const count=city.events?.length||0;
+          if(count!==166) throw new Error(`Expected unchanged validated city-event count 166, got ${count}`);
+          if((active.sources||[]).some(s=>s.id==='alderney-landing')) throw new Error('Blocked Alderney adapter remains active');
+          const alderney=(candidates.candidates||[]).find(s=>s.id==='alderney-landing');
+          if(!alderney || alderney.status!=='blocked_pending_adapter' || !String(alderney.lastFailure||'').includes('403')) throw new Error('Alderney blocked-source reason not preserved');
+          if((resolution.venueResolved||0)<1) throw new Error('No venue relationships resolved');
+          if((resolution.organizerResolved||0)<1) throw new Error('No organizer relationships resolved');
+          const out={
+            acceptedAt:new Date().toISOString(), testedCommit:process.env.GITHUB_SHA, eventCount:count,
+            venueRegistryCount:venues.venues?.length||0, organizerRegistryCount:organizers.organizers?.length||0,
+            venueResolved:resolution.venueResolved||0, organizerResolved:resolution.organizerResolved||0,
+            restaurantResolved:resolution.restaurantResolved||0, unresolvedVenue:resolution.unresolvedVenue||0,
+            unresolvedOrganizer:resolution.unresolvedOrganizer||0, blockedAlderneyStatus:alderney.status,
+            result:'data_acceptance_passed'
+          };
+          fs.writeFileSync('data/build/phase-gh-acceptance.json',JSON.stringify(out,null,2)+'\n');
+          console.log(JSON.stringify(out,null,2));
+          NODE
+      - name: Start local app
+        run: |
+          node scripts/dev-server.mjs >/tmp/halifax-sourced-server.log 2>&1 &
+          for i in {1..30}; do curl --fail --silent http://127.0.0.1:5173/ >/dev/null && exit 0; sleep 1; done
+          cat /tmp/halifax-sourced-server.log
+          exit 1
+      - name: Run full browser acceptance
+        env:
+          APP_URL: http://127.0.0.1:5173
+        run: |
+          node scripts/verify-ui.mjs
+          node scripts/test-explore-minimap-lifecycle.mjs
+      - name: Commit acceptance record and remove acceptance workflow
+        run: |
+          node - <<'NODE'
+          const fs=require('fs'); const p='data/build/phase-gh-acceptance.json'; const v=JSON.parse(fs.readFileSync(p,'utf8'));
+          v.result='accepted'; v.browserAcceptance='verify-ui + mini-map lifecycle passed'; fs.writeFileSync(p,JSON.stringify(v,null,2)+'\n');
+          NODE
+          git config user.name "Halifax Sourced Data Bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/build/phase-gh-acceptance.json
+          git rm .github/workflows/phase-gh-acceptance.yml
+          git commit -m "Record Phase GH event entity acceptance"
+          git push origin HEAD:phase-gh/event-venue-expansion-20260828
