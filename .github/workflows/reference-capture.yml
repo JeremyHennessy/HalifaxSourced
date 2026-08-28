@@ -6,6 +6,12 @@ on:
       - qa-polish-20260828
     paths:
       - .github/workflows/reference-capture.yml
+      - index.html
+      - app-*.js
+      - styles-*.css
+      - data/restaurants.js
+      - data/osm-restaurants.js
+      - data/official-site-signals.js
   workflow_dispatch:
 
 permissions:
