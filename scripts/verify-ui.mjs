@@ -41,9 +41,23 @@ await page.locator(".brand-link img").waitFor();
 await page.locator("h1", { hasText: "Local flavour" }).waitFor();
 const homeCards = await page.locator(".restaurant-card").count();
 if (homeCards < 4) throw new Error(`Expected at least 4 home restaurant cards, found ${homeCards}.`);
-const totals = await page.evaluate(() => ({ restaurants: window.__halifaxRestaurantCount ?? 0, officialSignals: window.__halifaxOfficialSignalCount ?? 0 }));
+const totals = await page.evaluate(() => ({
+  restaurants: window.__halifaxRestaurantCount ?? 0,
+  officialSignals: window.__halifaxOfficialSignalCount ?? 0,
+  discoveredRestaurants: window.__halifaxDiscoveredRestaurantCount ?? 0,
+  socialProfiles: window.__halifaxFirstPartySocialProfileCount ?? 0,
+  relatedLinks: window.__halifaxFirstPartyRelatedLinkCount ?? 0,
+  cityEvents: window.HALIFAX_CITY_EVENTS?.eventCount ?? 0
+}));
 if (totals.restaurants < 700 || totals.officialSignals < 100) throw new Error(`Expected preserved discovery data, got ${JSON.stringify(totals)}.`);
+if (totals.discoveredRestaurants < 1) throw new Error(`Expected reviewed local discovery records, got ${JSON.stringify(totals)}.`);
 await page.screenshot({ path: resolve("artifacts", "ui-check-desktop.png"), fullPage: true });
+
+// New-opening discovery must be searchable without weakening the established catalogue checks.
+await page.locator("#globalSearch").fill("Sakaba");
+await page.locator("#globalSearch").press("Enter");
+await page.waitForURL(/#explore/);
+await page.locator(".restaurant-card", { hasText: "Sakaba" }).first().waitFor();
 
 await page.locator("#globalSearch").fill("Dartmouth");
 await page.locator("#globalSearch").press("Enter");
@@ -53,8 +67,18 @@ const exploreCards = await page.locator(".restaurant-card").count();
 if (exploreCards < 1 || exploreCards > 12) throw new Error(`Expected paginated explore results, found ${exploreCards}.`);
 
 await page.goto(`${url}/#events`, { waitUntil: "networkidle" });
-const eventCards = await page.locator(".event-card").count();
-if (eventCards < 1 || eventCards > 8) throw new Error(`Expected curated event-source leads (1-8), found ${eventCards}.`);
+const eventState = await page.evaluate(() => ({
+  loaded: window.HALIFAX_CITY_EVENTS?.eventCount ?? 0,
+  rendered: document.querySelectorAll(".event-card").length,
+  filters: document.querySelectorAll("[data-event-category]").length
+}));
+if (eventState.loaded > 0) {
+  if (eventState.rendered < 1 || eventState.rendered > 24) throw new Error(`Expected paginated/editorial city event cards (1-24), got ${JSON.stringify(eventState)}.`);
+  if (eventState.filters < 1) throw new Error(`Expected category controls for city events, got ${JSON.stringify(eventState)}.`);
+} else if (eventState.rendered < 1 || eventState.rendered > 24) {
+  throw new Error(`Expected event-source fallback cards (1-24), got ${JSON.stringify(eventState)}.`);
+}
+await page.screenshot({ path: resolve("artifacts", "ui-check-events.png"), fullPage: true });
 
 await page.goto(`${url}/#map`, { waitUntil: "networkidle" });
 await page.locator("#mainMap").waitFor();
@@ -99,9 +123,13 @@ const detailState = await page.evaluate(() => ({
 }));
 if (detailState.overflow > 2 || !detailState.stickyActions || detailState.actionCount < 1) throw new Error(`Expected usable mobile restaurant actions, got ${JSON.stringify(detailState)}.`);
 
+await page.goto(`${url}/#events`, { waitUntil: "networkidle" });
+const mobileEventOverflow = await page.evaluate(() => document.documentElement.scrollWidth - document.documentElement.clientWidth);
+if (mobileEventOverflow > 2) throw new Error(`Expected mobile events without horizontal overflow, got ${mobileEventOverflow}px.`);
+
 await page.goto(`${url}/#home`, { waitUntil: "networkidle" });
 await page.screenshot({ path: resolve("artifacts", "ui-check-mobile.png"), fullPage: true });
 
 if (consoleErrors.length) throw new Error(`Console errors detected:\n${consoleErrors.join("\n")}`);
 await browser.close();
-console.log("Halifax Sourced UI verified: routes, search, filters, map/list sync, desktop, and mobile detail actions.");
+console.log("Halifax Sourced UI verified: discovery, expanded events, search, filters, map/list sync, desktop, and mobile actions.");
