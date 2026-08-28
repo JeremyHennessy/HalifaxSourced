@@ -17,6 +17,7 @@ permissions:
 
 jobs:
   data-integrity:
+    # Hard failures are structural. Source-quality anomalies remain explicit warnings for review.
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
