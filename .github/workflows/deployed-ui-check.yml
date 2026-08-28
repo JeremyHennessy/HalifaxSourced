@@ -1,6 +1,11 @@
 name: Deployed UI Verification
 
 on:
+  push:
+    branches:
+      - qa-polish-20260828
+    paths:
+      - .github/workflows/deployed-ui-check.yml
   workflow_dispatch:
 
 permissions:
