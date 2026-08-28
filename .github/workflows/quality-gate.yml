@@ -9,6 +9,7 @@ on:
       - main
       - qa-polish-20260828
       - restaurant-discovery-expansion-20260828
+      - events-social-expansion-20260828
   workflow_dispatch:
 
 permissions:
@@ -38,6 +39,7 @@ jobs:
           node scripts/check-data-integrity.mjs
           node scripts/check-expanded-sources.mjs
           node scripts/check-restaurant-discovery.mjs
+          node scripts/check-city-events.mjs
 
       - name: Upload integrity reports
         if: always()
@@ -48,6 +50,7 @@ jobs:
             artifacts/data-integrity-report.json
             artifacts/expanded-source-integrity-report.json
             artifacts/restaurant-discovery-report.json
+            artifacts/city-event-integrity-report.json
           if-no-files-found: ignore
 
   ui-verification:
