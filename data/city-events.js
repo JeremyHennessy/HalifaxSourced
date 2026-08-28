@@ -1,112 +1,136 @@
 window.HALIFAX_CITY_EVENTS = {
-  "version": 3,
-  "generatedAt": "2026-08-28T18:53:38.481Z",
+  "version": 4,
+  "generatedAt": "2026-08-28T19:03:23.145Z",
   "range": {
-    "start": "2026-08-28T12:53:20.703Z",
-    "end": "2027-10-02T18:53:20.703Z"
+    "start": "2026-08-28T13:03:10.105Z",
+    "end": "2027-10-02T19:03:10.105Z"
   },
-  "eventCount": 127,
+  "eventCount": 166,
   "categoryCounts": {
-    "Arts": 35,
+    "Arts": 42,
     "Comedy": 4,
     "Sports": 61,
-    "Festivals": 9,
-    "Community": 7,
-    "Music": 27,
+    "Community": 11,
+    "Festivals": 10,
+    "Music": 58,
     "Outdoor": 1,
     "Other": 2,
-    "Food & Drink": 2
+    "Food & Drink": 3
   },
   "sourceStats": [
     {
       "sourceId": "tourism-ns-events",
       "sourceName": "Tourism Nova Scotia Events",
       "mode": "tourism_event_crawl",
-      "observedAt": "2026-08-28T18:53:26.529Z",
+      "observedAt": "2026-08-28T19:03:16.715Z",
       "eventCount": 218,
-      "durationMs": 5826,
+      "durationMs": 6610,
       "status": "ok"
     },
     {
       "sourceId": "halifax-mooseheads-home",
       "sourceName": "Halifax Mooseheads Home Schedule",
       "mode": "mooseheads_home_table",
-      "observedAt": "2026-08-28T18:53:26.732Z",
+      "observedAt": "2026-08-28T19:03:17.014Z",
       "eventCount": 32,
-      "durationMs": 202,
+      "durationMs": 298,
       "status": "ok"
     },
     {
       "sourceId": "scotiabank-centre",
       "sourceName": "Scotiabank Centre",
       "mode": "scotiabank_calendar",
-      "observedAt": "2026-08-28T18:53:26.762Z",
+      "observedAt": "2026-08-28T19:03:17.065Z",
       "eventCount": 34,
-      "durationMs": 30,
+      "durationMs": 51,
       "status": "ok"
     },
     {
       "sourceId": "hfx-wanderers-home",
       "sourceName": "HFX Wanderers 2026 Home Schedule",
       "mode": "sports_bullet_schedule",
-      "observedAt": "2026-08-28T18:53:26.798Z",
+      "observedAt": "2026-08-28T19:03:17.141Z",
       "eventCount": 5,
-      "durationMs": 36,
+      "durationMs": 76,
       "status": "ok"
     },
     {
       "sourceId": "halifax-tides-home",
       "sourceName": "Halifax Tides 2026 Home Schedule",
       "mode": "sports_bullet_schedule",
-      "observedAt": "2026-08-28T18:53:26.834Z",
+      "observedAt": "2026-08-28T19:03:17.186Z",
       "eventCount": 4,
-      "durationMs": 36,
+      "durationMs": 45,
       "status": "ok"
     },
     {
       "sourceId": "light-house-arts-centre",
       "sourceName": "Light House Arts Centre",
       "mode": "lighthouse_index",
-      "observedAt": "2026-08-28T18:53:28.187Z",
+      "observedAt": "2026-08-28T19:03:17.940Z",
       "eventCount": 19,
-      "durationMs": 1353,
+      "durationMs": 754,
       "status": "ok"
     },
     {
       "sourceId": "the-carleton",
       "sourceName": "The Carleton",
       "mode": "html_calendar",
-      "observedAt": "2026-08-28T18:53:37.061Z",
+      "observedAt": "2026-08-28T19:03:20.211Z",
       "eventCount": 10,
-      "durationMs": 8874,
+      "durationMs": 2270,
       "status": "ok"
     },
     {
       "sourceId": "neptune-theatre",
       "sourceName": "Neptune Theatre",
       "mode": "neptune_season",
-      "observedAt": "2026-08-28T18:53:37.478Z",
+      "observedAt": "2026-08-28T19:03:20.704Z",
       "eventCount": 3,
-      "durationMs": 417,
+      "durationMs": 493,
       "status": "ok"
     },
     {
       "sourceId": "halifax-thunderbirds",
       "sourceName": "Halifax Thunderbirds",
       "mode": "embedded_event_data",
-      "observedAt": "2026-08-28T18:53:37.704Z",
+      "observedAt": "2026-08-28T19:03:21.032Z",
       "eventCount": 0,
-      "durationMs": 226,
+      "durationMs": 328,
       "status": "ok"
     },
     {
       "sourceId": "halifax-events-community",
       "sourceName": "HalifaxEvents.ca",
       "mode": "tribe_list_crawl",
-      "observedAt": "2026-08-28T18:53:38.459Z",
+      "observedAt": "2026-08-28T19:03:23.126Z",
       "eventCount": 0,
-      "durationMs": 755,
+      "durationMs": 2094,
       "status": "ok"
+    },
+    {
+      "sourceId": "halifax-convention-centre",
+      "sourceName": "Halifax Convention Centre",
+      "status": "ok",
+      "eventCount": 1,
+      "observedAt": "2026-08-28T19:03:24.176Z",
+      "durationMs": 901
+    },
+    {
+      "sourceId": "symphony-nova-scotia",
+      "sourceName": "Symphony Nova Scotia",
+      "status": "ok",
+      "eventCount": 35,
+      "observedAt": "2026-08-28T19:03:24.406Z",
+      "durationMs": 229
+    },
+    {
+      "sourceId": "halifax-public-libraries",
+      "sourceName": "Halifax Public Libraries",
+      "status": "ok",
+      "eventCount": 3,
+      "observedAt": "2026-08-28T19:05:09.620Z",
+      "durationMs": 105213
     }
   ],
   "failures": [],
@@ -130,7 +154,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "tourism-ns-events",
       "sourceName": "Tourism Nova Scotia Events",
       "sourceKind": "official_tourism_calendar",
-      "observedAt": "2026-08-28T18:53:21.810Z",
+      "observedAt": "2026-08-28T19:03:11.402Z",
       "reviewState": "source-observed",
       "alternateSources": [
         {
@@ -159,7 +183,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "tourism-ns-events",
       "sourceName": "Tourism Nova Scotia Events",
       "sourceKind": "official_tourism_calendar",
-      "observedAt": "2026-08-28T18:53:21.777Z",
+      "observedAt": "2026-08-28T19:03:11.377Z",
       "reviewState": "source-observed",
       "alternateSources": [
         {
@@ -188,7 +212,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "tourism-ns-events",
       "sourceName": "Tourism Nova Scotia Events",
       "sourceKind": "official_tourism_calendar",
-      "observedAt": "2026-08-28T18:53:21.850Z",
+      "observedAt": "2026-08-28T19:03:11.517Z",
       "reviewState": "source-observed",
       "alternateSources": [
         {
@@ -217,7 +241,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "tourism-ns-events",
       "sourceName": "Tourism Nova Scotia Events",
       "sourceKind": "official_tourism_calendar",
-      "observedAt": "2026-08-28T18:53:21.854Z",
+      "observedAt": "2026-08-28T19:03:11.499Z",
       "reviewState": "source-observed",
       "alternateSources": [
         {
@@ -226,6 +250,29 @@ window.HALIFAX_CITY_EVENTS = {
           "sourceUrl": "https://novascotia.com/event/halifax-tides-2026-season/"
         }
       ]
+    },
+    {
+      "id": "halifax-public-libraries-ede1eb6bda411116",
+      "title": "Library Store",
+      "startAt": "2026-07-02T15:00:00.000Z",
+      "endAt": "2026-08-31T15:00:00.000Z",
+      "allDay": true,
+      "venueName": "Central Library",
+      "address": null,
+      "city": "Halifax",
+      "categories": [
+        "Arts",
+        "Community"
+      ],
+      "eventUrl": "https://www2.halifaxpubliclibraries.ca/store/",
+      "ticketUrl": "https://halifax.bibliocommons.com/v2/events",
+      "price": null,
+      "sourceId": "halifax-public-libraries",
+      "sourceName": "Halifax Public Libraries",
+      "sourceKind": "public_library_calendar",
+      "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
+      "observedAt": "2026-08-28T19:03:25.401Z",
+      "reviewState": "source_observed"
     },
     {
       "id": "https://novascotia.com/event/family-fun-at-the-fair/#event",
@@ -247,7 +294,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "tourism-ns-events",
       "sourceName": "Tourism Nova Scotia Events",
       "sourceKind": "official_tourism_calendar",
-      "observedAt": "2026-08-28T18:53:21.869Z",
+      "observedAt": "2026-08-28T19:03:11.563Z",
       "reviewState": "source-observed",
       "alternateSources": [
         {
@@ -256,6 +303,29 @@ window.HALIFAX_CITY_EVENTS = {
           "sourceUrl": "https://novascotia.com/event/family-fun-at-the-fair/"
         }
       ]
+    },
+    {
+      "id": "halifax-public-libraries-93c9071168ba1365",
+      "title": "In the Sunroom: Swallowed Whole by Rebecca Fisk",
+      "startAt": "2026-08-23T15:00:00.000Z",
+      "endAt": "2026-10-03T15:00:00.000Z",
+      "allDay": true,
+      "venueName": "Central Library",
+      "address": null,
+      "city": "Halifax",
+      "categories": [
+        "Arts",
+        "Community"
+      ],
+      "eventUrl": "https://halifax.bibliocommons.com/events/6a67b7b188e9bf280033af1a",
+      "ticketUrl": "https://halifax.bibliocommons.com/v2/events",
+      "price": null,
+      "sourceId": "halifax-public-libraries",
+      "sourceName": "Halifax Public Libraries",
+      "sourceKind": "public_library_calendar",
+      "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
+      "observedAt": "2026-08-28T19:03:25.402Z",
+      "reviewState": "source_observed"
     },
     {
       "id": "the-carleton-7d83ec423aad8c34",
@@ -276,7 +346,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "the-carleton",
       "sourceName": "The Carleton",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-08-28T18:53:37.059Z",
+      "observedAt": "2026-08-28T19:03:20.209Z",
       "reviewState": "source-observed"
     },
     {
@@ -298,8 +368,31 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "the-carleton",
       "sourceName": "The Carleton",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-08-28T18:53:37.059Z",
+      "observedAt": "2026-08-28T19:03:20.210Z",
       "reviewState": "source-observed"
+    },
+    {
+      "id": "halifax-convention-centre-cce7d12d9cabc545",
+      "title": "IFEBP 59th Canadian Annual Employee Benefits Conference",
+      "startAt": "2026-08-30T15:00:00.000Z",
+      "endAt": "2026-09-02T15:00:00.000Z",
+      "allDay": true,
+      "venueName": "Halifax Convention Centre",
+      "address": "1650 Argyle Street, Halifax, NS",
+      "city": "Halifax",
+      "categories": [
+        "Festivals",
+        "Community"
+      ],
+      "eventUrl": "https://www.halifaxconventioncentre.com/events/230045/",
+      "ticketUrl": "https://www.halifaxconventioncentre.com/Events",
+      "price": null,
+      "sourceId": "halifax-convention-centre",
+      "sourceName": "Halifax Convention Centre",
+      "sourceKind": "official_venue_calendar",
+      "sourceUrl": "https://www.halifaxconventioncentre.com/Events",
+      "observedAt": "2026-08-28T19:03:24.176Z",
+      "reviewState": "source_observed"
     },
     {
       "id": "the-carleton-8d803040b30111a7",
@@ -320,7 +413,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "the-carleton",
       "sourceName": "The Carleton",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-08-28T18:53:37.059Z",
+      "observedAt": "2026-08-28T19:03:20.210Z",
       "reviewState": "source-observed"
     },
     {
@@ -343,7 +436,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "tourism-ns-events",
       "sourceName": "Tourism Nova Scotia Events",
       "sourceKind": "official_tourism_calendar",
-      "observedAt": "2026-08-28T18:53:21.898Z",
+      "observedAt": "2026-08-28T19:03:11.536Z",
       "reviewState": "source-observed",
       "alternateSources": [
         {
@@ -372,7 +465,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "the-carleton",
       "sourceName": "The Carleton",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-08-28T18:53:37.059Z",
+      "observedAt": "2026-08-28T19:03:20.210Z",
       "reviewState": "source-observed"
     },
     {
@@ -394,7 +487,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "scotiabank-centre",
       "sourceName": "Scotiabank Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-08-28T18:53:26.760Z",
+      "observedAt": "2026-08-28T19:03:17.063Z",
       "reviewState": "source-observed"
     },
     {
@@ -416,7 +509,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "light-house-arts-centre",
       "sourceName": "Light House Arts Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-08-28T18:53:26.971Z",
+      "observedAt": "2026-08-28T19:03:17.399Z",
       "reviewState": "source-observed"
     },
     {
@@ -438,7 +531,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "tourism-ns-events",
       "sourceName": "Tourism Nova Scotia Events",
       "sourceKind": "official_tourism_calendar",
-      "observedAt": "2026-08-28T18:53:21.905Z",
+      "observedAt": "2026-08-28T19:03:11.525Z",
       "reviewState": "source-observed",
       "alternateSources": [
         {
@@ -467,7 +560,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "the-carleton",
       "sourceName": "The Carleton",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-08-28T18:53:37.060Z",
+      "observedAt": "2026-08-28T19:03:20.210Z",
       "reviewState": "source-observed"
     },
     {
@@ -489,7 +582,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "the-carleton",
       "sourceName": "The Carleton",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-08-28T18:53:37.060Z",
+      "observedAt": "2026-08-28T19:03:20.210Z",
       "reviewState": "source-observed"
     },
     {
@@ -511,7 +604,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "the-carleton",
       "sourceName": "The Carleton",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-08-28T18:53:37.060Z",
+      "observedAt": "2026-08-28T19:03:20.210Z",
       "reviewState": "source-observed"
     },
     {
@@ -533,7 +626,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "hfx-wanderers-home",
       "sourceName": "HFX Wanderers 2026 Home Schedule",
       "sourceKind": "official_tourism_sports_schedule",
-      "observedAt": "2026-08-28T18:53:26.798Z",
+      "observedAt": "2026-08-28T19:03:17.141Z",
       "reviewState": "source-observed"
     },
     {
@@ -555,7 +648,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "scotiabank-centre",
       "sourceName": "Scotiabank Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-08-28T18:53:26.760Z",
+      "observedAt": "2026-08-28T19:03:17.063Z",
       "reviewState": "source-observed"
     },
     {
@@ -577,7 +670,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "the-carleton",
       "sourceName": "The Carleton",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-08-28T18:53:37.060Z",
+      "observedAt": "2026-08-28T19:03:20.210Z",
       "reviewState": "source-observed"
     },
     {
@@ -599,7 +692,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "the-carleton",
       "sourceName": "The Carleton",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-08-28T18:53:37.060Z",
+      "observedAt": "2026-08-28T19:03:20.211Z",
       "reviewState": "source-observed"
     },
     {
@@ -621,7 +714,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "tourism-ns-events",
       "sourceName": "Tourism Nova Scotia Events",
       "sourceKind": "official_tourism_calendar",
-      "observedAt": "2026-08-28T18:53:21.994Z",
+      "observedAt": "2026-08-28T19:03:11.696Z",
       "reviewState": "source-observed",
       "alternateSources": [
         {
@@ -650,7 +743,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "tourism-ns-events",
       "sourceName": "Tourism Nova Scotia Events",
       "sourceKind": "official_tourism_calendar",
-      "observedAt": "2026-08-28T18:53:22.138Z",
+      "observedAt": "2026-08-28T19:03:11.892Z",
       "reviewState": "source-observed",
       "alternateSources": [
         {
@@ -679,7 +772,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "the-carleton",
       "sourceName": "The Carleton",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-08-28T18:53:37.060Z",
+      "observedAt": "2026-08-28T19:03:20.211Z",
       "reviewState": "source-observed"
     },
     {
@@ -702,7 +795,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "tourism-ns-events",
       "sourceName": "Tourism Nova Scotia Events",
       "sourceKind": "official_tourism_calendar",
-      "observedAt": "2026-08-28T18:53:22.146Z",
+      "observedAt": "2026-08-28T19:03:11.874Z",
       "reviewState": "source-observed",
       "alternateSources": [
         {
@@ -732,7 +825,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "tourism-ns-events",
       "sourceName": "Tourism Nova Scotia Events",
       "sourceKind": "official_tourism_calendar",
-      "observedAt": "2026-08-28T18:53:22.150Z",
+      "observedAt": "2026-08-28T19:03:11.884Z",
       "reviewState": "source-observed",
       "alternateSources": [
         {
@@ -762,7 +855,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "tourism-ns-events",
       "sourceName": "Tourism Nova Scotia Events",
       "sourceKind": "official_tourism_calendar",
-      "observedAt": "2026-08-28T18:53:22.163Z",
+      "observedAt": "2026-08-28T19:03:11.895Z",
       "reviewState": "source-observed",
       "alternateSources": [
         {
@@ -791,7 +884,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "light-house-arts-centre",
       "sourceName": "Light House Arts Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-08-28T18:53:26.985Z",
+      "observedAt": "2026-08-28T19:03:17.443Z",
       "reviewState": "source-observed"
     },
     {
@@ -813,7 +906,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "halifax-tides-home",
       "sourceName": "Halifax Tides 2026 Home Schedule",
       "sourceKind": "official_tourism_sports_schedule",
-      "observedAt": "2026-08-28T18:53:26.834Z",
+      "observedAt": "2026-08-28T19:03:17.186Z",
       "reviewState": "source-observed"
     },
     {
@@ -835,7 +928,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "halifax-mooseheads-home",
       "sourceName": "Halifax Mooseheads Home Schedule",
       "sourceKind": "official_sports_schedule",
-      "observedAt": "2026-08-28T18:53:26.729Z",
+      "observedAt": "2026-08-28T19:03:17.013Z",
       "reviewState": "source-observed"
     },
     {
@@ -857,7 +950,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "scotiabank-centre",
       "sourceName": "Scotiabank Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-08-28T18:53:26.760Z",
+      "observedAt": "2026-08-28T19:03:17.064Z",
       "reviewState": "source-observed"
     },
     {
@@ -879,7 +972,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "light-house-arts-centre",
       "sourceName": "Light House Arts Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-08-28T18:53:27.002Z",
+      "observedAt": "2026-08-28T19:03:17.532Z",
       "reviewState": "source-observed"
     },
     {
@@ -901,7 +994,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "hfx-wanderers-home",
       "sourceName": "HFX Wanderers 2026 Home Schedule",
       "sourceKind": "official_tourism_sports_schedule",
-      "observedAt": "2026-08-28T18:53:26.798Z",
+      "observedAt": "2026-08-28T19:03:17.141Z",
       "reviewState": "source-observed"
     },
     {
@@ -923,7 +1016,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "tourism-ns-events",
       "sourceName": "Tourism Nova Scotia Events",
       "sourceKind": "official_tourism_calendar",
-      "observedAt": "2026-08-28T18:53:23.001Z",
+      "observedAt": "2026-08-28T19:03:12.830Z",
       "reviewState": "source-observed",
       "alternateSources": [
         {
@@ -952,7 +1045,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "scotiabank-centre",
       "sourceName": "Scotiabank Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-08-28T18:53:26.760Z",
+      "observedAt": "2026-08-28T19:03:17.064Z",
       "reviewState": "source-observed"
     },
     {
@@ -975,7 +1068,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "tourism-ns-events",
       "sourceName": "Tourism Nova Scotia Events",
       "sourceKind": "official_tourism_calendar",
-      "observedAt": "2026-08-28T18:53:22.860Z",
+      "observedAt": "2026-08-28T19:03:12.663Z",
       "reviewState": "source-observed",
       "alternateSources": [
         {
@@ -1005,7 +1098,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "tourism-ns-events",
       "sourceName": "Tourism Nova Scotia Events",
       "sourceKind": "official_tourism_calendar",
-      "observedAt": "2026-08-28T18:53:22.380Z",
+      "observedAt": "2026-08-28T19:03:12.157Z",
       "reviewState": "source-observed",
       "alternateSources": [
         {
@@ -1034,7 +1127,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "tourism-ns-events",
       "sourceName": "Tourism Nova Scotia Events",
       "sourceKind": "official_tourism_calendar",
-      "observedAt": "2026-08-28T18:53:22.263Z",
+      "observedAt": "2026-08-28T19:03:12.017Z",
       "reviewState": "source-observed",
       "alternateSources": [
         {
@@ -1063,7 +1156,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "hfx-wanderers-home",
       "sourceName": "HFX Wanderers 2026 Home Schedule",
       "sourceKind": "official_tourism_sports_schedule",
-      "observedAt": "2026-08-28T18:53:26.798Z",
+      "observedAt": "2026-08-28T19:03:17.141Z",
       "reviewState": "source-observed"
     },
     {
@@ -1085,7 +1178,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "halifax-tides-home",
       "sourceName": "Halifax Tides 2026 Home Schedule",
       "sourceKind": "official_tourism_sports_schedule",
-      "observedAt": "2026-08-28T18:53:26.834Z",
+      "observedAt": "2026-08-28T19:03:17.186Z",
       "reviewState": "source-observed"
     },
     {
@@ -1107,7 +1200,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "light-house-arts-centre",
       "sourceName": "Light House Arts Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-08-28T18:53:27.007Z",
+      "observedAt": "2026-08-28T19:03:17.511Z",
       "reviewState": "source-observed"
     },
     {
@@ -1130,8 +1223,31 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "light-house-arts-centre",
       "sourceName": "Light House Arts Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-08-28T18:53:27.010Z",
+      "observedAt": "2026-08-28T19:03:17.465Z",
       "reviewState": "source-observed"
+    },
+    {
+      "id": "halifax-public-libraries-166dcb65969a049a",
+      "title": "Library Store",
+      "startAt": "2026-10-03T15:00:00.000Z",
+      "endAt": "2026-10-31T15:00:00.000Z",
+      "allDay": true,
+      "venueName": "Central Library",
+      "address": null,
+      "city": "Halifax",
+      "categories": [
+        "Arts",
+        "Community"
+      ],
+      "eventUrl": "https://www2.halifaxpubliclibraries.ca/store/",
+      "ticketUrl": "https://halifax.bibliocommons.com/v2/events",
+      "price": null,
+      "sourceId": "halifax-public-libraries",
+      "sourceName": "Halifax Public Libraries",
+      "sourceKind": "public_library_calendar",
+      "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
+      "observedAt": "2026-08-28T19:03:54.208Z",
+      "reviewState": "source_observed"
     },
     {
       "id": "tourism-ns-events-29eec1a52dea9a84",
@@ -1153,7 +1269,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "tourism-ns-events",
       "sourceName": "Tourism Nova Scotia Events",
       "sourceKind": "official_tourism_calendar",
-      "observedAt": "2026-08-28T18:53:22.406Z",
+      "observedAt": "2026-08-28T19:03:12.170Z",
       "reviewState": "source-observed",
       "alternateSources": [
         {
@@ -1182,8 +1298,52 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "halifax-tides-home",
       "sourceName": "Halifax Tides 2026 Home Schedule",
       "sourceKind": "official_tourism_sports_schedule",
-      "observedAt": "2026-08-28T18:53:26.834Z",
+      "observedAt": "2026-08-28T19:03:17.186Z",
       "reviewState": "source-observed"
+    },
+    {
+      "id": "symphony-nova-scotia-67ae6685230efbf5",
+      "title": "Season 2025-2026",
+      "startAt": "2026-10-03T22:30:00.000Z",
+      "endAt": "2026-10-03T22:30:00.000Z",
+      "allDay": false,
+      "venueName": "Rebecca Cohn",
+      "address": null,
+      "city": "Halifax",
+      "categories": [
+        "Music"
+      ],
+      "eventUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/?season=2025-2026#choose-a-concert",
+      "ticketUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
+      "price": null,
+      "sourceId": "symphony-nova-scotia",
+      "sourceName": "Symphony Nova Scotia",
+      "sourceKind": "official_arts_calendar",
+      "sourceUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
+      "observedAt": "2026-08-28T19:03:24.397Z",
+      "reviewState": "source_observed"
+    },
+    {
+      "id": "symphony-nova-scotia-8598a6094168a906",
+      "title": "Season 2025-2026",
+      "startAt": "2026-10-04T17:00:00.000Z",
+      "endAt": "2026-10-04T17:00:00.000Z",
+      "allDay": false,
+      "venueName": "Rebecca Cohn",
+      "address": null,
+      "city": "Halifax",
+      "categories": [
+        "Music"
+      ],
+      "eventUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/?season=2025-2026#choose-a-concert",
+      "ticketUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
+      "price": null,
+      "sourceId": "symphony-nova-scotia",
+      "sourceName": "Symphony Nova Scotia",
+      "sourceKind": "official_arts_calendar",
+      "sourceUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
+      "observedAt": "2026-08-28T19:03:24.398Z",
+      "reviewState": "source_observed"
     },
     {
       "id": "halifax-mooseheads-home-2e9484941dbf4bd4",
@@ -1204,7 +1364,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "halifax-mooseheads-home",
       "sourceName": "Halifax Mooseheads Home Schedule",
       "sourceKind": "official_sports_schedule",
-      "observedAt": "2026-08-28T18:53:26.730Z",
+      "observedAt": "2026-08-28T19:03:17.013Z",
       "reviewState": "source-observed"
     },
     {
@@ -1226,7 +1386,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "scotiabank-centre",
       "sourceName": "Scotiabank Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-08-28T18:53:26.760Z",
+      "observedAt": "2026-08-28T19:03:17.064Z",
       "reviewState": "source-observed"
     },
     {
@@ -1248,7 +1408,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "halifax-mooseheads-home",
       "sourceName": "Halifax Mooseheads Home Schedule",
       "sourceKind": "official_sports_schedule",
-      "observedAt": "2026-08-28T18:53:26.730Z",
+      "observedAt": "2026-08-28T19:03:17.013Z",
       "reviewState": "source-observed"
     },
     {
@@ -1270,7 +1430,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "scotiabank-centre",
       "sourceName": "Scotiabank Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-08-28T18:53:26.760Z",
+      "observedAt": "2026-08-28T19:03:17.064Z",
       "reviewState": "source-observed"
     },
     {
@@ -1292,7 +1452,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "hfx-wanderers-home",
       "sourceName": "HFX Wanderers 2026 Home Schedule",
       "sourceKind": "official_tourism_sports_schedule",
-      "observedAt": "2026-08-28T18:53:26.798Z",
+      "observedAt": "2026-08-28T19:03:17.141Z",
       "reviewState": "source-observed"
     },
     {
@@ -1314,7 +1474,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "scotiabank-centre",
       "sourceName": "Scotiabank Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-08-28T18:53:26.760Z",
+      "observedAt": "2026-08-28T19:03:17.064Z",
       "reviewState": "source-observed"
     },
     {
@@ -1336,7 +1496,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "tourism-ns-events",
       "sourceName": "Tourism Nova Scotia Events",
       "sourceKind": "official_tourism_calendar",
-      "observedAt": "2026-08-28T18:53:22.421Z",
+      "observedAt": "2026-08-28T19:03:12.215Z",
       "reviewState": "source-observed",
       "alternateSources": [
         {
@@ -1345,6 +1505,28 @@ window.HALIFAX_CITY_EVENTS = {
           "sourceUrl": "https://novascotia.com/event/nocturne-art-at-night/"
         }
       ]
+    },
+    {
+      "id": "symphony-nova-scotia-a9508e21c9c78cb4",
+      "title": "Shadows & Light: Barber & Brahms",
+      "startAt": "2026-10-15T22:30:00.000Z",
+      "endAt": "2026-10-15T22:30:00.000Z",
+      "allDay": false,
+      "venueName": "Rebecca Cohn",
+      "address": null,
+      "city": "Halifax",
+      "categories": [
+        "Music"
+      ],
+      "eventUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/rebecca-cohn-auditorium/shadows-light-barber-brahms/",
+      "ticketUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
+      "price": null,
+      "sourceId": "symphony-nova-scotia",
+      "sourceName": "Symphony Nova Scotia",
+      "sourceKind": "official_arts_calendar",
+      "sourceUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
+      "observedAt": "2026-08-28T19:03:24.398Z",
+      "reviewState": "source_observed"
     },
     {
       "id": "https://novascotia.com/event/halifax-paranormal-symposium/#event",
@@ -1365,7 +1547,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "tourism-ns-events",
       "sourceName": "Tourism Nova Scotia Events",
       "sourceKind": "official_tourism_calendar",
-      "observedAt": "2026-08-28T18:53:23.004Z",
+      "observedAt": "2026-08-28T19:03:12.861Z",
       "reviewState": "source-observed",
       "alternateSources": [
         {
@@ -1394,7 +1576,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "halifax-mooseheads-home",
       "sourceName": "Halifax Mooseheads Home Schedule",
       "sourceKind": "official_sports_schedule",
-      "observedAt": "2026-08-28T18:53:26.730Z",
+      "observedAt": "2026-08-28T19:03:17.013Z",
       "reviewState": "source-observed"
     },
     {
@@ -1416,7 +1598,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "scotiabank-centre",
       "sourceName": "Scotiabank Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-08-28T18:53:26.761Z",
+      "observedAt": "2026-08-28T19:03:17.064Z",
       "reviewState": "source-observed"
     },
     {
@@ -1438,7 +1620,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "light-house-arts-centre",
       "sourceName": "Light House Arts Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-08-28T18:53:27.106Z",
+      "observedAt": "2026-08-28T19:03:17.559Z",
       "reviewState": "source-observed"
     },
     {
@@ -1460,7 +1642,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "halifax-tides-home",
       "sourceName": "Halifax Tides 2026 Home Schedule",
       "sourceKind": "official_tourism_sports_schedule",
-      "observedAt": "2026-08-28T18:53:26.834Z",
+      "observedAt": "2026-08-28T19:03:17.186Z",
       "reviewState": "source-observed"
     },
     {
@@ -1482,8 +1664,30 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "light-house-arts-centre",
       "sourceName": "Light House Arts Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-08-28T18:53:27.099Z",
+      "observedAt": "2026-08-28T19:03:17.558Z",
       "reviewState": "source-observed"
+    },
+    {
+      "id": "symphony-nova-scotia-fadc47c38f621776",
+      "title": "James Ehnes' 50th Birthday Recital",
+      "startAt": "2026-10-18T17:00:00.000Z",
+      "endAt": "2026-10-18T17:00:00.000Z",
+      "allDay": false,
+      "venueName": "Halifax United Church",
+      "address": null,
+      "city": "Halifax",
+      "categories": [
+        "Music"
+      ],
+      "eventUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/halifax-united-church/james-ehnes-50th-birthday-recital/",
+      "ticketUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
+      "price": null,
+      "sourceId": "symphony-nova-scotia",
+      "sourceName": "Symphony Nova Scotia",
+      "sourceKind": "official_arts_calendar",
+      "sourceUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
+      "observedAt": "2026-08-28T19:03:24.398Z",
+      "reviewState": "source_observed"
     },
     {
       "id": "halifax-mooseheads-home-02f24f9892495cb4",
@@ -1504,7 +1708,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "halifax-mooseheads-home",
       "sourceName": "Halifax Mooseheads Home Schedule",
       "sourceKind": "official_sports_schedule",
-      "observedAt": "2026-08-28T18:53:26.730Z",
+      "observedAt": "2026-08-28T19:03:17.013Z",
       "reviewState": "source-observed"
     },
     {
@@ -1526,7 +1730,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "scotiabank-centre",
       "sourceName": "Scotiabank Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-08-28T18:53:26.761Z",
+      "observedAt": "2026-08-28T19:03:17.064Z",
       "reviewState": "source-observed"
     },
     {
@@ -1548,7 +1752,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "scotiabank-centre",
       "sourceName": "Scotiabank Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-08-28T18:53:26.761Z",
+      "observedAt": "2026-08-28T19:03:17.064Z",
       "reviewState": "source-observed"
     },
     {
@@ -1570,7 +1774,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "tourism-ns-events",
       "sourceName": "Tourism Nova Scotia Events",
       "sourceKind": "official_tourism_calendar",
-      "observedAt": "2026-08-28T18:53:25.241Z",
+      "observedAt": "2026-08-28T19:03:15.263Z",
       "reviewState": "source-observed"
     },
     {
@@ -1592,7 +1796,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "halifax-mooseheads-home",
       "sourceName": "Halifax Mooseheads Home Schedule",
       "sourceKind": "official_sports_schedule",
-      "observedAt": "2026-08-28T18:53:26.730Z",
+      "observedAt": "2026-08-28T19:03:17.013Z",
       "reviewState": "source-observed"
     },
     {
@@ -1614,8 +1818,30 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "scotiabank-centre",
       "sourceName": "Scotiabank Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-08-28T18:53:26.761Z",
+      "observedAt": "2026-08-28T19:03:17.064Z",
       "reviewState": "source-observed"
+    },
+    {
+      "id": "symphony-nova-scotia-648004b43df2a1b3",
+      "title": "Alex Cuba & Symphony Nova Scotia",
+      "startAt": "2026-10-23T22:30:00.000Z",
+      "endAt": "2026-10-23T22:30:00.000Z",
+      "allDay": false,
+      "venueName": "Rebecca Cohn",
+      "address": null,
+      "city": "Halifax",
+      "categories": [
+        "Music"
+      ],
+      "eventUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/rebecca-cohn-auditorium/alex-cuba-symphony-nova-scotia/",
+      "ticketUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
+      "price": null,
+      "sourceId": "symphony-nova-scotia",
+      "sourceName": "Symphony Nova Scotia",
+      "sourceKind": "official_arts_calendar",
+      "sourceUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
+      "observedAt": "2026-08-28T19:03:24.398Z",
+      "reviewState": "source_observed"
     },
     {
       "id": "halifax-mooseheads-home-774b090badc454a5",
@@ -1636,7 +1862,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "halifax-mooseheads-home",
       "sourceName": "Halifax Mooseheads Home Schedule",
       "sourceKind": "official_sports_schedule",
-      "observedAt": "2026-08-28T18:53:26.730Z",
+      "observedAt": "2026-08-28T19:03:17.013Z",
       "reviewState": "source-observed"
     },
     {
@@ -1658,7 +1884,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "scotiabank-centre",
       "sourceName": "Scotiabank Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-08-28T18:53:26.761Z",
+      "observedAt": "2026-08-28T19:03:17.064Z",
       "reviewState": "source-observed"
     },
     {
@@ -1680,8 +1906,30 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "hfx-wanderers-home",
       "sourceName": "HFX Wanderers 2026 Home Schedule",
       "sourceKind": "official_tourism_sports_schedule",
-      "observedAt": "2026-08-28T18:53:26.798Z",
+      "observedAt": "2026-08-28T19:03:17.141Z",
       "reviewState": "source-observed"
+    },
+    {
+      "id": "symphony-nova-scotia-c35c930a16cc60a7",
+      "title": "Beethoven’s Pastoral Symphony",
+      "startAt": "2026-10-29T22:30:00.000Z",
+      "endAt": "2026-10-29T22:30:00.000Z",
+      "allDay": false,
+      "venueName": "Rebecca Cohn",
+      "address": null,
+      "city": "Halifax",
+      "categories": [
+        "Music"
+      ],
+      "eventUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/rebecca-cohn-auditorium/beethovens-pastoral-symphony-2026/",
+      "ticketUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
+      "price": null,
+      "sourceId": "symphony-nova-scotia",
+      "sourceName": "Symphony Nova Scotia",
+      "sourceKind": "official_arts_calendar",
+      "sourceUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
+      "observedAt": "2026-08-28T19:03:24.399Z",
+      "reviewState": "source_observed"
     },
     {
       "id": "light-house-arts-centre-676e6ad4127520b7",
@@ -1702,7 +1950,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "light-house-arts-centre",
       "sourceName": "Light House Arts Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-08-28T18:53:27.109Z",
+      "observedAt": "2026-08-28T19:03:17.566Z",
       "reviewState": "source-observed"
     },
     {
@@ -1724,7 +1972,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "halifax-mooseheads-home",
       "sourceName": "Halifax Mooseheads Home Schedule",
       "sourceKind": "official_sports_schedule",
-      "observedAt": "2026-08-28T18:53:26.730Z",
+      "observedAt": "2026-08-28T19:03:17.013Z",
       "reviewState": "source-observed"
     },
     {
@@ -1746,7 +1994,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "scotiabank-centre",
       "sourceName": "Scotiabank Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-08-28T18:53:26.761Z",
+      "observedAt": "2026-08-28T19:03:17.064Z",
       "reviewState": "source-observed"
     },
     {
@@ -1768,7 +2016,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "light-house-arts-centre",
       "sourceName": "Light House Arts Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-08-28T18:53:27.107Z",
+      "observedAt": "2026-08-28T19:03:17.569Z",
       "reviewState": "source-observed"
     },
     {
@@ -1790,7 +2038,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "halifax-mooseheads-home",
       "sourceName": "Halifax Mooseheads Home Schedule",
       "sourceKind": "official_sports_schedule",
-      "observedAt": "2026-08-28T18:53:26.730Z",
+      "observedAt": "2026-08-28T19:03:17.013Z",
       "reviewState": "source-observed"
     },
     {
@@ -1812,8 +2060,30 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "scotiabank-centre",
       "sourceName": "Scotiabank Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-08-28T18:53:26.761Z",
+      "observedAt": "2026-08-28T19:03:17.064Z",
       "reviewState": "source-observed"
+    },
+    {
+      "id": "symphony-nova-scotia-44168ab3b63f800a",
+      "title": "Bach, Bach, Bach, & Bach",
+      "startAt": "2026-11-08T18:00:00.000Z",
+      "endAt": "2026-11-08T18:00:00.000Z",
+      "allDay": false,
+      "venueName": "Halifax United Church",
+      "address": null,
+      "city": "Halifax",
+      "categories": [
+        "Music"
+      ],
+      "eventUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/halifax-united-church/bach-bach-bach-bach/",
+      "ticketUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
+      "price": null,
+      "sourceId": "symphony-nova-scotia",
+      "sourceName": "Symphony Nova Scotia",
+      "sourceKind": "official_arts_calendar",
+      "sourceUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
+      "observedAt": "2026-08-28T19:03:24.399Z",
+      "reviewState": "source_observed"
     },
     {
       "id": "neptune-theatre-d7569dda4dddd653",
@@ -1834,7 +2104,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "neptune-theatre",
       "sourceName": "Neptune Theatre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-08-28T18:53:37.478Z",
+      "observedAt": "2026-08-28T19:03:20.703Z",
       "reviewState": "source-observed"
     },
     {
@@ -1857,7 +2127,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "tourism-ns-events",
       "sourceName": "Tourism Nova Scotia Events",
       "sourceKind": "official_tourism_calendar",
-      "observedAt": "2026-08-28T18:53:25.226Z",
+      "observedAt": "2026-08-28T19:03:15.276Z",
       "reviewState": "source-observed"
     },
     {
@@ -1879,7 +2149,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "tourism-ns-events",
       "sourceName": "Tourism Nova Scotia Events",
       "sourceKind": "official_tourism_calendar",
-      "observedAt": "2026-08-28T18:53:23.623Z",
+      "observedAt": "2026-08-28T19:03:13.518Z",
       "reviewState": "source-observed",
       "alternateSources": [
         {
@@ -1888,6 +2158,28 @@ window.HALIFAX_CITY_EVENTS = {
           "sourceUrl": "https://novascotia.com/event/craft-nova-scotia-designer-craft-show/"
         }
       ]
+    },
+    {
+      "id": "symphony-nova-scotia-7f393bfa77b151bc",
+      "title": "SymphoniCon: Music of Anime",
+      "startAt": "2026-11-13T23:30:00.000Z",
+      "endAt": "2026-11-13T23:30:00.000Z",
+      "allDay": false,
+      "venueName": "Rebecca Cohn",
+      "address": null,
+      "city": "Halifax",
+      "categories": [
+        "Music"
+      ],
+      "eventUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/rebecca-cohn-auditorium/symphonicon-music-of-anime/",
+      "ticketUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
+      "price": null,
+      "sourceId": "symphony-nova-scotia",
+      "sourceName": "Symphony Nova Scotia",
+      "sourceKind": "official_arts_calendar",
+      "sourceUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
+      "observedAt": "2026-08-28T19:03:24.399Z",
+      "reviewState": "source_observed"
     },
     {
       "id": "halifax-mooseheads-home-2680accbee69c324",
@@ -1908,7 +2200,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "halifax-mooseheads-home",
       "sourceName": "Halifax Mooseheads Home Schedule",
       "sourceKind": "official_sports_schedule",
-      "observedAt": "2026-08-28T18:53:26.730Z",
+      "observedAt": "2026-08-28T19:03:17.013Z",
       "reviewState": "source-observed"
     },
     {
@@ -1931,7 +2223,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "scotiabank-centre",
       "sourceName": "Scotiabank Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-08-28T18:53:26.761Z",
+      "observedAt": "2026-08-28T19:03:17.064Z",
       "reviewState": "source-observed"
     },
     {
@@ -1953,7 +2245,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "halifax-mooseheads-home",
       "sourceName": "Halifax Mooseheads Home Schedule",
       "sourceKind": "official_sports_schedule",
-      "observedAt": "2026-08-28T18:53:26.730Z",
+      "observedAt": "2026-08-28T19:03:17.013Z",
       "reviewState": "source-observed"
     },
     {
@@ -1975,8 +2267,30 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "scotiabank-centre",
       "sourceName": "Scotiabank Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-08-28T18:53:26.761Z",
+      "observedAt": "2026-08-28T19:03:17.064Z",
       "reviewState": "source-observed"
+    },
+    {
+      "id": "symphony-nova-scotia-86eb93b9861b75f0",
+      "title": "Peace & Remembrance: Ravel & Vaughan Williams",
+      "startAt": "2026-11-19T23:30:00.000Z",
+      "endAt": "2026-11-19T23:30:00.000Z",
+      "allDay": false,
+      "venueName": "Rebecca Cohn",
+      "address": null,
+      "city": "Halifax",
+      "categories": [
+        "Music"
+      ],
+      "eventUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/rebecca-cohn-auditorium/peace-remembrance-ravel-vaughan-williams/",
+      "ticketUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
+      "price": null,
+      "sourceId": "symphony-nova-scotia",
+      "sourceName": "Symphony Nova Scotia",
+      "sourceKind": "official_arts_calendar",
+      "sourceUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
+      "observedAt": "2026-08-28T19:03:24.399Z",
+      "reviewState": "source_observed"
     },
     {
       "id": "light-house-arts-centre-33e9945fe126232f",
@@ -1997,8 +2311,30 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "light-house-arts-centre",
       "sourceName": "Light House Arts Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-08-28T18:53:27.111Z",
+      "observedAt": "2026-08-28T19:03:17.564Z",
       "reviewState": "source-observed"
+    },
+    {
+      "id": "symphony-nova-scotia-bc0ff418015d1ab1",
+      "title": "NSYO: Music in Motion",
+      "startAt": "2026-11-21T18:00:00.000Z",
+      "endAt": "2026-11-21T18:00:00.000Z",
+      "allDay": false,
+      "venueName": "Halifax United Church",
+      "address": null,
+      "city": "Halifax",
+      "categories": [
+        "Music"
+      ],
+      "eventUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/halifax-united-church/nsyo-music-in-motion/",
+      "ticketUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
+      "price": null,
+      "sourceId": "symphony-nova-scotia",
+      "sourceName": "Symphony Nova Scotia",
+      "sourceKind": "official_arts_calendar",
+      "sourceUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
+      "observedAt": "2026-08-28T19:03:24.400Z",
+      "reviewState": "source_observed"
     },
     {
       "id": "scotiabank-centre-f695e64e519597f3",
@@ -2019,8 +2355,30 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "scotiabank-centre",
       "sourceName": "Scotiabank Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-08-28T18:53:26.761Z",
+      "observedAt": "2026-08-28T19:03:17.064Z",
       "reviewState": "source-observed"
+    },
+    {
+      "id": "symphony-nova-scotia-a4d5d17eef5c8570",
+      "title": "Tafelmusik Baroque Orchestra: Staircases",
+      "startAt": "2026-11-22T18:00:00.000Z",
+      "endAt": "2026-11-22T18:00:00.000Z",
+      "allDay": false,
+      "venueName": "Rebecca Cohn",
+      "address": null,
+      "city": "Halifax",
+      "categories": [
+        "Music"
+      ],
+      "eventUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/rebecca-cohn-auditorium/tafelmusik-baroque-orchestra-staircases/",
+      "ticketUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
+      "price": null,
+      "sourceId": "symphony-nova-scotia",
+      "sourceName": "Symphony Nova Scotia",
+      "sourceKind": "official_arts_calendar",
+      "sourceUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
+      "observedAt": "2026-08-28T19:03:24.400Z",
+      "reviewState": "source_observed"
     },
     {
       "id": "light-house-arts-centre-0920184cc9dd79b9",
@@ -2042,7 +2400,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "light-house-arts-centre",
       "sourceName": "Light House Arts Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-08-28T18:53:27.188Z",
+      "observedAt": "2026-08-28T19:03:17.596Z",
       "reviewState": "source-observed"
     },
     {
@@ -2064,7 +2422,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "halifax-mooseheads-home",
       "sourceName": "Halifax Mooseheads Home Schedule",
       "sourceKind": "official_sports_schedule",
-      "observedAt": "2026-08-28T18:53:26.730Z",
+      "observedAt": "2026-08-28T19:03:17.013Z",
       "reviewState": "source-observed"
     },
     {
@@ -2086,8 +2444,30 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "scotiabank-centre",
       "sourceName": "Scotiabank Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-08-28T18:53:26.761Z",
+      "observedAt": "2026-08-28T19:03:17.064Z",
       "reviewState": "source-observed"
+    },
+    {
+      "id": "symphony-nova-scotia-d9c8589b8effa43a",
+      "title": "Merry Murdoch Mysteries in Concert",
+      "startAt": "2026-11-27T23:30:00.000Z",
+      "endAt": "2026-11-27T23:30:00.000Z",
+      "allDay": false,
+      "venueName": "Rebecca Cohn",
+      "address": null,
+      "city": "Halifax",
+      "categories": [
+        "Music"
+      ],
+      "eventUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/rebecca-cohn-auditorium/merry-murdoch-mysteries-in-concert/",
+      "ticketUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
+      "price": null,
+      "sourceId": "symphony-nova-scotia",
+      "sourceName": "Symphony Nova Scotia",
+      "sourceKind": "official_arts_calendar",
+      "sourceUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
+      "observedAt": "2026-08-28T19:03:24.400Z",
+      "reviewState": "source_observed"
     },
     {
       "id": "https://novascotia.com/event/halifax-international-wine-festival/#event",
@@ -2109,7 +2489,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "tourism-ns-events",
       "sourceName": "Tourism Nova Scotia Events",
       "sourceKind": "official_tourism_calendar",
-      "observedAt": "2026-08-28T18:53:23.625Z",
+      "observedAt": "2026-08-28T19:03:13.489Z",
       "reviewState": "source-observed",
       "alternateSources": [
         {
@@ -2138,7 +2518,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "scotiabank-centre",
       "sourceName": "Scotiabank Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-08-28T18:53:26.761Z",
+      "observedAt": "2026-08-28T19:03:17.064Z",
       "reviewState": "source-observed"
     },
     {
@@ -2160,7 +2540,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "halifax-mooseheads-home",
       "sourceName": "Halifax Mooseheads Home Schedule",
       "sourceKind": "official_sports_schedule",
-      "observedAt": "2026-08-28T18:53:26.730Z",
+      "observedAt": "2026-08-28T19:03:17.013Z",
       "reviewState": "source-observed"
     },
     {
@@ -2182,8 +2562,52 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "scotiabank-centre",
       "sourceName": "Scotiabank Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-08-28T18:53:26.761Z",
+      "observedAt": "2026-08-28T19:03:17.064Z",
       "reviewState": "source-observed"
+    },
+    {
+      "id": "symphony-nova-scotia-48c6b1fd847b77bd",
+      "title": "The Nutcracker",
+      "startAt": "2026-12-04T23:30:00.000Z",
+      "endAt": "2026-12-04T23:30:00.000Z",
+      "allDay": false,
+      "venueName": "Rebecca Cohn",
+      "address": null,
+      "city": "Halifax",
+      "categories": [
+        "Music"
+      ],
+      "eventUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/rebecca-cohn-auditorium/the-nutcracker-2026/",
+      "ticketUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
+      "price": null,
+      "sourceId": "symphony-nova-scotia",
+      "sourceName": "Symphony Nova Scotia",
+      "sourceKind": "official_arts_calendar",
+      "sourceUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
+      "observedAt": "2026-08-28T19:03:24.400Z",
+      "reviewState": "source_observed"
+    },
+    {
+      "id": "symphony-nova-scotia-7f8a77d2360e8e16",
+      "title": "The Nutcracker",
+      "startAt": "2026-12-05T18:00:00.000Z",
+      "endAt": "2026-12-05T18:00:00.000Z",
+      "allDay": false,
+      "venueName": "Rebecca Cohn",
+      "address": null,
+      "city": "Halifax",
+      "categories": [
+        "Music"
+      ],
+      "eventUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/rebecca-cohn-auditorium/the-nutcracker-2026/",
+      "ticketUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
+      "price": null,
+      "sourceId": "symphony-nova-scotia",
+      "sourceName": "Symphony Nova Scotia",
+      "sourceKind": "official_arts_calendar",
+      "sourceUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
+      "observedAt": "2026-08-28T19:03:24.401Z",
+      "reviewState": "source_observed"
     },
     {
       "id": "scotiabank-centre-637283ec2f78bc3b",
@@ -2205,7 +2629,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "scotiabank-centre",
       "sourceName": "Scotiabank Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-08-28T18:53:26.761Z",
+      "observedAt": "2026-08-28T19:03:17.064Z",
       "reviewState": "source-observed"
     },
     {
@@ -2227,7 +2651,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "halifax-mooseheads-home",
       "sourceName": "Halifax Mooseheads Home Schedule",
       "sourceKind": "official_sports_schedule",
-      "observedAt": "2026-08-28T18:53:26.730Z",
+      "observedAt": "2026-08-28T19:03:17.013Z",
       "reviewState": "source-observed"
     },
     {
@@ -2249,7 +2673,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "scotiabank-centre",
       "sourceName": "Scotiabank Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-08-28T18:53:26.761Z",
+      "observedAt": "2026-08-28T19:03:17.064Z",
       "reviewState": "source-observed"
     },
     {
@@ -2271,7 +2695,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "light-house-arts-centre",
       "sourceName": "Light House Arts Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-08-28T18:53:27.193Z",
+      "observedAt": "2026-08-28T19:03:17.599Z",
       "reviewState": "source-observed"
     },
     {
@@ -2293,7 +2717,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "scotiabank-centre",
       "sourceName": "Scotiabank Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-08-28T18:53:26.761Z",
+      "observedAt": "2026-08-28T19:03:17.064Z",
       "reviewState": "source-observed"
     },
     {
@@ -2315,7 +2739,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "halifax-mooseheads-home",
       "sourceName": "Halifax Mooseheads Home Schedule",
       "sourceKind": "official_sports_schedule",
-      "observedAt": "2026-08-28T18:53:26.730Z",
+      "observedAt": "2026-08-28T19:03:17.014Z",
       "reviewState": "source-observed"
     },
     {
@@ -2337,7 +2761,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "scotiabank-centre",
       "sourceName": "Scotiabank Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-08-28T18:53:26.762Z",
+      "observedAt": "2026-08-28T19:03:17.064Z",
       "reviewState": "source-observed"
     },
     {
@@ -2359,7 +2783,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "halifax-mooseheads-home",
       "sourceName": "Halifax Mooseheads Home Schedule",
       "sourceKind": "official_sports_schedule",
-      "observedAt": "2026-08-28T18:53:26.731Z",
+      "observedAt": "2026-08-28T19:03:17.014Z",
       "reviewState": "source-observed"
     },
     {
@@ -2381,7 +2805,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "scotiabank-centre",
       "sourceName": "Scotiabank Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-08-28T18:53:26.762Z",
+      "observedAt": "2026-08-28T19:03:17.065Z",
       "reviewState": "source-observed"
     },
     {
@@ -2403,7 +2827,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "light-house-arts-centre",
       "sourceName": "Light House Arts Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-08-28T18:53:27.197Z",
+      "observedAt": "2026-08-28T19:03:17.603Z",
       "reviewState": "source-observed"
     },
     {
@@ -2425,7 +2849,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "halifax-mooseheads-home",
       "sourceName": "Halifax Mooseheads Home Schedule",
       "sourceKind": "official_sports_schedule",
-      "observedAt": "2026-08-28T18:53:26.731Z",
+      "observedAt": "2026-08-28T19:03:17.014Z",
       "reviewState": "source-observed"
     },
     {
@@ -2447,8 +2871,52 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "scotiabank-centre",
       "sourceName": "Scotiabank Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-08-28T18:53:26.762Z",
+      "observedAt": "2026-08-28T19:03:17.065Z",
       "reviewState": "source-observed"
+    },
+    {
+      "id": "symphony-nova-scotia-6402d5cbf4fc933f",
+      "title": "Handel's \"Dublin\" Messiah",
+      "startAt": "2026-12-18T23:30:00.000Z",
+      "endAt": "2026-12-18T23:30:00.000Z",
+      "allDay": false,
+      "venueName": "Rebecca Cohn",
+      "address": null,
+      "city": "Halifax",
+      "categories": [
+        "Music"
+      ],
+      "eventUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/rebecca-cohn-auditorium/handels-dublin-messiah/",
+      "ticketUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
+      "price": null,
+      "sourceId": "symphony-nova-scotia",
+      "sourceName": "Symphony Nova Scotia",
+      "sourceKind": "official_arts_calendar",
+      "sourceUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
+      "observedAt": "2026-08-28T19:03:24.401Z",
+      "reviewState": "source_observed"
+    },
+    {
+      "id": "symphony-nova-scotia-851dc4877962cd14",
+      "title": "Handel's \"Dublin\" Messiah",
+      "startAt": "2026-12-19T23:30:00.000Z",
+      "endAt": "2026-12-19T23:30:00.000Z",
+      "allDay": false,
+      "venueName": "Rebecca Cohn",
+      "address": null,
+      "city": "Halifax",
+      "categories": [
+        "Music"
+      ],
+      "eventUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/rebecca-cohn-auditorium/handels-dublin-messiah/",
+      "ticketUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
+      "price": null,
+      "sourceId": "symphony-nova-scotia",
+      "sourceName": "Symphony Nova Scotia",
+      "sourceKind": "official_arts_calendar",
+      "sourceUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
+      "observedAt": "2026-08-28T19:03:24.401Z",
+      "reviewState": "source_observed"
     },
     {
       "id": "light-house-arts-centre-ca84b7dd6bf5f015",
@@ -2470,7 +2938,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "light-house-arts-centre",
       "sourceName": "Light House Arts Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-08-28T18:53:27.290Z",
+      "observedAt": "2026-08-28T19:03:17.606Z",
       "reviewState": "source-observed"
     },
     {
@@ -2492,7 +2960,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "scotiabank-centre",
       "sourceName": "Scotiabank Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-08-28T18:53:26.762Z",
+      "observedAt": "2026-08-28T19:03:17.065Z",
       "reviewState": "source-observed"
     },
     {
@@ -2514,7 +2982,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "scotiabank-centre",
       "sourceName": "Scotiabank Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-08-28T18:53:26.762Z",
+      "observedAt": "2026-08-28T19:03:17.065Z",
       "reviewState": "source-observed",
       "alternateSources": [
         {
@@ -2543,7 +3011,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "scotiabank-centre",
       "sourceName": "Scotiabank Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-08-28T18:53:26.762Z",
+      "observedAt": "2026-08-28T19:03:17.065Z",
       "reviewState": "source-observed",
       "alternateSources": [
         {
@@ -2572,7 +3040,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "halifax-mooseheads-home",
       "sourceName": "Halifax Mooseheads Home Schedule",
       "sourceKind": "official_sports_schedule",
-      "observedAt": "2026-08-28T18:53:26.731Z",
+      "observedAt": "2026-08-28T19:03:17.014Z",
       "reviewState": "source-observed"
     },
     {
@@ -2594,7 +3062,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "scotiabank-centre",
       "sourceName": "Scotiabank Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-08-28T18:53:26.762Z",
+      "observedAt": "2026-08-28T19:03:17.065Z",
       "reviewState": "source-observed"
     },
     {
@@ -2616,7 +3084,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "halifax-mooseheads-home",
       "sourceName": "Halifax Mooseheads Home Schedule",
       "sourceKind": "official_sports_schedule",
-      "observedAt": "2026-08-28T18:53:26.731Z",
+      "observedAt": "2026-08-28T19:03:17.014Z",
       "reviewState": "source-observed"
     },
     {
@@ -2638,7 +3106,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "halifax-mooseheads-home",
       "sourceName": "Halifax Mooseheads Home Schedule",
       "sourceKind": "official_sports_schedule",
-      "observedAt": "2026-08-28T18:53:26.731Z",
+      "observedAt": "2026-08-28T19:03:17.014Z",
       "reviewState": "source-observed"
     },
     {
@@ -2661,7 +3129,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "light-house-arts-centre",
       "sourceName": "Light House Arts Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-08-28T18:53:27.194Z",
+      "observedAt": "2026-08-28T19:03:17.592Z",
       "reviewState": "source-observed"
     },
     {
@@ -2683,8 +3151,30 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "halifax-mooseheads-home",
       "sourceName": "Halifax Mooseheads Home Schedule",
       "sourceKind": "official_sports_schedule",
-      "observedAt": "2026-08-28T18:53:26.731Z",
+      "observedAt": "2026-08-28T19:03:17.014Z",
       "reviewState": "source-observed"
+    },
+    {
+      "id": "symphony-nova-scotia-54a396697c4c17a5",
+      "title": "The Extraordinary Women Of Venice",
+      "startAt": "2027-01-17T18:00:00.000Z",
+      "endAt": "2027-01-17T18:00:00.000Z",
+      "allDay": false,
+      "venueName": "Halifax United Church",
+      "address": null,
+      "city": "Halifax",
+      "categories": [
+        "Music"
+      ],
+      "eventUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/halifax-united-church/the-extraordinary-women-of-venice/",
+      "ticketUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
+      "price": null,
+      "sourceId": "symphony-nova-scotia",
+      "sourceName": "Symphony Nova Scotia",
+      "sourceKind": "official_arts_calendar",
+      "sourceUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
+      "observedAt": "2026-08-28T19:03:24.401Z",
+      "reviewState": "source_observed"
     },
     {
       "id": "halifax-mooseheads-home-c399b8ce558af317",
@@ -2705,8 +3195,52 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "halifax-mooseheads-home",
       "sourceName": "Halifax Mooseheads Home Schedule",
       "sourceKind": "official_sports_schedule",
-      "observedAt": "2026-08-28T18:53:26.731Z",
+      "observedAt": "2026-08-28T19:03:17.014Z",
       "reviewState": "source-observed"
+    },
+    {
+      "id": "symphony-nova-scotia-2ddbd5b9c7e292d5",
+      "title": "Rajaton Sings ABBA",
+      "startAt": "2027-01-22T23:30:00.000Z",
+      "endAt": "2027-01-22T23:30:00.000Z",
+      "allDay": false,
+      "venueName": "Rebecca Cohn",
+      "address": null,
+      "city": "Halifax",
+      "categories": [
+        "Music"
+      ],
+      "eventUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/rebecca-cohn-auditorium/rajaton-sings-abba/",
+      "ticketUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
+      "price": null,
+      "sourceId": "symphony-nova-scotia",
+      "sourceName": "Symphony Nova Scotia",
+      "sourceKind": "official_arts_calendar",
+      "sourceUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
+      "observedAt": "2026-08-28T19:03:24.402Z",
+      "reviewState": "source_observed"
+    },
+    {
+      "id": "symphony-nova-scotia-fc83a083d2ca39c7",
+      "title": "Rajaton Sings ABBA",
+      "startAt": "2027-01-23T18:00:00.000Z",
+      "endAt": "2027-01-23T18:00:00.000Z",
+      "allDay": false,
+      "venueName": "Rebecca Cohn",
+      "address": null,
+      "city": "Halifax",
+      "categories": [
+        "Music"
+      ],
+      "eventUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/rebecca-cohn-auditorium/rajaton-sings-abba/",
+      "ticketUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
+      "price": null,
+      "sourceId": "symphony-nova-scotia",
+      "sourceName": "Symphony Nova Scotia",
+      "sourceKind": "official_arts_calendar",
+      "sourceUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
+      "observedAt": "2026-08-28T19:03:24.402Z",
+      "reviewState": "source_observed"
     },
     {
       "id": "halifax-mooseheads-home-746bb63030ecec64",
@@ -2727,7 +3261,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "halifax-mooseheads-home",
       "sourceName": "Halifax Mooseheads Home Schedule",
       "sourceKind": "official_sports_schedule",
-      "observedAt": "2026-08-28T18:53:26.731Z",
+      "observedAt": "2026-08-28T19:03:17.014Z",
       "reviewState": "source-observed"
     },
     {
@@ -2749,8 +3283,30 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "halifax-mooseheads-home",
       "sourceName": "Halifax Mooseheads Home Schedule",
       "sourceKind": "official_sports_schedule",
-      "observedAt": "2026-08-28T18:53:26.731Z",
+      "observedAt": "2026-08-28T19:03:17.014Z",
       "reviewState": "source-observed"
+    },
+    {
+      "id": "symphony-nova-scotia-1b2a516112bd26f8",
+      "title": "Magnificent Mozart",
+      "startAt": "2027-01-28T23:30:00.000Z",
+      "endAt": "2027-01-28T23:30:00.000Z",
+      "allDay": false,
+      "venueName": "Rebecca Cohn",
+      "address": null,
+      "city": "Halifax",
+      "categories": [
+        "Arts"
+      ],
+      "eventUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/rebecca-cohn-auditorium/magnificent-mozart-2027/",
+      "ticketUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
+      "price": null,
+      "sourceId": "symphony-nova-scotia",
+      "sourceName": "Symphony Nova Scotia",
+      "sourceKind": "official_arts_calendar",
+      "sourceUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
+      "observedAt": "2026-08-28T19:03:24.402Z",
+      "reviewState": "source_observed"
     },
     {
       "id": "halifax-mooseheads-home-5e0dc918881f01b6",
@@ -2771,7 +3327,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "halifax-mooseheads-home",
       "sourceName": "Halifax Mooseheads Home Schedule",
       "sourceKind": "official_sports_schedule",
-      "observedAt": "2026-08-28T18:53:26.731Z",
+      "observedAt": "2026-08-28T19:03:17.014Z",
       "reviewState": "source-observed"
     },
     {
@@ -2794,7 +3350,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "light-house-arts-centre",
       "sourceName": "Light House Arts Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-08-28T18:53:27.313Z",
+      "observedAt": "2026-08-28T19:03:17.636Z",
       "reviewState": "source-observed"
     },
     {
@@ -2816,7 +3372,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "halifax-mooseheads-home",
       "sourceName": "Halifax Mooseheads Home Schedule",
       "sourceKind": "official_sports_schedule",
-      "observedAt": "2026-08-28T18:53:26.731Z",
+      "observedAt": "2026-08-28T19:03:17.014Z",
       "reviewState": "source-observed"
     },
     {
@@ -2838,8 +3394,30 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "scotiabank-centre",
       "sourceName": "Scotiabank Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-08-28T18:53:26.762Z",
+      "observedAt": "2026-08-28T19:03:17.065Z",
       "reviewState": "source-observed"
+    },
+    {
+      "id": "symphony-nova-scotia-b66854f44c3398ea",
+      "title": "Fiesta Española: Carmen & Capriccio espagnol",
+      "startAt": "2027-02-11T23:30:00.000Z",
+      "endAt": "2027-02-11T23:30:00.000Z",
+      "allDay": false,
+      "venueName": "Rebecca Cohn",
+      "address": null,
+      "city": "Halifax",
+      "categories": [
+        "Music"
+      ],
+      "eventUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/rebecca-cohn-auditorium/fiesta-espanola-carmen-capriccio-espagnol/",
+      "ticketUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
+      "price": null,
+      "sourceId": "symphony-nova-scotia",
+      "sourceName": "Symphony Nova Scotia",
+      "sourceKind": "official_arts_calendar",
+      "sourceUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
+      "observedAt": "2026-08-28T19:03:24.402Z",
+      "reviewState": "source_observed"
     },
     {
       "id": "halifax-mooseheads-home-2957947ea3d5600e",
@@ -2860,7 +3438,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "halifax-mooseheads-home",
       "sourceName": "Halifax Mooseheads Home Schedule",
       "sourceKind": "official_sports_schedule",
-      "observedAt": "2026-08-28T18:53:26.731Z",
+      "observedAt": "2026-08-28T19:03:17.014Z",
       "reviewState": "source-observed"
     },
     {
@@ -2882,7 +3460,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "halifax-mooseheads-home",
       "sourceName": "Halifax Mooseheads Home Schedule",
       "sourceKind": "official_sports_schedule",
-      "observedAt": "2026-08-28T18:53:26.731Z",
+      "observedAt": "2026-08-28T19:03:17.014Z",
       "reviewState": "source-observed"
     },
     {
@@ -2905,7 +3483,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "neptune-theatre",
       "sourceName": "Neptune Theatre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-08-28T18:53:37.478Z",
+      "observedAt": "2026-08-28T19:03:20.704Z",
       "reviewState": "source-observed"
     },
     {
@@ -2928,7 +3506,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "light-house-arts-centre",
       "sourceName": "Light House Arts Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-08-28T18:53:27.407Z",
+      "observedAt": "2026-08-28T19:03:17.648Z",
       "reviewState": "source-observed"
     },
     {
@@ -2951,8 +3529,30 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "light-house-arts-centre",
       "sourceName": "Light House Arts Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-08-28T18:53:27.411Z",
+      "observedAt": "2026-08-28T19:03:17.650Z",
       "reviewState": "source-observed"
+    },
+    {
+      "id": "symphony-nova-scotia-7cacc4265654d0ed",
+      "title": "Mozart + Le Chevalier",
+      "startAt": "2027-02-21T18:00:00.000Z",
+      "endAt": "2027-02-21T18:00:00.000Z",
+      "allDay": false,
+      "venueName": "Halifax United Church",
+      "address": null,
+      "city": "Halifax",
+      "categories": [
+        "Arts"
+      ],
+      "eventUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/halifax-united-church/mozart-le-chevalier/",
+      "ticketUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
+      "price": null,
+      "sourceId": "symphony-nova-scotia",
+      "sourceName": "Symphony Nova Scotia",
+      "sourceKind": "official_arts_calendar",
+      "sourceUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
+      "observedAt": "2026-08-28T19:03:24.402Z",
+      "reviewState": "source_observed"
     },
     {
       "id": "halifax-mooseheads-home-bc64ecbc5aefc4e7",
@@ -2973,8 +3573,52 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "halifax-mooseheads-home",
       "sourceName": "Halifax Mooseheads Home Schedule",
       "sourceKind": "official_sports_schedule",
-      "observedAt": "2026-08-28T18:53:26.731Z",
+      "observedAt": "2026-08-28T19:03:17.014Z",
       "reviewState": "source-observed"
+    },
+    {
+      "id": "symphony-nova-scotia-4f27d4ab70426d48",
+      "title": "NSYO: Curtain Up",
+      "startAt": "2027-02-27T18:00:00.000Z",
+      "endAt": "2027-02-27T18:00:00.000Z",
+      "allDay": false,
+      "venueName": "Halifax United Church",
+      "address": null,
+      "city": "Halifax",
+      "categories": [
+        "Music"
+      ],
+      "eventUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/halifax-united-church/nsyo-curtain-up/",
+      "ticketUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
+      "price": null,
+      "sourceId": "symphony-nova-scotia",
+      "sourceName": "Symphony Nova Scotia",
+      "sourceKind": "official_arts_calendar",
+      "sourceUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
+      "observedAt": "2026-08-28T19:03:24.403Z",
+      "reviewState": "source_observed"
+    },
+    {
+      "id": "symphony-nova-scotia-e6fcef1903caa72b",
+      "title": "Bravo Broadway!",
+      "startAt": "2027-02-27T23:30:00.000Z",
+      "endAt": "2027-02-27T23:30:00.000Z",
+      "allDay": false,
+      "venueName": "Rebecca Cohn",
+      "address": null,
+      "city": "Halifax",
+      "categories": [
+        "Music"
+      ],
+      "eventUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/rebecca-cohn-auditorium/bravo-broadway/",
+      "ticketUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
+      "price": null,
+      "sourceId": "symphony-nova-scotia",
+      "sourceName": "Symphony Nova Scotia",
+      "sourceKind": "official_arts_calendar",
+      "sourceUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
+      "observedAt": "2026-08-28T19:03:24.403Z",
+      "reviewState": "source_observed"
     },
     {
       "id": "halifax-mooseheads-home-9c675071041ace85",
@@ -2995,7 +3639,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "halifax-mooseheads-home",
       "sourceName": "Halifax Mooseheads Home Schedule",
       "sourceKind": "official_sports_schedule",
-      "observedAt": "2026-08-28T18:53:26.731Z",
+      "observedAt": "2026-08-28T19:03:17.014Z",
       "reviewState": "source-observed"
     },
     {
@@ -3017,8 +3661,30 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "halifax-mooseheads-home",
       "sourceName": "Halifax Mooseheads Home Schedule",
       "sourceKind": "official_sports_schedule",
-      "observedAt": "2026-08-28T18:53:26.731Z",
+      "observedAt": "2026-08-28T19:03:17.014Z",
       "reviewState": "source-observed"
+    },
+    {
+      "id": "symphony-nova-scotia-78b3932d33e95a2d",
+      "title": "Postcards From Italy: Rossini & Mendelssohn",
+      "startAt": "2027-03-11T23:30:00.000Z",
+      "endAt": "2027-03-11T23:30:00.000Z",
+      "allDay": false,
+      "venueName": "Rebecca Cohn",
+      "address": null,
+      "city": "Halifax",
+      "categories": [
+        "Music"
+      ],
+      "eventUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/rebecca-cohn-auditorium/postcards-from-italy-rossini-mendelssohn/",
+      "ticketUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
+      "price": null,
+      "sourceId": "symphony-nova-scotia",
+      "sourceName": "Symphony Nova Scotia",
+      "sourceKind": "official_arts_calendar",
+      "sourceUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
+      "observedAt": "2026-08-28T19:03:24.403Z",
+      "reviewState": "source_observed"
     },
     {
       "id": "light-house-arts-centre-4cbcb23d8a0dccd7",
@@ -3040,8 +3706,30 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "light-house-arts-centre",
       "sourceName": "Light House Arts Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-08-28T18:53:27.399Z",
+      "observedAt": "2026-08-28T19:03:17.655Z",
       "reviewState": "source-observed"
+    },
+    {
+      "id": "symphony-nova-scotia-abecea9b2a948a99",
+      "title": "Aquakultre & Symphony Nova Scotia",
+      "startAt": "2027-03-20T17:00:00.000Z",
+      "endAt": "2027-03-20T17:00:00.000Z",
+      "allDay": false,
+      "venueName": "Rebecca Cohn",
+      "address": null,
+      "city": "Halifax",
+      "categories": [
+        "Music"
+      ],
+      "eventUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/rebecca-cohn-auditorium/aquakultre-symphony-nova-scotia/",
+      "ticketUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
+      "price": null,
+      "sourceId": "symphony-nova-scotia",
+      "sourceName": "Symphony Nova Scotia",
+      "sourceKind": "official_arts_calendar",
+      "sourceUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
+      "observedAt": "2026-08-28T19:03:24.403Z",
+      "reviewState": "source_observed"
     },
     {
       "id": "halifax-mooseheads-home-ba57b1104c08b977",
@@ -3062,8 +3750,163 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "halifax-mooseheads-home",
       "sourceName": "Halifax Mooseheads Home Schedule",
       "sourceKind": "official_sports_schedule",
-      "observedAt": "2026-08-28T18:53:26.732Z",
+      "observedAt": "2026-08-28T19:03:17.014Z",
       "reviewState": "source-observed"
+    },
+    {
+      "id": "symphony-nova-scotia-48ccaaacda9c2e95",
+      "title": "Pranks, Jokes, & Hoaxes: Haydn & P.D.Q. Bach",
+      "startAt": "2027-04-01T22:30:00.000Z",
+      "endAt": "2027-04-01T22:30:00.000Z",
+      "allDay": false,
+      "venueName": "Rebecca Cohn",
+      "address": null,
+      "city": "Halifax",
+      "categories": [
+        "Music"
+      ],
+      "eventUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/rebecca-cohn-auditorium/pranks-jokes-hoaxes-haydn-pdq-bach/",
+      "ticketUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
+      "price": null,
+      "sourceId": "symphony-nova-scotia",
+      "sourceName": "Symphony Nova Scotia",
+      "sourceKind": "official_arts_calendar",
+      "sourceUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
+      "observedAt": "2026-08-28T19:03:24.404Z",
+      "reviewState": "source_observed"
+    },
+    {
+      "id": "symphony-nova-scotia-80440eed13ff5713",
+      "title": "Kitchen Party with Rum Ragged & Symphony Nova Scotia",
+      "startAt": "2027-04-09T22:30:00.000Z",
+      "endAt": "2027-04-09T22:30:00.000Z",
+      "allDay": false,
+      "venueName": "Rebecca Cohn",
+      "address": null,
+      "city": "Halifax",
+      "categories": [
+        "Music",
+        "Food & Drink"
+      ],
+      "eventUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/rebecca-cohn-auditorium/kitchen-party-with-rum-ragged-symphony-nova-scotia/",
+      "ticketUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
+      "price": null,
+      "sourceId": "symphony-nova-scotia",
+      "sourceName": "Symphony Nova Scotia",
+      "sourceKind": "official_arts_calendar",
+      "sourceUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
+      "observedAt": "2026-08-28T19:03:24.404Z",
+      "reviewState": "source_observed"
+    },
+    {
+      "id": "symphony-nova-scotia-9bd452a86a1a3ecf",
+      "title": "Four Seasons, Four Elements",
+      "startAt": "2027-04-18T17:00:00.000Z",
+      "endAt": "2027-04-18T17:00:00.000Z",
+      "allDay": false,
+      "venueName": "Halifax United Church",
+      "address": null,
+      "city": "Halifax",
+      "categories": [
+        "Music"
+      ],
+      "eventUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/halifax-united-church/four-seasons-four-elements/",
+      "ticketUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
+      "price": null,
+      "sourceId": "symphony-nova-scotia",
+      "sourceName": "Symphony Nova Scotia",
+      "sourceKind": "official_arts_calendar",
+      "sourceUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
+      "observedAt": "2026-08-28T19:03:24.404Z",
+      "reviewState": "source_observed"
+    },
+    {
+      "id": "symphony-nova-scotia-3d919e403c946163",
+      "title": "Vinyl Favourites of the '60s & '70s with Jim Witter",
+      "startAt": "2027-04-23T22:30:00.000Z",
+      "endAt": "2027-04-23T22:30:00.000Z",
+      "allDay": false,
+      "venueName": "Rebecca Cohn",
+      "address": null,
+      "city": "Halifax",
+      "categories": [
+        "Music"
+      ],
+      "eventUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/rebecca-cohn-auditorium/vinyl-favourites-of-the-60s-70s-with-jim-witter/",
+      "ticketUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
+      "price": null,
+      "sourceId": "symphony-nova-scotia",
+      "sourceName": "Symphony Nova Scotia",
+      "sourceKind": "official_arts_calendar",
+      "sourceUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
+      "observedAt": "2026-08-28T19:03:24.404Z",
+      "reviewState": "source_observed"
+    },
+    {
+      "id": "symphony-nova-scotia-839566373874004b",
+      "title": "Vinyl Favourites of the '60s & '70s with Jim Witter",
+      "startAt": "2027-04-24T17:00:00.000Z",
+      "endAt": "2027-04-24T17:00:00.000Z",
+      "allDay": false,
+      "venueName": "Rebecca Cohn",
+      "address": null,
+      "city": "Halifax",
+      "categories": [
+        "Music"
+      ],
+      "eventUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/rebecca-cohn-auditorium/vinyl-favourites-of-the-60s-70s-with-jim-witter/",
+      "ticketUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
+      "price": null,
+      "sourceId": "symphony-nova-scotia",
+      "sourceName": "Symphony Nova Scotia",
+      "sourceKind": "official_arts_calendar",
+      "sourceUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
+      "observedAt": "2026-08-28T19:03:24.405Z",
+      "reviewState": "source_observed"
+    },
+    {
+      "id": "symphony-nova-scotia-e0348570340c1fe0",
+      "title": "The Art of Friendship: Brahms & the Schumanns",
+      "startAt": "2027-04-29T22:30:00.000Z",
+      "endAt": "2027-04-29T22:30:00.000Z",
+      "allDay": false,
+      "venueName": "Rebecca Cohn",
+      "address": null,
+      "city": "Halifax",
+      "categories": [
+        "Arts"
+      ],
+      "eventUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/rebecca-cohn-auditorium/the-art-of-friendship-brahms-the-schumanns/",
+      "ticketUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
+      "price": null,
+      "sourceId": "symphony-nova-scotia",
+      "sourceName": "Symphony Nova Scotia",
+      "sourceKind": "official_arts_calendar",
+      "sourceUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
+      "observedAt": "2026-08-28T19:03:24.405Z",
+      "reviewState": "source_observed"
+    },
+    {
+      "id": "symphony-nova-scotia-7acf97a59671710b",
+      "title": "NSYO: Water Music",
+      "startAt": "2027-05-01T17:00:00.000Z",
+      "endAt": "2027-05-01T17:00:00.000Z",
+      "allDay": false,
+      "venueName": "Halifax United Church",
+      "address": null,
+      "city": "Halifax",
+      "categories": [
+        "Music"
+      ],
+      "eventUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/halifax-united-church/nsyo-water-music/",
+      "ticketUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
+      "price": null,
+      "sourceId": "symphony-nova-scotia",
+      "sourceName": "Symphony Nova Scotia",
+      "sourceKind": "official_arts_calendar",
+      "sourceUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
+      "observedAt": "2026-08-28T19:03:24.405Z",
+      "reviewState": "source_observed"
     },
     {
       "id": "neptune-theatre-7dcc35560803a5ab",
@@ -3084,427 +3927,96 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "neptune-theatre",
       "sourceName": "Neptune Theatre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-08-28T18:53:37.478Z",
+      "observedAt": "2026-08-28T19:03:20.704Z",
       "reviewState": "source-observed"
+    },
+    {
+      "id": "symphony-nova-scotia-f8249f20e94fff35",
+      "title": "Mozart + Handel",
+      "startAt": "2027-05-09T17:00:00.000Z",
+      "endAt": "2027-05-09T17:00:00.000Z",
+      "allDay": false,
+      "venueName": "Halifax United Church",
+      "address": null,
+      "city": "Halifax",
+      "categories": [
+        "Arts"
+      ],
+      "eventUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/halifax-united-church/mozart-handel/",
+      "ticketUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
+      "price": null,
+      "sourceId": "symphony-nova-scotia",
+      "sourceName": "Symphony Nova Scotia",
+      "sourceKind": "official_arts_calendar",
+      "sourceUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
+      "observedAt": "2026-08-28T19:03:24.405Z",
+      "reviewState": "source_observed"
+    },
+    {
+      "id": "symphony-nova-scotia-11061a8abc1e590f",
+      "title": "Lennie Gallant & Symphony Nova Scotia",
+      "startAt": "2027-05-14T22:30:00.000Z",
+      "endAt": "2027-05-14T22:30:00.000Z",
+      "allDay": false,
+      "venueName": "Rebecca Cohn",
+      "address": null,
+      "city": "Halifax",
+      "categories": [
+        "Music"
+      ],
+      "eventUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/rebecca-cohn-auditorium/lennie-gallant-symphony-nova-scotia/",
+      "ticketUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
+      "price": null,
+      "sourceId": "symphony-nova-scotia",
+      "sourceName": "Symphony Nova Scotia",
+      "sourceKind": "official_arts_calendar",
+      "sourceUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
+      "observedAt": "2026-08-28T19:03:24.405Z",
+      "reviewState": "source_observed"
     }
   ],
-  "sanitizedAt": "2026-08-28T18:53:38.541Z",
+  "sanitizedAt": "2026-08-28T19:05:09.690Z",
   "scopeAudit": {
-    "inputEvents": 172,
-    "keptEvents": 127,
-    "removedOutOfScope": 45,
-    "categoryReclassified": 39,
+    "inputEvents": 166,
+    "keptEvents": 166,
+    "removedOutOfScope": 0,
+    "categoryReclassified": 36,
     "allowedMunicipalities": [
       "Halifax",
       "Dartmouth",
       "Bedford"
     ],
-    "removedSample": [
+    "removedSample": []
+  },
+  "supplementalAt": "2026-08-28T19:05:09.624Z",
+  "supplementalAudit": {
+    "addedBeforeDedupe": 39,
+    "sourceStats": [
       {
-        "id": "https://novascotia.com/event/cooking-with-fire/#event",
-        "title": "Cooking with Fire: Waterfront Sunset & Dinner",
-        "sourceId": "tourism-ns-events",
-        "city": "Scots Bay",
-        "address": "5611 NS-358, Canning, NS B0P 1H0, Scots Bay, NS, CA",
-        "venueName": "Long Table Social Club",
-        "reason": "outside_halifax_metro_scope"
+        "sourceId": "halifax-convention-centre",
+        "sourceName": "Halifax Convention Centre",
+        "status": "ok",
+        "eventCount": 1,
+        "observedAt": "2026-08-28T19:03:24.176Z",
+        "durationMs": 901
       },
       {
-        "id": "tourism-ns-events-5dd813db152cc906",
-        "title": "Gold Rush! Escape Room at Sherbrooke Village",
-        "sourceId": "tourism-ns-events",
-        "city": "Halifax",
-        "address": "42 Main St., Sherbrooke, NS, B0J 3C0, Canada",
-        "venueName": "Sherbrooke Village",
-        "reason": "outside_halifax_metro_scope"
+        "sourceId": "symphony-nova-scotia",
+        "sourceName": "Symphony Nova Scotia",
+        "status": "ok",
+        "eventCount": 35,
+        "observedAt": "2026-08-28T19:03:24.406Z",
+        "durationMs": 229
       },
       {
-        "id": "tourism-ns-events-0d89f4ce45dfa3e1",
-        "title": "Baddeck Gathering Ceilidhs",
-        "sourceId": "tourism-ns-events",
-        "city": "Halifax",
-        "address": "6 Margaree Road, Baddeck, Baddeck, NS, Canada",
-        "venueName": "St. Michael's Parish Hall",
-        "reason": "outside_halifax_metro_scope"
-      },
-      {
-        "id": "https://novascotia.com/event/the-barn-concert-ceilidhs-normaway-inn-music-room-series/#event",
-        "title": "The Barn Music Concert-Ceilidhs and Normaway Inn Music Room Series",
-        "sourceId": "tourism-ns-events",
-        "city": "Margaree Valley",
-        "address": "691 Egypt Rd, Margaree Valley, NS, B0E 2C0, Canada, Margaree Valley, NS, CA",
-        "venueName": "The Barn music venue at the Normaway Inn",
-        "reason": "outside_halifax_metro_scope"
-      },
-      {
-        "id": "https://novascotia.com/event/traditional-music-on-thursdays-at-port-royal/#event",
-        "title": "Traditional Music on Thursdays at Port-Royal",
-        "sourceId": "tourism-ns-events",
-        "city": "Port Royal",
-        "address": "53 Historic Ln, Granville Ferry, NS, B0S 1K0, Canada, Port Royal, NS, CA",
-        "venueName": "Port-Royal National Historic Site",
-        "reason": "outside_halifax_metro_scope"
-      },
-      {
-        "id": "https://novascotia.com/event/ceilidh-at-highland-village/#event",
-        "title": "Céilidh at Highland Village",
-        "sourceId": "tourism-ns-events",
-        "city": "Iona",
-        "address": "4119 NS-223, Iona, NS B2C 1A3, Iona, NS, CA",
-        "venueName": "Highland Village Museum",
-        "reason": "outside_halifax_metro_scope"
-      },
-      {
-        "id": "https://novascotia.com/event/spors-beag-at-highland-village/#event",
-        "title": "Spòrs Beag at Highland Village",
-        "sourceId": "tourism-ns-events",
-        "city": "Iona",
-        "address": "4119 NS-223, Iona, NS B2C 1A3, Iona, NS, CA",
-        "venueName": "Highland Village Museum",
-        "reason": "outside_halifax_metro_scope"
-      },
-      {
-        "id": "https://novascotia.com/event/sip-shuck-at-inverary-resort/#event",
-        "title": "Sip & Shuck at Inverary Resort",
-        "sourceId": "tourism-ns-events",
-        "city": "Baddeck",
-        "address": "368 Shore Rd, Baddeck, NS B0E 1B0, Baddeck, NS, CA",
-        "venueName": "Inverary Resort",
-        "reason": "outside_halifax_metro_scope"
-      },
-      {
-        "id": "tourism-ns-events-6b39b4b79036459b",
-        "title": "Fiddle Fridays at The Barn with Howie MacDonald & Friends",
-        "sourceId": "tourism-ns-events",
-        "city": "Halifax",
-        "address": "691 Egypt Road, Margaree Valley, NS, B0E 2C0, Canada",
-        "venueName": "Margaree Valley",
-        "reason": "outside_halifax_metro_scope"
-      },
-      {
-        "id": "https://novascotia.com/event/guided-storytelling-tour-milling-frolic-experience-at-highland-village/#event",
-        "title": "Guided Storytelling Tour & Milling Frolic Experience at Highland Village",
-        "sourceId": "tourism-ns-events",
-        "city": "Iona",
-        "address": "4119 NS-223, Iona, NS B2C 1A3, Iona, NS, CA",
-        "venueName": "Highland Village Museum",
-        "reason": "outside_halifax_metro_scope"
-      },
-      {
-        "id": "https://novascotia.com/event/land-and-culture-walk-at-highland-village/#event",
-        "title": "Land and Culture Walk at Highland Village",
-        "sourceId": "tourism-ns-events",
-        "city": "Iona",
-        "address": "4119 NS-223, Iona, NS B2C 1A3, Iona, NS, CA",
-        "venueName": "Highland Village Museum",
-        "reason": "outside_halifax_metro_scope"
-      },
-      {
-        "id": "https://novascotia.com/event/thursday-night-lobster-suppers-at-white-point-beach-resort/#event",
-        "title": "Thursday Night Lobster Suppers at White Point Beach Resort",
-        "sourceId": "tourism-ns-events",
-        "city": "White Point (Liverpool area)",
-        "address": "75 White Point Rd #2, Hunts Point, NS B0T 1G0, White Point (Liverpool area), NS, CA",
-        "venueName": "White Point Beach Resort",
-        "reason": "outside_halifax_metro_scope"
-      },
-      {
-        "id": "https://novascotia.com/event/nova-scotia-flower-festival/#event",
-        "title": "Nova Scotia Flower Festival",
-        "sourceId": "tourism-ns-events",
-        "city": "Truro",
-        "address": "699 Onslow Rd, Upper Onslow, NS B6L 5L5, Truro, NS, CA",
-        "venueName": "Riverbreeze Farm & Cornmaze",
-        "reason": "outside_halifax_metro_scope"
-      },
-      {
-        "id": "https://novascotia.com/event/sherbrooke-village-harvest-feast/#event",
-        "title": "Sherbrooke Village Harvest Feast",
-        "sourceId": "tourism-ns-events",
-        "city": "Sherbrooke",
-        "address": "42 Main St, Sherbrooke, NS B2H 1E4, Sherbrooke, NS, CA",
-        "venueName": "Sherbrooke Village Museum",
-        "reason": "outside_halifax_metro_scope"
-      },
-      {
-        "id": "https://novascotia.com/event/grandmother-moon-ceremony-at-cheticamp-campground/#event",
-        "title": "Grandmother Moon Ceremony at Chéticamp Campground",
-        "sourceId": "tourism-ns-events",
-        "city": "Chéticamp",
-        "address": "Chéticamp Campground, Chéticamp, NS, Canada, Chéticamp, NS, CA",
-        "venueName": "Chéticamp Campground",
-        "reason": "outside_halifax_metro_scope"
-      },
-      {
-        "id": "https://novascotia.com/event/nova-hollandia-reenactment-at-fort-anne-national-historic-site/#event",
-        "title": "Nova Hollandia Reenactment at Fort Anne National Historic Site",
-        "sourceId": "tourism-ns-events",
-        "city": "Annapolis Royal",
-        "address": "323 St George St, Annapolis Royal, NS B0S 1K0, Annapolis Royal, NS, CA",
-        "venueName": "Fort Anne National Historic Site",
-        "reason": "outside_halifax_metro_scope"
-      },
-      {
-        "id": "https://novascotia.com/event/hope-for-wildlifes-annual-open-house/#event",
-        "title": "Hope for Wildlife’s Annual Open House",
-        "sourceId": "tourism-ns-events",
-        "city": "Seaforth",
-        "address": "5909 Highway 207, Seaforth, Nova Scotia, B0J 2L0, Canada, Seaforth, NS, CA",
-        "venueName": "Hope for Wildlife",
-        "reason": "outside_halifax_metro_scope"
-      },
-      {
-        "id": "https://novascotia.com/event/parkas-great-sleepover-fortress-of-louisbourg-national-historic-site/#event",
-        "title": "Parka’s Great Sleepover – Fortress of Louisbourg National Historic Site",
-        "sourceId": "tourism-ns-events",
-        "city": "Louisbourg",
-        "address": "58 Wolfe Street, Louisbourg, NS, B1C 2J2, Canada, Louisbourg, NS, CA",
-        "venueName": "Fortress of Louisbourg National Historic Site",
-        "reason": "outside_halifax_metro_scope"
-      },
-      {
-        "id": "https://novascotia.com/event/old-man-luedecke-with-rose-morrison/#event",
-        "title": "Old Man Luedecke with Rose Morrison",
-        "sourceId": "tourism-ns-events",
-        "city": "Chester",
-        "address": "22 Pleasant St, Chester, NS B2Y 1G4, Chester, NS, CA",
-        "venueName": "Chester Playhouse",
-        "reason": "outside_halifax_metro_scope"
-      },
-      {
-        "id": "tourism-ns-events-2cf36350a7852eeb",
-        "title": "Berwick & District Gala Days",
-        "sourceId": "tourism-ns-events",
-        "city": "Halifax",
-        "address": null,
-        "venueName": null,
-        "reason": "outside_halifax_metro_scope"
-      },
-      {
-        "id": "tourism-ns-events-bff4ad41a8964090",
-        "title": "Wharf Rat Rally",
-        "sourceId": "tourism-ns-events",
-        "city": "Halifax",
-        "address": "7 Birch St, Digby, NS, B0V 1A0, Canada",
-        "venueName": "Wharf Rat Rally HQ",
-        "reason": "outside_halifax_metro_scope"
-      },
-      {
-        "id": "tourism-ns-events-85483d33f0182377",
-        "title": "Acoustic Roots Festival",
-        "sourceId": "tourism-ns-events",
-        "city": "Halifax",
-        "address": "4581 Grand Mira North Road, Huntington, NS, B1K 1V5, Canada",
-        "venueName": "Two Rivers Wildlife Park",
-        "reason": "outside_halifax_metro_scope"
-      },
-      {
-        "id": "https://novascotia.com/event/labour-day-festivities-at-ross-ferry-marine-park/#event",
-        "title": "Labour Day festivities at Ross Ferry Marine Park",
-        "sourceId": "tourism-ns-events",
-        "city": "Ross Ferry",
-        "address": "9685 Kempt Head Rd, Ross Ferry, NS B1X 1N9, Ross Ferry, NS, CA",
-        "venueName": "Ross Ferry Marine Park",
-        "reason": "outside_halifax_metro_scope"
-      },
-      {
-        "id": "https://novascotia.com/event/free-family-fun-day-in-privateer-park/#event",
-        "title": "Free Family Fun Day in Privateer Park",
-        "sourceId": "tourism-ns-events",
-        "city": "Liverpool",
-        "address": "94 Henry Hensey Dr, Liverpool, NS B0T 1P0, Liverpool, NS, CA",
-        "venueName": "Privateer Park",
-        "reason": "outside_halifax_metro_scope"
-      },
-      {
-        "id": "https://novascotia.com/event/hike-the-highlands-festival/#event",
-        "title": "Hike the Highlands Festival 2026",
-        "sourceId": "tourism-ns-events",
-        "city": "Ingonish",
-        "address": "35981 Cabot Trail, Ingonish, NS, Canada, Ingonish, NS, CA",
-        "venueName": "St. John's Hall, Ingonish",
-        "reason": "outside_halifax_metro_scope"
-      },
-      {
-        "id": "https://novascotia.com/event/keji-multisport-festival/#event",
-        "title": "Keji Multisport Festival",
-        "sourceId": "tourism-ns-events",
-        "city": "Maitland Bridge",
-        "address": "3005 Kejimkujik Main Parkway, Maitland Bridge, NS, B0T 1B0, Canada, Maitland Bridge, NS, CA",
-        "venueName": "Kejimkujik National Park and National Historic Site",
-        "reason": "outside_halifax_metro_scope"
-      },
-      {
-        "id": "https://novascotia.com/event/windsor-garlic-fest/#event",
-        "title": "Windsor Garlic Fest",
-        "sourceId": "tourism-ns-events",
-        "city": "Windsor",
-        "address": "Gerrish Street, Windsor, Nova Scotia, Canada, Windsor, NS, CA",
-        "venueName": "Gerrish Street, downtown Windsor",
-        "reason": "outside_halifax_metro_scope"
-      },
-      {
-        "id": "https://novascotia.com/event/musique-royale-concert/#event",
-        "title": "Musique Royale Concert",
-        "sourceId": "tourism-ns-events",
-        "city": "Lake Charlotte",
-        "address": "5435 Clam Harbour Rd, Lake Charlotte, NS, B0J 2L0, Canada, Lake Charlotte, NS, CA",
-        "venueName": "Memory Lane Heritage Village",
-        "reason": "outside_halifax_metro_scope"
-      },
-      {
-        "id": "https://novascotia.com/event/asbury-short-film-concert/#event",
-        "title": "Asbury Short Film Concert",
-        "sourceId": "tourism-ns-events",
-        "city": "Chester",
-        "address": "22 Pleasant St, Chester, B2Y 1G4, Chester, NS, CA",
-        "venueName": "Chester Playhouse",
-        "reason": "outside_halifax_metro_scope"
-      },
-      {
-        "id": "https://novascotia.com/event/harvest-moon-music-festival-pijinuiskaq-paddle-festival/#event",
-        "title": "Harvest Moon Music Festival & Pijinuiskaq Paddle Festival",
-        "sourceId": "tourism-ns-events",
-        "city": "Bridgewater",
-        "address": "480 King St, Bridgewater, NS B4V 1B2, Bridgewater, NS, CA",
-        "venueName": "Pijinuiskaq Park",
-        "reason": "outside_halifax_metro_scope"
-      },
-      {
-        "id": "https://novascotia.com/event/the-kempt-shore-appreciation-campout/#event",
-        "title": "The Kempt Shore Appreciation Campout",
-        "sourceId": "tourism-ns-events",
-        "city": "Kempt Shore",
-        "address": "5701 Hwy. 215, Kempt Shore, Hants County, Nova Scotia, Kempt Shore, NS, B0N 2A0, Canada, Kempt Shore, NS, CA",
-        "venueName": "Kempt Shore Ocean View Campground",
-        "reason": "outside_halifax_metro_scope"
-      },
-      {
-        "id": "https://novascotia.com/event/bridgewaters-harvest-moon-music-festival/#event",
-        "title": "Bridgewater’s 5th Annual Harvest Moon Music Festival – Presented by Arby’s",
-        "sourceId": "tourism-ns-events",
-        "city": "Bridgewater",
-        "address": "480 King St, Bridgewater, NS B4V 1B2, Bridgewater, NS, CA",
-        "venueName": "Pijinuiskaq Park",
-        "reason": "outside_halifax_metro_scope"
-      },
-      {
-        "id": "https://novascotia.com/event/lunenburg-doc-fest/#event",
-        "title": "Lunenburg Doc Fest",
-        "sourceId": "tourism-ns-events",
-        "city": "Lunenburg",
-        "address": "Lunenburg, Nova Scotia, Lunenburg, NS, CA",
-        "venueName": "Various locations in Lunenburg",
-        "reason": "outside_halifax_metro_scope"
-      },
-      {
-        "id": "https://novascotia.com/event/cape-breton-pro-rodeo/#event",
-        "title": "Cape Breton Pro Rodeo",
-        "sourceId": "tourism-ns-events",
-        "city": "Sydney",
-        "address": "481 George St, Sydney, NS B1P 1K5, Sydney, NS, CA",
-        "venueName": "Centre 200",
-        "reason": "outside_halifax_metro_scope"
-      },
-      {
-        "id": "https://novascotia.com/event/a-world-of-colour-quilt-show-and-sale/#event",
-        "title": "A World of Colour, Quilt Show and Sale",
-        "sourceId": "tourism-ns-events",
-        "city": "Mahone Bay",
-        "address": "45 School Street, Mahone Bay, NS, B0J 2E0, Canada, Mahone Bay, NS, CA",
-        "venueName": "Mahone Bay Centre",
-        "reason": "outside_halifax_metro_scope"
-      },
-      {
-        "id": "https://novascotia.com/event/paranormal-investigation-at-the-fortress-all-ages-event/#event",
-        "title": "Paranormal Investigation at the Fortress – all ages event",
-        "sourceId": "tourism-ns-events",
-        "city": "Louisbourg",
-        "address": "7495 Main St, Louisbourg, NS B1C 1H6, Louisbourg, NS, CA",
-        "venueName": "Fortress of Louisbourg National Historic Site",
-        "reason": "outside_halifax_metro_scope"
-      },
-      {
-        "id": "https://novascotia.com/event/honey-harvest-festival/#event",
-        "title": "Honey Harvest Festival",
-        "sourceId": "tourism-ns-events",
-        "city": "Avondale",
-        "address": "15 Belmont Rd, Newport, Nova Scotia, B0N 2A0, Canada, Avondale, NS, CA",
-        "venueName": "Avon Spirit Shipyard",
-        "reason": "outside_halifax_metro_scope"
-      },
-      {
-        "id": "https://novascotia.com/event/the-once-chester-playhouse/#event",
-        "title": "The Once at Chester Playhouse",
-        "sourceId": "tourism-ns-events",
-        "city": "Chester",
-        "address": "22 Pleasant St, Chester, NS B2Y 1G4, Chester, NS, CA",
-        "venueName": "Chester Playhouse",
-        "reason": "outside_halifax_metro_scope"
-      },
-      {
-        "id": "https://novascotia.com/event/surfside-studio-tour/#event",
-        "title": "Surfside Studio Tour",
-        "sourceId": "tourism-ns-events",
-        "city": "Seaforth",
-        "address": "Seaforth, NS, CA",
-        "venueName": null,
-        "reason": "outside_halifax_metro_scope"
-      },
-      {
-        "id": "tourism-ns-events-d57002e06a52dab8",
-        "title": "Nova Scotia Forest Festival",
-        "sourceId": "tourism-ns-events",
-        "city": "Halifax",
-        "address": "5435 Clam Harbour Rd, Lake Charlotte, NS, B0J 2L0, Canada",
-        "venueName": "Memory Lane Heritage Village",
-        "reason": "outside_halifax_metro_scope"
-      },
-      {
-        "id": "https://novascotia.com/event/celtic-colours-international-festival/#event",
-        "title": "Celtic Colours International Festival",
-        "sourceId": "tourism-ns-events",
-        "city": "Baddeck",
-        "address": "Baddeck, NS, CA",
-        "venueName": null,
-        "reason": "outside_halifax_metro_scope"
-      },
-      {
-        "id": "https://novascotia.com/event/don-ross-julie-malia/#event",
-        "title": "Don Ross & Julie Malía",
-        "sourceId": "tourism-ns-events",
-        "city": "Chester",
-        "address": "22 Pleasant St, Chester, B0J 1J0, Chester, NS, CA",
-        "venueName": "Chester Playhouse",
-        "reason": "outside_halifax_metro_scope"
-      },
-      {
-        "id": "https://novascotia.com/event/memory-lane-fibre-arts-festival/#event",
-        "title": "Memory Lane Fibre Arts Festival",
-        "sourceId": "tourism-ns-events",
-        "city": "Lake Charlotte",
-        "address": "5435 Clam Harbour Rd, Lake Charlotte, NS, B0J 2L0, Canada, Lake Charlotte, NS, CA",
-        "venueName": "Memory Lane Heritage Village",
-        "reason": "outside_halifax_metro_scope"
-      },
-      {
-        "id": "https://novascotia.com/event/traditional-1940s-christmas-dinners/#event",
-        "title": "Traditional 1940s Christmas Dinners",
-        "sourceId": "tourism-ns-events",
-        "city": "Lake Charlotte",
-        "address": "5435 Clam Harbour Rd, Lake Charlotte, NS, B0J 2L0, Canada, Lake Charlotte, NS, CA",
-        "venueName": "Memory Lane Heritage Village",
-        "reason": "outside_halifax_metro_scope"
-      },
-      {
-        "id": "https://novascotia.com/event/memory-lane-heritage-village-christmas-walk/#event",
-        "title": "Memory Lane Heritage Village Christmas Walk",
-        "sourceId": "tourism-ns-events",
-        "city": "Lake Charlotte",
-        "address": "5435 Clam Harbour Rd, Lake Charlotte, NS, B0J 2L0, Canada, Lake Charlotte, NS, CA",
-        "venueName": "Memory Lane Heritage Village",
-        "reason": "outside_halifax_metro_scope"
+        "sourceId": "halifax-public-libraries",
+        "sourceName": "Halifax Public Libraries",
+        "status": "ok",
+        "eventCount": 3,
+        "observedAt": "2026-08-28T19:05:09.620Z",
+        "durationMs": 105213
       }
-    ]
+    ],
+    "failures": []
   }
 };
