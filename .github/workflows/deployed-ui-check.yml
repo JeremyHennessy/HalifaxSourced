@@ -30,6 +30,7 @@ jobs:
           npx playwright install --with-deps chromium
 
       - name: Verify deployed Halifax Sourced
+        # This QA-only workflow validates the currently published GitHub Pages site.
         env:
           APP_URL: https://jeremyhennessy.github.io/HalifaxSourced
         run: node scripts/verify-ui.mjs
