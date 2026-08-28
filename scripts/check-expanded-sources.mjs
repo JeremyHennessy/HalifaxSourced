@@ -10,7 +10,9 @@ async function loadWindowScript(path) {
 }
 
 const catalog = JSON.parse(await readFile(new URL("../data/build/catalog.json", import.meta.url), "utf8"));
-const restaurantIds = new Set((catalog.restaurants || []).map((restaurant) => restaurant.id));
+const discoveredWindow = await loadWindowScript("data/discovered-restaurants.js").catch(() => ({ HALIFAX_DISCOVERED_RESTAURANTS: [] }));
+const discoveredRestaurants = Array.isArray(discoveredWindow.HALIFAX_DISCOVERED_RESTAURANTS) ? discoveredWindow.HALIFAX_DISCOVERED_RESTAURANTS : [];
+const restaurantIds = new Set([...(catalog.restaurants || []), ...discoveredRestaurants].map((restaurant) => restaurant.id));
 const firstPartyWindow = await loadWindowScript("data/first-party-sources.js");
 const feedWindow = await loadWindowScript("data/website-feed-signals.js");
 const socialWindow = await loadWindowScript("data/social-signals.js");
@@ -22,6 +24,18 @@ const feedSignals = Array.isArray(feedPayload.signals) ? feedPayload.signals : [
 const socialSignals = Array.isArray(socialPayload.signals) ? socialPayload.signals : [];
 const failures = [];
 const warnings = [];
+
+const socialHosts = {
+  facebook: /(^|\.)facebook\.com$/i,
+  instagram: /(^|\.)instagram\.com$/i,
+  x: /(^|\.)(x|twitter)\.com$/i,
+  tiktok: /(^|\.)tiktok\.com$/i,
+  youtube: /(^|\.)(youtube\.com|youtu\.be)$/i,
+  threads: /(^|\.)threads\.net$/i,
+  linkedin: /(^|\.)linkedin\.com$/i,
+  bluesky: /(^|\.)bsky\.app$/i,
+  linktree: /(^|\.)linktr\.ee$/i
+};
 
 function validUrl(value) {
   try {
@@ -50,11 +64,16 @@ for (const record of records) {
     continue;
   }
   for (const profile of record.socialProfiles || []) {
-    const expectedHost = profile.platform === "facebook" ? /(^|\.)facebook\.com$/i : profile.platform === "instagram" ? /(^|\.)instagram\.com$/i : null;
     let host = "";
     try { host = new URL(profile.url).hostname; } catch {}
+    const expectedHost = socialHosts[profile.platform];
     if (!expectedHost || !expectedHost.test(host) || !profile.handle || profile.reviewState !== "verified_link" || profile.associationBasis !== "linked_from_official_website") {
       failures.push({ type: "invalid_social_profile_discovery", restaurantId: record.restaurantId, platform: profile.platform, url: profile.url });
+    }
+  }
+  for (const related of record.relatedLinks || []) {
+    if (!validUrl(related.url) || !["reservations", "ordering", "menu", "events", "newsletter", "tickets"].includes(related.kind) || related.reviewState !== "verified_link" || related.associationBasis !== "linked_from_official_website") {
+      failures.push({ type: "invalid_related_link_discovery", restaurantId: record.restaurantId, kind: related.kind, url: related.url });
     }
   }
   for (const feed of record.feeds || []) {
@@ -65,7 +84,7 @@ for (const record of records) {
 const duplicateFeedSignals = duplicates(feedSignals, (signal) => `${signal.restaurantId}|${signal.postUrl}`);
 if (duplicateFeedSignals.length) failures.push({ type: "duplicate_website_feed_signals", values: duplicateFeedSignals.slice(0, 30) });
 for (const signal of feedSignals) {
-  if (!restaurantIds.has(signal.restaurantId) || !validUrl(signal.postUrl) || !validUrl(signal.feedUrl) || !validDate(signal.observedAt) || !hasSignalMatches(signal.signalMatches) || signal.sourceKind !== "official_feed") {
+  if (!restaurantIds.has(signal.restaurantId) || !validUrl(signal.postUrl) || !validUrl(signal.feedUrl) || !validDate(signal.observedAt) || !hasSignalMatches(signal.signalMatches) || signal.sourceKind !== "official_feed" || signal.associationBasis !== "unique_feed_link_from_official_website") {
     failures.push({ type: "invalid_website_feed_signal", restaurantId: signal.restaurantId, postUrl: signal.postUrl });
   }
   if (Object.hasOwn(signal, "description") || Object.hasOwn(signal, "summary") || Object.hasOwn(signal, "content")) failures.push({ type: "website_feed_raw_body_retained", restaurantId: signal.restaurantId, postUrl: signal.postUrl });
@@ -74,7 +93,7 @@ for (const signal of feedSignals) {
 const duplicateSocialSignals = duplicates(socialSignals, (signal) => `${signal.platform}|${signal.restaurantId}|${signal.postId}`);
 if (duplicateSocialSignals.length) failures.push({ type: "duplicate_social_signals", values: duplicateSocialSignals.slice(0, 30) });
 for (const signal of socialSignals) {
-  if (!restaurantIds.has(signal.restaurantId) || !["facebook", "instagram"].includes(signal.platform) || !validUrl(signal.profileUrl) || !validUrl(signal.postUrl) || !validDate(signal.publishedAt) || !validDate(signal.observedAt) || !hasSignalMatches(signal.signalMatches) || signal.reviewState !== "api_observed" || !String(signal.sourceKind || "").startsWith("meta_graph_api") || signal.associationBasis !== "linked_from_official_website") {
+  if (!restaurantIds.has(signal.restaurantId) || !["facebook", "instagram"].includes(signal.platform) || !validUrl(signal.profileUrl) || !validUrl(signal.postUrl) || !validDate(signal.publishedAt) || !validDate(signal.observedAt) || !hasSignalMatches(signal.signalMatches) || signal.reviewState !== "api_observed" || !String(signal.sourceKind || "").startsWith("meta_graph_api") || signal.associationBasis !== "unique_profile_link_from_official_website") {
     failures.push({ type: "invalid_social_signal", restaurantId: signal.restaurantId, platform: signal.platform, postId: signal.postId });
   }
   if (Object.hasOwn(signal, "caption") || Object.hasOwn(signal, "message") || Object.hasOwn(signal, "text")) failures.push({ type: "social_raw_post_text_retained", restaurantId: signal.restaurantId, platform: signal.platform, postId: signal.postId });
@@ -82,14 +101,27 @@ for (const signal of socialSignals) {
 
 if (socialPayload.credentialState?.facebook === "missing") warnings.push({ type: "facebook_api_credentials_missing" });
 if (socialPayload.credentialState?.instagram === "missing") warnings.push({ type: "instagram_api_credentials_missing" });
+if ((socialPayload.sharedProfileAssociationsSkipped || 0) > 0) warnings.push({ type: "shared_brand_social_profiles_excluded", count: socialPayload.sharedProfileAssociationsSkipped });
+if ((feedPayload.sharedFeedUrlsSkipped || 0) > 0) warnings.push({ type: "shared_brand_feeds_excluded", count: feedPayload.sharedFeedUrlsSkipped });
 
+const platformCounts = {};
+for (const record of records) for (const profile of record.socialProfiles || []) platformCounts[profile.platform] = (platformCounts[profile.platform] || 0) + 1;
+const relatedKindCounts = {};
+for (const record of records) for (const link of record.relatedLinks || []) relatedKindCounts[link.kind] = (relatedKindCounts[link.kind] || 0) + 1;
 const report = {
   generatedAt: new Date().toISOString(),
   counts: {
     firstPartyRecords: records.length,
     socialProfiles: records.reduce((sum, record) => sum + (record.socialProfiles?.length || 0), 0),
+    platformCounts,
+    relatedLinks: records.reduce((sum, record) => sum + (record.relatedLinks?.length || 0), 0),
+    relatedKindCounts,
     websiteFeeds: records.reduce((sum, record) => sum + (record.feeds?.length || 0), 0),
+    uniqueRestaurantFeeds: feedPayload.uniqueRestaurantFeeds ?? null,
+    sharedFeedUrlsSkipped: feedPayload.sharedFeedUrlsSkipped ?? 0,
     websiteFeedSignals: feedSignals.length,
+    uniqueRestaurantSocialProfiles: socialPayload.uniqueRestaurantProfiles ?? null,
+    sharedProfileAssociationsSkipped: socialPayload.sharedProfileAssociationsSkipped ?? 0,
     socialSignals: socialSignals.length
   },
   credentialState: socialPayload.credentialState || null,
@@ -100,7 +132,7 @@ const report = {
 await mkdir(new URL("../artifacts", import.meta.url), { recursive: true });
 await writeFile(new URL("../artifacts/expanded-source-integrity-report.json", import.meta.url), JSON.stringify(report, null, 2));
 console.log(JSON.stringify(report.counts, null, 2));
-if (warnings.length) console.warn(`Expanded source warnings: ${warnings.map((warning) => warning.type).join(", ")}`);
+if (warnings.length) console.warn(`Expanded source warnings: ${warnings.map((warning) => `${warning.type}${warning.count ? `=${warning.count}` : ""}`).join(", ")}`);
 if (failures.length) {
   console.error(JSON.stringify(failures.slice(0, 30), null, 2));
   process.exit(1);

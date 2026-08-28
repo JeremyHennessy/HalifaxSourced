@@ -2,7 +2,11 @@
 function renderHome() {
   const featured = restaurants.slice().sort((a, b) => (b.score || 0) - (a.score || 0)).slice(0, 5);
   const specialLeads = restaurants.filter((restaurant) => restaurant.hasSpecial).slice(0, 4);
-  const eventLeads = restaurants.filter((restaurant) => restaurant.hasEvent).slice(0, 4);
+  const cityEventItems = homeUpcomingCityEvents().slice(0, 4);
+  const openingLeads = restaurants
+    .filter((restaurant) => restaurant.sourceLayer === "local_discovery" || restaurant.hasOpening)
+    .sort((a, b) => String(b.freshnessDate || b.signal?.observedAt || "").localeCompare(String(a.freshnessDate || a.signal?.observedAt || "")))
+    .slice(0, 4);
   const neighbourhoodCards = ["Downtown", "North End", "Dartmouth", "Waterfront"];
 
   appView.innerHTML = `
@@ -11,10 +15,10 @@ function renderHome() {
         <div class="hero-copy">
           <span class="eyebrow">Halifax, Nova Scotia</span>
           <h1>Local flavour.<br />Coastal character.</h1>
-          <p>Discover restaurants, menus, specials, events, patios, and local favourites across Halifax.</p>
+          <p>Discover restaurants, menus, specials, city events, patios, new openings, and local favourites across Halifax.</p>
           <div class="hero-actions">
             <a class="button primary" href="#explore">Explore restaurants</a>
-            <a class="button secondary" href="#events">View events</a>
+            <a class="button secondary" href="#events">What's on</a>
           </div>
           <div class="hero-proof"><span>✓</span> Source-backed local discovery</div>
         </div>
@@ -34,17 +38,22 @@ function renderHome() {
 
     <section class="page-shell triptych section-block">
       <div class="panel-card">
-        ${miniHeader("Events to check", "#events")}
-        <div class="lead-list">${eventLeads.length ? eventLeads.map(eventLeadRow).join("") : emptyLead("No event-source leads are loaded yet.")}</div>
+        ${miniHeader("What's on next", "#events")}
+        <div class="lead-list">${cityEventItems.length ? cityEventItems.map(cityEventLeadRow).join("") : emptyLead("City-wide event listings are refreshing.")}</div>
       </div>
       <div class="panel-card">
         ${miniHeader("Current special leads", "#specials")}
         <div class="lead-list">${specialLeads.length ? specialLeads.map(specialLeadRow).join("") : emptyLead("No special-source leads are loaded yet.")}</div>
       </div>
-      <div class="panel-card neighbourhood-panel">
-        ${miniHeader("Discover neighbourhoods", "#map")}
-        <div class="neighbourhood-grid">${neighbourhoodCards.map(neighbourhoodTile).join("")}</div>
+      <div class="panel-card">
+        ${miniHeader("New & opening", "#explore?feature=opening")}
+        <div class="lead-list">${openingLeads.length ? openingLeads.map(openingLeadRow).join("") : emptyLead("New-opening discovery is refreshing.")}</div>
       </div>
+    </section>
+
+    <section class="page-shell section-block neighbourhood-home-section">
+      ${sectionHeader("Discover neighbourhoods", "Browse Halifax and Dartmouth by the places already mapped in the source layer.", "#map", "Open the map")}
+      <div class="neighbourhood-grid">${neighbourhoodCards.map(neighbourhoodTile).join("")}</div>
     </section>
 
     <section class="newsletter page-shell">
@@ -58,8 +67,17 @@ function renderHome() {
   bindCommonActions();
 }
 
+function homeUpcomingCityEvents() {
+  const items = Array.isArray(window.HALIFAX_CITY_EVENTS?.events) ? window.HALIFAX_CITY_EVENTS.events : [];
+  const cutoff = Date.now() - 30 * 60 * 1000;
+  return items
+    .filter((event) => Number.isFinite(Date.parse(event.startAt)) && Date.parse(event.endAt || event.startAt) >= cutoff)
+    .sort((a, b) => String(a.startAt).localeCompare(String(b.startAt)) || String(a.title).localeCompare(String(b.title)));
+}
+
 function topCuisineButtons(limit) {
-  return cuisines.slice(0, limit).map(([name]) => `<button class="category-button" type="button" data-cuisine="${escapeHtml(name)}"><span>${cuisineIcon(name)}</span>${escapeHtml(name)}</button>`).join("");
+  const liveCuisines = countValues(restaurants.flatMap((restaurant) => restaurant.cuisines || []));
+  return liveCuisines.slice(0, limit).map(([name]) => `<button class="category-button" type="button" data-cuisine="${escapeHtml(name)}"><span>${cuisineIcon(name)}</span>${escapeHtml(name)}</button>`).join("");
 }
 
 function cuisineIcon(name) {
@@ -70,6 +88,7 @@ function cuisineIcon(name) {
   if (/veget|vegan/.test(value)) return "♧";
   if (/burger|fast/.test(value)) return "≋";
   if (/italian|pizza/.test(value)) return "◯";
+  if (/japanese|sushi|ramen/.test(value)) return "◎";
   return "✦";
 }
 
@@ -93,7 +112,7 @@ function restaurantCard(restaurant, options = {}) {
     <article class="restaurant-card" data-restaurant-id="${escapeHtml(restaurant.id)}">
       <div class="card-media media-${mediaTone(restaurant)}${permittedImageClass(restaurant)}" style="--media-pos:${15 + ((index * 17) % 70)}%">
         ${mediaImageMarkup(restaurant)}
-        ${restaurant.sourceLayer === "curated" ? '<span class="media-badge">Local pick</span>' : ""}
+        ${restaurant.sourceLayer === "curated" ? '<span class="media-badge">Local pick</span>' : restaurant.sourceLayer === "local_discovery" ? '<span class="media-badge">New discovery</span>' : ""}
         <button class="save-button ${saved ? "is-saved" : ""}" type="button" data-save-id="${escapeHtml(restaurant.id)}" aria-label="${saved ? "Remove from saved" : "Save"} ${escapeHtml(restaurant.name)}">${saved ? "♥" : "♡"}</button>
       </div>
       <div class="card-content">
@@ -120,25 +139,36 @@ function mediaTone(restaurant) {
 
 function consumerTags(restaurant) {
   const tags = [];
+  if (restaurant.hasOpening) tags.push("New / opening");
   if (restaurant.hasSpecial) tags.push("Specials");
   if (restaurant.hasEvent) tags.push("Events");
   if (restaurant.hasPatio) tags.push("Patio");
   if (restaurant.hasMenu) tags.push("Menu");
-  if (restaurant.hasOpening) tags.push("New / opening signal");
+  if (restaurant.hasReservation) tags.push("Reservations");
+  if (restaurant.hasOrdering) tags.push("Order online");
+  if (restaurant.hasSocial) tags.push("Social");
   if (!tags.length) tags.push(...(restaurant.vibe || []).slice(0, 2));
   return unique(tags);
 }
 
 function sourceLabel(restaurant) {
+  if (restaurant.sourceLayer === "local_discovery") return "Reviewed local discovery";
   if (restaurant.signal && restaurant.inspections.length) return "Official + public sources";
   if (restaurant.signal) return "Official site found";
   if (restaurant.inspections.length) return "Public registry match";
+  if (restaurant.hasSocial) return "Official social links";
   return restaurant.sourceLayer === "openstreetmap" ? "Map listing" : "Curated source";
 }
 
-function eventLeadRow(restaurant) {
-  const link = restaurant.eventLinks[0];
-  return `<article class="lead-row"><div class="date-token">EVENT</div><div><strong>${escapeHtml(restaurant.name)}</strong><span>${escapeHtml(restaurant.neighborhood || "Halifax")}</span><small>${link ? escapeHtml(link.label) : "Event lead — check official channels"}</small></div><a href="#restaurant/${encodeURIComponent(restaurant.id)}">View</a></article>`;
+function homeEventWhen(event) {
+  const date = new Date(event.startAt);
+  if (Number.isNaN(date.getTime())) return "Upcoming";
+  return date.toLocaleDateString("en-CA", { month: "short", day: "numeric", timeZone: "America/Halifax" });
+}
+
+function cityEventLeadRow(event) {
+  const category = event.categories?.[0] || "Event";
+  return `<article class="lead-row"><div class="date-token">${escapeHtml(homeEventWhen(event).toUpperCase())}</div><div><strong>${escapeHtml(event.title)}</strong><span>${escapeHtml(event.venueName || event.city || "Halifax")}</span><small>${escapeHtml(category)} · ${escapeHtml(event.sourceName || "Source")}</small></div><a href="#events">View</a></article>`;
 }
 
 function specialLeadRow(restaurant) {
@@ -146,7 +176,12 @@ function specialLeadRow(restaurant) {
   return `<article class="lead-row"><div class="date-token teal">DEAL</div><div><strong>${escapeHtml(restaurant.name)}</strong><span>${escapeHtml(restaurant.neighborhood || "Halifax")}</span><small>${link ? escapeHtml(link.label) : escapeHtml(restaurant.specials?.[0]?.title || "Special lead — confirm details")}</small></div><a href="#restaurant/${encodeURIComponent(restaurant.id)}">View</a></article>`;
 }
 
+function openingLeadRow(restaurant) {
+  return `<article class="lead-row"><div class="date-token">NEW</div><div><strong>${escapeHtml(restaurant.name)}</strong><span>${escapeHtml(restaurant.neighborhood || "Halifax")}</span><small>${escapeHtml(restaurant.summary || "New or opening source signal")}</small></div><a href="#restaurant/${encodeURIComponent(restaurant.id)}">View</a></article>`;
+}
+
 function neighbourhoodTile(name, index) {
-  const count = neighbourhoods.find(([key]) => key === name)?.[1] || 0;
+  const liveNeighbourhoods = countValues(restaurants.map((restaurant) => restaurant.neighborhood || "Halifax"));
+  const count = liveNeighbourhoods.find(([key]) => key === name)?.[1] || 0;
   return `<button type="button" class="neighbourhood-tile tile-${index % 4}" data-neighbourhood="${escapeHtml(name)}"><strong>${escapeHtml(name)}</strong><span>${count ? `${count} places` : "Explore"}</span></button>`;
 }

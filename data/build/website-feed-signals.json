@@ -1,4 +1,4 @@
-window.HALIFAX_WEBSITE_FEED_SIGNALS = {
+{
   "version": 1,
   "generatedAt": "2026-08-28T18:34:54.916Z",
   "feedsDiscovered": 175,
@@ -122,4 +122,4 @@ window.HALIFAX_WEBSITE_FEED_SIGNALS = {
       "reason": "timeout"
     }
   ]
-};
+}

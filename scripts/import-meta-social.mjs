@@ -10,6 +10,7 @@ const profileLimit = Number(process.env.SOCIAL_PROFILE_LIMIT ?? 100);
 const postLimit = Math.min(25, Math.max(1, Number(process.env.SOCIAL_POST_LIMIT ?? 15)));
 const lookbackDays = Number(process.env.SOCIAL_LOOKBACK_DAYS ?? 60);
 const delayMs = Number(process.env.SOCIAL_PULL_DELAY_MS ?? 250);
+const timeoutMs = Number(process.env.SOCIAL_PULL_TIMEOUT_MS ?? 12000);
 const cutoff = Date.now() - lookbackDays * 24 * 60 * 60 * 1000;
 const graphBase = `https://graph.facebook.com/${graphVersion}`;
 
@@ -38,7 +39,7 @@ async function graphGet(path, params, token) {
   const url = new URL(`${graphBase}/${String(path).replace(/^\//, "")}`);
   for (const [key, value] of Object.entries(params || {})) if (value !== undefined && value !== null) url.searchParams.set(key, String(value));
   url.searchParams.set("access_token", token);
-  const response = await fetch(url, { headers: { Accept: "application/json" }, redirect: "follow" });
+  const response = await fetch(url, { headers: { Accept: "application/json" }, redirect: "follow", signal: AbortSignal.timeout(timeoutMs) });
   const body = await response.json().catch(() => ({}));
   if (!response.ok || body?.error) {
     const message = body?.error?.message || `http_${response.status}`;
@@ -47,28 +48,43 @@ async function graphGet(path, params, token) {
   }
   return body;
 }
-function profileTargets(platform) {
-  const out = [];
+
+function profileTargetSet(platform) {
+  const raw = [];
   const seen = new Set();
   for (const record of sourceRecords) {
     for (const profile of record.socialProfiles || []) {
       if (profile.platform !== platform || profile.reviewState !== "verified_link" || !profile.handle) continue;
-      const key = `${record.restaurantId}|${profile.handle.toLowerCase()}`;
-      if (seen.has(key)) continue;
-      seen.add(key);
-      out.push({ restaurantId: record.restaurantId, restaurantName: record.name, website: record.website, ...profile });
+      const handle = profile.handle.toLowerCase();
+      const rowKey = `${record.restaurantId}|${handle}`;
+      if (seen.has(rowKey)) continue;
+      seen.add(rowKey);
+      raw.push({ restaurantId: record.restaurantId, restaurantName: record.name, website: record.website, ...profile, normalizedHandle: handle });
     }
   }
-  return out;
+
+  const associations = new Map();
+  for (const profile of raw) {
+    if (!associations.has(profile.normalizedHandle)) associations.set(profile.normalizedHandle, new Set());
+    associations.get(profile.normalizedHandle).add(profile.restaurantId);
+  }
+  const sharedHandles = new Set([...associations.entries()].filter(([, ids]) => ids.size > 1).map(([handle]) => handle));
+  return {
+    targets: raw.filter((profile) => !sharedHandles.has(profile.normalizedHandle)),
+    sharedAssociationsSkipped: raw.filter((profile) => sharedHandles.has(profile.normalizedHandle)).length,
+    sharedHandles: sharedHandles.size
+  };
 }
 
+const facebookTargets = profileTargetSet("facebook");
+const instagramTargets = profileTargetSet("instagram");
 const signals = [];
 const failures = [];
 let profilesAttempted = 0;
 let postsObserved = 0;
 
 if (facebookToken) {
-  for (const profile of profileTargets("facebook").slice(0, profileLimit)) {
+  for (const profile of facebookTargets.targets.slice(0, profileLimit)) {
     if (delayMs > 0) await sleep(delayMs);
     profilesAttempted += 1;
     try {
@@ -92,13 +108,13 @@ if (facebookToken) {
           observedAt: new Date().toISOString(),
           signalMatches: matches,
           sourceKind: "meta_graph_api",
-          associationBasis: "linked_from_official_website",
+          associationBasis: "unique_profile_link_from_official_website",
           confidence: "official_social_api_signal",
           reviewState: "api_observed"
         });
       }
     } catch (error) {
-      failures.push({ restaurantId: profile.restaurantId, platform: "facebook", handle: profile.handle, reason: error.message });
+      failures.push({ restaurantId: profile.restaurantId, platform: "facebook", handle: profile.handle, reason: error.name === "TimeoutError" ? "timeout" : error.message });
     }
   }
 } else {
@@ -106,7 +122,7 @@ if (facebookToken) {
 }
 
 if (instagramToken && instagramUserId) {
-  for (const profile of profileTargets("instagram").slice(0, profileLimit)) {
+  for (const profile of instagramTargets.targets.slice(0, profileLimit)) {
     if (delayMs > 0) await sleep(delayMs);
     profilesAttempted += 1;
     try {
@@ -133,13 +149,13 @@ if (instagramToken && instagramUserId) {
           observedAt: new Date().toISOString(),
           signalMatches: matches,
           sourceKind: "meta_graph_api_business_discovery",
-          associationBasis: "linked_from_official_website",
+          associationBasis: "unique_profile_link_from_official_website",
           confidence: "official_social_api_signal",
           reviewState: "api_observed"
         });
       }
     } catch (error) {
-      failures.push({ restaurantId: profile.restaurantId, platform: "instagram", handle: profile.handle, reason: error.message });
+      failures.push({ restaurantId: profile.restaurantId, platform: "instagram", handle: profile.handle, reason: error.name === "TimeoutError" ? "timeout" : error.message });
     }
   }
 } else {
@@ -159,6 +175,10 @@ const output = {
     facebook: facebookToken ? "configured" : "missing",
     instagram: instagramToken && instagramUserId ? "configured" : "missing"
   },
+  discoveredProfileAssociations: facebookTargets.targets.length + instagramTargets.targets.length + facebookTargets.sharedAssociationsSkipped + instagramTargets.sharedAssociationsSkipped,
+  uniqueRestaurantProfiles: facebookTargets.targets.length + instagramTargets.targets.length,
+  sharedProfileAssociationsSkipped: facebookTargets.sharedAssociationsSkipped + instagramTargets.sharedAssociationsSkipped,
+  sharedProfileHandles: facebookTargets.sharedHandles + instagramTargets.sharedHandles,
   profilesAttempted,
   postsObserved,
   signals: uniqueSignals,
@@ -168,4 +188,4 @@ const output = {
 await mkdir(new URL("../data/build", import.meta.url), { recursive: true });
 await writeFile(new URL("../data/build/social-signals.json", import.meta.url), JSON.stringify(output, null, 2));
 await writeFile(new URL("../data/social-signals.js", import.meta.url), `window.HALIFAX_SOCIAL_SIGNALS = ${JSON.stringify(output, null, 2)};\n`);
-console.log(`Meta social pull: profiles=${profilesAttempted}, posts=${postsObserved}, signals=${uniqueSignals.length}, failures=${failures.length}, facebook=${output.credentialState.facebook}, instagram=${output.credentialState.instagram}.`);
+console.log(`Meta social pull: unique-profiles=${output.uniqueRestaurantProfiles}, shared-skipped=${output.sharedProfileAssociationsSkipped}, attempted=${profilesAttempted}, posts=${postsObserved}, signals=${uniqueSignals.length}, failures=${failures.length}, facebook=${output.credentialState.facebook}, instagram=${output.credentialState.instagram}.`);

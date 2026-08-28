@@ -3,6 +3,8 @@ import { mkdir, readFile, writeFile } from "node:fs/promises";
 const sourcePayload = JSON.parse(await readFile(new URL("../data/build/first-party-sources.json", import.meta.url), "utf8").catch(() => "{\"records\":[]}"));
 const sourceRecords = Array.isArray(sourcePayload?.records) ? sourcePayload.records : [];
 const delayMs = Number(process.env.FEED_PULL_DELAY_MS ?? 200);
+const timeoutMs = Number(process.env.FEED_PULL_TIMEOUT_MS ?? 12000);
+const concurrency = Math.max(1, Math.min(16, Number(process.env.FEED_PULL_CONCURRENCY ?? 8)));
 const feedLimit = Number(process.env.FEED_PULL_LIMIT ?? 120);
 const lookbackDays = Number(process.env.FEED_LOOKBACK_DAYS ?? 180);
 const userAgent = "HalifaxSourced/0.3 (+https://github.com/JeremyHennessy/HalifaxSourced)";
@@ -36,6 +38,9 @@ function safeUrl(value, base) {
     return ["http:", "https:"].includes(url.protocol) ? url.href : null;
   } catch { return null; }
 }
+function hostKey(value) {
+  try { return new URL(value).hostname.toLowerCase().replace(/^www\./, ""); } catch { return ""; }
+}
 function tagText(block, tags) {
   for (const tag of tags) {
     const match = String(block).match(new RegExp(`<${tag}\\b[^>]*>([\\s\\S]*?)<\\/${tag}>`, "i"));
@@ -67,20 +72,34 @@ function parseFeed(xml, baseUrl) {
   });
 }
 
-const feeds = [];
+const candidateFeeds = [];
 for (const record of sourceRecords) {
-  for (const feed of record.feeds || []) if (feed?.url) feeds.push({ restaurantId: record.restaurantId, restaurantName: record.name, website: record.website, ...feed });
+  for (const feed of record.feeds || []) {
+    if (!feed?.url || feed.reviewState !== "verified_link") continue;
+    candidateFeeds.push({ restaurantId: record.restaurantId, restaurantName: record.name, website: record.website, ...feed });
+  }
 }
+
+const feedAssociations = new Map();
+for (const feed of candidateFeeds) {
+  if (!feedAssociations.has(feed.url)) feedAssociations.set(feed.url, new Set());
+  feedAssociations.get(feed.url).add(feed.restaurantId);
+}
+const sharedFeedUrls = new Set([...feedAssociations.entries()].filter(([, ids]) => ids.size > 1).map(([url]) => url));
+const feeds = candidateFeeds.filter((feed) => !sharedFeedUrls.has(feed.url)).slice(0, feedLimit);
 
 const signals = [];
 const failures = [];
 let feedsChecked = 0;
-for (const feed of feeds.slice(0, feedLimit)) {
-  if (delayMs > 0) await sleep(delayMs);
+async function scanFeed(feed) {
   const observedAt = new Date().toISOString();
   try {
-    const response = await fetch(feed.url, { headers: { "User-Agent": userAgent, Accept: "application/rss+xml,application/atom+xml,application/xml,text/xml;q=0.9,*/*;q=0.5" }, redirect: "follow" });
-    if (!response.ok) { failures.push({ restaurantId: feed.restaurantId, feedUrl: feed.url, reason: `http_${response.status}` }); continue; }
+    const response = await fetch(feed.url, {
+      headers: { "User-Agent": userAgent, Accept: "application/rss+xml,application/atom+xml,application/xml,text/xml;q=0.9,*/*;q=0.5" },
+      redirect: "follow",
+      signal: AbortSignal.timeout(timeoutMs)
+    });
+    if (!response.ok) { failures.push({ restaurantId: feed.restaurantId, feedUrl: feed.url, reason: `http_${response.status}` }); return; }
     const xml = await response.text();
     feedsChecked += 1;
     for (const entry of parseFeed(xml, response.url || feed.url)) {
@@ -88,15 +107,63 @@ for (const feed of feeds.slice(0, feedLimit)) {
       if (entry.publishedAt && Date.parse(entry.publishedAt) < cutoff) continue;
       const matchedKinds = Object.entries(entry.signalMatches).filter(([, hits]) => hits.length > 0);
       if (!matchedKinds.length) continue;
-      signals.push({ restaurantId: feed.restaurantId, restaurantName: feed.restaurantName, platform: "website_feed", title: entry.title, postUrl: entry.link, feedUrl: feed.url, publishedAt: entry.publishedAt, observedAt, signalMatches: Object.fromEntries(matchedKinds), sourceKind: "official_feed", confidence: "official_source_signal", reviewState: entry.publishedAt ? "source_signal" : "needs_date_review" });
+      signals.push({
+        restaurantId: feed.restaurantId,
+        restaurantName: feed.restaurantName,
+        platform: "website_feed",
+        title: entry.title,
+        postUrl: entry.link,
+        feedUrl: feed.url,
+        publishedAt: entry.publishedAt,
+        observedAt,
+        signalMatches: Object.fromEntries(matchedKinds),
+        sourceKind: "official_feed",
+        associationBasis: "unique_feed_link_from_official_website",
+        confidence: "official_source_signal",
+        reviewState: entry.publishedAt ? "source_signal" : "needs_date_review"
+      });
     }
-  } catch (error) { failures.push({ restaurantId: feed.restaurantId, feedUrl: feed.url, reason: error.message }); }
+  } catch (error) {
+    failures.push({ restaurantId: feed.restaurantId, feedUrl: feed.url, reason: error.name === "TimeoutError" ? "timeout" : error.message });
+  }
 }
+
+const hostGroups = new Map();
+for (const feed of feeds) {
+  const host = hostKey(feed.url) || feed.url;
+  if (!hostGroups.has(host)) hostGroups.set(host, []);
+  hostGroups.get(host).push(feed);
+}
+const groups = [...hostGroups.values()];
+let nextGroup = 0;
+async function worker() {
+  while (true) {
+    const current = nextGroup++;
+    if (current >= groups.length) return;
+    for (const feed of groups[current]) {
+      await scanFeed(feed);
+      if (delayMs > 0) await sleep(delayMs);
+    }
+  }
+}
+await Promise.all(Array.from({ length: Math.min(concurrency, groups.length || 1) }, () => worker()));
 
 const uniqueSignals = signals.filter((signal, index, all) => all.findIndex((item) => item.restaurantId === signal.restaurantId && item.postUrl === signal.postUrl) === index)
   .sort((a, b) => String(b.publishedAt || b.observedAt).localeCompare(String(a.publishedAt || a.observedAt)));
-const output = { version: 1, generatedAt: new Date().toISOString(), feedsDiscovered: feeds.length, feedsChecked, failedFeeds: failures.length, signals: uniqueSignals, failures: failures.slice(0, 100) };
+const output = {
+  version: 1,
+  generatedAt: new Date().toISOString(),
+  feedsDiscovered: candidateFeeds.length,
+  uniqueRestaurantFeeds: feeds.length,
+  sharedFeedUrlsSkipped: sharedFeedUrls.size,
+  feedHostGroups: groups.length,
+  concurrency,
+  feedsChecked,
+  failedFeeds: failures.length,
+  signals: uniqueSignals,
+  failures: failures.slice(0, 100)
+};
 await mkdir(new URL("../data/build", import.meta.url), { recursive: true });
 await writeFile(new URL("../data/build/website-feed-signals.json", import.meta.url), JSON.stringify(output, null, 2));
 await writeFile(new URL("../data/website-feed-signals.js", import.meta.url), `window.HALIFAX_WEBSITE_FEED_SIGNALS = ${JSON.stringify(output, null, 2)};\n`);
-console.log(`Website feed pull: discovered=${feeds.length}, checked=${feedsChecked}, failures=${failures.length}, signals=${uniqueSignals.length}.`);
+console.log(`Website feed pull: discovered=${candidateFeeds.length}, unique=${feeds.length}, shared-skipped=${sharedFeedUrls.size}, checked=${feedsChecked}, failures=${failures.length}, signals=${uniqueSignals.length}, hosts=${groups.length}, concurrency=${concurrency}.`);

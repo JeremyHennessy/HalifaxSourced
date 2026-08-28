@@ -1,0 +1,120 @@
+{
+  "version": 4,
+  "scope": {
+    "cities": ["Halifax", "Dartmouth", "Bedford"],
+    "regionLabels": ["Halifax Metro"],
+    "futureDays": 400,
+    "pastGraceHours": 6
+  },
+  "sources": [
+    {
+      "id": "tourism-ns-events",
+      "name": "Tourism Nova Scotia Events",
+      "kind": "official_tourism_calendar",
+      "mode": "tourism_event_crawl",
+      "url": "https://novascotia.com/explore-nova-scotia/events/?region=29",
+      "detailHost": "novascotia.com",
+      "detailPathPrefix": "/event/",
+      "maxDetailPages": 220,
+      "priority": 100
+    },
+    {
+      "id": "halifax-events-community",
+      "name": "HalifaxEvents.ca",
+      "kind": "local_event_directory",
+      "mode": "tribe_list_crawl",
+      "url": "https://halifaxevents.ca/events/list/",
+      "icalUrl": "https://halifaxevents.ca/events/list/?ical=1",
+      "detailHost": "halifaxevents.ca",
+      "detailPathPrefix": "/event/",
+      "maxPages": 35,
+      "priority": 82
+    },
+    {
+      "id": "scotiabank-centre",
+      "name": "Scotiabank Centre",
+      "kind": "official_venue_calendar",
+      "mode": "scotiabank_calendar",
+      "url": "https://www.scotiabank-centre.com/premium-seating/eventcalendar",
+      "venueName": "Scotiabank Centre",
+      "venueAddress": "1800 Argyle Street, Halifax, NS",
+      "priority": 98
+    },
+    {
+      "id": "light-house-arts-centre",
+      "name": "Light House Arts Centre",
+      "kind": "official_venue_calendar",
+      "mode": "lighthouse_index",
+      "url": "https://www.lighthouseartscentre.ca/events/",
+      "venueName": "Light House Arts Centre",
+      "venueAddress": "1800 Argyle Street, Halifax, NS",
+      "detailPathPrefix": "/events/",
+      "priority": 96
+    },
+    {
+      "id": "the-carleton",
+      "name": "The Carleton",
+      "kind": "official_venue_calendar",
+      "mode": "html_calendar",
+      "url": "https://www.thecarleton.ca/music/upcoming-performances/",
+      "venueName": "The Carleton",
+      "venueAddress": "1685 Argyle Street, Halifax, NS",
+      "priority": 96
+    },
+    {
+      "id": "neptune-theatre",
+      "name": "Neptune Theatre",
+      "kind": "official_venue_calendar",
+      "mode": "neptune_season",
+      "url": "https://www.neptunetheatre.com/visit/ticket-packages",
+      "venueName": "Neptune Theatre",
+      "venueAddress": "1593 Argyle Street, Halifax, NS",
+      "priority": 96
+    },
+    {
+      "id": "halifax-mooseheads-home",
+      "name": "Halifax Mooseheads Home Schedule",
+      "kind": "official_sports_schedule",
+      "mode": "mooseheads_home_table",
+      "url": "https://www.scotiabank-centre.com/events/2026-2027-halifax-mooseheads",
+      "venueName": "Scotiabank Centre",
+      "venueAddress": "1800 Argyle Street, Halifax, NS",
+      "priority": 99
+    },
+    {
+      "id": "hfx-wanderers-home",
+      "name": "HFX Wanderers 2026 Home Schedule",
+      "kind": "official_tourism_sports_schedule",
+      "mode": "sports_bullet_schedule",
+      "url": "https://novascotia.com/event/halifax-wanderers-2026-season/",
+      "scheduleYear": 2026,
+      "teamToken": "HFX Wanderers",
+      "venueName": "Wanderers Grounds",
+      "venueAddress": "5819 Sackville Street, Halifax, NS",
+      "priority": 97
+    },
+    {
+      "id": "halifax-tides-home",
+      "name": "Halifax Tides 2026 Home Schedule",
+      "kind": "official_tourism_sports_schedule",
+      "mode": "sports_bullet_schedule",
+      "url": "https://novascotia.com/event/halifax-tides-2026-season/",
+      "scheduleYear": 2026,
+      "teamToken": "Halifax Tides",
+      "venueName": "Wanderers Grounds",
+      "venueAddress": "5819 Sackville Street, Halifax, NS",
+      "priority": 97
+    },
+    {
+      "id": "halifax-thunderbirds",
+      "name": "Halifax Thunderbirds",
+      "kind": "official_sports_schedule",
+      "mode": "embedded_event_data",
+      "url": "https://www.halifaxthunderbirds.com/",
+      "homeTeamTokens": ["Halifax", "Thunderbirds"],
+      "venueName": "Scotiabank Centre",
+      "venueAddress": "1800 Argyle Street, Halifax, NS",
+      "priority": 90
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+name: City Events Preview
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "23 */6 * * *"
+  push:
+    branches:
+      - events-social-expansion-20260828
+    paths:
+      - .github/workflows/city-events-preview.yml
+      - data/event-source-registry.json
+      - data/event-source-supplements.json
+      - scripts/import-city-events.mjs
+      - scripts/import-supplemental-city-events.mjs
+      - scripts/sanitize-city-events.mjs
+      - scripts/check-city-events.mjs
+
+permissions:
+  contents: read
+
+jobs:
+  refresh-events:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Import Halifax-wide events
+        env:
+          CITY_EVENT_TIMEOUT_MS: 15000
+        run: node scripts/import-city-events.mjs
+
+      - name: Restrict primary sources to Halifax metro
+        run: node scripts/sanitize-city-events.mjs
+
+      - name: Add convention, symphony, and public-library events
+        env:
+          SUPPLEMENTAL_EVENT_TIMEOUT_MS: 15000
+          LIBRARY_EVENT_PAGE_LIMIT: 120
+          LIBRARY_EVENT_DELAY_MS: 100
+        run: node scripts/import-supplemental-city-events.mjs
+
+      - name: Recheck event scope and normalize categories
+        run: node scripts/sanitize-city-events.mjs
+
+      - name: Validate city event dataset
+        run: node scripts/check-city-events.mjs
+
+      - name: Upload city event preview
+        uses: actions/upload-artifact@v4
+        with:
+          name: city-events-preview
+          path: |
+            data/city-events.js
+            data/build/city-events.json
+            artifacts/city-event-integrity-report.json
+          if-no-files-found: error
+          retention-days: 30

@@ -6,6 +6,7 @@ const websiteFeedSignalPayload = window.HALIFAX_WEBSITE_FEED_SIGNALS ?? null;
 const websiteFeedSignals = Array.isArray(websiteFeedSignalPayload?.signals) ? websiteFeedSignalPayload.signals : [];
 const socialSignalPayload = window.HALIFAX_SOCIAL_SIGNALS ?? null;
 const socialSignals = Array.isArray(socialSignalPayload?.signals) ? socialSignalPayload.signals : [];
+const CURRENT_SOURCE_SIGNAL_DAYS = 60;
 
 function sourceSignalGroup(items) {
   const grouped = new Map();
@@ -21,6 +22,13 @@ function sourceSignalHas(item, kind) {
   return Array.isArray(item?.signalMatches?.[kind]) && item.signalMatches[kind].length > 0;
 }
 
+function sourceSignalFresh(item, maxDays = CURRENT_SOURCE_SIGNAL_DAYS) {
+  const stamp = Date.parse(String(item?.publishedAt ?? ""));
+  if (!Number.isFinite(stamp)) return false;
+  const age = Date.now() - stamp;
+  return age >= -24 * 60 * 60 * 1000 && age <= maxDays * 24 * 60 * 60 * 1000;
+}
+
 function uniqueSourceSignalLinks(existing, additions) {
   const links = [...(existing || [])];
   const seen = new Set(links.map((link) => safeUrl(link?.url)).filter(Boolean));
@@ -33,22 +41,78 @@ function uniqueSourceSignalLinks(existing, additions) {
   return links;
 }
 
+function profileKey(profile) {
+  return `${String(profile?.platform || "").toLowerCase()}|${String(profile?.handle || "").toLowerCase().replace(/^@/, "")}`;
+}
+
+function socialSourceMeta(profile) {
+  const platform = String(profile?.platform || "").toLowerCase();
+  const labels = {
+    facebook: "Official Facebook",
+    instagram: "Official Instagram",
+    x: "Official X",
+    tiktok: "Official TikTok",
+    youtube: "Official YouTube",
+    threads: "Official Threads",
+    linkedin: "Official LinkedIn",
+    bluesky: "Official Bluesky",
+    linktree: "Official Linktree"
+  };
+  const types = {
+    facebook: "facebook_page",
+    instagram: "instagram_profile",
+    x: "x_profile",
+    tiktok: "tiktok_profile",
+    youtube: "youtube_channel",
+    threads: "threads_profile",
+    linkedin: "linkedin_profile",
+    bluesky: "bluesky_profile",
+    linktree: "linktree_profile"
+  };
+  return { label: labels[platform] || `Official ${platform}`, type: types[platform] || "social_profile" };
+}
+
 const firstPartyByRestaurant = sourceSignalGroup(firstPartySourceRecords);
 const websiteFeedByRestaurant = sourceSignalGroup(websiteFeedSignals);
 const socialByRestaurant = sourceSignalGroup(socialSignals);
+const profileAssociationCounts = new Map();
+for (const record of firstPartySourceRecords) {
+  const seenInRecord = new Set();
+  for (const profile of record.socialProfiles || []) {
+    const key = profileKey(profile);
+    if (!key || key === "|") continue;
+    if (seenInRecord.has(key)) continue;
+    seenInRecord.add(key);
+    profileAssociationCounts.set(key, (profileAssociationCounts.get(key) || 0) + 1);
+  }
+}
 
 for (const restaurant of restaurants) {
   const firstParty = firstPartyByRestaurant.get(restaurant.id)?.[0] || null;
   const feedSignals = websiteFeedByRestaurant.get(restaurant.id) || [];
   const apiSignals = socialByRestaurant.get(restaurant.id) || [];
   const allSignals = [...feedSignals, ...apiSignals];
+  const currentSignals = allSignals.filter((signal) => sourceSignalFresh(signal));
+  const allProfiles = Array.isArray(firstParty?.socialProfiles) ? firstParty.socialProfiles : [];
+  const uniqueProfiles = allProfiles.filter((profile) => profileAssociationCounts.get(profileKey(profile)) === 1);
+  const sharedProfiles = allProfiles.filter((profile) => profileAssociationCounts.get(profileKey(profile)) > 1);
+  const relatedLinks = Array.isArray(firstParty?.relatedLinks) ? firstParty.relatedLinks : [];
 
   restaurant.firstPartySources = firstParty;
   restaurant.websiteFeedSignals = feedSignals;
   restaurant.socialSignals = apiSignals;
-  restaurant.socialProfiles = Array.isArray(firstParty?.socialProfiles) ? firstParty.socialProfiles : [];
+  restaurant.currentSourceSignals = currentSignals;
+  // All profiles are useful navigation links when the restaurant-owned site links to them.
+  // Unique profiles remain a separate subset for unambiguous post-level Meta API association.
+  restaurant.socialProfiles = allProfiles;
+  restaurant.uniqueSocialProfiles = uniqueProfiles;
+  restaurant.sharedSocialProfiles = sharedProfiles;
+  restaurant.relatedLinks = relatedLinks;
+  restaurant.orderingLinks = relatedLinks.filter((link) => link.kind === "ordering");
+  restaurant.newsletterLinks = relatedLinks.filter((link) => link.kind === "newsletter");
+  restaurant.ticketLinks = relatedLinks.filter((link) => link.kind === "tickets");
 
-  const specialSignalLinks = allSignals
+  const specialSignalLinks = currentSignals
     .filter((signal) => sourceSignalHas(signal, "specials"))
     .map((signal) => ({
       label: signal.title || `${signal.platform === "instagram" ? "Instagram" : signal.platform === "facebook" ? "Facebook" : "Website"} special signal`,
@@ -59,7 +123,7 @@ for (const restaurant of restaurants) {
       publishedAt: signal.publishedAt || null
     }));
 
-  const eventSignalLinks = allSignals
+  const eventSignalLinks = currentSignals
     .filter((signal) => sourceSignalHas(signal, "events"))
     .map((signal) => ({
       label: signal.title || `${signal.platform === "instagram" ? "Instagram" : signal.platform === "facebook" ? "Facebook" : "Website"} event signal`,
@@ -70,22 +134,45 @@ for (const restaurant of restaurants) {
       publishedAt: signal.publishedAt || null
     }));
 
-  restaurant.specialLinks = uniqueSourceSignalLinks(restaurant.specialLinks, specialSignalLinks);
-  restaurant.eventLinks = uniqueSourceSignalLinks(restaurant.eventLinks, eventSignalLinks);
-  restaurant.hasSpecial = Boolean(restaurant.hasSpecial || specialSignalLinks.length);
-  restaurant.hasEvent = Boolean(restaurant.hasEvent || eventSignalLinks.length);
-  restaurant.hasOpening = Boolean(restaurant.hasOpening || allSignals.some((signal) => sourceSignalHas(signal, "openings")));
-  restaurant.hasPatio = Boolean(restaurant.hasPatio || allSignals.some((signal) => sourceSignalHas(signal, "patio")));
+  const relatedMenuLinks = relatedLinks.filter((link) => link.kind === "menu").map((link) => ({ ...link, verifiedLink: true, sourceKind: "official_website_link" }));
+  const relatedReservationLinks = relatedLinks.filter((link) => link.kind === "reservations").map((link) => ({ ...link, verifiedLink: true, sourceKind: "official_website_link" }));
+  const relatedSpecialLinks = relatedLinks.filter((link) => ["menu", "ordering"].includes(link.kind) && /special|happy hour|feature|deal|promo/i.test(link.label || ""));
+  const relatedEventLinks = relatedLinks.filter((link) => ["events", "tickets"].includes(link.kind));
 
-  const profileSources = restaurant.socialProfiles.map((profile) => ({
-    label: profile.platform === "instagram" ? "Official Instagram" : "Official Facebook",
-    type: profile.platform === "instagram" ? "instagram_professional" : "facebook_page",
-    url: profile.url,
+  restaurant.menuLinks = uniqueSourceSignalLinks(restaurant.menuLinks, relatedMenuLinks);
+  restaurant.reservationLinks = uniqueSourceSignalLinks(restaurant.reservationLinks, relatedReservationLinks);
+  restaurant.specialLinks = uniqueSourceSignalLinks(restaurant.specialLinks, [...specialSignalLinks, ...relatedSpecialLinks]);
+  restaurant.eventLinks = uniqueSourceSignalLinks(restaurant.eventLinks, [...eventSignalLinks, ...relatedEventLinks]);
+  restaurant.hasMenu = Boolean(restaurant.hasMenu || relatedMenuLinks.length);
+  restaurant.hasSpecial = Boolean(restaurant.hasSpecial || specialSignalLinks.length || relatedSpecialLinks.length);
+  restaurant.hasEvent = Boolean(restaurant.hasEvent || eventSignalLinks.length || relatedEventLinks.length);
+  restaurant.hasOpening = Boolean(restaurant.hasOpening || currentSignals.some((signal) => sourceSignalHas(signal, "openings")));
+  restaurant.hasPatio = Boolean(restaurant.hasPatio || currentSignals.some((signal) => sourceSignalHas(signal, "patio")));
+  restaurant.hasSocial = allProfiles.length > 0;
+  restaurant.hasReservation = Boolean(restaurant.hasReservation || relatedReservationLinks.length);
+  restaurant.hasOrdering = restaurant.orderingLinks.length > 0;
+
+  const profileSources = allProfiles.map((profile) => {
+    const meta = socialSourceMeta(profile);
+    return {
+      ...meta,
+      url: profile.url,
+      status: "verified_link",
+      sharedBrandProfile: profileAssociationCounts.get(profileKey(profile)) > 1
+    };
+  });
+  const relatedSources = relatedLinks.map((link) => ({
+    label: link.label || link.kind,
+    type: `official_${link.kind}`,
+    url: link.url,
     status: "verified_link"
   }));
-  restaurant.sources = mergeSources(restaurant.sources, profileSources);
+  restaurant.sources = mergeSources(restaurant.sources, [...profileSources, ...relatedSources]);
 }
 
 window.__halifaxFirstPartySourceCount = firstPartySourceRecords.length;
+window.__halifaxFirstPartySocialProfileCount = firstPartySourceRecords.reduce((sum, record) => sum + (record.socialProfiles?.length || 0), 0);
+window.__halifaxFirstPartyRelatedLinkCount = firstPartySourceRecords.reduce((sum, record) => sum + (record.relatedLinks?.length || 0), 0);
 window.__halifaxWebsiteFeedSignalCount = websiteFeedSignals.length;
 window.__halifaxSocialSignalCount = socialSignals.length;
+window.__halifaxCurrentSourceSignalCount = [...websiteFeedSignals, ...socialSignals].filter((signal) => sourceSignalFresh(signal)).length;

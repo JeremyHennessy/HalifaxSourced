@@ -1,0 +1,39 @@
+{
+  "version": 1,
+  "sources": [
+    {
+      "id": "halifax-convention-centre",
+      "name": "Halifax Convention Centre",
+      "kind": "official_venue_calendar",
+      "mode": "convention_calendar",
+      "url": "https://www.halifaxconventioncentre.com/Events",
+      "venueName": "Halifax Convention Centre",
+      "venueAddress": "1650 Argyle Street, Halifax, NS"
+    },
+    {
+      "id": "symphony-nova-scotia",
+      "name": "Symphony Nova Scotia",
+      "kind": "official_arts_calendar",
+      "mode": "symphony_concerts",
+      "url": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/"
+    },
+    {
+      "id": "halifax-public-libraries",
+      "name": "Halifax Public Libraries",
+      "kind": "public_library_calendar",
+      "mode": "bibliocommons_events",
+      "url": "https://halifax.bibliocommons.com/v2/events",
+      "allowedLocations": {
+        "Central Library": "Halifax",
+        "Halifax North Memorial Public Library": "Halifax",
+        "Captain William Spry Public Library": "Halifax",
+        "Keshen Goodman Public Library": "Halifax",
+        "Alderney Gate Public Library": "Dartmouth",
+        "Dartmouth North - Temporary Location": "Dartmouth",
+        "Dartmouth North Public Library": "Dartmouth",
+        "Woodlawn Public Library": "Dartmouth",
+        "Bedford Public Library": "Bedford"
+      }
+    }
+  ]
+}

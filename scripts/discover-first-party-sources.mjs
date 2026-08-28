@@ -1,22 +1,48 @@
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 
 const catalog = JSON.parse(await readFile(new URL("../data/build/catalog.json", import.meta.url), "utf8"));
-const targets = (catalog.restaurants || []).filter((restaurant) => restaurant.website).slice(0, Number(process.env.FIRST_PARTY_SOURCE_LIMIT ?? 9999));
+let discoveredRestaurants = [];
+try {
+  const source = await readFile(new URL("../data/discovered-restaurants.js", import.meta.url), "utf8");
+  const match = source.match(/window\.HALIFAX_DISCOVERED_RESTAURANTS\s*=\s*([\s\S]*);\s*$/);
+  if (match) discoveredRestaurants = JSON.parse(match[1]);
+} catch {}
+
+const mergedTargets = [...(catalog.restaurants || []), ...discoveredRestaurants]
+  .filter((restaurant) => restaurant?.website)
+  .filter((restaurant, index, all) => all.findIndex((item) => item.id === restaurant.id) === index);
+const targets = mergedTargets.slice(0, Number(process.env.FIRST_PARTY_SOURCE_LIMIT ?? 9999));
 const delayMs = Number(process.env.FIRST_PARTY_SOURCE_DELAY_MS ?? 180);
-const userAgent = "HalifaxSourced/0.3 (+https://github.com/JeremyHennessy/HalifaxSourced)";
+const timeoutMs = Number(process.env.FIRST_PARTY_SOURCE_TIMEOUT_MS ?? 12000);
+const concurrency = Math.max(1, Math.min(16, Number(process.env.FIRST_PARTY_SOURCE_CONCURRENCY ?? 8)));
+const userAgent = "HalifaxSourced/0.4 (+https://github.com/JeremyHennessy/HalifaxSourced)";
 const robotsCache = new Map();
 
-function sleep(ms) {
-  return new Promise((resolve) => setTimeout(resolve, ms));
-}
+const SOCIAL_HOSTS = {
+  facebook: ["facebook.com", "fb.com"],
+  instagram: ["instagram.com"],
+  x: ["x.com", "twitter.com"],
+  tiktok: ["tiktok.com"],
+  youtube: ["youtube.com", "youtu.be"],
+  threads: ["threads.net"],
+  linkedin: ["linkedin.com"],
+  bluesky: ["bsky.app"],
+  linktree: ["linktr.ee"]
+};
+
+const RELATED_HOSTS = {
+  reservations: ["opentable.", "resy.com", "exploretock.com", "sevenrooms.com", "yelp-reservations.com"],
+  ordering: ["toasttab.com", "doordash.com", "ubereats.com", "skipthedishes.com", "ritual.co", "chownow.com", "square.site"],
+  tickets: ["ticketmaster.", "ticketatlantic.com", "eventbrite.", "tixr.com", "showpass.com", "universe.com"]
+};
+
+function sleep(ms) { return new Promise((resolve) => setTimeout(resolve, ms)); }
 
 function safeUrl(value, base) {
   try {
     const url = new URL(String(value ?? ""), base);
     return ["http:", "https:"].includes(url.protocol) ? url : null;
-  } catch {
-    return null;
-  }
+  } catch { return null; }
 }
 
 function hostKey(value) {
@@ -84,7 +110,11 @@ async function robotsFor(url) {
   if (!robotsCache.has(parsed.origin)) {
     robotsCache.set(parsed.origin, (async () => {
       try {
-        const response = await fetch(new URL("/robots.txt", parsed.origin), { headers: { "User-Agent": userAgent }, redirect: "follow" });
+        const response = await fetch(new URL("/robots.txt", parsed.origin), {
+          headers: { "User-Agent": userAgent },
+          redirect: "follow",
+          signal: AbortSignal.timeout(Math.min(timeoutMs, 8000))
+        });
         if (response.status === 401 || response.status === 403) return { disallow: ["/"], sitemaps: [] };
         if (!response.ok) return { disallow: [], sitemaps: [] };
         return parseRobots(await response.text());
@@ -102,28 +132,47 @@ async function robotsAllows(url) {
   return !robots.disallow.some((prefix) => prefix === "/" || (prefix && parsed.pathname.startsWith(prefix)));
 }
 
-function normalizeFacebook(url) {
+function socialPlatform(url) {
   const parsed = safeUrl(url);
   if (!parsed) return null;
   const host = parsed.hostname.toLowerCase().replace(/^www\./, "").replace(/^m\./, "");
-  if (!["facebook.com", "fb.com"].includes(host)) return null;
-  if (parsed.pathname === "/profile.php" && parsed.searchParams.get("id")) {
-    const handle = parsed.searchParams.get("id");
-    return { platform: "facebook", handle, url: `https://www.facebook.com/${handle}` };
+  for (const [platform, hosts] of Object.entries(SOCIAL_HOSTS)) {
+    if (hosts.some((candidate) => host === candidate || host.endsWith(`.${candidate}`))) return platform;
   }
-  const segment = parsed.pathname.split("/").filter(Boolean)[0];
-  if (!segment || ["share", "sharer", "dialog", "plugins", "login", "groups", "events", "watch", "reel", "reels", "photo", "photos", "posts", "permalink.php"].includes(segment.toLowerCase())) return null;
-  return { platform: "facebook", handle: segment, url: `https://www.facebook.com/${segment}` };
+  return null;
 }
 
-function normalizeInstagram(url) {
+function socialHandle(platform, url) {
   const parsed = safeUrl(url);
   if (!parsed) return null;
-  const host = parsed.hostname.toLowerCase().replace(/^www\./, "");
-  if (host !== "instagram.com") return null;
-  const segment = parsed.pathname.split("/").filter(Boolean)[0];
-  if (!segment || ["p", "reel", "reels", "stories", "explore", "accounts", "tv", "direct"].includes(segment.toLowerCase())) return null;
-  return { platform: "instagram", handle: segment.replace(/^@/, ""), url: `https://www.instagram.com/${segment.replace(/^@/, "")}/` };
+  const parts = parsed.pathname.split("/").filter(Boolean);
+  if (platform === "facebook") {
+    if (parsed.pathname === "/profile.php" && parsed.searchParams.get("id")) return parsed.searchParams.get("id");
+    const first = parts[0];
+    if (!first || ["share", "sharer", "dialog", "plugins", "login", "groups", "events", "watch", "reel", "reels", "photo", "photos", "posts", "permalink.php"].includes(first.toLowerCase())) return null;
+    return first;
+  }
+  if (platform === "instagram") {
+    const first = parts[0]?.replace(/^@/, "");
+    if (!first || ["p", "reel", "reels", "stories", "explore", "accounts", "tv", "direct"].includes(first.toLowerCase())) return null;
+    return first;
+  }
+  if (platform === "x") {
+    const first = parts[0]?.replace(/^@/, "");
+    if (!first || ["home", "share", "intent", "search", "explore", "i"].includes(first.toLowerCase())) return null;
+    return first;
+  }
+  if (platform === "tiktok") return parts.find((part) => part.startsWith("@"))?.replace(/^@/, "") || null;
+  if (platform === "threads") return parts[0]?.replace(/^@/, "") || null;
+  if (platform === "bluesky") return parts[0] === "profile" ? parts[1] || null : parts[0] || null;
+  if (platform === "youtube") {
+    const marker = parts[0];
+    if (["channel", "c", "user"].includes(marker)) return parts[1] || null;
+    return marker?.replace(/^@/, "") || null;
+  }
+  if (platform === "linkedin") return parts.slice(0, 2).join("/") || null;
+  if (platform === "linktree") return parts[0] || null;
+  return null;
 }
 
 function discoverSocial(html, baseUrl) {
@@ -133,14 +182,52 @@ function discoverSocial(html, baseUrl) {
   for (const match of html.matchAll(pattern)) {
     const href = safeUrl(match[2], baseUrl)?.href;
     if (!href) continue;
-    const profile = normalizeFacebook(href) || normalizeInstagram(href);
-    if (!profile) continue;
-    const key = `${profile.platform}|${profile.handle.toLowerCase()}`;
+    const platform = socialPlatform(href);
+    if (!platform) continue;
+    const handle = socialHandle(platform, href);
+    if (!handle) continue;
+    const key = `${platform}|${handle.toLowerCase()}`;
     if (seen.has(key)) continue;
     seen.add(key);
-    profiles.push({ ...profile, label: cleanText(match[4]).slice(0, 120) || profile.platform });
+    profiles.push({
+      platform,
+      handle,
+      url: href,
+      label: cleanText(match[4]).slice(0, 120) || platform
+    });
   }
   return profiles;
+}
+
+function relatedKind(url, label = "") {
+  const href = String(url || "").toLowerCase();
+  const text = String(label || "").toLowerCase();
+  for (const [kind, needles] of Object.entries(RELATED_HOSTS)) if (needles.some((needle) => href.includes(needle))) return kind;
+  if (/reserve|reservation|book a table|book table/.test(text)) return "reservations";
+  if (/order online|takeout|take out|delivery|pickup|pick up/.test(text)) return "ordering";
+  if (/menu|food menu|drink menu|cocktail menu|wine list/.test(text)) return "menu";
+  if (/event|tickets|ticket|calendar|live music|shows/.test(text)) return "events";
+  if (/newsletter|mailing list|subscribe/.test(text)) return "newsletter";
+  return null;
+}
+
+function discoverRelatedLinks(html, baseUrl) {
+  const links = [];
+  const seen = new Set();
+  const pattern = /<a\b[^>]*href\s*=\s*["']([^"']+)["'][^>]*>([\s\S]*?)<\/a>/gi;
+  for (const match of html.matchAll(pattern)) {
+    const url = safeUrl(match[1], baseUrl);
+    if (!url) continue;
+    const label = cleanText(match[2]).slice(0, 140);
+    const kind = relatedKind(url.href, label);
+    if (!kind) continue;
+    if (socialPlatform(url.href)) continue;
+    const key = `${kind}|${url.href}`;
+    if (seen.has(key)) continue;
+    seen.add(key);
+    links.push({ kind, url: url.href, label: label || kind });
+  }
+  return links.slice(0, 40);
 }
 
 function discoverFeeds(html, baseUrl) {
@@ -164,67 +251,104 @@ function discoverFeeds(html, baseUrl) {
     seen.add(url.href);
     found.push({ url: url.href, type: "discovered_feed_link", title: text.slice(0, 120) || "Website feed" });
   }
-  return found.slice(0, 8);
+  return found.slice(0, 12);
 }
 
-const records = [];
+const records = new Array(targets.length);
 const failures = [];
-let checked = 0;
-for (const restaurant of targets) {
-  const website = safeUrl(restaurant.website)?.href;
-  if (!website) continue;
+
+async function scanRestaurant(item) {
+  const { restaurant, index, website } = item;
   if (!(await robotsAllows(website))) {
     failures.push({ restaurantId: restaurant.id, name: restaurant.name, website, reason: "robots_disallow" });
-    continue;
+    return;
   }
-  if (delayMs > 0) await sleep(delayMs);
   const observedAt = new Date().toISOString();
   try {
-    const response = await fetch(website, { headers: { "User-Agent": userAgent, Accept: "text/html,application/xhtml+xml" }, redirect: "follow" });
+    const response = await fetch(website, {
+      headers: { "User-Agent": userAgent, Accept: "text/html,application/xhtml+xml" },
+      redirect: "follow",
+      signal: AbortSignal.timeout(timeoutMs)
+    });
     const contentType = response.headers.get("content-type") || "";
     if (!response.ok || !/html|xhtml/i.test(contentType)) {
       failures.push({ restaurantId: restaurant.id, name: restaurant.name, website, reason: response.ok ? "not_html" : `http_${response.status}` });
-      continue;
+      return;
     }
     const html = await response.text();
     const resolvedUrl = response.url || website;
     const robots = await robotsFor(resolvedUrl);
-    records.push({
+    records[index] = {
       restaurantId: restaurant.id,
       name: restaurant.name,
       website,
       resolvedUrl,
       observedAt,
       socialProfiles: discoverSocial(html, resolvedUrl).map((profile) => ({ ...profile, discoveredFrom: resolvedUrl, associationBasis: "linked_from_official_website", reviewState: "verified_link" })),
+      relatedLinks: discoverRelatedLinks(html, resolvedUrl).map((link) => ({ ...link, discoveredFrom: resolvedUrl, associationBasis: "linked_from_official_website", reviewState: "verified_link" })),
       feeds: discoverFeeds(html, resolvedUrl).map((feed) => ({ ...feed, discoveredFrom: resolvedUrl, reviewState: "verified_link" })),
-      sitemaps: (robots.sitemaps || []).filter((url) => sameSite(url, resolvedUrl)).slice(0, 8),
+      sitemaps: (robots.sitemaps || []).filter((url) => sameSite(url, resolvedUrl)).slice(0, 12),
       sourceKind: "official_website_discovery",
       reviewState: "verified"
-    });
-    checked += 1;
+    };
   } catch (error) {
-    failures.push({ restaurantId: restaurant.id, name: restaurant.name, website, reason: error.message });
+    failures.push({ restaurantId: restaurant.id, name: restaurant.name, website, reason: error.name === "TimeoutError" ? "timeout" : error.message });
   }
 }
 
-const profileCount = records.reduce((sum, record) => sum + record.socialProfiles.length, 0);
-const facebookCount = records.reduce((sum, record) => sum + record.socialProfiles.filter((profile) => profile.platform === "facebook").length, 0);
-const instagramCount = records.reduce((sum, record) => sum + record.socialProfiles.filter((profile) => profile.platform === "instagram").length, 0);
-const feedCount = records.reduce((sum, record) => sum + record.feeds.length, 0);
+const groups = new Map();
+for (const [index, restaurant] of targets.entries()) {
+  const website = safeUrl(restaurant.website)?.href;
+  if (!website) {
+    failures.push({ restaurantId: restaurant.id, name: restaurant.name, website: restaurant.website, reason: "invalid_url" });
+    continue;
+  }
+  const host = hostKey(website) || `invalid-${index}`;
+  if (!groups.has(host)) groups.set(host, []);
+  groups.get(host).push({ restaurant, index, website });
+}
+
+const hostGroups = [...groups.values()];
+let nextGroup = 0;
+async function worker() {
+  while (true) {
+    const current = nextGroup++;
+    if (current >= hostGroups.length) return;
+    for (const item of hostGroups[current]) {
+      await scanRestaurant(item);
+      if (delayMs > 0) await sleep(delayMs);
+    }
+  }
+}
+await Promise.all(Array.from({ length: Math.min(concurrency, hostGroups.length || 1) }, () => worker()));
+
+const finalRecords = records.filter(Boolean);
+const platformCounts = {};
+for (const record of finalRecords) for (const profile of record.socialProfiles || []) platformCounts[profile.platform] = (platformCounts[profile.platform] || 0) + 1;
+const relatedKindCounts = {};
+for (const record of finalRecords) for (const link of record.relatedLinks || []) relatedKindCounts[link.kind] = (relatedKindCounts[link.kind] || 0) + 1;
+const profileCount = finalRecords.reduce((sum, record) => sum + record.socialProfiles.length, 0);
+const relatedLinkCount = finalRecords.reduce((sum, record) => sum + record.relatedLinks.length, 0);
+const feedCount = finalRecords.reduce((sum, record) => sum + record.feeds.length, 0);
 const output = {
-  version: 1,
+  version: 2,
   generatedAt: new Date().toISOString(),
-  checkedWebsites: checked,
+  checkedWebsites: finalRecords.length,
   failedWebsites: failures.length,
+  hostGroups: hostGroups.length,
+  concurrency,
   profileCount,
-  facebookCount,
-  instagramCount,
+  platformCounts,
+  relatedLinkCount,
+  relatedKindCounts,
   feedCount,
-  failures: failures.slice(0, 100),
-  records
+  failures: failures.slice(0, 150),
+  records: finalRecords
 };
 
 await mkdir(new URL("../data/build", import.meta.url), { recursive: true });
 await writeFile(new URL("../data/build/first-party-sources.json", import.meta.url), JSON.stringify(output, null, 2));
 await writeFile(new URL("../data/first-party-sources.js", import.meta.url), `window.HALIFAX_FIRST_PARTY_SOURCES = ${JSON.stringify(output, null, 2)};\n`);
-console.log(`First-party source discovery: websites=${checked}, failures=${failures.length}, profiles=${profileCount} (facebook=${facebookCount}, instagram=${instagramCount}), feeds=${feedCount}.`);
+console.log(`First-party source discovery: websites=${finalRecords.length}, failures=${failures.length}, profiles=${profileCount}, related=${relatedLinkCount}, feeds=${feedCount}, hosts=${hostGroups.length}, concurrency=${concurrency}.`);
+console.log(`Social platforms: ${Object.entries(platformCounts).map(([key, value]) => `${key}=${value}`).join(", ") || "none"}`);
+console.log(`Related links: ${Object.entries(relatedKindCounts).map(([key, value]) => `${key}=${value}`).join(", ") || "none"}`);

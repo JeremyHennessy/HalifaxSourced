@@ -1,4 +1,4 @@
-window.HALIFAX_FIRST_PARTY_SOURCES = {
+{
   "version": 2,
   "generatedAt": "2026-08-28T18:34:22.685Z",
   "checkedWebsites": 214,
@@ -12164,4 +12164,4 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
     "removedInvalidRelatedLinks": 0,
     "duplicateRelatedLinksRemoved": 0
   }
-};
+}
