@@ -1,5 +1,5 @@
 {
-  "version": 3,
+  "version": 4,
   "scope": {
     "cities": ["Halifax", "Dartmouth", "Bedford"],
     "regionLabels": ["Halifax Metro"],
@@ -15,7 +15,7 @@
       "url": "https://novascotia.com/explore-nova-scotia/events/?region=29",
       "detailHost": "novascotia.com",
       "detailPathPrefix": "/event/",
-      "maxDetailPages": 180,
+      "maxDetailPages": 220,
       "priority": 100
     },
     {
@@ -24,9 +24,11 @@
       "kind": "local_event_directory",
       "mode": "tribe_list_crawl",
       "url": "https://halifaxevents.ca/events/list/",
+      "icalUrl": "https://halifaxevents.ca/events/list/?ical=1",
       "detailHost": "halifaxevents.ca",
+      "detailPathPrefix": "/event/",
       "maxPages": 35,
-      "priority": 80
+      "priority": 82
     },
     {
       "id": "scotiabank-centre",
@@ -77,14 +79,16 @@
       "url": "https://www.scotiabank-centre.com/events/2026-2027-halifax-mooseheads",
       "venueName": "Scotiabank Centre",
       "venueAddress": "1800 Argyle Street, Halifax, NS",
-      "priority": 97
+      "priority": 99
     },
     {
       "id": "hfx-wanderers-home",
       "name": "HFX Wanderers 2026 Home Schedule",
-      "kind": "official_sports_schedule",
-      "mode": "wanderers_article_schedule",
-      "url": "https://www.cplsoccer.com/hfxwanderersfc/news/wanderers-announce-full-2026-schedule-presented-by-westjet",
+      "kind": "official_tourism_sports_schedule",
+      "mode": "sports_bullet_schedule",
+      "url": "https://novascotia.com/event/halifax-wanderers-2026-season/",
+      "scheduleYear": 2026,
+      "teamToken": "HFX Wanderers",
       "venueName": "Wanderers Grounds",
       "venueAddress": "5819 Sackville Street, Halifax, NS",
       "priority": 97
@@ -92,9 +96,11 @@
     {
       "id": "halifax-tides-home",
       "name": "Halifax Tides 2026 Home Schedule",
-      "kind": "official_sports_schedule",
-      "mode": "tides_article_schedule",
-      "url": "https://www.nsl.ca/news/from-breakout-debut-to-season-two-northern-super-league-releases-2026-schedule",
+      "kind": "official_tourism_sports_schedule",
+      "mode": "sports_bullet_schedule",
+      "url": "https://novascotia.com/event/halifax-tides-2026-season/",
+      "scheduleYear": 2026,
+      "teamToken": "Halifax Tides",
       "venueName": "Wanderers Grounds",
       "venueAddress": "5819 Sackville Street, Halifax, NS",
       "priority": 97
