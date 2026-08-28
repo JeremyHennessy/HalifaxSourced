@@ -1,13 +1,13 @@
 window.HALIFAX_WEBSITE_FEED_SIGNALS = {
   "version": 1,
-  "generatedAt": "2026-08-28T18:18:30.033Z",
-  "feedsDiscovered": 166,
-  "uniqueRestaurantFeeds": 152,
-  "sharedFeedUrlsSkipped": 7,
-  "feedHostGroups": 64,
+  "generatedAt": "2026-08-28T18:34:54.916Z",
+  "feedsDiscovered": 175,
+  "uniqueRestaurantFeeds": 155,
+  "sharedFeedUrlsSkipped": 10,
+  "feedHostGroups": 65,
   "concurrency": 10,
-  "feedsChecked": 145,
-  "failedFeeds": 7,
+  "feedsChecked": 149,
+  "failedFeeds": 6,
   "signals": [
     {
       "restaurantId": "osm-node-11751643550-cafe-lunette",
@@ -17,7 +17,7 @@ window.HALIFAX_WEBSITE_FEED_SIGNALS = {
       "postUrl": "https://www.cafelunette.com/your-parisian-patio-awaits/",
       "feedUrl": "https://www.cafelunette.com/feed/",
       "publishedAt": "2026-05-11T15:04:47.000Z",
-      "observedAt": "2026-08-28T18:17:58.162Z",
+      "observedAt": "2026-08-28T18:34:22.862Z",
       "signalMatches": {
         "openings": [
           "now open"
@@ -36,7 +36,7 @@ window.HALIFAX_WEBSITE_FEED_SIGNALS = {
       "postUrl": "https://www.cafelunette.com/mothers-day-brunch-at-cafe-lunette/",
       "feedUrl": "https://www.cafelunette.com/feed/",
       "publishedAt": "2026-04-28T18:12:21.000Z",
-      "observedAt": "2026-08-28T18:17:58.162Z",
+      "observedAt": "2026-08-28T18:34:22.862Z",
       "signalMatches": {
         "brunch": [
           "brunch"
@@ -55,7 +55,7 @@ window.HALIFAX_WEBSITE_FEED_SIGNALS = {
       "postUrl": "https://www.birdsnesthalifax.com/post/five-things-to-do-in-halifax-this-spring-we-ll-handle-breakfast",
       "feedUrl": "https://www.birdsnesthalifax.com/blog-feed.xml",
       "publishedAt": "2026-04-02T11:40:44.000Z",
-      "observedAt": "2026-08-28T18:17:58.160Z",
+      "observedAt": "2026-08-28T18:34:22.861Z",
       "signalMatches": {
         "brunch": [
           "breakfast"
@@ -74,7 +74,7 @@ window.HALIFAX_WEBSITE_FEED_SIGNALS = {
       "postUrl": "https://www.cafelunette.com/a-parisian-inspired-easter-weekend/",
       "feedUrl": "https://www.cafelunette.com/feed/",
       "publishedAt": "2026-04-01T19:30:03.000Z",
-      "observedAt": "2026-08-28T18:17:58.162Z",
+      "observedAt": "2026-08-28T18:34:22.862Z",
       "signalMatches": {
         "specials": [
           "offer",
@@ -94,11 +94,6 @@ window.HALIFAX_WEBSITE_FEED_SIGNALS = {
     {
       "restaurantId": "osm-node-4550022070-genji-sushi",
       "feedUrl": "http://www.genjisushi.ca/index.php?rest_route=%2Foembed%2F1.0%2Fembed&#038;url=http%3A%2F%2Fwww.genjisushi.ca%2F&#038;format=xml",
-      "reason": "http_400"
-    },
-    {
-      "restaurantId": "osm-node-13286396472-matadora-tapas-bar",
-      "feedUrl": "https://matadorahfx.ca/index.php?rest_route=%2Foembed%2F1.0%2Fembed&#038;url=https%3A%2F%2Fmatadorahfx.ca%2F&#038;format=xml",
       "reason": "http_400"
     },
     {

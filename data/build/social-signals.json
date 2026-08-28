@@ -1,16 +1,16 @@
 {
   "version": 1,
-  "generatedAt": "2026-08-28T18:18:30.085Z",
+  "generatedAt": "2026-08-28T18:34:54.970Z",
   "graphVersion": "v25.0",
   "lookbackDays": 60,
   "credentialState": {
     "facebook": "missing",
     "instagram": "missing"
   },
-  "discoveredProfileAssociations": 214,
-  "uniqueRestaurantProfiles": 180,
-  "sharedProfileAssociationsSkipped": 34,
-  "sharedProfileHandles": 13,
+  "discoveredProfileAssociations": 222,
+  "uniqueRestaurantProfiles": 186,
+  "sharedProfileAssociationsSkipped": 36,
+  "sharedProfileHandles": 14,
   "profilesAttempted": 0,
   "postsObserved": 0,
   "signals": [],
