@@ -10,6 +10,15 @@ const associationBases = new Set(registry.associationBases || []);
 const confidenceValues = new Set(registry.confidenceValues || []);
 
 function token(value) { return String(value ?? "").trim().toLowerCase().replace(/^@/, ""); }
+function decodeUrlEntities(value) {
+  let decoded = String(value ?? "");
+  for (let index = 0; index < 4; index += 1) {
+    const next = decoded.replace(/&(?:amp|#0*38|#x0*26);/gi, "&");
+    if (next === decoded) break;
+    decoded = next;
+  }
+  return decoded;
+}
 function host(value) {
   try { return new URL(String(value ?? "")).hostname.toLowerCase().replace(/^www\./, "").replace(/^m\./, ""); }
   catch { return ""; }
@@ -113,7 +122,8 @@ for (const record of records) {
 
   const seenRelated = new Set();
   const cleanedRelated = [];
-  for (const link of record.relatedLinks || []) {
+  for (let link of record.relatedLinks || []) {
+    link = { ...link, url: decodeUrlEntities(link?.url) };
     if (!validRelated(link)) { removedRelated += 1; continue; }
     const key = `${link.kind}|${link.url}`;
     if (seenRelated.has(key)) { duplicateRelatedRemoved += 1; continue; }
