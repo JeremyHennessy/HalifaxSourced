@@ -1,7 +1,49 @@
 "use strict";
 const EVENT_EDITORIAL_LIMIT = 8;
 
+function activeStructuredEvents() {
+  const cutoff = Date.now() - 6 * 60 * 60 * 1000;
+  return structuredEvents
+    .filter((event) => Number.isFinite(Date.parse(event.startAt)) && Date.parse(event.endAt || event.startAt) >= cutoff)
+    .sort((a, b) => a.startAt.localeCompare(b.startAt) || a.title.localeCompare(b.title));
+}
+
 function renderEvents() {
+  const structured = activeStructuredEvents();
+  if (structured.length) {
+    renderStructuredEvents(structured);
+    return;
+  }
+  renderEventLeads();
+}
+
+function renderStructuredEvents(items) {
+  const featured = items[0];
+  const visibleItems = items.slice(0, EVENT_EDITORIAL_LIMIT);
+  const featuredRestaurant = restaurants.find((restaurant) => restaurant.id === featured.restaurantId);
+  appView.innerHTML = `
+    <section class="editorial-hero events-hero">
+      <div class="page-shell editorial-hero-inner">
+        <div><span class="eyebrow">What's happening</span><h1>Events in Halifax</h1><p>Upcoming events with structured dates extracted from restaurant-owned source pages.</p></div>
+        <div class="featured-event"><span>UPCOMING EVENT</span><h2>${escapeHtml(featured.title)}</h2><p>${escapeHtml(structuredEventWhen(featured))}${featuredRestaurant ? ` · ${escapeHtml(featuredRestaurant.name)}` : ""}</p><a class="button light" href="${escapeHtml(safeUrl(featured.eventUrl) || safeUrl(featured.sourceUrl))}" target="_blank" rel="noreferrer">Official source ↗</a></div>
+      </div>
+    </section>
+    <section class="page-shell two-column-page">
+      <div>
+        <div class="chip-row"><span class="chip is-active">Upcoming</span><span class="chip">Structured dates</span><span class="chip">Official sources</span></div>
+        <div class="section-heading no-top"><div><h2>Upcoming events</h2><p>Dates come from structured Event data on restaurant-owned pages. Source links remain available for final confirmation.</p></div><span class="editorial-count">Showing ${visibleItems.length} of ${items.length} upcoming events</span></div>
+        <div class="event-list">${visibleItems.map(structuredEventCard).join("")}</div>
+        ${items.length > visibleItems.length ? `<div class="editorial-more"><a class="button secondary" href="#explore?feature=events">Explore event-ready places</a><p>More structured events are available through restaurant discovery.</p></div>` : ""}
+      </div>
+      <aside class="events-sidebar">
+        <div class="calendar-card">${simpleCalendar(items)}</div>
+        <div class="source-card"><h2>Source standard</h2><p>These listings require a valid future date, exact restaurant ID, official source URL, and structured JSON-LD Event record. Cancelled or expired events are excluded.</p></div>
+      </aside>
+    </section>`;
+  bindCommonActions();
+}
+
+function renderEventLeads() {
   const items = eventLeadItems();
   const featured = items[0];
   const visibleItems = items.slice(0, EVENT_EDITORIAL_LIMIT);
@@ -14,17 +56,35 @@ function renderEvents() {
     </section>
     <section class="page-shell two-column-page">
       <div>
-        <div class="chip-row"><button class="chip is-active">All events</button><button class="chip">Food & drink</button><button class="chip">Live music</button><button class="chip">Community</button></div>
+        <div class="chip-row"><span class="chip is-active">Source leads</span><span class="chip">Needs date confirmation</span></div>
         <div class="section-heading no-top"><div><h2>Event leads</h2><p>Only concise event-labelled links, event-specific URLs, or curated event records are promoted here. Follow the official source before making plans.</p></div><span class="editorial-count">Showing ${visibleItems.length} of ${items.length} strongest leads</span></div>
         <div class="event-list">${visibleItems.length ? visibleItems.map(eventSourceCard).join("") : emptyPageState("No explicit event links are loaded yet.")}</div>
         ${items.length > visibleItems.length ? `<div class="editorial-more"><a class="button secondary" href="#explore">Explore all places</a><p>Additional source signals remain searchable through restaurant discovery.</p></div>` : ""}
       </div>
       <aside class="events-sidebar">
-        <div class="calendar-card">${simpleCalendar()}</div>
+        <div class="calendar-card">${simpleCalendar([])}</div>
         <div class="source-card"><h2>How to read this page</h2><p>These are discovery leads from explicit official event links or curated event records, not a claim that an event occurs today. Open the source to confirm date, time, tickets, and availability.</p></div>
       </aside>
     </section>`;
   bindCommonActions();
+}
+
+function structuredEventCard(event) {
+  const restaurant = restaurants.find((item) => item.id === event.restaurantId);
+  const date = new Date(event.startAt);
+  const month = date.toLocaleDateString("en-CA", { month: "short" }).toUpperCase();
+  const day = date.toLocaleDateString("en-CA", { day: "numeric" });
+  const source = safeUrl(event.eventUrl) || safeUrl(event.sourceUrl);
+  return `<article class="event-card"><div class="event-date"><span>${escapeHtml(month)}</span><strong>${escapeHtml(day)}</strong></div><div class="event-thumb media-${restaurant ? mediaTone(restaurant) : "dining"}${restaurant ? permittedImageClass(restaurant) : ""}">${restaurant ? mediaImageMarkup(restaurant) : ""}</div><div class="event-copy"><div class="event-title-line"><h3>${escapeHtml(event.title)}</h3><span>${escapeHtml(String(event.eventType || "Event").replace(/Event$/, "") || "Event")}</span></div><p>${escapeHtml(event.venueName || restaurant?.name || "Halifax")}</p><small>${escapeHtml(structuredEventWhen(event))}${restaurant?.neighborhood ? ` · ${escapeHtml(restaurant.neighborhood)}` : ""}</small><div class="card-tags"><span>Structured date</span><span>Official source</span></div></div>${source ? `<a class="button tertiary" href="${escapeHtml(source)}" target="_blank" rel="noreferrer">Source ↗</a>` : restaurant ? `<a class="button tertiary" href="#restaurant/${encodeURIComponent(restaurant.id)}">View</a>` : ""}</article>`;
+}
+
+function structuredEventWhen(event) {
+  const start = new Date(event.startAt);
+  if (Number.isNaN(start.getTime())) return "Date unavailable";
+  const date = start.toLocaleDateString("en-CA", { weekday: "short", month: "short", day: "numeric" });
+  const hasTime = /T\d{2}:\d{2}/.test(String(event.startAt || ""));
+  if (!hasTime) return date;
+  return `${date} · ${start.toLocaleTimeString("en-CA", { hour: "numeric", minute: "2-digit" })}`;
 }
 
 function eventSourceCard(item) {
@@ -35,12 +95,13 @@ function eventSourceCard(item) {
   return `<article class="event-card"><div class="event-date"><span>CHECKED</span><strong>${escapeHtml(observed)}</strong></div><div class="event-thumb media-${mediaTone(restaurant)}${permittedImageClass(restaurant)}">${mediaImageMarkup(restaurant)}</div><div class="event-copy"><div class="event-title-line"><h3>${escapeHtml(restaurant.name)}</h3><span>Event lead</span></div><p>${escapeHtml(label)}</p><small>${escapeHtml(restaurant.neighborhood || "Halifax")} · Confirm current details</small><div class="card-tags"><span>Official source</span>${restaurant.hasPatio ? "<span>Patio</span>" : ""}</div></div><a class="button tertiary" href="#restaurant/${encodeURIComponent(restaurant.id)}">View</a></article>`;
 }
 
-function simpleCalendar() {
+function simpleCalendar(events = []) {
   const now = new Date();
   const month = now.toLocaleDateString("en-CA", { month: "long", year: "numeric" });
   const first = new Date(now.getFullYear(), now.getMonth(), 1);
   const days = new Date(now.getFullYear(), now.getMonth() + 1, 0).getDate();
   const blanks = first.getDay();
+  const eventDays = new Set(events.map((event) => new Date(event.startAt)).filter((date) => !Number.isNaN(date.getTime()) && date.getMonth() === now.getMonth() && date.getFullYear() === now.getFullYear()).map((date) => date.getDate()));
   const cells = [...Array(blanks).fill(""), ...Array.from({ length: days }, (_, i) => String(i + 1))];
-  return `<div class="calendar-heading"><span>▣</span><h2>${escapeHtml(month)}</h2></div><div class="calendar-week"><span>S</span><span>M</span><span>T</span><span>W</span><span>T</span><span>F</span><span>S</span></div><div class="calendar-grid">${cells.map((day) => `<span class="${Number(day) === now.getDate() ? "today" : ""}">${day}</span>`).join("")}</div><p>Calendar dates are illustrative until structured event dates are collected.</p>`;
+  return `<div class="calendar-heading"><span>▣</span><h2>${escapeHtml(month)}</h2></div><div class="calendar-week"><span>S</span><span>M</span><span>T</span><span>W</span><span>T</span><span>F</span><span>S</span></div><div class="calendar-grid">${cells.map((day) => `<span class="${Number(day) === now.getDate() ? "today" : ""}"${eventDays.has(Number(day)) ? ' title="Structured event available"' : ""}>${eventDays.has(Number(day)) ? "•" : ""}${day}</span>`).join("")}</div><p>${events.length ? "Dots mark structured event dates in the current month." : "Calendar dates are illustrative until structured event dates are collected."}</p>`;
 }

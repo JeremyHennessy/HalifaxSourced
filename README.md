@@ -22,7 +22,7 @@ The site is static and GitHub Pages-friendly. Hash routing is used so the discov
 
 - `#home` — editorial discovery homepage
 - `#explore` — searchable/filterable restaurant results
-- `#events` — event-source leads
+- `#events` — structured upcoming events when available, otherwise source leads
 - `#specials` — specials/happy-hour leads
 - `#menus` — menu-ready restaurants
 - `#map` — Leaflet map/list discovery
@@ -34,6 +34,8 @@ The site is static and GitHub Pages-friendly. Hash routing is used so the discov
 The UI distinguishes source coverage from consumer ratings. It does not fabricate live review scores, event dates, special prices, or reservations when those fields are not present in the collected data. Event and special signals are presented as leads when they require confirmation.
 
 Restaurant imagery is separately provenance-gated. Production photos are loaded from `data/restaurant-media.js` only when the media record has an exact restaurant ID, approved review state, explicit permission confirmation, source URL, source type, and documented rights basis. Unreviewed or merely public images are not rendered. See `docs/media-provenance.md`.
+
+Structured event dates are kept separate from keyword/link leads. `data/structured-events.js` accepts only exact-ID official JSON-LD Event records with valid dates and source provenance. The Events view automatically prefers these records when they exist and falls back to source leads when none are available. See `docs/structured-events.md`.
 
 ## Development
 
@@ -47,7 +49,7 @@ Then open the local URL printed by the script.
 
 ## Data refresh
 
-Existing import scripts remain under `scripts/`. See `docs/ingestion-compliance.md`, `docs/media-provenance.md`, and `data/source-contract.json` before extending collection.
+Existing import scripts remain under `scripts/`. See `docs/ingestion-compliance.md`, `docs/media-provenance.md`, `docs/structured-events.md`, and `data/source-contract.json` before extending collection.
 
 Owner media workflow:
 
@@ -57,6 +59,15 @@ node scripts/import-owner-submissions.mjs
 node scripts/build-restaurant-media.mjs
 node scripts/check-data-integrity.mjs
 ```
+
+Structured event preview:
+
+```bash
+node scripts/import-structured-events.mjs
+node scripts/check-data-integrity.mjs
+```
+
+The `Structured Events Preview` workflow performs the same scan in GitHub Actions and uploads the generated data for review without modifying `main`.
 
 ## Deployment
 

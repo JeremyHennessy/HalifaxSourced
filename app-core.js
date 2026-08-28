@@ -7,6 +7,8 @@ const officialPayload = window.HALIFAX_OFFICIAL_SITE_SIGNALS ?? null;
 const officialSignals = Array.isArray(officialPayload?.results) ? officialPayload.results : [];
 const inspectionPayload = window.HALIFAX_NS_FOOD_INSPECTIONS ?? null;
 const inspectionRecords = Array.isArray(inspectionPayload?.records) ? inspectionPayload.records : [];
+const structuredEventPayload = window.HALIFAX_STRUCTURED_EVENTS ?? null;
+const structuredEvents = Array.isArray(structuredEventPayload?.events) ? structuredEventPayload.events : [];
 
 const appView = document.querySelector("#appView");
 const globalSearch = document.querySelector("#globalSearch");
@@ -84,6 +86,13 @@ function addressKey(value) {
 }
 
 const officialById = new Map(officialSignals.map((signal) => [signal.restaurantId, signal]));
+const structuredEventsByRestaurant = new Map();
+for (const event of structuredEvents) {
+  if (!event?.restaurantId) continue;
+  if (!structuredEventsByRestaurant.has(event.restaurantId)) structuredEventsByRestaurant.set(event.restaurantId, []);
+  structuredEventsByRestaurant.get(event.restaurantId).push(event);
+}
+for (const events of structuredEventsByRestaurant.values()) events.sort((a, b) => String(a.startAt || "").localeCompare(String(b.startAt || "")));
 
 function mergeRestaurantLayers() {
   const merged = curatedRestaurants.map((restaurant) => ({ ...restaurant, sourceLayer: "curated" }));
@@ -177,6 +186,7 @@ function enrichRestaurant(restaurant) {
   const specialLinks = signalLinks(signal, "specials");
   const eventLinks = signalLinks(signal, "events");
   const reservationLinks = signalLinks(signal, "reservations");
+  const structuredRestaurantEvents = structuredEventsByRestaurant.get(restaurant.id) || [];
   const website = safeUrl(restaurant.website) || safeUrl(signal?.website) || (restaurant.sources || []).map((s) => safeUrl(s.url)).find(Boolean) || null;
   const score = Number.isFinite(restaurant.qualityScore) ? restaurant.qualityScore : sourceCoverageScore(restaurant, signal, inspections);
   return {
@@ -185,6 +195,7 @@ function enrichRestaurant(restaurant) {
     vibe: unique(restaurant.vibe || []),
     specials: Array.isArray(restaurant.specials) ? restaurant.specials : [],
     events: Array.isArray(restaurant.events) ? restaurant.events : [],
+    structuredEvents: structuredRestaurantEvents,
     sources: Array.isArray(restaurant.sources) ? restaurant.sources : [],
     signal,
     inspections,
@@ -195,7 +206,7 @@ function enrichRestaurant(restaurant) {
     website,
     hasMenu: menuLinks.length > 0 || Boolean(website),
     hasSpecial: specialLinks.length > 0 || (restaurant.specials || []).length > 0 || signalHas(signal, "specials"),
-    hasEvent: eventLinks.length > 0 || (restaurant.events || []).length > 0 || signalHas(signal, "events"),
+    hasEvent: structuredRestaurantEvents.length > 0 || eventLinks.length > 0 || (restaurant.events || []).length > 0 || signalHas(signal, "events"),
     hasPatio: hasPatio(restaurant, signal),
     hasOpening: hasOpening(restaurant, signal),
     hasReservation: reservationLinks.length > 0 || signalHas(signal, "reservations"),
@@ -218,6 +229,7 @@ function sourceCoverageScore(restaurant, signal, inspections) {
 const restaurants = mergeRestaurantLayers();
 window.__halifaxRestaurantCount = restaurants.length;
 window.__halifaxOfficialSignalCount = officialSignals.length;
+window.__halifaxStructuredEventCount = structuredEvents.length;
 
 const cuisines = countValues(restaurants.flatMap((restaurant) => restaurant.cuisines || []));
 const neighbourhoods = countValues(restaurants.map((restaurant) => restaurant.neighborhood || "Halifax"));
@@ -249,7 +261,8 @@ function searchableText(restaurant) {
     restaurant.address,
     ...(restaurant.cuisines || []),
     ...(restaurant.vibe || []),
-    ...(restaurant.signal?.keywordHits || [])
+    ...(restaurant.signal?.keywordHits || []),
+    ...(restaurant.structuredEvents || []).map((event) => event.title)
   ].filter(Boolean).join(" ").toLowerCase();
 }
 

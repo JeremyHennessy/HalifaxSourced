@@ -1,0 +1,40 @@
+name: Structured Events Preview
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  extract:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Extract structured events from official pages
+        env:
+          STRUCTURED_EVENT_PAGE_LIMIT: 180
+          STRUCTURED_EVENT_PAGES_PER_RESTAURANT: 3
+          STRUCTURED_EVENT_DELAY_MS: 400
+        run: node scripts/import-structured-events.mjs
+
+      - name: Validate generated data
+        run: node scripts/check-data-integrity.mjs
+
+      - name: Upload structured event preview
+        uses: actions/upload-artifact@v4
+        with:
+          name: structured-events-preview
+          path: |
+            data/structured-events.js
+            data/build/structured-events.json
+            artifacts/data-integrity-report.json
+          if-no-files-found: error
