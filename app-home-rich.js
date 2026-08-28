@@ -27,22 +27,45 @@ function richSpecialCard(restaurant, special) {
   return `<article class="restaurant-card compact-card"><div class="restaurant-card-body"><span class="eyebrow">Verified special</span><h3><a href="#restaurant/${encodeURIComponent(restaurant.id)}">${escapeHtml(restaurant.name)}</a></h3><p><strong>${escapeHtml(special.title)}</strong></p><p>${escapeHtml(special.recurrence || "Check current details")}</p></div></article>`;
 }
 function homeRichSections() {
-  const now = new Date(); const today = halifaxDateKey(now); const tomorrow = halifaxDateKey(addDays(now,1));
-  const events = (window.HALIFAX_CITY_EVENTS?.events || []).map((event) => ({ event, start: eventStart(event) })).filter((item) => item.start && item.start >= new Date(now.getTime()-6*3600000)).sort((a,b)=>a.start-b.start);
-  const tonight = events.filter(({start}) => { const key=halifaxDateKey(start), mins=halifaxMinutes(start); return (key===today && mins>=17*60) || (key===tomorrow && mins<3*60); }).slice(0,4).map((item)=>item.event);
-  const weekday = halifaxWeekday(now); const index=["sunday","monday","tuesday","wednesday","thursday","friday","saturday"].indexOf(weekday); const daysToFriday=index===5?0:index===6?-1:index===0?-2:(5-index); const friday=addDays(now,daysToFriday); const monday=addDays(friday,3); const weekend=events.filter(({start})=>start>=new Date(friday.getFullYear(),friday.getMonth(),friday.getDate())&&start<new Date(monday.getFullYear(),monday.getMonth(),monday.getDate())).slice(0,4).map((item)=>item.event);
-  const openPlaces=restaurants.filter((r)=>r.currentHoursState?.state==="open").sort((a,b)=>(b.score||0)-(a.score||0)).slice(0,4);
-  const day=halifaxWeekday(now); const specials=[]; for(const r of restaurants){for(const s of r.currentVerifiedSpecials||[]){if(Array.isArray(s.dayOfWeek)&&s.dayOfWeek.includes(day))specials.push({restaurant:r,special:s});}} specials.splice(4);
-  const sections=[];
-  if(tonight.length) sections.push(`<section class="page-shell section-block"><div class="section-heading"><div><span class="eyebrow">Tonight in Halifax</span><h2>What’s happening tonight</h2></div><a href="#events">All events →</a></div><div class="event-grid">${tonight.map(richEventCard).join("")}</div></section>`);
-  if(openPlaces.length) sections.push(`<section class="page-shell section-block"><div class="section-heading"><div><span class="eyebrow">Eat tonight</span><h2>Open now with fresh official hours</h2></div><a href="#explore">Explore →</a></div><div class="restaurant-grid">${openPlaces.map((r,i)=>restaurantCard(r,{index:i})).join("")}</div></section>`);
-  if(specials.length) sections.push(`<section class="page-shell section-block"><div class="section-heading"><div><span class="eyebrow">Specials tonight</span><h2>Verified recurring offers</h2></div><a href="#specials">All specials →</a></div><div class="restaurant-grid">${specials.map(({restaurant,special})=>richSpecialCard(restaurant,special)).join("")}</div></section>`);
-  if(weekend.length) sections.push(`<section class="page-shell section-block"><div class="section-heading"><div><span class="eyebrow">This weekend</span><h2>Plan the weekend</h2></div><a href="#events">All events →</a></div><div class="event-grid">${weekend.map(richEventCard).join("")}</div></section>`);
+  const now = new Date();
+  const today = halifaxDateKey(now);
+  const tomorrow = halifaxDateKey(addDays(now, 1));
+  const events = (window.HALIFAX_CITY_EVENTS?.events || [])
+    .map((event) => ({ event, start: eventStart(event) }))
+    .filter((item) => item.start && item.start >= new Date(now.getTime() - 6 * 3600000))
+    .sort((a, b) => a.start - b.start);
+  const tonight = events
+    .filter(({ start }) => { const key = halifaxDateKey(start), mins = halifaxMinutes(start); return (key === today && mins >= 17 * 60) || (key === tomorrow && mins < 3 * 60); })
+    .slice(0, 4).map((item) => item.event);
+  const weekdays = ["sunday", "monday", "tuesday", "wednesday", "thursday", "friday", "saturday"];
+  const index = weekdays.indexOf(halifaxWeekday(now));
+  const daysToFriday = index === 5 ? 0 : index === 6 ? -1 : index === 0 ? -2 : 5 - index;
+  const friday = addDays(now, daysToFriday);
+  const weekendKeys = new Set([0, 1, 2].map((offset) => halifaxDateKey(addDays(friday, offset))));
+  const weekend = events.filter(({ start }) => weekendKeys.has(halifaxDateKey(start))).slice(0, 4).map((item) => item.event);
+  const openPlaces = restaurants.filter((r) => r.currentHoursState?.state === "open").sort((a, b) => (b.score || 0) - (a.score || 0)).slice(0, 4);
+  const day = halifaxWeekday(now);
+  const specials = [];
+  for (const restaurant of restaurants) {
+    for (const special of restaurant.currentVerifiedSpecials || []) {
+      if (Array.isArray(special.dayOfWeek) && special.dayOfWeek.includes(day)) specials.push({ restaurant, special });
+    }
+  }
+  specials.splice(4);
+  const sections = [];
+  if (tonight.length) sections.push(`<section class="page-shell section-block"><div class="section-heading"><div><span class="eyebrow">Tonight in Halifax</span><h2>What’s happening tonight</h2></div><a href="#events">All events →</a></div><div class="event-grid">${tonight.map(richEventCard).join("")}</div></section>`);
+  if (openPlaces.length) sections.push(`<section class="page-shell section-block"><div class="section-heading"><div><span class="eyebrow">Eat tonight</span><h2>Open now with fresh official hours</h2></div><a href="#explore">Explore →</a></div><div class="restaurant-grid">${openPlaces.map((r, i) => restaurantCard(r, { index: i })).join("")}</div></section>`);
+  if (specials.length) sections.push(`<section class="page-shell section-block"><div class="section-heading"><div><span class="eyebrow">Specials tonight</span><h2>Verified recurring offers</h2></div><a href="#specials">All specials →</a></div><div class="restaurant-grid">${specials.map(({ restaurant, special }) => richSpecialCard(restaurant, special)).join("")}</div></section>`);
+  if (weekend.length) sections.push(`<section class="page-shell section-block"><div class="section-heading"><div><span class="eyebrow">This weekend</span><h2>Plan the weekend</h2></div><a href="#events">All events →</a></div><div class="event-grid">${weekend.map(richEventCard).join("")}</div></section>`);
   return sections.join("");
 }
 renderHome = function renderHomeWithStructuredDiscovery() {
   baseRenderHome();
   const rich = homeRichSections();
-  if (rich) appView.insertAdjacentHTML("beforeend", rich);
+  if (rich) {
+    const newsletter = appView.querySelector(".newsletter");
+    if (newsletter) newsletter.insertAdjacentHTML("beforebegin", rich);
+    else appView.insertAdjacentHTML("beforeend", rich);
+  }
   bindCommonActions();
 };
