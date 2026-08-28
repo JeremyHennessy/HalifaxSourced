@@ -1,0 +1,35 @@
+name: Mini-map Render Race Diagnostic
+
+on:
+  push:
+    branches:
+      - fix/explore-minimap-render-race-20260828
+
+permissions:
+  contents: read
+
+jobs:
+  regression:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Install Playwright
+        run: |
+          npm install --no-save playwright@1.55.0
+          npx playwright install --with-deps chromium
+      - name: Start app
+        run: |
+          node scripts/dev-server.mjs >/tmp/halifax-sourced-server.log 2>&1 &
+          for i in {1..30}; do
+            if curl --fail --silent http://127.0.0.1:5173/ >/dev/null; then exit 0; fi
+            sleep 1
+          done
+          exit 1
+      - name: Run deterministic lifecycle regression
+        env:
+          APP_URL: http://127.0.0.1:5173
+        run: node scripts/test-explore-minimap-lifecycle.mjs
