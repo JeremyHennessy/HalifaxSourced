@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="./styles-pages.css?v=20260827-rebuild" />
     <link rel="stylesheet" href="./styles-responsive.css?v=20260827-rebuild" />
     <link rel="stylesheet" href="./styles-media.css?v=20260828-media" />
+    <link rel="stylesheet" href="./styles-events.css?v=20260828-event-filters" />
   </head>
   <body>
     <a class="skip-link" href="#mainContent">Skip to content</a>
@@ -61,9 +62,9 @@
     <nav class="mobile-tabbar" aria-label="Mobile navigation">
       <a href="#home" data-route-link="home"><span aria-hidden="true">⌂</span>Home</a>
       <a href="#explore" data-route-link="explore"><span aria-hidden="true">⌕</span>Explore</a>
+      <a href="#events" data-route-link="events"><span aria-hidden="true">◫</span>Events</a>
       <a href="#map" data-route-link="map"><span aria-hidden="true">⌖</span>Map</a>
-      <button type="button" id="mobileSaved"><span aria-hidden="true">♡</span>Saved</button>
-      <button type="button" id="mobileProfile"><span aria-hidden="true">○</span>Profile</button>
+      <a href="#saved" id="mobileSaved" data-route-link="saved"><span aria-hidden="true">♡</span>Saved</a>
     </nav>
     <div class="toast-region" id="toastRegion" aria-live="polite" aria-atomic="true"></div>
 
@@ -89,7 +90,7 @@
     <script src="./app-home.js?v=20260828-city-home"></script>
     <script src="./app-explore.js?v=20260828-expanded-filters"></script>
     <script src="./app-events.js?v=20260828-city-events-v4"></script>
-    <script src="./app-event-pagination.js?v=20260828-event-controls"></script>
+    <script src="./app-event-pagination.js?v=20260828-event-capabilities"></script>
     <script src="./app-discovery.js?v=20260828-verified-sources"></script>
     <script src="./app-detail.js?v=20260828-social-detail"></script>
     <script src="./app-init.js?v=20260827-rebuild"></script>
