@@ -1,0 +1,60 @@
+name: Regional Library Events Diagnostic
+
+on:
+  push:
+    branches:
+      - fix/library-regional-event-filters-20260828
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Check script syntax
+        run: node --check scripts/import-regional-library-events.mjs
+      - name: Pull source-filtered Dartmouth and Bedford library events
+        env:
+          LIBRARY_REGIONAL_PAGE_LIMIT: 12
+          LIBRARY_REGIONAL_DELAY_MS: 100
+          SUPPLEMENTAL_EVENT_TIMEOUT_MS: 15000
+        run: node scripts/import-regional-library-events.mjs
+      - name: Require regional evidence and validate scope
+        run: |
+          node - <<'NODE'
+          const fs = require('fs');
+          const data = JSON.parse(fs.readFileSync('data/build/city-events.json','utf8'));
+          const audit = data.regionalLibraryAudit;
+          if (!audit) throw new Error('Regional library audit missing');
+          if ((audit.failures || []).length) throw new Error(`Regional library fetch failures: ${JSON.stringify(audit.failures)}`);
+          const dartmouth = (data.events || []).filter((event) => event.city === 'Dartmouth').length;
+          const bedford = (data.events || []).filter((event) => event.city === 'Bedford').length;
+          if (dartmouth < 1) throw new Error('No Dartmouth events produced by regional library pass');
+          if (bedford < 1) throw new Error('No Bedford events produced by regional library pass');
+          console.log(JSON.stringify({ eventCount: data.events.length, dartmouth, bedford, regionalAudit: audit }, null, 2));
+          NODE
+          node scripts/sanitize-city-events.mjs
+          node scripts/resolve-city-event-entities.mjs
+          node scripts/check-city-events.mjs
+          node scripts/check-event-entity-resolution.mjs
+      - name: Upload regional diagnostic
+        uses: actions/upload-artifact@v4
+        with:
+          name: regional-library-events-diagnostic
+          path: |
+            data/city-events.js
+            data/build/city-events.json
+            data/build/event-entity-resolution.json
+            artifacts/city-event-integrity-report.json
+            artifacts/event-entity-resolution-report.json
+          if-no-files-found: error
+          retention-days: 14
