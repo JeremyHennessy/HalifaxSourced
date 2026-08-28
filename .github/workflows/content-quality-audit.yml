@@ -4,6 +4,18 @@ on:
   workflow_dispatch:
   schedule:
     - cron: "17 12 * * 3"
+  pull_request:
+    branches:
+      - main
+    paths:
+      - .github/workflows/content-quality-audit.yml
+      - scripts/check-source-links.mjs
+      - scripts/build-content-quality-report.mjs
+      - scripts/reconcile-structured-coverage.mjs
+      - scripts/build-structured-specials.mjs
+      - data/build/first-party-sources.json
+      - data/build/structured-place-facts.json
+      - data/build/city-events.json
 
 permissions:
   contents: read
