@@ -1,2 +1,2 @@
-name,neighborhood,cuisines,vibe,special_title,special_cadence,event_title,event_timing,source_url,contact_email
-Example Restaurant,North End,"Pizza;Wine","casual;late",Happy hour oysters,"Tue-Fri 4-6",Live jazz,Thursday 8pm,https://example.com/specials,owner@example.com
+restaurant_id,name,neighborhood,cuisines,vibe,special_title,special_cadence,event_title,event_timing,source_url,contact_email,image_url,image_alt,image_source_url,image_source_type,image_rights_basis,image_permission_confirmed,image_attribution,image_review_state
+example-restaurant,Example Restaurant,North End,"Pizza;Wine","casual;late",Happy hour oysters,"Tue-Fri 4-6",Live jazz,Thursday 8pm,https://example.com/specials,owner@example.com,https://example.com/images/dining-room.jpg,Example Restaurant dining room,https://example.com/media-permission,owner_submission,owner_attestation,true,Photo courtesy of Example Restaurant,needs-review

@@ -1,7 +1,8 @@
 "use strict";
 
-// Restaurant imagery is intentionally opt-in. A URL alone is not enough: the
-// record must carry explicit rights/source metadata before the UI will render it.
+// Restaurant imagery is opt-in and provenance-gated. Public accessibility is
+// not permission. The UI renders only media that has an approved review state,
+// an allowed source type, explicit permission confirmation, and a rights basis.
 const PERMITTED_IMAGE_SOURCE_TYPES = new Set([
   "owner",
   "owner_submission",
@@ -11,7 +12,14 @@ const PERMITTED_IMAGE_SOURCE_TYPES = new Set([
   "licensed"
 ]);
 
-function normalizeImageSourceType(value) {
+const PERMITTED_IMAGE_PERMISSION_VALUES = new Set([
+  "permitted",
+  "owner_approved",
+  "written_permission",
+  "licensed"
+]);
+
+function normalizeImageToken(value) {
   return String(value ?? "")
     .trim()
     .toLowerCase()
@@ -26,23 +34,43 @@ function safeImageUrl(value) {
   return safeUrl(raw);
 }
 
-function permittedImageFor(restaurant) {
-  const candidates = [];
+function mediaManifestCandidates(restaurant) {
+  const payload = window.HALIFAX_RESTAURANT_MEDIA ?? null;
+  const records = Array.isArray(payload?.records) ? payload.records : [];
+  return records.filter((image) => image?.restaurantId === restaurant?.id);
+}
+
+function imageCandidates(restaurant) {
+  const candidates = [...mediaManifestCandidates(restaurant)];
   if (restaurant?.image && typeof restaurant.image === "object") candidates.push(restaurant.image);
   if (Array.isArray(restaurant?.images)) candidates.push(...restaurant.images.filter((image) => image && typeof image === "object"));
+  return candidates;
+}
 
-  for (const image of candidates) {
-    const sourceType = normalizeImageSourceType(image.sourceType ?? image.sourceKind ?? image.source ?? image.permissionSource);
-    const permission = normalizeImageSourceType(image.permission ?? image.usageRights ?? image.rights);
-    const explicitlyPermitted = image.permitted === true || image.ownerApproved === true || permission === "permitted" || permission === "owner_approved";
-    if (!explicitlyPermitted && !PERMITTED_IMAGE_SOURCE_TYPES.has(sourceType)) continue;
+function permittedImageFor(restaurant) {
+  for (const image of imageCandidates(restaurant)) {
+    const sourceType = normalizeImageToken(image.sourceType ?? image.sourceKind ?? image.source ?? image.permissionSource);
+    const permission = normalizeImageToken(image.permission ?? image.usageRights ?? image.rights);
+    const reviewState = normalizeImageToken(image.reviewState ?? image.reviewStatus);
+    const rightsBasis = String(image.rightsBasis ?? image.rightsNote ?? "").trim();
+    const permissionConfirmed = image.permissionConfirmed === true || image.ownerApproved === true;
+
+    if (reviewState !== "approved") continue;
+    if (!PERMITTED_IMAGE_SOURCE_TYPES.has(sourceType)) continue;
+    if (!PERMITTED_IMAGE_PERMISSION_VALUES.has(permission)) continue;
+    if (!permissionConfirmed || !rightsBasis) continue;
 
     const url = safeImageUrl(image.url ?? image.src);
-    if (!url) continue;
+    const sourceUrl = safeUrl(image.sourceUrl ?? image.provenanceUrl ?? image.pageUrl);
+    if (!url || !sourceUrl) continue;
+
     return {
       url,
       alt: String(image.alt ?? restaurant?.name ?? "Restaurant image"),
-      sourceType: sourceType || permission || "permitted"
+      sourceType,
+      sourceUrl,
+      rightsBasis,
+      attribution: String(image.attribution ?? "").trim() || null
     };
   }
   return null;
@@ -53,7 +81,7 @@ function mediaImageMarkup(restaurant, options = {}) {
   if (!image) return "";
   const loading = options.loading === "eager" ? "eager" : "lazy";
   const className = options.className || "media-photo";
-  return `<img class="${escapeHtml(className)}" src="${escapeHtml(image.url)}" alt="${escapeHtml(options.alt ?? image.alt)}" loading="${loading}" decoding="async" />`;
+  return `<img class="${escapeHtml(className)}" src="${escapeHtml(image.url)}" alt="${escapeHtml(options.alt ?? image.alt)}" loading="${loading}" decoding="async" data-media-source="${escapeHtml(image.sourceType)}" />`;
 }
 
 function permittedImageClass(restaurant) {
