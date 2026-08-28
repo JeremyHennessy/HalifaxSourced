@@ -1,6 +1,8 @@
 import { readFile, writeFile } from "node:fs/promises";
 import vm from "node:vm";
 
+const DAY_MS = 24 * 60 * 60 * 1000;
+const now = Date.now();
 async function json(path, fallback = {}) {
   try { return JSON.parse(await readFile(new URL(`../${path}`, import.meta.url), "utf8")); }
   catch { return fallback; }
@@ -22,6 +24,10 @@ function normalize(value) {
 }
 function hasHits(value, kind) { return Array.isArray(value?.signalMatches?.[kind]) && value.signalMatches[kind].length > 0; }
 function pct(count, total) { return total ? Number(((count / total) * 100).toFixed(1)) : 0; }
+function isFresh(value, days) {
+  const stamp = Date.parse(String(value ?? ""));
+  return Number.isFinite(stamp) && stamp <= now + DAY_MS && now - stamp <= days * DAY_MS;
+}
 
 const reportPath = new URL("../data/build/content-coverage-report.json", import.meta.url);
 const report = JSON.parse(await readFile(reportPath, "utf8"));
@@ -29,6 +35,8 @@ const catalog = await json("data/build/catalog.json", { restaurants: [] });
 const official = await json("data/build/official-site-signals.json", { results: [] });
 const verified = await json("data/build/verified-source-pages.json", { menuSources: [], specialSources: [] });
 const firstParty = await json("data/build/first-party-sources.json", { records: [] });
+const websiteFeeds = await json("data/build/website-feed-signals.json", { signals: [] });
+const socialSignals = await json("data/build/social-signals.json", { signals: [] });
 const facts = await json("data/build/structured-place-facts.json", { records: [], counts: {}, failures: [] });
 const specials = await json("data/build/structured-specials.json", { records: [] });
 const discoveredWindow = await windowData("data/discovered-restaurants.js");
@@ -79,6 +87,9 @@ for (const result of official.results || []) {
   if (hasHits(result, "patio")) basePatioIds.add(result.restaurantId);
 }
 for (const item of catalog.restaurants || []) if ((item.specials || []).length) baseSpecialIds.add(item.id);
+for (const signal of [...(websiteFeeds.signals || []), ...(socialSignals.signals || [])]) {
+  if (isFresh(signal.publishedAt, 60) && hasHits(signal, "specials")) baseSpecialIds.add(signal.restaurantId);
+}
 
 const phoneIds = new Set(basePhoneIds);
 const hoursIds = new Set(baseHoursIds);
