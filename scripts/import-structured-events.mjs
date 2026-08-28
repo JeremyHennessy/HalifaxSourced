@@ -1,5 +1,6 @@
 import { createHash } from "node:crypto";
 import { mkdir, readFile, writeFile } from "node:fs/promises";
+import vm from "node:vm";
 
 const signalsPath = new URL("../data/build/official-site-signals.json", import.meta.url);
 const outputJson = new URL("../data/build/structured-events.json", import.meta.url);
@@ -9,11 +10,26 @@ const perRestaurantLimit = Number(process.env.STRUCTURED_EVENT_PAGES_PER_RESTAUR
 const delayMs = Number(process.env.STRUCTURED_EVENT_DELAY_MS ?? 400);
 const userAgent = "HalifaxSourced/0.2 (+https://github.com/JeremyHennessy/HalifaxSourced)";
 const now = Date.now();
-const earliest = now - 12 * 60 * 60 * 1000;
+const earliest = now - 30 * 60 * 1000;
 const latest = now + 370 * 24 * 60 * 60 * 1000;
+
+async function loadWindowScript(url) {
+  const source = await readFile(url, "utf8");
+  const context = { window: {} };
+  vm.createContext(context);
+  vm.runInContext(source, context, { filename: url.pathname, timeout: 20_000 });
+  return context.window;
+}
 
 const payload = JSON.parse(await readFile(signalsPath, "utf8"));
 const signals = Array.isArray(payload?.results) ? payload.results : [];
+const curatedWindow = await loadWindowScript(new URL("../data/restaurants.js", import.meta.url));
+const osmWindow = await loadWindowScript(new URL("../data/osm-restaurants.js", import.meta.url));
+const rawRestaurants = [
+  ...(Array.isArray(curatedWindow.HALIFAX_RESTAURANTS) ? curatedWindow.HALIFAX_RESTAURANTS : []),
+  ...(Array.isArray(osmWindow.HALIFAX_OSM_RESTAURANTS) ? osmWindow.HALIFAX_OSM_RESTAURANTS : [])
+];
+const restaurantById = new Map(rawRestaurants.map((restaurant) => [restaurant.id, restaurant]));
 const robotsCache = new Map();
 
 function sleep(ms) {
@@ -43,12 +59,54 @@ function token(value) {
 
 function decodeText(value) {
   return String(value ?? "")
+    .replace(/&#x([0-9a-f]+);/gi, (_, value) => String.fromCodePoint(Number.parseInt(value, 16)))
+    .replace(/&#(\d+);/g, (_, value) => String.fromCodePoint(Number.parseInt(value, 10)))
     .replace(/&amp;/gi, "&")
     .replace(/&quot;/gi, '"')
     .replace(/&#39;|&apos;/gi, "'")
     .replace(/&nbsp;/gi, " ")
+    .replace(/&ndash;|&mdash;/gi, "–")
     .replace(/\s+/g, " ")
     .trim();
+}
+
+function normalizedText(value) {
+  return decodeText(value)
+    .toLowerCase()
+    .normalize("NFKD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/[^a-z0-9]+/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function streetFingerprint(restaurant) {
+  const address = String(restaurant?.address ?? "").split(",")[0].trim();
+  const match = address.match(/\b(\d+[a-z]?)\s+(.+)/i);
+  if (!match) return null;
+  const number = match[1].toLowerCase();
+  const streetWords = normalizedText(match[2])
+    .split(" ")
+    .filter((word) => !["street", "st", "avenue", "ave", "road", "rd", "drive", "dr", "boulevard", "blvd", "lane", "ln"].includes(word))
+    .slice(0, 3);
+  if (!streetWords.length) return null;
+  return `${number} ${streetWords.join(" ")}`;
+}
+
+function requiresLocationMatch(url) {
+  try {
+    const path = new URL(url).pathname.toLowerCase();
+    return /\/(?:restaurants?|locations?)\/[^/]+/.test(path);
+  } catch {
+    return false;
+  }
+}
+
+function pageMatchesRestaurantLocation(url, html, restaurant) {
+  if (!requiresLocationMatch(url)) return true;
+  const fingerprint = streetFingerprint(restaurant);
+  if (!fingerprint) return false;
+  return normalizedText(html).includes(fingerprint);
 }
 
 function parseRobotsGroup(text, wantedAgent) {
@@ -222,8 +280,14 @@ for (const page of pages) {
     }
     const html = await response.text();
     scannedPages += 1;
+    const restaurant = restaurantById.get(page.restaurantId);
+    const resolvedUrl = response.url || page.pageUrl;
+    if (!pageMatchesRestaurantLocation(resolvedUrl, html, restaurant)) {
+      failures.push({ ...page, pageUrl: resolvedUrl, reason: "location_mismatch" });
+      continue;
+    }
     for (const event of jsonLdEvents(html)) {
-      const normalized = normalizeEvent(event, { ...page, pageUrl: response.url || page.pageUrl, observedAt });
+      const normalized = normalizeEvent(event, { ...page, pageUrl: resolvedUrl, observedAt });
       if (normalized) events.push(normalized);
     }
   } catch (error) {
