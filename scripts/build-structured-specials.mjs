@@ -3,6 +3,7 @@ import { mkdir, readFile, writeFile } from "node:fs/promises";
 const catalog = JSON.parse(await readFile(new URL("../data/build/catalog.json", import.meta.url), "utf8"));
 const firstParty = JSON.parse(await readFile(new URL("../data/build/first-party-sources.json", import.meta.url), "utf8"));
 const verifiedPages = JSON.parse(await readFile(new URL("../data/build/verified-source-pages.json", import.meta.url), "utf8").catch(() => "{}"));
+const catalogIds = new Set((catalog.restaurants || []).map((restaurant) => restaurant.id));
 const now = new Date().toISOString();
 const nowStamp = Date.parse(now);
 const CURRENT_VERIFY_DAYS = Number(process.env.STRUCTURED_SPECIAL_CURRENT_VERIFY_DAYS || 30);
@@ -156,19 +157,39 @@ for (const record of firstParty.records || []) {
   }
 }
 
+const canonicalRecords = [];
+const orphanSources = [];
+for (const record of records) {
+  if (catalogIds.has(record.restaurantId)) {
+    canonicalRecords.push(record);
+    continue;
+  }
+  orphanSources.push({
+    restaurantId: record.restaurantId || null,
+    title: record.title,
+    sourceUrl: record.sourceUrl,
+    sourceType: record.sourceType,
+    observedAt: record.observedAt || null,
+    verifiedAt: record.verifiedAt || null,
+    reason: "restaurant_id_not_in_canonical_catalog"
+  });
+}
+
 const payload = {
-  version: 2,
+  version: 3,
   generatedAt: now,
   currentVerificationMaxAgeDays: CURRENT_VERIFY_DAYS,
-  count: records.length,
-  verifiedCurrent: records.filter((record) => record.status === "verified_current").length,
-  recurringVerify: records.filter((record) => record.status === "likely_recurring_verify").length,
-  sourceLeads: records.filter((record) => record.status === "source_lead").length,
-  stale: records.filter((record) => record.status === "stale").length,
-  expired: records.filter((record) => record.status === "expired").length,
-  records
+  count: canonicalRecords.length,
+  verifiedCurrent: canonicalRecords.filter((record) => record.status === "verified_current").length,
+  recurringVerify: canonicalRecords.filter((record) => record.status === "likely_recurring_verify").length,
+  sourceLeads: canonicalRecords.filter((record) => record.status === "source_lead").length,
+  stale: canonicalRecords.filter((record) => record.status === "stale").length,
+  expired: canonicalRecords.filter((record) => record.status === "expired").length,
+  orphanSourceCount: orphanSources.length,
+  orphanSources,
+  records: canonicalRecords
 };
 await mkdir(new URL("../data/build", import.meta.url), { recursive: true });
 await writeFile(new URL("../data/build/structured-specials.json", import.meta.url), JSON.stringify(payload, null, 2) + "\n");
 await writeFile(new URL("../data/structured-specials.js", import.meta.url), `window.HALIFAX_STRUCTURED_SPECIALS = ${JSON.stringify(payload, null, 2)};\n`);
-console.log(JSON.stringify({ count: payload.count, verifiedCurrent: payload.verifiedCurrent, recurringVerify: payload.recurringVerify, sourceLeads: payload.sourceLeads, stale: payload.stale, expired: payload.expired }, null, 2));
+console.log(JSON.stringify({ count: payload.count, verifiedCurrent: payload.verifiedCurrent, recurringVerify: payload.recurringVerify, sourceLeads: payload.sourceLeads, stale: payload.stale, expired: payload.expired, orphanSourceCount: payload.orphanSourceCount }, null, 2));
