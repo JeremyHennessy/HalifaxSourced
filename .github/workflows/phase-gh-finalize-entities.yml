@@ -1,0 +1,67 @@
+name: Phase GH Finalize Event Entities
+
+on:
+  push:
+    branches:
+      - phase-gh/event-venue-expansion-20260828
+    paths:
+      - .github/workflows/phase-gh-finalize-entities.yml
+
+permissions:
+  contents: write
+
+jobs:
+  finalize:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: phase-gh/event-venue-expansion-20260828
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Move blocked Alderney adapter out of active registry
+        run: |
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          path = Path('data/event-source-registry.json')
+          data = json.loads(path.read_text())
+          data['sources'] = [s for s in data.get('sources', []) if s.get('id') != 'alderney-landing']
+          data['version'] = max(int(data.get('version', 0)), 5)
+          path.write_text(json.dumps(data, indent=2) + '\n')
+          workflow = Path('.github/workflows/city-events-preview.yml')
+          text = workflow.read_text()
+          needle = '      - name: Validate city event dataset\n        run: node scripts/check-city-events.mjs\n'
+          replacement = needle + '\n      - name: Validate event entity resolution\n        run: node scripts/check-event-entity-resolution.mjs\n'
+          if 'Validate event entity resolution' not in text:
+              if needle not in text:
+                  raise SystemExit('city-events-preview validation insertion point not found')
+              text = text.replace(needle, replacement)
+              workflow.write_text(text)
+          PY
+      - name: Resolve existing validated city events
+        run: node scripts/resolve-city-event-entities.mjs
+      - name: Validate event entities
+        run: |
+          node scripts/check-city-events.mjs
+          node scripts/check-event-entity-resolution.mjs
+      - name: Commit validated event entity layer and remove finalizer
+        run: |
+          git config user.name "Halifax Sourced Data Bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add \
+            data/event-source-registry.json \
+            data/event-source-candidates.json \
+            data/venue-registry.json \
+            data/organizer-registry.json \
+            data/city-events.js \
+            data/build/city-events.json \
+            data/build/event-entity-resolution.json \
+            .github/workflows/city-events-preview.yml \
+            scripts/resolve-city-event-entities.mjs \
+            scripts/check-event-entity-resolution.mjs
+          git rm --ignore-unmatch .github/workflows/phase-gh-finalize-entities.yml
+          git commit -m "Finalize canonical event venue and organizer resolution"
+          git push origin HEAD:phase-gh/event-venue-expansion-20260828
