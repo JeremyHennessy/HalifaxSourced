@@ -1,9 +1,6 @@
 name: Deployed UI Verification
 
 on:
-  push:
-    branches:
-      - qa-polish-20260828
   workflow_dispatch:
 
 permissions:
