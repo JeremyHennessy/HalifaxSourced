@@ -47,10 +47,14 @@ const totals = await page.evaluate(() => ({
   discoveredRestaurants: window.__halifaxDiscoveredRestaurantCount ?? 0,
   socialProfiles: window.__halifaxFirstPartySocialProfileCount ?? 0,
   relatedLinks: window.__halifaxFirstPartyRelatedLinkCount ?? 0,
+  socialRestaurants: window.__halifaxSocialLinkedRestaurantCount ?? 0,
+  reservationRestaurants: window.__halifaxReservationLinkedRestaurantCount ?? 0,
+  orderingRestaurants: window.__halifaxOrderingLinkedRestaurantCount ?? 0,
   cityEvents: window.HALIFAX_CITY_EVENTS?.eventCount ?? 0
 }));
 if (totals.restaurants < 700 || totals.officialSignals < 100) throw new Error(`Expected preserved discovery data, got ${JSON.stringify(totals)}.`);
 if (totals.discoveredRestaurants < 1) throw new Error(`Expected reviewed local discovery records, got ${JSON.stringify(totals)}.`);
+if (totals.socialProfiles < 100 || totals.relatedLinks < 100 || totals.socialRestaurants < 50) throw new Error(`Expected expanded first-party link coverage, got ${JSON.stringify(totals)}.`);
 await page.screenshot({ path: resolve("artifacts", "ui-check-desktop.png"), fullPage: true });
 
 // New-opening discovery must be searchable without weakening the established catalogue checks.
@@ -66,15 +70,49 @@ await page.locator(".restaurant-card").first().waitFor();
 const exploreCards = await page.locator(".restaurant-card").count();
 if (exploreCards < 1 || exploreCards > 12) throw new Error(`Expected paginated explore results, found ${exploreCards}.`);
 
+// First-party social, booking, and ordering links should be real Explore filters, not display-only metadata.
+for (const feature of ["social", "reservations", "ordering"]) {
+  await page.goto(`${url}/#explore`, { waitUntil: "networkidle" });
+  await page.locator("#featureFilter").selectOption(feature);
+  await page.locator("[data-filter-apply]").click();
+  await page.locator(".restaurant-card").first().waitFor();
+  const count = await page.locator(".restaurant-card").count();
+  if (count < 1) throw new Error(`Expected Explore results for ${feature} feature filter.`);
+}
+
+await page.goto(`${url}/#explore`, { waitUntil: "networkidle" });
+await page.locator("#featureFilter").selectOption("social");
+await page.locator("[data-filter-apply]").click();
+const socialDetailHref = await page.locator('.restaurant-card h3 a[href^="#restaurant/"]').first().getAttribute("href");
+if (!socialDetailHref) throw new Error("Expected a restaurant detail route from the social filter.");
+await page.goto(`${url}/${socialDetailHref}`, { waitUntil: "networkidle" });
+await page.locator("#detailLinks").waitFor();
+if (await page.locator("#detailLinks .source-link-row").count() < 1) throw new Error("Expected official social or related links on a social-linked restaurant detail page.");
+
 await page.goto(`${url}/#events`, { waitUntil: "networkidle" });
 const eventState = await page.evaluate(() => ({
   loaded: window.HALIFAX_CITY_EVENTS?.eventCount ?? 0,
   rendered: document.querySelectorAll(".event-card").length,
-  filters: document.querySelectorAll("[data-event-category]").length
+  filters: document.querySelectorAll("[data-event-category]").length,
+  windows: document.querySelectorAll("[data-event-window]").length,
+  loadMore: Boolean(document.querySelector("[data-event-load-more]"))
 }));
 if (eventState.loaded > 0) {
   if (eventState.rendered < 1 || eventState.rendered > 24) throw new Error(`Expected paginated/editorial city event cards (1-24), got ${JSON.stringify(eventState)}.`);
-  if (eventState.filters < 1) throw new Error(`Expected category controls for city events, got ${JSON.stringify(eventState)}.`);
+  if (eventState.filters < 1 || eventState.windows < 4) throw new Error(`Expected category and date-window controls for city events, got ${JSON.stringify(eventState)}.`);
+  if (eventState.loaded > 24 && !eventState.loadMore) throw new Error(`Expected progressive event loading when more than 24 events exist, got ${JSON.stringify(eventState)}.`);
+  if (eventState.loadMore) {
+    const before = eventState.rendered;
+    await page.locator("[data-event-load-more]").click();
+    const after = await page.locator(".event-card").count();
+    if (after <= before) throw new Error(`Expected Load More to increase visible events, before=${before}, after=${after}.`);
+  }
+  const sportsFilter = page.locator('[data-event-category="Sports"]');
+  if (await sportsFilter.count()) {
+    await sportsFilter.click();
+    await page.locator(".event-card").first().waitFor();
+    if (await page.locator(".event-card").count() < 1) throw new Error("Expected Sports category to return city events.");
+  }
 } else if (eventState.rendered < 1 || eventState.rendered > 24) {
   throw new Error(`Expected event-source fallback cards (1-24), got ${JSON.stringify(eventState)}.`);
 }
@@ -132,4 +170,4 @@ await page.screenshot({ path: resolve("artifacts", "ui-check-mobile.png"), fullP
 
 if (consoleErrors.length) throw new Error(`Console errors detected:\n${consoleErrors.join("\n")}`);
 await browser.close();
-console.log("Halifax Sourced UI verified: discovery, expanded events, search, filters, map/list sync, desktop, and mobile actions.");
+console.log("Halifax Sourced UI verified: discovery, first-party social links, bookings, ordering, expanded events, event filters, progressive loading, map/list sync, desktop, and mobile actions.");
