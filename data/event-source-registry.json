@@ -1,0 +1,106 @@
+{
+  "version": 1,
+  "scope": {
+    "cities": ["Halifax", "Dartmouth", "Bedford"],
+    "regionLabels": ["Halifax Metro"],
+    "futureDays": 400,
+    "pastGraceHours": 6
+  },
+  "sources": [
+    {
+      "id": "tourism-ns-events",
+      "name": "Tourism Nova Scotia Events",
+      "kind": "official_tourism_calendar",
+      "mode": "tribe_api",
+      "url": "https://novascotia.com/explore-nova-scotia/events/",
+      "endpoint": "https://novascotia.com/wp-json/tribe/events/v1/events",
+      "priority": 100
+    },
+    {
+      "id": "halifax-events-community",
+      "name": "HalifaxEvents.ca",
+      "kind": "local_event_directory",
+      "mode": "halifaxevents_categories",
+      "url": "https://halifaxevents.ca/events/",
+      "categoryUrls": [
+        "https://halifaxevents.ca/events/category/music",
+        "https://halifaxevents.ca/events/category/festivals",
+        "https://halifaxevents.ca/events/category/food-drink",
+        "https://halifaxevents.ca/events/category/markets",
+        "https://halifaxevents.ca/events/category/arts",
+        "https://halifaxevents.ca/events/category/comedy",
+        "https://halifaxevents.ca/events/category/sports",
+        "https://halifaxevents.ca/events/category/outdoor"
+      ],
+      "priority": 75
+    },
+    {
+      "id": "scotiabank-centre",
+      "name": "Scotiabank Centre",
+      "kind": "official_venue_calendar",
+      "mode": "jsonld_index",
+      "url": "https://www.scotiabank-centre.com/",
+      "venueName": "Scotiabank Centre",
+      "priority": 95
+    },
+    {
+      "id": "light-house-arts-centre",
+      "name": "Light House Arts Centre",
+      "kind": "official_venue_calendar",
+      "mode": "jsonld_index",
+      "url": "https://www.lighthouseartscentre.ca/events/",
+      "venueName": "Light House Arts Centre",
+      "priority": 95
+    },
+    {
+      "id": "the-carleton",
+      "name": "The Carleton",
+      "kind": "official_venue_calendar",
+      "mode": "html_calendar",
+      "url": "https://www.thecarleton.ca/music/upcoming-performances/",
+      "venueName": "The Carleton",
+      "priority": 95
+    },
+    {
+      "id": "neptune-theatre",
+      "name": "Neptune Theatre",
+      "kind": "official_venue_calendar",
+      "mode": "jsonld_index",
+      "url": "https://www.neptunetheatre.com/",
+      "venueName": "Neptune Theatre",
+      "priority": 95
+    },
+    {
+      "id": "halifax-tides",
+      "name": "Halifax Tides FC",
+      "kind": "official_sports_schedule",
+      "mode": "embedded_event_data",
+      "url": "https://www.tidesfc.ca/schedule",
+      "priority": 90
+    },
+    {
+      "id": "halifax-mooseheads",
+      "name": "Halifax Mooseheads",
+      "kind": "official_sports_schedule",
+      "mode": "embedded_event_data",
+      "url": "https://chl.ca/lhjmq/en/schedule/5/214/",
+      "priority": 90
+    },
+    {
+      "id": "halifax-thunderbirds",
+      "name": "Halifax Thunderbirds",
+      "kind": "official_sports_schedule",
+      "mode": "embedded_event_data",
+      "url": "https://www.halifaxthunderbirds.com/",
+      "priority": 90
+    },
+    {
+      "id": "hfx-wanderers",
+      "name": "HFX Wanderers FC",
+      "kind": "official_sports_schedule",
+      "mode": "embedded_event_data",
+      "url": "https://www.cplsoccer.com/hfxwanderersfc",
+      "priority": 90
+    }
+  ]
+}
