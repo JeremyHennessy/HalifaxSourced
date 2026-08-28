@@ -1,9 +1,9 @@
 window.HALIFAX_CITY_EVENTS = {
   "version": 1,
-  "generatedAt": "2026-08-28T18:23:38.380Z",
+  "generatedAt": "2026-08-28T18:25:29.357Z",
   "range": {
-    "start": "2026-08-28T12:23:36.265Z",
-    "end": "2027-10-02T18:23:36.265Z"
+    "start": "2026-08-28T12:25:27.537Z",
+    "end": "2027-10-02T18:25:27.537Z"
   },
   "eventCount": 10,
   "categoryCounts": {
@@ -18,57 +18,57 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "tourism-ns-events",
       "sourceName": "Tourism Nova Scotia Events",
       "mode": "tourism_event_crawl",
-      "observedAt": "2026-08-28T18:23:36.265Z",
+      "observedAt": "2026-08-28T18:25:27.537Z",
       "eventCount": 0,
       "durationMs": 0,
       "status": "failed",
       "reason": "unsupported_mode_tourism_event_crawl"
     },
     {
-      "sourceId": "scotiabank-centre",
-      "sourceName": "Scotiabank Centre",
-      "mode": "scotiabank_calendar",
-      "observedAt": "2026-08-28T18:23:36.267Z",
-      "eventCount": 0,
-      "durationMs": 0,
-      "status": "failed",
-      "reason": "unsupported_mode_scotiabank_calendar"
-    },
-    {
       "sourceId": "halifax-mooseheads-home",
       "sourceName": "Halifax Mooseheads Home Schedule",
       "mode": "mooseheads_home_table",
-      "observedAt": "2026-08-28T18:23:36.267Z",
+      "observedAt": "2026-08-28T18:25:27.539Z",
       "eventCount": 0,
       "durationMs": 0,
       "status": "failed",
       "reason": "unsupported_mode_mooseheads_home_table"
     },
     {
-      "sourceId": "hfx-wanderers-home",
-      "sourceName": "HFX Wanderers 2026 Home Schedule",
-      "mode": "wanderers_article_schedule",
-      "observedAt": "2026-08-28T18:23:36.267Z",
+      "sourceId": "scotiabank-centre",
+      "sourceName": "Scotiabank Centre",
+      "mode": "scotiabank_calendar",
+      "observedAt": "2026-08-28T18:25:27.539Z",
       "eventCount": 0,
       "durationMs": 0,
       "status": "failed",
-      "reason": "unsupported_mode_wanderers_article_schedule"
+      "reason": "unsupported_mode_scotiabank_calendar"
+    },
+    {
+      "sourceId": "hfx-wanderers-home",
+      "sourceName": "HFX Wanderers 2026 Home Schedule",
+      "mode": "sports_bullet_schedule",
+      "observedAt": "2026-08-28T18:25:27.539Z",
+      "eventCount": 0,
+      "durationMs": 0,
+      "status": "failed",
+      "reason": "unsupported_mode_sports_bullet_schedule"
     },
     {
       "sourceId": "halifax-tides-home",
       "sourceName": "Halifax Tides 2026 Home Schedule",
-      "mode": "tides_article_schedule",
-      "observedAt": "2026-08-28T18:23:36.267Z",
+      "mode": "sports_bullet_schedule",
+      "observedAt": "2026-08-28T18:25:27.539Z",
       "eventCount": 0,
-      "durationMs": 0,
+      "durationMs": 1,
       "status": "failed",
-      "reason": "unsupported_mode_tides_article_schedule"
+      "reason": "unsupported_mode_sports_bullet_schedule"
     },
     {
       "sourceId": "light-house-arts-centre",
       "sourceName": "Light House Arts Centre",
       "mode": "lighthouse_index",
-      "observedAt": "2026-08-28T18:23:36.267Z",
+      "observedAt": "2026-08-28T18:25:27.540Z",
       "eventCount": 0,
       "durationMs": 0,
       "status": "failed",
@@ -78,16 +78,16 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "the-carleton",
       "sourceName": "The Carleton",
       "mode": "html_calendar",
-      "observedAt": "2026-08-28T18:23:37.128Z",
+      "observedAt": "2026-08-28T18:25:28.667Z",
       "eventCount": 10,
-      "durationMs": 861,
+      "durationMs": 1127,
       "status": "ok"
     },
     {
       "sourceId": "neptune-theatre",
       "sourceName": "Neptune Theatre",
       "mode": "neptune_season",
-      "observedAt": "2026-08-28T18:23:37.128Z",
+      "observedAt": "2026-08-28T18:25:28.668Z",
       "eventCount": 0,
       "durationMs": 0,
       "status": "failed",
@@ -97,16 +97,16 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "halifax-thunderbirds",
       "sourceName": "Halifax Thunderbirds",
       "mode": "embedded_event_data",
-      "observedAt": "2026-08-28T18:23:38.359Z",
+      "observedAt": "2026-08-28T18:25:29.337Z",
       "eventCount": 0,
-      "durationMs": 1230,
+      "durationMs": 669,
       "status": "ok"
     },
     {
       "sourceId": "halifax-events-community",
       "sourceName": "HalifaxEvents.ca",
       "mode": "tribe_list_crawl",
-      "observedAt": "2026-08-28T18:23:38.359Z",
+      "observedAt": "2026-08-28T18:25:29.337Z",
       "eventCount": 0,
       "durationMs": 0,
       "status": "failed",
@@ -119,56 +119,56 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Tourism Nova Scotia Events",
       "url": "https://novascotia.com/explore-nova-scotia/events/?region=29",
       "reason": "unsupported_mode_tourism_event_crawl",
-      "observedAt": "2026-08-28T18:23:36.265Z"
-    },
-    {
-      "sourceId": "scotiabank-centre",
-      "sourceName": "Scotiabank Centre",
-      "url": "https://www.scotiabank-centre.com/premium-seating/eventcalendar",
-      "reason": "unsupported_mode_scotiabank_calendar",
-      "observedAt": "2026-08-28T18:23:36.267Z"
+      "observedAt": "2026-08-28T18:25:27.537Z"
     },
     {
       "sourceId": "halifax-mooseheads-home",
       "sourceName": "Halifax Mooseheads Home Schedule",
       "url": "https://www.scotiabank-centre.com/events/2026-2027-halifax-mooseheads",
       "reason": "unsupported_mode_mooseheads_home_table",
-      "observedAt": "2026-08-28T18:23:36.267Z"
+      "observedAt": "2026-08-28T18:25:27.539Z"
+    },
+    {
+      "sourceId": "scotiabank-centre",
+      "sourceName": "Scotiabank Centre",
+      "url": "https://www.scotiabank-centre.com/premium-seating/eventcalendar",
+      "reason": "unsupported_mode_scotiabank_calendar",
+      "observedAt": "2026-08-28T18:25:27.539Z"
     },
     {
       "sourceId": "hfx-wanderers-home",
       "sourceName": "HFX Wanderers 2026 Home Schedule",
-      "url": "https://www.cplsoccer.com/hfxwanderersfc/news/wanderers-announce-full-2026-schedule-presented-by-westjet",
-      "reason": "unsupported_mode_wanderers_article_schedule",
-      "observedAt": "2026-08-28T18:23:36.267Z"
+      "url": "https://novascotia.com/event/halifax-wanderers-2026-season/",
+      "reason": "unsupported_mode_sports_bullet_schedule",
+      "observedAt": "2026-08-28T18:25:27.539Z"
     },
     {
       "sourceId": "halifax-tides-home",
       "sourceName": "Halifax Tides 2026 Home Schedule",
-      "url": "https://www.nsl.ca/news/from-breakout-debut-to-season-two-northern-super-league-releases-2026-schedule",
-      "reason": "unsupported_mode_tides_article_schedule",
-      "observedAt": "2026-08-28T18:23:36.267Z"
+      "url": "https://novascotia.com/event/halifax-tides-2026-season/",
+      "reason": "unsupported_mode_sports_bullet_schedule",
+      "observedAt": "2026-08-28T18:25:27.539Z"
     },
     {
       "sourceId": "light-house-arts-centre",
       "sourceName": "Light House Arts Centre",
       "url": "https://www.lighthouseartscentre.ca/events/",
       "reason": "unsupported_mode_lighthouse_index",
-      "observedAt": "2026-08-28T18:23:36.267Z"
+      "observedAt": "2026-08-28T18:25:27.540Z"
     },
     {
       "sourceId": "neptune-theatre",
       "sourceName": "Neptune Theatre",
       "url": "https://www.neptunetheatre.com/visit/ticket-packages",
       "reason": "unsupported_mode_neptune_season",
-      "observedAt": "2026-08-28T18:23:37.128Z"
+      "observedAt": "2026-08-28T18:25:28.668Z"
     },
     {
       "sourceId": "halifax-events-community",
       "sourceName": "HalifaxEvents.ca",
       "url": "https://halifaxevents.ca/events/list/",
       "reason": "unsupported_mode_tribe_list_crawl",
-      "observedAt": "2026-08-28T18:23:38.359Z"
+      "observedAt": "2026-08-28T18:25:29.337Z"
     }
   ],
   "events": [
@@ -191,7 +191,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "the-carleton",
       "sourceName": "The Carleton",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-08-28T18:23:37.125Z",
+      "observedAt": "2026-08-28T18:25:28.663Z",
       "reviewState": "source-observed"
     },
     {
@@ -213,7 +213,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "the-carleton",
       "sourceName": "The Carleton",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-08-28T18:23:37.125Z",
+      "observedAt": "2026-08-28T18:25:28.664Z",
       "reviewState": "source-observed"
     },
     {
@@ -236,7 +236,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "the-carleton",
       "sourceName": "The Carleton",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-08-28T18:23:37.126Z",
+      "observedAt": "2026-08-28T18:25:28.664Z",
       "reviewState": "source-observed"
     },
     {
@@ -258,7 +258,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "the-carleton",
       "sourceName": "The Carleton",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-08-28T18:23:37.126Z",
+      "observedAt": "2026-08-28T18:25:28.665Z",
       "reviewState": "source-observed"
     },
     {
@@ -281,7 +281,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "the-carleton",
       "sourceName": "The Carleton",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-08-28T18:23:37.126Z",
+      "observedAt": "2026-08-28T18:25:28.665Z",
       "reviewState": "source-observed"
     },
     {
@@ -303,7 +303,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "the-carleton",
       "sourceName": "The Carleton",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-08-28T18:23:37.127Z",
+      "observedAt": "2026-08-28T18:25:28.666Z",
       "reviewState": "source-observed"
     },
     {
@@ -326,7 +326,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "the-carleton",
       "sourceName": "The Carleton",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-08-28T18:23:37.127Z",
+      "observedAt": "2026-08-28T18:25:28.666Z",
       "reviewState": "source-observed"
     },
     {
@@ -348,7 +348,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "the-carleton",
       "sourceName": "The Carleton",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-08-28T18:23:37.127Z",
+      "observedAt": "2026-08-28T18:25:28.666Z",
       "reviewState": "source-observed"
     },
     {
@@ -370,7 +370,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "the-carleton",
       "sourceName": "The Carleton",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-08-28T18:23:37.128Z",
+      "observedAt": "2026-08-28T18:25:28.667Z",
       "reviewState": "source-observed"
     },
     {
@@ -392,7 +392,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "the-carleton",
       "sourceName": "The Carleton",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-08-28T18:23:37.128Z",
+      "observedAt": "2026-08-28T18:25:28.667Z",
       "reviewState": "source-observed"
     }
   ]
