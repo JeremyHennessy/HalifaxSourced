@@ -41,7 +41,10 @@ function renderExplore() {
 
   bindExploreActions();
   bindCommonActions();
-  requestAnimationFrame(() => initMiniMap(results.slice(0, 100)));
+  const miniMapElement = document.querySelector("#exploreMiniMap");
+  requestAnimationFrame(() => {
+    if (miniMapElement?.isConnected) initMiniMap(results.slice(0, 100), miniMapElement);
+  });
 }
 
 function filterSelect(label, id, selected, options) {
