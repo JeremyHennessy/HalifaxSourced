@@ -132,7 +132,10 @@ function categoryColor(restaurant) {
 
 function destroyMap() {
   if (state.map) {
-    try { state.map.remove(); } catch { /* no-op */ }
+    try {
+      state.map.stop();
+      state.map.remove();
+    } catch { /* no-op */ }
     state.map = null;
     state.mapLayer = null;
     state.mapRenderer = null;
