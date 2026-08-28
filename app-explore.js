@@ -1,6 +1,8 @@
 "use strict";
 function renderExplore() {
   document.body.classList.remove("filter-drawer-open");
+  const liveCuisines = countValues(restaurants.flatMap((restaurant) => restaurant.cuisines || []));
+  const liveNeighbourhoods = countValues(restaurants.map((restaurant) => restaurant.neighborhood || "Halifax"));
   const results = filteredRestaurants();
   const pages = Math.max(1, Math.ceil(results.length / PAGE_SIZE));
   state.page = Math.min(state.page, pages);
@@ -17,8 +19,8 @@ function renderExplore() {
     <section class="page-shell explore-layout">
       <aside class="filters-panel" id="exploreFilters" data-filter-drawer aria-label="Restaurant filters">
         <div class="filter-title"><h2>Filters</h2><div class="filter-title-actions"><button type="button" data-clear-filters>Clear all</button><button class="filter-close" type="button" data-close-filters aria-label="Close filters">×</button></div></div>
-        ${filterSelect("Cuisine", "cuisineFilter", state.cuisine, [["all", "All cuisines"], ...cuisines.slice(0, 18).map(([name, count]) => [name, `${name} (${count})`])])}
-        ${filterSelect("Neighbourhood", "neighbourhoodFilter", state.neighbourhood, [["all", "All neighbourhoods"], ...neighbourhoods.slice(0, 20).map(([name, count]) => [name, `${name} (${count})`])])}
+        ${filterSelect("Cuisine", "cuisineFilter", state.cuisine, [["all", "All cuisines"], ...liveCuisines.slice(0, 24).map(([name, count]) => [name, `${name} (${count})`])])}
+        ${filterSelect("Neighbourhood", "neighbourhoodFilter", state.neighbourhood, [["all", "All neighbourhoods"], ...liveNeighbourhoods.slice(0, 24).map(([name, count]) => [name, `${name} (${count})`])])}
         ${filterSelect("Feature", "featureFilter", state.feature, [["all", "All places"], ["menus", "Menu link"], ["specials", "Special signal"], ["events", "Event signal"], ["patio", "Patio"], ["opening", "Opening signal"]])}
         <button class="button primary filter-apply" type="button" data-filter-apply>Apply filters</button>
       </aside>
@@ -32,8 +34,8 @@ function renderExplore() {
       </div>
       <aside class="context-column">
         <div class="mini-map-card"><div id="exploreMiniMap" class="mini-map"></div><a href="#map">Open full map →</a></div>
-        <div class="tip-card"><span>♧</span><div><h2>Local tip</h2><p>Menu, specials, event, and patio badges indicate source signals. Confirm time-sensitive details with the restaurant.</p></div></div>
-        <div class="source-card"><h2>Source coverage</h2><p>${osmMeta ? `${osmMeta.count?.toLocaleString?.() || restaurants.length} public map places imported.` : `${restaurants.length.toLocaleString()} places loaded.`}</p><p>${officialPayload ? `${(officialPayload.count ?? officialSignals.length).toLocaleString()} official sites checked for menu, event, special, and reservation links.` : "Official-site signal data not loaded."}</p></div>
+        <div class="tip-card"><span>♧</span><div><h2>Local tip</h2><p>Menu, specials, event, patio and opening badges indicate source-backed signals. Confirm time-sensitive details with the restaurant.</p></div></div>
+        <div class="source-card"><h2>Source coverage</h2><p>${restaurants.length.toLocaleString()} combined restaurant and venue records are loaded from curated, public-map and reviewed discovery layers.</p><p>${officialPayload ? `${(officialPayload.count ?? officialSignals.length).toLocaleString()} restaurant-owned sites checked for menu, event, special and reservation links.` : "Official-site signal data not loaded."}</p></div>
       </aside>
     </section>`;
 
