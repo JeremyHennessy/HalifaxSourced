@@ -1,0 +1,21 @@
+name: Tixr Alderney Diagnostic
+
+on:
+  push:
+    branches:
+      - diag/tixr-alderney-events-20260828
+
+permissions:
+  contents: read
+
+jobs:
+  diagnose:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Verify public Tixr Alderney event interface
+        run: node scripts/diagnose-tixr-alderney.mjs
