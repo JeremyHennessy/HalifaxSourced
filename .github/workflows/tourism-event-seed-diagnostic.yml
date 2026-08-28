@@ -25,3 +25,5 @@ jobs:
         run: node scripts/diagnose-tourism-jsonld-event.mjs
       - name: Inspect robots handling for event detail path
         run: node scripts/diagnose-tourism-robots.mjs
+      - name: Compare concurrent and sequential detail requests
+        run: node scripts/diagnose-tourism-concurrency.mjs
