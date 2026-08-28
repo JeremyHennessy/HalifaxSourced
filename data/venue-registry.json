@@ -1,0 +1,89 @@
+{
+  "version": 1,
+  "updatedAt": "2026-08-28",
+  "venues": [
+    {
+      "venueId": "scotiabank-centre-halifax",
+      "name": "Scotiabank Centre",
+      "alternateNames": ["Halifax Metro Centre"],
+      "type": "arena",
+      "address": "1800 Argyle Street, Halifax, NS",
+      "city": "Halifax",
+      "neighbourhood": "Downtown",
+      "website": "https://www.scotiabank-centre.com/",
+      "sourceIds": ["scotiabank-centre", "halifax-mooseheads-home", "halifax-thunderbirds"],
+      "authorityClass": "official_venue"
+    },
+    {
+      "venueId": "light-house-arts-centre-halifax",
+      "name": "Light House Arts Centre",
+      "alternateNames": ["Light House Arts Centre Halifax"],
+      "type": "performing_arts_venue",
+      "address": "1800 Argyle Street, Halifax, NS",
+      "city": "Halifax",
+      "neighbourhood": "Downtown",
+      "website": "https://www.lighthouseartscentre.ca/",
+      "sourceIds": ["light-house-arts-centre"],
+      "authorityClass": "official_venue"
+    },
+    {
+      "venueId": "the-carleton-halifax",
+      "name": "The Carleton",
+      "alternateNames": ["The Carleton Music Bar & Grill", "Carleton Music Bar & Grill"],
+      "type": "live_music_restaurant",
+      "address": "1685 Argyle Street, Halifax, NS",
+      "city": "Halifax",
+      "neighbourhood": "Downtown",
+      "website": "https://www.thecarleton.ca/",
+      "sourceIds": ["the-carleton"],
+      "authorityClass": "official_venue"
+    },
+    {
+      "venueId": "neptune-theatre-halifax",
+      "name": "Neptune Theatre",
+      "alternateNames": ["Neptune Theatre Halifax"],
+      "type": "theatre",
+      "address": "1593 Argyle Street, Halifax, NS",
+      "city": "Halifax",
+      "neighbourhood": "Downtown",
+      "website": "https://www.neptunetheatre.com/",
+      "sourceIds": ["neptune-theatre"],
+      "authorityClass": "official_venue"
+    },
+    {
+      "venueId": "wanderers-grounds-halifax",
+      "name": "Wanderers Grounds",
+      "alternateNames": ["Wanderers Grounds Halifax", "HFX Wanderers Grounds"],
+      "type": "stadium",
+      "address": "5819 Sackville Street, Halifax, NS",
+      "city": "Halifax",
+      "neighbourhood": "Downtown",
+      "sourceIds": ["hfx-wanderers-home", "halifax-tides-home"],
+      "authorityClass": "official_sports_venue"
+    },
+    {
+      "venueId": "halifax-convention-centre",
+      "name": "Halifax Convention Centre",
+      "alternateNames": ["Halifax Convention Centre Events"],
+      "type": "convention_centre",
+      "address": "1650 Argyle Street, Halifax, NS",
+      "city": "Halifax",
+      "neighbourhood": "Downtown",
+      "website": "https://www.halifaxconventioncentre.com/",
+      "sourceIds": ["halifax-convention-centre"],
+      "authorityClass": "official_venue"
+    },
+    {
+      "venueId": "alderney-landing-dartmouth",
+      "name": "Alderney Landing",
+      "alternateNames": ["Alderney Landing Cultural Centre"],
+      "type": "arts_market_event_venue",
+      "address": "2 Ochterloney Street, Dartmouth, NS",
+      "city": "Dartmouth",
+      "neighbourhood": "Downtown Dartmouth",
+      "website": "https://www.alderneylanding.com/",
+      "sourceIds": ["alderney-landing"],
+      "authorityClass": "official_venue"
+    }
+  ]
+}
