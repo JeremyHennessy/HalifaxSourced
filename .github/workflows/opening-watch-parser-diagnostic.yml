@@ -1,0 +1,41 @@
+name: Opening Watch Parser Diagnostic
+
+on:
+  push:
+    branches:
+      - fix/opening-watch-article-detail-20260828
+    paths:
+      - scripts/import-opening-watch.mjs
+      - .github/workflows/opening-watch-parser-diagnostic.yml
+
+permissions:
+  contents: read
+
+jobs:
+  opening-watch:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Refresh local opening watch
+        env:
+          OPENING_WATCH_LOOKBACK_DAYS: 180
+        run: node scripts/import-opening-watch.mjs
+
+      - name: Upload opening-watch diagnostic
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: opening-watch-parser-diagnostic
+          path: |
+            data/opening-watch-leads.js
+            data/build/opening-watch-leads.json
+          if-no-files-found: error
+          retention-days: 7
