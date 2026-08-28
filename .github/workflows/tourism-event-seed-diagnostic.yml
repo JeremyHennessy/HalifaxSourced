@@ -1,0 +1,21 @@
+name: Tourism Event Seed Diagnostic
+
+on:
+  push:
+    branches:
+      - diag/tourism-event-seed-20260828
+
+permissions:
+  contents: read
+
+jobs:
+  diagnose:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Inspect event listing HTML received by GitHub Actions
+        run: node scripts/diagnose-tourism-event-seed.mjs
