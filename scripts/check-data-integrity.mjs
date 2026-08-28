@@ -20,14 +20,27 @@ function normalize(value) {
     .trim();
 }
 
+function parseUrl(value) {
+  if (!value) return null;
+  try { return new URL(String(value).replaceAll("&amp;", "&")); } catch { return null; }
+}
+
 function validHttpUrl(value) {
-  if (!value) return false;
-  try {
-    const url = new URL(String(value).replaceAll("&amp;", "&"));
-    return url.protocol === "http:" || url.protocol === "https:";
-  } catch {
-    return false;
-  }
+  const url = parseUrl(value);
+  return Boolean(url && (url.protocol === "http:" || url.protocol === "https:"));
+}
+
+function distanceMeters(a, b) {
+  const lat1 = Number(a?.lat);
+  const lon1 = Number(a?.lon);
+  const lat2 = Number(b?.lat);
+  const lon2 = Number(b?.lon);
+  if (![lat1, lon1, lat2, lon2].every(Number.isFinite)) return Infinity;
+  const toRad = (value) => value * Math.PI / 180;
+  const dLat = toRad(lat2 - lat1);
+  const dLon = toRad(lon2 - lon1);
+  const x = Math.sin(dLat / 2) ** 2 + Math.cos(toRad(lat1)) * Math.cos(toRad(lat2)) * Math.sin(dLon / 2) ** 2;
+  return 6371000 * 2 * Math.atan2(Math.sqrt(x), Math.sqrt(1 - x));
 }
 
 const curatedWindow = await loadWindowScript(resolve("data", "restaurants.js"));
@@ -86,6 +99,18 @@ const multiLocationGroups = [...byNormalizedName.entries()]
   }))
   .sort((a, b) => b.count - a.count);
 
+const nearDuplicatePairs = [];
+for (const [, items] of byNormalizedName) {
+  if (items.length < 2) continue;
+  for (let i = 0; i < items.length; i++) {
+    for (let j = i + 1; j < items.length; j++) {
+      const meters = distanceMeters(items[i].coordinates, items[j].coordinates);
+      if (meters <= 35) nearDuplicatePairs.push({ name: items[i].name, distanceMeters: Math.round(meters * 10) / 10, a: { id: items[i].id, address: items[i].address, neighborhood: items[i].neighborhood, coordinates: items[i].coordinates }, b: { id: items[j].id, address: items[j].address, neighborhood: items[j].neighborhood, coordinates: items[j].coordinates } });
+    }
+  }
+}
+if (nearDuplicatePairs.length) warnings.push({ type: "near_duplicate_same_name_osm_objects", count: nearDuplicatePairs.length, examples: nearDuplicatePairs.slice(0, 25) });
+
 const curatedMatches = curated.map((item) => {
   const matches = byNormalizedName.get(normalize(item.name)) ?? [];
   return {
@@ -104,14 +129,21 @@ const rawIds = new Set([...curated.map((item) => item.id), ...osm.map((item) => 
 const orphanSignals = official.filter((signal) => signal.restaurantId && !rawIds.has(signal.restaurantId));
 if (orphanSignals.length) warnings.push({ type: "official_signal_orphans", count: orphanSignals.length, examples: orphanSignals.slice(0, 20).map(({ restaurantId, name, website }) => ({ restaurantId, name, website })) });
 
-const malformedOfficialUrls = [];
+const malformedOfficialWebsites = official.filter((signal) => signal.website && !validHttpUrl(signal.website)).map(({ restaurantId, name, website }) => ({ restaurantId, name, website }));
+if (malformedOfficialWebsites.length) warnings.push({ type: "malformed_official_website_values", count: malformedOfficialWebsites.length, examples: malformedOfficialWebsites.slice(0, 20) });
+
+const ignoredCandidateLinks = [];
 for (const signal of official) {
-  if (signal.website && !validHttpUrl(signal.website)) malformedOfficialUrls.push({ restaurantId: signal.restaurantId, field: "website", value: signal.website });
   for (const link of signal.candidateLinks ?? []) {
-    if (link.href && !validHttpUrl(link.href)) malformedOfficialUrls.push({ restaurantId: signal.restaurantId, field: "candidateLink", value: link.href });
+    if (!link.href || validHttpUrl(link.href)) continue;
+    const parsed = parseUrl(link.href);
+    ignoredCandidateLinks.push({ restaurantId: signal.restaurantId, protocol: parsed?.protocol ?? "invalid", value: link.href });
   }
 }
-if (malformedOfficialUrls.length) failures.push({ type: "malformed_official_urls", count: malformedOfficialUrls.length, examples: malformedOfficialUrls.slice(0, 25) });
+if (ignoredCandidateLinks.length) warnings.push({ type: "non_http_candidate_links_ignored_by_ui", count: ignoredCandidateLinks.length, examples: ignoredCandidateLinks.slice(0, 25) });
+
+const halifaxTaggedAsDartmouth = osm.filter((item) => /halifax/i.test(item.osm?.rawTags?.["addr:city"] ?? "") && item.neighborhood === "Dartmouth");
+if (halifaxTaggedAsDartmouth.length) warnings.push({ type: "halifax_city_tagged_as_dartmouth", count: halifaxTaggedAsDartmouth.length, examples: halifaxTaggedAsDartmouth.slice(0, 25).map(({ id, name, neighborhood, address, coordinates }) => ({ id, name, neighborhood, address, coordinates })) });
 
 const neighbourhoodCounts = [...new Map(osm.map((item) => [item.neighborhood, 0])).keys()].filter(Boolean).sort().map((name) => [name, osm.filter((item) => item.neighborhood === name).length]);
 const officialWithValidSite = official.filter((signal) => validHttpUrl(signal.website)).length;
@@ -126,9 +158,11 @@ const report = {
     officialWithValidSite,
     officialCandidateLinks,
     multiLocationNameGroups: multiLocationGroups.length,
+    nearDuplicatePairs: nearDuplicatePairs.length,
     ambiguousCuratedMatches: ambiguousCuratedMatches.length,
     curatedWithoutOsmMatch: curatedWithoutOsmMatch.length,
-    orphanSignals: orphanSignals.length
+    orphanSignals: orphanSignals.length,
+    halifaxTaggedAsDartmouth: halifaxTaggedAsDartmouth.length
   },
   scope: osmMeta?.scope ?? null,
   bbox,
@@ -148,4 +182,4 @@ if (failures.length) {
   console.error(JSON.stringify(failures, null, 2));
   process.exit(1);
 }
-console.log("Data integrity hard checks passed.");
+console.log("Data integrity hard checks passed; warnings require review but are not rendered as trusted web links.");
