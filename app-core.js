@@ -56,7 +56,7 @@ function escapeHtml(value) {
 function safeUrl(value) {
   if (!value) return null;
   try {
-    const url = new URL(String(value).replaceAll("&amp;", "&"));
+    const url = new URL(value);
     return ["http:", "https:"].includes(url.protocol) ? url.href : null;
   } catch {
     return null;
@@ -145,32 +145,11 @@ function signalHas(signal, kind) {
   return (signal.candidateLinks || []).some((link) => (link.signalMatches?.[kind]?.length || 0) > 0);
 }
 
-function cleanLinkLabel(value, fallback) {
-  const text = String(value ?? "").replace(/\s+/g, " ").trim();
-  if (!text) return fallback;
-  return text.length > 100 ? `${text.slice(0, 97).trim()}…` : text;
-}
-
-function credibleEventCandidate(link) {
-  const href = safeUrl(link?.href);
-  if (!href) return false;
-  const rawText = String(link?.text ?? "").replace(/\s+/g, " ").trim();
-  const text = rawText.toLowerCase();
-  let url;
-  try { url = new URL(href); } catch { return false; }
-  const path = `${url.pathname} ${url.search}`.toLowerCase();
-  const eventTerms = /\b(event|events|calendar|live music|music|trivia|karaoke|ticket|tickets|show|shows|concert|festival|market|workshop)\b/;
-  const pathLooksEventSpecific = eventTerms.test(path.replace(/[\/_-]+/g, " "));
-  const shortEventLabel = rawText.length > 0 && rawText.length <= 80 && eventTerms.test(text);
-  return pathLooksEventSpecific || shortEventLabel;
-}
-
 function signalLinks(signal, kind) {
   if (!signal) return [];
   const links = (signal.candidateLinks || [])
     .filter((link) => !kind || (link.signalMatches?.[kind]?.length || 0) > 0)
-    .filter((link) => kind !== "events" || credibleEventCandidate(link))
-    .map((link) => ({ label: cleanLinkLabel(link.text, kind || "Official link"), url: safeUrl(link.href) }))
+    .map((link) => ({ label: link.text || kind || "Official link", url: safeUrl(link.href) }))
     .filter((link) => link.url);
   return links.filter((link, index, all) => all.findIndex((item) => item.url === link.url) === index);
 }
@@ -216,7 +195,7 @@ function enrichRestaurant(restaurant) {
     website,
     hasMenu: menuLinks.length > 0 || Boolean(website),
     hasSpecial: specialLinks.length > 0 || (restaurant.specials || []).length > 0 || signalHas(signal, "specials"),
-    hasEvent: eventLinks.length > 0 || (restaurant.events || []).length > 0,
+    hasEvent: eventLinks.length > 0 || (restaurant.events || []).length > 0 || signalHas(signal, "events"),
     hasPatio: hasPatio(restaurant, signal),
     hasOpening: hasOpening(restaurant, signal),
     hasReservation: reservationLinks.length > 0 || signalHas(signal, "reservations"),
@@ -280,23 +259,63 @@ function filteredRestaurants(options = {}) {
   const neighbourhood = options.neighbourhood ?? state.neighbourhood;
   const feature = options.feature ?? state.feature;
   const sort = options.sort ?? state.sort;
-  return restaurants
-    .filter((restaurant) => !query || searchableText(restaurant).includes(query))
-    .filter((restaurant) => cuisine === "all" || (restaurant.cuisines || []).some((item) => item.toLowerCase() === cuisine.toLowerCase()))
-    .filter((restaurant) => neighbourhood === "all" || (restaurant.neighborhood || "").toLowerCase() === neighbourhood.toLowerCase())
-    .filter((restaurant) => {
-      if (feature === "all") return true;
-      if (feature === "menus") return restaurant.hasMenu;
-      if (feature === "specials") return restaurant.hasSpecial;
-      if (feature === "events") return restaurant.hasEvent;
-      if (feature === "patio") return restaurant.hasPatio;
-      if (feature === "opening") return restaurant.hasOpening;
-      return true;
-    })
-    .sort((a, b) => {
-      if (sort === "name") return a.name.localeCompare(b.name);
-      if (sort === "neighbourhood") return (a.neighborhood || "").localeCompare(b.neighborhood || "") || a.name.localeCompare(b.name);
-      if (sort === "fresh") return String(b.signal?.observedAt || b.freshnessDate || "").localeCompare(String(a.signal?.observedAt || a.freshnessDate || ""));
-      return (b.score || 0) - (a.score || 0) || a.name.localeCompare(b.name);
-    });
+
+  const filtered = restaurants.filter((restaurant) => {
+    if (query && !searchableText(restaurant).includes(query)) return false;
+    if (cuisine !== "all" && !(restaurant.cuisines || []).some((item) => item.toLowerCase() === cuisine.toLowerCase())) return false;
+    if (neighbourhood !== "all" && (restaurant.neighborhood || "Halifax").toLowerCase() !== neighbourhood.toLowerCase()) return false;
+    if (feature === "menus" && !restaurant.hasMenu) return false;
+    if (feature === "specials" && !restaurant.hasSpecial) return false;
+    if (feature === "events" && !restaurant.hasEvent) return false;
+    if (feature === "patio" && !restaurant.hasPatio) return false;
+    if (feature === "opening" && !restaurant.hasOpening) return false;
+    if (feature === "saved" && !state.saved.has(restaurant.id)) return false;
+    return true;
+  });
+
+  return filtered.sort((a, b) => {
+    if (sort === "name") return a.name.localeCompare(b.name);
+    if (sort === "neighbourhood") return (a.neighborhood || "").localeCompare(b.neighborhood || "") || a.name.localeCompare(b.name);
+    if (sort === "fresh") return String(b.signal?.observedAt || b.freshnessDate || "").localeCompare(String(a.signal?.observedAt || a.freshnessDate || ""));
+    return (b.score || 0) - (a.score || 0) || a.name.localeCompare(b.name);
+  });
+}
+
+function route() {
+  const raw = location.hash.replace(/^#/, "") || "home";
+  const [path, queryString = ""] = raw.split("?");
+  const params = new URLSearchParams(queryString);
+  const segments = path.split("/").filter(Boolean);
+  return { name: segments[0] || "home", id: segments[1] || null, params };
+}
+
+function navigate(hash) {
+  if (location.hash === hash) renderRoute();
+  else location.hash = hash;
+}
+
+function renderRoute() {
+  destroyMap();
+  const current = route();
+  updateNav(current.name);
+  if (current.params.has("q")) state.query = current.params.get("q") || "";
+  globalSearch.value = state.query;
+
+  switch (current.name) {
+    case "explore": renderExplore(); break;
+    case "events": renderEvents(); break;
+    case "specials": renderSpecials(); break;
+    case "menus": renderMenus(); break;
+    case "map": renderMapPage(); break;
+    case "restaurant": renderRestaurantDetail(current.id); break;
+    case "saved": renderSaved(); break;
+    case "home":
+    default: renderHome(); break;
+  }
+  document.querySelector("#mainContent")?.focus({ preventScroll: true });
+  window.scrollTo({ top: 0, behavior: "instant" });
+}
+
+function updateNav(active) {
+  for (const link of routeLinks) link.classList.toggle("is-active", link.dataset.routeLink === active || (active === "restaurant" && link.dataset.routeLink === "explore"));
 }
