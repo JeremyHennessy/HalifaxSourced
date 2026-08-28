@@ -1,13 +1,13 @@
 window.HALIFAX_WEBSITE_FEED_SIGNALS = {
   "version": 1,
-  "generatedAt": "2026-08-28T17:37:35.739Z",
+  "generatedAt": "2026-08-28T18:18:30.033Z",
   "feedsDiscovered": 166,
   "uniqueRestaurantFeeds": 152,
   "sharedFeedUrlsSkipped": 7,
   "feedHostGroups": 64,
   "concurrency": 10,
-  "feedsChecked": 147,
-  "failedFeeds": 5,
+  "feedsChecked": 145,
+  "failedFeeds": 7,
   "signals": [
     {
       "restaurantId": "osm-node-11751643550-cafe-lunette",
@@ -17,7 +17,7 @@ window.HALIFAX_WEBSITE_FEED_SIGNALS = {
       "postUrl": "https://www.cafelunette.com/your-parisian-patio-awaits/",
       "feedUrl": "https://www.cafelunette.com/feed/",
       "publishedAt": "2026-05-11T15:04:47.000Z",
-      "observedAt": "2026-08-28T17:37:13.927Z",
+      "observedAt": "2026-08-28T18:17:58.162Z",
       "signalMatches": {
         "openings": [
           "now open"
@@ -36,7 +36,7 @@ window.HALIFAX_WEBSITE_FEED_SIGNALS = {
       "postUrl": "https://www.cafelunette.com/mothers-day-brunch-at-cafe-lunette/",
       "feedUrl": "https://www.cafelunette.com/feed/",
       "publishedAt": "2026-04-28T18:12:21.000Z",
-      "observedAt": "2026-08-28T17:37:13.927Z",
+      "observedAt": "2026-08-28T18:17:58.162Z",
       "signalMatches": {
         "brunch": [
           "brunch"
@@ -55,7 +55,7 @@ window.HALIFAX_WEBSITE_FEED_SIGNALS = {
       "postUrl": "https://www.birdsnesthalifax.com/post/five-things-to-do-in-halifax-this-spring-we-ll-handle-breakfast",
       "feedUrl": "https://www.birdsnesthalifax.com/blog-feed.xml",
       "publishedAt": "2026-04-02T11:40:44.000Z",
-      "observedAt": "2026-08-28T17:37:13.925Z",
+      "observedAt": "2026-08-28T18:17:58.160Z",
       "signalMatches": {
         "brunch": [
           "breakfast"
@@ -74,7 +74,7 @@ window.HALIFAX_WEBSITE_FEED_SIGNALS = {
       "postUrl": "https://www.cafelunette.com/a-parisian-inspired-easter-weekend/",
       "feedUrl": "https://www.cafelunette.com/feed/",
       "publishedAt": "2026-04-01T19:30:03.000Z",
-      "observedAt": "2026-08-28T17:37:13.927Z",
+      "observedAt": "2026-08-28T18:17:58.162Z",
       "signalMatches": {
         "specials": [
           "offer",
@@ -115,6 +115,16 @@ window.HALIFAX_WEBSITE_FEED_SIGNALS = {
       "restaurantId": "osm-node-11612206582-swaad-sagaa-indian-cuisine-incorporated",
       "feedUrl": "https://www.swaadsagaa.com/https&#x3A;&#x2F;&#x2F;66e24f9de1f04b5eb55b8639ef3fb0b2.elf.site",
       "reason": "http_404"
+    },
+    {
+      "restaurantId": "osm-node-4428984290-stone-pizza",
+      "feedUrl": "https://stonepizza.ca/feed/",
+      "reason": "timeout"
+    },
+    {
+      "restaurantId": "osm-node-4428984290-stone-pizza",
+      "feedUrl": "https://stonepizza.ca/comments/feed/",
+      "reason": "timeout"
     }
   ]
 };

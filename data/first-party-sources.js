@@ -1,13 +1,29 @@
 window.HALIFAX_FIRST_PARTY_SOURCES = {
-  "version": 1,
-  "generatedAt": "2026-08-28T17:37:13.776Z",
-  "checkedWebsites": 208,
-  "failedWebsites": 74,
+  "version": 2,
+  "generatedAt": "2026-08-28T18:17:57.992Z",
+  "checkedWebsites": 209,
+  "failedWebsites": 73,
   "hostGroups": 220,
   "concurrency": 10,
-  "profileCount": 214,
-  "facebookCount": 98,
-  "instagramCount": 116,
+  "profileCount": 300,
+  "platformCounts": {
+    "instagram": 116,
+    "facebook": 98,
+    "x": 58,
+    "linkedin": 5,
+    "youtube": 10,
+    "tiktok": 12,
+    "bluesky": 1
+  },
+  "relatedLinkCount": 489,
+  "relatedKindCounts": {
+    "menu": 217,
+    "reservations": 87,
+    "events": 46,
+    "ordering": 134,
+    "newsletter": 4,
+    "tickets": 1
+  },
   "feedCount": 166,
   "failures": [
     {
@@ -17,15 +33,15 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "reason": "invalid_url"
     },
     {
-      "restaurantId": "field-guide",
-      "name": "Field Guide",
-      "website": "https://fieldguidehfx.com/",
-      "reason": "fetch failed"
-    },
-    {
       "restaurantId": "osm-node-2702737179-9-nine",
       "name": "9 + Nine",
       "website": "https://9plus9.ca/",
+      "reason": "fetch failed"
+    },
+    {
+      "restaurantId": "field-guide",
+      "name": "Field Guide",
+      "website": "https://fieldguidehfx.com/",
       "reason": "fetch failed"
     },
     {
@@ -59,12 +75,6 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "reason": "fetch failed"
     },
     {
-      "restaurantId": "osm-node-4421124794-cafe-marco-polo",
-      "name": "Cafe Marco Polo",
-      "website": "https://justuscoffee.com/locations/kings-wharf-dartmouth",
-      "reason": "http_404"
-    },
-    {
       "restaurantId": "osm-node-2721708515-cha-baa-thai",
       "name": "Cha Baa Thai",
       "website": "https://www.chabaathairestaurant.ca/",
@@ -83,9 +93,9 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "reason": "robots_disallow"
     },
     {
-      "restaurantId": "osm-node-7185511974-clay-west-bar-and-grill",
-      "name": "Clay West Bar & Grill",
-      "website": "https://claywesthalifax.business.site/",
+      "restaurantId": "osm-node-4421124794-cafe-marco-polo",
+      "name": "Cafe Marco Polo",
+      "website": "https://justuscoffee.com/locations/kings-wharf-dartmouth",
       "reason": "http_404"
     },
     {
@@ -99,6 +109,12 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Flynn's Dairy Bar",
       "website": "https://www.facebook.com/flynns711/",
       "reason": "robots_disallow"
+    },
+    {
+      "restaurantId": "osm-node-7185511974-clay-west-bar-and-grill",
+      "name": "Clay West Bar & Grill",
+      "website": "https://claywesthalifax.business.site/",
+      "reason": "http_404"
     },
     {
       "restaurantId": "osm-node-1749780391-cousins-restaurant",
@@ -119,22 +135,10 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "reason": "robots_disallow"
     },
     {
-      "restaurantId": "osm-node-2721708504-curry-village",
-      "name": "Curry Village",
-      "website": "https://www.curryvillage.ca/",
-      "reason": "http_526"
-    },
-    {
       "restaurantId": "osm-node-11551984275-doraku",
       "name": "Doraku",
       "website": "https://doraku.yolasite.com/",
       "reason": "robots_disallow"
-    },
-    {
-      "restaurantId": "osm-node-5863968654-dharma-sushi",
-      "name": "Dharma sushi",
-      "website": "https://dharmasushi.ca/",
-      "reason": "fetch failed"
     },
     {
       "restaurantId": "osm-node-2721708503-efendy-turkish-and-mediterranean-grill",
@@ -149,9 +153,9 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "reason": "fetch failed"
     },
     {
-      "restaurantId": "osm-node-7082566318-g-street-pizza",
-      "name": "G-Street Pizza",
-      "website": "https://gstreetpizza.ca/",
+      "restaurantId": "osm-node-5863968654-dharma-sushi",
+      "name": "Dharma sushi",
+      "website": "https://dharmasushi.ca/",
       "reason": "fetch failed"
     },
     {
@@ -159,6 +163,18 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Fattoush Mediterranean Grill",
       "website": "https://m.facebook.com/FattoushMediterraneanGrill/",
       "reason": "robots_disallow"
+    },
+    {
+      "restaurantId": "osm-node-2721708504-curry-village",
+      "name": "Curry Village",
+      "website": "https://www.curryvillage.ca/",
+      "reason": "http_526"
+    },
+    {
+      "restaurantId": "osm-node-7082566318-g-street-pizza",
+      "name": "G-Street Pizza",
+      "website": "https://gstreetpizza.ca/",
+      "reason": "fetch failed"
     },
     {
       "restaurantId": "osm-node-2714920436-greco-pizza",
@@ -191,15 +207,15 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "reason": "fetch failed"
     },
     {
-      "restaurantId": "osm-node-5987565464-afrite",
-      "name": "aFrite",
-      "website": "https://afrite.ca/",
-      "reason": "timeout"
-    },
-    {
       "restaurantId": "osm-node-5723553932-kam-moon",
       "name": "Kam-moon",
       "website": "https://kam-moon.com/",
+      "reason": "fetch failed"
+    },
+    {
+      "restaurantId": "osm-node-2712744143-kebab-kitchen",
+      "name": "Kebab Kitchen",
+      "website": "http://www.kebabkitchens.com/",
       "reason": "fetch failed"
     },
     {
@@ -207,12 +223,6 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "King of Donair",
       "website": "https://www.kingofdonair.ca/",
       "reason": "http_403"
-    },
-    {
-      "restaurantId": "osm-node-2712744143-kebab-kitchen",
-      "name": "Kebab Kitchen",
-      "website": "http://www.kebabkitchens.com/",
-      "reason": "fetch failed"
     },
     {
       "restaurantId": "osm-node-3575616966-layla-s-mediterranean-cuisine",
@@ -239,16 +249,16 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "reason": "robots_disallow"
     },
     {
-      "restaurantId": "osm-node-2712689447-mcdonald-s",
-      "name": "McDonald's",
-      "website": "http://www.mcdonalds.ca/",
-      "reason": "robots_disallow"
-    },
-    {
       "restaurantId": "osm-node-2721720399-mashawee-mediterranean-grill",
       "name": "Mashawee Mediterranean Grill",
       "website": "https://www.mashaweemediterraneangrill.ca/",
       "reason": "http_403"
+    },
+    {
+      "restaurantId": "osm-node-2712689447-mcdonald-s",
+      "name": "McDonald's",
+      "website": "http://www.mcdonalds.ca/",
+      "reason": "robots_disallow"
     },
     {
       "restaurantId": "osm-node-3034604253-mcdonald-s",
@@ -263,28 +273,28 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "reason": "robots_disallow"
     },
     {
-      "restaurantId": "osm-node-11552509410-mizu-sushi",
-      "name": "Mizu Sushi",
-      "website": "https://mizutakeout.ca/",
-      "reason": "http_403"
-    },
-    {
       "restaurantId": "osm-way-364014694-mcdonald-s",
       "name": "McDonald's",
       "website": "http://www.mcdonalds.ca/",
       "reason": "robots_disallow"
     },
     {
-      "restaurantId": "osm-node-11552529320-mizu-sushi",
+      "restaurantId": "osm-node-8142450011-montana-s",
+      "name": "Montana's",
+      "website": "https://www.montanas.ca/en/locations/3617/halifax-chain-lake-dr.html",
+      "reason": "robots_disallow"
+    },
+    {
+      "restaurantId": "osm-node-11552509410-mizu-sushi",
       "name": "Mizu Sushi",
       "website": "https://mizutakeout.ca/",
       "reason": "http_403"
     },
     {
-      "restaurantId": "osm-node-8142450011-montana-s",
-      "name": "Montana's",
-      "website": "https://www.montanas.ca/en/locations/3617/halifax-chain-lake-dr.html",
-      "reason": "robots_disallow"
+      "restaurantId": "osm-node-11552529320-mizu-sushi",
+      "name": "Mizu Sushi",
+      "website": "https://mizutakeout.ca/",
+      "reason": "http_403"
     },
     {
       "restaurantId": "osm-node-7674271948-new-asia",
@@ -299,28 +309,10 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "reason": "fetch failed"
     },
     {
-      "restaurantId": "osm-node-5863968665-pizza-pizza",
-      "name": "Pizza Pizza",
-      "website": "https://www.pizzapizza.ca/",
-      "reason": "http_403"
-    },
-    {
-      "restaurantId": "osm-node-13073162601-pizza-pizza",
-      "name": "Pizza Pizza",
-      "website": "https://www.pizzapizza.ca/",
-      "reason": "http_403"
-    },
-    {
       "restaurantId": "osm-node-11526055082-noggins-coburg",
       "name": "Noggins Coburg",
       "website": "https://nogginsfarm.ca/farm-markets/coburg-market/",
       "reason": "robots_disallow"
-    },
-    {
-      "restaurantId": "osm-node-9652937830-arirang-korean-and-japanese",
-      "name": "Arirang Korean & Japanese",
-      "website": "https://arirang-restaurant.com/",
-      "reason": "timeout"
     },
     {
       "restaurantId": "osm-node-3789869157-piece-of-cake-bakery-and-cafe",
@@ -329,15 +321,27 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "reason": "http_404"
     },
     {
+      "restaurantId": "osm-node-9652937830-arirang-korean-and-japanese",
+      "name": "Arirang Korean & Japanese",
+      "website": "https://arirang-restaurant.com/",
+      "reason": "timeout"
+    },
+    {
+      "restaurantId": "osm-node-5863968665-pizza-pizza",
+      "name": "Pizza Pizza",
+      "website": "https://www.pizzapizza.ca/",
+      "reason": "http_403"
+    },
+    {
       "restaurantId": "osm-node-3789835257-the-juice-press",
       "name": "The Juice Press",
       "website": "https://bishopslanding.com/dining/juice-press-inc/",
       "reason": "http_404"
     },
     {
-      "restaurantId": "osm-node-8443747544-saj-house",
-      "name": "Saj House",
-      "website": "https://www.sajhouse.ca/",
+      "restaurantId": "osm-node-13073162601-pizza-pizza",
+      "name": "Pizza Pizza",
+      "website": "https://www.pizzapizza.ca/",
       "reason": "http_403"
     },
     {
@@ -345,6 +349,12 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Saffron Multi Cuisine Indian Restaurant",
       "website": "https://saffron-indian-restaurant.com/",
       "reason": "fetch failed"
+    },
+    {
+      "restaurantId": "osm-node-8443747544-saj-house",
+      "name": "Saj House",
+      "website": "https://www.sajhouse.ca/",
+      "reason": "http_403"
     },
     {
       "restaurantId": "osm-node-7674268236-shiraz",
@@ -362,12 +372,6 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "restaurantId": "osm-node-11552151862-sushi-jet",
       "name": "Sushi Jet",
       "website": "https://sushi-jet.com/location/dartmouth",
-      "reason": "fetch failed"
-    },
-    {
-      "restaurantId": "osm-node-11552180279-sushi-jet",
-      "name": "Sushi Jet",
-      "website": "https://sushi-jet.com/location/Halifax",
       "reason": "http_404"
     },
     {
@@ -377,15 +381,15 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "reason": "fetch failed"
     },
     {
+      "restaurantId": "osm-node-11552180279-sushi-jet",
+      "name": "Sushi Jet",
+      "website": "https://sushi-jet.com/location/Halifax",
+      "reason": "http_404"
+    },
+    {
       "restaurantId": "osm-node-9416778099-tarek-s-cafe",
       "name": "Tarek's Cafe",
       "website": "http://www.tarekscafe.ca/",
-      "reason": "fetch failed"
-    },
-    {
-      "restaurantId": "osm-way-460939327-la-piazza-ristorante",
-      "name": "La Piazza Ristorante",
-      "website": "https://www.lapiazzarestocafe.com/",
       "reason": "fetch failed"
     },
     {
@@ -405,6 +409,12 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "The Butcher's Block Pub and Eatery",
       "website": "http://www.butchersblockpub.com/",
       "reason": "robots_disallow"
+    },
+    {
+      "restaurantId": "osm-way-460939327-la-piazza-ristorante",
+      "name": "La Piazza Ristorante",
+      "website": "https://www.lapiazzarestocafe.com/",
+      "reason": "timeout"
     },
     {
       "restaurantId": "osm-node-1689418207-the-old-triangle-irish-pub",
@@ -461,12 +471,12 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "EDNA",
       "website": "https://www.ednarestaurant.com/",
       "resolvedUrl": "https://www.ednarestaurant.com/",
-      "observedAt": "2026-08-28T17:36:18.001Z",
+      "observedAt": "2026-08-28T18:17:02.340Z",
       "socialProfiles": [
         {
           "platform": "instagram",
           "handle": "ednarestaurant",
-          "url": "https://www.instagram.com/ednarestaurant/",
+          "url": "https://www.instagram.com/ednarestaurant",
           "label": "instagram",
           "discoveredFrom": "https://www.ednarestaurant.com/",
           "associationBasis": "linked_from_official_website",
@@ -475,8 +485,34 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
         {
           "platform": "facebook",
           "handle": "EDNA-398144760287755",
-          "url": "https://www.facebook.com/EDNA-398144760287755",
+          "url": "https://www.facebook.com/EDNA-398144760287755/",
           "label": "facebook",
+          "discoveredFrom": "https://www.ednarestaurant.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        }
+      ],
+      "relatedLinks": [
+        {
+          "kind": "menu",
+          "url": "https://www.ednarestaurant.com/menu",
+          "label": "Menu",
+          "discoveredFrom": "https://www.ednarestaurant.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "reservations",
+          "url": "https://www.ednarestaurant.com/reservations",
+          "label": "Reservations",
+          "discoveredFrom": "https://www.ednarestaurant.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "reservations",
+          "url": "https://www.opentable.com/r/edna-restaurant-reservations-halifax?lang=en-US&amp;ot_source=Restaurant%20website&amp;restref=342271",
+          "label": "Book a Table",
           "discoveredFrom": "https://www.ednarestaurant.com/",
           "associationBasis": "linked_from_official_website",
           "reviewState": "verified_link"
@@ -494,12 +530,12 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Highwayman",
       "website": "https://www.highwaymanhfx.com/",
       "resolvedUrl": "https://www.highwaymanhfx.com/",
-      "observedAt": "2026-08-28T17:36:18.000Z",
+      "observedAt": "2026-08-28T18:17:02.340Z",
       "socialProfiles": [
         {
           "platform": "instagram",
           "handle": "highwaymanhfx",
-          "url": "https://www.instagram.com/highwaymanhfx/",
+          "url": "https://www.instagram.com/highwaymanhfx/?hl=en",
           "label": "instagram",
           "discoveredFrom": "https://www.highwaymanhfx.com/",
           "associationBasis": "linked_from_official_website",
@@ -510,6 +546,40 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "handle": "highwaymanhfx",
           "url": "https://www.facebook.com/highwaymanhfx",
           "label": "facebook",
+          "discoveredFrom": "https://www.highwaymanhfx.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        }
+      ],
+      "relatedLinks": [
+        {
+          "kind": "reservations",
+          "url": "https://www.highwaymanhfx.com/reserve",
+          "label": "RESERVE",
+          "discoveredFrom": "https://www.highwaymanhfx.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "menu",
+          "url": "https://www.highwaymanhfx.com/menus",
+          "label": "Folder: MENUS",
+          "discoveredFrom": "https://www.highwaymanhfx.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "menu",
+          "url": "https://www.highwaymanhfx.com/food-menu",
+          "label": "OUR FOOD MENU",
+          "discoveredFrom": "https://www.highwaymanhfx.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "menu",
+          "url": "https://www.highwaymanhfx.com/drink-menu",
+          "label": "OUR DRINK MENU",
           "discoveredFrom": "https://www.highwaymanhfx.com/",
           "associationBasis": "linked_from_official_website",
           "reviewState": "verified_link"
@@ -527,12 +597,12 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "2 Crows Brewing",
       "website": "https://www.2crowsbrewing.com/",
       "resolvedUrl": "https://2crowsbrewing.com/",
-      "observedAt": "2026-08-28T17:36:18.416Z",
+      "observedAt": "2026-08-28T18:17:02.681Z",
       "socialProfiles": [
         {
           "platform": "instagram",
           "handle": "2crowsbrewing",
-          "url": "https://www.instagram.com/2crowsbrewing/",
+          "url": "https://www.instagram.com/2crowsbrewing",
           "label": "instagram",
           "discoveredFrom": "https://2crowsbrewing.com/",
           "associationBasis": "linked_from_official_website",
@@ -548,6 +618,7 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "reviewState": "verified_link"
         }
       ],
+      "relatedLinks": [],
       "feeds": [
         {
           "url": "https://2crowsbrewing.com/feed/",
@@ -575,13 +646,22 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "7 Peppers Grill",
       "website": "https://www.7peppersgrill.net/",
       "resolvedUrl": "https://www.7peppersgrill.net/",
-      "observedAt": "2026-08-28T17:36:18.079Z",
+      "observedAt": "2026-08-28T18:17:02.358Z",
       "socialProfiles": [
         {
           "platform": "facebook",
           "handle": "7peppersgrill",
-          "url": "https://www.facebook.com/7peppersgrill",
+          "url": "https://facebook.com/7peppersgrill/",
           "label": "facebook",
+          "discoveredFrom": "https://www.7peppersgrill.net/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "platform": "x",
+          "handle": "7peppersgrill",
+          "url": "https://twitter.com/7peppersgrill?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor",
+          "label": "x",
           "discoveredFrom": "https://www.7peppersgrill.net/",
           "associationBasis": "linked_from_official_website",
           "reviewState": "verified_link"
@@ -589,8 +669,27 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
         {
           "platform": "instagram",
           "handle": "7peppersgrill",
-          "url": "https://www.instagram.com/7peppersgrill/",
+          "url": "https://instagram.com/7peppersgrill/?hl=en",
           "label": "instagram",
+          "discoveredFrom": "https://www.7peppersgrill.net/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "platform": "x",
+          "handle": "peppersgrill",
+          "url": "https://twitter.com/peppersgrill?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor",
+          "label": "x",
+          "discoveredFrom": "https://www.7peppersgrill.net/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        }
+      ],
+      "relatedLinks": [
+        {
+          "kind": "menu",
+          "url": "https://www.7peppersgrill.net/menu",
+          "label": "Menu",
           "discoveredFrom": "https://www.7peppersgrill.net/",
           "associationBasis": "linked_from_official_website",
           "reviewState": "verified_link"
@@ -608,8 +707,9 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "A&W",
       "website": "https://web.aw.ca/en/locations/6012/dartmouth/240-victoria-rd",
       "resolvedUrl": "https://web.aw.ca/en/locations/6012/dartmouth/240-victoria-rd",
-      "observedAt": "2026-08-28T17:36:18.382Z",
+      "observedAt": "2026-08-28T18:17:02.680Z",
       "socialProfiles": [],
+      "relatedLinks": [],
       "feeds": [],
       "sitemaps": [
         "https://web.aw.ca/sitemap.xml"
@@ -618,17 +718,123 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "reviewState": "verified"
     },
     {
+      "restaurantId": "osm-node-5987565464-afrite",
+      "name": "aFrite",
+      "website": "https://afrite.ca/",
+      "resolvedUrl": "https://afrite.ca/",
+      "observedAt": "2026-08-28T18:17:02.560Z",
+      "socialProfiles": [
+        {
+          "platform": "instagram",
+          "handle": "afriteresto",
+          "url": "https://www.instagram.com/afriteresto/?hl=en",
+          "label": "instagram",
+          "discoveredFrom": "https://afrite.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "platform": "facebook",
+          "handle": "afriterestaurant",
+          "url": "https://www.facebook.com/afriterestaurant",
+          "label": "facebook",
+          "discoveredFrom": "https://afrite.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "platform": "x",
+          "handle": "afriteresto",
+          "url": "https://twitter.com/afriteresto",
+          "label": "x",
+          "discoveredFrom": "https://afrite.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        }
+      ],
+      "relatedLinks": [
+        {
+          "kind": "menu",
+          "url": "https://afrite.ca/menu/",
+          "label": "Menu",
+          "discoveredFrom": "https://afrite.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "reservations",
+          "url": "https://afrite.ca/contact",
+          "label": "Call for Reservations",
+          "discoveredFrom": "https://afrite.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        }
+      ],
+      "feeds": [
+        {
+          "url": "https://afrite.ca/feed/",
+          "type": "application/rss+xml",
+          "title": "aFrite &raquo; Feed",
+          "discoveredFrom": "https://afrite.ca/",
+          "reviewState": "verified_link"
+        },
+        {
+          "url": "https://afrite.ca/comments/feed/",
+          "type": "application/rss+xml",
+          "title": "aFrite &raquo; Comments Feed",
+          "discoveredFrom": "https://afrite.ca/",
+          "reviewState": "verified_link"
+        },
+        {
+          "url": "https://afrite.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fafrite.ca%2F&#038;format=xml",
+          "type": "text/xml+oembed",
+          "title": "oEmbed (XML)",
+          "discoveredFrom": "https://afrite.ca/",
+          "reviewState": "verified_link"
+        }
+      ],
+      "sitemaps": [],
+      "sourceKind": "official_website_discovery",
+      "reviewState": "verified"
+    },
+    {
       "restaurantId": "osm-node-8158663930-almonak",
       "name": "Almonak",
       "website": "https://www.almonak.com/",
       "resolvedUrl": "https://www.almonak.com/",
-      "observedAt": "2026-08-28T17:36:18.416Z",
+      "observedAt": "2026-08-28T18:17:02.620Z",
       "socialProfiles": [
         {
           "platform": "instagram",
           "handle": "almonakhalifax",
           "url": "https://www.instagram.com/almonakhalifax/",
           "label": "instagram",
+          "discoveredFrom": "https://www.almonak.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        }
+      ],
+      "relatedLinks": [
+        {
+          "kind": "events",
+          "url": "https://www.almonak.com/book-an-event",
+          "label": "Book an Event",
+          "discoveredFrom": "https://www.almonak.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "ordering",
+          "url": "https://order.toasttab.com/egiftcards/almonak-5659-almon-st",
+          "label": "Gift Cards",
+          "discoveredFrom": "https://www.almonak.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "reservations",
+          "url": "https://widgets.libroreserve.com/WEB/NS016643947517/book",
+          "label": "Book a Table",
           "discoveredFrom": "https://www.almonak.com/",
           "associationBasis": "linked_from_official_website",
           "reviewState": "verified_link"
@@ -654,7 +860,7 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Antojo Tacos + Tequila",
       "website": "https://antojo.ca/",
       "resolvedUrl": "https://antojo.ca/",
-      "observedAt": "2026-08-28T17:36:19.222Z",
+      "observedAt": "2026-08-28T18:17:04.325Z",
       "socialProfiles": [
         {
           "platform": "instagram",
@@ -668,8 +874,51 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
         {
           "platform": "facebook",
           "handle": "Antojo-Tacos-Tequila-Halifax-1432941103461532",
-          "url": "https://www.facebook.com/Antojo-Tacos-Tequila-Halifax-1432941103461532",
+          "url": "https://www.facebook.com/Antojo-Tacos-Tequila-Halifax-1432941103461532/",
           "label": "facebook",
+          "discoveredFrom": "https://antojo.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "platform": "x",
+          "handle": "AntojoTacos",
+          "url": "https://twitter.com/AntojoTacos",
+          "label": "x",
+          "discoveredFrom": "https://antojo.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        }
+      ],
+      "relatedLinks": [
+        {
+          "kind": "menu",
+          "url": "https://antojo.ca/#menus",
+          "label": "Menus",
+          "discoveredFrom": "https://antojo.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "reservations",
+          "url": "https://widgets.libroreserve.com/WEB/NS016934224388/book",
+          "label": "Reserve",
+          "discoveredFrom": "https://antojo.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "menu",
+          "url": "https://antojo.ca/wp-content/uploads/2026/05/Antojo-Food-Menus.pdf",
+          "label": "food & dessert menu",
+          "discoveredFrom": "https://antojo.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "menu",
+          "url": "https://antojo.ca/wp-content/uploads/2026/08/Antojo_Beverage_Summer2026_Tall-2.pdf",
+          "label": "drink menu",
           "discoveredFrom": "https://antojo.ca/",
           "associationBasis": "linked_from_official_website",
           "reviewState": "verified_link"
@@ -709,12 +958,12 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Ardmore Tea Room",
       "website": "https://www.ardmoretearoom.ca/",
       "resolvedUrl": "https://www.ardmoretearoom.ca/",
-      "observedAt": "2026-08-28T17:36:18.723Z",
+      "observedAt": "2026-08-28T18:17:03.146Z",
       "socialProfiles": [
         {
           "platform": "facebook",
           "handle": "121037431285468",
-          "url": "https://www.facebook.com/121037431285468",
+          "url": "https://facebook.com/121037431285468",
           "label": "Facebook link for Ardmore Tea Room",
           "discoveredFrom": "https://www.ardmoretearoom.ca/",
           "associationBasis": "linked_from_official_website",
@@ -723,8 +972,43 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
         {
           "platform": "instagram",
           "handle": "ardmore_tea_room",
-          "url": "https://www.instagram.com/ardmore_tea_room/",
+          "url": "https://instagram.com/ardmore_tea_room",
           "label": "Instagram link for Ardmore Tea Room",
+          "discoveredFrom": "https://www.ardmoretearoom.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "platform": "x",
+          "handle": "ArdmoreTeaRoom",
+          "url": "https://twitter.com/ArdmoreTeaRoom",
+          "label": "Twitter link for Ardmore Tea Room",
+          "discoveredFrom": "https://www.ardmoretearoom.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        }
+      ],
+      "relatedLinks": [
+        {
+          "kind": "menu",
+          "url": "https://www.ardmoretearoom.ca/menu",
+          "label": "Menu",
+          "discoveredFrom": "https://www.ardmoretearoom.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "ordering",
+          "url": "https://www.ardmoretearoom.ca/breakfast-takeout-halifax",
+          "label": "Breakfast Takeout Halifax",
+          "discoveredFrom": "https://www.ardmoretearoom.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "ordering",
+          "url": "https://www.ardmoretearoom.ca/burger-takeout-halifax",
+          "label": "Burger Takeout Halifax",
           "discoveredFrom": "https://www.ardmoretearoom.ca/",
           "associationBasis": "linked_from_official_website",
           "reviewState": "verified_link"
@@ -742,13 +1026,39 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Asia Restaurant & Bar",
       "website": "https://asiahalifax.com/",
       "resolvedUrl": "https://asiahalifax.com/",
-      "observedAt": "2026-08-28T17:36:18.814Z",
+      "observedAt": "2026-08-28T18:17:03.047Z",
       "socialProfiles": [
         {
           "platform": "instagram",
           "handle": "asiahalifax",
           "url": "https://www.instagram.com/asiahalifax/",
           "label": "instagram",
+          "discoveredFrom": "https://asiahalifax.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        }
+      ],
+      "relatedLinks": [
+        {
+          "kind": "reservations",
+          "url": "https://www.opentable.ca/restref/client/?restref=1379650&amp;lang=en-CA&amp;ot_source=Restaurant%20website&amp;corrid=2d533fb7-4bda-4272-bac5-0d79533dcd3a",
+          "label": "Make A Reservation",
+          "discoveredFrom": "https://asiahalifax.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "menu",
+          "url": "https://asiahalifax.com/menus",
+          "label": "Our Menu",
+          "discoveredFrom": "https://asiahalifax.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "reservations",
+          "url": "https://www.opentable.ca/restref/client/?restref=1379650&amp;lang=en-CA&amp;ot_source=Restaurant%20website&amp;corrid=76c426ee-9133-4153-88e2-7eeff47f7855",
+          "label": "Make A Reservation",
           "discoveredFrom": "https://asiahalifax.com/",
           "associationBasis": "linked_from_official_website",
           "reviewState": "verified_link"
@@ -764,7 +1074,7 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "BarBurrito",
       "website": "https://www.barburrito.ca/location/dartmouth/",
       "resolvedUrl": "https://www.barburrito.ca/location/dartmouth/",
-      "observedAt": "2026-08-28T17:36:19.100Z",
+      "observedAt": "2026-08-28T18:17:03.180Z",
       "socialProfiles": [
         {
           "platform": "facebook",
@@ -780,6 +1090,91 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "handle": "barburritocanada",
           "url": "https://www.instagram.com/barburritocanada/",
           "label": "Instagram",
+          "discoveredFrom": "https://www.barburrito.ca/location/dartmouth/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "platform": "x",
+          "handle": "Bar_Burrito",
+          "url": "https://twitter.com/Bar_Burrito",
+          "label": "Twitter",
+          "discoveredFrom": "https://www.barburrito.ca/location/dartmouth/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "platform": "linkedin",
+          "handle": "company/18038658",
+          "url": "https://www.linkedin.com/company/18038658/",
+          "label": "LinkedIn",
+          "discoveredFrom": "https://www.barburrito.ca/location/dartmouth/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "platform": "youtube",
+          "handle": "UCLao6yIKD12883yZ1270U-Q",
+          "url": "https://www.youtube.com/channel/UCLao6yIKD12883yZ1270U-Q",
+          "label": "YouTube",
+          "discoveredFrom": "https://www.barburrito.ca/location/dartmouth/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        }
+      ],
+      "relatedLinks": [
+        {
+          "kind": "ordering",
+          "url": "https://www.barburrito.ca/order",
+          "label": "Order Online",
+          "discoveredFrom": "https://www.barburrito.ca/location/dartmouth/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "menu",
+          "url": "https://www.barburrito.ca/#menu",
+          "label": "Menu",
+          "discoveredFrom": "https://www.barburrito.ca/location/dartmouth/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "ordering",
+          "url": "http://www.barburrito.ca/order",
+          "label": "Order Online",
+          "discoveredFrom": "https://www.barburrito.ca/location/dartmouth/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "ordering",
+          "url": "https://wwws-canada2.givex.com/cws5/barburrito/#/direct?outlet_id=400005073&order_type=pickup",
+          "label": "Order Pickup",
+          "discoveredFrom": "https://www.barburrito.ca/location/dartmouth/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "ordering",
+          "url": "https://www.doordash.com/store/barburrito-b-dartmouth-1272107/en-CA/?utm_campaign=gpa",
+          "label": "DoorDash",
+          "discoveredFrom": "https://www.barburrito.ca/location/dartmouth/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "ordering",
+          "url": "https://www.skipthedishes.com/barburrito-tacoma-drive?utm_source=google&utm_medium=organic&utm_campaign=gpa",
+          "label": "SkipTheDishes‎",
+          "discoveredFrom": "https://www.barburrito.ca/location/dartmouth/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "ordering",
+          "url": "https://www.ubereats.com/ca/store/barburrito-50-tacoma-drive/eJZbW0TZRtySDgy__DQlOA?diningMode=DELIVERY&pl=JTdCJTIyYWRkcmVzcyUyMiUzQSUyMlVuaXZlcnNpdHklMjBvZiUyMEFsYmVydGElMjIlMkMlMjJyZWZlcmVuY2UlMjIlM0ElMjJDaElKb3hDUFlmVWhvRk1SRTdKWG1QSmxXOHMlMjIlMkMlMjJyZWZlcmVuY2VUeXBlJTIyJTNBJTIyZ29vZ2xlX3BsYWNlcyUyMiUyQyUyMmxhdGl0dWRlJTIyJTNBNTMuNTIzMjE4OSUyQyUyMmxvbmdpdHVkZSUyMiUzQS0xMTMuNTI2MzE4NiU3RA",
+          "label": "Uber Eats",
           "discoveredFrom": "https://www.barburrito.ca/location/dartmouth/",
           "associationBasis": "linked_from_official_website",
           "reviewState": "verified_link"
@@ -805,12 +1200,12 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Barrios Kitchen & Bar",
       "website": "https://www.barrioshfx.ca/",
       "resolvedUrl": "https://barrioshfx.ca/",
-      "observedAt": "2026-08-28T17:36:19.397Z",
+      "observedAt": "2026-08-28T18:17:03.477Z",
       "socialProfiles": [
         {
           "platform": "facebook",
           "handle": "hfxbarriosresto",
-          "url": "https://www.facebook.com/hfxbarriosresto",
+          "url": "https://www.facebook.com/hfxbarriosresto/",
           "label": "facebook",
           "discoveredFrom": "https://barrioshfx.ca/",
           "associationBasis": "linked_from_official_website",
@@ -821,6 +1216,40 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "handle": "barrioshfx",
           "url": "https://www.instagram.com/barrioshfx/",
           "label": "instagram",
+          "discoveredFrom": "https://barrioshfx.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        }
+      ],
+      "relatedLinks": [
+        {
+          "kind": "menu",
+          "url": "https://barrioshfx.ca/barrios-menu",
+          "label": "Barrios Menu",
+          "discoveredFrom": "https://barrioshfx.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "ordering",
+          "url": "https://barrioshfx.ca/delivery",
+          "label": "Delivery",
+          "discoveredFrom": "https://barrioshfx.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "reservations",
+          "url": "https://barrioshfx.ca/reservation",
+          "label": "Reservation",
+          "discoveredFrom": "https://barrioshfx.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "menu",
+          "url": "https://barrioshfx.ca/menu-guide",
+          "label": "Menu Guide",
           "discoveredFrom": "https://barrioshfx.ca/",
           "associationBasis": "linked_from_official_website",
           "reviewState": "verified_link"
@@ -838,12 +1267,12 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Bedford Beer Garden",
       "website": "https://www.bedfordbeergarden.com/",
       "resolvedUrl": "https://www.bedfordbeergarden.com/",
-      "observedAt": "2026-08-28T17:36:19.094Z",
+      "observedAt": "2026-08-28T18:17:03.180Z",
       "socialProfiles": [
         {
           "platform": "instagram",
           "handle": "bedfordbeergarden",
-          "url": "https://www.instagram.com/bedfordbeergarden/",
+          "url": "https://www.instagram.com/bedfordbeergarden",
           "label": "instagram",
           "discoveredFrom": "https://www.bedfordbeergarden.com/",
           "associationBasis": "linked_from_official_website",
@@ -854,6 +1283,32 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "handle": "bedfordbeergarden",
           "url": "https://www.facebook.com/bedfordbeergarden",
           "label": "facebook",
+          "discoveredFrom": "https://www.bedfordbeergarden.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        }
+      ],
+      "relatedLinks": [
+        {
+          "kind": "menu",
+          "url": "https://www.bedfordbeergarden.com/foodmenu",
+          "label": "Food Menu",
+          "discoveredFrom": "https://www.bedfordbeergarden.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "menu",
+          "url": "https://www.bedfordbeergarden.com/drinkmenu",
+          "label": "Drink Menu",
+          "discoveredFrom": "https://www.bedfordbeergarden.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "events",
+          "url": "https://www.bedfordbeergarden.com/events",
+          "label": "Events",
           "discoveredFrom": "https://www.bedfordbeergarden.com/",
           "associationBasis": "linked_from_official_website",
           "reviewState": "verified_link"
@@ -871,8 +1326,34 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Ben & Florentine",
       "website": "https://benetflorentine.com/",
       "resolvedUrl": "https://locations.benetflorentine.com/",
-      "observedAt": "2026-08-28T17:36:19.601Z",
+      "observedAt": "2026-08-28T18:17:03.635Z",
       "socialProfiles": [],
+      "relatedLinks": [
+        {
+          "kind": "menu",
+          "url": "https://benetflorentine.com/en/menu",
+          "label": "Menu",
+          "discoveredFrom": "https://locations.benetflorentine.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "ordering",
+          "url": "https://benetflorentine.order-online.ai/en/?_gl=1*14maqhv*_ga*NTUwODUzMDkyLjE3MDY4MDA3MDI.*_ga_PJXXT66P1Z*MTcwNzEzNDQwNy45LjEuMTcwNzEzNDUyNC41NS4wLjA.#/?showItem=&amp;amp;_ga=2.190243565.738223456.1707134407-550853092.1706800702",
+          "label": "ORDER ONLINE",
+          "discoveredFrom": "https://locations.benetflorentine.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "ordering",
+          "url": "https://benetflorentine.order-online.ai/en/?_gl=1*1rhmqpy*_ga*NTUwODUzMDkyLjE3MDY4MDA3MDI.*_ga_PJXXT66P1Z*MTcwNzEzNDQwNy45LjEuMTcwNzEzNTI5My41Mi4wLjA.#/?showItem=&amp;amp;_ga=2.201779671.738223456.1707134407-550853092.1706800702",
+          "label": "Order online",
+          "discoveredFrom": "https://locations.benetflorentine.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        }
+      ],
       "feeds": [],
       "sitemaps": [
         "https://locations.benetflorentine.com/sitemap.xml",
@@ -886,12 +1367,21 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Bicycle Thief",
       "website": "https://bicyclethief.ca/",
       "resolvedUrl": "https://bicyclethief.ca/",
-      "observedAt": "2026-08-28T17:36:19.379Z",
+      "observedAt": "2026-08-28T18:17:03.623Z",
       "socialProfiles": [
+        {
+          "platform": "x",
+          "handle": "ourbicyclethief",
+          "url": "http://twitter.com/ourbicyclethief",
+          "label": "x",
+          "discoveredFrom": "https://bicyclethief.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
         {
           "platform": "facebook",
           "handle": "bicyclethief1475",
-          "url": "https://www.facebook.com/bicyclethief1475",
+          "url": "http://www.facebook.com/bicyclethief1475",
           "label": "facebook",
           "discoveredFrom": "https://bicyclethief.ca/",
           "associationBasis": "linked_from_official_website",
@@ -900,8 +1390,26 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
         {
           "platform": "instagram",
           "handle": "ourbicyclethief",
-          "url": "https://www.instagram.com/ourbicyclethief/",
+          "url": "https://www.instagram.com/ourbicyclethief",
           "label": "instagram",
+          "discoveredFrom": "https://bicyclethief.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        }
+      ],
+      "relatedLinks": [
+        {
+          "kind": "reservations",
+          "url": "https://bicyclethief.ca/reservations/",
+          "label": "Reservations",
+          "discoveredFrom": "https://bicyclethief.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "menu",
+          "url": "https://bicyclethief.ca/#",
+          "label": "Menu Menu",
           "discoveredFrom": "https://bicyclethief.ca/",
           "associationBasis": "linked_from_official_website",
           "reviewState": "verified_link"
@@ -932,7 +1440,7 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Bird's Nest Cafe",
       "website": "https://www.birdsnesthalifax.com/",
       "resolvedUrl": "https://www.birdsnesthalifax.com/",
-      "observedAt": "2026-08-28T17:36:19.464Z",
+      "observedAt": "2026-08-28T18:17:03.508Z",
       "socialProfiles": [
         {
           "platform": "facebook",
@@ -948,6 +1456,24 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "handle": "birdsnesthalifax",
           "url": "https://www.instagram.com/birdsnesthalifax/",
           "label": "instagram",
+          "discoveredFrom": "https://www.birdsnesthalifax.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        }
+      ],
+      "relatedLinks": [
+        {
+          "kind": "ordering",
+          "url": "https://birds-nest-cafe.square.site/",
+          "label": "Order Take Out",
+          "discoveredFrom": "https://www.birdsnesthalifax.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "ordering",
+          "url": "http://birds-nest-cafe.square.site/",
+          "label": "ORDER TAKE OUT & VIEW MENU",
           "discoveredFrom": "https://www.birdsnesthalifax.com/",
           "associationBasis": "linked_from_official_website",
           "reviewState": "verified_link"
@@ -973,8 +1499,26 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Bitter End Martini Bar & Restaurant",
       "website": "https://www.bitterend.ca/",
       "resolvedUrl": "https://www.bitterend.ca/",
-      "observedAt": "2026-08-28T17:36:19.446Z",
+      "observedAt": "2026-08-28T18:17:03.887Z",
       "socialProfiles": [],
+      "relatedLinks": [
+        {
+          "kind": "reservations",
+          "url": "https://www.bitterend.ca/reserve.html",
+          "label": "Reserve",
+          "discoveredFrom": "https://www.bitterend.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "menu",
+          "url": "https://www.bitterend.ca/menu.html",
+          "label": "menu",
+          "discoveredFrom": "https://www.bitterend.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        }
+      ],
       "feeds": [],
       "sitemaps": [],
       "sourceKind": "official_website_discovery",
@@ -985,8 +1529,34 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Bluenose II",
       "website": "https://www.bluenoseii.ca/",
       "resolvedUrl": "https://bluenoseii.ca/",
-      "observedAt": "2026-08-28T17:36:19.586Z",
+      "observedAt": "2026-08-28T18:17:03.760Z",
       "socialProfiles": [],
+      "relatedLinks": [
+        {
+          "kind": "menu",
+          "url": "https://bluenoseii.ca/wp-admin/nav-menus.php?action=locations",
+          "label": "Please select a menu in this location",
+          "discoveredFrom": "https://bluenoseii.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "menu",
+          "url": "https://bluenoseii.ca/menu/",
+          "label": "View The Full Menu",
+          "discoveredFrom": "https://bluenoseii.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "reservations",
+          "url": "https://bluenoseii.ca/reservations/",
+          "label": "Make a Reservation",
+          "discoveredFrom": "https://bluenoseii.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        }
+      ],
       "feeds": [
         {
           "url": "https://bluenoseii.ca/feed/",
@@ -1019,12 +1589,21 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Booster Juice",
       "website": "https://www.boosterjuice.com/",
       "resolvedUrl": "https://boosterjuice.com/en-ca",
-      "observedAt": "2026-08-28T17:36:20.107Z",
+      "observedAt": "2026-08-28T18:17:04.209Z",
       "socialProfiles": [
+        {
+          "platform": "x",
+          "handle": "boosterjuice",
+          "url": "https://twitter.com/boosterjuice/",
+          "label": "Twitter",
+          "discoveredFrom": "https://boosterjuice.com/en-ca",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
         {
           "platform": "facebook",
           "handle": "boosterjuice",
-          "url": "https://www.facebook.com/boosterjuice",
+          "url": "https://www.facebook.com/boosterjuice/",
           "label": "Facebook",
           "discoveredFrom": "https://boosterjuice.com/en-ca",
           "associationBasis": "linked_from_official_website",
@@ -1035,6 +1614,34 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "handle": "boosterjuice",
           "url": "https://www.instagram.com/boosterjuice/",
           "label": "Instagram",
+          "discoveredFrom": "https://boosterjuice.com/en-ca",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "platform": "tiktok",
+          "handle": "boosterjuiceofficial",
+          "url": "https://www.tiktok.com/@boosterjuiceofficial",
+          "label": "TikTok",
+          "discoveredFrom": "https://boosterjuice.com/en-ca",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "platform": "youtube",
+          "handle": "boosterjuice",
+          "url": "https://www.youtube.com/@boosterjuice",
+          "label": "YouTube",
+          "discoveredFrom": "https://boosterjuice.com/en-ca",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        }
+      ],
+      "relatedLinks": [
+        {
+          "kind": "events",
+          "url": "https://boosterjuice.com/en-ca/pages/catering",
+          "label": "CORPORATE & EVENT PROGRAM",
           "discoveredFrom": "https://boosterjuice.com/en-ca",
           "associationBasis": "linked_from_official_website",
           "reviewState": "verified_link"
@@ -1052,7 +1659,7 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Boston Pizza",
       "website": "https://bostonpizza.com/en/index.html",
       "resolvedUrl": "https://bostonpizza.com/en/index.html",
-      "observedAt": "2026-08-28T17:36:19.863Z",
+      "observedAt": "2026-08-28T18:17:04.345Z",
       "socialProfiles": [
         {
           "platform": "facebook",
@@ -1064,10 +1671,70 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "reviewState": "verified_link"
         },
         {
+          "platform": "x",
+          "handle": "bostonpizza",
+          "url": "https://twitter.com/bostonpizza",
+          "label": "x",
+          "discoveredFrom": "https://bostonpizza.com/en/index.html",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
           "platform": "instagram",
           "handle": "bostonpizzacanada",
-          "url": "https://www.instagram.com/bostonpizzacanada/",
+          "url": "https://www.instagram.com/bostonpizzacanada",
           "label": "instagram",
+          "discoveredFrom": "https://bostonpizza.com/en/index.html",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "platform": "youtube",
+          "handle": "BostonPizzaCanada",
+          "url": "https://www.youtube.com/user/BostonPizzaCanada",
+          "label": "youtube",
+          "discoveredFrom": "https://bostonpizza.com/en/index.html",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        }
+      ],
+      "relatedLinks": [
+        {
+          "kind": "menu",
+          "url": "https://bostonpizza.com/en/menu.html",
+          "label": "Menu",
+          "discoveredFrom": "https://bostonpizza.com/en/index.html",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "events",
+          "url": "https://bostonpizza.com/en/promotions/summer-promotion.html",
+          "label": "LIVE MUSIC",
+          "discoveredFrom": "https://bostonpizza.com/en/index.html",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "menu",
+          "url": "https://bostonpizza.com/en/promotions/winter-cravings.html",
+          "label": "VIEW MENU",
+          "discoveredFrom": "https://bostonpizza.com/en/index.html",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "menu",
+          "url": "https://bostonpizza.com/en/promotions/lunch-menu.html",
+          "label": "View Lunch Menu",
+          "discoveredFrom": "https://bostonpizza.com/en/index.html",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "ordering",
+          "url": "https://order.bostonpizza.com/en-ca/home",
+          "label": "ORDER ONLINE",
           "discoveredFrom": "https://bostonpizza.com/en/index.html",
           "associationBasis": "linked_from_official_website",
           "reviewState": "verified_link"
@@ -1085,13 +1752,39 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Brawta Jamaican Jerk Joint",
       "website": "https://brawtajerk.ca/",
       "resolvedUrl": "https://brawtajerk.ca/",
-      "observedAt": "2026-08-28T17:36:20.189Z",
+      "observedAt": "2026-08-28T18:17:04.278Z",
       "socialProfiles": [
         {
           "platform": "instagram",
           "handle": "brawtajamaicanjerkjoint",
           "url": "https://www.instagram.com/brawtajamaicanjerkjoint/",
           "label": "instagram",
+          "discoveredFrom": "https://brawtajerk.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        }
+      ],
+      "relatedLinks": [
+        {
+          "kind": "ordering",
+          "url": "https://brawta-by-grafton.square.site/",
+          "label": "ORDER HERE",
+          "discoveredFrom": "https://brawtajerk.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "menu",
+          "url": "https://brawtajerk.ca/menu",
+          "label": "Grafton St Menu",
+          "discoveredFrom": "https://brawtajerk.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "ordering",
+          "url": "https://www.ubereats.com/",
+          "label": "Order Now",
           "discoveredFrom": "https://brawtajerk.ca/",
           "associationBasis": "linked_from_official_website",
           "reviewState": "verified_link"
@@ -1109,13 +1802,31 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Brief Break",
       "website": "https://dal.campusdish.com/LocationsAndMenus/WeldonLawBuilding",
       "resolvedUrl": "https://dal.mydininghub.ca/en/locations",
-      "observedAt": "2026-08-28T17:36:20.317Z",
+      "observedAt": "2026-08-28T18:17:04.616Z",
       "socialProfiles": [
         {
           "platform": "instagram",
           "handle": "Dalfood",
           "url": "https://www.instagram.com/Dalfood/",
           "label": "instagram",
+          "discoveredFrom": "https://dal.mydininghub.ca/en/locations",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        }
+      ],
+      "relatedLinks": [
+        {
+          "kind": "menu",
+          "url": "https://dal.mydininghub.ca/en/account?section=my-menu",
+          "label": "My Menu",
+          "discoveredFrom": "https://dal.mydininghub.ca/en/locations",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "menu",
+          "url": "https://dal.mydininghub.ca/en/locations",
+          "label": "Locations & Menus",
           "discoveredFrom": "https://dal.mydininghub.ca/en/locations",
           "associationBasis": "linked_from_official_website",
           "reviewState": "verified_link"
@@ -1133,8 +1844,9 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Budapest Bisztro",
       "website": "https://budapestbisztro.ca/",
       "resolvedUrl": "https://budapestbisztro.ca/",
-      "observedAt": "2026-08-28T17:36:20.321Z",
+      "observedAt": "2026-08-28T18:17:04.425Z",
       "socialProfiles": [],
+      "relatedLinks": [],
       "feeds": [],
       "sitemaps": [],
       "sourceKind": "official_website_discovery",
@@ -1145,8 +1857,9 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Cabin Coffee",
       "website": "https://cabincoffeehalifax.com/",
       "resolvedUrl": "https://cabincoffeehalifax.com/",
-      "observedAt": "2026-08-28T17:36:20.330Z",
+      "observedAt": "2026-08-28T18:17:04.644Z",
       "socialProfiles": [],
+      "relatedLinks": [],
       "feeds": [],
       "sitemaps": [],
       "sourceKind": "official_website_discovery",
@@ -1157,7 +1870,7 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Café Good Luck",
       "website": "https://www.manualfoodanddrinkco.com/goodluck",
       "resolvedUrl": "https://cafegoodluck.ca/goodluck",
-      "observedAt": "2026-08-28T17:36:20.518Z",
+      "observedAt": "2026-08-28T18:17:04.780Z",
       "socialProfiles": [
         {
           "platform": "instagram",
@@ -1169,6 +1882,7 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "reviewState": "verified_link"
         }
       ],
+      "relatedLinks": [],
       "feeds": [],
       "sitemaps": [
         "http://cafegoodluck.ca/sitemap.xml"
@@ -1181,7 +1895,7 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Café Lunette",
       "website": "https://www.cafelunette.com/",
       "resolvedUrl": "https://www.cafelunette.com/",
-      "observedAt": "2026-08-28T17:36:20.785Z",
+      "observedAt": "2026-08-28T18:17:05.043Z",
       "socialProfiles": [
         {
           "platform": "instagram",
@@ -1195,8 +1909,74 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
         {
           "platform": "facebook",
           "handle": "cafelunette.hfx",
-          "url": "https://www.facebook.com/cafelunette.hfx",
+          "url": "https://www.facebook.com/cafelunette.hfx/",
           "label": "Facebook-f",
+          "discoveredFrom": "https://www.cafelunette.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        }
+      ],
+      "relatedLinks": [
+        {
+          "kind": "menu",
+          "url": "https://www.cafelunette.com/bistro-menu/",
+          "label": "Menu",
+          "discoveredFrom": "https://www.cafelunette.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "reservations",
+          "url": "https://www.cafelunette.com/#elementor-action%3Aaction%3Dpopup%3Aopen%26settings%3DeyJpZCI6IjE4OSIsInRvZ2dsZSI6ZmFsc2V9",
+          "label": "Reserve",
+          "discoveredFrom": "https://www.cafelunette.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "ordering",
+          "url": "https://silverpay.app/cafelunette/menu",
+          "label": "Order Online Grab + Go",
+          "discoveredFrom": "https://www.cafelunette.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "reservations",
+          "url": "https://www.opentable.ca/booking/restref/availability?lang=en-CA&#038;correlationId=a802e0e6-ee0e-4402-b5a5-aaca6d40dd38&#038;restRef=1226047&#038;otSource=Restaurant%20website",
+          "label": "reserve your table",
+          "discoveredFrom": "https://www.cafelunette.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "events",
+          "url": "https://www.cafelunette.com/private-events/",
+          "label": "Private Events",
+          "discoveredFrom": "https://www.cafelunette.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "reservations",
+          "url": "https://www.opentable.ca/booking/experiences-availability?rid=1226047&restref=1226047&experienceId=696902&utm_source=external&utm_medium=referral&utm_campaign=shared",
+          "label": "Wine Wednesdays, à la Lunette",
+          "discoveredFrom": "https://www.cafelunette.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "reservations",
+          "url": "https://www.opentable.ca/booking/experiences-availability?rid=1226047&restref=1226047&experienceId=678582&utm_source=external&utm_medium=referral&utm_campaign=shared&dateTime=2026-03-19T17%3A00%3A00&partySize=2",
+          "label": "Jazz Avec Frites",
+          "discoveredFrom": "https://www.cafelunette.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "reservations",
+          "url": "https://www.opentable.ca/r/cafe-lunette-reservations-halifax?restref=1226047&#038;lang=en-CA&#038;ot_source=Restaurant%20website",
+          "label": "RESERVATIONS",
           "discoveredFrom": "https://www.cafelunette.com/",
           "associationBasis": "linked_from_official_website",
           "reviewState": "verified_link"
@@ -1236,8 +2016,34 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Canton Garden",
       "website": "https://www.cantongardenhalifax.com/",
       "resolvedUrl": "https://www.cantongardenns.com/yik8nsx2/restaurant/order-online?utm_source=redirect&utm_medium=cantongardenhalifax.com",
-      "observedAt": "2026-08-28T17:36:21.941Z",
+      "observedAt": "2026-08-28T18:17:05.942Z",
       "socialProfiles": [],
+      "relatedLinks": [
+        {
+          "kind": "menu",
+          "url": "https://www.cantongardenns.com/yik8nsx2/restaurant/order-online?menu=All+Day+Menu",
+          "label": "All Day Menu",
+          "discoveredFrom": "https://www.cantongardenns.com/yik8nsx2/restaurant/order-online?utm_source=redirect&utm_medium=cantongardenhalifax.com",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "menu",
+          "url": "https://www.cantongardenns.com/yik8nsx2/restaurant/order-online?menu=Lunch+Menu",
+          "label": "Lunch Menu",
+          "discoveredFrom": "https://www.cantongardenns.com/yik8nsx2/restaurant/order-online?utm_source=redirect&utm_medium=cantongardenhalifax.com",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "menu",
+          "url": "https://www.cantongardenns.com/yik8nsx2/canton-garden-halifax-b3m-0h8/menu",
+          "label": "Menu",
+          "discoveredFrom": "https://www.cantongardenns.com/yik8nsx2/restaurant/order-online?utm_source=redirect&utm_medium=cantongardenhalifax.com",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        }
+      ],
       "feeds": [],
       "sitemaps": [
         "https://www.cantongardenns.com/sitemap.xml"
@@ -1250,8 +2056,46 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Charm School",
       "website": "https://unfuckingfiltered.com/",
       "resolvedUrl": "https://unfuckingfiltered.com/",
-      "observedAt": "2026-08-28T17:36:21.339Z",
-      "socialProfiles": [],
+      "observedAt": "2026-08-28T18:17:05.266Z",
+      "socialProfiles": [
+        {
+          "platform": "x",
+          "handle": "nash_bomb",
+          "url": "https://twitter.com/nash_bomb",
+          "label": "Greg Nash",
+          "discoveredFrom": "https://unfuckingfiltered.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "platform": "x",
+          "handle": "monochromegod",
+          "url": "https://twitter.com/monochromegod",
+          "label": "Andrew Murphy",
+          "discoveredFrom": "https://unfuckingfiltered.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "platform": "x",
+          "handle": "unfilteredbrews",
+          "url": "https://twitter.com/@unfilteredbrews",
+          "label": "@unfilteredbrews",
+          "discoveredFrom": "https://unfuckingfiltered.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        }
+      ],
+      "relatedLinks": [
+        {
+          "kind": "menu",
+          "url": "https://unfuckingfiltered.com/#",
+          "label": "Menu",
+          "discoveredFrom": "https://unfuckingfiltered.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        }
+      ],
       "feeds": [
         {
           "url": "https://unfuckingfiltered.com/home/feed/",
@@ -1280,7 +2124,7 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Cheese Curds and Habaneros",
       "website": "https://cheesecurdsgourmetburgersandpoutinerie.unuhub.net/",
       "resolvedUrl": "https://cheesecurdsgourmetburgersandpoutinerie.unuhub.net/",
-      "observedAt": "2026-08-28T17:36:21.264Z",
+      "observedAt": "2026-08-28T18:17:05.641Z",
       "socialProfiles": [
         {
           "platform": "facebook",
@@ -1299,8 +2143,18 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "discoveredFrom": "https://cheesecurdsgourmetburgersandpoutinerie.unuhub.net/",
           "associationBasis": "linked_from_official_website",
           "reviewState": "verified_link"
+        },
+        {
+          "platform": "x",
+          "handle": "CheeseCurds",
+          "url": "https://twitter.com/CheeseCurds",
+          "label": "x",
+          "discoveredFrom": "https://cheesecurdsgourmetburgersandpoutinerie.unuhub.net/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
         }
       ],
+      "relatedLinks": [],
       "feeds": [],
       "sitemaps": [],
       "sourceKind": "official_website_discovery",
@@ -1311,13 +2165,22 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Cheese Curds Burgers",
       "website": "https://www.cheesecurdsburgers.com/",
       "resolvedUrl": "https://www.cheesecurdsburgers.com/",
-      "observedAt": "2026-08-28T17:36:21.342Z",
+      "observedAt": "2026-08-28T18:17:05.469Z",
       "socialProfiles": [
         {
           "platform": "facebook",
           "handle": "CheeseCurdsBurgers",
-          "url": "https://www.facebook.com/CheeseCurdsBurgers",
+          "url": "https://www.facebook.com/CheeseCurdsBurgers/?ref=hl",
           "label": "facebook",
+          "discoveredFrom": "https://www.cheesecurdsburgers.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "platform": "x",
+          "handle": "CheeseCurds",
+          "url": "https://twitter.com/CheeseCurds",
+          "label": "x",
           "discoveredFrom": "https://www.cheesecurdsburgers.com/",
           "associationBasis": "linked_from_official_website",
           "reviewState": "verified_link"
@@ -1325,8 +2188,35 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
         {
           "platform": "instagram",
           "handle": "cheesecurdsburgers",
-          "url": "https://www.instagram.com/cheesecurdsburgers/",
+          "url": "http://instagram.com/cheesecurdsburgers",
           "label": "instagram",
+          "discoveredFrom": "https://www.cheesecurdsburgers.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "platform": "tiktok",
+          "handle": "cheesecurdsburgers",
+          "url": "https://www.tiktok.com/@cheesecurdsburgers?",
+          "label": "tiktok",
+          "discoveredFrom": "https://www.cheesecurdsburgers.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        }
+      ],
+      "relatedLinks": [
+        {
+          "kind": "menu",
+          "url": "https://www.cheesecurdsburgers.com/menu",
+          "label": "MENU",
+          "discoveredFrom": "https://www.cheesecurdsburgers.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "ordering",
+          "url": "https://www.cheesecurdsburgers.com/locations",
+          "label": "ORDER ONLINE",
           "discoveredFrom": "https://www.cheesecurdsburgers.com/",
           "associationBasis": "linked_from_official_website",
           "reviewState": "verified_link"
@@ -1344,13 +2234,22 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Cheese Curds Gourmet Burgers and Poutinerie/Habaneros Modern Taco Bar",
       "website": "https://www.cheesecurdsburgers.com/",
       "resolvedUrl": "https://www.cheesecurdsburgers.com/",
-      "observedAt": "2026-08-28T17:36:21.602Z",
+      "observedAt": "2026-08-28T18:17:05.710Z",
       "socialProfiles": [
         {
           "platform": "facebook",
           "handle": "CheeseCurdsBurgers",
-          "url": "https://www.facebook.com/CheeseCurdsBurgers",
+          "url": "https://www.facebook.com/CheeseCurdsBurgers/?ref=hl",
           "label": "facebook",
+          "discoveredFrom": "https://www.cheesecurdsburgers.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "platform": "x",
+          "handle": "CheeseCurds",
+          "url": "https://twitter.com/CheeseCurds",
+          "label": "x",
           "discoveredFrom": "https://www.cheesecurdsburgers.com/",
           "associationBasis": "linked_from_official_website",
           "reviewState": "verified_link"
@@ -1358,8 +2257,35 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
         {
           "platform": "instagram",
           "handle": "cheesecurdsburgers",
-          "url": "https://www.instagram.com/cheesecurdsburgers/",
+          "url": "http://instagram.com/cheesecurdsburgers",
           "label": "instagram",
+          "discoveredFrom": "https://www.cheesecurdsburgers.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "platform": "tiktok",
+          "handle": "cheesecurdsburgers",
+          "url": "https://www.tiktok.com/@cheesecurdsburgers?",
+          "label": "tiktok",
+          "discoveredFrom": "https://www.cheesecurdsburgers.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        }
+      ],
+      "relatedLinks": [
+        {
+          "kind": "menu",
+          "url": "https://www.cheesecurdsburgers.com/menu",
+          "label": "MENU",
+          "discoveredFrom": "https://www.cheesecurdsburgers.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "ordering",
+          "url": "https://www.cheesecurdsburgers.com/locations",
+          "label": "ORDER ONLINE",
           "discoveredFrom": "https://www.cheesecurdsburgers.com/",
           "associationBasis": "linked_from_official_website",
           "reviewState": "verified_link"
@@ -1377,8 +2303,50 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Chinatown",
       "website": "https://www.chinatownhalifax.com/",
       "resolvedUrl": "https://www.chinatownhalifax.com/",
-      "observedAt": "2026-08-28T17:36:21.639Z",
+      "observedAt": "2026-08-28T18:17:05.648Z",
       "socialProfiles": [],
+      "relatedLinks": [
+        {
+          "kind": "menu",
+          "url": "https://www.chinatownhalifax.com/menu/",
+          "label": "Menu",
+          "discoveredFrom": "https://www.chinatownhalifax.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "menu",
+          "url": "https://www.chinatownhalifax.com/chinese-menu/",
+          "label": "中文菜单 Chinese Menu",
+          "discoveredFrom": "https://www.chinatownhalifax.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "menu",
+          "url": "https://www.chinatownhalifax.com/dim-sum-menu/",
+          "label": "点心菜单 Dim Sum Menu",
+          "discoveredFrom": "https://www.chinatownhalifax.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "ordering",
+          "url": "https://order.tbdine.com/pickup/22146/menu",
+          "label": "Order Online",
+          "discoveredFrom": "https://www.chinatownhalifax.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "reservations",
+          "url": "https://www.chinatownhalifax.com/contact-us/",
+          "label": "Reserve Table",
+          "discoveredFrom": "https://www.chinatownhalifax.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        }
+      ],
       "feeds": [
         {
           "url": "https://www.chinatownhalifax.com/feed/",
@@ -1411,8 +2379,26 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Chkn Chop",
       "website": "https://www.chknchop.com/",
       "resolvedUrl": "https://www.chknchop.com/",
-      "observedAt": "2026-08-28T17:36:21.429Z",
+      "observedAt": "2026-08-28T18:17:05.700Z",
       "socialProfiles": [],
+      "relatedLinks": [
+        {
+          "kind": "menu",
+          "url": "https://www.chknchop.com/menu",
+          "label": "Menu",
+          "discoveredFrom": "https://www.chknchop.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "ordering",
+          "url": "https://ordering.chownow.com/order/6552/locations?add_cn_ordering_class=true",
+          "label": "ordering",
+          "discoveredFrom": "https://www.chknchop.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        }
+      ],
       "feeds": [
         {
           "url": "https://www.chknchop.com/home?format=rss",
@@ -1433,8 +2419,9 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Classic Pizza",
       "website": "https://classic-pizza.order-online.ai/",
       "resolvedUrl": "https://classic-pizza.order-online.ai/",
-      "observedAt": "2026-08-28T17:36:22.039Z",
+      "observedAt": "2026-08-28T18:17:05.784Z",
       "socialProfiles": [],
+      "relatedLinks": [],
       "feeds": [],
       "sitemaps": [],
       "sourceKind": "official_website_discovery",
@@ -1445,12 +2432,12 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Cora",
       "website": "https://www.chezcora.com/en/breakfast-lunch-restaurants/cora-halifax-downtown/",
       "resolvedUrl": "https://www.chezcora.com/en/breakfast-lunch-restaurants/cora-halifax-downtown/",
-      "observedAt": "2026-08-28T17:36:22.155Z",
+      "observedAt": "2026-08-28T18:17:06.241Z",
       "socialProfiles": [
         {
           "platform": "facebook",
           "handle": "corarestaurants",
-          "url": "https://www.facebook.com/corarestaurants",
+          "url": "https://www.facebook.com/corarestaurants/",
           "label": "facebook",
           "discoveredFrom": "https://www.chezcora.com/en/breakfast-lunch-restaurants/cora-halifax-downtown/",
           "associationBasis": "linked_from_official_website",
@@ -1459,8 +2446,138 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
         {
           "platform": "instagram",
           "handle": "corarestaurants",
-          "url": "https://www.instagram.com/corarestaurants/",
+          "url": "https://instagram.com/corarestaurants/",
           "label": "instagram",
+          "discoveredFrom": "https://www.chezcora.com/en/breakfast-lunch-restaurants/cora-halifax-downtown/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        }
+      ],
+      "relatedLinks": [
+        {
+          "kind": "reservations",
+          "url": "https://widgets.libroreserve.com/WEB/BC017492178973/book",
+          "label": "Reserve now",
+          "discoveredFrom": "https://www.chezcora.com/en/breakfast-lunch-restaurants/cora-halifax-downtown/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "reservations",
+          "url": "https://widgets.libroreserve.com/WEB/QC017492179007/book",
+          "label": "Reserve now",
+          "discoveredFrom": "https://www.chezcora.com/en/breakfast-lunch-restaurants/cora-halifax-downtown/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "reservations",
+          "url": "https://widgets.libroreserve.com/WEB/ON017492179077/book",
+          "label": "Reserve now",
+          "discoveredFrom": "https://www.chezcora.com/en/breakfast-lunch-restaurants/cora-halifax-downtown/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "reservations",
+          "url": "https://widgets.libroreserve.com/WEB/AK017492179637/book",
+          "label": "Reserve now",
+          "discoveredFrom": "https://www.chezcora.com/en/breakfast-lunch-restaurants/cora-halifax-downtown/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "reservations",
+          "url": "https://widgets.libroreserve.com/WEB/ON017492179715/book",
+          "label": "Reserve now",
+          "discoveredFrom": "https://www.chezcora.com/en/breakfast-lunch-restaurants/cora-halifax-downtown/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "reservations",
+          "url": "https://widgets.libroreserve.com/WEB/ON017492179750/book",
+          "label": "Reserve now",
+          "discoveredFrom": "https://www.chezcora.com/en/breakfast-lunch-restaurants/cora-halifax-downtown/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "reservations",
+          "url": "https://widgets.libroreserve.com/WEB/QC017492179811/book",
+          "label": "Reserve now",
+          "discoveredFrom": "https://www.chezcora.com/en/breakfast-lunch-restaurants/cora-halifax-downtown/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "reservations",
+          "url": "https://widgets.libroreserve.com/WEB/ON017492179948/book",
+          "label": "Reserve now",
+          "discoveredFrom": "https://www.chezcora.com/en/breakfast-lunch-restaurants/cora-halifax-downtown/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "reservations",
+          "url": "https://widgets.libroreserve.com/WEB/QC017492179964/book",
+          "label": "Reserve now",
+          "discoveredFrom": "https://www.chezcora.com/en/breakfast-lunch-restaurants/cora-halifax-downtown/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "reservations",
+          "url": "https://widgets.libroreserve.com/WEB/AB017492180032/book",
+          "label": "Reserve now",
+          "discoveredFrom": "https://www.chezcora.com/en/breakfast-lunch-restaurants/cora-halifax-downtown/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "menu",
+          "url": "https://www.chezcora.com/en/menu/",
+          "label": "Menu",
+          "discoveredFrom": "https://www.chezcora.com/en/breakfast-lunch-restaurants/cora-halifax-downtown/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "newsletter",
+          "url": "https://www.chezcora.com/en/newsletter/",
+          "label": "Newsletter",
+          "discoveredFrom": "https://www.chezcora.com/en/breakfast-lunch-restaurants/cora-halifax-downtown/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "menu",
+          "url": "https://www.chezcora.com/en/menu/kids-menu/",
+          "label": "Kids' menu",
+          "discoveredFrom": "https://www.chezcora.com/en/breakfast-lunch-restaurants/cora-halifax-downtown/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "menu",
+          "url": "https://www.chezcora.com/en/menu/early-bird-menu/",
+          "label": "Early Bird menu",
+          "discoveredFrom": "https://www.chezcora.com/en/breakfast-lunch-restaurants/cora-halifax-downtown/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "reservations",
+          "url": "https://widgets.libroreserve.com/WEB/AB017492181577/book",
+          "label": "Reserve now",
+          "discoveredFrom": "https://www.chezcora.com/en/breakfast-lunch-restaurants/cora-halifax-downtown/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "ordering",
+          "url": "https://order.chezcora.com/",
+          "label": "Order online",
           "discoveredFrom": "https://www.chezcora.com/en/breakfast-lunch-restaurants/cora-halifax-downtown/",
           "associationBasis": "linked_from_official_website",
           "reviewState": "verified_link"
@@ -1493,12 +2610,12 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Cora",
       "website": "https://www.chezcora.com/en/",
       "resolvedUrl": "https://www.chezcora.com/en/",
-      "observedAt": "2026-08-28T17:36:23.848Z",
+      "observedAt": "2026-08-28T18:17:07.767Z",
       "socialProfiles": [
         {
           "platform": "facebook",
           "handle": "corarestaurants",
-          "url": "https://www.facebook.com/corarestaurants",
+          "url": "https://www.facebook.com/corarestaurants/",
           "label": "facebook",
           "discoveredFrom": "https://www.chezcora.com/en/",
           "associationBasis": "linked_from_official_website",
@@ -1507,8 +2624,138 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
         {
           "platform": "instagram",
           "handle": "corarestaurants",
-          "url": "https://www.instagram.com/corarestaurants/",
+          "url": "https://instagram.com/corarestaurants/",
           "label": "instagram",
+          "discoveredFrom": "https://www.chezcora.com/en/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        }
+      ],
+      "relatedLinks": [
+        {
+          "kind": "reservations",
+          "url": "https://widgets.libroreserve.com/WEB/BC017492178973/book",
+          "label": "Reserve now",
+          "discoveredFrom": "https://www.chezcora.com/en/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "reservations",
+          "url": "https://widgets.libroreserve.com/WEB/QC017492179007/book",
+          "label": "Reserve now",
+          "discoveredFrom": "https://www.chezcora.com/en/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "reservations",
+          "url": "https://widgets.libroreserve.com/WEB/ON017492179077/book",
+          "label": "Reserve now",
+          "discoveredFrom": "https://www.chezcora.com/en/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "reservations",
+          "url": "https://widgets.libroreserve.com/WEB/AK017492179637/book",
+          "label": "Reserve now",
+          "discoveredFrom": "https://www.chezcora.com/en/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "reservations",
+          "url": "https://widgets.libroreserve.com/WEB/ON017492179715/book",
+          "label": "Reserve now",
+          "discoveredFrom": "https://www.chezcora.com/en/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "reservations",
+          "url": "https://widgets.libroreserve.com/WEB/ON017492179750/book",
+          "label": "Reserve now",
+          "discoveredFrom": "https://www.chezcora.com/en/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "reservations",
+          "url": "https://widgets.libroreserve.com/WEB/QC017492179811/book",
+          "label": "Reserve now",
+          "discoveredFrom": "https://www.chezcora.com/en/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "reservations",
+          "url": "https://widgets.libroreserve.com/WEB/ON017492179948/book",
+          "label": "Reserve now",
+          "discoveredFrom": "https://www.chezcora.com/en/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "reservations",
+          "url": "https://widgets.libroreserve.com/WEB/QC017492179964/book",
+          "label": "Reserve now",
+          "discoveredFrom": "https://www.chezcora.com/en/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "reservations",
+          "url": "https://widgets.libroreserve.com/WEB/AB017492180032/book",
+          "label": "Reserve now",
+          "discoveredFrom": "https://www.chezcora.com/en/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "menu",
+          "url": "https://www.chezcora.com/en/menu/",
+          "label": "Menu",
+          "discoveredFrom": "https://www.chezcora.com/en/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "newsletter",
+          "url": "https://www.chezcora.com/en/newsletter/",
+          "label": "Newsletter",
+          "discoveredFrom": "https://www.chezcora.com/en/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "menu",
+          "url": "https://www.chezcora.com/en/menu/kids-menu/",
+          "label": "Kids' menu",
+          "discoveredFrom": "https://www.chezcora.com/en/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "menu",
+          "url": "https://www.chezcora.com/en/menu/early-bird-menu/",
+          "label": "Early Bird menu",
+          "discoveredFrom": "https://www.chezcora.com/en/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "menu",
+          "url": "https://www.chezcora.com/en/type-de-menu/breakfast-menu/",
+          "label": "Breakfast menu",
+          "discoveredFrom": "https://www.chezcora.com/en/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "ordering",
+          "url": "https://order.chezcora.com/",
+          "label": "Order online",
           "discoveredFrom": "https://www.chezcora.com/en/",
           "associationBasis": "linked_from_official_website",
           "reviewState": "verified_link"
@@ -1541,13 +2788,64 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Crème",
       "website": "https://cremehalifax.com/",
       "resolvedUrl": "https://cremehalifax.com/",
-      "observedAt": "2026-08-28T17:36:22.694Z",
+      "observedAt": "2026-08-28T18:17:06.589Z",
       "socialProfiles": [
+        {
+          "platform": "tiktok",
+          "handle": "cremehalifax",
+          "url": "https://www.tiktok.com/@cremehalifax",
+          "label": "tiktok",
+          "discoveredFrom": "https://cremehalifax.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
         {
           "platform": "instagram",
           "handle": "cremehalifax",
-          "url": "https://www.instagram.com/cremehalifax/",
+          "url": "https://www.instagram.com/cremehalifax",
           "label": "instagram",
+          "discoveredFrom": "https://cremehalifax.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        }
+      ],
+      "relatedLinks": [
+        {
+          "kind": "menu",
+          "url": "https://cremehalifax.com/menu",
+          "label": "Menu",
+          "discoveredFrom": "https://cremehalifax.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "reservations",
+          "url": "https://www.opentable.ca/restref/client/?restref=1395742&amp;lang=en-CA&amp;ot_source=Restaurant%2520website&amp;corrid=6e2aee20-0e50-4b76-bdae-b08db2b808ef&amp;fbclid=PAZXh0bgNhZW0CMTEAAaYBK_oqaYbKfdPmSbV0UaGFZP5UvEcIu0j0tjkNMstqkaHGXTy0LEG5xQ4_aem_GyAEP8nt_duDFB5MCY9sBw",
+          "label": "Make a Reservation",
+          "discoveredFrom": "https://cremehalifax.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "ordering",
+          "url": "https://cremehalifax.com/store",
+          "label": "Order Online",
+          "discoveredFrom": "https://cremehalifax.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "ordering",
+          "url": "https://cremehalifax.com/_Products",
+          "label": "Order Online",
+          "discoveredFrom": "https://cremehalifax.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "ordering",
+          "url": "https://cremehalifax.com/order-online",
+          "label": "Order Online",
           "discoveredFrom": "https://cremehalifax.com/",
           "associationBasis": "linked_from_official_website",
           "reviewState": "verified_link"
@@ -1563,7 +2861,7 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Cut Contemporary Steak House & Urban Grill",
       "website": "https://www.cutsteakhouse.ca/",
       "resolvedUrl": "https://www.rcr.ca/restaurants/cut-steakhouse/",
-      "observedAt": "2026-08-28T17:36:22.772Z",
+      "observedAt": "2026-08-28T18:17:06.444Z",
       "socialProfiles": [
         {
           "platform": "instagram",
@@ -1579,6 +2877,25 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "handle": "CUTSteakhouse",
           "url": "https://www.facebook.com/CUTSteakhouse",
           "label": "facebook",
+          "discoveredFrom": "https://www.rcr.ca/restaurants/cut-steakhouse/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "platform": "x",
+          "handle": "CutSteakhouse",
+          "url": "https://twitter.com/CutSteakhouse",
+          "label": "x",
+          "discoveredFrom": "https://www.rcr.ca/restaurants/cut-steakhouse/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        }
+      ],
+      "relatedLinks": [
+        {
+          "kind": "menu",
+          "url": "https://www.rcr.ca/content/uploads/2018/02/CUT-Steakhouse-Menu-SUMMER-2026.pdf",
+          "label": "Dinner Menu",
           "discoveredFrom": "https://www.rcr.ca/restaurants/cut-steakhouse/",
           "associationBasis": "linked_from_official_website",
           "reviewState": "verified_link"
@@ -1605,13 +2922,22 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Darrell's",
       "website": "https://darrellsrestaurants.com/",
       "resolvedUrl": "https://darrellsrestaurants.com/",
-      "observedAt": "2026-08-28T17:36:23.258Z",
+      "observedAt": "2026-08-28T18:17:07.046Z",
       "socialProfiles": [
         {
           "platform": "facebook",
           "handle": "darrellsresto",
-          "url": "https://www.facebook.com/darrellsresto",
+          "url": "http://facebook.com/darrellsresto",
           "label": "Facebook",
+          "discoveredFrom": "https://darrellsrestaurants.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "platform": "x",
+          "handle": "darrellsresto",
+          "url": "http://twitter.com/darrellsresto",
+          "label": "Twitter",
           "discoveredFrom": "https://darrellsrestaurants.com/",
           "associationBasis": "linked_from_official_website",
           "reviewState": "verified_link"
@@ -1619,8 +2945,26 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
         {
           "platform": "instagram",
           "handle": "darrellsrestaurant",
-          "url": "https://www.instagram.com/darrellsrestaurant/",
+          "url": "http://instagram.com/darrellsrestaurant",
           "label": "Instagram",
+          "discoveredFrom": "https://darrellsrestaurants.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        }
+      ],
+      "relatedLinks": [
+        {
+          "kind": "menu",
+          "url": "https://darrellsrestaurants.order-online.app/",
+          "label": "MENU/ORDER NOW",
+          "discoveredFrom": "https://darrellsrestaurants.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "menu",
+          "url": "https://darrellsrestaurants.com/catering-menu/",
+          "label": "Catering Menu",
           "discoveredFrom": "https://darrellsrestaurants.com/",
           "associationBasis": "linked_from_official_website",
           "reviewState": "verified_link"
@@ -1658,7 +3002,7 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Donnini's Pizza",
       "website": "https://donninispizza.com/",
       "resolvedUrl": "https://donninispizza.com/",
-      "observedAt": "2026-08-28T17:36:25.920Z",
+      "observedAt": "2026-08-28T18:17:09.646Z",
       "socialProfiles": [
         {
           "platform": "facebook",
@@ -1674,6 +3018,24 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "handle": "donninispizzahfx",
           "url": "https://www.instagram.com/donninispizzahfx/",
           "label": "instagram",
+          "discoveredFrom": "https://donninispizza.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        }
+      ],
+      "relatedLinks": [
+        {
+          "kind": "menu",
+          "url": "https://donninispizza.com/#",
+          "label": "Donnini&#8217;s Menu",
+          "discoveredFrom": "https://donninispizza.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "ordering",
+          "url": "https://donninispizza.brygid.online/",
+          "label": "Order Online",
           "discoveredFrom": "https://donninispizza.com/",
           "associationBasis": "linked_from_official_website",
           "reviewState": "verified_link"
@@ -1713,12 +3075,12 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Dooly's",
       "website": "https://www.doolys.ca/",
       "resolvedUrl": "https://www.doolys.ca/",
-      "observedAt": "2026-08-28T17:36:23.567Z",
+      "observedAt": "2026-08-28T18:17:07.298Z",
       "socialProfiles": [
         {
           "platform": "facebook",
           "handle": "doolys.billiards",
-          "url": "https://www.facebook.com/doolys.billiards",
+          "url": "https://www.facebook.com/doolys.billiards/",
           "label": "facebook",
           "discoveredFrom": "https://www.doolys.ca/",
           "associationBasis": "linked_from_official_website",
@@ -1727,13 +3089,14 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
         {
           "platform": "instagram",
           "handle": "doolys.billiards",
-          "url": "https://www.instagram.com/doolys.billiards/",
+          "url": "https://www.instagram.com/doolys.billiards",
           "label": "instagram",
           "discoveredFrom": "https://www.doolys.ca/",
           "associationBasis": "linked_from_official_website",
           "reviewState": "verified_link"
         }
       ],
+      "relatedLinks": [],
       "feeds": [
         {
           "url": "https://www.doolys.ca/home?format=rss",
@@ -1754,8 +3117,18 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Downtown Pizza",
       "website": "https://downtownpizza.ca/",
       "resolvedUrl": "https://downtownpizza.ca/",
-      "observedAt": "2026-08-28T17:36:23.879Z",
+      "observedAt": "2026-08-28T18:17:07.225Z",
       "socialProfiles": [],
+      "relatedLinks": [
+        {
+          "kind": "menu",
+          "url": "https://downtownpizza.ca/menu-2/",
+          "label": "Menu",
+          "discoveredFrom": "https://downtownpizza.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        }
+      ],
       "feeds": [
         {
           "url": "https://downtownpizza.ca/feed/",
@@ -1790,8 +3163,26 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Durty Nelly's Irish Pub",
       "website": "https://durtynellys.ca/",
       "resolvedUrl": "https://durtynellys.ca/",
-      "observedAt": "2026-08-28T17:36:23.942Z",
+      "observedAt": "2026-08-28T18:17:07.488Z",
       "socialProfiles": [],
+      "relatedLinks": [
+        {
+          "kind": "menu",
+          "url": "https://durtynellys.ca/menu/",
+          "label": "Menu",
+          "discoveredFrom": "https://durtynellys.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "reservations",
+          "url": "https://booking.libroreserve.com/2599fe0cf2b7247/NS016934225348/seat",
+          "label": "RESERVATIONS",
+          "discoveredFrom": "https://durtynellys.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        }
+      ],
       "feeds": [
         {
           "url": "https://durtynellys.ca/feed/",
@@ -1826,7 +3217,7 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "East Cup Cafe",
       "website": "https://eastcupcafe.com/",
       "resolvedUrl": "https://eastcupcafe.com/",
-      "observedAt": "2026-08-28T17:36:24.207Z",
+      "observedAt": "2026-08-28T18:17:07.695Z",
       "socialProfiles": [
         {
           "platform": "instagram",
@@ -1838,6 +3229,7 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "reviewState": "verified_link"
         }
       ],
+      "relatedLinks": [],
       "feeds": [],
       "sitemaps": [
         "https://eastcupcafe.com/sitemap.xml"
@@ -1850,7 +3242,7 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Ela Greek Taverna",
       "website": "https://elagreektaverna.com/",
       "resolvedUrl": "https://elagreektaverna.com/",
-      "observedAt": "2026-08-28T17:36:24.367Z",
+      "observedAt": "2026-08-28T18:17:08.070Z",
       "socialProfiles": [
         {
           "platform": "facebook",
@@ -1862,10 +3254,69 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "reviewState": "verified_link"
         },
         {
+          "platform": "x",
+          "handle": "elaGreekTaverna",
+          "url": "https://twitter.com/elaGreekTaverna",
+          "label": "Twitter",
+          "discoveredFrom": "https://elagreektaverna.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
           "platform": "instagram",
           "handle": "elagreektavernahfx",
           "url": "https://www.instagram.com/elagreektavernahfx/",
           "label": "Instagram",
+          "discoveredFrom": "https://elagreektaverna.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        }
+      ],
+      "relatedLinks": [
+        {
+          "kind": "menu",
+          "url": "https://elagreektaverna.com/menu/",
+          "label": "Menu",
+          "discoveredFrom": "https://elagreektaverna.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "reservations",
+          "url": "https://elagreektaverna.com/reservations/",
+          "label": "Reservations",
+          "discoveredFrom": "https://elagreektaverna.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "menu",
+          "url": "https://elagreektaverna.com/dinner/",
+          "label": "View Our Menus",
+          "discoveredFrom": "https://elagreektaverna.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "ordering",
+          "url": "https://elagreektogo.ca/locations/",
+          "label": "Order Online",
+          "discoveredFrom": "https://elagreektaverna.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "events",
+          "url": "https://elagreektaverna.com/contact/",
+          "label": "Contact our events team",
+          "discoveredFrom": "https://elagreektaverna.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "ordering",
+          "url": "https://elagreektogo.ca/",
+          "label": "Order Online",
           "discoveredFrom": "https://elagreektaverna.com/",
           "associationBasis": "linked_from_official_website",
           "reviewState": "verified_link"
@@ -1905,7 +3356,7 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "ela! Greek Taverna",
       "website": "https://www.elagreektaverna.com/",
       "resolvedUrl": "https://elagreektaverna.com/",
-      "observedAt": "2026-08-28T17:36:25.995Z",
+      "observedAt": "2026-08-28T18:17:09.289Z",
       "socialProfiles": [
         {
           "platform": "facebook",
@@ -1917,10 +3368,69 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "reviewState": "verified_link"
         },
         {
+          "platform": "x",
+          "handle": "elaGreekTaverna",
+          "url": "https://twitter.com/elaGreekTaverna",
+          "label": "Twitter",
+          "discoveredFrom": "https://elagreektaverna.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
           "platform": "instagram",
           "handle": "elagreektavernahfx",
           "url": "https://www.instagram.com/elagreektavernahfx/",
           "label": "Instagram",
+          "discoveredFrom": "https://elagreektaverna.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        }
+      ],
+      "relatedLinks": [
+        {
+          "kind": "menu",
+          "url": "https://elagreektaverna.com/menu/",
+          "label": "Menu",
+          "discoveredFrom": "https://elagreektaverna.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "reservations",
+          "url": "https://elagreektaverna.com/reservations/",
+          "label": "Reservations",
+          "discoveredFrom": "https://elagreektaverna.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "menu",
+          "url": "https://elagreektaverna.com/dinner/",
+          "label": "View Our Menus",
+          "discoveredFrom": "https://elagreektaverna.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "ordering",
+          "url": "https://elagreektogo.ca/locations/",
+          "label": "Order Online",
+          "discoveredFrom": "https://elagreektaverna.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "events",
+          "url": "https://elagreektaverna.com/contact/",
+          "label": "Contact our events team",
+          "discoveredFrom": "https://elagreektaverna.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "ordering",
+          "url": "https://elagreektogo.ca/",
+          "label": "Order Online",
           "discoveredFrom": "https://elagreektaverna.com/",
           "associationBasis": "linked_from_official_website",
           "reviewState": "verified_link"
@@ -1960,12 +3470,12 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Fan's Chinese Restaurant",
       "website": "https://www.fansrestaurant.ca/",
       "resolvedUrl": "https://www.fansrestaurant.ca/",
-      "observedAt": "2026-08-28T17:36:24.359Z",
+      "observedAt": "2026-08-28T18:17:07.955Z",
       "socialProfiles": [
         {
           "platform": "facebook",
           "handle": "fanschineserestaurant",
-          "url": "https://www.facebook.com/fanschineserestaurant",
+          "url": "https://www.facebook.com/fanschineserestaurant/",
           "label": "facebook",
           "discoveredFrom": "https://www.fansrestaurant.ca/",
           "associationBasis": "linked_from_official_website",
@@ -1976,6 +3486,40 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "handle": "fanschineserestaurant",
           "url": "https://www.instagram.com/fanschineserestaurant/",
           "label": "instagram",
+          "discoveredFrom": "https://www.fansrestaurant.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        }
+      ],
+      "relatedLinks": [
+        {
+          "kind": "menu",
+          "url": "https://www.fansrestaurant.ca/dim-sum-menu",
+          "label": "Dim Sum Menu",
+          "discoveredFrom": "https://www.fansrestaurant.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "menu",
+          "url": "https://www.fansrestaurant.ca/menu",
+          "label": "Fusion Menu",
+          "discoveredFrom": "https://www.fansrestaurant.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "reservations",
+          "url": "https://www.fansrestaurant.ca/reservations",
+          "label": "Book a Table",
+          "discoveredFrom": "https://www.fansrestaurant.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "ordering",
+          "url": "https://www.fansrestaurant.ca/online-ordering",
+          "label": "Order Online",
           "discoveredFrom": "https://www.fansrestaurant.ca/",
           "associationBasis": "linked_from_official_website",
           "reviewState": "verified_link"
@@ -2001,13 +3545,31 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Fillings Bistro 32",
       "website": "https://dal.campusdish.com/LocationsAndMenus/FillingsBistroatDentistry",
       "resolvedUrl": "https://dal.mydininghub.ca/en/locations",
-      "observedAt": "2026-08-28T17:36:20.638Z",
+      "observedAt": "2026-08-28T18:17:04.879Z",
       "socialProfiles": [
         {
           "platform": "instagram",
           "handle": "Dalfood",
           "url": "https://www.instagram.com/Dalfood/",
           "label": "instagram",
+          "discoveredFrom": "https://dal.mydininghub.ca/en/locations",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        }
+      ],
+      "relatedLinks": [
+        {
+          "kind": "menu",
+          "url": "https://dal.mydininghub.ca/en/account?section=my-menu",
+          "label": "My Menu",
+          "discoveredFrom": "https://dal.mydininghub.ca/en/locations",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "menu",
+          "url": "https://dal.mydininghub.ca/en/locations",
+          "label": "Locations & Menus",
           "discoveredFrom": "https://dal.mydininghub.ca/en/locations",
           "associationBasis": "linked_from_official_website",
           "reviewState": "verified_link"
@@ -2025,8 +3587,9 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Food Court of Spring Garden Place",
       "website": "https://www.starbucks.ca/store-locator/store/4085-255631/5640-spring-garden-road-5640-spring-garden-road-301-halifax-ns-b-3-j-3-m-7",
       "resolvedUrl": "https://www.starbucks.ca/store-locator/store/4085-255631/5640-spring-garden-road-5640-spring-garden-road-301-halifax-ns-b-3-j-3-m-7",
-      "observedAt": "2026-08-28T17:36:24.523Z",
+      "observedAt": "2026-08-28T18:17:08.105Z",
       "socialProfiles": [],
+      "relatedLinks": [],
       "feeds": [],
       "sitemaps": [
         "https://www.starbucks.ca/sitemap.xml"
@@ -2039,8 +3602,34 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Freeman's Little New York",
       "website": "https://www.freemanspizza.ca/",
       "resolvedUrl": "https://www.freemanspizza.ca/",
-      "observedAt": "2026-08-28T17:36:24.669Z",
+      "observedAt": "2026-08-28T18:17:08.197Z",
       "socialProfiles": [],
+      "relatedLinks": [
+        {
+          "kind": "menu",
+          "url": "https://www.freemanspizza.ca/our-menus",
+          "label": "Our Menus",
+          "discoveredFrom": "https://www.freemanspizza.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "ordering",
+          "url": "https://www.freemanspizza.ca/order-online",
+          "label": "Order Online",
+          "discoveredFrom": "https://www.freemanspizza.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "events",
+          "url": "https://www.freemanspizza.ca/event-list",
+          "label": "Events",
+          "discoveredFrom": "https://www.freemanspizza.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        }
+      ],
       "feeds": [],
       "sitemaps": [
         "https://www.freemanspizza.ca/sitemap.xml"
@@ -2053,8 +3642,9 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Fujiyama",
       "website": "http://www.sushifujiyama.com/",
       "resolvedUrl": "http://www.sushifujiyama.com/",
-      "observedAt": "2026-08-28T17:36:24.631Z",
+      "observedAt": "2026-08-28T18:17:08.261Z",
       "socialProfiles": [],
+      "relatedLinks": [],
       "feeds": [],
       "sitemaps": [],
       "sourceKind": "official_website_discovery",
@@ -2065,12 +3655,12 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Gahan House",
       "website": "https://gahan.ca/",
       "resolvedUrl": "https://gahan.ca/",
-      "observedAt": "2026-08-28T17:36:24.984Z",
+      "observedAt": "2026-08-28T18:17:08.467Z",
       "socialProfiles": [
         {
           "platform": "facebook",
           "handle": "GahanBeer",
-          "url": "https://www.facebook.com/GahanBeer",
+          "url": "https://www.facebook.com/GahanBeer/",
           "label": "facebook",
           "discoveredFrom": "https://gahan.ca/",
           "associationBasis": "linked_from_official_website",
@@ -2086,6 +3676,7 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "reviewState": "verified_link"
         }
       ],
+      "relatedLinks": [],
       "feeds": [
         {
           "url": "https://gahan.ca/feed/",
@@ -2113,13 +3704,64 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Genji Sushi",
       "website": "http://www.genjisushi.ca/",
       "resolvedUrl": "http://www.genjisushi.ca/",
-      "observedAt": "2026-08-28T17:36:25.192Z",
+      "observedAt": "2026-08-28T18:17:08.560Z",
       "socialProfiles": [
+        {
+          "platform": "x",
+          "handle": "genjisushi",
+          "url": "https://twitter.com/genjisushi",
+          "label": "x",
+          "discoveredFrom": "http://www.genjisushi.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
         {
           "platform": "facebook",
           "handle": "genjisushi2012",
           "url": "https://www.facebook.com/genjisushi2012",
           "label": "facebook",
+          "discoveredFrom": "http://www.genjisushi.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        }
+      ],
+      "relatedLinks": [
+        {
+          "kind": "menu",
+          "url": "http://www.genjisushi.ca/?page_id=534",
+          "label": "AYCE Menu",
+          "discoveredFrom": "http://www.genjisushi.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "ordering",
+          "url": "http://www.genjisushi.ca/?page_id=535",
+          "label": "Take Out Menu",
+          "discoveredFrom": "http://www.genjisushi.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "menu",
+          "url": "http://www.genjisushi.ca/?page_id=533",
+          "label": "Sake and Wine Menu",
+          "discoveredFrom": "http://www.genjisushi.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "reservations",
+          "url": "http://www.genjisushi.ca/?page_id=49",
+          "label": "Reservations",
+          "discoveredFrom": "http://www.genjisushi.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "menu",
+          "url": "http://www.genjisushi.ca/#",
+          "label": "Menu",
           "discoveredFrom": "http://www.genjisushi.ca/",
           "associationBasis": "linked_from_official_website",
           "reviewState": "verified_link"
@@ -2152,8 +3794,9 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Gingerbread Haus Bakery",
       "website": "https://www.gingerbreadhausbakery.com/",
       "resolvedUrl": "https://www.gingerbreadhausbakery.com/",
-      "observedAt": "2026-08-28T17:36:25.047Z",
+      "observedAt": "2026-08-28T18:17:08.562Z",
       "socialProfiles": [],
+      "relatedLinks": [],
       "feeds": [
         {
           "url": "https://www.gingerbreadhausbakery.com/feed/",
@@ -2193,8 +3836,9 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Glitter Bean Cafe",
       "website": "https://www.glitterbeancafe.com/",
       "resolvedUrl": "https://justitalymentone.com/",
-      "observedAt": "2026-08-28T17:36:25.213Z",
+      "observedAt": "2026-08-28T18:17:08.625Z",
       "socialProfiles": [],
+      "relatedLinks": [],
       "feeds": [],
       "sitemaps": [
         "https://justitalymentone.com/sitemap.xml"
@@ -2207,7 +3851,7 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Good Robot Brewing Company",
       "website": "https://goodrobotbrewing.ca/",
       "resolvedUrl": "https://goodrobotbrewing.ca/",
-      "observedAt": "2026-08-28T17:36:26.471Z",
+      "observedAt": "2026-08-28T18:17:08.953Z",
       "socialProfiles": [
         {
           "platform": "instagram",
@@ -2221,8 +3865,35 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
         {
           "platform": "facebook",
           "handle": "goodrobotbrew",
-          "url": "https://www.facebook.com/goodrobotbrew",
+          "url": "https://www.facebook.com/goodrobotbrew/",
           "label": "Facebook",
+          "discoveredFrom": "https://goodrobotbrewing.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "platform": "tiktok",
+          "handle": "goodrobotbrew",
+          "url": "https://www.tiktok.com/@goodrobotbrew?lang=en",
+          "label": "Tiktok",
+          "discoveredFrom": "https://goodrobotbrewing.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        }
+      ],
+      "relatedLinks": [
+        {
+          "kind": "events",
+          "url": "https://goodrobotbrewing.ca/events/",
+          "label": "Events",
+          "discoveredFrom": "https://goodrobotbrewing.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "ordering",
+          "url": "https://shop.goodrobotbrewing.ca/shipping-delivery-policy/",
+          "label": "Shipping & Delivery Policy",
           "discoveredFrom": "https://goodrobotbrewing.ca/",
           "associationBasis": "linked_from_official_website",
           "reviewState": "verified_link"
@@ -2262,8 +3933,26 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Great Wall Restaurant",
       "website": "http://www.thegreatwall.ca/",
       "resolvedUrl": "http://www.thegreatwall.ca/",
-      "observedAt": "2026-08-28T17:36:25.453Z",
+      "observedAt": "2026-08-28T18:17:08.891Z",
       "socialProfiles": [],
+      "relatedLinks": [
+        {
+          "kind": "menu",
+          "url": "http://www.thegreatwall.ca/menu.html",
+          "label": "Menu",
+          "discoveredFrom": "http://www.thegreatwall.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "ordering",
+          "url": "https://www.ritual.co/order/the-great-wall-restaurant-bedford-row-sackville-halifax/9897",
+          "label": "Order Now",
+          "discoveredFrom": "http://www.thegreatwall.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        }
+      ],
       "feeds": [],
       "sitemaps": [
         "http://www.thegreatwall.ca/sitemap.xml"
@@ -2276,13 +3965,31 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Green Café",
       "website": "https://dal.campusdish.com/LocationsAndMenus/GreenCafeatRoweManagementBuilding",
       "resolvedUrl": "https://dal.mydininghub.ca/en/locations",
-      "observedAt": "2026-08-28T17:36:20.891Z",
+      "observedAt": "2026-08-28T18:17:05.113Z",
       "socialProfiles": [
         {
           "platform": "instagram",
           "handle": "Dalfood",
           "url": "https://www.instagram.com/Dalfood/",
           "label": "instagram",
+          "discoveredFrom": "https://dal.mydininghub.ca/en/locations",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        }
+      ],
+      "relatedLinks": [
+        {
+          "kind": "menu",
+          "url": "https://dal.mydininghub.ca/en/account?section=my-menu",
+          "label": "My Menu",
+          "discoveredFrom": "https://dal.mydininghub.ca/en/locations",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "menu",
+          "url": "https://dal.mydininghub.ca/en/locations",
+          "label": "Locations & Menus",
           "discoveredFrom": "https://dal.mydininghub.ca/en/locations",
           "associationBasis": "linked_from_official_website",
           "reviewState": "verified_link"
@@ -2300,13 +4007,31 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Grille Works",
       "website": "https://dal.campusdish.com/LocationsAndMenus/LifeSciencesCentre/GrilleWorks",
       "resolvedUrl": "https://dal.mydininghub.ca/en/locations",
-      "observedAt": "2026-08-28T17:36:21.149Z",
+      "observedAt": "2026-08-28T18:17:05.359Z",
       "socialProfiles": [
         {
           "platform": "instagram",
           "handle": "Dalfood",
           "url": "https://www.instagram.com/Dalfood/",
           "label": "instagram",
+          "discoveredFrom": "https://dal.mydininghub.ca/en/locations",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        }
+      ],
+      "relatedLinks": [
+        {
+          "kind": "menu",
+          "url": "https://dal.mydininghub.ca/en/account?section=my-menu",
+          "label": "My Menu",
+          "discoveredFrom": "https://dal.mydininghub.ca/en/locations",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "menu",
+          "url": "https://dal.mydininghub.ca/en/locations",
+          "label": "Locations & Menus",
           "discoveredFrom": "https://dal.mydininghub.ca/en/locations",
           "associationBasis": "linked_from_official_website",
           "reviewState": "verified_link"
@@ -2324,13 +4049,31 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Ground Zero",
       "website": "https://dal.campusdish.com/LocationsAndMenus/GroundZero",
       "resolvedUrl": "https://dal.mydininghub.ca/en/locations",
-      "observedAt": "2026-08-28T17:36:21.402Z",
+      "observedAt": "2026-08-28T18:17:05.603Z",
       "socialProfiles": [
         {
           "platform": "instagram",
           "handle": "Dalfood",
           "url": "https://www.instagram.com/Dalfood/",
           "label": "instagram",
+          "discoveredFrom": "https://dal.mydininghub.ca/en/locations",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        }
+      ],
+      "relatedLinks": [
+        {
+          "kind": "menu",
+          "url": "https://dal.mydininghub.ca/en/account?section=my-menu",
+          "label": "My Menu",
+          "discoveredFrom": "https://dal.mydininghub.ca/en/locations",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "menu",
+          "url": "https://dal.mydininghub.ca/en/locations",
+          "label": "Locations & Menus",
           "discoveredFrom": "https://dal.mydininghub.ca/en/locations",
           "associationBasis": "linked_from_official_website",
           "reviewState": "verified_link"
@@ -2348,13 +4091,31 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Hamachi Kita",
       "website": "https://www.hamachikita.com/",
       "resolvedUrl": "https://www.hamachikita.com/",
-      "observedAt": "2026-08-28T17:36:26.201Z",
+      "observedAt": "2026-08-28T18:17:09.497Z",
       "socialProfiles": [
         {
           "platform": "facebook",
           "handle": "HmachiKita",
-          "url": "https://www.facebook.com/HmachiKita",
+          "url": "https://www.facebook.com/HmachiKita/",
           "label": "facebook",
+          "discoveredFrom": "https://www.hamachikita.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        }
+      ],
+      "relatedLinks": [
+        {
+          "kind": "menu",
+          "url": "https://www.hamachikita.com/menu-feed",
+          "label": "Menu",
+          "discoveredFrom": "https://www.hamachikita.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "ordering",
+          "url": "https://order.online/business/~277519",
+          "label": "Order Online",
           "discoveredFrom": "https://www.hamachikita.com/",
           "associationBasis": "linked_from_official_website",
           "reviewState": "verified_link"
@@ -2380,13 +4141,22 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "HARVEST",
       "website": "https://www.orderharvest.ca/",
       "resolvedUrl": "https://www.harvestcleaneats.ca/",
-      "observedAt": "2026-08-28T17:36:26.619Z",
+      "observedAt": "2026-08-28T18:17:09.441Z",
       "socialProfiles": [
         {
           "platform": "instagram",
           "handle": "harvestcleaneats",
-          "url": "https://www.instagram.com/harvestcleaneats/",
+          "url": "http://instagram.com/harvestcleaneats",
           "label": "instagram",
+          "discoveredFrom": "https://www.harvestcleaneats.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "platform": "linkedin",
+          "handle": "company/harvesteatery",
+          "url": "http://linkedin.com/company/harvesteatery/",
+          "label": "linkedin",
           "discoveredFrom": "https://www.harvestcleaneats.ca/",
           "associationBasis": "linked_from_official_website",
           "reviewState": "verified_link"
@@ -2394,8 +4164,26 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
         {
           "platform": "facebook",
           "handle": "harvestcleaneats",
-          "url": "https://www.facebook.com/harvestcleaneats",
+          "url": "http://facebook.com/harvestcleaneats",
           "label": "facebook",
+          "discoveredFrom": "https://www.harvestcleaneats.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        }
+      ],
+      "relatedLinks": [
+        {
+          "kind": "menu",
+          "url": "https://www.harvestcleaneats.ca/menu",
+          "label": "Menu",
+          "discoveredFrom": "https://www.harvestcleaneats.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "ordering",
+          "url": "https://smooth.menu/harvest-clean-eats/menu/",
+          "label": "ORDER ONLINE",
           "discoveredFrom": "https://www.harvestcleaneats.ca/",
           "associationBasis": "linked_from_official_website",
           "reviewState": "verified_link"
@@ -2413,8 +4201,9 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Henry House",
       "website": "http://henryhouse.ca/",
       "resolvedUrl": "http://henryhouse.ca/",
-      "observedAt": "2026-08-28T17:36:26.948Z",
+      "observedAt": "2026-08-28T18:17:09.946Z",
       "socialProfiles": [],
+      "relatedLinks": [],
       "feeds": [],
       "sitemaps": [],
       "sourceKind": "official_website_discovery",
@@ -2425,8 +4214,18 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Heppy's Pie Lady",
       "website": "http://www.heppys.com/",
       "resolvedUrl": "http://www.heppys.com/",
-      "observedAt": "2026-08-28T17:36:27.222Z",
+      "observedAt": "2026-08-28T18:17:10.075Z",
       "socialProfiles": [],
+      "relatedLinks": [
+        {
+          "kind": "ordering",
+          "url": "https://heppys-pie-lady.square.site/",
+          "label": "Order Now",
+          "discoveredFrom": "http://www.heppys.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        }
+      ],
       "feeds": [],
       "sitemaps": [],
       "sourceKind": "official_website_discovery",
@@ -2437,13 +4236,22 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "HMCS King’s Wardroom",
       "website": "https://ukings.ca/hmcs-kings-wardroom/",
       "resolvedUrl": "https://ukings.ca/campus-community/student-life/the-wardroom/",
-      "observedAt": "2026-08-28T17:36:26.867Z",
+      "observedAt": "2026-08-28T18:17:10.643Z",
       "socialProfiles": [
         {
           "platform": "facebook",
           "handle": "KingsWardroom",
-          "url": "https://www.facebook.com/KingsWardroom",
+          "url": "https://www.facebook.com/KingsWardroom/",
           "label": "@KingsWardroom",
+          "discoveredFrom": "https://ukings.ca/campus-community/student-life/the-wardroom/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "platform": "x",
+          "handle": "KingsWardy",
+          "url": "https://twitter.com/KingsWardy",
+          "label": "@KingsWardy",
           "discoveredFrom": "https://ukings.ca/campus-community/student-life/the-wardroom/",
           "associationBasis": "linked_from_official_website",
           "reviewState": "verified_link"
@@ -2460,7 +4268,7 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
         {
           "platform": "facebook",
           "handle": "universityofkingscollege",
-          "url": "https://www.facebook.com/universityofkingscollege",
+          "url": "https://www.facebook.com/universityofkingscollege/",
           "label": "facebook",
           "discoveredFrom": "https://ukings.ca/campus-community/student-life/the-wardroom/",
           "associationBasis": "linked_from_official_website",
@@ -2469,8 +4277,77 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
         {
           "platform": "instagram",
           "handle": "ukchalifax",
-          "url": "https://www.instagram.com/ukchalifax/",
+          "url": "https://www.instagram.com/ukchalifax",
           "label": "instagram",
+          "discoveredFrom": "https://ukings.ca/campus-community/student-life/the-wardroom/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "platform": "x",
+          "handle": "ukings",
+          "url": "https://twitter.com/ukings",
+          "label": "x",
+          "discoveredFrom": "https://ukings.ca/campus-community/student-life/the-wardroom/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "platform": "youtube",
+          "handle": "kingscollegehfx",
+          "url": "https://www.youtube.com/user/kingscollegehfx",
+          "label": "youtube",
+          "discoveredFrom": "https://ukings.ca/campus-community/student-life/the-wardroom/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "platform": "tiktok",
+          "handle": "ukchalifax",
+          "url": "https://www.tiktok.com/@ukchalifax",
+          "label": "tiktok",
+          "discoveredFrom": "https://ukings.ca/campus-community/student-life/the-wardroom/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        }
+      ],
+      "relatedLinks": [
+        {
+          "kind": "events",
+          "url": "https://ukings.ca/conference-event-services/",
+          "label": "Conference &#038; Event Services",
+          "discoveredFrom": "https://ukings.ca/campus-community/student-life/the-wardroom/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "events",
+          "url": "https://ukings.ca/admissions/campus-tours-recruitment/",
+          "label": "Campus Tours &#038; Recruitment Events",
+          "discoveredFrom": "https://ukings.ca/campus-community/student-life/the-wardroom/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "events",
+          "url": "https://ukings.ca/events/",
+          "label": "Events at King&#8217;s",
+          "discoveredFrom": "https://ukings.ca/campus-community/student-life/the-wardroom/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "events",
+          "url": "https://ukings.ca/campus-community/student-services/campus-safety/sexualized-violence/",
+          "label": "Sexualized Violence Prevention and Response",
+          "discoveredFrom": "https://ukings.ca/campus-community/student-life/the-wardroom/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "events",
+          "url": "https://academiccalendar.ukings.ca/",
+          "label": "Academic Calendar",
           "discoveredFrom": "https://ukings.ca/campus-community/student-life/the-wardroom/",
           "associationBasis": "linked_from_official_website",
           "reviewState": "verified_link"
@@ -2494,8 +4371,18 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Hop Sing Restaurant",
       "website": "https://hopsingrestaurant.ca/",
       "resolvedUrl": "https://hopsingrestaurant.ca/",
-      "observedAt": "2026-08-28T17:36:27.187Z",
+      "observedAt": "2026-08-28T18:17:10.594Z",
       "socialProfiles": [],
+      "relatedLinks": [
+        {
+          "kind": "menu",
+          "url": "https://hopsingrestaurant.ca/menu.html",
+          "label": "Main Menu",
+          "discoveredFrom": "https://hopsingrestaurant.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        }
+      ],
       "feeds": [],
       "sitemaps": [],
       "sourceKind": "official_website_discovery",
@@ -2506,8 +4393,9 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Humani-T",
       "website": "https://humanitea.com/",
       "resolvedUrl": "https://humanitea.com/",
-      "observedAt": "2026-08-28T17:36:27.278Z",
+      "observedAt": "2026-08-28T18:17:10.554Z",
       "socialProfiles": [],
+      "relatedLinks": [],
       "feeds": [],
       "sitemaps": [],
       "sourceKind": "official_website_discovery",
@@ -2518,12 +4406,21 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Humble Pie Kitchen",
       "website": "https://humblepiekitchen.ca/",
       "resolvedUrl": "https://humblepiekitchen.ca/",
-      "observedAt": "2026-08-28T17:36:27.661Z",
+      "observedAt": "2026-08-28T18:17:11.821Z",
       "socialProfiles": [
+        {
+          "platform": "x",
+          "handle": "pie_humble",
+          "url": "https://twitter.com/pie_humble",
+          "label": "x",
+          "discoveredFrom": "https://humblepiekitchen.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
         {
           "platform": "instagram",
           "handle": "pie_humble",
-          "url": "https://www.instagram.com/pie_humble/",
+          "url": "https://www.instagram.com/pie_humble",
           "label": "instagram",
           "discoveredFrom": "https://humblepiekitchen.ca/",
           "associationBasis": "linked_from_official_website",
@@ -2534,6 +4431,16 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "handle": "humblepiekitchen",
           "url": "https://www.facebook.com/humblepiekitchen",
           "label": "facebook",
+          "discoveredFrom": "https://humblepiekitchen.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        }
+      ],
+      "relatedLinks": [
+        {
+          "kind": "menu",
+          "url": "https://humblepiekitchen.ca/pie-menu/",
+          "label": "PIE MENU",
           "discoveredFrom": "https://humblepiekitchen.ca/",
           "associationBasis": "linked_from_official_website",
           "reviewState": "verified_link"
@@ -2573,13 +4480,23 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "IHOP",
       "website": "https://restaurants.ihop.com/en-ca/ns/bedford/breakfast-80-hogan-court-4023",
       "resolvedUrl": "https://ihop.ca/",
-      "observedAt": "2026-08-28T17:36:27.642Z",
+      "observedAt": "2026-08-28T18:17:10.689Z",
       "socialProfiles": [
         {
           "platform": "facebook",
           "handle": "policy.php",
           "url": "https://www.facebook.com/policy.php",
           "label": "www.facebook.com (opens in a new window)",
+          "discoveredFrom": "https://ihop.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        }
+      ],
+      "relatedLinks": [
+        {
+          "kind": "ordering",
+          "url": "https://order.ihop.ca/",
+          "label": "Order Online",
           "discoveredFrom": "https://ihop.ca/",
           "associationBasis": "linked_from_official_website",
           "reviewState": "verified_link"
@@ -2612,8 +4529,26 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "India Paradise",
       "website": "https://www.indiaparadise.ca/",
       "resolvedUrl": "https://www.indiaparadise.ca/",
-      "observedAt": "2026-08-28T17:36:27.630Z",
+      "observedAt": "2026-08-28T18:17:10.916Z",
       "socialProfiles": [],
+      "relatedLinks": [
+        {
+          "kind": "events",
+          "url": "https://www.indiaparadise.ca/post/opening-on-march-18th-in-calgary",
+          "label": "Mar 12, 2026 Calgary News Opening on March 18th in Calgary New Spot Alert: India Paradise is coming to Calgary! 🥘🔥Mark your calendars for ",
+          "discoveredFrom": "https://www.indiaparadise.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "menu",
+          "url": "https://www.indiaparadise.ca/mississauga/food-menu",
+          "label": "View Menu",
+          "discoveredFrom": "https://www.indiaparadise.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        }
+      ],
       "feeds": [],
       "sitemaps": [
         "https://www.indiaparadise.ca/sitemap.xml"
@@ -2626,8 +4561,34 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Jacky's Cafe",
       "website": "https://jackyscafehalifax.com/",
       "resolvedUrl": "https://jackyscafehalifax.com/",
-      "observedAt": "2026-08-28T17:36:27.958Z",
+      "observedAt": "2026-08-28T18:17:11.128Z",
       "socialProfiles": [],
+      "relatedLinks": [
+        {
+          "kind": "ordering",
+          "url": "https://jackyscafehalifax.com/",
+          "label": "Order Online",
+          "discoveredFrom": "https://jackyscafehalifax.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "ordering",
+          "url": "https://jackyscafehalifax.com/cart/?preferred_delivery=1",
+          "label": "Pickup",
+          "discoveredFrom": "https://jackyscafehalifax.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "menu",
+          "url": "https://jackyscafehalifax.com/menu/",
+          "label": "Menu",
+          "discoveredFrom": "https://jackyscafehalifax.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        }
+      ],
       "feeds": [],
       "sitemaps": [
         "https://jackyscafehalifax.com/sitemap.xml"
@@ -2640,13 +4601,57 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Jean's Chinese Restaurant",
       "website": "https://www.jeansrestaurant.ca/",
       "resolvedUrl": "https://www.jeansrestaurant.ca/",
-      "observedAt": "2026-08-28T17:36:28.007Z",
+      "observedAt": "2026-08-28T18:17:11.182Z",
       "socialProfiles": [
+        {
+          "platform": "x",
+          "handle": "Jeans69696",
+          "url": "https://twitter.com/Jeans69696",
+          "label": "x",
+          "discoveredFrom": "https://www.jeansrestaurant.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
         {
           "platform": "facebook",
           "handle": "JeansChineseRestaurant",
-          "url": "https://www.facebook.com/JeansChineseRestaurant",
+          "url": "https://www.facebook.com/JeansChineseRestaurant/",
           "label": "facebook",
+          "discoveredFrom": "https://www.jeansrestaurant.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "platform": "tiktok",
+          "handle": "wix",
+          "url": "https://www.tiktok.com/@wix?_d=secCgYIASAHKAESPgo8bJWqrWC4Nr%2BRYzP%2BVtrmkW1yv8onKe340Iy%2FTDOE1GiC5K1C6e8qw19A1ZDHAm8CRSncDs9zU2FiADwVGgA%3D&amp;checksum=6ee3b8ed09a7b80754f53d8d9654f3607efacb929e1fe7cb2168ab163f9c106d&amp;language=en&amp;sec_uid=MS4wLjABAAAAYHhFoEGKGLJwnIBxd-QXc1KVcUtlG1sHpsa0HQUHGw4zmND_lFqx6z2IPJH7chg_&amp;sec_user_id=MS4wLjABAAAAgPHZ_FdpBZBJUM3ddmqfpjOvm-vJLKHpFiyv4dstvGcgdF3_apqTw54z5V4uOXel&amp;share_app_id=1233&amp;share_author_id=6795533291946083333&amp;share_link_id=830633BB-5464-41EC-A582-52B78B5041AC&amp;tt_from=copy&amp;u_code=dccm9a1hm10m3e&amp;user_id=6827810298247119878&amp;utm_campaign=client_share&amp;utm_medium=ios&amp;utm_source=copy&amp;source=h5_m&amp;_r=1",
+          "label": "tiktok",
+          "discoveredFrom": "https://www.jeansrestaurant.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        }
+      ],
+      "relatedLinks": [
+        {
+          "kind": "ordering",
+          "url": "https://www.jeansrestaurant.ca/contact",
+          "label": "Delivery Map",
+          "discoveredFrom": "https://www.jeansrestaurant.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "ordering",
+          "url": "https://www.foodbooking.com/ordering/restaurant/menu?restaurant_uid=de8fb584-7d18-406d-9040-426509400230",
+          "label": "Order Online",
+          "discoveredFrom": "https://www.jeansrestaurant.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "menu",
+          "url": "https://www.jeansrestaurant.ca/_files/ugd/762b6e_eef30358765c4c19aa23d8d85d48e49c.pdf",
+          "label": "Menu Download",
           "discoveredFrom": "https://www.jeansrestaurant.ca/",
           "associationBasis": "linked_from_official_website",
           "reviewState": "verified_link"
@@ -2664,8 +4669,26 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Jukai",
       "website": "https://jukairestaurant.com/",
       "resolvedUrl": "https://www.jukairestaurant.com/",
-      "observedAt": "2026-08-28T17:36:28.418Z",
+      "observedAt": "2026-08-28T18:17:11.606Z",
       "socialProfiles": [],
+      "relatedLinks": [
+        {
+          "kind": "ordering",
+          "url": "https://order.mrsdigi.com/060314181012095/67ef2367-3e38-5cfd-8bd7-e9d1f9b36312#/menu-full",
+          "label": "Order Online",
+          "discoveredFrom": "https://www.jukairestaurant.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "ordering",
+          "url": "https://order.mrsdigi.com/065614233105083/cad1267b-6f05-54fb-9723-8a20835eff2e#/stores",
+          "label": "ORDER ONLINE",
+          "discoveredFrom": "https://www.jukairestaurant.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        }
+      ],
       "feeds": [],
       "sitemaps": [
         "https://www.jukairestaurant.com/sitemap.xml"
@@ -2678,8 +4701,26 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "JUKAI Japanese & Thai",
       "website": "https://www.jukairestaurant.com/",
       "resolvedUrl": "https://www.jukairestaurant.com/",
-      "observedAt": "2026-08-28T17:36:29.359Z",
+      "observedAt": "2026-08-28T18:17:12.073Z",
       "socialProfiles": [],
+      "relatedLinks": [
+        {
+          "kind": "ordering",
+          "url": "https://order.mrsdigi.com/060314181012095/67ef2367-3e38-5cfd-8bd7-e9d1f9b36312#/menu-full",
+          "label": "Order Online",
+          "discoveredFrom": "https://www.jukairestaurant.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "ordering",
+          "url": "https://order.mrsdigi.com/065614233105083/cad1267b-6f05-54fb-9723-8a20835eff2e#/stores",
+          "label": "ORDER ONLINE",
+          "discoveredFrom": "https://www.jukairestaurant.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        }
+      ],
       "feeds": [],
       "sitemaps": [
         "https://www.jukairestaurant.com/sitemap.xml"
@@ -2692,7 +4733,7 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Jungle Jim's",
       "website": "https://junglejims.ca/",
       "resolvedUrl": "https://junglejims.ca/",
-      "observedAt": "2026-08-28T17:36:28.539Z",
+      "observedAt": "2026-08-28T18:17:11.742Z",
       "socialProfiles": [
         {
           "platform": "facebook",
@@ -2708,6 +4749,89 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "handle": "junglejimseatery",
           "url": "https://www.instagram.com/junglejimseatery/",
           "label": "Instagram",
+          "discoveredFrom": "https://junglejims.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "platform": "x",
+          "handle": "junglejimscorp",
+          "url": "https://www.twitter.com/junglejimscorp",
+          "label": "Twitter",
+          "discoveredFrom": "https://junglejims.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        }
+      ],
+      "relatedLinks": [
+        {
+          "kind": "menu",
+          "url": "https://junglejims.ca/menu",
+          "label": "Menu",
+          "discoveredFrom": "https://junglejims.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "reservations",
+          "url": "https://junglejims.ca/#",
+          "label": "RESERVE",
+          "discoveredFrom": "https://junglejims.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "reservations",
+          "url": "https://www.opentable.ca/r/jungle-jims-eatery-goulds-reservations-st-johns?restref=1461142&lang=en-CA&ot_source=Restaurant%20website",
+          "label": "Goulds, N.L.",
+          "discoveredFrom": "https://junglejims.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "reservations",
+          "url": "https://www.opentable.ca/r/jungle-jims-eatery-reservations-st-johns-george-street-st-johns?restref=1265935&lang=en-CA&ot_source=Restaurant%20website",
+          "label": "St. John’s (George Street), N.L.",
+          "discoveredFrom": "https://junglejims.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "reservations",
+          "url": "https://www.opentable.ca/r/jungle-jims-eatery-conception-bay-south-reservations-conception-bay-south?restref=1461139&lang=en-CA&ot_source=Restaurant%20website",
+          "label": "CBS (Manuels), N.L.",
+          "discoveredFrom": "https://junglejims.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "reservations",
+          "url": "https://www.opentable.ca/r/jungle-jims-eatery-clarenville-reservations-clarenville?restref=1475899&lang=en-CA&ot_source=Restaurant%20website",
+          "label": "Clarenville, N.L.",
+          "discoveredFrom": "https://junglejims.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "reservations",
+          "url": "https://www.opentable.ca/r/jungle-jims-eatery-halifax-reservations-halifax?restref=1475938&lang=en-CA&ot_source=Restaurant%20website",
+          "label": "Halifax (Bayers Lake), N.S.",
+          "discoveredFrom": "https://junglejims.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "reservations",
+          "url": "https://www.opentable.ca/r/jungle-jims-eatery-st-johns-torbay-road-st-johns?corrid=3c67e4e8-12a6-4ad5-8a82-838fac3ae5bd&avt=eyJ2IjoyLCJtIjowLCJwIjowLCJzIjowLCJuIjowfQ&p=2&sd=2026-02-19T19%3A00%3A00",
+          "label": "OpenTable",
+          "discoveredFrom": "https://junglejims.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "ordering",
+          "url": "https://www.doordash.com/en-CA/store/jungle-jim",
+          "label": "DoorDash",
           "discoveredFrom": "https://junglejims.ca/",
           "associationBasis": "linked_from_official_website",
           "reviewState": "verified_link"
@@ -2731,7 +4855,7 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Kajohn Thai",
       "website": "https://www.kajohnthairestaurant.ca/",
       "resolvedUrl": "https://www.kajohnthairestaurant.ca/",
-      "observedAt": "2026-08-28T17:36:28.615Z",
+      "observedAt": "2026-08-28T18:17:11.708Z",
       "socialProfiles": [
         {
           "platform": "facebook",
@@ -2747,6 +4871,16 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "handle": "kajohnthairestaurant",
           "url": "https://www.instagram.com/kajohnthairestaurant/",
           "label": "instagram",
+          "discoveredFrom": "https://www.kajohnthairestaurant.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        }
+      ],
+      "relatedLinks": [
+        {
+          "kind": "menu",
+          "url": "https://www.kajohnthairestaurant.ca/menu",
+          "label": "MENU",
           "discoveredFrom": "https://www.kajohnthairestaurant.ca/",
           "associationBasis": "linked_from_official_website",
           "reviewState": "verified_link"
@@ -2772,7 +4906,7 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Kanpai Izakaya",
       "website": "https://kanpaiizakaya.com/",
       "resolvedUrl": "https://kanpaiizakaya.com/",
-      "observedAt": "2026-08-28T17:36:28.636Z",
+      "observedAt": "2026-08-28T18:17:11.811Z",
       "socialProfiles": [
         {
           "platform": "facebook",
@@ -2786,8 +4920,18 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
         {
           "platform": "instagram",
           "handle": "kanpai_izakaya",
-          "url": "https://www.instagram.com/kanpai_izakaya/",
+          "url": "https://www.instagram.com/kanpai_izakaya",
           "label": "instagram",
+          "discoveredFrom": "https://kanpaiizakaya.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        }
+      ],
+      "relatedLinks": [
+        {
+          "kind": "menu",
+          "url": "https://kanpaiizakaya.com/menu",
+          "label": "Menu",
           "discoveredFrom": "https://kanpaiizakaya.com/",
           "associationBasis": "linked_from_official_website",
           "reviewState": "verified_link"
@@ -2803,8 +4947,26 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Kenny's Pizza",
       "website": "http://kennyspizzakearneylake.ca/",
       "resolvedUrl": "http://kennyspizzakearneylake.ca/",
-      "observedAt": "2026-08-28T17:36:29.932Z",
+      "observedAt": "2026-08-28T18:17:13.263Z",
       "socialProfiles": [],
+      "relatedLinks": [
+        {
+          "kind": "menu",
+          "url": "https://kennyspizzakearneylake.ca/",
+          "label": "Order Menu",
+          "discoveredFrom": "http://kennyspizzakearneylake.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "menu",
+          "url": "https://kennyspizzakearneylake.ca/#mobile-menu-toggle",
+          "label": "Menu Close",
+          "discoveredFrom": "http://kennyspizzakearneylake.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        }
+      ],
       "feeds": [
         {
           "url": "https://kennyspizzakearneylake.ca/feed/",
@@ -2839,8 +5001,17 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "King of Donair",
       "website": "https://www.kingofdonair.ca/",
       "resolvedUrl": "https://www.kingofdonair.ca/",
-      "observedAt": "2026-08-28T17:36:28.984Z",
+      "observedAt": "2026-08-28T18:17:12.113Z",
       "socialProfiles": [
+        {
+          "platform": "x",
+          "handle": "KingOfDonair",
+          "url": "https://twitter.com/KingOfDonair",
+          "label": "@KingOfDonair",
+          "discoveredFrom": "https://www.kingofdonair.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
         {
           "platform": "instagram",
           "handle": "kingofdonair",
@@ -2860,6 +5031,16 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "reviewState": "verified_link"
         }
       ],
+      "relatedLinks": [
+        {
+          "kind": "menu",
+          "url": "https://www.kingofdonair.ca/menu/",
+          "label": "Menu",
+          "discoveredFrom": "https://www.kingofdonair.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        }
+      ],
       "feeds": [],
       "sitemaps": [
         "https://www.kingofdonair.ca/sitemap_index.xml"
@@ -2872,7 +5053,7 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Kofuku Japanese and Thai",
       "website": "https://www.kofukujapaneseandthai.ca/",
       "resolvedUrl": "https://www.kofukujapaneseandthai.ca/",
-      "observedAt": "2026-08-28T17:36:29.276Z",
+      "observedAt": "2026-08-28T18:17:12.337Z",
       "socialProfiles": [
         {
           "platform": "instagram",
@@ -2888,6 +5069,32 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "handle": "kofukuhalifax",
           "url": "https://www.facebook.com/kofukuhalifax",
           "label": "facebook",
+          "discoveredFrom": "https://www.kofukujapaneseandthai.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        }
+      ],
+      "relatedLinks": [
+        {
+          "kind": "ordering",
+          "url": "https://mylightspeed.app/MXRLGERA/C-ordering",
+          "label": "Order Online",
+          "discoveredFrom": "https://www.kofukujapaneseandthai.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "ordering",
+          "url": "https://mylightspeed.app/UYMLWEEX/C-ordering",
+          "label": "Order Online - Lunch",
+          "discoveredFrom": "https://www.kofukujapaneseandthai.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "ordering",
+          "url": "https://www.kofukujapaneseandthai.ca/#order-food-popup",
+          "label": "Order online",
           "discoveredFrom": "https://www.kofukujapaneseandthai.ca/",
           "associationBasis": "linked_from_official_website",
           "reviewState": "verified_link"
@@ -2913,7 +5120,7 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Krave Burger",
       "website": "http://kraveburger.com/",
       "resolvedUrl": "http://kraveburger.com/",
-      "observedAt": "2026-08-28T17:36:29.226Z",
+      "observedAt": "2026-08-28T18:17:12.289Z",
       "socialProfiles": [
         {
           "platform": "facebook",
@@ -2925,10 +5132,37 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "reviewState": "verified_link"
         },
         {
+          "platform": "x",
+          "handle": "Kraveburger",
+          "url": "https://www.twitter.com/Kraveburger",
+          "label": "x",
+          "discoveredFrom": "http://kraveburger.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
           "platform": "instagram",
           "handle": "kraveburger",
-          "url": "https://www.instagram.com/kraveburger/",
+          "url": "https://www.instagram.com/kraveburger",
           "label": "instagram",
+          "discoveredFrom": "http://kraveburger.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        }
+      ],
+      "relatedLinks": [
+        {
+          "kind": "ordering",
+          "url": "http://kraveburger.com/orderlocation",
+          "label": "Click Here To Order Online!",
+          "discoveredFrom": "http://kraveburger.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "menu",
+          "url": "http://kraveburger.com/menu",
+          "label": "Menu",
           "discoveredFrom": "http://kraveburger.com/",
           "associationBasis": "linked_from_official_website",
           "reviewState": "verified_link"
@@ -2944,7 +5178,7 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Krave Burger",
       "website": "http://kraveburger.com/",
       "resolvedUrl": "http://kraveburger.com/",
-      "observedAt": "2026-08-28T17:36:29.462Z",
+      "observedAt": "2026-08-28T18:17:12.528Z",
       "socialProfiles": [
         {
           "platform": "facebook",
@@ -2956,10 +5190,37 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "reviewState": "verified_link"
         },
         {
+          "platform": "x",
+          "handle": "Kraveburger",
+          "url": "https://www.twitter.com/Kraveburger",
+          "label": "x",
+          "discoveredFrom": "http://kraveburger.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
           "platform": "instagram",
           "handle": "kraveburger",
-          "url": "https://www.instagram.com/kraveburger/",
+          "url": "https://www.instagram.com/kraveburger",
           "label": "instagram",
+          "discoveredFrom": "http://kraveburger.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        }
+      ],
+      "relatedLinks": [
+        {
+          "kind": "ordering",
+          "url": "http://kraveburger.com/orderlocation",
+          "label": "Click Here To Order Online!",
+          "discoveredFrom": "http://kraveburger.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "menu",
+          "url": "http://kraveburger.com/menu",
+          "label": "Menu",
           "discoveredFrom": "http://kraveburger.com/",
           "associationBasis": "linked_from_official_website",
           "reviewState": "verified_link"
@@ -2975,8 +5236,18 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Lady Hammond Grill",
       "website": "https://chebuctoinn.com/lhg-diner/",
       "resolvedUrl": "https://chebuctoinn.com/lhg-diner/",
-      "observedAt": "2026-08-28T17:36:30.891Z",
+      "observedAt": "2026-08-28T18:17:13.946Z",
       "socialProfiles": [],
+      "relatedLinks": [
+        {
+          "kind": "menu",
+          "url": "https://chebuctoinn.com/lady-hammond-grill-menu/",
+          "label": "Our Menu",
+          "discoveredFrom": "https://chebuctoinn.com/lhg-diner/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        }
+      ],
       "feeds": [
         {
           "url": "https://chebuctoinn.com/feed/",
@@ -3011,7 +5282,7 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Latitude 44°",
       "website": "https://www.lat44hfx.com/",
       "resolvedUrl": "https://www.lat44hfx.com/",
-      "observedAt": "2026-08-28T17:36:29.563Z",
+      "observedAt": "2026-08-28T18:17:12.648Z",
       "socialProfiles": [
         {
           "platform": "facebook",
@@ -3032,6 +5303,24 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "reviewState": "verified_link"
         }
       ],
+      "relatedLinks": [
+        {
+          "kind": "menu",
+          "url": "https://www.lat44hfx.com/our-menus",
+          "label": "OUR MENU",
+          "discoveredFrom": "https://www.lat44hfx.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "reservations",
+          "url": "http://www.opentable.com/restaurant/profile/1320568/reserve?restref=1320568",
+          "label": "RESERVE",
+          "discoveredFrom": "https://www.lat44hfx.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        }
+      ],
       "feeds": [],
       "sitemaps": [
         "https://www.lat44hfx.com/image_sitemap.xml",
@@ -3045,13 +5334,88 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Le Bistro by Liz",
       "website": "https://www.lebistrohalifax.com/",
       "resolvedUrl": "https://www.lebistrohalifax.com/",
-      "observedAt": "2026-08-28T17:36:30.206Z",
+      "observedAt": "2026-08-28T18:17:13.325Z",
       "socialProfiles": [
+        {
+          "platform": "x",
+          "handle": "LeBistrobyLiz",
+          "url": "https://twitter.com/LeBistrobyLiz",
+          "label": "Twitter",
+          "discoveredFrom": "https://www.lebistrohalifax.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
         {
           "platform": "instagram",
           "handle": "lebistrobyliz",
           "url": "https://www.instagram.com/lebistrobyliz/",
           "label": "Instagram",
+          "discoveredFrom": "https://www.lebistrohalifax.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        }
+      ],
+      "relatedLinks": [
+        {
+          "kind": "menu",
+          "url": "https://www.lebistrohalifax.com/#",
+          "label": "Menus",
+          "discoveredFrom": "https://www.lebistrohalifax.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "menu",
+          "url": "https://www.lebistrohalifax.com/brunch-menu/",
+          "label": "Brunch Menu",
+          "discoveredFrom": "https://www.lebistrohalifax.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "menu",
+          "url": "https://www.lebistrohalifax.com/lunch-dinner-menu/",
+          "label": "Lunch &#038; Dinner Menu",
+          "discoveredFrom": "https://www.lebistrohalifax.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "menu",
+          "url": "https://www.lebistrohalifax.com/vegan-menu/",
+          "label": "Vegan Menu",
+          "discoveredFrom": "https://www.lebistrohalifax.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "menu",
+          "url": "https://www.lebistrohalifax.com/kids-menu/",
+          "label": "Kids Menu",
+          "discoveredFrom": "https://www.lebistrohalifax.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "menu",
+          "url": "https://www.lebistrohalifax.com/menus/",
+          "label": "View Menus",
+          "discoveredFrom": "https://www.lebistrohalifax.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "menu",
+          "url": "https://www.lebistrohalifax.com/desserts/",
+          "label": "View Menu",
+          "discoveredFrom": "https://www.lebistrohalifax.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "menu",
+          "url": "https://www.lebistrohalifax.com/wines/",
+          "label": "View Menu",
           "discoveredFrom": "https://www.lebistrohalifax.com/",
           "associationBasis": "linked_from_official_website",
           "reviewState": "verified_link"
@@ -3089,8 +5453,42 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Lion's Head Tavern",
       "website": "https://lionshead.ca/",
       "resolvedUrl": "https://lionshead.ca/",
-      "observedAt": "2026-08-28T17:36:30.425Z",
+      "observedAt": "2026-08-28T18:17:13.849Z",
       "socialProfiles": [],
+      "relatedLinks": [
+        {
+          "kind": "reservations",
+          "url": "https://www.opentable.ca/widget/comms/mural?rid=1069090&amp;lang=en-CA",
+          "label": "SIGN ME UP",
+          "discoveredFrom": "https://lionshead.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "menu",
+          "url": "https://lionshead.ca/menu/",
+          "label": "MENU",
+          "discoveredFrom": "https://lionshead.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "events",
+          "url": "https://lionshead.ca/events/",
+          "label": "EVENTS",
+          "discoveredFrom": "https://lionshead.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "reservations",
+          "url": "https://lionshead.ca/reserve/",
+          "label": "RESERVE",
+          "discoveredFrom": "https://lionshead.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        }
+      ],
       "feeds": [],
       "sitemaps": [],
       "sourceKind": "official_website_discovery",
@@ -3101,12 +5499,12 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Lockside Canteen",
       "website": "https://lemon.dog/",
       "resolvedUrl": "https://lemon.dog/",
-      "observedAt": "2026-08-28T17:36:30.433Z",
+      "observedAt": "2026-08-28T18:17:14.154Z",
       "socialProfiles": [
         {
           "platform": "facebook",
           "handle": "pg",
-          "url": "https://www.facebook.com/pg",
+          "url": "https://www.facebook.com/pg/lemondogslemonade/reviews/",
           "label": "Facebook",
           "discoveredFrom": "https://lemon.dog/",
           "associationBasis": "linked_from_official_website",
@@ -3122,15 +5520,25 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "reviewState": "verified_link"
         },
         {
+          "platform": "x",
+          "handle": "lemon_dogs",
+          "url": "https://twitter.com/lemon_dogs",
+          "label": "x",
+          "discoveredFrom": "https://lemon.dog/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
           "platform": "instagram",
           "handle": "lemondogslemonade",
-          "url": "https://www.instagram.com/lemondogslemonade/",
+          "url": "https://instagram.com/lemondogslemonade",
           "label": "instagram",
           "discoveredFrom": "https://lemon.dog/",
           "associationBasis": "linked_from_official_website",
           "reviewState": "verified_link"
         }
       ],
+      "relatedLinks": [],
       "feeds": [
         {
           "url": "https://lemon.dog/feed/",
@@ -3163,13 +5571,31 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Look Ho Ho",
       "website": "https://www.lookhoho.com/",
       "resolvedUrl": "https://www.lookhoho.com/",
-      "observedAt": "2026-08-28T17:36:30.504Z",
+      "observedAt": "2026-08-28T18:17:14.127Z",
       "socialProfiles": [
         {
           "platform": "facebook",
           "handle": "Lookhoho1959",
           "url": "https://www.facebook.com/Lookhoho1959",
           "label": "facebook",
+          "discoveredFrom": "https://www.lookhoho.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        }
+      ],
+      "relatedLinks": [
+        {
+          "kind": "menu",
+          "url": "https://www.lookhoho.com/",
+          "label": "MENU",
+          "discoveredFrom": "https://www.lookhoho.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "menu",
+          "url": "https://www.lookhoho.com/fullmenu",
+          "label": "Full Menu",
           "discoveredFrom": "https://www.lookhoho.com/",
           "associationBasis": "linked_from_official_website",
           "reviewState": "verified_link"
@@ -3187,12 +5613,12 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Lou Pécou",
       "website": "https://www.lou-pecou.ca/",
       "resolvedUrl": "https://www.loupecou.com/",
-      "observedAt": "2026-08-28T17:36:30.664Z",
+      "observedAt": "2026-08-28T18:17:14.384Z",
       "socialProfiles": [
         {
           "platform": "instagram",
           "handle": "lou.pecou",
-          "url": "https://www.instagram.com/lou.pecou/",
+          "url": "http://instagram.com/lou.pecou",
           "label": "instagram",
           "discoveredFrom": "https://www.loupecou.com/",
           "associationBasis": "linked_from_official_website",
@@ -3201,8 +5627,42 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
         {
           "platform": "facebook",
           "handle": "lou.pecou",
-          "url": "https://www.facebook.com/lou.pecou",
+          "url": "http://www.facebook.com/lou.pecou",
           "label": "facebook",
+          "discoveredFrom": "https://www.loupecou.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        }
+      ],
+      "relatedLinks": [
+        {
+          "kind": "reservations",
+          "url": "https://www.loupecou.com/reserve",
+          "label": "RESERVE",
+          "discoveredFrom": "https://www.loupecou.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "ordering",
+          "url": "https://order.toasttab.com/egiftcards/lou-pecou-pizzeria-5567-cunard-street",
+          "label": "GIVE",
+          "discoveredFrom": "https://www.loupecou.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "menu",
+          "url": "https://www.loupecou.com/s/Food-Menu-Jul-30.pdf",
+          "label": "MENU",
+          "discoveredFrom": "https://www.loupecou.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "ordering",
+          "url": "https://order.toasttab.com/online/lou-pecou-pizzeria-5567-cunard-street",
+          "label": "Order Now",
           "discoveredFrom": "https://www.loupecou.com/",
           "associationBasis": "linked_from_official_website",
           "reviewState": "verified_link"
@@ -3220,8 +5680,18 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Lucy's Hydrostone Cafe",
       "website": "https://lucyshydrostone.ca/",
       "resolvedUrl": "https://lucyshydrostone.ca/",
-      "observedAt": "2026-08-28T17:36:31.452Z",
+      "observedAt": "2026-08-28T18:17:15.189Z",
       "socialProfiles": [],
+      "relatedLinks": [
+        {
+          "kind": "menu",
+          "url": "https://lucyshydrostone.ca/#our-menu",
+          "label": "Menu",
+          "discoveredFrom": "https://lucyshydrostone.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        }
+      ],
       "feeds": [
         {
           "url": "https://lucyshydrostone.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Flucyshydrostone.ca%2F&#038;format=xml",
@@ -3242,8 +5712,34 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Marigold Kitchen",
       "website": "https://marigoldkitchen.ca/",
       "resolvedUrl": "https://marigoldkitchen.ca/",
-      "observedAt": "2026-08-28T17:36:31.327Z",
+      "observedAt": "2026-08-28T18:17:15.007Z",
       "socialProfiles": [],
+      "relatedLinks": [
+        {
+          "kind": "ordering",
+          "url": "https://marigoldkitchen.ca/",
+          "label": "Order Online",
+          "discoveredFrom": "https://marigoldkitchen.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "ordering",
+          "url": "https://marigoldkitchen.ca/cart/?preferred_delivery=1",
+          "label": "Pickup",
+          "discoveredFrom": "https://marigoldkitchen.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "menu",
+          "url": "https://marigoldkitchen.ca/menu/",
+          "label": "Menu",
+          "discoveredFrom": "https://marigoldkitchen.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        }
+      ],
       "feeds": [],
       "sitemaps": [
         "https://marigoldkitchen.ca/sitemap.xml"
@@ -3256,8 +5752,9 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Masala Delight",
       "website": "https://masaladelight.com/",
       "resolvedUrl": "https://masaladelight.com/",
-      "observedAt": "2026-08-28T17:36:31.204Z",
+      "observedAt": "2026-08-28T18:17:15.050Z",
       "socialProfiles": [],
+      "relatedLinks": [],
       "feeds": [],
       "sitemaps": [],
       "sourceKind": "official_website_discovery",
@@ -3268,8 +5765,26 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Matadora Tapas Bar",
       "website": "https://matadorahfx.ca/",
       "resolvedUrl": "https://matadorahfx.ca/",
-      "observedAt": "2026-08-28T17:36:31.797Z",
+      "observedAt": "2026-08-28T18:17:15.458Z",
       "socialProfiles": [],
+      "relatedLinks": [
+        {
+          "kind": "reservations",
+          "url": "https://www.sevenrooms.com/explore/matadora/reservations/create/search/",
+          "label": "Reservations",
+          "discoveredFrom": "https://matadorahfx.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "menu",
+          "url": "http://matadorahfx.ca/wp-content/uploads/2026/05/Matadora-Food-Menu-Spring-2026-Final.pdf",
+          "label": "Dinner & DESSERT Menu",
+          "discoveredFrom": "https://matadorahfx.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        }
+      ],
       "feeds": [
         {
           "url": "https://matadorahfx.ca/?feed=rss2",
@@ -3302,12 +5817,12 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "May Garden",
       "website": "https://maygarden.ca/",
       "resolvedUrl": "https://maygarden.ca/",
-      "observedAt": "2026-08-28T17:36:32.217Z",
+      "observedAt": "2026-08-28T18:17:15.971Z",
       "socialProfiles": [
         {
           "platform": "facebook",
           "handle": "maygardenchineserestaurant",
-          "url": "https://www.facebook.com/maygardenchineserestaurant",
+          "url": "https://www.facebook.com/maygardenchineserestaurant/",
           "label": "facebook",
           "discoveredFrom": "https://maygarden.ca/",
           "associationBasis": "linked_from_official_website",
@@ -3318,6 +5833,32 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "handle": "maygardenhfx",
           "url": "https://www.instagram.com/maygardenhfx/",
           "label": "instagram",
+          "discoveredFrom": "https://maygarden.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        }
+      ],
+      "relatedLinks": [
+        {
+          "kind": "ordering",
+          "url": "https://maygarden.order-online.ai/#/",
+          "label": "Order Online",
+          "discoveredFrom": "https://maygarden.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "ordering",
+          "url": "https://maygardenchinese.com/",
+          "label": "Order Pickup from Sackville",
+          "discoveredFrom": "https://maygarden.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "menu",
+          "url": "https://maygarden.ca/menu-2/",
+          "label": "Menu",
           "discoveredFrom": "https://maygarden.ca/",
           "associationBasis": "linked_from_official_website",
           "reviewState": "verified_link"
@@ -3357,8 +5898,18 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Metro Pizza",
       "website": "https://metropizzahalifax.ca/",
       "resolvedUrl": "https://metropizzahalifax.ca/",
-      "observedAt": "2026-08-28T17:36:31.930Z",
+      "observedAt": "2026-08-28T18:17:16.189Z",
       "socialProfiles": [],
+      "relatedLinks": [
+        {
+          "kind": "menu",
+          "url": "https://metropizzahalifax.ca/menu",
+          "label": "Menu",
+          "discoveredFrom": "https://metropizzahalifax.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        }
+      ],
       "feeds": [],
       "sitemaps": [],
       "sourceKind": "official_website_discovery",
@@ -3369,53 +5920,11 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Mexi's",
       "website": "https://www.mexicalirosas.com/halifax/",
       "resolvedUrl": "https://www.mexicalirosas.com/halifax/",
-      "observedAt": "2026-08-28T17:36:32.448Z",
-      "socialProfiles": [
-        {
-          "platform": "facebook",
-          "handle": "halifaxmexis",
-          "url": "https://www.facebook.com/halifaxmexis",
-          "label": "Facebook",
-          "discoveredFrom": "https://www.mexicalirosas.com/halifax/",
-          "associationBasis": "linked_from_official_website",
-          "reviewState": "verified_link"
-        },
-        {
-          "platform": "instagram",
-          "handle": "mexis_hfx",
-          "url": "https://www.instagram.com/mexis_hfx/",
-          "label": "Instagram",
-          "discoveredFrom": "https://www.mexicalirosas.com/halifax/",
-          "associationBasis": "linked_from_official_website",
-          "reviewState": "verified_link"
-        }
-      ],
-      "feeds": [
-        {
-          "url": "https://www.mexicalirosas.com/feed/",
-          "type": "application/rss+xml",
-          "title": "Mexicali Rosa’s &raquo; Feed",
-          "discoveredFrom": "https://www.mexicalirosas.com/halifax/",
-          "reviewState": "verified_link"
-        },
-        {
-          "url": "https://www.mexicalirosas.com/comments/feed/",
-          "type": "application/rss+xml",
-          "title": "Mexicali Rosa’s &raquo; Comments Feed",
-          "discoveredFrom": "https://www.mexicalirosas.com/halifax/",
-          "reviewState": "verified_link"
-        },
-        {
-          "url": "https://www.mexicalirosas.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.mexicalirosas.com%2Fhalifax%2F&#038;format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://www.mexicalirosas.com/halifax/",
-          "reviewState": "verified_link"
-        }
-      ],
-      "sitemaps": [
-        "https://www.mexicalirosas.com/sitemaps.xml"
-      ],
+      "observedAt": "2026-08-28T18:17:16.516Z",
+      "socialProfiles": [],
+      "relatedLinks": [],
+      "feeds": [],
+      "sitemaps": [],
       "sourceKind": "official_website_discovery",
       "reviewState": "verified"
     },
@@ -3424,7 +5933,7 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Mezza Lebanese Kitchen",
       "website": "https://www.mezzalebanesekitchen.com/",
       "resolvedUrl": "https://www.ordermezza.com/",
-      "observedAt": "2026-08-28T17:36:32.680Z",
+      "observedAt": "2026-08-28T18:17:16.660Z",
       "socialProfiles": [
         {
           "platform": "facebook",
@@ -3443,6 +5952,34 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "discoveredFrom": "https://www.ordermezza.com/",
           "associationBasis": "linked_from_official_website",
           "reviewState": "verified_link"
+        },
+        {
+          "platform": "x",
+          "handle": "mezzahfx",
+          "url": "https://twitter.com/mezzahfx",
+          "label": "x",
+          "discoveredFrom": "https://www.ordermezza.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "platform": "linkedin",
+          "handle": "company/mezza-lebanese-kitchen",
+          "url": "https://www.linkedin.com/company/mezza-lebanese-kitchen/",
+          "label": "linkedin",
+          "discoveredFrom": "https://www.ordermezza.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        }
+      ],
+      "relatedLinks": [
+        {
+          "kind": "menu",
+          "url": "https://www.ordermezza.com/menu",
+          "label": "Menu",
+          "discoveredFrom": "https://www.ordermezza.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
         }
       ],
       "feeds": [],
@@ -3457,8 +5994,26 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Mirchi Tandoor",
       "website": "https://mirchitandoor.com/",
       "resolvedUrl": "https://mirchitandoor.com/",
-      "observedAt": "2026-08-28T17:36:32.777Z",
+      "observedAt": "2026-08-28T18:17:16.967Z",
       "socialProfiles": [],
+      "relatedLinks": [
+        {
+          "kind": "ordering",
+          "url": "https://mirchitandoor.com/",
+          "label": "Order Online",
+          "discoveredFrom": "https://mirchitandoor.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "menu",
+          "url": "https://mirchitandoor.com/menu/",
+          "label": "Menu",
+          "discoveredFrom": "https://mirchitandoor.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        }
+      ],
       "feeds": [],
       "sitemaps": [
         "https://mirchitandoor.com/sitemap.xml"
@@ -3471,7 +6026,7 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Morris East",
       "website": "https://morriseast.com/",
       "resolvedUrl": "https://www.morriseast.com/",
-      "observedAt": "2026-08-28T17:36:33.374Z",
+      "observedAt": "2026-08-28T18:17:17.208Z",
       "socialProfiles": [
         {
           "platform": "instagram",
@@ -3483,10 +6038,109 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "reviewState": "verified_link"
         },
         {
+          "platform": "tiktok",
+          "handle": "morriseastrestaurant",
+          "url": "https://www.tiktok.com/@morriseastrestaurant",
+          "label": "tiktok",
+          "discoveredFrom": "https://www.morriseast.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
           "platform": "facebook",
           "handle": "morriseastrestaurant",
-          "url": "https://www.facebook.com/morriseastrestaurant",
+          "url": "https://www.facebook.com/morriseastrestaurant/",
           "label": "facebook",
+          "discoveredFrom": "https://www.morriseast.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        }
+      ],
+      "relatedLinks": [
+        {
+          "kind": "reservations",
+          "url": "https://www.morriseast.com/visit-us",
+          "label": "Reservation",
+          "discoveredFrom": "https://www.morriseast.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "ordering",
+          "url": "https://order.toasttab.com/egiftcards/morris-east-bedford-620-nine-mile-drive",
+          "label": "Gift Cards",
+          "discoveredFrom": "https://www.morriseast.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "events",
+          "url": "https://www.morriseast.com/catering-events",
+          "label": "Catering & Events",
+          "discoveredFrom": "https://www.morriseast.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "ordering",
+          "url": "https://order.toasttab.com/online/locations/ec6ab1aa-2518-430f-aba4-25404d2c2fb8/default",
+          "label": "Order Now",
+          "discoveredFrom": "https://www.morriseast.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "ordering",
+          "url": "https://tables.toasttab.com/restaurants/b01c72d6-b6ac-4103-b940-5accdce3dfd0/reserve?partySize=2&dateTime=2026-02-18T12:30:00.000-04:00",
+          "label": "RESERVE",
+          "discoveredFrom": "https://www.morriseast.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "ordering",
+          "url": "https://tables.toasttab.com/restaurants/4a83980d-4ea6-49c3-937a-d0130ac921fb/reserve?partySize=2&dateTime=2026-02-18T12:30:00.000-04:00",
+          "label": "RESERVE",
+          "discoveredFrom": "https://www.morriseast.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "ordering",
+          "url": "https://order.toasttab.com/online/morris-east-slice-shop-halifax-1984-vernon-street",
+          "label": "HALIFAX - VERNON ST",
+          "discoveredFrom": "https://www.morriseast.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "ordering",
+          "url": "https://order.toasttab.com/online/morris-east-bedford-620-nine-mile-drive?diningOption=takeout",
+          "label": "BEDFORD WEST",
+          "discoveredFrom": "https://www.morriseast.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "menu",
+          "url": "https://www.morriseast.com/s/Morris_East_Catering_Menu-5.pdf",
+          "label": "Group Catering Menu",
+          "discoveredFrom": "https://www.morriseast.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "ordering",
+          "url": "https://tables.toasttab.com/restaurants/b01c72d6-b6ac-4103-b940-5accdce3dfd0/findTime",
+          "label": "Click here for reservations",
+          "discoveredFrom": "https://www.morriseast.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "ordering",
+          "url": "https://tables.toasttab.com/restaurants/4a83980d-4ea6-49c3-937a-d0130ac921fb/findTime",
+          "label": "Click here for reservations",
           "discoveredFrom": "https://www.morriseast.com/",
           "associationBasis": "linked_from_official_website",
           "reviewState": "verified_link"
@@ -3504,12 +6158,12 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Mother's Pizza",
       "website": "https://motherspizzahalifax.ca/",
       "resolvedUrl": "https://motherspizzahalifax.ca/",
-      "observedAt": "2026-08-28T17:36:36.168Z",
+      "observedAt": "2026-08-28T18:17:20.137Z",
       "socialProfiles": [
         {
           "platform": "facebook",
           "handle": "motherspizzahalifax",
-          "url": "https://www.facebook.com/motherspizzahalifax",
+          "url": "https://www.facebook.com/motherspizzahalifax/",
           "label": "Facebook",
           "discoveredFrom": "https://motherspizzahalifax.ca/",
           "associationBasis": "linked_from_official_website",
@@ -3520,6 +6174,48 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "handle": "motherspizza",
           "url": "https://www.instagram.com/motherspizza/",
           "label": "Instagram",
+          "discoveredFrom": "https://motherspizzahalifax.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        }
+      ],
+      "relatedLinks": [
+        {
+          "kind": "ordering",
+          "url": "https://www.ubereats.com/ca/store/mothers-pizza/n8rHAFzESdugPVm_Dj2jaA",
+          "label": "Tripadvisor",
+          "discoveredFrom": "https://motherspizzahalifax.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "menu",
+          "url": "https://motherspizzahalifax.ca/menu-restaurant/",
+          "label": "Menu",
+          "discoveredFrom": "https://motherspizzahalifax.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "ordering",
+          "url": "https://www.clover.com/online-ordering/mothers-pizza-halifax-2",
+          "label": "Order Online",
+          "discoveredFrom": "https://motherspizzahalifax.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "menu",
+          "url": "https://www.clover.com/online-ordering/mothers-pizza-halifax-2",
+          "label": "Online order and menu",
+          "discoveredFrom": "https://motherspizzahalifax.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "ordering",
+          "url": "https://www.ubereats.com/ca/store/mothers-pizza/",
+          "label": "Uber",
           "discoveredFrom": "https://motherspizzahalifax.ca/",
           "associationBasis": "linked_from_official_website",
           "reviewState": "verified_link"
@@ -3559,12 +6255,12 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Moxie's",
       "website": "https://moxies.com/",
       "resolvedUrl": "https://moxies.com/",
-      "observedAt": "2026-08-28T17:36:33.689Z",
+      "observedAt": "2026-08-28T18:17:17.535Z",
       "socialProfiles": [
         {
           "platform": "instagram",
           "handle": "moxiesusa",
-          "url": "https://www.instagram.com/moxiesusa/",
+          "url": "https://www.instagram.com/moxiesusa",
           "label": "Follow @MoxiesUSA",
           "discoveredFrom": "https://moxies.com/",
           "associationBasis": "linked_from_official_website",
@@ -3573,8 +6269,330 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
         {
           "platform": "facebook",
           "handle": "moxiesusa",
-          "url": "https://www.facebook.com/moxiesusa",
+          "url": "https://www.facebook.com/moxiesusa/",
           "label": "facebook",
+          "discoveredFrom": "https://moxies.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        }
+      ],
+      "relatedLinks": [
+        {
+          "kind": "menu",
+          "url": "https://moxies.com/#elementor-action%3Aaction%3Dpopup%3Aopen%26settings%3DeyJpZCI6IjIyMzcwIiwidG9nZ2xlIjpmYWxzZX0%3D",
+          "label": "Menu",
+          "discoveredFrom": "https://moxies.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "events",
+          "url": "https://moxies.com/#",
+          "label": "Book Event",
+          "discoveredFrom": "https://moxies.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "reservations",
+          "url": "https://moxies.com/#",
+          "label": "Reserve",
+          "discoveredFrom": "https://moxies.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "reservations",
+          "url": "https://moxies.com/#elementor-action%3Aaction%3Dpopup%3Aopen%26settings%3DeyJpZCI6IjIyMzcwIiwidG9nZ2xlIjpmYWxzZX0%3D",
+          "label": "Reserve",
+          "discoveredFrom": "https://moxies.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "menu",
+          "url": "https://moxies.com/#",
+          "label": "VIEW MENUS",
+          "discoveredFrom": "https://moxies.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "reservations",
+          "url": "https://www.opentable.com/legal/terms-and-conditions",
+          "label": "Terms of Use",
+          "discoveredFrom": "https://moxies.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "reservations",
+          "url": "https://www.opentable.com/legal/privacy-policy",
+          "label": "Privacy Policy",
+          "discoveredFrom": "https://moxies.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "reservations",
+          "url": "https://moxies.com/#elementor-action%3Aaction%3Dpopup%3Aopen%26settings%3DeyJpZCI6IjY5OSIsInRvZ2dsZSI6ZmFsc2V9",
+          "label": "Reserve",
+          "discoveredFrom": "https://moxies.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "events",
+          "url": "https://moxies.com/restaurants/boston-seaport/group-bookings/#group-booking-form",
+          "label": "Book Event",
+          "discoveredFrom": "https://moxies.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "menu",
+          "url": "https://moxies.com/restaurants/boston-seaport/menus",
+          "label": "Menus",
+          "discoveredFrom": "https://moxies.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "ordering",
+          "url": "https://moxies.xdineapp.com/consumer#initOrder/regular/pickup/4653/Boston+Seaport?display=order",
+          "label": "Pickup",
+          "discoveredFrom": "https://moxies.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "events",
+          "url": "https://moxies.com/restaurants/dallas-uptown/group-bookings/#group-booking-form",
+          "label": "Book Event",
+          "discoveredFrom": "https://moxies.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "menu",
+          "url": "https://moxies.com/restaurants/dallas-uptown/menus",
+          "label": "Menus",
+          "discoveredFrom": "https://moxies.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "ordering",
+          "url": "https://moxies.xdineapp.com/#initOrder/regular/pickup/3021/Dallas?display=order",
+          "label": "Pickup",
+          "discoveredFrom": "https://moxies.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "ordering",
+          "url": "https://www.doordash.com/store/moxie&#039;s-dallas-406009/?display=order",
+          "label": "Door Dash",
+          "discoveredFrom": "https://moxies.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "events",
+          "url": "https://moxies.com/restaurants/fort-lauderdale/group-bookings/#group-booking-form",
+          "label": "Book Event",
+          "discoveredFrom": "https://moxies.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "menu",
+          "url": "https://moxies.com/restaurants/fort-lauderdale/menus",
+          "label": "Menus",
+          "discoveredFrom": "https://moxies.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "ordering",
+          "url": "https://moxies.xdineapp.com/consumer#initOrder/regular/pickup/4327/Fort%20Lauderdale?display=order",
+          "label": "Pickup",
+          "discoveredFrom": "https://moxies.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "ordering",
+          "url": "https://www.doordash.com/store/moxie&#039;s-fort-lauderdale-25087215/?display=order",
+          "label": "Door Dash",
+          "discoveredFrom": "https://moxies.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "events",
+          "url": "https://moxies.com/restaurants/houston/group-bookings/#group-booking-form",
+          "label": "Book Event",
+          "discoveredFrom": "https://moxies.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "menu",
+          "url": "https://moxies.com/restaurants/houston/menus",
+          "label": "Menus",
+          "discoveredFrom": "https://moxies.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "ordering",
+          "url": "https://moxies.xdineapp.com/#initOrder/regular/pickup/3509/Houston?display=order",
+          "label": "Pickup",
+          "discoveredFrom": "https://moxies.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "ordering",
+          "url": "https://www.doordash.com/store/moxie&#039;s-houston-420355/?display=order",
+          "label": "Door Dash",
+          "discoveredFrom": "https://moxies.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "events",
+          "url": "https://moxies.com/restaurants/miami-mary-brickell/group-bookings/#group-booking-form",
+          "label": "Book Event",
+          "discoveredFrom": "https://moxies.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "menu",
+          "url": "https://moxies.com/restaurants/miami-mary-brickell/menus",
+          "label": "Menus",
+          "discoveredFrom": "https://moxies.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "ordering",
+          "url": "https://moxies.xdineapp.com/#initOrder/regular/pickup/3511/Miami?display=order",
+          "label": "Pickup",
+          "discoveredFrom": "https://moxies.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "ordering",
+          "url": "https://www.doordash.com/store/moxie&#039;s-miami-983011/?display=order",
+          "label": "Door Dash",
+          "discoveredFrom": "https://moxies.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "events",
+          "url": "https://moxies.com/restaurants/plano/group-bookings/#group-booking-form",
+          "label": "Book Event",
+          "discoveredFrom": "https://moxies.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "menu",
+          "url": "https://moxies.com/restaurants/plano/menus",
+          "label": "Menus",
+          "discoveredFrom": "https://moxies.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "ordering",
+          "url": "https://order.online/store/moxies-plano-609847/?hideModal=true&#038;pickup=true&#038;display=order",
+          "label": "Pickup",
+          "discoveredFrom": "https://moxies.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "ordering",
+          "url": "https://order.online/store/moxies-plano-609847/?delivery=true&#038;hideModal=true&#038;display=order",
+          "label": "Delivery",
+          "discoveredFrom": "https://moxies.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "events",
+          "url": "https://moxies.com/restaurants/scottsdale/group-bookings/#group-booking-form",
+          "label": "Book Event",
+          "discoveredFrom": "https://moxies.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "menu",
+          "url": "https://moxies.com/restaurants/scottsdale/menus",
+          "label": "Menus",
+          "discoveredFrom": "https://moxies.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "ordering",
+          "url": "https://moxies.xdineapp.com/consumer#initOrder/regular/pickup/4479/Scottsdale?display=order",
+          "label": "Pickup",
+          "discoveredFrom": "https://moxies.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "ordering",
+          "url": "https://www.doordash.com/en-CA/store/moxies-scottsdale-25657288/?srsltid=AfmBOor3tJw08ROGwmpjii2XhpL7aujQCBQ5hqaT2Trdj4Xyek55eNbi&#038;display=order",
+          "label": "Door Dash",
+          "discoveredFrom": "https://moxies.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "events",
+          "url": "https://moxies.com/restaurants/southlake/group-bookings/#group-booking-form",
+          "label": "Book Event",
+          "discoveredFrom": "https://moxies.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "menu",
+          "url": "https://moxies.com/restaurants/southlake/menus",
+          "label": "Menus",
+          "discoveredFrom": "https://moxies.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "ordering",
+          "url": "https://moxies.xdineapp.com/consumer#initOrder/regular/pickup/3513/Southlake?display=order",
+          "label": "Pickup",
+          "discoveredFrom": "https://moxies.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "ordering",
+          "url": "https://www.doordash.com/store/moxie&#039;s-southlake-2128278/?display=order",
+          "label": "Door Dash",
+          "discoveredFrom": "https://moxies.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "events",
+          "url": "https://moxies.com/restaurants/washingtondc/group-bookings/#group-booking-form",
+          "label": "Book Event",
           "discoveredFrom": "https://moxies.com/",
           "associationBasis": "linked_from_official_website",
           "reviewState": "verified_link"
@@ -3614,8 +6632,9 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Narrow Espresso",
       "website": "http://narrowespresso.com/",
       "resolvedUrl": "http://narrowespresso.com/",
-      "observedAt": "2026-08-28T17:36:33.768Z",
+      "observedAt": "2026-08-28T18:17:17.639Z",
       "socialProfiles": [],
+      "relatedLinks": [],
       "feeds": [],
       "sitemaps": [],
       "sourceKind": "official_website_discovery",
@@ -3626,8 +6645,18 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "New Wing Wah",
       "website": "https://newwingwah.ca/",
       "resolvedUrl": "https://newwingwah.ca/",
-      "observedAt": "2026-08-28T17:36:33.771Z",
+      "observedAt": "2026-08-28T18:17:18.182Z",
       "socialProfiles": [],
+      "relatedLinks": [
+        {
+          "kind": "menu",
+          "url": "https://newwingwah.ca/menu.html",
+          "label": "Menu",
+          "discoveredFrom": "https://newwingwah.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        }
+      ],
       "feeds": [],
       "sitemaps": [],
       "sourceKind": "official_website_discovery",
@@ -3638,7 +6667,7 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Orso Pub & Grill",
       "website": "https://orsopub.ca/",
       "resolvedUrl": "https://orsopub.ca/",
-      "observedAt": "2026-08-28T17:36:34.288Z",
+      "observedAt": "2026-08-28T18:17:19.640Z",
       "socialProfiles": [
         {
           "platform": "instagram",
@@ -3654,6 +6683,48 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "handle": "ORSO-pub-grill-1978205032427146",
           "url": "https://www.facebook.com/ORSO-pub-grill-1978205032427146",
           "label": "facebook",
+          "discoveredFrom": "https://orsopub.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        }
+      ],
+      "relatedLinks": [
+        {
+          "kind": "reservations",
+          "url": "https://orsopub.ca/reservation",
+          "label": "Book table",
+          "discoveredFrom": "https://orsopub.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "menu",
+          "url": "https://orsopub.ca/#",
+          "label": "Menu",
+          "discoveredFrom": "https://orsopub.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "menu",
+          "url": "https://orsopub.ca/full-menu/",
+          "label": "Full Menu",
+          "discoveredFrom": "https://orsopub.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "menu",
+          "url": "https://orsopub.ca/drinks-menu/",
+          "label": "Drinks Menu",
+          "discoveredFrom": "https://orsopub.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "reservations",
+          "url": "https://orsopub.ca/reservation/",
+          "label": "Reservation",
           "discoveredFrom": "https://orsopub.ca/",
           "associationBasis": "linked_from_official_website",
           "reviewState": "verified_link"
@@ -3679,8 +6750,17 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Osmow's",
       "website": "https://osmows.com/shawarma-halifax/",
       "resolvedUrl": "https://locations.osmows.com/ca/ns/halifax",
-      "observedAt": "2026-08-28T17:36:34.481Z",
+      "observedAt": "2026-08-28T18:17:18.422Z",
       "socialProfiles": [
+        {
+          "platform": "x",
+          "handle": "osmows",
+          "url": "https://x.com/osmows",
+          "label": "x",
+          "discoveredFrom": "https://locations.osmows.com/ca/ns/halifax",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
         {
           "platform": "facebook",
           "handle": "osmows",
@@ -3693,8 +6773,44 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
         {
           "platform": "instagram",
           "handle": "osmows",
-          "url": "https://www.instagram.com/osmows/",
+          "url": "https://www.instagram.com/osmows",
           "label": "instagram",
+          "discoveredFrom": "https://locations.osmows.com/ca/ns/halifax",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "platform": "youtube",
+          "handle": "ucehgomilifmcvr_u6lwas8g",
+          "url": "https://www.youtube.com/channel/ucehgomilifmcvr_u6lwas8g",
+          "label": "youtube",
+          "discoveredFrom": "https://locations.osmows.com/ca/ns/halifax",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "platform": "tiktok",
+          "handle": "osmowsshawarma",
+          "url": "https://www.tiktok.com/@osmowsshawarma",
+          "label": "tiktok",
+          "discoveredFrom": "https://locations.osmows.com/ca/ns/halifax",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        }
+      ],
+      "relatedLinks": [
+        {
+          "kind": "menu",
+          "url": "https://locations.osmows.com/ca/ns/halifax#",
+          "label": "Menu",
+          "discoveredFrom": "https://locations.osmows.com/ca/ns/halifax",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "menu",
+          "url": "https://osmows.com/fr/menu/",
+          "label": "Menu",
           "discoveredFrom": "https://locations.osmows.com/ca/ns/halifax",
           "associationBasis": "linked_from_official_website",
           "reviewState": "verified_link"
@@ -3710,7 +6826,7 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Papa John's",
       "website": "https://locations.papajohns.com/canada/ns/b2w-6c4/dartmouth/644-portland-street",
       "resolvedUrl": "https://locations.papajohns.com/canada/ns/b2w-6c4/dartmouth/644-portland-street",
-      "observedAt": "2026-08-28T17:36:34.657Z",
+      "observedAt": "2026-08-28T18:17:18.695Z",
       "socialProfiles": [
         {
           "platform": "facebook",
@@ -3722,10 +6838,46 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "reviewState": "verified_link"
         },
         {
+          "platform": "x",
+          "handle": "papajohns",
+          "url": "https://twitter.com/papajohns",
+          "label": "x",
+          "discoveredFrom": "https://locations.papajohns.com/canada/ns/b2w-6c4/dartmouth/644-portland-street",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "platform": "youtube",
+          "handle": "papajohns",
+          "url": "https://www.youtube.com/user/papajohns",
+          "label": "youtube",
+          "discoveredFrom": "https://locations.papajohns.com/canada/ns/b2w-6c4/dartmouth/644-portland-street",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
           "platform": "instagram",
           "handle": "papajohns",
           "url": "https://www.instagram.com/papajohns/",
           "label": "instagram",
+          "discoveredFrom": "https://locations.papajohns.com/canada/ns/b2w-6c4/dartmouth/644-portland-street",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        }
+      ],
+      "relatedLinks": [
+        {
+          "kind": "menu",
+          "url": "https://www.papajohns.com/order/viewStoreMenu/CARRYOUT/BUSINESS/13152",
+          "label": "Menu",
+          "discoveredFrom": "https://locations.papajohns.com/canada/ns/b2w-6c4/dartmouth/644-portland-street",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "ordering",
+          "url": "https://www.papajohns.com/order/stores-near-me?searchType=DELIVERY",
+          "label": "Order Delivery",
           "discoveredFrom": "https://locations.papajohns.com/canada/ns/b2w-6c4/dartmouth/644-portland-street",
           "associationBasis": "linked_from_official_website",
           "reviewState": "verified_link"
@@ -3743,13 +6895,39 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Pazzo Ristorante & Enoteca",
       "website": "https://www.rcr.ca/restaurants/pazzo-italian-ristorante/",
       "resolvedUrl": "https://www.rcr.ca/restaurants/pazzo-italian-ristorante/",
-      "observedAt": "2026-08-28T17:36:34.839Z",
+      "observedAt": "2026-08-28T18:17:18.805Z",
       "socialProfiles": [
         {
           "platform": "instagram",
           "handle": "pazzokitchen",
           "url": "https://www.instagram.com/pazzokitchen/",
           "label": "instagram",
+          "discoveredFrom": "https://www.rcr.ca/restaurants/pazzo-italian-ristorante/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        }
+      ],
+      "relatedLinks": [
+        {
+          "kind": "menu",
+          "url": "https://www.rcr.ca/content/uploads/2023/09/PAZZO-DINNER-JULY-2026.pdf",
+          "label": "Dinner Menu",
+          "discoveredFrom": "https://www.rcr.ca/restaurants/pazzo-italian-ristorante/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "menu",
+          "url": "https://www.rcr.ca/content/uploads/2023/09/Tasting-Menu-Southern-Italy-June-Aug-2026-4.pdf",
+          "label": "Seasonal Tasting Menu",
+          "discoveredFrom": "https://www.rcr.ca/restaurants/pazzo-italian-ristorante/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "reservations",
+          "url": "https://www.opentable.ca/restaurant/profile/1336126/reserve?rid=1336126&amp;restref=1336126",
+          "label": "reservations",
           "discoveredFrom": "https://www.rcr.ca/restaurants/pazzo-italian-ristorante/",
           "associationBasis": "linked_from_official_website",
           "reviewState": "verified_link"
@@ -3776,8 +6954,42 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Peter's Pizzeria",
       "website": "https://www.peterspizzeriahfx.com/",
       "resolvedUrl": "https://www.peterspizzeriahfx.com/",
-      "observedAt": "2026-08-28T17:36:35.130Z",
+      "observedAt": "2026-08-28T18:17:19.077Z",
       "socialProfiles": [],
+      "relatedLinks": [
+        {
+          "kind": "menu",
+          "url": "https://www.peterspizzeriahfx.com/menu-1",
+          "label": "Menu",
+          "discoveredFrom": "https://www.peterspizzeriahfx.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "ordering",
+          "url": "https://www.peterspizzeriahfx.com/online-ordering",
+          "label": "Order Online",
+          "discoveredFrom": "https://www.peterspizzeriahfx.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "menu",
+          "url": "https://www.peterspizzeriahfx.com/order-online",
+          "label": "See Our Menu",
+          "discoveredFrom": "https://www.peterspizzeriahfx.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "ordering",
+          "url": "https://www.peterspizzeriahfx.com/order-online",
+          "label": "TAKE OUT",
+          "discoveredFrom": "https://www.peterspizzeriahfx.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        }
+      ],
       "feeds": [],
       "sitemaps": [
         "https://www.peterspizzeriahfx.com/sitemap.xml"
@@ -3790,8 +7002,18 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "PG Cafe and Grill",
       "website": "https://pgcafeandgrill.com/",
       "resolvedUrl": "https://pgcafeandgrill.com/",
-      "observedAt": "2026-08-28T17:36:35.217Z",
+      "observedAt": "2026-08-28T18:17:19.167Z",
       "socialProfiles": [],
+      "relatedLinks": [
+        {
+          "kind": "menu",
+          "url": "https://pgcafeandgrill.com/#MenuOffers",
+          "label": "See Our Menu",
+          "discoveredFrom": "https://pgcafeandgrill.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        }
+      ],
       "feeds": [
         {
           "url": "https://pgcafeandgrill.com/feed/",
@@ -3824,8 +7046,9 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Phở Hoang Minh",
       "website": "https://www.phohoangminh.ca/",
       "resolvedUrl": "https://phohoangminh.ca/",
-      "observedAt": "2026-08-28T17:36:35.560Z",
+      "observedAt": "2026-08-28T18:17:19.923Z",
       "socialProfiles": [],
+      "relatedLinks": [],
       "feeds": [
         {
           "url": "https://phohoangminh.ca/feed/",
@@ -3853,13 +7076,31 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Pizza Pizza",
       "website": "https://dal.campusdish.com/LocationsAndMenus/LifeSciencesCentre/PizzaPizza",
       "resolvedUrl": "https://dal.mydininghub.ca/en/locations",
-      "observedAt": "2026-08-28T17:36:21.653Z",
+      "observedAt": "2026-08-28T18:17:05.900Z",
       "socialProfiles": [
         {
           "platform": "instagram",
           "handle": "Dalfood",
           "url": "https://www.instagram.com/Dalfood/",
           "label": "instagram",
+          "discoveredFrom": "https://dal.mydininghub.ca/en/locations",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        }
+      ],
+      "relatedLinks": [
+        {
+          "kind": "menu",
+          "url": "https://dal.mydininghub.ca/en/account?section=my-menu",
+          "label": "My Menu",
+          "discoveredFrom": "https://dal.mydininghub.ca/en/locations",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "menu",
+          "url": "https://dal.mydininghub.ca/en/locations",
+          "label": "Locations & Menus",
           "discoveredFrom": "https://dal.mydininghub.ca/en/locations",
           "associationBasis": "linked_from_official_website",
           "reviewState": "verified_link"
@@ -3877,12 +7118,12 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Pizza.Co",
       "website": "https://pzzaco.ca/",
       "resolvedUrl": "https://pzzaco.ca/",
-      "observedAt": "2026-08-28T17:36:37.278Z",
+      "observedAt": "2026-08-28T18:17:21.941Z",
       "socialProfiles": [
         {
           "platform": "facebook",
           "handle": "pzzacohfx",
-          "url": "https://www.facebook.com/pzzacohfx",
+          "url": "https://www.facebook.com/pzzacohfx/",
           "label": "facebook",
           "discoveredFrom": "https://pzzaco.ca/",
           "associationBasis": "linked_from_official_website",
@@ -3891,8 +7132,18 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
         {
           "platform": "instagram",
           "handle": "pzza.co_hfx",
-          "url": "https://www.instagram.com/pzza.co_hfx/",
+          "url": "https://www.instagram.com/pzza.co_hfx/?hl=en",
           "label": "instagram",
+          "discoveredFrom": "https://pzzaco.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        }
+      ],
+      "relatedLinks": [
+        {
+          "kind": "menu",
+          "url": "https://pzzaco.ca/#",
+          "label": "Pizza Menu",
           "discoveredFrom": "https://pzzaco.ca/",
           "associationBasis": "linked_from_official_website",
           "reviewState": "verified_link"
@@ -3932,8 +7183,9 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Pleasant Street Diner",
       "website": "https://pleasantstdiner.com/",
       "resolvedUrl": "https://pleasantstdiner.com/",
-      "observedAt": "2026-08-28T17:36:36.484Z",
+      "observedAt": "2026-08-28T18:17:22.558Z",
       "socialProfiles": [],
+      "relatedLinks": [],
       "feeds": [],
       "sitemaps": [],
       "sourceKind": "official_website_discovery",
@@ -3944,8 +7196,9 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Portland Street Creperie",
       "website": "http://www.portlandstreetcreperie.com/",
       "resolvedUrl": "http://www.portlandstreetcreperie.com/",
-      "observedAt": "2026-08-28T17:36:36.763Z",
+      "observedAt": "2026-08-28T18:17:22.686Z",
       "socialProfiles": [],
+      "relatedLinks": [],
       "feeds": [],
       "sitemaps": [],
       "sourceKind": "official_website_discovery",
@@ -3956,8 +7209,9 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Primal Kitchen",
       "website": "https://www.primalhfx.ca/",
       "resolvedUrl": "https://www.primalhfx.ca/",
-      "observedAt": "2026-08-28T17:36:36.963Z",
+      "observedAt": "2026-08-28T18:17:22.656Z",
       "socialProfiles": [],
+      "relatedLinks": [],
       "feeds": [],
       "sitemaps": [],
       "sourceKind": "official_website_discovery",
@@ -3968,7 +7222,7 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Public - Café, Bakery & Bar",
       "website": "https://www.rcr.ca/restaurants/public-cafe-bakery-bar/",
       "resolvedUrl": "https://www.rcr.ca/restaurants/public-cafe-bakery-bar/",
-      "observedAt": "2026-08-28T17:36:35.608Z",
+      "observedAt": "2026-08-28T18:17:19.467Z",
       "socialProfiles": [
         {
           "platform": "instagram",
@@ -3980,6 +7234,7 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "reviewState": "verified_link"
         }
       ],
+      "relatedLinks": [],
       "feeds": [
         {
           "url": "https://www.rcr.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.rcr.ca%2Frestaurants%2Fpublic-cafe-bakery-bar%2F&#038;format=xml",
@@ -4001,13 +7256,31 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Real Fake Meats",
       "website": "https://www.realfakemeats.com/",
       "resolvedUrl": "https://www.realfakemeats.com/",
-      "observedAt": "2026-08-28T17:36:37.177Z",
+      "observedAt": "2026-08-28T18:17:22.786Z",
       "socialProfiles": [
         {
           "platform": "instagram",
           "handle": "realfakemeats",
-          "url": "https://www.instagram.com/realfakemeats/",
+          "url": "https://www.instagram.com/realfakemeats",
           "label": "FOLLOW US ON INSTAGRAM",
+          "discoveredFrom": "https://www.realfakemeats.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        }
+      ],
+      "relatedLinks": [
+        {
+          "kind": "menu",
+          "url": "https://www.realfakemeats.com/menurfm",
+          "label": "Menus",
+          "discoveredFrom": "https://www.realfakemeats.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "ordering",
+          "url": "http://realfakemeatshalifax.square.site/",
+          "label": "Order Online Now! (Local Pickup & Delivery)",
           "discoveredFrom": "https://www.realfakemeats.com/",
           "associationBasis": "linked_from_official_website",
           "reviewState": "verified_link"
@@ -4025,12 +7298,12 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Rinaldo’s",
       "website": "https://rinaldos.ca/",
       "resolvedUrl": "https://www.rinaldos.ca/",
-      "observedAt": "2026-08-28T17:36:39.362Z",
+      "observedAt": "2026-08-28T18:17:22.879Z",
       "socialProfiles": [
         {
           "platform": "facebook",
           "handle": "RinaldosHfx",
-          "url": "https://www.facebook.com/RinaldosHfx",
+          "url": "https://www.facebook.com/RinaldosHfx/",
           "label": "facebook",
           "discoveredFrom": "https://www.rinaldos.ca/",
           "associationBasis": "linked_from_official_website",
@@ -4041,6 +7314,33 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "handle": "rinaldoshfx",
           "url": "https://www.instagram.com/rinaldoshfx/",
           "label": "instagram",
+          "discoveredFrom": "https://www.rinaldos.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "platform": "x",
+          "handle": "rinaldoshfx",
+          "url": "https://twitter.com/rinaldoshfx",
+          "label": "x",
+          "discoveredFrom": "https://www.rinaldos.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        }
+      ],
+      "relatedLinks": [
+        {
+          "kind": "ordering",
+          "url": "https://order.online/business/~11847598",
+          "label": "Order Online",
+          "discoveredFrom": "https://www.rinaldos.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "reservations",
+          "url": "https://www.tbdine.com/book/restaurant/rinaldo%E2%80%99s?idApp=70285&language=en-us",
+          "label": "Reserve Now",
           "discoveredFrom": "https://www.rinaldos.ca/",
           "associationBasis": "linked_from_official_website",
           "reviewState": "verified_link"
@@ -4058,7 +7358,7 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Ristorante Amano",
       "website": "https://www.ristoranteamano.ca/",
       "resolvedUrl": "https://www.ristoranteamano.ca/",
-      "observedAt": "2026-08-28T17:36:39.940Z",
+      "observedAt": "2026-08-28T18:17:24.608Z",
       "socialProfiles": [
         {
           "platform": "instagram",
@@ -4070,10 +7370,29 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "reviewState": "verified_link"
         },
         {
+          "platform": "x",
+          "handle": "ristoranteamano",
+          "url": "https://twitter.com/ristoranteamano",
+          "label": "x",
+          "discoveredFrom": "https://www.ristoranteamano.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
           "platform": "facebook",
           "handle": "ristoranteamano",
           "url": "https://www.facebook.com/ristoranteamano",
           "label": "facebook",
+          "discoveredFrom": "https://www.ristoranteamano.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        }
+      ],
+      "relatedLinks": [
+        {
+          "kind": "reservations",
+          "url": "https://www.ristoranteamano.ca/reservations/",
+          "label": "Reservations",
           "discoveredFrom": "https://www.ristoranteamano.ca/",
           "associationBasis": "linked_from_official_website",
           "reviewState": "verified_link"
@@ -4106,8 +7425,9 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Rollz Ice Cream",
       "website": "https://rollzicecream.ca/",
       "resolvedUrl": "https://rollzicecream.ca/",
-      "observedAt": "2026-08-28T17:36:39.691Z",
+      "observedAt": "2026-08-28T18:17:23.710Z",
       "socialProfiles": [],
+      "relatedLinks": [],
       "feeds": [],
       "sitemaps": [],
       "sourceKind": "official_website_discovery",
@@ -4118,8 +7438,18 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Rush Hour Pizza",
       "website": "https://rushhourpizza.ca/",
       "resolvedUrl": "https://rushhourpizza.ca/",
-      "observedAt": "2026-08-28T17:36:39.760Z",
+      "observedAt": "2026-08-28T18:17:23.442Z",
       "socialProfiles": [],
+      "relatedLinks": [
+        {
+          "kind": "ordering",
+          "url": "https://order.online/business/~851745",
+          "label": "Order Online",
+          "discoveredFrom": "https://rushhourpizza.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        }
+      ],
       "feeds": [],
       "sitemaps": [
         "https://rushhourpizza.ca/sitemap.xml"
@@ -4132,8 +7462,19 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Salvatore's Pizzaiolo Trattoria",
       "website": "https://www.salvatorespizza.ca/",
       "resolvedUrl": "https://www.salvatorespizza.ca/",
-      "observedAt": "2026-08-28T17:36:40.778Z",
-      "socialProfiles": [],
+      "observedAt": "2026-08-28T18:17:24.674Z",
+      "socialProfiles": [
+        {
+          "platform": "x",
+          "handle": "salvatoreshfx",
+          "url": "https://twitter.com/salvatoreshfx",
+          "label": "Twitter",
+          "discoveredFrom": "https://www.salvatorespizza.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        }
+      ],
+      "relatedLinks": [],
       "feeds": [
         {
           "url": "https://www.salvatorespizza.ca/feed/",
@@ -4166,7 +7507,7 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Sea Smoke",
       "website": "https://www.seasmokehalifax.com/",
       "resolvedUrl": "https://www.seasmokehalifax.com/",
-      "observedAt": "2026-08-28T17:36:40.517Z",
+      "observedAt": "2026-08-28T18:17:24.178Z",
       "socialProfiles": [
         {
           "platform": "facebook",
@@ -4187,6 +7528,24 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "reviewState": "verified_link"
         }
       ],
+      "relatedLinks": [
+        {
+          "kind": "menu",
+          "url": "https://www.seasmokehalifax.com/menu",
+          "label": "Menu",
+          "discoveredFrom": "https://www.seasmokehalifax.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "reservations",
+          "url": "https://www.seasmokehalifax.com/reservations",
+          "label": "Reservations",
+          "discoveredFrom": "https://www.seasmokehalifax.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        }
+      ],
       "feeds": [],
       "sitemaps": [
         "https://www.seasmokehalifax.com/sitemap.xml"
@@ -4199,7 +7558,7 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Seaport Social",
       "website": "https://www.seaportsocialhalifax.com/",
       "resolvedUrl": "https://www.seaportsocialhalifax.com/",
-      "observedAt": "2026-08-28T17:36:40.688Z",
+      "observedAt": "2026-08-28T18:17:24.245Z",
       "socialProfiles": [
         {
           "platform": "facebook",
@@ -4220,6 +7579,24 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "reviewState": "verified_link"
         }
       ],
+      "relatedLinks": [
+        {
+          "kind": "menu",
+          "url": "https://www.seaportsocialhalifax.com/our-menus",
+          "label": "Our Menus",
+          "discoveredFrom": "https://www.seaportsocialhalifax.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "reservations",
+          "url": "https://www.opentable.com/r/seaport-social-reservations-halifax?restref=1120705&lang=en-US&ot_source=Restaurant%20website",
+          "label": "booking widget BOOK A TABLE",
+          "discoveredFrom": "https://www.seaportsocialhalifax.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        }
+      ],
       "feeds": [],
       "sitemaps": [
         "https://www.seaportsocialhalifax.com/image_sitemap.xml",
@@ -4233,7 +7610,7 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Second Cup",
       "website": "https://secondcup.com/en/location/bayers-lake/",
       "resolvedUrl": "https://secondcup.com/en/location/bayers-lake/",
-      "observedAt": "2026-08-28T17:36:40.895Z",
+      "observedAt": "2026-08-28T18:17:24.505Z",
       "socialProfiles": [
         {
           "platform": "facebook",
@@ -4249,6 +7626,65 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "handle": "secondcupcanada",
           "url": "https://www.instagram.com/secondcupcanada/",
           "label": "instagram",
+          "discoveredFrom": "https://secondcup.com/en/location/bayers-lake/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "platform": "tiktok",
+          "handle": "secondcupcanada",
+          "url": "https://www.tiktok.com/@secondcupcanada?",
+          "label": "tiktok",
+          "discoveredFrom": "https://secondcup.com/en/location/bayers-lake/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        }
+      ],
+      "relatedLinks": [
+        {
+          "kind": "menu",
+          "url": "https://secondcup.com/en/location/bayers-lake/#",
+          "label": "MENU +",
+          "discoveredFrom": "https://secondcup.com/en/location/bayers-lake/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "menu",
+          "url": "https://secondcup.com/en/menu/seasonal-specials/",
+          "label": "SEASONAL MENU",
+          "discoveredFrom": "https://secondcup.com/en/location/bayers-lake/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "menu",
+          "url": "https://secondcup.com/en/menu/",
+          "label": "MENU",
+          "discoveredFrom": "https://secondcup.com/en/location/bayers-lake/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "ordering",
+          "url": "https://secondcup.com/en/location/bayers-lake/#",
+          "label": "Order Online",
+          "discoveredFrom": "https://secondcup.com/en/location/bayers-lake/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "ordering",
+          "url": "https://www.skipthedishes.com/menu-group/08488360-7f9b-452d-9023-0921ce990ab4/draft",
+          "label": "Skip the Dishes",
+          "discoveredFrom": "https://secondcup.com/en/location/bayers-lake/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "ordering",
+          "url": "https://www.ubereats.com/ca/brand/second-cup",
+          "label": "Uber Eats",
           "discoveredFrom": "https://secondcup.com/en/location/bayers-lake/",
           "associationBasis": "linked_from_official_website",
           "reviewState": "verified_link"
@@ -4288,7 +7724,7 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Shuck Seafood + Raw Bar",
       "website": "https://www.rcr.ca/restaurants/shuck-seafood-raw-bar/",
       "resolvedUrl": "https://www.rcr.ca/restaurants/shuck-seafood-raw-bar/",
-      "observedAt": "2026-08-28T17:36:36.313Z",
+      "observedAt": "2026-08-28T18:17:20.134Z",
       "socialProfiles": [
         {
           "platform": "instagram",
@@ -4302,8 +7738,35 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
         {
           "platform": "facebook",
           "handle": "shuckseafoodrawbar",
-          "url": "https://www.facebook.com/shuckseafoodrawbar",
+          "url": "https://www.facebook.com/shuckseafoodrawbar/",
           "label": "facebook",
+          "discoveredFrom": "https://www.rcr.ca/restaurants/shuck-seafood-raw-bar/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "platform": "x",
+          "handle": "shuckhfx",
+          "url": "https://twitter.com/shuckhfx",
+          "label": "x",
+          "discoveredFrom": "https://www.rcr.ca/restaurants/shuck-seafood-raw-bar/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        }
+      ],
+      "relatedLinks": [
+        {
+          "kind": "reservations",
+          "url": "https://www.opentable.ca/r/shuck-seafood-and-raw-bar-halifax",
+          "label": "shuckseafood.ca",
+          "discoveredFrom": "https://www.rcr.ca/restaurants/shuck-seafood-raw-bar/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "menu",
+          "url": "https://www.rcr.ca/content/uploads/2018/02/SHUCK-dinner-SUMMER-2026-1.pdf",
+          "label": "Dinner Menu",
           "discoveredFrom": "https://www.rcr.ca/restaurants/shuck-seafood-raw-bar/",
           "associationBasis": "linked_from_official_website",
           "reviewState": "verified_link"
@@ -4330,8 +7793,36 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Sicilian Pizza",
       "website": "http://www.sicilian.ca/",
       "resolvedUrl": "http://www.sicilian.ca/",
-      "observedAt": "2026-08-28T17:36:40.797Z",
-      "socialProfiles": [],
+      "observedAt": "2026-08-28T18:17:24.581Z",
+      "socialProfiles": [
+        {
+          "platform": "x",
+          "handle": "ILoveSicilian",
+          "url": "https://twitter.com/ILoveSicilian",
+          "label": "Sicilian Pizza on Twitter",
+          "discoveredFrom": "http://www.sicilian.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        }
+      ],
+      "relatedLinks": [
+        {
+          "kind": "menu",
+          "url": "http://www.sicilian.ca/menu.php",
+          "label": "MENU",
+          "discoveredFrom": "http://www.sicilian.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "ordering",
+          "url": "https://www.order.store/store/sicilian-pizza-pizza-corner-blowers-st/0OT0-Va9QbSq_7jc_cRAbQ",
+          "label": "ORDER ONLINE",
+          "discoveredFrom": "http://www.sicilian.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        }
+      ],
       "feeds": [],
       "sitemaps": [],
       "sourceKind": "official_website_discovery",
@@ -4342,13 +7833,31 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Sketti and Ball",
       "website": "https://skettiandballco.ca/",
       "resolvedUrl": "https://skettiandballco.ca/",
-      "observedAt": "2026-08-28T17:36:41.845Z",
+      "observedAt": "2026-08-28T18:17:25.486Z",
       "socialProfiles": [
         {
           "platform": "instagram",
           "handle": "skettiandballco",
           "url": "https://www.instagram.com/skettiandballco/",
           "label": "@SkettiAndBallCo It’s creative. It’s art. It’s delicious. Everythi",
+          "discoveredFrom": "https://skettiandballco.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        }
+      ],
+      "relatedLinks": [
+        {
+          "kind": "menu",
+          "url": "https://skettiandballco.ca/#menus",
+          "label": "Menus",
+          "discoveredFrom": "https://skettiandballco.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "reservations",
+          "url": "https://widgets.libroreserve.com/WEB/NS016940236071/book",
+          "label": "Reserve",
           "discoveredFrom": "https://skettiandballco.ca/",
           "associationBasis": "linked_from_official_website",
           "reviewState": "verified_link"
@@ -4395,12 +7904,12 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Smokehouse Brewery",
       "website": "https://smokehousebrewery.ca/",
       "resolvedUrl": "https://smokehousebrewery.ca/",
-      "observedAt": "2026-08-28T17:36:42.217Z",
+      "observedAt": "2026-08-28T18:17:25.813Z",
       "socialProfiles": [
         {
           "platform": "facebook",
           "handle": "smokehousenanobrewery",
-          "url": "https://www.facebook.com/smokehousenanobrewery",
+          "url": "https://www.facebook.com/smokehousenanobrewery/",
           "label": "Follow",
           "discoveredFrom": "https://smokehousebrewery.ca/",
           "associationBasis": "linked_from_official_website",
@@ -4411,6 +7920,24 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "handle": "smokehousenanobrewery",
           "url": "https://www.instagram.com/smokehousenanobrewery/",
           "label": "Follow",
+          "discoveredFrom": "https://smokehousebrewery.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        }
+      ],
+      "relatedLinks": [
+        {
+          "kind": "events",
+          "url": "https://smokehousebrewery.ca/taproom/taproom-events/",
+          "label": "View Full Calendar",
+          "discoveredFrom": "https://smokehousebrewery.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "newsletter",
+          "url": "https://smokehousebrewery.ca/#",
+          "label": "Subscribe",
           "discoveredFrom": "https://smokehousebrewery.ca/",
           "associationBasis": "linked_from_official_website",
           "reviewState": "verified_link"
@@ -4450,8 +7977,9 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Springhouse Market",
       "website": "https://eatspringhouse.com/",
       "resolvedUrl": "https://www.eatspringhouse.com/",
-      "observedAt": "2026-08-28T17:36:41.954Z",
+      "observedAt": "2026-08-28T18:17:25.306Z",
       "socialProfiles": [],
+      "relatedLinks": [],
       "feeds": [],
       "sitemaps": [
         "https://www.eatspringhouse.com/sitemap.xml"
@@ -4464,7 +7992,7 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "St. Louis Bar & Grill",
       "website": "https://locations.stlouiswings.com/ns-dartmouth-2201/",
       "resolvedUrl": "https://locations.stlouiswings.com/ns-dartmouth-2201/",
-      "observedAt": "2026-08-28T17:36:41.425Z",
+      "observedAt": "2026-08-28T18:17:25.108Z",
       "socialProfiles": [
         {
           "platform": "facebook",
@@ -4476,10 +8004,38 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "reviewState": "verified_link"
         },
         {
+          "platform": "x",
+          "handle": "stlouiswings",
+          "url": "https://twitter.com/stlouiswings",
+          "label": ".css-bpmkwx{margin-right:5px;margin-top:5px;width:60px;height:60px;border-radius:50px;overflow:hidden;}",
+          "discoveredFrom": "https://locations.stlouiswings.com/ns-dartmouth-2201/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
           "platform": "instagram",
           "handle": "stlouiswings",
-          "url": "https://www.instagram.com/stlouiswings/",
+          "url": "https://www.instagram.com/stlouiswings",
           "label": "instagram",
+          "discoveredFrom": "https://locations.stlouiswings.com/ns-dartmouth-2201/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "platform": "tiktok",
+          "handle": "stlouiswings",
+          "url": "https://www.tiktok.com/@stlouiswings",
+          "label": "tiktok",
+          "discoveredFrom": "https://locations.stlouiswings.com/ns-dartmouth-2201/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        }
+      ],
+      "relatedLinks": [
+        {
+          "kind": "menu",
+          "url": "https://www.stlouiswings.com/select-store/",
+          "label": "Menu",
           "discoveredFrom": "https://locations.stlouiswings.com/ns-dartmouth-2201/",
           "associationBasis": "linked_from_official_website",
           "reviewState": "verified_link"
@@ -4519,8 +8075,9 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Starbucks",
       "website": "https://www.starbucks.ca/store-locator/store/6149-147151/5554-kaye-street-5554-kaye-street-halifax-ns-b-3-k-1-y-5-ca",
       "resolvedUrl": "https://www.starbucks.ca/store-locator/store/6149-147151/5554-kaye-street-5554-kaye-street-halifax-ns-b-3-k-1-y-5-ca",
-      "observedAt": "2026-08-28T17:36:24.845Z",
+      "observedAt": "2026-08-28T18:17:08.383Z",
       "socialProfiles": [],
+      "relatedLinks": [],
       "feeds": [],
       "sitemaps": [
         "https://www.starbucks.ca/sitemap.xml"
@@ -4533,8 +8090,9 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Starbucks",
       "website": "https://www.starbucks.ca/store-locator/store/4086-140770/20-parkland-dr-20-parkland-dr-halifax-ns-b-3-s-1-p-1-ca",
       "resolvedUrl": "https://www.starbucks.ca/store-locator/store/4086-140770/20-parkland-dr-20-parkland-dr-halifax-ns-b-3-s-1-p-1-ca",
-      "observedAt": "2026-08-28T17:36:25.127Z",
+      "observedAt": "2026-08-28T18:17:08.701Z",
       "socialProfiles": [],
+      "relatedLinks": [],
       "feeds": [],
       "sitemaps": [
         "https://www.starbucks.ca/sitemap.xml"
@@ -4547,8 +8105,9 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Starbucks",
       "website": "https://www.starbucks.ca/store-locator?map=57.751076,-101.645508,4z",
       "resolvedUrl": "https://www.starbucks.ca/store-locator?map=57.751076,-101.645508,4z",
-      "observedAt": "2026-08-28T17:36:25.460Z",
+      "observedAt": "2026-08-28T18:17:08.969Z",
       "socialProfiles": [],
+      "relatedLinks": [],
       "feeds": [],
       "sitemaps": [
         "https://www.starbucks.ca/sitemap.xml"
@@ -4561,7 +8120,7 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Starbucks",
       "website": "https://www.starbucks.ca/",
       "resolvedUrl": "https://www.starbucks.ca/",
-      "observedAt": "2026-08-28T17:36:25.834Z",
+      "observedAt": "2026-08-28T18:17:09.239Z",
       "socialProfiles": [
         {
           "platform": "facebook",
@@ -4575,8 +8134,51 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
         {
           "platform": "instagram",
           "handle": "starbuckscanada",
-          "url": "https://www.instagram.com/starbuckscanada/",
+          "url": "https://www.instagram.com/starbuckscanada",
           "label": "instagram",
+          "discoveredFrom": "https://www.starbucks.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "platform": "x",
+          "handle": "starbuckscanada",
+          "url": "https://x.com/starbuckscanada",
+          "label": "x",
+          "discoveredFrom": "https://www.starbucks.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        }
+      ],
+      "relatedLinks": [
+        {
+          "kind": "menu",
+          "url": "https://www.starbucks.ca/menu",
+          "label": "Menu",
+          "discoveredFrom": "https://www.starbucks.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "menu",
+          "url": "https://www.starbucks.ca/menu/the-latest/pumpkin-picks",
+          "label": "See the pumpkin menu",
+          "discoveredFrom": "https://www.starbucks.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "ordering",
+          "url": "https://www.starbucks.ca/delivery/",
+          "label": "Delivery",
+          "discoveredFrom": "https://www.starbucks.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "ordering",
+          "url": "https://www.starbucks.ca/ways-to-order/",
+          "label": "Order and Pickup Options",
           "discoveredFrom": "https://www.starbucks.ca/",
           "associationBasis": "linked_from_official_website",
           "reviewState": "verified_link"
@@ -4594,7 +8196,7 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Starbucks",
       "website": "https://www.starbucks.ca/",
       "resolvedUrl": "https://www.starbucks.ca/",
-      "observedAt": "2026-08-28T17:36:26.127Z",
+      "observedAt": "2026-08-28T18:17:09.482Z",
       "socialProfiles": [
         {
           "platform": "facebook",
@@ -4608,8 +8210,51 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
         {
           "platform": "instagram",
           "handle": "starbuckscanada",
-          "url": "https://www.instagram.com/starbuckscanada/",
+          "url": "https://www.instagram.com/starbuckscanada",
           "label": "instagram",
+          "discoveredFrom": "https://www.starbucks.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "platform": "x",
+          "handle": "starbuckscanada",
+          "url": "https://x.com/starbuckscanada",
+          "label": "x",
+          "discoveredFrom": "https://www.starbucks.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        }
+      ],
+      "relatedLinks": [
+        {
+          "kind": "menu",
+          "url": "https://www.starbucks.ca/menu",
+          "label": "Menu",
+          "discoveredFrom": "https://www.starbucks.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "menu",
+          "url": "https://www.starbucks.ca/menu/the-latest/pumpkin-picks",
+          "label": "See the pumpkin menu",
+          "discoveredFrom": "https://www.starbucks.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "ordering",
+          "url": "https://www.starbucks.ca/delivery/",
+          "label": "Delivery",
+          "discoveredFrom": "https://www.starbucks.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "ordering",
+          "url": "https://www.starbucks.ca/ways-to-order/",
+          "label": "Order and Pickup Options",
           "discoveredFrom": "https://www.starbucks.ca/",
           "associationBasis": "linked_from_official_website",
           "reviewState": "verified_link"
@@ -4627,8 +8272,9 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Starbucks",
       "website": "https://www.starbucks.ca/store-locator/store/65775-299863/atlantic-superstore-portland-s-650-portland-street-dartmouth-ns-b-2-w-2-m-7-ca",
       "resolvedUrl": "https://www.starbucks.ca/store-locator/store/65775-299863/atlantic-superstore-portland-s-650-portland-street-dartmouth-ns-b-2-w-2-m-7-ca",
-      "observedAt": "2026-08-28T17:36:26.344Z",
+      "observedAt": "2026-08-28T18:17:09.693Z",
       "socialProfiles": [],
+      "relatedLinks": [],
       "feeds": [],
       "sitemaps": [
         "https://www.starbucks.ca/sitemap.xml"
@@ -4641,8 +8287,9 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Starbucks",
       "website": "https://www.starbucks.ca/store-locator/store/12465-151926/86-chain-lake-drive-86-chain-lake-drive-halifax-ns-b-3-s-1-a-2-ca",
       "resolvedUrl": "https://www.starbucks.ca/store-locator/store/12465-151926/86-chain-lake-drive-86-chain-lake-drive-halifax-ns-b-3-s-1-a-2-ca",
-      "observedAt": "2026-08-28T17:36:26.621Z",
+      "observedAt": "2026-08-28T18:17:09.932Z",
       "socialProfiles": [],
+      "relatedLinks": [],
       "feeds": [],
       "sitemaps": [
         "https://www.starbucks.ca/sitemap.xml"
@@ -4655,13 +8302,31 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Starbucks",
       "website": "https://dal.campusdish.com/LocationsAndMenus/StarbucksatTupperMedicalBuilding",
       "resolvedUrl": "https://dal.mydininghub.ca/en/locations",
-      "observedAt": "2026-08-28T17:36:22.057Z",
+      "observedAt": "2026-08-28T18:17:06.138Z",
       "socialProfiles": [
         {
           "platform": "instagram",
           "handle": "Dalfood",
           "url": "https://www.instagram.com/Dalfood/",
           "label": "instagram",
+          "discoveredFrom": "https://dal.mydininghub.ca/en/locations",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        }
+      ],
+      "relatedLinks": [
+        {
+          "kind": "menu",
+          "url": "https://dal.mydininghub.ca/en/account?section=my-menu",
+          "label": "My Menu",
+          "discoveredFrom": "https://dal.mydininghub.ca/en/locations",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "menu",
+          "url": "https://dal.mydininghub.ca/en/locations",
+          "label": "Locations & Menus",
           "discoveredFrom": "https://dal.mydininghub.ca/en/locations",
           "associationBasis": "linked_from_official_website",
           "reviewState": "verified_link"
@@ -4679,8 +8344,9 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Starbucks",
       "website": "https://www.starbucks.ca/store-locator/store/65774-300165/atlantic-superstore-chain-lake-210-chain-lake-drive-halifax-ns-b-3-s-1-c-5-ca",
       "resolvedUrl": "https://www.starbucks.ca/store-locator/store/65774-300165/atlantic-superstore-chain-lake-210-chain-lake-drive-halifax-ns-b-3-s-1-c-5-ca",
-      "observedAt": "2026-08-28T17:36:27.037Z",
+      "observedAt": "2026-08-28T18:17:10.202Z",
       "socialProfiles": [],
+      "relatedLinks": [],
       "feeds": [],
       "sitemaps": [
         "https://www.starbucks.ca/sitemap.xml"
@@ -4693,8 +8359,9 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Starbucks",
       "website": "https://www.starbucks.ca/store-locator/store/79117-307543/318-herring-cove-rd-318-herring-cove-rd-halifax-ns-b-3-r-1-v-4-ca",
       "resolvedUrl": "https://www.starbucks.ca/store-locator/store/79117-307543/318-herring-cove-rd-318-herring-cove-rd-halifax-ns-b-3-r-1-v-4-ca",
-      "observedAt": "2026-08-28T17:36:27.303Z",
+      "observedAt": "2026-08-28T18:17:10.418Z",
       "socialProfiles": [],
+      "relatedLinks": [],
       "feeds": [],
       "sitemaps": [
         "https://www.starbucks.ca/sitemap.xml"
@@ -4707,8 +8374,9 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Starbucks",
       "website": "https://www.starbucks.ca/store-locator/store/66230-300523/sobeys-clayton-park-644-287-lacewood-drive-halifax-ns-b-3-m-3-y-7-ca",
       "resolvedUrl": "https://www.starbucks.ca/store-locator/store/66230-300523/sobeys-clayton-park-644-287-lacewood-drive-halifax-ns-b-3-m-3-y-7-ca",
-      "observedAt": "2026-08-28T17:36:27.542Z",
+      "observedAt": "2026-08-28T18:17:10.679Z",
       "socialProfiles": [],
+      "relatedLinks": [],
       "feeds": [],
       "sitemaps": [
         "https://www.starbucks.ca/sitemap.xml"
@@ -4721,8 +8389,9 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Starbucks",
       "website": "https://www.starbucks.ca/store-locator/store/61586-294956/atlantic-superstore-joseph-how-3601-joseph-howe-drive-halifax-ns-b-3-l-4-h-8-ca",
       "resolvedUrl": "https://www.starbucks.ca/store-locator/store/61586-294956/atlantic-superstore-joseph-how-3601-joseph-howe-drive-halifax-ns-b-3-l-4-h-8-ca",
-      "observedAt": "2026-08-28T17:36:27.762Z",
+      "observedAt": "2026-08-28T18:17:10.926Z",
       "socialProfiles": [],
+      "relatedLinks": [],
       "feeds": [],
       "sitemaps": [
         "https://www.starbucks.ca/sitemap.xml"
@@ -4735,8 +8404,9 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Starbucks",
       "website": "https://www.starbucks.ca/store-locator/store/23087-222344/675-windmill-road-11-cuddy-lane-dartmouth-ns-b-3-b-0-l-1-ca",
       "resolvedUrl": "https://www.starbucks.ca/store-locator/store/23087-222344/675-windmill-road-11-cuddy-lane-dartmouth-ns-b-3-b-0-l-1-ca",
-      "observedAt": "2026-08-28T17:36:27.988Z",
+      "observedAt": "2026-08-28T18:17:11.204Z",
       "socialProfiles": [],
+      "relatedLinks": [],
       "feeds": [],
       "sitemaps": [
         "https://www.starbucks.ca/sitemap.xml"
@@ -4749,8 +8419,9 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Starbucks",
       "website": "https://www.starbucks.ca/store-locator/store/20568-206464/halifax-shopping-centre-leve-7001-mumford-road-halifax-ns-b-3-l-4-t-8-ca",
       "resolvedUrl": "https://www.starbucks.ca/store-locator/store/20568-206464/halifax-shopping-centre-leve-7001-mumford-road-halifax-ns-b-3-l-4-t-8-ca",
-      "observedAt": "2026-08-28T17:36:28.232Z",
+      "observedAt": "2026-08-28T18:17:11.409Z",
       "socialProfiles": [],
+      "relatedLinks": [],
       "feeds": [],
       "sitemaps": [
         "https://www.starbucks.ca/sitemap.xml"
@@ -4763,12 +8434,12 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Station 1 Lebanese Kitchen",
       "website": "https://station1lebanesekitchen.com/",
       "resolvedUrl": "https://station1lebanesekitchen.com/",
-      "observedAt": "2026-08-28T17:36:41.898Z",
+      "observedAt": "2026-08-28T18:17:25.497Z",
       "socialProfiles": [
         {
           "platform": "facebook",
           "handle": "station1me",
-          "url": "https://www.facebook.com/station1me",
+          "url": "https://www.facebook.com/station1me/",
           "label": "facebook",
           "discoveredFrom": "https://station1lebanesekitchen.com/",
           "associationBasis": "linked_from_official_website",
@@ -4777,8 +8448,18 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
         {
           "platform": "instagram",
           "handle": "station1finefood",
-          "url": "https://www.instagram.com/station1finefood/",
+          "url": "https://instagram.com/station1finefood?igshid=1u64n2j9b092k",
           "label": "instagram",
+          "discoveredFrom": "https://station1lebanesekitchen.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        }
+      ],
+      "relatedLinks": [
+        {
+          "kind": "menu",
+          "url": "https://station1lebanesekitchen.com/#plates",
+          "label": "Menu",
           "discoveredFrom": "https://station1lebanesekitchen.com/",
           "associationBasis": "linked_from_official_website",
           "reviewState": "verified_link"
@@ -4818,13 +8499,31 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Stillwell",
       "website": "https://www.barstillwell.com/",
       "resolvedUrl": "https://www.barstillwell.com/",
-      "observedAt": "2026-08-28T17:36:41.740Z",
+      "observedAt": "2026-08-28T18:17:25.544Z",
       "socialProfiles": [
         {
           "platform": "instagram",
           "handle": "stillwellbrewing",
           "url": "https://www.instagram.com/stillwellbrewing/",
           "label": "instagram",
+          "discoveredFrom": "https://www.barstillwell.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        }
+      ],
+      "relatedLinks": [
+        {
+          "kind": "events",
+          "url": "https://www.barstillwell.com/pages/events-new",
+          "label": "Events",
+          "discoveredFrom": "https://www.barstillwell.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "events",
+          "url": "https://www.barstillwell.com/pages/events",
+          "label": "Next Events ›",
           "discoveredFrom": "https://www.barstillwell.com/",
           "associationBasis": "linked_from_official_website",
           "reviewState": "verified_link"
@@ -4842,13 +8541,31 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Stone Pizza",
       "website": "https://stonepizza.ca/",
       "resolvedUrl": "https://stonepizza.ca/",
-      "observedAt": "2026-08-28T17:36:42.290Z",
+      "observedAt": "2026-08-28T18:17:25.911Z",
       "socialProfiles": [
         {
           "platform": "facebook",
           "handle": "StonePizzaDartmouth",
-          "url": "https://www.facebook.com/StonePizzaDartmouth",
+          "url": "https://www.facebook.com/StonePizzaDartmouth/reviews",
           "label": "Facebook",
+          "discoveredFrom": "https://stonepizza.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        }
+      ],
+      "relatedLinks": [
+        {
+          "kind": "menu",
+          "url": "https://stonepizza.ca/pizza/",
+          "label": "Menu",
+          "discoveredFrom": "https://stonepizza.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "ordering",
+          "url": "https://stonepizzadartmouth.square.site/s/order",
+          "label": "Order Online",
           "discoveredFrom": "https://stonepizza.ca/",
           "associationBasis": "linked_from_official_website",
           "reviewState": "verified_link"
@@ -4886,8 +8603,17 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Studio East Food+Drink",
       "website": "https://www.studioeastfood.ca/",
       "resolvedUrl": "https://www.studioeastfood.ca/",
-      "observedAt": "2026-08-28T17:36:42.284Z",
+      "observedAt": "2026-08-28T18:17:25.823Z",
       "socialProfiles": [
+        {
+          "platform": "x",
+          "handle": "studioeasthfx",
+          "url": "https://twitter.com/studioeasthfx",
+          "label": "x",
+          "discoveredFrom": "https://www.studioeastfood.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
         {
           "platform": "instagram",
           "handle": "studioeasthfx",
@@ -4900,8 +8626,82 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
         {
           "platform": "facebook",
           "handle": "studioeasthfx",
-          "url": "https://www.facebook.com/studioeasthfx",
+          "url": "https://www.facebook.com/studioeasthfx/",
           "label": "facebook",
+          "discoveredFrom": "https://www.studioeastfood.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        }
+      ],
+      "relatedLinks": [
+        {
+          "kind": "menu",
+          "url": "https://www.studioeastfood.ca/menu/brunch",
+          "label": "Brunch Menu",
+          "discoveredFrom": "https://www.studioeastfood.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "events",
+          "url": "https://www.studioeastfood.ca/events",
+          "label": "Private Events at Studio East",
+          "discoveredFrom": "https://www.studioeastfood.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "events",
+          "url": "https://www.studioeastfood.ca/events/restaurant",
+          "label": "Restaurant Events",
+          "discoveredFrom": "https://www.studioeastfood.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "events",
+          "url": "https://www.studioeastfood.ca/events/dragonbar",
+          "label": "Cocktail Events at the Dragon Bar",
+          "discoveredFrom": "https://www.studioeastfood.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "reservations",
+          "url": "https://www.exploretock.com/studio-east-asian-gastropub-halifax",
+          "label": "Reservations",
+          "discoveredFrom": "https://www.studioeastfood.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "menu",
+          "url": "https://www.studioeastfood.ca/menusall",
+          "label": "Folder: Menus",
+          "discoveredFrom": "https://www.studioeastfood.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "events",
+          "url": "https://www.studioeastfood.ca/eventsnew",
+          "label": "Folder: Events and Catering",
+          "discoveredFrom": "https://www.studioeastfood.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "menu",
+          "url": "https://www.studioeastfood.ca/menu/dinner",
+          "label": "Menu",
+          "discoveredFrom": "https://www.studioeastfood.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "ordering",
+          "url": "https://order.toasttab.com/egiftcards/studio-east-6021-cunard-st",
+          "label": "Gift cards",
           "discoveredFrom": "https://www.studioeastfood.ca/",
           "associationBasis": "linked_from_official_website",
           "reviewState": "verified_link"
@@ -4919,8 +8719,9 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Subway",
       "website": "https://www.subway.com/",
       "resolvedUrl": "https://www.subway.com/en-us",
-      "observedAt": "2026-08-28T17:36:42.270Z",
+      "observedAt": "2026-08-28T18:17:25.916Z",
       "socialProfiles": [],
+      "relatedLinks": [],
       "feeds": [],
       "sitemaps": [
         "https://www.subway.com/en-us/sitemap.xml",
@@ -4938,8 +8739,9 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Subway",
       "website": "https://www.subway.com/",
       "resolvedUrl": "https://www.subway.com/en-us",
-      "observedAt": "2026-08-28T17:36:42.873Z",
+      "observedAt": "2026-08-28T18:17:26.282Z",
       "socialProfiles": [],
+      "relatedLinks": [],
       "feeds": [],
       "sitemaps": [
         "https://www.subway.com/en-us/sitemap.xml",
@@ -4957,12 +8759,12 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Subway",
       "website": "https://restaurants.subway.com/canada/ns/dartmouth/100-main-st",
       "resolvedUrl": "https://restaurants.subway.com/canada/ns/dartmouth/100-main-st",
-      "observedAt": "2026-08-28T17:36:42.548Z",
+      "observedAt": "2026-08-28T18:17:26.062Z",
       "socialProfiles": [
         {
           "platform": "facebook",
           "handle": "SubwayCanada",
-          "url": "https://www.facebook.com/SubwayCanada",
+          "url": "https://www.facebook.com/SubwayCanada/",
           "label": "facebook",
           "discoveredFrom": "https://restaurants.subway.com/canada/ns/dartmouth/100-main-st",
           "associationBasis": "linked_from_official_website",
@@ -4971,8 +8773,84 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
         {
           "platform": "instagram",
           "handle": "subwaycanada",
-          "url": "https://www.instagram.com/subwaycanada/",
+          "url": "https://www.instagram.com/subwaycanada",
           "label": "instagram",
+          "discoveredFrom": "https://restaurants.subway.com/canada/ns/dartmouth/100-main-st",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "platform": "x",
+          "handle": "subwaycanada",
+          "url": "https://twitter.com/subwaycanada",
+          "label": "x",
+          "discoveredFrom": "https://restaurants.subway.com/canada/ns/dartmouth/100-main-st",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "platform": "youtube",
+          "handle": "UChxdSavaJLzvyHDD8SowLNw",
+          "url": "https://www.youtube.com/channel/UChxdSavaJLzvyHDD8SowLNw",
+          "label": "youtube",
+          "discoveredFrom": "https://restaurants.subway.com/canada/ns/dartmouth/100-main-st",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        }
+      ],
+      "relatedLinks": [
+        {
+          "kind": "ordering",
+          "url": "https://subway.com/en-ca/restaurant/13072-0/menu?intcmp=yext-local:owned:order:Order%20Pickup:fwh-no-value-w2-2020:0:button:0:orderpickup:hu:local-ca-en-v1&segment_code=0",
+          "label": "Order Pick Up",
+          "discoveredFrom": "https://restaurants.subway.com/canada/ns/dartmouth/100-main-st",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "ordering",
+          "url": "https://www.subway.com/en-ca/locator?mode=delivery?intcmp=yext-local:owned:order:Order%20Delivery:fwh-no-value-w2-2020:0:button:0:order-delivery:hu:local-ca-en-v1&segment_code=0",
+          "label": "Order Delivery",
+          "discoveredFrom": "https://restaurants.subway.com/canada/ns/dartmouth/100-main-st",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "ordering",
+          "url": "https://subway.com/en-ca/restaurant/13072-0/menu",
+          "label": "Order Pick Up",
+          "discoveredFrom": "https://restaurants.subway.com/canada/ns/dartmouth/100-main-st",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "ordering",
+          "url": "https://www.subway.com/en-ca/locator?mode=delivery",
+          "label": "Order Delivery",
+          "discoveredFrom": "https://restaurants.subway.com/canada/ns/dartmouth/100-main-st",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "menu",
+          "url": "https://www.subway.com/en-ca/Catering/CateringProducts?intcmp=yext-local:owned:0:See%20Catering%20Menu:fwh-no-value-w2-2020:0:button:0:see-catering-menu:ter:local-ca-en-v1&segment_code=0",
+          "label": "See Catering Menu",
+          "discoveredFrom": "https://restaurants.subway.com/canada/ns/dartmouth/100-main-st",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "menu",
+          "url": "https://www.subway.com/en-CA/MenuNutrition/Menu",
+          "label": "View National Menu",
+          "discoveredFrom": "https://restaurants.subway.com/canada/ns/dartmouth/100-main-st",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "newsletter",
+          "url": "https://contactsubscriptions.subway.com/en-CA/unsubscribe/",
+          "label": "Unsubscribe",
           "discoveredFrom": "https://restaurants.subway.com/canada/ns/dartmouth/100-main-st",
           "associationBasis": "linked_from_official_website",
           "reviewState": "verified_link"
@@ -4990,8 +8868,9 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Subway",
       "website": "https://www.subway.com/",
       "resolvedUrl": "https://www.subway.com/en-us",
-      "observedAt": "2026-08-28T17:36:43.086Z",
+      "observedAt": "2026-08-28T18:17:26.616Z",
       "socialProfiles": [],
+      "relatedLinks": [],
       "feeds": [],
       "sitemaps": [
         "https://www.subway.com/en-us/sitemap.xml",
@@ -5009,8 +8888,9 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Subway",
       "website": "https://www.subway.com/",
       "resolvedUrl": "https://www.subway.com/en-us",
-      "observedAt": "2026-08-28T17:36:43.483Z",
+      "observedAt": "2026-08-28T18:17:26.887Z",
       "socialProfiles": [],
+      "relatedLinks": [],
       "feeds": [],
       "sitemaps": [
         "https://www.subway.com/en-us/sitemap.xml",
@@ -5028,8 +8908,9 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Subway",
       "website": "https://www.subway.com/",
       "resolvedUrl": "https://www.subway.com/en-us",
-      "observedAt": "2026-08-28T17:36:43.717Z",
+      "observedAt": "2026-08-28T18:17:27.105Z",
       "socialProfiles": [],
+      "relatedLinks": [],
       "feeds": [],
       "sitemaps": [
         "https://www.subway.com/en-us/sitemap.xml",
@@ -5047,7 +8928,7 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Sully & Porter",
       "website": "https://sullyandporter.com/",
       "resolvedUrl": "https://sullyandporter.com/",
-      "observedAt": "2026-08-28T17:36:42.944Z",
+      "observedAt": "2026-08-28T18:17:26.310Z",
       "socialProfiles": [
         {
           "platform": "facebook",
@@ -5061,8 +8942,18 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
         {
           "platform": "instagram",
           "handle": "sullyandporter",
-          "url": "https://www.instagram.com/sullyandporter/",
+          "url": "https://www.instagram.com/sullyandporter",
           "label": "instagram",
+          "discoveredFrom": "https://sullyandporter.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        }
+      ],
+      "relatedLinks": [
+        {
+          "kind": "menu",
+          "url": "https://sullyandporter.com/menu/",
+          "label": "Menu",
           "discoveredFrom": "https://sullyandporter.com/",
           "associationBasis": "linked_from_official_website",
           "reviewState": "verified_link"
@@ -5100,8 +8991,18 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Summit Cafe",
       "website": "https://www.thesummitcafe.ca/",
       "resolvedUrl": "https://www.thesummitcafe.ca/",
-      "observedAt": "2026-08-28T17:36:43.301Z",
+      "observedAt": "2026-08-28T18:17:26.879Z",
       "socialProfiles": [],
+      "relatedLinks": [
+        {
+          "kind": "menu",
+          "url": "https://www.thesummitcafe.ca/our-menu/",
+          "label": "Our Menu",
+          "discoveredFrom": "https://www.thesummitcafe.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        }
+      ],
       "feeds": [
         {
           "url": "https://www.thesummitcafe.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.thesummitcafe.ca%2F&#038;format=xml",
@@ -5120,13 +9021,23 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Sushi Cove",
       "website": "https://sushicovehalifax.com/",
       "resolvedUrl": "https://sushisquare.ca/",
-      "observedAt": "2026-08-28T17:36:43.201Z",
+      "observedAt": "2026-08-28T18:17:26.803Z",
       "socialProfiles": [
         {
           "platform": "facebook",
           "handle": "61585476310966",
-          "url": "https://www.facebook.com/61585476310966",
+          "url": "https://www.facebook.com/profile.php?id=61585476310966",
           "label": "Facebook-f",
+          "discoveredFrom": "https://sushisquare.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        }
+      ],
+      "relatedLinks": [
+        {
+          "kind": "menu",
+          "url": "https://sushisquare.ca/menu/",
+          "label": "Menu",
           "discoveredFrom": "https://sushisquare.ca/",
           "associationBasis": "linked_from_official_website",
           "reviewState": "verified_link"
@@ -5166,12 +9077,12 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Sushi Nami Royale",
       "website": "https://sushinami.ca/",
       "resolvedUrl": "https://sushinami.ca/",
-      "observedAt": "2026-08-28T17:36:43.601Z",
+      "observedAt": "2026-08-28T18:17:27.173Z",
       "socialProfiles": [
         {
           "platform": "facebook",
           "handle": "sushinamiroyale",
-          "url": "https://www.facebook.com/sushinamiroyale",
+          "url": "https://www.facebook.com/sushinamiroyale/",
           "label": "Fb",
           "discoveredFrom": "https://sushinami.ca/",
           "associationBasis": "linked_from_official_website",
@@ -5182,6 +9093,89 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "handle": "sushinami_official",
           "url": "https://www.instagram.com/sushinami_official/",
           "label": "in",
+          "discoveredFrom": "https://sushinami.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "platform": "x",
+          "handle": "sushinamiroyale",
+          "url": "https://twitter.com/sushinamiroyale",
+          "label": "Tw",
+          "discoveredFrom": "https://sushinami.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        }
+      ],
+      "relatedLinks": [
+        {
+          "kind": "menu",
+          "url": "https://sushinami.ca/downtown-halifax/lunch-menu/",
+          "label": "Lunch Menu",
+          "discoveredFrom": "https://sushinami.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "ordering",
+          "url": "https://sushinami.ca/downtown-halifax/take-out/",
+          "label": "Take Out Menu",
+          "discoveredFrom": "https://sushinami.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "menu",
+          "url": "https://sushinami.ca/dartmouth-crossing/lunch-menu/",
+          "label": "Lunch Menu",
+          "discoveredFrom": "https://sushinami.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "ordering",
+          "url": "https://sushinami.ca/dartmouth-crossing/take-out/",
+          "label": "Take Out",
+          "discoveredFrom": "https://sushinami.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "menu",
+          "url": "https://sushinami.ca/bayers-lake/lunch-menu/",
+          "label": "Lunch Menu",
+          "discoveredFrom": "https://sushinami.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "ordering",
+          "url": "https://sushinami.ca/bayers-lake/take-out/",
+          "label": "Take Out",
+          "discoveredFrom": "https://sushinami.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "menu",
+          "url": "https://sushinami.ca/bedford-highway/lunch-menu/",
+          "label": "Lunch Menu",
+          "discoveredFrom": "https://sushinami.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "ordering",
+          "url": "https://sushinami.ca/bedford-highway/take-out/",
+          "label": "Take Out",
+          "discoveredFrom": "https://sushinami.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "events",
+          "url": "https://sushinami.ca/contact-sushi-nami-royale/",
+          "label": "Private Events",
           "discoveredFrom": "https://sushinami.ca/",
           "associationBasis": "linked_from_official_website",
           "reviewState": "verified_link"
@@ -5219,12 +9213,12 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Sushi Nami Royale",
       "website": "https://sushinami.ca/",
       "resolvedUrl": "https://sushinami.ca/",
-      "observedAt": "2026-08-28T17:36:44.405Z",
+      "observedAt": "2026-08-28T18:17:28.006Z",
       "socialProfiles": [
         {
           "platform": "facebook",
           "handle": "sushinamiroyale",
-          "url": "https://www.facebook.com/sushinamiroyale",
+          "url": "https://www.facebook.com/sushinamiroyale/",
           "label": "Fb",
           "discoveredFrom": "https://sushinami.ca/",
           "associationBasis": "linked_from_official_website",
@@ -5235,6 +9229,89 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "handle": "sushinami_official",
           "url": "https://www.instagram.com/sushinami_official/",
           "label": "in",
+          "discoveredFrom": "https://sushinami.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "platform": "x",
+          "handle": "sushinamiroyale",
+          "url": "https://twitter.com/sushinamiroyale",
+          "label": "Tw",
+          "discoveredFrom": "https://sushinami.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        }
+      ],
+      "relatedLinks": [
+        {
+          "kind": "menu",
+          "url": "https://sushinami.ca/downtown-halifax/lunch-menu/",
+          "label": "Lunch Menu",
+          "discoveredFrom": "https://sushinami.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "ordering",
+          "url": "https://sushinami.ca/downtown-halifax/take-out/",
+          "label": "Take Out Menu",
+          "discoveredFrom": "https://sushinami.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "menu",
+          "url": "https://sushinami.ca/dartmouth-crossing/lunch-menu/",
+          "label": "Lunch Menu",
+          "discoveredFrom": "https://sushinami.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "ordering",
+          "url": "https://sushinami.ca/dartmouth-crossing/take-out/",
+          "label": "Take Out",
+          "discoveredFrom": "https://sushinami.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "menu",
+          "url": "https://sushinami.ca/bayers-lake/lunch-menu/",
+          "label": "Lunch Menu",
+          "discoveredFrom": "https://sushinami.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "ordering",
+          "url": "https://sushinami.ca/bayers-lake/take-out/",
+          "label": "Take Out",
+          "discoveredFrom": "https://sushinami.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "menu",
+          "url": "https://sushinami.ca/bedford-highway/lunch-menu/",
+          "label": "Lunch Menu",
+          "discoveredFrom": "https://sushinami.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "ordering",
+          "url": "https://sushinami.ca/bedford-highway/take-out/",
+          "label": "Take Out",
+          "discoveredFrom": "https://sushinami.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "events",
+          "url": "https://sushinami.ca/contact-sushi-nami-royale/",
+          "label": "Private Events",
           "discoveredFrom": "https://sushinami.ca/",
           "associationBasis": "linked_from_official_website",
           "reviewState": "verified_link"
@@ -5272,13 +9349,48 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Sushi Shige",
       "website": "https://www.shige.ca/",
       "resolvedUrl": "https://www.shige.ca/",
-      "observedAt": "2026-08-28T17:36:43.756Z",
+      "observedAt": "2026-08-28T18:17:27.284Z",
       "socialProfiles": [
         {
           "platform": "instagram",
           "handle": "sushi_shige_halifax",
           "url": "https://www.instagram.com/sushi_shige_halifax/",
           "label": "instagram",
+          "discoveredFrom": "https://www.shige.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "platform": "x",
+          "handle": "sushi_shige",
+          "url": "https://x.com/sushi_shige",
+          "label": "x",
+          "discoveredFrom": "https://www.shige.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        }
+      ],
+      "relatedLinks": [
+        {
+          "kind": "ordering",
+          "url": "https://www.clover.com/online-ordering/sushi-shige-japanese-restaurant-halifax",
+          "label": "ORDER ONLINE PlCKUP",
+          "discoveredFrom": "https://www.shige.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "ordering",
+          "url": "http://www.skipthedishes.com/sushi-shige-japanese-restaurant",
+          "label": "DELIVERY",
+          "discoveredFrom": "https://www.shige.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "menu",
+          "url": "https://www.shige.ca/menu",
+          "label": "VIEW MENU",
           "discoveredFrom": "https://www.shige.ca/",
           "associationBasis": "linked_from_official_website",
           "reviewState": "verified_link"
@@ -5304,13 +9416,48 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Swaad Sagaa Indian Cuisine Incorporated",
       "website": "https://www.swaadsagaa.com/",
       "resolvedUrl": "https://www.swaadsagaa.com/",
-      "observedAt": "2026-08-28T17:36:44.880Z",
+      "observedAt": "2026-08-28T18:17:28.301Z",
       "socialProfiles": [
         {
           "platform": "instagram",
           "handle": "swaadsagaa",
-          "url": "https://www.instagram.com/swaadsagaa/",
+          "url": "https://instagram.com/swaadsagaa",
           "label": "Instagram",
+          "discoveredFrom": "https://www.swaadsagaa.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "platform": "youtube",
+          "handle": "swaadsagaa",
+          "url": "https://youtube.com/@swaadsagaa",
+          "label": "YouTube",
+          "discoveredFrom": "https://www.swaadsagaa.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        }
+      ],
+      "relatedLinks": [
+        {
+          "kind": "ordering",
+          "url": "https://www.ubereats.com/ca/store/swaad-sagaa-indian-cuisine-inc/dCkbGpvtX2GTgETECBDK3A?srsltid=AfmBOoqb2bBWK8PYu9nZRaus3IdkR8cc4kFmQw8dQVfMKHywdY7TpMV4",
+          "label": "ordering",
+          "discoveredFrom": "https://www.swaadsagaa.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "ordering",
+          "url": "https://www.doordash.com/en-CA/store/swaad-sagaa-indian-cuisine-inc-25845814/?srsltid=AfmBOoonRIIB0sZoJ8vcRRr98mKDVHOD9NXv0KshcXzxZQEV7rdoIgOM",
+          "label": "ordering",
+          "discoveredFrom": "https://www.swaadsagaa.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "ordering",
+          "url": "https://www.swaadsagaa.com/tel&#x3A;9023996229",
+          "label": "Call to place your order (Pick up)",
           "discoveredFrom": "https://www.swaadsagaa.com/",
           "associationBasis": "linked_from_official_website",
           "reviewState": "verified_link"
@@ -5336,12 +9483,12 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Sweet & Sassy",
       "website": "https://sweetandsassy.ca/",
       "resolvedUrl": "https://sweetandsassy.ca/",
-      "observedAt": "2026-08-28T17:36:44.505Z",
+      "observedAt": "2026-08-28T18:17:27.934Z",
       "socialProfiles": [
         {
           "platform": "facebook",
           "handle": "100046240432924",
-          "url": "https://www.facebook.com/100046240432924",
+          "url": "https://www.facebook.com/profile.php?id=100046240432924",
           "label": "facebook",
           "discoveredFrom": "https://sweetandsassy.ca/",
           "associationBasis": "linked_from_official_website",
@@ -5352,6 +9499,41 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "handle": "sweetandsassyhalifax",
           "url": "https://www.instagram.com/sweetandsassyhalifax/",
           "label": "instagram",
+          "discoveredFrom": "https://sweetandsassy.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "platform": "tiktok",
+          "handle": "sweetandsassy.halifax",
+          "url": "https://www.tiktok.com/@sweetandsassy.halifax",
+          "label": "tiktok",
+          "discoveredFrom": "https://sweetandsassy.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        }
+      ],
+      "relatedLinks": [
+        {
+          "kind": "menu",
+          "url": "https://sweetandsassy.ca/caribbean-menu",
+          "label": "Caribbean Menu",
+          "discoveredFrom": "https://sweetandsassy.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "menu",
+          "url": "https://sweetandsassy.ca/breakfast-menu",
+          "label": "Breakfast Menu",
+          "discoveredFrom": "https://sweetandsassy.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "tickets",
+          "url": "https://www.eventbrite.ca/e/new-years-eve-tickets-1977500641652?aff=ebdssbcategorybrowse&amp;keep_tld=1",
+          "label": "Purchase ticket",
           "discoveredFrom": "https://sweetandsassy.ca/",
           "associationBasis": "linked_from_official_website",
           "reviewState": "verified_link"
@@ -5369,8 +9551,18 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Tako Sushi & Ramen",
       "website": "https://www.takosushiramen.ca/",
       "resolvedUrl": "https://www.takosushiramen.ca/",
-      "observedAt": "2026-08-28T17:36:45.189Z",
+      "observedAt": "2026-08-28T18:17:28.437Z",
       "socialProfiles": [],
+      "relatedLinks": [
+        {
+          "kind": "menu",
+          "url": "https://www.takosushiramen.ca/menu/chefs-special-rolls",
+          "label": "Menu",
+          "discoveredFrom": "https://www.takosushiramen.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        }
+      ],
       "feeds": [],
       "sitemaps": [],
       "sourceKind": "official_website_discovery",
@@ -5381,7 +9573,7 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Terra Cafe",
       "website": "https://terracafe.ca/",
       "resolvedUrl": "https://terracafe.ca/",
-      "observedAt": "2026-08-28T17:36:45.305Z",
+      "observedAt": "2026-08-28T18:17:28.456Z",
       "socialProfiles": [
         {
           "platform": "facebook",
@@ -5402,6 +9594,24 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "reviewState": "verified_link"
         }
       ],
+      "relatedLinks": [
+        {
+          "kind": "menu",
+          "url": "https://terracafe.ca/kitchenmenu",
+          "label": "The Kitchen Menu",
+          "discoveredFrom": "https://terracafe.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "menu",
+          "url": "https://terracafe.ca/menu",
+          "label": "Folder: Menu",
+          "discoveredFrom": "https://terracafe.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        }
+      ],
       "feeds": [],
       "sitemaps": [
         "https://terracafe.ca/sitemap.xml"
@@ -5414,13 +9624,23 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "THE 5K CAFE",
       "website": "https://www.the5kcafe.ca/",
       "resolvedUrl": "https://www.the5kcafe.ca/",
-      "observedAt": "2026-08-28T17:36:45.542Z",
+      "observedAt": "2026-08-28T18:17:28.727Z",
       "socialProfiles": [
         {
           "platform": "instagram",
           "handle": "the5kcafe",
           "url": "https://www.instagram.com/the5kcafe/",
           "label": "instagram",
+          "discoveredFrom": "https://www.the5kcafe.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        }
+      ],
+      "relatedLinks": [
+        {
+          "kind": "menu",
+          "url": "https://www.the5kcafe.ca/menu",
+          "label": "Menu",
           "discoveredFrom": "https://www.the5kcafe.ca/",
           "associationBasis": "linked_from_official_website",
           "reviewState": "verified_link"
@@ -5438,12 +9658,12 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "The Armview Restaurant & Lounge",
       "website": "https://www.thearmview.com/",
       "resolvedUrl": "https://www.thearmview.com/",
-      "observedAt": "2026-08-28T17:36:45.810Z",
+      "observedAt": "2026-08-28T18:17:29.079Z",
       "socialProfiles": [
         {
           "platform": "facebook",
           "handle": "thearmview",
-          "url": "https://www.facebook.com/thearmview",
+          "url": "https://www.facebook.com/thearmview/",
           "label": "facebook",
           "discoveredFrom": "https://www.thearmview.com/",
           "associationBasis": "linked_from_official_website",
@@ -5454,6 +9674,57 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "handle": "armview",
           "url": "https://www.instagram.com/armview/",
           "label": "instagram",
+          "discoveredFrom": "https://www.thearmview.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "platform": "x",
+          "handle": "Armview",
+          "url": "https://twitter.com/Armview",
+          "label": "x",
+          "discoveredFrom": "https://www.thearmview.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        }
+      ],
+      "relatedLinks": [
+        {
+          "kind": "ordering",
+          "url": "https://web.ishopfood.com/#/the-armview/orderType",
+          "label": "order online",
+          "discoveredFrom": "https://www.thearmview.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "menu",
+          "url": "https://www.thearmview.com/menus/",
+          "label": "Menus",
+          "discoveredFrom": "https://www.thearmview.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "menu",
+          "url": "https://www.thearmview.com/drinks-menu/",
+          "label": "Drinks Menu",
+          "discoveredFrom": "https://www.thearmview.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "menu",
+          "url": "https://www.thearmview.com/armview-park-menu/",
+          "label": "Armview Park Menu",
+          "discoveredFrom": "https://www.thearmview.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "menu",
+          "url": "https://www.thearmview.com/wp-content/uploads/2023/02/Events_Menu.pdf",
+          "label": "Events Menu",
           "discoveredFrom": "https://www.thearmview.com/",
           "associationBasis": "linked_from_official_website",
           "reviewState": "verified_link"
@@ -5491,12 +9762,12 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "The Beaver's Den",
       "website": "https://thebeaversden.ca/",
       "resolvedUrl": "https://thebeaversden.ca/",
-      "observedAt": "2026-08-28T17:36:45.912Z",
+      "observedAt": "2026-08-28T18:17:29.125Z",
       "socialProfiles": [
         {
           "platform": "facebook",
           "handle": "61582614482399",
-          "url": "https://www.facebook.com/61582614482399",
+          "url": "https://www.facebook.com/profile.php?id=61582614482399",
           "label": "facebook",
           "discoveredFrom": "https://thebeaversden.ca/",
           "associationBasis": "linked_from_official_website",
@@ -5505,8 +9776,34 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
         {
           "platform": "instagram",
           "handle": "thebeaversdenhalifax",
-          "url": "https://www.instagram.com/thebeaversdenhalifax/",
+          "url": "https://www.instagram.com/thebeaversdenhalifax/?hl=en",
           "label": "instagram",
+          "discoveredFrom": "https://thebeaversden.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        }
+      ],
+      "relatedLinks": [
+        {
+          "kind": "reservations",
+          "url": "https://thebeaversden.ca/reserve-your-table",
+          "label": "RESERVATIONS",
+          "discoveredFrom": "https://thebeaversden.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "events",
+          "url": "https://thebeaversden.ca/event-calendar",
+          "label": "Calendar",
+          "discoveredFrom": "https://thebeaversden.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "menu",
+          "url": "https://thebeaversden.ca/menu",
+          "label": "Menu",
           "discoveredFrom": "https://thebeaversden.ca/",
           "associationBasis": "linked_from_official_website",
           "reviewState": "verified_link"
@@ -5522,7 +9819,7 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "The BG",
       "website": "https://www.stubborngoat.ca/halifax/waterfront-beer-garden/",
       "resolvedUrl": "https://www.stubborngoat.ca/",
-      "observedAt": "2026-08-28T17:36:47.356Z",
+      "observedAt": "2026-08-28T18:17:30.715Z",
       "socialProfiles": [
         {
           "platform": "instagram",
@@ -5536,8 +9833,43 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
         {
           "platform": "facebook",
           "handle": "StubbornGoat",
-          "url": "https://www.facebook.com/StubbornGoat",
+          "url": "https://www.facebook.com/StubbornGoat/",
           "label": "Facebook",
+          "discoveredFrom": "https://www.stubborngoat.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "platform": "x",
+          "handle": "TheStubbornGoat",
+          "url": "https://twitter.com/TheStubbornGoat",
+          "label": "Twitter",
+          "discoveredFrom": "https://www.stubborngoat.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        }
+      ],
+      "relatedLinks": [
+        {
+          "kind": "menu",
+          "url": "https://www.stubborngoat.ca/#menus",
+          "label": "Menus",
+          "discoveredFrom": "https://www.stubborngoat.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "reservations",
+          "url": "https://www.stubborngoat.ca/#contact",
+          "label": "Reserve",
+          "discoveredFrom": "https://www.stubborngoat.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "reservations",
+          "url": "https://booking.libroreserve.com/2599fe0cf2b7247/NS016934109919/seat",
+          "label": "Reserve",
           "discoveredFrom": "https://www.stubborngoat.ca/",
           "associationBasis": "linked_from_official_website",
           "reviewState": "verified_link"
@@ -5584,8 +9916,26 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "The Bitter End",
       "website": "https://www.bitterend.ca/home",
       "resolvedUrl": "https://www.bitterend.ca/",
-      "observedAt": "2026-08-28T17:36:19.858Z",
+      "observedAt": "2026-08-28T18:17:04.208Z",
       "socialProfiles": [],
+      "relatedLinks": [
+        {
+          "kind": "reservations",
+          "url": "https://www.bitterend.ca/reserve.html",
+          "label": "Reserve",
+          "discoveredFrom": "https://www.bitterend.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "menu",
+          "url": "https://www.bitterend.ca/menu.html",
+          "label": "menu",
+          "discoveredFrom": "https://www.bitterend.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        }
+      ],
       "feeds": [],
       "sitemaps": [],
       "sourceKind": "official_website_discovery",
@@ -5596,7 +9946,7 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "The Black Sheep",
       "website": "https://blacksheephalifax.com/",
       "resolvedUrl": "https://blacksheephalifax.com/",
-      "observedAt": "2026-08-28T17:36:46.083Z",
+      "observedAt": "2026-08-28T18:17:29.285Z",
       "socialProfiles": [
         {
           "platform": "facebook",
@@ -5612,6 +9962,32 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "handle": "blacksheephfx",
           "url": "https://www.instagram.com/blacksheephfx/",
           "label": "Instagram",
+          "discoveredFrom": "https://blacksheephalifax.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        }
+      ],
+      "relatedLinks": [
+        {
+          "kind": "menu",
+          "url": "https://blacksheephalifax.com/menu",
+          "label": "MENU",
+          "discoveredFrom": "https://blacksheephalifax.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "events",
+          "url": "https://blacksheephalifax.com/private-events/",
+          "label": "private events",
+          "discoveredFrom": "https://blacksheephalifax.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "reservations",
+          "url": "https://tbdine.com/halifax/restaurants/black-sheep-restaurant-water-street",
+          "label": "reserve a table",
           "discoveredFrom": "https://blacksheephalifax.com/",
           "associationBasis": "linked_from_official_website",
           "reviewState": "verified_link"
@@ -5652,8 +10028,9 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "The Bread Lounge",
       "website": "https://breadlounge.ca/",
       "resolvedUrl": "https://thebreadloungebakery.square.site/",
-      "observedAt": "2026-08-28T17:36:46.520Z",
+      "observedAt": "2026-08-28T18:17:29.923Z",
       "socialProfiles": [],
+      "relatedLinks": [],
       "feeds": [],
       "sitemaps": [
         "https://thebreadloungebakery.square.site/sitemap.xml"
@@ -5666,12 +10043,12 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "The Keg",
       "website": "https://thekeg.com/en/locations/halifax",
       "resolvedUrl": "https://thekeg.com/en/locations/halifax",
-      "observedAt": "2026-08-28T17:36:46.596Z",
+      "observedAt": "2026-08-28T18:17:30.157Z",
       "socialProfiles": [
         {
           "platform": "instagram",
           "handle": "thekegsteakhouse",
-          "url": "https://www.instagram.com/thekegsteakhouse/",
+          "url": "https://www.instagram.com/thekegsteakhouse",
           "label": "instagram",
           "discoveredFrom": "https://thekeg.com/en/locations/halifax",
           "associationBasis": "linked_from_official_website",
@@ -5682,6 +10059,42 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "handle": "thekegsteakhouseandbar",
           "url": "https://www.facebook.com/thekegsteakhouseandbar",
           "label": "facebook",
+          "discoveredFrom": "https://thekeg.com/en/locations/halifax",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "platform": "x",
+          "handle": "thekeg",
+          "url": "https://twitter.com/thekeg",
+          "label": "x",
+          "discoveredFrom": "https://thekeg.com/en/locations/halifax",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "platform": "linkedin",
+          "handle": "company/the-keg-steakhouse-and-bar",
+          "url": "https://www.linkedin.com/company/the-keg-steakhouse-and-bar",
+          "label": "linkedin",
+          "discoveredFrom": "https://thekeg.com/en/locations/halifax",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        }
+      ],
+      "relatedLinks": [
+        {
+          "kind": "reservations",
+          "url": "https://www.opentable.ca/restref/client/?restref=269812&amp;lang=en-CA&amp;corrid=23ed6e1b-92ac-4ee2-b80a-63ca393a1432",
+          "label": "Reserve Now",
+          "discoveredFrom": "https://thekeg.com/en/locations/halifax",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "menu",
+          "url": "https://thekeg.com/en/locations/halifax/menu",
+          "label": "View menu",
           "discoveredFrom": "https://thekeg.com/en/locations/halifax",
           "associationBasis": "linked_from_official_website",
           "reviewState": "verified_link"
@@ -5697,8 +10110,18 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "The Loose Cannon",
       "website": "https://theloosecannon.ca/",
       "resolvedUrl": "https://www.theloosecannon.ca/",
-      "observedAt": "2026-08-28T17:36:47.218Z",
+      "observedAt": "2026-08-28T18:17:31.283Z",
       "socialProfiles": [],
+      "relatedLinks": [
+        {
+          "kind": "menu",
+          "url": "https://www.theloosecannon.ca/ourmenu",
+          "label": "Menu",
+          "discoveredFrom": "https://www.theloosecannon.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        }
+      ],
       "feeds": [],
       "sitemaps": [],
       "sourceKind": "official_website_discovery",
@@ -5709,8 +10132,26 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "The Lower Deck",
       "website": "https://www.lowerdeck.ca/",
       "resolvedUrl": "https://lowerdeck.ca/",
-      "observedAt": "2026-08-28T17:36:46.582Z",
+      "observedAt": "2026-08-28T18:17:30.249Z",
       "socialProfiles": [],
+      "relatedLinks": [
+        {
+          "kind": "events",
+          "url": "https://lowerdeck.ca/private-events",
+          "label": "Private Events",
+          "discoveredFrom": "https://lowerdeck.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "menu",
+          "url": "https://lowerdeck.ca/pub-menu",
+          "label": "Menu",
+          "discoveredFrom": "https://lowerdeck.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        }
+      ],
       "feeds": [],
       "sitemaps": [
         "https://lowerdeck.ca/sitemap.xml"
@@ -5723,7 +10164,7 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "The Mellow Mug",
       "website": "https://www.mellowmug.ca/",
       "resolvedUrl": "https://www.mellowmug.ca/",
-      "observedAt": "2026-08-28T17:36:46.912Z",
+      "observedAt": "2026-08-28T18:17:30.197Z",
       "socialProfiles": [
         {
           "platform": "instagram",
@@ -5744,6 +10185,24 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "reviewState": "verified_link"
         }
       ],
+      "relatedLinks": [
+        {
+          "kind": "menu",
+          "url": "https://www.mellowmug.ca/food-1",
+          "label": "MENU",
+          "discoveredFrom": "https://www.mellowmug.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "ordering",
+          "url": "https://the-mellow-mug.order.plento.io/",
+          "label": "ORDER ONLINE",
+          "discoveredFrom": "https://www.mellowmug.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        }
+      ],
       "feeds": [],
       "sitemaps": [
         "https://www.mellowmug.ca/sitemap.xml"
@@ -5756,18 +10215,19 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "The Mercantile Social",
       "website": "https://themercantilesocial.ca/",
       "resolvedUrl": "https://www.themercantilesocial.com/",
-      "observedAt": "2026-08-28T17:36:47.263Z",
+      "observedAt": "2026-08-28T18:17:30.523Z",
       "socialProfiles": [
         {
           "platform": "instagram",
           "handle": "themercantilesocial",
-          "url": "https://www.instagram.com/themercantilesocial/",
+          "url": "http://instagram.com/themercantilesocial",
           "label": "instagram",
           "discoveredFrom": "https://www.themercantilesocial.com/",
           "associationBasis": "linked_from_official_website",
           "reviewState": "verified_link"
         }
       ],
+      "relatedLinks": [],
       "feeds": [],
       "sitemaps": [
         "https://www.themercantilesocial.com/sitemap.xml"
@@ -5780,13 +10240,22 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "The Mic Mac Bar and Grill",
       "website": "https://micmacbarandgrill.com/",
       "resolvedUrl": "https://micmacbarandgrill.com/",
-      "observedAt": "2026-08-28T17:36:47.044Z",
+      "observedAt": "2026-08-28T18:17:30.729Z",
       "socialProfiles": [
         {
           "platform": "facebook",
           "handle": "micmacbarandgrill",
-          "url": "https://www.facebook.com/micmacbarandgrill",
+          "url": "https://www.facebook.com/micmacbarandgrill/",
           "label": "Facebook",
+          "discoveredFrom": "https://micmacbarandgrill.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "platform": "x",
+          "handle": "_GR8STEAK",
+          "url": "https://twitter.com/_GR8STEAK",
+          "label": "X-twitter",
           "discoveredFrom": "https://micmacbarandgrill.com/",
           "associationBasis": "linked_from_official_website",
           "reviewState": "verified_link"
@@ -5796,6 +10265,48 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "handle": "micmacbarandgrill",
           "url": "https://www.instagram.com/micmacbarandgrill/",
           "label": "Instagram",
+          "discoveredFrom": "https://micmacbarandgrill.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        }
+      ],
+      "relatedLinks": [
+        {
+          "kind": "menu",
+          "url": "https://micmacbarandgrill.com/menus/",
+          "label": "Menus",
+          "discoveredFrom": "https://micmacbarandgrill.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "reservations",
+          "url": "https://www.opentable.ca/r/mic-mac-bar-and-grill-reservations-dartmouth?restref=342265&#038;lang=en-CA&#038;ot_source=Restaurant%20website",
+          "label": "Reservations",
+          "discoveredFrom": "https://micmacbarandgrill.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "ordering",
+          "url": "https://micmacbarandgrill.moduurn.com/linkto/eyJsb2NhdGlvbiI6IjVlYjRhMDExMmY2NGFlNTIzNWU2MDEzMSIsIm1ldGhvZCI6IkRFTElWRVJZVFlQRTAyIiwiZGVsaXZlcnlJZCI6IjU5NDBmOTVlYWU0MzE5ZjM3YzczYTY4ZiJ9",
+          "label": "Order Online",
+          "discoveredFrom": "https://micmacbarandgrill.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "menu",
+          "url": "https://micmacbarandgrill.com/menus/food/",
+          "label": "Browse Our Food Menu",
+          "discoveredFrom": "https://micmacbarandgrill.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "reservations",
+          "url": "https://www.opentable.ca/r/mic-mac-bar-and-grill-reservations-dartmouth?restref=342265&amp;lang=en-CA&amp;ot_source=Restaurant%20website",
+          "label": "Reservations",
           "discoveredFrom": "https://micmacbarandgrill.com/",
           "associationBasis": "linked_from_official_website",
           "reviewState": "verified_link"
@@ -5811,8 +10322,58 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "The Middle Spoon Desserterie & Bar",
       "website": "https://www.themiddlespoon.ca/",
       "resolvedUrl": "https://themiddlespoon.com/",
-      "observedAt": "2026-08-28T17:36:47.552Z",
+      "observedAt": "2026-08-28T18:17:31.088Z",
       "socialProfiles": [],
+      "relatedLinks": [
+        {
+          "kind": "menu",
+          "url": "https://themiddlespoon.com/menu",
+          "label": "Menu",
+          "discoveredFrom": "https://themiddlespoon.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "reservations",
+          "url": "https://themiddlespoon.com/reservations",
+          "label": "Reservations",
+          "discoveredFrom": "https://themiddlespoon.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "events",
+          "url": "https://themiddlespoon.com/events",
+          "label": "Events",
+          "discoveredFrom": "https://themiddlespoon.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "events",
+          "url": "https://themiddlespoon.com/private-events",
+          "label": "Private Events",
+          "discoveredFrom": "https://themiddlespoon.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "ordering",
+          "url": "https://the-middle-spoon.orderwebsite.com/",
+          "label": "Order Takeout or delivery",
+          "discoveredFrom": "https://themiddlespoon.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "reservations",
+          "url": "https://themiddlespoon.com/private-events",
+          "label": "Private Events Reserve a space",
+          "discoveredFrom": "https://themiddlespoon.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        }
+      ],
       "feeds": [],
       "sitemaps": [
         "https://themiddlespoon.com/sitemap.xml"
@@ -5825,8 +10386,9 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "The Nook",
       "website": "http://www.thenookhfx.ca/#about",
       "resolvedUrl": "http://www.thenookhfx.ca/",
-      "observedAt": "2026-08-28T17:36:47.491Z",
+      "observedAt": "2026-08-28T18:17:30.991Z",
       "socialProfiles": [],
+      "relatedLinks": [],
       "feeds": [],
       "sitemaps": [],
       "sourceKind": "official_website_discovery",
@@ -5837,7 +10399,7 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "The Ostrich Club",
       "website": "https://theostrichclub.ca/",
       "resolvedUrl": "https://theostrichclub.ca/",
-      "observedAt": "2026-08-28T17:36:48.961Z",
+      "observedAt": "2026-08-28T18:17:31.580Z",
       "socialProfiles": [
         {
           "platform": "instagram",
@@ -5851,13 +10413,14 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
         {
           "platform": "facebook",
           "handle": "theostrichclubhfx",
-          "url": "https://www.facebook.com/theostrichclubhfx",
+          "url": "https://www.facebook.com/theostrichclubhfx/",
           "label": "facebook",
           "discoveredFrom": "https://theostrichclub.ca/",
           "associationBasis": "linked_from_official_website",
           "reviewState": "verified_link"
         }
       ],
+      "relatedLinks": [],
       "feeds": [
         {
           "url": "https://theostrichclub.ca/feed/",
@@ -5890,12 +10453,12 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Tilted Tap",
       "website": "https://www.tiltedtap.ca/",
       "resolvedUrl": "https://www.tiltedtap.ca/",
-      "observedAt": "2026-08-28T17:36:48.046Z",
+      "observedAt": "2026-08-28T18:17:31.511Z",
       "socialProfiles": [
         {
           "platform": "instagram",
           "handle": "tiltedtap",
-          "url": "https://www.instagram.com/tiltedtap/",
+          "url": "https://www.instagram.com/tiltedtap",
           "label": "@tiltedtap",
           "discoveredFrom": "https://www.tiltedtap.ca/",
           "associationBasis": "linked_from_official_website",
@@ -5904,8 +10467,58 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
         {
           "platform": "facebook",
           "handle": "tiltedtap",
-          "url": "https://www.facebook.com/tiltedtap",
+          "url": "https://www.facebook.com/tiltedtap/",
           "label": "/tiltedtap",
+          "discoveredFrom": "https://www.tiltedtap.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        }
+      ],
+      "relatedLinks": [
+        {
+          "kind": "menu",
+          "url": "https://www.tiltedtap.ca/menu-1",
+          "label": "OUR MENU",
+          "discoveredFrom": "https://www.tiltedtap.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "ordering",
+          "url": "http://online.skytab.com/ceab813a6d336c472efcc4632a33b9b6",
+          "label": "ORDER ONLINE",
+          "discoveredFrom": "https://www.tiltedtap.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "reservations",
+          "url": "https://www.tiltedtap.ca/reserve",
+          "label": "RESERVATIONS",
+          "discoveredFrom": "https://www.tiltedtap.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "events",
+          "url": "https://www.tiltedtap.ca/newsandevents",
+          "label": "EVENTS",
+          "discoveredFrom": "https://www.tiltedtap.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "menu",
+          "url": "https://www.tiltedtap.ca/drink-menu",
+          "label": "Drink Menu",
+          "discoveredFrom": "https://www.tiltedtap.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "menu",
+          "url": "https://www.tiltedtap.ca/menu",
+          "label": "Brunch Menu",
           "discoveredFrom": "https://www.tiltedtap.ca/",
           "associationBasis": "linked_from_official_website",
           "reviewState": "verified_link"
@@ -5923,8 +10536,9 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Tim Hortons",
       "website": "https://www.timhortons.ca/store-locator/store/restaurant_66914",
       "resolvedUrl": "https://www.timhortons.ca/store-locator/store/restaurant_66914",
-      "observedAt": "2026-08-28T17:36:48.542Z",
+      "observedAt": "2026-08-28T18:17:32.478Z",
       "socialProfiles": [],
+      "relatedLinks": [],
       "feeds": [],
       "sitemaps": [],
       "sourceKind": "official_website_discovery",
@@ -5935,8 +10549,9 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Tim Hortons",
       "website": "https://www.timhortons.com/",
       "resolvedUrl": "https://www.timhortons.com/",
-      "observedAt": "2026-08-28T17:36:48.669Z",
+      "observedAt": "2026-08-28T18:17:32.475Z",
       "socialProfiles": [],
+      "relatedLinks": [],
       "feeds": [],
       "sitemaps": [],
       "sourceKind": "official_website_discovery",
@@ -5947,8 +10562,9 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Tim Hortons",
       "website": "https://www.timhortons.com/",
       "resolvedUrl": "https://www.timhortons.com/",
-      "observedAt": "2026-08-28T17:36:49.294Z",
+      "observedAt": "2026-08-28T18:17:32.922Z",
       "socialProfiles": [],
+      "relatedLinks": [],
       "feeds": [],
       "sitemaps": [],
       "sourceKind": "official_website_discovery",
@@ -5959,13 +10575,31 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Tim Hortons",
       "website": "https://dal.campusdish.com/LocationsAndMenus/LifeSciencesCentre/TimHortons",
       "resolvedUrl": "https://dal.mydininghub.ca/en/locations",
-      "observedAt": "2026-08-28T17:36:22.318Z",
+      "observedAt": "2026-08-28T18:17:06.379Z",
       "socialProfiles": [
         {
           "platform": "instagram",
           "handle": "Dalfood",
           "url": "https://www.instagram.com/Dalfood/",
           "label": "instagram",
+          "discoveredFrom": "https://dal.mydininghub.ca/en/locations",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        }
+      ],
+      "relatedLinks": [
+        {
+          "kind": "menu",
+          "url": "https://dal.mydininghub.ca/en/account?section=my-menu",
+          "label": "My Menu",
+          "discoveredFrom": "https://dal.mydininghub.ca/en/locations",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "menu",
+          "url": "https://dal.mydininghub.ca/en/locations",
+          "label": "Locations & Menus",
           "discoveredFrom": "https://dal.mydininghub.ca/en/locations",
           "associationBasis": "linked_from_official_website",
           "reviewState": "verified_link"
@@ -5983,8 +10617,9 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Tim Hortons",
       "website": "https://www.timhortons.com/",
       "resolvedUrl": "https://www.timhortons.com/",
-      "observedAt": "2026-08-28T17:36:49.743Z",
+      "observedAt": "2026-08-28T18:17:33.334Z",
       "socialProfiles": [],
+      "relatedLinks": [],
       "feeds": [],
       "sitemaps": [],
       "sourceKind": "official_website_discovery",
@@ -5995,8 +10630,9 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Tim Hortons",
       "website": "https://www.timhortons.com/",
       "resolvedUrl": "https://www.timhortons.com/",
-      "observedAt": "2026-08-28T17:36:50.190Z",
+      "observedAt": "2026-08-28T18:17:33.757Z",
       "socialProfiles": [],
+      "relatedLinks": [],
       "feeds": [],
       "sitemaps": [],
       "sourceKind": "official_website_discovery",
@@ -6007,7 +10643,7 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Tim Hortons",
       "website": "https://locations.timhortons.ca/en/ns/halifax/390-osborne-street/",
       "resolvedUrl": "https://locations.timhortons.ca/en/ns/halifax/390-osborne-street/",
-      "observedAt": "2026-08-28T17:36:48.236Z",
+      "observedAt": "2026-08-28T18:17:32.133Z",
       "socialProfiles": [
         {
           "platform": "instagram",
@@ -6021,8 +10657,44 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
         {
           "platform": "facebook",
           "handle": "TimHortons",
-          "url": "https://www.facebook.com/TimHortons",
+          "url": "http://facebook.com/TimHortons/",
           "label": "facebook",
+          "discoveredFrom": "https://locations.timhortons.ca/en/ns/halifax/390-osborne-street/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "platform": "youtube",
+          "handle": "TimHortons",
+          "url": "https://www.youtube.com/user/TimHortons",
+          "label": "youtube",
+          "discoveredFrom": "https://locations.timhortons.ca/en/ns/halifax/390-osborne-street/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "platform": "x",
+          "handle": "timhortons",
+          "url": "https://twitter.com/timhortons/",
+          "label": "x",
+          "discoveredFrom": "https://locations.timhortons.ca/en/ns/halifax/390-osborne-street/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        }
+      ],
+      "relatedLinks": [
+        {
+          "kind": "ordering",
+          "url": "https://timhortons.ca/menu?locale-selected=0&lang=en&store-number=100053&service-mode=TAKEOUT",
+          "label": "Order Pickup",
+          "discoveredFrom": "https://locations.timhortons.ca/en/ns/halifax/390-osborne-street/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "ordering",
+          "url": "https://timhortons.ca/menu?locale-selected=0&lang=en&store-number=100053&service-mode=DELIVERY",
+          "label": "Order Delivery",
           "discoveredFrom": "https://locations.timhortons.ca/en/ns/halifax/390-osborne-street/",
           "associationBasis": "linked_from_official_website",
           "reviewState": "verified_link"
@@ -6040,8 +10712,9 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Tim Hortons",
       "website": "https://www.timhortons.ca/store-locator/store/restaurant_67296",
       "resolvedUrl": "https://www.timhortons.ca/store-locator/store/restaurant_67296",
-      "observedAt": "2026-08-28T17:36:49.542Z",
+      "observedAt": "2026-08-28T18:17:33.164Z",
       "socialProfiles": [],
+      "relatedLinks": [],
       "feeds": [],
       "sitemaps": [],
       "sourceKind": "official_website_discovery",
@@ -6052,8 +10725,9 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Tim Hortons",
       "website": "https://www.timhortons.ca/store-locator/store/restaurant_66291",
       "resolvedUrl": "https://www.timhortons.ca/store-locator/store/restaurant_66291",
-      "observedAt": "2026-08-28T17:36:50.233Z",
+      "observedAt": "2026-08-28T18:17:33.848Z",
       "socialProfiles": [],
+      "relatedLinks": [],
       "feeds": [],
       "sitemaps": [],
       "sourceKind": "official_website_discovery",
@@ -6064,8 +10738,9 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Tim Hortons",
       "website": "https://timhortons.ca/",
       "resolvedUrl": "https://www.timhortons.ca/",
-      "observedAt": "2026-08-28T17:36:51.628Z",
+      "observedAt": "2026-08-28T18:17:35.148Z",
       "socialProfiles": [],
+      "relatedLinks": [],
       "feeds": [],
       "sitemaps": [],
       "sourceKind": "official_website_discovery",
@@ -6076,8 +10751,9 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Tim Hortons",
       "website": "https://www.timhortons.ca/store-locator/store/restaurant_66191",
       "resolvedUrl": "https://www.timhortons.ca/store-locator/store/restaurant_66191",
-      "observedAt": "2026-08-28T17:36:52.104Z",
+      "observedAt": "2026-08-28T18:17:35.613Z",
       "socialProfiles": [],
+      "relatedLinks": [],
       "feeds": [],
       "sitemaps": [],
       "sourceKind": "official_website_discovery",
@@ -6088,7 +10764,7 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Tokyo Roll",
       "website": "https://www.tokyorollhalifax.com/",
       "resolvedUrl": "https://www.tokyorollhalifax.com/",
-      "observedAt": "2026-08-28T17:36:48.248Z",
+      "observedAt": "2026-08-28T18:17:32.483Z",
       "socialProfiles": [
         {
           "platform": "instagram",
@@ -6102,8 +10778,18 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
         {
           "platform": "facebook",
           "handle": "tokyorollhalifax",
-          "url": "https://www.facebook.com/tokyorollhalifax",
+          "url": "https://www.facebook.com/tokyorollhalifax/",
           "label": "facebook",
+          "discoveredFrom": "https://www.tokyorollhalifax.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        }
+      ],
+      "relatedLinks": [
+        {
+          "kind": "menu",
+          "url": "https://www.tokyorollhalifax.com/menu",
+          "label": "Menu",
           "discoveredFrom": "https://www.tokyorollhalifax.com/",
           "associationBasis": "linked_from_official_website",
           "reviewState": "verified_link"
@@ -6121,12 +10807,12 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Tomavinos Pizzeria",
       "website": "https://www.tomavinos.ca/",
       "resolvedUrl": "https://www.tomavinos.ca/",
-      "observedAt": "2026-08-28T17:36:48.748Z",
+      "observedAt": "2026-08-28T18:17:32.827Z",
       "socialProfiles": [
         {
           "platform": "facebook",
           "handle": "Tomavinos-1350644908294615",
-          "url": "https://www.facebook.com/Tomavinos-1350644908294615",
+          "url": "https://www.facebook.com/Tomavinos-1350644908294615/",
           "label": "facebook",
           "discoveredFrom": "https://www.tomavinos.ca/",
           "associationBasis": "linked_from_official_website",
@@ -6137,6 +10823,49 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "handle": "tomavinospizza",
           "url": "https://www.instagram.com/tomavinospizza/",
           "label": "instagram",
+          "discoveredFrom": "https://www.tomavinos.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "platform": "x",
+          "handle": "TomavinosHali",
+          "url": "https://twitter.com/TomavinosHali",
+          "label": "x",
+          "discoveredFrom": "https://www.tomavinos.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        }
+      ],
+      "relatedLinks": [
+        {
+          "kind": "menu",
+          "url": "https://tomavinos.ca/menu",
+          "label": "Menu",
+          "discoveredFrom": "https://www.tomavinos.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "menu",
+          "url": "https://www.tomavinos.ca/#0",
+          "label": "Menu",
+          "discoveredFrom": "https://www.tomavinos.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "ordering",
+          "url": "https://app1.restolabs.com/onlineorder/tomavinosrestorante#/onlineorder",
+          "label": "Order Online",
+          "discoveredFrom": "https://www.tomavinos.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "reservations",
+          "url": "https://book.tomavinos.ca/",
+          "label": "Reserve a Table",
           "discoveredFrom": "https://www.tomavinos.ca/",
           "associationBasis": "linked_from_official_website",
           "reviewState": "verified_link"
@@ -6152,12 +10881,12 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Tony's Pizza",
       "website": "https://www.tonysdonair.ca/",
       "resolvedUrl": "https://www.tonysdonair.com/",
-      "observedAt": "2026-08-28T17:36:48.656Z",
+      "observedAt": "2026-08-28T18:17:32.594Z",
       "socialProfiles": [
         {
           "platform": "instagram",
           "handle": "tonysdonair",
-          "url": "https://www.instagram.com/tonysdonair/",
+          "url": "http://instagram.com/tonysdonair",
           "label": "instagram",
           "discoveredFrom": "https://www.tonysdonair.com/",
           "associationBasis": "linked_from_official_website",
@@ -6168,6 +10897,24 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "handle": "tonysdonair",
           "url": "https://www.facebook.com/tonysdonair",
           "label": "facebook",
+          "discoveredFrom": "https://www.tonysdonair.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        }
+      ],
+      "relatedLinks": [
+        {
+          "kind": "menu",
+          "url": "https://www.tonysdonair.com/other-items",
+          "label": "Other Menu Items",
+          "discoveredFrom": "https://www.tonysdonair.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "ordering",
+          "url": "https://tonysdonair.brygid.online/",
+          "label": "Order Online",
           "discoveredFrom": "https://www.tonysdonair.com/",
           "associationBasis": "linked_from_official_website",
           "reviewState": "verified_link"
@@ -6185,12 +10932,21 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Trident Booksellers and Cafe",
       "website": "https://tridenthalifax.ca/",
       "resolvedUrl": "https://tridenthalifax.ca/",
-      "observedAt": "2026-08-28T17:36:48.991Z",
+      "observedAt": "2026-08-28T18:17:33.031Z",
       "socialProfiles": [
+        {
+          "platform": "bluesky",
+          "handle": "tridenthalifax.bsky.social",
+          "url": "https://bsky.app/profile/tridenthalifax.bsky.social",
+          "label": "Bluesky",
+          "discoveredFrom": "https://tridenthalifax.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
         {
           "platform": "facebook",
           "handle": "tridenthalifax",
-          "url": "https://www.facebook.com/tridenthalifax",
+          "url": "https://www.facebook.com/tridenthalifax/",
           "label": "Facebook",
           "discoveredFrom": "https://tridenthalifax.ca/",
           "associationBasis": "linked_from_official_website",
@@ -6199,8 +10955,34 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
         {
           "platform": "instagram",
           "handle": "trident_cafe_halifax",
-          "url": "https://www.instagram.com/trident_cafe_halifax/",
+          "url": "https://www.instagram.com/trident_cafe_halifax?igsh=bWV6NDEwcjg1azZ3&#038;utm_source=website",
           "label": "Instagram",
+          "discoveredFrom": "https://tridenthalifax.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        }
+      ],
+      "relatedLinks": [
+        {
+          "kind": "events",
+          "url": "https://tridenthalifax.ca/events/",
+          "label": "Events at the Trident",
+          "discoveredFrom": "https://tridenthalifax.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "events",
+          "url": "https://tridenthalifax.ca/event/live-music-gourmet-club/",
+          "label": "Live Music! Gourmet Club!",
+          "discoveredFrom": "https://tridenthalifax.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "events",
+          "url": "https://tridenthalifax.ca/event/live-music-kate-ferguson/",
+          "label": "Live Music: Kate Ferguson!",
           "discoveredFrom": "https://tridenthalifax.ca/",
           "associationBasis": "linked_from_official_website",
           "reviewState": "verified_link"
@@ -6231,8 +11013,9 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Turkish Delight",
       "website": "https://www.turkishdelighthalifax.ca/contact-us",
       "resolvedUrl": "https://turkishdelighthalifax.ca/",
-      "observedAt": "2026-08-28T17:36:49.700Z",
+      "observedAt": "2026-08-28T18:17:33.644Z",
       "socialProfiles": [],
+      "relatedLinks": [],
       "feeds": [],
       "sitemaps": [],
       "sourceKind": "official_website_discovery",
@@ -6243,8 +11026,9 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Two if By Sea",
       "website": "https://www.twoifbyseacafe.ca/",
       "resolvedUrl": "https://twoifbyseacafe.ca/",
-      "observedAt": "2026-08-28T17:36:51.639Z",
+      "observedAt": "2026-08-28T18:17:35.475Z",
       "socialProfiles": [],
+      "relatedLinks": [],
       "feeds": [
         {
           "url": "https://twoifbyseacafe.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Ftwoifbyseacafe.ca%2F&#038;format=xml",
@@ -6265,8 +11049,19 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Uncommon Grounds",
       "website": "https://theuncommongroup.com/",
       "resolvedUrl": "https://theuncommongroup.com/",
-      "observedAt": "2026-08-28T17:36:49.679Z",
-      "socialProfiles": [],
+      "observedAt": "2026-08-28T18:17:33.590Z",
+      "socialProfiles": [
+        {
+          "platform": "x",
+          "handle": "uncommonhfx",
+          "url": "https://twitter.com/uncommonhfx",
+          "label": "Twitter",
+          "discoveredFrom": "https://theuncommongroup.com/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        }
+      ],
+      "relatedLinks": [],
       "feeds": [],
       "sitemaps": [
         "https://theuncommongroup.com/sitemap.xml"
@@ -6279,8 +11074,9 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Wasabi House",
       "website": "http://www.wasabihouse.ca/",
       "resolvedUrl": "http://wasabihouse.ca/",
-      "observedAt": "2026-08-28T17:36:49.939Z",
+      "observedAt": "2026-08-28T18:17:33.906Z",
       "socialProfiles": [],
+      "relatedLinks": [],
       "feeds": [
         {
           "url": "http://wasabihouse.ca/feed/",
@@ -6306,13 +11102,39 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Water Polo",
       "website": "https://waterpolohfx.ca/",
       "resolvedUrl": "https://www.waterpolohfx.ca/",
-      "observedAt": "2026-08-28T17:36:49.790Z",
+      "observedAt": "2026-08-28T18:17:33.744Z",
       "socialProfiles": [
         {
           "platform": "instagram",
           "handle": "waterpolo.hfx",
           "url": "https://www.instagram.com/waterpolo.hfx/",
           "label": "@waterpolo.hfx",
+          "discoveredFrom": "https://www.waterpolohfx.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        }
+      ],
+      "relatedLinks": [
+        {
+          "kind": "reservations",
+          "url": "https://www.sevenrooms.com/explore/waterpolo/reservations/create/search/",
+          "label": "Reservations",
+          "discoveredFrom": "https://www.waterpolohfx.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "menu",
+          "url": "https://www.waterpolohfx.ca/menus",
+          "label": "View Menus",
+          "discoveredFrom": "https://www.waterpolohfx.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "menu",
+          "url": "https://www.waterpolohfx.ca/menus/#brunch",
+          "label": "View Menu",
           "discoveredFrom": "https://www.waterpolohfx.ca/",
           "associationBasis": "linked_from_official_website",
           "reviewState": "verified_link"
@@ -6330,7 +11152,7 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Waterfront Warehouse",
       "website": "https://www.rcr.ca/restaurants/waterfront-warehouse/",
       "resolvedUrl": "https://www.rcr.ca/restaurants/waterfront-warehouse/",
-      "observedAt": "2026-08-28T17:36:36.490Z",
+      "observedAt": "2026-08-28T18:17:20.333Z",
       "socialProfiles": [
         {
           "platform": "instagram",
@@ -6346,6 +11168,49 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "handle": "WaterfrontWarehouse",
           "url": "https://www.facebook.com/WaterfrontWarehouse",
           "label": "facebook",
+          "discoveredFrom": "https://www.rcr.ca/restaurants/waterfront-warehouse/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "platform": "x",
+          "handle": "WWHalifax",
+          "url": "https://twitter.com/WWHalifax",
+          "label": "x",
+          "discoveredFrom": "https://www.rcr.ca/restaurants/waterfront-warehouse/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        }
+      ],
+      "relatedLinks": [
+        {
+          "kind": "menu",
+          "url": "https://www.rcr.ca/content/uploads/2018/02/Warehouse-Lunch-2026-Web-1.pdf",
+          "label": "Lunch Menu",
+          "discoveredFrom": "https://www.rcr.ca/restaurants/waterfront-warehouse/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "menu",
+          "url": "https://www.rcr.ca/content/uploads/2018/02/Warehouse-Dinner-2026-Web-1.pdf",
+          "label": "Dinner Menu",
+          "discoveredFrom": "https://www.rcr.ca/restaurants/waterfront-warehouse/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "menu",
+          "url": "https://www.rcr.ca/content/uploads/2018/02/Warehouse-Oysters-2026.pdf",
+          "label": "Sample Oyster Menu",
+          "discoveredFrom": "https://www.rcr.ca/restaurants/waterfront-warehouse/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "menu",
+          "url": "https://www.rcr.ca/content/uploads/2018/02/Warehouse-Kids-Web.pdf",
+          "label": "Kids Menu",
           "discoveredFrom": "https://www.rcr.ca/restaurants/waterfront-warehouse/",
           "associationBasis": "linked_from_official_website",
           "reviewState": "verified_link"
@@ -6372,12 +11237,21 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Wendy's",
       "website": "https://www.wendys.com/en-ca",
       "resolvedUrl": "https://www.wendys.com/en-ca",
-      "observedAt": "2026-08-28T17:36:50.252Z",
+      "observedAt": "2026-08-28T18:17:34.174Z",
       "socialProfiles": [
+        {
+          "platform": "x",
+          "handle": "WendysCanada",
+          "url": "https://twitter.com/WendysCanada",
+          "label": "x",
+          "discoveredFrom": "https://www.wendys.com/en-ca",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
         {
           "platform": "facebook",
           "handle": "WendysCanada",
-          "url": "https://www.facebook.com/WendysCanada",
+          "url": "https://www.facebook.com/WendysCanada/",
           "label": "facebook",
           "discoveredFrom": "https://www.wendys.com/en-ca",
           "associationBasis": "linked_from_official_website",
@@ -6388,6 +11262,58 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "handle": "wendyscanada",
           "url": "https://www.instagram.com/wendyscanada/",
           "label": "instagram",
+          "discoveredFrom": "https://www.wendys.com/en-ca",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "platform": "youtube",
+          "handle": "UCXUT7IkngMjUSV003I8pkQw",
+          "url": "https://www.youtube.com/channel/UCXUT7IkngMjUSV003I8pkQw",
+          "label": "youtube",
+          "discoveredFrom": "https://www.wendys.com/en-ca",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "platform": "linkedin",
+          "handle": "company/wendys-international",
+          "url": "https://www.linkedin.com/company/wendys-international",
+          "label": "linkedin",
+          "discoveredFrom": "https://www.wendys.com/en-ca",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        }
+      ],
+      "relatedLinks": [
+        {
+          "kind": "ordering",
+          "url": "https://order.wendys.com/ca/en/national/menu",
+          "label": "Order Pickup",
+          "discoveredFrom": "https://www.wendys.com/en-ca",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "ordering",
+          "url": "https://www.wendys.com/en-ca/delivery",
+          "label": "Order Delivery",
+          "discoveredFrom": "https://www.wendys.com/en-ca",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "menu",
+          "url": "https://order.wendys.com/ca/en/national/menu",
+          "label": "View Our Menu",
+          "discoveredFrom": "https://www.wendys.com/en-ca",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "menu",
+          "url": "https://order.wendys.com/ca/en/",
+          "label": "View Our Menu",
           "discoveredFrom": "https://www.wendys.com/en-ca",
           "associationBasis": "linked_from_official_website",
           "reviewState": "verified_link"
@@ -6405,12 +11331,21 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Wendy's",
       "website": "https://locations.wendys.com/canada/ns/halifax/3580-kempt-road",
       "resolvedUrl": "https://locations.wendys.com/canada/ns/halifax/3580-kempt-road",
-      "observedAt": "2026-08-28T17:36:50.542Z",
+      "observedAt": "2026-08-28T18:17:34.476Z",
       "socialProfiles": [
+        {
+          "platform": "x",
+          "handle": "Wendys",
+          "url": "https://twitter.com/Wendys",
+          "label": "Visit Wendy's Twitter",
+          "discoveredFrom": "https://locations.wendys.com/canada/ns/halifax/3580-kempt-road",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
         {
           "platform": "facebook",
           "handle": "wendys",
-          "url": "https://www.facebook.com/wendys",
+          "url": "https://www.facebook.com/wendys/",
           "label": "Visit Wendy's Facebook",
           "discoveredFrom": "https://locations.wendys.com/canada/ns/halifax/3580-kempt-road",
           "associationBasis": "linked_from_official_website",
@@ -6419,8 +11354,42 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
         {
           "platform": "instagram",
           "handle": "wendys",
-          "url": "https://www.instagram.com/wendys/",
+          "url": "https://www.instagram.com/wendys/#",
           "label": "Visit Wendy's Instagram",
+          "discoveredFrom": "https://locations.wendys.com/canada/ns/halifax/3580-kempt-road",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        }
+      ],
+      "relatedLinks": [
+        {
+          "kind": "ordering",
+          "url": "https://www.wendys.com/en-ca/delivery",
+          "label": "Order Delivery",
+          "discoveredFrom": "https://locations.wendys.com/canada/ns/halifax/3580-kempt-road",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "menu",
+          "url": "https://order.wendys.com/ca/en/select-restaurant",
+          "label": "VIEW OUR MENU",
+          "discoveredFrom": "https://locations.wendys.com/canada/ns/halifax/3580-kempt-road",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "menu",
+          "url": "https://menu.wendys.com/",
+          "label": "Menu",
+          "discoveredFrom": "https://locations.wendys.com/canada/ns/halifax/3580-kempt-road",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "menu",
+          "url": "https://order.wendys.com/ca/en/national/menu",
+          "label": "View Menu",
           "discoveredFrom": "https://locations.wendys.com/canada/ns/halifax/3580-kempt-road",
           "associationBasis": "linked_from_official_website",
           "reviewState": "verified_link"
@@ -6438,13 +11407,22 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Wild Leek Food & Juice Bar",
       "website": "https://wildleek.ca/",
       "resolvedUrl": "https://www.wildleek.ca/",
-      "observedAt": "2026-08-28T17:36:50.449Z",
+      "observedAt": "2026-08-28T18:17:34.384Z",
       "socialProfiles": [
         {
           "platform": "facebook",
           "handle": "WildLeek",
-          "url": "https://www.facebook.com/WildLeek",
+          "url": "https://facebook.com/WildLeek",
           "label": "facebook",
+          "discoveredFrom": "https://www.wildleek.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "platform": "x",
+          "handle": "wild_leek",
+          "url": "https://twitter.com/wild_leek",
+          "label": "x",
           "discoveredFrom": "https://www.wildleek.ca/",
           "associationBasis": "linked_from_official_website",
           "reviewState": "verified_link"
@@ -6452,8 +11430,26 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
         {
           "platform": "instagram",
           "handle": "WildLeek",
-          "url": "https://www.instagram.com/WildLeek/",
+          "url": "https://instagram.com/WildLeek",
           "label": "instagram",
+          "discoveredFrom": "https://www.wildleek.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        }
+      ],
+      "relatedLinks": [
+        {
+          "kind": "menu",
+          "url": "https://www.wildleek.ca/menu",
+          "label": "MENU",
+          "discoveredFrom": "https://www.wildleek.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "ordering",
+          "url": "https://wildleek.gpr.globalpaymentsinc.ca/menu",
+          "label": "Order Take Out",
           "discoveredFrom": "https://www.wildleek.ca/",
           "associationBasis": "linked_from_official_website",
           "reviewState": "verified_link"
@@ -6471,12 +11467,12 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Wing 'n It",
       "website": "https://wingnit.ca/",
       "resolvedUrl": "https://wingnit.ca/",
-      "observedAt": "2026-08-28T17:36:50.779Z",
+      "observedAt": "2026-08-28T18:17:34.741Z",
       "socialProfiles": [
         {
           "platform": "instagram",
           "handle": "wingnitrestaurants",
-          "url": "https://www.instagram.com/wingnitrestaurants/",
+          "url": "http://www.instagram.com/wingnitrestaurants/",
           "label": "instagram",
           "discoveredFrom": "https://wingnit.ca/",
           "associationBasis": "linked_from_official_website",
@@ -6485,8 +11481,26 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
         {
           "platform": "facebook",
           "handle": "wingnitrestaurants",
-          "url": "https://www.facebook.com/wingnitrestaurants",
+          "url": "http://www.facebook.com/wingnitrestaurants/",
           "label": "facebook",
+          "discoveredFrom": "https://wingnit.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        }
+      ],
+      "relatedLinks": [
+        {
+          "kind": "menu",
+          "url": "https://wingnit.ca/menu",
+          "label": "Menu",
+          "discoveredFrom": "https://wingnit.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "menu",
+          "url": "https://wingnit.ca/menu/kids",
+          "label": "Kids Our Kids' Menu is specially designed for children 12 years and under, offering a variety of kid-friendly dishes that are nutritious and",
           "discoveredFrom": "https://wingnit.ca/",
           "associationBasis": "linked_from_official_website",
           "reviewState": "verified_link"
@@ -6505,12 +11519,21 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Wooden Monkey",
       "website": "https://www.thewoodenmonkey.ca/",
       "resolvedUrl": "https://www.thewoodenmonkey.ca/",
-      "observedAt": "2026-08-28T17:36:50.828Z",
+      "observedAt": "2026-08-28T18:17:34.976Z",
       "socialProfiles": [
+        {
+          "platform": "x",
+          "handle": "TheWoodenMonkey",
+          "url": "https://twitter.com/TheWoodenMonkey",
+          "label": "Tweets by TheWoodenMonkey",
+          "discoveredFrom": "https://www.thewoodenmonkey.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
         {
           "platform": "facebook",
           "handle": "TheWoodenMonkey",
-          "url": "https://www.facebook.com/TheWoodenMonkey",
+          "url": "https://www.facebook.com/TheWoodenMonkey/",
           "label": "facebook",
           "discoveredFrom": "https://www.thewoodenmonkey.ca/",
           "associationBasis": "linked_from_official_website",
@@ -6521,6 +11544,32 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "handle": "thewoodenmonkeyrestaurants",
           "url": "https://www.instagram.com/thewoodenmonkeyrestaurants/",
           "label": "instagram",
+          "discoveredFrom": "https://www.thewoodenmonkey.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        }
+      ],
+      "relatedLinks": [
+        {
+          "kind": "menu",
+          "url": "https://www.thewoodenmonkey.ca/menus",
+          "label": "MENUS",
+          "discoveredFrom": "https://www.thewoodenmonkey.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "reservations",
+          "url": "https://www.thewoodenmonkey.ca/reservations",
+          "label": "RESERVATIONS",
+          "discoveredFrom": "https://www.thewoodenmonkey.ca/",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "events",
+          "url": "https://cdn.prod.website-files.com/5a9175138433cb00017eefdf/6a73b58dcfd94ca8f661cedf_New%20Aug%20Music%20JPG.jpg",
+          "label": "Live Music",
           "discoveredFrom": "https://www.thewoodenmonkey.ca/",
           "associationBasis": "linked_from_official_website",
           "reviewState": "verified_link"
@@ -6538,13 +11587,31 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Zoca",
       "website": "https://dal.campusdish.com/LocationsAndMenus/LifeSciencesCentre/Zoca",
       "resolvedUrl": "https://dal.mydininghub.ca/en/locations",
-      "observedAt": "2026-08-28T17:36:22.600Z",
+      "observedAt": "2026-08-28T18:17:06.615Z",
       "socialProfiles": [
         {
           "platform": "instagram",
           "handle": "Dalfood",
           "url": "https://www.instagram.com/Dalfood/",
           "label": "instagram",
+          "discoveredFrom": "https://dal.mydininghub.ca/en/locations",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        }
+      ],
+      "relatedLinks": [
+        {
+          "kind": "menu",
+          "url": "https://dal.mydininghub.ca/en/account?section=my-menu",
+          "label": "My Menu",
+          "discoveredFrom": "https://dal.mydininghub.ca/en/locations",
+          "associationBasis": "linked_from_official_website",
+          "reviewState": "verified_link"
+        },
+        {
+          "kind": "menu",
+          "url": "https://dal.mydininghub.ca/en/locations",
+          "label": "Locations & Menus",
           "discoveredFrom": "https://dal.mydininghub.ca/en/locations",
           "associationBasis": "linked_from_official_website",
           "reviewState": "verified_link"
@@ -6558,9 +11625,13 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "reviewState": "verified"
     }
   ],
+  "facebookCount": 98,
+  "instagramCount": 116,
   "sanitization": {
-    "appliedAt": "2026-08-28T17:37:13.832Z",
-    "removedGenericOrInvalidProfiles": 6,
-    "duplicateProfilesRemoved": 0
+    "appliedAt": "2026-08-28T18:17:58.064Z",
+    "removedGenericOrInvalidProfiles": 8,
+    "duplicateProfilesRemoved": 0,
+    "removedInvalidRelatedLinks": 0,
+    "duplicateRelatedLinksRemoved": 0
   }
 };
