@@ -52,6 +52,7 @@ jobs:
       - name: Build content coverage and quality reports
         run: |
           node scripts/build-content-coverage-report.mjs
+          node scripts/reconcile-structured-coverage.mjs
           node scripts/build-content-quality-report.mjs
 
       - name: Upload integrity reports
