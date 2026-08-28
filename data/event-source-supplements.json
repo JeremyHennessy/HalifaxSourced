@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 2,
   "sources": [
     {
       "id": "halifax-convention-centre",
@@ -33,7 +33,13 @@
         "Dartmouth North Public Library": "Dartmouth",
         "Woodlawn Public Library": "Dartmouth",
         "Bedford Public Library": "Bedford"
-      }
+      },
+      "regionalLocationFilters": [
+        {"code": "AG", "name": "Alderney Gate Public Library", "city": "Dartmouth"},
+        {"code": "DN", "name": "Dartmouth North - Temporary Location", "city": "Dartmouth", "aliases": ["Dartmouth North Public Library"]},
+        {"code": "W", "name": "Woodlawn Public Library", "city": "Dartmouth"},
+        {"code": "BED", "name": "Bedford Public Library", "city": "Bedford"}
+      ]
     }
   ]
 }
