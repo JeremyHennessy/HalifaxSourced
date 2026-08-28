@@ -18,6 +18,46 @@ function hostAllowed(value, platform) {
   const actual = host(value);
   return Boolean(actual && (platform.hosts || []).some((expected) => actual === expected || actual.endsWith(`.${expected}`)));
 }
+function identityToken(value) {
+  return String(value ?? "").toLowerCase().normalize("NFKD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/\b(the|restaurant|resto|cafe|café|bar|pub|inc|incorporated|limited|ltd|company|co|cuisine|japanese|brewing)\b/g, " ")
+    .replace(/[^a-z0-9]+/g, "")
+    .trim();
+}
+function normalizeFacebookProfile(item, record) {
+  if (String(item?.platform || "").toLowerCase() !== "facebook") return item;
+  const rawUrl = item.profileUrl || item.url;
+  let parsed;
+  try { parsed = new URL(String(rawUrl || "")); } catch { return item; }
+  const parts = parsed.pathname.split("/").map((part) => decodeURIComponent(part)).filter(Boolean);
+  const first = String(parts[0] || "").toLowerCase();
+  let handle = String(item.handle || "").replace(/^@/, "");
+  let legacyLabel = null;
+  if (["pages", "people", "pg"].includes(first) && parts[1]) {
+    legacyLabel = parts[1];
+    handle = parts[1];
+    if (first === "pg") {
+      const canonical = `https://www.facebook.com/${encodeURIComponent(parts[1])}`;
+      item = { ...item, url: canonical, profileUrl: canonical };
+    }
+  } else if (parsed.pathname === "/profile.php" && parsed.searchParams.get("id")) {
+    handle = parsed.searchParams.get("id");
+  }
+  item = { ...item, handle };
+  if (legacyLabel) {
+    const restaurantIdentity = identityToken(record?.name);
+    const profileIdentity = identityToken(legacyLabel);
+    const compatible = Boolean(restaurantIdentity && profileIdentity && (restaurantIdentity.includes(profileIdentity) || profileIdentity.includes(restaurantIdentity)));
+    if (!compatible) {
+      item.sharedBrandProfile = true;
+      item.locationSpecific = false;
+      item.associationBasis = "shared_brand_profile";
+      item.confidence = "high";
+    }
+  }
+  return item;
+}
 function validPlatformLink(item, kind) {
   const platform = platformById.get(String(item?.platform || "").toLowerCase());
   const handle = token(item?.handle);
@@ -37,6 +77,8 @@ function validRelated(link) {
 
 let removedProfiles = 0;
 let duplicateProfilesRemoved = 0;
+let normalizedFacebookProfiles = 0;
+let sharedBrandProfilesFlagged = 0;
 let removedHubs = 0;
 let duplicateHubsRemoved = 0;
 let removedRelated = 0;
@@ -44,7 +86,12 @@ let duplicateRelatedRemoved = 0;
 for (const record of records) {
   const seenProfiles = new Set();
   const cleanedProfiles = [];
-  for (const profile of record.socialProfiles || []) {
+  for (let profile of record.socialProfiles || []) {
+    const beforeHandle = String(profile?.handle || "");
+    const beforeShared = Boolean(profile?.sharedBrandProfile);
+    profile = normalizeFacebookProfile(profile, record);
+    if (String(profile?.handle || "") !== beforeHandle) normalizedFacebookProfiles += 1;
+    if (!beforeShared && profile?.sharedBrandProfile) sharedBrandProfilesFlagged += 1;
     if (!validPlatformLink(profile, "social")) { removedProfiles += 1; continue; }
     const key = `${profile.platform}|${token(profile.handle)}`;
     if (seenProfiles.has(key)) { duplicateProfilesRemoved += 1; continue; }
@@ -92,6 +139,8 @@ payload.sanitization = {
   registryVersion: registry.version,
   removedGenericOrInvalidProfiles: removedProfiles,
   duplicateProfilesRemoved,
+  normalizedFacebookLegacyProfiles: normalizedFacebookProfiles,
+  sharedBrandProfilesFlagged,
   removedGenericOrInvalidLinkHubs: removedHubs,
   duplicateLinkHubsRemoved: duplicateHubsRemoved,
   removedInvalidRelatedLinks: removedRelated,
@@ -100,4 +149,4 @@ payload.sanitization = {
 
 await writeFile(jsonPath, JSON.stringify(payload, null, 2));
 await writeFile(jsPath, `window.HALIFAX_FIRST_PARTY_SOURCES = ${JSON.stringify(payload, null, 2)};\n`);
-console.log(`Sanitized first-party sources: profiles=${payload.profileCount}, hubs=${payload.linkHubCount}, related=${payload.relatedLinkCount}, profile-removed=${removedProfiles}, hub-removed=${removedHubs}, related-removed=${removedRelated}.`);
+console.log(`Sanitized first-party sources: profiles=${payload.profileCount}, hubs=${payload.linkHubCount}, related=${payload.relatedLinkCount}, profile-removed=${removedProfiles}, facebook-normalized=${normalizedFacebookProfiles}, shared-brand-flagged=${sharedBrandProfilesFlagged}, hub-removed=${removedHubs}, related-removed=${removedRelated}.`);
