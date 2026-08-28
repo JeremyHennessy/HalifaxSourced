@@ -1,3 +1,4 @@
+import { createHash } from "node:crypto";
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 
 const catalog = JSON.parse(await readFile(new URL("../data/build/catalog.json", import.meta.url), "utf8"));
@@ -10,6 +11,10 @@ const CURRENT_VERIFY_DAYS = Number(process.env.STRUCTURED_SPECIAL_CURRENT_VERIFY
 
 function safeUrl(value) { try { const url = new URL(String(value || "")); return ["http:", "https:"].includes(url.protocol) ? url.href : null; } catch { return null; } }
 function slug(value) { return String(value || "").toLowerCase().normalize("NFKD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, ""); }
+function specialId(restaurantId, title, sourceUrl) {
+  const digest = createHash("sha256").update(`${restaurantId}|${String(title || "").toLowerCase()}|${sourceUrl}`).digest("hex").slice(0, 10);
+  return `${restaurantId}-${slug(title || "special")}-${digest}`;
+}
 function to24(hour, minute, ampm) { let h = Number(hour) % 12; if (String(ampm).toLowerCase() === "pm") h += 12; return `${String(h).padStart(2, "0")}:${String(minute || "00").padStart(2, "0")}`; }
 function parsedStamp(value) { const stamp = Date.parse(String(value || "")); return Number.isFinite(stamp) ? stamp : null; }
 function recentlyVerified(value) { const stamp = parsedStamp(value); return stamp !== null && stamp <= nowStamp + 86400000 && nowStamp - stamp <= CURRENT_VERIFY_DAYS * 86400000; }
@@ -81,14 +86,15 @@ for (const place of catalog.restaurants || []) {
   for (const special of place.specials || []) {
     const sourceUrl = safeUrl(special.sourceUrl) || safeUrl(special.url) || (place.sources || []).map((source) => safeUrl(source.url)).find(Boolean);
     if (!sourceUrl) continue;
+    const title = special.title || "Restaurant special";
     const cadence = parseCadence(special.cadence || special.timing || "");
     const verifiedAt = special.verifiedAt || special.observedAt || null;
     const sourceVerified = special.sourceStatus === "verified" || special.status === "verified";
     const record = {
-      specialId: `${place.id}-${slug(special.title || "special")}-${records.length + 1}`,
+      specialId: specialId(place.id, title, sourceUrl),
       restaurantId: place.id,
-      title: special.title || "Restaurant special",
-      specialType: typeFor(special.title),
+      title,
+      specialType: typeFor(title),
       description: special.description || null,
       dayOfWeek: cadence.dayOfWeek,
       startTime: cadence.startTime,
@@ -114,11 +120,12 @@ for (const page of verifiedRecords) {
   const url = safeUrl(page.url || page.sourceUrl);
   const haystack = `${page.label || ""} ${page.kind || page.type || ""} ${url || ""}`;
   if (!url || !/special|happy.?hour|promo|offer|feature/i.test(haystack)) continue;
+  const title = page.label || "Specials source";
   push({
-    specialId: `${page.restaurantId}-${slug(page.label || "special-source")}-${records.length + 1}`,
+    specialId: specialId(page.restaurantId, title, url),
     restaurantId: page.restaurantId,
-    title: page.label || "Specials source",
-    specialType: typeFor(page.label),
+    title,
+    specialType: typeFor(title),
     description: null,
     dayOfWeek: null,
     startTime: null,
@@ -139,11 +146,12 @@ for (const record of firstParty.records || []) {
   for (const link of record.relatedLinks || []) {
     const url = safeUrl(link.url);
     if (!url || !/special|happy.?hour|promo|feature|deal/i.test(`${link.label || ""} ${url}`)) continue;
+    const title = link.label || "Specials source";
     push({
-      specialId: `${record.restaurantId}-${slug(link.label || "special-link")}-${records.length + 1}`,
+      specialId: specialId(record.restaurantId, title, url),
       restaurantId: record.restaurantId,
-      title: link.label || "Specials source",
-      specialType: typeFor(link.label),
+      title,
+      specialType: typeFor(title),
       description: null,
       dayOfWeek: null,
       startTime: null,
