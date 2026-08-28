@@ -2,7 +2,9 @@
 const EVENT_EDITORIAL_LIMIT = 8;
 
 function renderEvents() {
-  const items = restaurants.filter((restaurant) => restaurant.hasEvent).sort((a, b) => (b.score || 0) - (a.score || 0));
+  const items = restaurants
+    .filter((restaurant) => (restaurant.eventLinks?.length ?? 0) > 0 || (restaurant.events?.length ?? 0) > 0)
+    .sort((a, b) => (b.score || 0) - (a.score || 0));
   const featured = items[0];
   const visibleItems = items.slice(0, EVENT_EDITORIAL_LIMIT);
   appView.innerHTML = `
@@ -15,13 +17,13 @@ function renderEvents() {
     <section class="page-shell two-column-page">
       <div>
         <div class="chip-row"><button class="chip is-active">All events</button><button class="chip">Food & drink</button><button class="chip">Live music</button><button class="chip">Community</button></div>
-        <div class="section-heading no-top"><div><h2>Event leads</h2><p>Time-sensitive details are intentionally not invented. Follow the official source before making plans.</p></div><span class="editorial-count">Showing ${visibleItems.length} of ${items.length} strongest leads</span></div>
-        <div class="event-list">${visibleItems.length ? visibleItems.map(eventSourceCard).join("") : emptyPageState("No event-source leads are loaded yet.")}</div>
-        ${items.length > visibleItems.length ? `<div class="editorial-more"><a class="button secondary" href="#explore">Explore all places</a><p>Additional event signals remain searchable through restaurant discovery.</p></div>` : ""}
+        <div class="section-heading no-top"><div><h2>Event leads</h2><p>Only explicit event links or curated event records are promoted here. Follow the official source before making plans.</p></div><span class="editorial-count">Showing ${visibleItems.length} of ${items.length} strongest leads</span></div>
+        <div class="event-list">${visibleItems.length ? visibleItems.map(eventSourceCard).join("") : emptyPageState("No explicit event links are loaded yet.")}</div>
+        ${items.length > visibleItems.length ? `<div class="editorial-more"><a class="button secondary" href="#explore">Explore all places</a><p>Additional source signals remain searchable through restaurant discovery.</p></div>` : ""}
       </div>
       <aside class="events-sidebar">
         <div class="calendar-card">${simpleCalendar()}</div>
-        <div class="source-card"><h2>How to read this page</h2><p>These are discovery leads from official-site keywords and links, not a claim that an event occurs today. Open the source to confirm date, time, tickets, and availability.</p></div>
+        <div class="source-card"><h2>How to read this page</h2><p>These are discovery leads from explicit official event links or curated event records, not a claim that an event occurs today. Open the source to confirm date, time, tickets, and availability.</p></div>
       </aside>
     </section>`;
   bindCommonActions();
