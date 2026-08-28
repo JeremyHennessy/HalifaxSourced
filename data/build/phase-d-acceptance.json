@@ -1,0 +1,36 @@
+{
+  "acceptedAt": "2026-08-28T21:41:28.678Z",
+  "testedCommit": "35f6511ccb4b950e853ef241af9e3f0e8b0a6d5f",
+  "baselineSocialPlaces": 132,
+  "placesWithSocial": 137,
+  "profileAssociations": 349,
+  "placesWithLinkHub": 0,
+  "firstPartyRecords": 215,
+  "firstPartyProfiles": 349,
+  "firstPartyLinkHubs": 0,
+  "carryForward": {
+    "previousGeneratedAt": "2026-08-28T21:30:49.953Z",
+    "maxAgeDays": 180,
+    "recordsCarriedAfterRefreshFailure": 3,
+    "socialProfilesCarried": 11,
+    "linkHubsCarried": 0,
+    "relatedLinksCarried": 5,
+    "feedsCarried": 7,
+    "previousProfilesRejectedByCurrentRegistry": 0,
+    "appliedAt": "2026-08-28T21:37:00.343Z"
+  },
+  "sanitization": {
+    "appliedAt": "2026-08-28T21:37:00.641Z",
+    "registryVersion": 1,
+    "removedGenericOrInvalidProfiles": 0,
+    "duplicateProfilesRemoved": 8,
+    "normalizedFacebookLegacyProfiles": 15,
+    "sharedBrandProfilesFlagged": 2,
+    "removedGenericOrInvalidLinkHubs": 0,
+    "duplicateLinkHubsRemoved": 0,
+    "removedInvalidRelatedLinks": 0,
+    "duplicateRelatedLinksRemoved": 0
+  },
+  "result": "accepted",
+  "browserAcceptance": "verify-ui + mini-map lifecycle passed"
+}
