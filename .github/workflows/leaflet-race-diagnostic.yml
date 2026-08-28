@@ -1,0 +1,58 @@
+name: Leaflet Race Diagnostic
+
+on:
+  push:
+    branches:
+      - diag/leaflet-canvas-race-20260828
+    paths:
+      - .github/workflows/leaflet-race-diagnostic.yml
+
+permissions:
+  contents: read
+
+jobs:
+  ui-repeat:
+    runs-on: ubuntu-24.04
+    strategy:
+      fail-fast: false
+      matrix:
+        attempt: [1, 2, 3]
+    steps:
+      - name: Checkout exact main baseline
+        uses: actions/checkout@v6
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Install Playwright
+        run: |
+          npm install --no-save playwright@1.55.0
+          npx playwright install --with-deps chromium
+
+      - name: Start local app
+        run: |
+          node scripts/dev-server.mjs > /tmp/halifax-sourced-server.log 2>&1 &
+          for i in {1..30}; do
+            if curl --fail --silent http://127.0.0.1:5173/ >/dev/null; then
+              exit 0
+            fi
+            sleep 1
+          done
+          cat /tmp/halifax-sourced-server.log
+          exit 1
+
+      - name: Run full UI verification attempt ${{ matrix.attempt }}
+        env:
+          APP_URL: http://127.0.0.1:5173
+        run: node scripts/verify-ui.mjs
+
+      - name: Upload attempt artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: leaflet-race-attempt-${{ matrix.attempt }}
+          path: artifacts/
+          if-no-files-found: ignore
+          retention-days: 7
