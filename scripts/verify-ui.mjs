@@ -76,6 +76,7 @@ await page.locator(".closure-notice", { hasText: "Permanently closed" }).waitFor
 if (!(await page.locator(".closure-notice").innerText()).includes("April 29, 2026")) throw new Error("Field Guide closure date is missing from the historical detail route.");
 if (await page.locator(".detail-official-actions").count()) throw new Error("Closed Field Guide rendered current website/menu/reservation/order actions.");
 if (await page.locator('.closure-notice a[href*="facebook.com/fieldguidehfx"]').count() !== 1) throw new Error("Field Guide official closure evidence is missing.");
+await page.screenshot({ path: resolve("artifacts", "ui-check-closed-detail.png"), fullPage: true });
 await page.goto(`${url}/#restaurant/2-doors-down`, { waitUntil: "networkidle" });
 await page.locator("h1", { hasText: "2 Doors Down" }).waitFor();
 if (await page.locator(".closure-notice").count()) throw new Error("The active Dartmouth 2 Doors Down location inherited the former Halifax closure.");
