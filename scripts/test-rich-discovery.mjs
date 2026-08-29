@@ -40,6 +40,8 @@ const state = await page.evaluate(() => {
     featureTerm,
     featureIndexed: featureTerm ? featureSearch.includes(featureTerm.toLowerCase()) : false,
     hasSpecialRestaurant: Boolean(specialRestaurant),
+    socialLinkedRestaurantCount: restaurants.filter((restaurant) => (restaurant.socialProfiles || []).some((profile) => safeUrl(profile.url))).length,
+    socialCardLinkCount: document.querySelectorAll(".restaurant-card .card-social a").length,
     specialIndexed: specialRestaurant ? searchableText(specialRestaurant).includes(String(specialRestaurant.structuredSpecials[0].title || "").toLowerCase()) : true,
     richFunctionLoaded: typeof homeRichSections === "function",
     richMarkupLength: typeof richMarkup === "string" ? richMarkup.length : -1,
@@ -60,6 +62,7 @@ if (!(state.structuredFactCount > 0)) throw new Error(`Structured facts not load
 if (!(state.structuredSpecialCount > 0)) throw new Error(`Structured specials not loaded: ${JSON.stringify(state)}`);
 if (!state.hasStructuredRestaurant || !state.featureIndexed) throw new Error(`Structured features are not searchable: ${JSON.stringify(state)}`);
 if (!state.hasSpecialRestaurant || !state.specialIndexed) throw new Error(`Structured specials are not searchable: ${JSON.stringify(state)}`);
+if (!(state.socialLinkedRestaurantCount > 0) || !(state.socialCardLinkCount > 0)) throw new Error(`Social profiles are not visible on restaurant cards: ${JSON.stringify(state)}`);
 if (!state.richFunctionLoaded || state.richMarkupLength < 0) throw new Error(`Rich home renderer not loaded: ${JSON.stringify(state)}`);
 console.log(JSON.stringify(state, null, 2));
 console.log("Rich discovery regression passed: structured facts, specials, expanded search, and conditional home enrichment are loaded after explicit application readiness without browser errors.");
