@@ -13,6 +13,7 @@ function renderRestaurantDetail(id) {
   const socialProfiles = (restaurant.socialProfiles || []).filter((profile) => safeUrl(profile.url));
   const linkHubs = (restaurant.linkHubs || []).filter((hub) => safeUrl(hub.url));
   const relatedLinks = (restaurant.relatedLinks || []).filter((link) => safeUrl(link.url));
+  const officialUpdates = (restaurant.officialUpdates || []).filter((update) => safeUrl(update.postUrl));
 
   appView.innerHTML = `
     <section class="restaurant-hero media-${mediaTone(restaurant)}${permittedImageClass(restaurant)}">
@@ -21,10 +22,11 @@ function renderRestaurantDetail(id) {
     </section>
     <section class="page-shell detail-layout">
       <div class="detail-main">
-        <nav class="detail-tabs"><a href="#detailMenu">Menu</a><a href="#detailSpecials">Specials</a><a href="#detailEvents">Events</a><a href="#detailLinks">Links</a><a href="#detailInfo">Info</a><a href="#detailSources">Sources</a></nav>
+        <nav class="detail-tabs"><a href="#detailMenu">Menu</a><a href="#detailSpecials">Specials</a><a href="#detailEvents">Events</a>${officialUpdates.length ? '<a href="#detailUpdates">Updates</a>' : ""}<a href="#detailLinks">Links</a><a href="#detailInfo">Info</a><a href="#detailSources">Sources</a></nav>
         <section id="detailMenu" class="detail-section"><div class="section-heading no-top"><div><h2>Menu sources</h2><p>Direct menu links observed from the restaurant's official source pages.</p></div></div>${restaurant.menuLinks.length ? `<div class="link-list">${restaurant.menuLinks.slice(0, 8).map(sourceLinkRow).join("")}</div>` : `<div class="info-message">No dedicated menu link is represented in the current source data.${website ? " The official website remains available in the Info panel." : ""}</div>`}</section>
         <section id="detailSpecials" class="detail-section"><div class="section-heading no-top"><div><h2>Specials</h2><p>Time-sensitive claims remain source leads until separate structured data establishes current terms, price, and timing.</p></div></div>${restaurant.specialLinks.length ? `<div class="link-list">${restaurant.specialLinks.map(sourceLinkRow).join("")}</div>` : restaurant.specials.length ? `<div class="link-list">${restaurant.specials.map((s) => `<div class="source-link-row"><span>✦</span><div><strong>${escapeHtml(s.title)}</strong><small>${escapeHtml(s.cadence || "Check current details")}</small></div></div>`).join("")}</div>` : `<div class="info-message">No current special source is represented in the loaded data.</div>`}</section>
         <section id="detailEvents" class="detail-section"><div class="section-heading no-top"><div><h2>Restaurant events</h2><p>${restaurant.structuredEvents.length ? "Structured upcoming dates from restaurant-owned sources. Times are shown in Halifax time." : "Use the official link to confirm dates, times, tickets, and availability."}</p></div></div>${restaurant.structuredEvents.length ? `<div class="link-list">${restaurant.structuredEvents.map(structuredEventDetailRow).join("")}</div>` : restaurant.eventLinks.length ? `<div class="link-list">${restaurant.eventLinks.map(sourceLinkRow).join("")}</div>` : restaurant.events.length ? `<div class="link-list">${restaurant.events.map((event) => `<div class="source-link-row"><span>◫</span><div><strong>${escapeHtml(event.title)}</strong><small>${escapeHtml(event.timing || "Check current details")}</small></div></div>`).join("")}</div>` : `<div class="info-message">No restaurant-specific event lead is represented in the loaded sources.</div>`}</section>
+        ${officialUpdates.length ? `<section id="detailUpdates" class="detail-section"><div class="section-heading no-top"><div><h2>Latest official updates</h2><p>Recent posts observed from restaurant-owned feeds or authenticated official social APIs. Open the source for the full post and current details.</p></div></div><div class="official-update-grid">${officialUpdates.slice(0, 12).map(officialUpdateCard).join("")}</div></section>` : ""}
         <section id="detailLinks" class="detail-section"><div class="section-heading no-top"><div><h2>Social & related links</h2><p>Official navigation links are retained only when a restaurant-owned evidence chain supports the association. Shared brand accounts remain navigation links but are not treated as location-specific post evidence.</p></div></div>${socialProfiles.length || linkHubs.length || relatedLinks.length ? `${socialProfiles.length ? `<h3 class="detail-subheading">Official social profiles</h3><div class="link-list">${socialProfiles.map((profile) => socialProfileRow(profile, restaurant.sharedSocialProfiles || [])).join("")}</div>` : ""}${linkHubs.length ? `<h3 class="detail-subheading">Official link hubs</h3><div class="link-list">${linkHubs.map(linkHubRow).join("")}</div>` : ""}${relatedLinks.length ? `<h3 class="detail-subheading">Restaurant links</h3><div class="link-list">${relatedLinks.map(relatedLinkRow).join("")}</div>` : ""}` : `<div class="info-message">No source-backed social, link-hub, or related links have been discovered yet.</div>`}</section>
         <section id="detailSources" class="detail-section"><div class="section-heading no-top"><div><h2>Source evidence</h2><p>What Halifax Sourced has actually observed for this listing.</p></div></div><div class="source-evidence-grid"><div><strong>${restaurant.score || 0}</strong><span>source coverage score</span></div><div><strong>${restaurant.sources.length}</strong><span>listing sources</span></div><div><strong>${restaurant.inspections.length}</strong><span>public registry matches</span></div><div><strong>${socialProfiles.length}</strong><span>official social links</span></div></div><div class="link-list">${sourceLinks.length ? sourceLinks.map(sourceLinkRow).join("") : '<div class="info-message">No direct source links are available.</div>'}</div></section>
       </div>
@@ -115,6 +117,16 @@ function sourceLinkRow(link) {
   if (!url) return "";
   const sourceNote = link.verified ? " · verified direct source" : link.verifiedLink ? " · official-site link" : "";
   return `<a class="source-link-row" href="${escapeHtml(url)}" target="_blank" rel="noreferrer"><span>↗</span><div><strong>${escapeHtml(link.label || "Official source")}</strong><small>${escapeHtml(new URL(url).hostname.replace(/^www\./, ""))}${escapeHtml(sourceNote)}</small></div></a>`;
+}
+
+function officialUpdateCard(update) {
+  const url = safeUrl(update.postUrl);
+  if (!url) return "";
+  const published = new Date(update.publishedAt);
+  const date = Number.isNaN(published.getTime()) ? "Date unavailable" : published.toLocaleDateString("en-CA", { month: "short", day: "numeric", year: "numeric", timeZone: "America/Halifax" });
+  const platform = update.platform === "website_feed" ? "Official website" : socialPlatformLabel(update.platform);
+  const media = update.mediaUrl || update.thumbnailUrl ? " · media post" : "";
+  return `<a class="official-update-card" href="${escapeHtml(url)}" target="_blank" rel="noreferrer"><span>${escapeHtml(platform)}</span><strong>${escapeHtml(update.title || `${platform} update`)}</strong><small>${escapeHtml(date)}${escapeHtml(media)} · Open original ↗</small></a>`;
 }
 
 function infoCard(title, text, icon) {

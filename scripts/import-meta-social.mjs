@@ -79,6 +79,7 @@ function profileTargetSet(platform) {
 const facebookTargets = profileTargetSet("facebook");
 const instagramTargets = profileTargetSet("instagram");
 const signals = [];
+const posts = [];
 const failures = [];
 let profilesAttempted = 0;
 let postsObserved = 0;
@@ -89,13 +90,12 @@ if (facebookToken) {
     profilesAttempted += 1;
     try {
       const page = await graphGet(profile.handle, { fields: "id,name,link" }, facebookToken);
-      const posts = await graphGet(`${page.id}/posts`, { fields: "id,message,created_time,permalink_url", limit: postLimit }, facebookToken);
-      for (const post of posts.data || []) {
+      const pagePosts = await graphGet(`${page.id}/posts`, { fields: "id,message,created_time,permalink_url,full_picture", limit: postLimit }, facebookToken);
+      for (const post of pagePosts.data || []) {
         if (!recent(post.created_time)) continue;
         postsObserved += 1;
         const matches = matchedOnly(classify(post.message));
-        if (!Object.keys(matches).length) continue;
-        signals.push({
+        const record = {
           restaurantId: profile.restaurantId,
           restaurantName: profile.restaurantName,
           platform: "facebook",
@@ -104,6 +104,8 @@ if (facebookToken) {
           platformObjectId: page.id,
           postId: post.id,
           postUrl: post.permalink_url || profile.url,
+          title: String(post.message || "").trim().split(/\r?\n/)[0].slice(0, 140) || "Facebook update",
+          mediaUrl: post.full_picture || null,
           publishedAt: new Date(post.created_time).toISOString(),
           observedAt: new Date().toISOString(),
           signalMatches: matches,
@@ -111,7 +113,9 @@ if (facebookToken) {
           associationBasis: "unique_profile_link_from_official_website",
           confidence: "official_social_api_signal",
           reviewState: "api_observed"
-        });
+        };
+        posts.push(record);
+        if (Object.keys(matches).length) signals.push(record);
       }
     } catch (error) {
       failures.push({ restaurantId: profile.restaurantId, platform: "facebook", handle: profile.handle, reason: error.name === "TimeoutError" ? "timeout" : error.message });
@@ -126,7 +130,7 @@ if (instagramToken && instagramUserId) {
     if (delayMs > 0) await sleep(delayMs);
     profilesAttempted += 1;
     try {
-      const fields = `business_discovery.username(${profile.handle}){id,name,username,website,media.limit(${postLimit}){id,caption,media_type,permalink,timestamp}}`;
+      const fields = `business_discovery.username(${profile.handle}){id,name,username,website,media.limit(${postLimit}){id,caption,media_type,media_url,thumbnail_url,permalink,timestamp}}`;
       const body = await graphGet(instagramUserId, { fields }, instagramToken);
       const account = body.business_discovery;
       if (!account) throw new Error("business_discovery_unavailable");
@@ -134,8 +138,7 @@ if (instagramToken && instagramUserId) {
         if (!recent(media.timestamp)) continue;
         postsObserved += 1;
         const matches = matchedOnly(classify(media.caption));
-        if (!Object.keys(matches).length) continue;
-        signals.push({
+        const record = {
           restaurantId: profile.restaurantId,
           restaurantName: profile.restaurantName,
           platform: "instagram",
@@ -144,7 +147,10 @@ if (instagramToken && instagramUserId) {
           platformObjectId: account.id,
           postId: media.id,
           postUrl: media.permalink || profile.url,
+          title: String(media.caption || "").trim().split(/\r?\n/)[0].slice(0, 140) || "Instagram update",
           mediaType: media.media_type || null,
+          mediaUrl: media.media_url || null,
+          thumbnailUrl: media.thumbnail_url || null,
           publishedAt: new Date(media.timestamp).toISOString(),
           observedAt: new Date().toISOString(),
           signalMatches: matches,
@@ -152,7 +158,9 @@ if (instagramToken && instagramUserId) {
           associationBasis: "unique_profile_link_from_official_website",
           confidence: "official_social_api_signal",
           reviewState: "api_observed"
-        });
+        };
+        posts.push(record);
+        if (Object.keys(matches).length) signals.push(record);
       }
     } catch (error) {
       failures.push({ restaurantId: profile.restaurantId, platform: "instagram", handle: profile.handle, reason: error.name === "TimeoutError" ? "timeout" : error.message });
@@ -165,9 +173,11 @@ if (instagramToken && instagramUserId) {
 
 const uniqueSignals = signals.filter((signal, index, all) => all.findIndex((item) => item.platform === signal.platform && item.postId === signal.postId && item.restaurantId === signal.restaurantId) === index)
   .sort((a, b) => b.publishedAt.localeCompare(a.publishedAt));
+const uniquePosts = posts.filter((post, index, all) => all.findIndex((item) => item.platform === post.platform && item.postId === post.postId && item.restaurantId === post.restaurantId) === index)
+  .sort((a, b) => b.publishedAt.localeCompare(a.publishedAt));
 
 const output = {
-  version: 1,
+  version: 2,
   generatedAt: new Date().toISOString(),
   graphVersion,
   lookbackDays,
@@ -181,6 +191,7 @@ const output = {
   sharedProfileHandles: facebookTargets.sharedHandles + instagramTargets.sharedHandles,
   profilesAttempted,
   postsObserved,
+  posts: uniquePosts,
   signals: uniqueSignals,
   failures: failures.slice(0, 200)
 };
