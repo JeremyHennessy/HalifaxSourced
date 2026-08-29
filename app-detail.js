@@ -19,9 +19,10 @@ function renderRestaurantDetail(id) {
   const statusEvidenceUrl = safeUrl(restaurant.operatingStatusEvidence?.sourceUrl);
   const closureDate = restaurant.closureDate ? new Date(`${restaurant.closureDate}T12:00:00`).toLocaleDateString("en-CA", { year: "numeric", month: "long", day: "numeric" }) : null;
   const statusLabel = restaurant.operatingStatus === "permanently_closed" ? "Permanently closed" : restaurant.operatingStatus === "temporarily_closed" ? "Temporarily closed" : restaurant.operatingStatus === "moved" ? "Moved" : "Status unavailable";
+  const denseMobileOverview = active && restaurant.phone && (menuLink || ordering) && (reservation || website);
 
   appView.innerHTML = `
-    <section class="restaurant-hero media-${mediaTone(restaurant)}${permittedImageClass(restaurant)}">
+    <section class="restaurant-hero media-${mediaTone(restaurant)}${permittedImageClass(restaurant)}${denseMobileOverview ? " is-dense-mobile" : ""}">
       ${mediaImageMarkup(restaurant, { loading: "eager", className: "restaurant-hero-photo", alt: `${restaurant.name} restaurant` })}
       ${mediaAttributionMarkup(restaurant)}
       <div class="restaurant-hero-overlay page-shell"><a class="back-link" href="#explore">← Back to results</a><div class="restaurant-title"><div><div class="title-badges">${active && restaurant.sourceLayer === "curated" ? "<span>Local pick</span>" : ""}${restaurant.sourceLayer === "local_discovery" ? "<span>New discovery</span>" : ""}${!active ? `<span class="status-closed">${escapeHtml(statusLabel)}</span>` : restaurant.signal ? "<span>Official site scanned</span>" : ""}${socialProfiles.length ? `<span>${socialProfiles.length} social link${socialProfiles.length === 1 ? "" : "s"}</span>` : ""}</div><h1>${escapeHtml(restaurant.name)}</h1><p>${escapeHtml(primaryCuisine(restaurant))} · ${escapeHtml(restaurant.neighborhood || "Halifax")}</p><p class="hero-summary">${escapeHtml(restaurant.summary || "Local restaurant listing with public source coverage.")}</p><div class="card-tags">${active ? consumerTags(restaurant).slice(0, 6).map((tag) => `<span>${escapeHtml(tag)}</span>`).join("") : ""}</div><div class="hero-actions">${active ? `${menuLink ? `<a class="button light" href="${escapeHtml(menuLink)}" target="_blank" rel="noreferrer">View menu ↗</a>` : ""}<button class="button secondary save-detail" type="button" data-save-id="${escapeHtml(restaurant.id)}">${state.saved.has(restaurant.id) ? "♥ Saved" : "♡ Save"}</button>${website ? `<a class="button secondary" href="${escapeHtml(website)}" target="_blank" rel="noreferrer">Official site ↗</a>` : ""}` : statusEvidenceUrl ? `<a class="button light" href="${escapeHtml(statusEvidenceUrl)}" target="_blank" rel="noreferrer">Official closure source ↗</a>` : ""}</div></div></div></div>
@@ -30,7 +31,7 @@ function renderRestaurantDetail(id) {
       <div class="detail-main">
         ${!active ? `<section class="closure-notice" role="status"><strong>${escapeHtml(statusLabel)}${closureDate ? ` · final service ${escapeHtml(closureDate)}` : ""}</strong><p>${escapeHtml(restaurant.operatingStatusEvidence?.claim || "This record is retained for historical source evidence and is excluded from current discovery.")}</p>${statusEvidenceUrl ? `<a href="${escapeHtml(statusEvidenceUrl)}" target="_blank" rel="noreferrer">View official status evidence ↗</a>` : ""}</section>` : ""}
         <nav class="detail-tabs"><a href="#detailOverview">Overview</a><a href="#detailMenu">Menu</a><a href="#detailSpecials">Specials</a><a href="#detailEvents">Events</a>${officialUpdates.length ? '<a href="#detailUpdates">Updates</a>' : ""}<a href="#detailLinks">Links</a><a href="#detailSources">Sources</a></nav>
-        <section id="detailOverview" class="mobile-detail-overview" aria-label="Restaurant essentials">
+        <section id="detailOverview" class="mobile-detail-overview${denseMobileOverview ? " is-dense" : ""}" aria-label="Restaurant essentials">
           <div class="mobile-essential-facts">
             <div><span>Hours</span><strong>${escapeHtml(restaurant.openingHours || "Check official source")}</strong></div>
             <div><span>Location</span><strong>${escapeHtml(restaurant.address || restaurant.neighborhood || "Halifax")}</strong></div>
@@ -60,7 +61,12 @@ function renderRestaurantDetail(id) {
       </aside>
     </section>`;
   bindCommonActions();
-  if (restaurant.coordinates) requestAnimationFrame(() => initDetailMap(restaurant));
+  if (restaurant.coordinates) {
+    const detailMapElement = document.querySelector("#detailMap");
+    requestAnimationFrame(() => {
+      if (detailMapElement?.isConnected) initDetailMap(restaurant, detailMapElement);
+    });
+  }
 }
 
 function structuredSpecialDetailRow(special) {

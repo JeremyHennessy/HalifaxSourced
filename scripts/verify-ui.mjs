@@ -322,6 +322,36 @@ if (!/1333 South Park Street/i.test(springGardenResolutionState.address) || spri
 if (await page.locator("#detailInfo .sidebar-link", { hasText: "Menu" }).count() < 1) throw new Error("Expected the official Le Bistro menu action on the reviewed Spring Garden detail page.");
 await captureIphone("spring-garden-reviewed");
 
+for (const target of [
+  { id: "osm-node-13262595504-mappatura-bistro", title: "Mappatura Bistro", address: "5883 Spring Garden", menu: "mappaturabistro.ca/menu", socialProfiles: 2 },
+  { id: "osm-node-26041177-your-father-s-moustache", title: "Your Father's Moustache", address: "5686 Spring Garden", menu: "yourfathersmoustache.ca/our-menu" },
+  { id: "osm-node-5161526522-sushi-nami-royale", title: "Sushi Nami Royale", address: "1458 Queen", menu: "sushinami.ca/downtown-halifax", socialProfiles: 3 },
+  { id: "osm-node-3791840157-krave-burger", title: "Krave Burger", address: "5680 Spring Garden", menu: "kraveburger.com/menu" },
+  { id: "osm-node-3799422457-cora", title: "Cora", address: "1535 Dresden", menu: "chezcora.com/en/menu" }
+]) {
+  await page.goto(`${url}/#restaurant/${target.id}`, { waitUntil: "networkidle" });
+  await page.locator("h1", { hasText: target.title }).waitFor();
+  const state = await page.evaluate((restaurantId) => {
+    const restaurant = restaurants.find((item) => item.id === restaurantId);
+    return {
+      neighborhood: restaurant?.neighborhood || "",
+      resolution: restaurant?.reviewedPlaceResolution || null
+    };
+  }, target.id);
+  if (state.neighborhood !== "Spring Garden" || state.resolution?.reviewState !== "resolved-by-evidence" || !state.resolution.address?.includes(target.address) || !state.resolution.menuUrl?.includes(target.menu)) throw new Error(`Expected location-specific Spring Garden evidence for ${target.title}, got ${JSON.stringify(state)}.`);
+  if (await page.locator("#detailInfo .sidebar-link", { hasText: "Menu" }).count() < 1) throw new Error(`Expected the official Menu action for ${target.title}.`);
+  if (target.socialProfiles && (state.resolution.socialProfiles?.length || 0) < target.socialProfiles) throw new Error(`Expected ${target.socialProfiles} official-site-linked social profiles for ${target.title}.`);
+  if (target.id === "osm-node-13262595504-mappatura-bistro") {
+    const mobileActionClearance = await page.evaluate(() => {
+      const actions = document.querySelector(".mobile-essential-actions")?.getBoundingClientRect();
+      const tabbar = document.querySelector(".mobile-tabbar")?.getBoundingClientRect();
+      return actions && tabbar ? Math.round(tabbar.top - actions.bottom) : null;
+    });
+    if (mobileActionClearance === null || mobileActionClearance < 8) throw new Error(`Expected at least 8px between dense mobile restaurant actions and the fixed tab bar, got ${mobileActionClearance}px.`);
+    await captureIphone("spring-garden-batch-2");
+  }
+}
+
 await page.goto(`${url}/#restaurant/the-narrows`, { waitUntil: "networkidle" });
 await page.locator(".restaurant-hero-photo").waitFor();
 await page.waitForFunction(() => {

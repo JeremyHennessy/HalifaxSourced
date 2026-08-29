@@ -1,7 +1,7 @@
 # Halifax Sourced content coverage snapshot
 
-Generated: 2026-08-29T18:23:04.314Z
-Source/deployment commit: `e083247491e097a10ab8a2bc44e93541373a34d9`
+Generated: 2026-08-29T19:13:30.413Z
+Source/deployment commit: `ceb7428125ea428015000d4e528b4315d25f5bcc`
 
 This is the reconciled snapshot produced from the same data layers packaged for deployment. Unknown values remain unknown; source leads are not promoted to verified facts.
 
@@ -12,13 +12,13 @@ This is the reconciled snapshot produced from the same data layers packaged for 
 | Canonical places | 749 | 100.0% |
 | Active canonical places | 748 | 99.9% |
 | Archived lifecycle places | 1 | 0.1% |
-| Official website | 299 | 39.9% |
+| Official website | 301 | 40.2% |
 | Verified/reachable official website | 242 | 32.3% |
-| Menu link | 158 | 21.1% |
+| Menu link | 160 | 21.4% |
 | Verified menu link | 86 | 11.5% |
-| Phone | 274 | 36.6% |
-| Hours | 243 | 32.4% |
-| At least one social profile | 145 | 19.4% |
+| Phone | 276 | 36.8% |
+| Hours | 244 | 32.6% |
+| At least one social profile | 146 | 19.5% |
 | Usable rights-approved media | 7 | 0.9% |
 | Coordinates | 738 | 98.5% |
 | Neighbourhood | 749 | 100.0% |

@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-08-29T18:23:51.429Z",
+  "generatedAt": "2026-08-29T19:13:30.835Z",
   "policy": "Only location-specific matches supported by compatible identity plus address, official domain, phone or reviewed discovery evidence are published. Conflicts and name-only matches remain queued.",
   "downtownDartmouth": {
     "candidates": 48,
@@ -20,8 +20,8 @@
   "springGarden": {
     "candidates": 82,
     "algorithmResolved": 5,
-    "publishedReviewed": 4,
-    "heldForReview": 78,
+    "publishedReviewed": 9,
+    "heldForReview": 73,
     "counts": {
       "unresolved": 55,
       "resolved_high": 3,
@@ -465,6 +465,128 @@
         "socialProfiles": true,
         "duplicateConflictCleared": true
       }
+    },
+    {
+      "restaurantId": "osm-node-13262595504-mappatura-bistro",
+      "name": "Mappatura Bistro",
+      "resolutionState": "resolved_high",
+      "evidence": [
+        "exact_normalized_name",
+        "exact_official_domain",
+        "compatible_street_address",
+        "official_location_contact_and_hours",
+        "official_menu_published",
+        "official_site_linked_socials"
+      ],
+      "completeness": {
+        "identity": true,
+        "address": true,
+        "coordinates": true,
+        "currentStatus": true,
+        "officialWebsite": true,
+        "menu": true,
+        "hours": true,
+        "phone": true,
+        "socialProfiles": true,
+        "duplicateConflictCleared": true
+      }
+    },
+    {
+      "restaurantId": "osm-node-26041177-your-father-s-moustache",
+      "name": "Your Father's Moustache",
+      "resolutionState": "resolved_high",
+      "evidence": [
+        "exact_normalized_name",
+        "exact_official_domain",
+        "compatible_street_address",
+        "official_menu_published",
+        "current_official_specials"
+      ],
+      "completeness": {
+        "identity": true,
+        "address": true,
+        "coordinates": true,
+        "currentStatus": true,
+        "officialWebsite": true,
+        "menu": true,
+        "hours": false,
+        "phone": false,
+        "socialProfiles": false,
+        "duplicateConflictCleared": true
+      }
+    },
+    {
+      "restaurantId": "osm-node-5161526522-sushi-nami-royale",
+      "name": "Sushi Nami Royale",
+      "resolutionState": "resolved_high",
+      "evidence": [
+        "exact_normalized_name",
+        "exact_official_domain",
+        "compatible_street_address",
+        "official_location_contact",
+        "official_location_menu_hub",
+        "official_site_linked_socials"
+      ],
+      "completeness": {
+        "identity": true,
+        "address": true,
+        "coordinates": true,
+        "currentStatus": true,
+        "officialWebsite": true,
+        "menu": true,
+        "hours": true,
+        "phone": true,
+        "socialProfiles": true,
+        "duplicateConflictCleared": true
+      }
+    },
+    {
+      "restaurantId": "osm-node-3791840157-krave-burger",
+      "name": "Krave Burger",
+      "resolutionState": "resolved_high",
+      "evidence": [
+        "exact_normalized_name",
+        "exact_official_domain",
+        "compatible_street_address",
+        "official_location_contact_and_hours",
+        "official_menu_published"
+      ],
+      "completeness": {
+        "identity": true,
+        "address": true,
+        "coordinates": true,
+        "currentStatus": true,
+        "officialWebsite": true,
+        "menu": true,
+        "hours": true,
+        "phone": true,
+        "socialProfiles": true,
+        "duplicateConflictCleared": true
+      }
+    },
+    {
+      "restaurantId": "osm-node-3799422457-cora",
+      "name": "Cora Halifax - Downtown",
+      "resolutionState": "resolved_high",
+      "evidence": [
+        "compatible_name",
+        "exact_official_domain",
+        "compatible_street_address",
+        "official_location_contact_and_hours",
+        "official_menu_published"
+      ],
+      "completeness": {
+        "identity": true,
+        "address": true,
+        "coordinates": true,
+        "currentStatus": true,
+        "officialWebsite": true,
+        "menu": true,
+        "hours": true,
+        "phone": true,
+        "socialProfiles": true,
+        "duplicateConflictCleared": true
+      }
     }
   ],
   "practicalGapCounts": {
@@ -474,9 +596,9 @@
     "currentStatus": 0,
     "officialWebsite": 2,
     "menu": 8,
-    "hours": 3,
-    "phone": 2,
-    "socialProfiles": 6,
+    "hours": 4,
+    "phone": 3,
+    "socialProfiles": 7,
     "duplicateConflictCleared": 0
   },
   "failures": []
