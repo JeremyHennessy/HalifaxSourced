@@ -1,0 +1,56 @@
+name: Structured Specials Preview
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "37 11 * * 3"
+  pull_request:
+    branches:
+      - main
+    paths:
+      - .github/workflows/structured-specials-preview.yml
+      - scripts/build-structured-specials.mjs
+      - scripts/check-structured-specials.mjs
+      - scripts/reconcile-structured-coverage.mjs
+      - scripts/build-content-quality-report.mjs
+      - app-structured-specials.js
+      - data/build/catalog.json
+      - data/build/first-party-sources.json
+      - data/build/verified-source-pages.json
+      - data/build/structured-place-facts.json
+
+permissions:
+  contents: read
+
+jobs:
+  refresh:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Build source-backed structured specials
+        run: node scripts/build-structured-specials.mjs
+      - name: Validate structured specials
+        run: node scripts/check-structured-specials.mjs
+      - name: Build reconciled coverage and quality report
+        run: |
+          node scripts/build-content-coverage-report.mjs
+          node scripts/reconcile-structured-coverage.mjs
+          node scripts/build-content-quality-report.mjs
+      - name: Upload specials and quality preview
+        uses: actions/upload-artifact@v4
+        with:
+          name: structured-specials-preview
+          path: |
+            data/structured-specials.js
+            data/build/structured-specials.json
+            data/build/content-coverage-report.json
+            data/build/content-quality-report.json
+            docs/content-coverage-report.md
+            docs/content-quality-report.md
+            artifacts/structured-specials-report.json
+          if-no-files-found: error
+          retention-days: 30
