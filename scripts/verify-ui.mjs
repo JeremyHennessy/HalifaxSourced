@@ -235,15 +235,8 @@ await page.waitForFunction(() => {
   const image = document.querySelector("#detailUpdates .official-update-media");
   return image instanceof HTMLImageElement && image.complete && image.naturalWidth > 0;
 });
-const previousScrollBehavior = await page.evaluate(() => document.documentElement.style.scrollBehavior);
-await page.evaluate(() => {
-  document.documentElement.style.scrollBehavior = "auto";
-  window.scrollTo(0, 0);
-});
-await page.waitForFunction(() => window.scrollY === 0);
-await page.waitForTimeout(100);
-await captureIphone("official-update-media");
-await page.evaluate((previous) => { document.documentElement.style.scrollBehavior = previous; }, previousScrollBehavior);
+await page.locator(".toast").evaluateAll((nodes) => nodes.forEach((node) => node.remove()));
+await page.screenshot({ path: resolve("artifacts", "ui-check-iphone-official-update-media.png"), fullPage: false });
 await page.goto(`${url}/#restaurant/marias-pantry-dartmouth`, { waitUntil: "networkidle" });
 await page.locator("#detailLinks .source-link-row").first().waitFor();
 await captureIphone("dartmouth-new-place");
