@@ -303,6 +303,24 @@ const feedReviewState = await page.evaluate(() => ({
   reviewedFeedsExcluded: window.HALIFAX_WEBSITE_FEED_SIGNALS?.reviewedFeedsExcluded || 0
 }));
 if (feedReviewState.posts !== 19 || feedReviewState.media !== 12 || feedReviewState.reviewedFeedsExcluded !== 5) throw new Error(`Expected the reviewed feed batch in the browser model, got ${JSON.stringify(feedReviewState)}.`);
+await page.goto(`${url}/#restaurant/osm-node-5987565464-afrite`, { waitUntil: "networkidle" });
+await page.locator("#detailLinks .source-link-row").first().waitFor();
+const afriteSocialState = await page.evaluate(() => {
+  const restaurant = restaurants.find((item) => item.id === "osm-node-5987565464-afrite");
+  const profiles = (restaurant?.socialProfiles || []).map((profile) => `${profile.platform}:${profile.handle}`);
+  const hrefs = [...document.querySelectorAll("#detailLinks .source-link-row")].map((anchor) => anchor.href);
+  return { profiles, hrefs };
+});
+for (const expectedProfile of ["tiktok:afriteresto", "pinterest:afriteresto", "youtube:afriteresto"]) {
+  if (!afriteSocialState.profiles.includes(expectedProfile)) throw new Error(`Expected reviewed aFrite social profile ${expectedProfile}, got ${JSON.stringify(afriteSocialState)}.`);
+}
+if (afriteSocialState.hrefs.some((href) => /facebook\.com\/afriteresto(?:\/|$)/i.test(href))) throw new Error(`Held aFrite alternate Facebook profile leaked into detail links: ${JSON.stringify(afriteSocialState.hrefs)}.`);
+await page.goto(`${url}/#restaurant/osm-way-96322798-wooden-monkey`, { waitUntil: "networkidle" });
+await page.locator("#detailLinks .source-link-row").first().waitFor();
+const woodenMonkeySocialText = await page.locator("#detailLinks").innerText();
+for (const blocked of ["PastureHill", "Canaqua", "GreensOfHaligonia", "Oultons", "NSWildBlueberries"]) {
+  if (woodenMonkeySocialText.includes(blocked)) throw new Error(`Reviewed supplier profile ${blocked} leaked into Wooden Monkey social links.`);
+}
 await page.goto(`${url}/#restaurant/lake-city-cider-dartmouth`, { waitUntil: "networkidle" });
 await page.locator("#detailLinks .source-link-row").first().waitFor();
 const dartmouthResolutionState = await page.evaluate(() => {

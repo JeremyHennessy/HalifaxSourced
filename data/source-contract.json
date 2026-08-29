@@ -136,6 +136,14 @@
     "observedAt": "Review date",
     "reviewState": "reviewed_exclusion"
   },
+  "socialProfileReviewExclusion": {
+    "restaurantId": "Restaurant id from catalog",
+    "profileUrls": "Exact verified profile URLs excluded from official-profile publication",
+    "reason": "person_or_creator_profile | parent_institution_profile | wrong_location_profile | supplier_or_partner_profile | conflicting_profile_evidence",
+    "evidence": "Short human-reviewed explanation",
+    "observedAt": "Review date",
+    "reviewState": "reviewed_exclusion"
+  },
   "socialSignal": {
     "restaurantId": "Restaurant id from catalog",
     "platform": "facebook | instagram",

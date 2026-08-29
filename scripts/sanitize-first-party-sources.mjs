@@ -4,6 +4,7 @@ const jsonPath = new URL("../data/build/first-party-sources.json", import.meta.u
 const jsPath = new URL("../data/first-party-sources.js", import.meta.url);
 const registry = JSON.parse(await readFile(new URL("../data/social-platform-registry.json", import.meta.url), "utf8"));
 const payload = JSON.parse(await readFile(jsonPath, "utf8"));
+const socialProfileOverrides = JSON.parse(await readFile(new URL("../data/social-profile-review-overrides.json", import.meta.url), "utf8").catch(() => "{\"records\":[]}"));
 const priorSanitization = payload.sanitization || null;
 const records = Array.isArray(payload?.records) ? payload.records : [];
 const platformById = new Map((registry.platforms || []).map((platform) => [platform.id, platform]));
@@ -23,6 +24,18 @@ function decodeUrlEntities(value) {
 function host(value) {
   try { return new URL(String(value ?? "")).hostname.toLowerCase().replace(/^www\./, "").replace(/^m\./, ""); }
   catch { return ""; }
+}
+function normalizedUrl(value) {
+  try {
+    const url = new URL(String(value ?? ""));
+    url.hash = "";
+    for (const key of [...url.searchParams.keys()]) {
+      if (/^utm_/i.test(key) || ["fbclid", "gclid", "igshid", "mc_cid", "mc_eid", "ref", "ref_src", "hl", "mibextid"].includes(key.toLowerCase())) {
+        url.searchParams.delete(key);
+      }
+    }
+    return `${url.protocol}//${url.hostname.toLowerCase().replace(/^www\./, "")}${url.pathname.replace(/\/+$/, "")}${url.search}`.toLowerCase();
+  } catch { return ""; }
 }
 function hostAllowed(value, platform) {
   const actual = host(value);
@@ -81,9 +94,16 @@ function validPlatformLink(item, kind) {
 function validRelated(link) {
   try {
     const url = new URL(String(link?.url || ""));
-    return ["http:", "https:"].includes(url.protocol) && Boolean(link?.kind) && link?.reviewState === "verified_link" && associationBases.has(link.associationBasis) && confidenceValues.has(link.confidence);
+    return ["http:", "https:"].includes(url.protocol)
+      && !templatedValue(link?.url)
+      && !templatedValue(link?.label)
+      && Boolean(link?.kind)
+      && link?.reviewState === "verified_link"
+      && associationBases.has(link.associationBasis)
+      && confidenceValues.has(link.confidence);
   } catch { return false; }
 }
+function templatedValue(value) { return /\{\{|\}\}|%7b|%7d|\bdata\./i.test(String(value ?? "")); }
 function validFeed(feed) {
   try {
     const url = new URL(decodeUrlEntities(feed?.url));
@@ -92,7 +112,23 @@ function validFeed(feed) {
   } catch { return false; }
 }
 
+const excludedProfileUrlsByRestaurant = new Map();
+for (const record of socialProfileOverrides.records || []) {
+  if (record.reviewState !== "reviewed_exclusion") continue;
+  const urls = (record.profileUrls || []).map(normalizedUrl).filter(Boolean);
+  if (!urls.length) continue;
+  if (!excludedProfileUrlsByRestaurant.has(record.restaurantId)) excludedProfileUrlsByRestaurant.set(record.restaurantId, new Set());
+  const bucket = excludedProfileUrlsByRestaurant.get(record.restaurantId);
+  for (const url of urls) bucket.add(url);
+}
+function excludedProfile(record, profile) {
+  const bucket = excludedProfileUrlsByRestaurant.get(record?.restaurantId);
+  if (!bucket) return false;
+  return bucket.has(normalizedUrl(profile?.url)) || bucket.has(normalizedUrl(profile?.profileUrl));
+}
+
 let removedProfiles = 0;
+let reviewedProfilesExcluded = 0;
 let duplicateProfilesRemoved = 0;
 let normalizedFacebookProfiles = 0;
 let sharedBrandProfilesFlagged = 0;
@@ -108,6 +144,7 @@ for (const record of records) {
   for (let profile of record.socialProfiles || []) {
     const decodedUrl = decodeUrlEntities(profile?.url || profile?.profileUrl);
     profile = { ...profile, url: decodedUrl, profileUrl: decodedUrl };
+    if (excludedProfile(record, profile)) { reviewedProfilesExcluded += 1; continue; }
     const beforeHandle = String(profile?.handle || "");
     const beforeShared = Boolean(profile?.sharedBrandProfile);
     profile = normalizeFacebookProfile(profile, record);
@@ -174,6 +211,7 @@ const latestSanitization = {
   appliedAt: new Date().toISOString(),
   registryVersion: registry.version,
   removedGenericOrInvalidProfiles: removedProfiles,
+  reviewedProfilesExcluded,
   duplicateProfilesRemoved,
   normalizedFacebookLegacyProfiles: normalizedFacebookProfiles,
   sharedBrandProfilesFlagged,
@@ -190,4 +228,4 @@ payload.sanitization = process.env.FIRST_PARTY_PRESERVE_SANITIZATION_AUDIT === "
 
 await writeFile(jsonPath, JSON.stringify(payload, null, 2));
 await writeFile(jsPath, `window.HALIFAX_FIRST_PARTY_SOURCES = ${JSON.stringify(payload, null, 2)};\n`);
-console.log(`Sanitized first-party sources: profiles=${payload.profileCount}, hubs=${payload.linkHubCount}, related=${payload.relatedLinkCount}, feeds=${payload.feedCount}, profile-removed=${removedProfiles}, facebook-normalized=${normalizedFacebookProfiles}, shared-brand-flagged=${sharedBrandProfilesFlagged}, hub-removed=${removedHubs}, related-removed=${removedRelated}, feed-removed=${removedFeeds}.`);
+console.log(`Sanitized first-party sources: profiles=${payload.profileCount}, hubs=${payload.linkHubCount}, related=${payload.relatedLinkCount}, feeds=${payload.feedCount}, profile-removed=${removedProfiles}, reviewed-profile-excluded=${reviewedProfilesExcluded}, facebook-normalized=${normalizedFacebookProfiles}, shared-brand-flagged=${sharedBrandProfilesFlagged}, hub-removed=${removedHubs}, related-removed=${removedRelated}, feed-removed=${removedFeeds}.`);
