@@ -296,6 +296,12 @@ const moreState = await page.evaluate(() => ({
 if (moreState.expanded !== "true" || !moreState.open || !["#specials", "#menus", "#saved"].every((href) => moreState.destinations.includes(href))) throw new Error(`Expected complete mobile More navigation, got ${JSON.stringify(moreState)}.`);
 await captureIphone("more-navigation");
 await page.locator("[data-mobile-more-close]").click();
+const closedMoreState = await page.evaluate(() => ({
+  expanded: document.querySelector("#mobileMore")?.getAttribute("aria-expanded"),
+  open: document.querySelector("[data-mobile-more-sheet]")?.classList.contains("is-open"),
+  visibility: getComputedStyle(document.querySelector("[data-mobile-more-sheet]")).visibility
+}));
+if (closedMoreState.expanded !== "false" || closedMoreState.open || closedMoreState.visibility !== "hidden") throw new Error(`Expected mobile More navigation to close completely, got ${JSON.stringify(closedMoreState)}.`);
 
 await page.locator("#globalSearch").fill("Highwayman");
 await page.locator("#globalSearch").press("Enter");

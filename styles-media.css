@@ -200,8 +200,8 @@
   .mobile-tabbar span{font-size:18px}
   .mobile-more-backdrop{display:block;position:fixed;inset:0;z-index:190;background:rgba(4,31,57,.46);opacity:0;pointer-events:none;transition:opacity .18s ease}
   .mobile-more-backdrop.is-open{opacity:1;pointer-events:auto}
-  .mobile-more-sheet{display:block;position:fixed;left:0;right:0;bottom:0;z-index:200;padding:18px 16px calc(20px + env(safe-area-inset-bottom));border-radius:22px 22px 0 0;background:#fff;box-shadow:0 -18px 50px rgba(4,31,57,.22);transform:translateY(105%);transition:transform .2s ease}
-  .mobile-more-sheet.is-open{transform:translateY(0)}body.mobile-more-open{overflow:hidden}
+  .mobile-more-sheet{display:block;position:fixed;left:0;right:0;bottom:0;z-index:200;padding:18px 16px calc(20px + env(safe-area-inset-bottom));border-radius:22px 22px 0 0;background:#fff;box-shadow:0 -18px 50px rgba(4,31,57,.22);transform:translateY(105%);visibility:hidden;pointer-events:none;transition:transform .2s ease,visibility 0s linear .2s}
+  .mobile-more-sheet.is-open{transform:translateY(0);visibility:visible;pointer-events:auto;transition-delay:0s}body.mobile-more-open{overflow:hidden}
   .mobile-more-heading{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px}.mobile-more-heading strong{font-size:20px;color:var(--navy-950)}.mobile-more-heading button{width:40px;height:40px;border:1px solid var(--border);border-radius:50%;background:#fff;font-size:24px}
   .mobile-more-sheet nav{display:grid;gap:8px}.mobile-more-sheet nav a{display:grid;grid-template-columns:42px minmax(0,1fr);gap:12px;align-items:center;padding:12px;border:1px solid var(--border);border-radius:13px;color:var(--navy-950)}.mobile-more-sheet nav>a>span{width:42px;height:42px;display:grid;place-items:center;border-radius:11px;background:var(--seafoam-100);color:var(--teal-700);font-size:20px}.mobile-more-sheet nav strong,.mobile-more-sheet nav small{display:block}.mobile-more-sheet nav strong{font-size:14px}.mobile-more-sheet nav small{margin-top:3px;color:var(--muted);font-size:11px}
 
