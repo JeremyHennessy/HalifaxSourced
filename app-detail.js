@@ -13,7 +13,7 @@ function renderRestaurantDetail(id) {
   const sourceLinks = uniqueSourceLinks(restaurant);
   const socialProfiles = (restaurant.socialProfiles || []).filter((profile) => safeUrl(profile.url));
   const linkHubs = (restaurant.linkHubs || []).filter((hub) => safeUrl(hub.url));
-  const relatedLinks = (restaurant.relatedLinks || []).filter((link) => safeUrl(link.url));
+  const relatedLinks = active ? (restaurant.relatedLinks || []).filter((link) => safeUrl(link.url)) : [];
   const officialUpdates = active ? (restaurant.officialUpdates || []).filter((update) => safeUrl(update.postUrl)) : [];
   const verifiedSpecials = active ? (restaurant.currentVerifiedSpecials || []).filter((special) => special?.title) : [];
   const statusEvidenceUrl = safeUrl(restaurant.operatingStatusEvidence?.sourceUrl);

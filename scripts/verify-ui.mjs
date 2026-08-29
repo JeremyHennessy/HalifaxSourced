@@ -358,7 +358,7 @@ await page.goto(`${url}/#restaurant/highwayman`, { waitUntil: "networkidle" });
 await page.locator("h1", { hasText: "Highwayman" }).waitFor();
 await page.evaluate(() => {
   const restaurant = restaurants.find((item) => item.id === "highwayman");
-  const inactiveArrayFields = ["menuLinks", "reservationLinks", "orderingLinks", "specialLinks", "eventLinks", "structuredSpecials", "currentVerifiedSpecials", "structuredEvents", "officialUpdates", "specials", "events"];
+  const inactiveArrayFields = ["menuLinks", "reservationLinks", "orderingLinks", "specialLinks", "eventLinks", "relatedLinks", "structuredSpecials", "currentVerifiedSpecials", "structuredEvents", "officialUpdates", "specials", "events"];
   const inactiveBooleanFields = ["hasMenu", "hasSpecial", "hasEvent", "hasOpening", "hasReservation", "hasOrdering"];
   restaurant.__qaOriginalOperatingStatus = restaurant.operatingStatus;
   restaurant.__qaOriginalOperatingStatusEvidence = restaurant.operatingStatusEvidence;
@@ -374,6 +374,7 @@ await page.evaluate(() => {
 await page.locator(".closure-notice", { hasText: "Moved" }).waitFor();
 if (!/Moved/.test(await page.locator(".title-badges").innerText())) throw new Error("Moved lifecycle fixture did not render an archived status badge.");
 if (await page.locator(".detail-official-actions").count() || await page.locator(".mobile-essential-actions").count()) throw new Error("Moved lifecycle fixture rendered current commerce actions.");
+if (await page.locator("#detailLinks .detail-subheading", { hasText: "Restaurant links" }).count()) throw new Error("Moved lifecycle fixture rendered current related commerce links.");
 await captureIphone("moved-restaurant");
 await page.evaluate(() => {
   const restaurant = restaurants.find((item) => item.id === "highwayman");
