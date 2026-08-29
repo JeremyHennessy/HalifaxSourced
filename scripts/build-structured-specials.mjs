@@ -5,7 +5,13 @@ const catalog = JSON.parse(await readFile(new URL("../data/build/catalog.json", 
 const firstParty = JSON.parse(await readFile(new URL("../data/build/first-party-sources.json", import.meta.url), "utf8"));
 const verifiedPages = JSON.parse(await readFile(new URL("../data/build/verified-source-pages.json", import.meta.url), "utf8").catch(() => "{}"));
 const reviewedSpecials = JSON.parse(await readFile(new URL("../data/reviewed-structured-specials.json", import.meta.url), "utf8").catch(() => "{\"records\":[]}"));
-const catalogIds = new Set((catalog.restaurants || []).map((restaurant) => restaurant.id));
+const discoveryOverrides = JSON.parse(await readFile(new URL("../data/discovery-overrides.json", import.meta.url), "utf8").catch(() => "{\"approved\":[]}"));
+const discoveredRestaurants = Array.isArray(discoveryOverrides?.approved) ? discoveryOverrides.approved : [];
+function normalizeName(value) { return String(value || "").toLowerCase().normalize("NFKD").replace(/[\u0300-\u036f]/g, "").replace(/\bthe\b/g, "").replace(/[^a-z0-9]+/g, ""); }
+const catalogByName = new Map((catalog.restaurants || []).map((restaurant) => [normalizeName(restaurant.name), restaurant.id]));
+const discoveryIdAliases = new Map(discoveredRestaurants.map((restaurant) => [restaurant.id, catalogByName.get(normalizeName(restaurant.name)) || restaurant.id]));
+const canonicalRestaurantId = (restaurantId) => discoveryIdAliases.get(restaurantId) || restaurantId;
+const catalogIds = new Set([...(catalog.restaurants || []).map((restaurant) => restaurant.id), ...discoveryIdAliases.values()]);
 const now = new Date().toISOString();
 const nowStamp = Date.parse(now);
 const CURRENT_VERIFY_DAYS = Number(process.env.STRUCTURED_SPECIAL_CURRENT_VERIFY_DAYS || 30);
@@ -88,7 +94,7 @@ for (const special of reviewedSpecials.records || []) {
   if (!sourceUrl || !special.restaurantId || !special.title) continue;
   push({
     specialId: specialId(special.restaurantId, special.title, sourceUrl),
-    restaurantId: special.restaurantId,
+    restaurantId: canonicalRestaurantId(special.restaurantId),
     title: special.title,
     specialType: special.specialType || typeFor(special.title),
     description: special.description || null,
@@ -141,6 +147,40 @@ for (const place of catalog.restaurants || []) {
   }
 }
 
+for (const place of discoveredRestaurants) {
+  for (const special of place.specials || []) {
+    const sourceUrl = safeUrl(special.sourceUrl) || safeUrl(special.url) || (place.sources || []).map((source) => safeUrl(source.url)).find(Boolean);
+    if (!sourceUrl) continue;
+    const title = special.title || "Restaurant special";
+    const cadence = parseCadence(special.cadence || special.timing || "");
+    const verifiedAt = special.verifiedAt || special.observedAt || null;
+    const sourceVerified = special.sourceStatus === "verified" || special.status === "verified";
+    const restaurantId = canonicalRestaurantId(place.id);
+    const record = {
+      specialId: specialId(restaurantId, title, sourceUrl),
+      restaurantId,
+      title,
+      specialType: typeFor(title),
+      description: special.description || null,
+      dayOfWeek: cadence.dayOfWeek,
+      startTime: cadence.startTime,
+      endTime: cadence.endTime,
+      validFrom: special.validFrom || null,
+      validTo: special.validTo || null,
+      price: numericPrice(special.price),
+      currency: special.currency || null,
+      recurrence: cadence.recurrence,
+      sourceUrl,
+      sourceType: special.sourceType || "reviewed_discovery_source",
+      observedAt: special.observedAt || place.freshnessDate || now,
+      verifiedAt,
+      status: null
+    };
+    record.status = statusFor({ sourceVerified, verifiedAt, validFrom: record.validFrom, validTo: record.validTo, recurrence: record.recurrence });
+    push(record);
+  }
+}
+
 const verifiedRecords = Array.isArray(verifiedPages.records) ? verifiedPages.records : Array.isArray(verifiedPages.pages) ? verifiedPages.pages : [];
 for (const page of verifiedRecords) {
   const url = safeUrl(page.url || page.sourceUrl);
@@ -149,7 +189,7 @@ for (const page of verifiedRecords) {
   const title = page.label || "Specials source";
   push({
     specialId: specialId(page.restaurantId, title, url),
-    restaurantId: page.restaurantId,
+    restaurantId: canonicalRestaurantId(page.restaurantId),
     title,
     specialType: typeFor(title),
     description: null,
@@ -175,7 +215,7 @@ for (const record of firstParty.records || []) {
     const title = link.label || "Specials source";
     push({
       specialId: specialId(record.restaurantId, title, url),
-      restaurantId: record.restaurantId,
+      restaurantId: canonicalRestaurantId(record.restaurantId),
       title,
       specialType: typeFor(title),
       description: null,

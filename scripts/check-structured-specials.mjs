@@ -3,7 +3,11 @@ import { mkdir, readFile, writeFile } from "node:fs/promises";
 const payload = JSON.parse(await readFile(new URL("../data/build/structured-specials.json", import.meta.url), "utf8"));
 const catalog = JSON.parse(await readFile(new URL("../data/build/catalog.json", import.meta.url), "utf8"));
 const verifiedPages = JSON.parse(await readFile(new URL("../data/build/verified-source-pages.json", import.meta.url), "utf8"));
-const ids = new Set((catalog.restaurants || []).map((restaurant) => restaurant.id));
+const discoveryOverrides = JSON.parse(await readFile(new URL("../data/discovery-overrides.json", import.meta.url), "utf8").catch(() => "{\"approved\":[]}"));
+function normalizeName(value) { return String(value || "").toLowerCase().normalize("NFKD").replace(/[\u0300-\u036f]/g, "").replace(/\bthe\b/g, "").replace(/[^a-z0-9]+/g, ""); }
+const catalogByName = new Map((catalog.restaurants || []).map((restaurant) => [normalizeName(restaurant.name), restaurant.id]));
+const discoveredIds = (discoveryOverrides.approved || []).map((restaurant) => catalogByName.get(normalizeName(restaurant.name)) || restaurant.id);
+const ids = new Set([...(catalog.restaurants || []).map((restaurant) => restaurant.id), ...discoveredIds]);
 const verifiedSpecialUrls = new Set((verifiedPages.specialSources || []).map((source) => source.url));
 const errors = [];
 const warnings = [];
