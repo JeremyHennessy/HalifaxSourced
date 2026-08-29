@@ -1,7 +1,7 @@
 # Halifax Sourced content coverage snapshot
 
-Generated: 2026-08-29T19:13:30.413Z
-Source/deployment commit: `ceb7428125ea428015000d4e528b4315d25f5bcc`
+Generated: 2026-08-29T20:08:40.123Z
+Source/deployment commit: `9ef05bd782c1bedd5d68f282b214be2eafb42121`
 
 This is the reconciled snapshot produced from the same data layers packaged for deployment. Unknown values remain unknown; source leads are not promoted to verified facts.
 
@@ -26,8 +26,8 @@ This is the reconciled snapshot produced from the same data layers packaged for 
 ## Restaurant-event definitions
 
 - **2 canonical restaurants with upcoming structured events** is a distinct-place count.
-- **17 upcoming structured restaurant event records** is an event-record count; one restaurant can have multiple events.
-- 19 total structured restaurant event records are stored, including 2 expired records.
+- **16 upcoming structured restaurant event records** is an event-record count; one restaurant can have multiple events.
+- 19 total structured restaurant event records are stored, including 3 expired records.
 
 ## Lifecycle
 
@@ -41,7 +41,7 @@ This is the reconciled snapshot produced from the same data layers packaged for 
 - firstPartyWebsiteDiscovery: 75
 - verifiedSourcePages: 15
 - structuredRestaurantEvents: 12
-- websiteFeeds: 9
+- websiteFeeds: 4
 - socialApis: 3
 - cityEventSources: 0
 - openingWatchSources: 0

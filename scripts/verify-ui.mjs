@@ -271,6 +271,8 @@ await page.locator("#detailUpdates .official-update-card").first().waitFor();
 if (await page.locator("#detailUpdates .official-update-card").count() < 3) throw new Error("Expected official Café Lunette feed updates on restaurant detail.");
 await captureIphone("official-updates");
 await page.goto(`${url}/#restaurant/osm-node-10038454787-bird-s-nest-cafe`, { waitUntil: "networkidle" });
+if (await page.locator("#detailUpdates .official-update-card").count() !== 8) throw new Error("Expected eight reviewed Bird's Nest first-party feed updates.");
+if (await page.locator("#detailUpdates .official-update-media").count() !== 8) throw new Error("Expected feed-published media on all eight Bird's Nest updates.");
 const officialMedia = page.locator("#detailUpdates .official-update-media").first();
 await officialMedia.waitFor();
 await officialMedia.scrollIntoViewIfNeeded();
@@ -291,6 +293,16 @@ await page.waitForFunction(() => {
 });
 await page.locator(".toast").evaluateAll((nodes) => nodes.forEach((node) => node.remove()));
 await page.screenshot({ path: resolve("artifacts", "ui-check-iphone-kajohn-updates.png"), fullPage: false });
+for (const excludedRestaurantId of ["osm-node-1666719782-pho-hoang-minh", "osm-node-4550004778-st-louis-bar-and-grill", "osm-node-8600605850-barburrito"]) {
+  await page.goto(`${url}/#restaurant/${excludedRestaurantId}`, { waitUntil: "networkidle" });
+  if (await page.locator("#detailUpdates").count()) throw new Error(`Reviewed non-local or compromised feed updates leaked onto ${excludedRestaurantId}.`);
+}
+const feedReviewState = await page.evaluate(() => ({
+  posts: window.HALIFAX_WEBSITE_FEED_SIGNALS?.posts?.length || 0,
+  media: window.HALIFAX_WEBSITE_FEED_SIGNALS?.posts?.filter((post) => post.mediaUrl).length || 0,
+  reviewedFeedsExcluded: window.HALIFAX_WEBSITE_FEED_SIGNALS?.reviewedFeedsExcluded || 0
+}));
+if (feedReviewState.posts !== 19 || feedReviewState.media !== 12 || feedReviewState.reviewedFeedsExcluded !== 5) throw new Error(`Expected the reviewed feed batch in the browser model, got ${JSON.stringify(feedReviewState)}.`);
 await page.goto(`${url}/#restaurant/lake-city-cider-dartmouth`, { waitUntil: "networkidle" });
 await page.locator("#detailLinks .source-link-row").first().waitFor();
 const dartmouthResolutionState = await page.evaluate(() => {

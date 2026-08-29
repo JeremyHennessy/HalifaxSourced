@@ -11,6 +11,7 @@ async function loadWindowScript(path) {
 
 const catalog = JSON.parse(await readFile(new URL("../data/build/catalog.json", import.meta.url), "utf8"));
 const socialRegistry = JSON.parse(await readFile(new URL("../data/social-platform-registry.json", import.meta.url), "utf8"));
+const feedReviewOverrides = JSON.parse(await readFile(new URL("../data/feed-review-overrides.json", import.meta.url), "utf8").catch(() => "{\"records\":[]}"));
 const discoveredWindow = await loadWindowScript("data/discovered-restaurants.js").catch(() => ({ HALIFAX_DISCOVERED_RESTAURANTS: [] }));
 const discoveredRestaurants = Array.isArray(discoveredWindow.HALIFAX_DISCOVERED_RESTAURANTS) ? discoveredWindow.HALIFAX_DISCOVERED_RESTAURANTS : [];
 const restaurantIds = new Set([...(catalog.restaurants || []), ...discoveredRestaurants].map((restaurant) => restaurant.id));
@@ -26,6 +27,19 @@ const feedPosts = Array.isArray(feedPayload.posts) ? feedPayload.posts : feedSig
 const socialSignals = Array.isArray(socialPayload.signals) ? socialPayload.signals : [];
 const failures = [];
 const warnings = [];
+const allowedFeedExclusionReasons = new Set(["compromised_off_topic_feed", "shared_brand_nonlocal_feed"]);
+const excludedFeedUrls = new Set();
+for (const record of feedReviewOverrides.records || []) {
+  if (!restaurantIds.has(record.restaurantId) || record.reviewState !== "reviewed_exclusion" || !allowedFeedExclusionReasons.has(record.reason) || !validDate(record.observedAt) || !String(record.evidence || "").trim() || !(record.feedUrls || []).length) {
+    failures.push({ type: "invalid_feed_review_exclusion", restaurantId: record.restaurantId });
+    continue;
+  }
+  for (const url of record.feedUrls) {
+    if (!validUrl(url)) failures.push({ type: "invalid_feed_review_exclusion_url", restaurantId: record.restaurantId, url });
+    else excludedFeedUrls.add(url);
+  }
+}
+if ((feedPayload.reviewedFeedsExcluded ?? 0) !== excludedFeedUrls.size) failures.push({ type: "feed_review_exclusion_count_mismatch", expected: excludedFeedUrls.size, actual: feedPayload.reviewedFeedsExcluded ?? 0 });
 
 const platformById = new Map((socialRegistry.platforms || []).map((platform) => [platform.id, platform]));
 const associationBases = new Set(socialRegistry.associationBases || []);
@@ -113,6 +127,7 @@ for (const post of feedPosts) {
     failures.push({ type: "invalid_website_feed_post", restaurantId: post.restaurantId, postUrl: post.postUrl });
   }
   if (post.mediaUrl && !validUrl(post.mediaUrl)) failures.push({ type: "invalid_website_feed_media", restaurantId: post.restaurantId, mediaUrl: post.mediaUrl });
+  if (excludedFeedUrls.has(post.feedUrl)) failures.push({ type: "reviewed_excluded_feed_post_published", restaurantId: post.restaurantId, feedUrl: post.feedUrl });
   if (Object.hasOwn(post, "description") || Object.hasOwn(post, "summary") || Object.hasOwn(post, "content")) failures.push({ type: "website_feed_raw_body_retained", restaurantId: post.restaurantId, postUrl: post.postUrl });
 }
 
@@ -157,6 +172,7 @@ const report = {
     websiteFeeds: records.reduce((sum, record) => sum + (record.feeds?.length || 0), 0),
     uniqueRestaurantFeeds: feedPayload.uniqueRestaurantFeeds ?? null,
     sharedFeedUrlsSkipped: feedPayload.sharedFeedUrlsSkipped ?? 0,
+    reviewedFeedsExcluded: feedPayload.reviewedFeedsExcluded ?? 0,
     websiteFeedSignals: feedSignals.length,
     websiteFeedPosts: feedPosts.length,
     uniqueRestaurantSocialProfiles: socialPayload.uniqueRestaurantProfiles ?? null,

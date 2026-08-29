@@ -3,6 +3,7 @@ import { LIFECYCLE_SIGNAL_GROUPS } from "./lib/lifecycle-language.mjs";
 
 const sourcePayload = JSON.parse(await readFile(new URL("../data/build/first-party-sources.json", import.meta.url), "utf8").catch(() => "{\"records\":[]}"));
 const sourceRecords = Array.isArray(sourcePayload?.records) ? sourcePayload.records : [];
+const reviewOverrides = JSON.parse(await readFile(new URL("../data/feed-review-overrides.json", import.meta.url), "utf8").catch(() => "{\"records\":[]}"));
 const delayMs = Number(process.env.FEED_PULL_DELAY_MS ?? 200);
 const timeoutMs = Number(process.env.FEED_PULL_TIMEOUT_MS ?? 12000);
 const concurrency = Math.max(1, Math.min(16, Number(process.env.FEED_PULL_CONCURRENCY ?? 8)));
@@ -96,13 +97,19 @@ for (const record of sourceRecords) {
   }
 }
 
+const excludedFeedUrls = new Set((reviewOverrides.records || [])
+  .filter((record) => record.reviewState === "reviewed_exclusion")
+  .flatMap((record) => record.feedUrls || []));
+const reviewedFeedsExcluded = candidateFeeds.filter((feed) => excludedFeedUrls.has(feed.url));
+const eligibleCandidateFeeds = candidateFeeds.filter((feed) => !excludedFeedUrls.has(feed.url));
+
 const feedAssociations = new Map();
-for (const feed of candidateFeeds) {
+for (const feed of eligibleCandidateFeeds) {
   if (!feedAssociations.has(feed.url)) feedAssociations.set(feed.url, new Set());
   feedAssociations.get(feed.url).add(feed.restaurantId);
 }
 const sharedFeedUrls = new Set([...feedAssociations.entries()].filter(([, ids]) => ids.size > 1).map(([url]) => url));
-const feeds = candidateFeeds.filter((feed) => !sharedFeedUrls.has(feed.url)).slice(0, feedLimit);
+const feeds = eligibleCandidateFeeds.filter((feed) => !sharedFeedUrls.has(feed.url)).slice(0, feedLimit);
 
 const signals = [];
 const posts = [];
@@ -175,6 +182,7 @@ const output = {
   version: 2,
   generatedAt: new Date().toISOString(),
   feedsDiscovered: candidateFeeds.length,
+  reviewedFeedsExcluded: reviewedFeedsExcluded.length,
   uniqueRestaurantFeeds: feeds.length,
   sharedFeedUrlsSkipped: sharedFeedUrls.size,
   feedHostGroups: groups.length,
@@ -188,4 +196,4 @@ const output = {
 await mkdir(new URL("../data/build", import.meta.url), { recursive: true });
 await writeFile(new URL("../data/build/website-feed-signals.json", import.meta.url), JSON.stringify(output, null, 2));
 await writeFile(new URL("../data/website-feed-signals.js", import.meta.url), `window.HALIFAX_WEBSITE_FEED_SIGNALS = ${JSON.stringify(output, null, 2)};\n`);
-console.log(`Website feed pull: discovered=${candidateFeeds.length}, unique=${feeds.length}, shared-skipped=${sharedFeedUrls.size}, checked=${feedsChecked}, failures=${failures.length}, posts=${uniquePosts.length}, signals=${uniqueSignals.length}, hosts=${groups.length}, concurrency=${concurrency}.`);
+console.log(`Website feed pull: discovered=${candidateFeeds.length}, reviewed-excluded=${reviewedFeedsExcluded.length}, unique=${feeds.length}, shared-skipped=${sharedFeedUrls.size}, checked=${feedsChecked}, failures=${failures.length}, posts=${uniquePosts.length}, signals=${uniqueSignals.length}, hosts=${groups.length}, concurrency=${concurrency}.`);
