@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-08-29T16:41:21.937Z",
+  "generatedAt": "2026-08-29T18:23:51.429Z",
   "policy": "Only location-specific matches supported by compatible identity plus address, official domain, phone or reviewed discovery evidence are published. Conflicts and name-only matches remain queued.",
   "downtownDartmouth": {
     "candidates": 48,
@@ -20,8 +20,8 @@
   "springGarden": {
     "candidates": 82,
     "algorithmResolved": 5,
-    "publishedReviewed": 0,
-    "heldForReview": 82,
+    "publishedReviewed": 4,
+    "heldForReview": 78,
     "counts": {
       "unresolved": 55,
       "resolved_high": 3,
@@ -30,7 +30,7 @@
       "unresolved_conflict": 2,
       "resolved_probable": 2
     },
-    "publicationDecision": "held_pending_location_specific_address_or_coordinate_evidence"
+    "publicationDecision": "partial_publication_location_specific_evidence_only"
   },
   "publishedRecords": [
     {
@@ -371,6 +371,100 @@
         "socialProfiles": true,
         "duplicateConflictCleared": true
       }
+    },
+    {
+      "restaurantId": "osm-node-2721708515-cha-baa-thai",
+      "name": "Cha Baa Thai",
+      "resolutionState": "resolved_high",
+      "evidence": [
+        "exact_normalized_name",
+        "exact_official_domain",
+        "compatible_street_address",
+        "current_government_inspection_record"
+      ],
+      "completeness": {
+        "identity": true,
+        "address": true,
+        "coordinates": true,
+        "currentStatus": true,
+        "officialWebsite": true,
+        "menu": false,
+        "hours": false,
+        "phone": true,
+        "socialProfiles": false,
+        "duplicateConflictCleared": true
+      }
+    },
+    {
+      "restaurantId": "osm-node-4420843802-le-bistro-by-liz",
+      "name": "Le Bistro by Liz",
+      "resolutionState": "resolved_high",
+      "evidence": [
+        "exact_normalized_name",
+        "exact_official_domain",
+        "compatible_street_address",
+        "official_contact_and_hours",
+        "official_menu_published"
+      ],
+      "completeness": {
+        "identity": true,
+        "address": true,
+        "coordinates": true,
+        "currentStatus": true,
+        "officialWebsite": true,
+        "menu": true,
+        "hours": true,
+        "phone": true,
+        "socialProfiles": true,
+        "duplicateConflictCleared": true
+      }
+    },
+    {
+      "restaurantId": "osm-node-11552081912-kanpai-izakaya",
+      "name": "Kanpai Izakaya",
+      "resolutionState": "resolved_high",
+      "evidence": [
+        "exact_normalized_name",
+        "exact_official_domain",
+        "compatible_street_address",
+        "official_location_contact"
+      ],
+      "completeness": {
+        "identity": true,
+        "address": true,
+        "coordinates": true,
+        "currentStatus": true,
+        "officialWebsite": true,
+        "menu": true,
+        "hours": false,
+        "phone": true,
+        "socialProfiles": true,
+        "duplicateConflictCleared": true
+      }
+    },
+    {
+      "restaurantId": "osm-node-13262694122-public-cafe-bakery-and-bar",
+      "name": "Public - Café, Bakery & Bar",
+      "resolutionState": "resolved_high",
+      "evidence": [
+        "compatible_name",
+        "exact_official_domain",
+        "compatible_street_address",
+        "official_contact_and_hours",
+        "official_menu_published"
+      ],
+      "completeness": {
+        "identity": true,
+        "address": true,
+        "coordinates": true,
+        "currentStatus": true,
+        "officialWebsite": true,
+        "menu": true,
+        "hours": true,
+        "phone": true,
+        "socialProfiles": true,
+        "duplicateConflictCleared": true
+      }
     }
   ],
   "practicalGapCounts": {
@@ -379,10 +473,10 @@
     "coordinates": 4,
     "currentStatus": 0,
     "officialWebsite": 2,
-    "menu": 7,
-    "hours": 1,
+    "menu": 8,
+    "hours": 3,
     "phone": 2,
-    "socialProfiles": 5,
+    "socialProfiles": 6,
     "duplicateConflictCleared": 0
   },
   "failures": []

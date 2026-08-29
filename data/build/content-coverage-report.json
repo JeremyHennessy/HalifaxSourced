@@ -1,8 +1,8 @@
 {
   "version": 1,
-  "generatedAt": "2026-08-29T17:33:13.572Z",
-  "sourceCommitSha": "2c9921b55ef8cbe408c4d86fe52823da4a67ebeb",
-  "baselineCommitHint": "2c9921b55ef8cbe408c4d86fe52823da4a67ebeb",
+  "generatedAt": "2026-08-29T18:23:04.314Z",
+  "sourceCommitSha": "e083247491e097a10ab8a2bc44e93541373a34d9",
+  "baselineCommitHint": "e083247491e097a10ab8a2bc44e93541373a34d9",
   "definitions": {
     "canonicalPlaces": "Current user-facing merge of catalog restaurants plus reviewed discovery records, matching the app's existing name-based discovery merge behavior.",
     "verifiedOfficialWebsite": "Official-site fetch returned a successful HTTP status or the first-party discovery layer successfully fetched the restaurant-owned site.",
@@ -57,8 +57,8 @@
       "bento": 0
     },
     "withLinkHub": 0,
-    "withPhone": 273,
-    "withStructuredOrSourceHours": 241,
+    "withPhone": 274,
+    "withStructuredOrSourceHours": 243,
     "withCoordinates": 738,
     "withNeighbourhood": 749,
     "withCuisineClassification": 749,
@@ -99,7 +99,7 @@
       "ordering": 74
     },
     "structuredSpecialLayer": {
-      "generatedAt": "2026-08-29T17:33:11.584Z",
+      "generatedAt": "2026-08-29T18:23:02.220Z",
       "count": 68,
       "verifiedCurrent": 49,
       "recurringVerify": 9,
@@ -122,8 +122,8 @@
     "events": 6.3,
     "structuredUpcomingEvents": 0.3,
     "social": 19.4,
-    "phone": 36.4,
-    "hours": 32.2,
+    "phone": 36.6,
+    "hours": 32.4,
     "coordinates": 98.5,
     "neighbourhood": 100,
     "cuisine": 100,
@@ -1166,7 +1166,7 @@
       ]
     },
     "reconciledFromAcceptedStructuredLayers": true,
-    "reconciledAt": "2026-08-29T17:33:13.571Z"
+    "reconciledAt": "2026-08-29T18:23:04.314Z"
   },
   "eventCoverage": {
     "currentCityEvents": 184,
