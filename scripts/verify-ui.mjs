@@ -367,7 +367,7 @@ const specialsState = await page.evaluate(() => ({
 }));
 if (specialsState.controls < 3 || specialsState.visible < 2 || specialsState.visible > 12 || specialsState.verifiedSections < 1 || specialsState.leadSections < 1) throw new Error(`Expected separated, paginated mobile specials discovery, got ${JSON.stringify(specialsState)}.`);
 await page.locator("#specialsKind").selectOption("leads");
-await page.locator("[data-specials-filter-form]").press("Enter");
+await page.locator("[data-specials-filter-form] .button.primary").click();
 if (await page.locator(".special-card.is-verified").count()) throw new Error("Official-source lead filter rendered verified-special cards.");
 
 await page.goto(`${url}/#menus`, { waitUntil: "networkidle" });
