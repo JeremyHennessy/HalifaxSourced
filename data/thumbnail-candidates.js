@@ -1,0 +1,22 @@
+window.HALIFAX_THUMBNAIL_CANDIDATES = {
+  "version": 1,
+  "generatedAt": null,
+  "fetchOfficialPages": false,
+  "pageLimit": 0,
+  "pagesPerRestaurant": 3,
+  "counts": {
+    "restaurants": 0,
+    "thumbnailCandidates": 0,
+    "restaurantsWithApprovedThumbnail": 0,
+    "restaurantsWithAnyCandidate": 0,
+    "restaurantsMissingApprovedThumbnail": 0,
+    "restaurantsMissingAnyCandidate": 0,
+    "sourceKindCounts": {},
+    "reviewStateCounts": {},
+    "failures": 0
+  },
+  "candidates": [],
+  "missingApproved": [],
+  "missingAnyCandidate": [],
+  "failures": []
+};
