@@ -40,6 +40,9 @@ jobs:
       - name: Build recent post intelligence
         run: node scripts/build-recent-social-posts.mjs
 
+      - name: Build thumbnail candidates
+        run: node scripts/build-thumbnail-candidates.mjs
+
       - name: Run social platform sanitation regression
         run: node scripts/test-social-platform-registry.mjs
 
@@ -49,6 +52,7 @@ jobs:
           node scripts/check-restaurant-lifecycle.mjs
           node scripts/check-data-integrity.mjs
           node scripts/check-expanded-sources.mjs
+          node scripts/check-thumbnail-candidates.mjs
           node scripts/check-restaurant-discovery.mjs
           node scripts/check-restaurant-lifecycle.mjs
           node scripts/test-lifecycle-language.mjs
@@ -81,6 +85,7 @@ jobs:
           path: |
             artifacts/data-integrity-report.json
             artifacts/expanded-source-integrity-report.json
+            artifacts/thumbnail-candidates-report.json
             artifacts/restaurant-discovery-report.json
             data/build/restaurant-lifecycle-report.json
             docs/restaurant-lifecycle-report.md
@@ -96,6 +101,8 @@ jobs:
             data/structured-specials.js
             data/build/recent-social-posts.json
             data/recent-social-posts.js
+            data/build/thumbnail-candidates.json
+            data/thumbnail-candidates.js
             data/build/content-coverage-report.json
             docs/content-coverage-report.md
             data/build/content-quality-report.json
@@ -120,6 +127,9 @@ jobs:
 
       - name: Build recent post intelligence for browser verification
         run: node scripts/build-recent-social-posts.mjs
+
+      - name: Build thumbnail candidates for browser verification
+        run: node scripts/build-thumbnail-candidates.mjs
 
       - name: Install Playwright
         run: |
