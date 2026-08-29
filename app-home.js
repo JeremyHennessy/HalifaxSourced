@@ -1,9 +1,9 @@
 "use strict";
 function renderHome() {
-  const featured = restaurants.slice().sort((a, b) => (b.score || 0) - (a.score || 0)).slice(0, 5);
-  const specialLeads = restaurants.filter((restaurant) => restaurant.hasSpecial).slice(0, 4);
+  const featured = activeRestaurants.slice().sort((a, b) => (b.score || 0) - (a.score || 0)).slice(0, 5);
+  const specialLeads = activeRestaurants.filter((restaurant) => restaurant.hasSpecial).slice(0, 4);
   const cityEventItems = homeUpcomingCityEvents().slice(0, 4);
-  const openingLeads = restaurants
+  const openingLeads = activeRestaurants
     .filter((restaurant) => restaurant.sourceLayer === "local_discovery" || restaurant.hasOpening)
     .sort((a, b) => String(b.freshnessDate || b.signal?.observedAt || "").localeCompare(String(a.freshnessDate || a.signal?.observedAt || "")))
     .slice(0, 4);
@@ -76,7 +76,7 @@ function homeUpcomingCityEvents() {
 }
 
 function topCuisineButtons(limit) {
-  const liveCuisines = countValues(restaurants.flatMap((restaurant) => restaurant.cuisines || []));
+  const liveCuisines = countValues(activeRestaurants.flatMap((restaurant) => restaurant.cuisines || []));
   return liveCuisines.slice(0, limit).map(([name]) => `<button class="category-button" type="button" data-cuisine="${escapeHtml(name)}"><span>${cuisineIcon(name)}</span>${escapeHtml(name)}</button>`).join("");
 }
 
@@ -183,7 +183,7 @@ function openingLeadRow(restaurant) {
 }
 
 function neighbourhoodTile(name, index) {
-  const liveNeighbourhoods = countValues(restaurants.map((restaurant) => restaurant.neighborhood || "Halifax"));
+  const liveNeighbourhoods = countValues(activeRestaurants.map((restaurant) => restaurant.neighborhood || "Halifax"));
   const count = liveNeighbourhoods.find(([key]) => key === name)?.[1] || 0;
   return `<button type="button" class="neighbourhood-tile tile-${index % 4}" data-neighbourhood="${escapeHtml(name)}"><strong>${escapeHtml(name)}</strong><span>${count ? `${count} places` : "Explore"}</span></button>`;
 }

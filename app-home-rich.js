@@ -37,7 +37,7 @@ function homeRichSections() {
   const tonight = events
     .filter(({ start }) => { const key = halifaxDateKey(start), mins = halifaxMinutes(start); return (key === today && mins >= 17 * 60) || (key === tomorrow && mins < 3 * 60); })
     .slice(0, 3).map((item) => item.event);
-  const openPlaces = restaurants.filter((r) => r.currentHoursState?.state === "open").sort((a, b) => (b.score || 0) - (a.score || 0)).slice(0, 3);
+  const openPlaces = activeRestaurants.filter((r) => r.currentHoursState?.state === "open").sort((a, b) => (b.score || 0) - (a.score || 0)).slice(0, 3);
   const sections = [];
   if (tonight.length) sections.push(`<section class="page-shell section-block home-action-section"><div class="section-heading"><div><span class="eyebrow">Tonight in Halifax</span><h2>What’s happening tonight</h2></div><a href="#events">All events →</a></div><div class="event-grid">${tonight.map(richEventCard).join("")}</div></section>`);
   if (openPlaces.length) sections.push(`<section class="page-shell section-block home-action-section"><div class="section-heading"><div><span class="eyebrow">Eat tonight</span><h2>Open now with fresh official hours</h2></div><a href="#explore">Explore →</a></div><div class="restaurant-grid">${openPlaces.map((r, i) => restaurantCard(r, { index: i })).join("")}</div></section>`);

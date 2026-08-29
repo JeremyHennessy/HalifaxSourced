@@ -41,5 +41,6 @@ for (const discovered of discoveredRestaurantPayload) {
 }
 
 restaurants.sort((a, b) => (b.score || 0) - (a.score || 0) || a.name.localeCompare(b.name));
+activeRestaurants.splice(0, activeRestaurants.length, ...restaurants.filter(isRestaurantActive));
 window.__halifaxDiscoveredRestaurantCount = discoveredRestaurantPayload.length;
 window.__halifaxRestaurantCount = restaurants.length;

@@ -101,6 +101,9 @@ const openingPayload = openingWindow.HALIFAX_OPENING_WATCH_LEADS || { leads: [],
 const directoryPayload = directoryWindow.HALIFAX_DIRECTORY_RESTAURANT_LEADS || { records: [], failures: [] };
 
 const canonical = (catalog.restaurants || []).map((restaurant) => ({ ...restaurant }));
+const curatedLifecycleById = new Map(curated.map((restaurant) => [restaurant.id, restaurant.operatingStatus || "unknown"]));
+const curatedLifecycleByName = new Map(curated.map((restaurant) => [normalize(restaurant.name), restaurant.operatingStatus || "unknown"]));
+for (const restaurant of canonical) restaurant.operatingStatus = curatedLifecycleById.get(restaurant.id) || curatedLifecycleByName.get(normalize(restaurant.name)) || restaurant.operatingStatus || "unknown";
 const canonicalById = new Map(canonical.map((restaurant) => [restaurant.id, restaurant]));
 const canonicalByName = new Map(canonical.map((restaurant) => [normalize(restaurant.name), restaurant]));
 let discoveryNameOnlyMerges = 0;
@@ -283,6 +286,8 @@ const socialCoverage = {};
 for (const platform of [...SOCIAL_PLATFORMS, ...LINK_HUB_PLATFORMS]) socialCoverage[platform] = socialPlatformPlaceIds[platform]?.size || 0;
 
 const total = canonical.length;
+const lifecycle = { active: 0, temporarily_closed: 0, permanently_closed: 0, moved: 0, coming_soon: 0, unknown: 0 };
+for (const restaurant of canonical) increment(lifecycle, restaurant.operatingStatus || "unknown");
 const report = {
   version: 1,
   generatedAt: new Date().toISOString(),
@@ -326,6 +331,8 @@ const report = {
     withAccessibilityInformation: accessibilityIds.size,
     withPatioInformation: patioIds.size,
     withUsableMedia: mediaIds.size,
+    lifecycle,
+    activeCanonicalPlaces: total - lifecycle.temporarily_closed - lifecycle.permanently_closed - lifecycle.moved,
     freshness,
     staleRestaurantRecords: staleRestaurantIds.size,
     currentResolutionRisks: { discoveryNameOnlyMerges }
@@ -348,6 +355,7 @@ const report = {
     coordinates: coordinateIds.size,
     neighbourhood: neighbourhoodIds.size,
     cuisine: cuisineIds.size,
+    media: mediaIds.size,
     accessibility: accessibilityIds.size,
     patio: patioIds.size,
     media: mediaIds.size

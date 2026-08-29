@@ -20,7 +20,7 @@ function isVerifiedSpecialRestaurant(restaurant) {
 }
 
 function renderSpecials() {
-  const allItems = restaurants.filter((restaurant) => restaurant.hasSpecial).sort((a, b) => (b.score || 0) - (a.score || 0));
+  const allItems = activeRestaurants.filter((restaurant) => restaurant.hasSpecial).sort((a, b) => (b.score || 0) - (a.score || 0));
   const filtered = allItems.filter((restaurant) => {
     if (!placeMatchesDiscoverySearch(restaurant, specialsUiState.query)) return false;
     if (specialsUiState.neighbourhood !== "all" && (restaurant.neighborhood || "Halifax") !== specialsUiState.neighbourhood) return false;
@@ -71,7 +71,7 @@ function specialCard(restaurant, index, verified = isVerifiedSpecialRestaurant(r
 }
 
 function renderMenus() {
-  const allItems = restaurants.filter((restaurant) => restaurant.hasMenu);
+  const allItems = activeRestaurants.filter((restaurant) => restaurant.hasMenu);
   const filtered = allItems.filter((restaurant) => placeMatchesDiscoverySearch(restaurant, menusUiState.query) && (menusUiState.neighbourhood === "all" || (restaurant.neighborhood || "Halifax") === menusUiState.neighbourhood)).sort((a, b) => menusUiState.sort === "name" ? a.name.localeCompare(b.name) : menusUiState.sort === "neighbourhood" ? (a.neighborhood || "").localeCompare(b.neighborhood || "") || a.name.localeCompare(b.name) : (b.score || 0) - (a.score || 0));
   const visible = filtered.slice(0, menusUiState.page * MENUS_PAGE_SIZE);
   appView.innerHTML = `

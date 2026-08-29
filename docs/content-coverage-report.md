@@ -1,6 +1,6 @@
 # Halifax Sourced content coverage baseline
 
-Generated: 2026-08-29T13:55:54.734Z
+Generated: 2026-08-29T17:21:49.561Z
 
 This report measures the currently committed production data layers. It is a content-completeness baseline, **not a restaurant quality or popularity rating**. Unknown data remains unknown; source leads are not converted into fabricated facts.
 
@@ -28,7 +28,7 @@ This report measures the currently committed production data layers. It is a con
 | Cuisine classification | 749 | 100% |
 | Accessibility information | 229 | 30.6% |
 | Patio information | 40 | 5.3% |
-| Usable rights-approved media | 0 | 0% |
+| Usable rights-approved media | 1 | 0.1% |
 
 Raw layers: 10 curated, 735 OpenStreetMap, 12 reviewed local-discovery records, 739 pre-discovery catalog records.
 
@@ -60,10 +60,10 @@ Raw layers: 10 curated, 735 OpenStreetMap, 12 reviewed local-discovery records, 
 
 ## City events
 
-- Current/upcoming events: **186**
+- Current/upcoming events: **184**
 - Sources represented: **15**
-- Next 7 days: **20**; next 30 days: **54**
-- Ticket links: **186**; price information: **11**; explicitly free: **0**
+- Next 7 days: **16**; next 30 days: **50**
+- Ticket links: **184**; price information: **11**; explicitly free: **0**
 - Coordinates: **0**
 - Conservative exact venue-name → restaurant matches: **8**
 - Possible duplicate current event records: **0**
@@ -71,20 +71,19 @@ Raw layers: 10 curated, 735 OpenStreetMap, 12 reviewed local-discovery records, 
 ### Events by municipality
 
 - Halifax: 164
-- Dartmouth: 16
+- Dartmouth: 14
 - Bedford: 6
 
 ### Events by category
 
 - Sports: 61
 - Music: 57
-- Arts: 50
-- Community: 31
+- Arts: 49
+- Community: 30
 - Festivals: 10
 - Comedy: 4
 - Food & Drink: 3
 - Other: 2
-- Markets: 1
 - Outdoor: 1
 
 ### Events by source
@@ -101,8 +100,8 @@ Raw layers: 10 curated, 735 OpenStreetMap, 12 reviewed local-discovery records, 
 - HFX Wanderers 2026 Home Schedule: 5
 - Halifax Tides 2026 Home Schedule: 4
 - Halifax Public Libraries: 3
-- Alderney Landing: 3
 - Neptune Theatre: 3
+- Alderney Landing: 1
 - Halifax Convention Centre: 1
 
 ## Freshness
