@@ -4,6 +4,7 @@ const firstPartySourcePayload = window.HALIFAX_FIRST_PARTY_SOURCES ?? null;
 const firstPartySourceRecords = Array.isArray(firstPartySourcePayload?.records) ? firstPartySourcePayload.records : [];
 const websiteFeedSignalPayload = window.HALIFAX_WEBSITE_FEED_SIGNALS ?? null;
 const websiteFeedSignals = Array.isArray(websiteFeedSignalPayload?.signals) ? websiteFeedSignalPayload.signals : [];
+const websiteFeedPosts = Array.isArray(websiteFeedSignalPayload?.posts) ? websiteFeedSignalPayload.posts : websiteFeedSignals;
 const socialSignalPayload = window.HALIFAX_SOCIAL_SIGNALS ?? null;
 const socialSignals = Array.isArray(socialSignalPayload?.signals) ? socialSignalPayload.signals : [];
 const socialPosts = Array.isArray(socialSignalPayload?.posts) ? socialSignalPayload.posts : socialSignals;
@@ -98,6 +99,7 @@ function linkHubSourceMeta(hub) {
 
 const firstPartyByRestaurant = sourceSignalGroup(firstPartySourceRecords);
 const websiteFeedByRestaurant = sourceSignalGroup(websiteFeedSignals);
+const websiteFeedPostsByRestaurant = sourceSignalGroup(websiteFeedPosts);
 const socialByRestaurant = sourceSignalGroup(socialSignals);
 const socialPostsByRestaurant = sourceSignalGroup(socialPosts);
 const profileAssociationCounts = new Map();
@@ -115,6 +117,7 @@ for (const record of firstPartySourceRecords) {
 for (const restaurant of restaurants) {
   const firstParty = firstPartyByRestaurant.get(restaurant.id)?.[0] || null;
   const feedSignals = websiteFeedByRestaurant.get(restaurant.id) || [];
+  const feedPosts = websiteFeedPostsByRestaurant.get(restaurant.id) || [];
   const apiSignals = socialByRestaurant.get(restaurant.id) || [];
   const apiPosts = socialPostsByRestaurant.get(restaurant.id) || [];
   const allSignals = [...feedSignals, ...apiSignals];
@@ -129,7 +132,7 @@ for (const restaurant of restaurants) {
   restaurant.websiteFeedSignals = feedSignals;
   restaurant.socialSignals = apiSignals;
   restaurant.currentSourceSignals = currentSignals;
-  restaurant.officialUpdates = [...feedSignals, ...apiPosts]
+  restaurant.officialUpdates = [...feedPosts, ...apiPosts]
     .filter((signal) => safeUrl(signal?.postUrl))
     .filter((signal, index, all) => all.findIndex((item) => item.postUrl === signal.postUrl) === index)
     .sort((a, b) => String(b.publishedAt || "").localeCompare(String(a.publishedAt || "")));
