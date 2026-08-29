@@ -1,4 +1,4 @@
-window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
+{
   "version": 2,
   "generatedAt": "2026-08-29T13:51:54.216Z",
   "registryVersion": 1,
@@ -16693,4 +16693,4 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
     }
   ],
   "failures": []
-};
+}

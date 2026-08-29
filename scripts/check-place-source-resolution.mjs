@@ -4,6 +4,7 @@ const registry = JSON.parse(await readFile(new URL("../data/place-source-registr
 const directory = JSON.parse(await readFile(new URL("../data/build/directory-restaurant-leads.json", import.meta.url), "utf8"));
 const resolutions = JSON.parse(await readFile(new URL("../data/build/place-source-resolutions.json", import.meta.url), "utf8"));
 const catalog = JSON.parse(await readFile(new URL("../data/build/catalog.json", import.meta.url), "utf8"));
+const discovered = JSON.parse(await readFile(new URL("../data/build/discovered-restaurants.json", import.meta.url), "utf8"));
 
 const errors = [];
 const warnings = [];
@@ -31,7 +32,10 @@ for (const record of directory.records || []) {
   }
 }
 
-const canonicalIds = new Set((catalog.restaurants || []).map((item) => item.id));
+const canonicalIds = new Set([
+  ...(catalog.restaurants || []).map((item) => item.id),
+  ...(discovered.restaurants || []).map((item) => item.id)
+]);
 const resolutionIds = new Set();
 for (const item of resolutions.resolutions || []) {
   if (!candidateIds.has(item.candidateId)) errors.push(`resolution_unknown_candidate:${item.candidateId}`);

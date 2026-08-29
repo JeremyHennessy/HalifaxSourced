@@ -1,19 +1,19 @@
 {
   "version": 3,
-  "generatedAt": "2026-08-29T04:13:27.745Z",
+  "generatedAt": "2026-08-29T13:55:14.308Z",
   "platformRegistryVersion": 1,
-  "checkedWebsites": 215,
+  "checkedWebsites": 219,
   "failedWebsites": 75,
-  "hostGroups": 222,
+  "hostGroups": 226,
   "concurrency": 10,
   "ownedPageLimit": 3,
   "linkHubLimit": 2,
-  "profileCount": 349,
+  "profileCount": 359,
   "platformCounts": {
-    "instagram": 132,
-    "facebook": 118,
-    "x": 64,
-    "youtube": 12,
+    "instagram": 136,
+    "facebook": 122,
+    "x": 65,
+    "youtube": 13,
     "tiktok": 12,
     "pinterest": 2,
     "linkedin": 7,
@@ -21,11 +21,11 @@
   },
   "linkHubCount": 0,
   "linkHubCounts": {},
-  "relatedLinkCount": 623,
+  "relatedLinkCount": 631,
   "relatedKindCounts": {
-    "menu": 280,
-    "reservations": 113,
-    "ordering": 171,
+    "menu": 284,
+    "reservations": 115,
+    "ordering": 173,
     "events": 54,
     "newsletter": 4,
     "tickets": 1
@@ -19698,35 +19698,367 @@
       ],
       "sourceKind": "official_website_discovery",
       "reviewState": "verified"
+    },
+    {
+      "restaurantId": "canteen-on-portland-dartmouth",
+      "name": "The Canteen on Portland",
+      "website": "https://www.thecanteen.ca/",
+      "resolvedUrl": "https://www.thecanteen.ca/",
+      "observedAt": "2026-08-29T13:54:55.947Z",
+      "lastVerifiedAt": "2026-08-29T13:54:55.947Z",
+      "scannedOwnedPages": [
+        "https://www.thecanteen.ca/",
+        "https://www.thecanteen.ca/our-story",
+        "https://www.thecanteen.ca/reservations"
+      ],
+      "socialProfiles": [
+        {
+          "platform": "facebook",
+          "platformKind": "social",
+          "handle": "thecanteenns",
+          "url": "https://www.facebook.com/thecanteenns",
+          "profileUrl": "https://www.facebook.com/thecanteenns",
+          "label": "Facebook",
+          "locationSpecific": false,
+          "sharedBrandProfile": false,
+          "discoveredFrom": "https://www.thecanteen.ca/",
+          "associationBasis": "linked_from_official_website",
+          "observedAt": "2026-08-29T13:54:55.947Z",
+          "lastVerifiedAt": "2026-08-29T13:54:55.947Z",
+          "reviewState": "verified_link",
+          "confidence": "authoritative",
+          "status": "active"
+        },
+        {
+          "platform": "instagram",
+          "platformKind": "social",
+          "handle": "thecanteenns",
+          "url": "https://www.instagram.com/thecanteenns/?hl=en",
+          "profileUrl": "https://www.instagram.com/thecanteenns/?hl=en",
+          "label": "Instagram",
+          "locationSpecific": false,
+          "sharedBrandProfile": false,
+          "discoveredFrom": "https://www.thecanteen.ca/",
+          "associationBasis": "linked_from_official_website",
+          "observedAt": "2026-08-29T13:54:55.947Z",
+          "lastVerifiedAt": "2026-08-29T13:54:55.947Z",
+          "reviewState": "verified_link",
+          "confidence": "authoritative",
+          "status": "active"
+        },
+        {
+          "platform": "youtube",
+          "platformKind": "social",
+          "handle": "TheCanteenCooks",
+          "url": "https://www.youtube.com/c/TheCanteenCooks",
+          "profileUrl": "https://www.youtube.com/c/TheCanteenCooks",
+          "label": "YouTube",
+          "locationSpecific": false,
+          "sharedBrandProfile": false,
+          "discoveredFrom": "https://www.thecanteen.ca/",
+          "associationBasis": "linked_from_official_website",
+          "observedAt": "2026-08-29T13:54:55.947Z",
+          "lastVerifiedAt": "2026-08-29T13:54:55.947Z",
+          "reviewState": "verified_link",
+          "confidence": "authoritative",
+          "status": "active"
+        }
+      ],
+      "linkHubs": [],
+      "relatedLinks": [
+        {
+          "kind": "ordering",
+          "url": "https://order.toasttab.com/online/the-canteen-on-portland",
+          "label": "TAKE-OUT",
+          "discoveredFrom": "https://www.thecanteen.ca/",
+          "associationBasis": "linked_from_official_website",
+          "observedAt": "2026-08-29T13:54:55.947Z",
+          "lastVerifiedAt": "2026-08-29T13:54:55.947Z",
+          "reviewState": "verified_link",
+          "confidence": "authoritative",
+          "status": "active"
+        },
+        {
+          "kind": "reservations",
+          "url": "https://www.opentable.ca/restref/client/?lang=en-CA&ot_source=Restaurant%20website&restref=994912&corrid=8cefe7c3-6080-4d7d-ac77-6dcc1e2be132",
+          "label": "RESERVATIONS",
+          "discoveredFrom": "https://www.thecanteen.ca/",
+          "associationBasis": "linked_from_official_website",
+          "observedAt": "2026-08-29T13:54:55.947Z",
+          "lastVerifiedAt": "2026-08-29T13:54:55.947Z",
+          "reviewState": "verified_link",
+          "confidence": "authoritative",
+          "status": "active"
+        },
+        {
+          "kind": "menu",
+          "url": "https://www.thecanteen.ca/menus",
+          "label": "Folder: MENUS",
+          "discoveredFrom": "https://www.thecanteen.ca/",
+          "associationBasis": "linked_from_official_website",
+          "observedAt": "2026-08-29T13:54:55.947Z",
+          "lastVerifiedAt": "2026-08-29T13:54:55.947Z",
+          "reviewState": "verified_link",
+          "confidence": "authoritative",
+          "status": "active"
+        },
+        {
+          "kind": "menu",
+          "url": "https://www.thecanteen.ca/mainmenus",
+          "label": "SEE OUR MENUS",
+          "discoveredFrom": "https://www.thecanteen.ca/",
+          "associationBasis": "linked_from_official_website",
+          "observedAt": "2026-08-29T13:54:55.947Z",
+          "lastVerifiedAt": "2026-08-29T13:54:55.947Z",
+          "reviewState": "verified_link",
+          "confidence": "authoritative",
+          "status": "active"
+        }
+      ],
+      "feeds": [],
+      "sitemaps": [
+        "https://www.thecanteen.ca/sitemap.xml"
+      ],
+      "sourceKind": "official_website_discovery",
+      "reviewState": "verified"
+    },
+    {
+      "restaurantId": "oxalis-dartmouth",
+      "name": "Oxalis Restaurant",
+      "website": "https://www.oxalisrestaurant.com/",
+      "resolvedUrl": "https://www.oxalisrestaurant.com/",
+      "observedAt": "2026-08-29T13:54:55.969Z",
+      "lastVerifiedAt": "2026-08-29T13:54:55.969Z",
+      "scannedOwnedPages": [
+        "https://www.oxalisrestaurant.com/",
+        "https://www.oxalisrestaurant.com/home",
+        "https://www.oxalisrestaurant.com/contact"
+      ],
+      "socialProfiles": [
+        {
+          "platform": "instagram",
+          "platformKind": "social",
+          "handle": "oxalisns",
+          "url": "https://www.instagram.com/oxalisns/",
+          "profileUrl": "https://www.instagram.com/oxalisns/",
+          "label": "Instagram",
+          "locationSpecific": false,
+          "sharedBrandProfile": false,
+          "discoveredFrom": "https://www.oxalisrestaurant.com/",
+          "associationBasis": "linked_from_official_website",
+          "observedAt": "2026-08-29T13:54:55.969Z",
+          "lastVerifiedAt": "2026-08-29T13:54:55.969Z",
+          "reviewState": "verified_link",
+          "confidence": "authoritative",
+          "status": "active"
+        },
+        {
+          "platform": "facebook",
+          "platformKind": "social",
+          "handle": "oxalisns",
+          "url": "https://www.facebook.com/oxalisns/",
+          "profileUrl": "https://www.facebook.com/oxalisns/",
+          "label": "Facebook",
+          "locationSpecific": false,
+          "sharedBrandProfile": false,
+          "discoveredFrom": "https://www.oxalisrestaurant.com/",
+          "associationBasis": "linked_from_official_website",
+          "observedAt": "2026-08-29T13:54:55.969Z",
+          "lastVerifiedAt": "2026-08-29T13:54:55.969Z",
+          "reviewState": "verified_link",
+          "confidence": "authoritative",
+          "status": "active"
+        }
+      ],
+      "linkHubs": [],
+      "relatedLinks": [
+        {
+          "kind": "menu",
+          "url": "https://www.oxalisrestaurant.com/s/Menu-8rs2.pdf",
+          "label": "Menu",
+          "discoveredFrom": "https://www.oxalisrestaurant.com/",
+          "associationBasis": "linked_from_official_website",
+          "observedAt": "2026-08-29T13:54:55.969Z",
+          "lastVerifiedAt": "2026-08-29T13:54:55.969Z",
+          "reviewState": "verified_link",
+          "confidence": "authoritative",
+          "status": "active"
+        },
+        {
+          "kind": "reservations",
+          "url": "https://resy.com/cities/yhz/oxalis-restaurant-ca",
+          "label": "Book your Oxalis Restaurant, CA reservation on Resy",
+          "discoveredFrom": "https://www.oxalisrestaurant.com/",
+          "associationBasis": "linked_from_official_website",
+          "observedAt": "2026-08-29T13:54:55.969Z",
+          "lastVerifiedAt": "2026-08-29T13:54:55.969Z",
+          "reviewState": "verified_link",
+          "confidence": "authoritative",
+          "status": "active"
+        }
+      ],
+      "feeds": [],
+      "sitemaps": [
+        "https://www.oxalisrestaurant.com/sitemap.xml"
+      ],
+      "sourceKind": "official_website_discovery",
+      "reviewState": "verified"
+    },
+    {
+      "restaurantId": "side-hustle-snack-bar-dartmouth",
+      "name": "Side Hustle Snack Bar",
+      "website": "https://www.sidehustlesnackbar.com/",
+      "resolvedUrl": "https://www.sidehustlesnackbar.com/",
+      "observedAt": "2026-08-29T13:54:55.971Z",
+      "lastVerifiedAt": "2026-08-29T13:54:55.971Z",
+      "scannedOwnedPages": [
+        "https://www.sidehustlesnackbar.com/",
+        "https://www.sidehustlesnackbar.com/contact"
+      ],
+      "socialProfiles": [
+        {
+          "platform": "facebook",
+          "platformKind": "social",
+          "handle": "sidehustlesnackbar",
+          "url": "https://www.facebook.com/sidehustlesnackbar/",
+          "profileUrl": "https://www.facebook.com/sidehustlesnackbar/",
+          "label": "Facebook",
+          "locationSpecific": false,
+          "sharedBrandProfile": false,
+          "discoveredFrom": "https://www.sidehustlesnackbar.com/",
+          "associationBasis": "linked_from_official_website",
+          "observedAt": "2026-08-29T13:54:55.971Z",
+          "lastVerifiedAt": "2026-08-29T13:54:55.971Z",
+          "reviewState": "verified_link",
+          "confidence": "authoritative",
+          "status": "active"
+        },
+        {
+          "platform": "instagram",
+          "platformKind": "social",
+          "handle": "sidehustlesnackbar",
+          "url": "http://instagram.com/sidehustlesnackbar",
+          "profileUrl": "http://instagram.com/sidehustlesnackbar",
+          "label": "Instagram",
+          "locationSpecific": false,
+          "sharedBrandProfile": false,
+          "discoveredFrom": "https://www.sidehustlesnackbar.com/",
+          "associationBasis": "linked_from_official_website",
+          "observedAt": "2026-08-29T13:54:55.971Z",
+          "lastVerifiedAt": "2026-08-29T13:54:55.971Z",
+          "reviewState": "verified_link",
+          "confidence": "authoritative",
+          "status": "active"
+        }
+      ],
+      "linkHubs": [],
+      "relatedLinks": [
+        {
+          "kind": "menu",
+          "url": "https://www.sidehustlesnackbar.com/menu-1",
+          "label": "FOOD & DRINK",
+          "discoveredFrom": "https://www.sidehustlesnackbar.com/",
+          "associationBasis": "linked_from_official_website",
+          "observedAt": "2026-08-29T13:54:55.971Z",
+          "lastVerifiedAt": "2026-08-29T13:54:55.971Z",
+          "reviewState": "verified_link",
+          "confidence": "authoritative",
+          "status": "active"
+        }
+      ],
+      "feeds": [],
+      "sitemaps": [],
+      "sourceKind": "official_website_discovery",
+      "reviewState": "verified"
+    },
+    {
+      "restaurantId": "lake-city-cider-dartmouth",
+      "name": "Lake City Cider",
+      "website": "https://lakecitycider.ca/",
+      "resolvedUrl": "https://lakecitycider.ca/",
+      "observedAt": "2026-08-29T13:54:55.972Z",
+      "lastVerifiedAt": "2026-08-29T13:54:55.972Z",
+      "scannedOwnedPages": [
+        "https://lakecitycider.ca/",
+        "https://lakecitycider.ca/pages/about",
+        "https://lakecitycider.ca/pages/contact-us"
+      ],
+      "socialProfiles": [
+        {
+          "platform": "facebook",
+          "platformKind": "social",
+          "handle": "lakecitycider",
+          "url": "https://www.facebook.com/lakecitycider/",
+          "profileUrl": "https://www.facebook.com/lakecitycider/",
+          "label": "Facebook",
+          "locationSpecific": false,
+          "sharedBrandProfile": false,
+          "discoveredFrom": "https://lakecitycider.ca/",
+          "associationBasis": "linked_from_official_website",
+          "observedAt": "2026-08-29T13:54:55.972Z",
+          "lastVerifiedAt": "2026-08-29T13:54:55.972Z",
+          "reviewState": "verified_link",
+          "confidence": "authoritative",
+          "status": "active"
+        },
+        {
+          "platform": "x",
+          "platformKind": "social",
+          "handle": "LakecityciderNS",
+          "url": "https://twitter.com/LakecityciderNS?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor",
+          "profileUrl": "https://twitter.com/LakecityciderNS?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor",
+          "label": "Twitter",
+          "locationSpecific": false,
+          "sharedBrandProfile": false,
+          "discoveredFrom": "https://lakecitycider.ca/",
+          "associationBasis": "linked_from_official_website",
+          "observedAt": "2026-08-29T13:54:55.972Z",
+          "lastVerifiedAt": "2026-08-29T13:54:55.972Z",
+          "reviewState": "verified_link",
+          "confidence": "authoritative",
+          "status": "active"
+        },
+        {
+          "platform": "instagram",
+          "platformKind": "social",
+          "handle": "lakecitycider",
+          "url": "https://www.instagram.com/lakecitycider",
+          "profileUrl": "https://www.instagram.com/lakecitycider",
+          "label": "Instagram",
+          "locationSpecific": false,
+          "sharedBrandProfile": false,
+          "discoveredFrom": "https://lakecitycider.ca/",
+          "associationBasis": "linked_from_official_website",
+          "observedAt": "2026-08-29T13:54:55.972Z",
+          "lastVerifiedAt": "2026-08-29T13:54:55.972Z",
+          "reviewState": "verified_link",
+          "confidence": "authoritative",
+          "status": "active"
+        }
+      ],
+      "linkHubs": [],
+      "relatedLinks": [
+        {
+          "kind": "ordering",
+          "url": "https://lakecitycider.ca/collections/cider",
+          "label": "Spend $45 or more to receive FREE delivery anywhere in the HRM! | Canada wide shipping available.",
+          "discoveredFrom": "https://lakecitycider.ca/",
+          "associationBasis": "linked_from_official_website",
+          "observedAt": "2026-08-29T13:54:55.972Z",
+          "lastVerifiedAt": "2026-08-29T13:54:55.972Z",
+          "reviewState": "verified_link",
+          "confidence": "authoritative",
+          "status": "active"
+        }
+      ],
+      "feeds": [],
+      "sitemaps": [
+        "https://lakecitycider.ca/sitemap.xml"
+      ],
+      "sourceKind": "official_website_discovery",
+      "reviewState": "verified"
     }
   ],
-  "carryForward": {
-    "previousGeneratedAt": "2026-08-28T21:37:00.343Z",
-    "maxAgeDays": 180,
-    "recordsCarriedAfterRefreshFailure": 3,
-    "socialProfilesCarried": 15,
-    "linkHubsCarried": 0,
-    "relatedLinksCarried": 57,
-    "feedsCarried": 138,
-    "previousProfilesRejectedByCurrentRegistry": 4,
-    "appliedAt": "2026-08-29T02:33:28.415Z"
-  },
-  "facebookCount": 118,
-  "instagramCount": 132,
-  "sanitization": {
-    "appliedAt": "2026-08-29T05:06:17.646Z",
-    "registryVersion": 1,
-    "removedGenericOrInvalidProfiles": 0,
-    "duplicateProfilesRemoved": 0,
-    "normalizedFacebookLegacyProfiles": 0,
-    "sharedBrandProfilesFlagged": 0,
-    "removedGenericOrInvalidLinkHubs": 0,
-    "duplicateLinkHubsRemoved": 0,
-    "removedInvalidRelatedLinks": 0,
-    "duplicateRelatedLinksRemoved": 0,
-    "removedInvalidOrOembedFeeds": 254,
-    "duplicateFeedsRemoved": 3
-  },
   "selectiveReview": {
     "sourceRunId": 33233032764,
     "sourceArtifactId": 9709147016,
@@ -19741,5 +20073,57 @@
       "noggins-oembed-feeds",
       "mexis-oembed-feeds"
     ]
+  },
+  "sanitization": {
+    "appliedAt": "2026-08-29T05:06:17.646Z",
+    "registryVersion": 1,
+    "removedGenericOrInvalidProfiles": 0,
+    "duplicateProfilesRemoved": 0,
+    "normalizedFacebookLegacyProfiles": 0,
+    "sharedBrandProfilesFlagged": 0,
+    "removedGenericOrInvalidLinkHubs": 0,
+    "duplicateLinkHubsRemoved": 0,
+    "removedInvalidRelatedLinks": 0,
+    "duplicateRelatedLinksRemoved": 0,
+    "removedInvalidOrOembedFeeds": 254,
+    "duplicateFeedsRemoved": 3,
+    "latestTargetedRun": {
+      "appliedAt": "2026-08-29T13:55:27.064Z",
+      "registryVersion": 1,
+      "removedGenericOrInvalidProfiles": 0,
+      "duplicateProfilesRemoved": 0,
+      "normalizedFacebookLegacyProfiles": 0,
+      "sharedBrandProfilesFlagged": 0,
+      "removedGenericOrInvalidLinkHubs": 0,
+      "duplicateLinkHubsRemoved": 0,
+      "removedInvalidRelatedLinks": 0,
+      "duplicateRelatedLinksRemoved": 0,
+      "removedInvalidOrOembedFeeds": 0,
+      "duplicateFeedsRemoved": 0
+    }
+  },
+  "facebookCount": 122,
+  "instagramCount": 136,
+  "carryForward": {
+    "previousGeneratedAt": "2026-08-28T21:37:00.343Z",
+    "maxAgeDays": 180,
+    "recordsCarriedAfterRefreshFailure": 3,
+    "socialProfilesCarried": 15,
+    "linkHubsCarried": 0,
+    "relatedLinksCarried": 57,
+    "feedsCarried": 138,
+    "previousProfilesRejectedByCurrentRegistry": 4,
+    "appliedAt": "2026-08-29T02:33:28.415Z"
+  },
+  "targetedRefresh": {
+    "previousGeneratedAt": "2026-08-29T04:13:27.745Z",
+    "requestedRecords": [
+      "canteen-on-portland-dartmouth",
+      "oxalis-dartmouth",
+      "side-hustle-snack-bar-dartmouth",
+      "lake-city-cider-dartmouth"
+    ],
+    "preservedRecordCount": 217,
+    "appliedAt": "2026-08-29T13:55:14.308Z"
   }
 }

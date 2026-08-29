@@ -2,7 +2,14 @@ import { mkdir, readFile, writeFile } from "node:fs/promises";
 
 const catalog = JSON.parse(await readFile(new URL("../data/build/catalog.json", import.meta.url), "utf8"));
 const directoryPayload = JSON.parse(await readFile(new URL("../data/build/directory-restaurant-leads.json", import.meta.url), "utf8"));
-const canonical = Array.isArray(catalog.restaurants) ? catalog.restaurants : [];
+let discoveredRestaurants = [];
+try {
+  const source = await readFile(new URL("../data/discovered-restaurants.js", import.meta.url), "utf8");
+  const match = source.match(/window\.HALIFAX_DISCOVERED_RESTAURANTS\s*=\s*([\s\S]*);\s*$/);
+  if (match) discoveredRestaurants = JSON.parse(match[1]);
+} catch {}
+const canonical = [...(Array.isArray(catalog.restaurants) ? catalog.restaurants : []), ...discoveredRestaurants]
+  .filter((place, index, all) => all.findIndex((item) => item.id === place.id) === index);
 const candidates = Array.isArray(directoryPayload.records) ? directoryPayload.records : [];
 
 function normalizeName(value) {

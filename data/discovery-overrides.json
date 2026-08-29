@@ -231,6 +231,116 @@
         { "label": "Downtown Dartmouth Food & Drink directory", "type": "downtown_dartmouth_directory", "url": "https://www.downtowndartmouth.ca/fooddrink", "status": "verified" }
       ],
       "reviewNote": "Official site and Downtown Dartmouth directory agree on name, address and phone; coordinates use the mapped 17 Prince Street building."
+    },
+    {
+      "id": "canteen-on-portland-dartmouth",
+      "name": "The Canteen on Portland",
+      "neighborhood": "Downtown Dartmouth",
+      "category": "Restaurant",
+      "cuisines": ["Nova Scotian", "Seafood", "Brunch"],
+      "vibe": ["local", "brunch", "date night"],
+      "qualityScore": 82,
+      "freshnessDate": "2026-08-29",
+      "evidenceStatus": "verified",
+      "address": "22 Portland Street, Dartmouth, NS B2Y 1G9",
+      "phone": "902-425-9272",
+      "website": "https://www.thecanteen.ca/",
+      "openingHours": "Tuesday–Thursday 11am–2:30pm and 5pm–9pm; Friday 11am–2:30pm and 5pm–10pm; Saturday 10am–2pm and 5pm–10pm; Sunday 10am–2pm and 5pm–9pm; Monday closed",
+      "socialProfiles": [
+        { "platform": "facebook", "handle": "thecanteenns", "url": "https://www.facebook.com/thecanteenns", "associationBasis": "linked_from_official_website", "reviewState": "verified_link" },
+        { "platform": "instagram", "handle": "thecanteenns", "url": "https://www.instagram.com/thecanteenns/?hl=en", "associationBasis": "linked_from_official_website", "reviewState": "verified_link" }
+      ],
+      "summary": "Downtown Dartmouth restaurant serving seasonal lunch, dinner and weekend brunch with a strong Nova Scotian seafood focus.",
+      "sources": [
+        { "label": "The Canteen official website", "type": "restaurant_site", "url": "https://www.thecanteen.ca/", "status": "verified" },
+        { "label": "Downtown Dartmouth Food & Drink directory", "type": "downtown_dartmouth_directory", "url": "https://www.downtowndartmouth.ca/fooddrink", "status": "verified" }
+      ],
+      "reviewNote": "Official site and Downtown Dartmouth directory agree on name, address and phone; official menu and reservation links are retained in the first-party fact layers."
+    },
+    {
+      "id": "oxalis-dartmouth",
+      "name": "Oxalis Restaurant",
+      "neighborhood": "Downtown Dartmouth",
+      "category": "Restaurant",
+      "cuisines": ["European", "German", "Austrian", "Farm-to-table"],
+      "vibe": ["fine dining", "date night", "tasting menu"],
+      "qualityScore": 84,
+      "freshnessDate": "2026-08-29",
+      "evidenceStatus": "verified",
+      "address": "22 Wentworth Street, Dartmouth, NS B2Y 2S6",
+      "phone": "902-466-6454",
+      "website": "https://www.oxalisrestaurant.com/",
+      "openingHours": "Wednesday–Sunday 5pm–9pm; Monday–Tuesday closed",
+      "socialProfiles": [
+        { "platform": "facebook", "handle": "oxalisns", "url": "https://www.facebook.com/oxalisns/", "associationBasis": "linked_from_official_website", "reviewState": "verified_link" },
+        { "platform": "instagram", "handle": "oxalisns", "url": "https://www.instagram.com/oxalisns/", "associationBasis": "linked_from_official_website", "reviewState": "verified_link" }
+      ],
+      "summary": "Intimate European farm-to-table restaurant featuring Nova Scotian ingredients, German and Austrian influences, and an evolving tasting experience.",
+      "sources": [
+        { "label": "Oxalis official website", "type": "restaurant_site", "url": "https://www.oxalisrestaurant.com/", "status": "verified" },
+        { "label": "Downtown Dartmouth Food & Drink directory", "type": "downtown_dartmouth_directory", "url": "https://www.downtowndartmouth.ca/fooddrink", "status": "verified" }
+      ],
+      "reviewNote": "Official site and Downtown Dartmouth directory agree on identity, address and phone; social profiles are linked by the restaurant-owned site."
+    },
+    {
+      "id": "side-hustle-snack-bar-dartmouth",
+      "name": "Side Hustle Snack Bar",
+      "neighborhood": "Downtown Dartmouth",
+      "category": "Restaurant",
+      "cuisines": ["Global", "Seasonal", "Cocktails", "Brunch"],
+      "vibe": ["casual", "happy hour", "local"],
+      "qualityScore": 81,
+      "freshnessDate": "2026-08-29",
+      "evidenceStatus": "verified",
+      "address": "21 Portland Street, Unit 2, Dartmouth, NS B2Y 1H1",
+      "phone": "902-469-5899",
+      "website": "https://www.sidehustlesnackbar.com/",
+      "openingHours": "Tuesday–Thursday 11am–9pm; Friday–Saturday 11am–10pm; Sunday brunch 10:30am–2:30pm; Monday closed",
+      "coordinates": { "lat": 44.6647049, "lon": -63.5679029 },
+      "socialProfiles": [
+        { "platform": "facebook", "handle": "sidehustlesnackbar", "url": "https://www.facebook.com/sidehustlesnackbar/", "associationBasis": "linked_from_official_website", "reviewState": "verified_link" },
+        { "platform": "instagram", "handle": "sidehustlesnackbar", "url": "http://instagram.com/sidehustlesnackbar", "associationBasis": "linked_from_official_website", "reviewState": "verified_link" }
+      ],
+      "summary": "Independent Downtown Dartmouth restaurant and bar serving seasonal lunch, dinner, weekday happy hour and Sunday brunch.",
+      "specials": [
+        { "title": "Weekday Happy Hour", "cadence": "Tuesday–Friday 3pm–5pm", "sourceStatus": "verified", "sourceUrl": "https://www.sidehustlesnackbar.com/" }
+      ],
+      "sources": [
+        { "label": "Side Hustle official website", "type": "restaurant_site", "url": "https://www.sidehustlesnackbar.com/", "status": "verified" },
+        { "label": "Downtown Dartmouth Food & Drink directory", "type": "downtown_dartmouth_directory", "url": "https://www.downtowndartmouth.ca/fooddrink", "status": "verified" }
+      ],
+      "reviewNote": "Official site and Downtown Dartmouth directory agree on identity, address and phone; mapped coordinates are tied to the exact 21 Portland Street civic address."
+    },
+    {
+      "id": "lake-city-cider-dartmouth",
+      "name": "Lake City Cider",
+      "neighborhood": "Downtown Dartmouth",
+      "category": "Cidery",
+      "cuisines": ["Craft cider", "Taproom"],
+      "vibe": ["taproom", "happy hour", "local"],
+      "qualityScore": 79,
+      "freshnessDate": "2026-08-29",
+      "evidenceStatus": "verified",
+      "address": "35 Portland Street, Dartmouth, NS B2Y 1H1",
+      "phone": "902-466-7818",
+      "website": "https://lakecitycider.ca/",
+      "openingHours": "Daily from 11am; closing varies by day",
+      "coordinates": { "lat": 44.6650229, "lon": -63.5675108 },
+      "socialProfiles": [
+        { "platform": "facebook", "handle": "lakecitycider", "url": "https://www.facebook.com/lakecitycider/", "associationBasis": "linked_from_official_website", "reviewState": "verified_link" },
+        { "platform": "instagram", "handle": "lakecitycider", "url": "https://www.instagram.com/lakecitycider", "associationBasis": "linked_from_official_website", "reviewState": "verified_link" },
+        { "platform": "x", "handle": "LakecityciderNS", "url": "https://twitter.com/LakecityciderNS", "associationBasis": "linked_from_official_website", "reviewState": "verified_link" }
+      ],
+      "summary": "Downtown Dartmouth craft cidery and taproom offering locally made cider, games and recurring weekday happy hour.",
+      "specials": [
+        { "title": "$5 Taproom Happy Hour", "cadence": "Monday–Wednesday 4pm–6pm", "sourceStatus": "verified", "sourceUrl": "https://lakecitycider.ca/pages/taproom" }
+      ],
+      "sources": [
+        { "label": "Lake City Cider official website", "type": "restaurant_site", "url": "https://lakecitycider.ca/", "status": "verified" },
+        { "label": "Lake City Cider taproom page", "type": "restaurant_site", "url": "https://lakecitycider.ca/pages/taproom", "status": "verified" },
+        { "label": "Downtown Dartmouth Food & Drink directory", "type": "downtown_dartmouth_directory", "url": "https://www.downtowndartmouth.ca/fooddrink", "status": "verified" }
+      ],
+      "reviewNote": "Official site and Downtown Dartmouth directory agree on identity, address and phone; the $5 happy-hour price is stated explicitly on the current taproom page."
     }
   ]
 }

@@ -4,6 +4,7 @@ const jsonPath = new URL("../data/build/first-party-sources.json", import.meta.u
 const jsPath = new URL("../data/first-party-sources.js", import.meta.url);
 const registry = JSON.parse(await readFile(new URL("../data/social-platform-registry.json", import.meta.url), "utf8"));
 const payload = JSON.parse(await readFile(jsonPath, "utf8"));
+const priorSanitization = payload.sanitization || null;
 const records = Array.isArray(payload?.records) ? payload.records : [];
 const platformById = new Map((registry.platforms || []).map((platform) => [platform.id, platform]));
 const associationBases = new Set(registry.associationBases || []);
@@ -169,7 +170,7 @@ for (const record of records) for (const link of record.relatedLinks || []) payl
 payload.feedCount = records.reduce((sum, record) => sum + (record.feeds?.length || 0), 0);
 payload.facebookCount = payload.platformCounts.facebook || 0;
 payload.instagramCount = payload.platformCounts.instagram || 0;
-payload.sanitization = {
+const latestSanitization = {
   appliedAt: new Date().toISOString(),
   registryVersion: registry.version,
   removedGenericOrInvalidProfiles: removedProfiles,
@@ -183,6 +184,9 @@ payload.sanitization = {
   removedInvalidOrOembedFeeds: removedFeeds,
   duplicateFeedsRemoved
 };
+payload.sanitization = process.env.FIRST_PARTY_PRESERVE_SANITIZATION_AUDIT === "1" && priorSanitization
+  ? { ...priorSanitization, latestTargetedRun: latestSanitization }
+  : latestSanitization;
 
 await writeFile(jsonPath, JSON.stringify(payload, null, 2));
 await writeFile(jsPath, `window.HALIFAX_FIRST_PARTY_SOURCES = ${JSON.stringify(payload, null, 2)};\n`);
