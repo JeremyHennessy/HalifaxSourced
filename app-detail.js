@@ -19,6 +19,7 @@ function renderRestaurantDetail(id) {
   const statusEvidenceUrl = safeUrl(restaurant.operatingStatusEvidence?.sourceUrl);
   const closureDate = restaurant.closureDate ? new Date(`${restaurant.closureDate}T12:00:00`).toLocaleDateString("en-CA", { year: "numeric", month: "long", day: "numeric" }) : null;
   const statusLabel = restaurant.operatingStatus === "permanently_closed" ? "Permanently closed" : restaurant.operatingStatus === "temporarily_closed" ? "Temporarily closed" : restaurant.operatingStatus === "moved" ? "Moved" : "Status unavailable";
+  const denseMobileOverview = active && restaurant.phone && (menuLink || ordering) && (reservation || website);
 
   appView.innerHTML = `
     <section class="restaurant-hero media-${mediaTone(restaurant)}${permittedImageClass(restaurant)}">
@@ -30,7 +31,7 @@ function renderRestaurantDetail(id) {
       <div class="detail-main">
         ${!active ? `<section class="closure-notice" role="status"><strong>${escapeHtml(statusLabel)}${closureDate ? ` · final service ${escapeHtml(closureDate)}` : ""}</strong><p>${escapeHtml(restaurant.operatingStatusEvidence?.claim || "This record is retained for historical source evidence and is excluded from current discovery.")}</p>${statusEvidenceUrl ? `<a href="${escapeHtml(statusEvidenceUrl)}" target="_blank" rel="noreferrer">View official status evidence ↗</a>` : ""}</section>` : ""}
         <nav class="detail-tabs"><a href="#detailOverview">Overview</a><a href="#detailMenu">Menu</a><a href="#detailSpecials">Specials</a><a href="#detailEvents">Events</a>${officialUpdates.length ? '<a href="#detailUpdates">Updates</a>' : ""}<a href="#detailLinks">Links</a><a href="#detailSources">Sources</a></nav>
-        <section id="detailOverview" class="mobile-detail-overview" aria-label="Restaurant essentials">
+        <section id="detailOverview" class="mobile-detail-overview${denseMobileOverview ? " is-dense" : ""}" aria-label="Restaurant essentials">
           <div class="mobile-essential-facts">
             <div><span>Hours</span><strong>${escapeHtml(restaurant.openingHours || "Check official source")}</strong></div>
             <div><span>Location</span><strong>${escapeHtml(restaurant.address || restaurant.neighborhood || "Halifax")}</strong></div>
