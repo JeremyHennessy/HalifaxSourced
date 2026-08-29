@@ -355,7 +355,6 @@ const report = {
     coordinates: coordinateIds.size,
     neighbourhood: neighbourhoodIds.size,
     cuisine: cuisineIds.size,
-    media: mediaIds.size,
     accessibility: accessibilityIds.size,
     patio: patioIds.size,
     media: mediaIds.size
