@@ -96,6 +96,8 @@ for (const record of records) {
   const seenProfiles = new Set();
   const cleanedProfiles = [];
   for (let profile of record.socialProfiles || []) {
+    const decodedUrl = decodeUrlEntities(profile?.url || profile?.profileUrl);
+    profile = { ...profile, url: decodedUrl, profileUrl: decodedUrl };
     const beforeHandle = String(profile?.handle || "");
     const beforeShared = Boolean(profile?.sharedBrandProfile);
     profile = normalizeFacebookProfile(profile, record);
@@ -111,7 +113,9 @@ for (const record of records) {
 
   const seenHubs = new Set();
   const cleanedHubs = [];
-  for (const hub of record.linkHubs || []) {
+  for (let hub of record.linkHubs || []) {
+    const decodedUrl = decodeUrlEntities(hub?.url || hub?.profileUrl);
+    hub = { ...hub, url: decodedUrl, profileUrl: decodedUrl };
     if (!validPlatformLink(hub, "link_hub")) { removedHubs += 1; continue; }
     const key = `${hub.platform}|${token(hub.handle)}`;
     if (seenHubs.has(key)) { duplicateHubsRemoved += 1; continue; }
