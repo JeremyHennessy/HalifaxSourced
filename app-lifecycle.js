@@ -10,6 +10,7 @@ for (const restaurant of restaurants) {
   restaurant.orderingLinks = [];
   restaurant.specialLinks = [];
   restaurant.eventLinks = [];
+  restaurant.relatedLinks = [];
   restaurant.structuredSpecials = [];
   restaurant.currentVerifiedSpecials = [];
   restaurant.structuredEvents = [];

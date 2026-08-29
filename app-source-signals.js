@@ -179,7 +179,7 @@ for (const restaurant of restaurants) {
   restaurant.hasMenu = Boolean(restaurant.hasMenu || relatedMenuLinks.length);
   restaurant.hasSpecial = Boolean(restaurant.hasSpecial || specialSignalLinks.length || relatedSpecialLinks.length);
   restaurant.hasEvent = Boolean(restaurant.hasEvent || eventSignalLinks.length || relatedEventLinks.length);
-  restaurant.hasOpening = Boolean(restaurant.hasOpening || currentSignals.some((signal) => sourceSignalHas(signal, "openings")));
+  restaurant.hasOpening = Boolean(isRestaurantActive(restaurant) && (restaurant.hasOpening || currentSignals.some((signal) => sourceSignalHas(signal, "openings"))));
   restaurant.hasPatio = Boolean(restaurant.hasPatio || currentSignals.some((signal) => sourceSignalHas(signal, "patio")));
   restaurant.hasSocial = allProfiles.length > 0;
   restaurant.hasLinkHub = linkHubs.length > 0;

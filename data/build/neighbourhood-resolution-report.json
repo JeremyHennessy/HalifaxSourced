@@ -1,0 +1,389 @@
+{
+  "version": 1,
+  "generatedAt": "2026-08-29T16:41:21.937Z",
+  "policy": "Only location-specific matches supported by compatible identity plus address, official domain, phone or reviewed discovery evidence are published. Conflicts and name-only matches remain queued.",
+  "downtownDartmouth": {
+    "candidates": 48,
+    "algorithmResolved": 13,
+    "publishedReviewed": 15,
+    "heldForReview": 33,
+    "counts": {
+      "unresolved": 12,
+      "unresolved_conflict": 9,
+      "non_name_evidence_review": 7,
+      "name_only_review": 5,
+      "resolved_probable": 4,
+      "resolved_high": 9,
+      "review_conflict": 2
+    }
+  },
+  "springGarden": {
+    "candidates": 82,
+    "algorithmResolved": 5,
+    "publishedReviewed": 0,
+    "heldForReview": 82,
+    "counts": {
+      "unresolved": 55,
+      "resolved_high": 3,
+      "non_name_evidence_review": 2,
+      "name_only_review": 18,
+      "unresolved_conflict": 2,
+      "resolved_probable": 2
+    },
+    "publicationDecision": "held_pending_location_specific_address_or_coordinate_evidence"
+  },
+  "publishedRecords": [
+    {
+      "restaurantId": "battery-park",
+      "name": "Battery Park Beer Bar",
+      "resolutionState": "reviewed_high",
+      "evidence": [
+        "compatible_name",
+        "exact_official_domain",
+        "compatible_street_address"
+      ],
+      "completeness": {
+        "identity": true,
+        "address": true,
+        "coordinates": false,
+        "currentStatus": true,
+        "officialWebsite": true,
+        "menu": false,
+        "hours": true,
+        "phone": true,
+        "socialProfiles": false,
+        "duplicateConflictCleared": true
+      }
+    },
+    {
+      "restaurantId": "dear-friend",
+      "name": "Dear Friend Bar",
+      "resolutionState": "reviewed_high",
+      "evidence": [
+        "exact_normalized_name",
+        "exact_official_domain",
+        "compatible_street_address"
+      ],
+      "completeness": {
+        "identity": true,
+        "address": true,
+        "coordinates": false,
+        "currentStatus": true,
+        "officialWebsite": true,
+        "menu": false,
+        "hours": true,
+        "phone": false,
+        "socialProfiles": false,
+        "duplicateConflictCleared": true
+      }
+    },
+    {
+      "restaurantId": "osm-node-3800103657-celtic-corner-public-house",
+      "name": "Celtic Corner Public House",
+      "resolutionState": "resolved_probable",
+      "evidence": [
+        "exact_normalized_name",
+        "compatible_street_address",
+        "official_contact_and_hours",
+        "official_menu_published"
+      ],
+      "completeness": {
+        "identity": true,
+        "address": true,
+        "coordinates": true,
+        "currentStatus": true,
+        "officialWebsite": true,
+        "menu": true,
+        "hours": true,
+        "phone": true,
+        "socialProfiles": true,
+        "duplicateConflictCleared": true
+      }
+    },
+    {
+      "restaurantId": "osm-node-12938312911-churned",
+      "name": "Churned",
+      "resolutionState": "resolved_probable",
+      "evidence": [
+        "exact_normalized_name",
+        "compatible_street_address"
+      ],
+      "completeness": {
+        "identity": true,
+        "address": true,
+        "coordinates": true,
+        "currentStatus": true,
+        "officialWebsite": false,
+        "menu": false,
+        "hours": true,
+        "phone": true,
+        "socialProfiles": false,
+        "duplicateConflictCleared": true
+      }
+    },
+    {
+      "restaurantId": "darty-brewing-dartmouth",
+      "name": "Darty Brewing Co.",
+      "resolutionState": "resolved_high",
+      "evidence": [
+        "exact_normalized_name",
+        "exact_official_domain",
+        "compatible_street_address"
+      ],
+      "completeness": {
+        "identity": true,
+        "address": true,
+        "coordinates": true,
+        "currentStatus": true,
+        "officialWebsite": true,
+        "menu": false,
+        "hours": true,
+        "phone": true,
+        "socialProfiles": true,
+        "duplicateConflictCleared": true
+      }
+    },
+    {
+      "restaurantId": "osm-node-11551984275-doraku",
+      "name": "Doraku",
+      "resolutionState": "resolved_high",
+      "evidence": [
+        "exact_normalized_name",
+        "exact_official_domain",
+        "compatible_street_address",
+        "official_contact_and_hours"
+      ],
+      "completeness": {
+        "identity": true,
+        "address": true,
+        "coordinates": true,
+        "currentStatus": true,
+        "officialWebsite": true,
+        "menu": false,
+        "hours": true,
+        "phone": true,
+        "socialProfiles": false,
+        "duplicateConflictCleared": true
+      }
+    },
+    {
+      "restaurantId": "osm-node-11239721834-humble-pie-kitchen",
+      "name": "Humble Pie Kitchen",
+      "resolutionState": "resolved_high",
+      "evidence": [
+        "compatible_name",
+        "exact_phone",
+        "exact_official_domain",
+        "compatible_street_address"
+      ],
+      "completeness": {
+        "identity": true,
+        "address": true,
+        "coordinates": true,
+        "currentStatus": true,
+        "officialWebsite": true,
+        "menu": true,
+        "hours": true,
+        "phone": true,
+        "socialProfiles": true,
+        "duplicateConflictCleared": true
+      }
+    },
+    {
+      "restaurantId": "lake-city-cider-dartmouth",
+      "name": "Lake City Cider",
+      "resolutionState": "resolved_high",
+      "evidence": [
+        "exact_normalized_name",
+        "exact_phone",
+        "exact_official_domain",
+        "compatible_street_address"
+      ],
+      "completeness": {
+        "identity": true,
+        "address": true,
+        "coordinates": true,
+        "currentStatus": true,
+        "officialWebsite": true,
+        "menu": false,
+        "hours": true,
+        "phone": true,
+        "socialProfiles": true,
+        "duplicateConflictCleared": true
+      }
+    },
+    {
+      "restaurantId": "marias-pantry-dartmouth",
+      "name": "Maria's Pantry",
+      "resolutionState": "resolved_high",
+      "evidence": [
+        "exact_normalized_name",
+        "exact_phone",
+        "exact_official_domain",
+        "compatible_street_address"
+      ],
+      "completeness": {
+        "identity": true,
+        "address": true,
+        "coordinates": true,
+        "currentStatus": true,
+        "officialWebsite": true,
+        "menu": true,
+        "hours": true,
+        "phone": true,
+        "socialProfiles": true,
+        "duplicateConflictCleared": true
+      }
+    },
+    {
+      "restaurantId": "oxalis-dartmouth",
+      "name": "Oxalis Restaurant",
+      "resolutionState": "resolved_high",
+      "evidence": [
+        "exact_normalized_name",
+        "exact_phone",
+        "exact_official_domain",
+        "compatible_street_address"
+      ],
+      "completeness": {
+        "identity": true,
+        "address": true,
+        "coordinates": false,
+        "currentStatus": true,
+        "officialWebsite": true,
+        "menu": true,
+        "hours": true,
+        "phone": true,
+        "socialProfiles": true,
+        "duplicateConflictCleared": true
+      }
+    },
+    {
+      "restaurantId": "osm-node-3801688860-revana-pizza",
+      "name": "Revana Pizza",
+      "resolutionState": "resolved_probable",
+      "evidence": [
+        "exact_normalized_name",
+        "compatible_street_address",
+        "official_location_contact",
+        "official_menu_published"
+      ],
+      "completeness": {
+        "identity": true,
+        "address": true,
+        "coordinates": true,
+        "currentStatus": true,
+        "officialWebsite": true,
+        "menu": true,
+        "hours": true,
+        "phone": true,
+        "socialProfiles": false,
+        "duplicateConflictCleared": true
+      }
+    },
+    {
+      "restaurantId": "side-hustle-snack-bar-dartmouth",
+      "name": "Side Hustle Snack Bar",
+      "resolutionState": "resolved_high",
+      "evidence": [
+        "exact_normalized_name",
+        "exact_phone",
+        "exact_official_domain"
+      ],
+      "completeness": {
+        "identity": true,
+        "address": true,
+        "coordinates": true,
+        "currentStatus": true,
+        "officialWebsite": true,
+        "menu": true,
+        "hours": true,
+        "phone": true,
+        "socialProfiles": true,
+        "duplicateConflictCleared": true
+      }
+    },
+    {
+      "restaurantId": "osm-node-4428984290-stone-pizza",
+      "name": "Stone Pizza",
+      "resolutionState": "resolved_high",
+      "evidence": [
+        "exact_normalized_name",
+        "exact_phone",
+        "exact_official_domain",
+        "compatible_street_address",
+        "official_ordering_site_hours_and_menu"
+      ],
+      "completeness": {
+        "identity": true,
+        "address": true,
+        "coordinates": true,
+        "currentStatus": true,
+        "officialWebsite": true,
+        "menu": true,
+        "hours": true,
+        "phone": true,
+        "socialProfiles": true,
+        "duplicateConflictCleared": true
+      }
+    },
+    {
+      "restaurantId": "canteen-on-portland-dartmouth",
+      "name": "The Canteen on Portland",
+      "resolutionState": "resolved_high",
+      "evidence": [
+        "exact_normalized_name",
+        "exact_phone",
+        "exact_official_domain",
+        "compatible_street_address"
+      ],
+      "completeness": {
+        "identity": true,
+        "address": true,
+        "coordinates": false,
+        "currentStatus": true,
+        "officialWebsite": true,
+        "menu": true,
+        "hours": true,
+        "phone": true,
+        "socialProfiles": true,
+        "duplicateConflictCleared": true
+      }
+    },
+    {
+      "restaurantId": "osm-node-5043397987-whiskey-s-lounge",
+      "name": "Whiskey's Lounge",
+      "resolutionState": "resolved_probable",
+      "evidence": [
+        "exact_normalized_name",
+        "compatible_street_address",
+        "current_official_social_activity"
+      ],
+      "completeness": {
+        "identity": true,
+        "address": true,
+        "coordinates": true,
+        "currentStatus": true,
+        "officialWebsite": false,
+        "menu": false,
+        "hours": false,
+        "phone": false,
+        "socialProfiles": true,
+        "duplicateConflictCleared": true
+      }
+    }
+  ],
+  "practicalGapCounts": {
+    "identity": 0,
+    "address": 0,
+    "coordinates": 4,
+    "currentStatus": 0,
+    "officialWebsite": 2,
+    "menu": 7,
+    "hours": 1,
+    "phone": 2,
+    "socialProfiles": 5,
+    "duplicateConflictCleared": 0
+  },
+  "failures": []
+}

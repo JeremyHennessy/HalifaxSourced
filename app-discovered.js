@@ -28,14 +28,15 @@ for (const discovered of discoveredRestaurantPayload) {
     existing.specials = [...(existing.specials || []), ...(discovered.specials || [])].filter((item, index, all) => all.findIndex((other) => `${other.title}|${other.cadence || ""}` === `${item.title}|${item.cadence || ""}`) === index);
     existing.sources = mergeSources(existing.sources, discovered.sources);
     existing.freshnessDate = [existing.freshnessDate, discovered.freshnessDate].filter(Boolean).sort().at(-1) || null;
+    applyReviewedPlaceResolution(existing);
     applyDiscoveryFlags(existing, discovered);
     continue;
   }
 
-  const enriched = enrichRestaurant({
+  const enriched = enrichRestaurant(applyReviewedPlaceResolution({
     ...discovered,
     sourceLayer: discovered.sourceLayer || "local_discovery"
-  });
+  }));
   applyDiscoveryFlags(enriched, discovered);
   restaurants.push(enriched);
 }

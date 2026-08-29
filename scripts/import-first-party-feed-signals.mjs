@@ -1,4 +1,5 @@
 import { mkdir, readFile, writeFile } from "node:fs/promises";
+import { LIFECYCLE_SIGNAL_GROUPS } from "./lib/lifecycle-language.mjs";
 
 const sourcePayload = JSON.parse(await readFile(new URL("../data/build/first-party-sources.json", import.meta.url), "utf8").catch(() => "{\"records\":[]}"));
 const sourceRecords = Array.isArray(sourcePayload?.records) ? sourcePayload.records : [];
@@ -14,6 +15,7 @@ const signalGroups = {
   specials: ["happy hour", "special", "specials", "daily feature", "feature menu", "deal", "deals", "offer", "offers", "promo", "promotion"],
   events: ["event", "events", "live music", "trivia", "dj", "karaoke", "ticket", "tickets", "show", "party", "tasting", "dinner series"],
   openings: ["now open", "opening soon", "grand opening", "soft opening", "new location", "coming soon", "newly opened"],
+  ...LIFECYCLE_SIGNAL_GROUPS,
   brunch: ["brunch", "breakfast"],
   menu: ["menu", "tasting menu", "seasonal menu", "new menu"]
 };

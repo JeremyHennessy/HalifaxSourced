@@ -47,9 +47,20 @@ jobs:
           node-version: 22
 
       - name: Build verified structured specials for deployment
+        env:
+          SOURCE_COMMIT_SHA: ${{ github.event.workflow_run.head_sha }}
+          QUALITY_WORKFLOW_RUN_ID: ${{ github.event.workflow_run.id }}
         run: |
           node scripts/build-structured-specials.mjs
           node scripts/check-structured-specials.mjs
+          node scripts/check-restaurant-lifecycle.mjs
+          node scripts/check-restaurant-media-rights.mjs
+          node scripts/build-content-coverage-report.mjs
+          node scripts/reconcile-structured-coverage.mjs
+          node scripts/check-report-deployment-parity.mjs
+          node scripts/render-content-coverage-report.mjs
+          node scripts/build-content-quality-report.mjs
+          node scripts/build-deployment-metadata.mjs
 
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5

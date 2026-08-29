@@ -82,6 +82,8 @@ const mediaWindow = await loadWindow("data/restaurant-media.js");
 const openingWindow = await loadWindow("data/opening-watch-leads.js");
 const directoryWindow = await loadWindow("data/directory-restaurant-leads.js");
 const cityWindow = await loadWindow("data/city-events.js");
+const reviewedResolutionWindow = await loadWindow("data/reviewed-place-resolutions.js");
+const lifecycleReport = await loadJson("data/build/restaurant-lifecycle-report.json", { curatedAudit: { records: [] } });
 
 const catalog = await loadJson("data/build/catalog.json", { restaurants: [], counts: {} });
 const official = await loadJson("data/build/official-site-signals.json", { results: [] });
@@ -95,6 +97,8 @@ const curated = Array.isArray(curatedWindow.HALIFAX_RESTAURANTS) ? curatedWindow
 const osm = Array.isArray(osmWindow.HALIFAX_OSM_RESTAURANTS) ? osmWindow.HALIFAX_OSM_RESTAURANTS : [];
 const discovered = Array.isArray(discoveredWindow.HALIFAX_DISCOVERED_RESTAURANTS) ? discoveredWindow.HALIFAX_DISCOVERED_RESTAURANTS : [];
 const media = Array.isArray(mediaWindow.HALIFAX_RESTAURANT_MEDIA?.records) ? mediaWindow.HALIFAX_RESTAURANT_MEDIA.records : [];
+const reviewedResolutions = Array.isArray(reviewedResolutionWindow.HALIFAX_REVIEWED_PLACE_RESOLUTIONS?.records) ? reviewedResolutionWindow.HALIFAX_REVIEWED_PLACE_RESOLUTIONS.records : [];
+const inactiveLifecycleIds = uniqueIds((lifecycleReport.curatedAudit?.records || []).filter((record) => ["temporarily_closed", "permanently_closed", "moved"].includes(record.status)).map((record) => record.restaurantId));
 const cityPayload = cityWindow.HALIFAX_CITY_EVENTS || { events: [] };
 const cityEvents = Array.isArray(cityPayload.events) ? cityPayload.events : [];
 const openingPayload = openingWindow.HALIFAX_OPENING_WATCH_LEADS || { leads: [], failures: [] };
@@ -106,6 +110,25 @@ const curatedLifecycleByName = new Map(curated.map((restaurant) => [normalize(re
 for (const restaurant of canonical) restaurant.operatingStatus = curatedLifecycleById.get(restaurant.id) || curatedLifecycleByName.get(normalize(restaurant.name)) || restaurant.operatingStatus || "unknown";
 const canonicalById = new Map(canonical.map((restaurant) => [restaurant.id, restaurant]));
 const canonicalByName = new Map(canonical.map((restaurant) => [normalize(restaurant.name), restaurant]));
+for (const item of curated) {
+  const existing = canonicalById.get(item.id) || canonicalByName.get(normalize(item.name));
+  if (!existing) continue;
+  for (const field of ["address", "phone", "website", "openingHours", "coordinates", "neighborhood", "category", "freshnessDate", "evidenceStatus", "lifecycle"]) if (item[field] !== undefined && item[field] !== null) existing[field] = item[field];
+  existing.specials = Array.isArray(item.specials) ? item.specials : existing.specials;
+  existing.events = Array.isArray(item.events) ? item.events : existing.events;
+  existing.sources = [...(existing.sources || []), ...(item.sources || [])];
+}
+for (const resolution of reviewedResolutions) {
+  const existing = canonicalById.get(resolution.restaurantId);
+  if (!existing) continue;
+  existing.neighborhood = resolution.neighborhood || existing.neighborhood;
+  existing.address ||= resolution.address;
+  existing.phone ||= resolution.phone;
+  existing.openingHours ||= resolution.openingHours;
+  existing.website ||= resolution.website;
+  if (Array.isArray(resolution.socialProfiles)) existing.socialProfiles = [...new Set([...(existing.socialProfiles || []), ...resolution.socialProfiles])];
+  existing.reviewedPlaceResolution = resolution;
+}
 let discoveryNameOnlyMerges = 0;
 for (const item of discovered) {
   const byId = canonicalById.get(item.id);
@@ -145,6 +168,7 @@ const inspectionIds = uniqueIds(canonical.filter((restaurant) => (restaurant.ins
 const verifiedMenuIds = uniqueIds((verifiedPages.menuSources || []).map((source) => source.restaurantId));
 const verifiedSpecialIds = uniqueIds((verifiedPages.specialSources || []).map((source) => source.restaurantId));
 const menuIds = new Set(verifiedMenuIds);
+for (const resolution of reviewedResolutions) if (validUrl(resolution.menuUrl)) menuIds.add(resolution.restaurantId);
 const specialIds = new Set(verifiedSpecialIds);
 const reservationIds = new Set();
 const orderingIds = new Set();
@@ -176,6 +200,21 @@ for (const record of firstPartyRecords) {
     socialPlatformPlaceIds[platform].add(record.restaurantId);
     if (SOCIAL_PLATFORMS.has(platform)) socialPlaceIds.add(record.restaurantId);
     if (LINK_HUB_PLATFORMS.has(platform)) linkHubIds.add(record.restaurantId);
+  }
+}
+
+for (const resolution of reviewedResolutions) {
+  for (const profile of resolution.socialProfiles || []) {
+    const platform = String(profile.platform || "").toLowerCase();
+    const handle = (() => { try { return new URL(profile.url).pathname.split("/").filter(Boolean)[0]?.toLowerCase() || ""; } catch { return ""; } })();
+    if (!SOCIAL_PLATFORMS.has(platform) || !handle || !validUrl(profile.url)) continue;
+    const key = `${platform}|${handle}`;
+    if (profileAssociations.some((item) => item.restaurantId === resolution.restaurantId && item.key === key)) continue;
+    profileAssociationCounts.set(key, (profileAssociationCounts.get(key) || 0) + 1);
+    profileAssociations.push({ restaurantId: resolution.restaurantId, platform, handle, key, profile, observedAt: resolution.observedAt });
+    socialPlaceIds.add(resolution.restaurantId);
+    socialOrHubPlaceIds.add(resolution.restaurantId);
+    socialPlatformPlaceIds[platform].add(resolution.restaurantId);
   }
 }
 
@@ -291,7 +330,8 @@ for (const restaurant of canonical) increment(lifecycle, restaurant.operatingSta
 const report = {
   version: 1,
   generatedAt: new Date().toISOString(),
-  baselineCommitHint: process.env.GITHUB_SHA || null,
+  sourceCommitSha: process.env.SOURCE_COMMIT_SHA || process.env.GITHUB_SHA || null,
+  baselineCommitHint: process.env.SOURCE_COMMIT_SHA || process.env.GITHUB_SHA || null,
   definitions: {
     canonicalPlaces: "Current user-facing merge of catalog restaurants plus reviewed discovery records, matching the app's existing name-based discovery merge behavior.",
     verifiedOfficialWebsite: "Official-site fetch returned a successful HTTP status or the first-party discovery layer successfully fetched the restaurant-owned site.",
@@ -300,10 +340,15 @@ const report = {
     socialCoverage: "Count of canonical places associated with at least one supported profile; link hubs are reported separately from social networks.",
     staleRestaurant: "Latest available restaurant freshness/official-site/first-party observation is more than 90 days old. Unknown dates are reported separately.",
     eventVenueMatch: "Conservative exact normalized venue-name match to a canonical place; no canonical venue entity exists yet.",
-    duplicateEventCount: "Additional current event records sharing normalized title, local date, and normalized venue/address key."
+    duplicateEventCount: "Additional current event records sharing normalized title, local date, and normalized venue/address key.",
+    canonicalRestaurantsWithStructuredUpcomingEvents: "Distinct canonical restaurant IDs that have one or more upcoming structured event records. This is a place count.",
+    upcomingStructuredRestaurantEventRecords: "Individual upcoming structured restaurant event records, including multiple dated events for the same restaurant. This is an event count.",
+    lifecycleStatus: "Reviewed restaurant operating state. Inactive records remain addressable as archived details but are excluded from active discovery, menus, specials and maps."
   },
   restaurantCoverage: {
     totalCanonicalPlaces: total,
+    activeCanonicalPlaces: total - inactiveLifecycleIds.size,
+    archivedLifecyclePlaces: inactiveLifecycleIds.size,
     curatedRestaurants: curated.length,
     osmRestaurants: osm.length,
     locallyDiscoveredRestaurants: discovered.length,
@@ -390,6 +435,8 @@ const report = {
     duplicateEventCount,
     structuredRestaurantEvents: structuredEvents.length,
     structuredUpcomingRestaurantEvents: structuredUpcoming.length,
+    canonicalRestaurantsWithStructuredUpcomingEvents: structuredUpcomingRestaurantIds.size,
+    upcomingStructuredRestaurantEventRecords: structuredUpcoming.length,
     expiredStructuredRestaurantEvents: structuredEvents.length - structuredUpcoming.length,
     next7Days: currentCityEvents.filter((event) => { const start = dateStamp(event.startAt); return start !== null && start >= now && start <= now + 7 * DAY_MS; }).length,
     next30Days: currentCityEvents.filter((event) => { const start = dateStamp(event.startAt); return start !== null && start >= now && start <= now + 30 * DAY_MS; }).length
@@ -419,9 +466,11 @@ const ea = report.eventCoverage;
 const sa = report.socialAudit;
 const markdown = `# Halifax Sourced content coverage baseline\n\nGenerated: ${report.generatedAt}\n\nThis report measures the currently committed production data layers. It is a content-completeness baseline, **not a restaurant quality or popularity rating**. Unknown data remains unknown; source leads are not converted into fabricated facts.\n\n## Restaurant coverage\n\n| Metric | Places | Coverage |\n| --- | ---: | ---: |\n${metricRow("Canonical places", total, total)}\n${metricRow("Official website", rc.withOfficialWebsite)}\n${metricRow("Verified/reachable official website", rc.withVerifiedOfficialWebsite)}\n${metricRow("Public inspection match", rc.withInspectionMatch)}\n${metricRow("Menu link", rc.withMenuLink)}\n${metricRow("Verified menu link", rc.withVerifiedMenuLink)}\n${metricRow("Special evidence", rc.withSpecials)}\n${metricRow("Verified specials source", rc.withVerifiedSpecials)}\n${metricRow("Reservation link", rc.withReservationLink)}\n${metricRow("Online ordering link", rc.withOnlineOrderingLink)}\n${metricRow("Event evidence", rc.withEventEvidence)}\n${metricRow("Structured upcoming restaurant events", rc.withStructuredUpcomingEvents)}\n${metricRow("At least one social network profile", rc.withAtLeastOneSocialProfile)}\n${metricRow("Phone", rc.withPhone)}\n${metricRow("Hours", rc.withStructuredOrSourceHours)}\n${metricRow("Coordinates", rc.withCoordinates)}\n${metricRow("Neighbourhood", rc.withNeighbourhood)}\n${metricRow("Cuisine classification", rc.withCuisineClassification)}\n${metricRow("Accessibility information", rc.withAccessibilityInformation)}\n${metricRow("Patio information", rc.withPatioInformation)}\n${metricRow("Usable rights-approved media", rc.withUsableMedia)}\n\nRaw layers: ${rc.curatedRestaurants} curated, ${rc.osmRestaurants} OpenStreetMap, ${rc.locallyDiscoveredRestaurants} reviewed local-discovery records, ${rc.catalogMergedRestaurants} pre-discovery catalog records.\n\n## Social coverage\n\n| Platform | Places | Coverage |\n| --- | ---: | ---: |\n${Object.entries(sa.platformPlaceCounts).map(([platform, count]) => metricRow(platform, count)).join("\n")}\n\n- Website but no social network found: **${sa.websiteButNoSocialPlaces}**\n- No official website in the canonical record: **${sa.noWebsitePlaces}**\n- Shared-profile keys: **${sa.sharedProfileKeys}**; places with shared-brand profiles only: **${sa.sharedBrandOnlyPlaces}**\n- Candidate social associations awaiting verification: **${sa.candidatePlacesAwaitingVerification}**\n- Social source observations older than 90 days: **${sa.staleSocialVerificationPlaces}**\n\n## City events\n\n- Current/upcoming events: **${ea.currentCityEvents}**\n- Sources represented: **${ea.cityEventSources}**\n- Next 7 days: **${ea.next7Days}**; next 30 days: **${ea.next30Days}**\n- Ticket links: **${ea.withTicketLink}**; price information: **${ea.withPrice}**; explicitly free: **${ea.freeEvents}**\n- Coordinates: **${ea.withCoordinates}**\n- Conservative exact venue-name → restaurant matches: **${ea.withVenueRestaurantNameMatch}**\n- Possible duplicate current event records: **${ea.duplicateEventCount}**\n\n### Events by municipality\n\n${Object.entries(ea.byMunicipality).map(([key, value]) => `- ${key}: ${value}`).join("\n")}\n\n### Events by category\n\n${Object.entries(ea.byCategory).sort((a, b) => b[1] - a[1]).map(([key, value]) => `- ${key}: ${value}`).join("\n")}\n\n### Events by source\n\n${Object.entries(ea.bySource).sort((a, b) => b[1] - a[1]).map(([key, value]) => `- ${key}: ${value}`).join("\n")}\n\n## Freshness\n\n- < 7 days: ${rc.freshness.lt7Days}\n- 7–30 days: ${rc.freshness.days7To30}\n- 30–90 days: ${rc.freshness.days30To90}\n- > 90 days: ${rc.freshness.gt90Days}\n- Unknown: ${rc.freshness.unknown}\n\n## Source failures visible in the current data\n\n${Object.entries(report.sourceFailures).map(([key, value]) => `- ${key}: ${value}`).join("\n")}\n\n## Known model gaps exposed by this baseline\n\n- Reviewed discovery still follows the app's existing name-based merge behavior; name-only merges observed: **${rc.currentResolutionRisks.discoveryNameOnlyMerges}**.\n- City events do not yet have canonical venue/organizer entities; the venue relationship number above is only a conservative name match.\n- Accessibility and patio coverage are only counted when explicit fields/OSM tags/official-site evidence exist; absence is not treated as “no.”\n- Social link hubs are measured separately from social networks.\n\nMachine-readable details, gap queues, definitions, and failure counts are in \`data/build/content-coverage-report.json\`.\n`;
 
+const supplementalMarkdown = `\n## Lifecycle and restaurant-event definitions\n\n- Active canonical places: **${rc.activeCanonicalPlaces}**; archived lifecycle records: **${rc.archivedLifecyclePlaces}**.\n- Canonical restaurants with at least one upcoming structured restaurant event: **${ea.canonicalRestaurantsWithStructuredUpcomingEvents}**. This is a distinct-place count.\n- Upcoming structured restaurant event records: **${ea.upcomingStructuredRestaurantEventRecords}** of **${ea.structuredRestaurantEvents}** stored records. This is an event-record count and can include multiple events for one restaurant.\n`;
+
 await mkdir(new URL("../data/build", import.meta.url), { recursive: true });
 await mkdir(new URL("../docs", import.meta.url), { recursive: true });
 await writeFile(new URL("../data/build/content-coverage-report.json", import.meta.url), JSON.stringify(report, null, 2));
-await writeFile(new URL("../docs/content-coverage-report.md", import.meta.url), markdown);
+await writeFile(new URL("../docs/content-coverage-report.md", import.meta.url), `${markdown}${supplementalMarkdown}`);
 console.log(JSON.stringify({ restaurantCoverage: report.restaurantCoverage, socialAudit: { ...report.socialAudit, priorityGapQueue: undefined }, eventCoverage: report.eventCoverage, sourceFailures: report.sourceFailures }, null, 2));
 console.log("Content coverage report written to data/build/content-coverage-report.json and docs/content-coverage-report.md.");

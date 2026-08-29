@@ -47,6 +47,10 @@ jobs:
           node scripts/check-data-integrity.mjs
           node scripts/check-expanded-sources.mjs
           node scripts/check-restaurant-discovery.mjs
+          node scripts/check-restaurant-lifecycle.mjs
+          node scripts/test-lifecycle-language.mjs
+          node scripts/check-restaurant-media-rights.mjs
+          node scripts/check-neighbourhood-resolutions.mjs
           node scripts/check-city-events.mjs
           node scripts/check-event-entity-resolution.mjs
           node scripts/check-structured-place-facts.mjs
@@ -55,10 +59,16 @@ jobs:
           node scripts/test-city-event-source-drift.mjs
 
       - name: Build content coverage and quality reports
+        env:
+          SOURCE_COMMIT_SHA: ${{ github.event.pull_request.head.sha || github.sha }}
         run: |
+          node scripts/check-restaurant-lifecycle.mjs
           node scripts/build-content-coverage-report.mjs
           node scripts/reconcile-structured-coverage.mjs
+          node scripts/check-report-deployment-parity.mjs
+          node scripts/render-content-coverage-report.mjs
           node scripts/build-content-quality-report.mjs
+          node scripts/build-deployment-metadata.mjs
 
       - name: Upload integrity reports
         if: always()
@@ -69,6 +79,10 @@ jobs:
             artifacts/data-integrity-report.json
             artifacts/expanded-source-integrity-report.json
             artifacts/restaurant-discovery-report.json
+            data/build/restaurant-lifecycle-report.json
+            docs/restaurant-lifecycle-report.md
+            data/build/restaurant-media-rights-report.json
+            data/build/neighbourhood-resolution-report.json
             artifacts/city-event-integrity-report.json
             artifacts/event-entity-resolution-report.json
             artifacts/structured-place-facts-report.json
@@ -81,6 +95,7 @@ jobs:
             docs/content-coverage-report.md
             data/build/content-quality-report.json
             docs/content-quality-report.md
+            data/build/deployment-metadata.json
           if-no-files-found: ignore
 
   ui-verification:

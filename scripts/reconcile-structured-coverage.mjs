@@ -41,6 +41,8 @@ const facts = await json("data/build/structured-place-facts.json", { records: []
 const specials = await json("data/build/structured-specials.json", { records: [] });
 const discoveredWindow = await windowData("data/discovered-restaurants.js");
 const discovered = Array.isArray(discoveredWindow.HALIFAX_DISCOVERED_RESTAURANTS) ? discoveredWindow.HALIFAX_DISCOVERED_RESTAURANTS : [];
+const reviewedWindow = await windowData("data/reviewed-place-resolutions.js");
+const reviewedResolutions = Array.isArray(reviewedWindow.HALIFAX_REVIEWED_PLACE_RESOLUTIONS?.records) ? reviewedWindow.HALIFAX_REVIEWED_PLACE_RESOLUTIONS.records : [];
 const total = Number(report.restaurantCoverage?.totalCanonicalPlaces || 0);
 const catalogById = new Map((catalog.restaurants || []).map((item) => [item.id, item]));
 const discoveredByName = new Map(discovered.map((item) => [normalize(item.name), item]));
@@ -133,6 +135,14 @@ for (const record of firstParty.records || []) {
     if (!HUBS.has(platform)) continue;
     hubIds.add(record.restaurantId);
     platformSets[platform].add(record.restaurantId);
+  }
+}
+for (const resolution of reviewedResolutions) {
+  for (const profile of resolution.socialProfiles || []) {
+    const platform = String(profile.platform || "").toLowerCase();
+    if (SOCIAL.has(platform)) socialIds.add(resolution.restaurantId);
+    if (HUBS.has(platform)) hubIds.add(resolution.restaurantId);
+    if (platformSets[platform]) platformSets[platform].add(resolution.restaurantId);
   }
 }
 

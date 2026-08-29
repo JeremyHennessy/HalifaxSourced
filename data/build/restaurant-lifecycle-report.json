@@ -1,0 +1,136 @@
+{
+  "version": 1,
+  "generatedAt": "2026-08-29T16:41:21.695Z",
+  "policy": {
+    "inactiveStatuses": [
+      "temporarily_closed",
+      "permanently_closed",
+      "moved"
+    ],
+    "candidateSignals": "Closure and move phrases from restaurant-owned websites and feeds create a review queue; they never change production status without reviewed evidence.",
+    "activeDiscovery": "Temporarily closed, permanently closed and moved records remain addressable as archived details but are excluded from active discovery, menus, specials and maps."
+  },
+  "curatedAudit": {
+    "total": 10,
+    "statusCounts": {
+      "open": 9,
+      "permanently_closed": 1
+    },
+    "invalid": 0,
+    "records": [
+      {
+        "restaurantId": "bar-kismet",
+        "name": "Bar Kismet",
+        "status": "open",
+        "effectiveDate": null,
+        "observedAt": "2026-08-29",
+        "sourceUrl": "https://barkismet.com/",
+        "evidenceKind": "official_current_operations",
+        "reviewState": "verified",
+        "problems": []
+      },
+      {
+        "restaurantId": "the-bicycle-thief",
+        "name": "The Bicycle Thief",
+        "status": "open",
+        "effectiveDate": null,
+        "observedAt": "2026-08-29",
+        "sourceUrl": "https://bicyclethief.ca/",
+        "evidenceKind": "official_current_operations",
+        "reviewState": "verified",
+        "problems": []
+      },
+      {
+        "restaurantId": "edna",
+        "name": "EDNA",
+        "status": "open",
+        "effectiveDate": null,
+        "observedAt": "2026-08-29",
+        "sourceUrl": "https://www.ednarestaurant.com/",
+        "evidenceKind": "official_current_operations",
+        "reviewState": "verified",
+        "problems": []
+      },
+      {
+        "restaurantId": "the-press-gang",
+        "name": "The Press Gang",
+        "status": "open",
+        "effectiveDate": null,
+        "observedAt": "2026-08-29",
+        "sourceUrl": "https://thepressgang.ca/",
+        "evidenceKind": "official_current_operations",
+        "reviewState": "verified",
+        "problems": []
+      },
+      {
+        "restaurantId": "the-narrows",
+        "name": "The Narrows Public House",
+        "status": "open",
+        "effectiveDate": null,
+        "observedAt": "2026-08-29",
+        "sourceUrl": "https://www.thenarrowspublichouse.ca/",
+        "evidenceKind": "official_current_operations",
+        "reviewState": "verified",
+        "problems": []
+      },
+      {
+        "restaurantId": "2-doors-down",
+        "name": "2 Doors Down",
+        "status": "open",
+        "effectiveDate": null,
+        "observedAt": "2026-08-29",
+        "sourceUrl": "https://go2doorsdown.com/",
+        "evidenceKind": "official_current_location_operations",
+        "reviewState": "verified",
+        "problems": []
+      },
+      {
+        "restaurantId": "battery-park",
+        "name": "Battery Park Beer Bar",
+        "status": "open",
+        "effectiveDate": null,
+        "observedAt": "2026-08-29",
+        "sourceUrl": "https://batterypark.ca/",
+        "evidenceKind": "official_current_operations",
+        "reviewState": "verified",
+        "problems": []
+      },
+      {
+        "restaurantId": "dear-friend",
+        "name": "Dear Friend Bar",
+        "status": "open",
+        "effectiveDate": null,
+        "observedAt": "2026-08-29",
+        "sourceUrl": "https://dearfriendbar.com/",
+        "evidenceKind": "official_current_operations",
+        "reviewState": "verified",
+        "problems": []
+      },
+      {
+        "restaurantId": "highwayman",
+        "name": "Highwayman",
+        "status": "open",
+        "effectiveDate": null,
+        "observedAt": "2026-08-29",
+        "sourceUrl": "https://www.highwaymanhfx.com/",
+        "evidenceKind": "official_current_operations",
+        "reviewState": "verified",
+        "problems": []
+      },
+      {
+        "restaurantId": "field-guide",
+        "name": "Field Guide",
+        "status": "permanently_closed",
+        "effectiveDate": "2026-04-29",
+        "observedAt": "2026-08-29",
+        "sourceUrl": "https://www.facebook.com/fieldguidehfx/videos/2017145352561161/",
+        "evidenceKind": "official_closure_announcement",
+        "reviewState": "verified",
+        "problems": []
+      }
+    ]
+  },
+  "officialLifecycleCandidateCount": 0,
+  "officialLifecycleCandidates": [],
+  "failures": []
+}
