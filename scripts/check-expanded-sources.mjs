@@ -12,6 +12,7 @@ async function loadWindowScript(path) {
 const catalog = JSON.parse(await readFile(new URL("../data/build/catalog.json", import.meta.url), "utf8"));
 const socialRegistry = JSON.parse(await readFile(new URL("../data/social-platform-registry.json", import.meta.url), "utf8"));
 const feedReviewOverrides = JSON.parse(await readFile(new URL("../data/feed-review-overrides.json", import.meta.url), "utf8").catch(() => "{\"records\":[]}"));
+const socialProfileOverrides = JSON.parse(await readFile(new URL("../data/social-profile-review-overrides.json", import.meta.url), "utf8").catch(() => "{\"records\":[]}"));
 const discoveredWindow = await loadWindowScript("data/discovered-restaurants.js").catch(() => ({ HALIFAX_DISCOVERED_RESTAURANTS: [] }));
 const discoveredRestaurants = Array.isArray(discoveredWindow.HALIFAX_DISCOVERED_RESTAURANTS) ? discoveredWindow.HALIFAX_DISCOVERED_RESTAURANTS : [];
 const restaurantIds = new Set([...(catalog.restaurants || []), ...discoveredRestaurants].map((restaurant) => restaurant.id));
@@ -28,7 +29,9 @@ const socialSignals = Array.isArray(socialPayload.signals) ? socialPayload.signa
 const failures = [];
 const warnings = [];
 const allowedFeedExclusionReasons = new Set(["compromised_off_topic_feed", "shared_brand_nonlocal_feed"]);
+const allowedSocialProfileExclusionReasons = new Set(["person_or_creator_profile", "parent_institution_profile", "wrong_location_profile", "supplier_or_partner_profile", "conflicting_profile_evidence"]);
 const excludedFeedUrls = new Set();
+const excludedProfileUrlsByRestaurant = new Map();
 for (const record of feedReviewOverrides.records || []) {
   if (!restaurantIds.has(record.restaurantId) || record.reviewState !== "reviewed_exclusion" || !allowedFeedExclusionReasons.has(record.reason) || !validDate(record.observedAt) || !String(record.evidence || "").trim() || !(record.feedUrls || []).length) {
     failures.push({ type: "invalid_feed_review_exclusion", restaurantId: record.restaurantId });
@@ -40,6 +43,18 @@ for (const record of feedReviewOverrides.records || []) {
   }
 }
 if ((feedPayload.reviewedFeedsExcluded ?? 0) !== excludedFeedUrls.size) failures.push({ type: "feed_review_exclusion_count_mismatch", expected: excludedFeedUrls.size, actual: feedPayload.reviewedFeedsExcluded ?? 0 });
+for (const record of socialProfileOverrides.records || []) {
+  if (!restaurantIds.has(record.restaurantId) || record.reviewState !== "reviewed_exclusion" || !allowedSocialProfileExclusionReasons.has(record.reason) || !validDate(record.observedAt) || !String(record.evidence || "").trim() || !(record.profileUrls || []).length) {
+    failures.push({ type: "invalid_social_profile_review_exclusion", restaurantId: record.restaurantId });
+    continue;
+  }
+  if (!excludedProfileUrlsByRestaurant.has(record.restaurantId)) excludedProfileUrlsByRestaurant.set(record.restaurantId, new Set());
+  const bucket = excludedProfileUrlsByRestaurant.get(record.restaurantId);
+  for (const url of record.profileUrls) {
+    if (!validUrl(url)) failures.push({ type: "invalid_social_profile_review_exclusion_url", restaurantId: record.restaurantId, url });
+    else bucket.add(normalizedUrl(url));
+  }
+}
 
 const platformById = new Map((socialRegistry.platforms || []).map((platform) => [platform.id, platform]));
 const associationBases = new Set(socialRegistry.associationBases || []);
@@ -52,6 +67,7 @@ function validUrl(value) {
   } catch { return false; }
 }
 function hasEscapedUrlEntities(value) { return /&(?:amp|#0*38|#x0*26);/i.test(String(value ?? "")); }
+function hasTemplatePlaceholder(value) { return /\{\{|\}\}|%7b|%7d|\bdata\./i.test(String(value ?? "")); }
 function oembedFeed(value, type = "") {
   try {
     const url = new URL(String(value ?? "").replace(/&#0*38;|&#x0*26;|&amp;/gi, "&"));
@@ -73,6 +89,18 @@ function host(value) {
   try { return new URL(String(value ?? "")).hostname.toLowerCase().replace(/^www\./, "").replace(/^m\./, ""); }
   catch { return ""; }
 }
+function normalizedUrl(value) {
+  try {
+    const url = new URL(String(value ?? ""));
+    url.hash = "";
+    for (const key of [...url.searchParams.keys()]) {
+      if (/^utm_/i.test(key) || ["fbclid", "gclid", "igshid", "mc_cid", "mc_eid", "ref", "ref_src", "hl", "mibextid"].includes(key.toLowerCase())) {
+        url.searchParams.delete(key);
+      }
+    }
+    return `${url.protocol}//${url.hostname.toLowerCase().replace(/^www\./, "")}${url.pathname.replace(/\/+$/, "")}${url.search}`.toLowerCase();
+  } catch { return ""; }
+}
 function platformLinkValid(item, expectedKind) {
   const metadata = platformById.get(String(item?.platform || "").toLowerCase());
   if (!metadata || metadata.kind !== expectedKind || !item.handle || !validUrl(item.url || item.profileUrl)) return false;
@@ -92,6 +120,9 @@ for (const record of records) {
     continue;
   }
   for (const profile of record.socialProfiles || []) {
+    if (excludedProfileUrlsByRestaurant.get(record.restaurantId)?.has(normalizedUrl(profile.url || profile.profileUrl))) {
+      failures.push({ type: "reviewed_excluded_social_profile_published", restaurantId: record.restaurantId, platform: profile.platform, url: profile.url || profile.profileUrl });
+    }
     if (!platformLinkValid(profile, "social")) {
       failures.push({ type: "invalid_social_profile_discovery", restaurantId: record.restaurantId, platform: profile.platform, url: profile.url, associationBasis: profile.associationBasis });
     }
@@ -102,7 +133,7 @@ for (const record of records) {
     }
   }
   for (const related of record.relatedLinks || []) {
-    if (!validUrl(related.url) || hasEscapedUrlEntities(related.url) || !["reservations", "ordering", "menu", "events", "newsletter", "tickets"].includes(related.kind) || related.reviewState !== "verified_link" || !associationBases.has(related.associationBasis) || !confidenceValues.has(related.confidence) || !validDate(related.observedAt) || !validDate(related.lastVerifiedAt)) {
+    if (!validUrl(related.url) || hasEscapedUrlEntities(related.url) || hasTemplatePlaceholder(related.url) || hasTemplatePlaceholder(related.label) || !["reservations", "ordering", "menu", "events", "newsletter", "tickets"].includes(related.kind) || related.reviewState !== "verified_link" || !associationBases.has(related.associationBasis) || !confidenceValues.has(related.confidence) || !validDate(related.observedAt) || !validDate(related.lastVerifiedAt)) {
       failures.push({ type: "invalid_related_link_discovery", restaurantId: record.restaurantId, kind: related.kind, url: related.url });
     }
   }

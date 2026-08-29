@@ -284,6 +284,10 @@ function relatedKind(url, label = "") {
   return null;
 }
 
+function templatedValue(value) {
+  return /\{\{|\}\}|%7b|%7d|\bdata\./i.test(String(value ?? ""));
+}
+
 function discoverRelatedLinks(html, baseUrl, associationBasis, observedAt) {
   const links = [];
   const seen = new Set();
@@ -292,6 +296,7 @@ function discoverRelatedLinks(html, baseUrl, associationBasis, observedAt) {
     const url = safeUrl(match[1], baseUrl);
     if (!url) continue;
     const label = cleanText(match[2]).slice(0, 140);
+    if (templatedValue(url.href) || templatedValue(label)) continue;
     const kind = relatedKind(url.href, label);
     if (!kind || platformForUrl(url.href)) continue;
     if (kind === "menu") {

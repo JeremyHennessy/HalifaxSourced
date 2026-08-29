@@ -1,0 +1,86 @@
+{
+  "version": 1,
+  "generatedAt": "2026-08-29T20:45:00.000Z",
+  "policy": "Reviewed social-profile exclusions prevent supplier, partner, person, wrong-location, or conflicting profile links from appearing as official restaurant social profiles. Discovery remains source-backed; excluded profiles are not published.",
+  "records": [
+    {
+      "restaurantId": "osm-node-11525752766-charm-school",
+      "profileUrls": [
+        "https://twitter.com/nash_bomb",
+        "https://twitter.com/monochromegod"
+      ],
+      "reason": "person_or_creator_profile",
+      "evidence": "The profile links are individual/person accounts on the owned site, not restaurant-owned social profiles for Charm School.",
+      "observedAt": "2026-08-29",
+      "reviewState": "reviewed_exclusion"
+    },
+    {
+      "restaurantId": "osm-node-5631529440-hmcs-king-s-wardroom",
+      "profileUrls": [
+        "https://www.facebook.com/universityofkingscollege/",
+        "https://twitter.com/ukings",
+        "https://www.instagram.com/ukchalifax",
+        "https://www.youtube.com/user/kingscollegehfx",
+        "https://www.youtube.com/c/UniversityofKingsCollege"
+      ],
+      "reason": "parent_institution_profile",
+      "evidence": "These are University of King's College parent-institution channels, distinct from The Wardroom's own accounts.",
+      "observedAt": "2026-08-29",
+      "reviewState": "reviewed_exclusion"
+    },
+    {
+      "restaurantId": "osm-node-6910685885-mexi-s",
+      "profileUrls": [
+        "https://www.facebook.com/Mexis-Brockville-103438779045678"
+      ],
+      "reason": "wrong_location_profile",
+      "evidence": "The profile is for the Brockville Mexi's location, not the Halifax record.",
+      "observedAt": "2026-08-29",
+      "reviewState": "reviewed_exclusion"
+    },
+    {
+      "restaurantId": "osm-node-7082566319-real-fake-meats",
+      "profileUrls": [
+        "https://www.instagram.com/jordoshootsfilm/?hl=en"
+      ],
+      "reason": "person_or_creator_profile",
+      "evidence": "The profile is a creator/photographer account linked from the site, not Real Fake Meats' official social profile.",
+      "observedAt": "2026-08-29",
+      "reviewState": "reviewed_exclusion"
+    },
+    {
+      "restaurantId": "osm-node-9152231317-harvest",
+      "profileUrls": [
+        "https://www.instagram.com/andyseastcoastkitchen_/"
+      ],
+      "reason": "person_or_creator_profile",
+      "evidence": "The profile is an individual food/creator account linked from the site, not HARVEST's official social profile.",
+      "observedAt": "2026-08-29",
+      "reviewState": "reviewed_exclusion"
+    },
+    {
+      "restaurantId": "osm-way-96322798-wooden-monkey",
+      "profileUrls": [
+        "https://twitter.com/PastureHill?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor",
+        "https://www.facebook.com/pages/Canaqua-Seafoods-Limited/127496907287276",
+        "https://www.facebook.com/GreensOfHaligonia",
+        "https://www.facebook.com/Oultons-Meats-and-the-home-of-Martock-Glen-Farm-Agrizoo-307353822749820/",
+        "https://www.facebook.com/NSWildBlueberries"
+      ],
+      "reason": "supplier_or_partner_profile",
+      "evidence": "The links point to producers or supplier partners named by The Wooden Monkey, not restaurant-owned social profiles.",
+      "observedAt": "2026-08-29",
+      "reviewState": "reviewed_exclusion"
+    },
+    {
+      "restaurantId": "osm-node-5987565464-afrite",
+      "profileUrls": [
+        "https://facebook.com/afriteresto"
+      ],
+      "reason": "conflicting_profile_evidence",
+      "evidence": "The current owned-site profile link points to facebook.com/afriterestaurant; the alternate JSON-LD facebook.com/afriteresto profile is held until the profile conflict is resolved.",
+      "observedAt": "2026-08-29",
+      "reviewState": "reviewed_exclusion"
+    }
+  ]
+}
