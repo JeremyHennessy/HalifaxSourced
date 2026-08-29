@@ -12,6 +12,9 @@ const structuredEvents = Array.isArray(structuredEventPayload?.events) ? structu
 const verifiedSourcePayload = window.HALIFAX_VERIFIED_SOURCE_PAGES ?? null;
 const verifiedMenuSources = Array.isArray(verifiedSourcePayload?.menuSources) ? verifiedSourcePayload.menuSources : [];
 const verifiedSpecialSources = Array.isArray(verifiedSourcePayload?.specialSources) ? verifiedSourcePayload.specialSources : [];
+const reviewedPlaceResolutionPayload = window.HALIFAX_REVIEWED_PLACE_RESOLUTIONS ?? null;
+const reviewedPlaceResolutions = Array.isArray(reviewedPlaceResolutionPayload?.records) ? reviewedPlaceResolutionPayload.records : [];
+const reviewedPlaceResolutionById = new Map(reviewedPlaceResolutions.map((record) => [record.restaurantId, record]));
 
 const appView = document.querySelector("#appView");
 const globalSearch = document.querySelector("#globalSearch");
@@ -140,7 +143,33 @@ function mergeRestaurantLayers() {
     existing.osm ||= osm.osm;
     existing.sources = mergeSources(existing.sources, osm.sources);
   }
-  return merged.map(enrichRestaurant);
+  return merged.map((restaurant) => enrichRestaurant(applyReviewedPlaceResolution(restaurant)));
+}
+
+function applyReviewedPlaceResolution(restaurant) {
+  const resolution = reviewedPlaceResolutionById.get(restaurant?.id);
+  if (!resolution) return restaurant;
+  const source = {
+    label: "Reviewed neighbourhood resolution",
+    type: "business_district_directory",
+    url: resolution.sourceUrl,
+    status: resolution.reviewState,
+    observedAt: resolution.observedAt
+  };
+  restaurant.neighborhood = resolution.neighborhood || restaurant.neighborhood;
+  restaurant.address ||= resolution.address;
+  restaurant.coordinates ||= resolution.coordinates;
+  restaurant.phone ||= resolution.phone;
+  restaurant.openingHours ||= resolution.openingHours;
+  restaurant.website ||= resolution.website;
+  restaurant.socialProfiles = [...(restaurant.socialProfiles || []), ...(resolution.socialProfiles || [])];
+  restaurant.operatingStatus = resolution.operatingStatus || restaurant.operatingStatus;
+  restaurant.reviewedPlaceResolution = resolution;
+  restaurant.sources = mergeSources(restaurant.sources, [
+    source,
+    ...(resolution.menuUrl ? [{ label: "Official menu", type: "menu", url: resolution.menuUrl, status: "verified", observedAt: resolution.observedAt }] : [])
+  ]);
+  return restaurant;
 }
 
 function unique(values) {
@@ -237,7 +266,11 @@ function hasOpening(restaurant, signal) {
 function enrichRestaurant(restaurant) {
   const signal = officialById.get(restaurant.id) || null;
   const inspections = inspectionMatches(restaurant);
-  const candidateMenuLinks = signalLinks(signal, "menu");
+  const reviewedMenuLinks = (restaurant.sources || [])
+    .filter((source) => source.type === "menu" && safeUrl(source.url))
+    .map((source) => ({ label: source.label || "Official menu", url: safeUrl(source.url), verified: source.status === "verified", sourceKind: "reviewed_neighbourhood_resolution" }));
+  const candidateMenuLinks = [...reviewedMenuLinks, ...signalLinks(signal, "menu")]
+    .filter((link, index, all) => all.findIndex((item) => item.url === link.url) === index);
   const candidateSpecialLinks = signalLinks(signal, "specials");
   const menuLinks = preferredSourceLinks(verifiedMenuSourcesByRestaurant, restaurant.id, candidateMenuLinks);
   const specialLinks = preferredSourceLinks(verifiedSpecialSourcesByRestaurant, restaurant.id, candidateSpecialLinks);

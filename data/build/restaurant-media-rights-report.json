@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "generatedAt": "2026-08-29T16:41:21.768Z",
+  "targetCount": 25,
+  "approvedCount": 7,
+  "pendingCount": 18,
+  "policy": "Only Wikimedia Commons files with an explicit reusable licence, documented restaurant-owner submissions, or other explicitly licensed material may move to approved. Ordinary website and social images are never ingested silently.",
+  "approvedRestaurantIds": [
+    "the-narrows",
+    "osm-node-472054712-the-wooden-monkey",
+    "osm-node-5149749022-smitty-s",
+    "osm-way-512985217-look-ho-ho",
+    "osm-way-372779851-sicilian-pizza",
+    "osm-node-26041177-your-father-s-moustache",
+    "osm-way-88879193-henry-house"
+  ],
+  "failures": []
+}

@@ -20,7 +20,7 @@ for (const restaurant of restaurants) {
   restaurant.structuredFacts = facts;
   restaurant.structuredHours = facts?.hours || null;
   restaurant.hasStructuredHours = Boolean(facts?.hours);
-  restaurant.currentHoursState = facts?.hours && typeof restaurantHoursState === "function" ? restaurantHoursState(facts.hours, new Date()) : { state: "unknown", reason: "structured_hours_unavailable" };
+  restaurant.currentHoursState = !isRestaurantActive(restaurant) ? { state: "closed", reason: `lifecycle_${restaurant.operatingStatus || "inactive"}` } : facts?.hours && typeof restaurantHoursState === "function" ? restaurantHoursState(facts.hours, new Date()) : { state: "unknown", reason: "structured_hours_unavailable" };
   restaurant.structuredFeatures = Array.isArray(facts?.features) ? facts.features : [];
   restaurant.structuredPhone = facts?.phone || null;
   restaurant.structuredAddress = facts?.address || null;

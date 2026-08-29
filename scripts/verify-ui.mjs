@@ -293,7 +293,85 @@ await page.locator(".toast").evaluateAll((nodes) => nodes.forEach((node) => node
 await page.screenshot({ path: resolve("artifacts", "ui-check-iphone-kajohn-updates.png"), fullPage: false });
 await page.goto(`${url}/#restaurant/lake-city-cider-dartmouth`, { waitUntil: "networkidle" });
 await page.locator("#detailLinks .source-link-row").first().waitFor();
+const dartmouthResolutionState = await page.evaluate(() => {
+  const restaurant = restaurants.find((item) => item.id === "lake-city-cider-dartmouth");
+  return {
+    address: restaurant?.address || "",
+    neighborhood: restaurant?.neighborhood || "",
+    website: restaurant?.website || "",
+    reviewState: restaurant?.reviewedPlaceResolution?.reviewState || ""
+  };
+});
+if (!/35 Portland Street/i.test(dartmouthResolutionState.address) || dartmouthResolutionState.neighborhood !== "Downtown Dartmouth" || !/lakecitycider\.ca/.test(dartmouthResolutionState.website) || dartmouthResolutionState.reviewState !== "resolved-by-evidence") throw new Error(`Expected the reviewed Downtown Dartmouth overlay in the rendered restaurant model, got ${JSON.stringify(dartmouthResolutionState)}.`);
 await captureIphone("dartmouth-new-place");
+
+await page.goto(`${url}/#restaurant/the-narrows`, { waitUntil: "networkidle" });
+await page.locator(".restaurant-hero-photo").waitFor();
+await page.waitForFunction(() => {
+  const image = document.querySelector(".restaurant-hero-photo");
+  return image instanceof HTMLImageElement && image.complete && image.naturalWidth > 0;
+});
+const attributionState = await page.evaluate(() => ({
+  label: document.querySelector(".media-attribution")?.textContent || "",
+  href: document.querySelector(".media-attribution")?.getAttribute("href") || "",
+  target: document.querySelector(".media-attribution")?.getAttribute("target") || ""
+}));
+if (!/CC BY-SA|Wikimedia Commons/i.test(attributionState.label) || !/commons\.wikimedia\.org/.test(attributionState.href) || attributionState.target !== "_blank") throw new Error(`Expected visible, safely linked licensed-image attribution, got ${JSON.stringify(attributionState)}.`);
+await captureIphone("licensed-attribution");
+
+await page.evaluate(() => {
+  const image = window.HALIFAX_RESTAURANT_MEDIA.records.find((record) => record.restaurantId === "the-narrows");
+  image.__qaOriginalUrl = image.url;
+  image.url = "./assets/restaurants/qa-intentionally-missing.jpg";
+  renderRestaurantDetail("the-narrows");
+});
+await page.waitForFunction(() => !document.querySelector(".restaurant-hero-photo") && !document.querySelector(".restaurant-hero")?.classList.contains("has-permitted-image"));
+await captureIphone("broken-image-fallback");
+await page.evaluate(() => {
+  const image = window.HALIFAX_RESTAURANT_MEDIA.records.find((record) => record.restaurantId === "the-narrows");
+  image.url = image.__qaOriginalUrl;
+  delete image.__qaOriginalUrl;
+});
+
+await page.goto(`${url}/#restaurant/field-guide`, { waitUntil: "networkidle" });
+await page.locator(".closure-notice", { hasText: "Permanently closed" }).waitFor();
+const closedState = await page.evaluate(() => ({
+  badge: document.querySelector(".title-badges")?.textContent || "",
+  notice: document.querySelector(".closure-notice")?.textContent || "",
+  actionText: document.querySelector(".mobile-essential-actions")?.textContent || "",
+  visibleActionLabels: [...document.querySelectorAll(".mobile-essential-actions a,.mobile-essential-actions button")].filter((node) => { const style = getComputedStyle(node); return style.display !== "none" && style.visibility !== "hidden"; }).map((node) => node.textContent.trim())
+}));
+if (!/Permanently closed/i.test(closedState.badge) || !/April 29, 2026/.test(closedState.notice) || /menu|order|reserv/i.test(closedState.actionText)) throw new Error(`Expected an archived Field Guide detail without current commerce actions, got ${JSON.stringify(closedState)}.`);
+if (new Set(closedState.visibleActionLabels).size !== closedState.visibleActionLabels.length) throw new Error(`Duplicate visible mobile actions found on closed detail: ${JSON.stringify(closedState.visibleActionLabels)}.`);
+await captureIphone("closed-field-guide");
+await page.goto(`${url}/#explore`, { waitUntil: "networkidle" });
+await page.locator("#globalSearch").fill("Field Guide");
+await page.locator("#globalSearch").press("Enter");
+await page.waitForURL(/#explore/);
+if (await page.locator(".restaurant-card", { hasText: "Field Guide" }).count()) throw new Error("Closed Field Guide leaked into active discovery results.");
+
+await page.evaluate(() => {
+  const restaurant = restaurants.find((item) => item.id === "highwayman");
+  restaurant.__qaOriginalOperatingStatus = restaurant.operatingStatus;
+  restaurant.__qaOriginalOperatingStatusEvidence = restaurant.operatingStatusEvidence;
+  restaurant.__qaOriginalClosureDate = restaurant.closureDate;
+  restaurant.operatingStatus = "moved";
+  restaurant.closureDate = "2026-08-01";
+  restaurant.operatingStatusEvidence = { sourceUrl: "https://www.highwaymanhfx.com/", claim: "QA fixture: moved to a new location." };
+  renderRestaurantDetail("highwayman");
+});
+await page.locator(".closure-notice", { hasText: "Moved" }).waitFor();
+if (!/Moved/.test(await page.locator(".title-badges").innerText())) throw new Error("Moved lifecycle fixture did not render an archived status badge.");
+await captureIphone("moved-restaurant");
+await page.evaluate(() => {
+  const restaurant = restaurants.find((item) => item.id === "highwayman");
+  restaurant.operatingStatus = restaurant.__qaOriginalOperatingStatus;
+  restaurant.operatingStatusEvidence = restaurant.__qaOriginalOperatingStatusEvidence;
+  restaurant.closureDate = restaurant.__qaOriginalClosureDate;
+  delete restaurant.__qaOriginalOperatingStatus;
+  delete restaurant.__qaOriginalOperatingStatusEvidence;
+  delete restaurant.__qaOriginalClosureDate;
+});
 await page.goto(`${url}/#home`, { waitUntil: "networkidle" });
 await page.waitForTimeout(150);
 const mobileState = await page.evaluate(() => ({
@@ -353,9 +431,11 @@ const detailState = await page.evaluate(() => ({
   overviewVisible: getComputedStyle(document.querySelector(".mobile-detail-overview")).display !== "none",
   actionCount: document.querySelectorAll(".mobile-essential-actions a,.mobile-essential-actions button").length,
   fixedActionBars: [...document.querySelectorAll(".mobile-detail-actions")].filter((node) => getComputedStyle(node).position === "fixed" && getComputedStyle(node).display !== "none").length,
-  heroHeight: Math.round(document.querySelector(".restaurant-hero")?.getBoundingClientRect().height || 0)
+  heroHeight: Math.round(document.querySelector(".restaurant-hero")?.getBoundingClientRect().height || 0),
+  visibleActionLabels: [...document.querySelectorAll(".hero-actions a,.hero-actions button,.mobile-essential-actions a,.mobile-essential-actions button,.mobile-detail-actions a,.mobile-detail-actions button")].filter((node) => { const style = getComputedStyle(node); const box = node.getBoundingClientRect(); return style.display !== "none" && style.visibility !== "hidden" && box.width > 0 && box.height > 0; }).map((node) => node.textContent.trim().replace(/\s+/g, " "))
 }));
 if (detailState.overflow > 2 || !detailState.overviewVisible || detailState.actionCount < 1 || detailState.fixedActionBars !== 0 || detailState.heroHeight > 390) throw new Error(`Expected usable mobile restaurant hierarchy without overlapping fixed actions, got ${JSON.stringify(detailState)}.`);
+if (new Set(detailState.visibleActionLabels).size !== detailState.visibleActionLabels.length) throw new Error(`Duplicate visible mobile detail actions found: ${JSON.stringify(detailState.visibleActionLabels)}.`);
 if (await page.locator("#detailLinks .source-link-row").count() < 1) throw new Error("Expected source-backed social links in the mobile detail evidence.");
 await captureIphone("detail");
 
@@ -429,7 +509,7 @@ if (!(await page.locator(".map-split").evaluate((node) => node.classList.contain
 await captureIphone("map-list");
 
 await page.setViewportSize({ width: 390, height: 667 });
-await page.goto(`${url}/#restaurant/highwayman`, { waitUntil: "networkidle" });
+await page.goto(`${url}/#restaurant/field-guide`, { waitUntil: "networkidle" });
 const shortPhoneState = await page.evaluate(() => ({
   overflow: document.documentElement.scrollWidth - document.documentElement.clientWidth,
   heroHeight: Math.round(document.querySelector(".restaurant-hero")?.getBoundingClientRect().height || 0),
