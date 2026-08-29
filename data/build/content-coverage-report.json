@@ -1,8 +1,8 @@
 {
   "version": 1,
-  "generatedAt": "2026-08-29T19:13:30.413Z",
-  "sourceCommitSha": "ceb7428125ea428015000d4e528b4315d25f5bcc",
-  "baselineCommitHint": "ceb7428125ea428015000d4e528b4315d25f5bcc",
+  "generatedAt": "2026-08-29T20:08:40.123Z",
+  "sourceCommitSha": "9ef05bd782c1bedd5d68f282b214be2eafb42121",
+  "baselineCommitHint": "9ef05bd782c1bedd5d68f282b214be2eafb42121",
   "definitions": {
     "canonicalPlaces": "Current user-facing merge of catalog restaurants plus reviewed discovery records, matching the app's existing name-based discovery merge behavior.",
     "verifiedOfficialWebsite": "Official-site fetch returned a successful HTTP status or the first-party discovery layer successfully fetched the restaurant-owned site.",
@@ -99,7 +99,7 @@
       "ordering": 74
     },
     "structuredSpecialLayer": {
-      "generatedAt": "2026-08-29T19:13:28.501Z",
+      "generatedAt": "2026-08-29T20:08:38.394Z",
       "count": 68,
       "verifiedCurrent": 49,
       "recurringVerify": 9,
@@ -1166,21 +1166,21 @@
       ]
     },
     "reconciledFromAcceptedStructuredLayers": true,
-    "reconciledAt": "2026-08-29T19:13:30.412Z"
+    "reconciledAt": "2026-08-29T20:08:40.123Z"
   },
   "eventCoverage": {
-    "currentCityEvents": 184,
+    "currentCityEvents": 180,
     "allStoredCityEvents": 187,
     "cityEventSources": 15,
     "bySource": {
       "Tourism Nova Scotia Events": 23,
       "Halifax Public Libraries": 3,
       "Alderney Landing": 1,
-      "Alderney Gate Public Library": 7,
-      "Woodlawn Public Library": 6,
       "Halifax Convention Centre": 1,
       "The Carleton": 8,
       "Bedford Public Library": 6,
+      "Woodlawn Public Library": 4,
+      "Alderney Gate Public Library": 5,
       "Scotiabank Centre": 31,
       "Light House Arts Centre": 19,
       "HFX Wanderers 2026 Home Schedule": 5,
@@ -1190,10 +1190,10 @@
       "Neptune Theatre": 3
     },
     "byCategory": {
-      "Arts": 49,
+      "Arts": 46,
       "Comedy": 4,
       "Sports": 61,
-      "Community": 30,
+      "Community": 26,
       "Festivals": 10,
       "Music": 57,
       "Outdoor": 1,
@@ -1202,20 +1202,20 @@
     },
     "byMunicipality": {
       "Halifax": 164,
-      "Dartmouth": 14,
+      "Dartmouth": 10,
       "Bedford": 6
     },
     "withVenueRestaurantNameMatch": 8,
     "withCoordinates": 0,
-    "withTicketLink": 184,
+    "withTicketLink": 180,
     "withPrice": 11,
     "freeEvents": 0,
     "duplicateEventCount": 0,
     "structuredRestaurantEvents": 19,
-    "structuredUpcomingRestaurantEvents": 17,
+    "structuredUpcomingRestaurantEvents": 16,
     "canonicalRestaurantsWithStructuredUpcomingEvents": 2,
-    "upcomingStructuredRestaurantEventRecords": 17,
-    "expiredStructuredRestaurantEvents": 2,
+    "upcomingStructuredRestaurantEventRecords": 16,
+    "expiredStructuredRestaurantEvents": 3,
     "next7Days": 15,
     "next30Days": 49
   },
@@ -1230,7 +1230,7 @@
     "firstPartyWebsiteDiscovery": 75,
     "verifiedSourcePages": 15,
     "structuredRestaurantEvents": 12,
-    "websiteFeeds": 9,
+    "websiteFeeds": 4,
     "socialApis": 3,
     "cityEventSources": 0,
     "openingWatchSources": 0,

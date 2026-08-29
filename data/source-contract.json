@@ -128,6 +128,14 @@
     "confidence": "official_source_signal",
     "reviewState": "source_signal | needs_date_review"
   },
+  "websiteFeedReviewExclusion": {
+    "restaurantId": "Restaurant id from catalog",
+    "feedUrls": "Exact verified feed URLs excluded from consumer publication",
+    "reason": "compromised_off_topic_feed | shared_brand_nonlocal_feed",
+    "evidence": "Short human-reviewed explanation",
+    "observedAt": "Review date",
+    "reviewState": "reviewed_exclusion"
+  },
   "socialSignal": {
     "restaurantId": "Restaurant id from catalog",
     "platform": "facebook | instagram",
