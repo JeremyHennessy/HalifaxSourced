@@ -59,7 +59,6 @@ function bindCommonActions() {
     focusMapResult(row.dataset.mapResultId);
   }));
   document.querySelector("[data-action='all-cuisines']")?.addEventListener("click", () => navigate("#explore"));
-  document.querySelector("[data-newsletter-form]")?.addEventListener("submit", (event) => { event.preventDefault(); toast("Newsletter service is not connected yet."); });
 }
 
 function initMiniMap(items, element = document.querySelector("#exploreMiniMap")) {
@@ -176,9 +175,30 @@ globalSearch?.addEventListener("search", () => {
 });
 
 document.querySelector("#savedButton")?.addEventListener("click", () => navigate("#saved"));
-document.querySelector("#mobileSaved")?.addEventListener("click", () => navigate("#saved"));
-document.querySelector("#profileButton")?.addEventListener("click", () => toast("Profiles are not connected yet."));
-document.querySelector("#mobileProfile")?.addEventListener("click", () => toast("Profiles are not connected yet."));
+
+const mobileMoreButton = document.querySelector("#mobileMore");
+const mobileMoreSheet = document.querySelector("[data-mobile-more-sheet]");
+const mobileMoreBackdrop = document.querySelector("[data-mobile-more-backdrop]");
+function closeMobileMore() {
+  mobileMoreSheet?.classList.remove("is-open");
+  mobileMoreBackdrop?.classList.remove("is-open");
+  mobileMoreSheet?.setAttribute("aria-hidden", "true");
+  mobileMoreButton?.setAttribute("aria-expanded", "false");
+  document.body.classList.remove("mobile-more-open");
+}
+function openMobileMore() {
+  mobileMoreSheet?.classList.add("is-open");
+  mobileMoreBackdrop?.classList.add("is-open");
+  mobileMoreSheet?.setAttribute("aria-hidden", "false");
+  mobileMoreButton?.setAttribute("aria-expanded", "true");
+  document.body.classList.add("mobile-more-open");
+  requestAnimationFrame(() => mobileMoreSheet?.querySelector("a")?.focus());
+}
+mobileMoreButton?.addEventListener("click", () => mobileMoreButton.getAttribute("aria-expanded") === "true" ? closeMobileMore() : openMobileMore());
+mobileMoreBackdrop?.addEventListener("click", closeMobileMore);
+document.querySelector("[data-mobile-more-close]")?.addEventListener("click", closeMobileMore);
+mobileMoreSheet?.addEventListener("click", (event) => { if (event.target.closest("a")) closeMobileMore(); });
+mobileMoreSheet?.addEventListener("keydown", (event) => { if (event.key === "Escape") { closeMobileMore(); mobileMoreButton?.focus(); } });
 
 document.querySelectorAll("[data-neighbourhood-link]").forEach((button) => button.addEventListener("click", () => { state.neighbourhood = button.dataset.neighbourhoodLink; navigate("#explore"); }));
 

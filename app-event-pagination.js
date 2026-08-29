@@ -298,6 +298,7 @@ function eventFilterSelect(label, id, selected, options) {
 }
 
 renderCityEvents = function renderCityEventsWithCapabilities(allItems) {
+  document.body.classList.remove("event-filter-drawer-open");
   syncCityEventStateFromRoute();
   const categories = cityEventCategories(allItems);
   const cities = cityEventCities(allItems);
@@ -339,8 +340,13 @@ renderCityEvents = function renderCityEventsWithCapabilities(allItems) {
     </section>
     <section class="page-shell two-column-page event-discovery-layout">
       <div>
-        <section class="event-filter-panel" aria-label="Event filters">
-          <div class="event-filter-heading"><div><span class="eyebrow">Filter events</span><h2>Find exactly what's on</h2></div><button class="text-link" type="button" data-event-clear>Clear all</button></div>
+        <div class="event-mobile-filter-bar">
+          <div><strong>${items.length.toLocaleString()} events</strong>${activeLabels.length ? `<span>${activeLabels.length} filter${activeLabels.length === 1 ? "" : "s"} active</span>` : `<span>All upcoming events</span>`}</div>
+          <button class="button secondary" type="button" data-event-filter-open aria-expanded="false"><span aria-hidden="true">☷</span> Filters${activeLabels.length ? ` (${activeLabels.length})` : ""}</button>
+        </div>
+        <div class="event-filter-backdrop" data-event-filter-backdrop></div>
+        <section class="event-filter-panel" aria-label="Event filters" data-event-filter-panel aria-hidden="${window.matchMedia("(max-width: 640px)").matches ? "true" : "false"}">
+          <div class="event-filter-heading"><div><span class="eyebrow">Filter events</span><h2>Find exactly what's on</h2></div><div class="event-filter-heading-actions"><button class="text-link" type="button" data-event-clear>Clear all</button><button class="event-filter-close" type="button" data-event-filter-close aria-label="Close event filters">×</button></div></div>
           <form class="event-filter-search" data-event-search-form role="search">
             <label class="sr-only" for="eventSearchInput">Search events</label>
             <input id="eventSearchInput" type="search" value="${escapeHtml(cityEventState.query)}" placeholder="Search event, venue, category, address or organizer" autocomplete="off" />
@@ -363,6 +369,7 @@ renderCityEvents = function renderCityEventsWithCapabilities(allItems) {
             <label class="event-filter-toggle"><input type="checkbox" id="eventSavedFilter" ${cityEventState.savedOnly ? "checked" : ""}/><span>Saved events only <small>${savedCityEvents.size}</small></span></label>
           </div>
           ${activeLabels.length ? `<div class="event-active-filters"><strong>${activeLabels.length} active</strong>${activeLabels.map((label) => `<span>${escapeHtml(label)}</span>`).join("")}</div>` : ""}
+          <button class="button primary event-filter-done" type="button" data-event-filter-close>Show ${items.length.toLocaleString()} events</button>
         </section>
 
         <div class="section-heading no-top event-results-heading"><div><h2>${cityEventState.category === "All" ? "Upcoming events" : `${escapeHtml(cityEventState.category)} events`}</h2><p>Every listing keeps its source. Confirm last-minute schedule, ticket, price and availability changes with the linked organizer or venue.</p></div><span class="editorial-count" data-event-result-count>Showing ${visibleItems.length} of ${items.length} matching events</span></div>
@@ -400,6 +407,29 @@ cityEventCard = function cityEventCardWithActions(event) {
 };
 
 function bindExpandedCityEventActions() {
+  const filterPanel = document.querySelector("[data-event-filter-panel]");
+  const filterBackdrop = document.querySelector("[data-event-filter-backdrop]");
+  const filterOpen = document.querySelector("[data-event-filter-open]");
+  const closeEventFilters = () => {
+    filterPanel?.classList.remove("is-open");
+    filterBackdrop?.classList.remove("is-open");
+    filterPanel?.setAttribute("aria-hidden", "true");
+    filterOpen?.setAttribute("aria-expanded", "false");
+    document.body.classList.remove("event-filter-drawer-open");
+  };
+  const openEventFilters = () => {
+    filterPanel?.classList.add("is-open");
+    filterBackdrop?.classList.add("is-open");
+    filterPanel?.setAttribute("aria-hidden", "false");
+    filterOpen?.setAttribute("aria-expanded", "true");
+    document.body.classList.add("event-filter-drawer-open");
+    requestAnimationFrame(() => filterPanel?.querySelector("input,button,select")?.focus());
+  };
+  filterOpen?.addEventListener("click", openEventFilters);
+  filterBackdrop?.addEventListener("click", closeEventFilters);
+  document.querySelectorAll("[data-event-filter-close]").forEach((button) => button.addEventListener("click", closeEventFilters));
+  filterPanel?.addEventListener("keydown", (event) => { if (event.key === "Escape") { closeEventFilters(); filterOpen?.focus(); } });
+
   for (const button of document.querySelectorAll("[data-event-category]")) {
     button.addEventListener("click", () => {
       cityEventState.category = button.dataset.eventCategory || "All";

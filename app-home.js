@@ -43,7 +43,7 @@ function renderHome() {
       <div class="restaurant-carousel">${featured.map((restaurant, index) => restaurantCard(restaurant, { index, compact: true })).join("")}</div>
     </section>
 
-    <section class="page-shell triptych section-block">
+    <section class="page-shell triptych section-block home-discovery-panel" aria-label="Latest Halifax discovery">
       <div class="panel-card">
         ${miniHeader("What's on next", "#events")}
         <div class="lead-list">${cityEventItems.length ? cityEventItems.map(cityEventLeadRow).join("") : emptyLead("City-wide event listings are refreshing.")}</div>
@@ -63,13 +63,6 @@ function renderHome() {
       <div class="neighbourhood-grid">${neighbourhoodCards.map(neighbourhoodTile).join("")}</div>
     </section>
 
-    <section class="newsletter page-shell">
-      <div>
-        <span class="newsletter-icon" aria-hidden="true">✉</span>
-        <div><h2>Get the best of Halifax, delivered</h2><p>Newsletter signup is a visual prototype until an email service is connected.</p></div>
-      </div>
-      <form data-newsletter-form><input type="email" placeholder="Enter your email address" aria-label="Email address" required /><button class="button primary" type="submit">Subscribe</button></form>
-    </section>
   `;
   bindCommonActions();
 }

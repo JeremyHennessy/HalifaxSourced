@@ -286,6 +286,31 @@ const mobileState = await page.evaluate(() => ({
 if (mobileState.overflow > 2 || !mobileState.bottomNavVisible || mobileState.heroHeight < 500) throw new Error(`Expected polished mobile layout, got ${JSON.stringify(mobileState)}.`);
 if (await page.locator(".source-coverage-strip").count() !== 1) throw new Error("Expected fresh source coverage on mobile Home.");
 await captureIphone("home");
+const mobileMore = page.locator("#mobileMore");
+await mobileMore.click();
+const moreState = await page.evaluate(() => ({
+  expanded: document.querySelector("#mobileMore")?.getAttribute("aria-expanded"),
+  open: document.querySelector("[data-mobile-more-sheet]")?.classList.contains("is-open"),
+  destinations: [...document.querySelectorAll("[data-mobile-more-sheet] a")].map((link) => link.getAttribute("href"))
+}));
+if (moreState.expanded !== "true" || !moreState.open || !["#specials", "#menus", "#saved"].every((href) => moreState.destinations.includes(href))) throw new Error(`Expected complete mobile More navigation, got ${JSON.stringify(moreState)}.`);
+await captureIphone("more-navigation");
+await page.locator("[data-mobile-more-close]").click();
+await page.locator("[data-mobile-more-sheet]").waitFor({ state: "hidden" });
+const closedMoreState = await page.evaluate(() => ({
+  expanded: document.querySelector("#mobileMore")?.getAttribute("aria-expanded"),
+  open: document.querySelector("[data-mobile-more-sheet]")?.classList.contains("is-open"),
+  visibility: getComputedStyle(document.querySelector("[data-mobile-more-sheet]")).visibility
+}));
+if (closedMoreState.expanded !== "false" || closedMoreState.open || closedMoreState.visibility !== "hidden") throw new Error(`Expected mobile More navigation to close completely, got ${JSON.stringify(closedMoreState)}.`);
+
+await page.locator("#globalSearch").fill("Highwayman");
+await page.locator("#globalSearch").press("Enter");
+await page.waitForURL(/#explore/);
+if (await page.locator(".restaurant-card", { hasText: "Highwayman" }).count() < 1) throw new Error("Expected mobile global search results for Highwayman.");
+await captureIphone("search-results");
+await page.locator("#globalSearch").fill("");
+await page.locator("#globalSearch").press("Enter");
 
 await page.goto(`${url}/#explore`, { waitUntil: "networkidle" });
 const mobileFilterToggle = page.locator("[data-open-filters]");
@@ -307,15 +332,22 @@ await page.goto(`${url}/${detailHref}`, { waitUntil: "networkidle" });
 await page.locator(".restaurant-hero").waitFor();
 const detailState = await page.evaluate(() => ({
   overflow: document.documentElement.scrollWidth - document.documentElement.clientWidth,
-  stickyActions: getComputedStyle(document.querySelector(".mobile-detail-actions")).display !== "none",
-  actionCount: document.querySelectorAll(".mobile-detail-actions a").length
+  overviewVisible: getComputedStyle(document.querySelector(".mobile-detail-overview")).display !== "none",
+  actionCount: document.querySelectorAll(".mobile-essential-actions a,.mobile-essential-actions button").length,
+  fixedActionBars: [...document.querySelectorAll(".mobile-detail-actions")].filter((node) => getComputedStyle(node).position === "fixed" && getComputedStyle(node).display !== "none").length,
+  heroHeight: Math.round(document.querySelector(".restaurant-hero")?.getBoundingClientRect().height || 0)
 }));
-if (detailState.overflow > 2 || !detailState.stickyActions || detailState.actionCount < 1) throw new Error(`Expected usable mobile restaurant actions, got ${JSON.stringify(detailState)}.`);
+if (detailState.overflow > 2 || !detailState.overviewVisible || detailState.actionCount < 1 || detailState.fixedActionBars !== 0 || detailState.heroHeight > 390) throw new Error(`Expected usable mobile restaurant hierarchy without overlapping fixed actions, got ${JSON.stringify(detailState)}.`);
 if (await page.locator("#detailLinks .source-link-row").count() < 1) throw new Error("Expected source-backed social links in the mobile detail evidence.");
 await captureIphone("detail");
 
 await page.goto(`${url}/#events`, { waitUntil: "networkidle" });
-await page.locator(".event-filter-panel").waitFor();
+await page.locator(".event-filter-panel").waitFor({ state: "attached" });
+const eventFilterOpen = page.locator("[data-event-filter-open]");
+await eventFilterOpen.click();
+if (await eventFilterOpen.getAttribute("aria-expanded") !== "true" || !(await page.locator("[data-event-filter-panel]").evaluate((node) => node.classList.contains("is-open")))) throw new Error("Expected mobile event filter drawer to open.");
+await captureIphone("events-filter-drawer");
+await page.locator("[data-event-filter-close]").last().click();
 const mobileEventState = await page.evaluate(() => ({
   overflow: document.documentElement.scrollWidth - document.documentElement.clientWidth,
   filterGridWidth: Math.round(document.querySelector(".event-filter-grid")?.getBoundingClientRect().width || 0),
@@ -332,6 +364,70 @@ for (const routeName of ["specials", "map"]) {
   if (routeState.overflow > 2) throw new Error(`Expected ${routeName} to fit the iPhone viewport, got ${JSON.stringify(routeState)}.`);
   await captureIphone(routeName);
 }
+
+await page.goto(`${url}/#specials`, { waitUntil: "networkidle" });
+const specialsState = await page.evaluate(() => ({
+  verifiedSections: document.querySelectorAll(".special-card.is-verified").length,
+  leadSections: document.querySelectorAll(".special-card.is-lead").length,
+  visible: document.querySelectorAll(".special-card").length,
+  controls: document.querySelectorAll("[data-specials-filter-form] input,[data-specials-filter-form] select").length
+}));
+if (specialsState.controls < 3 || specialsState.visible < 2 || specialsState.visible > 12 || specialsState.verifiedSections < 1 || specialsState.leadSections < 1) throw new Error(`Expected separated, paginated mobile specials discovery, got ${JSON.stringify(specialsState)}.`);
+await page.locator("#specialsKind").selectOption("leads");
+await page.locator("[data-specials-filter-form] .button.primary").click();
+if (await page.locator(".special-card.is-verified").count()) throw new Error("Official-source lead filter rendered verified-special cards.");
+
+await page.goto(`${url}/#menus`, { waitUntil: "networkidle" });
+const menuState = await page.evaluate(() => ({
+  overflow: document.documentElement.scrollWidth - document.documentElement.clientWidth,
+  visible: document.querySelectorAll(".restaurant-card").length,
+  controls: document.querySelectorAll("[data-menu-search] input,[data-menu-search] select").length,
+  loadMore: Boolean(document.querySelector("[data-menus-more]"))
+}));
+if (menuState.overflow > 2 || menuState.controls < 3 || menuState.visible < 1 || menuState.visible > 18 || !menuState.loadMore) throw new Error(`Expected filtered, paginated mobile menus, got ${JSON.stringify(menuState)}.`);
+await captureIphone("menus");
+const menuFirstName = await page.locator(".restaurant-card h3").first().innerText();
+await page.locator("[data-menu-search] input").fill(menuFirstName);
+await page.locator("[data-menu-search]").press("Enter");
+if (await page.locator(".restaurant-card").count() < 1) throw new Error("Exact mobile menu search returned no results.");
+await captureIphone("menu-search");
+
+await page.goto(`${url}/#saved`, { waitUntil: "networkidle" });
+if (await page.locator(".empty-state").count() !== 1) throw new Error("Expected mobile Saved empty state before saving a place.");
+await captureIphone("saved-empty");
+await page.goto(`${url}/#explore`, { waitUntil: "networkidle" });
+const saveForQa = page.locator("[data-save-id]").first();
+await saveForQa.click();
+await page.goto(`${url}/#saved`, { waitUntil: "networkidle" });
+if (await page.locator(".restaurant-card").count() !== 1) throw new Error("Expected one populated Saved card after saving from Explore.");
+await captureIphone("saved-populated");
+
+await page.goto(`${url}/#map`, { waitUntil: "networkidle" });
+await page.waitForTimeout(800);
+const mapModeState = await page.evaluate(() => ({ buttons: document.querySelectorAll("[data-map-mode]").length, mapVisible: getComputedStyle(document.querySelector("#mainMap")).display !== "none" }));
+if (mapModeState.buttons !== 2 || !mapModeState.mapVisible) throw new Error(`Expected explicit mobile Map/List modes, got ${JSON.stringify(mapModeState)}.`);
+await page.locator('[data-map-mode="list"]').click();
+if (!(await page.locator(".map-split").evaluate((node) => node.classList.contains("mode-list")))) throw new Error("Mobile map did not switch to List mode.");
+await captureIphone("map-list");
+
+await page.setViewportSize({ width: 390, height: 667 });
+await page.goto(`${url}/#restaurant/highwayman`, { waitUntil: "networkidle" });
+const shortPhoneState = await page.evaluate(() => ({
+  overflow: document.documentElement.scrollWidth - document.documentElement.clientWidth,
+  heroHeight: Math.round(document.querySelector(".restaurant-hero")?.getBoundingClientRect().height || 0),
+  tabbarBottom: Math.round(document.querySelector(".mobile-tabbar")?.getBoundingClientRect().bottom || 0),
+  viewportHeight: window.innerHeight,
+  fixedDetailActions: [...document.querySelectorAll(".mobile-detail-actions")].some((node) => getComputedStyle(node).display !== "none")
+}));
+if (shortPhoneState.overflow > 2 || shortPhoneState.heroHeight > 320 || Math.abs(shortPhoneState.tabbarBottom - shortPhoneState.viewportHeight) > 2 || shortPhoneState.fixedDetailActions) throw new Error(`Expected usable short-height iPhone layout, got ${JSON.stringify(shortPhoneState)}.`);
+await captureIphone("short-height-detail");
+await page.setViewportSize({ width: 390, height: 844 });
+
+const externalTargetState = await page.evaluate(() => ({
+  external: [...document.querySelectorAll('main a[href^="http"]')].length,
+  unsafeTargets: [...document.querySelectorAll('main a[href^="http"]')].filter((link) => link.target !== "_blank" || !String(link.rel).includes("noreferrer")).length
+}));
+if (!externalTargetState.external || externalTargetState.unsafeTargets) throw new Error(`Expected safe external-link targets, got ${JSON.stringify(externalTargetState)}.`);
 
 await page.goto(`${url}/#home`, { waitUntil: "networkidle" });
 await page.screenshot({ path: resolve("artifacts", "ui-check-mobile.png"), fullPage: true });
