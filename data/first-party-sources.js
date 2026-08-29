@@ -1,6 +1,6 @@
 window.HALIFAX_FIRST_PARTY_SOURCES = {
   "version": 3,
-  "generatedAt": "2026-08-29T02:33:28.415Z",
+  "generatedAt": "2026-08-29T04:13:27.745Z",
   "platformRegistryVersion": 1,
   "checkedWebsites": 215,
   "failedWebsites": 75,
@@ -8,10 +8,10 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
   "concurrency": 10,
   "ownedPageLimit": 3,
   "linkHubLimit": 2,
-  "profileCount": 345,
+  "profileCount": 349,
   "platformCounts": {
-    "instagram": 130,
-    "facebook": 116,
+    "instagram": 132,
+    "facebook": 118,
     "x": 64,
     "youtube": 12,
     "tiktok": 12,
@@ -21,11 +21,11 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
   },
   "linkHubCount": 0,
   "linkHubCounts": {},
-  "relatedLinkCount": 621,
+  "relatedLinkCount": 623,
   "relatedKindCounts": {
-    "menu": 279,
+    "menu": 280,
     "reservations": 113,
-    "ordering": 170,
+    "ordering": 171,
     "events": 54,
     "newsletter": 4,
     "tickets": 1
@@ -5900,6 +5900,18 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "associationBasis": "linked_from_official_website",
           "observedAt": "2026-08-29T02:32:40.844Z",
           "lastVerifiedAt": "2026-08-29T02:32:40.844Z",
+          "reviewState": "verified_link",
+          "confidence": "authoritative",
+          "status": "active"
+        },
+        {
+          "kind": "ordering",
+          "url": "https://order.online/store/india-paradise-halifax-downtown-30667832?pickup=true",
+          "label": "Order Now",
+          "discoveredFrom": "https://www.indiaparadise.ca/",
+          "associationBasis": "linked_from_official_website",
+          "observedAt": "2026-08-29T04:12:40.457Z",
+          "lastVerifiedAt": "2026-08-29T04:12:40.457Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -21632,6 +21644,133 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       ],
       "sourceKind": "official_website_discovery",
       "reviewState": "verified"
+    },
+    {
+      "restaurantId": "darty-brewing-dartmouth",
+      "name": "Darty Brewing Co.",
+      "website": "https://www.dartybrewing.ca/",
+      "resolvedUrl": "https://www.dartybrewing.ca/",
+      "observedAt": "2026-08-29T04:13:05.673Z",
+      "lastVerifiedAt": "2026-08-29T04:13:05.673Z",
+      "scannedOwnedPages": [
+        "https://www.dartybrewing.ca/",
+        "https://www.dartybrewing.ca/pages/about-us",
+        "https://www.dartybrewing.ca/pages/contact"
+      ],
+      "socialProfiles": [
+        {
+          "platform": "facebook",
+          "platformKind": "social",
+          "handle": "61567717656248",
+          "url": "https://www.facebook.com/profile.php?id=61567717656248",
+          "profileUrl": "https://www.facebook.com/profile.php?id=61567717656248",
+          "label": "facebook",
+          "locationSpecific": false,
+          "sharedBrandProfile": false,
+          "discoveredFrom": "https://www.dartybrewing.ca/",
+          "associationBasis": "linked_from_official_website",
+          "observedAt": "2026-08-29T04:13:05.673Z",
+          "lastVerifiedAt": "2026-08-29T04:13:05.673Z",
+          "reviewState": "verified_link",
+          "confidence": "authoritative",
+          "status": "active"
+        },
+        {
+          "platform": "instagram",
+          "platformKind": "social",
+          "handle": "dartybrewing",
+          "url": "https://www.instagram.com/dartybrewing/",
+          "profileUrl": "https://www.instagram.com/dartybrewing/",
+          "label": "instagram",
+          "locationSpecific": false,
+          "sharedBrandProfile": false,
+          "discoveredFrom": "https://www.dartybrewing.ca/",
+          "associationBasis": "linked_from_official_website",
+          "observedAt": "2026-08-29T04:13:05.673Z",
+          "lastVerifiedAt": "2026-08-29T04:13:05.673Z",
+          "reviewState": "verified_link",
+          "confidence": "authoritative",
+          "status": "active"
+        }
+      ],
+      "linkHubs": [],
+      "relatedLinks": [],
+      "feeds": [],
+      "sitemaps": [
+        "https://www.dartybrewing.ca/sitemap.xml"
+      ],
+      "sourceKind": "official_website_discovery",
+      "reviewState": "verified"
+    },
+    {
+      "restaurantId": "marias-pantry-dartmouth",
+      "name": "Maria's Pantry",
+      "website": "https://www.mariaspantry.ca/",
+      "resolvedUrl": "https://www.mariaspantry.ca/",
+      "observedAt": "2026-08-29T04:13:05.712Z",
+      "lastVerifiedAt": "2026-08-29T04:13:05.712Z",
+      "scannedOwnedPages": [
+        "https://www.mariaspantry.ca/",
+        "https://www.mariaspantry.ca/",
+        "https://www.mariaspantry.ca/"
+      ],
+      "socialProfiles": [
+        {
+          "platform": "facebook",
+          "platformKind": "social",
+          "handle": "mariaspantryhfx",
+          "url": "https://www.facebook.com/mariaspantryhfx/",
+          "profileUrl": "https://www.facebook.com/mariaspantryhfx/",
+          "label": "Facebook",
+          "locationSpecific": false,
+          "sharedBrandProfile": false,
+          "discoveredFrom": "https://www.mariaspantry.ca/",
+          "associationBasis": "linked_from_official_website",
+          "observedAt": "2026-08-29T04:13:05.712Z",
+          "lastVerifiedAt": "2026-08-29T04:13:05.712Z",
+          "reviewState": "verified_link",
+          "confidence": "authoritative",
+          "status": "active"
+        },
+        {
+          "platform": "instagram",
+          "platformKind": "social",
+          "handle": "mariaspantryhfx",
+          "url": "https://www.instagram.com/mariaspantryhfx/?hl=en",
+          "profileUrl": "https://www.instagram.com/mariaspantryhfx/?hl=en",
+          "label": "Instagram",
+          "locationSpecific": false,
+          "sharedBrandProfile": false,
+          "discoveredFrom": "https://www.mariaspantry.ca/",
+          "associationBasis": "linked_from_official_website",
+          "observedAt": "2026-08-29T04:13:05.712Z",
+          "lastVerifiedAt": "2026-08-29T04:13:05.712Z",
+          "reviewState": "verified_link",
+          "confidence": "authoritative",
+          "status": "active"
+        }
+      ],
+      "linkHubs": [],
+      "relatedLinks": [
+        {
+          "kind": "menu",
+          "url": "https://www.mariaspantry.ca/#menu",
+          "label": "Menu",
+          "discoveredFrom": "https://www.mariaspantry.ca/",
+          "associationBasis": "linked_from_official_website",
+          "observedAt": "2026-08-29T04:13:05.712Z",
+          "lastVerifiedAt": "2026-08-29T04:13:05.712Z",
+          "reviewState": "verified_link",
+          "confidence": "authoritative",
+          "status": "active"
+        }
+      ],
+      "feeds": [],
+      "sitemaps": [
+        "https://www.mariaspantry.ca/sitemap.xml"
+      ],
+      "sourceKind": "official_website_discovery",
+      "reviewState": "verified"
     }
   ],
   "carryForward": {
@@ -21645,8 +21784,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
     "previousProfilesRejectedByCurrentRegistry": 4,
     "appliedAt": "2026-08-29T02:33:28.415Z"
   },
-  "facebookCount": 116,
-  "instagramCount": 130,
+  "facebookCount": 118,
+  "instagramCount": 132,
   "sanitization": {
     "appliedAt": "2026-08-29T02:33:28.609Z",
     "registryVersion": 1,
@@ -21658,5 +21797,20 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
     "duplicateLinkHubsRemoved": 0,
     "removedInvalidRelatedLinks": 0,
     "duplicateRelatedLinksRemoved": 26
+  },
+  "selectiveReview": {
+    "sourceRunId": 33233032764,
+    "sourceArtifactId": 9709147016,
+    "reviewedAt": "2026-08-29T04:13:27.745Z",
+    "accepted": [
+      "darty-brewing-dartmouth",
+      "marias-pantry-dartmouth",
+      "osm-node-13141377001-india-paradise:ordering"
+    ],
+    "rejected": [
+      "noggins-cross-location-social-associations",
+      "noggins-oembed-feeds",
+      "mexis-oembed-feeds"
+    ]
   }
 };
