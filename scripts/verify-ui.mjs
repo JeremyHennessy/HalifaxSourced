@@ -237,6 +237,17 @@ await page.waitForFunction(() => {
 });
 await page.locator(".toast").evaluateAll((nodes) => nodes.forEach((node) => node.remove()));
 await page.screenshot({ path: resolve("artifacts", "ui-check-iphone-official-update-media.png"), fullPage: false });
+await page.goto(`${url}/#restaurant/osm-node-7139174640-kajohn-thai`, { waitUntil: "networkidle" });
+if (await page.locator("#detailUpdates .official-update-card").count() !== 2) throw new Error("Expected two reviewed Kajohn Thai official updates.");
+if (await page.locator("#detailUpdates .official-update-media").count() !== 2) throw new Error("Expected retained media on both reviewed Kajohn Thai updates.");
+const kajohnMedia = page.locator("#detailUpdates .official-update-media").first();
+await kajohnMedia.scrollIntoViewIfNeeded();
+await page.waitForFunction(() => {
+  const image = document.querySelector("#detailUpdates .official-update-media");
+  return image instanceof HTMLImageElement && image.complete && image.naturalWidth > 0;
+});
+await page.locator(".toast").evaluateAll((nodes) => nodes.forEach((node) => node.remove()));
+await page.screenshot({ path: resolve("artifacts", "ui-check-iphone-kajohn-updates.png"), fullPage: false });
 await page.goto(`${url}/#restaurant/marias-pantry-dartmouth`, { waitUntil: "networkidle" });
 await page.locator("#detailLinks .source-link-row").first().waitFor();
 await captureIphone("dartmouth-new-place");
