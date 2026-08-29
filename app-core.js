@@ -196,6 +196,32 @@ function rawTags(restaurant) {
   return restaurant.osm?.rawTags || {};
 }
 
+function socialUrl(platform, value) {
+  const raw = String(value || "").trim();
+  if (!raw) return null;
+  const direct = safeUrl(raw);
+  if (direct) return direct;
+  const handle = raw.replace(/^@/, "").replace(/^\/+|\/+$/g, "");
+  const bases = { facebook: "https://www.facebook.com/", instagram: "https://www.instagram.com/", x: "https://x.com/", tiktok: "https://www.tiktok.com/@" };
+  return bases[platform] && handle ? `${bases[platform]}${handle}` : null;
+}
+
+function osmSocialProfiles(restaurant) {
+  const tags = rawTags(restaurant);
+  return [
+    ["facebook", tags["contact:facebook"] || tags.facebook],
+    ["instagram", tags["contact:instagram"] || tags.instagram],
+    ["x", tags["contact:twitter"] || tags.twitter],
+    ["tiktok", tags["contact:tiktok"] || tags.tiktok]
+  ].map(([platform, value]) => {
+    const url = socialUrl(platform, value);
+    if (!url) return null;
+    let handle = String(value || "").replace(/^@/, "");
+    try { handle = new URL(url).pathname.replace(/^\/+|\/+$/g, "").replace(/^@/, ""); } catch {}
+    return { platform, url, handle, associationBasis: "openstreetmap_contact_tag", reviewState: "source_observed" };
+  }).filter(Boolean);
+}
+
 function hasPatio(restaurant, signal) {
   const tags = rawTags(restaurant);
   const text = JSON.stringify(tags).toLowerCase();
@@ -234,6 +260,7 @@ function enrichRestaurant(restaurant) {
     specialLinks,
     eventLinks,
     reservationLinks,
+    socialProfiles: [...(restaurant.socialProfiles || []), ...osmSocialProfiles(restaurant)],
     website,
     hasMenu: menuLinks.length > 0,
     hasSpecial: specialLinks.length > 0 || (restaurant.specials || []).length > 0,
