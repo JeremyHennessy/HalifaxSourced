@@ -217,6 +217,10 @@ await firstMapRow.press("Enter");
 if (!(await firstMapRow.evaluate((node) => node.classList.contains("is-highlighted")))) throw new Error("Expected keyboard activation to synchronize a list row with its map marker.");
 
 await page.setViewportSize({ width: 390, height: 844 });
+await page.goto(`${url}/#restaurant/osm-node-11751643550-cafe-lunette`, { waitUntil: "networkidle" });
+await page.locator("#detailUpdates .official-update-card").first().waitFor();
+if (await page.locator("#detailUpdates .official-update-card").count() < 3) throw new Error("Expected official Café Lunette feed updates on restaurant detail.");
+await captureIphone("official-updates");
 await page.goto(`${url}/#restaurant/marias-pantry-dartmouth`, { waitUntil: "networkidle" });
 await page.locator("#detailLinks .source-link-row").first().waitFor();
 await captureIphone("dartmouth-new-place");

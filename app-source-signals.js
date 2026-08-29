@@ -6,6 +6,7 @@ const websiteFeedSignalPayload = window.HALIFAX_WEBSITE_FEED_SIGNALS ?? null;
 const websiteFeedSignals = Array.isArray(websiteFeedSignalPayload?.signals) ? websiteFeedSignalPayload.signals : [];
 const socialSignalPayload = window.HALIFAX_SOCIAL_SIGNALS ?? null;
 const socialSignals = Array.isArray(socialSignalPayload?.signals) ? socialSignalPayload.signals : [];
+const socialPosts = Array.isArray(socialSignalPayload?.posts) ? socialSignalPayload.posts : socialSignals;
 const CURRENT_SOURCE_SIGNAL_DAYS = 60;
 
 function sourceSignalGroup(items) {
@@ -98,6 +99,7 @@ function linkHubSourceMeta(hub) {
 const firstPartyByRestaurant = sourceSignalGroup(firstPartySourceRecords);
 const websiteFeedByRestaurant = sourceSignalGroup(websiteFeedSignals);
 const socialByRestaurant = sourceSignalGroup(socialSignals);
+const socialPostsByRestaurant = sourceSignalGroup(socialPosts);
 const profileAssociationCounts = new Map();
 for (const record of firstPartySourceRecords) {
   const seenInRecord = new Set();
@@ -114,6 +116,7 @@ for (const restaurant of restaurants) {
   const firstParty = firstPartyByRestaurant.get(restaurant.id)?.[0] || null;
   const feedSignals = websiteFeedByRestaurant.get(restaurant.id) || [];
   const apiSignals = socialByRestaurant.get(restaurant.id) || [];
+  const apiPosts = socialPostsByRestaurant.get(restaurant.id) || [];
   const allSignals = [...feedSignals, ...apiSignals];
   const currentSignals = allSignals.filter((signal) => sourceSignalFresh(signal));
   const allProfiles = mergeSocialProfiles(restaurant.socialProfiles || [], Array.isArray(firstParty?.socialProfiles) ? firstParty.socialProfiles : []);
@@ -126,6 +129,10 @@ for (const restaurant of restaurants) {
   restaurant.websiteFeedSignals = feedSignals;
   restaurant.socialSignals = apiSignals;
   restaurant.currentSourceSignals = currentSignals;
+  restaurant.officialUpdates = [...feedSignals, ...apiPosts]
+    .filter((signal) => safeUrl(signal?.postUrl))
+    .filter((signal, index, all) => all.findIndex((item) => item.postUrl === signal.postUrl) === index)
+    .sort((a, b) => String(b.publishedAt || "").localeCompare(String(a.publishedAt || "")));
   restaurant.socialProfiles = allProfiles;
   restaurant.linkHubs = linkHubs;
   restaurant.uniqueSocialProfiles = uniqueProfiles;
