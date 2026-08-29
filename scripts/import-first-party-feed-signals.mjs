@@ -38,6 +38,12 @@ function safeUrl(value, base) {
     return ["http:", "https:"].includes(url.protocol) ? url.href : null;
   } catch { return null; }
 }
+function oembedFeed(value, type = "") {
+  try {
+    const url = new URL(String(value ?? "").replace(/&#0*38;|&#x0*26;|&amp;/gi, "&"));
+    return /oembed/i.test(type) || /\/oembed(?:\/|$)/i.test(url.pathname) || /(?:^|\/)wp-json\/oembed/i.test(url.pathname) || /(?:^|[?&])rest_route=[^&]*oembed/i.test(url.search);
+  } catch { return false; }
+}
 function hostKey(value) {
   try { return new URL(value).hostname.toLowerCase().replace(/^www\./, ""); } catch { return ""; }
 }
@@ -83,7 +89,7 @@ function parseFeed(xml, baseUrl) {
 const candidateFeeds = [];
 for (const record of sourceRecords) {
   for (const feed of record.feeds || []) {
-    if (!feed?.url || feed.reviewState !== "verified_link") continue;
+    if (!feed?.url || feed.reviewState !== "verified_link" || oembedFeed(feed.url, feed.type)) continue;
     candidateFeeds.push({ restaurantId: record.restaurantId, restaurantName: record.name, website: record.website, ...feed });
   }
 }

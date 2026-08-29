@@ -83,6 +83,13 @@ function validRelated(link) {
     return ["http:", "https:"].includes(url.protocol) && Boolean(link?.kind) && link?.reviewState === "verified_link" && associationBases.has(link.associationBasis) && confidenceValues.has(link.confidence);
   } catch { return false; }
 }
+function validFeed(feed) {
+  try {
+    const url = new URL(decodeUrlEntities(feed?.url));
+    const oembed = /oembed/i.test(feed?.type || "") || /\/oembed(?:\/|$)/i.test(url.pathname) || /(?:^|\/)wp-json\/oembed/i.test(url.pathname) || /(?:^|[?&])rest_route=[^&]*oembed/i.test(url.search);
+    return ["http:", "https:"].includes(url.protocol) && feed?.reviewState === "verified_link" && !oembed;
+  } catch { return false; }
+}
 
 let removedProfiles = 0;
 let duplicateProfilesRemoved = 0;
@@ -92,6 +99,8 @@ let removedHubs = 0;
 let duplicateHubsRemoved = 0;
 let removedRelated = 0;
 let duplicateRelatedRemoved = 0;
+let removedFeeds = 0;
+let duplicateFeedsRemoved = 0;
 for (const record of records) {
   const seenProfiles = new Set();
   const cleanedProfiles = [];
@@ -135,6 +144,17 @@ for (const record of records) {
     cleanedRelated.push(link);
   }
   record.relatedLinks = cleanedRelated;
+
+  const seenFeeds = new Set();
+  const cleanedFeeds = [];
+  for (let feed of record.feeds || []) {
+    feed = { ...feed, url: decodeUrlEntities(feed?.url) };
+    if (!validFeed(feed)) { removedFeeds += 1; continue; }
+    if (seenFeeds.has(feed.url)) { duplicateFeedsRemoved += 1; continue; }
+    seenFeeds.add(feed.url);
+    cleanedFeeds.push(feed);
+  }
+  record.feeds = cleanedFeeds;
 }
 
 payload.profileCount = records.reduce((sum, record) => sum + (record.socialProfiles?.length || 0), 0);
@@ -146,6 +166,7 @@ for (const record of records) for (const hub of record.linkHubs || []) payload.l
 payload.relatedLinkCount = records.reduce((sum, record) => sum + (record.relatedLinks?.length || 0), 0);
 payload.relatedKindCounts = {};
 for (const record of records) for (const link of record.relatedLinks || []) payload.relatedKindCounts[link.kind] = (payload.relatedKindCounts[link.kind] || 0) + 1;
+payload.feedCount = records.reduce((sum, record) => sum + (record.feeds?.length || 0), 0);
 payload.facebookCount = payload.platformCounts.facebook || 0;
 payload.instagramCount = payload.platformCounts.instagram || 0;
 payload.sanitization = {
@@ -158,9 +179,11 @@ payload.sanitization = {
   removedGenericOrInvalidLinkHubs: removedHubs,
   duplicateLinkHubsRemoved: duplicateHubsRemoved,
   removedInvalidRelatedLinks: removedRelated,
-  duplicateRelatedLinksRemoved: duplicateRelatedRemoved
+  duplicateRelatedLinksRemoved: duplicateRelatedRemoved,
+  removedInvalidOrOembedFeeds: removedFeeds,
+  duplicateFeedsRemoved
 };
 
 await writeFile(jsonPath, JSON.stringify(payload, null, 2));
 await writeFile(jsPath, `window.HALIFAX_FIRST_PARTY_SOURCES = ${JSON.stringify(payload, null, 2)};\n`);
-console.log(`Sanitized first-party sources: profiles=${payload.profileCount}, hubs=${payload.linkHubCount}, related=${payload.relatedLinkCount}, profile-removed=${removedProfiles}, facebook-normalized=${normalizedFacebookProfiles}, shared-brand-flagged=${sharedBrandProfilesFlagged}, hub-removed=${removedHubs}, related-removed=${removedRelated}.`);
+console.log(`Sanitized first-party sources: profiles=${payload.profileCount}, hubs=${payload.linkHubCount}, related=${payload.relatedLinkCount}, feeds=${payload.feedCount}, profile-removed=${removedProfiles}, facebook-normalized=${normalizedFacebookProfiles}, shared-brand-flagged=${sharedBrandProfilesFlagged}, hub-removed=${removedHubs}, related-removed=${removedRelated}, feed-removed=${removedFeeds}.`);

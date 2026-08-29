@@ -20,6 +20,12 @@ function validUrl(value) {
   try { return ["http:", "https:"].includes(new URL(String(value ?? "")).protocol); }
   catch { return false; }
 }
+function oembedFeed(value, type = "") {
+  try {
+    const url = new URL(String(value ?? "").replace(/&#0*38;|&#x0*26;|&amp;/gi, "&"));
+    return /oembed/i.test(type) || /\/oembed(?:\/|$)/i.test(url.pathname) || /(?:^|\/)wp-json\/oembed/i.test(url.pathname) || /(?:^|[?&])rest_route=[^&]*oembed/i.test(url.search);
+  } catch { return false; }
+}
 function host(value) {
   try { return new URL(String(value ?? "")).hostname.toLowerCase().replace(/^www\./, "").replace(/^m\./, ""); }
   catch { return ""; }
@@ -114,7 +120,7 @@ function upgradeRelated(item, record) {
   };
 }
 function upgradeFeed(item, record) {
-  if (!validUrl(item?.url)) return null;
+  if (!validUrl(item?.url) || oembedFeed(item.url, item.type)) return null;
   return {
     ...item,
     discoveredFrom: item.discoveredFrom || record?.resolvedUrl || record?.website || item.url,

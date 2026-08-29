@@ -38,6 +38,12 @@ function validUrl(value) {
   } catch { return false; }
 }
 function hasEscapedUrlEntities(value) { return /&(?:amp|#0*38|#x0*26);/i.test(String(value ?? "")); }
+function oembedFeed(value, type = "") {
+  try {
+    const url = new URL(String(value ?? "").replace(/&#0*38;|&#x0*26;|&amp;/gi, "&"));
+    return /oembed/i.test(type) || /\/oembed(?:\/|$)/i.test(url.pathname) || /(?:^|\/)wp-json\/oembed/i.test(url.pathname) || /(?:^|[?&])rest_route=[^&]*oembed/i.test(url.search);
+  } catch { return false; }
+}
 function validDate(value) { return Number.isFinite(Date.parse(String(value ?? ""))); }
 function hasSignalMatches(value) { return value && typeof value === "object" && Object.values(value).some((hits) => Array.isArray(hits) && hits.length > 0); }
 function duplicates(items, keyFn) {
@@ -87,14 +93,14 @@ for (const record of records) {
     }
   }
   for (const feed of record.feeds || []) {
-    if (!validUrl(feed.url) || feed.reviewState !== "verified_link") failures.push({ type: "invalid_feed_discovery", restaurantId: record.restaurantId, url: feed.url });
+    if (!validUrl(feed.url) || feed.reviewState !== "verified_link" || oembedFeed(feed.url, feed.type)) failures.push({ type: "invalid_feed_discovery", restaurantId: record.restaurantId, url: feed.url });
   }
 }
 
 const duplicateFeedSignals = duplicates(feedSignals, (signal) => `${signal.restaurantId}|${signal.postUrl}`);
 if (duplicateFeedSignals.length) failures.push({ type: "duplicate_website_feed_signals", values: duplicateFeedSignals.slice(0, 30) });
 for (const signal of feedSignals) {
-  if (!restaurantIds.has(signal.restaurantId) || !validUrl(signal.postUrl) || !validUrl(signal.feedUrl) || !validDate(signal.observedAt) || !hasSignalMatches(signal.signalMatches) || signal.sourceKind !== "official_feed" || signal.associationBasis !== "unique_feed_link_from_official_website") {
+  if (!restaurantIds.has(signal.restaurantId) || !validUrl(signal.postUrl) || !validUrl(signal.feedUrl) || oembedFeed(signal.feedUrl) || !validDate(signal.observedAt) || !hasSignalMatches(signal.signalMatches) || signal.sourceKind !== "official_feed" || signal.associationBasis !== "unique_feed_link_from_official_website") {
     failures.push({ type: "invalid_website_feed_signal", restaurantId: signal.restaurantId, postUrl: signal.postUrl });
   }
   if (Object.hasOwn(signal, "description") || Object.hasOwn(signal, "summary") || Object.hasOwn(signal, "content")) failures.push({ type: "website_feed_raw_body_retained", restaurantId: signal.restaurantId, postUrl: signal.postUrl });
@@ -103,7 +109,7 @@ for (const signal of feedSignals) {
 const duplicateFeedPosts = duplicates(feedPosts, (post) => `${post.restaurantId}|${post.postUrl}`);
 if (duplicateFeedPosts.length) failures.push({ type: "duplicate_website_feed_posts", values: duplicateFeedPosts.slice(0, 30) });
 for (const post of feedPosts) {
-  if (!restaurantIds.has(post.restaurantId) || !validUrl(post.postUrl) || !validUrl(post.feedUrl) || !validDate(post.observedAt) || post.sourceKind !== "official_feed" || post.associationBasis !== "unique_feed_link_from_official_website") {
+  if (!restaurantIds.has(post.restaurantId) || !validUrl(post.postUrl) || !validUrl(post.feedUrl) || oembedFeed(post.feedUrl) || !validDate(post.observedAt) || post.sourceKind !== "official_feed" || post.associationBasis !== "unique_feed_link_from_official_website") {
     failures.push({ type: "invalid_website_feed_post", restaurantId: post.restaurantId, postUrl: post.postUrl });
   }
   if (post.mediaUrl && !validUrl(post.mediaUrl)) failures.push({ type: "invalid_website_feed_media", restaurantId: post.restaurantId, mediaUrl: post.mediaUrl });

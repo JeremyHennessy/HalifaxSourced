@@ -30,7 +30,7 @@
     "newsletter": 4,
     "tickets": 1
   },
-  "feedCount": 381,
+  "feedCount": 124,
   "failures": [
     {
       "restaurantId": "osm-node-5134046822-chain-yard-urban-cidery",
@@ -824,22 +824,6 @@
           "title": "Matadora Tapas Bar &raquo; Comments Feed",
           "discoveredFrom": "https://matadorahfx.ca/",
           "reviewState": "verified_link"
-        },
-        {
-          "url": "https://matadorahfx.ca/index.php?rest_route=%2Foembed%2F1.0%2Fembed&#038;url=https%3A%2F%2Fmatadorahfx.ca%2F&#038;format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://matadorahfx.ca/",
-          "reviewState": "verified_link"
-        },
-        {
-          "url": "https://matadorahfx.ca/index.php?rest_route=%2Foembed%2F1.0%2Fembed&url=https%3A%2F%2Fmatadorahfx.ca%2F&format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://matadorahfx.ca/",
-          "reviewState": "verified_link",
-          "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-08-29T02:33:28.415Z"
         }
       ],
       "sitemaps": [],
@@ -1062,54 +1046,6 @@
           "title": "Darrell's Restaurant, Halifax &raquo; Comments Feed",
           "discoveredFrom": "https://darrellsrestaurants.com/",
           "reviewState": "verified_link"
-        },
-        {
-          "url": "https://darrellsrestaurants.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdarrellsrestaurants.com%2F&#038;format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://darrellsrestaurants.com/",
-          "reviewState": "verified_link"
-        },
-        {
-          "url": "https://darrellsrestaurants.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdarrellsrestaurants.com%2Fabout-darrells%2F&#038;format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://darrellsrestaurants.com/about-darrells/",
-          "reviewState": "verified_link"
-        },
-        {
-          "url": "https://darrellsrestaurants.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdarrellsrestaurants.com%2Fcontact%2F&#038;format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://darrellsrestaurants.com/contact/",
-          "reviewState": "verified_link"
-        },
-        {
-          "url": "https://darrellsrestaurants.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdarrellsrestaurants.com%2F&format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://darrellsrestaurants.com/",
-          "reviewState": "verified_link",
-          "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-08-29T02:33:28.415Z"
-        },
-        {
-          "url": "https://darrellsrestaurants.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdarrellsrestaurants.com%2Fabout-darrells%2F&format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://darrellsrestaurants.com/about-darrells/",
-          "reviewState": "verified_link",
-          "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-08-29T02:33:28.415Z"
-        },
-        {
-          "url": "https://darrellsrestaurants.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdarrellsrestaurants.com%2Fcontact%2F&format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://darrellsrestaurants.com/contact/",
-          "reviewState": "verified_link",
-          "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-08-29T02:33:28.415Z"
         }
       ],
       "sitemaps": [],
@@ -1388,22 +1324,6 @@
           "title": "Lemon Dogs Burgers & Lemonade &raquo; Comments Feed",
           "discoveredFrom": "https://lemon.dog/",
           "reviewState": "verified_link"
-        },
-        {
-          "url": "https://lemon.dog/wp-json/oembed/1.0/embed?url=https%3A%2F%2Flemon.dog%2F&#038;format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://lemon.dog/",
-          "reviewState": "verified_link"
-        },
-        {
-          "url": "https://lemon.dog/wp-json/oembed/1.0/embed?url=https%3A%2F%2Flemon.dog%2F&format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://lemon.dog/",
-          "reviewState": "verified_link",
-          "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-08-29T02:33:28.415Z"
         }
       ],
       "sitemaps": [],
@@ -1573,38 +1493,6 @@
           "title": "Bicycle Thief &raquo; Feed",
           "discoveredFrom": "https://bicyclethief.ca/",
           "reviewState": "verified_link"
-        },
-        {
-          "url": "https://bicyclethief.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fbicyclethief.ca%2F&#038;format=xml",
-          "type": "text/xml+oembed",
-          "title": "Website feed",
-          "discoveredFrom": "https://bicyclethief.ca/",
-          "reviewState": "verified_link"
-        },
-        {
-          "url": "https://bicyclethief.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fbicyclethief.ca%2Fcontact-us-reservations%2F&#038;format=xml",
-          "type": "text/xml+oembed",
-          "title": "Website feed",
-          "discoveredFrom": "https://bicyclethief.ca/contact-us-reservations/",
-          "reviewState": "verified_link"
-        },
-        {
-          "url": "https://bicyclethief.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fbicyclethief.ca%2F&format=xml",
-          "type": "text/xml+oembed",
-          "title": "Website feed",
-          "discoveredFrom": "https://bicyclethief.ca/",
-          "reviewState": "verified_link",
-          "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-08-29T02:33:28.415Z"
-        },
-        {
-          "url": "https://bicyclethief.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fbicyclethief.ca%2Fcontact-us-reservations%2F&format=xml",
-          "type": "text/xml+oembed",
-          "title": "Website feed",
-          "discoveredFrom": "https://bicyclethief.ca/contact-us-reservations/",
-          "reviewState": "verified_link",
-          "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-08-29T02:33:28.415Z"
         }
       ],
       "sitemaps": [],
@@ -1703,22 +1591,6 @@
           "title": "Humble Pie Kitchen &raquo; Comments Feed",
           "discoveredFrom": "https://humblepiekitchen.ca/",
           "reviewState": "verified_link"
-        },
-        {
-          "url": "https://humblepiekitchen.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fhumblepiekitchen.ca%2F&#038;format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://humblepiekitchen.ca/",
-          "reviewState": "verified_link"
-        },
-        {
-          "url": "https://humblepiekitchen.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fhumblepiekitchen.ca%2F&format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://humblepiekitchen.ca/",
-          "reviewState": "verified_link",
-          "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-08-29T02:33:28.415Z"
         }
       ],
       "sitemaps": [
@@ -1993,43 +1865,11 @@
           "reviewState": "verified_link"
         },
         {
-          "url": "https://unfuckingfiltered.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Funfuckingfiltered.com%2F&#038;format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://unfuckingfiltered.com/",
-          "reviewState": "verified_link"
-        },
-        {
           "url": "https://unfuckingfiltered.com/contact-us/feed/",
           "type": "application/rss+xml",
           "title": "Unfiltered Brewing &raquo; Contact Us Comments Feed",
           "discoveredFrom": "https://unfuckingfiltered.com/contact-us/",
           "reviewState": "verified_link"
-        },
-        {
-          "url": "https://unfuckingfiltered.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Funfuckingfiltered.com%2Fcontact-us%2F&#038;format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://unfuckingfiltered.com/contact-us/",
-          "reviewState": "verified_link"
-        },
-        {
-          "url": "https://unfuckingfiltered.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Funfuckingfiltered.com%2F&format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://unfuckingfiltered.com/",
-          "reviewState": "verified_link",
-          "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-08-29T02:33:28.415Z"
-        },
-        {
-          "url": "https://unfuckingfiltered.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Funfuckingfiltered.com%2Fcontact-us%2F&format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://unfuckingfiltered.com/contact-us/",
-          "reviewState": "verified_link",
-          "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-08-29T02:33:28.415Z"
         }
       ],
       "sitemaps": [
@@ -2084,15 +1924,6 @@
           "url": "https://nogginsfarm.ca/comments/feed/",
           "type": "application/rss+xml",
           "title": "Noggins Corner Farm Market &raquo; Comments Feed",
-          "discoveredFrom": "https://nogginsfarm.ca/farm-markets/coburg-market/",
-          "reviewState": "verified_link",
-          "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-08-29T02:33:28.415Z"
-        },
-        {
-          "url": "https://nogginsfarm.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fnogginsfarm.ca%2Ffarm-markets%2Fcoburg-market%2F&format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
           "discoveredFrom": "https://nogginsfarm.ca/farm-markets/coburg-market/",
           "reviewState": "verified_link",
           "refreshState": "carried_forward_previous_verification",
@@ -2867,38 +2698,6 @@
           "title": "Sushi Square &raquo; Comments Feed",
           "discoveredFrom": "https://sushisquare.ca/",
           "reviewState": "verified_link"
-        },
-        {
-          "url": "https://sushisquare.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fsushisquare.ca%2F&#038;format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://sushisquare.ca/",
-          "reviewState": "verified_link"
-        },
-        {
-          "url": "https://sushisquare.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fsushisquare.ca%2Fcontact%2F&#038;format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://sushisquare.ca/contact/",
-          "reviewState": "verified_link"
-        },
-        {
-          "url": "https://sushisquare.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fsushisquare.ca%2F&format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://sushisquare.ca/",
-          "reviewState": "verified_link",
-          "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-08-29T02:33:28.415Z"
-        },
-        {
-          "url": "https://sushisquare.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fsushisquare.ca%2Fcontact%2F&format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://sushisquare.ca/contact/",
-          "reviewState": "verified_link",
-          "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-08-29T02:33:28.415Z"
         }
       ],
       "sitemaps": [
@@ -3302,38 +3101,6 @@
           "title": "Sushi Nami Royale &raquo; Comments Feed",
           "discoveredFrom": "https://sushinami.ca/",
           "reviewState": "verified_link"
-        },
-        {
-          "url": "https://sushinami.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fsushinami.ca%2F&#038;format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://sushinami.ca/",
-          "reviewState": "verified_link"
-        },
-        {
-          "url": "https://sushinami.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fsushinami.ca%2Fdowntown-halifax%2F&#038;format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://sushinami.ca/downtown-halifax/",
-          "reviewState": "verified_link"
-        },
-        {
-          "url": "https://sushinami.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fsushinami.ca%2F&format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://sushinami.ca/",
-          "reviewState": "verified_link",
-          "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-08-29T02:33:28.415Z"
-        },
-        {
-          "url": "https://sushinami.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fsushinami.ca%2Fdowntown-halifax%2F&format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://sushinami.ca/downtown-halifax/",
-          "reviewState": "verified_link",
-          "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-08-29T02:33:28.415Z"
         }
       ],
       "sitemaps": [],
@@ -3489,54 +3256,6 @@
           "title": "Chebucto Inn &raquo; Comments Feed",
           "discoveredFrom": "https://chebuctoinn.com/lhg-diner/",
           "reviewState": "verified_link"
-        },
-        {
-          "url": "https://chebuctoinn.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fchebuctoinn.com%2Flhg-diner%2F&#038;format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://chebuctoinn.com/lhg-diner/",
-          "reviewState": "verified_link"
-        },
-        {
-          "url": "https://chebuctoinn.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fchebuctoinn.com%2Four-story%2F&#038;format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://chebuctoinn.com/our-story/",
-          "reviewState": "verified_link"
-        },
-        {
-          "url": "https://chebuctoinn.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fchebuctoinn.com%2Fcontact-us%2F&#038;format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://chebuctoinn.com/contact-us/",
-          "reviewState": "verified_link"
-        },
-        {
-          "url": "https://chebuctoinn.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fchebuctoinn.com%2Flhg-diner%2F&format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://chebuctoinn.com/lhg-diner/",
-          "reviewState": "verified_link",
-          "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-08-29T02:33:28.415Z"
-        },
-        {
-          "url": "https://chebuctoinn.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fchebuctoinn.com%2Four-story%2F&format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://chebuctoinn.com/our-story/",
-          "reviewState": "verified_link",
-          "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-08-29T02:33:28.415Z"
-        },
-        {
-          "url": "https://chebuctoinn.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fchebuctoinn.com%2Fcontact-us%2F&format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://chebuctoinn.com/contact-us/",
-          "reviewState": "verified_link",
-          "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-08-29T02:33:28.415Z"
         }
       ],
       "sitemaps": [
@@ -3996,22 +3715,6 @@
           "title": "Second Cup &raquo; Comments Feed",
           "discoveredFrom": "https://secondcup.com/en/location/bayers-lake/",
           "reviewState": "verified_link"
-        },
-        {
-          "url": "https://secondcup.com/en/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fsecondcup.com%2Fen%2Flocation%2Fbayers-lake%2F&#038;format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://secondcup.com/en/location/bayers-lake/",
-          "reviewState": "verified_link"
-        },
-        {
-          "url": "https://secondcup.com/en/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fsecondcup.com%2Fen%2Flocation%2Fbayers-lake%2F&format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://secondcup.com/en/location/bayers-lake/",
-          "reviewState": "verified_link",
-          "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-08-29T02:33:28.415Z"
         }
       ],
       "sitemaps": [
@@ -4119,22 +3822,6 @@
           "title": "Sketti & Ball Co. &raquo; Homepage Comments Feed",
           "discoveredFrom": "https://skettiandballco.ca/",
           "reviewState": "verified_link"
-        },
-        {
-          "url": "https://skettiandballco.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fskettiandballco.ca%2F&#038;format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://skettiandballco.ca/",
-          "reviewState": "verified_link"
-        },
-        {
-          "url": "https://skettiandballco.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fskettiandballco.ca%2F&format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://skettiandballco.ca/",
-          "reviewState": "verified_link",
-          "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-08-29T02:33:28.415Z"
         }
       ],
       "sitemaps": [
@@ -4444,54 +4131,6 @@
           "title": "Café Lunette &raquo; Comments Feed",
           "discoveredFrom": "https://www.cafelunette.com/",
           "reviewState": "verified_link"
-        },
-        {
-          "url": "https://www.cafelunette.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.cafelunette.com%2F&#038;format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://www.cafelunette.com/",
-          "reviewState": "verified_link"
-        },
-        {
-          "url": "https://www.cafelunette.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.cafelunette.com%2Fabout%2F&#038;format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://www.cafelunette.com/about/",
-          "reviewState": "verified_link"
-        },
-        {
-          "url": "https://www.cafelunette.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.cafelunette.com%2Fcontact%2F&#038;format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://www.cafelunette.com/contact/",
-          "reviewState": "verified_link"
-        },
-        {
-          "url": "https://www.cafelunette.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.cafelunette.com%2F&format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://www.cafelunette.com/",
-          "reviewState": "verified_link",
-          "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-08-29T02:33:28.415Z"
-        },
-        {
-          "url": "https://www.cafelunette.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.cafelunette.com%2Fabout%2F&format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://www.cafelunette.com/about/",
-          "reviewState": "verified_link",
-          "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-08-29T02:33:28.415Z"
-        },
-        {
-          "url": "https://www.cafelunette.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.cafelunette.com%2Fcontact%2F&format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://www.cafelunette.com/contact/",
-          "reviewState": "verified_link",
-          "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-08-29T02:33:28.415Z"
         }
       ],
       "sitemaps": [
@@ -4959,54 +4598,6 @@
           "title": "Cora Déjeuners et dîners » Feed",
           "discoveredFrom": "https://www.chezcora.com/en/",
           "reviewState": "verified_link"
-        },
-        {
-          "url": "https://www.chezcora.com/en/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.chezcora.com%2Fen%2F&#038;format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://www.chezcora.com/en/",
-          "reviewState": "verified_link"
-        },
-        {
-          "url": "https://www.chezcora.com/en/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.chezcora.com%2Fen%2Fbreakfast-lunch-restaurants%2Fcora-abbotsford%2F&#038;format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://www.chezcora.com/en/breakfast-lunch-restaurants/cora-abbotsford/",
-          "reviewState": "verified_link"
-        },
-        {
-          "url": "https://www.chezcora.com/en/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.chezcora.com%2Fen%2Fbreakfast-lunch-restaurants%2Fcora-acadie-montreal%2F&#038;format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://www.chezcora.com/en/breakfast-lunch-restaurants/cora-acadie-montreal/",
-          "reviewState": "verified_link"
-        },
-        {
-          "url": "https://www.chezcora.com/en/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.chezcora.com%2Fen%2F&format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://www.chezcora.com/en/",
-          "reviewState": "verified_link",
-          "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-08-29T02:33:28.415Z"
-        },
-        {
-          "url": "https://www.chezcora.com/en/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.chezcora.com%2Fen%2Fbreakfast-lunch-restaurants%2Fcora-abbotsford%2F&format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://www.chezcora.com/en/breakfast-lunch-restaurants/cora-abbotsford/",
-          "reviewState": "verified_link",
-          "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-08-29T02:33:28.415Z"
-        },
-        {
-          "url": "https://www.chezcora.com/en/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.chezcora.com%2Fen%2Fbreakfast-lunch-restaurants%2Fcora-acadie-montreal%2F&format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://www.chezcora.com/en/breakfast-lunch-restaurants/cora-acadie-montreal/",
-          "reviewState": "verified_link",
-          "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-08-29T02:33:28.415Z"
         }
       ],
       "sitemaps": [
@@ -5092,22 +4683,6 @@
           "title": "Lebanese Restaurant in Dartmouth NS | Shawarma & Falafel | STATION1 &raquo; Comments Feed",
           "discoveredFrom": "https://station1lebanesekitchen.com/",
           "reviewState": "verified_link"
-        },
-        {
-          "url": "https://station1lebanesekitchen.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fstation1lebanesekitchen.com%2F&#038;format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://station1lebanesekitchen.com/",
-          "reviewState": "verified_link"
-        },
-        {
-          "url": "https://station1lebanesekitchen.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fstation1lebanesekitchen.com%2F&format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://station1lebanesekitchen.com/",
-          "reviewState": "verified_link",
-          "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-08-29T02:33:28.415Z"
         }
       ],
       "sitemaps": [
@@ -6026,56 +5601,7 @@
       ],
       "linkHubs": [],
       "relatedLinks": [],
-      "feeds": [
-        {
-          "url": "https://www.rcr.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.rcr.ca%2Frestaurants%2Fpublic-cafe-bakery-bar%2F&#038;format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://www.rcr.ca/restaurants/public-cafe-bakery-bar/",
-          "reviewState": "verified_link"
-        },
-        {
-          "url": "https://www.rcr.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.rcr.ca%2Frestaurants%2F&#038;format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://www.rcr.ca/restaurants/",
-          "reviewState": "verified_link"
-        },
-        {
-          "url": "https://www.rcr.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.rcr.ca%2Fabout%2Fcareers%2F&#038;format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://www.rcr.ca/about/careers/",
-          "reviewState": "verified_link"
-        },
-        {
-          "url": "https://www.rcr.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.rcr.ca%2Frestaurants%2Fpublic-cafe-bakery-bar%2F&format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://www.rcr.ca/restaurants/public-cafe-bakery-bar/",
-          "reviewState": "verified_link",
-          "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-08-29T02:33:28.415Z"
-        },
-        {
-          "url": "https://www.rcr.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.rcr.ca%2Frestaurants%2F&format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://www.rcr.ca/restaurants/",
-          "reviewState": "verified_link",
-          "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-08-29T02:33:28.415Z"
-        },
-        {
-          "url": "https://www.rcr.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.rcr.ca%2Fabout%2Fcareers%2F&format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://www.rcr.ca/about/careers/",
-          "reviewState": "verified_link",
-          "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-08-29T02:33:28.415Z"
-        }
-      ],
+      "feeds": [],
       "sitemaps": [
         "https://www.rcr.ca/sitemap.xml",
         "https://www.rcr.ca/sitemap.rss"
@@ -6137,22 +5663,6 @@
           "title": "Matadora Tapas Bar &raquo; Comments Feed",
           "discoveredFrom": "https://matadorahfx.ca/",
           "reviewState": "verified_link"
-        },
-        {
-          "url": "https://matadorahfx.ca/index.php?rest_route=%2Foembed%2F1.0%2Fembed&#038;url=https%3A%2F%2Fmatadorahfx.ca%2F&#038;format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://matadorahfx.ca/",
-          "reviewState": "verified_link"
-        },
-        {
-          "url": "https://matadorahfx.ca/index.php?rest_route=%2Foembed%2F1.0%2Fembed&url=https%3A%2F%2Fmatadorahfx.ca%2F&format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://matadorahfx.ca/",
-          "reviewState": "verified_link",
-          "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-08-29T02:33:28.415Z"
         }
       ],
       "sitemaps": [],
@@ -6580,38 +6090,6 @@
           "title": "phohoangminh.ca &raquo; Comments Feed",
           "discoveredFrom": "https://phohoangminh.ca/",
           "reviewState": "verified_link"
-        },
-        {
-          "url": "https://phohoangminh.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fphohoangminh.ca%2Fabout%2F&#038;format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://phohoangminh.ca/about/",
-          "reviewState": "verified_link"
-        },
-        {
-          "url": "https://phohoangminh.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fphohoangminh.ca%2Fcontact%2F&#038;format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://phohoangminh.ca/contact/",
-          "reviewState": "verified_link"
-        },
-        {
-          "url": "https://phohoangminh.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fphohoangminh.ca%2Fabout%2F&format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://phohoangminh.ca/about/",
-          "reviewState": "verified_link",
-          "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-08-29T02:33:28.415Z"
-        },
-        {
-          "url": "https://phohoangminh.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fphohoangminh.ca%2Fcontact%2F&format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://phohoangminh.ca/contact/",
-          "reviewState": "verified_link",
-          "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-08-29T02:33:28.415Z"
         }
       ],
       "sitemaps": [
@@ -6927,43 +6405,11 @@
           "reviewState": "verified_link"
         },
         {
-          "url": "https://www.gingerbreadhausbakery.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.gingerbreadhausbakery.com%2F&#038;format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://www.gingerbreadhausbakery.com/",
-          "reviewState": "verified_link"
-        },
-        {
           "url": "https://www.gingerbreadhausbakery.com/contact/feed/",
           "type": "application/rss+xml",
           "title": "Gingerbread Haus Bakery &raquo; Contact Comments Feed",
           "discoveredFrom": "https://www.gingerbreadhausbakery.com/contact/",
           "reviewState": "verified_link"
-        },
-        {
-          "url": "https://www.gingerbreadhausbakery.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.gingerbreadhausbakery.com%2Fcontact%2F&#038;format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://www.gingerbreadhausbakery.com/contact/",
-          "reviewState": "verified_link"
-        },
-        {
-          "url": "https://www.gingerbreadhausbakery.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.gingerbreadhausbakery.com%2F&format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://www.gingerbreadhausbakery.com/",
-          "reviewState": "verified_link",
-          "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-08-29T02:33:28.415Z"
-        },
-        {
-          "url": "https://www.gingerbreadhausbakery.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.gingerbreadhausbakery.com%2Fcontact%2F&format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://www.gingerbreadhausbakery.com/contact/",
-          "reviewState": "verified_link",
-          "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-08-29T02:33:28.415Z"
         }
       ],
       "sitemaps": [],
@@ -7017,38 +6463,6 @@
           "title": "salvatorespizza.ca &raquo; Comments Feed",
           "discoveredFrom": "https://www.salvatorespizza.ca/",
           "reviewState": "verified_link"
-        },
-        {
-          "url": "https://www.salvatorespizza.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.salvatorespizza.ca%2F&#038;format=xml",
-          "type": "text/xml+oembed",
-          "title": "Website feed",
-          "discoveredFrom": "https://www.salvatorespizza.ca/",
-          "reviewState": "verified_link"
-        },
-        {
-          "url": "https://www.salvatorespizza.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.salvatorespizza.ca%2Ffind-us%2F&#038;format=xml",
-          "type": "text/xml+oembed",
-          "title": "Website feed",
-          "discoveredFrom": "https://www.salvatorespizza.ca/find-us/",
-          "reviewState": "verified_link"
-        },
-        {
-          "url": "https://www.salvatorespizza.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.salvatorespizza.ca%2F&format=xml",
-          "type": "text/xml+oembed",
-          "title": "Website feed",
-          "discoveredFrom": "https://www.salvatorespizza.ca/",
-          "reviewState": "verified_link",
-          "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-08-29T02:33:28.415Z"
-        },
-        {
-          "url": "https://www.salvatorespizza.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.salvatorespizza.ca%2Ffind-us%2F&format=xml",
-          "type": "text/xml+oembed",
-          "title": "Website feed",
-          "discoveredFrom": "https://www.salvatorespizza.ca/find-us/",
-          "reviewState": "verified_link",
-          "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-08-29T02:33:28.415Z"
         }
       ],
       "sitemaps": [],
@@ -7227,38 +6641,6 @@
           "title": "Black Sheep &raquo; Comments Feed",
           "discoveredFrom": "https://blacksheephalifax.com/",
           "reviewState": "verified_link"
-        },
-        {
-          "url": "https://blacksheephalifax.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fblacksheephalifax.com%2F&#038;format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://blacksheephalifax.com/",
-          "reviewState": "verified_link"
-        },
-        {
-          "url": "https://blacksheephalifax.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fblacksheephalifax.com%2Fabout%2F&#038;format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://blacksheephalifax.com/about/",
-          "reviewState": "verified_link"
-        },
-        {
-          "url": "https://blacksheephalifax.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fblacksheephalifax.com%2F&format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://blacksheephalifax.com/",
-          "reviewState": "verified_link",
-          "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-08-29T02:33:28.415Z"
-        },
-        {
-          "url": "https://blacksheephalifax.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fblacksheephalifax.com%2Fabout%2F&format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://blacksheephalifax.com/about/",
-          "reviewState": "verified_link",
-          "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-08-29T02:33:28.415Z"
         }
       ],
       "sitemaps": [
@@ -7334,38 +6716,6 @@
           "title": "Bluenose II Restaurant &raquo; Comments Feed",
           "discoveredFrom": "https://bluenoseii.ca/",
           "reviewState": "verified_link"
-        },
-        {
-          "url": "https://bluenoseii.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fbluenoseii.ca%2F&#038;format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://bluenoseii.ca/",
-          "reviewState": "verified_link"
-        },
-        {
-          "url": "https://bluenoseii.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fbluenoseii.ca%2Fabout%2F&#038;format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://bluenoseii.ca/about/",
-          "reviewState": "verified_link"
-        },
-        {
-          "url": "https://bluenoseii.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fbluenoseii.ca%2F&format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://bluenoseii.ca/",
-          "reviewState": "verified_link",
-          "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-08-29T02:33:28.415Z"
-        },
-        {
-          "url": "https://bluenoseii.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fbluenoseii.ca%2Fabout%2F&format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://bluenoseii.ca/about/",
-          "reviewState": "verified_link",
-          "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-08-29T02:33:28.415Z"
         }
       ],
       "sitemaps": [],
@@ -7640,54 +6990,6 @@
           "title": "Ela! Greek Restaurant &raquo; Comments Feed",
           "discoveredFrom": "https://elagreektaverna.com/",
           "reviewState": "verified_link"
-        },
-        {
-          "url": "https://elagreektaverna.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Felagreektaverna.com%2F&#038;format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://elagreektaverna.com/",
-          "reviewState": "verified_link"
-        },
-        {
-          "url": "https://elagreektaverna.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Felagreektaverna.com%2Fabout%2F&#038;format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://elagreektaverna.com/about/",
-          "reviewState": "verified_link"
-        },
-        {
-          "url": "https://elagreektaverna.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Felagreektaverna.com%2Fcontact%2F&#038;format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://elagreektaverna.com/contact/",
-          "reviewState": "verified_link"
-        },
-        {
-          "url": "https://elagreektaverna.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Felagreektaverna.com%2F&format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://elagreektaverna.com/",
-          "reviewState": "verified_link",
-          "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-08-29T02:33:28.415Z"
-        },
-        {
-          "url": "https://elagreektaverna.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Felagreektaverna.com%2Fabout%2F&format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://elagreektaverna.com/about/",
-          "reviewState": "verified_link",
-          "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-08-29T02:33:28.415Z"
-        },
-        {
-          "url": "https://elagreektaverna.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Felagreektaverna.com%2Fcontact%2F&format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://elagreektaverna.com/contact/",
-          "reviewState": "verified_link",
-          "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-08-29T02:33:28.415Z"
         }
       ],
       "sitemaps": [
@@ -7784,38 +7086,6 @@
           "title": "PZZA.CO &raquo; Comments Feed",
           "discoveredFrom": "https://pzzaco.ca/",
           "reviewState": "verified_link"
-        },
-        {
-          "url": "https://pzzaco.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fpzzaco.ca%2F&#038;format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://pzzaco.ca/",
-          "reviewState": "verified_link"
-        },
-        {
-          "url": "https://pzzaco.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fpzzaco.ca%2Fcontact-us%2F&#038;format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://pzzaco.ca/contact-us/",
-          "reviewState": "verified_link"
-        },
-        {
-          "url": "https://pzzaco.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fpzzaco.ca%2F&format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://pzzaco.ca/",
-          "reviewState": "verified_link",
-          "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-08-29T02:33:28.415Z"
-        },
-        {
-          "url": "https://pzzaco.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fpzzaco.ca%2Fcontact-us%2F&format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://pzzaco.ca/contact-us/",
-          "reviewState": "verified_link",
-          "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-08-29T02:33:28.415Z"
         }
       ],
       "sitemaps": [
@@ -8540,22 +7810,6 @@
           "title": "&raquo; Comments Feed",
           "discoveredFrom": "http://wasabihouse.ca/",
           "reviewState": "verified_link"
-        },
-        {
-          "url": "http://wasabihouse.ca/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwasabihouse.ca%2Fabout%2F&#038;format=xml",
-          "type": "text/xml+oembed",
-          "title": "Website feed",
-          "discoveredFrom": "http://wasabihouse.ca/about/",
-          "reviewState": "verified_link"
-        },
-        {
-          "url": "http://wasabihouse.ca/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwasabihouse.ca%2Fabout%2F&format=xml",
-          "type": "text/xml+oembed",
-          "title": "Website feed",
-          "discoveredFrom": "http://wasabihouse.ca/about/",
-          "reviewState": "verified_link",
-          "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-08-29T02:33:28.415Z"
         }
       ],
       "sitemaps": [],
@@ -8616,54 +7870,6 @@
           "title": "Durty Nelly's &raquo; Comments Feed",
           "discoveredFrom": "https://durtynellys.ca/",
           "reviewState": "verified_link"
-        },
-        {
-          "url": "https://durtynellys.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdurtynellys.ca%2F&#038;format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://durtynellys.ca/",
-          "reviewState": "verified_link"
-        },
-        {
-          "url": "https://durtynellys.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdurtynellys.ca%2Fabout%2F&#038;format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://durtynellys.ca/about/",
-          "reviewState": "verified_link"
-        },
-        {
-          "url": "https://durtynellys.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdurtynellys.ca%2Fcontact%2F&#038;format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://durtynellys.ca/contact/",
-          "reviewState": "verified_link"
-        },
-        {
-          "url": "https://durtynellys.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdurtynellys.ca%2F&format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://durtynellys.ca/",
-          "reviewState": "verified_link",
-          "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-08-29T02:33:28.415Z"
-        },
-        {
-          "url": "https://durtynellys.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdurtynellys.ca%2Fabout%2F&format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://durtynellys.ca/about/",
-          "reviewState": "verified_link",
-          "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-08-29T02:33:28.415Z"
-        },
-        {
-          "url": "https://durtynellys.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdurtynellys.ca%2Fcontact%2F&format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://durtynellys.ca/contact/",
-          "reviewState": "verified_link",
-          "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-08-29T02:33:28.415Z"
         }
       ],
       "sitemaps": [
@@ -9192,54 +8398,6 @@
           "title": "Cora Déjeuners et dîners » Feed",
           "discoveredFrom": "https://www.chezcora.com/en/breakfast-lunch-restaurants/cora-halifax-downtown/",
           "reviewState": "verified_link"
-        },
-        {
-          "url": "https://www.chezcora.com/en/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.chezcora.com%2Fen%2Fbreakfast-lunch-restaurants%2Fcora-halifax-downtown%2F&#038;format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://www.chezcora.com/en/breakfast-lunch-restaurants/cora-halifax-downtown/",
-          "reviewState": "verified_link"
-        },
-        {
-          "url": "https://www.chezcora.com/en/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.chezcora.com%2Fen%2Fbreakfast-lunch-restaurants%2Fcora-abbotsford%2F&#038;format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://www.chezcora.com/en/breakfast-lunch-restaurants/cora-abbotsford/",
-          "reviewState": "verified_link"
-        },
-        {
-          "url": "https://www.chezcora.com/en/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.chezcora.com%2Fen%2Fbreakfast-lunch-restaurants%2Fcora-acadie-montreal%2F&#038;format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://www.chezcora.com/en/breakfast-lunch-restaurants/cora-acadie-montreal/",
-          "reviewState": "verified_link"
-        },
-        {
-          "url": "https://www.chezcora.com/en/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.chezcora.com%2Fen%2Fbreakfast-lunch-restaurants%2Fcora-halifax-downtown%2F&format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://www.chezcora.com/en/breakfast-lunch-restaurants/cora-halifax-downtown/",
-          "reviewState": "verified_link",
-          "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-08-29T02:33:28.415Z"
-        },
-        {
-          "url": "https://www.chezcora.com/en/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.chezcora.com%2Fen%2Fbreakfast-lunch-restaurants%2Fcora-abbotsford%2F&format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://www.chezcora.com/en/breakfast-lunch-restaurants/cora-abbotsford/",
-          "reviewState": "verified_link",
-          "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-08-29T02:33:28.415Z"
-        },
-        {
-          "url": "https://www.chezcora.com/en/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.chezcora.com%2Fen%2Fbreakfast-lunch-restaurants%2Fcora-acadie-montreal%2F&format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://www.chezcora.com/en/breakfast-lunch-restaurants/cora-acadie-montreal/",
-          "reviewState": "verified_link",
-          "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-08-29T02:33:28.415Z"
         }
       ],
       "sitemaps": [
@@ -10024,22 +9182,6 @@
           "title": "The Ostrich Club &raquo; Comments Feed",
           "discoveredFrom": "https://theostrichclub.ca/",
           "reviewState": "verified_link"
-        },
-        {
-          "url": "https://theostrichclub.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Ftheostrichclub.ca%2F&#038;format=xml",
-          "type": "text/xml+oembed",
-          "title": "Website feed",
-          "discoveredFrom": "https://theostrichclub.ca/",
-          "reviewState": "verified_link"
-        },
-        {
-          "url": "https://theostrichclub.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Ftheostrichclub.ca%2F&format=xml",
-          "type": "text/xml+oembed",
-          "title": "Website feed",
-          "discoveredFrom": "https://theostrichclub.ca/",
-          "reviewState": "verified_link",
-          "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-08-29T02:33:28.415Z"
         }
       ],
       "sitemaps": [],
@@ -10073,24 +9215,7 @@
           "status": "active"
         }
       ],
-      "feeds": [
-        {
-          "url": "https://lucyshydrostone.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Flucyshydrostone.ca%2F&#038;format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://lucyshydrostone.ca/",
-          "reviewState": "verified_link"
-        },
-        {
-          "url": "https://lucyshydrostone.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Flucyshydrostone.ca%2F&format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://lucyshydrostone.ca/",
-          "reviewState": "verified_link",
-          "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-08-29T02:33:28.415Z"
-        }
-      ],
+      "feeds": [],
       "sitemaps": [
         "https://lucyshydrostone.ca/wp-sitemap.xml"
       ],
@@ -10222,22 +9347,6 @@
           "title": "Stubborn Goat Gastropub &raquo; Homepage Comments Feed",
           "discoveredFrom": "https://www.stubborngoat.ca/",
           "reviewState": "verified_link"
-        },
-        {
-          "url": "https://www.stubborngoat.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.stubborngoat.ca%2F&#038;format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://www.stubborngoat.ca/",
-          "reviewState": "verified_link"
-        },
-        {
-          "url": "https://www.stubborngoat.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.stubborngoat.ca%2F&format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://www.stubborngoat.ca/",
-          "reviewState": "verified_link",
-          "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-08-29T02:33:28.415Z"
         }
       ],
       "sitemaps": [
@@ -10319,56 +9428,7 @@
       "socialProfiles": [],
       "linkHubs": [],
       "relatedLinks": [],
-      "feeds": [
-        {
-          "url": "https://twoifbyseacafe.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Ftwoifbyseacafe.ca%2F&#038;format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://twoifbyseacafe.ca/",
-          "reviewState": "verified_link"
-        },
-        {
-          "url": "https://twoifbyseacafe.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Ftwoifbyseacafe.ca%2Fabout-us%2F&#038;format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://twoifbyseacafe.ca/about-us/",
-          "reviewState": "verified_link"
-        },
-        {
-          "url": "https://twoifbyseacafe.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Ftwoifbyseacafe.ca%2Fcontact%2F&#038;format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://twoifbyseacafe.ca/contact/",
-          "reviewState": "verified_link"
-        },
-        {
-          "url": "https://twoifbyseacafe.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Ftwoifbyseacafe.ca%2F&format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://twoifbyseacafe.ca/",
-          "reviewState": "verified_link",
-          "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-08-29T02:33:28.415Z"
-        },
-        {
-          "url": "https://twoifbyseacafe.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Ftwoifbyseacafe.ca%2Fabout-us%2F&format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://twoifbyseacafe.ca/about-us/",
-          "reviewState": "verified_link",
-          "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-08-29T02:33:28.415Z"
-        },
-        {
-          "url": "https://twoifbyseacafe.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Ftwoifbyseacafe.ca%2Fcontact%2F&format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://twoifbyseacafe.ca/contact/",
-          "reviewState": "verified_link",
-          "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-08-29T02:33:28.415Z"
-        }
-      ],
+      "feeds": [],
       "sitemaps": [
         "https://twoifbyseacafe.ca/sitemap_index.xml"
       ],
@@ -10577,54 +9637,6 @@
           "title": "Le Bistro By Liz &raquo; Comments Feed",
           "discoveredFrom": "https://www.lebistrohalifax.com/",
           "reviewState": "verified_link"
-        },
-        {
-          "url": "https://www.lebistrohalifax.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.lebistrohalifax.com%2F&#038;format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://www.lebistrohalifax.com/",
-          "reviewState": "verified_link"
-        },
-        {
-          "url": "https://www.lebistrohalifax.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.lebistrohalifax.com%2Four-story%2F&#038;format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://www.lebistrohalifax.com/our-story/",
-          "reviewState": "verified_link"
-        },
-        {
-          "url": "https://www.lebistrohalifax.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.lebistrohalifax.com%2Fcontact%2F&#038;format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://www.lebistrohalifax.com/contact/",
-          "reviewState": "verified_link"
-        },
-        {
-          "url": "https://www.lebistrohalifax.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.lebistrohalifax.com%2F&format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://www.lebistrohalifax.com/",
-          "reviewState": "verified_link",
-          "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-08-29T02:33:28.415Z"
-        },
-        {
-          "url": "https://www.lebistrohalifax.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.lebistrohalifax.com%2Four-story%2F&format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://www.lebistrohalifax.com/our-story/",
-          "reviewState": "verified_link",
-          "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-08-29T02:33:28.415Z"
-        },
-        {
-          "url": "https://www.lebistrohalifax.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.lebistrohalifax.com%2Fcontact%2F&format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://www.lebistrohalifax.com/contact/",
-          "reviewState": "verified_link",
-          "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-08-29T02:33:28.415Z"
         }
       ],
       "sitemaps": [],
@@ -10786,54 +9798,6 @@
           "title": "Stone Pizza &raquo; Comments Feed",
           "discoveredFrom": "https://stonepizza.ca/",
           "reviewState": "verified_link"
-        },
-        {
-          "url": "https://stonepizza.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fstonepizza.ca%2F&#038;format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://stonepizza.ca/",
-          "reviewState": "verified_link"
-        },
-        {
-          "url": "https://stonepizza.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fstonepizza.ca%2Fcontact%2F&#038;format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://stonepizza.ca/contact/",
-          "reviewState": "verified_link"
-        },
-        {
-          "url": "https://stonepizza.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fstonepizza.ca%2Fabout%2F&#038;format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://stonepizza.ca/about/",
-          "reviewState": "verified_link"
-        },
-        {
-          "url": "https://stonepizza.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fstonepizza.ca%2F&format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://stonepizza.ca/",
-          "reviewState": "verified_link",
-          "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-08-29T02:33:28.415Z"
-        },
-        {
-          "url": "https://stonepizza.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fstonepizza.ca%2Fcontact%2F&format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://stonepizza.ca/contact/",
-          "reviewState": "verified_link",
-          "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-08-29T02:33:28.415Z"
-        },
-        {
-          "url": "https://stonepizza.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fstonepizza.ca%2Fabout%2F&format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://stonepizza.ca/about/",
-          "reviewState": "verified_link",
-          "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-08-29T02:33:28.415Z"
         }
       ],
       "sitemaps": [],
@@ -10950,22 +9914,6 @@
           "title": "St. Louis Wings » Comments Feed",
           "discoveredFrom": "https://locations.stlouiswings.com/ns-dartmouth-2201/",
           "reviewState": "verified_link"
-        },
-        {
-          "url": "https://www.stlouiswings.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.stlouiswings.com%2F&amp;format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://locations.stlouiswings.com/ns-dartmouth-2201/",
-          "reviewState": "verified_link"
-        },
-        {
-          "url": "https://www.stlouiswings.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.stlouiswings.com%2F&format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://locations.stlouiswings.com/ns-dartmouth-2201/",
-          "reviewState": "verified_link",
-          "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-08-29T02:33:28.415Z"
         }
       ],
       "sitemaps": [
@@ -11246,100 +10194,25 @@
       ],
       "feeds": [
         {
-          "url": "http://www.genjisushi.ca/?feed=rss2&#038;page_id=352",
-          "type": "application/rss+xml",
-          "title": "Genji Sushi &raquo; home Comments Feed",
-          "discoveredFrom": "http://www.genjisushi.ca/",
-          "reviewState": "verified_link"
-        },
-        {
-          "url": "http://www.genjisushi.ca/index.php?rest_route=%2Foembed%2F1.0%2Fembed&#038;url=http%3A%2F%2Fwww.genjisushi.ca%2F&#038;format=xml",
-          "type": "text/xml+oembed",
-          "title": "Website feed",
-          "discoveredFrom": "http://www.genjisushi.ca/",
-          "reviewState": "verified_link"
-        },
-        {
-          "url": "http://www.genjisushi.ca/?feed=rss2&#038;page_id=234",
-          "type": "application/rss+xml",
-          "title": "Genji Sushi &raquo; About Comments Feed",
-          "discoveredFrom": "http://www.genjisushi.ca/?page_id=234",
-          "reviewState": "verified_link"
-        },
-        {
-          "url": "http://www.genjisushi.ca/index.php?rest_route=%2Foembed%2F1.0%2Fembed&#038;url=http%3A%2F%2Fwww.genjisushi.ca%2F%3Fpage_id%3D234&#038;format=xml",
-          "type": "text/xml+oembed",
-          "title": "Website feed",
-          "discoveredFrom": "http://www.genjisushi.ca/?page_id=234",
-          "reviewState": "verified_link"
-        },
-        {
-          "url": "http://www.genjisushi.ca/?feed=rss2&#038;page_id=50",
-          "type": "application/rss+xml",
-          "title": "Genji Sushi &raquo; Our restaurant Comments Feed",
-          "discoveredFrom": "http://www.genjisushi.ca/?page_id=50",
-          "reviewState": "verified_link"
-        },
-        {
-          "url": "http://www.genjisushi.ca/index.php?rest_route=%2Foembed%2F1.0%2Fembed&#038;url=http%3A%2F%2Fwww.genjisushi.ca%2F%3Fpage_id%3D50&#038;format=xml",
-          "type": "text/xml+oembed",
-          "title": "Website feed",
-          "discoveredFrom": "http://www.genjisushi.ca/?page_id=50",
-          "reviewState": "verified_link"
-        },
-        {
           "url": "http://www.genjisushi.ca/?feed=rss2&page_id=352",
           "type": "application/rss+xml",
           "title": "Genji Sushi &raquo; home Comments Feed",
           "discoveredFrom": "http://www.genjisushi.ca/",
-          "reviewState": "verified_link",
-          "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-08-29T02:33:28.415Z"
-        },
-        {
-          "url": "http://www.genjisushi.ca/index.php?rest_route=%2Foembed%2F1.0%2Fembed&url=http%3A%2F%2Fwww.genjisushi.ca%2F&format=xml",
-          "type": "text/xml+oembed",
-          "title": "Website feed",
-          "discoveredFrom": "http://www.genjisushi.ca/",
-          "reviewState": "verified_link",
-          "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-08-29T02:33:28.415Z"
+          "reviewState": "verified_link"
         },
         {
           "url": "http://www.genjisushi.ca/?feed=rss2&page_id=234",
           "type": "application/rss+xml",
           "title": "Genji Sushi &raquo; About Comments Feed",
           "discoveredFrom": "http://www.genjisushi.ca/?page_id=234",
-          "reviewState": "verified_link",
-          "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-08-29T02:33:28.415Z"
-        },
-        {
-          "url": "http://www.genjisushi.ca/index.php?rest_route=%2Foembed%2F1.0%2Fembed&url=http%3A%2F%2Fwww.genjisushi.ca%2F%3Fpage_id%3D234&format=xml",
-          "type": "text/xml+oembed",
-          "title": "Website feed",
-          "discoveredFrom": "http://www.genjisushi.ca/?page_id=234",
-          "reviewState": "verified_link",
-          "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-08-29T02:33:28.415Z"
+          "reviewState": "verified_link"
         },
         {
           "url": "http://www.genjisushi.ca/?feed=rss2&page_id=50",
           "type": "application/rss+xml",
           "title": "Genji Sushi &raquo; Our restaurant Comments Feed",
           "discoveredFrom": "http://www.genjisushi.ca/?page_id=50",
-          "reviewState": "verified_link",
-          "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-08-29T02:33:28.415Z"
-        },
-        {
-          "url": "http://www.genjisushi.ca/index.php?rest_route=%2Foembed%2F1.0%2Fembed&url=http%3A%2F%2Fwww.genjisushi.ca%2F%3Fpage_id%3D50&format=xml",
-          "type": "text/xml+oembed",
-          "title": "Website feed",
-          "discoveredFrom": "http://www.genjisushi.ca/?page_id=50",
-          "reviewState": "verified_link",
-          "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-08-29T02:33:28.415Z"
+          "reviewState": "verified_link"
         }
       ],
       "sitemaps": [
@@ -11433,22 +10306,6 @@
           "title": "aMano &raquo; Feed",
           "discoveredFrom": "https://www.ristoranteamano.ca/",
           "reviewState": "verified_link"
-        },
-        {
-          "url": "https://www.ristoranteamano.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.ristoranteamano.ca%2F&#038;format=xml",
-          "type": "text/xml+oembed",
-          "title": "Website feed",
-          "discoveredFrom": "https://www.ristoranteamano.ca/",
-          "reviewState": "verified_link"
-        },
-        {
-          "url": "https://www.ristoranteamano.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.ristoranteamano.ca%2F&format=xml",
-          "type": "text/xml+oembed",
-          "title": "Website feed",
-          "discoveredFrom": "https://www.ristoranteamano.ca/",
-          "reviewState": "verified_link",
-          "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-08-29T02:33:28.415Z"
         }
       ],
       "sitemaps": [
@@ -11834,38 +10691,6 @@
           "title": "Downtown Pizza &raquo; Comments Feed",
           "discoveredFrom": "https://downtownpizza.ca/",
           "reviewState": "verified_link"
-        },
-        {
-          "url": "https://downtownpizza.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdowntownpizza.ca%2F&#038;format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://downtownpizza.ca/",
-          "reviewState": "verified_link"
-        },
-        {
-          "url": "https://downtownpizza.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdowntownpizza.ca%2Fcontact%2F&#038;format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://downtownpizza.ca/contact/",
-          "reviewState": "verified_link"
-        },
-        {
-          "url": "https://downtownpizza.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdowntownpizza.ca%2F&format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://downtownpizza.ca/",
-          "reviewState": "verified_link",
-          "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-08-29T02:33:28.415Z"
-        },
-        {
-          "url": "https://downtownpizza.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdowntownpizza.ca%2Fcontact%2F&format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://downtownpizza.ca/contact/",
-          "reviewState": "verified_link",
-          "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-08-29T02:33:28.415Z"
         }
       ],
       "sitemaps": [
@@ -12585,22 +11410,6 @@
           "title": "Sully + Porter &raquo; Comments Feed",
           "discoveredFrom": "https://sullyandporter.com/",
           "reviewState": "verified_link"
-        },
-        {
-          "url": "https://sullyandporter.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fsullyandporter.com%2F&#038;format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://sullyandporter.com/",
-          "reviewState": "verified_link"
-        },
-        {
-          "url": "https://sullyandporter.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fsullyandporter.com%2F&format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://sullyandporter.com/",
-          "reviewState": "verified_link",
-          "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-08-29T02:33:28.415Z"
         }
       ],
       "sitemaps": [],
@@ -12780,40 +11589,7 @@
           "status": "active"
         }
       ],
-      "feeds": [
-        {
-          "url": "https://www.thesummitcafe.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.thesummitcafe.ca%2F&#038;format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://www.thesummitcafe.ca/",
-          "reviewState": "verified_link"
-        },
-        {
-          "url": "https://www.thesummitcafe.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.thesummitcafe.ca%2Fcontact-us%2F&#038;format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://www.thesummitcafe.ca/contact-us/",
-          "reviewState": "verified_link"
-        },
-        {
-          "url": "https://www.thesummitcafe.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.thesummitcafe.ca%2F&format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://www.thesummitcafe.ca/",
-          "reviewState": "verified_link",
-          "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-08-29T02:33:28.415Z"
-        },
-        {
-          "url": "https://www.thesummitcafe.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.thesummitcafe.ca%2Fcontact-us%2F&format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://www.thesummitcafe.ca/contact-us/",
-          "reviewState": "verified_link",
-          "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-08-29T02:33:28.415Z"
-        }
-      ],
+      "feeds": [],
       "sitemaps": [],
       "sourceKind": "official_website_discovery",
       "reviewState": "verified"
@@ -13068,22 +11844,6 @@
           "title": "2 Crows Brewing Co. &raquo; Feed",
           "discoveredFrom": "https://2crowsbrewing.com/",
           "reviewState": "verified_link"
-        },
-        {
-          "url": "https://2crowsbrewing.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2F2crowsbrewing.com%2F&#038;format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://2crowsbrewing.com/",
-          "reviewState": "verified_link"
-        },
-        {
-          "url": "https://2crowsbrewing.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2F2crowsbrewing.com%2F&format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://2crowsbrewing.com/",
-          "reviewState": "verified_link",
-          "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-08-29T02:33:28.415Z"
         }
       ],
       "sitemaps": [
@@ -13268,54 +12028,6 @@
           "title": "Good Robot Brewing Co. &raquo; Comments Feed",
           "discoveredFrom": "https://goodrobotbrewing.ca/",
           "reviewState": "verified_link"
-        },
-        {
-          "url": "https://shop.goodrobotbrewing.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshop.goodrobotbrewing.ca%2F&#038;format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://goodrobotbrewing.ca/",
-          "reviewState": "verified_link"
-        },
-        {
-          "url": "https://goodrobotbrewing.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fgoodrobotbrewing.ca%2Flocations%2F&#038;format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://goodrobotbrewing.ca/locations/",
-          "reviewState": "verified_link"
-        },
-        {
-          "url": "https://goodrobotbrewing.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fgoodrobotbrewing.ca%2Fcontact%2F&#038;format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://goodrobotbrewing.ca/contact/",
-          "reviewState": "verified_link"
-        },
-        {
-          "url": "https://shop.goodrobotbrewing.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshop.goodrobotbrewing.ca%2F&format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://goodrobotbrewing.ca/",
-          "reviewState": "verified_link",
-          "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-08-29T02:33:28.415Z"
-        },
-        {
-          "url": "https://goodrobotbrewing.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fgoodrobotbrewing.ca%2Flocations%2F&format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://goodrobotbrewing.ca/locations/",
-          "reviewState": "verified_link",
-          "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-08-29T02:33:28.415Z"
-        },
-        {
-          "url": "https://goodrobotbrewing.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fgoodrobotbrewing.ca%2Fcontact%2F&format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://goodrobotbrewing.ca/contact/",
-          "reviewState": "verified_link",
-          "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-08-29T02:33:28.415Z"
         }
       ],
       "sitemaps": [
@@ -13910,38 +12622,6 @@
           "title": "Sushi Nami Royale &raquo; Comments Feed",
           "discoveredFrom": "https://sushinami.ca/",
           "reviewState": "verified_link"
-        },
-        {
-          "url": "https://sushinami.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fsushinami.ca%2F&#038;format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://sushinami.ca/",
-          "reviewState": "verified_link"
-        },
-        {
-          "url": "https://sushinami.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fsushinami.ca%2Fdowntown-halifax%2F&#038;format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://sushinami.ca/downtown-halifax/",
-          "reviewState": "verified_link"
-        },
-        {
-          "url": "https://sushinami.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fsushinami.ca%2F&format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://sushinami.ca/",
-          "reviewState": "verified_link",
-          "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-08-29T02:33:28.415Z"
-        },
-        {
-          "url": "https://sushinami.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fsushinami.ca%2Fdowntown-halifax%2F&format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://sushinami.ca/downtown-halifax/",
-          "reviewState": "verified_link",
-          "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-08-29T02:33:28.415Z"
         }
       ],
       "sitemaps": [],
@@ -14035,22 +12715,6 @@
           "title": "Donnini's Pizza &raquo; Comments Feed",
           "discoveredFrom": "https://donninispizza.com/",
           "reviewState": "verified_link"
-        },
-        {
-          "url": "https://donninispizza.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdonninispizza.com%2F&#038;format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://donninispizza.com/",
-          "reviewState": "verified_link"
-        },
-        {
-          "url": "https://donninispizza.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdonninispizza.com%2F&format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://donninispizza.com/",
-          "reviewState": "verified_link",
-          "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-08-29T02:33:28.415Z"
         }
       ],
       "sitemaps": [
@@ -14407,56 +13071,7 @@
           "carriedForwardAt": "2026-08-29T02:33:28.415Z"
         }
       ],
-      "feeds": [
-        {
-          "url": "https://ukings.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fukings.ca%2Fcampus-community%2Fstudent-life%2Fthe-wardroom%2F&#038;format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://ukings.ca/campus-community/student-life/the-wardroom/",
-          "reviewState": "verified_link"
-        },
-        {
-          "url": "https://ukings.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fukings.ca%2Fcampus-community%2Fabout-kings%2F&#038;format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://ukings.ca/campus-community/about-kings/",
-          "reviewState": "verified_link"
-        },
-        {
-          "url": "https://ukings.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fukings.ca%2Falumni%2Fconnect%2F&#038;format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://ukings.ca/alumni/connect/",
-          "reviewState": "verified_link"
-        },
-        {
-          "url": "https://ukings.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fukings.ca%2Fcampus-community%2Fstudent-life%2Fthe-wardroom%2F&format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://ukings.ca/campus-community/student-life/the-wardroom/",
-          "reviewState": "verified_link",
-          "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-08-29T02:33:28.415Z"
-        },
-        {
-          "url": "https://ukings.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fukings.ca%2Fcampus-community%2Fabout-kings%2F&format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://ukings.ca/campus-community/about-kings/",
-          "reviewState": "verified_link",
-          "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-08-29T02:33:28.415Z"
-        },
-        {
-          "url": "https://ukings.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fukings.ca%2Falumni%2Fconnect%2F&format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://ukings.ca/alumni/connect/",
-          "reviewState": "verified_link",
-          "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-08-29T02:33:28.415Z"
-        }
-      ],
+      "feeds": [],
       "sitemaps": [],
       "sourceKind": "official_website_discovery",
       "reviewState": "verified"
@@ -14596,56 +13211,7 @@
           "status": "active"
         }
       ],
-      "feeds": [
-        {
-          "url": "https://orsopub.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Forsopub.ca%2F&#038;format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://orsopub.ca/",
-          "reviewState": "verified_link"
-        },
-        {
-          "url": "https://orsopub.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Forsopub.ca%2Fabout%2F&#038;format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://orsopub.ca/about/",
-          "reviewState": "verified_link"
-        },
-        {
-          "url": "https://orsopub.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Forsopub.ca%2Fcontact%2F&#038;format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://orsopub.ca/contact/",
-          "reviewState": "verified_link"
-        },
-        {
-          "url": "https://orsopub.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Forsopub.ca%2F&format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://orsopub.ca/",
-          "reviewState": "verified_link",
-          "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-08-29T02:33:28.415Z"
-        },
-        {
-          "url": "https://orsopub.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Forsopub.ca%2Fabout%2F&format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://orsopub.ca/about/",
-          "reviewState": "verified_link",
-          "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-08-29T02:33:28.415Z"
-        },
-        {
-          "url": "https://orsopub.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Forsopub.ca%2Fcontact%2F&format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://orsopub.ca/contact/",
-          "reviewState": "verified_link",
-          "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-08-29T02:33:28.415Z"
-        }
-      ],
+      "feeds": [],
       "sitemaps": [
         "https://orsopub.ca/wp-sitemap.xml"
       ],
@@ -14842,15 +13408,6 @@
           "url": "https://afrite.ca/comments/feed/",
           "type": "application/rss+xml",
           "title": "aFrite &raquo; Comments Feed",
-          "discoveredFrom": "https://afrite.ca/",
-          "reviewState": "verified_link",
-          "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-08-29T02:33:28.415Z"
-        },
-        {
-          "url": "https://afrite.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fafrite.ca%2F&format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
           "discoveredFrom": "https://afrite.ca/",
           "reviewState": "verified_link",
           "refreshState": "carried_forward_previous_verification",
@@ -15471,24 +14028,6 @@
           "reviewState": "verified_link",
           "refreshState": "carried_forward_previous_verification",
           "carriedForwardAt": "2026-08-29T02:33:28.415Z"
-        },
-        {
-          "url": "https://www.mexicalirosas.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.mexicalirosas.com%2Fhalifax%2F&format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://www.mexicalirosas.com/halifax/",
-          "reviewState": "verified_link",
-          "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-08-29T02:33:28.415Z"
-        },
-        {
-          "url": "https://www.mexicalirosas.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.mexicalirosas.com%2Fcontact-us%2F&format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://www.mexicalirosas.com/contact-us/",
-          "reviewState": "verified_link",
-          "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-08-29T02:33:28.415Z"
         }
       ],
       "sitemaps": [],
@@ -15630,56 +14169,7 @@
           "status": "active"
         }
       ],
-      "feeds": [
-        {
-          "url": "https://www.rcr.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.rcr.ca%2Frestaurants%2Fcut-steakhouse%2F&#038;format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://www.rcr.ca/restaurants/cut-steakhouse/",
-          "reviewState": "verified_link"
-        },
-        {
-          "url": "https://www.rcr.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.rcr.ca%2Frestaurants%2F&#038;format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://www.rcr.ca/restaurants/",
-          "reviewState": "verified_link"
-        },
-        {
-          "url": "https://www.rcr.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.rcr.ca%2Fabout%2Fcareers%2F&#038;format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://www.rcr.ca/about/careers/",
-          "reviewState": "verified_link"
-        },
-        {
-          "url": "https://www.rcr.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.rcr.ca%2Frestaurants%2Fcut-steakhouse%2F&format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://www.rcr.ca/restaurants/cut-steakhouse/",
-          "reviewState": "verified_link",
-          "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-08-29T02:33:28.415Z"
-        },
-        {
-          "url": "https://www.rcr.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.rcr.ca%2Frestaurants%2F&format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://www.rcr.ca/restaurants/",
-          "reviewState": "verified_link",
-          "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-08-29T02:33:28.415Z"
-        },
-        {
-          "url": "https://www.rcr.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.rcr.ca%2Fabout%2Fcareers%2F&format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://www.rcr.ca/about/careers/",
-          "reviewState": "verified_link",
-          "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-08-29T02:33:28.415Z"
-        }
-      ],
+      "feeds": [],
       "sitemaps": [
         "https://www.rcr.ca/sitemap.xml",
         "https://www.rcr.ca/sitemap.rss"
@@ -16068,22 +14558,6 @@
           "title": "Antojo Tacos + Tequila &raquo; Comments Feed",
           "discoveredFrom": "https://antojo.ca/",
           "reviewState": "verified_link"
-        },
-        {
-          "url": "https://antojo.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fantojo.ca%2F&#038;format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://antojo.ca/",
-          "reviewState": "verified_link"
-        },
-        {
-          "url": "https://antojo.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fantojo.ca%2F&format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://antojo.ca/",
-          "reviewState": "verified_link",
-          "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-08-29T02:33:28.415Z"
         }
       ],
       "sitemaps": [
@@ -16353,54 +14827,6 @@
           "title": "Ela! Greek Restaurant &raquo; Comments Feed",
           "discoveredFrom": "https://elagreektaverna.com/",
           "reviewState": "verified_link"
-        },
-        {
-          "url": "https://elagreektaverna.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Felagreektaverna.com%2F&#038;format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://elagreektaverna.com/",
-          "reviewState": "verified_link"
-        },
-        {
-          "url": "https://elagreektaverna.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Felagreektaverna.com%2Fabout%2F&#038;format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://elagreektaverna.com/about/",
-          "reviewState": "verified_link"
-        },
-        {
-          "url": "https://elagreektaverna.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Felagreektaverna.com%2Fcontact%2F&#038;format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://elagreektaverna.com/contact/",
-          "reviewState": "verified_link"
-        },
-        {
-          "url": "https://elagreektaverna.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Felagreektaverna.com%2F&format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://elagreektaverna.com/",
-          "reviewState": "verified_link",
-          "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-08-29T02:33:28.415Z"
-        },
-        {
-          "url": "https://elagreektaverna.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Felagreektaverna.com%2Fabout%2F&format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://elagreektaverna.com/about/",
-          "reviewState": "verified_link",
-          "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-08-29T02:33:28.415Z"
-        },
-        {
-          "url": "https://elagreektaverna.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Felagreektaverna.com%2Fcontact%2F&format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://elagreektaverna.com/contact/",
-          "reviewState": "verified_link",
-          "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-08-29T02:33:28.415Z"
         }
       ],
       "sitemaps": [
@@ -17026,38 +15452,6 @@
           "title": "Moxies Restaurant &raquo; Comments Feed",
           "discoveredFrom": "https://moxies.com/",
           "reviewState": "verified_link"
-        },
-        {
-          "url": "https://moxies.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmoxies.com%2F&#038;format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://moxies.com/",
-          "reviewState": "verified_link"
-        },
-        {
-          "url": "https://moxies.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmoxies.com%2Fabout%2F&#038;format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://moxies.com/about/",
-          "reviewState": "verified_link"
-        },
-        {
-          "url": "https://moxies.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmoxies.com%2F&format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://moxies.com/",
-          "reviewState": "verified_link",
-          "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-08-29T02:33:28.415Z"
-        },
-        {
-          "url": "https://moxies.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmoxies.com%2Fabout%2F&format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://moxies.com/about/",
-          "reviewState": "verified_link",
-          "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-08-29T02:33:28.415Z"
         }
       ],
       "sitemaps": [
@@ -17123,54 +15517,6 @@
           "title": "Gahan House &raquo; Feed",
           "discoveredFrom": "https://gahan.ca/",
           "reviewState": "verified_link"
-        },
-        {
-          "url": "https://gahan.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fgahan.ca%2F&#038;format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://gahan.ca/",
-          "reviewState": "verified_link"
-        },
-        {
-          "url": "https://gahan.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fgahan.ca%2Frestaurants%2F&#038;format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://gahan.ca/restaurants/",
-          "reviewState": "verified_link"
-        },
-        {
-          "url": "https://gahan.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fgahan.ca%2Four-story%2F&#038;format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://gahan.ca/our-story/",
-          "reviewState": "verified_link"
-        },
-        {
-          "url": "https://gahan.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fgahan.ca%2F&format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://gahan.ca/",
-          "reviewState": "verified_link",
-          "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-08-29T02:33:28.415Z"
-        },
-        {
-          "url": "https://gahan.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fgahan.ca%2Frestaurants%2F&format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://gahan.ca/restaurants/",
-          "reviewState": "verified_link",
-          "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-08-29T02:33:28.415Z"
-        },
-        {
-          "url": "https://gahan.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fgahan.ca%2Four-story%2F&format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://gahan.ca/our-story/",
-          "reviewState": "verified_link",
-          "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-08-29T02:33:28.415Z"
         }
       ],
       "sitemaps": [
@@ -17341,56 +15687,7 @@
           "status": "active"
         }
       ],
-      "feeds": [
-        {
-          "url": "https://www.rcr.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.rcr.ca%2Frestaurants%2Fshuck-seafood-raw-bar%2F&#038;format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://www.rcr.ca/restaurants/shuck-seafood-raw-bar/",
-          "reviewState": "verified_link"
-        },
-        {
-          "url": "https://www.rcr.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.rcr.ca%2Frestaurants%2F&#038;format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://www.rcr.ca/restaurants/",
-          "reviewState": "verified_link"
-        },
-        {
-          "url": "https://www.rcr.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.rcr.ca%2Fabout%2Fcareers%2F&#038;format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://www.rcr.ca/about/careers/",
-          "reviewState": "verified_link"
-        },
-        {
-          "url": "https://www.rcr.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.rcr.ca%2Frestaurants%2Fshuck-seafood-raw-bar%2F&format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://www.rcr.ca/restaurants/shuck-seafood-raw-bar/",
-          "reviewState": "verified_link",
-          "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-08-29T02:33:28.415Z"
-        },
-        {
-          "url": "https://www.rcr.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.rcr.ca%2Frestaurants%2F&format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://www.rcr.ca/restaurants/",
-          "reviewState": "verified_link",
-          "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-08-29T02:33:28.415Z"
-        },
-        {
-          "url": "https://www.rcr.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.rcr.ca%2Fabout%2Fcareers%2F&format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://www.rcr.ca/about/careers/",
-          "reviewState": "verified_link",
-          "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-08-29T02:33:28.415Z"
-        }
-      ],
+      "feeds": [],
       "sitemaps": [
         "https://www.rcr.ca/sitemap.xml",
         "https://www.rcr.ca/sitemap.rss"
@@ -17436,13 +15733,6 @@
           "url": "https://pgcafeandgrill.com/comments/feed/",
           "type": "application/rss+xml",
           "title": "PG Cafe & Grill &raquo; Comments Feed",
-          "discoveredFrom": "https://pgcafeandgrill.com/",
-          "reviewState": "verified_link"
-        },
-        {
-          "url": "https://pgcafeandgrill.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2F%2F#038;format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
           "discoveredFrom": "https://pgcafeandgrill.com/",
           "reviewState": "verified_link"
         }
@@ -17567,56 +15857,7 @@
           "status": "active"
         }
       ],
-      "feeds": [
-        {
-          "url": "https://www.rcr.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.rcr.ca%2Frestaurants%2Fwaterfront-warehouse%2F&#038;format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://www.rcr.ca/restaurants/waterfront-warehouse/",
-          "reviewState": "verified_link"
-        },
-        {
-          "url": "https://www.rcr.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.rcr.ca%2Frestaurants%2F&#038;format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://www.rcr.ca/restaurants/",
-          "reviewState": "verified_link"
-        },
-        {
-          "url": "https://www.rcr.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.rcr.ca%2Fabout%2Fcareers%2F&#038;format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://www.rcr.ca/about/careers/",
-          "reviewState": "verified_link"
-        },
-        {
-          "url": "https://www.rcr.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.rcr.ca%2Frestaurants%2Fwaterfront-warehouse%2F&format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://www.rcr.ca/restaurants/waterfront-warehouse/",
-          "reviewState": "verified_link",
-          "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-08-29T02:33:28.415Z"
-        },
-        {
-          "url": "https://www.rcr.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.rcr.ca%2Frestaurants%2F&format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://www.rcr.ca/restaurants/",
-          "reviewState": "verified_link",
-          "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-08-29T02:33:28.415Z"
-        },
-        {
-          "url": "https://www.rcr.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.rcr.ca%2Fabout%2Fcareers%2F&format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://www.rcr.ca/about/careers/",
-          "reviewState": "verified_link",
-          "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-08-29T02:33:28.415Z"
-        }
-      ],
+      "feeds": [],
       "sitemaps": [
         "https://www.rcr.ca/sitemap.xml",
         "https://www.rcr.ca/sitemap.rss"
@@ -17737,22 +15978,6 @@
           "title": "Smokehouse Brewery &raquo; Comments Feed",
           "discoveredFrom": "https://smokehousebrewery.ca/",
           "reviewState": "verified_link"
-        },
-        {
-          "url": "https://smokehousebrewery.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fsmokehousebrewery.ca%2F&#038;format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://smokehousebrewery.ca/",
-          "reviewState": "verified_link"
-        },
-        {
-          "url": "https://smokehousebrewery.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fsmokehousebrewery.ca%2F&format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://smokehousebrewery.ca/",
-          "reviewState": "verified_link",
-          "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-08-29T02:33:28.415Z"
         }
       ],
       "sitemaps": [
@@ -18142,15 +16367,6 @@
           "title": "BarBurrito &raquo; Feed",
           "discoveredFrom": "https://www.barburrito.ca/location/dartmouth/",
           "reviewState": "verified_link"
-        },
-        {
-          "url": "https://www.barburrito.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.barburrito.ca%2Flocation%2Fdartmouth%2F&format=xml",
-          "type": "text/xml+oembed",
-          "title": "Website feed",
-          "discoveredFrom": "https://www.barburrito.ca/location/dartmouth/",
-          "reviewState": "verified_link",
-          "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-08-29T02:33:28.415Z"
         }
       ],
       "sitemaps": [
@@ -18891,22 +17107,6 @@
           "title": "Trident Booksellers & Cafe &raquo; Comments Feed",
           "discoveredFrom": "https://tridenthalifax.ca/",
           "reviewState": "verified_link"
-        },
-        {
-          "url": "https://tridenthalifax.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Ftridenthalifax.ca%2Fcontact-the-trident%2F&#038;format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://tridenthalifax.ca/contact-the-trident/",
-          "reviewState": "verified_link"
-        },
-        {
-          "url": "https://tridenthalifax.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Ftridenthalifax.ca%2Fcontact-the-trident%2F&format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://tridenthalifax.ca/contact-the-trident/",
-          "reviewState": "verified_link",
-          "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-08-29T02:33:28.415Z"
         }
       ],
       "sitemaps": [],
@@ -19045,56 +17245,7 @@
           "status": "active"
         }
       ],
-      "feeds": [
-        {
-          "url": "https://www.rcr.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.rcr.ca%2Frestaurants%2Fpazzo-italian-ristorante%2F&#038;format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://www.rcr.ca/restaurants/pazzo-italian-ristorante/",
-          "reviewState": "verified_link"
-        },
-        {
-          "url": "https://www.rcr.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.rcr.ca%2Frestaurants%2F&#038;format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://www.rcr.ca/restaurants/",
-          "reviewState": "verified_link"
-        },
-        {
-          "url": "https://www.rcr.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.rcr.ca%2Fabout%2Fcareers%2F&#038;format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://www.rcr.ca/about/careers/",
-          "reviewState": "verified_link"
-        },
-        {
-          "url": "https://www.rcr.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.rcr.ca%2Frestaurants%2Fpazzo-italian-ristorante%2F&format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://www.rcr.ca/restaurants/pazzo-italian-ristorante/",
-          "reviewState": "verified_link",
-          "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-08-29T02:33:28.415Z"
-        },
-        {
-          "url": "https://www.rcr.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.rcr.ca%2Frestaurants%2F&format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://www.rcr.ca/restaurants/",
-          "reviewState": "verified_link",
-          "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-08-29T02:33:28.415Z"
-        },
-        {
-          "url": "https://www.rcr.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.rcr.ca%2Fabout%2Fcareers%2F&format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://www.rcr.ca/about/careers/",
-          "reviewState": "verified_link",
-          "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-08-29T02:33:28.415Z"
-        }
-      ],
+      "feeds": [],
       "sitemaps": [
         "https://www.rcr.ca/sitemap.xml",
         "https://www.rcr.ca/sitemap.rss"
@@ -19294,27 +17445,11 @@
       ],
       "feeds": [
         {
-          "url": "https://www.kingofdonair.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.kingofdonair.ca%2Forder-online-choose-a-location%2F&#038;format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://www.kingofdonair.ca/order-online-choose-a-location/",
-          "reviewState": "verified_link"
-        },
-        {
           "url": "https://www.kingofdonair.ca/our-story/feed/",
           "type": "application/rss+xml",
           "title": "King of Donair &raquo; Our story Feed",
           "discoveredFrom": "https://www.kingofdonair.ca/our-story/",
           "reviewState": "verified_link"
-        },
-        {
-          "url": "https://www.kingofdonair.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.kingofdonair.ca%2Forder-online-choose-a-location%2F&format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://www.kingofdonair.ca/order-online-choose-a-location/",
-          "reviewState": "verified_link",
-          "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-08-29T02:33:28.415Z"
         }
       ],
       "sitemaps": [
@@ -19564,54 +17699,6 @@
           "title": "Mothers Pizza - Halifax Ns | Mothers Pizza &raquo; Comments Feed",
           "discoveredFrom": "https://motherspizzahalifax.ca/",
           "reviewState": "verified_link"
-        },
-        {
-          "url": "https://motherspizzahalifax.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmotherspizzahalifax.ca%2F&#038;format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://motherspizzahalifax.ca/",
-          "reviewState": "verified_link"
-        },
-        {
-          "url": "https://motherspizzahalifax.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmotherspizzahalifax.ca%2Fmenu-restaurant%2F&#038;format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://motherspizzahalifax.ca/menu-restaurant/",
-          "reviewState": "verified_link"
-        },
-        {
-          "url": "https://motherspizzahalifax.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmotherspizzahalifax.ca%2Fabout-us%2F&#038;format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://motherspizzahalifax.ca/about-us/",
-          "reviewState": "verified_link"
-        },
-        {
-          "url": "https://motherspizzahalifax.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmotherspizzahalifax.ca%2F&format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://motherspizzahalifax.ca/",
-          "reviewState": "verified_link",
-          "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-08-29T02:33:28.415Z"
-        },
-        {
-          "url": "https://motherspizzahalifax.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmotherspizzahalifax.ca%2Fmenu-restaurant%2F&format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://motherspizzahalifax.ca/menu-restaurant/",
-          "reviewState": "verified_link",
-          "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-08-29T02:33:28.415Z"
-        },
-        {
-          "url": "https://motherspizzahalifax.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmotherspizzahalifax.ca%2Fabout-us%2F&format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://motherspizzahalifax.ca/about-us/",
-          "reviewState": "verified_link",
-          "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-08-29T02:33:28.415Z"
         }
       ],
       "sitemaps": [
@@ -19734,22 +17821,6 @@
           "title": "IHOP Canada &raquo; Feed",
           "discoveredFrom": "https://ihop.ca/",
           "reviewState": "verified_link"
-        },
-        {
-          "url": "https://ihop.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fihop.ca%2F&#038;format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://ihop.ca/",
-          "reviewState": "verified_link"
-        },
-        {
-          "url": "https://ihop.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fihop.ca%2F&format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://ihop.ca/",
-          "reviewState": "verified_link",
-          "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-08-29T02:33:28.415Z"
         }
       ],
       "sitemaps": [
@@ -20360,54 +18431,6 @@
           "title": "The Armview Restaurant & Lounge &raquo; Comments Feed",
           "discoveredFrom": "https://www.thearmview.com/",
           "reviewState": "verified_link"
-        },
-        {
-          "url": "https://www.thearmview.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.thearmview.com%2F&#038;format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://www.thearmview.com/",
-          "reviewState": "verified_link"
-        },
-        {
-          "url": "https://www.thearmview.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.thearmview.com%2Fabout-the-armview%2F&#038;format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://www.thearmview.com/about-the-armview/",
-          "reviewState": "verified_link"
-        },
-        {
-          "url": "https://www.thearmview.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.thearmview.com%2Fcontact-us%2F&#038;format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://www.thearmview.com/contact-us/",
-          "reviewState": "verified_link"
-        },
-        {
-          "url": "https://www.thearmview.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.thearmview.com%2F&format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://www.thearmview.com/",
-          "reviewState": "verified_link",
-          "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-08-29T02:33:28.415Z"
-        },
-        {
-          "url": "https://www.thearmview.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.thearmview.com%2Fabout-the-armview%2F&format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://www.thearmview.com/about-the-armview/",
-          "reviewState": "verified_link",
-          "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-08-29T02:33:28.415Z"
-        },
-        {
-          "url": "https://www.thearmview.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.thearmview.com%2Fcontact-us%2F&format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://www.thearmview.com/contact-us/",
-          "reviewState": "verified_link",
-          "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-08-29T02:33:28.415Z"
         }
       ],
       "sitemaps": [],
@@ -20504,54 +18527,6 @@
           "title": "Chinatown Restaurant &raquo; 评论 Feed",
           "discoveredFrom": "https://www.chinatownhalifax.com/",
           "reviewState": "verified_link"
-        },
-        {
-          "url": "https://www.chinatownhalifax.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.chinatownhalifax.com%2F&#038;format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://www.chinatownhalifax.com/",
-          "reviewState": "verified_link"
-        },
-        {
-          "url": "https://www.chinatownhalifax.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.chinatownhalifax.com%2Fabout-us%2F&#038;format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://www.chinatownhalifax.com/about-us/",
-          "reviewState": "verified_link"
-        },
-        {
-          "url": "https://www.chinatownhalifax.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.chinatownhalifax.com%2Fcontact-us%2F&#038;format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://www.chinatownhalifax.com/contact-us/",
-          "reviewState": "verified_link"
-        },
-        {
-          "url": "https://www.chinatownhalifax.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.chinatownhalifax.com%2F&format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://www.chinatownhalifax.com/",
-          "reviewState": "verified_link",
-          "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-08-29T02:33:28.415Z"
-        },
-        {
-          "url": "https://www.chinatownhalifax.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.chinatownhalifax.com%2Fabout-us%2F&format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://www.chinatownhalifax.com/about-us/",
-          "reviewState": "verified_link",
-          "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-08-29T02:33:28.415Z"
-        },
-        {
-          "url": "https://www.chinatownhalifax.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.chinatownhalifax.com%2Fcontact-us%2F&format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://www.chinatownhalifax.com/contact-us/",
-          "reviewState": "verified_link",
-          "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-08-29T02:33:28.415Z"
         }
       ],
       "sitemaps": [],
@@ -20926,54 +18901,6 @@
           "title": "May Garden Chinese Restaurant &raquo; Comments Feed",
           "discoveredFrom": "https://maygarden.ca/",
           "reviewState": "verified_link"
-        },
-        {
-          "url": "https://maygarden.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmaygarden.ca%2F&#038;format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://maygarden.ca/",
-          "reviewState": "verified_link"
-        },
-        {
-          "url": "https://maygarden.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmaygarden.ca%2Fabout-2%2F&#038;format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://maygarden.ca/about-2/",
-          "reviewState": "verified_link"
-        },
-        {
-          "url": "https://maygarden.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmaygarden.ca%2Fcontact-us-2%2F&#038;format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://maygarden.ca/contact-us-2/",
-          "reviewState": "verified_link"
-        },
-        {
-          "url": "https://maygarden.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmaygarden.ca%2F&format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://maygarden.ca/",
-          "reviewState": "verified_link",
-          "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-08-29T02:33:28.415Z"
-        },
-        {
-          "url": "https://maygarden.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmaygarden.ca%2Fabout-2%2F&format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://maygarden.ca/about-2/",
-          "reviewState": "verified_link",
-          "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-08-29T02:33:28.415Z"
-        },
-        {
-          "url": "https://maygarden.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmaygarden.ca%2Fcontact-us-2%2F&format=xml",
-          "type": "text/xml+oembed",
-          "title": "oEmbed (XML)",
-          "discoveredFrom": "https://maygarden.ca/contact-us-2/",
-          "reviewState": "verified_link",
-          "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-08-29T02:33:28.415Z"
         }
       ],
       "sitemaps": [
@@ -21787,16 +19714,18 @@
   "facebookCount": 118,
   "instagramCount": 132,
   "sanitization": {
-    "appliedAt": "2026-08-29T02:33:28.609Z",
+    "appliedAt": "2026-08-29T05:06:17.646Z",
     "registryVersion": 1,
     "removedGenericOrInvalidProfiles": 0,
-    "duplicateProfilesRemoved": 8,
-    "normalizedFacebookLegacyProfiles": 15,
-    "sharedBrandProfilesFlagged": 2,
+    "duplicateProfilesRemoved": 0,
+    "normalizedFacebookLegacyProfiles": 0,
+    "sharedBrandProfilesFlagged": 0,
     "removedGenericOrInvalidLinkHubs": 0,
     "duplicateLinkHubsRemoved": 0,
     "removedInvalidRelatedLinks": 0,
-    "duplicateRelatedLinksRemoved": 26
+    "duplicateRelatedLinksRemoved": 0,
+    "removedInvalidOrOembedFeeds": 254,
+    "duplicateFeedsRemoved": 3
   },
   "selectiveReview": {
     "sourceRunId": 33233032764,
