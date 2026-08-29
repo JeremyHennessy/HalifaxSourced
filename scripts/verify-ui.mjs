@@ -235,6 +235,8 @@ await page.waitForFunction(() => {
   const image = document.querySelector("#detailUpdates .official-update-media");
   return image instanceof HTMLImageElement && image.complete && image.naturalWidth > 0;
 });
+await page.evaluate(() => window.scrollTo(0, 0));
+await page.waitForTimeout(100);
 await captureIphone("official-update-media");
 await page.goto(`${url}/#restaurant/marias-pantry-dartmouth`, { waitUntil: "networkidle" });
 await page.locator("#detailLinks .source-link-row").first().waitFor();
