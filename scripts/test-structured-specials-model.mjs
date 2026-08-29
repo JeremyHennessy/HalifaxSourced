@@ -38,6 +38,13 @@ const catalog = {
 await writeFile(join(buildDir, "catalog.json"), JSON.stringify(catalog, null, 2));
 await writeFile(join(buildDir, "first-party-sources.json"), JSON.stringify({ records: [] }, null, 2));
 await writeFile(join(buildDir, "verified-source-pages.json"), JSON.stringify({ menuSources: [], specialSources: [] }, null, 2));
+await writeFile(join(root, "data", "discovery-overrides.json"), JSON.stringify({ approved: [{
+  id: "fixture-discovered",
+  name: "Fixture Discovery",
+  freshnessDate: recent.slice(0, 10),
+  specials: [{ title: "Daily Feature", cadence: "Daily 5 pm - 7 pm", sourceUrl: "https://discovered.example/specials", sourceStatus: "verified", observedAt: recent }],
+  sources: [{ url: "https://discovered.example/" }]
+}] }, null, 2));
 
 const result = await new Promise((resolve) => {
   const child = spawn(process.execPath, [join(scriptsDir, "build-structured-specials.mjs")], { cwd: root, stdio: ["ignore", "pipe", "pipe"] });
@@ -51,9 +58,12 @@ if (result.code !== 0) throw new Error(`Structured-special fixture builder faile
 const output = JSON.parse(await readFile(join(buildDir, "structured-specials.json"), "utf8"));
 const happy = output.records.find((item) => item.title === "Happy Hour");
 const wings = output.records.find((item) => item.title === "Wing Night");
+const discovered = output.records.find((item) => item.restaurantId === "fixture-discovered");
 function assert(condition, message) { if (!condition) throw new Error(message); }
 assert(happy, "Happy Hour fixture record missing.");
 assert(wings, "Wing Night fixture record missing.");
+assert(discovered, "Approved discovery special must enter the canonical structured-special output.");
+assert(output.orphanSourceCount === 0, `Approved discovery special must not be orphaned, got ${output.orphanSourceCount}.`);
 assert(happy.price === null, `Missing price must remain null, got ${happy.price}.`);
 assert(happy.verifiedAt === null, `General restaurant freshness must not become special verification, got ${happy.verifiedAt}.`);
 assert(happy.status === "stale", `Source-marked verified special without its own verification timestamp must be stale, got ${happy.status}.`);
