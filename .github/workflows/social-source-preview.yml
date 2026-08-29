@@ -17,6 +17,8 @@ on:
       - scripts/import-first-party-feed-signals.mjs
       - scripts/import-meta-social.mjs
       - scripts/build-recent-social-posts.mjs
+      - scripts/build-thumbnail-candidates.mjs
+      - scripts/check-thumbnail-candidates.mjs
       - scripts/check-expanded-sources.mjs
 
 permissions:
@@ -82,8 +84,19 @@ jobs:
       - name: Analyze and categorize recent posts
         run: node scripts/build-recent-social-posts.mjs
 
+      - name: Discover source-backed thumbnail candidates
+        env:
+          THUMBNAIL_DISCOVERY_FETCH: 1
+          THUMBNAIL_DISCOVERY_PAGE_LIMIT: 260
+          THUMBNAIL_DISCOVERY_PAGES_PER_RESTAURANT: 3
+          THUMBNAIL_DISCOVERY_DELAY_MS: 120
+          THUMBNAIL_DISCOVERY_TIMEOUT_MS: 9000
+        run: node scripts/build-thumbnail-candidates.mjs
+
       - name: Validate expanded source data
-        run: node scripts/check-expanded-sources.mjs
+        run: |
+          node scripts/check-expanded-sources.mjs
+          node scripts/check-thumbnail-candidates.mjs
 
       - name: Upload social source preview
         uses: actions/upload-artifact@v4
@@ -98,6 +111,9 @@ jobs:
             data/build/social-signals.json
             data/recent-social-posts.js
             data/build/recent-social-posts.json
+            data/thumbnail-candidates.js
+            data/build/thumbnail-candidates.json
             artifacts/expanded-source-integrity-report.json
+            artifacts/thumbnail-candidates-report.json
           if-no-files-found: error
           retention-days: 30
