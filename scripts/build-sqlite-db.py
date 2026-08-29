@@ -432,7 +432,7 @@ for signal in official_signals.get("results", []):
             ),
         )
 
-for record in first_party_sources.get("records", []):
+for record in first_party_sources.get("records", []) or []:
     restaurant_id = record.get("restaurantId")
     cur.execute(
         "insert or replace into first_party_sources values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
@@ -494,7 +494,7 @@ for post in website_feed_signals.get("posts", []) or []:
 
 for post in social_signals.get("posts", []) or []:
     cur.execute(
-        "insert into meta_social_posts values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
+        "insert into meta_social_posts values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
         (
             post.get("restaurantId"),
             post.get("restaurantName"),
