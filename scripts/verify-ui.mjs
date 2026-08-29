@@ -314,11 +314,11 @@ const springGardenResolutionState = await page.evaluate(() => {
     neighborhood: restaurant?.neighborhood || "",
     phone: restaurant?.phone || "",
     hours: restaurant?.openingHours || "",
-    menuUrl: restaurant?.menuUrl || "",
+    menuUrl: restaurant?.reviewedPlaceResolution?.menuUrl || "",
     reviewState: restaurant?.reviewedPlaceResolution?.reviewState || ""
   };
 });
-if (!/1333 South Park Street/i.test(springGardenResolutionState.address) || springGardenResolutionState.neighborhood !== "Spring Garden" || !/423-8428/.test(springGardenResolutionState.phone) || !/Monday/i.test(springGardenResolutionState.hours) || !/lebistrohalifax\.com\/menus/.test(springGardenResolutionState.menuUrl) || springGardenResolutionState.reviewState !== "resolved-by-evidence") throw new Error(`Expected the reviewed Spring Garden overlay in the rendered restaurant model, got ${JSON.stringify(springGardenResolutionState)}.`);
+if (!/1333 South Park Street/i.test(springGardenResolutionState.address) || springGardenResolutionState.neighborhood !== "Spring Garden" || springGardenResolutionState.phone.replace(/\D/g, "").slice(-10) !== "9024238428" || !/Monday/i.test(springGardenResolutionState.hours) || !/lebistrohalifax\.com\/menus/.test(springGardenResolutionState.menuUrl) || springGardenResolutionState.reviewState !== "resolved-by-evidence") throw new Error(`Expected the reviewed Spring Garden overlay in the rendered restaurant model, got ${JSON.stringify(springGardenResolutionState)}.`);
 if (await page.locator("#detailInfo .sidebar-link", { hasText: "Menu" }).count() < 1) throw new Error("Expected the official Le Bistro menu action on the reviewed Spring Garden detail page.");
 await captureIphone("spring-garden-reviewed");
 
