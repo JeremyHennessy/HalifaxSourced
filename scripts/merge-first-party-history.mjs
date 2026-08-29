@@ -11,6 +11,7 @@ const registry = JSON.parse(await readFile(new URL("../data/social-platform-regi
 const platformById = new Map((registry.platforms || []).map((platform) => [platform.id, platform]));
 const associationBases = new Set(registry.associationBases || []);
 const carryMaxDays = Math.max(1, Number(process.env.FIRST_PARTY_CARRY_FORWARD_MAX_DAYS || 180));
+const preserveUnrefreshedRecords = process.env.FIRST_PARTY_PRESERVE_UNREFRESHED_RECORDS === "1";
 const generatedAt = current.generatedAt || new Date().toISOString();
 const generatedStamp = Date.parse(generatedAt);
 const previousByRestaurant = new Map((previous.records || []).map((record) => [record.restaurantId, record]));
@@ -151,6 +152,12 @@ let carriedFeeds = 0;
 let carriedRecords = 0;
 let rejectedPreviousProfiles = 0;
 for (const [restaurantId, oldRecord] of previousByRestaurant) {
+  if (preserveUnrefreshedRecords && !currentByRestaurant.has(restaurantId)) {
+    current.records.push(oldRecord);
+    currentByRestaurant.set(restaurantId, oldRecord);
+    carriedRecords += 1;
+    continue;
+  }
   const oldPlatformItems = [];
   for (const old of oldRecord.socialProfiles || []) {
     const upgraded = upgradePlatformItem(old, oldRecord);
@@ -166,7 +173,7 @@ for (const [restaurantId, oldRecord] of previousByRestaurant) {
   const previousFeeds = (oldRecord.feeds || []).map((item) => upgradeFeed(item, oldRecord)).filter(Boolean);
   let record = currentByRestaurant.get(restaurantId);
   if (!record) {
-    if (!previousProfiles.length && !previousHubs.length && !previousRelated.length && !previousFeeds.length) continue;
+    if (!preserveUnrefreshedRecords && !previousProfiles.length && !previousHubs.length && !previousRelated.length && !previousFeeds.length) continue;
     record = {
       restaurantId,
       name: oldRecord.name,
@@ -202,11 +209,30 @@ for (const [restaurantId, oldRecord] of previousByRestaurant) {
   carriedFeeds += feeds.carried;
 }
 
-current.records.sort((a, b) => String(a.restaurantId).localeCompare(String(b.restaurantId)));
-current.checkedWebsites = current.records.length;
+if (preserveUnrefreshedRecords) {
+  const mergedByRestaurant = new Map(current.records.map((record) => [record.restaurantId, record]));
+  const newRecords = current.records.filter((record) => !previousByRestaurant.has(record.restaurantId));
+  current.records = [
+    ...(previous.records || []).map((record) => mergedByRestaurant.get(record.restaurantId) || record),
+    ...newRecords
+  ];
+  const newWebsiteCount = newRecords.length;
+  current.checkedWebsites = Number(previous.checkedWebsites || 0) + newWebsiteCount;
+  current.failures = previous.failures || [];
+  current.failedWebsites = Number(previous.failedWebsites || current.failures.length);
+  current.hostGroups = Number(previous.hostGroups || 0) + newWebsiteCount;
+  current.concurrency = previous.concurrency || current.concurrency;
+  if (previous.selectiveReview) current.selectiveReview = previous.selectiveReview;
+  if (previous.sanitization) current.sanitization = previous.sanitization;
+} else {
+  current.records.sort((a, b) => String(a.restaurantId).localeCompare(String(b.restaurantId)));
+  current.checkedWebsites = current.records.length;
+}
 current.profileCount = current.records.reduce((sum, record) => sum + (record.socialProfiles?.length || 0), 0);
 current.platformCounts = {};
 for (const record of current.records) for (const profile of record.socialProfiles || []) current.platformCounts[profile.platform] = (current.platformCounts[profile.platform] || 0) + 1;
+current.facebookCount = current.platformCounts.facebook || 0;
+current.instagramCount = current.platformCounts.instagram || 0;
 current.linkHubCount = current.records.reduce((sum, record) => sum + (record.linkHubs?.length || 0), 0);
 current.linkHubCounts = {};
 for (const record of current.records) for (const hub of record.linkHubs || []) current.linkHubCounts[hub.platform] = (current.linkHubCounts[hub.platform] || 0) + 1;
@@ -214,7 +240,7 @@ current.relatedLinkCount = current.records.reduce((sum, record) => sum + (record
 current.relatedKindCounts = {};
 for (const record of current.records) for (const link of record.relatedLinks || []) current.relatedKindCounts[link.kind] = (current.relatedKindCounts[link.kind] || 0) + 1;
 current.feedCount = current.records.reduce((sum, record) => sum + (record.feeds?.length || 0), 0);
-current.carryForward = {
+const carryForwardSummary = {
   previousGeneratedAt: previous.generatedAt || null,
   maxAgeDays: carryMaxDays,
   recordsCarriedAfterRefreshFailure: carriedRecords,
@@ -225,6 +251,17 @@ current.carryForward = {
   previousProfilesRejectedByCurrentRegistry: rejectedPreviousProfiles,
   appliedAt: generatedAt
 };
+if (preserveUnrefreshedRecords) {
+  current.carryForward = previous.carryForward || carryForwardSummary;
+  current.targetedRefresh = {
+    previousGeneratedAt: previous.generatedAt || null,
+    requestedRecords: current.records.filter((record) => !previousByRestaurant.has(record.restaurantId)).map((record) => record.restaurantId),
+    preservedRecordCount: carriedRecords,
+    appliedAt: generatedAt
+  };
+} else {
+  current.carryForward = carryForwardSummary;
+}
 
 await writeFile(currentPath, JSON.stringify(current, null, 2));
 await writeFile(currentJsPath, `window.HALIFAX_FIRST_PARTY_SOURCES = ${JSON.stringify(current, null, 2)};\n`);

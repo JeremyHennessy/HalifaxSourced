@@ -13,7 +13,11 @@ try {
 const mergedTargets = [...(catalog.restaurants || []), ...discoveredRestaurants]
   .filter((restaurant) => restaurant?.website)
   .filter((restaurant, index, all) => all.findIndex((item) => item.id === restaurant.id) === index);
-const targets = mergedTargets.slice(0, Number(process.env.FIRST_PARTY_SOURCE_LIMIT ?? 9999));
+const requestedIds = new Set(String(process.env.FIRST_PARTY_SOURCE_IDS ?? "").split(",").map((item) => item.trim()).filter(Boolean));
+const selectedTargets = requestedIds.size ? mergedTargets.filter((restaurant) => requestedIds.has(restaurant.id)) : mergedTargets;
+const missingRequestedIds = [...requestedIds].filter((id) => !selectedTargets.some((restaurant) => restaurant.id === id));
+if (missingRequestedIds.length) throw new Error(`Unknown FIRST_PARTY_SOURCE_IDS: ${missingRequestedIds.join(", ")}`);
+const targets = selectedTargets.slice(0, Number(process.env.FIRST_PARTY_SOURCE_LIMIT ?? 9999));
 const delayMs = Number(process.env.FIRST_PARTY_SOURCE_DELAY_MS ?? 180);
 const timeoutMs = Number(process.env.FIRST_PARTY_SOURCE_TIMEOUT_MS ?? 12000);
 const concurrency = Math.max(1, Math.min(16, Number(process.env.FIRST_PARTY_SOURCE_CONCURRENCY ?? 8)));
@@ -270,10 +274,11 @@ function discoverJsonLdPlatforms(html, baseUrl, observedAt) {
 function relatedKind(url, label = "") {
   const href = String(url || "").toLowerCase();
   const text = String(label || "").toLowerCase();
+  if (/gift\s*cards?/.test(text)) return null;
   for (const [kind, needles] of Object.entries(RELATED_HOSTS)) if (needles.some((needle) => href.includes(needle))) return kind;
   if (/reserve|reservation|book a table|book table/.test(text)) return "reservations";
   if (/order online|takeout|take out|delivery|pickup|pick up/.test(text)) return "ordering";
-  if (/menu|food menu|drink menu|cocktail menu|wine list|brunch menu|lunch menu|dinner menu/.test(text)) return "menu";
+  if (/(?:^|\/)menu(?:s|[-_/]|$)/.test(href) || /menu|food\s*&\s*drink|food menu|drink menu|cocktail menu|wine list|brunch menu|lunch menu|dinner menu/.test(text)) return "menu";
   if (/event|tickets|ticket|calendar|live music|shows/.test(text)) return "events";
   if (/newsletter|mailing list|subscribe/.test(text)) return "newsletter";
   return null;
@@ -289,6 +294,10 @@ function discoverRelatedLinks(html, baseUrl, associationBasis, observedAt) {
     const label = cleanText(match[2]).slice(0, 140);
     const kind = relatedKind(url.href, label);
     if (!kind || platformForUrl(url.href)) continue;
+    if (kind === "menu") {
+      const base = safeUrl(baseUrl);
+      if (base && url.origin === base.origin && url.pathname === base.pathname && url.search === base.search && (!url.hash || url.hash === "#")) continue;
+    }
     const key = `${kind}|${url.href}`;
     if (seen.has(key)) continue;
     seen.add(key);
@@ -414,7 +423,13 @@ async function scanRestaurant(item) {
     if (hubResult.failure) failures.push({ restaurantId: restaurant.id, name: restaurant.name, website, reason: `link_hub_${hubResult.failure.reason}`, sourceUrl: hubResult.failure.url });
   }
   socialProfiles = dedupePlatformRecords(socialProfiles.filter((profile) => SOCIAL_PLATFORM_IDS.has(profile.platform)));
-  relatedLinks = relatedLinks.filter((link, idx, all) => all.findIndex((item) => `${item.kind}|${item.url}` === `${link.kind}|${link.url}`) === idx).slice(0, 60);
+  relatedLinks = relatedLinks.filter((link, idx, all) => {
+    const key = ["reservations", "ordering"].includes(link.kind) ? `${link.kind}|${hostKey(link.url)}` : `${link.kind}|${link.url}`;
+    return all.findIndex((item) => {
+      const itemKey = ["reservations", "ordering"].includes(item.kind) ? `${item.kind}|${hostKey(item.url)}` : `${item.kind}|${item.url}`;
+      return itemKey === key;
+    }) === idx;
+  }).slice(0, 60);
   feeds = feeds.filter((feed, idx, all) => all.findIndex((item) => item.url === feed.url) === idx).slice(0, 12);
 
   records[index] = {

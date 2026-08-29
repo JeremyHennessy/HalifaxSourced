@@ -1,6 +1,6 @@
 # Halifax Sourced content coverage baseline
 
-Generated: 2026-08-28T21:37:40.761Z
+Generated: 2026-08-29T13:55:54.734Z
 
 This report measures the currently committed production data layers. It is a content-completeness baseline, **not a restaurant quality or popularity rating**. Unknown data remains unknown; source leads are not converted into fabricated facts.
 
@@ -8,40 +8,40 @@ This report measures the currently committed production data layers. It is a con
 
 | Metric | Places | Coverage |
 | --- | ---: | ---: |
-| Canonical places | 743 | 100% |
-| Official website | 284 | 38.2% |
-| Verified/reachable official website | 236 | 31.8% |
-| Public inspection match | 496 | 66.8% |
-| Menu link | 152 | 20.5% |
-| Verified menu link | 86 | 11.6% |
-| Special evidence | 53 | 7.1% |
-| Verified specials source | 25 | 3.4% |
-| Reservation link | 60 | 8.1% |
-| Online ordering link | 79 | 10.6% |
+| Canonical places | 749 | 100% |
+| Official website | 290 | 38.7% |
+| Verified/reachable official website | 242 | 32.3% |
+| Public inspection match | 496 | 66.2% |
+| Menu link | 156 | 20.8% |
+| Verified menu link | 86 | 11.5% |
+| Special evidence | 55 | 7.3% |
+| Verified specials source | 25 | 3.3% |
+| Reservation link | 62 | 8.3% |
+| Online ordering link | 81 | 10.8% |
 | Event evidence | 47 | 6.3% |
 | Structured upcoming restaurant events | 2 | 0.3% |
-| At least one social network profile | 137 | 18.4% |
-| Phone | 245 | 33% |
-| Hours | 219 | 29.5% |
-| Coordinates | 734 | 98.8% |
-| Neighbourhood | 743 | 100% |
-| Cuisine classification | 743 | 100% |
-| Accessibility information | 229 | 30.8% |
-| Patio information | 40 | 5.4% |
+| At least one social network profile | 143 | 19.1% |
+| Phone | 251 | 33.5% |
+| Hours | 225 | 30% |
+| Coordinates | 738 | 98.5% |
+| Neighbourhood | 749 | 100% |
+| Cuisine classification | 749 | 100% |
+| Accessibility information | 229 | 30.6% |
+| Patio information | 40 | 5.3% |
 | Usable rights-approved media | 0 | 0% |
 
-Raw layers: 10 curated, 735 OpenStreetMap, 6 reviewed local-discovery records, 739 pre-discovery catalog records.
+Raw layers: 10 curated, 735 OpenStreetMap, 12 reviewed local-discovery records, 739 pre-discovery catalog records.
 
 ## Social coverage
 
 | Platform | Places | Coverage |
 | --- | ---: | ---: |
-| instagram | 127 | 17.1% |
-| facebook | 109 | 14.7% |
-| tiktok | 13 | 1.7% |
+| instagram | 132 | 17.6% |
+| facebook | 115 | 15.4% |
+| tiktok | 12 | 1.6% |
 | threads | 0 | 0% |
-| x | 58 | 7.8% |
-| youtube | 11 | 1.5% |
+| x | 59 | 7.9% |
+| youtube | 12 | 1.6% |
 | linkedin | 6 | 0.8% |
 | bluesky | 2 | 0.3% |
 | pinterest | 2 | 0.3% |
@@ -60,28 +60,31 @@ Raw layers: 10 curated, 735 OpenStreetMap, 6 reviewed local-discovery records, 7
 
 ## City events
 
-- Current/upcoming events: **166**
-- Sources represented: **11**
-- Next 7 days: **9**; next 30 days: **35**
-- Ticket links: **166**; price information: **11**; explicitly free: **0**
+- Current/upcoming events: **186**
+- Sources represented: **15**
+- Next 7 days: **20**; next 30 days: **54**
+- Ticket links: **186**; price information: **11**; explicitly free: **0**
 - Coordinates: **0**
-- Conservative exact venue-name → restaurant matches: **10**
+- Conservative exact venue-name → restaurant matches: **8**
 - Possible duplicate current event records: **0**
 
 ### Events by municipality
 
-- Halifax: 166
+- Halifax: 164
+- Dartmouth: 16
+- Bedford: 6
 
 ### Events by category
 
 - Sports: 61
-- Music: 58
-- Arts: 42
-- Community: 11
+- Music: 57
+- Arts: 50
+- Community: 31
 - Festivals: 10
 - Comedy: 4
 - Food & Drink: 3
 - Other: 2
+- Markets: 1
 - Outdoor: 1
 
 ### Events by source
@@ -91,16 +94,20 @@ Raw layers: 10 curated, 735 OpenStreetMap, 6 reviewed local-discovery records, 7
 - Scotiabank Centre: 31
 - Tourism Nova Scotia Events: 23
 - Light House Arts Centre: 19
-- The Carleton: 10
+- The Carleton: 8
+- Alderney Gate Public Library: 7
+- Woodlawn Public Library: 6
+- Bedford Public Library: 6
 - HFX Wanderers 2026 Home Schedule: 5
 - Halifax Tides 2026 Home Schedule: 4
 - Halifax Public Libraries: 3
+- Alderney Landing: 3
 - Neptune Theatre: 3
 - Halifax Convention Centre: 1
 
 ## Freshness
 
-- < 7 days: 735
+- < 7 days: 741
 - 7–30 days: 8
 - 30–90 days: 0
 - > 90 days: 0
@@ -112,7 +119,7 @@ Raw layers: 10 curated, 735 OpenStreetMap, 6 reviewed local-discovery records, 7
 - firstPartyWebsiteDiscovery: 75
 - verifiedSourcePages: 15
 - structuredRestaurantEvents: 12
-- websiteFeeds: 14
+- websiteFeeds: 9
 - socialApis: 3
 - cityEventSources: 0
 - openingWatchSources: 0

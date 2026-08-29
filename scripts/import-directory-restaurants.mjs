@@ -2,7 +2,13 @@ import { mkdir, readFile, writeFile } from "node:fs/promises";
 
 const catalog = JSON.parse(await readFile(new URL("../data/build/catalog.json", import.meta.url), "utf8"));
 const registry = JSON.parse(await readFile(new URL("../data/place-source-registry.json", import.meta.url), "utf8"));
-const knownNames = new Set((catalog.restaurants || []).map((restaurant) => normalize(restaurant.name)));
+let discoveredRestaurants = [];
+try {
+  const source = await readFile(new URL("../data/discovered-restaurants.js", import.meta.url), "utf8");
+  const match = source.match(/window\.HALIFAX_DISCOVERED_RESTAURANTS\s*=\s*([\s\S]*);\s*$/);
+  if (match) discoveredRestaurants = JSON.parse(match[1]);
+} catch {}
+const knownNames = new Set([...(catalog.restaurants || []), ...discoveredRestaurants].map((restaurant) => normalize(restaurant.name)));
 const userAgent = "HalifaxSourced/0.7 (+https://github.com/JeremyHennessy/HalifaxSourced)";
 const maxTourismPages = Number(process.env.NS_TOURISM_PAGE_LIMIT ?? 30);
 const downtownDetailLimit = Number(process.env.DOWNTOWN_DIRECTORY_DETAIL_LIMIT ?? 120);
@@ -50,6 +56,10 @@ function decode(value) {
     .replace(/&amp;/gi, "&")
     .replace(/&quot;/gi, '"')
     .replace(/&#39;|&apos;/gi, "'")
+    .replace(/&eacute;/gi, "é")
+    .replace(/&egrave;/gi, "è")
+    .replace(/&agrave;/gi, "à")
+    .replace(/&ccedil;/gi, "ç")
     .replace(/&nbsp;/gi, " ")
     .replace(/&ndash;/gi, "–")
     .replace(/&mdash;/gi, "—")
@@ -81,7 +91,8 @@ function externalLinks(html, baseUrl) {
     if (!url) continue;
     const host = canonicalHost(url);
     if (!host || host === baseHost || host.endsWith(`.${baseHost}`)) continue;
-    links.push({ url, label: decode(match[2]).slice(0, 120), host });
+    const inlineLabel = match[2].replace(/<\/?(?:span|strong|em|b|i)\b[^>]*>/gi, "");
+    links.push({ url, label: decode(inlineLabel).slice(0, 120), host });
   }
   return links;
 }
@@ -293,6 +304,48 @@ function extractAddress(lines, city) {
 }
 
 function parseAssociationDirectory(html, sourceMeta, options = {}) {
+  const cardMarker = /<div\b[^>]*\brole=["']region["'][^>]*\baria-label=["']content changes on hover["'][^>]*>/gi;
+  const cardStarts = [...String(html).matchAll(cardMarker)];
+  if (cardStarts.length) {
+    const records = [];
+    for (let index = 0; index < cardStarts.length; index += 1) {
+      const start = cardStarts[index].index;
+      const end = index + 1 < cardStarts.length ? cardStarts[index + 1].index : html.length;
+      const block = html.slice(start, end);
+      const links = externalLinks(block, sourceMeta.url);
+      const primary = links.find((link) => link.label && link.label.length <= 120);
+      if (!primary) continue;
+      const name = primary.label.replace(/\s+/g, " ").trim();
+      const text = decode(block);
+      const lines = text.split(/\n+/).map((line) => line.trim()).filter(Boolean);
+      const outbound = classifyOutbound(block, sourceMeta.url);
+      const address = extractAddress(lines, options.city || "Halifax");
+      const phone = extractPhone(text);
+      if (!address && !outbound.website && !outbound.socialProfiles.length && !outbound.actionLinks.length && !outbound.linkHubs.length) continue;
+
+      records.push({
+        id: `${options.idPrefix || sourceMeta.id}-${slug(name)}-${slug(address || primary.url || String(index))}`,
+        name,
+        category: "Food & Drink",
+        address,
+        city: options.city || "Halifax",
+        neighborhood: options.neighborhood || null,
+        website: outbound.website,
+        socialProfiles: outbound.socialProfiles,
+        linkHubs: outbound.linkHubs,
+        actionLinks: outbound.actionLinks,
+        phone,
+        sourceId: sourceMeta.id,
+        sourceName: sourceMeta.name,
+        sourceKind: sourceMeta.kind,
+        sourceUrl: sourceMeta.url,
+        observedAt: new Date().toISOString(),
+        reviewState: "directory-listed"
+      });
+    }
+    return records;
+  }
+
   const headingMatches = [...String(html).matchAll(/<h([2-4])\b[^>]*>([\s\S]*?)<\/h\1>/gi)];
   const records = [];
   let category = "Food & Drink";
@@ -394,13 +447,16 @@ try {
 }
 
 for (const config of [
-  { sourceId: "downtown-dartmouth-food-drink", city: "Dartmouth", neighborhood: "Downtown Dartmouth", idPrefix: "ddbc" },
+  { sourceId: "downtown-dartmouth-food-drink", city: "Dartmouth", neighborhood: "Downtown Dartmouth", idPrefix: "ddbc", minimumObserved: 30 },
   { sourceId: "spring-garden-eat-drink", city: "Halifax", neighborhood: "Spring Garden", idPrefix: "sgaba" }
 ]) {
   const registered = source(config.sourceId);
   try {
     const { html, resolvedUrl } = await get(registered.url);
     const parsed = parseAssociationDirectory(html, { ...registered, url: resolvedUrl }, config);
+    if (config.minimumObserved && parsed.length < config.minimumObserved) {
+      throw new Error(`parser_yield_below_expected:${parsed.length}<${config.minimumObserved}`);
+    }
     records.push(...parsed);
     sourceMeta.push({ id: registered.id, name: registered.name, kind: registered.kind, url: registered.url, directoryEntriesObserved: parsed.length });
   } catch (error) {

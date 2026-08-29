@@ -54,11 +54,14 @@ const totals = await page.evaluate(() => ({
   socialRestaurants: window.__halifaxSocialLinkedRestaurantCount ?? 0,
   reservationRestaurants: window.__halifaxReservationLinkedRestaurantCount ?? 0,
   orderingRestaurants: window.__halifaxOrderingLinkedRestaurantCount ?? 0,
+  structuredSpecials: window.__halifaxStructuredSpecialCount ?? 0,
+  verifiedCurrentSpecials: window.__halifaxVerifiedCurrentSpecialCount ?? 0,
   cityEvents: window.HALIFAX_CITY_EVENTS?.eventCount ?? 0
 }));
 if (totals.restaurants < 700 || totals.officialSignals < 100) throw new Error(`Expected preserved discovery data, got ${JSON.stringify(totals)}.`);
 if (totals.discoveredRestaurants < 1) throw new Error(`Expected reviewed local discovery records, got ${JSON.stringify(totals)}.`);
 if (totals.socialProfiles < 100 || totals.relatedLinks < 100 || totals.socialRestaurants < 50) throw new Error(`Expected expanded first-party link coverage, got ${JSON.stringify(totals)}.`);
+if (totals.structuredSpecials < 60 || totals.verifiedCurrentSpecials < 40) throw new Error(`Expected reviewed structured specials, got ${JSON.stringify(totals)}.`);
 await page.screenshot({ path: resolve("artifacts", "ui-check-desktop.png"), fullPage: true });
 
 // New-opening discovery must be searchable without weakening the established catalogue checks.
@@ -78,6 +81,21 @@ for (const name of ["Darty Brewing Co.", "Maria's Pantry"]) {
   await page.goto(`${url}/${href}`, { waitUntil: "networkidle" });
   if (await page.locator("#detailLinks .source-link-row").count() < 2) throw new Error(`Expected source-backed social detail links for ${name}.`);
   if (!/\d/.test(await page.locator("#detailInfo").innerText())) throw new Error(`Expected verified consumer facts for ${name}.`);
+}
+
+for (const target of [
+  { id: "canteen-on-portland-dartmouth", name: "The Canteen on Portland", action: "Menu" },
+  { id: "oxalis-dartmouth", name: "Oxalis Restaurant", action: "Menu" },
+  { id: "side-hustle-snack-bar-dartmouth", name: "Side Hustle Snack Bar", action: "Menu", special: "Weekday Happy Hour" },
+  { id: "lake-city-cider-dartmouth", name: "Lake City Cider", action: "Order online", special: "$5 Taproom Happy Hour" }
+]) {
+  await page.goto(`${url}/#restaurant/${target.id}`, { waitUntil: "networkidle" });
+  await page.locator("h1", { hasText: target.name }).waitFor();
+  if (await page.locator("#detailLinks .detail-subheading", { hasText: "Official social profiles" }).count() !== 1) throw new Error(`Expected official social profiles for ${target.name}.`);
+  if (await page.locator("#detailLinks .source-link-row").count() < 2) throw new Error(`Expected source-backed social and related links for ${target.name}.`);
+  if ((await page.locator("#detailInfo").innerText()).includes("Hours not available")) throw new Error(`Expected verified hours for ${target.name}.`);
+  if (await page.locator("#detailInfo .sidebar-link", { hasText: target.action }).count() < 1) throw new Error(`Expected ${target.action} action for ${target.name}.`);
+  if (target.special && await page.locator("#detailSpecials", { hasText: target.special }).count() !== 1) throw new Error(`Expected verified special for ${target.name}.`);
 }
 
 await page.locator("#globalSearch").fill("Dartmouth");
