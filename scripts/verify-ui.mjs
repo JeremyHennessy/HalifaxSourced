@@ -319,6 +319,7 @@ const attributionState = await page.evaluate(() => ({
 if (!/CC BY-SA|Wikimedia Commons/i.test(attributionState.label) || !/commons\.wikimedia\.org/.test(attributionState.href) || attributionState.target !== "_blank") throw new Error(`Expected visible, safely linked licensed-image attribution, got ${JSON.stringify(attributionState)}.`);
 await captureIphone("licensed-attribution");
 
+const brokenImageErrorStart = consoleErrors.length;
 await page.evaluate(() => {
   const image = window.HALIFAX_RESTAURANT_MEDIA.records.find((record) => record.restaurantId === "the-narrows");
   image.__qaOriginalUrl = image.url;
@@ -326,6 +327,8 @@ await page.evaluate(() => {
   renderRestaurantDetail("the-narrows");
 });
 await page.waitForFunction(() => !document.querySelector(".restaurant-hero-photo") && !document.querySelector(".restaurant-hero")?.classList.contains("has-permitted-image"));
+const brokenImageErrors = consoleErrors.splice(brokenImageErrorStart);
+if (brokenImageErrors.length !== 1 || !/404 \(Not Found\)/.test(brokenImageErrors[0])) throw new Error(`Expected exactly one intentional missing-image 404, got ${JSON.stringify(brokenImageErrors)}.`);
 await captureIphone("broken-image-fallback");
 await page.evaluate(() => {
   const image = window.HALIFAX_RESTAURANT_MEDIA.records.find((record) => record.restaurantId === "the-narrows");
