@@ -16,6 +16,7 @@ on:
       - scripts/sanitize-first-party-sources.mjs
       - scripts/import-first-party-feed-signals.mjs
       - scripts/import-meta-social.mjs
+      - scripts/build-recent-social-posts.mjs
       - scripts/check-expanded-sources.mjs
 
 permissions:
@@ -78,6 +79,9 @@ jobs:
           SOCIAL_PULL_TIMEOUT_MS: 10000
         run: node scripts/import-meta-social.mjs
 
+      - name: Analyze and categorize recent posts
+        run: node scripts/build-recent-social-posts.mjs
+
       - name: Validate expanded source data
         run: node scripts/check-expanded-sources.mjs
 
@@ -92,6 +96,8 @@ jobs:
             data/build/website-feed-signals.json
             data/social-signals.js
             data/build/social-signals.json
+            data/recent-social-posts.js
+            data/build/recent-social-posts.json
             artifacts/expanded-source-integrity-report.json
           if-no-files-found: error
           retention-days: 30
