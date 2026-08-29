@@ -227,6 +227,11 @@ await page.goto(`${url}/#restaurant/osm-node-11751643550-cafe-lunette`, { waitUn
 await page.locator("#detailUpdates .official-update-card").first().waitFor();
 if (await page.locator("#detailUpdates .official-update-card").count() < 3) throw new Error("Expected official Café Lunette feed updates on restaurant detail.");
 await captureIphone("official-updates");
+await page.goto(`${url}/#restaurant/osm-node-10038454787-bird-s-nest-cafe`, { waitUntil: "networkidle" });
+const officialMedia = page.locator("#detailUpdates .official-update-media").first();
+await officialMedia.waitFor();
+if (!(await officialMedia.evaluate((image) => image.complete && image.naturalWidth > 0))) throw new Error("Expected retained Bird's Nest official-feed media to load.");
+await captureIphone("official-update-media");
 await page.goto(`${url}/#restaurant/marias-pantry-dartmouth`, { waitUntil: "networkidle" });
 await page.locator("#detailLinks .source-link-row").first().waitFor();
 await captureIphone("dartmouth-new-place");

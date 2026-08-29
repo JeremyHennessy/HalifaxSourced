@@ -300,6 +300,13 @@ function discoverRelatedLinks(html, baseUrl, associationBasis, observedAt) {
   return links.slice(0, 40);
 }
 
+function isOembedEndpoint(url, type = "") {
+  return /oembed/i.test(type)
+    || /\/oembed(?:\/|$)/i.test(url.pathname)
+    || /(?:^|\/)wp-json\/oembed/i.test(url.pathname)
+    || /(?:^|[?&])rest_route=[^&]*oembed/i.test(url.search);
+}
+
 function discoverFeeds(html, baseUrl) {
   const found = [];
   const seen = new Set();
@@ -309,13 +316,13 @@ function discoverFeeds(html, baseUrl) {
     const rel = String(attr.rel || "").toLowerCase();
     if (!rel.includes("alternate") || !/(rss|atom|xml)/.test(type)) continue;
     const url = safeUrl(attr.href, baseUrl);
-    if (!url || !sameSite(url.href, baseUrl) || seen.has(url.href)) continue;
+    if (!url || !sameSite(url.href, baseUrl) || seen.has(url.href) || isOembedEndpoint(url, type)) continue;
     seen.add(url.href);
     found.push({ url: url.href, type: type || "feed", title: cleanText(attr.title || "Website feed").slice(0, 120) });
   }
   for (const match of String(html).matchAll(/<a\b[^>]*href\s*=\s*["']([^"']+)["'][^>]*>([\s\S]*?)<\/a>/gi)) {
     const url = safeUrl(match[1], baseUrl);
-    if (!url || !sameSite(url.href, baseUrl) || seen.has(url.href)) continue;
+    if (!url || !sameSite(url.href, baseUrl) || seen.has(url.href) || isOembedEndpoint(url)) continue;
     const text = cleanText(match[2]);
     if (!/(^|\/)feed\/?$|rss|atom|\.xml(?:$|\?)/i.test(url.pathname) && !/rss|feed|atom/i.test(text)) continue;
     seen.add(url.href);
