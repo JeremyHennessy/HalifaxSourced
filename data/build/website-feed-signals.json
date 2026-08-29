@@ -1,14 +1,30 @@
 {
-  "version": 1,
-  "generatedAt": "2026-08-28T21:37:40.511Z",
-  "feedsDiscovered": 254,
-  "uniqueRestaurantFeeds": 200,
-  "sharedFeedUrlsSkipped": 17,
-  "feedHostGroups": 66,
+  "version": 2,
+  "generatedAt": "2026-08-29T04:13:42.445Z",
+  "feedsDiscovered": 386,
+  "uniqueRestaurantFeeds": 160,
+  "sharedFeedUrlsSkipped": 27,
+  "feedHostGroups": 34,
   "concurrency": 10,
-  "feedsChecked": 186,
-  "failedFeeds": 14,
-  "signals": [
+  "feedsChecked": 153,
+  "failedFeeds": 7,
+  "posts": [
+    {
+      "restaurantId": "osm-node-11506685695-kenny-s-pizza",
+      "restaurantName": "Kenny's Pizza",
+      "platform": "website_feed",
+      "title": "2 Small Pizzas for $29.99",
+      "postUrl": "https://kennyspizzakearneylake.ca/product/2smallpizzas/",
+      "feedUrl": "https://kennyspizzakearneylake.ca/shop/feed/",
+      "mediaUrl": null,
+      "publishedAt": "2026-07-17T13:48:16.000Z",
+      "observedAt": "2026-08-29T04:13:30.551Z",
+      "signalMatches": {},
+      "sourceKind": "official_feed",
+      "associationBasis": "unique_feed_link_from_official_website",
+      "confidence": "official_source_signal",
+      "reviewState": "source_signal"
+    },
     {
       "restaurantId": "osm-node-11751643550-cafe-lunette",
       "restaurantName": "Café Lunette",
@@ -16,8 +32,9 @@
       "title": "Your Parisian Patio Awaits",
       "postUrl": "https://www.cafelunette.com/your-parisian-patio-awaits/",
       "feedUrl": "https://www.cafelunette.com/feed/",
+      "mediaUrl": null,
       "publishedAt": "2026-05-11T15:04:47.000Z",
-      "observedAt": "2026-08-28T21:37:02.399Z",
+      "observedAt": "2026-08-29T04:13:29.671Z",
       "signalMatches": {
         "openings": [
           "now open"
@@ -35,8 +52,9 @@
       "title": "Mother’s Day Brunch at Café Lunette",
       "postUrl": "https://www.cafelunette.com/mothers-day-brunch-at-cafe-lunette/",
       "feedUrl": "https://www.cafelunette.com/feed/",
+      "mediaUrl": null,
       "publishedAt": "2026-04-28T18:12:21.000Z",
-      "observedAt": "2026-08-28T21:37:02.399Z",
+      "observedAt": "2026-08-29T04:13:29.671Z",
       "signalMatches": {
         "brunch": [
           "brunch"
@@ -48,19 +66,32 @@
       "reviewState": "source_signal"
     },
     {
-      "restaurantId": "osm-node-8600605850-barburrito",
-      "restaurantName": "BarBurrito",
+      "restaurantId": "osm-node-11751643550-cafe-lunette",
+      "restaurantName": "Café Lunette",
       "platform": "website_feed",
-      "title": "$6.99 Burrito or Bowl for Cinco de Mayo! 🌯",
-      "postUrl": "https://www.barburrito.ca/6-99-burrito-or-bowl-for-cinco-de-mayo-%f0%9f%8c%af/",
-      "feedUrl": "https://www.barburrito.ca/feed/",
-      "publishedAt": "2026-04-27T13:00:00.000Z",
-      "observedAt": "2026-08-28T21:37:12.086Z",
-      "signalMatches": {
-        "specials": [
-          "offer"
-        ]
-      },
+      "title": "Calling all Blue cheese lovers….​",
+      "postUrl": "https://www.cafelunette.com/calling-all-blue-cheese-lovers/",
+      "feedUrl": "https://www.cafelunette.com/feed/",
+      "mediaUrl": null,
+      "publishedAt": "2026-04-08T16:25:03.000Z",
+      "observedAt": "2026-08-29T04:13:29.671Z",
+      "signalMatches": {},
+      "sourceKind": "official_feed",
+      "associationBasis": "unique_feed_link_from_official_website",
+      "confidence": "official_source_signal",
+      "reviewState": "source_signal"
+    },
+    {
+      "restaurantId": "osm-node-11751643550-cafe-lunette",
+      "restaurantName": "Café Lunette",
+      "platform": "website_feed",
+      "title": "Wine Wednesdays, à la Lunette",
+      "postUrl": "https://www.cafelunette.com/wine-wednesdays-a-la-lunette/",
+      "feedUrl": "https://www.cafelunette.com/feed/",
+      "mediaUrl": null,
+      "publishedAt": "2026-04-08T15:42:52.000Z",
+      "observedAt": "2026-08-29T04:13:29.671Z",
+      "signalMatches": {},
       "sourceKind": "official_feed",
       "associationBasis": "unique_feed_link_from_official_website",
       "confidence": "official_source_signal",
@@ -73,8 +104,9 @@
       "title": "Five Things to Do in Halifax This Spring (We'll Handle Breakfast)",
       "postUrl": "https://www.birdsnesthalifax.com/post/five-things-to-do-in-halifax-this-spring-we-ll-handle-breakfast",
       "feedUrl": "https://www.birdsnesthalifax.com/blog-feed.xml",
+      "mediaUrl": "https://static.wixstatic.com/media/110dc9_538c90ecfee14537aa62b59c533c2b01~mv2.jpeg/v1/fit/w_1000,h_1000,al_c,q_80/file.png",
       "publishedAt": "2026-04-02T11:40:44.000Z",
-      "observedAt": "2026-08-28T21:37:00.799Z",
+      "observedAt": "2026-08-29T04:13:27.940Z",
       "signalMatches": {
         "brunch": [
           "breakfast"
@@ -92,8 +124,143 @@
       "title": "A Parisian Inspired Easter Weekend",
       "postUrl": "https://www.cafelunette.com/a-parisian-inspired-easter-weekend/",
       "feedUrl": "https://www.cafelunette.com/feed/",
+      "mediaUrl": null,
       "publishedAt": "2026-04-01T19:30:03.000Z",
-      "observedAt": "2026-08-28T21:37:02.399Z",
+      "observedAt": "2026-08-29T04:13:29.671Z",
+      "signalMatches": {
+        "specials": [
+          "offer",
+          "offers"
+        ],
+        "brunch": [
+          "brunch"
+        ]
+      },
+      "sourceKind": "official_feed",
+      "associationBasis": "unique_feed_link_from_official_website",
+      "confidence": "official_source_signal",
+      "reviewState": "source_signal"
+    },
+    {
+      "restaurantId": "osm-node-11552061304-sushi-shige",
+      "restaurantName": "Sushi Shige",
+      "platform": "website_feed",
+      "title": "Untitled",
+      "postUrl": "https://www.shige.ca/post/untitled-3",
+      "feedUrl": "https://www.shige.ca/blog-feed.xml",
+      "mediaUrl": "https://static.wixstatic.com/media/445de3_8cde890dee564907b10a3db536a75443~mv2.png/v1/fit/w_1000,h_1000,al_c,q_80/file.png",
+      "publishedAt": "2026-04-01T15:01:16.000Z",
+      "observedAt": "2026-08-29T04:13:27.974Z",
+      "signalMatches": {},
+      "sourceKind": "official_feed",
+      "associationBasis": "unique_feed_link_from_official_website",
+      "confidence": "official_source_signal",
+      "reviewState": "source_signal"
+    },
+    {
+      "restaurantId": "osm-node-11751643550-cafe-lunette",
+      "restaurantName": "Café Lunette",
+      "platform": "website_feed",
+      "title": "Jazz Avec Frites",
+      "postUrl": "https://www.cafelunette.com/jazz-avec-frites/",
+      "feedUrl": "https://www.cafelunette.com/feed/",
+      "mediaUrl": null,
+      "publishedAt": "2026-03-26T15:51:56.000Z",
+      "observedAt": "2026-08-29T04:13:29.671Z",
+      "signalMatches": {},
+      "sourceKind": "official_feed",
+      "associationBasis": "unique_feed_link_from_official_website",
+      "confidence": "official_source_signal",
+      "reviewState": "source_signal"
+    },
+    {
+      "restaurantId": "osm-node-10038454787-bird-s-nest-cafe",
+      "restaurantName": "Bird's Nest Cafe",
+      "platform": "website_feed",
+      "title": "Catering to wild Sable Island",
+      "postUrl": "https://www.birdsnesthalifax.com/post/catering-to-wild-sable-island",
+      "feedUrl": "https://www.birdsnesthalifax.com/blog-feed.xml",
+      "mediaUrl": "https://static.wixstatic.com/media/110dc9_acbbd34644e2428fbbf7a007c9b5cee6~mv2.jpeg/v1/fit/w_1000,h_1000,al_c,q_80/file.png",
+      "publishedAt": "2026-03-03T14:50:36.000Z",
+      "observedAt": "2026-08-29T04:13:27.940Z",
+      "signalMatches": {},
+      "sourceKind": "official_feed",
+      "associationBasis": "unique_feed_link_from_official_website",
+      "confidence": "official_source_signal",
+      "reviewState": "source_signal"
+    }
+  ],
+  "signals": [
+    {
+      "restaurantId": "osm-node-11751643550-cafe-lunette",
+      "restaurantName": "Café Lunette",
+      "platform": "website_feed",
+      "title": "Your Parisian Patio Awaits",
+      "postUrl": "https://www.cafelunette.com/your-parisian-patio-awaits/",
+      "feedUrl": "https://www.cafelunette.com/feed/",
+      "mediaUrl": null,
+      "publishedAt": "2026-05-11T15:04:47.000Z",
+      "observedAt": "2026-08-29T04:13:29.671Z",
+      "signalMatches": {
+        "openings": [
+          "now open"
+        ]
+      },
+      "sourceKind": "official_feed",
+      "associationBasis": "unique_feed_link_from_official_website",
+      "confidence": "official_source_signal",
+      "reviewState": "source_signal"
+    },
+    {
+      "restaurantId": "osm-node-11751643550-cafe-lunette",
+      "restaurantName": "Café Lunette",
+      "platform": "website_feed",
+      "title": "Mother’s Day Brunch at Café Lunette",
+      "postUrl": "https://www.cafelunette.com/mothers-day-brunch-at-cafe-lunette/",
+      "feedUrl": "https://www.cafelunette.com/feed/",
+      "mediaUrl": null,
+      "publishedAt": "2026-04-28T18:12:21.000Z",
+      "observedAt": "2026-08-29T04:13:29.671Z",
+      "signalMatches": {
+        "brunch": [
+          "brunch"
+        ]
+      },
+      "sourceKind": "official_feed",
+      "associationBasis": "unique_feed_link_from_official_website",
+      "confidence": "official_source_signal",
+      "reviewState": "source_signal"
+    },
+    {
+      "restaurantId": "osm-node-10038454787-bird-s-nest-cafe",
+      "restaurantName": "Bird's Nest Cafe",
+      "platform": "website_feed",
+      "title": "Five Things to Do in Halifax This Spring (We'll Handle Breakfast)",
+      "postUrl": "https://www.birdsnesthalifax.com/post/five-things-to-do-in-halifax-this-spring-we-ll-handle-breakfast",
+      "feedUrl": "https://www.birdsnesthalifax.com/blog-feed.xml",
+      "mediaUrl": "https://static.wixstatic.com/media/110dc9_538c90ecfee14537aa62b59c533c2b01~mv2.jpeg/v1/fit/w_1000,h_1000,al_c,q_80/file.png",
+      "publishedAt": "2026-04-02T11:40:44.000Z",
+      "observedAt": "2026-08-29T04:13:27.940Z",
+      "signalMatches": {
+        "brunch": [
+          "breakfast"
+        ]
+      },
+      "sourceKind": "official_feed",
+      "associationBasis": "unique_feed_link_from_official_website",
+      "confidence": "official_source_signal",
+      "reviewState": "source_signal"
+    },
+    {
+      "restaurantId": "osm-node-11751643550-cafe-lunette",
+      "restaurantName": "Café Lunette",
+      "platform": "website_feed",
+      "title": "A Parisian Inspired Easter Weekend",
+      "postUrl": "https://www.cafelunette.com/a-parisian-inspired-easter-weekend/",
+      "feedUrl": "https://www.cafelunette.com/feed/",
+      "mediaUrl": null,
+      "publishedAt": "2026-04-01T19:30:03.000Z",
+      "observedAt": "2026-08-29T04:13:29.671Z",
       "signalMatches": {
         "specials": [
           "offer",
@@ -121,38 +288,8 @@
       "reason": "http_403"
     },
     {
-      "restaurantId": "osm-node-4550004778-st-louis-bar-and-grill",
-      "feedUrl": "https://www.stlouiswings.com/feed/",
-      "reason": "http_403"
-    },
-    {
-      "restaurantId": "osm-node-4550022070-genji-sushi",
-      "feedUrl": "http://www.genjisushi.ca/index.php?rest_route=%2Foembed%2F1.0%2Fembed&#038;url=http%3A%2F%2Fwww.genjisushi.ca%2F&#038;format=xml",
-      "reason": "http_400"
-    },
-    {
       "restaurantId": "osm-node-11526055082-noggins-coburg",
       "feedUrl": "https://nogginsfarm.ca/comments/feed/",
-      "reason": "http_403"
-    },
-    {
-      "restaurantId": "osm-node-4550022070-genji-sushi",
-      "feedUrl": "http://www.genjisushi.ca/index.php?rest_route=%2Foembed%2F1.0%2Fembed&#038;url=http%3A%2F%2Fwww.genjisushi.ca%2F%3Fpage_id%3D234&#038;format=xml",
-      "reason": "http_400"
-    },
-    {
-      "restaurantId": "osm-node-7674255992-pg-cafe-and-grill",
-      "feedUrl": "https://pgcafeandgrill.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2F%2F#038;format=xml",
-      "reason": "http_404"
-    },
-    {
-      "restaurantId": "osm-node-4550022070-genji-sushi",
-      "feedUrl": "http://www.genjisushi.ca/index.php?rest_route=%2Foembed%2F1.0%2Fembed&#038;url=http%3A%2F%2Fwww.genjisushi.ca%2F%3Fpage_id%3D50&#038;format=xml",
-      "reason": "http_400"
-    },
-    {
-      "restaurantId": "osm-node-9128392205-king-of-donair",
-      "feedUrl": "https://www.kingofdonair.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.kingofdonair.ca%2Forder-online-choose-a-location%2F&#038;format=xml",
       "reason": "http_403"
     },
     {
@@ -161,24 +298,19 @@
       "reason": "http_403"
     },
     {
-      "restaurantId": "osm-node-4428984290-stone-pizza",
-      "feedUrl": "https://stonepizza.ca/feed/",
-      "reason": "timeout"
+      "restaurantId": "osm-node-11526055082-noggins-coburg",
+      "feedUrl": "https://nogginsfarm.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fnogginsfarm.ca%2Ffaq-about-the-farm%2F&#038;format=xml",
+      "reason": "http_403"
     },
     {
-      "restaurantId": "osm-node-5987565464-afrite",
-      "feedUrl": "https://afrite.ca/feed/",
-      "reason": "timeout"
+      "restaurantId": "osm-node-11526055082-noggins-coburg",
+      "feedUrl": "https://nogginsfarm.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fnogginsfarm.ca%2Ffarm-markets%2F&#038;format=xml",
+      "reason": "http_403"
     },
     {
-      "restaurantId": "osm-node-5987565464-afrite",
-      "feedUrl": "https://afrite.ca/comments/feed/",
-      "reason": "timeout"
-    },
-    {
-      "restaurantId": "osm-node-5987565464-afrite",
-      "feedUrl": "https://afrite.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fafrite.ca%2F&#038;format=xml",
-      "reason": "timeout"
+      "restaurantId": "osm-node-11526055082-noggins-coburg",
+      "feedUrl": "https://nogginsfarm.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fnogginsfarm.ca%2Ffarm-markets%2Fcoburg-market%2F&format=xml",
+      "reason": "http_403"
     }
   ]
 }
