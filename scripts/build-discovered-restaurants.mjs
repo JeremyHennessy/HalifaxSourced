@@ -54,6 +54,7 @@ const restaurants = approved.map((item) => {
     openingHours: item.openingHours || null,
     openingStatus: item.openingStatus || sourceMatch?.status || null,
     coordinates: item.coordinates || null,
+    socialProfiles: Array.isArray(item.socialProfiles) ? item.socialProfiles : [],
     summary: item.summary || `New local restaurant discovery lead from ${item.sourceName || sourceMatch?.sourceName || "a local source"}.`,
     specials: Array.isArray(item.specials) ? item.specials : [],
     events: Array.isArray(item.events) ? item.events : [],

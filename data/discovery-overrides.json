@@ -178,6 +178,59 @@
         }
       ],
       "reviewNote": "Added from current restaurant-owned evidence because it was absent from the app catalog."
+    },
+    {
+      "id": "darty-brewing-dartmouth",
+      "name": "Darty Brewing Co.",
+      "neighborhood": "Downtown Dartmouth",
+      "category": "Brewery",
+      "cuisines": ["Craft beer", "Taproom"],
+      "vibe": ["brewery", "taproom", "local"],
+      "qualityScore": 78,
+      "freshnessDate": "2026-08-29",
+      "evidenceStatus": "verified",
+      "address": "35 Portland Street, Dartmouth, NS B2Y 1H1",
+      "phone": "902-466-7818",
+      "website": "https://www.dartybrewing.ca/",
+      "openingHours": "Sunday–Thursday 11am–11pm; Friday–Saturday 11am–midnight",
+      "coordinates": { "lat": 44.6650229, "lon": -63.5675108 },
+      "socialProfiles": [
+        { "platform": "facebook", "handle": "61567717656248", "url": "https://www.facebook.com/profile.php?id=61567717656248", "associationBasis": "linked_from_official_website", "reviewState": "verified_link" },
+        { "platform": "instagram", "handle": "dartybrewing", "url": "https://www.instagram.com/dartybrewing/", "associationBasis": "linked_from_official_website", "reviewState": "verified_link" }
+      ],
+      "summary": "Downtown Dartmouth craft brewery and taproom with beer available by the pint, flight and for takeaway.",
+      "sources": [
+        { "label": "Darty Brewing official website", "type": "restaurant_site", "url": "https://www.dartybrewing.ca/", "status": "verified" },
+        { "label": "NovaScotia.com Darty Brewing listing", "type": "nova_scotia_tourism_directory", "url": "https://novascotia.com/listing/darty-brewing/", "status": "verified" },
+        { "label": "Downtown Dartmouth Food & Drink directory", "type": "downtown_dartmouth_directory", "url": "https://www.downtowndartmouth.ca/fooddrink", "status": "verified" }
+      ],
+      "reviewNote": "Official site, provincial tourism and Downtown Dartmouth evidence agree on identity and location; coordinates use the mapped 35 Portland Street location."
+    },
+    {
+      "id": "marias-pantry-dartmouth",
+      "name": "Maria's Pantry",
+      "neighborhood": "Downtown Dartmouth",
+      "category": "Restaurant",
+      "cuisines": ["Italian", "Pasta", "Prepared foods"],
+      "vibe": ["lunch", "pantry", "takeaway"],
+      "qualityScore": 80,
+      "freshnessDate": "2026-08-29",
+      "evidenceStatus": "verified",
+      "address": "17 Prince Street, Dartmouth, NS B2Y 4W9",
+      "phone": "902-407-2029",
+      "website": "https://www.mariaspantry.ca/",
+      "openingHours": "Pantry Tuesday–Saturday 10am–6pm; lunch Friday–Saturday 12pm–2pm",
+      "coordinates": { "lat": 44.6645333, "lon": -63.5672986 },
+      "socialProfiles": [
+        { "platform": "facebook", "handle": "mariaspantryhfx", "url": "https://www.facebook.com/mariaspantryhfx/", "associationBasis": "linked_from_official_website", "reviewState": "verified_link" },
+        { "platform": "instagram", "handle": "mariaspantryhfx", "url": "https://www.instagram.com/mariaspantryhfx/", "associationBasis": "linked_from_official_website", "reviewState": "verified_link" }
+      ],
+      "summary": "Downtown Dartmouth Italian pantry and pasta bar offering prepared foods, catering and Friday–Saturday lunch.",
+      "sources": [
+        { "label": "Maria's Pantry official website", "type": "restaurant_site", "url": "https://www.mariaspantry.ca/", "status": "verified" },
+        { "label": "Downtown Dartmouth Food & Drink directory", "type": "downtown_dartmouth_directory", "url": "https://www.downtowndartmouth.ca/fooddrink", "status": "verified" }
+      ],
+      "reviewNote": "Official site and Downtown Dartmouth directory agree on name, address and phone; coordinates use the mapped 17 Prince Street building."
     }
   ]
 }
