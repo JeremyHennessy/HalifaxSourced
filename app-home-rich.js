@@ -21,7 +21,7 @@ function richEventCard(event) {
   const when = start.toLocaleString("en-CA", { timeZone: "America/Halifax", weekday: "short", month: "short", day: "numeric", hour: "numeric", minute: "2-digit" });
   const venue = event.venueName || event.city || "Halifax";
   const inner = `<div class="event-card-body"><span class="eyebrow">${escapeHtml((event.categories || [event.category]).filter(Boolean)[0] || "Event")}</span><h3>${escapeHtml(event.title)}</h3><p>${escapeHtml(when)} · ${escapeHtml(venue)}</p>${event.free === true ? '<span class="card-tag">Free</span>' : ""}</div>`;
-  return link ? `<a class="event-card" href="${escapeHtml(link)}" target="_blank" rel="noreferrer">${inner}</a>` : `<div class="event-card">${inner}</div>`;
+  return link ? `<a class="rich-event-card" href="${escapeHtml(link)}" target="_blank" rel="noreferrer">${inner}</a>` : `<div class="rich-event-card">${inner}</div>`;
 }
 function richSpecialCard(restaurant, special) {
   return `<article class="restaurant-card compact-card"><div class="restaurant-card-body"><span class="eyebrow">Verified special</span><h3><a href="#restaurant/${encodeURIComponent(restaurant.id)}">${escapeHtml(restaurant.name)}</a></h3><p><strong>${escapeHtml(special.title)}</strong></p><p>${escapeHtml(special.recurrence || "Check current details")}</p></div></article>`;
