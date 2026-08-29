@@ -67,6 +67,19 @@ await page.locator("#globalSearch").press("Enter");
 await page.waitForURL(/#explore/);
 await page.locator(".restaurant-card", { hasText: "Sakaba" }).first().waitFor();
 
+for (const name of ["Darty Brewing Co.", "Maria's Pantry"]) {
+  await page.locator("#globalSearch").fill(name);
+  await page.locator("#globalSearch").press("Enter");
+  await page.waitForURL(/#explore/);
+  const card = page.locator(".restaurant-card", { hasText: name }).first();
+  await card.waitFor();
+  if (await card.locator(".card-social a").count() < 2) throw new Error(`Expected verified Facebook and Instagram links for ${name}.`);
+  const href = await card.locator('h3 a[href^="#restaurant/"]').getAttribute("href");
+  await page.goto(`${url}/${href}`, { waitUntil: "networkidle" });
+  if (await page.locator("#detailLinks .source-link-row").count() < 2) throw new Error(`Expected source-backed social detail links for ${name}.`);
+  if (!/\d/.test(await page.locator("#detailInfo").innerText())) throw new Error(`Expected verified consumer facts for ${name}.`);
+}
+
 await page.locator("#globalSearch").fill("Dartmouth");
 await page.locator("#globalSearch").press("Enter");
 await page.waitForURL(/#explore/);
@@ -204,6 +217,9 @@ await firstMapRow.press("Enter");
 if (!(await firstMapRow.evaluate((node) => node.classList.contains("is-highlighted")))) throw new Error("Expected keyboard activation to synchronize a list row with its map marker.");
 
 await page.setViewportSize({ width: 390, height: 844 });
+await page.goto(`${url}/#restaurant/marias-pantry-dartmouth`, { waitUntil: "networkidle" });
+await page.locator("#detailLinks .source-link-row").first().waitFor();
+await captureIphone("dartmouth-new-place");
 await page.goto(`${url}/#home`, { waitUntil: "networkidle" });
 await page.waitForTimeout(150);
 const mobileState = await page.evaluate(() => ({
