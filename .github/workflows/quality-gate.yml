@@ -71,11 +71,17 @@ jobs:
         run: |
           node scripts/check-restaurant-lifecycle.mjs
           node scripts/build-content-coverage-report.mjs
+          node scripts/build-thumbnail-coverage-report.mjs
           node scripts/reconcile-structured-coverage.mjs
           node scripts/check-report-deployment-parity.mjs
           node scripts/render-content-coverage-report.mjs
           node scripts/build-content-quality-report.mjs
           node scripts/build-deployment-metadata.mjs
+
+      - name: Build SQLite database artifacts
+        run: |
+          python3 scripts/build-sqlite-db.py
+          python3 scripts/import-thumbnail-candidates-to-sqlite.py
 
       - name: Upload integrity reports
         if: always()
@@ -86,6 +92,7 @@ jobs:
             artifacts/data-integrity-report.json
             artifacts/expanded-source-integrity-report.json
             artifacts/thumbnail-candidates-report.json
+            artifacts/thumbnail-coverage-report.json
             artifacts/restaurant-discovery-report.json
             data/build/restaurant-lifecycle-report.json
             docs/restaurant-lifecycle-report.md
@@ -103,6 +110,9 @@ jobs:
             data/recent-social-posts.js
             data/build/thumbnail-candidates.json
             data/thumbnail-candidates.js
+            data/build/thumbnail-coverage-report.json
+            docs/thumbnail-coverage-report.md
+            data/build/halifax_sourced.sqlite
             data/build/content-coverage-report.json
             docs/content-coverage-report.md
             data/build/content-quality-report.json
