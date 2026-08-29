@@ -20,7 +20,7 @@ The rebuild intentionally preserves and expands the repository's collection and 
 - restaurant-owned reservation, ordering, menu, event, ticket and newsletter link discovery
 - Meta Graph API Facebook/Instagram post-signal ingestion when approved credentials are configured
 - normalized recent-post intelligence for official feeds and permitted social APIs
-- source-backed thumbnail candidate discovery for missing restaurant/update images
+- source-backed thumbnail candidate discovery and coverage reporting for missing restaurant/update images
 - Halifax-wide event collection from public calendars, venues, teams and institutions
 - machine-readable content-coverage reporting
 - SQLite/catalog build artifacts
@@ -118,7 +118,7 @@ The UI distinguishes source coverage from consumer ratings. It does not fabricat
 
 `data/build/content-coverage-report.json` and `docs/content-coverage-report.md` measure unique-place coverage, social gaps, current event coverage, freshness and source failures. Source URL counts are kept distinct from the number of canonical places covered.
 
-Restaurant imagery is separately provenance-gated. Production photos are loaded from `data/restaurant-media.js` only when the media record has an exact restaurant ID, approved review state, explicit permission confirmation, source URL, source type, and documented rights basis. Unreviewed or merely public images are not rendered as production restaurant-card media. `data/thumbnail-candidates.js` stores source-backed thumbnail leads for review, including approved media, official feed/API media, and optional official-page metadata images. See `docs/media-provenance.md` and `docs/thumbnail-candidate-pipeline.md`.
+Restaurant imagery is separately provenance-gated. Production photos are loaded from `data/restaurant-media.js` only when the media record has an exact restaurant ID, approved review state, explicit permission confirmation, source URL, source type, and documented rights basis. Unreviewed or merely public images are not rendered as production restaurant-card media. `data/thumbnail-candidates.js` stores source-backed thumbnail leads for review, including approved media, official feed/API media, and optional official-page metadata images. `data/build/thumbnail-coverage-report.json`, `artifacts/thumbnail-coverage-report.json`, and `docs/thumbnail-coverage-report.md` summarize approved coverage, review queues, and restaurants that still have no candidate. See `docs/media-provenance.md` and `docs/thumbnail-candidate-pipeline.md`.
 
 Menu and specials discovery separates a general website/keyword signal from a direct source page. `data/verified-source-pages.js` stores exact-ID menu/specials links that passed the source-page verification contract. The UI prefers those records, falls back to direct official-site candidate links while verification coverage grows, and does not treat a generic restaurant homepage as proof that a menu exists. See `docs/verified-source-pages.md`.
 
@@ -181,12 +181,14 @@ node scripts/build-recent-social-posts.mjs
 THUMBNAIL_DISCOVERY_FETCH=1 node scripts/build-thumbnail-candidates.mjs
 node scripts/check-expanded-sources.mjs
 node scripts/check-thumbnail-candidates.mjs
+node scripts/build-thumbnail-coverage-report.mjs
 ```
 
 Content coverage report:
 
 ```bash
 node scripts/build-content-coverage-report.mjs
+node scripts/build-thumbnail-coverage-report.mjs
 ```
 
 Meta social signal pull:
@@ -200,6 +202,7 @@ node scripts/build-recent-social-posts.mjs
 node scripts/build-thumbnail-candidates.mjs
 node scripts/check-expanded-sources.mjs
 node scripts/check-thumbnail-candidates.mjs
+node scripts/build-thumbnail-coverage-report.mjs
 ```
 
 Local SQLite build:
@@ -213,8 +216,8 @@ GitHub Actions secrets used by the Meta pull are `META_FB_ACCESS_TOKEN`, `META_I
 
 ## Preview workflows
 
-- `Source Expansion Preview` refreshes website signals, verified source pages, restaurant events, first-party sources, feeds, permitted Meta signals, recent-post intelligence, and thumbnail candidates.
-- `Social Source Preview` refreshes the focused first-party social/feed/related-link layers plus recent-post intelligence and thumbnail candidates.
+- `Source Expansion Preview` refreshes website signals, verified source pages, restaurant events, first-party sources, feeds, permitted Meta signals, recent-post intelligence, thumbnail candidates, and thumbnail coverage queues.
+- `Social Source Preview` refreshes the focused first-party social/feed/related-link layers plus recent-post intelligence, thumbnail candidates, and thumbnail coverage queues.
 - `City Events Preview` refreshes and validates the Halifax-wide event dataset.
 - `Restaurant Discovery Preview` evaluates broader/new-opening restaurant discovery sources.
 
@@ -222,4 +225,4 @@ Preview workflows are **artifact-only** on feature branches. They do not push ge
 
 ## Deployment and quality gate
 
-GitHub Pages deployment is gated behind the `Quality Gate` workflow. Pull requests and `main` run JavaScript syntax checks, data-integrity gates, city-event scope validation, restaurant-discovery checks, thumbnail candidate checks, content-coverage generation, the Explore mini-map lifecycle regression, and Playwright UI verification. The gated Pages workflow deploys the exact `main` commit SHA that passed verification.
+GitHub Pages deployment is gated behind the `Quality Gate` workflow. Pull requests and `main` run JavaScript syntax checks, data-integrity gates, city-event scope validation, restaurant-discovery checks, thumbnail candidate checks, thumbnail coverage reporting, SQLite artifact generation, content-coverage generation, the Explore mini-map lifecycle regression, and Playwright UI verification. The gated Pages workflow deploys the exact `main` commit SHA that passed verification.
