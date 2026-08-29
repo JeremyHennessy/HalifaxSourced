@@ -25,6 +25,7 @@ const curatedWindow = await windowData("data/restaurants.js");
 const reviewedWindow = await windowData("data/reviewed-place-resolutions.js");
 const curated = curatedWindow.HALIFAX_RESTAURANTS || [];
 const reviewed = reviewedWindow.HALIFAX_REVIEWED_PLACE_RESOLUTIONS?.records || [];
+const resolutionByCandidateId = new Map((resolutions.resolutions || []).map((record) => [record.candidateId, record]));
 const places = new Map([...(catalog.restaurants || []), ...(discovered.restaurants || []), ...curated].map((place) => [place.id, place]));
 const firstPartyById = new Map((firstParty.records || []).map((record) => [record.restaurantId, record]));
 const factsById = new Map((facts.records || []).map((record) => [record.restaurantId, record]));
@@ -38,6 +39,10 @@ const records = reviewed.map((resolution) => {
   const place = places.get(resolution.restaurantId);
   if (!place) failures.push({ restaurantId: resolution.restaurantId, problem: "canonical_place_missing" });
   if (resolution.reviewState !== "resolved-by-evidence" || !validUrl(resolution.sourceUrl) || !resolution.evidence?.length) failures.push({ restaurantId: resolution.restaurantId, problem: "resolution_evidence_contract_failed" });
+  if (resolution.directorySourceId) {
+    const candidate = resolutionByCandidateId.get(resolution.candidateId);
+    if (!candidate || candidate.sourceId !== resolution.directorySourceId || candidate.matchedRestaurantId !== resolution.restaurantId) failures.push({ restaurantId: resolution.restaurantId, problem: "directory_candidate_provenance_failed" });
+  }
   const source = firstPartyById.get(resolution.restaurantId) || {};
   const fact = factsById.get(resolution.restaurantId) || {};
   const merged = { ...(place || {}), ...Object.fromEntries(Object.entries(resolution).filter(([, value]) => value !== undefined)) };
@@ -63,7 +68,10 @@ const records = reviewed.map((resolution) => {
 
 function sourceQueue(sourceId) {
   const items = (resolutions.resolutions || []).filter((item) => item.sourceId === sourceId);
-  const publishedCount = sourceId === "downtown-dartmouth-food-drink" ? reviewed.length : 0;
+  const publishedCount = reviewed.filter((record) => {
+    if (record.directorySourceId) return record.directorySourceId === sourceId;
+    return sourceId === "downtown-dartmouth-food-drink" && record.neighborhood === "Downtown Dartmouth";
+  }).length;
   return {
     candidates: items.length,
     algorithmResolved: items.filter((item) => item.state.startsWith("resolved_")).length,
@@ -78,7 +86,7 @@ const report = {
   generatedAt: new Date().toISOString(),
   policy: reviewedWindow.HALIFAX_REVIEWED_PLACE_RESOLUTIONS?.policy || null,
   downtownDartmouth: sourceQueue("downtown-dartmouth-food-drink"),
-  springGarden: { ...sourceQueue("spring-garden-eat-drink"), publicationDecision: "held_pending_location_specific_address_or_coordinate_evidence" },
+  springGarden: { ...sourceQueue("spring-garden-eat-drink"), publicationDecision: "partial_publication_location_specific_evidence_only" },
   publishedRecords: records,
   practicalGapCounts: Object.fromEntries(["identity", "address", "coordinates", "currentStatus", "officialWebsite", "menu", "hours", "phone", "socialProfiles", "duplicateConflictCleared"].map((key) => [key, records.filter((record) => !record.completeness[key]).length])),
   failures

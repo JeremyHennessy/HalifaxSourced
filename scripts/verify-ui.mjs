@@ -305,6 +305,23 @@ const dartmouthResolutionState = await page.evaluate(() => {
 if (!/35 Portland Street/i.test(dartmouthResolutionState.address) || dartmouthResolutionState.neighborhood !== "Downtown Dartmouth" || !/lakecitycider\.ca/.test(dartmouthResolutionState.website) || dartmouthResolutionState.reviewState !== "resolved-by-evidence") throw new Error(`Expected the reviewed Downtown Dartmouth overlay in the rendered restaurant model, got ${JSON.stringify(dartmouthResolutionState)}.`);
 await captureIphone("dartmouth-new-place");
 
+await page.goto(`${url}/#restaurant/osm-node-4420843802-le-bistro-by-liz`, { waitUntil: "networkidle" });
+await page.locator("h1", { hasText: "Le Bistro by Liz" }).waitFor();
+const springGardenResolutionState = await page.evaluate(() => {
+  const restaurant = restaurants.find((item) => item.id === "osm-node-4420843802-le-bistro-by-liz");
+  return {
+    address: restaurant?.address || "",
+    neighborhood: restaurant?.neighborhood || "",
+    phone: restaurant?.phone || "",
+    hours: restaurant?.openingHours || "",
+    menuUrl: restaurant?.menuUrl || "",
+    reviewState: restaurant?.reviewedPlaceResolution?.reviewState || ""
+  };
+});
+if (!/1333 South Park Street/i.test(springGardenResolutionState.address) || springGardenResolutionState.neighborhood !== "Spring Garden" || !/423-8428/.test(springGardenResolutionState.phone) || !/Monday/i.test(springGardenResolutionState.hours) || !/lebistrohalifax\.com\/menus/.test(springGardenResolutionState.menuUrl) || springGardenResolutionState.reviewState !== "resolved-by-evidence") throw new Error(`Expected the reviewed Spring Garden overlay in the rendered restaurant model, got ${JSON.stringify(springGardenResolutionState)}.`);
+if (await page.locator("#detailInfo .sidebar-link", { hasText: "Menu" }).count() < 1) throw new Error("Expected the official Le Bistro menu action on the reviewed Spring Garden detail page.");
+await captureIphone("spring-garden-reviewed");
+
 await page.goto(`${url}/#restaurant/the-narrows`, { waitUntil: "networkidle" });
 await page.locator(".restaurant-hero-photo").waitFor();
 await page.waitForFunction(() => {

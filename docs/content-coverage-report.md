@@ -1,7 +1,7 @@
 # Halifax Sourced content coverage snapshot
 
-Generated: 2026-08-29T17:33:13.572Z
-Source/deployment commit: `2c9921b55ef8cbe408c4d86fe52823da4a67ebeb`
+Generated: 2026-08-29T18:23:04.314Z
+Source/deployment commit: `e083247491e097a10ab8a2bc44e93541373a34d9`
 
 This is the reconciled snapshot produced from the same data layers packaged for deployment. Unknown values remain unknown; source leads are not promoted to verified facts.
 
@@ -16,8 +16,8 @@ This is the reconciled snapshot produced from the same data layers packaged for 
 | Verified/reachable official website | 242 | 32.3% |
 | Menu link | 158 | 21.1% |
 | Verified menu link | 86 | 11.5% |
-| Phone | 273 | 36.4% |
-| Hours | 241 | 32.2% |
+| Phone | 274 | 36.6% |
+| Hours | 243 | 32.4% |
 | At least one social profile | 145 | 19.4% |
 | Usable rights-approved media | 7 | 0.9% |
 | Coordinates | 738 | 98.5% |
