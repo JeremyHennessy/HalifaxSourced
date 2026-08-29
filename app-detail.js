@@ -69,6 +69,7 @@ function associationBasisLabel(basis) {
     linked_from_official_link_hub: "linked through official link hub",
     linked_from_verified_social_profile: "cross-linked by verified social profile",
     trusted_directory_explicit_link: "explicit trusted-directory link",
+    openstreetmap_contact_tag: "listed in OpenStreetMap contact data",
     verified_search_match: "verified search match",
     manual_review: "manually reviewed",
     shared_brand_profile: "shared brand profile"
