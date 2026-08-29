@@ -38,7 +38,6 @@
         </nav>
         <div class="header-actions">
           <button type="button" class="round-action" id="savedButton" aria-label="Saved places">♡</button>
-          <button type="button" class="avatar-button" id="profileButton" aria-label="Profile"><span>HS</span></button>
         </div>
       </div>
     </header>
@@ -64,8 +63,18 @@
       <a href="#explore" data-route-link="explore"><span aria-hidden="true">⌕</span>Explore</a>
       <a href="#events" data-route-link="events"><span aria-hidden="true">◫</span>Events</a>
       <a href="#map" data-route-link="map"><span aria-hidden="true">⌖</span>Map</a>
-      <a href="#saved" id="mobileSaved" data-route-link="saved"><span aria-hidden="true">♡</span>Saved</a>
+      <button type="button" id="mobileMore" aria-label="Open more navigation" aria-expanded="false"><span aria-hidden="true">•••</span>More</button>
     </nav>
+    <div class="mobile-more-backdrop" data-mobile-more-backdrop></div>
+    <aside class="mobile-more-sheet" data-mobile-more-sheet aria-label="More Halifax Sourced navigation" aria-hidden="true">
+      <div class="mobile-more-heading"><strong>Discover more</strong><button type="button" data-mobile-more-close aria-label="Close more navigation">×</button></div>
+      <nav>
+        <a href="#specials"><span aria-hidden="true">✦</span><div><strong>Specials</strong><small>Verified offers and official leads</small></div></a>
+        <a href="#menus"><span aria-hidden="true">≡</span><div><strong>Menus</strong><small>Direct restaurant menu sources</small></div></a>
+        <a href="#saved" data-route-link="saved"><span aria-hidden="true">♡</span><div><strong>Saved places</strong><small>Your list on this device</small></div></a>
+        <a href="#explore?feature=opening"><span aria-hidden="true">＋</span><div><strong>New & opening</strong><small>Recently discovered places</small></div></a>
+      </nav>
+    </aside>
     <div class="toast-region" id="toastRegion" aria-live="polite" aria-atomic="true"></div>
 
     <script src="./vendor/leaflet/leaflet.js?v=1.9.4"></script>

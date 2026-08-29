@@ -36,36 +36,18 @@ function homeRichSections() {
     .sort((a, b) => a.start - b.start);
   const tonight = events
     .filter(({ start }) => { const key = halifaxDateKey(start), mins = halifaxMinutes(start); return (key === today && mins >= 17 * 60) || (key === tomorrow && mins < 3 * 60); })
-    .slice(0, 4).map((item) => item.event);
-  const weekdays = ["sunday", "monday", "tuesday", "wednesday", "thursday", "friday", "saturday"];
-  const index = weekdays.indexOf(halifaxWeekday(now));
-  const daysToFriday = index === 5 ? 0 : index === 6 ? -1 : index === 0 ? -2 : 5 - index;
-  const friday = addDays(now, daysToFriday);
-  const weekendKeys = new Set([0, 1, 2].map((offset) => halifaxDateKey(addDays(friday, offset))));
-  const weekend = events.filter(({ start }) => weekendKeys.has(halifaxDateKey(start))).slice(0, 4).map((item) => item.event);
-  const openPlaces = restaurants.filter((r) => r.currentHoursState?.state === "open").sort((a, b) => (b.score || 0) - (a.score || 0)).slice(0, 4);
-  const day = halifaxWeekday(now);
-  const specials = [];
-  for (const restaurant of restaurants) {
-    for (const special of restaurant.currentVerifiedSpecials || []) {
-      if (Array.isArray(special.dayOfWeek) && special.dayOfWeek.includes(day)) specials.push({ restaurant, special });
-    }
-  }
-  specials.splice(4);
+    .slice(0, 3).map((item) => item.event);
+  const openPlaces = restaurants.filter((r) => r.currentHoursState?.state === "open").sort((a, b) => (b.score || 0) - (a.score || 0)).slice(0, 3);
   const sections = [];
-  if (tonight.length) sections.push(`<section class="page-shell section-block"><div class="section-heading"><div><span class="eyebrow">Tonight in Halifax</span><h2>What’s happening tonight</h2></div><a href="#events">All events →</a></div><div class="event-grid">${tonight.map(richEventCard).join("")}</div></section>`);
-  if (openPlaces.length) sections.push(`<section class="page-shell section-block"><div class="section-heading"><div><span class="eyebrow">Eat tonight</span><h2>Open now with fresh official hours</h2></div><a href="#explore">Explore →</a></div><div class="restaurant-grid">${openPlaces.map((r, i) => restaurantCard(r, { index: i })).join("")}</div></section>`);
-  if (specials.length) sections.push(`<section class="page-shell section-block"><div class="section-heading"><div><span class="eyebrow">Specials tonight</span><h2>Verified recurring offers</h2></div><a href="#specials">All specials →</a></div><div class="restaurant-grid">${specials.map(({ restaurant, special }) => richSpecialCard(restaurant, special)).join("")}</div></section>`);
-  if (weekend.length) sections.push(`<section class="page-shell section-block"><div class="section-heading"><div><span class="eyebrow">This weekend</span><h2>Plan the weekend</h2></div><a href="#events">All events →</a></div><div class="event-grid">${weekend.map(richEventCard).join("")}</div></section>`);
+  if (tonight.length) sections.push(`<section class="page-shell section-block home-action-section"><div class="section-heading"><div><span class="eyebrow">Tonight in Halifax</span><h2>What’s happening tonight</h2></div><a href="#events">All events →</a></div><div class="event-grid">${tonight.map(richEventCard).join("")}</div></section>`);
+  if (openPlaces.length) sections.push(`<section class="page-shell section-block home-action-section"><div class="section-heading"><div><span class="eyebrow">Eat tonight</span><h2>Open now with fresh official hours</h2></div><a href="#explore">Explore →</a></div><div class="restaurant-grid">${openPlaces.map((r, i) => restaurantCard(r, { index: i })).join("")}</div></section>`);
   return sections.join("");
 }
 renderHome = function renderHomeWithStructuredDiscovery() {
   baseRenderHome();
   const rich = homeRichSections();
   if (rich) {
-    const newsletter = appView.querySelector(".newsletter");
-    if (newsletter) newsletter.insertAdjacentHTML("beforebegin", rich);
-    else appView.insertAdjacentHTML("beforeend", rich);
+    appView.insertAdjacentHTML("beforeend", rich);
   }
   bindCommonActions();
 };

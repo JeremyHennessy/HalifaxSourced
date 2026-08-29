@@ -23,7 +23,19 @@ function renderRestaurantDetail(id) {
     </section>
     <section class="page-shell detail-layout">
       <div class="detail-main">
-        <nav class="detail-tabs"><a href="#detailMenu">Menu</a><a href="#detailSpecials">Specials</a><a href="#detailEvents">Events</a>${officialUpdates.length ? '<a href="#detailUpdates">Updates</a>' : ""}<a href="#detailLinks">Links</a><a href="#detailInfo">Info</a><a href="#detailSources">Sources</a></nav>
+        <nav class="detail-tabs"><a href="#detailOverview">Overview</a><a href="#detailMenu">Menu</a><a href="#detailSpecials">Specials</a><a href="#detailEvents">Events</a>${officialUpdates.length ? '<a href="#detailUpdates">Updates</a>' : ""}<a href="#detailLinks">Links</a><a href="#detailSources">Sources</a></nav>
+        <section id="detailOverview" class="mobile-detail-overview" aria-label="Restaurant essentials">
+          <div class="mobile-essential-facts">
+            <div><span>Hours</span><strong>${escapeHtml(restaurant.openingHours || "Check official source")}</strong></div>
+            <div><span>Location</span><strong>${escapeHtml(restaurant.address || restaurant.neighborhood || "Halifax")}</strong></div>
+            ${restaurant.phone ? `<div><span>Phone</span><strong>${escapeHtml(restaurant.phone)}</strong></div>` : ""}
+          </div>
+          <div class="mobile-essential-actions">
+            ${menuLink ? `<a class="button primary" href="${escapeHtml(menuLink)}" target="_blank" rel="noreferrer">View menu ↗</a>` : ordering ? `<a class="button primary" href="${escapeHtml(ordering)}" target="_blank" rel="noreferrer">Order online ↗</a>` : ""}
+            ${reservation ? `<a class="button teal" href="${escapeHtml(reservation)}" target="_blank" rel="noreferrer">Book table ↗</a>` : website ? `<a class="button teal" href="${escapeHtml(website)}" target="_blank" rel="noreferrer">Official site ↗</a>` : ""}
+            <button class="button secondary save-detail" type="button" data-save-id="${escapeHtml(restaurant.id)}">${state.saved.has(restaurant.id) ? "♥ Saved" : "♡ Save"}</button>
+          </div>
+        </section>
         <section id="detailMenu" class="detail-section"><div class="section-heading no-top"><div><h2>Menu sources</h2><p>Direct menu links observed from the restaurant's official source pages.</p></div></div>${restaurant.menuLinks.length ? `<div class="link-list">${restaurant.menuLinks.slice(0, 8).map(sourceLinkRow).join("")}</div>` : `<div class="info-message">No dedicated menu link is represented in the current source data.${website ? " The official website remains available in the Info panel." : ""}</div>`}</section>
         <section id="detailSpecials" class="detail-section"><div class="section-heading no-top"><div><h2>Specials</h2><p>Time-sensitive claims remain source leads until separate structured data establishes current terms, price, and timing.</p></div></div>${verifiedSpecials.length ? `<div class="link-list">${verifiedSpecials.map(structuredSpecialDetailRow).join("")}</div>` : restaurant.specialLinks.length ? `<div class="link-list">${restaurant.specialLinks.map(sourceLinkRow).join("")}</div>` : restaurant.specials.length ? `<div class="link-list">${restaurant.specials.map((s) => `<div class="source-link-row"><span>✦</span><div><strong>${escapeHtml(s.title)}</strong><small>${escapeHtml(s.cadence || "Check current details")}</small></div></div>`).join("")}</div>` : `<div class="info-message">No current special source is represented in the loaded data.</div>`}</section>
         <section id="detailEvents" class="detail-section"><div class="section-heading no-top"><div><h2>Restaurant events</h2><p>${restaurant.structuredEvents.length ? "Structured upcoming dates from restaurant-owned sources. Times are shown in Halifax time." : "Use the official link to confirm dates, times, tickets, and availability."}</p></div></div>${restaurant.structuredEvents.length ? `<div class="link-list">${restaurant.structuredEvents.map(structuredEventDetailRow).join("")}</div>` : restaurant.eventLinks.length ? `<div class="link-list">${restaurant.eventLinks.map(sourceLinkRow).join("")}</div>` : restaurant.events.length ? `<div class="link-list">${restaurant.events.map((event) => `<div class="source-link-row"><span>◫</span><div><strong>${escapeHtml(event.title)}</strong><small>${escapeHtml(event.timing || "Check current details")}</small></div></div>`).join("")}</div>` : `<div class="info-message">No restaurant-specific event lead is represented in the loaded sources.</div>`}</section>
@@ -35,13 +47,12 @@ function renderRestaurantDetail(id) {
         ${infoCard("Hours", restaurant.openingHours || "Hours not available in the current source data.", "◷")}
         ${infoCard("Location", restaurant.address || restaurant.neighborhood || "Halifax", "⌖")}
         ${restaurant.phone ? infoCard("Phone", restaurant.phone, "☎") : ""}
-        ${website || menuLink || reservation || ordering ? `<div class="sidebar-card"><h2>Official actions</h2>${website ? `<a class="sidebar-link" href="${escapeHtml(website)}" target="_blank" rel="noreferrer">Website ↗</a>` : ""}${menuLink ? `<a class="sidebar-link" href="${escapeHtml(menuLink)}" target="_blank" rel="noreferrer">Menu ↗</a>` : ""}${reservation ? `<a class="sidebar-link" href="${escapeHtml(reservation)}" target="_blank" rel="noreferrer">Reservations ↗</a>` : ""}${ordering ? `<a class="sidebar-link" href="${escapeHtml(ordering)}" target="_blank" rel="noreferrer">Order online ↗</a>` : ""}</div>` : ""}
-        ${socialProfiles.length ? `<div class="sidebar-card"><h2>Follow</h2>${socialProfiles.slice(0, 8).map((profile) => `<a class="sidebar-link" href="${escapeHtml(safeUrl(profile.url))}" target="_blank" rel="noreferrer">${escapeHtml(socialPlatformLabel(profile.platform))}${profile.handle ? ` · @${escapeHtml(String(profile.handle).replace(/^@/, ""))}` : ""} ↗</a>`).join("")}</div>` : ""}
+        ${website || menuLink || reservation || ordering ? `<div class="sidebar-card detail-official-actions"><h2>Official actions</h2>${website ? `<a class="sidebar-link" href="${escapeHtml(website)}" target="_blank" rel="noreferrer">Website ↗</a>` : ""}${menuLink ? `<a class="sidebar-link" href="${escapeHtml(menuLink)}" target="_blank" rel="noreferrer">Menu ↗</a>` : ""}${reservation ? `<a class="sidebar-link" href="${escapeHtml(reservation)}" target="_blank" rel="noreferrer">Reservations ↗</a>` : ""}${ordering ? `<a class="sidebar-link" href="${escapeHtml(ordering)}" target="_blank" rel="noreferrer">Order online ↗</a>` : ""}</div>` : ""}
+        ${socialProfiles.length ? `<div class="sidebar-card detail-follow-card"><h2>Follow</h2>${socialProfiles.slice(0, 8).map((profile) => `<a class="sidebar-link" href="${escapeHtml(safeUrl(profile.url))}" target="_blank" rel="noreferrer">${escapeHtml(socialPlatformLabel(profile.platform))}${profile.handle ? ` · @${escapeHtml(String(profile.handle).replace(/^@/, ""))}` : ""} ↗</a>`).join("")}</div>` : ""}
         ${linkHubs.length ? `<div class="sidebar-card"><h2>Official link hub</h2>${linkHubs.slice(0, 3).map((hub) => `<a class="sidebar-link" href="${escapeHtml(safeUrl(hub.url))}" target="_blank" rel="noreferrer">${escapeHtml(linkHubLabel(hub.platform))} ↗</a>`).join("")}</div>` : ""}
         ${restaurant.coordinates ? `<div class="sidebar-card"><h2>Map</h2><div id="detailMap" class="detail-map"></div><a class="sidebar-link" href="https://www.openstreetmap.org/?mlat=${restaurant.coordinates.lat}&mlon=${restaurant.coordinates.lon}#map=17/${restaurant.coordinates.lat}/${restaurant.coordinates.lon}" target="_blank" rel="noreferrer">Open map ↗</a></div>` : ""}
       </aside>
-    </section>
-    <div class="mobile-detail-actions">${menuLink ? `<a class="button primary" href="${escapeHtml(menuLink)}" target="_blank" rel="noreferrer">View menu</a>` : ordering ? `<a class="button primary" href="${escapeHtml(ordering)}" target="_blank" rel="noreferrer">Order online</a>` : ""}${reservation ? `<a class="button teal" href="${escapeHtml(reservation)}" target="_blank" rel="noreferrer">Book table</a>` : website ? `<a class="button teal" href="${escapeHtml(website)}" target="_blank" rel="noreferrer">Official site</a>` : ""}</div>`;
+    </section>`;
   bindCommonActions();
   if (restaurant.coordinates) requestAnimationFrame(() => initDetailMap(restaurant));
 }
@@ -140,7 +151,8 @@ function officialUpdateCard(update) {
 }
 
 function infoCard(title, text, icon) {
-  return `<div class="sidebar-card"><div class="sidebar-card-title"><span>${icon}</span><h2>${escapeHtml(title)}</h2></div><p>${escapeHtml(text)}</p></div>`;
+  const slug = String(title || "info").toLowerCase().replace(/[^a-z0-9]+/g, "-");
+  return `<div class="sidebar-card detail-info-card detail-info-${escapeHtml(slug)}"><div class="sidebar-card-title"><span>${icon}</span><h2>${escapeHtml(title)}</h2></div><p>${escapeHtml(text)}</p></div>`;
 }
 
 function renderSaved() {
