@@ -108,6 +108,7 @@ function restaurantCard(restaurant, options = {}) {
   const saved = state.saved.has(restaurant.id);
   const tags = consumerTags(restaurant).slice(0, 2);
   const index = options.index || 0;
+  const socialProfiles = (restaurant.socialProfiles || []).filter((profile) => safeUrl(profile.url)).slice(0, 3);
   return `
     <article class="restaurant-card" data-restaurant-id="${escapeHtml(restaurant.id)}">
       <div class="card-media media-${mediaTone(restaurant)}${permittedImageClass(restaurant)}" style="--media-pos:${15 + ((index * 17) % 70)}%">
@@ -119,6 +120,7 @@ function restaurantCard(restaurant, options = {}) {
         <h3><a href="#restaurant/${encodeURIComponent(restaurant.id)}">${escapeHtml(restaurant.name)}</a></h3>
         <p class="card-meta">${escapeHtml(primaryCuisine(restaurant))} · ${escapeHtml(restaurant.neighborhood || "Halifax")}</p>
         <div class="card-tags">${tags.map((tag) => `<span>${escapeHtml(tag)}</span>`).join("")}</div>
+        ${socialProfiles.length ? `<div class="card-social" aria-label="${escapeHtml(restaurant.name)} social profiles">${socialProfiles.map((profile) => `<a href="${escapeHtml(safeUrl(profile.url))}" target="_blank" rel="noreferrer" aria-label="${escapeHtml(`${socialPlatformLabel(profile.platform)} for ${restaurant.name}`)}">${escapeHtml(socialPlatformLabel(profile.platform))}</a>`).join("")}</div>` : ""}
         <div class="card-footer"><span>${sourceLabel(restaurant)}</span><a href="#restaurant/${encodeURIComponent(restaurant.id)}">View →</a></div>
       </div>
     </article>`;
