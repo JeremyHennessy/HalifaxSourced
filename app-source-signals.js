@@ -45,6 +45,21 @@ function profileKey(profile) {
   return `${String(profile?.platform || "").toLowerCase()}|${String(profile?.handle || "").toLowerCase().replace(/^@/, "")}`;
 }
 
+function mergeSocialProfiles(existing = [], additions = []) {
+  const profiles = [];
+  const seen = new Set();
+  for (const profile of [...existing, ...additions]) {
+    const url = safeUrl(profile?.url);
+    if (!url) continue;
+    const profileIdentity = profileKey(profile);
+    const key = profileIdentity !== "|" ? profileIdentity : `${String(profile?.platform || "").toLowerCase()}|${url.toLowerCase()}`;
+    if (seen.has(key)) continue;
+    seen.add(key);
+    profiles.push({ ...profile, url });
+  }
+  return profiles;
+}
+
 function socialSourceMeta(profile) {
   const platform = String(profile?.platform || "").toLowerCase();
   const labels = {
@@ -101,7 +116,7 @@ for (const restaurant of restaurants) {
   const apiSignals = socialByRestaurant.get(restaurant.id) || [];
   const allSignals = [...feedSignals, ...apiSignals];
   const currentSignals = allSignals.filter((signal) => sourceSignalFresh(signal));
-  const allProfiles = Array.isArray(firstParty?.socialProfiles) ? firstParty.socialProfiles : [];
+  const allProfiles = mergeSocialProfiles(restaurant.socialProfiles || [], Array.isArray(firstParty?.socialProfiles) ? firstParty.socialProfiles : []);
   const linkHubs = Array.isArray(firstParty?.linkHubs) ? firstParty.linkHubs : [];
   const uniqueProfiles = allProfiles.filter((profile) => profileAssociationCounts.get(profileKey(profile)) === 1);
   const sharedProfiles = allProfiles.filter((profile) => profileAssociationCounts.get(profileKey(profile)) > 1);
