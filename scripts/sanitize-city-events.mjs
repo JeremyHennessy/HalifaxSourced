@@ -47,14 +47,16 @@ function inScopeMunicipality(event) {
   if (fixedSourceMunicipality) {
     const explicitText = clean(event.city);
     if (explicitText && !explicitMunicipality) return null;
-    return locationMunicipality || explicitMunicipality || fixedSourceMunicipality;
+    // A source adapter's explicit municipality is stronger than a street name.
+    // For example, Bedford Public Library is on Dartmouth Road in Bedford.
+    return explicitMunicipality || locationMunicipality || fixedSourceMunicipality;
   }
 
   // Halifax-local directories may omit a municipality on some listings. Prefer event evidence;
   // only fall back to Halifax for explicitly local Halifax event-directory sources.
   if (event.sourceId === "halifax-events-community") return locationMunicipality || explicitMunicipality || "Halifax";
 
-  return locationMunicipality || explicitMunicipality;
+  return explicitMunicipality || locationMunicipality;
 }
 
 function addCategory(categories, name, regex, text) {

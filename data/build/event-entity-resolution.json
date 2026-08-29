@@ -1,14 +1,14 @@
 {
-  "generatedAt": "2026-08-28T22:08:28.882Z",
-  "eventCount": 166,
-  "venueResolved": 114,
-  "organizerResolved": 143,
-  "restaurantResolved": 10,
+  "generatedAt": "2026-08-29T01:02:46.522Z",
+  "eventCount": 187,
+  "venueResolved": 135,
+  "organizerResolved": 161,
+  "restaurantResolved": 9,
   "unresolvedVenue": 52,
-  "unresolvedOrganizer": 23,
+  "unresolvedOrganizer": 26,
   "resolutions": [
     {
-      "eventId": "tourism-ns-events-8d394cf969c6a230",
+      "eventId": "tourism-ns-events-bc575e6ebf9dd405",
       "title": "Ta’n me’j Tel-keknuo’ltiek: How Unique We Still Are",
       "sourceId": "tourism-ns-events",
       "venueId": null,
@@ -30,7 +30,7 @@
       "restaurantBasis": null
     },
     {
-      "eventId": "tourism-ns-events-780b75f272d3c505",
+      "eventId": "tourism-ns-events-7e660a815efe01ed",
       "title": "Halifax Wanderers 2026 Season",
       "sourceId": "tourism-ns-events",
       "venueId": "wanderers-grounds-halifax",
@@ -41,7 +41,7 @@
       "restaurantBasis": null
     },
     {
-      "eventId": "tourism-ns-events-f941db3adc789b9c",
+      "eventId": "tourism-ns-events-ecd3f256a0bc1363",
       "title": "Halifax Tides FC 2026 Season",
       "sourceId": "tourism-ns-events",
       "venueId": "wanderers-grounds-halifax",
@@ -85,8 +85,19 @@
       "restaurantBasis": null
     },
     {
-      "eventId": "the-carleton-7d83ec423aad8c34",
-      "title": "Southbound Sinners",
+      "eventId": "alderney-landing-events-e5cf740d67247e04",
+      "title": "On the Threshold",
+      "sourceId": "alderney-landing-events",
+      "venueId": "alderney-landing-dartmouth",
+      "venueBasis": "source_id",
+      "organizerId": null,
+      "organizerBasis": null,
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
+      "eventId": "the-carleton-faa198c823ba6ddf",
+      "title": "2 STANDING TIX LEFT! Colrain Album Release Show w/ George Woodhouse",
       "sourceId": "the-carleton",
       "venueId": "the-carleton-halifax",
       "venueBasis": "source_id",
@@ -96,15 +107,70 @@
       "restaurantBasis": "exact_venue_place_name"
     },
     {
-      "eventId": "the-carleton-c3e2af1bd7f4bb60",
-      "title": "5 STANDING TIX LEFT! Colrain Album Release Show w/ George Woodhouse",
-      "sourceId": "the-carleton",
-      "venueId": "the-carleton-halifax",
+      "eventId": "alderney-landing-events-74b0a4c8b5c50096",
+      "title": "Farmers Market",
+      "sourceId": "alderney-landing-events",
+      "venueId": "alderney-landing-dartmouth",
       "venueBasis": "source_id",
-      "organizerId": "the-carleton",
-      "organizerBasis": "source_id",
-      "restaurantId": "osm-node-771690675-the-carleton",
-      "restaurantBasis": "exact_venue_place_name"
+      "organizerId": null,
+      "organizerBasis": null,
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
+      "eventId": "alderney-landing-events-b5684bc703db0398",
+      "title": "Artist Talk: On the Threshold",
+      "sourceId": "alderney-landing-events",
+      "venueId": "alderney-landing-dartmouth",
+      "venueBasis": "source_id",
+      "organizerId": null,
+      "organizerBasis": null,
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
+      "eventId": "alderney-gate-library-events-bd4be26e642bed87",
+      "title": "It Runs in the Blood: Documentary by Innah Gaspar",
+      "sourceId": "alderney-gate-library-events",
+      "venueId": "alderney-gate-library",
+      "venueBasis": "source_id",
+      "organizerId": "halifax-public-libraries",
+      "organizerBasis": "source_name_token",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
+      "eventId": "alderney-gate-library-events-d7c815fc743fdab6",
+      "title": "Window Oceanscapes",
+      "sourceId": "alderney-gate-library-events",
+      "venueId": "alderney-gate-library",
+      "venueBasis": "source_id",
+      "organizerId": "halifax-public-libraries",
+      "organizerBasis": "source_name_token",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
+      "eventId": "woodlawn-library-events-334287c316ec01a8",
+      "title": "Movie: Jumanji",
+      "sourceId": "woodlawn-library-events",
+      "venueId": "woodlawn-library",
+      "venueBasis": "source_id",
+      "organizerId": "halifax-public-libraries",
+      "organizerBasis": "source_name_token",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
+      "eventId": "woodlawn-library-events-f0974bc500e39f7e",
+      "title": "Drama Llamas",
+      "sourceId": "woodlawn-library-events",
+      "venueId": "woodlawn-library",
+      "venueBasis": "source_id",
+      "organizerId": "halifax-public-libraries",
+      "organizerBasis": "source_name_token",
+      "restaurantId": null,
+      "restaurantBasis": null
     },
     {
       "eventId": "halifax-convention-centre-cce7d12d9cabc545",
@@ -118,7 +184,7 @@
       "restaurantBasis": null
     },
     {
-      "eventId": "the-carleton-8d803040b30111a7",
+      "eventId": "the-carleton-d026f523e487b2ae",
       "title": "SOLD OUT: Josée Champoux & Andre Pettipas – Road to Giantstock",
       "sourceId": "the-carleton",
       "venueId": "the-carleton-halifax",
@@ -127,6 +193,61 @@
       "organizerBasis": "source_id",
       "restaurantId": "osm-node-771690675-the-carleton",
       "restaurantBasis": "exact_venue_place_name"
+    },
+    {
+      "eventId": "bedford-library-events-07ecb0ff1a31eb1d",
+      "title": "Community Crafters",
+      "sourceId": "bedford-library-events",
+      "venueId": "bedford-library",
+      "venueBasis": "source_id",
+      "organizerId": "halifax-public-libraries",
+      "organizerBasis": "source_name_token",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
+      "eventId": "woodlawn-library-events-82530a6584013d00",
+      "title": "Movie: Mr. Burton",
+      "sourceId": "woodlawn-library-events",
+      "venueId": "woodlawn-library",
+      "venueBasis": "source_id",
+      "organizerId": "halifax-public-libraries",
+      "organizerBasis": "source_name_token",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
+      "eventId": "alderney-gate-library-events-9856c5cd3558169c",
+      "title": "Meet Juno, a St. John Ambulance Therapy Dog",
+      "sourceId": "alderney-gate-library-events",
+      "venueId": "alderney-gate-library",
+      "venueBasis": "source_id",
+      "organizerId": "halifax-public-libraries",
+      "organizerBasis": "source_name_token",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
+      "eventId": "the-carleton-c2cbfaf07ac2b0f6",
+      "title": "Frank Sultana & RG Schaller",
+      "sourceId": "the-carleton",
+      "venueId": "the-carleton-halifax",
+      "venueBasis": "source_id",
+      "organizerId": "the-carleton",
+      "organizerBasis": "source_id",
+      "restaurantId": "osm-node-771690675-the-carleton",
+      "restaurantBasis": "exact_venue_place_name"
+    },
+    {
+      "eventId": "scotiabank-centre-ae552db1a63128e3",
+      "title": "Australian Pink Floyd",
+      "sourceId": "scotiabank-centre",
+      "venueId": "scotiabank-centre-halifax",
+      "venueBasis": "source_id",
+      "organizerId": "scotiabank-centre",
+      "organizerBasis": "source_id",
+      "restaurantId": null,
+      "restaurantBasis": null
     },
     {
       "eventId": "https://novascotia.com/event/the-halifax-fringe-festival/#event",
@@ -140,8 +261,30 @@
       "restaurantBasis": null
     },
     {
-      "eventId": "the-carleton-369a5dda18a3eadd",
-      "title": "Frank Sultana & RG Schaller",
+      "eventId": "tourism-ns-events-d769b4b563050019",
+      "title": "Kings of Hali 9 – Premier Video Gaming Tournament",
+      "sourceId": "tourism-ns-events",
+      "venueId": null,
+      "venueBasis": null,
+      "organizerId": null,
+      "organizerBasis": null,
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
+      "eventId": "alderney-gate-library-events-f2bbf7cde65f83d2",
+      "title": "Welcome Housing & Support Drop-in Clinic",
+      "sourceId": "alderney-gate-library-events",
+      "venueId": "alderney-gate-library",
+      "venueBasis": "source_id",
+      "organizerId": "halifax-public-libraries",
+      "organizerBasis": "source_name_token",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
+      "eventId": "the-carleton-c8d1668b7c7e2167",
+      "title": "Nick Earle & The Reckless Hearts w/ LeafGreen",
       "sourceId": "the-carleton",
       "venueId": "the-carleton-halifax",
       "venueBasis": "source_id",
@@ -149,17 +292,6 @@
       "organizerBasis": "source_id",
       "restaurantId": "osm-node-771690675-the-carleton",
       "restaurantBasis": "exact_venue_place_name"
-    },
-    {
-      "eventId": "scotiabank-centre-ee0d359e46d4aece",
-      "title": "Australian Pink Floyd",
-      "sourceId": "scotiabank-centre",
-      "venueId": "scotiabank-centre-halifax",
-      "venueBasis": "source_id",
-      "organizerId": "scotiabank-centre",
-      "organizerBasis": "source_id",
-      "restaurantId": null,
-      "restaurantBasis": null
     },
     {
       "eventId": "light-house-arts-centre-e616c2b214832027",
@@ -173,29 +305,29 @@
       "restaurantBasis": null
     },
     {
-      "eventId": "tourism-ns-events-06d790170c15ee40",
-      "title": "Kings of Hali 9 – Premier Video Gaming Tournament",
-      "sourceId": "tourism-ns-events",
-      "venueId": null,
-      "venueBasis": null,
-      "organizerId": null,
-      "organizerBasis": null,
+      "eventId": "alderney-gate-library-events-e14e53d8a9fd505f",
+      "title": "Notary Clinic",
+      "sourceId": "alderney-gate-library-events",
+      "venueId": "alderney-gate-library",
+      "venueBasis": "source_id",
+      "organizerId": "halifax-public-libraries",
+      "organizerBasis": "source_name_token",
       "restaurantId": null,
       "restaurantBasis": null
     },
     {
-      "eventId": "the-carleton-5653652a17ce28b1",
-      "title": "Nick Earle & The Reckless Hearts w/ LeafGreen",
-      "sourceId": "the-carleton",
-      "venueId": "the-carleton-halifax",
+      "eventId": "alderney-gate-library-events-d1ca113d7e7139f9",
+      "title": "Community Café",
+      "sourceId": "alderney-gate-library-events",
+      "venueId": "alderney-gate-library",
       "venueBasis": "source_id",
-      "organizerId": "the-carleton",
-      "organizerBasis": "source_id",
-      "restaurantId": "osm-node-771690675-the-carleton",
-      "restaurantBasis": "exact_venue_place_name"
+      "organizerId": "halifax-public-libraries",
+      "organizerBasis": "source_name_token",
+      "restaurantId": null,
+      "restaurantBasis": null
     },
     {
-      "eventId": "the-carleton-6e434a448bce7c32",
+      "eventId": "the-carleton-4342f38676a95b42",
       "title": "Lindsay Misiner Full Band Show W/Anna Martin (Duo)",
       "sourceId": "the-carleton",
       "venueId": "the-carleton-halifax",
@@ -206,7 +338,7 @@
       "restaurantBasis": "exact_venue_place_name"
     },
     {
-      "eventId": "the-carleton-6620c897af0b40ca",
+      "eventId": "the-carleton-293580305246f2d7",
       "title": "Ikoum (Just Wôan & Kamila Nasr)",
       "sourceId": "the-carleton",
       "venueId": "the-carleton-halifax",
@@ -217,7 +349,7 @@
       "restaurantBasis": "exact_venue_place_name"
     },
     {
-      "eventId": "hfx-wanderers-home-756f8bf6829dc15e",
+      "eventId": "hfx-wanderers-home-f8ad1bc4ac04ffbd",
       "title": "HFX Wanderers FC vs Cavalry FC",
       "sourceId": "hfx-wanderers-home",
       "venueId": "wanderers-grounds-halifax",
@@ -228,7 +360,7 @@
       "restaurantBasis": null
     },
     {
-      "eventId": "scotiabank-centre-176001ab42281a2a",
+      "eventId": "scotiabank-centre-924fd4c584ba390b",
       "title": "Max McNown - RESCHEDULED",
       "sourceId": "scotiabank-centre",
       "venueId": "scotiabank-centre-halifax",
@@ -239,7 +371,51 @@
       "restaurantBasis": null
     },
     {
-      "eventId": "the-carleton-a0e66cf12ed390be",
+      "eventId": "bedford-library-events-71e473ba88850aea",
+      "title": "Baby's First Books",
+      "sourceId": "bedford-library-events",
+      "venueId": "bedford-library",
+      "venueBasis": "source_id",
+      "organizerId": "halifax-public-libraries",
+      "organizerBasis": "source_name_token",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
+      "eventId": "bedford-library-events-80b6b1484d180e47",
+      "title": "Parenting Support Drop-in for New Families",
+      "sourceId": "bedford-library-events",
+      "venueId": "bedford-library",
+      "venueBasis": "source_id",
+      "organizerId": "halifax-public-libraries",
+      "organizerBasis": "source_name_token",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
+      "eventId": "woodlawn-library-events-5e7e55caf109885b",
+      "title": "Needle Niche",
+      "sourceId": "woodlawn-library-events",
+      "venueId": "woodlawn-library",
+      "venueBasis": "source_id",
+      "organizerId": "halifax-public-libraries",
+      "organizerBasis": "source_name_token",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
+      "eventId": "woodlawn-library-events-0d3c533510bb2c7b",
+      "title": "Author Talk with Anthea Taljaard: The Objects We Keep (&…",
+      "sourceId": "woodlawn-library-events",
+      "venueId": "woodlawn-library",
+      "venueBasis": "source_id",
+      "organizerId": "halifax-public-libraries",
+      "organizerBasis": "source_name_token",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
+      "eventId": "the-carleton-1b8aa8e84bbb85d5",
       "title": "SOLD OUT: Ben Caplan – Wednesday",
       "sourceId": "the-carleton",
       "venueId": "the-carleton-halifax",
@@ -250,8 +426,63 @@
       "restaurantBasis": "exact_venue_place_name"
     },
     {
-      "eventId": "the-carleton-1af69bcfb2106149",
+      "eventId": "bedford-library-events-e02933a3d9862a4e",
+      "title": "Tinkering Toddlers",
+      "sourceId": "bedford-library-events",
+      "venueId": "bedford-library",
+      "venueBasis": "source_id",
+      "organizerId": "halifax-public-libraries",
+      "organizerBasis": "source_name_token",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
+      "eventId": "bedford-library-events-fc6945f379ff8edd",
+      "title": "Community Crafters",
+      "sourceId": "bedford-library-events",
+      "venueId": "bedford-library",
+      "venueBasis": "source_id",
+      "organizerId": "halifax-public-libraries",
+      "organizerBasis": "source_name_token",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
+      "eventId": "woodlawn-library-events-eabf90031f251805",
+      "title": "Movie: Late Bloomers",
+      "sourceId": "woodlawn-library-events",
+      "venueId": "woodlawn-library",
+      "venueBasis": "source_id",
+      "organizerId": "halifax-public-libraries",
+      "organizerBasis": "source_name_token",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
+      "eventId": "bedford-library-events-c988b832f7cb5126",
+      "title": "After School Club",
+      "sourceId": "bedford-library-events",
+      "venueId": "bedford-library",
+      "venueBasis": "source_id",
+      "organizerId": "halifax-public-libraries",
+      "organizerBasis": "source_name_token",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
+      "eventId": "the-carleton-f5ffbc740e2b0111",
       "title": "SOLD OUT: Ben Caplan – Thursday",
+      "sourceId": "the-carleton",
+      "venueId": "the-carleton-halifax",
+      "venueBasis": "source_id",
+      "organizerId": "the-carleton",
+      "organizerBasis": "source_id",
+      "restaurantId": "osm-node-771690675-the-carleton",
+      "restaurantBasis": "exact_venue_place_name"
+    },
+    {
+      "eventId": "the-carleton-98b6765e6c9858c3",
+      "title": "Ben Caplan – 3rd Show Added!",
       "sourceId": "the-carleton",
       "venueId": "the-carleton-halifax",
       "venueBasis": "source_id",
@@ -283,17 +514,6 @@
       "restaurantBasis": null
     },
     {
-      "eventId": "the-carleton-978ede45bcb00916",
-      "title": "Ben Caplan – 3rd Show Added!",
-      "sourceId": "the-carleton",
-      "venueId": "the-carleton-halifax",
-      "venueBasis": "source_id",
-      "organizerId": "the-carleton",
-      "organizerBasis": "source_id",
-      "restaurantId": "osm-node-771690675-the-carleton",
-      "restaurantBasis": "exact_venue_place_name"
-    },
-    {
       "eventId": "https://novascotia.com/event/nhl-street-harbour-fest-2026/#event",
       "title": "NHL STREET Harbour Fest 2026",
       "sourceId": "tourism-ns-events",
@@ -316,6 +536,17 @@
       "restaurantBasis": null
     },
     {
+      "eventId": "halifax-tides-home-e5c18ec6126eff4a",
+      "title": "Halifax Tides FC vs. AFC Toronto",
+      "sourceId": "halifax-tides-home",
+      "venueId": "wanderers-grounds-halifax",
+      "venueBasis": "source_id",
+      "organizerId": "halifax-tides",
+      "organizerBasis": "source_id",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
       "eventId": "https://novascotia.com/event/combo-show-sept-18/#event",
       "title": "Combo Show Sept 18",
       "sourceId": "tourism-ns-events",
@@ -323,6 +554,28 @@
       "venueBasis": null,
       "organizerId": null,
       "organizerBasis": null,
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
+      "eventId": "halifax-mooseheads-home-f7a36473489a055a",
+      "title": "Halifax Mooseheads vs Moncton",
+      "sourceId": "halifax-mooseheads-home",
+      "venueId": "scotiabank-centre-halifax",
+      "venueBasis": "source_id",
+      "organizerId": "halifax-mooseheads",
+      "organizerBasis": "source_id",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
+      "eventId": "scotiabank-centre-f117660d4e48f308",
+      "title": "Halifax Mooseheads vs Moncton Wildcats (Home Opener)",
+      "sourceId": "scotiabank-centre",
+      "venueId": "scotiabank-centre-halifax",
+      "venueBasis": "source_id",
+      "organizerId": "scotiabank-centre",
+      "organizerBasis": "source_id",
       "restaurantId": null,
       "restaurantBasis": null
     },
@@ -338,34 +591,23 @@
       "restaurantBasis": null
     },
     {
-      "eventId": "halifax-tides-home-33086c7ad705ed9e",
-      "title": "Halifax Tides FC vs. AFC Toronto",
-      "sourceId": "halifax-tides-home",
+      "eventId": "alderney-gate-library-events-287e87a629e7e5c2",
+      "title": "Family Drop-in Family Drop-in",
+      "sourceId": "alderney-gate-library-events",
+      "venueId": "alderney-gate-library",
+      "venueBasis": "source_id",
+      "organizerId": "halifax-public-libraries",
+      "organizerBasis": "source_name_token",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
+      "eventId": "hfx-wanderers-home-49d40d2e135d4489",
+      "title": "HFX Wanderers FC vs Inter Toronto FC",
+      "sourceId": "hfx-wanderers-home",
       "venueId": "wanderers-grounds-halifax",
       "venueBasis": "source_id",
-      "organizerId": "halifax-tides",
-      "organizerBasis": "source_id",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "halifax-mooseheads-home-8023463dc7bbbbbd",
-      "title": "Halifax Mooseheads vs Moncton",
-      "sourceId": "halifax-mooseheads-home",
-      "venueId": "scotiabank-centre-halifax",
-      "venueBasis": "source_id",
-      "organizerId": "halifax-mooseheads",
-      "organizerBasis": "source_id",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "scotiabank-centre-e647d8ab6e9fb73a",
-      "title": "Halifax Mooseheads vs Moncton Wildcats (Home Opener)",
-      "sourceId": "scotiabank-centre",
-      "venueId": "scotiabank-centre-halifax",
-      "venueBasis": "source_id",
-      "organizerId": "scotiabank-centre",
+      "organizerId": "hfx-wanderers",
       "organizerBasis": "source_id",
       "restaurantId": null,
       "restaurantBasis": null
@@ -382,17 +624,6 @@
       "restaurantBasis": null
     },
     {
-      "eventId": "hfx-wanderers-home-ef9a4bae80ef976e",
-      "title": "HFX Wanderers FC vs Inter Toronto FC",
-      "sourceId": "hfx-wanderers-home",
-      "venueId": "wanderers-grounds-halifax",
-      "venueBasis": "source_id",
-      "organizerId": "hfx-wanderers",
-      "organizerBasis": "source_id",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
       "eventId": "https://novascotia.com/event/women-of-the-fur-trade/#event",
       "title": "Women of the Fur Trade",
       "sourceId": "tourism-ns-events",
@@ -404,7 +635,7 @@
       "restaurantBasis": null
     },
     {
-      "eventId": "scotiabank-centre-4bc8dd5de1e95de4",
+      "eventId": "scotiabank-centre-19345edf28956543",
       "title": "Sabaton",
       "sourceId": "scotiabank-centre",
       "venueId": "scotiabank-centre-halifax",
@@ -422,6 +653,17 @@
       "venueBasis": null,
       "organizerId": null,
       "organizerBasis": null,
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
+      "eventId": "hfx-wanderers-home-c033387b6160935a",
+      "title": "HFX Wanderers FC vs Atlético Ottawa FC",
+      "sourceId": "hfx-wanderers-home",
+      "venueId": "wanderers-grounds-halifax",
+      "venueBasis": "source_id",
+      "organizerId": "hfx-wanderers",
+      "organizerBasis": "source_id",
       "restaurantId": null,
       "restaurantBasis": null
     },
@@ -448,18 +690,7 @@
       "restaurantBasis": null
     },
     {
-      "eventId": "hfx-wanderers-home-34df7fbf20c16478",
-      "title": "HFX Wanderers FC vs Atlético Ottawa FC",
-      "sourceId": "hfx-wanderers-home",
-      "venueId": "wanderers-grounds-halifax",
-      "venueBasis": "source_id",
-      "organizerId": "hfx-wanderers",
-      "organizerBasis": "source_id",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "halifax-tides-home-59f89f492d1b73c7",
+      "eventId": "halifax-tides-home-1505b0a2c510a9b2",
       "title": "Halifax Tides FC vs. Montréal Roses FC",
       "sourceId": "halifax-tides-home",
       "venueId": "wanderers-grounds-halifax",
@@ -492,18 +723,7 @@
       "restaurantBasis": null
     },
     {
-      "eventId": "halifax-public-libraries-166dcb65969a049a",
-      "title": "Library Store",
-      "sourceId": "halifax-public-libraries",
-      "venueId": "central-library-halifax",
-      "venueBasis": "exact_normalized_venue_name",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "tourism-ns-events-29eec1a52dea9a84",
+      "eventId": "tourism-ns-events-8b046fa1deaeb873",
       "title": "Wine Fair Halifax",
       "sourceId": "tourism-ns-events",
       "venueId": "halifax-convention-centre",
@@ -514,7 +734,7 @@
       "restaurantBasis": null
     },
     {
-      "eventId": "halifax-tides-home-3e53835f014e898e",
+      "eventId": "halifax-tides-home-0e0dc69dbc8a4c9a",
       "title": "Halifax Tides FC vs. Calgary Wild FC",
       "sourceId": "halifax-tides-home",
       "venueId": "wanderers-grounds-halifax",
@@ -547,7 +767,7 @@
       "restaurantBasis": null
     },
     {
-      "eventId": "halifax-mooseheads-home-2e9484941dbf4bd4",
+      "eventId": "halifax-mooseheads-home-fa0ac77eb1b2bf9a",
       "title": "Halifax Mooseheads vs Rouyn-Noranda",
       "sourceId": "halifax-mooseheads-home",
       "venueId": "scotiabank-centre-halifax",
@@ -558,7 +778,7 @@
       "restaurantBasis": null
     },
     {
-      "eventId": "scotiabank-centre-17a0d9531d73646c",
+      "eventId": "scotiabank-centre-295dd627ae89dbbe",
       "title": "Halifax Mooseheads vs Rouyn-Noranda Huskies",
       "sourceId": "scotiabank-centre",
       "venueId": "scotiabank-centre-halifax",
@@ -569,7 +789,7 @@
       "restaurantBasis": null
     },
     {
-      "eventId": "halifax-mooseheads-home-b8cd97060b31415b",
+      "eventId": "halifax-mooseheads-home-55a0591536016251",
       "title": "Halifax Mooseheads vs Drummondville",
       "sourceId": "halifax-mooseheads-home",
       "venueId": "scotiabank-centre-halifax",
@@ -580,7 +800,7 @@
       "restaurantBasis": null
     },
     {
-      "eventId": "scotiabank-centre-0e94a2e36a22459e",
+      "eventId": "scotiabank-centre-455d7cbffb748794",
       "title": "Halifax Mooseheads vs Drummondville Voltigeurs",
       "sourceId": "scotiabank-centre",
       "venueId": "scotiabank-centre-halifax",
@@ -591,7 +811,7 @@
       "restaurantBasis": null
     },
     {
-      "eventId": "hfx-wanderers-home-315de978d06b24da",
+      "eventId": "hfx-wanderers-home-33da4287835a4d71",
       "title": "HFX Wanderers FC vs Cavalry FC",
       "sourceId": "hfx-wanderers-home",
       "venueId": "wanderers-grounds-halifax",
@@ -602,7 +822,7 @@
       "restaurantBasis": null
     },
     {
-      "eventId": "scotiabank-centre-54927ff18c4e1c83",
+      "eventId": "scotiabank-centre-7fd4af93af3c75ce",
       "title": "The Black Keys",
       "sourceId": "scotiabank-centre",
       "venueId": "scotiabank-centre-halifax",
@@ -620,6 +840,28 @@
       "venueBasis": null,
       "organizerId": null,
       "organizerBasis": null,
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
+      "eventId": "halifax-mooseheads-home-0cb6de949fe3964a",
+      "title": "Halifax Mooseheads vs Val-d'Or",
+      "sourceId": "halifax-mooseheads-home",
+      "venueId": "scotiabank-centre-halifax",
+      "venueBasis": "source_id",
+      "organizerId": "halifax-mooseheads",
+      "organizerBasis": "source_id",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
+      "eventId": "scotiabank-centre-e40c759c5665698b",
+      "title": "Halifax Mooseheads vs Val-d'Or Foreurs",
+      "sourceId": "scotiabank-centre",
+      "venueId": "scotiabank-centre-halifax",
+      "venueBasis": "source_id",
+      "organizerId": "scotiabank-centre",
+      "organizerBasis": "source_id",
       "restaurantId": null,
       "restaurantBasis": null
     },
@@ -646,23 +888,12 @@
       "restaurantBasis": null
     },
     {
-      "eventId": "halifax-mooseheads-home-fd19871c9a8e2c98",
-      "title": "Halifax Mooseheads vs Val-d'Or",
-      "sourceId": "halifax-mooseheads-home",
-      "venueId": "scotiabank-centre-halifax",
+      "eventId": "halifax-tides-home-94001b333a2c9dfd",
+      "title": "Halifax Tides FC vs. Montréal Roses FC",
+      "sourceId": "halifax-tides-home",
+      "venueId": "wanderers-grounds-halifax",
       "venueBasis": "source_id",
-      "organizerId": "halifax-mooseheads",
-      "organizerBasis": "source_id",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "scotiabank-centre-638412effa784c83",
-      "title": "Halifax Mooseheads vs Val-d'Or Foreurs",
-      "sourceId": "scotiabank-centre",
-      "venueId": "scotiabank-centre-halifax",
-      "venueBasis": "source_id",
-      "organizerId": "scotiabank-centre",
+      "organizerId": "halifax-tides",
       "organizerBasis": "source_id",
       "restaurantId": null,
       "restaurantBasis": null
@@ -679,12 +910,23 @@
       "restaurantBasis": null
     },
     {
-      "eventId": "halifax-tides-home-10fc07df1d74c80c",
-      "title": "Halifax Tides FC vs. Montréal Roses FC",
-      "sourceId": "halifax-tides-home",
-      "venueId": "wanderers-grounds-halifax",
+      "eventId": "halifax-mooseheads-home-ef53b86c6f49d624",
+      "title": "Halifax Mooseheads vs Shawinigan",
+      "sourceId": "halifax-mooseheads-home",
+      "venueId": "scotiabank-centre-halifax",
       "venueBasis": "source_id",
-      "organizerId": "halifax-tides",
+      "organizerId": "halifax-mooseheads",
+      "organizerBasis": "source_id",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
+      "eventId": "scotiabank-centre-4562858f03a2d99f",
+      "title": "Halifax Mooseheads vs Shawinigan Cataractes",
+      "sourceId": "scotiabank-centre",
+      "venueId": "scotiabank-centre-halifax",
+      "venueBasis": "source_id",
+      "organizerId": "scotiabank-centre",
       "organizerBasis": "source_id",
       "restaurantId": null,
       "restaurantBasis": null
@@ -712,29 +954,7 @@
       "restaurantBasis": null
     },
     {
-      "eventId": "halifax-mooseheads-home-02f24f9892495cb4",
-      "title": "Halifax Mooseheads vs Shawinigan",
-      "sourceId": "halifax-mooseheads-home",
-      "venueId": "scotiabank-centre-halifax",
-      "venueBasis": "source_id",
-      "organizerId": "halifax-mooseheads",
-      "organizerBasis": "source_id",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "scotiabank-centre-46c40d7bc54876a2",
-      "title": "Halifax Mooseheads vs Shawinigan Cataractes",
-      "sourceId": "scotiabank-centre",
-      "venueId": "scotiabank-centre-halifax",
-      "venueBasis": "source_id",
-      "organizerId": "scotiabank-centre",
-      "organizerBasis": "source_id",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "scotiabank-centre-3bd0fd3ce9be738c",
+      "eventId": "scotiabank-centre-3d23d213fac6edc3",
       "title": "STYX",
       "sourceId": "scotiabank-centre",
       "venueId": "scotiabank-centre-halifax",
@@ -756,7 +976,7 @@
       "restaurantBasis": null
     },
     {
-      "eventId": "halifax-mooseheads-home-ab1412cf5b77d85c",
+      "eventId": "halifax-mooseheads-home-d5e5fcb4c351cd5c",
       "title": "Halifax Mooseheads vs Cape Breton",
       "sourceId": "halifax-mooseheads-home",
       "venueId": "scotiabank-centre-halifax",
@@ -767,8 +987,30 @@
       "restaurantBasis": null
     },
     {
-      "eventId": "scotiabank-centre-4cfab057e22445a7",
+      "eventId": "scotiabank-centre-b7239551387143b5",
       "title": "Halifax Mooseheads vs Cape Breton Eagles",
+      "sourceId": "scotiabank-centre",
+      "venueId": "scotiabank-centre-halifax",
+      "venueBasis": "source_id",
+      "organizerId": "scotiabank-centre",
+      "organizerBasis": "source_id",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
+      "eventId": "halifax-mooseheads-home-8d1462f3a6cb6ee7",
+      "title": "Halifax Mooseheads vs Charlottetown",
+      "sourceId": "halifax-mooseheads-home",
+      "venueId": "scotiabank-centre-halifax",
+      "venueBasis": "source_id",
+      "organizerId": "halifax-mooseheads",
+      "organizerBasis": "source_id",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
+      "eventId": "scotiabank-centre-1eaf043aa700e704",
+      "title": "Halifax Mooseheads vs Charlottetown Islanders",
       "sourceId": "scotiabank-centre",
       "venueId": "scotiabank-centre-halifax",
       "venueBasis": "source_id",
@@ -789,29 +1031,7 @@
       "restaurantBasis": null
     },
     {
-      "eventId": "halifax-mooseheads-home-774b090badc454a5",
-      "title": "Halifax Mooseheads vs Charlottetown",
-      "sourceId": "halifax-mooseheads-home",
-      "venueId": "scotiabank-centre-halifax",
-      "venueBasis": "source_id",
-      "organizerId": "halifax-mooseheads",
-      "organizerBasis": "source_id",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "scotiabank-centre-6f876a6c15e19412",
-      "title": "Halifax Mooseheads vs Charlottetown Islanders",
-      "sourceId": "scotiabank-centre",
-      "venueId": "scotiabank-centre-halifax",
-      "venueBasis": "source_id",
-      "organizerId": "scotiabank-centre",
-      "organizerBasis": "source_id",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "hfx-wanderers-home-f09490b61552ad2d",
+      "eventId": "hfx-wanderers-home-a2a03a121d56d64d",
       "title": "HFX Wanderers FC vs FC Supra Du Quebec FC",
       "sourceId": "hfx-wanderers-home",
       "venueId": "wanderers-grounds-halifax",
@@ -1137,6 +1357,17 @@
       "venueBasis": "source_id",
       "organizerId": "scotiabank-centre",
       "organizerBasis": "source_id",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
+      "eventId": "halifax-public-libraries-4b8eb08e18d78d5f",
+      "title": "Library Store",
+      "sourceId": "halifax-public-libraries",
+      "venueId": "central-library-halifax",
+      "venueBasis": "exact_normalized_venue_name",
+      "organizerId": "halifax-public-libraries",
+      "organizerBasis": "source_name_token",
       "restaurantId": null,
       "restaurantBasis": null
     },
@@ -1801,7 +2032,7 @@
       "restaurantBasis": null
     },
     {
-      "eventId": "neptune-theatre-7dcc35560803a5ab",
+      "eventId": "neptune-theatre-081ea053a9b73415",
       "title": "Seis Grados en Mayo / Six Degrees in May",
       "sourceId": "neptune-theatre",
       "venueId": "neptune-theatre-halifax",
