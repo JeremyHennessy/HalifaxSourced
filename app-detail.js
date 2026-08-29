@@ -5,7 +5,8 @@ function renderRestaurantDetail(id) {
     appView.innerHTML = `<section class="page-shell page-intro">${emptyPageState("That restaurant could not be found in the current dataset.")}</section>`;
     return;
   }
-  const website = safeUrl(restaurant.website);
+  const active = isRestaurantActive(restaurant);
+  const website = active ? safeUrl(restaurant.website) : null;
   const menuLink = safeUrl(restaurant.menuLinks?.[0]?.url);
   const reservation = safeUrl(restaurant.reservationLinks?.[0]?.url);
   const ordering = safeUrl(restaurant.orderingLinks?.[0]?.url);
@@ -13,16 +14,20 @@ function renderRestaurantDetail(id) {
   const socialProfiles = (restaurant.socialProfiles || []).filter((profile) => safeUrl(profile.url));
   const linkHubs = (restaurant.linkHubs || []).filter((hub) => safeUrl(hub.url));
   const relatedLinks = (restaurant.relatedLinks || []).filter((link) => safeUrl(link.url));
-  const officialUpdates = (restaurant.officialUpdates || []).filter((update) => safeUrl(update.postUrl));
-  const verifiedSpecials = (restaurant.currentVerifiedSpecials || []).filter((special) => special?.title);
+  const officialUpdates = active ? (restaurant.officialUpdates || []).filter((update) => safeUrl(update.postUrl)) : [];
+  const verifiedSpecials = active ? (restaurant.currentVerifiedSpecials || []).filter((special) => special?.title) : [];
+  const statusEvidenceUrl = safeUrl(restaurant.operatingStatusEvidence?.sourceUrl);
+  const closureDate = restaurant.closureDate ? new Date(`${restaurant.closureDate}T12:00:00`).toLocaleDateString("en-CA", { year: "numeric", month: "long", day: "numeric" }) : null;
+  const statusLabel = restaurant.operatingStatus === "permanently_closed" ? "Permanently closed" : restaurant.operatingStatus === "temporarily_closed" ? "Temporarily closed" : restaurant.operatingStatus === "moved" ? "Moved" : "Status unavailable";
 
   appView.innerHTML = `
     <section class="restaurant-hero media-${mediaTone(restaurant)}${permittedImageClass(restaurant)}">
       ${mediaImageMarkup(restaurant, { loading: "eager", className: "restaurant-hero-photo", alt: `${restaurant.name} restaurant` })}
-      <div class="restaurant-hero-overlay page-shell"><a class="back-link" href="#explore">← Back to results</a><div class="restaurant-title"><div><div class="title-badges">${restaurant.sourceLayer === "curated" ? "<span>Local pick</span>" : ""}${restaurant.sourceLayer === "local_discovery" ? "<span>New discovery</span>" : ""}${restaurant.signal ? "<span>Official site scanned</span>" : ""}${socialProfiles.length ? `<span>${socialProfiles.length} social link${socialProfiles.length === 1 ? "" : "s"}</span>` : ""}</div><h1>${escapeHtml(restaurant.name)}</h1><p>${escapeHtml(primaryCuisine(restaurant))} · ${escapeHtml(restaurant.neighborhood || "Halifax")}</p><p class="hero-summary">${escapeHtml(restaurant.summary || "Local restaurant listing with public source coverage.")}</p><div class="card-tags">${consumerTags(restaurant).slice(0, 6).map((tag) => `<span>${escapeHtml(tag)}</span>`).join("")}</div><div class="hero-actions">${menuLink ? `<a class="button light" href="${escapeHtml(menuLink)}" target="_blank" rel="noreferrer">View menu ↗</a>` : ""}<button class="button secondary save-detail" type="button" data-save-id="${escapeHtml(restaurant.id)}">${state.saved.has(restaurant.id) ? "♥ Saved" : "♡ Save"}</button>${website ? `<a class="button secondary" href="${escapeHtml(website)}" target="_blank" rel="noreferrer">Official site ↗</a>` : ""}</div></div></div></div>
+      <div class="restaurant-hero-overlay page-shell"><a class="back-link" href="#explore">← Back to results</a><div class="restaurant-title"><div><div class="title-badges">${active && restaurant.sourceLayer === "curated" ? "<span>Local pick</span>" : ""}${restaurant.sourceLayer === "local_discovery" ? "<span>New discovery</span>" : ""}${!active ? `<span class="status-closed">${escapeHtml(statusLabel)}</span>` : restaurant.signal ? "<span>Official site scanned</span>" : ""}${socialProfiles.length ? `<span>${socialProfiles.length} social link${socialProfiles.length === 1 ? "" : "s"}</span>` : ""}</div><h1>${escapeHtml(restaurant.name)}</h1><p>${escapeHtml(primaryCuisine(restaurant))} · ${escapeHtml(restaurant.neighborhood || "Halifax")}</p><p class="hero-summary">${escapeHtml(restaurant.summary || "Local restaurant listing with public source coverage.")}</p><div class="card-tags">${active ? consumerTags(restaurant).slice(0, 6).map((tag) => `<span>${escapeHtml(tag)}</span>`).join("") : ""}</div><div class="hero-actions">${active ? `${menuLink ? `<a class="button light" href="${escapeHtml(menuLink)}" target="_blank" rel="noreferrer">View menu ↗</a>` : ""}<button class="button secondary save-detail" type="button" data-save-id="${escapeHtml(restaurant.id)}">${state.saved.has(restaurant.id) ? "♥ Saved" : "♡ Save"}</button>${website ? `<a class="button secondary" href="${escapeHtml(website)}" target="_blank" rel="noreferrer">Official site ↗</a>` : ""}` : statusEvidenceUrl ? `<a class="button light" href="${escapeHtml(statusEvidenceUrl)}" target="_blank" rel="noreferrer">Official closure source ↗</a>` : ""}</div></div></div></div>
     </section>
     <section class="page-shell detail-layout">
       <div class="detail-main">
+        ${!active ? `<section class="closure-notice" role="status"><strong>${escapeHtml(statusLabel)}${closureDate ? ` · final service ${escapeHtml(closureDate)}` : ""}</strong><p>${escapeHtml(restaurant.operatingStatusEvidence?.claim || "This record is retained for historical source evidence and is excluded from current discovery.")}</p>${statusEvidenceUrl ? `<a href="${escapeHtml(statusEvidenceUrl)}" target="_blank" rel="noreferrer">View official status evidence ↗</a>` : ""}</section>` : ""}
         <nav class="detail-tabs"><a href="#detailOverview">Overview</a><a href="#detailMenu">Menu</a><a href="#detailSpecials">Specials</a><a href="#detailEvents">Events</a>${officialUpdates.length ? '<a href="#detailUpdates">Updates</a>' : ""}<a href="#detailLinks">Links</a><a href="#detailSources">Sources</a></nav>
         <section id="detailOverview" class="mobile-detail-overview" aria-label="Restaurant essentials">
           <div class="mobile-essential-facts">
@@ -30,11 +35,11 @@ function renderRestaurantDetail(id) {
             <div><span>Location</span><strong>${escapeHtml(restaurant.address || restaurant.neighborhood || "Halifax")}</strong></div>
             ${restaurant.phone ? `<div><span>Phone</span><strong>${escapeHtml(restaurant.phone)}</strong></div>` : ""}
           </div>
-          <div class="mobile-essential-actions">
+          ${active ? `<div class="mobile-essential-actions">
             ${menuLink ? `<a class="button primary" href="${escapeHtml(menuLink)}" target="_blank" rel="noreferrer">View menu ↗</a>` : ordering ? `<a class="button primary" href="${escapeHtml(ordering)}" target="_blank" rel="noreferrer">Order online ↗</a>` : ""}
             ${reservation ? `<a class="button teal" href="${escapeHtml(reservation)}" target="_blank" rel="noreferrer">Book table ↗</a>` : website ? `<a class="button teal" href="${escapeHtml(website)}" target="_blank" rel="noreferrer">Official site ↗</a>` : ""}
             <button class="button secondary save-detail" type="button" data-save-id="${escapeHtml(restaurant.id)}">${state.saved.has(restaurant.id) ? "♥ Saved" : "♡ Save"}</button>
-          </div>
+          </div>` : ""}
         </section>
         <section id="detailMenu" class="detail-section"><div class="section-heading no-top"><div><h2>Menu sources</h2><p>Direct menu links observed from the restaurant's official source pages.</p></div></div>${restaurant.menuLinks.length ? `<div class="link-list">${restaurant.menuLinks.slice(0, 8).map(sourceLinkRow).join("")}</div>` : `<div class="info-message">No dedicated menu link is represented in the current source data.${website ? " The official website remains available in the Info panel." : ""}</div>`}</section>
         <section id="detailSpecials" class="detail-section"><div class="section-heading no-top"><div><h2>Specials</h2><p>Time-sensitive claims remain source leads until separate structured data establishes current terms, price, and timing.</p></div></div>${verifiedSpecials.length ? `<div class="link-list">${verifiedSpecials.map(structuredSpecialDetailRow).join("")}</div>` : restaurant.specialLinks.length ? `<div class="link-list">${restaurant.specialLinks.map(sourceLinkRow).join("")}</div>` : restaurant.specials.length ? `<div class="link-list">${restaurant.specials.map((s) => `<div class="source-link-row"><span>✦</span><div><strong>${escapeHtml(s.title)}</strong><small>${escapeHtml(s.cadence || "Check current details")}</small></div></div>`).join("")}</div>` : `<div class="info-message">No current special source is represented in the loaded data.</div>`}</section>
@@ -44,7 +49,7 @@ function renderRestaurantDetail(id) {
         <section id="detailSources" class="detail-section"><div class="section-heading no-top"><div><h2>Source evidence</h2><p>What Halifax Sourced has actually observed for this listing.</p></div></div><div class="source-evidence-grid"><div><strong>${restaurant.score || 0}</strong><span>source coverage score</span></div><div><strong>${restaurant.sources.length}</strong><span>listing sources</span></div><div><strong>${restaurant.inspections.length}</strong><span>public registry matches</span></div><div><strong>${socialProfiles.length}</strong><span>official social links</span></div></div><div class="link-list">${sourceLinks.length ? sourceLinks.map(sourceLinkRow).join("") : '<div class="info-message">No direct source links are available.</div>'}</div></section>
       </div>
       <aside class="detail-sidebar" id="detailInfo">
-        ${infoCard("Hours", restaurant.openingHours || "Hours not available in the current source data.", "◷")}
+        ${infoCard(active ? "Hours" : "Operating status", active ? (restaurant.openingHours || "Hours not available in the current source data.") : `${statusLabel}${closureDate ? ` · final service ${closureDate}` : ""}`, "◷")}
         ${infoCard("Location", restaurant.address || restaurant.neighborhood || "Halifax", "⌖")}
         ${restaurant.phone ? infoCard("Phone", restaurant.phone, "☎") : ""}
         ${website || menuLink || reservation || ordering ? `<div class="sidebar-card detail-official-actions"><h2>Official actions</h2>${website ? `<a class="sidebar-link" href="${escapeHtml(website)}" target="_blank" rel="noreferrer">Website ↗</a>` : ""}${menuLink ? `<a class="sidebar-link" href="${escapeHtml(menuLink)}" target="_blank" rel="noreferrer">Menu ↗</a>` : ""}${reservation ? `<a class="sidebar-link" href="${escapeHtml(reservation)}" target="_blank" rel="noreferrer">Reservations ↗</a>` : ""}${ordering ? `<a class="sidebar-link" href="${escapeHtml(ordering)}" target="_blank" rel="noreferrer">Order online ↗</a>` : ""}</div>` : ""}

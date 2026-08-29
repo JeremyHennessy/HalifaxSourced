@@ -246,30 +246,35 @@ function enrichRestaurant(restaurant) {
   const structuredRestaurantEvents = structuredEventsByRestaurant.get(restaurant.id) || [];
   const website = safeUrl(restaurant.website) || safeUrl(signal?.website) || (restaurant.sources || []).map((s) => safeUrl(s.url)).find(Boolean) || null;
   const score = Number.isFinite(restaurant.qualityScore) ? restaurant.qualityScore : sourceCoverageScore(restaurant, signal, inspections);
+  const active = isRestaurantActive(restaurant);
   return {
     ...restaurant,
     cuisines: unique(restaurant.cuisines || [restaurant.category]),
     vibe: unique(restaurant.vibe || []),
-    specials: Array.isArray(restaurant.specials) ? restaurant.specials : [],
-    events: Array.isArray(restaurant.events) ? restaurant.events : [],
-    structuredEvents: structuredRestaurantEvents,
+    specials: active && Array.isArray(restaurant.specials) ? restaurant.specials : [],
+    events: active && Array.isArray(restaurant.events) ? restaurant.events : [],
+    structuredEvents: active ? structuredRestaurantEvents : [],
     sources: Array.isArray(restaurant.sources) ? restaurant.sources : [],
     signal,
     inspections,
-    menuLinks,
-    specialLinks,
-    eventLinks,
-    reservationLinks,
+    menuLinks: active ? menuLinks : [],
+    specialLinks: active ? specialLinks : [],
+    eventLinks: active ? eventLinks : [],
+    reservationLinks: active ? reservationLinks : [],
     socialProfiles: [...(restaurant.socialProfiles || []), ...osmSocialProfiles(restaurant)],
     website,
-    hasMenu: menuLinks.length > 0,
-    hasSpecial: specialLinks.length > 0 || (restaurant.specials || []).length > 0,
-    hasEvent: structuredRestaurantEvents.length > 0 || eventLinks.length > 0 || (restaurant.events || []).length > 0 || signalHas(signal, "events"),
+    hasMenu: active && menuLinks.length > 0,
+    hasSpecial: active && (specialLinks.length > 0 || (restaurant.specials || []).length > 0),
+    hasEvent: active && (structuredRestaurantEvents.length > 0 || eventLinks.length > 0 || (restaurant.events || []).length > 0 || signalHas(signal, "events")),
     hasPatio: hasPatio(restaurant, signal),
-    hasOpening: hasOpening(restaurant, signal),
-    hasReservation: reservationLinks.length > 0 || signalHas(signal, "reservations"),
+    hasOpening: active && hasOpening(restaurant, signal),
+    hasReservation: active && (reservationLinks.length > 0 || signalHas(signal, "reservations")),
     score
   };
+}
+
+function isRestaurantActive(restaurant) {
+  return !["permanently_closed", "temporarily_closed", "moved"].includes(restaurant?.operatingStatus);
 }
 
 function sourceCoverageScore(restaurant, signal, inspections) {
@@ -285,14 +290,15 @@ function sourceCoverageScore(restaurant, signal, inspections) {
 }
 
 const restaurants = mergeRestaurantLayers();
+const activeRestaurants = restaurants.filter(isRestaurantActive);
 window.__halifaxRestaurantCount = restaurants.length;
 window.__halifaxOfficialSignalCount = officialSignals.length;
 window.__halifaxStructuredEventCount = structuredEvents.length;
 window.__halifaxVerifiedMenuSourceCount = verifiedMenuSources.length;
 window.__halifaxVerifiedSpecialSourceCount = verifiedSpecialSources.length;
 
-const cuisines = countValues(restaurants.flatMap((restaurant) => restaurant.cuisines || []));
-const neighbourhoods = countValues(restaurants.map((restaurant) => restaurant.neighborhood || "Halifax"));
+const cuisines = countValues(activeRestaurants.flatMap((restaurant) => restaurant.cuisines || []));
+const neighbourhoods = countValues(activeRestaurants.map((restaurant) => restaurant.neighborhood || "Halifax"));
 
 function countValues(values) {
   const counts = new Map();
@@ -335,7 +341,7 @@ function filteredRestaurants(options = {}) {
   const feature = options.feature ?? state.feature;
   const sort = options.sort ?? state.sort;
 
-  const filtered = restaurants.filter((restaurant) => {
+  const filtered = activeRestaurants.filter((restaurant) => {
     if (query && !searchableText(restaurant).includes(query)) return false;
     if (cuisine !== "all" && !(restaurant.cuisines || []).some((item) => item.toLowerCase() === cuisine.toLowerCase())) return false;
     if (neighbourhood !== "all" && (restaurant.neighborhood || "Halifax").toLowerCase() !== neighbourhood.toLowerCase()) return false;

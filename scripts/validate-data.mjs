@@ -15,6 +15,7 @@ const errors = [];
 const ids = new Set();
 const requiredFields = ["id", "name", "neighborhood", "cuisines", "vibe", "qualityScore", "freshnessDate", "evidenceStatus", "sources"];
 const statuses = new Set(["verified", "needs-review", "restricted"]);
+const operatingStatuses = new Set(["active", "temporarily_closed", "permanently_closed", "moved", "coming_soon", "unknown"]);
 const nsFoodInspections = context.window.HALIFAX_NS_FOOD_INSPECTIONS ?? null;
 const officialSiteSignals = context.window.HALIFAX_OFFICIAL_SITE_SIGNALS ?? null;
 
@@ -33,6 +34,17 @@ for (const { label, records } of groups) {
     ids.add(restaurant.id);
 
     if (!statuses.has(restaurant.evidenceStatus)) errors.push(`${restaurant.id} has invalid evidenceStatus: ${restaurant.evidenceStatus}`);
+    if (label === "curated" && !operatingStatuses.has(restaurant.operatingStatus)) errors.push(`${restaurant.id} has invalid or missing operatingStatus: ${restaurant.operatingStatus}`);
+    if (["temporarily_closed", "permanently_closed", "moved"].includes(restaurant.operatingStatus)) {
+      const evidence = restaurant.operatingStatusEvidence;
+      if (!evidence?.claim || !evidence?.location || !evidence?.sourceUrl || !evidence?.verifiedAt) errors.push(`${restaurant.id} requires claim, location, sourceUrl, and verifiedAt operating-status evidence.`);
+      if (restaurant.operatingStatus === "permanently_closed" && !restaurant.closureDate) errors.push(`${restaurant.id} requires closureDate when permanently closed.`);
+      if ((restaurant.specials || []).length || (restaurant.events || []).length) errors.push(`${restaurant.id} cannot publish current specials or events while ${restaurant.operatingStatus}.`);
+      try {
+        const url = new URL(evidence?.sourceUrl);
+        if (!["http:", "https:"].includes(url.protocol)) errors.push(`${restaurant.id} has unsupported operating-status evidence URL protocol.`);
+      } catch { errors.push(`${restaurant.id} has invalid operating-status evidence URL.`); }
+    }
     if (!Number.isFinite(restaurant.qualityScore) || restaurant.qualityScore < 0 || restaurant.qualityScore > 100) errors.push(`${restaurant.id} qualityScore must be 0-100.`);
     if (!Array.isArray(restaurant.sources) || restaurant.sources.length === 0) errors.push(`${restaurant.id} must have at least one source.`);
 

@@ -8,6 +8,7 @@ window.HALIFAX_RESTAURANTS = [
     qualityScore: 94,
     freshnessDate: "2026-08-29",
     evidenceStatus: "verified",
+    operatingStatus: "active",
     category: "Bar",
     address: "2733 Agricola Street, Halifax, NS B3K 4E2",
     phone: "902-487-4319",
@@ -47,6 +48,7 @@ window.HALIFAX_RESTAURANTS = [
     qualityScore: 91,
     freshnessDate: "2026-08-29",
     evidenceStatus: "verified",
+    operatingStatus: "active",
     category: "Restaurant",
     address: "1475 Lower Water Street, Halifax, NS B3J 3Z2",
     phone: "902-425-7993",
@@ -79,6 +81,7 @@ window.HALIFAX_RESTAURANTS = [
     qualityScore: 89,
     freshnessDate: "2026-08-29",
     evidenceStatus: "verified",
+    operatingStatus: "active",
     category: "Restaurant",
     address: "2053 Gottingen Street, Halifax, NS B3K 3B2",
     phone: "902-429-2550",
@@ -112,6 +115,7 @@ window.HALIFAX_RESTAURANTS = [
     qualityScore: 88,
     freshnessDate: "2026-08-29",
     evidenceStatus: "verified",
+    operatingStatus: "active",
     category: "Restaurant",
     address: "5218 Prince Street, Halifax, NS B3J 3X4",
     phone: "902-423-8816",
@@ -144,6 +148,7 @@ window.HALIFAX_RESTAURANTS = [
     qualityScore: 86,
     freshnessDate: "2026-08-29",
     evidenceStatus: "verified",
+    operatingStatus: "active",
     category: "Pub",
     address: "2720 Gottingen Street, Halifax, NS B3K 3C7",
     phone: "902-407-2475",
@@ -183,6 +188,13 @@ window.HALIFAX_RESTAURANTS = [
     qualityScore: 84,
     freshnessDate: "2026-08-29",
     evidenceStatus: "verified",
+    operatingStatus: "active",
+    operatingStatusEvidence: {
+      claim: "The Dartmouth Crossing location is currently operating; the former Halifax location closed separately.",
+      location: "149 Hector Gate, Dartmouth, NS B3B 0C1",
+      sourceUrl: "https://go2doorsdown.com/",
+      verifiedAt: "2026-08-29"
+    },
     category: "Restaurant",
     address: "149 Hector Gate, Dartmouth, NS B3B 0C1",
     phone: "902-481-5222",
@@ -215,6 +227,7 @@ window.HALIFAX_RESTAURANTS = [
     qualityScore: 83,
     freshnessDate: "2026-08-29",
     evidenceStatus: "verified",
+    operatingStatus: "active",
     category: "Pub",
     address: "62 Ochterloney Street, Dartmouth, NS B2Y 1C2",
     phone: "902-446-2337",
@@ -253,6 +266,7 @@ window.HALIFAX_RESTAURANTS = [
     qualityScore: 90,
     freshnessDate: "2026-08-29",
     evidenceStatus: "verified",
+    operatingStatus: "active",
     category: "Bar",
     address: "67 Portland Street, Dartmouth, NS B2Y 1H1",
     website: "https://dearfriendbar.com/",
@@ -284,6 +298,7 @@ window.HALIFAX_RESTAURANTS = [
     qualityScore: 88,
     freshnessDate: "2026-08-29",
     evidenceStatus: "verified",
+    operatingStatus: "active",
     category: "Restaurant",
     address: "1673 Barrington Street, Halifax, NS B3J 1Z9",
     phone: "902-407-5260",
@@ -315,23 +330,31 @@ window.HALIFAX_RESTAURANTS = [
     cuisines: ["Small plates", "Canadian", "Wine"],
     vibe: ["intimate", "creative", "wine"],
     qualityScore: 87,
-    freshnessDate: "2026-08-11",
-    evidenceStatus: "needs-review",
-    summary: "Compact neighborhood room with small-plate and wine appeal.",
-    specials: [
-      {
-        title: "Menu features",
-        cadence: "Seasonal",
-        sourceStatus: "needs-review"
-      }
-    ],
+    freshnessDate: "2026-08-29",
+    evidenceStatus: "verified",
+    operatingStatus: "permanently_closed",
+    closureDate: "2026-04-29",
+    operatingStatusEvidence: {
+      claim: "The restaurant announced that its last day of service was April 29, 2026.",
+      location: "2076 Gottingen Street, Halifax, NS",
+      sourceUrl: "https://www.facebook.com/fieldguidehfx/videos/2017145352561161/",
+      verifiedAt: "2026-08-29"
+    },
+    summary: "Field Guide closed permanently after its final service on April 29, 2026. This page is retained as a historical source record.",
+    specials: [],
     events: [],
     sources: [
       {
         label: "Official website",
         type: "restaurant_site",
         url: "https://www.fieldguidehfx.com/",
-        status: "needs-review"
+        status: "verified"
+      },
+      {
+        label: "Official closure announcement",
+        type: "official_social_post",
+        url: "https://www.facebook.com/fieldguidehfx/videos/2017145352561161/",
+        status: "verified"
       }
     ]
   }

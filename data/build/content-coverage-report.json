@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "generatedAt": "2026-08-29T13:55:54.886Z",
-  "baselineCommitHint": null,
+  "generatedAt": "2026-08-29T17:21:49.739Z",
+  "baselineCommitHint": "a7e7be7aaa6470d8e87639f4619993ce90acd162",
   "definitions": {
     "canonicalPlaces": "Current user-facing merge of catalog restaurants plus reviewed discovery records, matching the app's existing name-based discovery merge behavior.",
     "verifiedOfficialWebsite": "Official-site fetch returned a successful HTTP status or the first-party discovery layer successfully fetched the restaurant-owned site.",
@@ -58,7 +58,16 @@
     "withCuisineClassification": 749,
     "withAccessibilityInformation": 229,
     "withPatioInformation": 40,
-    "withUsableMedia": 0,
+    "withUsableMedia": 1,
+    "lifecycle": {
+      "active": 11,
+      "temporarily_closed": 0,
+      "permanently_closed": 1,
+      "moved": 0,
+      "coming_soon": 0,
+      "unknown": 737
+    },
+    "activeCanonicalPlaces": 748,
     "freshness": {
       "lt7Days": 741,
       "days7To30": 8,
@@ -85,7 +94,7 @@
       "ordering": 74
     },
     "structuredSpecialLayer": {
-      "generatedAt": "2026-08-29T13:55:53.200Z",
+      "generatedAt": "2026-08-29T17:21:47.837Z",
       "count": 68,
       "verifiedCurrent": 49,
       "recurringVerify": 9,
@@ -113,9 +122,9 @@
     "coordinates": 98.5,
     "neighbourhood": 100,
     "cuisine": 100,
+    "media": 0.1,
     "accessibility": 30.6,
     "patio": 5.3,
-    "media": 0,
     "linkHub": 0
   },
   "socialAudit": {
@@ -1152,16 +1161,16 @@
       ]
     },
     "reconciledFromAcceptedStructuredLayers": true,
-    "reconciledAt": "2026-08-29T13:55:54.886Z"
+    "reconciledAt": "2026-08-29T17:21:49.739Z"
   },
   "eventCoverage": {
-    "currentCityEvents": 186,
+    "currentCityEvents": 184,
     "allStoredCityEvents": 187,
     "cityEventSources": 15,
     "bySource": {
       "Tourism Nova Scotia Events": 23,
       "Halifax Public Libraries": 3,
-      "Alderney Landing": 3,
+      "Alderney Landing": 1,
       "Alderney Gate Public Library": 7,
       "Woodlawn Public Library": 6,
       "Halifax Convention Centre": 1,
@@ -1176,12 +1185,11 @@
       "Neptune Theatre": 3
     },
     "byCategory": {
-      "Arts": 50,
+      "Arts": 49,
       "Comedy": 4,
       "Sports": 61,
-      "Community": 31,
+      "Community": 30,
       "Festivals": 10,
-      "Markets": 1,
       "Music": 57,
       "Outdoor": 1,
       "Other": 2,
@@ -1189,20 +1197,20 @@
     },
     "byMunicipality": {
       "Halifax": 164,
-      "Dartmouth": 16,
+      "Dartmouth": 14,
       "Bedford": 6
     },
     "withVenueRestaurantNameMatch": 8,
     "withCoordinates": 0,
-    "withTicketLink": 186,
+    "withTicketLink": 184,
     "withPrice": 11,
     "freeEvents": 0,
     "duplicateEventCount": 0,
     "structuredRestaurantEvents": 19,
     "structuredUpcomingRestaurantEvents": 17,
     "expiredStructuredRestaurantEvents": 2,
-    "next7Days": 20,
-    "next30Days": 54
+    "next7Days": 16,
+    "next30Days": 50
   },
   "discoveryCoverage": {
     "directoryRecords": 470,

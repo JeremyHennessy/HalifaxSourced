@@ -64,6 +64,23 @@ if (totals.socialProfiles < 100 || totals.relatedLinks < 100 || totals.socialRes
 if (totals.structuredSpecials < 60 || totals.verifiedCurrentSpecials < 40) throw new Error(`Expected reviewed structured specials, got ${JSON.stringify(totals)}.`);
 await page.screenshot({ path: resolve("artifacts", "ui-check-desktop.png"), fullPage: true });
 
+// Lifecycle regression: inactive places must fail closed in discovery but keep a
+// transparent historical detail page. Location-specific closures must not spill
+// onto a currently operating location from the same brand.
+await page.locator("#globalSearch").fill("Field Guide");
+await page.locator("#globalSearch").press("Enter");
+await page.waitForURL(/#explore/);
+if (await page.locator('.restaurant-card[data-restaurant-id="field-guide"]').count()) throw new Error("Permanently closed Field Guide appeared in current Explore results.");
+await page.goto(`${url}/#restaurant/field-guide`, { waitUntil: "networkidle" });
+await page.locator(".closure-notice", { hasText: "Permanently closed" }).waitFor();
+if (!(await page.locator(".closure-notice").innerText()).includes("April 29, 2026")) throw new Error("Field Guide closure date is missing from the historical detail route.");
+if (await page.locator(".detail-official-actions").count()) throw new Error("Closed Field Guide rendered current website/menu/reservation/order actions.");
+if (await page.locator('.closure-notice a[href*="facebook.com/fieldguidehfx"]').count() !== 1) throw new Error("Field Guide official closure evidence is missing.");
+await page.goto(`${url}/#restaurant/2-doors-down`, { waitUntil: "networkidle" });
+await page.locator("h1", { hasText: "2 Doors Down" }).waitFor();
+if (await page.locator(".closure-notice").count()) throw new Error("The active Dartmouth 2 Doors Down location inherited the former Halifax closure.");
+if (!(await page.locator("#detailInfo").innerText()).includes("149 Hector Gate")) throw new Error("The active Dartmouth 2 Doors Down location evidence is missing.");
+
 // New-opening discovery must be searchable without weakening the established catalogue checks.
 await page.locator("#globalSearch").fill("Sakaba");
 await page.locator("#globalSearch").press("Enter");

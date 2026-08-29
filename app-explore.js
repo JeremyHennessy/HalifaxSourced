@@ -1,8 +1,8 @@
 "use strict";
 function renderExplore() {
   document.body.classList.remove("filter-drawer-open");
-  const liveCuisines = countValues(restaurants.flatMap((restaurant) => restaurant.cuisines || []));
-  const liveNeighbourhoods = countValues(restaurants.map((restaurant) => restaurant.neighborhood || "Halifax"));
+  const liveCuisines = countValues(activeRestaurants.flatMap((restaurant) => restaurant.cuisines || []));
+  const liveNeighbourhoods = countValues(activeRestaurants.map((restaurant) => restaurant.neighborhood || "Halifax"));
   const results = filteredRestaurants();
   const pages = Math.max(1, Math.ceil(results.length / PAGE_SIZE));
   state.page = Math.min(state.page, pages);
