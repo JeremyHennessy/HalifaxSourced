@@ -208,6 +208,8 @@ const mobileState = await page.evaluate(() => ({
   heroHeight: Math.round(document.querySelector(".home-hero")?.getBoundingClientRect().height || 0)
 }));
 if (mobileState.overflow > 2 || !mobileState.bottomNavVisible || mobileState.heroHeight < 500) throw new Error(`Expected polished mobile layout, got ${JSON.stringify(mobileState)}.`);
+if (await page.locator(".source-coverage-strip").count() !== 1) throw new Error("Expected fresh source coverage on mobile Home.");
+await page.screenshot({ path: resolve("artifacts", "ui-check-iphone-home.png"), fullPage: true });
 
 await page.goto(`${url}/#explore`, { waitUntil: "networkidle" });
 const mobileFilterToggle = page.locator("[data-open-filters]");
@@ -220,6 +222,7 @@ await page.locator("[data-filter-apply]").click();
 await page.locator(".restaurant-card").first().waitFor();
 if (await page.locator(".restaurant-card").count() < 1) throw new Error("Expected Dartmouth results after applying mobile filters.");
 if (await page.evaluate(() => document.body.classList.contains("filter-drawer-open"))) throw new Error("Expected mobile filter drawer to close after applying filters.");
+await page.screenshot({ path: resolve("artifacts", "ui-check-iphone-explore.png"), fullPage: true });
 
 const detailHref = await page.locator('.restaurant-card h3 a[href^="#restaurant/"]').first().getAttribute("href");
 if (!detailHref) throw new Error("Expected restaurant detail route from filtered results.");
@@ -231,6 +234,7 @@ const detailState = await page.evaluate(() => ({
   actionCount: document.querySelectorAll(".mobile-detail-actions a").length
 }));
 if (detailState.overflow > 2 || !detailState.stickyActions || detailState.actionCount < 1) throw new Error(`Expected usable mobile restaurant actions, got ${JSON.stringify(detailState)}.`);
+await page.screenshot({ path: resolve("artifacts", "ui-check-iphone-detail.png"), fullPage: true });
 
 await page.goto(`${url}/#events`, { waitUntil: "networkidle" });
 await page.locator(".event-filter-panel").waitFor();
@@ -241,6 +245,15 @@ const mobileEventState = await page.evaluate(() => ({
   eventsNavActive: document.querySelector('.mobile-tabbar [data-route-link="events"]')?.classList.contains("is-active") || false
 }));
 if (mobileEventState.overflow > 2 || mobileEventState.filterGridWidth > mobileEventState.viewport || !mobileEventState.eventsNavActive) throw new Error(`Expected usable mobile event discovery, got ${JSON.stringify(mobileEventState)}.`);
+await page.screenshot({ path: resolve("artifacts", "ui-check-iphone-events.png"), fullPage: true });
+
+for (const routeName of ["specials", "map"]) {
+  await page.goto(`${url}/#${routeName}`, { waitUntil: "networkidle" });
+  await page.waitForTimeout(routeName === "map" ? 1200 : 150);
+  const routeState = await page.evaluate(() => ({ overflow: document.documentElement.scrollWidth - document.documentElement.clientWidth }));
+  if (routeState.overflow > 2) throw new Error(`Expected ${routeName} to fit the iPhone viewport, got ${JSON.stringify(routeState)}.`);
+  await page.screenshot({ path: resolve("artifacts", `ui-check-iphone-${routeName}.png`), fullPage: true });
+}
 
 await page.goto(`${url}/#home`, { waitUntil: "networkidle" });
 await page.screenshot({ path: resolve("artifacts", "ui-check-mobile.png"), fullPage: true });

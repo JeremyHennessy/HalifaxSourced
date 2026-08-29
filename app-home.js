@@ -31,6 +31,13 @@ function renderHome() {
       <button class="text-link" type="button" data-action="all-cuisines">View all →</button>
     </section>
 
+    <section class="source-coverage-strip page-shell" aria-label="Fresh source coverage">
+      <div><span>Restaurant-owned sources</span><strong>${(window.__halifaxFirstPartySourceCount || 0).toLocaleString()}</strong></div>
+      <div><span>Official social profiles</span><strong>${(window.__halifaxFirstPartySocialProfileCount || 0).toLocaleString()}</strong></div>
+      <div><span>Menu, booking & other links</span><strong>${(window.__halifaxFirstPartyRelatedLinkCount || 0).toLocaleString()}</strong></div>
+      <a href="#explore?feature=social">Explore social-linked places →</a>
+    </section>
+
     <section class="page-shell section-block">
       ${sectionHeader("Featured restaurants", "A curated starting point from the strongest available source coverage.", "#explore", "View all restaurants")}
       <div class="restaurant-carousel">${featured.map((restaurant, index) => restaurantCard(restaurant, { index, compact: true })).join("")}</div>
