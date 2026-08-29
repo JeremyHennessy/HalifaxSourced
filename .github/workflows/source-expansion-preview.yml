@@ -20,6 +20,7 @@ on:
       - scripts/import-meta-social.mjs
       - scripts/build-recent-social-posts.mjs
       - scripts/build-thumbnail-candidates.mjs
+      - scripts/build-thumbnail-coverage-report.mjs
       - scripts/check-thumbnail-candidates.mjs
       - scripts/check-expanded-sources.mjs
 
@@ -121,6 +122,7 @@ jobs:
           node scripts/check-data-integrity.mjs
           node scripts/check-expanded-sources.mjs
           node scripts/check-thumbnail-candidates.mjs
+          node scripts/build-thumbnail-coverage-report.mjs
 
       - name: Upload source expansion preview
         uses: actions/upload-artifact@v4
@@ -143,8 +145,11 @@ jobs:
             data/build/recent-social-posts.json
             data/thumbnail-candidates.js
             data/build/thumbnail-candidates.json
+            data/build/thumbnail-coverage-report.json
+            docs/thumbnail-coverage-report.md
             artifacts/data-integrity-report.json
             artifacts/expanded-source-integrity-report.json
             artifacts/thumbnail-candidates-report.json
+            artifacts/thumbnail-coverage-report.json
           if-no-files-found: error
           retention-days: 30
