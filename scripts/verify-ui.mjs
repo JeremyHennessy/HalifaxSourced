@@ -227,6 +227,16 @@ await page.goto(`${url}/#restaurant/osm-node-11751643550-cafe-lunette`, { waitUn
 await page.locator("#detailUpdates .official-update-card").first().waitFor();
 if (await page.locator("#detailUpdates .official-update-card").count() < 3) throw new Error("Expected official Café Lunette feed updates on restaurant detail.");
 await captureIphone("official-updates");
+await page.goto(`${url}/#restaurant/osm-node-10038454787-bird-s-nest-cafe`, { waitUntil: "networkidle" });
+const officialMedia = page.locator("#detailUpdates .official-update-media").first();
+await officialMedia.waitFor();
+await officialMedia.scrollIntoViewIfNeeded();
+await page.waitForFunction(() => {
+  const image = document.querySelector("#detailUpdates .official-update-media");
+  return image instanceof HTMLImageElement && image.complete && image.naturalWidth > 0;
+});
+await page.locator(".toast").evaluateAll((nodes) => nodes.forEach((node) => node.remove()));
+await page.screenshot({ path: resolve("artifacts", "ui-check-iphone-official-update-media.png"), fullPage: false });
 await page.goto(`${url}/#restaurant/marias-pantry-dartmouth`, { waitUntil: "networkidle" });
 await page.locator("#detailLinks .source-link-row").first().waitFor();
 await captureIphone("dartmouth-new-place");
