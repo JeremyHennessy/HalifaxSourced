@@ -6,14 +6,20 @@ window.HALIFAX_RESTAURANTS = [
     cuisines: ["Seafood", "Cocktails", "Small plates"],
     vibe: ["date night", "creative", "late"],
     qualityScore: 94,
-    freshnessDate: "2026-08-20",
-    evidenceStatus: "needs-review",
+    freshnessDate: "2026-08-29",
+    evidenceStatus: "verified",
+    category: "Bar",
+    address: "2733 Agricola Street, Halifax, NS B3K 4E2",
+    phone: "902-487-4319",
+    website: "https://barkismet.com/",
+    openingHours: "Tuesday–Sunday from 5:00 PM; closed Monday",
     summary: "Seafood-forward dining with a strong cocktail identity and high local reputation signals.",
     specials: [
       {
         title: "Rotating bar and kitchen specials",
         cadence: "Changes frequently",
-        sourceStatus: "needs-review"
+        sourceStatus: "verified",
+        sourceUrl: "https://barkismet.com/"
       }
     ],
     events: [],
@@ -22,7 +28,7 @@ window.HALIFAX_RESTAURANTS = [
         label: "Official website",
         type: "restaurant_site",
         url: "https://barkismet.com/",
-        status: "needs-review"
+        status: "verified"
       },
       {
         label: "Google place profile",
@@ -39,8 +45,13 @@ window.HALIFAX_RESTAURANTS = [
     cuisines: ["Italian", "Seafood", "Wine"],
     vibe: ["waterfront", "business dinner", "classic"],
     qualityScore: 91,
-    freshnessDate: "2026-08-18",
-    evidenceStatus: "needs-review",
+    freshnessDate: "2026-08-29",
+    evidenceStatus: "verified",
+    category: "Restaurant",
+    address: "1475 Lower Water Street, Halifax, NS B3J 3Z2",
+    phone: "902-425-7993",
+    website: "https://bicyclethief.ca/",
+    openingHours: "Monday–Sunday 11:30 AM–11:00 PM",
     summary: "A polished waterfront fixture with broad appeal for visitors, client meals, and celebratory dinners.",
     specials: [],
     events: [],
@@ -49,7 +60,7 @@ window.HALIFAX_RESTAURANTS = [
         label: "Official website",
         type: "restaurant_site",
         url: "https://bicyclethief.ca/",
-        status: "needs-review"
+        status: "verified"
       },
       {
         label: "Google place profile",
@@ -66,14 +77,20 @@ window.HALIFAX_RESTAURANTS = [
     cuisines: ["Canadian", "Brunch", "Seasonal"],
     vibe: ["brunch", "local", "cozy"],
     qualityScore: 89,
-    freshnessDate: "2026-08-12",
-    evidenceStatus: "needs-review",
+    freshnessDate: "2026-08-29",
+    evidenceStatus: "verified",
+    category: "Restaurant",
+    address: "2053 Gottingen Street, Halifax, NS B3K 3B2",
+    phone: "902-429-2550",
+    website: "https://www.ednarestaurant.com/",
+    openingHours: "Monday–Sunday 5:00 PM–10:00 PM",
     summary: "Neighborhood dining known for brunch demand and seasonal menus.",
     specials: [
       {
         title: "Brunch menu rotation",
         cadence: "Weekly",
-        sourceStatus: "needs-review"
+        sourceStatus: "verified",
+        sourceUrl: "https://www.ednarestaurant.com/menu"
       }
     ],
     events: [],
@@ -81,8 +98,8 @@ window.HALIFAX_RESTAURANTS = [
       {
         label: "Official website",
         type: "restaurant_site",
-        url: "https://ednarestaurant.com/",
-        status: "needs-review"
+        url: "https://www.ednarestaurant.com/",
+        status: "verified"
       }
     ]
   },
@@ -93,8 +110,13 @@ window.HALIFAX_RESTAURANTS = [
     cuisines: ["Seafood", "Steakhouse", "Oysters"],
     vibe: ["historic", "oyster bar", "date night"],
     qualityScore: 88,
-    freshnessDate: "2026-08-19",
-    evidenceStatus: "needs-review",
+    freshnessDate: "2026-08-29",
+    evidenceStatus: "verified",
+    category: "Restaurant",
+    address: "5218 Prince Street, Halifax, NS B3J 3X4",
+    phone: "902-423-8816",
+    website: "https://thepressgang.ca/",
+    openingHours: "Tuesday–Thursday 5:00 PM–late; Friday–Saturday 5:00–11:00 PM; Sunday 5:00–9:00 PM",
     summary: "Historic downtown room with oyster and premium dining signals.",
     specials: [
       {
@@ -109,7 +131,7 @@ window.HALIFAX_RESTAURANTS = [
         label: "Official website",
         type: "restaurant_site",
         url: "https://thepressgang.ca/",
-        status: "needs-review"
+        status: "verified"
       }
     ]
   },
@@ -120,8 +142,13 @@ window.HALIFAX_RESTAURANTS = [
     cuisines: ["Pub", "Nova Scotian", "Comfort food"],
     vibe: ["casual", "heritage", "groups"],
     qualityScore: 86,
-    freshnessDate: "2026-08-16",
-    evidenceStatus: "needs-review",
+    freshnessDate: "2026-08-29",
+    evidenceStatus: "verified",
+    category: "Pub",
+    address: "2720 Gottingen Street, Halifax, NS B3K 3C7",
+    phone: "902-407-2475",
+    website: "https://www.thenarrowspublichouse.ca/",
+    openingHours: "Sunday–Thursday 11:00 AM–midnight; Friday–Saturday 11:00 AM–12:30 AM; closed Tuesday",
     summary: "Local pub experience with Nova Scotia menu cues and community appeal.",
     specials: [
       {
@@ -132,30 +159,36 @@ window.HALIFAX_RESTAURANTS = [
     ],
     events: [
       {
-        title: "Occasional community and kitchen events",
-        timing: "Check official channels",
-        sourceStatus: "needs-review"
+        title: "Live music",
+        timing: "Thursday 7:00–10:00 PM; Saturday 8:30–11:30 PM; Sunday 6:00–8:30 PM",
+        sourceStatus: "verified",
+        sourceUrl: "https://www.thenarrowspublichouse.ca/"
       }
     ],
     sources: [
       {
         label: "Official website",
         type: "restaurant_site",
-        url: "https://thenarrows.ca/",
-        status: "needs-review"
+        url: "https://www.thenarrowspublichouse.ca/",
+        status: "verified"
       }
     ]
   },
   {
     id: "2-doors-down",
     name: "2 Doors Down",
-    neighborhood: "Downtown",
+    neighborhood: "Dartmouth",
     cuisines: ["Canadian", "Casual", "Burgers"],
     vibe: ["casual", "lunch", "groups"],
     qualityScore: 84,
-    freshnessDate: "2026-08-14",
-    evidenceStatus: "needs-review",
-    summary: "Accessible downtown dining with comfort-food strengths and broad visitor utility.",
+    freshnessDate: "2026-08-29",
+    evidenceStatus: "verified",
+    category: "Restaurant",
+    address: "149 Hector Gate, Dartmouth, NS B3B 0C1",
+    phone: "902-481-5222",
+    website: "https://go2doorsdown.com/",
+    openingHours: "Sunday–Thursday 11:30 AM–9:30 PM; Friday–Saturday 11:30 AM–10:00 PM",
+    summary: "The current 2 Doors Down location in Dartmouth Crossing, serving locally sourced comfort food for lunch and dinner.",
     specials: [
       {
         title: "Lunch and seasonal features",
@@ -168,8 +201,8 @@ window.HALIFAX_RESTAURANTS = [
       {
         label: "Official website",
         type: "restaurant_site",
-        url: "https://www.go2doorsdown.com/",
-        status: "needs-review"
+        url: "https://go2doorsdown.com/",
+        status: "verified"
       }
     ]
   },
@@ -180,8 +213,13 @@ window.HALIFAX_RESTAURANTS = [
     cuisines: ["Beer bar", "Burgers", "Pub"],
     vibe: ["craft beer", "casual", "groups"],
     qualityScore: 83,
-    freshnessDate: "2026-08-10",
-    evidenceStatus: "needs-review",
+    freshnessDate: "2026-08-29",
+    evidenceStatus: "verified",
+    category: "Pub",
+    address: "62 Ochterloney Street, Dartmouth, NS B2Y 1C2",
+    phone: "902-446-2337",
+    website: "https://batterypark.ca/",
+    openingHours: "Monday, Wednesday, Sunday 11:30 AM–11:00 PM; Thursday–Saturday 11:30 AM–midnight; closed Tuesday",
     summary: "Dartmouth beer bar with strong craft-beer relevance and casual food coverage.",
     specials: [
       {
@@ -201,8 +239,8 @@ window.HALIFAX_RESTAURANTS = [
       {
         label: "Official website",
         type: "restaurant_site",
-        url: "https://www.batteryparkbeerbar.com/",
-        status: "needs-review"
+        url: "https://batterypark.ca/",
+        status: "verified"
       }
     ]
   },
@@ -213,8 +251,12 @@ window.HALIFAX_RESTAURANTS = [
     cuisines: ["Cocktails", "Small plates"],
     vibe: ["cocktail bar", "date night", "creative"],
     qualityScore: 90,
-    freshnessDate: "2026-08-13",
-    evidenceStatus: "needs-review",
+    freshnessDate: "2026-08-29",
+    evidenceStatus: "verified",
+    category: "Bar",
+    address: "67 Portland Street, Dartmouth, NS B2Y 1H1",
+    website: "https://dearfriendbar.com/",
+    openingHours: "Monday–Wednesday 4:00–11:00 PM; Thursday–Saturday 4:00 PM–midnight; Sunday 4:00–10:00 PM",
     summary: "Cocktail-driven Dartmouth spot with notable bar-program reputation signals.",
     specials: [
       {
@@ -228,8 +270,8 @@ window.HALIFAX_RESTAURANTS = [
       {
         label: "Official website",
         type: "restaurant_site",
-        url: "https://www.dearfriendbar.com/",
-        status: "needs-review"
+        url: "https://dearfriendbar.com/",
+        status: "verified"
       }
     ]
   },
@@ -240,14 +282,20 @@ window.HALIFAX_RESTAURANTS = [
     cuisines: ["Spanish", "Seafood", "Cocktails"],
     vibe: ["tapas", "late", "date night"],
     qualityScore: 88,
-    freshnessDate: "2026-08-15",
-    evidenceStatus: "needs-review",
+    freshnessDate: "2026-08-29",
+    evidenceStatus: "verified",
+    category: "Restaurant",
+    address: "1673 Barrington Street, Halifax, NS B3J 1Z9",
+    phone: "902-407-5260",
+    website: "https://www.highwaymanhfx.com/",
+    openingHours: "Monday–Sunday 4:00 PM–midnight",
     summary: "Downtown tapas and cocktail room with strong after-work and late-dinner use cases.",
     specials: [
       {
         title: "Happy hour and snack features",
-        cadence: "Needs confirmation",
-        sourceStatus: "needs-review"
+        cadence: "Daily 4:00–5:00 PM",
+        sourceStatus: "verified",
+        sourceUrl: "https://www.highwaymanhfx.com/"
       }
     ],
     events: [],
@@ -255,8 +303,8 @@ window.HALIFAX_RESTAURANTS = [
       {
         label: "Official website",
         type: "restaurant_site",
-        url: "https://highwaymanhfx.com/",
-        status: "needs-review"
+        url: "https://www.highwaymanhfx.com/",
+        status: "verified"
       }
     ]
   },
