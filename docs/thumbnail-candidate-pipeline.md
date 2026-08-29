@@ -15,6 +15,7 @@ Run a deterministic local build from existing artifacts:
 node scripts/build-recent-social-posts.mjs
 node scripts/build-thumbnail-candidates.mjs
 node scripts/check-thumbnail-candidates.mjs
+node scripts/build-thumbnail-coverage-report.mjs
 ```
 
 Run a live official-page thumbnail discovery pass:
@@ -25,7 +26,22 @@ THUMBNAIL_DISCOVERY_PAGE_LIMIT=320 \
 THUMBNAIL_DISCOVERY_PAGES_PER_RESTAURANT=3 \
 node scripts/build-thumbnail-candidates.mjs
 node scripts/check-thumbnail-candidates.mjs
+node scripts/build-thumbnail-coverage-report.mjs
 ```
+
+The coverage builder writes:
+
+- `data/build/thumbnail-coverage-report.json`
+- `artifacts/thumbnail-coverage-report.json`
+- `docs/thumbnail-coverage-report.md`
+
+The report separates:
+
+- restaurants with production-approved thumbnails
+- restaurants with any source-backed candidate
+- restaurants missing an approved thumbnail but having candidates ready for review
+- restaurants with no candidate at all
+- candidates grouped by source kind, review state, rights state, extraction method and platform
 
 Store the resulting candidates in the local SQLite database:
 
