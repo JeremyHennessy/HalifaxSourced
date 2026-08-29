@@ -9,6 +9,7 @@ const instagramUserId = process.env.META_IG_USER_ID || "";
 const profileLimit = Number(process.env.SOCIAL_PROFILE_LIMIT ?? 100);
 const postLimit = Math.min(25, Math.max(1, Number(process.env.SOCIAL_POST_LIMIT ?? 15)));
 const lookbackDays = Number(process.env.SOCIAL_LOOKBACK_DAYS ?? 60);
+const summaryChars = Math.max(120, Math.min(700, Number(process.env.SOCIAL_SUMMARY_CHARS ?? 420)));
 const delayMs = Number(process.env.SOCIAL_PULL_DELAY_MS ?? 250);
 const timeoutMs = Number(process.env.SOCIAL_PULL_TIMEOUT_MS ?? 12000);
 const cutoff = Date.now() - lookbackDays * 24 * 60 * 60 * 1000;
@@ -24,6 +25,18 @@ const signalGroups = {
 };
 
 function sleep(ms) { return new Promise((resolve) => setTimeout(resolve, ms)); }
+function summarize(value, maxChars = summaryChars) {
+  const text = String(value ?? "")
+    .replace(/https?:\/\/\S+/gi, " ")
+    .replace(/[#@][\w.-]+/g, (token) => token.length > 36 ? " " : token)
+    .replace(/\s+/g, " ")
+    .trim();
+  if (!text) return "";
+  return text.length > maxChars ? `${text.slice(0, maxChars - 3).trim()}...` : text;
+}
+function titleFromText(value, fallback) {
+  return summarize(value, 150).split(/\r?\n/)[0].trim() || fallback;
+}
 function classify(text) {
   const haystack = String(text ?? "").toLowerCase();
   return Object.fromEntries(Object.entries(signalGroups).map(([kind, words]) => [kind, words.filter((word) => haystack.includes(word))]));
@@ -94,7 +107,8 @@ if (facebookToken) {
       for (const post of pagePosts.data || []) {
         if (!recent(post.created_time)) continue;
         postsObserved += 1;
-        const matches = matchedOnly(classify(post.message));
+        const summary = summarize(post.message);
+        const matches = matchedOnly(classify(summary));
         const record = {
           restaurantId: profile.restaurantId,
           restaurantName: profile.restaurantName,
@@ -104,7 +118,8 @@ if (facebookToken) {
           platformObjectId: page.id,
           postId: post.id,
           postUrl: post.permalink_url || profile.url,
-          title: String(post.message || "").trim().split(/\r?\n/)[0].slice(0, 140) || "Facebook update",
+          title: titleFromText(summary, "Facebook update"),
+          summary: summary || null,
           mediaUrl: post.full_picture || null,
           publishedAt: new Date(post.created_time).toISOString(),
           observedAt: new Date().toISOString(),
@@ -137,7 +152,8 @@ if (instagramToken && instagramUserId) {
       for (const media of account.media?.data || []) {
         if (!recent(media.timestamp)) continue;
         postsObserved += 1;
-        const matches = matchedOnly(classify(media.caption));
+        const summary = summarize(media.caption);
+        const matches = matchedOnly(classify(summary));
         const record = {
           restaurantId: profile.restaurantId,
           restaurantName: profile.restaurantName,
@@ -147,7 +163,8 @@ if (instagramToken && instagramUserId) {
           platformObjectId: account.id,
           postId: media.id,
           postUrl: media.permalink || profile.url,
-          title: String(media.caption || "").trim().split(/\r?\n/)[0].slice(0, 140) || "Instagram update",
+          title: titleFromText(summary, "Instagram update"),
+          summary: summary || null,
           mediaType: media.media_type || null,
           mediaUrl: media.media_url || null,
           thumbnailUrl: media.thumbnail_url || null,
@@ -177,10 +194,11 @@ const uniquePosts = posts.filter((post, index, all) => all.findIndex((item) => i
   .sort((a, b) => b.publishedAt.localeCompare(a.publishedAt));
 
 const output = {
-  version: 2,
+  version: 3,
   generatedAt: new Date().toISOString(),
   graphVersion,
   lookbackDays,
+  summaryChars,
   credentialState: {
     facebook: facebookToken ? "configured" : "missing",
     instagram: instagramToken && instagramUserId ? "configured" : "missing"
