@@ -296,6 +296,7 @@ const moreState = await page.evaluate(() => ({
 if (moreState.expanded !== "true" || !moreState.open || !["#specials", "#menus", "#saved"].every((href) => moreState.destinations.includes(href))) throw new Error(`Expected complete mobile More navigation, got ${JSON.stringify(moreState)}.`);
 await captureIphone("more-navigation");
 await page.locator("[data-mobile-more-close]").click();
+await page.locator("[data-mobile-more-sheet]").waitFor({ state: "hidden" });
 const closedMoreState = await page.evaluate(() => ({
   expanded: document.querySelector("#mobileMore")?.getAttribute("aria-expanded"),
   open: document.querySelector("[data-mobile-more-sheet]")?.classList.contains("is-open"),
