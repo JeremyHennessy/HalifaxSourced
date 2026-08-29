@@ -266,7 +266,7 @@ await page.waitForFunction(() => {
 });
 await page.locator(".toast").evaluateAll((nodes) => nodes.forEach((node) => node.remove()));
 await page.screenshot({ path: resolve("artifacts", "ui-check-iphone-kajohn-updates.png"), fullPage: false });
-await page.goto(`${url}/#restaurant/marias-pantry-dartmouth`, { waitUntil: "networkidle" });
+await page.goto(`${url}/#restaurant/lake-city-cider-dartmouth`, { waitUntil: "networkidle" });
 await page.locator("#detailLinks .source-link-row").first().waitFor();
 await captureIphone("dartmouth-new-place");
 await page.goto(`${url}/#home`, { waitUntil: "networkidle" });
