@@ -41,7 +41,10 @@ const records = reviewed.map((resolution) => {
   if (resolution.reviewState !== "resolved-by-evidence" || !validUrl(resolution.sourceUrl) || !resolution.evidence?.length) failures.push({ restaurantId: resolution.restaurantId, problem: "resolution_evidence_contract_failed" });
   if (resolution.directorySourceId) {
     const candidate = resolutionByCandidateId.get(resolution.candidateId);
-    if (!candidate || candidate.sourceId !== resolution.directorySourceId || candidate.matchedRestaurantId !== resolution.restaurantId) failures.push({ restaurantId: resolution.restaurantId, problem: "directory_candidate_provenance_failed" });
+    const manualLocationEvidence = resolution.resolutionState === "resolved_high"
+      && resolution.evidence?.includes("compatible_street_address")
+      && resolution.evidence?.some((item) => item === "exact_official_domain" || item.startsWith("official_location_"));
+    if (!candidate || candidate.sourceId !== resolution.directorySourceId || (candidate.matchedRestaurantId && candidate.matchedRestaurantId !== resolution.restaurantId) || (!candidate.matchedRestaurantId && !manualLocationEvidence)) failures.push({ restaurantId: resolution.restaurantId, problem: "directory_candidate_provenance_failed" });
   }
   const source = firstPartyById.get(resolution.restaurantId) || {};
   const fact = factsById.get(resolution.restaurantId) || {};
