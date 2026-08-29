@@ -215,6 +215,13 @@ if (eventState.loaded > 0) {
 }
 await page.screenshot({ path: resolve("artifacts", "ui-check-events.png"), fullPage: true });
 
+await page.goto(`${url}/#specials`, { waitUntil: "networkidle" });
+const desktopSpecialsState = await page.evaluate(() => ({
+  overflow: document.documentElement.scrollWidth - document.documentElement.clientWidth,
+  rawUrlHeadings: [...document.querySelectorAll(".special-card h2")].filter((heading) => /^https?:\/\//i.test(heading.textContent.trim())).length
+}));
+if (desktopSpecialsState.overflow > 2 || desktopSpecialsState.rawUrlHeadings > 0) throw new Error(`Expected polished desktop specials cards, got ${JSON.stringify(desktopSpecialsState)}.`);
+
 // Explore filters intentionally persist across routes. Reset test state before asserting a full-map population.
 await page.evaluate(() => {
   state.query = "";
