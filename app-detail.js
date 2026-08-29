@@ -125,8 +125,9 @@ function officialUpdateCard(update) {
   const published = new Date(update.publishedAt);
   const date = Number.isNaN(published.getTime()) ? "Date unavailable" : published.toLocaleDateString("en-CA", { month: "short", day: "numeric", year: "numeric", timeZone: "America/Halifax" });
   const platform = update.platform === "website_feed" ? "Official website" : socialPlatformLabel(update.platform);
-  const media = update.mediaUrl || update.thumbnailUrl ? " · media post" : "";
-  return `<a class="official-update-card" href="${escapeHtml(url)}" target="_blank" rel="noreferrer"><span>${escapeHtml(platform)}</span><strong>${escapeHtml(update.title || `${platform} update`)}</strong><small>${escapeHtml(date)}${escapeHtml(media)} · Open original ↗</small></a>`;
+  const mediaUrl = safeUrl(update.mediaUrl || update.thumbnailUrl);
+  const media = mediaUrl ? `<img class="official-update-media" src="${escapeHtml(mediaUrl)}" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">` : "";
+  return `<a class="official-update-card${mediaUrl ? " has-media" : ""}" href="${escapeHtml(url)}" target="_blank" rel="noreferrer">${media}<span>${escapeHtml(platform)}</span><strong>${escapeHtml(update.title || `${platform} update`)}</strong><small>${escapeHtml(date)} · Open original ↗</small></a>`;
 }
 
 function infoCard(title, text, icon) {
