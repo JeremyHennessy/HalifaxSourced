@@ -348,7 +348,7 @@ await page.goto(`${url}/#explore`, { waitUntil: "networkidle" });
 await page.locator("#globalSearch").fill("Field Guide");
 await page.locator("#globalSearch").press("Enter");
 await page.waitForURL(/#explore/);
-await page.locator("#exploreResults").waitFor();
+await page.locator(".results-area").waitFor();
 if (await page.locator(".restaurant-card", { hasText: "Field Guide" }).count()) throw new Error("Closed Field Guide leaked into active discovery results.");
 
 await page.goto(`${url}/#restaurant/highwayman`, { waitUntil: "networkidle" });
