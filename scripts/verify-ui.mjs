@@ -126,7 +126,7 @@ if (await page.locator("#detailLinks .source-link-row").count() < 1) throw new E
 
 // Event discovery: every filter must change actual result state, not just visual controls.
 await page.goto(`${url}/#events`, { waitUntil: "networkidle" });
-await page.locator(".event-filter-panel").waitFor({ state: "attached" });
+await page.locator(".event-filter-panel").waitFor();
 const eventState = await page.evaluate(() => ({
   loaded: window.HALIFAX_CITY_EVENTS?.eventCount ?? 0,
   rendered: document.querySelectorAll(".event-card").length,
@@ -342,7 +342,7 @@ if (await page.locator("#detailLinks .source-link-row").count() < 1) throw new E
 await captureIphone("detail");
 
 await page.goto(`${url}/#events`, { waitUntil: "networkidle" });
-await page.locator(".event-filter-panel").waitFor();
+await page.locator(".event-filter-panel").waitFor({ state: "attached" });
 const eventFilterOpen = page.locator("[data-event-filter-open]");
 await eventFilterOpen.click();
 if (await eventFilterOpen.getAttribute("aria-expanded") !== "true" || !(await page.locator("[data-event-filter-panel]").evaluate((node) => node.classList.contains("is-open")))) throw new Error("Expected mobile event filter drawer to open.");
