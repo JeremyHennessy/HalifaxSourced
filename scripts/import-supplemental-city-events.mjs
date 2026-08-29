@@ -86,7 +86,7 @@ async function fetchHtml(url) {
 function makeEvent(source, raw) {
   if (!raw.title || !raw.startAt || !inRange(raw.startAt, raw.endAt || raw.startAt)) return null;
   const eventUrl = absoluteUrl(raw.eventUrl || source.url, source.url) || source.url;
-  return {
+  const event = {
     id: `${source.id}-${hashId(raw.title, raw.startAt, raw.venueName || raw.address || "Halifax")}`,
     title: inline(raw.title).slice(0, 240),
     startAt: raw.startAt,
@@ -106,6 +106,84 @@ function makeEvent(source, raw) {
     observedAt: new Date().toISOString(),
     reviewState: "source_observed"
   };
+  if (Number.isFinite(Number(source.latitude)) && Number.isFinite(Number(source.longitude))) {
+    event.latitude = Number(source.latitude);
+    event.longitude = Number(source.longitude);
+  }
+  return event;
+}
+
+function simpleEventCategories(title) {
+  const text = String(title || "").toLowerCase();
+  if (/market/.test(text)) return ["Markets", "Community"];
+  if (/movie|film|documentary|author|art|gallery|theatre|drama|craft|stitch|knit/.test(text)) return ["Arts", "Community"];
+  if (/music|concert|sing|dance/.test(text)) return ["Music", "Arts"];
+  if (/food|cook|tea|cafe/.test(text)) return ["Food & Drink", "Community"];
+  return ["Community"];
+}
+
+function locationPageWhen(block) {
+  const match = inline(block).match(/\b(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Sept|Oct|Nov|Dec)\s+(\d{1,2})(?:st|nd|rd|th)?\s*\|\s*(\d{1,2}(?::\d{2})?)(am|pm)\s*[-–]\s*(\d{1,2}(?::\d{2})?)(am|pm)/i);
+  if (!match) return null;
+  const month = monthNumber(match[1]);
+  const year = Number(new Intl.DateTimeFormat("en-CA", { timeZone: "America/Halifax", year: "numeric" }).format(new Date()));
+  const start = timeParts(match[3], match[4]);
+  const end = timeParts(match[5], match[6]);
+  const startAt = zonedIso(year, month, Number(match[2]), start.hour, start.minute);
+  let endAt = zonedIso(year, month, Number(match[2]), end.hour, end.minute);
+  if (Date.parse(endAt) < Date.parse(startAt)) endAt = new Date(Date.parse(endAt) + 86400000).toISOString();
+  return { startAt, endAt, allDay: false };
+}
+
+async function importOfficialLocationEvents(source) {
+  const page = await fetchHtml(source.url);
+  const headings = [...page.text.matchAll(/<h3\b[^>]*>[\s\S]*?<a\b[^>]*href=["']([^"']+)["'][^>]*>([\s\S]*?)<\/a>[\s\S]*?<\/h3>/gi)];
+  const events = [];
+  for (let index = 0; index < headings.length; index += 1) {
+    const current = headings[index];
+    const nextIndex = headings[index + 1]?.index ?? page.text.length;
+    const block = page.text.slice(current.index, nextIndex);
+    if (/\bcancelled\b/i.test(inline(block))) continue;
+    const when = locationPageWhen(block);
+    const title = inline(current[2]).replace(/, part of a series.*$/i, "");
+    if (!when || !title) continue;
+    const event = makeEvent(source, { ...when, title, venueName: source.venueName, address: source.venueAddress, city: source.city, categories: simpleEventCategories(title), eventUrl: absoluteUrl(current[1], page.resolvedUrl) });
+    if (event) events.push(event);
+  }
+  return events;
+}
+
+function normalizedEventonDate(value, allDay) {
+  const text = String(value || "").trim();
+  if (!text) return null;
+  if (allDay || /^\d{4}-\d{1,2}-\d{1,2}$/.test(text)) {
+    const match = text.match(/^(\d{4})-(\d{1,2})-(\d{1,2})/);
+    return match ? zonedIso(Number(match[1]), Number(match[2]), Number(match[3]), 12, 0) : null;
+  }
+  const match = text.match(/^(\d{4})-(\d{1,2})-(\d{1,2})T(\d{1,2}):(\d{2})(?::(\d{2}))?([+-])(\d{1,2}):(\d{2})$/);
+  if (!match) return null;
+  const iso = `${match[1]}-${match[2].padStart(2, "0")}-${match[3].padStart(2, "0")}T${match[4].padStart(2, "0")}:${match[5]}:${match[6] || "00"}${match[7]}${match[8].padStart(2, "0")}:${match[9]}`;
+  const parsed = Date.parse(iso);
+  return Number.isFinite(parsed) ? new Date(parsed).toISOString() : null;
+}
+
+async function importEventonCalendar(source) {
+  const page = await fetchHtml(source.url);
+  const events = [];
+  for (const match of page.text.matchAll(/<script\b[^>]*type=["']application\/ld\+json["'][^>]*>([\s\S]*?)<\/script>/gi)) {
+    let item;
+    // EventON emits literal line breaks inside JSON string values. They are
+    // invalid JSON controls but carry no semantic value for the fields used.
+    try { item = JSON.parse(match[1].replace(/[\u0000-\u001f]+/g, " ")); } catch { continue; }
+    if (item?.["@type"] !== "Event" || !item.name || !item.startDate) continue;
+    const allDay = /^\d{4}-\d{1,2}-\d{1,2}$/.test(String(item.startDate));
+    const startAt = normalizedEventonDate(item.startDate, allDay);
+    const endAt = normalizedEventonDate(item.endDate || item.startDate, allDay);
+    if (!startAt || !endAt) continue;
+    const event = makeEvent(source, { title: item.name, startAt, endAt, allDay, venueName: source.venueName, address: source.venueAddress, city: source.city, categories: simpleEventCategories(item.name), eventUrl: item.url });
+    if (event) events.push(event);
+  }
+  return events;
 }
 
 function parseConventionDate(label, defaultYear) {
@@ -255,6 +333,8 @@ for (const source of sources) {
     if (source.mode === "convention_calendar") events = await importConvention(source);
     else if (source.mode === "symphony_concerts") events = await importSymphony(source);
     else if (source.mode === "bibliocommons_events") events = await importLibraries(source);
+    else if (source.mode === "official_location_events") events = await importOfficialLocationEvents(source);
+    else if (source.mode === "eventon_jsonld_calendar") events = await importEventonCalendar(source);
     else throw new Error(`unsupported_mode_${source.mode}`);
     supplemental.push(...events);
     sourceStats.push({ sourceId: source.id, sourceName: source.name, status: "ok", eventCount: events.length, observedAt: new Date().toISOString(), durationMs: Date.now() - started });
@@ -266,7 +346,11 @@ for (const source of sources) {
   }
 }
 
-const events = dedupe([...(payload.events || []), ...supplemental]);
+// Refresh these adapters atomically so reruns cannot preserve stale events,
+// stale failures, or a previously sanitized municipality assignment.
+const supplementalSourceIds = new Set(sources.map((source) => source.id));
+const baseEvents = (payload.events || []).filter((event) => !supplementalSourceIds.has(event.sourceId));
+const events = dedupe([...baseEvents, ...supplemental]);
 const categoryCounts = {};
 for (const event of events) for (const category of event.categories || []) categoryCounts[category] = (categoryCounts[category] || 0) + 1;
 const output = {
@@ -275,8 +359,8 @@ const output = {
   supplementalAt: new Date().toISOString(),
   eventCount: events.length,
   categoryCounts,
-  sourceStats: [...(payload.sourceStats || []), ...sourceStats],
-  failures: [...(payload.failures || []), ...failures],
+  sourceStats: [...(payload.sourceStats || []).filter((stat) => !supplementalSourceIds.has(stat.sourceId)), ...sourceStats],
+  failures: [...(payload.failures || []).filter((failure) => !supplementalSourceIds.has(failure.sourceId)), ...failures],
   supplementalAudit: { addedBeforeDedupe: supplemental.length, sourceStats, failures },
   events
 };

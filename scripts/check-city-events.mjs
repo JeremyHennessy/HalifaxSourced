@@ -10,6 +10,12 @@ const events = Array.isArray(payload.events) ? payload.events : [];
 const failures = [];
 const warnings = [];
 const ALLOWED_CITIES = new Set(["halifax", "dartmouth", "bedford"]);
+const REGIONAL_SOURCE_CITIES = new Map([
+  ["alderney-landing-events", "dartmouth"],
+  ["alderney-gate-library-events", "dartmouth"],
+  ["woodlawn-library-events", "dartmouth"],
+  ["bedford-library-events", "bedford"]
+]);
 
 function validUrl(value) {
   try {
@@ -46,6 +52,9 @@ for (const event of events) {
     const locationCity = canonicalCity(`${event.address || ""} ${event.venueName || ""}`);
     if (!locationCity) failures.push({ type: "province_wide_event_missing_local_location_evidence", id: event.id, title: event.title, address: event.address, venueName: event.venueName });
   }
+  const expectedRegionalCity = REGIONAL_SOURCE_CITIES.get(event.sourceId);
+  if (expectedRegionalCity && city !== expectedRegionalCity) failures.push({ type: "regional_event_wrong_municipality", id: event.id, sourceId: event.sourceId, expected: expectedRegionalCity, actual: city });
+  if (expectedRegionalCity && (!Number.isFinite(Number(event.latitude)) || !Number.isFinite(Number(event.longitude)))) failures.push({ type: "regional_event_missing_coordinates", id: event.id, sourceId: event.sourceId });
 
   const key = `${normalize(event.title)}|${String(event.startAt).slice(0, 10)}|${normalize(event.venueName || event.address || "halifax")}`;
   if (keys.has(key)) warnings.push({ type: "possible_duplicate_event", id: event.id, title: event.title, key });
@@ -58,6 +67,10 @@ const sports = events.filter((event) => event.categories?.includes("Sports")).le
 const music = events.filter((event) => event.categories?.includes("Music")).length;
 const food = events.filter((event) => event.categories?.includes("Food & Drink")).length;
 const festivals = events.filter((event) => event.categories?.includes("Festivals")).length;
+const municipalityCounts = Object.fromEntries([...ALLOWED_CITIES].map((city) => [city, events.filter((event) => canonicalCity(event.city) === city).length]));
+for (const stat of payload.sourceStats || []) {
+  if (REGIONAL_SOURCE_CITIES.has(stat.sourceId) && stat.status === "ok" && Number(stat.eventCount) > 0 && !events.some((event) => event.sourceId === stat.sourceId)) failures.push({ type: "regional_source_events_missing_after_sanitize", sourceId: stat.sourceId, eventCount: stat.eventCount });
+}
 if (events.length && !sports) warnings.push({ type: "no_sports_events_detected" });
 if (events.length && !music) warnings.push({ type: "no_music_events_detected" });
 if (events.length && !food) warnings.push({ type: "no_food_events_detected" });
@@ -72,6 +85,7 @@ const report = {
     music,
     food,
     festivals,
+    municipalities: municipalityCounts,
     sources: Array.isArray(payload.sourceStats) ? payload.sourceStats.length : 0,
     failedSources: Array.isArray(payload.failures) ? payload.failures.length : 0,
     removedOutOfScope: payload.scopeAudit?.removedOutOfScope ?? null

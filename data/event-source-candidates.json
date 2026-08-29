@@ -1,22 +1,21 @@
 {
   "version": 2,
-  "updatedAt": "2026-08-28",
+  "updatedAt": "2026-08-29",
   "candidates": [
     {
       "id": "alderney-landing",
       "name": "Alderney Landing",
       "kind": "official_venue_calendar",
-      "url": "https://alderneylanding.com/events/",
+      "url": "https://www.alderneylanding.com/events-directory/",
       "venueId": "alderney-landing-dartmouth",
       "city": "Dartmouth",
-      "status": "blocked_pending_adapter",
-      "lastAttemptAt": "2026-08-28",
+      "status": "active_official_directory_adapter",
+      "lastAttemptAt": "2026-08-29",
       "lastFailures": [
-        {"interface":"official_calendar","url":"https://alderneylanding.com/events/","failure":"http_403 from GitHub Actions runner"},
         {"interface":"official_ticket_group","url":"https://www.tixr.com/groups/alderneylanding","failure":"http_403 from GitHub Actions runner"}
       ],
-      "recommendedNextInterface": "official structured calendar/feed/API or licensed partner feed if published",
-      "notes": "Both the venue calendar and its public Tixr group are visible in normal web indexing but return HTTP 403 to GitHub Actions. Halifax Sourced will not bypass those protections or claim active Alderney coverage until a permitted stable interface is available."
+      "recommendedNextInterface": "Continue the official events-directory JSON-LD adapter; keep Tixr excluded while restricted.",
+      "notes": "The venue's official events directory is now accessible and exposes event JSON-LD. The separate Tixr group remains restricted and is not ingested or treated as broken."
     },
     {
       "id": "discover-halifax-events",
