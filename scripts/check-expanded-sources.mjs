@@ -22,6 +22,7 @@ const feedPayload = feedWindow.HALIFAX_WEBSITE_FEED_SIGNALS || { signals: [] };
 const socialPayload = socialWindow.HALIFAX_SOCIAL_SIGNALS || { signals: [] };
 const records = Array.isArray(firstParty.records) ? firstParty.records : [];
 const feedSignals = Array.isArray(feedPayload.signals) ? feedPayload.signals : [];
+const feedPosts = Array.isArray(feedPayload.posts) ? feedPayload.posts : feedSignals;
 const socialSignals = Array.isArray(socialPayload.signals) ? socialPayload.signals : [];
 const failures = [];
 const warnings = [];
@@ -99,6 +100,16 @@ for (const signal of feedSignals) {
   if (Object.hasOwn(signal, "description") || Object.hasOwn(signal, "summary") || Object.hasOwn(signal, "content")) failures.push({ type: "website_feed_raw_body_retained", restaurantId: signal.restaurantId, postUrl: signal.postUrl });
 }
 
+const duplicateFeedPosts = duplicates(feedPosts, (post) => `${post.restaurantId}|${post.postUrl}`);
+if (duplicateFeedPosts.length) failures.push({ type: "duplicate_website_feed_posts", values: duplicateFeedPosts.slice(0, 30) });
+for (const post of feedPosts) {
+  if (!restaurantIds.has(post.restaurantId) || !validUrl(post.postUrl) || !validUrl(post.feedUrl) || !validDate(post.observedAt) || post.sourceKind !== "official_feed" || post.associationBasis !== "unique_feed_link_from_official_website") {
+    failures.push({ type: "invalid_website_feed_post", restaurantId: post.restaurantId, postUrl: post.postUrl });
+  }
+  if (post.mediaUrl && !validUrl(post.mediaUrl)) failures.push({ type: "invalid_website_feed_media", restaurantId: post.restaurantId, mediaUrl: post.mediaUrl });
+  if (Object.hasOwn(post, "description") || Object.hasOwn(post, "summary") || Object.hasOwn(post, "content")) failures.push({ type: "website_feed_raw_body_retained", restaurantId: post.restaurantId, postUrl: post.postUrl });
+}
+
 const duplicateSocialSignals = duplicates(socialSignals, (signal) => `${signal.platform}|${signal.restaurantId}|${signal.postId}`);
 if (duplicateSocialSignals.length) failures.push({ type: "duplicate_social_signals", values: duplicateSocialSignals.slice(0, 30) });
 for (const signal of socialSignals) {
@@ -141,6 +152,7 @@ const report = {
     uniqueRestaurantFeeds: feedPayload.uniqueRestaurantFeeds ?? null,
     sharedFeedUrlsSkipped: feedPayload.sharedFeedUrlsSkipped ?? 0,
     websiteFeedSignals: feedSignals.length,
+    websiteFeedPosts: feedPosts.length,
     uniqueRestaurantSocialProfiles: socialPayload.uniqueRestaurantProfiles ?? null,
     sharedProfileAssociationsSkipped: socialPayload.sharedProfileAssociationsSkipped ?? 0,
     socialSignals: socialSignals.length
