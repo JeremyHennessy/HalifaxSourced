@@ -61,7 +61,12 @@ function renderRestaurantDetail(id) {
       </aside>
     </section>`;
   bindCommonActions();
-  if (restaurant.coordinates) requestAnimationFrame(() => initDetailMap(restaurant));
+  if (restaurant.coordinates) {
+    const detailMapElement = document.querySelector("#detailMap");
+    requestAnimationFrame(() => {
+      if (detailMapElement?.isConnected) initDetailMap(restaurant, detailMapElement);
+    });
+  }
 }
 
 function structuredSpecialDetailRow(special) {

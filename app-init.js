@@ -115,9 +115,9 @@ function focusMapResult(id) {
   }
 }
 
-function initDetailMap(restaurant) {
-  const element = document.querySelector("#detailMap");
+function initDetailMap(restaurant, element = document.querySelector("#detailMap")) {
   if (!element || !window.L || !restaurant.coordinates) return;
+  if (!element.isConnected || element._leaflet_id) return;
   const center = [restaurant.coordinates.lat, restaurant.coordinates.lon];
   const map = L.map(element, { attributionControl: false, zoomControl: false, dragging: false, scrollWheelZoom: false, doubleClickZoom: false, boxZoom: false, keyboard: false, zoomAnimation: false, fadeAnimation: false, markerZoomAnimation: false }).setView(center, 15, { animate: false });
   L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", { maxZoom: 19 }).addTo(map);
