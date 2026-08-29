@@ -4,6 +4,7 @@ import { mkdir, readFile, writeFile } from "node:fs/promises";
 const catalog = JSON.parse(await readFile(new URL("../data/build/catalog.json", import.meta.url), "utf8"));
 const firstParty = JSON.parse(await readFile(new URL("../data/build/first-party-sources.json", import.meta.url), "utf8"));
 const verifiedPages = JSON.parse(await readFile(new URL("../data/build/verified-source-pages.json", import.meta.url), "utf8").catch(() => "{}"));
+const reviewedSpecials = JSON.parse(await readFile(new URL("../data/reviewed-structured-specials.json", import.meta.url), "utf8").catch(() => "{\"records\":[]}"));
 const catalogIds = new Set((catalog.restaurants || []).map((restaurant) => restaurant.id));
 const now = new Date().toISOString();
 const nowStamp = Date.parse(now);
@@ -80,6 +81,31 @@ function push(record) {
   if (seen.has(key)) return;
   seen.add(key);
   records.push(record);
+}
+
+for (const special of reviewedSpecials.records || []) {
+  const sourceUrl = safeUrl(special.sourceUrl);
+  if (!sourceUrl || !special.restaurantId || !special.title) continue;
+  push({
+    specialId: specialId(special.restaurantId, special.title, sourceUrl),
+    restaurantId: special.restaurantId,
+    title: special.title,
+    specialType: special.specialType || typeFor(special.title),
+    description: special.description || null,
+    dayOfWeek: Array.isArray(special.dayOfWeek) ? special.dayOfWeek : null,
+    startTime: special.startTime || null,
+    endTime: special.endTime || null,
+    validFrom: special.validFrom || null,
+    validTo: special.validTo || null,
+    price: numericPrice(special.price),
+    currency: special.currency || (numericPrice(special.price) !== null ? "CAD" : null),
+    recurrence: special.recurrence || null,
+    sourceUrl,
+    sourceType: "reviewed_restaurant_owned_source",
+    observedAt: special.observedAt || special.verifiedAt || now,
+    verifiedAt: special.verifiedAt || null,
+    status: statusFor({ sourceVerified: true, verifiedAt: special.verifiedAt, validFrom: special.validFrom, validTo: special.validTo, recurrence: special.recurrence })
+  });
 }
 
 for (const place of catalog.restaurants || []) {
