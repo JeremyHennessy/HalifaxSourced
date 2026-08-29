@@ -9,6 +9,7 @@ const timeoutMs = Number(process.env.FEED_PULL_TIMEOUT_MS ?? 12000);
 const concurrency = Math.max(1, Math.min(16, Number(process.env.FEED_PULL_CONCURRENCY ?? 8)));
 const feedLimit = Number(process.env.FEED_PULL_LIMIT ?? 120);
 const lookbackDays = Number(process.env.FEED_LOOKBACK_DAYS ?? 180);
+const excerptChars = Math.max(120, Math.min(700, Number(process.env.FEED_EXCERPT_CHARS ?? 420)));
 const userAgent = "HalifaxSourced/0.3 (+https://github.com/JeremyHennessy/HalifaxSourced)";
 const cutoff = Date.now() - lookbackDays * 24 * 60 * 60 * 1000;
 
@@ -18,7 +19,8 @@ const signalGroups = {
   openings: ["now open", "opening soon", "grand opening", "soft opening", "new location", "coming soon", "newly opened"],
   ...LIFECYCLE_SIGNAL_GROUPS,
   brunch: ["brunch", "breakfast"],
-  menu: ["menu", "tasting menu", "seasonal menu", "new menu"]
+  menu: ["menu", "tasting menu", "seasonal menu", "new menu"],
+  patio: ["patio", "rooftop", "terrace", "outdoor seating", "beer garden"]
 };
 
 function sleep(ms) { return new Promise((resolve) => setTimeout(resolve, ms)); }
@@ -34,6 +36,14 @@ function decode(value) {
     .replace(/&#x([0-9a-f]+);/gi, (_, code) => String.fromCodePoint(parseInt(code, 16)))
     .replace(/\s+/g, " ")
     .trim();
+}
+function excerpt(value, maxChars = excerptChars) {
+  const text = decode(value)
+    .replace(/https?:\/\/\S+/gi, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+  if (!text) return "";
+  return text.length > maxChars ? `${text.slice(0, maxChars - 3).trim()}...` : text;
 }
 function safeUrl(value, base) {
   try {
@@ -85,7 +95,8 @@ function parseFeed(xml, baseUrl) {
     const publishedRaw = tagText(block, ["pubDate", "published", "updated", "dc:date"]);
     const publishedStamp = Date.parse(publishedRaw);
     const summary = tagText(block, ["description", "summary", "content:encoded", "content"]);
-    return { title, link, mediaUrl: entryMedia(block, baseUrl), publishedAt: Number.isFinite(publishedStamp) ? new Date(publishedStamp).toISOString() : null, signalMatches: classify(`${title} ${summary}`) };
+    const shortExcerpt = excerpt(summary);
+    return { title, link, excerpt: shortExcerpt || null, mediaUrl: entryMedia(block, baseUrl), publishedAt: Number.isFinite(publishedStamp) ? new Date(publishedStamp).toISOString() : null, signalMatches: classify(`${title} ${shortExcerpt}`) };
   });
 }
 
@@ -135,6 +146,7 @@ async function scanFeed(feed) {
         restaurantName: feed.restaurantName,
         platform: "website_feed",
         title: entry.title,
+        excerpt: entry.excerpt,
         postUrl: entry.link,
         feedUrl: feed.url,
         mediaUrl: entry.mediaUrl,
@@ -179,7 +191,7 @@ const uniqueSignals = signals.filter((signal, index, all) => all.findIndex((item
 const uniquePosts = posts.filter((post, index, all) => all.findIndex((item) => item.restaurantId === post.restaurantId && item.postUrl === post.postUrl) === index)
   .sort((a, b) => String(b.publishedAt || b.observedAt).localeCompare(String(a.publishedAt || a.observedAt)));
 const output = {
-  version: 2,
+  version: 3,
   generatedAt: new Date().toISOString(),
   feedsDiscovered: candidateFeeds.length,
   reviewedFeedsExcluded: reviewedFeedsExcluded.length,
@@ -187,6 +199,8 @@ const output = {
   sharedFeedUrlsSkipped: sharedFeedUrls.size,
   feedHostGroups: groups.length,
   concurrency,
+  lookbackDays,
+  excerptChars,
   feedsChecked,
   failedFeeds: failures.length,
   posts: uniquePosts,
