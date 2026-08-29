@@ -19,17 +19,22 @@ const restaurantIds = new Set([...(catalog.restaurants || []), ...discoveredRest
 const firstPartyWindow = await loadWindowScript("data/first-party-sources.js");
 const feedWindow = await loadWindowScript("data/website-feed-signals.js");
 const socialWindow = await loadWindowScript("data/social-signals.js");
+const recentWindow = await loadWindowScript("data/recent-social-posts.js").catch(() => ({ HALIFAX_RECENT_SOCIAL_POSTS: { records: [] } }));
 const firstParty = firstPartyWindow.HALIFAX_FIRST_PARTY_SOURCES || { records: [] };
 const feedPayload = feedWindow.HALIFAX_WEBSITE_FEED_SIGNALS || { signals: [] };
 const socialPayload = socialWindow.HALIFAX_SOCIAL_SIGNALS || { signals: [] };
+const recentPayload = recentWindow.HALIFAX_RECENT_SOCIAL_POSTS || { records: [] };
 const records = Array.isArray(firstParty.records) ? firstParty.records : [];
 const feedSignals = Array.isArray(feedPayload.signals) ? feedPayload.signals : [];
 const feedPosts = Array.isArray(feedPayload.posts) ? feedPayload.posts : feedSignals;
 const socialSignals = Array.isArray(socialPayload.signals) ? socialPayload.signals : [];
+const socialPosts = Array.isArray(socialPayload.posts) ? socialPayload.posts : socialSignals;
+const recentPosts = Array.isArray(recentPayload.records) ? recentPayload.records : [];
 const failures = [];
 const warnings = [];
 const allowedFeedExclusionReasons = new Set(["compromised_off_topic_feed", "shared_brand_nonlocal_feed"]);
 const allowedSocialProfileExclusionReasons = new Set(["person_or_creator_profile", "parent_institution_profile", "wrong_location_profile", "supplier_or_partner_profile", "conflicting_profile_evidence"]);
+const allowedRecentCategories = new Set(["happy_hour", "specials", "events", "live_music", "openings", "menu", "patio", "brunch", "seasonal", "reservations", "general_update"]);
 const excludedFeedUrls = new Set();
 const excludedProfileUrlsByRestaurant = new Map();
 for (const record of feedReviewOverrides.records || []) {
@@ -76,6 +81,10 @@ function oembedFeed(value, type = "") {
 }
 function validDate(value) { return Number.isFinite(Date.parse(String(value ?? ""))); }
 function hasSignalMatches(value) { return value && typeof value === "object" && Object.values(value).some((hits) => Array.isArray(hits) && hits.length > 0); }
+function boundedText(value, max = 700) { return !value || (typeof value === "string" && value.length <= max); }
+function hasForbiddenRawTextFields(value) {
+  return ["caption", "message", "text", "description", "content", "rawText", "rawBody", "html"].some((field) => Object.hasOwn(value || {}, field));
+}
 function duplicates(items, keyFn) {
   const counts = new Map();
   for (const item of items) {
@@ -148,7 +157,8 @@ for (const signal of feedSignals) {
   if (!restaurantIds.has(signal.restaurantId) || !validUrl(signal.postUrl) || !validUrl(signal.feedUrl) || oembedFeed(signal.feedUrl) || !validDate(signal.observedAt) || !hasSignalMatches(signal.signalMatches) || signal.sourceKind !== "official_feed" || signal.associationBasis !== "unique_feed_link_from_official_website") {
     failures.push({ type: "invalid_website_feed_signal", restaurantId: signal.restaurantId, postUrl: signal.postUrl });
   }
-  if (Object.hasOwn(signal, "description") || Object.hasOwn(signal, "summary") || Object.hasOwn(signal, "content")) failures.push({ type: "website_feed_raw_body_retained", restaurantId: signal.restaurantId, postUrl: signal.postUrl });
+  if (hasForbiddenRawTextFields(signal)) failures.push({ type: "website_feed_raw_body_retained", restaurantId: signal.restaurantId, postUrl: signal.postUrl });
+  if (!boundedText(signal.excerpt)) failures.push({ type: "website_feed_excerpt_too_long", restaurantId: signal.restaurantId, postUrl: signal.postUrl });
 }
 
 const duplicateFeedPosts = duplicates(feedPosts, (post) => `${post.restaurantId}|${post.postUrl}`);
@@ -159,7 +169,8 @@ for (const post of feedPosts) {
   }
   if (post.mediaUrl && !validUrl(post.mediaUrl)) failures.push({ type: "invalid_website_feed_media", restaurantId: post.restaurantId, mediaUrl: post.mediaUrl });
   if (excludedFeedUrls.has(post.feedUrl)) failures.push({ type: "reviewed_excluded_feed_post_published", restaurantId: post.restaurantId, feedUrl: post.feedUrl });
-  if (Object.hasOwn(post, "description") || Object.hasOwn(post, "summary") || Object.hasOwn(post, "content")) failures.push({ type: "website_feed_raw_body_retained", restaurantId: post.restaurantId, postUrl: post.postUrl });
+  if (hasForbiddenRawTextFields(post)) failures.push({ type: "website_feed_raw_body_retained", restaurantId: post.restaurantId, postUrl: post.postUrl });
+  if (!boundedText(post.excerpt)) failures.push({ type: "website_feed_excerpt_too_long", restaurantId: post.restaurantId, postUrl: post.postUrl });
 }
 
 const duplicateSocialSignals = duplicates(socialSignals, (signal) => `${signal.platform}|${signal.restaurantId}|${signal.postId}`);
@@ -168,13 +179,42 @@ for (const signal of socialSignals) {
   if (!restaurantIds.has(signal.restaurantId) || !["facebook", "instagram"].includes(signal.platform) || !validUrl(signal.profileUrl) || !validUrl(signal.postUrl) || !validDate(signal.publishedAt) || !validDate(signal.observedAt) || !hasSignalMatches(signal.signalMatches) || signal.reviewState !== "api_observed" || !String(signal.sourceKind || "").startsWith("meta_graph_api") || signal.associationBasis !== "unique_profile_link_from_official_website") {
     failures.push({ type: "invalid_social_signal", restaurantId: signal.restaurantId, platform: signal.platform, postId: signal.postId });
   }
-  if (Object.hasOwn(signal, "caption") || Object.hasOwn(signal, "message") || Object.hasOwn(signal, "text")) failures.push({ type: "social_raw_post_text_retained", restaurantId: signal.restaurantId, platform: signal.platform, postId: signal.postId });
+  if (hasForbiddenRawTextFields(signal)) failures.push({ type: "social_raw_post_text_retained", restaurantId: signal.restaurantId, platform: signal.platform, postId: signal.postId });
+  if (!boundedText(signal.summary)) failures.push({ type: "social_summary_too_long", restaurantId: signal.restaurantId, platform: signal.platform, postId: signal.postId });
+}
+
+const duplicateSocialPosts = duplicates(socialPosts, (post) => `${post.platform}|${post.restaurantId}|${post.postId || post.postUrl}`);
+if (duplicateSocialPosts.length) failures.push({ type: "duplicate_social_posts", values: duplicateSocialPosts.slice(0, 30) });
+for (const post of socialPosts) {
+  if (!restaurantIds.has(post.restaurantId) || !["facebook", "instagram"].includes(post.platform) || !validUrl(post.profileUrl) || !validUrl(post.postUrl) || !validDate(post.publishedAt) || !validDate(post.observedAt) || post.reviewState !== "api_observed" || !String(post.sourceKind || "").startsWith("meta_graph_api") || post.associationBasis !== "unique_profile_link_from_official_website") {
+    failures.push({ type: "invalid_social_post", restaurantId: post.restaurantId, platform: post.platform, postId: post.postId });
+  }
+  if (post.mediaUrl && !validUrl(post.mediaUrl)) failures.push({ type: "invalid_social_post_media", restaurantId: post.restaurantId, mediaUrl: post.mediaUrl });
+  if (post.thumbnailUrl && !validUrl(post.thumbnailUrl)) failures.push({ type: "invalid_social_post_thumbnail", restaurantId: post.restaurantId, thumbnailUrl: post.thumbnailUrl });
+  if (hasForbiddenRawTextFields(post)) failures.push({ type: "social_raw_post_text_retained", restaurantId: post.restaurantId, platform: post.platform, postId: post.postId });
+  if (!boundedText(post.summary)) failures.push({ type: "social_summary_too_long", restaurantId: post.restaurantId, platform: post.platform, postId: post.postId });
+}
+
+const duplicateRecentPosts = duplicates(recentPosts, (post) => post.id);
+if (duplicateRecentPosts.length) failures.push({ type: "duplicate_recent_social_posts", values: duplicateRecentPosts.slice(0, 30) });
+for (const post of recentPosts) {
+  const categories = Array.isArray(post.categories) ? post.categories : [];
+  const categoryIds = categories.map((category) => category.id);
+  if (!post.id || !restaurantIds.has(post.restaurantId) || !["website_feed", "facebook", "instagram"].includes(post.platform) || !["feed", "social_api"].includes(post.sourceFamily) || !validUrl(post.postUrl) || !validDate(post.observedAt) || !String(post.title || "").trim() || !String(post.summary || "").trim() || !allowedRecentCategories.has(post.primaryCategory) || !categoryIds.every((id) => allowedRecentCategories.has(id))) {
+    failures.push({ type: "invalid_recent_social_post", id: post.id, restaurantId: post.restaurantId, postUrl: post.postUrl });
+  }
+  if (post.publishedAt && !validDate(post.publishedAt)) failures.push({ type: "invalid_recent_social_post_date", id: post.id, publishedAt: post.publishedAt });
+  if (post.mediaUrl && !validUrl(post.mediaUrl)) failures.push({ type: "invalid_recent_social_post_media", id: post.id, mediaUrl: post.mediaUrl });
+  if (post.thumbnailUrl && !validUrl(post.thumbnailUrl)) failures.push({ type: "invalid_recent_social_post_thumbnail", id: post.id, thumbnailUrl: post.thumbnailUrl });
+  if (hasForbiddenRawTextFields(post)) failures.push({ type: "recent_social_raw_text_retained", id: post.id });
+  if (!boundedText(post.summary, Number(recentPayload.summaryLimit || 700))) failures.push({ type: "recent_social_summary_too_long", id: post.id });
 }
 
 if (socialPayload.credentialState?.facebook === "missing") warnings.push({ type: "facebook_api_credentials_missing" });
 if (socialPayload.credentialState?.instagram === "missing") warnings.push({ type: "instagram_api_credentials_missing" });
 if ((socialPayload.sharedProfileAssociationsSkipped || 0) > 0) warnings.push({ type: "shared_brand_social_profiles_excluded", count: socialPayload.sharedProfileAssociationsSkipped });
 if ((feedPayload.sharedFeedUrlsSkipped || 0) > 0) warnings.push({ type: "shared_brand_feeds_excluded", count: feedPayload.sharedFeedUrlsSkipped });
+if (recentPosts.length === 0) warnings.push({ type: "recent_social_post_records_empty" });
 
 const platformCounts = {};
 const linkHubCounts = {};
@@ -188,6 +228,12 @@ for (const record of records) {
 }
 const relatedKindCounts = {};
 for (const record of records) for (const link of record.relatedLinks || []) relatedKindCounts[link.kind] = (relatedKindCounts[link.kind] || 0) + 1;
+const recentCategoryCounts = {};
+const recentPlatformCounts = {};
+for (const post of recentPosts) {
+  recentCategoryCounts[post.primaryCategory] = (recentCategoryCounts[post.primaryCategory] || 0) + 1;
+  recentPlatformCounts[post.platform] = (recentPlatformCounts[post.platform] || 0) + 1;
+}
 const report = {
   generatedAt: new Date().toISOString(),
   socialPlatformRegistryVersion: socialRegistry.version,
@@ -208,9 +254,18 @@ const report = {
     websiteFeedPosts: feedPosts.length,
     uniqueRestaurantSocialProfiles: socialPayload.uniqueRestaurantProfiles ?? null,
     sharedProfileAssociationsSkipped: socialPayload.sharedProfileAssociationsSkipped ?? 0,
-    socialSignals: socialSignals.length
+    socialSignals: socialSignals.length,
+    socialPosts: socialPosts.length,
+    recentSocialPosts: recentPosts.length,
+    recentSocialPostCategories: recentCategoryCounts,
+    recentSocialPostPlatforms: recentPlatformCounts
   },
   credentialState: socialPayload.credentialState || null,
+  recentPostState: {
+    generatedAt: recentPayload.generatedAt || null,
+    lookbackDays: recentPayload.lookbackDays || null,
+    sourceState: recentPayload.sourceState || null
+  },
   failures,
   warnings
 };
