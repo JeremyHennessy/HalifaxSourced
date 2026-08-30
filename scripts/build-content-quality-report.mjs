@@ -134,6 +134,7 @@ const report = {
 await mkdir(new URL("../data/build", import.meta.url), { recursive: true });
 await mkdir(new URL("../docs", import.meta.url), { recursive: true });
 await writeFile(new URL("../data/build/content-quality-report.json", import.meta.url), JSON.stringify(report, null, 2) + "\n");
+await writeFile(new URL("../data/content-quality-report.js", import.meta.url), `window.HALIFAX_CONTENT_QUALITY_REPORT = ${JSON.stringify(report, null, 2)};\n`);
 const lines = [
   "# Halifax Sourced content quality report", "", `Generated: ${report.generatedAt}`, "",
   "## Summary", "",

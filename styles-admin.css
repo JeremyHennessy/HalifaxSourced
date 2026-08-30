@@ -334,3 +334,40 @@
   .admin-candidate-grid { grid-template-columns: 1fr; }
   .admin-gap-list article { grid-template-columns: 1fr; align-items: start; }
 }
+
+.admin-social-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.social-post-review-card .admin-candidate-image {
+  aspect-ratio: 16 / 9;
+}
+
+.place-review-list article {
+  grid-template-columns: minmax(0, 1fr) auto auto auto auto auto;
+}
+
+.place-review-list button {
+  min-height: 34px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: #fff;
+  color: var(--navy-900);
+  font-size: 12px;
+  font-weight: 900;
+  padding: 0 10px;
+}
+
+.place-review-list small {
+  display: block;
+  color: var(--muted);
+  font-size: 11px;
+  margin-top: 4px;
+}
+
+@media (max-width: 920px) {
+  .admin-social-grid { grid-template-columns: 1fr; }
+  .place-review-list article { grid-template-columns: 1fr; align-items: start; }
+}

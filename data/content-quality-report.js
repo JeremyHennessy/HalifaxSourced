@@ -1,4 +1,4 @@
-{
+window.HALIFAX_CONTENT_QUALITY_REPORT = {
   "version": 2,
   "generatedAt": "2026-08-30T19:39:37.558Z",
   "coverageReportGeneratedAt": "2026-08-30T19:39:29.208Z",
@@ -6435,4 +6435,4 @@
     "Discover Halifax event/place ingestion requires permission/licensed access or another authorized reusable interface.",
     "Media coverage remains provenance-gated; missing approved rights are not treated as permission to copy images."
   ]
-}
+};
