@@ -383,6 +383,8 @@ function filteredRestaurants(options = {}) {
     if (feature === "events" && !restaurant.hasEvent) return false;
     if (feature === "patio" && !restaurant.hasPatio) return false;
     if (feature === "opening" && !restaurant.hasOpening) return false;
+    if (feature === "social" && !restaurant.hasSocial) return false;
+    if (feature === "images" && !permittedImageFor(restaurant)) return false;
     if (feature === "saved" && !state.saved.has(restaurant.id)) return false;
     return true;
   });
@@ -413,6 +415,10 @@ function renderRoute() {
   const current = route();
   updateNav(current.name);
   if (current.params.has("q")) state.query = current.params.get("q") || "";
+  if (current.params.has("cuisine")) state.cuisine = current.params.get("cuisine") || "all";
+  if (current.params.has("neighbourhood")) state.neighbourhood = current.params.get("neighbourhood") || "all";
+  if (current.params.has("feature")) state.feature = current.params.get("feature") || "all";
+  if (current.params.has("sort")) state.sort = current.params.get("sort") || "recommended";
   globalSearch.value = state.query;
 
   switch (current.name) {

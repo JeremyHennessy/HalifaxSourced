@@ -128,6 +128,37 @@ function extractMetaImages(html, baseUrl) {
   }
   return images.filter((image, index, all) => all.findIndex((item) => item.url === image.url) === index).slice(0, 6);
 }
+function imageUrlFromSrcset(value) {
+  const first = String(value || "").split(",").map((part) => part.trim()).find(Boolean);
+  return first ? first.split(/\s+/)[0] : null;
+}
+function attrValue(tag, attr) {
+  return tag.match(new RegExp(`\\b${attr}=["']([^"']+)["']`, "i"))?.[1] || null;
+}
+function numericAttr(tag, attr) {
+  const value = Number(attrValue(tag, attr));
+  return Number.isFinite(value) ? value : null;
+}
+function extractHtmlContentImages(html, baseUrl) {
+  const images = [];
+  const source = String(html ?? "");
+  for (const match of source.matchAll(/<img\b[^>]*>/gi)) {
+    const tag = match[0];
+    const rawUrl = attrValue(tag, "src") || attrValue(tag, "data-src") || attrValue(tag, "data-lazy-src") || imageUrlFromSrcset(attrValue(tag, "srcset") || attrValue(tag, "data-srcset"));
+    const url = usableImageUrl(rawUrl, baseUrl);
+    if (!url) continue;
+    const alt = htmlDecode(attrValue(tag, "alt") || attrValue(tag, "title") || "");
+    images.push({ url, extractionMethod: "html_img_content", alt, width: numericAttr(tag, "width"), height: numericAttr(tag, "height") });
+  }
+  for (const match of source.matchAll(/url\(["']?([^"')]+)["']?\)/gi)) {
+    const url = usableImageUrl(match[1], baseUrl);
+    if (url) images.push({ url, extractionMethod: "css_background_image" });
+  }
+  return images
+    .filter((image) => !/data:image|\.svg(?:\?|$)|\.ico(?:\?|$)/i.test(image.url))
+    .filter((image, index, all) => all.findIndex((item) => item.url === image.url) === index)
+    .slice(0, 18);
+}
 function approvedCandidate(record, restaurantName) {
   return {
     restaurantId: record.restaurantId,
@@ -181,6 +212,8 @@ function pageCandidate(restaurant, pageUrl, image) {
     pageUrl,
     sourceKind: "official_page_thumbnail_candidate",
     extractionMethod: image.extractionMethod,
+    width: image.width || null,
+    height: image.height || null,
     reviewState: "candidate_review",
     rightsStatus: "requires_rights_review",
     permission: null,
@@ -207,6 +240,8 @@ function normalizeCandidate(candidate) {
     platform: candidate.platform || null,
     sourceKind: candidate.sourceKind,
     extractionMethod: candidate.extractionMethod,
+    width: candidate.width || null,
+    height: candidate.height || null,
     reviewState: candidate.reviewState,
     rightsStatus: candidate.rightsStatus,
     permission: candidate.permission || null,
@@ -280,7 +315,7 @@ if (fetchOfficialPages && pageLimit > 0) {
         const response = await fetch(pageUrl, { headers: { "User-Agent": userAgent, Accept: "text/html,application/xhtml+xml;q=0.9,*/*;q=0.4" }, redirect: "follow", signal: AbortSignal.timeout(timeoutMs) });
         if (!response.ok) { failures.push({ restaurantId: restaurant.id, pageUrl, reason: `http_${response.status}` }); continue; }
         const html = await response.text();
-        for (const image of extractMetaImages(html, response.url || pageUrl)) candidates.push(pageCandidate(restaurant, response.url || pageUrl, image));
+        for (const image of [...extractMetaImages(html, response.url || pageUrl), ...extractHtmlContentImages(html, response.url || pageUrl)]) candidates.push(pageCandidate(restaurant, response.url || pageUrl, image));
       } catch (error) {
         failures.push({ restaurantId: restaurant.id, pageUrl, reason: error.name === "TimeoutError" ? "timeout" : error.message });
       }

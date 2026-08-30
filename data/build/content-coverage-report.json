@@ -1,8 +1,8 @@
 {
   "version": 1,
-  "generatedAt": "2026-08-30T17:01:45.035Z",
-  "sourceCommitSha": "c9b448f52f7569ff9e4622729f79d9a617a18a59",
-  "baselineCommitHint": "c9b448f52f7569ff9e4622729f79d9a617a18a59",
+  "generatedAt": "2026-08-30T19:39:29.208Z",
+  "sourceCommitSha": "e35e3918dbd4f6692797c382b498ff628ad07d03",
+  "baselineCommitHint": "e35e3918dbd4f6692797c382b498ff628ad07d03",
   "definitions": {
     "canonicalPlaces": "Current user-facing merge of catalog restaurants plus reviewed discovery records, matching the app's existing name-based discovery merge behavior.",
     "verifiedOfficialWebsite": "Official-site fetch returned a successful HTTP status or the first-party discovery layer successfully fetched the restaurant-owned site.",
@@ -14,9 +14,7 @@
     "duplicateEventCount": "Additional current event records sharing normalized title, local date, and normalized venue/address key.",
     "canonicalRestaurantsWithStructuredUpcomingEvents": "Distinct canonical restaurant IDs that have one or more upcoming structured event records. This is a place count.",
     "upcomingStructuredRestaurantEventRecords": "Individual upcoming structured restaurant event records, including multiple dated events for the same restaurant. This is an event count.",
-    "lifecycleStatus": "Reviewed restaurant operating state. Inactive records remain addressable as archived details but are excluded from active discovery, menus, specials and maps.",
-    "structuredFactReconciliation": "Phone, hours, menu, reservation, ordering, patio and accessibility coverage includes accepted restaurant-owned structured facts in addition to the original baseline layers.",
-    "structuredSpecialReconciliation": "Special coverage includes normalized source-backed structured specials. Only records with current verification inside the configured freshness window increase verified-current special coverage."
+    "lifecycleStatus": "Reviewed restaurant operating state. Inactive records remain addressable as archived details but are excluded from active discovery, menus, specials and maps."
   },
   "restaurantCoverage": {
     "totalCanonicalPlaces": 749,
@@ -57,8 +55,8 @@
       "bento": 0
     },
     "withLinkHub": 0,
-    "withPhone": 276,
-    "withStructuredOrSourceHours": 244,
+    "withPhone": 264,
+    "withStructuredOrSourceHours": 238,
     "withCoordinates": 738,
     "withNeighbourhood": 749,
     "withCuisineClassification": 749,
@@ -83,30 +81,6 @@
     "staleRestaurantRecords": 0,
     "currentResolutionRisks": {
       "discoveryNameOnlyMerges": 2
-    },
-    "structuredFactLayer": {
-      "generatedAt": "2026-08-28T22:15:48.512Z",
-      "checkedPlaces": 210,
-      "sourceFailures": 3,
-      "records": 162,
-      "hours": 13,
-      "phone": 70,
-      "email": 7,
-      "address": 27,
-      "features": 127,
-      "menus": 129,
-      "reservations": 49,
-      "ordering": 74
-    },
-    "structuredSpecialLayer": {
-      "generatedAt": "2026-08-30T17:01:01.500Z",
-      "count": 68,
-      "verifiedCurrent": 49,
-      "recurringVerify": 9,
-      "sourceLeads": 7,
-      "stale": 3,
-      "expired": 0,
-      "orphanSourceCount": 0
     }
   },
   "restaurantCoveragePercent": {
@@ -122,15 +96,14 @@
     "events": 6.3,
     "structuredUpcomingEvents": 0.3,
     "social": 19.5,
-    "phone": 36.8,
-    "hours": 32.6,
+    "phone": 35.2,
+    "hours": 31.8,
     "coordinates": 98.5,
     "neighbourhood": 100,
     "cuisine": 100,
     "accessibility": 30.6,
     "patio": 5.3,
-    "media": 4.9,
-    "linkHub": 0
+    "media": 4.9
   },
   "socialAudit": {
     "placesWithSocial": 146,
@@ -1164,9 +1137,7 @@
           "neighborhood": "Downtown"
         }
       ]
-    },
-    "reconciledFromAcceptedStructuredLayers": true,
-    "reconciledAt": "2026-08-30T17:01:45.034Z"
+    }
   },
   "eventCoverage": {
     "currentCityEvents": 180,
@@ -1216,7 +1187,7 @@
     "canonicalRestaurantsWithStructuredUpcomingEvents": 2,
     "upcomingStructuredRestaurantEventRecords": 14,
     "expiredStructuredRestaurantEvents": 5,
-    "next7Days": 15,
+    "next7Days": 16,
     "next30Days": 48
   },
   "discoveryCoverage": {
@@ -1234,8 +1205,7 @@
     "socialApis": 3,
     "cityEventSources": 0,
     "openingWatchSources": 0,
-    "restaurantDirectorySources": 0,
-    "structuredPlaceFacts": 3
+    "restaurantDirectorySources": 0
   },
   "credentials": {
     "facebook": "missing",
