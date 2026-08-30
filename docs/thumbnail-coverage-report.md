@@ -1,6 +1,6 @@
 # Halifax Sourced thumbnail coverage report
 
-Generated: 2026-08-30T16:10:05.869Z
+Generated: 2026-08-30T16:33:33.935Z
 
 This report tracks source-backed image leads for restaurant thumbnails. It separates production-approved media from candidates that still need review, attribution, or permission before they can become default restaurant card imagery.
 
@@ -13,7 +13,7 @@ This report tracks source-backed image leads for restaurant thumbnails. It separ
 | Restaurants with any thumbnail candidate | 104 | 14.1% |
 | Restaurants missing approved thumbnail | 717 | 97% |
 | Restaurants missing any candidate | 635 | 85.9% |
-| Promotion queue | 82 | 11.1% |
+| Promotion queue | 37 | 5% |
 | Discovery queue | 635 | 85.9% |
 
 Total thumbnail candidates: **357**. Review-needed candidates: **335**. Fetch failures in the latest run: **58**.
@@ -40,50 +40,47 @@ Total thumbnail candidates: **357**. Review-needed candidates: **335**. Fetch fa
 
 ## Promotion queue
 
-Restaurants below are missing approved thumbnails but have source-backed candidates ready for review.
+Restaurants below are missing approved thumbnails but have source-backed candidates that passed the metadata quality screen and are ready for visual review.
 
 | Restaurant | Neighbourhood | Candidates | Best source | Website |
 | --- | --- | ---: | --- | --- |
-| Great Wall Restaurant | Downtown | 9 | official_page_thumbnail_candidate | http://www.thegreatwall.ca/ |
-| Mexi's | Armdale / Fairview | 9 | official_page_thumbnail_candidate | https://www.mexicalirosas.com/halifax/ |
-| Le Bistro by Liz | Downtown | 8 | official_page_thumbnail_candidate | https://www.lebistrohalifax.com |
-| Boston Pizza | Dartmouth | 7 | official_page_thumbnail_candidate | https://bostonpizza.com/en/index.html |
-| Brawta Jamaican Jerk Joint | Downtown | 7 | official_page_thumbnail_candidate | https://brawtajerk.ca/ |
-| IHOP | Bedford | 7 | official_page_thumbnail_candidate | https://restaurants.ihop.com/en-ca/ns/bedford/breakfast-80-hogan-court-4023 |
 | Barrios Kitchen & Bar | Downtown | 6 | official_page_thumbnail_candidate | https://www.barrioshfx.ca/ |
-| Charm School | West End | 6 | official_page_thumbnail_candidate | https://unfuckingfiltered.com/ |
-| Darrell's | Downtown | 6 | official_page_thumbnail_candidate | https://darrellsrestaurants.com |
-| Good Robot Brewing Company | West End | 6 | official_page_thumbnail_candidate | https://goodrobotbrewing.ca/ |
-| Kanpai Izakaya | Downtown | 6 | official_page_thumbnail_candidate | https://kanpaiizakaya.com |
-| Lockside Canteen | Dartmouth | 6 | official_page_thumbnail_candidate | https://lemon.dog/ |
-| Masala Delight | Downtown | 6 | official_page_thumbnail_candidate | https://masaladelight.com |
-| aFrite | Dartmouth | 5 | official_page_thumbnail_candidate | https://afrite.ca/ |
-| Food Court of Spring Garden Place | Downtown | 5 | official_page_thumbnail_candidate | https://www.starbucks.ca/store-locator/store/4085-255631/5640-spring-garden-road-5640-spring-garden-road-301-halifax-ns-b-3-j-3-m-7 |
+| Le Bistro by Liz | Downtown | 6 | official_page_thumbnail_candidate | https://www.lebistrohalifax.com |
+| Kanpai Izakaya | Downtown | 5 | official_page_thumbnail_candidate | https://kanpaiizakaya.com |
 | Peter's Pizzeria | Downtown | 5 | official_page_thumbnail_candidate | https://www.peterspizzeriahfx.com/ |
-| Antojo Tacos + Tequila | Downtown | 4 | official_page_thumbnail_candidate | https://antojo.ca |
-| Cora | Portland Estates | 4 | official_page_thumbnail_candidate | https://www.chezcora.com/en/ |
-| Donnini's Pizza | Halifax Peninsula | 4 | official_page_thumbnail_candidate | https://donninispizza.com/ |
-| Gingerbread Haus Bakery | Downtown | 4 | official_page_thumbnail_candidate | https://www.gingerbreadhausbakery.com/ |
 | Jean's Chinese Restaurant | South Woodside | 4 | official_page_thumbnail_candidate | https://www.jeansrestaurant.ca/ |
-| King of Donair | Shannon Park | 4 | official_page_thumbnail_candidate | https://www.kingofdonair.ca/ |
-| Mezza Lebanese Kitchen | Armdale / Fairview | 4 | official_page_thumbnail_candidate | https://www.mezzalebanesekitchen.com/ |
-| Osmow's | Armdale / Fairview | 4 | official_page_thumbnail_candidate | https://osmows.com/shawarma-halifax/ |
-| 2 Crows Brewing | Downtown | 3 | official_page_thumbnail_candidate | https://www.2crowsbrewing.com/ |
-| Almonak | Bloomfield | 3 | official_page_thumbnail_candidate | https://www.almonak.com/ |
-| Bluenose II | Downtown | 3 | official_page_thumbnail_candidate | https://www.bluenoseii.ca/ |
 | Cheese Curds Burgers | Woodside Ocean Industrial Park | 3 | official_page_thumbnail_candidate | https://www.cheesecurdsburgers.com/ |
 | Cheese Curds Gourmet Burgers and Poutinerie/Habaneros Modern Taco Bar | Armdale / Fairview | 3 | official_page_thumbnail_candidate | https://www.cheesecurdsburgers.com/ |
-| Chinatown | Armdale / Fairview | 3 | official_page_thumbnail_candidate | https://www.chinatownhalifax.com/ |
 | Chkn Chop | West End | 3 | official_page_thumbnail_candidate | https://www.chknchop.com/ |
-| Cora | Downtown | 3 | official_page_thumbnail_candidate | https://www.chezcora.com/en/breakfast-lunch-restaurants/cora-halifax-downtown/ |
-| Downtown Pizza | Dartmouth | 3 | official_page_thumbnail_candidate | https://downtownpizza.ca/ |
-| Durty Nelly's Irish Pub | Downtown | 3 | official_page_thumbnail_candidate | https://durtynellys.ca/ |
-| Ela Greek Taverna | Dartmouth | 3 | official_page_thumbnail_candidate | https://elagreektaverna.com/ |
-| ela! Greek Taverna | Bayers Lake Business Park | 3 | official_page_thumbnail_candidate | https://www.elagreektaverna.com/ |
-| Hamachi Kita | Hydostone | 3 | official_page_thumbnail_candidate | https://www.hamachikita.com |
-| Jukai | Downtown | 3 | official_page_thumbnail_candidate | https://jukairestaurant.com |
-| JUKAI Japanese & Thai | Dartmouth | 3 | official_page_thumbnail_candidate | https://www.jukairestaurant.com |
+| Great Wall Restaurant | Downtown | 3 | official_page_thumbnail_candidate | http://www.thegreatwall.ca/ |
 | Krave Burger | Downtown | 3 | official_page_thumbnail_candidate | http://kraveburger.com |
+| Krave Burger | Dartmouth | 3 | official_page_thumbnail_candidate | http://kraveburger.com |
+| Mezza Lebanese Kitchen | Armdale / Fairview | 3 | official_page_thumbnail_candidate | https://www.mezzalebanesekitchen.com/ |
+| Osmow's | Armdale / Fairview | 3 | official_page_thumbnail_candidate | https://osmows.com/shawarma-halifax/ |
+| Cora | Portland Estates | 2 | official_page_thumbnail_candidate | https://www.chezcora.com/en/ |
+| IHOP | Bedford | 2 | official_page_thumbnail_candidate | https://restaurants.ihop.com/en-ca/ns/bedford/breakfast-80-hogan-court-4023 |
+| India Paradise | Downtown | 2 | official_page_thumbnail_candidate | https://www.indiaparadise.ca/ |
+| Lockside Canteen | Dartmouth | 2 | official_page_thumbnail_candidate | https://lemon.dog/ |
+| Papa John's | Portland Estates | 2 | official_page_thumbnail_candidate | https://locations.papajohns.com/canada/ns/b2w-6c4/dartmouth/644-portland-street |
+| Sushi Shige | Bloomfield | 2 | official_feed_media | https://www.shige.ca |
+| 2 Crows Brewing | Downtown | 1 | official_page_thumbnail_candidate | https://www.2crowsbrewing.com/ |
+| aFrite | Dartmouth | 1 | official_page_thumbnail_candidate | https://afrite.ca/ |
+| Almonak | Bloomfield | 1 | official_page_thumbnail_candidate | https://www.almonak.com/ |
+| Antojo Tacos + Tequila | Downtown | 1 | official_page_thumbnail_candidate | https://antojo.ca |
+| Board Room Game Cafe | Downtown | 1 | official_page_thumbnail_candidate | http://boardroomgames.ca/ |
+| Brawta Jamaican Jerk Joint | Downtown | 1 | official_page_thumbnail_candidate | https://brawtajerk.ca/ |
+| Canton Garden | Clayton Park West | 1 | official_page_thumbnail_candidate | https://www.cantongardenhalifax.com/ |
+| Cora | Downtown | 1 | official_page_thumbnail_candidate | https://www.chezcora.com/en/breakfast-lunch-restaurants/cora-halifax-downtown/ |
+| Darrell's | Downtown | 1 | official_page_thumbnail_candidate | https://darrellsrestaurants.com |
+| Dooly's | Kempt Road Commercial District | 1 | official_page_thumbnail_candidate | https://www.doolys.ca |
+| Hamachi Kita | Hydostone | 1 | official_page_thumbnail_candidate | https://www.hamachikita.com |
+| Jacky's Cafe | Downtown | 1 | official_page_thumbnail_candidate | https://jackyscafehalifax.com/ |
+| King of Donair | Shannon Park | 1 | official_page_thumbnail_candidate | https://www.kingofdonair.ca/ |
+| Marigold Kitchen | Downtown | 1 | official_page_thumbnail_candidate | https://marigoldkitchen.ca |
+| May Garden | Dartmouth | 1 | official_page_thumbnail_candidate | https://maygarden.ca |
+| Mirchi Tandoor | Downtown | 1 | official_page_thumbnail_candidate | https://mirchitandoor.com/ |
+| Morris East | Downtown | 1 | official_page_thumbnail_candidate | https://morriseast.com/ |
+| Mother's Pizza | Bloomfield | 1 | official_page_thumbnail_candidate | https://motherspizzahalifax.ca/ |
 
 ## Discovery queue
 

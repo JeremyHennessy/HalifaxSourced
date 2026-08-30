@@ -45,6 +45,42 @@ function safeAssetPath(value) {
 function safeThumbnailUrl(value, base) {
   return safeAssetPath(value) || safeUrl(value, base);
 }
+function thumbnailQualityFlags(candidate) {
+  const flags = [];
+  const thumbnailUrl = String(candidate?.thumbnailUrl || candidate?.url || "").trim();
+  const sourceUrl = String(candidate?.sourceUrl || "").trim();
+  const lower = thumbnailUrl.toLowerCase();
+  const sourceLower = sourceUrl.toLowerCase();
+  const pathname = (() => { try { return new URL(thumbnailUrl).pathname.toLowerCase(); } catch { return lower; } })();
+  const filename = pathname.split("/").pop() || pathname;
+  if (thumbnailUrl.startsWith("http://")) flags.push("insecure_thumbnail_url");
+  if (/favicon|apple-touch-icon|touch-icon|site-icon|sprite|avatar|badge|pwa-icon/.test(lower) || /(?:^|[-_.])(icon|apple)(?:[-_.0-9]|$)/.test(filename)) flags.push("icon_or_favicon");
+  if (/placeholder|blank|default-image/.test(lower)) flags.push("placeholder_image");
+  if (/(?:^|[-_.])logo(?:[-_.0-9]|$)|cropped-[^/]{0,80}32x32|32x32|57x57|60x60|72x72|114x114|120x120|144x144|180x180|192x192/.test(filename)) flags.push("logo_candidate");
+  if (/social-sharing|socialshare|twitter-card|ogimage|og-image|(?:^|[-_.])social(?:[-_.]|$)/.test(filename)) flags.push("generic_social_card");
+  if (/stock|franchis|brand-refresh|summary_square/.test(lower)) flags.push("generic_brand_or_stock_image");
+  if (/facebook\.com|fbcdn\.net|scontent-/.test(lower) || /facebook\.com|fbcdn\.net|scontent-/.test(sourceLower)) flags.push("social_profile_image");
+  if (safeUrl(thumbnailUrl) && safeUrl(sourceUrl) && safeUrl(thumbnailUrl) === safeUrl(sourceUrl)) flags.push("thumbnail_is_page_url");
+  return [...new Set(flags)];
+}
+function thumbnailReviewPriority(candidate) {
+  if (candidate?.reviewState === "approved" && candidate?.rightsStatus === "production_approved") return 100;
+  const flags = thumbnailQualityFlags(candidate);
+  let score = 50;
+  if (!String(candidate?.thumbnailUrl || "").startsWith("https://")) score -= 4;
+  if (candidate?.sourceKind === "official_feed_media") score += 8;
+  if (candidate?.sourceKind === "official_page_thumbnail_candidate") score += 4;
+  if (candidate?.confidence === "same_host_official_page_image") score += 4;
+  if (flags.includes("generic_social_card")) score -= 8;
+  for (const flag of flags) {
+    if (["icon_or_favicon", "placeholder_image", "logo_candidate", "social_profile_image", "thumbnail_is_page_url", "generic_brand_or_stock_image"].includes(flag)) score -= 35;
+  }
+  return Math.max(0, score);
+}
+function promotionReviewState(candidate) {
+  if (candidate?.reviewState === "approved" && candidate?.rightsStatus === "production_approved") return "approved";
+  return thumbnailReviewPriority(candidate) >= 45 ? "needs_visual_review" : "low_quality_metadata";
+}
 function host(value) {
   try { return new URL(value).hostname.toLowerCase().replace(/^www\./, "").replace(/^m\./, ""); }
   catch { return ""; }
@@ -157,7 +193,7 @@ function normalizeCandidate(candidate) {
   const thumbnailUrl = safeThumbnailUrl(candidate.thumbnailUrl);
   const sourceUrl = safeUrl(candidate.sourceUrl);
   if (!thumbnailUrl || !sourceUrl) return null;
-  return {
+  const normalized = {
     id: `thumb-${hashId([candidate.restaurantId, thumbnailUrl, candidate.sourceKind])}`,
     restaurantId: candidate.restaurantId,
     restaurantName: candidate.restaurantName || "Unknown restaurant",
@@ -181,6 +217,10 @@ function normalizeCandidate(candidate) {
     category: candidate.category || null,
     eligibleForProduction: candidate.reviewState === "approved" && candidate.rightsStatus === "production_approved"
   };
+  normalized.qualityFlags = thumbnailQualityFlags(normalized);
+  normalized.reviewPriority = thumbnailReviewPriority(normalized);
+  normalized.promotionReviewState = promotionReviewState(normalized);
+  return normalized;
 }
 
 const catalog = await loadJson("../data/build/catalog.json", { restaurants: [] });
@@ -277,7 +317,7 @@ const output = {
     reviewStateCounts,
     failures: failures.length + (existingThumbnailPayload.failures || []).length
   },
-  candidates: normalized.sort((a, b) => Number(b.eligibleForProduction) - Number(a.eligibleForProduction) || a.restaurantName.localeCompare(b.restaurantName)),
+  candidates: normalized.sort((a, b) => Number(b.eligibleForProduction) - Number(a.eligibleForProduction) || (b.reviewPriority || 0) - (a.reviewPriority || 0) || a.restaurantName.localeCompare(b.restaurantName)),
   missingApproved,
   missingAnyCandidate,
   failures: [...(existingThumbnailPayload.failures || []), ...failures].slice(0, 200)

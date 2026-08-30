@@ -201,6 +201,11 @@
   margin: 0;
 }
 
+.admin-candidate-body .admin-quality-flags {
+  color: #9b650a;
+  font-weight: 800;
+}
+
 .title-badges,
 .admin-candidate-actions {
   display: flex;

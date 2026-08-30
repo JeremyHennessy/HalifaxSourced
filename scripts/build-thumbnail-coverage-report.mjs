@@ -20,6 +20,14 @@ function pct(count, total) {
 function byName(a, b) {
   return String(a.name || a.restaurantName || "").localeCompare(String(b.name || b.restaurantName || ""));
 }
+function thumbnailReviewPriority(candidate) {
+  if (Number.isFinite(Number(candidate?.reviewPriority))) return Number(candidate.reviewPriority);
+  if (candidate?.eligibleForProduction) return 100;
+  return 0;
+}
+function promotionCandidates(candidates = []) {
+  return candidates.filter((candidate) => candidate.eligibleForProduction !== true && thumbnailReviewPriority(candidate) >= 45);
+}
 
 function restaurantSummary(restaurant, candidates = []) {
   const sourceKinds = {};
@@ -94,6 +102,10 @@ const missingAnyCandidate = (Array.isArray(thumbnailPayload.missingAnyCandidate)
   .map((restaurant) => restaurantSummary(restaurant, []))
   .sort(byName);
 const promotionQueue = missingApproved
+  .map((restaurant) => {
+    const candidates = promotionCandidates(candidatesByRestaurant.get(restaurant.restaurantId) || []);
+    return restaurantSummary(restaurant, candidates);
+  })
   .filter((restaurant) => restaurant.candidateCount > 0)
   .sort((a, b) => b.candidateCount - a.candidateCount || byName(a, b));
 const discoveryQueue = missingAnyCandidate;
@@ -105,7 +117,7 @@ const report = {
   definitions: {
     approvedThumbnail: "A thumbnail candidate tied to an exact restaurant ID with approved review state and production-approved rights status.",
     anyThumbnailCandidate: "Any source-backed thumbnail lead for a restaurant, including official feed, Meta API, official page metadata, or already approved media.",
-    promotionQueue: "Restaurants missing an approved thumbnail but having one or more candidate images that can be reviewed for rights and fit.",
+    promotionQueue: "Restaurants missing an approved thumbnail but having one or more quality-screened candidate images that can be visually reviewed for rights and fit.",
     discoveryQueue: "Restaurants with no current thumbnail candidate in the generated source-backed candidate set."
   },
   counts: {
@@ -165,7 +177,7 @@ function queueRows(items) {
   return items.length ? items.slice(0, 40).map((item) => `| ${item.name} | ${item.neighborhood || "Unknown"} | ${item.candidateCount} | ${item.bestCandidate?.sourceKind || "None"} | ${item.website || ""} |`).join("\n") : "| None | n/a | 0 | None | |";
 }
 
-const markdown = `# Halifax Sourced thumbnail coverage report\n\nGenerated: ${report.generatedAt}\n\nThis report tracks source-backed image leads for restaurant thumbnails. It separates production-approved media from candidates that still need review, attribution, or permission before they can become default restaurant card imagery.\n\n## Coverage\n\n| Metric | Count | Coverage |\n| --- | ---: | ---: |\n${metricRow("Catalog restaurants", report.counts.restaurants, report.counts.restaurants)}\n${metricRow("Restaurants with approved thumbnail", report.counts.restaurantsWithApprovedThumbnail)}\n${metricRow("Restaurants with any thumbnail candidate", report.counts.restaurantsWithAnyCandidate)}\n${metricRow("Restaurants missing approved thumbnail", report.counts.restaurantsMissingApprovedThumbnail)}\n${metricRow("Restaurants missing any candidate", report.counts.restaurantsMissingAnyCandidate)}\n${metricRow("Promotion queue", report.counts.promotionQueue)}\n${metricRow("Discovery queue", report.counts.discoveryQueue)}\n\nTotal thumbnail candidates: **${report.counts.candidates}**. Review-needed candidates: **${report.counts.reviewCandidates}**. Fetch failures in the latest run: **${report.counts.fetchFailures}**.\n\n## Candidate source mix\n\n| Source kind | Candidates |\n| --- | ---: |\n${countRows(report.candidateMix.bySourceKind)}\n\n## Review and rights state\n\n| Review state | Candidates |\n| --- | ---: |\n${countRows(report.candidateMix.byReviewState)}\n\n| Rights state | Candidates |\n| --- | ---: |\n${countRows(report.candidateMix.byRightsStatus)}\n\n## Promotion queue\n\nRestaurants below are missing approved thumbnails but have source-backed candidates ready for review.\n\n| Restaurant | Neighbourhood | Candidates | Best source | Website |\n| --- | --- | ---: | --- | --- |\n${queueRows(promotionQueue)}\n\n## Discovery queue\n\nRestaurants below have no thumbnail candidate yet and should be prioritized for official-site metadata, owner-submitted media, or approved public media discovery.\n\n| Restaurant | Neighbourhood | Candidates | Best source | Website |\n| --- | --- | ---: | --- | --- |\n${queueRows(discoveryQueue)}\n\nMachine-readable queues are in \`data/build/thumbnail-coverage-report.json\`.\n`;
+const markdown = `# Halifax Sourced thumbnail coverage report\n\nGenerated: ${report.generatedAt}\n\nThis report tracks source-backed image leads for restaurant thumbnails. It separates production-approved media from candidates that still need review, attribution, or permission before they can become default restaurant card imagery.\n\n## Coverage\n\n| Metric | Count | Coverage |\n| --- | ---: | ---: |\n${metricRow("Catalog restaurants", report.counts.restaurants, report.counts.restaurants)}\n${metricRow("Restaurants with approved thumbnail", report.counts.restaurantsWithApprovedThumbnail)}\n${metricRow("Restaurants with any thumbnail candidate", report.counts.restaurantsWithAnyCandidate)}\n${metricRow("Restaurants missing approved thumbnail", report.counts.restaurantsMissingApprovedThumbnail)}\n${metricRow("Restaurants missing any candidate", report.counts.restaurantsMissingAnyCandidate)}\n${metricRow("Promotion queue", report.counts.promotionQueue)}\n${metricRow("Discovery queue", report.counts.discoveryQueue)}\n\nTotal thumbnail candidates: **${report.counts.candidates}**. Review-needed candidates: **${report.counts.reviewCandidates}**. Fetch failures in the latest run: **${report.counts.fetchFailures}**.\n\n## Candidate source mix\n\n| Source kind | Candidates |\n| --- | ---: |\n${countRows(report.candidateMix.bySourceKind)}\n\n## Review and rights state\n\n| Review state | Candidates |\n| --- | ---: |\n${countRows(report.candidateMix.byReviewState)}\n\n| Rights state | Candidates |\n| --- | ---: |\n${countRows(report.candidateMix.byRightsStatus)}\n\n## Promotion queue\n\nRestaurants below are missing approved thumbnails but have source-backed candidates that passed the metadata quality screen and are ready for visual review.\n\n| Restaurant | Neighbourhood | Candidates | Best source | Website |\n| --- | --- | ---: | --- | --- |\n${queueRows(promotionQueue)}\n\n## Discovery queue\n\nRestaurants below have no thumbnail candidate yet and should be prioritized for official-site metadata, owner-submitted media, or approved public media discovery.\n\n| Restaurant | Neighbourhood | Candidates | Best source | Website |\n| --- | --- | ---: | --- | --- |\n${queueRows(discoveryQueue)}\n\nMachine-readable queues are in \`data/build/thumbnail-coverage-report.json\`.\n`;
 
 await mkdir(new URL("../data/build", import.meta.url), { recursive: true });
 await mkdir(new URL("../artifacts", import.meta.url), { recursive: true });

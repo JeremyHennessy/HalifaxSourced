@@ -22,7 +22,25 @@ function writeThumbnailReviewDecision(id, decision) {
 function thumbnailAssetUrl(value) {
   const raw = String(value || "").trim();
   if (/^(?:\.\/)?assets\/[a-zA-Z0-9._/-]+$/.test(raw)) return raw.startsWith("./") ? raw : `./${raw}`;
+  if (raw.startsWith("http://")) return safeUrl(`https://${raw.slice(7)}`) || safeUrl(raw);
   return safeUrl(raw);
+}
+
+function thumbnailReviewPriority(candidate) {
+  if (Number.isFinite(Number(candidate?.reviewPriority))) return Number(candidate.reviewPriority);
+  if (candidate?.eligibleForProduction) return 100;
+  const url = String(candidate?.thumbnailUrl || "").toLowerCase();
+  let score = 50;
+  if (!url.startsWith("https://")) score -= 4;
+  const pathname = (() => { try { return new URL(candidate?.thumbnailUrl || "").pathname.toLowerCase(); } catch { return url; } })();
+  const filename = pathname.split("/").pop() || pathname;
+  if (/favicon|apple-touch-icon|touch-icon|site-icon|placeholder|blank|logo|pwa-icon|32x32|57x57|60x60|72x72|114x114|120x120|144x144|180x180|192x192|facebook\.com|fbcdn\.net|scontent-|stock|franchis|brand-refresh|summary_square/.test(url) || /(?:^|[-_.])(icon|apple|logo)(?:[-_.0-9]|$)/.test(filename)) score -= 35;
+  if (/social-sharing|socialshare|twitter-card|ogimage|og-image|(?:^|[-_.])social(?:[-_.]|$)/.test(filename)) score -= 8;
+  return Math.max(0, score);
+}
+
+function thumbnailIsPromotionCandidate(candidate) {
+  return !candidate?.eligibleForProduction && thumbnailReviewPriority(candidate) >= 45;
 }
 
 function thumbnailCandidatesPayload() {
@@ -41,13 +59,13 @@ function renderThumbnailAdmin() {
     byRestaurant.set(candidate.restaurantId, list);
   }
   for (const list of byRestaurant.values()) {
-    list.sort((a, b) => Number(b.eligibleForProduction) - Number(a.eligibleForProduction) || String(a.sourceKind || "").localeCompare(String(b.sourceKind || "")));
+    list.sort((a, b) => Number(b.eligibleForProduction) - Number(a.eligibleForProduction) || thumbnailReviewPriority(b) - thumbnailReviewPriority(a) || String(a.sourceKind || "").localeCompare(String(b.sourceKind || "")));
   }
 
   const missingApproved = Array.isArray(payload.missingApproved) ? payload.missingApproved : [];
   const missingAny = Array.isArray(payload.missingAnyCandidate) ? payload.missingAnyCandidate : [];
   const promotionQueue = missingApproved
-    .map((item) => ({ ...item, candidates: byRestaurant.get(item.restaurantId) || [] }))
+    .map((item) => ({ ...item, candidates: (byRestaurant.get(item.restaurantId) || []).filter(thumbnailIsPromotionCandidate) }))
     .filter((item) => item.candidates.length)
     .sort((a, b) => b.candidates.length - a.candidates.length || String(a.name || "").localeCompare(String(b.name || "")));
   const sourceKinds = [...new Set(candidates.map((candidate) => candidate.sourceKind).filter(Boolean))].sort();
@@ -134,7 +152,8 @@ function adminCandidateCard(candidate, decisions, restaurantCandidateCount = nul
       <div class="title-badges"><span>${escapeHtml(sourceKind.replace(/_/g, " "))}</span><span>${escapeHtml(promoted)}</span>${localDecision ? `<span>${escapeHtml(localDecision.replace(/_/g, " "))}</span>` : ""}</div>
       <h2>${escapeHtml(candidate.restaurantName || "Unknown restaurant")}</h2>
       <p>${escapeHtml(candidate.title || candidate.alt || "Thumbnail candidate")}</p>
-      <dl><div><dt>Review</dt><dd>${escapeHtml(reviewState)}</dd></div><div><dt>Rights</dt><dd>${escapeHtml(rightsStatus)}</dd></div><div><dt>Confidence</dt><dd>${escapeHtml(candidate.confidence || "unknown")}</dd></div>${restaurantCandidateCount ? `<div><dt>Candidates</dt><dd>${restaurantCandidateCount}</dd></div>` : ""}</dl>
+      ${candidate.qualityFlags?.length ? `<p class="admin-quality-flags">${candidate.qualityFlags.map((flag) => escapeHtml(String(flag).replace(/_/g, " "))).join(" · ")}</p>` : ""}
+      <dl><div><dt>Review</dt><dd>${escapeHtml(reviewState)}</dd></div><div><dt>Rights</dt><dd>${escapeHtml(rightsStatus)}</dd></div><div><dt>Priority</dt><dd>${thumbnailReviewPriority(candidate)}</dd></div><div><dt>Confidence</dt><dd>${escapeHtml(candidate.confidence || "unknown")}</dd></div>${restaurantCandidateCount ? `<div><dt>Candidates</dt><dd>${restaurantCandidateCount}</dd></div>` : ""}</dl>
       <div class="admin-candidate-actions">
         ${restaurantId ? `<a class="button tertiary" href="#restaurant/${encodeURIComponent(restaurantId)}">Restaurant</a>` : ""}
         ${sourceUrl ? `<a class="button tertiary" href="${escapeHtml(sourceUrl)}" target="_blank" rel="noreferrer">Source</a>` : ""}
