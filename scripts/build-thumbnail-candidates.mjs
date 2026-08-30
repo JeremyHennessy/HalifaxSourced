@@ -11,6 +11,7 @@ const fetchOfficialPages = String(process.env.THUMBNAIL_DISCOVERY_FETCH ?? "0") 
 const userAgent = "HalifaxSourced/0.3 (+https://github.com/JeremyHennessy/HalifaxSourced)";
 const outputJsonPath = new URL("../data/build/thumbnail-candidates.json", import.meta.url);
 const outputScriptPath = new URL("../data/thumbnail-candidates.js", import.meta.url);
+let reviewedThumbnailRejections = new Map();
 
 async function loadJson(path, fallback) {
   try { return JSON.parse(await readFile(new URL(path, import.meta.url), "utf8")); }
@@ -56,11 +57,13 @@ function thumbnailQualityFlags(candidate) {
   if (thumbnailUrl.startsWith("http://")) flags.push("insecure_thumbnail_url");
   if (/favicon|apple-touch-icon|touch-icon|site-icon|sprite|avatar|badge|pwa-icon|pwa-app|logo-default|sitelogo/.test(lower) || /(?:^|[-_.])(icon|apple)(?:[-_.0-9]|$)/.test(filename)) flags.push("icon_or_favicon");
   if (/placeholder|blank|default-image/.test(lower)) flags.push("placeholder_image");
-  if (/(?:^|[-_.+])logo(?:[-_.+0-9]|$)|cropped-[^/]{0,80}32x32|32x32|57x57|60x60|72x72|114x114|120x120|144x144|180x180|192x192/.test(filename)) flags.push("logo_candidate");
+  if (/[^/?#]*logo[^/?#]*\.(?:png|jpe?g|webp)|(?:^|[/\-_.+])logo(?:[/\-_.+0-9]|$)|\/logos?\/|public\/logos?|cropped-[^/]{0,80}32x32|32x32|57x57|60x60|72x72|114x114|120x120|144x144|180x180|192x192|225x225|(?:^|[?&/,_-])w[_=](?:1?\d{1,2}|2[0-4]\d)(?!\d)|(?:^|[?&/,_-])h[_=](?:1?\d{1,2}|2[0-4]\d)(?!\d)/.test(lower)) flags.push("logo_candidate");
   if (/social-sharing|socialshare|socialpreview|twitter-card|ogimage|og-image|(?:^|[-_.])social(?:[-_.]|$)/.test(filename)) flags.push("generic_social_card");
-  if (/stock|franchis|brand-refresh|summary_square|fit=100%2c50|fit=100,50|h1_shape|web\+logo|web-logo/.test(lower)) flags.push("generic_brand_or_stock_image");
+  if (/stock|franchis|brand-refresh|summary_square|artboard|fit=100%2c50|fit=100,50|h1_shape|web\+logo|web-logo/.test(lower)) flags.push("generic_brand_or_stock_image");
   if (/facebook\.com|fbcdn\.net|scontent-/.test(lower) || /facebook\.com|fbcdn\.net|scontent-/.test(sourceLower)) flags.push("social_profile_image");
   if (safeUrl(thumbnailUrl) && safeUrl(sourceUrl) && safeUrl(thumbnailUrl) === safeUrl(sourceUrl)) flags.push("thumbnail_is_page_url");
+  const rejectionKey = `${candidate?.restaurantId || ""}|${thumbnailUrl}`;
+  if (reviewedThumbnailRejections.has(rejectionKey)) flags.push(`reviewed_rejected_${reviewedThumbnailRejections.get(rejectionKey)}`);
   return [...new Set(flags)];
 }
 function thumbnailReviewPriority(candidate) {
@@ -79,7 +82,7 @@ function thumbnailReviewPriority(candidate) {
 }
 function promotionReviewState(candidate) {
   if (candidate?.reviewState === "approved" && candidate?.rightsStatus === "production_approved") return "approved";
-  return thumbnailReviewPriority(candidate) >= 45 ? "needs_visual_review" : "low_quality_metadata";
+  return thumbnailReviewPriority(candidate) >= 45 && thumbnailQualityFlags(candidate).length === 0 ? "needs_visual_review" : "low_quality_metadata";
 }
 function host(value) {
   try { return new URL(value).hostname.toLowerCase().replace(/^www\./, "").replace(/^m\./, ""); }
@@ -229,6 +232,8 @@ const recentPosts = await loadJson("../data/build/recent-social-posts.json", { r
 const feedPayload = await loadJson("../data/build/website-feed-signals.json", { posts: [] });
 const socialPayload = await loadJson("../data/build/social-signals.json", { posts: [] });
 const mediaPayload = await loadWindowScript("data/restaurant-media.js", "HALIFAX_RESTAURANT_MEDIA", { records: [] });
+const rejectionPayload = await loadJson("../data/thumbnail-rejected-candidates.json", { records: [] });
+reviewedThumbnailRejections = new Map((rejectionPayload.records || []).map((record) => [`${record.restaurantId}|${safeThumbnailUrl(record.thumbnailUrl) || record.thumbnailUrl}`, token(record.reason || "reviewed_rejected")]));
 const existingThumbnailPayload = fetchOfficialPages
   ? { candidates: [], failures: [] }
   : await loadJson("../data/build/thumbnail-candidates.json", { candidates: [], failures: [] });

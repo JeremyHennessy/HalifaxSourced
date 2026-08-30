@@ -1,0 +1,46 @@
+{
+  "version": 1,
+  "generatedAt": "2026-08-30T16:55:00.000Z",
+  "records": [
+    {
+      "restaurantId": "osm-node-13141377001-india-paradise",
+      "restaurantName": "India Paradise",
+      "thumbnailUrl": "https://cdn.prod.website-files.com/6261c545bac2436193a5b09b/62ad4eed7324d9c6bd8e0c5a_Artboard%20755.png",
+      "sourceUrl": "https://www.indiaparadise.ca/",
+      "reason": "too_small_icon",
+      "notes": "Downloaded image was 32x32, too small for restaurant cards."
+    },
+    {
+      "restaurantId": "osm-node-2333319166-cheese-curds-burgers",
+      "restaurantName": "Cheese Curds Burgers",
+      "thumbnailUrl": "https://static1.squarespace.com/static/53e3cc1de4b04a78ec271c4f/t/57a12dbfe58c621327690433/1784580771687/",
+      "sourceUrl": "https://www.cheesecurdsburgers.com/",
+      "reason": "too_small_low_utility",
+      "notes": "Downloaded image was 220x199, below production card threshold."
+    },
+    {
+      "restaurantId": "osm-node-5152065724-cheese-curds-gourmet-burgers-and-poutinerie-habaneros-modern-taco-bar",
+      "restaurantName": "Cheese Curds Gourmet Burgers and Poutinerie/Habaneros Modern Taco Bar",
+      "thumbnailUrl": "https://static1.squarespace.com/static/53e3cc1de4b04a78ec271c4f/t/57a12dbfe58c621327690433/1784580771687/",
+      "sourceUrl": "https://www.cheesecurdsburgers.com/",
+      "reason": "too_small_low_utility",
+      "notes": "Downloaded image was 220x199, below production card threshold."
+    },
+    {
+      "restaurantId": "osm-node-8636456776-mezza-lebanese-kitchen",
+      "restaurantName": "Mezza Lebanese Kitchen",
+      "thumbnailUrl": "https://static1.squarespace.com/static/6272b45a3197ec4398631b6e/t/6272b51f48cd194814f10cc3/1786449944511/",
+      "sourceUrl": "https://www.ordermezza.com/",
+      "reason": "wide_banner_low_utility",
+      "notes": "Downloaded image was 550x172, too banner-shaped for card thumbnail use."
+    },
+    {
+      "restaurantId": "osm-node-13912668535-jean-s-chinese-restaurant",
+      "restaurantName": "Jean's Chinese Restaurant",
+      "thumbnailUrl": "https://static.wixstatic.com/media/762b6e_1513de4abc374852bf73f97efe5ce963~mv2.png",
+      "sourceUrl": "https://www.jeansrestaurant.ca/",
+      "reason": "too_small_low_utility",
+      "notes": "Downloaded image was 290x185, below production card threshold."
+    }
+  ]
+}

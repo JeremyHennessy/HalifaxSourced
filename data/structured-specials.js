@@ -1,6 +1,6 @@
 window.HALIFAX_STRUCTURED_SPECIALS = {
   "version": 3,
-  "generatedAt": "2026-08-29T13:55:53.200Z",
+  "generatedAt": "2026-08-30T17:01:01.500Z",
   "currentVerificationMaxAgeDays": 30,
   "count": 68,
   "verifiedCurrent": 49,

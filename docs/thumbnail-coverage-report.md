@@ -1,6 +1,6 @@
 # Halifax Sourced thumbnail coverage report
 
-Generated: 2026-08-30T16:38:53.424Z
+Generated: 2026-08-30T17:01:44.923Z
 
 This report tracks source-backed image leads for restaurant thumbnails. It separates production-approved media from candidates that still need review, attribution, or permission before they can become default restaurant card imagery.
 
@@ -9,21 +9,21 @@ This report tracks source-backed image leads for restaurant thumbnails. It separ
 | Metric | Count | Coverage |
 | --- | ---: | ---: |
 | Catalog restaurants | 739 | 100% |
-| Restaurants with approved thumbnail | 22 | 3% |
+| Restaurants with approved thumbnail | 37 | 5% |
 | Restaurants with any thumbnail candidate | 104 | 14.1% |
-| Restaurants missing approved thumbnail | 717 | 97% |
+| Restaurants missing approved thumbnail | 702 | 95% |
 | Restaurants missing any candidate | 635 | 85.9% |
-| Promotion queue | 34 | 4.6% |
+| Promotion queue | 0 | 0% |
 | Discovery queue | 635 | 85.9% |
 
-Total thumbnail candidates: **357**. Review-needed candidates: **335**. Fetch failures in the latest run: **58**.
+Total thumbnail candidates: **372**. Review-needed candidates: **335**. Fetch failures in the latest run: **58**.
 
 ## Candidate source mix
 
 | Source kind | Candidates |
 | --- | ---: |
 | official_page_thumbnail_candidate | 323 |
-| approved_restaurant_media | 22 |
+| approved_restaurant_media | 37 |
 | official_feed_media | 12 |
 
 ## Review and rights state
@@ -31,12 +31,12 @@ Total thumbnail candidates: **357**. Review-needed candidates: **335**. Fetch fa
 | Review state | Candidates |
 | --- | ---: |
 | candidate_review | 335 |
-| approved | 22 |
+| approved | 37 |
 
 | Rights state | Candidates |
 | --- | ---: |
 | requires_rights_review | 335 |
-| production_approved | 22 |
+| production_approved | 37 |
 
 ## Promotion queue
 
@@ -44,40 +44,7 @@ Restaurants below are missing approved thumbnails but have source-backed candida
 
 | Restaurant | Neighbourhood | Candidates | Best source | Website |
 | --- | --- | ---: | --- | --- |
-| Barrios Kitchen & Bar | Downtown | 6 | official_page_thumbnail_candidate | https://www.barrioshfx.ca/ |
-| Le Bistro by Liz | Downtown | 6 | official_page_thumbnail_candidate | https://www.lebistrohalifax.com |
-| Peter's Pizzeria | Downtown | 5 | official_page_thumbnail_candidate | https://www.peterspizzeriahfx.com/ |
-| Jean's Chinese Restaurant | South Woodside | 4 | official_page_thumbnail_candidate | https://www.jeansrestaurant.ca/ |
-| Great Wall Restaurant | Downtown | 3 | official_page_thumbnail_candidate | http://www.thegreatwall.ca/ |
-| Krave Burger | Downtown | 3 | official_page_thumbnail_candidate | http://kraveburger.com |
-| Krave Burger | Dartmouth | 3 | official_page_thumbnail_candidate | http://kraveburger.com |
-| Mezza Lebanese Kitchen | Armdale / Fairview | 3 | official_page_thumbnail_candidate | https://www.mezzalebanesekitchen.com/ |
-| Osmow's | Armdale / Fairview | 3 | official_page_thumbnail_candidate | https://osmows.com/shawarma-halifax/ |
-| Cora | Portland Estates | 2 | official_page_thumbnail_candidate | https://www.chezcora.com/en/ |
-| IHOP | Bedford | 2 | official_page_thumbnail_candidate | https://restaurants.ihop.com/en-ca/ns/bedford/breakfast-80-hogan-court-4023 |
-| India Paradise | Downtown | 2 | official_page_thumbnail_candidate | https://www.indiaparadise.ca/ |
-| Lockside Canteen | Dartmouth | 2 | official_page_thumbnail_candidate | https://lemon.dog/ |
-| Papa John's | Portland Estates | 2 | official_page_thumbnail_candidate | https://locations.papajohns.com/canada/ns/b2w-6c4/dartmouth/644-portland-street |
-| Sushi Shige | Bloomfield | 2 | official_feed_media | https://www.shige.ca |
-| 2 Crows Brewing | Downtown | 1 | official_page_thumbnail_candidate | https://www.2crowsbrewing.com/ |
-| Almonak | Bloomfield | 1 | official_page_thumbnail_candidate | https://www.almonak.com/ |
-| Antojo Tacos + Tequila | Downtown | 1 | official_page_thumbnail_candidate | https://antojo.ca |
-| Board Room Game Cafe | Downtown | 1 | official_page_thumbnail_candidate | http://boardroomgames.ca/ |
-| Brawta Jamaican Jerk Joint | Downtown | 1 | official_page_thumbnail_candidate | https://brawtajerk.ca/ |
-| Canton Garden | Clayton Park West | 1 | official_page_thumbnail_candidate | https://www.cantongardenhalifax.com/ |
-| Cheese Curds Burgers | Woodside Ocean Industrial Park | 1 | official_page_thumbnail_candidate | https://www.cheesecurdsburgers.com/ |
-| Cheese Curds Gourmet Burgers and Poutinerie/Habaneros Modern Taco Bar | Armdale / Fairview | 1 | official_page_thumbnail_candidate | https://www.cheesecurdsburgers.com/ |
-| Chkn Chop | West End | 1 | official_page_thumbnail_candidate | https://www.chknchop.com/ |
-| Cora | Downtown | 1 | official_page_thumbnail_candidate | https://www.chezcora.com/en/breakfast-lunch-restaurants/cora-halifax-downtown/ |
-| Darrell's | Downtown | 1 | official_page_thumbnail_candidate | https://darrellsrestaurants.com |
-| Dooly's | Kempt Road Commercial District | 1 | official_page_thumbnail_candidate | https://www.doolys.ca |
-| Hamachi Kita | Hydostone | 1 | official_page_thumbnail_candidate | https://www.hamachikita.com |
-| Jacky's Cafe | Downtown | 1 | official_page_thumbnail_candidate | https://jackyscafehalifax.com/ |
-| King of Donair | Shannon Park | 1 | official_page_thumbnail_candidate | https://www.kingofdonair.ca/ |
-| Marigold Kitchen | Downtown | 1 | official_page_thumbnail_candidate | https://marigoldkitchen.ca |
-| May Garden | Dartmouth | 1 | official_page_thumbnail_candidate | https://maygarden.ca |
-| Mirchi Tandoor | Downtown | 1 | official_page_thumbnail_candidate | https://mirchitandoor.com/ |
-| Morris East | Downtown | 1 | official_page_thumbnail_candidate | https://morriseast.com/ |
+| None | n/a | 0 | None | |
 
 ## Discovery queue
 

@@ -1,34 +1,284 @@
 {
   "version": 1,
-  "generatedAt": "2026-08-29T20:00:00.000Z",
-  "targetCount": 25,
+  "generatedAt": "2026-08-30T16:59:56.906Z",
+  "targetCount": 54,
   "policy": "Approved restaurant media may include Wikimedia Commons files with explicit reusable licences, documented restaurant-owner submissions, explicitly licensed material, or app-owner-reviewed HTTPS image references from restaurant official websites or feeds. Remote official-site images are linked with source attribution and are not rehosted.",
-  "allowedSources": ["wikimedia_commons", "restaurant_owner_submission", "explicitly_licensed_material", "official_site_permitted"],
+  "allowedSources": [
+    "wikimedia_commons",
+    "restaurant_owner_submission",
+    "explicitly_licensed_material",
+    "official_site_permitted"
+  ],
   "records": [
-    { "restaurantId": "the-narrows", "name": "The Narrows Public House", "status": "approved" },
-    { "restaurantId": "osm-node-472054712-the-wooden-monkey", "name": "The Wooden Monkey", "status": "approved" },
-    { "restaurantId": "osm-node-5149749022-smitty-s", "name": "Smitty's", "status": "approved" },
-    { "restaurantId": "osm-way-512985217-look-ho-ho", "name": "Look Ho Ho", "status": "approved" },
-    { "restaurantId": "osm-way-372779851-sicilian-pizza", "name": "Sicilian Pizza", "status": "approved" },
-    { "restaurantId": "osm-node-26041177-your-father-s-moustache", "name": "Your Father's Moustache", "status": "approved" },
-    { "restaurantId": "osm-way-88879193-henry-house", "name": "Henry House", "status": "approved" },
-    { "restaurantId": "bar-kismet", "name": "Bar Kismet", "status": "pending_rights_source" },
-    { "restaurantId": "the-bicycle-thief", "name": "The Bicycle Thief", "status": "pending_rights_source" },
-    { "restaurantId": "edna", "name": "EDNA", "status": "pending_rights_source" },
-    { "restaurantId": "the-press-gang", "name": "The Press Gang", "status": "pending_rights_source" },
-    { "restaurantId": "2-doors-down", "name": "2 Doors Down", "status": "pending_rights_source" },
-    { "restaurantId": "battery-park", "name": "Battery Park Beer Bar", "status": "pending_rights_source" },
-    { "restaurantId": "dear-friend", "name": "Dear Friend Bar", "status": "pending_rights_source" },
-    { "restaurantId": "highwayman", "name": "Highwayman", "status": "approved" },
-    { "restaurantId": "osm-node-3800103657-celtic-corner-public-house", "name": "Celtic Corner Public House", "status": "pending_rights_source" },
-    { "restaurantId": "darty-brewing-dartmouth", "name": "Darty Brewing Co.", "status": "pending_rights_source" },
-    { "restaurantId": "osm-node-11551984275-doraku", "name": "Doraku", "status": "pending_rights_source" },
-    { "restaurantId": "osm-node-11239721834-humble-pie-kitchen", "name": "Humble Pie Kitchen", "status": "pending_rights_source" },
-    { "restaurantId": "lake-city-cider-dartmouth", "name": "Lake City Cider", "status": "pending_rights_source" },
-    { "restaurantId": "marias-pantry-dartmouth", "name": "Maria's Pantry", "status": "pending_rights_source" },
-    { "restaurantId": "oxalis-dartmouth", "name": "Oxalis Restaurant", "status": "pending_rights_source" },
-    { "restaurantId": "osm-node-3801688860-revana-pizza", "name": "Revana Pizza", "status": "pending_rights_source" },
-    { "restaurantId": "side-hustle-snack-bar-dartmouth", "name": "Side Hustle Snack Bar", "status": "pending_rights_source" },
-    { "restaurantId": "osm-node-4428984290-stone-pizza", "name": "Stone Pizza", "status": "pending_rights_source" }
+    {
+      "restaurantId": "2-doors-down",
+      "name": "2 Doors Down",
+      "status": "pending_rights_source"
+    },
+    {
+      "restaurantId": "osm-node-8158663930-almonak",
+      "name": "Almonak",
+      "status": "approved"
+    },
+    {
+      "restaurantId": "osm-node-3104067229-ardmore-tea-room",
+      "name": "Ardmore Tea Room",
+      "status": "approved"
+    },
+    {
+      "restaurantId": "bar-kismet",
+      "name": "Bar Kismet",
+      "status": "pending_rights_source"
+    },
+    {
+      "restaurantId": "osm-node-8600605850-barburrito",
+      "name": "BarBurrito",
+      "status": "approved"
+    },
+    {
+      "restaurantId": "osm-node-3801064263-barrios-kitchen-and-bar",
+      "name": "Barrios Kitchen & Bar",
+      "status": "approved"
+    },
+    {
+      "restaurantId": "battery-park",
+      "name": "Battery Park Beer Bar",
+      "status": "pending_rights_source"
+    },
+    {
+      "restaurantId": "osm-node-10038454787-bird-s-nest-cafe",
+      "name": "Bird's Nest Cafe",
+      "status": "approved"
+    },
+    {
+      "restaurantId": "osm-node-4420916900-board-room-game-cafe",
+      "name": "Board Room Game Cafe",
+      "status": "approved"
+    },
+    {
+      "restaurantId": "osm-node-8636456775-booster-juice",
+      "name": "Booster Juice",
+      "status": "approved"
+    },
+    {
+      "restaurantId": "osm-node-7465111619-brawta-jamaican-jerk-joint",
+      "name": "Brawta Jamaican Jerk Joint",
+      "status": "approved"
+    },
+    {
+      "restaurantId": "osm-node-11751643550-cafe-lunette",
+      "name": "Café Lunette",
+      "status": "approved"
+    },
+    {
+      "restaurantId": "osm-node-3800103657-celtic-corner-public-house",
+      "name": "Celtic Corner Public House",
+      "status": "pending_rights_source"
+    },
+    {
+      "restaurantId": "osm-node-7032915871-chkn-chop",
+      "name": "Chkn Chop",
+      "status": "approved"
+    },
+    {
+      "restaurantId": "osm-node-11867490075-cora",
+      "name": "Cora",
+      "status": "approved"
+    },
+    {
+      "restaurantId": "osm-node-1031603952-darrell-s",
+      "name": "Darrell's",
+      "status": "approved"
+    },
+    {
+      "restaurantId": "darty-brewing-dartmouth",
+      "name": "Darty Brewing Co.",
+      "status": "pending_rights_source"
+    },
+    {
+      "restaurantId": "dear-friend",
+      "name": "Dear Friend Bar",
+      "status": "pending_rights_source"
+    },
+    {
+      "restaurantId": "osm-node-11551984275-doraku",
+      "name": "Doraku",
+      "status": "pending_rights_source"
+    },
+    {
+      "restaurantId": "edna",
+      "name": "EDNA",
+      "status": "pending_rights_source"
+    },
+    {
+      "restaurantId": "osm-node-620808566-fan-s-chinese-restaurant",
+      "name": "Fan's Chinese Restaurant",
+      "status": "approved"
+    },
+    {
+      "restaurantId": "osm-node-11282329952-freeman-s-little-new-york",
+      "name": "Freeman's Little New York",
+      "status": "approved"
+    },
+    {
+      "restaurantId": "osm-node-3802931964-hamachi-kita",
+      "name": "Hamachi Kita",
+      "status": "approved"
+    },
+    {
+      "restaurantId": "osm-node-9152231317-harvest",
+      "name": "HARVEST",
+      "status": "approved"
+    },
+    {
+      "restaurantId": "osm-way-88879193-henry-house",
+      "name": "Henry House",
+      "status": "approved"
+    },
+    {
+      "restaurantId": "osm-node-4421306590-heppy-s-pie-lady",
+      "name": "Heppy's Pie Lady",
+      "status": "approved"
+    },
+    {
+      "restaurantId": "highwayman",
+      "name": "Highwayman",
+      "status": "approved"
+    },
+    {
+      "restaurantId": "osm-node-5631529440-hmcs-king-s-wardroom",
+      "name": "HMCS King’s Wardroom",
+      "status": "approved"
+    },
+    {
+      "restaurantId": "osm-node-11239721834-humble-pie-kitchen",
+      "name": "Humble Pie Kitchen",
+      "status": "pending_rights_source"
+    },
+    {
+      "restaurantId": "osm-node-7139174640-kajohn-thai",
+      "name": "Kajohn Thai",
+      "status": "approved"
+    },
+    {
+      "restaurantId": "osm-node-9128392205-king-of-donair",
+      "name": "King of Donair",
+      "status": "approved"
+    },
+    {
+      "restaurantId": "lake-city-cider-dartmouth",
+      "name": "Lake City Cider",
+      "status": "pending_rights_source"
+    },
+    {
+      "restaurantId": "osm-node-13122094789-latitude-44",
+      "name": "Latitude 44°",
+      "status": "approved"
+    },
+    {
+      "restaurantId": "osm-node-4420843802-le-bistro-by-liz",
+      "name": "Le Bistro by Liz",
+      "status": "approved"
+    },
+    {
+      "restaurantId": "osm-node-11001023964-lockside-canteen",
+      "name": "Lockside Canteen",
+      "status": "approved"
+    },
+    {
+      "restaurantId": "osm-way-512985217-look-ho-ho",
+      "name": "Look Ho Ho",
+      "status": "approved"
+    },
+    {
+      "restaurantId": "osm-node-12136077507-lou-pecou",
+      "name": "Lou Pécou",
+      "status": "approved"
+    },
+    {
+      "restaurantId": "marias-pantry-dartmouth",
+      "name": "Maria's Pantry",
+      "status": "pending_rights_source"
+    },
+    {
+      "restaurantId": "osm-node-1920618295-metro-pizza",
+      "name": "Metro Pizza",
+      "status": "approved"
+    },
+    {
+      "restaurantId": "osm-node-11699344555-osmow-s",
+      "name": "Osmow's",
+      "status": "approved"
+    },
+    {
+      "restaurantId": "oxalis-dartmouth",
+      "name": "Oxalis Restaurant",
+      "status": "pending_rights_source"
+    },
+    {
+      "restaurantId": "osm-node-11867455433-papa-john-s",
+      "name": "Papa John's",
+      "status": "approved"
+    },
+    {
+      "restaurantId": "osm-node-5150087023-peter-s-pizzeria",
+      "name": "Peter's Pizzeria",
+      "status": "approved"
+    },
+    {
+      "restaurantId": "osm-node-3801688860-revana-pizza",
+      "name": "Revana Pizza",
+      "status": "pending_rights_source"
+    },
+    {
+      "restaurantId": "osm-way-372779851-sicilian-pizza",
+      "name": "Sicilian Pizza",
+      "status": "approved"
+    },
+    {
+      "restaurantId": "side-hustle-snack-bar-dartmouth",
+      "name": "Side Hustle Snack Bar",
+      "status": "pending_rights_source"
+    },
+    {
+      "restaurantId": "osm-node-5149749022-smitty-s",
+      "name": "Smitty's",
+      "status": "approved"
+    },
+    {
+      "restaurantId": "osm-node-4428984290-stone-pizza",
+      "name": "Stone Pizza",
+      "status": "pending_rights_source"
+    },
+    {
+      "restaurantId": "osm-node-11552061304-sushi-shige",
+      "name": "Sushi Shige",
+      "status": "approved"
+    },
+    {
+      "restaurantId": "the-bicycle-thief",
+      "name": "The Bicycle Thief",
+      "status": "pending_rights_source"
+    },
+    {
+      "restaurantId": "the-narrows",
+      "name": "The Narrows Public House",
+      "status": "approved"
+    },
+    {
+      "restaurantId": "the-press-gang",
+      "name": "The Press Gang",
+      "status": "pending_rights_source"
+    },
+    {
+      "restaurantId": "osm-node-472054712-the-wooden-monkey",
+      "name": "The Wooden Monkey",
+      "status": "approved"
+    },
+    {
+      "restaurantId": "osm-node-26041177-your-father-s-moustache",
+      "name": "Your Father's Moustache",
+      "status": "approved"
+    }
   ]
 }

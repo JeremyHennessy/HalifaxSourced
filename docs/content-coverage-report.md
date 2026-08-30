@@ -1,7 +1,7 @@
 # Halifax Sourced content coverage snapshot
 
-Generated: 2026-08-29T20:08:40.123Z
-Source/deployment commit: `9ef05bd782c1bedd5d68f282b214be2eafb42121`
+Generated: 2026-08-30T17:01:45.035Z
+Source/deployment commit: `c9b448f52f7569ff9e4622729f79d9a617a18a59`
 
 This is the reconciled snapshot produced from the same data layers packaged for deployment. Unknown values remain unknown; source leads are not promoted to verified facts.
 
@@ -19,15 +19,15 @@ This is the reconciled snapshot produced from the same data layers packaged for 
 | Phone | 276 | 36.8% |
 | Hours | 244 | 32.6% |
 | At least one social profile | 146 | 19.5% |
-| Usable rights-approved media | 7 | 0.9% |
+| Usable rights-approved media | 37 | 4.9% |
 | Coordinates | 738 | 98.5% |
 | Neighbourhood | 749 | 100.0% |
 
 ## Restaurant-event definitions
 
 - **2 canonical restaurants with upcoming structured events** is a distinct-place count.
-- **16 upcoming structured restaurant event records** is an event-record count; one restaurant can have multiple events.
-- 19 total structured restaurant event records are stored, including 3 expired records.
+- **14 upcoming structured restaurant event records** is an event-record count; one restaurant can have multiple events.
+- 19 total structured restaurant event records are stored, including 5 expired records.
 
 ## Lifecycle
 

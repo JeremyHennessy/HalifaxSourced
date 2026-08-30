@@ -15,7 +15,7 @@ const priority = JSON.parse(await readFile(new URL("../data/restaurant-media-pri
 const failures = [];
 const allowedSourceTypes = new Set(["licensed", "restaurant_owner_submission", "official_site_permitted"]);
 const allowedPermissions = new Set(["licensed", "owner_submitted", "permitted"]);
-if (priority.records?.length !== priority.targetCount || priority.targetCount !== 25) failures.push("priority queue must contain exactly 25 records");
+if (!Array.isArray(priority.records) || priority.records.length !== priority.targetCount || priority.targetCount < 25) failures.push("priority queue target must match at least 25 reviewed records");
 if (new Set((priority.records || []).map((record) => record.restaurantId)).size !== priority.records?.length) failures.push("priority queue contains duplicate restaurant IDs");
 
 for (const record of media) {
@@ -30,6 +30,10 @@ for (const record of media) {
   }
 }
 const approvedIds = new Set(media.map((record) => record.restaurantId));
+const priorityIds = new Set((priority.records || []).map((record) => record.restaurantId));
+for (const record of media) {
+  if (!priorityIds.has(record.restaurantId)) failures.push(`${record.restaurantId}: manifest media is missing from priority queue`);
+}
 for (const record of priority.records || []) {
   if (record.status === "approved" && !approvedIds.has(record.restaurantId)) failures.push(`${record.restaurantId}: queue says approved but manifest has no media`);
   if (record.status !== "approved" && approvedIds.has(record.restaurantId)) failures.push(`${record.restaurantId}: manifest media is not marked approved in queue`);
@@ -40,7 +44,7 @@ const report = {
   generatedAt: new Date().toISOString(),
   targetCount: priority.targetCount,
   approvedCount: media.length,
-  pendingCount: priority.records.length - media.length,
+  pendingCount: (priority.records || []).filter((record) => record.status !== "approved").length,
   policy: priority.policy,
   approvedRestaurantIds: [...approvedIds],
   failures

@@ -26,7 +26,7 @@ function thumbnailReviewPriority(candidate) {
   return 0;
 }
 function promotionCandidates(candidates = []) {
-  return candidates.filter((candidate) => candidate.eligibleForProduction !== true && thumbnailReviewPriority(candidate) >= 45);
+  return candidates.filter((candidate) => candidate.eligibleForProduction !== true && thumbnailReviewPriority(candidate) >= 45 && !(candidate.qualityFlags || []).length);
 }
 
 function restaurantSummary(restaurant, candidates = []) {

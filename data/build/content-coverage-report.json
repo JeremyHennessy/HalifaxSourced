@@ -1,8 +1,8 @@
 {
   "version": 1,
-  "generatedAt": "2026-08-29T20:08:40.123Z",
-  "sourceCommitSha": "9ef05bd782c1bedd5d68f282b214be2eafb42121",
-  "baselineCommitHint": "9ef05bd782c1bedd5d68f282b214be2eafb42121",
+  "generatedAt": "2026-08-30T17:01:45.035Z",
+  "sourceCommitSha": "c9b448f52f7569ff9e4622729f79d9a617a18a59",
+  "baselineCommitHint": "c9b448f52f7569ff9e4622729f79d9a617a18a59",
   "definitions": {
     "canonicalPlaces": "Current user-facing merge of catalog restaurants plus reviewed discovery records, matching the app's existing name-based discovery merge behavior.",
     "verifiedOfficialWebsite": "Official-site fetch returned a successful HTTP status or the first-party discovery layer successfully fetched the restaurant-owned site.",
@@ -42,13 +42,13 @@
     "socialByPlatform": {
       "instagram": 135,
       "facebook": 117,
-      "tiktok": 12,
+      "tiktok": 13,
       "threads": 0,
       "x": 59,
       "youtube": 12,
       "linkedin": 6,
       "bluesky": 2,
-      "pinterest": 2,
+      "pinterest": 3,
       "snapchat": 0,
       "linktree": 0,
       "beacons": 0,
@@ -64,7 +64,7 @@
     "withCuisineClassification": 749,
     "withAccessibilityInformation": 229,
     "withPatioInformation": 40,
-    "withUsableMedia": 7,
+    "withUsableMedia": 37,
     "lifecycle": {
       "active": 11,
       "temporarily_closed": 0,
@@ -99,7 +99,7 @@
       "ordering": 74
     },
     "structuredSpecialLayer": {
-      "generatedAt": "2026-08-29T20:08:38.394Z",
+      "generatedAt": "2026-08-30T17:01:01.500Z",
       "count": 68,
       "verifiedCurrent": 49,
       "recurringVerify": 9,
@@ -129,7 +129,7 @@
     "cuisine": 100,
     "accessibility": 30.6,
     "patio": 5.3,
-    "media": 0.9,
+    "media": 4.9,
     "linkHub": 0
   },
   "socialAudit": {
@@ -138,13 +138,13 @@
     "platformPlaceCounts": {
       "instagram": 135,
       "facebook": 117,
-      "tiktok": 12,
+      "tiktok": 13,
       "threads": 0,
       "x": 59,
       "youtube": 12,
       "linkedin": 6,
       "bluesky": 2,
-      "pinterest": 2,
+      "pinterest": 3,
       "snapchat": 0,
       "linktree": 0,
       "beacons": 0,
@@ -152,7 +152,7 @@
       "campsite": 0,
       "bento": 0
     },
-    "profileAssociations": 364,
+    "profileAssociations": 352,
     "sharedProfileKeys": 24,
     "sharedBrandOnlyPlaces": 24,
     "candidatePlacesAwaitingVerification": 0,
@@ -1166,7 +1166,7 @@
       ]
     },
     "reconciledFromAcceptedStructuredLayers": true,
-    "reconciledAt": "2026-08-29T20:08:40.123Z"
+    "reconciledAt": "2026-08-30T17:01:45.034Z"
   },
   "eventCoverage": {
     "currentCityEvents": 180,
@@ -1212,12 +1212,12 @@
     "freeEvents": 0,
     "duplicateEventCount": 0,
     "structuredRestaurantEvents": 19,
-    "structuredUpcomingRestaurantEvents": 16,
+    "structuredUpcomingRestaurantEvents": 14,
     "canonicalRestaurantsWithStructuredUpcomingEvents": 2,
-    "upcomingStructuredRestaurantEventRecords": 16,
-    "expiredStructuredRestaurantEvents": 3,
+    "upcomingStructuredRestaurantEventRecords": 14,
+    "expiredStructuredRestaurantEvents": 5,
     "next7Days": 15,
-    "next30Days": 49
+    "next30Days": 48
   },
   "discoveryCoverage": {
     "directoryRecords": 470,
