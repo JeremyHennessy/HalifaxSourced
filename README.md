@@ -38,6 +38,7 @@ The site is static and GitHub Pages-friendly. Hash routing is used so the discov
 - `#menus` — restaurants with direct menu-source coverage
 - `#map` — Leaflet map/list discovery
 - `#restaurant/<id>` — restaurant detail, official social/related links, menus, specials, events, actions, and source evidence
+- `#admin/thumbnails` — local review queue for thumbnail candidates and missing image coverage
 - `#saved` — device-local saved places
 
 ## Restaurant discovery
@@ -209,8 +210,9 @@ Local SQLite build:
 
 ```bash
 python scripts/build-sqlite-db.py
-python scripts/import-thumbnail-candidates-to-sqlite.py
 ```
+
+The main SQLite builder imports the generated thumbnail candidates into `thumbnail_candidates` and `thumbnail_gap_queue`. `scripts/import-thumbnail-candidates-to-sqlite.py` remains available only when refreshing those two tables after a thumbnail-only rebuild.
 
 GitHub Actions secrets used by the Meta pull are `META_FB_ACCESS_TOKEN`, `META_IG_ACCESS_TOKEN`, and `META_IG_USER_ID`. The importer exits successfully with an explicit missing-credential state when these are not configured; it never falls back to scraping.
 
