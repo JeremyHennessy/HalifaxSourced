@@ -455,7 +455,7 @@ await page.evaluate(() => {
   renderRestaurantDetail("highwayman");
 });
 await page.locator(".closure-notice", { hasText: "Moved" }).waitFor();
-if (!/Moved/.test(await page.locator(".title-badges").innerText())) throw new Error("Moved lifecycle fixture did not render an archived status badge.");
+if (await page.locator(".title-badges .status-closed", { hasText: "Moved" }).count() !== 1) throw new Error("Moved lifecycle fixture did not render an archived status badge.");
 if (await page.locator(".detail-official-actions").count() || await page.locator(".mobile-essential-actions").count()) throw new Error("Moved lifecycle fixture rendered current commerce actions.");
 if (await page.locator("#detailLinks .detail-subheading", { hasText: "Restaurant links" }).count()) throw new Error("Moved lifecycle fixture rendered current related commerce links.");
 await captureIphone("moved-restaurant");
