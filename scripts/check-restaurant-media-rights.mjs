@@ -13,8 +13,8 @@ const mediaWindow = await windowData("data/restaurant-media.js");
 const media = mediaWindow.HALIFAX_RESTAURANT_MEDIA?.records || [];
 const priority = JSON.parse(await readFile(new URL("../data/restaurant-media-priority.json", import.meta.url), "utf8"));
 const failures = [];
-const allowedSourceTypes = new Set(["licensed", "restaurant_owner_submission"]);
-const allowedPermissions = new Set(["licensed", "owner_submitted"]);
+const allowedSourceTypes = new Set(["licensed", "restaurant_owner_submission", "official_site_permitted"]);
+const allowedPermissions = new Set(["licensed", "owner_submitted", "permitted"]);
 if (priority.records?.length !== priority.targetCount || priority.targetCount !== 25) failures.push("priority queue must contain exactly 25 records");
 if (new Set((priority.records || []).map((record) => record.restaurantId)).size !== priority.records?.length) failures.push("priority queue contains duplicate restaurant IDs");
 
@@ -22,8 +22,12 @@ for (const record of media) {
   if (record.reviewState !== "approved" || record.permissionConfirmed !== true || !allowedPermissions.has(record.permission) || !allowedSourceTypes.has(record.sourceType)) failures.push(`${record.restaurantId}: approval contract failed`);
   if (!record.creator || !record.license || !record.attribution || !record.rightsBasis || !isHttp(record.sourceUrl)) failures.push(`${record.restaurantId}: creator, licence, attribution, rights basis and source URL are required`);
   if (!record.alt || record.alt.length < 20) failures.push(`${record.restaurantId}: descriptive alt text is required`);
-  if (!/^assets\/restaurants\/[a-z0-9-]+\.jpg$/.test(record.url)) failures.push(`${record.restaurantId}: media must use a reviewed repository asset`);
-  try { await access(new URL(`../${record.url}`, import.meta.url)); } catch { failures.push(`${record.restaurantId}: local media asset is missing`); }
+  const isReviewedAsset = /^assets\/restaurants\/[a-z0-9-]+\.jpg$/.test(record.url);
+  const isApprovedRemote = record.sourceType === "official_site_permitted" && isHttp(record.url) && String(record.url).startsWith("https://");
+  if (!isReviewedAsset && !isApprovedRemote) failures.push(record.restaurantId + ": media must use a reviewed repository asset or approved HTTPS official-site image");
+  if (isReviewedAsset) {
+    try { await access(new URL("../" + record.url, import.meta.url)); } catch { failures.push(record.restaurantId + ": local media asset is missing"); }
+  }
 }
 const approvedIds = new Set(media.map((record) => record.restaurantId));
 for (const record of priority.records || []) {
