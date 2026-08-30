@@ -18,6 +18,10 @@ on:
       - scripts/sanitize-first-party-sources.mjs
       - scripts/import-first-party-feed-signals.mjs
       - scripts/import-meta-social.mjs
+      - scripts/build-recent-social-posts.mjs
+      - scripts/build-thumbnail-candidates.mjs
+      - scripts/build-thumbnail-coverage-report.mjs
+      - scripts/check-thumbnail-candidates.mjs
       - scripts/check-expanded-sources.mjs
 
 permissions:
@@ -101,10 +105,24 @@ jobs:
           SOCIAL_PULL_TIMEOUT_MS: 10000
         run: node scripts/import-meta-social.mjs
 
+      - name: Analyze and categorize recent posts
+        run: node scripts/build-recent-social-posts.mjs
+
+      - name: Discover source-backed thumbnail candidates
+        env:
+          THUMBNAIL_DISCOVERY_FETCH: 1
+          THUMBNAIL_DISCOVERY_PAGE_LIMIT: 320
+          THUMBNAIL_DISCOVERY_PAGES_PER_RESTAURANT: 3
+          THUMBNAIL_DISCOVERY_DELAY_MS: 120
+          THUMBNAIL_DISCOVERY_TIMEOUT_MS: 9000
+        run: node scripts/build-thumbnail-candidates.mjs
+
       - name: Validate source datasets
         run: |
           node scripts/check-data-integrity.mjs
           node scripts/check-expanded-sources.mjs
+          node scripts/check-thumbnail-candidates.mjs
+          node scripts/build-thumbnail-coverage-report.mjs
 
       - name: Upload source expansion preview
         uses: actions/upload-artifact@v4
@@ -123,7 +141,15 @@ jobs:
             data/build/website-feed-signals.json
             data/social-signals.js
             data/build/social-signals.json
+            data/recent-social-posts.js
+            data/build/recent-social-posts.json
+            data/thumbnail-candidates.js
+            data/build/thumbnail-candidates.json
+            data/build/thumbnail-coverage-report.json
+            docs/thumbnail-coverage-report.md
             artifacts/data-integrity-report.json
             artifacts/expanded-source-integrity-report.json
+            artifacts/thumbnail-candidates-report.json
+            artifacts/thumbnail-coverage-report.json
           if-no-files-found: error
           retention-days: 30

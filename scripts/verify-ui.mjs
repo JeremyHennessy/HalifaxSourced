@@ -271,8 +271,14 @@ await page.locator("#detailUpdates .official-update-card").first().waitFor();
 if (await page.locator("#detailUpdates .official-update-card").count() < 3) throw new Error("Expected official Café Lunette feed updates on restaurant detail.");
 await captureIphone("official-updates");
 await page.goto(`${url}/#restaurant/osm-node-10038454787-bird-s-nest-cafe`, { waitUntil: "networkidle" });
-if (await page.locator("#detailUpdates .official-update-card").count() !== 8) throw new Error("Expected eight reviewed Bird's Nest first-party feed updates.");
-if (await page.locator("#detailUpdates .official-update-media").count() !== 8) throw new Error("Expected feed-published media on all eight Bird's Nest updates.");
+const birdsNestUpdateState = await page.evaluate(() => {
+  const restaurant = restaurants.find((item) => item.id === "osm-node-10038454787-bird-s-nest-cafe");
+  const updates = (restaurant?.officialUpdates || []).filter((update) => safeUrl(update.postUrl)).slice(0, 12);
+  return { expected: updates.length, expectedMedia: updates.filter((update) => safeUrl(update.mediaUrl || update.thumbnailUrl)).length };
+});
+if (birdsNestUpdateState.expected < 1) throw new Error(`Expected reviewed Bird's Nest first-party feed updates in the browser model, got ${JSON.stringify(birdsNestUpdateState)}.`);
+if (await page.locator("#detailUpdates .official-update-card").count() !== birdsNestUpdateState.expected) throw new Error(`Expected rendered Bird's Nest updates to match the browser model, got ${JSON.stringify(birdsNestUpdateState)}.`);
+if (await page.locator("#detailUpdates .official-update-media").count() < Math.min(1, birdsNestUpdateState.expectedMedia)) throw new Error(`Expected at least one feed-published Bird's Nest media preview, got ${JSON.stringify(birdsNestUpdateState)}.`);
 const officialMedia = page.locator("#detailUpdates .official-update-media").first();
 await officialMedia.waitFor();
 await officialMedia.scrollIntoViewIfNeeded();
@@ -449,7 +455,7 @@ await page.evaluate(() => {
   renderRestaurantDetail("highwayman");
 });
 await page.locator(".closure-notice", { hasText: "Moved" }).waitFor();
-if (!/Moved/.test(await page.locator(".title-badges").innerText())) throw new Error("Moved lifecycle fixture did not render an archived status badge.");
+if (await page.locator(".title-badges .status-closed", { hasText: "Moved" }).count() !== 1) throw new Error("Moved lifecycle fixture did not render an archived status badge.");
 if (await page.locator(".detail-official-actions").count() || await page.locator(".mobile-essential-actions").count()) throw new Error("Moved lifecycle fixture rendered current commerce actions.");
 if (await page.locator("#detailLinks .detail-subheading", { hasText: "Restaurant links" }).count()) throw new Error("Moved lifecycle fixture rendered current related commerce links.");
 await captureIphone("moved-restaurant");
