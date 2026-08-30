@@ -79,9 +79,7 @@ jobs:
           node scripts/build-deployment-metadata.mjs
 
       - name: Build SQLite database artifacts
-        run: |
-          python3 scripts/build-sqlite-db.py
-          python3 scripts/import-thumbnail-candidates-to-sqlite.py
+        run: python3 scripts/build-sqlite-db.py
 
       - name: Upload integrity reports
         if: always()
