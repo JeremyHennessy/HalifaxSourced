@@ -1,0 +1,331 @@
+.admin-intro {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.admin-intro p {
+  max-width: 760px;
+}
+
+.admin-metrics {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 12px;
+  margin-bottom: 28px;
+}
+
+.admin-metrics div {
+  min-width: 0;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  background: var(--surface);
+  box-shadow: var(--shadow-soft);
+  padding: 18px;
+}
+
+.admin-metrics strong,
+.admin-metrics span {
+  display: block;
+}
+
+.admin-metrics strong {
+  color: var(--navy-950);
+  font-size: 28px;
+  line-height: 1;
+  margin-bottom: 8px;
+}
+
+.admin-metrics span {
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.admin-review-shell {
+  display: grid;
+  grid-template-columns: 280px minmax(0, 1fr);
+  gap: 22px;
+  align-items: start;
+  padding-bottom: 72px;
+}
+
+.admin-review-controls {
+  position: sticky;
+  top: calc(var(--header-h) + 18px);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  background: #fff;
+  box-shadow: var(--shadow-soft);
+  padding: 18px;
+}
+
+.admin-review-controls h2 {
+  color: var(--navy-950);
+  font-size: 18px;
+  margin: 0 0 12px;
+}
+
+.admin-review-controls button,
+.admin-review-controls select {
+  width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--surface-soft);
+}
+
+.admin-review-controls button {
+  min-height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 8px;
+  padding: 0 12px;
+  color: var(--navy-900);
+  font-weight: 800;
+}
+
+.admin-review-controls button.is-active {
+  background: var(--navy-900);
+  border-color: var(--navy-900);
+  color: #fff;
+}
+
+.admin-review-controls label {
+  display: grid;
+  gap: 7px;
+  margin-top: 14px;
+}
+
+.admin-review-controls label span {
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.admin-review-controls select {
+  height: 42px;
+  padding: 0 12px;
+  color: var(--ink);
+}
+
+.admin-review-controls p {
+  color: var(--muted);
+  font-size: 12px;
+  margin: 16px 0 0;
+}
+
+.admin-review-results {
+  min-width: 0;
+}
+
+.admin-section-heading {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 18px;
+  margin-bottom: 16px;
+}
+
+.admin-section-heading h2 {
+  color: var(--navy-950);
+  font-size: 24px;
+  line-height: 1.15;
+  margin: 0 0 5px;
+}
+
+.admin-section-heading p {
+  color: var(--muted);
+  margin: 0;
+}
+
+.admin-candidate-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.admin-candidate-card {
+  min-width: 0;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: var(--shadow-soft);
+}
+
+.admin-candidate-card.is-approved {
+  border-color: rgba(69, 170, 165, .5);
+}
+
+.admin-candidate-image {
+  aspect-ratio: 16 / 10;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(135deg, var(--seafoam-100), #fff6e8);
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.admin-candidate-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.admin-candidate-image.is-broken::after {
+  content: "Preview unavailable";
+}
+
+.admin-candidate-body {
+  display: grid;
+  gap: 10px;
+  padding: 14px;
+}
+
+.admin-candidate-body h2 {
+  color: var(--navy-950);
+  font-size: 18px;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.admin-candidate-body p {
+  color: var(--muted);
+  font-size: 13px;
+  margin: 0;
+}
+
+.title-badges,
+.admin-candidate-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+
+.title-badges span {
+  border-radius: 999px;
+  background: var(--seafoam-100);
+  color: var(--teal-700);
+  font-size: 10px;
+  font-weight: 900;
+  padding: 5px 8px;
+  text-transform: uppercase;
+}
+
+.title-badges span:nth-child(2) {
+  background: #fff4df;
+  color: #9b650a;
+}
+
+.admin-candidate-body dl {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin: 0;
+}
+
+.admin-candidate-body dl div {
+  min-width: 0;
+  border-radius: 12px;
+  background: var(--surface-soft);
+  padding: 9px;
+}
+
+.admin-candidate-body dt {
+  color: var(--muted);
+  font-size: 10px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.admin-candidate-body dd {
+  color: var(--ink);
+  font-size: 12px;
+  margin: 3px 0 0;
+  overflow-wrap: anywhere;
+}
+
+.admin-candidate-actions button {
+  min-height: 38px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: #fff;
+  color: var(--navy-900);
+  font-size: 12px;
+  font-weight: 900;
+  padding: 0 12px;
+}
+
+.admin-candidate-actions button[data-thumb-decision="approve_candidate"] {
+  border-color: rgba(69, 170, 165, .45);
+  background: var(--seafoam-100);
+  color: var(--teal-700);
+}
+
+.admin-gap-list {
+  display: grid;
+  gap: 10px;
+}
+
+.admin-gap-list article {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto auto;
+  align-items: center;
+  gap: 12px;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: #fff;
+  box-shadow: var(--shadow-soft);
+  padding: 14px;
+}
+
+.admin-gap-list strong,
+.admin-gap-list span {
+  display: block;
+}
+
+.admin-gap-list strong {
+  color: var(--navy-950);
+}
+
+.admin-gap-list span {
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.admin-gap-list a {
+  color: var(--teal-700);
+  font-size: 12px;
+  font-weight: 900;
+}
+
+.info-message {
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  background: var(--surface-soft);
+  color: var(--muted);
+  padding: 20px;
+}
+
+@media (max-width: 1180px) {
+  .admin-metrics { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .admin-candidate-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width: 820px) {
+  .admin-intro { align-items: flex-start; flex-direction: column; }
+  .admin-review-shell { grid-template-columns: 1fr; }
+  .admin-review-controls { position: static; }
+}
+
+@media (max-width: 640px) {
+  .admin-metrics,
+  .admin-candidate-grid { grid-template-columns: 1fr; }
+  .admin-gap-list article { grid-template-columns: 1fr; align-items: start; }
+}
