@@ -1,4 +1,5 @@
 import json
+import runpy
 import sqlite3
 from pathlib import Path
 
@@ -571,6 +572,11 @@ for post in recent_posts.get("records", []) or []:
 
 conn.commit()
 conn.close()
+
+thumbnail_importer = root / "scripts" / "import-thumbnail-candidates-to-sqlite.py"
+if thumbnail_importer.exists():
+    runpy.run_path(str(thumbnail_importer), run_name="__halifax_thumbnail_import__")
+
 print(
     f"Built SQLite database at {db_path} with {len(catalog['restaurants'])} restaurants, "
     f"{len(first_party_sources.get('records', []))} first-party source records, "
