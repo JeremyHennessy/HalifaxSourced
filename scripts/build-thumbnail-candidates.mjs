@@ -189,6 +189,9 @@ const recentPosts = await loadJson("../data/build/recent-social-posts.json", { r
 const feedPayload = await loadJson("../data/build/website-feed-signals.json", { posts: [] });
 const socialPayload = await loadJson("../data/build/social-signals.json", { posts: [] });
 const mediaPayload = await loadWindowScript("data/restaurant-media.js", "HALIFAX_RESTAURANT_MEDIA", { records: [] });
+const existingThumbnailPayload = fetchOfficialPages
+  ? { candidates: [], failures: [] }
+  : await loadJson("../data/build/thumbnail-candidates.json", { candidates: [], failures: [] });
 const restaurants = Array.isArray(catalog.restaurants) ? catalog.restaurants : [];
 const restaurantsById = new Map(restaurants.map((restaurant) => [restaurant.id, restaurant]));
 const firstPartyById = new Map((firstParty.records || []).map((record) => [record.restaurantId, record]));
@@ -210,6 +213,10 @@ for (const post of [
   const candidate = postCandidate(post, restaurant?.name || post.restaurantName, sourceKind);
   if (candidate) candidates.push(candidate);
 }
+for (const candidate of existingThumbnailPayload.candidates || []) {
+  if (candidate?.sourceKind !== "approved_restaurant_media") candidates.push(candidate);
+}
+
 
 if (fetchOfficialPages && pageLimit > 0) {
   let fetched = 0;
@@ -268,12 +275,12 @@ const output = {
     restaurantsMissingAnyCandidate: missingAnyCandidate.length,
     sourceKindCounts,
     reviewStateCounts,
-    failures: failures.length
+    failures: failures.length + (existingThumbnailPayload.failures || []).length
   },
   candidates: normalized.sort((a, b) => Number(b.eligibleForProduction) - Number(a.eligibleForProduction) || a.restaurantName.localeCompare(b.restaurantName)),
   missingApproved,
   missingAnyCandidate,
-  failures: failures.slice(0, 200)
+  failures: [...(existingThumbnailPayload.failures || []), ...failures].slice(0, 200)
 };
 
 await mkdir(new URL("../data/build", import.meta.url), { recursive: true });

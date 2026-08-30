@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "generatedAt": "2026-08-30T14:57:10.847Z",
-  "sourceCommitSha": "fa83d1bb40e651036a4a60345b35b055a4ea503d",
+  "generatedAt": "2026-08-30T16:10:05.869Z",
+  "sourceCommitSha": null,
   "definitions": {
     "approvedThumbnail": "A thumbnail candidate tied to an exact restaurant ID with approved review state and production-approved rights status.",
     "anyThumbnailCandidate": "Any source-backed thumbnail lead for a restaurant, including official feed, Meta API, official page metadata, or already approved media.",
@@ -10,96 +10,50 @@
   },
   "counts": {
     "restaurants": 739,
-    "candidates": 334,
-    "approvedCandidates": 7,
-    "reviewCandidates": 327,
-    "restaurantsWithApprovedThumbnail": 7,
+    "candidates": 357,
+    "approvedCandidates": 22,
+    "reviewCandidates": 335,
+    "restaurantsWithApprovedThumbnail": 22,
     "restaurantsWithAnyCandidate": 104,
-    "restaurantsMissingApprovedThumbnail": 732,
+    "restaurantsMissingApprovedThumbnail": 717,
     "restaurantsMissingAnyCandidate": 635,
-    "promotionQueue": 97,
+    "promotionQueue": 82,
     "discoveryQueue": 635,
     "fetchFailures": 58
   },
   "coveragePercent": {
-    "approvedThumbnail": 0.9,
+    "approvedThumbnail": 3,
     "anyThumbnailCandidate": 14.1,
-    "missingApprovedThumbnail": 99.1,
+    "missingApprovedThumbnail": 97,
     "missingAnyThumbnailCandidate": 85.9
   },
   "candidateMix": {
     "bySourceKind": {
-      "approved_restaurant_media": 7,
+      "approved_restaurant_media": 22,
       "official_page_thumbnail_candidate": 323,
-      "official_feed_media": 4
+      "official_feed_media": 12
     },
     "byReviewState": {
-      "approved": 7,
-      "candidate_review": 327
+      "approved": 22,
+      "candidate_review": 335
     },
     "byRightsStatus": {
-      "production_approved": 7,
-      "requires_rights_review": 327
+      "production_approved": 22,
+      "requires_rights_review": 335
     },
     "byExtractionMethod": {
-      "approved_media_manifest": 7,
+      "approved_media_manifest": 22,
       "html_meta_image": 75,
       "html_link_image": 203,
       "jsonld_image": 45,
-      "declared_post_media": 4
+      "declared_post_media": 12
     },
     "byPlatform": {
-      "website_feed": 4
+      "website_feed": 12
     }
   },
   "queues": {
     "promotionQueue": [
-      {
-        "restaurantId": "osm-node-7139174640-kajohn-thai",
-        "name": "Kajohn Thai",
-        "neighborhood": "West End",
-        "website": "https://www.kajohnthairestaurant.ca",
-        "candidateCount": 10,
-        "sourceKinds": {
-          "official_feed_media": 2,
-          "official_page_thumbnail_candidate": 8
-        },
-        "reviewStates": {
-          "candidate_review": 10
-        },
-        "bestCandidate": {
-          "id": "thumb-6e91f6cc741d5af4e8",
-          "thumbnailUrl": "https://static.wixstatic.com/media/935b09_58e8dab8eb0244d4b89be881384c216d~mv2.png/v1/fit/w_1000,h_768,al_c,q_80/file.png",
-          "sourceUrl": "https://www.kajohnthairestaurant.ca/post/discover-the-top-thai-cuisine-choices-in-halifax",
-          "sourceKind": "official_feed_media",
-          "reviewState": "candidate_review",
-          "rightsStatus": "requires_rights_review",
-          "confidence": "official_feed_media"
-        }
-      },
-      {
-        "restaurantId": "osm-node-10038454787-bird-s-nest-cafe",
-        "name": "Bird's Nest Cafe",
-        "neighborhood": "Downtown",
-        "website": "https://www.birdsnesthalifax.com/",
-        "candidateCount": 9,
-        "sourceKinds": {
-          "official_feed_media": 1,
-          "official_page_thumbnail_candidate": 8
-        },
-        "reviewStates": {
-          "candidate_review": 9
-        },
-        "bestCandidate": {
-          "id": "thumb-529ca405940c6961e6",
-          "thumbnailUrl": "https://static.wixstatic.com/media/110dc9_538c90ecfee14537aa62b59c533c2b01~mv2.jpeg/v1/fit/w_1000,h_1000,al_c,q_80/file.png",
-          "sourceUrl": "https://www.birdsnesthalifax.com/post/five-things-to-do-in-halifax-this-spring-we-ll-handle-breakfast",
-          "sourceKind": "official_feed_media",
-          "reviewState": "candidate_review",
-          "rightsStatus": "requires_rights_review",
-          "confidence": "official_feed_media"
-        }
-      },
       {
         "restaurantId": "osm-node-3792869657-great-wall-restaurant",
         "name": "Great Wall Restaurant",
@@ -233,28 +187,6 @@
         }
       },
       {
-        "restaurantId": "osm-node-3104067229-ardmore-tea-room",
-        "name": "Ardmore Tea Room",
-        "neighborhood": "Halifax Peninsula",
-        "website": "https://www.ardmoretearoom.ca/",
-        "candidateCount": 6,
-        "sourceKinds": {
-          "official_page_thumbnail_candidate": 6
-        },
-        "reviewStates": {
-          "candidate_review": 6
-        },
-        "bestCandidate": {
-          "id": "thumb-5de61ac4c8a24502d0",
-          "thumbnailUrl": "https://www.fbgcdn.com/pictures/1ff3d095-27f9-4eb9-b8ba-dc40ca08ea59.jpg",
-          "sourceUrl": "https://www.ardmoretearoom.ca/",
-          "sourceKind": "official_page_thumbnail_candidate",
-          "reviewState": "candidate_review",
-          "rightsStatus": "requires_rights_review",
-          "confidence": "official_page_declared_remote_image"
-        }
-      },
-      {
         "restaurantId": "osm-node-3801064263-barrios-kitchen-and-bar",
         "name": "Barrios Kitchen & Bar",
         "neighborhood": "Downtown",
@@ -343,50 +275,6 @@
         }
       },
       {
-        "restaurantId": "osm-node-4421306590-heppy-s-pie-lady",
-        "name": "Heppy's Pie Lady",
-        "neighborhood": "Halifax Peninsula",
-        "website": "http://www.heppys.com",
-        "candidateCount": 6,
-        "sourceKinds": {
-          "official_page_thumbnail_candidate": 6
-        },
-        "reviewStates": {
-          "candidate_review": 6
-        },
-        "bestCandidate": {
-          "id": "thumb-a963a3061200a066af",
-          "thumbnailUrl": "https://heppys-pie-lady.square.site/uploads/b/c0736ab0-905a-11ee-9fdb-39aa1d6b8b09/Heppys-illu.jpg",
-          "sourceUrl": "https://heppys-pie-lady.square.site/",
-          "sourceKind": "official_page_thumbnail_candidate",
-          "reviewState": "candidate_review",
-          "rightsStatus": "requires_rights_review",
-          "confidence": "same_host_official_page_image"
-        }
-      },
-      {
-        "restaurantId": "osm-node-5631529440-hmcs-king-s-wardroom",
-        "name": "HMCS King’s Wardroom",
-        "neighborhood": "Halifax Peninsula",
-        "website": "https://ukings.ca/hmcs-kings-wardroom/",
-        "candidateCount": 6,
-        "sourceKinds": {
-          "official_page_thumbnail_candidate": 6
-        },
-        "reviewStates": {
-          "candidate_review": 6
-        },
-        "bestCandidate": {
-          "id": "thumb-354044027069be74e7",
-          "thumbnailUrl": "https://ukings.ca/apple-touch-icon.png?v=2",
-          "sourceUrl": "https://ukings.ca/campus-community/student-life/the-wardroom/",
-          "sourceKind": "official_page_thumbnail_candidate",
-          "reviewState": "candidate_review",
-          "rightsStatus": "requires_rights_review",
-          "confidence": "same_host_official_page_image"
-        }
-      },
-      {
         "restaurantId": "osm-node-11552081912-kanpai-izakaya",
         "name": "Kanpai Izakaya",
         "neighborhood": "Downtown",
@@ -453,28 +341,6 @@
         }
       },
       {
-        "restaurantId": "osm-node-1920618295-metro-pizza",
-        "name": "Metro Pizza",
-        "neighborhood": "Convoy Place",
-        "website": "https://metropizzahalifax.ca/",
-        "candidateCount": 6,
-        "sourceKinds": {
-          "official_page_thumbnail_candidate": 6
-        },
-        "reviewStates": {
-          "candidate_review": 6
-        },
-        "bestCandidate": {
-          "id": "thumb-30d476702d26084ae6",
-          "thumbnailUrl": "https://img1.wsimg.com/isteam/ip/4c81de1f-3b16-41e5-bdc0-a13879e3fdcc/logo/673eb434-8f03-4b5d-a2da-ceb225dd2c03.png/:/rs=w:114,h:114,m",
-          "sourceUrl": "https://metropizzahalifax.ca/",
-          "sourceKind": "official_page_thumbnail_candidate",
-          "reviewState": "candidate_review",
-          "rightsStatus": "requires_rights_review",
-          "confidence": "official_page_declared_remote_image"
-        }
-      },
-      {
         "restaurantId": "osm-node-5987565464-afrite",
         "name": "aFrite",
         "neighborhood": "Dartmouth",
@@ -516,28 +382,6 @@
           "reviewState": "candidate_review",
           "rightsStatus": "requires_rights_review",
           "confidence": "same_host_official_page_image"
-        }
-      },
-      {
-        "restaurantId": "osm-node-9152231317-harvest",
-        "name": "HARVEST",
-        "neighborhood": "Downtown",
-        "website": "https://www.orderharvest.ca/",
-        "candidateCount": 5,
-        "sourceKinds": {
-          "official_page_thumbnail_candidate": 5
-        },
-        "reviewStates": {
-          "candidate_review": 5
-        },
-        "bestCandidate": {
-          "id": "thumb-e8f51fa2aa1c2d1fc9",
-          "thumbnailUrl": "http://static1.squarespace.com/static/6581fc77643f7b03addc416b/t/65bcfdc81d16a53096ea0624/1706884553038/Harvest_socialshare_500x300.jpg?format=1500w",
-          "sourceUrl": "https://www.harvestcleaneats.ca/",
-          "sourceKind": "official_page_thumbnail_candidate",
-          "reviewState": "candidate_review",
-          "rightsStatus": "requires_rights_review",
-          "confidence": "official_page_declared_remote_image"
         }
       },
       {
@@ -585,28 +429,6 @@
         }
       },
       {
-        "restaurantId": "osm-node-8600605850-barburrito",
-        "name": "BarBurrito",
-        "neighborhood": "Dartmouth",
-        "website": "https://www.barburrito.ca/location/dartmouth/",
-        "candidateCount": 4,
-        "sourceKinds": {
-          "official_page_thumbnail_candidate": 4
-        },
-        "reviewStates": {
-          "candidate_review": 4
-        },
-        "bestCandidate": {
-          "id": "thumb-c8d2b65ecae5c0f958",
-          "thumbnailUrl": "https://barburrito.agencydominion.net/uploads/2020/01/cropped-barburrito-favicon-414x414.png",
-          "sourceUrl": "https://www.barburrito.ca/location/dartmouth/",
-          "sourceKind": "official_page_thumbnail_candidate",
-          "reviewState": "candidate_review",
-          "rightsStatus": "requires_rights_review",
-          "confidence": "official_page_declared_remote_image"
-        }
-      },
-      {
         "restaurantId": "osm-node-11867490075-cora",
         "name": "Cora",
         "neighborhood": "Portland Estates",
@@ -648,28 +470,6 @@
           "reviewState": "candidate_review",
           "rightsStatus": "requires_rights_review",
           "confidence": "same_host_official_page_image"
-        }
-      },
-      {
-        "restaurantId": "osm-node-620808566-fan-s-chinese-restaurant",
-        "name": "Fan's Chinese Restaurant",
-        "neighborhood": "Shannon Park",
-        "website": "https://www.fansrestaurant.ca/",
-        "candidateCount": 4,
-        "sourceKinds": {
-          "official_page_thumbnail_candidate": 4
-        },
-        "reviewStates": {
-          "candidate_review": 4
-        },
-        "bestCandidate": {
-          "id": "thumb-dcd9031d7cc80d7cb6",
-          "thumbnailUrl": "https://static.wixstatic.com/media/0a8a69_4118a950d5d645d5bd4cf1f82a9ae244%7Emv2.jpg/v1/fit/w_2500,h_1330,al_c/0a8a69_4118a950d5d645d5bd4cf1f82a9ae244%7Emv2.jpg",
-          "sourceUrl": "https://www.fansrestaurant.ca/",
-          "sourceKind": "official_page_thumbnail_candidate",
-          "reviewState": "candidate_review",
-          "rightsStatus": "requires_rights_review",
-          "confidence": "official_page_declared_remote_image"
         }
       },
       {
@@ -842,50 +642,6 @@
           "id": "thumb-57374e3ff85cb0c20d",
           "thumbnailUrl": "https://bluenoseii.ca/wp-content/uploads/2019/11/cropped-bn-new-logo-site-badge-01-180x180.png",
           "sourceUrl": "https://bluenoseii.ca/",
-          "sourceKind": "official_page_thumbnail_candidate",
-          "reviewState": "candidate_review",
-          "rightsStatus": "requires_rights_review",
-          "confidence": "same_host_official_page_image"
-        }
-      },
-      {
-        "restaurantId": "osm-node-8636456775-booster-juice",
-        "name": "Booster Juice",
-        "neighborhood": "Armdale / Fairview",
-        "website": "https://www.boosterjuice.com/",
-        "candidateCount": 3,
-        "sourceKinds": {
-          "official_page_thumbnail_candidate": 3
-        },
-        "reviewStates": {
-          "candidate_review": 3
-        },
-        "bestCandidate": {
-          "id": "thumb-f1e7fd119824831f5a",
-          "thumbnailUrl": "http://boosterjuice.com/cdn/shop/files/AVDV2693-1200x628.jpg?v=1703786205",
-          "sourceUrl": "https://boosterjuice.com/en-ca",
-          "sourceKind": "official_page_thumbnail_candidate",
-          "reviewState": "candidate_review",
-          "rightsStatus": "requires_rights_review",
-          "confidence": "same_host_official_page_image"
-        }
-      },
-      {
-        "restaurantId": "osm-node-11751643550-cafe-lunette",
-        "name": "Café Lunette",
-        "neighborhood": "Downtown",
-        "website": "https://www.cafelunette.com/",
-        "candidateCount": 3,
-        "sourceKinds": {
-          "official_page_thumbnail_candidate": 3
-        },
-        "reviewStates": {
-          "candidate_review": 3
-        },
-        "bestCandidate": {
-          "id": "thumb-6b3c5b43492bdf6a72",
-          "thumbnailUrl": "https://www.cafelunette.com/wp-content/uploads/2022/02/ping.png",
-          "sourceUrl": "https://www.cafelunette.com/",
           "sourceKind": "official_page_thumbnail_candidate",
           "reviewState": "candidate_review",
           "rightsStatus": "requires_rights_review",
@@ -1223,28 +979,6 @@
         }
       },
       {
-        "restaurantId": "osm-node-13122094789-latitude-44",
-        "name": "Latitude 44°",
-        "neighborhood": "Downtown",
-        "website": "https://www.lat44hfx.com/",
-        "candidateCount": 3,
-        "sourceKinds": {
-          "official_page_thumbnail_candidate": 3
-        },
-        "reviewStates": {
-          "candidate_review": 3
-        },
-        "bestCandidate": {
-          "id": "thumb-a468ec4b4078d590c6",
-          "thumbnailUrl": "https://mds-assets.marriott.com/cdn-cgi/image/f=auto/cms-platform-for-marriott/yhzfp-latitude-44/site-images/migrated-images/homepageslide2.jpg?cropY=12&cropW=1950&cropH=876&width=1200&height=630",
-          "sourceUrl": "https://www.lat44hfx.com/",
-          "sourceKind": "official_page_thumbnail_candidate",
-          "reviewState": "candidate_review",
-          "rightsStatus": "requires_rights_review",
-          "confidence": "official_page_declared_remote_image"
-        }
-      },
-      {
         "restaurantId": "osm-node-3802952557-lucy-s-hydrostone-cafe",
         "name": "Lucy's Hydrostone Cafe",
         "neighborhood": "Hydostone",
@@ -1531,28 +1265,6 @@
         }
       },
       {
-        "restaurantId": "highwayman",
-        "name": "Highwayman",
-        "neighborhood": "Downtown",
-        "website": "https://www.highwaymanhfx.com/",
-        "candidateCount": 2,
-        "sourceKinds": {
-          "official_page_thumbnail_candidate": 2
-        },
-        "reviewStates": {
-          "candidate_review": 2
-        },
-        "bestCandidate": {
-          "id": "thumb-1970eaefebabd3d4f7",
-          "thumbnailUrl": "http://static1.squarespace.com/static/5f3ab2aad4d7be367932fd9a/t/5f4e4e980484a173f06959c0/1600871381323/DSC01717.jpg?format=1500w",
-          "sourceUrl": "https://www.highwaymanhfx.com/food-menu",
-          "sourceKind": "official_page_thumbnail_candidate",
-          "reviewState": "candidate_review",
-          "rightsStatus": "requires_rights_review",
-          "confidence": "official_page_declared_remote_image"
-        }
-      },
-      {
         "restaurantId": "osm-node-13141377001-india-paradise",
         "name": "India Paradise",
         "neighborhood": "Downtown",
@@ -1594,28 +1306,6 @@
           "reviewState": "candidate_review",
           "rightsStatus": "requires_rights_review",
           "confidence": "same_host_official_page_image"
-        }
-      },
-      {
-        "restaurantId": "osm-node-12136077507-lou-pecou",
-        "name": "Lou Pécou",
-        "neighborhood": "Downtown",
-        "website": "https://www.lou-pecou.ca",
-        "candidateCount": 2,
-        "sourceKinds": {
-          "official_page_thumbnail_candidate": 2
-        },
-        "reviewStates": {
-          "candidate_review": 2
-        },
-        "bestCandidate": {
-          "id": "thumb-4505d81889a240eedf",
-          "thumbnailUrl": "http://static1.squarespace.com/static/6449629547dc621a3c06e3f4/t/69f22ef24bdf591a71c070be/1777479410455/lp-social-sharing-image.jpg?format=1500w",
-          "sourceUrl": "https://www.loupecou.com/",
-          "sourceKind": "official_page_thumbnail_candidate",
-          "reviewState": "candidate_review",
-          "rightsStatus": "requires_rights_review",
-          "confidence": "official_page_declared_remote_image"
         }
       },
       {
@@ -1682,6 +1372,28 @@
           "reviewState": "candidate_review",
           "rightsStatus": "requires_rights_review",
           "confidence": "same_host_official_page_image"
+        }
+      },
+      {
+        "restaurantId": "osm-node-11552061304-sushi-shige",
+        "name": "Sushi Shige",
+        "neighborhood": "Bloomfield",
+        "website": "https://www.shige.ca",
+        "candidateCount": 2,
+        "sourceKinds": {
+          "official_feed_media": 2
+        },
+        "reviewStates": {
+          "candidate_review": 2
+        },
+        "bestCandidate": {
+          "id": "thumb-3efaac48218041023c",
+          "thumbnailUrl": "https://static.wixstatic.com/media/445de3_05652fb60e67458f89b042d63217b2bb~mv2.png/v1/fit/w_1000,h_1000,al_c,q_80/file.png",
+          "sourceUrl": "https://www.shige.ca/post/holiday-notice",
+          "sourceKind": "official_feed_media",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "official_feed_media"
         }
       },
       {
@@ -1949,28 +1661,6 @@
         }
       },
       {
-        "restaurantId": "osm-node-11282329952-freeman-s-little-new-york",
-        "name": "Freeman's Little New York",
-        "neighborhood": "West End",
-        "website": "https://www.freemanspizza.ca/",
-        "candidateCount": 1,
-        "sourceKinds": {
-          "official_page_thumbnail_candidate": 1
-        },
-        "reviewStates": {
-          "candidate_review": 1
-        },
-        "bestCandidate": {
-          "id": "thumb-97e7269b6344f66663",
-          "thumbnailUrl": "https://static.wixstatic.com/media/646157_f5ae8271dd6e43ebb06b97169a29c3ba~mv2_d_3000_2000_s_2.jpg/v1/fill/w_2500,h_1666,al_c/646157_f5ae8271dd6e43ebb06b97169a29c3ba~mv2_d_3000_2000_s_2.jpg",
-          "sourceUrl": "https://www.freemanspizza.ca/",
-          "sourceKind": "official_page_thumbnail_candidate",
-          "reviewState": "candidate_review",
-          "rightsStatus": "requires_rights_review",
-          "confidence": "official_page_declared_remote_image"
-        }
-      },
-      {
         "restaurantId": "osm-node-7674194896-gahan-house",
         "name": "Gahan House",
         "neighborhood": "Downtown",
@@ -2166,28 +1856,6 @@
           "reviewState": "candidate_review",
           "rightsStatus": "requires_rights_review",
           "confidence": "same_host_official_page_image"
-        }
-      },
-      {
-        "restaurantId": "osm-node-11552061304-sushi-shige",
-        "name": "Sushi Shige",
-        "neighborhood": "Bloomfield",
-        "website": "https://www.shige.ca",
-        "candidateCount": 1,
-        "sourceKinds": {
-          "official_feed_media": 1
-        },
-        "reviewStates": {
-          "candidate_review": 1
-        },
-        "bestCandidate": {
-          "id": "thumb-2966ea65118cff0df3",
-          "thumbnailUrl": "https://static.wixstatic.com/media/445de3_8cde890dee564907b10a3db536a75443~mv2.png/v1/fit/w_1000,h_1000,al_c,q_80/file.png",
-          "sourceUrl": "https://www.shige.ca/post/untitled-3",
-          "sourceKind": "official_feed_media",
-          "reviewState": "candidate_review",
-          "rightsStatus": "requires_rights_review",
-          "confidence": "official_feed_media"
         }
       }
     ],
@@ -5659,8 +5327,99 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "official_feed_media",
-        "observedAt": "2026-08-30T14:53:20.645Z",
+        "observedAt": "2026-08-29T20:05:17.722Z",
         "publishedAt": "2026-04-02T11:40:44.000Z"
+      },
+      {
+        "id": "thumb-e96fb3f7883d4e67b3",
+        "restaurantId": "osm-node-10038454787-bird-s-nest-cafe",
+        "restaurantName": "Bird's Nest Cafe",
+        "thumbnailUrl": "https://static.wixstatic.com/media/110dc9_acbbd34644e2428fbbf7a007c9b5cee6~mv2.jpeg/v1/fit/w_1000,h_1000,al_c,q_80/file.png",
+        "sourceUrl": "https://www.birdsnesthalifax.com/post/catering-to-wild-sable-island",
+        "sourceKind": "official_feed_media",
+        "reviewState": "candidate_review",
+        "rightsStatus": "requires_rights_review",
+        "confidence": "official_feed_media",
+        "observedAt": "2026-08-29T20:05:17.722Z",
+        "publishedAt": "2026-03-03T14:50:36.000Z"
+      },
+      {
+        "id": "thumb-152943187bd28f074a",
+        "restaurantId": "osm-node-10038454787-bird-s-nest-cafe",
+        "restaurantName": "Bird's Nest Cafe",
+        "thumbnailUrl": "https://static.wixstatic.com/media/110dc9_cd4c69a5ab3045b99fb684bff2b14b12~mv2.jpeg/v1/fit/w_1000,h_960,al_c,q_80/file.png",
+        "sourceUrl": "https://www.birdsnesthalifax.com/post/10-new-year-s-resolutions-for-haligonians",
+        "sourceKind": "official_feed_media",
+        "reviewState": "candidate_review",
+        "rightsStatus": "requires_rights_review",
+        "confidence": "official_feed_media",
+        "observedAt": "2026-08-29T20:05:17.722Z",
+        "publishedAt": "2026-01-17T17:26:36.000Z"
+      },
+      {
+        "id": "thumb-7cc5867899e0d65402",
+        "restaurantId": "osm-node-10038454787-bird-s-nest-cafe",
+        "restaurantName": "Bird's Nest Cafe",
+        "thumbnailUrl": "https://static.wixstatic.com/media/11062b_a3b81ad36f2946babdaa44d1be35aa41~mv2.jpg/v1/fit/w_1000,h_1000,al_c,q_80/file.png",
+        "sourceUrl": "https://www.birdsnesthalifax.com/post/the-origins-of-canadian-holiday-dinners-and-desserts",
+        "sourceKind": "official_feed_media",
+        "reviewState": "candidate_review",
+        "rightsStatus": "requires_rights_review",
+        "confidence": "official_feed_media",
+        "observedAt": "2026-08-29T20:05:17.722Z",
+        "publishedAt": "2025-12-18T12:18:36.000Z"
+      },
+      {
+        "id": "thumb-9f2edb5788840e3fcc",
+        "restaurantId": "osm-node-10038454787-bird-s-nest-cafe",
+        "restaurantName": "Bird's Nest Cafe",
+        "thumbnailUrl": "https://static.wixstatic.com/media/110dc9_6cd6c771fe784d1eba1377ef4f3029dd~mv2.jpg/v1/fit/w_1000,h_922,al_c,q_80/file.png",
+        "sourceUrl": "https://www.birdsnesthalifax.com/post/5-best-things-to-do-during-the-christmas-season-in-halifax",
+        "sourceKind": "official_feed_media",
+        "reviewState": "candidate_review",
+        "rightsStatus": "requires_rights_review",
+        "confidence": "official_feed_media",
+        "observedAt": "2026-08-29T20:05:17.722Z",
+        "publishedAt": "2025-11-30T20:34:05.000Z"
+      },
+      {
+        "id": "thumb-1032415913ccf08cc6",
+        "restaurantId": "osm-node-10038454787-bird-s-nest-cafe",
+        "restaurantName": "Bird's Nest Cafe",
+        "thumbnailUrl": "https://static.wixstatic.com/media/110dc9_e5322a272f7f41f5962aac1c1d3679a4~mv2.jpeg/v1/fit/w_1000,h_1000,al_c,q_80/file.png",
+        "sourceUrl": "https://www.birdsnesthalifax.com/post/5-more-things-to-do-in-halifax-this-fall",
+        "sourceKind": "official_feed_media",
+        "reviewState": "candidate_review",
+        "rightsStatus": "requires_rights_review",
+        "confidence": "official_feed_media",
+        "observedAt": "2026-08-29T20:05:17.722Z",
+        "publishedAt": "2025-11-13T08:00:00.000Z"
+      },
+      {
+        "id": "thumb-97545a7fd10f17e5c3",
+        "restaurantId": "osm-node-10038454787-bird-s-nest-cafe",
+        "restaurantName": "Bird's Nest Cafe",
+        "thumbnailUrl": "https://static.wixstatic.com/media/110dc9_0b3511d1b7e24aa6999e7e205983481c~mv2.jpeg/v1/fit/w_1000,h_853,al_c,q_80/file.png",
+        "sourceUrl": "https://www.birdsnesthalifax.com/post/5-things-to-do-in-halifax-in-the-fall",
+        "sourceKind": "official_feed_media",
+        "reviewState": "candidate_review",
+        "rightsStatus": "requires_rights_review",
+        "confidence": "official_feed_media",
+        "observedAt": "2026-08-29T20:05:17.722Z",
+        "publishedAt": "2025-11-01T07:00:00.000Z"
+      },
+      {
+        "id": "thumb-b65f92644bdb0b0608",
+        "restaurantId": "osm-node-10038454787-bird-s-nest-cafe",
+        "restaurantName": "Bird's Nest Cafe",
+        "thumbnailUrl": "https://static.wixstatic.com/media/d63815_16686fd83bb249318663460ca6f3e961~mv2.jpg/v1/fit/w_900,h_599,al_c,q_80/file.png",
+        "sourceUrl": "https://www.birdsnesthalifax.com/post/the-importance-of-fresh-from-scratch-food-at-birds-nest-caf%C3%A9-halifax",
+        "sourceKind": "official_feed_media",
+        "reviewState": "candidate_review",
+        "rightsStatus": "requires_rights_review",
+        "confidence": "official_feed_media",
+        "observedAt": "2026-08-29T20:05:17.722Z",
+        "publishedAt": "2025-10-31T07:00:00.000Z"
       },
       {
         "id": "thumb-0eee37fa88b699a440",
@@ -7986,7 +7745,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "official_feed_media",
-        "observedAt": "2026-08-30T14:53:25.837Z",
+        "observedAt": "2026-08-29T20:05:43.619Z",
         "publishedAt": "2026-05-04T18:38:33.000Z"
       },
       {
@@ -7999,7 +7758,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "official_feed_media",
-        "observedAt": "2026-08-30T14:53:25.837Z",
+        "observedAt": "2026-08-29T20:05:43.619Z",
         "publishedAt": "2026-05-04T17:55:38.000Z"
       },
       {
@@ -9000,97 +8759,6 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-08-30T14:53:36.789Z",
-        "publishedAt": null
-      },
-      {
-        "id": "thumb-df2140bb18c625bd75",
-        "restaurantId": "osm-node-6910685885-mexi-s",
-        "restaurantName": "Mexi's",
-        "thumbnailUrl": "https://online.skytab.com/img/apple-touch-icon-114x114-f4c40e0ea33a4043a85acef2ced7190c.png",
-        "sourceUrl": "https://online.skytab.com/f8e7a5b508e96a361e3c32f866d91ded",
-        "sourceKind": "official_page_thumbnail_candidate",
-        "reviewState": "candidate_review",
-        "rightsStatus": "requires_rights_review",
-        "confidence": "same_host_official_page_image",
-        "observedAt": "2026-08-30T14:53:36.789Z",
-        "publishedAt": null
-      },
-      {
-        "id": "thumb-9fa789a5708fba0b8e",
-        "restaurantId": "osm-node-6910685885-mexi-s",
-        "restaurantName": "Mexi's",
-        "thumbnailUrl": "https://online.skytab.com/img/apple-touch-icon-72x72-79e781bc3e977189db725fb0a991e994.png",
-        "sourceUrl": "https://online.skytab.com/f8e7a5b508e96a361e3c32f866d91ded",
-        "sourceKind": "official_page_thumbnail_candidate",
-        "reviewState": "candidate_review",
-        "rightsStatus": "requires_rights_review",
-        "confidence": "same_host_official_page_image",
-        "observedAt": "2026-08-30T14:53:36.789Z",
-        "publishedAt": null
-      },
-      {
-        "id": "thumb-8eb5221a41e88a7636",
-        "restaurantId": "osm-node-6910685885-mexi-s",
-        "restaurantName": "Mexi's",
-        "thumbnailUrl": "https://online.skytab.com/img/apple-touch-icon-144x144-2e6a467897340785f07dc17ea8456a2f.png",
-        "sourceUrl": "https://online.skytab.com/f8e7a5b508e96a361e3c32f866d91ded",
-        "sourceKind": "official_page_thumbnail_candidate",
-        "reviewState": "candidate_review",
-        "rightsStatus": "requires_rights_review",
-        "confidence": "same_host_official_page_image",
-        "observedAt": "2026-08-30T14:53:36.789Z",
-        "publishedAt": null
-      },
-      {
-        "id": "thumb-c518fa5581622a31cf",
-        "restaurantId": "osm-node-6910685885-mexi-s",
-        "restaurantName": "Mexi's",
-        "thumbnailUrl": "https://online.skytab.com/img/apple-touch-icon-60x60-d5b4dc37515d7880ae576a03edaf768a.png",
-        "sourceUrl": "https://online.skytab.com/f8e7a5b508e96a361e3c32f866d91ded",
-        "sourceKind": "official_page_thumbnail_candidate",
-        "reviewState": "candidate_review",
-        "rightsStatus": "requires_rights_review",
-        "confidence": "same_host_official_page_image",
-        "observedAt": "2026-08-30T14:53:36.789Z",
-        "publishedAt": null
-      },
-      {
-        "id": "thumb-a14b905aa8fddd0d36",
-        "restaurantId": "osm-node-6910685885-mexi-s",
-        "restaurantName": "Mexi's",
-        "thumbnailUrl": "https://online.skytab.com/img/apple-touch-icon-120x120-fd51672cdf3a382a258e56ee1fdfaadc.png",
-        "sourceUrl": "https://online.skytab.com/f8e7a5b508e96a361e3c32f866d91ded",
-        "sourceKind": "official_page_thumbnail_candidate",
-        "reviewState": "candidate_review",
-        "rightsStatus": "requires_rights_review",
-        "confidence": "same_host_official_page_image",
-        "observedAt": "2026-08-30T14:53:36.789Z",
-        "publishedAt": null
-      },
-      {
-        "id": "thumb-258d227dad9198e203",
-        "restaurantId": "osm-node-8636456776-mezza-lebanese-kitchen",
-        "restaurantName": "Mezza Lebanese Kitchen",
-        "thumbnailUrl": "http://static1.squarespace.com/static/6272b45a3197ec4398631b6e/t/65674d738a2e767b0705cde2/1662561391624/mezza-wraps.jpg?format=1500w",
-        "sourceUrl": "https://www.ordermezza.com/",
-        "sourceKind": "official_page_thumbnail_candidate",
-        "reviewState": "candidate_review",
-        "rightsStatus": "requires_rights_review",
-        "confidence": "official_page_declared_remote_image",
-        "observedAt": "2026-08-30T14:53:36.789Z",
-        "publishedAt": null
-      },
-      {
-        "id": "thumb-aa31193b10e1e23fe0",
-        "restaurantId": "osm-node-8636456776-mezza-lebanese-kitchen",
-        "restaurantName": "Mezza Lebanese Kitchen",
-        "thumbnailUrl": "https://images.squarespace-cdn.com/content/v1/6272b45a3197ec4398631b6e/a334496d-3ade-4204-adfe-1d3a7c3fc8c6/Mezza-Logo.png",
-        "sourceUrl": "https://www.ordermezza.com/",
-        "sourceKind": "official_page_thumbnail_candidate",
-        "reviewState": "candidate_review",
-        "rightsStatus": "requires_rights_review",
-        "confidence": "official_page_declared_remote_image",
         "observedAt": "2026-08-30T14:53:36.789Z",
         "publishedAt": null
       }
