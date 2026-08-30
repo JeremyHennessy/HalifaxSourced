@@ -37,6 +37,14 @@ function safeUrl(value, base) {
     return ["http:", "https:"].includes(url.protocol) ? url.href : null;
   } catch { return null; }
 }
+function safeAssetPath(value) {
+  const raw = String(value ?? "").trim();
+  if (/^(?:\.\/)?assets\/[a-zA-Z0-9._/-]+$/.test(raw)) return raw.startsWith("./") ? raw : `./${raw}`;
+  return null;
+}
+function safeThumbnailUrl(value, base) {
+  return safeAssetPath(value) || safeUrl(value, base);
+}
 function host(value) {
   try { return new URL(value).hostname.toLowerCase().replace(/^www\./, "").replace(/^m\./, ""); }
   catch { return ""; }
@@ -100,7 +108,7 @@ function approvedCandidate(record, restaurantName) {
   };
 }
 function postCandidate(post, restaurantName, sourceKind) {
-  const thumbnailUrl = safeUrl(post.thumbnailUrl || post.mediaUrl);
+  const thumbnailUrl = safeThumbnailUrl(post.thumbnailUrl || post.mediaUrl);
   const sourceUrl = safeUrl(post.postUrl);
   if (!thumbnailUrl || !sourceUrl) return null;
   return {
@@ -146,7 +154,7 @@ function pageCandidate(restaurant, pageUrl, image) {
 }
 function normalizeCandidate(candidate) {
   if (!candidate?.restaurantId || !candidate.thumbnailUrl || !candidate.sourceUrl) return null;
-  const thumbnailUrl = safeUrl(candidate.thumbnailUrl);
+  const thumbnailUrl = safeThumbnailUrl(candidate.thumbnailUrl);
   const sourceUrl = safeUrl(candidate.sourceUrl);
   if (!thumbnailUrl || !sourceUrl) return null;
   return {
