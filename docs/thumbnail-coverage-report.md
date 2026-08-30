@@ -1,6 +1,6 @@
 # Halifax Sourced thumbnail coverage report
 
-Generated: 2026-08-30T16:33:33.935Z
+Generated: 2026-08-30T16:38:53.424Z
 
 This report tracks source-backed image leads for restaurant thumbnails. It separates production-approved media from candidates that still need review, attribution, or permission before they can become default restaurant card imagery.
 
@@ -13,7 +13,7 @@ This report tracks source-backed image leads for restaurant thumbnails. It separ
 | Restaurants with any thumbnail candidate | 104 | 14.1% |
 | Restaurants missing approved thumbnail | 717 | 97% |
 | Restaurants missing any candidate | 635 | 85.9% |
-| Promotion queue | 37 | 5% |
+| Promotion queue | 34 | 4.6% |
 | Discovery queue | 635 | 85.9% |
 
 Total thumbnail candidates: **357**. Review-needed candidates: **335**. Fetch failures in the latest run: **58**.
@@ -46,12 +46,8 @@ Restaurants below are missing approved thumbnails but have source-backed candida
 | --- | --- | ---: | --- | --- |
 | Barrios Kitchen & Bar | Downtown | 6 | official_page_thumbnail_candidate | https://www.barrioshfx.ca/ |
 | Le Bistro by Liz | Downtown | 6 | official_page_thumbnail_candidate | https://www.lebistrohalifax.com |
-| Kanpai Izakaya | Downtown | 5 | official_page_thumbnail_candidate | https://kanpaiizakaya.com |
 | Peter's Pizzeria | Downtown | 5 | official_page_thumbnail_candidate | https://www.peterspizzeriahfx.com/ |
 | Jean's Chinese Restaurant | South Woodside | 4 | official_page_thumbnail_candidate | https://www.jeansrestaurant.ca/ |
-| Cheese Curds Burgers | Woodside Ocean Industrial Park | 3 | official_page_thumbnail_candidate | https://www.cheesecurdsburgers.com/ |
-| Cheese Curds Gourmet Burgers and Poutinerie/Habaneros Modern Taco Bar | Armdale / Fairview | 3 | official_page_thumbnail_candidate | https://www.cheesecurdsburgers.com/ |
-| Chkn Chop | West End | 3 | official_page_thumbnail_candidate | https://www.chknchop.com/ |
 | Great Wall Restaurant | Downtown | 3 | official_page_thumbnail_candidate | http://www.thegreatwall.ca/ |
 | Krave Burger | Downtown | 3 | official_page_thumbnail_candidate | http://kraveburger.com |
 | Krave Burger | Dartmouth | 3 | official_page_thumbnail_candidate | http://kraveburger.com |
@@ -64,12 +60,14 @@ Restaurants below are missing approved thumbnails but have source-backed candida
 | Papa John's | Portland Estates | 2 | official_page_thumbnail_candidate | https://locations.papajohns.com/canada/ns/b2w-6c4/dartmouth/644-portland-street |
 | Sushi Shige | Bloomfield | 2 | official_feed_media | https://www.shige.ca |
 | 2 Crows Brewing | Downtown | 1 | official_page_thumbnail_candidate | https://www.2crowsbrewing.com/ |
-| aFrite | Dartmouth | 1 | official_page_thumbnail_candidate | https://afrite.ca/ |
 | Almonak | Bloomfield | 1 | official_page_thumbnail_candidate | https://www.almonak.com/ |
 | Antojo Tacos + Tequila | Downtown | 1 | official_page_thumbnail_candidate | https://antojo.ca |
 | Board Room Game Cafe | Downtown | 1 | official_page_thumbnail_candidate | http://boardroomgames.ca/ |
 | Brawta Jamaican Jerk Joint | Downtown | 1 | official_page_thumbnail_candidate | https://brawtajerk.ca/ |
 | Canton Garden | Clayton Park West | 1 | official_page_thumbnail_candidate | https://www.cantongardenhalifax.com/ |
+| Cheese Curds Burgers | Woodside Ocean Industrial Park | 1 | official_page_thumbnail_candidate | https://www.cheesecurdsburgers.com/ |
+| Cheese Curds Gourmet Burgers and Poutinerie/Habaneros Modern Taco Bar | Armdale / Fairview | 1 | official_page_thumbnail_candidate | https://www.cheesecurdsburgers.com/ |
+| Chkn Chop | West End | 1 | official_page_thumbnail_candidate | https://www.chknchop.com/ |
 | Cora | Downtown | 1 | official_page_thumbnail_candidate | https://www.chezcora.com/en/breakfast-lunch-restaurants/cora-halifax-downtown/ |
 | Darrell's | Downtown | 1 | official_page_thumbnail_candidate | https://darrellsrestaurants.com |
 | Dooly's | Kempt Road Commercial District | 1 | official_page_thumbnail_candidate | https://www.doolys.ca |
@@ -80,7 +78,6 @@ Restaurants below are missing approved thumbnails but have source-backed candida
 | May Garden | Dartmouth | 1 | official_page_thumbnail_candidate | https://maygarden.ca |
 | Mirchi Tandoor | Downtown | 1 | official_page_thumbnail_candidate | https://mirchitandoor.com/ |
 | Morris East | Downtown | 1 | official_page_thumbnail_candidate | https://morriseast.com/ |
-| Mother's Pizza | Bloomfield | 1 | official_page_thumbnail_candidate | https://motherspizzahalifax.ca/ |
 
 ## Discovery queue
 

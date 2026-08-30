@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-08-30T16:33:33.935Z",
+  "generatedAt": "2026-08-30T16:38:53.424Z",
   "sourceCommitSha": null,
   "definitions": {
     "approvedThumbnail": "A thumbnail candidate tied to an exact restaurant ID with approved review state and production-approved rights status.",
@@ -17,7 +17,7 @@
     "restaurantsWithAnyCandidate": 104,
     "restaurantsMissingApprovedThumbnail": 717,
     "restaurantsMissingAnyCandidate": 635,
-    "promotionQueue": 37,
+    "promotionQueue": 34,
     "discoveryQueue": 635,
     "fetchFailures": 58
   },
@@ -30,8 +30,8 @@
   "candidateMix": {
     "bySourceKind": {
       "approved_restaurant_media": 22,
-      "official_page_thumbnail_candidate": 323,
-      "official_feed_media": 12
+      "official_feed_media": 12,
+      "official_page_thumbnail_candidate": 323
     },
     "byReviewState": {
       "approved": 22,
@@ -43,8 +43,8 @@
     },
     "byExtractionMethod": {
       "approved_media_manifest": 22,
-      "html_meta_image": 75,
       "declared_post_media": 12,
+      "html_meta_image": 75,
       "html_link_image": 203,
       "jsonld_image": 45
     },
@@ -99,28 +99,6 @@
         }
       },
       {
-        "restaurantId": "osm-node-11552081912-kanpai-izakaya",
-        "name": "Kanpai Izakaya",
-        "neighborhood": "Downtown",
-        "website": "https://kanpaiizakaya.com",
-        "candidateCount": 5,
-        "sourceKinds": {
-          "official_page_thumbnail_candidate": 5
-        },
-        "reviewStates": {
-          "candidate_review": 5
-        },
-        "bestCandidate": {
-          "id": "thumb-183b1e7473eafacb43",
-          "thumbnailUrl": "https://img1.wsimg.com/isteam/ip/static/pwa-app/logo-default.png/:/rs=w:114,h:114,m",
-          "sourceUrl": "https://kanpaiizakaya.com/",
-          "sourceKind": "official_page_thumbnail_candidate",
-          "reviewState": "candidate_review",
-          "rightsStatus": "requires_rights_review",
-          "confidence": "official_page_declared_remote_image"
-        }
-      },
-      {
         "restaurantId": "osm-node-5150087023-peter-s-pizzeria",
         "name": "Peter's Pizzeria",
         "neighborhood": "Downtown",
@@ -158,72 +136,6 @@
           "id": "thumb-2a0d8839e978194fdd",
           "thumbnailUrl": "https://static.wixstatic.com/media/762b6e_1513de4abc374852bf73f97efe5ce963~mv2.png",
           "sourceUrl": "https://www.jeansrestaurant.ca/",
-          "sourceKind": "official_page_thumbnail_candidate",
-          "reviewState": "candidate_review",
-          "rightsStatus": "requires_rights_review",
-          "confidence": "official_page_declared_remote_image"
-        }
-      },
-      {
-        "restaurantId": "osm-node-2333319166-cheese-curds-burgers",
-        "name": "Cheese Curds Burgers",
-        "neighborhood": "Woodside Ocean Industrial Park",
-        "website": "https://www.cheesecurdsburgers.com/",
-        "candidateCount": 3,
-        "sourceKinds": {
-          "official_page_thumbnail_candidate": 3
-        },
-        "reviewStates": {
-          "candidate_review": 3
-        },
-        "bestCandidate": {
-          "id": "thumb-53a56a6b6836d8a17e",
-          "thumbnailUrl": "http://static1.squarespace.com/static/53e3cc1de4b04a78ec271c4f/t/5c2ce7311ae6cf9b886a73d5/1546446651073/Cheese+Curds+-+Logo.png?format=1500w",
-          "sourceUrl": "https://www.cheesecurdsburgers.com/",
-          "sourceKind": "official_page_thumbnail_candidate",
-          "reviewState": "candidate_review",
-          "rightsStatus": "requires_rights_review",
-          "confidence": "official_page_declared_remote_image"
-        }
-      },
-      {
-        "restaurantId": "osm-node-5152065724-cheese-curds-gourmet-burgers-and-poutinerie-habaneros-modern-taco-bar",
-        "name": "Cheese Curds Gourmet Burgers and Poutinerie/Habaneros Modern Taco Bar",
-        "neighborhood": "Armdale / Fairview",
-        "website": "https://www.cheesecurdsburgers.com/",
-        "candidateCount": 3,
-        "sourceKinds": {
-          "official_page_thumbnail_candidate": 3
-        },
-        "reviewStates": {
-          "candidate_review": 3
-        },
-        "bestCandidate": {
-          "id": "thumb-489b5aa22931925dc5",
-          "thumbnailUrl": "http://static1.squarespace.com/static/53e3cc1de4b04a78ec271c4f/t/5c2ce7311ae6cf9b886a73d5/1546446651073/Cheese+Curds+-+Logo.png?format=1500w",
-          "sourceUrl": "https://www.cheesecurdsburgers.com/",
-          "sourceKind": "official_page_thumbnail_candidate",
-          "reviewState": "candidate_review",
-          "rightsStatus": "requires_rights_review",
-          "confidence": "official_page_declared_remote_image"
-        }
-      },
-      {
-        "restaurantId": "osm-node-7032915871-chkn-chop",
-        "name": "Chkn Chop",
-        "neighborhood": "West End",
-        "website": "https://www.chknchop.com/",
-        "candidateCount": 3,
-        "sourceKinds": {
-          "official_page_thumbnail_candidate": 3
-        },
-        "reviewStates": {
-          "candidate_review": 3
-        },
-        "bestCandidate": {
-          "id": "thumb-3ced7129d6b98cdfe5",
-          "thumbnailUrl": "http://static1.squarespace.com/static/595fc19ae4fcb53915024e3f/t/5e9860dfc8065f63f410059a/1587044576852/sitelogo.jpg?format=1500w",
-          "sourceUrl": "https://www.chknchop.com/",
           "sourceKind": "official_page_thumbnail_candidate",
           "reviewState": "candidate_review",
           "rightsStatus": "requires_rights_review",
@@ -495,28 +407,6 @@
         }
       },
       {
-        "restaurantId": "osm-node-5987565464-afrite",
-        "name": "aFrite",
-        "neighborhood": "Dartmouth",
-        "website": "https://afrite.ca/",
-        "candidateCount": 1,
-        "sourceKinds": {
-          "official_page_thumbnail_candidate": 1
-        },
-        "reviewStates": {
-          "candidate_review": 1
-        },
-        "bestCandidate": {
-          "id": "thumb-39676ecfccd9dad9b5",
-          "thumbnailUrl": "https://i0.wp.com/afrite.ca/wp-content/uploads/2021/04/Untitled-design-e1617857410133.png?fit=100%2C50&ssl=1",
-          "sourceUrl": "https://afrite.ca/",
-          "sourceKind": "official_page_thumbnail_candidate",
-          "reviewState": "candidate_review",
-          "rightsStatus": "requires_rights_review",
-          "confidence": "official_page_declared_remote_image"
-        }
-      },
-      {
         "restaurantId": "osm-node-8158663930-almonak",
         "name": "Almonak",
         "neighborhood": "Bloomfield",
@@ -624,6 +514,72 @@
           "reviewState": "candidate_review",
           "rightsStatus": "requires_rights_review",
           "confidence": "same_host_official_page_image"
+        }
+      },
+      {
+        "restaurantId": "osm-node-2333319166-cheese-curds-burgers",
+        "name": "Cheese Curds Burgers",
+        "neighborhood": "Woodside Ocean Industrial Park",
+        "website": "https://www.cheesecurdsburgers.com/",
+        "candidateCount": 1,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 1
+        },
+        "reviewStates": {
+          "candidate_review": 1
+        },
+        "bestCandidate": {
+          "id": "thumb-47691f298145b6f89d",
+          "thumbnailUrl": "https://static1.squarespace.com/static/53e3cc1de4b04a78ec271c4f/t/57a12dbfe58c621327690433/1784580771687/",
+          "sourceUrl": "https://www.cheesecurdsburgers.com/",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "official_page_declared_remote_image"
+        }
+      },
+      {
+        "restaurantId": "osm-node-5152065724-cheese-curds-gourmet-burgers-and-poutinerie-habaneros-modern-taco-bar",
+        "name": "Cheese Curds Gourmet Burgers and Poutinerie/Habaneros Modern Taco Bar",
+        "neighborhood": "Armdale / Fairview",
+        "website": "https://www.cheesecurdsburgers.com/",
+        "candidateCount": 1,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 1
+        },
+        "reviewStates": {
+          "candidate_review": 1
+        },
+        "bestCandidate": {
+          "id": "thumb-0ccd490ac0e0d1d21c",
+          "thumbnailUrl": "https://static1.squarespace.com/static/53e3cc1de4b04a78ec271c4f/t/57a12dbfe58c621327690433/1784580771687/",
+          "sourceUrl": "https://www.cheesecurdsburgers.com/",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "official_page_declared_remote_image"
+        }
+      },
+      {
+        "restaurantId": "osm-node-7032915871-chkn-chop",
+        "name": "Chkn Chop",
+        "neighborhood": "West End",
+        "website": "https://www.chknchop.com/",
+        "candidateCount": 1,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 1
+        },
+        "reviewStates": {
+          "candidate_review": 1
+        },
+        "bestCandidate": {
+          "id": "thumb-33d1b6a67a245fe090",
+          "thumbnailUrl": "https://static1.squarespace.com/static/595fc19ae4fcb53915024e3f/t/5e9860dfc8065f63f410059a/1787661116359/",
+          "sourceUrl": "https://www.chknchop.com/",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "official_page_declared_remote_image"
         }
       },
       {
@@ -844,28 +800,6 @@
           "reviewState": "candidate_review",
           "rightsStatus": "requires_rights_review",
           "confidence": "official_page_declared_remote_image"
-        }
-      },
-      {
-        "restaurantId": "osm-node-9165619005-mother-s-pizza",
-        "name": "Mother's Pizza",
-        "neighborhood": "Bloomfield",
-        "website": "https://motherspizzahalifax.ca/",
-        "candidateCount": 1,
-        "sourceKinds": {
-          "official_page_thumbnail_candidate": 1
-        },
-        "reviewStates": {
-          "candidate_review": 1
-        },
-        "bestCandidate": {
-          "id": "thumb-87aeaa52de43f421bf",
-          "thumbnailUrl": "https://motherspizzahalifax.ca/wp-content/uploads/2020/09/h1_shape-7-1.png",
-          "sourceUrl": "https://motherspizzahalifax.ca/",
-          "sourceKind": "official_page_thumbnail_candidate",
-          "reviewState": "candidate_review",
-          "rightsStatus": "requires_rights_review",
-          "confidence": "same_host_official_page_image"
         }
       }
     ],
@@ -3873,19 +3807,6 @@
     ],
     "reviewCandidates": [
       {
-        "id": "thumb-edcea457e11b64367d",
-        "restaurantId": "osm-node-7465073827-antojo-tacos-tequila",
-        "restaurantName": "Antojo Tacos + Tequila",
-        "thumbnailUrl": "https://antojo.ca/wp-content/uploads/2017/08/Antojo_SocialPreview_FB_1200x630.png",
-        "sourceUrl": "https://antojo.ca/",
-        "sourceKind": "official_page_thumbnail_candidate",
-        "reviewState": "candidate_review",
-        "rightsStatus": "requires_rights_review",
-        "confidence": "same_host_official_page_image",
-        "observedAt": "2026-08-30T14:53:36.789Z",
-        "publishedAt": null
-      },
-      {
         "id": "thumb-529ca405940c6961e6",
         "restaurantId": "osm-node-10038454787-bird-s-nest-cafe",
         "restaurantName": "Bird's Nest Cafe",
@@ -4237,19 +4158,6 @@
         "publishedAt": null
       },
       {
-        "id": "thumb-87aeaa52de43f421bf",
-        "restaurantId": "osm-node-9165619005-mother-s-pizza",
-        "restaurantName": "Mother's Pizza",
-        "thumbnailUrl": "https://motherspizzahalifax.ca/wp-content/uploads/2020/09/h1_shape-7-1.png",
-        "sourceUrl": "https://motherspizzahalifax.ca/",
-        "sourceKind": "official_page_thumbnail_candidate",
-        "reviewState": "candidate_review",
-        "rightsStatus": "requires_rights_review",
-        "confidence": "same_host_official_page_image",
-        "observedAt": "2026-08-30T14:53:36.789Z",
-        "publishedAt": null
-      },
-      {
         "id": "thumb-2966ea65118cff0df3",
         "restaurantId": "osm-node-11552061304-sushi-shige",
         "restaurantName": "Sushi Shige",
@@ -4274,19 +4182,6 @@
         "confidence": "official_feed_media",
         "observedAt": "2026-08-29T20:05:17.736Z",
         "publishedAt": "2025-12-02T15:46:24.000Z"
-      },
-      {
-        "id": "thumb-39676ecfccd9dad9b5",
-        "restaurantId": "osm-node-5987565464-afrite",
-        "restaurantName": "aFrite",
-        "thumbnailUrl": "https://i0.wp.com/afrite.ca/wp-content/uploads/2021/04/Untitled-design-e1617857410133.png?fit=100%2C50&ssl=1",
-        "sourceUrl": "https://afrite.ca/",
-        "sourceKind": "official_page_thumbnail_candidate",
-        "reviewState": "candidate_review",
-        "rightsStatus": "requires_rights_review",
-        "confidence": "official_page_declared_remote_image",
-        "observedAt": "2026-08-30T14:53:36.789Z",
-        "publishedAt": null
       },
       {
         "id": "thumb-b8fa1aeba9611625d0",
@@ -4523,50 +4418,11 @@
         "publishedAt": null
       },
       {
-        "id": "thumb-9edc158adefbcd83c1",
-        "restaurantId": "osm-node-2333319166-cheese-curds-burgers",
-        "restaurantName": "Cheese Curds Burgers",
-        "thumbnailUrl": "https://images.squarespace-cdn.com/content/v1/53e3cc1de4b04a78ec271c4f/1470180799728-T989QYZ1TR8E9NS1H64M/Cheese+Curds+web+logo.jpg",
-        "sourceUrl": "https://www.cheesecurdsburgers.com/",
-        "sourceKind": "official_page_thumbnail_candidate",
-        "reviewState": "candidate_review",
-        "rightsStatus": "requires_rights_review",
-        "confidence": "official_page_declared_remote_image",
-        "observedAt": "2026-08-30T14:53:36.789Z",
-        "publishedAt": null
-      },
-      {
         "id": "thumb-0ccd490ac0e0d1d21c",
         "restaurantId": "osm-node-5152065724-cheese-curds-gourmet-burgers-and-poutinerie-habaneros-modern-taco-bar",
         "restaurantName": "Cheese Curds Gourmet Burgers and Poutinerie/Habaneros Modern Taco Bar",
         "thumbnailUrl": "https://static1.squarespace.com/static/53e3cc1de4b04a78ec271c4f/t/57a12dbfe58c621327690433/1784580771687/",
         "sourceUrl": "https://www.cheesecurdsburgers.com/",
-        "sourceKind": "official_page_thumbnail_candidate",
-        "reviewState": "candidate_review",
-        "rightsStatus": "requires_rights_review",
-        "confidence": "official_page_declared_remote_image",
-        "observedAt": "2026-08-30T14:53:36.789Z",
-        "publishedAt": null
-      },
-      {
-        "id": "thumb-548a54d535280c9731",
-        "restaurantId": "osm-node-5152065724-cheese-curds-gourmet-burgers-and-poutinerie-habaneros-modern-taco-bar",
-        "restaurantName": "Cheese Curds Gourmet Burgers and Poutinerie/Habaneros Modern Taco Bar",
-        "thumbnailUrl": "https://images.squarespace-cdn.com/content/v1/53e3cc1de4b04a78ec271c4f/1470180799728-T989QYZ1TR8E9NS1H64M/Cheese+Curds+web+logo.jpg",
-        "sourceUrl": "https://www.cheesecurdsburgers.com/",
-        "sourceKind": "official_page_thumbnail_candidate",
-        "reviewState": "candidate_review",
-        "rightsStatus": "requires_rights_review",
-        "confidence": "official_page_declared_remote_image",
-        "observedAt": "2026-08-30T14:53:36.789Z",
-        "publishedAt": null
-      },
-      {
-        "id": "thumb-f2820d7c684f362d6a",
-        "restaurantId": "osm-node-7032915871-chkn-chop",
-        "restaurantName": "Chkn Chop",
-        "thumbnailUrl": "https://images.squarespace-cdn.com/content/v1/595fc19ae4fcb53915024e3f/1587044575447-BMLJK83IPZ0CYTD9G5GR/sitelogo.jpg",
-        "sourceUrl": "https://www.chknchop.com/",
         "sourceKind": "official_page_thumbnail_candidate",
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
@@ -4957,71 +4813,6 @@
         "restaurantName": "Kajohn Thai",
         "thumbnailUrl": "https://static.wixstatic.com//media//935b09_9f898d492375469982299a7f691f001e~mv2.png",
         "sourceUrl": "https://www.kajohnthairestaurant.ca/menu",
-        "sourceKind": "official_page_thumbnail_candidate",
-        "reviewState": "candidate_review",
-        "rightsStatus": "requires_rights_review",
-        "confidence": "official_page_declared_remote_image",
-        "observedAt": "2026-08-30T14:53:36.789Z",
-        "publishedAt": null
-      },
-      {
-        "id": "thumb-110f655dabc176a6d4",
-        "restaurantId": "osm-node-11552081912-kanpai-izakaya",
-        "restaurantName": "Kanpai Izakaya",
-        "thumbnailUrl": "https://img1.wsimg.com/isteam/ip/static/pwa-app/logo-default.png/:/rs=w:57,h:57,m",
-        "sourceUrl": "https://kanpaiizakaya.com/",
-        "sourceKind": "official_page_thumbnail_candidate",
-        "reviewState": "candidate_review",
-        "rightsStatus": "requires_rights_review",
-        "confidence": "official_page_declared_remote_image",
-        "observedAt": "2026-08-30T14:53:36.789Z",
-        "publishedAt": null
-      },
-      {
-        "id": "thumb-d3937653a7588de553",
-        "restaurantId": "osm-node-11552081912-kanpai-izakaya",
-        "restaurantName": "Kanpai Izakaya",
-        "thumbnailUrl": "https://img1.wsimg.com/isteam/ip/static/pwa-app/logo-default.png/:/rs=w:60,h:60,m",
-        "sourceUrl": "https://kanpaiizakaya.com/",
-        "sourceKind": "official_page_thumbnail_candidate",
-        "reviewState": "candidate_review",
-        "rightsStatus": "requires_rights_review",
-        "confidence": "official_page_declared_remote_image",
-        "observedAt": "2026-08-30T14:53:36.789Z",
-        "publishedAt": null
-      },
-      {
-        "id": "thumb-c2e4c08a7b0dd8d2f4",
-        "restaurantId": "osm-node-11552081912-kanpai-izakaya",
-        "restaurantName": "Kanpai Izakaya",
-        "thumbnailUrl": "https://img1.wsimg.com/isteam/ip/static/pwa-app/logo-default.png/:/rs=w:72,h:72,m",
-        "sourceUrl": "https://kanpaiizakaya.com/",
-        "sourceKind": "official_page_thumbnail_candidate",
-        "reviewState": "candidate_review",
-        "rightsStatus": "requires_rights_review",
-        "confidence": "official_page_declared_remote_image",
-        "observedAt": "2026-08-30T14:53:36.789Z",
-        "publishedAt": null
-      },
-      {
-        "id": "thumb-183b1e7473eafacb43",
-        "restaurantId": "osm-node-11552081912-kanpai-izakaya",
-        "restaurantName": "Kanpai Izakaya",
-        "thumbnailUrl": "https://img1.wsimg.com/isteam/ip/static/pwa-app/logo-default.png/:/rs=w:114,h:114,m",
-        "sourceUrl": "https://kanpaiizakaya.com/",
-        "sourceKind": "official_page_thumbnail_candidate",
-        "reviewState": "candidate_review",
-        "rightsStatus": "requires_rights_review",
-        "confidence": "official_page_declared_remote_image",
-        "observedAt": "2026-08-30T14:53:36.789Z",
-        "publishedAt": null
-      },
-      {
-        "id": "thumb-61b86e4750a1ea6fdf",
-        "restaurantId": "osm-node-11552081912-kanpai-izakaya",
-        "restaurantName": "Kanpai Izakaya",
-        "thumbnailUrl": "https://img1.wsimg.com/isteam/ip/static/pwa-app/logo-default.png/:/rs=w:120,h:120,m",
-        "sourceUrl": "https://kanpaiizakaya.com/",
         "sourceKind": "official_page_thumbnail_candidate",
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
@@ -5498,6 +5289,19 @@
         "publishedAt": null
       },
       {
+        "id": "thumb-edcea457e11b64367d",
+        "restaurantId": "osm-node-7465073827-antojo-tacos-tequila",
+        "restaurantName": "Antojo Tacos + Tequila",
+        "thumbnailUrl": "https://antojo.ca/wp-content/uploads/2017/08/Antojo_SocialPreview_FB_1200x630.png",
+        "sourceUrl": "https://antojo.ca/",
+        "sourceKind": "official_page_thumbnail_candidate",
+        "reviewState": "candidate_review",
+        "rightsStatus": "requires_rights_review",
+        "confidence": "same_host_official_page_image",
+        "observedAt": "2026-08-30T14:53:36.789Z",
+        "publishedAt": null
+      },
+      {
         "id": "thumb-b08abef5d8fe8bbd0d",
         "restaurantId": "osm-node-30825944-canton-garden",
         "restaurantName": "Canton Garden",
@@ -5507,45 +5311,6 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-08-30T14:53:36.789Z",
-        "publishedAt": null
-      },
-      {
-        "id": "thumb-53a56a6b6836d8a17e",
-        "restaurantId": "osm-node-2333319166-cheese-curds-burgers",
-        "restaurantName": "Cheese Curds Burgers",
-        "thumbnailUrl": "http://static1.squarespace.com/static/53e3cc1de4b04a78ec271c4f/t/5c2ce7311ae6cf9b886a73d5/1546446651073/Cheese+Curds+-+Logo.png?format=1500w",
-        "sourceUrl": "https://www.cheesecurdsburgers.com/",
-        "sourceKind": "official_page_thumbnail_candidate",
-        "reviewState": "candidate_review",
-        "rightsStatus": "requires_rights_review",
-        "confidence": "official_page_declared_remote_image",
-        "observedAt": "2026-08-30T14:53:36.789Z",
-        "publishedAt": null
-      },
-      {
-        "id": "thumb-489b5aa22931925dc5",
-        "restaurantId": "osm-node-5152065724-cheese-curds-gourmet-burgers-and-poutinerie-habaneros-modern-taco-bar",
-        "restaurantName": "Cheese Curds Gourmet Burgers and Poutinerie/Habaneros Modern Taco Bar",
-        "thumbnailUrl": "http://static1.squarespace.com/static/53e3cc1de4b04a78ec271c4f/t/5c2ce7311ae6cf9b886a73d5/1546446651073/Cheese+Curds+-+Logo.png?format=1500w",
-        "sourceUrl": "https://www.cheesecurdsburgers.com/",
-        "sourceKind": "official_page_thumbnail_candidate",
-        "reviewState": "candidate_review",
-        "rightsStatus": "requires_rights_review",
-        "confidence": "official_page_declared_remote_image",
-        "observedAt": "2026-08-30T14:53:36.789Z",
-        "publishedAt": null
-      },
-      {
-        "id": "thumb-3ced7129d6b98cdfe5",
-        "restaurantId": "osm-node-7032915871-chkn-chop",
-        "restaurantName": "Chkn Chop",
-        "thumbnailUrl": "http://static1.squarespace.com/static/595fc19ae4fcb53915024e3f/t/5e9860dfc8065f63f410059a/1587044576852/sitelogo.jpg?format=1500w",
-        "sourceUrl": "https://www.chknchop.com/",
-        "sourceKind": "official_page_thumbnail_candidate",
-        "reviewState": "candidate_review",
-        "rightsStatus": "requires_rights_review",
-        "confidence": "official_page_declared_remote_image",
         "observedAt": "2026-08-30T14:53:36.789Z",
         "publishedAt": null
       },
@@ -6278,19 +6043,6 @@
         "publishedAt": null
       },
       {
-        "id": "thumb-057aacdd1e4e2700a6",
-        "restaurantId": "osm-node-2611287045-gingerbread-haus-bakery",
-        "restaurantName": "Gingerbread Haus Bakery",
-        "thumbnailUrl": "https://www.gingerbreadhausbakery.com/wp-content/uploads/2019/08/G-Haus-Web-Logo-1.gif",
-        "sourceUrl": "https://www.gingerbreadhausbakery.com/",
-        "sourceKind": "official_page_thumbnail_candidate",
-        "reviewState": "candidate_review",
-        "rightsStatus": "requires_rights_review",
-        "confidence": "same_host_official_page_image",
-        "observedAt": "2026-08-30T14:53:36.789Z",
-        "publishedAt": null
-      },
-      {
         "id": "thumb-8a3dc3b560b9100d35",
         "restaurantId": "osm-node-2611287045-gingerbread-haus-bakery",
         "restaurantName": "Gingerbread Haus Bakery",
@@ -6616,6 +6368,19 @@
         "publishedAt": null
       },
       {
+        "id": "thumb-87aeaa52de43f421bf",
+        "restaurantId": "osm-node-9165619005-mother-s-pizza",
+        "restaurantName": "Mother's Pizza",
+        "thumbnailUrl": "https://motherspizzahalifax.ca/wp-content/uploads/2020/09/h1_shape-7-1.png",
+        "sourceUrl": "https://motherspizzahalifax.ca/",
+        "sourceKind": "official_page_thumbnail_candidate",
+        "reviewState": "candidate_review",
+        "rightsStatus": "requires_rights_review",
+        "confidence": "same_host_official_page_image",
+        "observedAt": "2026-08-30T14:53:36.789Z",
+        "publishedAt": null
+      },
+      {
         "id": "thumb-238fdf31eb58a66fad",
         "restaurantId": "osm-node-9165619005-mother-s-pizza",
         "restaurantName": "Mother's Pizza",
@@ -6746,6 +6511,19 @@
         "publishedAt": null
       },
       {
+        "id": "thumb-39676ecfccd9dad9b5",
+        "restaurantId": "osm-node-5987565464-afrite",
+        "restaurantName": "aFrite",
+        "thumbnailUrl": "https://i0.wp.com/afrite.ca/wp-content/uploads/2021/04/Untitled-design-e1617857410133.png?fit=100%2C50&ssl=1",
+        "sourceUrl": "https://afrite.ca/",
+        "sourceKind": "official_page_thumbnail_candidate",
+        "reviewState": "candidate_review",
+        "rightsStatus": "requires_rights_review",
+        "confidence": "official_page_declared_remote_image",
+        "observedAt": "2026-08-30T14:53:36.789Z",
+        "publishedAt": null
+      },
+      {
         "id": "thumb-5c7cff6812710e6f7d",
         "restaurantId": "osm-node-8158663930-almonak",
         "restaurantName": "Almonak",
@@ -6777,19 +6555,6 @@
         "restaurantName": "BarBurrito",
         "thumbnailUrl": "https://barburrito.agencydominion.net/uploads/2020/01/cropped-barburrito-favicon-414x414.png",
         "sourceUrl": "https://www.barburrito.ca/location/dartmouth/",
-        "sourceKind": "official_page_thumbnail_candidate",
-        "reviewState": "candidate_review",
-        "rightsStatus": "requires_rights_review",
-        "confidence": "official_page_declared_remote_image",
-        "observedAt": "2026-08-30T14:53:36.789Z",
-        "publishedAt": null
-      },
-      {
-        "id": "thumb-6d261150d352d65ac7",
-        "restaurantId": "osm-node-13141457102-bitter-end-martini-bar-and-restaurant",
-        "restaurantName": "Bitter End Martini Bar & Restaurant",
-        "thumbnailUrl": "https://images.unoapp.com/boxdata/asset90014/images/web-logo.png",
-        "sourceUrl": "https://www.bitterend.ca/",
         "sourceKind": "official_page_thumbnail_candidate",
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
@@ -6855,6 +6620,19 @@
         "restaurantName": "Castello Café",
         "thumbnailUrl": "https://scontent-iad6-1.xx.fbcdn.net/v/t39.30808-1/309587442_589126982907692_3453235498549768648_n.jpg?stp=dst-jpg_tt6&cstp=mx960x960&ctp=s720x720&_nc_cat=107&ccb=1-7&_nc_sid=3ab345&_nc_ohc=9sNeuSry4v4Q7kNvwGOKyfM&_nc_oc=AdoHBs7DrNUrjhLE8iJuRHSxMZntcq9tF0y2MU0sBptbnFyEnOXi-Bu4o72z-0MB5m0&_nc_zt=24&_nc_ht=scontent-iad6-1.xx&_nc_gid=e9EY5Dcm9_h_NRt96dj-2Q&_nc_ss=7f289&oh=00_AQJL1cRJn6KcZETAOobgU_0lgFtwOAhbLxRgTBKbmyTJNQ&oe=6A99FF69",
         "sourceUrl": "https://www.facebook.com/CastelloCafeCatering/",
+        "sourceKind": "official_page_thumbnail_candidate",
+        "reviewState": "candidate_review",
+        "rightsStatus": "requires_rights_review",
+        "confidence": "official_page_declared_remote_image",
+        "observedAt": "2026-08-30T14:53:36.789Z",
+        "publishedAt": null
+      },
+      {
+        "id": "thumb-f2820d7c684f362d6a",
+        "restaurantId": "osm-node-7032915871-chkn-chop",
+        "restaurantName": "Chkn Chop",
+        "thumbnailUrl": "https://images.squarespace-cdn.com/content/v1/595fc19ae4fcb53915024e3f/1587044575447-BMLJK83IPZ0CYTD9G5GR/sitelogo.jpg",
+        "sourceUrl": "https://www.chknchop.com/",
         "sourceKind": "official_page_thumbnail_candidate",
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
@@ -7188,6 +6966,71 @@
         "publishedAt": null
       },
       {
+        "id": "thumb-110f655dabc176a6d4",
+        "restaurantId": "osm-node-11552081912-kanpai-izakaya",
+        "restaurantName": "Kanpai Izakaya",
+        "thumbnailUrl": "https://img1.wsimg.com/isteam/ip/static/pwa-app/logo-default.png/:/rs=w:57,h:57,m",
+        "sourceUrl": "https://kanpaiizakaya.com/",
+        "sourceKind": "official_page_thumbnail_candidate",
+        "reviewState": "candidate_review",
+        "rightsStatus": "requires_rights_review",
+        "confidence": "official_page_declared_remote_image",
+        "observedAt": "2026-08-30T14:53:36.789Z",
+        "publishedAt": null
+      },
+      {
+        "id": "thumb-d3937653a7588de553",
+        "restaurantId": "osm-node-11552081912-kanpai-izakaya",
+        "restaurantName": "Kanpai Izakaya",
+        "thumbnailUrl": "https://img1.wsimg.com/isteam/ip/static/pwa-app/logo-default.png/:/rs=w:60,h:60,m",
+        "sourceUrl": "https://kanpaiizakaya.com/",
+        "sourceKind": "official_page_thumbnail_candidate",
+        "reviewState": "candidate_review",
+        "rightsStatus": "requires_rights_review",
+        "confidence": "official_page_declared_remote_image",
+        "observedAt": "2026-08-30T14:53:36.789Z",
+        "publishedAt": null
+      },
+      {
+        "id": "thumb-c2e4c08a7b0dd8d2f4",
+        "restaurantId": "osm-node-11552081912-kanpai-izakaya",
+        "restaurantName": "Kanpai Izakaya",
+        "thumbnailUrl": "https://img1.wsimg.com/isteam/ip/static/pwa-app/logo-default.png/:/rs=w:72,h:72,m",
+        "sourceUrl": "https://kanpaiizakaya.com/",
+        "sourceKind": "official_page_thumbnail_candidate",
+        "reviewState": "candidate_review",
+        "rightsStatus": "requires_rights_review",
+        "confidence": "official_page_declared_remote_image",
+        "observedAt": "2026-08-30T14:53:36.789Z",
+        "publishedAt": null
+      },
+      {
+        "id": "thumb-183b1e7473eafacb43",
+        "restaurantId": "osm-node-11552081912-kanpai-izakaya",
+        "restaurantName": "Kanpai Izakaya",
+        "thumbnailUrl": "https://img1.wsimg.com/isteam/ip/static/pwa-app/logo-default.png/:/rs=w:114,h:114,m",
+        "sourceUrl": "https://kanpaiizakaya.com/",
+        "sourceKind": "official_page_thumbnail_candidate",
+        "reviewState": "candidate_review",
+        "rightsStatus": "requires_rights_review",
+        "confidence": "official_page_declared_remote_image",
+        "observedAt": "2026-08-30T14:53:36.789Z",
+        "publishedAt": null
+      },
+      {
+        "id": "thumb-61b86e4750a1ea6fdf",
+        "restaurantId": "osm-node-11552081912-kanpai-izakaya",
+        "restaurantName": "Kanpai Izakaya",
+        "thumbnailUrl": "https://img1.wsimg.com/isteam/ip/static/pwa-app/logo-default.png/:/rs=w:120,h:120,m",
+        "sourceUrl": "https://kanpaiizakaya.com/",
+        "sourceKind": "official_page_thumbnail_candidate",
+        "reviewState": "candidate_review",
+        "rightsStatus": "requires_rights_review",
+        "confidence": "official_page_declared_remote_image",
+        "observedAt": "2026-08-30T14:53:36.789Z",
+        "publishedAt": null
+      },
+      {
         "id": "thumb-7298fc0e79b22e5b16",
         "restaurantId": "osm-node-11552081912-kanpai-izakaya",
         "restaurantName": "Kanpai Izakaya",
@@ -7323,6 +7166,45 @@
         "restaurantName": "Brawta Jamaican Jerk Joint",
         "thumbnailUrl": "http://static1.squarespace.com/static/5f47dc734de4ba4d31a626ce/t/5f7b593794d88c547eb6c163/1601919295628/brawta_favicon.png?format=1500w",
         "sourceUrl": "https://brawtajerk.ca/",
+        "sourceKind": "official_page_thumbnail_candidate",
+        "reviewState": "candidate_review",
+        "rightsStatus": "requires_rights_review",
+        "confidence": "official_page_declared_remote_image",
+        "observedAt": "2026-08-30T14:53:36.789Z",
+        "publishedAt": null
+      },
+      {
+        "id": "thumb-53a56a6b6836d8a17e",
+        "restaurantId": "osm-node-2333319166-cheese-curds-burgers",
+        "restaurantName": "Cheese Curds Burgers",
+        "thumbnailUrl": "http://static1.squarespace.com/static/53e3cc1de4b04a78ec271c4f/t/5c2ce7311ae6cf9b886a73d5/1546446651073/Cheese+Curds+-+Logo.png?format=1500w",
+        "sourceUrl": "https://www.cheesecurdsburgers.com/",
+        "sourceKind": "official_page_thumbnail_candidate",
+        "reviewState": "candidate_review",
+        "rightsStatus": "requires_rights_review",
+        "confidence": "official_page_declared_remote_image",
+        "observedAt": "2026-08-30T14:53:36.789Z",
+        "publishedAt": null
+      },
+      {
+        "id": "thumb-489b5aa22931925dc5",
+        "restaurantId": "osm-node-5152065724-cheese-curds-gourmet-burgers-and-poutinerie-habaneros-modern-taco-bar",
+        "restaurantName": "Cheese Curds Gourmet Burgers and Poutinerie/Habaneros Modern Taco Bar",
+        "thumbnailUrl": "http://static1.squarespace.com/static/53e3cc1de4b04a78ec271c4f/t/5c2ce7311ae6cf9b886a73d5/1546446651073/Cheese+Curds+-+Logo.png?format=1500w",
+        "sourceUrl": "https://www.cheesecurdsburgers.com/",
+        "sourceKind": "official_page_thumbnail_candidate",
+        "reviewState": "candidate_review",
+        "rightsStatus": "requires_rights_review",
+        "confidence": "official_page_declared_remote_image",
+        "observedAt": "2026-08-30T14:53:36.789Z",
+        "publishedAt": null
+      },
+      {
+        "id": "thumb-3ced7129d6b98cdfe5",
+        "restaurantId": "osm-node-7032915871-chkn-chop",
+        "restaurantName": "Chkn Chop",
+        "thumbnailUrl": "http://static1.squarespace.com/static/595fc19ae4fcb53915024e3f/t/5e9860dfc8065f63f410059a/1587044576852/sitelogo.jpg?format=1500w",
+        "sourceUrl": "https://www.chknchop.com/",
         "sourceKind": "official_page_thumbnail_candidate",
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
@@ -7470,6 +7352,19 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
+        "observedAt": "2026-08-30T14:53:36.789Z",
+        "publishedAt": null
+      },
+      {
+        "id": "thumb-6d261150d352d65ac7",
+        "restaurantId": "osm-node-13141457102-bitter-end-martini-bar-and-restaurant",
+        "restaurantName": "Bitter End Martini Bar & Restaurant",
+        "thumbnailUrl": "https://images.unoapp.com/boxdata/asset90014/images/web-logo.png",
+        "sourceUrl": "https://www.bitterend.ca/",
+        "sourceKind": "official_page_thumbnail_candidate",
+        "reviewState": "candidate_review",
+        "rightsStatus": "requires_rights_review",
+        "confidence": "official_page_declared_remote_image",
         "observedAt": "2026-08-30T14:53:36.789Z",
         "publishedAt": null
       },
@@ -7643,6 +7538,32 @@
         "publishedAt": null
       },
       {
+        "id": "thumb-9edc158adefbcd83c1",
+        "restaurantId": "osm-node-2333319166-cheese-curds-burgers",
+        "restaurantName": "Cheese Curds Burgers",
+        "thumbnailUrl": "https://images.squarespace-cdn.com/content/v1/53e3cc1de4b04a78ec271c4f/1470180799728-T989QYZ1TR8E9NS1H64M/Cheese+Curds+web+logo.jpg",
+        "sourceUrl": "https://www.cheesecurdsburgers.com/",
+        "sourceKind": "official_page_thumbnail_candidate",
+        "reviewState": "candidate_review",
+        "rightsStatus": "requires_rights_review",
+        "confidence": "official_page_declared_remote_image",
+        "observedAt": "2026-08-30T14:53:36.789Z",
+        "publishedAt": null
+      },
+      {
+        "id": "thumb-548a54d535280c9731",
+        "restaurantId": "osm-node-5152065724-cheese-curds-gourmet-burgers-and-poutinerie-habaneros-modern-taco-bar",
+        "restaurantName": "Cheese Curds Gourmet Burgers and Poutinerie/Habaneros Modern Taco Bar",
+        "thumbnailUrl": "https://images.squarespace-cdn.com/content/v1/53e3cc1de4b04a78ec271c4f/1470180799728-T989QYZ1TR8E9NS1H64M/Cheese+Curds+web+logo.jpg",
+        "sourceUrl": "https://www.cheesecurdsburgers.com/",
+        "sourceKind": "official_page_thumbnail_candidate",
+        "reviewState": "candidate_review",
+        "rightsStatus": "requires_rights_review",
+        "confidence": "official_page_declared_remote_image",
+        "observedAt": "2026-08-30T14:53:36.789Z",
+        "publishedAt": null
+      },
+      {
         "id": "thumb-30e7ff898e4613f093",
         "restaurantId": "osm-node-1031603952-darrell-s",
         "restaurantName": "Darrell's",
@@ -7764,6 +7685,19 @@
         "restaurantId": "osm-node-762250248-ela-greek-taverna",
         "restaurantName": "Ela Greek Taverna",
         "thumbnailUrl": "https://elagreektaverna.com/wp-content/uploads/2020/07/cropped-site-icon-01-180x180.png",
+        "sourceUrl": "https://elagreektaverna.com/",
+        "sourceKind": "official_page_thumbnail_candidate",
+        "reviewState": "candidate_review",
+        "rightsStatus": "requires_rights_review",
+        "confidence": "same_host_official_page_image",
+        "observedAt": "2026-08-30T14:53:36.789Z",
+        "publishedAt": null
+      },
+      {
+        "id": "thumb-7d2bbd55957cca3041",
+        "restaurantId": "osm-node-2705686566-ela-greek-taverna",
+        "restaurantName": "ela! Greek Taverna",
+        "thumbnailUrl": "https://elagreektaverna.com/wp-content/uploads/2020/07/cropped-site-icon-01-32x32.png",
         "sourceUrl": "https://elagreektaverna.com/",
         "sourceKind": "official_page_thumbnail_candidate",
         "reviewState": "candidate_review",

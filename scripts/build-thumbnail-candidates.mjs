@@ -54,11 +54,11 @@ function thumbnailQualityFlags(candidate) {
   const pathname = (() => { try { return new URL(thumbnailUrl).pathname.toLowerCase(); } catch { return lower; } })();
   const filename = pathname.split("/").pop() || pathname;
   if (thumbnailUrl.startsWith("http://")) flags.push("insecure_thumbnail_url");
-  if (/favicon|apple-touch-icon|touch-icon|site-icon|sprite|avatar|badge|pwa-icon/.test(lower) || /(?:^|[-_.])(icon|apple)(?:[-_.0-9]|$)/.test(filename)) flags.push("icon_or_favicon");
+  if (/favicon|apple-touch-icon|touch-icon|site-icon|sprite|avatar|badge|pwa-icon|pwa-app|logo-default|sitelogo/.test(lower) || /(?:^|[-_.])(icon|apple)(?:[-_.0-9]|$)/.test(filename)) flags.push("icon_or_favicon");
   if (/placeholder|blank|default-image/.test(lower)) flags.push("placeholder_image");
-  if (/(?:^|[-_.])logo(?:[-_.0-9]|$)|cropped-[^/]{0,80}32x32|32x32|57x57|60x60|72x72|114x114|120x120|144x144|180x180|192x192/.test(filename)) flags.push("logo_candidate");
-  if (/social-sharing|socialshare|twitter-card|ogimage|og-image|(?:^|[-_.])social(?:[-_.]|$)/.test(filename)) flags.push("generic_social_card");
-  if (/stock|franchis|brand-refresh|summary_square/.test(lower)) flags.push("generic_brand_or_stock_image");
+  if (/(?:^|[-_.+])logo(?:[-_.+0-9]|$)|cropped-[^/]{0,80}32x32|32x32|57x57|60x60|72x72|114x114|120x120|144x144|180x180|192x192/.test(filename)) flags.push("logo_candidate");
+  if (/social-sharing|socialshare|socialpreview|twitter-card|ogimage|og-image|(?:^|[-_.])social(?:[-_.]|$)/.test(filename)) flags.push("generic_social_card");
+  if (/stock|franchis|brand-refresh|summary_square|fit=100%2c50|fit=100,50|h1_shape|web\+logo|web-logo/.test(lower)) flags.push("generic_brand_or_stock_image");
   if (/facebook\.com|fbcdn\.net|scontent-/.test(lower) || /facebook\.com|fbcdn\.net|scontent-/.test(sourceLower)) flags.push("social_profile_image");
   if (safeUrl(thumbnailUrl) && safeUrl(sourceUrl) && safeUrl(thumbnailUrl) === safeUrl(sourceUrl)) flags.push("thumbnail_is_page_url");
   return [...new Set(flags)];

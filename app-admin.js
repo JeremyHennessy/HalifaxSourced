@@ -34,8 +34,8 @@ function thumbnailReviewPriority(candidate) {
   if (!url.startsWith("https://")) score -= 4;
   const pathname = (() => { try { return new URL(candidate?.thumbnailUrl || "").pathname.toLowerCase(); } catch { return url; } })();
   const filename = pathname.split("/").pop() || pathname;
-  if (/favicon|apple-touch-icon|touch-icon|site-icon|placeholder|blank|logo|pwa-icon|32x32|57x57|60x60|72x72|114x114|120x120|144x144|180x180|192x192|facebook\.com|fbcdn\.net|scontent-|stock|franchis|brand-refresh|summary_square/.test(url) || /(?:^|[-_.])(icon|apple|logo)(?:[-_.0-9]|$)/.test(filename)) score -= 35;
-  if (/social-sharing|socialshare|twitter-card|ogimage|og-image|(?:^|[-_.])social(?:[-_.]|$)/.test(filename)) score -= 8;
+  if (/favicon|apple-touch-icon|touch-icon|site-icon|placeholder|blank|logo|pwa-icon|pwa-app|logo-default|sitelogo|32x32|57x57|60x60|72x72|114x114|120x120|144x144|180x180|192x192|facebook\.com|fbcdn\.net|scontent-|stock|franchis|brand-refresh|summary_square|fit=100%2c50|fit=100,50|h1_shape|web\+logo|web-logo/.test(url) || /(?:^|[-_.+])(icon|apple|logo)(?:[-_.+0-9]|$)/.test(filename)) score -= 35;
+  if (/social-sharing|socialshare|socialpreview|twitter-card|ogimage|og-image|(?:^|[-_.])social(?:[-_.]|$)/.test(filename)) score -= 8;
   return Math.max(0, score);
 }
 
