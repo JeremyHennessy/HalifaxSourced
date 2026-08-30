@@ -81,7 +81,7 @@ function renderThumbnailAdmin() {
         <button type="button" data-admin-queue="discovery" class="${thumbnailAdminState.queue === "discovery" ? "is-active" : ""}">No candidate <span>${missingAny.length}</span></button>
         <label><span>Source kind</span><select id="adminThumbnailSource"><option value="all">All sources</option>${sourceKinds.map((kind) => `<option value="${escapeHtml(kind)}" ${thumbnailAdminState.sourceKind === kind ? "selected" : ""}>${escapeHtml(kind.replace(/_/g, " "))}</option>`).join("")}</select></label>
         <label><span>Review state</span><select id="adminThumbnailReview"><option value="all">All states</option>${reviewStates.map((state) => `<option value="${escapeHtml(state)}" ${thumbnailAdminState.reviewState === state ? "selected" : ""}>${escapeHtml(state.replace(/_/g, " "))}</option>`).join("")}</select></label>
-        <p>Use this screen to triage candidates. Publishing still requires an approved `data/restaurant-media.js` record with rights basis, creator/licence, source URL, and permission confirmation.</p>
+        <p>Use this screen to triage candidates. Publishing still requires an approved data/restaurant-media.js record with rights basis, creator/licence, source URL, and permission confirmation.</p>
       </aside>
       <div class="admin-review-results">
         ${thumbnailAdminState.queue === "promotion" ? renderPromotionQueue(promotionQueue, decisions) : ""}
@@ -103,7 +103,10 @@ function renderPromotionQueue(queue, decisions) {
 
 function renderDiscoveryQueue(queue) {
   if (!queue.length) return `<div class="info-message">Every restaurant has at least one thumbnail candidate.</div>`;
-  return `<div class="admin-section-heading"><div><h2>No thumbnail candidate yet</h2><p>Prioritize these places for official-page metadata, owner media, or approved public media discovery.</p></div></div><div class="admin-gap-list">${queue.slice(0, 300).map((item) => `<article><div><strong>${escapeHtml(item.name || item.restaurantName || "Unknown restaurant")}</strong><span>${escapeHtml(item.neighborhood || "Neighbourhood unknown")}</span></div>${item.website ? `<a href="${escapeHtml(safeUrl(item.website) || item.website)}" target="_blank" rel="noreferrer">Website</a>` : ""}<a href="#restaurant/${encodeURIComponent(item.restaurantId)}">Restaurant</a></article>`).join("")}</div>`;
+  return `<div class="admin-section-heading"><div><h2>No thumbnail candidate yet</h2><p>Prioritize these places for official-page metadata, owner media, or approved public media discovery.</p></div></div><div class="admin-gap-list">${queue.slice(0, 300).map((item) => {
+    const website = safeUrl(item.website);
+    return `<article><div><strong>${escapeHtml(item.name || item.restaurantName || "Unknown restaurant")}</strong><span>${escapeHtml(item.neighborhood || "Neighbourhood unknown")}</span></div>${website ? `<a href="${escapeHtml(website)}" target="_blank" rel="noreferrer">Website</a>` : ""}<a href="#restaurant/${encodeURIComponent(item.restaurantId)}">Restaurant</a></article>`;
+  }).join("")}</div>`;
 }
 
 function renderCandidateGrid(candidates, decisions) {
@@ -152,4 +155,21 @@ function bindThumbnailAdminActions() {
     toast(button.dataset.thumbDecision === "approve_candidate" ? "Candidate marked for promotion" : "Candidate marked rejected");
     renderThumbnailAdmin();
   }));
+}
+
+const halifaxBaseRenderRoute = window.renderRoute;
+if (typeof halifaxBaseRenderRoute === "function") {
+  window.renderRoute = function renderRouteWithAdmin() {
+    const current = route();
+    if (current.name === "admin" && current.id === "thumbnails") {
+      destroyMap();
+      updateNav("admin");
+      if (globalSearch) globalSearch.value = state.query;
+      renderThumbnailAdmin();
+      document.querySelector("#mainContent")?.focus({ preventScroll: true });
+      window.scrollTo({ top: 0, behavior: "instant" });
+      return;
+    }
+    halifaxBaseRenderRoute();
+  };
 }
