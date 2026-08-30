@@ -47,8 +47,9 @@ Store the resulting candidates in the local SQLite database:
 
 ```bash
 python scripts/build-sqlite-db.py
-python scripts/import-thumbnail-candidates-to-sqlite.py
 ```
+
+The main SQLite builder automatically imports the generated thumbnail candidates into `thumbnail_candidates` and `thumbnail_gap_queue`. The standalone `scripts/import-thumbnail-candidates-to-sqlite.py` remains available for refreshing just those two tables after a thumbnail-only candidate rebuild.
 
 Useful SQLite queries:
 
