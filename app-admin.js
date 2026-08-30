@@ -13,6 +13,7 @@ function readThumbnailReviewDecisions() {
 }
 
 function writeThumbnailReviewDecision(id, decision) {
+  if (!id) return;
   const decisions = readThumbnailReviewDecisions();
   decisions[id] = { decision, decidedAt: new Date().toISOString() };
   localStorage.setItem(THUMBNAIL_REVIEW_STORAGE_KEY, JSON.stringify(decisions));
@@ -34,12 +35,13 @@ function renderThumbnailAdmin() {
   const decisions = readThumbnailReviewDecisions();
   const byRestaurant = new Map();
   for (const candidate of candidates) {
+    if (!candidate?.restaurantId) continue;
     const list = byRestaurant.get(candidate.restaurantId) || [];
     list.push(candidate);
     byRestaurant.set(candidate.restaurantId, list);
   }
   for (const list of byRestaurant.values()) {
-    list.sort((a, b) => Number(b.eligibleForProduction) - Number(a.eligibleForProduction) || String(a.sourceKind).localeCompare(String(b.sourceKind)));
+    list.sort((a, b) => Number(b.eligibleForProduction) - Number(a.eligibleForProduction) || String(a.sourceKind || "").localeCompare(String(b.sourceKind || "")));
   }
 
   const missingApproved = Array.isArray(payload.missingApproved) ? payload.missingApproved : [];
@@ -47,7 +49,7 @@ function renderThumbnailAdmin() {
   const promotionQueue = missingApproved
     .map((item) => ({ ...item, candidates: byRestaurant.get(item.restaurantId) || [] }))
     .filter((item) => item.candidates.length)
-    .sort((a, b) => b.candidates.length - a.candidates.length || String(a.name).localeCompare(String(b.name)));
+    .sort((a, b) => b.candidates.length - a.candidates.length || String(a.name || "").localeCompare(String(b.name || "")));
   const sourceKinds = [...new Set(candidates.map((candidate) => candidate.sourceKind).filter(Boolean))].sort();
   const reviewStates = [...new Set(candidates.map((candidate) => candidate.reviewState).filter(Boolean))].sort();
   const filteredCandidates = candidates.filter((candidate) => {
@@ -105,7 +107,9 @@ function renderDiscoveryQueue(queue) {
   if (!queue.length) return `<div class="info-message">Every restaurant has at least one thumbnail candidate.</div>`;
   return `<div class="admin-section-heading"><div><h2>No thumbnail candidate yet</h2><p>Prioritize these places for official-page metadata, owner media, or approved public media discovery.</p></div></div><div class="admin-gap-list">${queue.slice(0, 300).map((item) => {
     const website = safeUrl(item.website);
-    return `<article><div><strong>${escapeHtml(item.name || item.restaurantName || "Unknown restaurant")}</strong><span>${escapeHtml(item.neighborhood || "Neighbourhood unknown")}</span></div>${website ? `<a href="${escapeHtml(website)}" target="_blank" rel="noreferrer">Website</a>` : ""}<a href="#restaurant/${encodeURIComponent(item.restaurantId)}">Restaurant</a></article>`;
+    const restaurantId = item.restaurantId ? String(item.restaurantId) : "";
+    const restaurantLink = restaurantId ? `<a href="#restaurant/${encodeURIComponent(restaurantId)}">Restaurant</a>` : "";
+    return `<article><div><strong>${escapeHtml(item.name || item.restaurantName || "Unknown restaurant")}</strong><span>${escapeHtml(item.neighborhood || "Neighbourhood unknown")}</span></div>${website ? `<a href="${escapeHtml(website)}" target="_blank" rel="noreferrer">Website</a>` : ""}${restaurantLink}</article>`;
   }).join("")}</div>`;
 }
 
@@ -116,22 +120,26 @@ function renderCandidateGrid(candidates, decisions) {
 }
 
 function adminCandidateCard(candidate, decisions, restaurantCandidateCount = null) {
+  const sourceKind = String(candidate.sourceKind || "unknown_source");
+  const reviewState = String(candidate.reviewState || "unreviewed");
+  const rightsStatus = String(candidate.rightsStatus || "unknown");
   const imageUrl = thumbnailAssetUrl(candidate.thumbnailUrl);
   const sourceUrl = safeUrl(candidate.sourceUrl);
   const localDecision = decisions[candidate.id]?.decision || null;
   const promoted = candidate.eligibleForProduction ? "Production approved" : "Needs rights review";
+  const restaurantId = candidate.restaurantId ? String(candidate.restaurantId) : "";
   return `<article class="admin-candidate-card ${candidate.eligibleForProduction ? "is-approved" : "is-review"}">
     <div class="admin-candidate-image">${imageUrl ? `<img src="${escapeHtml(imageUrl)}" alt="${escapeHtml(candidate.alt || candidate.restaurantName || "Thumbnail candidate")}" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.closest('.admin-candidate-image').classList.add('is-broken');this.remove()" />` : `<span>No preview</span>`}</div>
     <div class="admin-candidate-body">
-      <div class="title-badges"><span>${escapeHtml(candidate.sourceKind.replace(/_/g, " "))}</span><span>${escapeHtml(promoted)}</span>${localDecision ? `<span>${escapeHtml(localDecision.replace(/_/g, " "))}</span>` : ""}</div>
+      <div class="title-badges"><span>${escapeHtml(sourceKind.replace(/_/g, " "))}</span><span>${escapeHtml(promoted)}</span>${localDecision ? `<span>${escapeHtml(localDecision.replace(/_/g, " "))}</span>` : ""}</div>
       <h2>${escapeHtml(candidate.restaurantName || "Unknown restaurant")}</h2>
       <p>${escapeHtml(candidate.title || candidate.alt || "Thumbnail candidate")}</p>
-      <dl><div><dt>Review</dt><dd>${escapeHtml(candidate.reviewState)}</dd></div><div><dt>Rights</dt><dd>${escapeHtml(candidate.rightsStatus)}</dd></div><div><dt>Confidence</dt><dd>${escapeHtml(candidate.confidence || "unknown")}</dd></div>${restaurantCandidateCount ? `<div><dt>Candidates</dt><dd>${restaurantCandidateCount}</dd></div>` : ""}</dl>
+      <dl><div><dt>Review</dt><dd>${escapeHtml(reviewState)}</dd></div><div><dt>Rights</dt><dd>${escapeHtml(rightsStatus)}</dd></div><div><dt>Confidence</dt><dd>${escapeHtml(candidate.confidence || "unknown")}</dd></div>${restaurantCandidateCount ? `<div><dt>Candidates</dt><dd>${restaurantCandidateCount}</dd></div>` : ""}</dl>
       <div class="admin-candidate-actions">
-        <a class="button tertiary" href="#restaurant/${encodeURIComponent(candidate.restaurantId)}">Restaurant</a>
+        ${restaurantId ? `<a class="button tertiary" href="#restaurant/${encodeURIComponent(restaurantId)}">Restaurant</a>` : ""}
         ${sourceUrl ? `<a class="button tertiary" href="${escapeHtml(sourceUrl)}" target="_blank" rel="noreferrer">Source</a>` : ""}
-        <button type="button" data-thumb-decision="approve_candidate" data-thumb-id="${escapeHtml(candidate.id)}">Mark approve</button>
-        <button type="button" data-thumb-decision="reject_candidate" data-thumb-id="${escapeHtml(candidate.id)}">Reject</button>
+        <button type="button" data-thumb-decision="approve_candidate" data-thumb-id="${escapeHtml(candidate.id || "")}">Mark approve</button>
+        <button type="button" data-thumb-decision="reject_candidate" data-thumb-id="${escapeHtml(candidate.id || "")}">Reject</button>
       </div>
     </div>
   </article>`;
