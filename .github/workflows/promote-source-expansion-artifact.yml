@@ -22,7 +22,7 @@ on:
         default: true
         type: boolean
       include_raw_social_signals:
-        description: Include raw Meta/feed signal artifacts. Leave false unless the run used repo-approved APIs and sanitation passed.
+        description: Include raw Meta social artifacts. Leave false unless the run used repo-approved APIs and sanitation passed.
         required: false
         default: false
         type: boolean
@@ -96,7 +96,26 @@ jobs:
             copy_if_present data/social-signals.js
             copy_if_present data/build/social-signals.json
           else
-            echo "Skipping raw social signal promotion; recent-social-posts.js is the sanitized review surface."
+            echo "Skipping raw Meta social signal promotion; writing an empty raw-social payload so stale main files cannot be republished."
+            node --input-type=module <<'NODE'
+          import { mkdir, writeFile } from "node:fs/promises";
+          const generatedAt = new Date().toISOString();
+          const emptyPayload = {
+            version: 1,
+            generatedAt,
+            credentialState: {
+              facebook: "not_promoted",
+              instagram: "not_promoted"
+            },
+            profilesAttempted: 0,
+            postsObserved: 0,
+            posts: [],
+            signals: []
+          };
+          await mkdir("data/build", { recursive: true });
+          await writeFile("data/build/social-signals.json", `${JSON.stringify(emptyPayload, null, 2)}\n`);
+          await writeFile("data/social-signals.js", `window.HALIFAX_SOCIAL_SIGNALS = ${JSON.stringify(emptyPayload, null, 2)};\n`);
+          NODE
           fi
 
           if [ "$INCLUDE_THUMBNAILS" = "true" ]; then
@@ -151,4 +170,4 @@ jobs:
             --base main \
             --head "$BRANCH" \
             --title "Promote source expansion artifact $RUN_ID" \
-            --body "Promotes source-backed datasets from Source Expansion Preview run $RUN_ID. Raw social API artifacts are promoted only when explicitly enabled; reviewed production media still requires data/restaurant-media.js approval records."
+            --body "Promotes source-backed datasets from Source Expansion Preview run $RUN_ID. Raw Meta social artifacts are promoted only when explicitly enabled; reviewed production media still requires data/restaurant-media.js approval records."
