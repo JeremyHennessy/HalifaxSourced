@@ -162,7 +162,8 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git checkout -b "$BRANCH"
-          git add data docs artifacts
+          git add data docs
+          git add -f artifacts/data-integrity-report.json artifacts/expanded-source-integrity-report.json artifacts/thumbnail-candidates-report.json artifacts/thumbnail-coverage-report.json
           git commit -m "Promote source expansion artifact $RUN_ID"
           git push --set-upstream origin "$BRANCH"
           gh pr create \
