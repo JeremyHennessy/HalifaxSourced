@@ -54,12 +54,12 @@ function currentSpecialCards(limit = 4) {
 function recentPostCard(post) {
   const restaurant = activeRestaurants.find((item) => item.id === post.restaurantId);
   const mediaUrl = safeUrl(post.mediaUrl || post.thumbnailUrl);
-  const postUrl = safeUrl(post.postUrl);
+  const postUrl = safeUrl(post.postUrl || post.sourceUrl);
   const title = post.title || `${post.primaryCategoryLabel || "Restaurant"} update`;
   return `<article class="recent-post-card${mediaUrl ? " has-media" : ""}">
     ${mediaUrl ? `<img src="${escapeHtml(mediaUrl)}" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">` : ""}
     <div>
-      <span class="eyebrow">${escapeHtml(post.primaryCategoryLabel || post.platform || "Update")}</span>
+      <span class="eyebrow">${escapeHtml(post.reviewState === "approved_post" ? "Reviewed update" : (post.primaryCategoryLabel || post.platform || "Update"))}</span>
       <h3>${postUrl ? `<a href="${escapeHtml(postUrl)}" target="_blank" rel="noreferrer">${escapeHtml(title)} ↗</a>` : escapeHtml(title)}</h3>
       <p>${escapeHtml(post.restaurantName || restaurant?.name || "Halifax restaurant")} - ${escapeHtml(dateLabel(post.publishedAt || post.observedAt))}</p>
       ${post.summary ? `<small>${escapeHtml(post.summary)}</small>` : ""}
@@ -91,7 +91,9 @@ function homeRichSections() {
     .sort((a, b) => sourceFreshnessStamp(b).localeCompare(sourceFreshnessStamp(a)) || (b.score || 0) - (a.score || 0))
     .slice(0, 4);
   const specials = currentSpecialCards(4);
-  const posts = recentOfficialPosts
+  const reviewedPosts = Array.isArray(window.HALIFAX_REVIEWED_SOCIAL_POSTS?.records) ? window.HALIFAX_REVIEWED_SOCIAL_POSTS.records : [];
+  const sourceLeadPosts = Array.isArray(recentOfficialPosts) ? recentOfficialPosts : [];
+  const posts = (reviewedPosts.length ? reviewedPosts : sourceLeadPosts)
     .slice()
     .sort((a, b) => String(b.publishedAt || b.observedAt || "").localeCompare(String(a.publishedAt || a.observedAt || "")))
     .slice(0, 4);
@@ -101,7 +103,7 @@ function homeRichSections() {
   if (openPlaces.length) sections.push(`<section class="page-shell section-block home-action-section"><div class="section-heading"><div><span class="eyebrow">Eat tonight</span><h2>Open now with fresh official hours</h2></div><a href="#explore">Explore →</a></div><div class="restaurant-grid">${openPlaces.map((r, i) => restaurantCard(r, { index: i })).join("")}</div></section>`);
   if (recentlySourced.length) sections.push(`<section class="page-shell section-block home-action-section"><div class="section-heading"><div><span class="eyebrow">Recently sourced</span><h2>New source coverage</h2><p>Freshly indexed official websites, menus, social profiles, reservations, ordering links, and local discovery leads.</p></div><a href="#explore?sort=fresh">Explore fresh data →</a></div><div class="fresh-data-grid">${recentlySourced.map(freshSourceCard).join("")}</div></section>`);
   if (specials.length) sections.push(`<section class="page-shell section-block home-action-section"><div class="section-heading"><div><span class="eyebrow">New specials</span><h2>Current verified offers</h2><p>Structured specials and source-backed offer pages, kept separate from unreviewed social leads.</p></div><a href="#specials">All specials →</a></div><div class="restaurant-grid">${specials.join("")}</div></section>`);
-  if (posts.length) sections.push(`<section class="page-shell section-block home-action-section"><div class="section-heading"><div><span class="eyebrow">Recent posts</span><h2>Latest official updates</h2><p>Restaurant-owned feeds and, once Meta secrets are configured, approved Facebook and Instagram API observations.</p></div><a href="#admin/social">Review posts →</a></div><div class="recent-post-grid">${posts.map(recentPostCard).join("")}</div></section>`);
+  if (posts.length) sections.push(`<section class="page-shell section-block home-action-section"><div class="section-heading"><div><span class="eyebrow">Recent posts</span><h2>${reviewedPosts.length ? "Reviewed official updates" : "Latest official updates"}</h2><p>${reviewedPosts.length ? "Admin-approved post intelligence from restaurant-owned sources." : "Restaurant-owned feeds and, once Meta secrets are configured, Facebook and Instagram API observations awaiting review."}</p></div><a href="#admin/social">Review posts →</a></div><div class="recent-post-grid">${posts.map(recentPostCard).join("")}</div></section>`);
   if (thumbnailRestaurants.length) sections.push(`<section class="page-shell section-block home-action-section"><div class="section-heading"><div><span class="eyebrow">New thumbnails added</span><h2>Restaurants with approved images</h2><p>Owner-reviewed official-site thumbnails now appear on cards and detail pages with source attribution.</p></div><a href="#admin/thumbnails">Thumbnail admin →</a></div><div class="restaurant-grid">${thumbnailRestaurants.map((restaurant, index) => restaurantCard(restaurant, { index })).join("")}</div></section>`);
   return sections.join("");
 }
