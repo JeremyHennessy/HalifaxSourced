@@ -1,6 +1,6 @@
 # Halifax Sourced content quality report
 
-Generated: 2026-08-30T19:39:37.558Z
+Generated: 2026-08-31T11:28:10.161Z
 
 ## Summary
 
@@ -18,7 +18,7 @@ Generated: 2026-08-30T19:39:37.558Z
 - **venueResolvedEvents**: 135
 - **organizerResolvedEvents**: 161
 - **restaurantLinkedEvents**: 9
-- **sourceFailures**: 78
+- **sourceFailures**: 76
 - **unresolvedPlaceCandidates**: 207
 - **nameOnlyPlaceReviews**: 33
 - **placeSourceConflicts**: 44
@@ -30,7 +30,7 @@ Generated: 2026-08-30T19:39:37.558Z
 
 ## Freshness
 
-- **firstPartyRelationships**: <7d 978; 7–30d 0; 30–90d 0; >90d 0; unknown 0
+- **firstPartyRelationships**: <7d 1102; 7–30d 0; 30–90d 0; >90d 0; unknown 0
 - **structuredPlaceFacts**: <7d 162; 7–30d 0; 30–90d 0; >90d 0; unknown 0
 - **specials**: <7d 59; 7–30d 9; 30–90d 0; >90d 0; unknown 0
 - **events**: <7d 187; 7–30d 0; 30–90d 0; >90d 0; unknown 0

@@ -1,5 +1,5 @@
 import { existsSync } from "node:fs";
-import { mkdir } from "node:fs/promises";
+import { mkdir, readFile } from "node:fs/promises";
 import { resolve } from "node:path";
 
 const candidates = [
@@ -35,6 +35,12 @@ const consoleErrors = [];
 page.on("console", (message) => { if (message.type() === "error") consoleErrors.push(message.text()); });
 page.on("pageerror", (error) => consoleErrors.push(error.message));
 await mkdir("artifacts", { recursive: true });
+const expectedWebsiteFeedSignals = JSON.parse(await readFile(resolve("data", "build", "website-feed-signals.json"), "utf8"));
+const expectedFeedReviewState = {
+  posts: expectedWebsiteFeedSignals.posts?.length || 0,
+  media: expectedWebsiteFeedSignals.posts?.filter((post) => post.mediaUrl).length || 0,
+  reviewedFeedsExcluded: expectedWebsiteFeedSignals.reviewedFeedsExcluded || 0
+};
 async function captureIphone(name) {
   await page.locator(".toast").evaluateAll((nodes) => nodes.forEach((node) => node.remove()));
   await page.screenshot({ path: resolve("artifacts", `ui-check-iphone-${name}.png`), fullPage: true });
@@ -308,7 +314,11 @@ const feedReviewState = await page.evaluate(() => ({
   media: window.HALIFAX_WEBSITE_FEED_SIGNALS?.posts?.filter((post) => post.mediaUrl).length || 0,
   reviewedFeedsExcluded: window.HALIFAX_WEBSITE_FEED_SIGNALS?.reviewedFeedsExcluded || 0
 }));
-if (feedReviewState.posts !== 19 || feedReviewState.media !== 12 || feedReviewState.reviewedFeedsExcluded !== 5) throw new Error(`Expected the reviewed feed batch in the browser model, got ${JSON.stringify(feedReviewState)}.`);
+if (
+  feedReviewState.posts !== expectedFeedReviewState.posts ||
+  feedReviewState.media !== expectedFeedReviewState.media ||
+  feedReviewState.reviewedFeedsExcluded !== expectedFeedReviewState.reviewedFeedsExcluded
+) throw new Error(`Expected website feed signals to match data/build/website-feed-signals.json: expected ${JSON.stringify(expectedFeedReviewState)}, got ${JSON.stringify(feedReviewState)}.`);
 await page.goto(`${url}/#restaurant/osm-node-5987565464-afrite`, { waitUntil: "networkidle" });
 await page.locator("#detailLinks .source-link-row").first().waitFor();
 const afriteSocialState = await page.evaluate(() => {

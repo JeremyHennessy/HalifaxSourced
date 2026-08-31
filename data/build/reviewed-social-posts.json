@@ -1,4 +1,4 @@
-window.HALIFAX_REVIEWED_SOCIAL_POSTS = {
+{
   "version": 1,
   "generatedAt": "2026-08-31T11:28:09.708Z",
   "decisionManifestGeneratedAt": "2026-08-31T00:00:00.000Z",
@@ -10,4 +10,4 @@ window.HALIFAX_REVIEWED_SOCIAL_POSTS = {
     "platformCounts": {}
   },
   "records": []
-};
+}

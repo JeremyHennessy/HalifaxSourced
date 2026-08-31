@@ -1,0 +1,80 @@
+{
+  "generatedAt": "2026-08-31T11:28:10.484Z",
+  "socialPlatformRegistryVersion": 1,
+  "counts": {
+    "firstPartyRecords": 223,
+    "socialProfiles": 347,
+    "platformCounts": {
+      "facebook": 116,
+      "instagram": 133,
+      "youtube": 12,
+      "x": 61,
+      "tiktok": 13,
+      "pinterest": 3,
+      "linkedin": 7,
+      "bluesky": 2
+    },
+    "linkHubs": 0,
+    "linkHubCounts": {},
+    "associationBasisCounts": {
+      "linked_from_official_website": 335,
+      "jsonld_sameAs": 10,
+      "shared_brand_profile": 1,
+      "linked_from_official_location_page": 1
+    },
+    "relatedLinks": 755,
+    "relatedKindCounts": {
+      "ordering": 174,
+      "reservations": 115,
+      "menu": 407,
+      "events": 54,
+      "newsletter": 4,
+      "tickets": 1
+    },
+    "websiteFeeds": 124,
+    "uniqueRestaurantFeeds": 105,
+    "sharedFeedUrlsSkipped": 7,
+    "reviewedFeedsExcluded": 5,
+    "websiteFeedSignals": 4,
+    "websiteFeedPosts": 11,
+    "uniqueRestaurantSocialProfiles": null,
+    "sharedProfileAssociationsSkipped": 0,
+    "socialSignals": 0,
+    "socialPosts": 0,
+    "recentSocialPosts": 11,
+    "recentSocialPostCategories": {
+      "specials": 3,
+      "openings": 1,
+      "general_update": 5,
+      "brunch": 2
+    },
+    "recentSocialPostPlatforms": {
+      "website_feed": 11
+    }
+  },
+  "credentialState": {
+    "facebook": "not_promoted",
+    "instagram": "not_promoted"
+  },
+  "recentPostState": {
+    "generatedAt": "2026-08-31T11:28:09.674Z",
+    "lookbackDays": 180,
+    "sourceState": {
+      "websiteFeedsGeneratedAt": "2026-08-31T11:21:26.289Z",
+      "metaSocialGeneratedAt": "2026-08-31T11:28:09.624Z",
+      "metaCredentialState": {
+        "facebook": "not_promoted",
+        "instagram": "not_promoted"
+      },
+      "metaProfilesAttempted": 0,
+      "metaPostsObserved": 0
+    }
+  },
+  "failures": [],
+  "warnings": [
+    {
+      "type": "shared_brand_feeds_excluded",
+      "count": 7
+    }
+  ]
+}

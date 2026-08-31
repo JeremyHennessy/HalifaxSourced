@@ -1,0 +1,2057 @@
+{
+  "generatedAt": "2026-08-31T11:28:10.427Z",
+  "counts": {
+    "curated": 10,
+    "osm": 735,
+    "officialSignals": 282,
+    "officialWithValidSite": 281,
+    "officialCandidateLinks": 884,
+    "productionMedia": 37,
+    "ownerSubmissions": 0,
+    "ownerMediaPendingReview": 0,
+    "structuredEvents": 20,
+    "staleStructuredEvents": 0,
+    "verifiedMenuSources": 233,
+    "verifiedSpecialSources": 53,
+    "verifiedSourceFailures": 9,
+    "multiLocationNameGroups": 54,
+    "nearDuplicatePairs": 2,
+    "ambiguousCuratedMatches": 1,
+    "curatedWithoutOsmMatch": 3,
+    "orphanSignals": 0,
+    "halifaxTaggedAsDartmouth": 0
+  },
+  "scope": "Halifax peninsula, Dartmouth, Armdale, Fairview, and immediately surrounding areas",
+  "bbox": {
+    "south": 44.575,
+    "west": -63.69,
+    "north": 44.705,
+    "east": -63.505
+  },
+  "neighbourhoodCounts": [
+    [
+      "Armdale / Fairview",
+      81
+    ],
+    [
+      "Bayers Lake Business Park",
+      7
+    ],
+    [
+      "Bedford",
+      5
+    ],
+    [
+      "Dartmouth",
+      124
+    ],
+    [
+      "Downtown",
+      228
+    ],
+    [
+      "Halifax Peninsula",
+      31
+    ],
+    [
+      "North End",
+      91
+    ],
+    [
+      "Regency Park",
+      2
+    ],
+    [
+      "South End",
+      77
+    ],
+    [
+      "Waterfront",
+      29
+    ],
+    [
+      "West End",
+      60
+    ]
+  ],
+  "multiLocationGroups": [
+    {
+      "key": "timhortons",
+      "name": "Tim Hortons",
+      "count": 38,
+      "locations": [
+        {
+          "id": "osm-node-31794073-tim-hortons",
+          "neighborhood": "North End",
+          "address": "6046 Young Street, Halifax, Nova Scotia",
+          "coordinates": {
+            "lat": 44.6589435,
+            "lon": -63.6018547
+          }
+        },
+        {
+          "id": "osm-node-32335618-tim-hortons",
+          "neighborhood": "Armdale / Fairview",
+          "address": null,
+          "coordinates": {
+            "lat": 44.674829,
+            "lon": -63.6477076
+          }
+        },
+        {
+          "id": "osm-node-33117796-tim-hortons",
+          "neighborhood": "Halifax Peninsula",
+          "address": "6455 Quinpool Road, Halifax, Nova Scotia",
+          "coordinates": {
+            "lat": 44.6442549,
+            "lon": -63.6017843
+          }
+        },
+        {
+          "id": "osm-node-761848503-tim-hortons",
+          "neighborhood": "Waterfront",
+          "address": "1781 Upper Water Street, Halifax",
+          "coordinates": {
+            "lat": 44.6491148,
+            "lon": -63.5722361
+          }
+        },
+        {
+          "id": "osm-node-2712637926-tim-hortons",
+          "neighborhood": "Armdale / Fairview",
+          "address": "278 Lacewood Drive, Halifax, Nova Scotia",
+          "coordinates": {
+            "lat": 44.6617571,
+            "lon": -63.6557219
+          }
+        },
+        {
+          "id": "osm-node-2712689446-tim-hortons",
+          "neighborhood": "Downtown",
+          "address": "5201 Duke Street, Halifax, Nova Scotia",
+          "coordinates": {
+            "lat": 44.6502558,
+            "lon": -63.5763241
+          }
+        },
+        {
+          "id": "osm-node-2737126855-tim-hortons",
+          "neighborhood": "Armdale / Fairview",
+          "address": null,
+          "coordinates": {
+            "lat": 44.6847868,
+            "lon": -63.6751362
+          }
+        },
+        {
+          "id": "osm-node-3275051476-tim-hortons",
+          "neighborhood": "Downtown",
+          "address": null,
+          "coordinates": {
+            "lat": 44.6456281,
+            "lon": -63.5881137
+          }
+        },
+        {
+          "id": "osm-node-3799667157-tim-hortons",
+          "neighborhood": "Downtown",
+          "address": "5639 Spring Garden Road, Halifax",
+          "coordinates": {
+            "lat": 44.6430992,
+            "lon": -63.5773335
+          }
+        },
+        {
+          "id": "osm-node-3957554717-tim-hortons",
+          "neighborhood": "Dartmouth",
+          "address": null,
+          "coordinates": {
+            "lat": 44.6712918,
+            "lon": -63.5262669
+          }
+        },
+        {
+          "id": "osm-node-4421918890-tim-hortons",
+          "neighborhood": "South End",
+          "address": null,
+          "coordinates": {
+            "lat": 44.6368097,
+            "lon": -63.5894317
+          }
+        },
+        {
+          "id": "osm-node-4911809004-tim-hortons",
+          "neighborhood": "Dartmouth",
+          "address": "275 Baker Drive, Dartmouth, Nova Scotia",
+          "coordinates": {
+            "lat": 44.6549934,
+            "lon": -63.5285158
+          }
+        }
+      ]
+    },
+    {
+      "key": "subway",
+      "name": "Subway",
+      "count": 24,
+      "locations": [
+        {
+          "id": "osm-node-33078704-subway",
+          "neighborhood": "Downtown",
+          "address": "5683 Spring Garden Road, Halifax",
+          "coordinates": {
+            "lat": 44.6425545,
+            "lon": -63.5793768
+          }
+        },
+        {
+          "id": "osm-node-815496275-subway",
+          "neighborhood": "Armdale / Fairview",
+          "address": null,
+          "coordinates": {
+            "lat": 44.661604,
+            "lon": -63.6567985
+          }
+        },
+        {
+          "id": "osm-node-1202688542-subway",
+          "neighborhood": "Dartmouth",
+          "address": "26 Bancroft Lane, Dartmouth, Nova Scotia",
+          "coordinates": {
+            "lat": 44.6980135,
+            "lon": -63.6050448
+          }
+        },
+        {
+          "id": "osm-node-1819605596-subway",
+          "neighborhood": "South End",
+          "address": "336 Herring Cove Road, Halifax, Nova Scotia",
+          "coordinates": {
+            "lat": 44.6130166,
+            "lon": -63.6167772
+          }
+        },
+        {
+          "id": "osm-node-2511306498-subway",
+          "neighborhood": "Dartmouth",
+          "address": "380 Pleasant Street, Dartmouth, Nova Scotia",
+          "coordinates": {
+            "lat": 44.6480883,
+            "lon": -63.5458236
+          }
+        },
+        {
+          "id": "osm-node-2611393936-subway",
+          "neighborhood": "Dartmouth",
+          "address": "53 Gale Terrace, Dartmouth, Nova Scotia",
+          "coordinates": {
+            "lat": 44.6990538,
+            "lon": -63.5638436
+          }
+        },
+        {
+          "id": "osm-node-3030036928-subway",
+          "neighborhood": "Downtown",
+          "address": "5201 Duke Street, Halifax, Nova Scotia",
+          "coordinates": {
+            "lat": 44.6502768,
+            "lon": -63.5768416
+          }
+        },
+        {
+          "id": "osm-node-3794287558-subway",
+          "neighborhood": "Downtown",
+          "address": "1661 Argyle Street, Halifax",
+          "coordinates": {
+            "lat": 44.646367,
+            "lon": -63.5742188
+          }
+        },
+        {
+          "id": "osm-node-3800067659-subway",
+          "neighborhood": "Dartmouth",
+          "address": "41 Portland Street, Dartmouth, Nova Scotia",
+          "coordinates": {
+            "lat": 44.6651017,
+            "lon": -63.5674189
+          }
+        },
+        {
+          "id": "osm-node-4081593184-subway",
+          "neighborhood": "South End",
+          "address": "28 St Margarets Bay Road, Halifax, Nova Scotia",
+          "coordinates": {
+            "lat": 44.639769,
+            "lon": -63.6251277
+          }
+        },
+        {
+          "id": "osm-node-4395473556-subway",
+          "neighborhood": "Dartmouth",
+          "address": "100 Ilsley Avenue, Dartmouth, Nova Scotia",
+          "coordinates": {
+            "lat": 44.6998569,
+            "lon": -63.5879009
+          }
+        },
+        {
+          "id": "osm-node-4416665991-subway",
+          "neighborhood": "South End",
+          "address": "5560 Fenwick Street, Halifax, Nova Scotia",
+          "coordinates": {
+            "lat": 44.6379631,
+            "lon": -63.5734673
+          }
+        }
+      ]
+    },
+    {
+      "key": "starbucks",
+      "name": "Starbucks",
+      "count": 17,
+      "locations": [
+        {
+          "id": "osm-node-1672879768-starbucks",
+          "neighborhood": "North End",
+          "address": "5554 Kaye Street, Halifax, Nova Scotia",
+          "coordinates": {
+            "lat": 44.6615387,
+            "lon": -63.5994391
+          }
+        },
+        {
+          "id": "osm-node-1748435000-starbucks",
+          "neighborhood": "Downtown",
+          "address": null,
+          "coordinates": {
+            "lat": 44.6509462,
+            "lon": -63.573187
+          }
+        },
+        {
+          "id": "osm-node-2702731868-starbucks",
+          "neighborhood": "Armdale / Fairview",
+          "address": "20 Parkland Drive, Halifax, Nova Scotia",
+          "coordinates": {
+            "lat": 44.6592458,
+            "lon": -63.6705598
+          }
+        },
+        {
+          "id": "osm-node-2712744153-starbucks",
+          "neighborhood": "Downtown",
+          "address": "5201 Duke Street, Halifax, Nova Scotia",
+          "coordinates": {
+            "lat": 44.6501512,
+            "lon": -63.5764814
+          }
+        },
+        {
+          "id": "osm-node-4416579191-starbucks",
+          "neighborhood": "Downtown",
+          "address": "5640 Spring Garden Road, Halifax, Nova Scotia",
+          "coordinates": {
+            "lat": 44.6426319,
+            "lon": -63.5780257
+          }
+        },
+        {
+          "id": "osm-node-4550005602-starbucks",
+          "neighborhood": "Dartmouth",
+          "address": "547 Portland Street, Dartmouth, Nova Scotia",
+          "coordinates": {
+            "lat": 44.6714431,
+            "lon": -63.5385638
+          }
+        },
+        {
+          "id": "osm-node-5056880420-starbucks",
+          "neighborhood": "Dartmouth",
+          "address": null,
+          "coordinates": {
+            "lat": 44.6893344,
+            "lon": -63.5608386
+          }
+        },
+        {
+          "id": "osm-node-5150371021-starbucks",
+          "neighborhood": "Armdale / Fairview",
+          "address": "535 Larry Uteck Boulevard, Halifax, Nova Scotia",
+          "coordinates": {
+            "lat": 44.7013347,
+            "lon": -63.6783382
+          }
+        },
+        {
+          "id": "osm-node-9520194451-starbucks",
+          "neighborhood": "Dartmouth",
+          "address": "650 Portland Street, Dartmouth, Nova Scotia",
+          "coordinates": {
+            "lat": 44.6703156,
+            "lon": -63.5230198
+          }
+        },
+        {
+          "id": "osm-node-10052207437-starbucks",
+          "neighborhood": "Bayers Lake Business Park",
+          "address": "86 Chain Lake Drive, Beechville, Nova Scotia",
+          "coordinates": {
+            "lat": 44.6372607,
+            "lon": -63.6694863
+          }
+        },
+        {
+          "id": "osm-node-11526163876-starbucks",
+          "neighborhood": "South End",
+          "address": "5850 College Street, Halifax, Nova Scotia",
+          "coordinates": {
+            "lat": 44.6392626,
+            "lon": -63.5836516
+          }
+        },
+        {
+          "id": "osm-node-11699350869-starbucks",
+          "neighborhood": "Armdale / Fairview",
+          "address": "210 Chain Lake Drive, Halifax",
+          "coordinates": {
+            "lat": 44.6539196,
+            "lon": -63.6742018
+          }
+        }
+      ]
+    },
+    {
+      "key": "mcdonalds",
+      "name": "McDonald's",
+      "count": 15,
+      "locations": [
+        {
+          "id": "osm-node-33078674-mcdonald-s",
+          "neighborhood": "Downtown",
+          "address": "5677 Spring Garden Road, Halifax",
+          "coordinates": {
+            "lat": 44.6426012,
+            "lon": -63.5791223
+          }
+        },
+        {
+          "id": "osm-node-478118760-mcdonald-s",
+          "neighborhood": "North End",
+          "address": null,
+          "coordinates": {
+            "lat": 44.6983497,
+            "lon": -63.6056795
+          }
+        },
+        {
+          "id": "osm-node-626615920-mcdonald-s",
+          "neighborhood": "Dartmouth",
+          "address": "90 Lamont Terrace, Dartmouth, Nova Scotia",
+          "coordinates": {
+            "lat": 44.6972983,
+            "lon": -63.5688119
+          }
+        },
+        {
+          "id": "osm-node-2712689447-mcdonald-s",
+          "neighborhood": "Downtown",
+          "address": "5201 Duke Street, Halifax, Nova Scotia",
+          "coordinates": {
+            "lat": 44.6503302,
+            "lon": -63.5765655
+          }
+        },
+        {
+          "id": "osm-node-3034604253-mcdonald-s",
+          "neighborhood": "Halifax Peninsula",
+          "address": "6982 Mumford Road, Halifax, Nova Scotia",
+          "coordinates": {
+            "lat": 44.6471045,
+            "lon": -63.6197262
+          }
+        },
+        {
+          "id": "osm-node-8593116375-mcdonald-s",
+          "neighborhood": "Armdale / Fairview",
+          "address": "272 Lacewood Drive, Halifax, Nova Scotia",
+          "coordinates": {
+            "lat": 44.6621783,
+            "lon": -63.6558795
+          }
+        },
+        {
+          "id": "osm-node-13141551801-mcdonald-s",
+          "neighborhood": "Downtown",
+          "address": "6304 Quinpool Road, Halifax, Nova Scotia",
+          "coordinates": {
+            "lat": 44.644883,
+            "lon": -63.5985622
+          }
+        },
+        {
+          "id": "osm-way-98830027-mcdonald-s",
+          "neighborhood": "Dartmouth",
+          "address": "25 Nantucket Avenue, Dartmouth, Nova Scotia",
+          "coordinates": {
+            "lat": 44.6715747,
+            "lon": -63.5759849
+          }
+        },
+        {
+          "id": "osm-way-171149707-mcdonald-s",
+          "neighborhood": "Bayers Lake Business Park",
+          "address": "193 Chain Lake Drive, Beechville, Nova Scotia",
+          "coordinates": {
+            "lat": 44.6490669,
+            "lon": -63.6760453
+          }
+        },
+        {
+          "id": "osm-way-181621820-mcdonald-s",
+          "neighborhood": "West End",
+          "address": "3486 Kempt Road, Halifax, Nova Scotia",
+          "coordinates": {
+            "lat": 44.6617091,
+            "lon": -63.6137377
+          }
+        },
+        {
+          "id": "osm-way-224636906-mcdonald-s",
+          "neighborhood": "Dartmouth",
+          "address": "393 Pleasant Street, Dartmouth, Nova Scotia",
+          "coordinates": {
+            "lat": 44.6479245,
+            "lon": -63.5440682
+          }
+        },
+        {
+          "id": "osm-way-240110229-mcdonald-s",
+          "neighborhood": "Dartmouth",
+          "address": "144 Main Street, Dartmouth, Nova Scotia",
+          "coordinates": {
+            "lat": 44.6818172,
+            "lon": -63.5376538
+          }
+        }
+      ]
+    },
+    {
+      "key": "wendys",
+      "name": "Wendy's",
+      "count": 6,
+      "locations": [
+        {
+          "id": "osm-node-2714150702-wendy-s",
+          "neighborhood": "Downtown",
+          "address": "6169 Quinpool Road, Halifax, Nova Scotia",
+          "coordinates": {
+            "lat": 44.6462188,
+            "lon": -63.5953072
+          }
+        },
+        {
+          "id": "osm-node-4924076574-wendy-s",
+          "neighborhood": "Dartmouth",
+          "address": "106 Ilsley Avenue, Dartmouth, Nova Scotia",
+          "coordinates": {
+            "lat": 44.6985299,
+            "lon": -63.5859987
+          }
+        },
+        {
+          "id": "osm-way-98830026-wendy-s",
+          "neighborhood": "Dartmouth",
+          "address": "138 Wyse Road, Dartmouth, Nova Scotia",
+          "coordinates": {
+            "lat": 44.6711773,
+            "lon": -63.5788755
+          }
+        },
+        {
+          "id": "osm-way-173999394-wendy-s",
+          "neighborhood": "Armdale / Fairview",
+          "address": "11 Lakelands Boulevard",
+          "coordinates": {
+            "lat": 44.6365829,
+            "lon": -63.6680361
+          }
+        },
+        {
+          "id": "osm-way-181624111-wendy-s",
+          "neighborhood": "West End",
+          "address": "3580 Kempt Road, Halifax, Nova Scotia",
+          "coordinates": {
+            "lat": 44.6618224,
+            "lon": -63.6167769
+          }
+        },
+        {
+          "id": "osm-way-358577248-wendy-s",
+          "neighborhood": "Dartmouth",
+          "address": "583 Portland Street, Dartmouth, Nova Scotia",
+          "coordinates": {
+            "lat": 44.6715253,
+            "lon": -63.5325344
+          }
+        }
+      ]
+    },
+    {
+      "key": "aw",
+      "name": "A&W",
+      "count": 5,
+      "locations": [
+        {
+          "id": "osm-node-2712744136-a-and-w",
+          "neighborhood": "Downtown",
+          "address": "5201 Duke Street, Halifax, Nova Scotia",
+          "coordinates": {
+            "lat": 44.6502772,
+            "lon": -63.5766987
+          }
+        },
+        {
+          "id": "osm-node-8066235499-a-and-w",
+          "neighborhood": "Dartmouth",
+          "address": "21 Micmac Boulevard, Dartmouth, Nova Scotia",
+          "coordinates": {
+            "lat": 44.6862125,
+            "lon": -63.5595475
+          }
+        },
+        {
+          "id": "osm-node-13944251182-a-and-w",
+          "neighborhood": "Dartmouth",
+          "address": "240 Victoria Road, Dartmouth, Nova Scotia",
+          "coordinates": {
+            "lat": 44.6793706,
+            "lon": -63.5833781
+          }
+        },
+        {
+          "id": "osm-way-171149714-a-and-w",
+          "neighborhood": "Armdale / Fairview",
+          "address": "Halifax, Nova Scotia",
+          "coordinates": {
+            "lat": 44.6531423,
+            "lon": -63.6778335
+          }
+        },
+        {
+          "id": "osm-way-1047164106-a-and-w",
+          "neighborhood": "Armdale / Fairview",
+          "address": null,
+          "coordinates": {
+            "lat": 44.6967803,
+            "lon": -63.6898831
+          }
+        }
+      ]
+    },
+    {
+      "key": "alexandraspizza",
+      "name": "Alexandra's Pizza",
+      "count": 4,
+      "locations": [
+        {
+          "id": "osm-node-1139388774-alexandra-s-pizza",
+          "neighborhood": "Downtown",
+          "address": "1735 Grafton Street",
+          "coordinates": {
+            "lat": 44.6474767,
+            "lon": -63.5755055
+          }
+        },
+        {
+          "id": "osm-node-2714920427-alexandra-s-pizza",
+          "neighborhood": "West End",
+          "address": "14 Titus Street, Halifax",
+          "coordinates": {
+            "lat": 44.6591785,
+            "lon": -63.6342457
+          }
+        },
+        {
+          "id": "osm-node-6299280970-alexandra-s-pizza",
+          "neighborhood": "Dartmouth",
+          "address": "211 Pleasant Street, Dartmouth, Nova Scotia",
+          "coordinates": {
+            "lat": 44.6605746,
+            "lon": -63.551258
+          }
+        },
+        {
+          "id": "osm-node-4797021954-alexandras-pizza",
+          "neighborhood": "South End",
+          "address": null,
+          "coordinates": {
+            "lat": 44.6103808,
+            "lon": -63.6167751
+          }
+        }
+      ]
+    },
+    {
+      "key": "boosterjuice",
+      "name": "Booster Juice",
+      "count": 4,
+      "locations": [
+        {
+          "id": "osm-node-2716971771-booster-juice",
+          "neighborhood": "Armdale / Fairview",
+          "address": "278 Lacewood Drive, Halifax, Nova Scotia",
+          "coordinates": {
+            "lat": 44.661119,
+            "lon": -63.6555632
+          }
+        },
+        {
+          "id": "osm-node-7139174643-booster-juice",
+          "neighborhood": "North End",
+          "address": "6140 Young Street, Halifax, Nova Scotia",
+          "coordinates": {
+            "lat": 44.6576767,
+            "lon": -63.6040977
+          }
+        },
+        {
+          "id": "osm-node-8636456775-booster-juice",
+          "neighborhood": "Armdale / Fairview",
+          "address": "14 Peakview Way, Halifax, Nova Scotia",
+          "coordinates": {
+            "lat": 44.7000559,
+            "lon": -63.6872258
+          }
+        },
+        {
+          "id": "osm-node-12007395292-booster-juice",
+          "neighborhood": "Dartmouth",
+          "address": "135 McClure Close, Dartmouth",
+          "coordinates": {
+            "lat": 44.70298,
+            "lon": -63.5633175
+          }
+        }
+      ]
+    },
+    {
+      "key": "burgerking",
+      "name": "Burger King",
+      "count": 4,
+      "locations": [
+        {
+          "id": "osm-node-620090343-burger-king",
+          "neighborhood": "North End",
+          "address": null,
+          "coordinates": {
+            "lat": 44.6983611,
+            "lon": -63.5845405
+          }
+        },
+        {
+          "id": "osm-node-1920486474-burger-king",
+          "neighborhood": "North End",
+          "address": "6049 Young Street, Halifax, Nova Scotia",
+          "coordinates": {
+            "lat": 44.6591897,
+            "lon": -63.6036401
+          }
+        },
+        {
+          "id": "osm-way-171149719-burger-king",
+          "neighborhood": "Armdale / Fairview",
+          "address": "Halifax, Nova Scotia",
+          "coordinates": {
+            "lat": 44.6512061,
+            "lon": -63.6764517
+          }
+        },
+        {
+          "id": "osm-way-240110431-burger-king",
+          "neighborhood": "Dartmouth",
+          "address": "88 Tacoma Drive, Dartmouth, Nova Scotia",
+          "coordinates": {
+            "lat": 44.680089,
+            "lon": -63.5369287
+          }
+        }
+      ]
+    },
+    {
+      "key": "kfc",
+      "name": "KFC",
+      "count": 4,
+      "locations": [
+        {
+          "id": "osm-node-8066235495-kfc",
+          "neighborhood": "Dartmouth",
+          "address": "21 Micmac Boulevard, Dartmouth, Nova Scotia",
+          "coordinates": {
+            "lat": 44.6861604,
+            "lon": -63.5597145
+          }
+        },
+        {
+          "id": "osm-way-240110430-kfc",
+          "neighborhood": "Dartmouth",
+          "address": "75 Tacoma Drive, Dartmouth, Nova Scotia",
+          "coordinates": {
+            "lat": 44.6810789,
+            "lon": -63.5376842
+          }
+        },
+        {
+          "id": "osm-way-265884302-kfc",
+          "neighborhood": "West End",
+          "address": "18 Titus Street, Halifax",
+          "coordinates": {
+            "lat": 44.6595597,
+            "lon": -63.63484
+          }
+        },
+        {
+          "id": "osm-way-466806758-kfc",
+          "neighborhood": "Downtown",
+          "address": "6310 Quinpool Road, Halifax, Nova Scotia",
+          "coordinates": {
+            "lat": 44.6447676,
+            "lon": -63.5987253
+          }
+        }
+      ]
+    },
+    {
+      "key": "pizzapizza",
+      "name": "Pizza Pizza",
+      "count": 4,
+      "locations": [
+        {
+          "id": "osm-node-1910935393-pizza-pizza",
+          "neighborhood": "Armdale / Fairview",
+          "address": "75 Peakview Way, Halifax, Nova Scotia",
+          "coordinates": {
+            "lat": 44.6977758,
+            "lon": -63.6858761
+          }
+        },
+        {
+          "id": "osm-node-5863968665-pizza-pizza",
+          "neighborhood": "Downtown",
+          "address": "1565 Argyle Street",
+          "coordinates": {
+            "lat": 44.6452392,
+            "lon": -63.5737132
+          }
+        },
+        {
+          "id": "osm-node-11526163880-pizza-pizza",
+          "neighborhood": "South End",
+          "address": null,
+          "coordinates": {
+            "lat": 44.635925,
+            "lon": -63.5937575
+          }
+        },
+        {
+          "id": "osm-node-13073162601-pizza-pizza",
+          "neighborhood": "Halifax Peninsula",
+          "address": "6954 Mumford Road",
+          "coordinates": {
+            "lat": 44.6462842,
+            "lon": -63.6182394
+          }
+        }
+      ]
+    },
+    {
+      "key": "secondcup",
+      "name": "Second Cup",
+      "count": 4,
+      "locations": [
+        {
+          "id": "osm-node-620090340-second-cup",
+          "neighborhood": "Dartmouth",
+          "address": "49 Gale Terrace, Dartmouth, Nova Scotia",
+          "coordinates": {
+            "lat": 44.6991881,
+            "lon": -63.5638562
+          }
+        },
+        {
+          "id": "osm-node-4678751901-second-cup",
+          "neighborhood": "Dartmouth",
+          "address": "660 Portland Street, Dartmouth, Nova Scotia",
+          "coordinates": {
+            "lat": 44.6715181,
+            "lon": -63.524278
+          }
+        },
+        {
+          "id": "osm-node-11526163888-second-cup",
+          "neighborhood": "South End",
+          "address": null,
+          "coordinates": {
+            "lat": 44.6373736,
+            "lon": -63.5910458
+          }
+        },
+        {
+          "id": "osm-node-11699344564-second-cup",
+          "neighborhood": "Armdale / Fairview",
+          "address": "185 Chain Lake Drive, Halifax",
+          "coordinates": {
+            "lat": 44.6463138,
+            "lon": -63.6740875
+          }
+        }
+      ]
+    },
+    {
+      "key": "bostonpizza",
+      "name": "Boston Pizza",
+      "count": 3,
+      "locations": [
+        {
+          "id": "osm-node-1139389219-boston-pizza",
+          "neighborhood": "Downtown",
+          "address": "1858 Granville Street, Halifax, Nova Scotia",
+          "coordinates": {
+            "lat": 44.6494311,
+            "lon": -63.5746509
+          }
+        },
+        {
+          "id": "osm-way-171149704-boston-pizza",
+          "neighborhood": "Armdale / Fairview",
+          "address": "Halifax, Nova Scotia",
+          "coordinates": {
+            "lat": 44.649862,
+            "lon": -63.6744954
+          }
+        },
+        {
+          "id": "osm-way-393886756-boston-pizza",
+          "neighborhood": "Dartmouth",
+          "address": "611 Portland Street, Dartmouth",
+          "coordinates": {
+            "lat": 44.6711944,
+            "lon": -63.5302506
+          }
+        }
+      ]
+    },
+    {
+      "key": "dairyqueen",
+      "name": "Dairy Queen",
+      "count": 3,
+      "locations": [
+        {
+          "id": "osm-node-8066235509-dairy-queen",
+          "neighborhood": "Dartmouth",
+          "address": "21 Micmac Boulevard, Dartmouth, Nova Scotia",
+          "coordinates": {
+            "lat": 44.6862242,
+            "lon": -63.5597455
+          }
+        },
+        {
+          "id": "osm-way-224130096-dairy-queen",
+          "neighborhood": "Dartmouth",
+          "address": "162 Main Street, Dartmouth, Nova Scotia",
+          "coordinates": {
+            "lat": 44.6823115,
+            "lon": -63.5361953
+          }
+        },
+        {
+          "id": "osm-way-366167050-dairy-queen",
+          "neighborhood": "West End",
+          "address": "3515 Dutch Village Road, Halifax, Nova Scotia",
+          "coordinates": {
+            "lat": 44.6560307,
+            "lon": -63.6314222
+          }
+        }
+      ]
+    },
+    {
+      "key": "dominos",
+      "name": "Domino's",
+      "count": 3,
+      "locations": [
+        {
+          "id": "osm-node-2702737177-domino-s",
+          "neighborhood": "Armdale / Fairview",
+          "address": "480 Parkland Drive, Halifax, Nova Scotia",
+          "coordinates": {
+            "lat": 44.6711534,
+            "lon": -63.6765319
+          }
+        },
+        {
+          "id": "osm-node-5018125657-domino-s",
+          "neighborhood": "North End",
+          "address": "3580 Novalea Drive, Halifax, Nova Scotia",
+          "coordinates": {
+            "lat": 44.6684786,
+            "lon": -63.6077783
+          }
+        },
+        {
+          "id": "osm-node-8600636444-domino-s",
+          "neighborhood": "Dartmouth",
+          "address": "50 Tacoma Drive",
+          "coordinates": {
+            "lat": 44.680065,
+            "lon": -63.5395209
+          }
+        }
+      ]
+    },
+    {
+      "key": "harveys",
+      "name": "Harvey's",
+      "count": 3,
+      "locations": [
+        {
+          "id": "osm-node-3545533833-harvey-s",
+          "neighborhood": "Armdale / Fairview",
+          "address": null,
+          "coordinates": {
+            "lat": 44.654864,
+            "lon": -63.6772576
+          }
+        },
+        {
+          "id": "osm-node-6133453706-harvey-s",
+          "neighborhood": "Dartmouth",
+          "address": "106 Main Street, Dartmouth, Nova Scotia",
+          "coordinates": {
+            "lat": 44.6811841,
+            "lon": -63.5413454
+          }
+        },
+        {
+          "id": "osm-way-366157181-harvey-s",
+          "neighborhood": "West End",
+          "address": "3462 Kempt Road, Halifax, Nova Scotia",
+          "coordinates": {
+            "lat": 44.6617868,
+            "lon": -63.6131422
+          }
+        }
+      ]
+    },
+    {
+      "key": "jessyspizza",
+      "name": "Jessy's Pizza",
+      "count": 3,
+      "locations": [
+        {
+          "id": "osm-node-30915299-jessy-s-pizza",
+          "neighborhood": "Armdale / Fairview",
+          "address": null,
+          "coordinates": {
+            "lat": 44.6728239,
+            "lon": -63.6655131
+          }
+        },
+        {
+          "id": "osm-node-1920717385-jessy-s-pizza",
+          "neighborhood": "North End",
+          "address": null,
+          "coordinates": {
+            "lat": 44.6988914,
+            "lon": -63.6029547
+          }
+        },
+        {
+          "id": "osm-node-1634822945-jessys-pizza",
+          "neighborhood": "North End",
+          "address": "6041 North Street, Halifax, Nova Scotia",
+          "coordinates": {
+            "lat": 44.6542659,
+            "lon": -63.5959663
+          }
+        }
+      ]
+    },
+    {
+      "key": "kingofdonair",
+      "name": "King of Donair",
+      "count": 3,
+      "locations": [
+        {
+          "id": "osm-node-2716971768-king-of-donair",
+          "neighborhood": "Armdale / Fairview",
+          "address": "278 Lacewood Drive, Halifax, Nova Scotia",
+          "coordinates": {
+            "lat": 44.6609181,
+            "lon": -63.6559812
+          }
+        },
+        {
+          "id": "osm-node-3104142670-king-of-donair",
+          "neighborhood": "Halifax Peninsula",
+          "address": "6422 Quinpool Road, Halifax, Nova Scotia",
+          "coordinates": {
+            "lat": 44.6442359,
+            "lon": -63.60084
+          }
+        },
+        {
+          "id": "osm-node-9128392205-king-of-donair",
+          "neighborhood": "Dartmouth",
+          "address": "451 Windmill Road, Dartmouth, Nova Scotia",
+          "coordinates": {
+            "lat": 44.6852045,
+            "lon": -63.5994425
+          }
+        }
+      ]
+    },
+    {
+      "key": "pitapit",
+      "name": "Pita Pit",
+      "count": 3,
+      "locations": [
+        {
+          "id": "osm-node-2721708536-pita-pit",
+          "neighborhood": "Downtown",
+          "address": "5475 Spring Garden Road, Halifax",
+          "coordinates": {
+            "lat": 44.6433384,
+            "lon": -63.5762527
+          }
+        },
+        {
+          "id": "osm-node-4915907943-pita-pit",
+          "neighborhood": "Armdale / Fairview",
+          "address": "81 Peakview Way, Halifax, Nova Scotia",
+          "coordinates": {
+            "lat": 44.6983763,
+            "lon": -63.6850968
+          }
+        },
+        {
+          "id": "osm-node-12139021297-pita-pit",
+          "neighborhood": "Dartmouth",
+          "address": "15 Cuddy Lane, Dartmouth",
+          "coordinates": {
+            "lat": 44.7000607,
+            "lon": -63.6070429
+          }
+        }
+      ]
+    },
+    {
+      "key": "pizzadelight",
+      "name": "Pizza Delight",
+      "count": 3,
+      "locations": [
+        {
+          "id": "osm-node-3791840159-pizza-delight",
+          "neighborhood": "Downtown",
+          "address": "5680 Spring Garden Road, Halifax",
+          "coordinates": {
+            "lat": 44.6423934,
+            "lon": -63.5789723
+          }
+        },
+        {
+          "id": "osm-node-8066235505-pizza-delight",
+          "neighborhood": "Dartmouth",
+          "address": "21 Micmac Boulevard, Dartmouth, Nova Scotia",
+          "coordinates": {
+            "lat": 44.6861358,
+            "lon": -63.559698
+          }
+        },
+        {
+          "id": "osm-way-171149722-pizza-delight",
+          "neighborhood": "Armdale / Fairview",
+          "address": null,
+          "coordinates": {
+            "lat": 44.6521609,
+            "lon": -63.6771053
+          }
+        }
+      ]
+    },
+    {
+      "key": "swisschalet",
+      "name": "Swiss Chalet",
+      "count": 3,
+      "locations": [
+        {
+          "id": "osm-node-30945181-swiss-chalet",
+          "neighborhood": "Armdale / Fairview",
+          "address": "358 Lacewood Drive, Halifax",
+          "coordinates": {
+            "lat": 44.6584183,
+            "lon": -63.6697926
+          }
+        },
+        {
+          "id": "osm-node-4696483837-swiss-chalet",
+          "neighborhood": "Dartmouth",
+          "address": "106 Main Street, Dartmouth, Nova Scotia",
+          "coordinates": {
+            "lat": 44.6814423,
+            "lon": -63.5413509
+          }
+        },
+        {
+          "id": "osm-way-366157259-swiss-chalet",
+          "neighborhood": "West End",
+          "address": "3434 Kempt Road, Halifax, Nova Scotia",
+          "coordinates": {
+            "lat": 44.6620104,
+            "lon": -63.6121589
+          }
+        }
+      ]
+    },
+    {
+      "key": "barkismet",
+      "name": "Bar Kismet",
+      "count": 2,
+      "locations": [
+        {
+          "id": "osm-node-5134084721-bar-kismet",
+          "neighborhood": "North End",
+          "address": "2733 Agricola Street, Halifax, Nova Scotia",
+          "coordinates": {
+            "lat": 44.657464,
+            "lon": -63.5961815
+          }
+        },
+        {
+          "id": "osm-way-462587944-bar-kismet",
+          "neighborhood": "West End",
+          "address": null,
+          "coordinates": {
+            "lat": 44.6575129,
+            "lon": -63.5961889
+          }
+        }
+      ]
+    },
+    {
+      "key": "bubbarayssportsbar",
+      "name": "Bubba Ray's Sports Bar",
+      "count": 2,
+      "locations": [
+        {
+          "id": "osm-node-2721726004-bubba-ray-s-sports-bar",
+          "neighborhood": "Downtown",
+          "address": "5650 Spring Garden Road, Halifax, Nova Scotia",
+          "coordinates": {
+            "lat": 44.6425118,
+            "lon": -63.5784472
+          }
+        },
+        {
+          "id": "osm-node-3789619357-bubba-ray-s-sports-bar",
+          "neighborhood": "Downtown",
+          "address": "5650 Spring Garden Road, Halifax, Nova Scotia",
+          "coordinates": {
+            "lat": 44.6425642,
+            "lon": -63.5779222
+          }
+        }
+      ]
+    },
+    {
+      "key": "burritojax",
+      "name": "Burrito Jax",
+      "count": 2,
+      "locations": [
+        {
+          "id": "osm-node-1785456866-burrito-jax",
+          "neighborhood": "Downtown",
+          "address": "5215 Blowers Street, Halifax",
+          "coordinates": {
+            "lat": 44.6452819,
+            "lon": -63.5734885
+          }
+        },
+        {
+          "id": "osm-node-11532103797-burrito-jax",
+          "neighborhood": "North End",
+          "address": "3117 Kempt Road, Halifax, Nova Scotia",
+          "coordinates": {
+            "lat": 44.6595459,
+            "lon": -63.6033328
+          }
+        }
+      ]
+    },
+    {
+      "key": "cafelara",
+      "name": "Café Lara",
+      "count": 2,
+      "locations": [
+        {
+          "id": "osm-node-9089629991-cafe-lara",
+          "neighborhood": "North End",
+          "address": "2347 Agricola Street, Halifax, Nova Scotia",
+          "coordinates": {
+            "lat": 44.6522491,
+            "lon": -63.588846
+          }
+        },
+        {
+          "id": "osm-node-12824690512-cafe-lara",
+          "neighborhood": "West End",
+          "address": null,
+          "coordinates": {
+            "lat": 44.6595719,
+            "lon": -63.603437
+          }
+        }
+      ]
+    },
+    {
+      "key": "cafelunette",
+      "name": "Café Lunette",
+      "count": 2,
+      "locations": [
+        {
+          "id": "osm-node-11751643550-cafe-lunette",
+          "neighborhood": "Waterfront",
+          "address": "1741 Lower Water Street, Halifax, Nova Scotia",
+          "coordinates": {
+            "lat": 44.6487433,
+            "lon": -63.5716121
+          }
+        },
+        {
+          "id": "osm-node-12984675528-cafe-lunette",
+          "neighborhood": "Downtown",
+          "address": null,
+          "coordinates": {
+            "lat": 44.6488755,
+            "lon": -63.5716945
+          }
+        }
+      ]
+    },
+    {
+      "key": "chabaathai",
+      "name": "Cha Baa Thai",
+      "count": 2,
+      "locations": [
+        {
+          "id": "osm-node-2721708515-cha-baa-thai",
+          "neighborhood": "Downtown",
+          "address": "1546 Queen Street, Halifax",
+          "coordinates": {
+            "lat": 44.6440175,
+            "lon": -63.5770688
+          }
+        },
+        {
+          "id": "osm-node-11609580961-cha-baa-thai",
+          "neighborhood": "West End",
+          "address": null,
+          "coordinates": {
+            "lat": 44.6596682,
+            "lon": -63.6010839
+          }
+        }
+      ]
+    },
+    {
+      "key": "chatime",
+      "name": "Chatime",
+      "count": 2,
+      "locations": [
+        {
+          "id": "osm-node-5160893922-chatime",
+          "neighborhood": "Downtown",
+          "address": "1480 Brenton Street, Halifax, Nova Scotia",
+          "coordinates": {
+            "lat": 44.642195,
+            "lon": -63.5787269
+          }
+        },
+        {
+          "id": "osm-way-1268243127-chatime",
+          "neighborhood": "West End",
+          "address": "7001 Mumford Road, Halifax",
+          "coordinates": {
+            "lat": 44.6494878,
+            "lon": -63.6176198
+          }
+        }
+      ]
+    },
+    {
+      "key": "cora",
+      "name": "Cora",
+      "count": 2,
+      "locations": [
+        {
+          "id": "osm-node-3799422457-cora",
+          "neighborhood": "Downtown",
+          "address": "1535 Dresden Row, Halifax",
+          "coordinates": {
+            "lat": 44.6434802,
+            "lon": -63.5780659
+          }
+        },
+        {
+          "id": "osm-node-11867490075-cora",
+          "neighborhood": "Dartmouth",
+          "address": "644 Portland Street, Dartmouth, Nova Scotia",
+          "coordinates": {
+            "lat": 44.6706436,
+            "lon": -63.5257396
+          }
+        }
+      ]
+    },
+    {
+      "key": "costcofoodcourt",
+      "name": "Costco Food Court",
+      "count": 2,
+      "locations": [
+        {
+          "id": "osm-node-12718532662-costco-food-court",
+          "neighborhood": "Armdale / Fairview",
+          "address": null,
+          "coordinates": {
+            "lat": 44.6563987,
+            "lon": -63.6759475
+          }
+        },
+        {
+          "id": "osm-node-12718612064-costco-food-court",
+          "neighborhood": "Halifax Peninsula",
+          "address": null,
+          "coordinates": {
+            "lat": 44.7048091,
+            "lon": -63.5665592
+          }
+        }
+      ]
+    },
+    {
+      "key": "cows",
+      "name": "Cow's",
+      "count": 2,
+      "locations": [
+        {
+          "id": "osm-node-3791471657-cow-s",
+          "neighborhood": "Downtown",
+          "address": "5639 Spring Garden Road, Halifax, Nova Scotia",
+          "coordinates": {
+            "lat": 44.6428171,
+            "lon": -63.5782096
+          }
+        },
+        {
+          "id": "osm-node-11165031880-cow-s",
+          "neighborhood": "Waterfront",
+          "address": "1479 Lower Water Street, Halifax, Nova Scotia",
+          "coordinates": {
+            "lat": 44.644786,
+            "lon": -63.5682459
+          }
+        }
+      ]
+    },
+    {
+      "key": "elagreektaverna",
+      "name": "Ela Greek Taverna",
+      "count": 2,
+      "locations": [
+        {
+          "id": "osm-node-762250248-ela-greek-taverna",
+          "neighborhood": "Dartmouth",
+          "address": "150 Hector Gate, Dartmouth",
+          "coordinates": {
+            "lat": 44.7049428,
+            "lon": -63.5616074
+          }
+        },
+        {
+          "id": "osm-node-2705686566-ela-greek-taverna",
+          "neighborhood": "Bayers Lake Business Park",
+          "address": "215 Chain Lake Drive, Beechville, Nova Scotia",
+          "coordinates": {
+            "lat": 44.6528656,
+            "lon": -63.6783037
+          }
+        }
+      ]
+    },
+    {
+      "key": "fiveguys",
+      "name": "Five Guys",
+      "count": 2,
+      "locations": [
+        {
+          "id": "osm-node-7674190035-five-guys",
+          "neighborhood": "Downtown",
+          "address": "1630 Argyle Street, Halifax, Nova Scotia",
+          "coordinates": {
+            "lat": 44.6464809,
+            "lon": -63.5746807
+          }
+        },
+        {
+          "id": "osm-node-11699350872-five-guys",
+          "neighborhood": "Armdale / Fairview",
+          "address": null,
+          "coordinates": {
+            "lat": 44.6520618,
+            "lon": -63.6753437
+          }
+        }
+      ]
+    },
+    {
+      "key": "freshlysqueezed",
+      "name": "Freshly Squeezed",
+      "count": 2,
+      "locations": [
+        {
+          "id": "osm-node-33078684-freshly-squeezed",
+          "neighborhood": "Downtown",
+          "address": "Spring Garden Road, Halifax",
+          "coordinates": {
+            "lat": 44.6425711,
+            "lon": -63.5793245
+          }
+        },
+        {
+          "id": "osm-way-1268236935-freshly-squeezed",
+          "neighborhood": "West End",
+          "address": "7001 Mumford Road, Halifax",
+          "coordinates": {
+            "lat": 44.6494698,
+            "lon": -63.6180664
+          }
+        }
+      ]
+    },
+    {
+      "key": "kebabkitchen",
+      "name": "Kebab Kitchen",
+      "count": 2,
+      "locations": [
+        {
+          "id": "osm-node-2712744143-kebab-kitchen",
+          "neighborhood": "Downtown",
+          "address": "5201 Duke Street, Halifax, Nova Scotia",
+          "coordinates": {
+            "lat": 44.6504241,
+            "lon": -63.5763607
+          }
+        },
+        {
+          "id": "osm-node-11428244384-kebab-kitchen",
+          "neighborhood": "Dartmouth",
+          "address": "600 Windmill Road, Dartmouth",
+          "coordinates": {
+            "lat": 44.697431,
+            "lon": -63.6013846
+          }
+        }
+      ]
+    },
+    {
+      "key": "kraveburger",
+      "name": "Krave Burger",
+      "count": 2,
+      "locations": [
+        {
+          "id": "osm-node-3791840157-krave-burger",
+          "neighborhood": "Downtown",
+          "address": "5680 Spring Garden Road, Halifax",
+          "coordinates": {
+            "lat": 44.6423641,
+            "lon": -63.5790632
+          }
+        },
+        {
+          "id": "osm-node-12143325435-krave-burger",
+          "neighborhood": "Dartmouth",
+          "address": "370 Pleasant Street",
+          "coordinates": {
+            "lat": 44.6490903,
+            "lon": -63.5463217
+          }
+        }
+      ]
+    },
+    {
+      "key": "marybrowns",
+      "name": "Mary Brown's",
+      "count": 2,
+      "locations": [
+        {
+          "id": "osm-node-8600629382-mary-brown-s",
+          "neighborhood": "Dartmouth",
+          "address": "50 Tacoma Drive",
+          "coordinates": {
+            "lat": 44.6802029,
+            "lon": -63.5395465
+          }
+        },
+        {
+          "id": "osm-node-10099167258-mary-brown-s",
+          "neighborhood": "West End",
+          "address": null,
+          "coordinates": {
+            "lat": 44.6594399,
+            "lon": -63.6325921
+          }
+        }
+      ]
+    },
+    {
+      "key": "mizusushi",
+      "name": "Mizu Sushi",
+      "count": 2,
+      "locations": [
+        {
+          "id": "osm-node-11552509410-mizu-sushi",
+          "neighborhood": "Dartmouth",
+          "address": "644 Portland Street, Dartmouth, Nova Scotia",
+          "coordinates": {
+            "lat": 44.6707172,
+            "lon": -63.5254221
+          }
+        },
+        {
+          "id": "osm-node-11552529320-mizu-sushi",
+          "neighborhood": "Armdale / Fairview",
+          "address": "212 Chain Lake Drive, Halifax, Nova Scotia",
+          "coordinates": {
+            "lat": 44.6522184,
+            "lon": -63.675478
+          }
+        }
+      ]
+    },
+    {
+      "key": "montanas",
+      "name": "Montana's",
+      "count": 2,
+      "locations": [
+        {
+          "id": "osm-node-5141574221-montana-s",
+          "neighborhood": "Armdale / Fairview",
+          "address": null,
+          "coordinates": {
+            "lat": 44.6507984,
+            "lon": -63.6752378
+          }
+        },
+        {
+          "id": "osm-node-8142450011-montana-s",
+          "neighborhood": "Armdale / Fairview",
+          "address": null,
+          "coordinates": {
+            "lat": 44.6493116,
+            "lon": -63.6747789
+          }
+        }
+      ]
+    },
+    {
+      "key": "morriseast",
+      "name": "Morris East",
+      "count": 2,
+      "locations": [
+        {
+          "id": "osm-node-475879583-morris-east",
+          "neighborhood": "South End",
+          "address": "5212 Morris Street, Halifax, Nova Scotia",
+          "coordinates": {
+            "lat": 44.6414835,
+            "lon": -63.5717753
+          }
+        },
+        {
+          "id": "osm-node-2704746819-morris-east",
+          "neighborhood": "Armdale / Fairview",
+          "address": null,
+          "coordinates": {
+            "lat": 44.7010072,
+            "lon": -63.685816
+          }
+        }
+      ]
+    }
+  ],
+  "curatedMatches": [
+    {
+      "curatedId": "bar-kismet",
+      "name": "Bar Kismet",
+      "matchCount": 2,
+      "matches": [
+        {
+          "id": "osm-node-5134084721-bar-kismet",
+          "neighborhood": "North End",
+          "address": "2733 Agricola Street, Halifax, Nova Scotia",
+          "coordinates": {
+            "lat": 44.657464,
+            "lon": -63.5961815
+          },
+          "website": null
+        },
+        {
+          "id": "osm-way-462587944-bar-kismet",
+          "neighborhood": "West End",
+          "address": null,
+          "coordinates": {
+            "lat": 44.6575129,
+            "lon": -63.5961889
+          },
+          "website": null
+        }
+      ]
+    },
+    {
+      "curatedId": "the-bicycle-thief",
+      "name": "The Bicycle Thief",
+      "matchCount": 1,
+      "matches": [
+        {
+          "id": "osm-node-1116387649-bicycle-thief",
+          "neighborhood": "Waterfront",
+          "address": "1475 Lower Water Street, Halifax, Nova Scotia",
+          "coordinates": {
+            "lat": 44.6435997,
+            "lon": -63.5683874
+          },
+          "website": "https://bicyclethief.ca/"
+        }
+      ]
+    },
+    {
+      "curatedId": "edna",
+      "name": "EDNA",
+      "matchCount": 1,
+      "matches": [
+        {
+          "id": "osm-node-2624365676-edna",
+          "neighborhood": "North End",
+          "address": "2053 Gottingen Street, Halifax, Nova Scotia",
+          "coordinates": {
+            "lat": 44.6514366,
+            "lon": -63.5822809
+          },
+          "website": "https://www.ednarestaurant.com/"
+        }
+      ]
+    },
+    {
+      "curatedId": "the-press-gang",
+      "name": "The Press Gang",
+      "matchCount": 1,
+      "matches": [
+        {
+          "id": "osm-node-37132554-press-gang",
+          "neighborhood": "Downtown",
+          "address": null,
+          "coordinates": {
+            "lat": 44.6470972,
+            "lon": -63.5742214
+          },
+          "website": null
+        }
+      ]
+    },
+    {
+      "curatedId": "the-narrows",
+      "name": "The Narrows Public House",
+      "matchCount": 1,
+      "matches": [
+        {
+          "id": "osm-way-463454708-the-narrows-public-house",
+          "neighborhood": "North End",
+          "address": "2720 Gottingen Street, Halifax, Nova Scotia",
+          "coordinates": {
+            "lat": 44.6587719,
+            "lon": -63.5937337
+          },
+          "website": null
+        }
+      ]
+    },
+    {
+      "curatedId": "2-doors-down",
+      "name": "2 Doors Down",
+      "matchCount": 0,
+      "matches": []
+    },
+    {
+      "curatedId": "battery-park",
+      "name": "Battery Park Beer Bar",
+      "matchCount": 0,
+      "matches": []
+    },
+    {
+      "curatedId": "dear-friend",
+      "name": "Dear Friend Bar",
+      "matchCount": 0,
+      "matches": []
+    },
+    {
+      "curatedId": "highwayman",
+      "name": "Highwayman",
+      "matchCount": 1,
+      "matches": [
+        {
+          "id": "osm-node-9099100702-highwayman",
+          "neighborhood": "Downtown",
+          "address": "1673 Barrington Street, Halifax, Nova Scotia",
+          "coordinates": {
+            "lat": 44.646948,
+            "lon": -63.5737653
+          },
+          "website": "https://www.highwaymanhfx.com/"
+        }
+      ]
+    },
+    {
+      "curatedId": "field-guide",
+      "name": "Field Guide",
+      "matchCount": 1,
+      "matches": [
+        {
+          "id": "osm-node-8158371727-field-guide",
+          "neighborhood": "North End",
+          "address": "2076 Gottingen Street, Halifax, Nova Scotia",
+          "coordinates": {
+            "lat": 44.6514698,
+            "lon": -63.5828089
+          },
+          "website": "https://fieldguidehfx.com"
+        }
+      ]
+    }
+  ],
+  "failures": [],
+  "warnings": [
+    {
+      "type": "near_duplicate_same_name_osm_objects",
+      "count": 2,
+      "examples": [
+        {
+          "name": "Bar Kismet",
+          "distanceMeters": 5.5,
+          "a": {
+            "id": "osm-node-5134084721-bar-kismet",
+            "address": "2733 Agricola Street, Halifax, Nova Scotia",
+            "neighborhood": "North End",
+            "coordinates": {
+              "lat": 44.657464,
+              "lon": -63.5961815
+            }
+          },
+          "b": {
+            "id": "osm-way-462587944-bar-kismet",
+            "address": null,
+            "neighborhood": "West End",
+            "coordinates": {
+              "lat": 44.6575129,
+              "lon": -63.5961889
+            }
+          }
+        },
+        {
+          "name": "Café Lunette",
+          "distanceMeters": 16.1,
+          "a": {
+            "id": "osm-node-11751643550-cafe-lunette",
+            "address": "1741 Lower Water Street, Halifax, Nova Scotia",
+            "neighborhood": "Waterfront",
+            "coordinates": {
+              "lat": 44.6487433,
+              "lon": -63.5716121
+            }
+          },
+          "b": {
+            "id": "osm-node-12984675528-cafe-lunette",
+            "address": null,
+            "neighborhood": "Downtown",
+            "coordinates": {
+              "lat": 44.6488755,
+              "lon": -63.5716945
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "ambiguous_curated_name_matches",
+      "count": 1,
+      "examples": [
+        {
+          "curatedId": "bar-kismet",
+          "name": "Bar Kismet",
+          "matchCount": 2,
+          "matches": [
+            {
+              "id": "osm-node-5134084721-bar-kismet",
+              "neighborhood": "North End",
+              "address": "2733 Agricola Street, Halifax, Nova Scotia",
+              "coordinates": {
+                "lat": 44.657464,
+                "lon": -63.5961815
+              },
+              "website": null
+            },
+            {
+              "id": "osm-way-462587944-bar-kismet",
+              "neighborhood": "West End",
+              "address": null,
+              "coordinates": {
+                "lat": 44.6575129,
+                "lon": -63.5961889
+              },
+              "website": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "curated_without_osm_name_match",
+      "count": 3,
+      "examples": [
+        {
+          "curatedId": "2-doors-down",
+          "name": "2 Doors Down",
+          "matchCount": 0,
+          "matches": []
+        },
+        {
+          "curatedId": "battery-park",
+          "name": "Battery Park Beer Bar",
+          "matchCount": 0,
+          "matches": []
+        },
+        {
+          "curatedId": "dear-friend",
+          "name": "Dear Friend Bar",
+          "matchCount": 0,
+          "matches": []
+        }
+      ]
+    },
+    {
+      "type": "malformed_official_website_values",
+      "count": 1,
+      "examples": [
+        {
+          "restaurantId": "osm-node-5134046822-chain-yard-urban-cidery",
+          "name": "Chain Yard Urban Cidery",
+          "website": "http://://www.chainyardcider.com"
+        }
+      ]
+    },
+    {
+      "type": "verified_source_page_failures",
+      "count": 9,
+      "examples": [
+        {
+          "restaurantId": "osm-node-12143582175-asia-restaurant-and-bar",
+          "restaurantName": "Asia Restaurant & Bar",
+          "kind": "menu",
+          "url": "https://asiahalifax.com/menus",
+          "label": "Our Menu",
+          "website": "https://asiahalifax.com/",
+          "observedAt": "2026-08-31T11:14:58.969Z",
+          "reason": "http_404"
+        },
+        {
+          "restaurantId": "osm-node-762250248-ela-greek-taverna",
+          "restaurantName": "Ela Greek Taverna",
+          "kind": "menu",
+          "url": "https://elagreektaverna.com/dinner/",
+          "label": "View Our Menus",
+          "website": "https://elagreektaverna.com/",
+          "observedAt": "2026-08-31T11:15:05.149Z",
+          "reason": "http_404"
+        },
+        {
+          "restaurantId": "osm-node-2705686566-ela-greek-taverna",
+          "restaurantName": "ela! Greek Taverna",
+          "kind": "menu",
+          "url": "https://elagreektaverna.com/dinner/",
+          "label": "View Our Menus",
+          "website": "https://elagreektaverna.com/",
+          "observedAt": "2026-08-31T11:15:06.200Z",
+          "reason": "http_404"
+        },
+        {
+          "restaurantId": "osm-node-9128392205-king-of-donair",
+          "restaurantName": "King of Donair",
+          "kind": "menu",
+          "url": "https://www.kingofdonair.ca/menu/",
+          "label": "Menu",
+          "website": "https://www.kingofdonair.ca/",
+          "observedAt": "2026-08-31T11:15:11.052Z",
+          "reason": "http_403"
+        },
+        {
+          "restaurantId": "osm-node-7674175977-moxie-s",
+          "restaurantName": "Moxie's",
+          "kind": "menu",
+          "url": "https://moxies.com/restaurants/boston-seaport/menus/",
+          "label": "Menus",
+          "website": "https://moxies.com/",
+          "observedAt": "2026-08-31T11:15:16.042Z",
+          "reason": "location_mismatch"
+        },
+        {
+          "restaurantId": "osm-node-7674175977-moxie-s",
+          "restaurantName": "Moxie's",
+          "kind": "menu",
+          "url": "https://moxies.com/restaurants/dallas-uptown/menus/",
+          "label": "Menus",
+          "website": "https://moxies.com/",
+          "observedAt": "2026-08-31T11:15:16.042Z",
+          "reason": "location_mismatch"
+        },
+        {
+          "restaurantId": "osm-node-7674175977-moxie-s",
+          "restaurantName": "Moxie's",
+          "kind": "menu",
+          "url": "https://moxies.com/restaurants/fort-lauderdale/menus/",
+          "label": "Menus",
+          "website": "https://moxies.com/",
+          "observedAt": "2026-08-31T11:15:16.042Z",
+          "reason": "location_mismatch"
+        },
+        {
+          "restaurantId": "osm-node-7674175977-moxie-s",
+          "restaurantName": "Moxie's",
+          "kind": "menu",
+          "url": "https://moxies.com/restaurants/houston/menus/",
+          "label": "Menus",
+          "website": "https://moxies.com/",
+          "observedAt": "2026-08-31T11:15:16.042Z",
+          "reason": "location_mismatch"
+        },
+        {
+          "restaurantId": "osm-node-11699344564-second-cup",
+          "restaurantName": "Second Cup",
+          "kind": "specials",
+          "url": "https://secondcup.com/en/?page_id=2527",
+          "label": "SEASONAL SPECIALS",
+          "website": "https://secondcup.com/en/location/bayers-lake/",
+          "observedAt": "2026-08-31T11:15:24.979Z",
+          "reason": "http_404"
+        }
+      ]
+    }
+  ]
+}

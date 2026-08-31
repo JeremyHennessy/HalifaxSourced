@@ -1,31 +1,12 @@
 {
   "version": 1,
-  "generatedAt": "2026-08-28T18:34:54.970Z",
-  "graphVersion": "v25.0",
-  "lookbackDays": 60,
+  "generatedAt": "2026-08-31T11:28:09.624Z",
   "credentialState": {
-    "facebook": "missing",
-    "instagram": "missing"
+    "facebook": "not_promoted",
+    "instagram": "not_promoted"
   },
-  "discoveredProfileAssociations": 222,
-  "uniqueRestaurantProfiles": 186,
-  "sharedProfileAssociationsSkipped": 36,
-  "sharedProfileHandles": 14,
   "profilesAttempted": 0,
   "postsObserved": 0,
-  "signals": [],
-  "failures": [
-    {
-      "platform": "facebook",
-      "reason": "META_FB_ACCESS_TOKEN_missing"
-    },
-    {
-      "platform": "instagram",
-      "reason": "META_IG_ACCESS_TOKEN_or_META_FB_ACCESS_TOKEN_missing"
-    },
-    {
-      "platform": "instagram",
-      "reason": "META_IG_USER_ID_missing"
-    }
-  ]
+  "posts": [],
+  "signals": []
 }
