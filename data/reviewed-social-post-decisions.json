@@ -1,6 +1,99 @@
 {
   "version": 1,
-  "generatedAt": "2026-08-31T00:00:00.000Z",
+  "generatedAt": "2026-08-31T11:50:13.422Z",
   "policy": "Only posts reviewed as approve_post are surfaced as approved recent updates. Raw feed and Meta API observations remain source leads until reviewed.",
-  "records": []
+  "counts": {
+    "approved": 5,
+    "rejected": 6,
+    "total": 11
+  },
+  "records": [
+    {
+      "id": "website_feed-327b71c4248b1ff1bc",
+      "decision": "approve_post",
+      "decidedAt": "2026-08-31T11:50:13.422Z",
+      "approvedAt": "2026-08-31T11:50:13.422Z",
+      "approvedBy": "Halifax Sourced admin review",
+      "reviewedBy": "Halifax Sourced admin review",
+      "note": "Official website product special with clear price."
+    },
+    {
+      "id": "website_feed-61cd27d15983724b96",
+      "decision": "approve_post",
+      "decidedAt": "2026-08-31T11:50:13.422Z",
+      "approvedAt": "2026-08-31T11:50:13.422Z",
+      "approvedBy": "Halifax Sourced admin review",
+      "reviewedBy": "Halifax Sourced admin review",
+      "note": "Official website patio opening/update."
+    },
+    {
+      "id": "website_feed-516dc892e1349ac3ea",
+      "decision": "approve_post",
+      "decidedAt": "2026-08-31T11:50:13.422Z",
+      "approvedAt": "2026-08-31T11:50:13.422Z",
+      "approvedBy": "Halifax Sourced admin review",
+      "reviewedBy": "Halifax Sourced admin review",
+      "note": "Official website recurring Wine Wednesdays special."
+    },
+    {
+      "id": "website_feed-820bd75168ed9ec4ea",
+      "decision": "approve_post",
+      "decidedAt": "2026-08-31T11:50:13.422Z",
+      "approvedAt": "2026-08-31T11:50:13.422Z",
+      "approvedBy": "Halifax Sourced admin review",
+      "reviewedBy": "Halifax Sourced admin review",
+      "note": "Official website brunch/local spring dining update."
+    },
+    {
+      "id": "website_feed-7affda8076fdbeb020",
+      "decision": "approve_post",
+      "decidedAt": "2026-08-31T11:50:13.422Z",
+      "approvedAt": "2026-08-31T11:50:13.422Z",
+      "approvedBy": "Halifax Sourced admin review",
+      "reviewedBy": "Halifax Sourced admin review",
+      "note": "Official website food/live-jazz dining update."
+    },
+    {
+      "id": "website_feed-fc2f07c53d6ca92ab6",
+      "decision": "reject_post",
+      "decidedAt": "2026-08-31T11:50:13.422Z",
+      "reviewedBy": "Halifax Sourced admin review",
+      "note": "General evergreen article, not a special/event/opening/patio update."
+    },
+    {
+      "id": "website_feed-5755215f7c076cc630",
+      "decision": "reject_post",
+      "decidedAt": "2026-08-31T11:50:13.422Z",
+      "reviewedBy": "Halifax Sourced admin review",
+      "note": "General evergreen article, not a special/event/opening/patio update."
+    },
+    {
+      "id": "website_feed-4839fb372dd9929572",
+      "decision": "reject_post",
+      "decidedAt": "2026-08-31T11:50:13.422Z",
+      "reviewedBy": "Halifax Sourced admin review",
+      "note": "Seasonal Mother's Day update is stale as of review date."
+    },
+    {
+      "id": "website_feed-a80a6315ffd6fdd83c",
+      "decision": "reject_post",
+      "decidedAt": "2026-08-31T11:50:13.422Z",
+      "reviewedBy": "Halifax Sourced admin review",
+      "note": "Burger Week limited-time offer is stale as of review date."
+    },
+    {
+      "id": "website_feed-5a0cc8be1e8aa927b0",
+      "decision": "reject_post",
+      "decidedAt": "2026-08-31T11:50:13.422Z",
+      "reviewedBy": "Halifax Sourced admin review",
+      "note": "Easter weekend update is stale as of review date."
+    },
+    {
+      "id": "website_feed-bf9a4ffdad6686b258",
+      "decision": "reject_post",
+      "decidedAt": "2026-08-31T11:50:13.422Z",
+      "reviewedBy": "Halifax Sourced admin review",
+      "note": "Untitled/low-information post needs manual category review."
+    }
+  ]
 }
