@@ -10,6 +10,8 @@ function renderExplore() {
   const pageItems = results.slice(start, start + PAGE_SIZE);
   const filterCount = [state.cuisine, state.neighbourhood, state.feature].filter((value) => value !== "all").length;
 
+  destroyMap();
+
   appView.innerHTML = `
     <section class="page-shell page-intro compact-intro">
       <div><span class="eyebrow">Discover</span><h1>Explore Halifax</h1><p>${state.query ? `Showing places matching “${escapeHtml(state.query)}”.` : "Search restaurants and venues by cuisine, neighbourhood, social presence, booking links, and source-backed features."}</p></div>
@@ -43,7 +45,7 @@ function renderExplore() {
   bindCommonActions();
   const miniMapElement = document.querySelector("#exploreMiniMap");
   requestAnimationFrame(() => {
-    if (miniMapElement?.isConnected) initMiniMap(results.slice(0, 100), miniMapElement);
+    if (miniMapElement?.isConnected && miniMapElement === document.querySelector("#exploreMiniMap")) initMiniMap(results.slice(0, 100), miniMapElement);
   });
 }
 
