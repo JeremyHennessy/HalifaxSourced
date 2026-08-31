@@ -1,25 +1,28 @@
 window.HALIFAX_WEBSITE_FEED_SIGNALS = {
-  "version": 2,
-  "generatedAt": "2026-08-29T20:06:05.343Z",
+  "version": 3,
+  "generatedAt": "2026-08-31T11:21:26.289Z",
   "feedsDiscovered": 124,
   "reviewedFeedsExcluded": 5,
   "uniqueRestaurantFeeds": 105,
   "sharedFeedUrlsSkipped": 7,
   "feedHostGroups": 57,
   "concurrency": 10,
-  "feedsChecked": 101,
-  "failedFeeds": 4,
+  "lookbackDays": 180,
+  "excerptChars": 420,
+  "feedsChecked": 99,
+  "failedFeeds": 6,
   "posts": [
     {
       "restaurantId": "osm-node-11506685695-kenny-s-pizza",
       "restaurantName": "Kenny's Pizza",
       "platform": "website_feed",
       "title": "2 Small Pizzas for $29.99",
+      "excerpt": "2 Small Pizzas - Choose From Cheese, Pep & Cheese, Combo, Veggie, Hawaiian, Garlic Fingers",
       "postUrl": "https://kennyspizzakearneylake.ca/product/2smallpizzas/",
       "feedUrl": "https://kennyspizzakearneylake.ca/shop/feed/",
       "mediaUrl": null,
       "publishedAt": "2026-07-17T13:48:16.000Z",
-      "observedAt": "2026-08-29T20:05:26.699Z",
+      "observedAt": "2026-08-31T11:21:14.935Z",
       "signalMatches": {},
       "sourceKind": "official_feed",
       "associationBasis": "unique_feed_link_from_official_website",
@@ -31,14 +34,19 @@ window.HALIFAX_WEBSITE_FEED_SIGNALS = {
       "restaurantName": "Café Lunette",
       "platform": "website_feed",
       "title": "Your Parisian Patio Awaits",
+      "excerpt": "Your Parisian Patio Awaits… Café Lunette’s terrace is now open for the season, inviting you into a sun‑washed moment inspired by Parisian café culture. Bistro chairs line the tables, crisp white linens catch the light, and flutes glisten softly in the sun. Whether you’re stopping by for Flutes & Frites, a quick coffee and croissant, […] The post Your Parisian Patio Awaits appeared first on Café Lunette .",
       "postUrl": "https://www.cafelunette.com/your-parisian-patio-awaits/",
       "feedUrl": "https://www.cafelunette.com/feed/",
       "mediaUrl": null,
       "publishedAt": "2026-05-11T15:04:47.000Z",
-      "observedAt": "2026-08-29T20:05:27.159Z",
+      "observedAt": "2026-08-31T11:21:11.105Z",
       "signalMatches": {
         "openings": [
           "now open"
+        ],
+        "patio": [
+          "patio",
+          "terrace"
         ]
       },
       "sourceKind": "official_feed",
@@ -51,11 +59,12 @@ window.HALIFAX_WEBSITE_FEED_SIGNALS = {
       "restaurantName": "Kajohn Thai",
       "platform": "website_feed",
       "title": "Unveiling the Secrets of Award-Winning Thai Cuisine",
+      "excerpt": "When you think of Thai food, what comes to mind? The vibrant colors, the bold flavors, the perfect balance of sweet, sour, salty, and spicy? For me, it’s a deep connection to my roots in Bangkok and the joy of sharing those authentic tastes with the Halifax community. At Kajohn Thai Restaurant, we are proud to be the only Thai Select–certified restaurant by Thai Government in Nova Scotia, a recognition that honors...",
       "postUrl": "https://www.kajohnthairestaurant.ca/post/unveiling-the-secrets-of-award-winning-thai-cuisine",
       "feedUrl": "https://www.kajohnthairestaurant.ca/blog-feed.xml",
       "mediaUrl": "https://static.wixstatic.com/media/935b09_bba221e694e24cd4b9b12bdbf201943a~mv2.png/v1/fit/w_1000,h_768,al_c,q_80/file.png",
       "publishedAt": "2026-05-04T18:38:33.000Z",
-      "observedAt": "2026-08-29T20:05:43.619Z",
+      "observedAt": "2026-08-31T11:21:16.129Z",
       "signalMatches": {},
       "sourceKind": "official_feed",
       "associationBasis": "unique_feed_link_from_official_website",
@@ -67,11 +76,12 @@ window.HALIFAX_WEBSITE_FEED_SIGNALS = {
       "restaurantName": "Kajohn Thai",
       "platform": "website_feed",
       "title": "Discover the Top Thai Cuisine Choices in Halifax",
+      "excerpt": "When I first arrived in Halifax, I was on a mission to find authentic Thai food that truly captured the vibrant flavors of Bangkok. After years of cooking and sharing my family’s recipes, I’m proud to say that Kajohn Thai Restaurant has become a place where locals and visitors alike can experience the rich, aromatic tastes of Thailand right here in Nova Scotia. As the only Thai Select–certified restaurant in the p...",
       "postUrl": "https://www.kajohnthairestaurant.ca/post/discover-the-top-thai-cuisine-choices-in-halifax",
       "feedUrl": "https://www.kajohnthairestaurant.ca/blog-feed.xml",
       "mediaUrl": "https://static.wixstatic.com/media/935b09_58e8dab8eb0244d4b89be881384c216d~mv2.png/v1/fit/w_1000,h_768,al_c,q_80/file.png",
       "publishedAt": "2026-05-04T17:55:38.000Z",
-      "observedAt": "2026-08-29T20:05:43.619Z",
+      "observedAt": "2026-08-31T11:21:16.129Z",
       "signalMatches": {},
       "sourceKind": "official_feed",
       "associationBasis": "unique_feed_link_from_official_website",
@@ -83,11 +93,12 @@ window.HALIFAX_WEBSITE_FEED_SIGNALS = {
       "restaurantName": "Café Lunette",
       "platform": "website_feed",
       "title": "Mother’s Day Brunch at Café Lunette",
+      "excerpt": "Celebrate Mother’s Day at Café Lunette This Mother’s Day, treat her to a relaxed and thoughtful brunch at Café Lunette. It is a simple and meaningful way to celebrate, share time together, and enjoy comforting food in a welcoming bistro setting. Begin the morning with fresh pastries, carefully prepared brunch classics, and a cup of […] The post Mother’s Day Brunch at Café Lunette appeared first on Café Lunette .",
       "postUrl": "https://www.cafelunette.com/mothers-day-brunch-at-cafe-lunette/",
       "feedUrl": "https://www.cafelunette.com/feed/",
       "mediaUrl": null,
       "publishedAt": "2026-04-28T18:12:21.000Z",
-      "observedAt": "2026-08-29T20:05:27.159Z",
+      "observedAt": "2026-08-31T11:21:11.105Z",
       "signalMatches": {
         "brunch": [
           "brunch"
@@ -103,11 +114,12 @@ window.HALIFAX_WEBSITE_FEED_SIGNALS = {
       "restaurantName": "Café Lunette",
       "platform": "website_feed",
       "title": "Calling all Blue cheese lovers….​",
+      "excerpt": "Calling all Blue Cheese Lovers… The Le Sacré Bleu Burger Available Burger Week April 16-26 | $28 | $1 Donation to Feed Nova Scotia The Le Sacré Bleu Burger features a 6 oz beef patty topped with blue cheese, bacon, maple caramelized onions, arugula, and peppercorn mayo, served with fries. Gluten free and dairy free option available without cheese. Reserve The post Calling all Blue cheese lovers….​ appeared first o...",
       "postUrl": "https://www.cafelunette.com/calling-all-blue-cheese-lovers/",
       "feedUrl": "https://www.cafelunette.com/feed/",
       "mediaUrl": null,
       "publishedAt": "2026-04-08T16:25:03.000Z",
-      "observedAt": "2026-08-29T20:05:27.159Z",
+      "observedAt": "2026-08-31T11:21:11.105Z",
       "signalMatches": {},
       "sourceKind": "official_feed",
       "associationBasis": "unique_feed_link_from_official_website",
@@ -119,11 +131,12 @@ window.HALIFAX_WEBSITE_FEED_SIGNALS = {
       "restaurantName": "Café Lunette",
       "platform": "website_feed",
       "title": "Wine Wednesdays, à la Lunette",
+      "excerpt": "Wine Wednesdays, à la Lunette Midweek deserves more than staying in. At Café Lunette, Wednesdays are for the table.A bottle worth opening, dishes that match it, and a room that feels just right. Join us for Wine Wednesdays, à la Lunette and enjoy 50% off bottles from our wine list. Our team is always on hand to […] The post Wine Wednesdays, à la Lunette appeared first on Café Lunette .",
       "postUrl": "https://www.cafelunette.com/wine-wednesdays-a-la-lunette/",
       "feedUrl": "https://www.cafelunette.com/feed/",
       "mediaUrl": null,
       "publishedAt": "2026-04-08T15:42:52.000Z",
-      "observedAt": "2026-08-29T20:05:27.159Z",
+      "observedAt": "2026-08-31T11:21:11.105Z",
       "signalMatches": {},
       "sourceKind": "official_feed",
       "associationBasis": "unique_feed_link_from_official_website",
@@ -135,11 +148,12 @@ window.HALIFAX_WEBSITE_FEED_SIGNALS = {
       "restaurantName": "Bird's Nest Cafe",
       "platform": "website_feed",
       "title": "Five Things to Do in Halifax This Spring (We'll Handle Breakfast)",
+      "excerpt": "Spring is our favourite season at Bird's Nest Cafe. The city comes back to life, and so does our dining room. Here's how we'd spend it. We've been on Barrington Street long enough to know what a Halifax spring feels like. The harbour fog lifts a little earlier each morning. Regulars start lingering over their coffee instead of rushing out the door. Someone always comes in and says, \"finally\" — like the season is a...",
       "postUrl": "https://www.birdsnesthalifax.com/post/five-things-to-do-in-halifax-this-spring-we-ll-handle-breakfast",
       "feedUrl": "https://www.birdsnesthalifax.com/blog-feed.xml",
       "mediaUrl": "https://static.wixstatic.com/media/110dc9_538c90ecfee14537aa62b59c533c2b01~mv2.jpeg/v1/fit/w_1000,h_1000,al_c,q_80/file.png",
       "publishedAt": "2026-04-02T11:40:44.000Z",
-      "observedAt": "2026-08-29T20:05:17.722Z",
+      "observedAt": "2026-08-31T11:21:09.521Z",
       "signalMatches": {
         "brunch": [
           "breakfast"
@@ -155,11 +169,12 @@ window.HALIFAX_WEBSITE_FEED_SIGNALS = {
       "restaurantName": "Café Lunette",
       "platform": "website_feed",
       "title": "A Parisian Inspired Easter Weekend",
+      "excerpt": "A Parisian Inspired Easter Weekend Timeless French classics in a warm waterfront setting. Spend Easter weekend at Café Lunette enjoying classic French dishes in a relaxed and elegant atmosphere. Whether you are gathering for brunch or sitting down for a long, unhurried meal, Café Lunette offers an inviting space to celebrate the long weekend together. […] The post A Parisian Inspired Easter Weekend appeared first...",
       "postUrl": "https://www.cafelunette.com/a-parisian-inspired-easter-weekend/",
       "feedUrl": "https://www.cafelunette.com/feed/",
       "mediaUrl": null,
       "publishedAt": "2026-04-01T19:30:03.000Z",
-      "observedAt": "2026-08-29T20:05:27.159Z",
+      "observedAt": "2026-08-31T11:21:11.105Z",
       "signalMatches": {
         "specials": [
           "offer",
@@ -179,11 +194,12 @@ window.HALIFAX_WEBSITE_FEED_SIGNALS = {
       "restaurantName": "Sushi Shige",
       "platform": "website_feed",
       "title": "Untitled",
+      "excerpt": null,
       "postUrl": "https://www.shige.ca/post/untitled-3",
       "feedUrl": "https://www.shige.ca/blog-feed.xml",
       "mediaUrl": "https://static.wixstatic.com/media/445de3_8cde890dee564907b10a3db536a75443~mv2.png/v1/fit/w_1000,h_1000,al_c,q_80/file.png",
       "publishedAt": "2026-04-01T15:01:16.000Z",
-      "observedAt": "2026-08-29T20:05:17.736Z",
+      "observedAt": "2026-08-31T11:21:09.567Z",
       "signalMatches": {},
       "sourceKind": "official_feed",
       "associationBasis": "unique_feed_link_from_official_website",
@@ -195,148 +211,12 @@ window.HALIFAX_WEBSITE_FEED_SIGNALS = {
       "restaurantName": "Café Lunette",
       "platform": "website_feed",
       "title": "Jazz Avec Frites",
+      "excerpt": "Join us for Jazz Avec Frites A moody, candlelit escape where a live jazz trio warms the room, sauces are poured tableside, and frites arrive throughout the evening as naturally as conversation. Choose your protein, sirloin, striploin with Béarnaise, half chicken, or seared salmon, each served with crisp frites and dijonnaise. And yes… the frites […] The post Jazz Avec Frites appeared first on Café Lunette .",
       "postUrl": "https://www.cafelunette.com/jazz-avec-frites/",
       "feedUrl": "https://www.cafelunette.com/feed/",
       "mediaUrl": null,
       "publishedAt": "2026-03-26T15:51:56.000Z",
-      "observedAt": "2026-08-29T20:05:27.159Z",
-      "signalMatches": {},
-      "sourceKind": "official_feed",
-      "associationBasis": "unique_feed_link_from_official_website",
-      "confidence": "official_source_signal",
-      "reviewState": "source_signal"
-    },
-    {
-      "restaurantId": "osm-node-10038454787-bird-s-nest-cafe",
-      "restaurantName": "Bird's Nest Cafe",
-      "platform": "website_feed",
-      "title": "Catering to wild Sable Island",
-      "postUrl": "https://www.birdsnesthalifax.com/post/catering-to-wild-sable-island",
-      "feedUrl": "https://www.birdsnesthalifax.com/blog-feed.xml",
-      "mediaUrl": "https://static.wixstatic.com/media/110dc9_acbbd34644e2428fbbf7a007c9b5cee6~mv2.jpeg/v1/fit/w_1000,h_1000,al_c,q_80/file.png",
-      "publishedAt": "2026-03-03T14:50:36.000Z",
-      "observedAt": "2026-08-29T20:05:17.722Z",
-      "signalMatches": {},
-      "sourceKind": "official_feed",
-      "associationBasis": "unique_feed_link_from_official_website",
-      "confidence": "official_source_signal",
-      "reviewState": "source_signal"
-    },
-    {
-      "restaurantId": "osm-node-10038454787-bird-s-nest-cafe",
-      "restaurantName": "Bird's Nest Cafe",
-      "platform": "website_feed",
-      "title": "10 New Year’s Resolutions for Haligonians",
-      "postUrl": "https://www.birdsnesthalifax.com/post/10-new-year-s-resolutions-for-haligonians",
-      "feedUrl": "https://www.birdsnesthalifax.com/blog-feed.xml",
-      "mediaUrl": "https://static.wixstatic.com/media/110dc9_cd4c69a5ab3045b99fb684bff2b14b12~mv2.jpeg/v1/fit/w_1000,h_960,al_c,q_80/file.png",
-      "publishedAt": "2026-01-17T17:26:36.000Z",
-      "observedAt": "2026-08-29T20:05:17.722Z",
-      "signalMatches": {},
-      "sourceKind": "official_feed",
-      "associationBasis": "unique_feed_link_from_official_website",
-      "confidence": "official_source_signal",
-      "reviewState": "source_signal"
-    },
-    {
-      "restaurantId": "osm-node-10038454787-bird-s-nest-cafe",
-      "restaurantName": "Bird's Nest Cafe",
-      "platform": "website_feed",
-      "title": "The Origins of Canadian Holiday Dinners and Desserts",
-      "postUrl": "https://www.birdsnesthalifax.com/post/the-origins-of-canadian-holiday-dinners-and-desserts",
-      "feedUrl": "https://www.birdsnesthalifax.com/blog-feed.xml",
-      "mediaUrl": "https://static.wixstatic.com/media/11062b_a3b81ad36f2946babdaa44d1be35aa41~mv2.jpg/v1/fit/w_1000,h_1000,al_c,q_80/file.png",
-      "publishedAt": "2025-12-18T12:18:36.000Z",
-      "observedAt": "2026-08-29T20:05:17.722Z",
-      "signalMatches": {},
-      "sourceKind": "official_feed",
-      "associationBasis": "unique_feed_link_from_official_website",
-      "confidence": "official_source_signal",
-      "reviewState": "source_signal"
-    },
-    {
-      "restaurantId": "osm-node-11552061304-sushi-shige",
-      "restaurantName": "Sushi Shige",
-      "platform": "website_feed",
-      "title": "Holiday notice",
-      "postUrl": "https://www.shige.ca/post/holiday-notice",
-      "feedUrl": "https://www.shige.ca/blog-feed.xml",
-      "mediaUrl": "https://static.wixstatic.com/media/445de3_05652fb60e67458f89b042d63217b2bb~mv2.png/v1/fit/w_1000,h_1000,al_c,q_80/file.png",
-      "publishedAt": "2025-12-02T15:46:24.000Z",
-      "observedAt": "2026-08-29T20:05:17.736Z",
-      "signalMatches": {},
-      "sourceKind": "official_feed",
-      "associationBasis": "unique_feed_link_from_official_website",
-      "confidence": "official_source_signal",
-      "reviewState": "source_signal"
-    },
-    {
-      "restaurantId": "osm-node-10038454787-bird-s-nest-cafe",
-      "restaurantName": "Bird's Nest Cafe",
-      "platform": "website_feed",
-      "title": "5 Things to Do During the Christmas Season in Halifax",
-      "postUrl": "https://www.birdsnesthalifax.com/post/5-best-things-to-do-during-the-christmas-season-in-halifax",
-      "feedUrl": "https://www.birdsnesthalifax.com/blog-feed.xml",
-      "mediaUrl": "https://static.wixstatic.com/media/110dc9_6cd6c771fe784d1eba1377ef4f3029dd~mv2.jpg/v1/fit/w_1000,h_922,al_c,q_80/file.png",
-      "publishedAt": "2025-11-30T20:34:05.000Z",
-      "observedAt": "2026-08-29T20:05:17.722Z",
-      "signalMatches": {
-        "specials": [
-          "offer",
-          "offers"
-        ]
-      },
-      "sourceKind": "official_feed",
-      "associationBasis": "unique_feed_link_from_official_website",
-      "confidence": "official_source_signal",
-      "reviewState": "source_signal"
-    },
-    {
-      "restaurantId": "osm-node-10038454787-bird-s-nest-cafe",
-      "restaurantName": "Bird's Nest Cafe",
-      "platform": "website_feed",
-      "title": "5 More Things to do in Halifax This Fall",
-      "postUrl": "https://www.birdsnesthalifax.com/post/5-more-things-to-do-in-halifax-this-fall",
-      "feedUrl": "https://www.birdsnesthalifax.com/blog-feed.xml",
-      "mediaUrl": "https://static.wixstatic.com/media/110dc9_e5322a272f7f41f5962aac1c1d3679a4~mv2.jpeg/v1/fit/w_1000,h_1000,al_c,q_80/file.png",
-      "publishedAt": "2025-11-13T08:00:00.000Z",
-      "observedAt": "2026-08-29T20:05:17.722Z",
-      "signalMatches": {
-        "specials": [
-          "offer"
-        ]
-      },
-      "sourceKind": "official_feed",
-      "associationBasis": "unique_feed_link_from_official_website",
-      "confidence": "official_source_signal",
-      "reviewState": "source_signal"
-    },
-    {
-      "restaurantId": "osm-node-10038454787-bird-s-nest-cafe",
-      "restaurantName": "Bird's Nest Cafe",
-      "platform": "website_feed",
-      "title": "5 Things to do in Halifax in the Fall",
-      "postUrl": "https://www.birdsnesthalifax.com/post/5-things-to-do-in-halifax-in-the-fall",
-      "feedUrl": "https://www.birdsnesthalifax.com/blog-feed.xml",
-      "mediaUrl": "https://static.wixstatic.com/media/110dc9_0b3511d1b7e24aa6999e7e205983481c~mv2.jpeg/v1/fit/w_1000,h_853,al_c,q_80/file.png",
-      "publishedAt": "2025-11-01T07:00:00.000Z",
-      "observedAt": "2026-08-29T20:05:17.722Z",
-      "signalMatches": {},
-      "sourceKind": "official_feed",
-      "associationBasis": "unique_feed_link_from_official_website",
-      "confidence": "official_source_signal",
-      "reviewState": "source_signal"
-    },
-    {
-      "restaurantId": "osm-node-10038454787-bird-s-nest-cafe",
-      "restaurantName": "Bird's Nest Cafe",
-      "platform": "website_feed",
-      "title": "The Importance of Fresh, From-Scratch Food at Birds Nest Café Halifax",
-      "postUrl": "https://www.birdsnesthalifax.com/post/the-importance-of-fresh-from-scratch-food-at-birds-nest-caf%C3%A9-halifax",
-      "feedUrl": "https://www.birdsnesthalifax.com/blog-feed.xml",
-      "mediaUrl": "https://static.wixstatic.com/media/d63815_16686fd83bb249318663460ca6f3e961~mv2.jpg/v1/fit/w_900,h_599,al_c,q_80/file.png",
-      "publishedAt": "2025-10-31T07:00:00.000Z",
-      "observedAt": "2026-08-29T20:05:17.722Z",
+      "observedAt": "2026-08-31T11:21:11.105Z",
       "signalMatches": {},
       "sourceKind": "official_feed",
       "associationBasis": "unique_feed_link_from_official_website",
@@ -350,14 +230,19 @@ window.HALIFAX_WEBSITE_FEED_SIGNALS = {
       "restaurantName": "Café Lunette",
       "platform": "website_feed",
       "title": "Your Parisian Patio Awaits",
+      "excerpt": "Your Parisian Patio Awaits… Café Lunette’s terrace is now open for the season, inviting you into a sun‑washed moment inspired by Parisian café culture. Bistro chairs line the tables, crisp white linens catch the light, and flutes glisten softly in the sun. Whether you’re stopping by for Flutes & Frites, a quick coffee and croissant, […] The post Your Parisian Patio Awaits appeared first on Café Lunette .",
       "postUrl": "https://www.cafelunette.com/your-parisian-patio-awaits/",
       "feedUrl": "https://www.cafelunette.com/feed/",
       "mediaUrl": null,
       "publishedAt": "2026-05-11T15:04:47.000Z",
-      "observedAt": "2026-08-29T20:05:27.159Z",
+      "observedAt": "2026-08-31T11:21:11.105Z",
       "signalMatches": {
         "openings": [
           "now open"
+        ],
+        "patio": [
+          "patio",
+          "terrace"
         ]
       },
       "sourceKind": "official_feed",
@@ -370,11 +255,12 @@ window.HALIFAX_WEBSITE_FEED_SIGNALS = {
       "restaurantName": "Café Lunette",
       "platform": "website_feed",
       "title": "Mother’s Day Brunch at Café Lunette",
+      "excerpt": "Celebrate Mother’s Day at Café Lunette This Mother’s Day, treat her to a relaxed and thoughtful brunch at Café Lunette. It is a simple and meaningful way to celebrate, share time together, and enjoy comforting food in a welcoming bistro setting. Begin the morning with fresh pastries, carefully prepared brunch classics, and a cup of […] The post Mother’s Day Brunch at Café Lunette appeared first on Café Lunette .",
       "postUrl": "https://www.cafelunette.com/mothers-day-brunch-at-cafe-lunette/",
       "feedUrl": "https://www.cafelunette.com/feed/",
       "mediaUrl": null,
       "publishedAt": "2026-04-28T18:12:21.000Z",
-      "observedAt": "2026-08-29T20:05:27.159Z",
+      "observedAt": "2026-08-31T11:21:11.105Z",
       "signalMatches": {
         "brunch": [
           "brunch"
@@ -390,11 +276,12 @@ window.HALIFAX_WEBSITE_FEED_SIGNALS = {
       "restaurantName": "Bird's Nest Cafe",
       "platform": "website_feed",
       "title": "Five Things to Do in Halifax This Spring (We'll Handle Breakfast)",
+      "excerpt": "Spring is our favourite season at Bird's Nest Cafe. The city comes back to life, and so does our dining room. Here's how we'd spend it. We've been on Barrington Street long enough to know what a Halifax spring feels like. The harbour fog lifts a little earlier each morning. Regulars start lingering over their coffee instead of rushing out the door. Someone always comes in and says, \"finally\" — like the season is a...",
       "postUrl": "https://www.birdsnesthalifax.com/post/five-things-to-do-in-halifax-this-spring-we-ll-handle-breakfast",
       "feedUrl": "https://www.birdsnesthalifax.com/blog-feed.xml",
       "mediaUrl": "https://static.wixstatic.com/media/110dc9_538c90ecfee14537aa62b59c533c2b01~mv2.jpeg/v1/fit/w_1000,h_1000,al_c,q_80/file.png",
       "publishedAt": "2026-04-02T11:40:44.000Z",
-      "observedAt": "2026-08-29T20:05:17.722Z",
+      "observedAt": "2026-08-31T11:21:09.521Z",
       "signalMatches": {
         "brunch": [
           "breakfast"
@@ -410,11 +297,12 @@ window.HALIFAX_WEBSITE_FEED_SIGNALS = {
       "restaurantName": "Café Lunette",
       "platform": "website_feed",
       "title": "A Parisian Inspired Easter Weekend",
+      "excerpt": "A Parisian Inspired Easter Weekend Timeless French classics in a warm waterfront setting. Spend Easter weekend at Café Lunette enjoying classic French dishes in a relaxed and elegant atmosphere. Whether you are gathering for brunch or sitting down for a long, unhurried meal, Café Lunette offers an inviting space to celebrate the long weekend together. […] The post A Parisian Inspired Easter Weekend appeared first...",
       "postUrl": "https://www.cafelunette.com/a-parisian-inspired-easter-weekend/",
       "feedUrl": "https://www.cafelunette.com/feed/",
       "mediaUrl": null,
       "publishedAt": "2026-04-01T19:30:03.000Z",
-      "observedAt": "2026-08-29T20:05:27.159Z",
+      "observedAt": "2026-08-31T11:21:11.105Z",
       "signalMatches": {
         "specials": [
           "offer",
@@ -428,50 +316,14 @@ window.HALIFAX_WEBSITE_FEED_SIGNALS = {
       "associationBasis": "unique_feed_link_from_official_website",
       "confidence": "official_source_signal",
       "reviewState": "source_signal"
-    },
-    {
-      "restaurantId": "osm-node-10038454787-bird-s-nest-cafe",
-      "restaurantName": "Bird's Nest Cafe",
-      "platform": "website_feed",
-      "title": "5 Things to Do During the Christmas Season in Halifax",
-      "postUrl": "https://www.birdsnesthalifax.com/post/5-best-things-to-do-during-the-christmas-season-in-halifax",
-      "feedUrl": "https://www.birdsnesthalifax.com/blog-feed.xml",
-      "mediaUrl": "https://static.wixstatic.com/media/110dc9_6cd6c771fe784d1eba1377ef4f3029dd~mv2.jpg/v1/fit/w_1000,h_922,al_c,q_80/file.png",
-      "publishedAt": "2025-11-30T20:34:05.000Z",
-      "observedAt": "2026-08-29T20:05:17.722Z",
-      "signalMatches": {
-        "specials": [
-          "offer",
-          "offers"
-        ]
-      },
-      "sourceKind": "official_feed",
-      "associationBasis": "unique_feed_link_from_official_website",
-      "confidence": "official_source_signal",
-      "reviewState": "source_signal"
-    },
-    {
-      "restaurantId": "osm-node-10038454787-bird-s-nest-cafe",
-      "restaurantName": "Bird's Nest Cafe",
-      "platform": "website_feed",
-      "title": "5 More Things to do in Halifax This Fall",
-      "postUrl": "https://www.birdsnesthalifax.com/post/5-more-things-to-do-in-halifax-this-fall",
-      "feedUrl": "https://www.birdsnesthalifax.com/blog-feed.xml",
-      "mediaUrl": "https://static.wixstatic.com/media/110dc9_e5322a272f7f41f5962aac1c1d3679a4~mv2.jpeg/v1/fit/w_1000,h_1000,al_c,q_80/file.png",
-      "publishedAt": "2025-11-13T08:00:00.000Z",
-      "observedAt": "2026-08-29T20:05:17.722Z",
-      "signalMatches": {
-        "specials": [
-          "offer"
-        ]
-      },
-      "sourceKind": "official_feed",
-      "associationBasis": "unique_feed_link_from_official_website",
-      "confidence": "official_source_signal",
-      "reviewState": "source_signal"
     }
   ],
   "failures": [
+    {
+      "restaurantId": "osm-node-11612206582-swaad-sagaa-indian-cuisine-incorporated",
+      "feedUrl": "https://www.swaadsagaa.com/https&#x3A;&#x2F;&#x2F;66e24f9de1f04b5eb55b8639ef3fb0b2.elf.site",
+      "reason": "http_404"
+    },
     {
       "restaurantId": "osm-node-11526055082-noggins-coburg",
       "feedUrl": "https://nogginsfarm.ca/feed/",
@@ -483,9 +335,14 @@ window.HALIFAX_WEBSITE_FEED_SIGNALS = {
       "reason": "http_403"
     },
     {
-      "restaurantId": "osm-node-11612206582-swaad-sagaa-indian-cuisine-incorporated",
-      "feedUrl": "https://www.swaadsagaa.com/https&#x3A;&#x2F;&#x2F;66e24f9de1f04b5eb55b8639ef3fb0b2.elf.site",
-      "reason": "http_404"
+      "restaurantId": "osm-node-8841366531-jungle-jim-s",
+      "feedUrl": "https://junglejims.ca/feedback",
+      "reason": "http_403"
+    },
+    {
+      "restaurantId": "osm-node-9128392205-king-of-donair",
+      "feedUrl": "https://www.kingofdonair.ca/our-story/feed/",
+      "reason": "http_403"
     },
     {
       "restaurantId": "osm-node-4428984290-stone-pizza",

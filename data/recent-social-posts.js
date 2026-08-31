@@ -1,20 +1,20 @@
 window.HALIFAX_RECENT_SOCIAL_POSTS = {
   "version": 1,
-  "generatedAt": "2026-08-30T17:01:01.567Z",
+  "generatedAt": "2026-08-31T11:28:09.674Z",
   "lookbackDays": 180,
   "summaryLimit": 420,
   "inputCounts": {
-    "websiteFeedPosts": 19,
+    "websiteFeedPosts": 11,
     "socialApiPosts": 0,
-    "websiteFeedSignals": 6,
+    "websiteFeedSignals": 4,
     "socialApiSignals": 0
   },
   "sourceState": {
-    "websiteFeedsGeneratedAt": "2026-08-29T20:06:05.343Z",
-    "metaSocialGeneratedAt": "2026-08-28T18:34:54.970Z",
+    "websiteFeedsGeneratedAt": "2026-08-31T11:21:26.289Z",
+    "metaSocialGeneratedAt": "2026-08-31T11:28:09.624Z",
     "metaCredentialState": {
-      "facebook": "missing",
-      "instagram": "missing"
+      "facebook": "not_promoted",
+      "instagram": "not_promoted"
     },
     "metaProfilesAttempted": 0,
     "metaPostsObserved": 0
@@ -23,17 +23,17 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
     "records": 11,
     "restaurantsWithRecentPosts": 5,
     "categoryCounts": {
-      "specials": 2,
+      "specials": 3,
       "openings": 1,
-      "general_update": 6,
+      "general_update": 5,
       "brunch": 2
     },
     "platformCounts": {
       "website_feed": 11
     },
     "reviewStateCounts": {
-      "source_signal": 5,
-      "needs_category_review": 6
+      "source_signal": 6,
+      "needs_category_review": 5
     }
   },
   "records": [
@@ -55,7 +55,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
       "thumbnailUrl": null,
       "mediaType": null,
       "title": "2 Small Pizzas for $29.99",
-      "summary": "2 Small Pizzas for $29.99",
+      "summary": "2 Small Pizzas - Choose From Cheese, Pep & Cheese, Combo, Veggie, Hawaiian, Garlic Fingers",
       "primaryCategory": "specials",
       "primaryCategoryLabel": "Special",
       "categories": [
@@ -71,8 +71,8 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "$"
       ],
       "publishedAt": "2026-07-17T13:48:16.000Z",
-      "observedAt": "2026-08-29T20:05:26.699Z",
-      "ageDays": 44,
+      "observedAt": "2026-08-31T11:21:14.935Z",
+      "ageDays": 45,
       "isRecent": true,
       "lookbackDays": 180,
       "confidenceScore": 0.84,
@@ -98,7 +98,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
       "thumbnailUrl": null,
       "mediaType": null,
       "title": "Your Parisian Patio Awaits",
-      "summary": "Your Parisian Patio Awaits",
+      "summary": "Your Parisian Patio Awaits… Café Lunette’s terrace is now open for the season, inviting you into a sun‑washed moment inspired by Parisian café culture. Bistro chairs line the tables, crisp white linens catch the light, and flutes glisten softly in the sun. Whether you’re stopping by for Flutes & Frites, a quick coffee and croissant, […] The post Your Parisian Patio Awaits appeared first on Café Lunette .",
       "primaryCategory": "openings",
       "primaryCategoryLabel": "Opening",
       "categories": [
@@ -113,17 +113,19 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
           "id": "patio",
           "label": "Patio",
           "terms": [
-            "patio"
+            "patio",
+            "terrace"
           ]
         }
       ],
       "matchedTerms": [
         "now open",
-        "patio"
+        "patio",
+        "terrace"
       ],
       "publishedAt": "2026-05-11T15:04:47.000Z",
-      "observedAt": "2026-08-29T20:05:27.159Z",
-      "ageDays": 111,
+      "observedAt": "2026-08-31T11:21:11.105Z",
+      "ageDays": 112,
       "isRecent": true,
       "lookbackDays": 180,
       "confidenceScore": 0.84,
@@ -149,14 +151,14 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
       "thumbnailUrl": null,
       "mediaType": null,
       "title": "Unveiling the Secrets of Award-Winning Thai Cuisine",
-      "summary": "Unveiling the Secrets of Award-Winning Thai Cuisine",
+      "summary": "When you think of Thai food, what comes to mind? The vibrant colors, the bold flavors, the perfect balance of sweet, sour, salty, and spicy? For me, it’s a deep connection to my roots in Bangkok and the joy of sharing those authentic tastes with the Halifax community. At Kajohn Thai Restaurant, we are proud to be the only Thai Select–certified restaurant by Thai Government in Nova Scotia, a recognition that honors...",
       "primaryCategory": "general_update",
       "primaryCategoryLabel": "General update",
       "categories": [],
       "matchedTerms": [],
       "publishedAt": "2026-05-04T18:38:33.000Z",
-      "observedAt": "2026-08-29T20:05:43.619Z",
-      "ageDays": 118,
+      "observedAt": "2026-08-31T11:21:16.129Z",
+      "ageDays": 119,
       "isRecent": true,
       "lookbackDays": 180,
       "confidenceScore": 0.84,
@@ -182,14 +184,14 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
       "thumbnailUrl": null,
       "mediaType": null,
       "title": "Discover the Top Thai Cuisine Choices in Halifax",
-      "summary": "Discover the Top Thai Cuisine Choices in Halifax",
+      "summary": "When I first arrived in Halifax, I was on a mission to find authentic Thai food that truly captured the vibrant flavors of Bangkok. After years of cooking and sharing my family’s recipes, I’m proud to say that Kajohn Thai Restaurant has become a place where locals and visitors alike can experience the rich, aromatic tastes of Thailand right here in Nova Scotia. As the only Thai Select–certified restaurant in the p...",
       "primaryCategory": "general_update",
       "primaryCategoryLabel": "General update",
       "categories": [],
       "matchedTerms": [],
       "publishedAt": "2026-05-04T17:55:38.000Z",
-      "observedAt": "2026-08-29T20:05:43.619Z",
-      "ageDays": 118,
+      "observedAt": "2026-08-31T11:21:16.129Z",
+      "ageDays": 119,
       "isRecent": true,
       "lookbackDays": 180,
       "confidenceScore": 0.84,
@@ -215,7 +217,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
       "thumbnailUrl": null,
       "mediaType": null,
       "title": "Mother’s Day Brunch at Café Lunette",
-      "summary": "Mother’s Day Brunch at Café Lunette",
+      "summary": "Celebrate Mother’s Day at Café Lunette This Mother’s Day, treat her to a relaxed and thoughtful brunch at Café Lunette. It is a simple and meaningful way to celebrate, share time together, and enjoy comforting food in a welcoming bistro setting. Begin the morning with fresh pastries, carefully prepared brunch classics, and a cup of […] The post Mother’s Day Brunch at Café Lunette appeared first on Café Lunette .",
       "primaryCategory": "brunch",
       "primaryCategoryLabel": "Brunch",
       "categories": [
@@ -231,8 +233,8 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "brunch"
       ],
       "publishedAt": "2026-04-28T18:12:21.000Z",
-      "observedAt": "2026-08-29T20:05:27.159Z",
-      "ageDays": 124,
+      "observedAt": "2026-08-31T11:21:11.105Z",
+      "ageDays": 125,
       "isRecent": true,
       "lookbackDays": 180,
       "confidenceScore": 0.84,
@@ -258,19 +260,29 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
       "thumbnailUrl": null,
       "mediaType": null,
       "title": "Calling all Blue cheese lovers….​",
-      "summary": "Calling all Blue cheese lovers….​",
-      "primaryCategory": "general_update",
-      "primaryCategoryLabel": "General update",
-      "categories": [],
-      "matchedTerms": [],
+      "summary": "Calling all Blue Cheese Lovers… The Le Sacré Bleu Burger Available Burger Week April 16-26 | $28 | $1 Donation to Feed Nova Scotia The Le Sacré Bleu Burger features a 6 oz beef patty topped with blue cheese, bacon, maple caramelized onions, arugula, and peppercorn mayo, served with fries. Gluten free and dairy free option available without cheese. Reserve The post Calling all Blue cheese lovers….​ appeared first o...",
+      "primaryCategory": "specials",
+      "primaryCategoryLabel": "Special",
+      "categories": [
+        {
+          "id": "specials",
+          "label": "Special",
+          "terms": [
+            "$"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "$"
+      ],
       "publishedAt": "2026-04-08T16:25:03.000Z",
-      "observedAt": "2026-08-29T20:05:27.159Z",
-      "ageDays": 144,
+      "observedAt": "2026-08-31T11:21:11.105Z",
+      "ageDays": 145,
       "isRecent": true,
       "lookbackDays": 180,
       "confidenceScore": 0.84,
       "confidence": "official_source_signal",
-      "reviewState": "needs_category_review",
+      "reviewState": "source_signal",
       "associationBasis": "unique_feed_link_from_official_website"
     },
     {
@@ -291,14 +303,14 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
       "thumbnailUrl": null,
       "mediaType": null,
       "title": "Wine Wednesdays, à la Lunette",
-      "summary": "Wine Wednesdays, à la Lunette",
+      "summary": "Wine Wednesdays, à la Lunette Midweek deserves more than staying in. At Café Lunette, Wednesdays are for the table.A bottle worth opening, dishes that match it, and a room that feels just right. Join us for Wine Wednesdays, à la Lunette and enjoy 50% off bottles from our wine list. Our team is always on hand to […] The post Wine Wednesdays, à la Lunette appeared first on Café Lunette .",
       "primaryCategory": "general_update",
       "primaryCategoryLabel": "General update",
       "categories": [],
       "matchedTerms": [],
       "publishedAt": "2026-04-08T15:42:52.000Z",
-      "observedAt": "2026-08-29T20:05:27.159Z",
-      "ageDays": 144,
+      "observedAt": "2026-08-31T11:21:11.105Z",
+      "ageDays": 145,
       "isRecent": true,
       "lookbackDays": 180,
       "confidenceScore": 0.84,
@@ -324,7 +336,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
       "thumbnailUrl": null,
       "mediaType": null,
       "title": "Five Things to Do in Halifax This Spring (We'll Handle Breakfast)",
-      "summary": "Five Things to Do in Halifax This Spring (We'll Handle Breakfast)",
+      "summary": "Spring is our favourite season at Bird's Nest Cafe. The city comes back to life, and so does our dining room. Here's how we'd spend it. We've been on Barrington Street long enough to know what a Halifax spring feels like. The harbour fog lifts a little earlier each morning. Regulars start lingering over their coffee instead of rushing out the door. Someone always comes in and says, \"finally\" — like the season is a...",
       "primaryCategory": "brunch",
       "primaryCategoryLabel": "Brunch",
       "categories": [
@@ -340,8 +352,8 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "breakfast"
       ],
       "publishedAt": "2026-04-02T11:40:44.000Z",
-      "observedAt": "2026-08-29T20:05:17.722Z",
-      "ageDays": 150,
+      "observedAt": "2026-08-31T11:21:09.521Z",
+      "ageDays": 151,
       "isRecent": true,
       "lookbackDays": 180,
       "confidenceScore": 0.84,
@@ -367,7 +379,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
       "thumbnailUrl": null,
       "mediaType": null,
       "title": "A Parisian Inspired Easter Weekend",
-      "summary": "A Parisian Inspired Easter Weekend",
+      "summary": "A Parisian Inspired Easter Weekend Timeless French classics in a warm waterfront setting. Spend Easter weekend at Café Lunette enjoying classic French dishes in a relaxed and elegant atmosphere. Whether you are gathering for brunch or sitting down for a long, unhurried meal, Café Lunette offers an inviting space to celebrate the long weekend together. […] The post A Parisian Inspired Easter Weekend appeared first...",
       "primaryCategory": "specials",
       "primaryCategoryLabel": "Special",
       "categories": [
@@ -393,8 +405,8 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "brunch"
       ],
       "publishedAt": "2026-04-01T19:30:03.000Z",
-      "observedAt": "2026-08-29T20:05:27.159Z",
-      "ageDays": 151,
+      "observedAt": "2026-08-31T11:21:11.105Z",
+      "ageDays": 152,
       "isRecent": true,
       "lookbackDays": 180,
       "confidenceScore": 0.84,
@@ -426,8 +438,8 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
       "categories": [],
       "matchedTerms": [],
       "publishedAt": "2026-04-01T15:01:16.000Z",
-      "observedAt": "2026-08-29T20:05:17.736Z",
-      "ageDays": 151,
+      "observedAt": "2026-08-31T11:21:09.567Z",
+      "ageDays": 152,
       "isRecent": true,
       "lookbackDays": 180,
       "confidenceScore": 0.84,
@@ -453,14 +465,14 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
       "thumbnailUrl": null,
       "mediaType": null,
       "title": "Jazz Avec Frites",
-      "summary": "Jazz Avec Frites",
+      "summary": "Join us for Jazz Avec Frites A moody, candlelit escape where a live jazz trio warms the room, sauces are poured tableside, and frites arrive throughout the evening as naturally as conversation. Choose your protein, sirloin, striploin with Béarnaise, half chicken, or seared salmon, each served with crisp frites and dijonnaise. And yes… the frites […] The post Jazz Avec Frites appeared first on Café Lunette .",
       "primaryCategory": "general_update",
       "primaryCategoryLabel": "General update",
       "categories": [],
       "matchedTerms": [],
       "publishedAt": "2026-03-26T15:51:56.000Z",
-      "observedAt": "2026-08-29T20:05:27.159Z",
-      "ageDays": 157,
+      "observedAt": "2026-08-31T11:21:11.105Z",
+      "ageDays": 158,
       "isRecent": true,
       "lookbackDays": 180,
       "confidenceScore": 0.84,

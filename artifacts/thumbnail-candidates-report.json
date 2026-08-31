@@ -1,0 +1,22 @@
+{
+  "generatedAt": "2026-08-31T11:28:10.556Z",
+  "counts": {
+    "restaurants": 739,
+    "candidates": 2409,
+    "restaurantsWithApprovedThumbnail": 37,
+    "restaurantsWithAnyCandidate": 114,
+    "restaurantsMissingApprovedThumbnail": 702,
+    "restaurantsMissingAnyCandidate": 625
+  },
+  "failures": [],
+  "warnings": [
+    {
+      "type": "restaurants_missing_approved_thumbnail",
+      "count": 702
+    },
+    {
+      "type": "restaurants_missing_any_thumbnail_candidate",
+      "count": 625
+    }
+  ]
+}
