@@ -87,6 +87,8 @@ jobs:
           copy_if_present data/build/website-feed-signals.json
           copy_if_present data/recent-social-posts.js
           copy_if_present data/build/recent-social-posts.json
+          copy_if_present data/reviewed-social-posts.js
+          copy_if_present data/build/reviewed-social-posts.json
           copy_if_present artifacts/data-integrity-report.json
           copy_if_present artifacts/expanded-source-integrity-report.json
 
