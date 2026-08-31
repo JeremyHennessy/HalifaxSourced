@@ -1,0 +1,173 @@
+name: Promote Source Expansion Artifact
+
+on:
+  workflow_dispatch:
+    inputs:
+      run_id:
+        description: GitHub Actions run ID from Source Expansion Preview
+        required: true
+        type: string
+      artifact_name:
+        description: Artifact name to promote
+        required: false
+        default: source-expansion-preview
+        type: string
+      branch_name:
+        description: Optional promotion branch name
+        required: false
+        type: string
+      include_thumbnail_candidates:
+        description: Include thumbnail candidate queues and coverage reports
+        required: false
+        default: true
+        type: boolean
+      include_raw_social_signals:
+        description: Include raw Meta social artifacts. Leave false unless the run used repo-approved APIs and sanitation passed.
+        required: false
+        default: false
+        type: boolean
+
+permissions:
+  actions: read
+  contents: write
+  pull-requests: write
+
+jobs:
+  promote:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v6
+        with:
+          ref: main
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Download source expansion artifact
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RUN_ID: ${{ inputs.run_id }}
+          ARTIFACT_NAME: ${{ inputs.artifact_name }}
+        run: |
+          mkdir -p /tmp/source-expansion-artifact
+          gh run download "$RUN_ID" --repo "$GITHUB_REPOSITORY" --name "$ARTIFACT_NAME" --dir /tmp/source-expansion-artifact
+          find /tmp/source-expansion-artifact -type f | sort
+
+      - name: Promote allowed source files
+        env:
+          INCLUDE_THUMBNAILS: ${{ inputs.include_thumbnail_candidates }}
+          INCLUDE_RAW_SOCIAL: ${{ inputs.include_raw_social_signals }}
+        run: |
+          set -euo pipefail
+          copy_if_present() {
+            local src="/tmp/source-expansion-artifact/$1"
+            local dest="$1"
+            if [ -f "$src" ]; then
+              mkdir -p "$(dirname "$dest")"
+              cp "$src" "$dest"
+              echo "promoted $dest"
+            else
+              echo "missing $1"
+            fi
+          }
+
+          copy_if_present data/official-site-signals.js
+          copy_if_present data/build/official-site-signals.json
+          copy_if_present data/verified-source-pages.js
+          copy_if_present data/build/verified-source-pages.json
+          copy_if_present data/structured-events.js
+          copy_if_present data/build/structured-events.json
+          copy_if_present data/first-party-sources.js
+          copy_if_present data/build/first-party-sources.json
+          copy_if_present data/website-feed-signals.js
+          copy_if_present data/build/website-feed-signals.json
+          copy_if_present data/recent-social-posts.js
+          copy_if_present data/build/recent-social-posts.json
+          copy_if_present data/reviewed-social-posts.js
+          copy_if_present data/build/reviewed-social-posts.json
+          copy_if_present artifacts/data-integrity-report.json
+          copy_if_present artifacts/expanded-source-integrity-report.json
+
+          if [ "$INCLUDE_RAW_SOCIAL" = "true" ]; then
+            copy_if_present data/social-signals.js
+            copy_if_present data/build/social-signals.json
+          else
+            echo "Skipping raw Meta social signal promotion; writing an empty raw-social payload so stale main files cannot be republished."
+            node --input-type=module <<'NODE'
+          import { mkdir, writeFile } from "node:fs/promises";
+          const generatedAt = new Date().toISOString();
+          const emptyPayload = {
+            version: 1,
+            generatedAt,
+            credentialState: {
+              facebook: "not_promoted",
+              instagram: "not_promoted"
+            },
+            profilesAttempted: 0,
+            postsObserved: 0,
+            posts: [],
+            signals: []
+          };
+          await mkdir("data/build", { recursive: true });
+          await writeFile("data/build/social-signals.json", `${JSON.stringify(emptyPayload, null, 2)}\n`);
+          await writeFile("data/social-signals.js", `window.HALIFAX_SOCIAL_SIGNALS = ${JSON.stringify(emptyPayload, null, 2)};\n`);
+          NODE
+          fi
+
+          if [ "$INCLUDE_THUMBNAILS" = "true" ]; then
+            copy_if_present data/thumbnail-candidates.js
+            copy_if_present data/build/thumbnail-candidates.json
+            copy_if_present data/build/thumbnail-coverage-report.json
+            copy_if_present docs/thumbnail-coverage-report.md
+            copy_if_present artifacts/thumbnail-candidates-report.json
+            copy_if_present artifacts/thumbnail-coverage-report.json
+          fi
+
+      - name: Rebuild derived review and database artifacts
+        env:
+          SOURCE_COMMIT_SHA: ${{ github.sha }}
+        run: |
+          node scripts/build-recent-social-posts.mjs
+          node scripts/build-reviewed-social-posts.mjs
+          node scripts/build-thumbnail-coverage-report.mjs
+          node scripts/build-content-quality-report.mjs
+          python3 scripts/build-sqlite-db.py
+
+      - name: Validate promoted datasets
+        run: |
+          node scripts/check-data-integrity.mjs
+          node scripts/check-expanded-sources.mjs
+          node scripts/check-thumbnail-candidates.mjs
+          node scripts/check-restaurant-media-rights.mjs
+
+      - name: Create promotion pull request
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RUN_ID: ${{ inputs.run_id }}
+          BRANCH_INPUT: ${{ inputs.branch_name }}
+        run: |
+          set -euo pipefail
+          if git diff --quiet; then
+            echo "No source expansion changes to promote."
+            exit 0
+          fi
+          BRANCH="$BRANCH_INPUT"
+          if [ -z "$BRANCH" ]; then
+            BRANCH="codex/promote-source-expansion-$RUN_ID"
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -b "$BRANCH"
+          git add data docs artifacts
+          git commit -m "Promote source expansion artifact $RUN_ID"
+          git push --set-upstream origin "$BRANCH"
+          gh pr create \
+            --repo "$GITHUB_REPOSITORY" \
+            --base main \
+            --head "$BRANCH" \
+            --title "Promote source expansion artifact $RUN_ID" \
+            --body "Promotes source-backed datasets from Source Expansion Preview run $RUN_ID. Raw Meta social artifacts are promoted only when explicitly enabled; reviewed production media still requires data/restaurant-media.js approval records."

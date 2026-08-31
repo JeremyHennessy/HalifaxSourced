@@ -10,6 +10,7 @@ on:
     paths:
       - .github/workflows/source-expansion-preview.yml
       - data/social-platform-registry.json
+      - data/reviewed-social-post-decisions.json
       - scripts/import-official-sites.mjs
       - scripts/verify-official-source-pages.mjs
       - scripts/import-structured-events.mjs
@@ -19,6 +20,7 @@ on:
       - scripts/import-first-party-feed-signals.mjs
       - scripts/import-meta-social.mjs
       - scripts/build-recent-social-posts.mjs
+      - scripts/build-reviewed-social-posts.mjs
       - scripts/build-thumbnail-candidates.mjs
       - scripts/build-thumbnail-coverage-report.mjs
       - scripts/check-thumbnail-candidates.mjs
@@ -106,7 +108,9 @@ jobs:
         run: node scripts/import-meta-social.mjs
 
       - name: Analyze and categorize recent posts
-        run: node scripts/build-recent-social-posts.mjs
+        run: |
+          node scripts/build-recent-social-posts.mjs
+          node scripts/build-reviewed-social-posts.mjs
 
       - name: Discover source-backed thumbnail candidates
         env:
@@ -143,6 +147,8 @@ jobs:
             data/build/social-signals.json
             data/recent-social-posts.js
             data/build/recent-social-posts.json
+            data/reviewed-social-posts.js
+            data/build/reviewed-social-posts.json
             data/thumbnail-candidates.js
             data/build/thumbnail-candidates.json
             data/build/thumbnail-coverage-report.json

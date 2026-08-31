@@ -38,7 +38,9 @@ jobs:
         run: node scripts/build-structured-specials.mjs
 
       - name: Build recent post intelligence
-        run: node scripts/build-recent-social-posts.mjs
+        run: |
+          node scripts/build-recent-social-posts.mjs
+          node scripts/build-reviewed-social-posts.mjs
 
       - name: Build thumbnail candidates
         run: node scripts/build-thumbnail-candidates.mjs
@@ -106,6 +108,8 @@ jobs:
             data/structured-specials.js
             data/build/recent-social-posts.json
             data/recent-social-posts.js
+            data/build/reviewed-social-posts.json
+            data/reviewed-social-posts.js
             data/build/thumbnail-candidates.json
             data/thumbnail-candidates.js
             data/build/thumbnail-coverage-report.json
@@ -134,7 +138,9 @@ jobs:
         run: node scripts/build-structured-specials.mjs
 
       - name: Build recent post intelligence for browser verification
-        run: node scripts/build-recent-social-posts.mjs
+        run: |
+          node scripts/build-recent-social-posts.mjs
+          node scripts/build-reviewed-social-posts.mjs
 
       - name: Build thumbnail candidates for browser verification
         run: node scripts/build-thumbnail-candidates.mjs
