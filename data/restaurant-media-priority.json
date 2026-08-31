@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "generatedAt": "2026-08-30T16:59:56.906Z",
-  "targetCount": 54,
+  "generatedAt": "2026-08-31T11:50:13.422Z",
+  "targetCount": 89,
   "policy": "Approved restaurant media may include Wikimedia Commons files with explicit reusable licences, documented restaurant-owner submissions, explicitly licensed material, or app-owner-reviewed HTTPS image references from restaurant official websites or feeds. Remote official-site images are linked with source attribution and are not rehosted.",
   "allowedSources": [
     "wikimedia_commons",
@@ -16,13 +16,33 @@
       "status": "pending_rights_source"
     },
     {
+      "restaurantId": "osm-node-2714150704-7-peppers-grill",
+      "name": "7 Peppers Grill",
+      "status": "approved"
+    },
+    {
+      "restaurantId": "osm-node-5987565464-afrite",
+      "name": "aFrite",
+      "status": "approved"
+    },
+    {
       "restaurantId": "osm-node-8158663930-almonak",
       "name": "Almonak",
       "status": "approved"
     },
     {
+      "restaurantId": "osm-node-7465073827-antojo-tacos-tequila",
+      "name": "Antojo Tacos + Tequila",
+      "status": "approved"
+    },
+    {
       "restaurantId": "osm-node-3104067229-ardmore-tea-room",
       "name": "Ardmore Tea Room",
+      "status": "approved"
+    },
+    {
+      "restaurantId": "osm-node-12143582175-asia-restaurant-and-bar",
+      "name": "Asia Restaurant & Bar",
       "status": "approved"
     },
     {
@@ -46,8 +66,18 @@
       "status": "pending_rights_source"
     },
     {
+      "restaurantId": "osm-node-1116387649-bicycle-thief",
+      "name": "Bicycle Thief",
+      "status": "approved"
+    },
+    {
       "restaurantId": "osm-node-10038454787-bird-s-nest-cafe",
       "name": "Bird's Nest Cafe",
+      "status": "approved"
+    },
+    {
+      "restaurantId": "osm-node-267592735-bluenose-ii",
+      "name": "Bluenose II",
       "status": "approved"
     },
     {
@@ -61,8 +91,18 @@
       "status": "approved"
     },
     {
+      "restaurantId": "osm-way-393886756-boston-pizza",
+      "name": "Boston Pizza",
+      "status": "approved"
+    },
+    {
       "restaurantId": "osm-node-7465111619-brawta-jamaican-jerk-joint",
       "name": "Brawta Jamaican Jerk Joint",
+      "status": "approved"
+    },
+    {
+      "restaurantId": "osm-node-11752614922-cafe-good-luck",
+      "name": "Café Good Luck",
       "status": "approved"
     },
     {
@@ -76,6 +116,16 @@
       "status": "pending_rights_source"
     },
     {
+      "restaurantId": "osm-node-2333319166-cheese-curds-burgers",
+      "name": "Cheese Curds Burgers",
+      "status": "approved"
+    },
+    {
+      "restaurantId": "osm-node-5152065724-cheese-curds-gourmet-burgers-and-poutinerie-habaneros-modern-taco-bar",
+      "name": "Cheese Curds Gourmet Burgers and Poutinerie/Habaneros Modern Taco Bar",
+      "status": "approved"
+    },
+    {
       "restaurantId": "osm-node-7032915871-chkn-chop",
       "name": "Chkn Chop",
       "status": "approved"
@@ -83,6 +133,16 @@
     {
       "restaurantId": "osm-node-11867490075-cora",
       "name": "Cora",
+      "status": "approved"
+    },
+    {
+      "restaurantId": "osm-node-13286456320-creme",
+      "name": "Crème",
+      "status": "approved"
+    },
+    {
+      "restaurantId": "osm-node-703490468-cut-contemporary-steak-house-and-urban-grill",
+      "name": "Cut Contemporary Steak House & Urban Grill",
       "status": "approved"
     },
     {
@@ -101,14 +161,39 @@
       "status": "pending_rights_source"
     },
     {
+      "restaurantId": "osm-node-5188870965-donnini-s-pizza",
+      "name": "Donnini's Pizza",
+      "status": "approved"
+    },
+    {
+      "restaurantId": "osm-node-2623078934-dooly-s",
+      "name": "Dooly's",
+      "status": "approved"
+    },
+    {
       "restaurantId": "osm-node-11551984275-doraku",
       "name": "Doraku",
       "status": "pending_rights_source"
     },
     {
+      "restaurantId": "osm-node-11752717941-east-cup-cafe",
+      "name": "East Cup Cafe",
+      "status": "approved"
+    },
+    {
       "restaurantId": "edna",
       "name": "EDNA",
-      "status": "pending_rights_source"
+      "status": "approved"
+    },
+    {
+      "restaurantId": "osm-node-762250248-ela-greek-taverna",
+      "name": "Ela Greek Taverna",
+      "status": "approved"
+    },
+    {
+      "restaurantId": "osm-node-2705686566-ela-greek-taverna",
+      "name": "ela! Greek Taverna",
+      "status": "approved"
     },
     {
       "restaurantId": "osm-node-620808566-fan-s-chinese-restaurant",
@@ -118,6 +203,16 @@
     {
       "restaurantId": "osm-node-11282329952-freeman-s-little-new-york",
       "name": "Freeman's Little New York",
+      "status": "approved"
+    },
+    {
+      "restaurantId": "osm-node-2611287045-gingerbread-haus-bakery",
+      "name": "Gingerbread Haus Bakery",
+      "status": "approved"
+    },
+    {
+      "restaurantId": "osm-node-5150122721-good-robot-brewing-company",
+      "name": "Good Robot Brewing Company",
       "status": "approved"
     },
     {
@@ -156,13 +251,38 @@
       "status": "pending_rights_source"
     },
     {
+      "restaurantId": "osm-node-9629211483-ihop",
+      "name": "IHOP",
+      "status": "approved"
+    },
+    {
+      "restaurantId": "osm-node-5503919661-jukai",
+      "name": "Jukai",
+      "status": "approved"
+    },
+    {
+      "restaurantId": "osm-node-11552505443-jukai-japanese-and-thai",
+      "name": "JUKAI Japanese & Thai",
+      "status": "approved"
+    },
+    {
       "restaurantId": "osm-node-7139174640-kajohn-thai",
       "name": "Kajohn Thai",
       "status": "approved"
     },
     {
+      "restaurantId": "osm-node-11506685695-kenny-s-pizza",
+      "name": "Kenny's Pizza",
+      "status": "approved"
+    },
+    {
       "restaurantId": "osm-node-9128392205-king-of-donair",
       "name": "King of Donair",
+      "status": "approved"
+    },
+    {
+      "restaurantId": "osm-node-11577869162-lady-hammond-grill",
+      "name": "Lady Hammond Grill",
       "status": "approved"
     },
     {
@@ -181,6 +301,11 @@
       "status": "approved"
     },
     {
+      "restaurantId": "osm-node-8836681495-lion-s-head-tavern",
+      "name": "Lion's Head Tavern",
+      "status": "approved"
+    },
+    {
       "restaurantId": "osm-node-11001023964-lockside-canteen",
       "name": "Lockside Canteen",
       "status": "approved"
@@ -196,13 +321,58 @@
       "status": "approved"
     },
     {
+      "restaurantId": "osm-node-3802952557-lucy-s-hydrostone-cafe",
+      "name": "Lucy's Hydrostone Cafe",
+      "status": "approved"
+    },
+    {
       "restaurantId": "marias-pantry-dartmouth",
       "name": "Maria's Pantry",
       "status": "pending_rights_source"
     },
     {
+      "restaurantId": "osm-way-463777993-may-garden",
+      "name": "May Garden",
+      "status": "approved"
+    },
+    {
       "restaurantId": "osm-node-1920618295-metro-pizza",
       "name": "Metro Pizza",
+      "status": "approved"
+    },
+    {
+      "restaurantId": "osm-node-6910685885-mexi-s",
+      "name": "Mexi's",
+      "status": "approved"
+    },
+    {
+      "restaurantId": "osm-node-8636456776-mezza-lebanese-kitchen",
+      "name": "Mezza Lebanese Kitchen",
+      "status": "approved"
+    },
+    {
+      "restaurantId": "osm-node-475879583-morris-east",
+      "name": "Morris East",
+      "status": "approved"
+    },
+    {
+      "restaurantId": "osm-node-9165619005-mother-s-pizza",
+      "name": "Mother's Pizza",
+      "status": "approved"
+    },
+    {
+      "restaurantId": "osm-node-7393838887-new-wing-wah",
+      "name": "New Wing Wah",
+      "status": "approved"
+    },
+    {
+      "restaurantId": "osm-node-11526055082-noggins-coburg",
+      "name": "Noggins Coburg",
+      "status": "approved"
+    },
+    {
+      "restaurantId": "osm-node-5647941372-orso-pub-and-grill",
+      "name": "Orso Pub & Grill",
       "status": "approved"
     },
     {
@@ -218,6 +388,11 @@
     {
       "restaurantId": "osm-node-11867455433-papa-john-s",
       "name": "Papa John's",
+      "status": "approved"
+    },
+    {
+      "restaurantId": "osm-node-9099103635-pazzo-ristorante-and-enoteca",
+      "name": "Pazzo Ristorante & Enoteca",
       "status": "approved"
     },
     {

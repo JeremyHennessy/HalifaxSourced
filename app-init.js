@@ -62,7 +62,7 @@ function bindCommonActions() {
 }
 
 function initMiniMap(items, element = document.querySelector("#exploreMiniMap")) {
-  if (!element || !window.L) return;
+  if (!element || !window.L || !element.isConnected || element._leaflet_id) return;
   const map = L.map(element, { attributionControl: false, zoomControl: false, dragging: false, scrollWheelZoom: false, doubleClickZoom: false, boxZoom: false, keyboard: false, tap: false, zoomAnimation: false, fadeAnimation: false, markerZoomAnimation: false }).setView(MAP_DEFAULT, 12, { animate: false });
   L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", { maxZoom: 19 }).addTo(map);
   items.filter((r) => r.coordinates).slice(0, 80).forEach((restaurant) => L.circleMarker([restaurant.coordinates.lat, restaurant.coordinates.lon], { radius: 5, color: "#0b3a67", weight: 2, fillColor: "#45aaa5", fillOpacity: 0.9 }).addTo(map));
@@ -71,7 +71,7 @@ function initMiniMap(items, element = document.querySelector("#exploreMiniMap"))
 
 function initMainMap(items) {
   const element = document.querySelector("#mainMap");
-  if (!element || !window.L) return;
+  if (!element || !window.L || !element.isConnected || element._leaflet_id) return;
   const map = L.map(element, { preferCanvas: true, zoomAnimation: false, fadeAnimation: false, markerZoomAnimation: false }).setView(MAP_DEFAULT, 12, { animate: false });
   L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", { maxZoom: 19, attribution: "&copy; OpenStreetMap contributors" }).addTo(map);
   const renderer = L.canvas({ padding: 0.5 });

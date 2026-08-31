@@ -1,6 +1,6 @@
 # Halifax Sourced content coverage baseline
 
-Generated: 2026-08-30T19:39:29.208Z
+Generated: 2026-08-31T11:50:39.473Z
 
 This report measures the currently committed production data layers. It is a content-completeness baseline, **not a restaurant quality or popularity rating**. Unknown data remains unknown; source leads are not converted into fabricated facts.
 
@@ -10,15 +10,15 @@ This report measures the currently committed production data layers. It is a con
 | --- | ---: | ---: |
 | Canonical places | 749 | 100% |
 | Official website | 301 | 40.2% |
-| Verified/reachable official website | 242 | 32.3% |
+| Verified/reachable official website | 223 | 29.8% |
 | Public inspection match | 496 | 66.2% |
-| Menu link | 160 | 21.4% |
-| Verified menu link | 86 | 11.5% |
-| Special evidence | 54 | 7.2% |
-| Verified specials source | 25 | 3.3% |
-| Reservation link | 62 | 8.3% |
-| Online ordering link | 81 | 10.8% |
-| Event evidence | 47 | 6.3% |
+| Menu link | 153 | 20.4% |
+| Verified menu link | 93 | 12.4% |
+| Special evidence | 55 | 7.3% |
+| Verified specials source | 28 | 3.7% |
+| Reservation link | 58 | 7.7% |
+| Online ordering link | 78 | 10.4% |
+| Event evidence | 42 | 5.6% |
 | Structured upcoming restaurant events | 2 | 0.3% |
 | At least one social network profile | 146 | 19.5% |
 | Phone | 264 | 35.2% |
@@ -27,8 +27,8 @@ This report measures the currently committed production data layers. It is a con
 | Neighbourhood | 749 | 100% |
 | Cuisine classification | 749 | 100% |
 | Accessibility information | 229 | 30.6% |
-| Patio information | 40 | 5.3% |
-| Usable rights-approved media | 37 | 4.9% |
+| Patio information | 39 | 5.2% |
+| Usable rights-approved media | 73 | 9.7% |
 
 Raw layers: 10 curated, 735 OpenStreetMap, 12 reviewed local-discovery records, 739 pre-discovery catalog records.
 
@@ -114,12 +114,12 @@ Raw layers: 10 curated, 735 OpenStreetMap, 12 reviewed local-discovery records, 
 
 ## Source failures visible in the current data
 
-- officialWebsiteChecks: 51
-- firstPartyWebsiteDiscovery: 75
-- verifiedSourcePages: 15
-- structuredRestaurantEvents: 12
-- websiteFeeds: 4
-- socialApis: 3
+- officialWebsiteChecks: 72
+- firstPartyWebsiteDiscovery: 73
+- verifiedSourcePages: 9
+- structuredRestaurantEvents: 8
+- websiteFeeds: 6
+- socialApis: 0
 - cityEventSources: 0
 - openingWatchSources: 0
 - restaurantDirectorySources: 0
@@ -137,4 +137,4 @@ Machine-readable details, gap queues, definitions, and failure counts are in `da
 
 - Active canonical places: **748**; archived lifecycle records: **1**.
 - Canonical restaurants with at least one upcoming structured restaurant event: **2**. This is a distinct-place count.
-- Upcoming structured restaurant event records: **14** of **19** stored records. This is an event-record count and can include multiple events for one restaurant.
+- Upcoming structured restaurant event records: **20** of **20** stored records. This is an event-record count and can include multiple events for one restaurant.

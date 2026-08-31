@@ -1,0 +1,632 @@
+{
+  "version": 1,
+  "generatedAt": "2026-08-31T11:50:13.422Z",
+  "policy": "Thumbnail queue decisions exported from Halifax Sourced admin review. Approved rows are converted into data/restaurant-media.js records only when source, rights, attribution, and permissionConfirmed fields are complete.",
+  "counts": {
+    "approved": 36,
+    "rejected": 28,
+    "total": 64
+  },
+  "records": [
+    {
+      "id": "osm-node-475879583-morris-east",
+      "restaurantId": "osm-node-475879583-morris-east",
+      "restaurantName": "Morris East",
+      "thumbnailUrl": "https://images.squarespace-cdn.com/content/v1/65721b46c38d592f00580255/0084abf3-dce8-46b3-b77b-1ed40659fc72/Lumberjack-84.jpg",
+      "sourceUrl": "https://www.morriseast.com/",
+      "decision": "approve_thumbnail",
+      "decidedAt": "2026-08-31T11:50:13.422Z",
+      "decidedBy": "Halifax Sourced app-owner review",
+      "note": "official website food image"
+    },
+    {
+      "id": "osm-way-393886756-boston-pizza",
+      "restaurantId": "osm-way-393886756-boston-pizza",
+      "restaurantName": "Boston Pizza",
+      "thumbnailUrl": "https://bostonpizza.com/content/dam/bostonpizza/promotions/2026/q3-summer-feature-menu/Summer_FeatureMenu_WEB_Banner_FEB2026-BP%20copy-working%20file.png",
+      "sourceUrl": "https://bostonpizza.com/en/menu.html",
+      "decision": "approve_thumbnail",
+      "decidedAt": "2026-08-31T11:50:13.422Z",
+      "decidedBy": "Halifax Sourced app-owner review",
+      "note": "official website seasonal menu banner"
+    },
+    {
+      "id": "osm-node-2333319166-cheese-curds-burgers",
+      "restaurantId": "osm-node-2333319166-cheese-curds-burgers",
+      "restaurantName": "Cheese Curds Burgers",
+      "thumbnailUrl": "https://images.squarespace-cdn.com/content/v1/53e3cc1de4b04a78ec271c4f/1584043735607-HJVEOANIMOHAMCLCSKW1/Best-Burgers%4010x-e1567750291520.png",
+      "sourceUrl": "https://www.cheesecurdsburgers.com/",
+      "decision": "approve_thumbnail",
+      "decidedAt": "2026-08-31T11:50:13.422Z",
+      "decidedBy": "Halifax Sourced app-owner review",
+      "note": "official website burger image"
+    },
+    {
+      "id": "osm-node-5152065724-cheese-curds-gourmet-burgers-and-poutinerie-habaneros-modern-taco-bar",
+      "restaurantId": "osm-node-5152065724-cheese-curds-gourmet-burgers-and-poutinerie-habaneros-modern-taco-bar",
+      "restaurantName": "Cheese Curds Gourmet Burgers and Poutinerie/Habaneros Modern Taco Bar",
+      "thumbnailUrl": "https://images.squarespace-cdn.com/content/v1/53e3cc1de4b04a78ec271c4f/1584043735607-HJVEOANIMOHAMCLCSKW1/Best-Burgers%4010x-e1567750291520.png",
+      "sourceUrl": "https://www.cheesecurdsburgers.com/",
+      "decision": "approve_thumbnail",
+      "decidedAt": "2026-08-31T11:50:13.422Z",
+      "decidedBy": "Halifax Sourced app-owner review",
+      "note": "official website burger image"
+    },
+    {
+      "id": "osm-node-2714150704-7-peppers-grill",
+      "restaurantId": "osm-node-2714150704-7-peppers-grill",
+      "restaurantName": "7 Peppers Grill",
+      "thumbnailUrl": "https://static.wixstatic.com/media/90a441_9ff7c2830e3644218c2b2d373452cae1~mv2.jpg/v1/fill/w_1100,h_701,al_c,q_85,enc_avif,quality_auto/90a441_9ff7c2830e3644218c2b2d373452cae1~mv2.jpg",
+      "sourceUrl": "https://www.7peppersgrill.net/",
+      "decision": "approve_thumbnail",
+      "decidedAt": "2026-08-31T11:50:13.422Z",
+      "decidedBy": "Halifax Sourced app-owner review",
+      "note": "official website restaurant image"
+    },
+    {
+      "id": "osm-node-1116387649-bicycle-thief",
+      "restaurantId": "osm-node-1116387649-bicycle-thief",
+      "restaurantName": "Bicycle Thief",
+      "thumbnailUrl": "https://bicyclethief.ca/wp-content/uploads/2017/09/upper-thief.jpg",
+      "sourceUrl": "https://bicyclethief.ca/",
+      "decision": "approve_thumbnail",
+      "decidedAt": "2026-08-31T11:50:13.422Z",
+      "decidedBy": "Halifax Sourced app-owner review",
+      "note": "official website dining room image"
+    },
+    {
+      "id": "osm-node-8636456776-mezza-lebanese-kitchen",
+      "restaurantId": "osm-node-8636456776-mezza-lebanese-kitchen",
+      "restaurantName": "Mezza Lebanese Kitchen",
+      "thumbnailUrl": "https://images.squarespace-cdn.com/content/v1/6272b45a3197ec4398631b6e/21a78250-a487-4312-b1aa-e2e1518dcce0/Mezza-LunchPlates-WebBanner-Launch.jpg",
+      "sourceUrl": "https://www.ordermezza.com/",
+      "decision": "approve_thumbnail",
+      "decidedAt": "2026-08-31T11:50:13.422Z",
+      "decidedBy": "Halifax Sourced app-owner review",
+      "note": "official website lunch plate image"
+    },
+    {
+      "id": "osm-node-4797459277-downtown-pizza",
+      "restaurantId": "osm-node-4797459277-downtown-pizza",
+      "decision": "reject_candidate",
+      "decidedAt": "2026-08-31T11:50:13.422Z",
+      "decidedBy": "Halifax Sourced app-owner review",
+      "note": "Rejected for production thumbnail use in this pass: logo/icon/placeholder/malformed URL/unrelated source/low-confidence candidate."
+    },
+    {
+      "id": "osm-node-13286456320-creme",
+      "restaurantId": "osm-node-13286456320-creme",
+      "restaurantName": "Crème",
+      "thumbnailUrl": "https://immediac.blob.core.windows.net/cremecafeasiarestaurant/IMG_4799.JPG",
+      "sourceUrl": "https://cremehalifax.com/",
+      "decision": "approve_thumbnail",
+      "decidedAt": "2026-08-31T11:50:13.422Z",
+      "decidedBy": "Halifax Sourced app-owner review",
+      "note": "official website restaurant image"
+    },
+    {
+      "id": "osm-node-267592735-bluenose-ii",
+      "restaurantId": "osm-node-267592735-bluenose-ii",
+      "restaurantName": "Bluenose II",
+      "thumbnailUrl": "https://bluenoseii.ca/wp-content/uploads/2019/02/full_table_wine_bottle_img_6626-1.jpg",
+      "sourceUrl": "https://bluenoseii.ca/",
+      "decision": "approve_thumbnail",
+      "decidedAt": "2026-08-31T11:50:13.422Z",
+      "decidedBy": "Halifax Sourced app-owner review",
+      "note": "official website table image"
+    },
+    {
+      "id": "osm-node-5150122721-good-robot-brewing-company",
+      "restaurantId": "osm-node-5150122721-good-robot-brewing-company",
+      "restaurantName": "Good Robot Brewing Company",
+      "thumbnailUrl": "https://goodrobotbrewing.ca/wp-content/uploads/2026/03/A7303581-scaled-1-960x540.jpg",
+      "sourceUrl": "https://goodrobotbrewing.ca/events/",
+      "decision": "approve_thumbnail",
+      "decidedAt": "2026-08-31T11:50:13.422Z",
+      "decidedBy": "Halifax Sourced app-owner review",
+      "note": "official website event or venue image"
+    },
+    {
+      "id": "osm-node-13912668535-jean-s-chinese-restaurant",
+      "restaurantId": "osm-node-13912668535-jean-s-chinese-restaurant",
+      "decision": "reject_candidate",
+      "decidedAt": "2026-08-31T11:50:13.422Z",
+      "decidedBy": "Halifax Sourced app-owner review",
+      "note": "Rejected for production thumbnail use in this pass: logo/icon/placeholder/malformed URL/unrelated source/low-confidence candidate."
+    },
+    {
+      "id": "osm-way-463777993-may-garden",
+      "restaurantId": "osm-way-463777993-may-garden",
+      "restaurantName": "May Garden",
+      "thumbnailUrl": "https://maygarden.ca/wp-content/uploads/2022/05/DSC03657.jpg",
+      "sourceUrl": "https://maygarden.ca/",
+      "decision": "approve_thumbnail",
+      "decidedAt": "2026-08-31T11:50:13.422Z",
+      "decidedBy": "Halifax Sourced app-owner review",
+      "note": "official website restaurant image"
+    },
+    {
+      "id": "osm-node-5647941372-orso-pub-and-grill",
+      "restaurantId": "osm-node-5647941372-orso-pub-and-grill",
+      "restaurantName": "Orso Pub & Grill",
+      "thumbnailUrl": "https://orsopub.ca/wp-content/uploads/2026/05/orso-specials-2026specials-apps.jpg",
+      "sourceUrl": "https://orsopub.ca/",
+      "decision": "approve_thumbnail",
+      "decidedAt": "2026-08-31T11:50:13.422Z",
+      "decidedBy": "Halifax Sourced app-owner review",
+      "note": "official website specials image"
+    },
+    {
+      "id": "osm-node-7393838887-new-wing-wah",
+      "restaurantId": "osm-node-7393838887-new-wing-wah",
+      "restaurantName": "New Wing Wah",
+      "thumbnailUrl": "https://newwingwah.ca/images/ban1.jpg",
+      "sourceUrl": "https://newwingwah.ca/",
+      "decision": "approve_thumbnail",
+      "decidedAt": "2026-08-31T11:50:13.422Z",
+      "decidedBy": "Halifax Sourced app-owner review",
+      "note": "official website banner image"
+    },
+    {
+      "id": "osm-node-5987565464-afrite",
+      "restaurantId": "osm-node-5987565464-afrite",
+      "restaurantName": "aFrite",
+      "thumbnailUrl": "https://i0.wp.com/afrite.ca/wp-content/uploads/2021/04/grilled-meat-with-herbs-on-black-top-view-4QPYVKD-scaled.jpg?resize=370%2C260&ssl=1",
+      "sourceUrl": "https://afrite.ca/",
+      "decision": "approve_thumbnail",
+      "decidedAt": "2026-08-31T11:50:13.422Z",
+      "decidedBy": "Halifax Sourced app-owner review",
+      "note": "official website grilled food image"
+    },
+    {
+      "id": "osm-node-37132580-durty-nelly-s-irish-pub",
+      "restaurantId": "osm-node-37132580-durty-nelly-s-irish-pub",
+      "decision": "reject_candidate",
+      "decidedAt": "2026-08-31T11:50:13.422Z",
+      "decidedBy": "Halifax Sourced app-owner review",
+      "note": "Rejected for production thumbnail use in this pass: logo/icon/placeholder/malformed URL/unrelated source/low-confidence candidate."
+    },
+    {
+      "id": "osm-node-9165619005-mother-s-pizza",
+      "restaurantId": "osm-node-9165619005-mother-s-pizza",
+      "restaurantName": "Mother's Pizza",
+      "thumbnailUrl": "https://motherspizzahalifax.ca/wp-content/uploads/2020/08/h2_pizza-1-1.png",
+      "sourceUrl": "https://motherspizzahalifax.ca/",
+      "decision": "approve_thumbnail",
+      "decidedAt": "2026-08-31T11:50:13.422Z",
+      "decidedBy": "Halifax Sourced app-owner review",
+      "note": "official website pizza image"
+    },
+    {
+      "id": "osm-node-3799422457-cora",
+      "restaurantId": "osm-node-3799422457-cora",
+      "decision": "reject_candidate",
+      "decidedAt": "2026-08-31T11:50:13.422Z",
+      "decidedBy": "Halifax Sourced app-owner review",
+      "note": "Rejected for production thumbnail use in this pass: logo/icon/placeholder/malformed URL/unrelated source/low-confidence candidate."
+    },
+    {
+      "id": "osm-node-11577869162-lady-hammond-grill",
+      "restaurantId": "osm-node-11577869162-lady-hammond-grill",
+      "restaurantName": "Lady Hammond Grill",
+      "thumbnailUrl": "https://chebuctoinn.com/wp-content/uploads/2024/09/DSC_4566-e1728402802938.jpg",
+      "sourceUrl": "https://chebuctoinn.com/lhg-diner/",
+      "decision": "approve_thumbnail",
+      "decidedAt": "2026-08-31T11:50:13.422Z",
+      "decidedBy": "Halifax Sourced app-owner review",
+      "note": "official website diner image"
+    },
+    {
+      "id": "osm-node-5863968671-mirchi-tandoor",
+      "restaurantId": "osm-node-5863968671-mirchi-tandoor",
+      "decision": "reject_candidate",
+      "decidedAt": "2026-08-31T11:50:13.422Z",
+      "decidedBy": "Halifax Sourced app-owner review",
+      "note": "Rejected for production thumbnail use in this pass: logo/icon/placeholder/malformed URL/unrelated source/low-confidence candidate."
+    },
+    {
+      "id": "osm-node-12410003853-jacky-s-cafe",
+      "restaurantId": "osm-node-12410003853-jacky-s-cafe",
+      "decision": "reject_candidate",
+      "decidedAt": "2026-08-31T11:50:13.422Z",
+      "decidedBy": "Halifax Sourced app-owner review",
+      "note": "Rejected for production thumbnail use in this pass: logo/icon/placeholder/malformed URL/unrelated source/low-confidence candidate."
+    },
+    {
+      "id": "osm-node-11752614922-cafe-good-luck",
+      "restaurantId": "osm-node-11752614922-cafe-good-luck",
+      "restaurantName": "Café Good Luck",
+      "thumbnailUrl": "https://images.squarespace-cdn.com/content/v1/54c16f23e4b02a2061ab9e1c/f008d8af-0593-43b6-8975-b2815fb371ed/Header.jpg",
+      "sourceUrl": "https://cafegoodluck.ca/goodluck",
+      "decision": "approve_thumbnail",
+      "decidedAt": "2026-08-31T11:50:13.422Z",
+      "decidedBy": "Halifax Sourced app-owner review",
+      "note": "official website cafe image"
+    },
+    {
+      "id": "osm-way-319792807-chinatown",
+      "restaurantId": "osm-way-319792807-chinatown",
+      "decision": "reject_candidate",
+      "decidedAt": "2026-08-31T11:50:13.422Z",
+      "decidedBy": "Halifax Sourced app-owner review",
+      "note": "Rejected for production thumbnail use in this pass: logo/icon/placeholder/malformed URL/unrelated source/low-confidence candidate."
+    },
+    {
+      "id": "osm-node-3792869657-great-wall-restaurant",
+      "restaurantId": "osm-node-3792869657-great-wall-restaurant",
+      "decision": "reject_candidate",
+      "decidedAt": "2026-08-31T11:50:13.422Z",
+      "decidedBy": "Halifax Sourced app-owner review",
+      "note": "Rejected for production thumbnail use in this pass: logo/icon/placeholder/malformed URL/unrelated source/low-confidence candidate."
+    },
+    {
+      "id": "osm-node-13141377001-india-paradise",
+      "restaurantId": "osm-node-13141377001-india-paradise",
+      "decision": "reject_candidate",
+      "decidedAt": "2026-08-31T11:50:13.422Z",
+      "decidedBy": "Halifax Sourced app-owner review",
+      "note": "Rejected for production thumbnail use in this pass: logo/icon/placeholder/malformed URL/unrelated source/low-confidence candidate."
+    },
+    {
+      "id": "osm-node-2623078934-dooly-s",
+      "restaurantId": "osm-node-2623078934-dooly-s",
+      "restaurantName": "Dooly's",
+      "thumbnailUrl": "https://images.squarespace-cdn.com/content/v1/59c45bccd55b413ae7e2eee5/1510095956497-76SJ8H2E1JQZIZNKKZ8A/Event_2.png",
+      "sourceUrl": "https://www.doolys.ca/",
+      "decision": "approve_thumbnail",
+      "decidedAt": "2026-08-31T11:50:13.422Z",
+      "decidedBy": "Halifax Sourced app-owner review",
+      "note": "official website events image"
+    },
+    {
+      "id": "osm-node-4416774495-glitter-bean-cafe",
+      "restaurantId": "osm-node-4416774495-glitter-bean-cafe",
+      "decision": "reject_candidate",
+      "decidedAt": "2026-08-31T11:50:13.422Z",
+      "decidedBy": "Halifax Sourced app-owner review",
+      "note": "Rejected for production thumbnail use in this pass: logo/icon/placeholder/malformed URL/unrelated source/low-confidence candidate."
+    },
+    {
+      "id": "osm-node-762250248-ela-greek-taverna",
+      "restaurantId": "osm-node-762250248-ela-greek-taverna",
+      "restaurantName": "Ela Greek Taverna",
+      "thumbnailUrl": "https://elagreektaverna.com/wp-content/uploads/2020/07/ela-halifax-interior.jpg",
+      "sourceUrl": "https://elagreektaverna.com/",
+      "decision": "approve_thumbnail",
+      "decidedAt": "2026-08-31T11:50:13.422Z",
+      "decidedBy": "Halifax Sourced app-owner review",
+      "note": "official website dining room image"
+    },
+    {
+      "id": "osm-node-2705686566-ela-greek-taverna",
+      "restaurantId": "osm-node-2705686566-ela-greek-taverna",
+      "restaurantName": "ela! Greek Taverna",
+      "thumbnailUrl": "https://elagreektaverna.com/wp-content/uploads/2020/07/ela-halifax-interior.jpg",
+      "sourceUrl": "https://www.elagreektaverna.com/",
+      "decision": "approve_thumbnail",
+      "decidedAt": "2026-08-31T11:50:13.422Z",
+      "decidedBy": "Halifax Sourced app-owner review",
+      "note": "official website dining room image"
+    },
+    {
+      "id": "osm-node-703490468-cut-contemporary-steak-house-and-urban-grill",
+      "restaurantId": "osm-node-703490468-cut-contemporary-steak-house-and-urban-grill",
+      "restaurantName": "Cut Contemporary Steak House & Urban Grill",
+      "thumbnailUrl": "https://www.rcr.ca/content/uploads/2018/02/cut-steakhouse-2.jpg",
+      "sourceUrl": "https://www.rcr.ca/restaurants/cut-steakhouse/",
+      "decision": "approve_thumbnail",
+      "decidedAt": "2026-08-31T11:50:13.422Z",
+      "decidedBy": "Halifax Sourced app-owner review",
+      "note": "official website steakhouse image"
+    },
+    {
+      "id": "osm-node-5188870965-donnini-s-pizza",
+      "restaurantId": "osm-node-5188870965-donnini-s-pizza",
+      "restaurantName": "Donnini's Pizza",
+      "thumbnailUrl": "https://donninispizza.com/wp-content/uploads/2021/05/special_06_Extra_large_3_topping_pizza_medium_garlic_fingers_2lt_pop_donninis_pizza.png",
+      "sourceUrl": "https://donninispizza.com/",
+      "decision": "approve_thumbnail",
+      "decidedAt": "2026-08-31T11:50:13.422Z",
+      "decidedBy": "Halifax Sourced app-owner review",
+      "note": "official website pizza special image"
+    },
+    {
+      "id": "osm-node-3802952557-lucy-s-hydrostone-cafe",
+      "restaurantId": "osm-node-3802952557-lucy-s-hydrostone-cafe",
+      "restaurantName": "Lucy's Hydrostone Cafe",
+      "thumbnailUrl": "https://lucyshydrostone.ca/wp-content/uploads/Lucys-Hero-Image.jpg",
+      "sourceUrl": "https://lucyshydrostone.ca/",
+      "decision": "approve_thumbnail",
+      "decidedAt": "2026-08-31T11:50:13.422Z",
+      "decidedBy": "Halifax Sourced app-owner review",
+      "note": "official website hero image"
+    },
+    {
+      "id": "osm-node-11506685695-kenny-s-pizza",
+      "restaurantId": "osm-node-11506685695-kenny-s-pizza",
+      "restaurantName": "Kenny's Pizza",
+      "thumbnailUrl": "https://kennyspizzakearneylake.ca/wp-content/uploads/2020/04/apps-1-200x190.jpg",
+      "sourceUrl": "https://kennyspizzakearneylake.ca/",
+      "decision": "approve_thumbnail",
+      "decidedAt": "2026-08-31T11:50:13.422Z",
+      "decidedBy": "Halifax Sourced app-owner review",
+      "note": "official website food image"
+    },
+    {
+      "id": "osm-node-11526163882-brief-break",
+      "restaurantId": "osm-node-11526163882-brief-break",
+      "decision": "reject_candidate",
+      "decidedAt": "2026-08-31T11:50:13.422Z",
+      "decidedBy": "Halifax Sourced app-owner review",
+      "note": "Rejected for production thumbnail use in this pass: logo/icon/placeholder/malformed URL/unrelated source/low-confidence candidate."
+    },
+    {
+      "id": "osm-node-11526163877-fillings-bistro-32",
+      "restaurantId": "osm-node-11526163877-fillings-bistro-32",
+      "decision": "reject_candidate",
+      "decidedAt": "2026-08-31T11:50:13.422Z",
+      "decidedBy": "Halifax Sourced app-owner review",
+      "note": "Rejected for production thumbnail use in this pass: logo/icon/placeholder/malformed URL/unrelated source/low-confidence candidate."
+    },
+    {
+      "id": "osm-node-11526163883-green-cafe",
+      "restaurantId": "osm-node-11526163883-green-cafe",
+      "decision": "reject_candidate",
+      "decidedAt": "2026-08-31T11:50:13.422Z",
+      "decidedBy": "Halifax Sourced app-owner review",
+      "note": "Rejected for production thumbnail use in this pass: logo/icon/placeholder/malformed URL/unrelated source/low-confidence candidate."
+    },
+    {
+      "id": "osm-node-11526163881-grille-works",
+      "restaurantId": "osm-node-11526163881-grille-works",
+      "decision": "reject_candidate",
+      "decidedAt": "2026-08-31T11:50:13.422Z",
+      "decidedBy": "Halifax Sourced app-owner review",
+      "note": "Rejected for production thumbnail use in this pass: logo/icon/placeholder/malformed URL/unrelated source/low-confidence candidate."
+    },
+    {
+      "id": "osm-node-11526163885-ground-zero",
+      "restaurantId": "osm-node-11526163885-ground-zero",
+      "decision": "reject_candidate",
+      "decidedAt": "2026-08-31T11:50:13.422Z",
+      "decidedBy": "Halifax Sourced app-owner review",
+      "note": "Rejected for production thumbnail use in this pass: logo/icon/placeholder/malformed URL/unrelated source/low-confidence candidate."
+    },
+    {
+      "id": "osm-node-9099103635-pazzo-ristorante-and-enoteca",
+      "restaurantId": "osm-node-9099103635-pazzo-ristorante-and-enoteca",
+      "restaurantName": "Pazzo Ristorante & Enoteca",
+      "thumbnailUrl": "https://www.rcr.ca/content/uploads/2023/08/pazzo-italian-ristorante-1920x1006.jpg",
+      "sourceUrl": "https://www.rcr.ca/restaurants/pazzo-italian-ristorante/",
+      "decision": "approve_thumbnail",
+      "decidedAt": "2026-08-31T11:50:13.422Z",
+      "decidedBy": "Halifax Sourced app-owner review",
+      "note": "official website dining image"
+    },
+    {
+      "id": "osm-node-9099100703-marigold-kitchen",
+      "restaurantId": "osm-node-9099100703-marigold-kitchen",
+      "decision": "reject_candidate",
+      "decidedAt": "2026-08-31T11:50:13.422Z",
+      "decidedBy": "Halifax Sourced app-owner review",
+      "note": "Rejected for production thumbnail use in this pass: logo/icon/placeholder/malformed URL/unrelated source/low-confidence candidate."
+    },
+    {
+      "id": "osm-node-11752717941-east-cup-cafe",
+      "restaurantId": "osm-node-11752717941-east-cup-cafe",
+      "restaurantName": "East Cup Cafe",
+      "thumbnailUrl": "https://eastcupcafe.com/cdn/shop/files/71ca412e-b244-4589-846e-49e218cc5cab.jpg?v=1685481095&width=533",
+      "sourceUrl": "https://eastcupcafe.com/",
+      "decision": "approve_thumbnail",
+      "decidedAt": "2026-08-31T11:50:13.422Z",
+      "decidedBy": "Halifax Sourced app-owner review",
+      "note": "official website cafe image"
+    },
+    {
+      "id": "osm-node-9629211483-ihop",
+      "restaurantId": "osm-node-9629211483-ihop",
+      "restaurantName": "IHOP",
+      "thumbnailUrl": "https://ihop.ca/wp-content/uploads/2026/01/MAIN-BANNER-botomless_r1.jpg",
+      "sourceUrl": "https://ihop.ca/",
+      "decision": "approve_thumbnail",
+      "decidedAt": "2026-08-31T11:50:13.422Z",
+      "decidedBy": "Halifax Sourced app-owner review",
+      "note": "official website menu image"
+    },
+    {
+      "id": "osm-node-5503919661-jukai",
+      "restaurantId": "osm-node-5503919661-jukai",
+      "restaurantName": "Jukai",
+      "thumbnailUrl": "https://static.wixstatic.com/media/84770f_68df86c5dc154741a10447bcfc69a7c2~mv2.png/v1/fill/w_889,h_697,al_c,q_90,enc_avif,quality_auto/84770f_68df86c5dc154741a10447bcfc69a7c2~mv2.png",
+      "sourceUrl": "https://www.jukairestaurant.com/",
+      "decision": "approve_thumbnail",
+      "decidedAt": "2026-08-31T11:50:13.422Z",
+      "decidedBy": "Halifax Sourced app-owner review",
+      "note": "official website menu image"
+    },
+    {
+      "id": "osm-node-11552505443-jukai-japanese-and-thai",
+      "restaurantId": "osm-node-11552505443-jukai-japanese-and-thai",
+      "restaurantName": "JUKAI Japanese & Thai",
+      "thumbnailUrl": "https://static.wixstatic.com/media/84770f_68df86c5dc154741a10447bcfc69a7c2~mv2.png/v1/fill/w_889,h_697,al_c,q_90,enc_avif,quality_auto/84770f_68df86c5dc154741a10447bcfc69a7c2~mv2.png",
+      "sourceUrl": "https://www.jukairestaurant.com/",
+      "decision": "approve_thumbnail",
+      "decidedAt": "2026-08-31T11:50:13.422Z",
+      "decidedBy": "Halifax Sourced app-owner review",
+      "note": "official website menu image"
+    },
+    {
+      "id": "osm-node-7674175977-moxie-s",
+      "restaurantId": "osm-node-7674175977-moxie-s",
+      "decision": "reject_candidate",
+      "decidedAt": "2026-08-31T11:50:13.422Z",
+      "decidedBy": "Halifax Sourced app-owner review",
+      "note": "Rejected for production thumbnail use in this pass: logo/icon/placeholder/malformed URL/unrelated source/low-confidence candidate."
+    },
+    {
+      "id": "osm-node-7674194896-gahan-house",
+      "restaurantId": "osm-node-7674194896-gahan-house",
+      "decision": "reject_candidate",
+      "decidedAt": "2026-08-31T11:50:13.422Z",
+      "decidedBy": "Halifax Sourced app-owner review",
+      "note": "Rejected for production thumbnail use in this pass: logo/icon/placeholder/malformed URL/unrelated source/low-confidence candidate."
+    },
+    {
+      "id": "osm-node-2611287045-gingerbread-haus-bakery",
+      "restaurantId": "osm-node-2611287045-gingerbread-haus-bakery",
+      "restaurantName": "Gingerbread Haus Bakery",
+      "thumbnailUrl": "https://www.gingerbreadhausbakery.com/wp-content/uploads/2019/07/IMG_20180602_082809-3-e1781047728116.jpg",
+      "sourceUrl": "https://www.gingerbreadhausbakery.com/",
+      "decision": "approve_thumbnail",
+      "decidedAt": "2026-08-31T11:50:13.422Z",
+      "decidedBy": "Halifax Sourced app-owner review",
+      "note": "official website bakery image"
+    },
+    {
+      "id": "osm-node-11552081912-kanpai-izakaya",
+      "restaurantId": "osm-node-11552081912-kanpai-izakaya",
+      "decision": "reject_candidate",
+      "decidedAt": "2026-08-31T11:50:13.422Z",
+      "decidedBy": "Halifax Sourced app-owner review",
+      "note": "Rejected for production thumbnail use in this pass: logo/icon/placeholder/malformed URL/unrelated source/low-confidence candidate."
+    },
+    {
+      "id": "osm-node-7465073827-antojo-tacos-tequila",
+      "restaurantId": "osm-node-7465073827-antojo-tacos-tequila",
+      "restaurantName": "Antojo Tacos + Tequila",
+      "thumbnailUrl": "https://antojo.ca/wp-content/uploads/2023/02/DSC_3052.jpg",
+      "sourceUrl": "https://antojo.ca/",
+      "decision": "approve_thumbnail",
+      "decidedAt": "2026-08-31T11:50:13.422Z",
+      "decidedBy": "Halifax Sourced app-owner review",
+      "note": "official website restaurant image"
+    },
+    {
+      "id": "osm-node-12143582175-asia-restaurant-and-bar",
+      "restaurantId": "osm-node-12143582175-asia-restaurant-and-bar",
+      "restaurantName": "Asia Restaurant & Bar",
+      "thumbnailUrl": "https://immediac.blob.core.windows.net/cremecafeasiarestaurant/asiarestaurant/Levels%201-4.jpg",
+      "sourceUrl": "https://asiahalifax.com/",
+      "decision": "approve_thumbnail",
+      "decidedAt": "2026-08-31T11:50:13.422Z",
+      "decidedBy": "Halifax Sourced app-owner review",
+      "note": "official website dining image"
+    },
+    {
+      "id": "osm-node-2715382299-cheese-curds-and-habaneros",
+      "restaurantId": "osm-node-2715382299-cheese-curds-and-habaneros",
+      "decision": "reject_candidate",
+      "decidedAt": "2026-08-31T11:50:13.422Z",
+      "decidedBy": "Halifax Sourced app-owner review",
+      "note": "Rejected for production thumbnail use in this pass: logo/icon/placeholder/malformed URL/unrelated source/low-confidence candidate."
+    },
+    {
+      "id": "osm-node-8836681495-lion-s-head-tavern",
+      "restaurantId": "osm-node-8836681495-lion-s-head-tavern",
+      "restaurantName": "Lion's Head Tavern",
+      "thumbnailUrl": "https://lionshead.ca/mt-content/uploads/2021/02/wingnight.jpg",
+      "sourceUrl": "https://lionshead.ca/",
+      "decision": "approve_thumbnail",
+      "decidedAt": "2026-08-31T11:50:13.422Z",
+      "decidedBy": "Halifax Sourced app-owner review",
+      "note": "official website wing night image"
+    },
+    {
+      "id": "osm-node-6910685885-mexi-s",
+      "restaurantId": "osm-node-6910685885-mexi-s",
+      "restaurantName": "Mexi's",
+      "thumbnailUrl": "https://www.mexicalirosas.com/wp-content/uploads/2020/05/mexis_halifax_patio_bar-1024x1024.webp",
+      "sourceUrl": "https://www.mexicalirosas.com/halifax/",
+      "decision": "approve_thumbnail",
+      "decidedAt": "2026-08-31T11:50:13.422Z",
+      "decidedBy": "Halifax Sourced app-owner review",
+      "note": "official website patio image"
+    },
+    {
+      "id": "edna",
+      "restaurantId": "edna",
+      "restaurantName": "EDNA",
+      "thumbnailUrl": "https://images.squarespace-cdn.com/content/v1/61eb00b3d6de8446f2b486c4/a912d05a-04d4-463d-ab1d-72865b8c52aa/PXL_20211220_184452708.PORTRAIT.jpg",
+      "sourceUrl": "https://www.ednarestaurant.com/",
+      "decision": "approve_thumbnail",
+      "decidedAt": "2026-08-31T11:50:13.422Z",
+      "decidedBy": "Halifax Sourced app-owner review",
+      "note": "official website restaurant image"
+    },
+    {
+      "id": "osm-node-13286396472-matadora-tapas-bar",
+      "restaurantId": "osm-node-13286396472-matadora-tapas-bar",
+      "decision": "reject_candidate",
+      "decidedAt": "2026-08-31T11:50:13.422Z",
+      "decidedBy": "Halifax Sourced app-owner review",
+      "note": "Rejected for production thumbnail use in this pass: logo/icon/placeholder/malformed URL/unrelated source/low-confidence candidate."
+    },
+    {
+      "id": "osm-node-11526055082-noggins-coburg",
+      "restaurantId": "osm-node-11526055082-noggins-coburg",
+      "restaurantName": "Noggins Coburg",
+      "thumbnailUrl": "https://nogginsfarm.ca/wp-content/uploads/2024/08/IMG_5691-scaled.jpg",
+      "sourceUrl": "https://nogginsfarm.ca/farm-markets/coburg-market/",
+      "decision": "approve_thumbnail",
+      "decidedAt": "2026-08-31T11:50:13.422Z",
+      "decidedBy": "Halifax Sourced app-owner review",
+      "note": "official website market image"
+    },
+    {
+      "id": "osm-node-5150058322-2-crows-brewing",
+      "restaurantId": "osm-node-5150058322-2-crows-brewing",
+      "decision": "reject_candidate",
+      "decidedAt": "2026-08-31T11:50:13.422Z",
+      "decidedBy": "Halifax Sourced app-owner review",
+      "note": "Rejected for production thumbnail use in this pass: logo/icon/placeholder/malformed URL/unrelated source/low-confidence candidate."
+    },
+    {
+      "id": "osm-way-83552117-bedford-beer-garden",
+      "restaurantId": "osm-way-83552117-bedford-beer-garden",
+      "decision": "reject_candidate",
+      "decidedAt": "2026-08-31T11:50:13.422Z",
+      "decidedBy": "Halifax Sourced app-owner review",
+      "note": "Rejected for production thumbnail use in this pass: logo/icon/placeholder/malformed URL/unrelated source/low-confidence candidate."
+    },
+    {
+      "id": "osm-node-11525752766-charm-school",
+      "restaurantId": "osm-node-11525752766-charm-school",
+      "decision": "reject_candidate",
+      "decidedAt": "2026-08-31T11:50:13.422Z",
+      "decidedBy": "Halifax Sourced app-owner review",
+      "note": "Rejected for production thumbnail use in this pass: logo/icon/placeholder/malformed URL/unrelated source/low-confidence candidate."
+    },
+    {
+      "id": "osm-node-11239721834-humble-pie-kitchen",
+      "restaurantId": "osm-node-11239721834-humble-pie-kitchen",
+      "decision": "reject_candidate",
+      "decidedAt": "2026-08-31T11:50:13.422Z",
+      "decidedBy": "Halifax Sourced app-owner review",
+      "note": "Rejected for production thumbnail use in this pass: logo/icon/placeholder/malformed URL/unrelated source/low-confidence candidate."
+    },
+    {
+      "id": "osm-node-10665783054-ben-and-florentine",
+      "restaurantId": "osm-node-10665783054-ben-and-florentine",
+      "decision": "reject_candidate",
+      "decidedAt": "2026-08-31T11:50:13.422Z",
+      "decidedBy": "Halifax Sourced app-owner review",
+      "note": "Rejected for production thumbnail use in this pass: logo/icon/placeholder/malformed URL/unrelated source/low-confidence candidate."
+    },
+    {
+      "id": "osm-node-13141457102-bitter-end-martini-bar-and-restaurant",
+      "restaurantId": "osm-node-13141457102-bitter-end-martini-bar-and-restaurant",
+      "decision": "reject_candidate",
+      "decidedAt": "2026-08-31T11:50:13.422Z",
+      "decidedBy": "Halifax Sourced app-owner review",
+      "note": "Rejected for production thumbnail use in this pass: logo/icon/placeholder/malformed URL/unrelated source/low-confidence candidate."
+    },
+    {
+      "id": "osm-node-11552119505-kofuku-japanese-and-thai",
+      "restaurantId": "osm-node-11552119505-kofuku-japanese-and-thai",
+      "decision": "reject_candidate",
+      "decidedAt": "2026-08-31T11:50:13.422Z",
+      "decidedBy": "Halifax Sourced app-owner review",
+      "note": "Rejected for production thumbnail use in this pass: logo/icon/placeholder/malformed URL/unrelated source/low-confidence candidate."
+    }
+  ]
+}
