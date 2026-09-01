@@ -32,10 +32,24 @@ async function loadWindowScript(path, globalName, fallback) {
 
 function sleep(ms) { return new Promise((resolve) => setTimeout(resolve, ms)); }
 function hashId(parts) { return createHash("sha1").update(parts.filter(Boolean).join("|"), "utf8").digest("hex").slice(0, 18); }
+function publicHttpUrl(url) {
+  const hostname = url.hostname.toLowerCase();
+  return !(
+    hostname === "localhost" ||
+    hostname === "0.0.0.0" ||
+    hostname === "::1" ||
+    hostname === "127.0.0.1" ||
+    hostname.endsWith(".local") ||
+    /^127\./.test(hostname) ||
+    /^10\./.test(hostname) ||
+    /^192\.168\./.test(hostname) ||
+    /^172\.(?:1[6-9]|2\d|3[0-1])\./.test(hostname)
+  );
+}
 function safeUrl(value, base) {
   try {
     const url = new URL(String(value ?? "").trim(), base);
-    return ["http:", "https:"].includes(url.protocol) ? url.href : null;
+    return ["http:", "https:"].includes(url.protocol) && publicHttpUrl(url) ? url.href : null;
   } catch { return null; }
 }
 function safeAssetPath(value) {

@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-01T15:38:00.458Z",
+  "generatedAt": "2026-09-01T15:52:03.448Z",
   "sourceCommitSha": null,
   "definitions": {
     "approvedThumbnail": "A thumbnail candidate tied to an exact restaurant ID with approved review state and production-approved rights status.",
@@ -10,9 +10,9 @@
   },
   "counts": {
     "restaurants": 740,
-    "candidates": 5434,
+    "candidates": 5433,
     "approvedCandidates": 73,
-    "reviewCandidates": 5361,
+    "reviewCandidates": 5360,
     "restaurantsWithApprovedThumbnail": 73,
     "restaurantsWithAnyCandidate": 230,
     "restaurantsMissingApprovedThumbnail": 667,
@@ -30,22 +30,22 @@
   "candidateMix": {
     "bySourceKind": {
       "approved_restaurant_media": 73,
-      "official_page_thumbnail_candidate": 5354,
+      "official_page_thumbnail_candidate": 5353,
       "official_feed_media": 7
     },
     "byReviewState": {
       "approved": 73,
-      "candidate_review": 5361
+      "candidate_review": 5360
     },
     "byRightsStatus": {
       "production_approved": 73,
-      "requires_rights_review": 5361
+      "requires_rights_review": 5360
     },
     "byExtractionMethod": {
       "approved_media_manifest": 73,
       "css_background_image": 1696,
       "html_link_image": 533,
-      "html_img_content": 2760,
+      "html_img_content": 2759,
       "declared_post_media": 133,
       "html_meta_image": 168,
       "jsonld_image": 71
