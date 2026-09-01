@@ -1,8 +1,8 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-01T15:38:22.153Z",
-  "sourceCommitSha": "d6aa9762bceef7fa6441c56421ee231a121a484a",
-  "baselineCommitHint": "d6aa9762bceef7fa6441c56421ee231a121a484a",
+  "generatedAt": "2026-09-01T18:03:08.074Z",
+  "sourceCommitSha": "425157193b66883e0d6769dc54ce6f2780bd9130",
+  "baselineCommitHint": "425157193b66883e0d6769dc54ce6f2780bd9130",
   "definitions": {
     "canonicalPlaces": "Current user-facing merge of catalog restaurants plus reviewed discovery records, matching the app's existing name-based discovery merge behavior.",
     "verifiedOfficialWebsite": "Official-site fetch returned a successful HTTP status or the first-party discovery layer successfully fetched the restaurant-owned site.",
@@ -31,7 +31,7 @@
     "withInspectionMatch": 496,
     "withMenuLink": 166,
     "withVerifiedMenuLink": 137,
-    "withSpecials": 58,
+    "withSpecials": 140,
     "withVerifiedSpecials": 39,
     "withReservationLink": 63,
     "withOnlineOrderingLink": 80,
@@ -63,7 +63,7 @@
     "withNeighbourhood": 750,
     "withCuisineClassification": 750,
     "withAccessibilityInformation": 229,
-    "withPatioInformation": 41,
+    "withPatioInformation": 81,
     "withUsableMedia": 73,
     "lifecycle": {
       "active": 11,
@@ -81,6 +81,30 @@
       "unknown": 0
     },
     "staleRestaurantRecords": 0,
+    "publicSpecialSourceLayer": {
+      "generatedAt": "2026-09-01T17:40:18.642Z",
+      "sourceFailures": 0,
+      "total": 113,
+      "resolved": 82,
+      "unresolved": 28,
+      "conflicts": 3,
+      "happyHour": 37,
+      "seasonalCampaign": 68,
+      "withPrice": 63,
+      "withSchedule": 45,
+      "withSourceImage": 68
+    },
+    "patioDirectoryLayer": {
+      "generatedAt": "2026-09-01T16:30:02.624Z",
+      "sourceFailures": 0,
+      "total": 75,
+      "resolved": 47,
+      "unresolved": 23,
+      "conflicts": 5,
+      "dogFriendly": 52,
+      "withWebsite": 75,
+      "withSourceImage": 75
+    },
     "currentResolutionRisks": {
       "discoveryNameOnlyMerges": 2
     },
@@ -99,14 +123,14 @@
       "ordering": 78
     },
     "structuredSpecialLayer": {
-      "generatedAt": "2026-09-01T15:30:02.868Z",
-      "count": 80,
+      "generatedAt": "2026-09-01T17:56:25.831Z",
+      "count": 160,
       "verifiedCurrent": 49,
       "recurringVerify": 5,
-      "sourceLeads": 20,
+      "sourceLeads": 100,
       "stale": 6,
       "expired": 0,
-      "orphanSourceCount": 0
+      "orphanSourceCount": 31
     }
   },
   "restaurantCoveragePercent": {
@@ -115,7 +139,7 @@
     "inspection": 66.1,
     "menu": 22.1,
     "verifiedMenu": 18.3,
-    "specials": 7.7,
+    "specials": 18.7,
     "verifiedSpecials": 5.2,
     "reservations": 8.4,
     "ordering": 10.7,
@@ -128,7 +152,7 @@
     "neighbourhood": 100,
     "cuisine": 100,
     "accessibility": 30.5,
-    "patio": 5.5,
+    "patio": 10.8,
     "media": 9.7,
     "linkHub": 0
   },
@@ -1166,7 +1190,7 @@
       ]
     },
     "reconciledFromAcceptedStructuredLayers": true,
-    "reconciledAt": "2026-09-01T15:38:22.153Z"
+    "reconciledAt": "2026-09-01T18:03:08.074Z"
   },
   "eventCoverage": {
     "currentCityEvents": 192,
@@ -1216,7 +1240,7 @@
     "canonicalRestaurantsWithStructuredUpcomingEvents": 2,
     "upcomingStructuredRestaurantEventRecords": 21,
     "expiredStructuredRestaurantEvents": 0,
-    "next7Days": 22,
+    "next7Days": 23,
     "next30Days": 64
   },
   "discoveryCoverage": {
@@ -1235,6 +1259,8 @@
     "cityEventSources": 0,
     "openingWatchSources": 0,
     "restaurantDirectorySources": 0,
+    "publicSpecialSources": 0,
+    "patioDirectorySources": 0,
     "structuredPlaceFacts": 0
   },
   "credentials": {

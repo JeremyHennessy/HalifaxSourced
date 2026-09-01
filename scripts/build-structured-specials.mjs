@@ -5,6 +5,7 @@ const catalog = JSON.parse(await readFile(new URL("../data/build/catalog.json", 
 const firstParty = JSON.parse(await readFile(new URL("../data/build/first-party-sources.json", import.meta.url), "utf8"));
 const verifiedPages = JSON.parse(await readFile(new URL("../data/build/verified-source-pages.json", import.meta.url), "utf8").catch(() => "{}"));
 const reviewedSpecials = JSON.parse(await readFile(new URL("../data/reviewed-structured-specials.json", import.meta.url), "utf8").catch(() => "{\"records\":[]}"));
+const publicSpecialLeads = JSON.parse(await readFile(new URL("../data/build/public-special-source-leads.json", import.meta.url), "utf8").catch(() => "{\"records\":[]}"));
 const discoveryOverrides = JSON.parse(await readFile(new URL("../data/discovery-overrides.json", import.meta.url), "utf8").catch(() => "{\"approved\":[]}"));
 const discoveredRestaurants = Array.isArray(discoveryOverrides?.approved) ? discoveryOverrides.approved : [];
 function normalizeName(value) { return String(value || "").toLowerCase().normalize("NFKD").replace(/[\u0300-\u036f]/g, "").replace(/\bthe\b/g, "").replace(/[^a-z0-9]+/g, ""); }
@@ -235,16 +236,56 @@ for (const record of firstParty.records || []) {
     });
   }
 }
-
+for (const lead of publicSpecialLeads.records || []) {
+  const sourceUrl = safeUrl(lead.sourceUrl) || safeUrl(lead.sourcePageUrl);
+  if (!sourceUrl || !lead.title) continue;
+  const restaurantId = lead.restaurantId ? canonicalRestaurantId(lead.restaurantId) : null;
+  const observed = lead.observedAt || lead.sourceUpdatedAt || lead.lastVerifiedAt || now;
+  push({
+    specialId: specialId(restaurantId || `unresolved-${lead.sourceRecordId || lead.venueName || "special"}`, lead.title, sourceUrl),
+    restaurantId,
+    restaurantName: lead.venueName || null,
+    title: lead.title,
+    specialType: lead.specialType || typeFor(lead.title),
+    description: lead.description || null,
+    dayOfWeek: Array.isArray(lead.dayOfWeek) ? lead.dayOfWeek : null,
+    startTime: lead.startTime || null,
+    endTime: lead.endTime || null,
+    validFrom: lead.validFrom || null,
+    validTo: lead.validTo || null,
+    price: numericPrice(lead.price),
+    currency: lead.currency || (numericPrice(lead.price) !== null ? "CAD" : null),
+    recurrence: lead.recurrence || null,
+    sourceUrl,
+    sourcePageUrl: lead.sourcePageUrl || null,
+    sourceType: lead.sourceType || "public_directory_special_lead",
+    sourceName: lead.sourceName || null,
+    sourceRecordId: lead.sourceRecordId || null,
+    address: lead.address || null,
+    neighborhood: lead.neighborhood || null,
+    sourceImageUrl: safeUrl(lead.sourceImageUrl),
+    rightsState: lead.rightsState || null,
+    observedAt: observed,
+    verifiedAt: null,
+    status: "source_lead",
+    reviewState: lead.matchConfidence === "needs_review" || !restaurantId ? "needs_place_review" : "source_signal",
+    matchMethod: lead.matchMethod || null,
+    matchConfidence: lead.matchConfidence || null
+  });
+}
 const canonicalRecords = [];
 const orphanSources = [];
 for (const record of records) {
-  if (catalogIds.has(record.restaurantId)) {
+  if (record.restaurantId && catalogIds.has(record.restaurantId)) {
     canonicalRecords.push(record);
     continue;
   }
   orphanSources.push({
     restaurantId: record.restaurantId || null,
+    candidateName: record.restaurantName || null,
+    sourceRecordId: record.sourceRecordId || null,
+    matchMethod: record.matchMethod || null,
+    matchConfidence: record.matchConfidence || null,
     title: record.title,
     sourceUrl: record.sourceUrl,
     sourceType: record.sourceType,

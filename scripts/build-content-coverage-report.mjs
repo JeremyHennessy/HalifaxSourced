@@ -92,6 +92,8 @@ const structured = await loadJson("data/build/structured-events.json", { events:
 const firstParty = await loadJson("data/build/first-party-sources.json", { records: [], failures: [] });
 const websiteFeeds = await loadJson("data/build/website-feed-signals.json", { signals: [], failures: [] });
 const socialSignals = await loadJson("data/build/social-signals.json", { signals: [], failures: [] });
+const patioDirectory = await loadJson("data/build/patio-directory-facts.json", { records: [], failures: [], counts: {} });
+const publicSpecialLeads = await loadJson("data/build/public-special-source-leads.json", { records: [], failures: [], counts: {} });
 
 const curated = Array.isArray(curatedWindow.HALIFAX_RESTAURANTS) ? curatedWindow.HALIFAX_RESTAURANTS : [];
 const osm = Array.isArray(osmWindow.HALIFAX_OSM_RESTAURANTS) ? osmWindow.HALIFAX_OSM_RESTAURANTS : [];
@@ -229,6 +231,7 @@ for (const result of officialResults) {
 }
 
 for (const restaurant of canonical) if ((restaurant.specials || []).length) specialIds.add(restaurant.id);
+for (const lead of publicSpecialLeads.records || []) if (lead.restaurantId && canonicalIds.has(lead.restaurantId)) specialIds.add(lead.restaurantId);
 
 const structuredEvents = Array.isArray(structured.events) ? structured.events : [];
 const structuredUpcoming = structuredEvents.filter((event) => isUpcoming(event.startAt, event.endAt));
@@ -259,6 +262,9 @@ for (const restaurant of canonical) {
   if (restaurant.accessibility || Object.keys(tags).some((key) => /wheelchair|accessible|step_free|toilets:wheelchair/.test(key)) || /wheelchair|accessible/.test(tagText)) accessibilityIds.add(restaurant.id);
   const signal = officialById.get(restaurant.id);
   if (hasHits(signal, "patio") || (signal?.candidateLinks || []).some((link) => hasHits(link, "patio"))) patioIds.add(restaurant.id);
+}
+for (const record of patioDirectory.records || []) {
+  if (record.restaurantId && canonicalIds.has(record.restaurantId)) patioIds.add(record.restaurantId);
 }
 
 const sharedProfileKeys = new Set([...profileAssociationCounts].filter(([, count]) => count > 1).map(([key]) => key));
@@ -318,7 +324,9 @@ const sourceFailures = {
   socialApis: Array.isArray(socialSignals.failures) ? socialSignals.failures.length : 0,
   cityEventSources: Array.isArray(cityPayload.failures) ? cityPayload.failures.length : 0,
   openingWatchSources: Array.isArray(openingPayload.failures) ? openingPayload.failures.length : 0,
-  restaurantDirectorySources: Array.isArray(directoryPayload.failures) ? directoryPayload.failures.length : 0
+  restaurantDirectorySources: Array.isArray(directoryPayload.failures) ? directoryPayload.failures.length : 0,
+  publicSpecialSources: Array.isArray(publicSpecialLeads.failures) ? publicSpecialLeads.failures.length : 0,
+  patioDirectorySources: Array.isArray(patioDirectory.failures) ? patioDirectory.failures.length : 0
 };
 
 const socialCoverage = {};
@@ -380,6 +388,20 @@ const report = {
     activeCanonicalPlaces: total - lifecycle.temporarily_closed - lifecycle.permanently_closed - lifecycle.moved,
     freshness,
     staleRestaurantRecords: staleRestaurantIds.size,
+    publicSpecialSourceLayer: {
+      generatedAt: publicSpecialLeads.generatedAt || null,
+      sourceFailures: publicSpecialLeads.failures?.length || 0,
+      total: publicSpecialLeads.counts?.total || publicSpecialLeads.records?.length || 0,
+      resolved: publicSpecialLeads.counts?.resolved || 0,
+      unresolved: publicSpecialLeads.counts?.unresolved || 0,
+      conflicts: publicSpecialLeads.counts?.conflicts || 0,
+      happyHour: publicSpecialLeads.counts?.happyHour || 0,
+      seasonalCampaign: publicSpecialLeads.counts?.seasonalCampaign || 0,
+      withPrice: publicSpecialLeads.counts?.withPrice || 0,
+      withSchedule: publicSpecialLeads.counts?.withSchedule || 0,
+      withSourceImage: publicSpecialLeads.counts?.withSourceImage || 0
+    },
+    patioDirectoryLayer: { generatedAt: patioDirectory.generatedAt || null, ...(patioDirectory.counts || {}) },
     currentResolutionRisks: { discoveryNameOnlyMerges }
   },
   restaurantCoveragePercent: Object.fromEntries(Object.entries({

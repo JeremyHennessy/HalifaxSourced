@@ -48,7 +48,8 @@ for (const record of payload.records || []) {
 }
 
 for (const orphan of payload.orphanSources || []) {
-  if (!orphan.restaurantId || ids.has(orphan.restaurantId) || !orphan.title || !validUrl(orphan.sourceUrl) || orphan.reason !== "restaurant_id_not_in_canonical_catalog") {
+  const unresolvedPublicLead = !orphan.restaurantId && orphan.sourceType === "public_directory_special_lead" && orphan.sourceRecordId && orphan.candidateName && orphan.reason === "restaurant_id_not_in_canonical_catalog";
+  if (!unresolvedPublicLead && (!orphan.restaurantId || ids.has(orphan.restaurantId) || !orphan.title || !validUrl(orphan.sourceUrl) || orphan.reason !== "restaurant_id_not_in_canonical_catalog")) {
     errors.push(`invalid_orphan_source:${orphan.restaurantId || "missing"}:${orphan.sourceUrl || "missing"}`);
   }
 }

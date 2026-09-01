@@ -1,6 +1,6 @@
 # Halifax Sourced thumbnail coverage report
 
-Generated: 2026-09-01T15:52:03.448Z
+Generated: 2026-09-01T18:02:48.626Z
 
 This report tracks source-backed image leads for restaurant thumbnails. It separates production-approved media from candidates that still need review, attribution, or permission before they can become default restaurant card imagery.
 
@@ -10,13 +10,13 @@ This report tracks source-backed image leads for restaurant thumbnails. It separ
 | --- | ---: | ---: |
 | Catalog restaurants | 740 | 100% |
 | Restaurants with approved thumbnail | 73 | 9.9% |
-| Restaurants with any thumbnail candidate | 230 | 31.1% |
+| Restaurants with any thumbnail candidate | 247 | 33.4% |
 | Restaurants missing approved thumbnail | 667 | 90.1% |
-| Restaurants missing any candidate | 510 | 68.9% |
-| Promotion queue | 128 | 17.3% |
-| Discovery queue | 510 | 68.9% |
+| Restaurants missing any candidate | 493 | 66.6% |
+| Promotion queue | 146 | 19.7% |
+| Discovery queue | 493 | 66.6% |
 
-Total thumbnail candidates: **5433**. Review-needed candidates: **5360**. Fetch failures in the latest run: **79**.
+Total thumbnail candidates: **5474**. Review-needed candidates: **5401**. Fetch failures in the latest run: **79**.
 
 ## Candidate source mix
 
@@ -24,18 +24,19 @@ Total thumbnail candidates: **5433**. Review-needed candidates: **5360**. Fetch 
 | --- | ---: |
 | official_page_thumbnail_candidate | 5,353 |
 | approved_restaurant_media | 73 |
+| public_campaign_menu_image | 41 |
 | official_feed_media | 7 |
 
 ## Review and rights state
 
 | Review state | Candidates |
 | --- | ---: |
-| candidate_review | 5,360 |
+| candidate_review | 5,401 |
 | approved | 73 |
 
 | Rights state | Candidates |
 | --- | ---: |
-| requires_rights_review | 5,360 |
+| requires_rights_review | 5,401 |
 | production_approved | 73 |
 
 ## Promotion queue
@@ -44,7 +45,7 @@ Restaurants below are missing approved thumbnails but have source-backed candida
 
 | Restaurant | Neighbourhood | Candidates | Best source | Website |
 | --- | --- | ---: | --- | --- |
-| The Black Sheep | Downtown | 76 | official_page_thumbnail_candidate | https://blacksheephalifax.com/ |
+| The Black Sheep | Downtown | 77 | official_page_thumbnail_candidate | https://blacksheephalifax.com/ |
 | Studio East Food+Drink | North End | 58 | official_page_thumbnail_candidate | https://www.studioeastfood.ca/ |
 | King of Donair | Halifax Peninsula | 45 | official_page_thumbnail_candidate | https://www.kingofdonair.ca |
 | Second Cup | Armdale / Fairview | 45 | official_page_thumbnail_candidate | https://secondcup.com/en/location/bayers-lake/ |
@@ -53,7 +54,7 @@ Restaurants below are missing approved thumbnails but have source-backed candida
 | The Armview Restaurant & Lounge | Halifax Peninsula | 43 | official_page_thumbnail_candidate | https://www.thearmview.com/ |
 | Wendy's | Downtown | 40 | official_page_thumbnail_candidate | https://www.wendys.com/en-ca |
 | Swaad Sagaa Indian Cuisine Incorporated | North End | 39 | official_page_thumbnail_candidate | https://www.swaadsagaa.com/ |
-| Moxie's | Downtown | 37 | official_page_thumbnail_candidate | https://moxies.com |
+| Moxie's | Downtown | 38 | official_page_thumbnail_candidate | https://moxies.com |
 | Smokehouse Brewery | North End | 37 | official_page_thumbnail_candidate | https://smokehousebrewery.ca |
 | Real Fake Meats | Downtown | 36 | official_page_thumbnail_candidate | https://www.realfakemeats.com/ |
 | Rinaldo’s | West End | 36 | official_page_thumbnail_candidate | https://rinaldos.ca |
@@ -70,20 +71,20 @@ Restaurants below are missing approved thumbnails but have source-backed candida
 | Tilted Tap | Dartmouth | 31 | official_page_thumbnail_candidate | https://www.tiltedtap.ca/ |
 | Tomavinos Pizzeria | South End | 31 | official_page_thumbnail_candidate | https://www.tomavinos.ca/ |
 | The Mellow Mug | Bedford | 30 | official_page_thumbnail_candidate | https://www.mellowmug.ca |
-| Sea Smoke | Waterfront | 28 | official_page_thumbnail_candidate | https://www.seasmokehalifax.com |
+| Sea Smoke | Waterfront | 29 | official_page_thumbnail_candidate | https://www.seasmokehalifax.com |
 | The Bicycle Thief | Waterfront | 28 | official_page_thumbnail_candidate | https://bicyclethief.ca/ |
 | THE 5K CAFE | Armdale / Fairview | 26 | official_page_thumbnail_candidate | https://www.the5kcafe.ca/ |
 | Trident Booksellers and Cafe | Waterfront | 26 | official_page_thumbnail_candidate | https://tridenthalifax.ca/ |
 | Rush Hour Pizza | West End | 25 | official_page_thumbnail_candidate | https://rushhourpizza.ca/ |
 | The Lower Deck | Waterfront | 25 | official_page_thumbnail_candidate | https://www.lowerdeck.ca/ |
 | Jean's Chinese Restaurant | Dartmouth | 24 | official_page_thumbnail_candidate | https://www.jeansrestaurant.ca/ |
+| Durty Nelly's Irish Pub | Downtown | 23 | official_page_thumbnail_candidate | https://durtynellys.ca/ |
 | Krave Burger | Downtown | 23 | official_page_thumbnail_candidate | http://kraveburger.com |
 | Krave Burger | Dartmouth | 23 | official_page_thumbnail_candidate | http://kraveburger.com |
 | Starbucks | Dartmouth | 23 | official_page_thumbnail_candidate | https://www.starbucks.ca/ |
 | Starbucks | Armdale / Fairview | 23 | official_page_thumbnail_candidate | https://www.starbucks.ca/ |
 | Wing 'n It | Armdale / Fairview | 23 | official_page_thumbnail_candidate | https://wingnit.ca/ |
 | Cora | Downtown | 22 | official_page_thumbnail_candidate | https://www.chezcora.com/en/breakfast-lunch-restaurants/cora-halifax-downtown/ |
-| Durty Nelly's Irish Pub | Downtown | 22 | official_page_thumbnail_candidate | https://durtynellys.ca/ |
 
 ## Discovery queue
 
@@ -118,7 +119,6 @@ Restaurants below have no thumbnail candidate yet and should be prioritized for 
 | Baba's Pizzeria | South End | 0 | None |  |
 | Bai Wei Grill Bar | South End | 0 | None | http://baiweigrillbar.com |
 | Banh Mi A&B | Halifax Peninsula | 0 | None |  |
-| Baton Rouge | Waterfront | 0 | None |  |
 | Bearly's House of Blues | Downtown | 0 | None |  |
 | Bells Lane Kitchen at Purdy's Wharf | Downtown | 0 | None |  |
 | Bento Sushi | South End | 0 | None |  |
@@ -131,5 +131,6 @@ Restaurants below have no thumbnail candidate yet and should be prioritized for 
 | Boneheads BBQ | South End | 0 | None |  |
 | boomburger | Armdale / Fairview | 0 | None |  |
 | Booster Juice | Armdale / Fairview | 0 | None |  |
+| Booster Juice | North End | 0 | None |  |
 
 Machine-readable queues are in `data/build/thumbnail-coverage-report.json`.

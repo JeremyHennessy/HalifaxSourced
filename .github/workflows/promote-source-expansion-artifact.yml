@@ -81,12 +81,16 @@ jobs:
           copy_if_present data/build/verified-source-pages.json
           copy_if_present data/structured-events.js
           copy_if_present data/build/structured-events.json
+          copy_if_present data/patio-directory-facts.js
+          copy_if_present data/build/patio-directory-facts.json
           copy_if_present data/first-party-sources.js
           copy_if_present data/build/first-party-sources.json
           copy_if_present data/website-feed-signals.js
           copy_if_present data/build/website-feed-signals.json
           copy_if_present data/website-page-intelligence.js
           copy_if_present data/build/website-page-intelligence.json
+          copy_if_present data/public-special-source-leads.js
+          copy_if_present data/build/public-special-source-leads.json
           copy_if_present data/recent-social-posts.js
           copy_if_present data/build/recent-social-posts.json
           copy_if_present data/reviewed-social-posts.js
@@ -133,6 +137,7 @@ jobs:
         env:
           SOURCE_COMMIT_SHA: ${{ github.sha }}
         run: |
+          node scripts/build-structured-specials.mjs
           node scripts/build-recent-social-posts.mjs
           node scripts/build-reviewed-social-posts.mjs
           node scripts/build-thumbnail-coverage-report.mjs
@@ -144,6 +149,8 @@ jobs:
           node scripts/check-data-integrity.mjs
           node scripts/check-expanded-sources.mjs
           node scripts/check-thumbnail-candidates.mjs
+          node scripts/check-patio-directory-facts.mjs
+          node scripts/check-public-special-source-leads.mjs
           node scripts/check-restaurant-media-rights.mjs
 
       - name: Create promotion pull request

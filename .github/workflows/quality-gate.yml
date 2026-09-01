@@ -15,7 +15,7 @@ permissions:
 jobs:
   data-integrity:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 25
     steps:
       - name: Checkout
         uses: actions/checkout@v6
@@ -34,8 +34,14 @@ jobs:
       - name: Run structured-special evidence regression
         run: node scripts/test-structured-specials-model.mjs
 
+      - name: Build public happy-hour source leads
+        run: node scripts/import-public-special-source-leads.mjs
+
       - name: Build deterministic structured specials
         run: node scripts/build-structured-specials.mjs
+
+      - name: Build patio directory facts
+        run: node scripts/import-patio-directory-facts.mjs
 
       - name: Build recent post intelligence
         run: |
@@ -63,6 +69,8 @@ jobs:
           node scripts/check-city-events.mjs
           node scripts/check-event-entity-resolution.mjs
           node scripts/check-structured-place-facts.mjs
+          node scripts/check-patio-directory-facts.mjs
+          node scripts/check-public-special-source-leads.mjs
           node scripts/test-hours-state.mjs
           node scripts/check-structured-specials.mjs
           node scripts/test-city-event-source-drift.mjs
@@ -102,10 +110,17 @@ jobs:
             artifacts/event-entity-resolution-report.json
             artifacts/structured-place-facts-report.json
             artifacts/structured-specials-report.json
+            artifacts/patio-directory-facts-report.json
+            artifacts/public-special-source-leads-report.json
             data/build/event-entity-resolution.json
             data/build/structured-place-facts.json
             data/build/structured-specials.json
             data/structured-specials.js
+            data/build/patio-directory-facts.json
+            data/patio-directory-facts.js
+
+            data/build/public-special-source-leads.json
+            data/public-special-source-leads.js
             data/build/website-page-intelligence.json
             data/website-page-intelligence.js
             data/build/recent-social-posts.json
@@ -126,7 +141,7 @@ jobs:
 
   ui-verification:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 30
     steps:
       - name: Checkout
         uses: actions/checkout@v6
@@ -135,6 +150,9 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 22
+
+      - name: Build public happy-hour source leads for browser verification
+        run: node scripts/import-public-special-source-leads.mjs
 
       - name: Build structured specials for browser verification
         run: node scripts/build-structured-specials.mjs

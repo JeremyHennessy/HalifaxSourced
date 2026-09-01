@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-01T15:52:03.448Z",
-  "sourceCommitSha": null,
+  "generatedAt": "2026-09-01T18:02:48.626Z",
+  "sourceCommitSha": "425157193b66883e0d6769dc54ce6f2780bd9130",
   "definitions": {
     "approvedThumbnail": "A thumbnail candidate tied to an exact restaurant ID with approved review state and production-approved rights status.",
     "anyThumbnailCandidate": "Any source-backed thumbnail lead for a restaurant, including official feed, Meta API, official page metadata, or already approved media.",
@@ -10,36 +10,37 @@
   },
   "counts": {
     "restaurants": 740,
-    "candidates": 5433,
+    "candidates": 5474,
     "approvedCandidates": 73,
-    "reviewCandidates": 5360,
+    "reviewCandidates": 5401,
     "restaurantsWithApprovedThumbnail": 73,
-    "restaurantsWithAnyCandidate": 230,
+    "restaurantsWithAnyCandidate": 247,
     "restaurantsMissingApprovedThumbnail": 667,
-    "restaurantsMissingAnyCandidate": 510,
-    "promotionQueue": 128,
-    "discoveryQueue": 510,
+    "restaurantsMissingAnyCandidate": 493,
+    "promotionQueue": 146,
+    "discoveryQueue": 493,
     "fetchFailures": 79
   },
   "coveragePercent": {
     "approvedThumbnail": 9.9,
-    "anyThumbnailCandidate": 31.1,
+    "anyThumbnailCandidate": 33.4,
     "missingApprovedThumbnail": 90.1,
-    "missingAnyThumbnailCandidate": 68.9
+    "missingAnyThumbnailCandidate": 66.6
   },
   "candidateMix": {
     "bySourceKind": {
       "approved_restaurant_media": 73,
       "official_page_thumbnail_candidate": 5353,
-      "official_feed_media": 7
+      "official_feed_media": 7,
+      "public_campaign_menu_image": 41
     },
     "byReviewState": {
       "approved": 73,
-      "candidate_review": 5360
+      "candidate_review": 5401
     },
     "byRightsStatus": {
       "production_approved": 73,
-      "requires_rights_review": 5360
+      "requires_rights_review": 5401
     },
     "byExtractionMethod": {
       "approved_media_manifest": 73,
@@ -48,7 +49,8 @@
       "html_img_content": 2759,
       "declared_post_media": 133,
       "html_meta_image": 168,
-      "jsonld_image": 71
+      "jsonld_image": 71,
+      "public_special_source_declared_image": 41
     },
     "byPlatform": {
       "website_feed": 7,
@@ -62,12 +64,13 @@
         "name": "The Black Sheep",
         "neighborhood": "Downtown",
         "website": "https://blacksheephalifax.com/",
-        "candidateCount": 76,
+        "candidateCount": 77,
         "sourceKinds": {
-          "official_page_thumbnail_candidate": 76
+          "official_page_thumbnail_candidate": 76,
+          "public_campaign_menu_image": 1
         },
         "reviewStates": {
-          "candidate_review": 76
+          "candidate_review": 77
         },
         "bestCandidate": {
           "id": "thumb-a1bd087cd2f87e86ef",
@@ -260,12 +263,13 @@
         "name": "Moxie's",
         "neighborhood": "Downtown",
         "website": "https://moxies.com",
-        "candidateCount": 37,
+        "candidateCount": 38,
         "sourceKinds": {
-          "official_page_thumbnail_candidate": 37
+          "official_page_thumbnail_candidate": 37,
+          "public_campaign_menu_image": 1
         },
         "reviewStates": {
-          "candidate_review": 37
+          "candidate_review": 38
         },
         "bestCandidate": {
           "id": "thumb-84c6c65628ff63695f",
@@ -634,12 +638,13 @@
         "name": "Sea Smoke",
         "neighborhood": "Waterfront",
         "website": "https://www.seasmokehalifax.com",
-        "candidateCount": 28,
+        "candidateCount": 29,
         "sourceKinds": {
-          "official_page_thumbnail_candidate": 28
+          "official_page_thumbnail_candidate": 28,
+          "public_campaign_menu_image": 1
         },
         "reviewStates": {
-          "candidate_review": 28
+          "candidate_review": 29
         },
         "bestCandidate": {
           "id": "thumb-decf7050f5b5ed7dc1",
@@ -784,6 +789,29 @@
         }
       },
       {
+        "restaurantId": "osm-node-37132580-durty-nelly-s-irish-pub",
+        "name": "Durty Nelly's Irish Pub",
+        "neighborhood": "Downtown",
+        "website": "https://durtynellys.ca/",
+        "candidateCount": 23,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 22,
+          "public_campaign_menu_image": 1
+        },
+        "reviewStates": {
+          "candidate_review": 23
+        },
+        "bestCandidate": {
+          "id": "thumb-5f697367fec8043dc5",
+          "thumbnailUrl": "https://durtynellys.ca/wp-content/uploads/2025/04/cropped-Icon@4x.png",
+          "sourceUrl": "https://durtynellys.ca/",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "official_page_source_media"
+        }
+      },
+      {
         "restaurantId": "osm-node-3791840157-krave-burger",
         "name": "Krave Burger",
         "neighborhood": "Downtown",
@@ -913,28 +941,6 @@
           "reviewState": "candidate_review",
           "rightsStatus": "requires_rights_review",
           "confidence": "same_host_official_page_image"
-        }
-      },
-      {
-        "restaurantId": "osm-node-37132580-durty-nelly-s-irish-pub",
-        "name": "Durty Nelly's Irish Pub",
-        "neighborhood": "Downtown",
-        "website": "https://durtynellys.ca/",
-        "candidateCount": 22,
-        "sourceKinds": {
-          "official_page_thumbnail_candidate": 22
-        },
-        "reviewStates": {
-          "candidate_review": 22
-        },
-        "bestCandidate": {
-          "id": "thumb-5f697367fec8043dc5",
-          "thumbnailUrl": "https://durtynellys.ca/wp-content/uploads/2025/04/cropped-Icon@4x.png",
-          "sourceUrl": "https://durtynellys.ca/",
-          "sourceKind": "official_page_thumbnail_candidate",
-          "reviewState": "candidate_review",
-          "rightsStatus": "requires_rights_review",
-          "confidence": "official_page_source_media"
         }
       },
       {
@@ -1268,6 +1274,29 @@
         }
       },
       {
+        "restaurantId": "osm-node-7674254025-shuck-seafood-raw-bar",
+        "name": "Shuck Seafood + Raw Bar",
+        "neighborhood": "Downtown",
+        "website": "https://www.rcr.ca/restaurants/shuck-seafood-raw-bar/",
+        "candidateCount": 19,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 17,
+          "public_campaign_menu_image": 2
+        },
+        "reviewStates": {
+          "candidate_review": 19
+        },
+        "bestCandidate": {
+          "id": "thumb-0dab19973e8f692259",
+          "thumbnailUrl": "https://www.rcr.ca/content/uploads/2018/02/shuck-1995-1920x1006.jpg",
+          "sourceUrl": "https://www.rcr.ca/restaurants/shuck-seafood-raw-bar/",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "official_page_source_media"
+        }
+      },
+      {
         "restaurantId": "osm-node-11552069056-sushi-cove",
         "name": "Sushi Cove",
         "neighborhood": "South End",
@@ -1378,6 +1407,52 @@
         }
       },
       {
+        "restaurantId": "osm-node-6296953436-the-mercantile-social",
+        "name": "The Mercantile Social",
+        "neighborhood": "Waterfront",
+        "website": "https://themercantilesocial.ca/",
+        "candidateCount": 18,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 17,
+          "public_campaign_menu_image": 1
+        },
+        "reviewStates": {
+          "candidate_review": 18
+        },
+        "bestCandidate": {
+          "id": "thumb-3f24e6a7862a8311e7",
+          "thumbnailUrl": "https://file.squarespace-cdn.com/content/v2/namespaces/fonts/libraries/sqsp/assets/109c2a75-1f80-4a9d-8277-5cc43beb4284/latin-ext.woff2",
+          "sourceUrl": "https://www.themercantilesocial.com/",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "official_page_declared_remote_image"
+        }
+      },
+      {
+        "restaurantId": "osm-node-771698137-waterfront-warehouse",
+        "name": "Waterfront Warehouse",
+        "neighborhood": "Waterfront",
+        "website": "https://www.rcr.ca/restaurants/waterfront-warehouse/",
+        "candidateCount": 18,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 17,
+          "public_campaign_menu_image": 1
+        },
+        "reviewStates": {
+          "candidate_review": 18
+        },
+        "bestCandidate": {
+          "id": "thumb-0160308499b11522de",
+          "thumbnailUrl": "https://www.rcr.ca/content/plugins/header-section/img/slider-controls.png",
+          "sourceUrl": "https://www.rcr.ca/restaurants/waterfront-warehouse/",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "same_host_official_page_image"
+        }
+      },
+      {
         "restaurantId": "osm-node-4416774495-glitter-bean-cafe",
         "name": "Glitter Bean Cafe",
         "neighborhood": "South End",
@@ -1422,43 +1497,22 @@
         }
       },
       {
-        "restaurantId": "osm-node-7674254025-shuck-seafood-raw-bar",
-        "name": "Shuck Seafood + Raw Bar",
+        "restaurantId": "osm-node-4411880103-the-bg",
+        "name": "The BG",
         "neighborhood": "Downtown",
-        "website": "https://www.rcr.ca/restaurants/shuck-seafood-raw-bar/",
+        "website": "https://www.stubborngoat.ca/halifax/waterfront-beer-garden/",
         "candidateCount": 17,
         "sourceKinds": {
-          "official_page_thumbnail_candidate": 17
+          "official_page_thumbnail_candidate": 16,
+          "public_campaign_menu_image": 1
         },
         "reviewStates": {
           "candidate_review": 17
         },
         "bestCandidate": {
-          "id": "thumb-0dab19973e8f692259",
-          "thumbnailUrl": "https://www.rcr.ca/content/uploads/2018/02/shuck-1995-1920x1006.jpg",
-          "sourceUrl": "https://www.rcr.ca/restaurants/shuck-seafood-raw-bar/",
-          "sourceKind": "official_page_thumbnail_candidate",
-          "reviewState": "candidate_review",
-          "rightsStatus": "requires_rights_review",
-          "confidence": "official_page_source_media"
-        }
-      },
-      {
-        "restaurantId": "osm-node-6296953436-the-mercantile-social",
-        "name": "The Mercantile Social",
-        "neighborhood": "Waterfront",
-        "website": "https://themercantilesocial.ca/",
-        "candidateCount": 17,
-        "sourceKinds": {
-          "official_page_thumbnail_candidate": 17
-        },
-        "reviewStates": {
-          "candidate_review": 17
-        },
-        "bestCandidate": {
-          "id": "thumb-3f24e6a7862a8311e7",
-          "thumbnailUrl": "https://file.squarespace-cdn.com/content/v2/namespaces/fonts/libraries/sqsp/assets/109c2a75-1f80-4a9d-8277-5cc43beb4284/latin-ext.woff2",
-          "sourceUrl": "https://www.themercantilesocial.com/",
+          "id": "thumb-94288e26eddc12c37b",
+          "thumbnailUrl": "https://static.tacdn.com/img2/travelers_choice/widgets/tchotel_2025_L.png",
+          "sourceUrl": "https://www.stubborngoat.ca/",
           "sourceKind": "official_page_thumbnail_candidate",
           "reviewState": "candidate_review",
           "rightsStatus": "requires_rights_review",
@@ -1510,43 +1564,22 @@
         }
       },
       {
-        "restaurantId": "osm-node-771698137-waterfront-warehouse",
-        "name": "Waterfront Warehouse",
-        "neighborhood": "Waterfront",
-        "website": "https://www.rcr.ca/restaurants/waterfront-warehouse/",
+        "restaurantId": "osm-way-96322798-wooden-monkey",
+        "name": "Wooden Monkey",
+        "neighborhood": "Downtown",
+        "website": "https://www.thewoodenmonkey.ca/",
         "candidateCount": 17,
         "sourceKinds": {
-          "official_page_thumbnail_candidate": 17
+          "official_page_thumbnail_candidate": 16,
+          "public_campaign_menu_image": 1
         },
         "reviewStates": {
           "candidate_review": 17
         },
         "bestCandidate": {
-          "id": "thumb-0160308499b11522de",
-          "thumbnailUrl": "https://www.rcr.ca/content/plugins/header-section/img/slider-controls.png",
-          "sourceUrl": "https://www.rcr.ca/restaurants/waterfront-warehouse/",
-          "sourceKind": "official_page_thumbnail_candidate",
-          "reviewState": "candidate_review",
-          "rightsStatus": "requires_rights_review",
-          "confidence": "same_host_official_page_image"
-        }
-      },
-      {
-        "restaurantId": "osm-node-4411880103-the-bg",
-        "name": "The BG",
-        "neighborhood": "Downtown",
-        "website": "https://www.stubborngoat.ca/halifax/waterfront-beer-garden/",
-        "candidateCount": 16,
-        "sourceKinds": {
-          "official_page_thumbnail_candidate": 16
-        },
-        "reviewStates": {
-          "candidate_review": 16
-        },
-        "bestCandidate": {
-          "id": "thumb-94288e26eddc12c37b",
-          "thumbnailUrl": "https://static.tacdn.com/img2/travelers_choice/widgets/tchotel_2025_L.png",
-          "sourceUrl": "https://www.stubborngoat.ca/",
+          "id": "thumb-acdbe7c5b897cc2a85",
+          "thumbnailUrl": "https://cdn.prod.website-files.com/5a9175138433cb00017eefdf/5a9175138433cb00017ef019_imageedit_1_2839820776.png",
+          "sourceUrl": "https://www.thewoodenmonkey.ca/",
           "sourceKind": "official_page_thumbnail_candidate",
           "reviewState": "candidate_review",
           "rightsStatus": "requires_rights_review",
@@ -1569,28 +1602,6 @@
           "id": "thumb-85c96c2f4521dc4cd8",
           "thumbnailUrl": "https://static.parastorage.com/fonts/v2/2f12de04-5ca4-4ada-9e66-a958673b12b5/v1/helvetica-lt-w10-bold.woff2",
           "sourceUrl": "https://www.tokyorollhalifax.com/",
-          "sourceKind": "official_page_thumbnail_candidate",
-          "reviewState": "candidate_review",
-          "rightsStatus": "requires_rights_review",
-          "confidence": "official_page_declared_remote_image"
-        }
-      },
-      {
-        "restaurantId": "osm-way-96322798-wooden-monkey",
-        "name": "Wooden Monkey",
-        "neighborhood": "Downtown",
-        "website": "https://www.thewoodenmonkey.ca/",
-        "candidateCount": 16,
-        "sourceKinds": {
-          "official_page_thumbnail_candidate": 16
-        },
-        "reviewStates": {
-          "candidate_review": 16
-        },
-        "bestCandidate": {
-          "id": "thumb-acdbe7c5b897cc2a85",
-          "thumbnailUrl": "https://cdn.prod.website-files.com/5a9175138433cb00017eefdf/5a9175138433cb00017ef019_imageedit_1_2839820776.png",
-          "sourceUrl": "https://www.thewoodenmonkey.ca/",
           "sourceKind": "official_page_thumbnail_candidate",
           "reviewState": "candidate_review",
           "rightsStatus": "requires_rights_review",
@@ -1994,6 +2005,29 @@
         }
       },
       {
+        "restaurantId": "osm-node-7674194896-gahan-house",
+        "name": "Gahan House",
+        "neighborhood": "Downtown",
+        "website": "https://gahan.ca",
+        "candidateCount": 10,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 9,
+          "public_campaign_menu_image": 1
+        },
+        "reviewStates": {
+          "candidate_review": 10
+        },
+        "bestCandidate": {
+          "id": "thumb-ffcf2c9a2fe79aca2a",
+          "thumbnailUrl": "https://gahan.ca/menu/r",
+          "sourceUrl": "https://gahan.ca/menu/",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "same_host_official_page_image"
+        }
+      },
+      {
         "restaurantId": "osm-node-4428984290-stone-pizza",
         "name": "Stone Pizza",
         "neighborhood": "Dartmouth",
@@ -2075,28 +2109,6 @@
           "id": "thumb-4ba34194b3ee5bba4b",
           "thumbnailUrl": "https://doraku.yolasite.com/resources/CAT%20white%20black%20darker.png.opt133x170o0%2C0s133x170.png",
           "sourceUrl": "https://doraku.yolasite.com/",
-          "sourceKind": "official_page_thumbnail_candidate",
-          "reviewState": "candidate_review",
-          "rightsStatus": "requires_rights_review",
-          "confidence": "same_host_official_page_image"
-        }
-      },
-      {
-        "restaurantId": "osm-node-7674194896-gahan-house",
-        "name": "Gahan House",
-        "neighborhood": "Downtown",
-        "website": "https://gahan.ca",
-        "candidateCount": 9,
-        "sourceKinds": {
-          "official_page_thumbnail_candidate": 9
-        },
-        "reviewStates": {
-          "candidate_review": 9
-        },
-        "bestCandidate": {
-          "id": "thumb-ffcf2c9a2fe79aca2a",
-          "thumbnailUrl": "https://gahan.ca/menu/r",
-          "sourceUrl": "https://gahan.ca/menu/",
           "sourceKind": "official_page_thumbnail_candidate",
           "reviewState": "candidate_review",
           "rightsStatus": "requires_rights_review",
@@ -2196,12 +2208,13 @@
         "name": "Sketti and Ball",
         "neighborhood": "Downtown",
         "website": "https://skettiandballco.ca/",
-        "candidateCount": 6,
+        "candidateCount": 7,
         "sourceKinds": {
-          "official_page_thumbnail_candidate": 6
+          "official_page_thumbnail_candidate": 6,
+          "public_campaign_menu_image": 1
         },
         "reviewStates": {
-          "candidate_review": 6
+          "candidate_review": 7
         },
         "bestCandidate": {
           "id": "thumb-d33fc32710315c5e53",
@@ -2390,6 +2403,29 @@
         }
       },
       {
+        "restaurantId": "osm-node-11751560115-seaport-social",
+        "name": "Seaport Social",
+        "neighborhood": "Waterfront",
+        "website": "https://www.seaportsocialhalifax.com/",
+        "candidateCount": 3,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 2,
+          "public_campaign_menu_image": 1
+        },
+        "reviewStates": {
+          "candidate_review": 3
+        },
+        "bestCandidate": {
+          "id": "thumb-7fefb335c78dadfd3e",
+          "thumbnailUrl": "https://www.seaportsocialhalifax.com/resourcefiles/homeimages/small-charcuterie.jpg?version=8142026051329",
+          "sourceUrl": "https://www.seaportsocialhalifax.com/",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "same_host_official_page_image"
+        }
+      },
+      {
         "restaurantId": "osm-node-5003519268-sully-and-porter",
         "name": "Sully & Porter",
         "neighborhood": "North End",
@@ -2431,6 +2467,28 @@
           "reviewState": "candidate_review",
           "rightsStatus": "requires_rights_review",
           "confidence": "same_host_official_page_image"
+        }
+      },
+      {
+        "restaurantId": "osm-node-1139389702-five-fishermen",
+        "name": "Five Fishermen",
+        "neighborhood": "Downtown",
+        "website": null,
+        "candidateCount": 2,
+        "sourceKinds": {
+          "public_campaign_menu_image": 2
+        },
+        "reviewStates": {
+          "candidate_review": 2
+        },
+        "bestCandidate": {
+          "id": "thumb-b77d1d5f955a0c9e58",
+          "thumbnailUrl": "https://discoverhalifaxns.com/wp-content/uploads/2026/01/106360_menu_photo_f65544f6-7d4d-450f-a179-e64d2f829ada.jpg",
+          "sourceUrl": "https://discoverhalifaxns.com/dinearound/menu/little-fish-wine-bar-dine-around-menu/?menu=fondue-february",
+          "sourceKind": "public_campaign_menu_image",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "public_special_source_media"
         }
       },
       {
@@ -2478,28 +2536,6 @@
         }
       },
       {
-        "restaurantId": "osm-node-11751560115-seaport-social",
-        "name": "Seaport Social",
-        "neighborhood": "Waterfront",
-        "website": "https://www.seaportsocialhalifax.com/",
-        "candidateCount": 2,
-        "sourceKinds": {
-          "official_page_thumbnail_candidate": 2
-        },
-        "reviewStates": {
-          "candidate_review": 2
-        },
-        "bestCandidate": {
-          "id": "thumb-7fefb335c78dadfd3e",
-          "thumbnailUrl": "https://www.seaportsocialhalifax.com/resourcefiles/homeimages/small-charcuterie.jpg?version=8142026051329",
-          "sourceUrl": "https://www.seaportsocialhalifax.com/",
-          "sourceKind": "official_page_thumbnail_candidate",
-          "reviewState": "candidate_review",
-          "rightsStatus": "requires_rights_review",
-          "confidence": "same_host_official_page_image"
-        }
-      },
-      {
         "restaurantId": "osm-node-7082566320-springhouse-market",
         "name": "Springhouse Market",
         "neighborhood": "North End",
@@ -2541,6 +2577,28 @@
           "reviewState": "candidate_review",
           "rightsStatus": "requires_rights_review",
           "confidence": "same_host_official_page_image"
+        }
+      },
+      {
+        "restaurantId": "osm-node-5125389651-baton-rouge",
+        "name": "Baton Rouge",
+        "neighborhood": "Waterfront",
+        "website": null,
+        "candidateCount": 1,
+        "sourceKinds": {
+          "public_campaign_menu_image": 1
+        },
+        "reviewStates": {
+          "candidate_review": 1
+        },
+        "bestCandidate": {
+          "id": "thumb-8c66cc939d7ec341a2",
+          "thumbnailUrl": "https://discoverhalifaxns.com/wp-content/uploads/2026/01/106467_menu_photo_53eb7f6f-ce47-498b-8977-9f1a838f5828.jpg",
+          "sourceUrl": "https://discoverhalifaxns.com/dinearound/menu/baton-rouge-halifax-dine-around-2026/?menu=3-course-menu",
+          "sourceKind": "public_campaign_menu_image",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "public_special_source_media"
         }
       },
       {
@@ -2588,6 +2646,28 @@
         }
       },
       {
+        "restaurantId": "osm-node-12984673749-cannery-kitchen-and-social",
+        "name": "Cannery Kitchen & Social",
+        "neighborhood": "Downtown",
+        "website": null,
+        "candidateCount": 1,
+        "sourceKinds": {
+          "public_campaign_menu_image": 1
+        },
+        "reviewStates": {
+          "candidate_review": 1
+        },
+        "bestCandidate": {
+          "id": "thumb-a00cd87809a7cc9a2c",
+          "thumbnailUrl": "https://discoverhalifaxns.com/wp-content/uploads/2026/01/106779_menu_photo_a671a842-6e6c-4eaa-b0ea-8cfb63713d58.jpg",
+          "sourceUrl": "https://discoverhalifaxns.com/dinearound/menu/the-hollis-hotel-the-cannery-kitchen-social-dine-around-2026/?menu=cannery-kitchen-social-hollis-dine-around-2026",
+          "sourceKind": "public_campaign_menu_image",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "public_special_source_media"
+        }
+      },
+      {
         "restaurantId": "osm-node-11525752766-charm-school",
         "name": "Charm School",
         "neighborhood": "North End",
@@ -2607,6 +2687,94 @@
           "reviewState": "candidate_review",
           "rightsStatus": "requires_rights_review",
           "confidence": "same_host_official_page_image"
+        }
+      },
+      {
+        "restaurantId": "osm-node-10916309830-darya",
+        "name": "Daryâ",
+        "neighborhood": "Downtown",
+        "website": null,
+        "candidateCount": 1,
+        "sourceKinds": {
+          "public_campaign_menu_image": 1
+        },
+        "reviewStates": {
+          "candidate_review": 1
+        },
+        "bestCandidate": {
+          "id": "thumb-5475cab862cbd5e984",
+          "thumbnailUrl": "https://discoverhalifaxns.com/wp-content/uploads/2026/01/106838_menu_photo_7e1e6fc7-2e44-4032-bbd9-5a8652508088-773x1030.jpe",
+          "sourceUrl": "https://discoverhalifaxns.com/dinearound/menu/darya-dine-around-2026/?menu=lunch-30",
+          "sourceKind": "public_campaign_menu_image",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "public_special_source_media"
+        }
+      },
+      {
+        "restaurantId": "osm-node-10916309833-drift",
+        "name": "Drift",
+        "neighborhood": "Downtown",
+        "website": null,
+        "candidateCount": 1,
+        "sourceKinds": {
+          "public_campaign_menu_image": 1
+        },
+        "reviewStates": {
+          "candidate_review": 1
+        },
+        "bestCandidate": {
+          "id": "thumb-d5c90aa803a2d131e9",
+          "thumbnailUrl": "https://discoverhalifaxns.com/wp-content/uploads/2026/01/106842_menu_photo_a3bae9e5-79a8-404b-ae64-3b547aa0a145.jpg",
+          "sourceUrl": "https://discoverhalifaxns.com/dinearound/menu/drift-dine-around-2026/?menu=lunch-30",
+          "sourceKind": "public_campaign_menu_image",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "public_special_source_media"
+        }
+      },
+      {
+        "restaurantId": "osm-node-37132569-economy-shoe-shop",
+        "name": "Economy Shoe Shop",
+        "neighborhood": "Downtown",
+        "website": null,
+        "candidateCount": 1,
+        "sourceKinds": {
+          "public_campaign_menu_image": 1
+        },
+        "reviewStates": {
+          "candidate_review": 1
+        },
+        "bestCandidate": {
+          "id": "thumb-d7385e0b95bdad7c48",
+          "thumbnailUrl": "https://discoverhalifaxns.com/wp-content/uploads/2026/01/107285_menu_photo_73dec1db-e522-4413-95e9-086024b0a4fd.jpg",
+          "sourceUrl": "https://discoverhalifaxns.com/dinearound/menu/economy-shoe-shop-dine-around-menu/?menu=economy-chopped-cheese",
+          "sourceKind": "public_campaign_menu_image",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "public_special_source_media"
+        }
+      },
+      {
+        "restaurantId": "osm-node-1139389557-gio",
+        "name": "Gio",
+        "neighborhood": "Downtown",
+        "website": null,
+        "candidateCount": 1,
+        "sourceKinds": {
+          "public_campaign_menu_image": 1
+        },
+        "reviewStates": {
+          "candidate_review": 1
+        },
+        "bestCandidate": {
+          "id": "thumb-72131eb8587de10ef1",
+          "thumbnailUrl": "https://discoverhalifaxns.com/wp-content/uploads/2025/01/97945_menu_photo_83b76a68-62c0-419c-a5de-4a69c89c3c89-687x1030.jpg",
+          "sourceUrl": "https://discoverhalifaxns.com/dinearound/menu/gio-restaurant-dine-around-menu/?menu=gio-dine-around-3-course-60",
+          "sourceKind": "public_campaign_menu_image",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "public_special_source_media"
         }
       },
       {
@@ -2632,6 +2800,72 @@
         }
       },
       {
+        "restaurantId": "osm-way-671922221-mckelvie-s",
+        "name": "McKelvie's",
+        "neighborhood": "Waterfront",
+        "website": null,
+        "candidateCount": 1,
+        "sourceKinds": {
+          "public_campaign_menu_image": 1
+        },
+        "reviewStates": {
+          "candidate_review": 1
+        },
+        "bestCandidate": {
+          "id": "thumb-9d9e3d7e428780d655",
+          "thumbnailUrl": "https://discoverhalifaxns.com/wp-content/uploads/2026/01/106695_menu_photo_9c181145-d993-42d9-9b51-da87342ed2b1.jpg",
+          "sourceUrl": "https://discoverhalifaxns.com/dinearound/menu/mckelvies-restaurant-dine-around-2026/?menu=mckelvies-dine-around-menu",
+          "sourceKind": "public_campaign_menu_image",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "public_special_source_media"
+        }
+      },
+      {
+        "restaurantId": "osm-node-10916723936-pane-e-circo",
+        "name": "Pane e Circo",
+        "neighborhood": "Downtown",
+        "website": null,
+        "candidateCount": 1,
+        "sourceKinds": {
+          "public_campaign_menu_image": 1
+        },
+        "reviewStates": {
+          "candidate_review": 1
+        },
+        "bestCandidate": {
+          "id": "thumb-1e88755aa10ef08459",
+          "thumbnailUrl": "https://discoverhalifaxns.com/wp-content/uploads/2026/02/107601_menu_photo_3339a113-97ba-4342-811b-a21d5a215680.jpe",
+          "sourceUrl": "https://discoverhalifaxns.com/dinearound/menu/pane-e-circo-dine-around-2026/?menu=breakfast",
+          "sourceKind": "public_campaign_menu_image",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "public_special_source_media"
+        }
+      },
+      {
+        "restaurantId": "osm-node-12960015819-salt-and-ash",
+        "name": "Salt & Ash",
+        "neighborhood": "Downtown",
+        "website": null,
+        "candidateCount": 1,
+        "sourceKinds": {
+          "public_campaign_menu_image": 1
+        },
+        "reviewStates": {
+          "candidate_review": 1
+        },
+        "bestCandidate": {
+          "id": "thumb-5e34ab16975103ed94",
+          "thumbnailUrl": "https://discoverhalifaxns.com/wp-content/uploads/2026/01/106904_menu_photo_2af8a3cc-10e3-45ab-94de-c8bd69dc3a19.jpg",
+          "sourceUrl": "https://discoverhalifaxns.com/dinearound/menu/salt-ash-dine-around-2026/?menu=dine-around-menu-30",
+          "sourceKind": "public_campaign_menu_image",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "public_special_source_media"
+        }
+      },
+      {
         "restaurantId": "osm-node-3789756557-smiling-goat",
         "name": "Smiling Goat",
         "neighborhood": "Waterfront",
@@ -2654,6 +2888,72 @@
         }
       },
       {
+        "restaurantId": "osm-node-9740307317-sofia",
+        "name": "Sofia",
+        "neighborhood": "Downtown",
+        "website": null,
+        "candidateCount": 1,
+        "sourceKinds": {
+          "public_campaign_menu_image": 1
+        },
+        "reviewStates": {
+          "candidate_review": 1
+        },
+        "bestCandidate": {
+          "id": "thumb-da6e5bad5f5654c5a6",
+          "thumbnailUrl": "https://discoverhalifaxns.com/wp-content/uploads/2026/01/106819_menu_photo_b64e4ca1-cb70-41b5-bbc8-66c66f2fec2d-1030x635.jpg",
+          "sourceUrl": "https://discoverhalifaxns.com/dinearound/menu/bar-sofia-dine-around-2026/?menu=dine-around-menu-40",
+          "sourceKind": "public_campaign_menu_image",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "public_special_source_media"
+        }
+      },
+      {
+        "restaurantId": "osm-node-13289252958-stardust",
+        "name": "Stardust",
+        "neighborhood": "Downtown",
+        "website": null,
+        "candidateCount": 1,
+        "sourceKinds": {
+          "public_campaign_menu_image": 1
+        },
+        "reviewStates": {
+          "candidate_review": 1
+        },
+        "bestCandidate": {
+          "id": "thumb-471fc59432c684af31",
+          "thumbnailUrl": "https://discoverhalifaxns.com/wp-content/uploads/2026/01/107164_menu_photo_b938ce3b-6dbb-4e83-9370-970d08ef396c.jpe",
+          "sourceUrl": "https://discoverhalifaxns.com/dinearound/menu/stardust-bar-kitchen-dine-around-menu/?menu=stardust-dine-around-menu",
+          "sourceKind": "public_campaign_menu_image",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "public_special_source_media"
+        }
+      },
+      {
+        "restaurantId": "osm-node-5155336323-tempo-food-drink",
+        "name": "Tempo food+drink",
+        "neighborhood": "Downtown",
+        "website": null,
+        "candidateCount": 1,
+        "sourceKinds": {
+          "public_campaign_menu_image": 1
+        },
+        "reviewStates": {
+          "candidate_review": 1
+        },
+        "bestCandidate": {
+          "id": "thumb-b4ce437b2a89c00de9",
+          "thumbnailUrl": "https://discoverhalifaxns.com/wp-content/uploads/2026/01/106913_menu_photo_e8b0d05d-592f-4bea-ab0c-076fc4dd4393.jpg",
+          "sourceUrl": "https://discoverhalifaxns.com/dinearound/menu/tempo-food-drink-at-the-barrington-hotel-dine-around-2026/?menu=lunch-20-2-course",
+          "sourceKind": "public_campaign_menu_image",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "public_special_source_media"
+        }
+      },
+      {
         "restaurantId": "osm-node-8164476189-the-bitter-end",
         "name": "The Bitter End",
         "neighborhood": "Downtown",
@@ -2673,6 +2973,72 @@
           "reviewState": "candidate_review",
           "rightsStatus": "requires_rights_review",
           "confidence": "official_page_declared_remote_image"
+        }
+      },
+      {
+        "restaurantId": "osm-node-771690675-the-carleton",
+        "name": "The Carleton",
+        "neighborhood": "Downtown",
+        "website": null,
+        "candidateCount": 1,
+        "sourceKinds": {
+          "public_campaign_menu_image": 1
+        },
+        "reviewStates": {
+          "candidate_review": 1
+        },
+        "bestCandidate": {
+          "id": "thumb-d1386de9126fb721a0",
+          "thumbnailUrl": "https://discoverhalifaxns.com/wp-content/uploads/2026/01/106915_menu_photo_3db56725-c147-4b92-b5cc-5288523b5389.jpg",
+          "sourceUrl": "https://discoverhalifaxns.com/dinearound/menu/the-carleton-dine-around-menu/?menu=2-course-meal-for-40",
+          "sourceKind": "public_campaign_menu_image",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "public_special_source_media"
+        }
+      },
+      {
+        "restaurantId": "osm-node-1689418207-the-old-triangle-irish-pub",
+        "name": "The Old Triangle Irish Pub",
+        "neighborhood": "Downtown",
+        "website": "https://www.oldtriangle.com/welcome/",
+        "candidateCount": 1,
+        "sourceKinds": {
+          "public_campaign_menu_image": 1
+        },
+        "reviewStates": {
+          "candidate_review": 1
+        },
+        "bestCandidate": {
+          "id": "thumb-327d04d14c11131178",
+          "thumbnailUrl": "https://discoverhalifaxns.com/wp-content/uploads/2026/01/106788_menu_photo_b4b13e75-702f-422b-85cd-3553df5895fe-rotated.jpg",
+          "sourceUrl": "https://discoverhalifaxns.com/dinearound/menu/the-old-triangle-irish-alehouse-dine-around-menu/?menu=2-course-dinner-for-30",
+          "sourceKind": "public_campaign_menu_image",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "public_special_source_media"
+        }
+      },
+      {
+        "restaurantId": "the-press-gang",
+        "name": "The Press Gang",
+        "neighborhood": "Downtown",
+        "website": "https://thepressgang.ca/",
+        "candidateCount": 1,
+        "sourceKinds": {
+          "public_campaign_menu_image": 1
+        },
+        "reviewStates": {
+          "candidate_review": 1
+        },
+        "bestCandidate": {
+          "id": "thumb-cba740158ca069454b",
+          "thumbnailUrl": "https://discoverhalifaxns.com/wp-content/uploads/2026/01/106928_menu_photo_e1c5e785-fa03-4fa2-81ac-e55abc5a3204.jpg",
+          "sourceUrl": "https://discoverhalifaxns.com/dinearound/menu/the-press-gang-restaurant-and-oyster-bar-dine-around-menu/?menu=3-course-dinner-for-60",
+          "sourceKind": "public_campaign_menu_image",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "public_special_source_media"
         }
       },
       {
@@ -2871,6 +3237,50 @@
           "reviewState": "candidate_review",
           "rightsStatus": "requires_rights_review",
           "confidence": "official_page_declared_remote_image"
+        }
+      },
+      {
+        "restaurantId": "osm-node-12984651963-toridori",
+        "name": "Toridori",
+        "neighborhood": "Downtown",
+        "website": null,
+        "candidateCount": 1,
+        "sourceKinds": {
+          "public_campaign_menu_image": 1
+        },
+        "reviewStates": {
+          "candidate_review": 1
+        },
+        "bestCandidate": {
+          "id": "thumb-2842431d358a43c334",
+          "thumbnailUrl": "https://discoverhalifaxns.com/wp-content/uploads/2026/01/106939_menu_photo_8fc7c0f3-a84c-4682-b57c-e1e21430e171-1030x773.jpg",
+          "sourceUrl": "https://discoverhalifaxns.com/dinearound/menu/toridori-dine-around-2026/?menu=lunch-30",
+          "sourceKind": "public_campaign_menu_image",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "public_special_source_media"
+        }
+      },
+      {
+        "restaurantId": "osm-node-3804189857-trattoria-vesso",
+        "name": "Trattoria Vesso",
+        "neighborhood": "South End",
+        "website": null,
+        "candidateCount": 1,
+        "sourceKinds": {
+          "public_campaign_menu_image": 1
+        },
+        "reviewStates": {
+          "candidate_review": 1
+        },
+        "bestCandidate": {
+          "id": "thumb-bcdc599bcb1e1bd15b",
+          "thumbnailUrl": "https://discoverhalifaxns.com/wp-content/uploads/2026/01/106564_menu_photo_aba03f14-7da6-484e-b849-e33d3633ed7b.jpg",
+          "sourceUrl": "https://discoverhalifaxns.com/dinearound/menu/trattoria-vesso-dine-around-menu/?menu=menu-del-singolo",
+          "sourceKind": "public_campaign_menu_image",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "public_special_source_media"
         }
       }
     ],
@@ -3139,16 +3549,6 @@
         "restaurantId": "osm-node-11577572437-banh-mi-a-and-b",
         "name": "Banh Mi A&B",
         "neighborhood": "Halifax Peninsula",
-        "website": null,
-        "candidateCount": 0,
-        "sourceKinds": {},
-        "reviewStates": {},
-        "bestCandidate": null
-      },
-      {
-        "restaurantId": "osm-node-5125389651-baton-rouge",
-        "name": "Baton Rouge",
-        "neighborhood": "Waterfront",
         "website": null,
         "candidateCount": 0,
         "sourceKinds": {},
@@ -3616,16 +4016,6 @@
         "bestCandidate": null
       },
       {
-        "restaurantId": "osm-node-12984673749-cannery-kitchen-and-social",
-        "name": "Cannery Kitchen & Social",
-        "neighborhood": "Downtown",
-        "website": null,
-        "candidateCount": 0,
-        "sourceKinds": {},
-        "reviewStates": {},
-        "bestCandidate": null
-      },
-      {
         "restaurantId": "osm-node-2714920437-captain-sub",
         "name": "Captain Sub",
         "neighborhood": "West End",
@@ -3996,16 +4386,6 @@
         "bestCandidate": null
       },
       {
-        "restaurantId": "osm-node-10916309830-darya",
-        "name": "Daryâ",
-        "neighborhood": "Downtown",
-        "website": null,
-        "candidateCount": 0,
-        "sourceKinds": {},
-        "reviewStates": {},
-        "bestCandidate": null
-      },
-      {
         "restaurantId": "osm-node-9740295474-dave-s-lobster",
         "name": "Dave's Lobster",
         "neighborhood": "Downtown",
@@ -4116,16 +4496,6 @@
         "bestCandidate": null
       },
       {
-        "restaurantId": "osm-node-10916309833-drift",
-        "name": "Drift",
-        "neighborhood": "Downtown",
-        "website": null,
-        "candidateCount": 0,
-        "sourceKinds": {},
-        "reviewStates": {},
-        "bestCandidate": null
-      },
-      {
         "restaurantId": "osm-node-5863968655-east-of-grafton-tavern",
         "name": "East of Grafton Tavern",
         "neighborhood": "Downtown",
@@ -4139,16 +4509,6 @@
         "restaurantId": "osm-way-173999392-east-side-mario-s",
         "name": "East Side Mario's",
         "neighborhood": "Bayers Lake Business Park",
-        "website": null,
-        "candidateCount": 0,
-        "sourceKinds": {},
-        "reviewStates": {},
-        "bestCandidate": null
-      },
-      {
-        "restaurantId": "osm-node-37132569-economy-shoe-shop",
-        "name": "Economy Shoe Shop",
-        "neighborhood": "Downtown",
         "website": null,
         "candidateCount": 0,
         "sourceKinds": {},
@@ -4258,16 +4618,6 @@
       {
         "restaurantId": "osm-node-13262827285-first-sight-coffee-and-bar",
         "name": "First Sight Coffee & Bar",
-        "neighborhood": "Downtown",
-        "website": null,
-        "candidateCount": 0,
-        "sourceKinds": {},
-        "reviewStates": {},
-        "bestCandidate": null
-      },
-      {
-        "restaurantId": "osm-node-1139389702-five-fishermen",
-        "name": "Five Fishermen",
         "neighborhood": "Downtown",
         "website": null,
         "candidateCount": 0,
@@ -4429,16 +4779,6 @@
         "restaurantId": "osm-node-5150250521-george-s-bubble-tea",
         "name": "George's Bubble Tea",
         "neighborhood": "South End",
-        "website": null,
-        "candidateCount": 0,
-        "sourceKinds": {},
-        "reviewStates": {},
-        "bestCandidate": null
-      },
-      {
-        "restaurantId": "osm-node-1139389557-gio",
-        "name": "Gio",
-        "neighborhood": "Downtown",
         "website": null,
         "candidateCount": 0,
         "sourceKinds": {},
@@ -5406,16 +5746,6 @@
         "bestCandidate": null
       },
       {
-        "restaurantId": "osm-way-671922221-mckelvie-s",
-        "name": "McKelvie's",
-        "neighborhood": "Waterfront",
-        "website": null,
-        "candidateCount": 0,
-        "sourceKinds": {},
-        "reviewStates": {},
-        "bestCandidate": null
-      },
-      {
         "restaurantId": "osm-node-3802394757-mezza",
         "name": "Mezza",
         "neighborhood": "Downtown",
@@ -5766,16 +6096,6 @@
         "bestCandidate": null
       },
       {
-        "restaurantId": "osm-node-10916723936-pane-e-circo",
-        "name": "Pane e Circo",
-        "neighborhood": "Downtown",
-        "website": null,
-        "candidateCount": 0,
-        "sourceKinds": {},
-        "reviewStates": {},
-        "bestCandidate": null
-      },
-      {
         "restaurantId": "osm-node-4965917621-patrons-golf-and-lounge",
         "name": "Patrons Golf & Lounge",
         "neighborhood": "Bedford",
@@ -5869,6 +6189,96 @@
         "restaurantId": "osm-node-12139021297-pita-pit",
         "name": "Pita Pit",
         "neighborhood": "Dartmouth",
+        "website": null,
+        "candidateCount": 0,
+        "sourceKinds": {},
+        "reviewStates": {},
+        "bestCandidate": null
+      },
+      {
+        "restaurantId": "osm-node-9629211486-pizza-co",
+        "name": "Pizza Co.",
+        "neighborhood": "Armdale / Fairview",
+        "website": null,
+        "candidateCount": 0,
+        "sourceKinds": {},
+        "reviewStates": {},
+        "bestCandidate": null
+      },
+      {
+        "restaurantId": "osm-node-3791840159-pizza-delight",
+        "name": "Pizza Delight",
+        "neighborhood": "Downtown",
+        "website": null,
+        "candidateCount": 0,
+        "sourceKinds": {},
+        "reviewStates": {},
+        "bestCandidate": null
+      },
+      {
+        "restaurantId": "osm-node-8066235505-pizza-delight",
+        "name": "Pizza Delight",
+        "neighborhood": "Dartmouth",
+        "website": null,
+        "candidateCount": 0,
+        "sourceKinds": {},
+        "reviewStates": {},
+        "bestCandidate": null
+      },
+      {
+        "restaurantId": "osm-way-171149722-pizza-delight",
+        "name": "Pizza Delight",
+        "neighborhood": "Armdale / Fairview",
+        "website": null,
+        "candidateCount": 0,
+        "sourceKinds": {},
+        "reviewStates": {},
+        "bestCandidate": null
+      },
+      {
+        "restaurantId": "osm-way-372779852-pizza-girls",
+        "name": "Pizza Girls",
+        "neighborhood": "Downtown",
+        "website": null,
+        "candidateCount": 0,
+        "sourceKinds": {},
+        "reviewStates": {},
+        "bestCandidate": null
+      },
+      {
+        "restaurantId": "osm-node-6393893025-pizza-hut",
+        "name": "Pizza Hut",
+        "neighborhood": "Armdale / Fairview",
+        "website": "https://www.pizzahut.ca/huts/ca-1/R30103/",
+        "candidateCount": 0,
+        "sourceKinds": {},
+        "reviewStates": {},
+        "bestCandidate": null
+      },
+      {
+        "restaurantId": "osm-way-358577265-pizza-hut",
+        "name": "Pizza Hut",
+        "neighborhood": "Dartmouth",
+        "website": "https://www.pizzahut.ca/huts/ca-1/R30104/",
+        "candidateCount": 0,
+        "sourceKinds": {},
+        "reviewStates": {},
+        "bestCandidate": null
+      },
+      {
+        "restaurantId": "osm-node-9991598303-pizza-hut-delivery",
+        "name": "Pizza Hut Delivery",
+        "neighborhood": "Downtown",
+        "website": "https://www.pizzahut.ca/huts/ca-1/R30102/",
+        "candidateCount": 0,
+        "sourceKinds": {},
+        "reviewStates": {},
+        "bestCandidate": null
+      },
+      {
+        "restaurantId": "osm-node-815496272-pizza-land",
+        "name": "Pizza Land",
+        "neighborhood": "Armdale / Fairview",
         "website": null,
         "candidateCount": 0,
         "sourceKinds": {},

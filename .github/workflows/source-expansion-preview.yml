@@ -14,6 +14,8 @@ on:
       - scripts/import-official-sites.mjs
       - scripts/verify-official-source-pages.mjs
       - scripts/import-structured-events.mjs
+      - scripts/import-patio-directory-facts.mjs
+      - scripts/import-public-special-source-leads.mjs
       - scripts/discover-first-party-sources.mjs
       - scripts/merge-first-party-history.mjs
       - scripts/sanitize-first-party-sources.mjs
@@ -25,6 +27,8 @@ on:
       - scripts/build-thumbnail-candidates.mjs
       - scripts/build-thumbnail-coverage-report.mjs
       - scripts/check-thumbnail-candidates.mjs
+      - scripts/check-patio-directory-facts.mjs
+      - scripts/check-public-special-source-leads.mjs
       - scripts/check-expanded-sources.mjs
 
 permissions:
@@ -33,7 +37,7 @@ permissions:
 jobs:
   refresh:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 45
     steps:
       - name: Checkout
         uses: actions/checkout@v6
@@ -66,6 +70,12 @@ jobs:
           STRUCTURED_EVENT_PAGES_PER_RESTAURANT: 3
           STRUCTURED_EVENT_DELAY_MS: 400
         run: node scripts/import-structured-events.mjs
+
+      - name: Refresh patio directory facts
+        run: node scripts/import-patio-directory-facts.mjs
+
+      - name: Refresh public happy-hour source leads
+        run: node scripts/import-public-special-source-leads.mjs
 
       - name: Discover first-party feeds, social profiles, link hubs, and related links
         env:
@@ -137,6 +147,8 @@ jobs:
           node scripts/check-data-integrity.mjs
           node scripts/check-expanded-sources.mjs
           node scripts/check-thumbnail-candidates.mjs
+          node scripts/check-patio-directory-facts.mjs
+          node scripts/check-public-special-source-leads.mjs
           node scripts/build-thumbnail-coverage-report.mjs
 
       - name: Upload source expansion preview
@@ -150,6 +162,11 @@ jobs:
             data/build/verified-source-pages.json
             data/structured-events.js
             data/build/structured-events.json
+            data/patio-directory-facts.js
+            data/build/patio-directory-facts.json
+
+            data/public-special-source-leads.js
+            data/build/public-special-source-leads.json
             data/first-party-sources.js
             data/build/first-party-sources.json
             data/website-feed-signals.js
@@ -170,5 +187,7 @@ jobs:
             artifacts/expanded-source-integrity-report.json
             artifacts/thumbnail-candidates-report.json
             artifacts/thumbnail-coverage-report.json
+            artifacts/patio-directory-facts-report.json
+            artifacts/public-special-source-leads-report.json
           if-no-files-found: error
           retention-days: 30

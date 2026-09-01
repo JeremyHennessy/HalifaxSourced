@@ -9,6 +9,7 @@ on:
       - main
     paths:
       - .github/workflows/structured-specials-preview.yml
+      - scripts/import-public-special-source-leads.mjs
       - scripts/build-structured-specials.mjs
       - scripts/check-structured-specials.mjs
       - scripts/reconcile-structured-coverage.mjs
@@ -25,16 +26,21 @@ permissions:
 jobs:
   refresh:
     runs-on: ubuntu-24.04
-    timeout-minutes: 10
+    timeout-minutes: 25
     steps:
       - uses: actions/checkout@v6
       - uses: actions/setup-node@v4
         with:
           node-version: 22
+      - name: Build public happy-hour source leads
+        run: node scripts/import-public-special-source-leads.mjs
+
       - name: Build source-backed structured specials
         run: node scripts/build-structured-specials.mjs
       - name: Validate structured specials
-        run: node scripts/check-structured-specials.mjs
+        run: |
+          node scripts/check-public-special-source-leads.mjs
+          node scripts/check-structured-specials.mjs
       - name: Build reconciled coverage and quality report
         run: |
           node scripts/build-content-coverage-report.mjs
@@ -47,10 +53,13 @@ jobs:
           path: |
             data/structured-specials.js
             data/build/structured-specials.json
+            data/public-special-source-leads.js
+            data/build/public-special-source-leads.json
             data/build/content-coverage-report.json
             data/build/content-quality-report.json
             docs/content-coverage-report.md
             docs/content-quality-report.md
             artifacts/structured-specials-report.json
+            artifacts/public-special-source-leads-report.json
           if-no-files-found: error
           retention-days: 30
