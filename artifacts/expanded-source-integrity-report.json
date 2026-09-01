@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-01T19:11:23.140Z",
+  "generatedAt": "2026-09-01T23:44:30.991Z",
   "socialPlatformRegistryVersion": 1,
   "counts": {
     "firstPartyRecords": 240,
@@ -43,9 +43,9 @@
     "sharedProfileAssociationsSkipped": 75,
     "socialSignals": 0,
     "socialPosts": 0,
-    "recentSocialPosts": 240,
+    "recentSocialPosts": 247,
     "recentSocialPostCategories": {
-      "specials": 131,
+      "specials": 138,
       "openings": 2,
       "menu": 39,
       "events": 11,
@@ -58,7 +58,7 @@
     "recentSocialPostPlatforms": {
       "official_page": 204,
       "website_feed": 12,
-      "public_source": 24
+      "public_source": 31
     }
   },
   "credentialState": {
@@ -66,7 +66,7 @@
     "instagram": "missing"
   },
   "recentPostState": {
-    "generatedAt": "2026-09-01T19:11:06.217Z",
+    "generatedAt": "2026-09-01T23:44:14.758Z",
     "lookbackDays": 180,
     "sourceState": {
       "websiteFeedsGeneratedAt": "2026-09-01T15:25:37.167Z",
@@ -78,8 +78,8 @@
       },
       "metaProfilesAttempted": 0,
       "metaPostsObserved": 0,
-      "publicSpecialSourceGeneratedAt": "2026-09-01T17:40:18.642Z",
-      "publicSpecialSourceRecords": 113
+      "publicSpecialSourceGeneratedAt": "2026-09-01T23:43:35.605Z",
+      "publicSpecialSourceRecords": 143
     }
   },
   "failures": [],

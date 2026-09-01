@@ -1,6 +1,6 @@
 # Halifax Sourced content quality report
 
-Generated: 2026-09-01T17:58:01.840Z
+Generated: 2026-09-01T23:44:13.615Z
 
 ## Summary
 
@@ -10,16 +10,16 @@ Generated: 2026-09-01T17:58:01.840Z
 - **patioDirectoryRecords**: 75
 - **patioDirectoryResolved**: 47
 - **patioDirectoryNeedsReview**: 28
-- **publicSpecialSourceLeads**: 113
-- **publicSpecialSourceLeadsResolved**: 82
-- **publicSpecialSourceLeadsNeedsReview**: 31
+- **publicSpecialSourceLeads**: 143
+- **publicSpecialSourceLeadsResolved**: 92
+- **publicSpecialSourceLeadsNeedsReview**: 51
 - **structuredHours**: 13
 - **structuredMenus**: 143
 - **structuredReservations**: 55
 - **structuredOrdering**: 78
-- **structuredSpecials**: 160
+- **structuredSpecials**: 170
 - **verifiedCurrentSpecials**: 49
-- **orphanSpecialSources**: 31
+- **orphanSpecialSources**: 51
 - **cityEvents**: 192
 - **venueResolvedEvents**: 140
 - **organizerResolvedEvents**: 166
@@ -39,8 +39,8 @@ Generated: 2026-09-01T17:58:01.840Z
 - **firstPartyRelationships**: <7d 1138; 7–30d 0; 30–90d 0; >90d 0; unknown 0
 - **structuredPlaceFacts**: <7d 176; 7–30d 0; 30–90d 0; >90d 0; unknown 0
 - **patioDirectoryFacts**: <7d 75; 7–30d 0; 30–90d 0; >90d 0; unknown 0
-- **publicSpecialLeads**: <7d 113; 7–30d 0; 30–90d 0; >90d 0; unknown 0
-- **specials**: <7d 160; 7–30d 0; 30–90d 0; >90d 0; unknown 0
+- **publicSpecialLeads**: <7d 143; 7–30d 0; 30–90d 0; >90d 0; unknown 0
+- **specials**: <7d 170; 7–30d 0; 30–90d 0; >90d 0; unknown 0
 - **events**: <7d 192; 7–30d 0; 30–90d 0; >90d 0; unknown 0
 
 ## Review queues
@@ -48,7 +48,7 @@ Generated: 2026-09-01T17:58:01.840Z
 - Place source conflicts: 46
 - Name-only place matches: 31
 - Unresolved place candidates: 206
-- Orphan special-source relationships: 31
+- Orphan special-source relationships: 51
 - Blocked event source adapters: 0
 - Event source adapters under review: 4
 
