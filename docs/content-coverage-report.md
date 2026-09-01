@@ -1,6 +1,6 @@
 # Halifax Sourced content coverage baseline
 
-Generated: 2026-09-01T17:13:14.342Z
+Generated: 2026-09-01T18:02:48.071Z
 
 This report measures the currently committed production data layers. It is a content-completeness baseline, **not a restaurant quality or popularity rating**. Unknown data remains unknown; source leads are not converted into fabricated facts.
 
@@ -14,7 +14,7 @@ This report measures the currently committed production data layers. It is a con
 | Public inspection match | 496 | 66.1% |
 | Menu link | 166 | 22.1% |
 | Verified menu link | 137 | 18.3% |
-| Special evidence | 76 | 10.1% |
+| Special evidence | 99 | 13.2% |
 | Verified specials source | 39 | 5.2% |
 | Reservation link | 63 | 8.4% |
 | Online ordering link | 80 | 10.7% |

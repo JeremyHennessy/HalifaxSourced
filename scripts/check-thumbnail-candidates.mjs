@@ -20,7 +20,7 @@ const restaurantIds = new Set(restaurants.map((restaurant) => restaurant.id));
 const candidates = Array.isArray(thumbnailPayload.candidates) ? thumbnailPayload.candidates : [];
 const failures = [];
 const warnings = [];
-const allowedSourceKinds = new Set(["approved_restaurant_media", "official_feed_media", "meta_social_media", "official_page_thumbnail_candidate"]);
+const allowedSourceKinds = new Set(["approved_restaurant_media", "official_feed_media", "meta_social_media", "official_page_thumbnail_candidate", "public_campaign_menu_image", "public_special_source_image"]);
 const allowedReviewStates = new Set(["approved", "candidate_review", "rejected"]);
 const allowedRightsStates = new Set(["production_approved", "requires_rights_review", "rejected"]);
 

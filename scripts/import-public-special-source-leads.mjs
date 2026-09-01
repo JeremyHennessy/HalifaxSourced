@@ -4,8 +4,15 @@ import { mkdir, readFile, writeFile } from "node:fs/promises";
 const sourceId = "halifax-events-happy-hour";
 const sourceName = "HalifaxEvents.ca Happy Hour";
 const sourceUrl = "https://halifaxevents.ca/happy-hour";
+const dineAroundSourceId = "discover-halifax-dine-around-2026";
+const dineAroundSourceName = "Discover Halifax Dine Around 2026";
+const dineAroundSourceUrl = "https://downtownhalifax.ca/dinearound";
+const dineAroundCampaignStart = "2026-02-01";
+const dineAroundCampaignEnd = "2026-02-28";
 const timeoutMs = Number(process.env.PUBLIC_SPECIAL_LEAD_TIMEOUT_MS ?? 12000);
 const limit = Number(process.env.PUBLIC_SPECIAL_LEAD_LIMIT ?? 500);
+const campaignLimit = Number(process.env.PUBLIC_SPECIAL_CAMPAIGN_LIMIT ?? 120);
+const campaignCrawlDelayMs = Number(process.env.PUBLIC_SPECIAL_CAMPAIGN_CRAWL_DELAY_MS ?? 10000);
 const userAgent = "HalifaxSourced/0.8 (+https://github.com/JeremyHennessy/HalifaxSourced)";
 const observedAt = new Date().toISOString();
 
@@ -63,6 +70,8 @@ function streetKey(value) {
   return match ? `${match[1]} ${match[2].trim()}` : "";
 }
 
+const robotsCache = new Map();
+
 function parseRobots(text) {
   const groups = [];
   let current = null;
@@ -92,14 +101,17 @@ function parseRobots(text) {
 async function robotsAllows(url) {
   const parsed = new URL(url);
   try {
-    const response = await fetch(new URL("/robots.txt", parsed.origin), {
-      headers: { "User-Agent": userAgent },
-      redirect: "follow",
-      signal: AbortSignal.timeout(Math.min(8000, timeoutMs))
-    });
-    if (response.status === 401 || response.status === 403) return false;
-    if (!response.ok) return true;
-    const disallow = parseRobots(await response.text());
+    let disallow = robotsCache.get(parsed.origin);
+    if (!disallow) {
+      const response = await fetch(new URL("/robots.txt", parsed.origin), {
+        headers: { "User-Agent": userAgent },
+        redirect: "follow",
+        signal: AbortSignal.timeout(Math.min(8000, timeoutMs))
+      });
+      if (response.status === 401 || response.status === 403) return false;
+      disallow = response.ok ? parseRobots(await response.text()) : [];
+      robotsCache.set(parsed.origin, disallow);
+    }
     return !disallow.some((prefix) => prefix === "/" || (prefix && parsed.pathname.startsWith(prefix)));
   } catch { return true; }
 }
@@ -180,6 +192,7 @@ function specialType(row) {
   if (/taco/.test(text)) return "taco_night";
   if (/wine/.test(text)) return "wine_special";
   if (/brunch/.test(text)) return "brunch";
+  if (/dine around|prix|fixe|course|menu/.test(text)) return "prix_fixe";
   if (/cocktail|beer|draught|draft|drink|bubbles/.test(text)) return "happy_hour";
   return "daily_or_promotional_special";
 }
@@ -261,6 +274,175 @@ function sourceImageUrl(row, client) {
   return path ? safeUrl(`${client.supabaseUrl}/storage/v1/object/public/event-images/${path}`) : null;
 }
 
+function sleep(ms) {
+  return ms > 0 ? new Promise((resolveSleep) => setTimeout(resolveSleep, ms)) : Promise.resolve();
+}
+
+function decodeEntities(value) {
+  return String(value ?? "")
+    .replace(/\\\//g, "/")
+    .replace(/&nbsp;/g, " ")
+    .replace(/&#8211;|&#8212;/g, "-")
+    .replace(/&#8217;|&rsquo;/g, "'")
+    .replace(/&quot;/g, '"')
+    .replace(/&#038;|&amp;/g, "&")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function metaContent(html, property) {
+  const escaped = property.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  const pattern = new RegExp(`<meta\\b(?=[^>]*(?:property|name)=["']${escaped}["'])(?=[^>]*content=["']([^"']*)["'])[^>]*>`, "i");
+  return decodeEntities(html.match(pattern)?.[1] || "");
+}
+
+function visibleLines(html) {
+  return html
+    .replace(/<script[\s\S]*?<\/script>/gi, " ")
+    .replace(/<style[\s\S]*?<\/style>/gi, " ")
+    .replace(/<[^>]+>/g, "\n")
+    .split(/\n+/)
+    .map(decodeEntities)
+    .filter(Boolean)
+    .filter((line) => !/^(skip to|jump to|privacy|cookie|necessary|non-necessary|accept|save & accept|close)$/i.test(line));
+}
+
+function humanizeMenuParam(value) {
+  const text = String(value || "")
+    .replace(/[-_]+/g, " ")
+    .replace(/\b(\d{2})\s*00\b/g, "$$$1")
+    .replace(/\b(\d{2})\b/g, "$$$1")
+    .replace(/\s+/g, " ")
+    .trim();
+  return text ? text.replace(/\b\w/g, (letter) => letter.toUpperCase()) : null;
+}
+
+function priceFromText(value) {
+  const matches = [...String(value || "").matchAll(/\$?\b(10|20|30|40|50|60|70|80|90|100)\b/g)].map((match) => Number(match[1]));
+  return matches.length ? Math.max(...matches) : null;
+}
+
+function pdfUrlFromHtml(html) {
+  const match = html.match(/"menu_file"\s*:\s*\{\s*"url"\s*:\s*"([^"]+\.pdf)"/i);
+  return match ? safeUrl(decodeEntities(match[1]), "https://discoverhalifaxns.com/") : null;
+}
+
+function websiteUrlFromHtml(html) {
+  const match = html.match(/<a\b[^>]*href=["']([^"']+)["'][^>]*>\s*(?:<[^>]+>\s*)*Website\s*(?:<[^>]+>\s*)*<\/a>/i);
+  const url = safeUrl(match?.[1], "https://discoverhalifaxns.com/");
+  return url && !/discoverhalifaxns\.com|downtownhalifax\.ca/i.test(url) ? url : null;
+}
+
+function cleanMenuExcerpt(lines) {
+  const start = lines.findIndex((line) => /^Dine Around 2026$/i.test(line));
+  const end = lines.findIndex((line, index) => index > start && /^Information$/i.test(line));
+  if (start < 0 || end < 0 || end <= start + 1) return null;
+  const raw = lines.slice(start + 1, end).join(" ")
+    .replace(/\\r/g, " ")
+    .replace(/"\s*,\s*"type"\s*:\s*(?:\[|\{|false|true|null)[\s\S]*$/i, "")
+    .replace(/\s*~\s*/g, "; ")
+    .replace(/\s+/g, " ")
+    .trim();
+  return raw ? raw.slice(0, 900) : null;
+}
+
+function extractDineAroundRecord(url, html) {
+  const ogTitle = metaContent(html, "og:title");
+  const title = ogTitle || metaContent(html, "twitter:title") || metaContent(html, "description");
+  const venueName = decodeEntities(title.split(/\s+\|\s+Dine Around/i)[0] || "");
+  const lines = visibleLines(html);
+  const venueIndex = lines.findIndex((line) => normalize(line) === normalize(venueName));
+  const street = venueIndex >= 0 ? lines.slice(venueIndex + 1, venueIndex + 5).find((line) => /^\d{2,5}\s+/.test(line)) : null;
+  const cityLine = street ? lines.slice(lines.indexOf(street) + 1, lines.indexOf(street) + 4).find((line) => /Nova Scotia|Halifax|Dartmouth|Bedford/i.test(line)) : null;
+  const address = [street, cityLine].filter(Boolean).join(", ") || null;
+  const phoneIndex = lines.findIndex((line) => /^Phone$/i.test(line));
+  const emailIndex = lines.findIndex((line) => /^Email$/i.test(line));
+  const phone = phoneIndex >= 0 ? lines[phoneIndex + 1] || null : null;
+  const email = emailIndex >= 0 ? lines[emailIndex + 1] || null : null;
+  const parsed = new URL(url);
+  const menuParam = parsed.searchParams.get("menu") || "";
+  const menuLabel = humanizeMenuParam(menuParam);
+  const menuExcerpt = cleanMenuExcerpt(lines);
+  const price = priceFromText(`${menuLabel || ""} ${menuExcerpt || ""}`);
+  const sourceImageUrl = metaContent(html, "og:image") || metaContent(html, "twitter:image") || null;
+  const website = websiteUrlFromHtml(html);
+  const menuPdfUrl = pdfUrlFromHtml(html);
+  const row = {
+    venue_name: venueName,
+    venue_address: address,
+    external_url: website || url
+  };
+  const resolved = resolve(row);
+  const sourceRecordId = `${dineAroundSourceId}-${slug(parsed.pathname.split("/").filter(Boolean).pop() || venueName || "menu")}-${slug(menuParam || "menu")}-${hashId(url)}`;
+  return {
+    sourceRecordId,
+    restaurantId: null,
+    venueName: venueName || null,
+    title: menuLabel ? `Dine Around 2026: ${menuLabel}` : "Dine Around 2026 menu",
+    specialType: "prix_fixe",
+    dealType: "seasonal_dining_campaign",
+    description: menuExcerpt,
+    dayOfWeek: null,
+    startTime: null,
+    endTime: null,
+    secondStartTime: null,
+    secondEndTime: null,
+    recurrence: "Dine Around Halifax, February 2026",
+    address,
+    neighborhood: null,
+    price,
+    currency: price === null ? null : "CAD",
+    validFrom: dineAroundCampaignStart,
+    validTo: dineAroundCampaignEnd,
+    sourceUrl: url,
+    sourcePageUrl: dineAroundSourceUrl,
+    sourceId: dineAroundSourceId,
+    sourceName: dineAroundSourceName,
+    sourceKind: "public_seasonal_dining_campaign",
+    sourceType: "public_directory_special_lead",
+    sourceStatus: "campaign_listed",
+    observedAt,
+    sourceUpdatedAt: metaContent(html, "article:modified_time") || null,
+    lastVerifiedAt: null,
+    reviewState: resolved.restaurantId ? "source_signal" : "needs_place_review",
+    rightsState: sourceImageUrl ? "requires_rights_review" : null,
+    sourceImageUrl: sourceImageUrl ? safeUrl(sourceImageUrl, url) : null,
+    menuPdfUrl,
+    website,
+    phone: /^\(?\d{3}\)?[-\s.]?\d{3}[-\s.]?\d{4}$/.test(phone || "") ? phone : null,
+    email: /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email || "") ? email : null,
+    active: true,
+    featured: false,
+    claimable: false,
+    ...resolved
+  };
+}
+
+async function fetchDineAroundLeads() {
+  const records = [];
+  try {
+    const { text: html, resolvedUrl } = await fetchText(dineAroundSourceUrl);
+    const discovered = [...html.matchAll(/href=["']([^"']*discoverhalifaxns\.com\/dinearound\/menu\/[^"']+)["']/gi)]
+      .map((match) => safeUrl(match[1], resolvedUrl))
+      .filter(Boolean)
+      .map((url) => url.replace(/&#038;/g, "&"));
+    const urls = [...new Set(discovered)].slice(0, campaignLimit);
+    for (let index = 0; index < urls.length; index += 1) {
+      const url = urls[index];
+      if (index > 0) await sleep(campaignCrawlDelayMs);
+      try {
+        const { text: menuHtml, resolvedUrl: menuUrl } = await fetchText(url);
+        const record = extractDineAroundRecord(menuUrl, menuHtml);
+        if (record.venueName) records.push(record);
+      } catch (error) {
+        failures.push({ sourceId: dineAroundSourceId, sourceName: dineAroundSourceName, sourceUrl: url, reason: error.message, observedAt });
+      }
+    }
+  } catch (error) {
+    failures.push({ sourceId: dineAroundSourceId, sourceName: dineAroundSourceName, sourceUrl: dineAroundSourceUrl, reason: error.message, observedAt });
+  }
+  return records;
+}
 const failures = [];
 let sourceClient = null;
 let rawRows = [];
@@ -271,7 +453,7 @@ try {
   failures.push({ sourceId, sourceName, sourceUrl, reason: error.message, observedAt });
 }
 
-const records = rawRows.map((row) => {
+const happyHourRecords = rawRows.map((row) => {
   const sourceRecordId = `${sourceId}-${slug(row.slug || row.venue_name || "special")}-${hashId(row.id || JSON.stringify(row))}`;
   const startTime = normalizeTime(row.start_time);
   const endTime = normalizeTime(row.end_time);
@@ -315,7 +497,11 @@ const records = rawRows.map((row) => {
     claimable: Boolean(row.is_claimable),
     ...resolve(row)
   };
-}).sort((a, b) => (a.restaurantId ? 0 : 1) - (b.restaurantId ? 0 : 1) || String(a.venueName || "").localeCompare(String(b.venueName || "")));
+});
+
+const dineAroundRecords = await fetchDineAroundLeads();
+const records = [...happyHourRecords, ...dineAroundRecords]
+  .sort((a, b) => (a.restaurantId ? 0 : 1) - (b.restaurantId ? 0 : 1) || String(a.venueName || "").localeCompare(String(b.venueName || "")));
 
 const counts = {
   total: records.length,
@@ -323,6 +509,7 @@ const counts = {
   unresolved: records.filter((record) => !record.restaurantId && record.matchMethod === "unresolved").length,
   conflicts: records.filter((record) => record.matchMethod === "conflict").length,
   happyHour: records.filter((record) => record.specialType === "happy_hour").length,
+  seasonalCampaign: records.filter((record) => record.sourceId === dineAroundSourceId).length,
   withPrice: records.filter((record) => record.price !== null && Number.isFinite(Number(record.price))).length,
   withSchedule: records.filter((record) => Array.isArray(record.dayOfWeek) && record.dayOfWeek.length && record.startTime && record.endTime).length,
   withSourceImage: records.filter((record) => record.sourceImageUrl).length
@@ -332,15 +519,31 @@ const payload = {
   version: 1,
   generatedAt: observedAt,
   source: {
-    id: sourceId,
-    name: sourceName,
-    kind: "public_happy_hour_directory",
+    id: "public-special-source-leads",
+    name: "Public special source leads",
+    kind: "composite_public_special_sources",
     url: sourceUrl,
-    publicClientDiscovered: Boolean(sourceClient),
-    clientBundleUrl: sourceClient?.bundleUrl || null,
-    contentTypes: ["special", "happy_hour", "schedule", "price", "review_image_candidate"],
+    contentTypes: ["special", "happy_hour", "schedule", "price", "campaign_menu", "review_image_candidate"],
     reviewPolicy: "Records are treated as public directory source leads until restaurant-owned source review confirms them."
   },
+  sources: [
+    {
+      id: sourceId,
+      name: sourceName,
+      kind: "public_happy_hour_directory",
+      url: sourceUrl,
+      publicClientDiscovered: Boolean(sourceClient),
+      clientBundleUrl: sourceClient?.bundleUrl || null
+    },
+    {
+      id: dineAroundSourceId,
+      name: dineAroundSourceName,
+      kind: "public_seasonal_dining_campaign",
+      url: dineAroundSourceUrl,
+      campaignStart: dineAroundCampaignStart,
+      campaignEnd: dineAroundCampaignEnd
+    }
+  ],
   counts,
   records,
   failures
@@ -350,7 +553,7 @@ await mkdir(new URL("../data/build", import.meta.url), { recursive: true });
 await writeFile(new URL("../data/build/public-special-source-leads.json", import.meta.url), `${JSON.stringify(payload, null, 2)}\n`);
 await writeFile(new URL("../data/public-special-source-leads.js", import.meta.url), `window.HALIFAX_PUBLIC_SPECIAL_SOURCE_LEADS = ${JSON.stringify(payload, null, 2)};\n`);
 
-console.log(`Public special leads: total=${counts.total}, resolved=${counts.resolved}, unresolved=${counts.unresolved}, conflicts=${counts.conflicts}, happyHour=${counts.happyHour}, failures=${failures.length}.`);
+console.log(`Public special leads: total=${counts.total}, resolved=${counts.resolved}, unresolved=${counts.unresolved}, conflicts=${counts.conflicts}, happyHour=${counts.happyHour}, seasonalCampaign=${counts.seasonalCampaign}, failures=${failures.length}.`);
 for (const record of records.filter((item) => !item.restaurantId).slice(0, 15)) {
   console.log(`- review: ${record.venueName}${record.address ? ` @ ${record.address}` : ""}`);
 }

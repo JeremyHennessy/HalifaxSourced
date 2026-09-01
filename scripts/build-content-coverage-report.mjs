@@ -396,8 +396,10 @@ const report = {
       unresolved: publicSpecialLeads.counts?.unresolved || 0,
       conflicts: publicSpecialLeads.counts?.conflicts || 0,
       happyHour: publicSpecialLeads.counts?.happyHour || 0,
+      seasonalCampaign: publicSpecialLeads.counts?.seasonalCampaign || 0,
       withPrice: publicSpecialLeads.counts?.withPrice || 0,
-      withSchedule: publicSpecialLeads.counts?.withSchedule || 0
+      withSchedule: publicSpecialLeads.counts?.withSchedule || 0,
+      withSourceImage: publicSpecialLeads.counts?.withSourceImage || 0
     },
     patioDirectoryLayer: { generatedAt: patioDirectory.generatedAt || null, ...(patioDirectory.counts || {}) },
     currentResolutionRisks: { discoveryNameOnlyMerges }

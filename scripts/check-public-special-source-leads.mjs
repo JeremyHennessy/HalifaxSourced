@@ -3,6 +3,7 @@ import { mkdir, readFile, writeFile } from "node:fs/promises";
 const payload = JSON.parse(await readFile(new URL("../data/build/public-special-source-leads.json", import.meta.url), "utf8"));
 const catalog = JSON.parse(await readFile(new URL("../data/build/catalog.json", import.meta.url), "utf8"));
 const ids = new Set((catalog.restaurants || []).map((restaurant) => restaurant.id));
+const allowedSourceIds = new Set(["halifax-events-happy-hour", "discover-halifax-dine-around-2026"]);
 const errors = [];
 const warnings = [];
 const seen = new Set();
@@ -23,7 +24,7 @@ function validDate(value) {
 for (const record of payload.records || []) {
   if (!record.sourceRecordId || seen.has(record.sourceRecordId)) errors.push(`invalid_or_duplicate_id:${record.sourceRecordId || "missing"}`);
   seen.add(record.sourceRecordId);
-  if (record.sourceId !== "halifax-events-happy-hour") errors.push(`invalid_source_id:${record.sourceRecordId}`);
+  if (!allowedSourceIds.has(record.sourceId || "")) errors.push(`invalid_source_id:${record.sourceRecordId}`);
   if (!record.venueName || !record.title || !record.sourceUrl || !validUrl(record.sourceUrl)) errors.push(`invalid_record:${record.sourceRecordId}`);
   if (record.sourcePageUrl && !validUrl(record.sourcePageUrl)) errors.push(`invalid_source_page_url:${record.sourceRecordId}`);
   if (record.sourceImageUrl && !validUrl(record.sourceImageUrl)) errors.push(`invalid_source_image_url:${record.sourceRecordId}`);
@@ -51,6 +52,7 @@ const report = {
   unresolved: payload.counts?.unresolved || 0,
   conflicts: payload.counts?.conflicts || 0,
   happyHour: payload.counts?.happyHour || 0,
+  seasonalCampaign: payload.counts?.seasonalCampaign || 0,
   failures: payload.failures || [],
   errors,
   warnings

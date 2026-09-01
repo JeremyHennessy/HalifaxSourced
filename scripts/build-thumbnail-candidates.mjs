@@ -217,6 +217,32 @@ function postCandidate(post, restaurantName, sourceKind) {
     category: post.primaryCategory || null
   };
 }
+function publicSpecialImageCandidate(lead, restaurantName) {
+  const thumbnailUrl = safeThumbnailUrl(lead.sourceImageUrl);
+  const sourceUrl = safeUrl(lead.sourceUrl || lead.sourcePageUrl);
+  if (!thumbnailUrl || !sourceUrl || !lead.restaurantId) return null;
+  return {
+    restaurantId: lead.restaurantId,
+    restaurantName: lead.venueName || restaurantName,
+    thumbnailUrl,
+    sourceUrl,
+    pageUrl: safeUrl(lead.sourcePageUrl) || sourceUrl,
+    platform: null,
+    sourceKind: lead.sourceId === "discover-halifax-dine-around-2026" ? "public_campaign_menu_image" : "public_special_source_image",
+    extractionMethod: "public_special_source_declared_image",
+    reviewState: "candidate_review",
+    rightsStatus: "requires_rights_review",
+    permission: null,
+    rightsBasis: null,
+    attribution: lead.sourceName || null,
+    alt: lead.title ? `${lead.venueName || restaurantName}: ${lead.title}` : `${lead.venueName || restaurantName} special image candidate`,
+    confidence: "public_special_source_media",
+    observedAt: lead.observedAt || generatedAt,
+    publishedAt: lead.sourceUpdatedAt || null,
+    title: lead.title || null,
+    category: lead.specialType || null
+  };
+}
 function pageCandidate(restaurant, pageUrl, image) {
   return {
     restaurantId: restaurant.id,
@@ -280,6 +306,7 @@ const firstParty = await loadJson("../data/build/first-party-sources.json", { re
 const recentPosts = await loadJson("../data/build/recent-social-posts.json", { records: [] });
 const feedPayload = await loadJson("../data/build/website-feed-signals.json", { posts: [] });
 const socialPayload = await loadJson("../data/build/social-signals.json", { posts: [] });
+const publicSpecialPayload = await loadJson("../data/build/public-special-source-leads.json", { records: [] });
 const mediaPayload = await loadWindowScript("data/restaurant-media.js", "HALIFAX_RESTAURANT_MEDIA", { records: [] });
 const rejectionPayload = await loadJson("../data/thumbnail-rejected-candidates.json", { records: [] });
 reviewedThumbnailRejections = new Map((rejectionPayload.records || []).map((record) => [`${record.restaurantId}|${safeThumbnailUrl(record.thumbnailUrl) || record.thumbnailUrl}`, token(record.reason || "reviewed_rejected")]));
@@ -307,6 +334,12 @@ for (const post of [
   const candidate = postCandidate(post, restaurant?.name || post.restaurantName, sourceKind);
   if (candidate) candidates.push(candidate);
 }
+for (const lead of publicSpecialPayload.records || []) {
+  const restaurant = restaurantsById.get(lead.restaurantId);
+  const candidate = publicSpecialImageCandidate(lead, restaurant?.name || lead.venueName);
+  if (candidate) candidates.push(candidate);
+}
+
 for (const candidate of existingThumbnailPayload.candidates || []) {
   if (candidate?.sourceKind !== "approved_restaurant_media") candidates.push(candidate);
 }
