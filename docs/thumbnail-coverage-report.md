@@ -1,6 +1,6 @@
 # Halifax Sourced thumbnail coverage report
 
-Generated: 2026-09-01T15:38:00.458Z
+Generated: 2026-09-01T15:52:03.448Z
 
 This report tracks source-backed image leads for restaurant thumbnails. It separates production-approved media from candidates that still need review, attribution, or permission before they can become default restaurant card imagery.
 
@@ -16,13 +16,13 @@ This report tracks source-backed image leads for restaurant thumbnails. It separ
 | Promotion queue | 128 | 17.3% |
 | Discovery queue | 510 | 68.9% |
 
-Total thumbnail candidates: **5434**. Review-needed candidates: **5361**. Fetch failures in the latest run: **79**.
+Total thumbnail candidates: **5433**. Review-needed candidates: **5360**. Fetch failures in the latest run: **79**.
 
 ## Candidate source mix
 
 | Source kind | Candidates |
 | --- | ---: |
-| official_page_thumbnail_candidate | 5,354 |
+| official_page_thumbnail_candidate | 5,353 |
 | approved_restaurant_media | 73 |
 | official_feed_media | 7 |
 
@@ -30,12 +30,12 @@ Total thumbnail candidates: **5434**. Review-needed candidates: **5361**. Fetch 
 
 | Review state | Candidates |
 | --- | ---: |
-| candidate_review | 5,361 |
+| candidate_review | 5,360 |
 | approved | 73 |
 
 | Rights state | Candidates |
 | --- | ---: |
-| requires_rights_review | 5,361 |
+| requires_rights_review | 5,360 |
 | production_approved | 73 |
 
 ## Promotion queue

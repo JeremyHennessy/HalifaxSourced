@@ -24,10 +24,25 @@ const allowedSourceKinds = new Set(["approved_restaurant_media", "official_feed_
 const allowedReviewStates = new Set(["approved", "candidate_review", "rejected"]);
 const allowedRightsStates = new Set(["production_approved", "requires_rights_review", "rejected"]);
 
+function publicHttpUrl(url) {
+  const hostname = url.hostname.toLowerCase();
+  return !(
+    hostname === "localhost" ||
+    hostname === "0.0.0.0" ||
+    hostname === "::1" ||
+    hostname === "127.0.0.1" ||
+    hostname.endsWith(".local") ||
+    /^127\./.test(hostname) ||
+    /^10\./.test(hostname) ||
+    /^192\.168\./.test(hostname) ||
+    /^172\.(?:1[6-9]|2\d|3[0-1])\./.test(hostname)
+  );
+}
+
 function validUrl(value) {
   try {
     const url = new URL(String(value ?? ""));
-    return ["http:", "https:"].includes(url.protocol) || /^(?:\.\/)?assets\/[a-zA-Z0-9._/-]+$/.test(String(value ?? ""));
+    return (["http:", "https:"].includes(url.protocol) && publicHttpUrl(url)) || /^(?:\.\/)?assets\/[a-zA-Z0-9._/-]+$/.test(String(value ?? ""));
   } catch {
     return /^(?:\.\/)?assets\/[a-zA-Z0-9._/-]+$/.test(String(value ?? ""));
   }
@@ -35,7 +50,7 @@ function validUrl(value) {
 function validHttpUrl(value) {
   try {
     const url = new URL(String(value ?? ""));
-    return ["http:", "https:"].includes(url.protocol);
+    return ["http:", "https:"].includes(url.protocol) && publicHttpUrl(url);
   } catch { return false; }
 }
 function duplicateValues(items, getter) {
