@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "generatedAt": "2026-08-31T11:28:10.161Z",
-  "coverageReportGeneratedAt": "2026-08-30T19:39:29.208Z",
+  "generatedAt": "2026-09-01T13:45:12.484Z",
+  "coverageReportGeneratedAt": "2026-09-01T13:45:12.302Z",
   "summary": {
     "canonicalPlaces": 749,
     "placesWithSocial": 146,
@@ -10,7 +10,7 @@
     "structuredMenus": 129,
     "structuredReservations": 49,
     "structuredOrdering": 74,
-    "structuredSpecials": 68,
+    "structuredSpecials": 74,
     "verifiedCurrentSpecials": 49,
     "orphanSpecialSources": 0,
     "cityEvents": 187,
@@ -43,7 +43,7 @@
       "unknown": 0
     },
     "specials": {
-      "lt7": 59,
+      "lt7": 65,
       "d7_30": 9,
       "d30_90": 0,
       "gt90": 0,
@@ -6394,8 +6394,8 @@
   "contentBreakdown": {
     "specialStates": {
       "verified_current": 49,
+      "source_lead": 13,
       "likely_recurring_verify": 9,
-      "source_lead": 7,
       "stale": 3
     },
     "eventCategories": {

@@ -9,6 +9,7 @@ catalog_path = build_dir / "catalog.json"
 official_signals_path = build_dir / "official-site-signals.json"
 first_party_sources_path = build_dir / "first-party-sources.json"
 website_feed_signals_path = build_dir / "website-feed-signals.json"
+website_page_intelligence_path = build_dir / "website-page-intelligence.json"
 social_signals_path = build_dir / "social-signals.json"
 recent_posts_path = build_dir / "recent-social-posts.json"
 db_path = build_dir / "halifax_sourced.sqlite"
@@ -24,6 +25,7 @@ catalog = load_json(catalog_path, {"restaurants": []})
 official_signals = load_json(official_signals_path, {"results": []})
 first_party_sources = load_json(first_party_sources_path, {"records": []})
 website_feed_signals = load_json(website_feed_signals_path, {"posts": [], "signals": []})
+website_page_intelligence = load_json(website_page_intelligence_path, {"records": [], "signals": []})
 social_signals = load_json(social_signals_path, {"posts": [], "signals": []})
 recent_posts = load_json(recent_posts_path, {"records": []})
 official_by_id = {signal.get("restaurantId"): signal for signal in official_signals.get("results", []) if signal.get("restaurantId")}
@@ -56,6 +58,7 @@ cur.executescript(
     drop table if exists recent_social_post_categories;
     drop table if exists recent_social_posts;
     drop table if exists meta_social_posts;
+    drop table if exists website_page_intelligence;
     drop table if exists website_feed_posts;
     drop table if exists first_party_related_links;
     drop table if exists first_party_feeds;
@@ -233,6 +236,26 @@ cur.executescript(
       association_basis text,
       confidence text,
       review_state text
+    );
+
+    create table website_page_intelligence (
+      id text primary key,
+      restaurant_id text not null,
+      restaurant_name text,
+      title text not null,
+      excerpt text,
+      post_url text not null,
+      media_url text,
+      published_at text,
+      observed_at text,
+      signal_matches_json text not null,
+      candidate_links_json text not null,
+      source_kind text,
+      association_basis text,
+      confidence text,
+      review_state text,
+      discovery_reason text,
+      source_label text
     );
 
     create table meta_social_posts (
@@ -493,6 +516,30 @@ for post in website_feed_signals.get("posts", []) or []:
         ),
     )
 
+for record in website_page_intelligence.get("records", []) or []:
+    cur.execute(
+        "insert into website_page_intelligence values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
+        (
+            record.get("id"),
+            record.get("restaurantId"),
+            record.get("restaurantName"),
+            record.get("title"),
+            record.get("excerpt"),
+            record.get("postUrl"),
+            record.get("mediaUrl"),
+            record.get("publishedAt"),
+            record.get("observedAt"),
+            dumps(record.get("signalMatches", {})),
+            dumps(record.get("candidateLinks", [])),
+            record.get("sourceKind"),
+            record.get("associationBasis"),
+            record.get("confidence"),
+            record.get("reviewState"),
+            record.get("discoveryReason"),
+            record.get("sourceLabel"),
+        ),
+    )
+
 for post in social_signals.get("posts", []) or []:
     cur.execute(
         "insert into meta_social_posts values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
@@ -581,6 +628,7 @@ print(
     f"Built SQLite database at {db_path} with {len(catalog['restaurants'])} restaurants, "
     f"{len(first_party_sources.get('records', []))} first-party source records, "
     f"{len(website_feed_signals.get('posts', []) or [])} website feed posts, "
+    f"{len(website_page_intelligence.get('records', []) or [])} official page intelligence records, "
     f"{len(social_signals.get('posts', []) or [])} Meta social posts, and "
     f"{len(recent_posts.get('records', []) or [])} normalized recent post records."
 )

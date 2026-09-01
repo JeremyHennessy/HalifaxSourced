@@ -196,7 +196,7 @@ function postCandidate(post, restaurantName, sourceKind) {
     rightsBasis: null,
     attribution: null,
     alt: post.title ? `${post.restaurantName || restaurantName}: ${post.title}` : `${post.restaurantName || restaurantName} update thumbnail`,
-    confidence: sourceKind === "meta_social_media" ? "official_social_api_media" : "official_feed_media",
+    confidence: sourceKind === "meta_social_media" ? "official_social_api_media" : sourceKind === "official_page_thumbnail_candidate" ? "official_page_source_media" : "official_feed_media",
     observedAt: post.observedAt || generatedAt,
     publishedAt: post.publishedAt || null,
     title: post.title || null,
@@ -289,7 +289,7 @@ for (const post of [
   ...(socialPayload.posts || [])
 ]) {
   const restaurant = restaurantsById.get(post.restaurantId);
-  const sourceKind = post.sourceFamily === "social_api" || ["facebook", "instagram"].includes(post.platform) ? "meta_social_media" : "official_feed_media";
+  const sourceKind = post.sourceFamily === "social_api" || ["facebook", "instagram"].includes(post.platform) ? "meta_social_media" : post.sourceFamily === "website_page" || post.platform === "official_page" ? "official_page_thumbnail_candidate" : "official_feed_media";
   const candidate = postCandidate(post, restaurant?.name || post.restaurantName, sourceKind);
   if (candidate) candidates.push(candidate);
 }

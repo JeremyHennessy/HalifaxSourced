@@ -1,6 +1,6 @@
 # Halifax Sourced thumbnail coverage report
 
-Generated: 2026-08-31T11:50:39.180Z
+Generated: 2026-09-01T13:44:42.758Z
 
 This report tracks source-backed image leads for restaurant thumbnails. It separates production-approved media from candidates that still need review, attribution, or permission before they can become default restaurant card imagery.
 
@@ -10,19 +10,19 @@ This report tracks source-backed image leads for restaurant thumbnails. It separ
 | --- | ---: | ---: |
 | Catalog restaurants | 739 | 100% |
 | Restaurants with approved thumbnail | 73 | 9.9% |
-| Restaurants with any thumbnail candidate | 114 | 15.4% |
+| Restaurants with any thumbnail candidate | 137 | 18.5% |
 | Restaurants missing approved thumbnail | 666 | 90.1% |
-| Restaurants missing any candidate | 625 | 84.6% |
-| Promotion queue | 28 | 3.8% |
-| Discovery queue | 625 | 84.6% |
+| Restaurants missing any candidate | 602 | 81.5% |
+| Promotion queue | 48 | 6.5% |
+| Discovery queue | 602 | 81.5% |
 
-Total thumbnail candidates: **2445**. Review-needed candidates: **2372**. Fetch failures in the latest run: **58**.
+Total thumbnail candidates: **2669**. Review-needed candidates: **2596**. Fetch failures in the latest run: **42**.
 
 ## Candidate source mix
 
 | Source kind | Candidates |
 | --- | ---: |
-| official_page_thumbnail_candidate | 2,368 |
+| official_page_thumbnail_candidate | 2,592 |
 | approved_restaurant_media | 73 |
 | official_feed_media | 4 |
 
@@ -30,12 +30,12 @@ Total thumbnail candidates: **2445**. Review-needed candidates: **2372**. Fetch 
 
 | Review state | Candidates |
 | --- | ---: |
-| candidate_review | 2,372 |
+| candidate_review | 2,596 |
 | approved | 73 |
 
 | Rights state | Candidates |
 | --- | ---: |
-| requires_rights_review | 2,372 |
+| requires_rights_review | 2,596 |
 | production_approved | 73 |
 
 ## Promotion queue
@@ -46,7 +46,7 @@ Restaurants below are missing approved thumbnails but have source-backed candida
 | --- | --- | ---: | --- | --- |
 | Downtown Pizza | Dartmouth | 27 | official_page_thumbnail_candidate | https://downtownpizza.ca/ |
 | Jean's Chinese Restaurant | South Woodside | 24 | official_page_thumbnail_candidate | https://www.jeansrestaurant.ca/ |
-| Durty Nelly's Irish Pub | Downtown | 21 | official_page_thumbnail_candidate | https://durtynellys.ca/ |
+| Durty Nelly's Irish Pub | Downtown | 22 | official_page_thumbnail_candidate | https://durtynellys.ca/ |
 | Cora | Downtown | 20 | official_page_thumbnail_candidate | https://www.chezcora.com/en/breakfast-lunch-restaurants/cora-halifax-downtown/ |
 | Mirchi Tandoor | Downtown | 20 | official_page_thumbnail_candidate | https://mirchitandoor.com/ |
 | Jacky's Cafe | Downtown | 19 | official_page_thumbnail_candidate | https://jackyscafehalifax.com/ |
@@ -54,21 +54,33 @@ Restaurants below are missing approved thumbnails but have source-backed candida
 | Great Wall Restaurant | Downtown | 18 | official_page_thumbnail_candidate | http://www.thegreatwall.ca/ |
 | India Paradise | Downtown | 18 | official_page_thumbnail_candidate | https://www.indiaparadise.ca/ |
 | Glitter Bean Cafe | Downtown | 17 | official_page_thumbnail_candidate | https://www.glitterbeancafe.com/ |
+| Jungle Jim's | Bayers Lake Business Park | 16 | official_page_thumbnail_candidate | https://junglejims.ca/ |
 | Brief Break | Downtown | 13 | official_page_thumbnail_candidate | https://dal.campusdish.com/LocationsAndMenus/WeldonLawBuilding |
 | Fillings Bistro 32 | Downtown | 13 | official_page_thumbnail_candidate | https://dal.campusdish.com/LocationsAndMenus/FillingsBistroatDentistry |
+| Greco Pizza | West End | 13 | official_page_thumbnail_candidate | https://greco.ca/ |
 | Green Café | Downtown | 13 | official_page_thumbnail_candidate | https://dal.campusdish.com/LocationsAndMenus/GreenCafeatRoweManagementBuilding |
 | Grille Works | Downtown | 13 | official_page_thumbnail_candidate | https://dal.campusdish.com/LocationsAndMenus/LifeSciencesCentre/GrilleWorks |
 | Ground Zero | Downtown | 13 | official_page_thumbnail_candidate | https://dal.campusdish.com/LocationsAndMenus/GroundZero |
+| in spring asian fusion cuisine | Downtown | 13 | official_page_thumbnail_candidate | https://www.inspringhotpot.com/ |
+| Mashawee Mediterranean Grill | Downtown | 13 | official_page_thumbnail_candidate | https://www.mashaweemediterraneangrill.ca/ |
 | Marigold Kitchen | Downtown | 12 | official_page_thumbnail_candidate | https://marigoldkitchen.ca |
 | Moxie's | Downtown | 11 | official_page_thumbnail_candidate | https://moxies.com |
+| Doraku | Dartmouth | 9 | official_page_thumbnail_candidate | https://doraku.yolasite.com |
 | Gahan House | Downtown | 9 | official_page_thumbnail_candidate | https://gahan.ca |
 | Kanpai Izakaya | Downtown | 9 | official_page_thumbnail_candidate | https://kanpaiizakaya.com |
 | Cheese Curds and Habaneros | Armdale / Fairview | 8 | official_page_thumbnail_candidate | https://cheesecurdsgourmetburgersandpoutinerie.unuhub.net/ |
+| Bramble Cafe | Bloomfield | 5 | official_page_thumbnail_candidate | https://www.instagram.com/bramble.hfx |
 | Matadora Tapas Bar | Dartmouth | 5 | official_page_thumbnail_candidate | https://matadorahfx.ca/ |
+| Starbucks | Dartmouth | 4 | official_page_thumbnail_candidate | https://www.starbucks.ca/ |
+| Starbucks | Armdale / Fairview | 4 | official_page_thumbnail_candidate | https://www.starbucks.ca/ |
+| King of Donair | Halifax Peninsula | 3 | official_page_thumbnail_candidate | https://www.kingofdonair.ca |
 | 2 Crows Brewing | Downtown | 2 | official_page_thumbnail_candidate | https://www.2crowsbrewing.com/ |
 | Bedford Beer Garden | Armdale / Fairview | 2 | official_page_thumbnail_candidate | https://www.bedfordbeergarden.com/ |
 | Charm School | West End | 2 | official_page_thumbnail_candidate | https://unfuckingfiltered.com/ |
 | Humble Pie Kitchen | Dartmouth | 2 | official_page_thumbnail_candidate | https://humblepiekitchen.ca/ |
+| Public - Café, Bakery & Bar | Downtown | 2 | official_page_thumbnail_candidate | https://www.rcr.ca/restaurants/public-cafe-bakery-bar/ |
+| Shuck Seafood + Raw Bar | Downtown | 2 | official_page_thumbnail_candidate | https://www.rcr.ca/restaurants/shuck-seafood-raw-bar/ |
+| Smokehouse Brewery | Bloomfield | 2 | official_page_thumbnail_candidate | https://smokehousebrewery.ca |
 | Ben & Florentine | Bedford | 1 | official_page_thumbnail_candidate | https://benetflorentine.com/ |
 | Bitter End Martini Bar & Restaurant | Downtown | 1 | official_page_thumbnail_candidate | https://www.bitterend.ca/ |
 | Kofuku Japanese and Thai | West End | 1 | official_page_thumbnail_candidate | https://www.kofukujapaneseandthai.ca |

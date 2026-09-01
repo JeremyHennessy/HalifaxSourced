@@ -85,6 +85,8 @@ jobs:
           copy_if_present data/build/first-party-sources.json
           copy_if_present data/website-feed-signals.js
           copy_if_present data/build/website-feed-signals.json
+          copy_if_present data/website-page-intelligence.js
+          copy_if_present data/build/website-page-intelligence.json
           copy_if_present data/recent-social-posts.js
           copy_if_present data/build/recent-social-posts.json
           copy_if_present data/reviewed-social-posts.js
