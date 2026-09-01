@@ -213,7 +213,7 @@ if (duplicateRecentPosts.length) failures.push({ type: "duplicate_recent_social_
 for (const post of recentPosts) {
   const categories = Array.isArray(post.categories) ? post.categories : [];
   const categoryIds = categories.map((category) => category.id);
-  if (!post.id || !restaurantIds.has(post.restaurantId) || !["website_feed", "official_page", "facebook", "instagram"].includes(post.platform) || !["feed", "website_page", "social_api"].includes(post.sourceFamily) || !validUrl(post.postUrl) || !validDate(post.observedAt) || !String(post.title || "").trim() || !String(post.summary || "").trim() || !allowedRecentCategories.has(post.primaryCategory) || !categoryIds.every((id) => allowedRecentCategories.has(id))) {
+  if (!post.id || !restaurantIds.has(post.restaurantId) || !["website_feed", "official_page", "public_source", "facebook", "instagram"].includes(post.platform) || !["feed", "website_page", "public_directory", "social_api"].includes(post.sourceFamily) || !validUrl(post.postUrl) || !validDate(post.observedAt) || !String(post.title || "").trim() || !String(post.summary || "").trim() || !allowedRecentCategories.has(post.primaryCategory) || !categoryIds.every((id) => allowedRecentCategories.has(id))) {
     failures.push({ type: "invalid_recent_social_post", id: post.id, restaurantId: post.restaurantId, postUrl: post.postUrl });
   }
   if (post.publishedAt && !validDate(post.publishedAt)) failures.push({ type: "invalid_recent_social_post_date", id: post.id, publishedAt: post.publishedAt });

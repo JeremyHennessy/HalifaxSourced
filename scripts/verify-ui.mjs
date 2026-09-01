@@ -32,7 +32,19 @@ const executablePath = browserPaths.find((path) => existsSync(path));
 const browser = await playwright.chromium.launch({ headless: true, executablePath });
 const page = await browser.newPage({ viewport: { width: 1440, height: 1000 }, acceptDownloads: true });
 const consoleErrors = [];
-page.on("console", (message) => { if (message.type() === "error") consoleErrors.push(message.text()); });
+const criticalResourceFailures = [];
+page.on("console", (message) => {
+  const text = message.text();
+  if (message.type() === "error" && !/^Failed to load resource: net::ERR_CONNECTION_(?:RESET|REFUSED|TIMED_OUT)$/i.test(text)) consoleErrors.push(text);
+});
+page.on("requestfailed", (request) => {
+  const type = request.resourceType();
+  const failedUrl = request.url();
+  const errorText = request.failure()?.errorText || "request_failed";
+  if (["document", "script", "xhr", "fetch"].includes(type) || /(?:localhost|127\.0\.0\.1|0\.0\.0\.0)/i.test(failedUrl)) {
+    criticalResourceFailures.push(`${type} ${failedUrl}: ${errorText}`);
+  }
+});
 page.on("pageerror", (error) => consoleErrors.push(error.message));
 await mkdir("artifacts", { recursive: true });
 const expectedWebsiteFeedSignals = JSON.parse(await readFile(resolve("data", "build", "website-feed-signals.json"), "utf8"));
@@ -648,6 +660,7 @@ if (!externalTargetState.external || externalTargetState.unsafeTargets) throw ne
 await page.goto(`${url}/#home`, { waitUntil: "networkidle" });
 await page.screenshot({ path: resolve("artifacts", "ui-check-mobile.png"), fullPage: true });
 
+if (criticalResourceFailures.length) throw new Error(`Critical resource failures detected:\n${criticalResourceFailures.join("\n")}`);
 if (consoleErrors.length) throw new Error(`Console errors detected:\n${consoleErrors.join("\n")}`);
 await browser.close();
 console.log("Halifax Sourced UI verified: discovery, social links, booking/ordering, functional event filters, event search, saved events, calendar export, map/list sync, desktop, and mobile navigation.");

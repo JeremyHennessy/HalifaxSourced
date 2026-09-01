@@ -140,7 +140,7 @@ function categoryHits(text, signalMatches = {}) {
 }
 
 function platformLabel(platform) {
-  const labels = { website_feed: "Official website", official_page: "Official page", facebook: "Facebook", instagram: "Instagram" };
+  const labels = { website_feed: "Official website", official_page: "Official page", public_source: "Public source", facebook: "Facebook", instagram: "Instagram" };
   return labels[String(platform || "").toLowerCase()] || "Official update";
 }
 
@@ -209,20 +209,52 @@ function normalizePost(post, sourceFamily) {
   };
 }
 
+function normalizePublicSpecialLead(lead) {
+  const title = cleanText(lead.title || lead.dealType || "Public special", 150);
+  const priceValue = Number(lead.price);
+  const price = Number.isFinite(priceValue) && priceValue > 0 ? `$${priceValue} CAD` : null;
+  const timing = lead.recurrence || (lead.startTime && lead.endTime ? `${lead.startTime}-${lead.endTime}` : null);
+  const summary = [lead.description, price ? `Price from ${price}.` : null, timing || null].filter(Boolean).join(" ");
+  const category = lead.specialType === "happy_hour" ? "happy_hour" : "specials";
+  return normalizePost({
+    restaurantId: lead.restaurantId,
+    restaurantName: lead.venueName,
+    platform: "public_source",
+    postUrl: lead.sourceUrl,
+    mediaUrl: lead.sourceImageUrl,
+    thumbnailUrl: lead.sourceImageUrl,
+    title,
+    summary,
+    publishedAt: lead.validFrom || lead.sourceUpdatedAt || lead.observedAt,
+    observedAt: lead.observedAt,
+    sourceKind: lead.sourceKind,
+    confidence: "matched_public_directory_signal",
+    reviewState: "source_signal",
+    associationBasis: lead.matchMethod || null,
+    signalMatches: {
+      [category]: [lead.dealType, lead.specialType].filter(Boolean)
+    }
+  }, "public_directory");
+}
+
 const feedPayload = await loadJson("../data/build/website-feed-signals.json", null)
   || await loadWindowScript("data/website-feed-signals.js", "HALIFAX_WEBSITE_FEED_SIGNALS", { posts: [], signals: [] });
 const websitePagePayload = await loadJson("../data/build/website-page-intelligence.json", null)
   || await loadWindowScript("data/website-page-intelligence.js", "HALIFAX_WEBSITE_PAGE_INTELLIGENCE", { records: [], signals: [] });
 const socialPayload = await loadJson("../data/build/social-signals.json", null)
   || await loadWindowScript("data/social-signals.js", "HALIFAX_SOCIAL_SIGNALS", { posts: [], signals: [] });
+const publicSpecialPayload = await loadJson("../data/build/public-special-source-leads.json", null)
+  || await loadWindowScript("data/public-special-source-leads.js", "HALIFAX_PUBLIC_SPECIAL_SOURCE_LEADS", { records: [] });
 
 const feedPosts = Array.isArray(feedPayload.posts) ? feedPayload.posts : (Array.isArray(feedPayload.signals) ? feedPayload.signals : []);
 const websitePagePosts = Array.isArray(websitePagePayload.records) ? websitePagePayload.records : (Array.isArray(websitePagePayload.signals) ? websitePagePayload.signals : []);
 const socialPosts = Array.isArray(socialPayload.posts) ? socialPayload.posts : (Array.isArray(socialPayload.signals) ? socialPayload.signals : []);
+const publicSpecialPosts = Array.isArray(publicSpecialPayload.records) ? publicSpecialPayload.records.filter((lead) => lead.restaurantId) : [];
 const records = [
   ...feedPosts.map((post) => normalizePost(post, "feed")),
   ...websitePagePosts.map((post) => normalizePost(post, "website_page")),
-  ...socialPosts.map((post) => normalizePost(post, "social_api"))
+  ...socialPosts.map((post) => normalizePost(post, "social_api")),
+  ...publicSpecialPosts.map(normalizePublicSpecialLead)
 ].filter(Boolean)
   .filter((post) => post.isRecent || post.reviewState === "needs_date_review")
   .filter((post, index, all) => all.findIndex((item) => item.restaurantId === post.restaurantId && item.platform === post.platform && item.postUrl === post.postUrl) === index)
@@ -248,6 +280,7 @@ const output = {
     websiteFeedPosts: feedPosts.length,
     websitePagePosts: websitePagePosts.length,
     socialApiPosts: socialPosts.length,
+    publicSpecialPosts: publicSpecialPosts.length,
     websiteFeedSignals: Array.isArray(feedPayload.signals) ? feedPayload.signals.length : 0,
     websitePageSignals: Array.isArray(websitePagePayload.signals) ? websitePagePayload.signals.length : 0,
     socialApiSignals: Array.isArray(socialPayload.signals) ? socialPayload.signals.length : 0
@@ -258,7 +291,9 @@ const output = {
     metaSocialGeneratedAt: socialPayload.generatedAt || null,
     metaCredentialState: socialPayload.credentialState || null,
     metaProfilesAttempted: socialPayload.profilesAttempted ?? null,
-    metaPostsObserved: socialPayload.postsObserved ?? null
+    metaPostsObserved: socialPayload.postsObserved ?? null,
+    publicSpecialSourceGeneratedAt: publicSpecialPayload.generatedAt || null,
+    publicSpecialSourceRecords: Array.isArray(publicSpecialPayload.records) ? publicSpecialPayload.records.length : 0
   },
   counts: {
     records: records.length,
