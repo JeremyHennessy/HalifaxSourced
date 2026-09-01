@@ -1,39 +1,39 @@
 # Halifax Sourced content quality report
 
-Generated: 2026-09-01T13:45:12.484Z
+Generated: 2026-09-01T14:43:25.345Z
 
 ## Summary
 
-- **canonicalPlaces**: 749
-- **placesWithSocial**: 146
-- **structuredPlaceFactRecords**: 162
+- **canonicalPlaces**: 750
+- **placesWithSocial**: 158
+- **structuredPlaceFactRecords**: 168
 - **structuredHours**: 13
-- **structuredMenus**: 129
-- **structuredReservations**: 49
-- **structuredOrdering**: 74
-- **structuredSpecials**: 74
+- **structuredMenus**: 138
+- **structuredReservations**: 50
+- **structuredOrdering**: 77
+- **structuredSpecials**: 80
 - **verifiedCurrentSpecials**: 49
 - **orphanSpecialSources**: 0
-- **cityEvents**: 187
-- **venueResolvedEvents**: 135
-- **organizerResolvedEvents**: 161
-- **restaurantLinkedEvents**: 9
-- **sourceFailures**: 76
+- **cityEvents**: 193
+- **venueResolvedEvents**: 141
+- **organizerResolvedEvents**: 167
+- **restaurantLinkedEvents**: 10
+- **sourceFailures**: 62
 - **unresolvedPlaceCandidates**: 207
 - **nameOnlyPlaceReviews**: 33
 - **placeSourceConflicts**: 44
 - **blockedEventSources**: 0
 - **eventSourcesInAdapterReview**: 4
-- **brokenUrls**: not measured in this run
-- **restrictedUrls**: not measured in this run
-- **transientUrlFailures**: not measured in this run
+- **brokenUrls**: 8
+- **restrictedUrls**: 4
+- **transientUrlFailures**: 35
 
 ## Freshness
 
-- **firstPartyRelationships**: <7d 1102; 7–30d 0; 30–90d 0; >90d 0; unknown 0
-- **structuredPlaceFacts**: <7d 162; 7–30d 0; 30–90d 0; >90d 0; unknown 0
-- **specials**: <7d 65; 7–30d 9; 30–90d 0; >90d 0; unknown 0
-- **events**: <7d 187; 7–30d 0; 30–90d 0; >90d 0; unknown 0
+- **firstPartyRelationships**: <7d 1133; 7–30d 0; 30–90d 0; >90d 0; unknown 0
+- **structuredPlaceFacts**: <7d 168; 7–30d 0; 30–90d 0; >90d 0; unknown 0
+- **specials**: <7d 80; 7–30d 0; 30–90d 0; >90d 0; unknown 0
+- **events**: <7d 193; 7–30d 0; 30–90d 0; >90d 0; unknown 0
 
 ## Review queues
 

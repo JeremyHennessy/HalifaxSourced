@@ -1,17 +1,34 @@
 window.HALIFAX_WEBSITE_FEED_SIGNALS = {
   "version": 3,
-  "generatedAt": "2026-08-31T11:21:26.289Z",
-  "feedsDiscovered": 124,
-  "reviewedFeedsExcluded": 5,
-  "uniqueRestaurantFeeds": 105,
-  "sharedFeedUrlsSkipped": 7,
+  "generatedAt": "2026-09-01T14:42:07.720Z",
+  "feedsDiscovered": 135,
+  "reviewedFeedsExcluded": 6,
+  "uniqueRestaurantFeeds": 111,
+  "sharedFeedUrlsSkipped": 9,
   "feedHostGroups": 57,
-  "concurrency": 10,
+  "concurrency": 8,
   "lookbackDays": 180,
   "excerptChars": 420,
-  "feedsChecked": 99,
-  "failedFeeds": 6,
+  "feedsChecked": 110,
+  "failedFeeds": 1,
   "posts": [
+    {
+      "restaurantId": "osm-node-10038454787-bird-s-nest-cafe",
+      "restaurantName": "Bird's Nest Cafe",
+      "platform": "website_feed",
+      "title": "Things to do in Halifax from a cruise ship",
+      "excerpt": "If you’re arriving in Halifax on a cruise ship and have just one day to explore the city, you’re in luck. Halifax is one of those rare cruise destinations where you can step off the ship and be right in the middle of a real, walkable city, with the waterfront, historic sites, museums, restaurants, shops and parks all within relatively easy reach. You don’t need to spend your entire shore excursion sitting on a tou...",
+      "postUrl": "https://www.birdsnesthalifax.com/post/things-to-do-in-halifax-from-a-cruise-ship",
+      "feedUrl": "https://www.birdsnesthalifax.com/blog-feed.xml",
+      "mediaUrl": "https://static.wixstatic.com/media/110dc9_a62017a64bc04441bd78f7cb22257f6a~mv2.jpeg/v1/fit/w_1000,h_960,al_c,q_80/file.png",
+      "publishedAt": "2026-09-01T14:22:55.000Z",
+      "observedAt": "2026-09-01T14:41:53.777Z",
+      "signalMatches": {},
+      "sourceKind": "official_feed",
+      "associationBasis": "unique_feed_link_from_official_website",
+      "confidence": "official_source_signal",
+      "reviewState": "source_signal"
+    },
     {
       "restaurantId": "osm-node-11506685695-kenny-s-pizza",
       "restaurantName": "Kenny's Pizza",
@@ -22,7 +39,7 @@ window.HALIFAX_WEBSITE_FEED_SIGNALS = {
       "feedUrl": "https://kennyspizzakearneylake.ca/shop/feed/",
       "mediaUrl": null,
       "publishedAt": "2026-07-17T13:48:16.000Z",
-      "observedAt": "2026-08-31T11:21:14.935Z",
+      "observedAt": "2026-09-01T14:41:59.928Z",
       "signalMatches": {},
       "sourceKind": "official_feed",
       "associationBasis": "unique_feed_link_from_official_website",
@@ -39,7 +56,7 @@ window.HALIFAX_WEBSITE_FEED_SIGNALS = {
       "feedUrl": "https://www.cafelunette.com/feed/",
       "mediaUrl": null,
       "publishedAt": "2026-05-11T15:04:47.000Z",
-      "observedAt": "2026-08-31T11:21:11.105Z",
+      "observedAt": "2026-09-01T14:41:53.778Z",
       "signalMatches": {
         "openings": [
           "now open"
@@ -64,7 +81,7 @@ window.HALIFAX_WEBSITE_FEED_SIGNALS = {
       "feedUrl": "https://www.kajohnthairestaurant.ca/blog-feed.xml",
       "mediaUrl": "https://static.wixstatic.com/media/935b09_bba221e694e24cd4b9b12bdbf201943a~mv2.png/v1/fit/w_1000,h_768,al_c,q_80/file.png",
       "publishedAt": "2026-05-04T18:38:33.000Z",
-      "observedAt": "2026-08-31T11:21:16.129Z",
+      "observedAt": "2026-09-01T14:41:57.541Z",
       "signalMatches": {},
       "sourceKind": "official_feed",
       "associationBasis": "unique_feed_link_from_official_website",
@@ -81,7 +98,7 @@ window.HALIFAX_WEBSITE_FEED_SIGNALS = {
       "feedUrl": "https://www.kajohnthairestaurant.ca/blog-feed.xml",
       "mediaUrl": "https://static.wixstatic.com/media/935b09_58e8dab8eb0244d4b89be881384c216d~mv2.png/v1/fit/w_1000,h_768,al_c,q_80/file.png",
       "publishedAt": "2026-05-04T17:55:38.000Z",
-      "observedAt": "2026-08-31T11:21:16.129Z",
+      "observedAt": "2026-09-01T14:41:57.541Z",
       "signalMatches": {},
       "sourceKind": "official_feed",
       "associationBasis": "unique_feed_link_from_official_website",
@@ -98,7 +115,7 @@ window.HALIFAX_WEBSITE_FEED_SIGNALS = {
       "feedUrl": "https://www.cafelunette.com/feed/",
       "mediaUrl": null,
       "publishedAt": "2026-04-28T18:12:21.000Z",
-      "observedAt": "2026-08-31T11:21:11.105Z",
+      "observedAt": "2026-09-01T14:41:53.778Z",
       "signalMatches": {
         "brunch": [
           "brunch"
@@ -119,7 +136,7 @@ window.HALIFAX_WEBSITE_FEED_SIGNALS = {
       "feedUrl": "https://www.cafelunette.com/feed/",
       "mediaUrl": null,
       "publishedAt": "2026-04-08T16:25:03.000Z",
-      "observedAt": "2026-08-31T11:21:11.105Z",
+      "observedAt": "2026-09-01T14:41:53.778Z",
       "signalMatches": {},
       "sourceKind": "official_feed",
       "associationBasis": "unique_feed_link_from_official_website",
@@ -136,7 +153,7 @@ window.HALIFAX_WEBSITE_FEED_SIGNALS = {
       "feedUrl": "https://www.cafelunette.com/feed/",
       "mediaUrl": null,
       "publishedAt": "2026-04-08T15:42:52.000Z",
-      "observedAt": "2026-08-31T11:21:11.105Z",
+      "observedAt": "2026-09-01T14:41:53.778Z",
       "signalMatches": {},
       "sourceKind": "official_feed",
       "associationBasis": "unique_feed_link_from_official_website",
@@ -147,13 +164,13 @@ window.HALIFAX_WEBSITE_FEED_SIGNALS = {
       "restaurantId": "osm-node-10038454787-bird-s-nest-cafe",
       "restaurantName": "Bird's Nest Cafe",
       "platform": "website_feed",
-      "title": "Five Things to Do in Halifax This Spring (We'll Handle Breakfast)",
+      "title": "Five Things to Do in Halifax (We'll Handle Breakfast)",
       "excerpt": "Spring is our favourite season at Bird's Nest Cafe. The city comes back to life, and so does our dining room. Here's how we'd spend it. We've been on Barrington Street long enough to know what a Halifax spring feels like. The harbour fog lifts a little earlier each morning. Regulars start lingering over their coffee instead of rushing out the door. Someone always comes in and says, \"finally\" — like the season is a...",
       "postUrl": "https://www.birdsnesthalifax.com/post/five-things-to-do-in-halifax-this-spring-we-ll-handle-breakfast",
       "feedUrl": "https://www.birdsnesthalifax.com/blog-feed.xml",
       "mediaUrl": "https://static.wixstatic.com/media/110dc9_538c90ecfee14537aa62b59c533c2b01~mv2.jpeg/v1/fit/w_1000,h_1000,al_c,q_80/file.png",
       "publishedAt": "2026-04-02T11:40:44.000Z",
-      "observedAt": "2026-08-31T11:21:09.521Z",
+      "observedAt": "2026-09-01T14:41:53.777Z",
       "signalMatches": {
         "brunch": [
           "breakfast"
@@ -174,7 +191,7 @@ window.HALIFAX_WEBSITE_FEED_SIGNALS = {
       "feedUrl": "https://www.cafelunette.com/feed/",
       "mediaUrl": null,
       "publishedAt": "2026-04-01T19:30:03.000Z",
-      "observedAt": "2026-08-31T11:21:11.105Z",
+      "observedAt": "2026-09-01T14:41:53.778Z",
       "signalMatches": {
         "specials": [
           "offer",
@@ -199,7 +216,7 @@ window.HALIFAX_WEBSITE_FEED_SIGNALS = {
       "feedUrl": "https://www.shige.ca/blog-feed.xml",
       "mediaUrl": "https://static.wixstatic.com/media/445de3_8cde890dee564907b10a3db536a75443~mv2.png/v1/fit/w_1000,h_1000,al_c,q_80/file.png",
       "publishedAt": "2026-04-01T15:01:16.000Z",
-      "observedAt": "2026-08-31T11:21:09.567Z",
+      "observedAt": "2026-09-01T14:42:03.336Z",
       "signalMatches": {},
       "sourceKind": "official_feed",
       "associationBasis": "unique_feed_link_from_official_website",
@@ -216,7 +233,7 @@ window.HALIFAX_WEBSITE_FEED_SIGNALS = {
       "feedUrl": "https://www.cafelunette.com/feed/",
       "mediaUrl": null,
       "publishedAt": "2026-03-26T15:51:56.000Z",
-      "observedAt": "2026-08-31T11:21:11.105Z",
+      "observedAt": "2026-09-01T14:41:53.778Z",
       "signalMatches": {},
       "sourceKind": "official_feed",
       "associationBasis": "unique_feed_link_from_official_website",
@@ -235,7 +252,7 @@ window.HALIFAX_WEBSITE_FEED_SIGNALS = {
       "feedUrl": "https://www.cafelunette.com/feed/",
       "mediaUrl": null,
       "publishedAt": "2026-05-11T15:04:47.000Z",
-      "observedAt": "2026-08-31T11:21:11.105Z",
+      "observedAt": "2026-09-01T14:41:53.778Z",
       "signalMatches": {
         "openings": [
           "now open"
@@ -260,7 +277,7 @@ window.HALIFAX_WEBSITE_FEED_SIGNALS = {
       "feedUrl": "https://www.cafelunette.com/feed/",
       "mediaUrl": null,
       "publishedAt": "2026-04-28T18:12:21.000Z",
-      "observedAt": "2026-08-31T11:21:11.105Z",
+      "observedAt": "2026-09-01T14:41:53.778Z",
       "signalMatches": {
         "brunch": [
           "brunch"
@@ -275,13 +292,13 @@ window.HALIFAX_WEBSITE_FEED_SIGNALS = {
       "restaurantId": "osm-node-10038454787-bird-s-nest-cafe",
       "restaurantName": "Bird's Nest Cafe",
       "platform": "website_feed",
-      "title": "Five Things to Do in Halifax This Spring (We'll Handle Breakfast)",
+      "title": "Five Things to Do in Halifax (We'll Handle Breakfast)",
       "excerpt": "Spring is our favourite season at Bird's Nest Cafe. The city comes back to life, and so does our dining room. Here's how we'd spend it. We've been on Barrington Street long enough to know what a Halifax spring feels like. The harbour fog lifts a little earlier each morning. Regulars start lingering over their coffee instead of rushing out the door. Someone always comes in and says, \"finally\" — like the season is a...",
       "postUrl": "https://www.birdsnesthalifax.com/post/five-things-to-do-in-halifax-this-spring-we-ll-handle-breakfast",
       "feedUrl": "https://www.birdsnesthalifax.com/blog-feed.xml",
       "mediaUrl": "https://static.wixstatic.com/media/110dc9_538c90ecfee14537aa62b59c533c2b01~mv2.jpeg/v1/fit/w_1000,h_1000,al_c,q_80/file.png",
       "publishedAt": "2026-04-02T11:40:44.000Z",
-      "observedAt": "2026-08-31T11:21:09.521Z",
+      "observedAt": "2026-09-01T14:41:53.777Z",
       "signalMatches": {
         "brunch": [
           "breakfast"
@@ -302,7 +319,7 @@ window.HALIFAX_WEBSITE_FEED_SIGNALS = {
       "feedUrl": "https://www.cafelunette.com/feed/",
       "mediaUrl": null,
       "publishedAt": "2026-04-01T19:30:03.000Z",
-      "observedAt": "2026-08-31T11:21:11.105Z",
+      "observedAt": "2026-09-01T14:41:53.778Z",
       "signalMatches": {
         "specials": [
           "offer",
@@ -323,31 +340,6 @@ window.HALIFAX_WEBSITE_FEED_SIGNALS = {
       "restaurantId": "osm-node-11612206582-swaad-sagaa-indian-cuisine-incorporated",
       "feedUrl": "https://www.swaadsagaa.com/https&#x3A;&#x2F;&#x2F;66e24f9de1f04b5eb55b8639ef3fb0b2.elf.site",
       "reason": "http_404"
-    },
-    {
-      "restaurantId": "osm-node-11526055082-noggins-coburg",
-      "feedUrl": "https://nogginsfarm.ca/feed/",
-      "reason": "http_403"
-    },
-    {
-      "restaurantId": "osm-node-11526055082-noggins-coburg",
-      "feedUrl": "https://nogginsfarm.ca/comments/feed/",
-      "reason": "http_403"
-    },
-    {
-      "restaurantId": "osm-node-8841366531-jungle-jim-s",
-      "feedUrl": "https://junglejims.ca/feedback",
-      "reason": "http_403"
-    },
-    {
-      "restaurantId": "osm-node-9128392205-king-of-donair",
-      "feedUrl": "https://www.kingofdonair.ca/our-story/feed/",
-      "reason": "http_403"
-    },
-    {
-      "restaurantId": "osm-node-4428984290-stone-pizza",
-      "feedUrl": "https://stonepizza.ca/feed/",
-      "reason": "timeout"
     }
   ]
 };

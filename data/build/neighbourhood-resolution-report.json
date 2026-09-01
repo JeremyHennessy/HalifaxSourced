@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-01T13:44:22.326Z",
+  "generatedAt": "2026-09-01T14:36:17.015Z",
   "policy": "Only location-specific matches supported by compatible identity plus address, official domain, phone or reviewed discovery evidence are published. Conflicts and name-only matches remain queued.",
   "downtownDartmouth": {
     "candidates": 48,
@@ -51,7 +51,7 @@
         "menu": false,
         "hours": true,
         "phone": true,
-        "socialProfiles": false,
+        "socialProfiles": true,
         "duplicateConflictCleared": true
       }
     },
@@ -70,7 +70,7 @@
         "coordinates": false,
         "currentStatus": true,
         "officialWebsite": true,
-        "menu": false,
+        "menu": true,
         "hours": true,
         "phone": false,
         "socialProfiles": false,
@@ -162,7 +162,7 @@
         "menu": false,
         "hours": true,
         "phone": true,
-        "socialProfiles": false,
+        "socialProfiles": true,
         "duplicateConflictCleared": true
       }
     },
@@ -595,10 +595,10 @@
     "coordinates": 4,
     "currentStatus": 0,
     "officialWebsite": 2,
-    "menu": 8,
+    "menu": 7,
     "hours": 4,
     "phone": 3,
-    "socialProfiles": 7,
+    "socialProfiles": 5,
     "duplicateConflictCleared": 0
   },
   "failures": []

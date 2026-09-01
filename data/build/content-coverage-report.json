@@ -1,8 +1,8 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-01T13:45:12.302Z",
-  "sourceCommitSha": "cd4c1e311a91f098322770f9d5e2da7a9b46cd5a",
-  "baselineCommitHint": "cd4c1e311a91f098322770f9d5e2da7a9b46cd5a",
+  "generatedAt": "2026-09-01T14:43:28.082Z",
+  "sourceCommitSha": "286f4936a7607d3456c6abe361f98d191c4535cb",
+  "baselineCommitHint": "286f4936a7607d3456c6abe361f98d191c4535cb",
   "definitions": {
     "canonicalPlaces": "Current user-facing merge of catalog restaurants plus reviewed discovery records, matching the app's existing name-based discovery merge behavior.",
     "verifiedOfficialWebsite": "Official-site fetch returned a successful HTTP status or the first-party discovery layer successfully fetched the restaurant-owned site.",
@@ -14,36 +14,38 @@
     "duplicateEventCount": "Additional current event records sharing normalized title, local date, and normalized venue/address key.",
     "canonicalRestaurantsWithStructuredUpcomingEvents": "Distinct canonical restaurant IDs that have one or more upcoming structured event records. This is a place count.",
     "upcomingStructuredRestaurantEventRecords": "Individual upcoming structured restaurant event records, including multiple dated events for the same restaurant. This is an event count.",
-    "lifecycleStatus": "Reviewed restaurant operating state. Inactive records remain addressable as archived details but are excluded from active discovery, menus, specials and maps."
+    "lifecycleStatus": "Reviewed restaurant operating state. Inactive records remain addressable as archived details but are excluded from active discovery, menus, specials and maps.",
+    "structuredFactReconciliation": "Phone, hours, menu, reservation, ordering, patio and accessibility coverage includes accepted restaurant-owned structured facts in addition to the original baseline layers.",
+    "structuredSpecialReconciliation": "Special coverage includes normalized source-backed structured specials. Only records with current verification inside the configured freshness window increase verified-current special coverage."
   },
   "restaurantCoverage": {
-    "totalCanonicalPlaces": 749,
-    "activeCanonicalPlaces": 748,
+    "totalCanonicalPlaces": 750,
+    "activeCanonicalPlaces": 749,
     "archivedLifecyclePlaces": 1,
     "curatedRestaurants": 10,
-    "osmRestaurants": 735,
+    "osmRestaurants": 736,
     "locallyDiscoveredRestaurants": 12,
-    "catalogMergedRestaurants": 739,
-    "withOfficialWebsite": 301,
-    "withVerifiedOfficialWebsite": 223,
+    "catalogMergedRestaurants": 740,
+    "withOfficialWebsite": 302,
+    "withVerifiedOfficialWebsite": 240,
     "withInspectionMatch": 496,
-    "withMenuLink": 153,
-    "withVerifiedMenuLink": 93,
-    "withSpecials": 55,
-    "withVerifiedSpecials": 28,
-    "withReservationLink": 58,
-    "withOnlineOrderingLink": 78,
-    "withEventEvidence": 42,
+    "withMenuLink": 166,
+    "withVerifiedMenuLink": 130,
+    "withSpecials": 58,
+    "withVerifiedSpecials": 37,
+    "withReservationLink": 63,
+    "withOnlineOrderingLink": 80,
+    "withEventEvidence": 47,
     "withStructuredUpcomingEvents": 2,
-    "withAtLeastOneSocialProfile": 146,
-    "withAnySocialOrLinkHub": 146,
+    "withAtLeastOneSocialProfile": 158,
+    "withAnySocialOrLinkHub": 158,
     "socialByPlatform": {
-      "instagram": 135,
-      "facebook": 117,
-      "tiktok": 13,
+      "instagram": 146,
+      "facebook": 139,
+      "tiktok": 16,
       "threads": 0,
-      "x": 59,
-      "youtube": 12,
+      "x": 64,
+      "youtube": 13,
       "linkedin": 6,
       "bluesky": 2,
       "pinterest": 3,
@@ -55,13 +57,13 @@
       "bento": 0
     },
     "withLinkHub": 0,
-    "withPhone": 264,
-    "withStructuredOrSourceHours": 238,
-    "withCoordinates": 738,
-    "withNeighbourhood": 749,
-    "withCuisineClassification": 749,
+    "withPhone": 278,
+    "withStructuredOrSourceHours": 245,
+    "withCoordinates": 739,
+    "withNeighbourhood": 750,
+    "withCuisineClassification": 750,
     "withAccessibilityInformation": 229,
-    "withPatioInformation": 39,
+    "withPatioInformation": 41,
     "withUsableMedia": 73,
     "lifecycle": {
       "active": 11,
@@ -69,10 +71,10 @@
       "permanently_closed": 1,
       "moved": 0,
       "coming_soon": 0,
-      "unknown": 737
+      "unknown": 738
     },
     "freshness": {
-      "lt7Days": 748,
+      "lt7Days": 749,
       "days7To30": 1,
       "days30To90": 0,
       "gt90Days": 0,
@@ -81,40 +83,65 @@
     "staleRestaurantRecords": 0,
     "currentResolutionRisks": {
       "discoveryNameOnlyMerges": 2
+    },
+    "structuredFactLayer": {
+      "generatedAt": "2026-09-01T14:18:19.035Z",
+      "checkedPlaces": 221,
+      "sourceFailures": 0,
+      "records": 168,
+      "hours": 13,
+      "phone": 73,
+      "email": 8,
+      "address": 29,
+      "features": 127,
+      "menus": 138,
+      "reservations": 50,
+      "ordering": 77
+    },
+    "structuredSpecialLayer": {
+      "generatedAt": "2026-09-01T14:42:39.396Z",
+      "count": 80,
+      "verifiedCurrent": 49,
+      "recurringVerify": 5,
+      "sourceLeads": 20,
+      "stale": 6,
+      "expired": 0,
+      "orphanSourceCount": 0
     }
   },
   "restaurantCoveragePercent": {
-    "officialWebsite": 40.2,
-    "verifiedOfficialWebsite": 29.8,
-    "inspection": 66.2,
-    "menu": 20.4,
-    "verifiedMenu": 12.4,
-    "specials": 7.3,
-    "verifiedSpecials": 3.7,
-    "reservations": 7.7,
-    "ordering": 10.4,
-    "events": 5.6,
+    "officialWebsite": 40.3,
+    "verifiedOfficialWebsite": 32,
+    "inspection": 66.1,
+    "menu": 22.1,
+    "verifiedMenu": 17.3,
+    "specials": 7.7,
+    "verifiedSpecials": 4.9,
+    "reservations": 8.4,
+    "ordering": 10.7,
+    "events": 6.3,
     "structuredUpcomingEvents": 0.3,
-    "social": 19.5,
-    "phone": 35.2,
-    "hours": 31.8,
+    "social": 21.1,
+    "phone": 37.1,
+    "hours": 32.7,
     "coordinates": 98.5,
     "neighbourhood": 100,
     "cuisine": 100,
-    "accessibility": 30.6,
-    "patio": 5.2,
-    "media": 9.7
+    "accessibility": 30.5,
+    "patio": 5.5,
+    "media": 9.7,
+    "linkHub": 0
   },
   "socialAudit": {
-    "placesWithSocial": 146,
+    "placesWithSocial": 158,
     "placesWithLinkHub": 0,
     "platformPlaceCounts": {
-      "instagram": 135,
-      "facebook": 117,
-      "tiktok": 13,
+      "instagram": 146,
+      "facebook": 139,
+      "tiktok": 16,
       "threads": 0,
-      "x": 59,
-      "youtube": 12,
+      "x": 64,
+      "youtube": 13,
       "linkedin": 6,
       "bluesky": 2,
       "pinterest": 3,
@@ -125,45 +152,15 @@
       "campsite": 0,
       "bento": 0
     },
-    "profileAssociations": 352,
-    "sharedProfileKeys": 24,
-    "sharedBrandOnlyPlaces": 24,
+    "profileAssociations": 410,
+    "sharedProfileKeys": 39,
+    "sharedBrandOnlyPlaces": 32,
     "candidatePlacesAwaitingVerification": 0,
     "staleSocialVerificationPlaces": 0,
     "noWebsitePlaces": 448,
-    "websiteButNoSocialPlaces": 157,
+    "websiteButNoSocialPlaces": 146,
     "priorityGapQueue": {
       "websiteButNoSocial": [
-        {
-          "id": "bar-kismet",
-          "name": "Bar Kismet",
-          "website": "https://barkismet.com/"
-        },
-        {
-          "id": "the-bicycle-thief",
-          "name": "The Bicycle Thief",
-          "website": "https://bicyclethief.ca/"
-        },
-        {
-          "id": "the-press-gang",
-          "name": "The Press Gang",
-          "website": "https://thepressgang.ca/"
-        },
-        {
-          "id": "the-narrows",
-          "name": "The Narrows Public House",
-          "website": "https://www.thenarrowspublichouse.ca/"
-        },
-        {
-          "id": "2-doors-down",
-          "name": "2 Doors Down",
-          "website": "https://go2doorsdown.com/"
-        },
-        {
-          "id": "battery-park",
-          "name": "Battery Park Beer Bar",
-          "website": "https://batterypark.ca/"
-        },
         {
           "id": "dear-friend",
           "name": "Dear Friend Bar",
@@ -193,6 +190,11 @@
           "id": "osm-node-4474954245-bai-wei-grill-bar",
           "name": "Bai Wei Grill Bar",
           "website": "http://baiweigrillbar.com"
+        },
+        {
+          "id": "osm-node-10665783054-ben-and-florentine",
+          "name": "Ben & Florentine",
+          "website": "https://benetflorentine.com/"
         },
         {
           "id": "osm-node-13141457102-bitter-end-martini-bar-and-restaurant",
@@ -295,11 +297,6 @@
           "website": "https://dharmasushi.ca"
         },
         {
-          "id": "osm-node-11551984275-doraku",
-          "name": "Doraku",
-          "website": "https://doraku.yolasite.com"
-        },
-        {
           "id": "osm-node-4797459277-downtown-pizza",
           "name": "Downtown Pizza",
           "website": "https://downtownpizza.ca/"
@@ -370,11 +367,6 @@
           "website": "http://www.thegreatwall.ca/"
         },
         {
-          "id": "osm-node-2714920436-greco-pizza",
-          "name": "Greco Pizza",
-          "website": "https://greco.ca/"
-        },
-        {
           "id": "osm-way-88879193-henry-house",
           "name": "Henry House",
           "website": "http://henryhouse.ca/"
@@ -385,19 +377,9 @@
           "website": "http://www.heppys.com"
         },
         {
-          "id": "osm-node-7393868699-hop-sing-restaurant",
-          "name": "Hop Sing Restaurant",
-          "website": "https://hopsingrestaurant.ca/"
-        },
-        {
           "id": "osm-node-4421959790-humani-t",
           "name": "Humani-T",
           "website": "https://humanitea.com/"
-        },
-        {
-          "id": "osm-node-7674251740-in-spring-asian-fusion-cuisine",
-          "name": "in spring asian fusion cuisine",
-          "website": "https://www.inspringhotpot.com/"
         },
         {
           "id": "osm-node-13141377001-india-paradise",
@@ -455,11 +437,6 @@
           "website": "http://kennyspizzakearneylake.ca/"
         },
         {
-          "id": "osm-node-3104142670-king-of-donair",
-          "name": "King of Donair",
-          "website": "https://www.kingofdonair.ca"
-        },
-        {
           "id": "osm-way-460939327-la-piazza-ristorante",
           "name": "La Piazza Ristorante",
           "website": "https://www.lapiazzarestocafe.com/"
@@ -498,11 +475,6 @@
           "id": "osm-node-9102296735-masala-delight",
           "name": "Masala Delight",
           "website": "https://masaladelight.com"
-        },
-        {
-          "id": "osm-node-2721720399-mashawee-mediterranean-grill",
-          "name": "Mashawee Mediterranean Grill",
-          "website": "https://www.mashaweemediterraneangrill.ca/"
         },
         {
           "id": "osm-node-13286396472-matadora-tapas-bar",
@@ -633,6 +605,61 @@
           "id": "osm-node-13073162601-pizza-pizza",
           "name": "Pizza Pizza",
           "website": "https://www.pizzapizza.ca/"
+        },
+        {
+          "id": "osm-node-5584342024-pleasant-street-diner",
+          "name": "Pleasant Street Diner",
+          "website": "https://pleasantstdiner.com"
+        },
+        {
+          "id": "osm-node-8376551845-portland-street-creperie",
+          "name": "Portland Street Creperie",
+          "website": "http://www.portlandstreetcreperie.com/"
+        },
+        {
+          "id": "osm-node-4417927494-primal-kitchen",
+          "name": "Primal Kitchen",
+          "website": "https://www.primalhfx.ca/"
+        },
+        {
+          "id": "osm-node-3801688860-revana-pizza",
+          "name": "Revana Pizza",
+          "website": "https://dartmouth.revanapizza.ca/"
+        },
+        {
+          "id": "osm-node-13073155301-rollz-ice-cream",
+          "name": "Rollz Ice Cream",
+          "website": "https://rollzicecream.ca/"
+        },
+        {
+          "id": "osm-node-11726396167-rush-hour-pizza",
+          "name": "Rush Hour Pizza",
+          "website": "https://rushhourpizza.ca/"
+        },
+        {
+          "id": "osm-node-9652977384-saffron-multi-cuisine-indian-restaurant",
+          "name": "Saffron Multi Cuisine Indian Restaurant",
+          "website": "https://saffron-indian-restaurant.com/"
+        },
+        {
+          "id": "osm-node-8443747544-saj-house",
+          "name": "Saj House",
+          "website": "https://www.sajhouse.ca/"
+        },
+        {
+          "id": "osm-node-7674268236-shiraz",
+          "name": "Shiraz",
+          "website": "https://www.shirazhalifax.ca/"
+        },
+        {
+          "id": "osm-node-3789756557-smiling-goat",
+          "name": "Smiling Goat",
+          "website": "https://www.smilinggoat.ca/locations/"
+        },
+        {
+          "id": "osm-node-7082566320-springhouse-market",
+          "name": "Springhouse Market",
+          "website": "https://eatspringhouse.com"
         }
       ],
       "noWebsite": [
@@ -679,7 +706,7 @@
         {
           "id": "osm-node-3790789371-agricola-street-brasserie",
           "name": "Agricola Street Brasserie",
-          "neighborhood": "Downtown"
+          "neighborhood": "North End"
         },
         {
           "id": "osm-node-2721708499-alex-oh-sushi-rolls",
@@ -699,7 +726,7 @@
         {
           "id": "osm-node-6299280970-alexandra-s-pizza",
           "name": "Alexandra's Pizza",
-          "neighborhood": "North Woodside"
+          "neighborhood": "Dartmouth"
         },
         {
           "id": "osm-node-4797021954-alexandras-pizza",
@@ -709,7 +736,7 @@
         {
           "id": "osm-node-2624375974-alter-egos",
           "name": "Alter Egos",
-          "neighborhood": "Downtown"
+          "neighborhood": "North End"
         },
         {
           "id": "osm-node-3796325157-angelique-french-bakery-and-cafe",
@@ -724,7 +751,7 @@
         {
           "id": "osm-node-30899821-arirang",
           "name": "Arirang",
-          "neighborhood": "Clayton Park West"
+          "neighborhood": "Armdale / Fairview"
         },
         {
           "id": "osm-node-2718816606-as-you-like-it",
@@ -739,7 +766,7 @@
         {
           "id": "osm-node-12986790096-au-liban",
           "name": "Au Liban",
-          "neighborhood": "Dartmouth"
+          "neighborhood": "Downtown"
         },
         {
           "id": "osm-node-5863968672-baan-thai",
@@ -759,7 +786,7 @@
         {
           "id": "osm-node-5125389651-baton-rouge",
           "name": "Baton Rouge",
-          "neighborhood": "Downtown"
+          "neighborhood": "Waterfront"
         },
         {
           "id": "osm-way-372779849-bearly-s-house-of-blues",
@@ -774,7 +801,7 @@
         {
           "id": "osm-node-11526163886-bento-sushi",
           "name": "Bento Sushi",
-          "neighborhood": "Downtown"
+          "neighborhood": "South End"
         },
         {
           "id": "osm-node-2714920433-best-choice-chinese-food",
@@ -784,12 +811,12 @@
         {
           "id": "osm-node-8187610240-bi-one",
           "name": "Bi One",
-          "neighborhood": "Downtown"
+          "neighborhood": "South End"
         },
         {
           "id": "osm-node-9074868976-big-al-s-pizza",
           "name": "Big Al's Pizza",
-          "neighborhood": "Downtown"
+          "neighborhood": "North End"
         },
         {
           "id": "osm-node-5017275565-blooming-cafe",
@@ -809,7 +836,7 @@
         {
           "id": "osm-node-886758495-boneheads-bbq",
           "name": "Boneheads BBQ",
-          "neighborhood": "Dartmouth"
+          "neighborhood": "South End"
         },
         {
           "id": "osm-node-4401772591-boomburger",
@@ -824,7 +851,7 @@
         {
           "id": "osm-node-7139174643-booster-juice",
           "name": "Booster Juice",
-          "neighborhood": "West End"
+          "neighborhood": "North End"
         },
         {
           "id": "osm-node-12007395292-booster-juice",
@@ -854,12 +881,12 @@
         {
           "id": "osm-node-13073337403-brawta-jamaican-jerk-hut",
           "name": "Brawta Jamaican Jerk Hut",
-          "neighborhood": "Dartmouth"
+          "neighborhood": "Downtown"
         },
         {
           "id": "osm-node-4420899697-brenton-grill-and-wine-bar",
           "name": "Brenton Grill & Wine bar",
-          "neighborhood": "Downtown"
+          "neighborhood": "South End"
         },
         {
           "id": "osm-node-815496300-brewdebaker-s",
@@ -889,7 +916,7 @@
         {
           "id": "osm-node-1920486474-burger-king",
           "name": "Burger King",
-          "neighborhood": "West End"
+          "neighborhood": "North End"
         },
         {
           "id": "osm-way-171149719-burger-king",
@@ -909,12 +936,12 @@
         {
           "id": "osm-node-11532103797-burrito-jax",
           "name": "Burrito Jax",
-          "neighborhood": "Kempt Road Commercial District"
+          "neighborhood": "North End"
         },
         {
           "id": "osm-node-6031036960-buta-ramen",
           "name": "Buta Ramen",
-          "neighborhood": "Downtown"
+          "neighborhood": "South End"
         },
         {
           "id": "osm-node-4952843922-byblos-lebanese-restaurant",
@@ -924,7 +951,7 @@
         {
           "id": "osm-node-13104234102-byron",
           "name": "Byron",
-          "neighborhood": "Downtown"
+          "neighborhood": "North End"
         },
         {
           "id": "osm-node-5150636926-cafe-98",
@@ -934,12 +961,12 @@
         {
           "id": "osm-node-3790838157-cafe-aroma-latino",
           "name": "Cafe Aroma Latino",
-          "neighborhood": "Halifax Peninsula"
+          "neighborhood": "North End"
         },
         {
           "id": "osm-node-475880058-cafe-chianti",
           "name": "Cafe Chianti",
-          "neighborhood": "Downtown"
+          "neighborhood": "South End"
         },
         {
           "id": "osm-node-12838650881-cafe-du-port",
@@ -959,17 +986,17 @@
         {
           "id": "osm-node-475876899-cafe-ristretto",
           "name": "Cafe Ristretto",
-          "neighborhood": "Dartmouth"
+          "neighborhood": "Waterfront"
         },
         {
           "id": "osm-node-5647941370-cafe-tayaiki-52",
           "name": "Café Tayaiki 52",
-          "neighborhood": "Downtown"
+          "neighborhood": "North End"
         },
         {
           "id": "osm-node-13073317016-caffe-lucca",
           "name": "Caffe Lucca",
-          "neighborhood": "Dartmouth"
+          "neighborhood": "Downtown"
         },
         {
           "id": "osm-node-12984673749-cannery-kitchen-and-social",
@@ -984,7 +1011,7 @@
         {
           "id": "osm-node-7196212747-cempoal-de-la-calavera-negra",
           "name": "Cempoal de la Calavera Negra",
-          "neighborhood": "Downtown"
+          "neighborhood": "North End"
         },
         {
           "id": "osm-node-11609580961-cha-baa-thai",
@@ -999,7 +1026,7 @@
         {
           "id": "osm-node-5134046822-chain-yard-urban-cidery",
           "name": "Chain Yard Urban Cidery",
-          "neighborhood": "Bloomfield"
+          "neighborhood": "North End"
         },
         {
           "id": "osm-node-5160893922-chatime",
@@ -1044,17 +1071,17 @@
         {
           "id": "osm-node-12444860718-city-shawarma",
           "name": "City Shawarma",
-          "neighborhood": "Clayton Park West"
+          "neighborhood": "Armdale / Fairview"
         },
         {
           "id": "osm-node-13098723101-coastal-curry",
           "name": "Coastal Curry",
-          "neighborhood": "Dartmouth"
+          "neighborhood": "Downtown"
         },
         {
           "id": "osm-node-13958623779-coffee-street",
           "name": "Coffee Street",
-          "neighborhood": "Dartmouth"
+          "neighborhood": "Halifax Peninsula"
         },
         {
           "id": "osm-node-815416385-cora-s",
@@ -1069,12 +1096,12 @@
         {
           "id": "osm-node-12718612064-costco-food-court",
           "name": "Costco Food Court",
-          "neighborhood": "Dartmouth"
+          "neighborhood": "Halifax Peninsula"
         },
         {
           "id": "osm-way-651356633-cosy-snack-bar",
           "name": "Cosy Snack Bar",
-          "neighborhood": "West End"
+          "neighborhood": "North End"
         },
         {
           "id": "osm-node-12496044778-cottage-cafe",
@@ -1089,7 +1116,7 @@
         {
           "id": "osm-node-11165031880-cow-s",
           "name": "Cow's",
-          "neighborhood": "Dartmouth"
+          "neighborhood": "Waterfront"
         },
         {
           "id": "osm-node-12893501701-cows-cable-wharf",
@@ -1104,12 +1131,12 @@
         {
           "id": "osm-node-5139886025-crepe-crepe-cafe",
           "name": "Crepe Crepe Cafe",
-          "neighborhood": "Dartmouth"
+          "neighborhood": "South End"
         },
         {
           "id": "osm-node-1689418194-da-zero-ristorante",
           "name": "Da Zero Ristorante",
-          "neighborhood": "Downtown"
+          "neighborhood": "South End"
         },
         {
           "id": "osm-node-12908626114-dairy-bar",
@@ -1137,23 +1164,25 @@
           "neighborhood": "Downtown"
         }
       ]
-    }
+    },
+    "reconciledFromAcceptedStructuredLayers": true,
+    "reconciledAt": "2026-09-01T14:43:28.081Z"
   },
   "eventCoverage": {
-    "currentCityEvents": 179,
-    "allStoredCityEvents": 187,
+    "currentCityEvents": 193,
+    "allStoredCityEvents": 193,
     "cityEventSources": 15,
     "bySource": {
       "Tourism Nova Scotia Events": 23,
-      "Halifax Public Libraries": 2,
-      "Alderney Landing": 1,
-      "Halifax Convention Centre": 1,
-      "The Carleton": 8,
+      "Halifax Public Libraries": 1,
+      "Alderney Landing": 3,
+      "Halifax Convention Centre": 9,
       "Bedford Public Library": 6,
-      "Woodlawn Public Library": 4,
-      "Alderney Gate Public Library": 5,
+      "Woodlawn Public Library": 6,
+      "Alderney Gate Public Library": 7,
+      "The Carleton": 10,
       "Scotiabank Centre": 31,
-      "Light House Arts Centre": 19,
+      "Light House Arts Centre": 18,
       "HFX Wanderers 2026 Home Schedule": 5,
       "Halifax Tides 2026 Home Schedule": 4,
       "Halifax Mooseheads Home Schedule": 32,
@@ -1161,58 +1190,59 @@
       "Neptune Theatre": 3
     },
     "byCategory": {
-      "Arts": 45,
-      "Comedy": 4,
+      "Arts": 43,
+      "Comedy": 3,
       "Sports": 61,
-      "Festivals": 10,
-      "Community": 25,
-      "Music": 57,
-      "Outdoor": 1,
-      "Other": 2,
-      "Food & Drink": 3
+      "Festivals": 18,
+      "Community": 30,
+      "Outdoor": 2,
+      "Music": 59,
+      "Food & Drink": 4,
+      "Other": 2
     },
     "byMunicipality": {
-      "Halifax": 163,
-      "Dartmouth": 10,
+      "Halifax": 171,
+      "Dartmouth": 16,
       "Bedford": 6
     },
-    "withVenueRestaurantNameMatch": 8,
+    "withVenueRestaurantNameMatch": 10,
     "withCoordinates": 0,
-    "withTicketLink": 179,
+    "withTicketLink": 193,
     "withPrice": 11,
     "freeEvents": 0,
     "duplicateEventCount": 0,
-    "structuredRestaurantEvents": 20,
-    "structuredUpcomingRestaurantEvents": 18,
+    "structuredRestaurantEvents": 21,
+    "structuredUpcomingRestaurantEvents": 21,
     "canonicalRestaurantsWithStructuredUpcomingEvents": 2,
-    "upcomingStructuredRestaurantEventRecords": 18,
-    "expiredStructuredRestaurantEvents": 2,
-    "next7Days": 18,
-    "next30Days": 48
+    "upcomingStructuredRestaurantEventRecords": 21,
+    "expiredStructuredRestaurantEvents": 0,
+    "next7Days": 22,
+    "next30Days": 64
   },
   "discoveryCoverage": {
     "directoryRecords": 470,
-    "directoryNewToCatalog": 378,
-    "openingWatchLeads": 0,
+    "directoryNewToCatalog": 376,
+    "openingWatchLeads": 12,
     "reviewedDiscoveredRestaurants": 12
   },
   "sourceFailures": {
-    "officialWebsiteChecks": 72,
-    "firstPartyWebsiteDiscovery": 73,
-    "verifiedSourcePages": 9,
-    "structuredRestaurantEvents": 8,
-    "websiteFeeds": 6,
-    "socialApis": 0,
+    "officialWebsiteChecks": 61,
+    "firstPartyWebsiteDiscovery": 62,
+    "verifiedSourcePages": 21,
+    "structuredRestaurantEvents": 9,
+    "websiteFeeds": 1,
+    "socialApis": 3,
     "cityEventSources": 0,
     "openingWatchSources": 0,
-    "restaurantDirectorySources": 0
+    "restaurantDirectorySources": 0,
+    "structuredPlaceFacts": 0
   },
   "credentials": {
-    "facebook": "not_promoted",
-    "instagram": "not_promoted"
+    "facebook": "missing",
+    "instagram": "missing"
   },
   "unresolved": {
-    "sharedSocialAssociations": 24,
+    "sharedSocialAssociations": 39,
     "possibleDuplicateCurrentEvents": 0,
     "staleRestaurantRecords": 0,
     "unknownFreshnessRestaurantRecords": 0

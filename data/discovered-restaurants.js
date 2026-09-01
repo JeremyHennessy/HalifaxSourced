@@ -38,7 +38,7 @@ window.HALIFAX_DISCOVERED_RESTAURANTS = [
     ],
     "discoveryReview": {
       "approvedByOverride": true,
-      "sourceLeadObserved": false,
+      "sourceLeadObserved": true,
       "reviewNote": "Provisional discovery listing. Replace coarse location and local-opening evidence when restaurant-owned or authoritative directory evidence is found."
     }
   },

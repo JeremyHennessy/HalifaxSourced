@@ -1,79 +1,79 @@
 {
-  "generatedAt": "2026-09-01T13:44:21.971Z",
+  "generatedAt": "2026-09-01T14:44:04.071Z",
   "socialPlatformRegistryVersion": 1,
   "counts": {
-    "firstPartyRecords": 223,
-    "socialProfiles": 347,
+    "firstPartyRecords": 239,
+    "socialProfiles": 405,
     "platformCounts": {
-      "facebook": 116,
-      "instagram": 133,
-      "youtube": 12,
-      "x": 61,
-      "tiktok": 13,
+      "instagram": 150,
+      "x": 66,
+      "facebook": 147,
+      "tiktok": 16,
       "pinterest": 3,
+      "youtube": 14,
       "linkedin": 7,
       "bluesky": 2
     },
     "linkHubs": 0,
     "linkHubCounts": {},
     "associationBasisCounts": {
-      "linked_from_official_website": 335,
-      "jsonld_sameAs": 10,
-      "shared_brand_profile": 1,
-      "linked_from_official_location_page": 1
+      "linked_from_official_website": 391,
+      "jsonld_sameAs": 7,
+      "shared_brand_profile": 2,
+      "linked_from_official_location_page": 5
     },
-    "relatedLinks": 755,
+    "relatedLinks": 728,
     "relatedKindCounts": {
-      "ordering": 174,
-      "reservations": 115,
-      "menu": 407,
-      "events": 54,
-      "newsletter": 4,
+      "menu": 466,
+      "reservations": 73,
+      "ordering": 115,
+      "events": 67,
+      "newsletter": 6,
       "tickets": 1
     },
-    "websiteFeeds": 124,
-    "uniqueRestaurantFeeds": 105,
-    "sharedFeedUrlsSkipped": 7,
-    "reviewedFeedsExcluded": 5,
+    "websiteFeeds": 135,
+    "uniqueRestaurantFeeds": 111,
+    "sharedFeedUrlsSkipped": 9,
+    "reviewedFeedsExcluded": 6,
     "websiteFeedSignals": 4,
-    "websiteFeedPosts": 11,
-    "websitePageIntelligence": 400,
-    "websitePageRestaurants": 142,
-    "uniqueRestaurantSocialProfiles": null,
-    "sharedProfileAssociationsSkipped": 0,
+    "websiteFeedPosts": 12,
+    "websitePageIntelligence": 622,
+    "websitePageRestaurants": 189,
+    "uniqueRestaurantSocialProfiles": 222,
+    "sharedProfileAssociationsSkipped": 75,
     "socialSignals": 0,
     "socialPosts": 0,
-    "recentSocialPosts": 150,
+    "recentSocialPosts": 211,
     "recentSocialPostCategories": {
-      "specials": 81,
+      "specials": 120,
       "openings": 2,
-      "menu": 33,
-      "happy_hour": 11,
-      "events": 7,
-      "reservations": 1,
-      "live_music": 8,
-      "general_update": 5,
-      "brunch": 2
+      "menu": 39,
+      "events": 11,
+      "happy_hour": 13,
+      "reservations": 4,
+      "live_music": 11,
+      "general_update": 7,
+      "brunch": 4
     },
     "recentSocialPostPlatforms": {
-      "official_page": 139,
-      "website_feed": 11
+      "official_page": 199,
+      "website_feed": 12
     }
   },
   "credentialState": {
-    "facebook": "not_promoted",
-    "instagram": "not_promoted"
+    "facebook": "missing",
+    "instagram": "missing"
   },
   "recentPostState": {
-    "generatedAt": "2026-09-01T13:44:21.225Z",
+    "generatedAt": "2026-09-01T14:42:23.563Z",
     "lookbackDays": 180,
     "sourceState": {
-      "websiteFeedsGeneratedAt": "2026-08-31T11:21:26.289Z",
-      "websitePagesGeneratedAt": "2026-09-01T13:27:22.619Z",
-      "metaSocialGeneratedAt": "2026-08-31T11:28:09.624Z",
+      "websiteFeedsGeneratedAt": "2026-09-01T14:42:07.720Z",
+      "websitePagesGeneratedAt": "2026-09-01T14:27:26.632Z",
+      "metaSocialGeneratedAt": "2026-09-01T14:27:53.585Z",
       "metaCredentialState": {
-        "facebook": "not_promoted",
-        "instagram": "not_promoted"
+        "facebook": "missing",
+        "instagram": "missing"
       },
       "metaProfilesAttempted": 0,
       "metaPostsObserved": 0
@@ -82,8 +82,18 @@
   "failures": [],
   "warnings": [
     {
+      "type": "facebook_api_credentials_missing"
+    },
+    {
+      "type": "instagram_api_credentials_missing"
+    },
+    {
+      "type": "shared_brand_social_profiles_excluded",
+      "count": 75
+    },
+    {
       "type": "shared_brand_feeds_excluded",
-      "count": 7
+      "count": 9
     }
   ]
 }

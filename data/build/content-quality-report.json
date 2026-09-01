@@ -1,56 +1,56 @@
 {
   "version": 2,
-  "generatedAt": "2026-09-01T13:45:12.484Z",
-  "coverageReportGeneratedAt": "2026-09-01T13:45:12.302Z",
+  "generatedAt": "2026-09-01T14:43:25.345Z",
+  "coverageReportGeneratedAt": "2026-09-01T14:42:54.516Z",
   "summary": {
-    "canonicalPlaces": 749,
-    "placesWithSocial": 146,
-    "structuredPlaceFactRecords": 162,
+    "canonicalPlaces": 750,
+    "placesWithSocial": 158,
+    "structuredPlaceFactRecords": 168,
     "structuredHours": 13,
-    "structuredMenus": 129,
-    "structuredReservations": 49,
-    "structuredOrdering": 74,
-    "structuredSpecials": 74,
+    "structuredMenus": 138,
+    "structuredReservations": 50,
+    "structuredOrdering": 77,
+    "structuredSpecials": 80,
     "verifiedCurrentSpecials": 49,
     "orphanSpecialSources": 0,
-    "cityEvents": 187,
-    "venueResolvedEvents": 135,
-    "organizerResolvedEvents": 161,
-    "restaurantLinkedEvents": 9,
-    "sourceFailures": 76,
+    "cityEvents": 193,
+    "venueResolvedEvents": 141,
+    "organizerResolvedEvents": 167,
+    "restaurantLinkedEvents": 10,
+    "sourceFailures": 62,
     "unresolvedPlaceCandidates": 207,
     "nameOnlyPlaceReviews": 33,
     "placeSourceConflicts": 44,
     "blockedEventSources": 0,
     "eventSourcesInAdapterReview": 4,
-    "brokenUrls": null,
-    "restrictedUrls": null,
-    "transientUrlFailures": null
+    "brokenUrls": 8,
+    "restrictedUrls": 4,
+    "transientUrlFailures": 35
   },
   "freshness": {
     "firstPartyRelationships": {
-      "lt7": 1102,
+      "lt7": 1133,
       "d7_30": 0,
       "d30_90": 0,
       "gt90": 0,
       "unknown": 0
     },
     "structuredPlaceFacts": {
-      "lt7": 162,
+      "lt7": 168,
       "d7_30": 0,
       "d30_90": 0,
       "gt90": 0,
       "unknown": 0
     },
     "specials": {
-      "lt7": 65,
-      "d7_30": 9,
+      "lt7": 80,
+      "d7_30": 0,
       "d30_90": 0,
       "gt90": 0,
       "unknown": 0
     },
     "events": {
-      "lt7": 187,
+      "lt7": 193,
       "d7_30": 0,
       "d30_90": 0,
       "gt90": 0,
@@ -5855,28 +5855,9 @@
   },
   "sourceHealth": {
     "failuresByLayer": {
-      "first_party": 73,
-      "structured_place_facts": 3
+      "first_party": 62
     },
     "failures": [
-      {
-        "layer": "structured_place_facts",
-        "restaurantId": "osm-node-11526055082-noggins-coburg",
-        "sourceUrl": "https://nogginsfarm.ca/farm-markets/coburg-market/",
-        "reason": "robots_disallow"
-      },
-      {
-        "layer": "structured_place_facts",
-        "restaurantId": "osm-node-9128392205-king-of-donair",
-        "sourceUrl": "https://www.kingofdonair.ca/",
-        "reason": "http_403"
-      },
-      {
-        "layer": "structured_place_facts",
-        "restaurantId": "osm-node-5987565464-afrite",
-        "sourceUrl": "https://afrite.ca/",
-        "reason": "timeout"
-      },
       {
         "layer": "first_party",
         "restaurantId": "osm-node-5134046822-chain-yard-urban-cidery",
@@ -5904,6 +5885,13 @@
         "name": "Bai Wei Grill Bar",
         "website": "http://baiweigrillbar.com/",
         "reason": "fetch failed"
+      },
+      {
+        "layer": "first_party",
+        "restaurantId": "osm-node-10665783054-ben-and-florentine",
+        "name": "Ben & Florentine",
+        "website": "https://benetflorentine.com/",
+        "reason": "http_503"
       },
       {
         "layer": "first_party",
@@ -5935,13 +5923,6 @@
       },
       {
         "layer": "first_party",
-        "restaurantId": "osm-node-4421124794-cafe-marco-polo",
-        "name": "Cafe Marco Polo",
-        "website": "https://justuscoffee.com/locations/kings-wharf-dartmouth",
-        "reason": "http_404"
-      },
-      {
-        "layer": "first_party",
         "restaurantId": "osm-node-5810620690-castello-cafe",
         "name": "Castello Café",
         "website": "https://www.facebook.com/CastelloCafeCatering/",
@@ -5949,17 +5930,17 @@
       },
       {
         "layer": "first_party",
+        "restaurantId": "osm-node-4421124794-cafe-marco-polo",
+        "name": "Cafe Marco Polo",
+        "website": "https://justuscoffee.com/locations/kings-wharf-dartmouth",
+        "reason": "http_404"
+      },
+      {
+        "layer": "first_party",
         "restaurantId": "osm-node-11752773940-colleen-s-pub",
         "name": "Colleen's Pub",
         "website": "https://www.facebook.com/oldwrinkleranch/",
         "reason": "robots_disallow"
-      },
-      {
-        "layer": "first_party",
-        "restaurantId": "osm-node-2721708515-cha-baa-thai",
-        "name": "Cha Baa Thai",
-        "website": "https://www.chabaathairestaurant.ca/",
-        "reason": "fetch failed"
       },
       {
         "layer": "first_party",
@@ -6012,6 +5993,13 @@
       },
       {
         "layer": "first_party",
+        "restaurantId": "osm-node-5863968654-dharma-sushi",
+        "name": "Dharma sushi",
+        "website": "https://dharmasushi.ca/",
+        "reason": "fetch failed"
+      },
+      {
+        "layer": "first_party",
         "restaurantId": "osm-node-2721708504-curry-village",
         "name": "Curry Village",
         "website": "https://www.curryvillage.ca/",
@@ -6019,23 +6007,16 @@
       },
       {
         "layer": "first_party",
-        "restaurantId": "osm-node-11551984275-doraku",
-        "name": "Doraku",
-        "website": "https://doraku.yolasite.com/",
-        "reason": "robots_disallow"
+        "restaurantId": "osm-node-2721708515-cha-baa-thai",
+        "name": "Cha Baa Thai",
+        "website": "https://www.chabaathairestaurant.ca/",
+        "reason": "fetch failed"
       },
       {
         "layer": "first_party",
         "restaurantId": "osm-node-2721708503-efendy-turkish-and-mediterranean-grill",
         "name": "Efendy Turkish & Mediterranean Grill",
         "website": "http://www.efendyrestaurant.com/",
-        "reason": "fetch failed"
-      },
-      {
-        "layer": "first_party",
-        "restaurantId": "osm-node-5863968654-dharma-sushi",
-        "name": "Dharma sushi",
-        "website": "https://dharmasushi.ca/",
         "reason": "fetch failed"
       },
       {
@@ -6054,17 +6035,10 @@
       },
       {
         "layer": "first_party",
-        "restaurantId": "osm-node-2714920436-greco-pizza",
-        "name": "Greco Pizza",
-        "website": "https://greco.ca/",
-        "reason": "http_403"
-      },
-      {
-        "layer": "first_party",
-        "restaurantId": "osm-node-7674251740-in-spring-asian-fusion-cuisine",
-        "name": "in spring asian fusion cuisine",
-        "website": "https://www.inspringhotpot.com/",
-        "reason": "robots_disallow"
+        "restaurantId": "osm-node-32335616-jim-s-family-restaurant",
+        "name": "Jim's Family Restaurant",
+        "website": "https://www.jimsfamilyrestauranthalifax.com/cl",
+        "reason": "fetch failed"
       },
       {
         "layer": "first_party",
@@ -6072,13 +6046,6 @@
         "name": "Java Blend",
         "website": "https://javablendcoffee.com/contact",
         "reason": "http_404"
-      },
-      {
-        "layer": "first_party",
-        "restaurantId": "osm-node-32335616-jim-s-family-restaurant",
-        "name": "Jim's Family Restaurant",
-        "website": "https://www.jimsfamilyrestauranthalifax.com/cl",
-        "reason": "fetch failed"
       },
       {
         "layer": "first_party",
@@ -6096,24 +6063,10 @@
       },
       {
         "layer": "first_party",
-        "restaurantId": "osm-node-8841366531-jungle-jim-s",
-        "name": "Jungle Jim's",
-        "website": "https://junglejims.ca/",
-        "reason": "robots_disallow"
-      },
-      {
-        "layer": "first_party",
         "restaurantId": "osm-node-2712744143-kebab-kitchen",
         "name": "Kebab Kitchen",
         "website": "http://www.kebabkitchens.com/",
         "reason": "fetch failed"
-      },
-      {
-        "layer": "first_party",
-        "restaurantId": "osm-node-3104142670-king-of-donair",
-        "name": "King of Donair",
-        "website": "https://www.kingofdonair.ca/",
-        "reason": "http_403"
       },
       {
         "layer": "first_party",
@@ -6131,6 +6084,13 @@
       },
       {
         "layer": "first_party",
+        "restaurantId": "osm-node-9652937830-arirang-korean-and-japanese",
+        "name": "Arirang Korean & Japanese",
+        "website": "https://arirang-restaurant.com/",
+        "reason": "timeout"
+      },
+      {
+        "layer": "first_party",
         "restaurantId": "osm-node-33078674-mcdonald-s",
         "name": "McDonald's",
         "website": "http://www.mcdonalds.ca/",
@@ -6142,13 +6102,6 @@
         "name": "McDonald's",
         "website": "http://www.mcdonalds.ca/",
         "reason": "robots_disallow"
-      },
-      {
-        "layer": "first_party",
-        "restaurantId": "osm-node-2721720399-mashawee-mediterranean-grill",
-        "name": "Mashawee Mediterranean Grill",
-        "website": "https://www.mashaweemediterraneangrill.ca/",
-        "reason": "http_403"
       },
       {
         "layer": "first_party",
@@ -6180,27 +6133,6 @@
       },
       {
         "layer": "first_party",
-        "restaurantId": "osm-node-11552509410-mizu-sushi",
-        "name": "Mizu Sushi",
-        "website": "https://mizutakeout.ca/",
-        "reason": "http_403"
-      },
-      {
-        "layer": "first_party",
-        "restaurantId": "osm-node-11552529320-mizu-sushi",
-        "name": "Mizu Sushi",
-        "website": "https://mizutakeout.ca/",
-        "reason": "http_403"
-      },
-      {
-        "layer": "first_party",
-        "restaurantId": "osm-node-5863968671-mirchi-tandoor",
-        "name": "Mirchi Tandoor",
-        "website": "https://mirchitandoor.com/",
-        "reason": "fetch failed"
-      },
-      {
-        "layer": "first_party",
         "restaurantId": "osm-node-8142450011-montana-s",
         "name": "Montana's",
         "website": "https://www.montanas.ca/en/locations/3617/halifax-chain-lake-dr.html",
@@ -6215,24 +6147,10 @@
       },
       {
         "layer": "first_party",
-        "restaurantId": "osm-node-9652937830-arirang-korean-and-japanese",
-        "name": "Arirang Korean & Japanese",
-        "website": "https://arirang-restaurant.com/",
-        "reason": "timeout"
-      },
-      {
-        "layer": "first_party",
         "restaurantId": "osm-node-4965917621-patrons-golf-and-lounge",
         "name": "Patrons Golf & Lounge",
         "website": "https://www.patronsgolflounge.ca/",
         "reason": "fetch failed"
-      },
-      {
-        "layer": "first_party",
-        "restaurantId": "osm-node-11526055082-noggins-coburg",
-        "name": "Noggins Coburg",
-        "website": "https://nogginsfarm.ca/farm-markets/coburg-market/",
-        "reason": "robots_disallow"
       },
       {
         "layer": "first_party",
@@ -6250,17 +6168,17 @@
       },
       {
         "layer": "first_party",
-        "restaurantId": "osm-node-9652977384-saffron-multi-cuisine-indian-restaurant",
-        "name": "Saffron Multi Cuisine Indian Restaurant",
-        "website": "https://saffron-indian-restaurant.com/",
+        "restaurantId": "osm-way-460939327-la-piazza-ristorante",
+        "name": "La Piazza Ristorante",
+        "website": "https://www.lapiazzarestocafe.com/",
         "reason": "fetch failed"
       },
       {
         "layer": "first_party",
-        "restaurantId": "osm-node-8443747544-saj-house",
-        "name": "Saj House",
-        "website": "https://www.sajhouse.ca/",
-        "reason": "http_403"
+        "restaurantId": "osm-node-9652977384-saffron-multi-cuisine-indian-restaurant",
+        "name": "Saffron Multi Cuisine Indian Restaurant",
+        "website": "https://saffron-indian-restaurant.com/",
+        "reason": "fetch failed"
       },
       {
         "layer": "first_party",
@@ -6271,20 +6189,6 @@
       },
       {
         "layer": "first_party",
-        "restaurantId": "osm-node-3789756557-smiling-goat",
-        "name": "Smiling Goat",
-        "website": "https://www.smilinggoat.ca/locations/",
-        "reason": "robots_disallow"
-      },
-      {
-        "layer": "first_party",
-        "restaurantId": "osm-node-11552151862-sushi-jet",
-        "name": "Sushi Jet",
-        "website": "https://sushi-jet.com/location/dartmouth",
-        "reason": "http_404"
-      },
-      {
-        "layer": "first_party",
         "restaurantId": "osm-node-2721708502-suzuki-japanese-restaurant",
         "name": "Suzuki Japanese Restaurant",
         "website": "http://www.suzukirestaurant.ca/",
@@ -6292,23 +6196,9 @@
       },
       {
         "layer": "first_party",
-        "restaurantId": "osm-node-11552180279-sushi-jet",
-        "name": "Sushi Jet",
-        "website": "https://sushi-jet.com/location/Halifax",
-        "reason": "http_404"
-      },
-      {
-        "layer": "first_party",
         "restaurantId": "osm-node-9416778099-tarek-s-cafe",
         "name": "Tarek's Cafe",
         "website": "http://www.tarekscafe.ca/",
-        "reason": "fetch failed"
-      },
-      {
-        "layer": "first_party",
-        "restaurantId": "osm-way-460939327-la-piazza-ristorante",
-        "name": "La Piazza Ristorante",
-        "website": "https://www.lapiazzarestocafe.com/",
         "reason": "fetch failed"
       },
       {
@@ -6320,10 +6210,24 @@
       },
       {
         "layer": "first_party",
+        "restaurantId": "osm-node-11552151862-sushi-jet",
+        "name": "Sushi Jet",
+        "website": "https://sushi-jet.com/location/dartmouth",
+        "reason": "http_404"
+      },
+      {
+        "layer": "first_party",
         "restaurantId": "osm-node-1921015225-the-brooklyn-warehouse",
         "name": "The Brooklyn Warehouse",
         "website": "https://brooklynwarehouse.ca/",
         "reason": "robots_disallow"
+      },
+      {
+        "layer": "first_party",
+        "restaurantId": "osm-node-11552180279-sushi-jet",
+        "name": "Sushi Jet",
+        "website": "https://sushi-jet.com/location/Halifax",
+        "reason": "http_404"
       },
       {
         "layer": "first_party",
@@ -6334,17 +6238,17 @@
       },
       {
         "layer": "first_party",
-        "restaurantId": "osm-node-1689418207-the-old-triangle-irish-pub",
-        "name": "The Old Triangle Irish Pub",
-        "website": "https://www.oldtriangle.com/welcome/",
-        "reason": "http_404"
-      },
-      {
-        "layer": "first_party",
         "restaurantId": "osm-node-13141551801-mcdonald-s",
         "name": "McDonald's",
         "website": "https://www.mcdonalds.com/ca/en-ca.html",
         "reason": "timeout"
+      },
+      {
+        "layer": "first_party",
+        "restaurantId": "osm-node-1689418207-the-old-triangle-irish-pub",
+        "name": "The Old Triangle Irish Pub",
+        "website": "https://www.oldtriangle.com/welcome/",
+        "reason": "http_404"
       },
       {
         "layer": "first_party",
@@ -6389,28 +6293,143 @@
         "reason": "timeout"
       }
     ],
-    "linkHealth": null
+    "linkHealth": {
+      "generatedAt": "2026-09-01T14:38:25.485Z",
+      "totalUniqueUrls": 2609,
+      "checked": 1500,
+      "ok": 1451,
+      "broken": 8,
+      "restricted": 4,
+      "transient": 35,
+      "httpError": 2,
+      "brokenRecords": [
+        {
+          "url": "https://justuscoffee.com/locations/kings-wharf-dartmouth",
+          "finalUrl": "https://justuscoffee.com/locations/kings-wharf-dartmouth",
+          "status": 404,
+          "state": "broken",
+          "error": null,
+          "kinds": [
+            "official_website"
+          ],
+          "entityIds": [
+            "osm-node-4421124794-cafe-marco-polo"
+          ]
+        },
+        {
+          "url": "https://claywesthalifax.business.site/",
+          "finalUrl": "https://claywesthalifax.business.site/",
+          "status": 404,
+          "state": "broken",
+          "error": null,
+          "kinds": [
+            "official_website"
+          ],
+          "entityIds": [
+            "osm-node-7185511974-clay-west-bar-and-grill"
+          ]
+        },
+        {
+          "url": "https://javablendcoffee.com/contact",
+          "finalUrl": "https://javablendcoffee.com/contact",
+          "status": 404,
+          "state": "broken",
+          "error": null,
+          "kinds": [
+            "official_website"
+          ],
+          "entityIds": [
+            "osm-node-2624400763-java-blend"
+          ]
+        },
+        {
+          "url": "https://bishopslanding.com/dining/piece-of-cake-fine-bakery-cafe/",
+          "finalUrl": "http://harboursouth.ca/dining/piece-of-cake-fine-bakery-cafe/",
+          "status": 404,
+          "state": "broken",
+          "error": null,
+          "kinds": [
+            "official_website"
+          ],
+          "entityIds": [
+            "osm-node-3789869157-piece-of-cake-bakery-and-cafe"
+          ]
+        },
+        {
+          "url": "https://sushi-jet.com/location/dartmouth",
+          "finalUrl": "https://sushi-jet.com/location/dartmouth",
+          "status": 404,
+          "state": "broken",
+          "error": null,
+          "kinds": [
+            "official_website"
+          ],
+          "entityIds": [
+            "osm-node-11552151862-sushi-jet"
+          ]
+        },
+        {
+          "url": "https://sushi-jet.com/location/Halifax",
+          "finalUrl": "https://sushi-jet.com/location/Halifax",
+          "status": 404,
+          "state": "broken",
+          "error": null,
+          "kinds": [
+            "official_website"
+          ],
+          "entityIds": [
+            "osm-node-11552180279-sushi-jet"
+          ]
+        },
+        {
+          "url": "https://bishopslanding.com/dining/juice-press-inc/",
+          "finalUrl": "http://harboursouth.ca/dining/juice-press-inc/",
+          "status": 404,
+          "state": "broken",
+          "error": null,
+          "kinds": [
+            "official_website"
+          ],
+          "entityIds": [
+            "osm-node-3789835257-the-juice-press"
+          ]
+        },
+        {
+          "url": "https://www.oldtriangle.com/welcome/",
+          "finalUrl": "https://oldtriangle.com/welcome/",
+          "status": 404,
+          "state": "broken",
+          "error": null,
+          "kinds": [
+            "official_website"
+          ],
+          "entityIds": [
+            "osm-node-1689418207-the-old-triangle-irish-pub"
+          ]
+        }
+      ]
+    }
   },
   "contentBreakdown": {
     "specialStates": {
       "verified_current": 49,
-      "source_lead": 13,
-      "likely_recurring_verify": 9,
-      "stale": 3
+      "source_lead": 20,
+      "stale": 6,
+      "likely_recurring_verify": 5
     },
     "eventCategories": {
       "Sports": 61,
-      "Music": 58,
-      "Arts": 34,
-      "Community": 18,
-      "Festivals": 7,
-      "Comedy": 4,
-      "Food & Drink": 2,
+      "Music": 59,
+      "Arts": 28,
+      "Community": 22,
+      "Festivals": 14,
+      "Comedy": 3,
+      "Food & Drink": 3,
       "Other": 2,
-      "Markets": 1
+      "Outdoor": 1
     },
     "eventMunicipalities": {
-      "Halifax": 165,
+      "Halifax": 171,
       "Dartmouth": 16,
       "Bedford": 6
     }
