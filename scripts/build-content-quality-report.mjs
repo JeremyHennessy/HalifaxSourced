@@ -8,6 +8,7 @@ async function json(path, fallback = {}) {
 const coverage = await json("data/build/content-coverage-report.json");
 const placeResolution = await json("data/build/place-source-resolutions.json", { resolutions: [], reviewQueue: [] });
 const facts = await json("data/build/structured-place-facts.json", { records: [], failures: [] });
+const patioDirectory = await json("data/build/patio-directory-facts.json", { records: [], failures: [], counts: {} });
 const specials = await json("data/build/structured-specials.json", { records: [], orphanSources: [] });
 const cityEvents = await json("data/build/city-events.json", { events: [] });
 const eventResolution = await json("data/build/event-entity-resolution.json", {});
@@ -41,6 +42,7 @@ function countBy(items, keyFn) {
 const freshness = {
   firstPartyRelationships: { lt7: 0, d7_30: 0, d30_90: 0, gt90: 0, unknown: 0 },
   structuredPlaceFacts: { lt7: 0, d7_30: 0, d30_90: 0, gt90: 0, unknown: 0 },
+  patioDirectoryFacts: { lt7: 0, d7_30: 0, d30_90: 0, gt90: 0, unknown: 0 },
   specials: { lt7: 0, d7_30: 0, d30_90: 0, gt90: 0, unknown: 0 },
   events: { lt7: 0, d7_30: 0, d30_90: 0, gt90: 0, unknown: 0 }
 };
@@ -48,6 +50,7 @@ for (const record of firstParty.records || []) {
   for (const item of [...(record.socialProfiles || []), ...(record.linkHubs || []), ...(record.relatedLinks || [])]) addBucket(freshness.firstPartyRelationships, item.lastVerifiedAt || item.observedAt || record.lastVerifiedAt || record.observedAt);
 }
 for (const record of facts.records || []) addBucket(freshness.structuredPlaceFacts, record.lastVerifiedAt || record.observedAt);
+for (const record of patioDirectory.records || []) addBucket(freshness.patioDirectoryFacts, record.observedAt || patioDirectory.generatedAt);
 for (const record of specials.records || []) addBucket(freshness.specials, record.verifiedAt || record.observedAt);
 for (const event of cityEvents.events || []) addBucket(freshness.events, event.lastVerifiedAt || event.observedAt || event.sourceUpdatedAt || cityEvents.generatedAt);
 
@@ -55,10 +58,12 @@ const conflictItems = (placeResolution.reviewQueue || []).filter((item) => Strin
 const nameOnlyItems = (placeResolution.reviewQueue || []).filter((item) => item.state === "name_only_review");
 const unresolvedItems = (placeResolution.reviewQueue || []).filter((item) => item.state === "unresolved");
 const orphanSpecialSources = Array.isArray(specials.orphanSources) ? specials.orphanSources : [];
+const patioDirectoryNeedsReview = (patioDirectory.records || []).filter((item) => !item.restaurantId || item.matchConfidence === "needs_review");
 const blockedEventSources = (eventCandidates.candidates || []).filter((item) => /blocked/i.test(String(item.status || "")));
 const adapterReviewSources = (eventCandidates.candidates || []).filter((item) => /review/i.test(String(item.status || "")));
 const sourceFailures = [
   ...(facts.failures || []).map((item) => ({ layer: "structured_place_facts", ...item })),
+  ...(patioDirectory.failures || []).map((item) => ({ layer: "patio_directory", ...item })),
   ...(firstParty.failures || []).map((item) => ({ layer: "first_party", ...item })),
   ...(discovery.failures || []).map((item) => ({ layer: "restaurant_discovery", ...item })),
   ...(expanded.failures || []).map((item) => ({ layer: "expanded_sources", ...item })),
@@ -77,6 +82,9 @@ const report = {
     canonicalPlaces: coverage.restaurantCoverage?.totalCanonicalPlaces ?? null,
     placesWithSocial: coverage.socialAudit?.placesWithSocial ?? coverage.restaurantCoverage?.withAtLeastOneSocialProfile ?? null,
     structuredPlaceFactRecords: facts.records?.length || 0,
+    patioDirectoryRecords: patioDirectory.records?.length || 0,
+    patioDirectoryResolved: patioDirectory.counts?.resolved || 0,
+    patioDirectoryNeedsReview: patioDirectoryNeedsReview.length,
     structuredHours: facts.counts?.hours || 0,
     structuredMenus: facts.counts?.menus || 0,
     structuredReservations: facts.counts?.reservations || 0,
@@ -105,7 +113,8 @@ const report = {
     unresolvedPlaces: unresolvedItems.slice(0, 250),
     orphanSpecialSources: orphanSpecialSources.slice(0, 250),
     blockedEventSources,
-    eventSourceAdapterReview: adapterReviewSources
+    eventSourceAdapterReview: adapterReviewSources,
+    patioDirectoryMatches: patioDirectoryNeedsReview.slice(0, 250)
   },
   sourceHealth: {
     failuresByLayer: countBy(sourceFailures, (item) => item.layer),

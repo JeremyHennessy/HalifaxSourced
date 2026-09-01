@@ -1,8 +1,8 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-01T15:38:22.153Z",
-  "sourceCommitSha": "d6aa9762bceef7fa6441c56421ee231a121a484a",
-  "baselineCommitHint": "d6aa9762bceef7fa6441c56421ee231a121a484a",
+  "generatedAt": "2026-09-01T16:31:32.236Z",
+  "sourceCommitSha": "28eacc6a26522d125a3909e37ff1b2901b4d063a",
+  "baselineCommitHint": "28eacc6a26522d125a3909e37ff1b2901b4d063a",
   "definitions": {
     "canonicalPlaces": "Current user-facing merge of catalog restaurants plus reviewed discovery records, matching the app's existing name-based discovery merge behavior.",
     "verifiedOfficialWebsite": "Official-site fetch returned a successful HTTP status or the first-party discovery layer successfully fetched the restaurant-owned site.",
@@ -63,7 +63,7 @@
     "withNeighbourhood": 750,
     "withCuisineClassification": 750,
     "withAccessibilityInformation": 229,
-    "withPatioInformation": 41,
+    "withPatioInformation": 81,
     "withUsableMedia": 73,
     "lifecycle": {
       "active": 11,
@@ -81,6 +81,17 @@
       "unknown": 0
     },
     "staleRestaurantRecords": 0,
+    "patioDirectoryLayer": {
+      "generatedAt": "2026-09-01T16:30:02.624Z",
+      "sourceFailures": 0,
+      "total": 75,
+      "resolved": 47,
+      "unresolved": 23,
+      "conflicts": 5,
+      "dogFriendly": 52,
+      "withWebsite": 75,
+      "withSourceImage": 75
+    },
     "currentResolutionRisks": {
       "discoveryNameOnlyMerges": 2
     },
@@ -128,7 +139,7 @@
     "neighbourhood": 100,
     "cuisine": 100,
     "accessibility": 30.5,
-    "patio": 5.5,
+    "patio": 10.8,
     "media": 9.7,
     "linkHub": 0
   },
@@ -1166,7 +1177,7 @@
       ]
     },
     "reconciledFromAcceptedStructuredLayers": true,
-    "reconciledAt": "2026-09-01T15:38:22.153Z"
+    "reconciledAt": "2026-09-01T16:31:32.235Z"
   },
   "eventCoverage": {
     "currentCityEvents": 192,
@@ -1216,7 +1227,7 @@
     "canonicalRestaurantsWithStructuredUpcomingEvents": 2,
     "upcomingStructuredRestaurantEventRecords": 21,
     "expiredStructuredRestaurantEvents": 0,
-    "next7Days": 22,
+    "next7Days": 23,
     "next30Days": 64
   },
   "discoveryCoverage": {
@@ -1235,6 +1246,7 @@
     "cityEventSources": 0,
     "openingWatchSources": 0,
     "restaurantDirectorySources": 0,
+    "patioDirectorySources": 0,
     "structuredPlaceFacts": 0
   },
   "credentials": {

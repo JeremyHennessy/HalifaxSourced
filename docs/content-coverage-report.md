@@ -1,7 +1,7 @@
 # Halifax Sourced content coverage snapshot
 
-Generated: 2026-09-01T15:38:22.153Z
-Source/deployment commit: `d6aa9762bceef7fa6441c56421ee231a121a484a`
+Generated: 2026-09-01T16:31:32.236Z
+Source/deployment commit: `28eacc6a26522d125a3909e37ff1b2901b4d063a`
 
 This is the reconciled snapshot produced from the same data layers packaged for deployment. Unknown values remain unknown; source leads are not promoted to verified facts.
 
@@ -46,6 +46,7 @@ This is the reconciled snapshot produced from the same data layers packaged for 
 - cityEventSources: 0
 - openingWatchSources: 0
 - restaurantDirectorySources: 0
+- patioDirectorySources: 0
 - structuredPlaceFacts: 0
 
 Machine-readable definitions, percentages, gap queues, and counts are in `data/build/content-coverage-report.json`. Exact-SHA deployment metadata is in `data/build/deployment-metadata.json` in CI and the deployed Pages artifact.

@@ -92,6 +92,7 @@ const structured = await loadJson("data/build/structured-events.json", { events:
 const firstParty = await loadJson("data/build/first-party-sources.json", { records: [], failures: [] });
 const websiteFeeds = await loadJson("data/build/website-feed-signals.json", { signals: [], failures: [] });
 const socialSignals = await loadJson("data/build/social-signals.json", { signals: [], failures: [] });
+const patioDirectory = await loadJson("data/build/patio-directory-facts.json", { records: [], failures: [], counts: {} });
 
 const curated = Array.isArray(curatedWindow.HALIFAX_RESTAURANTS) ? curatedWindow.HALIFAX_RESTAURANTS : [];
 const osm = Array.isArray(osmWindow.HALIFAX_OSM_RESTAURANTS) ? osmWindow.HALIFAX_OSM_RESTAURANTS : [];
@@ -260,6 +261,9 @@ for (const restaurant of canonical) {
   const signal = officialById.get(restaurant.id);
   if (hasHits(signal, "patio") || (signal?.candidateLinks || []).some((link) => hasHits(link, "patio"))) patioIds.add(restaurant.id);
 }
+for (const record of patioDirectory.records || []) {
+  if (record.restaurantId && canonicalIds.has(record.restaurantId)) patioIds.add(record.restaurantId);
+}
 
 const sharedProfileKeys = new Set([...profileAssociationCounts].filter(([, count]) => count > 1).map(([key]) => key));
 const sharedOnlyIds = new Set();
@@ -318,7 +322,8 @@ const sourceFailures = {
   socialApis: Array.isArray(socialSignals.failures) ? socialSignals.failures.length : 0,
   cityEventSources: Array.isArray(cityPayload.failures) ? cityPayload.failures.length : 0,
   openingWatchSources: Array.isArray(openingPayload.failures) ? openingPayload.failures.length : 0,
-  restaurantDirectorySources: Array.isArray(directoryPayload.failures) ? directoryPayload.failures.length : 0
+  restaurantDirectorySources: Array.isArray(directoryPayload.failures) ? directoryPayload.failures.length : 0,
+  patioDirectorySources: Array.isArray(patioDirectory.failures) ? patioDirectory.failures.length : 0
 };
 
 const socialCoverage = {};
@@ -380,6 +385,7 @@ const report = {
     activeCanonicalPlaces: total - lifecycle.temporarily_closed - lifecycle.permanently_closed - lifecycle.moved,
     freshness,
     staleRestaurantRecords: staleRestaurantIds.size,
+    patioDirectoryLayer: { generatedAt: patioDirectory.generatedAt || null, ...(patioDirectory.counts || {}) },
     currentResolutionRisks: { discoveryNameOnlyMerges }
   },
   restaurantCoveragePercent: Object.fromEntries(Object.entries({

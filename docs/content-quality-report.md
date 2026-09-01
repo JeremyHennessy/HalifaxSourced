@@ -1,12 +1,15 @@
 # Halifax Sourced content quality report
 
-Generated: 2026-09-01T15:38:00.074Z
+Generated: 2026-09-01T16:31:32.351Z
 
 ## Summary
 
 - **canonicalPlaces**: 750
 - **placesWithSocial**: 159
 - **structuredPlaceFactRecords**: 176
+- **patioDirectoryRecords**: 75
+- **patioDirectoryResolved**: 47
+- **patioDirectoryNeedsReview**: 28
 - **structuredHours**: 13
 - **structuredMenus**: 143
 - **structuredReservations**: 55
@@ -26,12 +29,13 @@ Generated: 2026-09-01T15:38:00.074Z
 - **eventSourcesInAdapterReview**: 4
 - **brokenUrls**: 8
 - **restrictedUrls**: 4
-- **transientUrlFailures**: 35
+- **transientUrlFailures**: 34
 
 ## Freshness
 
 - **firstPartyRelationships**: <7d 1138; 7–30d 0; 30–90d 0; >90d 0; unknown 0
 - **structuredPlaceFacts**: <7d 176; 7–30d 0; 30–90d 0; >90d 0; unknown 0
+- **patioDirectoryFacts**: <7d 75; 7–30d 0; 30–90d 0; >90d 0; unknown 0
 - **specials**: <7d 80; 7–30d 0; 30–90d 0; >90d 0; unknown 0
 - **events**: <7d 192; 7–30d 0; 30–90d 0; >90d 0; unknown 0
 

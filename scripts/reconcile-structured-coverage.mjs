@@ -38,6 +38,7 @@ const firstParty = await json("data/build/first-party-sources.json", { records: 
 const websiteFeeds = await json("data/build/website-feed-signals.json", { signals: [] });
 const socialSignals = await json("data/build/social-signals.json", { signals: [] });
 const facts = await json("data/build/structured-place-facts.json", { records: [], counts: {}, failures: [] });
+const patioDirectory = await json("data/build/patio-directory-facts.json", { records: [], counts: {}, failures: [] });
 const specials = await json("data/build/structured-specials.json", { records: [] });
 const discoveredWindow = await windowData("data/discovered-restaurants.js");
 const discovered = Array.isArray(discoveredWindow.HALIFAX_DISCOVERED_RESTAURANTS) ? discoveredWindow.HALIFAX_DISCOVERED_RESTAURANTS : [];
@@ -162,6 +163,7 @@ rc.withLinkHub = hubIds.size;
 rc.withAnySocialOrLinkHub = new Set([...socialIds, ...hubIds]).size;
 rc.socialByPlatform = Object.fromEntries(Object.entries(platformSets).map(([platform, ids]) => [platform, ids.size]));
 rc.structuredFactLayer = { generatedAt: facts.generatedAt || null, checkedPlaces: facts.checkedPlaces || 0, sourceFailures: (facts.failures || []).length, ...(facts.counts || {}) };
+rc.patioDirectoryLayer = { generatedAt: patioDirectory.generatedAt || null, sourceFailures: (patioDirectory.failures || []).length, ...(patioDirectory.counts || {}) };
 rc.structuredSpecialLayer = { generatedAt: specials.generatedAt || null, count: specials.count || 0, verifiedCurrent: specials.verifiedCurrent || 0, recurringVerify: specials.recurringVerify || 0, sourceLeads: specials.sourceLeads || 0, stale: specials.stale || 0, expired: specials.expired || 0, orphanSourceCount: specials.orphanSourceCount || 0 };
 
 for (const [key, count] of Object.entries({
@@ -189,6 +191,7 @@ report.definitions.structuredFactReconciliation = "Phone, hours, menu, reservati
 report.definitions.structuredSpecialReconciliation = "Special coverage includes normalized source-backed structured specials. Only records with current verification inside the configured freshness window increase verified-current special coverage.";
 report.sourceFailures ||= {};
 report.sourceFailures.structuredPlaceFacts = (facts.failures || []).length;
+report.sourceFailures.patioDirectorySources = (patioDirectory.failures || []).length;
 report.generatedAt = new Date().toISOString();
 await writeFile(reportPath, JSON.stringify(report, null, 2) + "\n");
 console.log(JSON.stringify({ phone: rc.withPhone, hours: rc.withStructuredOrSourceHours, menu: rc.withMenuLink, specials: rc.withSpecials, verifiedSpecials: rc.withVerifiedSpecials, reservations: rc.withReservationLink, ordering: rc.withOnlineOrderingLink, patio: rc.withPatioInformation, accessibility: rc.withAccessibilityInformation, social: rc.withAtLeastOneSocialProfile, linkHub: rc.withLinkHub, structuredFacts: rc.structuredFactLayer, structuredSpecials: rc.structuredSpecialLayer }, null, 2));

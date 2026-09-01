@@ -37,6 +37,9 @@ jobs:
       - name: Build deterministic structured specials
         run: node scripts/build-structured-specials.mjs
 
+      - name: Build patio directory facts
+        run: node scripts/import-patio-directory-facts.mjs
+
       - name: Build recent post intelligence
         run: |
           node scripts/build-recent-social-posts.mjs
@@ -63,6 +66,7 @@ jobs:
           node scripts/check-city-events.mjs
           node scripts/check-event-entity-resolution.mjs
           node scripts/check-structured-place-facts.mjs
+          node scripts/check-patio-directory-facts.mjs
           node scripts/test-hours-state.mjs
           node scripts/check-structured-specials.mjs
           node scripts/test-city-event-source-drift.mjs
@@ -102,10 +106,13 @@ jobs:
             artifacts/event-entity-resolution-report.json
             artifacts/structured-place-facts-report.json
             artifacts/structured-specials-report.json
+            artifacts/patio-directory-facts-report.json
             data/build/event-entity-resolution.json
             data/build/structured-place-facts.json
             data/build/structured-specials.json
             data/structured-specials.js
+            data/build/patio-directory-facts.json
+            data/patio-directory-facts.js
             data/build/website-page-intelligence.json
             data/website-page-intelligence.js
             data/build/recent-social-posts.json

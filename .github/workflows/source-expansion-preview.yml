@@ -14,6 +14,7 @@ on:
       - scripts/import-official-sites.mjs
       - scripts/verify-official-source-pages.mjs
       - scripts/import-structured-events.mjs
+      - scripts/import-patio-directory-facts.mjs
       - scripts/discover-first-party-sources.mjs
       - scripts/merge-first-party-history.mjs
       - scripts/sanitize-first-party-sources.mjs
@@ -25,6 +26,7 @@ on:
       - scripts/build-thumbnail-candidates.mjs
       - scripts/build-thumbnail-coverage-report.mjs
       - scripts/check-thumbnail-candidates.mjs
+      - scripts/check-patio-directory-facts.mjs
       - scripts/check-expanded-sources.mjs
 
 permissions:
@@ -66,6 +68,9 @@ jobs:
           STRUCTURED_EVENT_PAGES_PER_RESTAURANT: 3
           STRUCTURED_EVENT_DELAY_MS: 400
         run: node scripts/import-structured-events.mjs
+
+      - name: Refresh patio directory facts
+        run: node scripts/import-patio-directory-facts.mjs
 
       - name: Discover first-party feeds, social profiles, link hubs, and related links
         env:
@@ -137,6 +142,7 @@ jobs:
           node scripts/check-data-integrity.mjs
           node scripts/check-expanded-sources.mjs
           node scripts/check-thumbnail-candidates.mjs
+          node scripts/check-patio-directory-facts.mjs
           node scripts/build-thumbnail-coverage-report.mjs
 
       - name: Upload source expansion preview
@@ -150,6 +156,8 @@ jobs:
             data/build/verified-source-pages.json
             data/structured-events.js
             data/build/structured-events.json
+            data/patio-directory-facts.js
+            data/build/patio-directory-facts.json
             data/first-party-sources.js
             data/build/first-party-sources.json
             data/website-feed-signals.js
@@ -170,5 +178,6 @@ jobs:
             artifacts/expanded-source-integrity-report.json
             artifacts/thumbnail-candidates-report.json
             artifacts/thumbnail-coverage-report.json
+            artifacts/patio-directory-facts-report.json
           if-no-files-found: error
           retention-days: 30
