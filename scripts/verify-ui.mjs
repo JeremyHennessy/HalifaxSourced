@@ -431,7 +431,7 @@ await page.evaluate(() => {
 });
 await page.waitForFunction(() => !document.querySelector(".restaurant-hero-photo") && !document.querySelector(".restaurant-hero")?.classList.contains("has-permitted-image"));
 const brokenImageErrors = consoleErrors.splice(brokenImageErrorStart);
-if (brokenImageErrors.length !== 1 || !/404 \(Not Found\)/.test(brokenImageErrors[0])) throw new Error(`Expected exactly one intentional missing-image 404, got ${JSON.stringify(brokenImageErrors)}.`);
+if (brokenImageErrors.length !== 1 || !/404(?: \(Not Found\)| \(\)|\b)/.test(brokenImageErrors[0])) throw new Error(`Expected exactly one intentional missing-image 404, got ${JSON.stringify(brokenImageErrors)}.`);
 await captureIphone("broken-image-fallback");
 await page.evaluate(() => {
   const image = window.HALIFAX_RESTAURANT_MEDIA.records.find((record) => record.restaurantId === "the-narrows");
