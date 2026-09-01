@@ -1,16 +1,19 @@
 window.HALIFAX_RECENT_SOCIAL_POSTS = {
   "version": 1,
-  "generatedAt": "2026-08-31T11:28:09.674Z",
+  "generatedAt": "2026-09-01T13:44:21.225Z",
   "lookbackDays": 180,
   "summaryLimit": 420,
   "inputCounts": {
     "websiteFeedPosts": 11,
+    "websitePagePosts": 400,
     "socialApiPosts": 0,
     "websiteFeedSignals": 4,
+    "websitePageSignals": 399,
     "socialApiSignals": 0
   },
   "sourceState": {
     "websiteFeedsGeneratedAt": "2026-08-31T11:21:26.289Z",
+    "websitePagesGeneratedAt": "2026-09-01T13:27:22.619Z",
     "metaSocialGeneratedAt": "2026-08-31T11:28:09.624Z",
     "metaCredentialState": {
       "facebook": "not_promoted",
@@ -20,23 +23,7138 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
     "metaPostsObserved": 0
   },
   "counts": {
-    "records": 11,
-    "restaurantsWithRecentPosts": 5,
+    "records": 150,
+    "restaurantsWithRecentPosts": 68,
     "categoryCounts": {
-      "specials": 3,
-      "openings": 1,
+      "specials": 81,
+      "openings": 2,
+      "menu": 33,
+      "happy_hour": 11,
+      "events": 7,
+      "reservations": 1,
+      "live_music": 8,
       "general_update": 5,
       "brunch": 2
     },
     "platformCounts": {
+      "official_page": 139,
       "website_feed": 11
     },
     "reviewStateCounts": {
-      "source_signal": 6,
+      "source_signal": 84,
+      "needs_date_review": 61,
       "needs_category_review": 5
     }
   },
   "records": [
+    {
+      "id": "official_page-1ec57a47ded6e844c5",
+      "restaurantId": "osm-node-3792869657-great-wall-restaurant",
+      "restaurantName": "Great Wall Restaurant",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://ritual.co/order/the-great-wall-restaurant-bedford-row-sackville-halifax/9897",
+      "mediaUrl": "https://images.ctfassets.net/6civwduob0q9/6BfSuBatnTnW4CF2pxXZMU/16c87d9afd88b8326c86245ce11a44e5/Add__1_.png",
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "The Great Wall Restaurant (Bedford Row/Sackville) - Order Now",
+      "summary": "Preorder and pay from the top restaurants in your area",
+      "primaryCategory": "specials",
+      "primaryCategoryLabel": "Special",
+      "categories": [
+        {
+          "id": "specials",
+          "label": "Special",
+          "terms": [
+            "special"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "special"
+      ],
+      "publishedAt": "9897-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-01T13:26:19.727Z",
+      "ageDays": 0,
+      "isRecent": true,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "source_signal",
+      "associationBasis": "official_site_linked_page"
+    },
+    {
+      "id": "official_page-2ec5adc07aa8e6a98f",
+      "restaurantId": "osm-node-11552081912-kanpai-izakaya",
+      "restaurantName": "Kanpai Izakaya",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://kanpaiizakaya.com/",
+      "mediaUrl": "https://img1.wsimg.com/isteam/stock/38725",
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Kanpai Izakaya",
+      "summary": "Kanpai Izakaya offers variety of Japanese fusion dishes",
+      "primaryCategory": "specials",
+      "primaryCategoryLabel": "Special",
+      "categories": [
+        {
+          "id": "specials",
+          "label": "Special",
+          "terms": [
+            "offer",
+            "offers"
+          ]
+        },
+        {
+          "id": "menu",
+          "label": "Menu update",
+          "terms": [
+            "menu"
+          ]
+        },
+        {
+          "id": "reservations",
+          "label": "Reservations",
+          "terms": [
+            "reservation"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "offer",
+        "offers",
+        "menu",
+        "reservation"
+      ],
+      "publishedAt": "8390-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-01T13:26:27.802Z",
+      "ageDays": 0,
+      "isRecent": true,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "source_signal",
+      "associationBasis": "same_site_official_page"
+    },
+    {
+      "id": "official_page-43a45523cbb1f41c57",
+      "restaurantId": "osm-node-11552081912-kanpai-izakaya",
+      "restaurantName": "Kanpai Izakaya",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://kanpaiizakaya.com/menu",
+      "mediaUrl": "https://img1.wsimg.com/isteam/stock/38725",
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Kanpai Izakaya",
+      "summary": "Call to make a reservation",
+      "primaryCategory": "openings",
+      "primaryCategoryLabel": "Opening",
+      "categories": [
+        {
+          "id": "openings",
+          "label": "Opening",
+          "terms": [
+            "coming soon"
+          ]
+        },
+        {
+          "id": "menu",
+          "label": "Menu update",
+          "terms": [
+            "menu"
+          ]
+        },
+        {
+          "id": "reservations",
+          "label": "Reservations",
+          "terms": [
+            "reservation"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "coming soon",
+        "menu",
+        "reservation"
+      ],
+      "publishedAt": "8390-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-01T13:26:28.184Z",
+      "ageDays": 0,
+      "isRecent": true,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "source_signal",
+      "associationBasis": "same_site_official_page"
+    },
+    {
+      "id": "official_page-54be0d239f18fade95",
+      "restaurantId": "osm-node-4550005602-starbucks",
+      "restaurantName": "Starbucks",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://www.starbucks.ca/",
+      "mediaUrl": "https://content-prod-live.cert.starbucks.com/binary/v2/asset/143-112130.jpg",
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Starbucks Coffee Company",
+      "summary": "Starbucks Coffee Company Skip to main content Menu Rewards Gift Cards Find a store Sign in Join now Menu Rewards Gift Cards Sign in Join now Find a store Account Card management My Rewards History Personal info Payment methods Privacy and data Settings Sign out It's a great day for coffee Start an order PSL season is here Our 2026 pumpkin menu has landed. Enjoy the one-and-only Pumpkin Spice Latte, tasty new drink...",
+      "primaryCategory": "specials",
+      "primaryCategoryLabel": "Special",
+      "categories": [
+        {
+          "id": "specials",
+          "label": "Special",
+          "terms": [
+            "offer"
+          ]
+        },
+        {
+          "id": "menu",
+          "label": "Menu update",
+          "terms": [
+            "menu"
+          ]
+        },
+        {
+          "id": "seasonal",
+          "label": "Seasonal",
+          "terms": [
+            "fall menu"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "offer",
+        "menu",
+        "fall menu"
+      ],
+      "publishedAt": "6341-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-01T13:26:15.413Z",
+      "ageDays": 0,
+      "isRecent": true,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "source_signal",
+      "associationBasis": "same_site_official_page"
+    },
+    {
+      "id": "official_page-349ae8bb00269b0dc2",
+      "restaurantId": "osm-node-4550005602-starbucks",
+      "restaurantName": "Starbucks",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://www.starbucks.ca/menu",
+      "mediaUrl": "https://www.starbucks.com/weblx/images/social/summary_square.png",
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Starbucks®",
+      "summary": "Starbucks®",
+      "primaryCategory": "menu",
+      "primaryCategoryLabel": "Menu update",
+      "categories": [
+        {
+          "id": "menu",
+          "label": "Menu update",
+          "terms": [
+            "menu"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "menu"
+      ],
+      "publishedAt": "6341-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-01T13:26:15.679Z",
+      "ageDays": 0,
+      "isRecent": true,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "source_signal",
+      "associationBasis": "same_site_official_page"
+    },
+    {
+      "id": "official_page-6899022b78667bc750",
+      "restaurantId": "osm-node-4550005602-starbucks",
+      "restaurantName": "Starbucks",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://www.starbucks.ca/menu/the-latest/pumpkin-picks",
+      "mediaUrl": "https://www.starbucks.com/weblx/images/social/summary_square.png",
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Starbucks®",
+      "summary": "Starbucks®",
+      "primaryCategory": "menu",
+      "primaryCategoryLabel": "Menu update",
+      "categories": [
+        {
+          "id": "menu",
+          "label": "Menu update",
+          "terms": [
+            "menu"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "menu"
+      ],
+      "publishedAt": "6341-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-01T13:26:15.929Z",
+      "ageDays": 0,
+      "isRecent": true,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "source_signal",
+      "associationBasis": "same_site_official_page"
+    },
+    {
+      "id": "official_page-51a6e5e6cbe62b0e4b",
+      "restaurantId": "osm-node-4550005602-starbucks",
+      "restaurantName": "Starbucks",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://www.starbucks.ca/menu/featured/",
+      "mediaUrl": "https://content-prod-live.cert.starbucks.com/binary/v2/asset/143-111801.jpg",
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Featured Fall Menu: Starbucks Coffee Company",
+      "summary": "Featured Fall Menu: Starbucks Coffee Company Featured Fall Menu Skip to main content Menu Rewards Gift Cards Find a store Sign in Join now Menu Rewards Gift Cards Sign in Join now Find a store Account Card management My Rewards History Personal info Payment methods Privacy and data Settings Sign out More pumpkin, please Pumpkin Spice Latte The iconic PSL is back. Real pumpkin, full-bodied espresso and fall-spice f...",
+      "primaryCategory": "menu",
+      "primaryCategoryLabel": "Menu update",
+      "categories": [
+        {
+          "id": "menu",
+          "label": "Menu update",
+          "terms": [
+            "menu"
+          ]
+        },
+        {
+          "id": "seasonal",
+          "label": "Seasonal",
+          "terms": [
+            "seasonal",
+            "summer",
+            "fall menu",
+            "holiday"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "menu",
+        "seasonal",
+        "summer",
+        "fall menu",
+        "holiday"
+      ],
+      "publishedAt": "6341-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-01T13:26:16.184Z",
+      "ageDays": 0,
+      "isRecent": true,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "source_signal",
+      "associationBasis": "same_site_official_page"
+    },
+    {
+      "id": "official_page-e16310428a36e72743",
+      "restaurantId": "osm-node-4550005602-starbucks",
+      "restaurantName": "Starbucks",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://www.starbucks.ca/ways-to-order/delivery/",
+      "mediaUrl": "https://content-prod-live.cert.starbucks.com/binary/v2/asset/143-82602.png",
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Starbucks Delivers: Starbucks Coffee Company",
+      "summary": "Starbucks Delivers: Starbucks Coffee Company Starbucks Delivers Skip to main content Menu Rewards Gift Cards Find a store Sign in Join now Menu Rewards Gift Cards Sign in Join now Find a store Account Card management My Rewards History Personal info Payment methods Privacy and data Settings Sign out Today deserves delivery Your coffee is on its way Order Starbucks® delivery on DoorDash, SkipTheDishes or Uber Eats...",
+      "primaryCategory": "menu",
+      "primaryCategoryLabel": "Menu update",
+      "categories": [
+        {
+          "id": "menu",
+          "label": "Menu update",
+          "terms": [
+            "menu"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "menu"
+      ],
+      "publishedAt": "6341-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-01T13:26:16.506Z",
+      "ageDays": 0,
+      "isRecent": true,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "source_signal",
+      "associationBasis": "same_site_official_page"
+    },
+    {
+      "id": "official_page-19c3dfbf8ee2912487",
+      "restaurantId": "osm-node-4550005602-starbucks",
+      "restaurantName": "Starbucks",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://www.starbucks.ca/ways-to-order/",
+      "mediaUrl": "https://content-prod-live.cert.starbucks.com/binary/v2/asset/143-67484.png",
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Easy Mobile & Online Ordering & Delivery: Starbucks Coffee Company",
+      "summary": "Easy Mobile & Online Ordering & Delivery: Starbucks Coffee Company Easy Mobile & Online Ordering & Delivery Skip to main content Menu Rewards Gift Cards Find a store Sign in Join now Menu Rewards Gift Cards Sign in Join now Find a store Account Card management My Rewards History Personal info Payment methods Privacy and data Settings Sign out ORDER, PICKUP AND DELIVERY OPTIONS Order and pay ahead of time Whether y...",
+      "primaryCategory": "specials",
+      "primaryCategoryLabel": "Special",
+      "categories": [
+        {
+          "id": "specials",
+          "label": "Special",
+          "terms": [
+            "offer"
+          ]
+        },
+        {
+          "id": "menu",
+          "label": "Menu update",
+          "terms": [
+            "menu"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "offer",
+        "menu"
+      ],
+      "publishedAt": "6341-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-01T13:26:16.901Z",
+      "ageDays": 0,
+      "isRecent": true,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "source_signal",
+      "associationBasis": "same_site_official_page"
+    },
+    {
+      "id": "official_page-345fddf1d33600944a",
+      "restaurantId": "osm-node-5150371021-starbucks",
+      "restaurantName": "Starbucks",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://www.starbucks.ca/",
+      "mediaUrl": "https://content-prod-live.cert.starbucks.com/binary/v2/asset/143-112130.jpg",
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Starbucks Coffee Company",
+      "summary": "Starbucks Coffee Company Skip to main content Menu Rewards Gift Cards Find a store Sign in Join now Menu Rewards Gift Cards Sign in Join now Find a store Account Card management My Rewards History Personal info Payment methods Privacy and data Settings Sign out It's a great day for coffee Start an order PSL season is here Our 2026 pumpkin menu has landed. Enjoy the one-and-only Pumpkin Spice Latte, tasty new drink...",
+      "primaryCategory": "specials",
+      "primaryCategoryLabel": "Special",
+      "categories": [
+        {
+          "id": "specials",
+          "label": "Special",
+          "terms": [
+            "offer"
+          ]
+        },
+        {
+          "id": "menu",
+          "label": "Menu update",
+          "terms": [
+            "menu"
+          ]
+        },
+        {
+          "id": "seasonal",
+          "label": "Seasonal",
+          "terms": [
+            "fall menu"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "offer",
+        "menu",
+        "fall menu"
+      ],
+      "publishedAt": "6341-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-01T13:26:17.476Z",
+      "ageDays": 0,
+      "isRecent": true,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "source_signal",
+      "associationBasis": "same_site_official_page"
+    },
+    {
+      "id": "official_page-849e22d92d6bddc08a",
+      "restaurantId": "osm-node-5150371021-starbucks",
+      "restaurantName": "Starbucks",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://www.starbucks.ca/menu",
+      "mediaUrl": "https://www.starbucks.com/weblx/images/social/summary_square.png",
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Starbucks®",
+      "summary": "Starbucks®",
+      "primaryCategory": "menu",
+      "primaryCategoryLabel": "Menu update",
+      "categories": [
+        {
+          "id": "menu",
+          "label": "Menu update",
+          "terms": [
+            "menu"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "menu"
+      ],
+      "publishedAt": "6341-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-01T13:26:17.850Z",
+      "ageDays": 0,
+      "isRecent": true,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "source_signal",
+      "associationBasis": "same_site_official_page"
+    },
+    {
+      "id": "official_page-af7d3d61941735a021",
+      "restaurantId": "osm-node-5150371021-starbucks",
+      "restaurantName": "Starbucks",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://www.starbucks.ca/menu/the-latest/pumpkin-picks",
+      "mediaUrl": "https://www.starbucks.com/weblx/images/social/summary_square.png",
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Starbucks®",
+      "summary": "Starbucks®",
+      "primaryCategory": "menu",
+      "primaryCategoryLabel": "Menu update",
+      "categories": [
+        {
+          "id": "menu",
+          "label": "Menu update",
+          "terms": [
+            "menu"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "menu"
+      ],
+      "publishedAt": "6341-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-01T13:26:18.282Z",
+      "ageDays": 0,
+      "isRecent": true,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "source_signal",
+      "associationBasis": "same_site_official_page"
+    },
+    {
+      "id": "official_page-22c48344f4308d190a",
+      "restaurantId": "osm-node-5150371021-starbucks",
+      "restaurantName": "Starbucks",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://www.starbucks.ca/menu/featured/",
+      "mediaUrl": "https://content-prod-live.cert.starbucks.com/binary/v2/asset/143-111801.jpg",
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Featured Fall Menu: Starbucks Coffee Company",
+      "summary": "Featured Fall Menu: Starbucks Coffee Company Featured Fall Menu Skip to main content Menu Rewards Gift Cards Find a store Sign in Join now Menu Rewards Gift Cards Sign in Join now Find a store Account Card management My Rewards History Personal info Payment methods Privacy and data Settings Sign out More pumpkin, please Pumpkin Spice Latte The iconic PSL is back. Real pumpkin, full-bodied espresso and fall-spice f...",
+      "primaryCategory": "menu",
+      "primaryCategoryLabel": "Menu update",
+      "categories": [
+        {
+          "id": "menu",
+          "label": "Menu update",
+          "terms": [
+            "menu"
+          ]
+        },
+        {
+          "id": "seasonal",
+          "label": "Seasonal",
+          "terms": [
+            "seasonal",
+            "summer",
+            "fall menu",
+            "holiday"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "menu",
+        "seasonal",
+        "summer",
+        "fall menu",
+        "holiday"
+      ],
+      "publishedAt": "6341-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-01T13:26:18.739Z",
+      "ageDays": 0,
+      "isRecent": true,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "source_signal",
+      "associationBasis": "same_site_official_page"
+    },
+    {
+      "id": "official_page-2c41c276a82a118301",
+      "restaurantId": "osm-node-5150371021-starbucks",
+      "restaurantName": "Starbucks",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://www.starbucks.ca/ways-to-order/delivery/",
+      "mediaUrl": "https://content-prod-live.cert.starbucks.com/binary/v2/asset/143-82602.png",
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Starbucks Delivers: Starbucks Coffee Company",
+      "summary": "Starbucks Delivers: Starbucks Coffee Company Starbucks Delivers Skip to main content Menu Rewards Gift Cards Find a store Sign in Join now Menu Rewards Gift Cards Sign in Join now Find a store Account Card management My Rewards History Personal info Payment methods Privacy and data Settings Sign out Today deserves delivery Your coffee is on its way Order Starbucks® delivery on DoorDash, SkipTheDishes or Uber Eats...",
+      "primaryCategory": "menu",
+      "primaryCategoryLabel": "Menu update",
+      "categories": [
+        {
+          "id": "menu",
+          "label": "Menu update",
+          "terms": [
+            "menu"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "menu"
+      ],
+      "publishedAt": "6341-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-01T13:26:19.155Z",
+      "ageDays": 0,
+      "isRecent": true,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "source_signal",
+      "associationBasis": "same_site_official_page"
+    },
+    {
+      "id": "official_page-df1a72aa59da11ecc8",
+      "restaurantId": "osm-node-5150371021-starbucks",
+      "restaurantName": "Starbucks",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://www.starbucks.ca/ways-to-order/",
+      "mediaUrl": "https://content-prod-live.cert.starbucks.com/binary/v2/asset/143-67484.png",
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Easy Mobile & Online Ordering & Delivery: Starbucks Coffee Company",
+      "summary": "Easy Mobile & Online Ordering & Delivery: Starbucks Coffee Company Easy Mobile & Online Ordering & Delivery Skip to main content Menu Rewards Gift Cards Find a store Sign in Join now Menu Rewards Gift Cards Sign in Join now Find a store Account Card management My Rewards History Personal info Payment methods Privacy and data Settings Sign out ORDER, PICKUP AND DELIVERY OPTIONS Order and pay ahead of time Whether y...",
+      "primaryCategory": "specials",
+      "primaryCategoryLabel": "Special",
+      "categories": [
+        {
+          "id": "specials",
+          "label": "Special",
+          "terms": [
+            "offer"
+          ]
+        },
+        {
+          "id": "menu",
+          "label": "Menu update",
+          "terms": [
+            "menu"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "offer",
+        "menu"
+      ],
+      "publishedAt": "6341-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-01T13:26:19.467Z",
+      "ageDays": 0,
+      "isRecent": true,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "source_signal",
+      "associationBasis": "same_site_official_page"
+    },
+    {
+      "id": "official_page-cc936d2f4a2b695c79",
+      "restaurantId": "osm-way-512985217-look-ho-ho",
+      "restaurantName": "Look Ho Ho",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://www.lookhoho.com/chefspecials",
+      "mediaUrl": "https://static.wixstatic.com/media/68f5d0_404a7bafac0d4559bc4f2891fa85fa36~mv2.png/v1/fill/w_3840,h_2160,al_c/68f5d0_404a7bafac0d4559bc4f2891fa85fa36~mv2.png",
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "CHEF",
+      "summary": "--> CHEF'S SPECIAL | Look Hoho Restaurant top of page HOME MENU Full Menu Combo Plates Group Dinners Chef's Specials LUNCH SPECIAL ABOUT CONTACT More Use tab to navigate through the menu items. ORDER NOW Log In Chef's Specialties CHEF'S SPECIAL Chef's Specials Lemon Chicken Selected Chicken Breast, deep fried in batter. Topped with Lemon sauce $16.50 General Tao Chicken Lightly breaded Chicken, served in our speci...",
+      "primaryCategory": "specials",
+      "primaryCategoryLabel": "Special",
+      "categories": [
+        {
+          "id": "specials",
+          "label": "Special",
+          "terms": [
+            "special",
+            "specials",
+            "$"
+          ]
+        },
+        {
+          "id": "menu",
+          "label": "Menu update",
+          "terms": [
+            "menu"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "special",
+        "specials",
+        "$",
+        "menu"
+      ],
+      "publishedAt": "3840-01-01T00:00:00.000Z",
+      "observedAt": "2026-09-01T13:26:31.774Z",
+      "ageDays": 0,
+      "isRecent": true,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "source_signal",
+      "associationBasis": "same_site_official_page"
+    },
+    {
+      "id": "official_page-c1908977816394a70f",
+      "restaurantId": "osm-node-11751643550-cafe-lunette",
+      "restaurantName": "Café Lunette",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://www.cafelunette.com/bistro-menu/",
+      "mediaUrl": "https://www.cafelunette.com/wp-content/uploads/2026/03/013A5850-Edit-scaled.jpg",
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Menus — French-inspired Classics & Drinks | Café Lunette",
+      "summary": "Our menu features classic bistro fare like oysters, French onion soup and steak frites, along with creative cocktails and global wines.",
+      "primaryCategory": "happy_hour",
+      "primaryCategoryLabel": "Happy hour",
+      "categories": [
+        {
+          "id": "happy_hour",
+          "label": "Happy hour",
+          "terms": [
+            "happy hour"
+          ]
+        },
+        {
+          "id": "specials",
+          "label": "Special",
+          "terms": [
+            "special",
+            "prix fixe"
+          ]
+        },
+        {
+          "id": "events",
+          "label": "Event",
+          "terms": [
+            "event",
+            "events"
+          ]
+        },
+        {
+          "id": "menu",
+          "label": "Menu update",
+          "terms": [
+            "menu"
+          ]
+        },
+        {
+          "id": "patio",
+          "label": "Patio",
+          "terms": [
+            "patio"
+          ]
+        },
+        {
+          "id": "brunch",
+          "label": "Brunch",
+          "terms": [
+            "brunch"
+          ]
+        },
+        {
+          "id": "reservations",
+          "label": "Reservations",
+          "terms": [
+            "reservation",
+            "reservations",
+            "book a table"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "happy hour",
+        "special",
+        "prix fixe",
+        "event",
+        "events",
+        "menu",
+        "patio",
+        "brunch",
+        "reservation",
+        "reservations",
+        "book a table"
+      ],
+      "publishedAt": "2560-01-01T00:00:00.000Z",
+      "observedAt": "2026-09-01T13:26:03.691Z",
+      "ageDays": 0,
+      "isRecent": true,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "source_signal",
+      "associationBasis": "same_site_official_page"
+    },
+    {
+      "id": "official_page-8785ee9e22f60a7533",
+      "restaurantId": "osm-node-11751643550-cafe-lunette",
+      "restaurantName": "Café Lunette",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://www.cafelunette.com/private-events/",
+      "mediaUrl": "https://www.cafelunette.com/wp-content/uploads/2022/08/Cafe-Lunette-291-scaled.jpg",
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Private Events — Event Space in Downtown Halifax | Café Lunette",
+      "summary": "For engagement parties, weddings, corporate buyouts and more, our Parisian-inspired venue is the perfect space to celebrate.",
+      "primaryCategory": "happy_hour",
+      "primaryCategoryLabel": "Happy hour",
+      "categories": [
+        {
+          "id": "happy_hour",
+          "label": "Happy hour",
+          "terms": [
+            "happy hour"
+          ]
+        },
+        {
+          "id": "events",
+          "label": "Event",
+          "terms": [
+            "event",
+            "events"
+          ]
+        },
+        {
+          "id": "menu",
+          "label": "Menu update",
+          "terms": [
+            "menu"
+          ]
+        },
+        {
+          "id": "patio",
+          "label": "Patio",
+          "terms": [
+            "patio"
+          ]
+        },
+        {
+          "id": "brunch",
+          "label": "Brunch",
+          "terms": [
+            "brunch"
+          ]
+        },
+        {
+          "id": "reservations",
+          "label": "Reservations",
+          "terms": [
+            "reservation",
+            "reservations",
+            "book a table"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "happy hour",
+        "event",
+        "events",
+        "menu",
+        "patio",
+        "brunch",
+        "reservation",
+        "reservations",
+        "book a table"
+      ],
+      "publishedAt": "2560-01-01T00:00:00.000Z",
+      "observedAt": "2026-09-01T13:26:04.050Z",
+      "ageDays": 0,
+      "isRecent": true,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "source_signal",
+      "associationBasis": "same_site_official_page"
+    },
+    {
+      "id": "official_page-bf56c1b9a4fae46619",
+      "restaurantId": "osm-node-620808566-fan-s-chinese-restaurant",
+      "restaurantName": "Fan's Chinese Restaurant",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://www.fansrestaurant.ca/",
+      "mediaUrl": "https://static.wixstatic.com/media/0a8a69_4118a950d5d645d5bd4cf1f82a9ae244%7Emv2.jpg/v1/fit/w_2500,h_1330,al_c/0a8a69_4118a950d5d645d5bd4cf1f82a9ae244%7Emv2.jpg",
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Home | Fans Chinese Restaurant | Dartmouth | Nova Scotia",
+      "summary": "Savor authentic Chinese cuisine at Fan",
+      "primaryCategory": "specials",
+      "primaryCategoryLabel": "Special",
+      "categories": [
+        {
+          "id": "specials",
+          "label": "Special",
+          "terms": [
+            "special",
+            "specials",
+            "offer",
+            "offers"
+          ]
+        },
+        {
+          "id": "events",
+          "label": "Event",
+          "terms": [
+            "event",
+            "events"
+          ]
+        },
+        {
+          "id": "menu",
+          "label": "Menu update",
+          "terms": [
+            "menu"
+          ]
+        },
+        {
+          "id": "reservations",
+          "label": "Reservations",
+          "terms": [
+            "book a table"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "special",
+        "specials",
+        "offer",
+        "offers",
+        "event",
+        "events",
+        "menu",
+        "book a table"
+      ],
+      "publishedAt": "2500-01-01T00:00:00.000Z",
+      "observedAt": "2026-09-01T13:26:13.732Z",
+      "ageDays": 0,
+      "isRecent": true,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "source_signal",
+      "associationBasis": "same_site_official_page"
+    },
+    {
+      "id": "official_page-f508123dbd388b726c",
+      "restaurantId": "osm-node-11282329952-freeman-s-little-new-york",
+      "restaurantName": "Freeman's Little New York",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://www.freemanspizza.ca/",
+      "mediaUrl": "https://static.wixstatic.com/media/646157_f5ae8271dd6e43ebb06b97169a29c3ba~mv2_d_3000_2000_s_2.jpg/v1/fill/w_2500,h_1666,al_c/646157_f5ae8271dd6e43ebb06b97169a29c3ba~mv2_d_3000_2000_s_2.jpg",
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Freeman",
+      "summary": "Freeman",
+      "primaryCategory": "events",
+      "primaryCategoryLabel": "Event",
+      "categories": [
+        {
+          "id": "events",
+          "label": "Event",
+          "terms": [
+            "event",
+            "events"
+          ]
+        },
+        {
+          "id": "menu",
+          "label": "Menu update",
+          "terms": [
+            "menu"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "event",
+        "events",
+        "menu"
+      ],
+      "publishedAt": "2500-01-01T00:00:00.000Z",
+      "observedAt": "2026-09-01T13:26:13.795Z",
+      "ageDays": 0,
+      "isRecent": true,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "source_signal",
+      "associationBasis": "same_site_official_page"
+    },
+    {
+      "id": "official_page-cf2813e1881bf2c3c2",
+      "restaurantId": "osm-node-620808566-fan-s-chinese-restaurant",
+      "restaurantName": "Fan's Chinese Restaurant",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://www.fansrestaurant.ca/dim-sum-menu",
+      "mediaUrl": "https://static.wixstatic.com/media/0a8a69_4118a950d5d645d5bd4cf1f82a9ae244%7Emv2.jpg/v1/fit/w_2500,h_1330,al_c/0a8a69_4118a950d5d645d5bd4cf1f82a9ae244%7Emv2.jpg",
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Dim Sum Menu | Fans Chinese Cuisine",
+      "summary": "--> Dim Sum Menu | Fans Chinese Cuisine top of page Log In Home Dim Sum Menu Fusion Menu Book a Table Online Orders Contact Experiences More Use tab to navigate through the menu items. DIM SUM Only available Saturday & Sunday 11am-3pm Steamed Savory Fan's Shrimp Dumpling $7.10 Siu Mai $6.50 Leek & Shrimp Dumpling $6.50 Diced Meat & Peanut Dumpling $6.00 Shanghai Pork Dumpling $6.50 Steamed Spare Ribs with Taro $6....",
+      "primaryCategory": "specials",
+      "primaryCategoryLabel": "Special",
+      "categories": [
+        {
+          "id": "specials",
+          "label": "Special",
+          "terms": [
+            "special",
+            "specials",
+            "$"
+          ]
+        },
+        {
+          "id": "events",
+          "label": "Event",
+          "terms": [
+            "event",
+            "events"
+          ]
+        },
+        {
+          "id": "menu",
+          "label": "Menu update",
+          "terms": [
+            "menu"
+          ]
+        },
+        {
+          "id": "reservations",
+          "label": "Reservations",
+          "terms": [
+            "book a table"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "special",
+        "specials",
+        "$",
+        "event",
+        "events",
+        "menu",
+        "book a table"
+      ],
+      "publishedAt": "2500-01-01T00:00:00.000Z",
+      "observedAt": "2026-09-01T13:26:14.311Z",
+      "ageDays": 0,
+      "isRecent": true,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "source_signal",
+      "associationBasis": "same_site_official_page"
+    },
+    {
+      "id": "official_page-b0d0b49ece98f94f55",
+      "restaurantId": "osm-node-620808566-fan-s-chinese-restaurant",
+      "restaurantName": "Fan's Chinese Restaurant",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://www.fansrestaurant.ca/reservations",
+      "mediaUrl": "https://static.wixstatic.com/media/0a8a69_4118a950d5d645d5bd4cf1f82a9ae244%7Emv2.jpg/v1/fit/w_2500,h_1330,al_c/0a8a69_4118a950d5d645d5bd4cf1f82a9ae244%7Emv2.jpg",
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Book a Table | Fans Chinese Cuisine",
+      "summary": "--> Book a Table | Fans Chinese Cuisine top of page Log In Home Dim Sum Menu Fusion Menu Book a Table Online Orders Contact Experiences More Use tab to navigate through the menu items. Home Book a Table Request a reservation Select your details and we’ll try to get the best seats for you. Party size 2 guests Date Time Home Dim Sum Menu Fusion Menu Reserve a Table Online Orders Contact Contact +1(902)469-9165 fansr...",
+      "primaryCategory": "specials",
+      "primaryCategoryLabel": "Special",
+      "categories": [
+        {
+          "id": "specials",
+          "label": "Special",
+          "terms": [
+            "special"
+          ]
+        },
+        {
+          "id": "events",
+          "label": "Event",
+          "terms": [
+            "event",
+            "events",
+            "party"
+          ]
+        },
+        {
+          "id": "menu",
+          "label": "Menu update",
+          "terms": [
+            "menu"
+          ]
+        },
+        {
+          "id": "reservations",
+          "label": "Reservations",
+          "terms": [
+            "reservation",
+            "reservations",
+            "book a table"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "special",
+        "event",
+        "events",
+        "party",
+        "menu",
+        "reservation",
+        "reservations",
+        "book a table"
+      ],
+      "publishedAt": "2500-01-01T00:00:00.000Z",
+      "observedAt": "2026-09-01T13:26:16.491Z",
+      "ageDays": 0,
+      "isRecent": true,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "source_signal",
+      "associationBasis": "same_site_official_page"
+    },
+    {
+      "id": "official_page-9731229a0556b04c9c",
+      "restaurantId": "osm-node-620808566-fan-s-chinese-restaurant",
+      "restaurantName": "Fan's Chinese Restaurant",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://www.fansrestaurant.ca/online-ordering",
+      "mediaUrl": "https://static.wixstatic.com/media/0a8a69_4118a950d5d645d5bd4cf1f82a9ae244%7Emv2.jpg/v1/fit/w_2500,h_1330,al_c/0a8a69_4118a950d5d645d5bd4cf1f82a9ae244%7Emv2.jpg",
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Online Orders | Fans Chinese Cuisine",
+      "summary": "--> Online Orders | Fans Chinese Cuisine top of page Log In Home Dim Sum Menu Fusion Menu Book a Table Online Orders Contact Experiences More Use tab to navigate through the menu items. Windmill Road Online Ordering You can order online! Browse our menu items and choose what you’d like to order from us. Not Accepting Orders Delivery fee - Min. order - C$0.00 Free delivery above Pickup Delivery Dine-In ​ Change Pic...",
+      "primaryCategory": "specials",
+      "primaryCategoryLabel": "Special",
+      "categories": [
+        {
+          "id": "specials",
+          "label": "Special",
+          "terms": [
+            "special",
+            "specials",
+            "$"
+          ]
+        },
+        {
+          "id": "events",
+          "label": "Event",
+          "terms": [
+            "event",
+            "events"
+          ]
+        },
+        {
+          "id": "menu",
+          "label": "Menu update",
+          "terms": [
+            "menu"
+          ]
+        },
+        {
+          "id": "reservations",
+          "label": "Reservations",
+          "terms": [
+            "book a table"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "special",
+        "specials",
+        "$",
+        "event",
+        "events",
+        "menu",
+        "book a table"
+      ],
+      "publishedAt": "2500-01-01T00:00:00.000Z",
+      "observedAt": "2026-09-01T13:26:16.691Z",
+      "ageDays": 0,
+      "isRecent": true,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "source_signal",
+      "associationBasis": "same_site_official_page"
+    },
+    {
+      "id": "official_page-fecfcd8eb60c812d59",
+      "restaurantId": "osm-node-7139174640-kajohn-thai",
+      "restaurantName": "Kajohn Thai",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://www.kajohnthairestaurant.ca/",
+      "mediaUrl": "https://static.wixstatic.com/media/935b09_7684f855e5c346db87d9d1f3f4fee56c%7Emv2.jpg/v1/fit/w_2500,h_1330,al_c/935b09_7684f855e5c346db87d9d1f3f4fee56c%7Emv2.jpg",
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Best Thai Food in Halifax | Kajohn Thai Restaurant",
+      "summary": "Enjoy the best Thai food in Halifax at Kajohn Thai Restaurant. Dine in, take out, or order delivery today!",
+      "primaryCategory": "specials",
+      "primaryCategoryLabel": "Special",
+      "categories": [
+        {
+          "id": "specials",
+          "label": "Special",
+          "terms": [
+            "offer"
+          ]
+        },
+        {
+          "id": "menu",
+          "label": "Menu update",
+          "terms": [
+            "menu"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "offer",
+        "menu"
+      ],
+      "publishedAt": "2500-01-01T00:00:00.000Z",
+      "observedAt": "2026-09-01T13:26:27.300Z",
+      "ageDays": 0,
+      "isRecent": true,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "source_signal",
+      "associationBasis": "same_site_official_page"
+    },
+    {
+      "id": "official_page-6ca1bcb99da8148df2",
+      "restaurantId": "osm-node-7139174640-kajohn-thai",
+      "restaurantName": "Kajohn Thai",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://www.kajohnthairestaurant.ca/menu",
+      "mediaUrl": "https://static.wixstatic.com/media/935b09_dfe29aa9c04d4c4893131b68e5f779f3~mv2.png/v1/fit/w_2500,h_1330,al_c/935b09_dfe29aa9c04d4c4893131b68e5f779f3~mv2.png",
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "COMBO Lunch Special (11AM-3PM)",
+      "summary": "--> COMBO Lunch Special (11AM - 3PM) | Kajohn Thai top of page KAJOHN THAI RESTAURANT MENU ABOUT US FAQ THAI CORNER MENU COMBO Lunch Special (11AM-3PM) COMBO Protein Choices : Chicken, Beef(+$1), Pork, Tofu, OR Shrimp(+$1). COMBO Lunch Special (11AM-3PM) COMBO Protein Choices : Chicken, Beef(+$1), Pork, Tofu, OR Shrimp(+$1). COMBO LUNCH SPECIAL $16.99 (11AM - 3PM) All Combos come with 1 Spring Roll + 1 Hot & Sour...",
+      "primaryCategory": "specials",
+      "primaryCategoryLabel": "Special",
+      "categories": [
+        {
+          "id": "specials",
+          "label": "Special",
+          "terms": [
+            "special",
+            "$"
+          ]
+        },
+        {
+          "id": "live_music",
+          "label": "Live music",
+          "terms": [
+            "show"
+          ]
+        },
+        {
+          "id": "menu",
+          "label": "Menu update",
+          "terms": [
+            "menu"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "special",
+        "$",
+        "show",
+        "menu"
+      ],
+      "publishedAt": "2500-01-01T00:00:00.000Z",
+      "observedAt": "2026-09-01T13:26:27.884Z",
+      "ageDays": 0,
+      "isRecent": true,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "source_signal",
+      "associationBasis": "same_site_official_page"
+    },
+    {
+      "id": "official_page-a9f2cf2721466cd654",
+      "restaurantId": "osm-way-512985217-look-ho-ho",
+      "restaurantName": "Look Ho Ho",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://www.lookhoho.com/",
+      "mediaUrl": "https://static.wixstatic.com/media/68f5d0_47aa2a21c97a44499efa3eece8436762~mv2.jpg/v1/fill/w_2500,h_1406,al_c/68f5d0_47aa2a21c97a44499efa3eece8436762~mv2.jpg",
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Look Ho Ho Restaurant",
+      "summary": "Since 1959, Look Ho Ho has been serving Canadian Chinese for eat-in and take-out dinners. Sprawling menu, friendly staff, steeped in history.",
+      "primaryCategory": "specials",
+      "primaryCategoryLabel": "Special",
+      "categories": [
+        {
+          "id": "specials",
+          "label": "Special",
+          "terms": [
+            "special",
+            "specials"
+          ]
+        },
+        {
+          "id": "menu",
+          "label": "Menu update",
+          "terms": [
+            "menu"
+          ]
+        },
+        {
+          "id": "reservations",
+          "label": "Reservations",
+          "terms": [
+            "reservation"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "special",
+        "specials",
+        "menu",
+        "reservation"
+      ],
+      "publishedAt": "2500-01-01T00:00:00.000Z",
+      "observedAt": "2026-09-01T13:26:31.158Z",
+      "ageDays": 0,
+      "isRecent": true,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "source_signal",
+      "associationBasis": "same_site_official_page"
+    },
+    {
+      "id": "official_page-588db27b739d5c9de1",
+      "restaurantId": "osm-way-512985217-look-ho-ho",
+      "restaurantName": "Look Ho Ho",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://www.lookhoho.com/fullmenu",
+      "mediaUrl": "https://static.wixstatic.com/media/68f5d0_404a7bafac0d4559bc4f2891fa85fa36~mv2.png/v1/fit/w_2500,h_1330,al_c/68f5d0_404a7bafac0d4559bc4f2891fa85fa36~mv2.png",
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "CHEF",
+      "summary": "--> CHEF'S SPECIAL | Look Hoho Restaurant top of page HOME MENU Full Menu Combo Plates Group Dinners Chef's Specials LUNCH SPECIAL ABOUT CONTACT More Use tab to navigate through the menu items. ORDER NOW Log In Chinese Cuisine Appetizers ​ Egg Roll Vegetable Spring Roll(Home Make) Sweet and Sour Wonton (12) Deep Fried Chicken Wings(8Pcs) Honey Chicken Wings(8Pcs) BBQ Pork Slices Pan Fried Pork Dumplings (6) Pan Fr...",
+      "primaryCategory": "specials",
+      "primaryCategoryLabel": "Special",
+      "categories": [
+        {
+          "id": "specials",
+          "label": "Special",
+          "terms": [
+            "special",
+            "specials"
+          ]
+        },
+        {
+          "id": "menu",
+          "label": "Menu update",
+          "terms": [
+            "menu"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "special",
+        "specials",
+        "menu"
+      ],
+      "publishedAt": "2500-01-01T00:00:00.000Z",
+      "observedAt": "2026-09-01T13:26:31.558Z",
+      "ageDays": 0,
+      "isRecent": true,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "source_signal",
+      "associationBasis": "same_site_official_page"
+    },
+    {
+      "id": "official_page-cc031a4eea754da135",
+      "restaurantId": "osm-node-5150087023-peter-s-pizzeria",
+      "restaurantName": "Peter's Pizzeria",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://www.peterspizzeriahfx.com/",
+      "mediaUrl": "https://static.wixstatic.com/media/373814_b53408bc2a854106bf5246c834de3c7c%7Emv2.png/v1/fit/w_2500,h_1330,al_c/373814_b53408bc2a854106bf5246c834de3c7c%7Emv2.png",
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Home | Peters Pizzeria",
+      "summary": "--> Home | Peters Pizzeria top of page Home Location & Hours Menu Order Online More Use tab to navigate through the menu items. Log In *Offer valid only on orders of $30 and above. This promotion is available online only and cannot be applied to previous purchases. Offer subject to change without notice. See Our Menu ORDER TAKE OUT EAT HERE Catering FANCY A PIZZA PARTY? Contact Us locations COME GRAB A SLICE! 5391...",
+      "primaryCategory": "specials",
+      "primaryCategoryLabel": "Special",
+      "categories": [
+        {
+          "id": "specials",
+          "label": "Special",
+          "terms": [
+            "offer",
+            "promo",
+            "promotion",
+            "$"
+          ]
+        },
+        {
+          "id": "events",
+          "label": "Event",
+          "terms": [
+            "party"
+          ]
+        },
+        {
+          "id": "menu",
+          "label": "Menu update",
+          "terms": [
+            "menu"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "offer",
+        "promo",
+        "promotion",
+        "$",
+        "party",
+        "menu"
+      ],
+      "publishedAt": "2500-01-01T00:00:00.000Z",
+      "observedAt": "2026-09-01T13:26:43.518Z",
+      "ageDays": 0,
+      "isRecent": true,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "source_signal",
+      "associationBasis": "same_site_official_page"
+    },
+    {
+      "id": "official_page-40b061fb30f0aaf075",
+      "restaurantId": "osm-node-5150087023-peter-s-pizzeria",
+      "restaurantName": "Peter's Pizzeria",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://www.peterspizzeriahfx.com/menu-1",
+      "mediaUrl": "https://static.wixstatic.com/media/373814_b53408bc2a854106bf5246c834de3c7c~mv2.png/v1/fit/w_2500,h_1330,al_c/373814_b53408bc2a854106bf5246c834de3c7c~mv2.png",
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Pizza",
+      "summary": "--> Pizza | Peters Pizzeria top of page Home Location & Hours Menu Order Online More Use tab to navigate through the menu items. Log In Pizza Appetizers & Salads From the Fryer Pasta From the Grill Specials Beverages Dipping Sauces Pizza 9\" Peter's Originals Peter's Original Pizzas are loaded with extra toppings and extra cheese Peters Special Loaded with Pepperoni, Bacon Onion Mushrooms, Green Peppers, and Mozzar...",
+      "primaryCategory": "specials",
+      "primaryCategoryLabel": "Special",
+      "categories": [
+        {
+          "id": "specials",
+          "label": "Special",
+          "terms": [
+            "special",
+            "specials"
+          ]
+        },
+        {
+          "id": "live_music",
+          "label": "Live music",
+          "terms": [
+            "show"
+          ]
+        },
+        {
+          "id": "menu",
+          "label": "Menu update",
+          "terms": [
+            "menu"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "special",
+        "specials",
+        "show",
+        "menu"
+      ],
+      "publishedAt": "2500-01-01T00:00:00.000Z",
+      "observedAt": "2026-09-01T13:26:44.120Z",
+      "ageDays": 0,
+      "isRecent": true,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "source_signal",
+      "associationBasis": "same_site_official_page"
+    },
+    {
+      "id": "official_page-15528069bb3a249b71",
+      "restaurantId": "osm-node-5150087023-peter-s-pizzeria",
+      "restaurantName": "Peter's Pizzeria",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://www.peterspizzeriahfx.com/online-ordering",
+      "mediaUrl": "https://static.wixstatic.com/media/373814_b53408bc2a854106bf5246c834de3c7c%7Emv2.png/v1/fit/w_2500,h_1330,al_c/373814_b53408bc2a854106bf5246c834de3c7c%7Emv2.png",
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Order Online | Peters Pizzeria",
+      "summary": "--> Order Online | Peters Pizzeria top of page Home Location & Hours Menu Order Online More Use tab to navigate through the menu items. Log In Inglis Street Online Ordering You can order online! Browse our menu items and choose what you’d like to order from us. Accepting Orders Delivery fee - C$0.00 Min. order - C$10.00 Free delivery above Pickup Delivery Dine-In Delivery time: Up to 70 minutes Change Delivery Add...",
+      "primaryCategory": "specials",
+      "primaryCategoryLabel": "Special",
+      "categories": [
+        {
+          "id": "specials",
+          "label": "Special",
+          "terms": [
+            "special",
+            "specials",
+            "$"
+          ]
+        },
+        {
+          "id": "menu",
+          "label": "Menu update",
+          "terms": [
+            "menu"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "special",
+        "specials",
+        "$",
+        "menu"
+      ],
+      "publishedAt": "2500-01-01T00:00:00.000Z",
+      "observedAt": "2026-09-01T13:26:46.244Z",
+      "ageDays": 0,
+      "isRecent": true,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "source_signal",
+      "associationBasis": "same_site_official_page"
+    },
+    {
+      "id": "official_page-4b2703ac4473e6b33a",
+      "restaurantId": "osm-node-5150087023-peter-s-pizzeria",
+      "restaurantName": "Peter's Pizzeria",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://www.peterspizzeriahfx.com/order-online",
+      "mediaUrl": "https://static.wixstatic.com/media/373814_b53408bc2a854106bf5246c834de3c7c%7Emv2.png/v1/fit/w_2500,h_1330,al_c/373814_b53408bc2a854106bf5246c834de3c7c%7Emv2.png",
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Order Online | Peters Pizzeria",
+      "summary": "--> Order Online | Peters Pizzeria top of page Home Location & Hours Menu Order Online More Use tab to navigate through the menu items. Log In Check out our new ordering page Ordering from this page is no longer available Go to New Ordering Page bottom of page",
+      "primaryCategory": "menu",
+      "primaryCategoryLabel": "Menu update",
+      "categories": [
+        {
+          "id": "menu",
+          "label": "Menu update",
+          "terms": [
+            "menu"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "menu"
+      ],
+      "publishedAt": "2500-01-01T00:00:00.000Z",
+      "observedAt": "2026-09-01T13:26:50.567Z",
+      "ageDays": 0,
+      "isRecent": true,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "source_signal",
+      "associationBasis": "same_site_official_page"
+    },
+    {
+      "id": "official_page-f7b5b7f94b3d680e72",
+      "restaurantId": "osm-node-11552061304-sushi-shige",
+      "restaurantName": "Sushi Shige",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://www.shige.ca/",
+      "mediaUrl": "https://static.wixstatic.com/media/17680c_f1d0a3ad808c4d8fb090e7d8ac5781e0%7Emv2.png/v1/fit/w_2500,h_1330,al_c/17680c_f1d0a3ad808c4d8fb090e7d8ac5781e0%7Emv2.png",
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Home | Shige",
+      "summary": "--> Home | Shige top of page ORDER ONLINE PlCKUP DELIVERY LOG IN Welcome to Sushi Shige Cozy and authentic Japanese restaurant offering upmarket sushi, kitchen entrees, and omakase meals. Online order take out Words from Our Culinary Artisan Welcome and thank you for choosing to dine at SUSHI SHIGE JAPANESE RESTAURANT. Our chef, Shigeru Fukuyama has been studying and working to perfect the art of Sushi and Kitchen...",
+      "primaryCategory": "specials",
+      "primaryCategoryLabel": "Special",
+      "categories": [
+        {
+          "id": "specials",
+          "label": "Special",
+          "terms": [
+            "special",
+            "deal",
+            "deals",
+            "offer"
+          ]
+        },
+        {
+          "id": "events",
+          "label": "Event",
+          "terms": [
+            "market"
+          ]
+        },
+        {
+          "id": "menu",
+          "label": "Menu update",
+          "terms": [
+            "menu"
+          ]
+        },
+        {
+          "id": "seasonal",
+          "label": "Seasonal",
+          "terms": [
+            "holiday"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "special",
+        "deal",
+        "deals",
+        "offer",
+        "market",
+        "menu",
+        "holiday"
+      ],
+      "publishedAt": "2500-01-01T00:00:00.000Z",
+      "observedAt": "2026-09-01T13:26:59.257Z",
+      "ageDays": 0,
+      "isRecent": true,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "source_signal",
+      "associationBasis": "same_site_official_page"
+    },
+    {
+      "id": "official_page-9889051b6935b6cc79",
+      "restaurantId": "osm-node-11001023964-lockside-canteen",
+      "restaurantName": "Lockside Canteen",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://lemon.dog/",
+      "mediaUrl": "https://lemondog1594a.zapwp.com/wp-content/uploads/2021/08/IMG_0624-scaled-e1652897066693.webp",
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Halifax Plant Based Ice Cream @ Dartmouth | Lemon Dogs",
+      "summary": "Lemon Dogs makes small batch vegan ice cream for pickup or delivery. We were previously Halifax's only dedicated meatless burger joint!",
+      "primaryCategory": "specials",
+      "primaryCategoryLabel": "Special",
+      "categories": [
+        {
+          "id": "specials",
+          "label": "Special",
+          "terms": [
+            "offer"
+          ]
+        },
+        {
+          "id": "events",
+          "label": "Event",
+          "terms": [
+            "event",
+            "pop-up"
+          ]
+        },
+        {
+          "id": "menu",
+          "label": "Menu update",
+          "terms": [
+            "menu"
+          ]
+        },
+        {
+          "id": "seasonal",
+          "label": "Seasonal",
+          "terms": [
+            "seasonal",
+            "summer"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "offer",
+        "event",
+        "pop-up",
+        "menu",
+        "seasonal",
+        "summer"
+      ],
+      "publishedAt": "2048-01-01T00:00:00.000Z",
+      "observedAt": "2026-09-01T13:26:30.551Z",
+      "ageDays": 0,
+      "isRecent": true,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "source_signal",
+      "associationBasis": "same_site_official_page"
+    },
+    {
+      "id": "official_page-c5d5f698870ec6e707",
+      "restaurantId": "osm-node-4550004778-st-louis-bar-and-grill",
+      "restaurantName": "St. Louis Bar & Grill",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://locations.stlouiswings.com/ns-dartmouth-2201",
+      "mediaUrl": "https://www.stlouiswings.com/wp-content/uploads/2026/07/Wingsanity-2026-Home-Page-Banner_Banner-scaled-1.png",
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Best Wings & Sports Bar | St. Louis Bar & Grill",
+      "summary": "St. Louis Bar & Grill in the Dartmouth Centre is proud to be 100% Canadian owned and operated. Best known for our famous St. Louis Wings, we are thrilled to introduce our new menu featuring Steaks, Bowls, Pastas, and Pizzas. As the home of the $4 Happy Hour and Half-Price Wings Tuesdays, we offer great food and unbeatable value every day of the week. Whether you're looking for your new favourite sports bar, a fami...",
+      "primaryCategory": "happy_hour",
+      "primaryCategoryLabel": "Happy hour",
+      "categories": [
+        {
+          "id": "happy_hour",
+          "label": "Happy hour",
+          "terms": [
+            "happy hour"
+          ]
+        },
+        {
+          "id": "specials",
+          "label": "Special",
+          "terms": [
+            "deal",
+            "deals",
+            "offer",
+            "offers",
+            "$"
+          ]
+        },
+        {
+          "id": "menu",
+          "label": "Menu update",
+          "terms": [
+            "menu"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "happy hour",
+        "deal",
+        "deals",
+        "offer",
+        "offers",
+        "$",
+        "menu"
+      ],
+      "publishedAt": "2048-01-01T00:00:00.000Z",
+      "observedAt": "2026-09-01T13:26:53.859Z",
+      "ageDays": 0,
+      "isRecent": true,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "source_signal",
+      "associationBasis": "same_site_official_page"
+    },
+    {
+      "id": "official_page-98df9cc87e75a080fa",
+      "restaurantId": "osm-node-5150122721-good-robot-brewing-company",
+      "restaurantName": "Good Robot Brewing Company",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://goodrobotbrewing.ca/events/",
+      "mediaUrl": "https://goodrobotbrewing.ca/wp-content/themes/goodrobot/img/screenshot.jpg",
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Events - Good Robot Brewing Co.",
+      "summary": "Events Archive - Good Robot Brewing Co.",
+      "primaryCategory": "happy_hour",
+      "primaryCategoryLabel": "Happy hour",
+      "categories": [
+        {
+          "id": "happy_hour",
+          "label": "Happy hour",
+          "terms": [
+            "happy hour"
+          ]
+        },
+        {
+          "id": "events",
+          "label": "Event",
+          "terms": [
+            "event",
+            "events"
+          ]
+        },
+        {
+          "id": "live_music",
+          "label": "Live music",
+          "terms": [
+            "trivia"
+          ]
+        },
+        {
+          "id": "menu",
+          "label": "Menu update",
+          "terms": [
+            "menu"
+          ]
+        },
+        {
+          "id": "patio",
+          "label": "Patio",
+          "terms": [
+            "beer garden"
+          ]
+        },
+        {
+          "id": "seasonal",
+          "label": "Seasonal",
+          "terms": [
+            "summer",
+            "christmas"
+          ]
+        },
+        {
+          "id": "reservations",
+          "label": "Reservations",
+          "terms": [
+            "reservation",
+            "reservations"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "happy hour",
+        "event",
+        "events",
+        "trivia",
+        "menu",
+        "beer garden",
+        "summer",
+        "christmas",
+        "reservation",
+        "reservations"
+      ],
+      "publishedAt": "2027-01-18T23:00:00.000Z",
+      "observedAt": "2026-09-01T13:26:25.119Z",
+      "ageDays": 0,
+      "isRecent": true,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "source_signal",
+      "associationBasis": "same_site_official_page"
+    },
+    {
+      "id": "official_page-477deaf7a9b99a6e87",
+      "restaurantId": "osm-node-37132580-durty-nelly-s-irish-pub",
+      "restaurantName": "Durty Nelly's Irish Pub",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://durtynellys.ca/events/",
+      "mediaUrl": "https://durtynellys.ca/wp-content/uploads/2025/05/DurtyNellys-20230616-12-1-scaled.jpg",
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Events from September 1 – September 7 – Durty Nelly's",
+      "summary": "Events from September 1 – September 7 – Durty Nelly's Skip to content Home About Menu Food Drinks Sunday Roast Entertainment Contact RESERVATIONS Home About Menu Food Drinks Sunday Roast Entertainment Contact RESERVATIONS Menu Archives Events 12 events found. Events Events Search and Views Navigation Search Enter Keyword. Search for Events by Keyword. Find Events Event Views Navigation List List Month Today Now No...",
+      "primaryCategory": "events",
+      "primaryCategoryLabel": "Event",
+      "categories": [
+        {
+          "id": "events",
+          "label": "Event",
+          "terms": [
+            "event",
+            "events"
+          ]
+        },
+        {
+          "id": "live_music",
+          "label": "Live music",
+          "terms": [
+            "live music",
+            "show",
+            "band",
+            "trivia"
+          ]
+        },
+        {
+          "id": "menu",
+          "label": "Menu update",
+          "terms": [
+            "menu"
+          ]
+        },
+        {
+          "id": "seasonal",
+          "label": "Seasonal",
+          "terms": [
+            "seasonal",
+            "summer"
+          ]
+        },
+        {
+          "id": "reservations",
+          "label": "Reservations",
+          "terms": [
+            "reservation",
+            "reservations"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "event",
+        "events",
+        "live music",
+        "show",
+        "band",
+        "trivia",
+        "menu",
+        "seasonal",
+        "summer",
+        "reservation",
+        "reservations"
+      ],
+      "publishedAt": "2026-09-07T00:00:00.000Z",
+      "observedAt": "2026-09-01T13:26:13.183Z",
+      "ageDays": 0,
+      "isRecent": true,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "source_signal",
+      "associationBasis": "same_site_official_page"
+    },
+    {
+      "id": "official_page-0036c2f0842461da5f",
+      "restaurantId": "osm-node-2623077568-salvatore-s-pizzaiolo-trattoria",
+      "restaurantName": "Salvatore's Pizzaiolo Trattoria",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://www.salvatorespizza.ca/",
+      "mediaUrl": "https://salvatorespizza.ca/wp-content/uploads/2016/11/cards.png",
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Salvatore's Pizzaiolo Trattoria | Authentic New York Italian Pizza | Hydrostone Market - Halifax, NS, Nova Scotia",
+      "summary": "Laid-back pizzeria offering gourmet thin-crust New York style authentic Italian Pizza, Hot Hero Sandwiches & Cannoli for Dessert. Located in the Hydrostone Market, Halifax, NS, Nova Scotia",
+      "primaryCategory": "specials",
+      "primaryCategoryLabel": "Special",
+      "categories": [
+        {
+          "id": "specials",
+          "label": "Special",
+          "terms": [
+            "offer"
+          ]
+        },
+        {
+          "id": "events",
+          "label": "Event",
+          "terms": [
+            "market"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "offer",
+        "market"
+      ],
+      "publishedAt": null,
+      "observedAt": "2026-09-01T13:26:48.934Z",
+      "ageDays": null,
+      "isRecent": false,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "needs_date_review",
+      "associationBasis": "same_site_official_page"
+    },
+    {
+      "id": "official_page-9023ecc5b9a6434ceb",
+      "restaurantId": "osm-node-5647941372-orso-pub-and-grill",
+      "restaurantName": "Orso Pub & Grill",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://orsopub.ca/contact/",
+      "mediaUrl": "https://orsopub.ca/wp-content/themes/orso/assets/img/background/theme-form-back.png",
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Contact – Orso Pub & Grill",
+      "summary": "Grill Book table Email us : [email protected] Call us : +1 902 406 2001 Our location : 1859 Brunswick St Halifax, NS B3J 2G8 Canada instagram facebook Toggle navigation Home About Menu Full Menu Drinks Menu Gallery Reservation Contact Our location 1859 Brunswick St Halifax, NS B3J 2G8 Canada Our contact +1 902 406 2001 Our Email [email protected] Contact us Customer care Orso Pub & Grill [email protected] +1 902 4...",
+      "primaryCategory": "menu",
+      "primaryCategoryLabel": "Menu update",
+      "categories": [
+        {
+          "id": "menu",
+          "label": "Menu update",
+          "terms": [
+            "menu"
+          ]
+        },
+        {
+          "id": "reservations",
+          "label": "Reservations",
+          "terms": [
+            "reservation"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "menu",
+        "reservation"
+      ],
+      "publishedAt": null,
+      "observedAt": "2026-09-01T13:26:45.881Z",
+      "ageDays": null,
+      "isRecent": false,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "needs_date_review",
+      "associationBasis": "same_site_official_page"
+    },
+    {
+      "id": "official_page-7271da8a9d4372b0aa",
+      "restaurantId": "osm-node-5647941372-orso-pub-and-grill",
+      "restaurantName": "Orso Pub & Grill",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://orsopub.ca/about/",
+      "mediaUrl": "https://orsopub.ca/wp-content/uploads/2017/11/about-1.jpg",
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "About – Orso Pub & Grill",
+      "summary": "Grill Book table Email us : [email protected] Call us : +1 902 406 2001 Our location : 1859 Brunswick St Halifax, NS B3J 2G8 Canada instagram facebook Toggle navigation Home About Menu Full Menu Drinks Menu Gallery Reservation Contact About We couldn’t BEAR to use anything but premium ingredients from local sources to create an unforgettable edible experience. Our lunch and dinner menus reflect Chef Marcin’s Polis...",
+      "primaryCategory": "specials",
+      "primaryCategoryLabel": "Special",
+      "categories": [
+        {
+          "id": "specials",
+          "label": "Special",
+          "terms": [
+            "offer"
+          ]
+        },
+        {
+          "id": "menu",
+          "label": "Menu update",
+          "terms": [
+            "menu",
+            "dinner menu"
+          ]
+        },
+        {
+          "id": "reservations",
+          "label": "Reservations",
+          "terms": [
+            "reservation"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "offer",
+        "menu",
+        "dinner menu",
+        "reservation"
+      ],
+      "publishedAt": null,
+      "observedAt": "2026-09-01T13:26:45.382Z",
+      "ageDays": null,
+      "isRecent": false,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "needs_date_review",
+      "associationBasis": "same_site_official_page"
+    },
+    {
+      "id": "official_page-ccdd6ecd4a2179ed0a",
+      "restaurantId": "osm-node-5647941372-orso-pub-and-grill",
+      "restaurantName": "Orso Pub & Grill",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://orsopub.ca/drinks-menu/",
+      "mediaUrl": "https://orsopub.ca/wp-content/themes/orso/assets/img/all/foot-001%20(1).jpg",
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Drinks Menu – Orso Pub & Grill",
+      "summary": "Drinks Menu – Orso Pub & Grill Book table Email us : [email protected] Call us : +1 902 406 2001 Our location : 1859 Brunswick St Halifax, NS B3J 2G8 Canada instagram facebook Toggle navigation Home About Menu Full Menu Drinks Menu Gallery Reservation Contact Drinks Menu Download Our Menu Customer care Orso Pub & Grill [email protected] +1 902 406 2001 Your account About Gallery Reservation Contact Us Gallery View...",
+      "primaryCategory": "menu",
+      "primaryCategoryLabel": "Menu update",
+      "categories": [
+        {
+          "id": "menu",
+          "label": "Menu update",
+          "terms": [
+            "menu"
+          ]
+        },
+        {
+          "id": "reservations",
+          "label": "Reservations",
+          "terms": [
+            "reservation"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "menu",
+        "reservation"
+      ],
+      "publishedAt": null,
+      "observedAt": "2026-09-01T13:26:44.900Z",
+      "ageDays": null,
+      "isRecent": false,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "needs_date_review",
+      "associationBasis": "same_site_official_page"
+    },
+    {
+      "id": "official_page-e97c2059bf7755c26c",
+      "restaurantId": "osm-node-5647941372-orso-pub-and-grill",
+      "restaurantName": "Orso Pub & Grill",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://orsopub.ca/full-menu/",
+      "mediaUrl": "https://orsopub.ca/wp-content/themes/orso/assets/img/all/foot-001%20(1).jpg",
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Full Menu – Orso Pub & Grill",
+      "summary": "Full Menu – Orso Pub & Grill Book table Email us : [email protected] Call us : +1 902 406 2001 Our location : 1859 Brunswick St Halifax, NS B3J 2G8 Canada instagram facebook Toggle navigation Home About Menu Full Menu Drinks Menu Gallery Reservation Contact Full Menu Download Our Menu Customer care Orso Pub & Grill [email protected] +1 902 406 2001 Your account About Gallery Reservation Contact Us Gallery View mor...",
+      "primaryCategory": "menu",
+      "primaryCategoryLabel": "Menu update",
+      "categories": [
+        {
+          "id": "menu",
+          "label": "Menu update",
+          "terms": [
+            "menu"
+          ]
+        },
+        {
+          "id": "reservations",
+          "label": "Reservations",
+          "terms": [
+            "reservation"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "menu",
+        "reservation"
+      ],
+      "publishedAt": null,
+      "observedAt": "2026-09-01T13:26:44.392Z",
+      "ageDays": null,
+      "isRecent": false,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "needs_date_review",
+      "associationBasis": "same_site_official_page"
+    },
+    {
+      "id": "official_page-52d8a74ffd59a25cfe",
+      "restaurantId": "osm-node-5647941372-orso-pub-and-grill",
+      "restaurantName": "Orso Pub & Grill",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://orsopub.ca/reservation/",
+      "mediaUrl": "https://orsopub.ca/wp-content/themes/orso/assets/img/background/theme-form-back.png",
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Reservation – Orso Pub & Grill",
+      "summary": "Reservation – Orso Pub & Grill Book table Email us : [email protected] Call us : +1 902 406 2001 Our location : 1859 Brunswick St Halifax, NS B3J 2G8 Canada instagram facebook Toggle navigation Home About Menu Full Menu Drinks Menu Gallery Reservation Contact Reservation Our location 1859 Brunswick St Halifax, NS B3J 2G8 Canada Our contact +1 902 406 2001 Our Email [email protected] Customer care Orso Pub & Grill...",
+      "primaryCategory": "menu",
+      "primaryCategoryLabel": "Menu update",
+      "categories": [
+        {
+          "id": "menu",
+          "label": "Menu update",
+          "terms": [
+            "menu"
+          ]
+        },
+        {
+          "id": "reservations",
+          "label": "Reservations",
+          "terms": [
+            "reservation"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "menu",
+        "reservation"
+      ],
+      "publishedAt": null,
+      "observedAt": "2026-09-01T13:26:43.797Z",
+      "ageDays": null,
+      "isRecent": false,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "needs_date_review",
+      "associationBasis": "same_site_official_page"
+    },
+    {
+      "id": "official_page-9c6550fd1ea85a74cc",
+      "restaurantId": "osm-node-11699344555-osmow-s",
+      "restaurantName": "Osmow's",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://osmows.com/fr/menu",
+      "mediaUrl": "https://framerusercontent.com/images/XCjhex92g3ZCWfSeZP9Ezt8CVk.png",
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Menu d",
+      "summary": "Parcourez le menu complet d",
+      "primaryCategory": "specials",
+      "primaryCategoryLabel": "Special",
+      "categories": [
+        {
+          "id": "specials",
+          "label": "Special",
+          "terms": [
+            "special"
+          ]
+        },
+        {
+          "id": "menu",
+          "label": "Menu update",
+          "terms": [
+            "menu"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "special",
+        "menu"
+      ],
+      "publishedAt": null,
+      "observedAt": "2026-09-01T13:26:42.754Z",
+      "ageDays": null,
+      "isRecent": false,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "needs_date_review",
+      "associationBasis": "same_site_official_page"
+    },
+    {
+      "id": "official_page-7a4fe3d2e962e029e4",
+      "restaurantId": "osm-node-5647941372-orso-pub-and-grill",
+      "restaurantName": "Orso Pub & Grill",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://orsopub.ca/",
+      "mediaUrl": "https://orsopub.ca/wp-content/uploads/2026/05/orso-specials-2026specials-apps.jpg",
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Orso Pub & Grill",
+      "summary": "Grill Book table Email us : [email protected] Call us : +1 902 406 2001 Our location : 1859 Brunswick St Halifax, NS B3J 2G8 Canada instagram facebook Toggle navigation Home About Menu Full Menu Drinks Menu Gallery Reservation Contact Welcome to ORSO PUB and GRILL At the base of Citadel Hill in the heart of downtown Halifax — a minute’s walk from Scotiabank Centre — Orso Pub & Grill is the neighborhood pub for hon...",
+      "primaryCategory": "specials",
+      "primaryCategoryLabel": "Special",
+      "categories": [
+        {
+          "id": "specials",
+          "label": "Special",
+          "terms": [
+            "special",
+            "specials",
+            "deal",
+            "deals"
+          ]
+        },
+        {
+          "id": "events",
+          "label": "Event",
+          "terms": [
+            "event",
+            "events"
+          ]
+        },
+        {
+          "id": "live_music",
+          "label": "Live music",
+          "terms": [
+            "show",
+            "concert"
+          ]
+        },
+        {
+          "id": "menu",
+          "label": "Menu update",
+          "terms": [
+            "menu"
+          ]
+        },
+        {
+          "id": "reservations",
+          "label": "Reservations",
+          "terms": [
+            "reservation"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "special",
+        "specials",
+        "deal",
+        "deals",
+        "event",
+        "events",
+        "show",
+        "concert",
+        "menu",
+        "reservation"
+      ],
+      "publishedAt": null,
+      "observedAt": "2026-09-01T13:26:41.976Z",
+      "ageDays": null,
+      "isRecent": false,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "needs_date_review",
+      "associationBasis": "same_site_official_page"
+    },
+    {
+      "id": "official_page-98af4a89eca0857675",
+      "restaurantId": "osm-node-13286396472-matadora-tapas-bar",
+      "restaurantName": "Matadora Tapas Bar",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://www.sevenrooms.com/explore/matadora/reservations/create/search",
+      "mediaUrl": null,
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "SevenRooms",
+      "summary": "SevenRooms",
+      "primaryCategory": "reservations",
+      "primaryCategoryLabel": "Reservations",
+      "categories": [
+        {
+          "id": "reservations",
+          "label": "Reservations",
+          "terms": [
+            "reservation",
+            "reservations"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "reservation",
+        "reservations"
+      ],
+      "publishedAt": null,
+      "observedAt": "2026-09-01T13:26:34.614Z",
+      "ageDays": null,
+      "isRecent": false,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "needs_date_review",
+      "associationBasis": "official_site_linked_page"
+    },
+    {
+      "id": "official_page-1b30a4d2e4a7703398",
+      "restaurantId": "osm-node-8836681495-lion-s-head-tavern",
+      "restaurantName": "Lion's Head Tavern",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://lionshead.ca/reserve/",
+      "mediaUrl": null,
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Reservations",
+      "summary": "Reservations | Lion's Head Tavern ABOUT MENU EVENTS RESERVE CAREERS CONTACT GIFT CARD ABOUT MENU EVENTS RESERVATIONS CAREERS CONTACT The Best Parties, Require Great Event Spaces! FOR GROUPS OF 8 & UNDER Event Booking for Larger Groups CORPORATE EVENTS, BIRTHDAY PARTIES OR WHATEVER YOU'RE CELEBRATING, CELEBRATE WITH US! Please fill out the form below & you'll be contacted to confirm your dates are available. Pricin...",
+      "primaryCategory": "events",
+      "primaryCategoryLabel": "Event",
+      "categories": [
+        {
+          "id": "events",
+          "label": "Event",
+          "terms": [
+            "event",
+            "events"
+          ]
+        },
+        {
+          "id": "menu",
+          "label": "Menu update",
+          "terms": [
+            "menu"
+          ]
+        },
+        {
+          "id": "reservations",
+          "label": "Reservations",
+          "terms": [
+            "reservation",
+            "reservations",
+            "book a table"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "event",
+        "events",
+        "menu",
+        "reservation",
+        "reservations",
+        "book a table"
+      ],
+      "publishedAt": null,
+      "observedAt": "2026-09-01T13:26:33.622Z",
+      "ageDays": null,
+      "isRecent": false,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "needs_date_review",
+      "associationBasis": "same_site_official_page"
+    },
+    {
+      "id": "official_page-8425acd26b44958db2",
+      "restaurantId": "osm-node-2721720399-mashawee-mediterranean-grill",
+      "restaurantName": "Mashawee Mediterranean Grill",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://www.skipthedishes.com/?utm_source=mashaweemediterraneangrill.ca&utm_medium=microsites&utm_campaign=microsites",
+      "mediaUrl": "https://www.skipthedishes.com/_next/static/media/skip-for-business-homePage.e9c5e5ce.png?w=3840&amp;q=100",
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Skip | Online Delivery | Food, Groceries, Alcohol and More!",
+      "summary": "ce Edward Island Saskatchewan Yukon Northwest Territories Popular Cuisines Chinese Italian Pizza Japanese Sushi Thai Vietnamese Burgers Greek Indian Korean Chicken Bakery Barbecue Breakfast & Brunch Dessert Steakhouse Sandwiches Halal Fish & Chips Ethiopian Vegetarian Wings Spanish Pub Food French Healthy Ice-Cream Smoothies Tacos Seafood Shawarma & Donair Burritos HotDogs Fast Food Soup Asian Alcohol Mexican Afri...",
+      "primaryCategory": "live_music",
+      "primaryCategoryLabel": "Live music",
+      "categories": [
+        {
+          "id": "live_music",
+          "label": "Live music",
+          "terms": [
+            "dj"
+          ]
+        },
+        {
+          "id": "brunch",
+          "label": "Brunch",
+          "terms": [
+            "brunch",
+            "breakfast"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "dj",
+        "brunch",
+        "breakfast"
+      ],
+      "publishedAt": null,
+      "observedAt": "2026-09-01T13:26:33.384Z",
+      "ageDays": null,
+      "isRecent": false,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "needs_date_review",
+      "associationBasis": "official_site_linked_page"
+    },
+    {
+      "id": "official_page-6b8d409b7059a7b25a",
+      "restaurantId": "osm-node-9102296735-masala-delight",
+      "restaurantName": "Masala Delight",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://masaladelight.com/",
+      "mediaUrl": null,
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Buy masaladelight.com | Spaceship",
+      "summary": "masaladelight.com is for sale on Spaceship. Secure checkout and quick transfer. See all purchase options. No hidden fees.",
+      "primaryCategory": "specials",
+      "primaryCategoryLabel": "Special",
+      "categories": [
+        {
+          "id": "specials",
+          "label": "Special",
+          "terms": [
+            "offer"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "offer"
+      ],
+      "publishedAt": null,
+      "observedAt": "2026-09-01T13:26:33.245Z",
+      "ageDays": null,
+      "isRecent": false,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "needs_date_review",
+      "associationBasis": "same_site_official_page"
+    },
+    {
+      "id": "official_page-e5e2f99e5816beaa9f",
+      "restaurantId": "osm-node-8836681495-lion-s-head-tavern",
+      "restaurantName": "Lion's Head Tavern",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://lionshead.ca/events/",
+      "mediaUrl": null,
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "EVENTS",
+      "summary": "Halifax",
+      "primaryCategory": "happy_hour",
+      "primaryCategoryLabel": "Happy hour",
+      "categories": [
+        {
+          "id": "happy_hour",
+          "label": "Happy hour",
+          "terms": [
+            "happy hour",
+            "half price"
+          ]
+        },
+        {
+          "id": "specials",
+          "label": "Special",
+          "terms": [
+            "special",
+            "specials"
+          ]
+        },
+        {
+          "id": "events",
+          "label": "Event",
+          "terms": [
+            "event",
+            "events"
+          ]
+        },
+        {
+          "id": "live_music",
+          "label": "Live music",
+          "terms": [
+            "karaoke",
+            "trivia"
+          ]
+        },
+        {
+          "id": "menu",
+          "label": "Menu update",
+          "terms": [
+            "menu"
+          ]
+        },
+        {
+          "id": "patio",
+          "label": "Patio",
+          "terms": [
+            "patio"
+          ]
+        },
+        {
+          "id": "brunch",
+          "label": "Brunch",
+          "terms": [
+            "brunch",
+            "mimosa"
+          ]
+        },
+        {
+          "id": "reservations",
+          "label": "Reservations",
+          "terms": [
+            "reservation",
+            "reservations"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "happy hour",
+        "half price",
+        "special",
+        "specials",
+        "event",
+        "events",
+        "karaoke",
+        "trivia",
+        "menu",
+        "patio",
+        "brunch",
+        "mimosa",
+        "reservation",
+        "reservations"
+      ],
+      "publishedAt": null,
+      "observedAt": "2026-09-01T13:26:32.638Z",
+      "ageDays": null,
+      "isRecent": false,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "needs_date_review",
+      "associationBasis": "same_site_official_page"
+    },
+    {
+      "id": "official_page-625d13468680e54f99",
+      "restaurantId": "osm-node-9099100703-marigold-kitchen",
+      "restaurantName": "Marigold Kitchen",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://marigoldkitchen.ca/",
+      "mediaUrl": "https://cdn3.didevelop.com/public/product_images/6498/180_884fb22f0efb3777e9a2e4ee5572d7dc.jpg",
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Marigold kitchen | Mediterranean - Halifax, Canada",
+      "summary": "Order online for delivery or pickup at Marigold Kitchen restaurant! We are serving delicious, authentic Mediterranean food! Try our tasty dishes: Chicken Shawarma Wrap, Shish Taouk Plate or Potato Wedges! We are located at 1671 Barrington St, Halifax, NS.",
+      "primaryCategory": "menu",
+      "primaryCategoryLabel": "Menu update",
+      "categories": [
+        {
+          "id": "menu",
+          "label": "Menu update",
+          "terms": [
+            "menu"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "menu"
+      ],
+      "publishedAt": null,
+      "observedAt": "2026-09-01T13:26:32.520Z",
+      "ageDays": null,
+      "isRecent": false,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "needs_date_review",
+      "associationBasis": "same_site_official_page"
+    },
+    {
+      "id": "official_page-00c069fdf274f61a51",
+      "restaurantId": "osm-node-8836681495-lion-s-head-tavern",
+      "restaurantName": "Lion's Head Tavern",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://lionshead.ca/menu/",
+      "mediaUrl": null,
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Menu",
+      "summary": "Drool-worthy Eats. Weekly Specials. Wing Night. Poutine Night.",
+      "primaryCategory": "specials",
+      "primaryCategoryLabel": "Special",
+      "categories": [
+        {
+          "id": "specials",
+          "label": "Special",
+          "terms": [
+            "special",
+            "specials"
+          ]
+        },
+        {
+          "id": "events",
+          "label": "Event",
+          "terms": [
+            "event",
+            "events"
+          ]
+        },
+        {
+          "id": "menu",
+          "label": "Menu update",
+          "terms": [
+            "menu"
+          ]
+        },
+        {
+          "id": "brunch",
+          "label": "Brunch",
+          "terms": [
+            "brunch",
+            "breakfast",
+            "eggs benny"
+          ]
+        },
+        {
+          "id": "seasonal",
+          "label": "Seasonal",
+          "terms": [
+            "seasonal"
+          ]
+        },
+        {
+          "id": "reservations",
+          "label": "Reservations",
+          "terms": [
+            "reservation",
+            "reservations"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "special",
+        "specials",
+        "event",
+        "events",
+        "menu",
+        "brunch",
+        "breakfast",
+        "eggs benny",
+        "seasonal",
+        "reservation",
+        "reservations"
+      ],
+      "publishedAt": null,
+      "observedAt": "2026-09-01T13:26:31.435Z",
+      "ageDays": null,
+      "isRecent": false,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "needs_date_review",
+      "associationBasis": "same_site_official_page"
+    },
+    {
+      "id": "official_page-a7225b882ad5b64417",
+      "restaurantId": "osm-node-8836681495-lion-s-head-tavern",
+      "restaurantName": "Lion's Head Tavern",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://lionshead.ca/",
+      "mediaUrl": null,
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Home",
+      "summary": "The Lion&rsquo;s Head Tavern is a friendly neighbourhood pub with over 50 years of history in the Halifax North End, just below the Hydrostone Market.",
+      "primaryCategory": "specials",
+      "primaryCategoryLabel": "Special",
+      "categories": [
+        {
+          "id": "specials",
+          "label": "Special",
+          "terms": [
+            "special",
+            "specials",
+            "deal",
+            "deals"
+          ]
+        },
+        {
+          "id": "events",
+          "label": "Event",
+          "terms": [
+            "event",
+            "events",
+            "market"
+          ]
+        },
+        {
+          "id": "menu",
+          "label": "Menu update",
+          "terms": [
+            "menu"
+          ]
+        },
+        {
+          "id": "reservations",
+          "label": "Reservations",
+          "terms": [
+            "reservation",
+            "reservations"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "special",
+        "specials",
+        "deal",
+        "deals",
+        "event",
+        "events",
+        "market",
+        "menu",
+        "reservation",
+        "reservations"
+      ],
+      "publishedAt": null,
+      "observedAt": "2026-09-01T13:26:30.137Z",
+      "ageDays": null,
+      "isRecent": false,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "needs_date_review",
+      "associationBasis": "same_site_official_page"
+    },
+    {
+      "id": "official_page-36a63c3983408fa880",
+      "restaurantId": "osm-node-12143325435-krave-burger",
+      "restaurantName": "Krave Burger",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "http://kraveburger.com/menu",
+      "mediaUrl": "http://kraveburger.com/img/txspacer.png",
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Welcome to KraveBurger.com! Est. 2014",
+      "summary": "Your description",
+      "primaryCategory": "menu",
+      "primaryCategoryLabel": "Menu update",
+      "categories": [
+        {
+          "id": "menu",
+          "label": "Menu update",
+          "terms": [
+            "menu"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "menu"
+      ],
+      "publishedAt": null,
+      "observedAt": "2026-09-01T13:26:29.441Z",
+      "ageDays": null,
+      "isRecent": false,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "needs_date_review",
+      "associationBasis": "same_site_official_page"
+    },
+    {
+      "id": "official_page-7cacb257c7e9668eac",
+      "restaurantId": "osm-node-12143325435-krave-burger",
+      "restaurantName": "Krave Burger",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "http://kraveburger.com/orderlocation",
+      "mediaUrl": "http://kraveburger.com/img/txspacer.png",
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Welcome to KraveBurger.com! Est. 2014",
+      "summary": "Your description",
+      "primaryCategory": "menu",
+      "primaryCategoryLabel": "Menu update",
+      "categories": [
+        {
+          "id": "menu",
+          "label": "Menu update",
+          "terms": [
+            "menu"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "menu"
+      ],
+      "publishedAt": null,
+      "observedAt": "2026-09-01T13:26:29.253Z",
+      "ageDays": null,
+      "isRecent": false,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "needs_date_review",
+      "associationBasis": "same_site_official_page"
+    },
+    {
+      "id": "official_page-62517c7e8aba300fda",
+      "restaurantId": "osm-node-12143325435-krave-burger",
+      "restaurantName": "Krave Burger",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "http://kraveburger.com/",
+      "mediaUrl": "http://kraveburger.com/img/txspacer.png",
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Welcome to KraveBurger.com! Est. 2014",
+      "summary": "Your description",
+      "primaryCategory": "menu",
+      "primaryCategoryLabel": "Menu update",
+      "categories": [
+        {
+          "id": "menu",
+          "label": "Menu update",
+          "terms": [
+            "menu"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "menu"
+      ],
+      "publishedAt": null,
+      "observedAt": "2026-09-01T13:26:29.053Z",
+      "ageDays": null,
+      "isRecent": false,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "needs_date_review",
+      "associationBasis": "same_site_official_page"
+    },
+    {
+      "id": "official_page-761a8f7fb46dd26398",
+      "restaurantId": "osm-node-3791840157-krave-burger",
+      "restaurantName": "Krave Burger",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "http://kraveburger.com/menu",
+      "mediaUrl": "http://kraveburger.com/img/txspacer.png",
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Welcome to KraveBurger.com! Est. 2014",
+      "summary": "Your description",
+      "primaryCategory": "menu",
+      "primaryCategoryLabel": "Menu update",
+      "categories": [
+        {
+          "id": "menu",
+          "label": "Menu update",
+          "terms": [
+            "menu"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "menu"
+      ],
+      "publishedAt": null,
+      "observedAt": "2026-09-01T13:26:28.875Z",
+      "ageDays": null,
+      "isRecent": false,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "needs_date_review",
+      "associationBasis": "same_site_official_page"
+    },
+    {
+      "id": "official_page-aea0535dfeea8367b0",
+      "restaurantId": "osm-node-3791840157-krave-burger",
+      "restaurantName": "Krave Burger",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "http://kraveburger.com/orderlocation",
+      "mediaUrl": "http://kraveburger.com/img/txspacer.png",
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Welcome to KraveBurger.com! Est. 2014",
+      "summary": "Your description",
+      "primaryCategory": "menu",
+      "primaryCategoryLabel": "Menu update",
+      "categories": [
+        {
+          "id": "menu",
+          "label": "Menu update",
+          "terms": [
+            "menu"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "menu"
+      ],
+      "publishedAt": null,
+      "observedAt": "2026-09-01T13:26:28.700Z",
+      "ageDays": null,
+      "isRecent": false,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "needs_date_review",
+      "associationBasis": "same_site_official_page"
+    },
+    {
+      "id": "official_page-0229ea35d24875a0a2",
+      "restaurantId": "osm-node-3791840157-krave-burger",
+      "restaurantName": "Krave Burger",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "http://kraveburger.com/",
+      "mediaUrl": "http://kraveburger.com/img/txspacer.png",
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Welcome to KraveBurger.com! Est. 2014",
+      "summary": "Your description",
+      "primaryCategory": "menu",
+      "primaryCategoryLabel": "Menu update",
+      "categories": [
+        {
+          "id": "menu",
+          "label": "Menu update",
+          "terms": [
+            "menu"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "menu"
+      ],
+      "publishedAt": null,
+      "observedAt": "2026-09-01T13:26:28.371Z",
+      "ageDays": null,
+      "isRecent": false,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "needs_date_review",
+      "associationBasis": "same_site_official_page"
+    },
+    {
+      "id": "official_page-1360fc29f2cc333444",
+      "restaurantId": "osm-node-7674251740-in-spring-asian-fusion-cuisine",
+      "restaurantName": "in spring asian fusion cuisine",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://www.skipthedishes.com/?utm_source=inspringhotpot.com&utm_medium=microsites&utm_campaign=microsites",
+      "mediaUrl": "https://www.skipthedishes.com/_next/static/media/skip-for-business-homePage.e9c5e5ce.png?w=3840&amp;q=100",
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Skip | Online Delivery | Food, Groceries, Alcohol and More!",
+      "summary": "ce Edward Island Saskatchewan Yukon Northwest Territories Popular Cuisines Chinese Italian Pizza Japanese Sushi Thai Vietnamese Burgers Greek Indian Korean Chicken Bakery Barbecue Breakfast & Brunch Dessert Steakhouse Sandwiches Halal Fish & Chips Ethiopian Vegetarian Wings Spanish Pub Food French Healthy Ice-Cream Smoothies Tacos Seafood Shawarma & Donair Burritos HotDogs Fast Food Soup Asian Alcohol Mexican Afri...",
+      "primaryCategory": "live_music",
+      "primaryCategoryLabel": "Live music",
+      "categories": [
+        {
+          "id": "live_music",
+          "label": "Live music",
+          "terms": [
+            "dj"
+          ]
+        },
+        {
+          "id": "brunch",
+          "label": "Brunch",
+          "terms": [
+            "brunch",
+            "breakfast"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "dj",
+        "brunch",
+        "breakfast"
+      ],
+      "publishedAt": null,
+      "observedAt": "2026-09-01T13:26:25.920Z",
+      "ageDays": null,
+      "isRecent": false,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "needs_date_review",
+      "associationBasis": "official_site_linked_page"
+    },
+    {
+      "id": "official_page-864c1e4c64f9609d13",
+      "restaurantId": "osm-node-7393868699-hop-sing-restaurant",
+      "restaurantName": "Hop Sing Restaurant",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://hopsingrestaurant.ca/deals",
+      "mediaUrl": null,
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Deals - Hop Sing Restaurant",
+      "summary": "Deals - Hop Sing Restaurant Hop Sing Restaurant Home Main Menu Deals Gift Certificates Join Our Team About Us Contact Us Delivery Information $2.00 for orders under $20 or using debit/credit machines. $1.00 delivery charge on orders over $20. *Charges outside Spryfield may vary. Combo Plates Family Dinners Combo Plates Included with every Combo Plate: Egg Roll + Chicken Fried Rice #1 $9.70 Chicken Chop Suey #2 $9....",
+      "primaryCategory": "specials",
+      "primaryCategoryLabel": "Special",
+      "categories": [
+        {
+          "id": "specials",
+          "label": "Special",
+          "terms": [
+            "deal",
+            "deals",
+            "under $",
+            "$"
+          ]
+        },
+        {
+          "id": "menu",
+          "label": "Menu update",
+          "terms": [
+            "menu"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "deal",
+        "deals",
+        "under $",
+        "$",
+        "menu"
+      ],
+      "publishedAt": null,
+      "observedAt": "2026-09-01T13:26:25.671Z",
+      "ageDays": null,
+      "isRecent": false,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "needs_date_review",
+      "associationBasis": "same_site_official_page"
+    },
+    {
+      "id": "official_page-1b6b6ab24993d1ef06",
+      "restaurantId": "osm-node-7393868699-hop-sing-restaurant",
+      "restaurantName": "Hop Sing Restaurant",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://hopsingrestaurant.ca/menu",
+      "mediaUrl": null,
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Menu - Hop Sing Restaurant",
+      "summary": "Menu - Hop Sing Restaurant Hop Sing Restaurant Home Main Menu Deals Gift Certificates Join Our Team About Us Contact Us Delivery Information $2.00 delivery charge for orders under $25 in Spryfield Area. $1.00 delivery charge for orders over $25 in Spryfield Area. $2.00 charge for debit/credit. *Charges outside Spryfield may vary. Soup Sweet & Sour Rice Mixed Vegetable Chop Suey Egg Foo Young Curry Shrimp Chicken B...",
+      "primaryCategory": "specials",
+      "primaryCategoryLabel": "Special",
+      "categories": [
+        {
+          "id": "specials",
+          "label": "Special",
+          "terms": [
+            "special",
+            "specials",
+            "deal",
+            "deals",
+            "under $",
+            "$"
+          ]
+        },
+        {
+          "id": "menu",
+          "label": "Menu update",
+          "terms": [
+            "menu"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "special",
+        "specials",
+        "deal",
+        "deals",
+        "under $",
+        "$",
+        "menu"
+      ],
+      "publishedAt": null,
+      "observedAt": "2026-09-01T13:26:25.307Z",
+      "ageDays": null,
+      "isRecent": false,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "needs_date_review",
+      "associationBasis": "same_site_official_page"
+    },
+    {
+      "id": "official_page-705b7b9877c294071c",
+      "restaurantId": "osm-node-7393868699-hop-sing-restaurant",
+      "restaurantName": "Hop Sing Restaurant",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://hopsingrestaurant.ca/",
+      "mediaUrl": null,
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Hop Sing Restaurant - Halifax",
+      "summary": "Hop Sing Restaurant - Halifax Hop Sing Restaurant Home Main Menu Deals Gift Certificates Join Our Team About Us Contact Us A Spryfield Tradition Quality Mom-and-Pop Chinese Takeout Since 1972 View Menu Find Us (902) 477-5671 Open Everyday 324 Herring Cove Rd Our Heritage Family owned and operated for over 45 years in the heart of Halifax. Daily Deals Legendary portions and combo plates designed for value. Gift Cer...",
+      "primaryCategory": "specials",
+      "primaryCategoryLabel": "Special",
+      "categories": [
+        {
+          "id": "specials",
+          "label": "Special",
+          "terms": [
+            "deal",
+            "deals"
+          ]
+        },
+        {
+          "id": "menu",
+          "label": "Menu update",
+          "terms": [
+            "menu"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "deal",
+        "deals",
+        "menu"
+      ],
+      "publishedAt": null,
+      "observedAt": "2026-09-01T13:26:24.523Z",
+      "ageDays": null,
+      "isRecent": false,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "needs_date_review",
+      "associationBasis": "same_site_official_page"
+    },
+    {
+      "id": "official_page-1308aa7b3b73f6db4b",
+      "restaurantId": "osm-node-4421306590-heppy-s-pie-lady",
+      "restaurantName": "Heppy's Pie Lady",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "http://www.heppys.com/",
+      "mediaUrl": "http://www.heppys.com/pg_images/2012_front_image.jpg",
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Heppy's Pie | Authentic Acadian Cuisine Since 1991",
+      "summary": "60-2131 Country Farm Market Mon-Sun: 9am-8pm 2900 Highway 2, Fall River Gouchers Farm Market 902-242-3422 Mon-Sun: 8am-8pm 14935 Nova Scotia Trunk 1, Wilmot Halifax Brewery Market Seasonal Paused Saturday 8:00-13:00 1496 Lower Water Street, Halifax Tantallon Village Market Seasonal Paused Tuesday 14:00-18:00 June 13th - October \"What are you serving today, Claude?\" Store Hours Monday-Friday: 9am-6pm Saturday: 10am...",
+      "primaryCategory": "events",
+      "primaryCategoryLabel": "Event",
+      "categories": [
+        {
+          "id": "events",
+          "label": "Event",
+          "terms": [
+            "market"
+          ]
+        },
+        {
+          "id": "seasonal",
+          "label": "Seasonal",
+          "terms": [
+            "seasonal",
+            "holiday"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "market",
+        "seasonal",
+        "holiday"
+      ],
+      "publishedAt": null,
+      "observedAt": "2026-09-01T13:26:23.660Z",
+      "ageDays": null,
+      "isRecent": false,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "needs_date_review",
+      "associationBasis": "same_site_official_page"
+    },
+    {
+      "id": "official_page-16abd558a9e48938a4",
+      "restaurantId": "osm-node-9152231317-harvest",
+      "restaurantName": "HARVEST",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://smooth.menu/harvest-clean-eats/menu/",
+      "mediaUrl": null,
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Official page update",
+      "summary": "Official page update",
+      "primaryCategory": "menu",
+      "primaryCategoryLabel": "Menu update",
+      "categories": [
+        {
+          "id": "menu",
+          "label": "Menu update",
+          "terms": [
+            "menu"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "menu"
+      ],
+      "publishedAt": null,
+      "observedAt": "2026-09-01T13:26:23.122Z",
+      "ageDays": null,
+      "isRecent": false,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "needs_date_review",
+      "associationBasis": "official_site_linked_page"
+    },
+    {
+      "id": "official_page-53c93485c6ff88635b",
+      "restaurantId": "osm-node-4416774495-glitter-bean-cafe",
+      "restaurantName": "Glitter Bean Cafe",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://justitalymentone.com/",
+      "mediaUrl": "https://justitalymentone.com/Images/banners/home/DesktopID-866-20250925164835.png",
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "ORIENTALPLAY: Situs Judi Link Slot Gacor Hari Ini SLOT777 Online Gampang Menang",
+      "summary": "Sandi Lupa Kata Sandi? Lupa Kata Sandi? Belum punya akun? Daftar Sekarang Masuk dengan Telegram Hot Games Slots Live Casino Race Togel Olahraga Crash Game Arcade Poker Sabung Ayam Promosi Pemberitahuan Pemeliharaan Terjadwal: AdvantPlay Mini Game pada 17-Agt-2025 dari 20.01.34 sampai 09-Agt-2026 10.59.59. Selama waktu ini, AdvantPlay Mini Game permainan tidak akan tersedia. Kami memohon maaf atas ketidaknyamanan y...",
+      "primaryCategory": "specials",
+      "primaryCategoryLabel": "Special",
+      "categories": [
+        {
+          "id": "specials",
+          "label": "Special",
+          "terms": [
+            "promo"
+          ]
+        },
+        {
+          "id": "events",
+          "label": "Event",
+          "terms": [
+            "event"
+          ]
+        },
+        {
+          "id": "live_music",
+          "label": "Live music",
+          "terms": [
+            "show",
+            "band"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "promo",
+        "event",
+        "show",
+        "band"
+      ],
+      "publishedAt": null,
+      "observedAt": "2026-09-01T13:26:16.900Z",
+      "ageDays": null,
+      "isRecent": false,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "needs_date_review",
+      "associationBasis": "official_site_linked_page"
+    },
+    {
+      "id": "official_page-592219a65fb81c57db",
+      "restaurantId": "osm-node-1920618295-metro-pizza",
+      "restaurantName": "Metro Pizza",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://www.foodbooking.com/ordering/restaurant/menu?restaurant_uid=a6ab5806-0d0d-4d68-8064-2890bb2d2bc0",
+      "mediaUrl": null,
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Online Ordering",
+      "summary": "Online Ordering",
+      "primaryCategory": "menu",
+      "primaryCategoryLabel": "Menu update",
+      "categories": [
+        {
+          "id": "menu",
+          "label": "Menu update",
+          "terms": [
+            "menu"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "menu"
+      ],
+      "publishedAt": null,
+      "observedAt": "2026-09-01T13:26:13.214Z",
+      "ageDays": null,
+      "isRecent": false,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "needs_date_review",
+      "associationBasis": "official_site_linked_page"
+    },
+    {
+      "id": "official_page-bd7f73044f82f0bcde",
+      "restaurantId": "osm-node-13912668535-jean-s-chinese-restaurant",
+      "restaurantName": "Jean's Chinese Restaurant",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://www.foodbooking.com/ordering/restaurant/menu?restaurant_uid=de8fb584-7d18-406d-9040-426509400230",
+      "mediaUrl": null,
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Online Ordering",
+      "summary": "Online Ordering",
+      "primaryCategory": "menu",
+      "primaryCategoryLabel": "Menu update",
+      "categories": [
+        {
+          "id": "menu",
+          "label": "Menu update",
+          "terms": [
+            "menu"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "menu"
+      ],
+      "publishedAt": null,
+      "observedAt": "2026-09-01T13:26:12.926Z",
+      "ageDays": null,
+      "isRecent": false,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "needs_date_review",
+      "associationBasis": "official_site_linked_page"
+    },
+    {
+      "id": "official_page-66758940ccebf3f645",
+      "restaurantId": "osm-node-37132580-durty-nelly-s-irish-pub",
+      "restaurantName": "Durty Nelly's Irish Pub",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://durtynellys.ca/menu/",
+      "mediaUrl": "https://durtynellys.ca/wp-content/uploads/2026/06/Food-MENU-2026-1.png",
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Menu – Durty Nelly's",
+      "summary": "Menu – Durty Nelly's Skip to content Home About Menu Food Drinks Sunday Roast Entertainment Contact RESERVATIONS Home About Menu Food Drinks Sunday Roast Entertainment Contact RESERVATIONS Menu Our Menu Starters HandHelds Proper Plates Something Sweet Drinks Sunday Roast No Passport Needed—A Day in Dublin is Here, Every Sunday Starting JUNE first Every Sunday, Durty Nelly’s transforms into the heart of Dublin: liv...",
+      "primaryCategory": "menu",
+      "primaryCategoryLabel": "Menu update",
+      "categories": [
+        {
+          "id": "menu",
+          "label": "Menu update",
+          "terms": [
+            "menu"
+          ]
+        },
+        {
+          "id": "reservations",
+          "label": "Reservations",
+          "terms": [
+            "reservation",
+            "reservations"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "menu",
+        "reservation",
+        "reservations"
+      ],
+      "publishedAt": null,
+      "observedAt": "2026-09-01T13:26:12.837Z",
+      "ageDays": null,
+      "isRecent": false,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "needs_date_review",
+      "associationBasis": "same_site_official_page"
+    },
+    {
+      "id": "official_page-964fe7bce5c9f35200",
+      "restaurantId": "osm-node-37132580-durty-nelly-s-irish-pub",
+      "restaurantName": "Durty Nelly's Irish Pub",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://durtynellys.ca/",
+      "mediaUrl": "https://durtynellys.ca/wp-content/uploads/2025/04/cropped-Icon@4x.png",
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Durty Nelly's",
+      "summary": "Durty Nelly's Skip to content Home About Menu Food Drinks Sunday Roast Entertainment Contact RESERVATIONS Home About Menu Food Drinks Sunday Roast Entertainment Contact RESERVATIONS Menu WELCOME HOME Open Daily 11:30am - 2AM Entertainment 7 nights a week No cover menu Reserve To be an Irish pub on the East Coast of Canada is to keep the music playing, the pints flowing, and the welcome warm. Locally owned and oper...",
+      "primaryCategory": "live_music",
+      "primaryCategoryLabel": "Live music",
+      "categories": [
+        {
+          "id": "live_music",
+          "label": "Live music",
+          "terms": [
+            "live music"
+          ]
+        },
+        {
+          "id": "menu",
+          "label": "Menu update",
+          "terms": [
+            "menu"
+          ]
+        },
+        {
+          "id": "reservations",
+          "label": "Reservations",
+          "terms": [
+            "reservation",
+            "reservations"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "live music",
+        "menu",
+        "reservation",
+        "reservations"
+      ],
+      "publishedAt": null,
+      "observedAt": "2026-09-01T13:26:12.497Z",
+      "ageDays": null,
+      "isRecent": false,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "needs_date_review",
+      "associationBasis": "same_site_official_page"
+    },
+    {
+      "id": "official_page-56f6359da45e4050ca",
+      "restaurantId": "osm-node-4797459277-downtown-pizza",
+      "restaurantName": "Downtown Pizza",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://www.foodbooking.com/ordering/restaurant/menu?restaurant_uid=fa1b9c9f-febc-47d6-be99-80793f66e2a2",
+      "mediaUrl": null,
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Online Ordering",
+      "summary": "Online Ordering",
+      "primaryCategory": "menu",
+      "primaryCategoryLabel": "Menu update",
+      "categories": [
+        {
+          "id": "menu",
+          "label": "Menu update",
+          "terms": [
+            "menu"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "menu"
+      ],
+      "publishedAt": null,
+      "observedAt": "2026-09-01T13:26:12.496Z",
+      "ageDays": null,
+      "isRecent": false,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "needs_date_review",
+      "associationBasis": "official_site_linked_page"
+    },
+    {
+      "id": "official_page-777a11bd59530419e6",
+      "restaurantId": "osm-node-4797459277-downtown-pizza",
+      "restaurantName": "Downtown Pizza",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://www.restaurantlogin.com/ordering/restaurant/menu?company_uid=f1700aa0-5a7b-44b4-ab4a-86c9a6a853a8&",
+      "mediaUrl": null,
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Online Ordering",
+      "summary": "Online Ordering",
+      "primaryCategory": "menu",
+      "primaryCategoryLabel": "Menu update",
+      "categories": [
+        {
+          "id": "menu",
+          "label": "Menu update",
+          "terms": [
+            "menu"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "menu"
+      ],
+      "publishedAt": null,
+      "observedAt": "2026-09-01T13:26:12.407Z",
+      "ageDays": null,
+      "isRecent": false,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "needs_date_review",
+      "associationBasis": "official_site_linked_page"
+    },
+    {
+      "id": "official_page-ac6acf6e38e7ec8e3a",
+      "restaurantId": "osm-node-4797459277-downtown-pizza",
+      "restaurantName": "Downtown Pizza",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://downtownpizza.ca/",
+      "mediaUrl": "https://downtownpizza.ca/wp-content/plugins/revslider/public/assets/assets/dummy.png",
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Downtown Pizza – Dil Se Desi",
+      "summary": "Downtown Pizza – Dil Se Desi Skip to content Home Menu Deal & Offers Our Food Gallery Order Now Home Menu Deal & Offers Our Food Gallery Order Now Enjoy the Best Pizza in Town ORDER NOW Fast Home Delivery Traditional Canadian Pizzas Indian Style Pizzas More then 30 type of predesigned pizzas to choose from Enjoy the Best Pizza in Town ORDER NOW Fast Home Delivery 24 Hours Traditional Canadian Pizzas Indian Style P...",
+      "primaryCategory": "specials",
+      "primaryCategoryLabel": "Special",
+      "categories": [
+        {
+          "id": "specials",
+          "label": "Special",
+          "terms": [
+            "special",
+            "deal",
+            "deals",
+            "offer",
+            "offers"
+          ]
+        },
+        {
+          "id": "menu",
+          "label": "Menu update",
+          "terms": [
+            "menu"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "special",
+        "deal",
+        "deals",
+        "offer",
+        "offers",
+        "menu"
+      ],
+      "publishedAt": null,
+      "observedAt": "2026-09-01T13:26:11.878Z",
+      "ageDays": null,
+      "isRecent": false,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "needs_date_review",
+      "associationBasis": "same_site_official_page"
+    },
+    {
+      "id": "official_page-f6f9d7dc0ab15ab3c0",
+      "restaurantId": "osm-node-13286456320-creme",
+      "restaurantName": "Crème",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://cremehalifax.com/_Products",
+      "mediaUrl": null,
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Products",
+      "summary": "Products contact@cremehalifax.com 902-703-1999 Home Menu Afternoon Tea Cakes Catering Make a Reservation Order Online Home Menu Afternoon Tea Cakes Catering Make a Reservation Order Online Home Menu Afternoon Tea Cakes Catering Make a Reservation Order Online 902-703-1999 contact@cremehalifax.com / Home / Products 1341 Lower Water Street, Unit 123, Halifax NS, B3J 3R3 2 Products Featured Newest Oldest Lowest Price...",
+      "primaryCategory": "menu",
+      "primaryCategoryLabel": "Menu update",
+      "categories": [
+        {
+          "id": "menu",
+          "label": "Menu update",
+          "terms": [
+            "menu"
+          ]
+        },
+        {
+          "id": "brunch",
+          "label": "Brunch",
+          "terms": [
+            "breakfast"
+          ]
+        },
+        {
+          "id": "reservations",
+          "label": "Reservations",
+          "terms": [
+            "reservation"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "menu",
+        "breakfast",
+        "reservation"
+      ],
+      "publishedAt": null,
+      "observedAt": "2026-09-01T13:26:09.056Z",
+      "ageDays": null,
+      "isRecent": false,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "needs_date_review",
+      "associationBasis": "same_site_official_page"
+    },
+    {
+      "id": "official_page-e42d6b08efb7e5c1d7",
+      "restaurantId": "osm-node-13286456320-creme",
+      "restaurantName": "Crème",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://cremehalifax.com/menu",
+      "mediaUrl": "https://immediac.blob.core.windows.net/cremecafeasiarestaurant/Creme%20Menus/breakfast-menu.png",
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Creme Cafe | Menu",
+      "summary": "Creme Cafe | Menu contact@cremehalifax.com 902-703-1999 Home Menu Afternoon Tea Cakes Catering Make a Reservation Order Online Home Menu Afternoon Tea Cakes Catering Make a Reservation Order Online Home Menu Afternoon Tea Cakes Catering Make a Reservation Order Online 902-703-1999 contact@cremehalifax.com Home / Menu 1341 Lower Water Street, Unit 123, Halifax NS, B3J 3R3 Join us daily for the below menus & on Satu...",
+      "primaryCategory": "menu",
+      "primaryCategoryLabel": "Menu update",
+      "categories": [
+        {
+          "id": "menu",
+          "label": "Menu update",
+          "terms": [
+            "menu",
+            "lunch menu"
+          ]
+        },
+        {
+          "id": "brunch",
+          "label": "Brunch",
+          "terms": [
+            "breakfast"
+          ]
+        },
+        {
+          "id": "reservations",
+          "label": "Reservations",
+          "terms": [
+            "reservation"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "menu",
+        "lunch menu",
+        "breakfast",
+        "reservation"
+      ],
+      "publishedAt": null,
+      "observedAt": "2026-09-01T13:26:08.889Z",
+      "ageDays": null,
+      "isRecent": false,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "needs_date_review",
+      "associationBasis": "same_site_official_page"
+    },
+    {
+      "id": "official_page-1aa700def35b0c38af",
+      "restaurantId": "osm-node-13286456320-creme",
+      "restaurantName": "Crème",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://cremehalifax.com/",
+      "mediaUrl": "https://immediac.blob.core.windows.net/cremecafeasiarestaurant/IMG_4799.JPG",
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Crème - Cakes • Cafe • Cocktails",
+      "summary": "Crème - Cakes • Cafe • Cocktails contact@cremehalifax.com 902-703-1999 Home Menu Afternoon Tea Cakes Catering Make a Reservation Order Online Home Menu Afternoon Tea Cakes Catering Make a Reservation Order Online Home Menu Afternoon Tea Cakes Catering Make a Reservation Order Online 902-703-1999 contact@cremehalifax.com Welcome to Cr&egrave;me Where every bite is an elegant indulgence Make a Reservation Welcome to...",
+      "primaryCategory": "specials",
+      "primaryCategoryLabel": "Special",
+      "categories": [
+        {
+          "id": "specials",
+          "label": "Special",
+          "terms": [
+            "special"
+          ]
+        },
+        {
+          "id": "events",
+          "label": "Event",
+          "terms": [
+            "event"
+          ]
+        },
+        {
+          "id": "menu",
+          "label": "Menu update",
+          "terms": [
+            "menu"
+          ]
+        },
+        {
+          "id": "brunch",
+          "label": "Brunch",
+          "terms": [
+            "breakfast"
+          ]
+        },
+        {
+          "id": "reservations",
+          "label": "Reservations",
+          "terms": [
+            "reservation"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "special",
+        "event",
+        "menu",
+        "breakfast",
+        "reservation"
+      ],
+      "publishedAt": null,
+      "observedAt": "2026-09-01T13:26:08.494Z",
+      "ageDays": null,
+      "isRecent": false,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "needs_date_review",
+      "associationBasis": "same_site_official_page"
+    },
+    {
+      "id": "official_page-fdc7557d6c3dbe4fca",
+      "restaurantId": "osm-node-5152065724-cheese-curds-gourmet-burgers-and-poutinerie-habaneros-modern-taco-bar",
+      "restaurantName": "Cheese Curds Gourmet Burgers and Poutinerie/Habaneros Modern Taco Bar",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://citytvplus.ca/brands/foodnetwork",
+      "mediaUrl": "https://production.static-d3-rogent.com/api/shain/v1/dataservice/ResizeImage/$value?Format=&#x27;jpg&#x27;&amp;Quality=75&amp;ImageId=&#x27;240777&#x27;&amp;EntityType=&#x27;Item&#x27;&amp;EntityId=&#x27;130343&#x27;&amp;Width=720&amp;Height=540&amp;ResizeAction=&#x27;fill&#x27;&amp;HorizontalAlignment=&#x27;center&#x27;&amp;VerticalAlignment=&#x27;top&#x27;",
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Food Network - Citytv+",
+      "summary": "Food Network is a unique lifestyle network that connects viewers to the power and joy of food. The network is committed to leading by teaching.",
+      "primaryCategory": "specials",
+      "primaryCategoryLabel": "Special",
+      "categories": [
+        {
+          "id": "specials",
+          "label": "Special",
+          "terms": [
+            "offer",
+            "offers"
+          ]
+        },
+        {
+          "id": "live_music",
+          "label": "Live music",
+          "terms": [
+            "dj"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "offer",
+        "offers",
+        "dj"
+      ],
+      "publishedAt": null,
+      "observedAt": "2026-09-01T13:26:07.238Z",
+      "ageDays": null,
+      "isRecent": false,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "needs_date_review",
+      "associationBasis": "official_site_linked_page"
+    },
+    {
+      "id": "official_page-34bba181c171c5225f",
+      "restaurantId": "osm-node-30825944-canton-garden",
+      "restaurantName": "Canton Garden",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://www.cantongardenns.com/yik8nsx2/restaurant/order-online/menus/all-day-menu/42050422?menu=All+Day+Menu&category=Appetizers",
+      "mediaUrl": null,
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Egg Roll (1pc) | Canton Garden",
+      "summary": "Enjoy the best authentic and delicious Chinese at Canton Garden in Halifax. View our hours, explore our menu, and order online for convenient pickup near you!",
+      "primaryCategory": "specials",
+      "primaryCategoryLabel": "Special",
+      "categories": [
+        {
+          "id": "specials",
+          "label": "Special",
+          "terms": [
+            "special"
+          ]
+        },
+        {
+          "id": "menu",
+          "label": "Menu update",
+          "terms": [
+            "menu",
+            "lunch menu"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "special",
+        "menu",
+        "lunch menu"
+      ],
+      "publishedAt": null,
+      "observedAt": "2026-09-01T13:26:06.957Z",
+      "ageDays": null,
+      "isRecent": false,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "needs_date_review",
+      "associationBasis": "official_site_linked_page"
+    },
+    {
+      "id": "official_page-ba72c0420864283758",
+      "restaurantId": "osm-node-2333319166-cheese-curds-burgers",
+      "restaurantName": "Cheese Curds Burgers",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://citytvplus.ca/brands/foodnetwork",
+      "mediaUrl": "https://production.static-d3-rogent.com/api/shain/v1/dataservice/ResizeImage/$value?Format=&#x27;jpg&#x27;&amp;Quality=75&amp;ImageId=&#x27;240777&#x27;&amp;EntityType=&#x27;Item&#x27;&amp;EntityId=&#x27;130343&#x27;&amp;Width=720&amp;Height=540&amp;ResizeAction=&#x27;fill&#x27;&amp;HorizontalAlignment=&#x27;center&#x27;&amp;VerticalAlignment=&#x27;top&#x27;",
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Food Network - Citytv+",
+      "summary": "Food Network is a unique lifestyle network that connects viewers to the power and joy of food. The network is committed to leading by teaching.",
+      "primaryCategory": "specials",
+      "primaryCategoryLabel": "Special",
+      "categories": [
+        {
+          "id": "specials",
+          "label": "Special",
+          "terms": [
+            "offer",
+            "offers"
+          ]
+        },
+        {
+          "id": "live_music",
+          "label": "Live music",
+          "terms": [
+            "dj"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "offer",
+        "offers",
+        "dj"
+      ],
+      "publishedAt": null,
+      "observedAt": "2026-09-01T13:26:06.681Z",
+      "ageDays": null,
+      "isRecent": false,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "needs_date_review",
+      "associationBasis": "official_site_linked_page"
+    },
+    {
+      "id": "official_page-299d21de831619bde3",
+      "restaurantId": "osm-node-30825944-canton-garden",
+      "restaurantName": "Canton Garden",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://www.cantongardenns.com/yik8nsx2/restaurant/order-online/menus/all-day-menu/42050421?menu=All+Day+Menu&category=Appetizers",
+      "mediaUrl": null,
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Shrimp Roll (4) | Canton Garden",
+      "summary": "Enjoy the best authentic and delicious Chinese at Canton Garden in Halifax. View our hours, explore our menu, and order online for convenient pickup near you!",
+      "primaryCategory": "specials",
+      "primaryCategoryLabel": "Special",
+      "categories": [
+        {
+          "id": "specials",
+          "label": "Special",
+          "terms": [
+            "special"
+          ]
+        },
+        {
+          "id": "menu",
+          "label": "Menu update",
+          "terms": [
+            "menu",
+            "lunch menu"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "special",
+        "menu",
+        "lunch menu"
+      ],
+      "publishedAt": null,
+      "observedAt": "2026-09-01T13:26:06.254Z",
+      "ageDays": null,
+      "isRecent": false,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "needs_date_review",
+      "associationBasis": "official_site_linked_page"
+    },
+    {
+      "id": "official_page-e0a371aa831fb9c079",
+      "restaurantId": "osm-node-30825944-canton-garden",
+      "restaurantName": "Canton Garden",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://www.cantongardenns.com/yik8nsx2/restaurant/order-online/menus/all-day-menu/42050420?menu=All+Day+Menu&category=Appetizers",
+      "mediaUrl": null,
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Spring Roll (1pc) | Canton Garden",
+      "summary": "Enjoy the best authentic and delicious Chinese at Canton Garden in Halifax. View our hours, explore our menu, and order online for convenient pickup near you!",
+      "primaryCategory": "specials",
+      "primaryCategoryLabel": "Special",
+      "categories": [
+        {
+          "id": "specials",
+          "label": "Special",
+          "terms": [
+            "special"
+          ]
+        },
+        {
+          "id": "menu",
+          "label": "Menu update",
+          "terms": [
+            "menu",
+            "lunch menu"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "special",
+        "menu",
+        "lunch menu"
+      ],
+      "publishedAt": null,
+      "observedAt": "2026-09-01T13:26:05.742Z",
+      "ageDays": null,
+      "isRecent": false,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "needs_date_review",
+      "associationBasis": "official_site_linked_page"
+    },
+    {
+      "id": "official_page-728c043d0f9e5b89b2",
+      "restaurantId": "osm-node-2715382299-cheese-curds-and-habaneros",
+      "restaurantName": "Cheese Curds and Habaneros",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://cheesecurdsgourmetburgersandpoutinerie.unuhub.net/",
+      "mediaUrl": null,
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Cheese Curds / Habaneros | Clayton Park",
+      "summary": "Cheese Curds | Pickup and Delivery",
+      "primaryCategory": "specials",
+      "primaryCategoryLabel": "Special",
+      "categories": [
+        {
+          "id": "specials",
+          "label": "Special",
+          "terms": [
+            "special",
+            "offer",
+            "offers",
+            "limited time"
+          ]
+        },
+        {
+          "id": "menu",
+          "label": "Menu update",
+          "terms": [
+            "menu"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "special",
+        "offer",
+        "offers",
+        "limited time",
+        "menu"
+      ],
+      "publishedAt": null,
+      "observedAt": "2026-09-01T13:26:05.581Z",
+      "ageDays": null,
+      "isRecent": false,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "needs_date_review",
+      "associationBasis": "same_site_official_page"
+    },
+    {
+      "id": "official_page-9d2e89ba70654c3635",
+      "restaurantId": "osm-node-9165619005-mother-s-pizza",
+      "restaurantName": "Mother's Pizza",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://def.uber.com/en/challenge?from_service=d2ViLWVhdHMtdjI%3D&q=ODcxYTAxNTIzZWZhNTE4NmQ3ODAzZjFjOTVkOTU3MjI6bzRoU2JnMFd2NmM1VVc1eTp1TnR5YmVMNEI1TDhxUWN5VmxRcTQzbWVOSlc5N3RoTnRKMGhoRE96N1RoblBVNmN2bjdxQ2NZeEtIckg4Y2dkaEdER3gybENranllajV5cHJ3UWZHYVp2RkN1amZHMzlDYWZrT1hCcDdYUERFMG5HaVkrN0hRbVZEMXppMU80ZE5EQ1Nlc0VabHFHQllHdWg0aTBwbDlyVWYvNVVwMXVkNkJqb2lWc3lIa09XOGxEdWVIeGRGV0s4SzBHNy9WWnhjVWZpU0NvUmxVRkR4MXMvS2xMc0dQQk1IUis4dG93VG9xbnV0d0JnSVE5dDJPRFh4ZUNvZkgvWmlNNEpOOEFaeTBPVDVxcDJkT2tpUmVvMmwwUGJVUHpmTWZzPTpCS3BYN2dtMW16QWJjM1plbHFKbkdnPT0%3D",
+      "mediaUrl": null,
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Official page update",
+      "summary": "Official page update",
+      "primaryCategory": "live_music",
+      "primaryCategoryLabel": "Live music",
+      "categories": [
+        {
+          "id": "live_music",
+          "label": "Live music",
+          "terms": [
+            "dj"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "dj"
+      ],
+      "publishedAt": null,
+      "observedAt": "2026-09-01T13:26:03.875Z",
+      "ageDays": null,
+      "isRecent": false,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "needs_date_review",
+      "associationBasis": "official_site_linked_page"
+    },
+    {
+      "id": "official_page-ba36cde8295847d723",
+      "restaurantId": "osm-node-11751643550-cafe-lunette",
+      "restaurantName": "Café Lunette",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://silverpay.app/cafelunette/menu",
+      "mediaUrl": null,
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Cafe Lunette",
+      "summary": "--> Cafe Lunette",
+      "primaryCategory": "menu",
+      "primaryCategoryLabel": "Menu update",
+      "categories": [
+        {
+          "id": "menu",
+          "label": "Menu update",
+          "terms": [
+            "menu"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "menu"
+      ],
+      "publishedAt": null,
+      "observedAt": "2026-09-01T13:26:03.551Z",
+      "ageDays": null,
+      "isRecent": false,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "needs_date_review",
+      "associationBasis": "official_site_linked_page"
+    },
+    {
+      "id": "official_page-0b9edf81fb4ab06c76",
+      "restaurantId": "osm-node-12143325435-krave-burger",
+      "restaurantName": "Krave Burger",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://def.uber.com/en/challenge?from_service=d2ViLWVhdHMtdjI%3D&q=OWNjZWRmZmU2OGQ3MTM4MGU0MjM1YmU0ZmJmY2RiMjk6cWZFVjY2Q3JyR1NhSXh5cDpsakpoZ1RDVHJsS3VhekJXb0l6RGVZTEMyTHhwMkFrUXlrZ3lYRlF4UzlrMjFlaE1KVGV5aENPK1pxcXRGYW1sTFVtc2NhcGRpZUFGZ1A3TmpRSGI4N0VZNnZFbklPa0U3eTBaYS9lZ1VXckhBRS9mcWttOHljZlFjbzNiSVNGdXpHWmF5K3d3SExsMG5TRkh0eXRqcUh4S3FKUi9tbmwrV1VMaGtlbkkySVlUZWZ3RER6djVHMEcxMUo0NUtkNlRLTDhKNUNvaU9VZm12YjJhelhmdlE2TnlyTUxCWXlueHN1bXUwRVI5VjBpdWJLd2lUNzdvanNVc25oc241bnp5TjRjNFVFcDBRYmhsVldjZ2lwcDVzUHlJWmRtc1craldlVE5JanpiQlBWSWZXbC9CTlRhVnRtUWtDdEtjZGQyejZvaG1YWmdjTTBqM0FtNzZONkIvN241Vjh6VTlGVWFKRVdtQ05BRk01L0U9Om9GRXBCRUFzTUtuclJoZm8zRzBGb0E9PQ%3D%3D",
+      "mediaUrl": null,
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Official page update",
+      "summary": "Official page update",
+      "primaryCategory": "live_music",
+      "primaryCategoryLabel": "Live music",
+      "categories": [
+        {
+          "id": "live_music",
+          "label": "Live music",
+          "terms": [
+            "dj"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "dj"
+      ],
+      "publishedAt": null,
+      "observedAt": "2026-09-01T13:26:03.458Z",
+      "ageDays": null,
+      "isRecent": false,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "needs_date_review",
+      "associationBasis": "official_site_linked_page"
+    },
+    {
+      "id": "official_page-24ca00faa47305ebc6",
+      "restaurantId": "osm-node-3791840157-krave-burger",
+      "restaurantName": "Krave Burger",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://def.uber.com/en/challenge?from_service=d2ViLWVhdHMtdjI%3D&q=NGQ2OTJiNWFkYjMxYmYzMDVmMmUxMDgyZWNiZTgwNTg6Tm9wSjI4NEtQS3gvUkJodjpUNFA1NmxhZkhOYmUrSndUaXNrcHFzTFZqc1dUa3VkNUwzZ0kvUXdIRFFhWEFFSmhremVySm9LaDR5V1FXcTdJaFRGeXQxM3RES1NORXAybjEzN2tSaFNNdENNUVExYkExRzdDWDI0MVBhRFh0L01hL2RJdHBMSUlYNlYvb2g2d3ZaZnpsQlZRL2VnZGoxTFlmUUt6MVpDVWJrejhuSHRyclhPa2dISzRnOHZmZm9oZmR1dnJsWGY2dVNlNzh1SEd1RXJuR0NZZDdFc3dGOU9MUHZrQzRMbFE1bitnN1pvMDgrRjJVenVHc213K1NhQWVrWlRMcmx2YTFGYnZ0dnYwRDh6QWdyQlY4RDBEZk94TnY0NTFuM2UwbzVXTTFUZHRZQys0cDBQZjVtYVF4NWxza29rQ2ZwUE5VYlBmZGYwbzhhamd0ZjNwVm5VU1RialoxUWZ5RU1ZQVhRNmJzcW5xY3o5d1lJVkVZK0k9Ok1ZN3diZU9na2V4NXlhWUpTTU1ZY3c9PQ%3D%3D",
+      "mediaUrl": null,
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Official page update",
+      "summary": "Official page update",
+      "primaryCategory": "live_music",
+      "primaryCategoryLabel": "Live music",
+      "categories": [
+        {
+          "id": "live_music",
+          "label": "Live music",
+          "terms": [
+            "dj"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "dj"
+      ],
+      "publishedAt": null,
+      "observedAt": "2026-09-01T13:26:03.026Z",
+      "ageDays": null,
+      "isRecent": false,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "needs_date_review",
+      "associationBasis": "official_site_linked_page"
+    },
+    {
+      "id": "official_page-37718dbedc921505e3",
+      "restaurantId": "osm-way-393886756-boston-pizza",
+      "restaurantName": "Boston Pizza",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://bostonpizza.com/en/promotions/winter-cravings.html",
+      "mediaUrl": "https://bostonpizza.com/content/dam/bostonpizza/promotions/2026/q1-5---main-menu-update/Q1.5%20Banner%205000x1916.png",
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Winter Cravings",
+      "summary": "Winter Cravings Menu Promotions Locations Rewards Gift Cards FR EN ORDER NOW Permanent cravings unlocked&lt;/h1>\\r\\n\"}}\" id=\"text-cd501a0e96\" class=\"cmp-text prose lg:prose-lg\"> Permanent cravings unlocked Our new menu is crafted to satisfy your cold‑weather cravings and introduce you to fresh favourites. From exciting new dishes to deliciously seasonal beverages, each item is designed to spark curiosity, inspire...",
+      "primaryCategory": "specials",
+      "primaryCategoryLabel": "Special",
+      "categories": [
+        {
+          "id": "specials",
+          "label": "Special",
+          "terms": [
+            "offer",
+            "promo",
+            "promotion",
+            "limited time"
+          ]
+        },
+        {
+          "id": "menu",
+          "label": "Menu update",
+          "terms": [
+            "menu",
+            "new dish"
+          ]
+        },
+        {
+          "id": "seasonal",
+          "label": "Seasonal",
+          "terms": [
+            "seasonal"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "offer",
+        "promo",
+        "promotion",
+        "limited time",
+        "menu",
+        "new dish",
+        "seasonal"
+      ],
+      "publishedAt": "2026-09-01T13:26:02.308Z",
+      "observedAt": "2026-09-01T13:26:01.560Z",
+      "ageDays": 0,
+      "isRecent": true,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "source_signal",
+      "associationBasis": "same_site_official_page"
+    },
+    {
+      "id": "official_page-70fb648edb8ce8794e",
+      "restaurantId": "osm-node-9128392205-king-of-donair",
+      "restaurantName": "King of Donair",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://def.uber.com/en/challenge?from_service=d2ViLWVhdHMtdjI%3D&q=NWQwNjc4OGZkOGMzYWZiODFlZjZkODRlNTA2YzlkMzY6UkR3b1JTenVCRjFUaHVRUDpSVkpkNkpOQUw3cmtMdUhwRERzN1FTems5SDR2aFRjQldIWjJCUzBjR056Y09MU3Zqb2t1WmJod3Q0cTRyTzhBVDFTT0pBWEZGZ24zcUtDZHp6Wk5XekJGdnNnTzgwRkJiYXl0RjBhL0dkeWE3UFJhNjZEQy9paDduM1dhcVFrNUlXSmxjVnB2QWlxUlhIbjBsbmgzYWlrayt2VHZETEcwVGQ2ZzArdGVtUjMxMGtsSGFvNzcydzhqYzZDaGJ5OGdwenU0QWJuNmVtQW4vY3JwbUVHMEFwR0p1eE5IU21QTjNqYW9aajlLTUs0R1E5dnRLZDNqVlRFZndCN2NTQnA0M0o5ZC85aUpsemVhOU9xVFR3cHMydWJ5UEYydDpwSWpFeFQrbGtSeldzRFg0UW1EeWtRPT0%3D",
+      "mediaUrl": null,
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Official page update",
+      "summary": "Official page update",
+      "primaryCategory": "live_music",
+      "primaryCategoryLabel": "Live music",
+      "categories": [
+        {
+          "id": "live_music",
+          "label": "Live music",
+          "terms": [
+            "dj"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "dj"
+      ],
+      "publishedAt": null,
+      "observedAt": "2026-09-01T13:26:02.264Z",
+      "ageDays": null,
+      "isRecent": false,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "needs_date_review",
+      "associationBasis": "official_site_linked_page"
+    },
+    {
+      "id": "official_page-14268ea801fc4d7455",
+      "restaurantId": "osm-way-393886756-boston-pizza",
+      "restaurantName": "Boston Pizza",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://bostonpizza.com/en/promotions/summer-promotion.html",
+      "mediaUrl": "https://bostonpizza.com/content/dam/bostonpizza/promotions/2026/summer-live-music/LIVE%20and%20LOCAL%20EN%20Banner.png",
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Summer Promotion | Boston Pizza",
+      "summary": "Summer Promotion | Boston Pizza Menu Promotions Locations Rewards Gift Cards FR EN ORDER NOW DISCOVER YOUR NEXT FAVOURITE ARTIST! Enjoy live music all summer long, at your local Boston Pizza. LIVE MUSIC IS ON THE MENU This year Boston Pizza is turning the volume all the way up! From Victoria Day to Labour Day, we're serving live music at your local Boston Pizza all summer long. More vibes. More energy. More reason...",
+      "primaryCategory": "specials",
+      "primaryCategoryLabel": "Special",
+      "categories": [
+        {
+          "id": "specials",
+          "label": "Special",
+          "terms": [
+            "offer",
+            "promo",
+            "promotion",
+            "limited time"
+          ]
+        },
+        {
+          "id": "live_music",
+          "label": "Live music",
+          "terms": [
+            "live music",
+            "show"
+          ]
+        },
+        {
+          "id": "menu",
+          "label": "Menu update",
+          "terms": [
+            "menu"
+          ]
+        },
+        {
+          "id": "seasonal",
+          "label": "Seasonal",
+          "terms": [
+            "summer"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "offer",
+        "promo",
+        "promotion",
+        "limited time",
+        "live music",
+        "show",
+        "menu",
+        "summer"
+      ],
+      "publishedAt": "2026-09-01T13:26:01.792Z",
+      "observedAt": "2026-09-01T13:26:00.946Z",
+      "ageDays": 0,
+      "isRecent": true,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "source_signal",
+      "associationBasis": "same_site_official_page"
+    },
+    {
+      "id": "official_page-1d2d07ec499a5fd13d",
+      "restaurantId": "osm-node-9128392205-king-of-donair",
+      "restaurantName": "King of Donair",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://www.skipthedishes.com/king-of-donair-lacewood",
+      "mediaUrl": "https://www.skipthedishes.com/_next/image?url=https%3A%2F%2Frestaurants-static.skipthedishes.com%2Fimages%2Fresized%2Flarge-a70573bdcd87746c886f.jpg&amp;w=3840&amp;q=75",
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "King of Donair (278 Lacewood Dr) | Order Delivery & Take Out Online | SkipTheDishes",
+      "summary": "Dr King of Donair 9.5 278 Lacewood Dr Service fees apply Allergens & Disclaimers King of Donair 9.5 278 Lacewood Dr Service fees apply Allergens & Disclaimers Appetizers 9” Small Specialty Pizzas 12\" Medium Specialty Pizzas 16\" Large Specialty Pizzas 9\" Small Create Your Own Pizza 12\" Medium Create Your Own Pizza 16\" Large Create Your Own Pizza Garlic Fingers Sauces Donair Creations Specialty Donairs 12\" Subs Panz...",
+      "primaryCategory": "specials",
+      "primaryCategoryLabel": "Special",
+      "categories": [
+        {
+          "id": "specials",
+          "label": "Special",
+          "terms": [
+            "special"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "special"
+      ],
+      "publishedAt": null,
+      "observedAt": "2026-09-01T13:25:59.306Z",
+      "ageDays": null,
+      "isRecent": false,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "needs_date_review",
+      "associationBasis": "official_site_linked_page"
+    },
+    {
+      "id": "official_page-bb249b8f9737e74354",
+      "restaurantId": "osm-node-3801064263-barrios-kitchen-and-bar",
+      "restaurantName": "Barrios Kitchen & Bar",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://barrioshfx.ca/menu-guide",
+      "mediaUrl": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.3.2/flags/4x3/us.svg",
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Explore the Best Filipino Dishes & Menu | Barrios",
+      "summary": "Discover our blog articles that delve into the rich flavors of Filipino cuisine. Entice your taste buds and learn about the best Filipino dishes that you must try!",
+      "primaryCategory": "menu",
+      "primaryCategoryLabel": "Menu update",
+      "categories": [
+        {
+          "id": "menu",
+          "label": "Menu update",
+          "terms": [
+            "menu"
+          ]
+        },
+        {
+          "id": "brunch",
+          "label": "Brunch",
+          "terms": [
+            "brunch"
+          ]
+        },
+        {
+          "id": "reservations",
+          "label": "Reservations",
+          "terms": [
+            "reservation"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "menu",
+        "brunch",
+        "reservation"
+      ],
+      "publishedAt": null,
+      "observedAt": "2026-09-01T13:25:58.708Z",
+      "ageDays": null,
+      "isRecent": false,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "needs_date_review",
+      "associationBasis": "same_site_official_page"
+    },
+    {
+      "id": "official_page-c8971453f47139e427",
+      "restaurantId": "osm-node-3801064263-barrios-kitchen-and-bar",
+      "restaurantName": "Barrios Kitchen & Bar",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://barrioshfx.ca/reservation",
+      "mediaUrl": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.3.2/flags/4x3/us.svg",
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Halifax Filipino Restaurant Reservation | Book a Table – Barrios | Barrios",
+      "summary": "Book your Halifax Filipino restaurant reservation online at Barrios to secure a table for dinner or Sunday brunch. Enjoy warm hospitality and authentic Filipino dishes and cocktails in downtown Halifax near Barrington Street. For groups or special requests, call 902‑444‑2515.",
+      "primaryCategory": "specials",
+      "primaryCategoryLabel": "Special",
+      "categories": [
+        {
+          "id": "specials",
+          "label": "Special",
+          "terms": [
+            "special"
+          ]
+        },
+        {
+          "id": "menu",
+          "label": "Menu update",
+          "terms": [
+            "menu"
+          ]
+        },
+        {
+          "id": "brunch",
+          "label": "Brunch",
+          "terms": [
+            "brunch"
+          ]
+        },
+        {
+          "id": "reservations",
+          "label": "Reservations",
+          "terms": [
+            "reservation",
+            "book a table"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "special",
+        "menu",
+        "brunch",
+        "reservation",
+        "book a table"
+      ],
+      "publishedAt": null,
+      "observedAt": "2026-09-01T13:25:58.522Z",
+      "ageDays": null,
+      "isRecent": false,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "needs_date_review",
+      "associationBasis": "same_site_official_page"
+    },
+    {
+      "id": "official_page-39064f1bc78524a350",
+      "restaurantId": "osm-node-9128392205-king-of-donair",
+      "restaurantName": "King of Donair",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://www.skipthedishes.com/king-of-donair-quinpool",
+      "mediaUrl": "https://www.skipthedishes.com/_next/image?url=https%3A%2F%2Frestaurants-static.skipthedishes.com%2Fimages%2Fresized%2Flarge-767b9e214669a2587f97.jpg&amp;w=3840&amp;q=75",
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "King of Donair (6420 Quinpool Road) | Order Delivery & Take Out Online | SkipTheDishes",
+      "summary": "ng of Donair 8.9 6420 Quinpool Road Service fees apply Allergens & Disclaimers King of Donair 8.9 6420 Quinpool Road Service fees apply Allergens & Disclaimers Appetizers 9” Small Specialty Pizzas 12\" Medium Specialty Pizzas 16\" Large Specialty Pizzas 9\" Small Create Your Own Pizza 12\" Medium Create Your Own Pizza 16\" Large Create Your Own Pizza Garlic Fingers Sauces Donair Creations Specialty Donairs 12\" Subs Pan...",
+      "primaryCategory": "specials",
+      "primaryCategoryLabel": "Special",
+      "categories": [
+        {
+          "id": "specials",
+          "label": "Special",
+          "terms": [
+            "special"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "special"
+      ],
+      "publishedAt": null,
+      "observedAt": "2026-09-01T13:25:58.362Z",
+      "ageDays": null,
+      "isRecent": false,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "needs_date_review",
+      "associationBasis": "official_site_linked_page"
+    },
+    {
+      "id": "official_page-df158a5e7508454385",
+      "restaurantId": "osm-node-3801064263-barrios-kitchen-and-bar",
+      "restaurantName": "Barrios Kitchen & Bar",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://barrioshfx.ca/delivery",
+      "mediaUrl": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.3.2/flags/4x3/us.svg",
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Halifax Filipino Delivery & Takeout | Barrios Filipino Cuisine | Barrios",
+      "summary": "Order Halifax Filipino delivery and takeout from Barrios via Uber Eats or DoorDash and enjoy our authentic Filipino flavours. Whether you’re craving sisig or kare‑kare and other favourites, we offer quick pickup or delivery near Barrington Street. Call 902‑444‑2515 for advance orders.",
+      "primaryCategory": "specials",
+      "primaryCategoryLabel": "Special",
+      "categories": [
+        {
+          "id": "specials",
+          "label": "Special",
+          "terms": [
+            "offer"
+          ]
+        },
+        {
+          "id": "menu",
+          "label": "Menu update",
+          "terms": [
+            "menu"
+          ]
+        },
+        {
+          "id": "brunch",
+          "label": "Brunch",
+          "terms": [
+            "brunch"
+          ]
+        },
+        {
+          "id": "reservations",
+          "label": "Reservations",
+          "terms": [
+            "reservation"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "offer",
+        "menu",
+        "brunch",
+        "reservation"
+      ],
+      "publishedAt": null,
+      "observedAt": "2026-09-01T13:25:58.335Z",
+      "ageDays": null,
+      "isRecent": false,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "needs_date_review",
+      "associationBasis": "same_site_official_page"
+    },
+    {
+      "id": "official_page-989a611fc8e3eaa864",
+      "restaurantId": "osm-node-3801064263-barrios-kitchen-and-bar",
+      "restaurantName": "Barrios Kitchen & Bar",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://barrioshfx.ca/barrios-menu",
+      "mediaUrl": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.3.2/flags/4x3/us.svg",
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Barrios Menu – Filipino Restaurant | Barrios",
+      "summary": "Explore the Barrios menu — authentic Filipino dishes, weekend brunch, and handcrafted cocktails. Available for dine-in and takeout in Barrios Kitchen & Bar in Halifax.",
+      "primaryCategory": "specials",
+      "primaryCategoryLabel": "Special",
+      "categories": [
+        {
+          "id": "specials",
+          "label": "Special",
+          "terms": [
+            "special",
+            "offer"
+          ]
+        },
+        {
+          "id": "menu",
+          "label": "Menu update",
+          "terms": [
+            "menu"
+          ]
+        },
+        {
+          "id": "brunch",
+          "label": "Brunch",
+          "terms": [
+            "brunch"
+          ]
+        },
+        {
+          "id": "reservations",
+          "label": "Reservations",
+          "terms": [
+            "reservation",
+            "book a table"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "special",
+        "offer",
+        "menu",
+        "brunch",
+        "reservation",
+        "book a table"
+      ],
+      "publishedAt": null,
+      "observedAt": "2026-09-01T13:25:57.980Z",
+      "ageDays": null,
+      "isRecent": false,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "needs_date_review",
+      "associationBasis": "same_site_official_page"
+    },
+    {
+      "id": "official_page-2a89e76953f0d5f7d1",
+      "restaurantId": "osm-node-10665783054-ben-and-florentine",
+      "restaurantName": "Ben & Florentine",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://locations.benetflorentine.com/",
+      "mediaUrl": "https://mtystprod.azureedge.net/media/vhslsyfh/microsoftteams-image-30-1-1.png",
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Find a Ben & Florentine near you",
+      "summary": "Enjoy delicious food from Ben Florentine near you. Order today for delivery to your doorstep or easy pickup at a nearby location.",
+      "primaryCategory": "menu",
+      "primaryCategoryLabel": "Menu update",
+      "categories": [
+        {
+          "id": "menu",
+          "label": "Menu update",
+          "terms": [
+            "menu"
+          ]
+        },
+        {
+          "id": "brunch",
+          "label": "Brunch",
+          "terms": [
+            "breakfast"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "menu",
+        "breakfast"
+      ],
+      "publishedAt": null,
+      "observedAt": "2026-09-01T13:25:57.347Z",
+      "ageDays": null,
+      "isRecent": false,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "needs_date_review",
+      "associationBasis": "same_site_official_page"
+    },
+    {
+      "id": "official_page-50f6f892eba49e9b63",
+      "restaurantId": "osm-node-3801064263-barrios-kitchen-and-bar",
+      "restaurantName": "Barrios Kitchen & Bar",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://barrioshfx.ca/",
+      "mediaUrl": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.3.2/flags/4x3/us.svg",
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Barrios – Authentic Filipino Food in Halifax Downtown Halifax | Barrios",
+      "summary": "Barrios Kitchen & Bar is a Filipino restaurant in Halifax near Barrington Street offering Authentic Filipino Food, brunch, cocktails and catering. Enjoy dine‑in, takeout and delivery in downtown Halifax with warm hospitality and a modern twist on traditional Filipino flavours.",
+      "primaryCategory": "specials",
+      "primaryCategoryLabel": "Special",
+      "categories": [
+        {
+          "id": "specials",
+          "label": "Special",
+          "terms": [
+            "offer"
+          ]
+        },
+        {
+          "id": "events",
+          "label": "Event",
+          "terms": [
+            "event",
+            "events"
+          ]
+        },
+        {
+          "id": "menu",
+          "label": "Menu update",
+          "terms": [
+            "menu"
+          ]
+        },
+        {
+          "id": "brunch",
+          "label": "Brunch",
+          "terms": [
+            "brunch"
+          ]
+        },
+        {
+          "id": "reservations",
+          "label": "Reservations",
+          "terms": [
+            "reservation",
+            "reservations",
+            "walk-ins"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "offer",
+        "event",
+        "events",
+        "menu",
+        "brunch",
+        "reservation",
+        "reservations",
+        "walk-ins"
+      ],
+      "publishedAt": null,
+      "observedAt": "2026-09-01T13:25:57.015Z",
+      "ageDays": null,
+      "isRecent": false,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "needs_date_review",
+      "associationBasis": "same_site_official_page"
+    },
+    {
+      "id": "official_page-8f728e4ea645ea8bc8",
+      "restaurantId": "osm-node-8600605850-barburrito",
+      "restaurantName": "BarBurrito",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://www.skipthedishes.com/barburrito-tacoma-drive?utm_source=google&utm_medium=organic&utm_campaign=gpa",
+      "mediaUrl": "https://www.skipthedishes.com/_next/image?url=https%3A%2F%2Fmenu-images-static.skipthedishes.com%2Fimages%2Fresized%2Flarge-63637c0b9197391c099e.png&amp;w=3840&amp;q=75",
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "barBURRITO (50 Tacoma Dr) | Order Delivery & Take Out Online | SkipTheDishes",
+      "summary": "lus 2 chips & salsa for sharing. $30.49 Gameday Feast Bring the feast. Choose 2 regular burritos or bowls, 1 quesadilla, and 1 small burrito. $43.99 Featured Items Available for a limited time, while supplies last! Build Your Own BBOX Discover our new BBOX, offering your choice of a small burrito or bowl packed with rice, beans, and your favourite protein, topped with cheese, salsa, and fresh toppings. Enjoy it wi...",
+      "primaryCategory": "specials",
+      "primaryCategoryLabel": "Special",
+      "categories": [
+        {
+          "id": "specials",
+          "label": "Special",
+          "terms": [
+            "offer",
+            "limited time",
+            "$"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "offer",
+        "limited time",
+        "$"
+      ],
+      "publishedAt": null,
+      "observedAt": "2026-09-01T13:25:56.967Z",
+      "ageDays": null,
+      "isRecent": false,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "needs_date_review",
+      "associationBasis": "official_site_linked_page"
+    },
+    {
+      "id": "official_page-8e57dca2b9b412e903",
+      "restaurantId": "osm-node-8600605850-barburrito",
+      "restaurantName": "BarBurrito",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://www.barburrito.ca/location/dartmouth/",
+      "mediaUrl": null,
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Tex-Mex Food & Burritos in Dartmouth | BarBurrito",
+      "summary": "Experience the best burritos in Dartmouth at BarBurrito. Indulge in our mouthwatering burritos and dishes. Visit us today & satisfy your cravings!",
+      "primaryCategory": "menu",
+      "primaryCategoryLabel": "Menu update",
+      "categories": [
+        {
+          "id": "menu",
+          "label": "Menu update",
+          "terms": [
+            "menu"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "menu"
+      ],
+      "publishedAt": null,
+      "observedAt": "2026-09-01T13:25:56.237Z",
+      "ageDays": null,
+      "isRecent": false,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "needs_date_review",
+      "associationBasis": "same_site_official_page"
+    },
+    {
+      "id": "official_page-f1cbf842d16e805ba1",
+      "restaurantId": "osm-node-12143582175-asia-restaurant-and-bar",
+      "restaurantName": "Asia Restaurant & Bar",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://asiahalifax.com/",
+      "mediaUrl": "https://immediac.blob.core.windows.net/cremecafeasiarestaurant/asiarestaurant/Levels%201-4.jpg",
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Asia Restaurant & Bar",
+      "summary": "Asia Restaurant & Bar 902-932-9900 contact@asiahalifax.com Welcome to Make A Reservation Our Menu Navigation Toggle navigation Welcome to Asia Restaurant & Bar Halifax&rsquo;s first Pan-Asian dining experience, newly opened in August, 2024. At Asia, we invite you to embark on a culinary journey that celebrates the rich and diverse flavors of Asia in an elevated and sophisticated setting. Join us as we bring togeth...",
+      "primaryCategory": "specials",
+      "primaryCategoryLabel": "Special",
+      "categories": [
+        {
+          "id": "specials",
+          "label": "Special",
+          "terms": [
+            "special",
+            "offer"
+          ]
+        },
+        {
+          "id": "live_music",
+          "label": "Live music",
+          "terms": [
+            "show"
+          ]
+        },
+        {
+          "id": "openings",
+          "label": "Opening",
+          "terms": [
+            "newly opened"
+          ]
+        },
+        {
+          "id": "menu",
+          "label": "Menu update",
+          "terms": [
+            "menu"
+          ]
+        },
+        {
+          "id": "reservations",
+          "label": "Reservations",
+          "terms": [
+            "reservation"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "special",
+        "offer",
+        "show",
+        "newly opened",
+        "menu",
+        "reservation"
+      ],
+      "publishedAt": null,
+      "observedAt": "2026-09-01T13:25:55.878Z",
+      "ageDays": null,
+      "isRecent": false,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "needs_date_review",
+      "associationBasis": "same_site_official_page"
+    },
+    {
+      "id": "official_page-1d390bc1294f6d7def",
+      "restaurantId": "osm-way-393886756-boston-pizza",
+      "restaurantName": "Boston Pizza",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://bostonpizza.com/en/promotions/lunch-menu.html",
+      "mediaUrl": "https://bostonpizza.com/content/dam/bostonpizza/promotions/2026/$15-fast-lunch/Burger%20-%20Banner%205000x2115.png",
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Lunch Menu | Boston Pizza",
+      "summary": "Lunch Menu | Boston Pizza Menu Promotions Locations Rewards Gift Cards FR EN ORDER NOW A FAST LUNCH DOESN'T HAVE TO MEAN FAST FOOD. GRAB LUNCH AT BOSTON PIZZA!&lt;/h1>\\r\\n\"}}\"> A FAST LUNCH DOESN'T HAVE TO MEAN FAST FOOD. GRAB LUNCH AT BOSTON PIZZA! We get it, lunch breaks are short. That's why our NEW Lunch Menu delivers within 20 minutes or your next lunch is on us!*&lt;/p>\\r\\n&lt;p class=\\\"b6-do6-banner--custom...",
+      "primaryCategory": "specials",
+      "primaryCategoryLabel": "Special",
+      "categories": [
+        {
+          "id": "specials",
+          "label": "Special",
+          "terms": [
+            "special",
+            "offer",
+            "promo",
+            "promotion"
+          ]
+        },
+        {
+          "id": "live_music",
+          "label": "Live music",
+          "terms": [
+            "band"
+          ]
+        },
+        {
+          "id": "menu",
+          "label": "Menu update",
+          "terms": [
+            "menu",
+            "lunch menu"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "special",
+        "offer",
+        "promo",
+        "promotion",
+        "band",
+        "menu",
+        "lunch menu"
+      ],
+      "publishedAt": "2026-09-01T13:19:30.595Z",
+      "observedAt": "2026-09-01T13:26:02.122Z",
+      "ageDays": 0,
+      "isRecent": true,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "source_signal",
+      "associationBasis": "same_site_official_page"
+    },
+    {
+      "id": "official_page-7814b95e4a0ac589be",
+      "restaurantId": "osm-way-393886756-boston-pizza",
+      "restaurantName": "Boston Pizza",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://bostonpizza.com/en/menu.html",
+      "mediaUrl": "https://bostonpizza.com/content/dam/bostonpizza/menu-images/apps-and-shareables/category-images/AppsShareables_no_napkin-420x320.jpg",
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Our Menu | Boston Pizza",
+      "summary": "Discover Boston Pizza’s extensive menu of pizza, pasta, burgers, appetizers, salads and more. Available for dine-in, takeout, or delivery. Browse our menu today!",
+      "primaryCategory": "specials",
+      "primaryCategoryLabel": "Special",
+      "categories": [
+        {
+          "id": "specials",
+          "label": "Special",
+          "terms": [
+            "feature menu",
+            "promo",
+            "promotion"
+          ]
+        },
+        {
+          "id": "live_music",
+          "label": "Live music",
+          "terms": [
+            "live music"
+          ]
+        },
+        {
+          "id": "menu",
+          "label": "Menu update",
+          "terms": [
+            "menu",
+            "lunch menu"
+          ]
+        },
+        {
+          "id": "seasonal",
+          "label": "Seasonal",
+          "terms": [
+            "summer"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "feature menu",
+        "promo",
+        "promotion",
+        "live music",
+        "menu",
+        "lunch menu",
+        "summer"
+      ],
+      "publishedAt": "2026-09-01T13:12:47.472Z",
+      "observedAt": "2026-09-01T13:26:00.743Z",
+      "ageDays": 0,
+      "isRecent": true,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "source_signal",
+      "associationBasis": "same_site_official_page"
+    },
+    {
+      "id": "official_page-079a9b71bec589ef19",
+      "restaurantId": "osm-way-393886756-boston-pizza",
+      "restaurantName": "Boston Pizza",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://bostonpizza.com/en/index.html",
+      "mediaUrl": "https://bostonpizza.com/content/dam/bostonpizza/brand-refresh-2025/Franchising_Homepage_1930x1130.png",
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Welcome to Boston Pizza | Restaurant & Sports Bar",
+      "summary": "TEST-2 Welcome to Boston Pizza Restaurant and Sports Bar. Discover our great takeout and delivery menu, including our signaure pizzas, gourmet pastas, wings and more!",
+      "primaryCategory": "specials",
+      "primaryCategoryLabel": "Special",
+      "categories": [
+        {
+          "id": "specials",
+          "label": "Special",
+          "terms": [
+            "feature menu",
+            "offer",
+            "offers",
+            "promo",
+            "promotion"
+          ]
+        },
+        {
+          "id": "events",
+          "label": "Event",
+          "terms": [
+            "ticket",
+            "tickets"
+          ]
+        },
+        {
+          "id": "live_music",
+          "label": "Live music",
+          "terms": [
+            "live music",
+            "concert"
+          ]
+        },
+        {
+          "id": "openings",
+          "label": "Opening",
+          "terms": [
+            "coming soon"
+          ]
+        },
+        {
+          "id": "menu",
+          "label": "Menu update",
+          "terms": [
+            "menu",
+            "lunch menu"
+          ]
+        },
+        {
+          "id": "seasonal",
+          "label": "Seasonal",
+          "terms": [
+            "summer"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "feature menu",
+        "offer",
+        "offers",
+        "promo",
+        "promotion",
+        "ticket",
+        "tickets",
+        "live music",
+        "concert",
+        "coming soon",
+        "menu",
+        "lunch menu",
+        "summer"
+      ],
+      "publishedAt": "2026-09-01T13:12:18.352Z",
+      "observedAt": "2026-09-01T13:26:00.360Z",
+      "ageDays": 0,
+      "isRecent": true,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "source_signal",
+      "associationBasis": "same_site_official_page"
+    },
+    {
+      "id": "official_page-75026915bcb34039e9",
+      "restaurantId": "osm-node-8089843368-smokehouse-brewery",
+      "restaurantName": "Smokehouse Brewery",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://smokehousebrewery.ca/taproom/taproom-events/",
+      "mediaUrl": "https://smokehousebrewery.ca/wp-content/uploads/2026/02/smokehouse-brewery03.webp",
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Events | Smokehouse Brewery",
+      "summary": "Good Times Brewed Here.",
+      "primaryCategory": "events",
+      "primaryCategoryLabel": "Event",
+      "categories": [
+        {
+          "id": "events",
+          "label": "Event",
+          "terms": [
+            "event",
+            "events"
+          ]
+        },
+        {
+          "id": "live_music",
+          "label": "Live music",
+          "terms": [
+            "live music",
+            "trivia"
+          ]
+        },
+        {
+          "id": "menu",
+          "label": "Menu update",
+          "terms": [
+            "menu"
+          ]
+        },
+        {
+          "id": "seasonal",
+          "label": "Seasonal",
+          "terms": [
+            "holiday"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "event",
+        "events",
+        "live music",
+        "trivia",
+        "menu",
+        "holiday"
+      ],
+      "publishedAt": "2026-09-01T00:00:00.000Z",
+      "observedAt": "2026-09-01T13:26:52.696Z",
+      "ageDays": 1,
+      "isRecent": true,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "source_signal",
+      "associationBasis": "same_site_official_page"
+    },
+    {
+      "id": "official_page-cdfb770bfd17ca1fc7",
+      "restaurantId": "osm-node-9099103635-pazzo-ristorante-and-enoteca",
+      "restaurantName": "Pazzo Ristorante & Enoteca",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://www.rcr.ca/restaurants/pazzo-italian-ristorante/",
+      "mediaUrl": "https://www.rcr.ca/content/uploads/2023/08/pazzo-italian-ristorante-1920x1006.jpg",
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Pazzo Ristorante - RCR Hospitality Group",
+      "summary": "Benvenuto and welcome to Pazzo, a new Italian restaurant in the heart of downtown Halifax.",
+      "primaryCategory": "happy_hour",
+      "primaryCategoryLabel": "Happy hour",
+      "categories": [
+        {
+          "id": "happy_hour",
+          "label": "Happy hour",
+          "terms": [
+            "happy hour"
+          ]
+        },
+        {
+          "id": "specials",
+          "label": "Special",
+          "terms": [
+            "special",
+            "offer",
+            "offers",
+            "promo",
+            "promotion"
+          ]
+        },
+        {
+          "id": "events",
+          "label": "Event",
+          "terms": [
+            "event",
+            "events",
+            "tasting"
+          ]
+        },
+        {
+          "id": "menu",
+          "label": "Menu update",
+          "terms": [
+            "menu",
+            "tasting menu",
+            "dinner menu"
+          ]
+        },
+        {
+          "id": "seasonal",
+          "label": "Seasonal",
+          "terms": [
+            "seasonal"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "happy hour",
+        "special",
+        "offer",
+        "offers",
+        "promo",
+        "promotion",
+        "event",
+        "events",
+        "tasting",
+        "menu",
+        "tasting menu",
+        "dinner menu",
+        "seasonal"
+      ],
+      "publishedAt": "2026-08-31T23:22:40.000Z",
+      "observedAt": "2026-09-01T13:26:10.146Z",
+      "ageDays": 1,
+      "isRecent": true,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "source_signal",
+      "associationBasis": "same_site_official_page"
+    },
+    {
+      "id": "official_page-9b47e1f0f90181ed08",
+      "restaurantId": "osm-node-13262694122-public-cafe-bakery-and-bar",
+      "restaurantName": "Public - Café, Bakery & Bar",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://www.rcr.ca/restaurants/public-cafe-bakery-bar/",
+      "mediaUrl": "https://www.rcr.ca/content/uploads/2025/10/Public-RCR-1920x1006.jpg",
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Public – Café, Bakery & Bar - RCR Hospitality Group",
+      "summary": "Public – Café, Bakery & Bar - RCR Hospitality Group --> Menu Restaurants Catering Venues Gift Cards Careers About Header Item 1 Public - Café, Bakery & Bar 1589 South Park Street Halifax, NS B3H 2W7 View on Map 782.701.0102 Hours Open at 8 AM seven days a week - Kitchen closes 9 PM, 10 PM Friday and Saturday nights PUBLIC is an all-day restaurant, bakery & bar. Start the day with house-baked pastries and great cof...",
+      "primaryCategory": "happy_hour",
+      "primaryCategoryLabel": "Happy hour",
+      "categories": [
+        {
+          "id": "happy_hour",
+          "label": "Happy hour",
+          "terms": [
+            "happy hour"
+          ]
+        },
+        {
+          "id": "specials",
+          "label": "Special",
+          "terms": [
+            "special",
+            "offer",
+            "offers",
+            "promo",
+            "promotion"
+          ]
+        },
+        {
+          "id": "events",
+          "label": "Event",
+          "terms": [
+            "event",
+            "events"
+          ]
+        },
+        {
+          "id": "menu",
+          "label": "Menu update",
+          "terms": [
+            "menu"
+          ]
+        },
+        {
+          "id": "brunch",
+          "label": "Brunch",
+          "terms": [
+            "breakfast"
+          ]
+        },
+        {
+          "id": "reservations",
+          "label": "Reservations",
+          "terms": [
+            "reservation",
+            "reservations"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "happy hour",
+        "special",
+        "offer",
+        "offers",
+        "promo",
+        "promotion",
+        "event",
+        "events",
+        "menu",
+        "breakfast",
+        "reservation",
+        "reservations"
+      ],
+      "publishedAt": "2026-08-24T15:19:51.000Z",
+      "observedAt": "2026-09-01T13:26:10.830Z",
+      "ageDays": 8,
+      "isRecent": true,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "source_signal",
+      "associationBasis": "same_site_official_page"
+    },
+    {
+      "id": "official_page-db59ed6d14d30b1ddd",
+      "restaurantId": "osm-node-13286396472-matadora-tapas-bar",
+      "restaurantName": "Matadora Tapas Bar",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://matadorahfx.ca/",
+      "mediaUrl": "http://matadorahfx.ca/wp-content/uploads/2025/01/Matadora-Website-02-Medium.jpeg",
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Home - Matadora Tapas Bar",
+      "summary": "Matadora Tapas Bar is bringing the heat to the Halifax Waterfront, with an elevated, yet playful menu that is meant to be shared with incredible company! Our Story De La Panza, Sale La DanzaAs the old Spanish Proverb says, “From the Stomach, Comes the Dance” – Matadora Tapas Bar is an expression of vibrant flavours...",
+      "primaryCategory": "live_music",
+      "primaryCategoryLabel": "Live music",
+      "categories": [
+        {
+          "id": "live_music",
+          "label": "Live music",
+          "terms": [
+            "show"
+          ]
+        },
+        {
+          "id": "menu",
+          "label": "Menu update",
+          "terms": [
+            "menu"
+          ]
+        },
+        {
+          "id": "seasonal",
+          "label": "Seasonal",
+          "terms": [
+            "summer"
+          ]
+        },
+        {
+          "id": "reservations",
+          "label": "Reservations",
+          "terms": [
+            "reservation",
+            "reservations"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "show",
+        "menu",
+        "summer",
+        "reservation",
+        "reservations"
+      ],
+      "publishedAt": "2026-08-21T18:25:44.000Z",
+      "observedAt": "2026-09-01T13:26:34.165Z",
+      "ageDays": 11,
+      "isRecent": true,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "source_signal",
+      "associationBasis": "same_site_official_page"
+    },
+    {
+      "id": "official_page-462a68de7e1c7ad3cf",
+      "restaurantId": "osm-node-7674175977-moxie-s",
+      "restaurantName": "Moxie's",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://moxies.com/restaurants/boston-seaport/menus/",
+      "mediaUrl": "https://moxies.com/wp-content/uploads/2024/06/gift-card-white.png",
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Boston Menu",
+      "summary": "Moxies Boston Seaport 899 Congress Street, Boston Food Menu Sushi + Raw Appetizers Soup & Salad add grilled chicken $8add blackened shrimp $10add scottish salmon $12 Vegetarian & Plant Based Look for the V symbol throughout the menu for more vegetarian options Handhelds served with fresh cut fries, unless otherwise indicated. beef burgers are made with fresh ground [&hellip;]",
+      "primaryCategory": "happy_hour",
+      "primaryCategoryLabel": "Happy hour",
+      "categories": [
+        {
+          "id": "happy_hour",
+          "label": "Happy hour",
+          "terms": [
+            "happy hour"
+          ]
+        },
+        {
+          "id": "specials",
+          "label": "Special",
+          "terms": [
+            "special",
+            "$"
+          ]
+        },
+        {
+          "id": "events",
+          "label": "Event",
+          "terms": [
+            "event"
+          ]
+        },
+        {
+          "id": "menu",
+          "label": "Menu update",
+          "terms": [
+            "menu",
+            "brunch menu"
+          ]
+        },
+        {
+          "id": "brunch",
+          "label": "Brunch",
+          "terms": [
+            "brunch",
+            "mimosa"
+          ]
+        },
+        {
+          "id": "seasonal",
+          "label": "Seasonal",
+          "terms": [
+            "seasonal"
+          ]
+        },
+        {
+          "id": "reservations",
+          "label": "Reservations",
+          "terms": [
+            "reservation"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "happy hour",
+        "special",
+        "$",
+        "event",
+        "menu",
+        "brunch menu",
+        "brunch",
+        "mimosa",
+        "seasonal",
+        "reservation"
+      ],
+      "publishedAt": "2026-08-17T15:11:30.000Z",
+      "observedAt": "2026-09-01T13:26:44.166Z",
+      "ageDays": 15,
+      "isRecent": true,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "source_signal",
+      "associationBasis": "same_site_official_page"
+    },
+    {
+      "id": "official_page-595806e35566c058dd",
+      "restaurantId": "osm-node-5631529440-hmcs-king-s-wardroom",
+      "restaurantName": "HMCS King’s Wardroom",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://ukings.ca/admissions/campus-tours-recruitment/",
+      "mediaUrl": "https://ukings.ca/wp-content/uploads/2020/04/stacksBrowsing_hero.jpg",
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Campus Tours & Recruitment Events | University of King's College",
+      "summary": "A campus tour and recruitment events are one of the best ways to help you choose a university. You can also find us at events in cities across Canada.",
+      "primaryCategory": "specials",
+      "primaryCategoryLabel": "Special",
+      "categories": [
+        {
+          "id": "specials",
+          "label": "Special",
+          "terms": [
+            "special",
+            "offer",
+            "offers"
+          ]
+        },
+        {
+          "id": "events",
+          "label": "Event",
+          "terms": [
+            "event",
+            "events"
+          ]
+        },
+        {
+          "id": "menu",
+          "label": "Menu update",
+          "terms": [
+            "menu"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "special",
+        "offer",
+        "offers",
+        "event",
+        "events",
+        "menu"
+      ],
+      "publishedAt": "2026-08-17T11:22:21.000Z",
+      "observedAt": "2026-09-01T13:26:24.724Z",
+      "ageDays": 15,
+      "isRecent": true,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "source_signal",
+      "associationBasis": "same_site_official_page"
+    },
+    {
+      "id": "official_page-04288e97e1e523243e",
+      "restaurantId": "osm-node-11867490075-cora",
+      "restaurantName": "Cora",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://www.chezcora.com/en/",
+      "mediaUrl": "https://www.chezcora.com/wp-content/uploads/2022/01/cora_accueil-entete_cropped2.jpg",
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Cora Breakfast and Lunch – Amazing breakfastsdelivered to your door",
+      "summary": "We serve more than 250,000 breakfasts and lunches each week across Canada. Come and enjoy breakfast with a smile at Cora Breakfast and Lunch.",
+      "primaryCategory": "specials",
+      "primaryCategoryLabel": "Special",
+      "categories": [
+        {
+          "id": "specials",
+          "label": "Special",
+          "terms": [
+            "special",
+            "offer",
+            "offers",
+            "promo",
+            "promotion"
+          ]
+        },
+        {
+          "id": "menu",
+          "label": "Menu update",
+          "terms": [
+            "menu"
+          ]
+        },
+        {
+          "id": "brunch",
+          "label": "Brunch",
+          "terms": [
+            "breakfast"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "special",
+        "offer",
+        "offers",
+        "promo",
+        "promotion",
+        "menu",
+        "breakfast"
+      ],
+      "publishedAt": "2026-08-10T13:07:06.000Z",
+      "observedAt": "2026-09-01T13:26:15.887Z",
+      "ageDays": 22,
+      "isRecent": true,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "source_signal",
+      "associationBasis": "same_site_official_page"
+    },
+    {
+      "id": "official_page-2228036b7c3d5ddc6e",
+      "restaurantId": "osm-node-5161526522-sushi-nami-royale",
+      "restaurantName": "Sushi Nami Royale",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://sushinami.ca/dartmouth-crossing/lunch-menu/",
+      "mediaUrl": "https://sushinami.ca/wp-content/uploads/2022/04/sushinami-105.jpg",
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Lunch Menu - Sushi Nami Royale, Dartmouth Crossing",
+      "summary": "Bento Box Specials, Sushi and Sashimi Lunch - All Served with salad and miso soup - See Lunch Menu, Sushi Nami Royale, Dartmouth Crossing, Dartmouth.",
+      "primaryCategory": "specials",
+      "primaryCategoryLabel": "Special",
+      "categories": [
+        {
+          "id": "specials",
+          "label": "Special",
+          "terms": [
+            "special",
+            "specials"
+          ]
+        },
+        {
+          "id": "events",
+          "label": "Event",
+          "terms": [
+            "event",
+            "events"
+          ]
+        },
+        {
+          "id": "menu",
+          "label": "Menu update",
+          "terms": [
+            "menu",
+            "lunch menu"
+          ]
+        },
+        {
+          "id": "reservations",
+          "label": "Reservations",
+          "terms": [
+            "reservation"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "special",
+        "specials",
+        "event",
+        "events",
+        "menu",
+        "lunch menu",
+        "reservation"
+      ],
+      "publishedAt": "2026-08-08T00:39:08.000Z",
+      "observedAt": "2026-09-01T13:27:03.361Z",
+      "ageDays": 25,
+      "isRecent": true,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "source_signal",
+      "associationBasis": "same_site_official_page"
+    },
+    {
+      "id": "official_page-279c2b370e9889a8b6",
+      "restaurantId": "osm-node-11552234300-sushi-nami-royale",
+      "restaurantName": "Sushi Nami Royale",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://sushinami.ca/dartmouth-crossing/lunch-menu/",
+      "mediaUrl": "https://sushinami.ca/wp-content/uploads/2022/04/sushinami-105.jpg",
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Lunch Menu - Sushi Nami Royale, Dartmouth Crossing",
+      "summary": "Bento Box Specials, Sushi and Sashimi Lunch - All Served with salad and miso soup - See Lunch Menu, Sushi Nami Royale, Dartmouth Crossing, Dartmouth.",
+      "primaryCategory": "specials",
+      "primaryCategoryLabel": "Special",
+      "categories": [
+        {
+          "id": "specials",
+          "label": "Special",
+          "terms": [
+            "special",
+            "specials"
+          ]
+        },
+        {
+          "id": "events",
+          "label": "Event",
+          "terms": [
+            "event",
+            "events"
+          ]
+        },
+        {
+          "id": "menu",
+          "label": "Menu update",
+          "terms": [
+            "menu",
+            "lunch menu"
+          ]
+        },
+        {
+          "id": "reservations",
+          "label": "Reservations",
+          "terms": [
+            "reservation"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "special",
+        "specials",
+        "event",
+        "events",
+        "menu",
+        "lunch menu",
+        "reservation"
+      ],
+      "publishedAt": "2026-08-08T00:39:08.000Z",
+      "observedAt": "2026-09-01T13:27:12.278Z",
+      "ageDays": 25,
+      "isRecent": true,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "source_signal",
+      "associationBasis": "same_site_official_page"
+    },
+    {
+      "id": "official_page-d6c3d2d9c98b46b709",
+      "restaurantId": "osm-node-7674175977-moxie-s",
+      "restaurantName": "Moxie's",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://moxies.com/",
+      "mediaUrl": "https://moxies.com/wp-content/uploads/2024/06/gift-card-white.png",
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Home",
+      "summary": "Moxies is an upscale casual dining restaurant, bar and lounge with locations across North America. Explore our brunch, lunch, happy hour, drinks, dinner and late-night menu features. Find one of our restaurants near you today.",
+      "primaryCategory": "happy_hour",
+      "primaryCategoryLabel": "Happy hour",
+      "categories": [
+        {
+          "id": "happy_hour",
+          "label": "Happy hour",
+          "terms": [
+            "happy hour"
+          ]
+        },
+        {
+          "id": "specials",
+          "label": "Special",
+          "terms": [
+            "special",
+            "offer",
+            "offers"
+          ]
+        },
+        {
+          "id": "events",
+          "label": "Event",
+          "terms": [
+            "event"
+          ]
+        },
+        {
+          "id": "menu",
+          "label": "Menu update",
+          "terms": [
+            "menu"
+          ]
+        },
+        {
+          "id": "brunch",
+          "label": "Brunch",
+          "terms": [
+            "brunch"
+          ]
+        },
+        {
+          "id": "reservations",
+          "label": "Reservations",
+          "terms": [
+            "reservation"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "happy hour",
+        "special",
+        "offer",
+        "offers",
+        "event",
+        "menu",
+        "brunch",
+        "reservation"
+      ],
+      "publishedAt": "2026-08-04T15:03:58.000Z",
+      "observedAt": "2026-09-01T13:26:40.907Z",
+      "ageDays": 28,
+      "isRecent": true,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "source_signal",
+      "associationBasis": "same_site_official_page"
+    },
+    {
+      "id": "official_page-11163d6046636f4c32",
+      "restaurantId": "osm-node-5150122721-good-robot-brewing-company",
+      "restaurantName": "Good Robot Brewing Company",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://goodrobotbrewing.ca/",
+      "mediaUrl": "https://bunny-wp-pullzone-tt3dehskqo.b-cdn.net/wp-content/uploads/2026/03/Hero-section-new-bg-1024x944.webp",
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Homepage - Good Robot Brewing Co.",
+      "summary": "Open until 10 PM",
+      "primaryCategory": "specials",
+      "primaryCategoryLabel": "Special",
+      "categories": [
+        {
+          "id": "specials",
+          "label": "Special",
+          "terms": [
+            "promo"
+          ]
+        },
+        {
+          "id": "events",
+          "label": "Event",
+          "terms": [
+            "event",
+            "events"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "promo",
+        "event",
+        "events"
+      ],
+      "publishedAt": "2026-08-03T22:08:44.000Z",
+      "observedAt": "2026-09-01T13:26:18.758Z",
+      "ageDays": 29,
+      "isRecent": true,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "source_signal",
+      "associationBasis": "same_site_official_page"
+    },
+    {
+      "id": "official_page-497f94ce5d9e9101f6",
+      "restaurantId": "osm-node-12003152369-station-1-lebanese-kitchen",
+      "restaurantName": "Station 1 Lebanese Kitchen",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://station1lebanesekitchen.com/",
+      "mediaUrl": "https://station1lebanesekitchen.com/wp-content/uploads/2019/10/slide1.jpg",
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Shawarma & Falafel in Bedford and Dartmouth NS | | STATION1 Lebanese Kitchen",
+      "summary": "Authentic Lebanese & Syrian food in Dartmouth. Halal chicken and beef shawarma, falafel, kebabs and homemade hummus. Dine in, takeout or delivery. Call 902-446-2547.",
+      "primaryCategory": "specials",
+      "primaryCategoryLabel": "Special",
+      "categories": [
+        {
+          "id": "specials",
+          "label": "Special",
+          "terms": [
+            "special"
+          ]
+        },
+        {
+          "id": "menu",
+          "label": "Menu update",
+          "terms": [
+            "menu"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "special",
+        "menu"
+      ],
+      "publishedAt": "2026-07-30T07:55:33.000Z",
+      "observedAt": "2026-09-01T13:26:54.623Z",
+      "ageDays": 33,
+      "isRecent": true,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "source_signal",
+      "associationBasis": "same_site_official_page"
+    },
+    {
+      "id": "official_page-b963cd6b115e5461b4",
+      "restaurantId": "osm-node-4550004778-st-louis-bar-and-grill",
+      "restaurantName": "St. Louis Bar & Grill",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://www.stlouiswings.com/select-store/",
+      "mediaUrl": "https://www.stlouiswings.com/wp-content/uploads/2018/01/images/cross-icon.png",
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Select Store - St. Louis Bar & Grill",
+      "summary": "ect Location STORE DETAILS Find Nearby Locations Find Nearby Locations Search radius 10 km 25 km 50 km 100 km 200 km 500 km Results 25 50 75 100 My St. Louis Select Location --> X Menu Find Us Franchising Gift Cards Order Now Order Now Order Now --> SELECT PROVINCE Alberta Manitoba New Brunswick Nova Scotia Ontario PEI SELECT A CITY SELECT LOCATION Continue APP ON TAP ST. LOUIS REWARDS FOR TAKE OUT AND DELIVERY Ea...",
+      "primaryCategory": "specials",
+      "primaryCategoryLabel": "Special",
+      "categories": [
+        {
+          "id": "specials",
+          "label": "Special",
+          "terms": [
+            "deal",
+            "deals",
+            "offer",
+            "offers"
+          ]
+        },
+        {
+          "id": "menu",
+          "label": "Menu update",
+          "terms": [
+            "menu"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "deal",
+        "deals",
+        "offer",
+        "offers",
+        "menu"
+      ],
+      "publishedAt": "2026-07-28T08:47:42.000Z",
+      "observedAt": "2026-09-01T13:26:53.945Z",
+      "ageDays": 35,
+      "isRecent": true,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "source_signal",
+      "associationBasis": "same_site_official_page"
+    },
+    {
+      "id": "official_page-3d2305a8f7968239b3",
+      "restaurantId": "osm-node-2714920436-greco-pizza",
+      "restaurantName": "Greco Pizza",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://greco.ca/",
+      "mediaUrl": "https://greco.ca/wp-content/uploads/2022/06/greco-delivery-tracker.png",
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Home - Greco Pizza",
+      "summary": "Sign Up for EXCLUSIVE offers! SUBSCRIBE Track Your Driver Free Flavoured Crust Greco Guarantee Delicious Pizza & More Customer FEEDBACK HAVE YOUR SAY Pizzas Donairs Sign Up for Exclusive Offers Sharing deliciousness Since 1977 Download Our App Download Our App",
+      "primaryCategory": "specials",
+      "primaryCategoryLabel": "Special",
+      "categories": [
+        {
+          "id": "specials",
+          "label": "Special",
+          "terms": [
+            "deal",
+            "deals",
+            "offer",
+            "offers"
+          ]
+        },
+        {
+          "id": "menu",
+          "label": "Menu update",
+          "terms": [
+            "menu"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "deal",
+        "deals",
+        "offer",
+        "offers",
+        "menu"
+      ],
+      "publishedAt": "2026-07-27T16:47:17.000Z",
+      "observedAt": "2026-09-01T13:26:20.321Z",
+      "ageDays": 36,
+      "isRecent": true,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "source_signal",
+      "associationBasis": "same_site_official_page"
+    },
+    {
+      "id": "official_page-1f61f5731112a463d0",
+      "restaurantId": "osm-node-703490468-cut-contemporary-steak-house-and-urban-grill",
+      "restaurantName": "Cut Contemporary Steak House & Urban Grill",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://www.rcr.ca/restaurants/cut-steakhouse/",
+      "mediaUrl": "https://www.rcr.ca/content/uploads/2018/02/cut-steakhouse-2.jpg",
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "CUT Steakhouse - RCR Hospitality Group",
+      "summary": "At CUT, our servers are happy to guide you through our menu, to have a conversation, and to curate an experience tailored to your taste. Join us for an unforgettable meal.",
+      "primaryCategory": "specials",
+      "primaryCategoryLabel": "Special",
+      "categories": [
+        {
+          "id": "specials",
+          "label": "Special",
+          "terms": [
+            "special",
+            "offer",
+            "offers",
+            "promo",
+            "promotion"
+          ]
+        },
+        {
+          "id": "events",
+          "label": "Event",
+          "terms": [
+            "event",
+            "events",
+            "tasting"
+          ]
+        },
+        {
+          "id": "live_music",
+          "label": "Live music",
+          "terms": [
+            "show"
+          ]
+        },
+        {
+          "id": "menu",
+          "label": "Menu update",
+          "terms": [
+            "menu",
+            "dinner menu"
+          ]
+        },
+        {
+          "id": "reservations",
+          "label": "Reservations",
+          "terms": [
+            "reservation",
+            "reservations"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "special",
+        "offer",
+        "offers",
+        "promo",
+        "promotion",
+        "event",
+        "events",
+        "tasting",
+        "show",
+        "menu",
+        "dinner menu",
+        "reservation",
+        "reservations"
+      ],
+      "publishedAt": "2026-07-22T17:22:20.000Z",
+      "observedAt": "2026-09-01T13:26:09.571Z",
+      "ageDays": 41,
+      "isRecent": true,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "source_signal",
+      "associationBasis": "official_site_linked_page"
+    },
+    {
+      "id": "official_page-0e2969419c32081315",
+      "restaurantId": "osm-node-7674254025-shuck-seafood-raw-bar",
+      "restaurantName": "Shuck Seafood + Raw Bar",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://www.rcr.ca/restaurants/shuck-seafood-raw-bar/",
+      "mediaUrl": "https://www.rcr.ca/content/uploads/2018/02/shuck-1995-1920x1006.jpg",
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Shuck Seafood + Raw Bar - RCR Hospitality Group",
+      "summary": "At Shuck, we have laid out the best in paper over our tablecloths so you can get to slurping, sharing, and savoring. Join us for an experience that’s unabashedly East Coast.",
+      "primaryCategory": "happy_hour",
+      "primaryCategoryLabel": "Happy hour",
+      "categories": [
+        {
+          "id": "happy_hour",
+          "label": "Happy hour",
+          "terms": [
+            "happy hour"
+          ]
+        },
+        {
+          "id": "specials",
+          "label": "Special",
+          "terms": [
+            "special",
+            "offer",
+            "offers",
+            "promo",
+            "promotion"
+          ]
+        },
+        {
+          "id": "events",
+          "label": "Event",
+          "terms": [
+            "event",
+            "events"
+          ]
+        },
+        {
+          "id": "menu",
+          "label": "Menu update",
+          "terms": [
+            "menu",
+            "dinner menu"
+          ]
+        },
+        {
+          "id": "reservations",
+          "label": "Reservations",
+          "terms": [
+            "reservation",
+            "reservations"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "happy hour",
+        "special",
+        "offer",
+        "offers",
+        "promo",
+        "promotion",
+        "event",
+        "events",
+        "menu",
+        "dinner menu",
+        "reservation",
+        "reservations"
+      ],
+      "publishedAt": "2026-07-21T19:23:27.000Z",
+      "observedAt": "2026-09-01T13:26:11.631Z",
+      "ageDays": 42,
+      "isRecent": true,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "source_signal",
+      "associationBasis": "same_site_official_page"
+    },
     {
       "id": "website_feed-327b71c4248b1ff1bc",
       "restaurantId": "osm-node-11506685695-kenny-s-pizza",
@@ -72,13 +7190,883 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
       ],
       "publishedAt": "2026-07-17T13:48:16.000Z",
       "observedAt": "2026-08-31T11:21:14.935Z",
-      "ageDays": 45,
+      "ageDays": 46,
       "isRecent": true,
       "lookbackDays": 180,
       "confidenceScore": 0.84,
       "confidence": "official_source_signal",
       "reviewState": "source_signal",
       "associationBasis": "unique_feed_link_from_official_website"
+    },
+    {
+      "id": "official_page-5278c85d6c540bf6f8",
+      "restaurantId": "osm-node-703490468-cut-contemporary-steak-house-and-urban-grill",
+      "restaurantName": "Cut Contemporary Steak House & Urban Grill",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://www.rcr.ca/restaurants/cable-wharf-kitchen-patio/",
+      "mediaUrl": "https://www.rcr.ca/content/uploads/2023/04/cable-wharf-kitchen-patio-4-1920x1006.jpg",
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "The Cable Wharf - RCR Hospitality Group",
+      "summary": "Locally inspired seafood in a sophisticated setting with stunning views of the Halifax Harbour serving up seafood delights paired with warm hospitality.",
+      "primaryCategory": "specials",
+      "primaryCategoryLabel": "Special",
+      "categories": [
+        {
+          "id": "specials",
+          "label": "Special",
+          "terms": [
+            "special",
+            "offer",
+            "offers",
+            "promo",
+            "promotion"
+          ]
+        },
+        {
+          "id": "events",
+          "label": "Event",
+          "terms": [
+            "event",
+            "events"
+          ]
+        },
+        {
+          "id": "live_music",
+          "label": "Live music",
+          "terms": [
+            "show"
+          ]
+        },
+        {
+          "id": "menu",
+          "label": "Menu update",
+          "terms": [
+            "menu",
+            "dinner menu",
+            "lunch menu"
+          ]
+        },
+        {
+          "id": "patio",
+          "label": "Patio",
+          "terms": [
+            "patio"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "special",
+        "offer",
+        "offers",
+        "promo",
+        "promotion",
+        "event",
+        "events",
+        "show",
+        "menu",
+        "dinner menu",
+        "lunch menu",
+        "patio"
+      ],
+      "publishedAt": "2026-07-15T18:57:22.000Z",
+      "observedAt": "2026-09-01T13:26:09.624Z",
+      "ageDays": 48,
+      "isRecent": true,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "source_signal",
+      "associationBasis": "official_site_linked_page"
+    },
+    {
+      "id": "official_page-74027dae7d84380c1b",
+      "restaurantId": "osm-node-9099103635-pazzo-ristorante-and-enoteca",
+      "restaurantName": "Pazzo Ristorante & Enoteca",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://www.rcr.ca/restaurants/cable-wharf-kitchen-patio/",
+      "mediaUrl": "https://www.rcr.ca/content/uploads/2023/04/cable-wharf-kitchen-patio-4-1920x1006.jpg",
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "The Cable Wharf - RCR Hospitality Group",
+      "summary": "Locally inspired seafood in a sophisticated setting with stunning views of the Halifax Harbour serving up seafood delights paired with warm hospitality.",
+      "primaryCategory": "specials",
+      "primaryCategoryLabel": "Special",
+      "categories": [
+        {
+          "id": "specials",
+          "label": "Special",
+          "terms": [
+            "special",
+            "offer",
+            "offers",
+            "promo",
+            "promotion"
+          ]
+        },
+        {
+          "id": "events",
+          "label": "Event",
+          "terms": [
+            "event",
+            "events"
+          ]
+        },
+        {
+          "id": "live_music",
+          "label": "Live music",
+          "terms": [
+            "show"
+          ]
+        },
+        {
+          "id": "menu",
+          "label": "Menu update",
+          "terms": [
+            "menu",
+            "dinner menu",
+            "lunch menu"
+          ]
+        },
+        {
+          "id": "patio",
+          "label": "Patio",
+          "terms": [
+            "patio"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "special",
+        "offer",
+        "offers",
+        "promo",
+        "promotion",
+        "event",
+        "events",
+        "show",
+        "menu",
+        "dinner menu",
+        "lunch menu",
+        "patio"
+      ],
+      "publishedAt": "2026-07-15T18:57:22.000Z",
+      "observedAt": "2026-09-01T13:26:10.511Z",
+      "ageDays": 48,
+      "isRecent": true,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "source_signal",
+      "associationBasis": "same_site_official_page"
+    },
+    {
+      "id": "official_page-fb97bf16c933788eb5",
+      "restaurantId": "osm-node-13262694122-public-cafe-bakery-and-bar",
+      "restaurantName": "Public - Café, Bakery & Bar",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://www.rcr.ca/restaurants/cable-wharf-kitchen-patio/",
+      "mediaUrl": "https://www.rcr.ca/content/uploads/2023/04/cable-wharf-kitchen-patio-4-1920x1006.jpg",
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "The Cable Wharf - RCR Hospitality Group",
+      "summary": "Locally inspired seafood in a sophisticated setting with stunning views of the Halifax Harbour serving up seafood delights paired with warm hospitality.",
+      "primaryCategory": "specials",
+      "primaryCategoryLabel": "Special",
+      "categories": [
+        {
+          "id": "specials",
+          "label": "Special",
+          "terms": [
+            "special",
+            "offer",
+            "offers",
+            "promo",
+            "promotion"
+          ]
+        },
+        {
+          "id": "events",
+          "label": "Event",
+          "terms": [
+            "event",
+            "events"
+          ]
+        },
+        {
+          "id": "live_music",
+          "label": "Live music",
+          "terms": [
+            "show"
+          ]
+        },
+        {
+          "id": "menu",
+          "label": "Menu update",
+          "terms": [
+            "menu",
+            "dinner menu",
+            "lunch menu"
+          ]
+        },
+        {
+          "id": "patio",
+          "label": "Patio",
+          "terms": [
+            "patio"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "special",
+        "offer",
+        "offers",
+        "promo",
+        "promotion",
+        "event",
+        "events",
+        "show",
+        "menu",
+        "dinner menu",
+        "lunch menu",
+        "patio"
+      ],
+      "publishedAt": "2026-07-15T18:57:22.000Z",
+      "observedAt": "2026-09-01T13:26:11.326Z",
+      "ageDays": 48,
+      "isRecent": true,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "source_signal",
+      "associationBasis": "same_site_official_page"
+    },
+    {
+      "id": "official_page-f2bd5db73dd63f1c4f",
+      "restaurantId": "osm-node-7674254025-shuck-seafood-raw-bar",
+      "restaurantName": "Shuck Seafood + Raw Bar",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://www.rcr.ca/restaurants/cable-wharf-kitchen-patio/",
+      "mediaUrl": "https://www.rcr.ca/content/uploads/2023/04/cable-wharf-kitchen-patio-4-1920x1006.jpg",
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "The Cable Wharf - RCR Hospitality Group",
+      "summary": "Locally inspired seafood in a sophisticated setting with stunning views of the Halifax Harbour serving up seafood delights paired with warm hospitality.",
+      "primaryCategory": "specials",
+      "primaryCategoryLabel": "Special",
+      "categories": [
+        {
+          "id": "specials",
+          "label": "Special",
+          "terms": [
+            "special",
+            "offer",
+            "offers",
+            "promo",
+            "promotion"
+          ]
+        },
+        {
+          "id": "events",
+          "label": "Event",
+          "terms": [
+            "event",
+            "events"
+          ]
+        },
+        {
+          "id": "live_music",
+          "label": "Live music",
+          "terms": [
+            "show"
+          ]
+        },
+        {
+          "id": "menu",
+          "label": "Menu update",
+          "terms": [
+            "menu",
+            "dinner menu",
+            "lunch menu"
+          ]
+        },
+        {
+          "id": "patio",
+          "label": "Patio",
+          "terms": [
+            "patio"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "special",
+        "offer",
+        "offers",
+        "promo",
+        "promotion",
+        "event",
+        "events",
+        "show",
+        "menu",
+        "dinner menu",
+        "lunch menu",
+        "patio"
+      ],
+      "publishedAt": "2026-07-15T18:57:22.000Z",
+      "observedAt": "2026-09-01T13:26:12.189Z",
+      "ageDays": 48,
+      "isRecent": true,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "source_signal",
+      "associationBasis": "same_site_official_page"
+    },
+    {
+      "id": "official_page-324a83bebdc362807c",
+      "restaurantId": "osm-node-5150122721-good-robot-brewing-company",
+      "restaurantName": "Good Robot Brewing Company",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://shop.goodrobotbrewing.ca/shipping-delivery-policy/",
+      "mediaUrl": null,
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Shipping & Delivery Policy - Good Robot Brewing Co.",
+      "summary": "We offer Same-Day and Next-Day delivery to customers within HRM using our local partner Trexity.",
+      "primaryCategory": "specials",
+      "primaryCategoryLabel": "Special",
+      "categories": [
+        {
+          "id": "specials",
+          "label": "Special",
+          "terms": [
+            "offer"
+          ]
+        },
+        {
+          "id": "events",
+          "label": "Event",
+          "terms": [
+            "event",
+            "events"
+          ]
+        },
+        {
+          "id": "live_music",
+          "label": "Live music",
+          "terms": [
+            "show"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "offer",
+        "event",
+        "events",
+        "show"
+      ],
+      "publishedAt": "2026-07-09T14:59:52.000Z",
+      "observedAt": "2026-09-01T13:26:19.463Z",
+      "ageDays": 54,
+      "isRecent": true,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "source_signal",
+      "associationBasis": "same_site_official_page"
+    },
+    {
+      "id": "official_page-2aad70e590b3f401f0",
+      "restaurantId": "osm-node-9629211483-ihop",
+      "restaurantName": "IHOP",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://ihop.ca/",
+      "mediaUrl": "https://ihop.ca/wp-content/uploads/2026/03/27802_IHOP-CA-2026_MAIN-BANNER.jpg",
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "IHOP CANADA - IHOP Canada",
+      "summary": "Play Video Play Video NEW! Dubai Chocolate Pancakes Try the world's trendiest flavor that only IHOP could bring... Available while supplies last. © 2026 IHOP",
+      "primaryCategory": "specials",
+      "primaryCategoryLabel": "Special",
+      "categories": [
+        {
+          "id": "specials",
+          "label": "Special",
+          "terms": [
+            "offer"
+          ]
+        },
+        {
+          "id": "events",
+          "label": "Event",
+          "terms": [
+            "event",
+            "popup"
+          ]
+        },
+        {
+          "id": "live_music",
+          "label": "Live music",
+          "terms": [
+            "dj",
+            "show"
+          ]
+        },
+        {
+          "id": "menu",
+          "label": "Menu update",
+          "terms": [
+            "menu"
+          ]
+        },
+        {
+          "id": "brunch",
+          "label": "Brunch",
+          "terms": [
+            "breakfast"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "offer",
+        "event",
+        "popup",
+        "dj",
+        "show",
+        "menu",
+        "breakfast"
+      ],
+      "publishedAt": "2026-06-29T22:58:52.000Z",
+      "observedAt": "2026-09-01T13:26:25.425Z",
+      "ageDays": 64,
+      "isRecent": true,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "source_signal",
+      "associationBasis": "official_site_linked_page"
+    },
+    {
+      "id": "official_page-364aa9600592132ed4",
+      "restaurantId": "osm-node-5150058322-2-crows-brewing",
+      "restaurantName": "2 Crows Brewing",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://2crowsbrewing.com/",
+      "mediaUrl": "https://2crowsbrewing.com/wp-content/uploads/2026/05/social.png",
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "2 Crows Brewing Co.",
+      "summary": "2 Crows Brewing Co. is dedicated to creating and maintaining a safe and welcoming beer experience that is accessible & comfortable to all.",
+      "primaryCategory": "specials",
+      "primaryCategoryLabel": "Special",
+      "categories": [
+        {
+          "id": "specials",
+          "label": "Special",
+          "terms": [
+            "special"
+          ]
+        },
+        {
+          "id": "openings",
+          "label": "Opening",
+          "terms": [
+            "coming soon"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "special",
+        "coming soon"
+      ],
+      "publishedAt": "2026-06-11T18:03:33.000Z",
+      "observedAt": "2026-09-01T13:25:53.807Z",
+      "ageDays": 82,
+      "isRecent": true,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "source_signal",
+      "associationBasis": "same_site_official_page"
+    },
+    {
+      "id": "official_page-8e9fb41c54617bf62d",
+      "restaurantId": "osm-node-8089843368-smokehouse-brewery",
+      "restaurantName": "Smokehouse Brewery",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://smokehousebrewery.ca/",
+      "mediaUrl": "https://smokehousebrewery.ca/wp-content/uploads/2026/02/smokehousebrewery-wildcatblonde.png",
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Smokehouse Brewery | Smokehouse Brewery",
+      "summary": "house Brewery | Smokehouse Brewery Welcome to Smokehouse Brewery To view this site you must be of legal drinking age. Are you over 19 years of age? Yes No Home Story Brews Taproom Events Contact The Line-up Pink Lemonade Grandfathers Tartan Designated Driver SAR Wave Watcher Mexican Lager Dusty Haze Crossroads ESB Big Electric Blonde BigBoy Kickstarter Erdbeere Pilsner View All  902-375-2555 Call now  134 Union...",
+      "primaryCategory": "events",
+      "primaryCategoryLabel": "Event",
+      "categories": [
+        {
+          "id": "events",
+          "label": "Event",
+          "terms": [
+            "event",
+            "events"
+          ]
+        },
+        {
+          "id": "live_music",
+          "label": "Live music",
+          "terms": [
+            "live music",
+            "trivia"
+          ]
+        },
+        {
+          "id": "menu",
+          "label": "Menu update",
+          "terms": [
+            "menu"
+          ]
+        },
+        {
+          "id": "seasonal",
+          "label": "Seasonal",
+          "terms": [
+            "seasonal",
+            "summer"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "event",
+        "events",
+        "live music",
+        "trivia",
+        "menu",
+        "seasonal",
+        "summer"
+      ],
+      "publishedAt": "2026-06-03T17:09:29.000Z",
+      "observedAt": "2026-09-01T13:26:51.439Z",
+      "ageDays": 90,
+      "isRecent": true,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "source_signal",
+      "associationBasis": "same_site_official_page"
+    },
+    {
+      "id": "official_page-519fa2d5f51235d9d6",
+      "restaurantId": "osm-node-5631529440-hmcs-king-s-wardroom",
+      "restaurantName": "HMCS King’s Wardroom",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://ukings.ca/campus-community/student-life/the-wardroom/",
+      "mediaUrl": "https://ukings.ca/wp-content/uploads/2016/07/JIV0845.jpg",
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "The Wardroom | University of King's College",
+      "summary": "The HMCS King's Wardroom is a lounge by day and lively bar and music venue by night. Students of all ages are welcome to enjoy the social atmosphere.",
+      "primaryCategory": "specials",
+      "primaryCategoryLabel": "Special",
+      "categories": [
+        {
+          "id": "specials",
+          "label": "Special",
+          "terms": [
+            "special",
+            "offer",
+            "offers"
+          ]
+        },
+        {
+          "id": "events",
+          "label": "Event",
+          "terms": [
+            "event",
+            "events"
+          ]
+        },
+        {
+          "id": "live_music",
+          "label": "Live music",
+          "terms": [
+            "karaoke",
+            "open mic"
+          ]
+        },
+        {
+          "id": "menu",
+          "label": "Menu update",
+          "terms": [
+            "menu"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "special",
+        "offer",
+        "offers",
+        "event",
+        "events",
+        "karaoke",
+        "open mic",
+        "menu"
+      ],
+      "publishedAt": "2026-05-26T20:05:05.000Z",
+      "observedAt": "2026-09-01T13:26:23.936Z",
+      "ageDays": 98,
+      "isRecent": true,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "source_signal",
+      "associationBasis": "same_site_official_page"
+    },
+    {
+      "id": "official_page-d7fe65966e96eb707f",
+      "restaurantId": "osm-node-3799422457-cora",
+      "restaurantName": "Cora",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://www.chezcora.com/en/menu/fresh-fruits/",
+      "mediaUrl": "https://www.chezcora.com/wp-content/uploads/2022/02/cora-twitter-card-tag.jpg",
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Fresh fruits – Dining room menu – Cora Breakfast and lunch",
+      "summary": "Fresh fruits – Dining room menu – Cora Breakfast and lunch Set your favourite restaurant for a personalized experience. Geolocation Géolocalisation Localisez-moi Display results within km Cora Breakfast and Lunch Open Currently open ∙ Closes at 15:00 (PST) Abbotsford (604) 744-2672 3068 Gladwin Road, Abbotsford, BC V2T5T5 Learn more Reserve now Order Cora Breakfast and Lunch Open Currently open ∙ Closes at 15:00 (...",
+      "primaryCategory": "specials",
+      "primaryCategoryLabel": "Special",
+      "categories": [
+        {
+          "id": "specials",
+          "label": "Special",
+          "terms": [
+            "offer",
+            "offers"
+          ]
+        },
+        {
+          "id": "menu",
+          "label": "Menu update",
+          "terms": [
+            "menu"
+          ]
+        },
+        {
+          "id": "brunch",
+          "label": "Brunch",
+          "terms": [
+            "breakfast"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "offer",
+        "offers",
+        "menu",
+        "breakfast"
+      ],
+      "publishedAt": "2026-05-20T13:28:46.000Z",
+      "observedAt": "2026-09-01T13:26:12.729Z",
+      "ageDays": 104,
+      "isRecent": true,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "source_signal",
+      "associationBasis": "same_site_official_page"
+    },
+    {
+      "id": "official_page-20416c916f90af43da",
+      "restaurantId": "osm-node-11867490075-cora",
+      "restaurantName": "Cora",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://www.chezcora.com/en/menu/fresh-fruits/",
+      "mediaUrl": "https://www.chezcora.com/wp-content/uploads/2022/02/cora-twitter-card-tag.jpg",
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Fresh fruits – Dining room menu – Cora Breakfast and lunch",
+      "summary": "Fresh fruits – Dining room menu – Cora Breakfast and lunch Set your favourite restaurant for a personalized experience. Geolocation Géolocalisation Localisez-moi Display results within km Cora Breakfast and Lunch Open Currently open ∙ Closes at 15:00 (PST) Abbotsford (604) 744-2672 3068 Gladwin Road, Abbotsford, BC V2T5T5 Learn more Reserve now Order Cora Breakfast and Lunch Open Currently open ∙ Closes at 15:00 (...",
+      "primaryCategory": "specials",
+      "primaryCategoryLabel": "Special",
+      "categories": [
+        {
+          "id": "specials",
+          "label": "Special",
+          "terms": [
+            "offer",
+            "offers"
+          ]
+        },
+        {
+          "id": "menu",
+          "label": "Menu update",
+          "terms": [
+            "menu"
+          ]
+        },
+        {
+          "id": "brunch",
+          "label": "Brunch",
+          "terms": [
+            "breakfast"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "offer",
+        "offers",
+        "menu",
+        "breakfast"
+      ],
+      "publishedAt": "2026-05-20T13:28:46.000Z",
+      "observedAt": "2026-09-01T13:26:20.056Z",
+      "ageDays": 104,
+      "isRecent": true,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "source_signal",
+      "associationBasis": "same_site_official_page"
+    },
+    {
+      "id": "official_page-44dc16369f3727cdec",
+      "restaurantId": "osm-node-5150122721-good-robot-brewing-company",
+      "restaurantName": "Good Robot Brewing Company",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://shop.goodrobotbrewing.ca/product/toque-promo-w-space-pine/",
+      "mediaUrl": "https://bunny-wp-pullzone-tt3dehskqo.b-cdn.net/wp-content/uploads/2026/03/download-1632ssssssss-768x1024.png",
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Toque - Promo w/ Space Pine - Good Robot Brewing Co.",
+      "summary": "A cuffed winter staple for people who don’t let Atlantic weather win. Stretchy acrylic knit with great shape retention and a clean Good Robot decoration.…",
+      "primaryCategory": "specials",
+      "primaryCategoryLabel": "Special",
+      "categories": [
+        {
+          "id": "specials",
+          "label": "Special",
+          "terms": [
+            "promo"
+          ]
+        },
+        {
+          "id": "events",
+          "label": "Event",
+          "terms": [
+            "event",
+            "events"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "promo",
+        "event",
+        "events"
+      ],
+      "publishedAt": "2026-05-19T14:50:56.000Z",
+      "observedAt": "2026-09-01T13:26:31.836Z",
+      "ageDays": 105,
+      "isRecent": true,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "source_signal",
+      "associationBasis": "same_site_official_page"
     },
     {
       "id": "website_feed-61cd27d15983724b96",
@@ -125,13 +8113,74 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
       ],
       "publishedAt": "2026-05-11T15:04:47.000Z",
       "observedAt": "2026-08-31T11:21:11.105Z",
-      "ageDays": 112,
+      "ageDays": 113,
       "isRecent": true,
       "lookbackDays": 180,
       "confidenceScore": 0.84,
       "confidence": "official_source_signal",
       "reviewState": "source_signal",
       "associationBasis": "unique_feed_link_from_official_website"
+    },
+    {
+      "id": "official_page-ee7a133c91e3d44fcc",
+      "restaurantId": "osm-node-5987565464-afrite",
+      "restaurantName": "aFrite",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://afrite.ca/menu/",
+      "mediaUrl": "https://afrite.ca/wp-content/uploads/2021/04/Insta_-35.jpg",
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Menu - aFrite",
+      "summary": "Menu - aFrite You are using an outdated browser. Please upgrade your browser to improve your experience. 1360 Lower Water St. Halifax, NS Follow Us: : Call Us Home About Menu Contact Home About Menu Contact Hours Monday 11am-3pm Tuesday 11am-3pm Wednesday 11am - 10pm Thursday 11am - 10pm Friday 11am - 10pm Saturday 10am - 10pm Sunday 10am - 10pm Dinner + Brunch + Drinks Hours Of Operations Hours Monday 11am-3pm Tu...",
+      "primaryCategory": "menu",
+      "primaryCategoryLabel": "Menu update",
+      "categories": [
+        {
+          "id": "menu",
+          "label": "Menu update",
+          "terms": [
+            "menu"
+          ]
+        },
+        {
+          "id": "brunch",
+          "label": "Brunch",
+          "terms": [
+            "brunch"
+          ]
+        },
+        {
+          "id": "reservations",
+          "label": "Reservations",
+          "terms": [
+            "reservation",
+            "reservations"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "menu",
+        "brunch",
+        "reservation",
+        "reservations"
+      ],
+      "publishedAt": "2026-05-07T14:25:34.000Z",
+      "observedAt": "2026-09-01T13:25:57.934Z",
+      "ageDays": 117,
+      "isRecent": true,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "source_signal",
+      "associationBasis": "same_site_official_page"
     },
     {
       "id": "website_feed-fc2f07c53d6ca92ab6",
@@ -158,7 +8207,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
       "matchedTerms": [],
       "publishedAt": "2026-05-04T18:38:33.000Z",
       "observedAt": "2026-08-31T11:21:16.129Z",
-      "ageDays": 119,
+      "ageDays": 120,
       "isRecent": true,
       "lookbackDays": 180,
       "confidenceScore": 0.84,
@@ -191,7 +8240,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
       "matchedTerms": [],
       "publishedAt": "2026-05-04T17:55:38.000Z",
       "observedAt": "2026-08-31T11:21:16.129Z",
-      "ageDays": 119,
+      "ageDays": 120,
       "isRecent": true,
       "lookbackDays": 180,
       "confidenceScore": 0.84,
@@ -234,13 +8283,86 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
       ],
       "publishedAt": "2026-04-28T18:12:21.000Z",
       "observedAt": "2026-08-31T11:21:11.105Z",
-      "ageDays": 125,
+      "ageDays": 126,
       "isRecent": true,
       "lookbackDays": 180,
       "confidenceScore": 0.84,
       "confidence": "official_source_signal",
       "reviewState": "source_signal",
       "associationBasis": "unique_feed_link_from_official_website"
+    },
+    {
+      "id": "official_page-d14381ae530ecab29e",
+      "restaurantId": "osm-node-11701979069-sketti-and-ball",
+      "restaurantName": "Sketti and Ball",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://skettiandballco.ca/",
+      "mediaUrl": "https://skettiandballco.ca/wp-content/uploads/2023/10/SkettiBallCo_Social_1200x630.jpg",
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Sketti & Ball Co.",
+      "summary": "Build your own plate by choosing from our variety of house-made balls, sauces, and freshly-made pasta, or choose one of our chef‑designed dishes.",
+      "primaryCategory": "events",
+      "primaryCategoryLabel": "Event",
+      "categories": [
+        {
+          "id": "events",
+          "label": "Event",
+          "terms": [
+            "event",
+            "events",
+            "ticket",
+            "tickets"
+          ]
+        },
+        {
+          "id": "live_music",
+          "label": "Live music",
+          "terms": [
+            "show"
+          ]
+        },
+        {
+          "id": "menu",
+          "label": "Menu update",
+          "terms": [
+            "menu"
+          ]
+        },
+        {
+          "id": "reservations",
+          "label": "Reservations",
+          "terms": [
+            "book now"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "event",
+        "events",
+        "ticket",
+        "tickets",
+        "show",
+        "menu",
+        "book now"
+      ],
+      "publishedAt": "2026-04-21T20:05:28.000Z",
+      "observedAt": "2026-09-01T13:26:50.764Z",
+      "ageDays": 133,
+      "isRecent": true,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "source_signal",
+      "associationBasis": "same_site_official_page"
     },
     {
       "id": "website_feed-a80a6315ffd6fdd83c",
@@ -277,7 +8399,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
       ],
       "publishedAt": "2026-04-08T16:25:03.000Z",
       "observedAt": "2026-08-31T11:21:11.105Z",
-      "ageDays": 145,
+      "ageDays": 146,
       "isRecent": true,
       "lookbackDays": 180,
       "confidenceScore": 0.84,
@@ -310,7 +8432,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
       "matchedTerms": [],
       "publishedAt": "2026-04-08T15:42:52.000Z",
       "observedAt": "2026-08-31T11:21:11.105Z",
-      "ageDays": 145,
+      "ageDays": 146,
       "isRecent": true,
       "lookbackDays": 180,
       "confidenceScore": 0.84,
@@ -353,7 +8475,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
       ],
       "publishedAt": "2026-04-02T11:40:44.000Z",
       "observedAt": "2026-08-31T11:21:09.521Z",
-      "ageDays": 151,
+      "ageDays": 152,
       "isRecent": true,
       "lookbackDays": 180,
       "confidenceScore": 0.84,
@@ -406,13 +8528,88 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
       ],
       "publishedAt": "2026-04-01T19:30:03.000Z",
       "observedAt": "2026-08-31T11:21:11.105Z",
-      "ageDays": 152,
+      "ageDays": 153,
       "isRecent": true,
       "lookbackDays": 180,
       "confidenceScore": 0.84,
       "confidence": "official_source_signal",
       "reviewState": "source_signal",
       "associationBasis": "unique_feed_link_from_official_website"
+    },
+    {
+      "id": "official_page-78e09877934fecfc52",
+      "restaurantId": "osm-node-11699344564-second-cup",
+      "restaurantName": "Second Cup",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://secondcup.com/en/menu/beverages/on-ice/",
+      "mediaUrl": "https://secondcup.com/wp-content/uploads/2022/08/Fall2022_webbanner_mobile_PumpkinSpice_E.jpg",
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Iced Latte Coffees & Teas - Refreshing Coolers | Second Cup Café",
+      "summary": "Enjoy our Iced Latte Coffees and Iced Latte Teas at Second Cup Café, offering refreshing coolers perfect for any time of day.",
+      "primaryCategory": "specials",
+      "primaryCategoryLabel": "Special",
+      "categories": [
+        {
+          "id": "specials",
+          "label": "Special",
+          "terms": [
+            "special",
+            "specials",
+            "offer",
+            "offers"
+          ]
+        },
+        {
+          "id": "menu",
+          "label": "Menu update",
+          "terms": [
+            "menu",
+            "seasonal menu"
+          ]
+        },
+        {
+          "id": "brunch",
+          "label": "Brunch",
+          "terms": [
+            "breakfast"
+          ]
+        },
+        {
+          "id": "seasonal",
+          "label": "Seasonal",
+          "terms": [
+            "seasonal"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "special",
+        "specials",
+        "offer",
+        "offers",
+        "menu",
+        "seasonal menu",
+        "breakfast",
+        "seasonal"
+      ],
+      "publishedAt": "2026-04-01T15:11:15.000Z",
+      "observedAt": "2026-09-01T13:26:54.081Z",
+      "ageDays": 153,
+      "isRecent": true,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "source_signal",
+      "associationBasis": "same_site_official_page"
     },
     {
       "id": "website_feed-bf9a4ffdad6686b258",
@@ -439,13 +8636,191 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
       "matchedTerms": [],
       "publishedAt": "2026-04-01T15:01:16.000Z",
       "observedAt": "2026-08-31T11:21:09.567Z",
-      "ageDays": 152,
+      "ageDays": 153,
       "isRecent": true,
       "lookbackDays": 180,
       "confidenceScore": 0.84,
       "confidence": "official_source_signal",
       "reviewState": "needs_category_review",
       "associationBasis": "unique_feed_link_from_official_website"
+    },
+    {
+      "id": "official_page-2afa7827f55a52b8ef",
+      "restaurantId": "osm-node-4420843802-le-bistro-by-liz",
+      "restaurantName": "Le Bistro by Liz",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://www.lebistrohalifax.com/brunch-menu",
+      "mediaUrl": "https://www.lebistrohalifax.com/wp-content/uploads/2023/07/brunch-2.jpg",
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Brunch Menu - Served Saturday & Sunday- Le Bistro By Liz",
+      "summary": "Brunch Menu at Le Bistro by Liz served SATURDAY & SUNDAY FROM 11 AM - 3 PM. The menu includes brunch entrées, Side Orders, Drinks and Specialty Coffees.",
+      "primaryCategory": "specials",
+      "primaryCategoryLabel": "Special",
+      "categories": [
+        {
+          "id": "specials",
+          "label": "Special",
+          "terms": [
+            "special"
+          ]
+        },
+        {
+          "id": "menu",
+          "label": "Menu update",
+          "terms": [
+            "menu",
+            "brunch menu",
+            "dinner menu"
+          ]
+        },
+        {
+          "id": "brunch",
+          "label": "Brunch",
+          "terms": [
+            "brunch",
+            "breakfast",
+            "mimosa"
+          ]
+        },
+        {
+          "id": "reservations",
+          "label": "Reservations",
+          "terms": [
+            "reservation",
+            "reservations"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "special",
+        "menu",
+        "brunch menu",
+        "dinner menu",
+        "brunch",
+        "breakfast",
+        "mimosa",
+        "reservation",
+        "reservations"
+      ],
+      "publishedAt": "2026-03-31T01:10:59.000Z",
+      "observedAt": "2026-09-01T13:26:30.314Z",
+      "ageDays": 155,
+      "isRecent": true,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "source_signal",
+      "associationBasis": "same_site_official_page"
+    },
+    {
+      "id": "official_page-70fd47b94646265b21",
+      "restaurantId": "osm-node-11751643550-cafe-lunette",
+      "restaurantName": "Café Lunette",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://www.cafelunette.com/",
+      "mediaUrl": "https://www.cafelunette.com/wp-content/uploads/2025/10/DSC_3591-1-683x1024.jpg",
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "French Restaurant & Café - Downtown Halifax | Café Lunette",
+      "summary": "A French-inspired bistro located in Downtown Halifax, Café Lunette is an all-day dining restaurant and cocktail bar.",
+      "primaryCategory": "happy_hour",
+      "primaryCategoryLabel": "Happy hour",
+      "categories": [
+        {
+          "id": "happy_hour",
+          "label": "Happy hour",
+          "terms": [
+            "happy hour"
+          ]
+        },
+        {
+          "id": "specials",
+          "label": "Special",
+          "terms": [
+            "special",
+            "offer",
+            "offers"
+          ]
+        },
+        {
+          "id": "events",
+          "label": "Event",
+          "terms": [
+            "event",
+            "events"
+          ]
+        },
+        {
+          "id": "menu",
+          "label": "Menu update",
+          "terms": [
+            "menu"
+          ]
+        },
+        {
+          "id": "patio",
+          "label": "Patio",
+          "terms": [
+            "patio"
+          ]
+        },
+        {
+          "id": "brunch",
+          "label": "Brunch",
+          "terms": [
+            "brunch"
+          ]
+        },
+        {
+          "id": "reservations",
+          "label": "Reservations",
+          "terms": [
+            "reservation",
+            "reservations",
+            "book a table"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "happy hour",
+        "special",
+        "offer",
+        "offers",
+        "event",
+        "events",
+        "menu",
+        "patio",
+        "brunch",
+        "reservation",
+        "reservations",
+        "book a table"
+      ],
+      "publishedAt": "2026-03-27T17:58:20.000Z",
+      "observedAt": "2026-09-01T13:26:03.398Z",
+      "ageDays": 158,
+      "isRecent": true,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "source_signal",
+      "associationBasis": "same_site_official_page"
     },
     {
       "id": "website_feed-7affda8076fdbeb020",
@@ -472,13 +8847,257 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
       "matchedTerms": [],
       "publishedAt": "2026-03-26T15:51:56.000Z",
       "observedAt": "2026-08-31T11:21:11.105Z",
-      "ageDays": 158,
+      "ageDays": 159,
       "isRecent": true,
       "lookbackDays": 180,
       "confidenceScore": 0.84,
       "confidence": "official_source_signal",
       "reviewState": "needs_category_review",
       "associationBasis": "unique_feed_link_from_official_website"
+    },
+    {
+      "id": "official_page-9b6a91c0f35bca1f60",
+      "restaurantId": "osm-node-3799422457-cora",
+      "restaurantName": "Cora",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://www.chezcora.com/en/breakfast-lunch-restaurants/cora-halifax-downtown/",
+      "mediaUrl": "https://www.chezcora.com/wp-content/uploads/2022/02/cora-twitter-card-tag.jpg",
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Cora restaurant Halifax - Downtown - Cora Breakfast and lunch",
+      "summary": "Get directions, menus and opening hours for our Cora restaurant Cora Halifax - Downtown - Nouvelle-Écosse",
+      "primaryCategory": "specials",
+      "primaryCategoryLabel": "Special",
+      "categories": [
+        {
+          "id": "specials",
+          "label": "Special",
+          "terms": [
+            "offer",
+            "offers"
+          ]
+        },
+        {
+          "id": "menu",
+          "label": "Menu update",
+          "terms": [
+            "menu"
+          ]
+        },
+        {
+          "id": "patio",
+          "label": "Patio",
+          "terms": [
+            "patio"
+          ]
+        },
+        {
+          "id": "brunch",
+          "label": "Brunch",
+          "terms": [
+            "breakfast"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "offer",
+        "offers",
+        "menu",
+        "patio",
+        "breakfast"
+      ],
+      "publishedAt": "2026-03-19T16:38:21.000Z",
+      "observedAt": "2026-09-01T13:26:08.009Z",
+      "ageDays": 166,
+      "isRecent": true,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "source_signal",
+      "associationBasis": "same_site_official_page"
+    },
+    {
+      "id": "official_page-872eb847ff85c6fa92",
+      "restaurantId": "osm-node-5150122721-good-robot-brewing-company",
+      "restaurantName": "Good Robot Brewing Company",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://goodrobotbrewing.ca/menus/",
+      "mediaUrl": "https://goodrobotbrewing.ca/wp-content/themes/goodrobot/img/screenshot.jpg",
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Menus | Good Robot Brewing Co.",
+      "summary": "Same robot. Many kitchens.",
+      "primaryCategory": "specials",
+      "primaryCategoryLabel": "Special",
+      "categories": [
+        {
+          "id": "specials",
+          "label": "Special",
+          "terms": [
+            "offer"
+          ]
+        },
+        {
+          "id": "events",
+          "label": "Event",
+          "terms": [
+            "event",
+            "events"
+          ]
+        },
+        {
+          "id": "menu",
+          "label": "Menu update",
+          "terms": [
+            "menu"
+          ]
+        },
+        {
+          "id": "patio",
+          "label": "Patio",
+          "terms": [
+            "beer garden"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "offer",
+        "event",
+        "events",
+        "menu",
+        "beer garden"
+      ],
+      "publishedAt": "2026-03-11T19:42:44.000Z",
+      "observedAt": "2026-09-01T13:26:25.942Z",
+      "ageDays": 174,
+      "isRecent": true,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "source_signal",
+      "associationBasis": "same_site_official_page"
+    },
+    {
+      "id": "official_page-6050a1dfe742f0bfdc",
+      "restaurantId": "osm-node-2713247300-pizza-co",
+      "restaurantName": "Pizza.Co",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://pzzaco.ca/",
+      "mediaUrl": "https://pzzaco.ca/wp-content/uploads/2025/02/banner_01_1920x808-2025.jpg",
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "PZZA.CO Pizzeria and Restaurant",
+      "summary": "Pzza.co Halifax, Nova Scotia Pizzeria and Restaurant",
+      "primaryCategory": "specials",
+      "primaryCategoryLabel": "Special",
+      "categories": [
+        {
+          "id": "specials",
+          "label": "Special",
+          "terms": [
+            "special",
+            "specials"
+          ]
+        },
+        {
+          "id": "menu",
+          "label": "Menu update",
+          "terms": [
+            "menu"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "special",
+        "specials",
+        "menu"
+      ],
+      "publishedAt": "2026-03-06T16:23:04.000Z",
+      "observedAt": "2026-09-01T13:26:45.259Z",
+      "ageDays": 179,
+      "isRecent": true,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "source_signal",
+      "associationBasis": "same_site_official_page"
+    },
+    {
+      "id": "official_page-599d129ad383afe441",
+      "restaurantId": "osm-node-7082566320-springhouse-market",
+      "restaurantName": "Springhouse Market",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://www.eatspringhouse.com/",
+      "mediaUrl": "https://www.eatspringhouse.com/uploads/b/0f4cbd30-c178-11ea-ad1b-c9c4b503134c/Bruschetta.JPG",
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Home | Springhouse",
+      "summary": "Springhouse offers plant-based meal subscriptions with weekly delivery in the Halifax area, as well as small event catering.",
+      "primaryCategory": "specials",
+      "primaryCategoryLabel": "Special",
+      "categories": [
+        {
+          "id": "specials",
+          "label": "Special",
+          "terms": [
+            "offer",
+            "offers"
+          ]
+        },
+        {
+          "id": "events",
+          "label": "Event",
+          "terms": [
+            "event"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "offer",
+        "offers",
+        "event"
+      ],
+      "publishedAt": "+181819-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-01T13:26:52.943Z",
+      "ageDays": 0,
+      "isRecent": true,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "source_signal",
+      "associationBasis": "same_site_official_page"
     }
   ]
 };

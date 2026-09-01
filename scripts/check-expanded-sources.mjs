@@ -18,15 +18,18 @@ const discoveredRestaurants = Array.isArray(discoveredWindow.HALIFAX_DISCOVERED_
 const restaurantIds = new Set([...(catalog.restaurants || []), ...discoveredRestaurants].map((restaurant) => restaurant.id));
 const firstPartyWindow = await loadWindowScript("data/first-party-sources.js");
 const feedWindow = await loadWindowScript("data/website-feed-signals.js");
+const websitePageWindow = await loadWindowScript("data/website-page-intelligence.js").catch(() => ({ HALIFAX_WEBSITE_PAGE_INTELLIGENCE: { records: [], signals: [] } }));
 const socialWindow = await loadWindowScript("data/social-signals.js");
 const recentWindow = await loadWindowScript("data/recent-social-posts.js").catch(() => ({ HALIFAX_RECENT_SOCIAL_POSTS: { records: [] } }));
 const firstParty = firstPartyWindow.HALIFAX_FIRST_PARTY_SOURCES || { records: [] };
 const feedPayload = feedWindow.HALIFAX_WEBSITE_FEED_SIGNALS || { signals: [] };
+const websitePagePayload = websitePageWindow.HALIFAX_WEBSITE_PAGE_INTELLIGENCE || { records: [], signals: [] };
 const socialPayload = socialWindow.HALIFAX_SOCIAL_SIGNALS || { signals: [] };
 const recentPayload = recentWindow.HALIFAX_RECENT_SOCIAL_POSTS || { records: [] };
 const records = Array.isArray(firstParty.records) ? firstParty.records : [];
 const feedSignals = Array.isArray(feedPayload.signals) ? feedPayload.signals : [];
 const feedPosts = Array.isArray(feedPayload.posts) ? feedPayload.posts : feedSignals;
+const websitePageRecords = Array.isArray(websitePagePayload.records) ? websitePagePayload.records : [];
 const socialSignals = Array.isArray(socialPayload.signals) ? socialPayload.signals : [];
 const socialPosts = Array.isArray(socialPayload.posts) ? socialPayload.posts : socialSignals;
 const recentPosts = Array.isArray(recentPayload.records) ? recentPayload.records : [];
@@ -173,6 +176,16 @@ for (const post of feedPosts) {
   if (!boundedText(post.excerpt)) failures.push({ type: "website_feed_excerpt_too_long", restaurantId: post.restaurantId, postUrl: post.postUrl });
 }
 
+const duplicateWebsitePageRecords = duplicates(websitePageRecords, (record) => `${record.restaurantId}|${record.postUrl}`);
+if (duplicateWebsitePageRecords.length) failures.push({ type: "duplicate_website_page_intelligence", values: duplicateWebsitePageRecords.slice(0, 30) });
+for (const record of websitePageRecords) {
+  if (!restaurantIds.has(record.restaurantId) || record.platform !== "official_page" || !validUrl(record.postUrl) || !validDate(record.observedAt) || record.sourceKind !== "official_page_html" || !["same_site_official_page", "official_site_linked_page"].includes(record.associationBasis) || !["source_signal", "needs_date_review"].includes(record.reviewState) || !String(record.title || "").trim() || !boundedText(record.excerpt)) {
+    failures.push({ type: "invalid_website_page_intelligence", restaurantId: record.restaurantId, postUrl: record.postUrl });
+  }
+  if (record.mediaUrl && !validUrl(record.mediaUrl)) failures.push({ type: "invalid_website_page_media", restaurantId: record.restaurantId, mediaUrl: record.mediaUrl });
+  if (hasForbiddenRawTextFields(record)) failures.push({ type: "website_page_raw_body_retained", restaurantId: record.restaurantId, postUrl: record.postUrl });
+}
+
 const duplicateSocialSignals = duplicates(socialSignals, (signal) => `${signal.platform}|${signal.restaurantId}|${signal.postId}`);
 if (duplicateSocialSignals.length) failures.push({ type: "duplicate_social_signals", values: duplicateSocialSignals.slice(0, 30) });
 for (const signal of socialSignals) {
@@ -200,7 +213,7 @@ if (duplicateRecentPosts.length) failures.push({ type: "duplicate_recent_social_
 for (const post of recentPosts) {
   const categories = Array.isArray(post.categories) ? post.categories : [];
   const categoryIds = categories.map((category) => category.id);
-  if (!post.id || !restaurantIds.has(post.restaurantId) || !["website_feed", "facebook", "instagram"].includes(post.platform) || !["feed", "social_api"].includes(post.sourceFamily) || !validUrl(post.postUrl) || !validDate(post.observedAt) || !String(post.title || "").trim() || !String(post.summary || "").trim() || !allowedRecentCategories.has(post.primaryCategory) || !categoryIds.every((id) => allowedRecentCategories.has(id))) {
+  if (!post.id || !restaurantIds.has(post.restaurantId) || !["website_feed", "official_page", "facebook", "instagram"].includes(post.platform) || !["feed", "website_page", "social_api"].includes(post.sourceFamily) || !validUrl(post.postUrl) || !validDate(post.observedAt) || !String(post.title || "").trim() || !String(post.summary || "").trim() || !allowedRecentCategories.has(post.primaryCategory) || !categoryIds.every((id) => allowedRecentCategories.has(id))) {
     failures.push({ type: "invalid_recent_social_post", id: post.id, restaurantId: post.restaurantId, postUrl: post.postUrl });
   }
   if (post.publishedAt && !validDate(post.publishedAt)) failures.push({ type: "invalid_recent_social_post_date", id: post.id, publishedAt: post.publishedAt });
@@ -215,6 +228,7 @@ if (socialPayload.credentialState?.instagram === "missing") warnings.push({ type
 if ((socialPayload.sharedProfileAssociationsSkipped || 0) > 0) warnings.push({ type: "shared_brand_social_profiles_excluded", count: socialPayload.sharedProfileAssociationsSkipped });
 if ((feedPayload.sharedFeedUrlsSkipped || 0) > 0) warnings.push({ type: "shared_brand_feeds_excluded", count: feedPayload.sharedFeedUrlsSkipped });
 if (recentPosts.length === 0) warnings.push({ type: "recent_social_post_records_empty" });
+if (websitePageRecords.length === 0) warnings.push({ type: "website_page_intelligence_records_empty" });
 
 const platformCounts = {};
 const linkHubCounts = {};
@@ -252,6 +266,8 @@ const report = {
     reviewedFeedsExcluded: feedPayload.reviewedFeedsExcluded ?? 0,
     websiteFeedSignals: feedSignals.length,
     websiteFeedPosts: feedPosts.length,
+    websitePageIntelligence: websitePageRecords.length,
+    websitePageRestaurants: new Set(websitePageRecords.map((record) => record.restaurantId)).size,
     uniqueRestaurantSocialProfiles: socialPayload.uniqueRestaurantProfiles ?? null,
     sharedProfileAssociationsSkipped: socialPayload.sharedProfileAssociationsSkipped ?? 0,
     socialSignals: socialSignals.length,

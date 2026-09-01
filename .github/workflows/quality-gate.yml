@@ -106,6 +106,8 @@ jobs:
             data/build/structured-place-facts.json
             data/build/structured-specials.json
             data/structured-specials.js
+            data/build/website-page-intelligence.json
+            data/website-page-intelligence.js
             data/build/recent-social-posts.json
             data/recent-social-posts.js
             data/build/reviewed-social-posts.json

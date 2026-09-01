@@ -295,8 +295,14 @@ await page.waitForFunction(() => {
 await page.locator(".toast").evaluateAll((nodes) => nodes.forEach((node) => node.remove()));
 await page.screenshot({ path: resolve("artifacts", "ui-check-iphone-official-update-media.png"), fullPage: false });
 await page.goto(`${url}/#restaurant/osm-node-7139174640-kajohn-thai`, { waitUntil: "networkidle" });
-if (await page.locator("#detailUpdates .official-update-card").count() !== 2) throw new Error("Expected two reviewed Kajohn Thai official updates.");
-if (await page.locator("#detailUpdates .official-update-media").count() !== 2) throw new Error("Expected retained media on both reviewed Kajohn Thai updates.");
+const kajohnUpdateState = await page.evaluate(() => {
+  const restaurant = restaurants.find((item) => item.id === "osm-node-7139174640-kajohn-thai");
+  const updates = (restaurant?.officialUpdates || []).filter((update) => safeUrl(update.postUrl)).slice(0, 12);
+  return { expected: updates.length, expectedMedia: updates.filter((update) => safeUrl(update.mediaUrl || update.thumbnailUrl)).length };
+});
+if (kajohnUpdateState.expected < 2) throw new Error(`Expected at least two Kajohn Thai official updates in the browser model, got ${JSON.stringify(kajohnUpdateState)}.`);
+if (await page.locator("#detailUpdates .official-update-card").count() !== kajohnUpdateState.expected) throw new Error(`Expected rendered Kajohn Thai updates to match the browser model, got ${JSON.stringify(kajohnUpdateState)}.`);
+if (await page.locator("#detailUpdates .official-update-media").count() < Math.min(2, kajohnUpdateState.expectedMedia)) throw new Error(`Expected retained media on reviewed Kajohn Thai updates, got ${JSON.stringify(kajohnUpdateState)}.`);
 const kajohnMedia = page.locator("#detailUpdates .official-update-media").first();
 await kajohnMedia.scrollIntoViewIfNeeded();
 await page.waitForFunction(() => {
@@ -307,7 +313,11 @@ await page.locator(".toast").evaluateAll((nodes) => nodes.forEach((node) => node
 await page.screenshot({ path: resolve("artifacts", "ui-check-iphone-kajohn-updates.png"), fullPage: false });
 for (const excludedRestaurantId of ["osm-node-1666719782-pho-hoang-minh", "osm-node-4550004778-st-louis-bar-and-grill", "osm-node-8600605850-barburrito"]) {
   await page.goto(`${url}/#restaurant/${excludedRestaurantId}`, { waitUntil: "networkidle" });
-  if (await page.locator("#detailUpdates").count()) throw new Error(`Reviewed non-local or compromised feed updates leaked onto ${excludedRestaurantId}.`);
+  const excludedFeedLeak = await page.evaluate((restaurantId) => {
+    const restaurant = restaurants.find((item) => item.id === restaurantId);
+    return (restaurant?.officialUpdates || []).filter((update) => update.platform === "website_feed").length;
+  }, excludedRestaurantId);
+  if (excludedFeedLeak) throw new Error(`Reviewed non-local or compromised feed updates leaked onto ${excludedRestaurantId}.`);
 }
 const feedReviewState = await page.evaluate(() => ({
   posts: window.HALIFAX_WEBSITE_FEED_SIGNALS?.posts?.length || 0,

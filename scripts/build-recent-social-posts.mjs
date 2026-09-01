@@ -140,7 +140,7 @@ function categoryHits(text, signalMatches = {}) {
 }
 
 function platformLabel(platform) {
-  const labels = { website_feed: "Official website", facebook: "Facebook", instagram: "Instagram" };
+  const labels = { website_feed: "Official website", official_page: "Official page", facebook: "Facebook", instagram: "Instagram" };
   return labels[String(platform || "").toLowerCase()] || "Official update";
 }
 
@@ -171,7 +171,7 @@ function normalizePost(post, sourceFamily) {
     : primary.id === "general_update"
       ? "needs_category_review"
       : (post.reviewState || "source_signal");
-  const confidenceScore = post.sourceKind?.startsWith("meta_graph_api") ? 0.9 : post.sourceKind === "official_feed" ? 0.84 : 0.7;
+  const confidenceScore = post.sourceKind?.startsWith("meta_graph_api") ? 0.9 : post.sourceKind === "official_feed" ? 0.84 : post.sourceKind === "official_page_html" ? 0.78 : 0.7;
 
   if (!post.restaurantId || !postUrl) return null;
   return {
@@ -203,7 +203,7 @@ function normalizePost(post, sourceFamily) {
     isRecent,
     lookbackDays,
     confidenceScore,
-    confidence: post.confidence || (sourceFamily === "feed" ? "official_source_signal" : "official_social_api_signal"),
+    confidence: post.confidence || (sourceFamily === "feed" || sourceFamily === "website_page" ? "official_source_signal" : "official_social_api_signal"),
     reviewState,
     associationBasis: post.associationBasis || null
   };
@@ -211,13 +211,17 @@ function normalizePost(post, sourceFamily) {
 
 const feedPayload = await loadJson("../data/build/website-feed-signals.json", null)
   || await loadWindowScript("data/website-feed-signals.js", "HALIFAX_WEBSITE_FEED_SIGNALS", { posts: [], signals: [] });
+const websitePagePayload = await loadJson("../data/build/website-page-intelligence.json", null)
+  || await loadWindowScript("data/website-page-intelligence.js", "HALIFAX_WEBSITE_PAGE_INTELLIGENCE", { records: [], signals: [] });
 const socialPayload = await loadJson("../data/build/social-signals.json", null)
   || await loadWindowScript("data/social-signals.js", "HALIFAX_SOCIAL_SIGNALS", { posts: [], signals: [] });
 
 const feedPosts = Array.isArray(feedPayload.posts) ? feedPayload.posts : (Array.isArray(feedPayload.signals) ? feedPayload.signals : []);
+const websitePagePosts = Array.isArray(websitePagePayload.records) ? websitePagePayload.records : (Array.isArray(websitePagePayload.signals) ? websitePagePayload.signals : []);
 const socialPosts = Array.isArray(socialPayload.posts) ? socialPayload.posts : (Array.isArray(socialPayload.signals) ? socialPayload.signals : []);
 const records = [
   ...feedPosts.map((post) => normalizePost(post, "feed")),
+  ...websitePagePosts.map((post) => normalizePost(post, "website_page")),
   ...socialPosts.map((post) => normalizePost(post, "social_api"))
 ].filter(Boolean)
   .filter((post) => post.isRecent || post.reviewState === "needs_date_review")
@@ -242,12 +246,15 @@ const output = {
   summaryLimit,
   inputCounts: {
     websiteFeedPosts: feedPosts.length,
+    websitePagePosts: websitePagePosts.length,
     socialApiPosts: socialPosts.length,
     websiteFeedSignals: Array.isArray(feedPayload.signals) ? feedPayload.signals.length : 0,
+    websitePageSignals: Array.isArray(websitePagePayload.signals) ? websitePagePayload.signals.length : 0,
     socialApiSignals: Array.isArray(socialPayload.signals) ? socialPayload.signals.length : 0
   },
   sourceState: {
     websiteFeedsGeneratedAt: feedPayload.generatedAt || null,
+    websitePagesGeneratedAt: websitePagePayload.generatedAt || null,
     metaSocialGeneratedAt: socialPayload.generatedAt || null,
     metaCredentialState: socialPayload.credentialState || null,
     metaProfilesAttempted: socialPayload.profilesAttempted ?? null,

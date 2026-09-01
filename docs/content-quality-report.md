@@ -1,6 +1,6 @@
 # Halifax Sourced content quality report
 
-Generated: 2026-08-31T11:28:10.161Z
+Generated: 2026-09-01T13:45:12.484Z
 
 ## Summary
 
@@ -11,7 +11,7 @@ Generated: 2026-08-31T11:28:10.161Z
 - **structuredMenus**: 129
 - **structuredReservations**: 49
 - **structuredOrdering**: 74
-- **structuredSpecials**: 68
+- **structuredSpecials**: 74
 - **verifiedCurrentSpecials**: 49
 - **orphanSpecialSources**: 0
 - **cityEvents**: 187
@@ -32,7 +32,7 @@ Generated: 2026-08-31T11:28:10.161Z
 
 - **firstPartyRelationships**: <7d 1102; 7–30d 0; 30–90d 0; >90d 0; unknown 0
 - **structuredPlaceFacts**: <7d 162; 7–30d 0; 30–90d 0; >90d 0; unknown 0
-- **specials**: <7d 59; 7–30d 9; 30–90d 0; >90d 0; unknown 0
+- **specials**: <7d 65; 7–30d 9; 30–90d 0; >90d 0; unknown 0
 - **events**: <7d 187; 7–30d 0; 30–90d 0; >90d 0; unknown 0
 
 ## Review queues

@@ -1,17 +1,17 @@
 {
   "version": 1,
-  "generatedAt": "2026-08-30T17:01:45.254Z",
-  "sourceCommitSha": "c9b448f52f7569ff9e4622729f79d9a617a18a59",
+  "generatedAt": "2026-09-01T13:45:12.536Z",
+  "sourceCommitSha": "cd4c1e311a91f098322770f9d5e2da7a9b46cd5a",
   "qualityWorkflowRunId": null,
   "deploymentWorkflowRunId": null,
-  "coverageGeneratedAt": "2026-08-30T17:01:45.035Z",
+  "coverageGeneratedAt": "2026-09-01T13:45:12.302Z",
   "lifecycleGeneratedAt": "2026-08-29T16:41:21.695Z",
   "counts": {
     "canonicalPlaces": 749,
     "activePlaces": 748,
     "archivedPlaces": 1,
-    "rightsApprovedMedia": 37,
+    "rightsApprovedMedia": 73,
     "canonicalRestaurantsWithUpcomingStructuredEvents": 2,
-    "upcomingStructuredRestaurantEventRecords": 14
+    "upcomingStructuredRestaurantEventRecords": 18
   }
 }

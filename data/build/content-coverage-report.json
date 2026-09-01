@@ -1,8 +1,8 @@
 {
   "version": 1,
-  "generatedAt": "2026-08-31T11:50:39.473Z",
-  "sourceCommitSha": null,
-  "baselineCommitHint": null,
+  "generatedAt": "2026-09-01T13:45:12.302Z",
+  "sourceCommitSha": "cd4c1e311a91f098322770f9d5e2da7a9b46cd5a",
+  "baselineCommitHint": "cd4c1e311a91f098322770f9d5e2da7a9b46cd5a",
   "definitions": {
     "canonicalPlaces": "Current user-facing merge of catalog restaurants plus reviewed discovery records, matching the app's existing name-based discovery merge behavior.",
     "verifiedOfficialWebsite": "Official-site fetch returned a successful HTTP status or the first-party discovery layer successfully fetched the restaurant-owned site.",
@@ -1140,12 +1140,12 @@
     }
   },
   "eventCoverage": {
-    "currentCityEvents": 180,
+    "currentCityEvents": 179,
     "allStoredCityEvents": 187,
     "cityEventSources": 15,
     "bySource": {
       "Tourism Nova Scotia Events": 23,
-      "Halifax Public Libraries": 3,
+      "Halifax Public Libraries": 2,
       "Alderney Landing": 1,
       "Halifax Convention Centre": 1,
       "The Carleton": 8,
@@ -1161,33 +1161,33 @@
       "Neptune Theatre": 3
     },
     "byCategory": {
-      "Arts": 46,
+      "Arts": 45,
       "Comedy": 4,
       "Sports": 61,
-      "Community": 26,
       "Festivals": 10,
+      "Community": 25,
       "Music": 57,
       "Outdoor": 1,
       "Other": 2,
       "Food & Drink": 3
     },
     "byMunicipality": {
-      "Halifax": 164,
+      "Halifax": 163,
       "Dartmouth": 10,
       "Bedford": 6
     },
     "withVenueRestaurantNameMatch": 8,
     "withCoordinates": 0,
-    "withTicketLink": 180,
+    "withTicketLink": 179,
     "withPrice": 11,
     "freeEvents": 0,
     "duplicateEventCount": 0,
     "structuredRestaurantEvents": 20,
-    "structuredUpcomingRestaurantEvents": 20,
+    "structuredUpcomingRestaurantEvents": 18,
     "canonicalRestaurantsWithStructuredUpcomingEvents": 2,
-    "upcomingStructuredRestaurantEventRecords": 20,
-    "expiredStructuredRestaurantEvents": 0,
-    "next7Days": 16,
+    "upcomingStructuredRestaurantEventRecords": 18,
+    "expiredStructuredRestaurantEvents": 2,
+    "next7Days": 18,
     "next30Days": 48
   },
   "discoveryCoverage": {

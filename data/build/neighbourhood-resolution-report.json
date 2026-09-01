@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-08-30T17:01:02.417Z",
+  "generatedAt": "2026-09-01T13:44:22.326Z",
   "policy": "Only location-specific matches supported by compatible identity plus address, official domain, phone or reviewed discovery evidence are published. Conflicts and name-only matches remain queued.",
   "downtownDartmouth": {
     "candidates": 48,

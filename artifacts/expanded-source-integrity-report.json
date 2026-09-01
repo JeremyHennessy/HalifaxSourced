@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-31T11:28:10.484Z",
+  "generatedAt": "2026-09-01T13:44:21.971Z",
   "socialPlatformRegistryVersion": 1,
   "counts": {
     "firstPartyRecords": 223,
@@ -37,18 +37,26 @@
     "reviewedFeedsExcluded": 5,
     "websiteFeedSignals": 4,
     "websiteFeedPosts": 11,
+    "websitePageIntelligence": 400,
+    "websitePageRestaurants": 142,
     "uniqueRestaurantSocialProfiles": null,
     "sharedProfileAssociationsSkipped": 0,
     "socialSignals": 0,
     "socialPosts": 0,
-    "recentSocialPosts": 11,
+    "recentSocialPosts": 150,
     "recentSocialPostCategories": {
-      "specials": 3,
-      "openings": 1,
+      "specials": 81,
+      "openings": 2,
+      "menu": 33,
+      "happy_hour": 11,
+      "events": 7,
+      "reservations": 1,
+      "live_music": 8,
       "general_update": 5,
       "brunch": 2
     },
     "recentSocialPostPlatforms": {
+      "official_page": 139,
       "website_feed": 11
     }
   },
@@ -57,10 +65,11 @@
     "instagram": "not_promoted"
   },
   "recentPostState": {
-    "generatedAt": "2026-08-31T11:28:09.674Z",
+    "generatedAt": "2026-09-01T13:44:21.225Z",
     "lookbackDays": 180,
     "sourceState": {
       "websiteFeedsGeneratedAt": "2026-08-31T11:21:26.289Z",
+      "websitePagesGeneratedAt": "2026-09-01T13:27:22.619Z",
       "metaSocialGeneratedAt": "2026-08-31T11:28:09.624Z",
       "metaCredentialState": {
         "facebook": "not_promoted",

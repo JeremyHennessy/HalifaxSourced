@@ -18,6 +18,7 @@ on:
       - scripts/merge-first-party-history.mjs
       - scripts/sanitize-first-party-sources.mjs
       - scripts/import-first-party-feed-signals.mjs
+      - scripts/import-official-page-intelligence.mjs
       - scripts/import-meta-social.mjs
       - scripts/build-recent-social-posts.mjs
       - scripts/build-reviewed-social-posts.mjs
@@ -85,6 +86,16 @@ jobs:
       - name: Sanitize discovered and carried profile paths
         run: node scripts/sanitize-first-party-sources.mjs
 
+      - name: Extract official page intelligence
+        env:
+          PAGE_INTELLIGENCE_RESTAURANT_LIMIT: 9999
+          PAGE_INTELLIGENCE_PAGE_LIMIT: 600
+          PAGE_INTELLIGENCE_PAGES_PER_RESTAURANT: 6
+          PAGE_INTELLIGENCE_DELAY_MS: 140
+          PAGE_INTELLIGENCE_TIMEOUT_MS: 10000
+          PAGE_INTELLIGENCE_CONCURRENCY: 8
+        run: node scripts/import-official-page-intelligence.mjs
+
       - name: Pull restaurant-owned RSS and Atom signals
         env:
           FEED_PULL_LIMIT: 160
@@ -143,6 +154,8 @@ jobs:
             data/build/first-party-sources.json
             data/website-feed-signals.js
             data/build/website-feed-signals.json
+            data/website-page-intelligence.js
+            data/build/website-page-intelligence.json
             data/social-signals.js
             data/build/social-signals.json
             data/recent-social-posts.js
