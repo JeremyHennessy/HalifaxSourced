@@ -1,12 +1,13 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-01T15:25:51.935Z",
+  "generatedAt": "2026-09-01T19:11:06.217Z",
   "lookbackDays": 180,
   "summaryLimit": 420,
   "inputCounts": {
     "websiteFeedPosts": 14,
     "websitePagePosts": 661,
     "socialApiPosts": 0,
+    "publicSpecialPosts": 82,
     "websiteFeedSignals": 4,
     "websitePageSignals": 659,
     "socialApiSignals": 0
@@ -14,23 +15,25 @@
   "sourceState": {
     "websiteFeedsGeneratedAt": "2026-09-01T15:25:37.167Z",
     "websitePagesGeneratedAt": "2026-09-01T15:25:03.667Z",
-    "metaSocialGeneratedAt": "2026-09-01T14:27:53.585Z",
+    "metaSocialGeneratedAt": "2026-09-01T15:25:53.069Z",
     "metaCredentialState": {
       "facebook": "missing",
       "instagram": "missing"
     },
     "metaProfilesAttempted": 0,
-    "metaPostsObserved": 0
+    "metaPostsObserved": 0,
+    "publicSpecialSourceGeneratedAt": "2026-09-01T17:40:18.642Z",
+    "publicSpecialSourceRecords": 113
   },
   "counts": {
-    "records": 216,
-    "restaurantsWithRecentPosts": 82,
+    "records": 240,
+    "restaurantsWithRecentPosts": 102,
     "categoryCounts": {
-      "specials": 130,
+      "specials": 131,
       "openings": 2,
       "menu": 39,
       "events": 11,
-      "happy_hour": 15,
+      "happy_hour": 38,
       "reservations": 4,
       "live_music": 4,
       "general_update": 7,
@@ -38,10 +41,11 @@
     },
     "platformCounts": {
       "official_page": 204,
-      "website_feed": 12
+      "website_feed": 12,
+      "public_source": 24
     },
     "reviewStateCounts": {
-      "source_signal": 121,
+      "source_signal": 145,
       "needs_date_review": 89,
       "needs_category_review": 6
     }
@@ -10176,6 +10180,1296 @@
       "confidence": "official_source_page_signal",
       "reviewState": "source_signal",
       "associationBasis": "same_site_official_page"
+    },
+    {
+      "id": "public_source-38470e987b5487217b",
+      "restaurantId": "2-doors-down",
+      "restaurantName": "2 Doors Down",
+      "platform": "public_source",
+      "sourceFamily": "public_directory",
+      "sourceLabel": "Public source",
+      "sourceKind": "public_happy_hour_directory",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://txfd.ca/2-doors-down/",
+      "mediaUrl": null,
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Happy Hour",
+      "summary": "$5 cocktails | $6 draught beers | $6 feature wines | Themed nights: Tap Tuesdays, Wine Wednesdays, Wild Card Thursdays Price from $5 CAD. tue, wed, thu, fri, sat 16:00-18:00",
+      "primaryCategory": "happy_hour",
+      "primaryCategoryLabel": "Happy hour",
+      "categories": [
+        {
+          "id": "happy_hour",
+          "label": "Happy hour",
+          "terms": [
+            "Both",
+            "happy_hour",
+            "happy hour"
+          ]
+        },
+        {
+          "id": "specials",
+          "label": "Special",
+          "terms": [
+            "$"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "Both",
+        "happy_hour",
+        "happy hour",
+        "$"
+      ],
+      "publishedAt": "2026-08-01T19:14:27.870473+00:00",
+      "observedAt": "2026-09-01T17:40:18.642Z",
+      "ageDays": 31,
+      "isRecent": true,
+      "lookbackDays": 180,
+      "confidenceScore": 0.7,
+      "confidence": "matched_public_directory_signal",
+      "reviewState": "source_signal",
+      "associationBasis": "exact_name"
+    },
+    {
+      "id": "public_source-c7d70a9161d7404da8",
+      "restaurantId": "osm-node-3790789371-agricola-street-brasserie",
+      "restaurantName": "Agricola Street Brasserie",
+      "platform": "public_source",
+      "sourceFamily": "public_directory",
+      "sourceLabel": "Public source",
+      "sourceKind": "public_happy_hour_directory",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://www.rcr.ca/",
+      "mediaUrl": null,
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Happy Hour",
+      "summary": "$5 cocktails | $6 draughts | $6 feature wines Price from $5 CAD. tue, wed, thu, fri, sat 16:00-18:00",
+      "primaryCategory": "happy_hour",
+      "primaryCategoryLabel": "Happy hour",
+      "categories": [
+        {
+          "id": "happy_hour",
+          "label": "Happy hour",
+          "terms": [
+            "Drinks",
+            "happy_hour",
+            "happy hour"
+          ]
+        },
+        {
+          "id": "specials",
+          "label": "Special",
+          "terms": [
+            "$"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "Drinks",
+        "happy_hour",
+        "happy hour",
+        "$"
+      ],
+      "publishedAt": "2026-08-01T19:14:27.870473+00:00",
+      "observedAt": "2026-09-01T17:40:18.642Z",
+      "ageDays": 31,
+      "isRecent": true,
+      "lookbackDays": 180,
+      "confidenceScore": 0.7,
+      "confidence": "matched_public_directory_signal",
+      "reviewState": "source_signal",
+      "associationBasis": "exact_name"
+    },
+    {
+      "id": "public_source-69b84a798d669e66f1",
+      "restaurantId": "osm-node-7465073827-antojo-tacos-tequila",
+      "restaurantName": "Antojo Tacos + Tequila",
+      "platform": "public_source",
+      "sourceFamily": "public_directory",
+      "sourceLabel": "Public source",
+      "sourceKind": "public_happy_hour_directory",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://antojo.ca/",
+      "mediaUrl": null,
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Margarita Monday",
+      "summary": "$8 margaritas all day Price from $8 CAD. mon 16:00-23:59",
+      "primaryCategory": "happy_hour",
+      "primaryCategoryLabel": "Happy hour",
+      "categories": [
+        {
+          "id": "happy_hour",
+          "label": "Happy hour",
+          "terms": [
+            "Drinks",
+            "happy_hour"
+          ]
+        },
+        {
+          "id": "specials",
+          "label": "Special",
+          "terms": [
+            "$"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "Drinks",
+        "happy_hour",
+        "$"
+      ],
+      "publishedAt": "2026-08-01T19:14:27.870473+00:00",
+      "observedAt": "2026-09-01T17:40:18.642Z",
+      "ageDays": 31,
+      "isRecent": true,
+      "lookbackDays": 180,
+      "confidenceScore": 0.7,
+      "confidence": "matched_public_directory_signal",
+      "reviewState": "source_signal",
+      "associationBasis": "exact_name"
+    },
+    {
+      "id": "public_source-541d2f773f3aa9b084",
+      "restaurantId": "osm-node-9740307317-sofia",
+      "restaurantName": "Bar Sofia",
+      "platform": "public_source",
+      "sourceFamily": "public_directory",
+      "sourceLabel": "Public source",
+      "sourceKind": "public_happy_hour_directory",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://barsofia.ca/",
+      "mediaUrl": null,
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Sunday Happy Hour",
+      "summary": "Happy hour pricing on cocktails sun 20:00-23:59",
+      "primaryCategory": "happy_hour",
+      "primaryCategoryLabel": "Happy hour",
+      "categories": [
+        {
+          "id": "happy_hour",
+          "label": "Happy hour",
+          "terms": [
+            "Drinks",
+            "happy_hour",
+            "happy hour"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "Drinks",
+        "happy_hour",
+        "happy hour"
+      ],
+      "publishedAt": "2026-08-01T19:14:27.870473+00:00",
+      "observedAt": "2026-09-01T17:40:18.642Z",
+      "ageDays": 31,
+      "isRecent": true,
+      "lookbackDays": 180,
+      "confidenceScore": 0.7,
+      "confidence": "matched_public_directory_signal",
+      "reviewState": "source_signal",
+      "associationBasis": "exact_name"
+    },
+    {
+      "id": "public_source-e7b621796c2c5a9c08",
+      "restaurantId": "dear-friend",
+      "restaurantName": "Dear Friend Bar",
+      "platform": "public_source",
+      "sourceFamily": "public_directory",
+      "sourceLabel": "Public source",
+      "sourceKind": "public_happy_hour_directory",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://www.dearfriendbar.com/",
+      "mediaUrl": null,
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Buck A Shuck",
+      "summary": "$1 to $1.50 oysters | award-winning cocktail list Price from $1 CAD. Daily 16:00-17:00",
+      "primaryCategory": "happy_hour",
+      "primaryCategoryLabel": "Happy hour",
+      "categories": [
+        {
+          "id": "happy_hour",
+          "label": "Happy hour",
+          "terms": [
+            "buck a shuck"
+          ]
+        },
+        {
+          "id": "specials",
+          "label": "Special",
+          "terms": [
+            "Food",
+            "oyster_special",
+            "$"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "buck a shuck",
+        "Food",
+        "oyster_special",
+        "$"
+      ],
+      "publishedAt": "2026-08-01T19:14:27.870473+00:00",
+      "observedAt": "2026-09-01T17:40:18.642Z",
+      "ageDays": 31,
+      "isRecent": true,
+      "lookbackDays": 180,
+      "confidenceScore": 0.7,
+      "confidence": "matched_public_directory_signal",
+      "reviewState": "source_signal",
+      "associationBasis": "exact_name"
+    },
+    {
+      "id": "public_source-898e81a2c8f0e30e30",
+      "restaurantId": "osm-node-37132580-durty-nelly-s-irish-pub",
+      "restaurantName": "Durty Nelly's",
+      "platform": "public_source",
+      "sourceFamily": "public_directory",
+      "sourceLabel": "Public source",
+      "sourceKind": "public_happy_hour_directory",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://durtynellys.ca/",
+      "mediaUrl": null,
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Happy Hour",
+      "summary": "25% off appetizers | $6 Irish pints | $6 ciders | $5 20oz Coors Light | $5 house wine (5oz) | $4 well shots and domestic bottles Price from $4 CAD. mon, tue, wed, thu, fri 16:00-18:00",
+      "primaryCategory": "happy_hour",
+      "primaryCategoryLabel": "Happy hour",
+      "categories": [
+        {
+          "id": "happy_hour",
+          "label": "Happy hour",
+          "terms": [
+            "Both",
+            "happy_hour",
+            "happy hour"
+          ]
+        },
+        {
+          "id": "specials",
+          "label": "Special",
+          "terms": [
+            "$"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "Both",
+        "happy_hour",
+        "happy hour",
+        "$"
+      ],
+      "publishedAt": "2026-08-01T19:14:27.870473+00:00",
+      "observedAt": "2026-09-01T17:40:18.642Z",
+      "ageDays": 31,
+      "isRecent": true,
+      "lookbackDays": 180,
+      "confidenceScore": 0.7,
+      "confidence": "matched_public_directory_signal",
+      "reviewState": "source_signal",
+      "associationBasis": "unique_website_host"
+    },
+    {
+      "id": "public_source-36fd1f1ee9459251db",
+      "restaurantId": "osm-node-37132569-economy-shoe-shop",
+      "restaurantName": "Economy Shoe Shop",
+      "platform": "public_source",
+      "sourceFamily": "public_directory",
+      "sourceLabel": "Public source",
+      "sourceKind": "public_happy_hour_directory",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://www.economyshoeshop.ca/",
+      "mediaUrl": null,
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Happy Hour",
+      "summary": "$6 beer, any beer on tap not just domestics Price from $6 CAD. Daily 16:00-19:00",
+      "primaryCategory": "happy_hour",
+      "primaryCategoryLabel": "Happy hour",
+      "categories": [
+        {
+          "id": "happy_hour",
+          "label": "Happy hour",
+          "terms": [
+            "Drinks",
+            "happy_hour",
+            "happy hour"
+          ]
+        },
+        {
+          "id": "specials",
+          "label": "Special",
+          "terms": [
+            "$"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "Drinks",
+        "happy_hour",
+        "happy hour",
+        "$"
+      ],
+      "publishedAt": "2026-08-01T19:14:27.870473+00:00",
+      "observedAt": "2026-09-01T17:40:18.642Z",
+      "ageDays": 31,
+      "isRecent": true,
+      "lookbackDays": 180,
+      "confidenceScore": 0.7,
+      "confidence": "matched_public_directory_signal",
+      "reviewState": "source_signal",
+      "associationBasis": "exact_name"
+    },
+    {
+      "id": "public_source-b91036b14ef3a08e0e",
+      "restaurantId": "field-guide",
+      "restaurantName": "Field Guide",
+      "platform": "public_source",
+      "sourceFamily": "public_directory",
+      "sourceLabel": "Public source",
+      "sourceKind": "public_happy_hour_directory",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://fieldguidehfx.com/",
+      "mediaUrl": null,
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Happy Hour",
+      "summary": "Reduced cocktail pricing | Mini Martini and Mini Snack $15 on Mondays Price from $15 CAD. mon, tue, wed, thu, fri, sat 16:00-18:00",
+      "primaryCategory": "happy_hour",
+      "primaryCategoryLabel": "Happy hour",
+      "categories": [
+        {
+          "id": "happy_hour",
+          "label": "Happy hour",
+          "terms": [
+            "Drinks",
+            "happy_hour",
+            "happy hour"
+          ]
+        },
+        {
+          "id": "specials",
+          "label": "Special",
+          "terms": [
+            "$"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "Drinks",
+        "happy_hour",
+        "happy hour",
+        "$"
+      ],
+      "publishedAt": "2026-08-01T19:14:27.870473+00:00",
+      "observedAt": "2026-09-01T17:40:18.642Z",
+      "ageDays": 31,
+      "isRecent": true,
+      "lookbackDays": 180,
+      "confidenceScore": 0.7,
+      "confidence": "matched_public_directory_signal",
+      "reviewState": "source_signal",
+      "associationBasis": "exact_name"
+    },
+    {
+      "id": "public_source-e2b1d26daa5e61067c",
+      "restaurantId": "highwayman",
+      "restaurantName": "Highwayman",
+      "platform": "public_source",
+      "sourceFamily": "public_directory",
+      "sourceLabel": "Public source",
+      "sourceKind": "public_happy_hour_directory",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://www.highwaymanhfx.com/happyhour",
+      "mediaUrl": null,
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Happy Hour",
+      "summary": "$10-$12 cocktails and $50 pitchers | $12 glass / $50 bottle Perelada Cava | $3 oysters (minimum six) | $35 chef's snack platter | $35 seafood platter Price from $3 CAD. Daily 16:00-17:00",
+      "primaryCategory": "happy_hour",
+      "primaryCategoryLabel": "Happy hour",
+      "categories": [
+        {
+          "id": "happy_hour",
+          "label": "Happy hour",
+          "terms": [
+            "Both",
+            "happy_hour",
+            "happy hour"
+          ]
+        },
+        {
+          "id": "specials",
+          "label": "Special",
+          "terms": [
+            "$"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "Both",
+        "happy_hour",
+        "happy hour",
+        "$"
+      ],
+      "publishedAt": "2026-08-01T19:14:27.870473+00:00",
+      "observedAt": "2026-09-01T17:40:18.642Z",
+      "ageDays": 31,
+      "isRecent": true,
+      "lookbackDays": 180,
+      "confidenceScore": 0.7,
+      "confidence": "matched_public_directory_signal",
+      "reviewState": "source_signal",
+      "associationBasis": "exact_name"
+    },
+    {
+      "id": "public_source-9da0b46e477b69dc82",
+      "restaurantId": "osm-node-37132565-lot-six-bar-and-restaurant",
+      "restaurantName": "Lot Six",
+      "platform": "public_source",
+      "sourceFamily": "public_directory",
+      "sourceLabel": "Public source",
+      "sourceKind": "public_happy_hour_directory",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://lotsix.ca/",
+      "mediaUrl": null,
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Oyster Happy Hour",
+      "summary": "6 oysters for $12 or 12 oysters for $20 Price from $12 CAD. Daily 16:00-18:00",
+      "primaryCategory": "happy_hour",
+      "primaryCategoryLabel": "Happy hour",
+      "categories": [
+        {
+          "id": "happy_hour",
+          "label": "Happy hour",
+          "terms": [
+            "Food",
+            "happy_hour",
+            "happy hour"
+          ]
+        },
+        {
+          "id": "specials",
+          "label": "Special",
+          "terms": [
+            "$"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "Food",
+        "happy_hour",
+        "happy hour",
+        "$"
+      ],
+      "publishedAt": "2026-08-01T19:14:27.870473+00:00",
+      "observedAt": "2026-09-01T17:40:18.642Z",
+      "ageDays": 31,
+      "isRecent": true,
+      "lookbackDays": 180,
+      "confidenceScore": 0.7,
+      "confidence": "matched_public_directory_signal",
+      "reviewState": "source_signal",
+      "associationBasis": "exact_name"
+    },
+    {
+      "id": "public_source-ec903ad1ac7223531d",
+      "restaurantId": "osm-node-26041175-maxwell-s-plum",
+      "restaurantName": "Maxwell's Plum",
+      "platform": "public_source",
+      "sourceFamily": "public_directory",
+      "sourceLabel": "Public source",
+      "sourceKind": "public_happy_hour_directory",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://www.maxwellsplum.ca/",
+      "mediaUrl": null,
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Happy Hour",
+      "summary": "$4 singles | $7 doubles | $6 domestic pints Price from $4 CAD. mon, tue, wed, thu, fri 16:00-17:00",
+      "primaryCategory": "happy_hour",
+      "primaryCategoryLabel": "Happy hour",
+      "categories": [
+        {
+          "id": "happy_hour",
+          "label": "Happy hour",
+          "terms": [
+            "Drinks",
+            "happy_hour",
+            "happy hour"
+          ]
+        },
+        {
+          "id": "specials",
+          "label": "Special",
+          "terms": [
+            "$"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "Drinks",
+        "happy_hour",
+        "happy hour",
+        "$"
+      ],
+      "publishedAt": "2026-08-01T19:14:27.870473+00:00",
+      "observedAt": "2026-09-01T17:40:18.642Z",
+      "ageDays": 31,
+      "isRecent": true,
+      "lookbackDays": 180,
+      "confidenceScore": 0.7,
+      "confidence": "matched_public_directory_signal",
+      "reviewState": "source_signal",
+      "associationBasis": "exact_name"
+    },
+    {
+      "id": "public_source-9d0db102b68a13eb08",
+      "restaurantId": "osm-way-671922221-mckelvie-s",
+      "restaurantName": "McKelvie's",
+      "platform": "public_source",
+      "sourceFamily": "public_directory",
+      "sourceLabel": "Public source",
+      "sourceKind": "public_happy_hour_directory",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "http://mckelvies.com/halifax/",
+      "mediaUrl": null,
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Happy Hour",
+      "summary": "Happy hour drink pricing Daily 16:00-18:00",
+      "primaryCategory": "happy_hour",
+      "primaryCategoryLabel": "Happy hour",
+      "categories": [
+        {
+          "id": "happy_hour",
+          "label": "Happy hour",
+          "terms": [
+            "Both",
+            "happy_hour",
+            "happy hour"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "Both",
+        "happy_hour",
+        "happy hour"
+      ],
+      "publishedAt": "2026-08-01T19:14:27.870473+00:00",
+      "observedAt": "2026-09-01T17:40:18.642Z",
+      "ageDays": 31,
+      "isRecent": true,
+      "lookbackDays": 180,
+      "confidenceScore": 0.7,
+      "confidence": "matched_public_directory_signal",
+      "reviewState": "source_signal",
+      "associationBasis": "exact_name"
+    },
+    {
+      "id": "public_source-f946c4ea7426804555",
+      "restaurantId": "osm-node-7674175977-moxie-s",
+      "restaurantName": "Moxies Bayers Lake",
+      "platform": "public_source",
+      "sourceFamily": "public_directory",
+      "sourceLabel": "Public source",
+      "sourceKind": "public_happy_hour_directory",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://moxies.com/",
+      "mediaUrl": null,
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Happy Hour",
+      "summary": "Happy hour food and drink menu Daily 14:00-17:00",
+      "primaryCategory": "happy_hour",
+      "primaryCategoryLabel": "Happy hour",
+      "categories": [
+        {
+          "id": "happy_hour",
+          "label": "Happy hour",
+          "terms": [
+            "Both",
+            "happy_hour",
+            "happy hour"
+          ]
+        },
+        {
+          "id": "menu",
+          "label": "Menu update",
+          "terms": [
+            "menu"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "Both",
+        "happy_hour",
+        "happy hour",
+        "menu"
+      ],
+      "publishedAt": "2026-08-01T19:14:27.870473+00:00",
+      "observedAt": "2026-09-01T17:40:18.642Z",
+      "ageDays": 31,
+      "isRecent": true,
+      "lookbackDays": 180,
+      "confidenceScore": 0.7,
+      "confidence": "matched_public_directory_signal",
+      "reviewState": "source_signal",
+      "associationBasis": "unique_website_host"
+    },
+    {
+      "id": "public_source-c10bff45a007ab4a77",
+      "restaurantId": "osm-node-12960015819-salt-and-ash",
+      "restaurantName": "Salt + Ash Beach House",
+      "platform": "public_source",
+      "sourceFamily": "public_directory",
+      "sourceLabel": "Public source",
+      "sourceKind": "public_happy_hour_directory",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://saltashhalifax.com/",
+      "mediaUrl": null,
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Happy Hour",
+      "summary": "Happy hour drink specials Daily 14:00-17:00",
+      "primaryCategory": "happy_hour",
+      "primaryCategoryLabel": "Happy hour",
+      "categories": [
+        {
+          "id": "happy_hour",
+          "label": "Happy hour",
+          "terms": [
+            "Drinks",
+            "happy_hour",
+            "happy hour",
+            "drink special"
+          ]
+        },
+        {
+          "id": "specials",
+          "label": "Special",
+          "terms": [
+            "special",
+            "specials"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "Drinks",
+        "happy_hour",
+        "happy hour",
+        "drink special",
+        "special",
+        "specials"
+      ],
+      "publishedAt": "2026-08-01T19:14:27.870473+00:00",
+      "observedAt": "2026-09-01T17:40:18.642Z",
+      "ageDays": 31,
+      "isRecent": true,
+      "lookbackDays": 180,
+      "confidenceScore": 0.7,
+      "confidence": "matched_public_directory_signal",
+      "reviewState": "source_signal",
+      "associationBasis": "exact_name"
+    },
+    {
+      "id": "public_source-efc57aa5fded48c9bf",
+      "restaurantId": "osm-node-475877047-sea-smoke",
+      "restaurantName": "Sea Smoke",
+      "platform": "public_source",
+      "sourceFamily": "public_directory",
+      "sourceLabel": "Public source",
+      "sourceKind": "public_happy_hour_directory",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://seasmoke.ca/",
+      "mediaUrl": null,
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Happy Maki Hour",
+      "summary": "Discounted sushi rolls, drinks and oysters Daily 15:30-17:30",
+      "primaryCategory": "specials",
+      "primaryCategoryLabel": "Special",
+      "categories": [
+        {
+          "id": "specials",
+          "label": "Special",
+          "terms": [
+            "Both",
+            "oyster_special"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "Both",
+        "oyster_special"
+      ],
+      "publishedAt": "2026-08-01T19:14:27.870473+00:00",
+      "observedAt": "2026-09-01T17:40:18.642Z",
+      "ageDays": 31,
+      "isRecent": true,
+      "lookbackDays": 180,
+      "confidenceScore": 0.7,
+      "confidence": "matched_public_directory_signal",
+      "reviewState": "source_signal",
+      "associationBasis": "exact_name"
+    },
+    {
+      "id": "public_source-523ef615e119e8fe59",
+      "restaurantId": "osm-node-11751560115-seaport-social",
+      "restaurantName": "Seaport Social",
+      "platform": "public_source",
+      "sourceFamily": "public_directory",
+      "sourceLabel": "Public source",
+      "sourceKind": "public_happy_hour_directory",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://www.seaportsocialhalifax.com/specials",
+      "mediaUrl": null,
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Happy Hour",
+      "summary": "$5 draught | $6 house wine | curated happy hour food menu. Dine-in only. Price from $5 CAD. Daily 16:00-18:00",
+      "primaryCategory": "happy_hour",
+      "primaryCategoryLabel": "Happy hour",
+      "categories": [
+        {
+          "id": "happy_hour",
+          "label": "Happy hour",
+          "terms": [
+            "Both",
+            "happy_hour",
+            "happy hour"
+          ]
+        },
+        {
+          "id": "specials",
+          "label": "Special",
+          "terms": [
+            "$"
+          ]
+        },
+        {
+          "id": "menu",
+          "label": "Menu update",
+          "terms": [
+            "menu"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "Both",
+        "happy_hour",
+        "happy hour",
+        "$",
+        "menu"
+      ],
+      "publishedAt": "2026-08-01T19:14:27.870473+00:00",
+      "observedAt": "2026-09-01T17:40:18.642Z",
+      "ageDays": 31,
+      "isRecent": true,
+      "lookbackDays": 180,
+      "confidenceScore": 0.7,
+      "confidence": "matched_public_directory_signal",
+      "reviewState": "source_signal",
+      "associationBasis": "exact_name"
+    },
+    {
+      "id": "public_source-9629768a07203a1ed2",
+      "restaurantId": "osm-node-3205029165-stillwell-freehouse",
+      "restaurantName": "Stillwell Freehouse",
+      "platform": "public_source",
+      "sourceFamily": "public_directory",
+      "sourceLabel": "Public source",
+      "sourceKind": "public_happy_hour_directory",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://barstillwell.com/",
+      "mediaUrl": null,
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Happy Hour",
+      "summary": "Food and beer specials, craft beer from their own brewery Daily 16:00-18:00",
+      "primaryCategory": "happy_hour",
+      "primaryCategoryLabel": "Happy hour",
+      "categories": [
+        {
+          "id": "happy_hour",
+          "label": "Happy hour",
+          "terms": [
+            "Both",
+            "happy_hour",
+            "happy hour"
+          ]
+        },
+        {
+          "id": "specials",
+          "label": "Special",
+          "terms": [
+            "special",
+            "specials"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "Both",
+        "happy_hour",
+        "happy hour",
+        "special",
+        "specials"
+      ],
+      "publishedAt": "2026-08-01T19:14:27.870473+00:00",
+      "observedAt": "2026-09-01T17:40:18.642Z",
+      "ageDays": 31,
+      "isRecent": true,
+      "lookbackDays": 180,
+      "confidenceScore": 0.7,
+      "confidence": "matched_public_directory_signal",
+      "reviewState": "source_signal",
+      "associationBasis": "exact_name"
+    },
+    {
+      "id": "public_source-3deae01ca6bb76dc61",
+      "restaurantId": "osm-node-13262236018-studio-east",
+      "restaurantName": "Studio East",
+      "platform": "public_source",
+      "sourceFamily": "public_directory",
+      "sourceLabel": "Public source",
+      "sourceKind": "public_happy_hour_directory",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://www.studioeastfood.ca/",
+      "mediaUrl": null,
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Oyster Happy Hour",
+      "summary": "6 oysters with a 12oz draught or 5oz wine for $15 Price from $15 CAD. Daily 16:00-18:00",
+      "primaryCategory": "happy_hour",
+      "primaryCategoryLabel": "Happy hour",
+      "categories": [
+        {
+          "id": "happy_hour",
+          "label": "Happy hour",
+          "terms": [
+            "Both",
+            "happy_hour",
+            "happy hour"
+          ]
+        },
+        {
+          "id": "specials",
+          "label": "Special",
+          "terms": [
+            "$"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "Both",
+        "happy_hour",
+        "happy hour",
+        "$"
+      ],
+      "publishedAt": "2026-08-01T19:14:27.870473+00:00",
+      "observedAt": "2026-09-01T17:40:18.642Z",
+      "ageDays": 31,
+      "isRecent": true,
+      "lookbackDays": 180,
+      "confidenceScore": 0.7,
+      "confidence": "matched_public_directory_signal",
+      "reviewState": "source_signal",
+      "associationBasis": "exact_name"
+    },
+    {
+      "id": "public_source-ccbe2815b1ef4f69c0",
+      "restaurantId": "osm-node-5155336323-tempo-food-drink",
+      "restaurantName": "Tempo Food + Drink",
+      "platform": "public_source",
+      "sourceFamily": "public_directory",
+      "sourceLabel": "Public source",
+      "sourceKind": "public_happy_hour_directory",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://tempofoodanddrink.com/",
+      "mediaUrl": null,
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Happy Hour",
+      "summary": "Happy hour pricing | $6 martinis all night on Fridays Price from $6 CAD. Daily 16:00-19:00",
+      "primaryCategory": "happy_hour",
+      "primaryCategoryLabel": "Happy hour",
+      "categories": [
+        {
+          "id": "happy_hour",
+          "label": "Happy hour",
+          "terms": [
+            "Drinks",
+            "happy_hour",
+            "happy hour"
+          ]
+        },
+        {
+          "id": "specials",
+          "label": "Special",
+          "terms": [
+            "$"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "Drinks",
+        "happy_hour",
+        "happy hour",
+        "$"
+      ],
+      "publishedAt": "2026-08-01T19:14:27.870473+00:00",
+      "observedAt": "2026-09-01T17:40:18.642Z",
+      "ageDays": 31,
+      "isRecent": true,
+      "lookbackDays": 180,
+      "confidenceScore": 0.7,
+      "confidence": "matched_public_directory_signal",
+      "reviewState": "source_signal",
+      "associationBasis": "exact_name"
+    },
+    {
+      "id": "public_source-cc59a16ac2c2df5287",
+      "restaurantId": "osm-node-3802480457-the-auction-house",
+      "restaurantName": "The Auction House",
+      "platform": "public_source",
+      "sourceFamily": "public_directory",
+      "sourceLabel": "Public source",
+      "sourceKind": "public_happy_hour_directory",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://www.auctionhousehalifax.com/specials/",
+      "mediaUrl": null,
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Thursday Happy Hour",
+      "summary": "Happy hour pricing across 26 local craft taps thu 16:00-22:00",
+      "primaryCategory": "happy_hour",
+      "primaryCategoryLabel": "Happy hour",
+      "categories": [
+        {
+          "id": "happy_hour",
+          "label": "Happy hour",
+          "terms": [
+            "Drinks",
+            "happy_hour",
+            "happy hour"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "Drinks",
+        "happy_hour",
+        "happy hour"
+      ],
+      "publishedAt": "2026-08-01T19:14:27.870473+00:00",
+      "observedAt": "2026-09-01T17:40:18.642Z",
+      "ageDays": 31,
+      "isRecent": true,
+      "lookbackDays": 180,
+      "confidenceScore": 0.7,
+      "confidence": "matched_public_directory_signal",
+      "reviewState": "source_signal",
+      "associationBasis": "exact_name"
+    },
+    {
+      "id": "public_source-52356916119c043d5b",
+      "restaurantId": "osm-node-1689418207-the-old-triangle-irish-pub",
+      "restaurantName": "The Old Triangle Irish Alehouse",
+      "platform": "public_source",
+      "sourceFamily": "public_directory",
+      "sourceLabel": "Public source",
+      "sourceKind": "public_happy_hour_directory",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://oldtriangle.com/",
+      "mediaUrl": null,
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Happy Hour",
+      "summary": "Half-price mussels | $6 Irish pints (Guinness, Harp, Smithwick's) | $5 house wine | $4 well shots Price from $4 CAD. mon, tue, wed, thu, fri 14:00-17:00",
+      "primaryCategory": "happy_hour",
+      "primaryCategoryLabel": "Happy hour",
+      "categories": [
+        {
+          "id": "happy_hour",
+          "label": "Happy hour",
+          "terms": [
+            "Both",
+            "happy_hour",
+            "happy hour"
+          ]
+        },
+        {
+          "id": "specials",
+          "label": "Special",
+          "terms": [
+            "$"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "Both",
+        "happy_hour",
+        "happy hour",
+        "$"
+      ],
+      "publishedAt": "2026-08-01T19:14:27.870473+00:00",
+      "observedAt": "2026-09-01T17:40:18.642Z",
+      "ageDays": 31,
+      "isRecent": true,
+      "lookbackDays": 180,
+      "confidenceScore": 0.7,
+      "confidence": "matched_public_directory_signal",
+      "reviewState": "source_signal",
+      "associationBasis": "unique_website_host"
+    },
+    {
+      "id": "public_source-fe3e08bf70912b3673",
+      "restaurantId": "the-press-gang",
+      "restaurantName": "The Press Gang",
+      "platform": "public_source",
+      "sourceFamily": "public_directory",
+      "sourceLabel": "Public source",
+      "sourceKind": "public_happy_hour_directory",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://thepressgang.ca/",
+      "mediaUrl": null,
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Happy Hour",
+      "summary": "$5 local craft beer Price from $5 CAD. Daily 17:00-18:00",
+      "primaryCategory": "happy_hour",
+      "primaryCategoryLabel": "Happy hour",
+      "categories": [
+        {
+          "id": "happy_hour",
+          "label": "Happy hour",
+          "terms": [
+            "Drinks",
+            "happy_hour",
+            "happy hour"
+          ]
+        },
+        {
+          "id": "specials",
+          "label": "Special",
+          "terms": [
+            "$"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "Drinks",
+        "happy_hour",
+        "happy hour",
+        "$"
+      ],
+      "publishedAt": "2026-08-01T19:14:27.870473+00:00",
+      "observedAt": "2026-09-01T17:40:18.642Z",
+      "ageDays": 31,
+      "isRecent": true,
+      "lookbackDays": 180,
+      "confidenceScore": 0.7,
+      "confidence": "matched_public_directory_signal",
+      "reviewState": "source_signal",
+      "associationBasis": "street_address"
+    },
+    {
+      "id": "public_source-32cf17fe3321bec2d9",
+      "restaurantId": "osm-node-4411880103-the-bg",
+      "restaurantName": "The Stubborn Goat Gastropub",
+      "platform": "public_source",
+      "sourceFamily": "public_directory",
+      "sourceLabel": "Public source",
+      "sourceKind": "public_happy_hour_directory",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://stubborngoat.ca/",
+      "mediaUrl": null,
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Happy Hour",
+      "summary": "Happy hour food and drink pricing sun, mon, tue, wed, thu 14:00-17:00",
+      "primaryCategory": "happy_hour",
+      "primaryCategoryLabel": "Happy hour",
+      "categories": [
+        {
+          "id": "happy_hour",
+          "label": "Happy hour",
+          "terms": [
+            "Both",
+            "happy_hour",
+            "happy hour"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "Both",
+        "happy_hour",
+        "happy hour"
+      ],
+      "publishedAt": "2026-08-01T19:14:27.870473+00:00",
+      "observedAt": "2026-09-01T17:40:18.642Z",
+      "ageDays": 31,
+      "isRecent": true,
+      "lookbackDays": 180,
+      "confidenceScore": 0.7,
+      "confidence": "matched_public_directory_signal",
+      "reviewState": "source_signal",
+      "associationBasis": "unique_website_host"
+    },
+    {
+      "id": "public_source-e9a922f7643fda622b",
+      "restaurantId": "osm-way-96322798-wooden-monkey",
+      "restaurantName": "The Wooden Monkey (Dartmouth)",
+      "platform": "public_source",
+      "sourceFamily": "public_directory",
+      "sourceLabel": "Public source",
+      "sourceKind": "public_happy_hour_directory",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://www.thewoodenmonkey.ca/",
+      "mediaUrl": null,
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Happy Hour",
+      "summary": "$6 craft beer, house wine and bar rail drinks Price from $6 CAD. mon, tue, wed, thu, fri 15:00-17:00",
+      "primaryCategory": "happy_hour",
+      "primaryCategoryLabel": "Happy hour",
+      "categories": [
+        {
+          "id": "happy_hour",
+          "label": "Happy hour",
+          "terms": [
+            "Drinks",
+            "happy_hour",
+            "happy hour"
+          ]
+        },
+        {
+          "id": "specials",
+          "label": "Special",
+          "terms": [
+            "$"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "Drinks",
+        "happy_hour",
+        "happy hour",
+        "$"
+      ],
+      "publishedAt": "2026-08-01T19:14:27.870473+00:00",
+      "observedAt": "2026-09-01T17:40:18.642Z",
+      "ageDays": 31,
+      "isRecent": true,
+      "lookbackDays": 180,
+      "confidenceScore": 0.7,
+      "confidence": "matched_public_directory_signal",
+      "reviewState": "source_signal",
+      "associationBasis": "unique_website_host"
     },
     {
       "id": "official_page-8c5cb1ddabb6cda828",

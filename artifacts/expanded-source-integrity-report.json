@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-01T17:59:31.480Z",
+  "generatedAt": "2026-09-01T19:11:23.140Z",
   "socialPlatformRegistryVersion": 1,
   "counts": {
     "firstPartyRecords": 240,
@@ -43,13 +43,13 @@
     "sharedProfileAssociationsSkipped": 75,
     "socialSignals": 0,
     "socialPosts": 0,
-    "recentSocialPosts": 216,
+    "recentSocialPosts": 240,
     "recentSocialPostCategories": {
-      "specials": 130,
+      "specials": 131,
       "openings": 2,
       "menu": 39,
       "events": 11,
-      "happy_hour": 15,
+      "happy_hour": 38,
       "reservations": 4,
       "live_music": 4,
       "general_update": 7,
@@ -57,7 +57,8 @@
     },
     "recentSocialPostPlatforms": {
       "official_page": 204,
-      "website_feed": 12
+      "website_feed": 12,
+      "public_source": 24
     }
   },
   "credentialState": {
@@ -65,18 +66,20 @@
     "instagram": "missing"
   },
   "recentPostState": {
-    "generatedAt": "2026-09-01T15:25:51.935Z",
+    "generatedAt": "2026-09-01T19:11:06.217Z",
     "lookbackDays": 180,
     "sourceState": {
       "websiteFeedsGeneratedAt": "2026-09-01T15:25:37.167Z",
       "websitePagesGeneratedAt": "2026-09-01T15:25:03.667Z",
-      "metaSocialGeneratedAt": "2026-09-01T14:27:53.585Z",
+      "metaSocialGeneratedAt": "2026-09-01T15:25:53.069Z",
       "metaCredentialState": {
         "facebook": "missing",
         "instagram": "missing"
       },
       "metaProfilesAttempted": 0,
-      "metaPostsObserved": 0
+      "metaPostsObserved": 0,
+      "publicSpecialSourceGeneratedAt": "2026-09-01T17:40:18.642Z",
+      "publicSpecialSourceRecords": 113
     }
   },
   "failures": [],
