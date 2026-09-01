@@ -93,6 +93,7 @@ const firstParty = await loadJson("data/build/first-party-sources.json", { recor
 const websiteFeeds = await loadJson("data/build/website-feed-signals.json", { signals: [], failures: [] });
 const socialSignals = await loadJson("data/build/social-signals.json", { signals: [], failures: [] });
 const patioDirectory = await loadJson("data/build/patio-directory-facts.json", { records: [], failures: [], counts: {} });
+const publicSpecialLeads = await loadJson("data/build/public-special-source-leads.json", { records: [], failures: [], counts: {} });
 
 const curated = Array.isArray(curatedWindow.HALIFAX_RESTAURANTS) ? curatedWindow.HALIFAX_RESTAURANTS : [];
 const osm = Array.isArray(osmWindow.HALIFAX_OSM_RESTAURANTS) ? osmWindow.HALIFAX_OSM_RESTAURANTS : [];
@@ -230,6 +231,7 @@ for (const result of officialResults) {
 }
 
 for (const restaurant of canonical) if ((restaurant.specials || []).length) specialIds.add(restaurant.id);
+for (const lead of publicSpecialLeads.records || []) if (lead.restaurantId && canonicalIds.has(lead.restaurantId)) specialIds.add(lead.restaurantId);
 
 const structuredEvents = Array.isArray(structured.events) ? structured.events : [];
 const structuredUpcoming = structuredEvents.filter((event) => isUpcoming(event.startAt, event.endAt));
@@ -323,6 +325,7 @@ const sourceFailures = {
   cityEventSources: Array.isArray(cityPayload.failures) ? cityPayload.failures.length : 0,
   openingWatchSources: Array.isArray(openingPayload.failures) ? openingPayload.failures.length : 0,
   restaurantDirectorySources: Array.isArray(directoryPayload.failures) ? directoryPayload.failures.length : 0,
+  publicSpecialSources: Array.isArray(publicSpecialLeads.failures) ? publicSpecialLeads.failures.length : 0,
   patioDirectorySources: Array.isArray(patioDirectory.failures) ? patioDirectory.failures.length : 0
 };
 
@@ -385,6 +388,17 @@ const report = {
     activeCanonicalPlaces: total - lifecycle.temporarily_closed - lifecycle.permanently_closed - lifecycle.moved,
     freshness,
     staleRestaurantRecords: staleRestaurantIds.size,
+    publicSpecialSourceLayer: {
+      generatedAt: publicSpecialLeads.generatedAt || null,
+      sourceFailures: publicSpecialLeads.failures?.length || 0,
+      total: publicSpecialLeads.counts?.total || publicSpecialLeads.records?.length || 0,
+      resolved: publicSpecialLeads.counts?.resolved || 0,
+      unresolved: publicSpecialLeads.counts?.unresolved || 0,
+      conflicts: publicSpecialLeads.counts?.conflicts || 0,
+      happyHour: publicSpecialLeads.counts?.happyHour || 0,
+      withPrice: publicSpecialLeads.counts?.withPrice || 0,
+      withSchedule: publicSpecialLeads.counts?.withSchedule || 0
+    },
     patioDirectoryLayer: { generatedAt: patioDirectory.generatedAt || null, ...(patioDirectory.counts || {}) },
     currentResolutionRisks: { discoveryNameOnlyMerges }
   },

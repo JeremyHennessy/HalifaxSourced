@@ -51,7 +51,9 @@ jobs:
           SOURCE_COMMIT_SHA: ${{ github.event.workflow_run.head_sha }}
           QUALITY_WORKFLOW_RUN_ID: ${{ github.event.workflow_run.id }}
         run: |
+          node scripts/import-public-special-source-leads.mjs
           node scripts/build-structured-specials.mjs
+          node scripts/check-public-special-source-leads.mjs
           node scripts/check-structured-specials.mjs
           node scripts/check-restaurant-lifecycle.mjs
           node scripts/check-restaurant-media-rights.mjs

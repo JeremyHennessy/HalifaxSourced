@@ -13,6 +13,7 @@ website_page_intelligence_path = build_dir / "website-page-intelligence.json"
 social_signals_path = build_dir / "social-signals.json"
 recent_posts_path = build_dir / "recent-social-posts.json"
 patio_directory_path = build_dir / "patio-directory-facts.json"
+public_special_source_leads_path = build_dir / "public-special-source-leads.json"
 db_path = build_dir / "halifax_sourced.sqlite"
 
 
@@ -30,6 +31,7 @@ website_page_intelligence = load_json(website_page_intelligence_path, {"records"
 social_signals = load_json(social_signals_path, {"posts": [], "signals": []})
 recent_posts = load_json(recent_posts_path, {"records": []})
 patio_directory = load_json(patio_directory_path, {"records": [], "failures": [], "counts": {}})
+public_special_source_leads = load_json(public_special_source_leads_path, {"records": [], "failures": [], "counts": {}})
 patio_directory_ids = {record.get("restaurantId") for record in patio_directory.get("records", []) if record.get("restaurantId")}
 official_by_id = {signal.get("restaurantId"): signal for signal in official_signals.get("results", []) if signal.get("restaurantId")}
 db_path.parent.mkdir(parents=True, exist_ok=True)
@@ -57,6 +59,7 @@ cur = conn.cursor()
 cur.executescript(
     """
     pragma foreign_keys = off;
+    drop table if exists public_special_source_leads;
     drop table if exists patio_directory_facts;
     drop table if exists recent_social_post_terms;
     drop table if exists recent_social_post_categories;
@@ -331,6 +334,40 @@ cur.executescript(
       term text not null
     );
 
+    create table public_special_source_leads (
+      source_record_id text primary key,
+      restaurant_id text,
+      venue_name text,
+      title text not null,
+      special_type text,
+      deal_type text,
+      description text,
+      day_of_week_json text not null,
+      start_time text,
+      end_time text,
+      second_start_time text,
+      second_end_time text,
+      recurrence text,
+      address text,
+      neighborhood text,
+      price real,
+      currency text,
+      source_url text not null,
+      source_page_url text,
+      source_image_url text,
+      observed_at text,
+      last_verified_at text,
+      source_id text,
+      source_name text,
+      source_kind text,
+      source_type text,
+      source_status text,
+      review_state text,
+      rights_state text,
+      match_method text,
+      match_confidence text,
+      review_candidates_json text not null
+    );
     create table patio_directory_facts (
       source_record_id text primary key,
       restaurant_id text,
@@ -593,6 +630,49 @@ for post in social_signals.get("posts", []) or []:
         ),
     )
 
+for record in public_special_source_leads.get("records", []) or []:
+    cur.execute(
+        "insert into public_special_source_leads values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
+        (
+            record.get("sourceRecordId"),
+            record.get("restaurantId"),
+            record.get("venueName"),
+            record.get("title"),
+            record.get("specialType"),
+            record.get("dealType"),
+            record.get("description"),
+            dumps(record.get("dayOfWeek", [])),
+            record.get("startTime"),
+            record.get("endTime"),
+            record.get("secondStartTime"),
+            record.get("secondEndTime"),
+            record.get("recurrence"),
+            record.get("address"),
+            record.get("neighborhood"),
+            record.get("price"),
+            record.get("currency"),
+            record.get("sourceUrl"),
+            record.get("sourcePageUrl"),
+            record.get("sourceImageUrl"),
+            record.get("observedAt"),
+            record.get("lastVerifiedAt"),
+            record.get("sourceId"),
+            record.get("sourceName"),
+            record.get("sourceKind"),
+            record.get("sourceType"),
+            record.get("sourceStatus"),
+            record.get("reviewState"),
+            record.get("rightsState"),
+            record.get("matchMethod"),
+            record.get("matchConfidence"),
+            dumps(record.get("reviewCandidates", [])),
+        ),
+    )
+    if not record.get("restaurantId") or record.get("matchConfidence") == "needs_review":
+        cur.execute(
+            "insert into review_queue values (?, ?, ?, ?, ?, ?)",
+            (record.get("restaurantId"), "public_special_source_lead", record.get("sourceRecordId"), record.get("matchMethod") or "needs_review", record.get("sourceUrl"), record.get("observedAt")),
+        )
 for record in patio_directory.get("records", []) or []:
     cur.execute(
         "insert into patio_directory_facts values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
@@ -687,6 +767,7 @@ print(
     f"{len(website_feed_signals.get('posts', []) or [])} website feed posts, "
     f"{len(website_page_intelligence.get('records', []) or [])} official page intelligence records, "
     f"{len(social_signals.get('posts', []) or [])} Meta social posts, "
-    f"{len(recent_posts.get('records', []) or [])} normalized recent post records, and "
+    f"{len(recent_posts.get('records', []) or [])} normalized recent post records, "
+    f"{len(public_special_source_leads.get('records', []) or [])} public special leads, and "
     f"{len(patio_directory.get('records', []) or [])} patio directory facts."
 )
