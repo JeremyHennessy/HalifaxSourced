@@ -1,16 +1,16 @@
 {
-  "generatedAt": "2026-09-01T14:44:04.071Z",
+  "generatedAt": "2026-09-01T15:39:28.429Z",
   "socialPlatformRegistryVersion": 1,
   "counts": {
-    "firstPartyRecords": 239,
-    "socialProfiles": 405,
+    "firstPartyRecords": 240,
+    "socialProfiles": 408,
     "platformCounts": {
-      "instagram": 150,
-      "x": 66,
-      "facebook": 147,
+      "facebook": 148,
+      "instagram": 151,
+      "youtube": 14,
+      "x": 67,
       "tiktok": 16,
       "pinterest": 3,
-      "youtube": 14,
       "linkedin": 7,
       "bluesky": 2
     },
@@ -18,15 +18,15 @@
     "linkHubCounts": {},
     "associationBasisCounts": {
       "linked_from_official_website": 391,
-      "jsonld_sameAs": 7,
+      "jsonld_sameAs": 10,
       "shared_brand_profile": 2,
       "linked_from_official_location_page": 5
     },
-    "relatedLinks": 728,
+    "relatedLinks": 730,
     "relatedKindCounts": {
-      "menu": 466,
+      "menu": 467,
       "reservations": 73,
-      "ordering": 115,
+      "ordering": 116,
       "events": 67,
       "newsletter": 6,
       "tickets": 1
@@ -36,27 +36,27 @@
     "sharedFeedUrlsSkipped": 9,
     "reviewedFeedsExcluded": 6,
     "websiteFeedSignals": 4,
-    "websiteFeedPosts": 12,
-    "websitePageIntelligence": 622,
-    "websitePageRestaurants": 189,
-    "uniqueRestaurantSocialProfiles": 222,
+    "websiteFeedPosts": 14,
+    "websitePageIntelligence": 661,
+    "websitePageRestaurants": 188,
+    "uniqueRestaurantSocialProfiles": 224,
     "sharedProfileAssociationsSkipped": 75,
     "socialSignals": 0,
     "socialPosts": 0,
-    "recentSocialPosts": 211,
+    "recentSocialPosts": 216,
     "recentSocialPostCategories": {
-      "specials": 120,
+      "specials": 130,
       "openings": 2,
       "menu": 39,
       "events": 11,
-      "happy_hour": 13,
+      "happy_hour": 15,
       "reservations": 4,
-      "live_music": 11,
+      "live_music": 4,
       "general_update": 7,
       "brunch": 4
     },
     "recentSocialPostPlatforms": {
-      "official_page": 199,
+      "official_page": 204,
       "website_feed": 12
     }
   },
@@ -65,11 +65,11 @@
     "instagram": "missing"
   },
   "recentPostState": {
-    "generatedAt": "2026-09-01T14:42:23.563Z",
+    "generatedAt": "2026-09-01T15:25:51.935Z",
     "lookbackDays": 180,
     "sourceState": {
-      "websiteFeedsGeneratedAt": "2026-09-01T14:42:07.720Z",
-      "websitePagesGeneratedAt": "2026-09-01T14:27:26.632Z",
+      "websiteFeedsGeneratedAt": "2026-09-01T15:25:37.167Z",
+      "websitePagesGeneratedAt": "2026-09-01T15:25:03.667Z",
       "metaSocialGeneratedAt": "2026-09-01T14:27:53.585Z",
       "metaCredentialState": {
         "facebook": "missing",

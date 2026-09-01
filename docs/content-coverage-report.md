@@ -1,7 +1,7 @@
 # Halifax Sourced content coverage snapshot
 
-Generated: 2026-09-01T14:43:28.082Z
-Source/deployment commit: `286f4936a7607d3456c6abe361f98d191c4535cb`
+Generated: 2026-09-01T15:38:22.153Z
+Source/deployment commit: `d6aa9762bceef7fa6441c56421ee231a121a484a`
 
 This is the reconciled snapshot produced from the same data layers packaged for deployment. Unknown values remain unknown; source leads are not promoted to verified facts.
 
@@ -15,10 +15,10 @@ This is the reconciled snapshot produced from the same data layers packaged for 
 | Official website | 302 | 40.3% |
 | Verified/reachable official website | 240 | 32.0% |
 | Menu link | 166 | 22.1% |
-| Verified menu link | 130 | 17.3% |
+| Verified menu link | 137 | 18.3% |
 | Phone | 278 | 37.1% |
 | Hours | 245 | 32.7% |
-| At least one social profile | 158 | 21.1% |
+| At least one social profile | 159 | 21.2% |
 | Usable rights-approved media | 73 | 9.7% |
 | Coordinates | 739 | 98.5% |
 | Neighbourhood | 750 | 100.0% |
@@ -37,11 +37,11 @@ This is the reconciled snapshot produced from the same data layers packaged for 
 
 ## Source failures
 
-- officialWebsiteChecks: 61
-- firstPartyWebsiteDiscovery: 62
-- verifiedSourcePages: 21
+- officialWebsiteChecks: 63
+- firstPartyWebsiteDiscovery: 64
+- verifiedSourcePages: 22
 - structuredRestaurantEvents: 9
-- websiteFeeds: 1
+- websiteFeeds: 2
 - socialApis: 3
 - cityEventSources: 0
 - openingWatchSources: 0

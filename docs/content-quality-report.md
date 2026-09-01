@@ -1,27 +1,27 @@
 # Halifax Sourced content quality report
 
-Generated: 2026-09-01T14:43:25.345Z
+Generated: 2026-09-01T15:38:00.074Z
 
 ## Summary
 
 - **canonicalPlaces**: 750
-- **placesWithSocial**: 158
-- **structuredPlaceFactRecords**: 168
+- **placesWithSocial**: 159
+- **structuredPlaceFactRecords**: 176
 - **structuredHours**: 13
-- **structuredMenus**: 138
-- **structuredReservations**: 50
-- **structuredOrdering**: 77
+- **structuredMenus**: 143
+- **structuredReservations**: 55
+- **structuredOrdering**: 78
 - **structuredSpecials**: 80
 - **verifiedCurrentSpecials**: 49
 - **orphanSpecialSources**: 0
-- **cityEvents**: 193
-- **venueResolvedEvents**: 141
-- **organizerResolvedEvents**: 167
+- **cityEvents**: 192
+- **venueResolvedEvents**: 140
+- **organizerResolvedEvents**: 166
 - **restaurantLinkedEvents**: 10
-- **sourceFailures**: 62
-- **unresolvedPlaceCandidates**: 207
-- **nameOnlyPlaceReviews**: 33
-- **placeSourceConflicts**: 44
+- **sourceFailures**: 64
+- **unresolvedPlaceCandidates**: 206
+- **nameOnlyPlaceReviews**: 31
+- **placeSourceConflicts**: 46
 - **blockedEventSources**: 0
 - **eventSourcesInAdapterReview**: 4
 - **brokenUrls**: 8
@@ -30,16 +30,16 @@ Generated: 2026-09-01T14:43:25.345Z
 
 ## Freshness
 
-- **firstPartyRelationships**: <7d 1133; 7–30d 0; 30–90d 0; >90d 0; unknown 0
-- **structuredPlaceFacts**: <7d 168; 7–30d 0; 30–90d 0; >90d 0; unknown 0
+- **firstPartyRelationships**: <7d 1138; 7–30d 0; 30–90d 0; >90d 0; unknown 0
+- **structuredPlaceFacts**: <7d 176; 7–30d 0; 30–90d 0; >90d 0; unknown 0
 - **specials**: <7d 80; 7–30d 0; 30–90d 0; >90d 0; unknown 0
-- **events**: <7d 193; 7–30d 0; 30–90d 0; >90d 0; unknown 0
+- **events**: <7d 192; 7–30d 0; 30–90d 0; >90d 0; unknown 0
 
 ## Review queues
 
-- Place source conflicts: 44
-- Name-only place matches: 33
-- Unresolved place candidates: 207
+- Place source conflicts: 46
+- Name-only place matches: 31
+- Unresolved place candidates: 206
 - Orphan special-source relationships: 0
 - Blocked event source adapters: 0
 - Event source adapters under review: 4

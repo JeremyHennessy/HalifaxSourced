@@ -1,5 +1,5 @@
 window.HALIFAX_OSM_META = {
-  "generatedAt": "2026-09-01T14:18:14.691Z",
+  "generatedAt": "2026-09-01T15:14:55.152Z",
   "source": "OpenStreetMap via Overpass API (https://overpass-api.de/api/interpreter)",
   "scope": "Halifax peninsula, Dartmouth, Armdale, Fairview, and immediately surrounding areas",
   "bbox": {
