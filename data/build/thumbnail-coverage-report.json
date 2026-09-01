@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-01T14:43:08.487Z",
+  "generatedAt": "2026-09-01T15:38:00.458Z",
   "sourceCommitSha": null,
   "definitions": {
     "approvedThumbnail": "A thumbnail candidate tied to an exact restaurant ID with approved review state and production-approved rights status.",
@@ -10,64 +10,86 @@
   },
   "counts": {
     "restaurants": 740,
-    "candidates": 4216,
+    "candidates": 5434,
     "approvedCandidates": 73,
-    "reviewCandidates": 4143,
+    "reviewCandidates": 5361,
     "restaurantsWithApprovedThumbnail": 73,
-    "restaurantsWithAnyCandidate": 195,
+    "restaurantsWithAnyCandidate": 230,
     "restaurantsMissingApprovedThumbnail": 667,
-    "restaurantsMissingAnyCandidate": 545,
-    "promotionQueue": 95,
-    "discoveryQueue": 545,
-    "fetchFailures": 59
+    "restaurantsMissingAnyCandidate": 510,
+    "promotionQueue": 128,
+    "discoveryQueue": 510,
+    "fetchFailures": 79
   },
   "coveragePercent": {
     "approvedThumbnail": 9.9,
-    "anyThumbnailCandidate": 26.4,
+    "anyThumbnailCandidate": 31.1,
     "missingApprovedThumbnail": 90.1,
-    "missingAnyThumbnailCandidate": 73.6
+    "missingAnyThumbnailCandidate": 68.9
   },
   "candidateMix": {
     "bySourceKind": {
       "approved_restaurant_media": 73,
-      "official_page_thumbnail_candidate": 4136,
+      "official_page_thumbnail_candidate": 5354,
       "official_feed_media": 7
     },
     "byReviewState": {
       "approved": 73,
-      "candidate_review": 4143
+      "candidate_review": 5361
     },
     "byRightsStatus": {
       "production_approved": 73,
-      "requires_rights_review": 4143
+      "requires_rights_review": 5361
     },
     "byExtractionMethod": {
       "approved_media_manifest": 73,
-      "css_background_image": 1240,
-      "html_link_image": 425,
-      "html_img_content": 2178,
-      "declared_post_media": 131,
-      "html_meta_image": 112,
-      "jsonld_image": 57
+      "css_background_image": 1696,
+      "html_link_image": 533,
+      "html_img_content": 2760,
+      "declared_post_media": 133,
+      "html_meta_image": 168,
+      "jsonld_image": 71
     },
     "byPlatform": {
       "website_feed": 7,
-      "official_page": 124
+      "official_page": 126
     }
   },
   "queues": {
     "promotionQueue": [
       {
+        "restaurantId": "osm-node-267592027-the-black-sheep",
+        "name": "The Black Sheep",
+        "neighborhood": "Downtown",
+        "website": "https://blacksheephalifax.com/",
+        "candidateCount": 76,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 76
+        },
+        "reviewStates": {
+          "candidate_review": 76
+        },
+        "bestCandidate": {
+          "id": "thumb-a1bd087cd2f87e86ef",
+          "thumbnailUrl": "https://blacksheephalifax.com/wp-content/themes/blockbase-premium/assets/fonts/lora/lora-400-700-italic.woff2",
+          "sourceUrl": "https://blacksheephalifax.com/",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "same_host_official_page_image"
+        }
+      },
+      {
         "restaurantId": "osm-node-5140336622-studio-east-food-drink",
         "name": "Studio East Food+Drink",
         "neighborhood": "North End",
         "website": "https://www.studioeastfood.ca/",
-        "candidateCount": 51,
+        "candidateCount": 58,
         "sourceKinds": {
-          "official_page_thumbnail_candidate": 51
+          "official_page_thumbnail_candidate": 58
         },
         "reviewStates": {
-          "candidate_review": 51
+          "candidate_review": 58
         },
         "bestCandidate": {
           "id": "thumb-e2f89bf8015b0368d3",
@@ -77,6 +99,50 @@
           "reviewState": "candidate_review",
           "rightsStatus": "requires_rights_review",
           "confidence": "official_page_declared_remote_image"
+        }
+      },
+      {
+        "restaurantId": "osm-node-3104142670-king-of-donair",
+        "name": "King of Donair",
+        "neighborhood": "Halifax Peninsula",
+        "website": "https://www.kingofdonair.ca",
+        "candidateCount": 45,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 45
+        },
+        "reviewStates": {
+          "candidate_review": 45
+        },
+        "bestCandidate": {
+          "id": "thumb-fe57b047077220bcd7",
+          "thumbnailUrl": "https://tb-static.uber.com/prod/image-proc/processed_images/5e4ae658514bd87466998f1266598f85/f6deb0afc24fee6f4bd31a35e6bcbd47.jpeg",
+          "sourceUrl": "https://www.ubereats.com/ca/store/king-of-donair-halifax/QN01K4gsSo-JFkTTLNNbug",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "official_page_declared_remote_image"
+        }
+      },
+      {
+        "restaurantId": "osm-node-11699344564-second-cup",
+        "name": "Second Cup",
+        "neighborhood": "Armdale / Fairview",
+        "website": "https://secondcup.com/en/location/bayers-lake/",
+        "candidateCount": 45,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 45
+        },
+        "reviewStates": {
+          "candidate_review": 45
+        },
+        "bestCandidate": {
+          "id": "thumb-d1b1e90acabd29ab62",
+          "thumbnailUrl": "https://secondcup.com/en/location/bayers-lake/$%7Be?.bg?.image.src}",
+          "sourceUrl": "https://secondcup.com/en/location/bayers-lake/",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "same_host_official_page_image"
         }
       },
       {
@@ -102,10 +168,98 @@
         }
       },
       {
-        "restaurantId": "osm-node-11699344564-second-cup",
-        "name": "Second Cup",
-        "neighborhood": "Armdale / Fairview",
-        "website": "https://secondcup.com/en/location/bayers-lake/",
+        "restaurantId": "osm-node-4990340206-subway",
+        "name": "Subway",
+        "neighborhood": "Dartmouth",
+        "website": "https://restaurants.subway.com/canada/ns/dartmouth/100-main-st",
+        "candidateCount": 43,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 43
+        },
+        "reviewStates": {
+          "candidate_review": 43
+        },
+        "bestCandidate": {
+          "id": "thumb-a3b2e9240fc925b625",
+          "thumbnailUrl": "https://dynl.mktgcdn.com/p/9g-4m5t0qeL3x0XaTEeW0TS9S7v0sIop6mcusjGyTiY/619x531.jpg",
+          "sourceUrl": "https://restaurants.subway.com/canada/ns/dartmouth/100-main-st",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "official_page_declared_remote_image"
+        }
+      },
+      {
+        "restaurantId": "osm-way-253538107-the-armview-restaurant-and-lounge",
+        "name": "The Armview Restaurant & Lounge",
+        "neighborhood": "Halifax Peninsula",
+        "website": "https://www.thearmview.com/",
+        "candidateCount": 43,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 43
+        },
+        "reviewStates": {
+          "candidate_review": 43
+        },
+        "bestCandidate": {
+          "id": "thumb-e66709bcb2cfcf077b",
+          "thumbnailUrl": "https://www.thearmview.com/armview-park-menu/#glow-107",
+          "sourceUrl": "https://www.thearmview.com/armview-park-menu/",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "same_host_official_page_image"
+        }
+      },
+      {
+        "restaurantId": "osm-node-2714150702-wendy-s",
+        "name": "Wendy's",
+        "neighborhood": "Downtown",
+        "website": "https://www.wendys.com/en-ca",
+        "candidateCount": 40,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 40
+        },
+        "reviewStates": {
+          "candidate_review": 40
+        },
+        "bestCandidate": {
+          "id": "thumb-fb8c1d955130e34fff",
+          "thumbnailUrl": "https://order.wendys.com/_next/image?url=%2Fgoogle-maps-loading.png&w=3840&q=75",
+          "sourceUrl": "https://order.wendys.com/ca/en/select-restaurant",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "same_host_official_page_image"
+        }
+      },
+      {
+        "restaurantId": "osm-node-11612206582-swaad-sagaa-indian-cuisine-incorporated",
+        "name": "Swaad Sagaa Indian Cuisine Incorporated",
+        "neighborhood": "North End",
+        "website": "https://www.swaadsagaa.com/",
+        "candidateCount": 39,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 39
+        },
+        "reviewStates": {
+          "candidate_review": 39
+        },
+        "bestCandidate": {
+          "id": "thumb-9ffe06a2ada20307a8",
+          "thumbnailUrl": "https://primary.jwwb.nl/public/z/b/k/temp-treqnfyzxvxawrucabjn/374524281_3438743236437298_1258114609622563908_n-high.jpg",
+          "sourceUrl": "https://www.swaadsagaa.com/",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "official_page_declared_remote_image"
+        }
+      },
+      {
+        "restaurantId": "osm-node-7674175977-moxie-s",
+        "name": "Moxie's",
+        "neighborhood": "Downtown",
+        "website": "https://moxies.com",
         "candidateCount": 37,
         "sourceKinds": {
           "official_page_thumbnail_candidate": 37
@@ -114,9 +268,9 @@
           "candidate_review": 37
         },
         "bestCandidate": {
-          "id": "thumb-d1b1e90acabd29ab62",
-          "thumbnailUrl": "https://secondcup.com/en/location/bayers-lake/$%7Be?.bg?.image.src}",
-          "sourceUrl": "https://secondcup.com/en/location/bayers-lake/",
+          "id": "thumb-84c6c65628ff63695f",
+          "thumbnailUrl": "https://moxies.com/i",
+          "sourceUrl": "https://moxies.com/",
           "sourceKind": "official_page_thumbnail_candidate",
           "reviewState": "candidate_review",
           "rightsStatus": "requires_rights_review",
@@ -190,10 +344,32 @@
         }
       },
       {
-        "restaurantId": "osm-node-11612206582-swaad-sagaa-indian-cuisine-incorporated",
-        "name": "Swaad Sagaa Indian Cuisine Incorporated",
-        "neighborhood": "North End",
-        "website": "https://www.swaadsagaa.com/",
+        "restaurantId": "osm-node-9892533621-terra-cafe",
+        "name": "Terra Cafe",
+        "neighborhood": "Waterfront",
+        "website": "https://terracafe.ca",
+        "candidateCount": 36,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 36
+        },
+        "reviewStates": {
+          "candidate_review": 36
+        },
+        "bestCandidate": {
+          "id": "thumb-e1f1c38d1326585a26",
+          "thumbnailUrl": "https://file.squarespace-cdn.com/content/v2/namespaces/fonts/libraries/sqsp/assets/1811ec83-ae16-4315-97be-d1d5822751fa/latin.woff2",
+          "sourceUrl": "https://terracafe.ca/coffeebar",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "official_page_declared_remote_image"
+        }
+      },
+      {
+        "restaurantId": "osm-node-2714150694-the-beaver-s-den",
+        "name": "The Beaver's Den",
+        "neighborhood": "Downtown",
+        "website": "https://thebeaversden.ca/",
         "candidateCount": 35,
         "sourceKinds": {
           "official_page_thumbnail_candidate": 35
@@ -202,9 +378,31 @@
           "candidate_review": 35
         },
         "bestCandidate": {
-          "id": "thumb-b6a2dfcbf8f576e1f7",
-          "thumbnailUrl": "https://d3i4yxtzktqr9n.cloudfront.net/botdefense-ext-ui/062cf6ef8519733c.woff",
-          "sourceUrl": "https://def.uber.com/en/challenge?from_service=d2ViLWVhdHMtdjI%3D&q=Yjg2NGJjOWViNWMzMTk2ZTU5OWNmNzlmMDQ0NTAzZTY6Qm1rbkdPNkJKeFNnSEdjNzppT3lrQmp3a25tcGlGVGxwdWtMRjdqTU42VDFvMVJZWnlNdDQrT010WU1JL25ocGRHUmNJL3RPU3V3OVpQVVRUSVFQdG5ra1hpNCtjWXZEOGFLVCtkUVFNc3NxUjhHR28wa1lVWXB3Z1hlS3U4S2lDS01SUHRVdktacDJETmJMVE5jT1B1MXNVeFI2b0sxZHF2QVVXWVZReDVBVGRGY2MwelQrangwTFA3TlJnNlpENnhzWDBMMUZGL1lGbW53aHp4cmovVmJ1UzJoQ21FSlFaWFR2bTNKeHoxMlZxTTdVcWVwZjFvcFAwL1VTK0duNnNJcG1HcldvTTU1MlhtN01ZYnZoMnVXdGczQVdlVDZKTG1tMFFqNHRIcGZRNjRmM2R4WEhWTGtZQU5kMlBtaWx5eEFXaEE4NEI5VUJTRU5yOGZMN2dWMzNlZDFKWXErSXNPTm5xK2Y1K2o3THZxaUZnWkIwTDB3OWdZRTRYQm95YjU3Vm9LaGo4aVRIZnMxdlZvaEJreGxoMVY3SnFQdz09OnJJM1pSYmFlSFkyQ1E0c1djM29JakE9PQ%3D%3D",
+          "id": "thumb-e2d6dbc54e76c77c22",
+          "thumbnailUrl": "https://assets.cdn.filesafe.space/adkNvKniYNb9Be3v8MfT/media/68b9a0716510b9e0bd3c82df.png",
+          "sourceUrl": "https://thebeaversden.ca/",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "official_page_declared_remote_image"
+        }
+      },
+      {
+        "restaurantId": "osm-way-181624111-wendy-s",
+        "name": "Wendy's",
+        "neighborhood": "West End",
+        "website": "https://locations.wendys.com/canada/ns/halifax/3580-kempt-road",
+        "candidateCount": 35,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 35
+        },
+        "reviewStates": {
+          "candidate_review": 35
+        },
+        "bestCandidate": {
+          "id": "thumb-9b105312b98acce677",
+          "thumbnailUrl": "https://dynl.mktgcdn.com/p/0g5X95PE_og8-zESIDHHsMMnkmyOO86NhiKteQB3QXA/619x619.jpg",
+          "sourceUrl": "https://locations.wendys.com/canada/ns/halifax/3580-kempt-road",
           "sourceKind": "official_page_thumbnail_candidate",
           "reviewState": "candidate_review",
           "rightsStatus": "requires_rights_review",
@@ -234,6 +432,28 @@
         }
       },
       {
+        "restaurantId": "osm-node-7674251740-in-spring-asian-fusion-cuisine",
+        "name": "in spring asian fusion cuisine",
+        "neighborhood": "Downtown",
+        "website": "https://www.inspringhotpot.com/",
+        "candidateCount": 34,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 34
+        },
+        "reviewStates": {
+          "candidate_review": 34
+        },
+        "bestCandidate": {
+          "id": "thumb-b2c17b475008702ff3",
+          "thumbnailUrl": "https://d30v2pzvrfyzpo.cloudfront.net/fonts/JETSansDigital-Bold-optimised.woff",
+          "sourceUrl": "https://www.skipthedishes.com/?utm_source=inspringhotpot.com&utm_medium=microsites&utm_campaign=microsites",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "official_page_declared_remote_image"
+        }
+      },
+      {
         "restaurantId": "osm-node-13141377001-india-paradise",
         "name": "India Paradise",
         "neighborhood": "Downtown",
@@ -249,6 +469,50 @@
           "id": "thumb-20a99aceb15f1d0cde",
           "thumbnailUrl": "https://cdn.prod.website-files.com/6261c545bac2436193a5b09b/62630d57c667783588cddf5a_sun-moon-white.png",
           "sourceUrl": "https://www.indiaparadise.ca/",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "official_page_declared_remote_image"
+        }
+      },
+      {
+        "restaurantId": "osm-node-2721720399-mashawee-mediterranean-grill",
+        "name": "Mashawee Mediterranean Grill",
+        "neighborhood": "Downtown",
+        "website": "https://www.mashaweemediterraneangrill.ca/",
+        "candidateCount": 34,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 34
+        },
+        "reviewStates": {
+          "candidate_review": 34
+        },
+        "bestCandidate": {
+          "id": "thumb-2f8ea8b1612006f035",
+          "thumbnailUrl": "https://d30v2pzvrfyzpo.cloudfront.net/fonts/JETSansDigital-Bold-optimised.woff",
+          "sourceUrl": "https://www.skipthedishes.com/?utm_source=mashaweemediterraneangrill.ca&utm_medium=microsites&utm_campaign=microsites",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "official_page_declared_remote_image"
+        }
+      },
+      {
+        "restaurantId": "osm-node-1920996968-tony-s-pizza",
+        "name": "Tony's Pizza",
+        "neighborhood": "North End",
+        "website": "https://www.tonysdonair.ca/",
+        "candidateCount": 34,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 34
+        },
+        "reviewStates": {
+          "candidate_review": 34
+        },
+        "bestCandidate": {
+          "id": "thumb-de4069174ae046c4f8",
+          "thumbnailUrl": "https://file.squarespace-cdn.com/content/v2/namespaces/fonts/libraries/sqsp/assets/057e6ea0-3de8-4bad-bf9e-55d7e2e9065d/cyrillic-ext.woff2",
+          "sourceUrl": "https://www.tonysdonair.com/",
           "sourceKind": "official_page_thumbnail_candidate",
           "reviewState": "candidate_review",
           "rightsStatus": "requires_rights_review",
@@ -278,10 +542,10 @@
         }
       },
       {
-        "restaurantId": "osm-node-4990340206-subway",
-        "name": "Subway",
-        "neighborhood": "Dartmouth",
-        "website": "https://restaurants.subway.com/canada/ns/dartmouth/100-main-st",
+        "restaurantId": "osm-node-11552510567-tako-sushi-and-ramen",
+        "name": "Tako Sushi & Ramen",
+        "neighborhood": "Armdale / Fairview",
+        "website": "https://www.takosushiramen.ca",
         "candidateCount": 31,
         "sourceKinds": {
           "official_page_thumbnail_candidate": 31
@@ -290,9 +554,31 @@
           "candidate_review": 31
         },
         "bestCandidate": {
-          "id": "thumb-a3b2e9240fc925b625",
-          "thumbnailUrl": "https://dynl.mktgcdn.com/p/9g-4m5t0qeL3x0XaTEeW0TS9S7v0sIop6mcusjGyTiY/619x531.jpg",
-          "sourceUrl": "https://restaurants.subway.com/canada/ns/dartmouth/100-main-st",
+          "id": "thumb-55b52089a9bdad9bd3",
+          "thumbnailUrl": "https://www.takosushiramen.ca/modules/comment/comment.css?oap1py",
+          "sourceUrl": "https://www.takosushiramen.ca/",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "same_host_official_page_image"
+        }
+      },
+      {
+        "restaurantId": "osm-node-4797459279-tilted-tap",
+        "name": "Tilted Tap",
+        "neighborhood": "Dartmouth",
+        "website": "https://www.tiltedtap.ca/",
+        "candidateCount": 31,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 31
+        },
+        "reviewStates": {
+          "candidate_review": 31
+        },
+        "bestCandidate": {
+          "id": "thumb-b60a322ea043f1b40c",
+          "thumbnailUrl": "https://static.parastorage.com/services/restaurant-menus-showcase-ooi/340b3d41e47b0b3c427ac7115aed2a32ad5fd0d85acabf4431a36ccd/media/menus_side_image.7077f229.jpeg",
+          "sourceUrl": "https://www.tiltedtap.ca/menu-1",
           "sourceKind": "official_page_thumbnail_candidate",
           "reviewState": "candidate_review",
           "rightsStatus": "requires_rights_review",
@@ -300,10 +586,32 @@
         }
       },
       {
-        "restaurantId": "osm-node-7674175977-moxie-s",
-        "name": "Moxie's",
-        "neighborhood": "Downtown",
-        "website": "https://moxies.com",
+        "restaurantId": "osm-node-5157417348-tomavinos-pizzeria",
+        "name": "Tomavinos Pizzeria",
+        "neighborhood": "South End",
+        "website": "https://www.tomavinos.ca/",
+        "candidateCount": 31,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 31
+        },
+        "reviewStates": {
+          "candidate_review": 31
+        },
+        "bestCandidate": {
+          "id": "thumb-d7913f835eefc75632",
+          "thumbnailUrl": "https://assets.cdn.filesafe.space/wfTmnuFPX9JPZX7F6G8X/media/69e698322c135a8c83b711f9.png",
+          "sourceUrl": "https://book.tomavinos.ca/",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "official_page_declared_remote_image"
+        }
+      },
+      {
+        "restaurantId": "osm-node-2704749449-the-mellow-mug",
+        "name": "The Mellow Mug",
+        "neighborhood": "Bedford",
+        "website": "https://www.mellowmug.ca",
         "candidateCount": 30,
         "sourceKinds": {
           "official_page_thumbnail_candidate": 30
@@ -312,13 +620,13 @@
           "candidate_review": 30
         },
         "bestCandidate": {
-          "id": "thumb-84c6c65628ff63695f",
-          "thumbnailUrl": "https://moxies.com/i",
-          "sourceUrl": "https://moxies.com/",
+          "id": "thumb-3b14d60a08fb6d9e9c",
+          "thumbnailUrl": "https://d24gls5t8gwt4z.cloudfront.net/business/banner/2a8bf24198e029a4a391a40162a53786",
+          "sourceUrl": "https://the-mellow-mug.order.plento.io/",
           "sourceKind": "official_page_thumbnail_candidate",
           "reviewState": "candidate_review",
           "rightsStatus": "requires_rights_review",
-          "confidence": "same_host_official_page_image"
+          "confidence": "official_page_declared_remote_image"
         }
       },
       {
@@ -366,6 +674,50 @@
         }
       },
       {
+        "restaurantId": "osm-node-11162905766-the-5k-cafe",
+        "name": "THE 5K CAFE",
+        "neighborhood": "Armdale / Fairview",
+        "website": "https://www.the5kcafe.ca/",
+        "candidateCount": 26,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 26
+        },
+        "reviewStates": {
+          "candidate_review": 26
+        },
+        "bestCandidate": {
+          "id": "thumb-4a25d610ba0c60911e",
+          "thumbnailUrl": "https://file.squarespace-cdn.com/content/v2/namespaces/fonts/libraries/sqsp/assets/106cf02d-1fea-47b3-beaa-607012f765b3/latin-ext.woff2",
+          "sourceUrl": "https://www.the5kcafe.ca/",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "official_page_declared_remote_image"
+        }
+      },
+      {
+        "restaurantId": "osm-node-886747513-trident-booksellers-and-cafe",
+        "name": "Trident Booksellers and Cafe",
+        "neighborhood": "Waterfront",
+        "website": "https://tridenthalifax.ca/",
+        "candidateCount": 26,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 26
+        },
+        "reviewStates": {
+          "candidate_review": 26
+        },
+        "bestCandidate": {
+          "id": "thumb-12c26ca29137d2798a",
+          "thumbnailUrl": "https://tridenthalifax.ca/events/#tribe-events-c-view-selector__button-icon-svg-0",
+          "sourceUrl": "https://tridenthalifax.ca/events/",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "same_host_official_page_image"
+        }
+      },
+      {
         "restaurantId": "osm-node-11726396167-rush-hour-pizza",
         "name": "Rush Hour Pizza",
         "neighborhood": "West End",
@@ -381,6 +733,28 @@
           "id": "thumb-a3b3080be1eb929feb",
           "thumbnailUrl": "https://img.cdn4dd.com/t/dd-norms/DDNorms-Bold.eot?#iefix",
           "sourceUrl": "https://order.online/business/~851745",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "official_page_declared_remote_image"
+        }
+      },
+      {
+        "restaurantId": "osm-node-3800197657-the-lower-deck",
+        "name": "The Lower Deck",
+        "neighborhood": "Waterfront",
+        "website": "https://www.lowerdeck.ca/",
+        "candidateCount": 25,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 25
+        },
+        "reviewStates": {
+          "candidate_review": 25
+        },
+        "bestCandidate": {
+          "id": "thumb-7ad8fdab004d153469",
+          "thumbnailUrl": "https://img1.wsimg.com/gfonts/s/opensans/v44/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqW106F15M.woff2",
+          "sourceUrl": "https://lowerdeck.ca/",
           "sourceKind": "official_page_thumbnail_candidate",
           "reviewState": "candidate_review",
           "rightsStatus": "requires_rights_review",
@@ -410,10 +784,10 @@
         }
       },
       {
-        "restaurantId": "osm-node-3104142670-king-of-donair",
-        "name": "King of Donair",
-        "neighborhood": "Halifax Peninsula",
-        "website": "https://www.kingofdonair.ca",
+        "restaurantId": "osm-node-3791840157-krave-burger",
+        "name": "Krave Burger",
+        "neighborhood": "Downtown",
+        "website": "http://kraveburger.com",
         "candidateCount": 23,
         "sourceKinds": {
           "official_page_thumbnail_candidate": 23
@@ -422,9 +796,119 @@
           "candidate_review": 23
         },
         "bestCandidate": {
-          "id": "thumb-2f68f1c6d812029cf8",
-          "thumbnailUrl": "https://www.kingofdonair.ca/wp-content/themes/theking/images/signup.jpg",
-          "sourceUrl": "https://www.kingofdonair.ca/",
+          "id": "thumb-85fe1cdeb1403c544d",
+          "thumbnailUrl": "https://menuimages.chownowcdn.com/cdn-cgi/image/04522713-f448-434a-9fab-c3646041e690.jpg",
+          "sourceUrl": "https://order.chownow.com/order/20384/locations/29373",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "official_page_declared_remote_image"
+        }
+      },
+      {
+        "restaurantId": "osm-node-12143325435-krave-burger",
+        "name": "Krave Burger",
+        "neighborhood": "Dartmouth",
+        "website": "http://kraveburger.com",
+        "candidateCount": 23,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 23
+        },
+        "reviewStates": {
+          "candidate_review": 23
+        },
+        "bestCandidate": {
+          "id": "thumb-855fa7ae97f01c3bdb",
+          "thumbnailUrl": "https://menuimages.chownowcdn.com/cdn-cgi/image/04522713-f448-434a-9fab-c3646041e690.jpg",
+          "sourceUrl": "https://order.chownow.com/order/20384/locations/29373",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "official_page_declared_remote_image"
+        }
+      },
+      {
+        "restaurantId": "osm-node-4550005602-starbucks",
+        "name": "Starbucks",
+        "neighborhood": "Dartmouth",
+        "website": "https://www.starbucks.ca/",
+        "candidateCount": 23,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 23
+        },
+        "reviewStates": {
+          "candidate_review": 23
+        },
+        "bestCandidate": {
+          "id": "thumb-8dc5301492545ea6ba",
+          "thumbnailUrl": "https://content-prod-live.cert.starbucks.com/binary/v2/asset/143-111801.jpg",
+          "sourceUrl": "https://www.starbucks.ca/menu/featured/",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "official_page_source_media"
+        }
+      },
+      {
+        "restaurantId": "osm-node-5150371021-starbucks",
+        "name": "Starbucks",
+        "neighborhood": "Armdale / Fairview",
+        "website": "https://www.starbucks.ca/",
+        "candidateCount": 23,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 23
+        },
+        "reviewStates": {
+          "candidate_review": 23
+        },
+        "bestCandidate": {
+          "id": "thumb-4de3de5659be58d804",
+          "thumbnailUrl": "https://content-prod-live.cert.starbucks.com/binary/v2/asset/143-111801.jpg",
+          "sourceUrl": "https://www.starbucks.ca/menu/featured/",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "official_page_source_media"
+        }
+      },
+      {
+        "restaurantId": "osm-node-10665823259-wing-n-it",
+        "name": "Wing 'n It",
+        "neighborhood": "Armdale / Fairview",
+        "website": "https://wingnit.ca/",
+        "candidateCount": 23,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 23
+        },
+        "reviewStates": {
+          "candidate_review": 23
+        },
+        "bestCandidate": {
+          "id": "thumb-fb01fc13c3a10f8647",
+          "thumbnailUrl": "https://wingnit.ca/assets/images/layout/graphic-rip-dark.png",
+          "sourceUrl": "https://wingnit.ca/menu",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "same_host_official_page_image"
+        }
+      },
+      {
+        "restaurantId": "osm-node-3799422457-cora",
+        "name": "Cora",
+        "neighborhood": "Downtown",
+        "website": "https://www.chezcora.com/en/breakfast-lunch-restaurants/cora-halifax-downtown/",
+        "candidateCount": 22,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 22
+        },
+        "reviewStates": {
+          "candidate_review": 22
+        },
+        "bestCandidate": {
+          "id": "thumb-dce02df93fc6f7891a",
+          "thumbnailUrl": "https://www.chezcora.com/en/breakfast-lunch-restaurants/cora-halifax-downtown/r",
+          "sourceUrl": "https://www.chezcora.com/en/breakfast-lunch-restaurants/cora-halifax-downtown/",
           "sourceKind": "official_page_thumbnail_candidate",
           "reviewState": "candidate_review",
           "rightsStatus": "requires_rights_review",
@@ -564,10 +1048,32 @@
         }
       },
       {
-        "restaurantId": "osm-node-3799422457-cora",
-        "name": "Cora",
+        "restaurantId": "osm-node-3802169599-wild-leek-food-and-juice-bar",
+        "name": "Wild Leek Food & Juice Bar",
         "neighborhood": "Downtown",
-        "website": "https://www.chezcora.com/en/breakfast-lunch-restaurants/cora-halifax-downtown/",
+        "website": "https://wildleek.ca/",
+        "candidateCount": 22,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 22
+        },
+        "reviewStates": {
+          "candidate_review": 22
+        },
+        "bestCandidate": {
+          "id": "thumb-72f7d1ba059c95ad5c",
+          "thumbnailUrl": "https://static.parastorage.com/fonts/v2/af36905f-3c92-4ef9-b0c1-f91432f16ac1/v1/avenir-lt-w01_35-light1475496.woff2",
+          "sourceUrl": "https://www.wildleek.ca/menu",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "official_page_declared_remote_image"
+        }
+      },
+      {
+        "restaurantId": "osm-way-319792807-chinatown",
+        "name": "Chinatown",
+        "neighborhood": "Armdale / Fairview",
+        "website": "https://www.chinatownhalifax.com/",
         "candidateCount": 21,
         "sourceKinds": {
           "official_page_thumbnail_candidate": 21
@@ -576,13 +1082,13 @@
           "candidate_review": 21
         },
         "bestCandidate": {
-          "id": "thumb-dce02df93fc6f7891a",
-          "thumbnailUrl": "https://www.chezcora.com/en/breakfast-lunch-restaurants/cora-halifax-downtown/r",
-          "sourceUrl": "https://www.chezcora.com/en/breakfast-lunch-restaurants/cora-halifax-downtown/",
+          "id": "thumb-d9881d798ee5ac44fb",
+          "thumbnailUrl": "https://d16nvl8r27fn85.cloudfront.net/v2/images/meta-og.jpg",
+          "sourceUrl": "https://order.tbdine.com/pickup/22146/menu",
           "sourceKind": "official_page_thumbnail_candidate",
           "reviewState": "candidate_review",
           "rightsStatus": "requires_rights_review",
-          "confidence": "same_host_official_page_image"
+          "confidence": "official_page_declared_remote_image"
         }
       },
       {
@@ -696,28 +1202,6 @@
         }
       },
       {
-        "restaurantId": "osm-way-319792807-chinatown",
-        "name": "Chinatown",
-        "neighborhood": "Armdale / Fairview",
-        "website": "https://www.chinatownhalifax.com/",
-        "candidateCount": 20,
-        "sourceKinds": {
-          "official_page_thumbnail_candidate": 20
-        },
-        "reviewStates": {
-          "candidate_review": 20
-        },
-        "bestCandidate": {
-          "id": "thumb-e4cc102bb7bd7a1669",
-          "thumbnailUrl": "https://websitedemos.net/bbq-restaurant-02/wp-content/uploads/sites/284/2018/10/divider-free-img-1.png",
-          "sourceUrl": "https://www.chinatownhalifax.com/",
-          "sourceKind": "official_page_thumbnail_candidate",
-          "reviewState": "candidate_review",
-          "rightsStatus": "requires_rights_review",
-          "confidence": "official_page_declared_remote_image"
-        }
-      },
-      {
         "restaurantId": "osm-node-5863968671-mirchi-tandoor",
         "name": "Mirchi Tandoor",
         "neighborhood": "Downtown",
@@ -784,50 +1268,6 @@
         }
       },
       {
-        "restaurantId": "osm-node-4550005602-starbucks",
-        "name": "Starbucks",
-        "neighborhood": "Dartmouth",
-        "website": "https://www.starbucks.ca/",
-        "candidateCount": 19,
-        "sourceKinds": {
-          "official_page_thumbnail_candidate": 19
-        },
-        "reviewStates": {
-          "candidate_review": 19
-        },
-        "bestCandidate": {
-          "id": "thumb-8dc5301492545ea6ba",
-          "thumbnailUrl": "https://content-prod-live.cert.starbucks.com/binary/v2/asset/143-111801.jpg",
-          "sourceUrl": "https://www.starbucks.ca/menu/featured/",
-          "sourceKind": "official_page_thumbnail_candidate",
-          "reviewState": "candidate_review",
-          "rightsStatus": "requires_rights_review",
-          "confidence": "official_page_source_media"
-        }
-      },
-      {
-        "restaurantId": "osm-node-5150371021-starbucks",
-        "name": "Starbucks",
-        "neighborhood": "Armdale / Fairview",
-        "website": "https://www.starbucks.ca/",
-        "candidateCount": 19,
-        "sourceKinds": {
-          "official_page_thumbnail_candidate": 19
-        },
-        "reviewStates": {
-          "candidate_review": 19
-        },
-        "bestCandidate": {
-          "id": "thumb-4de3de5659be58d804",
-          "thumbnailUrl": "https://content-prod-live.cert.starbucks.com/binary/v2/asset/143-111801.jpg",
-          "sourceUrl": "https://www.starbucks.ca/menu/featured/",
-          "sourceKind": "official_page_thumbnail_candidate",
-          "reviewState": "candidate_review",
-          "rightsStatus": "requires_rights_review",
-          "confidence": "official_page_source_media"
-        }
-      },
-      {
         "restaurantId": "osm-node-11552069056-sushi-cove",
         "name": "Sushi Cove",
         "neighborhood": "South End",
@@ -847,6 +1287,28 @@
           "reviewState": "candidate_review",
           "rightsStatus": "requires_rights_review",
           "confidence": "same_host_official_page_image"
+        }
+      },
+      {
+        "restaurantId": "osm-node-5018125658-sweet-and-sassy",
+        "name": "Sweet & Sassy",
+        "neighborhood": "North End",
+        "website": "https://sweetandsassy.ca/",
+        "candidateCount": 19,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 19
+        },
+        "reviewStates": {
+          "candidate_review": 19
+        },
+        "bestCandidate": {
+          "id": "thumb-0a7ae2736b72988637",
+          "thumbnailUrl": "https://img1.wsimg.com/gfonts/s/playfairdisplay/v40/nuFiD-vYSZviVYUb_rj3ij__anPXDTjYgFE_.woff2",
+          "sourceUrl": "https://sweetandsassy.ca/",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "official_page_declared_remote_image"
         }
       },
       {
@@ -938,50 +1400,6 @@
         }
       },
       {
-        "restaurantId": "osm-node-7674251740-in-spring-asian-fusion-cuisine",
-        "name": "in spring asian fusion cuisine",
-        "neighborhood": "Downtown",
-        "website": "https://www.inspringhotpot.com/",
-        "candidateCount": 17,
-        "sourceKinds": {
-          "official_page_thumbnail_candidate": 17
-        },
-        "reviewStates": {
-          "candidate_review": 17
-        },
-        "bestCandidate": {
-          "id": "thumb-b2c17b475008702ff3",
-          "thumbnailUrl": "https://d30v2pzvrfyzpo.cloudfront.net/fonts/JETSansDigital-Bold-optimised.woff",
-          "sourceUrl": "https://www.skipthedishes.com/?utm_source=inspringhotpot.com&utm_medium=microsites&utm_campaign=microsites",
-          "sourceKind": "official_page_thumbnail_candidate",
-          "reviewState": "candidate_review",
-          "rightsStatus": "requires_rights_review",
-          "confidence": "official_page_declared_remote_image"
-        }
-      },
-      {
-        "restaurantId": "osm-node-2721720399-mashawee-mediterranean-grill",
-        "name": "Mashawee Mediterranean Grill",
-        "neighborhood": "Downtown",
-        "website": "https://www.mashaweemediterraneangrill.ca/",
-        "candidateCount": 17,
-        "sourceKinds": {
-          "official_page_thumbnail_candidate": 17
-        },
-        "reviewStates": {
-          "candidate_review": 17
-        },
-        "bestCandidate": {
-          "id": "thumb-2f8ea8b1612006f035",
-          "thumbnailUrl": "https://d30v2pzvrfyzpo.cloudfront.net/fonts/JETSansDigital-Bold-optimised.woff",
-          "sourceUrl": "https://www.skipthedishes.com/?utm_source=mashaweemediterraneangrill.ca&utm_medium=microsites&utm_campaign=microsites",
-          "sourceKind": "official_page_thumbnail_candidate",
-          "reviewState": "candidate_review",
-          "rightsStatus": "requires_rights_review",
-          "confidence": "official_page_declared_remote_image"
-        }
-      },
-      {
         "restaurantId": "osm-node-13262694122-public-cafe-bakery-and-bar",
         "name": "Public - Café, Bakery & Bar",
         "neighborhood": "Downtown",
@@ -1026,6 +1444,160 @@
         }
       },
       {
+        "restaurantId": "osm-node-6296953436-the-mercantile-social",
+        "name": "The Mercantile Social",
+        "neighborhood": "Waterfront",
+        "website": "https://themercantilesocial.ca/",
+        "candidateCount": 17,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 17
+        },
+        "reviewStates": {
+          "candidate_review": 17
+        },
+        "bestCandidate": {
+          "id": "thumb-3f24e6a7862a8311e7",
+          "thumbnailUrl": "https://file.squarespace-cdn.com/content/v2/namespaces/fonts/libraries/sqsp/assets/109c2a75-1f80-4a9d-8277-5cc43beb4284/latin-ext.woff2",
+          "sourceUrl": "https://www.themercantilesocial.com/",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "official_page_declared_remote_image"
+        }
+      },
+      {
+        "restaurantId": "osm-node-1254843900-the-mic-mac-bar-and-grill",
+        "name": "The Mic Mac Bar and Grill",
+        "neighborhood": "Dartmouth",
+        "website": "https://micmacbarandgrill.com/",
+        "candidateCount": 17,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 17
+        },
+        "reviewStates": {
+          "candidate_review": 17
+        },
+        "bestCandidate": {
+          "id": "thumb-75ab1ed80b078ca052",
+          "thumbnailUrl": "https://micmacbarandgrill.com/menus/food/r",
+          "sourceUrl": "https://micmacbarandgrill.com/menus/food/",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "same_host_official_page_image"
+        }
+      },
+      {
+        "restaurantId": "osm-way-180446788-tim-hortons",
+        "name": "Tim Hortons",
+        "neighborhood": "South End",
+        "website": "https://locations.timhortons.ca/en/ns/halifax/390-osborne-street/",
+        "candidateCount": 17,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 17
+        },
+        "reviewStates": {
+          "candidate_review": 17
+        },
+        "bestCandidate": {
+          "id": "thumb-79e2c7bd9541b50ba0",
+          "thumbnailUrl": "https://cdn.sanity.io/images/czqk28jt/prod_th/9a9f5534893f0681e4d77d5d80d7014bd747e529-2880x1658.png",
+          "sourceUrl": "https://www.timhortons.ca/menu?locale-selected=0&lang=en&store-number=105846&service-mode=TAKEOUT",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "official_page_source_media"
+        }
+      },
+      {
+        "restaurantId": "osm-node-771698137-waterfront-warehouse",
+        "name": "Waterfront Warehouse",
+        "neighborhood": "Waterfront",
+        "website": "https://www.rcr.ca/restaurants/waterfront-warehouse/",
+        "candidateCount": 17,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 17
+        },
+        "reviewStates": {
+          "candidate_review": 17
+        },
+        "bestCandidate": {
+          "id": "thumb-0160308499b11522de",
+          "thumbnailUrl": "https://www.rcr.ca/content/plugins/header-section/img/slider-controls.png",
+          "sourceUrl": "https://www.rcr.ca/restaurants/waterfront-warehouse/",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "same_host_official_page_image"
+        }
+      },
+      {
+        "restaurantId": "osm-node-4411880103-the-bg",
+        "name": "The BG",
+        "neighborhood": "Downtown",
+        "website": "https://www.stubborngoat.ca/halifax/waterfront-beer-garden/",
+        "candidateCount": 16,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 16
+        },
+        "reviewStates": {
+          "candidate_review": 16
+        },
+        "bestCandidate": {
+          "id": "thumb-94288e26eddc12c37b",
+          "thumbnailUrl": "https://static.tacdn.com/img2/travelers_choice/widgets/tchotel_2025_L.png",
+          "sourceUrl": "https://www.stubborngoat.ca/",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "official_page_declared_remote_image"
+        }
+      },
+      {
+        "restaurantId": "osm-node-7674206838-tokyo-roll",
+        "name": "Tokyo Roll",
+        "neighborhood": "Downtown",
+        "website": "https://www.tokyorollhalifax.com/",
+        "candidateCount": 16,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 16
+        },
+        "reviewStates": {
+          "candidate_review": 16
+        },
+        "bestCandidate": {
+          "id": "thumb-85c96c2f4521dc4cd8",
+          "thumbnailUrl": "https://static.parastorage.com/fonts/v2/2f12de04-5ca4-4ada-9e66-a958673b12b5/v1/helvetica-lt-w10-bold.woff2",
+          "sourceUrl": "https://www.tokyorollhalifax.com/",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "official_page_declared_remote_image"
+        }
+      },
+      {
+        "restaurantId": "osm-way-96322798-wooden-monkey",
+        "name": "Wooden Monkey",
+        "neighborhood": "Downtown",
+        "website": "https://www.thewoodenmonkey.ca/",
+        "candidateCount": 16,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 16
+        },
+        "reviewStates": {
+          "candidate_review": 16
+        },
+        "bestCandidate": {
+          "id": "thumb-acdbe7c5b897cc2a85",
+          "thumbnailUrl": "https://cdn.prod.website-files.com/5a9175138433cb00017eefdf/5a9175138433cb00017ef019_imageedit_1_2839820776.png",
+          "sourceUrl": "https://www.thewoodenmonkey.ca/",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "official_page_declared_remote_image"
+        }
+      },
+      {
         "restaurantId": "battery-park",
         "name": "Battery Park Beer Bar",
         "neighborhood": "Dartmouth",
@@ -1067,6 +1639,72 @@
           "reviewState": "candidate_review",
           "rightsStatus": "requires_rights_review",
           "confidence": "official_page_declared_remote_image"
+        }
+      },
+      {
+        "restaurantId": "osm-node-37132665-the-loose-cannon",
+        "name": "The Loose Cannon",
+        "neighborhood": "Downtown",
+        "website": "https://theloosecannon.ca/",
+        "candidateCount": 15,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 15
+        },
+        "reviewStates": {
+          "candidate_review": 15
+        },
+        "bestCandidate": {
+          "id": "thumb-745f6186d6507eb596",
+          "thumbnailUrl": "https://d1k7e91iovemsu.cloudfront.net/images/prod/consumer_live_/root/b4210929-33fe-4670-a76e-f6dccc09f91c.png",
+          "sourceUrl": "https://www.theloosecannon.ca/",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "official_page_declared_remote_image"
+        }
+      },
+      {
+        "restaurantId": "osm-node-3801119557-the-middle-spoon-desserterie-and-bar",
+        "name": "The Middle Spoon Desserterie & Bar",
+        "neighborhood": "Downtown",
+        "website": "https://www.themiddlespoon.ca/",
+        "candidateCount": 15,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 15
+        },
+        "reviewStates": {
+          "candidate_review": 15
+        },
+        "bestCandidate": {
+          "id": "thumb-ad21cc1b4716e5aeef",
+          "thumbnailUrl": "https://themiddlespoon.com/_next/image?url=%2Fimages%2Fhero-1.jpg&w=3840&q=75",
+          "sourceUrl": "https://themiddlespoon.com/",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "same_host_official_page_image"
+        }
+      },
+      {
+        "restaurantId": "osm-node-3802945757-the-ostrich-club",
+        "name": "The Ostrich Club",
+        "neighborhood": "North End",
+        "website": "https://theostrichclub.ca/",
+        "candidateCount": 15,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 15
+        },
+        "reviewStates": {
+          "candidate_review": 15
+        },
+        "bestCandidate": {
+          "id": "thumb-efc68a7a0ab64fbe0c",
+          "thumbnailUrl": "https://theostrichclub.ca/wp-content/uploads/2021/10/img_Lindsay_Jones-uai-258x344.jpg",
+          "sourceUrl": "https://theostrichclub.ca/",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "same_host_official_page_image"
         }
       },
       {
@@ -1268,6 +1906,28 @@
         }
       },
       {
+        "restaurantId": "osm-node-11526163878-tim-hortons",
+        "name": "Tim Hortons",
+        "neighborhood": "South End",
+        "website": "https://dal.campusdish.com/LocationsAndMenus/LifeSciencesCentre/TimHortons",
+        "candidateCount": 13,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 13
+        },
+        "reviewStates": {
+          "candidate_review": 13
+        },
+        "bestCandidate": {
+          "id": "thumb-0603808d6f6d586381",
+          "thumbnailUrl": "https://dal.mydininghub.ca/en/account?section=my-menu#account_circle_svg__a",
+          "sourceUrl": "https://dal.mydininghub.ca/en/account?section=my-menu",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "same_host_official_page_image"
+        }
+      },
+      {
         "restaurantId": "osm-node-9099100703-marigold-kitchen",
         "name": "Marigold Kitchen",
         "neighborhood": "Downtown",
@@ -1353,6 +2013,50 @@
           "reviewState": "candidate_review",
           "rightsStatus": "requires_rights_review",
           "confidence": "same_host_official_page_image"
+        }
+      },
+      {
+        "restaurantId": "osm-node-5001886823-the-keg",
+        "name": "The Keg",
+        "neighborhood": "Downtown",
+        "website": "https://thekeg.com/en/locations/halifax",
+        "candidateCount": 10,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 10
+        },
+        "reviewStates": {
+          "candidate_review": 10
+        },
+        "bestCandidate": {
+          "id": "thumb-42f4a7111bfda2ba7b",
+          "thumbnailUrl": "https://cdn.sanity.io/images/dw0heewu/production/0bdcb34a72360b6173e5fbb498c35c829bcc8e1d-39x39.png?auto=format",
+          "sourceUrl": "https://thekeg.com/en/locations/halifax",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "official_page_declared_remote_image"
+        }
+      },
+      {
+        "restaurantId": "osm-node-13286456319-water-polo",
+        "name": "Water Polo",
+        "neighborhood": "Downtown",
+        "website": "https://waterpolohfx.ca/",
+        "candidateCount": 10,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 10
+        },
+        "reviewStates": {
+          "candidate_review": 10
+        },
+        "bestCandidate": {
+          "id": "thumb-42f2cbd0394b8d2d75",
+          "thumbnailUrl": "https://images.getbento.com/accounts/15bdd5135b436c32400cc8748f21a401/media/CJcJ4fr1QdCYSsTwqAXw_IMG_0218.jpg?w=5400&fit=max&auto=compress,format&cs=origin",
+          "sourceUrl": "https://www.waterpolohfx.ca/",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "official_page_declared_remote_image"
         }
       },
       {
@@ -1510,6 +2214,28 @@
         }
       },
       {
+        "restaurantId": "osm-node-4420631892-two-if-by-sea",
+        "name": "Two if By Sea",
+        "neighborhood": "Dartmouth",
+        "website": "https://www.twoifbyseacafe.ca/",
+        "candidateCount": 6,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 6
+        },
+        "reviewStates": {
+          "candidate_review": 6
+        },
+        "bestCandidate": {
+          "id": "thumb-814692c7e2675c9fec",
+          "thumbnailUrl": "https://twoifbyseacafe.ca/location.href",
+          "sourceUrl": "https://twoifbyseacafe.ca/",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "same_host_official_page_image"
+        }
+      },
+      {
         "restaurantId": "osm-node-11752691591-bramble-cafe",
         "name": "Bramble Cafe",
         "neighborhood": "North End",
@@ -1551,6 +2277,28 @@
           "reviewState": "candidate_review",
           "rightsStatus": "requires_rights_review",
           "confidence": "same_host_official_page_image"
+        }
+      },
+      {
+        "restaurantId": "osm-node-11752688345-the-grounds-cafe-by-drift-coffee",
+        "name": "The Grounds Cafe by Drift Coffee",
+        "neighborhood": "Downtown",
+        "website": "https://www.instagram.com/driftcoffeehfx/",
+        "candidateCount": 5,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 5
+        },
+        "reviewStates": {
+          "candidate_review": 5
+        },
+        "bestCandidate": {
+          "id": "thumb-d81c162a29a739605a",
+          "thumbnailUrl": "https://static.cdninstagram.com/rsrc.php/y9/r/MptwNl-B2pS.webp",
+          "sourceUrl": "https://www.instagram.com/driftcoffeehfx/",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "official_page_declared_remote_image"
         }
       },
       {
@@ -1620,10 +2368,10 @@
         }
       },
       {
-        "restaurantId": "osm-node-267592027-the-black-sheep",
-        "name": "The Black Sheep",
-        "neighborhood": "Downtown",
-        "website": "https://blacksheephalifax.com/",
+        "restaurantId": "osm-node-11466743651-uncommon-grounds",
+        "name": "Uncommon Grounds",
+        "neighborhood": "South End",
+        "website": "https://theuncommongroup.com/",
         "candidateCount": 4,
         "sourceKinds": {
           "official_page_thumbnail_candidate": 4
@@ -1632,13 +2380,13 @@
           "candidate_review": 4
         },
         "bestCandidate": {
-          "id": "thumb-a7ce194baf30c48d1a",
-          "thumbnailUrl": "https://blacksheephalifax.com/wp-content/uploads/2022/11/HomeNameV002-OFFwhite.png",
-          "sourceUrl": "https://blacksheephalifax.com/",
+          "id": "thumb-eab0c6ededd4494912",
+          "thumbnailUrl": "https://az833301.vo.msecnd.net/images/snippets/arrow-left.png",
+          "sourceUrl": "https://theuncommongroup.com/",
           "sourceKind": "official_page_thumbnail_candidate",
           "reviewState": "candidate_review",
           "rightsStatus": "requires_rights_review",
-          "confidence": "official_page_source_media"
+          "confidence": "official_page_declared_remote_image"
         }
       },
       {
@@ -1774,10 +2522,10 @@
         }
       },
       {
-        "restaurantId": "osm-way-253538107-the-armview-restaurant-and-lounge",
-        "name": "The Armview Restaurant & Lounge",
-        "neighborhood": "Halifax Peninsula",
-        "website": "https://www.thearmview.com/",
+        "restaurantId": "osm-node-9099103643-the-bread-lounge",
+        "name": "The Bread Lounge",
+        "neighborhood": "Downtown",
+        "website": "https://breadlounge.ca",
         "candidateCount": 2,
         "sourceKinds": {
           "official_page_thumbnail_candidate": 2
@@ -1786,101 +2534,13 @@
           "candidate_review": 2
         },
         "bestCandidate": {
-          "id": "thumb-7b1a82415b7f82a63d",
-          "thumbnailUrl": "https://www.thearmview.com/wp-content/uploads/2022/11/breakfast_thearmview.jpg",
-          "sourceUrl": "https://www.thearmview.com/breakfast/",
+          "id": "thumb-e9821b830235bebc13",
+          "thumbnailUrl": "https://thebreadloungebakery.square.site/uploads/b/6b31dad0-7b99-11eb-8fed-ef18a489ed8b/Screen%20Shot%202021-02-17%20at%209.15.37%20AM.png",
+          "sourceUrl": "https://thebreadloungebakery.square.site/",
           "sourceKind": "official_page_thumbnail_candidate",
           "reviewState": "candidate_review",
           "rightsStatus": "requires_rights_review",
-          "confidence": "official_page_source_media"
-        }
-      },
-      {
-        "restaurantId": "osm-node-4797459279-tilted-tap",
-        "name": "Tilted Tap",
-        "neighborhood": "Dartmouth",
-        "website": "https://www.tiltedtap.ca/",
-        "candidateCount": 2,
-        "sourceKinds": {
-          "official_page_thumbnail_candidate": 2
-        },
-        "reviewStates": {
-          "candidate_review": 2
-        },
-        "bestCandidate": {
-          "id": "thumb-a3e20019c7c579102a",
-          "thumbnailUrl": "https://static.wixstatic.com/media/417737_94bd652dc91142a7adc8d68d1c67fd9e%7Emv2.jpg/v1/fit/w_2500,h_1330,al_c/417737_94bd652dc91142a7adc8d68d1c67fd9e%7Emv2.jpg",
-          "sourceUrl": "https://www.tiltedtap.ca/reserve",
-          "sourceKind": "official_page_thumbnail_candidate",
-          "reviewState": "candidate_review",
-          "rightsStatus": "requires_rights_review",
-          "confidence": "official_page_source_media"
-        }
-      },
-      {
-        "restaurantId": "osm-way-180446788-tim-hortons",
-        "name": "Tim Hortons",
-        "neighborhood": "South End",
-        "website": "https://locations.timhortons.ca/en/ns/halifax/390-osborne-street/",
-        "candidateCount": 2,
-        "sourceKinds": {
-          "official_page_thumbnail_candidate": 2
-        },
-        "reviewStates": {
-          "candidate_review": 2
-        },
-        "bestCandidate": {
-          "id": "thumb-79e2c7bd9541b50ba0",
-          "thumbnailUrl": "https://cdn.sanity.io/images/czqk28jt/prod_th/9a9f5534893f0681e4d77d5d80d7014bd747e529-2880x1658.png",
-          "sourceUrl": "https://www.timhortons.ca/menu?locale-selected=0&lang=en&store-number=105846&service-mode=TAKEOUT",
-          "sourceKind": "official_page_thumbnail_candidate",
-          "reviewState": "candidate_review",
-          "rightsStatus": "requires_rights_review",
-          "confidence": "official_page_source_media"
-        }
-      },
-      {
-        "restaurantId": "osm-node-886747513-trident-booksellers-and-cafe",
-        "name": "Trident Booksellers and Cafe",
-        "neighborhood": "Waterfront",
-        "website": "https://tridenthalifax.ca/",
-        "candidateCount": 2,
-        "sourceKinds": {
-          "official_page_thumbnail_candidate": 2
-        },
-        "reviewStates": {
-          "candidate_review": 2
-        },
-        "bestCandidate": {
-          "id": "thumb-224c2c73b2b6135a36",
-          "thumbnailUrl": "https://tridenthalifax.ca/wp-content/uploads/2024/01/Trident-Halifax-Cafe-flowers-400x400-1-300x300.jpg",
-          "sourceUrl": "https://tridenthalifax.ca/",
-          "sourceKind": "official_page_thumbnail_candidate",
-          "reviewState": "candidate_review",
-          "rightsStatus": "requires_rights_review",
-          "confidence": "official_page_source_media"
-        }
-      },
-      {
-        "restaurantId": "osm-node-771698137-waterfront-warehouse",
-        "name": "Waterfront Warehouse",
-        "neighborhood": "Waterfront",
-        "website": "https://www.rcr.ca/restaurants/waterfront-warehouse/",
-        "candidateCount": 2,
-        "sourceKinds": {
-          "official_page_thumbnail_candidate": 2
-        },
-        "reviewStates": {
-          "candidate_review": 2
-        },
-        "bestCandidate": {
-          "id": "thumb-c063544b04a706d1e8",
-          "thumbnailUrl": "https://www.rcr.ca/content/uploads/2018/02/waterfront-warehouse-wide-1920x1006.jpg",
-          "sourceUrl": "https://www.rcr.ca/restaurants/waterfront-warehouse/",
-          "sourceKind": "official_page_thumbnail_candidate",
-          "reviewState": "candidate_review",
-          "rightsStatus": "requires_rights_review",
-          "confidence": "official_page_source_media"
+          "confidence": "same_host_official_page_image"
         }
       },
       {
@@ -1972,50 +2632,6 @@
         }
       },
       {
-        "restaurantId": "osm-node-3791840157-krave-burger",
-        "name": "Krave Burger",
-        "neighborhood": "Downtown",
-        "website": "http://kraveburger.com",
-        "candidateCount": 1,
-        "sourceKinds": {
-          "official_page_thumbnail_candidate": 1
-        },
-        "reviewStates": {
-          "candidate_review": 1
-        },
-        "bestCandidate": {
-          "id": "thumb-85fe1cdeb1403c544d",
-          "thumbnailUrl": "https://menuimages.chownowcdn.com/cdn-cgi/image/04522713-f448-434a-9fab-c3646041e690.jpg",
-          "sourceUrl": "https://order.chownow.com/order/20384/locations/29373",
-          "sourceKind": "official_page_thumbnail_candidate",
-          "reviewState": "candidate_review",
-          "rightsStatus": "requires_rights_review",
-          "confidence": "official_page_declared_remote_image"
-        }
-      },
-      {
-        "restaurantId": "osm-node-12143325435-krave-burger",
-        "name": "Krave Burger",
-        "neighborhood": "Dartmouth",
-        "website": "http://kraveburger.com",
-        "candidateCount": 1,
-        "sourceKinds": {
-          "official_page_thumbnail_candidate": 1
-        },
-        "reviewStates": {
-          "candidate_review": 1
-        },
-        "bestCandidate": {
-          "id": "thumb-855fa7ae97f01c3bdb",
-          "thumbnailUrl": "https://menuimages.chownowcdn.com/cdn-cgi/image/04522713-f448-434a-9fab-c3646041e690.jpg",
-          "sourceUrl": "https://order.chownow.com/order/20384/locations/29373",
-          "sourceKind": "official_page_thumbnail_candidate",
-          "reviewState": "candidate_review",
-          "rightsStatus": "requires_rights_review",
-          "confidence": "official_page_declared_remote_image"
-        }
-      },
-      {
         "restaurantId": "osm-node-3789756557-smiling-goat",
         "name": "Smiling Goat",
         "neighborhood": "Waterfront",
@@ -2038,10 +2654,10 @@
         }
       },
       {
-        "restaurantId": "osm-node-4411880103-the-bg",
-        "name": "The BG",
+        "restaurantId": "osm-node-8164476189-the-bitter-end",
+        "name": "The Bitter End",
         "neighborhood": "Downtown",
-        "website": "https://www.stubborngoat.ca/halifax/waterfront-beer-garden/",
+        "website": "https://www.bitterend.ca/home",
         "candidateCount": 1,
         "sourceKinds": {
           "official_page_thumbnail_candidate": 1
@@ -2050,20 +2666,20 @@
           "candidate_review": 1
         },
         "bestCandidate": {
-          "id": "thumb-9a2810ffd551a13bbe",
-          "thumbnailUrl": "https://www.stubborngoat.ca/wp-content/uploads/2024/06/Stubborn-Goat-May-2024-50.jpg",
-          "sourceUrl": "https://www.stubborngoat.ca/",
+          "id": "thumb-e6315374432684b4d8",
+          "thumbnailUrl": "https://www.unoapp.com/app/source/images/g_shift.png",
+          "sourceUrl": "https://www.bitterend.ca/",
           "sourceKind": "official_page_thumbnail_candidate",
           "reviewState": "candidate_review",
           "rightsStatus": "requires_rights_review",
-          "confidence": "official_page_source_media"
+          "confidence": "official_page_declared_remote_image"
         }
       },
       {
-        "restaurantId": "osm-node-2704749449-the-mellow-mug",
-        "name": "The Mellow Mug",
-        "neighborhood": "Bedford",
-        "website": "https://www.mellowmug.ca",
+        "restaurantId": "osm-node-31794073-tim-hortons",
+        "name": "Tim Hortons",
+        "neighborhood": "North End",
+        "website": "https://www.timhortons.ca/store-locator/store/restaurant_66914",
         "candidateCount": 1,
         "sourceKinds": {
           "official_page_thumbnail_candidate": 1
@@ -2072,20 +2688,20 @@
           "candidate_review": 1
         },
         "bestCandidate": {
-          "id": "thumb-3bbe4c55303a0f6fc7",
-          "thumbnailUrl": "https://static.wixstatic.com/media/2a82fd_23339201de5244fdb0a8523c9042cccb%7Emv2.jpg/v1/fit/w_2500,h_1330,al_c/2a82fd_23339201de5244fdb0a8523c9042cccb%7Emv2.jpg",
-          "sourceUrl": "https://www.mellowmug.ca/",
+          "id": "thumb-bb4262a08c8fccc099",
+          "thumbnailUrl": "https://cdn.sanity.io/images/czqk28jt/prod_th/9a9f5534893f0681e4d77d5d80d7014bd747e529-2880x1658.png",
+          "sourceUrl": "https://www.timhortons.ca/store-locator/store/restaurant_66914",
           "sourceKind": "official_page_thumbnail_candidate",
           "reviewState": "candidate_review",
           "rightsStatus": "requires_rights_review",
-          "confidence": "official_page_source_media"
+          "confidence": "official_page_declared_remote_image"
         }
       },
       {
-        "restaurantId": "osm-node-1254843900-the-mic-mac-bar-and-grill",
-        "name": "The Mic Mac Bar and Grill",
-        "neighborhood": "Dartmouth",
-        "website": "https://micmacbarandgrill.com/",
+        "restaurantId": "osm-node-761848503-tim-hortons",
+        "name": "Tim Hortons",
+        "neighborhood": "Waterfront",
+        "website": "https://www.timhortons.com/",
         "candidateCount": 1,
         "sourceKinds": {
           "official_page_thumbnail_candidate": 1
@@ -2094,42 +2710,20 @@
           "candidate_review": 1
         },
         "bestCandidate": {
-          "id": "thumb-b0055c6cd178852164",
-          "thumbnailUrl": "https://micmacbarandgrill.com/wp-content/uploads/2025/06/1-1.webp",
-          "sourceUrl": "https://micmacbarandgrill.com/",
+          "id": "thumb-247f83cbf3b490b014",
+          "thumbnailUrl": "https://cdn.sanity.io/images/czqk28jt/prod_th/9a9f5534893f0681e4d77d5d80d7014bd747e529-2880x1658.png",
+          "sourceUrl": "https://www.timhortons.com/",
           "sourceKind": "official_page_thumbnail_candidate",
           "reviewState": "candidate_review",
           "rightsStatus": "requires_rights_review",
-          "confidence": "official_page_source_media"
+          "confidence": "official_page_declared_remote_image"
         }
       },
       {
-        "restaurantId": "osm-node-4420631892-two-if-by-sea",
-        "name": "Two if By Sea",
-        "neighborhood": "Dartmouth",
-        "website": "https://www.twoifbyseacafe.ca/",
-        "candidateCount": 1,
-        "sourceKinds": {
-          "official_page_thumbnail_candidate": 1
-        },
-        "reviewStates": {
-          "candidate_review": 1
-        },
-        "bestCandidate": {
-          "id": "thumb-45b9696269a0ef3afc",
-          "thumbnailUrl": "https://twoifbyseacafe.ca/wp-content/uploads/2020/09/easy-seafood-platter-155604-2-300x200.jpg",
-          "sourceUrl": "https://twoifbyseacafe.ca/",
-          "sourceKind": "official_page_thumbnail_candidate",
-          "reviewState": "candidate_review",
-          "rightsStatus": "requires_rights_review",
-          "confidence": "official_page_source_media"
-        }
-      },
-      {
-        "restaurantId": "osm-node-13286456319-water-polo",
-        "name": "Water Polo",
+        "restaurantId": "osm-node-3275051476-tim-hortons",
+        "name": "Tim Hortons",
         "neighborhood": "Downtown",
-        "website": "https://waterpolohfx.ca/",
+        "website": "https://www.timhortons.com/",
         "candidateCount": 1,
         "sourceKinds": {
           "official_page_thumbnail_candidate": 1
@@ -2138,13 +2732,145 @@
           "candidate_review": 1
         },
         "bestCandidate": {
-          "id": "thumb-6e395d5860c3187d54",
-          "thumbnailUrl": "https://images.getbento.com/accounts/15bdd5135b436c32400cc8748f21a401/media/images/68785wp1.jpg?w=1200&fit=crop&auto=compress,format&cs=origin&h=600",
-          "sourceUrl": "https://www.waterpolohfx.ca/menus/",
+          "id": "thumb-61d33711f1b52e0f67",
+          "thumbnailUrl": "https://cdn.sanity.io/images/czqk28jt/prod_th/9a9f5534893f0681e4d77d5d80d7014bd747e529-2880x1658.png",
+          "sourceUrl": "https://www.timhortons.com/",
           "sourceKind": "official_page_thumbnail_candidate",
           "reviewState": "candidate_review",
           "rightsStatus": "requires_rights_review",
-          "confidence": "official_page_source_media"
+          "confidence": "official_page_declared_remote_image"
+        }
+      },
+      {
+        "restaurantId": "osm-way-88610789-tim-hortons",
+        "name": "Tim Hortons",
+        "neighborhood": "South End",
+        "website": "https://www.timhortons.com/",
+        "candidateCount": 1,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 1
+        },
+        "reviewStates": {
+          "candidate_review": 1
+        },
+        "bestCandidate": {
+          "id": "thumb-172018a308e304cc5c",
+          "thumbnailUrl": "https://cdn.sanity.io/images/czqk28jt/prod_th/9a9f5534893f0681e4d77d5d80d7014bd747e529-2880x1658.png",
+          "sourceUrl": "https://www.timhortons.com/",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "official_page_declared_remote_image"
+        }
+      },
+      {
+        "restaurantId": "osm-way-170824377-tim-hortons",
+        "name": "Tim Hortons",
+        "neighborhood": "South End",
+        "website": "https://www.timhortons.com/",
+        "candidateCount": 1,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 1
+        },
+        "reviewStates": {
+          "candidate_review": 1
+        },
+        "bestCandidate": {
+          "id": "thumb-9eb700e1e2e86f9c34",
+          "thumbnailUrl": "https://cdn.sanity.io/images/czqk28jt/prod_th/9a9f5534893f0681e4d77d5d80d7014bd747e529-2880x1658.png",
+          "sourceUrl": "https://www.timhortons.com/",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "official_page_declared_remote_image"
+        }
+      },
+      {
+        "restaurantId": "osm-way-181617786-tim-hortons",
+        "name": "Tim Hortons",
+        "neighborhood": "West End",
+        "website": "https://www.timhortons.ca/store-locator/store/restaurant_67296",
+        "candidateCount": 1,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 1
+        },
+        "reviewStates": {
+          "candidate_review": 1
+        },
+        "bestCandidate": {
+          "id": "thumb-3bf4f6e5f7d2319f5e",
+          "thumbnailUrl": "https://cdn.sanity.io/images/czqk28jt/prod_th/9a9f5534893f0681e4d77d5d80d7014bd747e529-2880x1658.png",
+          "sourceUrl": "https://www.timhortons.ca/store-locator/store/restaurant_67296",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "official_page_declared_remote_image"
+        }
+      },
+      {
+        "restaurantId": "osm-way-181684255-tim-hortons",
+        "name": "Tim Hortons",
+        "neighborhood": "North End",
+        "website": "https://www.timhortons.ca/store-locator/store/restaurant_66291",
+        "candidateCount": 1,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 1
+        },
+        "reviewStates": {
+          "candidate_review": 1
+        },
+        "bestCandidate": {
+          "id": "thumb-1061716ae5b992768a",
+          "thumbnailUrl": "https://cdn.sanity.io/images/czqk28jt/prod_th/9a9f5534893f0681e4d77d5d80d7014bd747e529-2880x1658.png",
+          "sourceUrl": "https://www.timhortons.ca/store-locator/store/restaurant_66291",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "official_page_declared_remote_image"
+        }
+      },
+      {
+        "restaurantId": "osm-way-224130263-tim-hortons",
+        "name": "Tim Hortons",
+        "neighborhood": "Dartmouth",
+        "website": "https://timhortons.ca/",
+        "candidateCount": 1,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 1
+        },
+        "reviewStates": {
+          "candidate_review": 1
+        },
+        "bestCandidate": {
+          "id": "thumb-3df6f5f0f5f53fd248",
+          "thumbnailUrl": "https://cdn.sanity.io/images/czqk28jt/prod_th/9a9f5534893f0681e4d77d5d80d7014bd747e529-2880x1658.png",
+          "sourceUrl": "https://www.timhortons.ca/",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "official_page_declared_remote_image"
+        }
+      },
+      {
+        "restaurantId": "osm-way-452736023-tim-hortons",
+        "name": "Tim Hortons",
+        "neighborhood": "West End",
+        "website": "https://www.timhortons.ca/store-locator/store/restaurant_66191",
+        "candidateCount": 1,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 1
+        },
+        "reviewStates": {
+          "candidate_review": 1
+        },
+        "bestCandidate": {
+          "id": "thumb-168dcd7d6c53722842",
+          "thumbnailUrl": "https://cdn.sanity.io/images/czqk28jt/prod_th/9a9f5534893f0681e4d77d5d80d7014bd747e529-2880x1658.png",
+          "sourceUrl": "https://www.timhortons.ca/store-locator/store/restaurant_66191",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "official_page_declared_remote_image"
         }
       }
     ],
@@ -5161,7 +5887,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -5174,7 +5900,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -5187,7 +5913,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -5200,7 +5926,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -5213,7 +5939,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -5226,7 +5952,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -5239,7 +5965,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -5252,7 +5978,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -5265,7 +5991,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -5278,7 +6004,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -5291,7 +6017,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -5304,7 +6030,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -5317,7 +6043,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -5330,7 +6056,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -5343,7 +6069,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -5356,7 +6082,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -5369,7 +6095,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -5382,7 +6108,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -5395,7 +6121,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -5408,7 +6134,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -5421,7 +6147,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -5434,7 +6160,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -5447,7 +6173,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -5460,7 +6186,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -5473,7 +6199,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -5486,7 +6212,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -5499,7 +6225,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -5512,7 +6238,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -5525,7 +6251,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -5538,7 +6264,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -5551,7 +6277,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -5564,7 +6290,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -5577,7 +6303,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -5590,7 +6316,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -5603,7 +6329,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -5616,7 +6342,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -5629,7 +6355,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -5642,7 +6368,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -5655,7 +6381,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -5668,7 +6394,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -5681,7 +6407,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -5694,7 +6420,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -5707,7 +6433,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -5720,7 +6446,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -5733,7 +6459,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -5746,7 +6472,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -5759,7 +6485,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -5772,7 +6498,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -5785,7 +6511,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -5798,7 +6524,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -5811,7 +6537,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -5824,7 +6550,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -5837,7 +6563,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -5850,7 +6576,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -5863,7 +6589,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -5876,7 +6602,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -5889,7 +6615,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -5902,7 +6628,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -5915,7 +6641,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -5928,7 +6654,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -5941,7 +6667,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -5954,7 +6680,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -5967,7 +6693,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -5980,7 +6706,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -5993,7 +6719,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -6006,7 +6732,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -6019,7 +6745,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -6032,7 +6758,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -6045,7 +6771,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -6058,7 +6784,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -6071,7 +6797,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -6084,7 +6810,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -6097,7 +6823,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -6110,7 +6836,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -6123,7 +6849,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -6136,7 +6862,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -6149,7 +6875,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -6162,7 +6888,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -6175,7 +6901,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -6188,7 +6914,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -6201,7 +6927,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -6214,7 +6940,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -6227,7 +6953,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -6240,7 +6966,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -6253,7 +6979,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -6266,7 +6992,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -6279,7 +7005,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -6292,7 +7018,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "official_feed_media",
-        "observedAt": "2026-09-01T14:41:53.777Z",
+        "observedAt": "2026-09-01T15:25:17.355Z",
         "publishedAt": "2026-09-01T14:22:55.000Z"
       },
       {
@@ -6305,7 +7031,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "official_feed_media",
-        "observedAt": "2026-09-01T14:41:53.777Z",
+        "observedAt": "2026-09-01T15:25:17.355Z",
         "publishedAt": "2026-04-02T11:40:44.000Z"
       },
       {
@@ -6318,7 +7044,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "official_feed_media",
-        "observedAt": "2026-09-01T14:15:19.231Z",
+        "observedAt": "2026-09-01T15:25:17.355Z",
         "publishedAt": "2026-03-03T14:50:36.000Z"
       },
       {
@@ -6331,7 +7057,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "official_feed_media",
-        "observedAt": "2026-09-01T14:15:19.231Z",
+        "observedAt": "2026-09-01T15:25:17.355Z",
         "publishedAt": "2026-01-17T17:26:36.000Z"
       },
       {
@@ -6344,7 +7070,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -6357,7 +7083,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -6370,7 +7096,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -6383,7 +7109,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -6396,7 +7122,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -6409,7 +7135,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -6422,7 +7148,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -6435,7 +7161,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -6448,7 +7174,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -6461,7 +7187,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -6474,7 +7200,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -6487,7 +7213,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -6500,7 +7226,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -6513,7 +7239,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -6526,7 +7252,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -6539,7 +7265,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -6552,7 +7278,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -6565,7 +7291,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -6578,7 +7304,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -6591,7 +7317,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -6604,7 +7330,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -6617,7 +7343,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -6630,7 +7356,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -6643,7 +7369,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -6656,7 +7382,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -6669,7 +7395,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -6682,7 +7408,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -6695,7 +7421,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -6708,7 +7434,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -6721,7 +7447,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -6734,7 +7460,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -6747,7 +7473,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -6760,7 +7486,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -6773,7 +7499,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -6786,7 +7512,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -6799,7 +7525,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -6812,7 +7538,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -6825,7 +7551,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -6838,7 +7564,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -6851,7 +7577,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -6864,7 +7590,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -6877,7 +7603,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -6890,7 +7616,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -6903,7 +7629,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -6916,7 +7642,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -6929,7 +7655,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -6942,7 +7668,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -6955,7 +7681,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -6968,7 +7694,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -6981,7 +7707,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -6994,7 +7720,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -7007,7 +7733,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -7020,7 +7746,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -7033,7 +7759,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -7046,7 +7772,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -7059,7 +7785,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -7072,7 +7798,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -7085,7 +7811,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -7098,7 +7824,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -7111,7 +7837,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -7124,7 +7850,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -7137,7 +7863,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -7150,150 +7876,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
-        "publishedAt": null
-      },
-      {
-        "id": "thumb-3a7bf063e1b192f0eb",
-        "restaurantId": "osm-way-393886756-boston-pizza",
-        "restaurantName": "Boston Pizza",
-        "thumbnailUrl": "https://bostonpizza.com/content/dam/bostonpizza/promotions/2026/kids-cards/kids-01-EN-Desktop.png",
-        "sourceUrl": "https://bostonpizza.com/en/index.html",
-        "sourceKind": "official_page_thumbnail_candidate",
-        "reviewState": "candidate_review",
-        "rightsStatus": "requires_rights_review",
-        "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
-        "publishedAt": null
-      },
-      {
-        "id": "thumb-fed51d2b1e29554a98",
-        "restaurantId": "osm-way-393886756-boston-pizza",
-        "restaurantName": "Boston Pizza",
-        "thumbnailUrl": "https://bostonpizza.com/content/dam/bostonpizza/promotions/2026/kids-cards/kids-02-EN-Mobile.png",
-        "sourceUrl": "https://bostonpizza.com/en/index.html",
-        "sourceKind": "official_page_thumbnail_candidate",
-        "reviewState": "candidate_review",
-        "rightsStatus": "requires_rights_review",
-        "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
-        "publishedAt": null
-      },
-      {
-        "id": "thumb-c6bd88f6117c6fa367",
-        "restaurantId": "osm-way-393886756-boston-pizza",
-        "restaurantName": "Boston Pizza",
-        "thumbnailUrl": "https://bostonpizza.com/content/dam/bostonpizza/promotions/2026/q2-playoffs/Website%20Banner.png",
-        "sourceUrl": "https://bostonpizza.com/en/index.html",
-        "sourceKind": "official_page_thumbnail_candidate",
-        "reviewState": "candidate_review",
-        "rightsStatus": "requires_rights_review",
-        "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
-        "publishedAt": null
-      },
-      {
-        "id": "thumb-df89c9a99848aa41b7",
-        "restaurantId": "osm-way-393886756-boston-pizza",
-        "restaurantName": "Boston Pizza",
-        "thumbnailUrl": "https://bostonpizza.com/content/dam/bostonpizza/promotions/2026/q2-playoffs/Website%20Banner%20-%20Mobile.png",
-        "sourceUrl": "https://bostonpizza.com/en/index.html",
-        "sourceKind": "official_page_thumbnail_candidate",
-        "reviewState": "candidate_review",
-        "rightsStatus": "requires_rights_review",
-        "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
-        "publishedAt": null
-      },
-      {
-        "id": "thumb-00bfb7d452e40f5df4",
-        "restaurantId": "osm-way-393886756-boston-pizza",
-        "restaurantName": "Boston Pizza",
-        "thumbnailUrl": "https://bostonpizza.com/content/dam/bostonpizza/promotions/2026/q3-summer-feature-menu/5000x2115_notext.jpg",
-        "sourceUrl": "https://bostonpizza.com/en/index.html",
-        "sourceKind": "official_page_thumbnail_candidate",
-        "reviewState": "candidate_review",
-        "rightsStatus": "requires_rights_review",
-        "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
-        "publishedAt": null
-      },
-      {
-        "id": "thumb-c212fe54597241cc5b",
-        "restaurantId": "osm-way-393886756-boston-pizza",
-        "restaurantName": "Boston Pizza",
-        "thumbnailUrl": "https://bostonpizza.com/content/dam/bostonpizza/promotions/2026/q3-summer-feature-menu/Summer_Concert1930x1130.jpg",
-        "sourceUrl": "https://bostonpizza.com/en/index.html",
-        "sourceKind": "official_page_thumbnail_candidate",
-        "reviewState": "candidate_review",
-        "rightsStatus": "requires_rights_review",
-        "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
-        "publishedAt": null
-      },
-      {
-        "id": "thumb-29aa7857a7a51851cd",
-        "restaurantId": "osm-way-393886756-boston-pizza",
-        "restaurantName": "Boston Pizza",
-        "thumbnailUrl": "https://bostonpizza.com/content/dam/bostonpizza/promotions/2026/father%27s-day/BP_FathersDay2026_Web_BPcomBanner_5000x2115.png",
-        "sourceUrl": "https://bostonpizza.com/en/index.html",
-        "sourceKind": "official_page_thumbnail_candidate",
-        "reviewState": "candidate_review",
-        "rightsStatus": "requires_rights_review",
-        "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
-        "publishedAt": null
-      },
-      {
-        "id": "thumb-7f85e0382d1dc00e5e",
-        "restaurantId": "osm-way-393886756-boston-pizza",
-        "restaurantName": "Boston Pizza",
-        "thumbnailUrl": "https://bostonpizza.com/content/dam/bostonpizza/promotions/2026/father%27s-day/BP_FathersDay2026_Web_BPcomBanner_mobile.png",
-        "sourceUrl": "https://bostonpizza.com/en/index.html",
-        "sourceKind": "official_page_thumbnail_candidate",
-        "reviewState": "candidate_review",
-        "rightsStatus": "requires_rights_review",
-        "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
-        "publishedAt": null
-      },
-      {
-        "id": "thumb-ea2ef5b36472af0711",
-        "restaurantId": "osm-way-393886756-boston-pizza",
-        "restaurantName": "Boston Pizza",
-        "thumbnailUrl": "https://bostonpizza.com/content/dam/bostonpizza/promotions/2026/q2-playoffs/Countdown%20Banner.png",
-        "sourceUrl": "https://bostonpizza.com/en/index.html",
-        "sourceKind": "official_page_thumbnail_candidate",
-        "reviewState": "candidate_review",
-        "rightsStatus": "requires_rights_review",
-        "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
-        "publishedAt": null
-      },
-      {
-        "id": "thumb-6e9caaf36a4d3607fc",
-        "restaurantId": "osm-way-393886756-boston-pizza",
-        "restaurantName": "Boston Pizza",
-        "thumbnailUrl": "https://bostonpizza.com/content/dam/bostonpizza/promotions/2026/q1-5---main-menu-update/Q1.5%20winter%20Cravings%205000x1300.png",
-        "sourceUrl": "https://bostonpizza.com/en/index.html",
-        "sourceKind": "official_page_thumbnail_candidate",
-        "reviewState": "candidate_review",
-        "rightsStatus": "requires_rights_review",
-        "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
-        "publishedAt": null
-      },
-      {
-        "id": "thumb-da131d9a417ad22c7f",
-        "restaurantId": "osm-way-393886756-boston-pizza",
-        "restaurantName": "Boston Pizza",
-        "thumbnailUrl": "https://bostonpizza.com/content/dam/bostonpizza/promotions/2026/q1-5---main-menu-update/Q1.5%20Winter%20Cravings%20Banner%20-%20App%205000x2500.png",
-        "sourceUrl": "https://bostonpizza.com/en/index.html",
-        "sourceKind": "official_page_thumbnail_candidate",
-        "reviewState": "candidate_review",
-        "rightsStatus": "requires_rights_review",
-        "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -7306,7 +7889,124 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
+        "publishedAt": null
+      },
+      {
+        "id": "thumb-fed51d2b1e29554a98",
+        "restaurantId": "osm-way-393886756-boston-pizza",
+        "restaurantName": "Boston Pizza",
+        "thumbnailUrl": "https://bostonpizza.com/content/dam/bostonpizza/promotions/2026/kids-cards/kids-02-EN-Mobile.png",
+        "sourceUrl": "https://bostonpizza.com/en/index.html",
+        "sourceKind": "official_page_thumbnail_candidate",
+        "reviewState": "candidate_review",
+        "rightsStatus": "requires_rights_review",
+        "confidence": "same_host_official_page_image",
+        "observedAt": "2026-09-01T15:30:19.949Z",
+        "publishedAt": null
+      },
+      {
+        "id": "thumb-c6bd88f6117c6fa367",
+        "restaurantId": "osm-way-393886756-boston-pizza",
+        "restaurantName": "Boston Pizza",
+        "thumbnailUrl": "https://bostonpizza.com/content/dam/bostonpizza/promotions/2026/q2-playoffs/Website%20Banner.png",
+        "sourceUrl": "https://bostonpizza.com/en/index.html",
+        "sourceKind": "official_page_thumbnail_candidate",
+        "reviewState": "candidate_review",
+        "rightsStatus": "requires_rights_review",
+        "confidence": "same_host_official_page_image",
+        "observedAt": "2026-09-01T15:30:19.949Z",
+        "publishedAt": null
+      },
+      {
+        "id": "thumb-df89c9a99848aa41b7",
+        "restaurantId": "osm-way-393886756-boston-pizza",
+        "restaurantName": "Boston Pizza",
+        "thumbnailUrl": "https://bostonpizza.com/content/dam/bostonpizza/promotions/2026/q2-playoffs/Website%20Banner%20-%20Mobile.png",
+        "sourceUrl": "https://bostonpizza.com/en/index.html",
+        "sourceKind": "official_page_thumbnail_candidate",
+        "reviewState": "candidate_review",
+        "rightsStatus": "requires_rights_review",
+        "confidence": "same_host_official_page_image",
+        "observedAt": "2026-09-01T15:30:19.949Z",
+        "publishedAt": null
+      },
+      {
+        "id": "thumb-00bfb7d452e40f5df4",
+        "restaurantId": "osm-way-393886756-boston-pizza",
+        "restaurantName": "Boston Pizza",
+        "thumbnailUrl": "https://bostonpizza.com/content/dam/bostonpizza/promotions/2026/q3-summer-feature-menu/5000x2115_notext.jpg",
+        "sourceUrl": "https://bostonpizza.com/en/index.html",
+        "sourceKind": "official_page_thumbnail_candidate",
+        "reviewState": "candidate_review",
+        "rightsStatus": "requires_rights_review",
+        "confidence": "same_host_official_page_image",
+        "observedAt": "2026-09-01T15:30:19.949Z",
+        "publishedAt": null
+      },
+      {
+        "id": "thumb-c212fe54597241cc5b",
+        "restaurantId": "osm-way-393886756-boston-pizza",
+        "restaurantName": "Boston Pizza",
+        "thumbnailUrl": "https://bostonpizza.com/content/dam/bostonpizza/promotions/2026/q3-summer-feature-menu/Summer_Concert1930x1130.jpg",
+        "sourceUrl": "https://bostonpizza.com/en/index.html",
+        "sourceKind": "official_page_thumbnail_candidate",
+        "reviewState": "candidate_review",
+        "rightsStatus": "requires_rights_review",
+        "confidence": "same_host_official_page_image",
+        "observedAt": "2026-09-01T15:30:19.949Z",
+        "publishedAt": null
+      },
+      {
+        "id": "thumb-29aa7857a7a51851cd",
+        "restaurantId": "osm-way-393886756-boston-pizza",
+        "restaurantName": "Boston Pizza",
+        "thumbnailUrl": "https://bostonpizza.com/content/dam/bostonpizza/promotions/2026/father%27s-day/BP_FathersDay2026_Web_BPcomBanner_5000x2115.png",
+        "sourceUrl": "https://bostonpizza.com/en/index.html",
+        "sourceKind": "official_page_thumbnail_candidate",
+        "reviewState": "candidate_review",
+        "rightsStatus": "requires_rights_review",
+        "confidence": "same_host_official_page_image",
+        "observedAt": "2026-09-01T15:30:19.949Z",
+        "publishedAt": null
+      },
+      {
+        "id": "thumb-7f85e0382d1dc00e5e",
+        "restaurantId": "osm-way-393886756-boston-pizza",
+        "restaurantName": "Boston Pizza",
+        "thumbnailUrl": "https://bostonpizza.com/content/dam/bostonpizza/promotions/2026/father%27s-day/BP_FathersDay2026_Web_BPcomBanner_mobile.png",
+        "sourceUrl": "https://bostonpizza.com/en/index.html",
+        "sourceKind": "official_page_thumbnail_candidate",
+        "reviewState": "candidate_review",
+        "rightsStatus": "requires_rights_review",
+        "confidence": "same_host_official_page_image",
+        "observedAt": "2026-09-01T15:30:19.949Z",
+        "publishedAt": null
+      },
+      {
+        "id": "thumb-6e9caaf36a4d3607fc",
+        "restaurantId": "osm-way-393886756-boston-pizza",
+        "restaurantName": "Boston Pizza",
+        "thumbnailUrl": "https://bostonpizza.com/content/dam/bostonpizza/promotions/2026/q1-5---main-menu-update/Q1.5%20winter%20Cravings%205000x1300.png",
+        "sourceUrl": "https://bostonpizza.com/en/index.html",
+        "sourceKind": "official_page_thumbnail_candidate",
+        "reviewState": "candidate_review",
+        "rightsStatus": "requires_rights_review",
+        "confidence": "same_host_official_page_image",
+        "observedAt": "2026-09-01T15:30:19.949Z",
+        "publishedAt": null
+      },
+      {
+        "id": "thumb-da131d9a417ad22c7f",
+        "restaurantId": "osm-way-393886756-boston-pizza",
+        "restaurantName": "Boston Pizza",
+        "thumbnailUrl": "https://bostonpizza.com/content/dam/bostonpizza/promotions/2026/q1-5---main-menu-update/Q1.5%20Winter%20Cravings%20Banner%20-%20App%205000x2500.png",
+        "sourceUrl": "https://bostonpizza.com/en/index.html",
+        "sourceKind": "official_page_thumbnail_candidate",
+        "reviewState": "candidate_review",
+        "rightsStatus": "requires_rights_review",
+        "confidence": "same_host_official_page_image",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -7319,7 +8019,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -7332,7 +8032,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -7345,7 +8045,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -7358,7 +8058,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -7371,7 +8071,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -7384,7 +8084,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -7397,7 +8097,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -7410,7 +8110,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -7423,7 +8123,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -7436,7 +8136,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -7449,7 +8149,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -7462,7 +8162,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -7475,7 +8175,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -7488,7 +8188,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -7501,7 +8201,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -7514,7 +8214,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -7527,7 +8227,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -7540,7 +8240,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -7553,7 +8253,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -7566,7 +8266,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -7579,7 +8279,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -7592,7 +8292,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -7605,7 +8305,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -7618,7 +8318,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -7631,7 +8331,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -7644,7 +8344,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -7657,7 +8357,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -7670,7 +8370,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -7683,7 +8383,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -7696,7 +8396,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -7709,7 +8409,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -7722,7 +8422,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -7735,7 +8435,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -7748,7 +8448,150 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
+        "publishedAt": null
+      },
+      {
+        "id": "thumb-e1dae3fbbec2554e2f",
+        "restaurantId": "osm-way-393886756-boston-pizza",
+        "restaurantName": "Boston Pizza",
+        "thumbnailUrl": "https://bostonpizza.com/content/dam/bostonpizza/promotions/2026/$15-fast-lunch/Burger%20Mobile%20-%202500x2115.png",
+        "sourceUrl": "https://bostonpizza.com/en/promotions/lunch-menu.html",
+        "sourceKind": "official_page_thumbnail_candidate",
+        "reviewState": "candidate_review",
+        "rightsStatus": "requires_rights_review",
+        "confidence": "same_host_official_page_image",
+        "observedAt": "2026-09-01T15:30:19.949Z",
+        "publishedAt": null
+      },
+      {
+        "id": "thumb-6e1b2894ba2bef3173",
+        "restaurantId": "osm-way-393886756-boston-pizza",
+        "restaurantName": "Boston Pizza",
+        "thumbnailUrl": "https://bostonpizza.com/content/dam/bostonpizza/promotions/2024/lunch-menu/Lunch_IndyDeluxePizza_1440x800.png",
+        "sourceUrl": "https://bostonpizza.com/en/promotions/lunch-menu.html",
+        "sourceKind": "official_page_thumbnail_candidate",
+        "reviewState": "candidate_review",
+        "rightsStatus": "requires_rights_review",
+        "confidence": "same_host_official_page_image",
+        "observedAt": "2026-09-01T15:30:19.949Z",
+        "publishedAt": null
+      },
+      {
+        "id": "thumb-e80d612acf0f19d2d9",
+        "restaurantId": "osm-way-393886756-boston-pizza",
+        "restaurantName": "Boston Pizza",
+        "thumbnailUrl": "https://bostonpizza.com/content/dam/bostonpizza/promotions/2024/lunch-menu/Lunch_IndyMediterraneanPizza_1440x800.png",
+        "sourceUrl": "https://bostonpizza.com/en/promotions/lunch-menu.html",
+        "sourceKind": "official_page_thumbnail_candidate",
+        "reviewState": "candidate_review",
+        "rightsStatus": "requires_rights_review",
+        "confidence": "same_host_official_page_image",
+        "observedAt": "2026-09-01T15:30:19.949Z",
+        "publishedAt": null
+      },
+      {
+        "id": "thumb-5738480abf3235ec24",
+        "restaurantId": "osm-way-393886756-boston-pizza",
+        "restaurantName": "Boston Pizza",
+        "thumbnailUrl": "https://bostonpizza.com/content/dam/bostonpizza/promotions/2025/lunch-menu/Lunch_ChickenPecanSalad_1440x800.png",
+        "sourceUrl": "https://bostonpizza.com/en/promotions/lunch-menu.html",
+        "sourceKind": "official_page_thumbnail_candidate",
+        "reviewState": "candidate_review",
+        "rightsStatus": "requires_rights_review",
+        "confidence": "same_host_official_page_image",
+        "observedAt": "2026-09-01T15:30:19.949Z",
+        "publishedAt": null
+      },
+      {
+        "id": "thumb-67e479c5fec6981502",
+        "restaurantId": "osm-way-393886756-boston-pizza",
+        "restaurantName": "Boston Pizza",
+        "thumbnailUrl": "https://bostonpizza.com/content/dam/bostonpizza/promotions/2024/lunch-menu/Lunch_BakedSevenCheeseRavioli_1440x800.png",
+        "sourceUrl": "https://bostonpizza.com/en/promotions/lunch-menu.html",
+        "sourceKind": "official_page_thumbnail_candidate",
+        "reviewState": "candidate_review",
+        "rightsStatus": "requires_rights_review",
+        "confidence": "same_host_official_page_image",
+        "observedAt": "2026-09-01T15:30:19.949Z",
+        "publishedAt": null
+      },
+      {
+        "id": "thumb-801e37a92ae3367f0b",
+        "restaurantId": "osm-way-393886756-boston-pizza",
+        "restaurantName": "Boston Pizza",
+        "thumbnailUrl": "https://bostonpizza.com/content/dam/bostonpizza/promotions/2024/lunch-menu/Lunch_ClassicBurger_1440x800.png",
+        "sourceUrl": "https://bostonpizza.com/en/promotions/lunch-menu.html",
+        "sourceKind": "official_page_thumbnail_candidate",
+        "reviewState": "candidate_review",
+        "rightsStatus": "requires_rights_review",
+        "confidence": "same_host_official_page_image",
+        "observedAt": "2026-09-01T15:30:19.949Z",
+        "publishedAt": null
+      },
+      {
+        "id": "thumb-4d8cc5d5d59509ab9f",
+        "restaurantId": "osm-way-393886756-boston-pizza",
+        "restaurantName": "Boston Pizza",
+        "thumbnailUrl": "https://bostonpizza.com/content/dam/bostonpizza/promotions/2025/lunch-menu/LunchQuesadillas_1440x800.png",
+        "sourceUrl": "https://bostonpizza.com/en/promotions/lunch-menu.html",
+        "sourceKind": "official_page_thumbnail_candidate",
+        "reviewState": "candidate_review",
+        "rightsStatus": "requires_rights_review",
+        "confidence": "same_host_official_page_image",
+        "observedAt": "2026-09-01T15:30:19.949Z",
+        "publishedAt": null
+      },
+      {
+        "id": "thumb-c05064be9ccc4b832a",
+        "restaurantId": "osm-way-393886756-boston-pizza",
+        "restaurantName": "Boston Pizza",
+        "thumbnailUrl": "https://bostonpizza.com/content/dam/bostonpizza/promotions/2025/lunch-menu/LunchMenu_Brownie_1680x1280.png",
+        "sourceUrl": "https://bostonpizza.com/en/promotions/lunch-menu.html",
+        "sourceKind": "official_page_thumbnail_candidate",
+        "reviewState": "candidate_review",
+        "rightsStatus": "requires_rights_review",
+        "confidence": "same_host_official_page_image",
+        "observedAt": "2026-09-01T15:30:19.949Z",
+        "publishedAt": null
+      },
+      {
+        "id": "thumb-c98c5af7d43c674f78",
+        "restaurantId": "osm-way-393886756-boston-pizza",
+        "restaurantName": "Boston Pizza",
+        "thumbnailUrl": "https://bostonpizza.com/content/dam/bostonpizza/promotions/2025/lunch-menu/LunchMenu_LandingPage_1300x250_v2.png",
+        "sourceUrl": "https://bostonpizza.com/en/promotions/lunch-menu.html",
+        "sourceKind": "official_page_thumbnail_candidate",
+        "reviewState": "candidate_review",
+        "rightsStatus": "requires_rights_review",
+        "confidence": "same_host_official_page_image",
+        "observedAt": "2026-09-01T15:30:19.949Z",
+        "publishedAt": null
+      },
+      {
+        "id": "thumb-553f1e51b7624bf858",
+        "restaurantId": "osm-way-393886756-boston-pizza",
+        "restaurantName": "Boston Pizza",
+        "thumbnailUrl": "https://bostonpizza.com/en/promotions/lunch-menu.html#clip-path",
+        "sourceUrl": "https://bostonpizza.com/en/promotions/lunch-menu.html",
+        "sourceKind": "official_page_thumbnail_candidate",
+        "reviewState": "candidate_review",
+        "rightsStatus": "requires_rights_review",
+        "confidence": "same_host_official_page_image",
+        "observedAt": "2026-09-01T15:30:19.949Z",
+        "publishedAt": null
+      },
+      {
+        "id": "thumb-fdeae7868f27630e8b",
+        "restaurantId": "osm-way-393886756-boston-pizza",
+        "restaurantName": "Boston Pizza",
+        "thumbnailUrl": "https://bostonpizza.com/en/promotions/lunch-menu.html#b",
+        "sourceUrl": "https://bostonpizza.com/en/promotions/lunch-menu.html",
+        "sourceKind": "official_page_thumbnail_candidate",
+        "reviewState": "candidate_review",
+        "rightsStatus": "requires_rights_review",
+        "confidence": "same_host_official_page_image",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -7761,7 +8604,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -7774,7 +8617,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -7787,7 +8630,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -7800,7 +8643,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -7813,7 +8656,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -7826,7 +8669,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -7839,7 +8682,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -7852,7 +8695,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -7865,7 +8708,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -7878,7 +8721,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -7891,7 +8734,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -7904,7 +8747,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -7917,7 +8760,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -7930,7 +8773,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -7943,7 +8786,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -7956,7 +8799,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -7969,7 +8812,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -7982,7 +8825,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -7995,7 +8838,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -8008,7 +8851,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -8021,7 +8864,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -8034,7 +8877,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -8047,7 +8890,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -8060,7 +8903,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -8073,7 +8916,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -8086,7 +8929,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -8099,7 +8942,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -8112,7 +8955,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -8125,7 +8968,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -8138,7 +8981,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -8151,7 +8994,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -8164,7 +9007,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -8177,7 +9020,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -8190,7 +9033,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -8203,7 +9046,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -8216,7 +9059,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -8229,7 +9072,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -8242,7 +9085,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -8255,7 +9098,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -8268,7 +9111,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -8281,7 +9124,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -8294,7 +9137,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -8307,7 +9150,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -8320,7 +9163,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -8333,7 +9176,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -8346,7 +9189,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -8359,7 +9202,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -8372,7 +9215,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -8385,7 +9228,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -8398,7 +9241,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -8411,7 +9254,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -8424,7 +9267,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -8437,7 +9280,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -8450,7 +9293,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -8463,7 +9306,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -8476,7 +9319,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -8489,7 +9332,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -8502,7 +9345,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -8515,7 +9358,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -8528,7 +9371,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -8541,7 +9384,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -8554,7 +9397,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -8567,7 +9410,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -8580,7 +9423,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -8593,7 +9436,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -8606,7 +9449,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -8619,7 +9462,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -8632,7 +9475,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -8645,7 +9488,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -8658,7 +9501,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -8671,7 +9514,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -8684,7 +9527,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -8697,7 +9540,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -8710,7 +9553,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -8723,7 +9566,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -8736,7 +9579,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -8749,7 +9592,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -8762,7 +9605,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -8775,7 +9618,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -8788,7 +9631,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -8801,7 +9644,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -8814,7 +9657,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -8827,7 +9670,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -8840,7 +9683,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -8853,7 +9696,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -8866,7 +9709,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -8879,7 +9722,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -8892,7 +9735,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -8905,7 +9748,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -8918,7 +9761,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       },
       {
@@ -8931,124 +9774,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
-        "publishedAt": null
-      },
-      {
-        "id": "thumb-f4c7dfc96bd5635591",
-        "restaurantId": "osm-node-3799422457-cora",
-        "restaurantName": "Cora",
-        "thumbnailUrl": "https://www.chezcora.com/wp-content/uploads/2021/08/menu-cora-enfants.jpg",
-        "sourceUrl": "https://www.chezcora.com/en/menu/",
-        "sourceKind": "official_page_thumbnail_candidate",
-        "reviewState": "candidate_review",
-        "rightsStatus": "requires_rights_review",
-        "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
-        "publishedAt": null
-      },
-      {
-        "id": "thumb-1556ad0c1075ac3647",
-        "restaurantId": "osm-node-3799422457-cora",
-        "restaurantName": "Cora",
-        "thumbnailUrl": "https://www.chezcora.com/wp-content/uploads/2022/12/SiteWeb_levetot.jpg",
-        "sourceUrl": "https://www.chezcora.com/en/menu/",
-        "sourceKind": "official_page_thumbnail_candidate",
-        "reviewState": "candidate_review",
-        "rightsStatus": "requires_rights_review",
-        "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
-        "publishedAt": null
-      },
-      {
-        "id": "thumb-97cb2b875eb917766a",
-        "restaurantId": "osm-node-3799422457-cora",
-        "restaurantName": "Cora",
-        "thumbnailUrl": "https://www.chezcora.com/wp-content/uploads/2024/11/Boisson_hiver2025.jpg",
-        "sourceUrl": "https://www.chezcora.com/en/menu/",
-        "sourceKind": "official_page_thumbnail_candidate",
-        "reviewState": "candidate_review",
-        "rightsStatus": "requires_rights_review",
-        "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
-        "publishedAt": null
-      },
-      {
-        "id": "thumb-eed239b59b7fc005a5",
-        "restaurantId": "osm-node-3799422457-cora",
-        "restaurantName": "Cora",
-        "thumbnailUrl": "https://www.chezcora.com/en/menu/crepes/r",
-        "sourceUrl": "https://www.chezcora.com/en/menu/crepes/",
-        "sourceKind": "official_page_thumbnail_candidate",
-        "reviewState": "candidate_review",
-        "rightsStatus": "requires_rights_review",
-        "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
-        "publishedAt": null
-      },
-      {
-        "id": "thumb-df7b507b4c18fc37b8",
-        "restaurantId": "osm-node-11867490075-cora",
-        "restaurantName": "Cora",
-        "thumbnailUrl": "https://www.chezcora.com/wp-content/uploads/2026/07/268_INT26-CouponEnfantGratuit_Entete.jpg",
-        "sourceUrl": "https://www.chezcora.com/en/",
-        "sourceKind": "official_page_thumbnail_candidate",
-        "reviewState": "candidate_review",
-        "rightsStatus": "requires_rights_review",
-        "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
-        "publishedAt": null
-      },
-      {
-        "id": "thumb-3c25597decc44daa3b",
-        "restaurantId": "osm-node-11867490075-cora",
-        "restaurantName": "Cora",
-        "thumbnailUrl": "https://www.chezcora.com/wp-content/uploads/2022/01/PromoAccueil_cafe.jpg",
-        "sourceUrl": "https://www.chezcora.com/en/",
-        "sourceKind": "official_page_thumbnail_candidate",
-        "reviewState": "candidate_review",
-        "rightsStatus": "requires_rights_review",
-        "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
-        "publishedAt": null
-      },
-      {
-        "id": "thumb-d2d4daccfc64265261",
-        "restaurantId": "osm-node-11867490075-cora",
-        "restaurantName": "Cora",
-        "thumbnailUrl": "https://www.chezcora.com/wp-content/uploads/2026/06/130_INT26_MarcheCora_SiteWeb_EN.jpg",
-        "sourceUrl": "https://www.chezcora.com/en/",
-        "sourceKind": "official_page_thumbnail_candidate",
-        "reviewState": "candidate_review",
-        "rightsStatus": "requires_rights_review",
-        "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
-        "publishedAt": null
-      },
-      {
-        "id": "thumb-f4d7826ec6b5d4d892",
-        "restaurantId": "osm-node-11867490075-cora",
-        "restaurantName": "Cora",
-        "thumbnailUrl": "https://www.chezcora.com/wp-content/uploads/2021/11/cora-menu-dejeuner-1024x576.jpg",
-        "sourceUrl": "https://www.chezcora.com/en/",
-        "sourceKind": "official_page_thumbnail_candidate",
-        "reviewState": "candidate_review",
-        "rightsStatus": "requires_rights_review",
-        "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
-        "publishedAt": null
-      },
-      {
-        "id": "thumb-fcf2bedeaa8d16e605",
-        "restaurantId": "osm-node-11867490075-cora",
-        "restaurantName": "Cora",
-        "thumbnailUrl": "https://www.chezcora.com/wp-content/uploads/2021/11/cora-menu-enfant.png",
-        "sourceUrl": "https://www.chezcora.com/en/",
-        "sourceKind": "official_page_thumbnail_candidate",
-        "reviewState": "candidate_review",
-        "rightsStatus": "requires_rights_review",
-        "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-01T14:27:43.498Z",
+        "observedAt": "2026-09-01T15:30:19.949Z",
         "publishedAt": null
       }
     ]
@@ -9095,9 +9821,24 @@
       "reason": "fetch failed"
     },
     {
+      "restaurantId": "osm-node-8600605850-barburrito",
+      "pageUrl": "https://www.doordash.com/store/barburrito-b-dartmouth-1272107/en-CA/?utm_campaign=gpa",
+      "reason": "http_403"
+    },
+    {
+      "restaurantId": "osm-node-10665783054-ben-and-florentine",
+      "pageUrl": "https://benetflorentine.com/en/menu",
+      "reason": "http_404"
+    },
+    {
       "restaurantId": "osm-node-9089629991-cafe-lara",
       "pageUrl": "https://cafelara.ca/",
       "reason": "fetch failed"
+    },
+    {
+      "restaurantId": "osm-node-11751643550-cafe-lunette",
+      "pageUrl": "https://www.opentable.ca/booking/restref/availability?lang=en-CA&correlationId=a802e0e6-ee0e-4402-b5a5-aaca6d40dd38&restRef=1226047&otSource=Restaurant%20website",
+      "reason": "http_403"
     },
     {
       "restaurantId": "osm-node-4421124794-cafe-marco-polo",
@@ -9270,6 +10011,16 @@
       "reason": "fetch failed"
     },
     {
+      "restaurantId": "osm-node-7393838887-new-wing-wah",
+      "pageUrl": "https://newwingwah.ca/",
+      "reason": "timeout"
+    },
+    {
+      "restaurantId": "osm-node-7393838887-new-wing-wah",
+      "pageUrl": "https://newwingwah.ca/menu.html",
+      "reason": "timeout"
+    },
+    {
       "restaurantId": "osm-node-4965917621-patrons-golf-and-lounge",
       "pageUrl": "https://www.patronsgolflounge.ca/",
       "reason": "fetch failed"
@@ -9348,6 +10099,81 @@
       "restaurantId": "osm-node-11612206582-swaad-sagaa-indian-cuisine-incorporated",
       "pageUrl": "https://www.doordash.com/en-CA/store/swaad-sagaa-indian-cuisine-inc-25845814/?srsltid=AfmBOoonRIIB0sZoJ8vcRRr98mKDVHOD9NXv0KshcXzxZQEV7rdoIgOM",
       "reason": "http_403"
+    },
+    {
+      "restaurantId": "osm-node-11612206582-swaad-sagaa-indian-cuisine-incorporated",
+      "pageUrl": "https://www.swaadsagaa.com/tel&#x3A;9023996229",
+      "reason": "http_404"
+    },
+    {
+      "restaurantId": "osm-node-9416778099-tarek-s-cafe",
+      "pageUrl": "http://www.tarekscafe.ca/",
+      "reason": "fetch failed"
+    },
+    {
+      "restaurantId": "osm-node-9892533621-terra-cafe",
+      "pageUrl": "https://terracafe.ca/menu-1-2",
+      "reason": "http_404"
+    },
+    {
+      "restaurantId": "osm-node-5151935621-the-bedford-basin-market",
+      "pageUrl": "https://www.bedfordbasinmarket.com/",
+      "reason": "fetch failed"
+    },
+    {
+      "restaurantId": "osm-node-1921015225-the-brooklyn-warehouse",
+      "pageUrl": "https://brooklynwarehouse.ca/",
+      "reason": "http_403"
+    },
+    {
+      "restaurantId": "osm-node-5157477122-the-butcher-s-block-pub-and-eatery",
+      "pageUrl": "http://www.butchersblockpub.com/",
+      "reason": "http_403"
+    },
+    {
+      "restaurantId": "osm-node-3789835257-the-juice-press",
+      "pageUrl": "https://bishopslanding.com/dining/juice-press-inc/",
+      "reason": "http_404"
+    },
+    {
+      "restaurantId": "osm-node-5001886823-the-keg",
+      "pageUrl": "https://www.opentable.ca/restref/client/?restref=269812&lang=en-CA&corrid=23ed6e1b-92ac-4ee2-b80a-63ca393a1432",
+      "reason": "http_403"
+    },
+    {
+      "restaurantId": "osm-node-1254843900-the-mic-mac-bar-and-grill",
+      "pageUrl": "https://www.opentable.ca/r/mic-mac-bar-and-grill-reservations-dartmouth?restref=342265&lang=en-CA&ot_source=Restaurant%20website",
+      "reason": "http_403"
+    },
+    {
+      "restaurantId": "osm-node-1689418207-the-old-triangle-irish-pub",
+      "pageUrl": "https://www.oldtriangle.com/welcome/",
+      "reason": "http_404"
+    },
+    {
+      "restaurantId": "osm-node-886747513-trident-booksellers-and-cafe",
+      "pageUrl": "https://tridenthalifax.ca/event/live-music-gourmet-club/",
+      "reason": "timeout"
+    },
+    {
+      "restaurantId": "osm-node-886747513-trident-booksellers-and-cafe",
+      "pageUrl": "https://tridenthalifax.ca/event/live-music-kate-ferguson/",
+      "reason": "timeout"
+    },
+    {
+      "restaurantId": "osm-node-13286458034-vandal-doughnuts",
+      "pageUrl": "https://vandaldoughnuts.ca/",
+      "reason": "fetch failed"
+    },
+    {
+      "restaurantId": "osm-node-5150731134-way2roll",
+      "pageUrl": "https://way2roll.ca/",
+      "reason": "fetch failed"
+    },
+    {
+      "restaurantId": "osm-way-181624111-wendy-s",
+      "pageUrl": "https://menu.wendys.com/",
+      "reason": "http_404"
     }
   ]
 }

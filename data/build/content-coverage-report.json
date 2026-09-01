@@ -1,8 +1,8 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-01T14:43:28.082Z",
-  "sourceCommitSha": "286f4936a7607d3456c6abe361f98d191c4535cb",
-  "baselineCommitHint": "286f4936a7607d3456c6abe361f98d191c4535cb",
+  "generatedAt": "2026-09-01T15:38:22.153Z",
+  "sourceCommitSha": "d6aa9762bceef7fa6441c56421ee231a121a484a",
+  "baselineCommitHint": "d6aa9762bceef7fa6441c56421ee231a121a484a",
   "definitions": {
     "canonicalPlaces": "Current user-facing merge of catalog restaurants plus reviewed discovery records, matching the app's existing name-based discovery merge behavior.",
     "verifiedOfficialWebsite": "Official-site fetch returned a successful HTTP status or the first-party discovery layer successfully fetched the restaurant-owned site.",
@@ -30,21 +30,21 @@
     "withVerifiedOfficialWebsite": 240,
     "withInspectionMatch": 496,
     "withMenuLink": 166,
-    "withVerifiedMenuLink": 130,
+    "withVerifiedMenuLink": 137,
     "withSpecials": 58,
-    "withVerifiedSpecials": 37,
+    "withVerifiedSpecials": 39,
     "withReservationLink": 63,
     "withOnlineOrderingLink": 80,
     "withEventEvidence": 47,
     "withStructuredUpcomingEvents": 2,
-    "withAtLeastOneSocialProfile": 158,
-    "withAnySocialOrLinkHub": 158,
+    "withAtLeastOneSocialProfile": 159,
+    "withAnySocialOrLinkHub": 159,
     "socialByPlatform": {
-      "instagram": 146,
-      "facebook": 139,
+      "instagram": 147,
+      "facebook": 140,
       "tiktok": 16,
       "threads": 0,
-      "x": 64,
+      "x": 65,
       "youtube": 13,
       "linkedin": 6,
       "bluesky": 2,
@@ -85,21 +85,21 @@
       "discoveryNameOnlyMerges": 2
     },
     "structuredFactLayer": {
-      "generatedAt": "2026-09-01T14:18:19.035Z",
-      "checkedPlaces": 221,
+      "generatedAt": "2026-09-01T15:26:25.556Z",
+      "checkedPlaces": 229,
       "sourceFailures": 0,
-      "records": 168,
+      "records": 176,
       "hours": 13,
-      "phone": 73,
-      "email": 8,
-      "address": 29,
-      "features": 127,
-      "menus": 138,
-      "reservations": 50,
-      "ordering": 77
+      "phone": 77,
+      "email": 10,
+      "address": 31,
+      "features": 131,
+      "menus": 143,
+      "reservations": 55,
+      "ordering": 78
     },
     "structuredSpecialLayer": {
-      "generatedAt": "2026-09-01T14:42:39.396Z",
+      "generatedAt": "2026-09-01T15:30:02.868Z",
       "count": 80,
       "verifiedCurrent": 49,
       "recurringVerify": 5,
@@ -114,14 +114,14 @@
     "verifiedOfficialWebsite": 32,
     "inspection": 66.1,
     "menu": 22.1,
-    "verifiedMenu": 17.3,
+    "verifiedMenu": 18.3,
     "specials": 7.7,
-    "verifiedSpecials": 4.9,
+    "verifiedSpecials": 5.2,
     "reservations": 8.4,
     "ordering": 10.7,
     "events": 6.3,
     "structuredUpcomingEvents": 0.3,
-    "social": 21.1,
+    "social": 21.2,
     "phone": 37.1,
     "hours": 32.7,
     "coordinates": 98.5,
@@ -133,14 +133,14 @@
     "linkHub": 0
   },
   "socialAudit": {
-    "placesWithSocial": 158,
+    "placesWithSocial": 159,
     "placesWithLinkHub": 0,
     "platformPlaceCounts": {
-      "instagram": 146,
-      "facebook": 139,
+      "instagram": 147,
+      "facebook": 140,
       "tiktok": 16,
       "threads": 0,
-      "x": 64,
+      "x": 65,
       "youtube": 13,
       "linkedin": 6,
       "bluesky": 2,
@@ -152,13 +152,13 @@
       "campsite": 0,
       "bento": 0
     },
-    "profileAssociations": 410,
+    "profileAssociations": 413,
     "sharedProfileKeys": 39,
     "sharedBrandOnlyPlaces": 32,
     "candidatePlacesAwaitingVerification": 0,
     "staleSocialVerificationPlaces": 0,
     "noWebsitePlaces": 448,
-    "websiteButNoSocialPlaces": 146,
+    "websiteButNoSocialPlaces": 145,
     "priorityGapQueue": {
       "websiteButNoSocial": [
         {
@@ -190,11 +190,6 @@
           "id": "osm-node-4474954245-bai-wei-grill-bar",
           "name": "Bai Wei Grill Bar",
           "website": "http://baiweigrillbar.com"
-        },
-        {
-          "id": "osm-node-10665783054-ben-and-florentine",
-          "name": "Ben & Florentine",
-          "website": "https://benetflorentine.com/"
         },
         {
           "id": "osm-node-13141457102-bitter-end-martini-bar-and-restaurant",
@@ -660,6 +655,11 @@
           "id": "osm-node-7082566320-springhouse-market",
           "name": "Springhouse Market",
           "website": "https://eatspringhouse.com"
+        },
+        {
+          "id": "osm-node-1672879768-starbucks",
+          "name": "Starbucks",
+          "website": "https://www.starbucks.ca/store-locator/store/6149-147151/5554-kaye-street-5554-kaye-street-halifax-ns-b-3-k-1-y-5-ca"
         }
       ],
       "noWebsite": [
@@ -1166,11 +1166,11 @@
       ]
     },
     "reconciledFromAcceptedStructuredLayers": true,
-    "reconciledAt": "2026-09-01T14:43:28.081Z"
+    "reconciledAt": "2026-09-01T15:38:22.153Z"
   },
   "eventCoverage": {
-    "currentCityEvents": 193,
-    "allStoredCityEvents": 193,
+    "currentCityEvents": 192,
+    "allStoredCityEvents": 192,
     "cityEventSources": 15,
     "bySource": {
       "Tourism Nova Scotia Events": 23,
@@ -1182,7 +1182,7 @@
       "Alderney Gate Public Library": 7,
       "The Carleton": 10,
       "Scotiabank Centre": 31,
-      "Light House Arts Centre": 18,
+      "Light House Arts Centre": 17,
       "HFX Wanderers 2026 Home Schedule": 5,
       "Halifax Tides 2026 Home Schedule": 4,
       "Halifax Mooseheads Home Schedule": 32,
@@ -1190,24 +1190,24 @@
       "Neptune Theatre": 3
     },
     "byCategory": {
-      "Arts": 43,
-      "Comedy": 3,
+      "Arts": 42,
+      "Comedy": 4,
       "Sports": 61,
       "Festivals": 18,
       "Community": 30,
       "Outdoor": 2,
-      "Music": 59,
+      "Music": 58,
       "Food & Drink": 4,
       "Other": 2
     },
     "byMunicipality": {
-      "Halifax": 171,
+      "Halifax": 170,
       "Dartmouth": 16,
       "Bedford": 6
     },
     "withVenueRestaurantNameMatch": 10,
     "withCoordinates": 0,
-    "withTicketLink": 193,
+    "withTicketLink": 192,
     "withPrice": 11,
     "freeEvents": 0,
     "duplicateEventCount": 0,
@@ -1220,17 +1220,17 @@
     "next30Days": 64
   },
   "discoveryCoverage": {
-    "directoryRecords": 470,
-    "directoryNewToCatalog": 376,
+    "directoryRecords": 472,
+    "directoryNewToCatalog": 384,
     "openingWatchLeads": 12,
     "reviewedDiscoveredRestaurants": 12
   },
   "sourceFailures": {
-    "officialWebsiteChecks": 61,
-    "firstPartyWebsiteDiscovery": 62,
-    "verifiedSourcePages": 21,
+    "officialWebsiteChecks": 63,
+    "firstPartyWebsiteDiscovery": 64,
+    "verifiedSourcePages": 22,
     "structuredRestaurantEvents": 9,
-    "websiteFeeds": 1,
+    "websiteFeeds": 2,
     "socialApis": 3,
     "cityEventSources": 0,
     "openingWatchSources": 0,

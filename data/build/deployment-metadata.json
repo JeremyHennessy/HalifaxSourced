@@ -1,10 +1,10 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-01T14:43:23.273Z",
-  "sourceCommitSha": "286f4936a7607d3456c6abe361f98d191c4535cb",
+  "generatedAt": "2026-09-01T15:38:16.275Z",
+  "sourceCommitSha": "d6aa9762bceef7fa6441c56421ee231a121a484a",
   "qualityWorkflowRunId": null,
   "deploymentWorkflowRunId": null,
-  "coverageGeneratedAt": "2026-09-01T14:42:54.516Z",
+  "coverageGeneratedAt": "2026-09-01T15:37:55.730Z",
   "lifecycleGeneratedAt": "2026-08-29T16:41:21.695Z",
   "counts": {
     "canonicalPlaces": 750,

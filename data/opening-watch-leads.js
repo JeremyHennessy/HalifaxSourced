@@ -1,7 +1,7 @@
 window.HALIFAX_OPENING_WATCH_LEADS = {
   "version": 1,
-  "generatedAt": "2026-09-01T14:18:04.990Z",
-  "lookbackDays": 180,
+  "generatedAt": "2026-09-01T15:14:16.399Z",
+  "lookbackDays": 240,
   "sources": [
     {
       "name": "Halifax ReTales",
@@ -21,7 +21,7 @@ window.HALIFAX_OPENING_WATCH_LEADS = {
       "sourceType": "local_opening_watch",
       "sourceUrl": "https://halifax.retales.ca/2026/08/hedgehogs-coming/",
       "publishedAt": "2026-08-30T00:42:27.000Z",
-      "observedAt": "2026-09-01T14:18:04.979Z",
+      "observedAt": "2026-09-01T15:14:16.390Z",
       "confidence": "local_opening_lead",
       "reviewState": "needs-cross-check"
     },
@@ -35,7 +35,7 @@ window.HALIFAX_OPENING_WATCH_LEADS = {
       "sourceType": "local_opening_watch",
       "sourceUrl": "https://halifax.retales.ca/2026/08/freshco-arrives-2/",
       "publishedAt": "2026-08-23T02:36:26.000Z",
-      "observedAt": "2026-09-01T14:18:04.980Z",
+      "observedAt": "2026-09-01T15:14:16.391Z",
       "confidence": "local_opening_lead",
       "reviewState": "needs-cross-check"
     },
@@ -49,7 +49,7 @@ window.HALIFAX_OPENING_WATCH_LEADS = {
       "sourceType": "local_opening_watch",
       "sourceUrl": "https://halifax.retales.ca/2026/08/some-notable-closures/",
       "publishedAt": "2026-08-16T15:49:48.000Z",
-      "observedAt": "2026-09-01T14:18:04.981Z",
+      "observedAt": "2026-09-01T15:14:16.391Z",
       "confidence": "local_opening_lead",
       "reviewState": "needs-cross-check"
     },
@@ -63,7 +63,7 @@ window.HALIFAX_OPENING_WATCH_LEADS = {
       "sourceType": "local_opening_watch",
       "sourceUrl": "https://halifax.retales.ca/2026/08/some-notable-closures/",
       "publishedAt": "2026-08-16T15:49:48.000Z",
-      "observedAt": "2026-09-01T14:18:04.981Z",
+      "observedAt": "2026-09-01T15:14:16.391Z",
       "confidence": "local_opening_lead",
       "reviewState": "needs-cross-check"
     },
@@ -77,7 +77,7 @@ window.HALIFAX_OPENING_WATCH_LEADS = {
       "sourceType": "local_opening_watch",
       "sourceUrl": "https://halifax.retales.ca/2026/08/some-notable-closures/",
       "publishedAt": "2026-08-16T15:49:48.000Z",
-      "observedAt": "2026-09-01T14:18:04.981Z",
+      "observedAt": "2026-09-01T15:14:16.392Z",
       "confidence": "local_opening_lead",
       "reviewState": "needs-cross-check"
     },
@@ -91,7 +91,7 @@ window.HALIFAX_OPENING_WATCH_LEADS = {
       "sourceType": "local_opening_watch",
       "sourceUrl": "https://halifax.retales.ca/2026/08/some-notable-closures/",
       "publishedAt": "2026-08-16T15:49:48.000Z",
-      "observedAt": "2026-09-01T14:18:04.981Z",
+      "observedAt": "2026-09-01T15:14:16.392Z",
       "confidence": "local_opening_lead",
       "reviewState": "needs-cross-check"
     },
@@ -105,7 +105,7 @@ window.HALIFAX_OPENING_WATCH_LEADS = {
       "sourceType": "local_opening_watch",
       "sourceUrl": "https://halifax.retales.ca/2026/08/some-notable-closures/",
       "publishedAt": "2026-08-16T15:49:48.000Z",
-      "observedAt": "2026-09-01T14:18:04.981Z",
+      "observedAt": "2026-09-01T15:14:16.392Z",
       "confidence": "local_opening_lead",
       "reviewState": "needs-cross-check"
     },
@@ -119,7 +119,7 @@ window.HALIFAX_OPENING_WATCH_LEADS = {
       "sourceType": "local_opening_watch",
       "sourceUrl": "https://halifax.retales.ca/2026/08/qsr-chinese/",
       "publishedAt": "2026-08-09T02:28:51.000Z",
-      "observedAt": "2026-09-01T14:18:04.981Z",
+      "observedAt": "2026-09-01T15:14:16.392Z",
       "confidence": "local_opening_lead",
       "reviewState": "needs-cross-check"
     },
@@ -133,7 +133,7 @@ window.HALIFAX_OPENING_WATCH_LEADS = {
       "sourceType": "local_opening_watch",
       "sourceUrl": "https://halifax.retales.ca/2026/08/qsr-chinese/",
       "publishedAt": "2026-08-09T02:28:51.000Z",
-      "observedAt": "2026-09-01T14:18:04.981Z",
+      "observedAt": "2026-09-01T15:14:16.392Z",
       "confidence": "local_opening_lead",
       "reviewState": "needs-cross-check"
     },
@@ -147,7 +147,7 @@ window.HALIFAX_OPENING_WATCH_LEADS = {
       "sourceType": "local_opening_watch",
       "sourceUrl": "https://halifax.retales.ca/2026/08/mixed-bag-of-ins-and-outs/",
       "publishedAt": "2026-08-02T07:44:14.000Z",
-      "observedAt": "2026-09-01T14:18:04.981Z",
+      "observedAt": "2026-09-01T15:14:16.392Z",
       "confidence": "local_opening_lead",
       "reviewState": "needs-cross-check"
     },
@@ -161,7 +161,7 @@ window.HALIFAX_OPENING_WATCH_LEADS = {
       "sourceType": "local_opening_watch",
       "sourceUrl": "https://halifax.retales.ca/2026/08/mixed-bag-of-ins-and-outs/",
       "publishedAt": "2026-08-02T07:44:14.000Z",
-      "observedAt": "2026-09-01T14:18:04.981Z",
+      "observedAt": "2026-09-01T15:14:16.392Z",
       "confidence": "local_opening_lead",
       "reviewState": "needs-cross-check"
     },
@@ -175,7 +175,7 @@ window.HALIFAX_OPENING_WATCH_LEADS = {
       "sourceType": "local_opening_watch",
       "sourceUrl": "https://halifax.retales.ca/2026/07/mo-momos/",
       "publishedAt": "2026-07-26T00:51:31.000Z",
-      "observedAt": "2026-09-01T14:18:04.982Z",
+      "observedAt": "2026-09-01T15:14:16.392Z",
       "confidence": "local_opening_lead",
       "reviewState": "needs-cross-check"
     }

@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-09-01T14:17:40.285Z",
-  "eventCount": 193,
-  "venueResolved": 141,
-  "organizerResolved": 167,
+  "generatedAt": "2026-09-01T15:29:44.605Z",
+  "eventCount": 192,
+  "venueResolved": 140,
+  "organizerResolved": 166,
   "restaurantResolved": 10,
   "unresolvedVenue": 52,
   "unresolvedOrganizer": 26,
@@ -1361,6 +1361,17 @@
       "restaurantBasis": null
     },
     {
+      "eventId": "light-house-arts-centre-0920184cc9dd79b9",
+      "title": "Colin Mochrie & Asad Mecci: HYPROV: Improv Under Hypnosis — Light House Arts Centre",
+      "sourceId": "light-house-arts-centre",
+      "venueId": "light-house-arts-centre-halifax",
+      "venueBasis": "source_id",
+      "organizerId": "light-house-arts-centre",
+      "organizerBasis": "source_id",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
       "eventId": "halifax-mooseheads-home-c677118fcbe06833",
       "title": "Halifax Mooseheads vs Moncton",
       "sourceId": "halifax-mooseheads-home",
@@ -1488,17 +1499,6 @@
       "venueId": "scotiabank-centre-halifax",
       "venueBasis": "source_id",
       "organizerId": "scotiabank-centre",
-      "organizerBasis": "source_id",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "light-house-arts-centre-b99b2dbd32dc6778",
-      "title": "Official Tickets for Lennie Gallant | Christmas Show in Halifax — Light House Arts Centre",
-      "sourceId": "light-house-arts-centre",
-      "venueId": "light-house-arts-centre-halifax",
-      "venueBasis": "source_id",
-      "organizerId": "light-house-arts-centre",
       "organizerBasis": "source_id",
       "restaurantId": null,
       "restaurantBasis": null
@@ -1697,17 +1697,6 @@
       "venueId": "scotiabank-centre-halifax",
       "venueBasis": "source_id",
       "organizerId": "halifax-mooseheads",
-      "organizerBasis": "source_id",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "light-house-arts-centre-0ec9c156a5ca1dee",
-      "title": "A Saucerful of Floyd | Pink Floyd Tribute in Halifax | Tickets — Light House Arts Centre",
-      "sourceId": "light-house-arts-centre",
-      "venueId": "light-house-arts-centre-halifax",
-      "venueBasis": "source_id",
-      "organizerId": "light-house-arts-centre",
       "organizerBasis": "source_id",
       "restaurantId": null,
       "restaurantBasis": null
