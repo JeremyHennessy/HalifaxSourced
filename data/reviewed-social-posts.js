@@ -1,6 +1,6 @@
 window.HALIFAX_REVIEWED_SOCIAL_POSTS = {
   "version": 1,
-  "generatedAt": "2026-09-01T13:44:21.311Z",
+  "generatedAt": "2026-09-01T14:42:40.058Z",
   "decisionManifestGeneratedAt": "2026-08-31T11:50:13.422Z",
   "policy": "Only posts reviewed as approve_post are surfaced as approved recent updates. Raw feed and Meta API observations remain source leads until reviewed.",
   "counts": {
@@ -51,7 +51,7 @@ window.HALIFAX_REVIEWED_SOCIAL_POSTS = {
         "$"
       ],
       "publishedAt": "2026-07-17T13:48:16.000Z",
-      "observedAt": "2026-08-31T11:21:14.935Z",
+      "observedAt": "2026-09-01T14:41:59.928Z",
       "ageDays": 46,
       "isRecent": true,
       "lookbackDays": 180,
@@ -108,7 +108,7 @@ window.HALIFAX_REVIEWED_SOCIAL_POSTS = {
         "terrace"
       ],
       "publishedAt": "2026-05-11T15:04:47.000Z",
-      "observedAt": "2026-08-31T11:21:11.105Z",
+      "observedAt": "2026-09-01T14:41:53.778Z",
       "ageDays": 113,
       "isRecent": true,
       "lookbackDays": 180,
@@ -145,7 +145,7 @@ window.HALIFAX_REVIEWED_SOCIAL_POSTS = {
       "categories": [],
       "matchedTerms": [],
       "publishedAt": "2026-04-08T15:42:52.000Z",
-      "observedAt": "2026-08-31T11:21:11.105Z",
+      "observedAt": "2026-09-01T14:41:53.778Z",
       "ageDays": 146,
       "isRecent": true,
       "lookbackDays": 180,
@@ -175,7 +175,7 @@ window.HALIFAX_REVIEWED_SOCIAL_POSTS = {
       "mediaUrl": "https://static.wixstatic.com/media/110dc9_538c90ecfee14537aa62b59c533c2b01~mv2.jpeg/v1/fit/w_1000,h_1000,al_c,q_80/file.png",
       "thumbnailUrl": null,
       "mediaType": null,
-      "title": "Five Things to Do in Halifax This Spring (We'll Handle Breakfast)",
+      "title": "Five Things to Do in Halifax (We'll Handle Breakfast)",
       "summary": "Spring is our favourite season at Bird's Nest Cafe. The city comes back to life, and so does our dining room. Here's how we'd spend it. We've been on Barrington Street long enough to know what a Halifax spring feels like. The harbour fog lifts a little earlier each morning. Regulars start lingering over their coffee instead of rushing out the door. Someone always comes in and says, \"finally\" — like the season is a...",
       "primaryCategory": "brunch",
       "primaryCategoryLabel": "Brunch",
@@ -192,7 +192,7 @@ window.HALIFAX_REVIEWED_SOCIAL_POSTS = {
         "breakfast"
       ],
       "publishedAt": "2026-04-02T11:40:44.000Z",
-      "observedAt": "2026-08-31T11:21:09.521Z",
+      "observedAt": "2026-09-01T14:41:53.777Z",
       "ageDays": 152,
       "isRecent": true,
       "lookbackDays": 180,
@@ -229,7 +229,7 @@ window.HALIFAX_REVIEWED_SOCIAL_POSTS = {
       "categories": [],
       "matchedTerms": [],
       "publishedAt": "2026-03-26T15:51:56.000Z",
-      "observedAt": "2026-08-31T11:21:11.105Z",
+      "observedAt": "2026-09-01T14:41:53.778Z",
       "ageDays": 159,
       "isRecent": true,
       "lookbackDays": 180,

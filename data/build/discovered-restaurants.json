@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generatedAt": "2026-08-29T13:40:29.686Z",
+  "generatedAt": "2026-09-01T14:19:12.502Z",
   "count": 12,
   "restaurants": [
     {
@@ -42,7 +42,7 @@
       ],
       "discoveryReview": {
         "approvedByOverride": true,
-        "sourceLeadObserved": false,
+        "sourceLeadObserved": true,
         "reviewNote": "Provisional discovery listing. Replace coarse location and local-opening evidence when restaurant-owned or authoritative directory evidence is found."
       }
     },

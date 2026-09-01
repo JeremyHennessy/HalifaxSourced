@@ -28,7 +28,8 @@
     {
       "restaurantId": "osm-node-8600605850-barburrito",
       "feedUrls": [
-        "https://www.barburrito.ca/feed/"
+        "https://www.barburrito.ca/feed/",
+        "https://www.barburrito.ca/fr/feed/"
       ],
       "reason": "shared_brand_nonlocal_feed",
       "evidence": "The national brand feed is not location-specific to the Dartmouth restaurant record.",
