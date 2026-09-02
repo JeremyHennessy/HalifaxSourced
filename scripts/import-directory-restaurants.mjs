@@ -394,6 +394,91 @@ function parseAssociationDirectory(html, sourceMeta, options = {}) {
   return records;
 }
 
+function quinpoolMemberLinks(html, baseUrl) {
+  const seen = new Set();
+  const links = [];
+  for (const article of String(html).matchAll(/<article\b(?=[^>]*business_category-food-drink)[^>]*>([\s\S]*?)<\/article>/gi)) {
+    const block = article[1];
+    const title = block.match(/<h3\b[^>]*class=["'][^"']*elementor-post__title[^"']*["'][^>]*>[\s\S]*?<a\b[^>]*href\s*=\s*["']([^"']+)["'][^>]*>([\s\S]*?)<\/a>/i);
+    const fallback = block.match(/<a\b[^>]*href\s*=\s*["']([^"']*\/member\/[^"']+)["'][^>]*aria-label=["']Read more about ([^"']+)["']/i);
+    const url = safeUrl(title?.[1] || fallback?.[1], baseUrl);
+    const name = decode(title?.[2] || fallback?.[2] || "").replace(/\s+/g, " ").trim();
+    const imageMatch = block.match(/<img\b[^>]*src\s*=\s*["']([^"']+)["'][^>]*>/i);
+    const imageUrl = safeUrl(imageMatch?.[1], baseUrl);
+    const key = normalize(`${name}|${url}`);
+    if (!url || !normalize(name) || seen.has(key) || name.length > 120) continue;
+    seen.add(key);
+    links.push({ name, url, imageUrl });
+  }
+  return links;
+}
+
+function parseQuinpoolDetail(html, url, item) {
+  const fallbackName = typeof item === "string" ? item : item?.name;
+  const fallbackImageUrl = typeof item === "string" ? null : item?.imageUrl;
+  const h1 = html.match(/<h1\b[^>]*>([\s\S]*?)<\/h1>/i);
+  const name = decode(h1?.[1] || fallbackName).replace(/\s+/g, " ").trim();
+  if (!name || name.length > 120) return null;
+  const footerIndex = String(html).search(/About QRMDA/i);
+  const detailHtml = footerIndex > 0 ? String(html).slice(0, footerIndex) : String(html);
+  const text = decode(detailHtml);
+  if (!/Member Details/i.test(text)) return null;
+  const lines = text.split(/\n+/).map((line) => line.trim()).filter(Boolean);
+  const detailIndex = lines.findIndex((line) => /^Member Details$/i.test(line));
+  const detailLines = detailIndex >= 0 ? lines.slice(detailIndex + 1) : lines;
+  const outbound = classifyOutbound(detailHtml, url);
+  if (outbound.website && /(?:^|\.)boom12\.ca$/i.test(canonicalHost(outbound.website))) outbound.website = null;
+  outbound.socialProfiles = outbound.socialProfiles.filter((profile, index, all) => {
+    const host = canonicalHost(profile.url);
+    if (/quinpool(?:road|_road)|karlaonquinpool/i.test(profile.url)) return false;
+    return all.findIndex((item) => item.platform === profile.platform && item.url === profile.url) === index;
+  });
+  const address = extractAddress(detailLines, "Halifax");
+  const phone = extractPhone(text);
+  if (!address && !outbound.website && !outbound.socialProfiles.length && !outbound.actionLinks.length && !outbound.linkHubs.length) return null;
+
+  return {
+    id: `qrmda-${slug(name)}-${slug(address || new URL(url).pathname.split("/").filter(Boolean).at(-1) || "member")}`,
+    name,
+    category: "Food & Drink",
+    address,
+    city: "Halifax",
+    neighborhood: "Quinpool Road",
+    website: outbound.website,
+    socialProfiles: outbound.socialProfiles,
+    linkHubs: outbound.linkHubs,
+    actionLinks: outbound.actionLinks,
+    phone,
+    sourceImageUrl: fallbackImageUrl || null,
+    rightsState: fallbackImageUrl ? "requires_rights_review" : null,
+    sourceId: "quinpool-road-food-drink",
+    sourceName: "Quinpool Road Mainstreet District Association",
+    sourceKind: "business_improvement_district_directory",
+    sourceUrl: url,
+    observedAt: new Date().toISOString(),
+    reviewState: "directory-listed"
+  };
+}
+async function fetchQuinpoolDirectory(sourceMeta) {
+  const records = [];
+  const { html, resolvedUrl } = await get(sourceMeta.url);
+  const links = quinpoolMemberLinks(html, resolvedUrl);
+  const targets = links;
+  for (let index = 0; index < targets.length; index += 6) {
+    const batch = targets.slice(index, index + 6);
+    const results = await Promise.all(batch.map(async (item) => {
+      try {
+        const { html: detailHtml, resolvedUrl: detailUrl } = await get(item.url);
+        return parseQuinpoolDetail(detailHtml, detailUrl, item);
+      } catch (error) {
+        failures.push({ sourceId: sourceMeta.id, sourceName: sourceMeta.name, sourceUrl: item.url, reason: error.message });
+        return null;
+      }
+    }));
+    records.push(...results.filter(Boolean));
+  }
+  return { records, links, checked: targets.length, unknown: records.filter((record) => !knownNames.has(normalize(record.name))).length };
+}
 const records = [];
 const failures = [];
 const sourceMeta = [];
@@ -446,6 +531,23 @@ try {
   failures.push({ sourceId: downtownSource.id, sourceName: downtownSource.name, sourceUrl: downtownSource.url, reason: error.message });
 }
 
+const quinpoolSource = source("quinpool-road-food-drink");
+try {
+  const result = await fetchQuinpoolDirectory(quinpoolSource);
+  if (result.links.length < 30) throw new Error(`parser_yield_below_expected:${result.links.length}<30`);
+  records.push(...result.records);
+  sourceMeta.push({
+    id: quinpoolSource.id,
+    name: quinpoolSource.name,
+    kind: quinpoolSource.kind,
+    url: quinpoolSource.url,
+    directoryEntriesObserved: result.links.length,
+    newNameCandidatesChecked: result.checked,
+    parserMode: "member_directory_detail_pages"
+  });
+} catch (error) {
+  failures.push({ sourceId: quinpoolSource.id, sourceName: quinpoolSource.name, sourceUrl: quinpoolSource.url, reason: error.message });
+}
 for (const config of [
   { sourceId: "downtown-dartmouth-food-drink", city: "Dartmouth", neighborhood: "Downtown Dartmouth", idPrefix: "ddbc", minimumObserved: 30 },
   { sourceId: "spring-garden-eat-drink", city: "Halifax", neighborhood: "Spring Garden", idPrefix: "sgaba" }
