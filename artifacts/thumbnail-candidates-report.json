@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-09-02T11:15:56.029Z",
+  "generatedAt": "2026-09-02T16:14:15.182Z",
   "counts": {
     "restaurants": 740,
-    "candidates": 2674,
+    "candidates": 2712,
     "restaurantsWithApprovedThumbnail": 73,
     "restaurantsWithAnyCandidate": 190,
     "restaurantsMissingApprovedThumbnail": 667,
