@@ -69,6 +69,20 @@
       "enabled": true
     },
     {
+      "id": "quinpool-road-food-drink",
+      "name": "Quinpool Road Mainstreet District Association Food & Drink directory",
+      "kind": "business_improvement_district_directory",
+      "url": "https://quinpoolroad.ca/business-on-quinpool/directory/",
+      "geographicScope": ["Quinpool Road", "West End Halifax", "Halifax Peninsula"],
+      "contentTypes": ["place_identity", "address", "website", "social_profile", "action_link"],
+      "priority": 2,
+      "authorityClass": "trusted_local_source",
+      "refreshFrequency": "weekly",
+      "parserMode": "member_directory_detail_pages",
+      "robotsReviewed": "runtime_checked",
+      "termsReviewed": "public_business_directory_reviewed",
+      "enabled": true
+    },    {
       "id": "downtown-halifax-patios-2026",
       "name": "Downtown Halifax Business Commission patio directory",
       "kind": "business_improvement_district_feature_directory",

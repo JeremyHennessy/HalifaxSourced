@@ -1,6 +1,6 @@
 # Halifax Sourced thumbnail coverage report
 
-Generated: 2026-09-01T18:02:48.626Z
+Generated: 2026-09-02T01:20:39.137Z
 
 This report tracks source-backed image leads for restaurant thumbnails. It separates production-approved media from candidates that still need review, attribution, or permission before they can become default restaurant card imagery.
 
@@ -10,33 +10,34 @@ This report tracks source-backed image leads for restaurant thumbnails. It separ
 | --- | ---: | ---: |
 | Catalog restaurants | 740 | 100% |
 | Restaurants with approved thumbnail | 73 | 9.9% |
-| Restaurants with any thumbnail candidate | 247 | 33.4% |
+| Restaurants with any thumbnail candidate | 188 | 25.4% |
 | Restaurants missing approved thumbnail | 667 | 90.1% |
-| Restaurants missing any candidate | 493 | 66.6% |
-| Promotion queue | 146 | 19.7% |
-| Discovery queue | 493 | 66.6% |
+| Restaurants missing any candidate | 552 | 74.6% |
+| Promotion queue | 97 | 13.1% |
+| Discovery queue | 552 | 74.6% |
 
-Total thumbnail candidates: **5474**. Review-needed candidates: **5401**. Fetch failures in the latest run: **79**.
+Total thumbnail candidates: **2751**. Review-needed candidates: **2678**. Fetch failures in the latest run: **40**.
 
 ## Candidate source mix
 
 | Source kind | Candidates |
 | --- | ---: |
-| official_page_thumbnail_candidate | 5,353 |
+| official_page_thumbnail_candidate | 2,615 |
 | approved_restaurant_media | 73 |
 | public_campaign_menu_image | 41 |
+| directory_source_image | 15 |
 | official_feed_media | 7 |
 
 ## Review and rights state
 
 | Review state | Candidates |
 | --- | ---: |
-| candidate_review | 5,401 |
+| candidate_review | 2,678 |
 | approved | 73 |
 
 | Rights state | Candidates |
 | --- | ---: |
-| requires_rights_review | 5,401 |
+| requires_rights_review | 2,678 |
 | production_approved | 73 |
 
 ## Promotion queue
@@ -45,46 +46,46 @@ Restaurants below are missing approved thumbnails but have source-backed candida
 
 | Restaurant | Neighbourhood | Candidates | Best source | Website |
 | --- | --- | ---: | --- | --- |
-| The Black Sheep | Downtown | 77 | official_page_thumbnail_candidate | https://blacksheephalifax.com/ |
-| Studio East Food+Drink | North End | 58 | official_page_thumbnail_candidate | https://www.studioeastfood.ca/ |
-| King of Donair | Halifax Peninsula | 45 | official_page_thumbnail_candidate | https://www.kingofdonair.ca |
-| Second Cup | Armdale / Fairview | 45 | official_page_thumbnail_candidate | https://secondcup.com/en/location/bayers-lake/ |
 | Greco Pizza | West End | 44 | official_page_thumbnail_candidate | https://greco.ca/ |
-| Subway | Dartmouth | 43 | official_page_thumbnail_candidate | https://restaurants.subway.com/canada/ns/dartmouth/100-main-st |
-| The Armview Restaurant & Lounge | Halifax Peninsula | 43 | official_page_thumbnail_candidate | https://www.thearmview.com/ |
-| Wendy's | Downtown | 40 | official_page_thumbnail_candidate | https://www.wendys.com/en-ca |
-| Swaad Sagaa Indian Cuisine Incorporated | North End | 39 | official_page_thumbnail_candidate | https://www.swaadsagaa.com/ |
-| Moxie's | Downtown | 38 | official_page_thumbnail_candidate | https://moxies.com |
-| Smokehouse Brewery | North End | 37 | official_page_thumbnail_candidate | https://smokehousebrewery.ca |
-| Real Fake Meats | Downtown | 36 | official_page_thumbnail_candidate | https://www.realfakemeats.com/ |
-| Rinaldo’s | West End | 36 | official_page_thumbnail_candidate | https://rinaldos.ca |
-| Terra Cafe | Waterfront | 36 | official_page_thumbnail_candidate | https://terracafe.ca |
-| The Beaver's Den | Downtown | 35 | official_page_thumbnail_candidate | https://thebeaversden.ca/ |
-| Wendy's | West End | 35 | official_page_thumbnail_candidate | https://locations.wendys.com/canada/ns/halifax/3580-kempt-road |
-| Downtown Pizza | Dartmouth | 34 | official_page_thumbnail_candidate | https://downtownpizza.ca/ |
-| in spring asian fusion cuisine | Downtown | 34 | official_page_thumbnail_candidate | https://www.inspringhotpot.com/ |
-| India Paradise | Downtown | 34 | official_page_thumbnail_candidate | https://www.indiaparadise.ca/ |
-| Mashawee Mediterranean Grill | Downtown | 34 | official_page_thumbnail_candidate | https://www.mashaweemediterraneangrill.ca/ |
-| Tony's Pizza | North End | 34 | official_page_thumbnail_candidate | https://www.tonysdonair.ca/ |
 | Jungle Jim's | Bayers Lake Business Park | 33 | official_page_thumbnail_candidate | https://junglejims.ca/ |
-| Tako Sushi & Ramen | Armdale / Fairview | 31 | official_page_thumbnail_candidate | https://www.takosushiramen.ca |
-| Tilted Tap | Dartmouth | 31 | official_page_thumbnail_candidate | https://www.tiltedtap.ca/ |
-| Tomavinos Pizzeria | South End | 31 | official_page_thumbnail_candidate | https://www.tomavinos.ca/ |
-| The Mellow Mug | Bedford | 30 | official_page_thumbnail_candidate | https://www.mellowmug.ca |
-| Sea Smoke | Waterfront | 29 | official_page_thumbnail_candidate | https://www.seasmokehalifax.com |
 | The Bicycle Thief | Waterfront | 28 | official_page_thumbnail_candidate | https://bicyclethief.ca/ |
-| THE 5K CAFE | Armdale / Fairview | 26 | official_page_thumbnail_candidate | https://www.the5kcafe.ca/ |
-| Trident Booksellers and Cafe | Waterfront | 26 | official_page_thumbnail_candidate | https://tridenthalifax.ca/ |
-| Rush Hour Pizza | West End | 25 | official_page_thumbnail_candidate | https://rushhourpizza.ca/ |
-| The Lower Deck | Waterfront | 25 | official_page_thumbnail_candidate | https://www.lowerdeck.ca/ |
+| Downtown Pizza | Dartmouth | 27 | official_page_thumbnail_candidate | https://downtownpizza.ca/ |
+| Durty Nelly's Irish Pub | Downtown | 25 | official_page_thumbnail_candidate | https://durtynellys.ca/ |
 | Jean's Chinese Restaurant | Dartmouth | 24 | official_page_thumbnail_candidate | https://www.jeansrestaurant.ca/ |
-| Durty Nelly's Irish Pub | Downtown | 23 | official_page_thumbnail_candidate | https://durtynellys.ca/ |
-| Krave Burger | Downtown | 23 | official_page_thumbnail_candidate | http://kraveburger.com |
-| Krave Burger | Dartmouth | 23 | official_page_thumbnail_candidate | http://kraveburger.com |
-| Starbucks | Dartmouth | 23 | official_page_thumbnail_candidate | https://www.starbucks.ca/ |
-| Starbucks | Armdale / Fairview | 23 | official_page_thumbnail_candidate | https://www.starbucks.ca/ |
-| Wing 'n It | Armdale / Fairview | 23 | official_page_thumbnail_candidate | https://wingnit.ca/ |
-| Cora | Downtown | 22 | official_page_thumbnail_candidate | https://www.chezcora.com/en/breakfast-lunch-restaurants/cora-halifax-downtown/ |
+| 2 Doors Down | Dartmouth | 20 | official_page_thumbnail_candidate | https://go2doorsdown.com/ |
+| Mirchi Tandoor | Downtown | 20 | official_page_thumbnail_candidate | https://mirchitandoor.com/ |
+| Jacky's Cafe | South End | 19 | official_page_thumbnail_candidate | https://jackyscafehalifax.com/ |
+| Chinatown | Armdale / Fairview | 18 | official_page_thumbnail_candidate | https://www.chinatownhalifax.com/ |
+| Great Wall Restaurant | Downtown | 18 | official_page_thumbnail_candidate | http://www.thegreatwall.ca/ |
+| India Paradise | Downtown | 18 | official_page_thumbnail_candidate | https://www.indiaparadise.ca/ |
+| Glitter Bean Cafe | South End | 17 | official_page_thumbnail_candidate | https://www.glitterbeancafe.com/ |
+| in spring asian fusion cuisine | Downtown | 17 | official_page_thumbnail_candidate | https://www.inspringhotpot.com/ |
+| Mashawee Mediterranean Grill | Downtown | 17 | official_page_thumbnail_candidate | https://www.mashaweemediterraneangrill.ca/ |
+| Battery Park Beer Bar | Dartmouth | 15 | official_page_thumbnail_candidate | https://batterypark.ca/ |
+| Battery Park Beer Bar & Eatery | Halifax Peninsula | 15 | official_page_thumbnail_candidate | http://batterypark.ca |
+| Cora | Downtown | 15 | official_page_thumbnail_candidate | https://www.chezcora.com/en/breakfast-lunch-restaurants/cora-halifax-downtown/ |
+| Brief Break | South End | 13 | official_page_thumbnail_candidate | https://dal.campusdish.com/LocationsAndMenus/WeldonLawBuilding |
+| Fillings Bistro 32 | South End | 13 | official_page_thumbnail_candidate | https://dal.campusdish.com/LocationsAndMenus/FillingsBistroatDentistry |
+| Green Café | South End | 13 | official_page_thumbnail_candidate | https://dal.campusdish.com/LocationsAndMenus/GreenCafeatRoweManagementBuilding |
+| Grille Works | South End | 13 | official_page_thumbnail_candidate | https://dal.campusdish.com/LocationsAndMenus/LifeSciencesCentre/GrilleWorks |
+| Ground Zero | South End | 13 | official_page_thumbnail_candidate | https://dal.campusdish.com/LocationsAndMenus/GroundZero |
+| Marigold Kitchen | Downtown | 12 | official_page_thumbnail_candidate | https://marigoldkitchen.ca |
+| Moxie's | Downtown | 12 | official_page_thumbnail_candidate | https://moxies.com |
+| Gahan House | Downtown | 10 | official_page_thumbnail_candidate | https://gahan.ca |
+| Doraku | Dartmouth | 9 | official_page_thumbnail_candidate | https://doraku.yolasite.com |
+| Kanpai Izakaya | Downtown | 9 | official_page_thumbnail_candidate | https://kanpaiizakaya.com |
+| Bar Kismet | North End | 8 | official_page_thumbnail_candidate | https://barkismet.com/ |
+| Cheese Curds and Habaneros | Armdale / Fairview | 8 | official_page_thumbnail_candidate | https://cheesecurdsgourmetburgersandpoutinerie.unuhub.net/ |
+| Dear Friend Bar | Dartmouth | 8 | official_page_thumbnail_candidate | https://dearfriendbar.com/ |
+| Bramble Cafe | North End | 5 | official_page_thumbnail_candidate | https://www.instagram.com/bramble.hfx |
+| King of Donair | Halifax Peninsula | 5 | official_page_thumbnail_candidate | https://www.kingofdonair.ca |
+| Matadora Tapas Bar | Downtown | 5 | official_page_thumbnail_candidate | https://matadorahfx.ca/ |
+| The Black Sheep | Downtown | 5 | official_page_thumbnail_candidate | https://blacksheephalifax.com/ |
+| Shuck Seafood + Raw Bar | Downtown | 4 | official_page_thumbnail_candidate | https://www.rcr.ca/restaurants/shuck-seafood-raw-bar/ |
+| Starbucks | Dartmouth | 4 | official_page_thumbnail_candidate | https://www.starbucks.ca/ |
+| Starbucks | Armdale / Fairview | 4 | official_page_thumbnail_candidate | https://www.starbucks.ca/ |
+| Waterfront Warehouse | Waterfront | 3 | official_page_thumbnail_candidate | https://www.rcr.ca/restaurants/waterfront-warehouse/ |
+| 2 Crows Brewing | Downtown | 2 | official_page_thumbnail_candidate | https://www.2crowsbrewing.com/ |
 
 ## Discovery queue
 
