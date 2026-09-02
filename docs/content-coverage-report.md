@@ -1,6 +1,6 @@
 # Halifax Sourced content coverage snapshot
 
-Generated: 2026-09-02T01:22:10.378Z
+Generated: 2026-09-02T11:16:42.679Z
 Source/deployment commit: supplied by CI for deployable snapshots.
 
 This is the reconciled snapshot produced from the same data layers packaged for deployment. Unknown values remain unknown; source leads are not promoted to verified facts.
@@ -16,8 +16,8 @@ This is the reconciled snapshot produced from the same data layers packaged for 
 | Verified/reachable official website | 240 | 32.0% |
 | Menu link | 166 | 22.1% |
 | Verified menu link | 137 | 18.3% |
-| Phone | 278 | 37.1% |
-| Hours | 245 | 32.7% |
+| Phone | 265 | 35.3% |
+| Hours | 239 | 31.9% |
 | At least one social profile | 159 | 21.2% |
 | Usable rights-approved media | 73 | 9.7% |
 | Coordinates | 739 | 98.5% |
@@ -26,8 +26,8 @@ This is the reconciled snapshot produced from the same data layers packaged for 
 ## Restaurant-event definitions
 
 - **2 canonical restaurants with upcoming structured events** is a distinct-place count.
-- **21 upcoming structured restaurant event records** is an event-record count; one restaurant can have multiple events.
-- 21 total structured restaurant event records are stored, including 0 expired records.
+- **20 upcoming structured restaurant event records** is an event-record count; one restaurant can have multiple events.
+- 21 total structured restaurant event records are stored, including 1 expired records.
 
 ## Lifecycle
 
@@ -48,6 +48,5 @@ This is the reconciled snapshot produced from the same data layers packaged for 
 - restaurantDirectorySources: 0
 - publicSpecialSources: 0
 - patioDirectorySources: 0
-- structuredPlaceFacts: 0
 
 Machine-readable definitions, percentages, gap queues, and counts are in `data/build/content-coverage-report.json`. Exact-SHA deployment metadata is in `data/build/deployment-metadata.json` in CI and the deployed Pages artifact.

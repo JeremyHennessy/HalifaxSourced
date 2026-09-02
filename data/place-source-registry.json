@@ -69,6 +69,21 @@
       "enabled": true
     },
     {
+      "id": "sackville-business-food-drink",
+      "name": "Sackville Business Association Food & Drink directory",
+      "kind": "business_improvement_district_directory",
+      "url": "https://sackvillebusiness.com/food-drink",
+      "geographicScope": ["Lower Sackville", "Sackville Drive", "Halifax Regional Municipality"],
+      "contentTypes": ["place_identity", "address", "phone", "website", "social_profile", "review_image_candidate"],
+      "priority": 2,
+      "authorityClass": "trusted_local_source",
+      "refreshFrequency": "weekly",
+      "parserMode": "drupal_food_drink_listing",
+      "robotsReviewed": "runtime_checked",
+      "termsReviewed": "public_business_directory_reviewed",
+      "enabled": true
+    },
+    {
       "id": "quinpool-road-food-drink",
       "name": "Quinpool Road Mainstreet District Association Food & Drink directory",
       "kind": "business_improvement_district_directory",
@@ -82,7 +97,8 @@
       "robotsReviewed": "runtime_checked",
       "termsReviewed": "public_business_directory_reviewed",
       "enabled": true
-    },    {
+    },
+    {
       "id": "downtown-halifax-patios-2026",
       "name": "Downtown Halifax Business Commission patio directory",
       "kind": "business_improvement_district_feature_directory",
