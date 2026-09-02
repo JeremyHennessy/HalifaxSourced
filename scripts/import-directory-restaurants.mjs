@@ -394,6 +394,47 @@ function parseAssociationDirectory(html, sourceMeta, options = {}) {
   return records;
 }
 
+function parseSackvilleDirectory(html, sourceMeta, options = {}) {
+  const records = [];
+  for (const row of String(html).matchAll(/<div\b[^>]*class=["'][^"']*views-row[^"']*["'][^>]*>([\s\S]*?)(?=<div\b[^>]*class=["'][^"']*views-row[^"']*["']|<\/div>\s*<\/div>\s*<\/div>\s*<\/div>\s*<\/div>\s*<\/div>|$)/gi)) {
+    const block = row[1];
+    const title = block.match(/<h4\b[^>]*class=["'][^"']*field-content[^"']*["'][^>]*>\s*<a\b[^>]*href\s*=\s*["']([^"']+)["'][^>]*>([\s\S]*?)<\/a>/i);
+    const name = decode(title?.[2] || "").replace(/\s+/g, " ").trim();
+    if (!name || name.length > 120) continue;
+    const sourceUrl = safeUrl(title?.[1], sourceMeta.url) || sourceMeta.url;
+    const imageMatch = block.match(/<img\b[^>]*src\s*=\s*["']([^"']+)["'][^>]*>/i);
+    const imageUrl = safeUrl(imageMatch?.[1], sourceMeta.url);
+    const text = decode(block);
+    const lines = text.split(/\n+/).map((line) => line.trim()).filter(Boolean);
+    const address = extractAddress(lines, options.city || "Lower Sackville");
+    const phone = extractPhone(text);
+    const outbound = classifyOutbound(block, sourceMeta.url);
+    if (!address && !phone && !outbound.website && !outbound.socialProfiles.length && !outbound.actionLinks.length && !outbound.linkHubs.length) continue;
+
+    records.push({
+      id: `${options.idPrefix || sourceMeta.id}-${slug(name)}-${slug(address || sourceUrl)}`,
+      name,
+      category: "Food & Drink",
+      address,
+      city: options.city || "Lower Sackville",
+      neighborhood: options.neighborhood || "Sackville",
+      website: outbound.website,
+      socialProfiles: outbound.socialProfiles,
+      linkHubs: outbound.linkHubs,
+      actionLinks: outbound.actionLinks,
+      phone,
+      sourceImageUrl: imageUrl || null,
+      rightsState: imageUrl ? "requires_rights_review" : null,
+      sourceId: sourceMeta.id,
+      sourceName: sourceMeta.name,
+      sourceKind: sourceMeta.kind,
+      sourceUrl,
+      observedAt: new Date().toISOString(),
+      reviewState: "directory-listed"
+    });
+  }
+  return records;
+}
 function quinpoolMemberLinks(html, baseUrl) {
   const seen = new Set();
   const links = [];
@@ -531,6 +572,23 @@ try {
   failures.push({ sourceId: downtownSource.id, sourceName: downtownSource.name, sourceUrl: downtownSource.url, reason: error.message });
 }
 
+const sackvilleSource = source("sackville-business-food-drink");
+try {
+  const { html, resolvedUrl } = await get(sackvilleSource.url);
+  const parsed = parseSackvilleDirectory(html, { ...sackvilleSource, url: resolvedUrl }, { city: "Lower Sackville", neighborhood: "Sackville", idPrefix: "sba" });
+  if (parsed.length < 25) throw new Error(`parser_yield_below_expected:${parsed.length}<25`);
+  records.push(...parsed);
+  sourceMeta.push({
+    id: sackvilleSource.id,
+    name: sackvilleSource.name,
+    kind: sackvilleSource.kind,
+    url: sackvilleSource.url,
+    directoryEntriesObserved: parsed.length,
+    parserMode: "drupal_food_drink_listing"
+  });
+} catch (error) {
+  failures.push({ sourceId: sackvilleSource.id, sourceName: sackvilleSource.name, sourceUrl: sackvilleSource.url, reason: error.message });
+}
 const quinpoolSource = source("quinpool-road-food-drink");
 try {
   const result = await fetchQuinpoolDirectory(quinpoolSource);

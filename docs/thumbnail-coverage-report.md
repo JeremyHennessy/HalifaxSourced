@@ -1,6 +1,6 @@
 # Halifax Sourced thumbnail coverage report
 
-Generated: 2026-09-02T01:20:39.137Z
+Generated: 2026-09-02T11:16:24.375Z
 
 This report tracks source-backed image leads for restaurant thumbnails. It separates production-approved media from candidates that still need review, attribution, or permission before they can become default restaurant card imagery.
 
@@ -10,34 +10,34 @@ This report tracks source-backed image leads for restaurant thumbnails. It separ
 | --- | ---: | ---: |
 | Catalog restaurants | 740 | 100% |
 | Restaurants with approved thumbnail | 73 | 9.9% |
-| Restaurants with any thumbnail candidate | 188 | 25.4% |
+| Restaurants with any thumbnail candidate | 190 | 25.7% |
 | Restaurants missing approved thumbnail | 667 | 90.1% |
-| Restaurants missing any candidate | 552 | 74.6% |
-| Promotion queue | 97 | 13.1% |
-| Discovery queue | 552 | 74.6% |
+| Restaurants missing any candidate | 550 | 74.3% |
+| Promotion queue | 99 | 13.4% |
+| Discovery queue | 550 | 74.3% |
 
-Total thumbnail candidates: **2751**. Review-needed candidates: **2678**. Fetch failures in the latest run: **40**.
+Total thumbnail candidates: **2674**. Review-needed candidates: **2601**. Fetch failures in the latest run: **47**.
 
 ## Candidate source mix
 
 | Source kind | Candidates |
 | --- | ---: |
-| official_page_thumbnail_candidate | 2,615 |
+| official_page_thumbnail_candidate | 2,534 |
 | approved_restaurant_media | 73 |
 | public_campaign_menu_image | 41 |
-| directory_source_image | 15 |
+| directory_source_image | 19 |
 | official_feed_media | 7 |
 
 ## Review and rights state
 
 | Review state | Candidates |
 | --- | ---: |
-| candidate_review | 2,678 |
+| candidate_review | 2,601 |
 | approved | 73 |
 
 | Rights state | Candidates |
 | --- | ---: |
-| requires_rights_review | 2,678 |
+| requires_rights_review | 2,601 |
 | production_approved | 73 |
 
 ## Promotion queue
@@ -46,7 +46,7 @@ Restaurants below are missing approved thumbnails but have source-backed candida
 
 | Restaurant | Neighbourhood | Candidates | Best source | Website |
 | --- | --- | ---: | --- | --- |
-| Greco Pizza | West End | 44 | official_page_thumbnail_candidate | https://greco.ca/ |
+| Greco Pizza | West End | 45 | directory_source_image | https://greco.ca/ |
 | Jungle Jim's | Bayers Lake Business Park | 33 | official_page_thumbnail_candidate | https://junglejims.ca/ |
 | The Bicycle Thief | Waterfront | 28 | official_page_thumbnail_candidate | https://bicyclethief.ca/ |
 | Downtown Pizza | Dartmouth | 27 | official_page_thumbnail_candidate | https://downtownpizza.ca/ |
