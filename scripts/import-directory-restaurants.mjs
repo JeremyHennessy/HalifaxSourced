@@ -435,6 +435,132 @@ function parseSackvilleDirectory(html, sourceMeta, options = {}) {
   }
   return records;
 }
+function metaContent(html, key) {
+  const escaped = String(key).replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  const patterns = [
+    new RegExp(`<meta\\b(?=[^>]*(?:property|name)\\s*=\\s*["']${escaped}["'])(?=[^>]*content\\s*=\\s*["']([^"']*)["'])[^>]*>`, "i"),
+    new RegExp(`<meta\\b(?=[^>]*content\\s*=\\s*["']([^"']*)["'])(?=[^>]*(?:property|name)\\s*=\\s*["']${escaped}["'])[^>]*>`, "i")
+  ];
+  for (const pattern of patterns) {
+    const match = String(html).match(pattern);
+    if (match?.[1]) return decode(match[1]).replace(/\s+/g, " ").trim();
+  }
+  return null;
+}
+
+function bayersLakeDirectoryLinks(html, baseUrl) {
+  const seen = new Set();
+  const links = [];
+  for (const match of String(html).matchAll(/<script[^>]*type=["']application\/ld\+json["'][^>]*>([\s\S]*?)<\/script>/gi)) {
+    try {
+      const payload = JSON.parse(match[1]);
+      const items = payload?.mainEntity?.itemListElement || payload?.itemListElement || [];
+      for (const item of items) {
+        const name = decode(item?.name || item?.item?.name || "").replace(/\s+/g, " ").trim();
+        const url = safeUrl(item?.url || item?.item?.url, baseUrl);
+        const key = `${normalize(name)}|${url}`;
+        if (!name || !url || seen.has(key) || name.length > 120) continue;
+        seen.add(key);
+        links.push({ name, url });
+      }
+    } catch {}
+  }
+  if (links.length) return links;
+
+  for (const match of String(html).matchAll(/<a\b[^>]*href\s*=\s*["']([^"']+)["'][^>]*>([\s\S]*?)<\/a>/gi)) {
+    const url = safeUrl(match[1], baseUrl);
+    const name = decode(match[2]).replace(/\s+/g, " ").trim();
+    if (!url || !name || /^(?:View Details|Categories|Tags)$/i.test(name) || name.length > 120) continue;
+    if (canonicalHost(url) !== canonicalHost(baseUrl)) continue;
+    const path = new URL(url).pathname;
+    if (!/^\/[a-z0-9-]+\/?$/i.test(path) || /^\/(?:category|tag)\/?$/i.test(path)) continue;
+    const key = `${normalize(name)}|${url}`;
+    if (!normalize(name) || seen.has(key)) continue;
+    seen.add(key);
+    links.push({ name, url });
+  }
+  return links;
+}
+
+function mapsAddress(html, baseUrl) {
+  for (const match of String(html).matchAll(/<a\b[^>]*href\s*=\s*["']([^"']+)["'][^>]*>([\s\S]*?)<\/a>/gi)) {
+    const url = safeUrl(match[1], baseUrl);
+    if (!url || !/(?:^|\.)google\.(?:com|ca)$|maps\.app\.goo\.gl$/i.test(canonicalHost(url))) continue;
+    const parsed = new URL(url);
+    const value = parsed.searchParams.get("q") || parsed.searchParams.get("query") || decode(match[2]);
+    const address = decodeURIComponent(value || "").replace(/\s+/g, " ").trim();
+    if (/Halifax|Nova Scotia|\bNS\b|Bayers Lake|Chain Lake|Lacewood|Parkland/i.test(address)) return address;
+  }
+  return null;
+}
+
+function parseBayersLakeDetail(html, url, item) {
+  const footerIndex = String(html).search(/<footer\b|Burnside Park|Bayers Lake Park Association/i);
+  const detailHtml = footerIndex > 0 ? String(html).slice(0, footerIndex) : String(html);
+  const title = decode((detailHtml.match(/<h1\b[^>]*>([\s\S]*?)<\/h1>/i) || [])[1] || metaContent(detailHtml, "og:title") || item?.name || "")
+    .replace(/\s+-\s+Bayers Lake Business Directory\s*$/i, "")
+    .replace(/\s+/g, " ")
+    .trim();
+  const name = title.replace(/\s+[–-]\s+Bayers Lake.*$/i, "").trim() || item?.name;
+  if (!name || name.length > 120) return null;
+
+  const text = decode(detailHtml);
+  const lines = text.split(/\n+/).map((line) => line.trim()).filter(Boolean);
+  const outbound = classifyOutbound(detailHtml, url);
+  if (outbound.website && /(?:^|\.)bayerslakepark\.com$|(?:^|\.)burnsidepark\.com$|(?:^|\.)directoryeasy\.com$/i.test(canonicalHost(outbound.website))) outbound.website = null;
+  outbound.socialProfiles = outbound.socialProfiles.filter((profile, index, all) => {
+    if (/bayerslakepark|directoryeasy|burnsidepark/i.test(profile.url)) return false;
+    return all.findIndex((candidate) => candidate.platform === profile.platform && candidate.url === profile.url) === index;
+  });
+  const imageUrl = safeUrl(metaContent(detailHtml, "og:image") || metaContent(detailHtml, "twitter:image"), url);
+  const description = metaContent(detailHtml, "description") || metaContent(detailHtml, "og:description");
+  const address = mapsAddress(detailHtml, url) || extractAddress(lines, "Halifax");
+  const phone = extractPhone(text);
+  if (!address && !phone && !outbound.website && !outbound.socialProfiles.length && !outbound.actionLinks.length && !outbound.linkHubs.length) return null;
+
+  return {
+    id: `blbd-${slug(name)}-${slug(address || new URL(url).pathname.split("/").filter(Boolean).at(-1) || "restaurant")}`,
+    name,
+    category: "Restaurants",
+    description: description || null,
+    address,
+    city: "Halifax",
+    neighborhood: "Bayers Lake",
+    website: outbound.website,
+    socialProfiles: outbound.socialProfiles,
+    linkHubs: outbound.linkHubs,
+    actionLinks: outbound.actionLinks,
+    phone,
+    sourceImageUrl: imageUrl || null,
+    rightsState: imageUrl ? "requires_rights_review" : null,
+    sourceId: "bayers-lake-restaurants",
+    sourceName: "Bayers Lake Business Directory",
+    sourceKind: "business_improvement_district_directory",
+    sourceUrl: url,
+    observedAt: new Date().toISOString(),
+    reviewState: "directory-listed"
+  };
+}
+
+async function fetchBayersLakeDirectory(sourceMeta) {
+  const records = [];
+  const { html, resolvedUrl } = await get(sourceMeta.url);
+  const links = bayersLakeDirectoryLinks(html, resolvedUrl);
+  for (let index = 0; index < links.length; index += 5) {
+    const batch = links.slice(index, index + 5);
+    const results = await Promise.all(batch.map(async (item) => {
+      try {
+        const { html: detailHtml, resolvedUrl: detailUrl } = await get(item.url);
+        return parseBayersLakeDetail(detailHtml, detailUrl, item);
+      } catch (error) {
+        failures.push({ sourceId: sourceMeta.id, sourceName: sourceMeta.name, sourceUrl: item.url, reason: error.message });
+        return null;
+      }
+    }));
+    records.push(...results.filter(Boolean));
+  }
+  return { records, links, checked: links.length, unknown: records.filter((record) => !knownNames.has(normalize(record.name))).length };
+}
 function quinpoolMemberLinks(html, baseUrl) {
   const seen = new Set();
   const links = [];
@@ -605,6 +731,23 @@ try {
   });
 } catch (error) {
   failures.push({ sourceId: quinpoolSource.id, sourceName: quinpoolSource.name, sourceUrl: quinpoolSource.url, reason: error.message });
+}
+const bayersLakeSource = source("bayers-lake-restaurants");
+try {
+  const result = await fetchBayersLakeDirectory(bayersLakeSource);
+  if (result.links.length < 10) throw new Error(`parser_yield_below_expected:${result.links.length}<10`);
+  records.push(...result.records);
+  sourceMeta.push({
+    id: bayersLakeSource.id,
+    name: bayersLakeSource.name,
+    kind: bayersLakeSource.kind,
+    url: bayersLakeSource.url,
+    directoryEntriesObserved: result.links.length,
+    newNameCandidatesChecked: result.checked,
+    parserMode: "next_static_business_directory"
+  });
+} catch (error) {
+  failures.push({ sourceId: bayersLakeSource.id, sourceName: bayersLakeSource.name, sourceUrl: bayersLakeSource.url, reason: error.message });
 }
 for (const config of [
   { sourceId: "downtown-dartmouth-food-drink", city: "Dartmouth", neighborhood: "Downtown Dartmouth", idPrefix: "ddbc", minimumObserved: 30 },

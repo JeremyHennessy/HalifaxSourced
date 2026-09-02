@@ -1,6 +1,6 @@
 # Halifax Sourced thumbnail coverage report
 
-Generated: 2026-09-02T11:16:24.375Z
+Generated: 2026-09-02T16:14:15.241Z
 
 This report tracks source-backed image leads for restaurant thumbnails. It separates production-approved media from candidates that still need review, attribution, or permission before they can become default restaurant card imagery.
 
@@ -16,28 +16,28 @@ This report tracks source-backed image leads for restaurant thumbnails. It separ
 | Promotion queue | 99 | 13.4% |
 | Discovery queue | 550 | 74.3% |
 
-Total thumbnail candidates: **2674**. Review-needed candidates: **2601**. Fetch failures in the latest run: **47**.
+Total thumbnail candidates: **2712**. Review-needed candidates: **2639**. Fetch failures in the latest run: **45**.
 
 ## Candidate source mix
 
 | Source kind | Candidates |
 | --- | ---: |
-| official_page_thumbnail_candidate | 2,534 |
+| official_page_thumbnail_candidate | 2,571 |
 | approved_restaurant_media | 73 |
 | public_campaign_menu_image | 41 |
-| directory_source_image | 19 |
+| directory_source_image | 20 |
 | official_feed_media | 7 |
 
 ## Review and rights state
 
 | Review state | Candidates |
 | --- | ---: |
-| candidate_review | 2,601 |
+| candidate_review | 2,639 |
 | approved | 73 |
 
 | Rights state | Candidates |
 | --- | ---: |
-| requires_rights_review | 2,601 |
+| requires_rights_review | 2,639 |
 | production_approved | 73 |
 
 ## Promotion queue
@@ -47,7 +47,8 @@ Restaurants below are missing approved thumbnails but have source-backed candida
 | Restaurant | Neighbourhood | Candidates | Best source | Website |
 | --- | --- | ---: | --- | --- |
 | Greco Pizza | West End | 45 | directory_source_image | https://greco.ca/ |
-| Jungle Jim's | Bayers Lake Business Park | 33 | official_page_thumbnail_candidate | https://junglejims.ca/ |
+| India Paradise | Downtown | 37 | official_page_thumbnail_candidate | https://www.indiaparadise.ca/ |
+| Jungle Jim's | Bayers Lake Business Park | 34 | directory_source_image | https://junglejims.ca/ |
 | The Bicycle Thief | Waterfront | 28 | official_page_thumbnail_candidate | https://bicyclethief.ca/ |
 | Downtown Pizza | Dartmouth | 27 | official_page_thumbnail_candidate | https://downtownpizza.ca/ |
 | Durty Nelly's Irish Pub | Downtown | 25 | official_page_thumbnail_candidate | https://durtynellys.ca/ |
@@ -57,7 +58,6 @@ Restaurants below are missing approved thumbnails but have source-backed candida
 | Jacky's Cafe | South End | 19 | official_page_thumbnail_candidate | https://jackyscafehalifax.com/ |
 | Chinatown | Armdale / Fairview | 18 | official_page_thumbnail_candidate | https://www.chinatownhalifax.com/ |
 | Great Wall Restaurant | Downtown | 18 | official_page_thumbnail_candidate | http://www.thegreatwall.ca/ |
-| India Paradise | Downtown | 18 | official_page_thumbnail_candidate | https://www.indiaparadise.ca/ |
 | Glitter Bean Cafe | South End | 17 | official_page_thumbnail_candidate | https://www.glitterbeancafe.com/ |
 | in spring asian fusion cuisine | Downtown | 17 | official_page_thumbnail_candidate | https://www.inspringhotpot.com/ |
 | Mashawee Mediterranean Grill | Downtown | 17 | official_page_thumbnail_candidate | https://www.mashaweemediterraneangrill.ca/ |
