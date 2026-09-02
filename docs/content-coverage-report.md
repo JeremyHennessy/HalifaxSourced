@@ -1,6 +1,6 @@
 # Halifax Sourced content coverage snapshot
 
-Generated: 2026-09-02T16:14:15.753Z
+Generated: 2026-09-02T17:43:38.071Z
 Source/deployment commit: supplied by CI for deployable snapshots.
 
 This is the reconciled snapshot produced from the same data layers packaged for deployment. Unknown values remain unknown; source leads are not promoted to verified facts.

@@ -99,6 +99,22 @@
       "enabled": true
     },
     {
+      "id": "rans-restaurant-directory",
+      "name": "Restaurant Association of Nova Scotia restaurant directory",
+      "kind": "restaurant_association_directory",
+      "url": "https://rans.ca/restaurants/",
+      "apiUrl": "https://rans.ca/wp-json/wp/v2",
+      "geographicScope": ["Halifax", "Dartmouth", "Bedford", "Sackville", "Halifax Regional Municipality"],
+      "contentTypes": ["place_identity", "address", "phone", "website", "social_profile", "description", "cuisine", "accessibility", "patio", "review_image_candidate"],
+      "priority": 2,
+      "authorityClass": "trusted_local_source",
+      "refreshFrequency": "weekly",
+      "parserMode": "wordpress_rest_search_plus_detail_pages",
+      "robotsReviewed": "runtime_checked",
+      "termsReviewed": "public_restaurant_association_directory_reviewed",
+      "enabled": true
+    },
+    {
       "id": "bayers-lake-restaurants",
       "name": "Bayers Lake Business Directory Restaurants",
       "kind": "business_improvement_district_directory",
