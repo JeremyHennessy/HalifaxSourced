@@ -3,7 +3,7 @@ import { mkdir, readFile, writeFile } from "node:fs/promises";
 const payload = JSON.parse(await readFile(new URL("../data/build/public-special-source-leads.json", import.meta.url), "utf8"));
 const catalog = JSON.parse(await readFile(new URL("../data/build/catalog.json", import.meta.url), "utf8"));
 const ids = new Set((catalog.restaurants || []).map((restaurant) => restaurant.id));
-const allowedSourceIds = new Set(["halifax-events-happy-hour", "discover-halifax-dine-around-2026"]);
+const allowedSourceIds = new Set(["halifax-events-happy-hour", "discover-halifax-dine-around-2026", "downtown-dartmouth-food-crawl-spring-2026"]);
 const errors = [];
 const warnings = [];
 const seen = new Set();
@@ -53,6 +53,7 @@ const report = {
   conflicts: payload.counts?.conflicts || 0,
   happyHour: payload.counts?.happyHour || 0,
   seasonalCampaign: payload.counts?.seasonalCampaign || 0,
+  foodCrawl: payload.counts?.foodCrawl || 0,
   failures: payload.failures || [],
   errors,
   warnings

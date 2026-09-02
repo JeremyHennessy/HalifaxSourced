@@ -1,13 +1,13 @@
 window.HALIFAX_RECENT_SOCIAL_POSTS = {
   "version": 1,
-  "generatedAt": "2026-09-01T19:11:06.217Z",
+  "generatedAt": "2026-09-01T23:44:14.758Z",
   "lookbackDays": 180,
   "summaryLimit": 420,
   "inputCounts": {
     "websiteFeedPosts": 14,
     "websitePagePosts": 661,
     "socialApiPosts": 0,
-    "publicSpecialPosts": 82,
+    "publicSpecialPosts": 92,
     "websiteFeedSignals": 4,
     "websitePageSignals": 659,
     "socialApiSignals": 0
@@ -22,14 +22,14 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
     },
     "metaProfilesAttempted": 0,
     "metaPostsObserved": 0,
-    "publicSpecialSourceGeneratedAt": "2026-09-01T17:40:18.642Z",
-    "publicSpecialSourceRecords": 113
+    "publicSpecialSourceGeneratedAt": "2026-09-01T23:43:35.605Z",
+    "publicSpecialSourceRecords": 143
   },
   "counts": {
-    "records": 240,
-    "restaurantsWithRecentPosts": 102,
+    "records": 247,
+    "restaurantsWithRecentPosts": 108,
     "categoryCounts": {
-      "specials": 131,
+      "specials": 138,
       "openings": 2,
       "menu": 39,
       "events": 11,
@@ -42,10 +42,10 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
     "platformCounts": {
       "official_page": 204,
       "website_feed": 12,
-      "public_source": 24
+      "public_source": 31
     },
     "reviewStateCounts": {
-      "source_signal": 145,
+      "source_signal": 152,
       "needs_date_review": 89,
       "needs_category_review": 6
     }
@@ -9723,7 +9723,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
       ],
       "publishedAt": "2026-08-17T11:22:21.000Z",
       "observedAt": "2026-09-01T15:24:01.706Z",
-      "ageDays": 15,
+      "ageDays": 16,
       "isRecent": true,
       "lookbackDays": 180,
       "confidenceScore": 0.78,
@@ -10227,7 +10227,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "$"
       ],
       "publishedAt": "2026-08-01T19:14:27.870473+00:00",
-      "observedAt": "2026-09-01T17:40:18.642Z",
+      "observedAt": "2026-09-01T23:43:35.605Z",
       "ageDays": 31,
       "isRecent": true,
       "lookbackDays": 180,
@@ -10282,7 +10282,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "$"
       ],
       "publishedAt": "2026-08-01T19:14:27.870473+00:00",
-      "observedAt": "2026-09-01T17:40:18.642Z",
+      "observedAt": "2026-09-01T23:43:35.605Z",
       "ageDays": 31,
       "isRecent": true,
       "lookbackDays": 180,
@@ -10335,7 +10335,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "$"
       ],
       "publishedAt": "2026-08-01T19:14:27.870473+00:00",
-      "observedAt": "2026-09-01T17:40:18.642Z",
+      "observedAt": "2026-09-01T23:43:35.605Z",
       "ageDays": 31,
       "isRecent": true,
       "lookbackDays": 180,
@@ -10382,7 +10382,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "happy hour"
       ],
       "publishedAt": "2026-08-01T19:14:27.870473+00:00",
-      "observedAt": "2026-09-01T17:40:18.642Z",
+      "observedAt": "2026-09-01T23:43:35.605Z",
       "ageDays": 31,
       "isRecent": true,
       "lookbackDays": 180,
@@ -10437,7 +10437,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "$"
       ],
       "publishedAt": "2026-08-01T19:14:27.870473+00:00",
-      "observedAt": "2026-09-01T17:40:18.642Z",
+      "observedAt": "2026-09-01T23:43:35.605Z",
       "ageDays": 31,
       "isRecent": true,
       "lookbackDays": 180,
@@ -10492,7 +10492,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "$"
       ],
       "publishedAt": "2026-08-01T19:14:27.870473+00:00",
-      "observedAt": "2026-09-01T17:40:18.642Z",
+      "observedAt": "2026-09-01T23:43:35.605Z",
       "ageDays": 31,
       "isRecent": true,
       "lookbackDays": 180,
@@ -10547,7 +10547,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "$"
       ],
       "publishedAt": "2026-08-01T19:14:27.870473+00:00",
-      "observedAt": "2026-09-01T17:40:18.642Z",
+      "observedAt": "2026-09-01T23:43:35.605Z",
       "ageDays": 31,
       "isRecent": true,
       "lookbackDays": 180,
@@ -10602,7 +10602,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "$"
       ],
       "publishedAt": "2026-08-01T19:14:27.870473+00:00",
-      "observedAt": "2026-09-01T17:40:18.642Z",
+      "observedAt": "2026-09-01T23:43:35.605Z",
       "ageDays": 31,
       "isRecent": true,
       "lookbackDays": 180,
@@ -10657,7 +10657,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "$"
       ],
       "publishedAt": "2026-08-01T19:14:27.870473+00:00",
-      "observedAt": "2026-09-01T17:40:18.642Z",
+      "observedAt": "2026-09-01T23:43:35.605Z",
       "ageDays": 31,
       "isRecent": true,
       "lookbackDays": 180,
@@ -10712,7 +10712,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "$"
       ],
       "publishedAt": "2026-08-01T19:14:27.870473+00:00",
-      "observedAt": "2026-09-01T17:40:18.642Z",
+      "observedAt": "2026-09-01T23:43:35.605Z",
       "ageDays": 31,
       "isRecent": true,
       "lookbackDays": 180,
@@ -10767,7 +10767,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "$"
       ],
       "publishedAt": "2026-08-01T19:14:27.870473+00:00",
-      "observedAt": "2026-09-01T17:40:18.642Z",
+      "observedAt": "2026-09-01T23:43:35.605Z",
       "ageDays": 31,
       "isRecent": true,
       "lookbackDays": 180,
@@ -10814,7 +10814,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "happy hour"
       ],
       "publishedAt": "2026-08-01T19:14:27.870473+00:00",
-      "observedAt": "2026-09-01T17:40:18.642Z",
+      "observedAt": "2026-09-01T23:43:35.605Z",
       "ageDays": 31,
       "isRecent": true,
       "lookbackDays": 180,
@@ -10869,7 +10869,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "menu"
       ],
       "publishedAt": "2026-08-01T19:14:27.870473+00:00",
-      "observedAt": "2026-09-01T17:40:18.642Z",
+      "observedAt": "2026-09-01T23:43:35.605Z",
       "ageDays": 31,
       "isRecent": true,
       "lookbackDays": 180,
@@ -10928,7 +10928,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "specials"
       ],
       "publishedAt": "2026-08-01T19:14:27.870473+00:00",
-      "observedAt": "2026-09-01T17:40:18.642Z",
+      "observedAt": "2026-09-01T23:43:35.605Z",
       "ageDays": 31,
       "isRecent": true,
       "lookbackDays": 180,
@@ -10973,7 +10973,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "oyster_special"
       ],
       "publishedAt": "2026-08-01T19:14:27.870473+00:00",
-      "observedAt": "2026-09-01T17:40:18.642Z",
+      "observedAt": "2026-09-01T23:43:35.605Z",
       "ageDays": 31,
       "isRecent": true,
       "lookbackDays": 180,
@@ -11036,7 +11036,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "menu"
       ],
       "publishedAt": "2026-08-01T19:14:27.870473+00:00",
-      "observedAt": "2026-09-01T17:40:18.642Z",
+      "observedAt": "2026-09-01T23:43:35.605Z",
       "ageDays": 31,
       "isRecent": true,
       "lookbackDays": 180,
@@ -11093,7 +11093,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "specials"
       ],
       "publishedAt": "2026-08-01T19:14:27.870473+00:00",
-      "observedAt": "2026-09-01T17:40:18.642Z",
+      "observedAt": "2026-09-01T23:43:35.605Z",
       "ageDays": 31,
       "isRecent": true,
       "lookbackDays": 180,
@@ -11148,7 +11148,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "$"
       ],
       "publishedAt": "2026-08-01T19:14:27.870473+00:00",
-      "observedAt": "2026-09-01T17:40:18.642Z",
+      "observedAt": "2026-09-01T23:43:35.605Z",
       "ageDays": 31,
       "isRecent": true,
       "lookbackDays": 180,
@@ -11203,7 +11203,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "$"
       ],
       "publishedAt": "2026-08-01T19:14:27.870473+00:00",
-      "observedAt": "2026-09-01T17:40:18.642Z",
+      "observedAt": "2026-09-01T23:43:35.605Z",
       "ageDays": 31,
       "isRecent": true,
       "lookbackDays": 180,
@@ -11250,7 +11250,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "happy hour"
       ],
       "publishedAt": "2026-08-01T19:14:27.870473+00:00",
-      "observedAt": "2026-09-01T17:40:18.642Z",
+      "observedAt": "2026-09-01T23:43:35.605Z",
       "ageDays": 31,
       "isRecent": true,
       "lookbackDays": 180,
@@ -11305,7 +11305,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "$"
       ],
       "publishedAt": "2026-08-01T19:14:27.870473+00:00",
-      "observedAt": "2026-09-01T17:40:18.642Z",
+      "observedAt": "2026-09-01T23:43:35.605Z",
       "ageDays": 31,
       "isRecent": true,
       "lookbackDays": 180,
@@ -11360,7 +11360,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "$"
       ],
       "publishedAt": "2026-08-01T19:14:27.870473+00:00",
-      "observedAt": "2026-09-01T17:40:18.642Z",
+      "observedAt": "2026-09-01T23:43:35.605Z",
       "ageDays": 31,
       "isRecent": true,
       "lookbackDays": 180,
@@ -11407,7 +11407,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "happy hour"
       ],
       "publishedAt": "2026-08-01T19:14:27.870473+00:00",
-      "observedAt": "2026-09-01T17:40:18.642Z",
+      "observedAt": "2026-09-01T23:43:35.605Z",
       "ageDays": 31,
       "isRecent": true,
       "lookbackDays": 180,
@@ -11462,7 +11462,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "$"
       ],
       "publishedAt": "2026-08-01T19:14:27.870473+00:00",
-      "observedAt": "2026-09-01T17:40:18.642Z",
+      "observedAt": "2026-09-01T23:43:35.605Z",
       "ageDays": 31,
       "isRecent": true,
       "lookbackDays": 180,
@@ -11759,7 +11759,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
       ],
       "publishedAt": "2026-07-30T07:55:33.000Z",
       "observedAt": "2026-09-01T15:24:24.142Z",
-      "ageDays": 33,
+      "ageDays": 34,
       "isRecent": true,
       "lookbackDays": 180,
       "confidenceScore": 0.78,
@@ -11889,7 +11889,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
       ],
       "publishedAt": "2026-07-28T08:47:42.000Z",
       "observedAt": "2026-09-01T15:24:23.932Z",
-      "ageDays": 35,
+      "ageDays": 36,
       "isRecent": true,
       "lookbackDays": 180,
       "confidenceScore": 0.78,
@@ -13491,6 +13491,335 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
       "associationBasis": "same_site_official_page"
     },
     {
+      "id": "public_source-6e88c884956eca6914",
+      "restaurantId": "osm-node-12938312911-churned",
+      "restaurantName": "Churned",
+      "platform": "public_source",
+      "sourceFamily": "public_directory",
+      "sourceLabel": "Public source",
+      "sourceKind": "public_food_crawl_event",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://www.downtowndartmouth.ca/foodcrawl",
+      "mediaUrl": null,
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Mini Sundae $6.50",
+      "summary": "A scoop of vanilla ice cream, topped with polenta shortcake, blackberry compote, and whipped cream (vegan and gluten free) Price from $6.5 CAD. Downtown Dartmouth Spring Food Crawl, May 21, 2026, 5:30 PM-8:00 PM or sell-out",
+      "primaryCategory": "specials",
+      "primaryCategoryLabel": "Special",
+      "categories": [
+        {
+          "id": "specials",
+          "label": "Special",
+          "terms": [
+            "food_crawl_sample",
+            "food_crawl_special",
+            "$"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "food_crawl_sample",
+        "food_crawl_special",
+        "$"
+      ],
+      "publishedAt": "2026-05-21",
+      "observedAt": "2026-09-01T23:43:35.605Z",
+      "ageDays": 104,
+      "isRecent": true,
+      "lookbackDays": 180,
+      "confidenceScore": 0.7,
+      "confidence": "matched_public_directory_signal",
+      "reviewState": "source_signal",
+      "associationBasis": "exact_name"
+    },
+    {
+      "id": "public_source-512855562e43837f6c",
+      "restaurantId": "dear-friend",
+      "restaurantName": "Dear Friend Bar",
+      "platform": "public_source",
+      "sourceFamily": "public_directory",
+      "sourceLabel": "Public source",
+      "sourceKind": "public_food_crawl_event",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://www.downtowndartmouth.ca/foodcrawl",
+      "mediaUrl": null,
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Oysters $2",
+      "summary": "Slushies Price from $2 CAD. Downtown Dartmouth Spring Food Crawl, May 21, 2026, 5:30 PM-8:00 PM or sell-out",
+      "primaryCategory": "specials",
+      "primaryCategoryLabel": "Special",
+      "categories": [
+        {
+          "id": "specials",
+          "label": "Special",
+          "terms": [
+            "food_crawl_sample",
+            "drink_special",
+            "$"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "food_crawl_sample",
+        "drink_special",
+        "$"
+      ],
+      "publishedAt": "2026-05-21",
+      "observedAt": "2026-09-01T23:43:35.605Z",
+      "ageDays": 104,
+      "isRecent": true,
+      "lookbackDays": 180,
+      "confidenceScore": 0.7,
+      "confidence": "matched_public_directory_signal",
+      "reviewState": "source_signal",
+      "associationBasis": "exact_name"
+    },
+    {
+      "id": "public_source-ff9edd9e2b00f09e05",
+      "restaurantId": "osm-node-11551984275-doraku",
+      "restaurantName": "Doraku",
+      "platform": "public_source",
+      "sourceFamily": "public_directory",
+      "sourceLabel": "Public source",
+      "sourceKind": "public_food_crawl_event",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://www.downtowndartmouth.ca/foodcrawl",
+      "mediaUrl": null,
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Chicken Cartilage $5",
+      "summary": "Price from $5 CAD. Downtown Dartmouth Spring Food Crawl, May 21, 2026, 5:30 PM-8:00 PM or sell-out",
+      "primaryCategory": "specials",
+      "primaryCategoryLabel": "Special",
+      "categories": [
+        {
+          "id": "specials",
+          "label": "Special",
+          "terms": [
+            "food_crawl_sample",
+            "food_crawl_special",
+            "$"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "food_crawl_sample",
+        "food_crawl_special",
+        "$"
+      ],
+      "publishedAt": "2026-05-21",
+      "observedAt": "2026-09-01T23:43:35.605Z",
+      "ageDays": 104,
+      "isRecent": true,
+      "lookbackDays": 180,
+      "confidenceScore": 0.7,
+      "confidence": "matched_public_directory_signal",
+      "reviewState": "source_signal",
+      "associationBasis": "exact_name"
+    },
+    {
+      "id": "public_source-b4030fb33d1161d676",
+      "restaurantId": "osm-node-11239721834-humble-pie-kitchen",
+      "restaurantName": "Humble Pie",
+      "platform": "public_source",
+      "sourceFamily": "public_directory",
+      "sourceLabel": "Public source",
+      "sourceKind": "public_food_crawl_event",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://www.downtowndartmouth.ca/foodcrawl",
+      "mediaUrl": null,
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Standard Pies (various flavours) $8",
+      "summary": "Price from $8 CAD. Downtown Dartmouth Spring Food Crawl, May 21, 2026, 5:30 PM-8:00 PM or sell-out",
+      "primaryCategory": "specials",
+      "primaryCategoryLabel": "Special",
+      "categories": [
+        {
+          "id": "specials",
+          "label": "Special",
+          "terms": [
+            "food_crawl_sample",
+            "food_crawl_special",
+            "$"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "food_crawl_sample",
+        "food_crawl_special",
+        "$"
+      ],
+      "publishedAt": "2026-05-21",
+      "observedAt": "2026-09-01T23:43:35.605Z",
+      "ageDays": 104,
+      "isRecent": true,
+      "lookbackDays": 180,
+      "confidenceScore": 0.7,
+      "confidence": "matched_public_directory_signal",
+      "reviewState": "source_signal",
+      "associationBasis": "exact_name"
+    },
+    {
+      "id": "public_source-19f680f4874c598622",
+      "restaurantId": "osm-node-8376551845-portland-street-creperie",
+      "restaurantName": "Portland Street Creperie",
+      "platform": "public_source",
+      "sourceFamily": "public_directory",
+      "sourceLabel": "Public source",
+      "sourceKind": "public_food_crawl_event",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://www.downtowndartmouth.ca/foodcrawl",
+      "mediaUrl": null,
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Spicy Fiesta Sample Sized Crepe $10",
+      "summary": "Includes Cheddar, Jalapeno, and Housemade Salsa Price from $10 CAD. Downtown Dartmouth Spring Food Crawl, May 21, 2026, 5:30 PM-8:00 PM or sell-out",
+      "primaryCategory": "specials",
+      "primaryCategoryLabel": "Special",
+      "categories": [
+        {
+          "id": "specials",
+          "label": "Special",
+          "terms": [
+            "food_crawl_sample",
+            "food_crawl_special",
+            "$"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "food_crawl_sample",
+        "food_crawl_special",
+        "$"
+      ],
+      "publishedAt": "2026-05-21",
+      "observedAt": "2026-09-01T23:43:35.605Z",
+      "ageDays": 104,
+      "isRecent": true,
+      "lookbackDays": 180,
+      "confidenceScore": 0.7,
+      "confidence": "matched_public_directory_signal",
+      "reviewState": "source_signal",
+      "associationBasis": "exact_name"
+    },
+    {
+      "id": "public_source-f0a7987d5bd54271a4",
+      "restaurantId": "osm-node-3801688860-revana-pizza",
+      "restaurantName": "Revana Pizza",
+      "platform": "public_source",
+      "sourceFamily": "public_directory",
+      "sourceLabel": "Public source",
+      "sourceKind": "public_food_crawl_event",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://www.downtowndartmouth.ca/foodcrawl",
+      "mediaUrl": null,
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Mini Donair $9 tax-in",
+      "summary": "Guest/vendor note: Whiskey's Lounge. Price from $9 CAD. Downtown Dartmouth Spring Food Crawl, May 21, 2026, 5:30 PM-8:00 PM or sell-out",
+      "primaryCategory": "specials",
+      "primaryCategoryLabel": "Special",
+      "categories": [
+        {
+          "id": "specials",
+          "label": "Special",
+          "terms": [
+            "food_crawl_sample",
+            "food_crawl_special",
+            "$"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "food_crawl_sample",
+        "food_crawl_special",
+        "$"
+      ],
+      "publishedAt": "2026-05-21",
+      "observedAt": "2026-09-01T23:43:35.605Z",
+      "ageDays": 104,
+      "isRecent": true,
+      "lookbackDays": 180,
+      "confidenceScore": 0.7,
+      "confidence": "matched_public_directory_signal",
+      "reviewState": "source_signal",
+      "associationBasis": "exact_name"
+    },
+    {
+      "id": "public_source-870a2569d86e3c7a83",
+      "restaurantId": "osm-node-4428984290-stone-pizza",
+      "restaurantName": "Stone Pizza",
+      "platform": "public_source",
+      "sourceFamily": "public_directory",
+      "sourceLabel": "Public source",
+      "sourceKind": "public_food_crawl_event",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://www.downtowndartmouth.ca/foodcrawl",
+      "mediaUrl": null,
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Black Garlic Pepperoni Slice $6",
+      "summary": "Price from $6 CAD. Downtown Dartmouth Spring Food Crawl, May 21, 2026, 5:30 PM-8:00 PM or sell-out",
+      "primaryCategory": "specials",
+      "primaryCategoryLabel": "Special",
+      "categories": [
+        {
+          "id": "specials",
+          "label": "Special",
+          "terms": [
+            "food_crawl_sample",
+            "food_crawl_special",
+            "$"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "food_crawl_sample",
+        "food_crawl_special",
+        "$"
+      ],
+      "publishedAt": "2026-05-21",
+      "observedAt": "2026-09-01T23:43:35.605Z",
+      "ageDays": 104,
+      "isRecent": true,
+      "lookbackDays": 180,
+      "confidenceScore": 0.7,
+      "confidence": "matched_public_directory_signal",
+      "reviewState": "source_signal",
+      "associationBasis": "exact_name"
+    },
+    {
       "id": "official_page-d7fe65966e96eb707f",
       "restaurantId": "osm-node-3799422457-cora",
       "restaurantName": "Cora",
@@ -14072,7 +14401,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
       ],
       "publishedAt": "2026-04-02T11:40:44.000Z",
       "observedAt": "2026-09-01T15:25:17.355Z",
-      "ageDays": 152,
+      "ageDays": 153,
       "isRecent": true,
       "lookbackDays": 180,
       "confidenceScore": 0.84,
