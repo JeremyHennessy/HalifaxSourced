@@ -561,6 +561,188 @@ async function fetchBayersLakeDirectory(sourceMeta) {
   }
   return { records, links, checked: links.length, unknown: records.filter((record) => !knownNames.has(normalize(record.name))).length };
 }
+const RANS_SEARCH_TERMS = [
+  "Halifax", "Dartmouth", "Bedford", "Lower Sackville", "Sackville", "Bayers Lake",
+  "Clayton Park", "Hammonds Plains", "Fall River", "Cole Harbour", "Timberlea", "Eastern Passage"
+];
+const RANS_COMMUNITIES = [
+  "Lower Sackville", "Hammonds Plains", "Eastern Passage", "Cole Harbour", "Fall River",
+  "Bayers Lake", "Clayton Park", "Dartmouth", "Bedford", "Timberlea", "Sackville", "Halifax"
+];
+
+async function getJson(url) {
+  if (!(await robotsAllows(url))) throw new Error("robots_disallow");
+  const response = await fetch(url, {
+    headers: { "User-Agent": userAgent, Accept: "application/json" },
+    redirect: "follow",
+    signal: AbortSignal.timeout(15000)
+  });
+  if (!response.ok) throw new Error(`http_${response.status}`);
+  return { json: await response.json(), headers: response.headers, resolvedUrl: response.url || url };
+}
+
+function ransTermsByTaxonomy(record) {
+  const terms = {};
+  for (const group of record?._embedded?.["wp:term"] || []) {
+    for (const term of group || []) {
+      if (!term?.taxonomy || !term.name) continue;
+      if (!terms[term.taxonomy]) terms[term.taxonomy] = [];
+      terms[term.taxonomy].push(decode(term.name).replace(/\s+/g, " ").trim());
+    }
+  }
+  return terms;
+}
+
+function ransMainHtml(html) {
+  const source = String(html);
+  const start = source.search(/<h1\b|FIND A RESTAURANT|post_title/i);
+  const end = source.search(/CONTACT\s+Restaurant Association|<footer\b/i);
+  return source.slice(start > 0 ? start : 0, end > 0 && end > start ? end : source.length);
+}
+
+function ransLabeledUrl(text, label) {
+  const escaped = String(label).replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  const match = String(text).match(new RegExp(`\\b${escaped}\\s+((?:https?:\\/\\/|www\\.)[^\\s]+)`, "i"));
+  if (!match?.[1]) return null;
+  const raw = match[1].replace(/[),.;]+$/g, "");
+  return safeUrl(raw, raw.startsWith("www.") ? "https://" : undefined);
+}
+
+function ransSocialProfiles(text) {
+  const profiles = [];
+  for (const [label, platform] of [["Facebook", "facebook"], ["Instagram", "instagram"], ["YouTube", "youtube"], ["LinkedIn", "linkedin"], ["TikTok", "tiktok"], ["Twitter", "x"], ["X", "x"]]) {
+    const url = ransLabeledUrl(text, label);
+    if (!url || /RestAssocNS|restassocns|rans\.ca/i.test(url)) continue;
+    profiles.push({ platform, url, associationBasis: "trusted_directory_explicit_link" });
+  }
+  return profiles.filter((profile, index, all) => all.findIndex((item) => item.platform === profile.platform && item.url === profile.url) === index);
+}
+function extractRansPhone(html, text) {
+  const tel = String(html).match(/href\s*=\s*["']tel:([^"']+)["']/i)?.[1];
+  const raw = tel || extractPhone(text) || String(text).match(/\b(?:902|782)\d{7}\b/)?.[0] || null;
+  if (!raw) return null;
+  const digits = raw.replace(/\D/g, "");
+  const ten = digits.length === 11 && digits.startsWith("1") ? digits.slice(1) : digits;
+  if (ten.length === 10) return `(${ten.slice(0, 3)}) ${ten.slice(3, 6)}-${ten.slice(6)}`;
+  return raw.trim();
+}
+
+function extractRansAddress(text) {
+  const streetTypes = "Street|St\\.?|Road|Rd\\.?|Drive|Dr\\.?|Avenue|Ave\\.?|Place|Pl\\.?|Lane|Ln\\.?|Boulevard|Blvd\\.?|Highway|Hwy\\.?|Wharf|Mall|Row|Terrace|Way|Crescent|Cres\\.?|Court|Ct\\.?|Parkway|Pkwy\\.?|Trail|Square";
+  const community = RANS_COMMUNITIES.map((item) => item.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")).join("|");
+  const pattern = new RegExp(`\\b\\d{1,5}[A-Z]?[- ](?:[^\\n]{1,120})\\b(?:${streetTypes})\\b(?:[^\\n]{0,180}?(?:${community}|Nova Scotia|\\bNS\\b|Canada)(?:[^\\n]{0,80})?)?`, "i");
+  const match = String(text).replace(/\s+/g, " ").match(pattern);
+  if (!match) return null;
+  return match[0]
+    .replace(/\s+,/g, ",")
+    .replace(/,\s*,/g, ",")
+    .replace(/\s+(?:https?:\/\/|www\.).*$/i, "")
+    .replace(/\s+share\b.*$/i, "")
+    .replace(/\s+CONTACT\b.*$/i, "")
+    .trim();
+}
+
+function inferRansCommunity(record) {
+  const text = [record.address, record.description, record.name].filter(Boolean).join(" ");
+  return RANS_COMMUNITIES.find((community) => new RegExp(`\\b${community.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}\\b`, "i").test(text)) || null;
+}
+
+function parseRansDetail(restRecord, html, sourceMeta) {
+  const detailHtml = ransMainHtml(html);
+  let text = decode(detailHtml);
+  const contactIndex = text.search(/\bCONTACT\s+Restaurant Association\b/i);
+  if (contactIndex > 0) text = text.slice(0, contactIndex).trim();
+  const terms = ransTermsByTaxonomy(restRecord);
+  const title = decode(restRecord?.title?.rendered || metaContent(detailHtml, "og:title") || "").replace(/\s+/g, " ").trim();
+  const name = title.replace(/\s+-\s+Restaurant Association of Nova Scotia\s*$/i, "").trim();
+  if (!name || name.length > 160) return null;
+  const website = ransLabeledUrl(text, "Website");
+  const socialProfiles = ransSocialProfiles(text);
+  const media = restRecord?._embedded?.["wp:featuredmedia"]?.[0];
+  const imageUrl = safeUrl(media?.source_url || metaContent(detailHtml, "og:image"), restRecord.link || sourceMeta.url);
+  const description = metaContent(detailHtml, "og:description") || metaContent(detailHtml, "description");
+  const address = extractRansAddress(text) || extractAddress(text.split(/\n+/), "Halifax");
+  const phone = extractRansPhone(detailHtml, text);
+  const cuisines = terms.restaurant_cuisine || [];
+  const categories = terms.restaurant_category || [];
+  const community = inferRansCommunity({ address, description, name });
+  const featureTerms = [
+    ...(terms.restaurant_accessibility || []).map((value) => `accessibility:${value}`),
+    ...(terms.restaurant_deliverytake || []).map((value) => `service:${value}`),
+    ...(terms.restaurant_parking || []).map((value) => `parking:${value}`),
+    ...(terms["special-events"] || []).map((value) => `event:${value}`)
+  ];
+  if (/allow dogs on patio\s+Yes/i.test(text)) featureTerms.push("patio:dog-friendly");
+  if (!community && !/Halifax|Dartmouth|Bedford|Sackville|Bayers Lake|Clayton Park|Hammonds Plains|Fall River|Cole Harbour|Timberlea|Eastern Passage/i.test(text)) return null;
+  if (!address && !phone && !website && !socialProfiles.length) return null;
+
+  return {
+    id: `rans-${slug(name)}-${slug(address || restRecord.slug || restRecord.id)}`,
+    name,
+    category: categories[0] || "Restaurant Association listing",
+    description: description || null,
+    address,
+    city: community || "Halifax Regional Municipality",
+    neighborhood: community || null,
+    website,
+    socialProfiles,
+    linkHubs: [],
+    actionLinks: [],
+    phone,
+    cuisine: cuisines,
+    tags: [...new Set([...categories, ...cuisines, ...featureTerms])],
+    sourceImageUrl: imageUrl || null,
+    rightsState: imageUrl ? "requires_rights_review" : null,
+    sourceId: sourceMeta.id,
+    sourceName: sourceMeta.name,
+    sourceKind: sourceMeta.kind,
+    sourceUrl: restRecord.link || sourceMeta.url,
+    sourceUpdatedAt: restRecord.modified_gmt || restRecord.modified || null,
+    observedAt: new Date().toISOString(),
+    reviewState: "directory-listed"
+  };
+}
+
+async function fetchRansDirectory(sourceMeta) {
+  const apiBase = (sourceMeta.apiUrl || new URL("/wp-json/wp/v2", sourceMeta.url).href).replace(/\/$/, "");
+  const perPage = 100;
+  const maxPagesPerTerm = Math.max(1, Number(process.env.RANS_SEARCH_PAGE_LIMIT || 2));
+  const ids = new Map();
+  let searchHits = 0;
+  for (const term of RANS_SEARCH_TERMS) {
+    let totalPages = 1;
+    for (let page = 1; page <= Math.min(totalPages, maxPagesPerTerm); page += 1) {
+      const url = `${apiBase}/search?subtype=restaurant&per_page=${perPage}&page=${page}&search=${encodeURIComponent(term)}`;
+      try {
+        const { json, headers } = await getJson(url);
+        totalPages = Number(headers.get("x-wp-totalpages") || 1);
+        searchHits += Number(headers.get("x-wp-total") || json.length || 0);
+        for (const item of json || []) if (item?.id && item?.url) ids.set(item.id, { id: item.id, url: item.url, title: item.title });
+      } catch (error) {
+        failures.push({ sourceId: sourceMeta.id, sourceName: sourceMeta.name, sourceUrl: url, reason: error.message });
+        break;
+      }
+    }
+  }
+
+  const records = [];
+  const targets = [...ids.values()];
+  for (let index = 0; index < targets.length; index += 5) {
+    const batch = targets.slice(index, index + 5);
+    const results = await Promise.all(batch.map(async (item) => {
+      try {
+        const { json: restRecord } = await getJson(`${apiBase}/restaurant/${item.id}?_embed=1`);
+        const { html, resolvedUrl } = await get(restRecord.link || item.url);
+        return parseRansDetail({ ...restRecord, link: resolvedUrl || restRecord.link || item.url }, html, sourceMeta);
+      } catch (error) {
+        failures.push({ sourceId: sourceMeta.id, sourceName: sourceMeta.name, sourceUrl: item.url, reason: error.message });
+        return null;
+      }
+    }));
+    records.push(...results.filter(Boolean));
+  }
+  return { records, links: targets, checked: targets.length, searchHits, unknown: records.filter((record) => !knownNames.has(normalize(record.name))).length };
+}
 function quinpoolMemberLinks(html, baseUrl) {
   const seen = new Set();
   const links = [];
@@ -731,6 +913,24 @@ try {
   });
 } catch (error) {
   failures.push({ sourceId: quinpoolSource.id, sourceName: quinpoolSource.name, sourceUrl: quinpoolSource.url, reason: error.message });
+}
+const ransSource = source("rans-restaurant-directory");
+try {
+  const result = await fetchRansDirectory(ransSource);
+  if (result.records.length < 50) throw new Error(`parser_yield_below_expected:${result.records.length}<50`);
+  records.push(...result.records);
+  sourceMeta.push({
+    id: ransSource.id,
+    name: ransSource.name,
+    kind: ransSource.kind,
+    url: ransSource.url,
+    directoryEntriesObserved: result.links.length,
+    newNameCandidatesChecked: result.checked,
+    searchHitsObserved: result.searchHits,
+    parserMode: "wordpress_rest_search_plus_detail_pages"
+  });
+} catch (error) {
+  failures.push({ sourceId: ransSource.id, sourceName: ransSource.name, sourceUrl: ransSource.url, reason: error.message });
 }
 const bayersLakeSource = source("bayers-lake-restaurants");
 try {

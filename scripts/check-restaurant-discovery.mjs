@@ -23,7 +23,8 @@ const warnings = [];
 const allowedDirectoryKinds = new Set([
   "nova_scotia_tourism_directory",
   "downtown_halifax_directory",
-  "business_improvement_district_directory"
+  "business_improvement_district_directory",
+  "restaurant_association_directory"
 ]);
 
 function validUrl(value) {

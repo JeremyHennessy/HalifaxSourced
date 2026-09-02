@@ -1,6 +1,6 @@
 # Halifax Sourced thumbnail coverage report
 
-Generated: 2026-09-02T16:14:15.241Z
+Generated: 2026-09-02T17:43:37.593Z
 
 This report tracks source-backed image leads for restaurant thumbnails. It separates production-approved media from candidates that still need review, attribution, or permission before they can become default restaurant card imagery.
 
@@ -10,34 +10,34 @@ This report tracks source-backed image leads for restaurant thumbnails. It separ
 | --- | ---: | ---: |
 | Catalog restaurants | 740 | 100% |
 | Restaurants with approved thumbnail | 73 | 9.9% |
-| Restaurants with any thumbnail candidate | 190 | 25.7% |
+| Restaurants with any thumbnail candidate | 191 | 25.8% |
 | Restaurants missing approved thumbnail | 667 | 90.1% |
-| Restaurants missing any candidate | 550 | 74.3% |
+| Restaurants missing any candidate | 549 | 74.2% |
 | Promotion queue | 99 | 13.4% |
-| Discovery queue | 550 | 74.3% |
+| Discovery queue | 549 | 74.2% |
 
-Total thumbnail candidates: **2712**. Review-needed candidates: **2639**. Fetch failures in the latest run: **45**.
+Total thumbnail candidates: **2688**. Review-needed candidates: **2615**. Fetch failures in the latest run: **47**.
 
 ## Candidate source mix
 
 | Source kind | Candidates |
 | --- | ---: |
-| official_page_thumbnail_candidate | 2,571 |
+| official_page_thumbnail_candidate | 2,543 |
 | approved_restaurant_media | 73 |
 | public_campaign_menu_image | 41 |
-| directory_source_image | 20 |
+| directory_source_image | 24 |
 | official_feed_media | 7 |
 
 ## Review and rights state
 
 | Review state | Candidates |
 | --- | ---: |
-| candidate_review | 2,639 |
+| candidate_review | 2,615 |
 | approved | 73 |
 
 | Rights state | Candidates |
 | --- | ---: |
-| requires_rights_review | 2,639 |
+| requires_rights_review | 2,615 |
 | production_approved | 73 |
 
 ## Promotion queue
@@ -47,7 +47,6 @@ Restaurants below are missing approved thumbnails but have source-backed candida
 | Restaurant | Neighbourhood | Candidates | Best source | Website |
 | --- | --- | ---: | --- | --- |
 | Greco Pizza | West End | 45 | directory_source_image | https://greco.ca/ |
-| India Paradise | Downtown | 37 | official_page_thumbnail_candidate | https://www.indiaparadise.ca/ |
 | Jungle Jim's | Bayers Lake Business Park | 34 | directory_source_image | https://junglejims.ca/ |
 | The Bicycle Thief | Waterfront | 28 | official_page_thumbnail_candidate | https://bicyclethief.ca/ |
 | Downtown Pizza | Dartmouth | 27 | official_page_thumbnail_candidate | https://downtownpizza.ca/ |
@@ -55,15 +54,16 @@ Restaurants below are missing approved thumbnails but have source-backed candida
 | Jean's Chinese Restaurant | Dartmouth | 24 | official_page_thumbnail_candidate | https://www.jeansrestaurant.ca/ |
 | 2 Doors Down | Dartmouth | 20 | official_page_thumbnail_candidate | https://go2doorsdown.com/ |
 | Mirchi Tandoor | Downtown | 20 | official_page_thumbnail_candidate | https://mirchitandoor.com/ |
-| Jacky's Cafe | South End | 19 | official_page_thumbnail_candidate | https://jackyscafehalifax.com/ |
 | Chinatown | Armdale / Fairview | 18 | official_page_thumbnail_candidate | https://www.chinatownhalifax.com/ |
 | Great Wall Restaurant | Downtown | 18 | official_page_thumbnail_candidate | http://www.thegreatwall.ca/ |
+| India Paradise | Downtown | 18 | official_page_thumbnail_candidate | https://www.indiaparadise.ca/ |
 | Glitter Bean Cafe | South End | 17 | official_page_thumbnail_candidate | https://www.glitterbeancafe.com/ |
 | in spring asian fusion cuisine | Downtown | 17 | official_page_thumbnail_candidate | https://www.inspringhotpot.com/ |
 | Mashawee Mediterranean Grill | Downtown | 17 | official_page_thumbnail_candidate | https://www.mashaweemediterraneangrill.ca/ |
 | Battery Park Beer Bar | Dartmouth | 15 | official_page_thumbnail_candidate | https://batterypark.ca/ |
 | Battery Park Beer Bar & Eatery | Halifax Peninsula | 15 | official_page_thumbnail_candidate | http://batterypark.ca |
 | Cora | Downtown | 15 | official_page_thumbnail_candidate | https://www.chezcora.com/en/breakfast-lunch-restaurants/cora-halifax-downtown/ |
+| Jacky's Cafe | South End | 15 | official_page_thumbnail_candidate | https://jackyscafehalifax.com/ |
 | Brief Break | South End | 13 | official_page_thumbnail_candidate | https://dal.campusdish.com/LocationsAndMenus/WeldonLawBuilding |
 | Fillings Bistro 32 | South End | 13 | official_page_thumbnail_candidate | https://dal.campusdish.com/LocationsAndMenus/FillingsBistroatDentistry |
 | Green Café | South End | 13 | official_page_thumbnail_candidate | https://dal.campusdish.com/LocationsAndMenus/GreenCafeatRoweManagementBuilding |
