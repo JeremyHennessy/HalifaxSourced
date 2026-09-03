@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-03T11:06:48.563Z",
-  "targetCount": 92,
+  "generatedAt": "2026-09-03T13:08:09Z",
+  "targetCount": 117,
   "policy": "Approved restaurant media may include Wikimedia Commons files with explicit reusable licences, documented restaurant-owner submissions, explicitly licensed material, or app-owner-reviewed HTTPS image references from restaurant official websites or feeds. Remote official-site images are linked with source attribution and are not rehosted.",
   "allowedSources": [
     "wikimedia_commons",
@@ -63,7 +63,7 @@
     {
       "restaurantId": "battery-park",
       "name": "Battery Park Beer Bar",
-      "status": "pending_rights_source"
+      "status": "approved"
     },
     {
       "restaurantId": "osm-node-1116387649-bicycle-thief",
@@ -158,7 +158,7 @@
     {
       "restaurantId": "dear-friend",
       "name": "Dear Friend Bar",
-      "status": "pending_rights_source"
+      "status": "approved"
     },
     {
       "restaurantId": "osm-node-5188870965-donnini-s-pizza",
@@ -173,7 +173,7 @@
     {
       "restaurantId": "osm-node-11551984275-doraku",
       "name": "Doraku",
-      "status": "pending_rights_source"
+      "status": "approved"
     },
     {
       "restaurantId": "osm-node-11752717941-east-cup-cafe",
@@ -468,6 +468,131 @@
     {
       "restaurantId": "osm-way-253538107-the-armview-restaurant-and-lounge",
       "name": "The Armview Restaurant & Lounge",
+      "status": "approved"
+    },
+    {
+      "restaurantId": "osm-node-10665783054-ben-and-florentine",
+      "name": "Ben & Florentine",
+      "status": "approved"
+    },
+    {
+      "restaurantId": "osm-node-11552081912-kanpai-izakaya",
+      "name": "Kanpai Izakaya",
+      "status": "approved"
+    },
+    {
+      "restaurantId": "osm-node-11552234300-sushi-nami-royale",
+      "name": "Sushi Nami Royale",
+      "status": "approved"
+    },
+    {
+      "restaurantId": "osm-node-11699344564-second-cup",
+      "name": "Second Cup",
+      "status": "approved"
+    },
+    {
+      "restaurantId": "osm-node-12003152369-station-1-lebanese-kitchen",
+      "name": "Station 1 Lebanese Kitchen",
+      "status": "approved"
+    },
+    {
+      "restaurantId": "osm-node-13141377001-india-paradise",
+      "name": "India Paradise",
+      "status": "approved"
+    },
+    {
+      "restaurantId": "osm-node-13262694122-public-cafe-bakery-and-bar",
+      "name": "Public - Café, Bakery & Bar",
+      "status": "approved"
+    },
+    {
+      "restaurantId": "osm-node-13286396472-matadora-tapas-bar",
+      "name": "Matadora Tapas Bar",
+      "status": "approved"
+    },
+    {
+      "restaurantId": "osm-node-13286456319-water-polo",
+      "name": "Water Polo",
+      "status": "approved"
+    },
+    {
+      "restaurantId": "osm-node-14139904501-battery-park-beer-bar-and-eatery",
+      "name": "Battery Park Beer Bar & Eatery",
+      "status": "approved"
+    },
+    {
+      "restaurantId": "osm-node-2704749449-the-mellow-mug",
+      "name": "The Mellow Mug",
+      "status": "approved"
+    },
+    {
+      "restaurantId": "osm-node-2713247300-pizza-co",
+      "name": "Pizza.Co",
+      "status": "approved"
+    },
+    {
+      "restaurantId": "osm-node-37132580-durty-nelly-s-irish-pub",
+      "name": "Durty Nelly's Irish Pub",
+      "status": "approved"
+    },
+    {
+      "restaurantId": "osm-node-3799422457-cora",
+      "name": "Cora",
+      "status": "approved"
+    },
+    {
+      "restaurantId": "osm-node-4411880103-the-bg",
+      "name": "The BG",
+      "status": "approved"
+    },
+    {
+      "restaurantId": "osm-node-4550004778-st-louis-bar-and-grill",
+      "name": "St. Louis Bar & Grill",
+      "status": "approved"
+    },
+    {
+      "restaurantId": "osm-node-4550005602-starbucks",
+      "name": "Starbucks",
+      "status": "approved"
+    },
+    {
+      "restaurantId": "osm-node-4797459279-tilted-tap",
+      "name": "Tilted Tap",
+      "status": "approved"
+    },
+    {
+      "restaurantId": "osm-node-5150371021-starbucks",
+      "name": "Starbucks",
+      "status": "approved"
+    },
+    {
+      "restaurantId": "osm-node-5161526522-sushi-nami-royale",
+      "name": "Sushi Nami Royale",
+      "status": "approved"
+    },
+    {
+      "restaurantId": "osm-node-7082566320-springhouse-market",
+      "name": "Springhouse Market",
+      "status": "approved"
+    },
+    {
+      "restaurantId": "osm-node-7674175977-moxie-s",
+      "name": "Moxie's",
+      "status": "approved"
+    },
+    {
+      "restaurantId": "osm-node-7674254025-shuck-seafood-raw-bar",
+      "name": "Shuck Seafood + Raw Bar",
+      "status": "approved"
+    },
+    {
+      "restaurantId": "osm-node-8089843368-smokehouse-brewery",
+      "name": "Smokehouse Brewery",
+      "status": "approved"
+    },
+    {
+      "restaurantId": "osm-way-319792807-chinatown",
+      "name": "Chinatown",
       "status": "approved"
     }
   ]

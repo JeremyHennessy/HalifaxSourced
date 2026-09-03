@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-09-03T11:09:30.961Z",
+  "generatedAt": "2026-09-03T13:17:24.835Z",
   "counts": {
     "curated": 10,
     "osm": 736,
     "officialSignals": 290,
     "officialWithValidSite": 289,
     "officialCandidateLinks": 994,
-    "productionMedia": 79,
+    "productionMedia": 107,
     "ownerSubmissions": 0,
     "ownerMediaPendingReview": 0,
     "structuredEvents": 21,
