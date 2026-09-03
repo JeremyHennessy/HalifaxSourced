@@ -1,6 +1,6 @@
 window.HALIFAX_RESTAURANT_MEDIA = {
-  "version": 5,
-  "generatedAt": "2026-08-31T11:50:13.422Z",
+  "version": 6,
+  "generatedAt": "2026-09-03T11:06:48.563Z",
   "records": [
     {
       "restaurantId": "highwayman",
@@ -1022,6 +1022,90 @@ window.HALIFAX_RESTAURANT_MEDIA = {
       "permission": "permitted",
       "permissionConfirmed": true,
       "attribution": "Noggins Coburg, official website",
+      "reviewState": "approved"
+    },
+    {
+      "restaurantId": "2-doors-down",
+      "url": "https://go2doorsdown.com/wp-content/uploads/2024/02/Dinner-1.jpg",
+      "alt": "2 Doors Down official dinner menu image",
+      "sourceUrl": "https://go2doorsdown.com/",
+      "sourceType": "official_site_permitted",
+      "creator": "2 Doors Down",
+      "license": "First-party official site media",
+      "rightsBasis": "Reviewed first-party website or feed image linked from the restaurant official source; remote thumbnail reference only, not rehosted.",
+      "permission": "permitted",
+      "permissionConfirmed": true,
+      "attribution": "2 Doors Down, official website",
+      "reviewState": "approved"
+    },
+    {
+      "restaurantId": "bar-kismet",
+      "url": "https://barkismet.com/wp-content/uploads/2022/10/bar-kismet-patio-30.jpg",
+      "alt": "Bar Kismet official patio image",
+      "sourceUrl": "https://barkismet.com/",
+      "sourceType": "official_site_permitted",
+      "creator": "Bar Kismet",
+      "license": "First-party official site media",
+      "rightsBasis": "Reviewed first-party website or feed image linked from the restaurant official source; remote thumbnail reference only, not rehosted.",
+      "permission": "permitted",
+      "permissionConfirmed": true,
+      "attribution": "Bar Kismet, official website",
+      "reviewState": "approved"
+    },
+    {
+      "restaurantId": "osm-way-83552117-bedford-beer-garden",
+      "url": "https://images.squarespace-cdn.com/content/v1/68293776be1eab027773881e/17f12e90-23e4-4cc2-b711-bfa61b1b5211/Bedford+Beer+Garden+Container",
+      "alt": "Bedford Beer Garden official venue image",
+      "sourceUrl": "https://www.bedfordbeergarden.com/",
+      "sourceType": "official_site_permitted",
+      "creator": "Bedford Beer Garden",
+      "license": "First-party official site media",
+      "rightsBasis": "Reviewed first-party website or feed image linked from the restaurant official source; remote thumbnail reference only, not rehosted.",
+      "permission": "permitted",
+      "permissionConfirmed": true,
+      "attribution": "Bedford Beer Garden, official website",
+      "reviewState": "approved"
+    },
+    {
+      "restaurantId": "osm-node-2714920436-greco-pizza",
+      "url": "https://greco.ca/wp-content/uploads/2025/01/pizza.jpg",
+      "alt": "Greco Pizza official menu pizza image",
+      "sourceUrl": "https://greco.ca/ourmenu/",
+      "sourceType": "official_site_permitted",
+      "creator": "Greco Pizza",
+      "license": "First-party official site media",
+      "rightsBasis": "Reviewed first-party website or feed image linked from the restaurant official source; remote thumbnail reference only, not rehosted.",
+      "permission": "permitted",
+      "permissionConfirmed": true,
+      "attribution": "Greco Pizza, official website",
+      "reviewState": "approved"
+    },
+    {
+      "restaurantId": "the-bicycle-thief",
+      "url": "https://bicyclethief.ca/wp-content/uploads/2021/07/OpeningPatios-3-845x684.jpg",
+      "alt": "The Bicycle Thief official patio image",
+      "sourceUrl": "https://bicyclethief.ca/reservations/",
+      "sourceType": "official_site_permitted",
+      "creator": "The Bicycle Thief",
+      "license": "First-party official site media",
+      "rightsBasis": "Reviewed first-party website or feed image linked from the restaurant official source; remote thumbnail reference only, not rehosted.",
+      "permission": "permitted",
+      "permissionConfirmed": true,
+      "attribution": "The Bicycle Thief, official website",
+      "reviewState": "approved"
+    },
+    {
+      "restaurantId": "osm-way-253538107-the-armview-restaurant-and-lounge",
+      "url": "https://www.thearmview.com/wp-content/uploads/2022/11/breakfast_thearmview.jpg",
+      "alt": "The Armview Restaurant & Lounge official breakfast image",
+      "sourceUrl": "https://www.thearmview.com/breakfast/",
+      "sourceType": "official_site_permitted",
+      "creator": "The Armview Restaurant & Lounge",
+      "license": "First-party official site media",
+      "rightsBasis": "Reviewed first-party website or feed image linked from the restaurant official source; remote thumbnail reference only, not rehosted.",
+      "permission": "permitted",
+      "permissionConfirmed": true,
+      "attribution": "The Armview Restaurant & Lounge, official website",
       "reviewState": "approved"
     }
   ]

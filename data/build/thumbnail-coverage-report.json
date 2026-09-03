@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-02T17:43:37.593Z",
+  "generatedAt": "2026-09-03T11:09:31.300Z",
   "sourceCommitSha": null,
   "definitions": {
     "approvedThumbnail": "A thumbnail candidate tied to an exact restaurant ID with approved review state and production-approved rights status.",
@@ -10,80 +10,57 @@
   },
   "counts": {
     "restaurants": 740,
-    "candidates": 2688,
-    "approvedCandidates": 73,
-    "reviewCandidates": 2615,
-    "restaurantsWithApprovedThumbnail": 73,
-    "restaurantsWithAnyCandidate": 191,
-    "restaurantsMissingApprovedThumbnail": 667,
-    "restaurantsMissingAnyCandidate": 549,
-    "promotionQueue": 99,
-    "discoveryQueue": 549,
+    "candidates": 2108,
+    "approvedCandidates": 79,
+    "reviewCandidates": 2029,
+    "restaurantsWithApprovedThumbnail": 79,
+    "restaurantsWithAnyCandidate": 190,
+    "restaurantsMissingApprovedThumbnail": 661,
+    "restaurantsMissingAnyCandidate": 550,
+    "promotionQueue": 86,
+    "discoveryQueue": 550,
     "fetchFailures": 47
   },
   "coveragePercent": {
-    "approvedThumbnail": 9.9,
-    "anyThumbnailCandidate": 25.8,
-    "missingApprovedThumbnail": 90.1,
-    "missingAnyThumbnailCandidate": 74.2
+    "approvedThumbnail": 10.7,
+    "anyThumbnailCandidate": 25.7,
+    "missingApprovedThumbnail": 89.3,
+    "missingAnyThumbnailCandidate": 74.3
   },
   "candidateMix": {
     "bySourceKind": {
-      "approved_restaurant_media": 73,
-      "official_page_thumbnail_candidate": 2543,
+      "approved_restaurant_media": 79,
+      "official_page_thumbnail_candidate": 1961,
       "official_feed_media": 7,
       "public_campaign_menu_image": 41,
-      "directory_source_image": 24
+      "directory_source_image": 20
     },
     "byReviewState": {
-      "approved": 73,
-      "candidate_review": 2615
+      "approved": 79,
+      "candidate_review": 2029
     },
     "byRightsStatus": {
-      "production_approved": 73,
-      "requires_rights_review": 2615
+      "production_approved": 79,
+      "requires_rights_review": 2029
     },
     "byExtractionMethod": {
-      "approved_media_manifest": 73,
-      "css_background_image": 780,
+      "approved_media_manifest": 79,
       "html_link_image": 231,
-      "html_img_content": 1293,
-      "declared_post_media": 133,
+      "html_img_content": 1289,
+      "css_background_image": 205,
+      "declared_post_media": 130,
       "html_meta_image": 69,
       "jsonld_image": 44,
       "public_special_source_declared_image": 41,
-      "trusted_directory_declared_image": 24
+      "trusted_directory_declared_image": 20
     },
     "byPlatform": {
       "website_feed": 7,
-      "official_page": 126
+      "official_page": 123
     }
   },
   "queues": {
     "promotionQueue": [
-      {
-        "restaurantId": "osm-node-2714920436-greco-pizza",
-        "name": "Greco Pizza",
-        "neighborhood": "West End",
-        "website": "https://greco.ca/",
-        "candidateCount": 45,
-        "sourceKinds": {
-          "directory_source_image": 1,
-          "official_page_thumbnail_candidate": 44
-        },
-        "reviewStates": {
-          "candidate_review": 45
-        },
-        "bestCandidate": {
-          "id": "thumb-4ad44d6128bf7687f2",
-          "thumbnailUrl": "https://sackvillebusiness.com/sites/default/files/styles/fun_category_shop/public/2023-05/Greco%20Pizza%202_0.jpg?itok=QRxiAc5p",
-          "sourceUrl": "https://sackvillebusiness.com/shops-services/greco-pizza",
-          "sourceKind": "directory_source_image",
-          "reviewState": "candidate_review",
-          "rightsStatus": "requires_rights_review",
-          "confidence": "trusted_directory_source_media"
-        }
-      },
       {
         "restaurantId": "osm-node-8841366531-jungle-jim-s",
         "name": "Jungle Jim's",
@@ -108,47 +85,25 @@
         }
       },
       {
-        "restaurantId": "the-bicycle-thief",
-        "name": "The Bicycle Thief",
-        "neighborhood": "Waterfront",
-        "website": "https://bicyclethief.ca/",
-        "candidateCount": 28,
-        "sourceKinds": {
-          "official_page_thumbnail_candidate": 28
-        },
-        "reviewStates": {
-          "candidate_review": 28
-        },
-        "bestCandidate": {
-          "id": "thumb-f1823bd0032e882591",
-          "thumbnailUrl": "https://bertossigroup.com/in-the-news/Best-of-Halifax-Generic-Bronze-Black.png",
-          "sourceUrl": "https://bicyclethief.ca/reservations/",
-          "sourceKind": "official_page_thumbnail_candidate",
-          "reviewState": "candidate_review",
-          "rightsStatus": "requires_rights_review",
-          "confidence": "official_page_declared_remote_image"
-        }
-      },
-      {
         "restaurantId": "osm-node-4797459277-downtown-pizza",
         "name": "Downtown Pizza",
         "neighborhood": "Dartmouth",
         "website": "https://downtownpizza.ca/",
-        "candidateCount": 27,
+        "candidateCount": 26,
         "sourceKinds": {
-          "official_page_thumbnail_candidate": 27
+          "official_page_thumbnail_candidate": 26
         },
         "reviewStates": {
-          "candidate_review": 27
+          "candidate_review": 26
         },
         "bestCandidate": {
-          "id": "thumb-e045e5bd71b5bab650",
-          "thumbnailUrl": "https://downtownpizza.ca/wp-content/plugins/revslider/public/assets/assets/dummy.png",
-          "sourceUrl": "https://downtownpizza.ca/",
+          "id": "thumb-a5694e4abdf6b0e12d",
+          "thumbnailUrl": "https://downtownpizza.ca/wp-content/uploads/2020/09/team01.jpg",
+          "sourceUrl": "https://downtownpizza.ca/menu-2/",
           "sourceKind": "official_page_thumbnail_candidate",
           "reviewState": "candidate_review",
           "rightsStatus": "requires_rights_review",
-          "confidence": "official_page_source_media"
+          "confidence": "same_host_official_page_image"
         }
       },
       {
@@ -156,13 +111,13 @@
         "name": "Durty Nelly's Irish Pub",
         "neighborhood": "Downtown",
         "website": "https://durtynellys.ca/",
-        "candidateCount": 25,
+        "candidateCount": 24,
         "sourceKinds": {
-          "official_page_thumbnail_candidate": 24,
+          "official_page_thumbnail_candidate": 23,
           "public_campaign_menu_image": 1
         },
         "reviewStates": {
-          "candidate_review": 25
+          "candidate_review": 24
         },
         "bestCandidate": {
           "id": "thumb-5f697367fec8043dc5",
@@ -172,50 +127,6 @@
           "reviewState": "candidate_review",
           "rightsStatus": "requires_rights_review",
           "confidence": "official_page_source_media"
-        }
-      },
-      {
-        "restaurantId": "osm-node-13912668535-jean-s-chinese-restaurant",
-        "name": "Jean's Chinese Restaurant",
-        "neighborhood": "Dartmouth",
-        "website": "https://www.jeansrestaurant.ca/",
-        "candidateCount": 24,
-        "sourceKinds": {
-          "official_page_thumbnail_candidate": 24
-        },
-        "reviewStates": {
-          "candidate_review": 24
-        },
-        "bestCandidate": {
-          "id": "thumb-d0e2c29f9ab06759f8",
-          "thumbnailUrl": "https://static.parastorage.com/fonts/v2/b08d1c5b-42ed-44e4-8ba4-4197d1906235/v1/adler-w26-regular.hebrew.woff2",
-          "sourceUrl": "https://www.jeansrestaurant.ca/",
-          "sourceKind": "official_page_thumbnail_candidate",
-          "reviewState": "candidate_review",
-          "rightsStatus": "requires_rights_review",
-          "confidence": "official_page_declared_remote_image"
-        }
-      },
-      {
-        "restaurantId": "2-doors-down",
-        "name": "2 Doors Down",
-        "neighborhood": "Dartmouth",
-        "website": "https://go2doorsdown.com/",
-        "candidateCount": 20,
-        "sourceKinds": {
-          "official_page_thumbnail_candidate": 20
-        },
-        "reviewStates": {
-          "candidate_review": 20
-        },
-        "bestCandidate": {
-          "id": "thumb-f0b8bf10bfce4c1149",
-          "thumbnailUrl": "https://go2doorsdown.com/wp-content/plugins/revslider/public/assets/assets/dummy.png",
-          "sourceUrl": "https://go2doorsdown.com/",
-          "sourceKind": "official_page_thumbnail_candidate",
-          "reviewState": "candidate_review",
-          "rightsStatus": "requires_rights_review",
-          "confidence": "same_host_official_page_image"
         }
       },
       {
@@ -234,50 +145,6 @@
           "id": "thumb-04c805489268349bf7",
           "thumbnailUrl": "https://cdn3.didevelop.com/public/cdn/180_03edccc137f4074ad988fd9ef247ee88.jpeg",
           "sourceUrl": "https://mirchitandoor.com/",
-          "sourceKind": "official_page_thumbnail_candidate",
-          "reviewState": "candidate_review",
-          "rightsStatus": "requires_rights_review",
-          "confidence": "official_page_declared_remote_image"
-        }
-      },
-      {
-        "restaurantId": "osm-way-319792807-chinatown",
-        "name": "Chinatown",
-        "neighborhood": "Armdale / Fairview",
-        "website": "https://www.chinatownhalifax.com/",
-        "candidateCount": 18,
-        "sourceKinds": {
-          "official_page_thumbnail_candidate": 18
-        },
-        "reviewStates": {
-          "candidate_review": 18
-        },
-        "bestCandidate": {
-          "id": "thumb-e4cc102bb7bd7a1669",
-          "thumbnailUrl": "https://websitedemos.net/bbq-restaurant-02/wp-content/uploads/sites/284/2018/10/divider-free-img-1.png",
-          "sourceUrl": "https://www.chinatownhalifax.com/",
-          "sourceKind": "official_page_thumbnail_candidate",
-          "reviewState": "candidate_review",
-          "rightsStatus": "requires_rights_review",
-          "confidence": "official_page_declared_remote_image"
-        }
-      },
-      {
-        "restaurantId": "osm-node-3792869657-great-wall-restaurant",
-        "name": "Great Wall Restaurant",
-        "neighborhood": "Downtown",
-        "website": "http://www.thegreatwall.ca/",
-        "candidateCount": 18,
-        "sourceKinds": {
-          "official_page_thumbnail_candidate": 18
-        },
-        "reviewStates": {
-          "candidate_review": 18
-        },
-        "bestCandidate": {
-          "id": "thumb-80f2da38d49ff28c69",
-          "thumbnailUrl": "https://fonts.gstatic.com/s/poppins/v24/pxiByp8kv8JHgFVrLCz7Z1xlEw.woff",
-          "sourceUrl": "https://ritual.co/order/the-great-wall-restaurant-bedford-row-sackville-halifax/9897",
           "sourceKind": "official_page_thumbnail_candidate",
           "reviewState": "candidate_review",
           "rightsStatus": "requires_rights_review",
@@ -329,94 +196,6 @@
         }
       },
       {
-        "restaurantId": "osm-node-7674251740-in-spring-asian-fusion-cuisine",
-        "name": "in spring asian fusion cuisine",
-        "neighborhood": "Downtown",
-        "website": "https://www.inspringhotpot.com/",
-        "candidateCount": 17,
-        "sourceKinds": {
-          "official_page_thumbnail_candidate": 17
-        },
-        "reviewStates": {
-          "candidate_review": 17
-        },
-        "bestCandidate": {
-          "id": "thumb-b2c17b475008702ff3",
-          "thumbnailUrl": "https://d30v2pzvrfyzpo.cloudfront.net/fonts/JETSansDigital-Bold-optimised.woff",
-          "sourceUrl": "https://www.skipthedishes.com/?utm_source=inspringhotpot.com&utm_medium=microsites&utm_campaign=microsites",
-          "sourceKind": "official_page_thumbnail_candidate",
-          "reviewState": "candidate_review",
-          "rightsStatus": "requires_rights_review",
-          "confidence": "official_page_declared_remote_image"
-        }
-      },
-      {
-        "restaurantId": "osm-node-2721720399-mashawee-mediterranean-grill",
-        "name": "Mashawee Mediterranean Grill",
-        "neighborhood": "Downtown",
-        "website": "https://www.mashaweemediterraneangrill.ca/",
-        "candidateCount": 17,
-        "sourceKinds": {
-          "official_page_thumbnail_candidate": 17
-        },
-        "reviewStates": {
-          "candidate_review": 17
-        },
-        "bestCandidate": {
-          "id": "thumb-2f8ea8b1612006f035",
-          "thumbnailUrl": "https://d30v2pzvrfyzpo.cloudfront.net/fonts/JETSansDigital-Bold-optimised.woff",
-          "sourceUrl": "https://www.skipthedishes.com/?utm_source=mashaweemediterraneangrill.ca&utm_medium=microsites&utm_campaign=microsites",
-          "sourceKind": "official_page_thumbnail_candidate",
-          "reviewState": "candidate_review",
-          "rightsStatus": "requires_rights_review",
-          "confidence": "official_page_declared_remote_image"
-        }
-      },
-      {
-        "restaurantId": "battery-park",
-        "name": "Battery Park Beer Bar",
-        "neighborhood": "Dartmouth",
-        "website": "https://batterypark.ca/",
-        "candidateCount": 15,
-        "sourceKinds": {
-          "official_page_thumbnail_candidate": 15
-        },
-        "reviewStates": {
-          "candidate_review": 15
-        },
-        "bestCandidate": {
-          "id": "thumb-6c7bbb33ee353db78a",
-          "thumbnailUrl": "https://file.squarespace-cdn.com/content/v2/namespaces/fonts/libraries/sqsp/assets/0e48baa8-3b27-43a8-b31d-07bd5927372a/latin-ext.woff2",
-          "sourceUrl": "https://batterypark.ca/",
-          "sourceKind": "official_page_thumbnail_candidate",
-          "reviewState": "candidate_review",
-          "rightsStatus": "requires_rights_review",
-          "confidence": "official_page_declared_remote_image"
-        }
-      },
-      {
-        "restaurantId": "osm-node-14139904501-battery-park-beer-bar-and-eatery",
-        "name": "Battery Park Beer Bar & Eatery",
-        "neighborhood": "Halifax Peninsula",
-        "website": "http://batterypark.ca",
-        "candidateCount": 15,
-        "sourceKinds": {
-          "official_page_thumbnail_candidate": 15
-        },
-        "reviewStates": {
-          "candidate_review": 15
-        },
-        "bestCandidate": {
-          "id": "thumb-5476bce3467f3cd6b2",
-          "thumbnailUrl": "https://file.squarespace-cdn.com/content/v2/namespaces/fonts/libraries/sqsp/assets/0e48baa8-3b27-43a8-b31d-07bd5927372a/latin-ext.woff2",
-          "sourceUrl": "https://batterypark.ca/",
-          "sourceKind": "official_page_thumbnail_candidate",
-          "reviewState": "candidate_review",
-          "rightsStatus": "requires_rights_review",
-          "confidence": "official_page_declared_remote_image"
-        }
-      },
-      {
         "restaurantId": "osm-node-3799422457-cora",
         "name": "Cora",
         "neighborhood": "Downtown",
@@ -461,113 +240,25 @@
         }
       },
       {
-        "restaurantId": "osm-node-11526163882-brief-break",
-        "name": "Brief Break",
-        "neighborhood": "South End",
-        "website": "https://dal.campusdish.com/LocationsAndMenus/WeldonLawBuilding",
-        "candidateCount": 13,
+        "restaurantId": "osm-way-319792807-chinatown",
+        "name": "Chinatown",
+        "neighborhood": "Armdale / Fairview",
+        "website": "https://www.chinatownhalifax.com/",
+        "candidateCount": 14,
         "sourceKinds": {
-          "official_page_thumbnail_candidate": 13
+          "official_page_thumbnail_candidate": 14
         },
         "reviewStates": {
-          "candidate_review": 13
+          "candidate_review": 14
         },
         "bestCandidate": {
-          "id": "thumb-0700d9353a4bec94f2",
-          "thumbnailUrl": "https://dal.mydininghub.ca/en/account?section=my-menu#account_circle_svg__a",
-          "sourceUrl": "https://dal.mydininghub.ca/en/account?section=my-menu",
+          "id": "thumb-e4cc102bb7bd7a1669",
+          "thumbnailUrl": "https://websitedemos.net/bbq-restaurant-02/wp-content/uploads/sites/284/2018/10/divider-free-img-1.png",
+          "sourceUrl": "https://www.chinatownhalifax.com/",
           "sourceKind": "official_page_thumbnail_candidate",
           "reviewState": "candidate_review",
           "rightsStatus": "requires_rights_review",
-          "confidence": "same_host_official_page_image"
-        }
-      },
-      {
-        "restaurantId": "osm-node-11526163877-fillings-bistro-32",
-        "name": "Fillings Bistro 32",
-        "neighborhood": "South End",
-        "website": "https://dal.campusdish.com/LocationsAndMenus/FillingsBistroatDentistry",
-        "candidateCount": 13,
-        "sourceKinds": {
-          "official_page_thumbnail_candidate": 13
-        },
-        "reviewStates": {
-          "candidate_review": 13
-        },
-        "bestCandidate": {
-          "id": "thumb-510ebb74fd390c2331",
-          "thumbnailUrl": "https://dal.mydininghub.ca/en/account?section=my-menu#account_circle_svg__a",
-          "sourceUrl": "https://dal.mydininghub.ca/en/account?section=my-menu",
-          "sourceKind": "official_page_thumbnail_candidate",
-          "reviewState": "candidate_review",
-          "rightsStatus": "requires_rights_review",
-          "confidence": "same_host_official_page_image"
-        }
-      },
-      {
-        "restaurantId": "osm-node-11526163883-green-cafe",
-        "name": "Green Café",
-        "neighborhood": "South End",
-        "website": "https://dal.campusdish.com/LocationsAndMenus/GreenCafeatRoweManagementBuilding",
-        "candidateCount": 13,
-        "sourceKinds": {
-          "official_page_thumbnail_candidate": 13
-        },
-        "reviewStates": {
-          "candidate_review": 13
-        },
-        "bestCandidate": {
-          "id": "thumb-0fb948199191cd883e",
-          "thumbnailUrl": "https://dal.mydininghub.ca/en/account?section=my-menu#account_circle_svg__a",
-          "sourceUrl": "https://dal.mydininghub.ca/en/account?section=my-menu",
-          "sourceKind": "official_page_thumbnail_candidate",
-          "reviewState": "candidate_review",
-          "rightsStatus": "requires_rights_review",
-          "confidence": "same_host_official_page_image"
-        }
-      },
-      {
-        "restaurantId": "osm-node-11526163881-grille-works",
-        "name": "Grille Works",
-        "neighborhood": "South End",
-        "website": "https://dal.campusdish.com/LocationsAndMenus/LifeSciencesCentre/GrilleWorks",
-        "candidateCount": 13,
-        "sourceKinds": {
-          "official_page_thumbnail_candidate": 13
-        },
-        "reviewStates": {
-          "candidate_review": 13
-        },
-        "bestCandidate": {
-          "id": "thumb-2a44bc88a67c850246",
-          "thumbnailUrl": "https://dal.mydininghub.ca/en/account?section=my-menu#account_circle_svg__a",
-          "sourceUrl": "https://dal.mydininghub.ca/en/account?section=my-menu",
-          "sourceKind": "official_page_thumbnail_candidate",
-          "reviewState": "candidate_review",
-          "rightsStatus": "requires_rights_review",
-          "confidence": "same_host_official_page_image"
-        }
-      },
-      {
-        "restaurantId": "osm-node-11526163885-ground-zero",
-        "name": "Ground Zero",
-        "neighborhood": "South End",
-        "website": "https://dal.campusdish.com/LocationsAndMenus/GroundZero",
-        "candidateCount": 13,
-        "sourceKinds": {
-          "official_page_thumbnail_candidate": 13
-        },
-        "reviewStates": {
-          "candidate_review": 13
-        },
-        "bestCandidate": {
-          "id": "thumb-c9959fc5958fc318f3",
-          "thumbnailUrl": "https://dal.mydininghub.ca/en/account?section=my-menu#account_circle_svg__a",
-          "sourceUrl": "https://dal.mydininghub.ca/en/account?section=my-menu",
-          "sourceKind": "official_page_thumbnail_candidate",
-          "reviewState": "candidate_review",
-          "rightsStatus": "requires_rights_review",
-          "confidence": "same_host_official_page_image"
+          "confidence": "official_page_declared_remote_image"
         }
       },
       {
@@ -597,29 +288,6 @@
         "name": "Moxie's",
         "neighborhood": "Downtown",
         "website": "https://moxies.com",
-        "candidateCount": 12,
-        "sourceKinds": {
-          "official_page_thumbnail_candidate": 11,
-          "public_campaign_menu_image": 1
-        },
-        "reviewStates": {
-          "candidate_review": 12
-        },
-        "bestCandidate": {
-          "id": "thumb-84c6c65628ff63695f",
-          "thumbnailUrl": "https://moxies.com/i",
-          "sourceUrl": "https://moxies.com/",
-          "sourceKind": "official_page_thumbnail_candidate",
-          "reviewState": "candidate_review",
-          "rightsStatus": "requires_rights_review",
-          "confidence": "same_host_official_page_image"
-        }
-      },
-      {
-        "restaurantId": "osm-node-7674194896-gahan-house",
-        "name": "Gahan House",
-        "neighborhood": "Downtown",
-        "website": "https://gahan.ca",
         "candidateCount": 10,
         "sourceKinds": {
           "official_page_thumbnail_candidate": 9,
@@ -629,9 +297,9 @@
           "candidate_review": 10
         },
         "bestCandidate": {
-          "id": "thumb-ffcf2c9a2fe79aca2a",
-          "thumbnailUrl": "https://gahan.ca/menu/r",
-          "sourceUrl": "https://gahan.ca/menu/",
+          "id": "thumb-ad69d2c47a084bff26",
+          "thumbnailUrl": "https://moxies.com/wp-content/uploads/2024/05/flag-canada-1.png",
+          "sourceUrl": "https://moxies.com/",
           "sourceKind": "official_page_thumbnail_candidate",
           "reviewState": "candidate_review",
           "rightsStatus": "requires_rights_review",
@@ -661,72 +329,6 @@
         }
       },
       {
-        "restaurantId": "osm-node-11552081912-kanpai-izakaya",
-        "name": "Kanpai Izakaya",
-        "neighborhood": "Downtown",
-        "website": "https://kanpaiizakaya.com",
-        "candidateCount": 9,
-        "sourceKinds": {
-          "official_page_thumbnail_candidate": 9
-        },
-        "reviewStates": {
-          "candidate_review": 9
-        },
-        "bestCandidate": {
-          "id": "thumb-e08b23f03152ab28dd",
-          "thumbnailUrl": "https://img1.wsimg.com/gfonts/s/archivoblack/v23/HTxqL289NzCGg4MzN6KJ7eW6CYKF_i7y.woff2",
-          "sourceUrl": "https://kanpaiizakaya.com/",
-          "sourceKind": "official_page_thumbnail_candidate",
-          "reviewState": "candidate_review",
-          "rightsStatus": "requires_rights_review",
-          "confidence": "official_page_declared_remote_image"
-        }
-      },
-      {
-        "restaurantId": "bar-kismet",
-        "name": "Bar Kismet",
-        "neighborhood": "North End",
-        "website": "https://barkismet.com/",
-        "candidateCount": 8,
-        "sourceKinds": {
-          "official_page_thumbnail_candidate": 8
-        },
-        "reviewStates": {
-          "candidate_review": 8
-        },
-        "bestCandidate": {
-          "id": "thumb-48a5fb39a34ddad852",
-          "thumbnailUrl": "https://barkismet.com/wp-content/uploads/2020/04/bg1.jpg",
-          "sourceUrl": "https://barkismet.com/",
-          "sourceKind": "official_page_thumbnail_candidate",
-          "reviewState": "candidate_review",
-          "rightsStatus": "requires_rights_review",
-          "confidence": "same_host_official_page_image"
-        }
-      },
-      {
-        "restaurantId": "osm-node-2715382299-cheese-curds-and-habaneros",
-        "name": "Cheese Curds and Habaneros",
-        "neighborhood": "Armdale / Fairview",
-        "website": "https://cheesecurdsgourmetburgersandpoutinerie.unuhub.net/",
-        "candidateCount": 8,
-        "sourceKinds": {
-          "official_page_thumbnail_candidate": 8
-        },
-        "reviewStates": {
-          "candidate_review": 8
-        },
-        "bestCandidate": {
-          "id": "thumb-15b1eddad54b634be5",
-          "thumbnailUrl": "https://cheesecurdsgourmetburgersandpoutinerie.unuhub.net/payment-logos/mastercard.png",
-          "sourceUrl": "https://cheesecurdsgourmetburgersandpoutinerie.unuhub.net/",
-          "sourceKind": "official_page_thumbnail_candidate",
-          "reviewState": "candidate_review",
-          "rightsStatus": "requires_rights_review",
-          "confidence": "same_host_official_page_image"
-        }
-      },
-      {
         "restaurantId": "dear-friend",
         "name": "Dear Friend Bar",
         "neighborhood": "Dartmouth",
@@ -746,6 +348,50 @@
           "reviewState": "candidate_review",
           "rightsStatus": "requires_rights_review",
           "confidence": "same_host_official_page_image"
+        }
+      },
+      {
+        "restaurantId": "osm-node-7674251740-in-spring-asian-fusion-cuisine",
+        "name": "in spring asian fusion cuisine",
+        "neighborhood": "Downtown",
+        "website": "https://www.inspringhotpot.com/",
+        "candidateCount": 6,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 6
+        },
+        "reviewStates": {
+          "candidate_review": 6
+        },
+        "bestCandidate": {
+          "id": "thumb-b9a20f3e75ac25122b",
+          "thumbnailUrl": "https://takeaway-recruitment-api.k.elnino-production.com/storage/landing_page/bqGEmtHWvnKBGgyyyxQIKxT1hKCgLFQobEgkLldR.webp",
+          "sourceUrl": "https://couriers.skipthedishes.com/application/",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "official_page_source_media"
+        }
+      },
+      {
+        "restaurantId": "osm-node-2721720399-mashawee-mediterranean-grill",
+        "name": "Mashawee Mediterranean Grill",
+        "neighborhood": "Downtown",
+        "website": "https://www.mashaweemediterraneangrill.ca/",
+        "candidateCount": 6,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 6
+        },
+        "reviewStates": {
+          "candidate_review": 6
+        },
+        "bestCandidate": {
+          "id": "thumb-96a875d40c7a126731",
+          "thumbnailUrl": "https://takeaway-recruitment-api.k.elnino-production.com/storage/landing_page/bqGEmtHWvnKBGgyyyxQIKxT1hKCgLFQobEgkLldR.webp",
+          "sourceUrl": "https://couriers.skipthedishes.com/application/",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "official_page_source_media"
         }
       },
       {
@@ -835,6 +481,28 @@
           "reviewState": "candidate_review",
           "rightsStatus": "requires_rights_review",
           "confidence": "official_page_source_media"
+        }
+      },
+      {
+        "restaurantId": "osm-node-2715382299-cheese-curds-and-habaneros",
+        "name": "Cheese Curds and Habaneros",
+        "neighborhood": "Armdale / Fairview",
+        "website": "https://cheesecurdsgourmetburgersandpoutinerie.unuhub.net/",
+        "candidateCount": 4,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 4
+        },
+        "reviewStates": {
+          "candidate_review": 4
+        },
+        "bestCandidate": {
+          "id": "thumb-15b1eddad54b634be5",
+          "thumbnailUrl": "https://cheesecurdsgourmetburgersandpoutinerie.unuhub.net/payment-logos/mastercard.png",
+          "sourceUrl": "https://cheesecurdsgourmetburgersandpoutinerie.unuhub.net/",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "same_host_official_page_image"
         }
       },
       {
@@ -928,50 +596,6 @@
         }
       },
       {
-        "restaurantId": "osm-node-5150058322-2-crows-brewing",
-        "name": "2 Crows Brewing",
-        "neighborhood": "Downtown",
-        "website": "https://www.2crowsbrewing.com/",
-        "candidateCount": 2,
-        "sourceKinds": {
-          "official_page_thumbnail_candidate": 2
-        },
-        "reviewStates": {
-          "candidate_review": 2
-        },
-        "bestCandidate": {
-          "id": "thumb-786aa2e21fcda6ec22",
-          "thumbnailUrl": "https://2crowsbrewing.com/$%7Be?.bg?.image.src}",
-          "sourceUrl": "https://2crowsbrewing.com/",
-          "sourceKind": "official_page_thumbnail_candidate",
-          "reviewState": "candidate_review",
-          "rightsStatus": "requires_rights_review",
-          "confidence": "same_host_official_page_image"
-        }
-      },
-      {
-        "restaurantId": "osm-way-83552117-bedford-beer-garden",
-        "name": "Bedford Beer Garden",
-        "neighborhood": "Armdale / Fairview",
-        "website": "https://www.bedfordbeergarden.com/",
-        "candidateCount": 2,
-        "sourceKinds": {
-          "official_page_thumbnail_candidate": 2
-        },
-        "reviewStates": {
-          "candidate_review": 2
-        },
-        "bestCandidate": {
-          "id": "thumb-a74c9e54cdeaebadaf",
-          "thumbnailUrl": "https://images.squarespace-cdn.com/content/v1/68293776be1eab027773881e/17f12e90-23e4-4cc2-b711-bfa61b1b5211/Bedford+Beer+Garden+Container",
-          "sourceUrl": "https://www.bedfordbeergarden.com/",
-          "sourceKind": "official_page_thumbnail_candidate",
-          "reviewState": "candidate_review",
-          "rightsStatus": "requires_rights_review",
-          "confidence": "official_page_declared_remote_image"
-        }
-      },
-      {
         "restaurantId": "osm-node-1139389702-five-fishermen",
         "name": "Five Fishermen",
         "neighborhood": "Downtown",
@@ -994,10 +618,33 @@
         }
       },
       {
-        "restaurantId": "osm-node-11239721834-humble-pie-kitchen",
-        "name": "Humble Pie Kitchen",
+        "restaurantId": "osm-node-7674194896-gahan-house",
+        "name": "Gahan House",
+        "neighborhood": "Downtown",
+        "website": "https://gahan.ca",
+        "candidateCount": 2,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 1,
+          "public_campaign_menu_image": 1
+        },
+        "reviewStates": {
+          "candidate_review": 2
+        },
+        "bestCandidate": {
+          "id": "thumb-ffcf2c9a2fe79aca2a",
+          "thumbnailUrl": "https://gahan.ca/menu/r",
+          "sourceUrl": "https://gahan.ca/menu/",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "same_host_official_page_image"
+        }
+      },
+      {
+        "restaurantId": "osm-node-13912668535-jean-s-chinese-restaurant",
+        "name": "Jean's Chinese Restaurant",
         "neighborhood": "Dartmouth",
-        "website": "https://humblepiekitchen.ca/",
+        "website": "https://www.jeansrestaurant.ca/",
         "candidateCount": 2,
         "sourceKinds": {
           "official_page_thumbnail_candidate": 2
@@ -1006,13 +653,35 @@
           "candidate_review": 2
         },
         "bestCandidate": {
-          "id": "thumb-c76dc2b18fdc3bee5d",
-          "thumbnailUrl": "https://humblepiekitchen.ca/pie-menu/r",
-          "sourceUrl": "https://humblepiekitchen.ca/pie-menu/",
+          "id": "thumb-424e9a6b5d9a216dbd",
+          "thumbnailUrl": "https://static.parastorage.com/services/editor-elements-library/dist/thunderbolt/media/sloppyframe.3214ce8e.png",
+          "sourceUrl": "https://www.jeansrestaurant.ca/",
           "sourceKind": "official_page_thumbnail_candidate",
           "reviewState": "candidate_review",
           "rightsStatus": "requires_rights_review",
-          "confidence": "same_host_official_page_image"
+          "confidence": "official_page_declared_remote_image"
+        }
+      },
+      {
+        "restaurantId": "osm-node-11552081912-kanpai-izakaya",
+        "name": "Kanpai Izakaya",
+        "neighborhood": "Downtown",
+        "website": "https://kanpaiizakaya.com",
+        "candidateCount": 2,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 2
+        },
+        "reviewStates": {
+          "candidate_review": 2
+        },
+        "bestCandidate": {
+          "id": "thumb-aa0d3d4ad5893f3fe9",
+          "thumbnailUrl": "https://img1.wsimg.com/isteam/ip/e4444fa9-54fc-4bcc-a771-89a81207ef2c/KakaoTalk_20191225_195011730%20(1).jpg/:/",
+          "sourceUrl": "https://kanpaiizakaya.com/",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "official_page_declared_remote_image"
         }
       },
       {
@@ -1075,28 +744,6 @@
           "id": "thumb-5bd5a28e5608e3ce83",
           "thumbnailUrl": "https://smokehousebrewery.ca/wp-content/uploads/2026/02/smokehouse-brewery03.webp",
           "sourceUrl": "https://smokehousebrewery.ca/taproom/taproom-events/",
-          "sourceKind": "official_page_thumbnail_candidate",
-          "reviewState": "candidate_review",
-          "rightsStatus": "requires_rights_review",
-          "confidence": "official_page_source_media"
-        }
-      },
-      {
-        "restaurantId": "osm-way-253538107-the-armview-restaurant-and-lounge",
-        "name": "The Armview Restaurant & Lounge",
-        "neighborhood": "Halifax Peninsula",
-        "website": "https://www.thearmview.com/",
-        "candidateCount": 2,
-        "sourceKinds": {
-          "official_page_thumbnail_candidate": 2
-        },
-        "reviewStates": {
-          "candidate_review": 2
-        },
-        "bestCandidate": {
-          "id": "thumb-7b1a82415b7f82a63d",
-          "thumbnailUrl": "https://www.thearmview.com/wp-content/uploads/2022/11/breakfast_thearmview.jpg",
-          "sourceUrl": "https://www.thearmview.com/breakfast/",
           "sourceKind": "official_page_thumbnail_candidate",
           "reviewState": "candidate_review",
           "rightsStatus": "requires_rights_review",
@@ -1237,6 +884,50 @@
         }
       },
       {
+        "restaurantId": "battery-park",
+        "name": "Battery Park Beer Bar",
+        "neighborhood": "Dartmouth",
+        "website": "https://batterypark.ca/",
+        "candidateCount": 1,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 1
+        },
+        "reviewStates": {
+          "candidate_review": 1
+        },
+        "bestCandidate": {
+          "id": "thumb-fa100518052a102cca",
+          "thumbnailUrl": "https://images.squarespace-cdn.com/content/v1/55917d39e4b0b8f716f2fe05/1609902059282-UVICAXQUWMUHHNKV9GR7/Battery+Park+%28Feb+26+16%29+%2820+of+28%29.jpg",
+          "sourceUrl": "https://batterypark.ca/",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "official_page_declared_remote_image"
+        }
+      },
+      {
+        "restaurantId": "osm-node-14139904501-battery-park-beer-bar-and-eatery",
+        "name": "Battery Park Beer Bar & Eatery",
+        "neighborhood": "Halifax Peninsula",
+        "website": "http://batterypark.ca",
+        "candidateCount": 1,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 1
+        },
+        "reviewStates": {
+          "candidate_review": 1
+        },
+        "bestCandidate": {
+          "id": "thumb-c0a732c84d825ed3dc",
+          "thumbnailUrl": "https://images.squarespace-cdn.com/content/v1/55917d39e4b0b8f716f2fe05/1609902059282-UVICAXQUWMUHHNKV9GR7/Battery+Park+%28Feb+26+16%29+%2820+of+28%29.jpg",
+          "sourceUrl": "https://batterypark.ca/",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "official_page_declared_remote_image"
+        }
+      },
+      {
         "restaurantId": "osm-node-10665783054-ben-and-florentine",
         "name": "Ben & Florentine",
         "neighborhood": "Bedford",
@@ -1322,28 +1013,6 @@
           "reviewState": "candidate_review",
           "rightsStatus": "requires_rights_review",
           "confidence": "trusted_directory_source_media"
-        }
-      },
-      {
-        "restaurantId": "osm-node-11525752766-charm-school",
-        "name": "Charm School",
-        "neighborhood": "North End",
-        "website": "https://unfuckingfiltered.com/",
-        "candidateCount": 1,
-        "sourceKinds": {
-          "official_page_thumbnail_candidate": 1
-        },
-        "reviewStates": {
-          "candidate_review": 1
-        },
-        "bestCandidate": {
-          "id": "thumb-e3d054a09e372a14f8",
-          "thumbnailUrl": "https://unfuckingfiltered.com/r",
-          "sourceUrl": "https://unfuckingfiltered.com/",
-          "sourceKind": "official_page_thumbnail_candidate",
-          "reviewState": "candidate_review",
-          "rightsStatus": "requires_rights_review",
-          "confidence": "same_host_official_page_image"
         }
       },
       {
@@ -1454,6 +1123,50 @@
           "reviewState": "candidate_review",
           "rightsStatus": "requires_rights_review",
           "confidence": "public_special_source_media"
+        }
+      },
+      {
+        "restaurantId": "osm-node-3792869657-great-wall-restaurant",
+        "name": "Great Wall Restaurant",
+        "neighborhood": "Downtown",
+        "website": "http://www.thegreatwall.ca/",
+        "candidateCount": 1,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 1
+        },
+        "reviewStates": {
+          "candidate_review": 1
+        },
+        "bestCandidate": {
+          "id": "thumb-cf0059f867bc693872",
+          "thumbnailUrl": "https://images.ctfassets.net/6civwduob0q9/6BfSuBatnTnW4CF2pxXZMU/16c87d9afd88b8326c86245ce11a44e5/Add__1_.png",
+          "sourceUrl": "https://ritual.co/order/the-great-wall-restaurant-bedford-row-sackville-halifax/9897",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "official_page_source_media"
+        }
+      },
+      {
+        "restaurantId": "osm-node-11239721834-humble-pie-kitchen",
+        "name": "Humble Pie Kitchen",
+        "neighborhood": "Dartmouth",
+        "website": "https://humblepiekitchen.ca/",
+        "candidateCount": 1,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 1
+        },
+        "reviewStates": {
+          "candidate_review": 1
+        },
+        "bestCandidate": {
+          "id": "thumb-c76dc2b18fdc3bee5d",
+          "thumbnailUrl": "https://humblepiekitchen.ca/pie-menu/r",
+          "sourceUrl": "https://humblepiekitchen.ca/pie-menu/",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "same_host_official_page_image"
         }
       },
       {
@@ -5253,32 +4966,6 @@
     ],
     "reviewCandidates": [
       {
-        "id": "thumb-786aa2e21fcda6ec22",
-        "restaurantId": "osm-node-5150058322-2-crows-brewing",
-        "restaurantName": "2 Crows Brewing",
-        "thumbnailUrl": "https://2crowsbrewing.com/$%7Be?.bg?.image.src}",
-        "sourceUrl": "https://2crowsbrewing.com/",
-        "sourceKind": "official_page_thumbnail_candidate",
-        "reviewState": "candidate_review",
-        "rightsStatus": "requires_rights_review",
-        "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-02T17:39:07.870Z",
-        "publishedAt": null
-      },
-      {
-        "id": "thumb-7144a752d77a3a02e7",
-        "restaurantId": "osm-node-5150058322-2-crows-brewing",
-        "restaurantName": "2 Crows Brewing",
-        "thumbnailUrl": "https://2crowsbrewing.com/r",
-        "sourceUrl": "https://2crowsbrewing.com/",
-        "sourceKind": "official_page_thumbnail_candidate",
-        "reviewState": "candidate_review",
-        "rightsStatus": "requires_rights_review",
-        "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-02T17:39:07.870Z",
-        "publishedAt": null
-      },
-      {
         "id": "thumb-5101f4dff8c64b439c",
         "restaurantId": "2-doors-down",
         "restaurantName": "2 Doors Down",
@@ -5296,19 +4983,6 @@
         "restaurantId": "2-doors-down",
         "restaurantName": "2 Doors Down",
         "thumbnailUrl": "https://go2doorsdown.com/wp-content/uploads/2023/08/2dd.png",
-        "sourceUrl": "https://go2doorsdown.com/",
-        "sourceKind": "official_page_thumbnail_candidate",
-        "reviewState": "candidate_review",
-        "rightsStatus": "requires_rights_review",
-        "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-02T17:39:07.870Z",
-        "publishedAt": null
-      },
-      {
-        "id": "thumb-f0b8bf10bfce4c1149",
-        "restaurantId": "2-doors-down",
-        "restaurantName": "2 Doors Down",
-        "thumbnailUrl": "https://go2doorsdown.com/wp-content/plugins/revslider/public/assets/assets/dummy.png",
         "sourceUrl": "https://go2doorsdown.com/",
         "sourceKind": "official_page_thumbnail_candidate",
         "reviewState": "candidate_review",
@@ -5526,58 +5200,6 @@
         "publishedAt": null
       },
       {
-        "id": "thumb-190689f8cd8da9f826",
-        "restaurantId": "osm-node-2714150704-7-peppers-grill",
-        "restaurantName": "7 Peppers Grill",
-        "thumbnailUrl": "https://www.7peppersgrill.net/O,location.href",
-        "sourceUrl": "https://www.7peppersgrill.net/",
-        "sourceKind": "official_page_thumbnail_candidate",
-        "reviewState": "candidate_review",
-        "rightsStatus": "requires_rights_review",
-        "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-02T17:39:07.870Z",
-        "publishedAt": null
-      },
-      {
-        "id": "thumb-bd4122c6e4c1b5cfd6",
-        "restaurantId": "osm-node-2714150704-7-peppers-grill",
-        "restaurantName": "7 Peppers Grill",
-        "thumbnailUrl": "https://www.7peppersgrill.net/e",
-        "sourceUrl": "https://www.7peppersgrill.net/",
-        "sourceKind": "official_page_thumbnail_candidate",
-        "reviewState": "candidate_review",
-        "rightsStatus": "requires_rights_review",
-        "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-02T17:39:07.870Z",
-        "publishedAt": null
-      },
-      {
-        "id": "thumb-0874e969ca99e91df4",
-        "restaurantId": "osm-node-2714150704-7-peppers-grill",
-        "restaurantName": "7 Peppers Grill",
-        "thumbnailUrl": "https://www.7peppersgrill.net/t",
-        "sourceUrl": "https://www.7peppersgrill.net/",
-        "sourceKind": "official_page_thumbnail_candidate",
-        "reviewState": "candidate_review",
-        "rightsStatus": "requires_rights_review",
-        "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-02T17:39:07.870Z",
-        "publishedAt": null
-      },
-      {
-        "id": "thumb-59721f6127cd43f468",
-        "restaurantId": "osm-node-2714150704-7-peppers-grill",
-        "restaurantName": "7 Peppers Grill",
-        "thumbnailUrl": "https://www.7peppersgrill.net/a,location.href",
-        "sourceUrl": "https://www.7peppersgrill.net/",
-        "sourceKind": "official_page_thumbnail_candidate",
-        "reviewState": "candidate_review",
-        "rightsStatus": "requires_rights_review",
-        "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-02T17:39:07.870Z",
-        "publishedAt": null
-      },
-      {
         "id": "thumb-8d51d74a4f13bb91c6",
         "restaurantId": "osm-node-5987565464-afrite",
         "restaurantName": "aFrite",
@@ -5608,19 +5230,6 @@
         "restaurantId": "osm-node-5987565464-afrite",
         "restaurantName": "aFrite",
         "thumbnailUrl": "https://afrite.ca/wp-content/themes/rodich/assets/images/icons/off-canves-nav-icon@2x.png",
-        "sourceUrl": "https://afrite.ca/",
-        "sourceKind": "official_page_thumbnail_candidate",
-        "reviewState": "candidate_review",
-        "rightsStatus": "requires_rights_review",
-        "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-02T17:39:07.870Z",
-        "publishedAt": null
-      },
-      {
-        "id": "thumb-86ecfe55b66c9e61b2",
-        "restaurantId": "osm-node-5987565464-afrite",
-        "restaurantName": "aFrite",
-        "thumbnailUrl": "https://afrite.ca/r",
         "sourceUrl": "https://afrite.ca/",
         "sourceKind": "official_page_thumbnail_candidate",
         "reviewState": "candidate_review",
@@ -5751,19 +5360,6 @@
         "restaurantId": "osm-node-7465073827-antojo-tacos-tequila",
         "restaurantName": "Antojo Tacos + Tequila",
         "thumbnailUrl": "https://antojo.ca/wp-content/uploads/2023/09/libro-book-now-btn.png",
-        "sourceUrl": "https://antojo.ca/",
-        "sourceKind": "official_page_thumbnail_candidate",
-        "reviewState": "candidate_review",
-        "rightsStatus": "requires_rights_review",
-        "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-02T17:39:07.870Z",
-        "publishedAt": null
-      },
-      {
-        "id": "thumb-60dd3b22b46b4a2d5e",
-        "restaurantId": "osm-node-7465073827-antojo-tacos-tequila",
-        "restaurantName": "Antojo Tacos + Tequila",
-        "thumbnailUrl": "https://antojo.ca/r",
         "sourceUrl": "https://antojo.ca/",
         "sourceKind": "official_page_thumbnail_candidate",
         "reviewState": "candidate_review",
@@ -5986,32 +5582,6 @@
         "restaurantName": "BarBurrito",
         "thumbnailUrl": "https://www.barburrito.ca/%7B%7Bdata.images[2].url%7D%7D",
         "sourceUrl": "https://www.barburrito.ca/",
-        "sourceKind": "official_page_thumbnail_candidate",
-        "reviewState": "candidate_review",
-        "rightsStatus": "requires_rights_review",
-        "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-02T17:39:07.870Z",
-        "publishedAt": null
-      },
-      {
-        "id": "thumb-c91fe24840dbaaf47d",
-        "restaurantId": "osm-node-3801064263-barrios-kitchen-and-bar",
-        "restaurantName": "Barrios Kitchen & Bar",
-        "thumbnailUrl": "https://barrioshfx.ca/t",
-        "sourceUrl": "https://barrioshfx.ca/",
-        "sourceKind": "official_page_thumbnail_candidate",
-        "reviewState": "candidate_review",
-        "rightsStatus": "requires_rights_review",
-        "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-02T17:39:07.870Z",
-        "publishedAt": null
-      },
-      {
-        "id": "thumb-62a417d9707db70c91",
-        "restaurantId": "osm-node-3801064263-barrios-kitchen-and-bar",
-        "restaurantName": "Barrios Kitchen & Bar",
-        "thumbnailUrl": "https://barrioshfx.ca/e",
-        "sourceUrl": "https://barrioshfx.ca/",
         "sourceKind": "official_page_thumbnail_candidate",
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
@@ -6306,58 +5876,6 @@
         "publishedAt": null
       },
       {
-        "id": "thumb-a796eda221f90586c7",
-        "restaurantId": "osm-node-1116387649-bicycle-thief",
-        "restaurantName": "Bicycle Thief",
-        "thumbnailUrl": "https://bicyclethief.ca/wp-content/themes/enfold/config-templatebuilder/avia-template-builder/assets/fonts/entypo-fontello.woff2",
-        "sourceUrl": "https://bicyclethief.ca/reservations/",
-        "sourceKind": "official_page_thumbnail_candidate",
-        "reviewState": "candidate_review",
-        "rightsStatus": "requires_rights_review",
-        "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-02T17:39:07.870Z",
-        "publishedAt": null
-      },
-      {
-        "id": "thumb-1825add209f81d0fa2",
-        "restaurantId": "osm-node-1116387649-bicycle-thief",
-        "restaurantName": "Bicycle Thief",
-        "thumbnailUrl": "https://bicyclethief.ca/wp-content/themes/enfold/config-templatebuilder/avia-template-builder/assets/fonts/entypo-fontello.woff",
-        "sourceUrl": "https://bicyclethief.ca/reservations/",
-        "sourceKind": "official_page_thumbnail_candidate",
-        "reviewState": "candidate_review",
-        "rightsStatus": "requires_rights_review",
-        "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-02T17:39:07.870Z",
-        "publishedAt": null
-      },
-      {
-        "id": "thumb-41606eac4b3c595bda",
-        "restaurantId": "osm-node-1116387649-bicycle-thief",
-        "restaurantName": "Bicycle Thief",
-        "thumbnailUrl": "https://bicyclethief.ca/wp-content/themes/enfold/config-templatebuilder/avia-template-builder/assets/fonts/entypo-fontello.ttf",
-        "sourceUrl": "https://bicyclethief.ca/reservations/",
-        "sourceKind": "official_page_thumbnail_candidate",
-        "reviewState": "candidate_review",
-        "rightsStatus": "requires_rights_review",
-        "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-02T17:39:07.870Z",
-        "publishedAt": null
-      },
-      {
-        "id": "thumb-3eb645bc7bc833bc46",
-        "restaurantId": "osm-node-1116387649-bicycle-thief",
-        "restaurantName": "Bicycle Thief",
-        "thumbnailUrl": "https://bicyclethief.ca/wp-content/themes/enfold/config-templatebuilder/avia-template-builder/assets/fonts/entypo-fontello.svg#entypo-fontello",
-        "sourceUrl": "https://bicyclethief.ca/reservations/",
-        "sourceKind": "official_page_thumbnail_candidate",
-        "reviewState": "candidate_review",
-        "rightsStatus": "requires_rights_review",
-        "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-02T17:39:07.870Z",
-        "publishedAt": null
-      },
-      {
         "id": "thumb-44fd56b34e52f73676",
         "restaurantId": "osm-node-10038454787-bird-s-nest-cafe",
         "restaurantName": "Bird's Nest Cafe",
@@ -6540,19 +6058,6 @@
         "publishedAt": null
       },
       {
-        "id": "thumb-5ee450f6629799cb4a",
-        "restaurantId": "osm-node-267592735-bluenose-ii",
-        "restaurantName": "Bluenose II",
-        "thumbnailUrl": "https://bluenoseii.ca/r",
-        "sourceUrl": "https://bluenoseii.ca/",
-        "sourceKind": "official_page_thumbnail_candidate",
-        "reviewState": "candidate_review",
-        "rightsStatus": "requires_rights_review",
-        "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-02T17:39:07.870Z",
-        "publishedAt": null
-      },
-      {
         "id": "thumb-e453e1e78e06307795",
         "restaurantId": "osm-node-267592735-bluenose-ii",
         "restaurantName": "Bluenose II",
@@ -6709,58 +6214,6 @@
         "publishedAt": null
       },
       {
-        "id": "thumb-12f98bedbbc3e2c62c",
-        "restaurantId": "osm-node-4420916900-board-room-game-cafe",
-        "restaurantName": "Board Room Game Cafe",
-        "thumbnailUrl": "https://boardroomgames.wixsite.com/O,location.href",
-        "sourceUrl": "https://boardroomgames.wixsite.com/tbrgc",
-        "sourceKind": "official_page_thumbnail_candidate",
-        "reviewState": "candidate_review",
-        "rightsStatus": "requires_rights_review",
-        "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-02T17:39:07.870Z",
-        "publishedAt": null
-      },
-      {
-        "id": "thumb-c32a1282808a13a3a4",
-        "restaurantId": "osm-node-4420916900-board-room-game-cafe",
-        "restaurantName": "Board Room Game Cafe",
-        "thumbnailUrl": "https://boardroomgames.wixsite.com/e",
-        "sourceUrl": "https://boardroomgames.wixsite.com/tbrgc",
-        "sourceKind": "official_page_thumbnail_candidate",
-        "reviewState": "candidate_review",
-        "rightsStatus": "requires_rights_review",
-        "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-02T17:39:07.870Z",
-        "publishedAt": null
-      },
-      {
-        "id": "thumb-7a84f47e0e8b8e44fd",
-        "restaurantId": "osm-node-4420916900-board-room-game-cafe",
-        "restaurantName": "Board Room Game Cafe",
-        "thumbnailUrl": "https://boardroomgames.wixsite.com/t",
-        "sourceUrl": "https://boardroomgames.wixsite.com/tbrgc",
-        "sourceKind": "official_page_thumbnail_candidate",
-        "reviewState": "candidate_review",
-        "rightsStatus": "requires_rights_review",
-        "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-02T17:39:07.870Z",
-        "publishedAt": null
-      },
-      {
-        "id": "thumb-f7f0fdd5287f9b5023",
-        "restaurantId": "osm-node-4420916900-board-room-game-cafe",
-        "restaurantName": "Board Room Game Cafe",
-        "thumbnailUrl": "https://boardroomgames.wixsite.com/href,%20location.href",
-        "sourceUrl": "https://boardroomgames.wixsite.com/tbrgc",
-        "sourceKind": "official_page_thumbnail_candidate",
-        "reviewState": "candidate_review",
-        "rightsStatus": "requires_rights_review",
-        "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-02T17:39:07.870Z",
-        "publishedAt": null
-      },
-      {
         "id": "thumb-a1f64f5423a2ec2dcc",
         "restaurantId": "osm-node-8636456775-booster-juice",
         "restaurantName": "Booster Juice",
@@ -6857,110 +6310,6 @@
         "restaurantName": "Booster Juice",
         "thumbnailUrl": "https://boosterjuice.com/cdn/shop/files/Category-Bowls_fcb6022b-c8c2-47f8-bf28-7578ef34b40c.png?v=1771968616&width=1500",
         "sourceUrl": "https://boosterjuice.com/en-ca",
-        "sourceKind": "official_page_thumbnail_candidate",
-        "reviewState": "candidate_review",
-        "rightsStatus": "requires_rights_review",
-        "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-02T17:39:07.870Z",
-        "publishedAt": null
-      },
-      {
-        "id": "thumb-5ff621c89d89acd476",
-        "restaurantId": "osm-node-8636456775-booster-juice",
-        "restaurantName": "Booster Juice",
-        "thumbnailUrl": "https://boosterjuice.com/cdn/fonts/poppins/poppins_n4.0ba78fa5af9b0e1a374041b3ceaadf0a43b41362.woff2",
-        "sourceUrl": "https://boosterjuice.com/en-ca/pages/catering",
-        "sourceKind": "official_page_thumbnail_candidate",
-        "reviewState": "candidate_review",
-        "rightsStatus": "requires_rights_review",
-        "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-02T17:39:07.870Z",
-        "publishedAt": null
-      },
-      {
-        "id": "thumb-bd8c0db418a997ae25",
-        "restaurantId": "osm-node-8636456775-booster-juice",
-        "restaurantName": "Booster Juice",
-        "thumbnailUrl": "https://boosterjuice.com/cdn/fonts/poppins/poppins_n4.214741a72ff2596839fc9760ee7a770386cf16ca.woff",
-        "sourceUrl": "https://boosterjuice.com/en-ca/pages/catering",
-        "sourceKind": "official_page_thumbnail_candidate",
-        "reviewState": "candidate_review",
-        "rightsStatus": "requires_rights_review",
-        "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-02T17:39:07.870Z",
-        "publishedAt": null
-      },
-      {
-        "id": "thumb-2780866904a912a1f8",
-        "restaurantId": "osm-node-8636456775-booster-juice",
-        "restaurantName": "Booster Juice",
-        "thumbnailUrl": "https://boosterjuice.com/cdn/fonts/poppins/poppins_n7.56758dcf284489feb014a026f3727f2f20a54626.woff2",
-        "sourceUrl": "https://boosterjuice.com/en-ca/pages/catering",
-        "sourceKind": "official_page_thumbnail_candidate",
-        "reviewState": "candidate_review",
-        "rightsStatus": "requires_rights_review",
-        "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-02T17:39:07.870Z",
-        "publishedAt": null
-      },
-      {
-        "id": "thumb-b0d19019cda0582618",
-        "restaurantId": "osm-node-8636456775-booster-juice",
-        "restaurantName": "Booster Juice",
-        "thumbnailUrl": "https://boosterjuice.com/cdn/fonts/poppins/poppins_n7.f34f55d9b3d3205d2cd6f64955ff4b36f0cfd8da.woff",
-        "sourceUrl": "https://boosterjuice.com/en-ca/pages/catering",
-        "sourceKind": "official_page_thumbnail_candidate",
-        "reviewState": "candidate_review",
-        "rightsStatus": "requires_rights_review",
-        "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-02T17:39:07.870Z",
-        "publishedAt": null
-      },
-      {
-        "id": "thumb-e024489073c3f403a8",
-        "restaurantId": "osm-node-8636456775-booster-juice",
-        "restaurantName": "Booster Juice",
-        "thumbnailUrl": "https://boosterjuice.com/cdn/fonts/poppins/poppins_i4.846ad1e22474f856bd6b81ba4585a60799a9f5d2.woff2",
-        "sourceUrl": "https://boosterjuice.com/en-ca/pages/catering",
-        "sourceKind": "official_page_thumbnail_candidate",
-        "reviewState": "candidate_review",
-        "rightsStatus": "requires_rights_review",
-        "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-02T17:39:07.870Z",
-        "publishedAt": null
-      },
-      {
-        "id": "thumb-bbbc4c0330c37de7d6",
-        "restaurantId": "osm-node-8636456775-booster-juice",
-        "restaurantName": "Booster Juice",
-        "thumbnailUrl": "https://boosterjuice.com/cdn/fonts/poppins/poppins_i4.56b43284e8b52fc64c1fd271f289a39e8477e9ec.woff",
-        "sourceUrl": "https://boosterjuice.com/en-ca/pages/catering",
-        "sourceKind": "official_page_thumbnail_candidate",
-        "reviewState": "candidate_review",
-        "rightsStatus": "requires_rights_review",
-        "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-02T17:39:07.870Z",
-        "publishedAt": null
-      },
-      {
-        "id": "thumb-dd509b50387fc397ef",
-        "restaurantId": "osm-node-8636456775-booster-juice",
-        "restaurantName": "Booster Juice",
-        "thumbnailUrl": "https://boosterjuice.com/cdn/fonts/poppins/poppins_i7.42fd71da11e9d101e1e6c7932199f925f9eea42d.woff2",
-        "sourceUrl": "https://boosterjuice.com/en-ca/pages/catering",
-        "sourceKind": "official_page_thumbnail_candidate",
-        "reviewState": "candidate_review",
-        "rightsStatus": "requires_rights_review",
-        "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-02T17:39:07.870Z",
-        "publishedAt": null
-      },
-      {
-        "id": "thumb-33bb0484521ccef8d0",
-        "restaurantId": "osm-node-8636456775-booster-juice",
-        "restaurantName": "Booster Juice",
-        "thumbnailUrl": "https://boosterjuice.com/cdn/fonts/poppins/poppins_i7.ec8499dbd7616004e21155106d13837fff4cf556.woff",
-        "sourceUrl": "https://boosterjuice.com/en-ca/pages/catering",
         "sourceKind": "official_page_thumbnail_candidate",
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
@@ -7077,32 +6426,6 @@
         "restaurantId": "osm-way-393886756-boston-pizza",
         "restaurantName": "Boston Pizza",
         "thumbnailUrl": "https://bostonpizza.com/content/dam/bostonpizza/promotions/2026/q3-summer-feature-menu/Summer_Concert1930x1130.jpg",
-        "sourceUrl": "https://bostonpizza.com/en/index.html",
-        "sourceKind": "official_page_thumbnail_candidate",
-        "reviewState": "candidate_review",
-        "rightsStatus": "requires_rights_review",
-        "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-02T17:39:07.870Z",
-        "publishedAt": null
-      },
-      {
-        "id": "thumb-29aa7857a7a51851cd",
-        "restaurantId": "osm-way-393886756-boston-pizza",
-        "restaurantName": "Boston Pizza",
-        "thumbnailUrl": "https://bostonpizza.com/content/dam/bostonpizza/promotions/2026/father%27s-day/BP_FathersDay2026_Web_BPcomBanner_5000x2115.png",
-        "sourceUrl": "https://bostonpizza.com/en/index.html",
-        "sourceKind": "official_page_thumbnail_candidate",
-        "reviewState": "candidate_review",
-        "rightsStatus": "requires_rights_review",
-        "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-02T17:39:07.870Z",
-        "publishedAt": null
-      },
-      {
-        "id": "thumb-7f85e0382d1dc00e5e",
-        "restaurantId": "osm-way-393886756-boston-pizza",
-        "restaurantName": "Boston Pizza",
-        "thumbnailUrl": "https://bostonpizza.com/content/dam/bostonpizza/promotions/2026/father%27s-day/BP_FathersDay2026_Web_BPcomBanner_mobile.png",
         "sourceUrl": "https://bostonpizza.com/en/index.html",
         "sourceKind": "official_page_thumbnail_candidate",
         "reviewState": "candidate_review",
@@ -7476,175 +6799,6 @@
         "publishedAt": null
       },
       {
-        "id": "thumb-8b5da0fb438e28be54",
-        "restaurantId": "osm-node-11526163882-brief-break",
-        "restaurantName": "Brief Break",
-        "thumbnailUrl": "https://dal.mydininghub.ca/en/locations#account_circle_svg__a",
-        "sourceUrl": "https://dal.mydininghub.ca/en/locations",
-        "sourceKind": "official_page_thumbnail_candidate",
-        "reviewState": "candidate_review",
-        "rightsStatus": "requires_rights_review",
-        "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-02T17:39:07.870Z",
-        "publishedAt": null
-      },
-      {
-        "id": "thumb-a1b11f8cd5516bed84",
-        "restaurantId": "osm-node-11526163882-brief-break",
-        "restaurantName": "Brief Break",
-        "thumbnailUrl": "https://dal.mydininghub.ca/en/locations#menu_svg__a",
-        "sourceUrl": "https://dal.mydininghub.ca/en/locations",
-        "sourceKind": "official_page_thumbnail_candidate",
-        "reviewState": "candidate_review",
-        "rightsStatus": "requires_rights_review",
-        "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-02T17:39:07.870Z",
-        "publishedAt": null
-      },
-      {
-        "id": "thumb-89dcc8ab4affa6fa93",
-        "restaurantId": "osm-node-11526163882-brief-break",
-        "restaurantName": "Brief Break",
-        "thumbnailUrl": "https://dal.mydininghub.ca/en/locations#arrow_up_svg__a",
-        "sourceUrl": "https://dal.mydininghub.ca/en/locations",
-        "sourceKind": "official_page_thumbnail_candidate",
-        "reviewState": "candidate_review",
-        "rightsStatus": "requires_rights_review",
-        "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-02T17:39:07.870Z",
-        "publishedAt": null
-      },
-      {
-        "id": "thumb-b4e251a242104fb828",
-        "restaurantId": "osm-node-11526163882-brief-break",
-        "restaurantName": "Brief Break",
-        "thumbnailUrl": "https://dal.mydininghub.ca/en/locations#arrow_back_ios_new_svg__a",
-        "sourceUrl": "https://dal.mydininghub.ca/en/locations",
-        "sourceKind": "official_page_thumbnail_candidate",
-        "reviewState": "candidate_review",
-        "rightsStatus": "requires_rights_review",
-        "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-02T17:39:07.870Z",
-        "publishedAt": null
-      },
-      {
-        "id": "thumb-ad4204370ecd22f605",
-        "restaurantId": "osm-node-11526163882-brief-break",
-        "restaurantName": "Brief Break",
-        "thumbnailUrl": "https://dal.mydininghub.ca/en/locations#home_svg__a",
-        "sourceUrl": "https://dal.mydininghub.ca/en/locations",
-        "sourceKind": "official_page_thumbnail_candidate",
-        "reviewState": "candidate_review",
-        "rightsStatus": "requires_rights_review",
-        "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-02T17:39:07.870Z",
-        "publishedAt": null
-      },
-      {
-        "id": "thumb-2e8c29ca4cbebb484a",
-        "restaurantId": "osm-node-11526163882-brief-break",
-        "restaurantName": "Brief Break",
-        "thumbnailUrl": "https://dal.mydininghub.ca/en/locations#check_circle_svg__a",
-        "sourceUrl": "https://dal.mydininghub.ca/en/locations",
-        "sourceKind": "official_page_thumbnail_candidate",
-        "reviewState": "candidate_review",
-        "rightsStatus": "requires_rights_review",
-        "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-02T17:39:07.870Z",
-        "publishedAt": null
-      },
-      {
-        "id": "thumb-b496417ff0fcb0dc79",
-        "restaurantId": "osm-node-11526163882-brief-break",
-        "restaurantName": "Brief Break",
-        "thumbnailUrl": "https://dal.mydininghub.ca/en/locations#close_svg__a",
-        "sourceUrl": "https://dal.mydininghub.ca/en/locations",
-        "sourceKind": "official_page_thumbnail_candidate",
-        "reviewState": "candidate_review",
-        "rightsStatus": "requires_rights_review",
-        "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-02T17:39:07.870Z",
-        "publishedAt": null
-      },
-      {
-        "id": "thumb-5836863ae56502884e",
-        "restaurantId": "osm-node-11526163882-brief-break",
-        "restaurantName": "Brief Break",
-        "thumbnailUrl": "https://dal.mydininghub.ca/en/e,location.href",
-        "sourceUrl": "https://dal.mydininghub.ca/en/locations",
-        "sourceKind": "official_page_thumbnail_candidate",
-        "reviewState": "candidate_review",
-        "rightsStatus": "requires_rights_review",
-        "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-02T17:39:07.870Z",
-        "publishedAt": null
-      },
-      {
-        "id": "thumb-0700d9353a4bec94f2",
-        "restaurantId": "osm-node-11526163882-brief-break",
-        "restaurantName": "Brief Break",
-        "thumbnailUrl": "https://dal.mydininghub.ca/en/account?section=my-menu#account_circle_svg__a",
-        "sourceUrl": "https://dal.mydininghub.ca/en/account?section=my-menu",
-        "sourceKind": "official_page_thumbnail_candidate",
-        "reviewState": "candidate_review",
-        "rightsStatus": "requires_rights_review",
-        "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-02T17:39:07.870Z",
-        "publishedAt": null
-      },
-      {
-        "id": "thumb-28eb79469fb043373d",
-        "restaurantId": "osm-node-11526163882-brief-break",
-        "restaurantName": "Brief Break",
-        "thumbnailUrl": "https://dal.mydininghub.ca/en/account?section=my-menu#menu_svg__a",
-        "sourceUrl": "https://dal.mydininghub.ca/en/account?section=my-menu",
-        "sourceKind": "official_page_thumbnail_candidate",
-        "reviewState": "candidate_review",
-        "rightsStatus": "requires_rights_review",
-        "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-02T17:39:07.870Z",
-        "publishedAt": null
-      },
-      {
-        "id": "thumb-edd1c6fbd0c3ae05d6",
-        "restaurantId": "osm-node-11526163882-brief-break",
-        "restaurantName": "Brief Break",
-        "thumbnailUrl": "https://dal.mydininghub.ca/en/account?section=my-menu#arrow_up_svg__a",
-        "sourceUrl": "https://dal.mydininghub.ca/en/account?section=my-menu",
-        "sourceKind": "official_page_thumbnail_candidate",
-        "reviewState": "candidate_review",
-        "rightsStatus": "requires_rights_review",
-        "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-02T17:39:07.870Z",
-        "publishedAt": null
-      },
-      {
-        "id": "thumb-8358831dc6cc41423f",
-        "restaurantId": "osm-node-11526163882-brief-break",
-        "restaurantName": "Brief Break",
-        "thumbnailUrl": "https://dal.mydininghub.ca/en/account?section=my-menu#check_circle_svg__a",
-        "sourceUrl": "https://dal.mydininghub.ca/en/account?section=my-menu",
-        "sourceKind": "official_page_thumbnail_candidate",
-        "reviewState": "candidate_review",
-        "rightsStatus": "requires_rights_review",
-        "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-02T17:39:07.870Z",
-        "publishedAt": null
-      },
-      {
-        "id": "thumb-f53de758f95c613df3",
-        "restaurantId": "osm-node-11526163882-brief-break",
-        "restaurantName": "Brief Break",
-        "thumbnailUrl": "https://dal.mydininghub.ca/en/account?section=my-menu#close_svg__a",
-        "sourceUrl": "https://dal.mydininghub.ca/en/account?section=my-menu",
-        "sourceKind": "official_page_thumbnail_candidate",
-        "reviewState": "candidate_review",
-        "rightsStatus": "requires_rights_review",
-        "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-02T17:39:07.870Z",
-        "publishedAt": null
-      },
-      {
         "id": "thumb-6b3c5b43492bdf6a72",
         "restaurantId": "osm-node-11751643550-cafe-lunette",
         "restaurantName": "Café Lunette",
@@ -7710,63 +6864,11 @@
         "publishedAt": null
       },
       {
-        "id": "thumb-afb1d6ee5a5a13d66f",
-        "restaurantId": "osm-node-11751643550-cafe-lunette",
-        "restaurantName": "Café Lunette",
-        "thumbnailUrl": "https://www.cafelunette.com/wp-content/uploads/2022/01/PPCirka-Regular.ttf",
-        "sourceUrl": "https://www.cafelunette.com/",
-        "sourceKind": "official_page_thumbnail_candidate",
-        "reviewState": "candidate_review",
-        "rightsStatus": "requires_rights_review",
-        "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-02T17:39:07.870Z",
-        "publishedAt": null
-      },
-      {
-        "id": "thumb-cb084d88f0afed9b07",
-        "restaurantId": "osm-node-11751643550-cafe-lunette",
-        "restaurantName": "Café Lunette",
-        "thumbnailUrl": "https://www.cafelunette.com/wp-content/uploads/2022/01/PPPangramSans-NarrowSemibold.ttf",
-        "sourceUrl": "https://www.cafelunette.com/",
-        "sourceKind": "official_page_thumbnail_candidate",
-        "reviewState": "candidate_review",
-        "rightsStatus": "requires_rights_review",
-        "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-02T17:39:07.870Z",
-        "publishedAt": null
-      },
-      {
-        "id": "thumb-31a75f32f278774313",
-        "restaurantId": "osm-node-11751643550-cafe-lunette",
-        "restaurantName": "Café Lunette",
-        "thumbnailUrl": "https://www.cafelunette.com/r",
-        "sourceUrl": "https://www.cafelunette.com/",
-        "sourceKind": "official_page_thumbnail_candidate",
-        "reviewState": "candidate_review",
-        "rightsStatus": "requires_rights_review",
-        "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-02T17:39:07.870Z",
-        "publishedAt": null
-      },
-      {
         "id": "thumb-1b0bcde66b175c39fe",
         "restaurantId": "osm-node-11751643550-cafe-lunette",
         "restaurantName": "Café Lunette",
         "thumbnailUrl": "https://www.cafelunette.com/bistro-menu/r",
         "sourceUrl": "https://www.cafelunette.com/bistro-menu/",
-        "sourceKind": "official_page_thumbnail_candidate",
-        "reviewState": "candidate_review",
-        "rightsStatus": "requires_rights_review",
-        "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-02T17:39:07.870Z",
-        "publishedAt": null
-      },
-      {
-        "id": "thumb-e3d054a09e372a14f8",
-        "restaurantId": "osm-node-11525752766-charm-school",
-        "restaurantName": "Charm School",
-        "thumbnailUrl": "https://unfuckingfiltered.com/r",
-        "sourceUrl": "https://unfuckingfiltered.com/",
         "sourceKind": "official_page_thumbnail_candidate",
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
@@ -7792,58 +6894,6 @@
         "restaurantId": "osm-node-2715382299-cheese-curds-and-habaneros",
         "restaurantName": "Cheese Curds and Habaneros",
         "thumbnailUrl": "https://cheesecurdsgourmetburgersandpoutinerie.unuhub.net/payment-logos/visa.png",
-        "sourceUrl": "https://cheesecurdsgourmetburgersandpoutinerie.unuhub.net/",
-        "sourceKind": "official_page_thumbnail_candidate",
-        "reviewState": "candidate_review",
-        "rightsStatus": "requires_rights_review",
-        "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-02T17:39:07.870Z",
-        "publishedAt": null
-      },
-      {
-        "id": "thumb-eeb37b86977eb0ddbd",
-        "restaurantId": "osm-node-2715382299-cheese-curds-and-habaneros",
-        "restaurantName": "Cheese Curds and Habaneros",
-        "thumbnailUrl": "https://cheesecurdsgourmetburgersandpoutinerie.unuhub.net/restaurant-icons-1.eot",
-        "sourceUrl": "https://cheesecurdsgourmetburgersandpoutinerie.unuhub.net/",
-        "sourceKind": "official_page_thumbnail_candidate",
-        "reviewState": "candidate_review",
-        "rightsStatus": "requires_rights_review",
-        "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-02T17:39:07.870Z",
-        "publishedAt": null
-      },
-      {
-        "id": "thumb-3a3cba64e2ad4df3a4",
-        "restaurantId": "osm-node-2715382299-cheese-curds-and-habaneros",
-        "restaurantName": "Cheese Curds and Habaneros",
-        "thumbnailUrl": "https://cheesecurdsgourmetburgersandpoutinerie.unuhub.net/restaurant-icons-1.woff2",
-        "sourceUrl": "https://cheesecurdsgourmetburgersandpoutinerie.unuhub.net/",
-        "sourceKind": "official_page_thumbnail_candidate",
-        "reviewState": "candidate_review",
-        "rightsStatus": "requires_rights_review",
-        "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-02T17:39:07.870Z",
-        "publishedAt": null
-      },
-      {
-        "id": "thumb-61c72977cfd33ae9a8",
-        "restaurantId": "osm-node-2715382299-cheese-curds-and-habaneros",
-        "restaurantName": "Cheese Curds and Habaneros",
-        "thumbnailUrl": "https://cheesecurdsgourmetburgersandpoutinerie.unuhub.net/restaurant-icons-1.woff",
-        "sourceUrl": "https://cheesecurdsgourmetburgersandpoutinerie.unuhub.net/",
-        "sourceKind": "official_page_thumbnail_candidate",
-        "reviewState": "candidate_review",
-        "rightsStatus": "requires_rights_review",
-        "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-02T17:39:07.870Z",
-        "publishedAt": null
-      },
-      {
-        "id": "thumb-78197738dd2e16ddf1",
-        "restaurantId": "osm-node-2715382299-cheese-curds-and-habaneros",
-        "restaurantName": "Cheese Curds and Habaneros",
-        "thumbnailUrl": "https://cheesecurdsgourmetburgersandpoutinerie.unuhub.net/restaurant-icons-1.ttf",
         "sourceUrl": "https://cheesecurdsgourmetburgersandpoutinerie.unuhub.net/",
         "sourceKind": "official_page_thumbnail_candidate",
         "reviewState": "candidate_review",
@@ -7983,62 +7033,10 @@
         "publishedAt": null
       },
       {
-        "id": "thumb-d21fae3bbe83004457",
-        "restaurantId": "osm-way-319792807-chinatown",
-        "restaurantName": "Chinatown",
-        "thumbnailUrl": "https://www.chinatownhalifax.com/wp-content/themes/astra/assets/fonts/astra.woff",
-        "sourceUrl": "https://www.chinatownhalifax.com/",
-        "sourceKind": "official_page_thumbnail_candidate",
-        "reviewState": "candidate_review",
-        "rightsStatus": "requires_rights_review",
-        "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-02T17:39:07.870Z",
-        "publishedAt": null
-      },
-      {
-        "id": "thumb-eefce45bf8162d5ac9",
-        "restaurantId": "osm-way-319792807-chinatown",
-        "restaurantName": "Chinatown",
-        "thumbnailUrl": "https://www.chinatownhalifax.com/wp-content/themes/astra/assets/fonts/astra.ttf",
-        "sourceUrl": "https://www.chinatownhalifax.com/",
-        "sourceKind": "official_page_thumbnail_candidate",
-        "reviewState": "candidate_review",
-        "rightsStatus": "requires_rights_review",
-        "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-02T17:39:07.870Z",
-        "publishedAt": null
-      },
-      {
-        "id": "thumb-9ff49645b571e36496",
-        "restaurantId": "osm-way-319792807-chinatown",
-        "restaurantName": "Chinatown",
-        "thumbnailUrl": "https://www.chinatownhalifax.com/wp-content/themes/astra/assets/fonts/astra.svg#astra",
-        "sourceUrl": "https://www.chinatownhalifax.com/",
-        "sourceKind": "official_page_thumbnail_candidate",
-        "reviewState": "candidate_review",
-        "rightsStatus": "requires_rights_review",
-        "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-02T17:39:07.870Z",
-        "publishedAt": null
-      },
-      {
         "id": "thumb-1113f311591d3b0342",
         "restaurantId": "osm-way-319792807-chinatown",
         "restaurantName": "Chinatown",
         "thumbnailUrl": "https://www.chinatownhalifax.com/wp-content/uploads/2022/06/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20220108144115-1.jpg",
-        "sourceUrl": "https://www.chinatownhalifax.com/",
-        "sourceKind": "official_page_thumbnail_candidate",
-        "reviewState": "candidate_review",
-        "rightsStatus": "requires_rights_review",
-        "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-02T17:39:07.870Z",
-        "publishedAt": null
-      },
-      {
-        "id": "thumb-ba19427fa66f04c171",
-        "restaurantId": "osm-way-319792807-chinatown",
-        "restaurantName": "Chinatown",
-        "thumbnailUrl": "https://www.chinatownhalifax.com/r",
         "sourceUrl": "https://www.chinatownhalifax.com/",
         "sourceKind": "official_page_thumbnail_candidate",
         "reviewState": "candidate_review",
@@ -8113,231 +7111,10 @@
         "publishedAt": null
       },
       {
-        "id": "thumb-fd97eb51b21c8fb2a7",
-        "restaurantId": "osm-node-1031603952-darrell-s",
-        "restaurantName": "Darrell's",
-        "thumbnailUrl": "https://darrellsrestaurants.com/wp-content/plugins/revslider/public/assets/assets/dummy.png",
-        "sourceUrl": "https://darrellsrestaurants.com/",
-        "sourceKind": "official_page_thumbnail_candidate",
-        "reviewState": "candidate_review",
-        "rightsStatus": "requires_rights_review",
-        "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-02T17:39:07.870Z",
-        "publishedAt": null
-      },
-      {
         "id": "thumb-3ef156627360fe1134",
         "restaurantId": "osm-node-1031603952-darrell-s",
         "restaurantName": "Darrell's",
         "thumbnailUrl": "https://darrellsrestaurants.com/t.src",
-        "sourceUrl": "https://darrellsrestaurants.com/",
-        "sourceKind": "official_page_thumbnail_candidate",
-        "reviewState": "candidate_review",
-        "rightsStatus": "requires_rights_review",
-        "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-02T17:39:07.870Z",
-        "publishedAt": null
-      },
-      {
-        "id": "thumb-9d7c351a0455780780",
-        "restaurantId": "osm-node-1031603952-darrell-s",
-        "restaurantName": "Darrell's",
-        "thumbnailUrl": "https://darrellsrestaurants.com/wp-content/plugins/js_composer/assets/lib/bower/font-awesome/webfonts/fa-brands-400.eot",
-        "sourceUrl": "https://darrellsrestaurants.com/",
-        "sourceKind": "official_page_thumbnail_candidate",
-        "reviewState": "candidate_review",
-        "rightsStatus": "requires_rights_review",
-        "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-02T17:39:07.870Z",
-        "publishedAt": null
-      },
-      {
-        "id": "thumb-46f95347b391ad2381",
-        "restaurantId": "osm-node-1031603952-darrell-s",
-        "restaurantName": "Darrell's",
-        "thumbnailUrl": "https://darrellsrestaurants.com/wp-content/plugins/js_composer/assets/lib/bower/font-awesome/webfonts/fa-brands-400.eot?#iefix",
-        "sourceUrl": "https://darrellsrestaurants.com/",
-        "sourceKind": "official_page_thumbnail_candidate",
-        "reviewState": "candidate_review",
-        "rightsStatus": "requires_rights_review",
-        "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-02T17:39:07.870Z",
-        "publishedAt": null
-      },
-      {
-        "id": "thumb-8557d97d6deccf8854",
-        "restaurantId": "osm-node-1031603952-darrell-s",
-        "restaurantName": "Darrell's",
-        "thumbnailUrl": "https://darrellsrestaurants.com/wp-content/plugins/js_composer/assets/lib/bower/font-awesome/webfonts/fa-brands-400.woff2",
-        "sourceUrl": "https://darrellsrestaurants.com/",
-        "sourceKind": "official_page_thumbnail_candidate",
-        "reviewState": "candidate_review",
-        "rightsStatus": "requires_rights_review",
-        "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-02T17:39:07.870Z",
-        "publishedAt": null
-      },
-      {
-        "id": "thumb-8c56c1a79f800616b9",
-        "restaurantId": "osm-node-1031603952-darrell-s",
-        "restaurantName": "Darrell's",
-        "thumbnailUrl": "https://darrellsrestaurants.com/wp-content/plugins/js_composer/assets/lib/bower/font-awesome/webfonts/fa-brands-400.woff",
-        "sourceUrl": "https://darrellsrestaurants.com/",
-        "sourceKind": "official_page_thumbnail_candidate",
-        "reviewState": "candidate_review",
-        "rightsStatus": "requires_rights_review",
-        "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-02T17:39:07.870Z",
-        "publishedAt": null
-      },
-      {
-        "id": "thumb-0cc842f9b1ca0a447b",
-        "restaurantId": "osm-node-1031603952-darrell-s",
-        "restaurantName": "Darrell's",
-        "thumbnailUrl": "https://darrellsrestaurants.com/wp-content/plugins/js_composer/assets/lib/bower/font-awesome/webfonts/fa-brands-400.ttf",
-        "sourceUrl": "https://darrellsrestaurants.com/",
-        "sourceKind": "official_page_thumbnail_candidate",
-        "reviewState": "candidate_review",
-        "rightsStatus": "requires_rights_review",
-        "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-02T17:39:07.870Z",
-        "publishedAt": null
-      },
-      {
-        "id": "thumb-d4efa947866bfe5d3a",
-        "restaurantId": "osm-node-1031603952-darrell-s",
-        "restaurantName": "Darrell's",
-        "thumbnailUrl": "https://darrellsrestaurants.com/wp-content/plugins/js_composer/assets/lib/bower/font-awesome/webfonts/fa-brands-400.svg#fontawesome",
-        "sourceUrl": "https://darrellsrestaurants.com/",
-        "sourceKind": "official_page_thumbnail_candidate",
-        "reviewState": "candidate_review",
-        "rightsStatus": "requires_rights_review",
-        "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-02T17:39:07.870Z",
-        "publishedAt": null
-      },
-      {
-        "id": "thumb-55596bef4f086d46a8",
-        "restaurantId": "osm-node-1031603952-darrell-s",
-        "restaurantName": "Darrell's",
-        "thumbnailUrl": "https://darrellsrestaurants.com/wp-content/plugins/js_composer/assets/lib/bower/font-awesome/webfonts/fa-regular-400.eot",
-        "sourceUrl": "https://darrellsrestaurants.com/",
-        "sourceKind": "official_page_thumbnail_candidate",
-        "reviewState": "candidate_review",
-        "rightsStatus": "requires_rights_review",
-        "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-02T17:39:07.870Z",
-        "publishedAt": null
-      },
-      {
-        "id": "thumb-7f846d9acd100dc8ab",
-        "restaurantId": "osm-node-1031603952-darrell-s",
-        "restaurantName": "Darrell's",
-        "thumbnailUrl": "https://darrellsrestaurants.com/wp-content/plugins/js_composer/assets/lib/bower/font-awesome/webfonts/fa-regular-400.eot?#iefix",
-        "sourceUrl": "https://darrellsrestaurants.com/",
-        "sourceKind": "official_page_thumbnail_candidate",
-        "reviewState": "candidate_review",
-        "rightsStatus": "requires_rights_review",
-        "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-02T17:39:07.870Z",
-        "publishedAt": null
-      },
-      {
-        "id": "thumb-d2a4a1caf6b87a7fd8",
-        "restaurantId": "osm-node-1031603952-darrell-s",
-        "restaurantName": "Darrell's",
-        "thumbnailUrl": "https://darrellsrestaurants.com/wp-content/plugins/js_composer/assets/lib/bower/font-awesome/webfonts/fa-regular-400.woff2",
-        "sourceUrl": "https://darrellsrestaurants.com/",
-        "sourceKind": "official_page_thumbnail_candidate",
-        "reviewState": "candidate_review",
-        "rightsStatus": "requires_rights_review",
-        "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-02T17:39:07.870Z",
-        "publishedAt": null
-      },
-      {
-        "id": "thumb-5b0319be69ad3ffeb7",
-        "restaurantId": "osm-node-1031603952-darrell-s",
-        "restaurantName": "Darrell's",
-        "thumbnailUrl": "https://darrellsrestaurants.com/wp-content/plugins/js_composer/assets/lib/bower/font-awesome/webfonts/fa-regular-400.woff",
-        "sourceUrl": "https://darrellsrestaurants.com/",
-        "sourceKind": "official_page_thumbnail_candidate",
-        "reviewState": "candidate_review",
-        "rightsStatus": "requires_rights_review",
-        "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-02T17:39:07.870Z",
-        "publishedAt": null
-      },
-      {
-        "id": "thumb-eda3a3ea3bb0e1deb0",
-        "restaurantId": "osm-node-1031603952-darrell-s",
-        "restaurantName": "Darrell's",
-        "thumbnailUrl": "https://darrellsrestaurants.com/wp-content/plugins/js_composer/assets/lib/bower/font-awesome/webfonts/fa-regular-400.ttf",
-        "sourceUrl": "https://darrellsrestaurants.com/",
-        "sourceKind": "official_page_thumbnail_candidate",
-        "reviewState": "candidate_review",
-        "rightsStatus": "requires_rights_review",
-        "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-02T17:39:07.870Z",
-        "publishedAt": null
-      },
-      {
-        "id": "thumb-9c1188ef19b9fa8968",
-        "restaurantId": "osm-node-1031603952-darrell-s",
-        "restaurantName": "Darrell's",
-        "thumbnailUrl": "https://darrellsrestaurants.com/wp-content/plugins/js_composer/assets/lib/bower/font-awesome/webfonts/fa-regular-400.svg#fontawesome",
-        "sourceUrl": "https://darrellsrestaurants.com/",
-        "sourceKind": "official_page_thumbnail_candidate",
-        "reviewState": "candidate_review",
-        "rightsStatus": "requires_rights_review",
-        "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-02T17:39:07.870Z",
-        "publishedAt": null
-      },
-      {
-        "id": "thumb-9222d258dc459eedc0",
-        "restaurantId": "osm-node-1031603952-darrell-s",
-        "restaurantName": "Darrell's",
-        "thumbnailUrl": "https://darrellsrestaurants.com/wp-content/plugins/js_composer/assets/lib/bower/font-awesome/webfonts/fa-solid-900.eot",
-        "sourceUrl": "https://darrellsrestaurants.com/",
-        "sourceKind": "official_page_thumbnail_candidate",
-        "reviewState": "candidate_review",
-        "rightsStatus": "requires_rights_review",
-        "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-02T17:39:07.870Z",
-        "publishedAt": null
-      },
-      {
-        "id": "thumb-1fbb6a52cb63a8c718",
-        "restaurantId": "osm-node-1031603952-darrell-s",
-        "restaurantName": "Darrell's",
-        "thumbnailUrl": "https://darrellsrestaurants.com/wp-content/plugins/js_composer/assets/lib/bower/font-awesome/webfonts/fa-solid-900.eot?#iefix",
-        "sourceUrl": "https://darrellsrestaurants.com/",
-        "sourceKind": "official_page_thumbnail_candidate",
-        "reviewState": "candidate_review",
-        "rightsStatus": "requires_rights_review",
-        "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-02T17:39:07.870Z",
-        "publishedAt": null
-      },
-      {
-        "id": "thumb-ebd60259a2f6c80cc1",
-        "restaurantId": "osm-node-1031603952-darrell-s",
-        "restaurantName": "Darrell's",
-        "thumbnailUrl": "https://darrellsrestaurants.com/wp-content/plugins/js_composer/assets/lib/bower/font-awesome/webfonts/fa-solid-900.woff2",
-        "sourceUrl": "https://darrellsrestaurants.com/",
-        "sourceKind": "official_page_thumbnail_candidate",
-        "reviewState": "candidate_review",
-        "rightsStatus": "requires_rights_review",
-        "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-02T17:39:07.870Z",
-        "publishedAt": null
-      },
-      {
-        "id": "thumb-6cd5247668397f2e40",
-        "restaurantId": "osm-node-1031603952-darrell-s",
-        "restaurantName": "Darrell's",
-        "thumbnailUrl": "https://darrellsrestaurants.com/wp-content/plugins/js_composer/assets/lib/bower/font-awesome/webfonts/fa-solid-900.woff",
         "sourceUrl": "https://darrellsrestaurants.com/",
         "sourceKind": "official_page_thumbnail_candidate",
         "reviewState": "candidate_review",
@@ -9023,19 +7800,6 @@
         "publishedAt": null
       },
       {
-        "id": "thumb-6f477105d36d69c9c7",
-        "restaurantId": "osm-node-37132580-durty-nelly-s-irish-pub",
-        "restaurantName": "Durty Nelly's Irish Pub",
-        "thumbnailUrl": "https://durtynellys.ca/wp-content/uploads/2025/05/martel.woff2",
-        "sourceUrl": "https://durtynellys.ca/",
-        "sourceKind": "official_page_thumbnail_candidate",
-        "reviewState": "candidate_review",
-        "rightsStatus": "requires_rights_review",
-        "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-02T17:39:07.870Z",
-        "publishedAt": null
-      },
-      {
         "id": "thumb-6c6dd75461ba8ab75e",
         "restaurantId": "osm-node-37132580-durty-nelly-s-irish-pub",
         "restaurantName": "Durty Nelly's Irish Pub",
@@ -9145,6 +7909,955 @@
         "restaurantName": "Durty Nelly's Irish Pub",
         "thumbnailUrl": "https://durtynellys.ca/wp-content/uploads/2026/06/Food-MENU-2026-2.png",
         "sourceUrl": "https://durtynellys.ca/menu/",
+        "sourceKind": "official_page_thumbnail_candidate",
+        "reviewState": "candidate_review",
+        "rightsStatus": "requires_rights_review",
+        "confidence": "same_host_official_page_image",
+        "observedAt": "2026-09-02T17:39:07.870Z",
+        "publishedAt": null
+      },
+      {
+        "id": "thumb-07b74298580a7430a4",
+        "restaurantId": "osm-node-37132580-durty-nelly-s-irish-pub",
+        "restaurantName": "Durty Nelly's Irish Pub",
+        "thumbnailUrl": "https://durtynellys.ca/wp-content/uploads/2026/09/1.png",
+        "sourceUrl": "https://durtynellys.ca/menu/",
+        "sourceKind": "official_page_thumbnail_candidate",
+        "reviewState": "candidate_review",
+        "rightsStatus": "requires_rights_review",
+        "confidence": "same_host_official_page_image",
+        "observedAt": "2026-09-02T17:39:07.870Z",
+        "publishedAt": null
+      },
+      {
+        "id": "thumb-755e7040c584b6d58f",
+        "restaurantId": "osm-node-37132580-durty-nelly-s-irish-pub",
+        "restaurantName": "Durty Nelly's Irish Pub",
+        "thumbnailUrl": "https://durtynellys.ca/wp-content/uploads/2026/09/2.png",
+        "sourceUrl": "https://durtynellys.ca/menu/",
+        "sourceKind": "official_page_thumbnail_candidate",
+        "reviewState": "candidate_review",
+        "rightsStatus": "requires_rights_review",
+        "confidence": "same_host_official_page_image",
+        "observedAt": "2026-09-02T17:39:07.870Z",
+        "publishedAt": null
+      },
+      {
+        "id": "thumb-18addea366bc534d73",
+        "restaurantId": "osm-node-37132580-durty-nelly-s-irish-pub",
+        "restaurantName": "Durty Nelly's Irish Pub",
+        "thumbnailUrl": "https://durtynellys.ca/wp-content/uploads/2026/09/3.png",
+        "sourceUrl": "https://durtynellys.ca/menu/",
+        "sourceKind": "official_page_thumbnail_candidate",
+        "reviewState": "candidate_review",
+        "rightsStatus": "requires_rights_review",
+        "confidence": "same_host_official_page_image",
+        "observedAt": "2026-09-02T17:39:07.870Z",
+        "publishedAt": null
+      },
+      {
+        "id": "thumb-4801df7b76d4b59d6b",
+        "restaurantId": "osm-node-37132580-durty-nelly-s-irish-pub",
+        "restaurantName": "Durty Nelly's Irish Pub",
+        "thumbnailUrl": "https://durtynellys.ca/wp-content/uploads/2026/09/4.png",
+        "sourceUrl": "https://durtynellys.ca/menu/",
+        "sourceKind": "official_page_thumbnail_candidate",
+        "reviewState": "candidate_review",
+        "rightsStatus": "requires_rights_review",
+        "confidence": "same_host_official_page_image",
+        "observedAt": "2026-09-02T17:39:07.870Z",
+        "publishedAt": null
+      },
+      {
+        "id": "thumb-6c50f97f972de35dd0",
+        "restaurantId": "osm-node-37132580-durty-nelly-s-irish-pub",
+        "restaurantName": "Durty Nelly's Irish Pub",
+        "thumbnailUrl": "https://durtynellys.ca/wp-content/uploads/2026/09/5.png",
+        "sourceUrl": "https://durtynellys.ca/menu/",
+        "sourceKind": "official_page_thumbnail_candidate",
+        "reviewState": "candidate_review",
+        "rightsStatus": "requires_rights_review",
+        "confidence": "same_host_official_page_image",
+        "observedAt": "2026-09-02T17:39:07.870Z",
+        "publishedAt": null
+      },
+      {
+        "id": "thumb-aaf4bfd4ed81488e4b",
+        "restaurantId": "osm-node-37132580-durty-nelly-s-irish-pub",
+        "restaurantName": "Durty Nelly's Irish Pub",
+        "thumbnailUrl": "https://durtynellys.ca/wp-content/uploads/2026/09/6.png",
+        "sourceUrl": "https://durtynellys.ca/menu/",
+        "sourceKind": "official_page_thumbnail_candidate",
+        "reviewState": "candidate_review",
+        "rightsStatus": "requires_rights_review",
+        "confidence": "same_host_official_page_image",
+        "observedAt": "2026-09-02T17:39:07.870Z",
+        "publishedAt": null
+      },
+      {
+        "id": "thumb-4daa163110ac38d963",
+        "restaurantId": "osm-node-37132580-durty-nelly-s-irish-pub",
+        "restaurantName": "Durty Nelly's Irish Pub",
+        "thumbnailUrl": "https://durtynellys.ca/wp-content/uploads/2026/09/7.png",
+        "sourceUrl": "https://durtynellys.ca/menu/",
+        "sourceKind": "official_page_thumbnail_candidate",
+        "reviewState": "candidate_review",
+        "rightsStatus": "requires_rights_review",
+        "confidence": "same_host_official_page_image",
+        "observedAt": "2026-09-02T17:39:07.870Z",
+        "publishedAt": null
+      },
+      {
+        "id": "thumb-944ed1d4da6d5f4fbd",
+        "restaurantId": "osm-node-37132580-durty-nelly-s-irish-pub",
+        "restaurantName": "Durty Nelly's Irish Pub",
+        "thumbnailUrl": "https://durtynellys.ca/wp-content/uploads/2025/05/fmaIvGwX-683x1024.jpeg",
+        "sourceUrl": "https://durtynellys.ca/menu/",
+        "sourceKind": "official_page_thumbnail_candidate",
+        "reviewState": "candidate_review",
+        "rightsStatus": "requires_rights_review",
+        "confidence": "same_host_official_page_image",
+        "observedAt": "2026-09-02T17:39:07.870Z",
+        "publishedAt": null
+      },
+      {
+        "id": "thumb-c2c89b6599d39dafcc",
+        "restaurantId": "osm-node-11752717941-east-cup-cafe",
+        "restaurantName": "East Cup Cafe",
+        "thumbnailUrl": "https://eastcupcafe.com/cdn/shop/files/dsc_0261.jpg?v=1685056528&width=3840",
+        "sourceUrl": "https://eastcupcafe.com/",
+        "sourceKind": "official_page_thumbnail_candidate",
+        "reviewState": "candidate_review",
+        "rightsStatus": "requires_rights_review",
+        "confidence": "same_host_official_page_image",
+        "observedAt": "2026-09-02T17:39:07.870Z",
+        "publishedAt": null
+      },
+      {
+        "id": "thumb-3419836941e6828f64",
+        "restaurantId": "osm-node-11752717941-east-cup-cafe",
+        "restaurantName": "East Cup Cafe",
+        "thumbnailUrl": "https://eastcupcafe.com/cdn/shop/files/71ca412e-b244-4589-846e-49e218cc5cab.jpg?v=1685481095&width=533",
+        "sourceUrl": "https://eastcupcafe.com/",
+        "sourceKind": "official_page_thumbnail_candidate",
+        "reviewState": "candidate_review",
+        "rightsStatus": "requires_rights_review",
+        "confidence": "same_host_official_page_image",
+        "observedAt": "2026-09-02T17:39:07.870Z",
+        "publishedAt": null
+      },
+      {
+        "id": "thumb-0568ebedbaf42d5ac2",
+        "restaurantId": "osm-node-11752717941-east-cup-cafe",
+        "restaurantName": "East Cup Cafe",
+        "thumbnailUrl": "https://eastcupcafe.com/cdn/shop/files/WhatsAppImage2023-05-30at6.11.14PM.jpg?v=1685481182&width=533",
+        "sourceUrl": "https://eastcupcafe.com/",
+        "sourceKind": "official_page_thumbnail_candidate",
+        "reviewState": "candidate_review",
+        "rightsStatus": "requires_rights_review",
+        "confidence": "same_host_official_page_image",
+        "observedAt": "2026-09-02T17:39:07.870Z",
+        "publishedAt": null
+      },
+      {
+        "id": "thumb-d66756c8f075c15326",
+        "restaurantId": "osm-node-11752717941-east-cup-cafe",
+        "restaurantName": "East Cup Cafe",
+        "thumbnailUrl": "https://eastcupcafe.com/cdn/shop/files/asorted.jpg?v=1685206405&width=533",
+        "sourceUrl": "https://eastcupcafe.com/",
+        "sourceKind": "official_page_thumbnail_candidate",
+        "reviewState": "candidate_review",
+        "rightsStatus": "requires_rights_review",
+        "confidence": "same_host_official_page_image",
+        "observedAt": "2026-09-02T17:39:07.870Z",
+        "publishedAt": null
+      },
+      {
+        "id": "thumb-34349e75dc0f1b7074",
+        "restaurantId": "osm-node-11752717941-east-cup-cafe",
+        "restaurantName": "East Cup Cafe",
+        "thumbnailUrl": "https://eastcupcafe.com/cdn/shop/files/blue.jpg?v=1685206335&width=533",
+        "sourceUrl": "https://eastcupcafe.com/",
+        "sourceKind": "official_page_thumbnail_candidate",
+        "reviewState": "candidate_review",
+        "rightsStatus": "requires_rights_review",
+        "confidence": "same_host_official_page_image",
+        "observedAt": "2026-09-02T17:39:07.870Z",
+        "publishedAt": null
+      },
+      {
+        "id": "thumb-2a962876cf91c7e9a7",
+        "restaurantId": "osm-node-11752717941-east-cup-cafe",
+        "restaurantName": "East Cup Cafe",
+        "thumbnailUrl": "https://eastcupcafe.com/#pi-paint0_linear",
+        "sourceUrl": "https://eastcupcafe.com/",
+        "sourceKind": "official_page_thumbnail_candidate",
+        "reviewState": "candidate_review",
+        "rightsStatus": "requires_rights_review",
+        "confidence": "same_host_official_page_image",
+        "observedAt": "2026-09-02T17:39:07.870Z",
+        "publishedAt": null
+      },
+      {
+        "id": "thumb-7113364ffa93fe328c",
+        "restaurantId": "osm-node-11752717941-east-cup-cafe",
+        "restaurantName": "East Cup Cafe",
+        "thumbnailUrl": "https://eastcupcafe.com/#pi-paint1_linear",
+        "sourceUrl": "https://eastcupcafe.com/",
+        "sourceKind": "official_page_thumbnail_candidate",
+        "reviewState": "candidate_review",
+        "rightsStatus": "requires_rights_review",
+        "confidence": "same_host_official_page_image",
+        "observedAt": "2026-09-02T17:39:07.870Z",
+        "publishedAt": null
+      },
+      {
+        "id": "thumb-fc50ab6e5238b39a9d",
+        "restaurantId": "osm-node-762250248-ela-greek-taverna",
+        "restaurantName": "Ela Greek Taverna",
+        "thumbnailUrl": "https://elagreektaverna.com/wp-content/uploads/2020/07/landing-page-hero-image.jpg",
+        "sourceUrl": "https://elagreektaverna.com/",
+        "sourceKind": "official_page_thumbnail_candidate",
+        "reviewState": "candidate_review",
+        "rightsStatus": "requires_rights_review",
+        "confidence": "same_host_official_page_image",
+        "observedAt": "2026-09-02T17:39:07.870Z",
+        "publishedAt": null
+      },
+      {
+        "id": "thumb-48f832a8fa40785aeb",
+        "restaurantId": "osm-node-762250248-ela-greek-taverna",
+        "restaurantName": "Ela Greek Taverna",
+        "thumbnailUrl": "https://elagreektaverna.com/wp-content/uploads/2020/07/ela-halifax-interior.jpg",
+        "sourceUrl": "https://elagreektaverna.com/",
+        "sourceKind": "official_page_thumbnail_candidate",
+        "reviewState": "candidate_review",
+        "rightsStatus": "requires_rights_review",
+        "confidence": "same_host_official_page_image",
+        "observedAt": "2026-09-02T17:39:07.870Z",
+        "publishedAt": null
+      },
+      {
+        "id": "thumb-79f626311c03357499",
+        "restaurantId": "osm-node-762250248-ela-greek-taverna",
+        "restaurantName": "Ela Greek Taverna",
+        "thumbnailUrl": "https://elagreektaverna.com/wp-content/uploads/2020/07/friends-around-the-table.jpg",
+        "sourceUrl": "https://elagreektaverna.com/",
+        "sourceKind": "official_page_thumbnail_candidate",
+        "reviewState": "candidate_review",
+        "rightsStatus": "requires_rights_review",
+        "confidence": "same_host_official_page_image",
+        "observedAt": "2026-09-02T17:39:07.870Z",
+        "publishedAt": null
+      },
+      {
+        "id": "thumb-24b2b164784751add4",
+        "restaurantId": "osm-node-762250248-ela-greek-taverna",
+        "restaurantName": "Ela Greek Taverna",
+        "thumbnailUrl": "https://elagreektaverna.com/wp-content/uploads/2020/07/plates-closeup-overhead-300x200.jpg",
+        "sourceUrl": "https://elagreektaverna.com/",
+        "sourceKind": "official_page_thumbnail_candidate",
+        "reviewState": "candidate_review",
+        "rightsStatus": "requires_rights_review",
+        "confidence": "same_host_official_page_image",
+        "observedAt": "2026-09-02T17:39:07.870Z",
+        "publishedAt": null
+      },
+      {
+        "id": "thumb-30603fae4450c9e27a",
+        "restaurantId": "osm-node-762250248-ela-greek-taverna",
+        "restaurantName": "Ela Greek Taverna",
+        "thumbnailUrl": "https://elagreektaverna.com/wp-content/uploads/2020/07/family-table.jpg",
+        "sourceUrl": "https://elagreektaverna.com/",
+        "sourceKind": "official_page_thumbnail_candidate",
+        "reviewState": "candidate_review",
+        "rightsStatus": "requires_rights_review",
+        "confidence": "same_host_official_page_image",
+        "observedAt": "2026-09-02T17:39:07.870Z",
+        "publishedAt": null
+      },
+      {
+        "id": "thumb-d144c26e6872daf054",
+        "restaurantId": "osm-node-762250248-ela-greek-taverna",
+        "restaurantName": "Ela Greek Taverna",
+        "thumbnailUrl": "https://elagreektaverna.com/wp-content/uploads/2020/07/ela-flaming-saganaki-1024x683.jpg",
+        "sourceUrl": "https://elagreektaverna.com/",
+        "sourceKind": "official_page_thumbnail_candidate",
+        "reviewState": "candidate_review",
+        "rightsStatus": "requires_rights_review",
+        "confidence": "same_host_official_page_image",
+        "observedAt": "2026-09-02T17:39:07.870Z",
+        "publishedAt": null
+      },
+      {
+        "id": "thumb-9c2f189f6a1ad226a4",
+        "restaurantId": "osm-node-762250248-ela-greek-taverna",
+        "restaurantName": "Ela Greek Taverna",
+        "thumbnailUrl": "https://elagreektaverna.com/wp-content/uploads/2020/07/ela-dining-room.jpg",
+        "sourceUrl": "https://elagreektaverna.com/",
+        "sourceKind": "official_page_thumbnail_candidate",
+        "reviewState": "candidate_review",
+        "rightsStatus": "requires_rights_review",
+        "confidence": "same_host_official_page_image",
+        "observedAt": "2026-09-02T17:39:07.870Z",
+        "publishedAt": null
+      },
+      {
+        "id": "thumb-b9a7b4ef2c70b42eb2",
+        "restaurantId": "osm-node-762250248-ela-greek-taverna",
+        "restaurantName": "Ela Greek Taverna",
+        "thumbnailUrl": "https://elagreektaverna.com/wp-content/uploads/2020/07/private-events-1024x684.jpg",
+        "sourceUrl": "https://elagreektaverna.com/",
+        "sourceKind": "official_page_thumbnail_candidate",
+        "reviewState": "candidate_review",
+        "rightsStatus": "requires_rights_review",
+        "confidence": "same_host_official_page_image",
+        "observedAt": "2026-09-02T17:39:07.870Z",
+        "publishedAt": null
+      },
+      {
+        "id": "thumb-2ce801e18104827198",
+        "restaurantId": "osm-node-762250248-ela-greek-taverna",
+        "restaurantName": "Ela Greek Taverna",
+        "thumbnailUrl": "https://elagreektaverna.com/#a",
+        "sourceUrl": "https://elagreektaverna.com/",
+        "sourceKind": "official_page_thumbnail_candidate",
+        "reviewState": "candidate_review",
+        "rightsStatus": "requires_rights_review",
+        "confidence": "same_host_official_page_image",
+        "observedAt": "2026-09-02T17:39:07.870Z",
+        "publishedAt": null
+      },
+      {
+        "id": "thumb-9c2bbcc7028f08cecc",
+        "restaurantId": "osm-node-762250248-ela-greek-taverna",
+        "restaurantName": "Ela Greek Taverna",
+        "thumbnailUrl": "https://elagreektaverna.com/wp-content/uploads/2024/12/ela-menu-hero.jpg",
+        "sourceUrl": "https://elagreektaverna.com/menu/",
+        "sourceKind": "official_page_thumbnail_candidate",
+        "reviewState": "candidate_review",
+        "rightsStatus": "requires_rights_review",
+        "confidence": "same_host_official_page_image",
+        "observedAt": "2026-09-02T17:39:07.870Z",
+        "publishedAt": null
+      },
+      {
+        "id": "thumb-bdc539a231edec27a0",
+        "restaurantId": "osm-node-762250248-ela-greek-taverna",
+        "restaurantName": "Ela Greek Taverna",
+        "thumbnailUrl": "https://elagreektaverna.com/menu/#a",
+        "sourceUrl": "https://elagreektaverna.com/menu/",
+        "sourceKind": "official_page_thumbnail_candidate",
+        "reviewState": "candidate_review",
+        "rightsStatus": "requires_rights_review",
+        "confidence": "same_host_official_page_image",
+        "observedAt": "2026-09-02T17:39:07.870Z",
+        "publishedAt": null
+      },
+      {
+        "id": "thumb-fac63ca8837f8f69de",
+        "restaurantId": "osm-node-762250248-ela-greek-taverna",
+        "restaurantName": "Ela Greek Taverna",
+        "thumbnailUrl": "https://elagreektaverna.com/menu/r",
+        "sourceUrl": "https://elagreektaverna.com/menu/",
+        "sourceKind": "official_page_thumbnail_candidate",
+        "reviewState": "candidate_review",
+        "rightsStatus": "requires_rights_review",
+        "confidence": "same_host_official_page_image",
+        "observedAt": "2026-09-02T17:39:07.870Z",
+        "publishedAt": null
+      },
+      {
+        "id": "thumb-6b1c89320a6ba84340",
+        "restaurantId": "osm-node-762250248-ela-greek-taverna",
+        "restaurantName": "Ela Greek Taverna",
+        "thumbnailUrl": "https://elagreektaverna.com/wp-content/uploads/2020/06/girl-holding-glass-of-white-wine-at-ela-halifax.jpg",
+        "sourceUrl": "https://elagreektaverna.com/reservations/",
+        "sourceKind": "official_page_thumbnail_candidate",
+        "reviewState": "candidate_review",
+        "rightsStatus": "requires_rights_review",
+        "confidence": "same_host_official_page_image",
+        "observedAt": "2026-09-02T17:39:07.870Z",
+        "publishedAt": null
+      },
+      {
+        "id": "thumb-b88b4d18fbbf37ab10",
+        "restaurantId": "osm-node-762250248-ela-greek-taverna",
+        "restaurantName": "Ela Greek Taverna",
+        "thumbnailUrl": "https://elagreektaverna.com/reservations/#a",
+        "sourceUrl": "https://elagreektaverna.com/reservations/",
+        "sourceKind": "official_page_thumbnail_candidate",
+        "reviewState": "candidate_review",
+        "rightsStatus": "requires_rights_review",
+        "confidence": "same_host_official_page_image",
+        "observedAt": "2026-09-02T17:39:07.870Z",
+        "publishedAt": null
+      },
+      {
+        "id": "thumb-45c997f96b2637c0a1",
+        "restaurantId": "osm-node-762250248-ela-greek-taverna",
+        "restaurantName": "Ela Greek Taverna",
+        "thumbnailUrl": "https://elagreektaverna.com/reservations/r",
+        "sourceUrl": "https://elagreektaverna.com/reservations/",
+        "sourceKind": "official_page_thumbnail_candidate",
+        "reviewState": "candidate_review",
+        "rightsStatus": "requires_rights_review",
+        "confidence": "same_host_official_page_image",
+        "observedAt": "2026-09-02T17:39:07.870Z",
+        "publishedAt": null
+      },
+      {
+        "id": "thumb-0048411bed7e606079",
+        "restaurantId": "osm-node-2705686566-ela-greek-taverna",
+        "restaurantName": "ela! Greek Taverna",
+        "thumbnailUrl": "https://elagreektaverna.com/wp-content/uploads/2020/07/landing-page-hero-image.jpg",
+        "sourceUrl": "https://elagreektaverna.com/",
+        "sourceKind": "official_page_thumbnail_candidate",
+        "reviewState": "candidate_review",
+        "rightsStatus": "requires_rights_review",
+        "confidence": "same_host_official_page_image",
+        "observedAt": "2026-09-02T17:39:07.870Z",
+        "publishedAt": null
+      },
+      {
+        "id": "thumb-41ed4ea07d8d4d25ef",
+        "restaurantId": "osm-node-2705686566-ela-greek-taverna",
+        "restaurantName": "ela! Greek Taverna",
+        "thumbnailUrl": "https://elagreektaverna.com/wp-content/uploads/2020/07/ela-halifax-interior.jpg",
+        "sourceUrl": "https://elagreektaverna.com/",
+        "sourceKind": "official_page_thumbnail_candidate",
+        "reviewState": "candidate_review",
+        "rightsStatus": "requires_rights_review",
+        "confidence": "same_host_official_page_image",
+        "observedAt": "2026-09-02T17:39:07.870Z",
+        "publishedAt": null
+      },
+      {
+        "id": "thumb-0bd1fea8d5bb0a200b",
+        "restaurantId": "osm-node-2705686566-ela-greek-taverna",
+        "restaurantName": "ela! Greek Taverna",
+        "thumbnailUrl": "https://elagreektaverna.com/wp-content/uploads/2020/07/friends-around-the-table.jpg",
+        "sourceUrl": "https://elagreektaverna.com/",
+        "sourceKind": "official_page_thumbnail_candidate",
+        "reviewState": "candidate_review",
+        "rightsStatus": "requires_rights_review",
+        "confidence": "same_host_official_page_image",
+        "observedAt": "2026-09-02T17:39:07.870Z",
+        "publishedAt": null
+      },
+      {
+        "id": "thumb-6011594a618241fabf",
+        "restaurantId": "osm-node-2705686566-ela-greek-taverna",
+        "restaurantName": "ela! Greek Taverna",
+        "thumbnailUrl": "https://elagreektaverna.com/wp-content/uploads/2020/07/plates-closeup-overhead-300x200.jpg",
+        "sourceUrl": "https://elagreektaverna.com/",
+        "sourceKind": "official_page_thumbnail_candidate",
+        "reviewState": "candidate_review",
+        "rightsStatus": "requires_rights_review",
+        "confidence": "same_host_official_page_image",
+        "observedAt": "2026-09-02T17:39:07.870Z",
+        "publishedAt": null
+      },
+      {
+        "id": "thumb-daa1898d087025b51b",
+        "restaurantId": "osm-node-2705686566-ela-greek-taverna",
+        "restaurantName": "ela! Greek Taverna",
+        "thumbnailUrl": "https://elagreektaverna.com/wp-content/uploads/2020/07/family-table.jpg",
+        "sourceUrl": "https://elagreektaverna.com/",
+        "sourceKind": "official_page_thumbnail_candidate",
+        "reviewState": "candidate_review",
+        "rightsStatus": "requires_rights_review",
+        "confidence": "same_host_official_page_image",
+        "observedAt": "2026-09-02T17:39:07.870Z",
+        "publishedAt": null
+      },
+      {
+        "id": "thumb-7c3d782e58fbebae9f",
+        "restaurantId": "osm-node-2705686566-ela-greek-taverna",
+        "restaurantName": "ela! Greek Taverna",
+        "thumbnailUrl": "https://elagreektaverna.com/wp-content/uploads/2020/07/ela-flaming-saganaki-1024x683.jpg",
+        "sourceUrl": "https://elagreektaverna.com/",
+        "sourceKind": "official_page_thumbnail_candidate",
+        "reviewState": "candidate_review",
+        "rightsStatus": "requires_rights_review",
+        "confidence": "same_host_official_page_image",
+        "observedAt": "2026-09-02T17:39:07.870Z",
+        "publishedAt": null
+      },
+      {
+        "id": "thumb-a3a16ef318f796d3ce",
+        "restaurantId": "osm-node-2705686566-ela-greek-taverna",
+        "restaurantName": "ela! Greek Taverna",
+        "thumbnailUrl": "https://elagreektaverna.com/wp-content/uploads/2020/07/ela-dining-room.jpg",
+        "sourceUrl": "https://elagreektaverna.com/",
+        "sourceKind": "official_page_thumbnail_candidate",
+        "reviewState": "candidate_review",
+        "rightsStatus": "requires_rights_review",
+        "confidence": "same_host_official_page_image",
+        "observedAt": "2026-09-02T17:39:07.870Z",
+        "publishedAt": null
+      },
+      {
+        "id": "thumb-44dc14da51a5f1cac5",
+        "restaurantId": "osm-node-2705686566-ela-greek-taverna",
+        "restaurantName": "ela! Greek Taverna",
+        "thumbnailUrl": "https://elagreektaverna.com/wp-content/uploads/2020/07/private-events-1024x684.jpg",
+        "sourceUrl": "https://elagreektaverna.com/",
+        "sourceKind": "official_page_thumbnail_candidate",
+        "reviewState": "candidate_review",
+        "rightsStatus": "requires_rights_review",
+        "confidence": "same_host_official_page_image",
+        "observedAt": "2026-09-02T17:39:07.870Z",
+        "publishedAt": null
+      },
+      {
+        "id": "thumb-c3209f82b0daeac6b6",
+        "restaurantId": "osm-node-2705686566-ela-greek-taverna",
+        "restaurantName": "ela! Greek Taverna",
+        "thumbnailUrl": "https://elagreektaverna.com/#a",
+        "sourceUrl": "https://elagreektaverna.com/",
+        "sourceKind": "official_page_thumbnail_candidate",
+        "reviewState": "candidate_review",
+        "rightsStatus": "requires_rights_review",
+        "confidence": "same_host_official_page_image",
+        "observedAt": "2026-09-02T17:39:07.870Z",
+        "publishedAt": null
+      },
+      {
+        "id": "thumb-516b3b50a172cbf36b",
+        "restaurantId": "osm-node-2705686566-ela-greek-taverna",
+        "restaurantName": "ela! Greek Taverna",
+        "thumbnailUrl": "https://elagreektaverna.com/wp-content/uploads/2024/12/ela-menu-hero.jpg",
+        "sourceUrl": "https://elagreektaverna.com/menu/",
+        "sourceKind": "official_page_thumbnail_candidate",
+        "reviewState": "candidate_review",
+        "rightsStatus": "requires_rights_review",
+        "confidence": "same_host_official_page_image",
+        "observedAt": "2026-09-02T17:39:07.870Z",
+        "publishedAt": null
+      },
+      {
+        "id": "thumb-b6fb6dfa8c2f727241",
+        "restaurantId": "osm-node-2705686566-ela-greek-taverna",
+        "restaurantName": "ela! Greek Taverna",
+        "thumbnailUrl": "https://elagreektaverna.com/menu/#a",
+        "sourceUrl": "https://elagreektaverna.com/menu/",
+        "sourceKind": "official_page_thumbnail_candidate",
+        "reviewState": "candidate_review",
+        "rightsStatus": "requires_rights_review",
+        "confidence": "same_host_official_page_image",
+        "observedAt": "2026-09-02T17:39:07.870Z",
+        "publishedAt": null
+      },
+      {
+        "id": "thumb-8f0842ba60abb8fe44",
+        "restaurantId": "osm-node-2705686566-ela-greek-taverna",
+        "restaurantName": "ela! Greek Taverna",
+        "thumbnailUrl": "https://elagreektaverna.com/menu/r",
+        "sourceUrl": "https://elagreektaverna.com/menu/",
+        "sourceKind": "official_page_thumbnail_candidate",
+        "reviewState": "candidate_review",
+        "rightsStatus": "requires_rights_review",
+        "confidence": "same_host_official_page_image",
+        "observedAt": "2026-09-02T17:39:07.870Z",
+        "publishedAt": null
+      },
+      {
+        "id": "thumb-4e7f8ac2d9bcd7ff1d",
+        "restaurantId": "osm-node-2705686566-ela-greek-taverna",
+        "restaurantName": "ela! Greek Taverna",
+        "thumbnailUrl": "https://elagreektaverna.com/wp-content/uploads/2020/06/girl-holding-glass-of-white-wine-at-ela-halifax.jpg",
+        "sourceUrl": "https://elagreektaverna.com/reservations/",
+        "sourceKind": "official_page_thumbnail_candidate",
+        "reviewState": "candidate_review",
+        "rightsStatus": "requires_rights_review",
+        "confidence": "same_host_official_page_image",
+        "observedAt": "2026-09-02T17:39:07.870Z",
+        "publishedAt": null
+      },
+      {
+        "id": "thumb-24730bc020d585faca",
+        "restaurantId": "osm-node-2705686566-ela-greek-taverna",
+        "restaurantName": "ela! Greek Taverna",
+        "thumbnailUrl": "https://elagreektaverna.com/reservations/#a",
+        "sourceUrl": "https://elagreektaverna.com/reservations/",
+        "sourceKind": "official_page_thumbnail_candidate",
+        "reviewState": "candidate_review",
+        "rightsStatus": "requires_rights_review",
+        "confidence": "same_host_official_page_image",
+        "observedAt": "2026-09-02T17:39:07.870Z",
+        "publishedAt": null
+      },
+      {
+        "id": "thumb-c5c2342ebe097fad3f",
+        "restaurantId": "osm-node-2705686566-ela-greek-taverna",
+        "restaurantName": "ela! Greek Taverna",
+        "thumbnailUrl": "https://elagreektaverna.com/reservations/r",
+        "sourceUrl": "https://elagreektaverna.com/reservations/",
+        "sourceKind": "official_page_thumbnail_candidate",
+        "reviewState": "candidate_review",
+        "rightsStatus": "requires_rights_review",
+        "confidence": "same_host_official_page_image",
+        "observedAt": "2026-09-02T17:39:07.870Z",
+        "publishedAt": null
+      },
+      {
+        "id": "thumb-7baa4f47c389731c0a",
+        "restaurantId": "osm-node-620808566-fan-s-chinese-restaurant",
+        "restaurantName": "Fan's Chinese Restaurant",
+        "thumbnailUrl": "https://www.fansrestaurant.ca/$%7Bs.uri%7D",
+        "sourceUrl": "https://www.fansrestaurant.ca/dim-sum-menu",
+        "sourceKind": "official_page_thumbnail_candidate",
+        "reviewState": "candidate_review",
+        "rightsStatus": "requires_rights_review",
+        "confidence": "same_host_official_page_image",
+        "observedAt": "2026-09-02T17:39:07.870Z",
+        "publishedAt": null
+      },
+      {
+        "id": "thumb-ffcf2c9a2fe79aca2a",
+        "restaurantId": "osm-node-7674194896-gahan-house",
+        "restaurantName": "Gahan House",
+        "thumbnailUrl": "https://gahan.ca/menu/r",
+        "sourceUrl": "https://gahan.ca/menu/",
+        "sourceKind": "official_page_thumbnail_candidate",
+        "reviewState": "candidate_review",
+        "rightsStatus": "requires_rights_review",
+        "confidence": "same_host_official_page_image",
+        "observedAt": "2026-09-02T17:39:07.870Z",
+        "publishedAt": null
+      },
+      {
+        "id": "thumb-6de2e1d3ccb9f8011c",
+        "restaurantId": "osm-node-2611287045-gingerbread-haus-bakery",
+        "restaurantName": "Gingerbread Haus Bakery",
+        "thumbnailUrl": "https://www.gingerbreadhausbakery.com/wp-content/uploads/2019/07/IMG_20180602_082809-3-e1781047728116.jpg",
+        "sourceUrl": "https://www.gingerbreadhausbakery.com/",
+        "sourceKind": "official_page_thumbnail_candidate",
+        "reviewState": "candidate_review",
+        "rightsStatus": "requires_rights_review",
+        "confidence": "same_host_official_page_image",
+        "observedAt": "2026-09-02T17:39:07.870Z",
+        "publishedAt": null
+      },
+      {
+        "id": "thumb-8f04113b6f0f71a757",
+        "restaurantId": "osm-node-2611287045-gingerbread-haus-bakery",
+        "restaurantName": "Gingerbread Haus Bakery",
+        "thumbnailUrl": "https://www.gingerbreadhausbakery.com/wp-content/uploads/2019/07/IMG_20180505_073515-1.jpg",
+        "sourceUrl": "https://www.gingerbreadhausbakery.com/",
+        "sourceKind": "official_page_thumbnail_candidate",
+        "reviewState": "candidate_review",
+        "rightsStatus": "requires_rights_review",
+        "confidence": "same_host_official_page_image",
+        "observedAt": "2026-09-02T17:39:07.870Z",
+        "publishedAt": null
+      },
+      {
+        "id": "thumb-48650489c6cb1a4cc0",
+        "restaurantId": "osm-node-2611287045-gingerbread-haus-bakery",
+        "restaurantName": "Gingerbread Haus Bakery",
+        "thumbnailUrl": "https://www.gingerbreadhausbakery.com/wp-content/uploads/2019/07/IMG_20180505_073506.jpg",
+        "sourceUrl": "https://www.gingerbreadhausbakery.com/",
+        "sourceKind": "official_page_thumbnail_candidate",
+        "reviewState": "candidate_review",
+        "rightsStatus": "requires_rights_review",
+        "confidence": "same_host_official_page_image",
+        "observedAt": "2026-09-02T17:39:07.870Z",
+        "publishedAt": null
+      },
+      {
+        "id": "thumb-84627feced00192b92",
+        "restaurantId": "osm-node-2611287045-gingerbread-haus-bakery",
+        "restaurantName": "Gingerbread Haus Bakery",
+        "thumbnailUrl": "https://www.gingerbreadhausbakery.com/'https://www.gingerbreadhausbakery.com/wp-content/uploads/2019/07/IMG_20180504_103736.jpg'",
+        "sourceUrl": "https://www.gingerbreadhausbakery.com/",
+        "sourceKind": "official_page_thumbnail_candidate",
+        "reviewState": "candidate_review",
+        "rightsStatus": "requires_rights_review",
+        "confidence": "same_host_official_page_image",
+        "observedAt": "2026-09-02T17:39:07.870Z",
+        "publishedAt": null
+      },
+      {
+        "id": "thumb-d65fd0a3a0ac0c08bf",
+        "restaurantId": "osm-node-2611287045-gingerbread-haus-bakery",
+        "restaurantName": "Gingerbread Haus Bakery",
+        "thumbnailUrl": "https://www.gingerbreadhausbakery.com/'https://www.gingerbreadhausbakery.com/wp-content/uploads/2019/07/IMG_20180504_103645.jpg'",
+        "sourceUrl": "https://www.gingerbreadhausbakery.com/",
+        "sourceKind": "official_page_thumbnail_candidate",
+        "reviewState": "candidate_review",
+        "rightsStatus": "requires_rights_review",
+        "confidence": "same_host_official_page_image",
+        "observedAt": "2026-09-02T17:39:07.870Z",
+        "publishedAt": null
+      },
+      {
+        "id": "thumb-491e670ea985ebff37",
+        "restaurantId": "osm-node-2611287045-gingerbread-haus-bakery",
+        "restaurantName": "Gingerbread Haus Bakery",
+        "thumbnailUrl": "https://www.gingerbreadhausbakery.com/'https://www.gingerbreadhausbakery.com/wp-content/uploads/2019/07/IMG_20180511_100653-e1566416879287.jpg'",
+        "sourceUrl": "https://www.gingerbreadhausbakery.com/",
+        "sourceKind": "official_page_thumbnail_candidate",
+        "reviewState": "candidate_review",
+        "rightsStatus": "requires_rights_review",
+        "confidence": "same_host_official_page_image",
+        "observedAt": "2026-09-02T17:39:07.870Z",
+        "publishedAt": null
+      },
+      {
+        "id": "thumb-be91e22df2c7b2aa3c",
+        "restaurantId": "osm-node-2611287045-gingerbread-haus-bakery",
+        "restaurantName": "Gingerbread Haus Bakery",
+        "thumbnailUrl": "https://www.gingerbreadhausbakery.com/'https://www.gingerbreadhausbakery.com/wp-content/uploads/2019/08/IMG_20180511_095047-5-e1566417457857.jpg'",
+        "sourceUrl": "https://www.gingerbreadhausbakery.com/",
+        "sourceKind": "official_page_thumbnail_candidate",
+        "reviewState": "candidate_review",
+        "rightsStatus": "requires_rights_review",
+        "confidence": "same_host_official_page_image",
+        "observedAt": "2026-09-02T17:39:07.870Z",
+        "publishedAt": null
+      },
+      {
+        "id": "thumb-f85c66e2fc5c2862d4",
+        "restaurantId": "osm-node-4416774495-glitter-bean-cafe",
+        "restaurantName": "Glitter Bean Cafe",
+        "thumbnailUrl": "https://justitalymentone.com/Images/banners/home/DesktopID-811-20250908160207.png",
+        "sourceUrl": "https://justitalymentone.com/",
+        "sourceKind": "official_page_thumbnail_candidate",
+        "reviewState": "candidate_review",
+        "rightsStatus": "requires_rights_review",
+        "confidence": "same_host_official_page_image",
+        "observedAt": "2026-09-02T17:39:07.870Z",
+        "publishedAt": null
+      },
+      {
+        "id": "thumb-aed85227afa3102f1e",
+        "restaurantId": "osm-node-4416774495-glitter-bean-cafe",
+        "restaurantName": "Glitter Bean Cafe",
+        "thumbnailUrl": "https://justitalymentone.com/Images/banners/home/DesktopID-862-20250922150602.png",
+        "sourceUrl": "https://justitalymentone.com/",
+        "sourceKind": "official_page_thumbnail_candidate",
+        "reviewState": "candidate_review",
+        "rightsStatus": "requires_rights_review",
+        "confidence": "same_host_official_page_image",
+        "observedAt": "2026-09-02T17:39:07.870Z",
+        "publishedAt": null
+      },
+      {
+        "id": "thumb-c1fe6eeb8ebb5c36ae",
+        "restaurantId": "osm-node-4416774495-glitter-bean-cafe",
+        "restaurantName": "Glitter Bean Cafe",
+        "thumbnailUrl": "https://justitalymentone.com/Images/banners/home/DesktopID-786-20250830115501.png",
+        "sourceUrl": "https://justitalymentone.com/",
+        "sourceKind": "official_page_thumbnail_candidate",
+        "reviewState": "candidate_review",
+        "rightsStatus": "requires_rights_review",
+        "confidence": "same_host_official_page_image",
+        "observedAt": "2026-09-02T17:39:07.870Z",
+        "publishedAt": null
+      },
+      {
+        "id": "thumb-daf6e703d842cbd040",
+        "restaurantId": "osm-node-4416774495-glitter-bean-cafe",
+        "restaurantName": "Glitter Bean Cafe",
+        "thumbnailUrl": "https://justitalymentone.com/Images/banners/home/DesktopID-666-20250725172135.jpg",
+        "sourceUrl": "https://justitalymentone.com/",
+        "sourceKind": "official_page_thumbnail_candidate",
+        "reviewState": "candidate_review",
+        "rightsStatus": "requires_rights_review",
+        "confidence": "same_host_official_page_image",
+        "observedAt": "2026-09-02T17:39:07.870Z",
+        "publishedAt": null
+      },
+      {
+        "id": "thumb-63ed408c144450adb1",
+        "restaurantId": "osm-node-4416774495-glitter-bean-cafe",
+        "restaurantName": "Glitter Bean Cafe",
+        "thumbnailUrl": "https://justitalymentone.com/Images/banners/home/DesktopID-774-20250829174812.jpg",
+        "sourceUrl": "https://justitalymentone.com/",
+        "sourceKind": "official_page_thumbnail_candidate",
+        "reviewState": "candidate_review",
+        "rightsStatus": "requires_rights_review",
+        "confidence": "same_host_official_page_image",
+        "observedAt": "2026-09-02T17:39:07.870Z",
+        "publishedAt": null
+      },
+      {
+        "id": "thumb-69c9f13dad176da33a",
+        "restaurantId": "osm-node-4416774495-glitter-bean-cafe",
+        "restaurantName": "Glitter Bean Cafe",
+        "thumbnailUrl": "https://justitalymentone.com/Images/banners/home/DesktopID-642-20250715134500.jpg",
+        "sourceUrl": "https://justitalymentone.com/",
+        "sourceKind": "official_page_thumbnail_candidate",
+        "reviewState": "candidate_review",
+        "rightsStatus": "requires_rights_review",
+        "confidence": "same_host_official_page_image",
+        "observedAt": "2026-09-02T17:39:07.870Z",
+        "publishedAt": null
+      },
+      {
+        "id": "thumb-86a50b749d07c5ffb9",
+        "restaurantId": "osm-node-4416774495-glitter-bean-cafe",
+        "restaurantName": "Glitter Bean Cafe",
+        "thumbnailUrl": "https://justitalymentone.com/Images/banners/home/DesktopID-850-20250917185624.png",
+        "sourceUrl": "https://justitalymentone.com/",
+        "sourceKind": "official_page_thumbnail_candidate",
+        "reviewState": "candidate_review",
+        "rightsStatus": "requires_rights_review",
+        "confidence": "same_host_official_page_image",
+        "observedAt": "2026-09-02T17:39:07.870Z",
+        "publishedAt": null
+      },
+      {
+        "id": "thumb-161d4c3f93c77befe6",
+        "restaurantId": "osm-node-4416774495-glitter-bean-cafe",
+        "restaurantName": "Glitter Bean Cafe",
+        "thumbnailUrl": "https://justitalymentone.com/Images/banners/home/DesktopID-838-20250916101906.jpg",
+        "sourceUrl": "https://justitalymentone.com/",
+        "sourceKind": "official_page_thumbnail_candidate",
+        "reviewState": "candidate_review",
+        "rightsStatus": "requires_rights_review",
+        "confidence": "same_host_official_page_image",
+        "observedAt": "2026-09-02T17:39:07.870Z",
+        "publishedAt": null
+      },
+      {
+        "id": "thumb-e11c098f200816ce02",
+        "restaurantId": "osm-node-4416774495-glitter-bean-cafe",
+        "restaurantName": "Glitter Bean Cafe",
+        "thumbnailUrl": "https://justitalymentone.com/Images/banners/home/DesktopID-782-20250829174627.jpg",
+        "sourceUrl": "https://justitalymentone.com/",
+        "sourceKind": "official_page_thumbnail_candidate",
+        "reviewState": "candidate_review",
+        "rightsStatus": "requires_rights_review",
+        "confidence": "same_host_official_page_image",
+        "observedAt": "2026-09-02T17:39:07.870Z",
+        "publishedAt": null
+      },
+      {
+        "id": "thumb-1e9929ee47fb7051f4",
+        "restaurantId": "osm-node-4416774495-glitter-bean-cafe",
+        "restaurantName": "Glitter Bean Cafe",
+        "thumbnailUrl": "https://justitalymentone.com/Images/banners/home/DesktopID-770-20250829172925.png",
+        "sourceUrl": "https://justitalymentone.com/",
+        "sourceKind": "official_page_thumbnail_candidate",
+        "reviewState": "candidate_review",
+        "rightsStatus": "requires_rights_review",
+        "confidence": "same_host_official_page_image",
+        "observedAt": "2026-09-02T17:39:07.870Z",
+        "publishedAt": null
+      },
+      {
+        "id": "thumb-4022f76cce6676a943",
+        "restaurantId": "osm-node-4416774495-glitter-bean-cafe",
+        "restaurantName": "Glitter Bean Cafe",
+        "thumbnailUrl": "https://justitalymentone.com/Images/banners/home/DesktopID-778-20250829174351.jpg",
+        "sourceUrl": "https://justitalymentone.com/",
+        "sourceKind": "official_page_thumbnail_candidate",
+        "reviewState": "candidate_review",
+        "rightsStatus": "requires_rights_review",
+        "confidence": "same_host_official_page_image",
+        "observedAt": "2026-09-02T17:39:07.870Z",
+        "publishedAt": null
+      },
+      {
+        "id": "thumb-1fbe1f7b551d7ac9fb",
+        "restaurantId": "osm-node-4416774495-glitter-bean-cafe",
+        "restaurantName": "Glitter Bean Cafe",
+        "thumbnailUrl": "https://justitalymentone.com/Images/banners/home/DesktopID-814-20250908135607.png",
+        "sourceUrl": "https://justitalymentone.com/",
+        "sourceKind": "official_page_thumbnail_candidate",
+        "reviewState": "candidate_review",
+        "rightsStatus": "requires_rights_review",
+        "confidence": "same_host_official_page_image",
+        "observedAt": "2026-09-02T17:39:07.870Z",
+        "publishedAt": null
+      },
+      {
+        "id": "thumb-13664ef20c5a797182",
+        "restaurantId": "osm-node-4416774495-glitter-bean-cafe",
+        "restaurantName": "Glitter Bean Cafe",
+        "thumbnailUrl": "https://justitalymentone.com/Images/banners/home/DesktopID-670-20250725172344.jpg",
+        "sourceUrl": "https://justitalymentone.com/",
+        "sourceKind": "official_page_thumbnail_candidate",
+        "reviewState": "candidate_review",
+        "rightsStatus": "requires_rights_review",
+        "confidence": "same_host_official_page_image",
+        "observedAt": "2026-09-02T17:39:07.870Z",
+        "publishedAt": null
+      },
+      {
+        "id": "thumb-3ce4725be61f2ffdf0",
+        "restaurantId": "osm-node-4416774495-glitter-bean-cafe",
+        "restaurantName": "Glitter Bean Cafe",
+        "thumbnailUrl": "https://justitalymentone.com/Images/banners/home/DesktopID-742-20250820181500.png",
+        "sourceUrl": "https://justitalymentone.com/",
+        "sourceKind": "official_page_thumbnail_candidate",
+        "reviewState": "candidate_review",
+        "rightsStatus": "requires_rights_review",
+        "confidence": "same_host_official_page_image",
+        "observedAt": "2026-09-02T17:39:07.870Z",
+        "publishedAt": null
+      },
+      {
+        "id": "thumb-8cd7f90500b381f5f5",
+        "restaurantId": "osm-node-4416774495-glitter-bean-cafe",
+        "restaurantName": "Glitter Bean Cafe",
+        "thumbnailUrl": "https://justitalymentone.com/Images/banners/home/DesktopID-870-20250924102504.png",
+        "sourceUrl": "https://justitalymentone.com/",
+        "sourceKind": "official_page_thumbnail_candidate",
+        "reviewState": "candidate_review",
+        "rightsStatus": "requires_rights_review",
+        "confidence": "same_host_official_page_image",
+        "observedAt": "2026-09-02T17:39:07.870Z",
+        "publishedAt": null
+      },
+      {
+        "id": "thumb-9b8719cf1ff471ffdf",
+        "restaurantId": "osm-node-4416774495-glitter-bean-cafe",
+        "restaurantName": "Glitter Bean Cafe",
+        "thumbnailUrl": "https://justitalymentone.com/Images/banners/home/DesktopID-746-20250820181812.png",
+        "sourceUrl": "https://justitalymentone.com/",
+        "sourceKind": "official_page_thumbnail_candidate",
+        "reviewState": "candidate_review",
+        "rightsStatus": "requires_rights_review",
+        "confidence": "same_host_official_page_image",
+        "observedAt": "2026-09-02T17:39:07.870Z",
+        "publishedAt": null
+      },
+      {
+        "id": "thumb-10b63ff3fc226df748",
+        "restaurantId": "osm-node-5150122721-good-robot-brewing-company",
+        "restaurantName": "Good Robot Brewing Company",
+        "thumbnailUrl": "https://goodrobotbrewing.ca/wp-content/uploads/2026/03/A7303581-scaled-1-960x540.jpg",
+        "sourceUrl": "https://goodrobotbrewing.ca/events/",
+        "sourceKind": "official_page_thumbnail_candidate",
+        "reviewState": "candidate_review",
+        "rightsStatus": "requires_rights_review",
+        "confidence": "same_host_official_page_image",
+        "observedAt": "2026-09-02T17:39:07.870Z",
+        "publishedAt": null
+      },
+      {
+        "id": "thumb-61c41ef88f32e468bf",
+        "restaurantId": "osm-node-5150122721-good-robot-brewing-company",
+        "restaurantName": "Good Robot Brewing Company",
+        "thumbnailUrl": "https://goodrobotbrewing.ca/wp-content/themes/goodrobot/img/GR-DefaultImage.jpg",
+        "sourceUrl": "https://goodrobotbrewing.ca/events/",
+        "sourceKind": "official_page_thumbnail_candidate",
+        "reviewState": "candidate_review",
+        "rightsStatus": "requires_rights_review",
+        "confidence": "same_host_official_page_image",
+        "observedAt": "2026-09-02T17:39:07.870Z",
+        "publishedAt": null
+      },
+      {
+        "id": "thumb-0c5ec367bb1dfa8d41",
+        "restaurantId": "osm-node-5150122721-good-robot-brewing-company",
+        "restaurantName": "Good Robot Brewing Company",
+        "thumbnailUrl": "https://goodrobotbrewing.ca/wp-content/uploads/2026/03/better-times-comedy-800x540.webp",
+        "sourceUrl": "https://goodrobotbrewing.ca/events/",
         "sourceKind": "official_page_thumbnail_candidate",
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",

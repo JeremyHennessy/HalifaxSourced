@@ -1,9 +1,9 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-01T15:39:52.288Z",
-  "targetCount": 89,
-  "approvedCount": 73,
-  "pendingCount": 16,
+  "generatedAt": "2026-09-03T11:09:31.842Z",
+  "targetCount": 92,
+  "approvedCount": 79,
+  "pendingCount": 13,
   "policy": "Approved restaurant media may include Wikimedia Commons files with explicit reusable licences, documented restaurant-owner submissions, explicitly licensed material, or app-owner-reviewed HTTPS image references from restaurant official websites or feeds. Remote official-site images are linked with source attribution and are not rehosted.",
   "approvedRestaurantIds": [
     "highwayman",
@@ -78,7 +78,13 @@
     "osm-node-5503919661-jukai",
     "osm-node-11552505443-jukai-japanese-and-thai",
     "edna",
-    "osm-node-11526055082-noggins-coburg"
+    "osm-node-11526055082-noggins-coburg",
+    "2-doors-down",
+    "bar-kismet",
+    "osm-way-83552117-bedford-beer-garden",
+    "osm-node-2714920436-greco-pizza",
+    "the-bicycle-thief",
+    "osm-way-253538107-the-armview-restaurant-and-lounge"
   ],
   "failures": []
 }

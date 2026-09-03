@@ -58,7 +58,19 @@ function safeAssetPath(value) {
   return null;
 }
 function safeThumbnailUrl(value, base) {
-  return safeAssetPath(value) || safeUrl(value, base);
+  const assetPath = safeAssetPath(value);
+  if (assetPath) return assetPath;
+  const raw = htmlDecode(value);
+  if (!raw || /[{}]|(?:link|location)\.href/i.test(raw) || /^[a-z]$/i.test(raw.trim())) return null;
+  const url = safeUrl(raw, base);
+  if (!url) return null;
+  const parsed = new URL(url);
+  const path = parsed.pathname.toLowerCase();
+  if (/%22|%27/i.test(url)) return null;
+  if (/\.(?:svg|ico|woff2?|ttf|eot|css|js|map|pdf)(?:[?#]|$)/i.test(url)) return null;
+  if (parsed.hash && /svg/i.test(parsed.hash)) return null;
+  if (/^\/[a-z]$/i.test(path) && !parsed.search) return null;
+  return url;
 }
 function thumbnailQualityFlags(candidate) {
   const flags = [];
@@ -70,7 +82,7 @@ function thumbnailQualityFlags(candidate) {
   const filename = pathname.split("/").pop() || pathname;
   if (thumbnailUrl.startsWith("http://")) flags.push("insecure_thumbnail_url");
   if (/favicon|apple-touch-icon|touch-icon|site-icon|sprite|avatar|badge|pwa-icon|pwa-app|logo-default|sitelogo/.test(lower) || /(?:^|[-_.])(icon|apple)(?:[-_.0-9]|$)/.test(filename)) flags.push("icon_or_favicon");
-  if (/placeholder|blank|default-image/.test(lower)) flags.push("placeholder_image");
+  if (/placeholder|blank|default-image|dummy/.test(lower)) flags.push("placeholder_image");
   if (/[^/?#]*logo[^/?#]*\.(?:png|jpe?g|webp)|(?:^|[/\-_.+])logo(?:[/\-_.+0-9]|$)|\/logos?\/|public\/logos?|cropped-[^/]{0,80}32x32|32x32|57x57|60x60|72x72|114x114|120x120|144x144|180x180|192x192|225x225|(?:^|[?&/,_-])w[_=](?:1?\d{1,2}|2[0-4]\d)(?!\d)|(?:^|[?&/,_-])h[_=](?:1?\d{1,2}|2[0-4]\d)(?!\d)/.test(lower)) flags.push("logo_candidate");
   if (/social-sharing|socialshare|socialpreview|twitter-card|ogimage|og-image|(?:^|[-_.])social(?:[-_.]|$)/.test(filename)) flags.push("generic_social_card");
   if (/stock|franchis|brand-refresh|summary_square|artboard|fit=100%2c50|fit=100,50|h1_shape|web\+logo|web-logo/.test(lower)) flags.push("generic_brand_or_stock_image");
@@ -116,9 +128,17 @@ function token(value) {
   return String(value ?? "").trim().toLowerCase().replace(/[^a-z0-9]+/g, "_").replace(/^_+|_+$/g, "");
 }
 function usableImageUrl(value, base) {
-  const url = safeUrl(htmlDecode(value), base);
+  const raw = htmlDecode(value);
+  if (!raw || /[{}]|location\.href/i.test(raw) || /^[a-z]$/i.test(raw.trim())) return null;
+  const url = safeUrl(raw, base);
   if (!url) return null;
-  if (/\.(?:svg|ico)(?:\?|$)/i.test(url)) return null;
+  const parsed = new URL(url);
+  const path = parsed.pathname.toLowerCase();
+  if (/%22|%27/i.test(url)) return null;
+  if (/\.(?:svg|ico|woff2?|ttf|eot|css|js|map|pdf)(?:[?#]|$)/i.test(url)) return null;
+  if (parsed.hash && /svg/i.test(parsed.hash)) return null;
+  if (/^\/[a-z]$/i.test(path) && !parsed.search) return null;
+  if (/\b(?:link|location)\.href\b/i.test(path)) return null;
   return url;
 }
 function extractMetaImages(html, baseUrl) {
@@ -379,7 +399,7 @@ for (const lead of directoryPayload.records || []) {
   if (candidate) candidates.push(candidate);
 }
 for (const candidate of existingThumbnailPayload.candidates || []) {
-  if (candidate?.sourceKind !== "approved_restaurant_media") candidates.push(candidate);
+  if (!["approved_restaurant_media", "directory_source_image"].includes(candidate?.sourceKind)) candidates.push(candidate);
 }
 
 

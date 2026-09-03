@@ -1,11 +1,11 @@
 {
   "version": 1,
-  "generatedAt": "2026-08-31T11:50:13.422Z",
+  "generatedAt": "2026-09-03T11:06:48.563Z",
   "policy": "Thumbnail queue decisions exported from Halifax Sourced admin review. Approved rows are converted into data/restaurant-media.js records only when source, rights, attribution, and permissionConfirmed fields are complete.",
   "counts": {
-    "approved": 36,
+    "approved": 42,
     "rejected": 28,
-    "total": 64
+    "total": 70
   },
   "records": [
     {
@@ -627,6 +627,102 @@
       "decidedAt": "2026-08-31T11:50:13.422Z",
       "decidedBy": "Halifax Sourced app-owner review",
       "note": "Rejected for production thumbnail use in this pass: logo/icon/placeholder/malformed URL/unrelated source/low-confidence candidate."
+    },
+    {
+      "id": "2-doors-down",
+      "restaurantId": "2-doors-down",
+      "restaurantName": "2 Doors Down",
+      "thumbnailUrl": "https://go2doorsdown.com/wp-content/uploads/2024/02/Dinner-1.jpg",
+      "sourceUrl": "https://go2doorsdown.com/",
+      "decision": "approve_thumbnail",
+      "decidedAt": "2026-09-03T11:06:48.563Z",
+      "decidedBy": "Halifax Sourced app-owner review",
+      "note": "official dinner menu image",
+      "sourceType": "official_site_permitted",
+      "permission": "permitted",
+      "permissionConfirmed": true,
+      "rightsBasis": "Reviewed first-party website or feed image linked from the restaurant official source; remote thumbnail reference only, not rehosted.",
+      "attribution": "2 Doors Down, official website"
+    },
+    {
+      "id": "bar-kismet",
+      "restaurantId": "bar-kismet",
+      "restaurantName": "Bar Kismet",
+      "thumbnailUrl": "https://barkismet.com/wp-content/uploads/2022/10/bar-kismet-patio-30.jpg",
+      "sourceUrl": "https://barkismet.com/",
+      "decision": "approve_thumbnail",
+      "decidedAt": "2026-09-03T11:06:48.563Z",
+      "decidedBy": "Halifax Sourced app-owner review",
+      "note": "official patio image",
+      "sourceType": "official_site_permitted",
+      "permission": "permitted",
+      "permissionConfirmed": true,
+      "rightsBasis": "Reviewed first-party website or feed image linked from the restaurant official source; remote thumbnail reference only, not rehosted.",
+      "attribution": "Bar Kismet, official website"
+    },
+    {
+      "id": "osm-way-83552117-bedford-beer-garden",
+      "restaurantId": "osm-way-83552117-bedford-beer-garden",
+      "restaurantName": "Bedford Beer Garden",
+      "thumbnailUrl": "https://images.squarespace-cdn.com/content/v1/68293776be1eab027773881e/17f12e90-23e4-4cc2-b711-bfa61b1b5211/Bedford+Beer+Garden+Container",
+      "sourceUrl": "https://www.bedfordbeergarden.com/",
+      "decision": "approve_thumbnail",
+      "decidedAt": "2026-09-03T11:06:48.563Z",
+      "decidedBy": "Halifax Sourced app-owner review",
+      "note": "official venue image",
+      "sourceType": "official_site_permitted",
+      "permission": "permitted",
+      "permissionConfirmed": true,
+      "rightsBasis": "Reviewed first-party website or feed image linked from the restaurant official source; remote thumbnail reference only, not rehosted.",
+      "attribution": "Bedford Beer Garden, official website"
+    },
+    {
+      "id": "osm-node-2714920436-greco-pizza",
+      "restaurantId": "osm-node-2714920436-greco-pizza",
+      "restaurantName": "Greco Pizza",
+      "thumbnailUrl": "https://greco.ca/wp-content/uploads/2025/01/pizza.jpg",
+      "sourceUrl": "https://greco.ca/ourmenu/",
+      "decision": "approve_thumbnail",
+      "decidedAt": "2026-09-03T11:06:48.563Z",
+      "decidedBy": "Halifax Sourced app-owner review",
+      "note": "official menu pizza image",
+      "sourceType": "official_site_permitted",
+      "permission": "permitted",
+      "permissionConfirmed": true,
+      "rightsBasis": "Reviewed first-party website or feed image linked from the restaurant official source; remote thumbnail reference only, not rehosted.",
+      "attribution": "Greco Pizza, official website"
+    },
+    {
+      "id": "the-bicycle-thief",
+      "restaurantId": "the-bicycle-thief",
+      "restaurantName": "The Bicycle Thief",
+      "thumbnailUrl": "https://bicyclethief.ca/wp-content/uploads/2021/07/OpeningPatios-3-845x684.jpg",
+      "sourceUrl": "https://bicyclethief.ca/reservations/",
+      "decision": "approve_thumbnail",
+      "decidedAt": "2026-09-03T11:06:48.563Z",
+      "decidedBy": "Halifax Sourced app-owner review",
+      "note": "official patio image",
+      "sourceType": "official_site_permitted",
+      "permission": "permitted",
+      "permissionConfirmed": true,
+      "rightsBasis": "Reviewed first-party website or feed image linked from the restaurant official source; remote thumbnail reference only, not rehosted.",
+      "attribution": "The Bicycle Thief, official website"
+    },
+    {
+      "id": "osm-way-253538107-the-armview-restaurant-and-lounge",
+      "restaurantId": "osm-way-253538107-the-armview-restaurant-and-lounge",
+      "restaurantName": "The Armview Restaurant & Lounge",
+      "thumbnailUrl": "https://www.thearmview.com/wp-content/uploads/2022/11/breakfast_thearmview.jpg",
+      "sourceUrl": "https://www.thearmview.com/breakfast/",
+      "decision": "approve_thumbnail",
+      "decidedAt": "2026-09-03T11:06:48.563Z",
+      "decidedBy": "Halifax Sourced app-owner review",
+      "note": "official breakfast image",
+      "sourceType": "official_site_permitted",
+      "permission": "permitted",
+      "permissionConfirmed": true,
+      "rightsBasis": "Reviewed first-party website or feed image linked from the restaurant official source; remote thumbnail reference only, not rehosted.",
+      "attribution": "The Armview Restaurant & Lounge, official website"
     }
   ]
 }
