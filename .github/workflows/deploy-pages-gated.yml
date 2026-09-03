@@ -50,6 +50,9 @@ jobs:
         env:
           SOURCE_COMMIT_SHA: ${{ github.event.workflow_run.head_sha }}
           QUALITY_WORKFLOW_RUN_ID: ${{ github.event.workflow_run.id }}
+          PUBLIC_SPECIAL_CAMPAIGN_LIMIT: 80
+          PUBLIC_SPECIAL_CAMPAIGN_CRAWL_DELAY_MS: 250
+          PUBLIC_SPECIAL_LEAD_TIMEOUT_MS: 10000
         run: |
           node scripts/import-public-special-source-leads.mjs
           node scripts/build-structured-specials.mjs
