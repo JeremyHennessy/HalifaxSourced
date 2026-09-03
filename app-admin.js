@@ -3,7 +3,9 @@
 const THUMBNAIL_REVIEW_STORAGE_KEY = "halifaxSourced.thumbnailReview.v1";
 const SOCIAL_REVIEW_STORAGE_KEY = "halifaxSourced.socialPostReview.v1";
 const PLACE_REVIEW_STORAGE_KEY = "halifaxSourced.placeReview.v1";
-const thumbnailAdminState = { queue: "promotion", sourceKind: "all", reviewState: "all" };
+const thumbnailAdminState = { queue: "promotion", sourceKind: "all", reviewState: "all", decisionState: "undecided" };
+const DIRECT_PROMOTION_SOURCE_KINDS = new Set(["official_page_thumbnail_candidate", "official_feed_media", "approved_restaurant_media"]);
+const APPROVED_REMOTE_THUMBNAIL_RIGHTS_BASIS = "App-owner-reviewed HTTPS image reference from the restaurant official website or official feed; remote thumbnail reference only, not rehosted.";
 
 function readThumbnailReviewDecisions() {
   try {
@@ -14,10 +16,62 @@ function readThumbnailReviewDecisions() {
   }
 }
 
-function writeThumbnailReviewDecision(id, decision) {
+function thumbnailReviewDecisionValue(record) {
+  if (!record) return null;
+  return typeof record === "string" ? record : record.decision || null;
+}
+
+function sourceHost(value) {
+  try {
+    return new URL(value).hostname.replace(/^www\./, "");
+  } catch {
+    return "";
+  }
+}
+
+function candidateById(id) {
+  const candidates = thumbnailCandidatesPayload().candidates || [];
+  return candidates.find((candidate) => candidate.id === id) || null;
+}
+
+function isDirectPromotionCandidate(candidate) {
+  if (!candidate) return false;
+  const imageUrl = thumbnailAssetUrl(candidate.thumbnailUrl);
+  if (!imageUrl || !imageUrl.startsWith("https://")) return false;
+  return DIRECT_PROMOTION_SOURCE_KINDS.has(String(candidate.sourceKind || ""));
+}
+
+function thumbnailDecisionPayload(candidate, decision, reason = "") {
+  const imageUrl = thumbnailAssetUrl(candidate?.thumbnailUrl);
+  const sourceUrl = safeUrl(candidate?.sourceUrl || candidate?.pageUrl || candidate?.postUrl);
+  const directPromotion = decision === "approve_thumbnail" && isDirectPromotionCandidate(candidate);
+  return {
+    decision,
+    decidedAt: new Date().toISOString(),
+    rejectReason: reason || null,
+    restaurantId: candidate?.restaurantId || null,
+    restaurantName: candidate?.restaurantName || null,
+    thumbnailUrl: imageUrl || candidate?.thumbnailUrl || null,
+    sourceUrl: sourceUrl || null,
+    sourceKind: candidate?.sourceKind || null,
+    extractionMethod: candidate?.extractionMethod || null,
+    title: candidate?.title || null,
+    alt: candidate?.alt || candidate?.restaurantName || null,
+    confidence: candidate?.confidence || null,
+    observedAt: candidate?.observedAt || null,
+    reviewPriority: thumbnailReviewPriority(candidate),
+    visualReviewState: directPromotion ? "ready_for_media_manifest" : decision === "approve_thumbnail" ? "visual_fit_needs_rights_review" : decision,
+    permission: directPromotion ? "permitted" : null,
+    permissionConfirmed: directPromotion,
+    rightsBasis: directPromotion ? APPROVED_REMOTE_THUMBNAIL_RIGHTS_BASIS : null,
+    attribution: directPromotion ? `${candidate?.restaurantName || "Restaurant"}, official website` : null
+  };
+}
+
+function writeThumbnailReviewDecision(id, decision, candidate = null, reason = "") {
   if (!id) return;
   const decisions = readThumbnailReviewDecisions();
-  decisions[id] = { decision, decidedAt: new Date().toISOString() };
+  decisions[id] = thumbnailDecisionPayload(candidate || candidateById(id), decision, reason);
   localStorage.setItem(THUMBNAIL_REVIEW_STORAGE_KEY, JSON.stringify(decisions));
 }
 
@@ -49,10 +103,98 @@ function thumbnailCandidatesPayload() {
   return window.HALIFAX_THUMBNAIL_CANDIDATES || { counts: {}, candidates: [], missingApproved: [], missingAnyCandidate: [], failures: [] };
 }
 
+function normalizeThumbnailDecision(decision) {
+  if (decision === "approve_candidate") return "approve_thumbnail";
+  if (decision === "reject_candidate") return "reject_thumbnail";
+  return decision || null;
+}
+
+function thumbnailReviewDecisionCounts(decisions) {
+  const counts = { total: 0, approved: 0, rejected: 0, sourceCheck: 0, readyForManifest: 0, visualFitNeedsRights: 0 };
+  for (const record of Object.values(decisions || {})) {
+    const decision = normalizeThumbnailDecision(thumbnailReviewDecisionValue(record));
+    if (!decision) continue;
+    counts.total += 1;
+    if (decision === "approve_thumbnail") counts.approved += 1;
+    if (decision === "reject_thumbnail") counts.rejected += 1;
+    if (decision === "needs_source_check") counts.sourceCheck += 1;
+    if (record?.permissionConfirmed && record?.thumbnailUrl) counts.readyForManifest += 1;
+    if (record?.visualReviewState === "visual_fit_needs_rights_review") counts.visualFitNeedsRights += 1;
+  }
+  return counts;
+}
+
+function thumbnailMatchesDecisionState(candidate, decisions) {
+  const decision = normalizeThumbnailDecision(thumbnailReviewDecisionValue(decisions?.[candidate?.id]));
+  if (thumbnailAdminState.decisionState === "all") return true;
+  if (thumbnailAdminState.decisionState === "undecided") return !decision;
+  if (thumbnailAdminState.decisionState === "approved") return decision === "approve_thumbnail";
+  if (thumbnailAdminState.decisionState === "rejected") return decision === "reject_thumbnail";
+  if (thumbnailAdminState.decisionState === "source_check") return decision === "needs_source_check";
+  return true;
+}
+
+function thumbnailCandidateMatchesFilters(candidate, decisions) {
+  if (thumbnailAdminState.sourceKind !== "all" && candidate.sourceKind !== thumbnailAdminState.sourceKind) return false;
+  if (thumbnailAdminState.reviewState !== "all" && candidate.reviewState !== thumbnailAdminState.reviewState) return false;
+  return thumbnailMatchesDecisionState(candidate, decisions);
+}
+
+function approvedThumbnailMediaRecords(decisions) {
+  const records = [];
+  for (const [id, storedRecord] of Object.entries(decisions || {})) {
+    const decision = normalizeThumbnailDecision(thumbnailReviewDecisionValue(storedRecord));
+    if (decision !== "approve_thumbnail") continue;
+    const candidate = candidateById(id);
+    const reviewRecord = { ...thumbnailDecisionPayload(candidate, "approve_thumbnail"), ...(typeof storedRecord === "object" ? storedRecord : {}) };
+    if (!reviewRecord.permissionConfirmed || !reviewRecord.thumbnailUrl || !reviewRecord.restaurantId) continue;
+    records.push({
+      restaurantId: reviewRecord.restaurantId,
+      url: reviewRecord.thumbnailUrl,
+      alt: reviewRecord.alt || `${reviewRecord.restaurantName || "Restaurant"} official website image`,
+      sourceUrl: reviewRecord.sourceUrl,
+      sourceType: "official_site_permitted",
+      creator: reviewRecord.restaurantName || "Restaurant",
+      license: "First-party official site media",
+      rightsBasis: reviewRecord.rightsBasis || APPROVED_REMOTE_THUMBNAIL_RIGHTS_BASIS,
+      permission: "permitted",
+      permissionConfirmed: true,
+      attribution: reviewRecord.attribution || `${reviewRecord.restaurantName || "Restaurant"}, official website`,
+      reviewState: "approved",
+      reviewedAt: reviewRecord.decidedAt,
+      reviewCandidateId: id
+    });
+  }
+  return records.sort((a, b) => String(a.restaurantId).localeCompare(String(b.restaurantId)) || String(a.url).localeCompare(String(b.url)));
+}
+
+function exportApprovedThumbnailMediaRecords() {
+  const decisions = readThumbnailReviewDecisions();
+  const records = approvedThumbnailMediaRecords(decisions);
+  const payload = {
+    version: 1,
+    generatedAt: new Date().toISOString(),
+    targetFile: "data/restaurant-media.js",
+    policy: APPROVED_REMOTE_THUMBNAIL_RIGHTS_BASIS,
+    records
+  };
+  const blob = new Blob([JSON.stringify(payload, null, 2)], { type: "application/json" });
+  const link = document.createElement("a");
+  link.href = URL.createObjectURL(blob);
+  link.download = `halifax-sourced-approved-thumbnail-media-${new Date().toISOString().slice(0, 10)}.json`;
+  document.body.appendChild(link);
+  link.click();
+  const url = link.href;
+  link.remove();
+  URL.revokeObjectURL(url);
+  toast(records.length ? `Exported ${records.length} approved media records` : "No direct-promotion approvals to export yet");
+}
+
 function renderThumbnailAdmin() {
   const payload = thumbnailCandidatesPayload();
   const candidates = Array.isArray(payload.candidates) ? payload.candidates : [];
   const decisions = readThumbnailReviewDecisions();
+  const decisionCounts = thumbnailReviewDecisionCounts(decisions);
   const byRestaurant = new Map();
   for (const candidate of candidates) {
     if (!candidate?.restaurantId) continue;
@@ -66,47 +208,53 @@ function renderThumbnailAdmin() {
 
   const missingApproved = Array.isArray(payload.missingApproved) ? payload.missingApproved : [];
   const missingAny = Array.isArray(payload.missingAnyCandidate) ? payload.missingAnyCandidate : [];
-  const promotionQueue = missingApproved
+  const allPromotionQueue = missingApproved
     .map((item) => ({ ...item, candidates: (byRestaurant.get(item.restaurantId) || []).filter(thumbnailIsPromotionCandidate) }))
     .filter((item) => item.candidates.length)
     .sort((a, b) => b.candidates.length - a.candidates.length || String(a.name || "").localeCompare(String(b.name || "")));
+  const promotionQueue = allPromotionQueue
+    .map((item) => ({ ...item, candidates: item.candidates.filter((candidate) => thumbnailCandidateMatchesFilters(candidate, decisions)) }))
+    .filter((item) => item.candidates.length);
   const sourceKinds = [...new Set(candidates.map((candidate) => candidate.sourceKind).filter(Boolean))].sort();
   const reviewStates = [...new Set(candidates.map((candidate) => candidate.reviewState).filter(Boolean))].sort();
   const filteredCandidates = candidates.filter((candidate) => {
-    if (thumbnailAdminState.sourceKind !== "all" && candidate.sourceKind !== thumbnailAdminState.sourceKind) return false;
-    if (thumbnailAdminState.reviewState !== "all" && candidate.reviewState !== thumbnailAdminState.reviewState) return false;
+    if (!thumbnailCandidateMatchesFilters(candidate, decisions)) return false;
     if (thumbnailAdminState.queue === "approved") return candidate.eligibleForProduction;
     if (thumbnailAdminState.queue === "review") return !candidate.eligibleForProduction;
     return true;
   });
-  const reviewedLocalCount = Object.keys(decisions).length;
+  const promotionCandidateCount = allPromotionQueue.reduce((sum, item) => sum + item.candidates.length, 0);
 
   appView.innerHTML = `
     <section class="page-shell page-intro compact-intro admin-intro">
-      <div><span class="eyebrow">Admin review</span><h1>Thumbnail candidates</h1><p>Review source-backed image leads, identify restaurants missing thumbnails, and prepare approved media promotions. Local decisions here do not publish images until records are promoted into the approved media manifest.</p></div>
+      <div><span class="eyebrow">Admin review</span><h1>Thumbnail candidates</h1><p>Review real image previews beside source context, approve only visually relevant official-site thumbnails, and reject blurry, logo-only, or unrelated candidates before promoting another batch.</p></div>
       <a class="button secondary" href="#explore">Back to app</a>
     </section>
     <section class="page-shell admin-metrics" aria-label="Thumbnail coverage metrics">
       ${adminMetric("Restaurants", payload.counts?.restaurants ?? 0)}
       ${adminMetric("Approved thumbnails", payload.counts?.restaurantsWithApprovedThumbnail ?? 0)}
-      ${adminMetric("Any candidate", payload.counts?.restaurantsWithAnyCandidate ?? 0)}
-      ${adminMetric("Missing approved", payload.counts?.restaurantsMissingApprovedThumbnail ?? missingApproved.length)}
+      ${adminMetric("Promotion groups", allPromotionQueue.length)}
+      ${adminMetric("Candidate images", promotionCandidateCount)}
+      ${adminMetric("Ready export", decisionCounts.readyForManifest)}
+      ${adminMetric("Needs rights", decisionCounts.visualFitNeedsRights)}
+      ${adminMetric("Rejected", decisionCounts.rejected)}
       ${adminMetric("No candidate", payload.counts?.restaurantsMissingAnyCandidate ?? missingAny.length)}
-      ${adminMetric("Local decisions", reviewedLocalCount)}
     </section>
     <section class="page-shell admin-review-shell">
       <aside class="admin-review-controls" aria-label="Thumbnail review filters">
         <h2>Queue</h2>
-        <button type="button" data-admin-queue="promotion" class="${thumbnailAdminState.queue === "promotion" ? "is-active" : ""}">Promotion queue <span>${promotionQueue.length}</span></button>
+        <button type="button" data-admin-queue="promotion" class="${thumbnailAdminState.queue === "promotion" ? "is-active" : ""}">Promotion queue <span>${allPromotionQueue.length}</span></button>
         <button type="button" data-admin-queue="review" class="${thumbnailAdminState.queue === "review" ? "is-active" : ""}">Needs review <span>${candidates.filter((candidate) => !candidate.eligibleForProduction).length}</span></button>
         <button type="button" data-admin-queue="approved" class="${thumbnailAdminState.queue === "approved" ? "is-active" : ""}">Approved <span>${candidates.filter((candidate) => candidate.eligibleForProduction).length}</span></button>
         <button type="button" data-admin-queue="discovery" class="${thumbnailAdminState.queue === "discovery" ? "is-active" : ""}">No candidate <span>${missingAny.length}</span></button>
         <label><span>Source kind</span><select id="adminThumbnailSource"><option value="all">All sources</option>${sourceKinds.map((kind) => `<option value="${escapeHtml(kind)}" ${thumbnailAdminState.sourceKind === kind ? "selected" : ""}>${escapeHtml(kind.replace(/_/g, " "))}</option>`).join("")}</select></label>
         <label><span>Review state</span><select id="adminThumbnailReview"><option value="all">All states</option>${reviewStates.map((state) => `<option value="${escapeHtml(state)}" ${thumbnailAdminState.reviewState === state ? "selected" : ""}>${escapeHtml(state.replace(/_/g, " "))}</option>`).join("")}</select></label>
-        <p>Use this screen to triage candidates. Publishing still requires an approved data/restaurant-media.js record with rights basis, creator/licence, source URL, and permission confirmation.</p>
+        <label><span>Local decision</span><select id="adminThumbnailDecision"><option value="all" ${thumbnailAdminState.decisionState === "all" ? "selected" : ""}>All decisions</option><option value="undecided" ${thumbnailAdminState.decisionState === "undecided" ? "selected" : ""}>Undecided</option><option value="approved" ${thumbnailAdminState.decisionState === "approved" ? "selected" : ""}>Approved locally</option><option value="rejected" ${thumbnailAdminState.decisionState === "rejected" ? "selected" : ""}>Rejected locally</option><option value="source_check" ${thumbnailAdminState.decisionState === "source_check" ? "selected" : ""}>Needs source check</option></select></label>
+        <button type="button" class="admin-secondary-action" data-thumb-export-approved>Export approved media <span>${decisionCounts.readyForManifest}</span></button>
+        <p>Default view shows undecided promotion candidates. Approvals from official restaurant pages or feeds export as permission-confirmed remote references; other visually good images stay flagged for rights review.</p>
       </aside>
       <div class="admin-review-results">
-        ${thumbnailAdminState.queue === "promotion" ? renderPromotionQueue(promotionQueue, decisions) : ""}
+        ${thumbnailAdminState.queue === "promotion" ? renderPromotionQueue(promotionQueue, decisions, allPromotionQueue) : ""}
         ${thumbnailAdminState.queue === "discovery" ? renderDiscoveryQueue(missingAny) : ""}
         ${["review", "approved"].includes(thumbnailAdminState.queue) ? renderCandidateGrid(filteredCandidates, decisions) : ""}
       </div>
@@ -118,9 +266,32 @@ function adminMetric(label, value) {
   return `<div><strong>${Number(value || 0).toLocaleString()}</strong><span>${escapeHtml(label)}</span></div>`;
 }
 
-function renderPromotionQueue(queue, decisions) {
-  if (!queue.length) return `<div class="info-message">No restaurants currently have reviewable candidates while missing an approved thumbnail.</div>`;
-  return `<div class="admin-section-heading"><div><h2>Promotion queue</h2><p>Restaurants missing an approved thumbnail but already having candidate images.</p></div></div><div class="admin-candidate-grid">${queue.map((item) => adminCandidateCard(item.candidates[0], decisions, item.candidates.length)).join("")}</div>`;
+function renderPromotionQueue(queue, decisions, allQueue = queue) {
+  if (!queue.length) return `<div class="info-message">No restaurants currently match these thumbnail review filters. Switch local decision to all decisions to see already-reviewed candidates.</div>`;
+  const visibleCandidateCount = queue.reduce((sum, item) => sum + item.candidates.length, 0);
+  const totalCandidateCount = allQueue.reduce((sum, item) => sum + item.candidates.length, 0);
+  return `<div class="admin-section-heading"><div><h2>Promotion queue</h2><p>${queue.length.toLocaleString()} restaurant groups and ${visibleCandidateCount.toLocaleString()} visible candidate images. Full queue has ${allQueue.length.toLocaleString()} groups and ${totalCandidateCount.toLocaleString()} candidates.</p></div></div><div class="admin-promotion-list">${queue.map((item) => renderPromotionReviewGroup(item, decisions)).join("")}</div>`;
+}
+
+function renderPromotionReviewGroup(item, decisions) {
+  const restaurantId = item.restaurantId ? String(item.restaurantId) : "";
+  const restaurantName = item.name || item.restaurantName || item.candidates?.[0]?.restaurantName || "Unknown restaurant";
+  const website = safeUrl(item.website || item.sourceUrl || item.candidates?.[0]?.sourceUrl);
+  const directCount = item.candidates.filter(isDirectPromotionCandidate).length;
+  return `<section class="admin-promotion-group" aria-label="Thumbnail candidates for ${escapeHtml(restaurantName)}">
+    <div class="admin-promotion-group-header">
+      <div>
+        <div class="title-badges"><span>${escapeHtml(item.neighborhood || item.neighbourhood || "Neighbourhood unknown")}</span><span>${item.candidates.length} candidates</span><span>${directCount} direct-ready</span></div>
+        <h2>${escapeHtml(restaurantName)}</h2>
+        <p>Compare each real preview against the restaurant and source before approving. Use reject reasons to keep the next queue clean.</p>
+      </div>
+      <div class="admin-promotion-group-actions">
+        ${restaurantId ? `<a class="button tertiary" href="#restaurant/${encodeURIComponent(restaurantId)}">Restaurant</a>` : ""}
+        ${website ? `<a class="button tertiary" href="${escapeHtml(website)}" target="_blank" rel="noreferrer">Website</a>` : ""}
+      </div>
+    </div>
+    <div class="admin-visual-candidate-grid">${item.candidates.map((candidate) => adminCandidateCard(candidate, decisions, { showRestaurant: false })).join("")}</div>
+  </section>`;
 }
 
 function renderDiscoveryQueue(queue) {
@@ -139,28 +310,41 @@ function renderCandidateGrid(candidates, decisions) {
   return `<div class="admin-section-heading"><div><h2>${title}</h2><p>${candidates.length.toLocaleString()} records match the current filters.</p></div></div><div class="admin-candidate-grid">${candidates.slice(0, 300).map((candidate) => adminCandidateCard(candidate, decisions)).join("")}</div>`;
 }
 
-function adminCandidateCard(candidate, decisions, restaurantCandidateCount = null) {
+function adminCandidateCard(candidate, decisions, options = {}) {
+  const normalizedOptions = typeof options === "number" ? { restaurantCandidateCount: options } : options || {};
   const sourceKind = String(candidate.sourceKind || "unknown_source");
   const reviewState = String(candidate.reviewState || "unreviewed");
   const rightsStatus = String(candidate.rightsStatus || "unknown");
   const imageUrl = thumbnailAssetUrl(candidate.thumbnailUrl);
-  const sourceUrl = safeUrl(candidate.sourceUrl);
-  const localDecision = decisions[candidate.id]?.decision || null;
-  const promoted = candidate.eligibleForProduction ? "Production approved" : "Needs rights review";
+  const sourceUrl = safeUrl(candidate.sourceUrl || candidate.pageUrl || candidate.postUrl);
+  const localDecision = normalizeThumbnailDecision(thumbnailReviewDecisionValue(decisions[candidate.id]));
+  const directPromotion = isDirectPromotionCandidate(candidate);
+  const promoted = candidate.eligibleForProduction ? "Production approved" : directPromotion ? "Direct promotion ready" : "Visual fit only";
   const restaurantId = candidate.restaurantId ? String(candidate.restaurantId) : "";
-  return `<article class="admin-candidate-card ${candidate.eligibleForProduction ? "is-approved" : "is-review"}">
+  const dimensions = Number(candidate.width) && Number(candidate.height) ? `${candidate.width} x ${candidate.height}` : "Unknown";
+  const imageHost = sourceHost(imageUrl);
+  const evidenceHost = sourceHost(sourceUrl);
+  const decisionClass = localDecision ? `is-local-${localDecision.replace(/_/g, "-")}` : "";
+  const candidateTitle = candidate.title || candidate.alt || "Thumbnail candidate";
+  return `<article class="admin-candidate-card ${candidate.eligibleForProduction ? "is-approved" : "is-review"} ${decisionClass}">
     <div class="admin-candidate-image">${imageUrl ? `<img src="${escapeHtml(imageUrl)}" alt="${escapeHtml(candidate.alt || candidate.restaurantName || "Thumbnail candidate")}" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.closest('.admin-candidate-image').classList.add('is-broken');this.remove()" />` : `<span>No preview</span>`}</div>
     <div class="admin-candidate-body">
       <div class="title-badges"><span>${escapeHtml(sourceKind.replace(/_/g, " "))}</span><span>${escapeHtml(promoted)}</span>${localDecision ? `<span>${escapeHtml(localDecision.replace(/_/g, " "))}</span>` : ""}</div>
-      <h2>${escapeHtml(candidate.restaurantName || "Unknown restaurant")}</h2>
-      <p>${escapeHtml(candidate.title || candidate.alt || "Thumbnail candidate")}</p>
+      ${normalizedOptions.showRestaurant === false ? "" : `<h2>${escapeHtml(candidate.restaurantName || "Unknown restaurant")}</h2>`}
+      <p>${escapeHtml(candidateTitle)}</p>
       ${candidate.qualityFlags?.length ? `<p class="admin-quality-flags">${candidate.qualityFlags.map((flag) => escapeHtml(String(flag).replace(/_/g, " "))).join(" · ")}</p>` : ""}
-      <dl><div><dt>Review</dt><dd>${escapeHtml(reviewState)}</dd></div><div><dt>Rights</dt><dd>${escapeHtml(rightsStatus)}</dd></div><div><dt>Priority</dt><dd>${thumbnailReviewPriority(candidate)}</dd></div><div><dt>Confidence</dt><dd>${escapeHtml(candidate.confidence || "unknown")}</dd></div>${restaurantCandidateCount ? `<div><dt>Candidates</dt><dd>${restaurantCandidateCount}</dd></div>` : ""}</dl>
-      <div class="admin-candidate-actions">
-        ${restaurantId ? `<a class="button tertiary" href="#restaurant/${encodeURIComponent(restaurantId)}">Restaurant</a>` : ""}
+      <dl><div><dt>Image host</dt><dd>${escapeHtml(imageHost || "local asset")}</dd></div><div><dt>Source host</dt><dd>${escapeHtml(evidenceHost || "unknown")}</dd></div><div><dt>Review</dt><dd>${escapeHtml(reviewState)}</dd></div><div><dt>Rights</dt><dd>${escapeHtml(rightsStatus)}</dd></div><div><dt>Priority</dt><dd>${thumbnailReviewPriority(candidate)}</dd></div><div><dt>Confidence</dt><dd>${escapeHtml(candidate.confidence || "unknown")}</dd></div><div><dt>Size</dt><dd>${escapeHtml(dimensions)}</dd></div><div><dt>Method</dt><dd>${escapeHtml(candidate.extractionMethod || "unknown")}</dd></div>${normalizedOptions.restaurantCandidateCount ? `<div><dt>Candidates</dt><dd>${normalizedOptions.restaurantCandidateCount}</dd></div>` : ""}</dl>
+      <div class="admin-candidate-actions admin-candidate-links">
+        ${restaurantId && normalizedOptions.showRestaurant !== false ? `<a class="button tertiary" href="#restaurant/${encodeURIComponent(restaurantId)}">Restaurant</a>` : ""}
         ${sourceUrl ? `<a class="button tertiary" href="${escapeHtml(sourceUrl)}" target="_blank" rel="noreferrer">Source</a>` : ""}
-        <button type="button" data-thumb-decision="approve_candidate" data-thumb-id="${escapeHtml(candidate.id || "")}">Mark approve</button>
-        <button type="button" data-thumb-decision="reject_candidate" data-thumb-id="${escapeHtml(candidate.id || "")}">Reject</button>
+        ${imageUrl ? `<a class="button tertiary" href="${escapeHtml(imageUrl)}" target="_blank" rel="noreferrer">Image</a>` : ""}
+      </div>
+      <div class="admin-candidate-actions admin-decision-actions" aria-label="Thumbnail review decisions">
+        <button type="button" data-thumb-decision="approve_thumbnail" data-thumb-id="${escapeHtml(candidate.id || "")}">Approve</button>
+        <button type="button" data-thumb-decision="reject_thumbnail" data-thumb-reason="blurry_low_quality" data-thumb-id="${escapeHtml(candidate.id || "")}">Blurry</button>
+        <button type="button" data-thumb-decision="reject_thumbnail" data-thumb-reason="logo_or_placeholder" data-thumb-id="${escapeHtml(candidate.id || "")}">Logo</button>
+        <button type="button" data-thumb-decision="reject_thumbnail" data-thumb-reason="unrelated_or_wrong_place" data-thumb-id="${escapeHtml(candidate.id || "")}">Unrelated</button>
+        <button type="button" data-thumb-decision="needs_source_check" data-thumb-reason="needs_source_review" data-thumb-id="${escapeHtml(candidate.id || "")}">Source check</button>
       </div>
     </div>
   </article>`;
@@ -179,9 +363,18 @@ function bindThumbnailAdminActions() {
     thumbnailAdminState.reviewState = event.target.value || "all";
     renderThumbnailAdmin();
   });
+  document.querySelector("#adminThumbnailDecision")?.addEventListener("change", (event) => {
+    thumbnailAdminState.decisionState = event.target.value || "all";
+    renderThumbnailAdmin();
+  });
+  document.querySelector("[data-thumb-export-approved]")?.addEventListener("click", exportApprovedThumbnailMediaRecords);
   document.querySelectorAll("[data-thumb-decision]").forEach((button) => button.addEventListener("click", () => {
-    writeThumbnailReviewDecision(button.dataset.thumbId, button.dataset.thumbDecision);
-    toast(button.dataset.thumbDecision === "approve_candidate" ? "Candidate marked for promotion" : "Candidate marked rejected");
+    const candidate = candidateById(button.dataset.thumbId);
+    const decision = button.dataset.thumbDecision;
+    writeThumbnailReviewDecision(button.dataset.thumbId, decision, candidate, button.dataset.thumbReason || "");
+    const directReady = decision === "approve_thumbnail" && isDirectPromotionCandidate(candidate);
+    const label = decision === "approve_thumbnail" ? directReady ? "Candidate approved for media export" : "Candidate marked visually good, rights review needed" : decision === "needs_source_check" ? "Candidate marked for source check" : "Candidate rejected";
+    toast(label);
     renderThumbnailAdmin();
   }));
 }
