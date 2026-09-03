@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-03T17:38:09.309Z",
+  "generatedAt": "2026-09-03T18:44:32.257Z",
   "sourceCommitSha": null,
   "definitions": {
     "approvedThumbnail": "A thumbnail candidate tied to an exact restaurant ID with approved review state and production-approved rights status.",
@@ -9231,5 +9231,13 @@
       "pageUrl": "https://espresso46.com/",
       "reason": "fetch failed"
     }
-  ]
+  ],
+  "exports": {
+    "sourceCheckQueueJson": "data/build/thumbnail-source-check-queue.json",
+    "sourceCheckQueueCsv": "data/build/thumbnail-source-check-queue.csv",
+    "sourceCheckRows": 37,
+    "ownerMediaOutreachJson": "data/build/owner-media-outreach.json",
+    "ownerMediaOutreachCsv": "data/build/owner-media-outreach.csv",
+    "ownerMediaOutreachRows": 548
+  }
 }

@@ -1,0 +1,549 @@
+restaurant_id,name,neighborhood,cuisines,vibe,special_title,special_cadence,event_title,event_timing,source_url,contact_email,image_url,image_alt,image_source_url,image_source_type,image_rights_basis,image_permission_confirmed,image_attribution,image_review_state
+osm-node-5150027725-100-cha-baa-tai,100 Cha Baa Tai,Dartmouth,,,,,,,,,,100 Cha Baa Tai restaurant photo,,owner_submission,owner_attestation,,100 Cha Baa Tai,needs_review
+osm-node-11726220084-2-crows-oxford-taproom,2 Crows Oxford Taproom,West End,,,,,,,,,,2 Crows Oxford Taproom restaurant photo,,owner_submission,owner_attestation,,2 Crows Oxford Taproom,needs_review
+osm-node-2702737179-9-nine,9 + Nine,Armdale / Fairview,,,,,,,https://9plus9.ca/,,,9 + Nine restaurant photo,,owner_submission,owner_attestation,,9 + Nine,needs_review
+osm-node-13262605851-a-pria,a Pria,Downtown,,,,,,,,,,a Pria restaurant photo,,owner_submission,owner_attestation,,a Pria,needs_review
+osm-node-3030042567-a-taste-of-india,A Taste of India,Downtown,,,,,,,,,,A Taste of India restaurant photo,,owner_submission,owner_attestation,,A Taste of India,needs_review
+osm-node-2712744136-a-and-w,A&W,Downtown,,,,,,,,,,A&W restaurant photo,,owner_submission,owner_attestation,,A&W,needs_review
+osm-node-8066235499-a-and-w,A&W,Dartmouth,,,,,,,,,,A&W restaurant photo,,owner_submission,owner_attestation,,A&W,needs_review
+osm-way-171149714-a-and-w,A&W,Armdale / Fairview,,,,,,,,,,A&W restaurant photo,,owner_submission,owner_attestation,,A&W,needs_review
+osm-way-1047164106-a-and-w,A&W,Armdale / Fairview,,,,,,,,,,A&W restaurant photo,,owner_submission,owner_attestation,,A&W,needs_review
+osm-node-3790789371-agricola-street-brasserie,Agricola Street Brasserie,North End,,,,,,,,,,Agricola Street Brasserie restaurant photo,,owner_submission,owner_attestation,,Agricola Street Brasserie,needs_review
+osm-node-2721708499-alex-oh-sushi-rolls,Alex Oh Sushi Rolls,Downtown,,,,,,,,,,Alex Oh Sushi Rolls restaurant photo,,owner_submission,owner_attestation,,Alex Oh Sushi Rolls,needs_review
+osm-node-1139388774-alexandra-s-pizza,Alexandra's Pizza,Downtown,,,,,,,,,,Alexandra's Pizza restaurant photo,,owner_submission,owner_attestation,,Alexandra's Pizza,needs_review
+osm-node-2714920427-alexandra-s-pizza,Alexandra's Pizza,West End,,,,,,,,,,Alexandra's Pizza restaurant photo,,owner_submission,owner_attestation,,Alexandra's Pizza,needs_review
+osm-node-6299280970-alexandra-s-pizza,Alexandra's Pizza,Dartmouth,,,,,,,,,,Alexandra's Pizza restaurant photo,,owner_submission,owner_attestation,,Alexandra's Pizza,needs_review
+osm-node-4797021954-alexandras-pizza,Alexandras pizza,South End,,,,,,,,,,Alexandras pizza restaurant photo,,owner_submission,owner_attestation,,Alexandras pizza,needs_review
+osm-node-2624375974-alter-egos,Alter Egos,North End,,,,,,,,,,Alter Egos restaurant photo,,owner_submission,owner_attestation,,Alter Egos,needs_review
+osm-node-3796325157-angelique-french-bakery-and-cafe,Angelique French Bakery & Cafe,Halifax Peninsula,,,,,,,,,,Angelique French Bakery & Cafe restaurant photo,,owner_submission,owner_attestation,,Angelique French Bakery & Cafe,needs_review
+osm-node-6152777540-annie-s-place-cafe-and-catering,Annie's Place Café & Catering,Downtown,,,,,,,,,,Annie's Place Café & Catering restaurant photo,,owner_submission,owner_attestation,,Annie's Place Café & Catering,needs_review
+osm-node-30899821-arirang,Arirang,Armdale / Fairview,,,,,,,,,,Arirang restaurant photo,,owner_submission,owner_attestation,,Arirang,needs_review
+osm-node-9652937830-arirang-korean-and-japanese,Arirang Korean & Japanese,Armdale / Fairview,,,,,,,https://arirang-restaurant.com/,,,Arirang Korean & Japanese restaurant photo,,owner_submission,owner_attestation,,Arirang Korean & Japanese,needs_review
+osm-node-2718816606-as-you-like-it,As You Like It,Armdale / Fairview,,,,,,,,,,As You Like It restaurant photo,,owner_submission,owner_attestation,,As You Like It,needs_review
+osm-node-37132635-asap-mabuhay,ASAP Mabuhay,Downtown,,,,,,,,,,ASAP Mabuhay restaurant photo,,owner_submission,owner_attestation,,ASAP Mabuhay,needs_review
+osm-node-12986790096-au-liban,Au Liban,Downtown,,,,,,,,,,Au Liban restaurant photo,,owner_submission,owner_attestation,,Au Liban,needs_review
+osm-node-5863968672-baan-thai,Baan Thai,Downtown,,,,,,,,,,Baan Thai restaurant photo,,owner_submission,owner_attestation,,Baan Thai,needs_review
+osm-node-3533780877-baba-s-pizzeria,Baba's Pizzeria,South End,,,,,,,,,,Baba's Pizzeria restaurant photo,,owner_submission,owner_attestation,,Baba's Pizzeria,needs_review
+osm-node-4474954245-bai-wei-grill-bar,Bai Wei Grill Bar,South End,,,,,,,http://baiweigrillbar.com,,,Bai Wei Grill Bar restaurant photo,,owner_submission,owner_attestation,,Bai Wei Grill Bar,needs_review
+osm-node-11577572437-banh-mi-a-and-b,Banh Mi A&B,Halifax Peninsula,,,,,,,,,,Banh Mi A&B restaurant photo,,owner_submission,owner_attestation,,Banh Mi A&B,needs_review
+osm-way-372779849-bearly-s-house-of-blues,Bearly's House of Blues,Downtown,,,,,,,,,,Bearly's House of Blues restaurant photo,,owner_submission,owner_attestation,,Bearly's House of Blues,needs_review
+osm-node-11698520839-bells-lane-kitchen-at-purdy-s-wharf,Bells Lane Kitchen at Purdy's Wharf,Downtown,,,,,,,,,,Bells Lane Kitchen at Purdy's Wharf restaurant photo,,owner_submission,owner_attestation,,Bells Lane Kitchen at Purdy's Wharf,needs_review
+osm-node-11526163886-bento-sushi,Bento Sushi,South End,,,,,,,,,,Bento Sushi restaurant photo,,owner_submission,owner_attestation,,Bento Sushi,needs_review
+osm-node-2714920433-best-choice-chinese-food,Best Choice Chinese Food,West End,,,,,,,,,,Best Choice Chinese Food restaurant photo,,owner_submission,owner_attestation,,Best Choice Chinese Food,needs_review
+osm-node-8187610240-bi-one,Bi One,South End,,,,,,,,,,Bi One restaurant photo,,owner_submission,owner_attestation,,Bi One,needs_review
+osm-node-9074868976-big-al-s-pizza,Big Al's Pizza,North End,,,,,,,,,,Big Al's Pizza restaurant photo,,owner_submission,owner_attestation,,Big Al's Pizza,needs_review
+osm-node-5017275565-blooming-cafe,Blooming cafe,South End,,,,,,,,,,Blooming cafe restaurant photo,,owner_submission,owner_attestation,,Blooming cafe,needs_review
+osm-node-8142485078-blue-elephant-thai-restaurant,Blue Elephant Thai Restaurant,Armdale / Fairview,,,,,,,,,,Blue Elephant Thai Restaurant restaurant photo,,owner_submission,owner_attestation,,Blue Elephant Thai Restaurant,needs_review
+osm-node-11577593719-blue-olive-greek-tavern,Blue Olive Greek Tavern,Halifax Peninsula,,,,,,,,,,Blue Olive Greek Tavern restaurant photo,,owner_submission,owner_attestation,,Blue Olive Greek Tavern,needs_review
+osm-node-886758495-boneheads-bbq,Boneheads BBQ,South End,,,,,,,,,,Boneheads BBQ restaurant photo,,owner_submission,owner_attestation,,Boneheads BBQ,needs_review
+osm-node-4401772591-boomburger,boomburger,Armdale / Fairview,,,,,,,,,,boomburger restaurant photo,,owner_submission,owner_attestation,,boomburger,needs_review
+osm-node-2716971771-booster-juice,Booster Juice,Armdale / Fairview,,,,,,,,,,Booster Juice restaurant photo,,owner_submission,owner_attestation,,Booster Juice,needs_review
+osm-node-7139174643-booster-juice,Booster Juice,North End,,,,,,,,,,Booster Juice restaurant photo,,owner_submission,owner_attestation,,Booster Juice,needs_review
+osm-node-12007395292-booster-juice,Booster Juice,Dartmouth,,,,,,,,,,Booster Juice restaurant photo,,owner_submission,owner_attestation,,Booster Juice,needs_review
+osm-node-1139389219-boston-pizza,Boston Pizza,Downtown,,,,,,,,,,Boston Pizza restaurant photo,,owner_submission,owner_attestation,,Boston Pizza,needs_review
+osm-way-171149704-boston-pizza,Boston Pizza,Armdale / Fairview,,,,,,,,,,Boston Pizza restaurant photo,,owner_submission,owner_attestation,,Boston Pizza,needs_review
+osm-node-13889594821-bourbon-st-grill,Bourbon St Grill,Dartmouth,,,,,,,,,,Bourbon St Grill restaurant photo,,owner_submission,owner_attestation,,Bourbon St Grill,needs_review
+osm-node-11577527761-bravado,Bravado,Downtown,,,,,,,,,,Bravado restaurant photo,,owner_submission,owner_attestation,,Bravado,needs_review
+osm-node-13073337403-brawta-jamaican-jerk-hut,Brawta Jamaican Jerk Hut,Downtown,,,,,,,,,,Brawta Jamaican Jerk Hut restaurant photo,,owner_submission,owner_attestation,,Brawta Jamaican Jerk Hut,needs_review
+osm-node-4420899697-brenton-grill-and-wine-bar,Brenton Grill & Wine bar,South End,,,,,,,,,,Brenton Grill & Wine bar restaurant photo,,owner_submission,owner_attestation,,Brenton Grill & Wine bar,needs_review
+osm-node-815496300-brewdebaker-s,Brewdebaker's,Armdale / Fairview,,,,,,,,,,Brewdebaker's restaurant photo,,owner_submission,owner_attestation,,Brewdebaker's,needs_review
+osm-node-11734614941-broth-house,Broth House,Downtown,,,,,,,,,,Broth House restaurant photo,,owner_submission,owner_attestation,,Broth House,needs_review
+osm-node-2721726004-bubba-ray-s-sports-bar,Bubba Ray's Sports Bar,Downtown,,,,,,,,,,Bubba Ray's Sports Bar restaurant photo,,owner_submission,owner_attestation,,Bubba Ray's Sports Bar,needs_review
+osm-node-3789619357-bubba-ray-s-sports-bar,Bubba Ray's Sports Bar,Downtown,,,,,,,,,,Bubba Ray's Sports Bar restaurant photo,,owner_submission,owner_attestation,,Bubba Ray's Sports Bar,needs_review
+osm-node-9330955319-budapest-bisztro,Budapest Bisztro,Armdale / Fairview,,,,,,,https://budapestbisztro.ca/,,,Budapest Bisztro restaurant photo,,owner_submission,owner_attestation,,Budapest Bisztro,needs_review
+osm-node-620090343-burger-king,Burger King,North End,,,,,,,,,,Burger King restaurant photo,,owner_submission,owner_attestation,,Burger King,needs_review
+osm-node-1920486474-burger-king,Burger King,North End,,,,,,,,,,Burger King restaurant photo,,owner_submission,owner_attestation,,Burger King,needs_review
+osm-way-171149719-burger-king,Burger King,Armdale / Fairview,,,,,,,,,,Burger King restaurant photo,,owner_submission,owner_attestation,,Burger King,needs_review
+osm-way-240110431-burger-king,Burger King,Dartmouth,,,,,,,,,,Burger King restaurant photo,,owner_submission,owner_attestation,,Burger King,needs_review
+osm-node-1785456866-burrito-jax,Burrito Jax,Downtown,,,,,,,,,,Burrito Jax restaurant photo,,owner_submission,owner_attestation,,Burrito Jax,needs_review
+osm-node-11532103797-burrito-jax,Burrito Jax,North End,,,,,,,,,,Burrito Jax restaurant photo,,owner_submission,owner_attestation,,Burrito Jax,needs_review
+osm-node-6031036960-buta-ramen,Buta Ramen,South End,,,,,,,,,,Buta Ramen restaurant photo,,owner_submission,owner_attestation,,Buta Ramen,needs_review
+osm-node-4952843922-byblos-lebanese-restaurant,Byblos Lebanese Restaurant,Dartmouth,,,,,,,,,,Byblos Lebanese Restaurant restaurant photo,,owner_submission,owner_attestation,,Byblos Lebanese Restaurant,needs_review
+osm-node-13104234102-byron,Byron,North End,,,,,,,,,,Byron restaurant photo,,owner_submission,owner_attestation,,Byron,needs_review
+osm-node-3791528457-cabin-coffee,Cabin Coffee,Waterfront,,,,,,,https://cabincoffeehalifax.com/,,,Cabin Coffee restaurant photo,,owner_submission,owner_attestation,,Cabin Coffee,needs_review
+osm-node-5150636926-cafe-98,Cafe 98,Dartmouth,,,,,,,,,,Cafe 98 restaurant photo,,owner_submission,owner_attestation,,Cafe 98,needs_review
+osm-node-3790838157-cafe-aroma-latino,Cafe Aroma Latino,North End,,,,,,,,,,Cafe Aroma Latino restaurant photo,,owner_submission,owner_attestation,,Cafe Aroma Latino,needs_review
+osm-node-475880058-cafe-chianti,Cafe Chianti,South End,,,,,,,,,,Cafe Chianti restaurant photo,,owner_submission,owner_attestation,,Cafe Chianti,needs_review
+osm-node-12838650881-cafe-du-port,Café du Port,Downtown,,,,,,,,,,Café du Port restaurant photo,,owner_submission,owner_attestation,,Café du Port,needs_review
+osm-node-9089629991-cafe-lara,Café Lara,North End,,,,,,,https://cafelara.ca,,,Café Lara restaurant photo,,owner_submission,owner_attestation,,Café Lara,needs_review
+osm-node-12824690512-cafe-lara,Café Lara,West End,,,,,,,,,,Café Lara restaurant photo,,owner_submission,owner_attestation,,Café Lara,needs_review
+osm-node-12984675528-cafe-lunette,Café Lunette,Downtown,,,,,,,,,,Café Lunette restaurant photo,,owner_submission,owner_attestation,,Café Lunette,needs_review
+osm-node-4421124794-cafe-marco-polo,Cafe Marco Polo,Dartmouth,,,,,,,https://justuscoffee.com/locations/kings-wharf-dartmouth,,,Cafe Marco Polo restaurant photo,,owner_submission,owner_attestation,,Cafe Marco Polo,needs_review
+osm-node-475876899-cafe-ristretto,Cafe Ristretto,Waterfront,,,,,,,,,,Cafe Ristretto restaurant photo,,owner_submission,owner_attestation,,Cafe Ristretto,needs_review
+osm-node-5647941370-cafe-tayaiki-52,Café Tayaiki 52,North End,,,,,,,,,,Café Tayaiki 52 restaurant photo,,owner_submission,owner_attestation,,Café Tayaiki 52,needs_review
+osm-node-13073317016-caffe-lucca,Caffe Lucca,Downtown,,,,,,,,,,Caffe Lucca restaurant photo,,owner_submission,owner_attestation,,Caffe Lucca,needs_review
+osm-node-2714920437-captain-sub,Captain Sub,West End,,,,,,,,,,Captain Sub restaurant photo,,owner_submission,owner_attestation,,Captain Sub,needs_review
+osm-node-3800103657-celtic-corner-public-house,Celtic Corner Public House,Dartmouth,,,,,,,,,,Celtic Corner Public House restaurant photo,,owner_submission,owner_attestation,,Celtic Corner Public House,needs_review
+osm-node-7196212747-cempoal-de-la-calavera-negra,Cempoal de la Calavera Negra,North End,,,,,,,,,,Cempoal de la Calavera Negra restaurant photo,,owner_submission,owner_attestation,,Cempoal de la Calavera Negra,needs_review
+osm-node-2721708515-cha-baa-thai,Cha Baa Thai,Downtown,,,,,,,https://www.chabaathairestaurant.ca/,,,Cha Baa Thai restaurant photo,,owner_submission,owner_attestation,,Cha Baa Thai,needs_review
+osm-node-11609580961-cha-baa-thai,Cha Baa Thai,West End,,,,,,,,,,Cha Baa Thai restaurant photo,,owner_submission,owner_attestation,,Cha Baa Thai,needs_review
+osm-node-5134046822-chain-yard-urban-cidery,Chain Yard Urban Cidery,North End,,,,,,,http://://www.chainyardcider.com,,,Chain Yard Urban Cidery restaurant photo,,owner_submission,owner_attestation,,Chain Yard Urban Cidery,needs_review
+osm-node-5160893922-chatime,Chatime,Downtown,,,,,,,,,,Chatime restaurant photo,,owner_submission,owner_attestation,,Chatime,needs_review
+osm-way-1268243127-chatime,Chatime,West End,,,,,,,,,,Chatime restaurant photo,,owner_submission,owner_attestation,,Chatime,needs_review
+osm-node-773014548-cheelin-chinese-food,Cheelin Chinese Food,Downtown,,,,,,,,,,Cheelin Chinese Food restaurant photo,,owner_submission,owner_attestation,,Cheelin Chinese Food,needs_review
+osm-node-1139389526-cheers-live-country-bar,Cheers Live Country Bar,Downtown,,,,,,,,,,Cheers Live Country Bar restaurant photo,,owner_submission,owner_attestation,,Cheers Live Country Bar,needs_review
+osm-node-11726000908-chef-abod,Chef Abod,West End,,,,,,,,,,Chef Abod restaurant photo,,owner_submission,owner_attestation,,Chef Abod,needs_review
+osm-node-3799399358-cherry-berry,Cherry Berry,Downtown,,,,,,,,,,Cherry Berry restaurant photo,,owner_submission,owner_attestation,,Cherry Berry,needs_review
+osm-node-12938312911-churned,Churned,Halifax Peninsula,,,,,,,,,,Churned restaurant photo,,owner_submission,owner_attestation,,Churned,needs_review
+osm-node-8066924821-cinnabon,Cinnabon,Dartmouth,,,,,,,,,,Cinnabon restaurant photo,,owner_submission,owner_attestation,,Cinnabon,needs_review
+osm-node-12444860718-city-shawarma,City Shawarma,Armdale / Fairview,,,,,,,,,,City Shawarma restaurant photo,,owner_submission,owner_attestation,,City Shawarma,needs_review
+osm-node-12908610736-classic-pizza,Classic Pizza,Downtown,,,,,,,https://classic-pizza.order-online.ai/,,,Classic Pizza restaurant photo,,owner_submission,owner_attestation,,Classic Pizza,needs_review
+osm-node-7185511974-clay-west-bar-and-grill,Clay West Bar & Grill,Bayers Lake Business Park,,,,,,,https://claywesthalifax.business.site/,,,Clay West Bar & Grill restaurant photo,,owner_submission,owner_attestation,,Clay West Bar & Grill,needs_review
+osm-node-13098723101-coastal-curry,Coastal Curry,Downtown,,,,,,,,,,Coastal Curry restaurant photo,,owner_submission,owner_attestation,,Coastal Curry,needs_review
+osm-node-13958623779-coffee-street,Coffee Street,Halifax Peninsula,,,,,,,,,,Coffee Street restaurant photo,,owner_submission,owner_attestation,,Coffee Street,needs_review
+osm-node-815416385-cora-s,Cora's,Armdale / Fairview,,,,,,,,,,Cora's restaurant photo,,owner_submission,owner_attestation,,Cora's,needs_review
+osm-node-12718532662-costco-food-court,Costco Food Court,Armdale / Fairview,,,,,,,,,,Costco Food Court restaurant photo,,owner_submission,owner_attestation,,Costco Food Court,needs_review
+osm-node-12718612064-costco-food-court,Costco Food Court,Halifax Peninsula,,,,,,,,,,Costco Food Court restaurant photo,,owner_submission,owner_attestation,,Costco Food Court,needs_review
+osm-way-651356633-cosy-snack-bar,Cosy Snack Bar,North End,,,,,,,,,,Cosy Snack Bar restaurant photo,,owner_submission,owner_attestation,,Cosy Snack Bar,needs_review
+osm-node-12496044778-cottage-cafe,Cottage Cafe,Dartmouth,,,,,,,,,,Cottage Cafe restaurant photo,,owner_submission,owner_attestation,,Cottage Cafe,needs_review
+osm-node-1749780391-cousins-restaurant,Cousins Restaurant,West End,,,,,,,https://cousinsrestaurant.webs.com/,,,Cousins Restaurant restaurant photo,,owner_submission,owner_attestation,,Cousins Restaurant,needs_review
+osm-node-3791471657-cow-s,Cow's,Downtown,,,,,,,,,,Cow's restaurant photo,,owner_submission,owner_attestation,,Cow's,needs_review
+osm-node-11165031880-cow-s,Cow's,Waterfront,,,,,,,,,,Cow's restaurant photo,,owner_submission,owner_attestation,,Cow's,needs_review
+osm-node-12893501701-cows-cable-wharf,COWS Cable Wharf,Downtown,,,,,,,,,,COWS Cable Wharf restaurant photo,,owner_submission,owner_attestation,,COWS Cable Wharf,needs_review
+osm-node-7347265248-creamy-rainbow-bakery-and-cafe,Creamy Rainbow Bakery and Cafe,Downtown,,,,,,,,,,Creamy Rainbow Bakery and Cafe restaurant photo,,owner_submission,owner_attestation,,Creamy Rainbow Bakery and Cafe,needs_review
+osm-node-5139886025-crepe-crepe-cafe,Crepe Crepe Cafe,South End,,,,,,,,,,Crepe Crepe Cafe restaurant photo,,owner_submission,owner_attestation,,Crepe Crepe Cafe,needs_review
+osm-node-2721708504-curry-village,Curry Village,Downtown,,,,,,,https://www.curryvillage.ca/,,,Curry Village restaurant photo,,owner_submission,owner_attestation,,Curry Village,needs_review
+osm-node-1689418194-da-zero-ristorante,Da Zero Ristorante,South End,,,,,,,,,,Da Zero Ristorante restaurant photo,,owner_submission,owner_attestation,,Da Zero Ristorante,needs_review
+osm-node-12908626114-dairy-bar,Dairy Bar,Downtown,,,,,,,,,,Dairy Bar restaurant photo,,owner_submission,owner_attestation,,Dairy Bar,needs_review
+osm-node-8066235509-dairy-queen,Dairy Queen,Dartmouth,,,,,,,,,,Dairy Queen restaurant photo,,owner_submission,owner_attestation,,Dairy Queen,needs_review
+osm-way-224130096-dairy-queen,Dairy Queen,Dartmouth,,,,,,,,,,Dairy Queen restaurant photo,,owner_submission,owner_attestation,,Dairy Queen,needs_review
+osm-way-366167050-dairy-queen,Dairy Queen,West End,,,,,,,,,,Dairy Queen restaurant photo,,owner_submission,owner_attestation,,Dairy Queen,needs_review
+osm-node-9740295474-dave-s-lobster,Dave's Lobster,Downtown,,,,,,,,,,Dave's Lobster restaurant photo,,owner_submission,owner_attestation,,Dave's Lobster,needs_review
+osm-node-12984674575-de-la-dori,de la dori,Downtown,,,,,,,,,,de la dori restaurant photo,,owner_submission,owner_attestation,,de la dori,needs_review
+osm-node-5135537821-deedee-s-ice-cream,DeeDee's Ice Cream,North End,,,,,,,,,,DeeDee's Ice Cream restaurant photo,,owner_submission,owner_attestation,,DeeDee's Ice Cream,needs_review
+osm-node-5863968654-dharma-sushi,Dharma sushi,Downtown,,,,,,,https://dharmasushi.ca,,,Dharma sushi restaurant photo,,owner_submission,owner_attestation,,Dharma sushi,needs_review
+osm-node-11577871448-dodo-s,Dodo's,West End,,,,,,,,,,Dodo's restaurant photo,,owner_submission,owner_attestation,,Dodo's,needs_review
+osm-node-2702737177-domino-s,Domino's,Armdale / Fairview,,,,,,,,,,Domino's restaurant photo,,owner_submission,owner_attestation,,Domino's,needs_review
+osm-node-5018125657-domino-s,Domino's,North End,,,,,,,,,,Domino's restaurant photo,,owner_submission,owner_attestation,,Domino's,needs_review
+osm-node-8600636444-domino-s,Domino's,Dartmouth,,,,,,,,,,Domino's restaurant photo,,owner_submission,owner_attestation,,Domino's,needs_review
+osm-node-4417956503-dora-q-japanese-cuisine,Dora Q - Japanese Cuisine,Downtown,,,,,,,,,,Dora Q - Japanese Cuisine restaurant photo,,owner_submission,owner_attestation,,Dora Q - Japanese Cuisine,needs_review
+osm-node-5863968655-east-of-grafton-tavern,East of Grafton Tavern,Downtown,,,,,,,,,,East of Grafton Tavern restaurant photo,,owner_submission,owner_attestation,,East of Grafton Tavern,needs_review
+osm-way-173999392-east-side-mario-s,East Side Mario's,Bayers Lake Business Park,,,,,,,,,,East Side Mario's restaurant photo,,owner_submission,owner_attestation,,East Side Mario's,needs_review
+osm-node-2721708503-efendy-turkish-and-mediterranean-grill,Efendy Turkish & Mediterranean Grill,Downtown,,,,,,,http://www.efendyrestaurant.com/,,,Efendy Turkish & Mediterranean Grill restaurant photo,,owner_submission,owner_attestation,,Efendy Turkish & Mediterranean Grill,needs_review
+osm-node-11577557950-el-chino,El Chino,Downtown,,,,,,,,,,El Chino restaurant photo,,owner_submission,owner_attestation,,El Chino,needs_review
+osm-node-9683698488-el-este-tacos,El Este Tacos,North End,,,,,,,,,,El Este Tacos restaurant photo,,owner_submission,owner_attestation,,El Este Tacos,needs_review
+osm-node-3800916658-el-este-tacqueria,El Este Tacqueria,Downtown,,,,,,,,,,El Este Tacqueria restaurant photo,,owner_submission,owner_attestation,,El Este Tacqueria,needs_review
+osm-node-5648048366-eliot-and-vine,Eliot & Vine,North End,,,,,,,,,,Eliot & Vine restaurant photo,,owner_submission,owner_attestation,,Eliot & Vine,needs_review
+osm-node-3801495264-elle-s-bistro,Elle's Bistro,Downtown,,,,,,,,,,Elle's Bistro restaurant photo,,owner_submission,owner_attestation,,Elle's Bistro,needs_review
+osm-node-5823814053-espresso-46,Espresso 46,North End,,,,,,,https://espresso46.com/,,,Espresso 46 restaurant photo,,owner_submission,owner_attestation,,Espresso 46,needs_review
+osm-node-2721724519-estia,Estia,Downtown,,,,,,,,,,Estia restaurant photo,,owner_submission,owner_attestation,,Estia,needs_review
+osm-node-5279902059-famous-curry-chicken,Famous Curry Chicken,North End,,,,,,,,,,Famous Curry Chicken restaurant photo,,owner_submission,owner_attestation,,Famous Curry Chicken,needs_review
+field-guide,Field Guide,North End,,,,,,,https://fieldguidehfx.com,,,Field Guide restaurant photo,,owner_submission,owner_attestation,,Field Guide,needs_review
+osm-node-13262827285-first-sight-coffee-and-bar,First Sight Coffee & Bar,Downtown,,,,,,,,,,First Sight Coffee & Bar restaurant photo,,owner_submission,owner_attestation,,First Sight Coffee & Bar,needs_review
+osm-node-7674190035-five-guys,Five Guys,Downtown,,,,,,,,,,Five Guys restaurant photo,,owner_submission,owner_attestation,,Five Guys,needs_review
+osm-node-11699350872-five-guys,Five Guys,Armdale / Fairview,,,,,,,,,,Five Guys restaurant photo,,owner_submission,owner_attestation,,Five Guys,needs_review
+osm-node-13235716922-foody-jojo-waffle-and-sandwich,Foody Jojo Waffle & Sandwich,Halifax Peninsula,,,,,,,,,,Foody Jojo Waffle & Sandwich restaurant photo,,owner_submission,owner_attestation,,Foody Jojo Waffle & Sandwich,needs_review
+osm-node-3800896161-fran-s-fish-n-chips,Fran's Fish n' Chips,Dartmouth,,,,,,,,,,Fran's Fish n' Chips restaurant photo,,owner_submission,owner_attestation,,Fran's Fish n' Chips,needs_review
+osm-node-5157406524-freedom,Freedom,Downtown,,,,,,,,,,Freedom restaurant photo,,owner_submission,owner_attestation,,Freedom,needs_review
+osm-node-33117714-freeman-s-lil-new-york,Freeman's Lil New York,Downtown,,,,,,,,,,Freeman's Lil New York restaurant photo,,owner_submission,owner_attestation,,Freeman's Lil New York,needs_review
+osm-node-33078684-freshly-squeezed,Freshly Squeezed,Downtown,,,,,,,,,,Freshly Squeezed restaurant photo,,owner_submission,owner_attestation,,Freshly Squeezed,needs_review
+osm-way-1268236935-freshly-squeezed,Freshly Squeezed,West End,,,,,,,,,,Freshly Squeezed restaurant photo,,owner_submission,owner_attestation,,Freshly Squeezed,needs_review
+osm-node-13262680651-freshslice-pizza,Freshslice Pizza,Downtown,,,,,,,,,,Freshslice Pizza restaurant photo,,owner_submission,owner_attestation,,Freshslice Pizza,needs_review
+osm-node-1570206711-fries-and-co,Fries & Co.,West End,,,,,,,http://www.facebook.com/pages/Fries-Co/339657883852,,,Fries & Co. restaurant photo,,owner_submission,owner_attestation,,Fries & Co.,needs_review
+osm-node-5863968643-fujiyama,Fujiyama,Downtown,,,,,,,http://www.sushifujiyama.com/,,,Fujiyama restaurant photo,,owner_submission,owner_attestation,,Fujiyama,needs_review
+osm-node-6361446470-funky-munky-ice-cream-hut,Funky Munky Ice Cream Hut,Dartmouth,,,,,,,,,,Funky Munky Ice Cream Hut restaurant photo,,owner_submission,owner_attestation,,Funky Munky Ice Cream Hut,needs_review
+osm-node-7082566318-g-street-pizza,G-Street Pizza,North End,,,,,,,https://gstreetpizza.ca,,,G-Street Pizza restaurant photo,,owner_submission,owner_attestation,,G-Street Pizza,needs_review
+osm-node-8064219419-gangnam,Gangnam,South End,,,,,,,,,,Gangnam restaurant photo,,owner_submission,owner_attestation,,Gangnam,needs_review
+osm-way-88879257-garrison-brewery,Garrison Brewery,South End,,,,,,,,,,Garrison Brewery restaurant photo,,owner_submission,owner_attestation,,Garrison Brewery,needs_review
+osm-node-5150250521-george-s-bubble-tea,George's Bubble Tea,South End,,,,,,,,,,George's Bubble Tea restaurant photo,,owner_submission,owner_attestation,,George's Bubble Tea,needs_review
+osm-node-434192450-golda-s-cafe,Golda's Cafe,Armdale / Fairview,,,,,,,,,,Golda's Cafe restaurant photo,,owner_submission,owner_attestation,,Golda's Cafe,needs_review
+osm-node-13269385544-good-robot,Good Robot,Downtown,,,,,,,,,,Good Robot restaurant photo,,owner_submission,owner_attestation,,Good Robot,needs_review
+osm-node-4422097393-grawood,Grawood,South End,,,,,,,,,,Grawood restaurant photo,,owner_submission,owner_attestation,,Grawood,needs_review
+osm-node-3790842257-gus-pub,Gus' Pub,North End,,,,,,,,,,Gus' Pub restaurant photo,,owner_submission,owner_attestation,,Gus' Pub,needs_review
+osm-node-5139643221-habanero-s-modern-taco-bar,Habanero’s Modern Taco Bar,Downtown,,,,,,,,,,Habanero’s Modern Taco Bar restaurant photo,,owner_submission,owner_attestation,,Habanero’s Modern Taco Bar,needs_review
+osm-node-4991198787-habernaro-s,Habernaro's,Dartmouth,,,,,,,,,,Habernaro's restaurant photo,,owner_submission,owner_attestation,,Habernaro's,needs_review
+osm-node-5150265222-halal-basha-restaurant,Halal Basha Restaurant,South End,,,,,,,,,,Halal Basha Restaurant restaurant photo,,owner_submission,owner_attestation,,Halal Basha Restaurant,needs_review
+osm-node-2405080737-halifax-citadel-coffee-bar,Halifax Citadel Coffee Bar,Downtown,,,,,,,,,,Halifax Citadel Coffee Bar restaurant photo,,owner_submission,owner_attestation,,Halifax Citadel Coffee Bar,needs_review
+osm-node-13828450730-halifax-grill-n-chill,Halifax Grill n Chill,Downtown,,,,,,,,,,Halifax Grill n Chill restaurant photo,,owner_submission,owner_attestation,,Halifax Grill n Chill,needs_review
+osm-node-11545376776-halimac,Halimac,Downtown,,,,,,,,,,Halimac restaurant photo,,owner_submission,owner_attestation,,Halimac,needs_review
+osm-node-1923225308-hamachi-mura,Hamachi Mura,Armdale / Fairview,,,,,,,,,,Hamachi Mura restaurant photo,,owner_submission,owner_attestation,,Hamachi Mura,needs_review
+osm-node-4810480322-happy-sushi,Happy Sushi,Armdale / Fairview,,,,,,,,,,Happy Sushi restaurant photo,,owner_submission,owner_attestation,,Happy Sushi,needs_review
+osm-node-3106805613-harbour-city-bar-and-restaurant,Harbour City Bar & Restaurant,Downtown,,,,,,,,,,Harbour City Bar & Restaurant restaurant photo,,owner_submission,owner_attestation,,Harbour City Bar & Restaurant,needs_review
+osm-node-5194451222-harbourview-bar-and-lounge,Harbourview Bar and Lounge,Halifax Peninsula,,,,,,,,,,Harbourview Bar and Lounge restaurant photo,,owner_submission,owner_attestation,,Harbourview Bar and Lounge,needs_review
+osm-node-3545533833-harvey-s,Harvey's,Armdale / Fairview,,,,,,,,,,Harvey's restaurant photo,,owner_submission,owner_attestation,,Harvey's,needs_review
+osm-node-6133453706-harvey-s,Harvey's,Dartmouth,,,,,,,,,,Harvey's restaurant photo,,owner_submission,owner_attestation,,Harvey's,needs_review
+osm-way-366157181-harvey-s,Harvey's,West End,,,,,,,,,,Harvey's restaurant photo,,owner_submission,owner_attestation,,Harvey's,needs_review
+osm-way-83325811-harvey-s-swiss-chalet,Harvey's/Swiss Chalet,Dartmouth,,,,,,,,,,Harvey's/Swiss Chalet restaurant photo,,owner_submission,owner_attestation,,Harvey's/Swiss Chalet,needs_review
+osm-node-13262824618-heartwood,Heartwood,Downtown,,,,,,,,,,Heartwood restaurant photo,,owner_submission,owner_attestation,,Heartwood,needs_review
+osm-node-33117708-heartwood-bakery-and-cafe,Heartwood Bakery and Cafe,Downtown,,,,,,,,,,Heartwood Bakery and Cafe restaurant photo,,owner_submission,owner_attestation,,Heartwood Bakery and Cafe,needs_review
+osm-node-4550022069-heng-fung,Heng Fung,Dartmouth,,,,,,,,,,Heng Fung restaurant photo,,owner_submission,owner_attestation,,Heng Fung,needs_review
+osm-node-4417946897-hfx-sports-bar-and-grill,HFX sports bar and grill,Downtown,,,,,,,,,,HFX sports bar and grill restaurant photo,,owner_submission,owner_attestation,,HFX sports bar and grill,needs_review
+osm-node-6886639015-himyum-pizza,HimYum Pizza,North End,,,,,,,,,,HimYum Pizza restaurant photo,,owner_submission,owner_attestation,,HimYum Pizza,needs_review
+osm-node-7393868699-hop-sing-restaurant,Hop Sing Restaurant,South End,,,,,,,https://hopsingrestaurant.ca/,,,Hop Sing Restaurant restaurant photo,,owner_submission,owner_attestation,,Hop Sing Restaurant,needs_review
+osm-way-588450089-horticulture-hall,Horticulture Hall,Downtown,,,,,,,,,,Horticulture Hall restaurant photo,,owner_submission,owner_attestation,,Horticulture Hall,needs_review
+osm-node-32335614-house-of-mei-mei,House of Mei Mei,Armdale / Fairview,,,,,,,,,,House of Mei Mei restaurant photo,,owner_submission,owner_attestation,,House of Mei Mei,needs_review
+osm-node-4421959790-humani-t,Humani-T,South End,,,,,,,https://humanitea.com/,,,Humani-T restaurant photo,,owner_submission,owner_attestation,,Humani-T,needs_review
+osm-node-11577591866-hungry-bowl,Hungry Bowl,Downtown,,,,,,,,,,Hungry Bowl restaurant photo,,owner_submission,owner_attestation,,Hungry Bowl,needs_review
+osm-node-815496273-hyderabad-nawabs,Hyderabad Nawabs,Armdale / Fairview,,,,,,,,,,Hyderabad Nawabs restaurant photo,,owner_submission,owner_attestation,,Hyderabad Nawabs,needs_review
+osm-node-37132629-i-love-sushi,I Love Sushi,Downtown,,,,,,,,,,I Love Sushi restaurant photo,,owner_submission,owner_attestation,,I Love Sushi,needs_review
+osm-node-7347281231-indochine-banh-mi,Indochine Banh Mi,Downtown,,,,,,,,,,Indochine Banh Mi restaurant photo,,owner_submission,owner_attestation,,Indochine Banh Mi,needs_review
+osm-way-173999385-jack-astor-s,Jack Astor's,Armdale / Fairview,,,,,,,,,,Jack Astor's restaurant photo,,owner_submission,owner_attestation,,Jack Astor's,needs_review
+osm-node-2624365747-jane-s-next-door,Jane's Next Door,North End,,,,,,,,,,Jane's Next Door restaurant photo,,owner_submission,owner_attestation,,Jane's Next Door,needs_review
+osm-node-2624400763-java-blend,Java Blend,North End,,,,,,,https://javablendcoffee.com/contact,,,Java Blend restaurant photo,,owner_submission,owner_attestation,,Java Blend,needs_review
+osm-node-12984654351-java-blend-coffee-roasters,Java Blend Coffee Roasters,Downtown,,,,,,,,,,Java Blend Coffee Roasters restaurant photo,,owner_submission,owner_attestation,,Java Blend Coffee Roasters,needs_review
+osm-node-11577575576-jekyll-and-hyde,Jekyll & Hyde,West End,,,,,,,,,,Jekyll & Hyde restaurant photo,,owner_submission,owner_attestation,,Jekyll & Hyde,needs_review
+osm-node-4990340215-jessies-pizza,Jessies Pizza,Dartmouth,,,,,,,,,,Jessies Pizza restaurant photo,,owner_submission,owner_attestation,,Jessies Pizza,needs_review
+osm-node-30915299-jessy-s-pizza,Jessy's Pizza,Armdale / Fairview,,,,,,,,,,Jessy's Pizza restaurant photo,,owner_submission,owner_attestation,,Jessy's Pizza,needs_review
+osm-node-1920717385-jessy-s-pizza,Jessy's Pizza,North End,,,,,,,,,,Jessy's Pizza restaurant photo,,owner_submission,owner_attestation,,Jessy's Pizza,needs_review
+osm-node-1634822945-jessys-pizza,Jessys Pizza,North End,,,,,,,,,,Jessys Pizza restaurant photo,,owner_submission,owner_attestation,,Jessys Pizza,needs_review
+osm-node-32335616-jim-s-family-restaurant,Jim's Family Restaurant,Armdale / Fairview,,,,,,,https://www.jimsfamilyrestauranthalifax.com/cl,,,Jim's Family Restaurant restaurant photo,,owner_submission,owner_attestation,,Jim's Family Restaurant,needs_review
+osm-node-2721708505-jincheng-chinese-cuisine,Jincheng Chinese Cuisine,Downtown,,,,,,,,,,Jincheng Chinese Cuisine restaurant photo,,owner_submission,owner_attestation,,Jincheng Chinese Cuisine,needs_review
+osm-node-4995047387-john-s-lunch,John's Lunch,Dartmouth,,,,,,,https://johnslunch.com/,,,John's Lunch restaurant photo,,owner_submission,owner_attestation,,John's Lunch,needs_review
+osm-node-7196251335-johnny-s-snack-bar,Johnny's Snack Bar,North End,,,,,,,,,,Johnny's Snack Bar restaurant photo,,owner_submission,owner_attestation,,Johnny's Snack Bar,needs_review
+osm-node-12179336228-johny-s-ufo-burger-shack,Johny's UFO Burger Shack,Downtown,,,,,,,,,,Johny's UFO Burger Shack restaurant photo,,owner_submission,owner_attestation,,Johny's UFO Burger Shack,needs_review
+osm-node-8066235507-jugo-juice,Jugo Juice,Dartmouth,,,,,,,,,,Jugo Juice restaurant photo,,owner_submission,owner_attestation,,Jugo Juice,needs_review
+osm-node-26041176-kai-brady-s,Kai Brady's,Downtown,,,,,,,,,,Kai Brady's restaurant photo,,owner_submission,owner_attestation,,Kai Brady's,needs_review
+osm-node-5723553932-kam-moon,Kam-moon,North End,,,,,,,https://kam-moon.com/,,,Kam-moon restaurant photo,,owner_submission,owner_attestation,,Kam-moon,needs_review
+osm-node-2712744143-kebab-kitchen,Kebab Kitchen,Downtown,,,,,,,http://www.kebabkitchens.com/,,,Kebab Kitchen restaurant photo,,owner_submission,owner_attestation,,Kebab Kitchen,needs_review
+osm-node-11428244384-kebab-kitchen,Kebab Kitchen,Dartmouth,,,,,,,,,,Kebab Kitchen restaurant photo,,owner_submission,owner_attestation,,Kebab Kitchen,needs_review
+osm-node-11542167428-kempster-s-cookhouse,Kempster's Cookhouse,West End,,,,,,,,,,Kempster's Cookhouse restaurant photo,,owner_submission,owner_attestation,,Kempster's Cookhouse,needs_review
+osm-node-8066235495-kfc,KFC,Dartmouth,,,,,,,,,,KFC restaurant photo,,owner_submission,owner_attestation,,KFC,needs_review
+osm-way-240110430-kfc,KFC,Dartmouth,,,,,,,,,,KFC restaurant photo,,owner_submission,owner_attestation,,KFC,needs_review
+osm-way-265884302-kfc,KFC,West End,,,,,,,,,,KFC restaurant photo,,owner_submission,owner_attestation,,KFC,needs_review
+osm-node-2716971768-king-of-donair,King of Donair,Armdale / Fairview,,,,,,,,,,King of Donair restaurant photo,,owner_submission,owner_attestation,,King of Donair,needs_review
+osm-node-3799978565-kit-kat-pizza,Kit Kat Pizza,North End,,,,,,,,,,Kit Kat Pizza restaurant photo,,owner_submission,owner_attestation,,Kit Kat Pizza,needs_review
+osm-node-11577823203-kiyoto-sushi,Kiyoto Sushi,West End,,,,,,,,,,Kiyoto Sushi restaurant photo,,owner_submission,owner_attestation,,Kiyoto Sushi,needs_review
+osm-node-5562314184-korca-pizza,Korca Pizza,North End,,,,,,,,,,Korca Pizza restaurant photo,,owner_submission,owner_attestation,,Korca Pizza,needs_review
+osm-node-3791449457-la-frasca-restaurant,La Frasca Restaurant,Downtown,,,,,,,,,,La Frasca Restaurant restaurant photo,,owner_submission,owner_attestation,,La Frasca Restaurant,needs_review
+osm-way-460939327-la-piazza-ristorante,La Piazza Ristorante,West End,,,,,,,https://www.lapiazzarestocafe.com/,,,La Piazza Ristorante restaurant photo,,owner_submission,owner_attestation,,La Piazza Ristorante,needs_review
+osm-node-3575616966-layla-s-mediterranean-cuisine,Layla's Mediterranean Cuisine,Armdale / Fairview,,,,,,,http://laylacuisine.ca,,,Layla's Mediterranean Cuisine restaurant photo,,owner_submission,owner_attestation,,Layla's Mediterranean Cuisine,needs_review
+osm-node-13289257109-le-french-fix,le french fix,Downtown,,,,,,,,,,le french fix restaurant photo,,owner_submission,owner_attestation,,le french fix,needs_review
+osm-node-3104110233-leicester-s-deli,Leicester's Deli,Downtown,,,,,,,,,,Leicester's Deli restaurant photo,,owner_submission,owner_attestation,,Leicester's Deli,needs_review
+osm-node-4422534594-little-caesars,Little Caesars,Armdale / Fairview,,,,,,,,,,Little Caesars restaurant photo,,owner_submission,owner_attestation,,Little Caesars,needs_review
+osm-node-9153297824-loong-7-chinese-restaurant,Loong 7 Chinese Restaurant,West End,,,,,,,,,,Loong 7 Chinese Restaurant restaurant photo,,owner_submission,owner_attestation,,Loong 7 Chinese Restaurant,needs_review
+osm-node-37132565-lot-six-bar-and-restaurant,Lot Six Bar & Restaurant,Downtown,,,,,,,,,,Lot Six Bar & Restaurant restaurant photo,,owner_submission,owner_attestation,,Lot Six Bar & Restaurant,needs_review
+osm-node-5150192223-lovers-pizza,Lovers Pizza,West End,,,,,,,,,,Lovers Pizza restaurant photo,,owner_submission,owner_attestation,,Lovers Pizza,needs_review
+osm-node-2716971767-lower-deck-bar-and-grill,Lower Deck Bar & Grill,Armdale / Fairview,,,,,,,,,,Lower Deck Bar & Grill restaurant photo,,owner_submission,owner_attestation,,Lower Deck Bar & Grill,needs_review
+osm-node-2712744152-mama-gratti-s-deli-and-market,Mama Gratti’s Deli & Market,Downtown,,,,,,,,,,Mama Gratti’s Deli & Market restaurant photo,,owner_submission,owner_attestation,,Mama Gratti’s Deli & Market,needs_review
+osm-node-475879562-man-bean,Man Bean,South End,,,,,,,,,,Man Bean restaurant photo,,owner_submission,owner_attestation,,Man Bean,needs_review
+osm-node-8066235500-manchu-wok,Manchu Wok,Dartmouth,,,,,,,,,,Manchu Wok restaurant photo,,owner_submission,owner_attestation,,Manchu Wok,needs_review
+osm-node-4416786989-manhattan-pizza,Manhattan Pizza,South End,,,,,,,http://www.manhattanpizza.ca/locations.html,,,Manhattan Pizza restaurant photo,,owner_submission,owner_attestation,,Manhattan Pizza,needs_review
+osm-node-13262595504-mappatura-bistro,Mappatura Bistro,South End,,,,,,,,,,Mappatura Bistro restaurant photo,,owner_submission,owner_attestation,,Mappatura Bistro,needs_review
+osm-node-2716971770-marble-slab-creamery,Marble Slab Creamery,Armdale / Fairview,,,,,,,,,,Marble Slab Creamery restaurant photo,,owner_submission,owner_attestation,,Marble Slab Creamery,needs_review
+osm-node-2624730675-marquee-ballroom,Marquee Ballroom,North End,,,,,,,,,,Marquee Ballroom restaurant photo,,owner_submission,owner_attestation,,Marquee Ballroom,needs_review
+osm-node-12151718794-martino-s-pizza,Martino's Pizza,North End,,,,,,,,,,Martino's Pizza restaurant photo,,owner_submission,owner_attestation,,Martino's Pizza,needs_review
+osm-node-8600629382-mary-brown-s,Mary Brown's,Dartmouth,,,,,,,,,,Mary Brown's restaurant photo,,owner_submission,owner_attestation,,Mary Brown's,needs_review
+osm-node-10099167258-mary-brown-s,Mary Brown's,West End,,,,,,,,,,Mary Brown's restaurant photo,,owner_submission,owner_attestation,,Mary Brown's,needs_review
+osm-node-5503919646-mary-s-african-cuisine,Mary‘s African Cuisine,Downtown,,,,,,,,,,Mary‘s African Cuisine restaurant photo,,owner_submission,owner_attestation,,Mary‘s African Cuisine,needs_review
+osm-node-26041175-maxwell-s-plum,Maxwell's Plum,Downtown,,,,,,,,,,Maxwell's Plum restaurant photo,,owner_submission,owner_attestation,,Maxwell's Plum,needs_review
+osm-node-33078674-mcdonald-s,McDonald's,Downtown,,,,,,,http://www.mcdonalds.ca/,,,McDonald's restaurant photo,,owner_submission,owner_attestation,,McDonald's,needs_review
+osm-node-626615920-mcdonald-s,McDonald's,Dartmouth,,,,,,,,,,McDonald's restaurant photo,,owner_submission,owner_attestation,,McDonald's,needs_review
+osm-node-2712689447-mcdonald-s,McDonald's,Downtown,,,,,,,http://www.mcdonalds.ca/,,,McDonald's restaurant photo,,owner_submission,owner_attestation,,McDonald's,needs_review
+osm-node-3034604253-mcdonald-s,McDonald's,Halifax Peninsula,,,,,,,http://www.mcdonalds.ca/,,,McDonald's restaurant photo,,owner_submission,owner_attestation,,McDonald's,needs_review
+osm-node-8593116375-mcdonald-s,McDonald's,Armdale / Fairview,,,,,,,http://www.mcdonalds.ca/,,,McDonald's restaurant photo,,owner_submission,owner_attestation,,McDonald's,needs_review
+osm-way-98830027-mcdonald-s,McDonald's,Dartmouth,,,,,,,,,,McDonald's restaurant photo,,owner_submission,owner_attestation,,McDonald's,needs_review
+osm-way-171149707-mcdonald-s,McDonald's,Bayers Lake Business Park,,,,,,,,,,McDonald's restaurant photo,,owner_submission,owner_attestation,,McDonald's,needs_review
+osm-way-181621820-mcdonald-s,McDonald's,West End,,,,,,,https://www.mcdonalds.com/ca/en-ca/location/halifax/halifax-kempt/3486-kempt-road/3141.html,,,McDonald's restaurant photo,,owner_submission,owner_attestation,,McDonald's,needs_review
+osm-way-224636906-mcdonald-s,McDonald's,Dartmouth,,,,,,,,,,McDonald's restaurant photo,,owner_submission,owner_attestation,,McDonald's,needs_review
+osm-way-240110229-mcdonald-s,McDonald's,Dartmouth,,,,,,,,,,McDonald's restaurant photo,,owner_submission,owner_attestation,,McDonald's,needs_review
+osm-way-358577253-mcdonald-s,McDonald's,Dartmouth,,,,,,,,,,McDonald's restaurant photo,,owner_submission,owner_attestation,,McDonald's,needs_review
+osm-way-364014694-mcdonald-s,McDonald's,South End,,,,,,,http://www.mcdonalds.ca/,,,McDonald's restaurant photo,,owner_submission,owner_attestation,,McDonald's,needs_review
+osm-way-366169898-mcdonald-s,McDonald's,Armdale / Fairview,,,,,,,,,,McDonald's restaurant photo,,owner_submission,owner_attestation,,McDonald's,needs_review
+osm-node-3802394757-mezza,Mezza,Downtown,,,,,,,,,,Mezza restaurant photo,,owner_submission,owner_attestation,,Mezza,needs_review
+osm-node-1139388739-midtown-tavern-and-lounge,Midtown Tavern and Lounge,Downtown,,,,,,,,,,Midtown Tavern and Lounge restaurant photo,,owner_submission,owner_attestation,,Midtown Tavern and Lounge,needs_review
+osm-node-11670265803-mile-et-buerre,Mile et Buerre,West End,,,,,,,,,,Mile et Buerre restaurant photo,,owner_submission,owner_attestation,,Mile et Buerre,needs_review
+osm-node-13098723103-misita-k-food,Misita K-food,Downtown,,,,,,,,,,Misita K-food restaurant photo,,owner_submission,owner_attestation,,Misita K-food,needs_review
+osm-node-5141574221-montana-s,Montana's,Armdale / Fairview,,,,,,,,,,Montana's restaurant photo,,owner_submission,owner_attestation,,Montana's,needs_review
+osm-node-8142450011-montana-s,Montana's,Armdale / Fairview,,,,,,,https://www.montanas.ca/en/locations/3617/halifax-chain-lake-dr.html,,,Montana's restaurant photo,,owner_submission,owner_attestation,,Montana's,needs_review
+osm-node-1254843890-monte-s-showbar-grill,Monte's Showbar Grill,Dartmouth,,,,,,,,,,Monte's Showbar Grill restaurant photo,,owner_submission,owner_attestation,,Monte's Showbar Grill,needs_review
+osm-node-2704746819-morris-east,Morris East,Armdale / Fairview,,,,,,,,,,Morris East restaurant photo,,owner_submission,owner_attestation,,Morris East,needs_review
+osm-node-11767735328-morris-street-east,Morris Street East,Downtown,,,,,,,,,,Morris Street East restaurant photo,,owner_submission,owner_attestation,,Morris Street East,needs_review
+osm-way-1513973751-moxie-s,Moxie's,Armdale / Fairview,,,,,,,,,,Moxie's restaurant photo,,owner_submission,owner_attestation,,Moxie's,needs_review
+osm-way-178230065-moxie-s-classic-grill,Moxie's Classic Grill,Dartmouth,,,,,,,,,,Moxie's Classic Grill restaurant photo,,owner_submission,owner_attestation,,Moxie's Classic Grill,needs_review
+osm-node-472067793-mr-chang-s-chinese-food-emporium,Mr. Chang's Chinese Food Emporium,South End,,,,,,,,,,Mr. Chang's Chinese Food Emporium restaurant photo,,owner_submission,owner_attestation,,Mr. Chang's Chinese Food Emporium,needs_review
+osm-node-8066999530-mrs-fields,Mrs. Fields,Dartmouth,,,,,,,,,,Mrs. Fields restaurant photo,,owner_submission,owner_attestation,,Mrs. Fields,needs_review
+osm-node-5150267121-murphy-s-the-cable-wharf,Murphy's The Cable Wharf,Waterfront,,,,,,,,,,Murphy's The Cable Wharf restaurant photo,,owner_submission,owner_attestation,,Murphy's The Cable Wharf,needs_review
+osm-node-13262743881-my-cha-and-plate,My Cha & Plate,Downtown,,,,,,,,,,My Cha & Plate restaurant photo,,owner_submission,owner_attestation,,My Cha & Plate,needs_review
+osm-node-13132266898-mystic,Mystic,Downtown,,,,,,,,,,Mystic restaurant photo,,owner_submission,owner_attestation,,Mystic,needs_review
+osm-node-2611276563-narrow-espresso,Narrow Espresso,South End,,,,,,,http://narrowespresso.com/,,,Narrow Espresso restaurant photo,,owner_submission,owner_attestation,,Narrow Espresso,needs_review
+osm-node-3791845357-natural-karaoke,Natural Karaoke,Downtown,,,,,,,,,,Natural Karaoke restaurant photo,,owner_submission,owner_attestation,,Natural Karaoke,needs_review
+osm-node-11731650042-nayya-pizza-and-grill,Nayya Pizza & Grill,West End,,,,,,,,,,Nayya Pizza & Grill restaurant photo,,owner_submission,owner_attestation,,Nayya Pizza & Grill,needs_review
+osm-node-12151629475-nena-s-breakfast-house,Nena's Breakfast House,North End,,,,,,,,,,Nena's Breakfast House restaurant photo,,owner_submission,owner_attestation,,Nena's Breakfast House,needs_review
+osm-node-7674271948-new-asia,New Asia,Waterfront,,,,,,,http://www.newasiahalifax.ca/,,,New Asia restaurant photo,,owner_submission,owner_attestation,,New Asia,needs_review
+osm-node-5792729053-new-scotland-brewing,New Scotland Brewing,Halifax Peninsula,,,,,,,,,,New Scotland Brewing restaurant photo,,owner_submission,owner_attestation,,New Scotland Brewing,needs_review
+osm-node-3800067361-new-scotland-yard-emporium,New Scotland Yard Emporium,Dartmouth,,,,,,,,,,New Scotland Yard Emporium restaurant photo,,owner_submission,owner_attestation,,New Scotland Yard Emporium,needs_review
+osm-node-8066235497-new-york-fries,New York Fries,Dartmouth,,,,,,,,,,New York Fries restaurant photo,,owner_submission,owner_attestation,,New York Fries,needs_review
+osm-node-37132515-niche-supper-club-lounge,Niche Supper Club Lounge,Downtown,,,,,,,,,,Niche Supper Club Lounge restaurant photo,,owner_submission,owner_attestation,,Niche Supper Club Lounge,needs_review
+osm-node-11695608691-north-end-baking-co,North End Baking Co.,West End,,,,,,,,,,North End Baking Co. restaurant photo,,owner_submission,owner_attestation,,North End Baking Co.,needs_review
+osm-node-11539027124-novalea-kitchen-and-market,Novalea Kitchen & Market,North End,,,,,,,,,,Novalea Kitchen & Market restaurant photo,,owner_submission,owner_attestation,,Novalea Kitchen & Market,needs_review
+osm-node-3791859257-oasis-pub-and-eatery,Oasis Pub and Eatery,Downtown,,,,,,,,,,Oasis Pub and Eatery restaurant photo,,owner_submission,owner_attestation,,Oasis Pub and Eatery,needs_review
+osm-way-467340052-off-the-grill,off the Grill,Dartmouth,,,,,,,,,,off the Grill restaurant photo,,owner_submission,owner_attestation,,off the Grill,needs_review
+osm-node-5432435420-old-port,Old Port,North End,,,,,,,,,,Old Port restaurant photo,,owner_submission,owner_attestation,,Old Port,needs_review
+osm-node-11685978201-open-book-coffee,Open Book Coffee,West End,,,,,,,,,,Open Book Coffee restaurant photo,,owner_submission,owner_attestation,,Open Book Coffee,needs_review
+osm-node-13889594820-orange-julius,Orange Julius,Dartmouth,,,,,,,,,,Orange Julius restaurant photo,,owner_submission,owner_attestation,,Orange Julius,needs_review
+osm-node-9683689973-ori-foods,Ori Foods,North End,,,,,,,,,,Ori Foods restaurant photo,,owner_submission,owner_attestation,,Ori Foods,needs_review
+osm-node-12674247549-osmow-s,Osmow's,West End,,,,,,,,,,Osmow's restaurant photo,,owner_submission,owner_attestation,,Osmow's,needs_review
+osm-node-4965917621-patrons-golf-and-lounge,Patrons Golf & Lounge,Bedford,,,,,,,https://www.patronsgolflounge.ca/,,,Patrons Golf & Lounge restaurant photo,,owner_submission,owner_attestation,,Patrons Golf & Lounge,needs_review
+osm-node-10916309834-peacock,Peacock,Downtown,,,,,,,,,,Peacock restaurant photo,,owner_submission,owner_attestation,,Peacock,needs_review
+osm-node-3799730457-philthy-philly-s,Philthy Philly's,Halifax Peninsula,,,,,,,,,,Philthy Philly's restaurant photo,,owner_submission,owner_attestation,,Philthy Philly's,needs_review
+osm-node-3801556957-piatto,Piatto,South End,,,,,,,,,,Piatto restaurant photo,,owner_submission,owner_attestation,,Piatto,needs_review
+osm-node-3789869157-piece-of-cake-bakery-and-cafe,Piece of Cake Bakery and Cafe,Waterfront,,,,,,,https://bishopslanding.com/dining/piece-of-cake-fine-bakery-cafe/,,,Piece of Cake Bakery and Cafe restaurant photo,,owner_submission,owner_attestation,,Piece of Cake Bakery and Cafe,needs_review
+osm-way-96156496-pilot-s-pub,Pilot's Pub,Dartmouth,,,,,,,,,,Pilot's Pub restaurant photo,,owner_submission,owner_attestation,,Pilot's Pub,needs_review
+osm-node-7347521298-pine-house-chinese-restaurant,Pine House Chinese Restaurant,Downtown,,,,,,,,,,Pine House Chinese Restaurant restaurant photo,,owner_submission,owner_attestation,,Pine House Chinese Restaurant,needs_review
+osm-node-2721708536-pita-pit,Pita Pit,Downtown,,,,,,,,,,Pita Pit restaurant photo,,owner_submission,owner_attestation,,Pita Pit,needs_review
+osm-node-4915907943-pita-pit,Pita Pit,Armdale / Fairview,,,,,,,,,,Pita Pit restaurant photo,,owner_submission,owner_attestation,,Pita Pit,needs_review
+osm-node-12139021297-pita-pit,Pita Pit,Dartmouth,,,,,,,,,,Pita Pit restaurant photo,,owner_submission,owner_attestation,,Pita Pit,needs_review
+osm-node-9629211486-pizza-co,Pizza Co.,Armdale / Fairview,,,,,,,,,,Pizza Co. restaurant photo,,owner_submission,owner_attestation,,Pizza Co.,needs_review
+osm-node-3791840159-pizza-delight,Pizza Delight,Downtown,,,,,,,,,,Pizza Delight restaurant photo,,owner_submission,owner_attestation,,Pizza Delight,needs_review
+osm-node-8066235505-pizza-delight,Pizza Delight,Dartmouth,,,,,,,,,,Pizza Delight restaurant photo,,owner_submission,owner_attestation,,Pizza Delight,needs_review
+osm-way-171149722-pizza-delight,Pizza Delight,Armdale / Fairview,,,,,,,,,,Pizza Delight restaurant photo,,owner_submission,owner_attestation,,Pizza Delight,needs_review
+osm-way-372779852-pizza-girls,Pizza Girls,Downtown,,,,,,,,,,Pizza Girls restaurant photo,,owner_submission,owner_attestation,,Pizza Girls,needs_review
+osm-node-6393893025-pizza-hut,Pizza Hut,Armdale / Fairview,,,,,,,https://www.pizzahut.ca/huts/ca-1/R30103/,,,Pizza Hut restaurant photo,,owner_submission,owner_attestation,,Pizza Hut,needs_review
+osm-way-358577265-pizza-hut,Pizza Hut,Dartmouth,,,,,,,https://www.pizzahut.ca/huts/ca-1/R30104/,,,Pizza Hut restaurant photo,,owner_submission,owner_attestation,,Pizza Hut,needs_review
+osm-node-815496272-pizza-land,Pizza Land,Armdale / Fairview,,,,,,,,,,Pizza Land restaurant photo,,owner_submission,owner_attestation,,Pizza Land,needs_review
+osm-node-1910935393-pizza-pizza,Pizza Pizza,Armdale / Fairview,,,,,,,,,,Pizza Pizza restaurant photo,,owner_submission,owner_attestation,,Pizza Pizza,needs_review
+osm-node-5863968665-pizza-pizza,Pizza Pizza,Downtown,,,,,,,https://www.pizzapizza.ca/,,,Pizza Pizza restaurant photo,,owner_submission,owner_attestation,,Pizza Pizza,needs_review
+osm-node-11526163880-pizza-pizza,Pizza Pizza,South End,,,,,,,https://dal.campusdish.com/LocationsAndMenus/LifeSciencesCentre/PizzaPizza,,,Pizza Pizza restaurant photo,,owner_submission,owner_attestation,,Pizza Pizza,needs_review
+osm-node-13073162601-pizza-pizza,Pizza Pizza,Halifax Peninsula,,,,,,,https://www.pizzapizza.ca/,,,Pizza Pizza restaurant photo,,owner_submission,owner_attestation,,Pizza Pizza,needs_review
+osm-node-32335613-pizza-tomaso,Pizza Tomaso,Armdale / Fairview,,,,,,,,,,Pizza Tomaso restaurant photo,,owner_submission,owner_attestation,,Pizza Tomaso,needs_review
+osm-node-11577860718-pizza-town,Pizza town,West End,,,,,,,,,,Pizza town restaurant photo,,owner_submission,owner_attestation,,Pizza town,needs_review
+osm-node-620090348-pizza-town,Pizza Town,North End,,,,,,,,,,Pizza Town restaurant photo,,owner_submission,owner_attestation,,Pizza Town,needs_review
+osm-node-2712624362-pizzadelic,Pizzadelic,Armdale / Fairview,,,,,,,,,,Pizzadelic restaurant photo,,owner_submission,owner_attestation,,Pizzadelic,needs_review
+osm-node-5584342024-pleasant-street-diner,Pleasant Street Diner,Dartmouth,,,,,,,https://pleasantstdiner.com,,,Pleasant Street Diner restaurant photo,,owner_submission,owner_attestation,,Pleasant Street Diner,needs_review
+osm-node-8376551845-portland-street-creperie,Portland Street Creperie,Halifax Peninsula,,,,,,,http://www.portlandstreetcreperie.com/,,,Portland Street Creperie restaurant photo,,owner_submission,owner_attestation,,Portland Street Creperie,needs_review
+osm-node-37132554-press-gang,Press Gang,Downtown,,,,,,,,,,Press Gang restaurant photo,,owner_submission,owner_attestation,,Press Gang,needs_review
+osm-node-13262680652-presto-tea,Presto Tea,Downtown,,,,,,,,,,Presto Tea restaurant photo,,owner_submission,owner_attestation,,Presto Tea,needs_review
+osm-node-8066999542-pretzel-maker,Pretzel Maker,Dartmouth,,,,,,,,,,Pretzel Maker restaurant photo,,owner_submission,owner_attestation,,Pretzel Maker,needs_review
+osm-node-4417927494-primal-kitchen,Primal Kitchen,South End,,,,,,,https://www.primalhfx.ca/,,,Primal Kitchen restaurant photo,,owner_submission,owner_attestation,,Primal Kitchen,needs_review
+osm-node-11577855033-pur-and-simple,Pür & Simple,West End,,,,,,,,,,Pür & Simple restaurant photo,,owner_submission,owner_attestation,,Pür & Simple,needs_review
+osm-node-11577854158-radish-chicken,Radish Chicken,West End,,,,,,,,,,Radish Chicken restaurant photo,,owner_submission,owner_attestation,,Radish Chicken,needs_review
+osm-node-11695094483-ramblers,Ramblers,Downtown,,,,,,,,,,Ramblers restaurant photo,,owner_submission,owner_attestation,,Ramblers,needs_review
+osm-node-7196212749-randy-s-pizza,Randy's Pizza,North End,,,,,,,,,,Randy's Pizza restaurant photo,,owner_submission,owner_attestation,,Randy's Pizza,needs_review
+osm-node-5924372813-rasa-flavours-of-india,Rasa: Flavours of India,Downtown,,,,,,,,,,Rasa: Flavours of India restaurant photo,,owner_submission,owner_attestation,,Rasa: Flavours of India,needs_review
+osm-node-7082566319-real-fake-meats,Real Fake Meats,Downtown,,,,,,,https://www.realfakemeats.com/,,,Real Fake Meats restaurant photo,,owner_submission,owner_attestation,,Real Fake Meats,needs_review
+osm-node-3799413958-relish-gourmet-burgers,Relish Gourmet Burgers,Downtown,,,,,,,,,,Relish Gourmet Burgers restaurant photo,,owner_submission,owner_attestation,,Relish Gourmet Burgers,needs_review
+osm-node-3801688860-revana-pizza,Revana Pizza,Dartmouth,,,,,,,,,,Revana Pizza restaurant photo,,owner_submission,owner_attestation,,Revana Pizza,needs_review
+osm-node-3802109750-rinaldo-s,Rinaldo’s,West End,,,,,,,https://rinaldos.ca,,,Rinaldo’s restaurant photo,,owner_submission,owner_attestation,,Rinaldo’s,needs_review
+osm-node-475876993-ristorante-amano,Ristorante Amano,Waterfront,,,,,,,https://www.ristoranteamano.ca/,,,Ristorante Amano restaurant photo,,owner_submission,owner_attestation,,Ristorante Amano,needs_review
+osm-node-3791830257-rockbottom-brewery,Rockbottom Brewery,Downtown,,,,,,,,,,Rockbottom Brewery restaurant photo,,owner_submission,owner_attestation,,Rockbottom Brewery,needs_review
+osm-node-13073155301-rollz-ice-cream,Rollz Ice Cream,Halifax Peninsula,,,,,,,https://rollzicecream.ca/,,,Rollz Ice Cream restaurant photo,,owner_submission,owner_attestation,,Rollz Ice Cream,needs_review
+osm-node-3763276958-rosie-s-burgers,Rosie's Burgers,Downtown,,,,,,,,,,Rosie's Burgers restaurant photo,,owner_submission,owner_attestation,,Rosie's Burgers,needs_review
+osm-node-1921057082-royal-nova-scotia-yacht-squadron,Royal Nova Scotia Yacht Squadron,South End,,,,,,,,,,Royal Nova Scotia Yacht Squadron restaurant photo,,owner_submission,owner_attestation,,Royal Nova Scotia Yacht Squadron,needs_review
+osm-node-37132718-rudy-s,Rudy's,Downtown,,,,,,,,,,Rudy's restaurant photo,,owner_submission,owner_attestation,,Rudy's,needs_review
+osm-node-11726396167-rush-hour-pizza,Rush Hour Pizza,West End,,,,,,,https://rushhourpizza.ca/,,,Rush Hour Pizza restaurant photo,,owner_submission,owner_attestation,,Rush Hour Pizza,needs_review
+osm-node-9652977384-saffron-multi-cuisine-indian-restaurant,Saffron Multi Cuisine Indian Restaurant,Armdale / Fairview,,,,,,,https://saffron-indian-restaurant.com/,,,Saffron Multi Cuisine Indian Restaurant restaurant photo,,owner_submission,owner_attestation,,Saffron Multi Cuisine Indian Restaurant,needs_review
+osm-node-8443747544-saj-house,Saj House,West End,,,,,,,https://www.sajhouse.ca/,,,Saj House restaurant photo,,owner_submission,owner_attestation,,Saj House,needs_review
+osm-node-13098723104-salt-sol,Salt + Sol,Downtown,,,,,,,,,,Salt + Sol restaurant photo,,owner_submission,owner_attestation,,Salt + Sol,needs_review
+osm-node-620090337-sam-s-seafood,Sam's Seafood,Dartmouth,,,,,,,,,,Sam's Seafood restaurant photo,,owner_submission,owner_attestation,,Sam's Seafood,needs_review
+osm-node-10916309831-sapori,Sapori,Downtown,,,,,,,,,,Sapori restaurant photo,,owner_submission,owner_attestation,,Sapori,needs_review
+osm-node-3104145316-seasons-at-atlantica,Seasons at Atlantica,Downtown,,,,,,,,,,Seasons at Atlantica restaurant photo,,owner_submission,owner_attestation,,Seasons at Atlantica,needs_review
+osm-node-620090340-second-cup,Second Cup,Dartmouth,,,,,,,,,,Second Cup restaurant photo,,owner_submission,owner_attestation,,Second Cup,needs_review
+osm-node-4678751901-second-cup,Second Cup,Dartmouth,,,,,,,,,,Second Cup restaurant photo,,owner_submission,owner_attestation,,Second Cup,needs_review
+osm-node-11526163888-second-cup,Second Cup,South End,,,,,,,,,,Second Cup restaurant photo,,owner_submission,owner_attestation,,Second Cup,needs_review
+osm-node-12960016418-seven-bays,Seven Bays,Downtown,,,,,,,,,,Seven Bays restaurant photo,,owner_submission,owner_attestation,,Seven Bays,needs_review
+osm-node-13255161282-shandiz-restaurant,Shandiz Restaurant,Halifax Peninsula,,,,,,,,,,Shandiz Restaurant restaurant photo,,owner_submission,owner_attestation,,Shandiz Restaurant,needs_review
+osm-node-6393893024-shengs-chinese-restaurant,Shengs Chinese Restaurant,Regency Park,,,,,,,,,,Shengs Chinese Restaurant restaurant photo,,owner_submission,owner_attestation,,Shengs Chinese Restaurant,needs_review
+osm-node-7674268236-shiraz,Shiraz,Waterfront,,,,,,,https://www.shirazhalifax.ca/,,,Shiraz restaurant photo,,owner_submission,owner_attestation,,Shiraz,needs_review
+osm-node-2714920432-sicilian-pizza,Sicilian Pizza,West End,,,,,,,,,,Sicilian Pizza restaurant photo,,owner_submission,owner_attestation,,Sicilian Pizza,needs_review
+osm-node-31794061-silver-dragon-restaurant,Silver Dragon Restaurant,North End,,,,,,,,,,Silver Dragon Restaurant restaurant photo,,owner_submission,owner_attestation,,Silver Dragon Restaurant,needs_review
+osm-node-5139612422-smiling-goat,smiling goat,Downtown,,,,,,,,,,smiling goat restaurant photo,,owner_submission,owner_attestation,,smiling goat,needs_review
+osm-node-3789756557-smiling-goat,Smiling Goat,Waterfront,,,,,,,https://www.smilinggoat.ca/locations/,,,Smiling Goat restaurant photo,,owner_submission,owner_attestation,,Smiling Goat,needs_review
+osm-node-30945183-smitty-s,Smitty's,Regency Park,,,,,,,,,,Smitty's restaurant photo,,owner_submission,owner_attestation,,Smitty's,needs_review
+osm-node-5157417327-smoke-s-poutinerie,Smoke's Poutinerie,Downtown,,,,,,,,,,Smoke's Poutinerie restaurant photo,,owner_submission,owner_attestation,,Smoke's Poutinerie,needs_review
+osm-node-5229231130-smoke-s-poutinerie,Smoke's Poutinerie,Downtown,,,,,,,,,,Smoke's Poutinerie restaurant photo,,owner_submission,owner_attestation,,Smoke's Poutinerie,needs_review
+osm-node-475879370-snappy-tomato-s-pizzeria,Snappy Tomato's Pizzeria,South End,,,,,,,,,,Snappy Tomato's Pizzeria restaurant photo,,owner_submission,owner_attestation,,Snappy Tomato's Pizzeria,needs_review
+osm-node-6841382577-sniggily-wiggily-s-beer-n-booze-concreatery,Sniggily Wiggily's Beer N' Booze Concreatery,Downtown,,,,,,,,,,Sniggily Wiggily's Beer N' Booze Concreatery restaurant photo,,owner_submission,owner_attestation,,Sniggily Wiggily's Beer N' Booze Concreatery,needs_review
+osm-node-13255108538-soberish-mocktail-shoppe,Soberish Mocktail Shoppe,Downtown,,,,,,,,,,Soberish Mocktail Shoppe restaurant photo,,owner_submission,owner_attestation,,Soberish Mocktail Shoppe,needs_review
+osm-node-3097564346-song-s-korean-food,Song's Korean Food,Downtown,,,,,,,,,,Song's Korean Food restaurant photo,,owner_submission,owner_attestation,,Song's Korean Food,needs_review
+osm-node-1689418196-split-crow,Split Crow,Downtown,,,,,,,,,,Split Crow restaurant photo,,owner_submission,owner_attestation,,Split Crow,needs_review
+osm-node-33117717-staff-of-life-bakery-and-cafe,Staff of Life Bakery and Cafe,Downtown,,,,,,,,,,Staff of Life Bakery and Cafe restaurant photo,,owner_submission,owner_attestation,,Staff of Life Bakery and Cafe,needs_review
+osm-node-3800098557-stagger-s,Stagger's,Dartmouth,,,,,,,,,,Stagger's restaurant photo,,owner_submission,owner_attestation,,Stagger's,needs_review
+osm-node-1672879768-starbucks,Starbucks,North End,,,,,,,https://www.starbucks.ca/store-locator/store/6149-147151/5554-kaye-street-5554-kaye-street-halifax-ns-b-3-k-1-y-5-ca,,,Starbucks restaurant photo,,owner_submission,owner_attestation,,Starbucks,needs_review
+osm-node-1748435000-starbucks,Starbucks,Downtown,,,,,,,,,,Starbucks restaurant photo,,owner_submission,owner_attestation,,Starbucks,needs_review
+osm-node-2702731868-starbucks,Starbucks,Armdale / Fairview,,,,,,,https://www.starbucks.ca/store-locator/store/4086-140770/20-parkland-dr-20-parkland-dr-halifax-ns-b-3-s-1-p-1-ca,,,Starbucks restaurant photo,,owner_submission,owner_attestation,,Starbucks,needs_review
+osm-node-2712744153-starbucks,Starbucks,Downtown,,,,,,,,,,Starbucks restaurant photo,,owner_submission,owner_attestation,,Starbucks,needs_review
+osm-node-4416579191-starbucks,Starbucks,Downtown,,,,,,,"https://www.starbucks.ca/store-locator?map=57.751076,-101.645508,4z",,,Starbucks restaurant photo,,owner_submission,owner_attestation,,Starbucks,needs_review
+osm-node-5056880420-starbucks,Starbucks,Dartmouth,,,,,,,,,,Starbucks restaurant photo,,owner_submission,owner_attestation,,Starbucks,needs_review
+osm-node-9520194451-starbucks,Starbucks,Dartmouth,,,,,,,https://www.starbucks.ca/store-locator/store/65775-299863/atlantic-superstore-portland-s-650-portland-street-dartmouth-ns-b-2-w-2-m-7-ca,,,Starbucks restaurant photo,,owner_submission,owner_attestation,,Starbucks,needs_review
+osm-node-10052207437-starbucks,Starbucks,Bayers Lake Business Park,,,,,,,https://www.starbucks.ca/store-locator/store/12465-151926/86-chain-lake-drive-86-chain-lake-drive-halifax-ns-b-3-s-1-a-2-ca,,,Starbucks restaurant photo,,owner_submission,owner_attestation,,Starbucks,needs_review
+osm-node-11526163876-starbucks,Starbucks,South End,,,,,,,https://dal.campusdish.com/LocationsAndMenus/StarbucksatTupperMedicalBuilding,,,Starbucks restaurant photo,,owner_submission,owner_attestation,,Starbucks,needs_review
+osm-node-11699350869-starbucks,Starbucks,Armdale / Fairview,,,,,,,https://www.starbucks.ca/store-locator/store/65774-300165/atlantic-superstore-chain-lake-210-chain-lake-drive-halifax-ns-b-3-s-1-c-5-ca,,,Starbucks restaurant photo,,owner_submission,owner_attestation,,Starbucks,needs_review
+osm-node-12139021295-starbucks,Starbucks,South End,,,,,,,https://www.starbucks.ca/store-locator/store/79117-307543/318-herring-cove-rd-318-herring-cove-rd-halifax-ns-b-3-r-1-v-4-ca,,,Starbucks restaurant photo,,owner_submission,owner_attestation,,Starbucks,needs_review
+osm-node-12139024601-starbucks,Starbucks,Armdale / Fairview,,,,,,,https://www.starbucks.ca/store-locator/store/66230-300523/sobeys-clayton-park-644-287-lacewood-drive-halifax-ns-b-3-m-3-y-7-ca,,,Starbucks restaurant photo,,owner_submission,owner_attestation,,Starbucks,needs_review
+osm-node-12139024637-starbucks,Starbucks,West End,,,,,,,https://www.starbucks.ca/store-locator/store/61586-294956/atlantic-superstore-joseph-how-3601-joseph-howe-drive-halifax-ns-b-3-l-4-h-8-ca,,,Starbucks restaurant photo,,owner_submission,owner_attestation,,Starbucks,needs_review
+osm-node-12139024647-starbucks,Starbucks,Dartmouth,,,,,,,https://www.starbucks.ca/store-locator/store/23087-222344/675-windmill-road-11-cuddy-lane-dartmouth-ns-b-3-b-0-l-1-ca,,,Starbucks restaurant photo,,owner_submission,owner_attestation,,Starbucks,needs_review
+osm-way-1268232345-starbucks,Starbucks,West End,,,,,,,https://www.starbucks.ca/store-locator/store/20568-206464/halifax-shopping-centre-leve-7001-mumford-road-halifax-ns-b-3-l-4-t-8-ca,,,Starbucks restaurant photo,,owner_submission,owner_attestation,,Starbucks,needs_review
+osm-node-3796264081-stayner-s-wharf,Stayner's Wharf,Downtown,,,,,,,,,,Stayner's Wharf restaurant photo,,owner_submission,owner_attestation,,Stayner's Wharf,needs_review
+osm-way-505336809-steak-and-stein,Steak and Stein,Dartmouth,,,,,,,,,,Steak and Stein restaurant photo,,owner_submission,owner_attestation,,Steak and Stein,needs_review
+osm-node-1836752911-steve-o-renos,Steve-o-Renos,Downtown,,,,,,,,,,Steve-o-Renos restaurant photo,,owner_submission,owner_attestation,,Steve-o-Renos,needs_review
+osm-node-3801495263-stillwell,Stillwell,Downtown,,,,,,,https://www.barstillwell.com/,,,Stillwell restaurant photo,,owner_submission,owner_attestation,,Stillwell,needs_review
+osm-node-3205029165-stillwell-freehouse,Stillwell Freehouse,North End,,,,,,,,,,Stillwell Freehouse restaurant photo,,owner_submission,owner_attestation,,Stillwell Freehouse,needs_review
+osm-node-4428984290-stone-pizza,Stone Pizza,Dartmouth,,,,,,,https://stonepizza.ca/,,,Stone Pizza restaurant photo,,owner_submission,owner_attestation,,Stone Pizza,needs_review
+osm-node-475877099-stories,Stories,South End,,,,,,,,,,Stories restaurant photo,,owner_submission,owner_attestation,,Stories,needs_review
+osm-node-13262236018-studio-east,Studio East,Downtown,,,,,,,,,,Studio East restaurant photo,,owner_submission,owner_attestation,,Studio East,needs_review
+osm-node-5140336622-studio-east-food-drink,Studio East Food+Drink,North End,,,,,,,https://www.studioeastfood.ca/,,,Studio East Food+Drink restaurant photo,,owner_submission,owner_attestation,,Studio East Food+Drink,needs_review
+osm-node-33078704-subway,Subway,Downtown,,,,,,,,,,Subway restaurant photo,,owner_submission,owner_attestation,,Subway,needs_review
+osm-node-815496275-subway,Subway,Armdale / Fairview,,,,,,,,,,Subway restaurant photo,,owner_submission,owner_attestation,,Subway,needs_review
+osm-node-1202688542-subway,Subway,Dartmouth,,,,,,,https://www.subway.com,,,Subway restaurant photo,,owner_submission,owner_attestation,,Subway,needs_review
+osm-node-1819605596-subway,Subway,South End,,,,,,,,,,Subway restaurant photo,,owner_submission,owner_attestation,,Subway,needs_review
+osm-node-2511306498-subway,Subway,Dartmouth,,,,,,,,,,Subway restaurant photo,,owner_submission,owner_attestation,,Subway,needs_review
+osm-node-2611393936-subway,Subway,Dartmouth,,,,,,,,,,Subway restaurant photo,,owner_submission,owner_attestation,,Subway,needs_review
+osm-node-3030036928-subway,Subway,Downtown,,,,,,,,,,Subway restaurant photo,,owner_submission,owner_attestation,,Subway,needs_review
+osm-node-3794287558-subway,Subway,Downtown,,,,,,,,,,Subway restaurant photo,,owner_submission,owner_attestation,,Subway,needs_review
+osm-node-3800067659-subway,Subway,Dartmouth,,,,,,,https://www.subway.com,,,Subway restaurant photo,,owner_submission,owner_attestation,,Subway,needs_review
+osm-node-4081593184-subway,Subway,South End,,,,,,,,,,Subway restaurant photo,,owner_submission,owner_attestation,,Subway,needs_review
+osm-node-4395473556-subway,Subway,Dartmouth,,,,,,,,,,Subway restaurant photo,,owner_submission,owner_attestation,,Subway,needs_review
+osm-node-4416665991-subway,Subway,South End,,,,,,,,,,Subway restaurant photo,,owner_submission,owner_attestation,,Subway,needs_review
+osm-node-4417640489-subway,Subway,Dartmouth,,,,,,,,,,Subway restaurant photo,,owner_submission,owner_attestation,,Subway,needs_review
+osm-node-4954870481-subway,Subway,Dartmouth,,,,,,,,,,Subway restaurant photo,,owner_submission,owner_attestation,,Subway,needs_review
+osm-node-4990340206-subway,Subway,Dartmouth,,,,,,,https://restaurants.subway.com/canada/ns/dartmouth/100-main-st,,,Subway restaurant photo,,owner_submission,owner_attestation,,Subway,needs_review
+osm-node-5432436621-subway,Subway,North End,,,,,,,,,,Subway restaurant photo,,owner_submission,owner_attestation,,Subway,needs_review
+osm-node-7021710019-subway,Subway,West End,,,,,,,,,,Subway restaurant photo,,owner_submission,owner_attestation,,Subway,needs_review
+osm-node-8066235496-subway,Subway,Dartmouth,,,,,,,https://www.subway.com,,,Subway restaurant photo,,owner_submission,owner_attestation,,Subway,needs_review
+osm-node-9301607067-subway,Subway,Armdale / Fairview,,,,,,,https://www.subway.com,,,Subway restaurant photo,,owner_submission,owner_attestation,,Subway,needs_review
+osm-node-10099161131-subway,Subway,West End,,,,,,,,,,Subway restaurant photo,,owner_submission,owner_attestation,,Subway,needs_review
+osm-node-11526163887-subway,Subway,South End,,,,,,,,,,Subway restaurant photo,,owner_submission,owner_attestation,,Subway,needs_review
+osm-node-11577869163-subway,Subway,West End,,,,,,,https://www.subway.com/,,,Subway restaurant photo,,owner_submission,owner_attestation,,Subway,needs_review
+osm-node-11808562718-subway,Subway,South End,,,,,,,,,,Subway restaurant photo,,owner_submission,owner_attestation,,Subway,needs_review
+osm-way-171149705-subway,Subway,Armdale / Fairview,,,,,,,,,,Subway restaurant photo,,owner_submission,owner_attestation,,Subway,needs_review
+osm-node-7590042414-suda-table,Suda Table,North End,,,,,,,,,,Suda Table restaurant photo,,owner_submission,owner_attestation,,Suda Table,needs_review
+osm-node-5003519268-sully-and-porter,Sully & Porter,North End,,,,,,,https://sullyandporter.com/,,,Sully & Porter restaurant photo,,owner_submission,owner_attestation,,Sully & Porter,needs_review
+osm-node-5138506321-summit-cafe,Summit Cafe,Waterfront,,,,,,,https://www.thesummitcafe.ca/,,,Summit Cafe restaurant photo,,owner_submission,owner_attestation,,Summit Cafe,needs_review
+osm-node-11552069056-sushi-cove,Sushi Cove,South End,,,,,,,https://sushicovehalifax.com/,,,Sushi Cove restaurant photo,,owner_submission,owner_attestation,,Sushi Cove,needs_review
+osm-node-11552151862-sushi-jet,Sushi Jet,Dartmouth,,,,,,,https://sushi-jet.com/location/dartmouth,,,Sushi Jet restaurant photo,,owner_submission,owner_attestation,,Sushi Jet,needs_review
+osm-node-11552180279-sushi-jet,Sushi Jet,Downtown,,,,,,,https://sushi-jet.com/location/Halifax,,,Sushi Jet restaurant photo,,owner_submission,owner_attestation,,Sushi Jet,needs_review
+osm-node-2712744154-sushi-you-and-me,Sushi You & Me,Downtown,,,,,,,,,,Sushi You & Me restaurant photo,,owner_submission,owner_attestation,,Sushi You & Me,needs_review
+osm-node-2721708502-suzuki-japanese-restaurant,Suzuki Japanese Restaurant,Downtown,,,,,,,http://www.suzukirestaurant.ca/,,,Suzuki Japanese Restaurant restaurant photo,,owner_submission,owner_attestation,,Suzuki Japanese Restaurant,needs_review
+osm-node-11612206582-swaad-sagaa-indian-cuisine-incorporated,Swaad Sagaa Indian Cuisine Incorporated,North End,,,,,,,https://www.swaadsagaa.com/,,,Swaad Sagaa Indian Cuisine Incorporated restaurant photo,,owner_submission,owner_attestation,,Swaad Sagaa Indian Cuisine Incorporated,needs_review
+osm-node-10916324273-swanky-burger,Swanky Burger,Downtown,,,,,,,,,,Swanky Burger restaurant photo,,owner_submission,owner_attestation,,Swanky Burger,needs_review
+osm-node-5018125658-sweet-and-sassy,Sweet & Sassy,North End,,,,,,,https://sweetandsassy.ca/,,,Sweet & Sassy restaurant photo,,owner_submission,owner_attestation,,Sweet & Sassy,needs_review
+osm-node-3097611862-sweet-hereafter,Sweet Hereafter,Downtown,,,,,,,,,,Sweet Hereafter restaurant photo,,owner_submission,owner_attestation,,Sweet Hereafter,needs_review
+osm-node-13098723102-sweet-n-salty,Sweet n' Salty,Downtown,,,,,,,,,,Sweet n' Salty restaurant photo,,owner_submission,owner_attestation,,Sweet n' Salty,needs_review
+osm-node-4424084202-sweets-and-snacks,Sweets & Snacks,Halifax Peninsula,,,,,,,,,,Sweets & Snacks restaurant photo,,owner_submission,owner_attestation,,Sweets & Snacks,needs_review
+osm-node-30945181-swiss-chalet,Swiss Chalet,Armdale / Fairview,,,,,,,,,,Swiss Chalet restaurant photo,,owner_submission,owner_attestation,,Swiss Chalet,needs_review
+osm-node-4696483837-swiss-chalet,Swiss Chalet,Dartmouth,,,,,,,,,,Swiss Chalet restaurant photo,,owner_submission,owner_attestation,,Swiss Chalet,needs_review
+osm-way-366157259-swiss-chalet,Swiss Chalet,West End,,,,,,,,,,Swiss Chalet restaurant photo,,owner_submission,owner_attestation,,Swiss Chalet,needs_review
+osm-node-10595589276-syriana-market-restaurant,Syriana Market Restaurant,West End,,,,,,,,,,Syriana Market Restaurant restaurant photo,,owner_submission,owner_attestation,,Syriana Market Restaurant,needs_review
+osm-node-1139389654-taboo,Taboo,Downtown,,,,,,,,,,Taboo restaurant photo,,owner_submission,owner_attestation,,Taboo,needs_review
+osm-node-37132701-taipan-express,Taipan Express,Downtown,,,,,,,,,,Taipan Express restaurant photo,,owner_submission,owner_attestation,,Taipan Express,needs_review
+osm-node-8219897705-tako-loco,Tako Loco,North End,,,,,,,,,,Tako Loco restaurant photo,,owner_submission,owner_attestation,,Tako Loco,needs_review
+osm-node-11552510567-tako-sushi-and-ramen,Tako Sushi & Ramen,Armdale / Fairview,,,,,,,https://www.takosushiramen.ca,,,Tako Sushi & Ramen restaurant photo,,owner_submission,owner_attestation,,Tako Sushi & Ramen,needs_review
+osm-node-6031039163-talay-thai,Talay Thai,South End,,,,,,,,,,Talay Thai restaurant photo,,owner_submission,owner_attestation,,Talay Thai,needs_review
+osm-node-5981503337-tanners-allstar-deli-and-grill,Tanners AllStar Deli & Grill,South End,,,,,,,,,,Tanners AllStar Deli & Grill restaurant photo,,owner_submission,owner_attestation,,Tanners AllStar Deli & Grill,needs_review
+osm-node-9416778099-tarek-s-cafe,Tarek's Cafe,North End,,,,,,,http://www.tarekscafe.ca/,,,Tarek's Cafe restaurant photo,,owner_submission,owner_attestation,,Tarek's Cafe,needs_review
+osm-node-5149948722-tart-and-soul,Tart & Soul,South End,,,,,,,,,,Tart & Soul restaurant photo,,owner_submission,owner_attestation,,Tart & Soul,needs_review
+osm-node-9892533621-terra-cafe,Terra Cafe,Waterfront,,,,,,,https://terracafe.ca,,,Terra Cafe restaurant photo,,owner_submission,owner_attestation,,Terra Cafe,needs_review
+osm-node-8066235501-thai-express,Thaï Express,Dartmouth,,,,,,,,,,Thaï Express restaurant photo,,owner_submission,owner_attestation,,Thaï Express,needs_review
+osm-node-11162905766-the-5k-cafe,THE 5K CAFE,Armdale / Fairview,,,,,,,https://www.the5kcafe.ca/,,,THE 5K CAFE restaurant photo,,owner_submission,owner_attestation,,THE 5K CAFE,needs_review
+osm-node-3802480457-the-auction-house,The Auction House,Downtown,,,,,,,,,,The Auction House restaurant photo,,owner_submission,owner_attestation,,The Auction House,needs_review
+osm-node-10916234445-the-barrington,The Barrington,Downtown,,,,,,,,,,The Barrington restaurant photo,,owner_submission,owner_attestation,,The Barrington,needs_review
+osm-node-5151935621-the-bedford-basin-market,the Bedford Basin Market,Armdale / Fairview,,,,,,,https://www.bedfordbasinmarket.com,,,the Bedford Basin Market restaurant photo,,owner_submission,owner_attestation,,the Bedford Basin Market,needs_review
+osm-node-11611960223-the-big-wedge,The Big Wedge,North End,,,,,,,,,,The Big Wedge restaurant photo,,owner_submission,owner_attestation,,The Big Wedge,needs_review
+osm-node-8164476189-the-bitter-end,The Bitter End,Downtown,,,,,,,https://www.bitterend.ca/home,,,The Bitter End restaurant photo,,owner_submission,owner_attestation,,The Bitter End,needs_review
+osm-node-11577590318-the-bonfire,The Bonfire,Downtown,,,,,,,,,,The Bonfire restaurant photo,,owner_submission,owner_attestation,,The Bonfire,needs_review
+osm-node-9099103643-the-bread-lounge,The Bread Lounge,Downtown,,,,,,,https://breadlounge.ca,,,The Bread Lounge restaurant photo,,owner_submission,owner_attestation,,The Bread Lounge,needs_review
+osm-node-11609558779-the-bread-lounge,The Bread Lounge,West End,,,,,,,,,,The Bread Lounge restaurant photo,,owner_submission,owner_attestation,,The Bread Lounge,needs_review
+osm-node-1921015225-the-brooklyn-warehouse,The Brooklyn Warehouse,North End,,,,,,,https://brooklynwarehouse.ca/,,,The Brooklyn Warehouse restaurant photo,,owner_submission,owner_attestation,,The Brooklyn Warehouse,needs_review
+osm-node-3789833657-the-brown-hound,The Brown Hound,North End,,,,,,,,,,The Brown Hound restaurant photo,,owner_submission,owner_attestation,,The Brown Hound,needs_review
+osm-node-8622604791-the-brown-hound,The Brown Hound,Downtown,,,,,,,,,,The Brown Hound restaurant photo,,owner_submission,owner_attestation,,The Brown Hound,needs_review
+osm-node-2624724240-the-brown-hound-public-house,The Brown Hound Public House,North End,,,,,,,,,,The Brown Hound Public House restaurant photo,,owner_submission,owner_attestation,,The Brown Hound Public House,needs_review
+osm-node-5157477122-the-butcher-s-block-pub-and-eatery,The Butcher's Block Pub and Eatery,Bedford,,,,,,,http://www.butchersblockpub.com/,,,The Butcher's Block Pub and Eatery restaurant photo,,owner_submission,owner_attestation,,The Butcher's Block Pub and Eatery,needs_review
+osm-node-13037895605-the-cheeky-neighbour-diner,The Cheeky Neighbour Diner,Downtown,,,,,,,,,,The Cheeky Neighbour Diner restaurant photo,,owner_submission,owner_attestation,,The Cheeky Neighbour Diner,needs_review
+osm-node-11695080432-the-daily-grind,The Daily Grind,Downtown,,,,,,,,,,The Daily Grind restaurant photo,,owner_submission,owner_attestation,,The Daily Grind,needs_review
+osm-node-1139389574-the-dome,The Dome,Downtown,,,,,,,,,,The Dome restaurant photo,,owner_submission,owner_attestation,,The Dome,needs_review
+osm-node-12291896201-the-east-coast-hub-saloon,The East Coast Hub Saloon,Dartmouth,,,,,,,,,,The East Coast Hub Saloon restaurant photo,,owner_submission,owner_attestation,,The East Coast Hub Saloon,needs_review
+osm-node-13059993301-the-empanada-shop,The Empanada Shop,Downtown,,,,,,,,,,The Empanada Shop restaurant photo,,owner_submission,owner_attestation,,The Empanada Shop,needs_review
+osm-node-5149945923-the-foggy-goggle,The Foggy Goggle,North End,,,,,,,,,,The Foggy Goggle restaurant photo,,owner_submission,owner_attestation,,The Foggy Goggle,needs_review
+osm-node-12153900219-the-forth-pull,The Forth Pull,Downtown,,,,,,,,,,The Forth Pull restaurant photo,,owner_submission,owner_attestation,,The Forth Pull,needs_review
+osm-node-11752688345-the-grounds-cafe-by-drift-coffee,The Grounds Cafe by Drift Coffee,Downtown,,,,,,,https://www.instagram.com/driftcoffeehfx/,,,The Grounds Cafe by Drift Coffee restaurant photo,,owner_submission,owner_attestation,,The Grounds Cafe by Drift Coffee,needs_review
+osm-node-5343369587-the-halifax-club,The Halifax Club,Waterfront,,,,,,,,,,The Halifax Club restaurant photo,,owner_submission,owner_attestation,,The Halifax Club,needs_review
+osm-node-10099149520-the-happy-plate,The happy plate,West End,,,,,,,,,,The happy plate restaurant photo,,owner_submission,owner_attestation,,The happy plate,needs_review
+osm-node-7947984988-the-hungry-hut,The Hungry Hut,Halifax Peninsula,,,,,,,,,,The Hungry Hut restaurant photo,,owner_submission,owner_attestation,,The Hungry Hut,needs_review
+osm-node-5150054326-the-imperial-bombay,The Imperial Bombay,Downtown,,,,,,,,,,The Imperial Bombay restaurant photo,,owner_submission,owner_attestation,,The Imperial Bombay,needs_review
+osm-node-3789835257-the-juice-press,The Juice Press,Waterfront,,,,,,,https://bishopslanding.com/dining/juice-press-inc/,,,The Juice Press restaurant photo,,owner_submission,owner_attestation,,The Juice Press,needs_review
+osm-node-5001886823-the-keg,The Keg,Downtown,,,,,,,https://thekeg.com/en/locations/halifax,,,The Keg restaurant photo,,owner_submission,owner_attestation,,The Keg,needs_review
+osm-node-13188991858-the-loaded-ladle,The Loaded Ladle,South End,,,,,,,,,,The Loaded Ladle restaurant photo,,owner_submission,owner_attestation,,The Loaded Ladle,needs_review
+osm-node-6944035163-the-local,The Local,Downtown,,,,,,,,,,The Local restaurant photo,,owner_submission,owner_attestation,,The Local,needs_review
+osm-node-37132665-the-loose-cannon,The Loose Cannon,Downtown,,,,,,,https://theloosecannon.ca/,,,The Loose Cannon restaurant photo,,owner_submission,owner_attestation,,The Loose Cannon,needs_review
+osm-node-3800197657-the-lower-deck,The Lower Deck,Waterfront,,,,,,,https://www.lowerdeck.ca/,,,The Lower Deck restaurant photo,,owner_submission,owner_attestation,,The Lower Deck,needs_review
+osm-node-3801119557-the-middle-spoon-desserterie-and-bar,The Middle Spoon Desserterie & Bar,Downtown,,,,,,,https://www.themiddlespoon.ca/,,,The Middle Spoon Desserterie & Bar restaurant photo,,owner_submission,owner_attestation,,The Middle Spoon Desserterie & Bar,needs_review
+osm-node-3800098558-the-new-landing,The New Landing,Dartmouth,,,,,,,,,,The New Landing restaurant photo,,owner_submission,owner_attestation,,The New Landing,needs_review
+osm-node-3797106957-the-nook,The Nook,North End,,,,,,,http://www.thenookhfx.ca/#about,,,The Nook restaurant photo,,owner_submission,owner_attestation,,The Nook,needs_review
+osm-way-319792812-the-orient,The Orient,Armdale / Fairview,,,,,,,,,,The Orient restaurant photo,,owner_submission,owner_attestation,,The Orient,needs_review
+osm-node-11799155320-the-osney,The Osney,Downtown,,,,,,,,,,The Osney restaurant photo,,owner_submission,owner_attestation,,The Osney,needs_review
+osm-node-3802945757-the-ostrich-club,The Ostrich Club,North End,,,,,,,https://theostrichclub.ca/,,,The Ostrich Club restaurant photo,,owner_submission,owner_attestation,,The Ostrich Club,needs_review
+osm-node-3796304657-the-oxford-taproom,The Oxford Taproom,Halifax Peninsula,,,,,,,,,,The Oxford Taproom restaurant photo,,owner_submission,owner_attestation,,The Oxford Taproom,needs_review
+osm-node-5863968632-the-pint,The Pint,Downtown,,,,,,,,,,The Pint restaurant photo,,owner_submission,owner_attestation,,The Pint,needs_review
+osm-node-5502383597-the-seahorse-tavern,The Seahorse Tavern,North End,,,,,,,,,,The Seahorse Tavern restaurant photo,,owner_submission,owner_attestation,,The Seahorse Tavern,needs_review
+osm-node-9239328852-the-submarine,The Submarine,South End,,,,,,,,,,The Submarine restaurant photo,,owner_submission,owner_attestation,,The Submarine,needs_review
+osm-node-12984620294-the-wine-spa,The Wine Spa,Downtown,,,,,,,,,,The Wine Spa restaurant photo,,owner_submission,owner_attestation,,The Wine Spa,needs_review
+osm-node-11695100949-tim-horton-s-express,Tim Horton's Express,Halifax Peninsula,,,,,,,,,,Tim Horton's Express restaurant photo,,owner_submission,owner_attestation,,Tim Horton's Express,needs_review
+osm-node-31794073-tim-hortons,Tim Hortons,North End,,,,,,,https://www.timhortons.ca/store-locator/store/restaurant_66914,,,Tim Hortons restaurant photo,,owner_submission,owner_attestation,,Tim Hortons,needs_review
+osm-node-32335618-tim-hortons,Tim Hortons,Armdale / Fairview,,,,,,,,,,Tim Hortons restaurant photo,,owner_submission,owner_attestation,,Tim Hortons,needs_review
+osm-node-33117796-tim-hortons,Tim Hortons,Halifax Peninsula,,,,,,,,,,Tim Hortons restaurant photo,,owner_submission,owner_attestation,,Tim Hortons,needs_review
+osm-node-761848503-tim-hortons,Tim Hortons,Waterfront,,,,,,,https://www.timhortons.com/,,,Tim Hortons restaurant photo,,owner_submission,owner_attestation,,Tim Hortons,needs_review
+osm-node-2712637926-tim-hortons,Tim Hortons,Armdale / Fairview,,,,,,,,,,Tim Hortons restaurant photo,,owner_submission,owner_attestation,,Tim Hortons,needs_review
+osm-node-2712689446-tim-hortons,Tim Hortons,Downtown,,,,,,,,,,Tim Hortons restaurant photo,,owner_submission,owner_attestation,,Tim Hortons,needs_review
+osm-node-2737126855-tim-hortons,Tim Hortons,Armdale / Fairview,,,,,,,,,,Tim Hortons restaurant photo,,owner_submission,owner_attestation,,Tim Hortons,needs_review
+osm-node-3799667157-tim-hortons,Tim Hortons,Downtown,,,,,,,,,,Tim Hortons restaurant photo,,owner_submission,owner_attestation,,Tim Hortons,needs_review
+osm-node-3957554717-tim-hortons,Tim Hortons,Dartmouth,,,,,,,,,,Tim Hortons restaurant photo,,owner_submission,owner_attestation,,Tim Hortons,needs_review
+osm-node-4421918890-tim-hortons,Tim Hortons,South End,,,,,,,,,,Tim Hortons restaurant photo,,owner_submission,owner_attestation,,Tim Hortons,needs_review
+osm-node-4911809004-tim-hortons,Tim Hortons,Dartmouth,,,,,,,,,,Tim Hortons restaurant photo,,owner_submission,owner_attestation,,Tim Hortons,needs_review
+osm-node-4924076575-tim-hortons,Tim Hortons,Dartmouth,,,,,,,,,,Tim Hortons restaurant photo,,owner_submission,owner_attestation,,Tim Hortons,needs_review
+osm-node-4990340201-tim-hortons,Tim Hortons,Dartmouth,,,,,,,,,,Tim Hortons restaurant photo,,owner_submission,owner_attestation,,Tim Hortons,needs_review
+osm-node-5314180122-tim-hortons,Tim Hortons,Halifax Peninsula,,,,,,,,,,Tim Hortons restaurant photo,,owner_submission,owner_attestation,,Tim Hortons,needs_review
+osm-node-7515666126-tim-hortons,Tim Hortons,South End,,,,,,,,,,Tim Hortons restaurant photo,,owner_submission,owner_attestation,,Tim Hortons,needs_review
+osm-node-8066235508-tim-hortons,Tim Hortons,Dartmouth,,,,,,,,,,Tim Hortons restaurant photo,,owner_submission,owner_attestation,,Tim Hortons,needs_review
+osm-node-9208644813-tim-hortons,Tim Hortons,West End,,,,,,,,,,Tim Hortons restaurant photo,,owner_submission,owner_attestation,,Tim Hortons,needs_review
+osm-node-9351604576-tim-hortons,Tim Hortons,Armdale / Fairview,,,,,,,,,,Tim Hortons restaurant photo,,owner_submission,owner_attestation,,Tim Hortons,needs_review
+osm-node-11526163878-tim-hortons,Tim Hortons,South End,,,,,,,https://dal.campusdish.com/LocationsAndMenus/LifeSciencesCentre/TimHortons,,,Tim Hortons restaurant photo,,owner_submission,owner_attestation,,Tim Hortons,needs_review
+osm-way-88610789-tim-hortons,Tim Hortons,South End,,,,,,,https://www.timhortons.com/,,,Tim Hortons restaurant photo,,owner_submission,owner_attestation,,Tim Hortons,needs_review
+osm-way-96156514-tim-hortons,Tim Hortons,Dartmouth,,,,,,,,,,Tim Hortons restaurant photo,,owner_submission,owner_attestation,,Tim Hortons,needs_review
+osm-way-170824377-tim-hortons,Tim Hortons,South End,,,,,,,https://www.timhortons.com/,,,Tim Hortons restaurant photo,,owner_submission,owner_attestation,,Tim Hortons,needs_review
+osm-way-171149709-tim-hortons,Tim Hortons,Armdale / Fairview,,,,,,,,,,Tim Hortons restaurant photo,,owner_submission,owner_attestation,,Tim Hortons,needs_review
+osm-way-173999393-tim-hortons,Tim Hortons,Armdale / Fairview,,,,,,,,,,Tim Hortons restaurant photo,,owner_submission,owner_attestation,,Tim Hortons,needs_review
+osm-way-181617786-tim-hortons,Tim Hortons,West End,,,,,,,https://www.timhortons.ca/store-locator/store/restaurant_67296,,,Tim Hortons restaurant photo,,owner_submission,owner_attestation,,Tim Hortons,needs_review
+osm-way-181656702-tim-hortons,Tim Hortons,Dartmouth,,,,,,,,,,Tim Hortons restaurant photo,,owner_submission,owner_attestation,,Tim Hortons,needs_review
+osm-way-181684255-tim-hortons,Tim Hortons,North End,,,,,,,https://www.timhortons.ca/store-locator/store/restaurant_66291,,,Tim Hortons restaurant photo,,owner_submission,owner_attestation,,Tim Hortons,needs_review
+osm-way-224130263-tim-hortons,Tim Hortons,Dartmouth,,,,,,,https://timhortons.ca/,,,Tim Hortons restaurant photo,,owner_submission,owner_attestation,,Tim Hortons,needs_review
+osm-way-362127526-tim-hortons,Tim Hortons,Halifax Peninsula,,,,,,,,,,Tim Hortons restaurant photo,,owner_submission,owner_attestation,,Tim Hortons,needs_review
+osm-way-363363462-tim-hortons,Tim Hortons,Dartmouth,,,,,,,,,,Tim Hortons restaurant photo,,owner_submission,owner_attestation,,Tim Hortons,needs_review
+osm-way-363957385-tim-hortons,Tim Hortons,Dartmouth,,,,,,,,,,Tim Hortons restaurant photo,,owner_submission,owner_attestation,,Tim Hortons,needs_review
+osm-way-452736023-tim-hortons,Tim Hortons,West End,,,,,,,https://www.timhortons.ca/store-locator/store/restaurant_66191,,,Tim Hortons restaurant photo,,owner_submission,owner_attestation,,Tim Hortons,needs_review
+osm-way-458947238-tim-hortons,Tim Hortons,Dartmouth,,,,,,,,,,Tim Hortons restaurant photo,,owner_submission,owner_attestation,,Tim Hortons,needs_review
+osm-way-463882418-tim-hortons,Tim Hortons,Dartmouth,,,,,,,,,,Tim Hortons restaurant photo,,owner_submission,owner_attestation,,Tim Hortons,needs_review
+osm-way-464755243-tim-hortons,Tim Hortons,Dartmouth,,,,,,,,,,Tim Hortons restaurant photo,,owner_submission,owner_attestation,,Tim Hortons,needs_review
+osm-node-8267966203-timhortons,TimHortons,Armdale / Fairview,,,,,,,,,,TimHortons restaurant photo,,owner_submission,owner_attestation,,TimHortons,needs_review
+osm-node-7674206838-tokyo-roll,Tokyo Roll,Downtown,,,,,,,https://www.tokyorollhalifax.com/,,,Tokyo Roll restaurant photo,,owner_submission,owner_attestation,,Tokyo Roll,needs_review
+osm-node-5157417348-tomavinos-pizzeria,Tomavinos Pizzeria,South End,,,,,,,https://www.tomavinos.ca/,,,Tomavinos Pizzeria restaurant photo,,owner_submission,owner_attestation,,Tomavinos Pizzeria,needs_review
+osm-node-1920996968-tony-s-pizza,Tony's Pizza,North End,,,,,,,https://www.tonysdonair.ca/,,,Tony's Pizza restaurant photo,,owner_submission,owner_attestation,,Tony's Pizza,needs_review
+osm-node-13098690200-tony-s-world-famous-pizza-and-donair,Tony's World Famous Pizza & Donair,Downtown,,,,,,,,,,Tony's World Famous Pizza & Donair restaurant photo,,owner_submission,owner_attestation,,Tony's World Famous Pizza & Donair,needs_review
+osm-node-11526163884-topio-s-pizzeria,Topio's Pizzeria,South End,,,,,,,,,,Topio's Pizzeria restaurant photo,,owner_submission,owner_attestation,,Topio's Pizzeria,needs_review
+osm-node-11577595032-transit-cafe,Transit Café,West End,,,,,,,,,,Transit Café restaurant photo,,owner_submission,owner_attestation,,Transit Café,needs_review
+osm-node-3800896258-treats,Treats,Downtown,,,,,,,,,,Treats restaurant photo,,owner_submission,owner_attestation,,Treats,needs_review
+osm-node-11577591863-truly-tasty,Truly Tasty,Halifax Peninsula,,,,,,,,,,Truly Tasty restaurant photo,,owner_submission,owner_attestation,,Truly Tasty,needs_review
+osm-node-771698131-tug-s-pub,Tug's Pub,Downtown,,,,,,,,,,Tug's Pub restaurant photo,,owner_submission,owner_attestation,,Tug's Pub,needs_review
+osm-node-3801270657-turbo-chicken-burger-and-milkshakes,Turbo Chicken Burger and Milkshakes,Halifax Peninsula,,,,,,,,,,Turbo Chicken Burger and Milkshakes restaurant photo,,owner_submission,owner_attestation,,Turbo Chicken Burger and Milkshakes,needs_review
+osm-node-3791832157-turkish-delight,Turkish Delight,Downtown,,,,,,,https://www.turkishdelighthalifax.ca/contact-us,,,Turkish Delight restaurant photo,,owner_submission,owner_attestation,,Turkish Delight,needs_review
+osm-node-11695082784-tusket-falls-beer-project,Tusket Falls Beer Project,North End,,,,,,,,,,Tusket Falls Beer Project restaurant photo,,owner_submission,owner_attestation,,Tusket Falls Beer Project,needs_review
+osm-node-11466743651-uncommon-grounds,Uncommon Grounds,South End,,,,,,,https://theuncommongroup.com/,,,Uncommon Grounds restaurant photo,,owner_submission,owner_attestation,,Uncommon Grounds,needs_review
+osm-node-13286458034-vandal-doughnuts,Vandal Doughnuts,Downtown,,,,,,,https://vandaldoughnuts.ca/,,,Vandal Doughnuts restaurant photo,,owner_submission,owner_attestation,,Vandal Doughnuts,needs_review
+osm-node-12143325436-vero-pizza,Vero Pizza,Dartmouth,,,,,,,,,,Vero Pizza restaurant photo,,owner_submission,owner_attestation,,Vero Pizza,needs_review
+osm-node-8066235503-villa-madina,Villa Madina,Dartmouth,,,,,,,,,,Villa Madina restaurant photo,,owner_submission,owner_attestation,,Villa Madina,needs_review
+osm-node-2714682321-vinnie-s-pub,Vinnie's Pub,Armdale / Fairview,,,,,,,,,,Vinnie's Pub restaurant photo,,owner_submission,owner_attestation,,Vinnie's Pub,needs_review
+osm-node-8762146265-waegwoltic-dining-room,Waegwoltic Dining Room,South End,,,,,,,,,,Waegwoltic Dining Room restaurant photo,,owner_submission,owner_attestation,,Waegwoltic Dining Room,needs_review
+osm-node-5150731134-way2roll,Way2Roll,Downtown,,,,,,,https://way2roll.ca/,,,Way2Roll restaurant photo,,owner_submission,owner_attestation,,Way2Roll,needs_review
+osm-node-11804177515-weird-harbour,Weird Harbour,Downtown,,,,,,,,,,Weird Harbour restaurant photo,,owner_submission,owner_attestation,,Weird Harbour,needs_review
+osm-node-9074877149-welcome-espresso,Welcome Espresso,North End,,,,,,,,,,Welcome Espresso restaurant photo,,owner_submission,owner_attestation,,Welcome Espresso,needs_review
+osm-node-4924076574-wendy-s,Wendy's,Dartmouth,,,,,,,,,,Wendy's restaurant photo,,owner_submission,owner_attestation,,Wendy's,needs_review
+osm-way-98830026-wendy-s,Wendy's,Dartmouth,,,,,,,,,,Wendy's restaurant photo,,owner_submission,owner_attestation,,Wendy's,needs_review
+osm-way-173999394-wendy-s,Wendy's,Armdale / Fairview,,,,,,,,,,Wendy's restaurant photo,,owner_submission,owner_attestation,,Wendy's,needs_review
+osm-way-181624111-wendy-s,Wendy's,West End,,,,,,,https://locations.wendys.com/canada/ns/halifax/3580-kempt-road,,,Wendy's restaurant photo,,owner_submission,owner_attestation,,Wendy's,needs_review
+osm-way-358577248-wendy-s,Wendy's,Dartmouth,,,,,,,,,,Wendy's restaurant photo,,owner_submission,owner_attestation,,Wendy's,needs_review
+osm-node-12640857101-west-enders,West Enders,Halifax Peninsula,,,,,,,,,,West Enders restaurant photo,,owner_submission,owner_attestation,,West Enders,needs_review
+osm-node-11726312514-westcliff-restaurant-and-convenience,Westcliff Restaurant & Convenience,West End,,,,,,,,,,Westcliff Restaurant & Convenience restaurant photo,,owner_submission,owner_attestation,,Westcliff Restaurant & Convenience,needs_review
+osm-node-5043397987-whiskey-s-lounge,Whiskey's Lounge,Dartmouth,,,,,,,,,,Whiskey's Lounge restaurant photo,,owner_submission,owner_attestation,,Whiskey's Lounge,needs_review
+osm-node-3802169599-wild-leek-food-and-juice-bar,Wild Leek Food & Juice Bar,Downtown,,,,,,,https://wildleek.ca/,,,Wild Leek Food & Juice Bar restaurant photo,,owner_submission,owner_attestation,,Wild Leek Food & Juice Bar,needs_review
+osm-node-11612160985-willman-s-fish-and-chips,Willman's Fish & Chips,West End,,,,,,,,,,Willman's Fish & Chips restaurant photo,,owner_submission,owner_attestation,,Willman's Fish & Chips,needs_review
+osm-node-13274838360-windsor-street-diner,Windsor Street Diner,Downtown,,,,,,,,,,Windsor Street Diner restaurant photo,,owner_submission,owner_attestation,,Windsor Street Diner,needs_review
+osm-node-10665823259-wing-n-it,Wing 'n It,Armdale / Fairview,,,,,,,https://wingnit.ca/,,,Wing 'n It restaurant photo,,owner_submission,owner_attestation,,Wing 'n It,needs_review
+osm-node-475876928-wired-monk,Wired Monk,Downtown,,,,,,,,,,Wired Monk restaurant photo,,owner_submission,owner_attestation,,Wired Monk,needs_review
+osm-node-620090334-wok-box,Wok Box,Dartmouth,,,,,,,,,,Wok Box restaurant photo,,owner_submission,owner_attestation,,Wok Box,needs_review
+osm-node-4768541223-wong-s-palace-chinese-restaurant,Wong's Palace Chinese Restaurant,Dartmouth,,,,,,,,,,Wong's Palace Chinese Restaurant restaurant photo,,owner_submission,owner_attestation,,Wong's Palace Chinese Restaurant,needs_review
+osm-way-363362542-woodside-tavern,Woodside Tavern,Dartmouth,,,,,,,,,,Woodside Tavern restaurant photo,,owner_submission,owner_attestation,,Woodside Tavern,needs_review
+osm-node-37132707-world-tea-house,World Tea House,Downtown,,,,,,,,,,World Tea House restaurant photo,,owner_submission,owner_attestation,,World Tea House,needs_review
+osm-node-10552516558-xena-s-bread-and-butter,Xena's Bread and Butter,North End,,,,,,,,,,Xena's Bread and Butter restaurant photo,,owner_submission,owner_attestation,,Xena's Bread and Butter,needs_review
+osm-node-11726312513-yeah-yeah-s-pizza,Yeah Yeah’s Pizza,West End,,,,,,,,,,Yeah Yeah’s Pizza restaurant photo,,owner_submission,owner_attestation,,Yeah Yeah’s Pizza,needs_review
+osm-way-458947662-you-like-it-chinese,You Like It Chinese,Dartmouth,,,,,,,,,,You Like It Chinese restaurant photo,,owner_submission,owner_attestation,,You Like It Chinese,needs_review
+osm-node-12151736468-yum-yum,Yum Yum,North End,,,,,,,,,,Yum Yum restaurant photo,,owner_submission,owner_attestation,,Yum Yum,needs_review
+osm-node-11526163879-zoca,Zoca,South End,,,,,,,https://dal.campusdish.com/LocationsAndMenus/LifeSciencesCentre/Zoca,,,Zoca restaurant photo,,owner_submission,owner_attestation,,Zoca,needs_review

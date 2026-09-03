@@ -260,6 +260,10 @@ function renderThumbnailAdmin() {
         <label><span>Review state</span><select id="adminThumbnailReview"><option value="all">All states</option>${reviewStates.map((state) => `<option value="${escapeHtml(state)}" ${thumbnailAdminState.reviewState === state ? "selected" : ""}>${escapeHtml(state.replace(/_/g, " "))}</option>`).join("")}</select></label>
         <label><span>Local decision</span><select id="adminThumbnailDecision"><option value="all" ${thumbnailAdminState.decisionState === "all" ? "selected" : ""}>All decisions</option><option value="undecided" ${thumbnailAdminState.decisionState === "undecided" ? "selected" : ""}>Undecided</option><option value="approved" ${thumbnailAdminState.decisionState === "approved" ? "selected" : ""}>Approved locally</option><option value="rejected" ${thumbnailAdminState.decisionState === "rejected" ? "selected" : ""}>Rejected locally</option><option value="source_check" ${thumbnailAdminState.decisionState === "source_check" ? "selected" : ""}>Needs source check</option></select></label>
         <button type="button" class="admin-secondary-action" data-thumb-export-approved>Export approved media <span>${decisionCounts.readyForManifest}</span></button>
+        <div class="admin-export-links" aria-label="Thumbnail queue exports">
+          <a class="admin-secondary-action" href="data/build/thumbnail-source-check-queue.csv" download>Source-check CSV <span>${sourceCheckCandidates.length}</span></a>
+          <a class="admin-secondary-action" href="data/build/owner-media-outreach.csv" download>Owner outreach CSV <span>${missingAny.length}</span></a>
+        </div>
         <p>Default view shows undecided promotion candidates. Approvals from official restaurant pages or feeds export as permission-confirmed remote references; other visually good images stay flagged for rights review.</p>
       </aside>
       <div class="admin-review-results">

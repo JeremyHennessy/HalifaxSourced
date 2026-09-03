@@ -1,6 +1,6 @@
 # Halifax Sourced thumbnail coverage report
 
-Generated: 2026-09-03T17:38:09.309Z
+Generated: 2026-09-03T18:44:32.257Z
 
 This report tracks source-backed image leads for restaurant thumbnails. It separates production-approved media from candidates that still need review, attribution, or permission before they can become default restaurant card imagery.
 
@@ -162,4 +162,4 @@ Restaurants below have no thumbnail candidate yet and should be prioritized for 
 | Booster Juice | Armdale / Fairview | 0 | None |  |
 | Booster Juice | North End | 0 | None |  |
 
-Machine-readable queues are in `data/build/thumbnail-coverage-report.json`.
+Machine-readable queues are in `data/build/thumbnail-coverage-report.json`. CSV handoff files are generated at `data/build/thumbnail-source-check-queue.csv` and `data/build/owner-media-outreach.csv`.

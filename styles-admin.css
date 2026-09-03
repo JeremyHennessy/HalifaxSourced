@@ -69,6 +69,7 @@
 }
 
 .admin-review-controls button,
+.admin-review-controls a,
 .admin-review-controls select {
   width: 100%;
   border: 1px solid var(--border);
@@ -76,7 +77,8 @@
   background: var(--surface-soft);
 }
 
-.admin-review-controls button {
+.admin-review-controls button,
+.admin-review-controls a {
   min-height: 42px;
   display: flex;
   align-items: center;
@@ -86,6 +88,7 @@
   padding: 0 12px;
   color: var(--navy-900);
   font-weight: 800;
+  text-decoration: none;
 }
 
 .admin-review-controls button.is-active {
@@ -381,6 +384,16 @@
   background: var(--seafoam-100);
   border-color: rgba(69, 170, 165, .45);
   color: var(--teal-700);
+}
+
+.admin-export-links {
+  display: grid;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.admin-export-links .admin-secondary-action {
+  margin-top: 0;
 }
 
 .admin-promotion-list {
