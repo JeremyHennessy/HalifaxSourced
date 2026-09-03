@@ -38,6 +38,10 @@ function isDirectPromotionCandidate(candidate) {
   if (!candidate) return false;
   const imageUrl = thumbnailAssetUrl(candidate.thumbnailUrl);
   if (!imageUrl || !imageUrl.startsWith("https://")) return false;
+  if (candidate.sourceKind === "owner_submitted_image") {
+    const permission = String(candidate.permission || "").toLowerCase();
+    return candidate.permissionConfirmed === true && permission === "permitted" && Boolean(candidate.rightsBasis) && Boolean(candidate.attribution);
+  }
   return DIRECT_PROMOTION_SOURCE_KINDS.has(String(candidate.sourceKind || ""));
 }
 
@@ -97,6 +101,9 @@ function thumbnailReviewPriority(candidate) {
 
 function thumbnailIsPromotionCandidate(candidate) {
   return !candidate?.eligibleForProduction && thumbnailReviewPriority(candidate) >= 45 && !(candidate?.qualityFlags || []).length;
+}
+function thumbnailIsSourceCheckCandidate(candidate) {
+  return !candidate?.eligibleForProduction && (candidate?.reviewState === "source_check" || candidate?.promotionReviewState === "source_check" || (candidate?.qualityFlags || []).some((flag) => String(flag).includes("source")));
 }
 
 function thumbnailCandidatesPayload() {
@@ -224,6 +231,7 @@ function renderThumbnailAdmin() {
     return true;
   });
   const promotionCandidateCount = allPromotionQueue.reduce((sum, item) => sum + item.candidates.length, 0);
+  const sourceCheckCandidates = candidates.filter(thumbnailIsSourceCheckCandidate).filter((candidate) => thumbnailCandidateMatchesFilters(candidate, decisions));
 
   appView.innerHTML = `
     <section class="page-shell page-intro compact-intro admin-intro">
@@ -245,6 +253,7 @@ function renderThumbnailAdmin() {
         <h2>Queue</h2>
         <button type="button" data-admin-queue="promotion" class="${thumbnailAdminState.queue === "promotion" ? "is-active" : ""}">Promotion queue <span>${allPromotionQueue.length}</span></button>
         <button type="button" data-admin-queue="review" class="${thumbnailAdminState.queue === "review" ? "is-active" : ""}">Needs review <span>${candidates.filter((candidate) => !candidate.eligibleForProduction).length}</span></button>
+        <button type="button" data-admin-queue="source_check" class="${thumbnailAdminState.queue === "source_check" ? "is-active" : ""}">Source check <span>${candidates.filter(thumbnailIsSourceCheckCandidate).length}</span></button>
         <button type="button" data-admin-queue="approved" class="${thumbnailAdminState.queue === "approved" ? "is-active" : ""}">Approved <span>${candidates.filter((candidate) => candidate.eligibleForProduction).length}</span></button>
         <button type="button" data-admin-queue="discovery" class="${thumbnailAdminState.queue === "discovery" ? "is-active" : ""}">No candidate <span>${missingAny.length}</span></button>
         <label><span>Source kind</span><select id="adminThumbnailSource"><option value="all">All sources</option>${sourceKinds.map((kind) => `<option value="${escapeHtml(kind)}" ${thumbnailAdminState.sourceKind === kind ? "selected" : ""}>${escapeHtml(kind.replace(/_/g, " "))}</option>`).join("")}</select></label>
@@ -255,6 +264,7 @@ function renderThumbnailAdmin() {
       </aside>
       <div class="admin-review-results">
         ${thumbnailAdminState.queue === "promotion" ? renderPromotionQueue(promotionQueue, decisions, allPromotionQueue) : ""}
+        ${thumbnailAdminState.queue === "source_check" ? renderSourceCheckQueue(sourceCheckCandidates, decisions) : ""}
         ${thumbnailAdminState.queue === "discovery" ? renderDiscoveryQueue(missingAny) : ""}
         ${["review", "approved"].includes(thumbnailAdminState.queue) ? renderCandidateGrid(filteredCandidates, decisions) : ""}
       </div>
@@ -271,6 +281,11 @@ function renderPromotionQueue(queue, decisions, allQueue = queue) {
   const visibleCandidateCount = queue.reduce((sum, item) => sum + item.candidates.length, 0);
   const totalCandidateCount = allQueue.reduce((sum, item) => sum + item.candidates.length, 0);
   return `<div class="admin-section-heading"><div><h2>Promotion queue</h2><p>${queue.length.toLocaleString()} restaurant groups and ${visibleCandidateCount.toLocaleString()} visible candidate images. Full queue has ${allQueue.length.toLocaleString()} groups and ${totalCandidateCount.toLocaleString()} candidates.</p></div></div><div class="admin-promotion-list">${queue.map((item) => renderPromotionReviewGroup(item, decisions)).join("")}</div>`;
+}
+
+function renderSourceCheckQueue(candidates, decisions) {
+  if (!candidates.length) return `<div class="info-message">No source-check thumbnail candidates match these filters.</div>`;
+  return `<div class="admin-section-heading"><div><h2>Source-check queue</h2><p>${candidates.length.toLocaleString()} candidates need source-host, provenance, or first-party image validation before promotion.</p></div></div>${renderCandidateGrid(candidates, decisions)}`;
 }
 
 function renderPromotionReviewGroup(item, decisions) {

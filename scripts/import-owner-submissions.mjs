@@ -40,11 +40,11 @@ function parseCsv(text) {
 }
 
 function splitList(value) {
-  return String(value ?? "").split(/[;|]/).map((item) => item.trim()).filter(Boolean);
+  return Array.isArray(value) ? value.map(String).map((item) => item.trim()).filter(Boolean) : String(value ?? "").split(/[;|]/).map((item) => item.trim()).filter(Boolean);
 }
 
 function parseBoolean(value) {
-  return /^(?:1|true|yes|y)$/i.test(String(value ?? "").trim());
+  return value === true || /^(?:1|true|yes|y)$/i.test(String(value ?? "").trim());
 }
 
 function normalizeToken(value, fallback = "") {
@@ -56,38 +56,44 @@ function normalizeToken(value, fallback = "") {
   return normalized || fallback;
 }
 
-function normalizeImage(row) {
-  const url = String(row.image_url ?? "").trim();
+function normalizeImage(raw, fallback = {}) {
+  const url = String(raw.image_url ?? raw.imageUrl ?? raw.url ?? "").trim();
   if (!url) return null;
-  const permissionConfirmed = parseBoolean(row.image_permission_confirmed);
+  const permissionConfirmed = parseBoolean(raw.image_permission_confirmed ?? raw.imagePermissionConfirmed ?? raw.permissionConfirmed);
   return {
     url,
-    alt: row.image_alt || row.name || "Restaurant image",
-    sourceUrl: row.image_source_url || null,
-    sourceType: normalizeToken(row.image_source_type, "owner_submission"),
-    rightsBasis: row.image_rights_basis || null,
-    permission: permissionConfirmed ? "permitted" : "unverified",
+    alt: raw.image_alt || raw.imageAlt || raw.alt || fallback.name || "Restaurant image",
+    sourceUrl: raw.image_source_url || raw.imageSourceUrl || raw.sourceUrl || fallback.sourceUrl || null,
+    sourceType: normalizeToken(raw.image_source_type || raw.imageSourceType || raw.sourceType, "owner_submission"),
+    rightsBasis: raw.image_rights_basis || raw.imageRightsBasis || raw.rightsBasis || null,
+    permission: permissionConfirmed ? normalizeToken(raw.image_permission || raw.permission, "permitted") : normalizeToken(raw.image_permission || raw.permission, "unverified"),
     permissionConfirmed,
-    attribution: row.image_attribution || null,
-    reviewState: normalizeToken(row.image_review_state, "needs_review")
+    attribution: raw.image_attribution || raw.imageAttribution || raw.attribution || null,
+    reviewState: normalizeToken(raw.image_review_state || raw.imageReviewState || raw.reviewState, "needs_review"),
+    width: Number(raw.image_width ?? raw.imageWidth ?? raw.width) || null,
+    height: Number(raw.image_height ?? raw.imageHeight ?? raw.height) || null
   };
 }
 
 function normalize(row, sourceFile) {
-  const image = normalizeImage(row);
+  const sourceUrl = row.source_url || row.sourceUrl || null;
+  const base = { name: row.name, sourceUrl };
+  const nestedImages = Array.isArray(row.images) ? row.images : [];
+  const images = nestedImages.length ? nestedImages.map((image) => normalizeImage(image, base)).filter(Boolean) : [normalizeImage(row, base)].filter(Boolean);
   return {
-    restaurantId: row.restaurant_id || null,
+    restaurantId: row.restaurant_id || row.restaurantId || null,
     name: row.name,
-    neighborhood: row.neighborhood || null,
+    neighborhood: row.neighborhood || row.neighbourhood || null,
     cuisines: splitList(row.cuisines),
     vibe: splitList(row.vibe),
-    specials: row.special_title ? [{ title: row.special_title, cadence: row.special_cadence || "Owner submitted", sourceStatus: "needs-review" }] : [],
-    events: row.event_title ? [{ title: row.event_title, timing: row.event_timing || "Owner submitted", sourceStatus: "needs-review" }] : [],
-    images: image ? [image] : [],
-    sourceUrl: row.source_url || null,
-    contactEmail: row.contact_email || null,
+    specials: row.special_title || row.specialTitle ? [{ title: row.special_title || row.specialTitle, cadence: row.special_cadence || row.specialCadence || "Owner submitted", sourceStatus: "needs-review" }] : [],
+    events: row.event_title || row.eventTitle ? [{ title: row.event_title || row.eventTitle, timing: row.event_timing || row.eventTiming || "Owner submitted", sourceStatus: "needs-review" }] : [],
+    images,
+    sourceUrl,
+    contactEmail: row.contact_email || row.contactEmail || null,
     sourceFile,
-    reviewState: "needs-review"
+    observedAt: new Date().toISOString(),
+    reviewState: normalizeToken(row.review_state || row.reviewState, "needs_review")
   };
 }
 
@@ -99,8 +105,9 @@ for (const file of files) {
   const text = await readFile(path, "utf8");
   if (extname(file).toLowerCase() === ".csv") normalized.push(...parseCsv(text).map((row) => normalize(row, file)));
   if (extname(file).toLowerCase() === ".json") {
-    const rows = JSON.parse(text);
-    normalized.push(...(Array.isArray(rows) ? rows : [rows]).map((row) => normalize(row, file)));
+    const parsed = JSON.parse(text);
+    const rows = Array.isArray(parsed) ? parsed : Array.isArray(parsed.submissions) ? parsed.submissions : [parsed];
+    normalized.push(...rows.map((row) => normalize(row, file)));
   }
 }
 
