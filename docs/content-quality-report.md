@@ -1,6 +1,6 @@
 # Halifax Sourced content quality report
 
-Generated: 2026-09-02T17:43:38.192Z
+Generated: 2026-09-03T19:22:52.572Z
 
 ## Summary
 
@@ -24,10 +24,10 @@ Generated: 2026-09-02T17:43:38.192Z
 - **venueResolvedEvents**: 140
 - **organizerResolvedEvents**: 166
 - **restaurantLinkedEvents**: 10
-- **sourceFailures**: 64
+- **sourceFailures**: 84
 - **unresolvedPlaceCandidates**: 331
 - **nameOnlyPlaceReviews**: 41
-- **placeSourceConflicts**: 88
+- **placeSourceConflicts**: 89
 - **blockedEventSources**: 0
 - **eventSourcesInAdapterReview**: 4
 - **brokenUrls**: 8
@@ -36,7 +36,7 @@ Generated: 2026-09-02T17:43:38.192Z
 
 ## Freshness
 
-- **firstPartyRelationships**: <7d 1138; 7–30d 0; 30–90d 0; >90d 0; unknown 0
+- **firstPartyRelationships**: <7d 1150; 7–30d 0; 30–90d 0; >90d 0; unknown 0
 - **structuredPlaceFacts**: <7d 176; 7–30d 0; 30–90d 0; >90d 0; unknown 0
 - **patioDirectoryFacts**: <7d 75; 7–30d 0; 30–90d 0; >90d 0; unknown 0
 - **publicSpecialLeads**: <7d 143; 7–30d 0; 30–90d 0; >90d 0; unknown 0
@@ -45,7 +45,7 @@ Generated: 2026-09-02T17:43:38.192Z
 
 ## Review queues
 
-- Place source conflicts: 88
+- Place source conflicts: 89
 - Name-only place matches: 41
 - Unresolved place candidates: 331
 - Orphan special-source relationships: 51

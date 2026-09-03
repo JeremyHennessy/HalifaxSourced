@@ -31,6 +31,13 @@ The browser rejects records missing any of the required approval/provenance fiel
 6. Run `node scripts/build-restaurant-media.mjs` to publish only approved media into `data/restaurant-media.js`.
 7. Run `node scripts/check-data-integrity.mjs` and the full Quality Gate before deployment.
 
+## Queue handoff files
+
+The thumbnail coverage report writes two operator handoff files under `data/build/`:
+
+- `thumbnail-source-check-queue.csv` lists held candidates that need source/provenance review before promotion. Treat every row as unapproved until the source URL, image host, rights status, and visual crop have been checked.
+- `owner-media-outreach.csv` lists restaurants with no discovered thumbnail candidate using the owner-submission import columns. Fill the blank contact and image fields only from owner-provided material or explicit written permission, then import through `node scripts/import-owner-submissions.mjs`.
+
 ## Rights rules
 
 - A restaurant's official website can establish first-party provenance, but it does **not** by itself establish reuse permission.

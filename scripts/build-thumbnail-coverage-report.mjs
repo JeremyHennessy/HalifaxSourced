@@ -189,6 +189,73 @@ function queueRows(items) {
   return items.length ? items.slice(0, 40).map((item) => `| ${item.name} | ${item.neighborhood || "Unknown"} | ${item.candidateCount} | ${item.bestCandidate?.sourceKind || "None"} | ${item.website || ""} |`).join("\n") : "| None | n/a | 0 | None | |";
 }
 
+function csvEscape(value) {
+  const text = String(value ?? "");
+  return /[",\r\n]/.test(text) ? "\"" + text.replace(/"/g, "\"\"") + "\"" : text;
+}
+
+function csvRows(headers, rows) {
+  return [headers.join(","), ...rows.map((row) => headers.map((header) => csvEscape(row[header])).join(","))].join("\n") + "\n";
+}
+
+function sourceCheckExportRows(queue) {
+  return queue.flatMap((item) => (candidatesByRestaurant.get(item.restaurantId) || [])
+    .filter((candidate) => sourceCheckCandidates([candidate]).length)
+    .map((candidate) => ({
+      restaurant_id: item.restaurantId,
+      restaurant_name: item.name,
+      neighborhood: item.neighborhood || "",
+      website: item.website || "",
+      candidate_id: candidate.id,
+      thumbnail_url: candidate.thumbnailUrl,
+      source_url: candidate.sourceUrl,
+      source_kind: candidate.sourceKind,
+      source_host: candidate.sourceHost || "",
+      image_host: candidate.imageHost || "",
+      source_host_validation: candidate.sourceHostValidation || "",
+      review_state: candidate.reviewState || "",
+      promotion_review_state: candidate.promotionReviewState || "",
+      rights_status: candidate.rightsStatus || "",
+      quality_flags: (candidate.qualityFlags || []).join(";"),
+      recommended_action: candidate.sourceKind === "official_page_thumbnail_candidate" ? "confirm first-party page/image provenance, then visually review" : "confirm source rights/provenance before promotion"
+    })));
+}
+
+function ownerOutreachRows(queue) {
+  return queue.map((item) => ({
+    restaurant_id: item.restaurantId,
+    name: item.name,
+    neighborhood: item.neighborhood || "",
+    cuisines: "",
+    vibe: "",
+    special_title: "",
+    special_cadence: "",
+    event_title: "",
+    event_timing: "",
+    source_url: item.website || "",
+    contact_email: "",
+    image_url: "",
+    image_alt: item.name ? item.name + " restaurant photo" : "Restaurant photo",
+    image_source_url: "",
+    image_source_type: "owner_submission",
+    image_rights_basis: "owner_attestation",
+    image_permission_confirmed: "",
+    image_attribution: item.name || "",
+    image_review_state: "needs_review"
+  }));
+}
+
+const sourceCheckRows = sourceCheckExportRows(sourceCheckQueue);
+const ownerRows = ownerOutreachRows(discoveryQueue);
+report.exports = {
+  sourceCheckQueueJson: "data/build/thumbnail-source-check-queue.json",
+  sourceCheckQueueCsv: "data/build/thumbnail-source-check-queue.csv",
+  sourceCheckRows: sourceCheckRows.length,
+  ownerMediaOutreachJson: "data/build/owner-media-outreach.json",
+  ownerMediaOutreachCsv: "data/build/owner-media-outreach.csv",
+  ownerMediaOutreachRows: ownerRows.length
+};
+
 const markdown = `# Halifax Sourced thumbnail coverage report\n\nGenerated: ${report.generatedAt}\n\nThis report tracks source-backed image leads for restaurant thumbnails. It separates production-approved media from candidates that still need review, attribution, or permission before they can become default restaurant card imagery.\n\n## Coverage\n\n| Metric | Count | Coverage |\n| --- | ---: | ---: |\n${metricRow("Catalog restaurants", report.counts.restaurants, report.counts.restaurants)}\n${metricRow("Restaurants with approved thumbnail", report.counts.restaurantsWithApprovedThumbnail)}\n${metricRow("Restaurants with any thumbnail candidate", report.counts.restaurantsWithAnyCandidate)}\n${metricRow("Restaurants missing approved thumbnail", report.counts.restaurantsMissingApprovedThumbnail)}\n${metricRow("Restaurants missing any candidate", report.counts.restaurantsMissingAnyCandidate)}\n${metricRow("Promotion queue", report.counts.promotionQueue)}\n${metricRow("Source-check queue", report.counts.sourceCheckQueue)}\n${metricRow("Discovery queue", report.counts.discoveryQueue)}\n\nTotal thumbnail candidates: **${report.counts.candidates}**. Review-needed candidates: **${report.counts.reviewCandidates}**. Fetch failures in the latest run: **${report.counts.fetchFailures}**.\n\n## Candidate source mix\n\n| Source kind | Candidates |\n| --- | ---: |\n${countRows(report.candidateMix.bySourceKind)}\n\n## Review and rights state\n\n| Review state | Candidates |\n| --- | ---: |\n${countRows(report.candidateMix.byReviewState)}\n\n| Rights state | Candidates |\n| --- | ---: |\n${countRows(report.candidateMix.byRightsStatus)}\n\n## Promotion queue\n\nRestaurants below are missing approved thumbnails but have source-backed candidates that passed the metadata quality screen and are ready for visual review.\n\n| Restaurant | Neighbourhood | Candidates | Best source | Website |\n| --- | --- | ---: | --- | --- |\n${queueRows(promotionQueue)}\n\n## Source-check queue
 
 Restaurants below have thumbnail candidates held for source-host, provenance, or first-party validation review before promotion.
@@ -197,12 +264,16 @@ Restaurants below have thumbnail candidates held for source-host, provenance, or
 | --- | --- | ---: | --- | --- |
 ${queueRows(sourceCheckQueue)}
 
-## Discovery queue\n\nRestaurants below have no thumbnail candidate yet and should be prioritized for official-site metadata, owner-submitted media, or approved public media discovery.\n\n| Restaurant | Neighbourhood | Candidates | Best source | Website |\n| --- | --- | ---: | --- | --- |\n${queueRows(discoveryQueue)}\n\nMachine-readable queues are in \`data/build/thumbnail-coverage-report.json\`.\n`;
+## Discovery queue\n\nRestaurants below have no thumbnail candidate yet and should be prioritized for official-site metadata, owner-submitted media, or approved public media discovery.\n\n| Restaurant | Neighbourhood | Candidates | Best source | Website |\n| --- | --- | ---: | --- | --- |\n${queueRows(discoveryQueue)}\n\nMachine-readable queues are in \`data/build/thumbnail-coverage-report.json\`. CSV handoff files are generated at \`data/build/thumbnail-source-check-queue.csv\` and \`data/build/owner-media-outreach.csv\`.\n`;
 
 await mkdir(new URL("../data/build", import.meta.url), { recursive: true });
 await mkdir(new URL("../artifacts", import.meta.url), { recursive: true });
 await mkdir(new URL("../docs", import.meta.url), { recursive: true });
 const json = JSON.stringify(report, null, 2);
+await writeFile(new URL("../data/build/thumbnail-source-check-queue.json", import.meta.url), JSON.stringify({ generatedAt, count: sourceCheckRows.length, records: sourceCheckRows }, null, 2) + "\n");
+await writeFile(new URL("../data/build/thumbnail-source-check-queue.csv", import.meta.url), csvRows(["restaurant_id", "restaurant_name", "neighborhood", "website", "candidate_id", "thumbnail_url", "source_url", "source_kind", "source_host", "image_host", "source_host_validation", "review_state", "promotion_review_state", "rights_status", "quality_flags", "recommended_action"], sourceCheckRows));
+await writeFile(new URL("../data/build/owner-media-outreach.json", import.meta.url), JSON.stringify({ generatedAt, count: ownerRows.length, records: ownerRows }, null, 2) + "\n");
+await writeFile(new URL("../data/build/owner-media-outreach.csv", import.meta.url), csvRows(["restaurant_id", "name", "neighborhood", "cuisines", "vibe", "special_title", "special_cadence", "event_title", "event_timing", "source_url", "contact_email", "image_url", "image_alt", "image_source_url", "image_source_type", "image_rights_basis", "image_permission_confirmed", "image_attribution", "image_review_state"], ownerRows));
 await writeFile(new URL("../data/build/thumbnail-coverage-report.json", import.meta.url), json);
 await writeFile(new URL("../artifacts/thumbnail-coverage-report.json", import.meta.url), json);
 await writeFile(new URL("../docs/thumbnail-coverage-report.md", import.meta.url), markdown);

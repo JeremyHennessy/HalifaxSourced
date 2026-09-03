@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-03T17:38:09.309Z",
+  "generatedAt": "2026-09-03T19:22:39.932Z",
   "sourceCommitSha": null,
   "definitions": {
     "approvedThumbnail": "A thumbnail candidate tied to an exact restaurant ID with approved review state and production-approved rights status.",
@@ -10,61 +10,83 @@
   },
   "counts": {
     "restaurants": 740,
-    "candidates": 2166,
+    "candidates": 2804,
     "approvedCandidates": 107,
-    "reviewCandidates": 2059,
+    "reviewCandidates": 2697,
     "restaurantsWithApprovedThumbnail": 107,
-    "restaurantsWithAnyCandidate": 192,
+    "restaurantsWithAnyCandidate": 240,
     "restaurantsMissingApprovedThumbnail": 633,
-    "restaurantsMissingAnyCandidate": 548,
-    "promotionQueue": 20,
-    "sourceCheckQueue": 37,
-    "discoveryQueue": 548,
+    "restaurantsMissingAnyCandidate": 500,
+    "promotionQueue": 43,
+    "sourceCheckQueue": 59,
+    "discoveryQueue": 500,
     "fetchFailures": 200
   },
   "coveragePercent": {
     "approvedThumbnail": 14.5,
-    "anyThumbnailCandidate": 25.9,
+    "anyThumbnailCandidate": 32.4,
     "missingApprovedThumbnail": 85.5,
-    "missingAnyThumbnailCandidate": 74.1
+    "missingAnyThumbnailCandidate": 67.6
   },
   "candidateMix": {
     "bySourceKind": {
       "approved_restaurant_media": 107,
-      "official_page_thumbnail_candidate": 1991,
-      "official_feed_media": 7,
+      "official_page_thumbnail_candidate": 2628,
+      "official_feed_media": 8,
       "public_campaign_menu_image": 41,
       "directory_source_image": 20
     },
     "byReviewState": {
       "approved": 107,
-      "candidate_review": 2001,
+      "candidate_review": 2639,
       "rejected": 24,
       "source_check": 34
     },
     "byRightsStatus": {
       "production_approved": 107,
-      "requires_rights_review": 2035,
+      "requires_rights_review": 2673,
       "rejected": 24
     },
     "byExtractionMethod": {
       "approved_media_manifest": 107,
-      "html_link_image": 236,
-      "html_img_content": 1314,
-      "css_background_image": 205,
-      "declared_post_media": 130,
-      "html_meta_image": 69,
-      "jsonld_image": 44,
+      "html_link_image": 319,
+      "html_img_content": 1688,
+      "css_background_image": 334,
+      "declared_post_media": 135,
+      "html_meta_image": 109,
+      "jsonld_image": 51,
       "public_special_source_declared_image": 41,
       "trusted_directory_declared_image": 20
     },
     "byPlatform": {
-      "website_feed": 7,
-      "official_page": 123
+      "website_feed": 8,
+      "official_page": 127
     }
   },
   "queues": {
     "promotionQueue": [
+      {
+        "restaurantId": "osm-node-3800197657-the-lower-deck",
+        "name": "The Lower Deck",
+        "neighborhood": "Waterfront",
+        "website": "https://www.lowerdeck.ca/",
+        "candidateCount": 41,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 41
+        },
+        "reviewStates": {
+          "candidate_review": 41
+        },
+        "bestCandidate": {
+          "id": "thumb-fc4c72845665600f57",
+          "thumbnailUrl": "https://img1.wsimg.com/isteam/ip/73e4cfad-369b-4bc8-9899-1fbfdc8e0851/32376446557_42996808a1_o.jpg/:/rs=w:1023,m",
+          "sourceUrl": "https://lowerdeck.ca/private-events",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "official_page_approved_cdn_image"
+        }
+      },
       {
         "restaurantId": "osm-node-8841366531-jungle-jim-s",
         "name": "Jungle Jim's",
@@ -86,6 +108,138 @@
           "reviewState": "candidate_review",
           "rightsStatus": "requires_rights_review",
           "confidence": "trusted_directory_source_media"
+        }
+      },
+      {
+        "restaurantId": "osm-node-1202688542-subway",
+        "name": "Subway",
+        "neighborhood": "Dartmouth",
+        "website": "https://www.subway.com",
+        "candidateCount": 22,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 22
+        },
+        "reviewStates": {
+          "candidate_review": 22
+        },
+        "bestCandidate": {
+          "id": "thumb-79b35962a45718764c",
+          "thumbnailUrl": "https://subway.com/en-ca/menunutrition/media_1abf32f3fd0a4d7e7970dc37713f2840be2eff1cc.png?width=1200&format=pjpg&optimize=medium",
+          "sourceUrl": "https://www.subway.com/en-ca/menunutrition/menu",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "same_host_official_page_image"
+        }
+      },
+      {
+        "restaurantId": "osm-node-3800067659-subway",
+        "name": "Subway",
+        "neighborhood": "Dartmouth",
+        "website": "https://www.subway.com",
+        "candidateCount": 22,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 22
+        },
+        "reviewStates": {
+          "candidate_review": 22
+        },
+        "bestCandidate": {
+          "id": "thumb-7cae84409143860188",
+          "thumbnailUrl": "https://subway.com/en-ca/menunutrition/media_1abf32f3fd0a4d7e7970dc37713f2840be2eff1cc.png?width=1200&format=pjpg&optimize=medium",
+          "sourceUrl": "https://www.subway.com/en-ca/menunutrition/menu",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "same_host_official_page_image"
+        }
+      },
+      {
+        "restaurantId": "osm-node-8066235496-subway",
+        "name": "Subway",
+        "neighborhood": "Dartmouth",
+        "website": "https://www.subway.com",
+        "candidateCount": 22,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 22
+        },
+        "reviewStates": {
+          "candidate_review": 22
+        },
+        "bestCandidate": {
+          "id": "thumb-728263de1b15f7ebb8",
+          "thumbnailUrl": "https://subway.com/en-ca/menunutrition/media_1abf32f3fd0a4d7e7970dc37713f2840be2eff1cc.png?width=1200&format=pjpg&optimize=medium",
+          "sourceUrl": "https://www.subway.com/en-ca/menunutrition/menu",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "same_host_official_page_image"
+        }
+      },
+      {
+        "restaurantId": "osm-node-9301607067-subway",
+        "name": "Subway",
+        "neighborhood": "Armdale / Fairview",
+        "website": "https://www.subway.com",
+        "candidateCount": 22,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 22
+        },
+        "reviewStates": {
+          "candidate_review": 22
+        },
+        "bestCandidate": {
+          "id": "thumb-aa46e655c89c43f49c",
+          "thumbnailUrl": "https://subway.com/en-ca/menunutrition/media_1abf32f3fd0a4d7e7970dc37713f2840be2eff1cc.png?width=1200&format=pjpg&optimize=medium",
+          "sourceUrl": "https://www.subway.com/en-ca/menunutrition/menu",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "same_host_official_page_image"
+        }
+      },
+      {
+        "restaurantId": "osm-node-11577869163-subway",
+        "name": "Subway",
+        "neighborhood": "West End",
+        "website": "https://www.subway.com/",
+        "candidateCount": 22,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 22
+        },
+        "reviewStates": {
+          "candidate_review": 22
+        },
+        "bestCandidate": {
+          "id": "thumb-2690d6bc2391f75e55",
+          "thumbnailUrl": "https://subway.com/en-ca/menunutrition/media_1abf32f3fd0a4d7e7970dc37713f2840be2eff1cc.png?width=1200&format=pjpg&optimize=medium",
+          "sourceUrl": "https://www.subway.com/en-ca/menunutrition/menu",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "same_host_official_page_image"
+        }
+      },
+      {
+        "restaurantId": "osm-node-9892533621-terra-cafe",
+        "name": "Terra Cafe",
+        "neighborhood": "Waterfront",
+        "website": "https://terracafe.ca",
+        "candidateCount": 22,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 22
+        },
+        "reviewStates": {
+          "candidate_review": 22
+        },
+        "bestCandidate": {
+          "id": "thumb-c1afd8153845f1ec57",
+          "thumbnailUrl": "https://images.squarespace-cdn.com/content/v1/613bb46049e702334d42a1da/1227cae0-8507-4aa3-b774-164a1c8d79a2/Terra+Cafe+Food+Shoot-03077.jpg",
+          "sourceUrl": "https://terracafe.ca/",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "official_page_approved_cdn_image"
         }
       },
       {
@@ -111,6 +265,72 @@
         }
       },
       {
+        "restaurantId": "osm-node-5018125658-sweet-and-sassy",
+        "name": "Sweet & Sassy",
+        "neighborhood": "North End",
+        "website": "https://sweetandsassy.ca/",
+        "candidateCount": 19,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 19
+        },
+        "reviewStates": {
+          "candidate_review": 19
+        },
+        "bestCandidate": {
+          "id": "thumb-6348d5cdfcf7995f93",
+          "thumbnailUrl": "https://img1.wsimg.com/isteam/ip/5d7c9443-8d7f-4fc0-b026-ec2d2e0ee6ab/sweetandsassy-23.jpg",
+          "sourceUrl": "https://sweetandsassy.ca/",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "official_page_approved_cdn_image"
+        }
+      },
+      {
+        "restaurantId": "osm-node-5140336622-studio-east-food-drink",
+        "name": "Studio East Food+Drink",
+        "neighborhood": "North End",
+        "website": "https://www.studioeastfood.ca/",
+        "candidateCount": 17,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 17
+        },
+        "reviewStates": {
+          "candidate_review": 17
+        },
+        "bestCandidate": {
+          "id": "thumb-e62cfa03dfad157ebf",
+          "thumbnailUrl": "https://images.squarespace-cdn.com/content/v1/5dc72fed7665c170c5ffa441/1701521735068-ANWNK9X17AYSI3R3IBOS/20231130_194247.jpg",
+          "sourceUrl": "https://www.studioeastfood.ca/menu/main",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "official_page_approved_cdn_image"
+        }
+      },
+      {
+        "restaurantId": "osm-node-3801495263-stillwell",
+        "name": "Stillwell",
+        "neighborhood": "Downtown",
+        "website": "https://www.barstillwell.com/",
+        "candidateCount": 15,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 15
+        },
+        "reviewStates": {
+          "candidate_review": 15
+        },
+        "bestCandidate": {
+          "id": "thumb-9ac75797434e72d9c1",
+          "thumbnailUrl": "https://cdn.shopify.com/s/files/1/0004/4089/3476/files/tap_room_3_480x480.jpg?v=1694802189",
+          "sourceUrl": "https://www.barstillwell.com/pages/events",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "official_page_approved_cdn_image"
+        }
+      },
+      {
         "restaurantId": "osm-node-12410003853-jacky-s-cafe",
         "name": "Jacky's Cafe",
         "neighborhood": "South End",
@@ -130,6 +350,72 @@
           "reviewState": "candidate_review",
           "rightsStatus": "requires_rights_review",
           "confidence": "official_page_declared_remote_image"
+        }
+      },
+      {
+        "restaurantId": "osm-node-7082566319-real-fake-meats",
+        "name": "Real Fake Meats",
+        "neighborhood": "Downtown",
+        "website": "https://www.realfakemeats.com/",
+        "candidateCount": 13,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 13
+        },
+        "reviewStates": {
+          "candidate_review": 13
+        },
+        "bestCandidate": {
+          "id": "thumb-96d095eed4149a70dd",
+          "thumbnailUrl": "https://images.squarespace-cdn.com/content/v1/5aba805412b13f27716a7d1a/1524722358596-CAIJURSXM9WDVV5R6QBS/RFM-StandAlone-White.png",
+          "sourceUrl": "https://www.realfakemeats.com/",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "official_page_approved_cdn_image"
+        }
+      },
+      {
+        "restaurantId": "osm-node-11162905766-the-5k-cafe",
+        "name": "THE 5K CAFE",
+        "neighborhood": "Armdale / Fairview",
+        "website": "https://www.the5kcafe.ca/",
+        "candidateCount": 12,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 12
+        },
+        "reviewStates": {
+          "candidate_review": 12
+        },
+        "bestCandidate": {
+          "id": "thumb-94398ff405d2a35569",
+          "thumbnailUrl": "https://images.squarespace-cdn.com/content/v1/62377a995a1b6f2a5a38db10/1691669468625-1FXXS5CJ6PQKNH4WOZ54/cafe+food.jpeg",
+          "sourceUrl": "https://www.the5kcafe.ca/menu",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "official_page_approved_cdn_image"
+        }
+      },
+      {
+        "restaurantId": "osm-node-3802945757-the-ostrich-club",
+        "name": "The Ostrich Club",
+        "neighborhood": "North End",
+        "website": "https://theostrichclub.ca/",
+        "candidateCount": 12,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 12
+        },
+        "reviewStates": {
+          "candidate_review": 12
+        },
+        "bestCandidate": {
+          "id": "thumb-523c846665617a8798",
+          "thumbnailUrl": "https://theostrichclub.ca/wp-content/uploads/2022/07/toc_home_slider-cocktail_01.jpg",
+          "sourceUrl": "https://theostrichclub.ca/",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "same_host_official_page_image"
         }
       },
       {
@@ -214,6 +500,50 @@
           "id": "thumb-76e87a041124371c2d",
           "thumbnailUrl": "https://pgcafeandgrill.com/wp-content/uploads/2017/11/home1-img-11.png",
           "sourceUrl": "https://pgcafeandgrill.com/",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "same_host_official_page_image"
+        }
+      },
+      {
+        "restaurantId": "osm-node-5001886823-the-keg",
+        "name": "The Keg",
+        "neighborhood": "Downtown",
+        "website": "https://thekeg.com/en/locations/halifax",
+        "candidateCount": 9,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 9
+        },
+        "reviewStates": {
+          "candidate_review": 9
+        },
+        "bestCandidate": {
+          "id": "thumb-42f4a7111bfda2ba7b",
+          "thumbnailUrl": "https://cdn.sanity.io/images/dw0heewu/production/0bdcb34a72360b6173e5fbb498c35c829bcc8e1d-39x39.png?auto=format",
+          "sourceUrl": "https://thekeg.com/en/locations/halifax",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "official_page_approved_cdn_image"
+        }
+      },
+      {
+        "restaurantId": "osm-node-4990340206-subway",
+        "name": "Subway",
+        "neighborhood": "Dartmouth",
+        "website": "https://restaurants.subway.com/canada/ns/dartmouth/100-main-st",
+        "candidateCount": 7,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 7
+        },
+        "reviewStates": {
+          "candidate_review": 7
+        },
+        "bestCandidate": {
+          "id": "thumb-6734deb9b948875b49",
+          "thumbnailUrl": "https://restaurants.subway.com/canada/ns/dartmouth/image/webp",
+          "sourceUrl": "https://restaurants.subway.com/canada/ns/dartmouth/100-main-st",
           "sourceKind": "official_page_thumbnail_candidate",
           "reviewState": "candidate_review",
           "rightsStatus": "requires_rights_review",
@@ -354,6 +684,50 @@
         }
       },
       {
+        "restaurantId": "osm-node-4428984290-stone-pizza",
+        "name": "Stone Pizza",
+        "neighborhood": "Dartmouth",
+        "website": "https://stonepizza.ca/",
+        "candidateCount": 3,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 3
+        },
+        "reviewStates": {
+          "candidate_review": 3
+        },
+        "bestCandidate": {
+          "id": "thumb-cb305ad898947b0677",
+          "thumbnailUrl": "https://stonepizza.ca/wp-content/uploads/2025/12/caterinh-768x593.png",
+          "sourceUrl": "https://stonepizza.ca/pizza/",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "same_host_official_page_image"
+        }
+      },
+      {
+        "restaurantId": "osm-node-5138506321-summit-cafe",
+        "name": "Summit Cafe",
+        "neighborhood": "Waterfront",
+        "website": "https://www.thesummitcafe.ca/",
+        "candidateCount": 2,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 2
+        },
+        "reviewStates": {
+          "candidate_review": 2
+        },
+        "bestCandidate": {
+          "id": "thumb-139b13ba92d5d8d133",
+          "thumbnailUrl": "https://www.thesummitcafe.ca/wp-content/uploads/2024/10/Breakfast-buffet.jpg",
+          "sourceUrl": "https://www.thesummitcafe.ca/our-menu/",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "same_host_official_page_image"
+        }
+      },
+      {
         "restaurantId": "osm-node-771698137-waterfront-warehouse",
         "name": "Waterfront Warehouse",
         "neighborhood": "Waterfront",
@@ -443,6 +817,72 @@
         }
       },
       {
+        "restaurantId": "osm-node-5003519268-sully-and-porter",
+        "name": "Sully & Porter",
+        "neighborhood": "North End",
+        "website": "https://sullyandporter.com/",
+        "candidateCount": 1,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 1
+        },
+        "reviewStates": {
+          "candidate_review": 1
+        },
+        "bestCandidate": {
+          "id": "thumb-ae5f0c013734717112",
+          "thumbnailUrl": "https://sullyandporter.com/wp-content/uploads/2024/04/black.png",
+          "sourceUrl": "https://sullyandporter.com/",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "same_host_official_page_image"
+        }
+      },
+      {
+        "restaurantId": "osm-node-31794073-tim-hortons",
+        "name": "Tim Hortons",
+        "neighborhood": "North End",
+        "website": "https://www.timhortons.ca/store-locator/store/restaurant_66914",
+        "candidateCount": 1,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 1
+        },
+        "reviewStates": {
+          "candidate_review": 1
+        },
+        "bestCandidate": {
+          "id": "thumb-bb4262a08c8fccc099",
+          "thumbnailUrl": "https://cdn.sanity.io/images/czqk28jt/prod_th/9a9f5534893f0681e4d77d5d80d7014bd747e529-2880x1658.png",
+          "sourceUrl": "https://www.timhortons.ca/store-locator/store/restaurant_66914",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "official_page_approved_cdn_image"
+        }
+      },
+      {
+        "restaurantId": "osm-node-761848503-tim-hortons",
+        "name": "Tim Hortons",
+        "neighborhood": "Waterfront",
+        "website": "https://www.timhortons.com/",
+        "candidateCount": 1,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 1
+        },
+        "reviewStates": {
+          "candidate_review": 1
+        },
+        "bestCandidate": {
+          "id": "thumb-247f83cbf3b490b014",
+          "thumbnailUrl": "https://cdn.sanity.io/images/czqk28jt/prod_th/9a9f5534893f0681e4d77d5d80d7014bd747e529-2880x1658.png",
+          "sourceUrl": "https://www.timhortons.com/",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "official_page_approved_cdn_image"
+        }
+      },
+      {
         "restaurantId": "osm-node-3275051476-tim-hortons",
         "name": "Tim Hortons",
         "neighborhood": "Downtown",
@@ -465,6 +905,50 @@
         }
       },
       {
+        "restaurantId": "osm-way-88610789-tim-hortons",
+        "name": "Tim Hortons",
+        "neighborhood": "South End",
+        "website": "https://www.timhortons.com/",
+        "candidateCount": 1,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 1
+        },
+        "reviewStates": {
+          "candidate_review": 1
+        },
+        "bestCandidate": {
+          "id": "thumb-172018a308e304cc5c",
+          "thumbnailUrl": "https://cdn.sanity.io/images/czqk28jt/prod_th/9a9f5534893f0681e4d77d5d80d7014bd747e529-2880x1658.png",
+          "sourceUrl": "https://www.timhortons.com/",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "official_page_approved_cdn_image"
+        }
+      },
+      {
+        "restaurantId": "osm-way-170824377-tim-hortons",
+        "name": "Tim Hortons",
+        "neighborhood": "South End",
+        "website": "https://www.timhortons.com/",
+        "candidateCount": 1,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 1
+        },
+        "reviewStates": {
+          "candidate_review": 1
+        },
+        "bestCandidate": {
+          "id": "thumb-9eb700e1e2e86f9c34",
+          "thumbnailUrl": "https://cdn.sanity.io/images/czqk28jt/prod_th/9a9f5534893f0681e4d77d5d80d7014bd747e529-2880x1658.png",
+          "sourceUrl": "https://www.timhortons.com/",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "official_page_approved_cdn_image"
+        }
+      },
+      {
         "restaurantId": "osm-way-180446788-tim-hortons",
         "name": "Tim Hortons",
         "neighborhood": "South End",
@@ -484,6 +968,28 @@
           "reviewState": "candidate_review",
           "rightsStatus": "requires_rights_review",
           "confidence": "official_page_source_media"
+        }
+      },
+      {
+        "restaurantId": "osm-way-181617786-tim-hortons",
+        "name": "Tim Hortons",
+        "neighborhood": "West End",
+        "website": "https://www.timhortons.ca/store-locator/store/restaurant_67296",
+        "candidateCount": 1,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 1
+        },
+        "reviewStates": {
+          "candidate_review": 1
+        },
+        "bestCandidate": {
+          "id": "thumb-3bf4f6e5f7d2319f5e",
+          "thumbnailUrl": "https://cdn.sanity.io/images/czqk28jt/prod_th/9a9f5534893f0681e4d77d5d80d7014bd747e529-2880x1658.png",
+          "sourceUrl": "https://www.timhortons.ca/store-locator/store/restaurant_67296",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "official_page_approved_cdn_image"
         }
       },
       {
@@ -510,6 +1016,226 @@
       }
     ],
     "sourceCheckQueue": [
+      {
+        "restaurantId": "osm-node-5863968665-pizza-pizza",
+        "name": "Pizza Pizza",
+        "neighborhood": "Downtown",
+        "website": "https://www.pizzapizza.ca/",
+        "candidateCount": 35,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 35
+        },
+        "reviewStates": {
+          "candidate_review": 35
+        },
+        "bestCandidate": {
+          "id": "thumb-a53978034393cc5ad5",
+          "thumbnailUrl": "https://d21y75miwcfqoq.cloudfront.net/6e35f137",
+          "sourceUrl": "https://www.pizzapizza.ca/",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "remote_image_host_needs_source_check"
+        }
+      },
+      {
+        "restaurantId": "osm-node-13073162601-pizza-pizza",
+        "name": "Pizza Pizza",
+        "neighborhood": "Halifax Peninsula",
+        "website": "https://www.pizzapizza.ca/",
+        "candidateCount": 35,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 35
+        },
+        "reviewStates": {
+          "candidate_review": 35
+        },
+        "bestCandidate": {
+          "id": "thumb-ee7e25b21a41dfc190",
+          "thumbnailUrl": "https://d21y75miwcfqoq.cloudfront.net/6e35f137",
+          "sourceUrl": "https://www.pizzapizza.ca/",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "remote_image_host_needs_source_check"
+        }
+      },
+      {
+        "restaurantId": "osm-node-37132665-the-loose-cannon",
+        "name": "The Loose Cannon",
+        "neighborhood": "Downtown",
+        "website": "https://theloosecannon.ca/",
+        "candidateCount": 15,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 15
+        },
+        "reviewStates": {
+          "candidate_review": 15
+        },
+        "bestCandidate": {
+          "id": "thumb-745f6186d6507eb596",
+          "thumbnailUrl": "https://d1k7e91iovemsu.cloudfront.net/images/prod/consumer_live_/root/b4210929-33fe-4670-a76e-f6dccc09f91c.png",
+          "sourceUrl": "https://www.theloosecannon.ca/",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "remote_image_host_needs_source_check"
+        }
+      },
+      {
+        "restaurantId": "osm-node-11612206582-swaad-sagaa-indian-cuisine-incorporated",
+        "name": "Swaad Sagaa Indian Cuisine Incorporated",
+        "neighborhood": "North End",
+        "website": "https://www.swaadsagaa.com/",
+        "candidateCount": 14,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 14
+        },
+        "reviewStates": {
+          "candidate_review": 14
+        },
+        "bestCandidate": {
+          "id": "thumb-fcf7023c24d74fb849",
+          "thumbnailUrl": "https://assets.jwwb.nl/assets/brand/webador/icon/favicon.png?bust=2299e1307cbb69076146",
+          "sourceUrl": "https://www.swaadsagaa.com/",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "remote_image_host_needs_source_check"
+        }
+      },
+      {
+        "restaurantId": "osm-node-3801119557-the-middle-spoon-desserterie-and-bar",
+        "name": "The Middle Spoon Desserterie & Bar",
+        "neighborhood": "Downtown",
+        "website": "https://www.themiddlespoon.ca/",
+        "candidateCount": 14,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 14
+        },
+        "reviewStates": {
+          "candidate_review": 14
+        },
+        "bestCandidate": {
+          "id": "thumb-ad21cc1b4716e5aeef",
+          "thumbnailUrl": "https://themiddlespoon.com/_next/image?url=%2Fimages%2Fhero-1.jpg&w=3840&q=75",
+          "sourceUrl": "https://themiddlespoon.com/",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "source_host_not_first_party"
+        }
+      },
+      {
+        "restaurantId": "osm-node-11552069056-sushi-cove",
+        "name": "Sushi Cove",
+        "neighborhood": "South End",
+        "website": "https://sushicovehalifax.com/",
+        "candidateCount": 12,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 12
+        },
+        "reviewStates": {
+          "candidate_review": 12
+        },
+        "bestCandidate": {
+          "id": "thumb-f5904732dd0539fc3e",
+          "thumbnailUrl": "https://sushisquare.ca/wp-content/uploads/2020/11/800px-Sushi_platter-300x300.jpg",
+          "sourceUrl": "https://sushisquare.ca/",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "source_host_not_first_party"
+        }
+      },
+      {
+        "restaurantId": "osm-node-9099103643-the-bread-lounge",
+        "name": "The Bread Lounge",
+        "neighborhood": "Downtown",
+        "website": "https://breadlounge.ca",
+        "candidateCount": 6,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 6
+        },
+        "reviewStates": {
+          "candidate_review": 6
+        },
+        "bestCandidate": {
+          "id": "thumb-41947773104b92dcb6",
+          "thumbnailUrl": "https://thebreadloungebakery.square.site/uploads/b/6b31dad0-7b99-11eb-8fed-ef18a489ed8b/icon_180x180_ios_MTk5Mj.png?width=120",
+          "sourceUrl": "https://thebreadloungebakery.square.site/",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "source_host_not_first_party"
+        }
+      },
+      {
+        "restaurantId": "osm-node-4990340206-subway",
+        "name": "Subway",
+        "neighborhood": "Dartmouth",
+        "website": "https://restaurants.subway.com/canada/ns/dartmouth/100-main-st",
+        "candidateCount": 5,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 5
+        },
+        "reviewStates": {
+          "candidate_review": 5
+        },
+        "bestCandidate": {
+          "id": "thumb-a3b2e9240fc925b625",
+          "thumbnailUrl": "https://dynl.mktgcdn.com/p/9g-4m5t0qeL3x0XaTEeW0TS9S7v0sIop6mcusjGyTiY/619x531.jpg",
+          "sourceUrl": "https://restaurants.subway.com/canada/ns/dartmouth/100-main-st",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "remote_image_host_needs_source_check"
+        }
+      },
+      {
+        "restaurantId": "osm-node-475876993-ristorante-amano",
+        "name": "Ristorante Amano",
+        "neighborhood": "Waterfront",
+        "website": "https://www.ristoranteamano.ca/",
+        "candidateCount": 3,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 3
+        },
+        "reviewStates": {
+          "candidate_review": 3
+        },
+        "bestCandidate": {
+          "id": "thumb-2b603b951aaa4f8696",
+          "thumbnailUrl": "http://bertossigroup.com/in-the-news/Best-of-Halifax-Generic-Bronze.png",
+          "sourceUrl": "https://www.ristoranteamano.ca/",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "remote_image_host_needs_source_check"
+        }
+      },
+      {
+        "restaurantId": "osm-node-8164476189-the-bitter-end",
+        "name": "The Bitter End",
+        "neighborhood": "Downtown",
+        "website": "https://www.bitterend.ca/home",
+        "candidateCount": 3,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 3
+        },
+        "reviewStates": {
+          "candidate_review": 3
+        },
+        "bestCandidate": {
+          "id": "thumb-3275112d64bcb36cf1",
+          "thumbnailUrl": "https://images.unoapp.com/boxdata/asset90014/images/web-logo.png",
+          "sourceUrl": "https://www.bitterend.ca/",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "remote_image_host_needs_source_check"
+        }
+      },
       {
         "restaurantId": "osm-node-5125389651-baton-rouge",
         "name": "Baton Rouge",
@@ -1039,6 +1765,248 @@
         }
       },
       {
+        "restaurantId": "osm-node-1672879768-starbucks",
+        "name": "Starbucks",
+        "neighborhood": "North End",
+        "website": "https://www.starbucks.ca/store-locator/store/6149-147151/5554-kaye-street-5554-kaye-street-halifax-ns-b-3-k-1-y-5-ca",
+        "candidateCount": 1,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 1
+        },
+        "reviewStates": {
+          "candidate_review": 1
+        },
+        "bestCandidate": {
+          "id": "thumb-a10576c05bd50f401f",
+          "thumbnailUrl": "https://www.starbucks.com/weblx/images/social/summary_square.png",
+          "sourceUrl": "https://www.starbucks.ca/store-locator/store/6149-147151/5554-kaye-street-5554-kaye-street-halifax-ns-b-3-k-1-y-5-ca",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "remote_image_host_needs_source_check"
+        }
+      },
+      {
+        "restaurantId": "osm-node-2702731868-starbucks",
+        "name": "Starbucks",
+        "neighborhood": "Armdale / Fairview",
+        "website": "https://www.starbucks.ca/store-locator/store/4086-140770/20-parkland-dr-20-parkland-dr-halifax-ns-b-3-s-1-p-1-ca",
+        "candidateCount": 1,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 1
+        },
+        "reviewStates": {
+          "candidate_review": 1
+        },
+        "bestCandidate": {
+          "id": "thumb-8f4058181dab0b4d19",
+          "thumbnailUrl": "https://www.starbucks.com/weblx/images/social/summary_square.png",
+          "sourceUrl": "https://www.starbucks.ca/store-locator/store/4086-140770/20-parkland-dr-20-parkland-dr-halifax-ns-b-3-s-1-p-1-ca",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "remote_image_host_needs_source_check"
+        }
+      },
+      {
+        "restaurantId": "osm-node-4416579191-starbucks",
+        "name": "Starbucks",
+        "neighborhood": "Downtown",
+        "website": "https://www.starbucks.ca/store-locator?map=57.751076,-101.645508,4z",
+        "candidateCount": 1,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 1
+        },
+        "reviewStates": {
+          "candidate_review": 1
+        },
+        "bestCandidate": {
+          "id": "thumb-d633cb7815ce62d9a2",
+          "thumbnailUrl": "https://www.starbucks.com/weblx/images/social/summary_square.png",
+          "sourceUrl": "https://www.starbucks.ca/store-locator?map=57.751076,-101.645508,4z",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "remote_image_host_needs_source_check"
+        }
+      },
+      {
+        "restaurantId": "osm-node-9520194451-starbucks",
+        "name": "Starbucks",
+        "neighborhood": "Dartmouth",
+        "website": "https://www.starbucks.ca/store-locator/store/65775-299863/atlantic-superstore-portland-s-650-portland-street-dartmouth-ns-b-2-w-2-m-7-ca",
+        "candidateCount": 1,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 1
+        },
+        "reviewStates": {
+          "candidate_review": 1
+        },
+        "bestCandidate": {
+          "id": "thumb-d71288882ebaa70ecf",
+          "thumbnailUrl": "https://www.starbucks.com/weblx/images/social/summary_square.png",
+          "sourceUrl": "https://www.starbucks.ca/store-locator/store/65775-299863/atlantic-superstore-portland-s-650-portland-street-dartmouth-ns-b-2-w-2-m-7-ca",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "remote_image_host_needs_source_check"
+        }
+      },
+      {
+        "restaurantId": "osm-node-10052207437-starbucks",
+        "name": "Starbucks",
+        "neighborhood": "Bayers Lake Business Park",
+        "website": "https://www.starbucks.ca/store-locator/store/12465-151926/86-chain-lake-drive-86-chain-lake-drive-halifax-ns-b-3-s-1-a-2-ca",
+        "candidateCount": 1,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 1
+        },
+        "reviewStates": {
+          "candidate_review": 1
+        },
+        "bestCandidate": {
+          "id": "thumb-8bf367261032178802",
+          "thumbnailUrl": "https://www.starbucks.com/weblx/images/social/summary_square.png",
+          "sourceUrl": "https://www.starbucks.ca/store-locator/store/12465-151926/86-chain-lake-drive-86-chain-lake-drive-halifax-ns-b-3-s-1-a-2-ca",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "remote_image_host_needs_source_check"
+        }
+      },
+      {
+        "restaurantId": "osm-node-11699350869-starbucks",
+        "name": "Starbucks",
+        "neighborhood": "Armdale / Fairview",
+        "website": "https://www.starbucks.ca/store-locator/store/65774-300165/atlantic-superstore-chain-lake-210-chain-lake-drive-halifax-ns-b-3-s-1-c-5-ca",
+        "candidateCount": 1,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 1
+        },
+        "reviewStates": {
+          "candidate_review": 1
+        },
+        "bestCandidate": {
+          "id": "thumb-f0fae7ea2e33cb7f46",
+          "thumbnailUrl": "https://www.starbucks.com/weblx/images/social/summary_square.png",
+          "sourceUrl": "https://www.starbucks.ca/store-locator/store/65774-300165/atlantic-superstore-chain-lake-210-chain-lake-drive-halifax-ns-b-3-s-1-c-5-ca",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "remote_image_host_needs_source_check"
+        }
+      },
+      {
+        "restaurantId": "osm-node-12139021295-starbucks",
+        "name": "Starbucks",
+        "neighborhood": "South End",
+        "website": "https://www.starbucks.ca/store-locator/store/79117-307543/318-herring-cove-rd-318-herring-cove-rd-halifax-ns-b-3-r-1-v-4-ca",
+        "candidateCount": 1,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 1
+        },
+        "reviewStates": {
+          "candidate_review": 1
+        },
+        "bestCandidate": {
+          "id": "thumb-35f692374d468cf50e",
+          "thumbnailUrl": "https://www.starbucks.com/weblx/images/social/summary_square.png",
+          "sourceUrl": "https://www.starbucks.ca/store-locator/store/79117-307543/318-herring-cove-rd-318-herring-cove-rd-halifax-ns-b-3-r-1-v-4-ca",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "remote_image_host_needs_source_check"
+        }
+      },
+      {
+        "restaurantId": "osm-node-12139024601-starbucks",
+        "name": "Starbucks",
+        "neighborhood": "Armdale / Fairview",
+        "website": "https://www.starbucks.ca/store-locator/store/66230-300523/sobeys-clayton-park-644-287-lacewood-drive-halifax-ns-b-3-m-3-y-7-ca",
+        "candidateCount": 1,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 1
+        },
+        "reviewStates": {
+          "candidate_review": 1
+        },
+        "bestCandidate": {
+          "id": "thumb-0cefb5502f61c951fe",
+          "thumbnailUrl": "https://www.starbucks.com/weblx/images/social/summary_square.png",
+          "sourceUrl": "https://www.starbucks.ca/store-locator/store/66230-300523/sobeys-clayton-park-644-287-lacewood-drive-halifax-ns-b-3-m-3-y-7-ca",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "remote_image_host_needs_source_check"
+        }
+      },
+      {
+        "restaurantId": "osm-node-12139024637-starbucks",
+        "name": "Starbucks",
+        "neighborhood": "West End",
+        "website": "https://www.starbucks.ca/store-locator/store/61586-294956/atlantic-superstore-joseph-how-3601-joseph-howe-drive-halifax-ns-b-3-l-4-h-8-ca",
+        "candidateCount": 1,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 1
+        },
+        "reviewStates": {
+          "candidate_review": 1
+        },
+        "bestCandidate": {
+          "id": "thumb-f5c31f078bd07d6e92",
+          "thumbnailUrl": "https://www.starbucks.com/weblx/images/social/summary_square.png",
+          "sourceUrl": "https://www.starbucks.ca/store-locator/store/61586-294956/atlantic-superstore-joseph-how-3601-joseph-howe-drive-halifax-ns-b-3-l-4-h-8-ca",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "remote_image_host_needs_source_check"
+        }
+      },
+      {
+        "restaurantId": "osm-node-12139024647-starbucks",
+        "name": "Starbucks",
+        "neighborhood": "Dartmouth",
+        "website": "https://www.starbucks.ca/store-locator/store/23087-222344/675-windmill-road-11-cuddy-lane-dartmouth-ns-b-3-b-0-l-1-ca",
+        "candidateCount": 1,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 1
+        },
+        "reviewStates": {
+          "candidate_review": 1
+        },
+        "bestCandidate": {
+          "id": "thumb-3b1cb4db8ba263f27a",
+          "thumbnailUrl": "https://www.starbucks.com/weblx/images/social/summary_square.png",
+          "sourceUrl": "https://www.starbucks.ca/store-locator/store/23087-222344/675-windmill-road-11-cuddy-lane-dartmouth-ns-b-3-b-0-l-1-ca",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "remote_image_host_needs_source_check"
+        }
+      },
+      {
+        "restaurantId": "osm-way-1268232345-starbucks",
+        "name": "Starbucks",
+        "neighborhood": "West End",
+        "website": "https://www.starbucks.ca/store-locator/store/20568-206464/halifax-shopping-centre-leve-7001-mumford-road-halifax-ns-b-3-l-4-t-8-ca",
+        "candidateCount": 1,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 1
+        },
+        "reviewStates": {
+          "candidate_review": 1
+        },
+        "bestCandidate": {
+          "id": "thumb-f230fb7941580e23c1",
+          "thumbnailUrl": "https://www.starbucks.com/weblx/images/social/summary_square.png",
+          "sourceUrl": "https://www.starbucks.ca/store-locator/store/20568-206464/halifax-shopping-centre-leve-7001-mumford-road-halifax-ns-b-3-l-4-t-8-ca",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "remote_image_host_needs_source_check"
+        }
+      },
+      {
         "restaurantId": "osm-node-13289252958-stardust",
         "name": "Stardust",
         "neighborhood": "Downtown",
@@ -1058,6 +2026,28 @@
           "reviewState": "source_check",
           "rightsStatus": "requires_rights_review",
           "confidence": "public_special_source_media"
+        }
+      },
+      {
+        "restaurantId": "osm-node-5138506321-summit-cafe",
+        "name": "Summit Cafe",
+        "neighborhood": "Waterfront",
+        "website": "https://www.thesummitcafe.ca/",
+        "candidateCount": 1,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 1
+        },
+        "reviewStates": {
+          "candidate_review": 1
+        },
+        "bestCandidate": {
+          "id": "thumb-f9e1627e3b0766621d",
+          "thumbnailUrl": "https://d-themes.com/wordpress/udesign/dummy/wp-content/uploads/sites/18/2021/11/divider.png",
+          "sourceUrl": "https://www.thesummitcafe.ca/",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "remote_image_host_needs_source_check"
         }
       },
       {
@@ -4257,30 +5247,10 @@
         "bestCandidate": null
       },
       {
-        "restaurantId": "osm-node-5863968665-pizza-pizza",
-        "name": "Pizza Pizza",
-        "neighborhood": "Downtown",
-        "website": "https://www.pizzapizza.ca/",
-        "candidateCount": 0,
-        "sourceKinds": {},
-        "reviewStates": {},
-        "bestCandidate": null
-      },
-      {
         "restaurantId": "osm-node-11526163880-pizza-pizza",
         "name": "Pizza Pizza",
         "neighborhood": "South End",
         "website": "https://dal.campusdish.com/LocationsAndMenus/LifeSciencesCentre/PizzaPizza",
-        "candidateCount": 0,
-        "sourceKinds": {},
-        "reviewStates": {},
-        "bestCandidate": null
-      },
-      {
-        "restaurantId": "osm-node-13073162601-pizza-pizza",
-        "name": "Pizza Pizza",
-        "neighborhood": "Halifax Peninsula",
-        "website": "https://www.pizzapizza.ca/",
         "candidateCount": 0,
         "sourceKinds": {},
         "reviewStates": {},
@@ -4320,6 +5290,26 @@
         "restaurantId": "osm-node-2712624362-pizzadelic",
         "name": "Pizzadelic",
         "neighborhood": "Armdale / Fairview",
+        "website": null,
+        "candidateCount": 0,
+        "sourceKinds": {},
+        "reviewStates": {},
+        "bestCandidate": null
+      },
+      {
+        "restaurantId": "osm-node-8376551845-portland-street-creperie",
+        "name": "Portland Street Creperie",
+        "neighborhood": "Halifax Peninsula",
+        "website": "http://www.portlandstreetcreperie.com/",
+        "candidateCount": 0,
+        "sourceKinds": {},
+        "reviewStates": {},
+        "bestCandidate": null
+      },
+      {
+        "restaurantId": "osm-node-37132554-press-gang",
+        "name": "Press Gang",
+        "neighborhood": "Downtown",
         "website": null,
         "candidateCount": 0,
         "sourceKinds": {},
@@ -5057,6 +6047,19 @@
         "publishedAt": null
       },
       {
+        "id": "thumb-4b4f17b6e19baa6296",
+        "restaurantId": "osm-node-10038454787-bird-s-nest-cafe",
+        "restaurantName": "Bird's Nest Cafe",
+        "thumbnailUrl": "https://static.wixstatic.com/media/110dc9_3a82ceba3e2340f5aef966fe3b725b43~mv2.jpeg/v1/fit/w_1000,h_1000,al_c,q_80/file.png",
+        "sourceUrl": "https://www.birdsnesthalifax.com/post/the-bird-s-nest-meatloaf-panini-named-one-of-canada-s-best-sandwiches-halifax",
+        "sourceKind": "official_feed_media",
+        "reviewState": "candidate_review",
+        "rightsStatus": "requires_rights_review",
+        "confidence": "official_feed_media",
+        "observedAt": "2026-09-03T18:59:34.142Z",
+        "publishedAt": "2026-09-02T17:13:14.000Z"
+      },
+      {
         "id": "thumb-44fd56b34e52f73676",
         "restaurantId": "osm-node-10038454787-bird-s-nest-cafe",
         "restaurantName": "Bird's Nest Cafe",
@@ -5066,7 +6069,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "official_feed_media",
-        "observedAt": "2026-09-01T15:25:17.355Z",
+        "observedAt": "2026-09-03T18:59:34.142Z",
         "publishedAt": "2026-09-01T14:22:55.000Z"
       },
       {
@@ -5079,7 +6082,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "official_feed_media",
-        "observedAt": "2026-09-01T15:25:17.355Z",
+        "observedAt": "2026-09-03T18:59:34.142Z",
         "publishedAt": "2026-04-02T11:40:44.000Z"
       },
       {
@@ -6141,32 +7144,6 @@
         "restaurantName": "Chinatown",
         "thumbnailUrl": "https://www.chinatownhalifax.com/chinese-menu/r",
         "sourceUrl": "https://www.chinatownhalifax.com/chinese-menu/",
-        "sourceKind": "official_page_thumbnail_candidate",
-        "reviewState": "candidate_review",
-        "rightsStatus": "requires_rights_review",
-        "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-02T17:39:07.870Z",
-        "publishedAt": null
-      },
-      {
-        "id": "thumb-8a3e5fb79a1dfe8500",
-        "restaurantId": "osm-node-3799422457-cora",
-        "restaurantName": "Cora",
-        "thumbnailUrl": "https://www.chezcora.com/wp-content/uploads/2026/05/131_INT25_SiteWeb_Duo-BD_25-11-25.webp",
-        "sourceUrl": "https://www.chezcora.com/en/breakfast-lunch-restaurants/halifax-downtown/",
-        "sourceKind": "official_page_thumbnail_candidate",
-        "reviewState": "candidate_review",
-        "rightsStatus": "requires_rights_review",
-        "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-02T17:39:07.870Z",
-        "publishedAt": null
-      },
-      {
-        "id": "thumb-c6e0a7cb80c3bed529",
-        "restaurantId": "osm-node-11867490075-cora",
-        "restaurantName": "Cora",
-        "thumbnailUrl": "https://www.chezcora.com/wp-content/uploads/2026/05/131_INT25_SiteWeb_Duo-BD_25-11-25.webp",
-        "sourceUrl": "https://www.chezcora.com/en/",
         "sourceKind": "official_page_thumbnail_candidate",
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
@@ -8227,6 +9204,19 @@
         "confidence": "same_host_official_page_image",
         "observedAt": "2026-09-02T17:39:07.870Z",
         "publishedAt": null
+      },
+      {
+        "id": "thumb-a9782de6a4999affa6",
+        "restaurantId": "osm-node-5631529440-hmcs-king-s-wardroom",
+        "restaurantName": "HMCS King’s Wardroom",
+        "thumbnailUrl": "https://ukings.ca/wp-content/uploads/2019/08/Josh-Young-edit.jpg",
+        "sourceUrl": "https://ukings.ca/admissions/campus-tours-recruitment/",
+        "sourceKind": "official_page_thumbnail_candidate",
+        "reviewState": "candidate_review",
+        "rightsStatus": "requires_rights_review",
+        "confidence": "same_host_official_page_image",
+        "observedAt": "2026-09-02T17:39:07.870Z",
+        "publishedAt": null
       }
     ]
   },
@@ -9231,5 +10221,13 @@
       "pageUrl": "https://espresso46.com/",
       "reason": "fetch failed"
     }
-  ]
+  ],
+  "exports": {
+    "sourceCheckQueueJson": "data/build/thumbnail-source-check-queue.json",
+    "sourceCheckQueueCsv": "data/build/thumbnail-source-check-queue.csv",
+    "sourceCheckRows": 191,
+    "ownerMediaOutreachJson": "data/build/owner-media-outreach.json",
+    "ownerMediaOutreachCsv": "data/build/owner-media-outreach.csv",
+    "ownerMediaOutreachRows": 500
+  }
 }

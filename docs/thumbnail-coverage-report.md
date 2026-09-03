@@ -1,6 +1,6 @@
 # Halifax Sourced thumbnail coverage report
 
-Generated: 2026-09-03T17:38:09.309Z
+Generated: 2026-09-03T19:22:39.932Z
 
 This report tracks source-backed image leads for restaurant thumbnails. It separates production-approved media from candidates that still need review, attribution, or permission before they can become default restaurant card imagery.
 
@@ -10,37 +10,37 @@ This report tracks source-backed image leads for restaurant thumbnails. It separ
 | --- | ---: | ---: |
 | Catalog restaurants | 740 | 100% |
 | Restaurants with approved thumbnail | 107 | 14.5% |
-| Restaurants with any thumbnail candidate | 192 | 25.9% |
+| Restaurants with any thumbnail candidate | 240 | 32.4% |
 | Restaurants missing approved thumbnail | 633 | 85.5% |
-| Restaurants missing any candidate | 548 | 74.1% |
-| Promotion queue | 20 | 2.7% |
-| Source-check queue | 37 | 5% |
-| Discovery queue | 548 | 74.1% |
+| Restaurants missing any candidate | 500 | 67.6% |
+| Promotion queue | 43 | 5.8% |
+| Source-check queue | 59 | 8% |
+| Discovery queue | 500 | 67.6% |
 
-Total thumbnail candidates: **2166**. Review-needed candidates: **2059**. Fetch failures in the latest run: **200**.
+Total thumbnail candidates: **2804**. Review-needed candidates: **2697**. Fetch failures in the latest run: **200**.
 
 ## Candidate source mix
 
 | Source kind | Candidates |
 | --- | ---: |
-| official_page_thumbnail_candidate | 1,991 |
+| official_page_thumbnail_candidate | 2,628 |
 | approved_restaurant_media | 107 |
 | public_campaign_menu_image | 41 |
 | directory_source_image | 20 |
-| official_feed_media | 7 |
+| official_feed_media | 8 |
 
 ## Review and rights state
 
 | Review state | Candidates |
 | --- | ---: |
-| candidate_review | 2,001 |
+| candidate_review | 2,639 |
 | approved | 107 |
 | source_check | 34 |
 | rejected | 24 |
 
 | Rights state | Candidates |
 | --- | ---: |
-| requires_rights_review | 2,035 |
+| requires_rights_review | 2,673 |
 | production_approved | 107 |
 | rejected | 24 |
 
@@ -50,26 +50,46 @@ Restaurants below are missing approved thumbnails but have source-backed candida
 
 | Restaurant | Neighbourhood | Candidates | Best source | Website |
 | --- | --- | ---: | --- | --- |
+| The Lower Deck | Waterfront | 41 | official_page_thumbnail_candidate | https://www.lowerdeck.ca/ |
 | Jungle Jim's | Bayers Lake Business Park | 33 | directory_source_image | https://junglejims.ca/ |
+| Subway | Dartmouth | 22 | official_page_thumbnail_candidate | https://www.subway.com |
+| Subway | Dartmouth | 22 | official_page_thumbnail_candidate | https://www.subway.com |
+| Subway | Dartmouth | 22 | official_page_thumbnail_candidate | https://www.subway.com |
+| Subway | Armdale / Fairview | 22 | official_page_thumbnail_candidate | https://www.subway.com |
+| Subway | West End | 22 | official_page_thumbnail_candidate | https://www.subway.com/ |
+| Terra Cafe | Waterfront | 22 | official_page_thumbnail_candidate | https://terracafe.ca |
 | Mirchi Tandoor | Downtown | 19 | official_page_thumbnail_candidate | https://mirchitandoor.com/ |
+| Sweet & Sassy | North End | 19 | official_page_thumbnail_candidate | https://sweetandsassy.ca/ |
+| Studio East Food+Drink | North End | 17 | official_page_thumbnail_candidate | https://www.studioeastfood.ca/ |
+| Stillwell | Downtown | 15 | official_page_thumbnail_candidate | https://www.barstillwell.com/ |
 | Jacky's Cafe | South End | 14 | official_page_thumbnail_candidate | https://jackyscafehalifax.com/ |
+| Real Fake Meats | Downtown | 13 | official_page_thumbnail_candidate | https://www.realfakemeats.com/ |
+| THE 5K CAFE | Armdale / Fairview | 12 | official_page_thumbnail_candidate | https://www.the5kcafe.ca/ |
+| The Ostrich Club | North End | 12 | official_page_thumbnail_candidate | https://theostrichclub.ca/ |
 | Marigold Kitchen | Downtown | 11 | official_page_thumbnail_candidate | https://marigoldkitchen.ca |
 | Phở Hoang Minh | Dartmouth | 10 | official_page_thumbnail_candidate | https://www.phohoangminh.ca/ |
 | Downtown Pizza | Dartmouth | 9 | official_page_thumbnail_candidate | https://downtownpizza.ca/ |
 | PG Cafe and Grill | Waterfront | 9 | official_page_thumbnail_candidate | https://pgcafeandgrill.com/ |
+| The Keg | Downtown | 9 | official_page_thumbnail_candidate | https://thekeg.com/en/locations/halifax |
+| Subway | Dartmouth | 7 | official_page_thumbnail_candidate | https://restaurants.subway.com/canada/ns/dartmouth/100-main-st |
 | in spring asian fusion cuisine | Downtown | 5 | official_page_thumbnail_candidate | https://www.inspringhotpot.com/ |
 | Mashawee Mediterranean Grill | Downtown | 5 | official_page_thumbnail_candidate | https://www.mashaweemediterraneangrill.ca/ |
 | Bramble Cafe | North End | 4 | official_page_thumbnail_candidate | https://www.instagram.com/bramble.hfx |
 | King of Donair | Halifax Peninsula | 4 | official_page_thumbnail_candidate | https://www.kingofdonair.ca |
 | The Black Sheep | Downtown | 4 | official_page_thumbnail_candidate | https://blacksheephalifax.com/ |
 | Cheese Curds and Habaneros | Armdale / Fairview | 3 | official_page_thumbnail_candidate | https://cheesecurdsgourmetburgersandpoutinerie.unuhub.net/ |
+| Stone Pizza | Dartmouth | 3 | official_page_thumbnail_candidate | https://stonepizza.ca/ |
+| Summit Cafe | Waterfront | 2 | official_page_thumbnail_candidate | https://www.thesummitcafe.ca/ |
 | Waterfront Warehouse | Waterfront | 2 | official_page_thumbnail_candidate | https://www.rcr.ca/restaurants/waterfront-warehouse/ |
 | Five Fishermen | Downtown | 1 | public_campaign_menu_image |  |
 | Gahan House | Downtown | 1 | official_page_thumbnail_candidate | https://gahan.ca |
 | Jean's Chinese Restaurant | Dartmouth | 1 | official_page_thumbnail_candidate | https://www.jeansrestaurant.ca/ |
+| Sully & Porter | North End | 1 | official_page_thumbnail_candidate | https://sullyandporter.com/ |
+| Tim Hortons | North End | 1 | official_page_thumbnail_candidate | https://www.timhortons.ca/store-locator/store/restaurant_66914 |
+| Tim Hortons | Waterfront | 1 | official_page_thumbnail_candidate | https://www.timhortons.com/ |
 | Tim Hortons | Downtown | 1 | directory_source_image | https://www.timhortons.com/ |
-| Tim Hortons | South End | 1 | official_page_thumbnail_candidate | https://locations.timhortons.ca/en/ns/halifax/390-osborne-street/ |
-| Trident Booksellers and Cafe | Waterfront | 1 | official_page_thumbnail_candidate | https://tridenthalifax.ca/ |
+| Tim Hortons | South End | 1 | official_page_thumbnail_candidate | https://www.timhortons.com/ |
+| Tim Hortons | South End | 1 | official_page_thumbnail_candidate | https://www.timhortons.com/ |
 
 ## Source-check queue
 
@@ -77,6 +97,16 @@ Restaurants below have thumbnail candidates held for source-host, provenance, or
 
 | Restaurant | Neighbourhood | Candidates | Best source | Website |
 | --- | --- | ---: | --- | --- |
+| Pizza Pizza | Downtown | 35 | official_page_thumbnail_candidate | https://www.pizzapizza.ca/ |
+| Pizza Pizza | Halifax Peninsula | 35 | official_page_thumbnail_candidate | https://www.pizzapizza.ca/ |
+| The Loose Cannon | Downtown | 15 | official_page_thumbnail_candidate | https://theloosecannon.ca/ |
+| Swaad Sagaa Indian Cuisine Incorporated | North End | 14 | official_page_thumbnail_candidate | https://www.swaadsagaa.com/ |
+| The Middle Spoon Desserterie & Bar | Downtown | 14 | official_page_thumbnail_candidate | https://www.themiddlespoon.ca/ |
+| Sushi Cove | South End | 12 | official_page_thumbnail_candidate | https://sushicovehalifax.com/ |
+| The Bread Lounge | Downtown | 6 | official_page_thumbnail_candidate | https://breadlounge.ca |
+| Subway | Dartmouth | 5 | official_page_thumbnail_candidate | https://restaurants.subway.com/canada/ns/dartmouth/100-main-st |
+| Ristorante Amano | Waterfront | 3 | official_page_thumbnail_candidate | https://www.ristoranteamano.ca/ |
+| The Bitter End | Downtown | 3 | official_page_thumbnail_candidate | https://www.bitterend.ca/home |
 | Baton Rouge | Waterfront | 1 | public_campaign_menu_image |  |
 | Bramble Cafe | North End | 1 | official_page_thumbnail_candidate | https://www.instagram.com/bramble.hfx |
 | Cannery Kitchen & Social | Downtown | 1 | public_campaign_menu_image |  |
@@ -101,19 +131,12 @@ Restaurants below have thumbnail candidates held for source-host, provenance, or
 | Seaport Social | Waterfront | 1 | public_campaign_menu_image | https://www.seaportsocialhalifax.com/ |
 | Sketti and Ball | Downtown | 1 | public_campaign_menu_image | https://skettiandballco.ca/ |
 | Sofia | Downtown | 1 | public_campaign_menu_image |  |
-| Stardust | Downtown | 1 | public_campaign_menu_image |  |
-| Tempo food+drink | Downtown | 1 | public_campaign_menu_image |  |
-| The Carleton | Downtown | 1 | public_campaign_menu_image |  |
-| The Mercantile Social | Waterfront | 1 | public_campaign_menu_image | https://themercantilesocial.ca/ |
-| The Mic Mac Bar and Grill | Dartmouth | 1 | official_page_thumbnail_candidate | https://micmacbarandgrill.com/ |
-| The Old Triangle Irish Pub | Downtown | 1 | public_campaign_menu_image | https://www.oldtriangle.com/welcome/ |
-| The Press Gang | Downtown | 1 | public_campaign_menu_image | https://thepressgang.ca/ |
-| Tim Hortons | Downtown | 1 | directory_source_image | https://www.timhortons.com/ |
-| Toridori | Downtown | 1 | public_campaign_menu_image |  |
-| Trattoria Vesso | South End | 1 | public_campaign_menu_image |  |
-| Two if By Sea | Dartmouth | 1 | official_page_thumbnail_candidate | https://www.twoifbyseacafe.ca/ |
-| Waterfront Warehouse | Waterfront | 1 | official_page_thumbnail_candidate | https://www.rcr.ca/restaurants/waterfront-warehouse/ |
-| Wooden Monkey | Downtown | 1 | public_campaign_menu_image | https://www.thewoodenmonkey.ca/ |
+| Starbucks | North End | 1 | official_page_thumbnail_candidate | https://www.starbucks.ca/store-locator/store/6149-147151/5554-kaye-street-5554-kaye-street-halifax-ns-b-3-k-1-y-5-ca |
+| Starbucks | Armdale / Fairview | 1 | official_page_thumbnail_candidate | https://www.starbucks.ca/store-locator/store/4086-140770/20-parkland-dr-20-parkland-dr-halifax-ns-b-3-s-1-p-1-ca |
+| Starbucks | Downtown | 1 | official_page_thumbnail_candidate | https://www.starbucks.ca/store-locator?map=57.751076,-101.645508,4z |
+| Starbucks | Dartmouth | 1 | official_page_thumbnail_candidate | https://www.starbucks.ca/store-locator/store/65775-299863/atlantic-superstore-portland-s-650-portland-street-dartmouth-ns-b-2-w-2-m-7-ca |
+| Starbucks | Bayers Lake Business Park | 1 | official_page_thumbnail_candidate | https://www.starbucks.ca/store-locator/store/12465-151926/86-chain-lake-drive-86-chain-lake-drive-halifax-ns-b-3-s-1-a-2-ca |
+| Starbucks | Armdale / Fairview | 1 | official_page_thumbnail_candidate | https://www.starbucks.ca/store-locator/store/65774-300165/atlantic-superstore-chain-lake-210-chain-lake-drive-halifax-ns-b-3-s-1-c-5-ca |
 
 ## Discovery queue
 
@@ -162,4 +185,4 @@ Restaurants below have no thumbnail candidate yet and should be prioritized for 
 | Booster Juice | Armdale / Fairview | 0 | None |  |
 | Booster Juice | North End | 0 | None |  |
 
-Machine-readable queues are in `data/build/thumbnail-coverage-report.json`.
+Machine-readable queues are in `data/build/thumbnail-coverage-report.json`. CSV handoff files are generated at `data/build/thumbnail-source-check-queue.csv` and `data/build/owner-media-outreach.csv`.
