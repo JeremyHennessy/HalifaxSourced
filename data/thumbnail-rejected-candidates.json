@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-08-30T16:55:00.000Z",
+  "generatedAt": "2026-09-03T13:08:09Z",
   "records": [
     {
       "restaurantId": "osm-node-13141377001-india-paradise",
@@ -41,6 +41,222 @@
       "sourceUrl": "https://www.jeansrestaurant.ca/",
       "reason": "too_small_low_utility",
       "notes": "Downloaded image was 290x185, below production card threshold."
+    },
+    {
+      "restaurantId": "osm-node-13141457102-bitter-end-martini-bar-and-restaurant",
+      "restaurantName": "Bitter End Martini Bar & Restaurant",
+      "thumbnailUrl": "https://www.unoapp.com/app/source/images/g_shift.png",
+      "sourceUrl": "https://www.bitterend.ca/",
+      "reason": "low_visual_quality_or_asset_like_metrics",
+      "notes": "Visual review rejected for production thumbnail use. Metrics: 207x98, entropy 1.832, transparency 0.765.",
+      "reviewedAt": "2026-09-03T13:08:09Z"
+    },
+    {
+      "restaurantId": "osm-node-3796313457-chaii-samosa",
+      "restaurantName": "Chaii Samosa",
+      "thumbnailUrl": "https://quinpoolroad.ca/wp-content/uploads/2024/03/Chai.png",
+      "sourceUrl": "https://quinpoolroad.ca/member/chai-samosa/",
+      "reason": "low_visual_quality_or_asset_like_metrics",
+      "notes": "Visual review rejected for production thumbnail use. Metrics: 267x167, entropy 4.899, transparency 0.0.",
+      "reviewedAt": "2026-09-03T13:08:09Z"
+    },
+    {
+      "restaurantId": "osm-node-4424182190-domino-s-pizza",
+      "restaurantName": "Domino's Pizza",
+      "thumbnailUrl": "https://quinpoolroad.ca/wp-content/uploads/2023/02/Dominos-Pizza-300x300.png",
+      "sourceUrl": "https://quinpoolroad.ca/member/dominos-pizza/",
+      "reason": "low_visual_quality_or_asset_like_metrics",
+      "notes": "Visual review rejected for production thumbnail use. Metrics: 300x300, entropy 2.677, transparency 0.508.",
+      "reviewedAt": "2026-09-03T13:08:09Z"
+    },
+    {
+      "restaurantId": "osm-node-4797459277-downtown-pizza",
+      "restaurantName": "Downtown Pizza",
+      "thumbnailUrl": "https://downtownpizza.ca/wp-content/uploads/2024/10/PepsiCo-redesigns-2L-bottles-for-the-first-time-in-30-years.png",
+      "sourceUrl": "https://downtownpizza.ca/",
+      "reason": "unrelated_product_image",
+      "notes": "Visual review rejected for production thumbnail use. Metrics: 1075x675, entropy 7.075, transparency 0.0.",
+      "reviewedAt": "2026-09-03T13:08:09Z"
+    },
+    {
+      "restaurantId": "osm-node-4416774495-glitter-bean-cafe",
+      "restaurantName": "Glitter Bean Cafe",
+      "thumbnailUrl": "https://justitalymentone.com/Images/banners/home/DesktopID-866-20250925164835.png",
+      "sourceUrl": "https://justitalymentone.com/",
+      "reason": "unrelated_or_wrong_source_host",
+      "notes": "Visual review rejected for production thumbnail use. Metrics: 1920x613, entropy 7.854, transparency 0.0.",
+      "reviewedAt": "2026-09-03T13:08:09Z"
+    },
+    {
+      "restaurantId": "osm-node-3792869657-great-wall-restaurant",
+      "restaurantName": "Great Wall Restaurant",
+      "thumbnailUrl": "https://images.ctfassets.net/6civwduob0q9/6BfSuBatnTnW4CF2pxXZMU/16c87d9afd88b8326c86245ce11a44e5/Add__1_.png",
+      "sourceUrl": "https://ritual.co/order/the-great-wall-restaurant-bedford-row-sackville-halifax/9897",
+      "reason": "low_visual_quality_or_asset_like_metrics",
+      "notes": "Visual review rejected for production thumbnail use. Metrics: 48x48, entropy 0.205, transparency 0.823.",
+      "reviewedAt": "2026-09-03T13:08:09Z"
+    },
+    {
+      "restaurantId": "osm-node-7674251740-in-spring-asian-fusion-cuisine",
+      "restaurantName": "in spring asian fusion cuisine",
+      "thumbnailUrl": "https://takeaway-recruitment-api.k.elnino-production.com/storage/landing_page/bqGEmtHWvnKBGgyyyxQIKxT1hKCgLFQobEgkLldR.webp",
+      "sourceUrl": "https://couriers.skipthedishes.com/application/",
+      "reason": "third_party_delivery_courier_image",
+      "notes": "Visual review rejected for production thumbnail use. Metrics: 3840x2560, entropy 6.269, transparency 0.0.",
+      "reviewedAt": "2026-09-03T13:08:09Z"
+    },
+    {
+      "restaurantId": "osm-node-13912668535-jean-s-chinese-restaurant",
+      "restaurantName": "Jean's Chinese Restaurant",
+      "thumbnailUrl": "https://static.parastorage.com/services/editor-elements-library/dist/thunderbolt/media/sloppyframe.3214ce8e.png",
+      "sourceUrl": "https://www.jeansrestaurant.ca/",
+      "reason": "low_visual_quality_or_asset_like_metrics",
+      "notes": "Visual review rejected for production thumbnail use. Metrics: 1970x1970, entropy 0.279, transparency 1.0.",
+      "reviewedAt": "2026-09-03T13:08:09Z"
+    },
+    {
+      "restaurantId": "osm-node-8841366531-jungle-jim-s",
+      "restaurantName": "Jungle Jim's",
+      "thumbnailUrl": "https://junglejims.ca/assets/components/phpthumbof/cache/One-Night1.c98e335f59bd1e734da8af62e74645e2.webp",
+      "sourceUrl": "https://junglejims.ca/",
+      "reason": "event_or_campaign_banner_not_restaurant_thumbnail",
+      "notes": "Visual review rejected for production thumbnail use. Metrics: 1080x500, entropy 6.418, transparency 0.0.",
+      "reviewedAt": "2026-09-03T13:08:09Z"
+    },
+    {
+      "restaurantId": "osm-way-466806758-kfc",
+      "restaurantName": "KFC",
+      "thumbnailUrl": "https://quinpoolroad.ca/wp-content/uploads/2023/03/KFC-300x300.png",
+      "sourceUrl": "https://quinpoolroad.ca/member/kfc/",
+      "reason": "low_visual_quality_or_asset_like_metrics",
+      "notes": "Visual review rejected for production thumbnail use. Metrics: 300x300, entropy 2.453, transparency 0.647.",
+      "reviewedAt": "2026-09-03T13:08:09Z"
+    },
+    {
+      "restaurantId": "osm-node-3104142670-king-of-donair",
+      "restaurantName": "King of Donair",
+      "thumbnailUrl": "https://www.skipthedishes.com/_next/image?url=https%3A%2F%2Frestaurants-static.skipthedishes.com%2Fimages%2Fresized%2Flarge-767b9e214669a2587f97.jpg&w=3840&q=75",
+      "sourceUrl": "https://www.skipthedishes.com/king-of-donair-quinpool",
+      "reason": "third_party_delivery_source_not_official_site",
+      "notes": "Visual review rejected for production thumbnail use. Metrics: 1400x1400, entropy 5.085, transparency 0.0.",
+      "reviewedAt": "2026-09-03T13:08:09Z"
+    },
+    {
+      "restaurantId": "osm-node-11552119505-kofuku-japanese-and-thai",
+      "restaurantName": "Kofuku Japanese and Thai",
+      "thumbnailUrl": "https://cdn.shoplightspeed.com/shops/642004/themes/12737/assets/partner-lightspeed-order-ahead.png?2023113014140620201201163814",
+      "sourceUrl": "https://www.kofukujapaneseandthai.ca/",
+      "reason": "low_visual_quality_or_asset_like_metrics",
+      "notes": "Visual review rejected for production thumbnail use. Metrics: 509x100, entropy 0.788, transparency 0.843.",
+      "reviewedAt": "2026-09-03T13:08:09Z"
+    },
+    {
+      "restaurantId": "osm-node-2721720399-mashawee-mediterranean-grill",
+      "restaurantName": "Mashawee Mediterranean Grill",
+      "thumbnailUrl": "https://takeaway-recruitment-api.k.elnino-production.com/storage/landing_page/bqGEmtHWvnKBGgyyyxQIKxT1hKCgLFQobEgkLldR.webp",
+      "sourceUrl": "https://couriers.skipthedishes.com/application/",
+      "reason": "third_party_delivery_courier_image",
+      "notes": "Visual review rejected for production thumbnail use. Metrics: 3840x2560, entropy 6.269, transparency 0.0.",
+      "reviewedAt": "2026-09-03T13:08:09Z"
+    },
+    {
+      "restaurantId": "osm-node-13141551801-mcdonald-s",
+      "restaurantName": "McDonald's",
+      "thumbnailUrl": "https://quinpoolroad.ca/wp-content/uploads/2023/02/McDonalds-300x227.jpeg",
+      "sourceUrl": "https://quinpoolroad.ca/member/mcdonalds/",
+      "reason": "low_visual_quality_or_asset_like_metrics",
+      "notes": "Visual review rejected for production thumbnail use. Metrics: 300x227, entropy 2.459, transparency 0.0.",
+      "reviewedAt": "2026-09-03T13:08:09Z"
+    },
+    {
+      "restaurantId": "osm-node-12032307224-palm-tree-kitchen",
+      "restaurantName": "Palm Tree Kitchen",
+      "thumbnailUrl": "https://quinpoolroad.ca/wp-content/uploads/2024/01/Palm-Tree-300x258.png",
+      "sourceUrl": "https://quinpoolroad.ca/member/palm-tree-kitchen/",
+      "reason": "low_visual_quality_or_asset_like_metrics",
+      "notes": "Visual review rejected for production thumbnail use. Metrics: 300x258, entropy 1.855, transparency 0.0.",
+      "reviewedAt": "2026-09-03T13:08:09Z"
+    },
+    {
+      "restaurantId": "osm-node-9991598303-pizza-hut-delivery",
+      "restaurantName": "Pizza Hut Delivery",
+      "thumbnailUrl": "https://quinpoolroad.ca/wp-content/uploads/2023/02/Pizza-Hut-300x169.png",
+      "sourceUrl": "https://quinpoolroad.ca/member/pizza-hut/",
+      "reason": "low_visual_quality_or_asset_like_metrics",
+      "notes": "Visual review rejected for production thumbnail use. Metrics: 300x169, entropy 1.165, transparency 0.839.",
+      "reviewedAt": "2026-09-03T13:08:09Z"
+    },
+    {
+      "restaurantId": "osm-node-2623077568-salvatore-s-pizzaiolo-trattoria",
+      "restaurantName": "Salvatore's Pizzaiolo Trattoria",
+      "thumbnailUrl": "https://salvatorespizza.ca/wp-content/uploads/2016/11/cards.png",
+      "sourceUrl": "https://www.salvatorespizza.ca/",
+      "reason": "low_visual_quality_or_asset_like_metrics",
+      "notes": "Visual review rejected for production thumbnail use. Metrics: 360x50, entropy 6.136, transparency 0.0.",
+      "reviewedAt": "2026-09-03T13:08:09Z"
+    },
+    {
+      "restaurantId": "osm-node-267592027-the-black-sheep",
+      "restaurantName": "The Black Sheep",
+      "thumbnailUrl": "https://www.tbdine.com/touchbistro-dine.jpg",
+      "sourceUrl": "https://tbdine.com/halifax/restaurants/black-sheep-restaurant-water-street",
+      "reason": "third_party_reservation_generic_image",
+      "notes": "Visual review rejected for production thumbnail use. Metrics: 1200x630, entropy 0.75, transparency 0.0.",
+      "reviewedAt": "2026-09-03T13:08:09Z"
+    },
+    {
+      "restaurantId": "osm-way-180446788-tim-hortons",
+      "restaurantName": "Tim Hortons",
+      "thumbnailUrl": "https://cm-review-builder.s3.amazonaws.com/userImages/63bc7baed0478c003aca429a/6f91dcb78be26d6bfb6233f79f7b0cd1beaa9d3cb74b48ed11293673c4cb5a62.png",
+      "sourceUrl": "https://locations.timhortons.ca/en/ns/halifax/390-osborne-street",
+      "reason": "third_party_review_builder_image_not_first_party_media",
+      "notes": "Visual review rejected for production thumbnail use. Metrics: 800x800, entropy 7.377, transparency 0.0.",
+      "reviewedAt": "2026-09-03T13:08:09Z"
+    },
+    {
+      "restaurantId": "osm-node-886747513-trident-booksellers-and-cafe",
+      "restaurantName": "Trident Booksellers and Cafe",
+      "thumbnailUrl": "https://tridenthalifax.ca/wp-content/uploads/2026/08/NeonSignVolIII.png",
+      "sourceUrl": "https://tridenthalifax.ca/events/",
+      "reason": "event_poster_not_restaurant_food_thumbnail",
+      "notes": "Visual review rejected for production thumbnail use. Metrics: 1080x1350, entropy 5.891, transparency 0.0.",
+      "reviewedAt": "2026-09-03T13:08:09Z"
+    },
+    {
+      "restaurantId": "osm-node-33117793-wasabi-house",
+      "restaurantName": "Wasabi House",
+      "thumbnailUrl": "https://quinpoolroad.ca/wp-content/uploads/2023/02/wasabi-300x97.jpg",
+      "sourceUrl": "https://quinpoolroad.ca/member/wasabi-house-fine-japanese-cuisine/",
+      "reason": "low_visual_quality_or_asset_like_metrics",
+      "notes": "Visual review rejected for production thumbnail use. Metrics: 300x97, entropy 1.255, transparency 0.0.",
+      "reviewedAt": "2026-09-03T13:08:09Z"
+    },
+    {
+      "restaurantId": "osm-node-771698137-waterfront-warehouse",
+      "restaurantName": "Waterfront Warehouse",
+      "thumbnailUrl": "https://www.rcr.ca/content/uploads/2023/04/cable-wharf-kitchen-patio-4-1920x1006.jpg",
+      "sourceUrl": "https://www.rcr.ca/restaurants/cable-wharf-kitchen-patio/",
+      "reason": "source_mismatch_other_restaurant_brand",
+      "notes": "Visual review rejected for production thumbnail use. Metrics: 1920x1006, entropy 7.649, transparency 0.0.",
+      "reviewedAt": "2026-09-03T13:08:09Z"
+    },
+    {
+      "restaurantId": "osm-node-2714150702-wendy-s",
+      "restaurantName": "Wendy's",
+      "thumbnailUrl": "https://quinpoolroad.ca/wp-content/uploads/2023/02/Wendys-300x253.png",
+      "sourceUrl": "https://quinpoolroad.ca/member/wendys/",
+      "reason": "low_visual_quality_or_asset_like_metrics",
+      "notes": "Visual review rejected for production thumbnail use. Metrics: 300x253, entropy 3.037, transparency 0.651.",
+      "reviewedAt": "2026-09-03T13:08:09Z"
+    },
+    {
+      "restaurantId": "osm-node-6700234596-wowly",
+      "restaurantName": "Wowly",
+      "thumbnailUrl": "https://quinpoolroad.ca/wp-content/uploads/2026/05/wowly-1.png",
+      "sourceUrl": "https://quinpoolroad.ca/member/wowly/",
+      "reason": "low_visual_quality_or_asset_like_metrics",
+      "notes": "Visual review rejected for production thumbnail use. Metrics: 300x300, entropy 1.477, transparency 0.0.",
+      "reviewedAt": "2026-09-03T13:08:09Z"
     }
   ]
 }
