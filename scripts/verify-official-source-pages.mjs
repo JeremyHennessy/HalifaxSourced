@@ -6,6 +6,7 @@ const outputJson = new URL("../data/build/verified-source-pages.json", import.me
 const outputJs = new URL("../data/verified-source-pages.js", import.meta.url);
 const delayMs = Number(process.env.SOURCE_VERIFY_DELAY_MS ?? 250);
 const pageLimit = Number(process.env.SOURCE_VERIFY_PAGE_LIMIT ?? 300);
+const timeoutMs = Number(process.env.SOURCE_VERIFY_TIMEOUT_MS ?? 12000);
 const userAgent = "HalifaxSourced/0.3 (+https://github.com/JeremyHennessy/HalifaxSourced)";
 
 async function loadWindowScript(url) {
@@ -131,7 +132,7 @@ async function robotsAllows(url) {
   if (!robotsCache.has(origin)) {
     robotsCache.set(origin, (async () => {
       try {
-        const response = await fetch(new URL("/robots.txt", origin), { headers: { "User-Agent": userAgent } });
+        const response = await fetch(new URL("/robots.txt", origin), { headers: { "User-Agent": userAgent }, signal: AbortSignal.timeout(Math.min(8000, timeoutMs)) });
         if (response.status === 401 || response.status === 403) return ["/"];
         if (!response.ok) return [];
         return parseRobotsGroup(await response.text(), "HalifaxSourced");
@@ -220,7 +221,8 @@ for (const candidate of uniqueCandidates.slice(0, pageLimit)) {
   try {
     const response = await fetch(candidate.url, {
       headers: { "User-Agent": userAgent, Accept: "text/html,application/xhtml+xml,application/pdf;q=0.9,*/*;q=0.2" },
-      redirect: "follow"
+      redirect: "follow",
+      signal: AbortSignal.timeout(timeoutMs)
     });
     if (!response.ok) {
       failures.push({ ...candidate, reason: `http_${response.status}` });

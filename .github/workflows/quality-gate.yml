@@ -35,6 +35,10 @@ jobs:
         run: node scripts/test-structured-specials-model.mjs
 
       - name: Build public happy-hour source leads
+        env:
+          PUBLIC_SPECIAL_CAMPAIGN_LIMIT: 80
+          PUBLIC_SPECIAL_CAMPAIGN_CRAWL_DELAY_MS: 250
+          PUBLIC_SPECIAL_LEAD_TIMEOUT_MS: 10000
         run: node scripts/import-public-special-source-leads.mjs
 
       - name: Build deterministic structured specials
@@ -152,6 +156,10 @@ jobs:
           node-version: 22
 
       - name: Build public happy-hour source leads for browser verification
+        env:
+          PUBLIC_SPECIAL_CAMPAIGN_LIMIT: 80
+          PUBLIC_SPECIAL_CAMPAIGN_CRAWL_DELAY_MS: 250
+          PUBLIC_SPECIAL_LEAD_TIMEOUT_MS: 10000
         run: node scripts/import-public-special-source-leads.mjs
 
       - name: Build structured specials for browser verification

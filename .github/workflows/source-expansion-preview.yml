@@ -62,6 +62,7 @@ jobs:
         env:
           SOURCE_VERIFY_DELAY_MS: 250
           SOURCE_VERIFY_PAGE_LIMIT: 300
+          SOURCE_VERIFY_TIMEOUT_MS: 10000
         run: node scripts/verify-official-source-pages.mjs
 
       - name: Refresh structured event dates
@@ -75,6 +76,10 @@ jobs:
         run: node scripts/import-patio-directory-facts.mjs
 
       - name: Refresh public happy-hour source leads
+        env:
+          PUBLIC_SPECIAL_CAMPAIGN_LIMIT: 100
+          PUBLIC_SPECIAL_CAMPAIGN_CRAWL_DELAY_MS: 250
+          PUBLIC_SPECIAL_LEAD_TIMEOUT_MS: 10000
         run: node scripts/import-public-special-source-leads.mjs
 
       - name: Discover first-party feeds, social profiles, link hubs, and related links
