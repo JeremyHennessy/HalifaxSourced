@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "generatedAt": "2026-08-31T11:50:13.422Z",
-  "targetCount": 89,
+  "generatedAt": "2026-09-03T11:06:48.563Z",
+  "targetCount": 92,
   "policy": "Approved restaurant media may include Wikimedia Commons files with explicit reusable licences, documented restaurant-owner submissions, explicitly licensed material, or app-owner-reviewed HTTPS image references from restaurant official websites or feeds. Remote official-site images are linked with source attribution and are not rehosted.",
   "allowedSources": [
     "wikimedia_commons",
@@ -13,7 +13,7 @@
     {
       "restaurantId": "2-doors-down",
       "name": "2 Doors Down",
-      "status": "pending_rights_source"
+      "status": "approved"
     },
     {
       "restaurantId": "osm-node-2714150704-7-peppers-grill",
@@ -48,7 +48,7 @@
     {
       "restaurantId": "bar-kismet",
       "name": "Bar Kismet",
-      "status": "pending_rights_source"
+      "status": "approved"
     },
     {
       "restaurantId": "osm-node-8600605850-barburrito",
@@ -433,7 +433,7 @@
     {
       "restaurantId": "the-bicycle-thief",
       "name": "The Bicycle Thief",
-      "status": "pending_rights_source"
+      "status": "approved"
     },
     {
       "restaurantId": "the-narrows",
@@ -453,6 +453,21 @@
     {
       "restaurantId": "osm-node-26041177-your-father-s-moustache",
       "name": "Your Father's Moustache",
+      "status": "approved"
+    },
+    {
+      "restaurantId": "osm-way-83552117-bedford-beer-garden",
+      "name": "Bedford Beer Garden",
+      "status": "approved"
+    },
+    {
+      "restaurantId": "osm-node-2714920436-greco-pizza",
+      "name": "Greco Pizza",
+      "status": "approved"
+    },
+    {
+      "restaurantId": "osm-way-253538107-the-armview-restaurant-and-lounge",
+      "name": "The Armview Restaurant & Lounge",
       "status": "approved"
     }
   ]

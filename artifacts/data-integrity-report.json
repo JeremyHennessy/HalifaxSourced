@@ -1,16 +1,16 @@
 {
-  "generatedAt": "2026-09-02T17:43:37.726Z",
+  "generatedAt": "2026-09-03T11:09:30.961Z",
   "counts": {
     "curated": 10,
     "osm": 736,
     "officialSignals": 290,
     "officialWithValidSite": 289,
     "officialCandidateLinks": 994,
-    "productionMedia": 73,
+    "productionMedia": 79,
     "ownerSubmissions": 0,
     "ownerMediaPendingReview": 0,
     "structuredEvents": 21,
-    "staleStructuredEvents": 0,
+    "staleStructuredEvents": 1,
     "verifiedMenuSources": 343,
     "verifiedSpecialSources": 77,
     "verifiedSourceFailures": 22,
@@ -1954,6 +1954,19 @@
           "restaurantId": "osm-node-5134046822-chain-yard-urban-cidery",
           "name": "Chain Yard Urban Cidery",
           "website": "http://://www.chainyardcider.com"
+        }
+      ]
+    },
+    {
+      "type": "stale_structured_events",
+      "count": 1,
+      "examples": [
+        {
+          "id": "evt-2f0e9b73d2c665c522",
+          "restaurantId": "osm-node-37132580-durty-nelly-s-irish-pub",
+          "title": "Industry night with Tyler Key",
+          "startAt": "2026-09-02T02:00:00.000Z",
+          "endAt": "2026-09-02T05:00:00.000Z"
         }
       ]
     },

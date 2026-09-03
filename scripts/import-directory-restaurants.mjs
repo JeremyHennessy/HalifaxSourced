@@ -659,7 +659,11 @@ function parseRansDetail(restRecord, html, sourceMeta) {
   const website = ransLabeledUrl(text, "Website");
   const socialProfiles = ransSocialProfiles(text);
   const media = restRecord?._embedded?.["wp:featuredmedia"]?.[0];
-  const imageUrl = safeUrl(media?.source_url || metaContent(detailHtml, "og:image"), restRecord.link || sourceMeta.url);
+  const sourceUrl = restRecord.link || sourceMeta.url;
+  const pageUrl = safeUrl(sourceUrl);
+  const rawImageUrl = media?.source_url || metaContent(detailHtml, "og:image");
+  const candidateImageUrl = safeUrl(rawImageUrl, sourceUrl);
+  const imageUrl = candidateImageUrl && candidateImageUrl.replace(/\/$/, "") !== pageUrl?.replace(/\/$/, "") ? candidateImageUrl : null;
   const description = metaContent(detailHtml, "og:description") || metaContent(detailHtml, "description");
   const address = extractRansAddress(text) || extractAddress(text.split(/\n+/), "Halifax");
   const phone = extractRansPhone(detailHtml, text);
@@ -696,7 +700,7 @@ function parseRansDetail(restRecord, html, sourceMeta) {
     sourceId: sourceMeta.id,
     sourceName: sourceMeta.name,
     sourceKind: sourceMeta.kind,
-    sourceUrl: restRecord.link || sourceMeta.url,
+    sourceUrl,
     sourceUpdatedAt: restRecord.modified_gmt || restRecord.modified || null,
     observedAt: new Date().toISOString(),
     reviewState: "directory-listed"
