@@ -1,6 +1,6 @@
 # Halifax Sourced thumbnail coverage report
 
-Generated: 2026-09-03T13:08:55.152Z
+Generated: 2026-09-03T17:38:09.309Z
 
 This report tracks source-backed image leads for restaurant thumbnails. It separates production-approved media from candidates that still need review, attribution, or permission before they can become default restaurant card imagery.
 
@@ -10,19 +10,20 @@ This report tracks source-backed image leads for restaurant thumbnails. It separ
 | --- | ---: | ---: |
 | Catalog restaurants | 740 | 100% |
 | Restaurants with approved thumbnail | 107 | 14.5% |
-| Restaurants with any thumbnail candidate | 190 | 25.7% |
+| Restaurants with any thumbnail candidate | 192 | 25.9% |
 | Restaurants missing approved thumbnail | 633 | 85.5% |
-| Restaurants missing any candidate | 550 | 74.3% |
-| Promotion queue | 45 | 6.1% |
-| Discovery queue | 550 | 74.3% |
+| Restaurants missing any candidate | 548 | 74.1% |
+| Promotion queue | 20 | 2.7% |
+| Source-check queue | 37 | 5% |
+| Discovery queue | 548 | 74.1% |
 
-Total thumbnail candidates: **2136**. Review-needed candidates: **2029**. Fetch failures in the latest run: **47**.
+Total thumbnail candidates: **2166**. Review-needed candidates: **2059**. Fetch failures in the latest run: **200**.
 
 ## Candidate source mix
 
 | Source kind | Candidates |
 | --- | ---: |
-| official_page_thumbnail_candidate | 1,961 |
+| official_page_thumbnail_candidate | 1,991 |
 | approved_restaurant_media | 107 |
 | public_campaign_menu_image | 41 |
 | directory_source_image | 20 |
@@ -32,13 +33,16 @@ Total thumbnail candidates: **2136**. Review-needed candidates: **2029**. Fetch 
 
 | Review state | Candidates |
 | --- | ---: |
-| candidate_review | 2,029 |
+| candidate_review | 2,001 |
 | approved | 107 |
+| source_check | 34 |
+| rejected | 24 |
 
 | Rights state | Candidates |
 | --- | ---: |
-| requires_rights_review | 2,029 |
+| requires_rights_review | 2,035 |
 | production_approved | 107 |
+| rejected | 24 |
 
 ## Promotion queue
 
@@ -47,31 +51,50 @@ Restaurants below are missing approved thumbnails but have source-backed candida
 | Restaurant | Neighbourhood | Candidates | Best source | Website |
 | --- | --- | ---: | --- | --- |
 | Jungle Jim's | Bayers Lake Business Park | 33 | directory_source_image | https://junglejims.ca/ |
-| Downtown Pizza | Dartmouth | 25 | official_page_thumbnail_candidate | https://downtownpizza.ca/ |
-| Mirchi Tandoor | Downtown | 20 | official_page_thumbnail_candidate | https://mirchitandoor.com/ |
-| Glitter Bean Cafe | South End | 16 | official_page_thumbnail_candidate | https://www.glitterbeancafe.com/ |
-| Jacky's Cafe | South End | 15 | official_page_thumbnail_candidate | https://jackyscafehalifax.com/ |
-| Marigold Kitchen | Downtown | 12 | official_page_thumbnail_candidate | https://marigoldkitchen.ca |
-| Bramble Cafe | North End | 5 | official_page_thumbnail_candidate | https://www.instagram.com/bramble.hfx |
+| Mirchi Tandoor | Downtown | 19 | official_page_thumbnail_candidate | https://mirchitandoor.com/ |
+| Jacky's Cafe | South End | 14 | official_page_thumbnail_candidate | https://jackyscafehalifax.com/ |
+| Marigold Kitchen | Downtown | 11 | official_page_thumbnail_candidate | https://marigoldkitchen.ca |
+| Phở Hoang Minh | Dartmouth | 10 | official_page_thumbnail_candidate | https://www.phohoangminh.ca/ |
+| Downtown Pizza | Dartmouth | 9 | official_page_thumbnail_candidate | https://downtownpizza.ca/ |
+| PG Cafe and Grill | Waterfront | 9 | official_page_thumbnail_candidate | https://pgcafeandgrill.com/ |
 | in spring asian fusion cuisine | Downtown | 5 | official_page_thumbnail_candidate | https://www.inspringhotpot.com/ |
 | Mashawee Mediterranean Grill | Downtown | 5 | official_page_thumbnail_candidate | https://www.mashaweemediterraneangrill.ca/ |
-| Cheese Curds and Habaneros | Armdale / Fairview | 4 | official_page_thumbnail_candidate | https://cheesecurdsgourmetburgersandpoutinerie.unuhub.net/ |
+| Bramble Cafe | North End | 4 | official_page_thumbnail_candidate | https://www.instagram.com/bramble.hfx |
 | King of Donair | Halifax Peninsula | 4 | official_page_thumbnail_candidate | https://www.kingofdonair.ca |
 | The Black Sheep | Downtown | 4 | official_page_thumbnail_candidate | https://blacksheephalifax.com/ |
-| Five Fishermen | Downtown | 2 | public_campaign_menu_image |  |
-| Gahan House | Downtown | 2 | official_page_thumbnail_candidate | https://gahan.ca |
-| Tim Hortons | Downtown | 2 | directory_source_image | https://www.timhortons.com/ |
+| Cheese Curds and Habaneros | Armdale / Fairview | 3 | official_page_thumbnail_candidate | https://cheesecurdsgourmetburgersandpoutinerie.unuhub.net/ |
 | Waterfront Warehouse | Waterfront | 2 | official_page_thumbnail_candidate | https://www.rcr.ca/restaurants/waterfront-warehouse/ |
+| Five Fishermen | Downtown | 1 | public_campaign_menu_image |  |
+| Gahan House | Downtown | 1 | official_page_thumbnail_candidate | https://gahan.ca |
+| Jean's Chinese Restaurant | Dartmouth | 1 | official_page_thumbnail_candidate | https://www.jeansrestaurant.ca/ |
+| Tim Hortons | Downtown | 1 | directory_source_image | https://www.timhortons.com/ |
+| Tim Hortons | South End | 1 | official_page_thumbnail_candidate | https://locations.timhortons.ca/en/ns/halifax/390-osborne-street/ |
+| Trident Booksellers and Cafe | Waterfront | 1 | official_page_thumbnail_candidate | https://tridenthalifax.ca/ |
+
+## Source-check queue
+
+Restaurants below have thumbnail candidates held for source-host, provenance, or first-party validation review before promotion.
+
+| Restaurant | Neighbourhood | Candidates | Best source | Website |
+| --- | --- | ---: | --- | --- |
 | Baton Rouge | Waterfront | 1 | public_campaign_menu_image |  |
+| Bramble Cafe | North End | 1 | official_page_thumbnail_candidate | https://www.instagram.com/bramble.hfx |
 | Cannery Kitchen & Social | Downtown | 1 | public_campaign_menu_image |  |
+| Cheese Curds and Habaneros | Armdale / Fairview | 1 | official_page_thumbnail_candidate | https://cheesecurdsgourmetburgersandpoutinerie.unuhub.net/ |
 | Daryâ | Downtown | 1 | public_campaign_menu_image |  |
 | Drift | Downtown | 1 | public_campaign_menu_image |  |
 | Economy Shoe Shop | Downtown | 1 | public_campaign_menu_image |  |
+| Five Fishermen | Downtown | 1 | public_campaign_menu_image |  |
+| Gahan House | Downtown | 1 | public_campaign_menu_image | https://gahan.ca |
 | Gio | Downtown | 1 | public_campaign_menu_image |  |
+| Glitter Bean Cafe | South End | 1 | official_page_thumbnail_candidate | https://www.glitterbeancafe.com/ |
 | Humble Pie Kitchen | Dartmouth | 1 | official_page_thumbnail_candidate | https://humblepiekitchen.ca/ |
-| Jean's Chinese Restaurant | Dartmouth | 1 | official_page_thumbnail_candidate | https://www.jeansrestaurant.ca/ |
+| Jacky's Cafe | South End | 1 | official_page_thumbnail_candidate | https://jackyscafehalifax.com/ |
+| King of Donair | Halifax Peninsula | 1 | official_page_thumbnail_candidate | https://www.kingofdonair.ca |
+| Marigold Kitchen | Downtown | 1 | official_page_thumbnail_candidate | https://marigoldkitchen.ca |
 | McDonald's | North End | 1 | directory_source_image | http://www.mcdonalds.ca/ |
 | McKelvie's | Waterfront | 1 | public_campaign_menu_image |  |
+| Mirchi Tandoor | Downtown | 1 | official_page_thumbnail_candidate | https://mirchitandoor.com/ |
 | Pane e Circo | Downtown | 1 | public_campaign_menu_image |  |
 | Salt & Ash | Downtown | 1 | public_campaign_menu_image |  |
 | Sea Smoke | Waterfront | 1 | public_campaign_menu_image | https://www.seasmokehalifax.com |
@@ -85,7 +108,12 @@ Restaurants below are missing approved thumbnails but have source-backed candida
 | The Mic Mac Bar and Grill | Dartmouth | 1 | official_page_thumbnail_candidate | https://micmacbarandgrill.com/ |
 | The Old Triangle Irish Pub | Downtown | 1 | public_campaign_menu_image | https://www.oldtriangle.com/welcome/ |
 | The Press Gang | Downtown | 1 | public_campaign_menu_image | https://thepressgang.ca/ |
-| Tim Hortons | South End | 1 | official_page_thumbnail_candidate | https://locations.timhortons.ca/en/ns/halifax/390-osborne-street/ |
+| Tim Hortons | Downtown | 1 | directory_source_image | https://www.timhortons.com/ |
+| Toridori | Downtown | 1 | public_campaign_menu_image |  |
+| Trattoria Vesso | South End | 1 | public_campaign_menu_image |  |
+| Two if By Sea | Dartmouth | 1 | official_page_thumbnail_candidate | https://www.twoifbyseacafe.ca/ |
+| Waterfront Warehouse | Waterfront | 1 | official_page_thumbnail_candidate | https://www.rcr.ca/restaurants/waterfront-warehouse/ |
+| Wooden Monkey | Downtown | 1 | public_campaign_menu_image | https://www.thewoodenmonkey.ca/ |
 
 ## Discovery queue
 

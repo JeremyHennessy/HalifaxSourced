@@ -8,10 +8,26 @@ const delayMs = Number(process.env.THUMBNAIL_DISCOVERY_DELAY_MS ?? 150);
 const pageLimit = Math.max(0, Number(process.env.THUMBNAIL_DISCOVERY_PAGE_LIMIT ?? 120));
 const pagesPerRestaurant = Math.max(1, Math.min(6, Number(process.env.THUMBNAIL_DISCOVERY_PAGES_PER_RESTAURANT ?? 3)));
 const fetchOfficialPages = String(process.env.THUMBNAIL_DISCOVERY_FETCH ?? "0") === "1";
+const discoveryScope = String(process.env.THUMBNAIL_DISCOVERY_SCOPE ?? "missing_any").toLowerCase();
+const subpageLimit = Math.max(0, Math.min(12, Number(process.env.THUMBNAIL_DISCOVERY_SUBPAGE_LIMIT ?? 8)));
+const imageProbeEnabled = String(process.env.THUMBNAIL_IMAGE_PROBE ?? (fetchOfficialPages ? "1" : "0")) === "1";
+const imageProbeLimit = Math.max(0, Number(process.env.THUMBNAIL_IMAGE_PROBE_LIMIT ?? 400));
 const userAgent = "HalifaxSourced/0.3 (+https://github.com/JeremyHennessy/HalifaxSourced)";
 const outputJsonPath = new URL("../data/build/thumbnail-candidates.json", import.meta.url);
 const outputScriptPath = new URL("../data/thumbnail-candidates.js", import.meta.url);
 let reviewedThumbnailRejections = new Map();
+let reviewedThumbnailDecisionsById = new Map();
+let reviewedThumbnailDecisionsByImage = new Map();
+
+const subpageSlugs = [
+  "menu", "menus", "food", "drink", "drinks", "gallery", "photos", "events", "event", "blog", "news", "specials", "happy-hour", "happyhour", "patio", "about"
+];
+const blockedSourceHostFragments = [
+  "facebook.com", "instagram.com", "fbcdn.net", "scontent-", "skipthedishes.com", "ubereats.com", "doordash.com", "tbdine.com", "opentable.", "resy.com", "yelp.", "tripadvisor.", "google.", "maps.google.", "linktr.ee", "bit.ly", "tinyurl.com"
+];
+const approvedImageCdnHosts = new Set([
+  "images.squarespace-cdn.com", "static1.squarespace.com", "static.wixstatic.com", "img1.wsimg.com", "images.getbento.com", "res.cloudinary.com", "i0.wp.com", "i1.wp.com", "i2.wp.com", "i3.wp.com", "cdn.shopify.com", "cdn.sanity.io", "assets-global.website-files.com", "uploads-ssl.webflow.com"
+]);
 
 async function loadJson(path, fallback) {
   try { return JSON.parse(await readFile(new URL(path, import.meta.url), "utf8")); }
@@ -88,6 +104,22 @@ function thumbnailQualityFlags(candidate) {
   if (/stock|franchis|brand-refresh|summary_square|artboard|fit=100%2c50|fit=100,50|h1_shape|web\+logo|web-logo/.test(lower)) flags.push("generic_brand_or_stock_image");
   if (/facebook\.com|fbcdn\.net|scontent-/.test(lower) || /facebook\.com|fbcdn\.net|scontent-/.test(sourceLower)) flags.push("social_profile_image");
   if (safeUrl(thumbnailUrl) && safeUrl(sourceUrl) && safeUrl(thumbnailUrl) === safeUrl(sourceUrl)) flags.push("thumbnail_is_page_url");
+  if (["blocked_source_host", "blocked_image_host", "source_host_not_first_party"].includes(candidate?.sourceHostValidation)) flags.push(candidate.sourceHostValidation);
+  if (candidate?.sourceHostValidation === "remote_image_host_needs_source_check") flags.push("remote_image_host_needs_source_check");
+  const probedWidth = Number(candidate?.imageProbe?.width || candidate?.width);
+  const probedHeight = Number(candidate?.imageProbe?.height || candidate?.height);
+  const probedContentType = String(candidate?.imageProbe?.contentType || "").toLowerCase();
+  const probedBytes = Number(candidate?.imageProbe?.contentLength || candidate?.imageProbe?.sampledBytes || 0);
+  if (candidate?.imageProbe && candidate.imageProbe.ok === false) flags.push("image_probe_failed");
+  if (probedContentType && !probedContentType.startsWith("image/")) flags.push("non_image_response");
+  if (Number.isFinite(probedWidth) && Number.isFinite(probedHeight) && probedWidth > 0 && probedHeight > 0) {
+    const aspect = probedWidth / probedHeight;
+    if (probedWidth < 300 || probedHeight < 160) flags.push("tiny_decoded_image");
+    if (aspect < 0.5 || aspect > 2.8) flags.push("awkward_thumbnail_aspect");
+  }
+  if (probedBytes > 0 && probedBytes < 12000) flags.push("very_small_image_payload");
+  const reviewedDecision = reviewedThumbnailDecisionsById.get(candidate?.id) || reviewedThumbnailDecisionsByImage.get(`${candidate?.restaurantId || ""}|${thumbnailUrl}`);
+  if (reviewedDecision === "needs_source_check") flags.push("reviewed_needs_source_check");
   const rejectionKey = `${candidate?.restaurantId || ""}|${thumbnailUrl}`;
   if (reviewedThumbnailRejections.has(rejectionKey)) flags.push(`reviewed_rejected_${reviewedThumbnailRejections.get(rejectionKey)}`);
   return [...new Set(flags)];
@@ -102,17 +134,128 @@ function thumbnailReviewPriority(candidate) {
   if (candidate?.confidence === "same_host_official_page_image") score += 4;
   if (flags.includes("generic_social_card")) score -= 8;
   for (const flag of flags) {
-    if (["icon_or_favicon", "placeholder_image", "logo_candidate", "social_profile_image", "thumbnail_is_page_url", "generic_brand_or_stock_image"].includes(flag)) score -= 35;
+    if (["icon_or_favicon", "placeholder_image", "logo_candidate", "social_profile_image", "thumbnail_is_page_url", "generic_brand_or_stock_image", "blocked_source_host", "blocked_image_host", "source_host_not_first_party", "non_image_response", "tiny_decoded_image", "awkward_thumbnail_aspect", "very_small_image_payload", "image_probe_failed"].includes(flag)) score -= 35;
   }
   return Math.max(0, score);
 }
 function promotionReviewState(candidate) {
   if (candidate?.reviewState === "approved" && candidate?.rightsStatus === "production_approved") return "approved";
-  return thumbnailReviewPriority(candidate) >= 45 && thumbnailQualityFlags(candidate).length === 0 ? "needs_visual_review" : "low_quality_metadata";
+  const flags = thumbnailQualityFlags(candidate);
+  if (flags.includes("reviewed_needs_source_check") || flags.includes("remote_image_host_needs_source_check")) return "source_check";
+  return thumbnailReviewPriority(candidate) >= 45 && flags.length === 0 ? "needs_visual_review" : "low_quality_metadata";
 }
 function host(value) {
   try { return new URL(value).hostname.toLowerCase().replace(/^www\./, "").replace(/^m\./, ""); }
   catch { return ""; }
+}
+function hostBlocked(value) {
+  const normalized = host(value);
+  return !normalized || blockedSourceHostFragments.some((fragment) => normalized.includes(fragment));
+}
+function hostMatches(candidateHost, officialHost) {
+  if (!candidateHost || !officialHost) return false;
+  return candidateHost === officialHost || candidateHost.endsWith(`.${officialHost}`) || officialHost.endsWith(`.${candidateHost}`);
+}
+function officialHostsForRestaurant(restaurant, firstPartyRecord = {}) {
+  return [...new Set([restaurant.website, firstPartyRecord.website]
+    .map((value) => host(value))
+    .filter((value) => value && !hostBlocked(`https://${value}`)))]
+}
+function sourceHostValidation(restaurant, pageUrl, imageUrl, firstPartyRecord = {}) {
+  const pageHost = host(pageUrl);
+  const imageHost = host(imageUrl);
+  const officialHosts = officialHostsForRestaurant(restaurant, firstPartyRecord);
+  const pageIsOfficial = officialHosts.some((officialHost) => hostMatches(pageHost, officialHost));
+  const imageIsOfficial = officialHosts.some((officialHost) => hostMatches(imageHost, officialHost));
+  const imageIsApprovedCdn = approvedImageCdnHosts.has(imageHost);
+  if (hostBlocked(pageUrl)) return { state: "blocked_source_host", pageHost, imageHost, officialHosts };
+  if (!pageIsOfficial) return { state: "source_host_not_first_party", pageHost, imageHost, officialHosts };
+  if (hostBlocked(imageUrl)) return { state: "blocked_image_host", pageHost, imageHost, officialHosts };
+  if (imageIsOfficial) return { state: "first_party_image_host", pageHost, imageHost, officialHosts };
+  if (imageIsApprovedCdn) return { state: "approved_cdn_image_host", pageHost, imageHost, officialHosts };
+  return { state: "remote_image_host_needs_source_check", pageHost, imageHost, officialHosts };
+}
+function siteRoot(value) {
+  const url = safeUrl(value);
+  if (!url || hostBlocked(url)) return null;
+  const parsed = new URL(url);
+  return `${parsed.protocol}//${parsed.host}/`;
+}
+function officialSubpageUrls(restaurant, firstPartyRecord = {}) {
+  const urls = [];
+  const push = (value) => {
+    const url = safeUrl(value);
+    if (!url || hostBlocked(url)) return;
+    const validation = sourceHostValidation(restaurant, url, url, firstPartyRecord);
+    if (["first_party_image_host", "approved_cdn_image_host"].includes(validation.state)) urls.push(url);
+  };
+  push(restaurant.website);
+  push(firstPartyRecord.website);
+  for (const link of firstPartyRecord.relatedLinks || []) {
+    if (["menu", "events", "ordering", "reservations"].includes(link.kind)) push(link.url);
+  }
+  for (const base of [restaurant.website, firstPartyRecord.website].map(siteRoot).filter(Boolean)) {
+    for (const slug of subpageSlugs.slice(0, subpageLimit)) push(new URL(slug.replace(/^\//, ""), base).href);
+  }
+  return [...new Set(urls)].slice(0, pagesPerRestaurant);
+}
+function readUint24(bytes, offset) {
+  return (bytes[offset] << 16) + (bytes[offset + 1] << 8) + bytes[offset + 2];
+}
+function decodeImageDimensions(bytes) {
+  if (!bytes?.length || bytes.length < 16) return null;
+  if (bytes[0] === 0x89 && bytes[1] === 0x50 && bytes[2] === 0x4e && bytes[3] === 0x47 && bytes.length >= 24) {
+    return { format: "png", width: bytes.readUInt32BE(16), height: bytes.readUInt32BE(20) };
+  }
+  if (bytes[0] === 0xff && bytes[1] === 0xd8) {
+    let offset = 2;
+    while (offset + 9 < bytes.length) {
+      if (bytes[offset] !== 0xff) { offset += 1; continue; }
+      const marker = bytes[offset + 1];
+      const size = bytes.readUInt16BE(offset + 2);
+      if ([0xc0, 0xc1, 0xc2, 0xc3, 0xc5, 0xc6, 0xc7, 0xc9, 0xca, 0xcb, 0xcd, 0xce, 0xcf].includes(marker)) {
+        return { format: "jpeg", width: bytes.readUInt16BE(offset + 7), height: bytes.readUInt16BE(offset + 5) };
+      }
+      offset += Math.max(2, size + 2);
+    }
+  }
+  if (bytes.slice(0, 6).toString("ascii") === "GIF87a" || bytes.slice(0, 6).toString("ascii") === "GIF89a") {
+    return { format: "gif", width: bytes.readUInt16LE(6), height: bytes.readUInt16LE(8) };
+  }
+  if (bytes.slice(0, 4).toString("ascii") === "RIFF" && bytes.slice(8, 12).toString("ascii") === "WEBP") {
+    const type = bytes.slice(12, 16).toString("ascii");
+    if (type === "VP8X" && bytes.length >= 30) return { format: "webp", width: 1 + readUint24(bytes, 24), height: 1 + readUint24(bytes, 27) };
+    if (type === "VP8 " && bytes.length >= 30) return { format: "webp", width: bytes.readUInt16LE(26) & 0x3fff, height: bytes.readUInt16LE(28) & 0x3fff };
+    if (type === "VP8L" && bytes.length >= 25) {
+      const bits = bytes.readUInt32LE(21);
+      return { format: "webp", width: 1 + (bits & 0x3fff), height: 1 + ((bits >> 14) & 0x3fff) };
+    }
+  }
+  return null;
+}
+async function probeImage(candidate) {
+  const thumbnailUrl = safeUrl(candidate?.thumbnailUrl);
+  if (!thumbnailUrl || !thumbnailUrl.startsWith("https://")) return null;
+  try {
+    const response = await fetch(thumbnailUrl, {
+      headers: { "User-Agent": userAgent, Accept: "image/avif,image/webp,image/apng,image/*,*/*;q=0.6", Range: "bytes=0-262143" },
+      redirect: "follow",
+      signal: AbortSignal.timeout(timeoutMs)
+    });
+    if (!response.ok && response.status !== 206) return { ok: false, status: response.status };
+    const bytes = Buffer.from(await response.arrayBuffer());
+    const dimensions = decodeImageDimensions(bytes);
+    return {
+      ok: true,
+      status: response.status,
+      contentType: response.headers.get("content-type") || null,
+      contentLength: Number(response.headers.get("content-length")) || null,
+      sampledBytes: bytes.length,
+      ...(dimensions || {})
+    };
+  } catch (error) {
+    return { ok: false, reason: error.name === "TimeoutError" ? "timeout" : error.message };
+  }
 }
 function htmlDecode(value) {
   return String(value ?? "")
@@ -290,7 +433,8 @@ function directoryImageCandidate(lead, resolution, restaurantName) {
     category: lead.category || null
   };
 }
-function pageCandidate(restaurant, pageUrl, image) {
+function pageCandidate(restaurant, pageUrl, image, firstPartyRecord = {}) {
+  const validation = sourceHostValidation(restaurant, pageUrl, image.url, firstPartyRecord);
   return {
     restaurantId: restaurant.id,
     restaurantName: restaurant.name,
@@ -301,14 +445,46 @@ function pageCandidate(restaurant, pageUrl, image) {
     extractionMethod: image.extractionMethod,
     width: image.width || null,
     height: image.height || null,
+    imageProbe: image.imageProbe || null,
+    imageHost: validation.imageHost || null,
+    sourceHost: validation.pageHost || null,
+    officialHosts: validation.officialHosts || [],
+    sourceHostValidation: validation.state,
     reviewState: "candidate_review",
     rightsStatus: "requires_rights_review",
     permission: null,
     rightsBasis: null,
     attribution: null,
-    alt: `${restaurant.name} thumbnail candidate`,
-    confidence: host(image.url) === host(pageUrl) ? "same_host_official_page_image" : "official_page_declared_remote_image",
+    alt: image.alt ? `${restaurant.name}: ${image.alt}` : `${restaurant.name} thumbnail candidate`,
+    confidence: validation.state === "first_party_image_host" ? "same_host_official_page_image" : validation.state === "approved_cdn_image_host" ? "official_page_approved_cdn_image" : validation.state,
     observedAt: generatedAt
+  };
+}
+function ownerSubmittedImageCandidate(submission, image, restaurantName) {
+  const thumbnailUrl = safeThumbnailUrl(image.url);
+  const sourceUrl = safeUrl(image.sourceUrl || submission.sourceUrl);
+  if (!submission.restaurantId || !thumbnailUrl || !sourceUrl) return null;
+  const permissionConfirmed = image.permissionConfirmed === true;
+  return {
+    restaurantId: submission.restaurantId,
+    restaurantName: restaurantName || submission.name || "Owner-submitted restaurant",
+    thumbnailUrl,
+    sourceUrl,
+    sourceKind: "owner_submitted_image",
+    extractionMethod: "owner_submitted_media_import",
+    width: image.width || null,
+    height: image.height || null,
+    reviewState: "candidate_review",
+    rightsStatus: "requires_rights_review",
+    permission: image.permission || null,
+    permissionConfirmed,
+    rightsBasis: image.rightsBasis || null,
+    attribution: image.attribution || null,
+    alt: image.alt || `${submission.name || restaurantName || "Restaurant"} owner-submitted image`,
+    confidence: permissionConfirmed ? "owner_submitted_permission_declared" : "owner_submitted_needs_permission",
+    observedAt: submission.observedAt || generatedAt,
+    title: submission.name || restaurantName || null,
+    category: "owner_submission"
   };
 }
 function normalizeCandidate(candidate) {
@@ -327,11 +503,17 @@ function normalizeCandidate(candidate) {
     platform: candidate.platform || null,
     sourceKind: candidate.sourceKind,
     extractionMethod: candidate.extractionMethod,
-    width: candidate.width || null,
-    height: candidate.height || null,
+    width: candidate.imageProbe?.width || candidate.width || null,
+    height: candidate.imageProbe?.height || candidate.height || null,
+    imageProbe: candidate.imageProbe || null,
+    imageHost: candidate.imageHost || host(thumbnailUrl) || null,
+    sourceHost: candidate.sourceHost || host(sourceUrl) || null,
+    officialHosts: candidate.officialHosts || [],
+    sourceHostValidation: candidate.sourceHostValidation || null,
     reviewState: candidate.reviewState,
     rightsStatus: candidate.rightsStatus,
     permission: candidate.permission || null,
+    permissionConfirmed: candidate.permissionConfirmed === true,
     rightsBasis: candidate.rightsBasis || null,
     attribution: candidate.attribution || null,
     alt: String(candidate.alt || candidate.restaurantName || "Restaurant thumbnail").slice(0, 180),
@@ -342,6 +524,13 @@ function normalizeCandidate(candidate) {
     category: candidate.category || null,
     eligibleForProduction: candidate.reviewState === "approved" && candidate.rightsStatus === "production_approved"
   };
+  const reviewedDecision = reviewedThumbnailDecisionsById.get(normalized.id) || reviewedThumbnailDecisionsByImage.get(`${normalized.restaurantId}|${normalized.thumbnailUrl}`);
+  if (reviewedDecision === "needs_source_check") normalized.reviewState = "source_check";
+  if (["reject_thumbnail", "reject_candidate"].includes(reviewedDecision)) {
+    normalized.reviewState = "rejected";
+    normalized.rightsStatus = "rejected";
+  }
+  normalized.eligibleForProduction = normalized.reviewState === "approved" && normalized.rightsStatus === "production_approved";
   normalized.qualityFlags = thumbnailQualityFlags(normalized);
   normalized.reviewPriority = thumbnailReviewPriority(normalized);
   normalized.promotionReviewState = promotionReviewState(normalized);
@@ -358,10 +547,12 @@ const directoryPayload = await loadJson("../data/build/directory-restaurant-lead
 const placeResolutionPayload = await loadJson("../data/build/place-source-resolutions.json", { resolutions: [] });
 const mediaPayload = await loadWindowScript("data/restaurant-media.js", "HALIFAX_RESTAURANT_MEDIA", { records: [] });
 const rejectionPayload = await loadJson("../data/thumbnail-rejected-candidates.json", { records: [] });
+const reviewedDecisionPayload = await loadJson("../data/reviewed-thumbnail-decisions.json", { records: [] });
+const ownerSubmissionPayload = await loadJson("../data/build/owner-submissions.normalized.json", { submissions: [] });
 reviewedThumbnailRejections = new Map((rejectionPayload.records || []).map((record) => [`${record.restaurantId}|${safeThumbnailUrl(record.thumbnailUrl) || record.thumbnailUrl}`, token(record.reason || "reviewed_rejected")]));
-const existingThumbnailPayload = fetchOfficialPages
-  ? { candidates: [], failures: [] }
-  : await loadJson("../data/build/thumbnail-candidates.json", { candidates: [], failures: [] });
+reviewedThumbnailDecisionsById = new Map((reviewedDecisionPayload.records || []).map((record) => [record.id, token(record.decision)]).filter(([id]) => id));
+reviewedThumbnailDecisionsByImage = new Map((reviewedDecisionPayload.records || []).map((record) => [`${record.restaurantId || ""}|${safeThumbnailUrl(record.thumbnailUrl) || record.thumbnailUrl || ""}`, token(record.decision)]).filter(([key]) => !key.endsWith("|")));
+const existingThumbnailPayload = await loadJson("../data/build/thumbnail-candidates.json", { candidates: [], failures: [] });
 const restaurants = Array.isArray(catalog.restaurants) ? catalog.restaurants : [];
 const restaurantsById = new Map(restaurants.map((restaurant) => [restaurant.id, restaurant]));
 const firstPartyById = new Map((firstParty.records || []).map((record) => [record.restaurantId, record]));
@@ -401,18 +592,30 @@ for (const lead of directoryPayload.records || []) {
 for (const candidate of existingThumbnailPayload.candidates || []) {
   if (!["approved_restaurant_media", "directory_source_image"].includes(candidate?.sourceKind)) candidates.push(candidate);
 }
-
+for (const submission of ownerSubmissionPayload.submissions || []) {
+  const restaurant = restaurantsById.get(submission.restaurantId);
+  for (const image of submission.images || []) {
+    const candidate = ownerSubmittedImageCandidate(submission, image, restaurant?.name || submission.name);
+    if (candidate) candidates.push(candidate);
+  }
+}
 
 if (fetchOfficialPages && pageLimit > 0) {
+  const preFetchNormalized = candidates.map(normalizeCandidate).filter(Boolean);
+  const preFetchApprovedRestaurantIds = new Set(preFetchNormalized.filter((candidate) => candidate.eligibleForProduction).map((candidate) => candidate.restaurantId));
+  const preFetchCandidateRestaurantIds = new Set(preFetchNormalized.map((candidate) => candidate.restaurantId));
+  const crawlTargets = restaurants.filter((restaurant) => {
+    if (discoveryScope === "all") return true;
+    if (discoveryScope === "missing_approved") return !preFetchApprovedRestaurantIds.has(restaurant.id);
+    return !preFetchCandidateRestaurantIds.has(restaurant.id);
+  });
   let fetched = 0;
-  for (const restaurant of restaurants) {
+  let probed = 0;
+  for (const restaurant of crawlTargets) {
     if (fetched >= pageLimit) break;
     const firstPartyRecord = firstPartyById.get(restaurant.id) || {};
-    const pages = [restaurant.website, firstPartyRecord.website, ...(firstPartyRecord.relatedLinks || []).filter((link) => ["menu", "events", "ordering", "reservations"].includes(link.kind)).map((link) => link.url)]
-      .map((url) => safeUrl(url))
-      .filter(Boolean)
-      .filter((url, index, all) => all.indexOf(url) === index)
-      .slice(0, pagesPerRestaurant);
+    const pages = officialSubpageUrls(restaurant, firstPartyRecord);
+    if (!pages.length) failures.push({ restaurantId: restaurant.id, pageUrl: restaurant.website || firstPartyRecord.website || null, reason: "no_first_party_pages_for_thumbnail_discovery" });
     for (const pageUrl of pages) {
       if (fetched >= pageLimit) break;
       fetched += 1;
@@ -420,7 +623,17 @@ if (fetchOfficialPages && pageLimit > 0) {
         const response = await fetch(pageUrl, { headers: { "User-Agent": userAgent, Accept: "text/html,application/xhtml+xml;q=0.9,*/*;q=0.4" }, redirect: "follow", signal: AbortSignal.timeout(timeoutMs) });
         if (!response.ok) { failures.push({ restaurantId: restaurant.id, pageUrl, reason: `http_${response.status}` }); continue; }
         const html = await response.text();
-        for (const image of [...extractMetaImages(html, response.url || pageUrl), ...extractHtmlContentImages(html, response.url || pageUrl)]) candidates.push(pageCandidate(restaurant, response.url || pageUrl, image));
+        const images = [...extractMetaImages(html, response.url || pageUrl), ...extractHtmlContentImages(html, response.url || pageUrl)];
+        for (const image of images) {
+          const candidate = pageCandidate(restaurant, response.url || pageUrl, image, firstPartyRecord);
+          if (imageProbeEnabled && probed < imageProbeLimit && ["first_party_image_host", "approved_cdn_image_host", "remote_image_host_needs_source_check"].includes(candidate.sourceHostValidation)) {
+            candidate.imageProbe = await probeImage(candidate);
+            candidate.width = candidate.imageProbe?.width || candidate.width;
+            candidate.height = candidate.imageProbe?.height || candidate.height;
+            probed += 1;
+          }
+          candidates.push(candidate);
+        }
       } catch (error) {
         failures.push({ restaurantId: restaurant.id, pageUrl, reason: error.name === "TimeoutError" ? "timeout" : error.message });
       }
@@ -428,7 +641,6 @@ if (fetchOfficialPages && pageLimit > 0) {
     }
   }
 }
-
 const normalized = candidates
   .map(normalizeCandidate)
   .filter(Boolean)
