@@ -1,6 +1,6 @@
 window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
   "version": 1,
-  "generatedAt": "2026-09-03T18:59:34.015Z",
+  "generatedAt": "2026-09-03T20:06:42.982Z",
   "targetRestaurants": 290,
   "plannedPages": 935,
   "pagesChecked": 763,
@@ -15,7 +15,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://2crowsbrewing.com/",
       "mediaUrl": "https://2crowsbrewing.com/wp-content/uploads/2026/05/social.png",
       "publishedAt": "2026-06-11T18:03:33.000Z",
-      "observedAt": "2026-09-03T18:58:01.181Z",
+      "observedAt": "2026-09-03T20:05:02.082Z",
       "signalMatches": {
         "specials": [
           "special"
@@ -42,7 +42,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://go2doorsdown.com/",
       "mediaUrl": "https://go2doorsdown.com/wp-content/uploads/2025/12/2-doors-down_Dartmouth.jpg",
       "publishedAt": "2026-06-30T00:24:18.000Z",
-      "observedAt": "2026-09-03T18:57:59.990Z",
+      "observedAt": "2026-09-03T20:05:01.425Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -86,8 +86,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "7 Peppers Grill",
       "postUrl": "https://www.7peppersgrill.net/",
       "mediaUrl": "https://static.wixstatic.com/media/90a441_9ff7c2830e3644218c2b2d373452cae1~mv2.jpg/v1/fill/w_1100,h_701,al_c,q_85,enc_avif,quality_auto/90a441_9ff7c2830e3644218c2b2d373452cae1~mv2.jpg",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:01.342Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:02.113Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -123,8 +123,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Menu",
       "postUrl": "https://www.7peppersgrill.net/menu",
       "mediaUrl": "https://static.wixstatic.com/media/90a441_9ff7c2830e3644218c2b2d373452cae1~mv2.jpg/v1/fill/w_1100,h_701,al_c,q_85,enc_avif,quality_auto/90a441_9ff7c2830e3644218c2b2d373452cae1~mv2.jpg",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:01.568Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:02.414Z",
       "signalMatches": {
         "specials": [
           "special"
@@ -156,7 +156,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://afrite.ca/",
       "mediaUrl": "https://i0.wp.com/afrite.ca/wp-content/uploads/2021/04/grilled-meat-with-herbs-on-black-top-view-4QPYVKD-scaled.jpg?resize=370%2C260&#038;ssl=1",
       "publishedAt": "2024-12-06T15:23:38.000Z",
-      "observedAt": "2026-09-03T18:58:01.432Z",
+      "observedAt": "2026-09-03T20:05:02.302Z",
       "signalMatches": {
         "specials": [
           "special"
@@ -270,8 +270,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Enjoy healthy, fresh comfort food and a friendly atmosphere in Halifax",
       "postUrl": "https://www.almonak.com/",
       "mediaUrl": "http://static1.squarespace.com/static/6294ce751d67ad02053683ae/t/6294cea21d67ad0205368b23/1554312174093/social-sharing.png?format=1500w",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:01.459Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:02.482Z",
       "signalMatches": {
         "events": [
           "event"
@@ -302,8 +302,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Book an Event &mdash; Almonak Book an Event Gift Cards Book a Table About Us Book an Event Gift Cards Book a Table About Us Book an Event Host a Private Event in Halifax Almonak is the perfect spot to hold a private event. Receptions, office parties, awards nights, engagement parties…We can accommodate just about anything you have in mind. Get in touch to learn more. North End Halifax 5659 Almon Street 902-450-295...",
       "postUrl": "https://www.almonak.com/book-an-event",
       "mediaUrl": "http://static1.squarespace.com/static/6294ce751d67ad02053683ae/t/6294cea21d67ad0205368b23/1554312174093/social-sharing.png?format=1500w",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:01.895Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:02.916Z",
       "signalMatches": {
         "events": [
           "event"
@@ -338,7 +338,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://antojo.ca/",
       "mediaUrl": "https://antojo.ca/wp-content/uploads/2017/08/Antojo_SocialPreview_FB_1200x630.png",
       "publishedAt": "2023-02-07T19:49:29.000Z",
-      "observedAt": "2026-09-03T18:58:01.646Z",
+      "observedAt": "2026-09-03T20:05:02.595Z",
       "signalMatches": {
         "specials": [
           "deal",
@@ -378,8 +378,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Order Online for Takeout / Pickup. Here at Ardmore Tea Room - Halifax you'll experience delicious Breakfast, Burger cuisine. Try our mouth-watering dishes, carefully prepared with fresh ingredients! At Ardmore Tea Room, our recipe for success is simple – Great food & care makes customers return every time.",
       "postUrl": "https://www.ardmoretearoom.ca/",
       "mediaUrl": "https://www.fbgcdn.com/pictures/29c468cc-0bab-4c38-9c59-b43483b31cfa.jpg",
-      "publishedAt": "2001-08-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:01.756Z",
+      "publishedAt": "2001-08-01T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:02.723Z",
       "signalMatches": {
         "specials": [
           "offer"
@@ -417,8 +417,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "No time to cook? No problem! Order online from Ardmore Tea Room. It’s the best Breakfast Takeout in Halifax. Browse our online menu and choose from our delicious dishes. We'll get your food ready in no-time. Don't waste another moment, order online now!",
       "postUrl": "https://www.ardmoretearoom.ca/breakfast-takeout-halifax",
       "mediaUrl": "https://www.fbgcdn.com/pictures/29c468cc-0bab-4c38-9c59-b43483b31cfa.jpg",
-      "publishedAt": "2001-08-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:02.628Z",
+      "publishedAt": "2001-08-01T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:03.491Z",
       "signalMatches": {
         "specials": [
           "offer"
@@ -456,8 +456,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "No time to cook? No problem! Order online from Ardmore Tea Room. It’s the best Burger Takeout in Halifax. Browse our online menu and choose from our delicious dishes. We'll get your food ready in no-time. Don't waste another moment, order online now!",
       "postUrl": "https://www.ardmoretearoom.ca/burger-takeout-halifax",
       "mediaUrl": "https://www.fbgcdn.com/pictures/29c468cc-0bab-4c38-9c59-b43483b31cfa.jpg",
-      "publishedAt": "2001-08-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:02.892Z",
+      "publishedAt": "2001-08-01T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:04.395Z",
       "signalMatches": {
         "specials": [
           "offer"
@@ -495,8 +495,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Enjoy only mouth-watering foods made out of the best ingredients. Your taste buds will be in heaven.",
       "postUrl": "https://www.ardmoretearoom.ca/menu",
       "mediaUrl": "https://www.fbgcdn.com/pictures/29c468cc-0bab-4c38-9c59-b43483b31cfa.jpg",
-      "publishedAt": "2001-08-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:02.360Z",
+      "publishedAt": "2001-08-01T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:03.146Z",
       "signalMatches": {
         "specials": [
           "offer"
@@ -577,7 +577,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://barkismet.com/",
       "mediaUrl": "https://barkismet.com/wp-content/themes/barkismet/assets/img/barkismet.svg",
       "publishedAt": "2025-10-30T14:33:50.000Z",
-      "observedAt": "2026-09-03T18:57:59.951Z",
+      "observedAt": "2026-09-03T20:05:01.376Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -601,6 +601,30 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "sourceLabel": "Official website"
     },
     {
+      "id": "official-page-5ee3caead8304c6ce2",
+      "restaurantId": "osm-node-8600605850-barburrito",
+      "restaurantName": "BarBurrito",
+      "platform": "official_page",
+      "title": "Official page update",
+      "excerpt": "Official page update",
+      "postUrl": "https://def.uber.com/en/challenge?from_service=d2ViLWVhdHMtdjI%3D&q=NWI4OWIwNzJjZjY4NmVhMTNhODJiODY1Y2ZiMWVmNzU6YUg3VU80T2V2M1ZraXhiWjo3eW81Z2tDbXNEZkZNK2JZQU9DWCtSbWpKVmhyaFQ1N0hwVk5qczFSc2NCYnREaVB4ZFM3ZnlKV2NiZmdSenlVQ3pYcDYxT2tFeU9JQzZNN2hSVWZEMHlhbWpNSDRxMXg3KzRvWkxuK2lEcEpua0R5c3pEcDFvTnlWdHI4czJtbzE1Tnl5cDhZd0tTZ2JIb0FsSnFEWmNLbU4rdS9YNHVxSjdzMUhhcTYrYWN0Wk5WSU1DYkowanZtNzlsTStKV0lSdnY0cHptWXMva1BzeEV1S2wvQ3JzUWlkVUY0bFZJVTV2eE5PbUwrbXZRS0lvc2h6KzlQTlVCc0tZTkZEZUhHOTNBYisxaVNZZ1RaaGh1aXd0SWNHbDN4dDgxLzFVTFdhMkoyNTZydndoQ2crQUZOQk9HNjJLV0ZmMTdmQ2JlSzR5Z2RONkRjR29OVWNldVhvbXRHRHBKMjUzUHg1TFREc0dXdktyLy9iT1FwNW8wZSs0MzVHUG9RZCt1NmFlcXNyMTFtSzVMN0lhTHZLRzRZTjc2eU9GOWlRcEVGMXUzc211emtxMEljY0hOdUpmNStzWUdWdUhwWjVqWjN4QS9JM3JoUXVBMkJZckNkNHkzV3p2QkgzK3k1UXBZM3JtQ0lsaEY1OHFNem9Ta2R2OTQ2UVRBSnBKalFOU1c2TG5rTm9zalh4RHRiUjJsbU1MdC9PNlY5YUc1VEVPWG1Xb1NXMnBMSzVaSkVMa0xPRHFMa0xMZXAyK05BVmNlcHQrZ0VUWFJGcnkvQllBY2lsZlNkcUhUL0Rud2tvaFZ1M0FFY0FGeXJkSmhsUjdQMTZZK1JXNVl3V2s1SHEyZWxVV25VQTlwMDQxU2FyMzI5Q1J4d1d3WmVuUy92UEI2Y2Q2TnV4VFg5ZU84YXVuemRVcTFsa0RVNEVCRmZYcUZZMy91MWdFaWxFU05ubnp6UDBtc2F4S0RwOlFSNXUyb2MwWThpbE13K0ZlNUIvTWc9PQ%3D%3D",
+      "mediaUrl": null,
+      "publishedAt": null,
+      "observedAt": "2026-09-03T20:05:04.063Z",
+      "signalMatches": {
+        "live_music": [
+          "dj"
+        ]
+      },
+      "candidateLinks": [],
+      "sourceKind": "official_page_html",
+      "associationBasis": "official_site_linked_page",
+      "confidence": "official_source_page_signal",
+      "reviewState": "needs_date_review",
+      "discoveryReason": "first_party_ordering",
+      "sourceLabel": "Uber Eats"
+    },
+    {
       "id": "official-page-c6740ea08955034273",
       "restaurantId": "osm-node-8600605850-barburrito",
       "restaurantName": "BarBurrito",
@@ -610,7 +634,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.barburrito.ca/",
       "mediaUrl": "https://barburrito.agencydominion.net/uploads/2025/11/Untitled-design-29-1200x630.png",
       "publishedAt": "1200-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:11.002Z",
+      "observedAt": "2026-09-03T20:05:07.041Z",
       "signalMatches": {
         "specials": [
           "offer"
@@ -662,7 +686,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.barburrito.ca/fr/location/dartmouth/",
       "mediaUrl": null,
       "publishedAt": null,
-      "observedAt": "2026-09-01T15:23:45.176Z",
+      "observedAt": "2026-09-03T20:05:07.928Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -719,7 +743,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.barburrito.ca/location/dartmouth/",
       "mediaUrl": null,
       "publishedAt": null,
-      "observedAt": "2026-09-03T18:58:02.770Z",
+      "observedAt": "2026-09-03T20:05:03.491Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -784,7 +808,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.skipthedishes.com/barburrito-tacoma-drive?utm_source=google&utm_medium=organic&utm_campaign=gpa",
       "mediaUrl": "https://www.skipthedishes.com/_next/image?url=https%3A%2F%2Fmenu-images-static.skipthedishes.com%2Fimages%2Fresized%2Flarge-63637c0b9197391c099e.png&amp;w=3840&amp;q=75",
       "publishedAt": null,
-      "observedAt": "2026-09-01T15:23:41.442Z",
+      "observedAt": "2026-09-03T20:05:03.969Z",
       "signalMatches": {
         "specials": [
           "offer",
@@ -894,7 +918,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://barrioshfx.ca/",
       "mediaUrl": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.3.2/flags/4x3/us.svg",
       "publishedAt": null,
-      "observedAt": "2026-09-03T18:58:03.192Z",
+      "observedAt": "2026-09-03T20:05:04.115Z",
       "signalMatches": {
         "specials": [
           "offer"
@@ -954,7 +978,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://barrioshfx.ca/barrios-menu",
       "mediaUrl": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.3.2/flags/4x3/us.svg",
       "publishedAt": null,
-      "observedAt": "2026-09-03T18:58:04.186Z",
+      "observedAt": "2026-09-03T20:05:04.943Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -1010,7 +1034,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://barrioshfx.ca/delivery",
       "mediaUrl": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.3.2/flags/4x3/us.svg",
       "publishedAt": null,
-      "observedAt": "2026-09-03T18:58:05.399Z",
+      "observedAt": "2026-09-03T20:05:05.247Z",
       "signalMatches": {
         "specials": [
           "offer"
@@ -1060,7 +1084,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://barrioshfx.ca/menu-guide",
       "mediaUrl": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.3.2/flags/4x3/us.svg",
       "publishedAt": null,
-      "observedAt": "2026-09-03T18:58:06.880Z",
+      "observedAt": "2026-09-03T20:05:05.580Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -1107,7 +1131,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://barrioshfx.ca/reservation",
       "mediaUrl": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.3.2/flags/4x3/us.svg",
       "publishedAt": null,
-      "observedAt": "2026-09-03T18:58:06.138Z",
+      "observedAt": "2026-09-03T20:05:05.406Z",
       "signalMatches": {
         "specials": [
           "special"
@@ -1158,7 +1182,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://barrioshfx.ca/sunday-brunch",
       "mediaUrl": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.3.2/flags/4x3/us.svg",
       "publishedAt": null,
-      "observedAt": "2026-09-03T18:58:07.086Z",
+      "observedAt": "2026-09-03T20:05:05.746Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -1214,7 +1238,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://barrioshfx.ca/sunday-brunch-halifax",
       "mediaUrl": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.3.2/flags/4x3/us.svg",
       "publishedAt": null,
-      "observedAt": "2026-09-01T15:23:43.555Z",
+      "observedAt": "2026-09-03T20:05:05.913Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -1273,8 +1297,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "BEERBAR & EATERY 62 Ochterloney Street Dartmouth, NS, B2Y 1C2 Canada 902 446 2337 eat@batterypark.ca Located in Downtown Dartmouth, Battery Park features 20 rotating beer bar taps showcasing the very best of Nova Scotia’s Craft Beer lineup! Chef Andrew Shannon heads up our award-winning Ace Burger kitchen, slinging the very best in lunch, dinner, dine-in and take-out of farm-to-table fare, featuring our famous bur...",
       "postUrl": "https://batterypark.ca/",
       "mediaUrl": "https://images.squarespace-cdn.com/content/v1/55917d39e4b0b8f716f2fe05/1609902059282-UVICAXQUWMUHHNKV9GR7/Battery+Park+%28Feb+26+16%29+%2820+of+28%29.jpg",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:00.607Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:01.427Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -1305,8 +1329,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "BEERBAR & EATERY 62 Ochterloney Street Dartmouth, NS, B2Y 1C2 Canada 902 446 2337 eat@batterypark.ca Located in Downtown Dartmouth, Battery Park features 20 rotating beer bar taps showcasing the very best of Nova Scotia’s Craft Beer lineup! Chef Andrew Shannon heads up our award-winning Ace Burger kitchen, slinging the very best in lunch, dinner, dine-in and take-out of farm-to-table fare, featuring our famous bur...",
       "postUrl": "https://batterypark.ca/",
       "mediaUrl": "https://images.squarespace-cdn.com/content/v1/55917d39e4b0b8f716f2fe05/1609902059282-UVICAXQUWMUHHNKV9GR7/Battery+Park+%28Feb+26+16%29+%2820+of+28%29.jpg",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:00.993Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:01.722Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -1337,8 +1361,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Join us at Bedford Beer Garden on the Bedford Highway. Enjoy cold beer, great food, and stunning waterfront views.",
       "postUrl": "https://www.bedfordbeergarden.com/",
       "mediaUrl": "https://images.squarespace-cdn.com/content/v1/68293776be1eab027773881e/17f12e90-23e4-4cc2-b711-bfa61b1b5211/Bedford+Beer+Garden+Container",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:03.260Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:04.701Z",
       "signalMatches": {
         "events": [
           "event",
@@ -1385,8 +1409,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "The Bedford Beer Garden features local draught beer (including a rotating tap), craft cans, wine by the glass or bottle, and refreshing premixed cocktails. From Tall Ship to peach iced tea vodka, we’ve got your patio drink lineup covered all season long.",
       "postUrl": "https://www.bedfordbeergarden.com/drinkmenu",
       "mediaUrl": null,
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:03.736Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:05.144Z",
       "signalMatches": {
         "events": [
           "event",
@@ -1433,8 +1457,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Burgers, loaded hotdogs, truffle fries, onion rings, nachos, and charcuterie boards. Perfect snacks and pub-style eats to pair with your drink while soaking in views of the Bedford Basin.",
       "postUrl": "https://www.bedfordbeergarden.com/events",
       "mediaUrl": null,
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:03.920Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:05.521Z",
       "signalMatches": {
         "events": [
           "event",
@@ -1482,8 +1506,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Burgers, loaded hotdogs, truffle fries, onion rings, nachos, and charcuterie boards. Perfect snacks and pub-style eats to pair with your drink while soaking in views of the Bedford Basin.",
       "postUrl": "https://www.bedfordbeergarden.com/foodmenu",
       "mediaUrl": null,
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:03.557Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:04.980Z",
       "signalMatches": {
         "events": [
           "event",
@@ -1531,7 +1555,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://locations.benetflorentine.com/",
       "mediaUrl": "https://mtystprod.azureedge.net/media/vhslsyfh/microsoftteams-image-30-1-1.png",
       "publishedAt": null,
-      "observedAt": "2026-09-03T18:58:03.333Z",
+      "observedAt": "2026-09-03T20:05:04.856Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -1563,7 +1587,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://bicyclethief.ca/",
       "mediaUrl": "https://bicyclethief.ca/wp-content/uploads/2017/09/upper-thief.jpg",
       "publishedAt": "2025-11-10T15:25:05.000Z",
-      "observedAt": "2026-09-03T18:58:00.926Z",
+      "observedAt": "2026-09-03T20:05:02.249Z",
       "signalMatches": {
         "specials": [
           "offer",
@@ -1608,7 +1632,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://bicyclethief.ca/contact-us-reservations/",
       "mediaUrl": "https://bertossigroup.com/in-the-news/canadas100best.png",
       "publishedAt": "2024-08-12T17:01:04.000Z",
-      "observedAt": "2026-09-03T18:58:01.276Z",
+      "observedAt": "2026-09-03T20:05:02.647Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -1645,7 +1669,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://bicyclethief.ca/reservations/",
       "mediaUrl": "https://bicyclethief.ca/wp-content/uploads/2021/07/OpeningPatios-3-845x684.jpg",
       "publishedAt": "2021-07-26T15:05:02.000Z",
-      "observedAt": "2026-09-03T18:58:01.091Z",
+      "observedAt": "2026-09-03T20:05:02.421Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -1681,8 +1705,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Bird",
       "postUrl": "https://www.birdsnesthalifax.com/",
       "mediaUrl": "https://static.wixstatic.com/media/f67ed8423aaf440b81164ccd259ed7f6.jpg/v1/fill/w_140,h_93,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/f67ed8423aaf440b81164ccd259ed7f6.jpg",
-      "publishedAt": "2001-04-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:04.005Z",
+      "publishedAt": "2001-04-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:05.679Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -1733,8 +1757,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "The Bitter End Skip to main content j Toggle navigation home about Reserve menu gallery Contact",
       "postUrl": "https://www.bitterend.ca/",
       "mediaUrl": "https://www.unoapp.com/app/source/images/g_shift.png",
-      "publishedAt": "2001-08-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:04.096Z",
+      "publishedAt": "2001-08-01T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:05.806Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -1762,8 +1786,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "The Bitter End Skip to main content j Toggle navigation home about Reserve menu gallery Contact",
       "postUrl": "https://www.bitterend.ca/index.html",
       "mediaUrl": "https://www.unoapp.com/app/source/images/g_shift.png",
-      "publishedAt": "2001-08-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:06.386Z",
+      "publishedAt": "2001-08-01T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:06.431Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -1791,8 +1815,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "templated-menu Skip to main content Toggle navigation home about Reserve menu gallery Contact",
       "postUrl": "https://www.bitterend.ca/menu.html",
       "mediaUrl": "https://www.unoapp.com/app/source/images/g_shift.png",
-      "publishedAt": "2001-08-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:05.934Z",
+      "publishedAt": "2001-08-01T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:06.270Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -1824,8 +1848,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "The Bitter End Skip to main content Booking & Reservations Reservations Please use the reservation form to book a table or event. Functions Holding an Office Party or Corporate Event? We can help create just the right atmosphere for your group. Email us for more information. Some restrictions apply. Fundraisers Looking for a venue to hold your fundraiser ? Look no further, invite your guests to an upscale venue an...",
       "postUrl": "https://www.bitterend.ca/reserve.html",
       "mediaUrl": "https://www.unoapp.com/app/source/images/g_shift.png",
-      "publishedAt": "2001-08-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:05.483Z",
+      "publishedAt": "2001-08-01T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:06.110Z",
       "signalMatches": {
         "events": [
           "event"
@@ -1861,8 +1885,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "ROSA is an enchanting Parallax Restaurant WordPress Theme that allows you to tell your story in an enjoyable way, perfect for restaurants or coffee shops.",
       "postUrl": "https://bluenoseii.ca/",
       "mediaUrl": "https://bluenoseii.ca/wp-content/uploads/2019/02/full_table_wine_bottle_img_6626-1.jpg",
-      "publishedAt": "2001-08-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:04.294Z",
+      "publishedAt": "2001-08-01T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:05.995Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -1913,8 +1937,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Menu | Bluenose II Restaurant You are using an outdated browser. Please upgrade your browser or activate Google Chrome Frame to improve your experience. Primary Navigation Please select a menu in this location The Menu Our home-style family recipes on our menu offer dishes using the finest seasonal produce. Table service throughout for food and drinks. Taking inspiration from Mediterranean cuisine and around the w...",
       "postUrl": "https://bluenoseii.ca/menu/",
       "mediaUrl": null,
-      "publishedAt": "2001-08-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:05.482Z",
+      "publishedAt": "2001-08-01T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:07.379Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -1956,8 +1980,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Reservations | Bluenose II Restaurant You are using an outdated browser. Please upgrade your browser or activate Google Chrome Frame to improve your experience. Primary Navigation Please select a menu in this location M ake a Reservation ✻ Booking your table online is easy and takes just a couple of minutes! Reserve by Phone We take reservations for lunch and dinner. To make a reservation, please call us at 902.42...",
       "postUrl": "https://bluenoseii.ca/reservations/",
       "mediaUrl": "https://bluenoseii.ca/wp-content/uploads/2019/04/bnii-perpsective_4-1024x683.jpg",
-      "publishedAt": "2001-08-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:05.678Z",
+      "publishedAt": "2001-08-01T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:07.579Z",
       "signalMatches": {
         "specials": [
           "special"
@@ -2004,8 +2028,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Log In &lsaquo; Bluenose II Restaurant — WordPress Log In Powered by WordPress Username or Email Address Password Type in the text displayed above Log in with GoDaddy Or Log in with username and password Remember Me Lost your password? &larr; Go to Bluenose II Restaurant",
       "postUrl": "https://bluenoseii.ca/wp-login.php?redirect_to=https%3A%2F%2Fbluenoseii.ca%2Fwp-admin%2Fnav-menus.php%3Faction%3Dlocations&reauth=1",
       "mediaUrl": null,
-      "publishedAt": "2001-08-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:04.600Z",
+      "publishedAt": "2001-08-01T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:06.396Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -2033,8 +2057,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "As Canada’s original juice and smoothie bar, our mission is to create long-standing customer relationships by consistently delivering an incredibly delicious, convenient and nutritious product, perfectly suited for an active lifestyle.",
       "postUrl": "https://boosterjuice.com/en-ca",
       "mediaUrl": "http://boosterjuice.com/cdn/shop/files/AVDV2693-1200x628.jpg?v=1703786205",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:05.205Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:06.811Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -2092,8 +2116,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "As Canada’s original juice and smoothie bar, our mission is to create long-standing customer relationships by consistently delivering an incredibly delicious, convenient and nutritious product, perfectly suited for an active lifestyle.",
       "postUrl": "https://boosterjuice.com/en-ca/blogs/current-promotions",
       "mediaUrl": "http://boosterjuice.com/cdn/shop/files/AVDV2693-1200x628.jpg?v=1703786205",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:06.876Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:08.860Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -2171,8 +2195,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "As Canada’s original juice and smoothie bar, our mission is to create long-standing customer relationships by consistently delivering an incredibly delicious, convenient and nutritious product, perfectly suited for an active lifestyle.",
       "postUrl": "https://boosterjuice.com/en-ca/collections/specialty-shots",
       "mediaUrl": "http://boosterjuice.com/cdn/shop/files/AVDV2693-1200x628.jpg?v=1703786205",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:06.574Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:08.359Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -2228,8 +2252,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "As Canada’s original juice and smoothie bar, our mission is to create long-standing customer relationships by consistently delivering an incredibly delicious, convenient and nutritious product, perfectly suited for an active lifestyle.",
       "postUrl": "https://boosterjuice.com/en-ca/pages/catering",
       "mediaUrl": "http://boosterjuice.com/cdn/shop/files/AVDV2693-1200x628.jpg?v=1703786205",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:06.091Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:07.779Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -2285,8 +2309,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "TEST-2 Welcome to Boston Pizza Restaurant and Sports Bar. Discover our great takeout and delivery menu, including our signaure pizzas, gourmet pastas, wings and more!",
       "postUrl": "https://bostonpizza.com/en/index.html",
       "mediaUrl": "https://bostonpizza.com/content/dam/bostonpizza/brand-refresh-2025/Franchising_Homepage_1930x1130.png",
-      "publishedAt": "2026-09-03T18:00:07.987Z",
-      "observedAt": "2026-09-03T18:58:05.249Z",
+      "publishedAt": "2026-09-03T18:58:16.720Z",
+      "observedAt": "2026-09-03T20:05:07.042Z",
       "signalMatches": {
         "specials": [
           "feature menu",
@@ -2364,8 +2388,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Discover Boston Pizza’s extensive menu of pizza, pasta, burgers, appetizers, salads and more. Available for dine-in, takeout, or delivery. Browse our menu today!",
       "postUrl": "https://bostonpizza.com/en/menu.html",
       "mediaUrl": "https://bostonpizza.com/content/dam/bostonpizza/menu-images/apps-and-shareables/category-images/AppsShareables_no_napkin-420x320.jpg",
-      "publishedAt": "2026-09-03T18:00:07.865Z",
-      "observedAt": "2026-09-03T18:58:05.591Z",
+      "publishedAt": "2026-09-03T18:58:24.009Z",
+      "observedAt": "2026-09-03T20:05:07.363Z",
       "signalMatches": {
         "specials": [
           "feature menu",
@@ -2440,9 +2464,9 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "title": "Our Promotions | Boston Pizza",
       "excerpt": "Check out our current offers and promotions and save big during your next visit to Boston Pizza!",
       "postUrl": "https://bostonpizza.com/en/promotions.html",
-      "mediaUrl": "https://bostonpizza.com/content/dam/bostonpizza/promotions/2026/summer-live-music/Call%20to%20Artists%20Banner.jpg",
-      "publishedAt": "2026-09-01T15:06:56.115Z",
-      "observedAt": "2026-09-01T15:23:45.030Z",
+      "mediaUrl": "https://bostonpizza.com/content/dam/bostonpizza/promotions/2026/kids-eat-free/KEF_Banner_EN-final.png",
+      "publishedAt": "2026-09-03T18:58:23.526Z",
+      "observedAt": "2026-09-03T20:05:08.280Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -2538,8 +2562,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Kids Eat Free | Boston Pizza Menu Promotions Locations Rewards Gift Cards FR EN ORDER NOW CALLING ALL PARENTS!&lt;/p>\\r\\n&lt;p class=\\\"b6-do6-banner--custom-text bp-do6-banner--text-size-24--bold\\\">The back-to-school rush is on, but dinner just got easier! Hang up the aprons and head over to Boston Pizza 'cause KIDS EAT FREE all September long with a $16 minimum spend per free Kids Meal. That's right: your kids wi...",
       "postUrl": "https://bostonpizza.com/en/promotions/kids-eat-free.html",
       "mediaUrl": "https://bostonpizza.com/content/dam/bostonpizza/promotions/2026/kids-eat-free/Kids-Eat-Free-Desktop_EN.jpg",
-      "publishedAt": "2026-09-01T15:02:04.228Z",
-      "observedAt": "2026-09-01T15:23:45.256Z",
+      "publishedAt": "2026-09-03T18:58:20.195Z",
+      "observedAt": "2026-09-03T20:05:08.467Z",
       "signalMatches": {
         "specials": [
           "offer",
@@ -2585,8 +2609,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Be the first to get your digital Kids Card online with the early bird sale! Remember, a $5 donation to a local charity in your community gives you 5 FREE Kids Meals. Get your Kids Card today!",
       "postUrl": "https://bostonpizza.com/en/promotions/kidscard.html",
       "mediaUrl": "https://bostonpizza.com/content/dam/bostonpizza/promotions/2026/kids-cards/kids-01-EN-Desktop.png",
-      "publishedAt": "2026-09-01T15:00:28.612Z",
-      "observedAt": "2026-09-01T15:23:45.439Z",
+      "publishedAt": "2026-09-03T18:58:13.175Z",
+      "observedAt": "2026-09-03T20:05:08.661Z",
       "signalMatches": {
         "specials": [
           "offer",
@@ -2628,8 +2652,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Lunch Menu | Boston Pizza Menu Promotions Locations Rewards Gift Cards FR EN ORDER NOW A FAST LUNCH DOESN'T HAVE TO MEAN FAST FOOD. GRAB LUNCH AT BOSTON PIZZA!&lt;/h1>\\r\\n\"}}\"> A FAST LUNCH DOESN'T HAVE TO MEAN FAST FOOD. GRAB LUNCH AT BOSTON PIZZA! We get it, lunch breaks are short. That's why our NEW Lunch Menu delivers within 20 minutes or your next lunch is on us!*&lt;/p>\\r\\n&lt;p class=\\\"b6-do6-banner--custom...",
       "postUrl": "https://bostonpizza.com/en/promotions/lunch-menu.html",
       "mediaUrl": "https://bostonpizza.com/content/dam/bostonpizza/promotions/2026/$15-fast-lunch/Burger%20-%20Banner%205000x2115.png",
-      "publishedAt": "2026-09-03T18:01:56.751Z",
-      "observedAt": "2026-09-03T18:58:06.448Z",
+      "publishedAt": "2026-09-03T18:58:15.902Z",
+      "observedAt": "2026-09-03T20:05:08.047Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -2683,8 +2707,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Enjoy our new Playoff Menu every game night at BP! Catch all the action on our big screens while indulging in a winning lineup of delicious eats. Whether you're here for the food, the fans, or the fun, BP is the ultimate destination to cheer on your Canadian teams!",
       "postUrl": "https://bostonpizza.com/en/promotions/playoff-feature-menu.html",
       "mediaUrl": "https://bostonpizza.com/content/dam/bostonpizza/promotions/2026/q2-playoffs/Countdown%20Banner.png",
-      "publishedAt": "2026-09-01T15:17:05.752Z",
-      "observedAt": "2026-09-01T15:23:45.725Z",
+      "publishedAt": "2026-09-03T19:29:05.931Z",
+      "observedAt": "2026-09-03T20:05:08.840Z",
       "signalMatches": {
         "specials": [
           "feature menu",
@@ -2744,8 +2768,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Summer Promotion | Boston Pizza Menu Promotions Locations Rewards Gift Cards FR EN ORDER NOW DISCOVER YOUR NEXT FAVOURITE ARTIST! Enjoy live music all summer long, at your local Boston Pizza. LIVE MUSIC IS ON THE MENU This year Boston Pizza is turning the volume all the way up! From Victoria Day to Labour Day, we're serving live music at your local Boston Pizza all summer long. More vibes. More energy. More reason...",
       "postUrl": "https://bostonpizza.com/en/promotions/summer-promotion.html",
       "mediaUrl": "https://bostonpizza.com/content/dam/bostonpizza/promotions/2026/summer-live-music/LIVE%20and%20LOCAL%20EN%20Banner.png",
-      "publishedAt": "2026-09-03T18:01:20.539Z",
-      "observedAt": "2026-09-03T18:58:05.882Z",
+      "publishedAt": "2026-09-03T19:21:07.735Z",
+      "observedAt": "2026-09-03T20:05:07.546Z",
       "signalMatches": {
         "specials": [
           "offer",
@@ -2798,8 +2822,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Winter Cravings Menu Promotions Locations Rewards Gift Cards FR EN ORDER NOW Permanent cravings unlocked&lt;/h1>\\r\\n\"}}\" id=\"text-cd501a0e96\" class=\"cmp-text prose lg:prose-lg\"> Permanent cravings unlocked Our new menu is crafted to satisfy your cold‑weather cravings and introduce you to fresh favourites. From exciting new dishes to deliciously seasonal beverages, each item is designed to spark curiosity, inspire...",
       "postUrl": "https://bostonpizza.com/en/promotions/winter-cravings.html",
       "mediaUrl": "https://bostonpizza.com/content/dam/bostonpizza/promotions/2026/q1-5---main-menu-update/Q1.5%20Banner%205000x1916.png",
-      "publishedAt": "2026-09-03T18:51:56.303Z",
-      "observedAt": "2026-09-03T18:58:06.160Z",
+      "publishedAt": "2026-09-03T19:29:06.819Z",
+      "observedAt": "2026-09-03T20:05:07.862Z",
       "signalMatches": {
         "specials": [
           "offer",
@@ -2849,8 +2873,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Boston Pizza, family restaurant and sports bar, offers a great takeout and delivery menu, which includes pizza, pasta, wings & much more!",
       "postUrl": "https://order.bostonpizza.com/en-ca/home",
       "mediaUrl": null,
-      "publishedAt": "2001-08-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:05.868Z",
+      "publishedAt": "2001-08-01T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:07.414Z",
       "signalMatches": {
         "specials": [
           "offer",
@@ -2877,8 +2901,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Brawta Jamaican Jerk Joint 0 Skip to Content ORDER HERE Grafton St Menu Updates Gallery Our Story Visit Us Brawta's Blog Open Menu Close Menu ORDER HERE Grafton St Menu Updates Gallery Our Story Visit Us Brawta's Blog Open Menu Close Menu ORDER HERE Grafton St Menu Updates Gallery Our Story Visit Us Brawta's Blog CLICK HERE TO ORDER! The Best Jerks Providing authentic Jamaican food made with mainly locally sourced...",
       "postUrl": "https://brawtajerk.ca/",
       "mediaUrl": "https://images.squarespace-cdn.com/content/v1/5f47dc734de4ba4d31a626ce/1598545493273-LBHD5HZLTNBA863LRFTC/Brawta-53.jpg",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:06.643Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:07.596Z",
       "signalMatches": {
         "specials": [
           "special"
@@ -2924,8 +2948,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Grafton St Menu &mdash; Brawta Jamaican Jerk Joint 0 Skip to Content ORDER HERE Grafton St Menu Updates Gallery Our Story Visit Us Brawta's Blog Open Menu Close Menu ORDER HERE Grafton St Menu Updates Gallery Our Story Visit Us Brawta's Blog Open Menu Close Menu ORDER HERE Grafton St Menu Updates Gallery Our Story Visit Us Brawta's Blog Our Menu Lunch & Dinner Desserts & Treats meals Yaady: Jerk chicken meal med$1...",
       "postUrl": "https://brawtajerk.ca/menu",
       "mediaUrl": "https://images.squarespace-cdn.com/content/v1/5f47dc734de4ba4d31a626ce/6ac88bf8-4de2-48c5-9110-96069a5de4f1/banner+2.jpg",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:06.964Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:08.027Z",
       "signalMatches": {
         "specials": [
           "offer"
@@ -2976,7 +3000,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.ubereats.com/ca",
       "mediaUrl": "https://tb-static.uber.com/prod/web-eats-v2/open-graph/uber-eats.jpg",
       "publishedAt": "2000-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:23:45.191Z",
+      "observedAt": "2026-09-03T20:05:04.828Z",
       "signalMatches": {
         "specials": [
           "promo",
@@ -3005,8 +3029,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "View and manage your profile information.",
       "postUrl": "https://dal.mydininghub.ca/en/account?section=my-menu",
       "mediaUrl": null,
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:07.275Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:08.217Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -3042,8 +3066,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Enjoy delicious meals, coffee, snacks, and more at these dining locations.",
       "postUrl": "https://dal.mydininghub.ca/en/locations",
       "mediaUrl": null,
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:07.665Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:08.077Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -3067,8 +3091,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "associationBasis": "official_site_linked_page",
       "confidence": "official_source_page_signal",
       "reviewState": "source_signal",
-      "discoveryReason": "first_party_menu",
-      "sourceLabel": "Locations & Menus"
+      "discoveryReason": "official_homepage",
+      "sourceLabel": "Official website"
     },
     {
       "id": "official-page-eede2e08c5d8e2d3f9",
@@ -3079,8 +3103,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "IRY BAR Have Fun. Coffee Contact Cart 0 CAFÉ GOODLUCK DAIRY BAR Have Fun. Coffee Café Goodluck Contact CAFÉ GOODLUCK A friendly neighbourhood café in beautiful downtown Dartmouth. Offering specialty coffee roasted right here in dartmouth, fresh pastries, a full brunch menu for dine-in or takeaway, and a selection of local and housemade goods for all your home cooking endeavours. Cafe Open 8am-4pm every Day. Kitche...",
       "postUrl": "https://cafegoodluck.ca/goodluck",
       "mediaUrl": "https://images.squarespace-cdn.com/content/v1/54c16f23e4b02a2061ab9e1c/f008d8af-0593-43b6-8975-b2815fb371ed/Header.jpg",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:07.760Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:09.128Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -3121,7 +3145,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://silverpay.app/cafelunette/menu",
       "mediaUrl": null,
       "publishedAt": null,
-      "observedAt": "2026-09-03T18:58:08.391Z",
+      "observedAt": "2026-09-03T20:05:09.970Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -3145,7 +3169,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.cafelunette.com/",
       "mediaUrl": "https://www.cafelunette.com/wp-content/uploads/2025/10/DSC_3591-1-683x1024.jpg",
       "publishedAt": "2026-03-27T17:58:20.000Z",
-      "observedAt": "2026-09-03T18:58:08.370Z",
+      "observedAt": "2026-09-03T20:05:09.844Z",
       "signalMatches": {
         "happy_hour": [
           "happy hour"
@@ -3213,7 +3237,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.cafelunette.com/bistro-menu/",
       "mediaUrl": "https://www.cafelunette.com/wp-content/uploads/2026/03/013A5850-Edit-scaled.jpg",
       "publishedAt": "2560-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:08.640Z",
+      "observedAt": "2026-09-03T20:05:10.156Z",
       "signalMatches": {
         "happy_hour": [
           "happy hour"
@@ -3276,7 +3300,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.cafelunette.com/cafe-menu/",
       "mediaUrl": "https://www.cafelunette.com/wp-content/uploads/2025/10/CafeLunette_ToGo2025-8969-e1774633223183-1024x1006.jpg",
       "publishedAt": "2026-03-27T17:51:53.000Z",
-      "observedAt": "2026-09-03T18:58:09.279Z",
+      "observedAt": "2026-09-03T20:05:10.832Z",
       "signalMatches": {
         "happy_hour": [
           "happy hour"
@@ -3344,7 +3368,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.cafelunette.com/private-events/",
       "mediaUrl": "https://www.cafelunette.com/wp-content/uploads/2022/08/Cafe-Lunette-291-scaled.jpg",
       "publishedAt": "2560-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:08.961Z",
+      "observedAt": "2026-09-03T20:05:10.527Z",
       "signalMatches": {
         "happy_hour": [
           "happy hour"
@@ -3403,7 +3427,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.cafelunette.com/your-parisian-patio-awaits/",
       "mediaUrl": "https://www.cafelunette.com/wp-content/uploads/2026/05/A28A8116edit-scaled.jpg",
       "publishedAt": "2560-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-01T15:23:47.475Z",
+      "observedAt": "2026-09-03T20:05:11.144Z",
       "signalMatches": {
         "happy_hour": [
           "happy hour"
@@ -3466,7 +3490,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.cantongardenns.com/yik8nsx2/restaurant/order-online?menu=All+Day+Menu",
       "mediaUrl": "https://www.cantongardenns.com/yik8nsx2/opengraph-image-co490f/og-image?b6544dd16ceef7a0",
       "publishedAt": "1200-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:09.167Z",
+      "observedAt": "2026-09-03T20:05:10.374Z",
       "signalMatches": {
         "specials": [
           "special"
@@ -3535,7 +3559,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.cantongardenns.com/yik8nsx2/restaurant/order-online?menu=Lunch+Menu",
       "mediaUrl": "https://www.cantongardenns.com/yik8nsx2/opengraph-image-co490f/og-image?b6544dd16ceef7a0",
       "publishedAt": "1200-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:09.998Z",
+      "observedAt": "2026-09-03T20:05:10.877Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -3601,7 +3625,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.cantongardenns.com/yik8nsx2/restaurant/order-online?utm_source=redirect&utm_medium=cantongardenhalifax.com",
       "mediaUrl": "https://www.cantongardenns.com/yik8nsx2/opengraph-image-co490f/og-image?b6544dd16ceef7a0",
       "publishedAt": "1200-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:08.732Z",
+      "observedAt": "2026-09-03T20:05:10.095Z",
       "signalMatches": {
         "specials": [
           "special"
@@ -3670,7 +3694,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.cantongardenns.com/yik8nsx2/restaurant/order-online/menus/all-day-menu/42050420?menu=All+Day+Menu&category=Appetizers",
       "mediaUrl": null,
       "publishedAt": null,
-      "observedAt": "2026-09-03T18:58:10.666Z",
+      "observedAt": "2026-09-03T20:05:11.344Z",
       "signalMatches": {
         "specials": [
           "special"
@@ -3739,7 +3763,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.cantongardenns.com/yik8nsx2/restaurant/order-online/menus/all-day-menu/42050421?menu=All+Day+Menu&category=Appetizers",
       "mediaUrl": null,
       "publishedAt": null,
-      "observedAt": "2026-09-03T18:58:11.142Z",
+      "observedAt": "2026-09-03T20:05:11.794Z",
       "signalMatches": {
         "specials": [
           "special"
@@ -3808,7 +3832,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.cantongardenns.com/yik8nsx2/restaurant/order-online/menus/all-day-menu/42050422?menu=All+Day+Menu&category=Appetizers",
       "mediaUrl": null,
       "publishedAt": null,
-      "observedAt": "2026-09-03T18:58:11.624Z",
+      "observedAt": "2026-09-03T20:05:12.342Z",
       "signalMatches": {
         "specials": [
           "special"
@@ -3877,7 +3901,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.cantongardenns.com/yik8nsx2/restaurant/order-online/menus/all-day-menu/42050423?menu=All+Day+Menu&category=Appetizers",
       "mediaUrl": null,
       "publishedAt": null,
-      "observedAt": "2026-09-01T15:23:50.153Z",
+      "observedAt": "2026-09-03T20:05:12.659Z",
       "signalMatches": {
         "specials": [
           "special"
@@ -3946,7 +3970,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.cantongardenns.com/yik8nsx2/restaurant/order-online/menus/all-day-menu/42050424?menu=All+Day+Menu&category=Appetizers",
       "mediaUrl": null,
       "publishedAt": null,
-      "observedAt": "2026-09-01T15:23:50.552Z",
+      "observedAt": "2026-09-03T20:05:13.044Z",
       "signalMatches": {
         "specials": [
           "special"
@@ -4015,7 +4039,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.cantongardenns.com/yik8nsx2/restaurant/order-online/menus/all-day-menu/42050425?menu=All+Day+Menu&category=Appetizers",
       "mediaUrl": null,
       "publishedAt": null,
-      "observedAt": "2026-09-01T15:23:50.969Z",
+      "observedAt": "2026-09-03T20:05:13.444Z",
       "signalMatches": {
         "specials": [
           "special"
@@ -4084,7 +4108,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.cantongardenns.com/yik8nsx2/restaurant/order-online/menus/all-day-menu/42050426?menu=All+Day+Menu&category=Appetizers",
       "mediaUrl": null,
       "publishedAt": null,
-      "observedAt": "2026-09-01T15:23:51.550Z",
+      "observedAt": "2026-09-03T20:05:14.046Z",
       "signalMatches": {
         "specials": [
           "special"
@@ -4152,8 +4176,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Your browser is ancient! Upgrade to a different browser or install Google Chrome Frame to experience this site. Menu Beer Online Shop Cart Contact Us Blog That’s right! Great beer with a bad attitude, from Greg Nash and Andrew Murphy . Now pouring Hoppy Fingers APA, Exile on North Street IPA, Twelve Years to Zion DIPA, Double Orange Ale DIPA, and Nàzev Piva Czech-style Pilsner. Store hours: Monday closed Tuesday-S...",
       "postUrl": "https://unfuckingfiltered.com/",
       "mediaUrl": null,
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:10.192Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:11.362Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -4202,7 +4226,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://cheesecurdsgourmetburgersandpoutinerie.unuhub.net/",
       "mediaUrl": null,
       "publishedAt": null,
-      "observedAt": "2026-09-03T18:58:10.813Z",
+      "observedAt": "2026-09-03T20:05:11.673Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -4232,7 +4256,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://citytvplus.ca/brands/foodnetwork",
       "mediaUrl": "https://production.static-d3-rogent.com/api/shain/v1/dataservice/ResizeImage/$value?Format=&#x27;jpg&#x27;&amp;Quality=75&amp;ImageId=&#x27;240777&#x27;&amp;EntityType=&#x27;Item&#x27;&amp;EntityId=&#x27;130343&#x27;&amp;Width=720&amp;Height=540&amp;ResizeAction=&#x27;fill&#x27;&amp;HorizontalAlignment=&#x27;center&#x27;&amp;VerticalAlignment=&#x27;top&#x27;",
       "publishedAt": null,
-      "observedAt": "2026-09-03T18:58:11.099Z",
+      "observedAt": "2026-09-03T20:05:12.143Z",
       "signalMatches": {
         "specials": [
           "offer",
@@ -4264,8 +4288,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Cheese Curds Gourmet Burgers + Poutinerie. Halifax",
       "postUrl": "https://www.cheesecurdsburgers.com/",
       "mediaUrl": "https://images.squarespace-cdn.com/content/v1/53e3cc1de4b04a78ec271c4f/1584043735607-HJVEOANIMOHAMCLCSKW1/Best-Burgers%4010x-e1567750291520.png",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:10.937Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:11.843Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -4301,8 +4325,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "FEATURE MENU &mdash; Cheese Curds Gourmet Burgers + Poutinerie HOME ABOUT LOCATIONS MENU GLUTEN FREE INFO NUTRITIONAL INFO PHOTOS CAREERS NEWS INSPIRED CHEF INSPIRED® FRANCHISING CONTACT Menu It's Worth the Wait HOME ABOUT LOCATIONS MENU GLUTEN FREE INFO NUTRITIONAL INFO PHOTOS CAREERS NEWS INSPIRED CHEF INSPIRED® FRANCHISING CONTACT ORDER ONLINE Certificate of Excellence 2013 - 2025 Our Feature Menu Available for...",
       "postUrl": "https://www.cheesecurdsburgers.com/featuremenu",
       "mediaUrl": "https://images.squarespace-cdn.com/content/v1/53e3cc1de4b04a78ec271c4f/1584043735607-HJVEOANIMOHAMCLCSKW1/Best-Burgers%4010x-e1567750291520.png",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:11.567Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:12.461Z",
       "signalMatches": {
         "specials": [
           "feature menu",
@@ -4338,8 +4362,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Now Open in 6 locations, Woodside & Burnside in Dartmouth, NS, Larry Uteck & Clayton Park in Halifax, NS, Truro, NS, and Oromocto, NB.",
       "postUrl": "https://www.cheesecurdsburgers.com/locations",
       "mediaUrl": "https://images.squarespace-cdn.com/content/v1/53e3cc1de4b04a78ec271c4f/1584043735607-HJVEOANIMOHAMCLCSKW1/Best-Burgers%4010x-e1567750291520.png",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:11.394Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:12.293Z",
       "signalMatches": {
         "openings": [
           "now open"
@@ -4374,8 +4398,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Our gourmet burgers are made fresh with each order. Our menu is available for both dine in and take-out.",
       "postUrl": "https://www.cheesecurdsburgers.com/menu",
       "mediaUrl": "https://images.squarespace-cdn.com/content/v1/53e3cc1de4b04a78ec271c4f/1584043735607-HJVEOANIMOHAMCLCSKW1/Best-Burgers%4010x-e1567750291520.png",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:11.222Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:12.122Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -4408,7 +4432,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://citytvplus.ca/brands/foodnetwork",
       "mediaUrl": "https://production.static-d3-rogent.com/api/shain/v1/dataservice/ResizeImage/$value?Format=&#x27;jpg&#x27;&amp;Quality=75&amp;ImageId=&#x27;240777&#x27;&amp;EntityType=&#x27;Item&#x27;&amp;EntityId=&#x27;130343&#x27;&amp;Width=720&amp;Height=540&amp;ResizeAction=&#x27;fill&#x27;&amp;HorizontalAlignment=&#x27;center&#x27;&amp;VerticalAlignment=&#x27;top&#x27;",
       "publishedAt": null,
-      "observedAt": "2026-09-03T18:58:11.559Z",
+      "observedAt": "2026-09-03T20:05:12.625Z",
       "signalMatches": {
         "specials": [
           "offer",
@@ -4440,8 +4464,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Cheese Curds Gourmet Burgers + Poutinerie. Halifax",
       "postUrl": "https://www.cheesecurdsburgers.com/",
       "mediaUrl": "https://images.squarespace-cdn.com/content/v1/53e3cc1de4b04a78ec271c4f/1584043735607-HJVEOANIMOHAMCLCSKW1/Best-Burgers%4010x-e1567750291520.png",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:11.740Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:12.625Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -4477,8 +4501,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "FEATURE MENU &mdash; Cheese Curds Gourmet Burgers + Poutinerie HOME ABOUT LOCATIONS MENU GLUTEN FREE INFO NUTRITIONAL INFO PHOTOS CAREERS NEWS INSPIRED CHEF INSPIRED® FRANCHISING CONTACT Menu It's Worth the Wait HOME ABOUT LOCATIONS MENU GLUTEN FREE INFO NUTRITIONAL INFO PHOTOS CAREERS NEWS INSPIRED CHEF INSPIRED® FRANCHISING CONTACT ORDER ONLINE Certificate of Excellence 2013 - 2025 Our Feature Menu Available for...",
       "postUrl": "https://www.cheesecurdsburgers.com/featuremenu",
       "mediaUrl": "https://images.squarespace-cdn.com/content/v1/53e3cc1de4b04a78ec271c4f/1584043735607-HJVEOANIMOHAMCLCSKW1/Best-Burgers%4010x-e1567750291520.png",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:12.265Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:13.125Z",
       "signalMatches": {
         "specials": [
           "feature menu",
@@ -4514,8 +4538,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Now Open in 6 locations, Woodside & Burnside in Dartmouth, NS, Larry Uteck & Clayton Park in Halifax, NS, Truro, NS, and Oromocto, NB.",
       "postUrl": "https://www.cheesecurdsburgers.com/locations",
       "mediaUrl": "https://images.squarespace-cdn.com/content/v1/53e3cc1de4b04a78ec271c4f/1584043735607-HJVEOANIMOHAMCLCSKW1/Best-Burgers%4010x-e1567750291520.png",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:12.087Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:12.960Z",
       "signalMatches": {
         "openings": [
           "now open"
@@ -4550,8 +4574,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Our gourmet burgers are made fresh with each order. Our menu is available for both dine in and take-out.",
       "postUrl": "https://www.cheesecurdsburgers.com/menu",
       "mediaUrl": "https://images.squarespace-cdn.com/content/v1/53e3cc1de4b04a78ec271c4f/1584043735607-HJVEOANIMOHAMCLCSKW1/Best-Burgers%4010x-e1567750291520.png",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:11.916Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:12.795Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -4583,8 +4607,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "TouchBistro - Online Ordering",
       "postUrl": "https://order.tbdine.com/pickup/22146/menu",
       "mediaUrl": null,
-      "publishedAt": "2001-03-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:11.821Z",
+      "publishedAt": "2001-03-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:12.877Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -4607,8 +4631,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Chinatown Restaurant – Chinatown Restaurant in Halifax 跳至内容 Home About Us Menu 中文菜单 Chinese Menu 点心菜单 Dim Sum Menu Contact Us Order Online Order Online Home About Us Menu 中文菜单 Chinese Menu 点心菜单 Dim Sum Menu Contact Us CHINATOWN RESTAURANT Online ordering is available now! Takeout or delivery please call (902) 443-2444 Order Online Explore Menu ** Dine in Chinatown, Get Rewarded! ** Spent more than $25 before tax,...",
       "postUrl": "https://www.chinatownhalifax.com/",
       "mediaUrl": "https://www.chinatownhalifax.com/wp-content/uploads/2024/08/chinatown-gift-card-3-1024x960.png",
-      "publishedAt": "2001-07-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:11.772Z",
+      "publishedAt": "2001-07-01T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:12.392Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -4644,8 +4668,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "中文菜单 Chinese Menu – Chinatown Restaurant 跳至内容 Home About Us Menu 中文菜单 Chinese Menu 点心菜单 Dim Sum Menu Contact Us Order Online Order Online Home About Us Menu 中文菜单 Chinese Menu 点心菜单 Dim Sum Menu Contact Us Best Choice Our Menu. Regular & Take out Menu 中文菜单（Chinese Menu） 点心菜单（Dim Sum Menu） 中文菜单 Chinese Menu 汤类 Soup 海皇鱼肚羹 Fish Maw with Seafood Soup SM $18.95 LG $22.95 海鲜豆腐羹 Seafood with Bean Curd Thick Soup SM $18.95...",
       "postUrl": "https://www.chinatownhalifax.com/chinese-menu/",
       "mediaUrl": null,
-      "publishedAt": "2001-07-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:12.444Z",
+      "publishedAt": "2001-07-01T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:12.894Z",
       "signalMatches": {
         "specials": [
           "special"
@@ -4684,8 +4708,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Contact Us – Chinatown Restaurant 跳至内容 Home About Us Menu 中文菜单 Chinese Menu 点心菜单 Dim Sum Menu Contact Us Order Online Order Online Home About Us Menu 中文菜单 Chinese Menu 点心菜单 Dim Sum Menu Contact Us Reserve A Table Contact Us. Are You Hungry? Reserve A Table Takeout or delivery please call (902)443-2444 Open Hours Monday 4PM --- 9PM Tuesday Closed Wednesday 3PM --- 9PM Thursday 3PM --- 10PM Friday 3PM --- 10PM Sat &...",
       "postUrl": "https://www.chinatownhalifax.com/contact-us/",
       "mediaUrl": null,
-      "publishedAt": "2001-07-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:12.835Z",
+      "publishedAt": "2001-07-01T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:13.261Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -4721,8 +4745,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "点心菜单 Dim Sum Menu – Chinatown Restaurant 跳至内容 Home About Us Menu 中文菜单 Chinese Menu 点心菜单 Dim Sum Menu Contact Us Order Online Order Online Home About Us Menu 中文菜单 Chinese Menu 点心菜单 Dim Sum Menu Contact Us Best Choice Our Menu. Regular & Take out Menu 中文菜单（Chinese Menu） 点心菜单（Dim Sum Menu） 点心菜单 Dim Sum Menu Welcome to Chinatown You can enjoy delicious food with your family and friends in Chinatown. Reserve Table Or C...",
       "postUrl": "https://www.chinatownhalifax.com/dim-sum-menu/",
       "mediaUrl": "https://www.chinatownhalifax.com/wp-content/uploads/2025/03/%E7%82%B9%E5%BF%83%E9%A4%90%E7%89%8C-2048x1325.jpg",
-      "publishedAt": "2001-07-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:12.638Z",
+      "publishedAt": "2001-07-01T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:13.078Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -4758,8 +4782,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Menu – Chinatown Restaurant 跳至内容 Home About Us Menu 中文菜单 Chinese Menu 点心菜单 Dim Sum Menu Contact Us Order Online Order Online Home About Us Menu 中文菜单 Chinese Menu 点心菜单 Dim Sum Menu Contact Us Best Choice Our Menu. Regular & Take out Menu 中文菜单（Chinese Menu） 点心菜单（Dim Sum Menu） Regular & Take Out Menu Appetizers Mini Spring Rolls(2PC) $3.45 Crispy Spring Rolls(Vegetarian) with Noodle $3.15 Egg Roll $2.75 Barbecue Pork...",
       "postUrl": "https://www.chinatownhalifax.com/menu/",
       "mediaUrl": null,
-      "publishedAt": "2001-07-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:12.226Z",
+      "publishedAt": "2001-07-01T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:12.694Z",
       "signalMatches": {
         "specials": [
           "special"
@@ -4799,8 +4823,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "CHKN CHOP Cart 0 Hours Menu Contact Location Cart 0 Hours Menu Contact Location Scroll New Page New Page CHKNCHOP 6041 north street, Halifax, Canada 9024060690 info@chknchop.com Hours Tue 11:30am to 10pm Wed 11:30am to 10pm Thu 11:30am to 10pm Fri 11:30am to 10pm Sat 11:30am to 10pm",
       "postUrl": "https://www.chknchop.com/",
       "mediaUrl": "https://images.squarespace-cdn.com/content/v1/595fc19ae4fcb53915024e3f/1775830986126-E6E6TRAI8A4BQ22JWQ88/image-asset.jpeg",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:12.135Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:13.277Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -4836,8 +4860,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Menu &mdash; CHKN CHOP Cart 0 Hours Menu Contact Location Cart 0 Hours Menu Contact Location Menu Download Menu Download DRanks menu CHKNCHOP 6041 north street, Halifax, Canada 9024060690 info@chknchop.com Hours Tue 11:30am to 10pm Wed 11:30am to 10pm Thu 11:30am to 10pm Fri 11:30am to 10pm Sat 11:30am to 10pm",
       "postUrl": "https://www.chknchop.com/menu",
       "mediaUrl": "https://images.squarespace-cdn.com/content/v1/595fc19ae4fcb53915024e3f/27d0f83c-d3e4-4b24-80f8-f5829bfa503d/MENU+aug+24+2026+%5BRecovered%5D.jpg",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:12.427Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:13.711Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -4874,7 +4898,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.chezcora.com/en/",
       "mediaUrl": "https://www.chezcora.com/wp-content/uploads/2026/05/131_INT25_SiteWeb_Duo-BD_25-11-25.webp",
       "publishedAt": "2560-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:18.723Z",
+      "observedAt": "2026-09-03T20:05:23.330Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -5024,7 +5048,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.chezcora.com/en/breakfast-lunch-restaurants/halifax-downtown/",
       "mediaUrl": "https://www.chezcora.com/wp-content/uploads/2026/05/131_INT25_SiteWeb_Duo-BD_25-11-25.webp",
       "publishedAt": "2560-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:12.604Z",
+      "observedAt": "2026-09-03T20:05:13.794Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -5248,8 +5272,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Cafés spécialisés, jus, smoothies et boissons chaudes : tout ce qui accompagne ton déjeuner au menu des restaurants Cora.",
       "postUrl": "https://www.chezcora.com/en/menu/beverages/",
       "mediaUrl": "https://e3b2rn3eqfa.exactdn.com/wp-content/uploads/2026/04/131_INT25_SiteWeb_Boissons_19-11-25_V1.webp?strip=all",
-      "publishedAt": "2001-07-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:16.623Z",
+      "publishedAt": "2001-07-01T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:17.687Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -5323,8 +5347,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Cafés spécialisés, jus, smoothies et boissons chaudes : tout ce qui accompagne ton déjeuner au menu des restaurants Cora.",
       "postUrl": "https://www.chezcora.com/en/menu/beverages/",
       "mediaUrl": "https://e3b2rn3eqfa.exactdn.com/wp-content/uploads/2026/04/131_INT25_SiteWeb_Boissons_19-11-25_V1.webp?strip=all",
-      "publishedAt": "2001-07-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:22.259Z",
+      "publishedAt": "2001-07-01T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:26.633Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -5398,8 +5422,81 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Les crêpes Cora garnies de fruits frais : la signature de la maison, déclinée en plusieurs assiettes au menu déjeuner.",
       "postUrl": "https://www.chezcora.com/en/menu/crepes-fruits/",
       "mediaUrl": "https://e3b2rn3eqfa.exactdn.com/wp-content/uploads/2026/04/131_INT25_SiteWeb_Crepe_18-11-25_V1-e1781726208172.webp?strip=all",
-      "publishedAt": "2001-07-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:24.263Z",
+      "publishedAt": "2001-07-01T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:28.560Z",
+      "signalMatches": {
+        "specials": [
+          "promo",
+          "promotion"
+        ],
+        "menu": [
+          "menu",
+          "lunch menu"
+        ],
+        "brunch": [
+          "breakfast"
+        ]
+      },
+      "candidateLinks": [
+        {
+          "url": "https://www.chezcora.com/en/menu/crepes-fruits",
+          "label": "Skip to content"
+        },
+        {
+          "url": "https://www.chezcora.com/en/menus",
+          "label": "Menu"
+        },
+        {
+          "url": "https://order.chezcora.com/?language=en",
+          "label": "Order now"
+        },
+        {
+          "url": "https://www.chezcora.com/en/newsletter",
+          "label": "Newsletter"
+        },
+        {
+          "url": "https://www.chezcora.com/en/blog",
+          "label": "Blog"
+        },
+        {
+          "url": "https://www.chezcora.com/menu/crepes-fruits",
+          "label": "FR"
+        },
+        {
+          "url": "https://www.chezcora.com/en/menu/sweet-salty",
+          "label": "Sweet 'n salty"
+        },
+        {
+          "url": "https://www.chezcora.com/en/menu/skillets",
+          "label": "Skillets"
+        },
+        {
+          "url": "https://www.chezcora.com/en/menu/pancakes",
+          "label": "Pancakes"
+        },
+        {
+          "url": "https://www.chezcora.com/en/menu/french-toast",
+          "label": "French toast"
+        }
+      ],
+      "sourceKind": "official_page_html",
+      "associationBasis": "same_site_official_page",
+      "confidence": "official_source_page_signal",
+      "reviewState": "source_signal",
+      "discoveryReason": "first_party_menu",
+      "sourceLabel": "Crêpes"
+    },
+    {
+      "id": "official-page-0530211c683e9ee320",
+      "restaurantId": "osm-node-3799422457-cora",
+      "restaurantName": "Cora",
+      "platform": "official_page",
+      "title": "Crêpes aux fruits frais | Menu déjeuner Cora",
+      "excerpt": "Les crêpes Cora garnies de fruits frais : la signature de la maison, déclinée en plusieurs assiettes au menu déjeuner.",
+      "postUrl": "https://www.chezcora.com/en/menu/crepes-fruits/",
+      "mediaUrl": "https://e3b2rn3eqfa.exactdn.com/wp-content/uploads/2026/04/131_INT25_SiteWeb_Crepe_18-11-25_V1-e1781726208172.webp?strip=all",
+      "publishedAt": "2001-07-01T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:19.623Z",
       "signalMatches": {
         "specials": [
           "promo",
@@ -5615,8 +5712,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Les œufs bénédictine version Cora : muffin anglais, œufs pochés et sauce hollandaise, déclinés en plusieurs variantes au menu déjeuner.",
       "postUrl": "https://www.chezcora.com/en/menu/eggs-ben-and-dictine/",
       "mediaUrl": "https://e3b2rn3eqfa.exactdn.com/wp-content/uploads/2021/08/131_INT25_SiteWeb_BD_26-11-25_V1.webp?strip=all",
-      "publishedAt": "2001-07-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:15.572Z",
+      "publishedAt": "2001-07-01T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:16.635Z",
       "signalMatches": {
         "specials": [
           "promo",
@@ -5688,8 +5785,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Les œufs bénédictine version Cora : muffin anglais, œufs pochés et sauce hollandaise, déclinés en plusieurs variantes au menu déjeuner.",
       "postUrl": "https://www.chezcora.com/en/menu/eggs-ben-and-dictine/",
       "mediaUrl": "https://e3b2rn3eqfa.exactdn.com/wp-content/uploads/2021/08/131_INT25_SiteWeb_BD_26-11-25_V1.webp?strip=all",
-      "publishedAt": "2001-07-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:21.206Z",
+      "publishedAt": "2001-07-01T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:25.674Z",
       "signalMatches": {
         "specials": [
           "promo",
@@ -6043,23 +6140,24 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "sourceLabel": "French toast"
     },
     {
-      "id": "official-page-1e719a81240efb1c97",
+      "id": "official-page-e08c31d2cfdc4dab35",
       "restaurantId": "osm-node-3799422457-cora",
       "restaurantName": "Cora",
       "platform": "official_page",
-      "title": "Fresh fruits – Dining room menu – Cora Breakfast and lunch",
-      "excerpt": "Fresh fruits – Dining room menu – Cora Breakfast and lunch Set your favourite restaurant for a personalized experience. Geolocation Géolocalisation Localisez-moi Display results within km Cora Breakfast and Lunch Open Currently open ∙ Closes at 15:00 (PST) Abbotsford (604) 744-2672 3068 Gladwin Road, Abbotsford, BC V2T5T5 Learn more Reserve now Order Cora Breakfast and Lunch Open Currently open ∙ Closes at 15:00 (...",
+      "title": "Fruits frais | Menu déjeuner Cora",
+      "excerpt": "Les assiettes de fruits frais Cora, servies seules ou en accompagnement de tes crêpes, gaufres et pancakes du matin.",
       "postUrl": "https://www.chezcora.com/en/menu/fresh-fruits/",
-      "mediaUrl": "https://www.chezcora.com/wp-content/uploads/2022/02/cora-twitter-card-tag.jpg",
-      "publishedAt": "2026-05-20T13:28:46.000Z",
-      "observedAt": "2026-09-01T15:23:55.102Z",
+      "mediaUrl": "https://e3b2rn3eqfa.exactdn.com/wp-content/uploads/2021/08/131_INT25_SiteWeb_Samira_18-11-25.webp?strip=all",
+      "publishedAt": "2560-01-01T00:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:21.406Z",
       "signalMatches": {
         "specials": [
-          "offer",
-          "offers"
+          "promo",
+          "promotion"
         ],
         "menu": [
-          "menu"
+          "menu",
+          "lunch menu"
         ],
         "brunch": [
           "breakfast"
@@ -6067,44 +6165,44 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       },
       "candidateLinks": [
         {
-          "url": "https://www.chezcora.com/en/breakfast-lunch-restaurants/cora-abbotsford",
-          "label": "Learn more"
+          "url": "https://www.chezcora.com/en/menu/fresh-fruits",
+          "label": "Skip to content"
         },
         {
-          "url": "https://order.chezcora.com/?language=en&",
-          "label": "Order"
+          "url": "https://www.chezcora.com/en/menus",
+          "label": "Menu"
         },
         {
-          "url": "https://www.chezcora.com/en/breakfast-lunch-restaurants/cora-acadie-montreal",
-          "label": "Learn more"
+          "url": "https://order.chezcora.com/?language=en",
+          "label": "Order now"
         },
         {
-          "url": "https://www.chezcora.com/en/breakfast-lunch-restaurants/cora-adelaide-centre-london",
-          "label": "Learn more"
+          "url": "https://www.chezcora.com/en/newsletter",
+          "label": "Newsletter"
         },
         {
-          "url": "https://www.chezcora.com/en/breakfast-lunch-restaurants/cora-airdrie",
-          "label": "Learn more"
+          "url": "https://www.chezcora.com/en/blog",
+          "label": "Blog"
         },
         {
-          "url": "https://www.chezcora.com/en/breakfast-lunch-restaurants/cora-airport-queen-brampton",
-          "label": "Learn more"
+          "url": "https://www.chezcora.com/menu/fruits-frais",
+          "label": "FR"
         },
         {
-          "url": "https://www.chezcora.com/en/breakfast-lunch-restaurants/cora-alta-vista-ottawa",
-          "label": "Learn more"
+          "url": "https://www.chezcora.com/en/menu/sweet-salty",
+          "label": "Sweet 'n salty"
         },
         {
-          "url": "https://www.chezcora.com/en/breakfast-lunch-restaurants/cora-ancienne-lorette",
-          "label": "Learn more"
+          "url": "https://www.chezcora.com/en/menu/skillets",
+          "label": "Skillets"
         },
         {
-          "url": "https://www.chezcora.com/en/breakfast-lunch-restaurants/cora-barrie",
-          "label": "Learn more"
+          "url": "https://www.chezcora.com/en/menu/pancakes",
+          "label": "Pancakes"
         },
         {
-          "url": "https://www.chezcora.com/en/breakfast-lunch-restaurants/cora-beauport",
-          "label": "Learn more"
+          "url": "https://www.chezcora.com/en/menu/french-toast",
+          "label": "French toast"
         }
       ],
       "sourceKind": "official_page_html",
@@ -6115,23 +6213,24 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "sourceLabel": "Fresh fruit"
     },
     {
-      "id": "official-page-af8b7a3dfecca31eaa",
+      "id": "official-page-a2bc69948806974c51",
       "restaurantId": "osm-node-11867490075-cora",
       "restaurantName": "Cora",
       "platform": "official_page",
-      "title": "Fresh fruits – Dining room menu – Cora Breakfast and lunch",
-      "excerpt": "Fresh fruits – Dining room menu – Cora Breakfast and lunch Set your favourite restaurant for a personalized experience. Geolocation Géolocalisation Localisez-moi Display results within km Cora Breakfast and Lunch Open Currently open ∙ Closes at 15:00 (PST) Abbotsford (604) 744-2672 3068 Gladwin Road, Abbotsford, BC V2T5T5 Learn more Reserve now Order Cora Breakfast and Lunch Open Currently open ∙ Closes at 15:00 (...",
+      "title": "Fruits frais | Menu déjeuner Cora",
+      "excerpt": "Les assiettes de fruits frais Cora, servies seules ou en accompagnement de tes crêpes, gaufres et pancakes du matin.",
       "postUrl": "https://www.chezcora.com/en/menu/fresh-fruits/",
-      "mediaUrl": "https://www.chezcora.com/wp-content/uploads/2022/02/cora-twitter-card-tag.jpg",
-      "publishedAt": "2026-05-20T13:28:46.000Z",
-      "observedAt": "2026-09-01T15:24:08.776Z",
+      "mediaUrl": "https://e3b2rn3eqfa.exactdn.com/wp-content/uploads/2021/08/131_INT25_SiteWeb_Samira_18-11-25.webp?strip=all",
+      "publishedAt": "2560-01-01T00:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:31.339Z",
       "signalMatches": {
         "specials": [
-          "offer",
-          "offers"
+          "promo",
+          "promotion"
         ],
         "menu": [
-          "menu"
+          "menu",
+          "lunch menu"
         ],
         "brunch": [
           "breakfast"
@@ -6139,44 +6238,44 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       },
       "candidateLinks": [
         {
-          "url": "https://www.chezcora.com/en/breakfast-lunch-restaurants/cora-abbotsford",
-          "label": "Learn more"
+          "url": "https://www.chezcora.com/en/menu/fresh-fruits",
+          "label": "Skip to content"
         },
         {
-          "url": "https://order.chezcora.com/?language=en&",
-          "label": "Order"
+          "url": "https://www.chezcora.com/en/menus",
+          "label": "Menu"
         },
         {
-          "url": "https://www.chezcora.com/en/breakfast-lunch-restaurants/cora-acadie-montreal",
-          "label": "Learn more"
+          "url": "https://order.chezcora.com/?language=en",
+          "label": "Order now"
         },
         {
-          "url": "https://www.chezcora.com/en/breakfast-lunch-restaurants/cora-adelaide-centre-london",
-          "label": "Learn more"
+          "url": "https://www.chezcora.com/en/newsletter",
+          "label": "Newsletter"
         },
         {
-          "url": "https://www.chezcora.com/en/breakfast-lunch-restaurants/cora-airdrie",
-          "label": "Learn more"
+          "url": "https://www.chezcora.com/en/blog",
+          "label": "Blog"
         },
         {
-          "url": "https://www.chezcora.com/en/breakfast-lunch-restaurants/cora-airport-queen-brampton",
-          "label": "Learn more"
+          "url": "https://www.chezcora.com/menu/fruits-frais",
+          "label": "FR"
         },
         {
-          "url": "https://www.chezcora.com/en/breakfast-lunch-restaurants/cora-alta-vista-ottawa",
-          "label": "Learn more"
+          "url": "https://www.chezcora.com/en/menu/sweet-salty",
+          "label": "Sweet 'n salty"
         },
         {
-          "url": "https://www.chezcora.com/en/breakfast-lunch-restaurants/cora-ancienne-lorette",
-          "label": "Learn more"
+          "url": "https://www.chezcora.com/en/menu/skillets",
+          "label": "Skillets"
         },
         {
-          "url": "https://www.chezcora.com/en/breakfast-lunch-restaurants/cora-barrie",
-          "label": "Learn more"
+          "url": "https://www.chezcora.com/en/menu/pancakes",
+          "label": "Pancakes"
         },
         {
-          "url": "https://www.chezcora.com/en/breakfast-lunch-restaurants/cora-beauport",
-          "label": "Learn more"
+          "url": "https://www.chezcora.com/en/menu/french-toast",
+          "label": "French toast"
         }
       ],
       "sourceKind": "official_page_html",
@@ -6185,6 +6284,79 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "reviewState": "source_signal",
       "discoveryReason": "first_party_menu",
       "sourceLabel": "Fresh fruit"
+    },
+    {
+      "id": "official-page-2b0e357494bc008954",
+      "restaurantId": "osm-node-11867490075-cora",
+      "restaurantName": "Cora",
+      "platform": "official_page",
+      "title": "Menu enfants — Déjeuner pour les petits | Cora",
+      "excerpt": "Des portions adaptées aux plus jeunes chez Cora : crêpes, œufs, pancakes et fruits frais, pensés pour les petits appétits du matin.",
+      "postUrl": "https://www.chezcora.com/en/menu/kids-menu/",
+      "mediaUrl": "https://e3b2rn3eqfa.exactdn.com/wp-content/uploads/2026/04/131_INT25_SiteWeb_Enfants_20-11-25_V1.webp?strip=all",
+      "publishedAt": "2001-07-01T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:33.188Z",
+      "signalMatches": {
+        "specials": [
+          "promo",
+          "promotion"
+        ],
+        "menu": [
+          "menu",
+          "lunch menu"
+        ],
+        "brunch": [
+          "breakfast"
+        ]
+      },
+      "candidateLinks": [
+        {
+          "url": "https://www.chezcora.com/en/menu/kids-menu",
+          "label": "Skip to content"
+        },
+        {
+          "url": "https://www.chezcora.com/en/menus",
+          "label": "Menu"
+        },
+        {
+          "url": "https://order.chezcora.com/?language=en",
+          "label": "Order now"
+        },
+        {
+          "url": "https://www.chezcora.com/en/newsletter",
+          "label": "Newsletter"
+        },
+        {
+          "url": "https://www.chezcora.com/en/blog",
+          "label": "Blog"
+        },
+        {
+          "url": "https://www.chezcora.com/menu/menu-enfants",
+          "label": "FR"
+        },
+        {
+          "url": "https://www.chezcora.com/en/menu/sweet-salty",
+          "label": "Sweet 'n salty"
+        },
+        {
+          "url": "https://www.chezcora.com/en/menu/skillets",
+          "label": "Skillets"
+        },
+        {
+          "url": "https://www.chezcora.com/en/menu/pancakes",
+          "label": "Pancakes"
+        },
+        {
+          "url": "https://www.chezcora.com/en/menu/french-toast",
+          "label": "French toast"
+        }
+      ],
+      "sourceKind": "official_page_html",
+      "associationBasis": "same_site_official_page",
+      "confidence": "official_source_page_signal",
+      "reviewState": "source_signal",
+      "discoveryReason": "first_party_menu",
+      "sourceLabel": "Kids' menu"
     },
     {
       "id": "official-page-f49bbec287f69029d1",
@@ -6339,8 +6511,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Les cassolettes Cora : pommes de terre, œufs et garnitures servis bien chauds, pour un déjeuner réconfortant et généreux.",
       "postUrl": "https://www.chezcora.com/en/menu/skillets/",
       "mediaUrl": "https://e3b2rn3eqfa.exactdn.com/wp-content/uploads/2026/04/131_INT25_SiteWeb_Cassolette_20-11-25_V1-e1781726052335.webp?strip=all",
-      "publishedAt": "2001-07-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:17.680Z",
+      "publishedAt": "2001-07-01T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:18.692Z",
       "signalMatches": {
         "specials": [
           "promo",
@@ -6412,8 +6584,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Les cassolettes Cora : pommes de terre, œufs et garnitures servis bien chauds, pour un déjeuner réconfortant et généreux.",
       "postUrl": "https://www.chezcora.com/en/menu/skillets/",
       "mediaUrl": "https://e3b2rn3eqfa.exactdn.com/wp-content/uploads/2026/04/131_INT25_SiteWeb_Cassolette_20-11-25_V1-e1781726052335.webp?strip=all",
-      "publishedAt": "2001-07-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:23.263Z",
+      "publishedAt": "2001-07-01T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:27.570Z",
       "signalMatches": {
         "specials": [
           "promo",
@@ -6621,23 +6793,172 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "sourceLabel": "Sweet 'n salty"
     },
     {
-      "id": "official-page-59a060afefe63f437f",
+      "id": "official-page-e884873b8e1633dd85",
       "restaurantId": "osm-node-3799422457-cora",
       "restaurantName": "Cora",
       "platform": "official_page",
-      "title": "Waffles – Dining room menu – Cora Breakfast and lunch",
-      "excerpt": "Waffles – Dining room menu – Cora Breakfast and lunch Set your favourite restaurant for a personalized experience. Geolocation Géolocalisation Localisez-moi Display results within km Cora Breakfast and Lunch Open Currently open ∙ Closes at 15:00 (PST) Abbotsford (604) 744-2672 3068 Gladwin Road, Abbotsford, BC V2T5T5 Learn more Reserve now Order Cora Breakfast and Lunch Open Currently open ∙ Closes at 15:00 (EST)...",
-      "postUrl": "https://www.chezcora.com/en/menu/waffles/",
-      "mediaUrl": "https://www.chezcora.com/wp-content/uploads/2022/02/cora-twitter-card-tag.jpg",
-      "publishedAt": "2025-11-10T16:15:47.000Z",
-      "observedAt": "2026-09-01T15:23:58.295Z",
+      "title": "Favoris des ados | Menu déjeuner Cora",
+      "excerpt": "Les assiettes généreuses qui plaisent aux ados chez Cora : portions copieuses et grands classiques du déjeuner.",
+      "postUrl": "https://www.chezcora.com/en/menu/teens-favorites/",
+      "mediaUrl": "https://e3b2rn3eqfa.exactdn.com/wp-content/uploads/2026/04/131_INT25_SiteWeb_Ados_25-11-25_V1.webp?strip=all",
+      "publishedAt": "2001-07-01T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:20.439Z",
       "signalMatches": {
         "specials": [
-          "offer",
-          "offers"
+          "promo",
+          "promotion"
         ],
         "menu": [
-          "menu"
+          "menu",
+          "lunch menu"
+        ],
+        "brunch": [
+          "brunch",
+          "breakfast"
+        ]
+      },
+      "candidateLinks": [
+        {
+          "url": "https://www.chezcora.com/en/menu/teens-favorites",
+          "label": "Skip to content"
+        },
+        {
+          "url": "https://www.chezcora.com/en/menus",
+          "label": "Menu"
+        },
+        {
+          "url": "https://order.chezcora.com/?language=en",
+          "label": "Order now"
+        },
+        {
+          "url": "https://www.chezcora.com/en/newsletter",
+          "label": "Newsletter"
+        },
+        {
+          "url": "https://www.chezcora.com/en/blog",
+          "label": "Blog"
+        },
+        {
+          "url": "https://www.chezcora.com/menu/favoris-des-ados",
+          "label": "FR"
+        },
+        {
+          "url": "https://www.chezcora.com/en/menu/sweet-salty",
+          "label": "Sweet 'n salty"
+        },
+        {
+          "url": "https://www.chezcora.com/en/menu/skillets",
+          "label": "Skillets"
+        },
+        {
+          "url": "https://www.chezcora.com/en/menu/pancakes",
+          "label": "Pancakes"
+        },
+        {
+          "url": "https://www.chezcora.com/en/menu/french-toast",
+          "label": "French toast"
+        }
+      ],
+      "sourceKind": "official_page_html",
+      "associationBasis": "same_site_official_page",
+      "confidence": "official_source_page_signal",
+      "reviewState": "source_signal",
+      "discoveryReason": "first_party_menu",
+      "sourceLabel": "Teen favourites"
+    },
+    {
+      "id": "official-page-67984bc0f93b605d4f",
+      "restaurantId": "osm-node-11867490075-cora",
+      "restaurantName": "Cora",
+      "platform": "official_page",
+      "title": "Favoris des ados | Menu déjeuner Cora",
+      "excerpt": "Les assiettes généreuses qui plaisent aux ados chez Cora : portions copieuses et grands classiques du déjeuner.",
+      "postUrl": "https://www.chezcora.com/en/menu/teens-favorites/",
+      "mediaUrl": "https://e3b2rn3eqfa.exactdn.com/wp-content/uploads/2026/04/131_INT25_SiteWeb_Ados_25-11-25_V1.webp?strip=all",
+      "publishedAt": "2001-07-01T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:29.389Z",
+      "signalMatches": {
+        "specials": [
+          "promo",
+          "promotion"
+        ],
+        "menu": [
+          "menu",
+          "lunch menu"
+        ],
+        "brunch": [
+          "brunch",
+          "breakfast"
+        ]
+      },
+      "candidateLinks": [
+        {
+          "url": "https://www.chezcora.com/en/menu/teens-favorites",
+          "label": "Skip to content"
+        },
+        {
+          "url": "https://www.chezcora.com/en/menus",
+          "label": "Menu"
+        },
+        {
+          "url": "https://order.chezcora.com/?language=en",
+          "label": "Order now"
+        },
+        {
+          "url": "https://www.chezcora.com/en/newsletter",
+          "label": "Newsletter"
+        },
+        {
+          "url": "https://www.chezcora.com/en/blog",
+          "label": "Blog"
+        },
+        {
+          "url": "https://www.chezcora.com/menu/favoris-des-ados",
+          "label": "FR"
+        },
+        {
+          "url": "https://www.chezcora.com/en/menu/sweet-salty",
+          "label": "Sweet 'n salty"
+        },
+        {
+          "url": "https://www.chezcora.com/en/menu/skillets",
+          "label": "Skillets"
+        },
+        {
+          "url": "https://www.chezcora.com/en/menu/pancakes",
+          "label": "Pancakes"
+        },
+        {
+          "url": "https://www.chezcora.com/en/menu/french-toast",
+          "label": "French toast"
+        }
+      ],
+      "sourceKind": "official_page_html",
+      "associationBasis": "same_site_official_page",
+      "confidence": "official_source_page_signal",
+      "reviewState": "source_signal",
+      "discoveryReason": "first_party_menu",
+      "sourceLabel": "Teen favourites"
+    },
+    {
+      "id": "official-page-7d93d68ce5e36cad9d",
+      "restaurantId": "osm-node-3799422457-cora",
+      "restaurantName": "Cora",
+      "platform": "official_page",
+      "title": "Gaufres et garnitures | Menu déjeuner Cora",
+      "excerpt": "Les gaufres Cora, croustillantes dehors et moelleuses dedans, garnies de fruits frais et de garnitures gourmandes au menu déjeuner.",
+      "postUrl": "https://www.chezcora.com/en/menu/waffles/",
+      "mediaUrl": "https://e3b2rn3eqfa.exactdn.com/wp-content/uploads/2026/02/Cora-Hero-top-shot-e1781726757562.jpg?strip=all",
+      "publishedAt": "2010-01-01T00:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:22.369Z",
+      "signalMatches": {
+        "specials": [
+          "promo",
+          "promotion"
+        ],
+        "menu": [
+          "menu",
+          "lunch menu"
         ],
         "brunch": [
           "breakfast"
@@ -6645,44 +6966,44 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       },
       "candidateLinks": [
         {
-          "url": "https://www.chezcora.com/en/breakfast-lunch-restaurants/cora-abbotsford",
-          "label": "Learn more"
+          "url": "https://www.chezcora.com/en/menu/waffles",
+          "label": "Skip to content"
         },
         {
-          "url": "https://order.chezcora.com/?language=en&",
-          "label": "Order"
+          "url": "https://www.chezcora.com/en/menus",
+          "label": "Menu"
         },
         {
-          "url": "https://www.chezcora.com/en/breakfast-lunch-restaurants/cora-acadie-montreal",
-          "label": "Learn more"
+          "url": "https://order.chezcora.com/?language=en",
+          "label": "Order now"
         },
         {
-          "url": "https://www.chezcora.com/en/breakfast-lunch-restaurants/cora-adelaide-centre-london",
-          "label": "Learn more"
+          "url": "https://www.chezcora.com/en/newsletter",
+          "label": "Newsletter"
         },
         {
-          "url": "https://www.chezcora.com/en/breakfast-lunch-restaurants/cora-airdrie",
-          "label": "Learn more"
+          "url": "https://www.chezcora.com/en/blog",
+          "label": "Blog"
         },
         {
-          "url": "https://www.chezcora.com/en/breakfast-lunch-restaurants/cora-airport-queen-brampton",
-          "label": "Learn more"
+          "url": "https://www.chezcora.com/menu/gaufres",
+          "label": "FR"
         },
         {
-          "url": "https://www.chezcora.com/en/breakfast-lunch-restaurants/cora-alta-vista-ottawa",
-          "label": "Learn more"
+          "url": "https://www.chezcora.com/en/menu/sweet-salty",
+          "label": "Sweet 'n salty"
         },
         {
-          "url": "https://www.chezcora.com/en/breakfast-lunch-restaurants/cora-ancienne-lorette",
-          "label": "Learn more"
+          "url": "https://www.chezcora.com/en/menu/skillets",
+          "label": "Skillets"
         },
         {
-          "url": "https://www.chezcora.com/en/breakfast-lunch-restaurants/cora-barrie",
-          "label": "Learn more"
+          "url": "https://www.chezcora.com/en/menu/pancakes",
+          "label": "Pancakes"
         },
         {
-          "url": "https://www.chezcora.com/en/breakfast-lunch-restaurants/cora-beauport",
-          "label": "Learn more"
+          "url": "https://www.chezcora.com/en/menu/french-toast",
+          "label": "French toast"
         }
       ],
       "sourceKind": "official_page_html",
@@ -6693,23 +7014,24 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "sourceLabel": "Waffles"
     },
     {
-      "id": "official-page-6517ae6945b3cec361",
+      "id": "official-page-de96a0e1fcf1776582",
       "restaurantId": "osm-node-11867490075-cora",
       "restaurantName": "Cora",
       "platform": "official_page",
-      "title": "Waffles – Dining room menu – Cora Breakfast and lunch",
-      "excerpt": "Waffles – Dining room menu – Cora Breakfast and lunch Set your favourite restaurant for a personalized experience. Geolocation Géolocalisation Localisez-moi Display results within km Cora Breakfast and Lunch Open Currently open ∙ Closes at 15:00 (PST) Abbotsford (604) 744-2672 3068 Gladwin Road, Abbotsford, BC V2T5T5 Learn more Reserve now Order Cora Breakfast and Lunch Open Currently open ∙ Closes at 15:00 (EST)...",
+      "title": "Gaufres et garnitures | Menu déjeuner Cora",
+      "excerpt": "Les gaufres Cora, croustillantes dehors et moelleuses dedans, garnies de fruits frais et de garnitures gourmandes au menu déjeuner.",
       "postUrl": "https://www.chezcora.com/en/menu/waffles/",
-      "mediaUrl": "https://www.chezcora.com/wp-content/uploads/2022/02/cora-twitter-card-tag.jpg",
-      "publishedAt": "2025-11-10T16:15:47.000Z",
-      "observedAt": "2026-09-01T15:24:12.100Z",
+      "mediaUrl": "https://e3b2rn3eqfa.exactdn.com/wp-content/uploads/2026/02/Cora-Hero-top-shot-e1781726757562.jpg?strip=all",
+      "publishedAt": "2010-01-01T00:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:32.271Z",
       "signalMatches": {
         "specials": [
-          "offer",
-          "offers"
+          "promo",
+          "promotion"
         ],
         "menu": [
-          "menu"
+          "menu",
+          "lunch menu"
         ],
         "brunch": [
           "breakfast"
@@ -6717,44 +7039,44 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       },
       "candidateLinks": [
         {
-          "url": "https://www.chezcora.com/en/breakfast-lunch-restaurants/cora-abbotsford",
-          "label": "Learn more"
+          "url": "https://www.chezcora.com/en/menu/waffles",
+          "label": "Skip to content"
         },
         {
-          "url": "https://order.chezcora.com/?language=en&",
-          "label": "Order"
+          "url": "https://www.chezcora.com/en/menus",
+          "label": "Menu"
         },
         {
-          "url": "https://www.chezcora.com/en/breakfast-lunch-restaurants/cora-acadie-montreal",
-          "label": "Learn more"
+          "url": "https://order.chezcora.com/?language=en",
+          "label": "Order now"
         },
         {
-          "url": "https://www.chezcora.com/en/breakfast-lunch-restaurants/cora-adelaide-centre-london",
-          "label": "Learn more"
+          "url": "https://www.chezcora.com/en/newsletter",
+          "label": "Newsletter"
         },
         {
-          "url": "https://www.chezcora.com/en/breakfast-lunch-restaurants/cora-airdrie",
-          "label": "Learn more"
+          "url": "https://www.chezcora.com/en/blog",
+          "label": "Blog"
         },
         {
-          "url": "https://www.chezcora.com/en/breakfast-lunch-restaurants/cora-airport-queen-brampton",
-          "label": "Learn more"
+          "url": "https://www.chezcora.com/menu/gaufres",
+          "label": "FR"
         },
         {
-          "url": "https://www.chezcora.com/en/breakfast-lunch-restaurants/cora-alta-vista-ottawa",
-          "label": "Learn more"
+          "url": "https://www.chezcora.com/en/menu/sweet-salty",
+          "label": "Sweet 'n salty"
         },
         {
-          "url": "https://www.chezcora.com/en/breakfast-lunch-restaurants/cora-ancienne-lorette",
-          "label": "Learn more"
+          "url": "https://www.chezcora.com/en/menu/skillets",
+          "label": "Skillets"
         },
         {
-          "url": "https://www.chezcora.com/en/breakfast-lunch-restaurants/cora-barrie",
-          "label": "Learn more"
+          "url": "https://www.chezcora.com/en/menu/pancakes",
+          "label": "Pancakes"
         },
         {
-          "url": "https://www.chezcora.com/en/breakfast-lunch-restaurants/cora-beauport",
-          "label": "Learn more"
+          "url": "https://www.chezcora.com/en/menu/french-toast",
+          "label": "French toast"
         }
       ],
       "sourceKind": "official_page_html",
@@ -6774,7 +7096,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.chezcora.com/en/menus/",
       "mediaUrl": "https://www.chezcora.com/wp-content/uploads/2026/05/131_INT25_SiteWeb_Duo-BD_25-11-25.webp",
       "publishedAt": "2560-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:14.043Z",
+      "observedAt": "2026-09-03T20:05:15.059Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -6852,7 +7174,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.chezcora.com/en/menus/",
       "mediaUrl": "https://www.chezcora.com/wp-content/uploads/2026/05/131_INT25_SiteWeb_Duo-BD_25-11-25.webp",
       "publishedAt": "2560-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:19.710Z",
+      "observedAt": "2026-09-03T20:05:24.224Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -6930,7 +7252,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://cremehalifax.com/",
       "mediaUrl": "https://immediac.blob.core.windows.net/cremecafeasiarestaurant/IMG_4799.JPG",
       "publishedAt": null,
-      "observedAt": "2026-09-03T18:58:12.814Z",
+      "observedAt": "2026-09-03T20:05:13.910Z",
       "signalMatches": {
         "specials": [
           "special"
@@ -6983,7 +7305,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://cremehalifax.com/_Products",
       "mediaUrl": null,
       "publishedAt": null,
-      "observedAt": "2026-09-03T18:58:13.561Z",
+      "observedAt": "2026-09-03T20:05:14.491Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -7026,7 +7348,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://cremehalifax.com/menu",
       "mediaUrl": "https://immediac.blob.core.windows.net/cremecafeasiarestaurant/Creme%20Menus/breakfast-menu.png",
       "publishedAt": null,
-      "observedAt": "2026-09-03T18:58:13.389Z",
+      "observedAt": "2026-09-03T20:05:14.342Z",
       "signalMatches": {
         "menu": [
           "menu",
@@ -7070,7 +7392,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.rcr.ca/restaurants/cable-wharf-kitchen-patio/",
       "mediaUrl": "https://www.rcr.ca/content/uploads/2023/04/cable-wharf-kitchen-patio-4-1920x1006.jpg",
       "publishedAt": "2026-07-15T18:57:22.000Z",
-      "observedAt": "2026-09-03T18:58:13.028Z",
+      "observedAt": "2026-09-03T20:05:14.678Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -7122,7 +7444,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.rcr.ca/restaurants/cut-steakhouse/",
       "mediaUrl": "https://www.rcr.ca/content/uploads/2018/02/cut-steakhouse-2.jpg",
       "publishedAt": "2026-07-22T17:22:20.000Z",
-      "observedAt": "2026-09-03T18:58:13.027Z",
+      "observedAt": "2026-09-03T20:05:14.244Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -7174,8 +7496,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Darrell’s is OPEN for IN Dining, Take out and Delivery. Voted #1 Canada’s 10 best Local Burger Joints! Famous for Award-winning Milkshakes, ​pitas and burgers.",
       "postUrl": "https://darrellsrestaurants.com/",
       "mediaUrl": "https://darrellsrestaurants.com/wp-content/uploads/2021/05/Darrells_Restaurant_apple.png",
-      "publishedAt": "2001-08-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:13.472Z",
+      "publishedAt": "2001-08-01T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:14.734Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -7214,7 +7536,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://darrellsrestaurants.com/catering-menu",
       "mediaUrl": "https://darrellsrestaurants.com/wp-content/uploads/2019/06/3.jpg",
       "publishedAt": "2025-04-14T17:47:41.000Z",
-      "observedAt": "2026-09-03T18:58:13.903Z",
+      "observedAt": "2026-09-03T20:05:14.960Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -7246,8 +7568,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "A Dartmouth must-visit destination for food and drink lovers. Our menu is filled with delicious seasonal plates that are sure to satisfy any craving. But what really sets us apart are our award-winning cocktails and oysters. Voted best in the area, our skilled bartenders craft masterful drinks using the freshest ingred",
       "postUrl": "https://dearfriendbar.com/",
       "mediaUrl": "https://dearfriendbar.com/assets/images/share.jpg?v=0108bfbb",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:00.648Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:01.648Z",
       "signalMatches": {
         "specials": [
           "offer"
@@ -7289,7 +7611,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://donninispizza.brygid.online/zgrid/proc/site/sitep.jsp",
       "mediaUrl": "https://storage.googleapis.com/bro-cdn1/zgrid/themes/13662/images/assets/facebook.png",
       "publishedAt": "2001-08-01T03:00:00.000Z",
-      "observedAt": "2026-09-01T15:23:52.556Z",
+      "observedAt": "2026-09-03T20:05:15.111Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -7330,7 +7652,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://donninispizza.com/",
       "mediaUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWsfxN3MF70iLPP-uEItfCq0qhyThDX0-zarX3N3Cng3DKox4wN=s120-c-rp-mo-br100",
       "publishedAt": "2025-02-10T15:57:38.000Z",
-      "observedAt": "2026-09-03T18:58:14.441Z",
+      "observedAt": "2026-09-03T20:05:15.111Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -7373,7 +7695,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://donninispizza.com/specials/",
       "mediaUrl": "https://donninispizza.com/wp-content/uploads/2024/05/special_01_medium_pepperoni_pizza_donninis_pizza.jpg",
       "publishedAt": "2025-03-23T01:41:16.000Z",
-      "observedAt": "2026-09-03T18:58:17.498Z",
+      "observedAt": "2026-09-03T20:05:18.209Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -7405,8 +7727,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "ence Entertainment in a new way \" I have enjoyed my lifetime membership through the Dooly's chain since 1998 out of Saint John, NB and two locations in Moncton, NB. Dooly's always offered me the ability to learn and play pool at whatever level I wanted from recreational fun leagues to competitive leagues and tournaments. Dooly's has provided me the ability to grow. I have met some of my lifelong friends through pl...",
       "postUrl": "https://www.doolys.ca/",
       "mediaUrl": "https://images.squarespace-cdn.com/content/v1/59c45bccd55b413ae7e2eee5/1516723613097-J4S5O61VY7HBY0UHXNK9/QualityTimeWithFriends.jpg",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:14.607Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:15.227Z",
       "signalMatches": {
         "specials": [
           "offer",
@@ -7444,8 +7766,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "About Your Event &mdash; Dooly's section2 section3 section4 section5 Home Our Story Locations Membership Billiards Contact Fr section2 section3 section4 section5 Home Our Story Locations Membership Billiards Contact Fr Dooly’s offers the perfect environment for group gatherings of all types and sizes. Whether you’re planning a birthday party, a bachelor or diaper party or corporate mixer, host your event in our re...",
       "postUrl": "https://www.doolys.ca/about-your-event-1",
       "mediaUrl": "https://images.squarespace-cdn.com/content/v1/59c45bccd55b413ae7e2eee5/1509725992415-RVDXGQEZUAW05QJN0LV7/PlanningAnEvent.jpg",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:14.893Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:15.510Z",
       "signalMatches": {
         "specials": [
           "offer",
@@ -7482,8 +7804,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Promotions and Events &mdash; Dooly's section2 section3 section4 section5 Home Our Story Locations Membership Billiards Contact Fr section2 section3 section4 section5 Home Our Story Locations Membership Billiards Contact Fr SUMMER BREAK ALL-YOU-CAN-PLAY POOL FOR $19.99 PER TABLE! VICTORIA DAY TO LABOUR DAY Spring just got Cooler! Thanks for participating! See THE WINNERS! All you can play pool for $24.99! PLUS TAX...",
       "postUrl": "https://www.doolys.ca/promotions-and-events",
       "mediaUrl": "https://images.squarespace-cdn.com/content/v1/59c45bccd55b413ae7e2eee5/1509635780307-KRY43CK343JE1STW4JJU/PromotionsAndEvents.jpg",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:15.068Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:15.674Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -7528,7 +7850,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://doraku.yolasite.com/",
       "mediaUrl": "https://doraku.yolasite.com/resources/CAT%20white%20black%20darker.png.opt133x170o0%2C0s133x170.png",
       "publishedAt": "2001-08-01T03:00:00.000Z",
-      "observedAt": "2026-09-01T15:23:52.708Z",
+      "observedAt": "2026-09-03T20:05:15.643Z",
       "signalMatches": {
         "reservations": [
           "reservation",
@@ -7553,7 +7875,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://downtownpizza.ca/",
       "mediaUrl": "https://downtownpizza.ca/wp-content/plugins/revslider/public/assets/assets/dummy.png",
       "publishedAt": null,
-      "observedAt": "2026-09-03T18:58:15.163Z",
+      "observedAt": "2026-09-03T20:05:15.743Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -7592,8 +7914,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Deal & Offers – Downtown Pizza Skip to content Home Menu Deal & Offers Our Food Gallery Order Now Home Menu Deal & Offers Our Food Gallery Order Now Deal & Offers Home - Deal & Offers COMBO 1 $ 16.99 Small Pizza 5 Toppings Small Garlic Fingers COMBO 2 $ 21.99 Medium Pizza 3 Toppings Small Garlic Fingers COMBO 3 $ 27.99 3 Regular Donairs 2L Pop Explore the new taste Enjoy our luscious dishes wherever you want ORDER...",
       "postUrl": "https://downtownpizza.ca/deals-offers/",
       "mediaUrl": "https://downtownpizza.ca/wp-content/uploads/2023/09/Deal-Page-1-1536x1190.png",
-      "publishedAt": "2001-02-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:16.980Z",
+      "publishedAt": "2001-02-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:16.410Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -7644,8 +7966,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Menu – Downtown Pizza Skip to content Home Menu Deal & Offers Our Food Gallery Order Now Home Menu Deal & Offers Our Food Gallery Order Now Menu Home - Menu DOWNTOWN HISTORY Serving Downtown Pizza, By The Slice Since 1987 Our Pizzahen an unknown printer took a galley type and scrambled make type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essenti...",
       "postUrl": "https://downtownpizza.ca/menu-2/",
       "mediaUrl": "https://downtownpizza.ca/wp-content/uploads/2021/01/about01.jpg",
-      "publishedAt": "2001-02-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:15.473Z",
+      "publishedAt": "2001-02-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:16.077Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -7680,7 +8002,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.foodbooking.com/ordering/restaurant/menu?restaurant_uid=fa1b9c9f-febc-47d6-be99-80793f66e2a2",
       "mediaUrl": null,
       "publishedAt": null,
-      "observedAt": "2026-09-03T18:58:15.806Z",
+      "observedAt": "2026-09-03T20:05:15.842Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -7704,7 +8026,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.restaurantlogin.com/ordering/restaurant/menu?company_uid=f1700aa0-5a7b-44b4-ab4a-86c9a6a853a8&",
       "mediaUrl": null,
       "publishedAt": null,
-      "observedAt": "2026-09-03T18:58:15.656Z",
+      "observedAt": "2026-09-03T20:05:16.152Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -7728,7 +8050,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://durtynellys.ca/",
       "mediaUrl": "https://durtynellys.ca/wp-content/uploads/2025/04/cropped-Icon@4x.png",
       "publishedAt": null,
-      "observedAt": "2026-09-03T18:58:16.043Z",
+      "observedAt": "2026-09-03T20:05:16.003Z",
       "signalMatches": {
         "live_music": [
           "live music"
@@ -7768,7 +8090,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://durtynellys.ca/events/",
       "mediaUrl": "https://durtynellys.ca/wp-content/uploads/2025/06/image0-e1751552571510.jpeg",
       "publishedAt": "2026-09-08T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:16.818Z",
+      "observedAt": "2026-09-03T20:05:16.574Z",
       "signalMatches": {
         "events": [
           "event",
@@ -7851,7 +8173,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://durtynellys.ca/menu/",
       "mediaUrl": "https://durtynellys.ca/wp-content/uploads/2026/06/Food-MENU-2026-1.png",
       "publishedAt": null,
-      "observedAt": "2026-09-03T18:58:16.364Z",
+      "observedAt": "2026-09-03T20:05:16.241Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -7887,8 +8209,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Roasted in small batches, ethically sourced coffee beans.",
       "postUrl": "https://eastcupcafe.com/",
       "mediaUrl": "https://eastcupcafe.com/cdn/shop/files/dsc_0261.jpg?v=1685056528&amp;width=3840",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:17.161Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:16.393Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -7918,8 +8240,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Our Signature Blends are carefully crafted to bring a smooth, balanced taste. We're passionate about the way we blend and select each coffee bean to produce this signature flavor. Enjoy a unique cup of coffee that's perfect for anytime!",
       "postUrl": "https://eastcupcafe.com/collections/specialty-blends",
       "mediaUrl": "https://eastcupcafe.com/cdn/shop/files/Web_Haifaxl.png?v=1685062556&width=533",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:17.609Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:16.891Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -7949,8 +8271,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "EDNA Restaurant 0 Skip to Content Home Menu Reservations Gift Cards Book a Table Open Menu Close Menu Home Menu Reservations Gift Cards Book a Table Open Menu Close Menu Home Menu Reservations Gift Cards Book a Table My candle burns at both ends; It will not last the night; But ah, my foes, and oh, my friends- It gives a lovely light. -Edna St.Vincent Millay ABOUT US We are a bustling one-room restaurant with a co...",
       "postUrl": "https://www.ednarestaurant.com/",
       "mediaUrl": "https://images.squarespace-cdn.com/content/v1/61eb00b3d6de8446f2b486c4/a912d05a-04d4-463d-ab1d-72865b8c52aa/PXL_20211220_184452708.PORTRAIT.jpg",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:57:59.985Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:01.422Z",
       "signalMatches": {
         "menu": [
           "menu",
@@ -7991,8 +8313,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Menu 1 &mdash; EDNA Restaurant 0 Skip to Content Home Menu Reservations Gift Cards Book a Table Open Menu Close Menu Home Menu Reservations Gift Cards Book a Table Open Menu Close Menu Home Menu Reservations Gift Cards Book a Table Supper Dessert EDNA Restaurant 2053 Gottingen Street Halifax, Nova Scotia info@ednarestaurant.com (902) 429 2550 Hours SUPPER MONDAY – SUNDAY 5pm – 10pm",
       "postUrl": "https://www.ednarestaurant.com/menu",
       "mediaUrl": "https://images.squarespace-cdn.com/content/v1/61eb00b3d6de8446f2b486c4/5b5e5dfc-53fb-43b4-ae68-6cfc7ff693ff/IMG_20220122_163135.jpg",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:00.299Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:01.864Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -8029,8 +8351,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Reservations &mdash; EDNA Restaurant 0 Skip to Content Home Menu Reservations Gift Cards Book a Table Open Menu Close Menu Home Menu Reservations Gift Cards Book a Table Open Menu Close Menu Home Menu Reservations Gift Cards Book a Table RESERVATIONS Reservations are encouraged, however, a portion of the restaurant will be kept for walk-ins. For large parties please email info@ednarestaurant.com Please note: No-sh...",
       "postUrl": "https://www.ednarestaurant.com/reservations",
       "mediaUrl": "https://images.squarespace-cdn.com/content/v1/61eb00b3d6de8446f2b486c4/784fe9e2-b100-4670-a563-25f7bd92fc11/IMG_20220112_101736_155.jpg",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:00.475Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:02.062Z",
       "signalMatches": {
         "live_music": [
           "show"
@@ -8071,8 +8393,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Ela! Greek Restaurant – The finest experience in authentic Greek cuisine Skip to content Menu Ela! Greek Restaurant The finest experience in authentic Greek cuisine Menu Reservations Private Dining Catering About Contact Facebook Twitter Instagram THE FINEST EXPERIENCE IN AUTHENTIC GREEK CUISINE Front Page WELCOME TO THE GREEK DINING EXPERIENCE KALOS ILTHATE Located in Bayers Lake and Dartmouth Crossing, Ela! Gree...",
       "postUrl": "https://elagreektaverna.com/",
       "mediaUrl": "https://elagreektaverna.com/wp-content/uploads/2020/07/landing-page-hero-image.jpg",
-      "publishedAt": "2007-06-09T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:17.508Z",
+      "publishedAt": "2007-06-09T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:16.592Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -8128,8 +8450,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Contact – Ela! Greek Restaurant Skip to content Menu Ela! Greek Restaurant The finest experience in authentic Greek cuisine Menu Reservations Private Dining Catering About Contact Facebook Twitter Instagram find us Contact Contact Contact HALIFAX 215 Chain Lake Drive Bayers Lake, Halifax B3S 1C9 T: 902-876-8899 E: ha ***** @ ************* na.com Get Directions Contact DARTMOUTH 150 Hector Gate, Dartmouth Crossing,...",
       "postUrl": "https://elagreektaverna.com/contact/",
       "mediaUrl": "https://elagreektaverna.com/wp-content/uploads/2020/07/wine-bottles.jpg",
-      "publishedAt": "2007-06-09T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:23.309Z",
+      "publishedAt": "2007-06-09T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:23.757Z",
       "signalMatches": {
         "specials": [
           "special"
@@ -8177,7 +8499,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://elagreektaverna.com/events/",
       "mediaUrl": "https://elagreektaverna.com/wp-content/uploads/2020/07/private-dining.jpg",
       "publishedAt": "2007-06-09T03:00:00.000Z",
-      "observedAt": "2026-09-01T15:23:59.176Z",
+      "observedAt": "2026-09-03T20:05:24.818Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -8234,8 +8556,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Menu – Ela! Greek Restaurant Skip to content Menu Ela! Greek Restaurant The finest experience in authentic Greek cuisine Menu Reservations Private Dining Catering About Contact Facebook Twitter Instagram Menu Our Greek dishes have exceptional nutritional value but most of all taste great ! Menu OUR FULL MENU Experience authentic Greek cuisine. We bring generations of family recipes to life, using the freshest ingr...",
       "postUrl": "https://elagreektaverna.com/menu/",
       "mediaUrl": "https://elagreektaverna.com/wp-content/uploads/2024/12/ela-menu-hero.jpg",
-      "publishedAt": "2007-06-09T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:18.146Z",
+      "publishedAt": "2007-06-09T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:21.392Z",
       "signalMatches": {
         "specials": [
           "offer"
@@ -8287,8 +8609,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Reservations – Ela! Greek Restaurant Skip to content Menu Ela! Greek Restaurant The finest experience in authentic Greek cuisine Menu Reservations Private Dining Catering About Contact Facebook Twitter Instagram Reservations BOOKING A TABLE ONLINE IS EASY AND TAKES JUST A COUPLE OF MINUTES . Reservations MAKE A RESERVATION Join us for a truly memorable dining experience in our Halifax or Dartmouth locations. An ex...",
       "postUrl": "https://elagreektaverna.com/reservations/",
       "mediaUrl": "https://elagreektaverna.com/wp-content/uploads/2020/06/girl-holding-glass-of-white-wine-at-ela-halifax.jpg",
-      "publishedAt": "2007-06-09T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:19.953Z",
+      "publishedAt": "2007-06-09T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:21.931Z",
       "signalMatches": {
         "specials": [
           "offer"
@@ -8339,7 +8661,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://elagreektogo.ca/",
       "mediaUrl": "https://elagreektogo.ca/wp-content/uploads/2020/11/ela-greek-togo-2020.png",
       "publishedAt": "2001-08-01T03:00:00.000Z",
-      "observedAt": "2026-09-01T15:23:56.805Z",
+      "observedAt": "2026-09-03T20:05:17.926Z",
       "signalMatches": {
         "specials": [
           "offer",
@@ -8376,7 +8698,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://elagreektogo.ca/locations/",
       "mediaUrl": "https://elagreektogo.ca/wp-content/uploads/2020/11/ela-greek-togo-2020.png",
       "publishedAt": "2024-07-08T17:30:16.000Z",
-      "observedAt": "2026-09-03T18:58:17.900Z",
+      "observedAt": "2026-09-03T20:05:16.634Z",
       "signalMatches": {
         "specials": [
           "offer",
@@ -8412,8 +8734,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Ela! Greek Restaurant – The finest experience in authentic Greek cuisine Skip to content Menu Ela! Greek Restaurant The finest experience in authentic Greek cuisine Menu Reservations Private Dining Catering About Contact Facebook Twitter Instagram THE FINEST EXPERIENCE IN AUTHENTIC GREEK CUISINE Front Page WELCOME TO THE GREEK DINING EXPERIENCE KALOS ILTHATE Located in Bayers Lake and Dartmouth Crossing, Ela! Gree...",
       "postUrl": "https://elagreektaverna.com/",
       "mediaUrl": "https://elagreektaverna.com/wp-content/uploads/2020/07/landing-page-hero-image.jpg",
-      "publishedAt": "2007-06-09T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:23.791Z",
+      "publishedAt": "2007-06-09T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:25.807Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -8469,8 +8791,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Contact – Ela! Greek Restaurant Skip to content Menu Ela! Greek Restaurant The finest experience in authentic Greek cuisine Menu Reservations Private Dining Catering About Contact Facebook Twitter Instagram find us Contact Contact Contact HALIFAX 215 Chain Lake Drive Bayers Lake, Halifax B3S 1C9 T: 902-876-8899 E: ha ***** @ ************* na.com Get Directions Contact DARTMOUTH 150 Hector Gate, Dartmouth Crossing,...",
       "postUrl": "https://elagreektaverna.com/contact/",
       "mediaUrl": "https://elagreektaverna.com/wp-content/uploads/2020/07/wine-bottles.jpg",
-      "publishedAt": "2007-06-09T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:28.941Z",
+      "publishedAt": "2007-06-09T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:30.439Z",
       "signalMatches": {
         "specials": [
           "special"
@@ -8518,7 +8840,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://elagreektaverna.com/events/",
       "mediaUrl": "https://elagreektaverna.com/wp-content/uploads/2020/07/private-dining.jpg",
       "publishedAt": "2007-06-09T03:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:05.721Z",
+      "observedAt": "2026-09-03T20:05:31.852Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -8575,8 +8897,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Menu – Ela! Greek Restaurant Skip to content Menu Ela! Greek Restaurant The finest experience in authentic Greek cuisine Menu Reservations Private Dining Catering About Contact Facebook Twitter Instagram Menu Our Greek dishes have exceptional nutritional value but most of all taste great ! Menu OUR FULL MENU Experience authentic Greek cuisine. We bring generations of family recipes to life, using the freshest ingr...",
       "postUrl": "https://elagreektaverna.com/menu/",
       "mediaUrl": "https://elagreektaverna.com/wp-content/uploads/2024/12/ela-menu-hero.jpg",
-      "publishedAt": "2007-06-09T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:25.566Z",
+      "publishedAt": "2007-06-09T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:27.840Z",
       "signalMatches": {
         "specials": [
           "offer"
@@ -8628,8 +8950,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Reservations – Ela! Greek Restaurant Skip to content Menu Ela! Greek Restaurant The finest experience in authentic Greek cuisine Menu Reservations Private Dining Catering About Contact Facebook Twitter Instagram Reservations BOOKING A TABLE ONLINE IS EASY AND TAKES JUST A COUPLE OF MINUTES . Reservations MAKE A RESERVATION Join us for a truly memorable dining experience in our Halifax or Dartmouth locations. An ex...",
       "postUrl": "https://elagreektaverna.com/reservations/",
       "mediaUrl": "https://elagreektaverna.com/wp-content/uploads/2020/06/girl-holding-glass-of-white-wine-at-ela-halifax.jpg",
-      "publishedAt": "2007-06-09T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:27.115Z",
+      "publishedAt": "2007-06-09T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:28.800Z",
       "signalMatches": {
         "specials": [
           "offer"
@@ -8680,7 +9002,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://elagreektogo.ca/",
       "mediaUrl": "https://elagreektogo.ca/wp-content/uploads/2020/11/ela-greek-togo-2020.png",
       "publishedAt": "2001-08-01T03:00:00.000Z",
-      "observedAt": "2026-09-01T15:23:57.555Z",
+      "observedAt": "2026-09-03T20:05:19.742Z",
       "signalMatches": {
         "specials": [
           "offer",
@@ -8717,7 +9039,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://elagreektogo.ca/locations/",
       "mediaUrl": "https://elagreektogo.ca/wp-content/uploads/2020/11/ela-greek-togo-2020.png",
       "publishedAt": "2024-07-08T17:30:16.000Z",
-      "observedAt": "2026-09-03T18:58:20.460Z",
+      "observedAt": "2026-09-03T20:05:18.775Z",
       "signalMatches": {
         "specials": [
           "offer",
@@ -8754,7 +9076,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.fansrestaurant.ca/",
       "mediaUrl": "https://static.wixstatic.com/media/0a8a69_4118a950d5d645d5bd4cf1f82a9ae244%7Emv2.jpg/v1/fit/w_2500,h_1330,al_c/0a8a69_4118a950d5d645d5bd4cf1f82a9ae244%7Emv2.jpg",
       "publishedAt": "2500-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:18.358Z",
+      "observedAt": "2026-09-03T20:05:16.809Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -8808,7 +9130,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.fansrestaurant.ca/dim-sum-menu",
       "mediaUrl": "https://static.wixstatic.com/media/0a8a69_4118a950d5d645d5bd4cf1f82a9ae244%7Emv2.jpg/v1/fit/w_2500,h_1330,al_c/0a8a69_4118a950d5d645d5bd4cf1f82a9ae244%7Emv2.jpg",
       "publishedAt": "2500-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:18.587Z",
+      "observedAt": "2026-09-03T20:05:17.168Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -8859,8 +9181,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "--> MAIN MENU | Fans Chinese Cuisine top of page Log In Home Dim Sum Menu Fusion Menu Book a Table Online Orders Contact Experiences More Use tab to navigate through the menu items. MAIN MENU Gluten-free MAIN MENU Appetizers Egg Roll (each) $2.50 Spring Roll (each) $2.50 Deep Fried Wontons (14 pcs) $12.99 Homemade Northern Dumpling (9 pcs) $12.99 Fan’s Crispy Chicken $14.99 Sesame balls (12 pcs) $13.99 Soup Hot &...",
       "postUrl": "https://www.fansrestaurant.ca/menu",
       "mediaUrl": "https://static.wixstatic.com/media/0a8a69_bb308b586458466a9ace88e67e979ee5~mv2.jpg/v1/fill/w_101,h_68,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/0a8a69_bb308b586458466a9ace88e67e979ee5~mv2.jpg",
-      "publishedAt": "2001-04-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:18.763Z",
+      "publishedAt": "2001-04-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:17.432Z",
       "signalMatches": {
         "specials": [
           "special"
@@ -8919,11 +9241,11 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "restaurantName": "Fan's Chinese Restaurant",
       "platform": "official_page",
       "title": "Online Orders | Fans Chinese Cuisine",
-      "excerpt": "--> Online Orders | Fans Chinese Cuisine top of page Log In Home Dim Sum Menu Fusion Menu Book a Table Online Orders Contact Experiences More Use tab to navigate through the menu items. Windmill Road Online Ordering You can order online! Browse our menu items and choose what you’d like to order from us. Accepting Orders Delivery fee - Min. order - C$0.00 Free delivery above Pickup Delivery Dine-In Pickup time: As...",
+      "excerpt": "--> Online Orders | Fans Chinese Cuisine top of page Log In Home Dim Sum Menu Fusion Menu Book a Table Online Orders Contact Experiences More Use tab to navigate through the menu items. Windmill Road Online Ordering You can order online! Browse our menu items and choose what you’d like to order from us. Not Accepting Orders Delivery fee - Min. order - C$0.00 Free delivery above Pickup Delivery Dine-In ​ Change Pic...",
       "postUrl": "https://www.fansrestaurant.ca/online-ordering",
       "mediaUrl": "https://static.wixstatic.com/media/0a8a69_4118a950d5d645d5bd4cf1f82a9ae244%7Emv2.jpg/v1/fit/w_2500,h_1330,al_c/0a8a69_4118a950d5d645d5bd4cf1f82a9ae244%7Emv2.jpg",
       "publishedAt": "2500-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:19.197Z",
+      "observedAt": "2026-09-03T20:05:17.826Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -8975,7 +9297,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.fansrestaurant.ca/reservations",
       "mediaUrl": "https://static.wixstatic.com/media/0a8a69_4118a950d5d645d5bd4cf1f82a9ae244%7Emv2.jpg/v1/fit/w_2500,h_1330,al_c/0a8a69_4118a950d5d645d5bd4cf1f82a9ae244%7Emv2.jpg",
       "publishedAt": "2500-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:18.946Z",
+      "observedAt": "2026-09-03T20:05:17.641Z",
       "signalMatches": {
         "specials": [
           "special"
@@ -9027,8 +9349,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "View and manage your profile information.",
       "postUrl": "https://dal.mydininghub.ca/en/account?section=my-menu",
       "mediaUrl": null,
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:07.849Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:08.762Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -9064,8 +9386,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Enjoy delicious meals, coffee, snacks, and more at these dining locations.",
       "postUrl": "https://dal.mydininghub.ca/en/locations",
       "mediaUrl": null,
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:08.016Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:08.603Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -9089,8 +9411,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "associationBasis": "official_site_linked_page",
       "confidence": "official_source_page_signal",
       "reviewState": "source_signal",
-      "discoveryReason": "first_party_menu",
-      "sourceLabel": "Locations & Menus"
+      "discoveryReason": "official_homepage",
+      "sourceLabel": "Official website"
     },
     {
       "id": "official-page-3aa029c4bc532f7690",
@@ -9102,7 +9424,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.freemanspizza.ca/",
       "mediaUrl": "https://static.wixstatic.com/media/646157_f5ae8271dd6e43ebb06b97169a29c3ba~mv2_d_3000_2000_s_2.jpg/v1/fill/w_2500,h_1666,al_c/646157_f5ae8271dd6e43ebb06b97169a29c3ba~mv2_d_3000_2000_s_2.jpg",
       "publishedAt": "2500-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:19.452Z",
+      "observedAt": "2026-09-03T20:05:17.326Z",
       "signalMatches": {
         "events": [
           "event",
@@ -9146,8 +9468,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "--> Contact Us | Mysite top of page Log In Freeman's Little New York About Us Our Menus Order Online Catering Contact Us Events More... Use tab to navigate through the menu items. CONTACT US Our LOCATIONs Original Freeman's Little NY Open 10am - 3:30am Daily 6092 Quinpool Road, Halifax (902) 429-0241 ​ Freeman's Fairview Mon - Wed: 11am - Midnight Thurs & Fri: 11am - 2am Sat: 10am - 2am Sun: 10am - Midnight 3671 D...",
       "postUrl": "https://www.freemanspizza.ca/contact-reservations",
       "mediaUrl": "https://static.wixstatic.com/media/646157_778c77cce5964d2a9ded928887d70194~mv2_d_2048_2042_s_2.jpg/v1/fill/w_83,h_82,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/646157_778c77cce5964d2a9ded928887d70194~mv2_d_2048_2042_s_2.jpg",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:20.232Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:18.209Z",
       "signalMatches": {
         "events": [
           "event",
@@ -9201,8 +9523,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "--> Events | Mysite top of page Log In Freeman's Little New York About Us Our Menus Order Online Catering Contact Us Events More... Use tab to navigate through the menu items. No events at the moment &copy; 2021 Freeman's Little New York Order Online bottom of page",
       "postUrl": "https://www.freemanspizza.ca/event-list",
       "mediaUrl": null,
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:20.058Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:18.022Z",
       "signalMatches": {
         "events": [
           "event",
@@ -9246,8 +9568,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "--> Order Online | Mysite top of page Log In Freeman's Little New York About Us Our Menus Order Online Catering Contact Us Events More... Use tab to navigate through the menu items. ORDER ONLINE! Quinpool & Peninsula Order from Freeman's Quinpool! FREEMAN'S QUINPOOL ORDER HERE Halifax Downtown Order from Freeman's Grafton! FREEMAN'S GRAFTON ORDER HERE! Fairview & Clayton Park Order from Freeman's Fairview! FREEMAN...",
       "postUrl": "https://www.freemanspizza.ca/order-online",
       "mediaUrl": "https://static.wixstatic.com/media/646157_6042e13f5a034efda742d7ce7e0b7867~mv2.jpg/v1/crop/x_487,y_0,w_849,h_1237/fill/w_230,h_335,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/IMG_20190713_174937_resized_20190713_055009009.jpg",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:19.889Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:17.826Z",
       "signalMatches": {
         "events": [
           "event",
@@ -9291,8 +9613,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "--> Our Menus | Mysite top of page Log In Freeman's Little New York About Us Our Menus Order Online Catering Contact Us Events More... Use tab to navigate through the menu items. Freeman's Menus Freeman's has a variety of menu options including Gluten-Friendly and Vegan. We are more than happy to provide a menu to puruse before you visit. We are positive it won't be only one! &copy; 2021 Freeman's Little New York...",
       "postUrl": "https://www.freemanspizza.ca/our-menus",
       "mediaUrl": null,
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:19.723Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:17.625Z",
       "signalMatches": {
         "events": [
           "event",
@@ -9337,7 +9659,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://gahan.ca/menu/",
       "mediaUrl": null,
       "publishedAt": "2024-09-01T10:56:09.000Z",
-      "observedAt": "2026-09-03T18:58:20.946Z",
+      "observedAt": "2026-09-03T20:05:18.638Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -9381,8 +9703,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Home About Menus AYCE Menu Take Out Menu Sake and Wine Menu Reservations Gallery Our Restaurant Our Dishes News Contact Menu Home About Menus &raquo; AYCE Menu &raquo; Take Out Menu &raquo; Sake and Wine Menu Reservations Gallery &raquo; Our Restaurant &raquo; Our Dishes News Contact Better Ingredients. Better Sushi. Genji has been offering quality Japanese cuisine since 2012 and is renowned for the large variety...",
       "postUrl": "http://www.genjisushi.ca/",
       "mediaUrl": null,
-      "publishedAt": "2010-06-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:21.014Z",
+      "publishedAt": "2010-06-01T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:18.409Z",
       "signalMatches": {
         "specials": [
           "offer"
@@ -9437,8 +9759,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Reservations Home About Menus AYCE Menu Take Out Menu Sake and Wine Menu Reservations Gallery Our Restaurant Our Dishes News Contact Menu Home About Menus &raquo; AYCE Menu &raquo; Take Out Menu &raquo; Sake and Wine Menu Reservations Gallery &raquo; Our Restaurant &raquo; Our Dishes News Contact Reservations You can use the reservation form below to send your reservation request. We will call you or email you to...",
       "postUrl": "http://www.genjisushi.ca/?page_id=49",
       "mediaUrl": null,
-      "publishedAt": "2010-06-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:25.105Z",
+      "publishedAt": "2010-06-01T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:22.772Z",
       "signalMatches": {
         "events": [
           "event",
@@ -9490,8 +9812,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Sake and Wine Home About Menus AYCE Menu Take Out Menu Sake and Wine Menu Reservations Gallery Our Restaurant Our Dishes News Contact Menu Home About Menus &raquo; AYCE Menu &raquo; Take Out Menu &raquo; Sake and Wine Menu Reservations Gallery &raquo; Our Restaurant &raquo; Our Dishes News Contact Sake and Wine Sushi freshly made in the traditional Japanese way Make a reservation AYCE Menu Take-out Menu Sake and W...",
       "postUrl": "http://www.genjisushi.ca/?page_id=533",
       "mediaUrl": "http://www.genjisushi.ca/wp-content/uploads/2019/03/P8.jpg?nxsv=3.0.141229.0938",
-      "publishedAt": "2010-06-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:24.192Z",
+      "publishedAt": "2010-06-01T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:21.649Z",
       "signalMatches": {
         "events": [
           "event",
@@ -9543,8 +9865,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "AYCE Menu Home About Menus AYCE Menu Take Out Menu Sake and Wine Menu Reservations Gallery Our Restaurant Our Dishes News Contact Menu Home About Menus &raquo; AYCE Menu &raquo; Take Out Menu &raquo; Sake and Wine Menu Reservations Gallery &raquo; Our Restaurant &raquo; Our Dishes News Contact AYCE Menu Sushi freshly made in the traditional Japanese way Make a reservation AYCE Menu Take-out Menu Sake and Wine Menu...",
       "postUrl": "http://www.genjisushi.ca/?page_id=534",
       "mediaUrl": "http://www.genjisushi.ca/wp-content/uploads/2021/09/P1_PriceChange.jpg?nxsv=3.0.141229.0938",
-      "publishedAt": "2010-06-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:22.023Z",
+      "publishedAt": "2010-06-01T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:19.575Z",
       "signalMatches": {
         "events": [
           "event",
@@ -9596,8 +9918,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Take Out Menu Home About Menus AYCE Menu Take Out Menu Sake and Wine Menu Reservations Gallery Our Restaurant Our Dishes News Contact Menu Home About Menus &raquo; AYCE Menu &raquo; Take Out Menu &raquo; Sake and Wine Menu Reservations Gallery &raquo; Our Restaurant &raquo; Our Dishes News Contact Take Out Menu Sushi freshly made in the traditional Japanese way Make a reservation AYCE Menu Take-out Menu Sake and W...",
       "postUrl": "http://www.genjisushi.ca/?page_id=535",
       "mediaUrl": "http://www.genjisushi.ca/wp-content/uploads/2019/03/T1W1.jpg?nxsv=3.0.141229.0938",
-      "publishedAt": "2010-06-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:23.188Z",
+      "publishedAt": "2010-06-01T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:20.575Z",
       "signalMatches": {
         "events": [
           "event",
@@ -9650,7 +9972,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://justitalymentone.com/",
       "mediaUrl": "https://justitalymentone.com/Images/banners/home/DesktopID-866-20250925164835.png",
       "publishedAt": null,
-      "observedAt": "2026-09-03T18:58:21.581Z",
+      "observedAt": "2026-09-03T20:05:19.242Z",
       "signalMatches": {
         "specials": [
           "promo"
@@ -9681,7 +10003,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://goodrobotbrewing.ca/",
       "mediaUrl": "https://bunny-wp-pullzone-tt3dehskqo.b-cdn.net/wp-content/uploads/2026/03/Hero-section-new-bg-1024x944.webp",
       "publishedAt": "2026-08-03T22:08:44.000Z",
-      "observedAt": "2026-09-03T18:58:23.733Z",
+      "observedAt": "2026-09-03T20:05:21.074Z",
       "signalMatches": {
         "specials": [
           "promo"
@@ -9721,8 +10043,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Events Archive - Good Robot Brewing Co.",
       "postUrl": "https://goodrobotbrewing.ca/events/",
       "mediaUrl": "https://goodrobotbrewing.ca/wp-content/themes/goodrobot/img/screenshot.jpg",
-      "publishedAt": "2027-01-25T19:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:24.109Z",
+      "publishedAt": "2027-01-25T23:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:21.544Z",
       "signalMatches": {
         "happy_hour": [
           "happy hour"
@@ -9808,7 +10130,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://goodrobotbrewing.ca/menus/",
       "mediaUrl": "https://goodrobotbrewing.ca/wp-content/themes/goodrobot/img/screenshot.jpg",
       "publishedAt": "2026-03-11T19:42:44.000Z",
-      "observedAt": "2026-09-03T18:58:24.773Z",
+      "observedAt": "2026-09-03T20:05:22.124Z",
       "signalMatches": {
         "specials": [
           "offer"
@@ -9871,7 +10193,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://shop.goodrobotbrewing.ca/product/toque-promo-w-space-pine/",
       "mediaUrl": "https://bunny-wp-pullzone-tt3dehskqo.b-cdn.net/wp-content/uploads/2026/03/download-1632ssssssss-768x1024.png",
       "publishedAt": "2026-05-19T14:50:56.000Z",
-      "observedAt": "2026-09-03T18:58:33.568Z",
+      "observedAt": "2026-09-03T20:05:33.617Z",
       "signalMatches": {
         "specials": [
           "promo"
@@ -9908,7 +10230,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://shop.goodrobotbrewing.ca/shipping-delivery-policy/",
       "mediaUrl": null,
       "publishedAt": "2026-07-09T14:59:52.000Z",
-      "observedAt": "2026-09-03T18:58:24.289Z",
+      "observedAt": "2026-09-03T20:05:21.303Z",
       "signalMatches": {
         "specials": [
           "offer"
@@ -10009,8 +10331,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Preorder and pay from the top restaurants in your area",
       "postUrl": "https://ritual.co/order/the-great-wall-restaurant-bedford-row-sackville-halifax/9897",
       "mediaUrl": "https://images.ctfassets.net/6civwduob0q9/6BfSuBatnTnW4CF2pxXZMU/16c87d9afd88b8326c86245ce11a44e5/Add__1_.png",
-      "publishedAt": "9897-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:25.212Z",
+      "publishedAt": "9897-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:21.569Z",
       "signalMatches": {
         "specials": [
           "special"
@@ -10033,8 +10355,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Call 902-422-6153 to place a pick-up or delivery order. We are also on the app Skip the Dishes, or use the \"Order Online\" button to order from the website. ​ 1649 Bedford Row, Halifax, Nova Scotia...",
       "postUrl": "https://www.thegreatwall.ca/",
       "mediaUrl": null,
-      "publishedAt": "2001-08-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:25.109Z",
+      "publishedAt": "2001-08-01T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:21.334Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -10065,8 +10387,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Site powered by Weebly. Managed by Rebel.ca",
       "postUrl": "https://www.thegreatwall.ca/menu.html",
       "mediaUrl": "http://www.thegreatwall.ca/uploads/1/3/9/1/139151592/takeout-2-2022_orig.png",
-      "publishedAt": "2001-08-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:25.655Z",
+      "publishedAt": "2001-08-01T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:21.875Z",
       "signalMatches": {
         "menu": [
           "menu",
@@ -10096,7 +10418,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://greco.ca/",
       "mediaUrl": "https://greco.ca/wp-content/uploads/2022/06/greco-delivery-tracker.png",
       "publishedAt": "2026-07-27T16:47:17.000Z",
-      "observedAt": "2026-09-01T15:23:59.904Z",
+      "observedAt": "2026-09-03T20:05:22.504Z",
       "signalMatches": {
         "specials": [
           "deal",
@@ -10139,7 +10461,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://greco.ca/newsletter/",
       "mediaUrl": "https://greco.ca/wp-content/uploads/2022/06/greco-delivery-tracker.png",
       "publishedAt": "2026-07-29T17:04:44.000Z",
-      "observedAt": "2026-09-01T15:24:03.537Z",
+      "observedAt": "2026-09-03T20:05:26.056Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -10189,7 +10511,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://greco.ca/ourmenu/",
       "mediaUrl": "https://greco.ca/wp-content/uploads/2022/06/greco-delivery-tracker.png",
       "publishedAt": "2026-03-25T20:17:11.000Z",
-      "observedAt": "2026-09-03T18:58:25.595Z",
+      "observedAt": "2026-09-03T20:05:23.853Z",
       "signalMatches": {
         "specials": [
           "deal",
@@ -10232,7 +10554,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://grecopizza.weborder.net/GetAddress",
       "mediaUrl": null,
       "publishedAt": null,
-      "observedAt": "2026-09-01T15:24:00.636Z",
+      "observedAt": "2026-09-03T20:05:23.095Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -10261,7 +10583,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://grecopizza.weborder.net/Groups",
       "mediaUrl": "https://grecopizza.weborder.net/custom/images/ENG.gif",
       "publishedAt": null,
-      "observedAt": "2026-09-01T15:24:01.252Z",
+      "observedAt": "2026-09-03T20:05:23.672Z",
       "signalMatches": {
         "specials": [
           "deal",
@@ -10302,7 +10624,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://grecopizza.weborder.net/Item/New/deals-1024/eastcoastkitchenparty",
       "mediaUrl": "https://grecopizza.weborder.net/Images/fraction_whole_unselected.png",
       "publishedAt": null,
-      "observedAt": "2026-09-01T15:24:00.814Z",
+      "observedAt": "2026-09-03T20:05:23.270Z",
       "signalMatches": {
         "specials": [
           "deal",
@@ -10343,7 +10665,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://grecopizza.weborder.net/Items/deals-1024",
       "mediaUrl": "https://grecopizza.weborder.net/custom/images/Donair%20fest%20july%202026%20english.jpg",
       "publishedAt": null,
-      "observedAt": "2026-09-03T18:58:26.135Z",
+      "observedAt": "2026-09-03T20:05:22.505Z",
       "signalMatches": {
         "specials": [
           "deal",
@@ -10386,8 +10708,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "View and manage your profile information.",
       "postUrl": "https://dal.mydininghub.ca/en/account?section=my-menu",
       "mediaUrl": null,
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:08.185Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:09.221Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -10423,8 +10745,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Enjoy delicious meals, coffee, snacks, and more at these dining locations.",
       "postUrl": "https://dal.mydininghub.ca/en/locations",
       "mediaUrl": null,
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:08.352Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:08.830Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -10448,8 +10770,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "associationBasis": "official_site_linked_page",
       "confidence": "official_source_page_signal",
       "reviewState": "source_signal",
-      "discoveryReason": "first_party_menu",
-      "sourceLabel": "Locations & Menus"
+      "discoveryReason": "official_homepage",
+      "sourceLabel": "Official website"
     },
     {
       "id": "official-page-20cf3b6e3bfd721298",
@@ -10460,8 +10782,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "View and manage your profile information.",
       "postUrl": "https://dal.mydininghub.ca/en/account?section=my-menu",
       "mediaUrl": null,
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:08.530Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:09.972Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -10497,8 +10819,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Enjoy delicious meals, coffee, snacks, and more at these dining locations.",
       "postUrl": "https://dal.mydininghub.ca/en/locations",
       "mediaUrl": null,
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:08.696Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:09.054Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -10522,8 +10844,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "associationBasis": "official_site_linked_page",
       "confidence": "official_source_page_signal",
       "reviewState": "source_signal",
-      "discoveryReason": "first_party_menu",
-      "sourceLabel": "Locations & Menus"
+      "discoveryReason": "official_homepage",
+      "sourceLabel": "Official website"
     },
     {
       "id": "official-page-b348aedc5a612e4f97",
@@ -10534,8 +10856,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "View and manage your profile information.",
       "postUrl": "https://dal.mydininghub.ca/en/account?section=my-menu",
       "mediaUrl": null,
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:08.863Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:10.359Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -10571,8 +10893,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Enjoy delicious meals, coffee, snacks, and more at these dining locations.",
       "postUrl": "https://dal.mydininghub.ca/en/locations",
       "mediaUrl": null,
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:09.031Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:09.279Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -10596,8 +10918,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "associationBasis": "official_site_linked_page",
       "confidence": "official_source_page_signal",
       "reviewState": "source_signal",
-      "discoveryReason": "first_party_menu",
-      "sourceLabel": "Locations & Menus"
+      "discoveryReason": "official_homepage",
+      "sourceLabel": "Official website"
     },
     {
       "id": "official-page-e94ecf2e1ec3435b0d",
@@ -10608,8 +10930,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Hamachi Kita Menu Order Online About Gallery Contact Back About Us Join Our Team Menu Order Online About About Us Join Our Team Gallery Contact Scroll WELCOME! ようこそ！ ยินดีต้อนรับ! Welcome to Hamachi Kita. A neighbourhood sushi-bar and restaurant in Halifax's historic Hydrostrone Market. A relaxed, unique, and familiar destination for locals and visitors for nearly 20 years. Dine-in and enjoy our freshly renovated...",
       "postUrl": "https://www.hamachikita.com/",
       "mediaUrl": "https://images.squarespace-cdn.com/content/v1/5aeef078b27e390f37debee6/1622568408155-XF9TH25ZYW24KL91EP5Z/IMG-1805.jpg",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:26.151Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:22.537Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -10652,8 +10974,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Menu &mdash; Hamachi Kita Menu Order Online About Gallery Contact Back About Us Join Our Team Menu Order Online About About Us Join Our Team Gallery Contact Scroll Menu Join us for lunch and dinner, or call to place an order for take-out TO START NOODLES & CURRIES ENTRÉES SUSHI LUNCH SPECIALS SOUPS $ 4.99 MISO SOUP Traditional Japanese soy bean soup with seaweed, tofu & green onion $ 4.99 $ 8.99 TOM YUM HOT & SOUR...",
       "postUrl": "https://www.hamachikita.com/menu-feed",
       "mediaUrl": null,
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:26.439Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:22.974Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -10689,7 +11011,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://smooth.menu/harvest-clean-eats/menu/",
       "mediaUrl": null,
       "publishedAt": null,
-      "observedAt": "2026-09-03T18:58:26.616Z",
+      "observedAt": "2026-09-03T20:05:23.522Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -10712,8 +11034,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Dive into the world of organic and healthy food at Harvest Clean Eats in Atlantic Canada. Explore our menu full of fresh, clean eating options perfect for any diet. Taste the difference today!",
       "postUrl": "https://www.harvestcleaneats.ca/",
       "mediaUrl": "http://static1.squarespace.com/static/6581fc77643f7b03addc416b/t/65bcfdc81d16a53096ea0624/1706884553038/Harvest_socialshare_500x300.jpg?format=1500w",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:26.164Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:22.817Z",
       "signalMatches": {
         "specials": [
           "offer",
@@ -10763,8 +11085,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Delve into our wholistic menu at Harvest Clean Eats, where every dish is crafted for wellness. Enjoy balanced, nutritious meals that cater to your health and taste buds.",
       "postUrl": "https://www.harvestcleaneats.ca/menu",
       "mediaUrl": "http://static1.squarespace.com/static/6581fc77643f7b03addc416b/t/65bcfdc81d16a53096ea0624/1706884553038/Harvest_socialshare_500x300.jpg?format=1500w",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:26.586Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:23.173Z",
       "signalMatches": {
         "specials": [
           "special"
@@ -10810,7 +11132,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "http://www.heppys.com/",
       "mediaUrl": "http://www.heppys.com/pg_images/2012_front_image.jpg",
       "publishedAt": null,
-      "observedAt": "2026-09-03T18:58:26.928Z",
+      "observedAt": "2026-09-03T20:05:23.821Z",
       "signalMatches": {
         "seasonal": [
           "seasonal",
@@ -10834,8 +11156,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Highwayman Restaurant & Bar 0 Skip to Content Highwayman Restaurant & Bar MENUS FOOD DRINKS HAPPY HOUR ABOUT GALLERY RESERVE GIFTCARDS Open Menu Close Menu Open Menu Close Menu Highwayman Restaurant & Bar MENUS FOOD DRINKS HAPPY HOUR ABOUT GALLERY RESERVE GIFTCARDS Folder: MENUS Back FOOD DRINKS HAPPY HOUR ABOUT GALLERY RESERVE GIFTCARDS SPANISH–INSPIRED EATABLES & DRINKABLES. KIND REFINED SERVICE. Reserve Your Ta...",
       "postUrl": "https://www.highwaymanhfx.com/",
       "mediaUrl": "https://images.squarespace-cdn.com/content/v1/5f3ab2aad4d7be367932fd9a/b6596909-f5af-4591-9819-e952b3c26565/DSC03271.jpg",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:00.695Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:01.692Z",
       "signalMatches": {
         "happy_hour": [
           "happy hour"
@@ -10888,8 +11210,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Spanish-inspired dishes and the highest quality spirits, wine and beer. Come to Highwayman to drink and dine in the heart of a historic port city.",
       "postUrl": "https://www.highwaymanhfx.com/drink-menu",
       "mediaUrl": "http://static1.squarespace.com/static/5f3ab2aad4d7be367932fd9a/t/5f71eaac856a81579c7f9f65/1603377471035/drinks.jpg?format=1500w",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:01.737Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:02.981Z",
       "signalMatches": {
         "happy_hour": [
           "happy hour"
@@ -10942,8 +11264,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Spanish-inspired dishes and the highest quality spirits, wine and beer. Come to Highwayman to drink and dine in the heart of a historic port city.",
       "postUrl": "https://www.highwaymanhfx.com/food-menu",
       "mediaUrl": "http://static1.squarespace.com/static/5f3ab2aad4d7be367932fd9a/t/5f4e4e980484a173f06959c0/1600871381323/DSC01717.jpg?format=1500w",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:01.157Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:02.361Z",
       "signalMatches": {
         "happy_hour": [
           "happy hour"
@@ -10993,8 +11315,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Spanish-inspired dishes and the highest quality spirits, wine and beer. Come to Highwayman to drink and dine in the heart of a historic port city.",
       "postUrl": "https://www.highwaymanhfx.com/happyhour",
       "mediaUrl": "http://static1.squarespace.com/static/5f3ab2aad4d7be367932fd9a/t/5f91993f4555cb19218e7c01/1601301167954/drinks.jpg?format=1500w",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:01.919Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:03.172Z",
       "signalMatches": {
         "happy_hour": [
           "happy hour"
@@ -11044,8 +11366,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Make a reservation. Highwayman, 1673 Barrington St, Halifax NS",
       "postUrl": "https://www.highwaymanhfx.com/reserve",
       "mediaUrl": "http://static1.squarespace.com/static/5f3ab2aad4d7be367932fd9a/t/5f7b70b9bb198e4c36ce5d91/1601925309926/DSC03601.jpg?format=1500w",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:00.984Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:02.170Z",
       "signalMatches": {
         "happy_hour": [
           "happy hour"
@@ -11136,7 +11458,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://ukings.ca/admissions/campus-tours-recruitment/",
       "mediaUrl": "https://ukings.ca/wp-content/uploads/2020/04/stacksBrowsing_hero.jpg",
       "publishedAt": "2026-08-17T11:22:21.000Z",
-      "observedAt": "2026-09-03T18:58:28.229Z",
+      "observedAt": "2026-09-03T20:05:24.657Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -11210,7 +11532,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://ukings.ca/alumni/events/",
       "mediaUrl": "https://ukings.ca/wp-content/uploads/2016/07/JIV0845.jpg",
       "publishedAt": "2010-04-09T03:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:03.230Z",
+      "observedAt": "2026-09-03T20:05:26.513Z",
       "signalMatches": {
         "specials": [
           "special"
@@ -11288,7 +11610,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://ukings.ca/alumni/giving/support/special-projects/",
       "mediaUrl": "https://ukings.ca/wp-content/uploads/2016/07/JIV0845.jpg",
       "publishedAt": "2025-04-10T19:20:05.000Z",
-      "observedAt": "2026-09-01T15:24:04.480Z",
+      "observedAt": "2026-09-03T20:05:27.769Z",
       "signalMatches": {
         "specials": [
           "special"
@@ -11360,7 +11682,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://ukings.ca/calendar/",
       "mediaUrl": "https://ukings.ca/wp-content/uploads/2016/07/JIV0845.jpg",
       "publishedAt": "2010-04-09T03:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:02.220Z",
+      "observedAt": "2026-09-03T20:05:25.697Z",
       "signalMatches": {
         "specials": [
           "special"
@@ -11432,7 +11754,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://ukings.ca/campus-community/about-kings/",
       "mediaUrl": "https://ukings.ca/wp-content/uploads/2018/12/library-reading-room2_hero.jpg",
       "publishedAt": "2010-04-09T03:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:03.054Z",
+      "observedAt": "2026-09-03T20:05:26.113Z",
       "signalMatches": {
         "specials": [
           "special"
@@ -11504,7 +11826,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://ukings.ca/campus-community/student-life/the-wardroom/",
       "mediaUrl": "https://ukings.ca/wp-content/uploads/2016/07/JIV0845.jpg",
       "publishedAt": "2026-05-26T20:05:05.000Z",
-      "observedAt": "2026-09-03T18:58:27.234Z",
+      "observedAt": "2026-09-03T20:05:23.992Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -11581,8 +11903,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Sexualized Violence Prevention and Response --> Menu Search Search King's Programs & Faculty Admissions Campus & Community Administration Future Students Current Students Alumni & Friends Conference & Event Services Back Overview Foundation Year Program Journalism, Writing & Publishing King's Honours Programs Arts & Humanities Science Music Courses Field Courses & Study Abroad Programs Experiential Learning Non-Cr...",
       "postUrl": "https://ukings.ca/campus-community/student-services/campus-safety/sexualized-violence/",
       "mediaUrl": "https://ukings.ca/wp-content/uploads/2016/07/JIV0845.jpg",
-      "publishedAt": "2010-04-09T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:29.615Z",
+      "publishedAt": "2010-04-09T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:25.255Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -11655,8 +11977,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Conference & Event Services | University of King's College --> Menu Search Search King's Programs & Faculty Admissions Campus & Community Administration Future Students Current Students Alumni & Friends Conference & Event Services Back Overview Foundation Year Program Journalism, Writing & Publishing King's Honours Programs Arts & Humanities Science Music Courses Field Courses & Study Abroad Programs Experiential...",
       "postUrl": "https://ukings.ca/conference-event-services/",
       "mediaUrl": "https://ukings.ca/wp-content/uploads/2016/07/JIV0845.jpg",
-      "publishedAt": "2010-04-09T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:28.034Z",
+      "publishedAt": "2010-04-09T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:24.492Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -11732,8 +12054,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "What's happening when at King's. Stay on top of all the latest events from lectures to plays to formal meal and Encaenia. See what King's has to offer!",
       "postUrl": "https://ukings.ca/events/",
       "mediaUrl": "https://ukings.ca/wp-content/uploads/2016/07/JIV0845.jpg",
-      "publishedAt": "2010-04-09T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:28.425Z",
+      "publishedAt": "2010-04-09T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:25.087Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -11806,7 +12128,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://hopsingrestaurant.ca/",
       "mediaUrl": null,
       "publishedAt": null,
-      "observedAt": "2026-09-03T18:58:27.998Z",
+      "observedAt": "2026-09-03T20:05:24.240Z",
       "signalMatches": {
         "specials": [
           "deal",
@@ -11839,7 +12161,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://hopsingrestaurant.ca/deals",
       "mediaUrl": null,
       "publishedAt": null,
-      "observedAt": "2026-09-03T18:58:29.375Z",
+      "observedAt": "2026-09-03T20:05:24.964Z",
       "signalMatches": {
         "specials": [
           "deal",
@@ -11872,7 +12194,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://hopsingrestaurant.ca/menu",
       "mediaUrl": null,
       "publishedAt": null,
-      "observedAt": "2026-09-03T18:58:28.884Z",
+      "observedAt": "2026-09-03T20:05:24.624Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -11910,8 +12232,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Humble Pie Kitchen – It’s Hard to be Humble Skip to content Humble Pie Kitchen It’s Hard to be Humble Menu WELCOME TO HUMBLE PIE KITCHEN PIE MENU PIES FOR HOME GIFT CARDS WELCOME TO HUMBLE PIE KITCHEN We are on a quest to create the perfect pie! Individually portioned savoury hand pies made with butter puff pastry packed with cuts of locally sourced meat, quality cheeses and rich gravy to fill you up on the go or...",
       "postUrl": "https://humblepiekitchen.ca/",
       "mediaUrl": null,
-      "publishedAt": "2007-06-06T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:28.132Z",
+      "publishedAt": "2007-06-06T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:24.502Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -11939,8 +12261,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "PIE MENU – Humble Pie Kitchen Skip to content Humble Pie Kitchen It’s Hard to be Humble Menu WELCOME TO HUMBLE PIE KITCHEN PIE MENU PIES FOR HOME GIFT CARDS PIE MENU Premium Pies 7 oz – $13 each + HST Steak’n Cheese A Kiwi staple. Steak & Cheese is our top seller. Tender cuts of local beef slow cooked with onion in a rich beef gravy, topped with a layer of creamy cheese. Steak with Double Cheese & Bacon Everything...",
       "postUrl": "https://humblepiekitchen.ca/pie-menu/",
       "mediaUrl": null,
-      "publishedAt": "2007-06-06T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:28.854Z",
+      "publishedAt": "2007-06-06T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:25.390Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -11976,7 +12298,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://ihop.ca/",
       "mediaUrl": "https://ihop.ca/wp-content/uploads/2026/03/27802_IHOP-CA-2026_MAIN-BANNER.jpg",
       "publishedAt": "2026-06-29T22:58:52.000Z",
-      "observedAt": "2026-09-03T18:58:28.637Z",
+      "observedAt": "2026-09-03T20:05:24.722Z",
       "signalMatches": {
         "specials": [
           "offer"
@@ -12027,7 +12349,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://couriers.skipthedishes.com/application/",
       "mediaUrl": "https://takeaway-recruitment-api.k.elnino-production.com/storage/landing_page/bqGEmtHWvnKBGgyyyxQIKxT1hKCgLFQobEgkLldR.webp",
       "publishedAt": null,
-      "observedAt": "2026-09-01T15:24:02.706Z",
+      "observedAt": "2026-09-03T20:05:25.441Z",
       "signalMatches": {
         "specials": [
           "offer",
@@ -12058,7 +12380,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://restaurants.skipthedishes.com/application",
       "mediaUrl": null,
       "publishedAt": null,
-      "observedAt": "2026-09-01T15:24:02.813Z",
+      "observedAt": "2026-09-03T20:05:25.442Z",
       "signalMatches": {
         "specials": [
           "promo"
@@ -12085,7 +12407,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://secretsauce.skipthedishes.com/",
       "mediaUrl": "https://secretsauce.skipthedishes.com/wp-content/uploads/2023/04/img_not_a_partner.jpg",
       "publishedAt": "2025-07-04T17:40:38.000Z",
-      "observedAt": "2026-09-03T18:58:29.692Z",
+      "observedAt": "2026-09-03T20:05:26.335Z",
       "signalMatches": {
         "specials": [
           "offer",
@@ -12127,7 +12449,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.skipthedishes.com/?utm_source=inspringhotpot.com&utm_medium=microsites&utm_campaign=microsites",
       "mediaUrl": "https://www.skipthedishes.com/_next/static/media/skip-for-business-homePage.e9c5e5ce.png?w=3840&amp;q=100",
       "publishedAt": null,
-      "observedAt": "2026-09-01T15:24:02.468Z",
+      "observedAt": "2026-09-03T20:05:25.187Z",
       "signalMatches": {
         "live_music": [
           "dj"
@@ -12180,7 +12502,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.skipthedishes.com/brands/another-wing-by-dj-khaled",
       "mediaUrl": null,
       "publishedAt": null,
-      "observedAt": "2026-09-01T15:23:44.196Z",
+      "observedAt": "2026-09-03T20:05:07.862Z",
       "signalMatches": {
         "specials": [
           "special"
@@ -12219,7 +12541,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.skipthedishes.com/brands/pizza-seventy-three",
       "mediaUrl": null,
       "publishedAt": null,
-      "observedAt": "2026-09-01T15:23:44.022Z",
+      "observedAt": "2026-09-03T20:05:07.677Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -12264,7 +12586,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.skipthedishes.com/cuisines/breakfast&amp;brunch",
       "mediaUrl": null,
       "publishedAt": null,
-      "observedAt": "2026-09-01T15:23:43.380Z",
+      "observedAt": "2026-09-03T20:05:07.063Z",
       "signalMatches": {
         "brunch": [
           "brunch",
@@ -12288,8 +12610,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Paradise has it all! If you like what you see, wait till you smell the aroma of our starters and main course dishes in person. We promise you'll be blown away! Our Restaurants We offer Dine-In, Takeaway, and Online Orders at all our locations! Windsor 1459 Ottawa Street, Windsor, N8X2G1. View Details Order Now Google Maps London 825 Southdale Rd W, Unit #2, London, ON, N6P0B8. View Details Order Now Google Maps Be...",
       "postUrl": "https://www.indiaparadise.ca/",
       "mediaUrl": "https://cdn.prod.website-files.com/6261c545bac2436193a5b09b%2F6762b0db731d40facfe22b3e_slider%20video%20basic-poster-00001.jpg",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:29.749Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:27.218Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -12358,8 +12680,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Indian Food Menu by India Paradise in Mississauga 10% OFF - ORDER ONLINE . 10% OFF - ORDER ONLINE . 10% OFF - ORDER ONLINE . 10% OFF - ORDER ONLINE . 10% OFF - ORDER ONLINE . 10% OFF - ORDER ONLINE . 10% OFF - ORDER ONLINE . 10% OFF - ORDER ONLINE . 10% OFF - ORDER ONLINE . 10% OFF - ORDER ONLINE . 10% OFF - ORDER ONLINE . 10% OFF - ORDER ONLINE . 10% OFF - ORDER ONLINE . 10% OFF - ORDER ONLINE . Windsor London Me...",
       "postUrl": "https://www.indiaparadise.ca/mississauga/food-menu",
       "mediaUrl": "https://cdn.prod.website-files.com/6261c545bac2436193a5b09b/690de6d785843431893fd9d6_m-03.jpg",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:30.152Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:27.711Z",
       "signalMatches": {
         "specials": [
           "special"
@@ -12415,8 +12737,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "indiaparadise main site Windsor London catering Location Windsor London Bedford Halifax Downtown Mississauga Calgary Home Contact Blog Offer CALGARY: FREE BIRYANI ALERT! CALGARY: FREE BIRYANI ALERT! 🚨🥘To celebrate our Grand Opening, we’re giving away 25 FREE Biryanis every single day from our exclusive Chef Series!📍 Where: India Paradise, 3131 27 St NE Unit #1 , Calgary🗓️ When: March 18th – March 22nd⏰ The Dea...",
       "postUrl": "https://www.indiaparadise.ca/post/calgary-free-biryani-alert",
       "mediaUrl": "https://cdn.prod.website-files.com/672b494e0e4aa3471f6bbc58/69b2ad9778709f30d0fa5be2_C%20chef%20series%20free%20biryani%20everyday%20copy.png",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:30.331Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:27.898Z",
       "signalMatches": {
         "specials": [
           "deal",
@@ -12448,8 +12770,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": ": India Paradise is coming to Calgary! 🥘🔥Mark your calendars for March 18th. We aren't just opening our doors; we’re opening the kitchen to the most authentic flavors in YYC. 🎁 GRAND OPENING SPECIAL:Get a complimentary Jilebi Rabdi on us when you dine in!(Available March 18 – April 12) Don't just take our word for it—come taste the magic yours Share this post Tag one Tag two Tag three Tag three Eat Local, Think...",
       "postUrl": "https://www.indiaparadise.ca/post/opening-on-march-18th-in-calgary",
       "mediaUrl": "https://cdn.prod.website-files.com/672b494e0e4aa3471f6bbc58/69b262796716721486e095b1_C%20now%20open%20poster%20for%20video%20shoot-7%20copy.png",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:29.985Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:27.540Z",
       "signalMatches": {
         "specials": [
           "special"
@@ -12479,9 +12801,9 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "title": "Jacky's Cafe | Chinese - Halifax, Canada",
       "excerpt": "Jacky",
       "postUrl": "https://jackyscafehalifax.com/",
-      "mediaUrl": "https://cdn3.didevelop.com/public/product_images/1486/180_6eb0ce9621e6c6ba8ca4994899ab47d6.jpg",
-      "publishedAt": "2001-05-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:29.838Z",
+      "mediaUrl": "https://cdn3.didevelop.com/public/product_images/1486/180_11099cca3524c5cc43f2ccf77717d4d7.jpg",
+      "publishedAt": "2001-05-01T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:27.301Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -12553,7 +12875,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.foodbooking.com/ordering/restaurant/menu?restaurant_uid=de8fb584-7d18-406d-9040-426509400230",
       "mediaUrl": null,
       "publishedAt": null,
-      "observedAt": "2026-09-03T18:58:16.573Z",
+      "observedAt": "2026-09-03T20:05:16.276Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -12576,8 +12898,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Check our online website to get 10% off when you spend $15! - Jean",
       "postUrl": "https://www.jeansrestaurant.ca/",
       "mediaUrl": "https://static.wixstatic.com/media/762b6e_63f51269ba9e431b9e1359dc17c39e22~mv2.jpg/v1/fill/w_123,h_82,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/762b6e_63f51269ba9e431b9e1359dc17c39e22~mv2.jpg",
-      "publishedAt": "2001-04-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:30.246Z",
+      "publishedAt": "2001-04-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:27.975Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -12600,8 +12922,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "--> Contact | Jean's Chinese Restaurant top of page JEAN'S CHINESE RESTAURANT Home Delivery Map Contact About More Use tab to navigate through the menu items. Delivery Fee Zone 1: Min-$15, Fee-$1.30 Zone 2: Min-$20, Fee-$4,00 Zone 3: Min-$20, Fee-$5.00 Zone 4: Min-$20, Fee-$6.00 Zone 5: Min-$20, Fee-$7.00 Order Online 516 Pleasant Street,Dartmouth,NS B2W1A4 &copy;2023 by Jean's Chinese Restaurant bottom of page",
       "postUrl": "https://www.jeansrestaurant.ca/contact",
       "mediaUrl": "https://static.wixstatic.com/media/762b6e_a5c3729710b446bfa0949a9b16ab6d9a~mv2.jpg/v1/fill/w_122,h_69,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/762b6e_a5c3729710b446bfa0949a9b16ab6d9a~mv2.jpg",
-      "publishedAt": "2001-04-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:30.525Z",
+      "publishedAt": "2001-04-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:28.289Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -12624,8 +12946,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Water Front Restaurant Serving Japanese and Thai Food Either A la Carte or made to order all you can eat style. Situated at 49 Kings Wharf, Dartmouth, NS",
       "postUrl": "https://www.jukairestaurant.com/",
       "mediaUrl": "https://static.wixstatic.com/media/a3c153_c2677d5a52264f1fa279ac038c6c1c7b~mv2.jpg/v1/fill/w_288,h_161,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/a3c153_c2677d5a52264f1fa279ac038c6c1c7b~mv2.jpg",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:30.713Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:28.270Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -12648,8 +12970,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Water Front Restaurant Serving Japanese and Thai Food Either A la Carte or made to order all you can eat style. Situated at 49 Kings Wharf, Dartmouth, NS",
       "postUrl": "https://www.jukairestaurant.com/",
       "mediaUrl": "https://static.wixstatic.com/media/a3c153_c2677d5a52264f1fa279ac038c6c1c7b~mv2.jpg/v1/fill/w_288,h_161,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/a3c153_c2677d5a52264f1fa279ac038c6c1c7b~mv2.jpg",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:31.424Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:28.818Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -12673,7 +12995,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://junglejims.ca/",
       "mediaUrl": "https://junglejims.ca/assets/tpl/new/wreth.png",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:05.804Z",
+      "observedAt": "2026-09-03T20:05:28.470Z",
       "signalMatches": {
         "specials": [
           "promo"
@@ -12741,7 +13063,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://junglejims.ca/menu",
       "mediaUrl": "https://junglejims.ca/assets/tpl/new/wreth.png",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:06.466Z",
+      "observedAt": "2026-09-03T20:05:29.023Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -12806,7 +13128,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://junglejims.ca/menu/bay-roberts",
       "mediaUrl": "https://junglejims.ca/menu/assets/tpl/new/wreth.png",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:06.851Z",
+      "observedAt": "2026-09-03T20:05:29.373Z",
       "signalMatches": {
         "specials": [
           "deal",
@@ -12883,7 +13205,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://junglejims.ca/menu/cbs-manuels",
       "mediaUrl": "https://junglejims.ca/menu/assets/tpl/new/wreth.png",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:08.076Z",
+      "observedAt": "2026-09-03T20:05:30.738Z",
       "signalMatches": {
         "specials": [
           "deal",
@@ -12960,7 +13282,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://junglejims.ca/menu/clarenville",
       "mediaUrl": "https://junglejims.ca/menu/assets/tpl/new/wreth.png",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:08.748Z",
+      "observedAt": "2026-09-03T20:05:31.288Z",
       "signalMatches": {
         "specials": [
           "deal",
@@ -13037,7 +13359,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://junglejims.ca/menu/corner-brook",
       "mediaUrl": "https://junglejims.ca/menu/assets/tpl/new/wreth.png",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:09.429Z",
+      "observedAt": "2026-09-03T20:05:31.805Z",
       "signalMatches": {
         "specials": [
           "deal",
@@ -13114,7 +13436,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://junglejims.ca/menu/deer-lake",
       "mediaUrl": "https://junglejims.ca/menu/assets/tpl/new/wreth.png",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:10.067Z",
+      "observedAt": "2026-09-03T20:05:32.365Z",
       "signalMatches": {
         "specials": [
           "deal",
@@ -13191,7 +13513,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://junglejims.ca/menu/fredericton",
       "mediaUrl": "https://junglejims.ca/menu/assets/tpl/new/wreth.png",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:10.684Z",
+      "observedAt": "2026-09-03T20:05:32.886Z",
       "signalMatches": {
         "specials": [
           "deal",
@@ -13267,7 +13589,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://junglejims.ca/menu/gander",
       "mediaUrl": "https://junglejims.ca/menu/assets/tpl/new/wreth.png",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:11.348Z",
+      "observedAt": "2026-09-03T20:05:33.438Z",
       "signalMatches": {
         "specials": [
           "deal",
@@ -13344,7 +13666,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://junglejims.ca/menu/goulds",
       "mediaUrl": "https://junglejims.ca/menu/assets/tpl/new/wreth.png",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:11.904Z",
+      "observedAt": "2026-09-03T20:05:33.943Z",
       "signalMatches": {
         "specials": [
           "deal",
@@ -13421,7 +13743,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.kajohnthairestaurant.ca/",
       "mediaUrl": "https://static.wixstatic.com/media/935b09_7684f855e5c346db87d9d1f3f4fee56c%7Emv2.jpg/v1/fit/w_2500,h_1330,al_c/935b09_7684f855e5c346db87d9d1f3f4fee56c%7Emv2.jpg",
       "publishedAt": "2500-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:31.134Z",
+      "observedAt": "2026-09-03T20:05:28.543Z",
       "signalMatches": {
         "specials": [
           "offer"
@@ -13457,7 +13779,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.kajohnthairestaurant.ca/menu",
       "mediaUrl": "https://static.wixstatic.com/media/935b09_dfe29aa9c04d4c4893131b68e5f779f3~mv2.png/v1/fit/w_2500,h_1330,al_c/935b09_dfe29aa9c04d4c4893131b68e5f779f3~mv2.png",
       "publishedAt": "2500-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:31.489Z",
+      "observedAt": "2026-09-03T20:05:28.905Z",
       "signalMatches": {
         "specials": [
           "special"
@@ -13495,8 +13817,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Kanpai Izakaya offers variety of Japanese fusion dishes",
       "postUrl": "https://kanpaiizakaya.com/",
       "mediaUrl": "https://img1.wsimg.com/isteam/stock/38725",
-      "publishedAt": "8390-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:31.499Z",
+      "publishedAt": "8390-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:29.102Z",
       "signalMatches": {
         "specials": [
           "offer",
@@ -13535,8 +13857,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Call to make a reservation",
       "postUrl": "https://kanpaiizakaya.com/menu",
       "mediaUrl": "https://img1.wsimg.com/isteam/stock/38725",
-      "publishedAt": "8390-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:31.863Z",
+      "publishedAt": "8390-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:29.389Z",
       "signalMatches": {
         "openings": [
           "coming soon"
@@ -13570,8 +13892,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Kenny's Pizza – Fresh From Our Oven Skip to content Welcome to Kenny's, Kearney Lake. If You Need Assistance Just Give Us a Call: (902) 407-4141. HOME Store Hours Order Menu Cart Checkout 0 0 Menu Close HOME Store Hours Order Menu Cart Checkout 0 Search this website Appetizers (10) Pizza & Garlic Fingers (13) Choose From More Than a Dozen Kinds of Pizzas and all Kinds of Extra Toppings Specials (8) Enjoy great dea...",
       "postUrl": "http://kennyspizzakearneylake.ca/",
       "mediaUrl": "http://kennyspizzakearneylake.ca/wp-content/uploads/2020/04/apps-1-200x190.jpg",
-      "publishedAt": "2004-10-09T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:31.698Z",
+      "publishedAt": "2004-10-09T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:29.233Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -13613,8 +13935,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Kenny's Pizza – Fresh From Our Oven Skip to content Welcome to Kenny's, Kearney Lake. If You Need Assistance Just Give Us a Call: (902) 407-4141. HOME Store Hours Order Menu Cart Checkout 0 0 Menu Close HOME Store Hours Order Menu Cart Checkout 0 Search this website Appetizers (10) Pizza & Garlic Fingers (13) Choose From More Than a Dozen Kinds of Pizzas and all Kinds of Extra Toppings Specials (8) Enjoy great dea...",
       "postUrl": "https://kennyspizzakearneylake.ca/",
       "mediaUrl": "https://kennyspizzakearneylake.ca/wp-content/uploads/2020/04/apps-1-200x190.jpg",
-      "publishedAt": "2004-10-09T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:38.036Z",
+      "publishedAt": "2004-10-09T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:31.288Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -13656,8 +13978,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Online Deals – Kenny's Pizza Skip to content Welcome to Kenny's, Kearney Lake. If You Need Assistance Just Give Us a Call: (902) 407-4141. HOME Store Hours Order Menu Cart Checkout 0 0 Menu Close HOME Store Hours Order Menu Cart Checkout 0 Search this website Default sorting Sort by popularity Sort by latest Sort by price: low to high Sort by price: high to low 2 Small Pizzas for $29.99 2 Small Pizzas - Choose Fro...",
       "postUrl": "https://kennyspizzakearneylake.ca/product-category/online/",
       "mediaUrl": "https://kennyspizzakearneylake.ca/wp-content/uploads/2020/04/KennysBQChkn-200x190.jpg",
-      "publishedAt": "2004-10-09T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:46.714Z",
+      "publishedAt": "2004-10-09T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:35.203Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -13699,8 +14021,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Specials – Kenny's Pizza Skip to content Welcome to Kenny's, Kearney Lake. If You Need Assistance Just Give Us a Call: (902) 407-4141. HOME Store Hours Order Menu Cart Checkout 0 0 Menu Close HOME Store Hours Order Menu Cart Checkout 0 Search this website Enjoy great deals with our daily specials. Default sorting Sort by popularity Sort by latest Sort by price: low to high Sort by price: high to low Kids Fave 16 i...",
       "postUrl": "https://kennyspizzakearneylake.ca/product-category/specials/",
       "mediaUrl": "https://kennyspizzakearneylake.ca/wp-content/uploads/2020/04/kids-200x190.jpg",
-      "publishedAt": "2004-10-09T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:44.266Z",
+      "publishedAt": "2004-10-09T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:33.237Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -13742,6 +14064,54 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "sourceLabel": "https://kennyspizzakearneylake.ca/product-category/specials/"
     },
     {
+      "id": "official-page-f511dd6d8fdfbefd80",
+      "restaurantId": "osm-node-9128392205-king-of-donair",
+      "restaurantName": "King of Donair",
+      "platform": "official_page",
+      "title": "Official page update",
+      "excerpt": "Official page update",
+      "postUrl": "https://def.uber.com/en/challenge?from_service=d2ViLWVhdHMtdjI%3D&q=OGQ0ODY5YjRlNDkzMmUyNWQyYTkxMGZjOGFlNTYxZDk6STFNVmJraDV0SGpMUDhKazpHaEd1MzQ4L2VCbWtEaVFtcTVyZzZqTHpRbDJqQ01wVnVPenlwdzFvSDB1SjZweCtGVE9UVXlVQStEMzUrUUl3bHRUUENSb3M4akxPMnBoUThsMjYva1c3VitRZ3RneE5CbERhYVZqWU9KZjBGYTZnRGQ3eHlkMW1ldHk3UFpXYmhlV3V4K1l1NEVYbmxwTHRCN2NFejBLOTYzeGh5cHZsUkdsNFdKU2dUWUVHdE9GS3p4Z014Z0dBWVF1V0dtUUdSZmcrNXRYSTE4eVpZZzZnWHNRQ1VJZVRqN2NIb1hxN3pyaVdLMVM2TEo1NkhKQ3l1WFJxNVNkK1NRNVpXdUtocy90VmdSYlFCaGQrM0hoeE1uSHV3MlhiNWRkUjpaTWxaQ1RDUUEyOWY4OUZ2UUE3RXJBPT0%3D",
+      "mediaUrl": null,
+      "publishedAt": null,
+      "observedAt": "2026-09-03T20:05:06.146Z",
+      "signalMatches": {
+        "live_music": [
+          "dj"
+        ]
+      },
+      "candidateLinks": [],
+      "sourceKind": "official_page_html",
+      "associationBasis": "official_site_linked_page",
+      "confidence": "official_source_page_signal",
+      "reviewState": "needs_date_review",
+      "discoveryReason": "first_party_ordering",
+      "sourceLabel": "Order on UberEats"
+    },
+    {
+      "id": "official-page-a5dec85503e613e5c3",
+      "restaurantId": "osm-node-3104142670-king-of-donair",
+      "restaurantName": "King of Donair",
+      "platform": "official_page",
+      "title": "Official page update",
+      "excerpt": "Official page update",
+      "postUrl": "https://def.uber.com/en/challenge?from_service=d2ViLWVhdHMtdjI%3D&q=ZGJiODI1MWRhNDc2YjgwNTk4NGFlMGFiYmY0ZGM5Y2I6NjBGNXR0ZnFGVWNNdmlFejpRdlZZaTdaKzRMQkxYWDBhNlV4QXpkemFpYS9keXdCRkVnRXUwVzQxVWdJWXNMOVpLak1RVG9WQmlsQ1owSzFCZUJoYXlUUGlLR1hhSTB2RGRJZi9FK3AyZE5PT3FEa3lYMk91VWdJU1pPOTNnRXFKaGxYa0ZyZXRPYk8rMkdNbjg1YzNhWGdiajlqUXZqR0d3NkpnV3hmWG0ySXl3MEdaQkRPMHVMdWlzdS9vQVNyNHFsRDBMejNwRmhuMWprS0I5cUJKVmQ1S0Fpb1ZRRnhPdFphSWR0OWdrY2dOdXk4SWZaVkJsQXhQMHRZTWt3bGNlME1vLzNSODJ5TjhLeExOVEZaVE5ENkVHc3BaSjExZFRuS1ZuMXdubXB6dDpmbkFienRFWHRIanFvRUcxMUsrOENnPT0%3D",
+      "mediaUrl": null,
+      "publishedAt": null,
+      "observedAt": "2026-09-03T20:05:05.546Z",
+      "signalMatches": {
+        "live_music": [
+          "dj"
+        ]
+      },
+      "candidateLinks": [],
+      "sourceKind": "official_page_html",
+      "associationBasis": "official_site_linked_page",
+      "confidence": "official_source_page_signal",
+      "reviewState": "needs_date_review",
+      "discoveryReason": "first_party_ordering",
+      "sourceLabel": "Order on UberEats"
+    },
+    {
       "id": "official-page-92de3526c814625a8e",
       "restaurantId": "osm-node-3104142670-king-of-donair",
       "restaurantName": "King of Donair",
@@ -13751,7 +14121,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.kingofdonair.ca/",
       "mediaUrl": "https://www.kingofdonair.ca/wp-content/user_files/2023/07/website-banner-1536x647-copy.jpg",
       "publishedAt": "1973-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:06.603Z",
+      "observedAt": "2026-09-03T20:05:29.335Z",
       "signalMatches": {
         "live_music": [
           "dj"
@@ -13790,8 +14160,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Canada’s Original since 1973",
       "postUrl": "https://www.kingofdonair.ca/",
       "mediaUrl": "https://www.kingofdonair.ca/wp-content/user_files/2023/07/website-banner-1536x647-copy.jpg",
-      "publishedAt": "1973-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:36.861Z",
+      "publishedAt": "1973-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:31.133Z",
       "signalMatches": {
         "live_music": [
           "dj"
@@ -13831,7 +14201,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.kingofdonair.ca/menu/",
       "mediaUrl": "https://www.kingofdonair.ca/wp-content/user_files/2024/10/24-KOD-MENU-WEB-1.png",
       "publishedAt": "2025-06-18T12:39:09.000Z",
-      "observedAt": "2026-09-03T18:58:32.090Z",
+      "observedAt": "2026-09-03T20:05:29.655Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -13868,7 +14238,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.kingofdonair.ca/menu/",
       "mediaUrl": "https://www.kingofdonair.ca/wp-content/user_files/2024/10/24-KOD-MENU-WEB-1.png",
       "publishedAt": "2025-06-18T12:39:09.000Z",
-      "observedAt": "2026-09-03T18:58:37.364Z",
+      "observedAt": "2026-09-03T20:05:31.326Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -13905,7 +14275,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.skipthedishes.com/king-of-donair-quinpool",
       "mediaUrl": "https://www.skipthedishes.com/_next/image?url=https%3A%2F%2Frestaurants-static.skipthedishes.com%2Fimages%2Fresized%2Flarge-767b9e214669a2587f97.jpg&amp;w=3840&amp;q=75",
       "publishedAt": null,
-      "observedAt": "2026-09-01T15:23:45.507Z",
+      "observedAt": "2026-09-03T20:05:10.085Z",
       "signalMatches": {
         "specials": [
           "special"
@@ -13938,7 +14308,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.skipthedishes.com/king-of-donair-quinpool",
       "mediaUrl": "https://www.skipthedishes.com/_next/image?url=https%3A%2F%2Frestaurants-static.skipthedishes.com%2Fimages%2Fresized%2Flarge-767b9e214669a2587f97.jpg&amp;w=3840&amp;q=75",
       "publishedAt": null,
-      "observedAt": "2026-09-01T15:23:44.370Z",
+      "observedAt": "2026-09-03T20:05:08.047Z",
       "signalMatches": {
         "specials": [
           "special"
@@ -14120,8 +14490,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "ife is something people always strive for. In the past decade, what we’ve learned and experienced from being happy is that no matter how bad our days get, happiness can be found, especially when we consistently try to consciously be happy. At KOFUKU our mission is to serve each and everyone of our guests happiness with both our mouth-watering dishes and high quality services. Our highly experienced and passionate...",
       "postUrl": "https://www.kofukujapaneseandthai.ca/",
       "mediaUrl": "https://cdn.shoplightspeed.com/shops/642004/themes/12737/assets/partner-lightspeed-order-ahead.png?2023113014140620201201163814",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:31.891Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:29.556Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -14363,6 +14733,54 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "sourceLabel": "Click Here To Order Online!"
     },
     {
+      "id": "official-page-7375162c15e6c3c64d",
+      "restaurantId": "osm-node-12143325435-krave-burger",
+      "restaurantName": "Krave Burger",
+      "platform": "official_page",
+      "title": "Official page update",
+      "excerpt": "Official page update",
+      "postUrl": "https://def.uber.com/en/challenge?from_service=d2ViLWVhdHMtdjI%3D&q=NTcyNDFjMzhjNTdmN2E3NTAxYzZmNzEzMWM1OTdjMDM6WDlITTVsZUtwZ3FCMDFxUzp2aEIwdTlCcWlzQStKWjZCQ3pZdVl0TFVEdGJjSC92OGN3aUJMVUI5ZUtSQlBaSmZJZ2t6dDNyZ3lGdlZUOVhDdXNVbmpEdURFc1ZZU0ptbEpieTAwS3JaRi8wWEpXcEZUemxwZFVyOXlWWkN6RXdkWGt2NnVISzZsNlQwVmUzUDhBb2RYeXQ3cUNESHcwMUEwWHprbGdTcWpZcm0wRmZDNk5qYVdXUGlIUGIwVDdmL1UvZ1F1ZWx4dGVwdlh1eTF2cFFQV0MrMkZuU2g5dDV5TG5IV25QVXNzM0M2NzRoNlRISm05MzErYmVaVkl3ZGExdkpTQkNzTCsvMDNwbVRPRkpIU3JTSC9sVVVUWm8vVHlLRGZ0cFYzTkNHVnRBbjRxV3UzL2FFZVZ1SkFUNUliV3pqRVBYR3cvU0hQRnc5Q1hvME01RWZMeGhVUTRyb0Rydk5XVHExY1FwampxMG8xeTkwc0haSDhKazg9Ok1OL3hFWTh1d3VzT1hMM0xwbS9sUUE9PQ%3D%3D",
+      "mediaUrl": null,
+      "publishedAt": null,
+      "observedAt": "2026-09-03T20:05:07.629Z",
+      "signalMatches": {
+        "live_music": [
+          "dj"
+        ]
+      },
+      "candidateLinks": [],
+      "sourceKind": "official_page_html",
+      "associationBasis": "official_site_linked_page",
+      "confidence": "official_source_page_signal",
+      "reviewState": "needs_date_review",
+      "discoveryReason": "first_party_ordering",
+      "sourceLabel": "Order from 370 Pleasant Street"
+    },
+    {
+      "id": "official-page-eae2f66199f4e3329a",
+      "restaurantId": "osm-node-3791840157-krave-burger",
+      "restaurantName": "Krave Burger",
+      "platform": "official_page",
+      "title": "Official page update",
+      "excerpt": "Official page update",
+      "postUrl": "https://def.uber.com/en/challenge?from_service=d2ViLWVhdHMtdjI%3D&q=NWU2NjJiMGJhNjc2ZjYzM2IyODdmZmMzMTYyZjBhN2I6cC96bk13TFdyVm1Pa0VLdTp2WmF5WC9obXNYcld3amF1RmV3cmNGYktPNDhuRHpJOEk4M3lFc3J0R0w2YWpXbkVES1VSVmQ1aEFtRzE5dzdQZFRhWExtVEE2MmpPbDdCUWo2Y3h6Yi9jNXJacDEzeGFobm1iNnZNaGJzVGs1SjdKbHNzdVI3bmc2dEFvZU1McDZscWxlQTlaRGNOendiMHRhVG5jcWJiVk80Mm4xQ3V1RkJyYzU4WVA2dkQwUWlLQkdEQXlFcmY0Vno5WnJYdzJybDk1elpXQ1U1THRhMFhGeXB4WEc1QmpEbzlPTUovdGI0N2xnQWR2Rm9NeUlPUjQ3UkVIdWlTdzd1ZWp2dWdMMTFRV2F1MXVwODg2cWVZNlpIbk9lQzlhOFIyaThCaGdweTUzY1lzcnM5S1NtMW5xRXNqcGtnOTcyUGhrRU45WFVZaHJhaDQwamRSZXpqaGZPcUpDU0w3emIzZHJwcnp2WnE3MkUvZGJsTDg9OmN4RWt0T3RuaUlEK21DQ0xzQTZNZlE9PQ%3D%3D",
+      "mediaUrl": null,
+      "publishedAt": null,
+      "observedAt": "2026-09-03T20:05:07.213Z",
+      "signalMatches": {
+        "live_music": [
+          "dj"
+        ]
+      },
+      "candidateLinks": [],
+      "sourceKind": "official_page_html",
+      "associationBasis": "official_site_linked_page",
+      "confidence": "official_source_page_signal",
+      "reviewState": "needs_date_review",
+      "discoveryReason": "first_party_ordering",
+      "sourceLabel": "Order from 370 Pleasant Street"
+    },
+    {
       "id": "official-page-74040f50ea397d61e9",
       "restaurantId": "osm-node-3791840157-krave-burger",
       "restaurantName": "Krave Burger",
@@ -14372,7 +14790,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://order.chownow.com/order/20384/locations/29373",
       "mediaUrl": "https://menuimages.chownowcdn.com/cdn-cgi/image/04522713-f448-434a-9fab-c3646041e690.jpg",
       "publishedAt": "2000-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:23:51.212Z",
+      "observedAt": "2026-09-03T20:05:14.411Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -14396,7 +14814,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://order.chownow.com/order/20384/locations/29373",
       "mediaUrl": "https://menuimages.chownowcdn.com/cdn-cgi/image/04522713-f448-434a-9fab-c3646041e690.jpg",
       "publishedAt": "2000-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:23:51.684Z",
+      "observedAt": "2026-09-03T20:05:14.754Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -14571,8 +14989,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Lady Hammond Grill Menu | Chebucto Inn HOME OUR STORY OUR ROOMS Executive Double Room EXTENDED STAYS RESTAURANT Lady Hammond Grill Our Menu Eggs Benny Special REVIEWS CONTACT US BOOK NOW Select Page Monday: 7:00 a.m. – 7:00 p.m. Tuesday: 7:00 a.m. – 7:00 p.m. Wednesday: 7:00 a.m. – 7:00 p.m. Thursday: 7:00 a.m. – 7:00 p.m. Friday: 7:00 a.m. – 7:00 p.m. Saturday: 7:00 a.m. – 7:00 p.m. Sunday: 7:00 a.m. – 7:00 p.m....",
       "postUrl": "https://chebuctoinn.com/lady-hammond-grill-menu/",
       "mediaUrl": "https://chebuctoinn.com/wp-content/uploads/2026/05/Lady-Hammond-Grill-Menu-April-2026-p1.jpg",
-      "publishedAt": "2007-06-09T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:42.721Z",
+      "publishedAt": "2007-06-09T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:36.220Z",
       "signalMatches": {
         "specials": [
           "special"
@@ -14613,8 +15031,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "LHG Diner | Chebucto Inn HOME OUR STORY OUR ROOMS Executive Double Room EXTENDED STAYS RESTAURANT Lady Hammond Grill Our Menu Eggs Benny Special REVIEWS CONTACT US BOOK NOW Select Page VIEW OUR MENU Allan and Jenny Atienza, Owners of the Lady Hammond Grill The Lady Hammond Grill (LHG) is a classic Canadiana diner with a little bit of Greek flair. This local neighborhood spot has been filling bellies with delicious...",
       "postUrl": "https://chebuctoinn.com/lhg-diner/",
       "mediaUrl": "https://chebuctoinn.com/wp-content/uploads/2024/09/DSC_4566-e1728402802938.jpg",
-      "publishedAt": "2007-06-09T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:32.619Z",
+      "publishedAt": "2007-06-09T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:32.427Z",
       "signalMatches": {
         "specials": [
           "special"
@@ -14657,8 +15075,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Mother’s Day Dinner | Chebucto Inn HOME OUR STORY OUR ROOMS Executive Double Room EXTENDED STAYS RESTAURANT Lady Hammond Grill Our Menu Eggs Benny Special REVIEWS CONTACT US BOOK NOW Select Page Monday: 7:00 a.m. – 7:00 p.m. Tuesday: 7:00 a.m. – 7:00 p.m. Wednesday: 7:00 a.m. – 7:00 p.m. Thursday: 7:00 a.m. – 7:00 p.m. Friday: 7:00 a.m. – 7:00 p.m. Saturday: 7:00 a.m. – 7:00 p.m. Sunday: 7:00 a.m. – 7:00 p.m. Copy...",
       "postUrl": "https://chebuctoinn.com/lhg-specials/",
       "mediaUrl": "https://chebuctoinn.com/wp-content/uploads/2026/05/Eggs-Benny-Special.png",
-      "publishedAt": "2007-06-09T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:44.485Z",
+      "publishedAt": "2007-06-09T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:38.984Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -14700,8 +15118,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Tempted by a journey of fine dining in Halifax? Book a table at Latitude 44 Bar and Restaurant, where global flavors are served with Nova Scotian hospitality.",
       "postUrl": "https://www.lat44hfx.com/",
       "mediaUrl": "https://mds-assets.marriott.com/cdn-cgi/image/f=auto/cms-platform-for-marriott/yhzfp-latitude-44/site-images/migrated-images/homepageslide2.jpg?cropY=12&cropW=1950&cropH=876&width=1200&height=630",
-      "publishedAt": "2001-08-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:36.815Z",
+      "publishedAt": "2001-08-01T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:32.820Z",
       "signalMatches": {
         "happy_hour": [
           "happy hour"
@@ -14749,8 +15167,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Experience a creative twist on American food in Halifax. Browse the menu at Latitude 44 Bar and Restaurant, where local seafood meets international flavors.",
       "postUrl": "https://www.lat44hfx.com/our-menus",
       "mediaUrl": "https://mds-assets.marriott.com/cdn-cgi/image/f=auto/cms-platform-for-marriott/yhzfp-latitude-44/site-images/migrated-images/homepageslide2.jpg?width=600&height=315",
-      "publishedAt": "2001-08-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:37.257Z",
+      "publishedAt": "2001-08-01T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:33.170Z",
       "signalMatches": {
         "happy_hour": [
           "happy hour"
@@ -14792,8 +15210,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "At Le Bistro By Liz, you’ll find a bit of old world French charm in the heart of Halifax. A quaint, cozy, full of life restaurant that features lots of Parisian Cafe favorites, cooked in an open style kitchen.",
       "postUrl": "https://www.lebistrohalifax.com/",
       "mediaUrl": "https://www.lebistrohalifax.com/wp-content/uploads/2023/07/le-bistro-2.jpg",
-      "publishedAt": "2001-07-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:37.730Z",
+      "publishedAt": "2001-07-01T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:33.454Z",
       "signalMatches": {
         "menu": [
           "menu",
@@ -14863,7 +15281,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.lebistrohalifax.com/brunch-menu",
       "mediaUrl": "https://www.lebistrohalifax.com/wp-content/uploads/2023/07/brunch-2.jpg",
       "publishedAt": "2026-03-31T01:10:59.000Z",
-      "observedAt": "2026-09-03T18:58:38.161Z",
+      "observedAt": "2026-09-03T20:05:33.676Z",
       "signalMatches": {
         "specials": [
           "special"
@@ -14922,7 +15340,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.lebistrohalifax.com/desserts",
       "mediaUrl": "https://www.lebistrohalifax.com/wp-content/uploads/2023/09/desserts_Le-Bistro-Liz-1.jpg",
       "publishedAt": "2026-03-31T01:22:34.000Z",
-      "observedAt": "2026-09-01T15:24:09.543Z",
+      "observedAt": "2026-09-03T20:05:34.421Z",
       "signalMatches": {
         "specials": [
           "special"
@@ -14984,7 +15402,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.lebistrohalifax.com/kids-menu",
       "mediaUrl": "https://www.lebistrohalifax.com/wp-content/uploads/2023/07/brunch-2.jpg",
       "publishedAt": "2025-08-23T01:19:13.000Z",
-      "observedAt": "2026-09-03T18:58:38.676Z",
+      "observedAt": "2026-09-03T20:05:34.118Z",
       "signalMatches": {
         "menu": [
           "menu",
@@ -15038,7 +15456,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.lebistrohalifax.com/lunch-dinner-menu",
       "mediaUrl": "https://www.lebistrohalifax.com/wp-content/uploads/2023/07/Chicken-BLT.jpg",
       "publishedAt": "2025-08-23T00:53:37.000Z",
-      "observedAt": "2026-09-03T18:58:38.332Z",
+      "observedAt": "2026-09-03T20:05:33.821Z",
       "signalMatches": {
         "specials": [
           "offer"
@@ -15095,7 +15513,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.lebistrohalifax.com/menus",
       "mediaUrl": "https://www.lebistrohalifax.com/wp-content/uploads/2023/07/Seafood-Linguine-Pescatori.jpg",
       "publishedAt": "2024-01-31T13:40:23.000Z",
-      "observedAt": "2026-09-03T18:58:38.847Z",
+      "observedAt": "2026-09-03T20:05:34.270Z",
       "signalMatches": {
         "specials": [
           "offer",
@@ -15164,7 +15582,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.lebistrohalifax.com/take-out-menu",
       "mediaUrl": "https://www.lebistrohalifax.com/wp-content/uploads/2023/07/takeout-le-bistro.jpg",
       "publishedAt": "2023-10-04T15:47:06.000Z",
-      "observedAt": "2026-09-01T15:24:09.894Z",
+      "observedAt": "2026-09-03T20:05:34.720Z",
       "signalMatches": {
         "specials": [
           "offer"
@@ -15229,7 +15647,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.lebistrohalifax.com/vegan-menu",
       "mediaUrl": "https://www.lebistrohalifax.com/wp-content/uploads/2023/07/brunch-2.jpg",
       "publishedAt": "2025-08-23T01:17:03.000Z",
-      "observedAt": "2026-09-03T18:58:38.505Z",
+      "observedAt": "2026-09-03T20:05:33.971Z",
       "signalMatches": {
         "menu": [
           "menu",
@@ -15283,7 +15701,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.lebistrohalifax.com/wines",
       "mediaUrl": "https://www.lebistrohalifax.com/wp-content/uploads/2023/07/wines-le-bistro-1.jpg",
       "publishedAt": "2023-10-04T04:01:11.000Z",
-      "observedAt": "2026-09-01T15:24:09.733Z",
+      "observedAt": "2026-09-03T20:05:34.568Z",
       "signalMatches": {
         "specials": [
           "special"
@@ -15344,7 +15762,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://lionshead.ca/",
       "mediaUrl": null,
       "publishedAt": null,
-      "observedAt": "2026-09-03T18:58:38.969Z",
+      "observedAt": "2026-09-03T20:05:33.547Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -15403,7 +15821,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://lionshead.ca/events/",
       "mediaUrl": null,
       "publishedAt": null,
-      "observedAt": "2026-09-03T18:58:44.659Z",
+      "observedAt": "2026-09-03T20:05:35.885Z",
       "signalMatches": {
         "happy_hour": [
           "happy hour",
@@ -15471,7 +15889,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://lionshead.ca/menu/",
       "mediaUrl": null,
       "publishedAt": null,
-      "observedAt": "2026-09-03T18:58:43.510Z",
+      "observedAt": "2026-09-03T20:05:34.741Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -15532,7 +15950,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://lionshead.ca/reserve/",
       "mediaUrl": null,
       "publishedAt": null,
-      "observedAt": "2026-09-03T18:58:45.594Z",
+      "observedAt": "2026-09-03T20:05:36.837Z",
       "signalMatches": {
         "events": [
           "event",
@@ -15582,7 +16000,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://lemon.dog/",
       "mediaUrl": "https://lemondog1594a.zapwp.com/wp-content/uploads/2021/08/IMG_0624-scaled-e1652897066693.webp",
       "publishedAt": "2048-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:39.017Z",
+      "observedAt": "2026-09-03T20:05:34.117Z",
       "signalMatches": {
         "specials": [
           "offer"
@@ -15617,7 +16035,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.lookhoho.com/",
       "mediaUrl": "https://static.wixstatic.com/media/68f5d0_47aa2a21c97a44499efa3eece8436762~mv2.jpg/v1/fill/w_2500,h_1406,al_c/68f5d0_47aa2a21c97a44499efa3eece8436762~mv2.jpg",
       "publishedAt": "2500-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:40.057Z",
+      "observedAt": "2026-09-03T20:05:34.422Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -15661,7 +16079,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.lookhoho.com/chefspecials",
       "mediaUrl": "https://static.wixstatic.com/media/68f5d0_404a7bafac0d4559bc4f2891fa85fa36~mv2.png/v1/fill/w_3840,h_2160,al_c/68f5d0_404a7bafac0d4559bc4f2891fa85fa36~mv2.png",
       "publishedAt": "3840-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:43.047Z",
+      "observedAt": "2026-09-03T20:05:34.937Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -15702,7 +16120,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.lookhoho.com/fullmenu",
       "mediaUrl": "https://static.wixstatic.com/media/68f5d0_404a7bafac0d4559bc4f2891fa85fa36~mv2.png/v1/fit/w_2500,h_1330,al_c/68f5d0_404a7bafac0d4559bc4f2891fa85fa36~mv2.png",
       "publishedAt": "2500-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:42.837Z",
+      "observedAt": "2026-09-03T20:05:34.737Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -15754,8 +16172,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "An intimate pizza restaurant in Halifax with made-to-order thin-crust European-style pizza, chef inspired sandwiches and desserts, organic wine, and delicious cocktails",
       "postUrl": "https://www.loupecou.com/",
       "mediaUrl": "http://static1.squarespace.com/static/6449629547dc621a3c06e3f4/t/69f22ef24bdf591a71c070be/1777479410455/lp-social-sharing-image.jpg?format=1500w",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:42.872Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:34.437Z",
       "signalMatches": {
         "specials": [
           "offer"
@@ -15795,8 +16213,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Discover authentic Italian cuisine at Lou Pécou, featuring handmade pasta, artisanal pizzas, and delicious desserts. Reserve your table today.",
       "postUrl": "https://www.loupecou.com/menu",
       "mediaUrl": "http://static1.squarespace.com/static/6449629547dc621a3c06e3f4/t/69f22ef24bdf591a71c070be/1777479410455/lp-social-sharing-image.jpg?format=1500w",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:43.242Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:34.870Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -15835,8 +16253,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Reserve your table at Lou Pécou in Halifax. Make reservations online for a seamless dining experience. Fully booked times are visible on our platform.",
       "postUrl": "https://www.loupecou.com/reserve",
       "mediaUrl": "http://static1.squarespace.com/static/6449629547dc621a3c06e3f4/t/69f22ef24bdf591a71c070be/1777479410455/lp-social-sharing-image.jpg?format=1500w",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:43.509Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:35.117Z",
       "signalMatches": {
         "live_music": [
           "show"
@@ -15876,8 +16294,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Lucy's Hydrostone Café Story Menu Testimonials Contact View Menu Welcome to Lucy’s Hydrostone Cafe Formerly Julien's Patisserie, Lucy’s Hydrostone Café continues to serve the Hydrostone community with fresh baked bread, mouthwatering pastries, and the finest brewed coffee. Under new ownership, we’re excited to uphold a legacy that has been cherished for nearly 30 years. Visit us today and experience the warmth and...",
       "postUrl": "https://lucyshydrostone.ca/",
       "mediaUrl": "https://lucyshydrostone.ca/wp-content/uploads/Lucys-Hero-Image.jpg",
-      "publishedAt": "2001-07-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:43.454Z",
+      "publishedAt": "2001-07-01T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:35.035Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -15960,7 +16378,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://masaladelight.com/",
       "mediaUrl": null,
       "publishedAt": null,
-      "observedAt": "2026-09-03T18:58:44.546Z",
+      "observedAt": "2026-09-03T20:05:35.286Z",
       "signalMatches": {
         "specials": [
           "offer"
@@ -15984,7 +16402,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://couriers.skipthedishes.com/application/",
       "mediaUrl": "https://takeaway-recruitment-api.k.elnino-production.com/storage/landing_page/bqGEmtHWvnKBGgyyyxQIKxT1hKCgLFQobEgkLldR.webp",
       "publishedAt": null,
-      "observedAt": "2026-09-01T15:24:04.009Z",
+      "observedAt": "2026-09-03T20:05:26.756Z",
       "signalMatches": {
         "specials": [
           "offer",
@@ -16015,7 +16433,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://restaurants.skipthedishes.com/application",
       "mediaUrl": null,
       "publishedAt": null,
-      "observedAt": "2026-09-01T15:24:03.521Z",
+      "observedAt": "2026-09-03T20:05:25.987Z",
       "signalMatches": {
         "specials": [
           "promo"
@@ -16042,7 +16460,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://secretsauce.skipthedishes.com/",
       "mediaUrl": "https://secretsauce.skipthedishes.com/wp-content/uploads/2023/04/img_not_a_partner.jpg",
       "publishedAt": "2025-07-04T17:40:38.000Z",
-      "observedAt": "2026-09-03T18:58:30.965Z",
+      "observedAt": "2026-09-03T20:05:27.803Z",
       "signalMatches": {
         "specials": [
           "offer",
@@ -16084,7 +16502,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.skipthedishes.com/?utm_source=mashaweemediterraneangrill.ca&utm_medium=microsites&utm_campaign=microsites",
       "mediaUrl": "https://www.skipthedishes.com/_next/static/media/skip-for-business-homePage.e9c5e5ce.png?w=3840&amp;q=100",
       "publishedAt": null,
-      "observedAt": "2026-09-01T15:24:12.162Z",
+      "observedAt": "2026-09-03T20:05:35.869Z",
       "signalMatches": {
         "live_music": [
           "dj"
@@ -16137,7 +16555,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.skipthedishes.com/brands/another-wing-by-dj-khaled",
       "mediaUrl": null,
       "publishedAt": null,
-      "observedAt": "2026-09-01T15:23:47.717Z",
+      "observedAt": "2026-09-03T20:05:12.311Z",
       "signalMatches": {
         "specials": [
           "special"
@@ -16176,7 +16594,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.skipthedishes.com/brands/pizza-seventy-three",
       "mediaUrl": null,
       "publishedAt": null,
-      "observedAt": "2026-09-01T15:23:47.542Z",
+      "observedAt": "2026-09-03T20:05:12.122Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -16221,7 +16639,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.skipthedishes.com/cuisines/breakfast&amp;brunch",
       "mediaUrl": null,
       "publishedAt": null,
-      "observedAt": "2026-09-01T15:23:47.072Z",
+      "observedAt": "2026-09-03T20:05:11.585Z",
       "signalMatches": {
         "brunch": [
           "brunch",
@@ -16246,7 +16664,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://matadorahfx.ca/",
       "mediaUrl": "http://matadorahfx.ca/wp-content/uploads/2025/01/Matadora-Website-02-Medium.jpeg",
       "publishedAt": "2026-08-21T18:25:44.000Z",
-      "observedAt": "2026-09-03T18:58:45.162Z",
+      "observedAt": "2026-09-03T20:05:36.003Z",
       "signalMatches": {
         "live_music": [
           "show"
@@ -16280,7 +16698,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.sevenrooms.com/explore/matadora/reservations/create/search",
       "mediaUrl": null,
       "publishedAt": null,
-      "observedAt": "2026-09-03T18:58:45.393Z",
+      "observedAt": "2026-09-03T20:05:36.286Z",
       "signalMatches": {
         "reservations": [
           "reservation",
@@ -16304,8 +16722,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "e HRM for over 40 years! Scroll Top Sackville: 902-865-2226 | Mill Cove: 902-832-8882 | Dartmouth: 902-469-2226 | Bedford: 902-832-2226 | Halifax (Casino NS): 902-455-2222 Primary Menu About Order Online Sackville/Mill Cove/Dartmouth/Halifax(Inside Casino NS) Order Pickup from Sackville Dim Sum Menu Contact Us Home Welcome To May Garden Chinese Restaurant Serving the HRM for over 40 years 4 LOCATIONS IN THE HRM SA...",
       "postUrl": "https://maygarden.ca/",
       "mediaUrl": "https://maygarden.ca/wp-content/uploads/2018/12/stars-1.jpg",
-      "publishedAt": "2001-07-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:45.871Z",
+      "publishedAt": "2001-07-01T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:36.470Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -16352,8 +16770,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Menu – May Garden Chinese Restaurant Scroll Top Sackville: 902-865-2226 | Mill Cove: 902-832-8882 | Dartmouth: 902-469-2226 | Bedford: 902-832-2226 | Halifax (Casino NS): 902-455-2222 Primary Menu About Order Online Sackville/Mill Cove/Dartmouth/Halifax(Inside Casino NS) Order Pickup from Sackville Dim Sum Menu Contact Us Menu Home Menu TOP 10 / CHEFS SPECIALS Mains AUTHENTIC MENU #1 AUTHENTIC MENU #2 DIM SUM (WEE...",
       "postUrl": "https://maygarden.ca/menu-2/",
       "mediaUrl": "https://maygarden.ca/wp-content/uploads/2026/08/image-1024x663.jpg",
-      "publishedAt": "2001-07-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:46.798Z",
+      "publishedAt": "2001-07-01T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:37.912Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -16387,9 +16805,9 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "title": "May Garden Chinese - Sackville | Chinese, Canadian - Lower Sackville, Canada",
       "excerpt": "Order online for delivery or pickup at May Garden Chinese Restaurant - Sackville. We are serving delicious Chinese and Canadian food. Try our Ginger Beef, Singapore Noodles, and Curry Shrimp. We are located at 829 Sackville Dr, Lower Sackville, NS.",
       "postUrl": "https://maygardenchinese.com/",
-      "mediaUrl": "https://cdn3.didevelop.com/public/product_images/1336/180_1100f2e621699326c02c3378e00936b4.jpg",
-      "publishedAt": "2001-05-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:46.504Z",
+      "mediaUrl": "https://cdn3.didevelop.com/public/product_images/1336/180_509957bc84a0c520302d607dab7e1136.jpg",
+      "publishedAt": "2001-05-01T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:37.101Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -16433,8 +16851,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Since 1994",
       "postUrl": "https://metropizzahalifax.ca/",
       "mediaUrl": "https://img1.wsimg.com/isteam/ip/4c81de1f-3b16-41e5-bdc0-a13879e3fdcc/pizza-2.jpg",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:46.876Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:37.612Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -16462,8 +16880,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Since 1994",
       "postUrl": "https://metropizzahalifax.ca/menu",
       "mediaUrl": "https://img1.wsimg.com/isteam/ip/4c81de1f-3b16-41e5-bdc0-a13879e3fdcc/pizza-2.jpg",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:47.235Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:37.898Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -16498,7 +16916,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.foodbooking.com/ordering/restaurant/menu?restaurant_uid=a6ab5806-0d0d-4d68-8064-2890bb2d2bc0",
       "mediaUrl": null,
       "publishedAt": null,
-      "observedAt": "2026-09-03T18:58:16.794Z",
+      "observedAt": "2026-09-03T20:05:16.544Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -16521,8 +16939,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Mexicali Rosa's Halifax is located in the heart of Halifax, Nova Scotia at 222 CHAIN LAKE DRIVE . Call (902) 422-7672 for reservations.",
       "postUrl": "https://www.mexicalirosas.com/halifax/",
       "mediaUrl": "https://www.mexicalirosas.com/wp-content/uploads/2020/05/mexis_halifax_patio_bar-1024x1024.webp",
-      "publishedAt": "2001-07-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:47.434Z",
+      "publishedAt": "2001-07-01T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:37.697Z",
       "signalMatches": {
         "menu": [
           "menu",
@@ -16594,7 +17012,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.mexicalirosas.com/halifax/lunch/",
       "mediaUrl": "https://www.mexicalirosas.com/wp-content/uploads/2025/06/Menu2025-2_Page_1.webp",
       "publishedAt": "2001-07-01T03:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:18.820Z",
+      "observedAt": "2026-09-03T20:05:42.310Z",
       "signalMatches": {
         "menu": [
           "menu",
@@ -16660,8 +17078,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Moncton Dinner Menu - Mexicali Rosa’s Skip to content Our History E-Gift Cards Franchise Opportunities Contact Us Locations Our History E-Gift Cards Franchise Opportunities Contact Us Locations Mexi's Moncton 683 Main St Moncton, NB (506) 855-7672 Sunday - Thursday 11.30-10pm, Friday & Saturday 11:30-11pm Order Online Mexi’s Moncton, NB Lunch Dinner Kids Dessert Menu Drinks Menu FRANCHISE OPPORTUNITIES More Inform...",
       "postUrl": "https://www.mexicalirosas.com/moncton/dinner/",
       "mediaUrl": "https://www.mexicalirosas.com/wp-content/uploads/2026/08/Menu2026-01Atlantic.webp",
-      "publishedAt": "2001-07-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:48.641Z",
+      "publishedAt": "2001-07-01T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:40.005Z",
       "signalMatches": {
         "menu": [
           "menu",
@@ -16727,8 +17145,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Moncton Kids Menu - Mexicali Rosa’s Skip to content Our History E-Gift Cards Franchise Opportunities Contact Us Locations Our History E-Gift Cards Franchise Opportunities Contact Us Locations Mexi's Moncton 683 Main St Moncton, NB (506) 855-7672 Sunday - Thursday 11.30-10pm, Friday & Saturday 11:30-11pm Order Online Mexi’s Moncton, NB Lunch Dinner Kids Dessert Menu Drinks Menu FRANCHISE OPPORTUNITIES More Informat...",
       "postUrl": "https://www.mexicalirosas.com/moncton/kids/",
       "mediaUrl": "https://www.mexicalirosas.com/wp-content/uploads/2024/04/KidsMenu_2024.webp",
-      "publishedAt": "2001-07-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:49.075Z",
+      "publishedAt": "2001-07-01T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:40.451Z",
       "signalMatches": {
         "menu": [
           "menu",
@@ -16794,8 +17212,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Moncton Lunch Menu - Mexicali Rosa’s Skip to content Our History E-Gift Cards Franchise Opportunities Contact Us Locations Our History E-Gift Cards Franchise Opportunities Contact Us Locations Mexi's Moncton 683 Main St Moncton, NB (506) 855-7672 Sunday - Thursday 11.30-10pm, Friday & Saturday 11:30-11pm Order Online Mexi’s Moncton, NB Lunch Dinner Kids Dessert Menu Drinks Menu FRANCHISE OPPORTUNITIES More Informa...",
       "postUrl": "https://www.mexicalirosas.com/moncton/lunch/",
       "mediaUrl": "https://www.mexicalirosas.com/wp-content/uploads/2025/06/Menu2025-2_Page_1.webp",
-      "publishedAt": "2001-07-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:48.219Z",
+      "publishedAt": "2001-07-01T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:39.536Z",
       "signalMatches": {
         "menu": [
           "menu",
@@ -16862,7 +17280,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.mexicalirosas.com/quispamsis/quispamsis-dinner-menu/",
       "mediaUrl": "https://www.mexicalirosas.com/wp-content/uploads/2026/08/Menu2026-01Atlantic.webp",
       "publishedAt": "2001-07-01T03:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:17.899Z",
+      "observedAt": "2026-09-03T20:05:41.400Z",
       "signalMatches": {
         "menu": [
           "menu",
@@ -16929,7 +17347,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.mexicalirosas.com/quispamsis/quispamsis-kids-menu/",
       "mediaUrl": "https://www.mexicalirosas.com/wp-content/uploads/2024/04/KidsMenu_2024.webp",
       "publishedAt": "2001-07-01T03:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:18.363Z",
+      "observedAt": "2026-09-03T20:05:41.850Z",
       "signalMatches": {
         "menu": [
           "menu",
@@ -16996,7 +17414,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.mexicalirosas.com/quispamsis/quispamsis-lunch-menu/",
       "mediaUrl": "https://www.mexicalirosas.com/wp-content/uploads/2025/06/Menu2025-2_Page_1.webp",
       "publishedAt": "2001-07-01T03:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:16.952Z",
+      "observedAt": "2026-09-03T20:05:40.917Z",
       "signalMatches": {
         "menu": [
           "menu",
@@ -17062,8 +17480,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Experience the taste of Lebanon at Mezza, a family-owned restaurant. We offer dine-in, takeout, delivery, and catering for all occasions.",
       "postUrl": "https://www.ordermezza.com/",
       "mediaUrl": "http://static1.squarespace.com/static/6272b45a3197ec4398631b6e/t/65674d738a2e767b0705cde2/1662561391624/mezza-wraps.jpg?format=1500w",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:47.595Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:38.066Z",
       "signalMatches": {
         "specials": [
           "offer"
@@ -17109,8 +17527,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Discover Mezza",
       "postUrl": "https://www.ordermezza.com/menu",
       "mediaUrl": "http://static1.squarespace.com/static/6272b45a3197ec4398631b6e/t/6634d488d93f685e4ec80116/1653617162245/Menu.png?format=1500w",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:48.039Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:38.352Z",
       "signalMatches": {
         "live_music": [
           "show"
@@ -17151,9 +17569,9 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "title": "Mirchi Tandoor | Indian - Halifax, Canada",
       "excerpt": "Order online for delivery or pick up at Mirchi Tandoor restaurant. We are serving delicious traditional Indian food. Try our Tandoori Chicken, Lamb Curry, Aloo Gobi, Shrimp Biryani, Butter Dosa. We are located at 5232 Blowers St, Halifax, NS.",
       "postUrl": "https://mirchitandoor.com/",
-      "mediaUrl": "https://cdn3.didevelop.com/public/cdn/180_4bc4e3430649c14dec652aafd9483de2.jpg",
-      "publishedAt": "2001-05-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:48.378Z",
+      "mediaUrl": "https://cdn3.didevelop.com/public/cdn/180_03edccc137f4074ad988fd9ef247ee88.jpeg",
+      "publishedAt": "2001-05-01T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:38.368Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -17190,7 +17608,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://tables.toasttab.com/restaurants/4a83980d-4ea6-49c3-937a-d0130ac921fb/findTime",
       "mediaUrl": null,
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:16.540Z",
+      "observedAt": "2026-09-03T20:05:40.054Z",
       "signalMatches": {
         "seasonal": [
           "seasonal"
@@ -17217,8 +17635,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Online Reservations for Morris East: Downtown Halifax in Halifax, NS - Morris East has been delighting Halifax with delicious, chef-inspired pizzas and housemade pasta for over a decade. A go-to neighbourhood gem known for fresh, seasonal food, we are the perfect spot for a leisurely lunch, business meeting, cozy date night, or dinner with family.",
       "postUrl": "https://tables.toasttab.com/restaurants/4a83980d-4ea6-49c3-937a-d0130ac921fb/reserve?partySize=2&dateTime=2026-02-18T12:30:00.000-04:00",
       "mediaUrl": null,
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:50.012Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:39.568Z",
       "signalMatches": {
         "seasonal": [
           "seasonal"
@@ -17246,7 +17664,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://tables.toasttab.com/restaurants/b01c72d6-b6ac-4103-b940-5accdce3dfd0/findTime",
       "mediaUrl": null,
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:16.315Z",
+      "observedAt": "2026-09-03T20:05:39.801Z",
       "signalMatches": {
         "seasonal": [
           "seasonal"
@@ -17273,8 +17691,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Online Reservations for Morris East: Bedford in Bedford, NS - Morris East has been delighting Bedford with delicious, chef-inspired pizzas and housemade pasta for over a decade. A go-to neighbourhood gem known for fresh, seasonal food, we are the perfect spot for a leisurely lunch, business meeting, cozy date night, or dinner with family.",
       "postUrl": "https://tables.toasttab.com/restaurants/b01c72d6-b6ac-4103-b940-5accdce3dfd0/reserve?partySize=2&dateTime=2026-02-18T12:30:00.000-04:00",
       "mediaUrl": null,
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:49.486Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:38.970Z",
       "signalMatches": {
         "seasonal": [
           "seasonal"
@@ -17301,8 +17719,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Best Artisan Pizza in Halifax. Discover the finest pizza in Halifax at Morris East, where artisanal craftsmanship meets quality ingredients. Pair your meal with our innovative craft cocktails for a truly exceptional dining experience. Join us for a memorable culinary journey in the heart of the city or for catering and/or events.",
       "postUrl": "https://www.morriseast.com/",
       "mediaUrl": "http://static1.squarespace.com/static/65721b46c38d592f00580255/t/6834b134d3082910ff648008/1748283701049/ME-030.jpg?format=1500w",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:49.129Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:38.902Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -17359,8 +17777,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Explore Morris East",
       "postUrl": "https://www.morriseast.com/catering-events",
       "mediaUrl": "http://static1.squarespace.com/static/65721b46c38d592f00580255/t/6834b134d3082910ff648008/1748283701049/ME-030.jpg?format=1500w",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:50.027Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:39.486Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -17410,8 +17828,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Morris East on Quinpool Road is Halifax’s true neighborhood gem. Voted best pizza, we offer chef-inspired artisanal pizza, house-made pastas, delicious desserts, and an Italian-inspired wine list. Created by Jennie Dobbs, our warm, welcoming dining room and popular cocktail bar make every visit memorable—perfect for dinners with friends, date nights, and celebrations.",
       "postUrl": "https://www.morriseast.com/visit-us",
       "mediaUrl": "http://static1.squarespace.com/static/65721b46c38d592f00580255/t/6834b134d3082910ff648008/1748283701049/ME-030.jpg?format=1500w",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:49.812Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:39.285Z",
       "signalMatches": {
         "specials": [
           "offer"
@@ -17452,6 +17870,30 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "sourceLabel": "Reservation"
     },
     {
+      "id": "official-page-31702603cba49eb8b6",
+      "restaurantId": "osm-node-9165619005-mother-s-pizza",
+      "restaurantName": "Mother's Pizza",
+      "platform": "official_page",
+      "title": "Official page update",
+      "excerpt": "Official page update",
+      "postUrl": "https://def.uber.com/en/challenge?from_service=d2ViLWVhdHMtdjI%3D&q=MDdjYzhjMTU5OTcwZTFjMjliZDEzNTBlNjdhNDkxOGY6VmtIbHdmZmpva2t3RlA2aTo5UTh6enpBdmd1UDZJYm1Fd3cwYnNIdnRtNFByUjV4cUpzRzc3OEVEMllGeGtRS0ViS0s1b0FVUVhaaUZDWUNFZGRPU1JXRDhXaEYvazJYc2ltRDlacTFKMDhCSTJiQVAvQnBnRUR0bm1PU1BMMjN3OGJrRnN0dnJOci93QWJKcmRlZ0hRclRBb25HQU5ERlBsTDIxUW5uWGJRcU0reGxGSW15SUlLZ1ppVDdlNU9zdER3SmtJSUY4VGRMbDlwOTl0N3RXVi83cGVGMFVJUDBhVUxMZGcraVpWbkloSHdaUnFGRjJ3ZFhCMGxLOElNRGFYMmZ5RlljNzV0Q1NqK3JrSU8vQ3VNb2YzZ1ZldEk4a3ljb21wbTRxWmFZPTpQVUV4MDluS0lJbkN0YTR6cTdSeFpnPT0%3D",
+      "mediaUrl": null,
+      "publishedAt": null,
+      "observedAt": "2026-09-03T20:05:08.047Z",
+      "signalMatches": {
+        "live_music": [
+          "dj"
+        ]
+      },
+      "candidateLinks": [],
+      "sourceKind": "official_page_html",
+      "associationBasis": "official_site_linked_page",
+      "confidence": "official_source_page_signal",
+      "reviewState": "needs_date_review",
+      "discoveryReason": "first_party_ordering",
+      "sourceLabel": "Tripadvisor"
+    },
+    {
       "id": "official-page-14cf94cadd5220f486",
       "restaurantId": "osm-node-9165619005-mother-s-pizza",
       "restaurantName": "Mother's Pizza",
@@ -17461,7 +17903,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://motherspizzahalifax.ca/",
       "mediaUrl": "https://motherspizzahalifax.ca/wp-content/uploads/2020/09/h1_shape-7-1.png",
       "publishedAt": "2026-01-24T15:02:41.000Z",
-      "observedAt": "2026-09-03T18:58:49.725Z",
+      "observedAt": "2026-09-03T20:05:39.002Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -17490,7 +17932,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://motherspizzahalifax.ca/menu-restaurant/",
       "mediaUrl": "https://motherspizzahalifax.ca/menu-restaurant/%7B%7B%7Bdata.img%7D%7D%7D",
       "publishedAt": "2026-01-24T15:26:42.000Z",
-      "observedAt": "2026-09-03T18:58:52.636Z",
+      "observedAt": "2026-09-03T20:05:41.717Z",
       "signalMatches": {
         "specials": [
           "special"
@@ -17564,7 +18006,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://moxies.com/",
       "mediaUrl": "https://moxies.com/wp-content/uploads/2024/06/gift-card-white.png",
       "publishedAt": "2026-08-04T15:03:58.000Z",
-      "observedAt": "2026-09-03T18:58:50.118Z",
+      "observedAt": "2026-09-03T20:05:39.103Z",
       "signalMatches": {
         "happy_hour": [
           "happy hour"
@@ -17645,8 +18087,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Moxies Boston Seaport is the perfect venue for group bookings for your next corporate function, fundraiser, private party or special event. Get in touch with us today.",
       "postUrl": "https://moxies.com/restaurants/boston-seaport/group-bookings/",
       "mediaUrl": "https://moxies.com/wp-content/uploads/2024/06/gift-card-white.png",
-      "publishedAt": "2018-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:50.749Z",
+      "publishedAt": "2018-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:40.136Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -17729,7 +18171,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://moxies.com/restaurants/boston-seaport/menus/",
       "mediaUrl": "https://moxies.com/wp-content/uploads/2024/06/gift-card-white.png",
       "publishedAt": "2026-08-17T15:11:30.000Z",
-      "observedAt": "2026-09-03T18:58:53.079Z",
+      "observedAt": "2026-09-03T20:05:42.601Z",
       "signalMatches": {
         "happy_hour": [
           "happy hour"
@@ -17813,8 +18255,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Moxies Dallas Uptown is the perfect venue for group bookings for your next corporate function, fundraiser, private party or special event. Get in touch with us today.",
       "postUrl": "https://moxies.com/restaurants/dallas-uptown/group-bookings/",
       "mediaUrl": "https://moxies.com/wp-content/uploads/2024/06/gift-card-white.png",
-      "publishedAt": "2018-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:55.153Z",
+      "publishedAt": "2018-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:44.666Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -17900,7 +18342,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://moxies.com/restaurants/dallas-uptown/menus/",
       "mediaUrl": "https://moxies.com/wp-content/uploads/2024/06/gift-card-white.png",
       "publishedAt": "2026-07-31T17:57:08.000Z",
-      "observedAt": "2026-09-01T15:24:24.553Z",
+      "observedAt": "2026-09-03T20:05:47.061Z",
       "signalMatches": {
         "happy_hour": [
           "happy hour"
@@ -17985,7 +18427,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://moxies.com/restaurants/fort-lauderdale/group-bookings/",
       "mediaUrl": "https://moxies.com/wp-content/uploads/2024/06/gift-card-white.png",
       "publishedAt": "2018-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:27.052Z",
+      "observedAt": "2026-09-03T20:05:49.265Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -18071,7 +18513,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://moxies.com/restaurants/fort-lauderdale/menus/",
       "mediaUrl": "https://moxies.com/wp-content/uploads/2024/06/gift-card-white.png",
       "publishedAt": "2026-08-19T17:17:56.000Z",
-      "observedAt": "2026-09-01T15:24:29.120Z",
+      "observedAt": "2026-09-03T20:05:51.629Z",
       "signalMatches": {
         "happy_hour": [
           "happy hour"
@@ -18155,8 +18597,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "New wing wah Restaurant new wing wah Take Out:902-475-2828 347 Herring Cove Rd Halifax, NS B3R 1V5 New Wing Wah Recommended Restaurant Guru 2019 Home Contact Menu 中文菜單 *BUFFET IS DISCONTINUED* Close for vocation Aug 26 - Sep 2 Our TOP combos Great Chinese Food Dinner Buffet Fri, Sat & Sun 4:30 pm ~ 8:00 pm Business Hour Monday Closed Tuesday - Sunday 3:00 pm to 8:30 pm Prices subject to change on holidays and spec...",
       "postUrl": "https://newwingwah.ca/",
       "mediaUrl": "https://newwingwah.ca/images/ban1.jpg",
-      "publishedAt": "2001-08-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:50.609Z",
+      "publishedAt": "2001-08-01T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:40.052Z",
       "signalMatches": {
         "specials": [
           "special"
@@ -18194,8 +18636,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "New wing wah Restaurant - Menu new wing wah Take Out:902-475-2828 347 Herring Cove Rd Halifax, NS B3R 1V5 New Wing Wah Recommended Restaurant Guru 2019 Home Contact Menu 中文菜單 *BUFFET IS DISCONTINUED* Close for vocation Aug 26 - Sep 2 Appetizer Soups Chicken Dishes Beef Dishes Pork Dishes Seafood Dishes Vegetable Dishes Fried Rice Noodles Egg Foo Young Chef’s Specials Canadian Cuisine Combination Plates Set Dinner...",
       "postUrl": "https://newwingwah.ca/menu.html",
       "mediaUrl": "https://newwingwah.ca/images/showbg1.jpg",
-      "publishedAt": "2001-08-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:52.797Z",
+      "publishedAt": "2001-08-01T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:40.718Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -18234,8 +18676,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "New wing wah Restaurant - Menu new wing wah Take Out:902-475-2828 347 Herring Cove Rd Halifax, NS B3R 1V5 New Wing Wah Recommended Restaurant Guru 2019 Home Contact Menu 中文菜單 *BUFFET IS DISCONTINUED* Close for vocation Aug 26 - Sep 2 頭盤類 Appetizer 湯類 Soups 海鮮類 Seafood 雞鴨類 Chicken & Duck 牛肉類 Beef 豬肉類 Pork 素菜類 Vegetable & Bean Curd 飯面類 Fried Rice & Noodle A1 素春卷 Vegetable Spring Roll A2 炸餛飩 Deep Fried Wonton A3 鍋貼 F...",
       "postUrl": "https://newwingwah.ca/menucn.html",
       "mediaUrl": "https://newwingwah.ca/images/showbg1.jpg",
-      "publishedAt": "2001-08-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:53.004Z",
+      "publishedAt": "2001-08-01T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:40.935Z",
       "signalMatches": {
         "specials": [
           "special"
@@ -18274,7 +18716,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://nogginsfarm.ca/farm-markets/coburg-market/",
       "mediaUrl": "https://nogginsfarm.ca/wp-content/uploads/2024/08/IMG_5691-scaled.jpg",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:17.031Z",
+      "observedAt": "2026-09-03T20:05:40.283Z",
       "signalMatches": {
         "specials": [
           "offer"
@@ -18313,7 +18755,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://orsopub.ca/",
       "mediaUrl": "https://orsopub.ca/wp-content/uploads/2026/05/orso-specials-2026specials-apps.jpg",
       "publishedAt": null,
-      "observedAt": "2026-09-03T18:58:51.702Z",
+      "observedAt": "2026-09-03T20:05:40.569Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -18371,7 +18813,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://orsopub.ca/drinks-menu/",
       "mediaUrl": "https://orsopub.ca/wp-content/themes/orso/assets/img/all/foot-001%20(1).jpg",
       "publishedAt": null,
-      "observedAt": "2026-09-03T18:58:55.859Z",
+      "observedAt": "2026-09-03T20:05:43.168Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -18411,7 +18853,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://orsopub.ca/full-menu/",
       "mediaUrl": "https://orsopub.ca/wp-content/themes/orso/assets/img/all/foot-001%20(1).jpg",
       "publishedAt": null,
-      "observedAt": "2026-09-03T18:58:55.122Z",
+      "observedAt": "2026-09-03T20:05:42.682Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -18451,7 +18893,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://orsopub.ca/reservation/",
       "mediaUrl": "https://orsopub.ca/wp-content/themes/orso/assets/img/background/theme-form-back.png",
       "publishedAt": null,
-      "observedAt": "2026-09-03T18:58:53.944Z",
+      "observedAt": "2026-09-03T20:05:42.004Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -18490,8 +18932,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Browse locations in Halifax",
       "postUrl": "https://locations.osmows.com/ca/ns/halifax",
       "mediaUrl": "https://dyn.mktgcdn.com/p/f2MsH8GUIFKAE17lt_2wM3S8hoeG4PqDeCqWgF7p0yA/width=500,height=167",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:53.205Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:41.151Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -18532,7 +18974,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://osmows.com/fr/menu",
       "mediaUrl": "https://framerusercontent.com/images/XCjhex92g3ZCWfSeZP9Ezt8CVk.png",
       "publishedAt": null,
-      "observedAt": "2026-09-03T18:58:53.975Z",
+      "observedAt": "2026-09-03T20:05:41.563Z",
       "signalMatches": {
         "specials": [
           "special"
@@ -18567,8 +19009,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Order from Papa Johns Portland Street for the best takeout and food delivery in Dartmouth. Order online, visit or call for pizza, wings, sides and more!",
       "postUrl": "https://locations.papajohns.com/canada/ns/b2w-6c4/dartmouth/644-portland-street",
       "mediaUrl": "https://a.mktgcdn.com/p/PKQuF1R1Hyhyzo1d0GQ6MgdakYL9Y7R3r_aSUi3mZwE/2048x2048.jpg",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:54.172Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:41.752Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -18639,7 +19081,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.papajohns.com/promotional-offers",
       "mediaUrl": null,
       "publishedAt": null,
-      "observedAt": "2026-09-01T15:24:19.616Z",
+      "observedAt": "2026-09-03T20:05:42.802Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -18715,7 +19157,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.papajohns.com/specials/",
       "mediaUrl": "https://www.papajohns.com/specials/img/mobile.jpg",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:20.281Z",
+      "observedAt": "2026-09-03T20:05:43.036Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -18786,7 +19228,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.rcr.ca/restaurants/cable-wharf-kitchen-patio/",
       "mediaUrl": "https://www.rcr.ca/content/uploads/2023/04/cable-wharf-kitchen-patio-4-1920x1006.jpg",
       "publishedAt": "2026-07-15T18:57:22.000Z",
-      "observedAt": "2026-09-03T18:58:13.587Z",
+      "observedAt": "2026-09-03T20:05:15.593Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -18838,7 +19280,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.rcr.ca/restaurants/pazzo-italian-ristorante/",
       "mediaUrl": "https://www.rcr.ca/content/uploads/2023/08/pazzo-italian-ristorante-1920x1006.jpg",
       "publishedAt": "2026-09-02T21:56:31.000Z",
-      "observedAt": "2026-09-03T18:58:13.321Z",
+      "observedAt": "2026-09-03T20:05:15.293Z",
       "signalMatches": {
         "happy_hour": [
           "happy hour"
@@ -18891,7 +19333,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.peterspizzeriahfx.com/",
       "mediaUrl": "https://static.wixstatic.com/media/373814_b53408bc2a854106bf5246c834de3c7c%7Emv2.png/v1/fit/w_2500,h_1330,al_c/373814_b53408bc2a854106bf5246c834de3c7c%7Emv2.png",
       "publishedAt": "2500-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:54.583Z",
+      "observedAt": "2026-09-03T20:05:42.134Z",
       "signalMatches": {
         "specials": [
           "offer",
@@ -18937,7 +19379,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.peterspizzeriahfx.com/menu-1",
       "mediaUrl": "https://static.wixstatic.com/media/373814_b53408bc2a854106bf5246c834de3c7c~mv2.png/v1/fit/w_2500,h_1330,al_c/373814_b53408bc2a854106bf5246c834de3c7c~mv2.png",
       "publishedAt": "2500-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:54.929Z",
+      "observedAt": "2026-09-03T20:05:42.447Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -19005,11 +19447,11 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "restaurantName": "Peter's Pizzeria",
       "platform": "official_page",
       "title": "Order Online | Peters Pizzeria",
-      "excerpt": "--> Order Online | Peters Pizzeria top of page Home Location & Hours Menu Order Online More Use tab to navigate through the menu items. Log In Inglis Street Online Ordering You can order online! Browse our menu items and choose what you’d like to order from us. Accepting Orders Delivery fee - C$0.00 Min. order - C$10.00 Free delivery above Pickup Delivery Dine-In Delivery time: Up to 70 minutes Change Delivery Add...",
+      "excerpt": "--> Order Online | Peters Pizzeria top of page Home Location & Hours Menu Order Online More Use tab to navigate through the menu items. Log In Inglis Street Online Ordering You can order online! Browse our menu items and choose what you’d like to order from us. Not Accepting Orders Delivery fee - Min. order - C$0.00 Free delivery above Pickup Delivery Dine-In ​ Change Pickup Address: 5391 Inglis Street, Halifax NS...",
       "postUrl": "https://www.peterspizzeriahfx.com/online-ordering",
       "mediaUrl": "https://static.wixstatic.com/media/373814_b53408bc2a854106bf5246c834de3c7c%7Emv2.png/v1/fit/w_2500,h_1330,al_c/373814_b53408bc2a854106bf5246c834de3c7c%7Emv2.png",
       "publishedAt": "2500-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:55.108Z",
+      "observedAt": "2026-09-03T20:05:42.651Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -19050,7 +19492,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.peterspizzeriahfx.com/order-online",
       "mediaUrl": "https://static.wixstatic.com/media/373814_b53408bc2a854106bf5246c834de3c7c%7Emv2.png/v1/fit/w_2500,h_1330,al_c/373814_b53408bc2a854106bf5246c834de3c7c%7Emv2.png",
       "publishedAt": "2500-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:55.287Z",
+      "observedAt": "2026-09-03T20:05:42.849Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -19086,8 +19528,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "sday CLOSED Thursday 9:00 - 24:00 Friday 9:00 - 02:00 Saturday 9:00 - 02:00 Sunday 9:00 - 02:00 Follow Us PG Cafe & Grill (902) 429-8806 The best place for fantastic food. See Our Menu ABOUT PG Cafe… Since 1991—when it was one of the pillars of Halifax Scotia Square Mall’s food court — PG’s has served up the home-cooked flavor. We believe in “we are what we eat”, and would love to share our fresh and healthy ingre...",
       "postUrl": "https://pgcafeandgrill.com/",
       "mediaUrl": "https://pgcafeandgrill.com/wp-content/uploads/2019/05/PG1.jpg",
-      "publishedAt": "2003-06-06T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:55.186Z",
+      "publishedAt": "2003-06-06T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:42.368Z",
       "signalMatches": {
         "specials": [
           "deal",
@@ -19124,8 +19566,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Discover the ins and outs of the 3-5-2 soccer formation, including its structure, advantages, and training tips for mastering this tactical approach.",
       "postUrl": "https://phohoangminh.ca/",
       "mediaUrl": "https://phohoangminh.ca/wp-content/uploads/featured-image-player-responsibilities-in-the-3-5-2-formation-discipline-structural-integrity.webp",
-      "publishedAt": "2001-06-08T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:55.451Z",
+      "publishedAt": "2001-06-08T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:42.385Z",
       "signalMatches": {
         "specials": [
           "deal",
@@ -19166,8 +19608,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "View and manage your profile information.",
       "postUrl": "https://dal.mydininghub.ca/en/account?section=my-menu",
       "mediaUrl": null,
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:09.198Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:10.779Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -19203,8 +19645,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Enjoy delicious meals, coffee, snacks, and more at these dining locations.",
       "postUrl": "https://dal.mydininghub.ca/en/locations",
       "mediaUrl": null,
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:09.364Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:09.499Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -19228,8 +19670,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "associationBasis": "official_site_linked_page",
       "confidence": "official_source_page_signal",
       "reviewState": "source_signal",
-      "discoveryReason": "first_party_menu",
-      "sourceLabel": "Locations & Menus"
+      "discoveryReason": "official_homepage",
+      "sourceLabel": "Official website"
     },
     {
       "id": "official-page-07a0af96e3b30bfd3b",
@@ -19241,7 +19683,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://pzzaco.ca/",
       "mediaUrl": "https://pzzaco.ca/wp-content/uploads/2025/02/banner_01_1920x808-2025.jpg",
       "publishedAt": "2026-03-06T16:23:04.000Z",
-      "observedAt": "2026-09-03T18:58:56.423Z",
+      "observedAt": "2026-09-03T20:05:43.333Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -19286,7 +19728,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://pzzaco.ca/specials/",
       "mediaUrl": "https://pzzaco.ca/wp-content/uploads/2022/11/small_pizza_1bottle_nov_2022.jpg",
       "publishedAt": "2022-11-08T15:46:00.000Z",
-      "observedAt": "2026-09-03T18:59:01.056Z",
+      "observedAt": "2026-09-03T20:05:48.065Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -19328,7 +19770,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://pzzaco.ca/specialty-pizzas/",
       "mediaUrl": "https://pzzaco.ca/wp-content/uploads/2019/11/gardino_fresco_pizza_500_2018-1.jpg",
       "publishedAt": "2022-11-01T23:39:07.000Z",
-      "observedAt": "2026-09-03T18:58:58.969Z",
+      "observedAt": "2026-09-03T20:05:45.900Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -19369,7 +19811,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.rcr.ca/restaurants/cable-wharf-kitchen-patio/",
       "mediaUrl": "https://www.rcr.ca/content/uploads/2023/04/cable-wharf-kitchen-patio-4-1920x1006.jpg",
       "publishedAt": "2026-07-15T18:57:22.000Z",
-      "observedAt": "2026-09-03T18:58:14.148Z",
+      "observedAt": "2026-09-03T20:05:16.176Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -19421,7 +19863,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.rcr.ca/restaurants/public-cafe-bakery-bar/",
       "mediaUrl": "https://www.rcr.ca/content/uploads/2025/10/Public-RCR-1920x1006.jpg",
       "publishedAt": "2026-08-24T15:19:51.000Z",
-      "observedAt": "2026-09-03T18:58:13.838Z",
+      "observedAt": "2026-09-03T20:05:15.881Z",
       "signalMatches": {
         "happy_hour": [
           "happy hour"
@@ -19474,8 +19916,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Real Fake Meats Menus Order Online Now! (Local Pickup & Delivery) CONTACT About Us Gift Cards New RFM Merch! Menus Order Online Now! (Local Pickup & Delivery) CONTACT About Us Gift Cards New RFM Merch! HALIFAX’S FIRST VEGAN BUTCHER SHOP FOLLOW US ON INSTAGRAM Back To Top Cart ( 0 )",
       "postUrl": "https://www.realfakemeats.com/",
       "mediaUrl": "http://static1.squarespace.com/static/5aba805412b13f27716a7d1a/t/5ae16ab60e2e72a5565b4684/1524722360107/RFM-StandAlone-White.png?format=1500w",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:57.353Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:43.915Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -19503,8 +19945,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Menus &mdash; Real Fake Meats Menus Order Online Now! (Local Pickup & Delivery) CONTACT About Us Gift Cards New RFM Merch! Menus Order Online Now! (Local Pickup & Delivery) CONTACT About Us Gift Cards New RFM Merch! Back To Top Cart ( 0 )",
       "postUrl": "https://www.realfakemeats.com/menurfm",
       "mediaUrl": "https://images.squarespace-cdn.com/content/v1/5aba805412b13f27716a7d1a/1524722358596-CAIJURSXM9WDVV5R6QBS/RFM-StandAlone-White.png?format=1500w",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:57.658Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:44.191Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -19532,8 +19974,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "BENVENUTI RISTORANTE AMANO BRINGS THE WARMTH & TASTE OF A NEIGHBOURHOOD ITALIAN TRATTORIA TO THE HALIFAX WATERFRONT. A PRESTO!",
       "postUrl": "https://www.ristoranteamano.ca/",
       "mediaUrl": "http://www.ristoranteamano.ca/wp-content/uploads/2018/12/screen-pattern.png",
-      "publishedAt": "2019-05-06T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:57.976Z",
+      "publishedAt": "2019-05-06T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:44.209Z",
       "signalMatches": {
         "reservations": [
           "reservation",
@@ -19562,8 +20004,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "MAKE A RESERVATION Find A Table SevenroomsWidget.init({ venueId: \"ristoranteamano\", triggerId: \"sr-res-root\", // id of the dom element that will trigger this widget type: \"reservations\", // either 'reservations' or 'waitlist' or 'events'",
       "postUrl": "https://www.ristoranteamano.ca/reservations/",
       "mediaUrl": "http://bertossigroup.com/in-the-news/Best-of-Halifax-Generic-Gold.png",
-      "publishedAt": "2019-05-06T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:58.529Z",
+      "publishedAt": "2019-05-06T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:46.100Z",
       "signalMatches": {
         "events": [
           "event",
@@ -19596,8 +20038,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "JOIN US FOR THE BEST TASTING PIZZA IN TOWN",
       "postUrl": "https://rushhourpizza.ca/",
       "mediaUrl": "https://img1.wsimg.com/isteam/stock/2995",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:58.185Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:44.700Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -19629,8 +20071,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Discover amazing pizza specials at Rush Hour Pizza! Enjoy daily specials, donair offers, and unbeatable pizza deals for every taste.",
       "postUrl": "https://rushhourpizza.ca/specials",
       "mediaUrl": "https://img1.wsimg.com/isteam/stock/2995",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:58.509Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:44.998Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -19664,7 +20106,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.sajhouse.ca/",
       "mediaUrl": "https://sajhouse.ca/images/og/sajhouse-og.png",
       "publishedAt": "2001-06-07T03:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:21.111Z",
+      "observedAt": "2026-09-03T20:05:44.901Z",
       "signalMatches": {
         "specials": [
           "deal",
@@ -19702,7 +20144,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.salvatorespizza.ca/",
       "mediaUrl": "https://salvatorespizza.ca/wp-content/uploads/2016/11/cards.png",
       "publishedAt": null,
-      "observedAt": "2026-09-03T18:58:58.872Z",
+      "observedAt": "2026-09-03T20:05:44.931Z",
       "signalMatches": {
         "specials": [
           "offer"
@@ -19730,8 +20172,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Sea Smoke 0 Skip to Content Home Menu Gift Cards Contact Reservations Open Menu Close Menu Home Menu Gift Cards Contact Reservations Open Menu Close Menu Home Menu Gift Cards Contact Reservations Slide 1 Slide 1 (current slide) Slide 2 Slide 2 (current slide) Slide 3 Slide 3 (current slide) Slide 4 Slide 4 (current slide) Slide 5 Slide 5 (current slide) Slide 6 Slide 6 (current slide) Slide 7 Slide 7 (current slid...",
       "postUrl": "https://www.seasmokehalifax.com/",
       "mediaUrl": "https://images.squarespace-cdn.com/content/v1/602810f8c8fe0a7f210814fd/a3311d92-e754-4a61-a833-ed7d310e4dd6/4B2A2753.jpg",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:58.991Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:44.950Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -19767,8 +20209,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Menu &mdash; Sea Smoke 0 Skip to Content Home Menu Gift Cards Contact Reservations Open Menu Close Menu Home Menu Gift Cards Contact Reservations Open Menu Close Menu Home Menu Gift Cards Contact Reservations MENUS Our chefs bring decades of culinary experience to the table, serving fresh, delicious seafood in creative preparations that will delight your senses. From our oyster bar you'll find find fresh, local fa...",
       "postUrl": "https://www.seasmokehalifax.com/menu",
       "mediaUrl": "https://images.squarespace-cdn.com/content/v1/602810f8c8fe0a7f210814fd/36896399-ceea-431a-b9e6-67c115ae8b4e/4B2A3719.jpg",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:59.279Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:45.384Z",
       "signalMatches": {
         "specials": [
           "offer"
@@ -19809,8 +20251,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Reservations &mdash; Sea Smoke 0 Skip to Content Home Menu Gift Cards Contact Reservations Open Menu Close Menu Home Menu Gift Cards Contact Reservations Open Menu Close Menu Home Menu Gift Cards Contact Reservations For a Reservation of 4 persons or Less, Please Use the Link Below For Reservations of 5 or More, Please Call Us At (902) 406-1051 For Reservations of 20 or More, Please Email suzanne@beyondhospitality...",
       "postUrl": "https://www.seasmokehalifax.com/reservations",
       "mediaUrl": null,
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:59.457Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:45.583Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -19846,8 +20288,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Home",
       "postUrl": "https://www.seaportsocialhalifax.com/",
       "mediaUrl": "https://www.seaportsocialhalifax.com/resourcefiles/homeimages/small-charcuterie.jpg?version=8142026051329",
-      "publishedAt": "2001-08-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:59.000Z",
+      "publishedAt": "2001-08-01T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:45.167Z",
       "signalMatches": {
         "happy_hour": [
           "happy hour"
@@ -19903,8 +20345,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Our Menus",
       "postUrl": "https://www.seaportsocialhalifax.com/our-menus",
       "mediaUrl": "https://www.seaportsocialhalifax.com/resourcefiles/homeimages/small-charcuterie.jpg?version=8142026051329",
-      "publishedAt": "2001-08-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:59.495Z",
+      "publishedAt": "2001-08-01T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:45.747Z",
       "signalMatches": {
         "happy_hour": [
           "happy hour"
@@ -19956,8 +20398,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Specials",
       "postUrl": "https://www.seaportsocialhalifax.com/specials",
       "mediaUrl": "https://www.seaportsocialhalifax.com/resourcefiles/mainimages/specials.png?version=8142026051329",
-      "publishedAt": "2001-08-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:59.717Z",
+      "publishedAt": "2001-08-01T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:45.949Z",
       "signalMatches": {
         "happy_hour": [
           "happy hour"
@@ -20003,7 +20445,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://secondcup.com/en/location/bayers-lake/",
       "mediaUrl": null,
       "publishedAt": "2026-02-13T20:25:43.000Z",
-      "observedAt": "2026-09-03T18:58:59.632Z",
+      "observedAt": "2026-09-03T20:05:45.555Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -20081,7 +20523,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://secondcup.com/en/menu/beverages/",
       "mediaUrl": "https://secondcup.com/wp-content/uploads/2024/05/Second-Cup_SPRINGSUMMER2024_MOBILE_BANNER_768x960_EN-03-updated.jpg",
       "publishedAt": "2024-12-03T16:09:07.000Z",
-      "observedAt": "2026-09-03T18:59:01.175Z",
+      "observedAt": "2026-09-03T20:05:46.013Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -20159,7 +20601,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://secondcup.com/en/menu/beverages/brewed-coffees-and-teas/",
       "mediaUrl": "https://secondcup.com/wp-content/uploads/2021/10/STRAWBERRY.jpg",
       "publishedAt": "2025-02-27T16:25:44.000Z",
-      "observedAt": "2026-09-01T15:24:22.596Z",
+      "observedAt": "2026-09-03T20:05:46.890Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -20237,7 +20679,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://secondcup.com/en/menu/beverages/cold-infusions/",
       "mediaUrl": "https://secondcup.com/wp-content/uploads/2023/04/SECOND-CUP-SPRING2023-Mobile-Infuzer-FR.jpg",
       "publishedAt": "2024-12-03T16:11:24.000Z",
-      "observedAt": "2026-09-03T18:59:05.078Z",
+      "observedAt": "2026-09-03T20:05:46.716Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -20315,7 +20757,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://secondcup.com/en/menu/beverages/hot-chocolates/",
       "mediaUrl": "https://secondcup.com/wp-content/uploads/2022/04/Hot-Chocolate.jpg",
       "publishedAt": "2025-02-27T16:37:15.000Z",
-      "observedAt": "2026-09-01T15:24:22.945Z",
+      "observedAt": "2026-09-03T20:05:49.415Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -20393,7 +20835,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://secondcup.com/en/menu/beverages/ice-mixes/",
       "mediaUrl": "https://secondcup.com/wp-content/uploads/2022/04/Spring2022_IcedTeas_WebBanner_E.jpg",
       "publishedAt": "2025-02-27T16:27:13.000Z",
-      "observedAt": "2026-09-03T18:59:03.825Z",
+      "observedAt": "2026-09-03T20:05:46.533Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -20471,7 +20913,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://secondcup.com/en/menu/beverages/latte-teas/",
       "mediaUrl": "https://secondcup.com/wp-content/uploads/2022/04/Vanilla-Tea-Latte.jpg",
       "publishedAt": "2025-02-27T16:27:37.000Z",
-      "observedAt": "2026-09-01T15:24:22.772Z",
+      "observedAt": "2026-09-03T20:05:48.198Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -20549,7 +20991,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://secondcup.com/en/menu/beverages/lattes-and-espressos/",
       "mediaUrl": "https://secondcup.com/wp-content/uploads/2022/04/Espresso-Frappe.jpg",
       "publishedAt": "2025-02-27T16:38:02.000Z",
-      "observedAt": "2026-09-03T18:59:01.365Z",
+      "observedAt": "2026-09-03T20:05:46.182Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -20627,7 +21069,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://secondcup.com/en/menu/beverages/on-ice/",
       "mediaUrl": "https://secondcup.com/wp-content/uploads/2022/08/Fall2022_webbanner_mobile_PumpkinSpice_E.jpg",
       "publishedAt": "2026-04-01T15:11:15.000Z",
-      "observedAt": "2026-09-03T18:59:02.589Z",
+      "observedAt": "2026-09-03T20:05:46.354Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -20705,7 +21147,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://secondcup.com/en/menu/smoothies/",
       "mediaUrl": "https://secondcup.com/wp-content/uploads/2024/01/SC_WEBSITE_Smoothies.jpg",
       "publishedAt": "2026-06-02T13:53:40.000Z",
-      "observedAt": "2026-09-01T15:24:24.023Z",
+      "observedAt": "2026-09-03T20:05:50.660Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -20783,7 +21225,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.rcr.ca/restaurants/cable-wharf-kitchen-patio/",
       "mediaUrl": "https://www.rcr.ca/content/uploads/2023/04/cable-wharf-kitchen-patio-4-1920x1006.jpg",
       "publishedAt": "2026-07-15T18:57:22.000Z",
-      "observedAt": "2026-09-03T18:58:14.738Z",
+      "observedAt": "2026-09-03T20:05:16.771Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -20835,7 +21277,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.rcr.ca/restaurants/shuck-seafood-raw-bar/",
       "mediaUrl": "https://www.rcr.ca/content/uploads/2018/02/shuck-1995-1920x1006.jpg",
       "publishedAt": "2026-07-21T19:23:27.000Z",
-      "observedAt": "2026-09-03T18:58:14.397Z",
+      "observedAt": "2026-09-03T20:05:16.470Z",
       "signalMatches": {
         "happy_hour": [
           "happy hour"
@@ -20886,8 +21328,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Sicilian Pizza is the Pizza Corner ORIGINAL. Serving Halifax the best pizza, donairs, wings and subs for over 30 years. 3 Locations to Server You (Pizza Corner, Quinpool Rd & Titus St)",
       "postUrl": "http://www.sicilian.ca/",
       "mediaUrl": "http://www.sicilian.ca/images/2024/2024-Homepage-1.jpg",
-      "publishedAt": "2001-08-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:59:00.128Z",
+      "publishedAt": "2001-08-01T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:45.917Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -20958,7 +21400,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "http://www.sicilian.ca/menu_calzone.php",
       "mediaUrl": "http://www.sicilian.ca/images/text-03.gif",
       "publishedAt": "2001-08-01T03:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:24.345Z",
+      "observedAt": "2026-09-03T20:05:48.483Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -21028,7 +21470,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "http://www.sicilian.ca/menu_create.php",
       "mediaUrl": "http://www.sicilian.ca/images/text-03.gif",
       "publishedAt": "2001-08-01T03:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:23.782Z",
+      "observedAt": "2026-09-03T20:05:47.917Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -21101,7 +21543,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "http://www.sicilian.ca/menu_donair.php",
       "mediaUrl": "http://www.sicilian.ca/images/text-03.gif",
       "publishedAt": "2001-08-01T03:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:24.623Z",
+      "observedAt": "2026-09-03T20:05:48.766Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -21169,8 +21611,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Sicilian Pizza Donairs & Subs is famous for our cheesy, baked garlic fingers in Halifax. These are served with your favorite tangy sauces and dips.",
       "postUrl": "http://www.sicilian.ca/menu_garlicfingers.php",
       "mediaUrl": "http://www.sicilian.ca/images/text-03.gif",
-      "publishedAt": "2001-08-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:59:04.610Z",
+      "publishedAt": "2001-08-01T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:47.633Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -21239,8 +21681,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Try ourtasty fries & authentic Poutine, made with real cheese curds and gravy. We serve our customers authentic and delicious best fries and poutine in Halifax.",
       "postUrl": "http://www.sicilian.ca/menu_poutine.php",
       "mediaUrl": "http://www.sicilian.ca/images/text-03.gif",
-      "publishedAt": "2001-08-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:59:02.278Z",
+      "publishedAt": "2001-08-01T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:47.062Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -21308,8 +21750,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Sicilian Pizza Donairs & Subs has the best gourmet appetizers and salads in Halifax.",
       "postUrl": "http://www.sicilian.ca/menu_salads.php",
       "mediaUrl": "http://www.sicilian.ca/images/text-03.gif",
-      "publishedAt": "2001-08-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:59:01.389Z",
+      "publishedAt": "2001-08-01T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:46.766Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -21382,7 +21824,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "http://www.sicilian.ca/menu_specialty.php",
       "mediaUrl": "http://www.sicilian.ca/images/text-03.gif",
       "publishedAt": "2001-08-01T03:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:24.059Z",
+      "observedAt": "2026-09-03T20:05:48.199Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -21454,8 +21896,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Chicken Wings are one of our most popular meals. Enjoy the juiciest and most delicious wings in Halifax.",
       "postUrl": "http://www.sicilian.ca/menu_wings.php",
       "mediaUrl": "http://www.sicilian.ca/images/text-03.gif",
-      "publishedAt": "2001-08-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:59:03.539Z",
+      "publishedAt": "2001-08-01T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:47.350Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -21523,8 +21965,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Menu | Sicilian Pizza Sicilian Pizza Donairs & Subs - The Official Pizza Corner® MENU MENU SALADS & APPETIZERS FRIES & POUTINE WINGS GARLIC FINGERS CREATE YOUR OWN PIZZA SPECIALTY PIZZA CALZONES DONAIRS SUBS DRINKS CATERING SPECIALS LOCATIONS CONTACT ORDER ONLINE Home of the BIG Slice &reg; --> The Official Pizza Corner ® Sicilian Pizza on Facebook Sicilian Pizza on Twitter ORDER ONLINE NOW! Call us today (902) 45...",
       "postUrl": "http://www.sicilian.ca/menu.php",
       "mediaUrl": "http://www.sicilian.ca/images/text-03.gif",
-      "publishedAt": "2001-08-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:59:00.776Z",
+      "publishedAt": "2001-08-01T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:46.483Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -21593,7 +22035,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://skettiandballco.ca/",
       "mediaUrl": "https://skettiandballco.ca/wp-content/uploads/2023/10/SkettiBallCo_Social_1200x630.jpg",
       "publishedAt": "2026-04-21T20:05:28.000Z",
-      "observedAt": "2026-09-03T18:59:00.453Z",
+      "observedAt": "2026-09-03T20:05:46.130Z",
       "signalMatches": {
         "events": [
           "event",
@@ -21634,7 +22076,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://smokehousebrewery.ca/",
       "mediaUrl": "https://smokehousebrewery.ca/wp-content/uploads/2026/02/smokehousebrewery-wildcatblonde.png",
       "publishedAt": "2026-06-03T17:09:29.000Z",
-      "observedAt": "2026-09-03T18:59:03.030Z",
+      "observedAt": "2026-09-03T20:05:46.548Z",
       "signalMatches": {
         "events": [
           "event",
@@ -21679,7 +22121,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://smokehousebrewery.ca/taproom/taproom-events/",
       "mediaUrl": "https://smokehousebrewery.ca/wp-content/uploads/2026/02/smokehouse-brewery03.webp",
       "publishedAt": "2026-09-03T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:59:04.226Z",
+      "observedAt": "2026-09-03T20:05:47.782Z",
       "signalMatches": {
         "events": [
           "event",
@@ -21754,8 +22196,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Springhouse offers plant-based meal subscriptions with weekly delivery in the Halifax area, as well as small event catering.",
       "postUrl": "https://www.eatspringhouse.com/",
       "mediaUrl": "https://www.eatspringhouse.com/uploads/b/0f4cbd30-c178-11ea-ad1b-c9c4b503134c/Bruschetta.JPG",
-      "publishedAt": "+181819-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:59:03.176Z",
+      "publishedAt": "+181819-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:48.257Z",
       "signalMatches": {
         "specials": [
           "offer",
@@ -21783,7 +22225,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://locations.stlouiswings.com/ns-dartmouth-2201",
       "mediaUrl": "https://www.stlouiswings.com/wp-content/uploads/2026/07/Wingsanity-2026-Home-Page-Banner_Banner-scaled-1.png",
       "publishedAt": "2048-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:59:04.186Z",
+      "observedAt": "2026-09-03T20:05:48.981Z",
       "signalMatches": {
         "happy_hour": [
           "happy hour"
@@ -21821,11 +22263,11 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "restaurantName": "St. Louis Bar & Grill",
       "platform": "official_page",
       "title": "Select Store - St. Louis Bar & Grill",
-      "excerpt": "ect Location STORE DETAILS Find Nearby Locations Find Nearby Locations Search radius 10 km 25 km 50 km 100 km 200 km 500 km Results 25 50 75 100 My St. Louis Select Location --> X Menu Find Us Franchising Gift Cards Order Now Order Now Order Now --> SELECT PROVINCE Alberta Manitoba New Brunswick Nova Scotia Ontario PEI SELECT A CITY SELECT LOCATION Continue APP ON TAP ST. LOUIS REWARDS FOR TAKE OUT AND DELIVERY Ea...",
+      "excerpt": "ect Location STORE DETAILS Find Nearby Locations Find Nearby Locations Search radius 10 km 25 km 50 km 100 km 200 km 500 km Results 25 50 75 100 My St. Louis Select Location --> X Menu Find Us Franchising Gift Cards Order Now Order Now SELECT PROVINCE Alberta Manitoba New Brunswick Nova Scotia Ontario PEI SELECT A CITY SELECT LOCATION Continue APP ON TAP ST. LOUIS REWARDS FOR TAKE OUT AND DELIVERY Earn points on e...",
       "postUrl": "https://www.stlouiswings.com/select-store/",
       "mediaUrl": "https://www.stlouiswings.com/wp-content/uploads/2018/01/images/cross-icon.png",
       "publishedAt": "2026-07-28T08:47:42.000Z",
-      "observedAt": "2026-09-01T15:24:23.932Z",
+      "observedAt": "2026-09-03T20:05:49.050Z",
       "signalMatches": {
         "specials": [
           "deal",
@@ -21859,8 +22301,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "View and manage your profile information.",
       "postUrl": "https://dal.mydininghub.ca/en/account?section=my-menu",
       "mediaUrl": null,
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:09.537Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:11.093Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -21896,8 +22338,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Enjoy delicious meals, coffee, snacks, and more at these dining locations.",
       "postUrl": "https://dal.mydininghub.ca/en/locations",
       "mediaUrl": null,
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:09.704Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:09.723Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -21921,8 +22363,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "associationBasis": "official_site_linked_page",
       "confidence": "official_source_page_signal",
       "reviewState": "source_signal",
-      "discoveryReason": "first_party_menu",
-      "sourceLabel": "Locations & Menus"
+      "discoveryReason": "official_homepage",
+      "sourceLabel": "Official website"
     },
     {
       "id": "official-page-b91b94f659aa3dcbd1",
@@ -21933,8 +22375,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Starbucks Coffee Company Skip to main content Menu Rewards Gift Cards Find a café Sign in Join now Menu Rewards Gift Cards Sign in Join now Find a café Account Card management My Rewards History Personal info Payment methods Privacy and data Settings Sign out It's a great day for coffee Start an order PSL season is here Our 2026 pumpkin menu has landed. Enjoy the one-and-only Pumpkin Spice Latte, tasty new drinks...",
       "postUrl": "https://www.starbucks.ca/",
       "mediaUrl": "https://content-prod-live.cert.starbucks.com/binary/v2/asset/143-112130.jpg",
-      "publishedAt": "6341-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:19.346Z",
+      "publishedAt": "6341-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:18.226Z",
       "signalMatches": {
         "specials": [
           "offer"
@@ -21988,8 +22430,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Starbucks Coffee Company Skip to main content Menu Rewards Gift Cards Find a café Sign in Join now Menu Rewards Gift Cards Sign in Join now Find a café Account Card management My Rewards History Personal info Payment methods Privacy and data Settings Sign out It's a great day for coffee Start an order PSL season is here Our 2026 pumpkin menu has landed. Enjoy the one-and-only Pumpkin Spice Latte, tasty new drinks...",
       "postUrl": "https://www.starbucks.ca/",
       "mediaUrl": "https://content-prod-live.cert.starbucks.com/binary/v2/asset/143-112130.jpg",
-      "publishedAt": "6341-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:20.659Z",
+      "publishedAt": "6341-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:19.709Z",
       "signalMatches": {
         "specials": [
           "offer"
@@ -22043,8 +22485,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Starbucks®",
       "postUrl": "https://www.starbucks.ca/menu",
       "mediaUrl": "https://www.starbucks.com/weblx/images/social/summary_square.png",
-      "publishedAt": "6341-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:19.528Z",
+      "publishedAt": "6341-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:18.426Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -22067,8 +22509,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Starbucks®",
       "postUrl": "https://www.starbucks.ca/menu",
       "mediaUrl": "https://www.starbucks.com/weblx/images/social/summary_square.png",
-      "publishedAt": "6341-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:20.859Z",
+      "publishedAt": "6341-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:20.058Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -22091,8 +22533,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Featured Fall Menu: Starbucks Coffee Company Featured Fall Menu Skip to main content Menu Rewards Gift Cards Find a café Sign in Join now Menu Rewards Gift Cards Sign in Join now Find a café Account Card management My Rewards History Personal info Payment methods Privacy and data Settings Sign out More pumpkin, please Pumpkin Spice Latte The iconic PSL is back. Real pumpkin, full-bodied espresso and fall-spice fla...",
       "postUrl": "https://www.starbucks.ca/menu/featured/",
       "mediaUrl": "https://content-prod-live.cert.starbucks.com/binary/v2/asset/143-111801.jpg",
-      "publishedAt": "6341-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:20.018Z",
+      "publishedAt": "6341-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:18.924Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -22162,8 +22604,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Featured Fall Menu: Starbucks Coffee Company Featured Fall Menu Skip to main content Menu Rewards Gift Cards Find a café Sign in Join now Menu Rewards Gift Cards Sign in Join now Find a café Account Card management My Rewards History Personal info Payment methods Privacy and data Settings Sign out More pumpkin, please Pumpkin Spice Latte The iconic PSL is back. Real pumpkin, full-bodied espresso and fall-spice fla...",
       "postUrl": "https://www.starbucks.ca/menu/featured/",
       "mediaUrl": "https://content-prod-live.cert.starbucks.com/binary/v2/asset/143-111801.jpg",
-      "publishedAt": "6341-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:21.240Z",
+      "publishedAt": "6341-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:20.724Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -22233,8 +22675,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Starbucks®",
       "postUrl": "https://www.starbucks.ca/menu/the-latest/pumpkin-picks",
       "mediaUrl": "https://www.starbucks.com/weblx/images/social/summary_square.png",
-      "publishedAt": "6341-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:19.716Z",
+      "publishedAt": "6341-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:18.709Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -22257,8 +22699,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Starbucks®",
       "postUrl": "https://www.starbucks.ca/menu/the-latest/pumpkin-picks",
       "mediaUrl": "https://www.starbucks.com/weblx/images/social/summary_square.png",
-      "publishedAt": "6341-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:21.051Z",
+      "publishedAt": "6341-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:20.509Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -22281,8 +22723,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Easy Mobile & Online Ordering & Delivery: Starbucks Coffee Company Easy Mobile & Online Ordering & Delivery Skip to main content Menu Rewards Gift Cards Find a café Sign in Join now Menu Rewards Gift Cards Sign in Join now Find a café Account Card management My Rewards History Personal info Payment methods Privacy and data Settings Sign out ORDER, PICKUP AND DELIVERY OPTIONS Order and pay ahead of time Whether you...",
       "postUrl": "https://www.starbucks.ca/ways-to-order/",
       "mediaUrl": "https://content-prod-live.cert.starbucks.com/binary/v2/asset/143-67484.png",
-      "publishedAt": "6341-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:20.430Z",
+      "publishedAt": "6341-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:19.423Z",
       "signalMatches": {
         "specials": [
           "offer"
@@ -22337,8 +22779,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Easy Mobile & Online Ordering & Delivery: Starbucks Coffee Company Easy Mobile & Online Ordering & Delivery Skip to main content Menu Rewards Gift Cards Find a café Sign in Join now Menu Rewards Gift Cards Sign in Join now Find a café Account Card management My Rewards History Personal info Payment methods Privacy and data Settings Sign out ORDER, PICKUP AND DELIVERY OPTIONS Order and pay ahead of time Whether you...",
       "postUrl": "https://www.starbucks.ca/ways-to-order/",
       "mediaUrl": "https://content-prod-live.cert.starbucks.com/binary/v2/asset/143-67484.png",
-      "publishedAt": "6341-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:21.672Z",
+      "publishedAt": "6341-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:21.440Z",
       "signalMatches": {
         "specials": [
           "offer"
@@ -22393,8 +22835,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Starbucks Delivers: Starbucks Coffee Company Starbucks Delivers Skip to main content Menu Rewards Gift Cards Find a café Sign in Join now Menu Rewards Gift Cards Sign in Join now Find a café Account Card management My Rewards History Personal info Payment methods Privacy and data Settings Sign out Today deserves delivery Your coffee is on its way Order Starbucks® delivery on DoorDash, SkipTheDishes or Uber Eats an...",
       "postUrl": "https://www.starbucks.ca/ways-to-order/delivery/",
       "mediaUrl": "https://content-prod-live.cert.starbucks.com/binary/v2/asset/143-82602.png",
-      "publishedAt": "6341-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:20.233Z",
+      "publishedAt": "6341-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:19.192Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -22446,8 +22888,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Starbucks Delivers: Starbucks Coffee Company Starbucks Delivers Skip to main content Menu Rewards Gift Cards Find a café Sign in Join now Menu Rewards Gift Cards Sign in Join now Find a café Account Card management My Rewards History Personal info Payment methods Privacy and data Settings Sign out Today deserves delivery Your coffee is on its way Order Starbucks® delivery on DoorDash, SkipTheDishes or Uber Eats an...",
       "postUrl": "https://www.starbucks.ca/ways-to-order/delivery/",
       "mediaUrl": "https://content-prod-live.cert.starbucks.com/binary/v2/asset/143-82602.png",
-      "publishedAt": "6341-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:21.471Z",
+      "publishedAt": "6341-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:21.159Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -22500,7 +22942,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://station1lebanesekitchen.com/",
       "mediaUrl": "https://station1lebanesekitchen.com/wp-content/uploads/2019/10/slide1.jpg",
       "publishedAt": "2026-07-30T07:55:33.000Z",
-      "observedAt": "2026-09-03T18:59:05.462Z",
+      "observedAt": "2026-09-03T20:05:49.247Z",
       "signalMatches": {
         "specials": [
           "special"
@@ -22531,8 +22973,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Stillwell Brewing Co. is the brewing arm of Stillwell, a well-known beer purveyor in Halifax, Nova Scotia. We brew primarily classic styles of beer using traditional ingredients and techniques.",
       "postUrl": "https://www.barstillwell.com/",
       "mediaUrl": "https://www.barstillwell.com/cdn/shop/files/DSCF3706.jpg?v=1709147590",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:59:05.847Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:49.282Z",
       "signalMatches": {
         "specials": [
           "offer",
@@ -22582,8 +23024,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Book the Stillwell Brewing Taproom & Hi-Fi for your private event!",
       "postUrl": "https://www.barstillwell.com/pages/events",
       "mediaUrl": "https://cdn.shopify.com/s/files/1/0004/4089/3476/files/tap_room_3_480x480.jpg?v=1694802189",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:59:06.666Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:50.198Z",
       "signalMatches": {
         "events": [
           "event",
@@ -22619,8 +23061,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Stillwell Brewing Co. is the brewing arm of Stillwell, a well-known beer purveyor in Halifax, Nova Scotia. We brew primarily classic styles of beer using traditional ingredients and techniques.",
       "postUrl": "https://www.barstillwell.com/pages/events-new",
       "mediaUrl": null,
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:59:06.325Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:49.799Z",
       "signalMatches": {
         "events": [
           "event",
@@ -22656,8 +23098,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Stillwell Brewing Co. is the brewing arm of Stillwell, a well-known beer purveyor in Halifax, Nova Scotia. We brew primarily classic styles of beer using traditional ingredients and techniques.",
       "postUrl": "https://www.barstillwell.com/pages/the-beer-garden",
       "mediaUrl": "https://www.barstillwell.com/cdn/shop/files/20160714_165234.jpg?v=1765211099",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:59:06.946Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:50.498Z",
       "signalMatches": {
         "events": [
           "event",
@@ -22704,8 +23146,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Stone Pizza Skip to content Main Menu Home Menu Contact Order Online Order Online Start Your Order What's New Seasonal menu refresh for winter is live! A tighter lineup, better ingredients and pizzas crafted with intention. Some favorites stayed. A few new ones earned their spot. Same Stone Pizza – Just dialed in for the season. Write a Review Did you enjoy your Stone Pizza order? We’d love to hear from you! Leave...",
       "postUrl": "https://stonepizza.ca/",
       "mediaUrl": "https://stonepizza.ca/wp-content/uploads/2025/01/Works2025-768x1024.jpg",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:59:06.305Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:49.283Z",
       "signalMatches": {
         "specials": [
           "offer"
@@ -22761,6 +23203,65 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "sourceLabel": "Menu"
     },
     {
+      "id": "official-page-f217404f61186f5250",
+      "restaurantId": "osm-node-5140336622-studio-east-food-drink",
+      "restaurantName": "Studio East Food+Drink",
+      "platform": "official_page",
+      "title": "Studio East Asian Gastropub - Halifax, NS",
+      "excerpt": "Nestled on the edge of the Halifax Common, Studio East offers a unique blend of exquisitely crafted Asian fare, the best of local craft brew, and vibrant, original cocktails, tailored to match the bold flavours of the East. We give farm-to-table new meaning; each dish uses fresh, local, ethically-sourced ingredients. Our menu celebrates an ambitious, yet approachable Asian-Global fusion that strives for the highes...",
+      "postUrl": "https://www.exploretock.com/studio-east-asian-gastropub-halifax",
+      "mediaUrl": "https://tock-public.imgix.net/imagesprod/user_uploaded_images_v1/c1268bac-a519-489f-83d7-28cf41f6a285.jpg?auto=format&amp;ixlib=java-2.3.2",
+      "publishedAt": null,
+      "observedAt": "2026-09-03T20:05:50.882Z",
+      "signalMatches": {
+        "specials": [
+          "offer",
+          "offers"
+        ],
+        "events": [
+          "event",
+          "events"
+        ],
+        "openings": [
+          "new location"
+        ],
+        "moves": [
+          "new location"
+        ],
+        "menu": [
+          "menu"
+        ],
+        "brunch": [
+          "brunch"
+        ],
+        "reservations": [
+          "reservation",
+          "reservations",
+          "book now"
+        ]
+      },
+      "candidateLinks": [
+        {
+          "url": "https://www.exploretock.com/studio-east-asian-gastropub-halifax/experience/496866/brunch",
+          "label": "Brunch"
+        },
+        {
+          "url": "https://www.exploretock.com/studio-east-asian-gastropub-halifax/experience/556915/lunch",
+          "label": "Book now"
+        },
+        {
+          "url": "https://www.exploretock.com/studio-east-asian-gastropub-halifax/experience/589499/dinner",
+          "label": "Book now"
+        }
+      ],
+      "sourceKind": "official_page_html",
+      "associationBasis": "official_site_linked_page",
+      "confidence": "official_source_page_signal",
+      "reviewState": "needs_date_review",
+      "discoveryReason": "first_party_reservations",
+      "sourceLabel": "Reservations"
+    },
+    {
       "id": "official-page-919d0da8cdf50f7ab4",
       "restaurantId": "osm-node-5140336622-studio-east-food-drink",
       "restaurantName": "Studio East Food+Drink",
@@ -22769,8 +23270,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Nova Scotia’s one of a kind Asian-global fusion restaurant a few minutes away from downtown Halifax.",
       "postUrl": "https://www.studioeastfood.ca/",
       "mediaUrl": "https://images.squarespace-cdn.com/content/v1/5dc72fed7665c170c5ffa441/30dafead-6407-49a1-8fca-2b28539d8f98/StudioEast-FlatLay-01-web-EDIT.jpg",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:59:06.840Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:50.810Z",
       "signalMatches": {
         "events": [
           "event",
@@ -22846,8 +23347,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "General 2 &mdash; Home 0 Skip to Content Menus Brunch Menu Lunch and Dinner Events and Catering Private Events at Studio East Studio Underground Restaurant Events Cocktail Events at the Dragon Bar Offsite Catering Our Story Contact us Reservations Open Menu Close Menu Menus Brunch Menu Lunch and Dinner Events and Catering Private Events at Studio East Studio Underground Restaurant Events Cocktail Events at the Dra...",
       "postUrl": "https://www.studioeastfood.ca/events",
       "mediaUrl": "https://images.squarespace-cdn.com/content/v1/5dc72fed7665c170c5ffa441/30dafead-6407-49a1-8fca-2b28539d8f98/StudioEast-FlatLay-01-web-EDIT.jpg",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:59:07.496Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:51.636Z",
       "signalMatches": {
         "specials": [
           "offer"
@@ -22938,8 +23439,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "General 2 &mdash; Home 0 Skip to Content Menus Brunch Menu Lunch and Dinner Events and Catering Private Events at Studio East Studio Underground Restaurant Events Cocktail Events at the Dragon Bar Offsite Catering Our Story Contact us Reservations Open Menu Close Menu Menus Brunch Menu Lunch and Dinner Events and Catering Private Events at Studio East Studio Underground Restaurant Events Cocktail Events at the Dra...",
       "postUrl": "https://www.studioeastfood.ca/events/dragonbar",
       "mediaUrl": "https://images.squarespace-cdn.com/content/v1/5dc72fed7665c170c5ffa441/30dafead-6407-49a1-8fca-2b28539d8f98/StudioEast-FlatLay-01-web-EDIT.jpg",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:59:07.863Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:52.015Z",
       "signalMatches": {
         "specials": [
           "offer",
@@ -23019,8 +23520,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "General 2 &mdash; Home 0 Skip to Content Menus Brunch Menu Lunch and Dinner Events and Catering Private Events at Studio East Studio Underground Restaurant Events Cocktail Events at the Dragon Bar Offsite Catering Our Story Contact us Reservations Open Menu Close Menu Menus Brunch Menu Lunch and Dinner Events and Catering Private Events at Studio East Studio Underground Restaurant Events Cocktail Events at the Dra...",
       "postUrl": "https://www.studioeastfood.ca/events/restaurant",
       "mediaUrl": "https://images.squarespace-cdn.com/content/v1/5dc72fed7665c170c5ffa441/30dafead-6407-49a1-8fca-2b28539d8f98/StudioEast-FlatLay-01-web-EDIT.jpg",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:59:07.679Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:51.824Z",
       "signalMatches": {
         "events": [
           "event",
@@ -23102,8 +23603,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Explore our delectable brunch menu featuring bao bennies, regional dishes, and house-made waffles. Perfect for weekend indulgence in Halifax.",
       "postUrl": "https://www.studioeastfood.ca/menu/brunch",
       "mediaUrl": "https://images.squarespace-cdn.com/content/v1/5dc72fed7665c170c5ffa441/30dafead-6407-49a1-8fca-2b28539d8f98/StudioEast-FlatLay-01-web-EDIT.jpg",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:59:07.140Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:51.240Z",
       "signalMatches": {
         "specials": [
           "special"
@@ -23183,8 +23684,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Explore a diverse menu of lunch and dinner options, featuring appetizers, salads, entrees, and late-night offerings. Perfect for dining or private events in Halifax.",
       "postUrl": "https://www.studioeastfood.ca/menu/main",
       "mediaUrl": "https://images.squarespace-cdn.com/content/v1/5dc72fed7665c170c5ffa441/30dafead-6407-49a1-8fca-2b28539d8f98/StudioEast-FlatLay-01-web-EDIT.jpg",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:59:07.320Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:51.432Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -23264,8 +23765,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Discover better for you sub sandwiches at SUBWAY 100 Main St in Dartmouth NS. View our menu of sub sandwiches, see nutritional info, find restaurants, buy a franchise, apply for jobs, order catering and give us feedback on our sub sandwiches",
       "postUrl": "https://restaurants.subway.com/canada/ns/dartmouth/100-main-st",
       "mediaUrl": "https://dynl.mktgcdn.com/p/Y-V66ZsPfk0JipAIkjWVdcbMK5lEtl2mXuoIBY8xW-A/150x150.png",
-      "publishedAt": "2001-08-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:59:08.256Z",
+      "publishedAt": "2001-08-01T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:51.599Z",
       "signalMatches": {
         "specials": [
           "deal",
@@ -23338,7 +23839,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.subway.com/en-ca",
       "mediaUrl": "https://subway.com/en-ca/media_16400f7f058ffa6fa69893ac1ff502106933363d9.avif?width=1200&#x26;format=pjpg&#x26;optimize=medium",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:25.538Z",
+      "observedAt": "2026-09-03T20:05:51.078Z",
       "signalMatches": {
         "specials": [
           "deal",
@@ -23386,7 +23887,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.subway.com/en-ca",
       "mediaUrl": "https://subway.com/en-ca/media_16400f7f058ffa6fa69893ac1ff502106933363d9.avif?width=1200&#x26;format=pjpg&#x26;optimize=medium",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:28.712Z",
+      "observedAt": "2026-09-03T20:05:54.179Z",
       "signalMatches": {
         "specials": [
           "deal",
@@ -23434,7 +23935,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.subway.com/en-ca",
       "mediaUrl": "https://subway.com/en-ca/media_16400f7f058ffa6fa69893ac1ff502106933363d9.avif?width=1200&#x26;format=pjpg&#x26;optimize=medium",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:39.118Z",
+      "observedAt": "2026-09-03T20:06:07.936Z",
       "signalMatches": {
         "specials": [
           "deal",
@@ -23482,7 +23983,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.subway.com/en-ca",
       "mediaUrl": "https://subway.com/en-ca/media_16400f7f058ffa6fa69893ac1ff502106933363d9.avif?width=1200&#x26;format=pjpg&#x26;optimize=medium",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:40.337Z",
+      "observedAt": "2026-09-03T20:06:09.325Z",
       "signalMatches": {
         "specials": [
           "deal",
@@ -23530,7 +24031,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.subway.com/en-ca",
       "mediaUrl": "https://subway.com/en-ca/media_16400f7f058ffa6fa69893ac1ff502106933363d9.avif?width=1200&#x26;format=pjpg&#x26;optimize=medium",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:41.507Z",
+      "observedAt": "2026-09-03T20:06:10.519Z",
       "signalMatches": {
         "specials": [
           "deal",
@@ -23578,7 +24079,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.subway.com/en-ca/locator?intcmp=HomepageLoggedOut:Owned:0:0:ExistingProduct_Sandwich_Offer_FreeItem_Free6%22subwhenyoubuyaFootlongsubandadrink:0:0:0:order-now:promotion-cards:nat-ca:0&",
       "mediaUrl": null,
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:26.544Z",
+      "observedAt": "2026-09-03T20:05:51.931Z",
       "signalMatches": {
         "specials": [
           "offer",
@@ -23615,7 +24116,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.subway.com/en-ca/locator?intcmp=HomepageLoggedOut:Owned:0:0:ExistingProduct_Sandwich_Offer_FreeItem_Free6%22subwhenyoubuyaFootlongsubandadrink:0:0:0:order-now:promotion-cards:nat-ca:0&",
       "mediaUrl": null,
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:29.290Z",
+      "observedAt": "2026-09-03T20:05:54.813Z",
       "signalMatches": {
         "specials": [
           "offer",
@@ -23652,7 +24153,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.subway.com/en-ca/locator?intcmp=HomepageLoggedOut:Owned:0:0:ExistingProduct_Sandwich_Offer_FreeItem_Free6%22subwhenyoubuyaFootlongsubandadrink:0:0:0:order-now:promotion-cards:nat-ca:0&",
       "mediaUrl": null,
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:39.732Z",
+      "observedAt": "2026-09-03T20:06:08.602Z",
       "signalMatches": {
         "specials": [
           "offer",
@@ -23689,7 +24190,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.subway.com/en-ca/locator?intcmp=HomepageLoggedOut:Owned:0:0:ExistingProduct_Sandwich_Offer_FreeItem_Free6%22subwhenyoubuyaFootlongsubandadrink:0:0:0:order-now:promotion-cards:nat-ca:0&",
       "mediaUrl": null,
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:40.886Z",
+      "observedAt": "2026-09-03T20:06:09.920Z",
       "signalMatches": {
         "specials": [
           "offer",
@@ -23726,7 +24227,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.subway.com/en-ca/locator?intcmp=HomepageLoggedOut:Owned:0:0:ExistingProduct_Sandwich_Offer_FreeItem_Free6%22subwhenyoubuyaFootlongsubandadrink:0:0:0:order-now:promotion-cards:nat-ca:0&",
       "mediaUrl": null,
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:42.043Z",
+      "observedAt": "2026-09-03T20:06:11.102Z",
       "signalMatches": {
         "specials": [
           "offer",
@@ -23762,8 +24263,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "The Subway menu offers a wide range of sandwiches, salads and wraps. View the abundant options on the Subway menu and place your order online.",
       "postUrl": "https://www.subway.com/en-ca/menunutrition/menu",
       "mediaUrl": "https://subway.com/en-ca/menunutrition/media_1abf32f3fd0a4d7e7970dc37713f2840be2eff1cc.png?width=1200&#x26;format=pjpg&#x26;optimize=medium",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:59:07.802Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:51.448Z",
       "signalMatches": {
         "specials": [
           "offer",
@@ -23798,8 +24299,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "The Subway menu offers a wide range of sandwiches, salads and wraps. View the abundant options on the Subway menu and place your order online.",
       "postUrl": "https://www.subway.com/en-ca/menunutrition/menu",
       "mediaUrl": "https://subway.com/en-ca/menunutrition/media_1abf32f3fd0a4d7e7970dc37713f2840be2eff1cc.png?width=1200&#x26;format=pjpg&#x26;optimize=medium",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:59:08.136Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:54.497Z",
       "signalMatches": {
         "specials": [
           "offer",
@@ -23834,8 +24335,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "The Subway menu offers a wide range of sandwiches, salads and wraps. View the abundant options on the Subway menu and place your order online.",
       "postUrl": "https://www.subway.com/en-ca/menunutrition/menu",
       "mediaUrl": "https://subway.com/en-ca/menunutrition/media_1abf32f3fd0a4d7e7970dc37713f2840be2eff1cc.png?width=1200&#x26;format=pjpg&#x26;optimize=medium",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:59:09.250Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:58.102Z",
       "signalMatches": {
         "specials": [
           "offer",
@@ -23870,8 +24371,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "The Subway menu offers a wide range of sandwiches, salads and wraps. View the abundant options on the Subway menu and place your order online.",
       "postUrl": "https://www.subway.com/en-ca/menunutrition/menu",
       "mediaUrl": "https://subway.com/en-ca/menunutrition/media_1abf32f3fd0a4d7e7970dc37713f2840be2eff1cc.png?width=1200&#x26;format=pjpg&#x26;optimize=medium",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:59:09.747Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:06:08.185Z",
       "signalMatches": {
         "specials": [
           "offer",
@@ -23906,8 +24407,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "The Subway menu offers a wide range of sandwiches, salads and wraps. View the abundant options on the Subway menu and place your order online.",
       "postUrl": "https://www.subway.com/en-ca/menunutrition/menu",
       "mediaUrl": "https://subway.com/en-ca/menunutrition/media_1abf32f3fd0a4d7e7970dc37713f2840be2eff1cc.png?width=1200&#x26;format=pjpg&#x26;optimize=medium",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:59:10.076Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:06:09.565Z",
       "signalMatches": {
         "specials": [
           "offer",
@@ -23942,8 +24443,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "The Subway menu offers a wide range of sandwiches, salads and wraps. View the abundant options on the Subway menu and place your order online.",
       "postUrl": "https://www.subway.com/en-ca/menunutrition/menu",
       "mediaUrl": "https://subway.com/en-ca/menunutrition/media_1abf32f3fd0a4d7e7970dc37713f2840be2eff1cc.png?width=1200&#x26;format=pjpg&#x26;optimize=medium",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:59:10.411Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:06:10.770Z",
       "signalMatches": {
         "specials": [
           "offer",
@@ -23978,8 +24479,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Browse the menu for Subway restaurant 13072-0. Order fresh sandwiches, salads, and more.",
       "postUrl": "https://www.subway.com/en-ca/restaurant/13072-0/menu?intcmp=yext-local:owned:order:Order%20Pickup:fwh-no-value-w2-2020:0:button:0:orderpickup:hu:local-ca-en-v1&segment_code=0",
       "mediaUrl": "https://media.subway.com/dam/urn:aaid:aem:0ab1d9dd-c95e-4e58-8e5b-23db5fa5e976?imwidth=267",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:59:08.291Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:55.963Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -24047,7 +24548,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.subway.com/en-ca/restaurant/13072-0/menu/category/everyday-value",
       "mediaUrl": "https://media.subway.com/dam/urn:aaid:aem:c5d093a6-3219-4119-b642-507e2e032eb4?imwidth=267",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:37.976Z",
+      "observedAt": "2026-09-03T20:06:06.851Z",
       "signalMatches": {
         "specials": [
           "deal"
@@ -24121,7 +24622,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.subway.com/en-ca/restaurant/13072-0/menu/category/grilled-chicken",
       "mediaUrl": "https://media.subway.com/dam/urn:aaid:aem:c5d093a6-3219-4119-b642-507e2e032eb4?imwidth=267",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:30.990Z",
+      "observedAt": "2026-09-03T20:05:58.595Z",
       "signalMatches": {
         "specials": [
           "deal"
@@ -24195,7 +24696,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.subway.com/en-ca/restaurant/13072-0/menu/category/meal-of-the-day",
       "mediaUrl": "https://media.subway.com/dam/urn:aaid:aem:c5d093a6-3219-4119-b642-507e2e032eb4?imwidth=267",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:32.377Z",
+      "observedAt": "2026-09-03T20:05:59.745Z",
       "signalMatches": {
         "specials": [
           "deal"
@@ -24269,7 +24770,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.subway.com/en-ca/restaurant/13072-0/menu/category/sandwiches",
       "mediaUrl": "https://media.subway.com/dam/urn:aaid:aem:c5d093a6-3219-4119-b642-507e2e032eb4?imwidth=267",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:36.203Z",
+      "observedAt": "2026-09-03T20:06:01.439Z",
       "signalMatches": {
         "specials": [
           "deal"
@@ -24527,8 +25028,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "The Subway menu offers a wide range of sandwiches, salads and wraps. View the abundant options on the Subway menu and place your order online.",
       "postUrl": "https://www.subway.com/en-us/menunutrition/menu",
       "mediaUrl": "https://subway.com/en-us/menunutrition/media_1350a6ece728bf3a1ce8aed0b1e8562634024922f.png?width=1200&#x26;format=pjpg&#x26;optimize=medium",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:59:09.421Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:58.396Z",
       "signalMatches": {
         "specials": [
           "offer",
@@ -24564,7 +25065,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://sullyandporter.com/",
       "mediaUrl": null,
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:25.928Z",
+      "observedAt": "2026-09-03T20:05:51.932Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -24614,7 +25115,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://sullyandporter.com/menu/",
       "mediaUrl": null,
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:26.227Z",
+      "observedAt": "2026-09-03T20:05:52.231Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -24654,7 +25155,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.thesummitcafe.ca/",
       "mediaUrl": "https://www.thesummitcafe.ca/wp-content/uploads/2024/10/cover.jpg",
       "publishedAt": "2024-11-04T10:16:44.000Z",
-      "observedAt": "2026-09-01T15:24:26.226Z",
+      "observedAt": "2026-09-03T20:05:51.946Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -24701,7 +25202,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.thesummitcafe.ca/our-menu/",
       "mediaUrl": "https://www.thesummitcafe.ca/wp-content/uploads/2024/10/Breakfast-buffet.jpg",
       "publishedAt": "2024-10-23T11:43:46.000Z",
-      "observedAt": "2026-09-01T15:24:26.463Z",
+      "observedAt": "2026-09-03T20:05:53.445Z",
       "signalMatches": {
         "live_music": [
           "show"
@@ -24744,7 +25245,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://sushisquare.ca/",
       "mediaUrl": "https://sushisquare.ca/wp-content/uploads/2020/11/smth.png",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:26.592Z",
+      "observedAt": "2026-09-03T20:05:52.512Z",
       "signalMatches": {
         "specials": [
           "special"
@@ -24791,7 +25292,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://sushisquare.ca/menu/",
       "mediaUrl": "https://sushisquare.ca/wp-content/uploads/2026/01/bd601670-e8d7-43c9-9067-e1d604663d65-1024x683.jpg",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:26.762Z",
+      "observedAt": "2026-09-03T20:05:53.031Z",
       "signalMatches": {
         "specials": [
           "special"
@@ -24830,7 +25331,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://sushinami.ca/",
       "mediaUrl": "https://sushinami.ca/wp-content/uploads/2022/04/sushinami-105.jpg",
       "publishedAt": "1200-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:27.476Z",
+      "observedAt": "2026-09-03T20:05:53.863Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -24907,7 +25408,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://sushinami.ca/",
       "mediaUrl": "https://sushinami.ca/wp-content/uploads/2022/04/sushinami-105.jpg",
       "publishedAt": "1200-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:42.202Z",
+      "observedAt": "2026-09-03T20:06:07.983Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -24984,7 +25485,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://sushinami.ca/bayers-lake/dinner/",
       "mediaUrl": "https://sushinami.ca/wp-content/uploads/2022/04/sushinami-105.jpg",
       "publishedAt": "2024-09-06T18:28:55.000Z",
-      "observedAt": "2026-09-01T15:24:39.016Z",
+      "observedAt": "2026-09-03T20:06:04.988Z",
       "signalMatches": {
         "specials": [
           "special"
@@ -25064,7 +25565,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://sushinami.ca/bayers-lake/dinner/",
       "mediaUrl": "https://sushinami.ca/wp-content/uploads/2022/04/sushinami-105.jpg",
       "publishedAt": "2024-09-06T18:28:55.000Z",
-      "observedAt": "2026-09-01T15:24:53.359Z",
+      "observedAt": "2026-09-03T20:06:19.183Z",
       "signalMatches": {
         "specials": [
           "special"
@@ -25144,7 +25645,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://sushinami.ca/bayers-lake/lunch-menu/",
       "mediaUrl": "https://sushinami.ca/wp-content/uploads/2022/04/sushinami-105.jpg",
       "publishedAt": "2024-08-10T15:46:35.000Z",
-      "observedAt": "2026-09-01T15:24:33.220Z",
+      "observedAt": "2026-09-03T20:05:59.212Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -25221,7 +25722,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://sushinami.ca/bayers-lake/lunch-menu/",
       "mediaUrl": "https://sushinami.ca/wp-content/uploads/2022/04/sushinami-105.jpg",
       "publishedAt": "2024-08-10T15:46:35.000Z",
-      "observedAt": "2026-09-01T15:24:47.702Z",
+      "observedAt": "2026-09-03T20:06:13.484Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -25298,7 +25799,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://sushinami.ca/bedford-highway/lunch-menu/",
       "mediaUrl": "https://sushinami.ca/wp-content/uploads/2022/04/sushinami-105.jpg",
       "publishedAt": "2024-09-10T01:52:22.000Z",
-      "observedAt": "2026-09-01T15:24:34.624Z",
+      "observedAt": "2026-09-03T20:06:00.580Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -25375,7 +25876,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://sushinami.ca/bedford-highway/lunch-menu/",
       "mediaUrl": "https://sushinami.ca/wp-content/uploads/2022/04/sushinami-105.jpg",
       "publishedAt": "2024-09-10T01:52:22.000Z",
-      "observedAt": "2026-09-01T15:24:49.117Z",
+      "observedAt": "2026-09-03T20:06:14.934Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -25452,7 +25953,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://sushinami.ca/contact-sushi-nami-royale/",
       "mediaUrl": "https://sushinami.ca/wp-content/uploads/2022/04/sushinami-105.jpg",
       "publishedAt": "2022-05-23T12:48:38.000Z",
-      "observedAt": "2026-09-01T15:24:35.989Z",
+      "observedAt": "2026-09-03T20:06:02.019Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -25529,7 +26030,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://sushinami.ca/contact-sushi-nami-royale/",
       "mediaUrl": "https://sushinami.ca/wp-content/uploads/2022/04/sushinami-105.jpg",
       "publishedAt": "2022-05-23T12:48:38.000Z",
-      "observedAt": "2026-09-01T15:24:50.546Z",
+      "observedAt": "2026-09-03T20:06:16.335Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -25606,7 +26107,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://sushinami.ca/dartmouth-crossing/dinner/",
       "mediaUrl": "https://sushinami.ca/wp-content/uploads/2022/04/sushinami-105.jpg",
       "publishedAt": "2026-08-19T01:06:31.000Z",
-      "observedAt": "2026-09-01T15:24:40.670Z",
+      "observedAt": "2026-09-03T20:06:06.454Z",
       "signalMatches": {
         "specials": [
           "special"
@@ -25686,7 +26187,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://sushinami.ca/dartmouth-crossing/dinner/",
       "mediaUrl": "https://sushinami.ca/wp-content/uploads/2022/04/sushinami-105.jpg",
       "publishedAt": "2026-08-19T01:06:31.000Z",
-      "observedAt": "2026-09-01T15:24:54.864Z",
+      "observedAt": "2026-09-03T20:06:20.599Z",
       "signalMatches": {
         "specials": [
           "special"
@@ -25766,7 +26267,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://sushinami.ca/dartmouth-crossing/lunch-menu/",
       "mediaUrl": "https://sushinami.ca/wp-content/uploads/2022/04/sushinami-105.jpg",
       "publishedAt": "2026-08-08T00:39:08.000Z",
-      "observedAt": "2026-09-01T15:24:31.877Z",
+      "observedAt": "2026-09-03T20:05:57.863Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -25843,7 +26344,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://sushinami.ca/dartmouth-crossing/lunch-menu/",
       "mediaUrl": "https://sushinami.ca/wp-content/uploads/2022/04/sushinami-105.jpg",
       "publishedAt": "2026-08-08T00:39:08.000Z",
-      "observedAt": "2026-09-01T15:24:46.197Z",
+      "observedAt": "2026-09-03T20:06:12.103Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -25920,7 +26421,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://sushinami.ca/downtown-halifax/dinner/",
       "mediaUrl": "https://sushinami.ca/wp-content/uploads/2022/04/sushinami-105.jpg",
       "publishedAt": "2024-09-05T23:03:51.000Z",
-      "observedAt": "2026-09-01T15:24:37.359Z",
+      "observedAt": "2026-09-03T20:06:03.467Z",
       "signalMatches": {
         "specials": [
           "special"
@@ -26000,7 +26501,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://sushinami.ca/downtown-halifax/dinner/",
       "mediaUrl": "https://sushinami.ca/wp-content/uploads/2022/04/sushinami-105.jpg",
       "publishedAt": "2024-09-05T23:03:51.000Z",
-      "observedAt": "2026-09-01T15:24:51.946Z",
+      "observedAt": "2026-09-03T20:06:17.802Z",
       "signalMatches": {
         "specials": [
           "special"
@@ -26080,7 +26581,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://sushinami.ca/downtown-halifax/lunch-menu/",
       "mediaUrl": "https://sushinami.ca/wp-content/uploads/2022/04/sushinami-105.jpg",
       "publishedAt": "2024-08-10T15:46:45.000Z",
-      "observedAt": "2026-09-01T15:24:29.054Z",
+      "observedAt": "2026-09-03T20:05:54.996Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -26157,7 +26658,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://sushinami.ca/downtown-halifax/lunch-menu/",
       "mediaUrl": "https://sushinami.ca/wp-content/uploads/2022/04/sushinami-105.jpg",
       "publishedAt": "2024-08-10T15:46:45.000Z",
-      "observedAt": "2026-09-01T15:24:43.280Z",
+      "observedAt": "2026-09-03T20:06:09.035Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -26234,7 +26735,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://sushinami.ca/downtown-halifax/take-out/",
       "mediaUrl": "https://sushinami.ca/wp-content/uploads/2022/04/sushinami-105.jpg",
       "publishedAt": "2024-09-18T00:17:38.000Z",
-      "observedAt": "2026-09-01T15:24:30.436Z",
+      "observedAt": "2026-09-03T20:05:56.454Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -26315,7 +26816,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://sushinami.ca/downtown-halifax/take-out/",
       "mediaUrl": "https://sushinami.ca/wp-content/uploads/2022/04/sushinami-105.jpg",
       "publishedAt": "2024-09-18T00:17:38.000Z",
-      "observedAt": "2026-09-01T15:24:44.695Z",
+      "observedAt": "2026-09-03T20:06:10.602Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -26396,7 +26897,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.shige.ca/",
       "mediaUrl": "https://static.wixstatic.com/media/17680c_f1d0a3ad808c4d8fb090e7d8ac5781e0%7Emv2.png/v1/fit/w_2500,h_1330,al_c/17680c_f1d0a3ad808c4d8fb090e7d8ac5781e0%7Emv2.png",
       "publishedAt": "2500-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:27.539Z",
+      "observedAt": "2026-09-03T20:05:54.046Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -26442,7 +26943,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.shige.ca/menu",
       "mediaUrl": "https://static.wixstatic.com/media/17680c_f1d0a3ad808c4d8fb090e7d8ac5781e0~mv2.png/v1/fit/w_2500,h_1330,al_c/17680c_f1d0a3ad808c4d8fb090e7d8ac5781e0~mv2.png",
       "publishedAt": "2500-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:28.077Z",
+      "observedAt": "2026-09-03T20:05:54.362Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -26481,7 +26982,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.skipthedishes.com/sushi-shige-japanese-restaurant",
       "mediaUrl": "https://www.skipthedishes.com/_next/image?url=https%3A%2F%2Fmenu-images-static.skipthedishes.com%2Fimages%2Fresized%2Flarge-55c4db89650e3a3b9021.jpg&amp;w=3840&amp;q=75",
       "publishedAt": null,
-      "observedAt": "2026-09-01T15:23:47.891Z",
+      "observedAt": "2026-09-03T20:05:12.490Z",
       "signalMatches": {},
       "candidateLinks": [
         {
@@ -26501,6 +27002,30 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "sourceLabel": "DELIVERY"
     },
     {
+      "id": "official-page-8e54503bcb64778fe8",
+      "restaurantId": "osm-node-11612206582-swaad-sagaa-indian-cuisine-incorporated",
+      "restaurantName": "Swaad Sagaa Indian Cuisine Incorporated",
+      "platform": "official_page",
+      "title": "Official page update",
+      "excerpt": "Official page update",
+      "postUrl": "https://def.uber.com/en/challenge?from_service=d2ViLWVhdHMtdjI%3D&q=Yjg1Mzc3MzExMjFlNmY4ZTk2YzQ5NDI1ZTgyN2Q2Mzg6cTE3N2FrV2hNd3JubTVOQzpGOTQ4YnIySFVSMEZ5eHZiR3NVY01rVFVwTGZXT09rNXZNVkhhSExOekpQakV0L1RuUFpmYnF6ekZKTU9Xd1ZhbVd6bzN0VjdVUTF6dUN5RWRpWk5JaWlZSlNSSHllRGFBMWt5c0M3NVE3bFZESGhlMDdzUVdrblVzbnhOUTQvdS9JNlNDNmtiK053NmZuWEoxVkFqZzFkdjNNaVVyMGl5UStrbFZjWHpCUURFQTdNZ0Y3Yml0UGNzMjF5OStFelEzS0U2Nld5YWdFaFhiaFo0eFBYeWpRTDZoMHBWYUEyK3BkS0hUNCtRQTVDYXNvZnFEVlBWN3VsN1JmbE5kQW9Ua25Wc0VOb3dWaisxVTlUQkI2SERSdVdSaElacCs0RlBxSGVjVWQzUDB1dzRObmtpSWJtL2Fta2J5ZGdXajRhVFRLM3ZiUmp0T2ZuK3R2N0tnd29WTGZiaHJVeWplWUVINENHM1pUMmVkdDNWbG1vRXArMFcveWFSeEJoS1NJeGVhVFJDVERuOStGdHl1UT09Ok4vNVZQbllqaUg0clkwd0R0b1dqOFE9PQ%3D%3D",
+      "mediaUrl": null,
+      "publishedAt": null,
+      "observedAt": "2026-09-03T20:05:09.211Z",
+      "signalMatches": {
+        "live_music": [
+          "dj"
+        ]
+      },
+      "candidateLinks": [],
+      "sourceKind": "official_page_html",
+      "associationBasis": "official_site_linked_page",
+      "confidence": "official_source_page_signal",
+      "reviewState": "needs_date_review",
+      "discoveryReason": "first_party_ordering",
+      "sourceLabel": "ordering"
+    },
+    {
       "id": "official-page-22f872f0f4b45893fe",
       "restaurantId": "osm-node-11612206582-swaad-sagaa-indian-cuisine-incorporated",
       "restaurantName": "Swaad Sagaa Indian Cuisine Incorporated",
@@ -26510,7 +27035,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.swaadsagaa.com/",
       "mediaUrl": "https://www.swaadsagaa.com/https&#x3A;&#x2F;&#x2F;primary.jwwb.nl&#x2F;public&#x2F;z&#x2F;b&#x2F;k&#x2F;temp-treqnfyzxvxawrucabjn&#x2F;374524281_3438743236437298_1258114609622563908_n-high.jpg",
       "publishedAt": "2001-08-01T03:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:27.811Z",
+      "observedAt": "2026-09-03T20:05:54.184Z",
       "signalMatches": {
         "specials": [
           "offer",
@@ -26615,9 +27140,9 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "title": "Swaad Sagaa Indian Cuisine Inc.",
       "excerpt": "Follow Swaad Sagaa Indian Cuisine Inc.'s WhatsApp Channel. Introducing “Swaad Sagaa”, the newest addition to the culinary landscape of Maritimes. At “Swaad Sagaa”, we believe that food is not just about sustenance; it's an experience that engages all the senses. Swaad Sagaa will serve you an authentic Indian food with variety of options. We at “Swaad Sagaa” use all the flavors from India so no more compromise with...",
       "postUrl": "https://www.whatsapp.com/channel/0029VaE7oCOJ3juwQFbnhR1C",
-      "mediaUrl": "https://mmg.whatsapp.net/v/t61.24694-24/390412780_217536521362094_7239966747836541380_n.jpg?ccb=1-7&amp;_nc_sid=5a2cf7&amp;_nc_ohc=hqsJOPN1rlYQ7kNvwHhFCdh&amp;_nc_oc=AdonnYQrbJcdFvtvOyfVahn8O-bvhW5JxCfqpsKK80S_etxYXhx1N4goUdak0LIhsmE&amp;_nc_zt=3&amp;_nc_ht=mmg.whatsapp.net&amp;_nc_gid=rg66ktr1BNsWgk4LWRyE4Q&amp;_nc_ss=7f289&amp;oh=01_Q5Aa5QEqqzZzgh-3LpBldFZni5VImD2oTCN_Cbp7XLOOFdekDw&amp;oe=6ABE4508",
+      "mediaUrl": "https://mmg.whatsapp.net/v/t61.24694-24/390412780_217536521362094_7239966747836541380_n.jpg?ccb=1-7&amp;_nc_sid=5a2cf7&amp;_nc_ohc=cldpfocZDE8Q7kNvwHRn4E-&amp;_nc_oc=AdropvqrnlzZ2O41fM32RUMlLRTZa2tetWWAs580SZegX27FPS23Wwz7-QiozQfB0w0&amp;_nc_zt=3&amp;_nc_ht=mmg.whatsapp.net&amp;_nc_gid=ji5753HnWsU6GTMeTLD39g&amp;_nc_ss=7f289&amp;oh=01_Q5Aa5gGIz0KQcImeL3zrTPvJZGoFS4XRez9TmN0DHHjDyOxCmw&amp;oe=6AC15888",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:28.078Z",
+      "observedAt": "2026-09-03T20:05:54.313Z",
       "signalMatches": {},
       "candidateLinks": [
         {
@@ -26642,7 +27167,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://sweetandsassy.ca/",
       "mediaUrl": "https://img1.wsimg.com/isteam/ip/5d7c9443-8d7f-4fc0-b026-ec2d2e0ee6ab/sweetandsassy-23.jpg",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:28.227Z",
+      "observedAt": "2026-09-03T20:05:54.546Z",
       "signalMatches": {
         "events": [
           "ticket",
@@ -26688,7 +27213,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://sweetandsassy.ca/breakfast-menu",
       "mediaUrl": "https://img1.wsimg.com/isteam/ip/5d7c9443-8d7f-4fc0-b026-ec2d2e0ee6ab/sweetandsassy-23.jpg",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:28.696Z",
+      "observedAt": "2026-09-03T20:05:55.014Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -26725,7 +27250,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://sweetandsassy.ca/caribbean-menu",
       "mediaUrl": "https://img1.wsimg.com/isteam/ip/5d7c9443-8d7f-4fc0-b026-ec2d2e0ee6ab/sweetandsassy-23.jpg",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:28.526Z",
+      "observedAt": "2026-09-03T20:05:54.846Z",
       "signalMatches": {
         "events": [
           "festival"
@@ -26764,7 +27289,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.eventbrite.com/e/new-years-eve-3-course-meal-and-comedy-night-tickets-1977500641652?aff=ebdssbcategorybrowse&amp%3Bkeep_tld=1",
       "mediaUrl": "https://www.eventbrite.com/e/_next/image?url=https%3A%2F%2Fimg.evbuc.com%2Fhttps%253A%252F%252Fcdn.evbuc.com%252Fimages%252F1172680736%252F2815709609571%252F1%252Foriginal.20251210-132736%3Fw%3D940%26auto%3Dformat%252Ccompress%26q%3D75%26sharp%3D10%26s%3Db3704097a9c010f27ed51444b580f214&amp;w=940&amp;q=75",
       "publishedAt": "2026-01-01T03:59:00.000Z",
-      "observedAt": "2026-09-01T15:24:28.543Z",
+      "observedAt": "2026-09-03T20:05:55.213Z",
       "signalMatches": {
         "specials": [
           "promo"
@@ -26845,7 +27370,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.takosushiramen.ca/",
       "mediaUrl": "https://www.takosushiramen.ca/sites/default/files/styles/home_slideshow/public/promotion/014.jpg?itok=TJh92aBO",
       "publishedAt": "2001-07-01T03:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:28.807Z",
+      "observedAt": "2026-09-03T20:05:55.480Z",
       "signalMatches": {
         "specials": [
           "special"
@@ -26897,7 +27422,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.takosushiramen.ca/menu/appetizers/tempura",
       "mediaUrl": null,
       "publishedAt": "2001-07-01T03:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:33.159Z",
+      "observedAt": "2026-09-03T20:05:58.678Z",
       "signalMatches": {
         "specials": [
           "special"
@@ -26965,7 +27490,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.takosushiramen.ca/menu/chefs-special-rolls",
       "mediaUrl": null,
       "publishedAt": "2001-07-01T03:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:31.181Z",
+      "observedAt": "2026-09-03T20:05:57.294Z",
       "signalMatches": {
         "specials": [
           "special"
@@ -27033,7 +27558,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.takosushiramen.ca/menu/chefs-special-rolls/entrees",
       "mediaUrl": null,
       "publishedAt": "2001-07-01T03:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:37.774Z",
+      "observedAt": "2026-09-03T20:05:59.778Z",
       "signalMatches": {
         "specials": [
           "special"
@@ -27101,7 +27626,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.takosushiramen.ca/menu/lunch-special",
       "mediaUrl": null,
       "publishedAt": "2001-07-01T03:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:42.201Z",
+      "observedAt": "2026-09-03T20:06:03.205Z",
       "signalMatches": {
         "specials": [
           "special"
@@ -27173,7 +27698,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.takosushiramen.ca/menu/party-tray",
       "mediaUrl": null,
       "publishedAt": "2001-07-01T03:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:40.568Z",
+      "observedAt": "2026-09-03T20:06:02.153Z",
       "signalMatches": {
         "specials": [
           "special"
@@ -27241,7 +27766,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.takosushiramen.ca/menu/ramen",
       "mediaUrl": null,
       "publishedAt": "2001-07-01T03:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:39.149Z",
+      "observedAt": "2026-09-03T20:06:00.963Z",
       "signalMatches": {
         "specials": [
           "special"
@@ -27309,7 +27834,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://terracafe.ca/",
       "mediaUrl": "http://static1.squarespace.com/static/613bb46049e702334d42a1da/t/64c80e6e81c23e181e4b8805/1717773093756/Terra+Cafe_Icon_White.png?format=1500w",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:29.009Z",
+      "observedAt": "2026-09-03T20:05:55.627Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -27349,7 +27874,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://terracafe.ca/coffeebar",
       "mediaUrl": "https://images.squarespace-cdn.com/content/v1/613bb46049e702334d42a1da/280b894b-1bcb-4e8d-b682-fd3b44a6ea39/Terra+Cafe_Icon_White.png?format=1500w",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:29.456Z",
+      "observedAt": "2026-09-03T20:05:56.073Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -27382,7 +27907,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://terracafe.ca/kitchenmenu",
       "mediaUrl": "https://images.squarespace-cdn.com/content/v1/613bb46049e702334d42a1da/280b894b-1bcb-4e8d-b682-fd3b44a6ea39/Terra+Cafe_Icon_White.png?format=1500w",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:29.290Z",
+      "observedAt": "2026-09-03T20:05:55.913Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -27415,7 +27940,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.the5kcafe.ca/",
       "mediaUrl": "http://static1.squarespace.com/static/62377a995a1b6f2a5a38db10/t/62377bdab938ea715e7406a0/1647803354248/5k+white.jpg?format=1500w",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:29.042Z",
+      "observedAt": "2026-09-03T20:05:55.831Z",
       "signalMatches": {
         "specials": [
           "offer"
@@ -27453,7 +27978,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.the5kcafe.ca/menu",
       "mediaUrl": "https://images.squarespace-cdn.com/content/v1/62377a995a1b6f2a5a38db10/b205b8f4-4bc4-4521-ae63-127d75acd1ce/5k+white.jpg?format=1500w",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:29.544Z",
+      "observedAt": "2026-09-03T20:05:56.124Z",
       "signalMatches": {
         "specials": [
           "offer"
@@ -27488,7 +28013,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.thearmview.com/",
       "mediaUrl": "https://www.thearmview.com/wp-content/uploads/2022/11/armview-restaurant-lounge.jpg",
       "publishedAt": "1920-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:29.377Z",
+      "observedAt": "2026-09-03T20:05:56.200Z",
       "signalMatches": {
         "specials": [
           "offer"
@@ -27543,7 +28068,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.thearmview.com/armview-park-menu/",
       "mediaUrl": "https://www.thearmview.com/wp-content/uploads/2022/11/armview-restaurant-lounge.jpg",
       "publishedAt": "2025-06-06T20:00:19.000Z",
-      "observedAt": "2026-09-01T15:24:34.165Z",
+      "observedAt": "2026-09-03T20:06:00.977Z",
       "signalMatches": {
         "events": [
           "event",
@@ -27595,7 +28120,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.thearmview.com/breakfast/",
       "mediaUrl": "https://www.thearmview.com/wp-content/uploads/2022/11/breakfast_thearmview.jpg",
       "publishedAt": "2026-06-28T15:59:24.000Z",
-      "observedAt": "2026-09-01T15:24:35.810Z",
+      "observedAt": "2026-09-03T20:06:02.785Z",
       "signalMatches": {
         "specials": [
           "special"
@@ -27653,7 +28178,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.thearmview.com/drinks-menu/",
       "mediaUrl": "https://www.thearmview.com/wp-content/uploads/2022/11/drinks_thearmview.jpg",
       "publishedAt": "2026-06-28T15:58:30.000Z",
-      "observedAt": "2026-09-01T15:24:32.378Z",
+      "observedAt": "2026-09-03T20:05:59.062Z",
       "signalMatches": {
         "events": [
           "event",
@@ -27705,7 +28230,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.thearmview.com/menus/",
       "mediaUrl": "https://www.thearmview.com/wp-content/uploads/2022/11/menus-thearmview.jpg",
       "publishedAt": "2023-06-24T02:38:51.000Z",
-      "observedAt": "2026-09-01T15:24:30.564Z",
+      "observedAt": "2026-09-03T20:05:57.282Z",
       "signalMatches": {
         "events": [
           "event",
@@ -27757,7 +28282,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://thebeaversden.ca/",
       "mediaUrl": "https://assets.cdn.filesafe.space/adkNvKniYNb9Be3v8MfT/media/68b9a0716510b9e0bd3c82df.png",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:30.092Z",
+      "observedAt": "2026-09-03T20:05:56.663Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -27811,7 +28336,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://thebeaversden.ca/event-calendar",
       "mediaUrl": "https://storage.googleapis.com/msgsndr/adkNvKniYNb9Be3v8MfT/media/68ba12bd02d5ed68ed1bc84a.png",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:31.258Z",
+      "observedAt": "2026-09-03T20:05:57.529Z",
       "signalMatches": {
         "events": [
           "event",
@@ -27860,7 +28385,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://thebeaversden.ca/menu",
       "mediaUrl": null,
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:31.526Z",
+      "observedAt": "2026-09-03T20:05:57.780Z",
       "signalMatches": {
         "specials": [
           "special"
@@ -27895,7 +28420,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://thebeaversden.ca/reserve-your-table",
       "mediaUrl": "https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/adkNvKniYNb9Be3v8MfT/media/68ba12bd02d5ed68ed1bc84a.png",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:31.005Z",
+      "observedAt": "2026-09-03T20:05:57.282Z",
       "signalMatches": {
         "reservations": [
           "reservation"
@@ -27919,7 +28444,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.stubborngoat.ca/",
       "mediaUrl": "https://www.stubborngoat.ca/wp-content/uploads/2024/06/Stubborn-Goat-May-2024-50.jpg",
       "publishedAt": "2026-08-14T15:19:26.000Z",
-      "observedAt": "2026-09-01T15:24:30.329Z",
+      "observedAt": "2026-09-03T20:05:56.962Z",
       "signalMatches": {
         "specials": [
           "offer"
@@ -27969,7 +28494,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://bicyclethief.ca/",
       "mediaUrl": "https://bicyclethief.ca/wp-content/uploads/2017/09/upper-thief.jpg",
       "publishedAt": "2025-11-10T15:25:05.000Z",
-      "observedAt": "2026-09-03T18:57:59.984Z",
+      "observedAt": "2026-09-03T20:05:01.421Z",
       "signalMatches": {
         "specials": [
           "offer",
@@ -28014,7 +28539,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://bicyclethief.ca/contact-us-reservations/",
       "mediaUrl": "https://bertossigroup.com/in-the-news/canadas100best.png",
       "publishedAt": "2024-08-12T17:01:04.000Z",
-      "observedAt": "2026-09-03T18:58:00.740Z",
+      "observedAt": "2026-09-03T20:05:02.040Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -28051,7 +28576,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://bicyclethief.ca/reservations/",
       "mediaUrl": "https://bicyclethief.ca/wp-content/uploads/2021/07/OpeningPatios-3-845x684.jpg",
       "publishedAt": "2021-07-26T15:05:02.000Z",
-      "observedAt": "2026-09-03T18:58:00.552Z",
+      "observedAt": "2026-09-03T20:05:01.832Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -28088,7 +28613,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.bitterend.ca/",
       "mediaUrl": "https://www.unoapp.com/app/source/images/g_shift.png",
       "publishedAt": "2001-08-01T03:00:00.000Z",
-      "observedAt": "2026-09-01T15:23:43.419Z",
+      "observedAt": "2026-09-03T20:05:06.596Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -28117,7 +28642,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.bitterend.ca/index.html",
       "mediaUrl": "https://www.unoapp.com/app/source/images/g_shift.png",
       "publishedAt": "2001-08-01T03:00:00.000Z",
-      "observedAt": "2026-09-01T15:23:43.939Z",
+      "observedAt": "2026-09-03T20:05:07.246Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -28146,7 +28671,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.bitterend.ca/menu.html",
       "mediaUrl": "https://www.unoapp.com/app/source/images/g_shift.png",
       "publishedAt": "2001-08-01T03:00:00.000Z",
-      "observedAt": "2026-09-01T15:23:43.792Z",
+      "observedAt": "2026-09-03T20:05:07.079Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -28179,7 +28704,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.bitterend.ca/reserve.html",
       "mediaUrl": "https://www.unoapp.com/app/source/images/g_shift.png",
       "publishedAt": "2001-08-01T03:00:00.000Z",
-      "observedAt": "2026-09-01T15:23:43.647Z",
+      "observedAt": "2026-09-03T20:05:06.910Z",
       "signalMatches": {
         "events": [
           "event"
@@ -28216,7 +28741,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://blacksheephalifax.com/",
       "mediaUrl": "https://blacksheephalifax.com/wp-content/uploads/2022/11/HomeNameV002-OFFwhite.png",
       "publishedAt": "4545-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:31.258Z",
+      "observedAt": "2026-09-03T20:05:58.013Z",
       "signalMatches": {
         "events": [
           "event",
@@ -28258,7 +28783,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://blacksheephalifax.com/menu/",
       "mediaUrl": "https://i0.wp.com/blacksheephalifax.com/wp-content/uploads/2026/08/BRUNCH.png",
       "publishedAt": "3300-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:31.583Z",
+      "observedAt": "2026-09-03T20:05:58.380Z",
       "signalMatches": {
         "events": [
           "event",
@@ -28299,7 +28824,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://blacksheephalifax.com/private-events/",
       "mediaUrl": "https://i0.wp.com/blacksheephalifax.com/wp-content/uploads/2026/05/EVENT-COCKTAIL-1.png",
       "publishedAt": "2550-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:31.900Z",
+      "observedAt": "2026-09-03T20:05:58.695Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -28365,7 +28890,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://tbdine.com/halifax/restaurants/black-sheep-restaurant-water-street",
       "mediaUrl": "https://www.tbdine.com/touchbistro-dine.jpg",
       "publishedAt": null,
-      "observedAt": "2026-09-01T15:24:20.912Z",
+      "observedAt": "2026-09-03T20:05:44.400Z",
       "signalMatches": {
         "reservations": [
           "reservation",
@@ -28395,7 +28920,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://thebreadloungebakery.square.site/",
       "mediaUrl": "https://thebreadloungebakery.square.site/uploads/b/6b31dad0-7b99-11eb-8fed-ef18a489ed8b/Screen%20Shot%202021-02-17%20at%209.15.37%20AM.png",
       "publishedAt": "2000-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:31.801Z",
+      "observedAt": "2026-09-03T20:05:58.925Z",
       "signalMatches": {
         "specials": [
           "offer",
@@ -28420,7 +28945,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://thekeg.com/en/locations/abbotsford/menu",
       "mediaUrl": "https://thekeg.com/default-meta.jpg",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:35.331Z",
+      "observedAt": "2026-09-03T20:06:02.504Z",
       "signalMatches": {
         "happy_hour": [
           "happy hour"
@@ -28467,7 +28992,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://thekeg.com/en/locations/ajax/menu",
       "mediaUrl": "https://thekeg.com/default-meta.jpg",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:35.760Z",
+      "observedAt": "2026-09-03T20:06:02.988Z",
       "signalMatches": {
         "happy_hour": [
           "happy hour"
@@ -28514,7 +29039,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://thekeg.com/en/locations/alberni/menu",
       "mediaUrl": "https://thekeg.com/default-meta.jpg",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:36.314Z",
+      "observedAt": "2026-09-03T20:06:03.605Z",
       "signalMatches": {
         "happy_hour": [
           "happy hour"
@@ -28561,7 +29086,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://thekeg.com/en/locations/arlington/menu",
       "mediaUrl": "https://thekeg.com/default-meta.jpg",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:37.169Z",
+      "observedAt": "2026-09-03T20:06:04.074Z",
       "signalMatches": {
         "happy_hour": [
           "happy hour"
@@ -28605,7 +29130,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://thekeg.com/en/locations/halifax",
       "mediaUrl": "https://thekeg.com/default-meta.jpg",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:32.506Z",
+      "observedAt": "2026-09-03T20:06:00.311Z",
       "signalMatches": {
         "specials": [
           "offer",
@@ -28650,7 +29175,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://thekeg.com/en/locations/halifax/menu",
       "mediaUrl": "https://thekeg.com/default-meta.jpg",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:33.523Z",
+      "observedAt": "2026-09-03T20:06:01.095Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -28694,7 +29219,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://thekeg.com/fr/restaurants/halifax/menu",
       "mediaUrl": "https://thekeg.com/default-meta.jpg",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:34.491Z",
+      "observedAt": "2026-09-03T20:06:01.688Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -28727,7 +29252,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.sevenrooms.com/explore/thekegsteakhouseandbarajax/reservations/create/search",
       "mediaUrl": null,
       "publishedAt": null,
-      "observedAt": "2026-09-01T15:24:13.077Z",
+      "observedAt": "2026-09-03T20:05:36.720Z",
       "signalMatches": {
         "reservations": [
           "reservation",
@@ -28752,7 +29277,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.theloosecannon.ca/",
       "mediaUrl": "https://d1k7e91iovemsu.cloudfront.net/images/prod/the_loose_cannon/root/68692bee-cd45-4188-8634-c6dec83f14d4.png",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:33.005Z",
+      "observedAt": "2026-09-03T20:06:00.958Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -28785,7 +29310,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.theloosecannon.ca/ourmenu",
       "mediaUrl": "https://d1k7e91iovemsu.cloudfront.net/images/prod/the_loose_cannon/root/68692bee-cd45-4188-8634-c6dec83f14d4.png",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:33.955Z",
+      "observedAt": "2026-09-03T20:06:02.255Z",
       "signalMatches": {
         "happy_hour": [
           "happy hour"
@@ -28821,7 +29346,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://lowerdeck.ca/",
       "mediaUrl": "https://img1.wsimg.com/isteam/ip/73e4cfad-369b-4bc8-9899-1fbfdc8e0851/IMG_5350.JPG",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:33.205Z",
+      "observedAt": "2026-09-03T20:06:02.953Z",
       "signalMatches": {
         "specials": [
           "offer"
@@ -28864,7 +29389,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://lowerdeck.ca/private-events",
       "mediaUrl": "https://img1.wsimg.com/isteam/ip/73e4cfad-369b-4bc8-9899-1fbfdc8e0851/IMG_5350.JPG",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:33.649Z",
+      "observedAt": "2026-09-03T20:06:03.405Z",
       "signalMatches": {
         "specials": [
           "offer"
@@ -28907,7 +29432,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://lowerdeck.ca/pub-menu",
       "mediaUrl": "https://img1.wsimg.com/isteam/ip/73e4cfad-369b-4bc8-9899-1fbfdc8e0851/IMG_5350.JPG",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:33.855Z",
+      "observedAt": "2026-09-03T20:06:03.621Z",
       "signalMatches": {
         "specials": [
           "offer"
@@ -28950,7 +29475,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.mellowmug.ca/",
       "mediaUrl": "https://static.wixstatic.com/media/2a82fd_23339201de5244fdb0a8523c9042cccb%7Emv2.jpg/v1/fit/w_2500,h_1330,al_c/2a82fd_23339201de5244fdb0a8523c9042cccb%7Emv2.jpg",
       "publishedAt": "2500-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:34.030Z",
+      "observedAt": "2026-09-03T20:06:03.788Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -28983,7 +29508,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.mellowmug.ca/food-1",
       "mediaUrl": "https://static.wixstatic.com/media/2a82fd_23339201de5244fdb0a8523c9042cccb%7Emv2.jpg/v1/fit/w_2500,h_1330,al_c/2a82fd_23339201de5244fdb0a8523c9042cccb%7Emv2.jpg",
       "publishedAt": "2500-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:34.337Z",
+      "observedAt": "2026-09-03T20:06:04.088Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -29024,7 +29549,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.thebesthalifax.com/top-cocktail-bars-halifax/",
       "mediaUrl": "https://www.thebesthalifax.com/wp-content/uploads/2025/04/top-cocktail-bars-halifax.jpg",
       "publishedAt": "2025-10-10T04:57:18.000Z",
-      "observedAt": "2026-09-01T15:24:35.027Z",
+      "observedAt": "2026-09-03T20:06:04.516Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -29042,9 +29567,6 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
         ],
         "menu": [
           "menu"
-        ],
-        "seasonal": [
-          "summer"
         ]
       },
       "candidateLinks": [
@@ -29065,8 +29587,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
           "label": "show"
         },
         {
-          "url": "https://www.thebesthalifax.com/equestrian-fun-at-the-dowtown-halifax-horse-show-this-july",
-          "label": "/equestrian-fun-at-the-dowtown-halifax-horse-show-this-july/"
+          "url": "https://www.thebesthalifax.com/best-travel-agencies-halifax",
+          "label": "6 Best Travel Agencies in Halifax to Book Your Next Adventure"
         },
         {
           "url": "https://www.thebesthalifax.com/best-dog-daycares-halifax",
@@ -29090,7 +29612,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.themercantilesocial.com/",
       "mediaUrl": "http://static1.squarespace.com/static/63ed1712b8857f5d549bcf6b/t/63ed1ebbce33252a244b3267/1676484285838/unnamed-2.jpg?format=1500w",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:34.538Z",
+      "observedAt": "2026-09-03T20:06:04.469Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -29119,7 +29641,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://micmacbarandgrill.com/",
       "mediaUrl": "https://micmacbarandgrill.com/wp-content/uploads/2025/06/1-1.webp",
       "publishedAt": "2026-06-11T13:42:17.000Z",
-      "observedAt": "2026-09-01T15:24:35.655Z",
+      "observedAt": "2026-09-03T20:06:04.536Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -29150,6 +29672,10 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
         {
           "url": "https://micmacbarandgrill.com/menus/kids",
           "label": "Kids"
+        },
+        {
+          "url": "https://micmacbarandgrill.com",
+          "label": "8 OZ AAA Steak Special C $39.00 Served with Bacon Wrapped Scallops starting at 4 PM"
         }
       ],
       "sourceKind": "official_page_html",
@@ -29169,7 +29695,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://micmacbarandgrill.com/menus/",
       "mediaUrl": "https://micmacbarandgrill.com/wp-content/uploads/2025/05/Spice_Blend.webp",
       "publishedAt": "2025-06-16T14:16:50.000Z",
-      "observedAt": "2026-09-01T15:24:36.277Z",
+      "observedAt": "2026-09-03T20:06:05.216Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -29219,7 +29745,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://micmacbarandgrill.com/menus/food/",
       "mediaUrl": null,
       "publishedAt": "2026-07-31T20:35:05.000Z",
-      "observedAt": "2026-09-01T15:24:38.914Z",
+      "observedAt": "2026-09-03T20:06:08.535Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -29273,7 +29799,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://micmacbarandgrill.com/menus/kids/",
       "mediaUrl": null,
       "publishedAt": "2026-07-31T20:36:37.000Z",
-      "observedAt": "2026-09-01T15:24:44.318Z",
+      "observedAt": "2026-09-03T20:06:13.784Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -29326,7 +29852,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://micmacbarandgrill.com/menus/specials/",
       "mediaUrl": null,
       "publishedAt": "2026-07-07T17:38:15.000Z",
-      "observedAt": "2026-09-01T15:24:41.847Z",
+      "observedAt": "2026-09-03T20:06:11.186Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -29379,7 +29905,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://the-middle-spoon.orderwebsite.com/",
       "mediaUrl": "https://cs.cdn-upm.com/themes/e0d51573-552b-11f1-9141-525400080621/assets-1/cover.jpg",
       "publishedAt": "2001-08-01T03:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:37.212Z",
+      "observedAt": "2026-09-03T20:06:05.670Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -29444,7 +29970,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://themiddlespoon.com/",
       "mediaUrl": "https://themiddlespoon.com/images/hero-1.jpg",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:36.728Z",
+      "observedAt": "2026-09-03T20:06:05.185Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -29506,7 +30032,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://themiddlespoon.com/events",
       "mediaUrl": "https://themiddlespoon.com/images/hero-1.jpg",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:37.632Z",
+      "observedAt": "2026-09-03T20:06:05.970Z",
       "signalMatches": {
         "events": [
           "event",
@@ -29562,7 +30088,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://themiddlespoon.com/menu",
       "mediaUrl": "https://themiddlespoon.com/images/hero-1.jpg",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:37.139Z",
+      "observedAt": "2026-09-03T20:06:05.521Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -29616,7 +30142,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://themiddlespoon.com/private-events",
       "mediaUrl": "https://themiddlespoon.com/images/hero-1.jpg",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:37.795Z",
+      "observedAt": "2026-09-03T20:06:06.135Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -29669,7 +30195,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://themiddlespoon.com/reservations",
       "mediaUrl": "https://themiddlespoon.com/images/hero-1.jpg",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:37.461Z",
+      "observedAt": "2026-09-03T20:06:05.804Z",
       "signalMatches": {
         "events": [
           "event",
@@ -29719,7 +30245,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://themiddlespoon.com/subscription",
       "mediaUrl": "https://themiddlespoon.com/images/hero-1.jpg",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:37.961Z",
+      "observedAt": "2026-09-03T20:06:06.307Z",
       "signalMatches": {
         "specials": [
           "offer"
@@ -29773,8 +30299,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "The Narrows Halifax Public House 0 Skip to Content HOME MENU STAY ABOVE GALLERY GIFT CARDS Open Menu Close Menu Open Menu Close Menu HOME MENU STAY ABOVE GALLERY GIFT CARDS HOME MENU STAY ABOVE GALLERY GIFT CARDS THE NARROWS TRADITIONAL MARITIME PUBLIC HOUSE 902-407-2475 2720 Gottingen Street, Halifax, N.S, Canada -NO RESERVATIONS- Hours Tuesday - CLOSED Sunday-Thursday 11am - Midnight Friday & Saturday 11am-12:30...",
       "postUrl": "https://www.thenarrowspublichouse.ca/",
       "mediaUrl": "http://static1.squarespace.com/static/64ad9b1d3f683979014072dc/t/64e774b416390156149009da/1692890292271/narrows+full+-+hi+-+blue.png?format=1500w",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:57:59.990Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:01.424Z",
       "signalMatches": {
         "live_music": [
           "live music"
@@ -29810,8 +30336,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "MENU &mdash; The Narrows Halifax Public House 0 Skip to Content HOME MENU STAY ABOVE GALLERY GIFT CARDS Open Menu Close Menu Open Menu Close Menu HOME MENU STAY ABOVE GALLERY GIFT CARDS HOME MENU STAY ABOVE GALLERY GIFT CARDS SUPPER LUNCH + LATE NIGHT THE NARROWS HALIFAX PUBLIC HOUSE, 2720 GOTTINGEN STREET, HALIFAX, NOVA SCOTIA, CANADA. Hours: Sunday-Thursday 11am -Midnight Friday & Saturday 11am- 12:30am",
       "postUrl": "https://www.thenarrowspublichouse.ca/menu",
       "mediaUrl": "https://images.squarespace-cdn.com/content/v1/64ad9b1d3f683979014072dc/7af3eb47-1a72-472d-834f-dadda4770152/narrows+full+-+hi+-+blue.png?format=1500w",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:00.519Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:01.912Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -29844,7 +30370,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://oldtriangle.com/",
       "mediaUrl": null,
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:40.082Z",
+      "observedAt": "2026-09-03T20:06:13.366Z",
       "signalMatches": {
         "specials": [
           "special"
@@ -29876,14 +30402,6 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
           "label": "Menu"
         },
         {
-          "url": "https://oldtriangle.com/event/dave-bradshaw",
-          "label": "More Info"
-        },
-        {
-          "url": "https://oldtriangle.com/event/the-plugs",
-          "label": "More Info"
-        },
-        {
           "url": "https://oldtriangle.com/event/erik-hardiman",
           "label": "More Info"
         },
@@ -29908,6 +30426,14 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
           "label": "More Info"
         },
         {
+          "url": "https://oldtriangle.com/event/kyle-boudreau",
+          "label": "More Info"
+        },
+        {
+          "url": "https://oldtriangle.com/event/tba",
+          "label": "More Info"
+        },
+        {
           "url": "https://oldtriangle.com/events",
           "label": "View Full Calendar"
         }
@@ -29929,7 +30455,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://theostrichclub.ca/",
       "mediaUrl": "https://theostrichclub.ca/wp-content/uploads/2026/04/1.jpg",
       "publishedAt": "2021-05-02T03:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:38.125Z",
+      "observedAt": "2026-09-03T20:06:06.954Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -29973,8 +30499,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "The Press Gang Restaurant & Oyster Bar, located in the heart of downtown Halifax, Nova Scotia, is one of the city’s oldest historic stone structures dating back to 1759.",
       "postUrl": "https://thepressgang.ca/",
       "mediaUrl": "http://www.thepressgang.ca/assets/images/thepressgang.jpg",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:57:59.988Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:01.423Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -30010,8 +30536,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "The Press Gang Restaurant & Oyster Bar, located in the heart of downtown Halifax, Nova Scotia, is one of the city’s oldest historic stone structures dating back to 1759.",
       "postUrl": "https://thepressgang.ca/menu/oysters",
       "mediaUrl": "http://www.thepressgang.ca/assets/images/thepressgang.jpg",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:00.641Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:02.063Z",
       "signalMatches": {
         "events": [
           "tasting"
@@ -30062,8 +30588,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "The Press Gang Restaurant & Oyster Bar, located in the heart of downtown Halifax, Nova Scotia, is one of the city’s oldest historic stone structures dating back to 1759.",
       "postUrl": "https://thepressgang.ca/reservations",
       "mediaUrl": "http://www.thepressgang.ca/assets/images/thepressgang.jpg",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:00.911Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:02.382Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -30101,7 +30627,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.tiltedtap.ca/",
       "mediaUrl": "https://static.wixstatic.com/media/ba7eed_9152d7e1c3fb4d27a9566752ae20fd3b~mv2.jpg/v1/fill/w_1798,h_764,al_c/ba7eed_9152d7e1c3fb4d27a9566752ae20fd3b~mv2.jpg",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:38.390Z",
+      "observedAt": "2026-09-03T20:06:06.987Z",
       "signalMatches": {
         "happy_hour": [
           "happy hour"
@@ -30175,7 +30701,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.tiltedtap.ca/drink-menu",
       "mediaUrl": "https://static.wixstatic.com/media/417737_94bd652dc91142a7adc8d68d1c67fd9e%7Emv2.jpg/v1/fit/w_2500,h_1330,al_c/417737_94bd652dc91142a7adc8d68d1c67fd9e%7Emv2.jpg",
       "publishedAt": "2500-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:39.255Z",
+      "observedAt": "2026-09-03T20:06:07.983Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -30229,7 +30755,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.tiltedtap.ca/menu",
       "mediaUrl": "https://static.wixstatic.com/media/c5b2e4_fa2138a3aeef44d8b1713b6e1eb76310~mv2.png/v1/fit/w_2500,h_1330,al_c/c5b2e4_fa2138a3aeef44d8b1713b6e1eb76310~mv2.png",
       "publishedAt": "2500-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:39.429Z",
+      "observedAt": "2026-09-03T20:06:08.154Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -30289,7 +30815,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.tiltedtap.ca/menu-1",
       "mediaUrl": "https://static.wixstatic.com/media/c5b2e4_fa2138a3aeef44d8b1713b6e1eb76310~mv2.png/v1/fit/w_2500,h_1330,al_c/c5b2e4_fa2138a3aeef44d8b1713b6e1eb76310~mv2.png",
       "publishedAt": "2500-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:38.731Z",
+      "observedAt": "2026-09-03T20:06:07.320Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -30354,7 +30880,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.tiltedtap.ca/newsandevents",
       "mediaUrl": "https://static.wixstatic.com/media/c5b2e4_123465c9d46d4ed0a6a2532b27769799~mv2.png/v1/fill/w_1920,h_1080,al_c/c5b2e4_123465c9d46d4ed0a6a2532b27769799~mv2.png",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:39.082Z",
+      "observedAt": "2026-09-03T20:06:07.701Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -30411,7 +30937,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.tiltedtap.ca/reserve",
       "mediaUrl": "https://static.wixstatic.com/media/417737_94bd652dc91142a7adc8d68d1c67fd9e%7Emv2.jpg/v1/fit/w_2500,h_1330,al_c/417737_94bd652dc91142a7adc8d68d1c67fd9e%7Emv2.jpg",
       "publishedAt": "2500-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:38.896Z",
+      "observedAt": "2026-09-03T20:06:07.520Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -30465,7 +30991,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://dal.mydininghub.ca/en/account?section=my-menu",
       "mediaUrl": null,
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:23:47.257Z",
+      "observedAt": "2026-09-03T20:05:11.395Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -30502,7 +31028,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://dal.mydininghub.ca/en/locations",
       "mediaUrl": null,
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:23:46.293Z",
+      "observedAt": "2026-09-03T20:05:10.001Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -30539,7 +31065,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://locations.timhortons.ca/en/locations-list/ns/reserve-mines",
       "mediaUrl": null,
       "publishedAt": null,
-      "observedAt": "2026-09-01T15:24:40.899Z",
+      "observedAt": "2026-09-03T20:06:09.035Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -30584,7 +31110,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://locations.timhortons.ca/en/ns/halifax/390-osborne-street",
       "mediaUrl": "https://cm-review-builder.s3.amazonaws.com/userImages/63bc7baed0478c003aca429a/6f91dcb78be26d6bfb6233f79f7b0cd1beaa9d3cb74b48ed11293673c4cb5a62.png",
       "publishedAt": null,
-      "observedAt": "2026-09-01T15:24:40.613Z",
+      "observedAt": "2026-09-03T20:06:08.753Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -30656,7 +31182,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.timhortons.ca/menu?locale-selected=0&lang=en&store-number=100053&service-mode=DELIVERY",
       "mediaUrl": "https://cdn.sanity.io/images/czqk28jt/prod_th/9a9f5534893f0681e4d77d5d80d7014bd747e529-2880x1658.png",
       "publishedAt": null,
-      "observedAt": "2026-09-01T15:24:40.489Z",
+      "observedAt": "2026-09-03T20:06:10.154Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -30680,7 +31206,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.timhortons.ca/menu?locale-selected=0&lang=en&store-number=100053&service-mode=TAKEOUT",
       "mediaUrl": "https://cdn.sanity.io/images/czqk28jt/prod_th/9a9f5534893f0681e4d77d5d80d7014bd747e529-2880x1658.png",
       "publishedAt": null,
-      "observedAt": "2026-09-01T15:24:39.290Z",
+      "observedAt": "2026-09-03T20:06:08.970Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -30704,7 +31230,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.timhortons.ca/menu?locale-selected=0&lang=en&store-number=105846&service-mode=TAKEOUT",
       "mediaUrl": "https://cdn.sanity.io/images/czqk28jt/prod_th/9a9f5534893f0681e4d77d5d80d7014bd747e529-2880x1658.png",
       "publishedAt": null,
-      "observedAt": "2026-09-01T15:24:40.915Z",
+      "observedAt": "2026-09-03T20:06:10.586Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -30728,7 +31254,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.timhortons.ca/menu/picker-picker_7407",
       "mediaUrl": "https://cdn.sanity.io/images/czqk28jt/prod_th/9a9f5534893f0681e4d77d5d80d7014bd747e529-2880x1658.png",
       "publishedAt": null,
-      "observedAt": "2026-09-01T15:24:40.144Z",
+      "observedAt": "2026-09-03T20:06:09.835Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -30752,7 +31278,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.tokyorollhalifax.com/",
       "mediaUrl": "https://static.wixstatic.com/media/8b57ea_c3be01944e434aa69db9c27b6393a056~mv2_d_2356_1571_s_2.jpg/v1/fill/w_147,h_98,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/8b57ea_c3be01944e434aa69db9c27b6393a056~mv2_d_2356_1571_s_2.jpg",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:41.017Z",
+      "observedAt": "2026-09-03T20:06:09.270Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -30785,7 +31311,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.tokyorollhalifax.com/menu",
       "mediaUrl": "https://static.wixstatic.com/media/8b57ea_b126b6c62a914569b36092e2920e07e7~mv2.jpg/v1/crop/x_0,y_0,w_825,h_1275,q_85,blur_2,enc_avif,quality_auto/8b57ea_b126b6c62a914569b36092e2920e07e7~mv2.jpg",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:41.348Z",
+      "observedAt": "2026-09-03T20:06:09.585Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -30818,7 +31344,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://book.tomavinos.ca/",
       "mediaUrl": "https://assets.cdn.filesafe.space/wfTmnuFPX9JPZX7F6G8X/media/69e698322c135a8c83b711f9.png",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:41.531Z",
+      "observedAt": "2026-09-03T20:06:10.085Z",
       "signalMatches": {
         "specials": [
           "offer"
@@ -30854,7 +31380,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://tomavinos.ca/about",
       "mediaUrl": "https://tomavinos.ca/images/uploads/banners/_crop/banner-01.jpg",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:42.437Z",
+      "observedAt": "2026-09-03T20:06:11.168Z",
       "signalMatches": {
         "specials": [
           "special"
@@ -30890,11 +31416,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://tomavinos.ca/contact",
       "mediaUrl": "https://tomavinos.ca/images/uploads/banners/_crop/Tomavinos_05.jpg",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:42.848Z",
+      "observedAt": "2026-09-03T20:06:11.585Z",
       "signalMatches": {
-        "events": [
-          "festival"
-        ],
         "menu": [
           "menu"
         ]
@@ -30926,11 +31449,10 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://tomavinos.ca/menu",
       "mediaUrl": "https://tomavinos.ca/images/uploads/banners/_crop/Tomavinos_27.jpg",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:41.709Z",
+      "observedAt": "2026-09-03T20:06:10.485Z",
       "signalMatches": {
         "specials": [
-          "special",
-          "offer"
+          "special"
         ],
         "menu": [
           "menu"
@@ -30959,7 +31481,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.tomavinos.ca/",
       "mediaUrl": "https://tomavinos.ca/images/uploads/slider/_crop/Tomavinos_14.jpg",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:41.079Z",
+      "observedAt": "2026-09-03T20:06:09.485Z",
       "signalMatches": {
         "specials": [
           "special"
@@ -31004,7 +31526,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://tonysdonair.brygid.online/zgrid/proc/site/sitemnup.jsp?mnunm_it=Specials",
       "mediaUrl": "https://storage.googleapis.com/bro-cdn1/zgrid/themes/13706/images/social/open-graph.jpg",
       "publishedAt": "2001-08-01T03:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:43.204Z",
+      "observedAt": "2026-09-03T20:06:11.752Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -31046,7 +31568,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://tonysdonair.brygid.online/zgrid/proc/site/sitep.jsp",
       "mediaUrl": "https://storage.googleapis.com/bro-cdn1/zgrid/themes/13706/images/social/open-graph.jpg",
       "publishedAt": "2001-08-01T03:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:42.482Z",
+      "observedAt": "2026-09-03T20:06:11.036Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -31083,7 +31605,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.tonysdonair.com/",
       "mediaUrl": "https://images.squarespace-cdn.com/content/v1/55a506a8e4b025e7c4de7ed3/1449148821845-67GR70ZN8KGJ32NJTE72/image-asset.jpeg",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:41.603Z",
+      "observedAt": "2026-09-03T20:06:10.344Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -31120,7 +31642,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.tonysdonair.com/other-items",
       "mediaUrl": "https://images.squarespace-cdn.com/content/v1/55a506a8e4b025e7c4de7ed3/1449150039416-C0TDKB886D7E8CV0I3P6/image-asset.jpeg",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:42.232Z",
+      "observedAt": "2026-09-03T20:06:10.716Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -31157,7 +31679,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.tonysdonair.com/specials",
       "mediaUrl": "https://images.squarespace-cdn.com/content/v1/55a506a8e4b025e7c4de7ed3/1449149154187-KRW6BEX4V1WZB8PGMSL3/image-asset.jpeg",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:42.580Z",
+      "observedAt": "2026-09-03T20:06:10.985Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -31195,7 +31717,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://tridenthalifax.ca/",
       "mediaUrl": "https://tridenthalifax.ca/wp-content/uploads/2024/01/Trident-Halifax-Cafe-flowers-400x400-1-300x300.jpg",
       "publishedAt": "2026-09-11T00:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:42.709Z",
+      "observedAt": "2026-09-03T20:06:11.185Z",
       "signalMatches": {
         "events": [
           "event",
@@ -31251,7 +31773,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://tridenthalifax.ca/event/adam-otmar-farewell-to-nova-scotia-with-marlo-day/",
       "mediaUrl": "https://tridenthalifax.ca/wp-content/uploads/2026/07/09112026-HALIFAX-1080x1350-1.png",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:46.322Z",
+      "observedAt": "2026-09-03T20:06:15.268Z",
       "signalMatches": {
         "specials": [
           "special"
@@ -31309,7 +31831,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://tridenthalifax.ca/event/book-talk-return-of-the-90s-w-eds-sean-obrien-thomas-laughlin/",
       "mediaUrl": "https://tridenthalifax.ca/wp-content/uploads/2026/08/The-Return-of-the-90s-Halifax-event.png",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:45.582Z",
+      "observedAt": "2026-09-03T20:06:14.536Z",
       "signalMatches": {
         "events": [
           "event",
@@ -31366,7 +31888,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://tridenthalifax.ca/event/live-music-gourmet-club/",
       "mediaUrl": "https://tridenthalifax.ca/wp-content/uploads/2026/08/01_GC@TridentCafe_POSTER.jpg",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:44.095Z",
+      "observedAt": "2026-09-03T20:06:13.034Z",
       "signalMatches": {
         "events": [
           "event",
@@ -31420,7 +31942,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://tridenthalifax.ca/event/live-music-kate-ferguson/",
       "mediaUrl": "https://tridenthalifax.ca/wp-content/uploads/2026/06/Kate-Ferguson-2-smaller.png",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:44.850Z",
+      "observedAt": "2026-09-03T20:06:13.814Z",
       "signalMatches": {
         "events": [
           "event",
@@ -31465,16 +31987,16 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "sourceLabel": "Live Music: Kate Ferguson!"
     },
     {
-      "id": "official-page-3dc42b752ab83e7bd8",
+      "id": "official-page-a6479ee9f4a9da88a0",
       "restaurantId": "osm-node-886747513-trident-booksellers-and-cafe",
       "restaurantName": "Trident Booksellers and Cafe",
       "platform": "official_page",
-      "title": "Events from August 27 – November 5",
-      "excerpt": "Events from August 27 – November 5 Skip to main content Skip to footer Trident Booksellers & Cafe Your neighbourhood coffeehouse, tea room, used bookseller. Home Events at the Trident Contact the Trident 10 events found. Welcome to our events page. We hope to see you soon! Events Events Search and Views Navigation Search Enter Keyword. Search for Events by Keyword. Find Events Event Views Navigation List List Mont...",
+      "title": "Events from September 3 – November 5",
+      "excerpt": "Events from September 3 – November 5 Skip to main content Skip to footer Trident Booksellers & Cafe Your neighbourhood coffeehouse, tea room, used bookseller. Home Events at the Trident Contact the Trident 9 events found. Welcome to our events page. We hope to see you soon! Events Events Search and Views Navigation Search Enter Keyword. Search for Events by Keyword. Find Events Event Views Navigation List List Mon...",
       "postUrl": "https://tridenthalifax.ca/events/",
-      "mediaUrl": "https://tridenthalifax.ca/wp-content/uploads/2026/08/NeonSignVolIII.png",
+      "mediaUrl": "https://tridenthalifax.ca/wp-content/uploads/2026/08/01_GC@TridentCafe_POSTER.jpg",
       "publishedAt": "2026-11-05T00:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:43.304Z",
+      "observedAt": "2026-09-03T20:06:11.793Z",
       "signalMatches": {
         "specials": [
           "special"
@@ -31488,8 +32010,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
         "live_music": [
           "live music",
           "show",
-          "concert",
-          "band"
+          "concert"
         ]
       },
       "candidateLinks": [
@@ -31514,10 +32035,6 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
           "label": "/events/list/"
         },
         {
-          "url": "https://tridenthalifax.ca/event/neon-sign-comedy-vol-viii",
-          "label": "Neon Sign Comedy Vol. VIII!"
-        },
-        {
           "url": "https://tridenthalifax.ca/event/live-music-gourmet-club",
           "label": "Live Music! Gourmet Club!"
         },
@@ -31532,6 +32049,10 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
         {
           "url": "https://tridenthalifax.ca/event/adam-otmar-farewell-to-nova-scotia-with-marlo-day",
           "label": "Adam Otmar: Farewell to Nova Scotia (with Marlo Day)"
+        },
+        {
+          "url": "https://tridenthalifax.ca/event/release-day-cocktail-party-at-the-trident-joanne-merriam",
+          "label": "Release Day Cocktail Party at the Trident: Joanne Merriam"
         }
       ],
       "sourceKind": "official_page_html",
@@ -31551,7 +32072,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://turkishdelighthalifax.ca/",
       "mediaUrl": null,
       "publishedAt": "2007-04-25T03:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:42.854Z",
+      "observedAt": "2026-09-03T20:06:11.767Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -31580,7 +32101,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://twoifbyseacafe.ca/",
       "mediaUrl": "https://twoifbyseacafe.ca/wp-content/uploads/2020/09/easy-seafood-platter-155604-2-300x200.jpg",
       "publishedAt": "2026-09-01T00:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:43.032Z",
+      "observedAt": "2026-09-03T20:06:12.068Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -31613,7 +32134,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://theuncommongroup.com/",
       "mediaUrl": "https://theuncommongroup.com/cdn/shop/t/18/assets/slide_2.jpg?v=13304079562732043911444937180",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:43.280Z",
+      "observedAt": "2026-09-03T20:06:12.118Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -31642,7 +32163,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "http://wasabihouse.ca/",
       "mediaUrl": null,
       "publishedAt": "2024-05-01T03:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:43.649Z",
+      "observedAt": "2026-09-03T20:06:12.556Z",
       "signalMatches": {
         "happy_hour": [
           "happy hour"
@@ -31697,7 +32218,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "http://wasabihouse.ca/happy-hour/",
       "mediaUrl": "http://wasabihouse.ca/wp-content/uploads/2026/07/image1-799x1024.jpeg",
       "publishedAt": "2024-05-01T03:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:44.729Z",
+      "observedAt": "2026-09-03T20:06:14.167Z",
       "signalMatches": {
         "happy_hour": [
           "happy hour"
@@ -31745,7 +32266,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "http://wasabihouse.ca/lunch-specials/",
       "mediaUrl": "http://wasabihouse.ca/wp-content/uploads/2026/07/image0.jpeg",
       "publishedAt": "2024-05-01T03:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:46.322Z",
+      "observedAt": "2026-09-03T20:06:16.335Z",
       "signalMatches": {
         "happy_hour": [
           "happy hour"
@@ -31793,7 +32314,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.sevenrooms.com/explore/waterpolo/reservations/create/search",
       "mediaUrl": null,
       "publishedAt": null,
-      "observedAt": "2026-09-01T15:24:13.333Z",
+      "observedAt": "2026-09-03T20:05:36.973Z",
       "signalMatches": {
         "reservations": [
           "reservation",
@@ -31818,7 +32339,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.waterpolohfx.ca/",
       "mediaUrl": null,
       "publishedAt": null,
-      "observedAt": "2026-09-01T15:24:43.758Z",
+      "observedAt": "2026-09-03T20:06:12.702Z",
       "signalMatches": {
         "specials": [
           "offer",
@@ -31873,7 +32394,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.waterpolohfx.ca/menus/",
       "mediaUrl": "https://images.getbento.com/accounts/15bdd5135b436c32400cc8748f21a401/media/images/68785wp1.jpg?w=1200&fit=crop&auto=compress,format&cs=origin&h=600",
       "publishedAt": null,
-      "observedAt": "2026-09-01T15:24:44.299Z",
+      "observedAt": "2026-09-03T20:06:13.184Z",
       "signalMatches": {
         "specials": [
           "offer"
@@ -31922,7 +32443,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.rcr.ca/restaurants/cable-wharf-kitchen-patio/",
       "mediaUrl": "https://www.rcr.ca/content/uploads/2023/04/cable-wharf-kitchen-patio-4-1920x1006.jpg",
       "publishedAt": "2026-07-15T18:57:22.000Z",
-      "observedAt": "2026-09-01T15:23:54.374Z",
+      "observedAt": "2026-09-03T20:05:17.443Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -31974,7 +32495,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.rcr.ca/restaurants/waterfront-warehouse/",
       "mediaUrl": "https://www.rcr.ca/content/uploads/2018/02/waterfront-warehouse-wide-1920x1006.jpg",
       "publishedAt": "2026-07-13T15:57:11.000Z",
-      "observedAt": "2026-09-01T15:23:53.997Z",
+      "observedAt": "2026-09-03T20:05:17.076Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -32030,7 +32551,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://locations.wendys.com/canada/ns/halifax/3580-kempt-road",
       "mediaUrl": "https://locations.wendys.com/permanent-b0b701/assets/images/find_icon.6f8d1b9b.svg",
       "publishedAt": "2001-08-01T03:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:44.449Z",
+      "observedAt": "2026-09-03T20:06:14.231Z",
       "signalMatches": {
         "specials": [
           "deal",
@@ -32089,7 +32610,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://order.wendys.com/ca/en/national/menu",
       "mediaUrl": "https://order.wendys.com/_next/image?url=https%3A%2F%2Fapp.wendys.com%2Funified%2Fassets%2Fcampaign%2Forder.wendys%2F1986_large_CA_en.jpg&amp;w=828&amp;q=75",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:44.081Z",
+      "observedAt": "2026-09-03T20:06:14.052Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -32160,7 +32681,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://order.wendys.com/ca/en/national/menu",
       "mediaUrl": "https://order.wendys.com/_next/image?url=https%3A%2F%2Fapp.wendys.com%2Funified%2Fassets%2Fcampaign%2Forder.wendys%2F1986_large_CA_en.jpg&amp;w=828&amp;q=75",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:49.928Z",
+      "observedAt": "2026-09-03T20:06:18.212Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -32231,7 +32752,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://order.wendys.com/ca/en/national/menu/cheeseburgers",
       "mediaUrl": null,
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:46.338Z",
+      "observedAt": "2026-09-03T20:06:16.107Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -32244,6 +32765,10 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
         ]
       },
       "candidateLinks": [
+        {
+          "url": "https://order.wendys.com/ca/en/national/menu",
+          "label": "Back"
+        },
         {
           "url": "https://order.wendys.com/ca/en/national/menu/combos",
           "label": "Combos"
@@ -32279,10 +32804,6 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
         {
           "url": "https://order.wendys.com/ca/en/national/menu/everyday-value",
           "label": "Everyday Value"
-        },
-        {
-          "url": "https://order.wendys.com/ca/en/national/menu/wendys-kids-meals",
-          "label": "Wendy's Kids' Meals"
         }
       ],
       "sourceKind": "official_page_html",
@@ -32302,7 +32823,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://order.wendys.com/ca/en/national/menu/cheeseburgers/daves-double",
       "mediaUrl": "https://order.wendys.com/_next/image?url=https%3A%2F%2Fapp.wendys.com%2Funified%2Fassets%2Fmenu%2Fcropped%2F1002_large_CA_en.png&amp;w=828&amp;q=75",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:50.326Z",
+      "observedAt": "2026-09-03T20:06:18.633Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -32331,7 +32852,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://order.wendys.com/ca/en/national/menu/chicken-wraps-more",
       "mediaUrl": null,
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:47.165Z",
+      "observedAt": "2026-09-03T20:06:16.634Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -32344,6 +32865,10 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
         ]
       },
       "candidateLinks": [
+        {
+          "url": "https://order.wendys.com/ca/en/national/menu",
+          "label": "Back"
+        },
         {
           "url": "https://order.wendys.com/ca/en/national/menu/combos",
           "label": "Combos"
@@ -32379,10 +32904,6 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
         {
           "url": "https://order.wendys.com/ca/en/national/menu/everyday-value",
           "label": "Everyday Value"
-        },
-        {
-          "url": "https://order.wendys.com/ca/en/national/menu/wendys-kids-meals",
-          "label": "Wendy's Kids' Meals"
         }
       ],
       "sourceKind": "official_page_html",
@@ -32402,7 +32923,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://order.wendys.com/ca/en/national/menu/chicken-wraps-more/spicy-chicken-sandwich",
       "mediaUrl": "https://order.wendys.com/_next/image?url=https%3A%2F%2Fapp.wendys.com%2Funified%2Fassets%2Fmenu%2Fcropped%2F1119_large_CA_en.png&amp;w=828&amp;q=75",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:51.837Z",
+      "observedAt": "2026-09-03T20:06:19.848Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -32431,7 +32952,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://order.wendys.com/ca/en/national/menu/coffee/hot-coffee",
       "mediaUrl": "https://order.wendys.com/_next/image?url=https%3A%2F%2Fapp.wendys.com%2Funified%2Fassets%2Fmenu%2Fcropped%2F3130_large_CA_en.png&amp;w=828&amp;q=75",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:52.339Z",
+      "observedAt": "2026-09-03T20:06:20.527Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -32460,7 +32981,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://order.wendys.com/ca/en/national/menu/coffee/vanilla-frosty-ccino",
       "mediaUrl": null,
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:52.976Z",
+      "observedAt": "2026-09-03T20:06:20.967Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -32484,7 +33005,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://order.wendys.com/ca/en/national/menu/combos",
       "mediaUrl": null,
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:45.781Z",
+      "observedAt": "2026-09-03T20:06:15.760Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -32497,6 +33018,10 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
         ]
       },
       "candidateLinks": [
+        {
+          "url": "https://order.wendys.com/ca/en/national/menu",
+          "label": "Back"
+        },
         {
           "url": "https://order.wendys.com/ca/en/national/menu/combos",
           "label": "Combos"
@@ -32532,10 +33057,6 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
         {
           "url": "https://order.wendys.com/ca/en/national/menu/everyday-value",
           "label": "Everyday Value"
-        },
-        {
-          "url": "https://order.wendys.com/ca/en/national/menu/wendys-kids-meals",
-          "label": "Wendy's Kids' Meals"
         }
       ],
       "sourceKind": "official_page_html",
@@ -32555,7 +33076,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://order.wendys.com/ca/en/national/menu/everyday-value",
       "mediaUrl": null,
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:45.390Z",
+      "observedAt": "2026-09-03T20:06:15.284Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -32626,7 +33147,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://order.wendys.com/ca/en/national/menu/fresh-made-salads",
       "mediaUrl": null,
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:48.464Z",
+      "observedAt": "2026-09-03T20:06:17.050Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -32639,6 +33160,10 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
         ]
       },
       "candidateLinks": [
+        {
+          "url": "https://order.wendys.com/ca/en/national/menu",
+          "label": "Back"
+        },
         {
           "url": "https://order.wendys.com/ca/en/national/menu/combos",
           "label": "Combos"
@@ -32674,10 +33199,6 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
         {
           "url": "https://order.wendys.com/ca/en/national/menu/everyday-value",
           "label": "Everyday Value"
-        },
-        {
-          "url": "https://order.wendys.com/ca/en/national/menu/wendys-kids-meals",
-          "label": "Wendy's Kids' Meals"
         }
       ],
       "sourceKind": "official_page_html",
@@ -32697,7 +33218,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://order.wendys.com/ca/en/national/menu/fresh-made-salads/apple-pecan-chicken-salad",
       "mediaUrl": "https://order.wendys.com/_next/image?url=https%3A%2F%2Fapp.wendys.com%2Funified%2Fassets%2Fmenu%2Fcropped%2F1386_large_CA_en.png&amp;w=828&amp;q=75",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:50.953Z",
+      "observedAt": "2026-09-03T20:06:19.046Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -32726,7 +33247,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://order.wendys.com/ca/en/national/menu/fries-sides",
       "mediaUrl": null,
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:48.812Z",
+      "observedAt": "2026-09-03T20:06:17.450Z",
       "signalMatches": {
         "specials": [
           "limited time"
@@ -32742,6 +33263,10 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
         ]
       },
       "candidateLinks": [
+        {
+          "url": "https://order.wendys.com/ca/en/national/menu",
+          "label": "Back"
+        },
         {
           "url": "https://order.wendys.com/ca/en/national/menu/combos",
           "label": "Combos"
@@ -32777,10 +33302,6 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
         {
           "url": "https://order.wendys.com/ca/en/national/menu/everyday-value",
           "label": "Everyday Value"
-        },
-        {
-          "url": "https://order.wendys.com/ca/en/national/menu/wendys-kids-meals",
-          "label": "Wendy's Kids' Meals"
         }
       ],
       "sourceKind": "official_page_html",
@@ -32800,7 +33321,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.wendys.com/en-ca",
       "mediaUrl": null,
       "publishedAt": "2014-10-06T03:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:43.905Z",
+      "observedAt": "2026-09-03T20:06:13.484Z",
       "signalMatches": {
         "specials": [
           "deal",
@@ -32878,7 +33399,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.wendys.com/en-ca/delivery",
       "mediaUrl": null,
       "publishedAt": "2014-10-06T03:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:44.136Z",
+      "observedAt": "2026-09-03T20:06:13.735Z",
       "signalMatches": {
         "specials": [
           "offer",
@@ -32924,7 +33445,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.wendys.com/en-ca/delivery",
       "mediaUrl": null,
       "publishedAt": "2014-10-06T03:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:44.300Z",
+      "observedAt": "2026-09-03T20:06:13.901Z",
       "signalMatches": {
         "specials": [
           "offer",
@@ -32970,7 +33491,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.wildleek.ca/",
       "mediaUrl": "https://static.wixstatic.com/media/7da4e6_d8105835b30e4aea9a9ddc05063bdb91~mv2.jpg/v1/fill/w_123,h_105,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/7da4e6_d8105835b30e4aea9a9ddc05063bdb91~mv2.jpg",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:45.416Z",
+      "observedAt": "2026-09-03T20:06:14.583Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -33010,7 +33531,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.wildleek.ca/events",
       "mediaUrl": "https://static.wixstatic.com/media/7da4e6_eb2dda7dc1e74766a93fdce4d4f944cd~mv2.png/v1/fill/w_112,h_198,al_c,q_85,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/7da4e6_eb2dda7dc1e74766a93fdce4d4f944cd~mv2.png",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:46.167Z",
+      "observedAt": "2026-09-03T20:06:15.346Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -33051,7 +33572,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.wildleek.ca/menu",
       "mediaUrl": "https://static.wixstatic.com/media/7da4e6_e7b8bca6835d43718f018db0b07c3497~mv2.jpg/v1/fill/w_870,h_1126,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Wild%20Leek%202026%20Menu_page-0001.jpg",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:45.929Z",
+      "observedAt": "2026-09-03T20:06:15.101Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -33088,7 +33609,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://wingnit.ca/",
       "mediaUrl": "https://wingnit.ca/assets/images/layout/og-image.png",
       "publishedAt": "2001-08-01T03:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:46.005Z",
+      "observedAt": "2026-09-03T20:06:15.337Z",
       "signalMatches": {
         "happy_hour": [
           "drink special"
@@ -33169,7 +33690,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://wingnit.ca/menu",
       "mediaUrl": "https://wingnit.ca/assets/images/layout/og-image.png",
       "publishedAt": "2001-08-01T03:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:46.245Z",
+      "observedAt": "2026-09-03T20:06:15.564Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -33245,7 +33766,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://wingnit.ca/menu/appetizers",
       "mediaUrl": "https://wingnit.ca/assets/images/layout/og-image.png",
       "publishedAt": "2001-08-01T03:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:46.428Z",
+      "observedAt": "2026-09-03T20:06:15.734Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -33321,7 +33842,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://wingnit.ca/menu/burgers-",
       "mediaUrl": "https://wingnit.ca/assets/images/layout/og-image.png",
       "publishedAt": "2001-08-01T03:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:47.437Z",
+      "observedAt": "2026-09-03T20:06:16.734Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -33397,7 +33918,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://wingnit.ca/menu/entrees",
       "mediaUrl": "https://wingnit.ca/assets/images/layout/og-image.png",
       "publishedAt": "2001-08-01T03:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:47.263Z",
+      "observedAt": "2026-09-03T20:06:16.564Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -33473,7 +33994,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://wingnit.ca/menu/fries-",
       "mediaUrl": "https://wingnit.ca/assets/images/layout/og-image.png",
       "publishedAt": "2001-08-01T03:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:47.598Z",
+      "observedAt": "2026-09-03T20:06:16.900Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -33549,7 +34070,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://wingnit.ca/menu/nachos-",
       "mediaUrl": "https://wingnit.ca/assets/images/layout/og-image.png",
       "publishedAt": "2001-08-01T03:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:46.596Z",
+      "observedAt": "2026-09-03T20:06:15.907Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -33625,7 +34146,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://wingnit.ca/menu/salad-soup",
       "mediaUrl": "https://wingnit.ca/assets/images/layout/og-image.png",
       "publishedAt": "2001-08-01T03:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:46.760Z",
+      "observedAt": "2026-09-03T20:06:16.066Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -33701,7 +34222,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://wingnit.ca/menu/sandwiches-wraps",
       "mediaUrl": "https://wingnit.ca/assets/images/layout/og-image.png",
       "publishedAt": "2001-08-01T03:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:46.930Z",
+      "observedAt": "2026-09-03T20:06:16.235Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -33777,7 +34298,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://wingnit.ca/menu/wings",
       "mediaUrl": "https://wingnit.ca/assets/images/layout/og-image.png",
       "publishedAt": "2001-08-01T03:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:47.095Z",
+      "observedAt": "2026-09-03T20:06:16.400Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -33853,7 +34374,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.thewoodenmonkey.ca/",
       "mediaUrl": "https://cdn.prod.website-files.com/5a9175138433cb00017eefdf/5a9175138433cb00017ef019_imageedit_1_2839820776.png",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:46.108Z",
+      "observedAt": "2026-09-03T20:06:15.533Z",
       "signalMatches": {
         "specials": [
           "special"
@@ -33934,7 +34455,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.thewoodenmonkey.ca/beer-garden",
       "mediaUrl": "https://cdn.prod.website-files.com/5a9175138433cb00017eefdf/5a9175138433cb00017ef019_imageedit_1_2839820776.png",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:46.682Z",
+      "observedAt": "2026-09-03T20:06:16.384Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -33979,7 +34500,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.thewoodenmonkey.ca/dessert-kids-menu",
       "mediaUrl": "https://cdn.prod.website-files.com/5a9175138433cb00017eefdf/5a9175138433cb00017ef019_imageedit_1_2839820776.png",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:47.010Z",
+      "observedAt": "2026-09-03T20:06:16.734Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -34030,7 +34551,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.thewoodenmonkey.ca/main-menu",
       "mediaUrl": "https://cdn.prod.website-files.com/5a9175138433cb00017eefdf/5a9175138433cb00017ef019_imageedit_1_2839820776.png",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:46.847Z",
+      "observedAt": "2026-09-03T20:06:16.563Z",
       "signalMatches": {
         "menu": [
           "menu",
@@ -34079,7 +34600,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.thewoodenmonkey.ca/menus",
       "mediaUrl": "https://cdn.prod.website-files.com/5a9175138433cb00017eefdf/5a9175138433cb00017ef019_imageedit_1_2839820776.png",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:46.353Z",
+      "observedAt": "2026-09-03T20:06:16.018Z",
       "signalMatches": {
         "specials": [
           "special"
@@ -34139,7 +34660,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.thewoodenmonkey.ca/reservations",
       "mediaUrl": "https://cdn.prod.website-files.com/5a9175138433cb00017eefdf/5a9175138433cb00017ef019_imageedit_1_2839820776.png",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:46.515Z",
+      "observedAt": "2026-09-03T20:06:16.216Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -34184,7 +34705,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.thewoodenmonkey.ca/special-menus",
       "mediaUrl": "https://cdn.prod.website-files.com/5a9175138433cb00017eefdf/5a9175138433cb00017ef019_imageedit_1_2839820776.png",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:47.165Z",
+      "observedAt": "2026-09-03T20:06:16.917Z",
       "signalMatches": {
         "specials": [
           "special"
@@ -34235,7 +34756,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://dal.mydininghub.ca/en/account?section=my-menu",
       "mediaUrl": null,
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:23:47.573Z",
+      "observedAt": "2026-09-03T20:05:11.711Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -34272,7 +34793,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://dal.mydininghub.ca/en/locations",
       "mediaUrl": null,
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:23:46.591Z",
+      "observedAt": "2026-09-03T20:05:10.310Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -34311,7 +34832,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://2crowsbrewing.com/",
       "mediaUrl": "https://2crowsbrewing.com/wp-content/uploads/2026/05/social.png",
       "publishedAt": "2026-06-11T18:03:33.000Z",
-      "observedAt": "2026-09-03T18:58:01.181Z",
+      "observedAt": "2026-09-03T20:05:02.082Z",
       "signalMatches": {
         "specials": [
           "special"
@@ -34338,7 +34859,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://go2doorsdown.com/",
       "mediaUrl": "https://go2doorsdown.com/wp-content/uploads/2025/12/2-doors-down_Dartmouth.jpg",
       "publishedAt": "2026-06-30T00:24:18.000Z",
-      "observedAt": "2026-09-03T18:57:59.990Z",
+      "observedAt": "2026-09-03T20:05:01.425Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -34382,8 +34903,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "7 Peppers Grill",
       "postUrl": "https://www.7peppersgrill.net/",
       "mediaUrl": "https://static.wixstatic.com/media/90a441_9ff7c2830e3644218c2b2d373452cae1~mv2.jpg/v1/fill/w_1100,h_701,al_c,q_85,enc_avif,quality_auto/90a441_9ff7c2830e3644218c2b2d373452cae1~mv2.jpg",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:01.342Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:02.113Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -34419,8 +34940,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Menu",
       "postUrl": "https://www.7peppersgrill.net/menu",
       "mediaUrl": "https://static.wixstatic.com/media/90a441_9ff7c2830e3644218c2b2d373452cae1~mv2.jpg/v1/fill/w_1100,h_701,al_c,q_85,enc_avif,quality_auto/90a441_9ff7c2830e3644218c2b2d373452cae1~mv2.jpg",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:01.568Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:02.414Z",
       "signalMatches": {
         "specials": [
           "special"
@@ -34452,7 +34973,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://afrite.ca/",
       "mediaUrl": "https://i0.wp.com/afrite.ca/wp-content/uploads/2021/04/grilled-meat-with-herbs-on-black-top-view-4QPYVKD-scaled.jpg?resize=370%2C260&#038;ssl=1",
       "publishedAt": "2024-12-06T15:23:38.000Z",
-      "observedAt": "2026-09-03T18:58:01.432Z",
+      "observedAt": "2026-09-03T20:05:02.302Z",
       "signalMatches": {
         "specials": [
           "special"
@@ -34566,8 +35087,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Enjoy healthy, fresh comfort food and a friendly atmosphere in Halifax",
       "postUrl": "https://www.almonak.com/",
       "mediaUrl": "http://static1.squarespace.com/static/6294ce751d67ad02053683ae/t/6294cea21d67ad0205368b23/1554312174093/social-sharing.png?format=1500w",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:01.459Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:02.482Z",
       "signalMatches": {
         "events": [
           "event"
@@ -34598,8 +35119,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Book an Event &mdash; Almonak Book an Event Gift Cards Book a Table About Us Book an Event Gift Cards Book a Table About Us Book an Event Host a Private Event in Halifax Almonak is the perfect spot to hold a private event. Receptions, office parties, awards nights, engagement parties…We can accommodate just about anything you have in mind. Get in touch to learn more. North End Halifax 5659 Almon Street 902-450-295...",
       "postUrl": "https://www.almonak.com/book-an-event",
       "mediaUrl": "http://static1.squarespace.com/static/6294ce751d67ad02053683ae/t/6294cea21d67ad0205368b23/1554312174093/social-sharing.png?format=1500w",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:01.895Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:02.916Z",
       "signalMatches": {
         "events": [
           "event"
@@ -34634,7 +35155,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://antojo.ca/",
       "mediaUrl": "https://antojo.ca/wp-content/uploads/2017/08/Antojo_SocialPreview_FB_1200x630.png",
       "publishedAt": "2023-02-07T19:49:29.000Z",
-      "observedAt": "2026-09-03T18:58:01.646Z",
+      "observedAt": "2026-09-03T20:05:02.595Z",
       "signalMatches": {
         "specials": [
           "deal",
@@ -34674,8 +35195,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Order Online for Takeout / Pickup. Here at Ardmore Tea Room - Halifax you'll experience delicious Breakfast, Burger cuisine. Try our mouth-watering dishes, carefully prepared with fresh ingredients! At Ardmore Tea Room, our recipe for success is simple – Great food & care makes customers return every time.",
       "postUrl": "https://www.ardmoretearoom.ca/",
       "mediaUrl": "https://www.fbgcdn.com/pictures/29c468cc-0bab-4c38-9c59-b43483b31cfa.jpg",
-      "publishedAt": "2001-08-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:01.756Z",
+      "publishedAt": "2001-08-01T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:02.723Z",
       "signalMatches": {
         "specials": [
           "offer"
@@ -34713,8 +35234,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "No time to cook? No problem! Order online from Ardmore Tea Room. It’s the best Breakfast Takeout in Halifax. Browse our online menu and choose from our delicious dishes. We'll get your food ready in no-time. Don't waste another moment, order online now!",
       "postUrl": "https://www.ardmoretearoom.ca/breakfast-takeout-halifax",
       "mediaUrl": "https://www.fbgcdn.com/pictures/29c468cc-0bab-4c38-9c59-b43483b31cfa.jpg",
-      "publishedAt": "2001-08-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:02.628Z",
+      "publishedAt": "2001-08-01T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:03.491Z",
       "signalMatches": {
         "specials": [
           "offer"
@@ -34752,8 +35273,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "No time to cook? No problem! Order online from Ardmore Tea Room. It’s the best Burger Takeout in Halifax. Browse our online menu and choose from our delicious dishes. We'll get your food ready in no-time. Don't waste another moment, order online now!",
       "postUrl": "https://www.ardmoretearoom.ca/burger-takeout-halifax",
       "mediaUrl": "https://www.fbgcdn.com/pictures/29c468cc-0bab-4c38-9c59-b43483b31cfa.jpg",
-      "publishedAt": "2001-08-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:02.892Z",
+      "publishedAt": "2001-08-01T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:04.395Z",
       "signalMatches": {
         "specials": [
           "offer"
@@ -34791,8 +35312,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Enjoy only mouth-watering foods made out of the best ingredients. Your taste buds will be in heaven.",
       "postUrl": "https://www.ardmoretearoom.ca/menu",
       "mediaUrl": "https://www.fbgcdn.com/pictures/29c468cc-0bab-4c38-9c59-b43483b31cfa.jpg",
-      "publishedAt": "2001-08-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:02.360Z",
+      "publishedAt": "2001-08-01T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:03.146Z",
       "signalMatches": {
         "specials": [
           "offer"
@@ -34873,7 +35394,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://barkismet.com/",
       "mediaUrl": "https://barkismet.com/wp-content/themes/barkismet/assets/img/barkismet.svg",
       "publishedAt": "2025-10-30T14:33:50.000Z",
-      "observedAt": "2026-09-03T18:57:59.951Z",
+      "observedAt": "2026-09-03T20:05:01.376Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -34897,6 +35418,30 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "sourceLabel": "Official website"
     },
     {
+      "id": "official-page-5ee3caead8304c6ce2",
+      "restaurantId": "osm-node-8600605850-barburrito",
+      "restaurantName": "BarBurrito",
+      "platform": "official_page",
+      "title": "Official page update",
+      "excerpt": "Official page update",
+      "postUrl": "https://def.uber.com/en/challenge?from_service=d2ViLWVhdHMtdjI%3D&q=NWI4OWIwNzJjZjY4NmVhMTNhODJiODY1Y2ZiMWVmNzU6YUg3VU80T2V2M1ZraXhiWjo3eW81Z2tDbXNEZkZNK2JZQU9DWCtSbWpKVmhyaFQ1N0hwVk5qczFSc2NCYnREaVB4ZFM3ZnlKV2NiZmdSenlVQ3pYcDYxT2tFeU9JQzZNN2hSVWZEMHlhbWpNSDRxMXg3KzRvWkxuK2lEcEpua0R5c3pEcDFvTnlWdHI4czJtbzE1Tnl5cDhZd0tTZ2JIb0FsSnFEWmNLbU4rdS9YNHVxSjdzMUhhcTYrYWN0Wk5WSU1DYkowanZtNzlsTStKV0lSdnY0cHptWXMva1BzeEV1S2wvQ3JzUWlkVUY0bFZJVTV2eE5PbUwrbXZRS0lvc2h6KzlQTlVCc0tZTkZEZUhHOTNBYisxaVNZZ1RaaGh1aXd0SWNHbDN4dDgxLzFVTFdhMkoyNTZydndoQ2crQUZOQk9HNjJLV0ZmMTdmQ2JlSzR5Z2RONkRjR29OVWNldVhvbXRHRHBKMjUzUHg1TFREc0dXdktyLy9iT1FwNW8wZSs0MzVHUG9RZCt1NmFlcXNyMTFtSzVMN0lhTHZLRzRZTjc2eU9GOWlRcEVGMXUzc211emtxMEljY0hOdUpmNStzWUdWdUhwWjVqWjN4QS9JM3JoUXVBMkJZckNkNHkzV3p2QkgzK3k1UXBZM3JtQ0lsaEY1OHFNem9Ta2R2OTQ2UVRBSnBKalFOU1c2TG5rTm9zalh4RHRiUjJsbU1MdC9PNlY5YUc1VEVPWG1Xb1NXMnBMSzVaSkVMa0xPRHFMa0xMZXAyK05BVmNlcHQrZ0VUWFJGcnkvQllBY2lsZlNkcUhUL0Rud2tvaFZ1M0FFY0FGeXJkSmhsUjdQMTZZK1JXNVl3V2s1SHEyZWxVV25VQTlwMDQxU2FyMzI5Q1J4d1d3WmVuUy92UEI2Y2Q2TnV4VFg5ZU84YXVuemRVcTFsa0RVNEVCRmZYcUZZMy91MWdFaWxFU05ubnp6UDBtc2F4S0RwOlFSNXUyb2MwWThpbE13K0ZlNUIvTWc9PQ%3D%3D",
+      "mediaUrl": null,
+      "publishedAt": null,
+      "observedAt": "2026-09-03T20:05:04.063Z",
+      "signalMatches": {
+        "live_music": [
+          "dj"
+        ]
+      },
+      "candidateLinks": [],
+      "sourceKind": "official_page_html",
+      "associationBasis": "official_site_linked_page",
+      "confidence": "official_source_page_signal",
+      "reviewState": "needs_date_review",
+      "discoveryReason": "first_party_ordering",
+      "sourceLabel": "Uber Eats"
+    },
+    {
       "id": "official-page-c6740ea08955034273",
       "restaurantId": "osm-node-8600605850-barburrito",
       "restaurantName": "BarBurrito",
@@ -34906,7 +35451,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.barburrito.ca/",
       "mediaUrl": "https://barburrito.agencydominion.net/uploads/2025/11/Untitled-design-29-1200x630.png",
       "publishedAt": "1200-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:11.002Z",
+      "observedAt": "2026-09-03T20:05:07.041Z",
       "signalMatches": {
         "specials": [
           "offer"
@@ -34958,7 +35503,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.barburrito.ca/fr/location/dartmouth/",
       "mediaUrl": null,
       "publishedAt": null,
-      "observedAt": "2026-09-01T15:23:45.176Z",
+      "observedAt": "2026-09-03T20:05:07.928Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -35015,7 +35560,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.barburrito.ca/location/dartmouth/",
       "mediaUrl": null,
       "publishedAt": null,
-      "observedAt": "2026-09-03T18:58:02.770Z",
+      "observedAt": "2026-09-03T20:05:03.491Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -35080,7 +35625,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.skipthedishes.com/barburrito-tacoma-drive?utm_source=google&utm_medium=organic&utm_campaign=gpa",
       "mediaUrl": "https://www.skipthedishes.com/_next/image?url=https%3A%2F%2Fmenu-images-static.skipthedishes.com%2Fimages%2Fresized%2Flarge-63637c0b9197391c099e.png&amp;w=3840&amp;q=75",
       "publishedAt": null,
-      "observedAt": "2026-09-01T15:23:41.442Z",
+      "observedAt": "2026-09-03T20:05:03.969Z",
       "signalMatches": {
         "specials": [
           "offer",
@@ -35190,7 +35735,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://barrioshfx.ca/",
       "mediaUrl": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.3.2/flags/4x3/us.svg",
       "publishedAt": null,
-      "observedAt": "2026-09-03T18:58:03.192Z",
+      "observedAt": "2026-09-03T20:05:04.115Z",
       "signalMatches": {
         "specials": [
           "offer"
@@ -35250,7 +35795,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://barrioshfx.ca/barrios-menu",
       "mediaUrl": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.3.2/flags/4x3/us.svg",
       "publishedAt": null,
-      "observedAt": "2026-09-03T18:58:04.186Z",
+      "observedAt": "2026-09-03T20:05:04.943Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -35306,7 +35851,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://barrioshfx.ca/delivery",
       "mediaUrl": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.3.2/flags/4x3/us.svg",
       "publishedAt": null,
-      "observedAt": "2026-09-03T18:58:05.399Z",
+      "observedAt": "2026-09-03T20:05:05.247Z",
       "signalMatches": {
         "specials": [
           "offer"
@@ -35356,7 +35901,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://barrioshfx.ca/menu-guide",
       "mediaUrl": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.3.2/flags/4x3/us.svg",
       "publishedAt": null,
-      "observedAt": "2026-09-03T18:58:06.880Z",
+      "observedAt": "2026-09-03T20:05:05.580Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -35403,7 +35948,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://barrioshfx.ca/reservation",
       "mediaUrl": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.3.2/flags/4x3/us.svg",
       "publishedAt": null,
-      "observedAt": "2026-09-03T18:58:06.138Z",
+      "observedAt": "2026-09-03T20:05:05.406Z",
       "signalMatches": {
         "specials": [
           "special"
@@ -35454,7 +35999,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://barrioshfx.ca/sunday-brunch",
       "mediaUrl": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.3.2/flags/4x3/us.svg",
       "publishedAt": null,
-      "observedAt": "2026-09-03T18:58:07.086Z",
+      "observedAt": "2026-09-03T20:05:05.746Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -35510,7 +36055,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://barrioshfx.ca/sunday-brunch-halifax",
       "mediaUrl": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.3.2/flags/4x3/us.svg",
       "publishedAt": null,
-      "observedAt": "2026-09-01T15:23:43.555Z",
+      "observedAt": "2026-09-03T20:05:05.913Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -35569,8 +36114,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "BEERBAR & EATERY 62 Ochterloney Street Dartmouth, NS, B2Y 1C2 Canada 902 446 2337 eat@batterypark.ca Located in Downtown Dartmouth, Battery Park features 20 rotating beer bar taps showcasing the very best of Nova Scotia’s Craft Beer lineup! Chef Andrew Shannon heads up our award-winning Ace Burger kitchen, slinging the very best in lunch, dinner, dine-in and take-out of farm-to-table fare, featuring our famous bur...",
       "postUrl": "https://batterypark.ca/",
       "mediaUrl": "https://images.squarespace-cdn.com/content/v1/55917d39e4b0b8f716f2fe05/1609902059282-UVICAXQUWMUHHNKV9GR7/Battery+Park+%28Feb+26+16%29+%2820+of+28%29.jpg",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:00.607Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:01.427Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -35601,8 +36146,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "BEERBAR & EATERY 62 Ochterloney Street Dartmouth, NS, B2Y 1C2 Canada 902 446 2337 eat@batterypark.ca Located in Downtown Dartmouth, Battery Park features 20 rotating beer bar taps showcasing the very best of Nova Scotia’s Craft Beer lineup! Chef Andrew Shannon heads up our award-winning Ace Burger kitchen, slinging the very best in lunch, dinner, dine-in and take-out of farm-to-table fare, featuring our famous bur...",
       "postUrl": "https://batterypark.ca/",
       "mediaUrl": "https://images.squarespace-cdn.com/content/v1/55917d39e4b0b8f716f2fe05/1609902059282-UVICAXQUWMUHHNKV9GR7/Battery+Park+%28Feb+26+16%29+%2820+of+28%29.jpg",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:00.993Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:01.722Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -35633,8 +36178,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Join us at Bedford Beer Garden on the Bedford Highway. Enjoy cold beer, great food, and stunning waterfront views.",
       "postUrl": "https://www.bedfordbeergarden.com/",
       "mediaUrl": "https://images.squarespace-cdn.com/content/v1/68293776be1eab027773881e/17f12e90-23e4-4cc2-b711-bfa61b1b5211/Bedford+Beer+Garden+Container",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:03.260Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:04.701Z",
       "signalMatches": {
         "events": [
           "event",
@@ -35681,8 +36226,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "The Bedford Beer Garden features local draught beer (including a rotating tap), craft cans, wine by the glass or bottle, and refreshing premixed cocktails. From Tall Ship to peach iced tea vodka, we’ve got your patio drink lineup covered all season long.",
       "postUrl": "https://www.bedfordbeergarden.com/drinkmenu",
       "mediaUrl": null,
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:03.736Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:05.144Z",
       "signalMatches": {
         "events": [
           "event",
@@ -35729,8 +36274,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Burgers, loaded hotdogs, truffle fries, onion rings, nachos, and charcuterie boards. Perfect snacks and pub-style eats to pair with your drink while soaking in views of the Bedford Basin.",
       "postUrl": "https://www.bedfordbeergarden.com/events",
       "mediaUrl": null,
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:03.920Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:05.521Z",
       "signalMatches": {
         "events": [
           "event",
@@ -35778,8 +36323,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Burgers, loaded hotdogs, truffle fries, onion rings, nachos, and charcuterie boards. Perfect snacks and pub-style eats to pair with your drink while soaking in views of the Bedford Basin.",
       "postUrl": "https://www.bedfordbeergarden.com/foodmenu",
       "mediaUrl": null,
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:03.557Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:04.980Z",
       "signalMatches": {
         "events": [
           "event",
@@ -35827,7 +36372,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://locations.benetflorentine.com/",
       "mediaUrl": "https://mtystprod.azureedge.net/media/vhslsyfh/microsoftteams-image-30-1-1.png",
       "publishedAt": null,
-      "observedAt": "2026-09-03T18:58:03.333Z",
+      "observedAt": "2026-09-03T20:05:04.856Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -35859,7 +36404,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://bicyclethief.ca/",
       "mediaUrl": "https://bicyclethief.ca/wp-content/uploads/2017/09/upper-thief.jpg",
       "publishedAt": "2025-11-10T15:25:05.000Z",
-      "observedAt": "2026-09-03T18:58:00.926Z",
+      "observedAt": "2026-09-03T20:05:02.249Z",
       "signalMatches": {
         "specials": [
           "offer",
@@ -35904,7 +36449,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://bicyclethief.ca/contact-us-reservations/",
       "mediaUrl": "https://bertossigroup.com/in-the-news/canadas100best.png",
       "publishedAt": "2024-08-12T17:01:04.000Z",
-      "observedAt": "2026-09-03T18:58:01.276Z",
+      "observedAt": "2026-09-03T20:05:02.647Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -35941,7 +36486,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://bicyclethief.ca/reservations/",
       "mediaUrl": "https://bicyclethief.ca/wp-content/uploads/2021/07/OpeningPatios-3-845x684.jpg",
       "publishedAt": "2021-07-26T15:05:02.000Z",
-      "observedAt": "2026-09-03T18:58:01.091Z",
+      "observedAt": "2026-09-03T20:05:02.421Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -35977,8 +36522,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Bird",
       "postUrl": "https://www.birdsnesthalifax.com/",
       "mediaUrl": "https://static.wixstatic.com/media/f67ed8423aaf440b81164ccd259ed7f6.jpg/v1/fill/w_140,h_93,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/f67ed8423aaf440b81164ccd259ed7f6.jpg",
-      "publishedAt": "2001-04-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:04.005Z",
+      "publishedAt": "2001-04-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:05.679Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -36029,8 +36574,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "The Bitter End Skip to main content j Toggle navigation home about Reserve menu gallery Contact",
       "postUrl": "https://www.bitterend.ca/",
       "mediaUrl": "https://www.unoapp.com/app/source/images/g_shift.png",
-      "publishedAt": "2001-08-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:04.096Z",
+      "publishedAt": "2001-08-01T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:05.806Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -36058,8 +36603,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "The Bitter End Skip to main content j Toggle navigation home about Reserve menu gallery Contact",
       "postUrl": "https://www.bitterend.ca/index.html",
       "mediaUrl": "https://www.unoapp.com/app/source/images/g_shift.png",
-      "publishedAt": "2001-08-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:06.386Z",
+      "publishedAt": "2001-08-01T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:06.431Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -36087,8 +36632,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "templated-menu Skip to main content Toggle navigation home about Reserve menu gallery Contact",
       "postUrl": "https://www.bitterend.ca/menu.html",
       "mediaUrl": "https://www.unoapp.com/app/source/images/g_shift.png",
-      "publishedAt": "2001-08-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:05.934Z",
+      "publishedAt": "2001-08-01T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:06.270Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -36120,8 +36665,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "The Bitter End Skip to main content Booking & Reservations Reservations Please use the reservation form to book a table or event. Functions Holding an Office Party or Corporate Event? We can help create just the right atmosphere for your group. Email us for more information. Some restrictions apply. Fundraisers Looking for a venue to hold your fundraiser ? Look no further, invite your guests to an upscale venue an...",
       "postUrl": "https://www.bitterend.ca/reserve.html",
       "mediaUrl": "https://www.unoapp.com/app/source/images/g_shift.png",
-      "publishedAt": "2001-08-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:05.483Z",
+      "publishedAt": "2001-08-01T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:06.110Z",
       "signalMatches": {
         "events": [
           "event"
@@ -36157,8 +36702,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "ROSA is an enchanting Parallax Restaurant WordPress Theme that allows you to tell your story in an enjoyable way, perfect for restaurants or coffee shops.",
       "postUrl": "https://bluenoseii.ca/",
       "mediaUrl": "https://bluenoseii.ca/wp-content/uploads/2019/02/full_table_wine_bottle_img_6626-1.jpg",
-      "publishedAt": "2001-08-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:04.294Z",
+      "publishedAt": "2001-08-01T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:05.995Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -36209,8 +36754,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Menu | Bluenose II Restaurant You are using an outdated browser. Please upgrade your browser or activate Google Chrome Frame to improve your experience. Primary Navigation Please select a menu in this location The Menu Our home-style family recipes on our menu offer dishes using the finest seasonal produce. Table service throughout for food and drinks. Taking inspiration from Mediterranean cuisine and around the w...",
       "postUrl": "https://bluenoseii.ca/menu/",
       "mediaUrl": null,
-      "publishedAt": "2001-08-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:05.482Z",
+      "publishedAt": "2001-08-01T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:07.379Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -36252,8 +36797,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Reservations | Bluenose II Restaurant You are using an outdated browser. Please upgrade your browser or activate Google Chrome Frame to improve your experience. Primary Navigation Please select a menu in this location M ake a Reservation ✻ Booking your table online is easy and takes just a couple of minutes! Reserve by Phone We take reservations for lunch and dinner. To make a reservation, please call us at 902.42...",
       "postUrl": "https://bluenoseii.ca/reservations/",
       "mediaUrl": "https://bluenoseii.ca/wp-content/uploads/2019/04/bnii-perpsective_4-1024x683.jpg",
-      "publishedAt": "2001-08-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:05.678Z",
+      "publishedAt": "2001-08-01T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:07.579Z",
       "signalMatches": {
         "specials": [
           "special"
@@ -36300,8 +36845,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Log In &lsaquo; Bluenose II Restaurant — WordPress Log In Powered by WordPress Username or Email Address Password Type in the text displayed above Log in with GoDaddy Or Log in with username and password Remember Me Lost your password? &larr; Go to Bluenose II Restaurant",
       "postUrl": "https://bluenoseii.ca/wp-login.php?redirect_to=https%3A%2F%2Fbluenoseii.ca%2Fwp-admin%2Fnav-menus.php%3Faction%3Dlocations&reauth=1",
       "mediaUrl": null,
-      "publishedAt": "2001-08-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:04.600Z",
+      "publishedAt": "2001-08-01T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:06.396Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -36329,8 +36874,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "As Canada’s original juice and smoothie bar, our mission is to create long-standing customer relationships by consistently delivering an incredibly delicious, convenient and nutritious product, perfectly suited for an active lifestyle.",
       "postUrl": "https://boosterjuice.com/en-ca",
       "mediaUrl": "http://boosterjuice.com/cdn/shop/files/AVDV2693-1200x628.jpg?v=1703786205",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:05.205Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:06.811Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -36388,8 +36933,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "As Canada’s original juice and smoothie bar, our mission is to create long-standing customer relationships by consistently delivering an incredibly delicious, convenient and nutritious product, perfectly suited for an active lifestyle.",
       "postUrl": "https://boosterjuice.com/en-ca/blogs/current-promotions",
       "mediaUrl": "http://boosterjuice.com/cdn/shop/files/AVDV2693-1200x628.jpg?v=1703786205",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:06.876Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:08.860Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -36467,8 +37012,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "As Canada’s original juice and smoothie bar, our mission is to create long-standing customer relationships by consistently delivering an incredibly delicious, convenient and nutritious product, perfectly suited for an active lifestyle.",
       "postUrl": "https://boosterjuice.com/en-ca/collections/specialty-shots",
       "mediaUrl": "http://boosterjuice.com/cdn/shop/files/AVDV2693-1200x628.jpg?v=1703786205",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:06.574Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:08.359Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -36524,8 +37069,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "As Canada’s original juice and smoothie bar, our mission is to create long-standing customer relationships by consistently delivering an incredibly delicious, convenient and nutritious product, perfectly suited for an active lifestyle.",
       "postUrl": "https://boosterjuice.com/en-ca/pages/catering",
       "mediaUrl": "http://boosterjuice.com/cdn/shop/files/AVDV2693-1200x628.jpg?v=1703786205",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:06.091Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:07.779Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -36581,8 +37126,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "TEST-2 Welcome to Boston Pizza Restaurant and Sports Bar. Discover our great takeout and delivery menu, including our signaure pizzas, gourmet pastas, wings and more!",
       "postUrl": "https://bostonpizza.com/en/index.html",
       "mediaUrl": "https://bostonpizza.com/content/dam/bostonpizza/brand-refresh-2025/Franchising_Homepage_1930x1130.png",
-      "publishedAt": "2026-09-03T18:00:07.987Z",
-      "observedAt": "2026-09-03T18:58:05.249Z",
+      "publishedAt": "2026-09-03T18:58:16.720Z",
+      "observedAt": "2026-09-03T20:05:07.042Z",
       "signalMatches": {
         "specials": [
           "feature menu",
@@ -36660,8 +37205,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Discover Boston Pizza’s extensive menu of pizza, pasta, burgers, appetizers, salads and more. Available for dine-in, takeout, or delivery. Browse our menu today!",
       "postUrl": "https://bostonpizza.com/en/menu.html",
       "mediaUrl": "https://bostonpizza.com/content/dam/bostonpizza/menu-images/apps-and-shareables/category-images/AppsShareables_no_napkin-420x320.jpg",
-      "publishedAt": "2026-09-03T18:00:07.865Z",
-      "observedAt": "2026-09-03T18:58:05.591Z",
+      "publishedAt": "2026-09-03T18:58:24.009Z",
+      "observedAt": "2026-09-03T20:05:07.363Z",
       "signalMatches": {
         "specials": [
           "feature menu",
@@ -36736,9 +37281,9 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "title": "Our Promotions | Boston Pizza",
       "excerpt": "Check out our current offers and promotions and save big during your next visit to Boston Pizza!",
       "postUrl": "https://bostonpizza.com/en/promotions.html",
-      "mediaUrl": "https://bostonpizza.com/content/dam/bostonpizza/promotions/2026/summer-live-music/Call%20to%20Artists%20Banner.jpg",
-      "publishedAt": "2026-09-01T15:06:56.115Z",
-      "observedAt": "2026-09-01T15:23:45.030Z",
+      "mediaUrl": "https://bostonpizza.com/content/dam/bostonpizza/promotions/2026/kids-eat-free/KEF_Banner_EN-final.png",
+      "publishedAt": "2026-09-03T18:58:23.526Z",
+      "observedAt": "2026-09-03T20:05:08.280Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -36834,8 +37379,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Kids Eat Free | Boston Pizza Menu Promotions Locations Rewards Gift Cards FR EN ORDER NOW CALLING ALL PARENTS!&lt;/p>\\r\\n&lt;p class=\\\"b6-do6-banner--custom-text bp-do6-banner--text-size-24--bold\\\">The back-to-school rush is on, but dinner just got easier! Hang up the aprons and head over to Boston Pizza 'cause KIDS EAT FREE all September long with a $16 minimum spend per free Kids Meal. That's right: your kids wi...",
       "postUrl": "https://bostonpizza.com/en/promotions/kids-eat-free.html",
       "mediaUrl": "https://bostonpizza.com/content/dam/bostonpizza/promotions/2026/kids-eat-free/Kids-Eat-Free-Desktop_EN.jpg",
-      "publishedAt": "2026-09-01T15:02:04.228Z",
-      "observedAt": "2026-09-01T15:23:45.256Z",
+      "publishedAt": "2026-09-03T18:58:20.195Z",
+      "observedAt": "2026-09-03T20:05:08.467Z",
       "signalMatches": {
         "specials": [
           "offer",
@@ -36881,8 +37426,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Be the first to get your digital Kids Card online with the early bird sale! Remember, a $5 donation to a local charity in your community gives you 5 FREE Kids Meals. Get your Kids Card today!",
       "postUrl": "https://bostonpizza.com/en/promotions/kidscard.html",
       "mediaUrl": "https://bostonpizza.com/content/dam/bostonpizza/promotions/2026/kids-cards/kids-01-EN-Desktop.png",
-      "publishedAt": "2026-09-01T15:00:28.612Z",
-      "observedAt": "2026-09-01T15:23:45.439Z",
+      "publishedAt": "2026-09-03T18:58:13.175Z",
+      "observedAt": "2026-09-03T20:05:08.661Z",
       "signalMatches": {
         "specials": [
           "offer",
@@ -36924,8 +37469,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Lunch Menu | Boston Pizza Menu Promotions Locations Rewards Gift Cards FR EN ORDER NOW A FAST LUNCH DOESN'T HAVE TO MEAN FAST FOOD. GRAB LUNCH AT BOSTON PIZZA!&lt;/h1>\\r\\n\"}}\"> A FAST LUNCH DOESN'T HAVE TO MEAN FAST FOOD. GRAB LUNCH AT BOSTON PIZZA! We get it, lunch breaks are short. That's why our NEW Lunch Menu delivers within 20 minutes or your next lunch is on us!*&lt;/p>\\r\\n&lt;p class=\\\"b6-do6-banner--custom...",
       "postUrl": "https://bostonpizza.com/en/promotions/lunch-menu.html",
       "mediaUrl": "https://bostonpizza.com/content/dam/bostonpizza/promotions/2026/$15-fast-lunch/Burger%20-%20Banner%205000x2115.png",
-      "publishedAt": "2026-09-03T18:01:56.751Z",
-      "observedAt": "2026-09-03T18:58:06.448Z",
+      "publishedAt": "2026-09-03T18:58:15.902Z",
+      "observedAt": "2026-09-03T20:05:08.047Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -36979,8 +37524,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Enjoy our new Playoff Menu every game night at BP! Catch all the action on our big screens while indulging in a winning lineup of delicious eats. Whether you're here for the food, the fans, or the fun, BP is the ultimate destination to cheer on your Canadian teams!",
       "postUrl": "https://bostonpizza.com/en/promotions/playoff-feature-menu.html",
       "mediaUrl": "https://bostonpizza.com/content/dam/bostonpizza/promotions/2026/q2-playoffs/Countdown%20Banner.png",
-      "publishedAt": "2026-09-01T15:17:05.752Z",
-      "observedAt": "2026-09-01T15:23:45.725Z",
+      "publishedAt": "2026-09-03T19:29:05.931Z",
+      "observedAt": "2026-09-03T20:05:08.840Z",
       "signalMatches": {
         "specials": [
           "feature menu",
@@ -37040,8 +37585,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Summer Promotion | Boston Pizza Menu Promotions Locations Rewards Gift Cards FR EN ORDER NOW DISCOVER YOUR NEXT FAVOURITE ARTIST! Enjoy live music all summer long, at your local Boston Pizza. LIVE MUSIC IS ON THE MENU This year Boston Pizza is turning the volume all the way up! From Victoria Day to Labour Day, we're serving live music at your local Boston Pizza all summer long. More vibes. More energy. More reason...",
       "postUrl": "https://bostonpizza.com/en/promotions/summer-promotion.html",
       "mediaUrl": "https://bostonpizza.com/content/dam/bostonpizza/promotions/2026/summer-live-music/LIVE%20and%20LOCAL%20EN%20Banner.png",
-      "publishedAt": "2026-09-03T18:01:20.539Z",
-      "observedAt": "2026-09-03T18:58:05.882Z",
+      "publishedAt": "2026-09-03T19:21:07.735Z",
+      "observedAt": "2026-09-03T20:05:07.546Z",
       "signalMatches": {
         "specials": [
           "offer",
@@ -37094,8 +37639,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Winter Cravings Menu Promotions Locations Rewards Gift Cards FR EN ORDER NOW Permanent cravings unlocked&lt;/h1>\\r\\n\"}}\" id=\"text-cd501a0e96\" class=\"cmp-text prose lg:prose-lg\"> Permanent cravings unlocked Our new menu is crafted to satisfy your cold‑weather cravings and introduce you to fresh favourites. From exciting new dishes to deliciously seasonal beverages, each item is designed to spark curiosity, inspire...",
       "postUrl": "https://bostonpizza.com/en/promotions/winter-cravings.html",
       "mediaUrl": "https://bostonpizza.com/content/dam/bostonpizza/promotions/2026/q1-5---main-menu-update/Q1.5%20Banner%205000x1916.png",
-      "publishedAt": "2026-09-03T18:51:56.303Z",
-      "observedAt": "2026-09-03T18:58:06.160Z",
+      "publishedAt": "2026-09-03T19:29:06.819Z",
+      "observedAt": "2026-09-03T20:05:07.862Z",
       "signalMatches": {
         "specials": [
           "offer",
@@ -37145,8 +37690,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Boston Pizza, family restaurant and sports bar, offers a great takeout and delivery menu, which includes pizza, pasta, wings & much more!",
       "postUrl": "https://order.bostonpizza.com/en-ca/home",
       "mediaUrl": null,
-      "publishedAt": "2001-08-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:05.868Z",
+      "publishedAt": "2001-08-01T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:07.414Z",
       "signalMatches": {
         "specials": [
           "offer",
@@ -37173,8 +37718,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Brawta Jamaican Jerk Joint 0 Skip to Content ORDER HERE Grafton St Menu Updates Gallery Our Story Visit Us Brawta's Blog Open Menu Close Menu ORDER HERE Grafton St Menu Updates Gallery Our Story Visit Us Brawta's Blog Open Menu Close Menu ORDER HERE Grafton St Menu Updates Gallery Our Story Visit Us Brawta's Blog CLICK HERE TO ORDER! The Best Jerks Providing authentic Jamaican food made with mainly locally sourced...",
       "postUrl": "https://brawtajerk.ca/",
       "mediaUrl": "https://images.squarespace-cdn.com/content/v1/5f47dc734de4ba4d31a626ce/1598545493273-LBHD5HZLTNBA863LRFTC/Brawta-53.jpg",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:06.643Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:07.596Z",
       "signalMatches": {
         "specials": [
           "special"
@@ -37220,8 +37765,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Grafton St Menu &mdash; Brawta Jamaican Jerk Joint 0 Skip to Content ORDER HERE Grafton St Menu Updates Gallery Our Story Visit Us Brawta's Blog Open Menu Close Menu ORDER HERE Grafton St Menu Updates Gallery Our Story Visit Us Brawta's Blog Open Menu Close Menu ORDER HERE Grafton St Menu Updates Gallery Our Story Visit Us Brawta's Blog Our Menu Lunch & Dinner Desserts & Treats meals Yaady: Jerk chicken meal med$1...",
       "postUrl": "https://brawtajerk.ca/menu",
       "mediaUrl": "https://images.squarespace-cdn.com/content/v1/5f47dc734de4ba4d31a626ce/6ac88bf8-4de2-48c5-9110-96069a5de4f1/banner+2.jpg",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:06.964Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:08.027Z",
       "signalMatches": {
         "specials": [
           "offer"
@@ -37272,7 +37817,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.ubereats.com/ca",
       "mediaUrl": "https://tb-static.uber.com/prod/web-eats-v2/open-graph/uber-eats.jpg",
       "publishedAt": "2000-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:23:45.191Z",
+      "observedAt": "2026-09-03T20:05:04.828Z",
       "signalMatches": {
         "specials": [
           "promo",
@@ -37301,8 +37846,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "View and manage your profile information.",
       "postUrl": "https://dal.mydininghub.ca/en/account?section=my-menu",
       "mediaUrl": null,
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:07.275Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:08.217Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -37338,8 +37883,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Enjoy delicious meals, coffee, snacks, and more at these dining locations.",
       "postUrl": "https://dal.mydininghub.ca/en/locations",
       "mediaUrl": null,
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:07.665Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:08.077Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -37363,8 +37908,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "associationBasis": "official_site_linked_page",
       "confidence": "official_source_page_signal",
       "reviewState": "source_signal",
-      "discoveryReason": "first_party_menu",
-      "sourceLabel": "Locations & Menus"
+      "discoveryReason": "official_homepage",
+      "sourceLabel": "Official website"
     },
     {
       "id": "official-page-eede2e08c5d8e2d3f9",
@@ -37375,8 +37920,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "IRY BAR Have Fun. Coffee Contact Cart 0 CAFÉ GOODLUCK DAIRY BAR Have Fun. Coffee Café Goodluck Contact CAFÉ GOODLUCK A friendly neighbourhood café in beautiful downtown Dartmouth. Offering specialty coffee roasted right here in dartmouth, fresh pastries, a full brunch menu for dine-in or takeaway, and a selection of local and housemade goods for all your home cooking endeavours. Cafe Open 8am-4pm every Day. Kitche...",
       "postUrl": "https://cafegoodluck.ca/goodluck",
       "mediaUrl": "https://images.squarespace-cdn.com/content/v1/54c16f23e4b02a2061ab9e1c/f008d8af-0593-43b6-8975-b2815fb371ed/Header.jpg",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:07.760Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:09.128Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -37417,7 +37962,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://silverpay.app/cafelunette/menu",
       "mediaUrl": null,
       "publishedAt": null,
-      "observedAt": "2026-09-03T18:58:08.391Z",
+      "observedAt": "2026-09-03T20:05:09.970Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -37441,7 +37986,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.cafelunette.com/",
       "mediaUrl": "https://www.cafelunette.com/wp-content/uploads/2025/10/DSC_3591-1-683x1024.jpg",
       "publishedAt": "2026-03-27T17:58:20.000Z",
-      "observedAt": "2026-09-03T18:58:08.370Z",
+      "observedAt": "2026-09-03T20:05:09.844Z",
       "signalMatches": {
         "happy_hour": [
           "happy hour"
@@ -37509,7 +38054,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.cafelunette.com/bistro-menu/",
       "mediaUrl": "https://www.cafelunette.com/wp-content/uploads/2026/03/013A5850-Edit-scaled.jpg",
       "publishedAt": "2560-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:08.640Z",
+      "observedAt": "2026-09-03T20:05:10.156Z",
       "signalMatches": {
         "happy_hour": [
           "happy hour"
@@ -37572,7 +38117,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.cafelunette.com/cafe-menu/",
       "mediaUrl": "https://www.cafelunette.com/wp-content/uploads/2025/10/CafeLunette_ToGo2025-8969-e1774633223183-1024x1006.jpg",
       "publishedAt": "2026-03-27T17:51:53.000Z",
-      "observedAt": "2026-09-03T18:58:09.279Z",
+      "observedAt": "2026-09-03T20:05:10.832Z",
       "signalMatches": {
         "happy_hour": [
           "happy hour"
@@ -37640,7 +38185,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.cafelunette.com/private-events/",
       "mediaUrl": "https://www.cafelunette.com/wp-content/uploads/2022/08/Cafe-Lunette-291-scaled.jpg",
       "publishedAt": "2560-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:08.961Z",
+      "observedAt": "2026-09-03T20:05:10.527Z",
       "signalMatches": {
         "happy_hour": [
           "happy hour"
@@ -37699,7 +38244,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.cafelunette.com/your-parisian-patio-awaits/",
       "mediaUrl": "https://www.cafelunette.com/wp-content/uploads/2026/05/A28A8116edit-scaled.jpg",
       "publishedAt": "2560-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-01T15:23:47.475Z",
+      "observedAt": "2026-09-03T20:05:11.144Z",
       "signalMatches": {
         "happy_hour": [
           "happy hour"
@@ -37762,7 +38307,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.cantongardenns.com/yik8nsx2/restaurant/order-online?menu=All+Day+Menu",
       "mediaUrl": "https://www.cantongardenns.com/yik8nsx2/opengraph-image-co490f/og-image?b6544dd16ceef7a0",
       "publishedAt": "1200-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:09.167Z",
+      "observedAt": "2026-09-03T20:05:10.374Z",
       "signalMatches": {
         "specials": [
           "special"
@@ -37831,7 +38376,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.cantongardenns.com/yik8nsx2/restaurant/order-online?menu=Lunch+Menu",
       "mediaUrl": "https://www.cantongardenns.com/yik8nsx2/opengraph-image-co490f/og-image?b6544dd16ceef7a0",
       "publishedAt": "1200-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:09.998Z",
+      "observedAt": "2026-09-03T20:05:10.877Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -37897,7 +38442,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.cantongardenns.com/yik8nsx2/restaurant/order-online?utm_source=redirect&utm_medium=cantongardenhalifax.com",
       "mediaUrl": "https://www.cantongardenns.com/yik8nsx2/opengraph-image-co490f/og-image?b6544dd16ceef7a0",
       "publishedAt": "1200-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:08.732Z",
+      "observedAt": "2026-09-03T20:05:10.095Z",
       "signalMatches": {
         "specials": [
           "special"
@@ -37966,7 +38511,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.cantongardenns.com/yik8nsx2/restaurant/order-online/menus/all-day-menu/42050420?menu=All+Day+Menu&category=Appetizers",
       "mediaUrl": null,
       "publishedAt": null,
-      "observedAt": "2026-09-03T18:58:10.666Z",
+      "observedAt": "2026-09-03T20:05:11.344Z",
       "signalMatches": {
         "specials": [
           "special"
@@ -38035,7 +38580,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.cantongardenns.com/yik8nsx2/restaurant/order-online/menus/all-day-menu/42050421?menu=All+Day+Menu&category=Appetizers",
       "mediaUrl": null,
       "publishedAt": null,
-      "observedAt": "2026-09-03T18:58:11.142Z",
+      "observedAt": "2026-09-03T20:05:11.794Z",
       "signalMatches": {
         "specials": [
           "special"
@@ -38104,7 +38649,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.cantongardenns.com/yik8nsx2/restaurant/order-online/menus/all-day-menu/42050422?menu=All+Day+Menu&category=Appetizers",
       "mediaUrl": null,
       "publishedAt": null,
-      "observedAt": "2026-09-03T18:58:11.624Z",
+      "observedAt": "2026-09-03T20:05:12.342Z",
       "signalMatches": {
         "specials": [
           "special"
@@ -38173,7 +38718,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.cantongardenns.com/yik8nsx2/restaurant/order-online/menus/all-day-menu/42050423?menu=All+Day+Menu&category=Appetizers",
       "mediaUrl": null,
       "publishedAt": null,
-      "observedAt": "2026-09-01T15:23:50.153Z",
+      "observedAt": "2026-09-03T20:05:12.659Z",
       "signalMatches": {
         "specials": [
           "special"
@@ -38242,7 +38787,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.cantongardenns.com/yik8nsx2/restaurant/order-online/menus/all-day-menu/42050424?menu=All+Day+Menu&category=Appetizers",
       "mediaUrl": null,
       "publishedAt": null,
-      "observedAt": "2026-09-01T15:23:50.552Z",
+      "observedAt": "2026-09-03T20:05:13.044Z",
       "signalMatches": {
         "specials": [
           "special"
@@ -38311,7 +38856,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.cantongardenns.com/yik8nsx2/restaurant/order-online/menus/all-day-menu/42050425?menu=All+Day+Menu&category=Appetizers",
       "mediaUrl": null,
       "publishedAt": null,
-      "observedAt": "2026-09-01T15:23:50.969Z",
+      "observedAt": "2026-09-03T20:05:13.444Z",
       "signalMatches": {
         "specials": [
           "special"
@@ -38380,7 +38925,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.cantongardenns.com/yik8nsx2/restaurant/order-online/menus/all-day-menu/42050426?menu=All+Day+Menu&category=Appetizers",
       "mediaUrl": null,
       "publishedAt": null,
-      "observedAt": "2026-09-01T15:23:51.550Z",
+      "observedAt": "2026-09-03T20:05:14.046Z",
       "signalMatches": {
         "specials": [
           "special"
@@ -38448,8 +38993,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Your browser is ancient! Upgrade to a different browser or install Google Chrome Frame to experience this site. Menu Beer Online Shop Cart Contact Us Blog That’s right! Great beer with a bad attitude, from Greg Nash and Andrew Murphy . Now pouring Hoppy Fingers APA, Exile on North Street IPA, Twelve Years to Zion DIPA, Double Orange Ale DIPA, and Nàzev Piva Czech-style Pilsner. Store hours: Monday closed Tuesday-S...",
       "postUrl": "https://unfuckingfiltered.com/",
       "mediaUrl": null,
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:10.192Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:11.362Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -38498,7 +39043,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://cheesecurdsgourmetburgersandpoutinerie.unuhub.net/",
       "mediaUrl": null,
       "publishedAt": null,
-      "observedAt": "2026-09-03T18:58:10.813Z",
+      "observedAt": "2026-09-03T20:05:11.673Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -38528,7 +39073,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://citytvplus.ca/brands/foodnetwork",
       "mediaUrl": "https://production.static-d3-rogent.com/api/shain/v1/dataservice/ResizeImage/$value?Format=&#x27;jpg&#x27;&amp;Quality=75&amp;ImageId=&#x27;240777&#x27;&amp;EntityType=&#x27;Item&#x27;&amp;EntityId=&#x27;130343&#x27;&amp;Width=720&amp;Height=540&amp;ResizeAction=&#x27;fill&#x27;&amp;HorizontalAlignment=&#x27;center&#x27;&amp;VerticalAlignment=&#x27;top&#x27;",
       "publishedAt": null,
-      "observedAt": "2026-09-03T18:58:11.099Z",
+      "observedAt": "2026-09-03T20:05:12.143Z",
       "signalMatches": {
         "specials": [
           "offer",
@@ -38560,8 +39105,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Cheese Curds Gourmet Burgers + Poutinerie. Halifax",
       "postUrl": "https://www.cheesecurdsburgers.com/",
       "mediaUrl": "https://images.squarespace-cdn.com/content/v1/53e3cc1de4b04a78ec271c4f/1584043735607-HJVEOANIMOHAMCLCSKW1/Best-Burgers%4010x-e1567750291520.png",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:10.937Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:11.843Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -38597,8 +39142,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "FEATURE MENU &mdash; Cheese Curds Gourmet Burgers + Poutinerie HOME ABOUT LOCATIONS MENU GLUTEN FREE INFO NUTRITIONAL INFO PHOTOS CAREERS NEWS INSPIRED CHEF INSPIRED® FRANCHISING CONTACT Menu It's Worth the Wait HOME ABOUT LOCATIONS MENU GLUTEN FREE INFO NUTRITIONAL INFO PHOTOS CAREERS NEWS INSPIRED CHEF INSPIRED® FRANCHISING CONTACT ORDER ONLINE Certificate of Excellence 2013 - 2025 Our Feature Menu Available for...",
       "postUrl": "https://www.cheesecurdsburgers.com/featuremenu",
       "mediaUrl": "https://images.squarespace-cdn.com/content/v1/53e3cc1de4b04a78ec271c4f/1584043735607-HJVEOANIMOHAMCLCSKW1/Best-Burgers%4010x-e1567750291520.png",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:11.567Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:12.461Z",
       "signalMatches": {
         "specials": [
           "feature menu",
@@ -38634,8 +39179,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Now Open in 6 locations, Woodside & Burnside in Dartmouth, NS, Larry Uteck & Clayton Park in Halifax, NS, Truro, NS, and Oromocto, NB.",
       "postUrl": "https://www.cheesecurdsburgers.com/locations",
       "mediaUrl": "https://images.squarespace-cdn.com/content/v1/53e3cc1de4b04a78ec271c4f/1584043735607-HJVEOANIMOHAMCLCSKW1/Best-Burgers%4010x-e1567750291520.png",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:11.394Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:12.293Z",
       "signalMatches": {
         "openings": [
           "now open"
@@ -38670,8 +39215,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Our gourmet burgers are made fresh with each order. Our menu is available for both dine in and take-out.",
       "postUrl": "https://www.cheesecurdsburgers.com/menu",
       "mediaUrl": "https://images.squarespace-cdn.com/content/v1/53e3cc1de4b04a78ec271c4f/1584043735607-HJVEOANIMOHAMCLCSKW1/Best-Burgers%4010x-e1567750291520.png",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:11.222Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:12.122Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -38704,7 +39249,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://citytvplus.ca/brands/foodnetwork",
       "mediaUrl": "https://production.static-d3-rogent.com/api/shain/v1/dataservice/ResizeImage/$value?Format=&#x27;jpg&#x27;&amp;Quality=75&amp;ImageId=&#x27;240777&#x27;&amp;EntityType=&#x27;Item&#x27;&amp;EntityId=&#x27;130343&#x27;&amp;Width=720&amp;Height=540&amp;ResizeAction=&#x27;fill&#x27;&amp;HorizontalAlignment=&#x27;center&#x27;&amp;VerticalAlignment=&#x27;top&#x27;",
       "publishedAt": null,
-      "observedAt": "2026-09-03T18:58:11.559Z",
+      "observedAt": "2026-09-03T20:05:12.625Z",
       "signalMatches": {
         "specials": [
           "offer",
@@ -38736,8 +39281,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Cheese Curds Gourmet Burgers + Poutinerie. Halifax",
       "postUrl": "https://www.cheesecurdsburgers.com/",
       "mediaUrl": "https://images.squarespace-cdn.com/content/v1/53e3cc1de4b04a78ec271c4f/1584043735607-HJVEOANIMOHAMCLCSKW1/Best-Burgers%4010x-e1567750291520.png",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:11.740Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:12.625Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -38773,8 +39318,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "FEATURE MENU &mdash; Cheese Curds Gourmet Burgers + Poutinerie HOME ABOUT LOCATIONS MENU GLUTEN FREE INFO NUTRITIONAL INFO PHOTOS CAREERS NEWS INSPIRED CHEF INSPIRED® FRANCHISING CONTACT Menu It's Worth the Wait HOME ABOUT LOCATIONS MENU GLUTEN FREE INFO NUTRITIONAL INFO PHOTOS CAREERS NEWS INSPIRED CHEF INSPIRED® FRANCHISING CONTACT ORDER ONLINE Certificate of Excellence 2013 - 2025 Our Feature Menu Available for...",
       "postUrl": "https://www.cheesecurdsburgers.com/featuremenu",
       "mediaUrl": "https://images.squarespace-cdn.com/content/v1/53e3cc1de4b04a78ec271c4f/1584043735607-HJVEOANIMOHAMCLCSKW1/Best-Burgers%4010x-e1567750291520.png",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:12.265Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:13.125Z",
       "signalMatches": {
         "specials": [
           "feature menu",
@@ -38810,8 +39355,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Now Open in 6 locations, Woodside & Burnside in Dartmouth, NS, Larry Uteck & Clayton Park in Halifax, NS, Truro, NS, and Oromocto, NB.",
       "postUrl": "https://www.cheesecurdsburgers.com/locations",
       "mediaUrl": "https://images.squarespace-cdn.com/content/v1/53e3cc1de4b04a78ec271c4f/1584043735607-HJVEOANIMOHAMCLCSKW1/Best-Burgers%4010x-e1567750291520.png",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:12.087Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:12.960Z",
       "signalMatches": {
         "openings": [
           "now open"
@@ -38846,8 +39391,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Our gourmet burgers are made fresh with each order. Our menu is available for both dine in and take-out.",
       "postUrl": "https://www.cheesecurdsburgers.com/menu",
       "mediaUrl": "https://images.squarespace-cdn.com/content/v1/53e3cc1de4b04a78ec271c4f/1584043735607-HJVEOANIMOHAMCLCSKW1/Best-Burgers%4010x-e1567750291520.png",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:11.916Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:12.795Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -38879,8 +39424,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "TouchBistro - Online Ordering",
       "postUrl": "https://order.tbdine.com/pickup/22146/menu",
       "mediaUrl": null,
-      "publishedAt": "2001-03-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:11.821Z",
+      "publishedAt": "2001-03-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:12.877Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -38903,8 +39448,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Chinatown Restaurant – Chinatown Restaurant in Halifax 跳至内容 Home About Us Menu 中文菜单 Chinese Menu 点心菜单 Dim Sum Menu Contact Us Order Online Order Online Home About Us Menu 中文菜单 Chinese Menu 点心菜单 Dim Sum Menu Contact Us CHINATOWN RESTAURANT Online ordering is available now! Takeout or delivery please call (902) 443-2444 Order Online Explore Menu ** Dine in Chinatown, Get Rewarded! ** Spent more than $25 before tax,...",
       "postUrl": "https://www.chinatownhalifax.com/",
       "mediaUrl": "https://www.chinatownhalifax.com/wp-content/uploads/2024/08/chinatown-gift-card-3-1024x960.png",
-      "publishedAt": "2001-07-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:11.772Z",
+      "publishedAt": "2001-07-01T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:12.392Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -38940,8 +39485,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "中文菜单 Chinese Menu – Chinatown Restaurant 跳至内容 Home About Us Menu 中文菜单 Chinese Menu 点心菜单 Dim Sum Menu Contact Us Order Online Order Online Home About Us Menu 中文菜单 Chinese Menu 点心菜单 Dim Sum Menu Contact Us Best Choice Our Menu. Regular & Take out Menu 中文菜单（Chinese Menu） 点心菜单（Dim Sum Menu） 中文菜单 Chinese Menu 汤类 Soup 海皇鱼肚羹 Fish Maw with Seafood Soup SM $18.95 LG $22.95 海鲜豆腐羹 Seafood with Bean Curd Thick Soup SM $18.95...",
       "postUrl": "https://www.chinatownhalifax.com/chinese-menu/",
       "mediaUrl": null,
-      "publishedAt": "2001-07-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:12.444Z",
+      "publishedAt": "2001-07-01T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:12.894Z",
       "signalMatches": {
         "specials": [
           "special"
@@ -38980,8 +39525,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Contact Us – Chinatown Restaurant 跳至内容 Home About Us Menu 中文菜单 Chinese Menu 点心菜单 Dim Sum Menu Contact Us Order Online Order Online Home About Us Menu 中文菜单 Chinese Menu 点心菜单 Dim Sum Menu Contact Us Reserve A Table Contact Us. Are You Hungry? Reserve A Table Takeout or delivery please call (902)443-2444 Open Hours Monday 4PM --- 9PM Tuesday Closed Wednesday 3PM --- 9PM Thursday 3PM --- 10PM Friday 3PM --- 10PM Sat &...",
       "postUrl": "https://www.chinatownhalifax.com/contact-us/",
       "mediaUrl": null,
-      "publishedAt": "2001-07-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:12.835Z",
+      "publishedAt": "2001-07-01T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:13.261Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -39017,8 +39562,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "点心菜单 Dim Sum Menu – Chinatown Restaurant 跳至内容 Home About Us Menu 中文菜单 Chinese Menu 点心菜单 Dim Sum Menu Contact Us Order Online Order Online Home About Us Menu 中文菜单 Chinese Menu 点心菜单 Dim Sum Menu Contact Us Best Choice Our Menu. Regular & Take out Menu 中文菜单（Chinese Menu） 点心菜单（Dim Sum Menu） 点心菜单 Dim Sum Menu Welcome to Chinatown You can enjoy delicious food with your family and friends in Chinatown. Reserve Table Or C...",
       "postUrl": "https://www.chinatownhalifax.com/dim-sum-menu/",
       "mediaUrl": "https://www.chinatownhalifax.com/wp-content/uploads/2025/03/%E7%82%B9%E5%BF%83%E9%A4%90%E7%89%8C-2048x1325.jpg",
-      "publishedAt": "2001-07-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:12.638Z",
+      "publishedAt": "2001-07-01T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:13.078Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -39054,8 +39599,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Menu – Chinatown Restaurant 跳至内容 Home About Us Menu 中文菜单 Chinese Menu 点心菜单 Dim Sum Menu Contact Us Order Online Order Online Home About Us Menu 中文菜单 Chinese Menu 点心菜单 Dim Sum Menu Contact Us Best Choice Our Menu. Regular & Take out Menu 中文菜单（Chinese Menu） 点心菜单（Dim Sum Menu） Regular & Take Out Menu Appetizers Mini Spring Rolls(2PC) $3.45 Crispy Spring Rolls(Vegetarian) with Noodle $3.15 Egg Roll $2.75 Barbecue Pork...",
       "postUrl": "https://www.chinatownhalifax.com/menu/",
       "mediaUrl": null,
-      "publishedAt": "2001-07-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:12.226Z",
+      "publishedAt": "2001-07-01T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:12.694Z",
       "signalMatches": {
         "specials": [
           "special"
@@ -39095,8 +39640,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "CHKN CHOP Cart 0 Hours Menu Contact Location Cart 0 Hours Menu Contact Location Scroll New Page New Page CHKNCHOP 6041 north street, Halifax, Canada 9024060690 info@chknchop.com Hours Tue 11:30am to 10pm Wed 11:30am to 10pm Thu 11:30am to 10pm Fri 11:30am to 10pm Sat 11:30am to 10pm",
       "postUrl": "https://www.chknchop.com/",
       "mediaUrl": "https://images.squarespace-cdn.com/content/v1/595fc19ae4fcb53915024e3f/1775830986126-E6E6TRAI8A4BQ22JWQ88/image-asset.jpeg",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:12.135Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:13.277Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -39132,8 +39677,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Menu &mdash; CHKN CHOP Cart 0 Hours Menu Contact Location Cart 0 Hours Menu Contact Location Menu Download Menu Download DRanks menu CHKNCHOP 6041 north street, Halifax, Canada 9024060690 info@chknchop.com Hours Tue 11:30am to 10pm Wed 11:30am to 10pm Thu 11:30am to 10pm Fri 11:30am to 10pm Sat 11:30am to 10pm",
       "postUrl": "https://www.chknchop.com/menu",
       "mediaUrl": "https://images.squarespace-cdn.com/content/v1/595fc19ae4fcb53915024e3f/27d0f83c-d3e4-4b24-80f8-f5829bfa503d/MENU+aug+24+2026+%5BRecovered%5D.jpg",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:12.427Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:13.711Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -39170,7 +39715,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.chezcora.com/en/",
       "mediaUrl": "https://www.chezcora.com/wp-content/uploads/2026/05/131_INT25_SiteWeb_Duo-BD_25-11-25.webp",
       "publishedAt": "2560-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:18.723Z",
+      "observedAt": "2026-09-03T20:05:23.330Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -39320,7 +39865,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.chezcora.com/en/breakfast-lunch-restaurants/halifax-downtown/",
       "mediaUrl": "https://www.chezcora.com/wp-content/uploads/2026/05/131_INT25_SiteWeb_Duo-BD_25-11-25.webp",
       "publishedAt": "2560-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:12.604Z",
+      "observedAt": "2026-09-03T20:05:13.794Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -39544,8 +40089,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Cafés spécialisés, jus, smoothies et boissons chaudes : tout ce qui accompagne ton déjeuner au menu des restaurants Cora.",
       "postUrl": "https://www.chezcora.com/en/menu/beverages/",
       "mediaUrl": "https://e3b2rn3eqfa.exactdn.com/wp-content/uploads/2026/04/131_INT25_SiteWeb_Boissons_19-11-25_V1.webp?strip=all",
-      "publishedAt": "2001-07-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:16.623Z",
+      "publishedAt": "2001-07-01T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:17.687Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -39619,8 +40164,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Cafés spécialisés, jus, smoothies et boissons chaudes : tout ce qui accompagne ton déjeuner au menu des restaurants Cora.",
       "postUrl": "https://www.chezcora.com/en/menu/beverages/",
       "mediaUrl": "https://e3b2rn3eqfa.exactdn.com/wp-content/uploads/2026/04/131_INT25_SiteWeb_Boissons_19-11-25_V1.webp?strip=all",
-      "publishedAt": "2001-07-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:22.259Z",
+      "publishedAt": "2001-07-01T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:26.633Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -39694,8 +40239,81 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Les crêpes Cora garnies de fruits frais : la signature de la maison, déclinée en plusieurs assiettes au menu déjeuner.",
       "postUrl": "https://www.chezcora.com/en/menu/crepes-fruits/",
       "mediaUrl": "https://e3b2rn3eqfa.exactdn.com/wp-content/uploads/2026/04/131_INT25_SiteWeb_Crepe_18-11-25_V1-e1781726208172.webp?strip=all",
-      "publishedAt": "2001-07-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:24.263Z",
+      "publishedAt": "2001-07-01T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:28.560Z",
+      "signalMatches": {
+        "specials": [
+          "promo",
+          "promotion"
+        ],
+        "menu": [
+          "menu",
+          "lunch menu"
+        ],
+        "brunch": [
+          "breakfast"
+        ]
+      },
+      "candidateLinks": [
+        {
+          "url": "https://www.chezcora.com/en/menu/crepes-fruits",
+          "label": "Skip to content"
+        },
+        {
+          "url": "https://www.chezcora.com/en/menus",
+          "label": "Menu"
+        },
+        {
+          "url": "https://order.chezcora.com/?language=en",
+          "label": "Order now"
+        },
+        {
+          "url": "https://www.chezcora.com/en/newsletter",
+          "label": "Newsletter"
+        },
+        {
+          "url": "https://www.chezcora.com/en/blog",
+          "label": "Blog"
+        },
+        {
+          "url": "https://www.chezcora.com/menu/crepes-fruits",
+          "label": "FR"
+        },
+        {
+          "url": "https://www.chezcora.com/en/menu/sweet-salty",
+          "label": "Sweet 'n salty"
+        },
+        {
+          "url": "https://www.chezcora.com/en/menu/skillets",
+          "label": "Skillets"
+        },
+        {
+          "url": "https://www.chezcora.com/en/menu/pancakes",
+          "label": "Pancakes"
+        },
+        {
+          "url": "https://www.chezcora.com/en/menu/french-toast",
+          "label": "French toast"
+        }
+      ],
+      "sourceKind": "official_page_html",
+      "associationBasis": "same_site_official_page",
+      "confidence": "official_source_page_signal",
+      "reviewState": "source_signal",
+      "discoveryReason": "first_party_menu",
+      "sourceLabel": "Crêpes"
+    },
+    {
+      "id": "official-page-0530211c683e9ee320",
+      "restaurantId": "osm-node-3799422457-cora",
+      "restaurantName": "Cora",
+      "platform": "official_page",
+      "title": "Crêpes aux fruits frais | Menu déjeuner Cora",
+      "excerpt": "Les crêpes Cora garnies de fruits frais : la signature de la maison, déclinée en plusieurs assiettes au menu déjeuner.",
+      "postUrl": "https://www.chezcora.com/en/menu/crepes-fruits/",
+      "mediaUrl": "https://e3b2rn3eqfa.exactdn.com/wp-content/uploads/2026/04/131_INT25_SiteWeb_Crepe_18-11-25_V1-e1781726208172.webp?strip=all",
+      "publishedAt": "2001-07-01T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:19.623Z",
       "signalMatches": {
         "specials": [
           "promo",
@@ -39911,8 +40529,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Les œufs bénédictine version Cora : muffin anglais, œufs pochés et sauce hollandaise, déclinés en plusieurs variantes au menu déjeuner.",
       "postUrl": "https://www.chezcora.com/en/menu/eggs-ben-and-dictine/",
       "mediaUrl": "https://e3b2rn3eqfa.exactdn.com/wp-content/uploads/2021/08/131_INT25_SiteWeb_BD_26-11-25_V1.webp?strip=all",
-      "publishedAt": "2001-07-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:15.572Z",
+      "publishedAt": "2001-07-01T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:16.635Z",
       "signalMatches": {
         "specials": [
           "promo",
@@ -39984,8 +40602,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Les œufs bénédictine version Cora : muffin anglais, œufs pochés et sauce hollandaise, déclinés en plusieurs variantes au menu déjeuner.",
       "postUrl": "https://www.chezcora.com/en/menu/eggs-ben-and-dictine/",
       "mediaUrl": "https://e3b2rn3eqfa.exactdn.com/wp-content/uploads/2021/08/131_INT25_SiteWeb_BD_26-11-25_V1.webp?strip=all",
-      "publishedAt": "2001-07-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:21.206Z",
+      "publishedAt": "2001-07-01T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:25.674Z",
       "signalMatches": {
         "specials": [
           "promo",
@@ -40339,23 +40957,24 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "sourceLabel": "French toast"
     },
     {
-      "id": "official-page-1e719a81240efb1c97",
+      "id": "official-page-e08c31d2cfdc4dab35",
       "restaurantId": "osm-node-3799422457-cora",
       "restaurantName": "Cora",
       "platform": "official_page",
-      "title": "Fresh fruits – Dining room menu – Cora Breakfast and lunch",
-      "excerpt": "Fresh fruits – Dining room menu – Cora Breakfast and lunch Set your favourite restaurant for a personalized experience. Geolocation Géolocalisation Localisez-moi Display results within km Cora Breakfast and Lunch Open Currently open ∙ Closes at 15:00 (PST) Abbotsford (604) 744-2672 3068 Gladwin Road, Abbotsford, BC V2T5T5 Learn more Reserve now Order Cora Breakfast and Lunch Open Currently open ∙ Closes at 15:00 (...",
+      "title": "Fruits frais | Menu déjeuner Cora",
+      "excerpt": "Les assiettes de fruits frais Cora, servies seules ou en accompagnement de tes crêpes, gaufres et pancakes du matin.",
       "postUrl": "https://www.chezcora.com/en/menu/fresh-fruits/",
-      "mediaUrl": "https://www.chezcora.com/wp-content/uploads/2022/02/cora-twitter-card-tag.jpg",
-      "publishedAt": "2026-05-20T13:28:46.000Z",
-      "observedAt": "2026-09-01T15:23:55.102Z",
+      "mediaUrl": "https://e3b2rn3eqfa.exactdn.com/wp-content/uploads/2021/08/131_INT25_SiteWeb_Samira_18-11-25.webp?strip=all",
+      "publishedAt": "2560-01-01T00:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:21.406Z",
       "signalMatches": {
         "specials": [
-          "offer",
-          "offers"
+          "promo",
+          "promotion"
         ],
         "menu": [
-          "menu"
+          "menu",
+          "lunch menu"
         ],
         "brunch": [
           "breakfast"
@@ -40363,44 +40982,44 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       },
       "candidateLinks": [
         {
-          "url": "https://www.chezcora.com/en/breakfast-lunch-restaurants/cora-abbotsford",
-          "label": "Learn more"
+          "url": "https://www.chezcora.com/en/menu/fresh-fruits",
+          "label": "Skip to content"
         },
         {
-          "url": "https://order.chezcora.com/?language=en&",
-          "label": "Order"
+          "url": "https://www.chezcora.com/en/menus",
+          "label": "Menu"
         },
         {
-          "url": "https://www.chezcora.com/en/breakfast-lunch-restaurants/cora-acadie-montreal",
-          "label": "Learn more"
+          "url": "https://order.chezcora.com/?language=en",
+          "label": "Order now"
         },
         {
-          "url": "https://www.chezcora.com/en/breakfast-lunch-restaurants/cora-adelaide-centre-london",
-          "label": "Learn more"
+          "url": "https://www.chezcora.com/en/newsletter",
+          "label": "Newsletter"
         },
         {
-          "url": "https://www.chezcora.com/en/breakfast-lunch-restaurants/cora-airdrie",
-          "label": "Learn more"
+          "url": "https://www.chezcora.com/en/blog",
+          "label": "Blog"
         },
         {
-          "url": "https://www.chezcora.com/en/breakfast-lunch-restaurants/cora-airport-queen-brampton",
-          "label": "Learn more"
+          "url": "https://www.chezcora.com/menu/fruits-frais",
+          "label": "FR"
         },
         {
-          "url": "https://www.chezcora.com/en/breakfast-lunch-restaurants/cora-alta-vista-ottawa",
-          "label": "Learn more"
+          "url": "https://www.chezcora.com/en/menu/sweet-salty",
+          "label": "Sweet 'n salty"
         },
         {
-          "url": "https://www.chezcora.com/en/breakfast-lunch-restaurants/cora-ancienne-lorette",
-          "label": "Learn more"
+          "url": "https://www.chezcora.com/en/menu/skillets",
+          "label": "Skillets"
         },
         {
-          "url": "https://www.chezcora.com/en/breakfast-lunch-restaurants/cora-barrie",
-          "label": "Learn more"
+          "url": "https://www.chezcora.com/en/menu/pancakes",
+          "label": "Pancakes"
         },
         {
-          "url": "https://www.chezcora.com/en/breakfast-lunch-restaurants/cora-beauport",
-          "label": "Learn more"
+          "url": "https://www.chezcora.com/en/menu/french-toast",
+          "label": "French toast"
         }
       ],
       "sourceKind": "official_page_html",
@@ -40411,23 +41030,24 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "sourceLabel": "Fresh fruit"
     },
     {
-      "id": "official-page-af8b7a3dfecca31eaa",
+      "id": "official-page-a2bc69948806974c51",
       "restaurantId": "osm-node-11867490075-cora",
       "restaurantName": "Cora",
       "platform": "official_page",
-      "title": "Fresh fruits – Dining room menu – Cora Breakfast and lunch",
-      "excerpt": "Fresh fruits – Dining room menu – Cora Breakfast and lunch Set your favourite restaurant for a personalized experience. Geolocation Géolocalisation Localisez-moi Display results within km Cora Breakfast and Lunch Open Currently open ∙ Closes at 15:00 (PST) Abbotsford (604) 744-2672 3068 Gladwin Road, Abbotsford, BC V2T5T5 Learn more Reserve now Order Cora Breakfast and Lunch Open Currently open ∙ Closes at 15:00 (...",
+      "title": "Fruits frais | Menu déjeuner Cora",
+      "excerpt": "Les assiettes de fruits frais Cora, servies seules ou en accompagnement de tes crêpes, gaufres et pancakes du matin.",
       "postUrl": "https://www.chezcora.com/en/menu/fresh-fruits/",
-      "mediaUrl": "https://www.chezcora.com/wp-content/uploads/2022/02/cora-twitter-card-tag.jpg",
-      "publishedAt": "2026-05-20T13:28:46.000Z",
-      "observedAt": "2026-09-01T15:24:08.776Z",
+      "mediaUrl": "https://e3b2rn3eqfa.exactdn.com/wp-content/uploads/2021/08/131_INT25_SiteWeb_Samira_18-11-25.webp?strip=all",
+      "publishedAt": "2560-01-01T00:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:31.339Z",
       "signalMatches": {
         "specials": [
-          "offer",
-          "offers"
+          "promo",
+          "promotion"
         ],
         "menu": [
-          "menu"
+          "menu",
+          "lunch menu"
         ],
         "brunch": [
           "breakfast"
@@ -40435,44 +41055,44 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       },
       "candidateLinks": [
         {
-          "url": "https://www.chezcora.com/en/breakfast-lunch-restaurants/cora-abbotsford",
-          "label": "Learn more"
+          "url": "https://www.chezcora.com/en/menu/fresh-fruits",
+          "label": "Skip to content"
         },
         {
-          "url": "https://order.chezcora.com/?language=en&",
-          "label": "Order"
+          "url": "https://www.chezcora.com/en/menus",
+          "label": "Menu"
         },
         {
-          "url": "https://www.chezcora.com/en/breakfast-lunch-restaurants/cora-acadie-montreal",
-          "label": "Learn more"
+          "url": "https://order.chezcora.com/?language=en",
+          "label": "Order now"
         },
         {
-          "url": "https://www.chezcora.com/en/breakfast-lunch-restaurants/cora-adelaide-centre-london",
-          "label": "Learn more"
+          "url": "https://www.chezcora.com/en/newsletter",
+          "label": "Newsletter"
         },
         {
-          "url": "https://www.chezcora.com/en/breakfast-lunch-restaurants/cora-airdrie",
-          "label": "Learn more"
+          "url": "https://www.chezcora.com/en/blog",
+          "label": "Blog"
         },
         {
-          "url": "https://www.chezcora.com/en/breakfast-lunch-restaurants/cora-airport-queen-brampton",
-          "label": "Learn more"
+          "url": "https://www.chezcora.com/menu/fruits-frais",
+          "label": "FR"
         },
         {
-          "url": "https://www.chezcora.com/en/breakfast-lunch-restaurants/cora-alta-vista-ottawa",
-          "label": "Learn more"
+          "url": "https://www.chezcora.com/en/menu/sweet-salty",
+          "label": "Sweet 'n salty"
         },
         {
-          "url": "https://www.chezcora.com/en/breakfast-lunch-restaurants/cora-ancienne-lorette",
-          "label": "Learn more"
+          "url": "https://www.chezcora.com/en/menu/skillets",
+          "label": "Skillets"
         },
         {
-          "url": "https://www.chezcora.com/en/breakfast-lunch-restaurants/cora-barrie",
-          "label": "Learn more"
+          "url": "https://www.chezcora.com/en/menu/pancakes",
+          "label": "Pancakes"
         },
         {
-          "url": "https://www.chezcora.com/en/breakfast-lunch-restaurants/cora-beauport",
-          "label": "Learn more"
+          "url": "https://www.chezcora.com/en/menu/french-toast",
+          "label": "French toast"
         }
       ],
       "sourceKind": "official_page_html",
@@ -40481,6 +41101,79 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "reviewState": "source_signal",
       "discoveryReason": "first_party_menu",
       "sourceLabel": "Fresh fruit"
+    },
+    {
+      "id": "official-page-2b0e357494bc008954",
+      "restaurantId": "osm-node-11867490075-cora",
+      "restaurantName": "Cora",
+      "platform": "official_page",
+      "title": "Menu enfants — Déjeuner pour les petits | Cora",
+      "excerpt": "Des portions adaptées aux plus jeunes chez Cora : crêpes, œufs, pancakes et fruits frais, pensés pour les petits appétits du matin.",
+      "postUrl": "https://www.chezcora.com/en/menu/kids-menu/",
+      "mediaUrl": "https://e3b2rn3eqfa.exactdn.com/wp-content/uploads/2026/04/131_INT25_SiteWeb_Enfants_20-11-25_V1.webp?strip=all",
+      "publishedAt": "2001-07-01T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:33.188Z",
+      "signalMatches": {
+        "specials": [
+          "promo",
+          "promotion"
+        ],
+        "menu": [
+          "menu",
+          "lunch menu"
+        ],
+        "brunch": [
+          "breakfast"
+        ]
+      },
+      "candidateLinks": [
+        {
+          "url": "https://www.chezcora.com/en/menu/kids-menu",
+          "label": "Skip to content"
+        },
+        {
+          "url": "https://www.chezcora.com/en/menus",
+          "label": "Menu"
+        },
+        {
+          "url": "https://order.chezcora.com/?language=en",
+          "label": "Order now"
+        },
+        {
+          "url": "https://www.chezcora.com/en/newsletter",
+          "label": "Newsletter"
+        },
+        {
+          "url": "https://www.chezcora.com/en/blog",
+          "label": "Blog"
+        },
+        {
+          "url": "https://www.chezcora.com/menu/menu-enfants",
+          "label": "FR"
+        },
+        {
+          "url": "https://www.chezcora.com/en/menu/sweet-salty",
+          "label": "Sweet 'n salty"
+        },
+        {
+          "url": "https://www.chezcora.com/en/menu/skillets",
+          "label": "Skillets"
+        },
+        {
+          "url": "https://www.chezcora.com/en/menu/pancakes",
+          "label": "Pancakes"
+        },
+        {
+          "url": "https://www.chezcora.com/en/menu/french-toast",
+          "label": "French toast"
+        }
+      ],
+      "sourceKind": "official_page_html",
+      "associationBasis": "same_site_official_page",
+      "confidence": "official_source_page_signal",
+      "reviewState": "source_signal",
+      "discoveryReason": "first_party_menu",
+      "sourceLabel": "Kids' menu"
     },
     {
       "id": "official-page-f49bbec287f69029d1",
@@ -40635,8 +41328,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Les cassolettes Cora : pommes de terre, œufs et garnitures servis bien chauds, pour un déjeuner réconfortant et généreux.",
       "postUrl": "https://www.chezcora.com/en/menu/skillets/",
       "mediaUrl": "https://e3b2rn3eqfa.exactdn.com/wp-content/uploads/2026/04/131_INT25_SiteWeb_Cassolette_20-11-25_V1-e1781726052335.webp?strip=all",
-      "publishedAt": "2001-07-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:17.680Z",
+      "publishedAt": "2001-07-01T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:18.692Z",
       "signalMatches": {
         "specials": [
           "promo",
@@ -40708,8 +41401,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Les cassolettes Cora : pommes de terre, œufs et garnitures servis bien chauds, pour un déjeuner réconfortant et généreux.",
       "postUrl": "https://www.chezcora.com/en/menu/skillets/",
       "mediaUrl": "https://e3b2rn3eqfa.exactdn.com/wp-content/uploads/2026/04/131_INT25_SiteWeb_Cassolette_20-11-25_V1-e1781726052335.webp?strip=all",
-      "publishedAt": "2001-07-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:23.263Z",
+      "publishedAt": "2001-07-01T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:27.570Z",
       "signalMatches": {
         "specials": [
           "promo",
@@ -40917,23 +41610,172 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "sourceLabel": "Sweet 'n salty"
     },
     {
-      "id": "official-page-59a060afefe63f437f",
+      "id": "official-page-e884873b8e1633dd85",
       "restaurantId": "osm-node-3799422457-cora",
       "restaurantName": "Cora",
       "platform": "official_page",
-      "title": "Waffles – Dining room menu – Cora Breakfast and lunch",
-      "excerpt": "Waffles – Dining room menu – Cora Breakfast and lunch Set your favourite restaurant for a personalized experience. Geolocation Géolocalisation Localisez-moi Display results within km Cora Breakfast and Lunch Open Currently open ∙ Closes at 15:00 (PST) Abbotsford (604) 744-2672 3068 Gladwin Road, Abbotsford, BC V2T5T5 Learn more Reserve now Order Cora Breakfast and Lunch Open Currently open ∙ Closes at 15:00 (EST)...",
-      "postUrl": "https://www.chezcora.com/en/menu/waffles/",
-      "mediaUrl": "https://www.chezcora.com/wp-content/uploads/2022/02/cora-twitter-card-tag.jpg",
-      "publishedAt": "2025-11-10T16:15:47.000Z",
-      "observedAt": "2026-09-01T15:23:58.295Z",
+      "title": "Favoris des ados | Menu déjeuner Cora",
+      "excerpt": "Les assiettes généreuses qui plaisent aux ados chez Cora : portions copieuses et grands classiques du déjeuner.",
+      "postUrl": "https://www.chezcora.com/en/menu/teens-favorites/",
+      "mediaUrl": "https://e3b2rn3eqfa.exactdn.com/wp-content/uploads/2026/04/131_INT25_SiteWeb_Ados_25-11-25_V1.webp?strip=all",
+      "publishedAt": "2001-07-01T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:20.439Z",
       "signalMatches": {
         "specials": [
-          "offer",
-          "offers"
+          "promo",
+          "promotion"
         ],
         "menu": [
-          "menu"
+          "menu",
+          "lunch menu"
+        ],
+        "brunch": [
+          "brunch",
+          "breakfast"
+        ]
+      },
+      "candidateLinks": [
+        {
+          "url": "https://www.chezcora.com/en/menu/teens-favorites",
+          "label": "Skip to content"
+        },
+        {
+          "url": "https://www.chezcora.com/en/menus",
+          "label": "Menu"
+        },
+        {
+          "url": "https://order.chezcora.com/?language=en",
+          "label": "Order now"
+        },
+        {
+          "url": "https://www.chezcora.com/en/newsletter",
+          "label": "Newsletter"
+        },
+        {
+          "url": "https://www.chezcora.com/en/blog",
+          "label": "Blog"
+        },
+        {
+          "url": "https://www.chezcora.com/menu/favoris-des-ados",
+          "label": "FR"
+        },
+        {
+          "url": "https://www.chezcora.com/en/menu/sweet-salty",
+          "label": "Sweet 'n salty"
+        },
+        {
+          "url": "https://www.chezcora.com/en/menu/skillets",
+          "label": "Skillets"
+        },
+        {
+          "url": "https://www.chezcora.com/en/menu/pancakes",
+          "label": "Pancakes"
+        },
+        {
+          "url": "https://www.chezcora.com/en/menu/french-toast",
+          "label": "French toast"
+        }
+      ],
+      "sourceKind": "official_page_html",
+      "associationBasis": "same_site_official_page",
+      "confidence": "official_source_page_signal",
+      "reviewState": "source_signal",
+      "discoveryReason": "first_party_menu",
+      "sourceLabel": "Teen favourites"
+    },
+    {
+      "id": "official-page-67984bc0f93b605d4f",
+      "restaurantId": "osm-node-11867490075-cora",
+      "restaurantName": "Cora",
+      "platform": "official_page",
+      "title": "Favoris des ados | Menu déjeuner Cora",
+      "excerpt": "Les assiettes généreuses qui plaisent aux ados chez Cora : portions copieuses et grands classiques du déjeuner.",
+      "postUrl": "https://www.chezcora.com/en/menu/teens-favorites/",
+      "mediaUrl": "https://e3b2rn3eqfa.exactdn.com/wp-content/uploads/2026/04/131_INT25_SiteWeb_Ados_25-11-25_V1.webp?strip=all",
+      "publishedAt": "2001-07-01T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:29.389Z",
+      "signalMatches": {
+        "specials": [
+          "promo",
+          "promotion"
+        ],
+        "menu": [
+          "menu",
+          "lunch menu"
+        ],
+        "brunch": [
+          "brunch",
+          "breakfast"
+        ]
+      },
+      "candidateLinks": [
+        {
+          "url": "https://www.chezcora.com/en/menu/teens-favorites",
+          "label": "Skip to content"
+        },
+        {
+          "url": "https://www.chezcora.com/en/menus",
+          "label": "Menu"
+        },
+        {
+          "url": "https://order.chezcora.com/?language=en",
+          "label": "Order now"
+        },
+        {
+          "url": "https://www.chezcora.com/en/newsletter",
+          "label": "Newsletter"
+        },
+        {
+          "url": "https://www.chezcora.com/en/blog",
+          "label": "Blog"
+        },
+        {
+          "url": "https://www.chezcora.com/menu/favoris-des-ados",
+          "label": "FR"
+        },
+        {
+          "url": "https://www.chezcora.com/en/menu/sweet-salty",
+          "label": "Sweet 'n salty"
+        },
+        {
+          "url": "https://www.chezcora.com/en/menu/skillets",
+          "label": "Skillets"
+        },
+        {
+          "url": "https://www.chezcora.com/en/menu/pancakes",
+          "label": "Pancakes"
+        },
+        {
+          "url": "https://www.chezcora.com/en/menu/french-toast",
+          "label": "French toast"
+        }
+      ],
+      "sourceKind": "official_page_html",
+      "associationBasis": "same_site_official_page",
+      "confidence": "official_source_page_signal",
+      "reviewState": "source_signal",
+      "discoveryReason": "first_party_menu",
+      "sourceLabel": "Teen favourites"
+    },
+    {
+      "id": "official-page-7d93d68ce5e36cad9d",
+      "restaurantId": "osm-node-3799422457-cora",
+      "restaurantName": "Cora",
+      "platform": "official_page",
+      "title": "Gaufres et garnitures | Menu déjeuner Cora",
+      "excerpt": "Les gaufres Cora, croustillantes dehors et moelleuses dedans, garnies de fruits frais et de garnitures gourmandes au menu déjeuner.",
+      "postUrl": "https://www.chezcora.com/en/menu/waffles/",
+      "mediaUrl": "https://e3b2rn3eqfa.exactdn.com/wp-content/uploads/2026/02/Cora-Hero-top-shot-e1781726757562.jpg?strip=all",
+      "publishedAt": "2010-01-01T00:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:22.369Z",
+      "signalMatches": {
+        "specials": [
+          "promo",
+          "promotion"
+        ],
+        "menu": [
+          "menu",
+          "lunch menu"
         ],
         "brunch": [
           "breakfast"
@@ -40941,44 +41783,44 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       },
       "candidateLinks": [
         {
-          "url": "https://www.chezcora.com/en/breakfast-lunch-restaurants/cora-abbotsford",
-          "label": "Learn more"
+          "url": "https://www.chezcora.com/en/menu/waffles",
+          "label": "Skip to content"
         },
         {
-          "url": "https://order.chezcora.com/?language=en&",
-          "label": "Order"
+          "url": "https://www.chezcora.com/en/menus",
+          "label": "Menu"
         },
         {
-          "url": "https://www.chezcora.com/en/breakfast-lunch-restaurants/cora-acadie-montreal",
-          "label": "Learn more"
+          "url": "https://order.chezcora.com/?language=en",
+          "label": "Order now"
         },
         {
-          "url": "https://www.chezcora.com/en/breakfast-lunch-restaurants/cora-adelaide-centre-london",
-          "label": "Learn more"
+          "url": "https://www.chezcora.com/en/newsletter",
+          "label": "Newsletter"
         },
         {
-          "url": "https://www.chezcora.com/en/breakfast-lunch-restaurants/cora-airdrie",
-          "label": "Learn more"
+          "url": "https://www.chezcora.com/en/blog",
+          "label": "Blog"
         },
         {
-          "url": "https://www.chezcora.com/en/breakfast-lunch-restaurants/cora-airport-queen-brampton",
-          "label": "Learn more"
+          "url": "https://www.chezcora.com/menu/gaufres",
+          "label": "FR"
         },
         {
-          "url": "https://www.chezcora.com/en/breakfast-lunch-restaurants/cora-alta-vista-ottawa",
-          "label": "Learn more"
+          "url": "https://www.chezcora.com/en/menu/sweet-salty",
+          "label": "Sweet 'n salty"
         },
         {
-          "url": "https://www.chezcora.com/en/breakfast-lunch-restaurants/cora-ancienne-lorette",
-          "label": "Learn more"
+          "url": "https://www.chezcora.com/en/menu/skillets",
+          "label": "Skillets"
         },
         {
-          "url": "https://www.chezcora.com/en/breakfast-lunch-restaurants/cora-barrie",
-          "label": "Learn more"
+          "url": "https://www.chezcora.com/en/menu/pancakes",
+          "label": "Pancakes"
         },
         {
-          "url": "https://www.chezcora.com/en/breakfast-lunch-restaurants/cora-beauport",
-          "label": "Learn more"
+          "url": "https://www.chezcora.com/en/menu/french-toast",
+          "label": "French toast"
         }
       ],
       "sourceKind": "official_page_html",
@@ -40989,23 +41831,24 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "sourceLabel": "Waffles"
     },
     {
-      "id": "official-page-6517ae6945b3cec361",
+      "id": "official-page-de96a0e1fcf1776582",
       "restaurantId": "osm-node-11867490075-cora",
       "restaurantName": "Cora",
       "platform": "official_page",
-      "title": "Waffles – Dining room menu – Cora Breakfast and lunch",
-      "excerpt": "Waffles – Dining room menu – Cora Breakfast and lunch Set your favourite restaurant for a personalized experience. Geolocation Géolocalisation Localisez-moi Display results within km Cora Breakfast and Lunch Open Currently open ∙ Closes at 15:00 (PST) Abbotsford (604) 744-2672 3068 Gladwin Road, Abbotsford, BC V2T5T5 Learn more Reserve now Order Cora Breakfast and Lunch Open Currently open ∙ Closes at 15:00 (EST)...",
+      "title": "Gaufres et garnitures | Menu déjeuner Cora",
+      "excerpt": "Les gaufres Cora, croustillantes dehors et moelleuses dedans, garnies de fruits frais et de garnitures gourmandes au menu déjeuner.",
       "postUrl": "https://www.chezcora.com/en/menu/waffles/",
-      "mediaUrl": "https://www.chezcora.com/wp-content/uploads/2022/02/cora-twitter-card-tag.jpg",
-      "publishedAt": "2025-11-10T16:15:47.000Z",
-      "observedAt": "2026-09-01T15:24:12.100Z",
+      "mediaUrl": "https://e3b2rn3eqfa.exactdn.com/wp-content/uploads/2026/02/Cora-Hero-top-shot-e1781726757562.jpg?strip=all",
+      "publishedAt": "2010-01-01T00:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:32.271Z",
       "signalMatches": {
         "specials": [
-          "offer",
-          "offers"
+          "promo",
+          "promotion"
         ],
         "menu": [
-          "menu"
+          "menu",
+          "lunch menu"
         ],
         "brunch": [
           "breakfast"
@@ -41013,44 +41856,44 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       },
       "candidateLinks": [
         {
-          "url": "https://www.chezcora.com/en/breakfast-lunch-restaurants/cora-abbotsford",
-          "label": "Learn more"
+          "url": "https://www.chezcora.com/en/menu/waffles",
+          "label": "Skip to content"
         },
         {
-          "url": "https://order.chezcora.com/?language=en&",
-          "label": "Order"
+          "url": "https://www.chezcora.com/en/menus",
+          "label": "Menu"
         },
         {
-          "url": "https://www.chezcora.com/en/breakfast-lunch-restaurants/cora-acadie-montreal",
-          "label": "Learn more"
+          "url": "https://order.chezcora.com/?language=en",
+          "label": "Order now"
         },
         {
-          "url": "https://www.chezcora.com/en/breakfast-lunch-restaurants/cora-adelaide-centre-london",
-          "label": "Learn more"
+          "url": "https://www.chezcora.com/en/newsletter",
+          "label": "Newsletter"
         },
         {
-          "url": "https://www.chezcora.com/en/breakfast-lunch-restaurants/cora-airdrie",
-          "label": "Learn more"
+          "url": "https://www.chezcora.com/en/blog",
+          "label": "Blog"
         },
         {
-          "url": "https://www.chezcora.com/en/breakfast-lunch-restaurants/cora-airport-queen-brampton",
-          "label": "Learn more"
+          "url": "https://www.chezcora.com/menu/gaufres",
+          "label": "FR"
         },
         {
-          "url": "https://www.chezcora.com/en/breakfast-lunch-restaurants/cora-alta-vista-ottawa",
-          "label": "Learn more"
+          "url": "https://www.chezcora.com/en/menu/sweet-salty",
+          "label": "Sweet 'n salty"
         },
         {
-          "url": "https://www.chezcora.com/en/breakfast-lunch-restaurants/cora-ancienne-lorette",
-          "label": "Learn more"
+          "url": "https://www.chezcora.com/en/menu/skillets",
+          "label": "Skillets"
         },
         {
-          "url": "https://www.chezcora.com/en/breakfast-lunch-restaurants/cora-barrie",
-          "label": "Learn more"
+          "url": "https://www.chezcora.com/en/menu/pancakes",
+          "label": "Pancakes"
         },
         {
-          "url": "https://www.chezcora.com/en/breakfast-lunch-restaurants/cora-beauport",
-          "label": "Learn more"
+          "url": "https://www.chezcora.com/en/menu/french-toast",
+          "label": "French toast"
         }
       ],
       "sourceKind": "official_page_html",
@@ -41070,7 +41913,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.chezcora.com/en/menus/",
       "mediaUrl": "https://www.chezcora.com/wp-content/uploads/2026/05/131_INT25_SiteWeb_Duo-BD_25-11-25.webp",
       "publishedAt": "2560-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:14.043Z",
+      "observedAt": "2026-09-03T20:05:15.059Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -41148,7 +41991,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.chezcora.com/en/menus/",
       "mediaUrl": "https://www.chezcora.com/wp-content/uploads/2026/05/131_INT25_SiteWeb_Duo-BD_25-11-25.webp",
       "publishedAt": "2560-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:19.710Z",
+      "observedAt": "2026-09-03T20:05:24.224Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -41226,7 +42069,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://cremehalifax.com/",
       "mediaUrl": "https://immediac.blob.core.windows.net/cremecafeasiarestaurant/IMG_4799.JPG",
       "publishedAt": null,
-      "observedAt": "2026-09-03T18:58:12.814Z",
+      "observedAt": "2026-09-03T20:05:13.910Z",
       "signalMatches": {
         "specials": [
           "special"
@@ -41279,7 +42122,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://cremehalifax.com/_Products",
       "mediaUrl": null,
       "publishedAt": null,
-      "observedAt": "2026-09-03T18:58:13.561Z",
+      "observedAt": "2026-09-03T20:05:14.491Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -41322,7 +42165,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://cremehalifax.com/menu",
       "mediaUrl": "https://immediac.blob.core.windows.net/cremecafeasiarestaurant/Creme%20Menus/breakfast-menu.png",
       "publishedAt": null,
-      "observedAt": "2026-09-03T18:58:13.389Z",
+      "observedAt": "2026-09-03T20:05:14.342Z",
       "signalMatches": {
         "menu": [
           "menu",
@@ -41366,7 +42209,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.rcr.ca/restaurants/cable-wharf-kitchen-patio/",
       "mediaUrl": "https://www.rcr.ca/content/uploads/2023/04/cable-wharf-kitchen-patio-4-1920x1006.jpg",
       "publishedAt": "2026-07-15T18:57:22.000Z",
-      "observedAt": "2026-09-03T18:58:13.028Z",
+      "observedAt": "2026-09-03T20:05:14.678Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -41418,7 +42261,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.rcr.ca/restaurants/cut-steakhouse/",
       "mediaUrl": "https://www.rcr.ca/content/uploads/2018/02/cut-steakhouse-2.jpg",
       "publishedAt": "2026-07-22T17:22:20.000Z",
-      "observedAt": "2026-09-03T18:58:13.027Z",
+      "observedAt": "2026-09-03T20:05:14.244Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -41470,8 +42313,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Darrell’s is OPEN for IN Dining, Take out and Delivery. Voted #1 Canada’s 10 best Local Burger Joints! Famous for Award-winning Milkshakes, ​pitas and burgers.",
       "postUrl": "https://darrellsrestaurants.com/",
       "mediaUrl": "https://darrellsrestaurants.com/wp-content/uploads/2021/05/Darrells_Restaurant_apple.png",
-      "publishedAt": "2001-08-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:13.472Z",
+      "publishedAt": "2001-08-01T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:14.734Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -41510,7 +42353,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://darrellsrestaurants.com/catering-menu",
       "mediaUrl": "https://darrellsrestaurants.com/wp-content/uploads/2019/06/3.jpg",
       "publishedAt": "2025-04-14T17:47:41.000Z",
-      "observedAt": "2026-09-03T18:58:13.903Z",
+      "observedAt": "2026-09-03T20:05:14.960Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -41542,8 +42385,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "A Dartmouth must-visit destination for food and drink lovers. Our menu is filled with delicious seasonal plates that are sure to satisfy any craving. But what really sets us apart are our award-winning cocktails and oysters. Voted best in the area, our skilled bartenders craft masterful drinks using the freshest ingred",
       "postUrl": "https://dearfriendbar.com/",
       "mediaUrl": "https://dearfriendbar.com/assets/images/share.jpg?v=0108bfbb",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:00.648Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:01.648Z",
       "signalMatches": {
         "specials": [
           "offer"
@@ -41585,7 +42428,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://donninispizza.brygid.online/zgrid/proc/site/sitep.jsp",
       "mediaUrl": "https://storage.googleapis.com/bro-cdn1/zgrid/themes/13662/images/assets/facebook.png",
       "publishedAt": "2001-08-01T03:00:00.000Z",
-      "observedAt": "2026-09-01T15:23:52.556Z",
+      "observedAt": "2026-09-03T20:05:15.111Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -41626,7 +42469,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://donninispizza.com/",
       "mediaUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWsfxN3MF70iLPP-uEItfCq0qhyThDX0-zarX3N3Cng3DKox4wN=s120-c-rp-mo-br100",
       "publishedAt": "2025-02-10T15:57:38.000Z",
-      "observedAt": "2026-09-03T18:58:14.441Z",
+      "observedAt": "2026-09-03T20:05:15.111Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -41669,7 +42512,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://donninispizza.com/specials/",
       "mediaUrl": "https://donninispizza.com/wp-content/uploads/2024/05/special_01_medium_pepperoni_pizza_donninis_pizza.jpg",
       "publishedAt": "2025-03-23T01:41:16.000Z",
-      "observedAt": "2026-09-03T18:58:17.498Z",
+      "observedAt": "2026-09-03T20:05:18.209Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -41701,8 +42544,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "ence Entertainment in a new way \" I have enjoyed my lifetime membership through the Dooly's chain since 1998 out of Saint John, NB and two locations in Moncton, NB. Dooly's always offered me the ability to learn and play pool at whatever level I wanted from recreational fun leagues to competitive leagues and tournaments. Dooly's has provided me the ability to grow. I have met some of my lifelong friends through pl...",
       "postUrl": "https://www.doolys.ca/",
       "mediaUrl": "https://images.squarespace-cdn.com/content/v1/59c45bccd55b413ae7e2eee5/1516723613097-J4S5O61VY7HBY0UHXNK9/QualityTimeWithFriends.jpg",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:14.607Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:15.227Z",
       "signalMatches": {
         "specials": [
           "offer",
@@ -41740,8 +42583,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "About Your Event &mdash; Dooly's section2 section3 section4 section5 Home Our Story Locations Membership Billiards Contact Fr section2 section3 section4 section5 Home Our Story Locations Membership Billiards Contact Fr Dooly’s offers the perfect environment for group gatherings of all types and sizes. Whether you’re planning a birthday party, a bachelor or diaper party or corporate mixer, host your event in our re...",
       "postUrl": "https://www.doolys.ca/about-your-event-1",
       "mediaUrl": "https://images.squarespace-cdn.com/content/v1/59c45bccd55b413ae7e2eee5/1509725992415-RVDXGQEZUAW05QJN0LV7/PlanningAnEvent.jpg",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:14.893Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:15.510Z",
       "signalMatches": {
         "specials": [
           "offer",
@@ -41778,8 +42621,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Promotions and Events &mdash; Dooly's section2 section3 section4 section5 Home Our Story Locations Membership Billiards Contact Fr section2 section3 section4 section5 Home Our Story Locations Membership Billiards Contact Fr SUMMER BREAK ALL-YOU-CAN-PLAY POOL FOR $19.99 PER TABLE! VICTORIA DAY TO LABOUR DAY Spring just got Cooler! Thanks for participating! See THE WINNERS! All you can play pool for $24.99! PLUS TAX...",
       "postUrl": "https://www.doolys.ca/promotions-and-events",
       "mediaUrl": "https://images.squarespace-cdn.com/content/v1/59c45bccd55b413ae7e2eee5/1509635780307-KRY43CK343JE1STW4JJU/PromotionsAndEvents.jpg",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:15.068Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:15.674Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -41824,7 +42667,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://doraku.yolasite.com/",
       "mediaUrl": "https://doraku.yolasite.com/resources/CAT%20white%20black%20darker.png.opt133x170o0%2C0s133x170.png",
       "publishedAt": "2001-08-01T03:00:00.000Z",
-      "observedAt": "2026-09-01T15:23:52.708Z",
+      "observedAt": "2026-09-03T20:05:15.643Z",
       "signalMatches": {
         "reservations": [
           "reservation",
@@ -41849,7 +42692,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://downtownpizza.ca/",
       "mediaUrl": "https://downtownpizza.ca/wp-content/plugins/revslider/public/assets/assets/dummy.png",
       "publishedAt": null,
-      "observedAt": "2026-09-03T18:58:15.163Z",
+      "observedAt": "2026-09-03T20:05:15.743Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -41888,8 +42731,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Deal & Offers – Downtown Pizza Skip to content Home Menu Deal & Offers Our Food Gallery Order Now Home Menu Deal & Offers Our Food Gallery Order Now Deal & Offers Home - Deal & Offers COMBO 1 $ 16.99 Small Pizza 5 Toppings Small Garlic Fingers COMBO 2 $ 21.99 Medium Pizza 3 Toppings Small Garlic Fingers COMBO 3 $ 27.99 3 Regular Donairs 2L Pop Explore the new taste Enjoy our luscious dishes wherever you want ORDER...",
       "postUrl": "https://downtownpizza.ca/deals-offers/",
       "mediaUrl": "https://downtownpizza.ca/wp-content/uploads/2023/09/Deal-Page-1-1536x1190.png",
-      "publishedAt": "2001-02-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:16.980Z",
+      "publishedAt": "2001-02-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:16.410Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -41940,8 +42783,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Menu – Downtown Pizza Skip to content Home Menu Deal & Offers Our Food Gallery Order Now Home Menu Deal & Offers Our Food Gallery Order Now Menu Home - Menu DOWNTOWN HISTORY Serving Downtown Pizza, By The Slice Since 1987 Our Pizzahen an unknown printer took a galley type and scrambled make type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essenti...",
       "postUrl": "https://downtownpizza.ca/menu-2/",
       "mediaUrl": "https://downtownpizza.ca/wp-content/uploads/2021/01/about01.jpg",
-      "publishedAt": "2001-02-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:15.473Z",
+      "publishedAt": "2001-02-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:16.077Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -41976,7 +42819,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.foodbooking.com/ordering/restaurant/menu?restaurant_uid=fa1b9c9f-febc-47d6-be99-80793f66e2a2",
       "mediaUrl": null,
       "publishedAt": null,
-      "observedAt": "2026-09-03T18:58:15.806Z",
+      "observedAt": "2026-09-03T20:05:15.842Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -42000,7 +42843,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.restaurantlogin.com/ordering/restaurant/menu?company_uid=f1700aa0-5a7b-44b4-ab4a-86c9a6a853a8&",
       "mediaUrl": null,
       "publishedAt": null,
-      "observedAt": "2026-09-03T18:58:15.656Z",
+      "observedAt": "2026-09-03T20:05:16.152Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -42024,7 +42867,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://durtynellys.ca/",
       "mediaUrl": "https://durtynellys.ca/wp-content/uploads/2025/04/cropped-Icon@4x.png",
       "publishedAt": null,
-      "observedAt": "2026-09-03T18:58:16.043Z",
+      "observedAt": "2026-09-03T20:05:16.003Z",
       "signalMatches": {
         "live_music": [
           "live music"
@@ -42064,7 +42907,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://durtynellys.ca/events/",
       "mediaUrl": "https://durtynellys.ca/wp-content/uploads/2025/06/image0-e1751552571510.jpeg",
       "publishedAt": "2026-09-08T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:16.818Z",
+      "observedAt": "2026-09-03T20:05:16.574Z",
       "signalMatches": {
         "events": [
           "event",
@@ -42147,7 +42990,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://durtynellys.ca/menu/",
       "mediaUrl": "https://durtynellys.ca/wp-content/uploads/2026/06/Food-MENU-2026-1.png",
       "publishedAt": null,
-      "observedAt": "2026-09-03T18:58:16.364Z",
+      "observedAt": "2026-09-03T20:05:16.241Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -42183,8 +43026,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Roasted in small batches, ethically sourced coffee beans.",
       "postUrl": "https://eastcupcafe.com/",
       "mediaUrl": "https://eastcupcafe.com/cdn/shop/files/dsc_0261.jpg?v=1685056528&amp;width=3840",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:17.161Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:16.393Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -42214,8 +43057,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Our Signature Blends are carefully crafted to bring a smooth, balanced taste. We're passionate about the way we blend and select each coffee bean to produce this signature flavor. Enjoy a unique cup of coffee that's perfect for anytime!",
       "postUrl": "https://eastcupcafe.com/collections/specialty-blends",
       "mediaUrl": "https://eastcupcafe.com/cdn/shop/files/Web_Haifaxl.png?v=1685062556&width=533",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:17.609Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:16.891Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -42245,8 +43088,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "EDNA Restaurant 0 Skip to Content Home Menu Reservations Gift Cards Book a Table Open Menu Close Menu Home Menu Reservations Gift Cards Book a Table Open Menu Close Menu Home Menu Reservations Gift Cards Book a Table My candle burns at both ends; It will not last the night; But ah, my foes, and oh, my friends- It gives a lovely light. -Edna St.Vincent Millay ABOUT US We are a bustling one-room restaurant with a co...",
       "postUrl": "https://www.ednarestaurant.com/",
       "mediaUrl": "https://images.squarespace-cdn.com/content/v1/61eb00b3d6de8446f2b486c4/a912d05a-04d4-463d-ab1d-72865b8c52aa/PXL_20211220_184452708.PORTRAIT.jpg",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:57:59.985Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:01.422Z",
       "signalMatches": {
         "menu": [
           "menu",
@@ -42287,8 +43130,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Menu 1 &mdash; EDNA Restaurant 0 Skip to Content Home Menu Reservations Gift Cards Book a Table Open Menu Close Menu Home Menu Reservations Gift Cards Book a Table Open Menu Close Menu Home Menu Reservations Gift Cards Book a Table Supper Dessert EDNA Restaurant 2053 Gottingen Street Halifax, Nova Scotia info@ednarestaurant.com (902) 429 2550 Hours SUPPER MONDAY – SUNDAY 5pm – 10pm",
       "postUrl": "https://www.ednarestaurant.com/menu",
       "mediaUrl": "https://images.squarespace-cdn.com/content/v1/61eb00b3d6de8446f2b486c4/5b5e5dfc-53fb-43b4-ae68-6cfc7ff693ff/IMG_20220122_163135.jpg",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:00.299Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:01.864Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -42325,8 +43168,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Reservations &mdash; EDNA Restaurant 0 Skip to Content Home Menu Reservations Gift Cards Book a Table Open Menu Close Menu Home Menu Reservations Gift Cards Book a Table Open Menu Close Menu Home Menu Reservations Gift Cards Book a Table RESERVATIONS Reservations are encouraged, however, a portion of the restaurant will be kept for walk-ins. For large parties please email info@ednarestaurant.com Please note: No-sh...",
       "postUrl": "https://www.ednarestaurant.com/reservations",
       "mediaUrl": "https://images.squarespace-cdn.com/content/v1/61eb00b3d6de8446f2b486c4/784fe9e2-b100-4670-a563-25f7bd92fc11/IMG_20220112_101736_155.jpg",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:00.475Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:02.062Z",
       "signalMatches": {
         "live_music": [
           "show"
@@ -42367,8 +43210,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Ela! Greek Restaurant – The finest experience in authentic Greek cuisine Skip to content Menu Ela! Greek Restaurant The finest experience in authentic Greek cuisine Menu Reservations Private Dining Catering About Contact Facebook Twitter Instagram THE FINEST EXPERIENCE IN AUTHENTIC GREEK CUISINE Front Page WELCOME TO THE GREEK DINING EXPERIENCE KALOS ILTHATE Located in Bayers Lake and Dartmouth Crossing, Ela! Gree...",
       "postUrl": "https://elagreektaverna.com/",
       "mediaUrl": "https://elagreektaverna.com/wp-content/uploads/2020/07/landing-page-hero-image.jpg",
-      "publishedAt": "2007-06-09T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:17.508Z",
+      "publishedAt": "2007-06-09T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:16.592Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -42424,8 +43267,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Contact – Ela! Greek Restaurant Skip to content Menu Ela! Greek Restaurant The finest experience in authentic Greek cuisine Menu Reservations Private Dining Catering About Contact Facebook Twitter Instagram find us Contact Contact Contact HALIFAX 215 Chain Lake Drive Bayers Lake, Halifax B3S 1C9 T: 902-876-8899 E: ha ***** @ ************* na.com Get Directions Contact DARTMOUTH 150 Hector Gate, Dartmouth Crossing,...",
       "postUrl": "https://elagreektaverna.com/contact/",
       "mediaUrl": "https://elagreektaverna.com/wp-content/uploads/2020/07/wine-bottles.jpg",
-      "publishedAt": "2007-06-09T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:23.309Z",
+      "publishedAt": "2007-06-09T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:23.757Z",
       "signalMatches": {
         "specials": [
           "special"
@@ -42473,7 +43316,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://elagreektaverna.com/events/",
       "mediaUrl": "https://elagreektaverna.com/wp-content/uploads/2020/07/private-dining.jpg",
       "publishedAt": "2007-06-09T03:00:00.000Z",
-      "observedAt": "2026-09-01T15:23:59.176Z",
+      "observedAt": "2026-09-03T20:05:24.818Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -42530,8 +43373,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Menu – Ela! Greek Restaurant Skip to content Menu Ela! Greek Restaurant The finest experience in authentic Greek cuisine Menu Reservations Private Dining Catering About Contact Facebook Twitter Instagram Menu Our Greek dishes have exceptional nutritional value but most of all taste great ! Menu OUR FULL MENU Experience authentic Greek cuisine. We bring generations of family recipes to life, using the freshest ingr...",
       "postUrl": "https://elagreektaverna.com/menu/",
       "mediaUrl": "https://elagreektaverna.com/wp-content/uploads/2024/12/ela-menu-hero.jpg",
-      "publishedAt": "2007-06-09T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:18.146Z",
+      "publishedAt": "2007-06-09T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:21.392Z",
       "signalMatches": {
         "specials": [
           "offer"
@@ -42583,8 +43426,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Reservations – Ela! Greek Restaurant Skip to content Menu Ela! Greek Restaurant The finest experience in authentic Greek cuisine Menu Reservations Private Dining Catering About Contact Facebook Twitter Instagram Reservations BOOKING A TABLE ONLINE IS EASY AND TAKES JUST A COUPLE OF MINUTES . Reservations MAKE A RESERVATION Join us for a truly memorable dining experience in our Halifax or Dartmouth locations. An ex...",
       "postUrl": "https://elagreektaverna.com/reservations/",
       "mediaUrl": "https://elagreektaverna.com/wp-content/uploads/2020/06/girl-holding-glass-of-white-wine-at-ela-halifax.jpg",
-      "publishedAt": "2007-06-09T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:19.953Z",
+      "publishedAt": "2007-06-09T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:21.931Z",
       "signalMatches": {
         "specials": [
           "offer"
@@ -42635,7 +43478,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://elagreektogo.ca/",
       "mediaUrl": "https://elagreektogo.ca/wp-content/uploads/2020/11/ela-greek-togo-2020.png",
       "publishedAt": "2001-08-01T03:00:00.000Z",
-      "observedAt": "2026-09-01T15:23:56.805Z",
+      "observedAt": "2026-09-03T20:05:17.926Z",
       "signalMatches": {
         "specials": [
           "offer",
@@ -42672,7 +43515,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://elagreektogo.ca/locations/",
       "mediaUrl": "https://elagreektogo.ca/wp-content/uploads/2020/11/ela-greek-togo-2020.png",
       "publishedAt": "2024-07-08T17:30:16.000Z",
-      "observedAt": "2026-09-03T18:58:17.900Z",
+      "observedAt": "2026-09-03T20:05:16.634Z",
       "signalMatches": {
         "specials": [
           "offer",
@@ -42708,8 +43551,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Ela! Greek Restaurant – The finest experience in authentic Greek cuisine Skip to content Menu Ela! Greek Restaurant The finest experience in authentic Greek cuisine Menu Reservations Private Dining Catering About Contact Facebook Twitter Instagram THE FINEST EXPERIENCE IN AUTHENTIC GREEK CUISINE Front Page WELCOME TO THE GREEK DINING EXPERIENCE KALOS ILTHATE Located in Bayers Lake and Dartmouth Crossing, Ela! Gree...",
       "postUrl": "https://elagreektaverna.com/",
       "mediaUrl": "https://elagreektaverna.com/wp-content/uploads/2020/07/landing-page-hero-image.jpg",
-      "publishedAt": "2007-06-09T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:23.791Z",
+      "publishedAt": "2007-06-09T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:25.807Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -42765,8 +43608,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Contact – Ela! Greek Restaurant Skip to content Menu Ela! Greek Restaurant The finest experience in authentic Greek cuisine Menu Reservations Private Dining Catering About Contact Facebook Twitter Instagram find us Contact Contact Contact HALIFAX 215 Chain Lake Drive Bayers Lake, Halifax B3S 1C9 T: 902-876-8899 E: ha ***** @ ************* na.com Get Directions Contact DARTMOUTH 150 Hector Gate, Dartmouth Crossing,...",
       "postUrl": "https://elagreektaverna.com/contact/",
       "mediaUrl": "https://elagreektaverna.com/wp-content/uploads/2020/07/wine-bottles.jpg",
-      "publishedAt": "2007-06-09T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:28.941Z",
+      "publishedAt": "2007-06-09T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:30.439Z",
       "signalMatches": {
         "specials": [
           "special"
@@ -42814,7 +43657,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://elagreektaverna.com/events/",
       "mediaUrl": "https://elagreektaverna.com/wp-content/uploads/2020/07/private-dining.jpg",
       "publishedAt": "2007-06-09T03:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:05.721Z",
+      "observedAt": "2026-09-03T20:05:31.852Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -42871,8 +43714,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Menu – Ela! Greek Restaurant Skip to content Menu Ela! Greek Restaurant The finest experience in authentic Greek cuisine Menu Reservations Private Dining Catering About Contact Facebook Twitter Instagram Menu Our Greek dishes have exceptional nutritional value but most of all taste great ! Menu OUR FULL MENU Experience authentic Greek cuisine. We bring generations of family recipes to life, using the freshest ingr...",
       "postUrl": "https://elagreektaverna.com/menu/",
       "mediaUrl": "https://elagreektaverna.com/wp-content/uploads/2024/12/ela-menu-hero.jpg",
-      "publishedAt": "2007-06-09T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:25.566Z",
+      "publishedAt": "2007-06-09T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:27.840Z",
       "signalMatches": {
         "specials": [
           "offer"
@@ -42924,8 +43767,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Reservations – Ela! Greek Restaurant Skip to content Menu Ela! Greek Restaurant The finest experience in authentic Greek cuisine Menu Reservations Private Dining Catering About Contact Facebook Twitter Instagram Reservations BOOKING A TABLE ONLINE IS EASY AND TAKES JUST A COUPLE OF MINUTES . Reservations MAKE A RESERVATION Join us for a truly memorable dining experience in our Halifax or Dartmouth locations. An ex...",
       "postUrl": "https://elagreektaverna.com/reservations/",
       "mediaUrl": "https://elagreektaverna.com/wp-content/uploads/2020/06/girl-holding-glass-of-white-wine-at-ela-halifax.jpg",
-      "publishedAt": "2007-06-09T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:27.115Z",
+      "publishedAt": "2007-06-09T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:28.800Z",
       "signalMatches": {
         "specials": [
           "offer"
@@ -42976,7 +43819,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://elagreektogo.ca/",
       "mediaUrl": "https://elagreektogo.ca/wp-content/uploads/2020/11/ela-greek-togo-2020.png",
       "publishedAt": "2001-08-01T03:00:00.000Z",
-      "observedAt": "2026-09-01T15:23:57.555Z",
+      "observedAt": "2026-09-03T20:05:19.742Z",
       "signalMatches": {
         "specials": [
           "offer",
@@ -43013,7 +43856,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://elagreektogo.ca/locations/",
       "mediaUrl": "https://elagreektogo.ca/wp-content/uploads/2020/11/ela-greek-togo-2020.png",
       "publishedAt": "2024-07-08T17:30:16.000Z",
-      "observedAt": "2026-09-03T18:58:20.460Z",
+      "observedAt": "2026-09-03T20:05:18.775Z",
       "signalMatches": {
         "specials": [
           "offer",
@@ -43050,7 +43893,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.fansrestaurant.ca/",
       "mediaUrl": "https://static.wixstatic.com/media/0a8a69_4118a950d5d645d5bd4cf1f82a9ae244%7Emv2.jpg/v1/fit/w_2500,h_1330,al_c/0a8a69_4118a950d5d645d5bd4cf1f82a9ae244%7Emv2.jpg",
       "publishedAt": "2500-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:18.358Z",
+      "observedAt": "2026-09-03T20:05:16.809Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -43104,7 +43947,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.fansrestaurant.ca/dim-sum-menu",
       "mediaUrl": "https://static.wixstatic.com/media/0a8a69_4118a950d5d645d5bd4cf1f82a9ae244%7Emv2.jpg/v1/fit/w_2500,h_1330,al_c/0a8a69_4118a950d5d645d5bd4cf1f82a9ae244%7Emv2.jpg",
       "publishedAt": "2500-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:18.587Z",
+      "observedAt": "2026-09-03T20:05:17.168Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -43155,8 +43998,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "--> MAIN MENU | Fans Chinese Cuisine top of page Log In Home Dim Sum Menu Fusion Menu Book a Table Online Orders Contact Experiences More Use tab to navigate through the menu items. MAIN MENU Gluten-free MAIN MENU Appetizers Egg Roll (each) $2.50 Spring Roll (each) $2.50 Deep Fried Wontons (14 pcs) $12.99 Homemade Northern Dumpling (9 pcs) $12.99 Fan’s Crispy Chicken $14.99 Sesame balls (12 pcs) $13.99 Soup Hot &...",
       "postUrl": "https://www.fansrestaurant.ca/menu",
       "mediaUrl": "https://static.wixstatic.com/media/0a8a69_bb308b586458466a9ace88e67e979ee5~mv2.jpg/v1/fill/w_101,h_68,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/0a8a69_bb308b586458466a9ace88e67e979ee5~mv2.jpg",
-      "publishedAt": "2001-04-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:18.763Z",
+      "publishedAt": "2001-04-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:17.432Z",
       "signalMatches": {
         "specials": [
           "special"
@@ -43215,11 +44058,11 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "restaurantName": "Fan's Chinese Restaurant",
       "platform": "official_page",
       "title": "Online Orders | Fans Chinese Cuisine",
-      "excerpt": "--> Online Orders | Fans Chinese Cuisine top of page Log In Home Dim Sum Menu Fusion Menu Book a Table Online Orders Contact Experiences More Use tab to navigate through the menu items. Windmill Road Online Ordering You can order online! Browse our menu items and choose what you’d like to order from us. Accepting Orders Delivery fee - Min. order - C$0.00 Free delivery above Pickup Delivery Dine-In Pickup time: As...",
+      "excerpt": "--> Online Orders | Fans Chinese Cuisine top of page Log In Home Dim Sum Menu Fusion Menu Book a Table Online Orders Contact Experiences More Use tab to navigate through the menu items. Windmill Road Online Ordering You can order online! Browse our menu items and choose what you’d like to order from us. Not Accepting Orders Delivery fee - Min. order - C$0.00 Free delivery above Pickup Delivery Dine-In ​ Change Pic...",
       "postUrl": "https://www.fansrestaurant.ca/online-ordering",
       "mediaUrl": "https://static.wixstatic.com/media/0a8a69_4118a950d5d645d5bd4cf1f82a9ae244%7Emv2.jpg/v1/fit/w_2500,h_1330,al_c/0a8a69_4118a950d5d645d5bd4cf1f82a9ae244%7Emv2.jpg",
       "publishedAt": "2500-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:19.197Z",
+      "observedAt": "2026-09-03T20:05:17.826Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -43271,7 +44114,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.fansrestaurant.ca/reservations",
       "mediaUrl": "https://static.wixstatic.com/media/0a8a69_4118a950d5d645d5bd4cf1f82a9ae244%7Emv2.jpg/v1/fit/w_2500,h_1330,al_c/0a8a69_4118a950d5d645d5bd4cf1f82a9ae244%7Emv2.jpg",
       "publishedAt": "2500-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:18.946Z",
+      "observedAt": "2026-09-03T20:05:17.641Z",
       "signalMatches": {
         "specials": [
           "special"
@@ -43323,8 +44166,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "View and manage your profile information.",
       "postUrl": "https://dal.mydininghub.ca/en/account?section=my-menu",
       "mediaUrl": null,
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:07.849Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:08.762Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -43360,8 +44203,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Enjoy delicious meals, coffee, snacks, and more at these dining locations.",
       "postUrl": "https://dal.mydininghub.ca/en/locations",
       "mediaUrl": null,
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:08.016Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:08.603Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -43385,8 +44228,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "associationBasis": "official_site_linked_page",
       "confidence": "official_source_page_signal",
       "reviewState": "source_signal",
-      "discoveryReason": "first_party_menu",
-      "sourceLabel": "Locations & Menus"
+      "discoveryReason": "official_homepage",
+      "sourceLabel": "Official website"
     },
     {
       "id": "official-page-3aa029c4bc532f7690",
@@ -43398,7 +44241,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.freemanspizza.ca/",
       "mediaUrl": "https://static.wixstatic.com/media/646157_f5ae8271dd6e43ebb06b97169a29c3ba~mv2_d_3000_2000_s_2.jpg/v1/fill/w_2500,h_1666,al_c/646157_f5ae8271dd6e43ebb06b97169a29c3ba~mv2_d_3000_2000_s_2.jpg",
       "publishedAt": "2500-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:19.452Z",
+      "observedAt": "2026-09-03T20:05:17.326Z",
       "signalMatches": {
         "events": [
           "event",
@@ -43442,8 +44285,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "--> Contact Us | Mysite top of page Log In Freeman's Little New York About Us Our Menus Order Online Catering Contact Us Events More... Use tab to navigate through the menu items. CONTACT US Our LOCATIONs Original Freeman's Little NY Open 10am - 3:30am Daily 6092 Quinpool Road, Halifax (902) 429-0241 ​ Freeman's Fairview Mon - Wed: 11am - Midnight Thurs & Fri: 11am - 2am Sat: 10am - 2am Sun: 10am - Midnight 3671 D...",
       "postUrl": "https://www.freemanspizza.ca/contact-reservations",
       "mediaUrl": "https://static.wixstatic.com/media/646157_778c77cce5964d2a9ded928887d70194~mv2_d_2048_2042_s_2.jpg/v1/fill/w_83,h_82,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/646157_778c77cce5964d2a9ded928887d70194~mv2_d_2048_2042_s_2.jpg",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:20.232Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:18.209Z",
       "signalMatches": {
         "events": [
           "event",
@@ -43497,8 +44340,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "--> Events | Mysite top of page Log In Freeman's Little New York About Us Our Menus Order Online Catering Contact Us Events More... Use tab to navigate through the menu items. No events at the moment &copy; 2021 Freeman's Little New York Order Online bottom of page",
       "postUrl": "https://www.freemanspizza.ca/event-list",
       "mediaUrl": null,
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:20.058Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:18.022Z",
       "signalMatches": {
         "events": [
           "event",
@@ -43542,8 +44385,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "--> Order Online | Mysite top of page Log In Freeman's Little New York About Us Our Menus Order Online Catering Contact Us Events More... Use tab to navigate through the menu items. ORDER ONLINE! Quinpool & Peninsula Order from Freeman's Quinpool! FREEMAN'S QUINPOOL ORDER HERE Halifax Downtown Order from Freeman's Grafton! FREEMAN'S GRAFTON ORDER HERE! Fairview & Clayton Park Order from Freeman's Fairview! FREEMAN...",
       "postUrl": "https://www.freemanspizza.ca/order-online",
       "mediaUrl": "https://static.wixstatic.com/media/646157_6042e13f5a034efda742d7ce7e0b7867~mv2.jpg/v1/crop/x_487,y_0,w_849,h_1237/fill/w_230,h_335,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/IMG_20190713_174937_resized_20190713_055009009.jpg",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:19.889Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:17.826Z",
       "signalMatches": {
         "events": [
           "event",
@@ -43587,8 +44430,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "--> Our Menus | Mysite top of page Log In Freeman's Little New York About Us Our Menus Order Online Catering Contact Us Events More... Use tab to navigate through the menu items. Freeman's Menus Freeman's has a variety of menu options including Gluten-Friendly and Vegan. We are more than happy to provide a menu to puruse before you visit. We are positive it won't be only one! &copy; 2021 Freeman's Little New York...",
       "postUrl": "https://www.freemanspizza.ca/our-menus",
       "mediaUrl": null,
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:19.723Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:17.625Z",
       "signalMatches": {
         "events": [
           "event",
@@ -43633,7 +44476,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://gahan.ca/menu/",
       "mediaUrl": null,
       "publishedAt": "2024-09-01T10:56:09.000Z",
-      "observedAt": "2026-09-03T18:58:20.946Z",
+      "observedAt": "2026-09-03T20:05:18.638Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -43677,8 +44520,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Home About Menus AYCE Menu Take Out Menu Sake and Wine Menu Reservations Gallery Our Restaurant Our Dishes News Contact Menu Home About Menus &raquo; AYCE Menu &raquo; Take Out Menu &raquo; Sake and Wine Menu Reservations Gallery &raquo; Our Restaurant &raquo; Our Dishes News Contact Better Ingredients. Better Sushi. Genji has been offering quality Japanese cuisine since 2012 and is renowned for the large variety...",
       "postUrl": "http://www.genjisushi.ca/",
       "mediaUrl": null,
-      "publishedAt": "2010-06-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:21.014Z",
+      "publishedAt": "2010-06-01T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:18.409Z",
       "signalMatches": {
         "specials": [
           "offer"
@@ -43733,8 +44576,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Reservations Home About Menus AYCE Menu Take Out Menu Sake and Wine Menu Reservations Gallery Our Restaurant Our Dishes News Contact Menu Home About Menus &raquo; AYCE Menu &raquo; Take Out Menu &raquo; Sake and Wine Menu Reservations Gallery &raquo; Our Restaurant &raquo; Our Dishes News Contact Reservations You can use the reservation form below to send your reservation request. We will call you or email you to...",
       "postUrl": "http://www.genjisushi.ca/?page_id=49",
       "mediaUrl": null,
-      "publishedAt": "2010-06-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:25.105Z",
+      "publishedAt": "2010-06-01T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:22.772Z",
       "signalMatches": {
         "events": [
           "event",
@@ -43786,8 +44629,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Sake and Wine Home About Menus AYCE Menu Take Out Menu Sake and Wine Menu Reservations Gallery Our Restaurant Our Dishes News Contact Menu Home About Menus &raquo; AYCE Menu &raquo; Take Out Menu &raquo; Sake and Wine Menu Reservations Gallery &raquo; Our Restaurant &raquo; Our Dishes News Contact Sake and Wine Sushi freshly made in the traditional Japanese way Make a reservation AYCE Menu Take-out Menu Sake and W...",
       "postUrl": "http://www.genjisushi.ca/?page_id=533",
       "mediaUrl": "http://www.genjisushi.ca/wp-content/uploads/2019/03/P8.jpg?nxsv=3.0.141229.0938",
-      "publishedAt": "2010-06-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:24.192Z",
+      "publishedAt": "2010-06-01T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:21.649Z",
       "signalMatches": {
         "events": [
           "event",
@@ -43839,8 +44682,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "AYCE Menu Home About Menus AYCE Menu Take Out Menu Sake and Wine Menu Reservations Gallery Our Restaurant Our Dishes News Contact Menu Home About Menus &raquo; AYCE Menu &raquo; Take Out Menu &raquo; Sake and Wine Menu Reservations Gallery &raquo; Our Restaurant &raquo; Our Dishes News Contact AYCE Menu Sushi freshly made in the traditional Japanese way Make a reservation AYCE Menu Take-out Menu Sake and Wine Menu...",
       "postUrl": "http://www.genjisushi.ca/?page_id=534",
       "mediaUrl": "http://www.genjisushi.ca/wp-content/uploads/2021/09/P1_PriceChange.jpg?nxsv=3.0.141229.0938",
-      "publishedAt": "2010-06-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:22.023Z",
+      "publishedAt": "2010-06-01T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:19.575Z",
       "signalMatches": {
         "events": [
           "event",
@@ -43892,8 +44735,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Take Out Menu Home About Menus AYCE Menu Take Out Menu Sake and Wine Menu Reservations Gallery Our Restaurant Our Dishes News Contact Menu Home About Menus &raquo; AYCE Menu &raquo; Take Out Menu &raquo; Sake and Wine Menu Reservations Gallery &raquo; Our Restaurant &raquo; Our Dishes News Contact Take Out Menu Sushi freshly made in the traditional Japanese way Make a reservation AYCE Menu Take-out Menu Sake and W...",
       "postUrl": "http://www.genjisushi.ca/?page_id=535",
       "mediaUrl": "http://www.genjisushi.ca/wp-content/uploads/2019/03/T1W1.jpg?nxsv=3.0.141229.0938",
-      "publishedAt": "2010-06-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:23.188Z",
+      "publishedAt": "2010-06-01T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:20.575Z",
       "signalMatches": {
         "events": [
           "event",
@@ -43946,7 +44789,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://justitalymentone.com/",
       "mediaUrl": "https://justitalymentone.com/Images/banners/home/DesktopID-866-20250925164835.png",
       "publishedAt": null,
-      "observedAt": "2026-09-03T18:58:21.581Z",
+      "observedAt": "2026-09-03T20:05:19.242Z",
       "signalMatches": {
         "specials": [
           "promo"
@@ -43977,7 +44820,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://goodrobotbrewing.ca/",
       "mediaUrl": "https://bunny-wp-pullzone-tt3dehskqo.b-cdn.net/wp-content/uploads/2026/03/Hero-section-new-bg-1024x944.webp",
       "publishedAt": "2026-08-03T22:08:44.000Z",
-      "observedAt": "2026-09-03T18:58:23.733Z",
+      "observedAt": "2026-09-03T20:05:21.074Z",
       "signalMatches": {
         "specials": [
           "promo"
@@ -44017,8 +44860,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Events Archive - Good Robot Brewing Co.",
       "postUrl": "https://goodrobotbrewing.ca/events/",
       "mediaUrl": "https://goodrobotbrewing.ca/wp-content/themes/goodrobot/img/screenshot.jpg",
-      "publishedAt": "2027-01-25T19:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:24.109Z",
+      "publishedAt": "2027-01-25T23:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:21.544Z",
       "signalMatches": {
         "happy_hour": [
           "happy hour"
@@ -44104,7 +44947,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://goodrobotbrewing.ca/menus/",
       "mediaUrl": "https://goodrobotbrewing.ca/wp-content/themes/goodrobot/img/screenshot.jpg",
       "publishedAt": "2026-03-11T19:42:44.000Z",
-      "observedAt": "2026-09-03T18:58:24.773Z",
+      "observedAt": "2026-09-03T20:05:22.124Z",
       "signalMatches": {
         "specials": [
           "offer"
@@ -44167,7 +45010,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://shop.goodrobotbrewing.ca/product/toque-promo-w-space-pine/",
       "mediaUrl": "https://bunny-wp-pullzone-tt3dehskqo.b-cdn.net/wp-content/uploads/2026/03/download-1632ssssssss-768x1024.png",
       "publishedAt": "2026-05-19T14:50:56.000Z",
-      "observedAt": "2026-09-03T18:58:33.568Z",
+      "observedAt": "2026-09-03T20:05:33.617Z",
       "signalMatches": {
         "specials": [
           "promo"
@@ -44204,7 +45047,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://shop.goodrobotbrewing.ca/shipping-delivery-policy/",
       "mediaUrl": null,
       "publishedAt": "2026-07-09T14:59:52.000Z",
-      "observedAt": "2026-09-03T18:58:24.289Z",
+      "observedAt": "2026-09-03T20:05:21.303Z",
       "signalMatches": {
         "specials": [
           "offer"
@@ -44305,8 +45148,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Preorder and pay from the top restaurants in your area",
       "postUrl": "https://ritual.co/order/the-great-wall-restaurant-bedford-row-sackville-halifax/9897",
       "mediaUrl": "https://images.ctfassets.net/6civwduob0q9/6BfSuBatnTnW4CF2pxXZMU/16c87d9afd88b8326c86245ce11a44e5/Add__1_.png",
-      "publishedAt": "9897-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:25.212Z",
+      "publishedAt": "9897-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:21.569Z",
       "signalMatches": {
         "specials": [
           "special"
@@ -44329,8 +45172,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Call 902-422-6153 to place a pick-up or delivery order. We are also on the app Skip the Dishes, or use the \"Order Online\" button to order from the website. ​ 1649 Bedford Row, Halifax, Nova Scotia...",
       "postUrl": "https://www.thegreatwall.ca/",
       "mediaUrl": null,
-      "publishedAt": "2001-08-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:25.109Z",
+      "publishedAt": "2001-08-01T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:21.334Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -44361,8 +45204,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Site powered by Weebly. Managed by Rebel.ca",
       "postUrl": "https://www.thegreatwall.ca/menu.html",
       "mediaUrl": "http://www.thegreatwall.ca/uploads/1/3/9/1/139151592/takeout-2-2022_orig.png",
-      "publishedAt": "2001-08-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:25.655Z",
+      "publishedAt": "2001-08-01T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:21.875Z",
       "signalMatches": {
         "menu": [
           "menu",
@@ -44392,7 +45235,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://greco.ca/",
       "mediaUrl": "https://greco.ca/wp-content/uploads/2022/06/greco-delivery-tracker.png",
       "publishedAt": "2026-07-27T16:47:17.000Z",
-      "observedAt": "2026-09-01T15:23:59.904Z",
+      "observedAt": "2026-09-03T20:05:22.504Z",
       "signalMatches": {
         "specials": [
           "deal",
@@ -44435,7 +45278,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://greco.ca/newsletter/",
       "mediaUrl": "https://greco.ca/wp-content/uploads/2022/06/greco-delivery-tracker.png",
       "publishedAt": "2026-07-29T17:04:44.000Z",
-      "observedAt": "2026-09-01T15:24:03.537Z",
+      "observedAt": "2026-09-03T20:05:26.056Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -44485,7 +45328,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://greco.ca/ourmenu/",
       "mediaUrl": "https://greco.ca/wp-content/uploads/2022/06/greco-delivery-tracker.png",
       "publishedAt": "2026-03-25T20:17:11.000Z",
-      "observedAt": "2026-09-03T18:58:25.595Z",
+      "observedAt": "2026-09-03T20:05:23.853Z",
       "signalMatches": {
         "specials": [
           "deal",
@@ -44528,7 +45371,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://grecopizza.weborder.net/GetAddress",
       "mediaUrl": null,
       "publishedAt": null,
-      "observedAt": "2026-09-01T15:24:00.636Z",
+      "observedAt": "2026-09-03T20:05:23.095Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -44557,7 +45400,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://grecopizza.weborder.net/Groups",
       "mediaUrl": "https://grecopizza.weborder.net/custom/images/ENG.gif",
       "publishedAt": null,
-      "observedAt": "2026-09-01T15:24:01.252Z",
+      "observedAt": "2026-09-03T20:05:23.672Z",
       "signalMatches": {
         "specials": [
           "deal",
@@ -44598,7 +45441,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://grecopizza.weborder.net/Item/New/deals-1024/eastcoastkitchenparty",
       "mediaUrl": "https://grecopizza.weborder.net/Images/fraction_whole_unselected.png",
       "publishedAt": null,
-      "observedAt": "2026-09-01T15:24:00.814Z",
+      "observedAt": "2026-09-03T20:05:23.270Z",
       "signalMatches": {
         "specials": [
           "deal",
@@ -44639,7 +45482,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://grecopizza.weborder.net/Items/deals-1024",
       "mediaUrl": "https://grecopizza.weborder.net/custom/images/Donair%20fest%20july%202026%20english.jpg",
       "publishedAt": null,
-      "observedAt": "2026-09-03T18:58:26.135Z",
+      "observedAt": "2026-09-03T20:05:22.505Z",
       "signalMatches": {
         "specials": [
           "deal",
@@ -44682,8 +45525,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "View and manage your profile information.",
       "postUrl": "https://dal.mydininghub.ca/en/account?section=my-menu",
       "mediaUrl": null,
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:08.185Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:09.221Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -44719,8 +45562,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Enjoy delicious meals, coffee, snacks, and more at these dining locations.",
       "postUrl": "https://dal.mydininghub.ca/en/locations",
       "mediaUrl": null,
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:08.352Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:08.830Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -44744,8 +45587,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "associationBasis": "official_site_linked_page",
       "confidence": "official_source_page_signal",
       "reviewState": "source_signal",
-      "discoveryReason": "first_party_menu",
-      "sourceLabel": "Locations & Menus"
+      "discoveryReason": "official_homepage",
+      "sourceLabel": "Official website"
     },
     {
       "id": "official-page-20cf3b6e3bfd721298",
@@ -44756,8 +45599,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "View and manage your profile information.",
       "postUrl": "https://dal.mydininghub.ca/en/account?section=my-menu",
       "mediaUrl": null,
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:08.530Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:09.972Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -44793,8 +45636,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Enjoy delicious meals, coffee, snacks, and more at these dining locations.",
       "postUrl": "https://dal.mydininghub.ca/en/locations",
       "mediaUrl": null,
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:08.696Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:09.054Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -44818,8 +45661,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "associationBasis": "official_site_linked_page",
       "confidence": "official_source_page_signal",
       "reviewState": "source_signal",
-      "discoveryReason": "first_party_menu",
-      "sourceLabel": "Locations & Menus"
+      "discoveryReason": "official_homepage",
+      "sourceLabel": "Official website"
     },
     {
       "id": "official-page-b348aedc5a612e4f97",
@@ -44830,8 +45673,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "View and manage your profile information.",
       "postUrl": "https://dal.mydininghub.ca/en/account?section=my-menu",
       "mediaUrl": null,
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:08.863Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:10.359Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -44867,8 +45710,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Enjoy delicious meals, coffee, snacks, and more at these dining locations.",
       "postUrl": "https://dal.mydininghub.ca/en/locations",
       "mediaUrl": null,
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:09.031Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:09.279Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -44892,8 +45735,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "associationBasis": "official_site_linked_page",
       "confidence": "official_source_page_signal",
       "reviewState": "source_signal",
-      "discoveryReason": "first_party_menu",
-      "sourceLabel": "Locations & Menus"
+      "discoveryReason": "official_homepage",
+      "sourceLabel": "Official website"
     },
     {
       "id": "official-page-e94ecf2e1ec3435b0d",
@@ -44904,8 +45747,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Hamachi Kita Menu Order Online About Gallery Contact Back About Us Join Our Team Menu Order Online About About Us Join Our Team Gallery Contact Scroll WELCOME! ようこそ！ ยินดีต้อนรับ! Welcome to Hamachi Kita. A neighbourhood sushi-bar and restaurant in Halifax's historic Hydrostrone Market. A relaxed, unique, and familiar destination for locals and visitors for nearly 20 years. Dine-in and enjoy our freshly renovated...",
       "postUrl": "https://www.hamachikita.com/",
       "mediaUrl": "https://images.squarespace-cdn.com/content/v1/5aeef078b27e390f37debee6/1622568408155-XF9TH25ZYW24KL91EP5Z/IMG-1805.jpg",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:26.151Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:22.537Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -44948,8 +45791,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Menu &mdash; Hamachi Kita Menu Order Online About Gallery Contact Back About Us Join Our Team Menu Order Online About About Us Join Our Team Gallery Contact Scroll Menu Join us for lunch and dinner, or call to place an order for take-out TO START NOODLES & CURRIES ENTRÉES SUSHI LUNCH SPECIALS SOUPS $ 4.99 MISO SOUP Traditional Japanese soy bean soup with seaweed, tofu & green onion $ 4.99 $ 8.99 TOM YUM HOT & SOUR...",
       "postUrl": "https://www.hamachikita.com/menu-feed",
       "mediaUrl": null,
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:26.439Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:22.974Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -44985,7 +45828,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://smooth.menu/harvest-clean-eats/menu/",
       "mediaUrl": null,
       "publishedAt": null,
-      "observedAt": "2026-09-03T18:58:26.616Z",
+      "observedAt": "2026-09-03T20:05:23.522Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -45008,8 +45851,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Dive into the world of organic and healthy food at Harvest Clean Eats in Atlantic Canada. Explore our menu full of fresh, clean eating options perfect for any diet. Taste the difference today!",
       "postUrl": "https://www.harvestcleaneats.ca/",
       "mediaUrl": "http://static1.squarespace.com/static/6581fc77643f7b03addc416b/t/65bcfdc81d16a53096ea0624/1706884553038/Harvest_socialshare_500x300.jpg?format=1500w",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:26.164Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:22.817Z",
       "signalMatches": {
         "specials": [
           "offer",
@@ -45059,8 +45902,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Delve into our wholistic menu at Harvest Clean Eats, where every dish is crafted for wellness. Enjoy balanced, nutritious meals that cater to your health and taste buds.",
       "postUrl": "https://www.harvestcleaneats.ca/menu",
       "mediaUrl": "http://static1.squarespace.com/static/6581fc77643f7b03addc416b/t/65bcfdc81d16a53096ea0624/1706884553038/Harvest_socialshare_500x300.jpg?format=1500w",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:26.586Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:23.173Z",
       "signalMatches": {
         "specials": [
           "special"
@@ -45106,7 +45949,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "http://www.heppys.com/",
       "mediaUrl": "http://www.heppys.com/pg_images/2012_front_image.jpg",
       "publishedAt": null,
-      "observedAt": "2026-09-03T18:58:26.928Z",
+      "observedAt": "2026-09-03T20:05:23.821Z",
       "signalMatches": {
         "seasonal": [
           "seasonal",
@@ -45130,8 +45973,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Highwayman Restaurant & Bar 0 Skip to Content Highwayman Restaurant & Bar MENUS FOOD DRINKS HAPPY HOUR ABOUT GALLERY RESERVE GIFTCARDS Open Menu Close Menu Open Menu Close Menu Highwayman Restaurant & Bar MENUS FOOD DRINKS HAPPY HOUR ABOUT GALLERY RESERVE GIFTCARDS Folder: MENUS Back FOOD DRINKS HAPPY HOUR ABOUT GALLERY RESERVE GIFTCARDS SPANISH–INSPIRED EATABLES & DRINKABLES. KIND REFINED SERVICE. Reserve Your Ta...",
       "postUrl": "https://www.highwaymanhfx.com/",
       "mediaUrl": "https://images.squarespace-cdn.com/content/v1/5f3ab2aad4d7be367932fd9a/b6596909-f5af-4591-9819-e952b3c26565/DSC03271.jpg",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:00.695Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:01.692Z",
       "signalMatches": {
         "happy_hour": [
           "happy hour"
@@ -45184,8 +46027,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Spanish-inspired dishes and the highest quality spirits, wine and beer. Come to Highwayman to drink and dine in the heart of a historic port city.",
       "postUrl": "https://www.highwaymanhfx.com/drink-menu",
       "mediaUrl": "http://static1.squarespace.com/static/5f3ab2aad4d7be367932fd9a/t/5f71eaac856a81579c7f9f65/1603377471035/drinks.jpg?format=1500w",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:01.737Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:02.981Z",
       "signalMatches": {
         "happy_hour": [
           "happy hour"
@@ -45238,8 +46081,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Spanish-inspired dishes and the highest quality spirits, wine and beer. Come to Highwayman to drink and dine in the heart of a historic port city.",
       "postUrl": "https://www.highwaymanhfx.com/food-menu",
       "mediaUrl": "http://static1.squarespace.com/static/5f3ab2aad4d7be367932fd9a/t/5f4e4e980484a173f06959c0/1600871381323/DSC01717.jpg?format=1500w",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:01.157Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:02.361Z",
       "signalMatches": {
         "happy_hour": [
           "happy hour"
@@ -45289,8 +46132,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Spanish-inspired dishes and the highest quality spirits, wine and beer. Come to Highwayman to drink and dine in the heart of a historic port city.",
       "postUrl": "https://www.highwaymanhfx.com/happyhour",
       "mediaUrl": "http://static1.squarespace.com/static/5f3ab2aad4d7be367932fd9a/t/5f91993f4555cb19218e7c01/1601301167954/drinks.jpg?format=1500w",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:01.919Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:03.172Z",
       "signalMatches": {
         "happy_hour": [
           "happy hour"
@@ -45340,8 +46183,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Make a reservation. Highwayman, 1673 Barrington St, Halifax NS",
       "postUrl": "https://www.highwaymanhfx.com/reserve",
       "mediaUrl": "http://static1.squarespace.com/static/5f3ab2aad4d7be367932fd9a/t/5f7b70b9bb198e4c36ce5d91/1601925309926/DSC03601.jpg?format=1500w",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:00.984Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:02.170Z",
       "signalMatches": {
         "happy_hour": [
           "happy hour"
@@ -45432,7 +46275,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://ukings.ca/admissions/campus-tours-recruitment/",
       "mediaUrl": "https://ukings.ca/wp-content/uploads/2020/04/stacksBrowsing_hero.jpg",
       "publishedAt": "2026-08-17T11:22:21.000Z",
-      "observedAt": "2026-09-03T18:58:28.229Z",
+      "observedAt": "2026-09-03T20:05:24.657Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -45506,7 +46349,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://ukings.ca/alumni/events/",
       "mediaUrl": "https://ukings.ca/wp-content/uploads/2016/07/JIV0845.jpg",
       "publishedAt": "2010-04-09T03:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:03.230Z",
+      "observedAt": "2026-09-03T20:05:26.513Z",
       "signalMatches": {
         "specials": [
           "special"
@@ -45584,7 +46427,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://ukings.ca/alumni/giving/support/special-projects/",
       "mediaUrl": "https://ukings.ca/wp-content/uploads/2016/07/JIV0845.jpg",
       "publishedAt": "2025-04-10T19:20:05.000Z",
-      "observedAt": "2026-09-01T15:24:04.480Z",
+      "observedAt": "2026-09-03T20:05:27.769Z",
       "signalMatches": {
         "specials": [
           "special"
@@ -45656,7 +46499,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://ukings.ca/calendar/",
       "mediaUrl": "https://ukings.ca/wp-content/uploads/2016/07/JIV0845.jpg",
       "publishedAt": "2010-04-09T03:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:02.220Z",
+      "observedAt": "2026-09-03T20:05:25.697Z",
       "signalMatches": {
         "specials": [
           "special"
@@ -45728,7 +46571,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://ukings.ca/campus-community/about-kings/",
       "mediaUrl": "https://ukings.ca/wp-content/uploads/2018/12/library-reading-room2_hero.jpg",
       "publishedAt": "2010-04-09T03:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:03.054Z",
+      "observedAt": "2026-09-03T20:05:26.113Z",
       "signalMatches": {
         "specials": [
           "special"
@@ -45800,7 +46643,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://ukings.ca/campus-community/student-life/the-wardroom/",
       "mediaUrl": "https://ukings.ca/wp-content/uploads/2016/07/JIV0845.jpg",
       "publishedAt": "2026-05-26T20:05:05.000Z",
-      "observedAt": "2026-09-03T18:58:27.234Z",
+      "observedAt": "2026-09-03T20:05:23.992Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -45877,8 +46720,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Sexualized Violence Prevention and Response --> Menu Search Search King's Programs & Faculty Admissions Campus & Community Administration Future Students Current Students Alumni & Friends Conference & Event Services Back Overview Foundation Year Program Journalism, Writing & Publishing King's Honours Programs Arts & Humanities Science Music Courses Field Courses & Study Abroad Programs Experiential Learning Non-Cr...",
       "postUrl": "https://ukings.ca/campus-community/student-services/campus-safety/sexualized-violence/",
       "mediaUrl": "https://ukings.ca/wp-content/uploads/2016/07/JIV0845.jpg",
-      "publishedAt": "2010-04-09T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:29.615Z",
+      "publishedAt": "2010-04-09T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:25.255Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -45951,8 +46794,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Conference & Event Services | University of King's College --> Menu Search Search King's Programs & Faculty Admissions Campus & Community Administration Future Students Current Students Alumni & Friends Conference & Event Services Back Overview Foundation Year Program Journalism, Writing & Publishing King's Honours Programs Arts & Humanities Science Music Courses Field Courses & Study Abroad Programs Experiential...",
       "postUrl": "https://ukings.ca/conference-event-services/",
       "mediaUrl": "https://ukings.ca/wp-content/uploads/2016/07/JIV0845.jpg",
-      "publishedAt": "2010-04-09T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:28.034Z",
+      "publishedAt": "2010-04-09T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:24.492Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -46028,8 +46871,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "What's happening when at King's. Stay on top of all the latest events from lectures to plays to formal meal and Encaenia. See what King's has to offer!",
       "postUrl": "https://ukings.ca/events/",
       "mediaUrl": "https://ukings.ca/wp-content/uploads/2016/07/JIV0845.jpg",
-      "publishedAt": "2010-04-09T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:28.425Z",
+      "publishedAt": "2010-04-09T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:25.087Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -46102,7 +46945,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://hopsingrestaurant.ca/",
       "mediaUrl": null,
       "publishedAt": null,
-      "observedAt": "2026-09-03T18:58:27.998Z",
+      "observedAt": "2026-09-03T20:05:24.240Z",
       "signalMatches": {
         "specials": [
           "deal",
@@ -46135,7 +46978,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://hopsingrestaurant.ca/deals",
       "mediaUrl": null,
       "publishedAt": null,
-      "observedAt": "2026-09-03T18:58:29.375Z",
+      "observedAt": "2026-09-03T20:05:24.964Z",
       "signalMatches": {
         "specials": [
           "deal",
@@ -46168,7 +47011,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://hopsingrestaurant.ca/menu",
       "mediaUrl": null,
       "publishedAt": null,
-      "observedAt": "2026-09-03T18:58:28.884Z",
+      "observedAt": "2026-09-03T20:05:24.624Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -46206,8 +47049,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Humble Pie Kitchen – It’s Hard to be Humble Skip to content Humble Pie Kitchen It’s Hard to be Humble Menu WELCOME TO HUMBLE PIE KITCHEN PIE MENU PIES FOR HOME GIFT CARDS WELCOME TO HUMBLE PIE KITCHEN We are on a quest to create the perfect pie! Individually portioned savoury hand pies made with butter puff pastry packed with cuts of locally sourced meat, quality cheeses and rich gravy to fill you up on the go or...",
       "postUrl": "https://humblepiekitchen.ca/",
       "mediaUrl": null,
-      "publishedAt": "2007-06-06T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:28.132Z",
+      "publishedAt": "2007-06-06T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:24.502Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -46235,8 +47078,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "PIE MENU – Humble Pie Kitchen Skip to content Humble Pie Kitchen It’s Hard to be Humble Menu WELCOME TO HUMBLE PIE KITCHEN PIE MENU PIES FOR HOME GIFT CARDS PIE MENU Premium Pies 7 oz – $13 each + HST Steak’n Cheese A Kiwi staple. Steak & Cheese is our top seller. Tender cuts of local beef slow cooked with onion in a rich beef gravy, topped with a layer of creamy cheese. Steak with Double Cheese & Bacon Everything...",
       "postUrl": "https://humblepiekitchen.ca/pie-menu/",
       "mediaUrl": null,
-      "publishedAt": "2007-06-06T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:28.854Z",
+      "publishedAt": "2007-06-06T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:25.390Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -46272,7 +47115,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://ihop.ca/",
       "mediaUrl": "https://ihop.ca/wp-content/uploads/2026/03/27802_IHOP-CA-2026_MAIN-BANNER.jpg",
       "publishedAt": "2026-06-29T22:58:52.000Z",
-      "observedAt": "2026-09-03T18:58:28.637Z",
+      "observedAt": "2026-09-03T20:05:24.722Z",
       "signalMatches": {
         "specials": [
           "offer"
@@ -46323,7 +47166,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://couriers.skipthedishes.com/application/",
       "mediaUrl": "https://takeaway-recruitment-api.k.elnino-production.com/storage/landing_page/bqGEmtHWvnKBGgyyyxQIKxT1hKCgLFQobEgkLldR.webp",
       "publishedAt": null,
-      "observedAt": "2026-09-01T15:24:02.706Z",
+      "observedAt": "2026-09-03T20:05:25.441Z",
       "signalMatches": {
         "specials": [
           "offer",
@@ -46354,7 +47197,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://restaurants.skipthedishes.com/application",
       "mediaUrl": null,
       "publishedAt": null,
-      "observedAt": "2026-09-01T15:24:02.813Z",
+      "observedAt": "2026-09-03T20:05:25.442Z",
       "signalMatches": {
         "specials": [
           "promo"
@@ -46381,7 +47224,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://secretsauce.skipthedishes.com/",
       "mediaUrl": "https://secretsauce.skipthedishes.com/wp-content/uploads/2023/04/img_not_a_partner.jpg",
       "publishedAt": "2025-07-04T17:40:38.000Z",
-      "observedAt": "2026-09-03T18:58:29.692Z",
+      "observedAt": "2026-09-03T20:05:26.335Z",
       "signalMatches": {
         "specials": [
           "offer",
@@ -46423,7 +47266,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.skipthedishes.com/?utm_source=inspringhotpot.com&utm_medium=microsites&utm_campaign=microsites",
       "mediaUrl": "https://www.skipthedishes.com/_next/static/media/skip-for-business-homePage.e9c5e5ce.png?w=3840&amp;q=100",
       "publishedAt": null,
-      "observedAt": "2026-09-01T15:24:02.468Z",
+      "observedAt": "2026-09-03T20:05:25.187Z",
       "signalMatches": {
         "live_music": [
           "dj"
@@ -46476,7 +47319,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.skipthedishes.com/brands/another-wing-by-dj-khaled",
       "mediaUrl": null,
       "publishedAt": null,
-      "observedAt": "2026-09-01T15:23:44.196Z",
+      "observedAt": "2026-09-03T20:05:07.862Z",
       "signalMatches": {
         "specials": [
           "special"
@@ -46515,7 +47358,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.skipthedishes.com/brands/pizza-seventy-three",
       "mediaUrl": null,
       "publishedAt": null,
-      "observedAt": "2026-09-01T15:23:44.022Z",
+      "observedAt": "2026-09-03T20:05:07.677Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -46560,7 +47403,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.skipthedishes.com/cuisines/breakfast&amp;brunch",
       "mediaUrl": null,
       "publishedAt": null,
-      "observedAt": "2026-09-01T15:23:43.380Z",
+      "observedAt": "2026-09-03T20:05:07.063Z",
       "signalMatches": {
         "brunch": [
           "brunch",
@@ -46584,8 +47427,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Paradise has it all! If you like what you see, wait till you smell the aroma of our starters and main course dishes in person. We promise you'll be blown away! Our Restaurants We offer Dine-In, Takeaway, and Online Orders at all our locations! Windsor 1459 Ottawa Street, Windsor, N8X2G1. View Details Order Now Google Maps London 825 Southdale Rd W, Unit #2, London, ON, N6P0B8. View Details Order Now Google Maps Be...",
       "postUrl": "https://www.indiaparadise.ca/",
       "mediaUrl": "https://cdn.prod.website-files.com/6261c545bac2436193a5b09b%2F6762b0db731d40facfe22b3e_slider%20video%20basic-poster-00001.jpg",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:29.749Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:27.218Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -46654,8 +47497,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Indian Food Menu by India Paradise in Mississauga 10% OFF - ORDER ONLINE . 10% OFF - ORDER ONLINE . 10% OFF - ORDER ONLINE . 10% OFF - ORDER ONLINE . 10% OFF - ORDER ONLINE . 10% OFF - ORDER ONLINE . 10% OFF - ORDER ONLINE . 10% OFF - ORDER ONLINE . 10% OFF - ORDER ONLINE . 10% OFF - ORDER ONLINE . 10% OFF - ORDER ONLINE . 10% OFF - ORDER ONLINE . 10% OFF - ORDER ONLINE . 10% OFF - ORDER ONLINE . Windsor London Me...",
       "postUrl": "https://www.indiaparadise.ca/mississauga/food-menu",
       "mediaUrl": "https://cdn.prod.website-files.com/6261c545bac2436193a5b09b/690de6d785843431893fd9d6_m-03.jpg",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:30.152Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:27.711Z",
       "signalMatches": {
         "specials": [
           "special"
@@ -46711,8 +47554,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "indiaparadise main site Windsor London catering Location Windsor London Bedford Halifax Downtown Mississauga Calgary Home Contact Blog Offer CALGARY: FREE BIRYANI ALERT! CALGARY: FREE BIRYANI ALERT! 🚨🥘To celebrate our Grand Opening, we’re giving away 25 FREE Biryanis every single day from our exclusive Chef Series!📍 Where: India Paradise, 3131 27 St NE Unit #1 , Calgary🗓️ When: March 18th – March 22nd⏰ The Dea...",
       "postUrl": "https://www.indiaparadise.ca/post/calgary-free-biryani-alert",
       "mediaUrl": "https://cdn.prod.website-files.com/672b494e0e4aa3471f6bbc58/69b2ad9778709f30d0fa5be2_C%20chef%20series%20free%20biryani%20everyday%20copy.png",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:30.331Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:27.898Z",
       "signalMatches": {
         "specials": [
           "deal",
@@ -46744,8 +47587,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": ": India Paradise is coming to Calgary! 🥘🔥Mark your calendars for March 18th. We aren't just opening our doors; we’re opening the kitchen to the most authentic flavors in YYC. 🎁 GRAND OPENING SPECIAL:Get a complimentary Jilebi Rabdi on us when you dine in!(Available March 18 – April 12) Don't just take our word for it—come taste the magic yours Share this post Tag one Tag two Tag three Tag three Eat Local, Think...",
       "postUrl": "https://www.indiaparadise.ca/post/opening-on-march-18th-in-calgary",
       "mediaUrl": "https://cdn.prod.website-files.com/672b494e0e4aa3471f6bbc58/69b262796716721486e095b1_C%20now%20open%20poster%20for%20video%20shoot-7%20copy.png",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:29.985Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:27.540Z",
       "signalMatches": {
         "specials": [
           "special"
@@ -46775,9 +47618,9 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "title": "Jacky's Cafe | Chinese - Halifax, Canada",
       "excerpt": "Jacky",
       "postUrl": "https://jackyscafehalifax.com/",
-      "mediaUrl": "https://cdn3.didevelop.com/public/product_images/1486/180_6eb0ce9621e6c6ba8ca4994899ab47d6.jpg",
-      "publishedAt": "2001-05-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:29.838Z",
+      "mediaUrl": "https://cdn3.didevelop.com/public/product_images/1486/180_11099cca3524c5cc43f2ccf77717d4d7.jpg",
+      "publishedAt": "2001-05-01T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:27.301Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -46849,7 +47692,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.foodbooking.com/ordering/restaurant/menu?restaurant_uid=de8fb584-7d18-406d-9040-426509400230",
       "mediaUrl": null,
       "publishedAt": null,
-      "observedAt": "2026-09-03T18:58:16.573Z",
+      "observedAt": "2026-09-03T20:05:16.276Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -46872,8 +47715,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Check our online website to get 10% off when you spend $15! - Jean",
       "postUrl": "https://www.jeansrestaurant.ca/",
       "mediaUrl": "https://static.wixstatic.com/media/762b6e_63f51269ba9e431b9e1359dc17c39e22~mv2.jpg/v1/fill/w_123,h_82,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/762b6e_63f51269ba9e431b9e1359dc17c39e22~mv2.jpg",
-      "publishedAt": "2001-04-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:30.246Z",
+      "publishedAt": "2001-04-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:27.975Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -46896,8 +47739,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "--> Contact | Jean's Chinese Restaurant top of page JEAN'S CHINESE RESTAURANT Home Delivery Map Contact About More Use tab to navigate through the menu items. Delivery Fee Zone 1: Min-$15, Fee-$1.30 Zone 2: Min-$20, Fee-$4,00 Zone 3: Min-$20, Fee-$5.00 Zone 4: Min-$20, Fee-$6.00 Zone 5: Min-$20, Fee-$7.00 Order Online 516 Pleasant Street,Dartmouth,NS B2W1A4 &copy;2023 by Jean's Chinese Restaurant bottom of page",
       "postUrl": "https://www.jeansrestaurant.ca/contact",
       "mediaUrl": "https://static.wixstatic.com/media/762b6e_a5c3729710b446bfa0949a9b16ab6d9a~mv2.jpg/v1/fill/w_122,h_69,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/762b6e_a5c3729710b446bfa0949a9b16ab6d9a~mv2.jpg",
-      "publishedAt": "2001-04-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:30.525Z",
+      "publishedAt": "2001-04-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:28.289Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -46920,8 +47763,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Water Front Restaurant Serving Japanese and Thai Food Either A la Carte or made to order all you can eat style. Situated at 49 Kings Wharf, Dartmouth, NS",
       "postUrl": "https://www.jukairestaurant.com/",
       "mediaUrl": "https://static.wixstatic.com/media/a3c153_c2677d5a52264f1fa279ac038c6c1c7b~mv2.jpg/v1/fill/w_288,h_161,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/a3c153_c2677d5a52264f1fa279ac038c6c1c7b~mv2.jpg",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:30.713Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:28.270Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -46944,8 +47787,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Water Front Restaurant Serving Japanese and Thai Food Either A la Carte or made to order all you can eat style. Situated at 49 Kings Wharf, Dartmouth, NS",
       "postUrl": "https://www.jukairestaurant.com/",
       "mediaUrl": "https://static.wixstatic.com/media/a3c153_c2677d5a52264f1fa279ac038c6c1c7b~mv2.jpg/v1/fill/w_288,h_161,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/a3c153_c2677d5a52264f1fa279ac038c6c1c7b~mv2.jpg",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:31.424Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:28.818Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -46969,7 +47812,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://junglejims.ca/",
       "mediaUrl": "https://junglejims.ca/assets/tpl/new/wreth.png",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:05.804Z",
+      "observedAt": "2026-09-03T20:05:28.470Z",
       "signalMatches": {
         "specials": [
           "promo"
@@ -47037,7 +47880,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://junglejims.ca/menu",
       "mediaUrl": "https://junglejims.ca/assets/tpl/new/wreth.png",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:06.466Z",
+      "observedAt": "2026-09-03T20:05:29.023Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -47102,7 +47945,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://junglejims.ca/menu/bay-roberts",
       "mediaUrl": "https://junglejims.ca/menu/assets/tpl/new/wreth.png",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:06.851Z",
+      "observedAt": "2026-09-03T20:05:29.373Z",
       "signalMatches": {
         "specials": [
           "deal",
@@ -47179,7 +48022,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://junglejims.ca/menu/cbs-manuels",
       "mediaUrl": "https://junglejims.ca/menu/assets/tpl/new/wreth.png",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:08.076Z",
+      "observedAt": "2026-09-03T20:05:30.738Z",
       "signalMatches": {
         "specials": [
           "deal",
@@ -47256,7 +48099,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://junglejims.ca/menu/clarenville",
       "mediaUrl": "https://junglejims.ca/menu/assets/tpl/new/wreth.png",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:08.748Z",
+      "observedAt": "2026-09-03T20:05:31.288Z",
       "signalMatches": {
         "specials": [
           "deal",
@@ -47333,7 +48176,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://junglejims.ca/menu/corner-brook",
       "mediaUrl": "https://junglejims.ca/menu/assets/tpl/new/wreth.png",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:09.429Z",
+      "observedAt": "2026-09-03T20:05:31.805Z",
       "signalMatches": {
         "specials": [
           "deal",
@@ -47410,7 +48253,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://junglejims.ca/menu/deer-lake",
       "mediaUrl": "https://junglejims.ca/menu/assets/tpl/new/wreth.png",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:10.067Z",
+      "observedAt": "2026-09-03T20:05:32.365Z",
       "signalMatches": {
         "specials": [
           "deal",
@@ -47487,7 +48330,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://junglejims.ca/menu/fredericton",
       "mediaUrl": "https://junglejims.ca/menu/assets/tpl/new/wreth.png",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:10.684Z",
+      "observedAt": "2026-09-03T20:05:32.886Z",
       "signalMatches": {
         "specials": [
           "deal",
@@ -47563,7 +48406,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://junglejims.ca/menu/gander",
       "mediaUrl": "https://junglejims.ca/menu/assets/tpl/new/wreth.png",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:11.348Z",
+      "observedAt": "2026-09-03T20:05:33.438Z",
       "signalMatches": {
         "specials": [
           "deal",
@@ -47640,7 +48483,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://junglejims.ca/menu/goulds",
       "mediaUrl": "https://junglejims.ca/menu/assets/tpl/new/wreth.png",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:11.904Z",
+      "observedAt": "2026-09-03T20:05:33.943Z",
       "signalMatches": {
         "specials": [
           "deal",
@@ -47717,7 +48560,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.kajohnthairestaurant.ca/",
       "mediaUrl": "https://static.wixstatic.com/media/935b09_7684f855e5c346db87d9d1f3f4fee56c%7Emv2.jpg/v1/fit/w_2500,h_1330,al_c/935b09_7684f855e5c346db87d9d1f3f4fee56c%7Emv2.jpg",
       "publishedAt": "2500-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:31.134Z",
+      "observedAt": "2026-09-03T20:05:28.543Z",
       "signalMatches": {
         "specials": [
           "offer"
@@ -47753,7 +48596,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.kajohnthairestaurant.ca/menu",
       "mediaUrl": "https://static.wixstatic.com/media/935b09_dfe29aa9c04d4c4893131b68e5f779f3~mv2.png/v1/fit/w_2500,h_1330,al_c/935b09_dfe29aa9c04d4c4893131b68e5f779f3~mv2.png",
       "publishedAt": "2500-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:31.489Z",
+      "observedAt": "2026-09-03T20:05:28.905Z",
       "signalMatches": {
         "specials": [
           "special"
@@ -47791,8 +48634,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Kanpai Izakaya offers variety of Japanese fusion dishes",
       "postUrl": "https://kanpaiizakaya.com/",
       "mediaUrl": "https://img1.wsimg.com/isteam/stock/38725",
-      "publishedAt": "8390-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:31.499Z",
+      "publishedAt": "8390-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:29.102Z",
       "signalMatches": {
         "specials": [
           "offer",
@@ -47831,8 +48674,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Call to make a reservation",
       "postUrl": "https://kanpaiizakaya.com/menu",
       "mediaUrl": "https://img1.wsimg.com/isteam/stock/38725",
-      "publishedAt": "8390-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:31.863Z",
+      "publishedAt": "8390-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:29.389Z",
       "signalMatches": {
         "openings": [
           "coming soon"
@@ -47866,8 +48709,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Kenny's Pizza – Fresh From Our Oven Skip to content Welcome to Kenny's, Kearney Lake. If You Need Assistance Just Give Us a Call: (902) 407-4141. HOME Store Hours Order Menu Cart Checkout 0 0 Menu Close HOME Store Hours Order Menu Cart Checkout 0 Search this website Appetizers (10) Pizza & Garlic Fingers (13) Choose From More Than a Dozen Kinds of Pizzas and all Kinds of Extra Toppings Specials (8) Enjoy great dea...",
       "postUrl": "http://kennyspizzakearneylake.ca/",
       "mediaUrl": "http://kennyspizzakearneylake.ca/wp-content/uploads/2020/04/apps-1-200x190.jpg",
-      "publishedAt": "2004-10-09T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:31.698Z",
+      "publishedAt": "2004-10-09T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:29.233Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -47909,8 +48752,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Kenny's Pizza – Fresh From Our Oven Skip to content Welcome to Kenny's, Kearney Lake. If You Need Assistance Just Give Us a Call: (902) 407-4141. HOME Store Hours Order Menu Cart Checkout 0 0 Menu Close HOME Store Hours Order Menu Cart Checkout 0 Search this website Appetizers (10) Pizza & Garlic Fingers (13) Choose From More Than a Dozen Kinds of Pizzas and all Kinds of Extra Toppings Specials (8) Enjoy great dea...",
       "postUrl": "https://kennyspizzakearneylake.ca/",
       "mediaUrl": "https://kennyspizzakearneylake.ca/wp-content/uploads/2020/04/apps-1-200x190.jpg",
-      "publishedAt": "2004-10-09T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:38.036Z",
+      "publishedAt": "2004-10-09T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:31.288Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -47952,8 +48795,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Online Deals – Kenny's Pizza Skip to content Welcome to Kenny's, Kearney Lake. If You Need Assistance Just Give Us a Call: (902) 407-4141. HOME Store Hours Order Menu Cart Checkout 0 0 Menu Close HOME Store Hours Order Menu Cart Checkout 0 Search this website Default sorting Sort by popularity Sort by latest Sort by price: low to high Sort by price: high to low 2 Small Pizzas for $29.99 2 Small Pizzas - Choose Fro...",
       "postUrl": "https://kennyspizzakearneylake.ca/product-category/online/",
       "mediaUrl": "https://kennyspizzakearneylake.ca/wp-content/uploads/2020/04/KennysBQChkn-200x190.jpg",
-      "publishedAt": "2004-10-09T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:46.714Z",
+      "publishedAt": "2004-10-09T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:35.203Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -47995,8 +48838,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Specials – Kenny's Pizza Skip to content Welcome to Kenny's, Kearney Lake. If You Need Assistance Just Give Us a Call: (902) 407-4141. HOME Store Hours Order Menu Cart Checkout 0 0 Menu Close HOME Store Hours Order Menu Cart Checkout 0 Search this website Enjoy great deals with our daily specials. Default sorting Sort by popularity Sort by latest Sort by price: low to high Sort by price: high to low Kids Fave 16 i...",
       "postUrl": "https://kennyspizzakearneylake.ca/product-category/specials/",
       "mediaUrl": "https://kennyspizzakearneylake.ca/wp-content/uploads/2020/04/kids-200x190.jpg",
-      "publishedAt": "2004-10-09T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:44.266Z",
+      "publishedAt": "2004-10-09T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:33.237Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -48038,6 +48881,54 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "sourceLabel": "https://kennyspizzakearneylake.ca/product-category/specials/"
     },
     {
+      "id": "official-page-f511dd6d8fdfbefd80",
+      "restaurantId": "osm-node-9128392205-king-of-donair",
+      "restaurantName": "King of Donair",
+      "platform": "official_page",
+      "title": "Official page update",
+      "excerpt": "Official page update",
+      "postUrl": "https://def.uber.com/en/challenge?from_service=d2ViLWVhdHMtdjI%3D&q=OGQ0ODY5YjRlNDkzMmUyNWQyYTkxMGZjOGFlNTYxZDk6STFNVmJraDV0SGpMUDhKazpHaEd1MzQ4L2VCbWtEaVFtcTVyZzZqTHpRbDJqQ01wVnVPenlwdzFvSDB1SjZweCtGVE9UVXlVQStEMzUrUUl3bHRUUENSb3M4akxPMnBoUThsMjYva1c3VitRZ3RneE5CbERhYVZqWU9KZjBGYTZnRGQ3eHlkMW1ldHk3UFpXYmhlV3V4K1l1NEVYbmxwTHRCN2NFejBLOTYzeGh5cHZsUkdsNFdKU2dUWUVHdE9GS3p4Z014Z0dBWVF1V0dtUUdSZmcrNXRYSTE4eVpZZzZnWHNRQ1VJZVRqN2NIb1hxN3pyaVdLMVM2TEo1NkhKQ3l1WFJxNVNkK1NRNVpXdUtocy90VmdSYlFCaGQrM0hoeE1uSHV3MlhiNWRkUjpaTWxaQ1RDUUEyOWY4OUZ2UUE3RXJBPT0%3D",
+      "mediaUrl": null,
+      "publishedAt": null,
+      "observedAt": "2026-09-03T20:05:06.146Z",
+      "signalMatches": {
+        "live_music": [
+          "dj"
+        ]
+      },
+      "candidateLinks": [],
+      "sourceKind": "official_page_html",
+      "associationBasis": "official_site_linked_page",
+      "confidence": "official_source_page_signal",
+      "reviewState": "needs_date_review",
+      "discoveryReason": "first_party_ordering",
+      "sourceLabel": "Order on UberEats"
+    },
+    {
+      "id": "official-page-a5dec85503e613e5c3",
+      "restaurantId": "osm-node-3104142670-king-of-donair",
+      "restaurantName": "King of Donair",
+      "platform": "official_page",
+      "title": "Official page update",
+      "excerpt": "Official page update",
+      "postUrl": "https://def.uber.com/en/challenge?from_service=d2ViLWVhdHMtdjI%3D&q=ZGJiODI1MWRhNDc2YjgwNTk4NGFlMGFiYmY0ZGM5Y2I6NjBGNXR0ZnFGVWNNdmlFejpRdlZZaTdaKzRMQkxYWDBhNlV4QXpkemFpYS9keXdCRkVnRXUwVzQxVWdJWXNMOVpLak1RVG9WQmlsQ1owSzFCZUJoYXlUUGlLR1hhSTB2RGRJZi9FK3AyZE5PT3FEa3lYMk91VWdJU1pPOTNnRXFKaGxYa0ZyZXRPYk8rMkdNbjg1YzNhWGdiajlqUXZqR0d3NkpnV3hmWG0ySXl3MEdaQkRPMHVMdWlzdS9vQVNyNHFsRDBMejNwRmhuMWprS0I5cUJKVmQ1S0Fpb1ZRRnhPdFphSWR0OWdrY2dOdXk4SWZaVkJsQXhQMHRZTWt3bGNlME1vLzNSODJ5TjhLeExOVEZaVE5ENkVHc3BaSjExZFRuS1ZuMXdubXB6dDpmbkFienRFWHRIanFvRUcxMUsrOENnPT0%3D",
+      "mediaUrl": null,
+      "publishedAt": null,
+      "observedAt": "2026-09-03T20:05:05.546Z",
+      "signalMatches": {
+        "live_music": [
+          "dj"
+        ]
+      },
+      "candidateLinks": [],
+      "sourceKind": "official_page_html",
+      "associationBasis": "official_site_linked_page",
+      "confidence": "official_source_page_signal",
+      "reviewState": "needs_date_review",
+      "discoveryReason": "first_party_ordering",
+      "sourceLabel": "Order on UberEats"
+    },
+    {
       "id": "official-page-92de3526c814625a8e",
       "restaurantId": "osm-node-3104142670-king-of-donair",
       "restaurantName": "King of Donair",
@@ -48047,7 +48938,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.kingofdonair.ca/",
       "mediaUrl": "https://www.kingofdonair.ca/wp-content/user_files/2023/07/website-banner-1536x647-copy.jpg",
       "publishedAt": "1973-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:06.603Z",
+      "observedAt": "2026-09-03T20:05:29.335Z",
       "signalMatches": {
         "live_music": [
           "dj"
@@ -48086,8 +48977,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Canada’s Original since 1973",
       "postUrl": "https://www.kingofdonair.ca/",
       "mediaUrl": "https://www.kingofdonair.ca/wp-content/user_files/2023/07/website-banner-1536x647-copy.jpg",
-      "publishedAt": "1973-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:36.861Z",
+      "publishedAt": "1973-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:31.133Z",
       "signalMatches": {
         "live_music": [
           "dj"
@@ -48127,7 +49018,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.kingofdonair.ca/menu/",
       "mediaUrl": "https://www.kingofdonair.ca/wp-content/user_files/2024/10/24-KOD-MENU-WEB-1.png",
       "publishedAt": "2025-06-18T12:39:09.000Z",
-      "observedAt": "2026-09-03T18:58:32.090Z",
+      "observedAt": "2026-09-03T20:05:29.655Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -48164,7 +49055,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.kingofdonair.ca/menu/",
       "mediaUrl": "https://www.kingofdonair.ca/wp-content/user_files/2024/10/24-KOD-MENU-WEB-1.png",
       "publishedAt": "2025-06-18T12:39:09.000Z",
-      "observedAt": "2026-09-03T18:58:37.364Z",
+      "observedAt": "2026-09-03T20:05:31.326Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -48201,7 +49092,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.skipthedishes.com/king-of-donair-quinpool",
       "mediaUrl": "https://www.skipthedishes.com/_next/image?url=https%3A%2F%2Frestaurants-static.skipthedishes.com%2Fimages%2Fresized%2Flarge-767b9e214669a2587f97.jpg&amp;w=3840&amp;q=75",
       "publishedAt": null,
-      "observedAt": "2026-09-01T15:23:45.507Z",
+      "observedAt": "2026-09-03T20:05:10.085Z",
       "signalMatches": {
         "specials": [
           "special"
@@ -48234,7 +49125,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.skipthedishes.com/king-of-donair-quinpool",
       "mediaUrl": "https://www.skipthedishes.com/_next/image?url=https%3A%2F%2Frestaurants-static.skipthedishes.com%2Fimages%2Fresized%2Flarge-767b9e214669a2587f97.jpg&amp;w=3840&amp;q=75",
       "publishedAt": null,
-      "observedAt": "2026-09-01T15:23:44.370Z",
+      "observedAt": "2026-09-03T20:05:08.047Z",
       "signalMatches": {
         "specials": [
           "special"
@@ -48416,8 +49307,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "ife is something people always strive for. In the past decade, what we’ve learned and experienced from being happy is that no matter how bad our days get, happiness can be found, especially when we consistently try to consciously be happy. At KOFUKU our mission is to serve each and everyone of our guests happiness with both our mouth-watering dishes and high quality services. Our highly experienced and passionate...",
       "postUrl": "https://www.kofukujapaneseandthai.ca/",
       "mediaUrl": "https://cdn.shoplightspeed.com/shops/642004/themes/12737/assets/partner-lightspeed-order-ahead.png?2023113014140620201201163814",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:31.891Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:29.556Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -48659,6 +49550,54 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "sourceLabel": "Click Here To Order Online!"
     },
     {
+      "id": "official-page-7375162c15e6c3c64d",
+      "restaurantId": "osm-node-12143325435-krave-burger",
+      "restaurantName": "Krave Burger",
+      "platform": "official_page",
+      "title": "Official page update",
+      "excerpt": "Official page update",
+      "postUrl": "https://def.uber.com/en/challenge?from_service=d2ViLWVhdHMtdjI%3D&q=NTcyNDFjMzhjNTdmN2E3NTAxYzZmNzEzMWM1OTdjMDM6WDlITTVsZUtwZ3FCMDFxUzp2aEIwdTlCcWlzQStKWjZCQ3pZdVl0TFVEdGJjSC92OGN3aUJMVUI5ZUtSQlBaSmZJZ2t6dDNyZ3lGdlZUOVhDdXNVbmpEdURFc1ZZU0ptbEpieTAwS3JaRi8wWEpXcEZUemxwZFVyOXlWWkN6RXdkWGt2NnVISzZsNlQwVmUzUDhBb2RYeXQ3cUNESHcwMUEwWHprbGdTcWpZcm0wRmZDNk5qYVdXUGlIUGIwVDdmL1UvZ1F1ZWx4dGVwdlh1eTF2cFFQV0MrMkZuU2g5dDV5TG5IV25QVXNzM0M2NzRoNlRISm05MzErYmVaVkl3ZGExdkpTQkNzTCsvMDNwbVRPRkpIU3JTSC9sVVVUWm8vVHlLRGZ0cFYzTkNHVnRBbjRxV3UzL2FFZVZ1SkFUNUliV3pqRVBYR3cvU0hQRnc5Q1hvME01RWZMeGhVUTRyb0Rydk5XVHExY1FwampxMG8xeTkwc0haSDhKazg9Ok1OL3hFWTh1d3VzT1hMM0xwbS9sUUE9PQ%3D%3D",
+      "mediaUrl": null,
+      "publishedAt": null,
+      "observedAt": "2026-09-03T20:05:07.629Z",
+      "signalMatches": {
+        "live_music": [
+          "dj"
+        ]
+      },
+      "candidateLinks": [],
+      "sourceKind": "official_page_html",
+      "associationBasis": "official_site_linked_page",
+      "confidence": "official_source_page_signal",
+      "reviewState": "needs_date_review",
+      "discoveryReason": "first_party_ordering",
+      "sourceLabel": "Order from 370 Pleasant Street"
+    },
+    {
+      "id": "official-page-eae2f66199f4e3329a",
+      "restaurantId": "osm-node-3791840157-krave-burger",
+      "restaurantName": "Krave Burger",
+      "platform": "official_page",
+      "title": "Official page update",
+      "excerpt": "Official page update",
+      "postUrl": "https://def.uber.com/en/challenge?from_service=d2ViLWVhdHMtdjI%3D&q=NWU2NjJiMGJhNjc2ZjYzM2IyODdmZmMzMTYyZjBhN2I6cC96bk13TFdyVm1Pa0VLdTp2WmF5WC9obXNYcld3amF1RmV3cmNGYktPNDhuRHpJOEk4M3lFc3J0R0w2YWpXbkVES1VSVmQ1aEFtRzE5dzdQZFRhWExtVEE2MmpPbDdCUWo2Y3h6Yi9jNXJacDEzeGFobm1iNnZNaGJzVGs1SjdKbHNzdVI3bmc2dEFvZU1McDZscWxlQTlaRGNOendiMHRhVG5jcWJiVk80Mm4xQ3V1RkJyYzU4WVA2dkQwUWlLQkdEQXlFcmY0Vno5WnJYdzJybDk1elpXQ1U1THRhMFhGeXB4WEc1QmpEbzlPTUovdGI0N2xnQWR2Rm9NeUlPUjQ3UkVIdWlTdzd1ZWp2dWdMMTFRV2F1MXVwODg2cWVZNlpIbk9lQzlhOFIyaThCaGdweTUzY1lzcnM5S1NtMW5xRXNqcGtnOTcyUGhrRU45WFVZaHJhaDQwamRSZXpqaGZPcUpDU0w3emIzZHJwcnp2WnE3MkUvZGJsTDg9OmN4RWt0T3RuaUlEK21DQ0xzQTZNZlE9PQ%3D%3D",
+      "mediaUrl": null,
+      "publishedAt": null,
+      "observedAt": "2026-09-03T20:05:07.213Z",
+      "signalMatches": {
+        "live_music": [
+          "dj"
+        ]
+      },
+      "candidateLinks": [],
+      "sourceKind": "official_page_html",
+      "associationBasis": "official_site_linked_page",
+      "confidence": "official_source_page_signal",
+      "reviewState": "needs_date_review",
+      "discoveryReason": "first_party_ordering",
+      "sourceLabel": "Order from 370 Pleasant Street"
+    },
+    {
       "id": "official-page-74040f50ea397d61e9",
       "restaurantId": "osm-node-3791840157-krave-burger",
       "restaurantName": "Krave Burger",
@@ -48668,7 +49607,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://order.chownow.com/order/20384/locations/29373",
       "mediaUrl": "https://menuimages.chownowcdn.com/cdn-cgi/image/04522713-f448-434a-9fab-c3646041e690.jpg",
       "publishedAt": "2000-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:23:51.212Z",
+      "observedAt": "2026-09-03T20:05:14.411Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -48692,7 +49631,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://order.chownow.com/order/20384/locations/29373",
       "mediaUrl": "https://menuimages.chownowcdn.com/cdn-cgi/image/04522713-f448-434a-9fab-c3646041e690.jpg",
       "publishedAt": "2000-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:23:51.684Z",
+      "observedAt": "2026-09-03T20:05:14.754Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -48867,8 +49806,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Lady Hammond Grill Menu | Chebucto Inn HOME OUR STORY OUR ROOMS Executive Double Room EXTENDED STAYS RESTAURANT Lady Hammond Grill Our Menu Eggs Benny Special REVIEWS CONTACT US BOOK NOW Select Page Monday: 7:00 a.m. – 7:00 p.m. Tuesday: 7:00 a.m. – 7:00 p.m. Wednesday: 7:00 a.m. – 7:00 p.m. Thursday: 7:00 a.m. – 7:00 p.m. Friday: 7:00 a.m. – 7:00 p.m. Saturday: 7:00 a.m. – 7:00 p.m. Sunday: 7:00 a.m. – 7:00 p.m....",
       "postUrl": "https://chebuctoinn.com/lady-hammond-grill-menu/",
       "mediaUrl": "https://chebuctoinn.com/wp-content/uploads/2026/05/Lady-Hammond-Grill-Menu-April-2026-p1.jpg",
-      "publishedAt": "2007-06-09T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:42.721Z",
+      "publishedAt": "2007-06-09T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:36.220Z",
       "signalMatches": {
         "specials": [
           "special"
@@ -48909,8 +49848,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "LHG Diner | Chebucto Inn HOME OUR STORY OUR ROOMS Executive Double Room EXTENDED STAYS RESTAURANT Lady Hammond Grill Our Menu Eggs Benny Special REVIEWS CONTACT US BOOK NOW Select Page VIEW OUR MENU Allan and Jenny Atienza, Owners of the Lady Hammond Grill The Lady Hammond Grill (LHG) is a classic Canadiana diner with a little bit of Greek flair. This local neighborhood spot has been filling bellies with delicious...",
       "postUrl": "https://chebuctoinn.com/lhg-diner/",
       "mediaUrl": "https://chebuctoinn.com/wp-content/uploads/2024/09/DSC_4566-e1728402802938.jpg",
-      "publishedAt": "2007-06-09T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:32.619Z",
+      "publishedAt": "2007-06-09T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:32.427Z",
       "signalMatches": {
         "specials": [
           "special"
@@ -48953,8 +49892,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Mother’s Day Dinner | Chebucto Inn HOME OUR STORY OUR ROOMS Executive Double Room EXTENDED STAYS RESTAURANT Lady Hammond Grill Our Menu Eggs Benny Special REVIEWS CONTACT US BOOK NOW Select Page Monday: 7:00 a.m. – 7:00 p.m. Tuesday: 7:00 a.m. – 7:00 p.m. Wednesday: 7:00 a.m. – 7:00 p.m. Thursday: 7:00 a.m. – 7:00 p.m. Friday: 7:00 a.m. – 7:00 p.m. Saturday: 7:00 a.m. – 7:00 p.m. Sunday: 7:00 a.m. – 7:00 p.m. Copy...",
       "postUrl": "https://chebuctoinn.com/lhg-specials/",
       "mediaUrl": "https://chebuctoinn.com/wp-content/uploads/2026/05/Eggs-Benny-Special.png",
-      "publishedAt": "2007-06-09T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:44.485Z",
+      "publishedAt": "2007-06-09T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:38.984Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -48996,8 +49935,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Tempted by a journey of fine dining in Halifax? Book a table at Latitude 44 Bar and Restaurant, where global flavors are served with Nova Scotian hospitality.",
       "postUrl": "https://www.lat44hfx.com/",
       "mediaUrl": "https://mds-assets.marriott.com/cdn-cgi/image/f=auto/cms-platform-for-marriott/yhzfp-latitude-44/site-images/migrated-images/homepageslide2.jpg?cropY=12&cropW=1950&cropH=876&width=1200&height=630",
-      "publishedAt": "2001-08-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:36.815Z",
+      "publishedAt": "2001-08-01T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:32.820Z",
       "signalMatches": {
         "happy_hour": [
           "happy hour"
@@ -49045,8 +49984,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Experience a creative twist on American food in Halifax. Browse the menu at Latitude 44 Bar and Restaurant, where local seafood meets international flavors.",
       "postUrl": "https://www.lat44hfx.com/our-menus",
       "mediaUrl": "https://mds-assets.marriott.com/cdn-cgi/image/f=auto/cms-platform-for-marriott/yhzfp-latitude-44/site-images/migrated-images/homepageslide2.jpg?width=600&height=315",
-      "publishedAt": "2001-08-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:37.257Z",
+      "publishedAt": "2001-08-01T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:33.170Z",
       "signalMatches": {
         "happy_hour": [
           "happy hour"
@@ -49088,8 +50027,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "At Le Bistro By Liz, you’ll find a bit of old world French charm in the heart of Halifax. A quaint, cozy, full of life restaurant that features lots of Parisian Cafe favorites, cooked in an open style kitchen.",
       "postUrl": "https://www.lebistrohalifax.com/",
       "mediaUrl": "https://www.lebistrohalifax.com/wp-content/uploads/2023/07/le-bistro-2.jpg",
-      "publishedAt": "2001-07-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:37.730Z",
+      "publishedAt": "2001-07-01T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:33.454Z",
       "signalMatches": {
         "menu": [
           "menu",
@@ -49159,7 +50098,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.lebistrohalifax.com/brunch-menu",
       "mediaUrl": "https://www.lebistrohalifax.com/wp-content/uploads/2023/07/brunch-2.jpg",
       "publishedAt": "2026-03-31T01:10:59.000Z",
-      "observedAt": "2026-09-03T18:58:38.161Z",
+      "observedAt": "2026-09-03T20:05:33.676Z",
       "signalMatches": {
         "specials": [
           "special"
@@ -49218,7 +50157,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.lebistrohalifax.com/desserts",
       "mediaUrl": "https://www.lebistrohalifax.com/wp-content/uploads/2023/09/desserts_Le-Bistro-Liz-1.jpg",
       "publishedAt": "2026-03-31T01:22:34.000Z",
-      "observedAt": "2026-09-01T15:24:09.543Z",
+      "observedAt": "2026-09-03T20:05:34.421Z",
       "signalMatches": {
         "specials": [
           "special"
@@ -49280,7 +50219,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.lebistrohalifax.com/kids-menu",
       "mediaUrl": "https://www.lebistrohalifax.com/wp-content/uploads/2023/07/brunch-2.jpg",
       "publishedAt": "2025-08-23T01:19:13.000Z",
-      "observedAt": "2026-09-03T18:58:38.676Z",
+      "observedAt": "2026-09-03T20:05:34.118Z",
       "signalMatches": {
         "menu": [
           "menu",
@@ -49334,7 +50273,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.lebistrohalifax.com/lunch-dinner-menu",
       "mediaUrl": "https://www.lebistrohalifax.com/wp-content/uploads/2023/07/Chicken-BLT.jpg",
       "publishedAt": "2025-08-23T00:53:37.000Z",
-      "observedAt": "2026-09-03T18:58:38.332Z",
+      "observedAt": "2026-09-03T20:05:33.821Z",
       "signalMatches": {
         "specials": [
           "offer"
@@ -49391,7 +50330,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.lebistrohalifax.com/menus",
       "mediaUrl": "https://www.lebistrohalifax.com/wp-content/uploads/2023/07/Seafood-Linguine-Pescatori.jpg",
       "publishedAt": "2024-01-31T13:40:23.000Z",
-      "observedAt": "2026-09-03T18:58:38.847Z",
+      "observedAt": "2026-09-03T20:05:34.270Z",
       "signalMatches": {
         "specials": [
           "offer",
@@ -49460,7 +50399,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.lebistrohalifax.com/take-out-menu",
       "mediaUrl": "https://www.lebistrohalifax.com/wp-content/uploads/2023/07/takeout-le-bistro.jpg",
       "publishedAt": "2023-10-04T15:47:06.000Z",
-      "observedAt": "2026-09-01T15:24:09.894Z",
+      "observedAt": "2026-09-03T20:05:34.720Z",
       "signalMatches": {
         "specials": [
           "offer"
@@ -49525,7 +50464,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.lebistrohalifax.com/vegan-menu",
       "mediaUrl": "https://www.lebistrohalifax.com/wp-content/uploads/2023/07/brunch-2.jpg",
       "publishedAt": "2025-08-23T01:17:03.000Z",
-      "observedAt": "2026-09-03T18:58:38.505Z",
+      "observedAt": "2026-09-03T20:05:33.971Z",
       "signalMatches": {
         "menu": [
           "menu",
@@ -49579,7 +50518,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.lebistrohalifax.com/wines",
       "mediaUrl": "https://www.lebistrohalifax.com/wp-content/uploads/2023/07/wines-le-bistro-1.jpg",
       "publishedAt": "2023-10-04T04:01:11.000Z",
-      "observedAt": "2026-09-01T15:24:09.733Z",
+      "observedAt": "2026-09-03T20:05:34.568Z",
       "signalMatches": {
         "specials": [
           "special"
@@ -49640,7 +50579,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://lionshead.ca/",
       "mediaUrl": null,
       "publishedAt": null,
-      "observedAt": "2026-09-03T18:58:38.969Z",
+      "observedAt": "2026-09-03T20:05:33.547Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -49699,7 +50638,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://lionshead.ca/events/",
       "mediaUrl": null,
       "publishedAt": null,
-      "observedAt": "2026-09-03T18:58:44.659Z",
+      "observedAt": "2026-09-03T20:05:35.885Z",
       "signalMatches": {
         "happy_hour": [
           "happy hour",
@@ -49767,7 +50706,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://lionshead.ca/menu/",
       "mediaUrl": null,
       "publishedAt": null,
-      "observedAt": "2026-09-03T18:58:43.510Z",
+      "observedAt": "2026-09-03T20:05:34.741Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -49828,7 +50767,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://lionshead.ca/reserve/",
       "mediaUrl": null,
       "publishedAt": null,
-      "observedAt": "2026-09-03T18:58:45.594Z",
+      "observedAt": "2026-09-03T20:05:36.837Z",
       "signalMatches": {
         "events": [
           "event",
@@ -49878,7 +50817,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://lemon.dog/",
       "mediaUrl": "https://lemondog1594a.zapwp.com/wp-content/uploads/2021/08/IMG_0624-scaled-e1652897066693.webp",
       "publishedAt": "2048-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:39.017Z",
+      "observedAt": "2026-09-03T20:05:34.117Z",
       "signalMatches": {
         "specials": [
           "offer"
@@ -49913,7 +50852,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.lookhoho.com/",
       "mediaUrl": "https://static.wixstatic.com/media/68f5d0_47aa2a21c97a44499efa3eece8436762~mv2.jpg/v1/fill/w_2500,h_1406,al_c/68f5d0_47aa2a21c97a44499efa3eece8436762~mv2.jpg",
       "publishedAt": "2500-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:40.057Z",
+      "observedAt": "2026-09-03T20:05:34.422Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -49957,7 +50896,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.lookhoho.com/chefspecials",
       "mediaUrl": "https://static.wixstatic.com/media/68f5d0_404a7bafac0d4559bc4f2891fa85fa36~mv2.png/v1/fill/w_3840,h_2160,al_c/68f5d0_404a7bafac0d4559bc4f2891fa85fa36~mv2.png",
       "publishedAt": "3840-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:43.047Z",
+      "observedAt": "2026-09-03T20:05:34.937Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -49998,7 +50937,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.lookhoho.com/fullmenu",
       "mediaUrl": "https://static.wixstatic.com/media/68f5d0_404a7bafac0d4559bc4f2891fa85fa36~mv2.png/v1/fit/w_2500,h_1330,al_c/68f5d0_404a7bafac0d4559bc4f2891fa85fa36~mv2.png",
       "publishedAt": "2500-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:42.837Z",
+      "observedAt": "2026-09-03T20:05:34.737Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -50050,8 +50989,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "An intimate pizza restaurant in Halifax with made-to-order thin-crust European-style pizza, chef inspired sandwiches and desserts, organic wine, and delicious cocktails",
       "postUrl": "https://www.loupecou.com/",
       "mediaUrl": "http://static1.squarespace.com/static/6449629547dc621a3c06e3f4/t/69f22ef24bdf591a71c070be/1777479410455/lp-social-sharing-image.jpg?format=1500w",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:42.872Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:34.437Z",
       "signalMatches": {
         "specials": [
           "offer"
@@ -50091,8 +51030,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Discover authentic Italian cuisine at Lou Pécou, featuring handmade pasta, artisanal pizzas, and delicious desserts. Reserve your table today.",
       "postUrl": "https://www.loupecou.com/menu",
       "mediaUrl": "http://static1.squarespace.com/static/6449629547dc621a3c06e3f4/t/69f22ef24bdf591a71c070be/1777479410455/lp-social-sharing-image.jpg?format=1500w",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:43.242Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:34.870Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -50131,8 +51070,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Reserve your table at Lou Pécou in Halifax. Make reservations online for a seamless dining experience. Fully booked times are visible on our platform.",
       "postUrl": "https://www.loupecou.com/reserve",
       "mediaUrl": "http://static1.squarespace.com/static/6449629547dc621a3c06e3f4/t/69f22ef24bdf591a71c070be/1777479410455/lp-social-sharing-image.jpg?format=1500w",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:43.509Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:35.117Z",
       "signalMatches": {
         "live_music": [
           "show"
@@ -50172,8 +51111,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Lucy's Hydrostone Café Story Menu Testimonials Contact View Menu Welcome to Lucy’s Hydrostone Cafe Formerly Julien's Patisserie, Lucy’s Hydrostone Café continues to serve the Hydrostone community with fresh baked bread, mouthwatering pastries, and the finest brewed coffee. Under new ownership, we’re excited to uphold a legacy that has been cherished for nearly 30 years. Visit us today and experience the warmth and...",
       "postUrl": "https://lucyshydrostone.ca/",
       "mediaUrl": "https://lucyshydrostone.ca/wp-content/uploads/Lucys-Hero-Image.jpg",
-      "publishedAt": "2001-07-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:43.454Z",
+      "publishedAt": "2001-07-01T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:35.035Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -50256,7 +51195,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://masaladelight.com/",
       "mediaUrl": null,
       "publishedAt": null,
-      "observedAt": "2026-09-03T18:58:44.546Z",
+      "observedAt": "2026-09-03T20:05:35.286Z",
       "signalMatches": {
         "specials": [
           "offer"
@@ -50280,7 +51219,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://couriers.skipthedishes.com/application/",
       "mediaUrl": "https://takeaway-recruitment-api.k.elnino-production.com/storage/landing_page/bqGEmtHWvnKBGgyyyxQIKxT1hKCgLFQobEgkLldR.webp",
       "publishedAt": null,
-      "observedAt": "2026-09-01T15:24:04.009Z",
+      "observedAt": "2026-09-03T20:05:26.756Z",
       "signalMatches": {
         "specials": [
           "offer",
@@ -50311,7 +51250,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://restaurants.skipthedishes.com/application",
       "mediaUrl": null,
       "publishedAt": null,
-      "observedAt": "2026-09-01T15:24:03.521Z",
+      "observedAt": "2026-09-03T20:05:25.987Z",
       "signalMatches": {
         "specials": [
           "promo"
@@ -50338,7 +51277,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://secretsauce.skipthedishes.com/",
       "mediaUrl": "https://secretsauce.skipthedishes.com/wp-content/uploads/2023/04/img_not_a_partner.jpg",
       "publishedAt": "2025-07-04T17:40:38.000Z",
-      "observedAt": "2026-09-03T18:58:30.965Z",
+      "observedAt": "2026-09-03T20:05:27.803Z",
       "signalMatches": {
         "specials": [
           "offer",
@@ -50380,7 +51319,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.skipthedishes.com/?utm_source=mashaweemediterraneangrill.ca&utm_medium=microsites&utm_campaign=microsites",
       "mediaUrl": "https://www.skipthedishes.com/_next/static/media/skip-for-business-homePage.e9c5e5ce.png?w=3840&amp;q=100",
       "publishedAt": null,
-      "observedAt": "2026-09-01T15:24:12.162Z",
+      "observedAt": "2026-09-03T20:05:35.869Z",
       "signalMatches": {
         "live_music": [
           "dj"
@@ -50433,7 +51372,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.skipthedishes.com/brands/another-wing-by-dj-khaled",
       "mediaUrl": null,
       "publishedAt": null,
-      "observedAt": "2026-09-01T15:23:47.717Z",
+      "observedAt": "2026-09-03T20:05:12.311Z",
       "signalMatches": {
         "specials": [
           "special"
@@ -50472,7 +51411,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.skipthedishes.com/brands/pizza-seventy-three",
       "mediaUrl": null,
       "publishedAt": null,
-      "observedAt": "2026-09-01T15:23:47.542Z",
+      "observedAt": "2026-09-03T20:05:12.122Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -50517,7 +51456,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.skipthedishes.com/cuisines/breakfast&amp;brunch",
       "mediaUrl": null,
       "publishedAt": null,
-      "observedAt": "2026-09-01T15:23:47.072Z",
+      "observedAt": "2026-09-03T20:05:11.585Z",
       "signalMatches": {
         "brunch": [
           "brunch",
@@ -50542,7 +51481,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://matadorahfx.ca/",
       "mediaUrl": "http://matadorahfx.ca/wp-content/uploads/2025/01/Matadora-Website-02-Medium.jpeg",
       "publishedAt": "2026-08-21T18:25:44.000Z",
-      "observedAt": "2026-09-03T18:58:45.162Z",
+      "observedAt": "2026-09-03T20:05:36.003Z",
       "signalMatches": {
         "live_music": [
           "show"
@@ -50576,7 +51515,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.sevenrooms.com/explore/matadora/reservations/create/search",
       "mediaUrl": null,
       "publishedAt": null,
-      "observedAt": "2026-09-03T18:58:45.393Z",
+      "observedAt": "2026-09-03T20:05:36.286Z",
       "signalMatches": {
         "reservations": [
           "reservation",
@@ -50600,8 +51539,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "e HRM for over 40 years! Scroll Top Sackville: 902-865-2226 | Mill Cove: 902-832-8882 | Dartmouth: 902-469-2226 | Bedford: 902-832-2226 | Halifax (Casino NS): 902-455-2222 Primary Menu About Order Online Sackville/Mill Cove/Dartmouth/Halifax(Inside Casino NS) Order Pickup from Sackville Dim Sum Menu Contact Us Home Welcome To May Garden Chinese Restaurant Serving the HRM for over 40 years 4 LOCATIONS IN THE HRM SA...",
       "postUrl": "https://maygarden.ca/",
       "mediaUrl": "https://maygarden.ca/wp-content/uploads/2018/12/stars-1.jpg",
-      "publishedAt": "2001-07-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:45.871Z",
+      "publishedAt": "2001-07-01T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:36.470Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -50648,8 +51587,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Menu – May Garden Chinese Restaurant Scroll Top Sackville: 902-865-2226 | Mill Cove: 902-832-8882 | Dartmouth: 902-469-2226 | Bedford: 902-832-2226 | Halifax (Casino NS): 902-455-2222 Primary Menu About Order Online Sackville/Mill Cove/Dartmouth/Halifax(Inside Casino NS) Order Pickup from Sackville Dim Sum Menu Contact Us Menu Home Menu TOP 10 / CHEFS SPECIALS Mains AUTHENTIC MENU #1 AUTHENTIC MENU #2 DIM SUM (WEE...",
       "postUrl": "https://maygarden.ca/menu-2/",
       "mediaUrl": "https://maygarden.ca/wp-content/uploads/2026/08/image-1024x663.jpg",
-      "publishedAt": "2001-07-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:46.798Z",
+      "publishedAt": "2001-07-01T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:37.912Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -50683,9 +51622,9 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "title": "May Garden Chinese - Sackville | Chinese, Canadian - Lower Sackville, Canada",
       "excerpt": "Order online for delivery or pickup at May Garden Chinese Restaurant - Sackville. We are serving delicious Chinese and Canadian food. Try our Ginger Beef, Singapore Noodles, and Curry Shrimp. We are located at 829 Sackville Dr, Lower Sackville, NS.",
       "postUrl": "https://maygardenchinese.com/",
-      "mediaUrl": "https://cdn3.didevelop.com/public/product_images/1336/180_1100f2e621699326c02c3378e00936b4.jpg",
-      "publishedAt": "2001-05-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:46.504Z",
+      "mediaUrl": "https://cdn3.didevelop.com/public/product_images/1336/180_509957bc84a0c520302d607dab7e1136.jpg",
+      "publishedAt": "2001-05-01T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:37.101Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -50729,8 +51668,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Since 1994",
       "postUrl": "https://metropizzahalifax.ca/",
       "mediaUrl": "https://img1.wsimg.com/isteam/ip/4c81de1f-3b16-41e5-bdc0-a13879e3fdcc/pizza-2.jpg",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:46.876Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:37.612Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -50758,8 +51697,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Since 1994",
       "postUrl": "https://metropizzahalifax.ca/menu",
       "mediaUrl": "https://img1.wsimg.com/isteam/ip/4c81de1f-3b16-41e5-bdc0-a13879e3fdcc/pizza-2.jpg",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:47.235Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:37.898Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -50794,7 +51733,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.foodbooking.com/ordering/restaurant/menu?restaurant_uid=a6ab5806-0d0d-4d68-8064-2890bb2d2bc0",
       "mediaUrl": null,
       "publishedAt": null,
-      "observedAt": "2026-09-03T18:58:16.794Z",
+      "observedAt": "2026-09-03T20:05:16.544Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -50817,8 +51756,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Mexicali Rosa's Halifax is located in the heart of Halifax, Nova Scotia at 222 CHAIN LAKE DRIVE . Call (902) 422-7672 for reservations.",
       "postUrl": "https://www.mexicalirosas.com/halifax/",
       "mediaUrl": "https://www.mexicalirosas.com/wp-content/uploads/2020/05/mexis_halifax_patio_bar-1024x1024.webp",
-      "publishedAt": "2001-07-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:47.434Z",
+      "publishedAt": "2001-07-01T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:37.697Z",
       "signalMatches": {
         "menu": [
           "menu",
@@ -50890,7 +51829,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.mexicalirosas.com/halifax/lunch/",
       "mediaUrl": "https://www.mexicalirosas.com/wp-content/uploads/2025/06/Menu2025-2_Page_1.webp",
       "publishedAt": "2001-07-01T03:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:18.820Z",
+      "observedAt": "2026-09-03T20:05:42.310Z",
       "signalMatches": {
         "menu": [
           "menu",
@@ -50956,8 +51895,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Moncton Dinner Menu - Mexicali Rosa’s Skip to content Our History E-Gift Cards Franchise Opportunities Contact Us Locations Our History E-Gift Cards Franchise Opportunities Contact Us Locations Mexi's Moncton 683 Main St Moncton, NB (506) 855-7672 Sunday - Thursday 11.30-10pm, Friday & Saturday 11:30-11pm Order Online Mexi’s Moncton, NB Lunch Dinner Kids Dessert Menu Drinks Menu FRANCHISE OPPORTUNITIES More Inform...",
       "postUrl": "https://www.mexicalirosas.com/moncton/dinner/",
       "mediaUrl": "https://www.mexicalirosas.com/wp-content/uploads/2026/08/Menu2026-01Atlantic.webp",
-      "publishedAt": "2001-07-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:48.641Z",
+      "publishedAt": "2001-07-01T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:40.005Z",
       "signalMatches": {
         "menu": [
           "menu",
@@ -51023,8 +51962,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Moncton Kids Menu - Mexicali Rosa’s Skip to content Our History E-Gift Cards Franchise Opportunities Contact Us Locations Our History E-Gift Cards Franchise Opportunities Contact Us Locations Mexi's Moncton 683 Main St Moncton, NB (506) 855-7672 Sunday - Thursday 11.30-10pm, Friday & Saturday 11:30-11pm Order Online Mexi’s Moncton, NB Lunch Dinner Kids Dessert Menu Drinks Menu FRANCHISE OPPORTUNITIES More Informat...",
       "postUrl": "https://www.mexicalirosas.com/moncton/kids/",
       "mediaUrl": "https://www.mexicalirosas.com/wp-content/uploads/2024/04/KidsMenu_2024.webp",
-      "publishedAt": "2001-07-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:49.075Z",
+      "publishedAt": "2001-07-01T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:40.451Z",
       "signalMatches": {
         "menu": [
           "menu",
@@ -51090,8 +52029,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Moncton Lunch Menu - Mexicali Rosa’s Skip to content Our History E-Gift Cards Franchise Opportunities Contact Us Locations Our History E-Gift Cards Franchise Opportunities Contact Us Locations Mexi's Moncton 683 Main St Moncton, NB (506) 855-7672 Sunday - Thursday 11.30-10pm, Friday & Saturday 11:30-11pm Order Online Mexi’s Moncton, NB Lunch Dinner Kids Dessert Menu Drinks Menu FRANCHISE OPPORTUNITIES More Informa...",
       "postUrl": "https://www.mexicalirosas.com/moncton/lunch/",
       "mediaUrl": "https://www.mexicalirosas.com/wp-content/uploads/2025/06/Menu2025-2_Page_1.webp",
-      "publishedAt": "2001-07-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:48.219Z",
+      "publishedAt": "2001-07-01T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:39.536Z",
       "signalMatches": {
         "menu": [
           "menu",
@@ -51158,7 +52097,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.mexicalirosas.com/quispamsis/quispamsis-dinner-menu/",
       "mediaUrl": "https://www.mexicalirosas.com/wp-content/uploads/2026/08/Menu2026-01Atlantic.webp",
       "publishedAt": "2001-07-01T03:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:17.899Z",
+      "observedAt": "2026-09-03T20:05:41.400Z",
       "signalMatches": {
         "menu": [
           "menu",
@@ -51225,7 +52164,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.mexicalirosas.com/quispamsis/quispamsis-kids-menu/",
       "mediaUrl": "https://www.mexicalirosas.com/wp-content/uploads/2024/04/KidsMenu_2024.webp",
       "publishedAt": "2001-07-01T03:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:18.363Z",
+      "observedAt": "2026-09-03T20:05:41.850Z",
       "signalMatches": {
         "menu": [
           "menu",
@@ -51292,7 +52231,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.mexicalirosas.com/quispamsis/quispamsis-lunch-menu/",
       "mediaUrl": "https://www.mexicalirosas.com/wp-content/uploads/2025/06/Menu2025-2_Page_1.webp",
       "publishedAt": "2001-07-01T03:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:16.952Z",
+      "observedAt": "2026-09-03T20:05:40.917Z",
       "signalMatches": {
         "menu": [
           "menu",
@@ -51358,8 +52297,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Experience the taste of Lebanon at Mezza, a family-owned restaurant. We offer dine-in, takeout, delivery, and catering for all occasions.",
       "postUrl": "https://www.ordermezza.com/",
       "mediaUrl": "http://static1.squarespace.com/static/6272b45a3197ec4398631b6e/t/65674d738a2e767b0705cde2/1662561391624/mezza-wraps.jpg?format=1500w",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:47.595Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:38.066Z",
       "signalMatches": {
         "specials": [
           "offer"
@@ -51405,8 +52344,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Discover Mezza",
       "postUrl": "https://www.ordermezza.com/menu",
       "mediaUrl": "http://static1.squarespace.com/static/6272b45a3197ec4398631b6e/t/6634d488d93f685e4ec80116/1653617162245/Menu.png?format=1500w",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:48.039Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:38.352Z",
       "signalMatches": {
         "live_music": [
           "show"
@@ -51447,9 +52386,9 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "title": "Mirchi Tandoor | Indian - Halifax, Canada",
       "excerpt": "Order online for delivery or pick up at Mirchi Tandoor restaurant. We are serving delicious traditional Indian food. Try our Tandoori Chicken, Lamb Curry, Aloo Gobi, Shrimp Biryani, Butter Dosa. We are located at 5232 Blowers St, Halifax, NS.",
       "postUrl": "https://mirchitandoor.com/",
-      "mediaUrl": "https://cdn3.didevelop.com/public/cdn/180_4bc4e3430649c14dec652aafd9483de2.jpg",
-      "publishedAt": "2001-05-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:48.378Z",
+      "mediaUrl": "https://cdn3.didevelop.com/public/cdn/180_03edccc137f4074ad988fd9ef247ee88.jpeg",
+      "publishedAt": "2001-05-01T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:38.368Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -51486,7 +52425,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://tables.toasttab.com/restaurants/4a83980d-4ea6-49c3-937a-d0130ac921fb/findTime",
       "mediaUrl": null,
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:16.540Z",
+      "observedAt": "2026-09-03T20:05:40.054Z",
       "signalMatches": {
         "seasonal": [
           "seasonal"
@@ -51513,8 +52452,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Online Reservations for Morris East: Downtown Halifax in Halifax, NS - Morris East has been delighting Halifax with delicious, chef-inspired pizzas and housemade pasta for over a decade. A go-to neighbourhood gem known for fresh, seasonal food, we are the perfect spot for a leisurely lunch, business meeting, cozy date night, or dinner with family.",
       "postUrl": "https://tables.toasttab.com/restaurants/4a83980d-4ea6-49c3-937a-d0130ac921fb/reserve?partySize=2&dateTime=2026-02-18T12:30:00.000-04:00",
       "mediaUrl": null,
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:50.012Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:39.568Z",
       "signalMatches": {
         "seasonal": [
           "seasonal"
@@ -51542,7 +52481,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://tables.toasttab.com/restaurants/b01c72d6-b6ac-4103-b940-5accdce3dfd0/findTime",
       "mediaUrl": null,
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:16.315Z",
+      "observedAt": "2026-09-03T20:05:39.801Z",
       "signalMatches": {
         "seasonal": [
           "seasonal"
@@ -51569,8 +52508,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Online Reservations for Morris East: Bedford in Bedford, NS - Morris East has been delighting Bedford with delicious, chef-inspired pizzas and housemade pasta for over a decade. A go-to neighbourhood gem known for fresh, seasonal food, we are the perfect spot for a leisurely lunch, business meeting, cozy date night, or dinner with family.",
       "postUrl": "https://tables.toasttab.com/restaurants/b01c72d6-b6ac-4103-b940-5accdce3dfd0/reserve?partySize=2&dateTime=2026-02-18T12:30:00.000-04:00",
       "mediaUrl": null,
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:49.486Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:38.970Z",
       "signalMatches": {
         "seasonal": [
           "seasonal"
@@ -51597,8 +52536,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Best Artisan Pizza in Halifax. Discover the finest pizza in Halifax at Morris East, where artisanal craftsmanship meets quality ingredients. Pair your meal with our innovative craft cocktails for a truly exceptional dining experience. Join us for a memorable culinary journey in the heart of the city or for catering and/or events.",
       "postUrl": "https://www.morriseast.com/",
       "mediaUrl": "http://static1.squarespace.com/static/65721b46c38d592f00580255/t/6834b134d3082910ff648008/1748283701049/ME-030.jpg?format=1500w",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:49.129Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:38.902Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -51655,8 +52594,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Explore Morris East",
       "postUrl": "https://www.morriseast.com/catering-events",
       "mediaUrl": "http://static1.squarespace.com/static/65721b46c38d592f00580255/t/6834b134d3082910ff648008/1748283701049/ME-030.jpg?format=1500w",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:50.027Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:39.486Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -51706,8 +52645,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Morris East on Quinpool Road is Halifax’s true neighborhood gem. Voted best pizza, we offer chef-inspired artisanal pizza, house-made pastas, delicious desserts, and an Italian-inspired wine list. Created by Jennie Dobbs, our warm, welcoming dining room and popular cocktail bar make every visit memorable—perfect for dinners with friends, date nights, and celebrations.",
       "postUrl": "https://www.morriseast.com/visit-us",
       "mediaUrl": "http://static1.squarespace.com/static/65721b46c38d592f00580255/t/6834b134d3082910ff648008/1748283701049/ME-030.jpg?format=1500w",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:49.812Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:39.285Z",
       "signalMatches": {
         "specials": [
           "offer"
@@ -51748,6 +52687,30 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "sourceLabel": "Reservation"
     },
     {
+      "id": "official-page-31702603cba49eb8b6",
+      "restaurantId": "osm-node-9165619005-mother-s-pizza",
+      "restaurantName": "Mother's Pizza",
+      "platform": "official_page",
+      "title": "Official page update",
+      "excerpt": "Official page update",
+      "postUrl": "https://def.uber.com/en/challenge?from_service=d2ViLWVhdHMtdjI%3D&q=MDdjYzhjMTU5OTcwZTFjMjliZDEzNTBlNjdhNDkxOGY6VmtIbHdmZmpva2t3RlA2aTo5UTh6enpBdmd1UDZJYm1Fd3cwYnNIdnRtNFByUjV4cUpzRzc3OEVEMllGeGtRS0ViS0s1b0FVUVhaaUZDWUNFZGRPU1JXRDhXaEYvazJYc2ltRDlacTFKMDhCSTJiQVAvQnBnRUR0bm1PU1BMMjN3OGJrRnN0dnJOci93QWJKcmRlZ0hRclRBb25HQU5ERlBsTDIxUW5uWGJRcU0reGxGSW15SUlLZ1ppVDdlNU9zdER3SmtJSUY4VGRMbDlwOTl0N3RXVi83cGVGMFVJUDBhVUxMZGcraVpWbkloSHdaUnFGRjJ3ZFhCMGxLOElNRGFYMmZ5RlljNzV0Q1NqK3JrSU8vQ3VNb2YzZ1ZldEk4a3ljb21wbTRxWmFZPTpQVUV4MDluS0lJbkN0YTR6cTdSeFpnPT0%3D",
+      "mediaUrl": null,
+      "publishedAt": null,
+      "observedAt": "2026-09-03T20:05:08.047Z",
+      "signalMatches": {
+        "live_music": [
+          "dj"
+        ]
+      },
+      "candidateLinks": [],
+      "sourceKind": "official_page_html",
+      "associationBasis": "official_site_linked_page",
+      "confidence": "official_source_page_signal",
+      "reviewState": "needs_date_review",
+      "discoveryReason": "first_party_ordering",
+      "sourceLabel": "Tripadvisor"
+    },
+    {
       "id": "official-page-14cf94cadd5220f486",
       "restaurantId": "osm-node-9165619005-mother-s-pizza",
       "restaurantName": "Mother's Pizza",
@@ -51757,7 +52720,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://motherspizzahalifax.ca/",
       "mediaUrl": "https://motherspizzahalifax.ca/wp-content/uploads/2020/09/h1_shape-7-1.png",
       "publishedAt": "2026-01-24T15:02:41.000Z",
-      "observedAt": "2026-09-03T18:58:49.725Z",
+      "observedAt": "2026-09-03T20:05:39.002Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -51786,7 +52749,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://motherspizzahalifax.ca/menu-restaurant/",
       "mediaUrl": "https://motherspizzahalifax.ca/menu-restaurant/%7B%7B%7Bdata.img%7D%7D%7D",
       "publishedAt": "2026-01-24T15:26:42.000Z",
-      "observedAt": "2026-09-03T18:58:52.636Z",
+      "observedAt": "2026-09-03T20:05:41.717Z",
       "signalMatches": {
         "specials": [
           "special"
@@ -51860,7 +52823,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://moxies.com/",
       "mediaUrl": "https://moxies.com/wp-content/uploads/2024/06/gift-card-white.png",
       "publishedAt": "2026-08-04T15:03:58.000Z",
-      "observedAt": "2026-09-03T18:58:50.118Z",
+      "observedAt": "2026-09-03T20:05:39.103Z",
       "signalMatches": {
         "happy_hour": [
           "happy hour"
@@ -51941,8 +52904,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Moxies Boston Seaport is the perfect venue for group bookings for your next corporate function, fundraiser, private party or special event. Get in touch with us today.",
       "postUrl": "https://moxies.com/restaurants/boston-seaport/group-bookings/",
       "mediaUrl": "https://moxies.com/wp-content/uploads/2024/06/gift-card-white.png",
-      "publishedAt": "2018-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:50.749Z",
+      "publishedAt": "2018-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:40.136Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -52025,7 +52988,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://moxies.com/restaurants/boston-seaport/menus/",
       "mediaUrl": "https://moxies.com/wp-content/uploads/2024/06/gift-card-white.png",
       "publishedAt": "2026-08-17T15:11:30.000Z",
-      "observedAt": "2026-09-03T18:58:53.079Z",
+      "observedAt": "2026-09-03T20:05:42.601Z",
       "signalMatches": {
         "happy_hour": [
           "happy hour"
@@ -52109,8 +53072,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Moxies Dallas Uptown is the perfect venue for group bookings for your next corporate function, fundraiser, private party or special event. Get in touch with us today.",
       "postUrl": "https://moxies.com/restaurants/dallas-uptown/group-bookings/",
       "mediaUrl": "https://moxies.com/wp-content/uploads/2024/06/gift-card-white.png",
-      "publishedAt": "2018-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:55.153Z",
+      "publishedAt": "2018-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:44.666Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -52196,7 +53159,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://moxies.com/restaurants/dallas-uptown/menus/",
       "mediaUrl": "https://moxies.com/wp-content/uploads/2024/06/gift-card-white.png",
       "publishedAt": "2026-07-31T17:57:08.000Z",
-      "observedAt": "2026-09-01T15:24:24.553Z",
+      "observedAt": "2026-09-03T20:05:47.061Z",
       "signalMatches": {
         "happy_hour": [
           "happy hour"
@@ -52281,7 +53244,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://moxies.com/restaurants/fort-lauderdale/group-bookings/",
       "mediaUrl": "https://moxies.com/wp-content/uploads/2024/06/gift-card-white.png",
       "publishedAt": "2018-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:27.052Z",
+      "observedAt": "2026-09-03T20:05:49.265Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -52367,7 +53330,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://moxies.com/restaurants/fort-lauderdale/menus/",
       "mediaUrl": "https://moxies.com/wp-content/uploads/2024/06/gift-card-white.png",
       "publishedAt": "2026-08-19T17:17:56.000Z",
-      "observedAt": "2026-09-01T15:24:29.120Z",
+      "observedAt": "2026-09-03T20:05:51.629Z",
       "signalMatches": {
         "happy_hour": [
           "happy hour"
@@ -52451,8 +53414,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "New wing wah Restaurant new wing wah Take Out:902-475-2828 347 Herring Cove Rd Halifax, NS B3R 1V5 New Wing Wah Recommended Restaurant Guru 2019 Home Contact Menu 中文菜單 *BUFFET IS DISCONTINUED* Close for vocation Aug 26 - Sep 2 Our TOP combos Great Chinese Food Dinner Buffet Fri, Sat & Sun 4:30 pm ~ 8:00 pm Business Hour Monday Closed Tuesday - Sunday 3:00 pm to 8:30 pm Prices subject to change on holidays and spec...",
       "postUrl": "https://newwingwah.ca/",
       "mediaUrl": "https://newwingwah.ca/images/ban1.jpg",
-      "publishedAt": "2001-08-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:50.609Z",
+      "publishedAt": "2001-08-01T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:40.052Z",
       "signalMatches": {
         "specials": [
           "special"
@@ -52490,8 +53453,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "New wing wah Restaurant - Menu new wing wah Take Out:902-475-2828 347 Herring Cove Rd Halifax, NS B3R 1V5 New Wing Wah Recommended Restaurant Guru 2019 Home Contact Menu 中文菜單 *BUFFET IS DISCONTINUED* Close for vocation Aug 26 - Sep 2 Appetizer Soups Chicken Dishes Beef Dishes Pork Dishes Seafood Dishes Vegetable Dishes Fried Rice Noodles Egg Foo Young Chef’s Specials Canadian Cuisine Combination Plates Set Dinner...",
       "postUrl": "https://newwingwah.ca/menu.html",
       "mediaUrl": "https://newwingwah.ca/images/showbg1.jpg",
-      "publishedAt": "2001-08-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:52.797Z",
+      "publishedAt": "2001-08-01T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:40.718Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -52530,8 +53493,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "New wing wah Restaurant - Menu new wing wah Take Out:902-475-2828 347 Herring Cove Rd Halifax, NS B3R 1V5 New Wing Wah Recommended Restaurant Guru 2019 Home Contact Menu 中文菜單 *BUFFET IS DISCONTINUED* Close for vocation Aug 26 - Sep 2 頭盤類 Appetizer 湯類 Soups 海鮮類 Seafood 雞鴨類 Chicken & Duck 牛肉類 Beef 豬肉類 Pork 素菜類 Vegetable & Bean Curd 飯面類 Fried Rice & Noodle A1 素春卷 Vegetable Spring Roll A2 炸餛飩 Deep Fried Wonton A3 鍋貼 F...",
       "postUrl": "https://newwingwah.ca/menucn.html",
       "mediaUrl": "https://newwingwah.ca/images/showbg1.jpg",
-      "publishedAt": "2001-08-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:53.004Z",
+      "publishedAt": "2001-08-01T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:40.935Z",
       "signalMatches": {
         "specials": [
           "special"
@@ -52570,7 +53533,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://nogginsfarm.ca/farm-markets/coburg-market/",
       "mediaUrl": "https://nogginsfarm.ca/wp-content/uploads/2024/08/IMG_5691-scaled.jpg",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:17.031Z",
+      "observedAt": "2026-09-03T20:05:40.283Z",
       "signalMatches": {
         "specials": [
           "offer"
@@ -52609,7 +53572,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://orsopub.ca/",
       "mediaUrl": "https://orsopub.ca/wp-content/uploads/2026/05/orso-specials-2026specials-apps.jpg",
       "publishedAt": null,
-      "observedAt": "2026-09-03T18:58:51.702Z",
+      "observedAt": "2026-09-03T20:05:40.569Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -52667,7 +53630,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://orsopub.ca/drinks-menu/",
       "mediaUrl": "https://orsopub.ca/wp-content/themes/orso/assets/img/all/foot-001%20(1).jpg",
       "publishedAt": null,
-      "observedAt": "2026-09-03T18:58:55.859Z",
+      "observedAt": "2026-09-03T20:05:43.168Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -52707,7 +53670,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://orsopub.ca/full-menu/",
       "mediaUrl": "https://orsopub.ca/wp-content/themes/orso/assets/img/all/foot-001%20(1).jpg",
       "publishedAt": null,
-      "observedAt": "2026-09-03T18:58:55.122Z",
+      "observedAt": "2026-09-03T20:05:42.682Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -52747,7 +53710,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://orsopub.ca/reservation/",
       "mediaUrl": "https://orsopub.ca/wp-content/themes/orso/assets/img/background/theme-form-back.png",
       "publishedAt": null,
-      "observedAt": "2026-09-03T18:58:53.944Z",
+      "observedAt": "2026-09-03T20:05:42.004Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -52786,8 +53749,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Browse locations in Halifax",
       "postUrl": "https://locations.osmows.com/ca/ns/halifax",
       "mediaUrl": "https://dyn.mktgcdn.com/p/f2MsH8GUIFKAE17lt_2wM3S8hoeG4PqDeCqWgF7p0yA/width=500,height=167",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:53.205Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:41.151Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -52828,7 +53791,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://osmows.com/fr/menu",
       "mediaUrl": "https://framerusercontent.com/images/XCjhex92g3ZCWfSeZP9Ezt8CVk.png",
       "publishedAt": null,
-      "observedAt": "2026-09-03T18:58:53.975Z",
+      "observedAt": "2026-09-03T20:05:41.563Z",
       "signalMatches": {
         "specials": [
           "special"
@@ -52863,8 +53826,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Order from Papa Johns Portland Street for the best takeout and food delivery in Dartmouth. Order online, visit or call for pizza, wings, sides and more!",
       "postUrl": "https://locations.papajohns.com/canada/ns/b2w-6c4/dartmouth/644-portland-street",
       "mediaUrl": "https://a.mktgcdn.com/p/PKQuF1R1Hyhyzo1d0GQ6MgdakYL9Y7R3r_aSUi3mZwE/2048x2048.jpg",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:54.172Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:41.752Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -52935,7 +53898,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.papajohns.com/promotional-offers",
       "mediaUrl": null,
       "publishedAt": null,
-      "observedAt": "2026-09-01T15:24:19.616Z",
+      "observedAt": "2026-09-03T20:05:42.802Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -53011,7 +53974,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.papajohns.com/specials/",
       "mediaUrl": "https://www.papajohns.com/specials/img/mobile.jpg",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:20.281Z",
+      "observedAt": "2026-09-03T20:05:43.036Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -53082,7 +54045,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.rcr.ca/restaurants/cable-wharf-kitchen-patio/",
       "mediaUrl": "https://www.rcr.ca/content/uploads/2023/04/cable-wharf-kitchen-patio-4-1920x1006.jpg",
       "publishedAt": "2026-07-15T18:57:22.000Z",
-      "observedAt": "2026-09-03T18:58:13.587Z",
+      "observedAt": "2026-09-03T20:05:15.593Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -53134,7 +54097,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.rcr.ca/restaurants/pazzo-italian-ristorante/",
       "mediaUrl": "https://www.rcr.ca/content/uploads/2023/08/pazzo-italian-ristorante-1920x1006.jpg",
       "publishedAt": "2026-09-02T21:56:31.000Z",
-      "observedAt": "2026-09-03T18:58:13.321Z",
+      "observedAt": "2026-09-03T20:05:15.293Z",
       "signalMatches": {
         "happy_hour": [
           "happy hour"
@@ -53187,7 +54150,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.peterspizzeriahfx.com/",
       "mediaUrl": "https://static.wixstatic.com/media/373814_b53408bc2a854106bf5246c834de3c7c%7Emv2.png/v1/fit/w_2500,h_1330,al_c/373814_b53408bc2a854106bf5246c834de3c7c%7Emv2.png",
       "publishedAt": "2500-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:54.583Z",
+      "observedAt": "2026-09-03T20:05:42.134Z",
       "signalMatches": {
         "specials": [
           "offer",
@@ -53233,7 +54196,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.peterspizzeriahfx.com/menu-1",
       "mediaUrl": "https://static.wixstatic.com/media/373814_b53408bc2a854106bf5246c834de3c7c~mv2.png/v1/fit/w_2500,h_1330,al_c/373814_b53408bc2a854106bf5246c834de3c7c~mv2.png",
       "publishedAt": "2500-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:54.929Z",
+      "observedAt": "2026-09-03T20:05:42.447Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -53301,11 +54264,11 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "restaurantName": "Peter's Pizzeria",
       "platform": "official_page",
       "title": "Order Online | Peters Pizzeria",
-      "excerpt": "--> Order Online | Peters Pizzeria top of page Home Location & Hours Menu Order Online More Use tab to navigate through the menu items. Log In Inglis Street Online Ordering You can order online! Browse our menu items and choose what you’d like to order from us. Accepting Orders Delivery fee - C$0.00 Min. order - C$10.00 Free delivery above Pickup Delivery Dine-In Delivery time: Up to 70 minutes Change Delivery Add...",
+      "excerpt": "--> Order Online | Peters Pizzeria top of page Home Location & Hours Menu Order Online More Use tab to navigate through the menu items. Log In Inglis Street Online Ordering You can order online! Browse our menu items and choose what you’d like to order from us. Not Accepting Orders Delivery fee - Min. order - C$0.00 Free delivery above Pickup Delivery Dine-In ​ Change Pickup Address: 5391 Inglis Street, Halifax NS...",
       "postUrl": "https://www.peterspizzeriahfx.com/online-ordering",
       "mediaUrl": "https://static.wixstatic.com/media/373814_b53408bc2a854106bf5246c834de3c7c%7Emv2.png/v1/fit/w_2500,h_1330,al_c/373814_b53408bc2a854106bf5246c834de3c7c%7Emv2.png",
       "publishedAt": "2500-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:55.108Z",
+      "observedAt": "2026-09-03T20:05:42.651Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -53346,7 +54309,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.peterspizzeriahfx.com/order-online",
       "mediaUrl": "https://static.wixstatic.com/media/373814_b53408bc2a854106bf5246c834de3c7c%7Emv2.png/v1/fit/w_2500,h_1330,al_c/373814_b53408bc2a854106bf5246c834de3c7c%7Emv2.png",
       "publishedAt": "2500-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:55.287Z",
+      "observedAt": "2026-09-03T20:05:42.849Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -53382,8 +54345,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "sday CLOSED Thursday 9:00 - 24:00 Friday 9:00 - 02:00 Saturday 9:00 - 02:00 Sunday 9:00 - 02:00 Follow Us PG Cafe & Grill (902) 429-8806 The best place for fantastic food. See Our Menu ABOUT PG Cafe… Since 1991—when it was one of the pillars of Halifax Scotia Square Mall’s food court — PG’s has served up the home-cooked flavor. We believe in “we are what we eat”, and would love to share our fresh and healthy ingre...",
       "postUrl": "https://pgcafeandgrill.com/",
       "mediaUrl": "https://pgcafeandgrill.com/wp-content/uploads/2019/05/PG1.jpg",
-      "publishedAt": "2003-06-06T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:55.186Z",
+      "publishedAt": "2003-06-06T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:42.368Z",
       "signalMatches": {
         "specials": [
           "deal",
@@ -53420,8 +54383,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Discover the ins and outs of the 3-5-2 soccer formation, including its structure, advantages, and training tips for mastering this tactical approach.",
       "postUrl": "https://phohoangminh.ca/",
       "mediaUrl": "https://phohoangminh.ca/wp-content/uploads/featured-image-player-responsibilities-in-the-3-5-2-formation-discipline-structural-integrity.webp",
-      "publishedAt": "2001-06-08T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:55.451Z",
+      "publishedAt": "2001-06-08T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:42.385Z",
       "signalMatches": {
         "specials": [
           "deal",
@@ -53462,8 +54425,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "View and manage your profile information.",
       "postUrl": "https://dal.mydininghub.ca/en/account?section=my-menu",
       "mediaUrl": null,
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:09.198Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:10.779Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -53499,8 +54462,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Enjoy delicious meals, coffee, snacks, and more at these dining locations.",
       "postUrl": "https://dal.mydininghub.ca/en/locations",
       "mediaUrl": null,
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:09.364Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:09.499Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -53524,8 +54487,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "associationBasis": "official_site_linked_page",
       "confidence": "official_source_page_signal",
       "reviewState": "source_signal",
-      "discoveryReason": "first_party_menu",
-      "sourceLabel": "Locations & Menus"
+      "discoveryReason": "official_homepage",
+      "sourceLabel": "Official website"
     },
     {
       "id": "official-page-07a0af96e3b30bfd3b",
@@ -53537,7 +54500,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://pzzaco.ca/",
       "mediaUrl": "https://pzzaco.ca/wp-content/uploads/2025/02/banner_01_1920x808-2025.jpg",
       "publishedAt": "2026-03-06T16:23:04.000Z",
-      "observedAt": "2026-09-03T18:58:56.423Z",
+      "observedAt": "2026-09-03T20:05:43.333Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -53582,7 +54545,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://pzzaco.ca/specials/",
       "mediaUrl": "https://pzzaco.ca/wp-content/uploads/2022/11/small_pizza_1bottle_nov_2022.jpg",
       "publishedAt": "2022-11-08T15:46:00.000Z",
-      "observedAt": "2026-09-03T18:59:01.056Z",
+      "observedAt": "2026-09-03T20:05:48.065Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -53624,7 +54587,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://pzzaco.ca/specialty-pizzas/",
       "mediaUrl": "https://pzzaco.ca/wp-content/uploads/2019/11/gardino_fresco_pizza_500_2018-1.jpg",
       "publishedAt": "2022-11-01T23:39:07.000Z",
-      "observedAt": "2026-09-03T18:58:58.969Z",
+      "observedAt": "2026-09-03T20:05:45.900Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -53665,7 +54628,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.rcr.ca/restaurants/cable-wharf-kitchen-patio/",
       "mediaUrl": "https://www.rcr.ca/content/uploads/2023/04/cable-wharf-kitchen-patio-4-1920x1006.jpg",
       "publishedAt": "2026-07-15T18:57:22.000Z",
-      "observedAt": "2026-09-03T18:58:14.148Z",
+      "observedAt": "2026-09-03T20:05:16.176Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -53717,7 +54680,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.rcr.ca/restaurants/public-cafe-bakery-bar/",
       "mediaUrl": "https://www.rcr.ca/content/uploads/2025/10/Public-RCR-1920x1006.jpg",
       "publishedAt": "2026-08-24T15:19:51.000Z",
-      "observedAt": "2026-09-03T18:58:13.838Z",
+      "observedAt": "2026-09-03T20:05:15.881Z",
       "signalMatches": {
         "happy_hour": [
           "happy hour"
@@ -53770,8 +54733,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Real Fake Meats Menus Order Online Now! (Local Pickup & Delivery) CONTACT About Us Gift Cards New RFM Merch! Menus Order Online Now! (Local Pickup & Delivery) CONTACT About Us Gift Cards New RFM Merch! HALIFAX’S FIRST VEGAN BUTCHER SHOP FOLLOW US ON INSTAGRAM Back To Top Cart ( 0 )",
       "postUrl": "https://www.realfakemeats.com/",
       "mediaUrl": "http://static1.squarespace.com/static/5aba805412b13f27716a7d1a/t/5ae16ab60e2e72a5565b4684/1524722360107/RFM-StandAlone-White.png?format=1500w",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:57.353Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:43.915Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -53799,8 +54762,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Menus &mdash; Real Fake Meats Menus Order Online Now! (Local Pickup & Delivery) CONTACT About Us Gift Cards New RFM Merch! Menus Order Online Now! (Local Pickup & Delivery) CONTACT About Us Gift Cards New RFM Merch! Back To Top Cart ( 0 )",
       "postUrl": "https://www.realfakemeats.com/menurfm",
       "mediaUrl": "https://images.squarespace-cdn.com/content/v1/5aba805412b13f27716a7d1a/1524722358596-CAIJURSXM9WDVV5R6QBS/RFM-StandAlone-White.png?format=1500w",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:57.658Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:44.191Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -53828,8 +54791,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "BENVENUTI RISTORANTE AMANO BRINGS THE WARMTH & TASTE OF A NEIGHBOURHOOD ITALIAN TRATTORIA TO THE HALIFAX WATERFRONT. A PRESTO!",
       "postUrl": "https://www.ristoranteamano.ca/",
       "mediaUrl": "http://www.ristoranteamano.ca/wp-content/uploads/2018/12/screen-pattern.png",
-      "publishedAt": "2019-05-06T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:57.976Z",
+      "publishedAt": "2019-05-06T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:44.209Z",
       "signalMatches": {
         "reservations": [
           "reservation",
@@ -53858,8 +54821,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "MAKE A RESERVATION Find A Table SevenroomsWidget.init({ venueId: \"ristoranteamano\", triggerId: \"sr-res-root\", // id of the dom element that will trigger this widget type: \"reservations\", // either 'reservations' or 'waitlist' or 'events'",
       "postUrl": "https://www.ristoranteamano.ca/reservations/",
       "mediaUrl": "http://bertossigroup.com/in-the-news/Best-of-Halifax-Generic-Gold.png",
-      "publishedAt": "2019-05-06T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:58.529Z",
+      "publishedAt": "2019-05-06T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:46.100Z",
       "signalMatches": {
         "events": [
           "event",
@@ -53892,8 +54855,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "JOIN US FOR THE BEST TASTING PIZZA IN TOWN",
       "postUrl": "https://rushhourpizza.ca/",
       "mediaUrl": "https://img1.wsimg.com/isteam/stock/2995",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:58.185Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:44.700Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -53925,8 +54888,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Discover amazing pizza specials at Rush Hour Pizza! Enjoy daily specials, donair offers, and unbeatable pizza deals for every taste.",
       "postUrl": "https://rushhourpizza.ca/specials",
       "mediaUrl": "https://img1.wsimg.com/isteam/stock/2995",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:58.509Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:44.998Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -53960,7 +54923,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.sajhouse.ca/",
       "mediaUrl": "https://sajhouse.ca/images/og/sajhouse-og.png",
       "publishedAt": "2001-06-07T03:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:21.111Z",
+      "observedAt": "2026-09-03T20:05:44.901Z",
       "signalMatches": {
         "specials": [
           "deal",
@@ -53998,7 +54961,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.salvatorespizza.ca/",
       "mediaUrl": "https://salvatorespizza.ca/wp-content/uploads/2016/11/cards.png",
       "publishedAt": null,
-      "observedAt": "2026-09-03T18:58:58.872Z",
+      "observedAt": "2026-09-03T20:05:44.931Z",
       "signalMatches": {
         "specials": [
           "offer"
@@ -54026,8 +54989,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Sea Smoke 0 Skip to Content Home Menu Gift Cards Contact Reservations Open Menu Close Menu Home Menu Gift Cards Contact Reservations Open Menu Close Menu Home Menu Gift Cards Contact Reservations Slide 1 Slide 1 (current slide) Slide 2 Slide 2 (current slide) Slide 3 Slide 3 (current slide) Slide 4 Slide 4 (current slide) Slide 5 Slide 5 (current slide) Slide 6 Slide 6 (current slide) Slide 7 Slide 7 (current slid...",
       "postUrl": "https://www.seasmokehalifax.com/",
       "mediaUrl": "https://images.squarespace-cdn.com/content/v1/602810f8c8fe0a7f210814fd/a3311d92-e754-4a61-a833-ed7d310e4dd6/4B2A2753.jpg",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:58.991Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:44.950Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -54063,8 +55026,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Menu &mdash; Sea Smoke 0 Skip to Content Home Menu Gift Cards Contact Reservations Open Menu Close Menu Home Menu Gift Cards Contact Reservations Open Menu Close Menu Home Menu Gift Cards Contact Reservations MENUS Our chefs bring decades of culinary experience to the table, serving fresh, delicious seafood in creative preparations that will delight your senses. From our oyster bar you'll find find fresh, local fa...",
       "postUrl": "https://www.seasmokehalifax.com/menu",
       "mediaUrl": "https://images.squarespace-cdn.com/content/v1/602810f8c8fe0a7f210814fd/36896399-ceea-431a-b9e6-67c115ae8b4e/4B2A3719.jpg",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:59.279Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:45.384Z",
       "signalMatches": {
         "specials": [
           "offer"
@@ -54105,8 +55068,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Reservations &mdash; Sea Smoke 0 Skip to Content Home Menu Gift Cards Contact Reservations Open Menu Close Menu Home Menu Gift Cards Contact Reservations Open Menu Close Menu Home Menu Gift Cards Contact Reservations For a Reservation of 4 persons or Less, Please Use the Link Below For Reservations of 5 or More, Please Call Us At (902) 406-1051 For Reservations of 20 or More, Please Email suzanne@beyondhospitality...",
       "postUrl": "https://www.seasmokehalifax.com/reservations",
       "mediaUrl": null,
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:59.457Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:45.583Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -54142,8 +55105,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Home",
       "postUrl": "https://www.seaportsocialhalifax.com/",
       "mediaUrl": "https://www.seaportsocialhalifax.com/resourcefiles/homeimages/small-charcuterie.jpg?version=8142026051329",
-      "publishedAt": "2001-08-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:59.000Z",
+      "publishedAt": "2001-08-01T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:45.167Z",
       "signalMatches": {
         "happy_hour": [
           "happy hour"
@@ -54199,8 +55162,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Our Menus",
       "postUrl": "https://www.seaportsocialhalifax.com/our-menus",
       "mediaUrl": "https://www.seaportsocialhalifax.com/resourcefiles/homeimages/small-charcuterie.jpg?version=8142026051329",
-      "publishedAt": "2001-08-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:59.495Z",
+      "publishedAt": "2001-08-01T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:45.747Z",
       "signalMatches": {
         "happy_hour": [
           "happy hour"
@@ -54252,8 +55215,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Specials",
       "postUrl": "https://www.seaportsocialhalifax.com/specials",
       "mediaUrl": "https://www.seaportsocialhalifax.com/resourcefiles/mainimages/specials.png?version=8142026051329",
-      "publishedAt": "2001-08-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:59.717Z",
+      "publishedAt": "2001-08-01T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:45.949Z",
       "signalMatches": {
         "happy_hour": [
           "happy hour"
@@ -54299,7 +55262,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://secondcup.com/en/location/bayers-lake/",
       "mediaUrl": null,
       "publishedAt": "2026-02-13T20:25:43.000Z",
-      "observedAt": "2026-09-03T18:58:59.632Z",
+      "observedAt": "2026-09-03T20:05:45.555Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -54377,7 +55340,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://secondcup.com/en/menu/beverages/",
       "mediaUrl": "https://secondcup.com/wp-content/uploads/2024/05/Second-Cup_SPRINGSUMMER2024_MOBILE_BANNER_768x960_EN-03-updated.jpg",
       "publishedAt": "2024-12-03T16:09:07.000Z",
-      "observedAt": "2026-09-03T18:59:01.175Z",
+      "observedAt": "2026-09-03T20:05:46.013Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -54455,7 +55418,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://secondcup.com/en/menu/beverages/brewed-coffees-and-teas/",
       "mediaUrl": "https://secondcup.com/wp-content/uploads/2021/10/STRAWBERRY.jpg",
       "publishedAt": "2025-02-27T16:25:44.000Z",
-      "observedAt": "2026-09-01T15:24:22.596Z",
+      "observedAt": "2026-09-03T20:05:46.890Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -54533,7 +55496,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://secondcup.com/en/menu/beverages/cold-infusions/",
       "mediaUrl": "https://secondcup.com/wp-content/uploads/2023/04/SECOND-CUP-SPRING2023-Mobile-Infuzer-FR.jpg",
       "publishedAt": "2024-12-03T16:11:24.000Z",
-      "observedAt": "2026-09-03T18:59:05.078Z",
+      "observedAt": "2026-09-03T20:05:46.716Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -54611,7 +55574,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://secondcup.com/en/menu/beverages/hot-chocolates/",
       "mediaUrl": "https://secondcup.com/wp-content/uploads/2022/04/Hot-Chocolate.jpg",
       "publishedAt": "2025-02-27T16:37:15.000Z",
-      "observedAt": "2026-09-01T15:24:22.945Z",
+      "observedAt": "2026-09-03T20:05:49.415Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -54689,7 +55652,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://secondcup.com/en/menu/beverages/ice-mixes/",
       "mediaUrl": "https://secondcup.com/wp-content/uploads/2022/04/Spring2022_IcedTeas_WebBanner_E.jpg",
       "publishedAt": "2025-02-27T16:27:13.000Z",
-      "observedAt": "2026-09-03T18:59:03.825Z",
+      "observedAt": "2026-09-03T20:05:46.533Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -54767,7 +55730,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://secondcup.com/en/menu/beverages/latte-teas/",
       "mediaUrl": "https://secondcup.com/wp-content/uploads/2022/04/Vanilla-Tea-Latte.jpg",
       "publishedAt": "2025-02-27T16:27:37.000Z",
-      "observedAt": "2026-09-01T15:24:22.772Z",
+      "observedAt": "2026-09-03T20:05:48.198Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -54845,7 +55808,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://secondcup.com/en/menu/beverages/lattes-and-espressos/",
       "mediaUrl": "https://secondcup.com/wp-content/uploads/2022/04/Espresso-Frappe.jpg",
       "publishedAt": "2025-02-27T16:38:02.000Z",
-      "observedAt": "2026-09-03T18:59:01.365Z",
+      "observedAt": "2026-09-03T20:05:46.182Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -54923,7 +55886,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://secondcup.com/en/menu/beverages/on-ice/",
       "mediaUrl": "https://secondcup.com/wp-content/uploads/2022/08/Fall2022_webbanner_mobile_PumpkinSpice_E.jpg",
       "publishedAt": "2026-04-01T15:11:15.000Z",
-      "observedAt": "2026-09-03T18:59:02.589Z",
+      "observedAt": "2026-09-03T20:05:46.354Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -55001,7 +55964,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://secondcup.com/en/menu/smoothies/",
       "mediaUrl": "https://secondcup.com/wp-content/uploads/2024/01/SC_WEBSITE_Smoothies.jpg",
       "publishedAt": "2026-06-02T13:53:40.000Z",
-      "observedAt": "2026-09-01T15:24:24.023Z",
+      "observedAt": "2026-09-03T20:05:50.660Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -55079,7 +56042,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.rcr.ca/restaurants/cable-wharf-kitchen-patio/",
       "mediaUrl": "https://www.rcr.ca/content/uploads/2023/04/cable-wharf-kitchen-patio-4-1920x1006.jpg",
       "publishedAt": "2026-07-15T18:57:22.000Z",
-      "observedAt": "2026-09-03T18:58:14.738Z",
+      "observedAt": "2026-09-03T20:05:16.771Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -55131,7 +56094,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.rcr.ca/restaurants/shuck-seafood-raw-bar/",
       "mediaUrl": "https://www.rcr.ca/content/uploads/2018/02/shuck-1995-1920x1006.jpg",
       "publishedAt": "2026-07-21T19:23:27.000Z",
-      "observedAt": "2026-09-03T18:58:14.397Z",
+      "observedAt": "2026-09-03T20:05:16.470Z",
       "signalMatches": {
         "happy_hour": [
           "happy hour"
@@ -55182,8 +56145,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Sicilian Pizza is the Pizza Corner ORIGINAL. Serving Halifax the best pizza, donairs, wings and subs for over 30 years. 3 Locations to Server You (Pizza Corner, Quinpool Rd & Titus St)",
       "postUrl": "http://www.sicilian.ca/",
       "mediaUrl": "http://www.sicilian.ca/images/2024/2024-Homepage-1.jpg",
-      "publishedAt": "2001-08-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:59:00.128Z",
+      "publishedAt": "2001-08-01T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:45.917Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -55254,7 +56217,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "http://www.sicilian.ca/menu_calzone.php",
       "mediaUrl": "http://www.sicilian.ca/images/text-03.gif",
       "publishedAt": "2001-08-01T03:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:24.345Z",
+      "observedAt": "2026-09-03T20:05:48.483Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -55324,7 +56287,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "http://www.sicilian.ca/menu_create.php",
       "mediaUrl": "http://www.sicilian.ca/images/text-03.gif",
       "publishedAt": "2001-08-01T03:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:23.782Z",
+      "observedAt": "2026-09-03T20:05:47.917Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -55397,7 +56360,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "http://www.sicilian.ca/menu_donair.php",
       "mediaUrl": "http://www.sicilian.ca/images/text-03.gif",
       "publishedAt": "2001-08-01T03:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:24.623Z",
+      "observedAt": "2026-09-03T20:05:48.766Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -55465,8 +56428,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Sicilian Pizza Donairs & Subs is famous for our cheesy, baked garlic fingers in Halifax. These are served with your favorite tangy sauces and dips.",
       "postUrl": "http://www.sicilian.ca/menu_garlicfingers.php",
       "mediaUrl": "http://www.sicilian.ca/images/text-03.gif",
-      "publishedAt": "2001-08-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:59:04.610Z",
+      "publishedAt": "2001-08-01T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:47.633Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -55535,8 +56498,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Try ourtasty fries & authentic Poutine, made with real cheese curds and gravy. We serve our customers authentic and delicious best fries and poutine in Halifax.",
       "postUrl": "http://www.sicilian.ca/menu_poutine.php",
       "mediaUrl": "http://www.sicilian.ca/images/text-03.gif",
-      "publishedAt": "2001-08-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:59:02.278Z",
+      "publishedAt": "2001-08-01T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:47.062Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -55604,8 +56567,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Sicilian Pizza Donairs & Subs has the best gourmet appetizers and salads in Halifax.",
       "postUrl": "http://www.sicilian.ca/menu_salads.php",
       "mediaUrl": "http://www.sicilian.ca/images/text-03.gif",
-      "publishedAt": "2001-08-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:59:01.389Z",
+      "publishedAt": "2001-08-01T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:46.766Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -55678,7 +56641,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "http://www.sicilian.ca/menu_specialty.php",
       "mediaUrl": "http://www.sicilian.ca/images/text-03.gif",
       "publishedAt": "2001-08-01T03:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:24.059Z",
+      "observedAt": "2026-09-03T20:05:48.199Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -55750,8 +56713,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Chicken Wings are one of our most popular meals. Enjoy the juiciest and most delicious wings in Halifax.",
       "postUrl": "http://www.sicilian.ca/menu_wings.php",
       "mediaUrl": "http://www.sicilian.ca/images/text-03.gif",
-      "publishedAt": "2001-08-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:59:03.539Z",
+      "publishedAt": "2001-08-01T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:47.350Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -55819,8 +56782,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Menu | Sicilian Pizza Sicilian Pizza Donairs & Subs - The Official Pizza Corner® MENU MENU SALADS & APPETIZERS FRIES & POUTINE WINGS GARLIC FINGERS CREATE YOUR OWN PIZZA SPECIALTY PIZZA CALZONES DONAIRS SUBS DRINKS CATERING SPECIALS LOCATIONS CONTACT ORDER ONLINE Home of the BIG Slice &reg; --> The Official Pizza Corner ® Sicilian Pizza on Facebook Sicilian Pizza on Twitter ORDER ONLINE NOW! Call us today (902) 45...",
       "postUrl": "http://www.sicilian.ca/menu.php",
       "mediaUrl": "http://www.sicilian.ca/images/text-03.gif",
-      "publishedAt": "2001-08-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:59:00.776Z",
+      "publishedAt": "2001-08-01T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:46.483Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -55889,7 +56852,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://skettiandballco.ca/",
       "mediaUrl": "https://skettiandballco.ca/wp-content/uploads/2023/10/SkettiBallCo_Social_1200x630.jpg",
       "publishedAt": "2026-04-21T20:05:28.000Z",
-      "observedAt": "2026-09-03T18:59:00.453Z",
+      "observedAt": "2026-09-03T20:05:46.130Z",
       "signalMatches": {
         "events": [
           "event",
@@ -55930,7 +56893,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://smokehousebrewery.ca/",
       "mediaUrl": "https://smokehousebrewery.ca/wp-content/uploads/2026/02/smokehousebrewery-wildcatblonde.png",
       "publishedAt": "2026-06-03T17:09:29.000Z",
-      "observedAt": "2026-09-03T18:59:03.030Z",
+      "observedAt": "2026-09-03T20:05:46.548Z",
       "signalMatches": {
         "events": [
           "event",
@@ -55975,7 +56938,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://smokehousebrewery.ca/taproom/taproom-events/",
       "mediaUrl": "https://smokehousebrewery.ca/wp-content/uploads/2026/02/smokehouse-brewery03.webp",
       "publishedAt": "2026-09-03T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:59:04.226Z",
+      "observedAt": "2026-09-03T20:05:47.782Z",
       "signalMatches": {
         "events": [
           "event",
@@ -56050,8 +57013,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Springhouse offers plant-based meal subscriptions with weekly delivery in the Halifax area, as well as small event catering.",
       "postUrl": "https://www.eatspringhouse.com/",
       "mediaUrl": "https://www.eatspringhouse.com/uploads/b/0f4cbd30-c178-11ea-ad1b-c9c4b503134c/Bruschetta.JPG",
-      "publishedAt": "+181819-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:59:03.176Z",
+      "publishedAt": "+181819-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:48.257Z",
       "signalMatches": {
         "specials": [
           "offer",
@@ -56079,7 +57042,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://locations.stlouiswings.com/ns-dartmouth-2201",
       "mediaUrl": "https://www.stlouiswings.com/wp-content/uploads/2026/07/Wingsanity-2026-Home-Page-Banner_Banner-scaled-1.png",
       "publishedAt": "2048-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:59:04.186Z",
+      "observedAt": "2026-09-03T20:05:48.981Z",
       "signalMatches": {
         "happy_hour": [
           "happy hour"
@@ -56117,11 +57080,11 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "restaurantName": "St. Louis Bar & Grill",
       "platform": "official_page",
       "title": "Select Store - St. Louis Bar & Grill",
-      "excerpt": "ect Location STORE DETAILS Find Nearby Locations Find Nearby Locations Search radius 10 km 25 km 50 km 100 km 200 km 500 km Results 25 50 75 100 My St. Louis Select Location --> X Menu Find Us Franchising Gift Cards Order Now Order Now Order Now --> SELECT PROVINCE Alberta Manitoba New Brunswick Nova Scotia Ontario PEI SELECT A CITY SELECT LOCATION Continue APP ON TAP ST. LOUIS REWARDS FOR TAKE OUT AND DELIVERY Ea...",
+      "excerpt": "ect Location STORE DETAILS Find Nearby Locations Find Nearby Locations Search radius 10 km 25 km 50 km 100 km 200 km 500 km Results 25 50 75 100 My St. Louis Select Location --> X Menu Find Us Franchising Gift Cards Order Now Order Now SELECT PROVINCE Alberta Manitoba New Brunswick Nova Scotia Ontario PEI SELECT A CITY SELECT LOCATION Continue APP ON TAP ST. LOUIS REWARDS FOR TAKE OUT AND DELIVERY Earn points on e...",
       "postUrl": "https://www.stlouiswings.com/select-store/",
       "mediaUrl": "https://www.stlouiswings.com/wp-content/uploads/2018/01/images/cross-icon.png",
       "publishedAt": "2026-07-28T08:47:42.000Z",
-      "observedAt": "2026-09-01T15:24:23.932Z",
+      "observedAt": "2026-09-03T20:05:49.050Z",
       "signalMatches": {
         "specials": [
           "deal",
@@ -56155,8 +57118,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "View and manage your profile information.",
       "postUrl": "https://dal.mydininghub.ca/en/account?section=my-menu",
       "mediaUrl": null,
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:09.537Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:11.093Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -56192,8 +57155,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Enjoy delicious meals, coffee, snacks, and more at these dining locations.",
       "postUrl": "https://dal.mydininghub.ca/en/locations",
       "mediaUrl": null,
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:09.704Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:09.723Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -56217,8 +57180,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "associationBasis": "official_site_linked_page",
       "confidence": "official_source_page_signal",
       "reviewState": "source_signal",
-      "discoveryReason": "first_party_menu",
-      "sourceLabel": "Locations & Menus"
+      "discoveryReason": "official_homepage",
+      "sourceLabel": "Official website"
     },
     {
       "id": "official-page-b91b94f659aa3dcbd1",
@@ -56229,8 +57192,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Starbucks Coffee Company Skip to main content Menu Rewards Gift Cards Find a café Sign in Join now Menu Rewards Gift Cards Sign in Join now Find a café Account Card management My Rewards History Personal info Payment methods Privacy and data Settings Sign out It's a great day for coffee Start an order PSL season is here Our 2026 pumpkin menu has landed. Enjoy the one-and-only Pumpkin Spice Latte, tasty new drinks...",
       "postUrl": "https://www.starbucks.ca/",
       "mediaUrl": "https://content-prod-live.cert.starbucks.com/binary/v2/asset/143-112130.jpg",
-      "publishedAt": "6341-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:19.346Z",
+      "publishedAt": "6341-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:18.226Z",
       "signalMatches": {
         "specials": [
           "offer"
@@ -56284,8 +57247,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Starbucks Coffee Company Skip to main content Menu Rewards Gift Cards Find a café Sign in Join now Menu Rewards Gift Cards Sign in Join now Find a café Account Card management My Rewards History Personal info Payment methods Privacy and data Settings Sign out It's a great day for coffee Start an order PSL season is here Our 2026 pumpkin menu has landed. Enjoy the one-and-only Pumpkin Spice Latte, tasty new drinks...",
       "postUrl": "https://www.starbucks.ca/",
       "mediaUrl": "https://content-prod-live.cert.starbucks.com/binary/v2/asset/143-112130.jpg",
-      "publishedAt": "6341-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:20.659Z",
+      "publishedAt": "6341-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:19.709Z",
       "signalMatches": {
         "specials": [
           "offer"
@@ -56339,8 +57302,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Starbucks®",
       "postUrl": "https://www.starbucks.ca/menu",
       "mediaUrl": "https://www.starbucks.com/weblx/images/social/summary_square.png",
-      "publishedAt": "6341-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:19.528Z",
+      "publishedAt": "6341-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:18.426Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -56363,8 +57326,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Starbucks®",
       "postUrl": "https://www.starbucks.ca/menu",
       "mediaUrl": "https://www.starbucks.com/weblx/images/social/summary_square.png",
-      "publishedAt": "6341-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:20.859Z",
+      "publishedAt": "6341-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:20.058Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -56387,8 +57350,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Featured Fall Menu: Starbucks Coffee Company Featured Fall Menu Skip to main content Menu Rewards Gift Cards Find a café Sign in Join now Menu Rewards Gift Cards Sign in Join now Find a café Account Card management My Rewards History Personal info Payment methods Privacy and data Settings Sign out More pumpkin, please Pumpkin Spice Latte The iconic PSL is back. Real pumpkin, full-bodied espresso and fall-spice fla...",
       "postUrl": "https://www.starbucks.ca/menu/featured/",
       "mediaUrl": "https://content-prod-live.cert.starbucks.com/binary/v2/asset/143-111801.jpg",
-      "publishedAt": "6341-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:20.018Z",
+      "publishedAt": "6341-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:18.924Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -56458,8 +57421,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Featured Fall Menu: Starbucks Coffee Company Featured Fall Menu Skip to main content Menu Rewards Gift Cards Find a café Sign in Join now Menu Rewards Gift Cards Sign in Join now Find a café Account Card management My Rewards History Personal info Payment methods Privacy and data Settings Sign out More pumpkin, please Pumpkin Spice Latte The iconic PSL is back. Real pumpkin, full-bodied espresso and fall-spice fla...",
       "postUrl": "https://www.starbucks.ca/menu/featured/",
       "mediaUrl": "https://content-prod-live.cert.starbucks.com/binary/v2/asset/143-111801.jpg",
-      "publishedAt": "6341-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:21.240Z",
+      "publishedAt": "6341-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:20.724Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -56529,8 +57492,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Starbucks®",
       "postUrl": "https://www.starbucks.ca/menu/the-latest/pumpkin-picks",
       "mediaUrl": "https://www.starbucks.com/weblx/images/social/summary_square.png",
-      "publishedAt": "6341-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:19.716Z",
+      "publishedAt": "6341-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:18.709Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -56553,8 +57516,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Starbucks®",
       "postUrl": "https://www.starbucks.ca/menu/the-latest/pumpkin-picks",
       "mediaUrl": "https://www.starbucks.com/weblx/images/social/summary_square.png",
-      "publishedAt": "6341-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:21.051Z",
+      "publishedAt": "6341-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:20.509Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -56577,8 +57540,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Easy Mobile & Online Ordering & Delivery: Starbucks Coffee Company Easy Mobile & Online Ordering & Delivery Skip to main content Menu Rewards Gift Cards Find a café Sign in Join now Menu Rewards Gift Cards Sign in Join now Find a café Account Card management My Rewards History Personal info Payment methods Privacy and data Settings Sign out ORDER, PICKUP AND DELIVERY OPTIONS Order and pay ahead of time Whether you...",
       "postUrl": "https://www.starbucks.ca/ways-to-order/",
       "mediaUrl": "https://content-prod-live.cert.starbucks.com/binary/v2/asset/143-67484.png",
-      "publishedAt": "6341-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:20.430Z",
+      "publishedAt": "6341-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:19.423Z",
       "signalMatches": {
         "specials": [
           "offer"
@@ -56633,8 +57596,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Easy Mobile & Online Ordering & Delivery: Starbucks Coffee Company Easy Mobile & Online Ordering & Delivery Skip to main content Menu Rewards Gift Cards Find a café Sign in Join now Menu Rewards Gift Cards Sign in Join now Find a café Account Card management My Rewards History Personal info Payment methods Privacy and data Settings Sign out ORDER, PICKUP AND DELIVERY OPTIONS Order and pay ahead of time Whether you...",
       "postUrl": "https://www.starbucks.ca/ways-to-order/",
       "mediaUrl": "https://content-prod-live.cert.starbucks.com/binary/v2/asset/143-67484.png",
-      "publishedAt": "6341-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:21.672Z",
+      "publishedAt": "6341-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:21.440Z",
       "signalMatches": {
         "specials": [
           "offer"
@@ -56689,8 +57652,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Starbucks Delivers: Starbucks Coffee Company Starbucks Delivers Skip to main content Menu Rewards Gift Cards Find a café Sign in Join now Menu Rewards Gift Cards Sign in Join now Find a café Account Card management My Rewards History Personal info Payment methods Privacy and data Settings Sign out Today deserves delivery Your coffee is on its way Order Starbucks® delivery on DoorDash, SkipTheDishes or Uber Eats an...",
       "postUrl": "https://www.starbucks.ca/ways-to-order/delivery/",
       "mediaUrl": "https://content-prod-live.cert.starbucks.com/binary/v2/asset/143-82602.png",
-      "publishedAt": "6341-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:20.233Z",
+      "publishedAt": "6341-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:19.192Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -56742,8 +57705,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Starbucks Delivers: Starbucks Coffee Company Starbucks Delivers Skip to main content Menu Rewards Gift Cards Find a café Sign in Join now Menu Rewards Gift Cards Sign in Join now Find a café Account Card management My Rewards History Personal info Payment methods Privacy and data Settings Sign out Today deserves delivery Your coffee is on its way Order Starbucks® delivery on DoorDash, SkipTheDishes or Uber Eats an...",
       "postUrl": "https://www.starbucks.ca/ways-to-order/delivery/",
       "mediaUrl": "https://content-prod-live.cert.starbucks.com/binary/v2/asset/143-82602.png",
-      "publishedAt": "6341-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:21.471Z",
+      "publishedAt": "6341-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:21.159Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -56796,7 +57759,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://station1lebanesekitchen.com/",
       "mediaUrl": "https://station1lebanesekitchen.com/wp-content/uploads/2019/10/slide1.jpg",
       "publishedAt": "2026-07-30T07:55:33.000Z",
-      "observedAt": "2026-09-03T18:59:05.462Z",
+      "observedAt": "2026-09-03T20:05:49.247Z",
       "signalMatches": {
         "specials": [
           "special"
@@ -56827,8 +57790,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Stillwell Brewing Co. is the brewing arm of Stillwell, a well-known beer purveyor in Halifax, Nova Scotia. We brew primarily classic styles of beer using traditional ingredients and techniques.",
       "postUrl": "https://www.barstillwell.com/",
       "mediaUrl": "https://www.barstillwell.com/cdn/shop/files/DSCF3706.jpg?v=1709147590",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:59:05.847Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:49.282Z",
       "signalMatches": {
         "specials": [
           "offer",
@@ -56878,8 +57841,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Book the Stillwell Brewing Taproom & Hi-Fi for your private event!",
       "postUrl": "https://www.barstillwell.com/pages/events",
       "mediaUrl": "https://cdn.shopify.com/s/files/1/0004/4089/3476/files/tap_room_3_480x480.jpg?v=1694802189",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:59:06.666Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:50.198Z",
       "signalMatches": {
         "events": [
           "event",
@@ -56915,8 +57878,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Stillwell Brewing Co. is the brewing arm of Stillwell, a well-known beer purveyor in Halifax, Nova Scotia. We brew primarily classic styles of beer using traditional ingredients and techniques.",
       "postUrl": "https://www.barstillwell.com/pages/events-new",
       "mediaUrl": null,
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:59:06.325Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:49.799Z",
       "signalMatches": {
         "events": [
           "event",
@@ -56952,8 +57915,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Stillwell Brewing Co. is the brewing arm of Stillwell, a well-known beer purveyor in Halifax, Nova Scotia. We brew primarily classic styles of beer using traditional ingredients and techniques.",
       "postUrl": "https://www.barstillwell.com/pages/the-beer-garden",
       "mediaUrl": "https://www.barstillwell.com/cdn/shop/files/20160714_165234.jpg?v=1765211099",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:59:06.946Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:50.498Z",
       "signalMatches": {
         "events": [
           "event",
@@ -57000,8 +57963,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Stone Pizza Skip to content Main Menu Home Menu Contact Order Online Order Online Start Your Order What's New Seasonal menu refresh for winter is live! A tighter lineup, better ingredients and pizzas crafted with intention. Some favorites stayed. A few new ones earned their spot. Same Stone Pizza – Just dialed in for the season. Write a Review Did you enjoy your Stone Pizza order? We’d love to hear from you! Leave...",
       "postUrl": "https://stonepizza.ca/",
       "mediaUrl": "https://stonepizza.ca/wp-content/uploads/2025/01/Works2025-768x1024.jpg",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:59:06.305Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:49.283Z",
       "signalMatches": {
         "specials": [
           "offer"
@@ -57057,6 +58020,65 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "sourceLabel": "Menu"
     },
     {
+      "id": "official-page-f217404f61186f5250",
+      "restaurantId": "osm-node-5140336622-studio-east-food-drink",
+      "restaurantName": "Studio East Food+Drink",
+      "platform": "official_page",
+      "title": "Studio East Asian Gastropub - Halifax, NS",
+      "excerpt": "Nestled on the edge of the Halifax Common, Studio East offers a unique blend of exquisitely crafted Asian fare, the best of local craft brew, and vibrant, original cocktails, tailored to match the bold flavours of the East. We give farm-to-table new meaning; each dish uses fresh, local, ethically-sourced ingredients. Our menu celebrates an ambitious, yet approachable Asian-Global fusion that strives for the highes...",
+      "postUrl": "https://www.exploretock.com/studio-east-asian-gastropub-halifax",
+      "mediaUrl": "https://tock-public.imgix.net/imagesprod/user_uploaded_images_v1/c1268bac-a519-489f-83d7-28cf41f6a285.jpg?auto=format&amp;ixlib=java-2.3.2",
+      "publishedAt": null,
+      "observedAt": "2026-09-03T20:05:50.882Z",
+      "signalMatches": {
+        "specials": [
+          "offer",
+          "offers"
+        ],
+        "events": [
+          "event",
+          "events"
+        ],
+        "openings": [
+          "new location"
+        ],
+        "moves": [
+          "new location"
+        ],
+        "menu": [
+          "menu"
+        ],
+        "brunch": [
+          "brunch"
+        ],
+        "reservations": [
+          "reservation",
+          "reservations",
+          "book now"
+        ]
+      },
+      "candidateLinks": [
+        {
+          "url": "https://www.exploretock.com/studio-east-asian-gastropub-halifax/experience/496866/brunch",
+          "label": "Brunch"
+        },
+        {
+          "url": "https://www.exploretock.com/studio-east-asian-gastropub-halifax/experience/556915/lunch",
+          "label": "Book now"
+        },
+        {
+          "url": "https://www.exploretock.com/studio-east-asian-gastropub-halifax/experience/589499/dinner",
+          "label": "Book now"
+        }
+      ],
+      "sourceKind": "official_page_html",
+      "associationBasis": "official_site_linked_page",
+      "confidence": "official_source_page_signal",
+      "reviewState": "needs_date_review",
+      "discoveryReason": "first_party_reservations",
+      "sourceLabel": "Reservations"
+    },
+    {
       "id": "official-page-919d0da8cdf50f7ab4",
       "restaurantId": "osm-node-5140336622-studio-east-food-drink",
       "restaurantName": "Studio East Food+Drink",
@@ -57065,8 +58087,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Nova Scotia’s one of a kind Asian-global fusion restaurant a few minutes away from downtown Halifax.",
       "postUrl": "https://www.studioeastfood.ca/",
       "mediaUrl": "https://images.squarespace-cdn.com/content/v1/5dc72fed7665c170c5ffa441/30dafead-6407-49a1-8fca-2b28539d8f98/StudioEast-FlatLay-01-web-EDIT.jpg",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:59:06.840Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:50.810Z",
       "signalMatches": {
         "events": [
           "event",
@@ -57142,8 +58164,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "General 2 &mdash; Home 0 Skip to Content Menus Brunch Menu Lunch and Dinner Events and Catering Private Events at Studio East Studio Underground Restaurant Events Cocktail Events at the Dragon Bar Offsite Catering Our Story Contact us Reservations Open Menu Close Menu Menus Brunch Menu Lunch and Dinner Events and Catering Private Events at Studio East Studio Underground Restaurant Events Cocktail Events at the Dra...",
       "postUrl": "https://www.studioeastfood.ca/events",
       "mediaUrl": "https://images.squarespace-cdn.com/content/v1/5dc72fed7665c170c5ffa441/30dafead-6407-49a1-8fca-2b28539d8f98/StudioEast-FlatLay-01-web-EDIT.jpg",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:59:07.496Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:51.636Z",
       "signalMatches": {
         "specials": [
           "offer"
@@ -57234,8 +58256,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "General 2 &mdash; Home 0 Skip to Content Menus Brunch Menu Lunch and Dinner Events and Catering Private Events at Studio East Studio Underground Restaurant Events Cocktail Events at the Dragon Bar Offsite Catering Our Story Contact us Reservations Open Menu Close Menu Menus Brunch Menu Lunch and Dinner Events and Catering Private Events at Studio East Studio Underground Restaurant Events Cocktail Events at the Dra...",
       "postUrl": "https://www.studioeastfood.ca/events/dragonbar",
       "mediaUrl": "https://images.squarespace-cdn.com/content/v1/5dc72fed7665c170c5ffa441/30dafead-6407-49a1-8fca-2b28539d8f98/StudioEast-FlatLay-01-web-EDIT.jpg",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:59:07.863Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:52.015Z",
       "signalMatches": {
         "specials": [
           "offer",
@@ -57315,8 +58337,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "General 2 &mdash; Home 0 Skip to Content Menus Brunch Menu Lunch and Dinner Events and Catering Private Events at Studio East Studio Underground Restaurant Events Cocktail Events at the Dragon Bar Offsite Catering Our Story Contact us Reservations Open Menu Close Menu Menus Brunch Menu Lunch and Dinner Events and Catering Private Events at Studio East Studio Underground Restaurant Events Cocktail Events at the Dra...",
       "postUrl": "https://www.studioeastfood.ca/events/restaurant",
       "mediaUrl": "https://images.squarespace-cdn.com/content/v1/5dc72fed7665c170c5ffa441/30dafead-6407-49a1-8fca-2b28539d8f98/StudioEast-FlatLay-01-web-EDIT.jpg",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:59:07.679Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:51.824Z",
       "signalMatches": {
         "events": [
           "event",
@@ -57398,8 +58420,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Explore our delectable brunch menu featuring bao bennies, regional dishes, and house-made waffles. Perfect for weekend indulgence in Halifax.",
       "postUrl": "https://www.studioeastfood.ca/menu/brunch",
       "mediaUrl": "https://images.squarespace-cdn.com/content/v1/5dc72fed7665c170c5ffa441/30dafead-6407-49a1-8fca-2b28539d8f98/StudioEast-FlatLay-01-web-EDIT.jpg",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:59:07.140Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:51.240Z",
       "signalMatches": {
         "specials": [
           "special"
@@ -57479,8 +58501,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Explore a diverse menu of lunch and dinner options, featuring appetizers, salads, entrees, and late-night offerings. Perfect for dining or private events in Halifax.",
       "postUrl": "https://www.studioeastfood.ca/menu/main",
       "mediaUrl": "https://images.squarespace-cdn.com/content/v1/5dc72fed7665c170c5ffa441/30dafead-6407-49a1-8fca-2b28539d8f98/StudioEast-FlatLay-01-web-EDIT.jpg",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:59:07.320Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:51.432Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -57560,8 +58582,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Discover better for you sub sandwiches at SUBWAY 100 Main St in Dartmouth NS. View our menu of sub sandwiches, see nutritional info, find restaurants, buy a franchise, apply for jobs, order catering and give us feedback on our sub sandwiches",
       "postUrl": "https://restaurants.subway.com/canada/ns/dartmouth/100-main-st",
       "mediaUrl": "https://dynl.mktgcdn.com/p/Y-V66ZsPfk0JipAIkjWVdcbMK5lEtl2mXuoIBY8xW-A/150x150.png",
-      "publishedAt": "2001-08-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:59:08.256Z",
+      "publishedAt": "2001-08-01T03:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:51.599Z",
       "signalMatches": {
         "specials": [
           "deal",
@@ -57634,7 +58656,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.subway.com/en-ca",
       "mediaUrl": "https://subway.com/en-ca/media_16400f7f058ffa6fa69893ac1ff502106933363d9.avif?width=1200&#x26;format=pjpg&#x26;optimize=medium",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:25.538Z",
+      "observedAt": "2026-09-03T20:05:51.078Z",
       "signalMatches": {
         "specials": [
           "deal",
@@ -57682,7 +58704,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.subway.com/en-ca",
       "mediaUrl": "https://subway.com/en-ca/media_16400f7f058ffa6fa69893ac1ff502106933363d9.avif?width=1200&#x26;format=pjpg&#x26;optimize=medium",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:28.712Z",
+      "observedAt": "2026-09-03T20:05:54.179Z",
       "signalMatches": {
         "specials": [
           "deal",
@@ -57730,7 +58752,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.subway.com/en-ca",
       "mediaUrl": "https://subway.com/en-ca/media_16400f7f058ffa6fa69893ac1ff502106933363d9.avif?width=1200&#x26;format=pjpg&#x26;optimize=medium",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:39.118Z",
+      "observedAt": "2026-09-03T20:06:07.936Z",
       "signalMatches": {
         "specials": [
           "deal",
@@ -57778,7 +58800,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.subway.com/en-ca",
       "mediaUrl": "https://subway.com/en-ca/media_16400f7f058ffa6fa69893ac1ff502106933363d9.avif?width=1200&#x26;format=pjpg&#x26;optimize=medium",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:40.337Z",
+      "observedAt": "2026-09-03T20:06:09.325Z",
       "signalMatches": {
         "specials": [
           "deal",
@@ -57826,7 +58848,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.subway.com/en-ca",
       "mediaUrl": "https://subway.com/en-ca/media_16400f7f058ffa6fa69893ac1ff502106933363d9.avif?width=1200&#x26;format=pjpg&#x26;optimize=medium",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:41.507Z",
+      "observedAt": "2026-09-03T20:06:10.519Z",
       "signalMatches": {
         "specials": [
           "deal",
@@ -57874,7 +58896,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.subway.com/en-ca/locator?intcmp=HomepageLoggedOut:Owned:0:0:ExistingProduct_Sandwich_Offer_FreeItem_Free6%22subwhenyoubuyaFootlongsubandadrink:0:0:0:order-now:promotion-cards:nat-ca:0&",
       "mediaUrl": null,
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:26.544Z",
+      "observedAt": "2026-09-03T20:05:51.931Z",
       "signalMatches": {
         "specials": [
           "offer",
@@ -57911,7 +58933,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.subway.com/en-ca/locator?intcmp=HomepageLoggedOut:Owned:0:0:ExistingProduct_Sandwich_Offer_FreeItem_Free6%22subwhenyoubuyaFootlongsubandadrink:0:0:0:order-now:promotion-cards:nat-ca:0&",
       "mediaUrl": null,
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:29.290Z",
+      "observedAt": "2026-09-03T20:05:54.813Z",
       "signalMatches": {
         "specials": [
           "offer",
@@ -57948,7 +58970,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.subway.com/en-ca/locator?intcmp=HomepageLoggedOut:Owned:0:0:ExistingProduct_Sandwich_Offer_FreeItem_Free6%22subwhenyoubuyaFootlongsubandadrink:0:0:0:order-now:promotion-cards:nat-ca:0&",
       "mediaUrl": null,
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:39.732Z",
+      "observedAt": "2026-09-03T20:06:08.602Z",
       "signalMatches": {
         "specials": [
           "offer",
@@ -57985,7 +59007,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.subway.com/en-ca/locator?intcmp=HomepageLoggedOut:Owned:0:0:ExistingProduct_Sandwich_Offer_FreeItem_Free6%22subwhenyoubuyaFootlongsubandadrink:0:0:0:order-now:promotion-cards:nat-ca:0&",
       "mediaUrl": null,
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:40.886Z",
+      "observedAt": "2026-09-03T20:06:09.920Z",
       "signalMatches": {
         "specials": [
           "offer",
@@ -58022,7 +59044,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.subway.com/en-ca/locator?intcmp=HomepageLoggedOut:Owned:0:0:ExistingProduct_Sandwich_Offer_FreeItem_Free6%22subwhenyoubuyaFootlongsubandadrink:0:0:0:order-now:promotion-cards:nat-ca:0&",
       "mediaUrl": null,
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:42.043Z",
+      "observedAt": "2026-09-03T20:06:11.102Z",
       "signalMatches": {
         "specials": [
           "offer",
@@ -58058,8 +59080,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "The Subway menu offers a wide range of sandwiches, salads and wraps. View the abundant options on the Subway menu and place your order online.",
       "postUrl": "https://www.subway.com/en-ca/menunutrition/menu",
       "mediaUrl": "https://subway.com/en-ca/menunutrition/media_1abf32f3fd0a4d7e7970dc37713f2840be2eff1cc.png?width=1200&#x26;format=pjpg&#x26;optimize=medium",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:59:07.802Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:51.448Z",
       "signalMatches": {
         "specials": [
           "offer",
@@ -58094,8 +59116,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "The Subway menu offers a wide range of sandwiches, salads and wraps. View the abundant options on the Subway menu and place your order online.",
       "postUrl": "https://www.subway.com/en-ca/menunutrition/menu",
       "mediaUrl": "https://subway.com/en-ca/menunutrition/media_1abf32f3fd0a4d7e7970dc37713f2840be2eff1cc.png?width=1200&#x26;format=pjpg&#x26;optimize=medium",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:59:08.136Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:54.497Z",
       "signalMatches": {
         "specials": [
           "offer",
@@ -58130,8 +59152,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "The Subway menu offers a wide range of sandwiches, salads and wraps. View the abundant options on the Subway menu and place your order online.",
       "postUrl": "https://www.subway.com/en-ca/menunutrition/menu",
       "mediaUrl": "https://subway.com/en-ca/menunutrition/media_1abf32f3fd0a4d7e7970dc37713f2840be2eff1cc.png?width=1200&#x26;format=pjpg&#x26;optimize=medium",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:59:09.250Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:58.102Z",
       "signalMatches": {
         "specials": [
           "offer",
@@ -58166,8 +59188,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "The Subway menu offers a wide range of sandwiches, salads and wraps. View the abundant options on the Subway menu and place your order online.",
       "postUrl": "https://www.subway.com/en-ca/menunutrition/menu",
       "mediaUrl": "https://subway.com/en-ca/menunutrition/media_1abf32f3fd0a4d7e7970dc37713f2840be2eff1cc.png?width=1200&#x26;format=pjpg&#x26;optimize=medium",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:59:09.747Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:06:08.185Z",
       "signalMatches": {
         "specials": [
           "offer",
@@ -58202,8 +59224,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "The Subway menu offers a wide range of sandwiches, salads and wraps. View the abundant options on the Subway menu and place your order online.",
       "postUrl": "https://www.subway.com/en-ca/menunutrition/menu",
       "mediaUrl": "https://subway.com/en-ca/menunutrition/media_1abf32f3fd0a4d7e7970dc37713f2840be2eff1cc.png?width=1200&#x26;format=pjpg&#x26;optimize=medium",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:59:10.076Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:06:09.565Z",
       "signalMatches": {
         "specials": [
           "offer",
@@ -58238,8 +59260,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "The Subway menu offers a wide range of sandwiches, salads and wraps. View the abundant options on the Subway menu and place your order online.",
       "postUrl": "https://www.subway.com/en-ca/menunutrition/menu",
       "mediaUrl": "https://subway.com/en-ca/menunutrition/media_1abf32f3fd0a4d7e7970dc37713f2840be2eff1cc.png?width=1200&#x26;format=pjpg&#x26;optimize=medium",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:59:10.411Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:06:10.770Z",
       "signalMatches": {
         "specials": [
           "offer",
@@ -58274,8 +59296,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "Browse the menu for Subway restaurant 13072-0. Order fresh sandwiches, salads, and more.",
       "postUrl": "https://www.subway.com/en-ca/restaurant/13072-0/menu?intcmp=yext-local:owned:order:Order%20Pickup:fwh-no-value-w2-2020:0:button:0:orderpickup:hu:local-ca-en-v1&segment_code=0",
       "mediaUrl": "https://media.subway.com/dam/urn:aaid:aem:0ab1d9dd-c95e-4e58-8e5b-23db5fa5e976?imwidth=267",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:59:08.291Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:55.963Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -58343,7 +59365,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.subway.com/en-ca/restaurant/13072-0/menu/category/everyday-value",
       "mediaUrl": "https://media.subway.com/dam/urn:aaid:aem:c5d093a6-3219-4119-b642-507e2e032eb4?imwidth=267",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:37.976Z",
+      "observedAt": "2026-09-03T20:06:06.851Z",
       "signalMatches": {
         "specials": [
           "deal"
@@ -58417,7 +59439,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.subway.com/en-ca/restaurant/13072-0/menu/category/grilled-chicken",
       "mediaUrl": "https://media.subway.com/dam/urn:aaid:aem:c5d093a6-3219-4119-b642-507e2e032eb4?imwidth=267",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:30.990Z",
+      "observedAt": "2026-09-03T20:05:58.595Z",
       "signalMatches": {
         "specials": [
           "deal"
@@ -58491,7 +59513,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.subway.com/en-ca/restaurant/13072-0/menu/category/meal-of-the-day",
       "mediaUrl": "https://media.subway.com/dam/urn:aaid:aem:c5d093a6-3219-4119-b642-507e2e032eb4?imwidth=267",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:32.377Z",
+      "observedAt": "2026-09-03T20:05:59.745Z",
       "signalMatches": {
         "specials": [
           "deal"
@@ -58565,7 +59587,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.subway.com/en-ca/restaurant/13072-0/menu/category/sandwiches",
       "mediaUrl": "https://media.subway.com/dam/urn:aaid:aem:c5d093a6-3219-4119-b642-507e2e032eb4?imwidth=267",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:36.203Z",
+      "observedAt": "2026-09-03T20:06:01.439Z",
       "signalMatches": {
         "specials": [
           "deal"
@@ -58823,8 +59845,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "The Subway menu offers a wide range of sandwiches, salads and wraps. View the abundant options on the Subway menu and place your order online.",
       "postUrl": "https://www.subway.com/en-us/menunutrition/menu",
       "mediaUrl": "https://subway.com/en-us/menunutrition/media_1350a6ece728bf3a1ce8aed0b1e8562634024922f.png?width=1200&#x26;format=pjpg&#x26;optimize=medium",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:59:09.421Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:58.396Z",
       "signalMatches": {
         "specials": [
           "offer",
@@ -58860,7 +59882,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://sullyandporter.com/",
       "mediaUrl": null,
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:25.928Z",
+      "observedAt": "2026-09-03T20:05:51.932Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -58910,7 +59932,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://sullyandporter.com/menu/",
       "mediaUrl": null,
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:26.227Z",
+      "observedAt": "2026-09-03T20:05:52.231Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -58950,7 +59972,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.thesummitcafe.ca/",
       "mediaUrl": "https://www.thesummitcafe.ca/wp-content/uploads/2024/10/cover.jpg",
       "publishedAt": "2024-11-04T10:16:44.000Z",
-      "observedAt": "2026-09-01T15:24:26.226Z",
+      "observedAt": "2026-09-03T20:05:51.946Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -58997,7 +60019,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.thesummitcafe.ca/our-menu/",
       "mediaUrl": "https://www.thesummitcafe.ca/wp-content/uploads/2024/10/Breakfast-buffet.jpg",
       "publishedAt": "2024-10-23T11:43:46.000Z",
-      "observedAt": "2026-09-01T15:24:26.463Z",
+      "observedAt": "2026-09-03T20:05:53.445Z",
       "signalMatches": {
         "live_music": [
           "show"
@@ -59040,7 +60062,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://sushisquare.ca/",
       "mediaUrl": "https://sushisquare.ca/wp-content/uploads/2020/11/smth.png",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:26.592Z",
+      "observedAt": "2026-09-03T20:05:52.512Z",
       "signalMatches": {
         "specials": [
           "special"
@@ -59087,7 +60109,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://sushisquare.ca/menu/",
       "mediaUrl": "https://sushisquare.ca/wp-content/uploads/2026/01/bd601670-e8d7-43c9-9067-e1d604663d65-1024x683.jpg",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:26.762Z",
+      "observedAt": "2026-09-03T20:05:53.031Z",
       "signalMatches": {
         "specials": [
           "special"
@@ -59126,7 +60148,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://sushinami.ca/",
       "mediaUrl": "https://sushinami.ca/wp-content/uploads/2022/04/sushinami-105.jpg",
       "publishedAt": "1200-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:27.476Z",
+      "observedAt": "2026-09-03T20:05:53.863Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -59203,7 +60225,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://sushinami.ca/",
       "mediaUrl": "https://sushinami.ca/wp-content/uploads/2022/04/sushinami-105.jpg",
       "publishedAt": "1200-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:42.202Z",
+      "observedAt": "2026-09-03T20:06:07.983Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -59280,7 +60302,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://sushinami.ca/bayers-lake/dinner/",
       "mediaUrl": "https://sushinami.ca/wp-content/uploads/2022/04/sushinami-105.jpg",
       "publishedAt": "2024-09-06T18:28:55.000Z",
-      "observedAt": "2026-09-01T15:24:39.016Z",
+      "observedAt": "2026-09-03T20:06:04.988Z",
       "signalMatches": {
         "specials": [
           "special"
@@ -59360,7 +60382,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://sushinami.ca/bayers-lake/dinner/",
       "mediaUrl": "https://sushinami.ca/wp-content/uploads/2022/04/sushinami-105.jpg",
       "publishedAt": "2024-09-06T18:28:55.000Z",
-      "observedAt": "2026-09-01T15:24:53.359Z",
+      "observedAt": "2026-09-03T20:06:19.183Z",
       "signalMatches": {
         "specials": [
           "special"
@@ -59440,7 +60462,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://sushinami.ca/bayers-lake/lunch-menu/",
       "mediaUrl": "https://sushinami.ca/wp-content/uploads/2022/04/sushinami-105.jpg",
       "publishedAt": "2024-08-10T15:46:35.000Z",
-      "observedAt": "2026-09-01T15:24:33.220Z",
+      "observedAt": "2026-09-03T20:05:59.212Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -59517,7 +60539,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://sushinami.ca/bayers-lake/lunch-menu/",
       "mediaUrl": "https://sushinami.ca/wp-content/uploads/2022/04/sushinami-105.jpg",
       "publishedAt": "2024-08-10T15:46:35.000Z",
-      "observedAt": "2026-09-01T15:24:47.702Z",
+      "observedAt": "2026-09-03T20:06:13.484Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -59594,7 +60616,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://sushinami.ca/bedford-highway/lunch-menu/",
       "mediaUrl": "https://sushinami.ca/wp-content/uploads/2022/04/sushinami-105.jpg",
       "publishedAt": "2024-09-10T01:52:22.000Z",
-      "observedAt": "2026-09-01T15:24:34.624Z",
+      "observedAt": "2026-09-03T20:06:00.580Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -59671,7 +60693,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://sushinami.ca/bedford-highway/lunch-menu/",
       "mediaUrl": "https://sushinami.ca/wp-content/uploads/2022/04/sushinami-105.jpg",
       "publishedAt": "2024-09-10T01:52:22.000Z",
-      "observedAt": "2026-09-01T15:24:49.117Z",
+      "observedAt": "2026-09-03T20:06:14.934Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -59748,7 +60770,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://sushinami.ca/contact-sushi-nami-royale/",
       "mediaUrl": "https://sushinami.ca/wp-content/uploads/2022/04/sushinami-105.jpg",
       "publishedAt": "2022-05-23T12:48:38.000Z",
-      "observedAt": "2026-09-01T15:24:35.989Z",
+      "observedAt": "2026-09-03T20:06:02.019Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -59825,7 +60847,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://sushinami.ca/contact-sushi-nami-royale/",
       "mediaUrl": "https://sushinami.ca/wp-content/uploads/2022/04/sushinami-105.jpg",
       "publishedAt": "2022-05-23T12:48:38.000Z",
-      "observedAt": "2026-09-01T15:24:50.546Z",
+      "observedAt": "2026-09-03T20:06:16.335Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -59902,7 +60924,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://sushinami.ca/dartmouth-crossing/dinner/",
       "mediaUrl": "https://sushinami.ca/wp-content/uploads/2022/04/sushinami-105.jpg",
       "publishedAt": "2026-08-19T01:06:31.000Z",
-      "observedAt": "2026-09-01T15:24:40.670Z",
+      "observedAt": "2026-09-03T20:06:06.454Z",
       "signalMatches": {
         "specials": [
           "special"
@@ -59982,7 +61004,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://sushinami.ca/dartmouth-crossing/dinner/",
       "mediaUrl": "https://sushinami.ca/wp-content/uploads/2022/04/sushinami-105.jpg",
       "publishedAt": "2026-08-19T01:06:31.000Z",
-      "observedAt": "2026-09-01T15:24:54.864Z",
+      "observedAt": "2026-09-03T20:06:20.599Z",
       "signalMatches": {
         "specials": [
           "special"
@@ -60062,7 +61084,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://sushinami.ca/dartmouth-crossing/lunch-menu/",
       "mediaUrl": "https://sushinami.ca/wp-content/uploads/2022/04/sushinami-105.jpg",
       "publishedAt": "2026-08-08T00:39:08.000Z",
-      "observedAt": "2026-09-01T15:24:31.877Z",
+      "observedAt": "2026-09-03T20:05:57.863Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -60139,7 +61161,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://sushinami.ca/dartmouth-crossing/lunch-menu/",
       "mediaUrl": "https://sushinami.ca/wp-content/uploads/2022/04/sushinami-105.jpg",
       "publishedAt": "2026-08-08T00:39:08.000Z",
-      "observedAt": "2026-09-01T15:24:46.197Z",
+      "observedAt": "2026-09-03T20:06:12.103Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -60216,7 +61238,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://sushinami.ca/downtown-halifax/dinner/",
       "mediaUrl": "https://sushinami.ca/wp-content/uploads/2022/04/sushinami-105.jpg",
       "publishedAt": "2024-09-05T23:03:51.000Z",
-      "observedAt": "2026-09-01T15:24:37.359Z",
+      "observedAt": "2026-09-03T20:06:03.467Z",
       "signalMatches": {
         "specials": [
           "special"
@@ -60296,7 +61318,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://sushinami.ca/downtown-halifax/dinner/",
       "mediaUrl": "https://sushinami.ca/wp-content/uploads/2022/04/sushinami-105.jpg",
       "publishedAt": "2024-09-05T23:03:51.000Z",
-      "observedAt": "2026-09-01T15:24:51.946Z",
+      "observedAt": "2026-09-03T20:06:17.802Z",
       "signalMatches": {
         "specials": [
           "special"
@@ -60376,7 +61398,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://sushinami.ca/downtown-halifax/lunch-menu/",
       "mediaUrl": "https://sushinami.ca/wp-content/uploads/2022/04/sushinami-105.jpg",
       "publishedAt": "2024-08-10T15:46:45.000Z",
-      "observedAt": "2026-09-01T15:24:29.054Z",
+      "observedAt": "2026-09-03T20:05:54.996Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -60453,7 +61475,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://sushinami.ca/downtown-halifax/lunch-menu/",
       "mediaUrl": "https://sushinami.ca/wp-content/uploads/2022/04/sushinami-105.jpg",
       "publishedAt": "2024-08-10T15:46:45.000Z",
-      "observedAt": "2026-09-01T15:24:43.280Z",
+      "observedAt": "2026-09-03T20:06:09.035Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -60530,7 +61552,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://sushinami.ca/downtown-halifax/take-out/",
       "mediaUrl": "https://sushinami.ca/wp-content/uploads/2022/04/sushinami-105.jpg",
       "publishedAt": "2024-09-18T00:17:38.000Z",
-      "observedAt": "2026-09-01T15:24:30.436Z",
+      "observedAt": "2026-09-03T20:05:56.454Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -60611,7 +61633,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://sushinami.ca/downtown-halifax/take-out/",
       "mediaUrl": "https://sushinami.ca/wp-content/uploads/2022/04/sushinami-105.jpg",
       "publishedAt": "2024-09-18T00:17:38.000Z",
-      "observedAt": "2026-09-01T15:24:44.695Z",
+      "observedAt": "2026-09-03T20:06:10.602Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -60692,7 +61714,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.shige.ca/",
       "mediaUrl": "https://static.wixstatic.com/media/17680c_f1d0a3ad808c4d8fb090e7d8ac5781e0%7Emv2.png/v1/fit/w_2500,h_1330,al_c/17680c_f1d0a3ad808c4d8fb090e7d8ac5781e0%7Emv2.png",
       "publishedAt": "2500-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:27.539Z",
+      "observedAt": "2026-09-03T20:05:54.046Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -60738,7 +61760,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.shige.ca/menu",
       "mediaUrl": "https://static.wixstatic.com/media/17680c_f1d0a3ad808c4d8fb090e7d8ac5781e0~mv2.png/v1/fit/w_2500,h_1330,al_c/17680c_f1d0a3ad808c4d8fb090e7d8ac5781e0~mv2.png",
       "publishedAt": "2500-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:28.077Z",
+      "observedAt": "2026-09-03T20:05:54.362Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -60768,6 +61790,30 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "sourceLabel": "VIEW MENU"
     },
     {
+      "id": "official-page-8e54503bcb64778fe8",
+      "restaurantId": "osm-node-11612206582-swaad-sagaa-indian-cuisine-incorporated",
+      "restaurantName": "Swaad Sagaa Indian Cuisine Incorporated",
+      "platform": "official_page",
+      "title": "Official page update",
+      "excerpt": "Official page update",
+      "postUrl": "https://def.uber.com/en/challenge?from_service=d2ViLWVhdHMtdjI%3D&q=Yjg1Mzc3MzExMjFlNmY4ZTk2YzQ5NDI1ZTgyN2Q2Mzg6cTE3N2FrV2hNd3JubTVOQzpGOTQ4YnIySFVSMEZ5eHZiR3NVY01rVFVwTGZXT09rNXZNVkhhSExOekpQakV0L1RuUFpmYnF6ekZKTU9Xd1ZhbVd6bzN0VjdVUTF6dUN5RWRpWk5JaWlZSlNSSHllRGFBMWt5c0M3NVE3bFZESGhlMDdzUVdrblVzbnhOUTQvdS9JNlNDNmtiK053NmZuWEoxVkFqZzFkdjNNaVVyMGl5UStrbFZjWHpCUURFQTdNZ0Y3Yml0UGNzMjF5OStFelEzS0U2Nld5YWdFaFhiaFo0eFBYeWpRTDZoMHBWYUEyK3BkS0hUNCtRQTVDYXNvZnFEVlBWN3VsN1JmbE5kQW9Ua25Wc0VOb3dWaisxVTlUQkI2SERSdVdSaElacCs0RlBxSGVjVWQzUDB1dzRObmtpSWJtL2Fta2J5ZGdXajRhVFRLM3ZiUmp0T2ZuK3R2N0tnd29WTGZiaHJVeWplWUVINENHM1pUMmVkdDNWbG1vRXArMFcveWFSeEJoS1NJeGVhVFJDVERuOStGdHl1UT09Ok4vNVZQbllqaUg0clkwd0R0b1dqOFE9PQ%3D%3D",
+      "mediaUrl": null,
+      "publishedAt": null,
+      "observedAt": "2026-09-03T20:05:09.211Z",
+      "signalMatches": {
+        "live_music": [
+          "dj"
+        ]
+      },
+      "candidateLinks": [],
+      "sourceKind": "official_page_html",
+      "associationBasis": "official_site_linked_page",
+      "confidence": "official_source_page_signal",
+      "reviewState": "needs_date_review",
+      "discoveryReason": "first_party_ordering",
+      "sourceLabel": "ordering"
+    },
+    {
       "id": "official-page-22f872f0f4b45893fe",
       "restaurantId": "osm-node-11612206582-swaad-sagaa-indian-cuisine-incorporated",
       "restaurantName": "Swaad Sagaa Indian Cuisine Incorporated",
@@ -60777,7 +61823,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.swaadsagaa.com/",
       "mediaUrl": "https://www.swaadsagaa.com/https&#x3A;&#x2F;&#x2F;primary.jwwb.nl&#x2F;public&#x2F;z&#x2F;b&#x2F;k&#x2F;temp-treqnfyzxvxawrucabjn&#x2F;374524281_3438743236437298_1258114609622563908_n-high.jpg",
       "publishedAt": "2001-08-01T03:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:27.811Z",
+      "observedAt": "2026-09-03T20:05:54.184Z",
       "signalMatches": {
         "specials": [
           "offer",
@@ -60884,7 +61930,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://sweetandsassy.ca/",
       "mediaUrl": "https://img1.wsimg.com/isteam/ip/5d7c9443-8d7f-4fc0-b026-ec2d2e0ee6ab/sweetandsassy-23.jpg",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:28.227Z",
+      "observedAt": "2026-09-03T20:05:54.546Z",
       "signalMatches": {
         "events": [
           "ticket",
@@ -60930,7 +61976,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://sweetandsassy.ca/breakfast-menu",
       "mediaUrl": "https://img1.wsimg.com/isteam/ip/5d7c9443-8d7f-4fc0-b026-ec2d2e0ee6ab/sweetandsassy-23.jpg",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:28.696Z",
+      "observedAt": "2026-09-03T20:05:55.014Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -60967,7 +62013,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://sweetandsassy.ca/caribbean-menu",
       "mediaUrl": "https://img1.wsimg.com/isteam/ip/5d7c9443-8d7f-4fc0-b026-ec2d2e0ee6ab/sweetandsassy-23.jpg",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:28.526Z",
+      "observedAt": "2026-09-03T20:05:54.846Z",
       "signalMatches": {
         "events": [
           "festival"
@@ -61006,7 +62052,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.eventbrite.com/e/new-years-eve-3-course-meal-and-comedy-night-tickets-1977500641652?aff=ebdssbcategorybrowse&amp%3Bkeep_tld=1",
       "mediaUrl": "https://www.eventbrite.com/e/_next/image?url=https%3A%2F%2Fimg.evbuc.com%2Fhttps%253A%252F%252Fcdn.evbuc.com%252Fimages%252F1172680736%252F2815709609571%252F1%252Foriginal.20251210-132736%3Fw%3D940%26auto%3Dformat%252Ccompress%26q%3D75%26sharp%3D10%26s%3Db3704097a9c010f27ed51444b580f214&amp;w=940&amp;q=75",
       "publishedAt": "2026-01-01T03:59:00.000Z",
-      "observedAt": "2026-09-01T15:24:28.543Z",
+      "observedAt": "2026-09-03T20:05:55.213Z",
       "signalMatches": {
         "specials": [
           "promo"
@@ -61087,7 +62133,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.takosushiramen.ca/",
       "mediaUrl": "https://www.takosushiramen.ca/sites/default/files/styles/home_slideshow/public/promotion/014.jpg?itok=TJh92aBO",
       "publishedAt": "2001-07-01T03:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:28.807Z",
+      "observedAt": "2026-09-03T20:05:55.480Z",
       "signalMatches": {
         "specials": [
           "special"
@@ -61139,7 +62185,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.takosushiramen.ca/menu/appetizers/tempura",
       "mediaUrl": null,
       "publishedAt": "2001-07-01T03:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:33.159Z",
+      "observedAt": "2026-09-03T20:05:58.678Z",
       "signalMatches": {
         "specials": [
           "special"
@@ -61207,7 +62253,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.takosushiramen.ca/menu/chefs-special-rolls",
       "mediaUrl": null,
       "publishedAt": "2001-07-01T03:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:31.181Z",
+      "observedAt": "2026-09-03T20:05:57.294Z",
       "signalMatches": {
         "specials": [
           "special"
@@ -61275,7 +62321,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.takosushiramen.ca/menu/chefs-special-rolls/entrees",
       "mediaUrl": null,
       "publishedAt": "2001-07-01T03:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:37.774Z",
+      "observedAt": "2026-09-03T20:05:59.778Z",
       "signalMatches": {
         "specials": [
           "special"
@@ -61343,7 +62389,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.takosushiramen.ca/menu/lunch-special",
       "mediaUrl": null,
       "publishedAt": "2001-07-01T03:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:42.201Z",
+      "observedAt": "2026-09-03T20:06:03.205Z",
       "signalMatches": {
         "specials": [
           "special"
@@ -61415,7 +62461,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.takosushiramen.ca/menu/party-tray",
       "mediaUrl": null,
       "publishedAt": "2001-07-01T03:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:40.568Z",
+      "observedAt": "2026-09-03T20:06:02.153Z",
       "signalMatches": {
         "specials": [
           "special"
@@ -61483,7 +62529,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.takosushiramen.ca/menu/ramen",
       "mediaUrl": null,
       "publishedAt": "2001-07-01T03:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:39.149Z",
+      "observedAt": "2026-09-03T20:06:00.963Z",
       "signalMatches": {
         "specials": [
           "special"
@@ -61551,7 +62597,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://terracafe.ca/",
       "mediaUrl": "http://static1.squarespace.com/static/613bb46049e702334d42a1da/t/64c80e6e81c23e181e4b8805/1717773093756/Terra+Cafe_Icon_White.png?format=1500w",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:29.009Z",
+      "observedAt": "2026-09-03T20:05:55.627Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -61591,7 +62637,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://terracafe.ca/coffeebar",
       "mediaUrl": "https://images.squarespace-cdn.com/content/v1/613bb46049e702334d42a1da/280b894b-1bcb-4e8d-b682-fd3b44a6ea39/Terra+Cafe_Icon_White.png?format=1500w",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:29.456Z",
+      "observedAt": "2026-09-03T20:05:56.073Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -61624,7 +62670,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://terracafe.ca/kitchenmenu",
       "mediaUrl": "https://images.squarespace-cdn.com/content/v1/613bb46049e702334d42a1da/280b894b-1bcb-4e8d-b682-fd3b44a6ea39/Terra+Cafe_Icon_White.png?format=1500w",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:29.290Z",
+      "observedAt": "2026-09-03T20:05:55.913Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -61657,7 +62703,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.the5kcafe.ca/",
       "mediaUrl": "http://static1.squarespace.com/static/62377a995a1b6f2a5a38db10/t/62377bdab938ea715e7406a0/1647803354248/5k+white.jpg?format=1500w",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:29.042Z",
+      "observedAt": "2026-09-03T20:05:55.831Z",
       "signalMatches": {
         "specials": [
           "offer"
@@ -61695,7 +62741,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.the5kcafe.ca/menu",
       "mediaUrl": "https://images.squarespace-cdn.com/content/v1/62377a995a1b6f2a5a38db10/b205b8f4-4bc4-4521-ae63-127d75acd1ce/5k+white.jpg?format=1500w",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:29.544Z",
+      "observedAt": "2026-09-03T20:05:56.124Z",
       "signalMatches": {
         "specials": [
           "offer"
@@ -61730,7 +62776,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.thearmview.com/",
       "mediaUrl": "https://www.thearmview.com/wp-content/uploads/2022/11/armview-restaurant-lounge.jpg",
       "publishedAt": "1920-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:29.377Z",
+      "observedAt": "2026-09-03T20:05:56.200Z",
       "signalMatches": {
         "specials": [
           "offer"
@@ -61785,7 +62831,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.thearmview.com/armview-park-menu/",
       "mediaUrl": "https://www.thearmview.com/wp-content/uploads/2022/11/armview-restaurant-lounge.jpg",
       "publishedAt": "2025-06-06T20:00:19.000Z",
-      "observedAt": "2026-09-01T15:24:34.165Z",
+      "observedAt": "2026-09-03T20:06:00.977Z",
       "signalMatches": {
         "events": [
           "event",
@@ -61837,7 +62883,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.thearmview.com/breakfast/",
       "mediaUrl": "https://www.thearmview.com/wp-content/uploads/2022/11/breakfast_thearmview.jpg",
       "publishedAt": "2026-06-28T15:59:24.000Z",
-      "observedAt": "2026-09-01T15:24:35.810Z",
+      "observedAt": "2026-09-03T20:06:02.785Z",
       "signalMatches": {
         "specials": [
           "special"
@@ -61895,7 +62941,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.thearmview.com/drinks-menu/",
       "mediaUrl": "https://www.thearmview.com/wp-content/uploads/2022/11/drinks_thearmview.jpg",
       "publishedAt": "2026-06-28T15:58:30.000Z",
-      "observedAt": "2026-09-01T15:24:32.378Z",
+      "observedAt": "2026-09-03T20:05:59.062Z",
       "signalMatches": {
         "events": [
           "event",
@@ -61947,7 +62993,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.thearmview.com/menus/",
       "mediaUrl": "https://www.thearmview.com/wp-content/uploads/2022/11/menus-thearmview.jpg",
       "publishedAt": "2023-06-24T02:38:51.000Z",
-      "observedAt": "2026-09-01T15:24:30.564Z",
+      "observedAt": "2026-09-03T20:05:57.282Z",
       "signalMatches": {
         "events": [
           "event",
@@ -61999,7 +63045,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://thebeaversden.ca/",
       "mediaUrl": "https://assets.cdn.filesafe.space/adkNvKniYNb9Be3v8MfT/media/68b9a0716510b9e0bd3c82df.png",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:30.092Z",
+      "observedAt": "2026-09-03T20:05:56.663Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -62053,7 +63099,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://thebeaversden.ca/event-calendar",
       "mediaUrl": "https://storage.googleapis.com/msgsndr/adkNvKniYNb9Be3v8MfT/media/68ba12bd02d5ed68ed1bc84a.png",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:31.258Z",
+      "observedAt": "2026-09-03T20:05:57.529Z",
       "signalMatches": {
         "events": [
           "event",
@@ -62102,7 +63148,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://thebeaversden.ca/menu",
       "mediaUrl": null,
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:31.526Z",
+      "observedAt": "2026-09-03T20:05:57.780Z",
       "signalMatches": {
         "specials": [
           "special"
@@ -62137,7 +63183,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://thebeaversden.ca/reserve-your-table",
       "mediaUrl": "https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/adkNvKniYNb9Be3v8MfT/media/68ba12bd02d5ed68ed1bc84a.png",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:31.005Z",
+      "observedAt": "2026-09-03T20:05:57.282Z",
       "signalMatches": {
         "reservations": [
           "reservation"
@@ -62161,7 +63207,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.stubborngoat.ca/",
       "mediaUrl": "https://www.stubborngoat.ca/wp-content/uploads/2024/06/Stubborn-Goat-May-2024-50.jpg",
       "publishedAt": "2026-08-14T15:19:26.000Z",
-      "observedAt": "2026-09-01T15:24:30.329Z",
+      "observedAt": "2026-09-03T20:05:56.962Z",
       "signalMatches": {
         "specials": [
           "offer"
@@ -62211,7 +63257,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://bicyclethief.ca/",
       "mediaUrl": "https://bicyclethief.ca/wp-content/uploads/2017/09/upper-thief.jpg",
       "publishedAt": "2025-11-10T15:25:05.000Z",
-      "observedAt": "2026-09-03T18:57:59.984Z",
+      "observedAt": "2026-09-03T20:05:01.421Z",
       "signalMatches": {
         "specials": [
           "offer",
@@ -62256,7 +63302,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://bicyclethief.ca/contact-us-reservations/",
       "mediaUrl": "https://bertossigroup.com/in-the-news/canadas100best.png",
       "publishedAt": "2024-08-12T17:01:04.000Z",
-      "observedAt": "2026-09-03T18:58:00.740Z",
+      "observedAt": "2026-09-03T20:05:02.040Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -62293,7 +63339,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://bicyclethief.ca/reservations/",
       "mediaUrl": "https://bicyclethief.ca/wp-content/uploads/2021/07/OpeningPatios-3-845x684.jpg",
       "publishedAt": "2021-07-26T15:05:02.000Z",
-      "observedAt": "2026-09-03T18:58:00.552Z",
+      "observedAt": "2026-09-03T20:05:01.832Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -62330,7 +63376,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.bitterend.ca/",
       "mediaUrl": "https://www.unoapp.com/app/source/images/g_shift.png",
       "publishedAt": "2001-08-01T03:00:00.000Z",
-      "observedAt": "2026-09-01T15:23:43.419Z",
+      "observedAt": "2026-09-03T20:05:06.596Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -62359,7 +63405,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.bitterend.ca/index.html",
       "mediaUrl": "https://www.unoapp.com/app/source/images/g_shift.png",
       "publishedAt": "2001-08-01T03:00:00.000Z",
-      "observedAt": "2026-09-01T15:23:43.939Z",
+      "observedAt": "2026-09-03T20:05:07.246Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -62388,7 +63434,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.bitterend.ca/menu.html",
       "mediaUrl": "https://www.unoapp.com/app/source/images/g_shift.png",
       "publishedAt": "2001-08-01T03:00:00.000Z",
-      "observedAt": "2026-09-01T15:23:43.792Z",
+      "observedAt": "2026-09-03T20:05:07.079Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -62421,7 +63467,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.bitterend.ca/reserve.html",
       "mediaUrl": "https://www.unoapp.com/app/source/images/g_shift.png",
       "publishedAt": "2001-08-01T03:00:00.000Z",
-      "observedAt": "2026-09-01T15:23:43.647Z",
+      "observedAt": "2026-09-03T20:05:06.910Z",
       "signalMatches": {
         "events": [
           "event"
@@ -62458,7 +63504,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://blacksheephalifax.com/",
       "mediaUrl": "https://blacksheephalifax.com/wp-content/uploads/2022/11/HomeNameV002-OFFwhite.png",
       "publishedAt": "4545-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:31.258Z",
+      "observedAt": "2026-09-03T20:05:58.013Z",
       "signalMatches": {
         "events": [
           "event",
@@ -62500,7 +63546,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://blacksheephalifax.com/menu/",
       "mediaUrl": "https://i0.wp.com/blacksheephalifax.com/wp-content/uploads/2026/08/BRUNCH.png",
       "publishedAt": "3300-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:31.583Z",
+      "observedAt": "2026-09-03T20:05:58.380Z",
       "signalMatches": {
         "events": [
           "event",
@@ -62541,7 +63587,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://blacksheephalifax.com/private-events/",
       "mediaUrl": "https://i0.wp.com/blacksheephalifax.com/wp-content/uploads/2026/05/EVENT-COCKTAIL-1.png",
       "publishedAt": "2550-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:31.900Z",
+      "observedAt": "2026-09-03T20:05:58.695Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -62607,7 +63653,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://tbdine.com/halifax/restaurants/black-sheep-restaurant-water-street",
       "mediaUrl": "https://www.tbdine.com/touchbistro-dine.jpg",
       "publishedAt": null,
-      "observedAt": "2026-09-01T15:24:20.912Z",
+      "observedAt": "2026-09-03T20:05:44.400Z",
       "signalMatches": {
         "reservations": [
           "reservation",
@@ -62637,7 +63683,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://thebreadloungebakery.square.site/",
       "mediaUrl": "https://thebreadloungebakery.square.site/uploads/b/6b31dad0-7b99-11eb-8fed-ef18a489ed8b/Screen%20Shot%202021-02-17%20at%209.15.37%20AM.png",
       "publishedAt": "2000-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:31.801Z",
+      "observedAt": "2026-09-03T20:05:58.925Z",
       "signalMatches": {
         "specials": [
           "offer",
@@ -62662,7 +63708,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://thekeg.com/en/locations/abbotsford/menu",
       "mediaUrl": "https://thekeg.com/default-meta.jpg",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:35.331Z",
+      "observedAt": "2026-09-03T20:06:02.504Z",
       "signalMatches": {
         "happy_hour": [
           "happy hour"
@@ -62709,7 +63755,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://thekeg.com/en/locations/ajax/menu",
       "mediaUrl": "https://thekeg.com/default-meta.jpg",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:35.760Z",
+      "observedAt": "2026-09-03T20:06:02.988Z",
       "signalMatches": {
         "happy_hour": [
           "happy hour"
@@ -62756,7 +63802,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://thekeg.com/en/locations/alberni/menu",
       "mediaUrl": "https://thekeg.com/default-meta.jpg",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:36.314Z",
+      "observedAt": "2026-09-03T20:06:03.605Z",
       "signalMatches": {
         "happy_hour": [
           "happy hour"
@@ -62803,7 +63849,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://thekeg.com/en/locations/arlington/menu",
       "mediaUrl": "https://thekeg.com/default-meta.jpg",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:37.169Z",
+      "observedAt": "2026-09-03T20:06:04.074Z",
       "signalMatches": {
         "happy_hour": [
           "happy hour"
@@ -62847,7 +63893,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://thekeg.com/en/locations/halifax",
       "mediaUrl": "https://thekeg.com/default-meta.jpg",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:32.506Z",
+      "observedAt": "2026-09-03T20:06:00.311Z",
       "signalMatches": {
         "specials": [
           "offer",
@@ -62892,7 +63938,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://thekeg.com/en/locations/halifax/menu",
       "mediaUrl": "https://thekeg.com/default-meta.jpg",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:33.523Z",
+      "observedAt": "2026-09-03T20:06:01.095Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -62936,7 +63982,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://thekeg.com/fr/restaurants/halifax/menu",
       "mediaUrl": "https://thekeg.com/default-meta.jpg",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:34.491Z",
+      "observedAt": "2026-09-03T20:06:01.688Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -62969,7 +64015,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.sevenrooms.com/explore/thekegsteakhouseandbarajax/reservations/create/search",
       "mediaUrl": null,
       "publishedAt": null,
-      "observedAt": "2026-09-01T15:24:13.077Z",
+      "observedAt": "2026-09-03T20:05:36.720Z",
       "signalMatches": {
         "reservations": [
           "reservation",
@@ -62994,7 +64040,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.theloosecannon.ca/",
       "mediaUrl": "https://d1k7e91iovemsu.cloudfront.net/images/prod/the_loose_cannon/root/68692bee-cd45-4188-8634-c6dec83f14d4.png",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:33.005Z",
+      "observedAt": "2026-09-03T20:06:00.958Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -63027,7 +64073,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.theloosecannon.ca/ourmenu",
       "mediaUrl": "https://d1k7e91iovemsu.cloudfront.net/images/prod/the_loose_cannon/root/68692bee-cd45-4188-8634-c6dec83f14d4.png",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:33.955Z",
+      "observedAt": "2026-09-03T20:06:02.255Z",
       "signalMatches": {
         "happy_hour": [
           "happy hour"
@@ -63063,7 +64109,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://lowerdeck.ca/",
       "mediaUrl": "https://img1.wsimg.com/isteam/ip/73e4cfad-369b-4bc8-9899-1fbfdc8e0851/IMG_5350.JPG",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:33.205Z",
+      "observedAt": "2026-09-03T20:06:02.953Z",
       "signalMatches": {
         "specials": [
           "offer"
@@ -63106,7 +64152,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://lowerdeck.ca/private-events",
       "mediaUrl": "https://img1.wsimg.com/isteam/ip/73e4cfad-369b-4bc8-9899-1fbfdc8e0851/IMG_5350.JPG",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:33.649Z",
+      "observedAt": "2026-09-03T20:06:03.405Z",
       "signalMatches": {
         "specials": [
           "offer"
@@ -63149,7 +64195,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://lowerdeck.ca/pub-menu",
       "mediaUrl": "https://img1.wsimg.com/isteam/ip/73e4cfad-369b-4bc8-9899-1fbfdc8e0851/IMG_5350.JPG",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:33.855Z",
+      "observedAt": "2026-09-03T20:06:03.621Z",
       "signalMatches": {
         "specials": [
           "offer"
@@ -63192,7 +64238,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.mellowmug.ca/",
       "mediaUrl": "https://static.wixstatic.com/media/2a82fd_23339201de5244fdb0a8523c9042cccb%7Emv2.jpg/v1/fit/w_2500,h_1330,al_c/2a82fd_23339201de5244fdb0a8523c9042cccb%7Emv2.jpg",
       "publishedAt": "2500-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:34.030Z",
+      "observedAt": "2026-09-03T20:06:03.788Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -63225,7 +64271,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.mellowmug.ca/food-1",
       "mediaUrl": "https://static.wixstatic.com/media/2a82fd_23339201de5244fdb0a8523c9042cccb%7Emv2.jpg/v1/fit/w_2500,h_1330,al_c/2a82fd_23339201de5244fdb0a8523c9042cccb%7Emv2.jpg",
       "publishedAt": "2500-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:34.337Z",
+      "observedAt": "2026-09-03T20:06:04.088Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -63266,7 +64312,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.thebesthalifax.com/top-cocktail-bars-halifax/",
       "mediaUrl": "https://www.thebesthalifax.com/wp-content/uploads/2025/04/top-cocktail-bars-halifax.jpg",
       "publishedAt": "2025-10-10T04:57:18.000Z",
-      "observedAt": "2026-09-01T15:24:35.027Z",
+      "observedAt": "2026-09-03T20:06:04.516Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -63284,9 +64330,6 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
         ],
         "menu": [
           "menu"
-        ],
-        "seasonal": [
-          "summer"
         ]
       },
       "candidateLinks": [
@@ -63307,8 +64350,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
           "label": "show"
         },
         {
-          "url": "https://www.thebesthalifax.com/equestrian-fun-at-the-dowtown-halifax-horse-show-this-july",
-          "label": "/equestrian-fun-at-the-dowtown-halifax-horse-show-this-july/"
+          "url": "https://www.thebesthalifax.com/best-travel-agencies-halifax",
+          "label": "6 Best Travel Agencies in Halifax to Book Your Next Adventure"
         },
         {
           "url": "https://www.thebesthalifax.com/best-dog-daycares-halifax",
@@ -63332,7 +64375,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.themercantilesocial.com/",
       "mediaUrl": "http://static1.squarespace.com/static/63ed1712b8857f5d549bcf6b/t/63ed1ebbce33252a244b3267/1676484285838/unnamed-2.jpg?format=1500w",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:34.538Z",
+      "observedAt": "2026-09-03T20:06:04.469Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -63361,7 +64404,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://micmacbarandgrill.com/",
       "mediaUrl": "https://micmacbarandgrill.com/wp-content/uploads/2025/06/1-1.webp",
       "publishedAt": "2026-06-11T13:42:17.000Z",
-      "observedAt": "2026-09-01T15:24:35.655Z",
+      "observedAt": "2026-09-03T20:06:04.536Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -63392,6 +64435,10 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
         {
           "url": "https://micmacbarandgrill.com/menus/kids",
           "label": "Kids"
+        },
+        {
+          "url": "https://micmacbarandgrill.com",
+          "label": "8 OZ AAA Steak Special C $39.00 Served with Bacon Wrapped Scallops starting at 4 PM"
         }
       ],
       "sourceKind": "official_page_html",
@@ -63411,7 +64458,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://micmacbarandgrill.com/menus/",
       "mediaUrl": "https://micmacbarandgrill.com/wp-content/uploads/2025/05/Spice_Blend.webp",
       "publishedAt": "2025-06-16T14:16:50.000Z",
-      "observedAt": "2026-09-01T15:24:36.277Z",
+      "observedAt": "2026-09-03T20:06:05.216Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -63461,7 +64508,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://micmacbarandgrill.com/menus/food/",
       "mediaUrl": null,
       "publishedAt": "2026-07-31T20:35:05.000Z",
-      "observedAt": "2026-09-01T15:24:38.914Z",
+      "observedAt": "2026-09-03T20:06:08.535Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -63515,7 +64562,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://micmacbarandgrill.com/menus/kids/",
       "mediaUrl": null,
       "publishedAt": "2026-07-31T20:36:37.000Z",
-      "observedAt": "2026-09-01T15:24:44.318Z",
+      "observedAt": "2026-09-03T20:06:13.784Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -63568,7 +64615,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://micmacbarandgrill.com/menus/specials/",
       "mediaUrl": null,
       "publishedAt": "2026-07-07T17:38:15.000Z",
-      "observedAt": "2026-09-01T15:24:41.847Z",
+      "observedAt": "2026-09-03T20:06:11.186Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -63621,7 +64668,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://the-middle-spoon.orderwebsite.com/",
       "mediaUrl": "https://cs.cdn-upm.com/themes/e0d51573-552b-11f1-9141-525400080621/assets-1/cover.jpg",
       "publishedAt": "2001-08-01T03:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:37.212Z",
+      "observedAt": "2026-09-03T20:06:05.670Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -63686,7 +64733,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://themiddlespoon.com/",
       "mediaUrl": "https://themiddlespoon.com/images/hero-1.jpg",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:36.728Z",
+      "observedAt": "2026-09-03T20:06:05.185Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -63748,7 +64795,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://themiddlespoon.com/events",
       "mediaUrl": "https://themiddlespoon.com/images/hero-1.jpg",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:37.632Z",
+      "observedAt": "2026-09-03T20:06:05.970Z",
       "signalMatches": {
         "events": [
           "event",
@@ -63804,7 +64851,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://themiddlespoon.com/menu",
       "mediaUrl": "https://themiddlespoon.com/images/hero-1.jpg",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:37.139Z",
+      "observedAt": "2026-09-03T20:06:05.521Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -63858,7 +64905,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://themiddlespoon.com/private-events",
       "mediaUrl": "https://themiddlespoon.com/images/hero-1.jpg",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:37.795Z",
+      "observedAt": "2026-09-03T20:06:06.135Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -63911,7 +64958,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://themiddlespoon.com/reservations",
       "mediaUrl": "https://themiddlespoon.com/images/hero-1.jpg",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:37.461Z",
+      "observedAt": "2026-09-03T20:06:05.804Z",
       "signalMatches": {
         "events": [
           "event",
@@ -63961,7 +65008,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://themiddlespoon.com/subscription",
       "mediaUrl": "https://themiddlespoon.com/images/hero-1.jpg",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:37.961Z",
+      "observedAt": "2026-09-03T20:06:06.307Z",
       "signalMatches": {
         "specials": [
           "offer"
@@ -64015,8 +65062,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "The Narrows Halifax Public House 0 Skip to Content HOME MENU STAY ABOVE GALLERY GIFT CARDS Open Menu Close Menu Open Menu Close Menu HOME MENU STAY ABOVE GALLERY GIFT CARDS HOME MENU STAY ABOVE GALLERY GIFT CARDS THE NARROWS TRADITIONAL MARITIME PUBLIC HOUSE 902-407-2475 2720 Gottingen Street, Halifax, N.S, Canada -NO RESERVATIONS- Hours Tuesday - CLOSED Sunday-Thursday 11am - Midnight Friday & Saturday 11am-12:30...",
       "postUrl": "https://www.thenarrowspublichouse.ca/",
       "mediaUrl": "http://static1.squarespace.com/static/64ad9b1d3f683979014072dc/t/64e774b416390156149009da/1692890292271/narrows+full+-+hi+-+blue.png?format=1500w",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:57:59.990Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:01.424Z",
       "signalMatches": {
         "live_music": [
           "live music"
@@ -64052,8 +65099,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "MENU &mdash; The Narrows Halifax Public House 0 Skip to Content HOME MENU STAY ABOVE GALLERY GIFT CARDS Open Menu Close Menu Open Menu Close Menu HOME MENU STAY ABOVE GALLERY GIFT CARDS HOME MENU STAY ABOVE GALLERY GIFT CARDS SUPPER LUNCH + LATE NIGHT THE NARROWS HALIFAX PUBLIC HOUSE, 2720 GOTTINGEN STREET, HALIFAX, NOVA SCOTIA, CANADA. Hours: Sunday-Thursday 11am -Midnight Friday & Saturday 11am- 12:30am",
       "postUrl": "https://www.thenarrowspublichouse.ca/menu",
       "mediaUrl": "https://images.squarespace-cdn.com/content/v1/64ad9b1d3f683979014072dc/7af3eb47-1a72-472d-834f-dadda4770152/narrows+full+-+hi+-+blue.png?format=1500w",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:00.519Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:01.912Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -64086,7 +65133,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://oldtriangle.com/",
       "mediaUrl": null,
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:40.082Z",
+      "observedAt": "2026-09-03T20:06:13.366Z",
       "signalMatches": {
         "specials": [
           "special"
@@ -64118,14 +65165,6 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
           "label": "Menu"
         },
         {
-          "url": "https://oldtriangle.com/event/dave-bradshaw",
-          "label": "More Info"
-        },
-        {
-          "url": "https://oldtriangle.com/event/the-plugs",
-          "label": "More Info"
-        },
-        {
           "url": "https://oldtriangle.com/event/erik-hardiman",
           "label": "More Info"
         },
@@ -64150,6 +65189,14 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
           "label": "More Info"
         },
         {
+          "url": "https://oldtriangle.com/event/kyle-boudreau",
+          "label": "More Info"
+        },
+        {
+          "url": "https://oldtriangle.com/event/tba",
+          "label": "More Info"
+        },
+        {
           "url": "https://oldtriangle.com/events",
           "label": "View Full Calendar"
         }
@@ -64171,7 +65218,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://theostrichclub.ca/",
       "mediaUrl": "https://theostrichclub.ca/wp-content/uploads/2026/04/1.jpg",
       "publishedAt": "2021-05-02T03:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:38.125Z",
+      "observedAt": "2026-09-03T20:06:06.954Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -64215,8 +65262,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "The Press Gang Restaurant & Oyster Bar, located in the heart of downtown Halifax, Nova Scotia, is one of the city’s oldest historic stone structures dating back to 1759.",
       "postUrl": "https://thepressgang.ca/",
       "mediaUrl": "http://www.thepressgang.ca/assets/images/thepressgang.jpg",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:57:59.988Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:01.423Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -64252,8 +65299,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "The Press Gang Restaurant & Oyster Bar, located in the heart of downtown Halifax, Nova Scotia, is one of the city’s oldest historic stone structures dating back to 1759.",
       "postUrl": "https://thepressgang.ca/menu/oysters",
       "mediaUrl": "http://www.thepressgang.ca/assets/images/thepressgang.jpg",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:00.641Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:02.063Z",
       "signalMatches": {
         "events": [
           "tasting"
@@ -64304,8 +65351,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "excerpt": "The Press Gang Restaurant & Oyster Bar, located in the heart of downtown Halifax, Nova Scotia, is one of the city’s oldest historic stone structures dating back to 1759.",
       "postUrl": "https://thepressgang.ca/reservations",
       "mediaUrl": "http://www.thepressgang.ca/assets/images/thepressgang.jpg",
-      "publishedAt": "2001-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T18:58:00.911Z",
+      "publishedAt": "2001-01-01T04:00:00.000Z",
+      "observedAt": "2026-09-03T20:05:02.382Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -64343,7 +65390,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.tiltedtap.ca/",
       "mediaUrl": "https://static.wixstatic.com/media/ba7eed_9152d7e1c3fb4d27a9566752ae20fd3b~mv2.jpg/v1/fill/w_1798,h_764,al_c/ba7eed_9152d7e1c3fb4d27a9566752ae20fd3b~mv2.jpg",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:38.390Z",
+      "observedAt": "2026-09-03T20:06:06.987Z",
       "signalMatches": {
         "happy_hour": [
           "happy hour"
@@ -64417,7 +65464,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.tiltedtap.ca/drink-menu",
       "mediaUrl": "https://static.wixstatic.com/media/417737_94bd652dc91142a7adc8d68d1c67fd9e%7Emv2.jpg/v1/fit/w_2500,h_1330,al_c/417737_94bd652dc91142a7adc8d68d1c67fd9e%7Emv2.jpg",
       "publishedAt": "2500-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:39.255Z",
+      "observedAt": "2026-09-03T20:06:07.983Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -64471,7 +65518,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.tiltedtap.ca/menu",
       "mediaUrl": "https://static.wixstatic.com/media/c5b2e4_fa2138a3aeef44d8b1713b6e1eb76310~mv2.png/v1/fit/w_2500,h_1330,al_c/c5b2e4_fa2138a3aeef44d8b1713b6e1eb76310~mv2.png",
       "publishedAt": "2500-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:39.429Z",
+      "observedAt": "2026-09-03T20:06:08.154Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -64531,7 +65578,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.tiltedtap.ca/menu-1",
       "mediaUrl": "https://static.wixstatic.com/media/c5b2e4_fa2138a3aeef44d8b1713b6e1eb76310~mv2.png/v1/fit/w_2500,h_1330,al_c/c5b2e4_fa2138a3aeef44d8b1713b6e1eb76310~mv2.png",
       "publishedAt": "2500-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:38.731Z",
+      "observedAt": "2026-09-03T20:06:07.320Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -64596,7 +65643,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.tiltedtap.ca/newsandevents",
       "mediaUrl": "https://static.wixstatic.com/media/c5b2e4_123465c9d46d4ed0a6a2532b27769799~mv2.png/v1/fill/w_1920,h_1080,al_c/c5b2e4_123465c9d46d4ed0a6a2532b27769799~mv2.png",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:39.082Z",
+      "observedAt": "2026-09-03T20:06:07.701Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -64653,7 +65700,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.tiltedtap.ca/reserve",
       "mediaUrl": "https://static.wixstatic.com/media/417737_94bd652dc91142a7adc8d68d1c67fd9e%7Emv2.jpg/v1/fit/w_2500,h_1330,al_c/417737_94bd652dc91142a7adc8d68d1c67fd9e%7Emv2.jpg",
       "publishedAt": "2500-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:38.896Z",
+      "observedAt": "2026-09-03T20:06:07.520Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -64707,7 +65754,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://dal.mydininghub.ca/en/account?section=my-menu",
       "mediaUrl": null,
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:23:47.257Z",
+      "observedAt": "2026-09-03T20:05:11.395Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -64744,7 +65791,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://dal.mydininghub.ca/en/locations",
       "mediaUrl": null,
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:23:46.293Z",
+      "observedAt": "2026-09-03T20:05:10.001Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -64781,7 +65828,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://locations.timhortons.ca/en/locations-list/ns/reserve-mines",
       "mediaUrl": null,
       "publishedAt": null,
-      "observedAt": "2026-09-01T15:24:40.899Z",
+      "observedAt": "2026-09-03T20:06:09.035Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -64826,7 +65873,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://locations.timhortons.ca/en/ns/halifax/390-osborne-street",
       "mediaUrl": "https://cm-review-builder.s3.amazonaws.com/userImages/63bc7baed0478c003aca429a/6f91dcb78be26d6bfb6233f79f7b0cd1beaa9d3cb74b48ed11293673c4cb5a62.png",
       "publishedAt": null,
-      "observedAt": "2026-09-01T15:24:40.613Z",
+      "observedAt": "2026-09-03T20:06:08.753Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -64898,7 +65945,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.timhortons.ca/menu?locale-selected=0&lang=en&store-number=100053&service-mode=DELIVERY",
       "mediaUrl": "https://cdn.sanity.io/images/czqk28jt/prod_th/9a9f5534893f0681e4d77d5d80d7014bd747e529-2880x1658.png",
       "publishedAt": null,
-      "observedAt": "2026-09-01T15:24:40.489Z",
+      "observedAt": "2026-09-03T20:06:10.154Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -64922,7 +65969,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.timhortons.ca/menu?locale-selected=0&lang=en&store-number=100053&service-mode=TAKEOUT",
       "mediaUrl": "https://cdn.sanity.io/images/czqk28jt/prod_th/9a9f5534893f0681e4d77d5d80d7014bd747e529-2880x1658.png",
       "publishedAt": null,
-      "observedAt": "2026-09-01T15:24:39.290Z",
+      "observedAt": "2026-09-03T20:06:08.970Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -64946,7 +65993,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.timhortons.ca/menu?locale-selected=0&lang=en&store-number=105846&service-mode=TAKEOUT",
       "mediaUrl": "https://cdn.sanity.io/images/czqk28jt/prod_th/9a9f5534893f0681e4d77d5d80d7014bd747e529-2880x1658.png",
       "publishedAt": null,
-      "observedAt": "2026-09-01T15:24:40.915Z",
+      "observedAt": "2026-09-03T20:06:10.586Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -64970,7 +66017,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.timhortons.ca/menu/picker-picker_7407",
       "mediaUrl": "https://cdn.sanity.io/images/czqk28jt/prod_th/9a9f5534893f0681e4d77d5d80d7014bd747e529-2880x1658.png",
       "publishedAt": null,
-      "observedAt": "2026-09-01T15:24:40.144Z",
+      "observedAt": "2026-09-03T20:06:09.835Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -64994,7 +66041,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.tokyorollhalifax.com/",
       "mediaUrl": "https://static.wixstatic.com/media/8b57ea_c3be01944e434aa69db9c27b6393a056~mv2_d_2356_1571_s_2.jpg/v1/fill/w_147,h_98,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/8b57ea_c3be01944e434aa69db9c27b6393a056~mv2_d_2356_1571_s_2.jpg",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:41.017Z",
+      "observedAt": "2026-09-03T20:06:09.270Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -65027,7 +66074,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.tokyorollhalifax.com/menu",
       "mediaUrl": "https://static.wixstatic.com/media/8b57ea_b126b6c62a914569b36092e2920e07e7~mv2.jpg/v1/crop/x_0,y_0,w_825,h_1275,q_85,blur_2,enc_avif,quality_auto/8b57ea_b126b6c62a914569b36092e2920e07e7~mv2.jpg",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:41.348Z",
+      "observedAt": "2026-09-03T20:06:09.585Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -65060,7 +66107,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://book.tomavinos.ca/",
       "mediaUrl": "https://assets.cdn.filesafe.space/wfTmnuFPX9JPZX7F6G8X/media/69e698322c135a8c83b711f9.png",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:41.531Z",
+      "observedAt": "2026-09-03T20:06:10.085Z",
       "signalMatches": {
         "specials": [
           "offer"
@@ -65096,7 +66143,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://tomavinos.ca/about",
       "mediaUrl": "https://tomavinos.ca/images/uploads/banners/_crop/banner-01.jpg",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:42.437Z",
+      "observedAt": "2026-09-03T20:06:11.168Z",
       "signalMatches": {
         "specials": [
           "special"
@@ -65132,11 +66179,8 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://tomavinos.ca/contact",
       "mediaUrl": "https://tomavinos.ca/images/uploads/banners/_crop/Tomavinos_05.jpg",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:42.848Z",
+      "observedAt": "2026-09-03T20:06:11.585Z",
       "signalMatches": {
-        "events": [
-          "festival"
-        ],
         "menu": [
           "menu"
         ]
@@ -65168,11 +66212,10 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://tomavinos.ca/menu",
       "mediaUrl": "https://tomavinos.ca/images/uploads/banners/_crop/Tomavinos_27.jpg",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:41.709Z",
+      "observedAt": "2026-09-03T20:06:10.485Z",
       "signalMatches": {
         "specials": [
-          "special",
-          "offer"
+          "special"
         ],
         "menu": [
           "menu"
@@ -65201,7 +66244,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.tomavinos.ca/",
       "mediaUrl": "https://tomavinos.ca/images/uploads/slider/_crop/Tomavinos_14.jpg",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:41.079Z",
+      "observedAt": "2026-09-03T20:06:09.485Z",
       "signalMatches": {
         "specials": [
           "special"
@@ -65246,7 +66289,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://tonysdonair.brygid.online/zgrid/proc/site/sitemnup.jsp?mnunm_it=Specials",
       "mediaUrl": "https://storage.googleapis.com/bro-cdn1/zgrid/themes/13706/images/social/open-graph.jpg",
       "publishedAt": "2001-08-01T03:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:43.204Z",
+      "observedAt": "2026-09-03T20:06:11.752Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -65288,7 +66331,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://tonysdonair.brygid.online/zgrid/proc/site/sitep.jsp",
       "mediaUrl": "https://storage.googleapis.com/bro-cdn1/zgrid/themes/13706/images/social/open-graph.jpg",
       "publishedAt": "2001-08-01T03:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:42.482Z",
+      "observedAt": "2026-09-03T20:06:11.036Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -65325,7 +66368,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.tonysdonair.com/",
       "mediaUrl": "https://images.squarespace-cdn.com/content/v1/55a506a8e4b025e7c4de7ed3/1449148821845-67GR70ZN8KGJ32NJTE72/image-asset.jpeg",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:41.603Z",
+      "observedAt": "2026-09-03T20:06:10.344Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -65362,7 +66405,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.tonysdonair.com/other-items",
       "mediaUrl": "https://images.squarespace-cdn.com/content/v1/55a506a8e4b025e7c4de7ed3/1449150039416-C0TDKB886D7E8CV0I3P6/image-asset.jpeg",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:42.232Z",
+      "observedAt": "2026-09-03T20:06:10.716Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -65399,7 +66442,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.tonysdonair.com/specials",
       "mediaUrl": "https://images.squarespace-cdn.com/content/v1/55a506a8e4b025e7c4de7ed3/1449149154187-KRW6BEX4V1WZB8PGMSL3/image-asset.jpeg",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:42.580Z",
+      "observedAt": "2026-09-03T20:06:10.985Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -65437,7 +66480,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://tridenthalifax.ca/",
       "mediaUrl": "https://tridenthalifax.ca/wp-content/uploads/2024/01/Trident-Halifax-Cafe-flowers-400x400-1-300x300.jpg",
       "publishedAt": "2026-09-11T00:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:42.709Z",
+      "observedAt": "2026-09-03T20:06:11.185Z",
       "signalMatches": {
         "events": [
           "event",
@@ -65493,7 +66536,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://tridenthalifax.ca/event/adam-otmar-farewell-to-nova-scotia-with-marlo-day/",
       "mediaUrl": "https://tridenthalifax.ca/wp-content/uploads/2026/07/09112026-HALIFAX-1080x1350-1.png",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:46.322Z",
+      "observedAt": "2026-09-03T20:06:15.268Z",
       "signalMatches": {
         "specials": [
           "special"
@@ -65551,7 +66594,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://tridenthalifax.ca/event/book-talk-return-of-the-90s-w-eds-sean-obrien-thomas-laughlin/",
       "mediaUrl": "https://tridenthalifax.ca/wp-content/uploads/2026/08/The-Return-of-the-90s-Halifax-event.png",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:45.582Z",
+      "observedAt": "2026-09-03T20:06:14.536Z",
       "signalMatches": {
         "events": [
           "event",
@@ -65608,7 +66651,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://tridenthalifax.ca/event/live-music-gourmet-club/",
       "mediaUrl": "https://tridenthalifax.ca/wp-content/uploads/2026/08/01_GC@TridentCafe_POSTER.jpg",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:44.095Z",
+      "observedAt": "2026-09-03T20:06:13.034Z",
       "signalMatches": {
         "events": [
           "event",
@@ -65662,7 +66705,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://tridenthalifax.ca/event/live-music-kate-ferguson/",
       "mediaUrl": "https://tridenthalifax.ca/wp-content/uploads/2026/06/Kate-Ferguson-2-smaller.png",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:44.850Z",
+      "observedAt": "2026-09-03T20:06:13.814Z",
       "signalMatches": {
         "events": [
           "event",
@@ -65707,16 +66750,16 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "sourceLabel": "Live Music: Kate Ferguson!"
     },
     {
-      "id": "official-page-3dc42b752ab83e7bd8",
+      "id": "official-page-a6479ee9f4a9da88a0",
       "restaurantId": "osm-node-886747513-trident-booksellers-and-cafe",
       "restaurantName": "Trident Booksellers and Cafe",
       "platform": "official_page",
-      "title": "Events from August 27 – November 5",
-      "excerpt": "Events from August 27 – November 5 Skip to main content Skip to footer Trident Booksellers & Cafe Your neighbourhood coffeehouse, tea room, used bookseller. Home Events at the Trident Contact the Trident 10 events found. Welcome to our events page. We hope to see you soon! Events Events Search and Views Navigation Search Enter Keyword. Search for Events by Keyword. Find Events Event Views Navigation List List Mont...",
+      "title": "Events from September 3 – November 5",
+      "excerpt": "Events from September 3 – November 5 Skip to main content Skip to footer Trident Booksellers & Cafe Your neighbourhood coffeehouse, tea room, used bookseller. Home Events at the Trident Contact the Trident 9 events found. Welcome to our events page. We hope to see you soon! Events Events Search and Views Navigation Search Enter Keyword. Search for Events by Keyword. Find Events Event Views Navigation List List Mon...",
       "postUrl": "https://tridenthalifax.ca/events/",
-      "mediaUrl": "https://tridenthalifax.ca/wp-content/uploads/2026/08/NeonSignVolIII.png",
+      "mediaUrl": "https://tridenthalifax.ca/wp-content/uploads/2026/08/01_GC@TridentCafe_POSTER.jpg",
       "publishedAt": "2026-11-05T00:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:43.304Z",
+      "observedAt": "2026-09-03T20:06:11.793Z",
       "signalMatches": {
         "specials": [
           "special"
@@ -65730,8 +66773,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
         "live_music": [
           "live music",
           "show",
-          "concert",
-          "band"
+          "concert"
         ]
       },
       "candidateLinks": [
@@ -65756,10 +66798,6 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
           "label": "/events/list/"
         },
         {
-          "url": "https://tridenthalifax.ca/event/neon-sign-comedy-vol-viii",
-          "label": "Neon Sign Comedy Vol. VIII!"
-        },
-        {
           "url": "https://tridenthalifax.ca/event/live-music-gourmet-club",
           "label": "Live Music! Gourmet Club!"
         },
@@ -65774,6 +66812,10 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
         {
           "url": "https://tridenthalifax.ca/event/adam-otmar-farewell-to-nova-scotia-with-marlo-day",
           "label": "Adam Otmar: Farewell to Nova Scotia (with Marlo Day)"
+        },
+        {
+          "url": "https://tridenthalifax.ca/event/release-day-cocktail-party-at-the-trident-joanne-merriam",
+          "label": "Release Day Cocktail Party at the Trident: Joanne Merriam"
         }
       ],
       "sourceKind": "official_page_html",
@@ -65793,7 +66835,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://turkishdelighthalifax.ca/",
       "mediaUrl": null,
       "publishedAt": "2007-04-25T03:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:42.854Z",
+      "observedAt": "2026-09-03T20:06:11.767Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -65822,7 +66864,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://twoifbyseacafe.ca/",
       "mediaUrl": "https://twoifbyseacafe.ca/wp-content/uploads/2020/09/easy-seafood-platter-155604-2-300x200.jpg",
       "publishedAt": "2026-09-01T00:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:43.032Z",
+      "observedAt": "2026-09-03T20:06:12.068Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -65855,7 +66897,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://theuncommongroup.com/",
       "mediaUrl": "https://theuncommongroup.com/cdn/shop/t/18/assets/slide_2.jpg?v=13304079562732043911444937180",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:43.280Z",
+      "observedAt": "2026-09-03T20:06:12.118Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -65884,7 +66926,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "http://wasabihouse.ca/",
       "mediaUrl": null,
       "publishedAt": "2024-05-01T03:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:43.649Z",
+      "observedAt": "2026-09-03T20:06:12.556Z",
       "signalMatches": {
         "happy_hour": [
           "happy hour"
@@ -65939,7 +66981,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "http://wasabihouse.ca/happy-hour/",
       "mediaUrl": "http://wasabihouse.ca/wp-content/uploads/2026/07/image1-799x1024.jpeg",
       "publishedAt": "2024-05-01T03:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:44.729Z",
+      "observedAt": "2026-09-03T20:06:14.167Z",
       "signalMatches": {
         "happy_hour": [
           "happy hour"
@@ -65987,7 +67029,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "http://wasabihouse.ca/lunch-specials/",
       "mediaUrl": "http://wasabihouse.ca/wp-content/uploads/2026/07/image0.jpeg",
       "publishedAt": "2024-05-01T03:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:46.322Z",
+      "observedAt": "2026-09-03T20:06:16.335Z",
       "signalMatches": {
         "happy_hour": [
           "happy hour"
@@ -66035,7 +67077,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.sevenrooms.com/explore/waterpolo/reservations/create/search",
       "mediaUrl": null,
       "publishedAt": null,
-      "observedAt": "2026-09-01T15:24:13.333Z",
+      "observedAt": "2026-09-03T20:05:36.973Z",
       "signalMatches": {
         "reservations": [
           "reservation",
@@ -66060,7 +67102,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.waterpolohfx.ca/",
       "mediaUrl": null,
       "publishedAt": null,
-      "observedAt": "2026-09-01T15:24:43.758Z",
+      "observedAt": "2026-09-03T20:06:12.702Z",
       "signalMatches": {
         "specials": [
           "offer",
@@ -66115,7 +67157,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.waterpolohfx.ca/menus/",
       "mediaUrl": "https://images.getbento.com/accounts/15bdd5135b436c32400cc8748f21a401/media/images/68785wp1.jpg?w=1200&fit=crop&auto=compress,format&cs=origin&h=600",
       "publishedAt": null,
-      "observedAt": "2026-09-01T15:24:44.299Z",
+      "observedAt": "2026-09-03T20:06:13.184Z",
       "signalMatches": {
         "specials": [
           "offer"
@@ -66164,7 +67206,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.rcr.ca/restaurants/cable-wharf-kitchen-patio/",
       "mediaUrl": "https://www.rcr.ca/content/uploads/2023/04/cable-wharf-kitchen-patio-4-1920x1006.jpg",
       "publishedAt": "2026-07-15T18:57:22.000Z",
-      "observedAt": "2026-09-01T15:23:54.374Z",
+      "observedAt": "2026-09-03T20:05:17.443Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -66216,7 +67258,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.rcr.ca/restaurants/waterfront-warehouse/",
       "mediaUrl": "https://www.rcr.ca/content/uploads/2018/02/waterfront-warehouse-wide-1920x1006.jpg",
       "publishedAt": "2026-07-13T15:57:11.000Z",
-      "observedAt": "2026-09-01T15:23:53.997Z",
+      "observedAt": "2026-09-03T20:05:17.076Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -66272,7 +67314,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://locations.wendys.com/canada/ns/halifax/3580-kempt-road",
       "mediaUrl": "https://locations.wendys.com/permanent-b0b701/assets/images/find_icon.6f8d1b9b.svg",
       "publishedAt": "2001-08-01T03:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:44.449Z",
+      "observedAt": "2026-09-03T20:06:14.231Z",
       "signalMatches": {
         "specials": [
           "deal",
@@ -66331,7 +67373,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://order.wendys.com/ca/en/national/menu",
       "mediaUrl": "https://order.wendys.com/_next/image?url=https%3A%2F%2Fapp.wendys.com%2Funified%2Fassets%2Fcampaign%2Forder.wendys%2F1986_large_CA_en.jpg&amp;w=828&amp;q=75",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:44.081Z",
+      "observedAt": "2026-09-03T20:06:14.052Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -66402,7 +67444,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://order.wendys.com/ca/en/national/menu",
       "mediaUrl": "https://order.wendys.com/_next/image?url=https%3A%2F%2Fapp.wendys.com%2Funified%2Fassets%2Fcampaign%2Forder.wendys%2F1986_large_CA_en.jpg&amp;w=828&amp;q=75",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:49.928Z",
+      "observedAt": "2026-09-03T20:06:18.212Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -66473,7 +67515,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://order.wendys.com/ca/en/national/menu/cheeseburgers",
       "mediaUrl": null,
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:46.338Z",
+      "observedAt": "2026-09-03T20:06:16.107Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -66486,6 +67528,10 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
         ]
       },
       "candidateLinks": [
+        {
+          "url": "https://order.wendys.com/ca/en/national/menu",
+          "label": "Back"
+        },
         {
           "url": "https://order.wendys.com/ca/en/national/menu/combos",
           "label": "Combos"
@@ -66521,10 +67567,6 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
         {
           "url": "https://order.wendys.com/ca/en/national/menu/everyday-value",
           "label": "Everyday Value"
-        },
-        {
-          "url": "https://order.wendys.com/ca/en/national/menu/wendys-kids-meals",
-          "label": "Wendy's Kids' Meals"
         }
       ],
       "sourceKind": "official_page_html",
@@ -66544,7 +67586,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://order.wendys.com/ca/en/national/menu/cheeseburgers/daves-double",
       "mediaUrl": "https://order.wendys.com/_next/image?url=https%3A%2F%2Fapp.wendys.com%2Funified%2Fassets%2Fmenu%2Fcropped%2F1002_large_CA_en.png&amp;w=828&amp;q=75",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:50.326Z",
+      "observedAt": "2026-09-03T20:06:18.633Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -66573,7 +67615,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://order.wendys.com/ca/en/national/menu/chicken-wraps-more",
       "mediaUrl": null,
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:47.165Z",
+      "observedAt": "2026-09-03T20:06:16.634Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -66586,6 +67628,10 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
         ]
       },
       "candidateLinks": [
+        {
+          "url": "https://order.wendys.com/ca/en/national/menu",
+          "label": "Back"
+        },
         {
           "url": "https://order.wendys.com/ca/en/national/menu/combos",
           "label": "Combos"
@@ -66621,10 +67667,6 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
         {
           "url": "https://order.wendys.com/ca/en/national/menu/everyday-value",
           "label": "Everyday Value"
-        },
-        {
-          "url": "https://order.wendys.com/ca/en/national/menu/wendys-kids-meals",
-          "label": "Wendy's Kids' Meals"
         }
       ],
       "sourceKind": "official_page_html",
@@ -66644,7 +67686,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://order.wendys.com/ca/en/national/menu/chicken-wraps-more/spicy-chicken-sandwich",
       "mediaUrl": "https://order.wendys.com/_next/image?url=https%3A%2F%2Fapp.wendys.com%2Funified%2Fassets%2Fmenu%2Fcropped%2F1119_large_CA_en.png&amp;w=828&amp;q=75",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:51.837Z",
+      "observedAt": "2026-09-03T20:06:19.848Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -66673,7 +67715,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://order.wendys.com/ca/en/national/menu/coffee/hot-coffee",
       "mediaUrl": "https://order.wendys.com/_next/image?url=https%3A%2F%2Fapp.wendys.com%2Funified%2Fassets%2Fmenu%2Fcropped%2F3130_large_CA_en.png&amp;w=828&amp;q=75",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:52.339Z",
+      "observedAt": "2026-09-03T20:06:20.527Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -66702,7 +67744,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://order.wendys.com/ca/en/national/menu/coffee/vanilla-frosty-ccino",
       "mediaUrl": null,
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:52.976Z",
+      "observedAt": "2026-09-03T20:06:20.967Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -66726,7 +67768,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://order.wendys.com/ca/en/national/menu/combos",
       "mediaUrl": null,
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:45.781Z",
+      "observedAt": "2026-09-03T20:06:15.760Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -66739,6 +67781,10 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
         ]
       },
       "candidateLinks": [
+        {
+          "url": "https://order.wendys.com/ca/en/national/menu",
+          "label": "Back"
+        },
         {
           "url": "https://order.wendys.com/ca/en/national/menu/combos",
           "label": "Combos"
@@ -66774,10 +67820,6 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
         {
           "url": "https://order.wendys.com/ca/en/national/menu/everyday-value",
           "label": "Everyday Value"
-        },
-        {
-          "url": "https://order.wendys.com/ca/en/national/menu/wendys-kids-meals",
-          "label": "Wendy's Kids' Meals"
         }
       ],
       "sourceKind": "official_page_html",
@@ -66797,7 +67839,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://order.wendys.com/ca/en/national/menu/everyday-value",
       "mediaUrl": null,
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:45.390Z",
+      "observedAt": "2026-09-03T20:06:15.284Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -66868,7 +67910,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://order.wendys.com/ca/en/national/menu/fresh-made-salads",
       "mediaUrl": null,
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:48.464Z",
+      "observedAt": "2026-09-03T20:06:17.050Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -66881,6 +67923,10 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
         ]
       },
       "candidateLinks": [
+        {
+          "url": "https://order.wendys.com/ca/en/national/menu",
+          "label": "Back"
+        },
         {
           "url": "https://order.wendys.com/ca/en/national/menu/combos",
           "label": "Combos"
@@ -66916,10 +67962,6 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
         {
           "url": "https://order.wendys.com/ca/en/national/menu/everyday-value",
           "label": "Everyday Value"
-        },
-        {
-          "url": "https://order.wendys.com/ca/en/national/menu/wendys-kids-meals",
-          "label": "Wendy's Kids' Meals"
         }
       ],
       "sourceKind": "official_page_html",
@@ -66939,7 +67981,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://order.wendys.com/ca/en/national/menu/fresh-made-salads/apple-pecan-chicken-salad",
       "mediaUrl": "https://order.wendys.com/_next/image?url=https%3A%2F%2Fapp.wendys.com%2Funified%2Fassets%2Fmenu%2Fcropped%2F1386_large_CA_en.png&amp;w=828&amp;q=75",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:50.953Z",
+      "observedAt": "2026-09-03T20:06:19.046Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -66968,7 +68010,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://order.wendys.com/ca/en/national/menu/fries-sides",
       "mediaUrl": null,
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:48.812Z",
+      "observedAt": "2026-09-03T20:06:17.450Z",
       "signalMatches": {
         "specials": [
           "limited time"
@@ -66984,6 +68026,10 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
         ]
       },
       "candidateLinks": [
+        {
+          "url": "https://order.wendys.com/ca/en/national/menu",
+          "label": "Back"
+        },
         {
           "url": "https://order.wendys.com/ca/en/national/menu/combos",
           "label": "Combos"
@@ -67019,10 +68065,6 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
         {
           "url": "https://order.wendys.com/ca/en/national/menu/everyday-value",
           "label": "Everyday Value"
-        },
-        {
-          "url": "https://order.wendys.com/ca/en/national/menu/wendys-kids-meals",
-          "label": "Wendy's Kids' Meals"
         }
       ],
       "sourceKind": "official_page_html",
@@ -67042,7 +68084,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.wendys.com/en-ca",
       "mediaUrl": null,
       "publishedAt": "2014-10-06T03:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:43.905Z",
+      "observedAt": "2026-09-03T20:06:13.484Z",
       "signalMatches": {
         "specials": [
           "deal",
@@ -67120,7 +68162,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.wendys.com/en-ca/delivery",
       "mediaUrl": null,
       "publishedAt": "2014-10-06T03:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:44.136Z",
+      "observedAt": "2026-09-03T20:06:13.735Z",
       "signalMatches": {
         "specials": [
           "offer",
@@ -67166,7 +68208,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.wendys.com/en-ca/delivery",
       "mediaUrl": null,
       "publishedAt": "2014-10-06T03:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:44.300Z",
+      "observedAt": "2026-09-03T20:06:13.901Z",
       "signalMatches": {
         "specials": [
           "offer",
@@ -67212,7 +68254,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.wildleek.ca/",
       "mediaUrl": "https://static.wixstatic.com/media/7da4e6_d8105835b30e4aea9a9ddc05063bdb91~mv2.jpg/v1/fill/w_123,h_105,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/7da4e6_d8105835b30e4aea9a9ddc05063bdb91~mv2.jpg",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:45.416Z",
+      "observedAt": "2026-09-03T20:06:14.583Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -67252,7 +68294,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.wildleek.ca/events",
       "mediaUrl": "https://static.wixstatic.com/media/7da4e6_eb2dda7dc1e74766a93fdce4d4f944cd~mv2.png/v1/fill/w_112,h_198,al_c,q_85,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/7da4e6_eb2dda7dc1e74766a93fdce4d4f944cd~mv2.png",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:46.167Z",
+      "observedAt": "2026-09-03T20:06:15.346Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -67293,7 +68335,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.wildleek.ca/menu",
       "mediaUrl": "https://static.wixstatic.com/media/7da4e6_e7b8bca6835d43718f018db0b07c3497~mv2.jpg/v1/fill/w_870,h_1126,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Wild%20Leek%202026%20Menu_page-0001.jpg",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:45.929Z",
+      "observedAt": "2026-09-03T20:06:15.101Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -67330,7 +68372,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://wingnit.ca/",
       "mediaUrl": "https://wingnit.ca/assets/images/layout/og-image.png",
       "publishedAt": "2001-08-01T03:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:46.005Z",
+      "observedAt": "2026-09-03T20:06:15.337Z",
       "signalMatches": {
         "happy_hour": [
           "drink special"
@@ -67411,7 +68453,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://wingnit.ca/menu",
       "mediaUrl": "https://wingnit.ca/assets/images/layout/og-image.png",
       "publishedAt": "2001-08-01T03:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:46.245Z",
+      "observedAt": "2026-09-03T20:06:15.564Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -67487,7 +68529,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://wingnit.ca/menu/appetizers",
       "mediaUrl": "https://wingnit.ca/assets/images/layout/og-image.png",
       "publishedAt": "2001-08-01T03:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:46.428Z",
+      "observedAt": "2026-09-03T20:06:15.734Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -67563,7 +68605,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://wingnit.ca/menu/burgers-",
       "mediaUrl": "https://wingnit.ca/assets/images/layout/og-image.png",
       "publishedAt": "2001-08-01T03:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:47.437Z",
+      "observedAt": "2026-09-03T20:06:16.734Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -67639,7 +68681,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://wingnit.ca/menu/entrees",
       "mediaUrl": "https://wingnit.ca/assets/images/layout/og-image.png",
       "publishedAt": "2001-08-01T03:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:47.263Z",
+      "observedAt": "2026-09-03T20:06:16.564Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -67715,7 +68757,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://wingnit.ca/menu/fries-",
       "mediaUrl": "https://wingnit.ca/assets/images/layout/og-image.png",
       "publishedAt": "2001-08-01T03:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:47.598Z",
+      "observedAt": "2026-09-03T20:06:16.900Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -67791,7 +68833,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://wingnit.ca/menu/nachos-",
       "mediaUrl": "https://wingnit.ca/assets/images/layout/og-image.png",
       "publishedAt": "2001-08-01T03:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:46.596Z",
+      "observedAt": "2026-09-03T20:06:15.907Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -67867,7 +68909,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://wingnit.ca/menu/salad-soup",
       "mediaUrl": "https://wingnit.ca/assets/images/layout/og-image.png",
       "publishedAt": "2001-08-01T03:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:46.760Z",
+      "observedAt": "2026-09-03T20:06:16.066Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -67943,7 +68985,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://wingnit.ca/menu/sandwiches-wraps",
       "mediaUrl": "https://wingnit.ca/assets/images/layout/og-image.png",
       "publishedAt": "2001-08-01T03:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:46.930Z",
+      "observedAt": "2026-09-03T20:06:16.235Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -68019,7 +69061,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://wingnit.ca/menu/wings",
       "mediaUrl": "https://wingnit.ca/assets/images/layout/og-image.png",
       "publishedAt": "2001-08-01T03:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:47.095Z",
+      "observedAt": "2026-09-03T20:06:16.400Z",
       "signalMatches": {
         "specials": [
           "special",
@@ -68095,7 +69137,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.thewoodenmonkey.ca/",
       "mediaUrl": "https://cdn.prod.website-files.com/5a9175138433cb00017eefdf/5a9175138433cb00017ef019_imageedit_1_2839820776.png",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:46.108Z",
+      "observedAt": "2026-09-03T20:06:15.533Z",
       "signalMatches": {
         "specials": [
           "special"
@@ -68176,7 +69218,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.thewoodenmonkey.ca/beer-garden",
       "mediaUrl": "https://cdn.prod.website-files.com/5a9175138433cb00017eefdf/5a9175138433cb00017ef019_imageedit_1_2839820776.png",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:46.682Z",
+      "observedAt": "2026-09-03T20:06:16.384Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -68221,7 +69263,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.thewoodenmonkey.ca/dessert-kids-menu",
       "mediaUrl": "https://cdn.prod.website-files.com/5a9175138433cb00017eefdf/5a9175138433cb00017ef019_imageedit_1_2839820776.png",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:47.010Z",
+      "observedAt": "2026-09-03T20:06:16.734Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -68272,7 +69314,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.thewoodenmonkey.ca/main-menu",
       "mediaUrl": "https://cdn.prod.website-files.com/5a9175138433cb00017eefdf/5a9175138433cb00017ef019_imageedit_1_2839820776.png",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:46.847Z",
+      "observedAt": "2026-09-03T20:06:16.563Z",
       "signalMatches": {
         "menu": [
           "menu",
@@ -68321,7 +69363,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.thewoodenmonkey.ca/menus",
       "mediaUrl": "https://cdn.prod.website-files.com/5a9175138433cb00017eefdf/5a9175138433cb00017ef019_imageedit_1_2839820776.png",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:46.353Z",
+      "observedAt": "2026-09-03T20:06:16.018Z",
       "signalMatches": {
         "specials": [
           "special"
@@ -68381,7 +69423,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.thewoodenmonkey.ca/reservations",
       "mediaUrl": "https://cdn.prod.website-files.com/5a9175138433cb00017eefdf/5a9175138433cb00017ef019_imageedit_1_2839820776.png",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:46.515Z",
+      "observedAt": "2026-09-03T20:06:16.216Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -68426,7 +69468,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://www.thewoodenmonkey.ca/special-menus",
       "mediaUrl": "https://cdn.prod.website-files.com/5a9175138433cb00017eefdf/5a9175138433cb00017ef019_imageedit_1_2839820776.png",
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:24:47.165Z",
+      "observedAt": "2026-09-03T20:06:16.917Z",
       "signalMatches": {
         "specials": [
           "special"
@@ -68477,7 +69519,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://dal.mydininghub.ca/en/account?section=my-menu",
       "mediaUrl": null,
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:23:47.573Z",
+      "observedAt": "2026-09-03T20:05:11.711Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -68514,7 +69556,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "postUrl": "https://dal.mydininghub.ca/en/locations",
       "mediaUrl": null,
       "publishedAt": "2001-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-01T15:23:46.591Z",
+      "observedAt": "2026-09-03T20:05:10.310Z",
       "signalMatches": {
         "menu": [
           "menu"
@@ -68673,7 +69715,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "restaurantId": "osm-node-13141377001-india-paradise",
       "name": "India Paradise",
       "url": "https://order.online/store/india-paradise-829212",
-      "reason": "robots_disallow"
+      "reason": "http_403"
     },
     {
       "restaurantId": "osm-node-13286456320-creme",
@@ -68703,7 +69745,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "restaurantId": "osm-node-13141377001-india-paradise",
       "name": "India Paradise",
       "url": "https://order.online/store/india-paradise-halifax-downtown-30667832?pickup=true",
-      "reason": "robots_disallow"
+      "reason": "http_403"
     },
     {
       "restaurantId": "osm-node-8836681495-lion-s-head-tavern",
@@ -68817,7 +69859,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "restaurantId": "osm-node-8600605850-barburrito",
       "name": "BarBurrito",
       "url": "https://www.doordash.com/store/barburrito-b-dartmouth-1272107/en-CA/?utm_campaign=gpa",
-      "reason": "robots_disallow"
+      "reason": "http_403"
     },
     {
       "restaurantId": "osm-node-7674175977-moxie-s",
@@ -68997,7 +70039,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "restaurantId": "osm-node-9652937830-arirang-korean-and-japanese",
       "name": "Arirang Korean & Japanese",
       "url": "https://arirang-restaurant.com",
-      "reason": "timeout"
+      "reason": "fetch failed"
     },
     {
       "restaurantId": "osm-node-7082566318-g-street-pizza",
@@ -69117,7 +70159,7 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "restaurantId": "osm-way-460939327-la-piazza-ristorante",
       "name": "La Piazza Ristorante",
       "url": "https://www.lapiazzarestocafe.com",
-      "reason": "timeout"
+      "reason": "fetch failed"
     },
     {
       "restaurantId": "osm-node-11577869162-lady-hammond-grill",
@@ -69610,30 +70652,49 @@ window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE = {
       "name": "McDonald's",
       "url": "https://www.mcdonalds.com/ca/en-ca.html",
       "reason": "timeout"
+    },
+    {
+      "restaurantId": "osm-node-5987565464-afrite",
+      "name": "aFrite",
+      "url": "https://afrite.ca/menu",
+      "reason": "timeout"
+    },
+    {
+      "restaurantId": "osm-node-5987565464-afrite",
+      "name": "aFrite",
+      "url": "https://afrite.ca/contact",
+      "reason": "timeout"
+    },
+    {
+      "restaurantId": "osm-node-9099100703-marigold-kitchen",
+      "name": "Marigold Kitchen",
+      "url": "https://marigoldkitchen.ca",
+      "reason": "fetch failed"
     }
   ],
   "counts": {
-    "records": 680,
+    "records": 692,
     "restaurants": 189,
     "categoryCounts": {
-      "specials": 438,
-      "openings": 29,
-      "live_music": 123,
-      "menu": 616,
-      "seasonal": 121,
-      "reservations": 202,
+      "specials": 443,
+      "openings": 30,
+      "live_music": 130,
+      "menu": 621,
+      "seasonal": 120,
+      "reservations": 203,
       "events": 189,
-      "brunch": 173,
+      "brunch": 178,
       "patio": 55,
       "happy_hour": 35,
-      "moves": 5
+      "moves": 6
     }
   },
   "mergeState": {
-    "strategy": "current_plus_source_expansion_artifact",
-    "sourceRunId": "33792791332",
-    "currentRecords": 661,
-    "artifactRecords": 373,
-    "mergedRecords": 680
+    "strategy": "pre_run_plus_wide_official_page_scrape",
+    "previousRecords": 680,
+    "freshRecords": 653,
+    "newFreshRecords": 12,
+    "carriedPreviousRecords": 39,
+    "mergedRecords": 692
   }
 };

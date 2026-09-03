@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-09-03T19:23:26.113Z",
+  "generatedAt": "2026-09-03T20:16:08.403Z",
   "socialPlatformRegistryVersion": 1,
   "counts": {
-    "firstPartyRecords": 236,
+    "firstPartyRecords": 240,
     "socialProfiles": 412,
     "platformCounts": {
       "facebook": 148,
@@ -31,32 +31,32 @@
       "newsletter": 6,
       "tickets": 1
     },
-    "websiteFeeds": 137,
-    "uniqueRestaurantFeeds": 111,
+    "websiteFeeds": 138,
+    "uniqueRestaurantFeeds": 112,
     "sharedFeedUrlsSkipped": 10,
     "reviewedFeedsExcluded": 6,
     "websiteFeedSignals": 4,
-    "websiteFeedPosts": 13,
-    "websitePageIntelligence": 680,
+    "websiteFeedPosts": 15,
+    "websitePageIntelligence": 692,
     "websitePageRestaurants": 189,
     "uniqueRestaurantSocialProfiles": 224,
     "sharedProfileAssociationsSkipped": 75,
     "socialSignals": 0,
     "socialPosts": 0,
-    "recentSocialPosts": 250,
+    "recentSocialPosts": 258,
     "recentSocialPostCategories": {
-      "specials": 140,
+      "specials": 141,
       "openings": 2,
       "menu": 39,
       "events": 11,
       "happy_hour": 38,
       "reservations": 4,
-      "live_music": 4,
+      "live_music": 11,
       "general_update": 8,
       "brunch": 4
     },
     "recentSocialPostPlatforms": {
-      "official_page": 206,
+      "official_page": 214,
       "website_feed": 13,
       "public_source": 31
     }
@@ -66,19 +66,19 @@
     "instagram": "missing"
   },
   "recentPostState": {
-    "generatedAt": "2026-09-03T19:22:24.138Z",
+    "generatedAt": "2026-09-03T20:08:10.572Z",
     "lookbackDays": 180,
     "sourceState": {
-      "websiteFeedsGeneratedAt": "2026-09-03T18:59:48.707Z",
-      "websitePagesGeneratedAt": "2026-09-03T18:59:34.015Z",
-      "metaSocialGeneratedAt": "2026-09-03T18:59:48.769Z",
+      "websiteFeedsGeneratedAt": "2026-09-03T20:07:41.446Z",
+      "websitePagesGeneratedAt": "2026-09-03T20:06:42.982Z",
+      "metaSocialGeneratedAt": "2026-09-03T20:07:57.232Z",
       "metaCredentialState": {
         "facebook": "missing",
         "instagram": "missing"
       },
       "metaProfilesAttempted": 0,
       "metaPostsObserved": 0,
-      "publicSpecialSourceGeneratedAt": "2026-09-03T18:55:54.560Z",
+      "publicSpecialSourceGeneratedAt": "2026-09-03T20:01:16.791Z",
       "publicSpecialSourceRecords": 143
     }
   },
