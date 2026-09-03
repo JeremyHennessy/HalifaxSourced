@@ -1,19 +1,19 @@
 {
-  "generatedAt": "2026-09-03T13:17:24.835Z",
+  "generatedAt": "2026-09-03T19:23:23.801Z",
   "counts": {
     "curated": 10,
     "osm": 736,
     "officialSignals": 290,
     "officialWithValidSite": 289,
-    "officialCandidateLinks": 994,
+    "officialCandidateLinks": 876,
     "productionMedia": 107,
     "ownerSubmissions": 0,
     "ownerMediaPendingReview": 0,
-    "structuredEvents": 21,
-    "staleStructuredEvents": 1,
-    "verifiedMenuSources": 343,
-    "verifiedSpecialSources": 77,
-    "verifiedSourceFailures": 22,
+    "structuredEvents": 20,
+    "staleStructuredEvents": 0,
+    "verifiedMenuSources": 233,
+    "verifiedSpecialSources": 52,
+    "verifiedSourceFailures": 9,
     "multiLocationNameGroups": 54,
     "nearDuplicatePairs": 2,
     "ambiguousCuratedMatches": 1,
@@ -1958,32 +1958,9 @@
       ]
     },
     {
-      "type": "stale_structured_events",
-      "count": 1,
-      "examples": [
-        {
-          "id": "evt-2f0e9b73d2c665c522",
-          "restaurantId": "osm-node-37132580-durty-nelly-s-irish-pub",
-          "title": "Industry night with Tyler Key",
-          "startAt": "2026-09-02T02:00:00.000Z",
-          "endAt": "2026-09-02T05:00:00.000Z"
-        }
-      ]
-    },
-    {
       "type": "verified_source_page_failures",
-      "count": 22,
+      "count": 9,
       "examples": [
-        {
-          "restaurantId": "osm-node-12143582175-asia-restaurant-and-bar",
-          "restaurantName": "Asia Restaurant & Bar",
-          "kind": "menu",
-          "url": "https://asiahalifax.com/menus",
-          "label": "Our Menu",
-          "website": "https://asiahalifax.com/",
-          "observedAt": "2026-09-01T15:15:25.541Z",
-          "reason": "http_404"
-        },
         {
           "restaurantId": "osm-node-762250248-ela-greek-taverna",
           "restaurantName": "Ela Greek Taverna",
@@ -1991,7 +1968,7 @@
           "url": "https://elagreektaverna.com/dinner/",
           "label": "View Our Menus",
           "website": "https://elagreektaverna.com/",
-          "observedAt": "2026-09-01T15:15:30.208Z",
+          "observedAt": "2026-09-03T18:49:50.527Z",
           "reason": "http_404"
         },
         {
@@ -2001,8 +1978,28 @@
           "url": "https://elagreektaverna.com/dinner/",
           "label": "View Our Menus",
           "website": "https://elagreektaverna.com/",
-          "observedAt": "2026-09-01T15:15:30.945Z",
+          "observedAt": "2026-09-03T18:49:51.355Z",
           "reason": "http_404"
+        },
+        {
+          "restaurantId": "osm-node-9128392205-king-of-donair",
+          "restaurantName": "King of Donair",
+          "kind": "menu",
+          "url": "https://www.kingofdonair.ca/menu/",
+          "label": "Menu",
+          "website": "https://www.kingofdonair.ca/",
+          "observedAt": "2026-09-03T18:49:56.444Z",
+          "reason": "http_403"
+        },
+        {
+          "restaurantId": "osm-node-9099100703-marigold-kitchen",
+          "restaurantName": "Marigold Kitchen",
+          "kind": "menu",
+          "url": "https://marigoldkitchen.ca/menu/",
+          "label": "Menu",
+          "website": "https://marigoldkitchen.ca/",
+          "observedAt": "2026-09-03T18:50:01.309Z",
+          "reason": "fetch failed"
         },
         {
           "restaurantId": "osm-node-7674175977-moxie-s",
@@ -2011,7 +2008,7 @@
           "url": "https://moxies.com/restaurants/boston-seaport/menus/",
           "label": "Menus",
           "website": "https://moxies.com/",
-          "observedAt": "2026-09-01T15:15:40.219Z",
+          "observedAt": "2026-09-03T18:50:08.192Z",
           "reason": "location_mismatch"
         },
         {
@@ -2021,7 +2018,7 @@
           "url": "https://moxies.com/restaurants/dallas-uptown/menus/",
           "label": "Menus",
           "website": "https://moxies.com/",
-          "observedAt": "2026-09-01T15:15:40.219Z",
+          "observedAt": "2026-09-03T18:50:08.192Z",
           "reason": "location_mismatch"
         },
         {
@@ -2031,7 +2028,7 @@
           "url": "https://moxies.com/restaurants/fort-lauderdale/menus/",
           "label": "Menus",
           "website": "https://moxies.com/",
-          "observedAt": "2026-09-01T15:15:40.219Z",
+          "observedAt": "2026-09-03T18:50:08.192Z",
           "reason": "location_mismatch"
         },
         {
@@ -2041,18 +2038,8 @@
           "url": "https://moxies.com/restaurants/houston/menus/",
           "label": "Menus",
           "website": "https://moxies.com/",
-          "observedAt": "2026-09-01T15:15:40.219Z",
+          "observedAt": "2026-09-03T18:50:08.192Z",
           "reason": "location_mismatch"
-        },
-        {
-          "restaurantId": "osm-node-8443747544-saj-house",
-          "restaurantName": "Saj House",
-          "kind": "specials",
-          "url": "https://www.sajhouse.ca/go?source=sajhouse.ca",
-          "label": "Promotions",
-          "website": "https://www.sajhouse.ca/",
-          "observedAt": "2026-09-01T15:15:44.403Z",
-          "reason": "robots_disallow"
         },
         {
           "restaurantId": "osm-node-11699344564-second-cup",
@@ -2061,117 +2048,7 @@
           "url": "https://secondcup.com/en/?page_id=2527",
           "label": "SEASONAL SPECIALS",
           "website": "https://secondcup.com/en/location/bayers-lake/",
-          "observedAt": "2026-09-01T15:15:45.150Z",
-          "reason": "http_404"
-        },
-        {
-          "restaurantId": "osm-node-5140336622-studio-east-food-drink",
-          "restaurantName": "Studio East Food+Drink",
-          "kind": "menu",
-          "url": "https://www.studioeastfood.ca/menu/dinner",
-          "label": "Menu",
-          "website": "https://www.studioeastfood.ca/",
-          "observedAt": "2026-09-01T15:15:48.620Z",
-          "reason": "http_404"
-        },
-        {
-          "restaurantId": "osm-node-1202688542-subway",
-          "restaurantName": "Subway",
-          "kind": "specials",
-          "url": "https://www.subway.com/content/subway/content-pages/ca/en_ca/modals/terms-and-conditions-promo-card-1.html",
-          "label": "Terms and Conditions Apply",
-          "website": "https://www.subway.com/en-ca",
-          "observedAt": "2026-09-01T15:15:48.935Z",
-          "reason": "http_404"
-        },
-        {
-          "restaurantId": "osm-node-1202688542-subway",
-          "restaurantName": "Subway",
-          "kind": "specials",
-          "url": "https://www.subway.com/content/subway/content-pages/ca/en_ca/modals/terms-and-conditions-promo-card-2.html",
-          "label": "Terms and Conditions Apply",
-          "website": "https://www.subway.com/en-ca",
-          "observedAt": "2026-09-01T15:15:48.935Z",
-          "reason": "http_404"
-        },
-        {
-          "restaurantId": "osm-node-3800067659-subway",
-          "restaurantName": "Subway",
-          "kind": "specials",
-          "url": "https://www.subway.com/content/subway/content-pages/ca/en_ca/modals/terms-and-conditions-promo-card-1.html",
-          "label": "Terms and Conditions Apply",
-          "website": "https://www.subway.com/en-ca",
-          "observedAt": "2026-09-01T15:15:49.337Z",
-          "reason": "http_404"
-        },
-        {
-          "restaurantId": "osm-node-3800067659-subway",
-          "restaurantName": "Subway",
-          "kind": "specials",
-          "url": "https://www.subway.com/content/subway/content-pages/ca/en_ca/modals/terms-and-conditions-promo-card-2.html",
-          "label": "Terms and Conditions Apply",
-          "website": "https://www.subway.com/en-ca",
-          "observedAt": "2026-09-01T15:15:49.337Z",
-          "reason": "http_404"
-        },
-        {
-          "restaurantId": "osm-node-8066235496-subway",
-          "restaurantName": "Subway",
-          "kind": "specials",
-          "url": "https://www.subway.com/content/subway/content-pages/ca/en_ca/modals/terms-and-conditions-promo-card-1.html",
-          "label": "Terms and Conditions Apply",
-          "website": "https://www.subway.com/en-ca",
-          "observedAt": "2026-09-01T15:15:49.518Z",
-          "reason": "http_404"
-        },
-        {
-          "restaurantId": "osm-node-8066235496-subway",
-          "restaurantName": "Subway",
-          "kind": "specials",
-          "url": "https://www.subway.com/content/subway/content-pages/ca/en_ca/modals/terms-and-conditions-promo-card-2.html",
-          "label": "Terms and Conditions Apply",
-          "website": "https://www.subway.com/en-ca",
-          "observedAt": "2026-09-01T15:15:49.518Z",
-          "reason": "http_404"
-        },
-        {
-          "restaurantId": "osm-node-9301607067-subway",
-          "restaurantName": "Subway",
-          "kind": "specials",
-          "url": "https://www.subway.com/content/subway/content-pages/ca/en_ca/modals/terms-and-conditions-promo-card-1.html",
-          "label": "Terms and Conditions Apply",
-          "website": "https://www.subway.com/en-ca",
-          "observedAt": "2026-09-01T15:15:49.720Z",
-          "reason": "http_404"
-        },
-        {
-          "restaurantId": "osm-node-9301607067-subway",
-          "restaurantName": "Subway",
-          "kind": "specials",
-          "url": "https://www.subway.com/content/subway/content-pages/ca/en_ca/modals/terms-and-conditions-promo-card-2.html",
-          "label": "Terms and Conditions Apply",
-          "website": "https://www.subway.com/en-ca",
-          "observedAt": "2026-09-01T15:15:49.720Z",
-          "reason": "http_404"
-        },
-        {
-          "restaurantId": "osm-node-11577869163-subway",
-          "restaurantName": "Subway",
-          "kind": "specials",
-          "url": "https://www.subway.com/content/subway/content-pages/ca/en_ca/modals/terms-and-conditions-promo-card-1.html",
-          "label": "Terms and Conditions Apply",
-          "website": "https://www.subway.com/en-ca",
-          "observedAt": "2026-09-01T15:15:49.994Z",
-          "reason": "http_404"
-        },
-        {
-          "restaurantId": "osm-node-11577869163-subway",
-          "restaurantName": "Subway",
-          "kind": "specials",
-          "url": "https://www.subway.com/content/subway/content-pages/ca/en_ca/modals/terms-and-conditions-promo-card-2.html",
-          "label": "Terms and Conditions Apply",
-          "website": "https://www.subway.com/en-ca",
-          "observedAt": "2026-09-01T15:15:49.994Z",
+          "observedAt": "2026-09-03T18:50:14.638Z",
           "reason": "http_404"
         }
       ]

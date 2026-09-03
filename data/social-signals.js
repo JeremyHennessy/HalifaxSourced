@@ -1,6 +1,6 @@
 window.HALIFAX_SOCIAL_SIGNALS = {
   "version": 3,
-  "generatedAt": "2026-09-01T15:25:53.069Z",
+  "generatedAt": "2026-09-03T18:59:48.769Z",
   "graphVersion": "v25.0",
   "lookbackDays": 60,
   "summaryChars": 420,
