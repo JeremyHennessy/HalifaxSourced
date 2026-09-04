@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-03T20:15:40.430Z",
+  "generatedAt": "2026-09-04T12:00:05.176Z",
   "sourceCommitSha": null,
   "definitions": {
     "approvedThumbnail": "A thumbnail candidate tied to an exact restaurant ID with approved review state and production-approved rights status.",
@@ -10,9 +10,9 @@
   },
   "counts": {
     "restaurants": 740,
-    "candidates": 2974,
+    "candidates": 2976,
     "approvedCandidates": 107,
-    "reviewCandidates": 2867,
+    "reviewCandidates": 2869,
     "restaurantsWithApprovedThumbnail": 107,
     "restaurantsWithAnyCandidate": 257,
     "restaurantsMissingApprovedThumbnail": 633,
@@ -31,36 +31,36 @@
   "candidateMix": {
     "bySourceKind": {
       "approved_restaurant_media": 107,
-      "official_page_thumbnail_candidate": 2798,
+      "official_page_thumbnail_candidate": 2800,
       "official_feed_media": 8,
       "public_campaign_menu_image": 41,
       "directory_source_image": 20
     },
     "byReviewState": {
       "approved": 107,
-      "candidate_review": 2809,
+      "candidate_review": 2811,
       "rejected": 24,
       "source_check": 34
     },
     "byRightsStatus": {
       "production_approved": 107,
-      "requires_rights_review": 2843,
+      "requires_rights_review": 2845,
       "rejected": 24
     },
     "byExtractionMethod": {
       "approved_media_manifest": 107,
       "html_link_image": 350,
-      "html_img_content": 1801,
+      "html_img_content": 1800,
       "css_background_image": 343,
-      "declared_post_media": 140,
-      "html_meta_image": 118,
+      "declared_post_media": 144,
+      "html_meta_image": 117,
       "jsonld_image": 54,
       "public_special_source_declared_image": 41,
       "trusted_directory_declared_image": 20
     },
     "byPlatform": {
       "website_feed": 8,
-      "official_page": 132
+      "official_page": 136
     }
   },
   "queues": {
@@ -6408,7 +6408,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "official_feed_media",
-        "observedAt": "2026-09-03T20:07:13.232Z",
+        "observedAt": "2026-09-04T11:32:36.137Z",
         "publishedAt": "2026-09-02T17:13:14.000Z"
       },
       {
@@ -6421,7 +6421,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "official_feed_media",
-        "observedAt": "2026-09-03T20:07:13.232Z",
+        "observedAt": "2026-09-04T11:32:36.137Z",
         "publishedAt": "2026-09-01T14:22:55.000Z"
       },
       {
@@ -6434,7 +6434,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "official_feed_media",
-        "observedAt": "2026-09-03T20:07:13.232Z",
+        "observedAt": "2026-09-04T11:32:36.137Z",
         "publishedAt": "2026-04-02T11:40:44.000Z"
       },
       {
@@ -6447,7 +6447,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "official_feed_media",
-        "observedAt": "2026-09-03T20:07:13.232Z",
+        "observedAt": "2026-09-04T11:32:36.137Z",
         "publishedAt": "2026-03-03T14:50:36.000Z"
       },
       {
@@ -6460,7 +6460,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "official_feed_media",
-        "observedAt": "2026-09-03T20:07:13.232Z",
+        "observedAt": "2026-09-04T11:32:36.137Z",
         "publishedAt": "2026-01-17T17:26:36.000Z"
       },
       {

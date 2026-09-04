@@ -1,11 +1,11 @@
 window.HALIFAX_WEBSITE_FEED_SIGNALS = {
   "version": 3,
-  "generatedAt": "2026-09-03T20:07:41.446Z",
+  "generatedAt": "2026-09-04T11:59:40.952Z",
   "feedsDiscovered": 138,
   "reviewedFeedsExcluded": 6,
   "uniqueRestaurantFeeds": 112,
   "sharedFeedUrlsSkipped": 10,
-  "feedHostGroups": 58,
+  "feedHostGroups": 57,
   "concurrency": 12,
   "lookbackDays": 240,
   "excerptChars": 420,
@@ -22,7 +22,7 @@ window.HALIFAX_WEBSITE_FEED_SIGNALS = {
       "feedUrl": "https://www.birdsnesthalifax.com/blog-feed.xml",
       "mediaUrl": "https://static.wixstatic.com/media/110dc9_3a82ceba3e2340f5aef966fe3b725b43~mv2.jpeg/v1/fit/w_1000,h_1000,al_c,q_80/file.png",
       "publishedAt": "2026-09-02T17:13:14.000Z",
-      "observedAt": "2026-09-03T20:07:13.232Z",
+      "observedAt": "2026-09-04T11:32:36.137Z",
       "signalMatches": {},
       "sourceKind": "official_feed",
       "associationBasis": "unique_feed_link_from_official_website",
@@ -39,7 +39,7 @@ window.HALIFAX_WEBSITE_FEED_SIGNALS = {
       "feedUrl": "https://www.birdsnesthalifax.com/blog-feed.xml",
       "mediaUrl": "https://static.wixstatic.com/media/110dc9_a62017a64bc04441bd78f7cb22257f6a~mv2.jpeg/v1/fit/w_1000,h_960,al_c,q_80/file.png",
       "publishedAt": "2026-09-01T14:22:55.000Z",
-      "observedAt": "2026-09-03T20:07:13.232Z",
+      "observedAt": "2026-09-04T11:32:36.137Z",
       "signalMatches": {},
       "sourceKind": "official_feed",
       "associationBasis": "unique_feed_link_from_official_website",
@@ -56,7 +56,7 @@ window.HALIFAX_WEBSITE_FEED_SIGNALS = {
       "feedUrl": "https://kennyspizzakearneylake.ca/shop/feed/",
       "mediaUrl": null,
       "publishedAt": "2026-07-17T13:48:16.000Z",
-      "observedAt": "2026-09-03T20:07:15.715Z",
+      "observedAt": "2026-09-04T11:32:40.203Z",
       "signalMatches": {},
       "sourceKind": "official_feed",
       "associationBasis": "unique_feed_link_from_official_website",
@@ -73,7 +73,7 @@ window.HALIFAX_WEBSITE_FEED_SIGNALS = {
       "feedUrl": "https://www.cafelunette.com/feed/",
       "mediaUrl": null,
       "publishedAt": "2026-05-11T15:04:47.000Z",
-      "observedAt": "2026-09-03T20:07:13.894Z",
+      "observedAt": "2026-09-04T11:32:36.140Z",
       "signalMatches": {
         "openings": [
           "now open"
@@ -98,7 +98,7 @@ window.HALIFAX_WEBSITE_FEED_SIGNALS = {
       "feedUrl": "https://www.kajohnthairestaurant.ca/blog-feed.xml",
       "mediaUrl": "https://static.wixstatic.com/media/935b09_bba221e694e24cd4b9b12bdbf201943a~mv2.png/v1/fit/w_1000,h_768,al_c,q_80/file.png",
       "publishedAt": "2026-05-04T18:38:33.000Z",
-      "observedAt": "2026-09-03T20:07:17.645Z",
+      "observedAt": "2026-09-04T11:32:38.236Z",
       "signalMatches": {},
       "sourceKind": "official_feed",
       "associationBasis": "unique_feed_link_from_official_website",
@@ -115,7 +115,7 @@ window.HALIFAX_WEBSITE_FEED_SIGNALS = {
       "feedUrl": "https://www.kajohnthairestaurant.ca/blog-feed.xml",
       "mediaUrl": "https://static.wixstatic.com/media/935b09_58e8dab8eb0244d4b89be881384c216d~mv2.png/v1/fit/w_1000,h_768,al_c,q_80/file.png",
       "publishedAt": "2026-05-04T17:55:38.000Z",
-      "observedAt": "2026-09-03T20:07:17.645Z",
+      "observedAt": "2026-09-04T11:32:38.236Z",
       "signalMatches": {},
       "sourceKind": "official_feed",
       "associationBasis": "unique_feed_link_from_official_website",
@@ -132,7 +132,7 @@ window.HALIFAX_WEBSITE_FEED_SIGNALS = {
       "feedUrl": "https://www.cafelunette.com/feed/",
       "mediaUrl": null,
       "publishedAt": "2026-04-28T18:12:21.000Z",
-      "observedAt": "2026-09-03T20:07:13.894Z",
+      "observedAt": "2026-09-04T11:32:36.140Z",
       "signalMatches": {
         "brunch": [
           "brunch"
@@ -153,7 +153,7 @@ window.HALIFAX_WEBSITE_FEED_SIGNALS = {
       "feedUrl": "https://www.cafelunette.com/feed/",
       "mediaUrl": null,
       "publishedAt": "2026-04-08T16:25:03.000Z",
-      "observedAt": "2026-09-03T20:07:13.894Z",
+      "observedAt": "2026-09-04T11:32:36.140Z",
       "signalMatches": {},
       "sourceKind": "official_feed",
       "associationBasis": "unique_feed_link_from_official_website",
@@ -170,7 +170,7 @@ window.HALIFAX_WEBSITE_FEED_SIGNALS = {
       "feedUrl": "https://www.cafelunette.com/feed/",
       "mediaUrl": null,
       "publishedAt": "2026-04-08T15:42:52.000Z",
-      "observedAt": "2026-09-03T20:07:13.894Z",
+      "observedAt": "2026-09-04T11:32:36.140Z",
       "signalMatches": {},
       "sourceKind": "official_feed",
       "associationBasis": "unique_feed_link_from_official_website",
@@ -187,7 +187,7 @@ window.HALIFAX_WEBSITE_FEED_SIGNALS = {
       "feedUrl": "https://www.birdsnesthalifax.com/blog-feed.xml",
       "mediaUrl": "https://static.wixstatic.com/media/110dc9_538c90ecfee14537aa62b59c533c2b01~mv2.jpeg/v1/fit/w_1000,h_1000,al_c,q_80/file.png",
       "publishedAt": "2026-04-02T11:40:44.000Z",
-      "observedAt": "2026-09-03T20:07:13.232Z",
+      "observedAt": "2026-09-04T11:32:36.137Z",
       "signalMatches": {
         "brunch": [
           "breakfast"
@@ -208,7 +208,7 @@ window.HALIFAX_WEBSITE_FEED_SIGNALS = {
       "feedUrl": "https://www.cafelunette.com/feed/",
       "mediaUrl": null,
       "publishedAt": "2026-04-01T19:30:03.000Z",
-      "observedAt": "2026-09-03T20:07:13.894Z",
+      "observedAt": "2026-09-04T11:32:36.140Z",
       "signalMatches": {
         "specials": [
           "offer",
@@ -233,7 +233,7 @@ window.HALIFAX_WEBSITE_FEED_SIGNALS = {
       "feedUrl": "https://www.shige.ca/blog-feed.xml",
       "mediaUrl": "https://static.wixstatic.com/media/445de3_8cde890dee564907b10a3db536a75443~mv2.png/v1/fit/w_1000,h_1000,al_c,q_80/file.png",
       "publishedAt": "2026-04-01T15:01:16.000Z",
-      "observedAt": "2026-09-03T20:07:13.238Z",
+      "observedAt": "2026-09-04T11:32:42.402Z",
       "signalMatches": {},
       "sourceKind": "official_feed",
       "associationBasis": "unique_feed_link_from_official_website",
@@ -250,7 +250,7 @@ window.HALIFAX_WEBSITE_FEED_SIGNALS = {
       "feedUrl": "https://www.cafelunette.com/feed/",
       "mediaUrl": null,
       "publishedAt": "2026-03-26T15:51:56.000Z",
-      "observedAt": "2026-09-03T20:07:13.894Z",
+      "observedAt": "2026-09-04T11:32:36.140Z",
       "signalMatches": {},
       "sourceKind": "official_feed",
       "associationBasis": "unique_feed_link_from_official_website",
@@ -267,7 +267,7 @@ window.HALIFAX_WEBSITE_FEED_SIGNALS = {
       "feedUrl": "https://www.birdsnesthalifax.com/blog-feed.xml",
       "mediaUrl": "https://static.wixstatic.com/media/110dc9_acbbd34644e2428fbbf7a007c9b5cee6~mv2.jpeg/v1/fit/w_1000,h_1000,al_c,q_80/file.png",
       "publishedAt": "2026-03-03T14:50:36.000Z",
-      "observedAt": "2026-09-03T20:07:13.232Z",
+      "observedAt": "2026-09-04T11:32:36.137Z",
       "signalMatches": {},
       "sourceKind": "official_feed",
       "associationBasis": "unique_feed_link_from_official_website",
@@ -284,7 +284,7 @@ window.HALIFAX_WEBSITE_FEED_SIGNALS = {
       "feedUrl": "https://www.birdsnesthalifax.com/blog-feed.xml",
       "mediaUrl": "https://static.wixstatic.com/media/110dc9_cd4c69a5ab3045b99fb684bff2b14b12~mv2.jpeg/v1/fit/w_1000,h_960,al_c,q_80/file.png",
       "publishedAt": "2026-01-17T17:26:36.000Z",
-      "observedAt": "2026-09-03T20:07:13.232Z",
+      "observedAt": "2026-09-04T11:32:36.137Z",
       "signalMatches": {},
       "sourceKind": "official_feed",
       "associationBasis": "unique_feed_link_from_official_website",
@@ -303,7 +303,7 @@ window.HALIFAX_WEBSITE_FEED_SIGNALS = {
       "feedUrl": "https://www.cafelunette.com/feed/",
       "mediaUrl": null,
       "publishedAt": "2026-05-11T15:04:47.000Z",
-      "observedAt": "2026-09-03T20:07:13.894Z",
+      "observedAt": "2026-09-04T11:32:36.140Z",
       "signalMatches": {
         "openings": [
           "now open"
@@ -328,7 +328,7 @@ window.HALIFAX_WEBSITE_FEED_SIGNALS = {
       "feedUrl": "https://www.cafelunette.com/feed/",
       "mediaUrl": null,
       "publishedAt": "2026-04-28T18:12:21.000Z",
-      "observedAt": "2026-09-03T20:07:13.894Z",
+      "observedAt": "2026-09-04T11:32:36.140Z",
       "signalMatches": {
         "brunch": [
           "brunch"
@@ -349,7 +349,7 @@ window.HALIFAX_WEBSITE_FEED_SIGNALS = {
       "feedUrl": "https://www.birdsnesthalifax.com/blog-feed.xml",
       "mediaUrl": "https://static.wixstatic.com/media/110dc9_538c90ecfee14537aa62b59c533c2b01~mv2.jpeg/v1/fit/w_1000,h_1000,al_c,q_80/file.png",
       "publishedAt": "2026-04-02T11:40:44.000Z",
-      "observedAt": "2026-09-03T20:07:13.232Z",
+      "observedAt": "2026-09-04T11:32:36.137Z",
       "signalMatches": {
         "brunch": [
           "breakfast"
@@ -370,7 +370,7 @@ window.HALIFAX_WEBSITE_FEED_SIGNALS = {
       "feedUrl": "https://www.cafelunette.com/feed/",
       "mediaUrl": null,
       "publishedAt": "2026-04-01T19:30:03.000Z",
-      "observedAt": "2026-09-03T20:07:13.894Z",
+      "observedAt": "2026-09-04T11:32:36.140Z",
       "signalMatches": {
         "specials": [
           "offer",
@@ -407,5 +407,15 @@ window.HALIFAX_WEBSITE_FEED_SIGNALS = {
       "feedUrl": "https://afrite.ca/comments/feed/",
       "reason": "timeout"
     }
-  ]
-};
+  ],
+  "mergeState": {
+    "strategy": "carry_forward_previous_feed_posts_after_transient_live_crawl_miss",
+    "previousPosts": 15,
+    "currentPosts": 15,
+    "mergedPosts": 15,
+    "previousFeedsDiscovered": 138,
+    "currentFeedsDiscovered": 136,
+    "mergedFeedsDiscovered": 138
+  }
+}
+;

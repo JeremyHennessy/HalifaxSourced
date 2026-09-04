@@ -1,6 +1,6 @@
 # Halifax Sourced content quality report
 
-Generated: 2026-09-03T20:15:42.828Z
+Generated: 2026-09-04T12:01:43.689Z
 
 ## Summary
 
@@ -24,8 +24,8 @@ Generated: 2026-09-03T20:15:42.828Z
 - **venueResolvedEvents**: 140
 - **organizerResolvedEvents**: 166
 - **restaurantLinkedEvents**: 10
-- **sourceFailures**: 84
-- **unresolvedPlaceCandidates**: 331
+- **sourceFailures**: 87
+- **unresolvedPlaceCandidates**: 333
 - **nameOnlyPlaceReviews**: 41
 - **placeSourceConflicts**: 89
 - **blockedEventSources**: 0
@@ -36,18 +36,18 @@ Generated: 2026-09-03T20:15:42.828Z
 
 ## Freshness
 
-- **firstPartyRelationships**: <7d 1150; 7–30d 0; 30–90d 0; >90d 0; unknown 0
+- **firstPartyRelationships**: <7d 1156; 7–30d 0; 30–90d 0; >90d 0; unknown 0
 - **structuredPlaceFacts**: <7d 176; 7–30d 0; 30–90d 0; >90d 0; unknown 0
 - **patioDirectoryFacts**: <7d 75; 7–30d 0; 30–90d 0; >90d 0; unknown 0
 - **publicSpecialLeads**: <7d 143; 7–30d 0; 30–90d 0; >90d 0; unknown 0
-- **specials**: <7d 170; 7–30d 0; 30–90d 0; >90d 0; unknown 0
+- **specials**: <7d 169; 7–30d 1; 30–90d 0; >90d 0; unknown 0
 - **events**: <7d 192; 7–30d 0; 30–90d 0; >90d 0; unknown 0
 
 ## Review queues
 
 - Place source conflicts: 89
 - Name-only place matches: 41
-- Unresolved place candidates: 331
+- Unresolved place candidates: 333
 - Orphan special-source relationships: 51
 - Blocked event source adapters: 0
 - Event source adapters under review: 4
