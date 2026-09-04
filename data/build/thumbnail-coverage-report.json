@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-04T12:58:11.604Z",
+  "generatedAt": "2026-09-04T13:43:50.011Z",
   "sourceCommitSha": null,
   "definitions": {
     "approvedThumbnail": "A thumbnail candidate tied to an exact restaurant ID with approved review state and production-approved rights status.",
@@ -50,9 +50,9 @@
     "byExtractionMethod": {
       "approved_media_manifest": 107,
       "html_link_image": 350,
-      "html_img_content": 1799,
+      "html_img_content": 1798,
       "css_background_image": 343,
-      "declared_post_media": 147,
+      "declared_post_media": 148,
       "html_meta_image": 116,
       "jsonld_image": 54,
       "public_special_source_declared_image": 41,
@@ -60,7 +60,7 @@
     },
     "byPlatform": {
       "website_feed": 8,
-      "official_page": 139
+      "official_page": 140
     }
   },
   "queues": {
@@ -481,7 +481,7 @@
           "sourceKind": "official_page_thumbnail_candidate",
           "reviewState": "candidate_review",
           "rightsStatus": "requires_rights_review",
-          "confidence": "official_page_declared_remote_image"
+          "confidence": "official_page_source_media"
         }
       },
       {
@@ -6408,7 +6408,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "official_feed_media",
-        "observedAt": "2026-09-04T12:52:12.143Z",
+        "observedAt": "2026-09-04T13:39:13.555Z",
         "publishedAt": "2026-09-02T17:13:14.000Z"
       },
       {
@@ -6421,7 +6421,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "official_feed_media",
-        "observedAt": "2026-09-04T12:52:12.143Z",
+        "observedAt": "2026-09-04T13:39:13.555Z",
         "publishedAt": "2026-09-01T14:22:55.000Z"
       },
       {
@@ -6434,7 +6434,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "official_feed_media",
-        "observedAt": "2026-09-04T12:52:12.143Z",
+        "observedAt": "2026-09-04T13:39:13.555Z",
         "publishedAt": "2026-04-02T11:40:44.000Z"
       },
       {
@@ -6447,7 +6447,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "official_feed_media",
-        "observedAt": "2026-09-04T12:52:12.143Z",
+        "observedAt": "2026-09-04T13:39:13.555Z",
         "publishedAt": "2026-03-03T14:50:36.000Z"
       },
       {
@@ -6460,7 +6460,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "official_feed_media",
-        "observedAt": "2026-09-04T12:52:12.143Z",
+        "observedAt": "2026-09-04T13:39:13.555Z",
         "publishedAt": "2026-01-17T17:26:36.000Z"
       },
       {

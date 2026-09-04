@@ -1,6 +1,6 @@
 # Halifax Sourced content coverage baseline
 
-Generated: 2026-09-04T12:58:51.597Z
+Generated: 2026-09-04T13:43:50.216Z
 
 This report measures the currently committed production data layers. It is a content-completeness baseline, **not a restaurant quality or popularity rating**. Unknown data remains unknown; source leads are not converted into fabricated facts.
 
@@ -13,9 +13,9 @@ This report measures the currently committed production data layers. It is a con
 | Verified/reachable official website | 241 | 32.1% |
 | Public inspection match | 496 | 66.1% |
 | Menu link | 167 | 22.3% |
-| Verified menu link | 142 | 18.9% |
+| Verified menu link | 148 | 19.7% |
 | Special evidence | 106 | 14.1% |
-| Verified specials source | 42 | 5.6% |
+| Verified specials source | 45 | 6% |
 | Reservation link | 64 | 8.5% |
 | Online ordering link | 80 | 10.7% |
 | Event evidence | 48 | 6.4% |
@@ -62,7 +62,7 @@ Raw layers: 10 curated, 736 OpenStreetMap, 12 reviewed local-discovery records, 
 
 - Current/upcoming events: **192**
 - Sources represented: **15**
-- Next 7 days: **27**; next 30 days: **66**
+- Next 7 days: **25**; next 30 days: **64**
 - Ticket links: **192**; price information: **10**; explicitly free: **0**
 - Coordinates: **0**
 - Conservative exact venue-name → restaurant matches: **10**
@@ -115,10 +115,10 @@ Raw layers: 10 curated, 736 OpenStreetMap, 12 reviewed local-discovery records, 
 
 ## Source failures visible in the current data
 
-- officialWebsiteChecks: 64
-- firstPartyWebsiteDiscovery: 66
+- officialWebsiteChecks: 63
+- firstPartyWebsiteDiscovery: 65
 - verifiedSourcePages: 21
-- structuredRestaurantEvents: 9
+- structuredRestaurantEvents: 12
 - websiteFeeds: 3
 - socialApis: 3
 - cityEventSources: 0

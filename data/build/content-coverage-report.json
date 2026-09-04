@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-04T12:58:51.698Z",
+  "generatedAt": "2026-09-04T13:43:50.357Z",
   "sourceCommitSha": null,
   "baselineCommitHint": null,
   "definitions": {
@@ -30,9 +30,9 @@
     "withVerifiedOfficialWebsite": 241,
     "withInspectionMatch": 496,
     "withMenuLink": 167,
-    "withVerifiedMenuLink": 142,
+    "withVerifiedMenuLink": 148,
     "withSpecials": 153,
-    "withVerifiedSpecials": 42,
+    "withVerifiedSpecials": 45,
     "withReservationLink": 64,
     "withOnlineOrderingLink": 80,
     "withEventEvidence": 48,
@@ -82,7 +82,7 @@
     },
     "staleRestaurantRecords": 0,
     "publicSpecialSourceLayer": {
-      "generatedAt": "2026-09-04T12:46:37.916Z",
+      "generatedAt": "2026-09-04T13:32:30.604Z",
       "sourceFailures": 0,
       "total": 143,
       "resolved": 92,
@@ -95,7 +95,7 @@
       "withSourceImage": 68
     },
     "patioDirectoryLayer": {
-      "generatedAt": "2026-09-04T12:46:37.751Z",
+      "generatedAt": "2026-09-04T13:32:22.592Z",
       "sourceFailures": 0,
       "total": 75,
       "resolved": 47,
@@ -109,22 +109,21 @@
       "discoveryNameOnlyMerges": 2
     },
     "structuredFactLayer": {
-      "generatedAt": "2026-09-04T12:54:37.539Z",
-      "checkedPlaces": 229,
+      "generatedAt": "2026-09-04T13:24:35.360Z",
+      "checkedPlaces": 230,
       "sourceFailures": 3,
-      "records": 176,
-      "failures": 3,
+      "records": 177,
       "hours": 13,
       "phone": 78,
       "email": 10,
       "address": 31,
-      "features": 131,
-      "menus": 143,
-      "reservations": 55,
+      "features": 132,
+      "menus": 144,
+      "reservations": 56,
       "ordering": 78
     },
     "structuredSpecialLayer": {
-      "generatedAt": "2026-09-04T12:54:54.257Z",
+      "generatedAt": "2026-09-04T13:43:49.948Z",
       "count": 170,
       "verifiedCurrent": 49,
       "recurringVerify": 5,
@@ -139,9 +138,9 @@
     "verifiedOfficialWebsite": 32.1,
     "inspection": 66.1,
     "menu": 22.3,
-    "verifiedMenu": 18.9,
+    "verifiedMenu": 19.7,
     "specials": 20.4,
-    "verifiedSpecials": 5.6,
+    "verifiedSpecials": 6,
     "reservations": 8.5,
     "ordering": 10.7,
     "events": 6.4,
@@ -1191,7 +1190,7 @@
       ]
     },
     "reconciledFromAcceptedStructuredLayers": true,
-    "reconciledAt": "2026-09-04T12:58:51.697Z"
+    "reconciledAt": "2026-09-04T13:43:50.356Z"
   },
   "eventCoverage": {
     "currentCityEvents": 192,
@@ -1242,8 +1241,8 @@
     "canonicalRestaurantsWithStructuredUpcomingEvents": 2,
     "upcomingStructuredRestaurantEventRecords": 20,
     "expiredStructuredRestaurantEvents": 0,
-    "next7Days": 27,
-    "next30Days": 66
+    "next7Days": 25,
+    "next30Days": 64
   },
   "discoveryCoverage": {
     "directoryRecords": 701,
@@ -1252,10 +1251,10 @@
     "reviewedDiscoveredRestaurants": 12
   },
   "sourceFailures": {
-    "officialWebsiteChecks": 64,
-    "firstPartyWebsiteDiscovery": 66,
+    "officialWebsiteChecks": 63,
+    "firstPartyWebsiteDiscovery": 65,
     "verifiedSourcePages": 21,
-    "structuredRestaurantEvents": 9,
+    "structuredRestaurantEvents": 12,
     "websiteFeeds": 3,
     "socialApis": 3,
     "cityEventSources": 0,
