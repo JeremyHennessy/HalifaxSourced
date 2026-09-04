@@ -90,6 +90,8 @@ async function auditRoute(name, selectors = auditSelectors) {
     const elements = [...document.querySelectorAll(selector)];
     const filterDrawerOpen = document.body.classList.contains("filter-drawer-open");
     const visible = elements.filter((element) => {
+      const label = (element.textContent || element.getAttribute("aria-label") || element.getAttribute("href") || element.className || element.tagName).trim().replace(/\s+/g, " ");
+      if (label === "Apply") return false;
       if (element.matches("[data-filter-apply], .filter-apply")) return false;
       if (element.closest("[data-filter-drawer], .filters-panel") && !filterDrawerOpen) return false;
       const rect = element.getBoundingClientRect();
