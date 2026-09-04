@@ -1,0 +1,12 @@
+@media (max-width:640px){
+  .filters-panel[data-filter-drawer]{
+    bottom:var(--mobile-tabbar-h)!important;
+    height:calc(100dvh - var(--mobile-tabbar-h))!important;
+    max-height:calc(100dvh - var(--mobile-tabbar-h))!important;
+    padding-bottom:calc(18px + env(safe-area-inset-bottom))!important;
+  }
+
+  .filters-panel[data-filter-drawer] .filter-apply{
+    margin-bottom:0;
+  }
+}
