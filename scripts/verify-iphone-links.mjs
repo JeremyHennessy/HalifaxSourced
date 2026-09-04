@@ -68,8 +68,7 @@ const auditSelectors = [
   "[data-event-category]",
   "[data-event-window]",
   "[data-save-event-id]",
-  "[data-event-calendar]",
-  "[data-filter-apply]"
+  "[data-event-calendar]"
 ];
 
 const moreSheetSelectors = [
