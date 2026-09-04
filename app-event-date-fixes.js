@@ -64,6 +64,29 @@
     return startA - startB || String(a.title || "").localeCompare(String(b.title || ""));
   }
 
+  function eventDateWindowRange(windowValue, todayParts = halifaxDateParts(new Date())) {
+    const value = String(windowValue || "all");
+    if (value === "all") return null;
+    if (!todayParts) return null;
+    const todayKey = formatPartsKey(todayParts);
+
+    if (value === "today") return { startKey: todayKey, endKey: todayKey };
+
+    if (value === "weekend") {
+      const localDate = new Date(Date.UTC(todayParts.year, todayParts.month - 1, todayParts.day));
+      const weekday = localDate.getUTCDay();
+      const toFriday = weekday === 5 ? 0 : weekday === 6 ? -1 : weekday === 0 ? -2 : 5 - weekday;
+      const friday = addDaysToHalifaxParts(todayParts, toFriday);
+      const sunday = addDaysToHalifaxParts(friday, 2);
+      return { startKey: formatPartsKey(friday), endKey: formatPartsKey(sunday) };
+    }
+
+    const days = Number(value);
+    if (!Number.isFinite(days) || days < 1) return null;
+    const end = addDaysToHalifaxParts(todayParts, days);
+    return { startKey: todayKey, endKey: formatPartsKey(end) };
+  }
+
   halifaxDateParts = function halifaxDatePartsWithDateOnly(value) {
     const dateOnly = parseDateOnlyParts(value);
     if (dateOnly) return dateOnly;
@@ -108,6 +131,14 @@
       const end = eventBoundaryKey(event, "endAt") || start;
       if (!start || !end) return false;
       return end >= startKey && start <= endKey;
+    };
+  }
+
+  if (typeof cityEventsForWindow === "function") {
+    cityEventsForWindow = function cityEventsForWindowWithInclusiveFutureDates(items) {
+      const range = eventDateWindowRange(cityEventState.windowDays);
+      if (!range) return items;
+      return items.filter((event) => eventOverlapsDateRange(event, range.startKey, range.endKey));
     };
   }
 
@@ -241,6 +272,7 @@
     eventOverlapsDateRange,
     eventStartInstant,
     eventEndInstant,
+    eventDateWindowRange,
     parseDateOnlyParts,
     structuredEventWhen
   };
