@@ -61,6 +61,15 @@ function bindCommonActions() {
   document.querySelector("[data-action='all-cuisines']")?.addEventListener("click", () => navigate("#explore"));
 }
 
+function hardenLeafletAttributionLinks(element) {
+  requestAnimationFrame(() => {
+    element?.querySelectorAll('.leaflet-control-attribution a[href^="http"]').forEach((link) => {
+      link.target = "_blank";
+      link.rel = "noreferrer";
+    });
+  });
+}
+
 function initMiniMap(items, element = document.querySelector("#exploreMiniMap")) {
   if (!element || !window.L || !element.isConnected || element._leaflet_id) return;
   const map = L.map(element, { attributionControl: false, zoomControl: false, dragging: false, scrollWheelZoom: false, doubleClickZoom: false, boxZoom: false, keyboard: false, tap: false, zoomAnimation: false, fadeAnimation: false, markerZoomAnimation: false }).setView(MAP_DEFAULT, 12, { animate: false });
@@ -74,6 +83,7 @@ function initMainMap(items) {
   if (!element || !window.L || !element.isConnected || element._leaflet_id) return;
   const map = L.map(element, { preferCanvas: true, zoomAnimation: false, fadeAnimation: false, markerZoomAnimation: false }).setView(MAP_DEFAULT, 12, { animate: false });
   L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", { maxZoom: 19, attribution: "&copy; OpenStreetMap contributors" }).addTo(map);
+  hardenLeafletAttributionLinks(element);
   const renderer = L.canvas({ padding: 0.5 });
   const layer = L.layerGroup().addTo(map);
   state.mapMarkers = new Map();
