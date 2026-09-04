@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-02T17:43:38.071Z",
+  "generatedAt": "2026-09-04T12:58:51.698Z",
   "sourceCommitSha": null,
   "baselineCommitHint": null,
   "definitions": {
@@ -27,26 +27,26 @@
     "locallyDiscoveredRestaurants": 12,
     "catalogMergedRestaurants": 740,
     "withOfficialWebsite": 302,
-    "withVerifiedOfficialWebsite": 240,
+    "withVerifiedOfficialWebsite": 241,
     "withInspectionMatch": 496,
-    "withMenuLink": 166,
-    "withVerifiedMenuLink": 137,
-    "withSpecials": 152,
-    "withVerifiedSpecials": 39,
-    "withReservationLink": 63,
+    "withMenuLink": 167,
+    "withVerifiedMenuLink": 142,
+    "withSpecials": 153,
+    "withVerifiedSpecials": 42,
+    "withReservationLink": 64,
     "withOnlineOrderingLink": 80,
-    "withEventEvidence": 47,
+    "withEventEvidence": 48,
     "withStructuredUpcomingEvents": 2,
-    "withAtLeastOneSocialProfile": 159,
-    "withAnySocialOrLinkHub": 159,
+    "withAtLeastOneSocialProfile": 160,
+    "withAnySocialOrLinkHub": 160,
     "socialByPlatform": {
-      "instagram": 147,
-      "facebook": 140,
-      "tiktok": 16,
+      "instagram": 148,
+      "facebook": 141,
+      "tiktok": 18,
       "threads": 0,
       "x": 65,
       "youtube": 13,
-      "linkedin": 6,
+      "linkedin": 8,
       "bluesky": 2,
       "pinterest": 3,
       "snapchat": 0,
@@ -64,7 +64,7 @@
     "withCuisineClassification": 750,
     "withAccessibilityInformation": 229,
     "withPatioInformation": 81,
-    "withUsableMedia": 73,
+    "withUsableMedia": 107,
     "lifecycle": {
       "active": 11,
       "temporarily_closed": 0,
@@ -82,7 +82,7 @@
     },
     "staleRestaurantRecords": 0,
     "publicSpecialSourceLayer": {
-      "generatedAt": "2026-09-01T23:43:35.605Z",
+      "generatedAt": "2026-09-04T12:46:37.916Z",
       "sourceFailures": 0,
       "total": 143,
       "resolved": 92,
@@ -95,7 +95,7 @@
       "withSourceImage": 68
     },
     "patioDirectoryLayer": {
-      "generatedAt": "2026-09-01T16:30:02.624Z",
+      "generatedAt": "2026-09-04T12:46:37.751Z",
       "sourceFailures": 0,
       "total": 75,
       "resolved": 47,
@@ -109,12 +109,13 @@
       "discoveryNameOnlyMerges": 2
     },
     "structuredFactLayer": {
-      "generatedAt": "2026-09-01T15:26:25.556Z",
+      "generatedAt": "2026-09-04T12:54:37.539Z",
       "checkedPlaces": 229,
-      "sourceFailures": 0,
+      "sourceFailures": 3,
       "records": 176,
+      "failures": 3,
       "hours": 13,
-      "phone": 77,
+      "phone": 78,
       "email": 10,
       "address": 31,
       "features": 131,
@@ -123,7 +124,7 @@
       "ordering": 78
     },
     "structuredSpecialLayer": {
-      "generatedAt": "2026-09-01T23:44:13.413Z",
+      "generatedAt": "2026-09-04T12:54:54.257Z",
       "count": 170,
       "verifiedCurrent": 49,
       "recurringVerify": 5,
@@ -135,17 +136,17 @@
   },
   "restaurantCoveragePercent": {
     "officialWebsite": 40.3,
-    "verifiedOfficialWebsite": 32,
+    "verifiedOfficialWebsite": 32.1,
     "inspection": 66.1,
-    "menu": 22.1,
-    "verifiedMenu": 18.3,
-    "specials": 20.3,
-    "verifiedSpecials": 5.2,
-    "reservations": 8.4,
+    "menu": 22.3,
+    "verifiedMenu": 18.9,
+    "specials": 20.4,
+    "verifiedSpecials": 5.6,
+    "reservations": 8.5,
     "ordering": 10.7,
-    "events": 6.3,
+    "events": 6.4,
     "structuredUpcomingEvents": 0.3,
-    "social": 21.2,
+    "social": 21.3,
     "phone": 37.1,
     "hours": 32.7,
     "coordinates": 98.5,
@@ -153,20 +154,20 @@
     "cuisine": 100,
     "accessibility": 30.5,
     "patio": 10.8,
-    "media": 9.7,
+    "media": 14.3,
     "linkHub": 0
   },
   "socialAudit": {
-    "placesWithSocial": 159,
+    "placesWithSocial": 160,
     "placesWithLinkHub": 0,
     "platformPlaceCounts": {
-      "instagram": 147,
-      "facebook": 140,
-      "tiktok": 16,
+      "instagram": 148,
+      "facebook": 141,
+      "tiktok": 18,
       "threads": 0,
       "x": 65,
       "youtube": 13,
-      "linkedin": 6,
+      "linkedin": 8,
       "bluesky": 2,
       "pinterest": 3,
       "snapchat": 0,
@@ -176,13 +177,13 @@
       "campsite": 0,
       "bento": 0
     },
-    "profileAssociations": 413,
-    "sharedProfileKeys": 39,
+    "profileAssociations": 419,
+    "sharedProfileKeys": 41,
     "sharedBrandOnlyPlaces": 32,
     "candidatePlacesAwaitingVerification": 0,
     "staleSocialVerificationPlaces": 0,
     "noWebsitePlaces": 448,
-    "websiteButNoSocialPlaces": 145,
+    "websiteButNoSocialPlaces": 144,
     "priorityGapQueue": {
       "websiteButNoSocial": [
         {
@@ -224,11 +225,6 @@
           "id": "osm-node-267592735-bluenose-ii",
           "name": "Bluenose II",
           "website": "https://www.bluenoseii.ca/"
-        },
-        {
-          "id": "osm-node-4420916900-board-room-game-cafe",
-          "name": "Board Room Game Cafe",
-          "website": "http://boardroomgames.ca/"
         },
         {
           "id": "osm-node-11752691591-bramble-cafe",
@@ -684,6 +680,11 @@
           "id": "osm-node-1672879768-starbucks",
           "name": "Starbucks",
           "website": "https://www.starbucks.ca/store-locator/store/6149-147151/5554-kaye-street-5554-kaye-street-halifax-ns-b-3-k-1-y-5-ca"
+        },
+        {
+          "id": "osm-node-2702731868-starbucks",
+          "name": "Starbucks",
+          "website": "https://www.starbucks.ca/store-locator/store/4086-140770/20-parkland-dr-20-parkland-dr-halifax-ns-b-3-s-1-p-1-ca"
         }
       ],
       "noWebsite": [
@@ -1190,85 +1191,86 @@
       ]
     },
     "reconciledFromAcceptedStructuredLayers": true,
-    "reconciledAt": "2026-09-02T17:43:38.071Z"
+    "reconciledAt": "2026-09-04T12:58:51.697Z"
   },
   "eventCoverage": {
-    "currentCityEvents": 191,
+    "currentCityEvents": 192,
     "allStoredCityEvents": 192,
     "cityEventSources": 15,
     "bySource": {
       "Tourism Nova Scotia Events": 23,
       "Halifax Public Libraries": 1,
       "Alderney Landing": 3,
-      "Bedford Public Library": 6,
-      "Woodlawn Public Library": 6,
       "Alderney Gate Public Library": 7,
       "The Carleton": 10,
-      "Scotiabank Centre": 31,
-      "Light House Arts Centre": 17,
       "HFX Wanderers 2026 Home Schedule": 5,
+      "Bedford Public Library": 6,
+      "Woodlawn Public Library": 6,
+      "Scotiabank Centre": 30,
       "Halifax Convention Centre": 8,
+      "Light House Arts Centre": 18,
+      "Symphony Nova Scotia": 36,
       "Halifax Tides 2026 Home Schedule": 4,
       "Halifax Mooseheads Home Schedule": 32,
-      "Symphony Nova Scotia": 35,
       "Neptune Theatre": 3
     },
     "byCategory": {
-      "Arts": 42,
+      "Arts": 44,
       "Comedy": 4,
       "Sports": 61,
-      "Festivals": 17,
+      "Festivals": 18,
       "Community": 29,
-      "Outdoor": 2,
-      "Music": 58,
+      "Markets": 1,
+      "Music": 57,
+      "Outdoor": 1,
       "Food & Drink": 4,
       "Other": 2
     },
     "byMunicipality": {
-      "Halifax": 169,
+      "Halifax": 170,
       "Dartmouth": 16,
       "Bedford": 6
     },
     "withVenueRestaurantNameMatch": 10,
     "withCoordinates": 0,
-    "withTicketLink": 191,
-    "withPrice": 11,
+    "withTicketLink": 192,
+    "withPrice": 10,
     "freeEvents": 0,
     "duplicateEventCount": 0,
-    "structuredRestaurantEvents": 21,
+    "structuredRestaurantEvents": 20,
     "structuredUpcomingRestaurantEvents": 20,
     "canonicalRestaurantsWithStructuredUpcomingEvents": 2,
     "upcomingStructuredRestaurantEventRecords": 20,
-    "expiredStructuredRestaurantEvents": 1,
+    "expiredStructuredRestaurantEvents": 0,
     "next7Days": 27,
-    "next30Days": 62
+    "next30Days": 66
   },
   "discoveryCoverage": {
-    "directoryRecords": 698,
-    "directoryNewToCatalog": 552,
+    "directoryRecords": 701,
+    "directoryNewToCatalog": 549,
     "openingWatchLeads": 12,
     "reviewedDiscoveredRestaurants": 12
   },
   "sourceFailures": {
-    "officialWebsiteChecks": 63,
-    "firstPartyWebsiteDiscovery": 64,
-    "verifiedSourcePages": 22,
+    "officialWebsiteChecks": 64,
+    "firstPartyWebsiteDiscovery": 66,
+    "verifiedSourcePages": 21,
     "structuredRestaurantEvents": 9,
-    "websiteFeeds": 2,
+    "websiteFeeds": 3,
     "socialApis": 3,
     "cityEventSources": 0,
     "openingWatchSources": 0,
     "restaurantDirectorySources": 0,
     "publicSpecialSources": 0,
     "patioDirectorySources": 0,
-    "structuredPlaceFacts": 0
+    "structuredPlaceFacts": 3
   },
   "credentials": {
     "facebook": "missing",
     "instagram": "missing"
   },
   "unresolved": {
-    "sharedSocialAssociations": 39,
+    "sharedSocialAssociations": 41,
     "possibleDuplicateCurrentEvents": 0,
     "staleRestaurantRecords": 0,
     "unknownFreshnessRestaurantRecords": 0

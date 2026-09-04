@@ -1,10 +1,10 @@
 window.HALIFAX_CONTENT_QUALITY_REPORT = {
   "version": 2,
-  "generatedAt": "2026-09-04T12:12:31.090Z",
-  "coverageReportGeneratedAt": "2026-09-02T17:43:38.071Z",
+  "generatedAt": "2026-09-04T13:02:03.053Z",
+  "coverageReportGeneratedAt": "2026-09-04T12:58:51.698Z",
   "summary": {
     "canonicalPlaces": 750,
-    "placesWithSocial": 159,
+    "placesWithSocial": 160,
     "structuredPlaceFactRecords": 176,
     "patioDirectoryRecords": 75,
     "patioDirectoryResolved": 47,
@@ -20,10 +20,10 @@ window.HALIFAX_CONTENT_QUALITY_REPORT = {
     "verifiedCurrentSpecials": 49,
     "orphanSpecialSources": 51,
     "cityEvents": 192,
-    "venueResolvedEvents": 140,
+    "venueResolvedEvents": 139,
     "organizerResolvedEvents": 166,
     "restaurantLinkedEvents": 10,
-    "sourceFailures": 87,
+    "sourceFailures": 69,
     "unresolvedPlaceCandidates": 333,
     "nameOnlyPlaceReviews": 41,
     "placeSourceConflicts": 89,
@@ -31,11 +31,11 @@ window.HALIFAX_CONTENT_QUALITY_REPORT = {
     "eventSourcesInAdapterReview": 4,
     "brokenUrls": 8,
     "restrictedUrls": 4,
-    "transientUrlFailures": 34
+    "transientUrlFailures": 40
   },
   "freshness": {
     "firstPartyRelationships": {
-      "lt7": 1156,
+      "lt7": 1162,
       "d7_30": 0,
       "d30_90": 0,
       "gt90": 0,
@@ -7951,7 +7951,7 @@ window.HALIFAX_CONTENT_QUALITY_REPORT = {
         "title": "Dine Around 2026: Terra Cafe Lunch Combo",
         "sourceUrl": "https://discoverhalifaxns.com/dinearound/menu/anemone-dining-dine-around-menu/?menu=terra-cafe-lunch-combo",
         "sourceType": "public_directory_special_lead",
-        "observedAt": "2026-09-03T20:01:16.791Z",
+        "observedAt": "2026-09-04T12:46:37.916Z",
         "verifiedAt": null,
         "reason": "restaurant_id_not_in_canonical_catalog"
       },
@@ -7964,7 +7964,7 @@ window.HALIFAX_CONTENT_QUALITY_REPORT = {
         "title": "Décadence After Dark",
         "sourceUrl": "https://cafelunette.ca/",
         "sourceType": "public_directory_special_lead",
-        "observedAt": "2026-09-03T20:01:16.791Z",
+        "observedAt": "2026-09-04T12:46:37.916Z",
         "verifiedAt": null,
         "reason": "restaurant_id_not_in_canonical_catalog"
       },
@@ -7977,7 +7977,7 @@ window.HALIFAX_CONTENT_QUALITY_REPORT = {
         "title": "Apéro Hour",
         "sourceUrl": "https://cafelunette.ca/",
         "sourceType": "public_directory_special_lead",
-        "observedAt": "2026-09-03T20:01:16.791Z",
+        "observedAt": "2026-09-04T12:46:37.916Z",
         "verifiedAt": null,
         "reason": "restaurant_id_not_in_canonical_catalog"
       },
@@ -7990,7 +7990,7 @@ window.HALIFAX_CONTENT_QUALITY_REPORT = {
         "title": "Cheesy Penne Bolognese $7 tax-in",
         "sourceUrl": "https://www.downtowndartmouth.ca/foodcrawl",
         "sourceType": "public_directory_special_lead",
-        "observedAt": "2026-09-03T20:01:16.791Z",
+        "observedAt": "2026-09-04T12:46:37.916Z",
         "verifiedAt": null,
         "reason": "restaurant_id_not_in_canonical_catalog"
       },
@@ -8003,7 +8003,7 @@ window.HALIFAX_CONTENT_QUALITY_REPORT = {
         "title": "Assorted Cookies 6pcs $5",
         "sourceUrl": "https://www.downtowndartmouth.ca/foodcrawl",
         "sourceType": "public_directory_special_lead",
-        "observedAt": "2026-09-03T20:01:16.791Z",
+        "observedAt": "2026-09-04T12:46:37.916Z",
         "verifiedAt": null,
         "reason": "restaurant_id_not_in_canonical_catalog"
       },
@@ -8016,7 +8016,7 @@ window.HALIFAX_CONTENT_QUALITY_REPORT = {
         "title": "Happy Hour",
         "sourceUrl": "https://chop.ca/locations/halifax/menu",
         "sourceType": "public_directory_special_lead",
-        "observedAt": "2026-09-03T20:01:16.791Z",
+        "observedAt": "2026-09-04T12:46:37.916Z",
         "verifiedAt": null,
         "reason": "restaurant_id_not_in_canonical_catalog"
       },
@@ -8029,7 +8029,7 @@ window.HALIFAX_CONTENT_QUALITY_REPORT = {
         "title": "Dine Around 2026: 3 Course Prix Fixe Menu $40",
         "sourceUrl": "https://discoverhalifaxns.com/dinearound/menu/chop-steakhouse-bar-dine-around-menu/?menu=3-course-prix-fixe-menu-40",
         "sourceType": "public_directory_special_lead",
-        "observedAt": "2026-09-03T20:01:16.791Z",
+        "observedAt": "2026-09-04T12:46:37.916Z",
         "verifiedAt": null,
         "reason": "restaurant_id_not_in_canonical_catalog"
       },
@@ -8042,7 +8042,7 @@ window.HALIFAX_CONTENT_QUALITY_REPORT = {
         "title": "Dine Around 2026: 3 Course Prix Fixe Menu $60",
         "sourceUrl": "https://discoverhalifaxns.com/dinearound/menu/chop-steakhouse-bar-dine-around-menu/?menu=3-course-prix-fixe-menu-60",
         "sourceType": "public_directory_special_lead",
-        "observedAt": "2026-09-03T20:01:16.791Z",
+        "observedAt": "2026-09-04T12:46:37.916Z",
         "verifiedAt": null,
         "reason": "restaurant_id_not_in_canonical_catalog"
       },
@@ -8055,7 +8055,7 @@ window.HALIFAX_CONTENT_QUALITY_REPORT = {
         "title": "8 Gourmet Cookie Flavours $3-$4",
         "sourceUrl": "https://www.downtowndartmouth.ca/foodcrawl",
         "sourceType": "public_directory_special_lead",
-        "observedAt": "2026-09-03T20:01:16.791Z",
+        "observedAt": "2026-09-04T12:46:37.916Z",
         "verifiedAt": null,
         "reason": "restaurant_id_not_in_canonical_catalog"
       },
@@ -8068,7 +8068,7 @@ window.HALIFAX_CONTENT_QUALITY_REPORT = {
         "title": "Affogatos $6.50",
         "sourceUrl": "https://www.downtowndartmouth.ca/foodcrawl",
         "sourceType": "public_directory_special_lead",
-        "observedAt": "2026-09-03T20:01:16.791Z",
+        "observedAt": "2026-09-04T12:46:37.916Z",
         "verifiedAt": null,
         "reason": "restaurant_id_not_in_canonical_catalog"
       },
@@ -8081,7 +8081,7 @@ window.HALIFAX_CONTENT_QUALITY_REPORT = {
         "title": "Happy Hour",
         "sourceUrl": "https://www.eliotandvine.com/",
         "sourceType": "public_directory_special_lead",
-        "observedAt": "2026-09-03T20:01:16.791Z",
+        "observedAt": "2026-09-04T12:46:37.916Z",
         "verifiedAt": null,
         "reason": "restaurant_id_not_in_canonical_catalog"
       },
@@ -8094,7 +8094,7 @@ window.HALIFAX_CONTENT_QUALITY_REPORT = {
         "title": "Nacho Cheese Fries (GF) $8 tax-in",
         "sourceUrl": "https://www.downtowndartmouth.ca/foodcrawl",
         "sourceType": "public_directory_special_lead",
-        "observedAt": "2026-09-03T20:01:16.791Z",
+        "observedAt": "2026-09-04T12:46:37.916Z",
         "verifiedAt": null,
         "reason": "restaurant_id_not_in_canonical_catalog"
       },
@@ -8107,7 +8107,7 @@ window.HALIFAX_CONTENT_QUALITY_REPORT = {
         "title": "Dine Around 2026: Harbourstone Dine Around 2026",
         "sourceUrl": "https://discoverhalifaxns.com/dinearound/menu/harbourstone-dine-around-2026/?menu=harbourstone-dine-around-2026",
         "sourceType": "public_directory_special_lead",
-        "observedAt": "2026-09-03T20:01:16.791Z",
+        "observedAt": "2026-09-04T12:46:37.916Z",
         "verifiedAt": null,
         "reason": "restaurant_id_not_in_canonical_catalog"
       },
@@ -8120,7 +8120,7 @@ window.HALIFAX_CONTENT_QUALITY_REPORT = {
         "title": "Happy Hour",
         "sourceUrl": "https://www.jacobslounge.com/",
         "sourceType": "public_directory_special_lead",
-        "observedAt": "2026-09-03T20:01:16.791Z",
+        "observedAt": "2026-09-04T12:46:37.916Z",
         "verifiedAt": null,
         "reason": "restaurant_id_not_in_canonical_catalog"
       },
@@ -8133,7 +8133,7 @@ window.HALIFAX_CONTENT_QUALITY_REPORT = {
         "title": "Wing Night",
         "sourceUrl": "https://www.jacobslounge.com/",
         "sourceType": "public_directory_special_lead",
-        "observedAt": "2026-09-03T20:01:16.791Z",
+        "observedAt": "2026-09-04T12:46:37.916Z",
         "verifiedAt": null,
         "reason": "restaurant_id_not_in_canonical_catalog"
       },
@@ -8146,7 +8146,7 @@ window.HALIFAX_CONTENT_QUALITY_REPORT = {
         "title": "Handheld Charcuterie Boats $7",
         "sourceUrl": "https://www.downtowndartmouth.ca/foodcrawl",
         "sourceType": "public_directory_special_lead",
-        "observedAt": "2026-09-03T20:01:16.791Z",
+        "observedAt": "2026-09-04T12:46:37.916Z",
         "verifiedAt": null,
         "reason": "restaurant_id_not_in_canonical_catalog"
       },
@@ -8159,7 +8159,7 @@ window.HALIFAX_CONTENT_QUALITY_REPORT = {
         "title": "Larry's Cubano Sliders $5",
         "sourceUrl": "https://www.downtowndartmouth.ca/foodcrawl",
         "sourceType": "public_directory_special_lead",
-        "observedAt": "2026-09-03T20:01:16.791Z",
+        "observedAt": "2026-09-04T12:46:37.916Z",
         "verifiedAt": null,
         "reason": "restaurant_id_not_in_canonical_catalog"
       },
@@ -8172,7 +8172,7 @@ window.HALIFAX_CONTENT_QUALITY_REPORT = {
         "title": "Oyster Happy Hour",
         "sourceUrl": "https://www.littlefishoysterbar.ca/",
         "sourceType": "public_directory_special_lead",
-        "observedAt": "2026-09-03T20:01:16.791Z",
+        "observedAt": "2026-09-04T12:46:37.916Z",
         "verifiedAt": null,
         "reason": "restaurant_id_not_in_canonical_catalog"
       },
@@ -8185,7 +8185,7 @@ window.HALIFAX_CONTENT_QUALITY_REPORT = {
         "title": "Any pizza slice with pop $5",
         "sourceUrl": "https://www.downtowndartmouth.ca/foodcrawl",
         "sourceType": "public_directory_special_lead",
-        "observedAt": "2026-09-03T20:01:16.791Z",
+        "observedAt": "2026-09-04T12:46:37.916Z",
         "verifiedAt": null,
         "reason": "restaurant_id_not_in_canonical_catalog"
       },
@@ -8198,7 +8198,7 @@ window.HALIFAX_CONTENT_QUALITY_REPORT = {
         "title": "Dine Around 2026: Lot Six",
         "sourceUrl": "https://discoverhalifaxns.com/dinearound/menu/lot-six-bar-restaurant-lot-six/?menu=lot-six",
         "sourceType": "public_directory_special_lead",
-        "observedAt": "2026-09-03T20:01:16.791Z",
+        "observedAt": "2026-09-04T12:46:37.916Z",
         "verifiedAt": null,
         "reason": "restaurant_id_not_in_canonical_catalog"
       },
@@ -8211,7 +8211,7 @@ window.HALIFAX_CONTENT_QUALITY_REPORT = {
         "title": "Pasta Sample $5 tax-in",
         "sourceUrl": "https://www.downtowndartmouth.ca/foodcrawl",
         "sourceType": "public_directory_special_lead",
-        "observedAt": "2026-09-03T20:01:16.791Z",
+        "observedAt": "2026-09-04T12:46:37.916Z",
         "verifiedAt": null,
         "reason": "restaurant_id_not_in_canonical_catalog"
       },
@@ -8224,7 +8224,7 @@ window.HALIFAX_CONTENT_QUALITY_REPORT = {
         "title": "Cannoli $4 tax-in",
         "sourceUrl": "https://www.downtowndartmouth.ca/foodcrawl",
         "sourceType": "public_directory_special_lead",
-        "observedAt": "2026-09-03T20:01:16.791Z",
+        "observedAt": "2026-09-04T12:46:37.916Z",
         "verifiedAt": null,
         "reason": "restaurant_id_not_in_canonical_catalog"
       },
@@ -8237,7 +8237,7 @@ window.HALIFAX_CONTENT_QUALITY_REPORT = {
         "title": "Lemon Olive Oil Cake $3 tax-in",
         "sourceUrl": "https://www.downtowndartmouth.ca/foodcrawl",
         "sourceType": "public_directory_special_lead",
-        "observedAt": "2026-09-03T20:01:16.791Z",
+        "observedAt": "2026-09-04T12:46:37.916Z",
         "verifiedAt": null,
         "reason": "restaurant_id_not_in_canonical_catalog"
       },
@@ -8250,7 +8250,7 @@ window.HALIFAX_CONTENT_QUALITY_REPORT = {
         "title": "Dine Around 2026: Eat Yassa With Mary $20",
         "sourceUrl": "https://discoverhalifaxns.com/dinearound/menu/marys-african-cuisine-eat-yassa-with-mary/?menu=eat-yassa-with-mary-20",
         "sourceType": "public_directory_special_lead",
-        "observedAt": "2026-09-03T20:01:16.791Z",
+        "observedAt": "2026-09-04T12:46:37.916Z",
         "verifiedAt": null,
         "reason": "restaurant_id_not_in_canonical_catalog"
       },
@@ -8263,7 +8263,7 @@ window.HALIFAX_CONTENT_QUALITY_REPORT = {
         "title": "Tiramisu Cupcake $4 tax-in",
         "sourceUrl": "https://www.downtowndartmouth.ca/foodcrawl",
         "sourceType": "public_directory_special_lead",
-        "observedAt": "2026-09-03T20:01:16.791Z",
+        "observedAt": "2026-09-04T12:46:37.916Z",
         "verifiedAt": null,
         "reason": "restaurant_id_not_in_canonical_catalog"
       },
@@ -8276,7 +8276,7 @@ window.HALIFAX_CONTENT_QUALITY_REPORT = {
         "title": "Half Price Appetizers",
         "sourceUrl": "https://www.nichelounge.com/happy-hour",
         "sourceType": "public_directory_special_lead",
-        "observedAt": "2026-09-03T20:01:16.791Z",
+        "observedAt": "2026-09-04T12:46:37.916Z",
         "verifiedAt": null,
         "reason": "restaurant_id_not_in_canonical_catalog"
       },
@@ -8289,7 +8289,7 @@ window.HALIFAX_CONTENT_QUALITY_REPORT = {
         "title": "Happy Hour",
         "sourceUrl": "https://www.nichelounge.com/happy-hour",
         "sourceType": "public_directory_special_lead",
-        "observedAt": "2026-09-03T20:01:16.791Z",
+        "observedAt": "2026-09-04T12:46:37.916Z",
         "verifiedAt": null,
         "reason": "restaurant_id_not_in_canonical_catalog"
       },
@@ -8302,7 +8302,7 @@ window.HALIFAX_CONTENT_QUALITY_REPORT = {
         "title": "Dine Around 2026: 3 Course Meal For $40",
         "sourceUrl": "https://discoverhalifaxns.com/dinearound/menu/niche-lounge-dine-around-menu/?menu=3-course-meal-for-40",
         "sourceType": "public_directory_special_lead",
-        "observedAt": "2026-09-03T20:01:16.791Z",
+        "observedAt": "2026-09-04T12:46:37.916Z",
         "verifiedAt": null,
         "reason": "restaurant_id_not_in_canonical_catalog"
       },
@@ -8315,7 +8315,7 @@ window.HALIFAX_CONTENT_QUALITY_REPORT = {
         "title": "Flight Night",
         "sourceUrl": "https://obladee.ca/",
         "sourceType": "public_directory_special_lead",
-        "observedAt": "2026-09-03T20:01:16.791Z",
+        "observedAt": "2026-09-04T12:46:37.916Z",
         "verifiedAt": null,
         "reason": "restaurant_id_not_in_canonical_catalog"
       },
@@ -8328,7 +8328,7 @@ window.HALIFAX_CONTENT_QUALITY_REPORT = {
         "title": "Dine Around 2026: 3 Courses For $50 With Optional Wine Pairings For $35",
         "sourceUrl": "https://discoverhalifaxns.com/dinearound/menu/obladee-a-wine-bar-dine-around-menu/?menu=3-courses-for-50-with-optional-wine-pairings-for-35",
         "sourceType": "public_directory_special_lead",
-        "observedAt": "2026-09-03T20:01:16.791Z",
+        "observedAt": "2026-09-04T12:46:37.916Z",
         "verifiedAt": null,
         "reason": "restaurant_id_not_in_canonical_catalog"
       },
@@ -8341,7 +8341,7 @@ window.HALIFAX_CONTENT_QUALITY_REPORT = {
         "title": "Mushroom & Wild Ramp Slider $8",
         "sourceUrl": "https://www.downtowndartmouth.ca/foodcrawl",
         "sourceType": "public_directory_special_lead",
-        "observedAt": "2026-09-03T20:01:16.791Z",
+        "observedAt": "2026-09-04T12:46:37.916Z",
         "verifiedAt": null,
         "reason": "restaurant_id_not_in_canonical_catalog"
       },
@@ -8354,7 +8354,7 @@ window.HALIFAX_CONTENT_QUALITY_REPORT = {
         "title": "Rhubarb & Mint Spritz $8",
         "sourceUrl": "https://www.downtowndartmouth.ca/foodcrawl",
         "sourceType": "public_directory_special_lead",
-        "observedAt": "2026-09-03T20:01:16.791Z",
+        "observedAt": "2026-09-04T12:46:37.916Z",
         "verifiedAt": null,
         "reason": "restaurant_id_not_in_canonical_catalog"
       },
@@ -8367,7 +8367,7 @@ window.HALIFAX_CONTENT_QUALITY_REPORT = {
         "title": "Happy Hour",
         "sourceUrl": "https://pazzo.ca/",
         "sourceType": "public_directory_special_lead",
-        "observedAt": "2026-09-03T20:01:16.791Z",
+        "observedAt": "2026-09-04T12:46:37.916Z",
         "verifiedAt": null,
         "reason": "restaurant_id_not_in_canonical_catalog"
       },
@@ -8380,7 +8380,7 @@ window.HALIFAX_CONTENT_QUALITY_REPORT = {
         "title": "Happy Hour",
         "sourceUrl": "https://peacockwinebar.ca/",
         "sourceType": "public_directory_special_lead",
-        "observedAt": "2026-09-03T20:01:16.791Z",
+        "observedAt": "2026-09-04T12:46:37.916Z",
         "verifiedAt": null,
         "reason": "restaurant_id_not_in_canonical_catalog"
       },
@@ -8393,7 +8393,7 @@ window.HALIFAX_CONTENT_QUALITY_REPORT = {
         "title": "Dine Around 2026: Fondue For Two $60",
         "sourceUrl": "https://discoverhalifaxns.com/dinearound/menu/peacock-wine-bar-dine-around-2026/?menu=fondue-for-two-60",
         "sourceType": "public_directory_special_lead",
-        "observedAt": "2026-09-03T20:01:16.791Z",
+        "observedAt": "2026-09-04T12:46:37.916Z",
         "verifiedAt": null,
         "reason": "restaurant_id_not_in_canonical_catalog"
       },
@@ -8406,7 +8406,7 @@ window.HALIFAX_CONTENT_QUALITY_REPORT = {
         "title": "Dine Around 2026: $20 Poke Bowl Set",
         "sourceUrl": "https://discoverhalifaxns.com/dinearound/menu/poke-go-and-broth-house-dine-around-20226/?menu=20-poke-bowl-set",
         "sourceType": "public_directory_special_lead",
-        "observedAt": "2026-09-03T20:01:16.791Z",
+        "observedAt": "2026-09-04T12:46:37.916Z",
         "verifiedAt": null,
         "reason": "restaurant_id_not_in_canonical_catalog"
       },
@@ -8419,7 +8419,7 @@ window.HALIFAX_CONTENT_QUALITY_REPORT = {
         "title": "Dine Around 2026: $20 Ramen Value Set",
         "sourceUrl": "https://discoverhalifaxns.com/dinearound/menu/poke-go-and-broth-house-dine-around-20226/?menu=20-ramen-value-set",
         "sourceType": "public_directory_special_lead",
-        "observedAt": "2026-09-03T20:01:16.791Z",
+        "observedAt": "2026-09-04T12:46:37.916Z",
         "verifiedAt": null,
         "reason": "restaurant_id_not_in_canonical_catalog"
       },
@@ -8432,7 +8432,7 @@ window.HALIFAX_CONTENT_QUALITY_REPORT = {
         "title": "Dine Around 2026: $30 Ramen Combo For Two",
         "sourceUrl": "https://discoverhalifaxns.com/dinearound/menu/poke-go-and-broth-house-dine-around-20226/?menu=30-ramen-combo-for-two",
         "sourceType": "public_directory_special_lead",
-        "observedAt": "2026-09-03T20:01:16.791Z",
+        "observedAt": "2026-09-04T12:46:37.916Z",
         "verifiedAt": null,
         "reason": "restaurant_id_not_in_canonical_catalog"
       },
@@ -8445,7 +8445,7 @@ window.HALIFAX_CONTENT_QUALITY_REPORT = {
         "title": "All Day Happy Hour",
         "sourceUrl": "https://ragazzi.ca/",
         "sourceType": "public_directory_special_lead",
-        "observedAt": "2026-09-03T20:01:16.791Z",
+        "observedAt": "2026-09-04T12:46:37.916Z",
         "verifiedAt": null,
         "reason": "restaurant_id_not_in_canonical_catalog"
       },
@@ -8458,7 +8458,7 @@ window.HALIFAX_CONTENT_QUALITY_REPORT = {
         "title": "Dine Around 2026: 3 Course Meal For $50",
         "sourceUrl": "https://discoverhalifaxns.com/dinearound/menu/ragazzi-restobar-dine-around-menu-2/?menu=3-course-meal-for-50",
         "sourceType": "public_directory_special_lead",
-        "observedAt": "2026-09-03T20:01:16.791Z",
+        "observedAt": "2026-09-04T12:46:37.916Z",
         "verifiedAt": null,
         "reason": "restaurant_id_not_in_canonical_catalog"
       },
@@ -8471,7 +8471,7 @@ window.HALIFAX_CONTENT_QUALITY_REPORT = {
         "title": "Dine Around 2026: Award Winning Chocolate Tasting Experience",
         "sourceUrl": "https://discoverhalifaxns.com/dinearound/menu/rousseau-chocolatier-chocolate-tasting/?menu=award-winning-chocolate-tasting-experience",
         "sourceType": "public_directory_special_lead",
-        "observedAt": "2026-09-03T20:01:16.791Z",
+        "observedAt": "2026-09-04T12:46:37.916Z",
         "verifiedAt": null,
         "reason": "restaurant_id_not_in_canonical_catalog"
       },
@@ -8484,7 +8484,7 @@ window.HALIFAX_CONTENT_QUALITY_REPORT = {
         "title": "Happy Hour",
         "sourceUrl": "https://www.rcr.ca/",
         "sourceType": "public_directory_special_lead",
-        "observedAt": "2026-09-03T20:01:16.791Z",
+        "observedAt": "2026-09-04T12:46:37.916Z",
         "verifiedAt": null,
         "reason": "restaurant_id_not_in_canonical_catalog"
       },
@@ -8497,7 +8497,7 @@ window.HALIFAX_CONTENT_QUALITY_REPORT = {
         "title": "Half Grinder $8+tax",
         "sourceUrl": "https://www.downtowndartmouth.ca/foodcrawl",
         "sourceType": "public_directory_special_lead",
-        "observedAt": "2026-09-03T20:01:16.791Z",
+        "observedAt": "2026-09-04T12:46:37.916Z",
         "verifiedAt": null,
         "reason": "restaurant_id_not_in_canonical_catalog"
       },
@@ -8510,7 +8510,7 @@ window.HALIFAX_CONTENT_QUALITY_REPORT = {
         "title": "Chicken Bacon Ranch Stuff Puffs $7+tax",
         "sourceUrl": "https://www.downtowndartmouth.ca/foodcrawl",
         "sourceType": "public_directory_special_lead",
-        "observedAt": "2026-09-03T20:01:16.791Z",
+        "observedAt": "2026-09-04T12:46:37.916Z",
         "verifiedAt": null,
         "reason": "restaurant_id_not_in_canonical_catalog"
       },
@@ -8523,7 +8523,7 @@ window.HALIFAX_CONTENT_QUALITY_REPORT = {
         "title": "Oysters And Cava",
         "sourceUrl": "https://barringtonsteakhouse.ca/events/",
         "sourceType": "public_directory_special_lead",
-        "observedAt": "2026-09-03T20:01:16.791Z",
+        "observedAt": "2026-09-04T12:46:37.916Z",
         "verifiedAt": null,
         "reason": "restaurant_id_not_in_canonical_catalog"
       },
@@ -8536,7 +8536,7 @@ window.HALIFAX_CONTENT_QUALITY_REPORT = {
         "title": "Flash Fried Crispy Chicken Bites $8",
         "sourceUrl": "https://www.downtowndartmouth.ca/foodcrawl",
         "sourceType": "public_directory_special_lead",
-        "observedAt": "2026-09-03T20:01:16.791Z",
+        "observedAt": "2026-09-04T12:46:37.916Z",
         "verifiedAt": null,
         "reason": "restaurant_id_not_in_canonical_catalog"
       },
@@ -8549,7 +8549,7 @@ window.HALIFAX_CONTENT_QUALITY_REPORT = {
         "title": "Happy Hour",
         "sourceUrl": "https://thebrewerymarket.com/stores/the-brown-hound-public-house",
         "sourceType": "public_directory_special_lead",
-        "observedAt": "2026-09-03T20:01:16.791Z",
+        "observedAt": "2026-09-04T12:46:37.916Z",
         "verifiedAt": null,
         "reason": "restaurant_id_not_in_canonical_catalog"
       },
@@ -8562,7 +8562,7 @@ window.HALIFAX_CONTENT_QUALITY_REPORT = {
         "title": "Fire Dragon $7 tax-in",
         "sourceUrl": "https://www.downtowndartmouth.ca/foodcrawl",
         "sourceType": "public_directory_special_lead",
-        "observedAt": "2026-09-03T20:01:16.791Z",
+        "observedAt": "2026-09-04T12:46:37.916Z",
         "verifiedAt": null,
         "reason": "restaurant_id_not_in_canonical_catalog"
       },
@@ -8575,7 +8575,7 @@ window.HALIFAX_CONTENT_QUALITY_REPORT = {
         "title": "Dine Around 2026: Empanadas Dessert",
         "sourceUrl": "https://discoverhalifaxns.com/dinearound/menu/the-empanada-shop-authentically-chilean-dine-around-menu/?menu=empanadas-dessert",
         "sourceType": "public_directory_special_lead",
-        "observedAt": "2026-09-03T20:01:16.791Z",
+        "observedAt": "2026-09-04T12:46:37.916Z",
         "verifiedAt": null,
         "reason": "restaurant_id_not_in_canonical_catalog"
       },
@@ -8588,7 +8588,7 @@ window.HALIFAX_CONTENT_QUALITY_REPORT = {
         "title": "A selection of gluten free and vegan baked goods $5 and up",
         "sourceUrl": "https://www.downtowndartmouth.ca/foodcrawl",
         "sourceType": "public_directory_special_lead",
-        "observedAt": "2026-09-03T20:01:16.791Z",
+        "observedAt": "2026-09-04T12:46:37.916Z",
         "verifiedAt": null,
         "reason": "restaurant_id_not_in_canonical_catalog"
       },
@@ -8601,7 +8601,7 @@ window.HALIFAX_CONTENT_QUALITY_REPORT = {
         "title": "Pork Shoulder Taco $8",
         "sourceUrl": "https://www.downtowndartmouth.ca/foodcrawl",
         "sourceType": "public_directory_special_lead",
-        "observedAt": "2026-09-03T20:01:16.791Z",
+        "observedAt": "2026-09-04T12:46:37.916Z",
         "verifiedAt": null,
         "reason": "restaurant_id_not_in_canonical_catalog"
       }
@@ -8634,7 +8634,7 @@ window.HALIFAX_CONTENT_QUALITY_REPORT = {
         "sourceKind": "public_seasonal_dining_campaign",
         "sourceType": "public_directory_special_lead",
         "sourceStatus": "campaign_listed",
-        "observedAt": "2026-09-04T12:11:57.700Z",
+        "observedAt": "2026-09-04T12:46:37.916Z",
         "sourceUpdatedAt": "2026-08-25T08:01:03+00:00",
         "lastVerifiedAt": null,
         "reviewState": "needs_place_review",
@@ -8682,7 +8682,7 @@ window.HALIFAX_CONTENT_QUALITY_REPORT = {
         "sourceKind": "public_happy_hour_directory",
         "sourceType": "public_directory_special_lead",
         "sourceStatus": "Listed",
-        "observedAt": "2026-09-04T12:11:57.700Z",
+        "observedAt": "2026-09-04T12:46:37.916Z",
         "sourceUpdatedAt": "2026-08-01T19:14:27.870473+00:00",
         "lastVerifiedAt": "2026-08-01",
         "reviewState": "source_signal",
@@ -8734,7 +8734,7 @@ window.HALIFAX_CONTENT_QUALITY_REPORT = {
         "sourceKind": "public_happy_hour_directory",
         "sourceType": "public_directory_special_lead",
         "sourceStatus": "Listed",
-        "observedAt": "2026-09-04T12:11:57.700Z",
+        "observedAt": "2026-09-04T12:46:37.916Z",
         "sourceUpdatedAt": "2026-08-01T19:14:27.870473+00:00",
         "lastVerifiedAt": "2026-08-01",
         "reviewState": "source_signal",
@@ -8782,7 +8782,7 @@ window.HALIFAX_CONTENT_QUALITY_REPORT = {
         "sourceKind": "public_food_crawl_event",
         "sourceType": "public_directory_special_lead",
         "sourceStatus": "event_listed",
-        "observedAt": "2026-09-04T12:11:57.700Z",
+        "observedAt": "2026-09-04T12:46:37.916Z",
         "sourceUpdatedAt": null,
         "lastVerifiedAt": null,
         "reviewState": "needs_place_review",
@@ -8827,7 +8827,7 @@ window.HALIFAX_CONTENT_QUALITY_REPORT = {
         "sourceKind": "public_food_crawl_event",
         "sourceType": "public_directory_special_lead",
         "sourceStatus": "event_listed",
-        "observedAt": "2026-09-04T12:11:57.700Z",
+        "observedAt": "2026-09-04T12:46:37.916Z",
         "sourceUpdatedAt": null,
         "lastVerifiedAt": null,
         "reviewState": "needs_place_review",
@@ -8876,7 +8876,7 @@ window.HALIFAX_CONTENT_QUALITY_REPORT = {
         "sourceKind": "public_happy_hour_directory",
         "sourceType": "public_directory_special_lead",
         "sourceStatus": "Listed",
-        "observedAt": "2026-09-04T12:11:57.700Z",
+        "observedAt": "2026-09-04T12:46:37.916Z",
         "sourceUpdatedAt": "2026-08-01T19:14:27.870473+00:00",
         "lastVerifiedAt": "2026-08-01",
         "reviewState": "source_signal",
@@ -8917,7 +8917,7 @@ window.HALIFAX_CONTENT_QUALITY_REPORT = {
         "sourceKind": "public_seasonal_dining_campaign",
         "sourceType": "public_directory_special_lead",
         "sourceStatus": "campaign_listed",
-        "observedAt": "2026-09-04T12:11:57.700Z",
+        "observedAt": "2026-09-04T12:46:37.916Z",
         "sourceUpdatedAt": "2026-08-25T08:02:58+00:00",
         "lastVerifiedAt": null,
         "reviewState": "needs_place_review",
@@ -8961,7 +8961,7 @@ window.HALIFAX_CONTENT_QUALITY_REPORT = {
         "sourceKind": "public_seasonal_dining_campaign",
         "sourceType": "public_directory_special_lead",
         "sourceStatus": "campaign_listed",
-        "observedAt": "2026-09-04T12:11:57.700Z",
+        "observedAt": "2026-09-04T12:46:37.916Z",
         "sourceUpdatedAt": "2026-08-25T08:02:58+00:00",
         "lastVerifiedAt": null,
         "reviewState": "needs_place_review",
@@ -9009,7 +9009,7 @@ window.HALIFAX_CONTENT_QUALITY_REPORT = {
         "sourceKind": "public_food_crawl_event",
         "sourceType": "public_directory_special_lead",
         "sourceStatus": "event_listed",
-        "observedAt": "2026-09-04T12:11:57.700Z",
+        "observedAt": "2026-09-04T12:46:37.916Z",
         "sourceUpdatedAt": null,
         "lastVerifiedAt": null,
         "reviewState": "needs_place_review",
@@ -9054,7 +9054,7 @@ window.HALIFAX_CONTENT_QUALITY_REPORT = {
         "sourceKind": "public_food_crawl_event",
         "sourceType": "public_directory_special_lead",
         "sourceStatus": "event_listed",
-        "observedAt": "2026-09-04T12:11:57.700Z",
+        "observedAt": "2026-09-04T12:46:37.916Z",
         "sourceUpdatedAt": null,
         "lastVerifiedAt": null,
         "reviewState": "needs_place_review",
@@ -9103,7 +9103,7 @@ window.HALIFAX_CONTENT_QUALITY_REPORT = {
         "sourceKind": "public_happy_hour_directory",
         "sourceType": "public_directory_special_lead",
         "sourceStatus": "Listed",
-        "observedAt": "2026-09-04T12:11:57.700Z",
+        "observedAt": "2026-09-04T12:46:37.916Z",
         "sourceUpdatedAt": "2026-08-01T19:14:27.870473+00:00",
         "lastVerifiedAt": "2026-08-01",
         "reviewState": "source_signal",
@@ -9148,7 +9148,7 @@ window.HALIFAX_CONTENT_QUALITY_REPORT = {
         "sourceKind": "public_food_crawl_event",
         "sourceType": "public_directory_special_lead",
         "sourceStatus": "event_listed",
-        "observedAt": "2026-09-04T12:11:57.700Z",
+        "observedAt": "2026-09-04T12:46:37.916Z",
         "sourceUpdatedAt": null,
         "lastVerifiedAt": null,
         "reviewState": "needs_place_review",
@@ -9189,7 +9189,7 @@ window.HALIFAX_CONTENT_QUALITY_REPORT = {
         "sourceKind": "public_seasonal_dining_campaign",
         "sourceType": "public_directory_special_lead",
         "sourceStatus": "campaign_listed",
-        "observedAt": "2026-09-04T12:11:57.700Z",
+        "observedAt": "2026-09-04T12:46:37.916Z",
         "sourceUpdatedAt": "2026-08-25T08:06:44+00:00",
         "lastVerifiedAt": null,
         "reviewState": "needs_place_review",
@@ -9241,7 +9241,7 @@ window.HALIFAX_CONTENT_QUALITY_REPORT = {
         "sourceKind": "public_happy_hour_directory",
         "sourceType": "public_directory_special_lead",
         "sourceStatus": "Listed",
-        "observedAt": "2026-09-04T12:11:57.700Z",
+        "observedAt": "2026-09-04T12:46:37.916Z",
         "sourceUpdatedAt": "2026-08-01T19:14:27.870473+00:00",
         "lastVerifiedAt": "2026-08-01",
         "reviewState": "source_signal",
@@ -9284,7 +9284,7 @@ window.HALIFAX_CONTENT_QUALITY_REPORT = {
         "sourceKind": "public_happy_hour_directory",
         "sourceType": "public_directory_special_lead",
         "sourceStatus": "Listed",
-        "observedAt": "2026-09-04T12:11:57.700Z",
+        "observedAt": "2026-09-04T12:46:37.916Z",
         "sourceUpdatedAt": "2026-08-01T19:14:27.870473+00:00",
         "lastVerifiedAt": "2026-08-01",
         "reviewState": "source_signal",
@@ -9329,7 +9329,7 @@ window.HALIFAX_CONTENT_QUALITY_REPORT = {
         "sourceKind": "public_food_crawl_event",
         "sourceType": "public_directory_special_lead",
         "sourceStatus": "event_listed",
-        "observedAt": "2026-09-04T12:11:57.700Z",
+        "observedAt": "2026-09-04T12:46:37.916Z",
         "sourceUpdatedAt": null,
         "lastVerifiedAt": null,
         "reviewState": "needs_place_review",
@@ -9374,7 +9374,7 @@ window.HALIFAX_CONTENT_QUALITY_REPORT = {
         "sourceKind": "public_food_crawl_event",
         "sourceType": "public_directory_special_lead",
         "sourceStatus": "event_listed",
-        "observedAt": "2026-09-04T12:11:57.700Z",
+        "observedAt": "2026-09-04T12:46:37.916Z",
         "sourceUpdatedAt": null,
         "lastVerifiedAt": null,
         "reviewState": "needs_place_review",
@@ -9423,7 +9423,7 @@ window.HALIFAX_CONTENT_QUALITY_REPORT = {
         "sourceKind": "public_happy_hour_directory",
         "sourceType": "public_directory_special_lead",
         "sourceStatus": "Listed",
-        "observedAt": "2026-09-04T12:11:57.700Z",
+        "observedAt": "2026-09-04T12:46:37.916Z",
         "sourceUpdatedAt": "2026-08-01T19:14:27.870473+00:00",
         "lastVerifiedAt": "2026-08-01",
         "reviewState": "source_signal",
@@ -9468,7 +9468,7 @@ window.HALIFAX_CONTENT_QUALITY_REPORT = {
         "sourceKind": "public_food_crawl_event",
         "sourceType": "public_directory_special_lead",
         "sourceStatus": "event_listed",
-        "observedAt": "2026-09-04T12:11:57.700Z",
+        "observedAt": "2026-09-04T12:46:37.916Z",
         "sourceUpdatedAt": null,
         "lastVerifiedAt": null,
         "reviewState": "needs_place_review",
@@ -9509,7 +9509,7 @@ window.HALIFAX_CONTENT_QUALITY_REPORT = {
         "sourceKind": "public_seasonal_dining_campaign",
         "sourceType": "public_directory_special_lead",
         "sourceStatus": "campaign_listed",
-        "observedAt": "2026-09-04T12:11:57.700Z",
+        "observedAt": "2026-09-04T12:46:37.916Z",
         "sourceUpdatedAt": "2026-08-25T08:08:29+00:00",
         "lastVerifiedAt": null,
         "reviewState": "needs_place_review",
@@ -9557,7 +9557,7 @@ window.HALIFAX_CONTENT_QUALITY_REPORT = {
         "sourceKind": "public_food_crawl_event",
         "sourceType": "public_directory_special_lead",
         "sourceStatus": "event_listed",
-        "observedAt": "2026-09-04T12:11:57.700Z",
+        "observedAt": "2026-09-04T12:46:37.916Z",
         "sourceUpdatedAt": null,
         "lastVerifiedAt": null,
         "reviewState": "needs_place_review",
@@ -9602,7 +9602,7 @@ window.HALIFAX_CONTENT_QUALITY_REPORT = {
         "sourceKind": "public_food_crawl_event",
         "sourceType": "public_directory_special_lead",
         "sourceStatus": "event_listed",
-        "observedAt": "2026-09-04T12:11:57.700Z",
+        "observedAt": "2026-09-04T12:46:37.916Z",
         "sourceUpdatedAt": null,
         "lastVerifiedAt": null,
         "reviewState": "needs_place_review",
@@ -9647,7 +9647,7 @@ window.HALIFAX_CONTENT_QUALITY_REPORT = {
         "sourceKind": "public_food_crawl_event",
         "sourceType": "public_directory_special_lead",
         "sourceStatus": "event_listed",
-        "observedAt": "2026-09-04T12:11:57.700Z",
+        "observedAt": "2026-09-04T12:46:37.916Z",
         "sourceUpdatedAt": null,
         "lastVerifiedAt": null,
         "reviewState": "needs_place_review",
@@ -9688,7 +9688,7 @@ window.HALIFAX_CONTENT_QUALITY_REPORT = {
         "sourceKind": "public_seasonal_dining_campaign",
         "sourceType": "public_directory_special_lead",
         "sourceStatus": "campaign_listed",
-        "observedAt": "2026-09-04T12:11:57.700Z",
+        "observedAt": "2026-09-04T12:46:37.916Z",
         "sourceUpdatedAt": "2026-08-25T08:08:47+00:00",
         "lastVerifiedAt": null,
         "reviewState": "needs_place_review",
@@ -9736,7 +9736,7 @@ window.HALIFAX_CONTENT_QUALITY_REPORT = {
         "sourceKind": "public_food_crawl_event",
         "sourceType": "public_directory_special_lead",
         "sourceStatus": "event_listed",
-        "observedAt": "2026-09-04T12:11:57.700Z",
+        "observedAt": "2026-09-04T12:46:37.916Z",
         "sourceUpdatedAt": null,
         "lastVerifiedAt": null,
         "reviewState": "needs_place_review",
@@ -9783,7 +9783,7 @@ window.HALIFAX_CONTENT_QUALITY_REPORT = {
         "sourceKind": "public_happy_hour_directory",
         "sourceType": "public_directory_special_lead",
         "sourceStatus": "Verified",
-        "observedAt": "2026-09-04T12:11:57.700Z",
+        "observedAt": "2026-09-04T12:46:37.916Z",
         "sourceUpdatedAt": "2026-08-01T19:14:27.870473+00:00",
         "lastVerifiedAt": "2026-08-01",
         "reviewState": "source_signal",
@@ -9830,7 +9830,7 @@ window.HALIFAX_CONTENT_QUALITY_REPORT = {
         "sourceKind": "public_happy_hour_directory",
         "sourceType": "public_directory_special_lead",
         "sourceStatus": "Verified",
-        "observedAt": "2026-09-04T12:11:57.700Z",
+        "observedAt": "2026-09-04T12:46:37.916Z",
         "sourceUpdatedAt": "2026-08-01T19:14:27.870473+00:00",
         "lastVerifiedAt": "2026-08-01",
         "reviewState": "source_signal",
@@ -9871,7 +9871,7 @@ window.HALIFAX_CONTENT_QUALITY_REPORT = {
         "sourceKind": "public_seasonal_dining_campaign",
         "sourceType": "public_directory_special_lead",
         "sourceStatus": "campaign_listed",
-        "observedAt": "2026-09-04T12:11:57.700Z",
+        "observedAt": "2026-09-04T12:46:37.916Z",
         "sourceUpdatedAt": "2026-08-25T08:09:43+00:00",
         "lastVerifiedAt": null,
         "reviewState": "needs_place_review",
@@ -9917,7 +9917,7 @@ window.HALIFAX_CONTENT_QUALITY_REPORT = {
         "sourceKind": "public_happy_hour_directory",
         "sourceType": "public_directory_special_lead",
         "sourceStatus": "Listed",
-        "observedAt": "2026-09-04T12:11:57.700Z",
+        "observedAt": "2026-09-04T12:46:37.916Z",
         "sourceUpdatedAt": "2026-08-01T19:14:27.870473+00:00",
         "lastVerifiedAt": "2026-08-01",
         "reviewState": "source_signal",
@@ -9958,7 +9958,7 @@ window.HALIFAX_CONTENT_QUALITY_REPORT = {
         "sourceKind": "public_seasonal_dining_campaign",
         "sourceType": "public_directory_special_lead",
         "sourceStatus": "campaign_listed",
-        "observedAt": "2026-09-04T12:11:57.700Z",
+        "observedAt": "2026-09-04T12:46:37.916Z",
         "sourceUpdatedAt": "2026-06-17T04:19:42+00:00",
         "lastVerifiedAt": null,
         "reviewState": "needs_place_review",
@@ -10006,7 +10006,7 @@ window.HALIFAX_CONTENT_QUALITY_REPORT = {
         "sourceKind": "public_food_crawl_event",
         "sourceType": "public_directory_special_lead",
         "sourceStatus": "event_listed",
-        "observedAt": "2026-09-04T12:11:57.700Z",
+        "observedAt": "2026-09-04T12:46:37.916Z",
         "sourceUpdatedAt": null,
         "lastVerifiedAt": null,
         "reviewState": "needs_place_review",
@@ -10051,7 +10051,7 @@ window.HALIFAX_CONTENT_QUALITY_REPORT = {
         "sourceKind": "public_food_crawl_event",
         "sourceType": "public_directory_special_lead",
         "sourceStatus": "event_listed",
-        "observedAt": "2026-09-04T12:11:57.700Z",
+        "observedAt": "2026-09-04T12:46:37.916Z",
         "sourceUpdatedAt": null,
         "lastVerifiedAt": null,
         "reviewState": "needs_place_review",
@@ -10100,7 +10100,7 @@ window.HALIFAX_CONTENT_QUALITY_REPORT = {
         "sourceKind": "public_happy_hour_directory",
         "sourceType": "public_directory_special_lead",
         "sourceStatus": "Listed",
-        "observedAt": "2026-09-04T12:11:57.700Z",
+        "observedAt": "2026-09-04T12:46:37.916Z",
         "sourceUpdatedAt": "2026-08-01T19:14:27.870473+00:00",
         "lastVerifiedAt": "2026-08-01",
         "reviewState": "source_signal",
@@ -10149,7 +10149,7 @@ window.HALIFAX_CONTENT_QUALITY_REPORT = {
         "sourceKind": "public_happy_hour_directory",
         "sourceType": "public_directory_special_lead",
         "sourceStatus": "Listed",
-        "observedAt": "2026-09-04T12:11:57.700Z",
+        "observedAt": "2026-09-04T12:46:37.916Z",
         "sourceUpdatedAt": "2026-08-01T19:14:27.870473+00:00",
         "lastVerifiedAt": "2026-08-01",
         "reviewState": "source_signal",
@@ -10190,7 +10190,7 @@ window.HALIFAX_CONTENT_QUALITY_REPORT = {
         "sourceKind": "public_seasonal_dining_campaign",
         "sourceType": "public_directory_special_lead",
         "sourceStatus": "campaign_listed",
-        "observedAt": "2026-09-04T12:11:57.700Z",
+        "observedAt": "2026-09-04T12:46:37.916Z",
         "sourceUpdatedAt": "2026-08-25T08:10:33+00:00",
         "lastVerifiedAt": null,
         "reviewState": "needs_place_review",
@@ -10234,7 +10234,7 @@ window.HALIFAX_CONTENT_QUALITY_REPORT = {
         "sourceKind": "public_seasonal_dining_campaign",
         "sourceType": "public_directory_special_lead",
         "sourceStatus": "campaign_listed",
-        "observedAt": "2026-09-04T12:11:57.700Z",
+        "observedAt": "2026-09-04T12:46:37.916Z",
         "sourceUpdatedAt": "2026-08-25T08:10:50+00:00",
         "lastVerifiedAt": null,
         "reviewState": "needs_place_review",
@@ -10278,7 +10278,7 @@ window.HALIFAX_CONTENT_QUALITY_REPORT = {
         "sourceKind": "public_seasonal_dining_campaign",
         "sourceType": "public_directory_special_lead",
         "sourceStatus": "campaign_listed",
-        "observedAt": "2026-09-04T12:11:57.700Z",
+        "observedAt": "2026-09-04T12:46:37.916Z",
         "sourceUpdatedAt": "2026-08-25T08:10:50+00:00",
         "lastVerifiedAt": null,
         "reviewState": "needs_place_review",
@@ -10322,7 +10322,7 @@ window.HALIFAX_CONTENT_QUALITY_REPORT = {
         "sourceKind": "public_seasonal_dining_campaign",
         "sourceType": "public_directory_special_lead",
         "sourceStatus": "campaign_listed",
-        "observedAt": "2026-09-04T12:11:57.700Z",
+        "observedAt": "2026-09-04T12:46:37.916Z",
         "sourceUpdatedAt": "2026-08-25T08:10:50+00:00",
         "lastVerifiedAt": null,
         "reviewState": "needs_place_review",
@@ -10374,7 +10374,7 @@ window.HALIFAX_CONTENT_QUALITY_REPORT = {
         "sourceKind": "public_happy_hour_directory",
         "sourceType": "public_directory_special_lead",
         "sourceStatus": "Listed",
-        "observedAt": "2026-09-04T12:11:57.700Z",
+        "observedAt": "2026-09-04T12:46:37.916Z",
         "sourceUpdatedAt": "2026-08-01T19:14:27.870473+00:00",
         "lastVerifiedAt": "2026-08-01",
         "reviewState": "source_signal",
@@ -10415,7 +10415,7 @@ window.HALIFAX_CONTENT_QUALITY_REPORT = {
         "sourceKind": "public_seasonal_dining_campaign",
         "sourceType": "public_directory_special_lead",
         "sourceStatus": "campaign_listed",
-        "observedAt": "2026-09-04T12:11:57.700Z",
+        "observedAt": "2026-09-04T12:46:37.916Z",
         "sourceUpdatedAt": "2026-08-25T08:11:15+00:00",
         "lastVerifiedAt": null,
         "reviewState": "needs_place_review",
@@ -10459,7 +10459,7 @@ window.HALIFAX_CONTENT_QUALITY_REPORT = {
         "sourceKind": "public_seasonal_dining_campaign",
         "sourceType": "public_directory_special_lead",
         "sourceStatus": "campaign_listed",
-        "observedAt": "2026-09-04T12:11:57.700Z",
+        "observedAt": "2026-09-04T12:46:37.916Z",
         "sourceUpdatedAt": "2026-08-25T08:11:45+00:00",
         "lastVerifiedAt": null,
         "reviewState": "needs_place_review",
@@ -10511,7 +10511,7 @@ window.HALIFAX_CONTENT_QUALITY_REPORT = {
         "sourceKind": "public_happy_hour_directory",
         "sourceType": "public_directory_special_lead",
         "sourceStatus": "Listed",
-        "observedAt": "2026-09-04T12:11:57.700Z",
+        "observedAt": "2026-09-04T12:46:37.916Z",
         "sourceUpdatedAt": "2026-08-01T19:14:27.870473+00:00",
         "lastVerifiedAt": "2026-08-01",
         "reviewState": "source_signal",
@@ -10556,7 +10556,7 @@ window.HALIFAX_CONTENT_QUALITY_REPORT = {
         "sourceKind": "public_food_crawl_event",
         "sourceType": "public_directory_special_lead",
         "sourceStatus": "event_listed",
-        "observedAt": "2026-09-04T12:11:57.700Z",
+        "observedAt": "2026-09-04T12:46:37.916Z",
         "sourceUpdatedAt": null,
         "lastVerifiedAt": null,
         "reviewState": "needs_place_review",
@@ -10601,7 +10601,7 @@ window.HALIFAX_CONTENT_QUALITY_REPORT = {
         "sourceKind": "public_food_crawl_event",
         "sourceType": "public_directory_special_lead",
         "sourceStatus": "event_listed",
-        "observedAt": "2026-09-04T12:11:57.700Z",
+        "observedAt": "2026-09-04T12:46:37.916Z",
         "sourceUpdatedAt": null,
         "lastVerifiedAt": null,
         "reviewState": "needs_place_review",
@@ -10649,7 +10649,7 @@ window.HALIFAX_CONTENT_QUALITY_REPORT = {
         "sourceKind": "public_happy_hour_directory",
         "sourceType": "public_directory_special_lead",
         "sourceStatus": "Listed",
-        "observedAt": "2026-09-04T12:11:57.700Z",
+        "observedAt": "2026-09-04T12:46:37.916Z",
         "sourceUpdatedAt": "2026-08-01T19:14:27.870473+00:00",
         "lastVerifiedAt": "2026-08-01",
         "reviewState": "source_signal",
@@ -10694,7 +10694,7 @@ window.HALIFAX_CONTENT_QUALITY_REPORT = {
         "sourceKind": "public_food_crawl_event",
         "sourceType": "public_directory_special_lead",
         "sourceStatus": "event_listed",
-        "observedAt": "2026-09-04T12:11:57.700Z",
+        "observedAt": "2026-09-04T12:46:37.916Z",
         "sourceUpdatedAt": null,
         "lastVerifiedAt": null,
         "reviewState": "needs_place_review",
@@ -10743,7 +10743,7 @@ window.HALIFAX_CONTENT_QUALITY_REPORT = {
         "sourceKind": "public_happy_hour_directory",
         "sourceType": "public_directory_special_lead",
         "sourceStatus": "Listed",
-        "observedAt": "2026-09-04T12:11:57.700Z",
+        "observedAt": "2026-09-04T12:46:37.916Z",
         "sourceUpdatedAt": "2026-08-01T19:14:27.870473+00:00",
         "lastVerifiedAt": "2026-08-01",
         "reviewState": "source_signal",
@@ -10792,7 +10792,7 @@ window.HALIFAX_CONTENT_QUALITY_REPORT = {
         "sourceKind": "public_food_crawl_event",
         "sourceType": "public_directory_special_lead",
         "sourceStatus": "event_listed",
-        "observedAt": "2026-09-04T12:11:57.700Z",
+        "observedAt": "2026-09-04T12:46:37.916Z",
         "sourceUpdatedAt": null,
         "lastVerifiedAt": null,
         "reviewState": "needs_place_review",
@@ -10833,7 +10833,7 @@ window.HALIFAX_CONTENT_QUALITY_REPORT = {
         "sourceKind": "public_seasonal_dining_campaign",
         "sourceType": "public_directory_special_lead",
         "sourceStatus": "campaign_listed",
-        "observedAt": "2026-09-04T12:11:57.700Z",
+        "observedAt": "2026-09-04T12:46:37.916Z",
         "sourceUpdatedAt": "2026-08-25T08:14:26+00:00",
         "lastVerifiedAt": null,
         "reviewState": "needs_place_review",
@@ -10881,7 +10881,7 @@ window.HALIFAX_CONTENT_QUALITY_REPORT = {
         "sourceKind": "public_food_crawl_event",
         "sourceType": "public_directory_special_lead",
         "sourceStatus": "event_listed",
-        "observedAt": "2026-09-04T12:11:57.700Z",
+        "observedAt": "2026-09-04T12:46:37.916Z",
         "sourceUpdatedAt": null,
         "lastVerifiedAt": null,
         "reviewState": "needs_place_review",
@@ -10926,7 +10926,7 @@ window.HALIFAX_CONTENT_QUALITY_REPORT = {
         "sourceKind": "public_food_crawl_event",
         "sourceType": "public_directory_special_lead",
         "sourceStatus": "event_listed",
-        "observedAt": "2026-09-04T12:11:57.700Z",
+        "observedAt": "2026-09-04T12:46:37.916Z",
         "sourceUpdatedAt": null,
         "lastVerifiedAt": null,
         "reviewState": "needs_place_review",
@@ -10986,7 +10986,7 @@ window.HALIFAX_CONTENT_QUALITY_REPORT = {
         "dogFriendly": false,
         "feature": "patio",
         "sourceUrl": "https://downtownhalifax.ca/patios",
-        "observedAt": "2026-09-04T11:48:24.348Z",
+        "observedAt": "2026-09-04T12:46:37.751Z",
         "sourceId": "downtown-halifax-patios-2026",
         "sourceName": "Downtown Halifax patio directory",
         "sourceKind": "business_improvement_district_patio_list",
@@ -11007,7 +11007,7 @@ window.HALIFAX_CONTENT_QUALITY_REPORT = {
         "dogFriendly": false,
         "feature": "patio",
         "sourceUrl": "https://downtownhalifax.ca/patios",
-        "observedAt": "2026-09-04T11:48:24.348Z",
+        "observedAt": "2026-09-04T12:46:37.751Z",
         "sourceId": "downtown-halifax-patios-2026",
         "sourceName": "Downtown Halifax patio directory",
         "sourceKind": "business_improvement_district_patio_list",
@@ -11028,7 +11028,7 @@ window.HALIFAX_CONTENT_QUALITY_REPORT = {
         "dogFriendly": false,
         "feature": "patio",
         "sourceUrl": "https://downtownhalifax.ca/patios",
-        "observedAt": "2026-09-04T11:48:24.348Z",
+        "observedAt": "2026-09-04T12:46:37.751Z",
         "sourceId": "downtown-halifax-patios-2026",
         "sourceName": "Downtown Halifax patio directory",
         "sourceKind": "business_improvement_district_patio_list",
@@ -11049,7 +11049,7 @@ window.HALIFAX_CONTENT_QUALITY_REPORT = {
         "dogFriendly": true,
         "feature": "patio",
         "sourceUrl": "https://downtownhalifax.ca/patios",
-        "observedAt": "2026-09-04T11:48:24.348Z",
+        "observedAt": "2026-09-04T12:46:37.751Z",
         "sourceId": "downtown-halifax-patios-2026",
         "sourceName": "Downtown Halifax patio directory",
         "sourceKind": "business_improvement_district_patio_list",
@@ -11073,7 +11073,7 @@ window.HALIFAX_CONTENT_QUALITY_REPORT = {
         "dogFriendly": true,
         "feature": "patio",
         "sourceUrl": "https://downtownhalifax.ca/patios",
-        "observedAt": "2026-09-04T11:48:24.348Z",
+        "observedAt": "2026-09-04T12:46:37.751Z",
         "sourceId": "downtown-halifax-patios-2026",
         "sourceName": "Downtown Halifax patio directory",
         "sourceKind": "business_improvement_district_patio_list",
@@ -11094,7 +11094,7 @@ window.HALIFAX_CONTENT_QUALITY_REPORT = {
         "dogFriendly": true,
         "feature": "patio",
         "sourceUrl": "https://downtownhalifax.ca/patios",
-        "observedAt": "2026-09-04T11:48:24.348Z",
+        "observedAt": "2026-09-04T12:46:37.751Z",
         "sourceId": "downtown-halifax-patios-2026",
         "sourceName": "Downtown Halifax patio directory",
         "sourceKind": "business_improvement_district_patio_list",
@@ -11115,7 +11115,7 @@ window.HALIFAX_CONTENT_QUALITY_REPORT = {
         "dogFriendly": true,
         "feature": "patio",
         "sourceUrl": "https://downtownhalifax.ca/patios",
-        "observedAt": "2026-09-04T11:48:24.348Z",
+        "observedAt": "2026-09-04T12:46:37.751Z",
         "sourceId": "downtown-halifax-patios-2026",
         "sourceName": "Downtown Halifax patio directory",
         "sourceKind": "business_improvement_district_patio_list",
@@ -11139,7 +11139,7 @@ window.HALIFAX_CONTENT_QUALITY_REPORT = {
         "dogFriendly": true,
         "feature": "patio",
         "sourceUrl": "https://downtownhalifax.ca/patios",
-        "observedAt": "2026-09-04T11:48:24.348Z",
+        "observedAt": "2026-09-04T12:46:37.751Z",
         "sourceId": "downtown-halifax-patios-2026",
         "sourceName": "Downtown Halifax patio directory",
         "sourceKind": "business_improvement_district_patio_list",
@@ -11160,7 +11160,7 @@ window.HALIFAX_CONTENT_QUALITY_REPORT = {
         "dogFriendly": true,
         "feature": "patio",
         "sourceUrl": "https://downtownhalifax.ca/patios",
-        "observedAt": "2026-09-04T11:48:24.348Z",
+        "observedAt": "2026-09-04T12:46:37.751Z",
         "sourceId": "downtown-halifax-patios-2026",
         "sourceName": "Downtown Halifax patio directory",
         "sourceKind": "business_improvement_district_patio_list",
@@ -11181,7 +11181,7 @@ window.HALIFAX_CONTENT_QUALITY_REPORT = {
         "dogFriendly": false,
         "feature": "patio",
         "sourceUrl": "https://downtownhalifax.ca/patios",
-        "observedAt": "2026-09-04T11:48:24.348Z",
+        "observedAt": "2026-09-04T12:46:37.751Z",
         "sourceId": "downtown-halifax-patios-2026",
         "sourceName": "Downtown Halifax patio directory",
         "sourceKind": "business_improvement_district_patio_list",
@@ -11202,7 +11202,7 @@ window.HALIFAX_CONTENT_QUALITY_REPORT = {
         "dogFriendly": false,
         "feature": "patio",
         "sourceUrl": "https://downtownhalifax.ca/patios",
-        "observedAt": "2026-09-04T11:48:24.348Z",
+        "observedAt": "2026-09-04T12:46:37.751Z",
         "sourceId": "downtown-halifax-patios-2026",
         "sourceName": "Downtown Halifax patio directory",
         "sourceKind": "business_improvement_district_patio_list",
@@ -11223,7 +11223,7 @@ window.HALIFAX_CONTENT_QUALITY_REPORT = {
         "dogFriendly": true,
         "feature": "patio",
         "sourceUrl": "https://downtownhalifax.ca/patios",
-        "observedAt": "2026-09-04T11:48:24.348Z",
+        "observedAt": "2026-09-04T12:46:37.751Z",
         "sourceId": "downtown-halifax-patios-2026",
         "sourceName": "Downtown Halifax patio directory",
         "sourceKind": "business_improvement_district_patio_list",
@@ -11244,7 +11244,7 @@ window.HALIFAX_CONTENT_QUALITY_REPORT = {
         "dogFriendly": true,
         "feature": "patio",
         "sourceUrl": "https://downtownhalifax.ca/patios",
-        "observedAt": "2026-09-04T11:48:24.348Z",
+        "observedAt": "2026-09-04T12:46:37.751Z",
         "sourceId": "downtown-halifax-patios-2026",
         "sourceName": "Downtown Halifax patio directory",
         "sourceKind": "business_improvement_district_patio_list",
@@ -11265,7 +11265,7 @@ window.HALIFAX_CONTENT_QUALITY_REPORT = {
         "dogFriendly": true,
         "feature": "patio",
         "sourceUrl": "https://downtownhalifax.ca/patios",
-        "observedAt": "2026-09-04T11:48:24.348Z",
+        "observedAt": "2026-09-04T12:46:37.751Z",
         "sourceId": "downtown-halifax-patios-2026",
         "sourceName": "Downtown Halifax patio directory",
         "sourceKind": "business_improvement_district_patio_list",
@@ -11286,7 +11286,7 @@ window.HALIFAX_CONTENT_QUALITY_REPORT = {
         "dogFriendly": true,
         "feature": "patio",
         "sourceUrl": "https://downtownhalifax.ca/patios",
-        "observedAt": "2026-09-04T11:48:24.348Z",
+        "observedAt": "2026-09-04T12:46:37.751Z",
         "sourceId": "downtown-halifax-patios-2026",
         "sourceName": "Downtown Halifax patio directory",
         "sourceKind": "business_improvement_district_patio_list",
@@ -11307,7 +11307,7 @@ window.HALIFAX_CONTENT_QUALITY_REPORT = {
         "dogFriendly": false,
         "feature": "patio",
         "sourceUrl": "https://downtownhalifax.ca/patios",
-        "observedAt": "2026-09-04T11:48:24.348Z",
+        "observedAt": "2026-09-04T12:46:37.751Z",
         "sourceId": "downtown-halifax-patios-2026",
         "sourceName": "Downtown Halifax patio directory",
         "sourceKind": "business_improvement_district_patio_list",
@@ -11328,7 +11328,7 @@ window.HALIFAX_CONTENT_QUALITY_REPORT = {
         "dogFriendly": true,
         "feature": "patio",
         "sourceUrl": "https://downtownhalifax.ca/patios",
-        "observedAt": "2026-09-04T11:48:24.348Z",
+        "observedAt": "2026-09-04T12:46:37.751Z",
         "sourceId": "downtown-halifax-patios-2026",
         "sourceName": "Downtown Halifax patio directory",
         "sourceKind": "business_improvement_district_patio_list",
@@ -11349,7 +11349,7 @@ window.HALIFAX_CONTENT_QUALITY_REPORT = {
         "dogFriendly": true,
         "feature": "patio",
         "sourceUrl": "https://downtownhalifax.ca/patios",
-        "observedAt": "2026-09-04T11:48:24.348Z",
+        "observedAt": "2026-09-04T12:46:37.751Z",
         "sourceId": "downtown-halifax-patios-2026",
         "sourceName": "Downtown Halifax patio directory",
         "sourceKind": "business_improvement_district_patio_list",
@@ -11370,7 +11370,7 @@ window.HALIFAX_CONTENT_QUALITY_REPORT = {
         "dogFriendly": true,
         "feature": "patio",
         "sourceUrl": "https://downtownhalifax.ca/patios",
-        "observedAt": "2026-09-04T11:48:24.348Z",
+        "observedAt": "2026-09-04T12:46:37.751Z",
         "sourceId": "downtown-halifax-patios-2026",
         "sourceName": "Downtown Halifax patio directory",
         "sourceKind": "business_improvement_district_patio_list",
@@ -11391,7 +11391,7 @@ window.HALIFAX_CONTENT_QUALITY_REPORT = {
         "dogFriendly": true,
         "feature": "patio",
         "sourceUrl": "https://downtownhalifax.ca/patios",
-        "observedAt": "2026-09-04T11:48:24.348Z",
+        "observedAt": "2026-09-04T12:46:37.751Z",
         "sourceId": "downtown-halifax-patios-2026",
         "sourceName": "Downtown Halifax patio directory",
         "sourceKind": "business_improvement_district_patio_list",
@@ -11412,7 +11412,7 @@ window.HALIFAX_CONTENT_QUALITY_REPORT = {
         "dogFriendly": false,
         "feature": "patio",
         "sourceUrl": "https://downtownhalifax.ca/patios",
-        "observedAt": "2026-09-04T11:48:24.348Z",
+        "observedAt": "2026-09-04T12:46:37.751Z",
         "sourceId": "downtown-halifax-patios-2026",
         "sourceName": "Downtown Halifax patio directory",
         "sourceKind": "business_improvement_district_patio_list",
@@ -11433,7 +11433,7 @@ window.HALIFAX_CONTENT_QUALITY_REPORT = {
         "dogFriendly": true,
         "feature": "patio",
         "sourceUrl": "https://downtownhalifax.ca/patios",
-        "observedAt": "2026-09-04T11:48:24.348Z",
+        "observedAt": "2026-09-04T12:46:37.751Z",
         "sourceId": "downtown-halifax-patios-2026",
         "sourceName": "Downtown Halifax patio directory",
         "sourceKind": "business_improvement_district_patio_list",
@@ -11454,7 +11454,7 @@ window.HALIFAX_CONTENT_QUALITY_REPORT = {
         "dogFriendly": true,
         "feature": "patio",
         "sourceUrl": "https://downtownhalifax.ca/patios",
-        "observedAt": "2026-09-04T11:48:24.348Z",
+        "observedAt": "2026-09-04T12:46:37.751Z",
         "sourceId": "downtown-halifax-patios-2026",
         "sourceName": "Downtown Halifax patio directory",
         "sourceKind": "business_improvement_district_patio_list",
@@ -11478,7 +11478,7 @@ window.HALIFAX_CONTENT_QUALITY_REPORT = {
         "dogFriendly": true,
         "feature": "patio",
         "sourceUrl": "https://downtownhalifax.ca/patios",
-        "observedAt": "2026-09-04T11:48:24.348Z",
+        "observedAt": "2026-09-04T12:46:37.751Z",
         "sourceId": "downtown-halifax-patios-2026",
         "sourceName": "Downtown Halifax patio directory",
         "sourceKind": "business_improvement_district_patio_list",
@@ -11502,7 +11502,7 @@ window.HALIFAX_CONTENT_QUALITY_REPORT = {
         "dogFriendly": false,
         "feature": "patio",
         "sourceUrl": "https://downtownhalifax.ca/patios",
-        "observedAt": "2026-09-04T11:48:24.348Z",
+        "observedAt": "2026-09-04T12:46:37.751Z",
         "sourceId": "downtown-halifax-patios-2026",
         "sourceName": "Downtown Halifax patio directory",
         "sourceKind": "business_improvement_district_patio_list",
@@ -11523,7 +11523,7 @@ window.HALIFAX_CONTENT_QUALITY_REPORT = {
         "dogFriendly": true,
         "feature": "patio",
         "sourceUrl": "https://downtownhalifax.ca/patios",
-        "observedAt": "2026-09-04T11:48:24.348Z",
+        "observedAt": "2026-09-04T12:46:37.751Z",
         "sourceId": "downtown-halifax-patios-2026",
         "sourceName": "Downtown Halifax patio directory",
         "sourceKind": "business_improvement_district_patio_list",
@@ -11544,7 +11544,7 @@ window.HALIFAX_CONTENT_QUALITY_REPORT = {
         "dogFriendly": true,
         "feature": "patio",
         "sourceUrl": "https://downtownhalifax.ca/patios",
-        "observedAt": "2026-09-04T11:48:24.348Z",
+        "observedAt": "2026-09-04T12:46:37.751Z",
         "sourceId": "downtown-halifax-patios-2026",
         "sourceName": "Downtown Halifax patio directory",
         "sourceKind": "business_improvement_district_patio_list",
@@ -11565,7 +11565,7 @@ window.HALIFAX_CONTENT_QUALITY_REPORT = {
         "dogFriendly": false,
         "feature": "patio",
         "sourceUrl": "https://downtownhalifax.ca/patios",
-        "observedAt": "2026-09-04T11:48:24.348Z",
+        "observedAt": "2026-09-04T12:46:37.751Z",
         "sourceId": "downtown-halifax-patios-2026",
         "sourceName": "Downtown Halifax patio directory",
         "sourceKind": "business_improvement_district_patio_list",
@@ -11585,9 +11585,28 @@ window.HALIFAX_CONTENT_QUALITY_REPORT = {
   },
   "sourceHealth": {
     "failuresByLayer": {
-      "first_party": 87
+      "first_party": 66,
+      "structured_place_facts": 3
     },
     "failures": [
+      {
+        "layer": "structured_place_facts",
+        "restaurantId": "osm-node-12143582175-asia-restaurant-and-bar",
+        "sourceUrl": "https://asiahalifax.com/",
+        "reason": "fetch failed"
+      },
+      {
+        "layer": "structured_place_facts",
+        "restaurantId": "osm-node-12143325435-krave-burger",
+        "sourceUrl": "http://kraveburger.com/",
+        "reason": "timeout"
+      },
+      {
+        "layer": "structured_place_facts",
+        "restaurantId": "osm-node-3791840157-krave-burger",
+        "sourceUrl": "http://kraveburger.com/",
+        "reason": "timeout"
+      },
       {
         "layer": "first_party",
         "restaurantId": "osm-node-5134046822-chain-yard-urban-cidery",
@@ -11625,13 +11644,6 @@ window.HALIFAX_CONTENT_QUALITY_REPORT = {
       },
       {
         "layer": "first_party",
-        "restaurantId": "osm-node-4420916900-board-room-game-cafe",
-        "name": "Board Room Game Cafe",
-        "website": "http://boardroomgames.ca/",
-        "reason": "robots_disallow"
-      },
-      {
-        "layer": "first_party",
         "restaurantId": "osm-node-11752691591-bramble-cafe",
         "name": "Bramble Cafe",
         "website": "https://www.instagram.com/bramble.hfx",
@@ -11653,13 +11665,6 @@ window.HALIFAX_CONTENT_QUALITY_REPORT = {
       },
       {
         "layer": "first_party",
-        "restaurantId": "osm-node-5810620690-castello-cafe",
-        "name": "Castello Café",
-        "website": "https://www.facebook.com/CastelloCafeCatering/",
-        "reason": "robots_disallow"
-      },
-      {
-        "layer": "first_party",
         "restaurantId": "osm-node-4421124794-cafe-marco-polo",
         "name": "Cafe Marco Polo",
         "website": "https://justuscoffee.com/locations/kings-wharf-dartmouth",
@@ -11667,10 +11672,10 @@ window.HALIFAX_CONTENT_QUALITY_REPORT = {
       },
       {
         "layer": "first_party",
-        "restaurantId": "osm-node-2721708515-cha-baa-thai",
-        "name": "Cha Baa Thai",
-        "website": "https://www.chabaathairestaurant.ca/",
-        "reason": "fetch failed"
+        "restaurantId": "osm-node-5810620690-castello-cafe",
+        "name": "Castello Café",
+        "website": "https://www.facebook.com/CastelloCafeCatering/",
+        "reason": "robots_disallow"
       },
       {
         "layer": "first_party",
@@ -11730,17 +11735,10 @@ window.HALIFAX_CONTENT_QUALITY_REPORT = {
       },
       {
         "layer": "first_party",
-        "restaurantId": "osm-node-11551984275-doraku",
-        "name": "Doraku",
-        "website": "https://doraku.yolasite.com/",
-        "reason": "robots_disallow"
-      },
-      {
-        "layer": "first_party",
-        "restaurantId": "osm-node-2721708504-curry-village",
-        "name": "Curry Village",
-        "website": "https://www.curryvillage.ca/",
-        "reason": "http_526"
+        "restaurantId": "osm-node-5863968654-dharma-sushi",
+        "name": "Dharma sushi",
+        "website": "https://dharmasushi.ca/",
+        "reason": "fetch failed"
       },
       {
         "layer": "first_party",
@@ -11758,9 +11756,9 @@ window.HALIFAX_CONTENT_QUALITY_REPORT = {
       },
       {
         "layer": "first_party",
-        "restaurantId": "osm-node-5863968654-dharma-sushi",
-        "name": "Dharma sushi",
-        "website": "https://dharmasushi.ca/",
+        "restaurantId": "osm-node-2721708515-cha-baa-thai",
+        "name": "Cha Baa Thai",
+        "website": "https://www.chabaathairestaurant.ca/",
         "reason": "fetch failed"
       },
       {
@@ -11772,24 +11770,10 @@ window.HALIFAX_CONTENT_QUALITY_REPORT = {
       },
       {
         "layer": "first_party",
-        "restaurantId": "osm-node-2714920436-greco-pizza",
-        "name": "Greco Pizza",
-        "website": "https://greco.ca/",
-        "reason": "http_403"
-      },
-      {
-        "layer": "first_party",
-        "restaurantId": "osm-node-32335616-jim-s-family-restaurant",
-        "name": "Jim's Family Restaurant",
-        "website": "https://www.jimsfamilyrestauranthalifax.com/cl",
+        "restaurantId": "osm-node-4995047387-john-s-lunch",
+        "name": "John's Lunch",
+        "website": "https://johnslunch.com/",
         "reason": "fetch failed"
-      },
-      {
-        "layer": "first_party",
-        "restaurantId": "osm-node-7674251740-in-spring-asian-fusion-cuisine",
-        "name": "in spring asian fusion cuisine",
-        "website": "https://www.inspringhotpot.com/",
-        "reason": "robots_disallow"
       },
       {
         "layer": "first_party",
@@ -11800,16 +11784,9 @@ window.HALIFAX_CONTENT_QUALITY_REPORT = {
       },
       {
         "layer": "first_party",
-        "restaurantId": "osm-node-8841366531-jungle-jim-s",
-        "name": "Jungle Jim's",
-        "website": "https://junglejims.ca/",
-        "reason": "robots_disallow"
-      },
-      {
-        "layer": "first_party",
-        "restaurantId": "osm-node-4995047387-john-s-lunch",
-        "name": "John's Lunch",
-        "website": "https://johnslunch.com/",
+        "restaurantId": "osm-node-32335616-jim-s-family-restaurant",
+        "name": "Jim's Family Restaurant",
+        "website": "https://www.jimsfamilyrestauranthalifax.com/cl",
         "reason": "fetch failed"
       },
       {
@@ -11828,10 +11805,17 @@ window.HALIFAX_CONTENT_QUALITY_REPORT = {
       },
       {
         "layer": "first_party",
-        "restaurantId": "osm-node-3104142670-king-of-donair",
-        "name": "King of Donair",
-        "website": "https://www.kingofdonair.ca/",
-        "reason": "http_403"
+        "restaurantId": "osm-way-460939327-la-piazza-ristorante",
+        "name": "La Piazza Ristorante",
+        "website": "https://www.lapiazzarestocafe.com/",
+        "reason": "fetch failed"
+      },
+      {
+        "layer": "first_party",
+        "restaurantId": "osm-node-2721708504-curry-village",
+        "name": "Curry Village",
+        "website": "https://www.curryvillage.ca/",
+        "reason": "http_526"
       },
       {
         "layer": "first_party",
@@ -11846,13 +11830,6 @@ window.HALIFAX_CONTENT_QUALITY_REPORT = {
         "name": "Manhattan Pizza",
         "website": "http://www.manhattanpizza.ca/locations.html",
         "reason": "fetch failed"
-      },
-      {
-        "layer": "first_party",
-        "restaurantId": "osm-node-2721720399-mashawee-mediterranean-grill",
-        "name": "Mashawee Mediterranean Grill",
-        "website": "https://www.mashaweemediterraneangrill.ca/",
-        "reason": "http_403"
       },
       {
         "layer": "first_party",
@@ -11898,24 +11875,10 @@ window.HALIFAX_CONTENT_QUALITY_REPORT = {
       },
       {
         "layer": "first_party",
-        "restaurantId": "osm-node-11552509410-mizu-sushi",
-        "name": "Mizu Sushi",
-        "website": "https://mizutakeout.ca/",
-        "reason": "http_403"
-      },
-      {
-        "layer": "first_party",
         "restaurantId": "osm-node-8142450011-montana-s",
         "name": "Montana's",
         "website": "https://www.montanas.ca/en/locations/3617/halifax-chain-lake-dr.html",
         "reason": "robots_disallow"
-      },
-      {
-        "layer": "first_party",
-        "restaurantId": "osm-node-11552529320-mizu-sushi",
-        "name": "Mizu Sushi",
-        "website": "https://mizutakeout.ca/",
-        "reason": "http_403"
       },
       {
         "layer": "first_party",
@@ -11929,7 +11892,7 @@ window.HALIFAX_CONTENT_QUALITY_REPORT = {
         "restaurantId": "osm-node-9652937830-arirang-korean-and-japanese",
         "name": "Arirang Korean & Japanese",
         "website": "https://arirang-restaurant.com/",
-        "reason": "timeout"
+        "reason": "fetch failed"
       },
       {
         "layer": "first_party",
@@ -11937,27 +11900,6 @@ window.HALIFAX_CONTENT_QUALITY_REPORT = {
         "name": "Patrons Golf & Lounge",
         "website": "https://www.patronsgolflounge.ca/",
         "reason": "fetch failed"
-      },
-      {
-        "layer": "first_party",
-        "restaurantId": "osm-node-11526163882-brief-break",
-        "name": "Brief Break",
-        "website": "https://dal.campusdish.com/LocationsAndMenus/WeldonLawBuilding",
-        "reason": "timeout"
-      },
-      {
-        "layer": "first_party",
-        "restaurantId": "osm-node-11526055082-noggins-coburg",
-        "name": "Noggins Coburg",
-        "website": "https://nogginsfarm.ca/farm-markets/coburg-market/",
-        "reason": "robots_disallow"
-      },
-      {
-        "layer": "first_party",
-        "restaurantId": "osm-node-3791840157-krave-burger",
-        "name": "Krave Burger",
-        "website": "http://kraveburger.com/",
-        "reason": "timeout"
       },
       {
         "layer": "first_party",
@@ -11982,13 +11924,6 @@ window.HALIFAX_CONTENT_QUALITY_REPORT = {
       },
       {
         "layer": "first_party",
-        "restaurantId": "osm-node-8443747544-saj-house",
-        "name": "Saj House",
-        "website": "https://www.sajhouse.ca/",
-        "reason": "http_403"
-      },
-      {
-        "layer": "first_party",
         "restaurantId": "osm-node-7674268236-shiraz",
         "name": "Shiraz",
         "website": "https://www.shirazhalifax.ca/",
@@ -11996,23 +11931,16 @@ window.HALIFAX_CONTENT_QUALITY_REPORT = {
       },
       {
         "layer": "first_party",
-        "restaurantId": "osm-node-3789756557-smiling-goat",
-        "name": "Smiling Goat",
-        "website": "https://www.smilinggoat.ca/locations/",
-        "reason": "robots_disallow"
-      },
-      {
-        "layer": "first_party",
-        "restaurantId": "osm-way-460939327-la-piazza-ristorante",
-        "name": "La Piazza Ristorante",
-        "website": "https://www.lapiazzarestocafe.com/",
+        "restaurantId": "osm-node-5503919661-jukai",
+        "name": "Jukai",
+        "website": "https://jukairestaurant.com/",
         "reason": "timeout"
       },
       {
         "layer": "first_party",
-        "restaurantId": "osm-node-11526163877-fillings-bistro-32",
-        "name": "Fillings Bistro 32",
-        "website": "https://dal.campusdish.com/LocationsAndMenus/FillingsBistroatDentistry",
+        "restaurantId": "osm-node-3791840157-krave-burger",
+        "name": "Krave Burger",
+        "website": "http://kraveburger.com/",
         "reason": "timeout"
       },
       {
@@ -12045,13 +11973,6 @@ window.HALIFAX_CONTENT_QUALITY_REPORT = {
       },
       {
         "layer": "first_party",
-        "restaurantId": "osm-node-12143325435-krave-burger",
-        "name": "Krave Burger",
-        "website": "http://kraveburger.com/",
-        "reason": "timeout"
-      },
-      {
-        "layer": "first_party",
         "restaurantId": "osm-node-5151935621-the-bedford-basin-market",
         "name": "the Bedford Basin Market",
         "website": "https://www.bedfordbasinmarket.com/",
@@ -12063,13 +11984,6 @@ window.HALIFAX_CONTENT_QUALITY_REPORT = {
         "name": "The Brooklyn Warehouse",
         "website": "https://brooklynwarehouse.ca/",
         "reason": "robots_disallow"
-      },
-      {
-        "layer": "first_party",
-        "restaurantId": "osm-node-13141551801-mcdonald-s",
-        "name": "McDonald's",
-        "website": "https://www.mcdonalds.com/ca/en-ca.html",
-        "reason": "timeout"
       },
       {
         "layer": "first_party",
@@ -12087,9 +12001,23 @@ window.HALIFAX_CONTENT_QUALITY_REPORT = {
       },
       {
         "layer": "first_party",
-        "restaurantId": "osm-node-6393893025-pizza-hut",
-        "name": "Pizza Hut",
-        "website": "https://www.pizzahut.ca/huts/ca-1/R30103/",
+        "restaurantId": "osm-node-13141551801-mcdonald-s",
+        "name": "McDonald's",
+        "website": "https://www.mcdonalds.com/ca/en-ca.html",
+        "reason": "timeout"
+      },
+      {
+        "layer": "first_party",
+        "restaurantId": "osm-node-4428984290-stone-pizza",
+        "name": "Stone Pizza",
+        "website": "https://stonepizza.ca/",
+        "reason": "timeout"
+      },
+      {
+        "layer": "first_party",
+        "restaurantId": "osm-node-12143325435-krave-burger",
+        "name": "Krave Burger",
+        "website": "http://kraveburger.com/",
         "reason": "timeout"
       },
       {
@@ -12108,9 +12036,9 @@ window.HALIFAX_CONTENT_QUALITY_REPORT = {
       },
       {
         "layer": "first_party",
-        "restaurantId": "osm-node-11526163883-green-cafe",
-        "name": "Green Café",
-        "website": "https://dal.campusdish.com/LocationsAndMenus/GreenCafeatRoweManagementBuilding",
+        "restaurantId": "osm-node-6393893025-pizza-hut",
+        "name": "Pizza Hut",
+        "website": "https://www.pizzahut.ca/huts/ca-1/R30103/",
         "reason": "timeout"
       },
       {
@@ -12122,16 +12050,16 @@ window.HALIFAX_CONTENT_QUALITY_REPORT = {
       },
       {
         "layer": "first_party",
-        "restaurantId": "osm-way-358577265-pizza-hut",
-        "name": "Pizza Hut",
-        "website": "https://www.pizzahut.ca/huts/ca-1/R30104/",
+        "restaurantId": "osm-node-33117793-wasabi-house",
+        "name": "Wasabi House",
+        "website": "http://www.wasabihouse.ca/",
         "reason": "timeout"
       },
       {
         "layer": "first_party",
-        "restaurantId": "osm-node-11526163881-grille-works",
-        "name": "Grille Works",
-        "website": "https://dal.campusdish.com/LocationsAndMenus/LifeSciencesCentre/GrilleWorks",
+        "restaurantId": "osm-way-358577265-pizza-hut",
+        "name": "Pizza Hut",
+        "website": "https://www.pizzahut.ca/huts/ca-1/R30104/",
         "reason": "timeout"
       },
       {
@@ -12140,72 +12068,16 @@ window.HALIFAX_CONTENT_QUALITY_REPORT = {
         "name": "Pizza Hut Delivery",
         "website": "https://www.pizzahut.ca/huts/ca-1/R30102/",
         "reason": "timeout"
-      },
-      {
-        "layer": "first_party",
-        "restaurantId": "osm-node-11526163885-ground-zero",
-        "name": "Ground Zero",
-        "website": "https://dal.campusdish.com/LocationsAndMenus/GroundZero",
-        "reason": "timeout"
-      },
-      {
-        "layer": "first_party",
-        "restaurantId": "osm-node-11526163880-pizza-pizza",
-        "name": "Pizza Pizza",
-        "website": "https://dal.campusdish.com/LocationsAndMenus/LifeSciencesCentre/PizzaPizza",
-        "reason": "timeout"
-      },
-      {
-        "layer": "first_party",
-        "restaurantId": "osm-node-11526163876-starbucks",
-        "name": "Starbucks",
-        "website": "https://dal.campusdish.com/LocationsAndMenus/StarbucksatTupperMedicalBuilding",
-        "reason": "timeout"
-      },
-      {
-        "layer": "first_party",
-        "restaurantId": "osm-node-11526163878-tim-hortons",
-        "name": "Tim Hortons",
-        "website": "https://dal.campusdish.com/LocationsAndMenus/LifeSciencesCentre/TimHortons",
-        "reason": "timeout"
-      },
-      {
-        "layer": "first_party",
-        "restaurantId": "osm-node-11526163879-zoca",
-        "name": "Zoca",
-        "website": "https://dal.campusdish.com/LocationsAndMenus/LifeSciencesCentre/Zoca",
-        "reason": "timeout"
-      },
-      {
-        "layer": "first_party",
-        "restaurantId": "osm-node-9652937830-arirang-korean-and-japanese",
-        "name": "Arirang Korean & Japanese",
-        "website": "https://arirang-restaurant.com/",
-        "reason": "fetch failed"
-      },
-      {
-        "layer": "first_party",
-        "restaurantId": "osm-way-460939327-la-piazza-ristorante",
-        "name": "La Piazza Ristorante",
-        "website": "https://www.lapiazzarestocafe.com/",
-        "reason": "fetch failed"
-      },
-      {
-        "layer": "first_party",
-        "restaurantId": "osm-node-4428984290-stone-pizza",
-        "name": "Stone Pizza",
-        "website": "https://stonepizza.ca/",
-        "reason": "timeout"
       }
     ],
     "linkHealth": {
-      "generatedAt": "2026-09-01T15:42:48.296Z",
-      "totalUniqueUrls": 2611,
+      "generatedAt": "2026-09-04T13:01:54.985Z",
+      "totalUniqueUrls": 2633,
       "checked": 1500,
-      "ok": 1453,
+      "ok": 1447,
       "broken": 8,
       "restricted": 4,
-      "transient": 34,
+      "transient": 40,
       "httpError": 1,
       "brokenRecords": [
         {
@@ -12324,14 +12196,14 @@ window.HALIFAX_CONTENT_QUALITY_REPORT = {
     },
     "eventCategories": {
       "Sports": 61,
-      "Music": 58,
-      "Arts": 27,
-      "Community": 22,
+      "Music": 57,
+      "Arts": 30,
+      "Community": 20,
       "Festivals": 14,
       "Comedy": 4,
       "Food & Drink": 3,
       "Other": 2,
-      "Outdoor": 1
+      "Markets": 1
     },
     "eventMunicipalities": {
       "Halifax": 170,

@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-09-01T15:29:44.605Z",
+  "generatedAt": "2026-09-04T12:40:44.362Z",
   "eventCount": 192,
-  "venueResolved": 140,
+  "venueResolved": 139,
   "organizerResolved": 166,
   "restaurantResolved": 10,
-  "unresolvedVenue": 52,
+  "unresolvedVenue": 53,
   "unresolvedOrganizer": 26,
   "resolutions": [
     {
@@ -85,83 +85,6 @@
       "restaurantBasis": null
     },
     {
-      "eventId": "halifax-convention-centre-cce7d12d9cabc545",
-      "title": "IFEBP 59th Canadian Annual Employee Benefits Conference",
-      "sourceId": "halifax-convention-centre",
-      "venueId": "halifax-convention-centre",
-      "venueBasis": "source_id",
-      "organizerId": "halifax-convention-centre",
-      "organizerBasis": "source_id",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "alderney-landing-events-cd38e9ab07eb2061",
-      "title": "Wednesdays on the Waterfront",
-      "sourceId": "alderney-landing-events",
-      "venueId": "alderney-landing-dartmouth",
-      "venueBasis": "source_id",
-      "organizerId": null,
-      "organizerBasis": null,
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "bedford-library-events-07ecb0ff1a31eb1d",
-      "title": "Community Crafters",
-      "sourceId": "bedford-library-events",
-      "venueId": "bedford-library",
-      "venueBasis": "source_id",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "woodlawn-library-events-78da3534a909d11c",
-      "title": "Get Directions , opens a new window",
-      "sourceId": "woodlawn-library-events",
-      "venueId": "woodlawn-library",
-      "venueBasis": "source_id",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "alderney-gate-library-events-7a465383cd75a0e5",
-      "title": "Get Directions , opens a new window",
-      "sourceId": "alderney-gate-library-events",
-      "venueId": "alderney-gate-library",
-      "venueBasis": "source_id",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "alderney-gate-library-events-e58c738a18141d62",
-      "title": "Meet Juno, a St. John Ambulance Therapy Dog Meet Juno, a St. John Ambulance Therapy Dog",
-      "sourceId": "alderney-gate-library-events",
-      "venueId": "alderney-gate-library",
-      "venueBasis": "source_id",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "the-carleton-8d803040b30111a7",
-      "title": "SOLD OUT: Josée Champoux & Andre Pettipas – Road to Giantstock",
-      "sourceId": "the-carleton",
-      "venueId": "the-carleton-halifax",
-      "venueBasis": "source_id",
-      "organizerId": "the-carleton",
-      "organizerBasis": "source_id",
-      "restaurantId": "osm-node-771690675-the-carleton",
-      "restaurantBasis": "exact_venue_place_name"
-    },
-    {
       "eventId": "https://novascotia.com/event/the-halifax-fringe-festival/#event",
       "title": "The Halifax Fringe Festival",
       "sourceId": "tourism-ns-events",
@@ -169,50 +92,6 @@
       "venueBasis": null,
       "organizerId": null,
       "organizerBasis": null,
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "alderney-gate-library-events-f2bbf7cde65f83d2",
-      "title": "Welcome Housing & Support Drop-in Clinic",
-      "sourceId": "alderney-gate-library-events",
-      "venueId": "alderney-gate-library",
-      "venueBasis": "source_id",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "the-carleton-369a5dda18a3eadd",
-      "title": "Frank Sultana & RG Schaller",
-      "sourceId": "the-carleton",
-      "venueId": "the-carleton-halifax",
-      "venueBasis": "source_id",
-      "organizerId": "the-carleton",
-      "organizerBasis": "source_id",
-      "restaurantId": "osm-node-771690675-the-carleton",
-      "restaurantBasis": "exact_venue_place_name"
-    },
-    {
-      "eventId": "scotiabank-centre-ee0d359e46d4aece",
-      "title": "Australian Pink Floyd",
-      "sourceId": "scotiabank-centre",
-      "venueId": "scotiabank-centre-halifax",
-      "venueBasis": "source_id",
-      "organizerId": "scotiabank-centre",
-      "organizerBasis": "source_id",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "light-house-arts-centre-e616c2b214832027",
-      "title": "Geordie Kieffer — Light House Arts Centre",
-      "sourceId": "light-house-arts-centre",
-      "venueId": "light-house-arts-centre-halifax",
-      "venueBasis": "source_id",
-      "organizerId": "light-house-arts-centre",
-      "organizerBasis": "source_id",
       "restaurantId": null,
       "restaurantBasis": null
     },
@@ -228,8 +107,8 @@
       "restaurantBasis": null
     },
     {
-      "eventId": "alderney-gate-library-events-e14e53d8a9fd505f",
-      "title": "Notary Clinic",
+      "eventId": "alderney-gate-library-events-d0f17172b2f2d4a3",
+      "title": "Get Directions , opens a new window",
       "sourceId": "alderney-gate-library-events",
       "venueId": "alderney-gate-library",
       "venueBasis": "source_id",
@@ -263,6 +142,17 @@
     {
       "eventId": "alderney-landing-events-e22ff3bdb41d4e96",
       "title": "Tommy Green Jr",
+      "sourceId": "alderney-landing-events",
+      "venueId": "alderney-landing-dartmouth",
+      "venueBasis": "source_id",
+      "organizerId": null,
+      "organizerBasis": null,
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
+      "eventId": "alderney-landing-events-9be8f68633ed92e8",
+      "title": "Farmers Market",
       "sourceId": "alderney-landing-events",
       "venueId": "alderney-landing-dartmouth",
       "venueBasis": "source_id",
@@ -338,8 +228,8 @@
       "restaurantBasis": null
     },
     {
-      "eventId": "woodlawn-library-events-5e7e55caf109885b",
-      "title": "Needle Niche",
+      "eventId": "woodlawn-library-events-7cf8114f8d758394",
+      "title": "Get Directions , opens a new window",
       "sourceId": "woodlawn-library-events",
       "venueId": "woodlawn-library",
       "venueBasis": "source_id",
@@ -437,6 +327,50 @@
       "restaurantBasis": null
     },
     {
+      "eventId": "alderney-gate-library-events-b2d1574a904d0499",
+      "title": "Teen Night: UNO",
+      "sourceId": "alderney-gate-library-events",
+      "venueId": "alderney-gate-library",
+      "venueBasis": "source_id",
+      "organizerId": "halifax-public-libraries",
+      "organizerBasis": "source_name_token",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
+      "eventId": "bedford-library-events-62e7c30883f622b6",
+      "title": "Bedford Authors Writers' Group",
+      "sourceId": "bedford-library-events",
+      "venueId": "bedford-library",
+      "venueBasis": "source_id",
+      "organizerId": "halifax-public-libraries",
+      "organizerBasis": "source_name_token",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
+      "eventId": "alderney-gate-library-events-4b1b75b6f773e687",
+      "title": "Meet Juno, a St. John Ambulance Therapy Dog",
+      "sourceId": "alderney-gate-library-events",
+      "venueId": "alderney-gate-library",
+      "venueBasis": "source_id",
+      "organizerId": "halifax-public-libraries",
+      "organizerBasis": "source_name_token",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
+      "eventId": "alderney-gate-library-events-d7fb1e70e8ab244f",
+      "title": "Meet Juno, a St. John Ambulance Therapy Dog Meet Juno, a St. John Ambulance Therapy Dog",
+      "sourceId": "alderney-gate-library-events",
+      "venueId": "alderney-gate-library",
+      "venueBasis": "source_id",
+      "organizerId": "halifax-public-libraries",
+      "organizerBasis": "source_name_token",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
       "eventId": "the-carleton-a0e66cf12ed390be",
       "title": "SOLD OUT: Ben Caplan – Wednesday",
       "sourceId": "the-carleton",
@@ -481,8 +415,8 @@
       "restaurantBasis": null
     },
     {
-      "eventId": "the-carleton-978ede45bcb00916",
-      "title": "Ben Caplan – 3rd Show Added!",
+      "eventId": "the-carleton-d65b88f56600dca5",
+      "title": "10 TIX LEFT! Ben Caplan – Friday",
       "sourceId": "the-carleton",
       "venueId": "the-carleton-halifax",
       "venueBasis": "source_id",
@@ -505,6 +439,17 @@
     {
       "eventId": "woodlawn-library-events-4373b2f8647f148b",
       "title": "Stay Connected: Hearing Health, Technology & Accessibility",
+      "sourceId": "woodlawn-library-events",
+      "venueId": "woodlawn-library",
+      "venueBasis": "source_id",
+      "organizerId": "halifax-public-libraries",
+      "organizerBasis": "source_name_token",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
+      "eventId": "woodlawn-library-events-9812d11350aa88a2",
+      "title": "Drama Llamas",
       "sourceId": "woodlawn-library-events",
       "venueId": "woodlawn-library",
       "venueBasis": "source_id",
@@ -569,6 +514,28 @@
       "restaurantBasis": null
     },
     {
+      "eventId": "the-carleton-5a87dc94c0075bb7",
+      "title": "SOLD OUT: Eric Kane",
+      "sourceId": "the-carleton",
+      "venueId": "the-carleton-halifax",
+      "venueBasis": "source_id",
+      "organizerId": "the-carleton",
+      "organizerBasis": "source_id",
+      "restaurantId": "osm-node-771690675-the-carleton",
+      "restaurantBasis": "exact_venue_place_name"
+    },
+    {
+      "eventId": "https://novascotia.com/event/prairies-to-ports-paintings-by-jacqueline-faye-miller-peter-ollerhead/#event",
+      "title": "Prairies to Ports: Paintings by Jacqueline Faye Miller & Peter Ollerhead",
+      "sourceId": "tourism-ns-events",
+      "venueId": null,
+      "venueBasis": null,
+      "organizerId": null,
+      "organizerBasis": null,
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
       "eventId": "halifax-convention-centre-f60e028d660d2f86",
       "title": "Nova Scotia Seafood Alliance AGM 2026",
       "sourceId": "halifax-convention-centre",
@@ -578,6 +545,17 @@
       "organizerBasis": "source_id",
       "restaurantId": null,
       "restaurantBasis": null
+    },
+    {
+      "eventId": "the-carleton-199030685fdabd92",
+      "title": "Tyler Salsman: Growing Up Country",
+      "sourceId": "the-carleton",
+      "venueId": "the-carleton-halifax",
+      "venueBasis": "source_id",
+      "organizerId": "the-carleton",
+      "organizerBasis": "source_id",
+      "restaurantId": "osm-node-771690675-the-carleton",
+      "restaurantBasis": "exact_venue_place_name"
     },
     {
       "eventId": "https://novascotia.com/event/combo-show-sept-18/#event",
@@ -597,6 +575,17 @@
       "venueId": "light-house-arts-centre-halifax",
       "venueBasis": "source_id",
       "organizerId": "light-house-arts-centre",
+      "organizerBasis": "source_id",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
+      "eventId": "symphony-nova-scotia-ddeef28518ad1226",
+      "title": "Season 2025-2026",
+      "sourceId": "symphony-nova-scotia",
+      "venueId": null,
+      "venueBasis": null,
+      "organizerId": "symphony-nova-scotia",
       "organizerBasis": "source_id",
       "restaurantId": null,
       "restaurantBasis": null
@@ -833,8 +822,8 @@
       "restaurantBasis": null
     },
     {
-      "eventId": "symphony-nova-scotia-67ae6685230efbf5",
-      "title": "Season 2025-2026",
+      "eventId": "symphony-nova-scotia-0bd0bb2bcfdb8e1f",
+      "title": "Flying On Your Own: A Tribute To Rita MacNeil",
       "sourceId": "symphony-nova-scotia",
       "venueId": null,
       "venueBasis": null,
@@ -844,8 +833,8 @@
       "restaurantBasis": null
     },
     {
-      "eventId": "symphony-nova-scotia-8598a6094168a906",
-      "title": "Season 2025-2026",
+      "eventId": "symphony-nova-scotia-1a9084f29adfdbc9",
+      "title": "Flying On Your Own: A Tribute To Rita MacNeil",
       "sourceId": "symphony-nova-scotia",
       "venueId": null,
       "venueBasis": null,
@@ -961,17 +950,6 @@
       "venueBasis": "source_id",
       "organizerId": "scotiabank-centre",
       "organizerBasis": "source_id",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "https://novascotia.com/event/halifax-paranormal-symposium/#event",
-      "title": "Halifax Paranormal Symposium",
-      "sourceId": "tourism-ns-events",
-      "venueId": null,
-      "venueBasis": null,
-      "organizerId": null,
-      "organizerBasis": null,
       "restaurantId": null,
       "restaurantBasis": null
     },
@@ -1152,6 +1130,17 @@
       "restaurantBasis": null
     },
     {
+      "eventId": "https://novascotia.com/event/hal-con/#event",
+      "title": "Hal-Con 2026",
+      "sourceId": "tourism-ns-events",
+      "venueId": "halifax-convention-centre",
+      "venueBasis": "exact_normalized_venue_name",
+      "organizerId": null,
+      "organizerBasis": null,
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
       "eventId": "halifax-mooseheads-home-ea5695217e11be27",
       "title": "Halifax Mooseheads vs Cape Breton",
       "sourceId": "halifax-mooseheads-home",
@@ -1225,17 +1214,6 @@
       "venueBasis": "source_id",
       "organizerId": "neptune-theatre",
       "organizerBasis": "source_id",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "https://novascotia.com/event/dr-seusss-how-the-grinch-stole-christmas-the-musical/#event",
-      "title": "Dr. Seuss’s How the Grinch Stole Christmas! The Musical",
-      "sourceId": "tourism-ns-events",
-      "venueId": "neptune-theatre-halifax",
-      "venueBasis": "exact_normalized_venue_name",
-      "organizerId": null,
-      "organizerBasis": null,
       "restaurantId": null,
       "restaurantBasis": null
     },
@@ -1328,7 +1306,7 @@
       "restaurantBasis": null
     },
     {
-      "eventId": "symphony-nova-scotia-bc0ff418015d1ab1",
+      "eventId": "symphony-nova-scotia-e14772301b38cd74",
       "title": "NSYO: Music in Motion",
       "sourceId": "symphony-nova-scotia",
       "venueId": null,
@@ -1499,6 +1477,17 @@
       "venueId": "scotiabank-centre-halifax",
       "venueBasis": "source_id",
       "organizerId": "scotiabank-centre",
+      "organizerBasis": "source_id",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
+      "eventId": "light-house-arts-centre-b99b2dbd32dc6778",
+      "title": "Official Tickets for Lennie Gallant | Christmas Show in Halifax — Light House Arts Centre",
+      "sourceId": "light-house-arts-centre",
+      "venueId": "light-house-arts-centre-halifax",
+      "venueBasis": "source_id",
+      "organizerId": "light-house-arts-centre",
       "organizerBasis": "source_id",
       "restaurantId": null,
       "restaurantBasis": null
@@ -1697,6 +1686,17 @@
       "venueId": "scotiabank-centre-halifax",
       "venueBasis": "source_id",
       "organizerId": "halifax-mooseheads",
+      "organizerBasis": "source_id",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
+      "eventId": "light-house-arts-centre-0ec9c156a5ca1dee",
+      "title": "A Saucerful of Floyd | Pink Floyd Tribute in Halifax | Tickets — Light House Arts Centre",
+      "sourceId": "light-house-arts-centre",
+      "venueId": "light-house-arts-centre-halifax",
+      "venueBasis": "source_id",
+      "organizerId": "light-house-arts-centre",
       "organizerBasis": "source_id",
       "restaurantId": null,
       "restaurantBasis": null

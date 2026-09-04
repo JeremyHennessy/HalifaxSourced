@@ -1,33 +1,33 @@
 {
-  "generatedAt": "2026-09-04T12:12:51.293Z",
+  "generatedAt": "2026-09-04T12:59:13.783Z",
   "socialPlatformRegistryVersion": 1,
   "counts": {
-    "firstPartyRecords": 240,
-    "socialProfiles": 412,
+    "firstPartyRecords": 241,
+    "socialProfiles": 414,
     "platformCounts": {
-      "instagram": 151,
-      "facebook": 148,
+      "facebook": 149,
+      "instagram": 152,
+      "youtube": 14,
       "x": 67,
       "tiktok": 18,
-      "pinterest": 3,
-      "youtube": 14,
       "linkedin": 9,
+      "pinterest": 3,
       "bluesky": 2
     },
     "linkHubs": 0,
     "linkHubCounts": {},
     "associationBasisCounts": {
-      "linked_from_official_website": 395,
+      "linked_from_official_website": 397,
       "jsonld_sameAs": 10,
       "shared_brand_profile": 2,
       "linked_from_official_location_page": 5
     },
-    "relatedLinks": 744,
+    "relatedLinks": 748,
     "relatedKindCounts": {
-      "menu": 478,
-      "reservations": 74,
+      "menu": 479,
+      "reservations": 75,
       "ordering": 117,
-      "events": 68,
+      "events": 70,
       "newsletter": 6,
       "tickets": 1
     },
@@ -37,26 +37,26 @@
     "reviewedFeedsExcluded": 6,
     "websiteFeedSignals": 4,
     "websiteFeedPosts": 15,
-    "websitePageIntelligence": 698,
-    "websitePageRestaurants": 189,
-    "uniqueRestaurantSocialProfiles": 221,
-    "sharedProfileAssociationsSkipped": 71,
+    "websitePageIntelligence": 716,
+    "websitePageRestaurants": 190,
+    "uniqueRestaurantSocialProfiles": 226,
+    "sharedProfileAssociationsSkipped": 75,
     "socialSignals": 0,
     "socialPosts": 0,
-    "recentSocialPosts": 264,
+    "recentSocialPosts": 277,
     "recentSocialPostCategories": {
-      "specials": 142,
+      "specials": 146,
       "openings": 2,
       "menu": 39,
-      "events": 11,
+      "events": 12,
       "happy_hour": 38,
-      "reservations": 4,
-      "live_music": 15,
+      "reservations": 5,
+      "live_music": 22,
       "general_update": 9,
       "brunch": 4
     },
     "recentSocialPostPlatforms": {
-      "official_page": 220,
+      "official_page": 233,
       "website_feed": 13,
       "public_source": 31
     }
@@ -66,19 +66,19 @@
     "instagram": "missing"
   },
   "recentPostState": {
-    "generatedAt": "2026-09-04T11:59:52.243Z",
+    "generatedAt": "2026-09-04T12:54:54.309Z",
     "lookbackDays": 180,
     "sourceState": {
-      "websiteFeedsGeneratedAt": "2026-09-04T11:59:40.952Z",
-      "websitePagesGeneratedAt": "2026-09-04T11:59:41.020Z",
-      "metaSocialGeneratedAt": "2026-09-04T11:32:54.604Z",
+      "websiteFeedsGeneratedAt": "2026-09-04T12:52:36.408Z",
+      "websitePagesGeneratedAt": "2026-09-04T12:54:37.481Z",
+      "metaSocialGeneratedAt": "2026-09-04T12:52:12.257Z",
       "metaCredentialState": {
         "facebook": "missing",
         "instagram": "missing"
       },
       "metaProfilesAttempted": 0,
       "metaPostsObserved": 0,
-      "publicSpecialSourceGeneratedAt": "2026-09-03T20:01:16.791Z",
+      "publicSpecialSourceGeneratedAt": "2026-09-04T12:46:37.916Z",
       "publicSpecialSourceRecords": 143
     }
   },
@@ -92,7 +92,7 @@
     },
     {
       "type": "shared_brand_social_profiles_excluded",
-      "count": 71
+      "count": 75
     },
     {
       "type": "shared_brand_feeds_excluded",

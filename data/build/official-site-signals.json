@@ -1,16 +1,16 @@
 {
-  "generatedAt": "2026-09-03T19:55:42.297Z",
+  "generatedAt": "2026-09-04T12:38:19.065Z",
   "count": 290,
   "kindCounts": {
-    "menu": 163,
-    "specials": 110,
-    "events": 77,
+    "menu": 164,
+    "specials": 111,
+    "events": 78,
     "patio": 19,
     "openings": 8,
     "closures": 0,
     "moves": 4,
     "brunch": 37,
-    "reservations": 107,
+    "reservations": 109,
     "takeout": 88
   },
   "signalGroups": {
@@ -102,7 +102,7 @@
       "name": "Bar Kismet",
       "website": "https://barkismet.com/",
       "status": 200,
-      "observedAt": "2026-09-03T19:54:35.252Z",
+      "observedAt": "2026-09-04T12:37:14.135Z",
       "keywordHits": [
         "menu",
         "cocktail",
@@ -171,7 +171,7 @@
       "name": "The Bicycle Thief",
       "website": "https://bicyclethief.ca/",
       "status": 200,
-      "observedAt": "2026-09-03T19:54:35.296Z",
+      "observedAt": "2026-09-04T12:37:14.184Z",
       "keywordHits": [
         "menu",
         "offers",
@@ -259,7 +259,7 @@
       "name": "EDNA",
       "website": "https://www.ednarestaurant.com/",
       "status": 200,
-      "observedAt": "2026-09-03T19:54:35.297Z",
+      "observedAt": "2026-09-04T12:37:14.185Z",
       "keywordHits": [
         "menu",
         "reservation",
@@ -366,7 +366,7 @@
       "name": "The Press Gang",
       "website": "https://thepressgang.ca/",
       "status": 200,
-      "observedAt": "2026-09-03T19:54:35.297Z",
+      "observedAt": "2026-09-04T12:37:14.186Z",
       "keywordHits": [
         "menu",
         "reservation"
@@ -470,7 +470,7 @@
       "name": "The Narrows Public House",
       "website": "https://www.thenarrowspublichouse.ca/",
       "status": 200,
-      "observedAt": "2026-09-03T19:54:35.298Z",
+      "observedAt": "2026-09-04T12:37:14.186Z",
       "keywordHits": [
         "menu",
         "live music",
@@ -522,7 +522,7 @@
       "name": "2 Doors Down",
       "website": "https://go2doorsdown.com/",
       "status": 200,
-      "observedAt": "2026-09-03T19:54:35.299Z",
+      "observedAt": "2026-09-04T12:37:14.187Z",
       "keywordHits": [
         "menu",
         "cocktail",
@@ -746,7 +746,7 @@
       "name": "Battery Park Beer Bar",
       "website": "https://batterypark.ca/",
       "status": 200,
-      "observedAt": "2026-09-03T19:54:35.299Z",
+      "observedAt": "2026-09-04T12:37:14.188Z",
       "keywordHits": [
         "special",
         "specials",
@@ -783,7 +783,7 @@
       "name": "Dear Friend Bar",
       "website": "https://dearfriendbar.com/",
       "status": 200,
-      "observedAt": "2026-09-03T19:54:35.300Z",
+      "observedAt": "2026-09-04T12:37:14.188Z",
       "keywordHits": [
         "menu",
         "cocktail",
@@ -896,7 +896,7 @@
       "name": "Highwayman",
       "website": "https://www.highwaymanhfx.com/",
       "status": 200,
-      "observedAt": "2026-09-03T19:54:35.552Z",
+      "observedAt": "2026-09-04T12:37:14.408Z",
       "keywordHits": [
         "menu",
         "food menu",
@@ -1103,7 +1103,7 @@
       "name": "Field Guide",
       "website": "https://fieldguidehfx.com/",
       "error": "fetch failed",
-      "observedAt": "2026-09-03T19:54:35.567Z",
+      "observedAt": "2026-09-04T12:37:14.493Z",
       "sourceKind": "official_website",
       "reviewState": "cross-check"
     },
@@ -1112,7 +1112,7 @@
       "name": "2 Crows Brewing",
       "website": "https://2crowsbrewing.com/",
       "status": 200,
-      "observedAt": "2026-09-03T19:54:35.598Z",
+      "observedAt": "2026-09-04T12:37:14.524Z",
       "keywordHits": [
         "special",
         "coming soon"
@@ -1142,7 +1142,7 @@
       "name": "7 Peppers Grill",
       "website": "https://www.7peppersgrill.net/",
       "status": 200,
-      "observedAt": "2026-09-03T19:54:35.729Z",
+      "observedAt": "2026-09-04T12:37:14.627Z",
       "keywordHits": [
         "menu",
         "special",
@@ -1202,7 +1202,7 @@
       "name": "9 + Nine",
       "website": "https://9plus9.ca/",
       "error": "fetch failed",
-      "observedAt": "2026-09-03T19:54:35.752Z",
+      "observedAt": "2026-09-04T12:37:14.661Z",
       "sourceKind": "official_website",
       "reviewState": "cross-check"
     },
@@ -1211,7 +1211,7 @@
       "name": "A&W",
       "website": "https://web.aw.ca/en/locations/6012/dartmouth/240-victoria-rd",
       "status": 200,
-      "observedAt": "2026-09-03T19:54:35.836Z",
+      "observedAt": "2026-09-04T12:37:14.689Z",
       "keywordHits": [],
       "signalMatches": {
         "menu": [],
@@ -1234,7 +1234,7 @@
       "name": "aFrite",
       "website": "https://afrite.ca/",
       "status": 200,
-      "observedAt": "2026-09-03T19:54:35.884Z",
+      "observedAt": "2026-09-04T12:37:14.836Z",
       "keywordHits": [
         "menu",
         "special",
@@ -1403,7 +1403,7 @@
       "name": "Almonak",
       "website": "https://www.almonak.com/",
       "status": 200,
-      "observedAt": "2026-09-03T19:54:35.903Z",
+      "observedAt": "2026-09-04T12:37:14.871Z",
       "keywordHits": [
         "event",
         "book a table"
@@ -1471,7 +1471,7 @@
       "name": "Antojo Tacos + Tequila",
       "website": "https://antojo.ca/",
       "status": 200,
-      "observedAt": "2026-09-03T19:54:35.935Z",
+      "observedAt": "2026-09-04T12:37:14.919Z",
       "keywordHits": [
         "menu",
         "drink menu",
@@ -1627,7 +1627,7 @@
       "name": "Ardmore Tea Room",
       "website": "https://www.ardmoretearoom.ca/",
       "status": 200,
-      "observedAt": "2026-09-03T19:54:36.009Z",
+      "observedAt": "2026-09-04T12:37:14.930Z",
       "keywordHits": [
         "menu",
         "features",
@@ -1724,7 +1724,7 @@
       "name": "Arirang Korean & Japanese",
       "website": "https://arirang-restaurant.com/",
       "error": "fetch failed",
-      "observedAt": "2026-09-03T19:54:36.047Z",
+      "observedAt": "2026-09-04T12:37:14.944Z",
       "sourceKind": "official_website",
       "reviewState": "cross-check"
     },
@@ -1733,7 +1733,7 @@
       "name": "Asia Restaurant & Bar",
       "website": "https://asiahalifax.com/",
       "error": "fetch failed",
-      "observedAt": "2026-09-03T19:54:36.160Z",
+      "observedAt": "2026-09-04T12:37:15.041Z",
       "sourceKind": "official_website",
       "reviewState": "cross-check"
     },
@@ -1742,7 +1742,7 @@
       "name": "Bai Wei Grill Bar",
       "website": "http://baiweigrillbar.com/",
       "error": "fetch failed",
-      "observedAt": "2026-09-03T19:54:36.160Z",
+      "observedAt": "2026-09-04T12:37:15.094Z",
       "sourceKind": "official_website",
       "reviewState": "cross-check"
     },
@@ -1751,7 +1751,7 @@
       "name": "BarBurrito",
       "website": "https://www.barburrito.ca/location/dartmouth/",
       "status": 200,
-      "observedAt": "2026-09-03T19:54:36.177Z",
+      "observedAt": "2026-09-04T12:37:15.100Z",
       "keywordHits": [
         "menu",
         "reserve",
@@ -1877,7 +1877,7 @@
       "name": "Barrios Kitchen & Bar",
       "website": "https://barrioshfx.ca/",
       "status": 200,
-      "observedAt": "2026-09-03T19:54:36.370Z",
+      "observedAt": "2026-09-04T12:37:15.323Z",
       "keywordHits": [
         "menu",
         "cocktail",
@@ -2087,7 +2087,7 @@
       "name": "Battery Park Beer Bar & Eatery",
       "website": "https://batterypark.ca/",
       "status": 200,
-      "observedAt": "2026-09-03T19:54:35.668Z",
+      "observedAt": "2026-09-04T12:37:14.541Z",
       "keywordHits": [
         "special",
         "specials",
@@ -2124,7 +2124,7 @@
       "name": "Bedford Beer Garden",
       "website": "https://www.bedfordbeergarden.com/",
       "status": 200,
-      "observedAt": "2026-09-03T19:54:36.443Z",
+      "observedAt": "2026-09-04T12:37:15.377Z",
       "keywordHits": [
         "menu",
         "food menu",
@@ -2243,7 +2243,7 @@
       "name": "Ben & Florentine",
       "website": "https://locations.benetflorentine.com/",
       "status": 200,
-      "observedAt": "2026-09-03T19:54:36.503Z",
+      "observedAt": "2026-09-04T12:37:15.409Z",
       "keywordHits": [
         "menu",
         "breakfast",
@@ -2338,7 +2338,7 @@
       "name": "Bicycle Thief",
       "website": "https://bicyclethief.ca/",
       "status": 200,
-      "observedAt": "2026-09-03T19:54:35.712Z",
+      "observedAt": "2026-09-04T12:37:14.759Z",
       "keywordHits": [
         "menu",
         "offers",
@@ -2426,7 +2426,7 @@
       "name": "Bird's Nest Cafe",
       "website": "https://www.birdsnesthalifax.com/",
       "status": 200,
-      "observedAt": "2026-09-03T19:54:36.887Z",
+      "observedAt": "2026-09-04T12:37:15.809Z",
       "keywordHits": [
         "menu",
         "special",
@@ -2497,7 +2497,7 @@
       "name": "Bitter End Martini Bar & Restaurant",
       "website": "https://www.bitterend.ca/",
       "status": 200,
-      "observedAt": "2026-09-03T19:54:36.903Z",
+      "observedAt": "2026-09-04T12:37:16.000Z",
       "keywordHits": [
         "menu",
         "reserve"
@@ -2564,7 +2564,7 @@
       "name": "Bluenose II",
       "website": "https://bluenoseii.ca/",
       "status": 200,
-      "observedAt": "2026-09-03T19:54:37.141Z",
+      "observedAt": "2026-09-04T12:37:16.037Z",
       "keywordHits": [
         "menu",
         "special",
@@ -2655,18 +2655,145 @@
     {
       "restaurantId": "osm-node-4420916900-board-room-game-cafe",
       "name": "Board Room Game Cafe",
-      "website": "http://boardroomgames.ca/",
-      "error": "robots_disallow",
-      "observedAt": "2026-09-03T19:54:37.219Z",
+      "website": "https://boardroomgames.wixsite.com/tbrgc",
+      "status": 200,
+      "observedAt": "2026-09-04T12:37:16.192Z",
+      "keywordHits": [
+        "menu",
+        "special",
+        "event",
+        "events",
+        "trivia",
+        "reservation",
+        "book a table"
+      ],
+      "signalMatches": {
+        "menu": [
+          "menu"
+        ],
+        "specials": [
+          "special"
+        ],
+        "events": [
+          "event",
+          "events",
+          "trivia"
+        ],
+        "patio": [],
+        "openings": [],
+        "closures": [],
+        "moves": [],
+        "brunch": [],
+        "reservations": [
+          "reservation",
+          "book a table"
+        ],
+        "takeout": []
+      },
+      "candidateLinks": [
+        {
+          "text": "BOOK A TABLE",
+          "href": "https://tbdine.com/halifax/restaurants/the-boardroom-game-cafe",
+          "signalMatches": {
+            "menu": [],
+            "specials": [],
+            "events": [],
+            "patio": [],
+            "openings": [],
+            "closures": [],
+            "moves": [],
+            "brunch": [],
+            "reservations": [
+              "book a table"
+            ],
+            "takeout": []
+          }
+        },
+        {
+          "text": "Menus",
+          "href": "https://boardroomgames.wixsite.com/tbrgc/menu",
+          "signalMatches": {
+            "menu": [
+              "menu"
+            ],
+            "specials": [],
+            "events": [],
+            "patio": [],
+            "openings": [],
+            "closures": [],
+            "moves": [],
+            "brunch": [],
+            "reservations": [],
+            "takeout": []
+          }
+        },
+        {
+          "text": "Events",
+          "href": "https://boardroomgames.wixsite.com/tbrgc/upcoming-events",
+          "signalMatches": {
+            "menu": [],
+            "specials": [],
+            "events": [
+              "event",
+              "events"
+            ],
+            "patio": [],
+            "openings": [],
+            "closures": [],
+            "moves": [],
+            "brunch": [],
+            "reservations": [],
+            "takeout": []
+          }
+        },
+        {
+          "text": "TTRPG Events",
+          "href": "https://boardroomgames.wixsite.com/tbrgc/info",
+          "signalMatches": {
+            "menu": [],
+            "specials": [],
+            "events": [
+              "event",
+              "events"
+            ],
+            "patio": [],
+            "openings": [],
+            "closures": [],
+            "moves": [],
+            "brunch": [],
+            "reservations": [],
+            "takeout": []
+          }
+        },
+        {
+          "text": "Read More &gt;",
+          "href": "https://boardroomgames.wixsite.com/tbrgc/upcoming-events",
+          "signalMatches": {
+            "menu": [],
+            "specials": [],
+            "events": [
+              "event",
+              "events"
+            ],
+            "patio": [],
+            "openings": [],
+            "closures": [],
+            "moves": [],
+            "brunch": [],
+            "reservations": [],
+            "takeout": []
+          }
+        }
+      ],
       "sourceKind": "official_website",
-      "reviewState": "restricted"
+      "reviewState": "cross-check"
     },
     {
       "restaurantId": "osm-node-8636456775-booster-juice",
       "name": "Booster Juice",
       "website": "https://boosterjuice.com/en-ca",
       "status": 200,
-      "observedAt": "2026-09-03T19:54:37.271Z",
+      "observedAt": "2026-09-04T12:37:16.193Z",
       "keywordHits": [
         "menu",
         "special",
@@ -2812,7 +2939,7 @@
       "name": "Boston Pizza",
       "website": "https://bostonpizza.com/en/index.html",
       "status": 200,
-      "observedAt": "2026-09-03T19:54:37.601Z",
+      "observedAt": "2026-09-04T12:37:16.457Z",
       "keywordHits": [
         "menu",
         "offers",
@@ -3145,7 +3272,7 @@
       "name": "Bramble Cafe",
       "website": "https://www.instagram.com/bramble.hfx",
       "error": "robots_disallow",
-      "observedAt": "2026-09-03T19:54:37.691Z",
+      "observedAt": "2026-09-04T12:37:16.640Z",
       "sourceKind": "official_website",
       "reviewState": "restricted"
     },
@@ -3154,7 +3281,7 @@
       "name": "Brawta Jamaican Jerk Joint",
       "website": "https://brawtajerk.ca/",
       "status": 200,
-      "observedAt": "2026-09-03T19:54:37.801Z",
+      "observedAt": "2026-09-04T12:37:16.693Z",
       "keywordHits": [
         "menu",
         "special",
@@ -3224,7 +3351,7 @@
       "name": "Brief Break",
       "website": "https://dal.mydininghub.ca/en/locations",
       "status": 200,
-      "observedAt": "2026-09-03T19:54:37.889Z",
+      "observedAt": "2026-09-04T12:37:16.957Z",
       "keywordHits": [
         "menu"
       ],
@@ -3288,7 +3415,7 @@
       "name": "Budapest Bisztro",
       "website": "https://budapestbisztro.ca/",
       "status": 200,
-      "observedAt": "2026-09-03T19:54:38.118Z",
+      "observedAt": "2026-09-04T12:37:16.987Z",
       "keywordHits": [],
       "signalMatches": {
         "menu": [],
@@ -3311,7 +3438,7 @@
       "name": "Cabin Coffee",
       "website": "https://cabincoffeehalifax.com/",
       "status": 200,
-      "observedAt": "2026-09-03T19:54:38.153Z",
+      "observedAt": "2026-09-04T12:37:16.988Z",
       "keywordHits": [],
       "signalMatches": {
         "menu": [],
@@ -3334,7 +3461,7 @@
       "name": "Café Good Luck",
       "website": "https://cafegoodluck.ca/goodluck",
       "status": 200,
-      "observedAt": "2026-09-03T19:54:38.280Z",
+      "observedAt": "2026-09-04T12:37:17.051Z",
       "keywordHits": [
         "menu",
         "special",
@@ -3431,7 +3558,7 @@
       "name": "Café Lara",
       "website": "https://cafelara.ca/",
       "error": "fetch failed",
-      "observedAt": "2026-09-03T19:54:38.359Z",
+      "observedAt": "2026-09-04T12:37:17.075Z",
       "sourceKind": "official_website",
       "reviewState": "cross-check"
     },
@@ -3440,7 +3567,7 @@
       "name": "Café Lunette",
       "website": "https://www.cafelunette.com/",
       "status": 200,
-      "observedAt": "2026-09-03T19:54:38.527Z",
+      "observedAt": "2026-09-04T12:37:17.177Z",
       "keywordHits": [
         "menu",
         "wine list",
@@ -3741,7 +3868,7 @@
       "name": "Cafe Marco Polo",
       "website": "https://justuscoffee.com/locations/kings-wharf-dartmouth",
       "status": 404,
-      "observedAt": "2026-09-03T19:54:38.783Z",
+      "observedAt": "2026-09-04T12:37:17.274Z",
       "keywordHits": [
         "menu"
       ],
@@ -3768,7 +3895,7 @@
       "name": "Canton Garden",
       "website": "https://www.cantongardenns.com/yik8nsx2/restaurant/order-online?utm_source=redirect&utm_medium=cantongardenhalifax.com",
       "status": 200,
-      "observedAt": "2026-09-03T19:54:38.950Z",
+      "observedAt": "2026-09-04T12:37:17.422Z",
       "keywordHits": [
         "menu",
         "special",
@@ -4198,7 +4325,7 @@
       "name": "Castello Café",
       "website": "https://www.facebook.com/CastelloCafeCatering/",
       "error": "robots_disallow",
-      "observedAt": "2026-09-03T19:54:39.056Z",
+      "observedAt": "2026-09-04T12:37:17.548Z",
       "sourceKind": "official_website",
       "reviewState": "restricted"
     },
@@ -4207,7 +4334,7 @@
       "name": "Cha Baa Thai",
       "website": "https://www.chabaathairestaurant.ca/",
       "error": "fetch failed",
-      "observedAt": "2026-09-03T19:54:39.183Z",
+      "observedAt": "2026-09-04T12:37:17.777Z",
       "sourceKind": "official_website",
       "reviewState": "cross-check"
     },
@@ -4216,7 +4343,7 @@
       "name": "Chain Yard Urban Cidery",
       "website": "http://://www.chainyardcider.com",
       "error": "invalid_url",
-      "observedAt": "2026-09-03T19:54:35.251Z",
+      "observedAt": "2026-09-04T12:37:14.134Z",
       "sourceKind": "official_website",
       "reviewState": "cross-check"
     },
@@ -4225,7 +4352,7 @@
       "name": "Charm School",
       "website": "https://unfuckingfiltered.com/",
       "status": 200,
-      "observedAt": "2026-09-03T19:54:39.351Z",
+      "observedAt": "2026-09-04T12:37:17.823Z",
       "keywordHits": [
         "menu"
       ],
@@ -4271,7 +4398,7 @@
       "name": "Cheese Curds and Habaneros",
       "website": "https://cheesecurdsgourmetburgersandpoutinerie.unuhub.net/",
       "status": 200,
-      "observedAt": "2026-09-03T19:54:40.115Z",
+      "observedAt": "2026-09-04T12:37:17.823Z",
       "keywordHits": [
         "menu",
         "special",
@@ -4312,7 +4439,7 @@
       "name": "Cheese Curds Burgers",
       "website": "https://www.cheesecurdsburgers.com/",
       "status": 200,
-      "observedAt": "2026-09-03T19:54:40.118Z",
+      "observedAt": "2026-09-04T12:37:18.626Z",
       "keywordHits": [
         "menu",
         "order online"
@@ -4451,7 +4578,7 @@
       "name": "Cheese Curds Gourmet Burgers and Poutinerie/Habaneros Modern Taco Bar",
       "website": "https://www.cheesecurdsburgers.com/",
       "status": 200,
-      "observedAt": "2026-09-03T19:54:40.557Z",
+      "observedAt": "2026-09-04T12:37:19.174Z",
       "keywordHits": [
         "menu",
         "order online"
@@ -4590,7 +4717,7 @@
       "name": "Chinatown",
       "website": "https://www.chinatownhalifax.com/",
       "status": 200,
-      "observedAt": "2026-09-03T19:54:40.119Z",
+      "observedAt": "2026-09-04T12:37:18.837Z",
       "keywordHits": [
         "menu",
         "reserve",
@@ -4757,7 +4884,7 @@
       "name": "Chkn Chop",
       "website": "https://www.chknchop.com/",
       "status": 200,
-      "observedAt": "2026-09-03T19:54:40.400Z",
+      "observedAt": "2026-09-04T12:37:18.970Z",
       "keywordHits": [
         "menu"
       ],
@@ -4839,7 +4966,7 @@
       "name": "Classic Pizza",
       "website": "https://classic-pizza.order-online.ai/",
       "status": 200,
-      "observedAt": "2026-09-03T19:54:40.468Z",
+      "observedAt": "2026-09-04T12:37:19.143Z",
       "keywordHits": [],
       "signalMatches": {
         "menu": [],
@@ -4862,7 +4989,7 @@
       "name": "Clay West Bar & Grill",
       "website": "https://claywesthalifax.business.site/",
       "status": 404,
-      "observedAt": "2026-09-03T19:54:40.780Z",
+      "observedAt": "2026-09-04T12:37:19.259Z",
       "keywordHits": [],
       "signalMatches": {
         "menu": [],
@@ -4885,7 +5012,7 @@
       "name": "Colleen's Pub",
       "website": "https://www.facebook.com/oldwrinkleranch/",
       "error": "robots_disallow",
-      "observedAt": "2026-09-03T19:54:39.258Z",
+      "observedAt": "2026-09-04T12:37:17.753Z",
       "sourceKind": "official_website",
       "reviewState": "restricted"
     },
@@ -4894,7 +5021,7 @@
       "name": "Cora",
       "website": "https://www.chezcora.com/en/breakfast-lunch-restaurants/halifax-downtown/",
       "status": 200,
-      "observedAt": "2026-09-03T19:54:40.796Z",
+      "observedAt": "2026-09-04T12:37:19.364Z",
       "keywordHits": [
         "menu",
         "special",
@@ -5377,7 +5504,7 @@
       "name": "Cora",
       "website": "https://www.chezcora.com/en/",
       "status": 200,
-      "observedAt": "2026-09-03T19:54:42.117Z",
+      "observedAt": "2026-09-04T12:37:20.693Z",
       "keywordHits": [
         "menu",
         "special",
@@ -5851,7 +5978,7 @@
       "name": "Cousins Restaurant",
       "website": "https://cousinsrestaurant.webs.com/",
       "error": "fetch failed",
-      "observedAt": "2026-09-03T19:54:40.817Z",
+      "observedAt": "2026-09-04T12:37:19.625Z",
       "sourceKind": "official_website",
       "reviewState": "cross-check"
     },
@@ -5860,7 +5987,7 @@
       "name": "Creative Cup Cafe",
       "website": "https://facebook.com/Creative-Cup-Cafe-112888013737872/",
       "error": "robots_disallow",
-      "observedAt": "2026-09-03T19:54:39.385Z",
+      "observedAt": "2026-09-04T12:37:17.884Z",
       "sourceKind": "official_website",
       "reviewState": "restricted"
     },
@@ -5869,7 +5996,7 @@
       "name": "Crème",
       "website": "https://cremehalifax.com/",
       "status": 200,
-      "observedAt": "2026-09-03T19:54:40.851Z",
+      "observedAt": "2026-09-04T12:37:19.773Z",
       "keywordHits": [
         "menu",
         "cocktail",
@@ -6065,7 +6192,7 @@
       "name": "Curry Village",
       "website": "https://www.curryvillage.ca/",
       "status": 526,
-      "observedAt": "2026-09-03T19:54:41.001Z",
+      "observedAt": "2026-09-04T12:37:19.802Z",
       "keywordHits": [],
       "signalMatches": {
         "menu": [],
@@ -6088,7 +6215,7 @@
       "name": "Cut Contemporary Steak House & Urban Grill",
       "website": "https://www.rcr.ca/restaurants/cut-steakhouse/",
       "status": 200,
-      "observedAt": "2026-09-03T19:54:41.334Z",
+      "observedAt": "2026-09-04T12:37:19.866Z",
       "keywordHits": [
         "menu",
         "cocktail",
@@ -6209,7 +6336,7 @@
       "name": "Darrell's",
       "website": "https://darrellsrestaurants.com/",
       "status": 200,
-      "observedAt": "2026-09-03T19:54:41.349Z",
+      "observedAt": "2026-09-04T12:37:19.903Z",
       "keywordHits": [
         "menu",
         "features",
@@ -6285,7 +6412,7 @@
       "name": "Dharma sushi",
       "website": "https://dharmasushi.ca/",
       "error": "fetch failed",
-      "observedAt": "2026-09-03T19:54:41.584Z",
+      "observedAt": "2026-09-04T12:37:19.942Z",
       "sourceKind": "official_website",
       "reviewState": "cross-check"
     },
@@ -6294,7 +6421,7 @@
       "name": "Donnini's Pizza",
       "website": "https://donninispizza.com/",
       "status": 200,
-      "observedAt": "2026-09-03T19:54:42.233Z",
+      "observedAt": "2026-09-04T12:37:20.142Z",
       "keywordHits": [
         "menu",
         "special",
@@ -6408,7 +6535,7 @@
       "name": "Dooly's",
       "website": "https://www.doolys.ca/",
       "status": 200,
-      "observedAt": "2026-09-03T19:54:42.684Z",
+      "observedAt": "2026-09-04T12:37:20.172Z",
       "keywordHits": [
         "promo"
       ],
@@ -6493,7 +6620,7 @@
       "name": "Doraku",
       "website": "https://doraku.yolasite.com/",
       "status": 200,
-      "observedAt": "2026-09-03T19:54:42.734Z",
+      "observedAt": "2026-09-04T12:37:20.632Z",
       "keywordHits": [
         "reservation",
         "pick up"
@@ -6523,7 +6650,7 @@
       "name": "Downtown Pizza",
       "website": "https://downtownpizza.ca/",
       "status": 200,
-      "observedAt": "2026-09-03T19:54:42.909Z",
+      "observedAt": "2026-09-04T12:37:20.647Z",
       "keywordHits": [
         "menu",
         "special",
@@ -6803,7 +6930,7 @@
       "name": "Durty Nelly's Irish Pub",
       "website": "https://durtynellys.ca/",
       "status": 200,
-      "observedAt": "2026-09-03T19:54:43.167Z",
+      "observedAt": "2026-09-04T12:37:21.009Z",
       "keywordHits": [
         "menu",
         "live music",
@@ -7004,7 +7131,7 @@
       "name": "East Cup Cafe",
       "website": "https://eastcupcafe.com/",
       "status": 200,
-      "observedAt": "2026-09-03T19:54:43.172Z",
+      "observedAt": "2026-09-04T12:37:21.010Z",
       "keywordHits": [
         "special",
         "offers"
@@ -7052,7 +7179,7 @@
       "name": "Efendy Turkish & Mediterranean Grill",
       "website": "http://www.efendyrestaurant.com/",
       "error": "fetch failed",
-      "observedAt": "2026-09-03T19:54:43.302Z",
+      "observedAt": "2026-09-04T12:37:21.034Z",
       "sourceKind": "official_website",
       "reviewState": "cross-check"
     },
@@ -7061,7 +7188,7 @@
       "name": "Ela Greek Taverna",
       "website": "https://elagreektaverna.com/",
       "status": 200,
-      "observedAt": "2026-09-03T19:54:43.448Z",
+      "observedAt": "2026-09-04T12:37:21.317Z",
       "keywordHits": [
         "menu",
         "special",
@@ -7268,7 +7395,7 @@
       "name": "ela! Greek Taverna",
       "website": "https://elagreektaverna.com/",
       "status": 200,
-      "observedAt": "2026-09-03T19:54:44.153Z",
+      "observedAt": "2026-09-04T12:37:22.042Z",
       "keywordHits": [
         "menu",
         "special",
@@ -7475,7 +7602,7 @@
       "name": "Espresso 46",
       "website": "https://espresso46.com/",
       "error": "fetch failed",
-      "observedAt": "2026-09-03T19:54:43.484Z",
+      "observedAt": "2026-09-04T12:37:21.383Z",
       "sourceKind": "official_website",
       "reviewState": "cross-check"
     },
@@ -7484,7 +7611,7 @@
       "name": "Fan's Chinese Restaurant",
       "website": "https://www.fansrestaurant.ca/",
       "status": 200,
-      "observedAt": "2026-09-03T19:54:43.651Z",
+      "observedAt": "2026-09-04T12:37:21.451Z",
       "keywordHits": [
         "menu",
         "special",
@@ -7642,7 +7769,7 @@
       "name": "Fattoush Mediterranean Grill",
       "website": "https://m.facebook.com/FattoushMediterraneanGrill/",
       "error": "robots_disallow",
-      "observedAt": "2026-09-03T19:54:43.761Z",
+      "observedAt": "2026-09-04T12:37:21.554Z",
       "sourceKind": "official_website",
       "reviewState": "restricted"
     },
@@ -7651,7 +7778,7 @@
       "name": "Fillings Bistro 32",
       "website": "https://dal.mydininghub.ca/en/locations",
       "status": 200,
-      "observedAt": "2026-09-03T19:54:38.506Z",
+      "observedAt": "2026-09-04T12:37:17.637Z",
       "keywordHits": [
         "menu"
       ],
@@ -7715,7 +7842,7 @@
       "name": "Flynn's Dairy Bar",
       "website": "https://www.facebook.com/flynns711/",
       "error": "robots_disallow",
-      "observedAt": "2026-09-03T19:54:39.684Z",
+      "observedAt": "2026-09-04T12:37:18.166Z",
       "sourceKind": "official_website",
       "reviewState": "restricted"
     },
@@ -7724,7 +7851,7 @@
       "name": "Food Court of Spring Garden Place",
       "website": "https://www.starbucks.ca/store-locator/store/4085-255631/5640-spring-garden-road-5640-spring-garden-road-301-halifax-ns-b-3-j-3-m-7",
       "status": 200,
-      "observedAt": "2026-09-03T19:54:43.987Z",
+      "observedAt": "2026-09-04T12:37:21.615Z",
       "keywordHits": [],
       "signalMatches": {
         "menu": [],
@@ -7747,7 +7874,7 @@
       "name": "Freeman's Little New York",
       "website": "https://www.freemanspizza.ca/",
       "status": 200,
-      "observedAt": "2026-09-03T19:54:44.022Z",
+      "observedAt": "2026-09-04T12:37:21.621Z",
       "keywordHits": [
         "menu",
         "event",
@@ -7892,7 +8019,7 @@
       "name": "Fries & Co.",
       "website": "http://www.facebook.com/pages/Fries-Co/339657883852",
       "error": "robots_disallow",
-      "observedAt": "2026-09-03T19:54:39.806Z",
+      "observedAt": "2026-09-04T12:37:18.292Z",
       "sourceKind": "official_website",
       "reviewState": "restricted"
     },
@@ -7901,7 +8028,7 @@
       "name": "Fujiyama",
       "website": "http://www.sushifujiyama.com/",
       "status": 200,
-      "observedAt": "2026-09-03T19:54:44.054Z",
+      "observedAt": "2026-09-04T12:37:21.819Z",
       "keywordHits": [],
       "signalMatches": {
         "menu": [],
@@ -7924,7 +8051,7 @@
       "name": "G-Street Pizza",
       "website": "https://gstreetpizza.ca/",
       "error": "fetch failed",
-      "observedAt": "2026-09-03T19:54:44.314Z",
+      "observedAt": "2026-09-04T12:37:21.840Z",
       "sourceKind": "official_website",
       "reviewState": "cross-check"
     },
@@ -7933,7 +8060,7 @@
       "name": "Gahan House",
       "website": "https://gahan.ca/",
       "status": 200,
-      "observedAt": "2026-09-03T19:54:44.647Z",
+      "observedAt": "2026-09-04T12:37:21.930Z",
       "keywordHits": [
         "reserve"
       ],
@@ -7960,7 +8087,7 @@
       "name": "Genji Sushi",
       "website": "http://www.genjisushi.ca/",
       "status": 200,
-      "observedAt": "2026-09-03T19:54:44.932Z",
+      "observedAt": "2026-09-04T12:37:22.258Z",
       "keywordHits": [
         "menu",
         "reservation",
@@ -8160,7 +8287,7 @@
       "name": "Gingerbread Haus Bakery",
       "website": "https://www.gingerbreadhausbakery.com/",
       "status": 200,
-      "observedAt": "2026-09-03T19:54:45.117Z",
+      "observedAt": "2026-09-04T12:37:22.474Z",
       "keywordHits": [],
       "signalMatches": {
         "menu": [],
@@ -8183,7 +8310,7 @@
       "name": "Glitter Bean Cafe",
       "website": "https://justitalymentone.com/",
       "status": 200,
-      "observedAt": "2026-09-03T19:54:46.066Z",
+      "observedAt": "2026-09-04T12:37:22.509Z",
       "keywordHits": [
         "promo",
         "event",
@@ -8234,7 +8361,7 @@
       "name": "Good Robot Brewing Company",
       "website": "https://goodrobotbrewing.ca/",
       "status": 200,
-      "observedAt": "2026-09-03T19:54:46.132Z",
+      "observedAt": "2026-09-04T12:37:23.406Z",
       "keywordHits": [
         "promo",
         "event",
@@ -8325,7 +8452,7 @@
       "name": "Great Wall Restaurant",
       "website": "https://www.thegreatwall.ca/",
       "status": 200,
-      "observedAt": "2026-09-03T19:54:46.499Z",
+      "observedAt": "2026-09-04T12:37:23.759Z",
       "keywordHits": [
         "menu",
         "brunch",
@@ -8399,7 +8526,7 @@
       "name": "Greco Pizza",
       "website": "https://greco.ca/",
       "status": 200,
-      "observedAt": "2026-09-03T19:54:46.540Z",
+      "observedAt": "2026-09-04T12:37:23.922Z",
       "keywordHits": [
         "menu",
         "deal",
@@ -8635,7 +8762,7 @@
       "name": "Green Café",
       "website": "https://dal.mydininghub.ca/en/locations",
       "status": 200,
-      "observedAt": "2026-09-03T19:54:38.799Z",
+      "observedAt": "2026-09-04T12:37:17.929Z",
       "keywordHits": [
         "menu"
       ],
@@ -8699,7 +8826,7 @@
       "name": "Grille Works",
       "website": "https://dal.mydininghub.ca/en/locations",
       "status": 200,
-      "observedAt": "2026-09-03T19:54:39.086Z",
+      "observedAt": "2026-09-04T12:37:18.213Z",
       "keywordHits": [
         "menu"
       ],
@@ -8763,7 +8890,7 @@
       "name": "Ground Zero",
       "website": "https://dal.mydininghub.ca/en/locations",
       "status": 200,
-      "observedAt": "2026-09-03T19:54:39.368Z",
+      "observedAt": "2026-09-04T12:37:18.478Z",
       "keywordHits": [
         "menu"
       ],
@@ -8827,7 +8954,7 @@
       "name": "Hamachi Kita",
       "website": "https://www.hamachikita.com/",
       "status": 200,
-      "observedAt": "2026-09-03T19:54:46.566Z",
+      "observedAt": "2026-09-04T12:37:24.317Z",
       "keywordHits": [
         "menu",
         "special",
@@ -8903,7 +9030,7 @@
       "name": "HARVEST",
       "website": "https://www.harvestcleaneats.ca/",
       "status": 200,
-      "observedAt": "2026-09-03T19:54:46.932Z",
+      "observedAt": "2026-09-04T12:37:24.702Z",
       "keywordHits": [
         "menu",
         "breakfast",
@@ -9029,7 +9156,7 @@
       "name": "Henry House",
       "website": "http://henryhouse.ca/",
       "status": 200,
-      "observedAt": "2026-09-03T19:54:47.266Z",
+      "observedAt": "2026-09-04T12:37:24.741Z",
       "keywordHits": [],
       "signalMatches": {
         "menu": [],
@@ -9052,7 +9179,7 @@
       "name": "Heppy's Pie Lady",
       "website": "http://www.heppys.com/",
       "status": 200,
-      "observedAt": "2026-09-03T19:54:47.481Z",
+      "observedAt": "2026-09-04T12:37:24.830Z",
       "keywordHits": [
         "pickup",
         "delivery"
@@ -9081,7 +9208,7 @@
       "name": "HMCS King’s Wardroom",
       "website": "https://ukings.ca/campus-community/student-life/the-wardroom/",
       "status": 200,
-      "observedAt": "2026-09-03T19:54:47.651Z",
+      "observedAt": "2026-09-04T12:37:24.973Z",
       "keywordHits": [
         "menu",
         "special",
@@ -9254,7 +9381,7 @@
       "name": "Hop Sing Restaurant",
       "website": "https://hopsingrestaurant.ca/",
       "status": 200,
-      "observedAt": "2026-09-03T19:54:47.931Z",
+      "observedAt": "2026-09-04T12:37:25.207Z",
       "keywordHits": [
         "menu",
         "deal",
@@ -9360,7 +9487,7 @@
       "name": "Humani-T",
       "website": "https://humanitea.com/",
       "status": 200,
-      "observedAt": "2026-09-03T19:54:48.117Z",
+      "observedAt": "2026-09-04T12:37:25.208Z",
       "keywordHits": [],
       "signalMatches": {
         "menu": [],
@@ -9383,7 +9510,7 @@
       "name": "Humble Pie Kitchen",
       "website": "https://humblepiekitchen.ca/",
       "status": 200,
-      "observedAt": "2026-09-03T19:54:48.213Z",
+      "observedAt": "2026-09-04T12:37:25.265Z",
       "keywordHits": [
         "menu",
         "take away"
@@ -9432,7 +9559,7 @@
       "name": "IHOP",
       "website": "https://ihop.ca/",
       "status": 200,
-      "observedAt": "2026-09-03T19:54:48.250Z",
+      "observedAt": "2026-09-04T12:37:25.319Z",
       "keywordHits": [
         "menu",
         "features",
@@ -9498,7 +9625,7 @@
       "name": "in spring asian fusion cuisine",
       "website": "https://www.skipthedishes.com/?utm_source=inspringhotpot.com&utm_medium=microsites&utm_campaign=microsites",
       "status": 200,
-      "observedAt": "2026-09-03T19:54:48.467Z",
+      "observedAt": "2026-09-04T12:37:25.608Z",
       "keywordHits": [
         "dj",
         "brunch",
@@ -9733,7 +9860,7 @@
       "name": "India Paradise",
       "website": "https://www.indiaparadise.ca/",
       "status": 200,
-      "observedAt": "2026-09-03T19:54:48.563Z",
+      "observedAt": "2026-09-04T12:37:25.609Z",
       "keywordHits": [
         "menu",
         "special",
@@ -9866,7 +9993,7 @@
       "name": "Jacky's Cafe",
       "website": "https://jackyscafehalifax.com/",
       "status": 200,
-      "observedAt": "2026-09-03T19:54:48.927Z",
+      "observedAt": "2026-09-04T12:37:25.629Z",
       "keywordHits": [
         "menu",
         "special",
@@ -10227,7 +10354,7 @@
       "name": "Java Blend",
       "website": "https://javablendcoffee.com/contact",
       "status": 404,
-      "observedAt": "2026-09-03T19:54:49.057Z",
+      "observedAt": "2026-09-04T12:37:25.756Z",
       "keywordHits": [],
       "signalMatches": {
         "menu": [],
@@ -10250,7 +10377,7 @@
       "name": "Jean's Chinese Restaurant",
       "website": "https://www.jeansrestaurant.ca/",
       "status": 200,
-      "observedAt": "2026-09-03T19:54:49.066Z",
+      "observedAt": "2026-09-04T12:37:25.921Z",
       "keywordHits": [
         "menu",
         "order online",
@@ -10339,7 +10466,7 @@
       "name": "Jenny's Place",
       "website": "https://www.facebook.com/people/Jennys-Place-Pub/100028409456739/",
       "error": "robots_disallow",
-      "observedAt": "2026-09-03T19:54:39.997Z",
+      "observedAt": "2026-09-04T12:37:18.494Z",
       "sourceKind": "official_website",
       "reviewState": "restricted"
     },
@@ -10348,7 +10475,7 @@
       "name": "Jim's Family Restaurant",
       "website": "https://www.jimsfamilyrestauranthalifax.com/cl",
       "error": "fetch failed",
-      "observedAt": "2026-09-03T19:54:49.114Z",
+      "observedAt": "2026-09-04T12:37:26.065Z",
       "sourceKind": "official_website",
       "reviewState": "cross-check"
     },
@@ -10357,7 +10484,7 @@
       "name": "John's Lunch",
       "website": "https://johnslunch.com/",
       "error": "fetch failed",
-      "observedAt": "2026-09-03T19:54:49.132Z",
+      "observedAt": "2026-09-04T12:37:26.257Z",
       "sourceKind": "official_website",
       "reviewState": "cross-check"
     },
@@ -10366,7 +10493,7 @@
       "name": "Jukai",
       "website": "https://www.jukairestaurant.com/",
       "status": 200,
-      "observedAt": "2026-09-03T19:54:49.332Z",
+      "observedAt": "2026-09-04T12:37:26.339Z",
       "keywordHits": [
         "menu",
         "order online"
@@ -10435,7 +10562,7 @@
       "name": "JUKAI Japanese & Thai",
       "website": "https://www.jukairestaurant.com/",
       "status": 200,
-      "observedAt": "2026-09-03T19:54:50.064Z",
+      "observedAt": "2026-09-04T12:37:27.091Z",
       "keywordHits": [
         "menu",
         "order online"
@@ -10504,7 +10631,7 @@
       "name": "Jungle Jim's",
       "website": "https://junglejims.ca/",
       "status": 200,
-      "observedAt": "2026-09-03T19:54:49.531Z",
+      "observedAt": "2026-09-04T12:37:26.490Z",
       "keywordHits": [
         "menu",
         "promo",
@@ -10975,7 +11102,7 @@
       "name": "Kajohn Thai",
       "website": "https://www.kajohnthairestaurant.ca/",
       "status": 200,
-      "observedAt": "2026-09-03T19:54:49.634Z",
+      "observedAt": "2026-09-04T12:37:26.508Z",
       "keywordHits": [
         "menu",
         "features",
@@ -11047,7 +11174,7 @@
       "name": "Kam-moon",
       "website": "https://kam-moon.com/",
       "error": "fetch failed",
-      "observedAt": "2026-09-03T19:54:49.665Z",
+      "observedAt": "2026-09-04T12:37:26.539Z",
       "sourceKind": "official_website",
       "reviewState": "cross-check"
     },
@@ -11056,7 +11183,7 @@
       "name": "Kanpai Izakaya",
       "website": "https://kanpaiizakaya.com/",
       "status": 200,
-      "observedAt": "2026-09-03T19:54:49.760Z",
+      "observedAt": "2026-09-04T12:37:26.730Z",
       "keywordHits": [
         "menu",
         "reservation",
@@ -11107,7 +11234,7 @@
       "name": "Kebab Kitchen",
       "website": "http://www.kebabkitchens.com/",
       "error": "fetch failed",
-      "observedAt": "2026-09-03T19:54:49.963Z",
+      "observedAt": "2026-09-04T12:37:26.818Z",
       "sourceKind": "official_website",
       "reviewState": "cross-check"
     },
@@ -11116,7 +11243,7 @@
       "name": "Kenny's Pizza",
       "website": "http://kennyspizzakearneylake.ca/",
       "status": 200,
-      "observedAt": "2026-09-03T19:54:50.013Z",
+      "observedAt": "2026-09-04T12:37:26.867Z",
       "keywordHits": [
         "menu",
         "special",
@@ -11280,7 +11407,7 @@
       "name": "King of Donair",
       "website": "https://www.kingofdonair.ca/",
       "status": 200,
-      "observedAt": "2026-09-03T19:54:50.132Z",
+      "observedAt": "2026-09-04T12:37:26.936Z",
       "keywordHits": [
         "menu",
         "dj"
@@ -11329,7 +11456,7 @@
       "name": "King of Donair",
       "website": "https://www.kingofdonair.ca/",
       "status": 200,
-      "observedAt": "2026-09-03T19:54:50.517Z",
+      "observedAt": "2026-09-04T12:37:27.271Z",
       "keywordHits": [
         "menu",
         "dj"
@@ -11378,7 +11505,7 @@
       "name": "Kofuku Japanese and Thai",
       "website": "https://www.kofukujapaneseandthai.ca/",
       "status": 200,
-      "observedAt": "2026-09-03T19:54:50.165Z",
+      "observedAt": "2026-09-04T12:37:27.082Z",
       "keywordHits": [
         "special",
         "relocating",
@@ -11471,7 +11598,7 @@
       "name": "Krave Burger",
       "website": "http://kraveburger.com/",
       "error": "timeout",
-      "observedAt": "2026-09-03T19:54:50.214Z",
+      "observedAt": "2026-09-04T12:37:27.240Z",
       "sourceKind": "official_website",
       "reviewState": "cross-check"
     },
@@ -11480,7 +11607,7 @@
       "name": "Krave Burger",
       "website": "http://kraveburger.com/",
       "error": "timeout",
-      "observedAt": "2026-09-03T19:55:02.399Z",
+      "observedAt": "2026-09-04T12:37:39.451Z",
       "sourceKind": "official_website",
       "reviewState": "cross-check"
     },
@@ -11489,7 +11616,7 @@
       "name": "La Piazza Ristorante",
       "website": "https://www.lapiazzarestocafe.com/",
       "error": "fetch failed",
-      "observedAt": "2026-09-03T19:54:50.276Z",
+      "observedAt": "2026-09-04T12:37:27.269Z",
       "sourceKind": "official_website",
       "reviewState": "cross-check"
     },
@@ -11498,7 +11625,7 @@
       "name": "Lady Hammond Grill",
       "website": "https://chebuctoinn.com/lhg-diner/",
       "status": 200,
-      "observedAt": "2026-09-03T19:54:50.299Z",
+      "observedAt": "2026-09-04T12:37:27.275Z",
       "keywordHits": [
         "menu",
         "special",
@@ -11592,7 +11719,7 @@
       "name": "Latitude 44°",
       "website": "https://www.lat44hfx.com/",
       "status": 200,
-      "observedAt": "2026-09-03T19:54:50.499Z",
+      "observedAt": "2026-09-04T12:37:27.290Z",
       "keywordHits": [
         "menu",
         "happy hour",
@@ -11672,7 +11799,7 @@
       "name": "Layla's Mediterranean Cuisine",
       "website": "http://laylacuisine.ca/",
       "error": "fetch failed",
-      "observedAt": "2026-09-03T19:54:50.539Z",
+      "observedAt": "2026-09-04T12:37:27.457Z",
       "sourceKind": "official_website",
       "reviewState": "cross-check"
     },
@@ -11681,7 +11808,7 @@
       "name": "Le Bistro by Liz",
       "website": "https://www.lebistrohalifax.com/",
       "status": 200,
-      "observedAt": "2026-09-03T19:54:50.714Z",
+      "observedAt": "2026-09-04T12:37:27.639Z",
       "keywordHits": [
         "menu",
         "wine list",
@@ -11922,7 +12049,7 @@
       "name": "Lion's Head Tavern",
       "website": "https://lionshead.ca/",
       "status": 200,
-      "observedAt": "2026-09-03T19:54:50.797Z",
+      "observedAt": "2026-09-04T12:37:27.639Z",
       "keywordHits": [
         "menu",
         "special",
@@ -12078,7 +12205,7 @@
       "name": "Lockside Canteen",
       "website": "https://lemon.dog/",
       "status": 200,
-      "observedAt": "2026-09-03T19:54:50.948Z",
+      "observedAt": "2026-09-04T12:37:27.640Z",
       "keywordHits": [
         "menu",
         "event"
@@ -12108,7 +12235,7 @@
       "name": "Look Ho Ho",
       "website": "https://www.lookhoho.com/",
       "status": 200,
-      "observedAt": "2026-09-03T19:54:51.392Z",
+      "observedAt": "2026-09-04T12:37:27.863Z",
       "keywordHits": [
         "menu",
         "special",
@@ -12330,7 +12457,7 @@
       "name": "Lou Pécou",
       "website": "https://www.loupecou.com/",
       "status": 200,
-      "observedAt": "2026-09-03T19:54:51.518Z",
+      "observedAt": "2026-09-04T12:37:28.026Z",
       "keywordHits": [
         "menu",
         "cocktail",
@@ -12476,7 +12603,7 @@
       "name": "Lucy's Hydrostone Cafe",
       "website": "https://lucyshydrostone.ca/",
       "status": 200,
-      "observedAt": "2026-09-03T19:54:51.714Z",
+      "observedAt": "2026-09-04T12:37:28.217Z",
       "keywordHits": [
         "menu",
         "special",
@@ -12560,7 +12687,7 @@
       "name": "Manhattan Pizza",
       "website": "http://www.manhattanpizza.ca/locations.html",
       "error": "fetch failed",
-      "observedAt": "2026-09-03T19:54:51.999Z",
+      "observedAt": "2026-09-04T12:37:28.638Z",
       "sourceKind": "official_website",
       "reviewState": "cross-check"
     },
@@ -12568,8 +12695,71 @@
       "restaurantId": "osm-node-9099100703-marigold-kitchen",
       "name": "Marigold Kitchen",
       "website": "https://marigoldkitchen.ca/",
-      "error": "fetch failed",
-      "observedAt": "2026-09-03T19:54:52.181Z",
+      "status": 200,
+      "observedAt": "2026-09-04T12:37:28.822Z",
+      "keywordHits": [
+        "menu",
+        "reserve",
+        "order online",
+        "delivery"
+      ],
+      "signalMatches": {
+        "menu": [
+          "menu"
+        ],
+        "specials": [],
+        "events": [],
+        "patio": [],
+        "openings": [],
+        "closures": [],
+        "moves": [],
+        "brunch": [],
+        "reservations": [
+          "reserve"
+        ],
+        "takeout": [
+          "order online",
+          "delivery"
+        ]
+      },
+      "candidateLinks": [
+        {
+          "text": "Order Online",
+          "href": "https://marigoldkitchen.ca/",
+          "signalMatches": {
+            "menu": [],
+            "specials": [],
+            "events": [],
+            "patio": [],
+            "openings": [],
+            "closures": [],
+            "moves": [],
+            "brunch": [],
+            "reservations": [],
+            "takeout": [
+              "order online"
+            ]
+          }
+        },
+        {
+          "text": "Menu",
+          "href": "https://marigoldkitchen.ca/menu/",
+          "signalMatches": {
+            "menu": [
+              "menu"
+            ],
+            "specials": [],
+            "events": [],
+            "patio": [],
+            "openings": [],
+            "closures": [],
+            "moves": [],
+            "brunch": [],
+            "reservations": [],
+            "takeout": []
+          }
+        }
+      ],
       "sourceKind": "official_website",
       "reviewState": "cross-check"
     },
@@ -12578,7 +12768,7 @@
       "name": "Masala Delight",
       "website": "https://masaladelight.com/",
       "status": 200,
-      "observedAt": "2026-09-03T19:54:52.246Z",
+      "observedAt": "2026-09-04T12:37:28.867Z",
       "keywordHits": [],
       "signalMatches": {
         "menu": [],
@@ -12601,7 +12791,7 @@
       "name": "Mashawee Mediterranean Grill",
       "website": "https://www.skipthedishes.com/?utm_source=mashaweemediterraneangrill.ca&utm_medium=microsites&utm_campaign=microsites",
       "status": 200,
-      "observedAt": "2026-09-03T19:54:52.278Z",
+      "observedAt": "2026-09-04T12:37:28.928Z",
       "keywordHits": [
         "dj",
         "brunch",
@@ -12836,7 +13026,7 @@
       "name": "Matadora Tapas Bar",
       "website": "https://matadorahfx.ca/",
       "status": 200,
-      "observedAt": "2026-09-03T19:54:52.593Z",
+      "observedAt": "2026-09-04T12:37:29.313Z",
       "keywordHits": [
         "menu",
         "cocktail",
@@ -12944,7 +13134,7 @@
       "name": "May Garden",
       "website": "https://maygarden.ca/",
       "status": 200,
-      "observedAt": "2026-09-03T19:54:53.048Z",
+      "observedAt": "2026-09-04T12:37:29.449Z",
       "keywordHits": [
         "menu",
         "special",
@@ -13101,7 +13291,7 @@
       "name": "McDonald's",
       "website": "http://www.mcdonalds.ca/",
       "error": "robots_disallow",
-      "observedAt": "2026-09-03T19:54:53.055Z",
+      "observedAt": "2026-09-04T12:37:29.746Z",
       "sourceKind": "official_website",
       "reviewState": "restricted"
     },
@@ -13110,7 +13300,7 @@
       "name": "McDonald's",
       "website": "http://www.mcdonalds.ca/",
       "error": "robots_disallow",
-      "observedAt": "2026-09-03T19:54:53.845Z",
+      "observedAt": "2026-09-04T12:37:30.272Z",
       "sourceKind": "official_website",
       "reviewState": "restricted"
     },
@@ -13119,7 +13309,7 @@
       "name": "McDonald's",
       "website": "http://www.mcdonalds.ca/",
       "error": "robots_disallow",
-      "observedAt": "2026-09-03T19:54:53.965Z",
+      "observedAt": "2026-09-04T12:37:30.403Z",
       "sourceKind": "official_website",
       "reviewState": "restricted"
     },
@@ -13128,7 +13318,7 @@
       "name": "McDonald's",
       "website": "http://www.mcdonalds.ca/",
       "error": "robots_disallow",
-      "observedAt": "2026-09-03T19:54:54.095Z",
+      "observedAt": "2026-09-04T12:37:30.523Z",
       "sourceKind": "official_website",
       "reviewState": "restricted"
     },
@@ -13137,7 +13327,7 @@
       "name": "McDonald's",
       "website": "http://www.mcdonalds.ca/",
       "error": "robots_disallow",
-      "observedAt": "2026-09-03T19:54:54.227Z",
+      "observedAt": "2026-09-04T12:37:30.656Z",
       "sourceKind": "official_website",
       "reviewState": "restricted"
     },
@@ -13146,7 +13336,7 @@
       "name": "McDonald's",
       "website": "https://www.mcdonalds.com/ca/en-ca.html",
       "error": "timeout",
-      "observedAt": "2026-09-03T19:54:53.098Z",
+      "observedAt": "2026-09-04T12:37:30.061Z",
       "sourceKind": "official_website",
       "reviewState": "cross-check"
     },
@@ -13155,7 +13345,7 @@
       "name": "McDonald's",
       "website": "https://www.mcdonalds.com/ca/en-ca/location/halifax/halifax-kempt/3486-kempt-road/3141.html",
       "error": "timeout",
-      "observedAt": "2026-09-03T19:55:13.245Z",
+      "observedAt": "2026-09-04T12:37:50.204Z",
       "sourceKind": "official_website",
       "reviewState": "cross-check"
     },
@@ -13164,7 +13354,7 @@
       "name": "McDonald's",
       "website": "http://www.mcdonalds.ca/",
       "error": "robots_disallow",
-      "observedAt": "2026-09-03T19:54:54.348Z",
+      "observedAt": "2026-09-04T12:37:30.777Z",
       "sourceKind": "official_website",
       "reviewState": "restricted"
     },
@@ -13173,7 +13363,7 @@
       "name": "Metro Pizza",
       "website": "https://metropizzahalifax.ca/",
       "status": 200,
-      "observedAt": "2026-09-03T19:54:53.949Z",
+      "observedAt": "2026-09-04T12:37:30.836Z",
       "keywordHits": [
         "menu",
         "reserve"
@@ -13240,7 +13430,7 @@
       "name": "Mexi's",
       "website": "https://www.mexicalirosas.com/halifax/",
       "status": 200,
-      "observedAt": "2026-09-03T19:54:54.111Z",
+      "observedAt": "2026-09-04T12:37:30.901Z",
       "keywordHits": [
         "menu",
         "book a table",
@@ -13707,7 +13897,7 @@
       "name": "Mezza Lebanese Kitchen",
       "website": "https://www.ordermezza.com/",
       "status": 200,
-      "observedAt": "2026-09-03T19:54:54.261Z",
+      "observedAt": "2026-09-04T12:37:30.902Z",
       "keywordHits": [
         "menu",
         "food menu",
@@ -13761,7 +13951,7 @@
       "name": "Mirchi Tandoor",
       "website": "https://mirchitandoor.com/",
       "status": 200,
-      "observedAt": "2026-09-03T19:54:54.482Z",
+      "observedAt": "2026-09-04T12:37:31.191Z",
       "keywordHits": [
         "menu",
         "reserve",
@@ -13833,7 +14023,7 @@
       "name": "Mizu Sushi",
       "website": "https://mizutakeout.ca/",
       "status": 200,
-      "observedAt": "2026-09-03T19:54:54.578Z",
+      "observedAt": "2026-09-04T12:37:31.397Z",
       "keywordHits": [
         "takeout"
       ],
@@ -13860,7 +14050,7 @@
       "name": "Mizu Sushi",
       "website": "https://mizutakeout.ca/",
       "status": 200,
-      "observedAt": "2026-09-03T19:54:54.982Z",
+      "observedAt": "2026-09-04T12:37:31.739Z",
       "keywordHits": [
         "takeout"
       ],
@@ -13887,7 +14077,7 @@
       "name": "Montana's",
       "website": "https://www.montanas.ca/en/locations/3617/halifax-chain-lake-dr.html",
       "error": "robots_disallow",
-      "observedAt": "2026-09-03T19:54:54.644Z",
+      "observedAt": "2026-09-04T12:37:31.718Z",
       "sourceKind": "official_website",
       "reviewState": "restricted"
     },
@@ -13896,7 +14086,7 @@
       "name": "Morris East",
       "website": "https://www.morriseast.com/",
       "status": 200,
-      "observedAt": "2026-09-03T19:54:54.860Z",
+      "observedAt": "2026-09-04T12:37:31.904Z",
       "keywordHits": [
         "menu",
         "cocktail",
@@ -14170,7 +14360,7 @@
       "name": "Mother's Pizza",
       "website": "https://motherspizzahalifax.ca/",
       "status": 200,
-      "observedAt": "2026-09-03T19:54:54.932Z",
+      "observedAt": "2026-09-04T12:37:31.956Z",
       "keywordHits": [
         "menu",
         "reserve",
@@ -14314,7 +14504,7 @@
       "name": "Moxie's",
       "website": "https://moxies.com/",
       "status": 200,
-      "observedAt": "2026-09-03T19:54:55.163Z",
+      "observedAt": "2026-09-04T12:37:32.450Z",
       "keywordHits": [
         "menu",
         "cocktail",
@@ -14487,7 +14677,7 @@
         },
         {
           "text": "Open post by moxiesusa with ID 18131248420712152",
-          "href": "https://scontent-lax3-2.cdninstagram.com/v/t51.82787-15/774668668_18137497756608080_9217803171477205145_n.jpg?stp=dst-jpg_e35_tt6&#038;_nc_cat=106&#038;ccb=7-5&#038;_nc_sid=18de74&#038;efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&#038;_nc_ohc=foMDgWY-r6sQ7kNvwGTcS-t&#038;_nc_oc=AdqDWG3hWzvKDJANT-GJMRB2V-aSwfc94U9hKslTheJbSgjdTqI9sls7itchdKXFsH3qdUPeLgPQyXwVNv3nP2CB&#038;_nc_zt=23&#038;_nc_ht=scontent-lax3-2.cdninstagram.com&#038;edm=ANo9K5cEAAAA&#038;_nc_gid=5YWStZBP0LsSiwSnfjoxPQ&#038;_nc_tpa=Q5bMBQIDHV1W1JJJfUk7tOuxCow_7fSXJpobHcczDYr5fDLwTxgrMRml2vKSZU5eE5zywMP1DKuwsr_rwQ&#038;oh=00_AQIT-IlpbXL-GqSLGi456atMmwvGvI5ffh8VMtdmE8N8jw&#038;oe=6A9F04BF",
+          "href": "https://scontent-lax3-2.cdninstagram.com/v/t51.82787-15/774668668_18137497756608080_9217803171477205145_n.jpg?stp=dst-jpg_e35_tt6&#038;_nc_cat=106&#038;ccb=7-5&#038;_nc_sid=18de74&#038;efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&#038;_nc_ohc=foMDgWY-r6sQ7kNvwGTcS-t&#038;_nc_oc=AdqDWG3hWzvKDJANT-GJMRB2V-aSwfc94U9hKslTheJbSgjdTqI9sls7itchdKXFsH3qdUPeLgPQyXwVNv3nP2CB&#038;_nc_zt=23&#038;_nc_ht=scontent-lax3-2.cdninstagram.com&#038;edm=ANo9K5cEAAAA&#038;_nc_gid=wH63PpmGG8mLhqrYlJMyGA&#038;_nc_tpa=Q5bMBQJz4Ozf90Lu7kOPtCLO2x9T4uCmrqnvytJ13aSSGV7x6pmGZ1lTH90uqklnZz4GKjdQtM2fRiK8cQ&#038;oh=00_AQJn1XE0zxlNxgy5dQPRQGn3YV-JswH2L59eSa3DOMvyXQ&#038;oe=6A9FAD7F",
           "signalMatches": {
             "menu": [],
             "specials": [],
@@ -14800,7 +14990,7 @@
       "name": "Narrow Espresso",
       "website": "http://narrowespresso.com/",
       "status": 200,
-      "observedAt": "2026-09-03T19:54:55.330Z",
+      "observedAt": "2026-09-04T12:37:32.622Z",
       "keywordHits": [],
       "signalMatches": {
         "menu": [],
@@ -14823,7 +15013,7 @@
       "name": "New Asia",
       "website": "http://www.newasiahalifax.ca/",
       "error": "fetch failed",
-      "observedAt": "2026-09-03T19:54:55.396Z",
+      "observedAt": "2026-09-04T12:37:33.138Z",
       "sourceKind": "official_website",
       "reviewState": "cross-check"
     },
@@ -14832,7 +15022,7 @@
       "name": "New Wing Wah",
       "website": "https://newwingwah.ca/",
       "status": 200,
-      "observedAt": "2026-09-03T19:54:55.599Z",
+      "observedAt": "2026-09-04T12:37:33.263Z",
       "keywordHits": [
         "menu",
         "special",
@@ -14938,7 +15128,7 @@
       "name": "Noggins Coburg",
       "website": "https://nogginsfarm.ca/farm-markets/coburg-market/",
       "status": 200,
-      "observedAt": "2026-09-03T19:54:55.708Z",
+      "observedAt": "2026-09-04T12:37:33.371Z",
       "keywordHits": [
         "menu",
         "features"
@@ -14987,7 +15177,7 @@
       "name": "Orso Pub & Grill",
       "website": "https://orsopub.ca/",
       "status": 200,
-      "observedAt": "2026-09-03T19:54:56.044Z",
+      "observedAt": "2026-09-04T12:37:33.401Z",
       "keywordHits": [
         "menu",
         "special",
@@ -15142,7 +15332,7 @@
       "name": "Osmow's",
       "website": "https://locations.osmows.com/ca/ns/halifax",
       "status": 200,
-      "observedAt": "2026-09-03T19:54:56.262Z",
+      "observedAt": "2026-09-04T12:37:33.440Z",
       "keywordHits": [
         "menu",
         "reserve"
@@ -15209,7 +15399,7 @@
       "name": "Papa John's",
       "website": "https://locations.papajohns.com/canada/ns/b2w-6c4/dartmouth/644-portland-street",
       "status": 200,
-      "observedAt": "2026-09-03T19:54:56.745Z",
+      "observedAt": "2026-09-04T12:37:33.571Z",
       "keywordHits": [
         "menu",
         "special",
@@ -15447,7 +15637,7 @@
       "name": "Patrons Golf & Lounge",
       "website": "https://www.patronsgolflounge.ca/",
       "error": "fetch failed",
-      "observedAt": "2026-09-03T19:54:56.811Z",
+      "observedAt": "2026-09-04T12:37:33.623Z",
       "sourceKind": "official_website",
       "reviewState": "cross-check"
     },
@@ -15456,7 +15646,7 @@
       "name": "Pazzo Ristorante & Enoteca",
       "website": "https://www.rcr.ca/restaurants/pazzo-italian-ristorante/",
       "status": 200,
-      "observedAt": "2026-09-03T19:54:57.028Z",
+      "observedAt": "2026-09-04T12:37:34.015Z",
       "keywordHits": [
         "menu",
         "cocktail",
@@ -15594,7 +15784,7 @@
       "name": "Peter's Pizzeria",
       "website": "https://www.peterspizzeriahfx.com/",
       "status": 200,
-      "observedAt": "2026-09-03T19:54:57.045Z",
+      "observedAt": "2026-09-04T12:37:34.104Z",
       "keywordHits": [
         "menu",
         "promo",
@@ -15685,7 +15875,7 @@
       "name": "PG Cafe and Grill",
       "website": "https://pgcafeandgrill.com/",
       "status": 200,
-      "observedAt": "2026-09-03T19:54:57.461Z",
+      "observedAt": "2026-09-04T12:37:34.152Z",
       "keywordHits": [
         "menu",
         "deal",
@@ -15744,7 +15934,7 @@
       "name": "Phở Hoang Minh",
       "website": "https://phohoangminh.ca/",
       "status": 200,
-      "observedAt": "2026-09-03T19:54:57.775Z",
+      "observedAt": "2026-09-04T12:37:34.214Z",
       "keywordHits": [
         "features",
         "deal",
@@ -15780,7 +15970,7 @@
       "name": "Piece of Cake Bakery and Cafe",
       "website": "http://harboursouth.ca/dining/piece-of-cake-fine-bakery-cafe/",
       "status": 404,
-      "observedAt": "2026-09-03T19:54:57.830Z",
+      "observedAt": "2026-09-04T12:37:34.546Z",
       "keywordHits": [
         "menu"
       ],
@@ -15807,7 +15997,7 @@
       "name": "Pizza Hut",
       "website": "https://www.pizzahut.ca/huts/ca-1/R30103/",
       "error": "timeout",
-      "observedAt": "2026-09-03T19:54:57.877Z",
+      "observedAt": "2026-09-04T12:37:34.647Z",
       "sourceKind": "official_website",
       "reviewState": "cross-check"
     },
@@ -15816,7 +16006,7 @@
       "name": "Pizza Hut",
       "website": "https://www.pizzahut.ca/huts/ca-1/R30104/",
       "error": "timeout",
-      "observedAt": "2026-09-03T19:55:18.016Z",
+      "observedAt": "2026-09-04T12:37:54.791Z",
       "sourceKind": "official_website",
       "reviewState": "cross-check"
     },
@@ -15825,7 +16015,7 @@
       "name": "Pizza Hut Delivery",
       "website": "https://www.pizzahut.ca/huts/ca-1/R30102/",
       "error": "timeout",
-      "observedAt": "2026-09-03T19:55:30.152Z",
+      "observedAt": "2026-09-04T12:38:06.927Z",
       "sourceKind": "official_website",
       "reviewState": "cross-check"
     },
@@ -15834,7 +16024,7 @@
       "name": "Pizza Pizza",
       "website": "https://www.pizzapizza.ca/",
       "status": 200,
-      "observedAt": "2026-09-03T19:54:57.932Z",
+      "observedAt": "2026-09-04T12:37:34.967Z",
       "keywordHits": [],
       "signalMatches": {
         "menu": [],
@@ -15857,7 +16047,7 @@
       "name": "Pizza Pizza",
       "website": "https://dal.mydininghub.ca/en/locations",
       "status": 200,
-      "observedAt": "2026-09-03T19:54:39.651Z",
+      "observedAt": "2026-09-04T12:37:18.760Z",
       "keywordHits": [
         "menu"
       ],
@@ -15921,7 +16111,7 @@
       "name": "Pizza Pizza",
       "website": "https://www.pizzapizza.ca/",
       "status": 200,
-      "observedAt": "2026-09-03T19:54:58.426Z",
+      "observedAt": "2026-09-04T12:37:35.671Z",
       "keywordHits": [],
       "signalMatches": {
         "menu": [],
@@ -15944,7 +16134,7 @@
       "name": "Pizza.Co",
       "website": "https://pzzaco.ca/",
       "status": 200,
-      "observedAt": "2026-09-03T19:54:58.626Z",
+      "observedAt": "2026-09-04T12:37:35.227Z",
       "keywordHits": [
         "menu",
         "special",
@@ -16090,7 +16280,7 @@
       "name": "Pleasant Street Diner",
       "website": "https://pleasantstdiner.com/",
       "status": 200,
-      "observedAt": "2026-09-03T19:54:58.677Z",
+      "observedAt": "2026-09-04T12:37:35.688Z",
       "keywordHits": [],
       "signalMatches": {
         "menu": [],
@@ -16113,7 +16303,7 @@
       "name": "Portland Street Creperie",
       "website": "http://www.portlandstreetcreperie.com/",
       "status": 200,
-      "observedAt": "2026-09-03T19:54:59.379Z",
+      "observedAt": "2026-09-04T12:37:36.071Z",
       "keywordHits": [],
       "signalMatches": {
         "menu": [],
@@ -16136,7 +16326,7 @@
       "name": "Primal Kitchen",
       "website": "https://www.primalhfx.ca/",
       "status": 200,
-      "observedAt": "2026-09-03T19:54:59.395Z",
+      "observedAt": "2026-09-04T12:37:36.087Z",
       "keywordHits": [],
       "signalMatches": {
         "menu": [],
@@ -16159,7 +16349,7 @@
       "name": "Public - Café, Bakery & Bar",
       "website": "https://www.rcr.ca/restaurants/public-cafe-bakery-bar/",
       "status": 200,
-      "observedAt": "2026-09-03T19:54:57.313Z",
+      "observedAt": "2026-09-04T12:37:34.538Z",
       "keywordHits": [
         "menu",
         "cocktail",
@@ -16267,7 +16457,7 @@
       "name": "Real Fake Meats",
       "website": "https://www.realfakemeats.com/",
       "status": 200,
-      "observedAt": "2026-09-03T19:55:01.725Z",
+      "observedAt": "2026-09-04T12:37:37.998Z",
       "keywordHits": [
         "menu",
         "pickup",
@@ -16358,7 +16548,7 @@
       "name": "Rinaldo’s",
       "website": "https://www.rinaldos.ca/",
       "status": 200,
-      "observedAt": "2026-09-03T19:55:02.027Z",
+      "observedAt": "2026-09-04T12:37:38.457Z",
       "keywordHits": [
         "reserve",
         "takeout",
@@ -16429,7 +16619,7 @@
       "name": "Ristorante Amano",
       "website": "https://www.ristoranteamano.ca/",
       "status": 200,
-      "observedAt": "2026-09-03T19:55:02.028Z",
+      "observedAt": "2026-09-04T12:37:38.670Z",
       "keywordHits": [
         "reservation"
       ],
@@ -16475,7 +16665,7 @@
       "name": "Rollz Ice Cream",
       "website": "https://rollzicecream.ca/",
       "status": 200,
-      "observedAt": "2026-09-03T19:55:02.144Z",
+      "observedAt": "2026-09-04T12:37:38.701Z",
       "keywordHits": [],
       "signalMatches": {
         "menu": [],
@@ -16498,7 +16688,7 @@
       "name": "Rush Hour Pizza",
       "website": "https://rushhourpizza.ca/",
       "status": 200,
-      "observedAt": "2026-09-03T19:55:02.763Z",
+      "observedAt": "2026-09-04T12:37:38.731Z",
       "keywordHits": [
         "special",
         "specials",
@@ -16570,7 +16760,7 @@
       "name": "Saffron Multi Cuisine Indian Restaurant",
       "website": "https://saffron-indian-restaurant.com/",
       "error": "fetch failed",
-      "observedAt": "2026-09-03T19:55:02.831Z",
+      "observedAt": "2026-09-04T12:37:38.904Z",
       "sourceKind": "official_website",
       "reviewState": "cross-check"
     },
@@ -16579,7 +16769,7 @@
       "name": "Saj House",
       "website": "https://www.sajhouse.ca/",
       "status": 200,
-      "observedAt": "2026-09-03T19:55:03.026Z",
+      "observedAt": "2026-09-04T12:37:39.083Z",
       "keywordHits": [
         "deal",
         "promo",
@@ -16653,7 +16843,7 @@
       "name": "Salvatore's Pizzaiolo Trattoria",
       "website": "https://www.salvatorespizza.ca/",
       "status": 200,
-      "observedAt": "2026-09-03T19:55:03.076Z",
+      "observedAt": "2026-09-04T12:37:39.142Z",
       "keywordHits": [
         "delivery"
       ],
@@ -16680,7 +16870,7 @@
       "name": "Sea Smoke",
       "website": "https://www.seasmokehalifax.com/",
       "status": 200,
-      "observedAt": "2026-09-03T19:55:03.175Z",
+      "observedAt": "2026-09-04T12:37:39.143Z",
       "keywordHits": [
         "menu",
         "reservation"
@@ -16747,7 +16937,7 @@
       "name": "Seaport Social",
       "website": "https://www.seaportsocialhalifax.com/",
       "status": 200,
-      "observedAt": "2026-09-03T19:55:03.473Z",
+      "observedAt": "2026-09-04T12:37:39.191Z",
       "keywordHits": [
         "menu",
         "cocktail",
@@ -16917,7 +17107,7 @@
       "name": "Second Cup",
       "website": "https://secondcup.com/en/location/bayers-lake/",
       "status": 200,
-      "observedAt": "2026-09-03T19:55:03.860Z",
+      "observedAt": "2026-09-04T12:37:39.575Z",
       "keywordHits": [
         "menu",
         "special",
@@ -17329,7 +17519,7 @@
       "name": "Shiraz",
       "website": "https://www.shirazhalifax.ca/",
       "error": "fetch failed",
-      "observedAt": "2026-09-03T19:55:03.887Z",
+      "observedAt": "2026-09-04T12:37:39.586Z",
       "sourceKind": "official_website",
       "reviewState": "cross-check"
     },
@@ -17338,7 +17528,7 @@
       "name": "Shuck Seafood + Raw Bar",
       "website": "https://www.rcr.ca/restaurants/shuck-seafood-raw-bar/",
       "status": 200,
-      "observedAt": "2026-09-03T19:54:57.495Z",
+      "observedAt": "2026-09-04T12:37:34.884Z",
       "keywordHits": [
         "menu",
         "cocktail",
@@ -17479,7 +17669,7 @@
       "name": "Sicilian Pizza",
       "website": "http://www.sicilian.ca/",
       "status": 200,
-      "observedAt": "2026-09-03T19:55:04.033Z",
+      "observedAt": "2026-09-04T12:37:39.715Z",
       "keywordHits": [
         "menu",
         "special",
@@ -17729,7 +17919,7 @@
         },
         {
           "text": "ORDER ONLINE",
-          "href": "https://www.order.store/store/sicilian-pizza-pizza-corner-blowers-st/0OT0-Va9QbSq_7jc_cRAbQ",
+          "href": "http://order.sicilian.ca/",
           "signalMatches": {
             "menu": [],
             "specials": [],
@@ -17747,7 +17937,7 @@
         },
         {
           "text": "ORDER ONLINE NOW!",
-          "href": "https://www.order.store/store/sicilian-pizza-pizza-corner-blowers-st/0OT0-Va9QbSq_7jc_cRAbQ",
+          "href": "http://order.sicilian.ca/",
           "signalMatches": {
             "menu": [],
             "specials": [],
@@ -17791,7 +17981,7 @@
       "name": "Sketti and Ball",
       "website": "https://skettiandballco.ca/",
       "status": 200,
-      "observedAt": "2026-09-03T19:55:04.078Z",
+      "observedAt": "2026-09-04T12:37:39.785Z",
       "keywordHits": [
         "menu",
         "drink menu",
@@ -17905,7 +18095,7 @@
       "name": "Smiling Goat",
       "website": "https://www.avia-pilott.com/",
       "status": 200,
-      "observedAt": "2026-09-03T19:55:04.160Z",
+      "observedAt": "2026-09-04T12:37:39.899Z",
       "keywordHits": [
         "features"
       ],
@@ -17932,7 +18122,7 @@
       "name": "Smokehouse Brewery",
       "website": "https://smokehousebrewery.ca/",
       "status": 200,
-      "observedAt": "2026-09-03T19:55:04.577Z",
+      "observedAt": "2026-09-04T12:37:40.099Z",
       "keywordHits": [
         "menu",
         "event",
@@ -17991,7 +18181,7 @@
       "name": "Springhouse Market",
       "website": "https://www.eatspringhouse.com/",
       "status": 200,
-      "observedAt": "2026-09-03T19:55:04.645Z",
+      "observedAt": "2026-09-04T12:37:40.293Z",
       "keywordHits": [],
       "signalMatches": {
         "menu": [],
@@ -18014,7 +18204,7 @@
       "name": "St. Louis Bar & Grill",
       "website": "https://locations.stlouiswings.com/ns-dartmouth-2201/",
       "status": 200,
-      "observedAt": "2026-09-03T19:55:05.826Z",
+      "observedAt": "2026-09-04T12:37:40.613Z",
       "keywordHits": [
         "menu",
         "cocktail",
@@ -18075,7 +18265,7 @@
       "name": "Starbucks",
       "website": "https://www.starbucks.ca/store-locator/store/6149-147151/5554-kaye-street-5554-kaye-street-halifax-ns-b-3-k-1-y-5-ca",
       "status": 200,
-      "observedAt": "2026-09-03T19:54:44.586Z",
+      "observedAt": "2026-09-04T12:37:22.085Z",
       "keywordHits": [],
       "signalMatches": {
         "menu": [],
@@ -18098,7 +18288,7 @@
       "name": "Starbucks",
       "website": "https://www.starbucks.ca/store-locator/store/4086-140770/20-parkland-dr-20-parkland-dr-halifax-ns-b-3-s-1-p-1-ca",
       "status": 200,
-      "observedAt": "2026-09-03T19:54:44.984Z",
+      "observedAt": "2026-09-04T12:37:22.408Z",
       "keywordHits": [],
       "signalMatches": {
         "menu": [],
@@ -18121,7 +18311,7 @@
       "name": "Starbucks",
       "website": "https://www.starbucks.ca/store-locator?map=57.751076,-101.645508,4z",
       "status": 200,
-      "observedAt": "2026-09-03T19:54:45.817Z",
+      "observedAt": "2026-09-04T12:37:22.739Z",
       "keywordHits": [],
       "signalMatches": {
         "menu": [],
@@ -18144,7 +18334,7 @@
       "name": "Starbucks",
       "website": "https://www.starbucks.ca/",
       "status": 200,
-      "observedAt": "2026-09-03T19:54:46.300Z",
+      "observedAt": "2026-09-04T12:37:22.974Z",
       "keywordHits": [
         "menu",
         "reserve",
@@ -18306,7 +18496,7 @@
       "name": "Starbucks",
       "website": "https://www.starbucks.ca/",
       "status": 200,
-      "observedAt": "2026-09-03T19:54:46.514Z",
+      "observedAt": "2026-09-04T12:37:23.175Z",
       "keywordHits": [
         "menu",
         "reserve",
@@ -18468,7 +18658,7 @@
       "name": "Starbucks",
       "website": "https://www.starbucks.ca/store-locator/store/65775-299863/atlantic-superstore-portland-s-650-portland-street-dartmouth-ns-b-2-w-2-m-7-ca",
       "status": 200,
-      "observedAt": "2026-09-03T19:54:46.714Z",
+      "observedAt": "2026-09-04T12:37:23.425Z",
       "keywordHits": [],
       "signalMatches": {
         "menu": [],
@@ -18491,7 +18681,7 @@
       "name": "Starbucks",
       "website": "https://www.starbucks.ca/store-locator/store/12465-151926/86-chain-lake-drive-86-chain-lake-drive-halifax-ns-b-3-s-1-a-2-ca",
       "status": 200,
-      "observedAt": "2026-09-03T19:54:46.949Z",
+      "observedAt": "2026-09-04T12:37:23.652Z",
       "keywordHits": [],
       "signalMatches": {
         "menu": [],
@@ -18514,7 +18704,7 @@
       "name": "Starbucks",
       "website": "https://dal.mydininghub.ca/en/locations",
       "status": 200,
-      "observedAt": "2026-09-03T19:54:39.935Z",
+      "observedAt": "2026-09-04T12:37:19.043Z",
       "keywordHits": [
         "menu"
       ],
@@ -18578,7 +18768,7 @@
       "name": "Starbucks",
       "website": "https://www.starbucks.ca/store-locator/store/65774-300165/atlantic-superstore-chain-lake-210-chain-lake-drive-halifax-ns-b-3-s-1-c-5-ca",
       "status": 200,
-      "observedAt": "2026-09-03T19:54:47.182Z",
+      "observedAt": "2026-09-04T12:37:23.891Z",
       "keywordHits": [],
       "signalMatches": {
         "menu": [],
@@ -18601,7 +18791,7 @@
       "name": "Starbucks",
       "website": "https://www.starbucks.ca/store-locator/store/79117-307543/318-herring-cove-rd-318-herring-cove-rd-halifax-ns-b-3-r-1-v-4-ca",
       "status": 200,
-      "observedAt": "2026-09-03T19:54:47.430Z",
+      "observedAt": "2026-09-04T12:37:24.105Z",
       "keywordHits": [],
       "signalMatches": {
         "menu": [],
@@ -18624,7 +18814,7 @@
       "name": "Starbucks",
       "website": "https://www.starbucks.ca/store-locator/store/66230-300523/sobeys-clayton-park-644-287-lacewood-drive-halifax-ns-b-3-m-3-y-7-ca",
       "status": 200,
-      "observedAt": "2026-09-03T19:54:47.669Z",
+      "observedAt": "2026-09-04T12:37:24.333Z",
       "keywordHits": [],
       "signalMatches": {
         "menu": [],
@@ -18647,7 +18837,7 @@
       "name": "Starbucks",
       "website": "https://www.starbucks.ca/store-locator/store/61586-294956/atlantic-superstore-joseph-how-3601-joseph-howe-drive-halifax-ns-b-3-l-4-h-8-ca",
       "status": 200,
-      "observedAt": "2026-09-03T19:54:47.915Z",
+      "observedAt": "2026-09-04T12:37:24.554Z",
       "keywordHits": [],
       "signalMatches": {
         "menu": [],
@@ -18670,7 +18860,7 @@
       "name": "Starbucks",
       "website": "https://www.starbucks.ca/store-locator/store/23087-222344/675-windmill-road-11-cuddy-lane-dartmouth-ns-b-3-b-0-l-1-ca",
       "status": 200,
-      "observedAt": "2026-09-03T19:54:48.132Z",
+      "observedAt": "2026-09-04T12:37:24.772Z",
       "keywordHits": [],
       "signalMatches": {
         "menu": [],
@@ -18693,7 +18883,7 @@
       "name": "Starbucks",
       "website": "https://www.starbucks.ca/store-locator/store/20568-206464/halifax-shopping-centre-leve-7001-mumford-road-halifax-ns-b-3-l-4-t-8-ca",
       "status": 200,
-      "observedAt": "2026-09-03T19:54:48.348Z",
+      "observedAt": "2026-09-04T12:37:24.989Z",
       "keywordHits": [],
       "signalMatches": {
         "menu": [],
@@ -18716,7 +18906,7 @@
       "name": "Station 1 Lebanese Kitchen",
       "website": "https://station1lebanesekitchen.com/",
       "status": 200,
-      "observedAt": "2026-09-03T19:55:05.902Z",
+      "observedAt": "2026-09-04T12:37:40.939Z",
       "keywordHits": [
         "menu",
         "special"
@@ -18765,7 +18955,7 @@
       "name": "Stillwell",
       "website": "https://www.barstillwell.com/",
       "status": 200,
-      "observedAt": "2026-09-03T19:55:06.410Z",
+      "observedAt": "2026-09-04T12:37:41.168Z",
       "keywordHits": [
         "offers",
         "promo",
@@ -18858,68 +19048,8 @@
       "restaurantId": "osm-node-4428984290-stone-pizza",
       "name": "Stone Pizza",
       "website": "https://stonepizza.ca/",
-      "status": 200,
-      "observedAt": "2026-09-03T19:55:06.926Z",
-      "keywordHits": [
-        "menu",
-        "order online",
-        "delivery"
-      ],
-      "signalMatches": {
-        "menu": [
-          "menu"
-        ],
-        "specials": [],
-        "events": [],
-        "patio": [],
-        "openings": [],
-        "closures": [],
-        "moves": [],
-        "brunch": [],
-        "reservations": [],
-        "takeout": [
-          "order online",
-          "delivery"
-        ]
-      },
-      "candidateLinks": [
-        {
-          "text": "Menu",
-          "href": "https://stonepizza.ca/pizza/",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Order Online",
-          "href": "https://stonepizzadartmouth.square.site/s/order",
-          "signalMatches": {
-            "menu": [],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": [
-              "order online"
-            ]
-          }
-        }
-      ],
+      "error": "timeout",
+      "observedAt": "2026-09-04T12:37:41.535Z",
       "sourceKind": "official_website",
       "reviewState": "cross-check"
     },
@@ -18928,7 +19058,7 @@
       "name": "Studio East Food+Drink",
       "website": "https://www.studioeastfood.ca/",
       "status": 200,
-      "observedAt": "2026-09-03T19:55:06.926Z",
+      "observedAt": "2026-09-04T12:37:41.716Z",
       "keywordHits": [
         "menu",
         "cocktail",
@@ -19253,7 +19383,7 @@
       "name": "Subway",
       "website": "https://www.subway.com/en-ca",
       "status": 200,
-      "observedAt": "2026-09-03T19:55:06.965Z",
+      "observedAt": "2026-09-04T12:37:41.850Z",
       "keywordHits": [
         "menu",
         "deal",
@@ -19277,6 +19407,24 @@
         "takeout": []
       },
       "candidateLinks": [
+        {
+          "text": "https://www.subway.com/en-ca/locator?intcmp=HomepageLoggedOut:Owned:0:0:ExistingProduct_Sandwich_Offer_BOGOs_Buy1footlong,get150off:0:0:0:order-now:hero-carousel:nat-ca:0&#x26;segment_code=0&#x26;promoPLU=9",
+          "href": "https://www.subway.com/en-ca/locator?intcmp=HomepageLoggedOut:Owned:0:0:ExistingProduct_Sandwich_Offer_BOGOs_Buy1footlong,get150off:0:0:0:order-now:hero-carousel:nat-ca:0&#x26;segment_code=0&#x26;promoPLU=9",
+          "signalMatches": {
+            "menu": [],
+            "specials": [
+              "promo"
+            ],
+            "events": [],
+            "patio": [],
+            "openings": [],
+            "closures": [],
+            "moves": [],
+            "brunch": [],
+            "reservations": [],
+            "takeout": []
+          }
+        },
         {
           "text": "Start Order",
           "href": "https://www.subway.com/en-ca/menunutrition/menu",
@@ -19376,7 +19524,7 @@
       "name": "Subway",
       "website": "https://www.subway.com/en-ca",
       "status": 200,
-      "observedAt": "2026-09-03T19:55:07.345Z",
+      "observedAt": "2026-09-04T12:37:42.312Z",
       "keywordHits": [
         "menu",
         "deal",
@@ -19400,6 +19548,24 @@
         "takeout": []
       },
       "candidateLinks": [
+        {
+          "text": "https://www.subway.com/en-ca/locator?intcmp=HomepageLoggedOut:Owned:0:0:ExistingProduct_Sandwich_Offer_BOGOs_Buy1footlong,get150off:0:0:0:order-now:hero-carousel:nat-ca:0&#x26;segment_code=0&#x26;promoPLU=9",
+          "href": "https://www.subway.com/en-ca/locator?intcmp=HomepageLoggedOut:Owned:0:0:ExistingProduct_Sandwich_Offer_BOGOs_Buy1footlong,get150off:0:0:0:order-now:hero-carousel:nat-ca:0&#x26;segment_code=0&#x26;promoPLU=9",
+          "signalMatches": {
+            "menu": [],
+            "specials": [
+              "promo"
+            ],
+            "events": [],
+            "patio": [],
+            "openings": [],
+            "closures": [],
+            "moves": [],
+            "brunch": [],
+            "reservations": [],
+            "takeout": []
+          }
+        },
         {
           "text": "Start Order",
           "href": "https://www.subway.com/en-ca/menunutrition/menu",
@@ -19499,7 +19665,7 @@
       "name": "Subway",
       "website": "https://restaurants.subway.com/canada/ns/dartmouth/100-main-st",
       "status": 200,
-      "observedAt": "2026-09-03T19:55:07.210Z",
+      "observedAt": "2026-09-04T12:37:42.016Z",
       "keywordHits": [
         "menu",
         "deal",
@@ -19748,7 +19914,7 @@
       "name": "Subway",
       "website": "https://www.subway.com/en-ca",
       "status": 200,
-      "observedAt": "2026-09-03T19:55:07.610Z",
+      "observedAt": "2026-09-04T12:37:42.602Z",
       "keywordHits": [
         "menu",
         "deal",
@@ -19772,6 +19938,24 @@
         "takeout": []
       },
       "candidateLinks": [
+        {
+          "text": "https://www.subway.com/en-ca/locator?intcmp=HomepageLoggedOut:Owned:0:0:ExistingProduct_Sandwich_Offer_BOGOs_Buy1footlong,get150off:0:0:0:order-now:hero-carousel:nat-ca:0&#x26;segment_code=0&#x26;promoPLU=9",
+          "href": "https://www.subway.com/en-ca/locator?intcmp=HomepageLoggedOut:Owned:0:0:ExistingProduct_Sandwich_Offer_BOGOs_Buy1footlong,get150off:0:0:0:order-now:hero-carousel:nat-ca:0&#x26;segment_code=0&#x26;promoPLU=9",
+          "signalMatches": {
+            "menu": [],
+            "specials": [
+              "promo"
+            ],
+            "events": [],
+            "patio": [],
+            "openings": [],
+            "closures": [],
+            "moves": [],
+            "brunch": [],
+            "reservations": [],
+            "takeout": []
+          }
+        },
         {
           "text": "Start Order",
           "href": "https://www.subway.com/en-ca/menunutrition/menu",
@@ -19871,7 +20055,7 @@
       "name": "Subway",
       "website": "https://www.subway.com/en-ca",
       "status": 200,
-      "observedAt": "2026-09-03T19:55:07.828Z",
+      "observedAt": "2026-09-04T12:37:42.785Z",
       "keywordHits": [
         "menu",
         "deal",
@@ -19895,6 +20079,24 @@
         "takeout": []
       },
       "candidateLinks": [
+        {
+          "text": "https://www.subway.com/en-ca/locator?intcmp=HomepageLoggedOut:Owned:0:0:ExistingProduct_Sandwich_Offer_BOGOs_Buy1footlong,get150off:0:0:0:order-now:hero-carousel:nat-ca:0&#x26;segment_code=0&#x26;promoPLU=9",
+          "href": "https://www.subway.com/en-ca/locator?intcmp=HomepageLoggedOut:Owned:0:0:ExistingProduct_Sandwich_Offer_BOGOs_Buy1footlong,get150off:0:0:0:order-now:hero-carousel:nat-ca:0&#x26;segment_code=0&#x26;promoPLU=9",
+          "signalMatches": {
+            "menu": [],
+            "specials": [
+              "promo"
+            ],
+            "events": [],
+            "patio": [],
+            "openings": [],
+            "closures": [],
+            "moves": [],
+            "brunch": [],
+            "reservations": [],
+            "takeout": []
+          }
+        },
         {
           "text": "Start Order",
           "href": "https://www.subway.com/en-ca/menunutrition/menu",
@@ -19994,7 +20196,7 @@
       "name": "Subway",
       "website": "https://www.subway.com/en-ca",
       "status": 200,
-      "observedAt": "2026-09-03T19:55:08.026Z",
+      "observedAt": "2026-09-04T12:37:42.984Z",
       "keywordHits": [
         "menu",
         "deal",
@@ -20018,6 +20220,24 @@
         "takeout": []
       },
       "candidateLinks": [
+        {
+          "text": "https://www.subway.com/en-ca/locator?intcmp=HomepageLoggedOut:Owned:0:0:ExistingProduct_Sandwich_Offer_BOGOs_Buy1footlong,get150off:0:0:0:order-now:hero-carousel:nat-ca:0&#x26;segment_code=0&#x26;promoPLU=9",
+          "href": "https://www.subway.com/en-ca/locator?intcmp=HomepageLoggedOut:Owned:0:0:ExistingProduct_Sandwich_Offer_BOGOs_Buy1footlong,get150off:0:0:0:order-now:hero-carousel:nat-ca:0&#x26;segment_code=0&#x26;promoPLU=9",
+          "signalMatches": {
+            "menu": [],
+            "specials": [
+              "promo"
+            ],
+            "events": [],
+            "patio": [],
+            "openings": [],
+            "closures": [],
+            "moves": [],
+            "brunch": [],
+            "reservations": [],
+            "takeout": []
+          }
+        },
         {
           "text": "Start Order",
           "href": "https://www.subway.com/en-ca/menunutrition/menu",
@@ -20117,7 +20337,7 @@
       "name": "Sully & Porter",
       "website": "https://sullyandporter.com/",
       "status": 200,
-      "observedAt": "2026-09-03T19:55:07.476Z",
+      "observedAt": "2026-09-04T12:37:42.452Z",
       "keywordHits": [
         "menu",
         "special",
@@ -20194,7 +20414,7 @@
       "name": "Summit Cafe",
       "website": "https://www.thesummitcafe.ca/",
       "status": 200,
-      "observedAt": "2026-09-03T19:55:07.626Z",
+      "observedAt": "2026-09-04T12:37:42.469Z",
       "keywordHits": [
         "menu",
         "special",
@@ -20253,7 +20473,7 @@
       "name": "Sushi Cove",
       "website": "https://sushisquare.ca/",
       "status": 200,
-      "observedAt": "2026-09-03T19:55:07.827Z",
+      "observedAt": "2026-09-04T12:37:42.531Z",
       "keywordHits": [
         "menu",
         "special",
@@ -20313,7 +20533,7 @@
       "name": "Sushi Jet",
       "website": "https://sushi-jet.com/location/dartmouth",
       "status": 404,
-      "observedAt": "2026-09-03T19:55:07.903Z",
+      "observedAt": "2026-09-04T12:37:42.703Z",
       "keywordHits": [],
       "signalMatches": {
         "menu": [],
@@ -20335,17 +20555,31 @@
       "restaurantId": "osm-node-11552180279-sushi-jet",
       "name": "Sushi Jet",
       "website": "https://sushi-jet.com/location/Halifax",
-      "error": "fetch failed",
-      "observedAt": "2026-09-03T19:55:08.391Z",
+      "status": 404,
+      "observedAt": "2026-09-04T12:37:43.175Z",
+      "keywordHits": [],
+      "signalMatches": {
+        "menu": [],
+        "specials": [],
+        "events": [],
+        "patio": [],
+        "openings": [],
+        "closures": [],
+        "moves": [],
+        "brunch": [],
+        "reservations": [],
+        "takeout": []
+      },
+      "candidateLinks": [],
       "sourceKind": "official_website",
-      "reviewState": "cross-check"
+      "reviewState": "needs-review"
     },
     {
       "restaurantId": "osm-node-5161526522-sushi-nami-royale",
       "name": "Sushi Nami Royale",
       "website": "https://sushinami.ca/",
       "status": 200,
-      "observedAt": "2026-09-03T19:55:08.308Z",
+      "observedAt": "2026-09-04T12:37:42.785Z",
       "keywordHits": [
         "menu",
         "special",
@@ -20502,7 +20736,7 @@
       "name": "Sushi Nami Royale",
       "website": "https://sushinami.ca/",
       "status": 200,
-      "observedAt": "2026-09-03T19:55:09.371Z",
+      "observedAt": "2026-09-04T12:37:43.933Z",
       "keywordHits": [
         "menu",
         "special",
@@ -20659,7 +20893,7 @@
       "name": "Sushi Shige",
       "website": "https://www.shige.ca/",
       "status": 200,
-      "observedAt": "2026-09-03T19:55:08.575Z",
+      "observedAt": "2026-09-04T12:37:43.176Z",
       "keywordHits": [
         "menu",
         "special",
@@ -20770,7 +21004,7 @@
       "name": "Suzuki Japanese Restaurant",
       "website": "http://www.suzukirestaurant.ca/",
       "error": "fetch failed",
-      "observedAt": "2026-09-03T19:55:08.657Z",
+      "observedAt": "2026-09-04T12:37:43.365Z",
       "sourceKind": "official_website",
       "reviewState": "cross-check"
     },
@@ -20779,7 +21013,7 @@
       "name": "Swaad Sagaa Indian Cuisine Incorporated",
       "website": "https://www.swaadsagaa.com/",
       "status": 200,
-      "observedAt": "2026-09-03T19:55:08.799Z",
+      "observedAt": "2026-09-04T12:37:43.535Z",
       "keywordHits": [
         "menu",
         "offers",
@@ -20851,7 +21085,7 @@
       "name": "Sweet & Sassy",
       "website": "https://sweetandsassy.ca/",
       "status": 200,
-      "observedAt": "2026-09-03T19:55:08.841Z",
+      "observedAt": "2026-09-04T12:37:43.552Z",
       "keywordHits": [
         "menu",
         "ticket",
@@ -20965,7 +21199,7 @@
       "name": "Tako Sushi & Ramen",
       "website": "https://www.takosushiramen.ca/",
       "status": 200,
-      "observedAt": "2026-09-03T19:55:08.942Z",
+      "observedAt": "2026-09-04T12:37:43.932Z",
       "keywordHits": [
         "menu",
         "special",
@@ -21247,7 +21481,7 @@
       "name": "Tarek's Cafe",
       "website": "http://www.tarekscafe.ca/",
       "error": "fetch failed",
-      "observedAt": "2026-09-03T19:55:09.260Z",
+      "observedAt": "2026-09-04T12:37:44.534Z",
       "sourceKind": "official_website",
       "reviewState": "cross-check"
     },
@@ -21256,7 +21490,7 @@
       "name": "Terra Cafe",
       "website": "https://terracafe.ca/",
       "status": 200,
-      "observedAt": "2026-09-03T19:55:09.572Z",
+      "observedAt": "2026-09-04T12:37:44.650Z",
       "keywordHits": [
         "menu",
         "breakfast"
@@ -21379,7 +21613,7 @@
       "name": "THE 5K CAFE",
       "website": "https://www.the5kcafe.ca/",
       "status": 200,
-      "observedAt": "2026-09-03T19:55:09.860Z",
+      "observedAt": "2026-09-04T12:37:44.768Z",
       "keywordHits": [
         "menu",
         "features",
@@ -21434,7 +21668,7 @@
       "name": "The Armview Restaurant & Lounge",
       "website": "https://www.thearmview.com/",
       "status": 200,
-      "observedAt": "2026-09-03T19:55:10.093Z",
+      "observedAt": "2026-09-04T12:37:44.944Z",
       "keywordHits": [
         "menu",
         "event",
@@ -21661,7 +21895,7 @@
       "name": "The Beaver's Den",
       "website": "https://thebeaversden.ca/",
       "status": 200,
-      "observedAt": "2026-09-03T19:55:10.374Z",
+      "observedAt": "2026-09-04T12:37:45.083Z",
       "keywordHits": [
         "menu",
         "cocktail",
@@ -21764,7 +21998,7 @@
       "name": "the Bedford Basin Market",
       "website": "https://www.bedfordbasinmarket.com/",
       "error": "fetch failed",
-      "observedAt": "2026-09-03T19:55:10.440Z",
+      "observedAt": "2026-09-04T12:37:45.101Z",
       "sourceKind": "official_website",
       "reviewState": "cross-check"
     },
@@ -21773,7 +22007,7 @@
       "name": "The BG",
       "website": "https://www.stubborngoat.ca/",
       "status": 200,
-      "observedAt": "2026-09-03T19:55:10.709Z",
+      "observedAt": "2026-09-04T12:37:45.284Z",
       "keywordHits": [
         "menu",
         "cocktail",
@@ -21932,7 +22166,7 @@
       "name": "The Bitter End",
       "website": "https://www.bitterend.ca/",
       "status": 200,
-      "observedAt": "2026-09-03T19:54:37.386Z",
+      "observedAt": "2026-09-04T12:37:16.354Z",
       "keywordHits": [
         "menu",
         "reserve"
@@ -21999,7 +22233,7 @@
       "name": "The Black Sheep",
       "website": "https://blacksheephalifax.com/",
       "status": 200,
-      "observedAt": "2026-09-03T19:55:10.956Z",
+      "observedAt": "2026-09-04T12:37:45.767Z",
       "keywordHits": [
         "menu",
         "event",
@@ -22092,7 +22326,7 @@
       "name": "The Bread Lounge",
       "website": "https://thebreadloungebakery.square.site/",
       "status": 200,
-      "observedAt": "2026-09-03T19:55:11.275Z",
+      "observedAt": "2026-09-04T12:37:46.134Z",
       "keywordHits": [],
       "signalMatches": {
         "menu": [],
@@ -22115,7 +22349,7 @@
       "name": "The Brooklyn Warehouse",
       "website": "https://brooklynwarehouse.ca/",
       "error": "robots_disallow",
-      "observedAt": "2026-09-03T19:55:11.554Z",
+      "observedAt": "2026-09-04T12:37:46.466Z",
       "sourceKind": "official_website",
       "reviewState": "restricted"
     },
@@ -22124,7 +22358,7 @@
       "name": "The Butcher's Block Pub and Eatery",
       "website": "http://www.butchersblockpub.com/",
       "error": "robots_disallow",
-      "observedAt": "2026-09-03T19:55:11.675Z",
+      "observedAt": "2026-09-04T12:37:46.530Z",
       "sourceKind": "official_website",
       "reviewState": "restricted"
     },
@@ -22133,7 +22367,7 @@
       "name": "The Grounds Cafe by Drift Coffee",
       "website": "https://www.instagram.com/driftcoffeehfx/",
       "error": "robots_disallow",
-      "observedAt": "2026-09-03T19:54:37.990Z",
+      "observedAt": "2026-09-04T12:37:16.942Z",
       "sourceKind": "official_website",
       "reviewState": "restricted"
     },
@@ -22142,7 +22376,7 @@
       "name": "The Juice Press",
       "website": "http://harboursouth.ca/dining/juice-press-inc/",
       "status": 404,
-      "observedAt": "2026-09-03T19:54:58.790Z",
+      "observedAt": "2026-09-04T12:37:35.600Z",
       "keywordHits": [
         "menu"
       ],
@@ -22169,7 +22403,7 @@
       "name": "The Keg",
       "website": "https://thekeg.com/en/locations/halifax",
       "status": 200,
-      "observedAt": "2026-09-03T19:55:11.872Z",
+      "observedAt": "2026-09-04T12:37:46.731Z",
       "keywordHits": [
         "menu",
         "offers",
@@ -22240,7 +22474,7 @@
       "name": "The Loose Cannon",
       "website": "https://www.theloosecannon.ca/",
       "status": 200,
-      "observedAt": "2026-09-03T19:55:12.339Z",
+      "observedAt": "2026-09-04T12:37:46.731Z",
       "keywordHits": [
         "menu"
       ],
@@ -22286,7 +22520,7 @@
       "name": "The Lower Deck",
       "website": "https://lowerdeck.ca/",
       "status": 200,
-      "observedAt": "2026-09-03T19:55:12.425Z",
+      "observedAt": "2026-09-04T12:37:47.230Z",
       "keywordHits": [
         "menu",
         "event",
@@ -22361,7 +22595,7 @@
       "name": "The Mellow Mug",
       "website": "https://www.mellowmug.ca/",
       "status": 200,
-      "observedAt": "2026-09-03T19:55:12.624Z",
+      "observedAt": "2026-09-04T12:37:47.581Z",
       "keywordHits": [
         "menu",
         "special",
@@ -22434,7 +22668,7 @@
       "name": "The Mercantile Social",
       "website": "https://www.themercantilesocial.com/",
       "status": 200,
-      "observedAt": "2026-09-03T19:55:12.807Z",
+      "observedAt": "2026-09-04T12:37:47.695Z",
       "keywordHits": [
         "menu",
         "cocktail"
@@ -22482,7 +22716,7 @@
       "name": "The Mic Mac Bar and Grill",
       "website": "https://micmacbarandgrill.com/",
       "status": 200,
-      "observedAt": "2026-09-03T19:55:12.910Z",
+      "observedAt": "2026-09-04T12:37:47.919Z",
       "keywordHits": [
         "menu",
         "food menu",
@@ -22708,7 +22942,7 @@
           }
         },
         {
-          "text": "8 OZ AAA Steak Special C $39.00 Served with Bacon Wrapped Scallops starting at 4 PM",
+          "text": "Pasta Special FRI & SAT Ask Server Starting at 4 PM",
           "href": "https://micmacbarandgrill.com/#",
           "signalMatches": {
             "menu": [],
@@ -22752,7 +22986,7 @@
       "name": "The Middle Spoon Desserterie & Bar",
       "website": "https://themiddlespoon.com/",
       "status": 200,
-      "observedAt": "2026-09-03T19:55:12.926Z",
+      "observedAt": "2026-09-04T12:37:48.132Z",
       "keywordHits": [
         "menu",
         "cocktail",
@@ -23140,7 +23374,7 @@
       "name": "The Nook",
       "website": "http://www.thenookhfx.ca/",
       "status": 200,
-      "observedAt": "2026-09-03T19:55:13.505Z",
+      "observedAt": "2026-09-04T12:37:48.581Z",
       "keywordHits": [],
       "signalMatches": {
         "menu": [],
@@ -23163,7 +23397,7 @@
       "name": "The Old Triangle Irish Pub",
       "website": "https://oldtriangle.com/welcome/",
       "status": 404,
-      "observedAt": "2026-09-03T19:55:13.581Z",
+      "observedAt": "2026-09-04T12:37:48.688Z",
       "keywordHits": [
         "menu",
         "event",
@@ -23315,7 +23549,7 @@
       "name": "The Ostrich Club",
       "website": "https://theostrichclub.ca/",
       "status": 200,
-      "observedAt": "2026-09-03T19:55:14.239Z",
+      "observedAt": "2026-09-04T12:37:49.346Z",
       "keywordHits": [
         "menu",
         "cocktail",
@@ -23363,7 +23597,7 @@
       "name": "Tilted Tap",
       "website": "https://www.tiltedtap.ca/",
       "status": 200,
-      "observedAt": "2026-09-03T19:55:14.525Z",
+      "observedAt": "2026-09-04T12:37:49.899Z",
       "keywordHits": [
         "menu",
         "drink menu",
@@ -23649,7 +23883,7 @@
       "name": "Tim Hortons",
       "website": "https://www.timhortons.ca/store-locator/store/restaurant_66914",
       "status": 200,
-      "observedAt": "2026-09-03T19:55:14.526Z",
+      "observedAt": "2026-09-04T12:37:49.982Z",
       "keywordHits": [],
       "signalMatches": {
         "menu": [],
@@ -23672,7 +23906,7 @@
       "name": "Tim Hortons",
       "website": "https://www.timhortons.com/",
       "status": 200,
-      "observedAt": "2026-09-03T19:55:14.840Z",
+      "observedAt": "2026-09-04T12:37:50.310Z",
       "keywordHits": [],
       "signalMatches": {
         "menu": [],
@@ -23695,7 +23929,7 @@
       "name": "Tim Hortons",
       "website": "https://www.timhortons.com/",
       "status": 200,
-      "observedAt": "2026-09-03T19:55:15.409Z",
+      "observedAt": "2026-09-04T12:37:50.900Z",
       "keywordHits": [],
       "signalMatches": {
         "menu": [],
@@ -23718,7 +23952,7 @@
       "name": "Tim Hortons",
       "website": "https://dal.mydininghub.ca/en/locations",
       "status": 200,
-      "observedAt": "2026-09-03T19:54:40.217Z",
+      "observedAt": "2026-09-04T12:37:19.309Z",
       "keywordHits": [
         "menu"
       ],
@@ -23782,7 +24016,7 @@
       "name": "Tim Hortons",
       "website": "https://www.timhortons.com/",
       "status": 200,
-      "observedAt": "2026-09-03T19:55:15.675Z",
+      "observedAt": "2026-09-04T12:37:51.194Z",
       "keywordHits": [],
       "signalMatches": {
         "menu": [],
@@ -23805,7 +24039,7 @@
       "name": "Tim Hortons",
       "website": "https://www.timhortons.com/",
       "status": 200,
-      "observedAt": "2026-09-03T19:55:15.926Z",
+      "observedAt": "2026-09-04T12:37:51.488Z",
       "keywordHits": [],
       "signalMatches": {
         "menu": [],
@@ -23828,7 +24062,7 @@
       "name": "Tim Hortons",
       "website": "https://locations.timhortons.ca/en/ns/halifax/390-osborne-street/",
       "status": 200,
-      "observedAt": "2026-09-03T19:55:14.923Z",
+      "observedAt": "2026-09-04T12:37:50.316Z",
       "keywordHits": [
         "menu",
         "special",
@@ -23948,7 +24182,7 @@
       "name": "Tim Hortons",
       "website": "https://www.timhortons.ca/store-locator/store/restaurant_67296",
       "status": 200,
-      "observedAt": "2026-09-03T19:55:15.122Z",
+      "observedAt": "2026-09-04T12:37:50.772Z",
       "keywordHits": [],
       "signalMatches": {
         "menu": [],
@@ -23971,7 +24205,7 @@
       "name": "Tim Hortons",
       "website": "https://www.timhortons.ca/store-locator/store/restaurant_66291",
       "status": 200,
-      "observedAt": "2026-09-03T19:55:15.456Z",
+      "observedAt": "2026-09-04T12:37:51.114Z",
       "keywordHits": [],
       "signalMatches": {
         "menu": [],
@@ -23994,7 +24228,7 @@
       "name": "Tim Hortons",
       "website": "https://www.timhortons.ca/",
       "status": 200,
-      "observedAt": "2026-09-03T19:55:15.789Z",
+      "observedAt": "2026-09-04T12:37:51.498Z",
       "keywordHits": [],
       "signalMatches": {
         "menu": [],
@@ -24017,7 +24251,7 @@
       "name": "Tim Hortons",
       "website": "https://www.timhortons.ca/store-locator/store/restaurant_66191",
       "status": 200,
-      "observedAt": "2026-09-03T19:55:16.456Z",
+      "observedAt": "2026-09-04T12:37:52.281Z",
       "keywordHits": [],
       "signalMatches": {
         "menu": [],
@@ -24040,7 +24274,7 @@
       "name": "Tokyo Roll",
       "website": "https://www.tokyorollhalifax.com/",
       "status": 200,
-      "observedAt": "2026-09-03T19:55:15.472Z",
+      "observedAt": "2026-09-04T12:37:50.712Z",
       "keywordHits": [
         "menu",
         "reserve",
@@ -24110,7 +24344,7 @@
       "name": "Tomavinos Pizzeria",
       "website": "https://www.tomavinos.ca/",
       "status": 200,
-      "observedAt": "2026-09-03T19:55:15.626Z",
+      "observedAt": "2026-09-04T12:37:50.910Z",
       "keywordHits": [
         "menu",
         "special",
@@ -24241,7 +24475,7 @@
       "name": "Tony's Pizza",
       "website": "https://www.tonysdonair.com/",
       "status": 200,
-      "observedAt": "2026-09-03T19:55:15.675Z",
+      "observedAt": "2026-09-04T12:37:51.115Z",
       "keywordHits": [
         "menu",
         "special",
@@ -24390,7 +24624,7 @@
       "name": "Trident Booksellers and Cafe",
       "website": "https://tridenthalifax.ca/",
       "status": 200,
-      "observedAt": "2026-09-03T19:55:15.872Z",
+      "observedAt": "2026-09-04T12:37:51.587Z",
       "keywordHits": [
         "event",
         "events",
@@ -24537,7 +24771,7 @@
       "name": "Turkish Delight",
       "website": "https://turkishdelighthalifax.ca/",
       "status": 200,
-      "observedAt": "2026-09-03T19:55:16.086Z",
+      "observedAt": "2026-09-04T12:37:51.680Z",
       "keywordHits": [
         "special",
         "deal",
@@ -24574,7 +24808,7 @@
       "name": "Two if By Sea",
       "website": "https://twoifbyseacafe.ca/",
       "status": 200,
-      "observedAt": "2026-09-03T19:55:16.186Z",
+      "observedAt": "2026-09-04T12:37:51.758Z",
       "keywordHits": [
         "menu",
         "special",
@@ -24610,7 +24844,7 @@
       "name": "Uncommon Grounds",
       "website": "https://theuncommongroup.com/",
       "status": 200,
-      "observedAt": "2026-09-03T19:55:16.341Z",
+      "observedAt": "2026-09-04T12:37:52.002Z",
       "keywordHits": [
         "menu"
       ],
@@ -24637,7 +24871,7 @@
       "name": "Vandal Doughnuts",
       "website": "https://vandaldoughnuts.ca/",
       "error": "fetch failed",
-      "observedAt": "2026-09-03T19:55:16.456Z",
+      "observedAt": "2026-09-04T12:37:52.166Z",
       "sourceKind": "official_website",
       "reviewState": "cross-check"
     },
@@ -24646,7 +24880,7 @@
       "name": "Wasabi House",
       "website": "http://wasabihouse.ca/",
       "status": 200,
-      "observedAt": "2026-09-03T19:55:16.663Z",
+      "observedAt": "2026-09-04T12:37:52.507Z",
       "keywordHits": [
         "menu",
         "happy hour",
@@ -24725,7 +24959,7 @@
       "name": "Water Polo",
       "website": "https://www.waterpolohfx.ca/",
       "status": 200,
-      "observedAt": "2026-09-03T19:55:16.772Z",
+      "observedAt": "2026-09-04T12:37:52.531Z",
       "keywordHits": [
         "menu",
         "features",
@@ -24883,7 +25117,7 @@
       "name": "Waterfront Warehouse",
       "website": "https://www.rcr.ca/restaurants/waterfront-warehouse/",
       "status": 200,
-      "observedAt": "2026-09-03T19:54:57.661Z",
+      "observedAt": "2026-09-04T12:37:35.052Z",
       "keywordHits": [
         "menu",
         "wine list",
@@ -25023,7 +25257,7 @@
       "name": "Way2Roll",
       "website": "https://way2roll.ca/",
       "error": "fetch failed",
-      "observedAt": "2026-09-03T19:55:16.788Z",
+      "observedAt": "2026-09-04T12:37:52.632Z",
       "sourceKind": "official_website",
       "reviewState": "cross-check"
     },
@@ -25032,7 +25266,7 @@
       "name": "Wendy's",
       "website": "https://www.wendys.com/en-ca",
       "status": 200,
-      "observedAt": "2026-09-03T19:55:16.873Z",
+      "observedAt": "2026-09-04T12:37:52.777Z",
       "keywordHits": [
         "menu",
         "offers",
@@ -25513,7 +25747,7 @@
       "name": "Wendy's",
       "website": "https://locations.wendys.com/canada/ns/halifax/3580-kempt-road",
       "status": 200,
-      "observedAt": "2026-09-03T19:55:16.951Z",
+      "observedAt": "2026-09-04T12:37:53.031Z",
       "keywordHits": [
         "menu",
         "deal",
@@ -25878,7 +26112,7 @@
       "name": "Wild Leek Food & Juice Bar",
       "website": "https://www.wildleek.ca/",
       "status": 200,
-      "observedAt": "2026-09-03T19:55:17.139Z",
+      "observedAt": "2026-09-04T12:37:53.095Z",
       "keywordHits": [
         "menu",
         "special",
@@ -25974,7 +26208,7 @@
       "name": "Wing 'n It",
       "website": "https://wingnit.ca/",
       "status": 200,
-      "observedAt": "2026-09-03T19:55:17.220Z",
+      "observedAt": "2026-09-04T12:37:53.245Z",
       "keywordHits": [
         "menu",
         "special",
@@ -26326,7 +26560,7 @@
       "name": "Wooden Monkey",
       "website": "https://www.thewoodenmonkey.ca/",
       "status": 200,
-      "observedAt": "2026-09-03T19:55:17.321Z",
+      "observedAt": "2026-09-04T12:37:53.465Z",
       "keywordHits": [
         "menu",
         "special",
@@ -26517,7 +26751,7 @@
       "name": "Zoca",
       "website": "https://dal.mydininghub.ca/en/locations",
       "status": 200,
-      "observedAt": "2026-09-03T19:54:40.504Z",
+      "observedAt": "2026-09-04T12:37:19.592Z",
       "keywordHits": [
         "menu"
       ],
