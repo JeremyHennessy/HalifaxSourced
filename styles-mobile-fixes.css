@@ -9,4 +9,14 @@
   .filters-panel[data-filter-drawer] .filter-apply{
     margin-bottom:0;
   }
+
+  .detail-layout,
+  .detail-main{
+    padding-bottom:calc(128px + var(--mobile-tabbar-h))!important;
+  }
+
+  .detail-section:last-child,
+  .detail-sidebar{
+    margin-bottom:calc(32px + var(--mobile-tabbar-h))!important;
+  }
 }
