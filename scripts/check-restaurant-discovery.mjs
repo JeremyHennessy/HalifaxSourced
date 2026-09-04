@@ -27,7 +27,8 @@ const allowedDirectoryKinds = new Set([
   "business_improvement_district_feature_directory",
   "shopping_centre_directory",
   "restaurant_association_directory",
-  "culinary_tourism_member_directory"
+  "culinary_tourism_member_directory",
+  "third_party_review_directory"
 ]);
 
 function validUrl(value) {
@@ -117,4 +118,3 @@ if (failures.length) {
   process.exit(1);
 }
 console.log("Restaurant discovery integrity checks passed.");
-
