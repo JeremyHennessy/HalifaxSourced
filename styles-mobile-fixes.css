@@ -11,7 +11,7 @@
   }
 
   .restaurant-hero{
-    min-height:min(430px,calc(100dvh - var(--mobile-tabbar-h) - 40px))!important;
+    min-height:360px!important;
   }
 
   .restaurant-hero-overlay{
