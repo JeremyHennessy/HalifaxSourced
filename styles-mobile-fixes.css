@@ -10,6 +10,17 @@
     margin-bottom:0;
   }
 
+  .event-filter-panel[data-event-filter-panel]{
+    bottom:var(--mobile-tabbar-h)!important;
+    height:calc(100dvh - var(--mobile-tabbar-h))!important;
+    max-height:calc(100dvh - var(--mobile-tabbar-h))!important;
+    padding-bottom:calc(18px + env(safe-area-inset-bottom))!important;
+  }
+
+  .event-filter-panel[data-event-filter-panel] .event-filter-done{
+    margin-bottom:0;
+  }
+
   #mainMap,
   .leaflet-container{
     z-index:0!important;
