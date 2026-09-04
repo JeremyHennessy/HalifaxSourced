@@ -1,52 +1,52 @@
 window.HALIFAX_RECENT_SOCIAL_POSTS = {
   "version": 1,
-  "generatedAt": "2026-09-04T11:59:52.243Z",
+  "generatedAt": "2026-09-04T12:54:54.309Z",
   "lookbackDays": 180,
   "summaryLimit": 420,
   "inputCounts": {
     "websiteFeedPosts": 15,
-    "websitePagePosts": 698,
+    "websitePagePosts": 716,
     "socialApiPosts": 0,
     "publicSpecialPosts": 92,
     "websiteFeedSignals": 4,
-    "websitePageSignals": 651,
+    "websitePageSignals": 665,
     "socialApiSignals": 0
   },
   "sourceState": {
-    "websiteFeedsGeneratedAt": "2026-09-04T11:59:40.952Z",
-    "websitePagesGeneratedAt": "2026-09-04T11:59:41.020Z",
-    "metaSocialGeneratedAt": "2026-09-04T11:32:54.604Z",
+    "websiteFeedsGeneratedAt": "2026-09-04T12:52:36.408Z",
+    "websitePagesGeneratedAt": "2026-09-04T12:54:37.481Z",
+    "metaSocialGeneratedAt": "2026-09-04T12:52:12.257Z",
     "metaCredentialState": {
       "facebook": "missing",
       "instagram": "missing"
     },
     "metaProfilesAttempted": 0,
     "metaPostsObserved": 0,
-    "publicSpecialSourceGeneratedAt": "2026-09-03T20:01:16.791Z",
+    "publicSpecialSourceGeneratedAt": "2026-09-04T12:46:37.916Z",
     "publicSpecialSourceRecords": 143
   },
   "counts": {
-    "records": 264,
-    "restaurantsWithRecentPosts": 112,
+    "records": 277,
+    "restaurantsWithRecentPosts": 113,
     "categoryCounts": {
-      "specials": 142,
+      "specials": 146,
       "openings": 2,
       "menu": 39,
-      "events": 11,
+      "events": 12,
       "happy_hour": 38,
-      "reservations": 4,
-      "live_music": 15,
+      "reservations": 5,
+      "live_music": 22,
       "general_update": 9,
       "brunch": 4
     },
     "platformCounts": {
-      "official_page": 220,
+      "official_page": 233,
       "website_feed": 13,
       "public_source": 31
     },
     "reviewStateCounts": {
-      "source_signal": 154,
-      "needs_date_review": 103,
+      "source_signal": 158,
+      "needs_date_review": 112,
       "needs_category_review": 7
     }
   },
@@ -85,7 +85,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "special"
       ],
       "publishedAt": "9897-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-04T11:33:29.810Z",
+      "observedAt": "2026-09-04T12:52:33.350Z",
       "ageDays": 0,
       "isRecent": true,
       "lookbackDays": 180,
@@ -146,7 +146,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "reservation"
       ],
       "publishedAt": "8390-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-04T11:33:36.258Z",
+      "observedAt": "2026-09-04T12:52:37.896Z",
       "ageDays": 0,
       "isRecent": true,
       "lookbackDays": 180,
@@ -205,7 +205,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "reservation"
       ],
       "publishedAt": "8390-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-04T11:33:36.555Z",
+      "observedAt": "2026-09-04T12:52:38.190Z",
       "ageDays": 0,
       "isRecent": true,
       "lookbackDays": 180,
@@ -264,7 +264,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "fall menu"
       ],
       "publishedAt": "6341-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-04T11:33:26.364Z",
+      "observedAt": "2026-09-04T12:52:29.668Z",
       "ageDays": 0,
       "isRecent": true,
       "lookbackDays": 180,
@@ -323,7 +323,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "fall menu"
       ],
       "publishedAt": "6341-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-04T11:33:28.996Z",
+      "observedAt": "2026-09-04T12:52:31.518Z",
       "ageDays": 0,
       "isRecent": true,
       "lookbackDays": 180,
@@ -366,7 +366,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "menu"
       ],
       "publishedAt": "6341-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-04T11:33:26.763Z",
+      "observedAt": "2026-09-04T12:52:30.000Z",
       "ageDays": 0,
       "isRecent": true,
       "lookbackDays": 180,
@@ -409,7 +409,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "menu"
       ],
       "publishedAt": "6341-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-04T11:33:29.245Z",
+      "observedAt": "2026-09-04T12:52:31.773Z",
       "ageDays": 0,
       "isRecent": true,
       "lookbackDays": 180,
@@ -466,7 +466,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "holiday"
       ],
       "publishedAt": "6341-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-04T11:33:28.022Z",
+      "observedAt": "2026-09-04T12:52:30.571Z",
       "ageDays": 0,
       "isRecent": true,
       "lookbackDays": 180,
@@ -523,7 +523,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "holiday"
       ],
       "publishedAt": "6341-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-04T11:33:29.714Z",
+      "observedAt": "2026-09-04T12:52:32.282Z",
       "ageDays": 0,
       "isRecent": true,
       "lookbackDays": 180,
@@ -566,7 +566,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "menu"
       ],
       "publishedAt": "6341-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-04T11:33:27.179Z",
+      "observedAt": "2026-09-04T12:52:30.331Z",
       "ageDays": 0,
       "isRecent": true,
       "lookbackDays": 180,
@@ -609,7 +609,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "menu"
       ],
       "publishedAt": "6341-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-04T11:33:29.501Z",
+      "observedAt": "2026-09-04T12:52:32.064Z",
       "ageDays": 0,
       "isRecent": true,
       "lookbackDays": 180,
@@ -660,7 +660,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "menu"
       ],
       "publishedAt": "6341-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-04T11:33:28.692Z",
+      "observedAt": "2026-09-04T12:52:31.187Z",
       "ageDays": 0,
       "isRecent": true,
       "lookbackDays": 180,
@@ -711,7 +711,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "menu"
       ],
       "publishedAt": "6341-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-04T11:33:30.246Z",
+      "observedAt": "2026-09-04T12:52:32.900Z",
       "ageDays": 0,
       "isRecent": true,
       "lookbackDays": 180,
@@ -754,7 +754,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "menu"
       ],
       "publishedAt": "6341-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-04T11:33:28.294Z",
+      "observedAt": "2026-09-04T12:52:30.919Z",
       "ageDays": 0,
       "isRecent": true,
       "lookbackDays": 180,
@@ -797,7 +797,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "menu"
       ],
       "publishedAt": "6341-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-04T11:33:29.977Z",
+      "observedAt": "2026-09-04T12:52:32.575Z",
       "ageDays": 0,
       "isRecent": true,
       "lookbackDays": 180,
@@ -862,7 +862,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "walk-ins"
       ],
       "publishedAt": "4545-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-04T11:34:08.738Z",
+      "observedAt": "2026-09-04T12:53:09.837Z",
       "ageDays": 0,
       "isRecent": true,
       "lookbackDays": 180,
@@ -917,7 +917,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "menu"
       ],
       "publishedAt": "3840-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-04T11:33:39.795Z",
+      "observedAt": "2026-09-04T12:52:42.204Z",
       "ageDays": 0,
       "isRecent": true,
       "lookbackDays": 180,
@@ -980,7 +980,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "reservations"
       ],
       "publishedAt": "3300-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-04T11:34:09.049Z",
+      "observedAt": "2026-09-04T12:53:10.178Z",
       "ageDays": 0,
       "isRecent": true,
       "lookbackDays": 180,
@@ -1079,7 +1079,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "book a table"
       ],
       "publishedAt": "2560-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-04T11:33:12.823Z",
+      "observedAt": "2026-09-04T12:52:20.614Z",
       "ageDays": 0,
       "isRecent": true,
       "lookbackDays": 180,
@@ -1168,7 +1168,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "book a table"
       ],
       "publishedAt": "2560-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-04T11:33:14.053Z",
+      "observedAt": "2026-09-04T12:52:20.998Z",
       "ageDays": 0,
       "isRecent": true,
       "lookbackDays": 180,
@@ -1267,7 +1267,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "book a table"
       ],
       "publishedAt": "2560-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-04T11:33:15.550Z",
+      "observedAt": "2026-09-04T12:52:21.721Z",
       "ageDays": 0,
       "isRecent": true,
       "lookbackDays": 180,
@@ -1334,7 +1334,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "breakfast"
       ],
       "publishedAt": "2560-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-04T11:33:32.175Z",
+      "observedAt": "2026-09-04T12:52:34.306Z",
       "ageDays": 0,
       "isRecent": true,
       "lookbackDays": 180,
@@ -1417,7 +1417,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "breakfast"
       ],
       "publishedAt": "2560-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-04T11:33:17.313Z",
+      "observedAt": "2026-09-04T12:52:24.163Z",
       "ageDays": 0,
       "isRecent": true,
       "lookbackDays": 180,
@@ -1480,7 +1480,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "breakfast"
       ],
       "publishedAt": "2560-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-04T11:33:28.546Z",
+      "observedAt": "2026-09-04T12:52:32.448Z",
       "ageDays": 0,
       "isRecent": true,
       "lookbackDays": 180,
@@ -1543,7 +1543,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "breakfast"
       ],
       "publishedAt": "2560-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-04T11:33:39.709Z",
+      "observedAt": "2026-09-04T12:52:41.221Z",
       "ageDays": 0,
       "isRecent": true,
       "lookbackDays": 180,
@@ -1616,7 +1616,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "mimosa"
       ],
       "publishedAt": "2560-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-04T11:33:19.232Z",
+      "observedAt": "2026-09-04T12:52:25.403Z",
       "ageDays": 0,
       "isRecent": true,
       "lookbackDays": 180,
@@ -1689,7 +1689,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "mimosa"
       ],
       "publishedAt": "2560-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-04T11:33:33.159Z",
+      "observedAt": "2026-09-04T12:52:35.203Z",
       "ageDays": 0,
       "isRecent": true,
       "lookbackDays": 180,
@@ -1804,7 +1804,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "reservations"
       ],
       "publishedAt": "2550-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-04T11:34:09.367Z",
+      "observedAt": "2026-09-04T12:53:10.511Z",
       "ageDays": 0,
       "isRecent": true,
       "lookbackDays": 180,
@@ -1812,6 +1812,298 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
       "confidence": "official_source_page_signal",
       "reviewState": "source_signal",
       "associationBasis": "same_site_official_page"
+    },
+    {
+      "id": "official_page-fd35aa8e46f451348a",
+      "restaurantId": "osm-node-4420916900-board-room-game-cafe",
+      "restaurantName": "Board Room Game Cafe",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://boardroomgames.wixsite.com/tbrgc",
+      "mediaUrl": "https://static.wixstatic.com/media/f905a0_d173bfaee8d743e5951d9dd5492cef11%7Emv2.png/v1/fit/w_2500,h_1330,al_c/f905a0_d173bfaee8d743e5951d9dd5492cef11%7Emv2.png",
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "The Board Room Game Cafe",
+      "summary": "Nova Scotia",
+      "primaryCategory": "specials",
+      "primaryCategoryLabel": "Special",
+      "categories": [
+        {
+          "id": "specials",
+          "label": "Special",
+          "terms": [
+            "special"
+          ]
+        },
+        {
+          "id": "events",
+          "label": "Event",
+          "terms": [
+            "event",
+            "events"
+          ]
+        },
+        {
+          "id": "live_music",
+          "label": "Live music",
+          "terms": [
+            "trivia"
+          ]
+        },
+        {
+          "id": "menu",
+          "label": "Menu update",
+          "terms": [
+            "menu"
+          ]
+        },
+        {
+          "id": "seasonal",
+          "label": "Seasonal",
+          "terms": [
+            "holiday"
+          ]
+        },
+        {
+          "id": "reservations",
+          "label": "Reservations",
+          "terms": [
+            "reservation",
+            "reservations",
+            "book a table"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "special",
+        "event",
+        "events",
+        "trivia",
+        "menu",
+        "holiday",
+        "reservation",
+        "reservations",
+        "book a table"
+      ],
+      "publishedAt": "2500-01-01T00:00:00.000Z",
+      "observedAt": "2026-09-04T12:52:16.757Z",
+      "ageDays": 0,
+      "isRecent": true,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "source_signal",
+      "associationBasis": "official_site_linked_page"
+    },
+    {
+      "id": "official_page-3f7a9aa5fe9f7daceb",
+      "restaurantId": "osm-node-4420916900-board-room-game-cafe",
+      "restaurantName": "Board Room Game Cafe",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://boardroomgames.wixsite.com/tbrgc/info",
+      "mediaUrl": "https://static.wixstatic.com/media/f905a0_d173bfaee8d743e5951d9dd5492cef11%7Emv2.png/v1/fit/w_2500,h_1330,al_c/f905a0_d173bfaee8d743e5951d9dd5492cef11%7Emv2.png",
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "TTRPG Events | Board Room Game Cafe",
+      "summary": "The Board Room Game Cafe hosts weekly drop-in table top rpg games.",
+      "primaryCategory": "specials",
+      "primaryCategoryLabel": "Special",
+      "categories": [
+        {
+          "id": "specials",
+          "label": "Special",
+          "terms": [
+            "special"
+          ]
+        },
+        {
+          "id": "events",
+          "label": "Event",
+          "terms": [
+            "event",
+            "events"
+          ]
+        },
+        {
+          "id": "menu",
+          "label": "Menu update",
+          "terms": [
+            "menu"
+          ]
+        },
+        {
+          "id": "reservations",
+          "label": "Reservations",
+          "terms": [
+            "reservation",
+            "book a table"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "special",
+        "event",
+        "events",
+        "menu",
+        "reservation",
+        "book a table"
+      ],
+      "publishedAt": "2500-01-01T00:00:00.000Z",
+      "observedAt": "2026-09-04T12:52:17.965Z",
+      "ageDays": 0,
+      "isRecent": true,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "source_signal",
+      "associationBasis": "official_site_linked_page"
+    },
+    {
+      "id": "official_page-3b07326b4c514bb34d",
+      "restaurantId": "osm-node-4420916900-board-room-game-cafe",
+      "restaurantName": "Board Room Game Cafe",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://boardroomgames.wixsite.com/tbrgc/menu",
+      "mediaUrl": "https://static.wixstatic.com/media/f905a0_d173bfaee8d743e5951d9dd5492cef11%7Emv2.png/v1/fit/w_2500,h_1330,al_c/f905a0_d173bfaee8d743e5951d9dd5492cef11%7Emv2.png",
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Menu | The Board Room Game Cafe",
+      "summary": "--> Menu | The Board Room Game Cafe top of page info@boardroomgames.ca 902-423-7545 BOOK A TABLE The Board Room Game Cafe Home Online Shop Menus Events TTRPG Events Accessibility Group & Team Building Packages Express More Use tab to navigate through the menu items. Food & Drink Menu Fuel up while you play! Try our wraps, sandwiches, personal pizzas, nachos, or nibble away on a wide variety of sweet and salty snac...",
+      "primaryCategory": "events",
+      "primaryCategoryLabel": "Event",
+      "categories": [
+        {
+          "id": "events",
+          "label": "Event",
+          "terms": [
+            "event",
+            "events"
+          ]
+        },
+        {
+          "id": "menu",
+          "label": "Menu update",
+          "terms": [
+            "menu"
+          ]
+        },
+        {
+          "id": "reservations",
+          "label": "Reservations",
+          "terms": [
+            "book a table"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "event",
+        "events",
+        "menu",
+        "book a table"
+      ],
+      "publishedAt": "2500-01-01T00:00:00.000Z",
+      "observedAt": "2026-09-04T12:52:17.241Z",
+      "ageDays": 0,
+      "isRecent": true,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "source_signal",
+      "associationBasis": "official_site_linked_page"
+    },
+    {
+      "id": "official_page-8764b85c56198440ac",
+      "restaurantId": "osm-node-4420916900-board-room-game-cafe",
+      "restaurantName": "Board Room Game Cafe",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://boardroomgames.wixsite.com/tbrgc/upcoming-events",
+      "mediaUrl": "https://static.wixstatic.com/media/f905a0_d173bfaee8d743e5951d9dd5492cef11%7Emv2.png/v1/fit/w_2500,h_1330,al_c/f905a0_d173bfaee8d743e5951d9dd5492cef11%7Emv2.png",
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Events | The Board Room Game Cafe",
+      "summary": "--> Events | The Board Room Game Cafe top of page info@boardroomgames.ca 902-423-7545 BOOK A TABLE The Board Room Game Cafe Home Online Shop Menus Events TTRPG Events Accessibility Group & Team Building Packages Express More Use tab to navigate through the menu items. Events at TBRGC Looking for a fun afternoon or evening out? Join us for a variety of events and good company! Don't forget to sign up through Eventb...",
+      "primaryCategory": "specials",
+      "primaryCategoryLabel": "Special",
+      "categories": [
+        {
+          "id": "specials",
+          "label": "Special",
+          "terms": [
+            "deal",
+            "deals"
+          ]
+        },
+        {
+          "id": "events",
+          "label": "Event",
+          "terms": [
+            "event",
+            "events"
+          ]
+        },
+        {
+          "id": "menu",
+          "label": "Menu update",
+          "terms": [
+            "menu"
+          ]
+        },
+        {
+          "id": "reservations",
+          "label": "Reservations",
+          "terms": [
+            "book a table"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "deal",
+        "deals",
+        "event",
+        "events",
+        "menu",
+        "book a table"
+      ],
+      "publishedAt": "2500-01-01T00:00:00.000Z",
+      "observedAt": "2026-09-04T12:52:17.655Z",
+      "ageDays": 0,
+      "isRecent": true,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "source_signal",
+      "associationBasis": "official_site_linked_page"
     },
     {
       "id": "official_page-bf56c1b9a4fae46619",
@@ -1879,7 +2171,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "book a table"
       ],
       "publishedAt": "2500-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-04T11:33:22.681Z",
+      "observedAt": "2026-09-04T12:52:28.084Z",
       "ageDays": 0,
       "isRecent": true,
       "lookbackDays": 180,
@@ -1952,7 +2244,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "book a table"
       ],
       "publishedAt": "2500-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-04T11:33:23.662Z",
+      "observedAt": "2026-09-04T12:52:28.394Z",
       "ageDays": 0,
       "isRecent": true,
       "lookbackDays": 180,
@@ -2025,7 +2317,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "book a table"
       ],
       "publishedAt": "2500-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-04T11:33:26.380Z",
+      "observedAt": "2026-09-04T12:52:28.938Z",
       "ageDays": 0,
       "isRecent": true,
       "lookbackDays": 180,
@@ -2100,7 +2392,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "book a table"
       ],
       "publishedAt": "2500-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-04T11:33:24.963Z",
+      "observedAt": "2026-09-04T12:52:28.768Z",
       "ageDays": 0,
       "isRecent": true,
       "lookbackDays": 180,
@@ -2153,7 +2445,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "menu"
       ],
       "publishedAt": "2500-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-04T11:33:23.129Z",
+      "observedAt": "2026-09-04T12:52:28.351Z",
       "ageDays": 0,
       "isRecent": true,
       "lookbackDays": 180,
@@ -2204,7 +2496,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "menu"
       ],
       "publishedAt": "2500-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-04T11:33:35.748Z",
+      "observedAt": "2026-09-04T12:52:37.708Z",
       "ageDays": 0,
       "isRecent": true,
       "lookbackDays": 180,
@@ -2265,7 +2557,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "menu"
       ],
       "publishedAt": "2500-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-04T11:33:36.067Z",
+      "observedAt": "2026-09-04T12:52:38.030Z",
       "ageDays": 0,
       "isRecent": true,
       "lookbackDays": 180,
@@ -2326,7 +2618,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "reservation"
       ],
       "publishedAt": "2500-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-04T11:33:39.242Z",
+      "observedAt": "2026-09-04T12:52:41.695Z",
       "ageDays": 0,
       "isRecent": true,
       "lookbackDays": 180,
@@ -2379,7 +2671,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "menu"
       ],
       "publishedAt": "2500-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-04T11:33:39.558Z",
+      "observedAt": "2026-09-04T12:52:42.011Z",
       "ageDays": 0,
       "isRecent": true,
       "lookbackDays": 180,
@@ -2444,7 +2736,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "menu"
       ],
       "publishedAt": "2500-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-04T11:33:51.737Z",
+      "observedAt": "2026-09-04T12:52:52.044Z",
       "ageDays": 0,
       "isRecent": true,
       "lookbackDays": 180,
@@ -2505,7 +2797,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "menu"
       ],
       "publishedAt": "2500-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-04T11:33:52.017Z",
+      "observedAt": "2026-09-04T12:52:52.412Z",
       "ageDays": 0,
       "isRecent": true,
       "lookbackDays": 180,
@@ -2560,7 +2852,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "menu"
       ],
       "publishedAt": "2500-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-04T11:33:52.302Z",
+      "observedAt": "2026-09-04T12:52:52.618Z",
       "ageDays": 0,
       "isRecent": true,
       "lookbackDays": 180,
@@ -2603,7 +2895,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "menu"
       ],
       "publishedAt": "2500-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-04T11:33:52.504Z",
+      "observedAt": "2026-09-04T12:52:52.804Z",
       "ageDays": 0,
       "isRecent": true,
       "lookbackDays": 180,
@@ -2676,7 +2968,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "holiday"
       ],
       "publishedAt": "2500-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-04T11:34:01.992Z",
+      "observedAt": "2026-09-04T12:53:04.712Z",
       "ageDays": 0,
       "isRecent": true,
       "lookbackDays": 180,
@@ -2735,7 +3027,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "menu"
       ],
       "publishedAt": "2500-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-04T11:34:02.317Z",
+      "observedAt": "2026-09-04T12:53:05.056Z",
       "ageDays": 0,
       "isRecent": true,
       "lookbackDays": 180,
@@ -2788,7 +3080,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "menu"
       ],
       "publishedAt": "2500-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-04T11:34:13.422Z",
+      "observedAt": "2026-09-04T12:53:14.946Z",
       "ageDays": 0,
       "isRecent": true,
       "lookbackDays": 180,
@@ -2851,7 +3143,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "breakfast"
       ],
       "publishedAt": "2500-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-04T11:34:13.762Z",
+      "observedAt": "2026-09-04T12:53:15.256Z",
       "ageDays": 0,
       "isRecent": true,
       "lookbackDays": 180,
@@ -2936,7 +3228,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "reservations"
       ],
       "publishedAt": "2500-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-03T20:06:07.983Z",
+      "observedAt": "2026-09-04T12:53:18.923Z",
       "ageDays": 0,
       "isRecent": true,
       "lookbackDays": 180,
@@ -3037,7 +3329,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "reservations"
       ],
       "publishedAt": "2500-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-04T11:34:30.463Z",
+      "observedAt": "2026-09-04T12:53:19.094Z",
       "ageDays": 0,
       "isRecent": true,
       "lookbackDays": 180,
@@ -3132,7 +3424,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "reservations"
       ],
       "publishedAt": "2500-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-04T11:34:16.355Z",
+      "observedAt": "2026-09-04T12:53:18.398Z",
       "ageDays": 0,
       "isRecent": true,
       "lookbackDays": 180,
@@ -3219,7 +3511,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "reservations"
       ],
       "publishedAt": "2500-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-04T11:34:17.971Z",
+      "observedAt": "2026-09-04T12:53:18.587Z",
       "ageDays": 0,
       "isRecent": true,
       "lookbackDays": 180,
@@ -3290,7 +3582,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "summer"
       ],
       "publishedAt": "2048-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-04T11:33:39.235Z",
+      "observedAt": "2026-09-04T12:52:41.379Z",
       "ageDays": 0,
       "isRecent": true,
       "lookbackDays": 180,
@@ -3357,7 +3649,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "menu"
       ],
       "publishedAt": "2048-01-01T00:00:00.000Z",
-      "observedAt": "2026-09-04T11:33:57.828Z",
+      "observedAt": "2026-09-04T12:52:59.093Z",
       "ageDays": 0,
       "isRecent": true,
       "lookbackDays": 180,
@@ -3454,7 +3746,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "reservations"
       ],
       "publishedAt": "2027-01-28T23:00:00.000Z",
-      "observedAt": "2026-09-04T11:33:29.744Z",
+      "observedAt": "2026-09-04T12:52:32.634Z",
       "ageDays": 0,
       "isRecent": true,
       "lookbackDays": 180,
@@ -3525,7 +3817,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "band"
       ],
       "publishedAt": "2026-11-05T00:00:00.000Z",
-      "observedAt": "2026-09-04T11:34:19.102Z",
+      "observedAt": "2026-09-04T12:53:21.010Z",
       "ageDays": 0,
       "isRecent": true,
       "lookbackDays": 180,
@@ -3586,7 +3878,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "holiday"
       ],
       "publishedAt": "2026-09-11T00:00:00.000Z",
-      "observedAt": "2026-09-04T11:34:18.537Z",
+      "observedAt": "2026-09-04T12:53:20.435Z",
       "ageDays": 0,
       "isRecent": true,
       "lookbackDays": 180,
@@ -3673,7 +3965,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "reservations"
       ],
       "publishedAt": "2026-09-10T00:00:00.000Z",
-      "observedAt": "2026-09-04T11:33:22.247Z",
+      "observedAt": "2026-09-04T12:52:27.500Z",
       "ageDays": 0,
       "isRecent": true,
       "lookbackDays": 180,
@@ -3758,7 +4050,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "reservations"
       ],
       "publishedAt": null,
-      "observedAt": "2026-09-04T11:34:20.870Z",
+      "observedAt": "2026-09-04T12:53:22.798Z",
       "ageDays": null,
       "isRecent": false,
       "lookbackDays": 180,
@@ -3847,7 +4139,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "reservations"
       ],
       "publishedAt": null,
-      "observedAt": "2026-09-04T11:34:20.364Z",
+      "observedAt": "2026-09-04T12:53:22.254Z",
       "ageDays": null,
       "isRecent": false,
       "lookbackDays": 180,
@@ -3890,7 +4182,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "menu"
       ],
       "publishedAt": null,
-      "observedAt": "2026-09-04T11:34:18.538Z",
+      "observedAt": "2026-09-04T12:53:20.307Z",
       "ageDays": null,
       "isRecent": false,
       "lookbackDays": 180,
@@ -3933,7 +4225,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "menu"
       ],
       "publishedAt": null,
-      "observedAt": "2026-09-04T11:34:18.103Z",
+      "observedAt": "2026-09-04T12:53:19.918Z",
       "ageDays": null,
       "isRecent": false,
       "lookbackDays": 180,
@@ -3976,50 +4268,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "menu"
       ],
       "publishedAt": null,
-      "observedAt": "2026-09-04T11:34:17.736Z",
-      "ageDays": null,
-      "isRecent": false,
-      "lookbackDays": 180,
-      "confidenceScore": 0.78,
-      "confidence": "official_source_page_signal",
-      "reviewState": "needs_date_review",
-      "associationBasis": "same_site_official_page"
-    },
-    {
-      "id": "official_page-2692ce336daa62e48c",
-      "restaurantId": "osm-way-180446788-tim-hortons",
-      "restaurantName": "Tim Hortons",
-      "platform": "official_page",
-      "sourceFamily": "website_page",
-      "sourceLabel": "Official page",
-      "sourceKind": "official_page_html",
-      "postId": null,
-      "platformObjectId": null,
-      "profileHandle": null,
-      "profileUrl": null,
-      "feedUrl": null,
-      "postUrl": "https://locations.timhortons.ca/en/locations-list/ns/reserve-mines",
-      "mediaUrl": null,
-      "thumbnailUrl": null,
-      "mediaType": null,
-      "title": "Tim Hortons CA in Reserve Mines, NS",
-      "summary": "Tim Hortons CA in Reserve Mines, NS Skip to Content Open mobile menu Order Tims for Good All Locations FR/CA Directory &gt; Nova Scotia &gt; Reserve Mines Tim Hortons CA in Reserve Mines, Nova Scotia Tim Hortons - 2249 Main St, Reserve Mines NS B1E 1J9 Careers Come join the team Browse Opportunities Community Make a true difference Learn More Find a Tim Hortons We can't wait to serve you Store Locator Franchising...",
-      "primaryCategory": "menu",
-      "primaryCategoryLabel": "Menu update",
-      "categories": [
-        {
-          "id": "menu",
-          "label": "Menu update",
-          "terms": [
-            "menu"
-          ]
-        }
-      ],
-      "matchedTerms": [
-        "menu"
-      ],
-      "publishedAt": null,
-      "observedAt": "2026-09-04T11:34:16.882Z",
+      "observedAt": "2026-09-04T12:53:19.568Z",
       "ageDays": null,
       "isRecent": false,
       "lookbackDays": 180,
@@ -4062,7 +4311,50 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "menu"
       ],
       "publishedAt": null,
-      "observedAt": "2026-09-04T11:34:16.800Z",
+      "observedAt": "2026-09-04T12:53:18.772Z",
+      "ageDays": null,
+      "isRecent": false,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "needs_date_review",
+      "associationBasis": "same_site_official_page"
+    },
+    {
+      "id": "official_page-2692ce336daa62e48c",
+      "restaurantId": "osm-way-180446788-tim-hortons",
+      "restaurantName": "Tim Hortons",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://locations.timhortons.ca/en/locations-list/ns/reserve-mines",
+      "mediaUrl": null,
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Tim Hortons CA in Reserve Mines, NS",
+      "summary": "Tim Hortons CA in Reserve Mines, NS Skip to Content Open mobile menu Order Tims for Good All Locations FR/CA Directory &gt; Nova Scotia &gt; Reserve Mines Tim Hortons CA in Reserve Mines, Nova Scotia Tim Hortons - 2249 Main St, Reserve Mines NS B1E 1J9 Careers Come join the team Browse Opportunities Community Make a true difference Learn More Find a Tim Hortons We can't wait to serve you Store Locator Franchising...",
+      "primaryCategory": "menu",
+      "primaryCategoryLabel": "Menu update",
+      "categories": [
+        {
+          "id": "menu",
+          "label": "Menu update",
+          "terms": [
+            "menu"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "menu"
+      ],
+      "publishedAt": null,
+      "observedAt": "2026-09-04T12:53:18.771Z",
       "ageDays": null,
       "isRecent": false,
       "lookbackDays": 180,
@@ -4123,7 +4415,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "breakfast"
       ],
       "publishedAt": null,
-      "observedAt": "2026-09-04T11:34:16.615Z",
+      "observedAt": "2026-09-04T12:53:18.384Z",
       "ageDays": null,
       "isRecent": false,
       "lookbackDays": 180,
@@ -4214,7 +4506,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "book now"
       ],
       "publishedAt": null,
-      "observedAt": "2026-09-04T11:33:59.834Z",
+      "observedAt": "2026-09-04T12:53:01.039Z",
       "ageDays": null,
       "isRecent": false,
       "lookbackDays": 180,
@@ -4265,103 +4557,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "market"
       ],
       "publishedAt": null,
-      "observedAt": "2026-09-04T11:33:54.670Z",
-      "ageDays": null,
-      "isRecent": false,
-      "lookbackDays": 180,
-      "confidenceScore": 0.78,
-      "confidence": "official_source_page_signal",
-      "reviewState": "needs_date_review",
-      "associationBasis": "same_site_official_page"
-    },
-    {
-      "id": "official_page-026b7ba898b2b244a0",
-      "restaurantId": "osm-node-267592027-the-black-sheep",
-      "restaurantName": "The Black Sheep",
-      "platform": "official_page",
-      "sourceFamily": "website_page",
-      "sourceLabel": "Official page",
-      "sourceKind": "official_page_html",
-      "postId": null,
-      "platformObjectId": null,
-      "profileHandle": null,
-      "profileUrl": null,
-      "feedUrl": null,
-      "postUrl": "https://tbdine.com/halifax/restaurants/black-sheep-restaurant-water-street",
-      "mediaUrl": "https://www.tbdine.com/touchbistro-dine.jpg",
-      "thumbnailUrl": null,
-      "mediaType": null,
-      "title": "TouchBistro Dine - Restaurant Reservations and Online Ordering",
-      "summary": "TouchBistro Dine - Online restaurant reservations and online ordering",
-      "primaryCategory": "reservations",
-      "primaryCategoryLabel": "Reservations",
-      "categories": [
-        {
-          "id": "reservations",
-          "label": "Reservations",
-          "terms": [
-            "reservation",
-            "reservations"
-          ]
-        }
-      ],
-      "matchedTerms": [
-        "reservation",
-        "reservations"
-      ],
-      "publishedAt": null,
-      "observedAt": "2026-09-04T11:33:54.071Z",
-      "ageDays": null,
-      "isRecent": false,
-      "lookbackDays": 180,
-      "confidenceScore": 0.78,
-      "confidence": "official_source_page_signal",
-      "reviewState": "needs_date_review",
-      "associationBasis": "official_site_linked_page"
-    },
-    {
-      "id": "official_page-ccdd6ecd4a2179ed0a",
-      "restaurantId": "osm-node-5647941372-orso-pub-and-grill",
-      "restaurantName": "Orso Pub & Grill",
-      "platform": "official_page",
-      "sourceFamily": "website_page",
-      "sourceLabel": "Official page",
-      "sourceKind": "official_page_html",
-      "postId": null,
-      "platformObjectId": null,
-      "profileHandle": null,
-      "profileUrl": null,
-      "feedUrl": null,
-      "postUrl": "https://orsopub.ca/drinks-menu/",
-      "mediaUrl": "https://orsopub.ca/wp-content/themes/orso/assets/img/all/foot-001%20(1).jpg",
-      "thumbnailUrl": null,
-      "mediaType": null,
-      "title": "Drinks Menu – Orso Pub & Grill",
-      "summary": "Drinks Menu – Orso Pub & Grill Book table Email us : [email protected] Call us : +1 902 406 2001 Our location : 1859 Brunswick St Halifax, NS B3J 2G8 Canada instagram facebook Toggle navigation Home About Menu Full Menu Drinks Menu Gallery Reservation Contact Drinks Menu Download Our Menu Customer care Orso Pub & Grill [email protected] +1 902 406 2001 Your account About Gallery Reservation Contact Us Gallery View...",
-      "primaryCategory": "menu",
-      "primaryCategoryLabel": "Menu update",
-      "categories": [
-        {
-          "id": "menu",
-          "label": "Menu update",
-          "terms": [
-            "menu"
-          ]
-        },
-        {
-          "id": "reservations",
-          "label": "Reservations",
-          "terms": [
-            "reservation"
-          ]
-        }
-      ],
-      "matchedTerms": [
-        "menu",
-        "reservation"
-      ],
-      "publishedAt": null,
-      "observedAt": "2026-09-04T11:33:52.810Z",
+      "observedAt": "2026-09-04T12:52:55.064Z",
       "ageDays": null,
       "isRecent": false,
       "lookbackDays": 180,
@@ -4428,7 +4624,58 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "menu"
       ],
       "publishedAt": null,
-      "observedAt": "2026-09-04T11:33:52.236Z",
+      "observedAt": "2026-09-04T12:52:52.792Z",
+      "ageDays": null,
+      "isRecent": false,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "needs_date_review",
+      "associationBasis": "same_site_official_page"
+    },
+    {
+      "id": "official_page-ccdd6ecd4a2179ed0a",
+      "restaurantId": "osm-node-5647941372-orso-pub-and-grill",
+      "restaurantName": "Orso Pub & Grill",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://orsopub.ca/drinks-menu/",
+      "mediaUrl": "https://orsopub.ca/wp-content/themes/orso/assets/img/all/foot-001%20(1).jpg",
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Drinks Menu – Orso Pub & Grill",
+      "summary": "Drinks Menu – Orso Pub & Grill Book table Email us : [email protected] Call us : +1 902 406 2001 Our location : 1859 Brunswick St Halifax, NS B3J 2G8 Canada instagram facebook Toggle navigation Home About Menu Full Menu Drinks Menu Gallery Reservation Contact Drinks Menu Download Our Menu Customer care Orso Pub & Grill [email protected] +1 902 406 2001 Your account About Gallery Reservation Contact Us Gallery View...",
+      "primaryCategory": "menu",
+      "primaryCategoryLabel": "Menu update",
+      "categories": [
+        {
+          "id": "menu",
+          "label": "Menu update",
+          "terms": [
+            "menu"
+          ]
+        },
+        {
+          "id": "reservations",
+          "label": "Reservations",
+          "terms": [
+            "reservation"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "menu",
+        "reservation"
+      ],
+      "publishedAt": null,
+      "observedAt": "2026-09-04T12:52:52.430Z",
       "ageDays": null,
       "isRecent": false,
       "lookbackDays": 180,
@@ -4479,58 +4726,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "reservation"
       ],
       "publishedAt": null,
-      "observedAt": "2026-09-04T11:33:52.181Z",
-      "ageDays": null,
-      "isRecent": false,
-      "lookbackDays": 180,
-      "confidenceScore": 0.78,
-      "confidence": "official_source_page_signal",
-      "reviewState": "needs_date_review",
-      "associationBasis": "same_site_official_page"
-    },
-    {
-      "id": "official_page-52d8a74ffd59a25cfe",
-      "restaurantId": "osm-node-5647941372-orso-pub-and-grill",
-      "restaurantName": "Orso Pub & Grill",
-      "platform": "official_page",
-      "sourceFamily": "website_page",
-      "sourceLabel": "Official page",
-      "sourceKind": "official_page_html",
-      "postId": null,
-      "platformObjectId": null,
-      "profileHandle": null,
-      "profileUrl": null,
-      "feedUrl": null,
-      "postUrl": "https://orsopub.ca/reservation/",
-      "mediaUrl": "https://orsopub.ca/wp-content/themes/orso/assets/img/background/theme-form-back.png",
-      "thumbnailUrl": null,
-      "mediaType": null,
-      "title": "Reservation – Orso Pub & Grill",
-      "summary": "Reservation – Orso Pub & Grill Book table Email us : [email protected] Call us : +1 902 406 2001 Our location : 1859 Brunswick St Halifax, NS B3J 2G8 Canada instagram facebook Toggle navigation Home About Menu Full Menu Drinks Menu Gallery Reservation Contact Reservation Our location 1859 Brunswick St Halifax, NS B3J 2G8 Canada Our contact +1 902 406 2001 Our Email [email protected] Customer care Orso Pub & Grill...",
-      "primaryCategory": "menu",
-      "primaryCategoryLabel": "Menu update",
-      "categories": [
-        {
-          "id": "menu",
-          "label": "Menu update",
-          "terms": [
-            "menu"
-          ]
-        },
-        {
-          "id": "reservations",
-          "label": "Reservations",
-          "terms": [
-            "reservation"
-          ]
-        }
-      ],
-      "matchedTerms": [
-        "menu",
-        "reservation"
-      ],
-      "publishedAt": null,
-      "observedAt": "2026-09-04T11:33:51.520Z",
+      "observedAt": "2026-09-04T12:52:51.913Z",
       "ageDays": null,
       "isRecent": false,
       "lookbackDays": 180,
@@ -4581,7 +4777,58 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "menu"
       ],
       "publishedAt": null,
-      "observedAt": "2026-09-04T11:33:50.702Z",
+      "observedAt": "2026-09-04T12:52:51.398Z",
+      "ageDays": null,
+      "isRecent": false,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "needs_date_review",
+      "associationBasis": "same_site_official_page"
+    },
+    {
+      "id": "official_page-52d8a74ffd59a25cfe",
+      "restaurantId": "osm-node-5647941372-orso-pub-and-grill",
+      "restaurantName": "Orso Pub & Grill",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://orsopub.ca/reservation/",
+      "mediaUrl": "https://orsopub.ca/wp-content/themes/orso/assets/img/background/theme-form-back.png",
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Reservation – Orso Pub & Grill",
+      "summary": "Reservation – Orso Pub & Grill Book table Email us : [email protected] Call us : +1 902 406 2001 Our location : 1859 Brunswick St Halifax, NS B3J 2G8 Canada instagram facebook Toggle navigation Home About Menu Full Menu Drinks Menu Gallery Reservation Contact Reservation Our location 1859 Brunswick St Halifax, NS B3J 2G8 Canada Our contact +1 902 406 2001 Our Email [email protected] Customer care Orso Pub & Grill...",
+      "primaryCategory": "menu",
+      "primaryCategoryLabel": "Menu update",
+      "categories": [
+        {
+          "id": "menu",
+          "label": "Menu update",
+          "terms": [
+            "menu"
+          ]
+        },
+        {
+          "id": "reservations",
+          "label": "Reservations",
+          "terms": [
+            "reservation"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "menu",
+        "reservation"
+      ],
+      "publishedAt": null,
+      "observedAt": "2026-09-04T12:52:51.239Z",
       "ageDays": null,
       "isRecent": false,
       "lookbackDays": 180,
@@ -4666,7 +4913,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "reservation"
       ],
       "publishedAt": null,
-      "observedAt": "2026-09-04T11:33:49.972Z",
+      "observedAt": "2026-09-04T12:52:50.611Z",
       "ageDays": null,
       "isRecent": false,
       "lookbackDays": 180,
@@ -4711,7 +4958,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "reservations"
       ],
       "publishedAt": null,
-      "observedAt": "2026-09-04T11:33:43.956Z",
+      "observedAt": "2026-09-04T12:52:44.960Z",
       "ageDays": null,
       "isRecent": false,
       "lookbackDays": 180,
@@ -4756,7 +5003,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "reservations"
       ],
       "publishedAt": null,
-      "observedAt": "2026-09-04T11:33:43.541Z",
+      "observedAt": "2026-09-04T12:52:44.713Z",
       "ageDays": null,
       "isRecent": false,
       "lookbackDays": 180,
@@ -4801,7 +5048,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "reservations"
       ],
       "publishedAt": null,
-      "observedAt": "2026-09-04T11:33:42.573Z",
+      "observedAt": "2026-09-04T12:52:44.269Z",
       "ageDays": null,
       "isRecent": false,
       "lookbackDays": 180,
@@ -4866,7 +5113,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "book a table"
       ],
       "publishedAt": null,
-      "observedAt": "2026-09-04T11:33:41.496Z",
+      "observedAt": "2026-09-04T12:52:43.841Z",
       "ageDays": null,
       "isRecent": false,
       "lookbackDays": 180,
@@ -4919,7 +5166,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "breakfast"
       ],
       "publishedAt": null,
-      "observedAt": "2026-09-04T11:33:41.321Z",
+      "observedAt": "2026-09-04T12:52:43.663Z",
       "ageDays": null,
       "isRecent": false,
       "lookbackDays": 180,
@@ -4962,7 +5209,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "offer"
       ],
       "publishedAt": null,
-      "observedAt": "2026-09-04T11:33:41.091Z",
+      "observedAt": "2026-09-04T12:52:43.616Z",
       "ageDays": null,
       "isRecent": false,
       "lookbackDays": 180,
@@ -4985,7 +5232,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
       "profileUrl": null,
       "feedUrl": null,
       "postUrl": "https://marigoldkitchen.ca/",
-      "mediaUrl": "https://cdn3.didevelop.com/public/product_images/6498/180_f54dfe66bfa3f633b441be173773667d.jpg",
+      "mediaUrl": "https://cdn3.didevelop.com/public/product_images/6498/180_7b245251e60fb779ce1d84f839e34f00.jpg",
       "thumbnailUrl": null,
       "mediaType": null,
       "title": "Marigold kitchen | Mediterranean - Halifax, Canada",
@@ -5005,7 +5252,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "menu"
       ],
       "publishedAt": null,
-      "observedAt": "2026-09-04T11:33:40.612Z",
+      "observedAt": "2026-09-04T12:52:42.983Z",
       "ageDays": null,
       "isRecent": false,
       "lookbackDays": 180,
@@ -5116,7 +5363,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "reservations"
       ],
       "publishedAt": null,
-      "observedAt": "2026-09-04T11:33:40.241Z",
+      "observedAt": "2026-09-04T12:52:42.863Z",
       "ageDays": null,
       "isRecent": false,
       "lookbackDays": 180,
@@ -5209,7 +5456,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "reservations"
       ],
       "publishedAt": null,
-      "observedAt": "2026-09-04T11:33:39.076Z",
+      "observedAt": "2026-09-04T12:52:41.679Z",
       "ageDays": null,
       "isRecent": false,
       "lookbackDays": 180,
@@ -5288,7 +5535,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "reservations"
       ],
       "publishedAt": null,
-      "observedAt": "2026-09-04T11:33:37.858Z",
+      "observedAt": "2026-09-04T12:52:40.453Z",
       "ageDays": null,
       "isRecent": false,
       "lookbackDays": 180,
@@ -5349,7 +5596,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "holiday"
       ],
       "publishedAt": null,
-      "observedAt": "2026-09-04T11:33:34.482Z",
+      "observedAt": "2026-09-04T12:52:37.051Z",
       "ageDays": null,
       "isRecent": false,
       "lookbackDays": 180,
@@ -5400,7 +5647,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "menu"
       ],
       "publishedAt": null,
-      "observedAt": "2026-09-04T11:33:34.164Z",
+      "observedAt": "2026-09-04T12:52:36.716Z",
       "ageDays": null,
       "isRecent": false,
       "lookbackDays": 180,
@@ -5451,7 +5698,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "menu"
       ],
       "publishedAt": null,
-      "observedAt": "2026-09-04T11:33:33.373Z",
+      "observedAt": "2026-09-04T12:52:35.887Z",
       "ageDays": null,
       "isRecent": false,
       "lookbackDays": 180,
@@ -5512,60 +5759,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "holiday"
       ],
       "publishedAt": null,
-      "observedAt": "2026-09-04T11:33:33.322Z",
-      "ageDays": null,
-      "isRecent": false,
-      "lookbackDays": 180,
-      "confidenceScore": 0.78,
-      "confidence": "official_source_page_signal",
-      "reviewState": "needs_date_review",
-      "associationBasis": "official_site_linked_page"
-    },
-    {
-      "id": "official_page-1360fc29f2cc333444",
-      "restaurantId": "osm-node-7674251740-in-spring-asian-fusion-cuisine",
-      "restaurantName": "in spring asian fusion cuisine",
-      "platform": "official_page",
-      "sourceFamily": "website_page",
-      "sourceLabel": "Official page",
-      "sourceKind": "official_page_html",
-      "postId": null,
-      "platformObjectId": null,
-      "profileHandle": null,
-      "profileUrl": null,
-      "feedUrl": null,
-      "postUrl": "https://www.skipthedishes.com/?utm_source=inspringhotpot.com&utm_medium=microsites&utm_campaign=microsites",
-      "mediaUrl": "https://www.skipthedishes.com/_next/static/media/skip-for-business-homePage.e9c5e5ce.png?w=3840&amp;q=100",
-      "thumbnailUrl": null,
-      "mediaType": null,
-      "title": "Skip | Online Delivery | Food, Groceries, Alcohol and More!",
-      "summary": "ce Edward Island Saskatchewan Yukon Northwest Territories Popular Cuisines Chinese Italian Pizza Japanese Sushi Thai Vietnamese Burgers Greek Indian Korean Chicken Bakery Barbecue Breakfast & Brunch Dessert Steakhouse Sandwiches Halal Fish & Chips Ethiopian Vegetarian Wings Spanish Pub Food French Healthy Ice-Cream Smoothies Tacos Seafood Shawarma & Donair Burritos HotDogs Fast Food Soup Asian Alcohol Mexican Afri...",
-      "primaryCategory": "live_music",
-      "primaryCategoryLabel": "Live music",
-      "categories": [
-        {
-          "id": "live_music",
-          "label": "Live music",
-          "terms": [
-            "dj"
-          ]
-        },
-        {
-          "id": "brunch",
-          "label": "Brunch",
-          "terms": [
-            "brunch",
-            "breakfast"
-          ]
-        }
-      ],
-      "matchedTerms": [
-        "dj",
-        "brunch",
-        "breakfast"
-      ],
-      "publishedAt": null,
-      "observedAt": "2026-09-04T11:33:33.190Z",
+      "observedAt": "2026-09-04T12:52:35.873Z",
       "ageDays": null,
       "isRecent": false,
       "lookbackDays": 180,
@@ -5622,7 +5816,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "menu"
       ],
       "publishedAt": null,
-      "observedAt": "2026-09-04T11:33:33.109Z",
+      "observedAt": "2026-09-04T12:52:35.687Z",
       "ageDays": null,
       "isRecent": false,
       "lookbackDays": 180,
@@ -5630,6 +5824,59 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
       "confidence": "official_source_page_signal",
       "reviewState": "needs_date_review",
       "associationBasis": "same_site_official_page"
+    },
+    {
+      "id": "official_page-1360fc29f2cc333444",
+      "restaurantId": "osm-node-7674251740-in-spring-asian-fusion-cuisine",
+      "restaurantName": "in spring asian fusion cuisine",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://www.skipthedishes.com/?utm_source=inspringhotpot.com&utm_medium=microsites&utm_campaign=microsites",
+      "mediaUrl": "https://www.skipthedishes.com/_next/static/media/skip-for-business-homePage.e9c5e5ce.png?w=3840&amp;q=100",
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Skip | Online Delivery | Food, Groceries, Alcohol and More!",
+      "summary": "ce Edward Island Saskatchewan Yukon Northwest Territories Popular Cuisines Chinese Italian Pizza Japanese Sushi Thai Vietnamese Burgers Greek Indian Korean Chicken Bakery Barbecue Breakfast & Brunch Dessert Steakhouse Sandwiches Halal Fish & Chips Ethiopian Vegetarian Wings Spanish Pub Food French Healthy Ice-Cream Smoothies Tacos Seafood Shawarma & Donair Burritos HotDogs Fast Food Soup Asian Alcohol Mexican Afri...",
+      "primaryCategory": "live_music",
+      "primaryCategoryLabel": "Live music",
+      "categories": [
+        {
+          "id": "live_music",
+          "label": "Live music",
+          "terms": [
+            "dj"
+          ]
+        },
+        {
+          "id": "brunch",
+          "label": "Brunch",
+          "terms": [
+            "brunch",
+            "breakfast"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "dj",
+        "brunch",
+        "breakfast"
+      ],
+      "publishedAt": null,
+      "observedAt": "2026-09-04T12:52:35.634Z",
+      "ageDays": null,
+      "isRecent": false,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "needs_date_review",
+      "associationBasis": "official_site_linked_page"
     },
     {
       "id": "official_page-1b6b6ab24993d1ef06",
@@ -5683,7 +5930,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "menu"
       ],
       "publishedAt": null,
-      "observedAt": "2026-09-04T11:33:32.788Z",
+      "observedAt": "2026-09-04T12:52:35.418Z",
       "ageDays": null,
       "isRecent": false,
       "lookbackDays": 180,
@@ -5736,60 +5983,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "menu"
       ],
       "publishedAt": null,
-      "observedAt": "2026-09-04T11:33:32.471Z",
-      "ageDays": null,
-      "isRecent": false,
-      "lookbackDays": 180,
-      "confidenceScore": 0.78,
-      "confidence": "official_source_page_signal",
-      "reviewState": "needs_date_review",
-      "associationBasis": "same_site_official_page"
-    },
-    {
-      "id": "official_page-1308aa7b3b73f6db4b",
-      "restaurantId": "osm-node-4421306590-heppy-s-pie-lady",
-      "restaurantName": "Heppy's Pie Lady",
-      "platform": "official_page",
-      "sourceFamily": "website_page",
-      "sourceLabel": "Official page",
-      "sourceKind": "official_page_html",
-      "postId": null,
-      "platformObjectId": null,
-      "profileHandle": null,
-      "profileUrl": null,
-      "feedUrl": null,
-      "postUrl": "http://www.heppys.com/",
-      "mediaUrl": "http://www.heppys.com/pg_images/2012_front_image.jpg",
-      "thumbnailUrl": null,
-      "mediaType": null,
-      "title": "Heppy's Pie | Authentic Acadian Cuisine Since 1991",
-      "summary": "60-2131 Country Farm Market Mon-Sun: 9am-8pm 2900 Highway 2, Fall River Gouchers Farm Market 902-242-3422 Mon-Sun: 8am-8pm 14935 Nova Scotia Trunk 1, Wilmot Halifax Brewery Market Seasonal Paused Saturday 8:00-13:00 1496 Lower Water Street, Halifax Tantallon Village Market Seasonal Paused Tuesday 14:00-18:00 June 13th - October \"What are you serving today, Claude?\" Store Hours Monday-Friday: 9am-6pm Saturday: 10am...",
-      "primaryCategory": "events",
-      "primaryCategoryLabel": "Event",
-      "categories": [
-        {
-          "id": "events",
-          "label": "Event",
-          "terms": [
-            "market"
-          ]
-        },
-        {
-          "id": "seasonal",
-          "label": "Seasonal",
-          "terms": [
-            "seasonal",
-            "holiday"
-          ]
-        }
-      ],
-      "matchedTerms": [
-        "market",
-        "seasonal",
-        "holiday"
-      ],
-      "publishedAt": null,
-      "observedAt": "2026-09-04T11:33:31.928Z",
+      "observedAt": "2026-09-04T12:52:35.086Z",
       "ageDays": null,
       "isRecent": false,
       "lookbackDays": 180,
@@ -5842,7 +6036,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "menu"
       ],
       "publishedAt": null,
-      "observedAt": "2026-09-04T11:33:31.756Z",
+      "observedAt": "2026-09-04T12:52:34.901Z",
       "ageDays": null,
       "isRecent": false,
       "lookbackDays": 180,
@@ -5850,6 +6044,59 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
       "confidence": "official_source_page_signal",
       "reviewState": "needs_date_review",
       "associationBasis": "official_site_linked_page"
+    },
+    {
+      "id": "official_page-1308aa7b3b73f6db4b",
+      "restaurantId": "osm-node-4421306590-heppy-s-pie-lady",
+      "restaurantName": "Heppy's Pie Lady",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "http://www.heppys.com/",
+      "mediaUrl": "http://www.heppys.com/pg_images/2012_front_image.jpg",
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Heppy's Pie | Authentic Acadian Cuisine Since 1991",
+      "summary": "60-2131 Country Farm Market Mon-Sun: 9am-8pm 2900 Highway 2, Fall River Gouchers Farm Market 902-242-3422 Mon-Sun: 8am-8pm 14935 Nova Scotia Trunk 1, Wilmot Halifax Brewery Market Seasonal Paused Saturday 8:00-13:00 1496 Lower Water Street, Halifax Tantallon Village Market Seasonal Paused Tuesday 14:00-18:00 June 13th - October \"What are you serving today, Claude?\" Store Hours Monday-Friday: 9am-6pm Saturday: 10am...",
+      "primaryCategory": "events",
+      "primaryCategoryLabel": "Event",
+      "categories": [
+        {
+          "id": "events",
+          "label": "Event",
+          "terms": [
+            "market"
+          ]
+        },
+        {
+          "id": "seasonal",
+          "label": "Seasonal",
+          "terms": [
+            "seasonal",
+            "holiday"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "market",
+        "seasonal",
+        "holiday"
+      ],
+      "publishedAt": null,
+      "observedAt": "2026-09-04T12:52:34.608Z",
+      "ageDays": null,
+      "isRecent": false,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "needs_date_review",
+      "associationBasis": "same_site_official_page"
     },
     {
       "id": "official_page-16abd558a9e48938a4",
@@ -5885,7 +6132,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "menu"
       ],
       "publishedAt": null,
-      "observedAt": "2026-09-04T11:33:31.395Z",
+      "observedAt": "2026-09-04T12:52:34.593Z",
       "ageDays": null,
       "isRecent": false,
       "lookbackDays": 180,
@@ -5938,7 +6185,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "menu"
       ],
       "publishedAt": null,
-      "observedAt": "2026-09-04T11:33:31.379Z",
+      "observedAt": "2026-09-04T12:52:34.542Z",
       "ageDays": null,
       "isRecent": false,
       "lookbackDays": 180,
@@ -5981,7 +6228,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "menu"
       ],
       "publishedAt": null,
-      "observedAt": "2026-09-04T11:33:31.194Z",
+      "observedAt": "2026-09-04T12:52:34.369Z",
       "ageDays": null,
       "isRecent": false,
       "lookbackDays": 180,
@@ -6042,7 +6289,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "menu"
       ],
       "publishedAt": null,
-      "observedAt": "2026-09-04T11:33:30.411Z",
+      "observedAt": "2026-09-04T12:52:33.802Z",
       "ageDays": null,
       "isRecent": false,
       "lookbackDays": 180,
@@ -6103,7 +6350,66 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "band"
       ],
       "publishedAt": null,
-      "observedAt": "2026-09-04T11:33:28.310Z",
+      "observedAt": "2026-09-04T12:52:32.079Z",
+      "ageDays": null,
+      "isRecent": false,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "needs_date_review",
+      "associationBasis": "official_site_linked_page"
+    },
+    {
+      "id": "official_page-24ce85b3868103b376",
+      "restaurantId": "osm-node-475879583-morris-east",
+      "restaurantName": "Morris East",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://order.toasttab.com/online/morris-east-bedford-620-nine-mile-drive?diningOption=takeout",
+      "mediaUrl": "https://d1w7312wesee68.cloudfront.net/o1svrvjZVbpkJpKvMsz87gyY14y_fc5I8Trm358wG80/ext:webp/quality:85/plain/s3://toast-sites-resources-prod/restaurantImages/ec6ab1aa-2518-430f-aba4-25404d2c2fb8/unnamed.jpg",
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Order Online",
+      "summary": "Order online from Morris East: Bedford, including Popular Items, Starters and Salads, Pizza. Get the best prices and service by ordering direct!",
+      "primaryCategory": "specials",
+      "primaryCategoryLabel": "Special",
+      "categories": [
+        {
+          "id": "specials",
+          "label": "Special",
+          "terms": [
+            "offer"
+          ]
+        },
+        {
+          "id": "live_music",
+          "label": "Live music",
+          "terms": [
+            "show"
+          ]
+        },
+        {
+          "id": "menu",
+          "label": "Menu update",
+          "terms": [
+            "menu"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "offer",
+        "show",
+        "menu"
+      ],
+      "publishedAt": null,
+      "observedAt": "2026-09-04T12:52:29.938Z",
       "ageDays": null,
       "isRecent": false,
       "lookbackDays": 180,
@@ -6146,7 +6452,50 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "menu"
       ],
       "publishedAt": null,
-      "observedAt": "2026-09-04T11:33:22.013Z",
+      "observedAt": "2026-09-04T12:52:27.365Z",
+      "ageDays": null,
+      "isRecent": false,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "needs_date_review",
+      "associationBasis": "official_site_linked_page"
+    },
+    {
+      "id": "official_page-bd7f73044f82f0bcde",
+      "restaurantId": "osm-node-13912668535-jean-s-chinese-restaurant",
+      "restaurantName": "Jean's Chinese Restaurant",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://www.foodbooking.com/ordering/restaurant/menu?restaurant_uid=de8fb584-7d18-406d-9040-426509400230",
+      "mediaUrl": null,
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Online Ordering",
+      "summary": "Online Ordering",
+      "primaryCategory": "menu",
+      "primaryCategoryLabel": "Menu update",
+      "categories": [
+        {
+          "id": "menu",
+          "label": "Menu update",
+          "terms": [
+            "menu"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "menu"
+      ],
+      "publishedAt": null,
+      "observedAt": "2026-09-04T12:52:27.103Z",
       "ageDays": null,
       "isRecent": false,
       "lookbackDays": 180,
@@ -6199,7 +6548,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "reservations"
       ],
       "publishedAt": null,
-      "observedAt": "2026-09-04T11:33:21.614Z",
+      "observedAt": "2026-09-04T12:52:27.098Z",
       "ageDays": null,
       "isRecent": false,
       "lookbackDays": 180,
@@ -6207,49 +6556,6 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
       "confidence": "official_source_page_signal",
       "reviewState": "needs_date_review",
       "associationBasis": "same_site_official_page"
-    },
-    {
-      "id": "official_page-bd7f73044f82f0bcde",
-      "restaurantId": "osm-node-13912668535-jean-s-chinese-restaurant",
-      "restaurantName": "Jean's Chinese Restaurant",
-      "platform": "official_page",
-      "sourceFamily": "website_page",
-      "sourceLabel": "Official page",
-      "sourceKind": "official_page_html",
-      "postId": null,
-      "platformObjectId": null,
-      "profileHandle": null,
-      "profileUrl": null,
-      "feedUrl": null,
-      "postUrl": "https://www.foodbooking.com/ordering/restaurant/menu?restaurant_uid=de8fb584-7d18-406d-9040-426509400230",
-      "mediaUrl": null,
-      "thumbnailUrl": null,
-      "mediaType": null,
-      "title": "Online Ordering",
-      "summary": "Online Ordering",
-      "primaryCategory": "menu",
-      "primaryCategoryLabel": "Menu update",
-      "categories": [
-        {
-          "id": "menu",
-          "label": "Menu update",
-          "terms": [
-            "menu"
-          ]
-        }
-      ],
-      "matchedTerms": [
-        "menu"
-      ],
-      "publishedAt": null,
-      "observedAt": "2026-09-04T11:33:21.614Z",
-      "ageDays": null,
-      "isRecent": false,
-      "lookbackDays": 180,
-      "confidenceScore": 0.78,
-      "confidence": "official_source_page_signal",
-      "reviewState": "needs_date_review",
-      "associationBasis": "official_site_linked_page"
     },
     {
       "id": "official_page-777a11bd59530419e6",
@@ -6285,7 +6591,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "menu"
       ],
       "publishedAt": null,
-      "observedAt": "2026-09-04T11:33:21.048Z",
+      "observedAt": "2026-09-04T12:52:27.083Z",
       "ageDays": null,
       "isRecent": false,
       "lookbackDays": 180,
@@ -6346,7 +6652,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "reservations"
       ],
       "publishedAt": null,
-      "observedAt": "2026-09-04T11:33:21.048Z",
+      "observedAt": "2026-09-04T12:52:26.860Z",
       "ageDays": null,
       "isRecent": false,
       "lookbackDays": 180,
@@ -6389,40 +6695,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "menu"
       ],
       "publishedAt": null,
-      "observedAt": "2026-09-04T11:33:20.809Z",
-      "ageDays": null,
-      "isRecent": false,
-      "lookbackDays": 180,
-      "confidenceScore": 0.78,
-      "confidence": "official_source_page_signal",
-      "reviewState": "needs_date_review",
-      "associationBasis": "official_site_linked_page"
-    },
-    {
-      "id": "official_page-c4a97bd20d21d6efe5",
-      "restaurantId": "osm-node-475879583-morris-east",
-      "restaurantName": "Morris East",
-      "platform": "official_page",
-      "sourceFamily": "website_page",
-      "sourceLabel": "Official page",
-      "sourceKind": "official_page_html",
-      "postId": null,
-      "platformObjectId": null,
-      "profileHandle": null,
-      "profileUrl": null,
-      "feedUrl": null,
-      "postUrl": "https://order.toasttab.com/online/locations/ec6ab1aa-2518-430f-aba4-25404d2c2fb8/default",
-      "mediaUrl": "https://d1w7312wesee68.cloudfront.net/o1svrvjZVbpkJpKvMsz87gyY14y_fc5I8Trm358wG80/ext:webp/quality:85/plain/s3://toast-sites-resources-prod/restaurantImages/ec6ab1aa-2518-430f-aba4-25404d2c2fb8/unnamed.jpg",
-      "thumbnailUrl": null,
-      "mediaType": null,
-      "title": "Location Selection",
-      "summary": "Select a location from Morris East and order online. Get the best prices and service by ordering direct!",
-      "primaryCategory": "general_update",
-      "primaryCategoryLabel": "General update",
-      "categories": [],
-      "matchedTerms": [],
-      "publishedAt": null,
-      "observedAt": "2026-09-04T11:33:19.964Z",
+      "observedAt": "2026-09-04T12:52:26.705Z",
       "ageDays": null,
       "isRecent": false,
       "lookbackDays": 180,
@@ -6481,7 +6754,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "menu"
       ],
       "publishedAt": null,
-      "observedAt": "2026-09-04T11:33:19.844Z",
+      "observedAt": "2026-09-04T12:52:26.583Z",
       "ageDays": null,
       "isRecent": false,
       "lookbackDays": 180,
@@ -6489,6 +6762,39 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
       "confidence": "official_source_page_signal",
       "reviewState": "needs_date_review",
       "associationBasis": "same_site_official_page"
+    },
+    {
+      "id": "official_page-c4a97bd20d21d6efe5",
+      "restaurantId": "osm-node-475879583-morris-east",
+      "restaurantName": "Morris East",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://order.toasttab.com/online/locations/ec6ab1aa-2518-430f-aba4-25404d2c2fb8/default",
+      "mediaUrl": "https://d1w7312wesee68.cloudfront.net/o1svrvjZVbpkJpKvMsz87gyY14y_fc5I8Trm358wG80/ext:webp/quality:85/plain/s3://toast-sites-resources-prod/restaurantImages/ec6ab1aa-2518-430f-aba4-25404d2c2fb8/unnamed.jpg",
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Location Selection",
+      "summary": "Select a location from Morris East and order online. Get the best prices and service by ordering direct!",
+      "primaryCategory": "general_update",
+      "primaryCategoryLabel": "General update",
+      "categories": [],
+      "matchedTerms": [],
+      "publishedAt": null,
+      "observedAt": "2026-09-04T12:52:26.254Z",
+      "ageDays": null,
+      "isRecent": false,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "needs_date_review",
+      "associationBasis": "official_site_linked_page"
     },
     {
       "id": "official_page-14a68279e8fb63dd21",
@@ -6532,7 +6838,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "menu"
       ],
       "publishedAt": null,
-      "observedAt": "2026-09-04T11:33:18.514Z",
+      "observedAt": "2026-09-04T12:52:25.421Z",
       "ageDays": null,
       "isRecent": false,
       "lookbackDays": 180,
@@ -6591,7 +6897,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "reservation"
       ],
       "publishedAt": null,
-      "observedAt": "2026-09-04T11:33:18.216Z",
+      "observedAt": "2026-09-04T12:52:24.820Z",
       "ageDays": null,
       "isRecent": false,
       "lookbackDays": 180,
@@ -6652,7 +6958,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "reservation"
       ],
       "publishedAt": null,
-      "observedAt": "2026-09-04T11:33:17.948Z",
+      "observedAt": "2026-09-04T12:52:24.670Z",
       "ageDays": null,
       "isRecent": false,
       "lookbackDays": 180,
@@ -6660,6 +6966,59 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
       "confidence": "official_source_page_signal",
       "reviewState": "needs_date_review",
       "associationBasis": "same_site_official_page"
+    },
+    {
+      "id": "official_page-0461ab27b5094b4ac1",
+      "restaurantId": "osm-node-30825944-canton-garden",
+      "restaurantName": "Canton Garden",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://www.cantongardenns.com/yik8nsx2/restaurant/order-online/menus/all-day-menu/42050426?menu=All+Day+Menu&category=Appetizers",
+      "mediaUrl": null,
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Fried Chicken Wings | Canton Garden",
+      "summary": "Enjoy the best authentic and delicious Chinese at Canton Garden in Halifax. View our hours, explore our menu, and order online for convenient pickup near you!",
+      "primaryCategory": "specials",
+      "primaryCategoryLabel": "Special",
+      "categories": [
+        {
+          "id": "specials",
+          "label": "Special",
+          "terms": [
+            "special"
+          ]
+        },
+        {
+          "id": "menu",
+          "label": "Menu update",
+          "terms": [
+            "menu",
+            "lunch menu"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "special",
+        "menu",
+        "lunch menu"
+      ],
+      "publishedAt": null,
+      "observedAt": "2026-09-04T12:52:24.669Z",
+      "ageDays": null,
+      "isRecent": false,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "needs_date_review",
+      "associationBasis": "official_site_linked_page"
     },
     {
       "id": "official_page-1aa700def35b0c38af",
@@ -6727,7 +7086,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "reservation"
       ],
       "publishedAt": null,
-      "observedAt": "2026-09-04T11:33:17.599Z",
+      "observedAt": "2026-09-04T12:52:24.302Z",
       "ageDays": null,
       "isRecent": false,
       "lookbackDays": 180,
@@ -6735,59 +7094,6 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
       "confidence": "official_source_page_signal",
       "reviewState": "needs_date_review",
       "associationBasis": "same_site_official_page"
-    },
-    {
-      "id": "official_page-0461ab27b5094b4ac1",
-      "restaurantId": "osm-node-30825944-canton-garden",
-      "restaurantName": "Canton Garden",
-      "platform": "official_page",
-      "sourceFamily": "website_page",
-      "sourceLabel": "Official page",
-      "sourceKind": "official_page_html",
-      "postId": null,
-      "platformObjectId": null,
-      "profileHandle": null,
-      "profileUrl": null,
-      "feedUrl": null,
-      "postUrl": "https://www.cantongardenns.com/yik8nsx2/restaurant/order-online/menus/all-day-menu/42050426?menu=All+Day+Menu&category=Appetizers",
-      "mediaUrl": null,
-      "thumbnailUrl": null,
-      "mediaType": null,
-      "title": "Fried Chicken Wings | Canton Garden",
-      "summary": "Enjoy the best authentic and delicious Chinese at Canton Garden in Halifax. View our hours, explore our menu, and order online for convenient pickup near you!",
-      "primaryCategory": "specials",
-      "primaryCategoryLabel": "Special",
-      "categories": [
-        {
-          "id": "specials",
-          "label": "Special",
-          "terms": [
-            "special"
-          ]
-        },
-        {
-          "id": "menu",
-          "label": "Menu update",
-          "terms": [
-            "menu",
-            "lunch menu"
-          ]
-        }
-      ],
-      "matchedTerms": [
-        "special",
-        "menu",
-        "lunch menu"
-      ],
-      "publishedAt": null,
-      "observedAt": "2026-09-04T11:33:17.050Z",
-      "ageDays": null,
-      "isRecent": false,
-      "lookbackDays": 180,
-      "confidenceScore": 0.78,
-      "confidence": "official_source_page_signal",
-      "reviewState": "needs_date_review",
-      "associationBasis": "official_site_linked_page"
     },
     {
       "id": "official_page-0d1e320555e8b1fee3",
@@ -6833,40 +7139,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "lunch menu"
       ],
       "publishedAt": null,
-      "observedAt": "2026-09-04T11:33:16.650Z",
-      "ageDays": null,
-      "isRecent": false,
-      "lookbackDays": 180,
-      "confidenceScore": 0.78,
-      "confidence": "official_source_page_signal",
-      "reviewState": "needs_date_review",
-      "associationBasis": "official_site_linked_page"
-    },
-    {
-      "id": "official_page-431a6b63f74c5b1add",
-      "restaurantId": "osm-node-11552061304-sushi-shige",
-      "restaurantName": "Sushi Shige",
-      "platform": "official_page",
-      "sourceFamily": "website_page",
-      "sourceLabel": "Official page",
-      "sourceKind": "official_page_html",
-      "postId": null,
-      "platformObjectId": null,
-      "profileHandle": null,
-      "profileUrl": null,
-      "feedUrl": null,
-      "postUrl": "https://www.skipthedishes.com/sushi-shige-japanese-restaurant",
-      "mediaUrl": "https://www.skipthedishes.com/_next/image?url=https%3A%2F%2Fmenu-images-static.skipthedishes.com%2Fimages%2Fresized%2Flarge-55c4db89650e3a3b9021.jpg&amp;w=3840&amp;q=75",
-      "thumbnailUrl": null,
-      "mediaType": null,
-      "title": "Sushi Shige Japanese Restaurant (5688 Almon St) | Order Delivery & Take Out Online | SkipTheDishes",
-      "summary": "Sushi Shige Japanese Restaurant (5688 Almon St) | Order Delivery & Take Out Online | SkipTheDishes Start Your Order Need Help? Log In Sign Up 5688 Almon St Sushi Shige Japanese Restaurant 9.3 5688 Almon St Service fees apply Allergens & Disclaimers Sushi Shige Japanese Restaurant 9.3 5688 Almon St Service fees apply Allergens & Disclaimers Extra Appetizer Salads and Soup From Kitchen Noodles Sushi and Sashimi Dinn...",
-      "primaryCategory": "general_update",
-      "primaryCategoryLabel": "General update",
-      "categories": [],
-      "matchedTerms": [],
-      "publishedAt": null,
-      "observedAt": "2026-09-04T11:33:16.301Z",
+      "observedAt": "2026-09-04T12:52:24.179Z",
       "ageDays": null,
       "isRecent": false,
       "lookbackDays": 180,
@@ -6919,7 +7192,415 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "lunch menu"
       ],
       "publishedAt": null,
-      "observedAt": "2026-09-04T11:33:16.047Z",
+      "observedAt": "2026-09-04T12:52:23.673Z",
+      "ageDays": null,
+      "isRecent": false,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "needs_date_review",
+      "associationBasis": "official_site_linked_page"
+    },
+    {
+      "id": "official_page-4375120952240443f4",
+      "restaurantId": "osm-node-30825944-canton-garden",
+      "restaurantName": "Canton Garden",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://www.cantongardenns.com/yik8nsx2/restaurant/order-online/menus/all-day-menu/42050423?menu=All+Day+Menu&category=Appetizers",
+      "mediaUrl": null,
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Fried Wontons (12) | Canton Garden",
+      "summary": "Enjoy the best authentic and delicious Chinese at Canton Garden in Halifax. View our hours, explore our menu, and order online for convenient pickup near you!",
+      "primaryCategory": "specials",
+      "primaryCategoryLabel": "Special",
+      "categories": [
+        {
+          "id": "specials",
+          "label": "Special",
+          "terms": [
+            "special"
+          ]
+        },
+        {
+          "id": "menu",
+          "label": "Menu update",
+          "terms": [
+            "menu",
+            "lunch menu"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "special",
+        "menu",
+        "lunch menu"
+      ],
+      "publishedAt": null,
+      "observedAt": "2026-09-04T12:52:23.238Z",
+      "ageDays": null,
+      "isRecent": false,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "needs_date_review",
+      "associationBasis": "official_site_linked_page"
+    },
+    {
+      "id": "official_page-fdc7557d6c3dbe4fca",
+      "restaurantId": "osm-node-5152065724-cheese-curds-gourmet-burgers-and-poutinerie-habaneros-modern-taco-bar",
+      "restaurantName": "Cheese Curds Gourmet Burgers and Poutinerie/Habaneros Modern Taco Bar",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://citytvplus.ca/brands/foodnetwork",
+      "mediaUrl": "https://production.static-d3-rogent.com/api/shain/v1/dataservice/ResizeImage/$value?Format=&#x27;jpg&#x27;&amp;Quality=75&amp;ImageId=&#x27;240777&#x27;&amp;EntityType=&#x27;Item&#x27;&amp;EntityId=&#x27;130343&#x27;&amp;Width=720&amp;Height=540&amp;ResizeAction=&#x27;fill&#x27;&amp;HorizontalAlignment=&#x27;center&#x27;&amp;VerticalAlignment=&#x27;top&#x27;",
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Food Network - Citytv+",
+      "summary": "Food Network is a unique lifestyle network that connects viewers to the power and joy of food. The network is committed to leading by teaching.",
+      "primaryCategory": "specials",
+      "primaryCategoryLabel": "Special",
+      "categories": [
+        {
+          "id": "specials",
+          "label": "Special",
+          "terms": [
+            "offer",
+            "offers"
+          ]
+        },
+        {
+          "id": "live_music",
+          "label": "Live music",
+          "terms": [
+            "dj"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "offer",
+        "offers",
+        "dj"
+      ],
+      "publishedAt": null,
+      "observedAt": "2026-09-04T12:52:23.147Z",
+      "ageDays": null,
+      "isRecent": false,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "needs_date_review",
+      "associationBasis": "official_site_linked_page"
+    },
+    {
+      "id": "official_page-34bba181c171c5225f",
+      "restaurantId": "osm-node-30825944-canton-garden",
+      "restaurantName": "Canton Garden",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://www.cantongardenns.com/yik8nsx2/restaurant/order-online/menus/all-day-menu/42050422?menu=All+Day+Menu&category=Appetizers",
+      "mediaUrl": null,
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Egg Roll (1pc) | Canton Garden",
+      "summary": "Enjoy the best authentic and delicious Chinese at Canton Garden in Halifax. View our hours, explore our menu, and order online for convenient pickup near you!",
+      "primaryCategory": "specials",
+      "primaryCategoryLabel": "Special",
+      "categories": [
+        {
+          "id": "specials",
+          "label": "Special",
+          "terms": [
+            "special"
+          ]
+        },
+        {
+          "id": "menu",
+          "label": "Menu update",
+          "terms": [
+            "menu",
+            "lunch menu"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "special",
+        "menu",
+        "lunch menu"
+      ],
+      "publishedAt": null,
+      "observedAt": "2026-09-04T12:52:22.818Z",
+      "ageDays": null,
+      "isRecent": false,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "needs_date_review",
+      "associationBasis": "official_site_linked_page"
+    },
+    {
+      "id": "official_page-ba72c0420864283758",
+      "restaurantId": "osm-node-2333319166-cheese-curds-burgers",
+      "restaurantName": "Cheese Curds Burgers",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://citytvplus.ca/brands/foodnetwork",
+      "mediaUrl": "https://production.static-d3-rogent.com/api/shain/v1/dataservice/ResizeImage/$value?Format=&#x27;jpg&#x27;&amp;Quality=75&amp;ImageId=&#x27;240777&#x27;&amp;EntityType=&#x27;Item&#x27;&amp;EntityId=&#x27;130343&#x27;&amp;Width=720&amp;Height=540&amp;ResizeAction=&#x27;fill&#x27;&amp;HorizontalAlignment=&#x27;center&#x27;&amp;VerticalAlignment=&#x27;top&#x27;",
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Food Network - Citytv+",
+      "summary": "Food Network is a unique lifestyle network that connects viewers to the power and joy of food. The network is committed to leading by teaching.",
+      "primaryCategory": "specials",
+      "primaryCategoryLabel": "Special",
+      "categories": [
+        {
+          "id": "specials",
+          "label": "Special",
+          "terms": [
+            "offer",
+            "offers"
+          ]
+        },
+        {
+          "id": "live_music",
+          "label": "Live music",
+          "terms": [
+            "dj"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "offer",
+        "offers",
+        "dj"
+      ],
+      "publishedAt": null,
+      "observedAt": "2026-09-04T12:52:22.517Z",
+      "ageDays": null,
+      "isRecent": false,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "needs_date_review",
+      "associationBasis": "official_site_linked_page"
+    },
+    {
+      "id": "official_page-299d21de831619bde3",
+      "restaurantId": "osm-node-30825944-canton-garden",
+      "restaurantName": "Canton Garden",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://www.cantongardenns.com/yik8nsx2/restaurant/order-online/menus/all-day-menu/42050421?menu=All+Day+Menu&category=Appetizers",
+      "mediaUrl": null,
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Shrimp Roll (4) | Canton Garden",
+      "summary": "Enjoy the best authentic and delicious Chinese at Canton Garden in Halifax. View our hours, explore our menu, and order online for convenient pickup near you!",
+      "primaryCategory": "specials",
+      "primaryCategoryLabel": "Special",
+      "categories": [
+        {
+          "id": "specials",
+          "label": "Special",
+          "terms": [
+            "special"
+          ]
+        },
+        {
+          "id": "menu",
+          "label": "Menu update",
+          "terms": [
+            "menu",
+            "lunch menu"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "special",
+        "menu",
+        "lunch menu"
+      ],
+      "publishedAt": null,
+      "observedAt": "2026-09-04T12:52:22.437Z",
+      "ageDays": null,
+      "isRecent": false,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "needs_date_review",
+      "associationBasis": "official_site_linked_page"
+    },
+    {
+      "id": "official_page-728c043d0f9e5b89b2",
+      "restaurantId": "osm-node-2715382299-cheese-curds-and-habaneros",
+      "restaurantName": "Cheese Curds and Habaneros",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://cheesecurdsgourmetburgersandpoutinerie.unuhub.net/",
+      "mediaUrl": null,
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Cheese Curds / Habaneros | Clayton Park",
+      "summary": "Cheese Curds | Pickup and Delivery",
+      "primaryCategory": "specials",
+      "primaryCategoryLabel": "Special",
+      "categories": [
+        {
+          "id": "specials",
+          "label": "Special",
+          "terms": [
+            "special",
+            "offer",
+            "offers",
+            "limited time"
+          ]
+        },
+        {
+          "id": "menu",
+          "label": "Menu update",
+          "terms": [
+            "menu"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "special",
+        "offer",
+        "offers",
+        "limited time",
+        "menu"
+      ],
+      "publishedAt": null,
+      "observedAt": "2026-09-04T12:52:22.355Z",
+      "ageDays": null,
+      "isRecent": false,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "needs_date_review",
+      "associationBasis": "same_site_official_page"
+    },
+    {
+      "id": "official_page-e0a371aa831fb9c079",
+      "restaurantId": "osm-node-30825944-canton-garden",
+      "restaurantName": "Canton Garden",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://www.cantongardenns.com/yik8nsx2/restaurant/order-online/menus/all-day-menu/42050420?menu=All+Day+Menu&category=Appetizers",
+      "mediaUrl": null,
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Spring Roll (1pc) | Canton Garden",
+      "summary": "Enjoy the best authentic and delicious Chinese at Canton Garden in Halifax. View our hours, explore our menu, and order online for convenient pickup near you!",
+      "primaryCategory": "specials",
+      "primaryCategoryLabel": "Special",
+      "categories": [
+        {
+          "id": "specials",
+          "label": "Special",
+          "terms": [
+            "special"
+          ]
+        },
+        {
+          "id": "menu",
+          "label": "Menu update",
+          "terms": [
+            "menu",
+            "lunch menu"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "special",
+        "menu",
+        "lunch menu"
+      ],
+      "publishedAt": null,
+      "observedAt": "2026-09-04T12:52:21.882Z",
+      "ageDays": null,
+      "isRecent": false,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "needs_date_review",
+      "associationBasis": "official_site_linked_page"
+    },
+    {
+      "id": "official_page-431a6b63f74c5b1add",
+      "restaurantId": "osm-node-11552061304-sushi-shige",
+      "restaurantName": "Sushi Shige",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://www.skipthedishes.com/sushi-shige-japanese-restaurant",
+      "mediaUrl": "https://www.skipthedishes.com/_next/image?url=https%3A%2F%2Fmenu-images-static.skipthedishes.com%2Fimages%2Fresized%2Flarge-55c4db89650e3a3b9021.jpg&amp;w=3840&amp;q=75",
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Sushi Shige Japanese Restaurant (5688 Almon St) | Order Delivery & Take Out Online | SkipTheDishes",
+      "summary": "Sushi Shige Japanese Restaurant (5688 Almon St) | Order Delivery & Take Out Online | SkipTheDishes Start Your Order Need Help? Log In Sign Up 5688 Almon St Sushi Shige Japanese Restaurant 9.3 5688 Almon St Service fees apply Allergens & Disclaimers Sushi Shige Japanese Restaurant 9.3 5688 Almon St Service fees apply Allergens & Disclaimers Extra Appetizer Salads and Soup From Kitchen Noodles Sushi and Sashimi Dinn...",
+      "primaryCategory": "general_update",
+      "primaryCategoryLabel": "General update",
+      "categories": [],
+      "matchedTerms": [],
+      "publishedAt": null,
+      "observedAt": "2026-09-04T12:52:21.204Z",
       "ageDays": null,
       "isRecent": false,
       "lookbackDays": 180,
@@ -6978,7 +7659,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "menu"
       ],
       "publishedAt": null,
-      "observedAt": "2026-09-04T11:33:16.029Z",
+      "observedAt": "2026-09-04T12:52:21.022Z",
       "ageDays": null,
       "isRecent": false,
       "lookbackDays": 180,
@@ -7041,7 +7722,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "menu"
       ],
       "publishedAt": null,
-      "observedAt": "2026-09-04T11:33:15.750Z",
+      "observedAt": "2026-09-04T12:52:20.831Z",
       "ageDays": null,
       "isRecent": false,
       "lookbackDays": 180,
@@ -7051,9 +7732,9 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
       "associationBasis": "official_site_linked_page"
     },
     {
-      "id": "official_page-fdc7557d6c3dbe4fca",
-      "restaurantId": "osm-node-5152065724-cheese-curds-gourmet-burgers-and-poutinerie-habaneros-modern-taco-bar",
-      "restaurantName": "Cheese Curds Gourmet Burgers and Poutinerie/Habaneros Modern Taco Bar",
+      "id": "official_page-045b9570783351543e",
+      "restaurantId": "osm-node-11612206582-swaad-sagaa-indian-cuisine-incorporated",
+      "restaurantName": "Swaad Sagaa Indian Cuisine Incorporated",
       "platform": "official_page",
       "sourceFamily": "website_page",
       "sourceLabel": "Official page",
@@ -7063,23 +7744,15 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
       "profileHandle": null,
       "profileUrl": null,
       "feedUrl": null,
-      "postUrl": "https://citytvplus.ca/brands/foodnetwork",
-      "mediaUrl": "https://production.static-d3-rogent.com/api/shain/v1/dataservice/ResizeImage/$value?Format=&#x27;jpg&#x27;&amp;Quality=75&amp;ImageId=&#x27;240777&#x27;&amp;EntityType=&#x27;Item&#x27;&amp;EntityId=&#x27;130343&#x27;&amp;Width=720&amp;Height=540&amp;ResizeAction=&#x27;fill&#x27;&amp;HorizontalAlignment=&#x27;center&#x27;&amp;VerticalAlignment=&#x27;top&#x27;",
+      "postUrl": "https://def.uber.com/en/challenge?from_service=d2ViLWVhdHMtdjI%3D&q=Y2ViOWZjYjZhY2VhYTZhM2VmM2Q5NzM2MDZmOTc5OTU6Y0poR0pvb0U4emFycWdXRTpCZlJoWmdOclF2WFQvaE41dG9qcXppNTllak9DTERXZXllY1FhdWsramI5ZVdHRWlKenEzNE41MUFQMUkvRU5CbWw4L1MyeEgwaTJXNlU3Vmd3Q1ZRNzExaTBDZVRnSGp4cHhEblhNMVpZdElLekQzS2tlWkd2T3RTUnZxbG9wcUd5TTREYlJ5M3Y2SGNqVERwU1ljK2JncC90OG92cXFhSGF2U0txUlF1cnRQWXZ2b1pMR0txVHRmeTdGcjh0c3lIU2dYU253Q2NFL01qeTNVSUp1TERxY0VJRWZObjZLdUFyV3hTUndZKzdQZHV0eGU4Z08yak8zNTJiZDNza1dmZzQ4eStqYnJaWHFsTXh1YUFkMGQ0U0FlT1lVZTc0TlIvQnFFOURWZGptM1h3Y1U1Qlc5NitGYXN4YXJTWlZXQTl6RUpvaE83VVNMN2MxcERUaWR3OHljUWN4Y01iOHFkVDF3VTVhQmpUV0lhMmRHSVdxdndCSXBPRlJidU9RcWFqS3hKZ2dBbyt3eWZqZz09OnA4bVl5NWNYZmk1dG1PcmVQM2hwVVE9PQ%3D%3D",
+      "mediaUrl": null,
       "thumbnailUrl": null,
       "mediaType": null,
-      "title": "Food Network - Citytv+",
-      "summary": "Food Network is a unique lifestyle network that connects viewers to the power and joy of food. The network is committed to leading by teaching.",
-      "primaryCategory": "specials",
-      "primaryCategoryLabel": "Special",
+      "title": "Official page update",
+      "summary": "Official page update",
+      "primaryCategory": "live_music",
+      "primaryCategoryLabel": "Live music",
       "categories": [
-        {
-          "id": "specials",
-          "label": "Special",
-          "terms": [
-            "offer",
-            "offers"
-          ]
-        },
         {
           "id": "live_music",
           "label": "Live music",
@@ -7089,12 +7762,10 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         }
       ],
       "matchedTerms": [
-        "offer",
-        "offers",
         "dj"
       ],
       "publishedAt": null,
-      "observedAt": "2026-09-04T11:33:15.632Z",
+      "observedAt": "2026-09-04T12:52:20.631Z",
       "ageDays": null,
       "isRecent": false,
       "lookbackDays": 180,
@@ -7104,9 +7775,9 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
       "associationBasis": "official_site_linked_page"
     },
     {
-      "id": "official_page-4375120952240443f4",
-      "restaurantId": "osm-node-30825944-canton-garden",
-      "restaurantName": "Canton Garden",
+      "id": "official_page-2b04c70da8ee1fd3ab",
+      "restaurantId": "osm-node-8600605850-barburrito",
+      "restaurantName": "BarBurrito",
       "platform": "official_page",
       "sourceFamily": "website_page",
       "sourceLabel": "Official page",
@@ -7116,50 +7787,40 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
       "profileHandle": null,
       "profileUrl": null,
       "feedUrl": null,
-      "postUrl": "https://www.cantongardenns.com/yik8nsx2/restaurant/order-online/menus/all-day-menu/42050423?menu=All+Day+Menu&category=Appetizers",
+      "postUrl": "https://www.barburrito.ca/fr/location/dartmouth/",
       "mediaUrl": null,
       "thumbnailUrl": null,
       "mediaType": null,
-      "title": "Fried Wontons (12) | Canton Garden",
-      "summary": "Enjoy the best authentic and delicious Chinese at Canton Garden in Halifax. View our hours, explore our menu, and order online for convenient pickup near you!",
-      "primaryCategory": "specials",
-      "primaryCategoryLabel": "Special",
+      "title": "50 Tacoma Dr - Dartmouth - Nouvelle-Écosse - Emplacements BarBurrito",
+      "summary": "Nous avons peut-être pas le seul burrito à Dartmouth, mais nous avons relevé la barre. Découvrez ce que vous avez raté à BarBurrito.",
+      "primaryCategory": "menu",
+      "primaryCategoryLabel": "Menu update",
       "categories": [
-        {
-          "id": "specials",
-          "label": "Special",
-          "terms": [
-            "special"
-          ]
-        },
         {
           "id": "menu",
           "label": "Menu update",
           "terms": [
-            "menu",
-            "lunch menu"
+            "menu"
           ]
         }
       ],
       "matchedTerms": [
-        "special",
-        "menu",
-        "lunch menu"
+        "menu"
       ],
       "publishedAt": null,
-      "observedAt": "2026-09-04T11:33:15.616Z",
+      "observedAt": "2026-09-04T12:52:20.435Z",
       "ageDays": null,
       "isRecent": false,
       "lookbackDays": 180,
       "confidenceScore": 0.78,
       "confidence": "official_source_page_signal",
       "reviewState": "needs_date_review",
-      "associationBasis": "official_site_linked_page"
+      "associationBasis": "same_site_official_page"
     },
     {
-      "id": "official_page-34bba181c171c5225f",
-      "restaurantId": "osm-node-30825944-canton-garden",
-      "restaurantName": "Canton Garden",
+      "id": "official_page-ba36cde8295847d723",
+      "restaurantId": "osm-node-11751643550-cafe-lunette",
+      "restaurantName": "Café Lunette",
       "platform": "official_page",
       "sourceFamily": "website_page",
       "sourceLabel": "Official page",
@@ -7169,38 +7830,28 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
       "profileHandle": null,
       "profileUrl": null,
       "feedUrl": null,
-      "postUrl": "https://www.cantongardenns.com/yik8nsx2/restaurant/order-online/menus/all-day-menu/42050422?menu=All+Day+Menu&category=Appetizers",
+      "postUrl": "https://silverpay.app/cafelunette/menu",
       "mediaUrl": null,
       "thumbnailUrl": null,
       "mediaType": null,
-      "title": "Egg Roll (1pc) | Canton Garden",
-      "summary": "Enjoy the best authentic and delicious Chinese at Canton Garden in Halifax. View our hours, explore our menu, and order online for convenient pickup near you!",
-      "primaryCategory": "specials",
-      "primaryCategoryLabel": "Special",
+      "title": "Cafe Lunette",
+      "summary": "--> Cafe Lunette",
+      "primaryCategory": "menu",
+      "primaryCategoryLabel": "Menu update",
       "categories": [
-        {
-          "id": "specials",
-          "label": "Special",
-          "terms": [
-            "special"
-          ]
-        },
         {
           "id": "menu",
           "label": "Menu update",
           "terms": [
-            "menu",
-            "lunch menu"
+            "menu"
           ]
         }
       ],
       "matchedTerms": [
-        "special",
-        "menu",
-        "lunch menu"
+        "menu"
       ],
       "publishedAt": null,
-      "observedAt": "2026-09-04T11:33:15.265Z",
+      "observedAt": "2026-09-04T12:52:20.388Z",
       "ageDays": null,
       "isRecent": false,
       "lookbackDays": 180,
@@ -7245,7 +7896,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "breakfast"
       ],
       "publishedAt": null,
-      "observedAt": "2026-09-04T11:33:15.137Z",
+      "observedAt": "2026-09-04T12:52:20.318Z",
       "ageDays": null,
       "isRecent": false,
       "lookbackDays": 180,
@@ -7255,9 +7906,9 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
       "associationBasis": "official_site_linked_page"
     },
     {
-      "id": "official_page-ba72c0420864283758",
-      "restaurantId": "osm-node-2333319166-cheese-curds-burgers",
-      "restaurantName": "Cheese Curds Burgers",
+      "id": "official_page-24231fe84de32a5d97",
+      "restaurantId": "osm-node-9165619005-mother-s-pizza",
+      "restaurantName": "Mother's Pizza",
       "platform": "official_page",
       "sourceFamily": "website_page",
       "sourceLabel": "Official page",
@@ -7267,23 +7918,15 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
       "profileHandle": null,
       "profileUrl": null,
       "feedUrl": null,
-      "postUrl": "https://citytvplus.ca/brands/foodnetwork",
-      "mediaUrl": "https://production.static-d3-rogent.com/api/shain/v1/dataservice/ResizeImage/$value?Format=&#x27;jpg&#x27;&amp;Quality=75&amp;ImageId=&#x27;240777&#x27;&amp;EntityType=&#x27;Item&#x27;&amp;EntityId=&#x27;130343&#x27;&amp;Width=720&amp;Height=540&amp;ResizeAction=&#x27;fill&#x27;&amp;HorizontalAlignment=&#x27;center&#x27;&amp;VerticalAlignment=&#x27;top&#x27;",
+      "postUrl": "https://def.uber.com/en/challenge?from_service=d2ViLWVhdHMtdjI%3D&q=Mjg4ZjYxM2I3Yjk0ZDk3MjdmZGViNWE5YzQzOTVmMjc6QXZFRlYrK3czZzdZNkRtazp4czdvcmtGVmRRbW1IQlljcE9IeVF0eWwzbGoyczQzd01SaEZTNzdVOURyd0FFZ0lwdkN4RmZaWlV5KzFLVEhLTlNMSyt6VUFsaWtTNkZ2RE9YM2N0L0M0YmNOMDBCanBKNjRDaEk3ZC90SFpXUHhCTjNwVUo5UWVnckhQRUsveXB0V1pSV1N2NlJHY1REUzlqRkdnd3lmeXVudWQzaC9HUE5TM3RvTXRydC8rUFlXVlJrRFVtUzg4VURaaXFOQklxK1VXNVc2Z2FwbFBnTnRMUFBWZGtLK3dYZldpUnFxSGtPYmQ3ZDNvckxmSTNUK1dlWnljcm9rejFFRngzTjc2ZHl2dC80Y2N6MzJhZ1pYUFNHdFRSWmo3MDNFPTpoR0hJRjRhWXprNnRWdXpHdXVLRk9BPT0%3D",
+      "mediaUrl": null,
       "thumbnailUrl": null,
       "mediaType": null,
-      "title": "Food Network - Citytv+",
-      "summary": "Food Network is a unique lifestyle network that connects viewers to the power and joy of food. The network is committed to leading by teaching.",
-      "primaryCategory": "specials",
-      "primaryCategoryLabel": "Special",
+      "title": "Official page update",
+      "summary": "Official page update",
+      "primaryCategory": "live_music",
+      "primaryCategoryLabel": "Live music",
       "categories": [
-        {
-          "id": "specials",
-          "label": "Special",
-          "terms": [
-            "offer",
-            "offers"
-          ]
-        },
         {
           "id": "live_music",
           "label": "Live music",
@@ -7293,12 +7936,10 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         }
       ],
       "matchedTerms": [
-        "offer",
-        "offers",
         "dj"
       ],
       "publishedAt": null,
-      "observedAt": "2026-09-04T11:33:14.949Z",
+      "observedAt": "2026-09-04T12:52:20.287Z",
       "ageDays": null,
       "isRecent": false,
       "lookbackDays": 180,
@@ -7308,9 +7949,9 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
       "associationBasis": "official_site_linked_page"
     },
     {
-      "id": "official_page-728c043d0f9e5b89b2",
-      "restaurantId": "osm-node-2715382299-cheese-curds-and-habaneros",
-      "restaurantName": "Cheese Curds and Habaneros",
+      "id": "official_page-de47b81564da3ffc8c",
+      "restaurantId": "osm-node-12143325435-krave-burger",
+      "restaurantName": "Krave Burger",
       "platform": "official_page",
       "sourceFamily": "website_page",
       "sourceLabel": "Official page",
@@ -7320,148 +7961,28 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
       "profileHandle": null,
       "profileUrl": null,
       "feedUrl": null,
-      "postUrl": "https://cheesecurdsgourmetburgersandpoutinerie.unuhub.net/",
+      "postUrl": "https://def.uber.com/en/challenge?from_service=d2ViLWVhdHMtdjI%3D&q=ZTE1MmZiMzFjMTEzNjM0ZWU1Y2NmMGMzNmE3NmU4MTA6bFo5WC9tQW9hUko3ZnBKMDpmbTBkcmJaVXlQMUpQM0VZTlIwcG51SDY3N0k2ZE44OXpIa0lFbWw4c216SzM5dVZYRXlvUmIvTGJqSisyRDV3TW9JbnhwenFBTlZhd2xlbzUrcGhmMDNYbnlEM2pkSUh4VDFtVHZDS0xBUXI1bDkwbWJkVlZ2dDdQMEdGVS9qVFBwNzNTOGlJN1ozNkJ1VVl3ajZ0cW5FUXV2a3hrVlA5NnMvTFZOWjRXMWNpQlZhZmdnanRrM1NLeVFZcHF3d25yU0ZMbFZWMkVUSEJvcFRCOFgrUGFnODVPbDVPT1p3YUhNQ2NBcThFT2xpVEUyVDJhL3NScDdiWVBWRExXLzZoRnJzNnRkbXgvUzB3cGxEOExiYjh3K3J0ZWl2MW5SWktjL2pmS3JvaDVhc1l1Z2tnSmx0TldhRDJ2UlVZQkk5WUcrQzltSmQrN3laUE1xYnlXSkRyb2dIa3RXOEFiZHNRQlJVQktoQ1R2OGs9OlpLazZWaWxOWXA4alVZdi9CTlczSkE9PQ%3D%3D",
       "mediaUrl": null,
       "thumbnailUrl": null,
       "mediaType": null,
-      "title": "Cheese Curds / Habaneros | Clayton Park",
-      "summary": "Cheese Curds | Pickup and Delivery",
-      "primaryCategory": "specials",
-      "primaryCategoryLabel": "Special",
+      "title": "Official page update",
+      "summary": "Official page update",
+      "primaryCategory": "live_music",
+      "primaryCategoryLabel": "Live music",
       "categories": [
         {
-          "id": "specials",
-          "label": "Special",
+          "id": "live_music",
+          "label": "Live music",
           "terms": [
-            "special",
-            "offer",
-            "offers",
-            "limited time"
-          ]
-        },
-        {
-          "id": "menu",
-          "label": "Menu update",
-          "terms": [
-            "menu"
+            "dj"
           ]
         }
       ],
       "matchedTerms": [
-        "special",
-        "offer",
-        "offers",
-        "limited time",
-        "menu"
+        "dj"
       ],
       "publishedAt": null,
-      "observedAt": "2026-09-04T11:33:14.848Z",
-      "ageDays": null,
-      "isRecent": false,
-      "lookbackDays": 180,
-      "confidenceScore": 0.78,
-      "confidence": "official_source_page_signal",
-      "reviewState": "needs_date_review",
-      "associationBasis": "same_site_official_page"
-    },
-    {
-      "id": "official_page-299d21de831619bde3",
-      "restaurantId": "osm-node-30825944-canton-garden",
-      "restaurantName": "Canton Garden",
-      "platform": "official_page",
-      "sourceFamily": "website_page",
-      "sourceLabel": "Official page",
-      "sourceKind": "official_page_html",
-      "postId": null,
-      "platformObjectId": null,
-      "profileHandle": null,
-      "profileUrl": null,
-      "feedUrl": null,
-      "postUrl": "https://www.cantongardenns.com/yik8nsx2/restaurant/order-online/menus/all-day-menu/42050421?menu=All+Day+Menu&category=Appetizers",
-      "mediaUrl": null,
-      "thumbnailUrl": null,
-      "mediaType": null,
-      "title": "Shrimp Roll (4) | Canton Garden",
-      "summary": "Enjoy the best authentic and delicious Chinese at Canton Garden in Halifax. View our hours, explore our menu, and order online for convenient pickup near you!",
-      "primaryCategory": "specials",
-      "primaryCategoryLabel": "Special",
-      "categories": [
-        {
-          "id": "specials",
-          "label": "Special",
-          "terms": [
-            "special"
-          ]
-        },
-        {
-          "id": "menu",
-          "label": "Menu update",
-          "terms": [
-            "menu",
-            "lunch menu"
-          ]
-        }
-      ],
-      "matchedTerms": [
-        "special",
-        "menu",
-        "lunch menu"
-      ],
-      "publishedAt": null,
-      "observedAt": "2026-09-04T11:33:14.566Z",
-      "ageDays": null,
-      "isRecent": false,
-      "lookbackDays": 180,
-      "confidenceScore": 0.78,
-      "confidence": "official_source_page_signal",
-      "reviewState": "needs_date_review",
-      "associationBasis": "official_site_linked_page"
-    },
-    {
-      "id": "official_page-e0a371aa831fb9c079",
-      "restaurantId": "osm-node-30825944-canton-garden",
-      "restaurantName": "Canton Garden",
-      "platform": "official_page",
-      "sourceFamily": "website_page",
-      "sourceLabel": "Official page",
-      "sourceKind": "official_page_html",
-      "postId": null,
-      "platformObjectId": null,
-      "profileHandle": null,
-      "profileUrl": null,
-      "feedUrl": null,
-      "postUrl": "https://www.cantongardenns.com/yik8nsx2/restaurant/order-online/menus/all-day-menu/42050420?menu=All+Day+Menu&category=Appetizers",
-      "mediaUrl": null,
-      "thumbnailUrl": null,
-      "mediaType": null,
-      "title": "Spring Roll (1pc) | Canton Garden",
-      "summary": "Enjoy the best authentic and delicious Chinese at Canton Garden in Halifax. View our hours, explore our menu, and order online for convenient pickup near you!",
-      "primaryCategory": "specials",
-      "primaryCategoryLabel": "Special",
-      "categories": [
-        {
-          "id": "specials",
-          "label": "Special",
-          "terms": [
-            "special"
-          ]
-        },
-        {
-          "id": "menu",
-          "label": "Menu update",
-          "terms": [
-            "menu",
-            "lunch menu"
-          ]
-        }
-      ],
-      "matchedTerms": [
-        "special",
-        "menu",
-        "lunch menu"
-      ],
-      "publishedAt": null,
-      "observedAt": "2026-09-04T11:33:14.176Z",
+      "observedAt": "2026-09-04T12:52:19.006Z",
       "ageDays": null,
       "isRecent": false,
       "lookbackDays": 180,
@@ -7504,50 +8025,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "special"
       ],
       "publishedAt": null,
-      "observedAt": "2026-09-04T11:33:13.145Z",
-      "ageDays": null,
-      "isRecent": false,
-      "lookbackDays": 180,
-      "confidenceScore": 0.78,
-      "confidence": "official_source_page_signal",
-      "reviewState": "needs_date_review",
-      "associationBasis": "official_site_linked_page"
-    },
-    {
-      "id": "official_page-ba36cde8295847d723",
-      "restaurantId": "osm-node-11751643550-cafe-lunette",
-      "restaurantName": "Café Lunette",
-      "platform": "official_page",
-      "sourceFamily": "website_page",
-      "sourceLabel": "Official page",
-      "sourceKind": "official_page_html",
-      "postId": null,
-      "platformObjectId": null,
-      "profileHandle": null,
-      "profileUrl": null,
-      "feedUrl": null,
-      "postUrl": "https://silverpay.app/cafelunette/menu",
-      "mediaUrl": null,
-      "thumbnailUrl": null,
-      "mediaType": null,
-      "title": "Cafe Lunette",
-      "summary": "--> Cafe Lunette",
-      "primaryCategory": "menu",
-      "primaryCategoryLabel": "Menu update",
-      "categories": [
-        {
-          "id": "menu",
-          "label": "Menu update",
-          "terms": [
-            "menu"
-          ]
-        }
-      ],
-      "matchedTerms": [
-        "menu"
-      ],
-      "publishedAt": null,
-      "observedAt": "2026-09-04T11:33:12.633Z",
+      "observedAt": "2026-09-04T12:52:18.722Z",
       "ageDays": null,
       "isRecent": false,
       "lookbackDays": 180,
@@ -7590,7 +8068,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "special"
       ],
       "publishedAt": null,
-      "observedAt": "2026-09-04T11:33:11.385Z",
+      "observedAt": "2026-09-04T12:52:17.854Z",
       "ageDays": null,
       "isRecent": false,
       "lookbackDays": 180,
@@ -7600,9 +8078,9 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
       "associationBasis": "official_site_linked_page"
     },
     {
-      "id": "official_page-fbf6a2ca82320f5fd1",
-      "restaurantId": "osm-node-11612206582-swaad-sagaa-indian-cuisine-incorporated",
-      "restaurantName": "Swaad Sagaa Indian Cuisine Incorporated",
+      "id": "official_page-09a28849e93948e0a7",
+      "restaurantId": "osm-node-3791840157-krave-burger",
+      "restaurantName": "Krave Burger",
       "platform": "official_page",
       "sourceFamily": "website_page",
       "sourceLabel": "Official page",
@@ -7612,7 +8090,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
       "profileHandle": null,
       "profileUrl": null,
       "feedUrl": null,
-      "postUrl": "https://def.uber.com/en/challenge?from_service=d2ViLWVhdHMtdjI%3D&q=YzJiZWZjODc2MDgzZmE5Y2YxOTFmZmE0YzQzMDM1ZGI6c2FRU2lXMFZZTHFXL3VtMDpiY0dUVEVCSWxqOHY0Qldoak43eHZPMWtqRmpHNjd6NXBUaEVnOWZWSFB2SWdiZDBCNGxDYWNaZU9BY3d2S2Y3VmdnTFd3RVVTdkNWNEU1SDQ4Y09SVmFuSFV2ZXp4ckhGZmU5YXkzSG4xWVN6dUFrZzlzM3NqZ25vQmlOZTNkTXlIYVRvRUxxTVJOQldKSWxWcVBjNnM5UVN0ajhlUkFvNVNHTTdZRnVuM3hsdklpcEtnZXVqR2JPYUtsbHBOM3V3R2d5NWtLSVVMYytZdHZTUXllSzJOK0NsZUpOYmk2a1BqMUgydVpISFhFa2lhV1R6TEl6RzVjaERBSTh5OHdXVy85OW9sMjZJR1VnNDZZbVluNC9KN3VWT0swSFZFRFF1NGpJMXpJeW5iMjlTeWlDVVhySklsNFBydENuWXlXQWwyZ29LSFZ0WUxQcEtnbU1HVjV2VWRFbW4rZDRRSzNUc2hsbnVlUmtyNkVZVjh3Z3EwK2V1K3owUDV3aHhLclJrVGh5T1ljS3l1eTNiUT09OldzVXlxekVTZ2lpa2E2eG45aFh3Wnc9PQ%3D%3D",
+      "postUrl": "https://def.uber.com/en/challenge?from_service=d2ViLWVhdHMtdjI%3D&q=NjdlZTI4ZWZmNDcwODQ1NTYzMTNiZmU1ZjJmNzk3ZDc6eG1sYzBOWVVhRExkcmoxcDprS01zNElYZjFDeVI3QXQvTDMzSG9zOU8vKzhGdStkVlNvUG5LcTFyWGdNbnAyYnJNbzRIT0ZEbXhNU2MyK2NscTFFT2xFS3RtZjZCb0Q0SUxHMUhxenVkaEZsZEpuU09ZQXYwMUFjT0MrYkllaWFJUEFwd0puTDIwZG5hRjZkUTFOakdqNXNWbjQ3ZndLWS9wRjZjS3pqNGxOb0ZVZ0pXMnhTT1VicFIzcHBtWWI3R3ViM3ZPOHVsQkUxQy90ZllpTDNMMkNGeXhGUVFtSHhYYnlLNjRkM3ZHdFdtTFdIYzExdHRKUWFTUVNMOFREenpmREl1djZjdG1GaU8xUW8xamYzQ2RvbEZMNkhsWk9ITHFyUmtPd0xJRHZzM3M3cWZvM2ZDOUVoN1pEK3BPNzlrN0VoY2x0dXB2NUJ1WmFicDkxYTdlbWRRWG1kbXhWYnZ2UGpXcTYrSTBTMC95Q0NZclhzNEhzM3A3bnc9OmZCanJWVlQzQnV0REpoTnAyeWxvNkE9PQ%3D%3D",
       "mediaUrl": null,
       "thumbnailUrl": null,
       "mediaType": null,
@@ -7633,7 +8111,52 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "dj"
       ],
       "publishedAt": null,
-      "observedAt": "2026-09-04T11:33:11.192Z",
+      "observedAt": "2026-09-04T12:52:17.705Z",
+      "ageDays": null,
+      "isRecent": false,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "needs_date_review",
+      "associationBasis": "official_site_linked_page"
+    },
+    {
+      "id": "official_page-026b7ba898b2b244a0",
+      "restaurantId": "osm-node-267592027-the-black-sheep",
+      "restaurantName": "The Black Sheep",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://tbdine.com/halifax/restaurants/black-sheep-restaurant-water-street",
+      "mediaUrl": "https://www.tbdine.com/touchbistro-dine.jpg",
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "TouchBistro Dine - Restaurant Reservations and Online Ordering",
+      "summary": "TouchBistro Dine - Online restaurant reservations and online ordering",
+      "primaryCategory": "reservations",
+      "primaryCategoryLabel": "Reservations",
+      "categories": [
+        {
+          "id": "reservations",
+          "label": "Reservations",
+          "terms": [
+            "reservation",
+            "reservations"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "reservation",
+        "reservations"
+      ],
+      "publishedAt": null,
+      "observedAt": "2026-09-04T12:52:17.705Z",
       "ageDays": null,
       "isRecent": false,
       "lookbackDays": 180,
@@ -7692,7 +8215,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "menu"
       ],
       "publishedAt": null,
-      "observedAt": "2026-09-04T11:33:11.188Z",
+      "observedAt": "2026-09-04T12:52:17.679Z",
       "ageDays": null,
       "isRecent": false,
       "lookbackDays": 180,
@@ -7700,73 +8223,6 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
       "confidence": "official_source_page_signal",
       "reviewState": "needs_date_review",
       "associationBasis": "official_site_linked_page"
-    },
-    {
-      "id": "official_page-37718dbedc921505e3",
-      "restaurantId": "osm-way-393886756-boston-pizza",
-      "restaurantName": "Boston Pizza",
-      "platform": "official_page",
-      "sourceFamily": "website_page",
-      "sourceLabel": "Official page",
-      "sourceKind": "official_page_html",
-      "postId": null,
-      "platformObjectId": null,
-      "profileHandle": null,
-      "profileUrl": null,
-      "feedUrl": null,
-      "postUrl": "https://bostonpizza.com/en/promotions/winter-cravings.html",
-      "mediaUrl": "https://bostonpizza.com/content/dam/bostonpizza/promotions/2026/q1-5---main-menu-update/Q1.5%20Banner%205000x1916.png",
-      "thumbnailUrl": null,
-      "mediaType": null,
-      "title": "Winter Cravings",
-      "summary": "Winter Cravings Menu Promotions Locations Rewards Gift Cards FR EN ORDER NOW Permanent cravings unlocked&lt;/h1>\\r\\n\"}}\" id=\"text-cd501a0e96\" class=\"cmp-text prose lg:prose-lg\"> Permanent cravings unlocked Our new menu is crafted to satisfy your cold‑weather cravings and introduce you to fresh favourites. From exciting new dishes to deliciously seasonal beverages, each item is designed to spark curiosity, inspire...",
-      "primaryCategory": "specials",
-      "primaryCategoryLabel": "Special",
-      "categories": [
-        {
-          "id": "specials",
-          "label": "Special",
-          "terms": [
-            "offer",
-            "promo",
-            "promotion",
-            "limited time"
-          ]
-        },
-        {
-          "id": "menu",
-          "label": "Menu update",
-          "terms": [
-            "menu",
-            "new dish"
-          ]
-        },
-        {
-          "id": "seasonal",
-          "label": "Seasonal",
-          "terms": [
-            "seasonal"
-          ]
-        }
-      ],
-      "matchedTerms": [
-        "offer",
-        "promo",
-        "promotion",
-        "limited time",
-        "menu",
-        "new dish",
-        "seasonal"
-      ],
-      "publishedAt": "2026-09-04T11:33:11.127Z",
-      "observedAt": "2026-09-04T11:33:10.868Z",
-      "ageDays": 0,
-      "isRecent": true,
-      "lookbackDays": 180,
-      "confidenceScore": 0.78,
-      "confidence": "official_source_page_signal",
-      "reviewState": "source_signal",
-      "associationBasis": "same_site_official_page"
     },
     {
       "id": "official_page-ba671a06d9b21f2202",
@@ -7822,7 +8278,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "menu"
       ],
       "publishedAt": null,
-      "observedAt": "2026-09-04T11:33:10.988Z",
+      "observedAt": "2026-09-04T12:52:17.505Z",
       "ageDays": null,
       "isRecent": false,
       "lookbackDays": 180,
@@ -7832,9 +8288,9 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
       "associationBasis": "official_site_linked_page"
     },
     {
-      "id": "official_page-2b04c70da8ee1fd3ab",
-      "restaurantId": "osm-node-8600605850-barburrito",
-      "restaurantName": "BarBurrito",
+      "id": "official_page-90b37b62711a3b5b2b",
+      "restaurantId": "osm-node-4420916900-board-room-game-cafe",
+      "restaurantName": "Board Room Game Cafe",
       "platform": "official_page",
       "sourceFamily": "website_page",
       "sourceLabel": "Official page",
@@ -7844,73 +8300,30 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
       "profileHandle": null,
       "profileUrl": null,
       "feedUrl": null,
-      "postUrl": "https://www.barburrito.ca/fr/location/dartmouth/",
-      "mediaUrl": null,
+      "postUrl": "https://tbdine.com/halifax/restaurants/the-boardroom-game-cafe",
+      "mediaUrl": "https://www.tbdine.com/touchbistro-dine.jpg",
       "thumbnailUrl": null,
       "mediaType": null,
-      "title": "50 Tacoma Dr - Dartmouth - Nouvelle-Écosse - Emplacements BarBurrito",
-      "summary": "Nous avons peut-être pas le seul burrito à Dartmouth, mais nous avons relevé la barre. Découvrez ce que vous avez raté à BarBurrito.",
-      "primaryCategory": "menu",
-      "primaryCategoryLabel": "Menu update",
+      "title": "TouchBistro Dine - Restaurant Reservations and Online Ordering",
+      "summary": "TouchBistro Dine - Online restaurant reservations and online ordering",
+      "primaryCategory": "reservations",
+      "primaryCategoryLabel": "Reservations",
       "categories": [
         {
-          "id": "menu",
-          "label": "Menu update",
+          "id": "reservations",
+          "label": "Reservations",
           "terms": [
-            "menu"
+            "reservation",
+            "reservations"
           ]
         }
       ],
       "matchedTerms": [
-        "menu"
+        "reservation",
+        "reservations"
       ],
       "publishedAt": null,
-      "observedAt": "2026-09-04T11:33:10.801Z",
-      "ageDays": null,
-      "isRecent": false,
-      "lookbackDays": 180,
-      "confidenceScore": 0.78,
-      "confidence": "official_source_page_signal",
-      "reviewState": "needs_date_review",
-      "associationBasis": "same_site_official_page"
-    },
-    {
-      "id": "official_page-0f44096c90eea0e09f",
-      "restaurantId": "osm-node-7674251740-in-spring-asian-fusion-cuisine",
-      "restaurantName": "in spring asian fusion cuisine",
-      "platform": "official_page",
-      "sourceFamily": "website_page",
-      "sourceLabel": "Official page",
-      "sourceKind": "official_page_html",
-      "postId": null,
-      "platformObjectId": null,
-      "profileHandle": null,
-      "profileUrl": null,
-      "feedUrl": null,
-      "postUrl": "https://www.skipthedishes.com/cuisines/breakfast&amp;brunch",
-      "mediaUrl": null,
-      "thumbnailUrl": null,
-      "mediaType": null,
-      "title": "Skip",
-      "summary": "Skip Skip logo",
-      "primaryCategory": "brunch",
-      "primaryCategoryLabel": "Brunch",
-      "categories": [
-        {
-          "id": "brunch",
-          "label": "Brunch",
-          "terms": [
-            "brunch",
-            "breakfast"
-          ]
-        }
-      ],
-      "matchedTerms": [
-        "brunch",
-        "breakfast"
-      ],
-      "publishedAt": null,
-      "observedAt": "2026-09-04T11:33:10.298Z",
+      "observedAt": "2026-09-04T12:52:17.164Z",
       "ageDays": null,
       "isRecent": false,
       "lookbackDays": 180,
@@ -7920,7 +8333,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
       "associationBasis": "official_site_linked_page"
     },
     {
-      "id": "official_page-857b81a836e61eb244",
+      "id": "official_page-fe83510a6e7d346cd8",
       "restaurantId": "osm-node-9128392205-king-of-donair",
       "restaurantName": "King of Donair",
       "platform": "official_page",
@@ -7932,7 +8345,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
       "profileHandle": null,
       "profileUrl": null,
       "feedUrl": null,
-      "postUrl": "https://def.uber.com/en/challenge?from_service=d2ViLWVhdHMtdjI%3D&q=YWE1ZjJhYzEyN2MxYjVlN2RlNmY3Yzg3ZjQxYTI1MjA6bkxFUEptTUFUa092clFiRDpkY0ZIR3J5WWlIVHBCeUtadnR2a3NrdGF6TXhSTHlROG1mVUFpYUcvNVlNYWplcE1XMk9ILzhVSGtnUnB6N1kvRUtnWlQ5Z0pFOUNuKzA0UnlsZk1QQkNicVZ6WHJMSU1sSWR1YU93ZldzL1pnMSs5czVNTzhjODBIbWN1d2Y5ZFJmZG5lb3NxUEdVb01KZVl4K2dwYnlCRm5Wd0Q3WnlVVVlTbldMT2kzT2taZ2psRCtGQVd4ZWxXVk04YldjT3JRbSt4WkNCTXRvU0QwZ3BIU0Fvd0J3T3RVd0tWVmgrU1VrcmpsUDFFcEtlZklGUUd5UHBOVng3WkcvejlCa2xLZ2l3bEhPUlRLUEtxTHVNYUhPMG9OMlREckoxNzpHb0hkdU93eUlWcUJad1BMdTFrazhRPT0%3D",
+      "postUrl": "https://def.uber.com/en/challenge?from_service=d2ViLWVhdHMtdjI%3D&q=NzZjOGJmZWYwM2I1YjE0NWNmNTA4OWIwNGFkMmJhZDI6eWdkOW9qQU9SL0dBNXdFVDpIZWhCOVVaVnZRMGtHeUQvWlEvUExsRWprY3luRmJUQ3JiRDlmYkFRaG5pamxWbGQ3MHpRYlYyWnZ4WE5xYk5CazFWQmFtc3FoZVp3NzR4eVhkKzY5NWNqNTdCZlNnRkQ2eFN6NFlDdWhLbDZyQW9YZTI2M0w2REdZallGcjlMYVRCNU9OaDliNDZWZE1iNS9mUloxRVVVa0J1dmtaaEt3L2R0UmF6VWlyNzdlQmpqL1FMdWJRc2FDQzJqcGFaM3lHQWFaV3I3ZFBXMlhLWGVkN3Z4WE9WK0ROYlNuNjFjSm13TXhYalF0TUFsS09wb1RST3Y0VkpiSzVYV2tpckFjc2Y2RUFNOS9iQ1JaNTcvVHA5azROSWVxRDhmSTpjU3NkRGZzdUxpTUI5eXkzQU9VS013PT0%3D",
       "mediaUrl": null,
       "thumbnailUrl": null,
       "mediaType": null,
@@ -7953,7 +8366,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "dj"
       ],
       "publishedAt": null,
-      "observedAt": "2026-09-04T11:33:09.717Z",
+      "observedAt": "2026-09-04T12:52:17.149Z",
       "ageDays": null,
       "isRecent": false,
       "lookbackDays": 180,
@@ -8042,7 +8455,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "walk-ins"
       ],
       "publishedAt": null,
-      "observedAt": "2026-09-04T11:33:09.426Z",
+      "observedAt": "2026-09-04T12:52:17.072Z",
       "ageDays": null,
       "isRecent": false,
       "lookbackDays": 180,
@@ -8123,7 +8536,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "walk-ins"
       ],
       "publishedAt": null,
-      "observedAt": "2026-09-04T11:33:09.267Z",
+      "observedAt": "2026-09-04T12:52:16.904Z",
       "ageDays": null,
       "isRecent": false,
       "lookbackDays": 180,
@@ -8131,6 +8544,51 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
       "confidence": "official_source_page_signal",
       "reviewState": "needs_date_review",
       "associationBasis": "same_site_official_page"
+    },
+    {
+      "id": "official_page-0f44096c90eea0e09f",
+      "restaurantId": "osm-node-7674251740-in-spring-asian-fusion-cuisine",
+      "restaurantName": "in spring asian fusion cuisine",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://www.skipthedishes.com/cuisines/breakfast&amp;brunch",
+      "mediaUrl": null,
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Skip",
+      "summary": "Skip Skip logo",
+      "primaryCategory": "brunch",
+      "primaryCategoryLabel": "Brunch",
+      "categories": [
+        {
+          "id": "brunch",
+          "label": "Brunch",
+          "terms": [
+            "brunch",
+            "breakfast"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "brunch",
+        "breakfast"
+      ],
+      "publishedAt": null,
+      "observedAt": "2026-09-04T12:52:16.787Z",
+      "ageDays": null,
+      "isRecent": false,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "needs_date_review",
+      "associationBasis": "official_site_linked_page"
     },
     {
       "id": "official_page-bb249b8f9737e74354",
@@ -8182,7 +8640,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "reservation"
       ],
       "publishedAt": null,
-      "observedAt": "2026-09-04T11:33:09.108Z",
+      "observedAt": "2026-09-04T12:52:16.742Z",
       "ageDays": null,
       "isRecent": false,
       "lookbackDays": 180,
@@ -8190,49 +8648,6 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
       "confidence": "official_source_page_signal",
       "reviewState": "needs_date_review",
       "associationBasis": "same_site_official_page"
-    },
-    {
-      "id": "official_page-454e8334e3c4e15ef8",
-      "restaurantId": "osm-node-3104142670-king-of-donair",
-      "restaurantName": "King of Donair",
-      "platform": "official_page",
-      "sourceFamily": "website_page",
-      "sourceLabel": "Official page",
-      "sourceKind": "official_page_html",
-      "postId": null,
-      "platformObjectId": null,
-      "profileHandle": null,
-      "profileUrl": null,
-      "feedUrl": null,
-      "postUrl": "https://def.uber.com/en/challenge?from_service=d2ViLWVhdHMtdjI%3D&q=Mjg3MDY0YjUwNGI2ZThjNTlhNWYzOWIwZDg0OGViNzg6Um1uRFVqTm9SOFNMNlNGTDpSZlNnaEJpeXB0WXFiNTNNeTZ4YUgxS3BlZ29zK093N1JvS2FKdE54YmZ4TThSaXcvbSt2RHJWc1pTVE9wZjF5U21iakNIbDVUNUpNNVZLWmRLcDRyUzI2QldtWkZUNTN1U0pTeSsxbDBMWjFWUXo5SmpaM2V0cGZkMFJXeDJ3dTJJaXpzZWdhYmlTWk9xNmJpd0tYcWRtQ2dNLzNtWE84RUdjSmtDUTF3ZTJ1NjFPY2Z3dFFGb3JPK210RUJiUWpPRUhoK0FCZHRlclNmNGErNTM3NXo3a2srdS9YaWkrQmYzVDVsemwwZHpkeWpVM2JOeDV1M08ra1hIT256aUFpTTFlU2paWUlxcHVDWEc2OE5uZENBeGFPNTF0azpKNERXR3BXMmFjRHJ6eXZreEZ5VDZ3PT0%3D",
-      "mediaUrl": null,
-      "thumbnailUrl": null,
-      "mediaType": null,
-      "title": "Official page update",
-      "summary": "Official page update",
-      "primaryCategory": "live_music",
-      "primaryCategoryLabel": "Live music",
-      "categories": [
-        {
-          "id": "live_music",
-          "label": "Live music",
-          "terms": [
-            "dj"
-          ]
-        }
-      ],
-      "matchedTerms": [
-        "dj"
-      ],
-      "publishedAt": null,
-      "observedAt": "2026-09-04T11:33:09.100Z",
-      "ageDays": null,
-      "isRecent": false,
-      "lookbackDays": 180,
-      "confidenceScore": 0.78,
-      "confidence": "official_source_page_signal",
-      "reviewState": "needs_date_review",
-      "associationBasis": "official_site_linked_page"
     },
     {
       "id": "official_page-c8971453f47139e427",
@@ -8294,7 +8709,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "book a table"
       ],
       "publishedAt": null,
-      "observedAt": "2026-09-04T11:33:08.948Z",
+      "observedAt": "2026-09-04T12:52:16.580Z",
       "ageDays": null,
       "isRecent": false,
       "lookbackDays": 180,
@@ -8302,6 +8717,49 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
       "confidence": "official_source_page_signal",
       "reviewState": "needs_date_review",
       "associationBasis": "same_site_official_page"
+    },
+    {
+      "id": "official_page-15db1dc81761623df9",
+      "restaurantId": "osm-node-3104142670-king-of-donair",
+      "restaurantName": "King of Donair",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://def.uber.com/en/challenge?from_service=d2ViLWVhdHMtdjI%3D&q=YmUzYWVjNzUzNzYwODQ0YTE0NTA5NTlmOTEyNWI1YmM6aUNFNGU2Z0dmUkhaWjM0RTo0aU15dHQzb0JiNTNvUTNkUHorekNBMjlWaWRtZnU4RGhKMUdyZ2FwVnkzVnpESTR3UU9EZ3ZXemtUbGhEQmZHQXVoM25STkkreE9uNnUzK1FLbXdZSlNLM05uZnIzdHVMWjhkdFVnUVlOWmN3TEhydUlvRHJDSGtBK1V4Ymk5dE9wVFNyTVB0dVZhUDlrTTZZSmNhYm5GNHAxc0F4Yk5EOEhud1JCcHp6Qy9ESXJRQVUzRFpNdUs4dWRBbHJRRUExMUZoZ2xhY1JyQ0lYcEpOUThOQ3BiWUVlTVBLWGZaVFNqem1SNTBKN1JLMzI2QVJLTUpCZjUxVkZKVlhVRFBpcXJ4Qlh5V0NnZGVJVDNIWG1hWGROcFZFUGFpWjpzZGdIMGVUcUdUczlKNXFMNnVOWFVBPT0%3D",
+      "mediaUrl": null,
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Official page update",
+      "summary": "Official page update",
+      "primaryCategory": "live_music",
+      "primaryCategoryLabel": "Live music",
+      "categories": [
+        {
+          "id": "live_music",
+          "label": "Live music",
+          "terms": [
+            "dj"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "dj"
+      ],
+      "publishedAt": null,
+      "observedAt": "2026-09-04T12:52:16.507Z",
+      "ageDays": null,
+      "isRecent": false,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "needs_date_review",
+      "associationBasis": "official_site_linked_page"
     },
     {
       "id": "official_page-df158a5e7508454385",
@@ -8361,7 +8819,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "reservation"
       ],
       "publishedAt": null,
-      "observedAt": "2026-09-04T11:33:08.781Z",
+      "observedAt": "2026-09-04T12:52:16.412Z",
       "ageDays": null,
       "isRecent": false,
       "lookbackDays": 180,
@@ -8432,7 +8890,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "book a table"
       ],
       "publishedAt": null,
-      "observedAt": "2026-09-04T11:33:08.472Z",
+      "observedAt": "2026-09-04T12:52:16.089Z",
       "ageDays": null,
       "isRecent": false,
       "lookbackDays": 180,
@@ -8483,7 +8941,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "breakfast"
       ],
       "publishedAt": null,
-      "observedAt": "2026-09-04T11:33:08.014Z",
+      "observedAt": "2026-09-04T12:52:15.834Z",
       "ageDays": null,
       "isRecent": false,
       "lookbackDays": 180,
@@ -8564,7 +9022,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "walk-ins"
       ],
       "publishedAt": null,
-      "observedAt": "2026-09-04T11:33:07.688Z",
+      "observedAt": "2026-09-04T12:52:15.200Z",
       "ageDays": null,
       "isRecent": false,
       "lookbackDays": 180,
@@ -8574,7 +9032,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
       "associationBasis": "same_site_official_page"
     },
     {
-      "id": "official_page-78dd9fe0e9f8d20125",
+      "id": "official_page-4f7af141d84b2f6a19",
       "restaurantId": "osm-node-8600605850-barburrito",
       "restaurantName": "BarBurrito",
       "platform": "official_page",
@@ -8586,7 +9044,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
       "profileHandle": null,
       "profileUrl": null,
       "feedUrl": null,
-      "postUrl": "https://def.uber.com/en/challenge?from_service=d2ViLWVhdHMtdjI%3D&q=YzQzYTM4MTJhYmZmNmM3MTUyZGUwOGRhZTk0NjViZmM6ZVZjb2N1a0U1a0FqOU56SzpuTWd6ajlsNlFwVDZHZjZTM09vcjNKaVpCZ05ka21acGJ2VWpxRTlDWk9UT241aWdIYW5uMTVMd1Q3d0VhL3VLN000VDhXN1VwRlU4ZEtUYmtmejhPS0xqYTNzZXgzcVkzSGgzeU5GcVVETk1qUmloeFVCdXVmVUtOWng0SHAzVUtqd0ExNEVqWTF2Mk96VDZ3b1VqM0lxdzQ4T1ZsclVhWkFaT3UzRjhmTEhHUGpzeGp4Y2FaTTBHTXNZUDRVcFVFNDZ4SjNSd2ZnQ3pxYWU3K3hPQlVlVkw3N0xDSm8rSnprRDh0dTlnT1Z2ckMwdVZoNFZPNnExMUhYM05FTVJrRllnRjhodXcwd2szYlFHbHRrTFdBUnBZTFgyV3ZLdFduR0swQ0YrWS9CR0VMQWVyRGczcmoxUzUrVjVkekszdDVCa3VZYWdTbHRNTXo3aDYzMThxTnplOVJPMTM4aTdkeEVtK0pjTnNFU1dDUEg3bU9wc3EybWJudFRsWk5PQW11UkNxM25RbnltSURHRllaM1huZXJOcUZrengzWmdPZjd0SHRSQXEwZ05NdmQ3T3hKbHpwbGgvNmZOVTBDT24zOEMvRUdURThTbFJOa0c1aFQwTkJpdTBwQzBkY0VWeVUzaS83ODdMUGlqUCtTYkNqaFA0emZjR0Nlc1VVbnhrU0Q3cllDMExWTS9iYjZQNjhLY0Q1QUt1S01HSythMmdBN054QkE1S09xOXNVOXFEdFRoMFpwNVFaRDZpbmtRMGhFQjlzL2hONzFJQWp5aC9VaVgybEd5U3U5eE51eWNKbVFmdWcwV0RnYkNOMjI2VTN0QWVYY0JQQTVueUpBWDRPUE4wQWwzaWZtelhqcnBnaEI3Sk9PbjFlOUdjbFBDdzBFRnRNd0xiOTB2SE0yUmdLTEhrMTZuMUIxSWN4aEJGUTdtVkUyUkllc2EwYlYzN2MxN1hzOldPcWtRK0NTeklnZE55WEhIdnNiYnc9PQ%3D%3D",
+      "postUrl": "https://def.uber.com/en/challenge?from_service=d2ViLWVhdHMtdjI%3D&q=M2JhMTk3OGE5ZDg0ZTk1YmEzYTIxMjQyOTc0ZmJkZTU6MDVKMWVNMkJRQmZmN0Z3czp5aVE1eTFnRVFucVZ0THZCVmxNOHV3Z2dYTzkxYXpGNEtFZXBQemZ1cnF4NzlYamNFTXgvYjB2WWNpcEUwdW0vM2pkVmtNRXdNOFcwMUducHB0WEtKaXFEWlNtNFI4UUw4c1V0aVh5QUhkQ2RqRWVKeURsVjEzSm4waG84ZUZzbmFMd1o5a3Fib2ZZWW85ellxRHhYYVVrMHlPSFZERXlaYy9NWVByakMrOVE2RVk5RDZBNUM2TjlKRmtJZDUzbE9hWnh0WnhVL3JGNHp1bWJOdWxmVUg4eThUVWZmakNyajVUOUxNZ0VPSlFtTXY4ZjFTUFAzZDFaak1wR1pkS1VTM3ZHY0k3MGN6TURmNUVieUlNSms0S0JKRFVDRFNQMWp4aDZlNDZTNEU2TWxuakVoZWFvaHZsdlVIVFFQZE5wOEhyUFdRRjEvMjZuQ2RsL3pwbkpkVDVneUJOZHNCU1JPWWRnWm9mMlR4RHd0WlpmWFAraWhWKzc1ZzZSOWhoa2NGaVhTRUxVUjFqVWkxbHlQMU9aYk1oaWtiMlZhaFRhRjN4cVVtd2JkSkxSN3lYbjNnRnJrb2RxWTVvQU04TFJKbi9KYWlmSmMxdC9RV3RwaVV3aisyL256TW9ROGlXNjFncXJ1MWVGemVvVHNGNXErYUxTL0Uzam5Xd2UxZDhIU1haUGxaNkNrUHhRLzA2V3ZsOUpXQWRBYkxweS9tRVU4NWxBbE1NSTZWajlVTHU2aHhIL0F6RkdEVUJPOFRYbHJMM0tjdllnNUdFTnJPRkVnMlRMNTRPU2gvdzRRVy9aWEdtU3pqR1VvS2pwVEY0d1R0VmN3cFA5ME0yeWVCbDFOcmdjRDJFSi9INlBmaHAxd2RtL25wMVpzbW1Vdms2VHdMVFdoK0xtT21ldzBsR0ZwNlRnb0NtS0wvS0dRdEFYMThVSXIvempHV3lhc2NzZjVEVC9uOmpNS1NBQlN0Ykp3aXlSTTFwZVVkQmc9PQ%3D%3D",
       "mediaUrl": null,
       "thumbnailUrl": null,
       "mediaType": null,
@@ -8607,7 +9065,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "dj"
       ],
       "publishedAt": null,
-      "observedAt": "2026-09-04T11:33:07.687Z",
+      "observedAt": "2026-09-04T12:52:15.040Z",
       "ageDays": null,
       "isRecent": false,
       "lookbackDays": 180,
@@ -8654,7 +9112,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "$"
       ],
       "publishedAt": null,
-      "observedAt": "2026-09-04T11:33:07.603Z",
+      "observedAt": "2026-09-04T12:52:15.010Z",
       "ageDays": null,
       "isRecent": false,
       "lookbackDays": 180,
@@ -8697,7 +9155,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "menu"
       ],
       "publishedAt": null,
-      "observedAt": "2026-09-04T11:33:06.982Z",
+      "observedAt": "2026-09-04T12:52:14.521Z",
       "ageDays": null,
       "isRecent": false,
       "lookbackDays": 180,
@@ -8771,8 +9229,8 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "menu",
         "summer"
       ],
-      "publishedAt": "2026-09-04T10:40:48.711Z",
-      "observedAt": "2026-09-04T11:33:10.552Z",
+      "publishedAt": "2026-09-04T12:16:02.806Z",
+      "observedAt": "2026-09-04T12:52:18.350Z",
       "ageDays": 0,
       "isRecent": true,
       "lookbackDays": 180,
@@ -8842,8 +9300,8 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "band",
         "menu"
       ],
-      "publishedAt": "2026-09-04T10:28:09.120Z",
-      "observedAt": "2026-09-04T11:33:12.418Z",
+      "publishedAt": "2026-09-04T12:16:00.166Z",
+      "observedAt": "2026-09-04T12:52:19.673Z",
       "ageDays": 0,
       "isRecent": true,
       "lookbackDays": 180,
@@ -8853,7 +9311,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
       "associationBasis": "same_site_official_page"
     },
     {
-      "id": "official_page-7c9bdebe43b8027631",
+      "id": "official_page-37718dbedc921505e3",
       "restaurantId": "osm-way-393886756-boston-pizza",
       "restaurantName": "Boston Pizza",
       "platform": "official_page",
@@ -8865,12 +9323,12 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
       "profileHandle": null,
       "profileUrl": null,
       "feedUrl": null,
-      "postUrl": "https://bostonpizza.com/en/promotions/kids-eat-free.html",
-      "mediaUrl": "https://bostonpizza.com/content/dam/bostonpizza/promotions/2026/kids-eat-free/Kids-Eat-Free-Desktop_EN.jpg",
+      "postUrl": "https://bostonpizza.com/en/promotions/winter-cravings.html",
+      "mediaUrl": "https://bostonpizza.com/content/dam/bostonpizza/promotions/2026/q1-5---main-menu-update/Q1.5%20Banner%205000x1916.png",
       "thumbnailUrl": null,
       "mediaType": null,
-      "title": "Kids Eat Free | Boston Pizza",
-      "summary": "Kids Eat Free | Boston Pizza Menu Promotions Locations Rewards Gift Cards FR EN ORDER NOW CALLING ALL PARENTS!&lt;/p>\\r\\n&lt;p class=\\\"b6-do6-banner--custom-text bp-do6-banner--text-size-24--bold\\\">The back-to-school rush is on, but dinner just got easier! Hang up the aprons and head over to Boston Pizza 'cause KIDS EAT FREE all September long with a $16 minimum spend per free Kids Meal. That's right: your kids wi...",
+      "title": "Winter Cravings",
+      "summary": "Winter Cravings Menu Promotions Locations Rewards Gift Cards FR EN ORDER NOW Permanent cravings unlocked&lt;/h1>\\r\\n\"}}\" id=\"text-cd501a0e96\" class=\"cmp-text prose lg:prose-lg\"> Permanent cravings unlocked Our new menu is crafted to satisfy your cold‑weather cravings and introduce you to fresh favourites. From exciting new dishes to deliciously seasonal beverages, each item is designed to spark curiosity, inspire...",
       "primaryCategory": "specials",
       "primaryCategoryLabel": "Special",
       "categories": [
@@ -8879,75 +9337,9 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
           "label": "Special",
           "terms": [
             "offer",
-            "offers",
             "promo",
             "promotion",
-            "$"
-          ]
-        },
-        {
-          "id": "menu",
-          "label": "Menu update",
-          "terms": [
-            "menu"
-          ]
-        }
-      ],
-      "matchedTerms": [
-        "offer",
-        "offers",
-        "promo",
-        "promotion",
-        "$",
-        "menu"
-      ],
-      "publishedAt": "2026-09-04T09:05:01.930Z",
-      "observedAt": "2026-09-04T11:33:11.964Z",
-      "ageDays": 0,
-      "isRecent": true,
-      "lookbackDays": 180,
-      "confidenceScore": 0.78,
-      "confidence": "official_source_page_signal",
-      "reviewState": "source_signal",
-      "associationBasis": "same_site_official_page"
-    },
-    {
-      "id": "official_page-1d390bc1294f6d7def",
-      "restaurantId": "osm-way-393886756-boston-pizza",
-      "restaurantName": "Boston Pizza",
-      "platform": "official_page",
-      "sourceFamily": "website_page",
-      "sourceLabel": "Official page",
-      "sourceKind": "official_page_html",
-      "postId": null,
-      "platformObjectId": null,
-      "profileHandle": null,
-      "profileUrl": null,
-      "feedUrl": null,
-      "postUrl": "https://bostonpizza.com/en/promotions/lunch-menu.html",
-      "mediaUrl": "https://bostonpizza.com/content/dam/bostonpizza/promotions/2026/$15-fast-lunch/Burger%20-%20Banner%205000x2115.png",
-      "thumbnailUrl": null,
-      "mediaType": null,
-      "title": "Lunch Menu | Boston Pizza",
-      "summary": "Lunch Menu | Boston Pizza Menu Promotions Locations Rewards Gift Cards FR EN ORDER NOW A FAST LUNCH DOESN'T HAVE TO MEAN FAST FOOD. GRAB LUNCH AT BOSTON PIZZA!&lt;/h1>\\r\\n\"}}\"> A FAST LUNCH DOESN'T HAVE TO MEAN FAST FOOD. GRAB LUNCH AT BOSTON PIZZA! We get it, lunch breaks are short. That's why our NEW Lunch Menu delivers within 20 minutes or your next lunch is on us!*&lt;/p>\\r\\n&lt;p class=\\\"b6-do6-banner--custom...",
-      "primaryCategory": "specials",
-      "primaryCategoryLabel": "Special",
-      "categories": [
-        {
-          "id": "specials",
-          "label": "Special",
-          "terms": [
-            "special",
-            "offer",
-            "promo",
-            "promotion"
-          ]
-        },
-        {
-          "id": "live_music",
-          "label": "Live music",
-          "terms": [
-            "band"
+            "limited time"
           ]
         },
         {
@@ -8955,80 +9347,28 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
           "label": "Menu update",
           "terms": [
             "menu",
-            "lunch menu"
-          ]
-        }
-      ],
-      "matchedTerms": [
-        "special",
-        "offer",
-        "promo",
-        "promotion",
-        "band",
-        "menu",
-        "lunch menu"
-      ],
-      "publishedAt": "2026-09-04T09:01:21.347Z",
-      "observedAt": "2026-09-04T11:33:11.451Z",
-      "ageDays": 0,
-      "isRecent": true,
-      "lookbackDays": 180,
-      "confidenceScore": 0.78,
-      "confidence": "official_source_page_signal",
-      "reviewState": "source_signal",
-      "associationBasis": "same_site_official_page"
-    },
-    {
-      "id": "official_page-a87e9f17d313eeb54b",
-      "restaurantId": "osm-way-393886756-boston-pizza",
-      "restaurantName": "Boston Pizza",
-      "platform": "official_page",
-      "sourceFamily": "website_page",
-      "sourceLabel": "Official page",
-      "sourceKind": "official_page_html",
-      "postId": null,
-      "platformObjectId": null,
-      "profileHandle": null,
-      "profileUrl": null,
-      "feedUrl": null,
-      "postUrl": "https://bostonpizza.com/en/promotions/kidscard.html",
-      "mediaUrl": "https://bostonpizza.com/content/dam/bostonpizza/promotions/2026/kids-cards/kids-01-EN-Desktop.png",
-      "thumbnailUrl": null,
-      "mediaType": null,
-      "title": "Kids Cards",
-      "summary": "Be the first to get your digital Kids Card online with the early bird sale! Remember, a $5 donation to a local charity in your community gives you 5 FREE Kids Meals. Get your Kids Card today!",
-      "primaryCategory": "specials",
-      "primaryCategoryLabel": "Special",
-      "categories": [
-        {
-          "id": "specials",
-          "label": "Special",
-          "terms": [
-            "offer",
-            "offers",
-            "promo",
-            "promotion",
-            "$"
+            "new dish"
           ]
         },
         {
-          "id": "menu",
-          "label": "Menu update",
+          "id": "seasonal",
+          "label": "Seasonal",
           "terms": [
-            "menu"
+            "seasonal"
           ]
         }
       ],
       "matchedTerms": [
         "offer",
-        "offers",
         "promo",
         "promotion",
-        "$",
-        "menu"
+        "limited time",
+        "menu",
+        "new dish",
+        "seasonal"
       ],
-      "publishedAt": "2026-09-04T09:01:07.000Z",
-      "observedAt": "2026-09-04T11:33:12.165Z",
+      "publishedAt": "2026-09-04T12:06:30.114Z",
+      "observedAt": "2026-09-04T12:52:18.672Z",
       "ageDays": 0,
       "isRecent": true,
       "lookbackDays": 180,
@@ -9100,8 +9440,75 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "lunch menu",
         "summer"
       ],
-      "publishedAt": "2026-09-04T09:01:05.627Z",
-      "observedAt": "2026-09-04T11:33:10.367Z",
+      "publishedAt": "2026-09-04T12:03:42.026Z",
+      "observedAt": "2026-09-04T12:52:18.170Z",
+      "ageDays": 0,
+      "isRecent": true,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "source_signal",
+      "associationBasis": "same_site_official_page"
+    },
+    {
+      "id": "official_page-1d390bc1294f6d7def",
+      "restaurantId": "osm-way-393886756-boston-pizza",
+      "restaurantName": "Boston Pizza",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://bostonpizza.com/en/promotions/lunch-menu.html",
+      "mediaUrl": "https://bostonpizza.com/content/dam/bostonpizza/promotions/2026/$15-fast-lunch/Burger%20-%20Banner%205000x2115.png",
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Lunch Menu | Boston Pizza",
+      "summary": "Lunch Menu | Boston Pizza Menu Promotions Locations Rewards Gift Cards FR EN ORDER NOW A FAST LUNCH DOESN'T HAVE TO MEAN FAST FOOD. GRAB LUNCH AT BOSTON PIZZA!&lt;/h1>\\r\\n\"}}\"> A FAST LUNCH DOESN'T HAVE TO MEAN FAST FOOD. GRAB LUNCH AT BOSTON PIZZA! We get it, lunch breaks are short. That's why our NEW Lunch Menu delivers within 20 minutes or your next lunch is on us!*&lt;/p>\\r\\n&lt;p class=\\\"b6-do6-banner--custom...",
+      "primaryCategory": "specials",
+      "primaryCategoryLabel": "Special",
+      "categories": [
+        {
+          "id": "specials",
+          "label": "Special",
+          "terms": [
+            "special",
+            "offer",
+            "promo",
+            "promotion"
+          ]
+        },
+        {
+          "id": "live_music",
+          "label": "Live music",
+          "terms": [
+            "band"
+          ]
+        },
+        {
+          "id": "menu",
+          "label": "Menu update",
+          "terms": [
+            "menu",
+            "lunch menu"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "special",
+        "offer",
+        "promo",
+        "promotion",
+        "band",
+        "menu",
+        "lunch menu"
+      ],
+      "publishedAt": "2026-09-04T12:03:07.685Z",
+      "observedAt": "2026-09-04T12:52:18.883Z",
       "ageDays": 0,
       "isRecent": true,
       "lookbackDays": 180,
@@ -9219,8 +9626,126 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "summer",
         "reservation"
       ],
-      "publishedAt": "2026-09-04T09:00:26.471Z",
-      "observedAt": "2026-09-04T11:33:11.699Z",
+      "publishedAt": "2026-09-04T12:02:46.828Z",
+      "observedAt": "2026-09-04T12:52:19.072Z",
+      "ageDays": 0,
+      "isRecent": true,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "source_signal",
+      "associationBasis": "same_site_official_page"
+    },
+    {
+      "id": "official_page-a87e9f17d313eeb54b",
+      "restaurantId": "osm-way-393886756-boston-pizza",
+      "restaurantName": "Boston Pizza",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://bostonpizza.com/en/promotions/kidscard.html",
+      "mediaUrl": "https://bostonpizza.com/content/dam/bostonpizza/promotions/2026/kids-cards/kids-01-EN-Desktop.png",
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Kids Cards",
+      "summary": "Be the first to get your digital Kids Card online with the early bird sale! Remember, a $5 donation to a local charity in your community gives you 5 FREE Kids Meals. Get your Kids Card today!",
+      "primaryCategory": "specials",
+      "primaryCategoryLabel": "Special",
+      "categories": [
+        {
+          "id": "specials",
+          "label": "Special",
+          "terms": [
+            "offer",
+            "offers",
+            "promo",
+            "promotion",
+            "$"
+          ]
+        },
+        {
+          "id": "menu",
+          "label": "Menu update",
+          "terms": [
+            "menu"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "offer",
+        "offers",
+        "promo",
+        "promotion",
+        "$",
+        "menu"
+      ],
+      "publishedAt": "2026-09-04T12:00:20.108Z",
+      "observedAt": "2026-09-04T12:52:19.489Z",
+      "ageDays": 0,
+      "isRecent": true,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "source_signal",
+      "associationBasis": "same_site_official_page"
+    },
+    {
+      "id": "official_page-7c9bdebe43b8027631",
+      "restaurantId": "osm-way-393886756-boston-pizza",
+      "restaurantName": "Boston Pizza",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://bostonpizza.com/en/promotions/kids-eat-free.html",
+      "mediaUrl": "https://bostonpizza.com/content/dam/bostonpizza/promotions/2026/kids-eat-free/Kids-Eat-Free-Desktop_EN.jpg",
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Kids Eat Free | Boston Pizza",
+      "summary": "Kids Eat Free | Boston Pizza Menu Promotions Locations Rewards Gift Cards FR EN ORDER NOW CALLING ALL PARENTS!&lt;/p>\\r\\n&lt;p class=\\\"b6-do6-banner--custom-text bp-do6-banner--text-size-24--bold\\\">The back-to-school rush is on, but dinner just got easier! Hang up the aprons and head over to Boston Pizza 'cause KIDS EAT FREE all September long with a $16 minimum spend per free Kids Meal. That's right: your kids wi...",
+      "primaryCategory": "specials",
+      "primaryCategoryLabel": "Special",
+      "categories": [
+        {
+          "id": "specials",
+          "label": "Special",
+          "terms": [
+            "offer",
+            "offers",
+            "promo",
+            "promotion",
+            "$"
+          ]
+        },
+        {
+          "id": "menu",
+          "label": "Menu update",
+          "terms": [
+            "menu"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "offer",
+        "offers",
+        "promo",
+        "promotion",
+        "$",
+        "menu"
+      ],
+      "publishedAt": "2026-09-04T12:00:17.854Z",
+      "observedAt": "2026-09-04T12:52:19.303Z",
       "ageDays": 0,
       "isRecent": true,
       "lookbackDays": 180,
@@ -9316,8 +9841,8 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "lunch menu",
         "summer"
       ],
-      "publishedAt": "2026-09-04T09:00:17.380Z",
-      "observedAt": "2026-09-04T11:33:10.077Z",
+      "publishedAt": "2026-09-04T12:00:16.127Z",
+      "observedAt": "2026-09-04T12:52:17.869Z",
       "ageDays": 0,
       "isRecent": true,
       "lookbackDays": 180,
@@ -9325,6 +9850,178 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
       "confidence": "official_source_page_signal",
       "reviewState": "source_signal",
       "associationBasis": "same_site_official_page"
+    },
+    {
+      "id": "official_page-fbf6a2ca82320f5fd1",
+      "restaurantId": "osm-node-11612206582-swaad-sagaa-indian-cuisine-incorporated",
+      "restaurantName": "Swaad Sagaa Indian Cuisine Incorporated",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://def.uber.com/en/challenge?from_service=d2ViLWVhdHMtdjI%3D&q=YzJiZWZjODc2MDgzZmE5Y2YxOTFmZmE0YzQzMDM1ZGI6c2FRU2lXMFZZTHFXL3VtMDpiY0dUVEVCSWxqOHY0Qldoak43eHZPMWtqRmpHNjd6NXBUaEVnOWZWSFB2SWdiZDBCNGxDYWNaZU9BY3d2S2Y3VmdnTFd3RVVTdkNWNEU1SDQ4Y09SVmFuSFV2ZXp4ckhGZmU5YXkzSG4xWVN6dUFrZzlzM3NqZ25vQmlOZTNkTXlIYVRvRUxxTVJOQldKSWxWcVBjNnM5UVN0ajhlUkFvNVNHTTdZRnVuM3hsdklpcEtnZXVqR2JPYUtsbHBOM3V3R2d5NWtLSVVMYytZdHZTUXllSzJOK0NsZUpOYmk2a1BqMUgydVpISFhFa2lhV1R6TEl6RzVjaERBSTh5OHdXVy85OW9sMjZJR1VnNDZZbVluNC9KN3VWT0swSFZFRFF1NGpJMXpJeW5iMjlTeWlDVVhySklsNFBydENuWXlXQWwyZ29LSFZ0WUxQcEtnbU1HVjV2VWRFbW4rZDRRSzNUc2hsbnVlUmtyNkVZVjh3Z3EwK2V1K3owUDV3aHhLclJrVGh5T1ljS3l1eTNiUT09OldzVXlxekVTZ2lpa2E2eG45aFh3Wnc9PQ%3D%3D",
+      "mediaUrl": null,
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Official page update",
+      "summary": "Official page update",
+      "primaryCategory": "live_music",
+      "primaryCategoryLabel": "Live music",
+      "categories": [
+        {
+          "id": "live_music",
+          "label": "Live music",
+          "terms": [
+            "dj"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "dj"
+      ],
+      "publishedAt": null,
+      "observedAt": "2026-09-04T11:33:11.192Z",
+      "ageDays": null,
+      "isRecent": false,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "needs_date_review",
+      "associationBasis": "official_site_linked_page"
+    },
+    {
+      "id": "official_page-857b81a836e61eb244",
+      "restaurantId": "osm-node-9128392205-king-of-donair",
+      "restaurantName": "King of Donair",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://def.uber.com/en/challenge?from_service=d2ViLWVhdHMtdjI%3D&q=YWE1ZjJhYzEyN2MxYjVlN2RlNmY3Yzg3ZjQxYTI1MjA6bkxFUEptTUFUa092clFiRDpkY0ZIR3J5WWlIVHBCeUtadnR2a3NrdGF6TXhSTHlROG1mVUFpYUcvNVlNYWplcE1XMk9ILzhVSGtnUnB6N1kvRUtnWlQ5Z0pFOUNuKzA0UnlsZk1QQkNicVZ6WHJMSU1sSWR1YU93ZldzL1pnMSs5czVNTzhjODBIbWN1d2Y5ZFJmZG5lb3NxUEdVb01KZVl4K2dwYnlCRm5Wd0Q3WnlVVVlTbldMT2kzT2taZ2psRCtGQVd4ZWxXVk04YldjT3JRbSt4WkNCTXRvU0QwZ3BIU0Fvd0J3T3RVd0tWVmgrU1VrcmpsUDFFcEtlZklGUUd5UHBOVng3WkcvejlCa2xLZ2l3bEhPUlRLUEtxTHVNYUhPMG9OMlREckoxNzpHb0hkdU93eUlWcUJad1BMdTFrazhRPT0%3D",
+      "mediaUrl": null,
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Official page update",
+      "summary": "Official page update",
+      "primaryCategory": "live_music",
+      "primaryCategoryLabel": "Live music",
+      "categories": [
+        {
+          "id": "live_music",
+          "label": "Live music",
+          "terms": [
+            "dj"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "dj"
+      ],
+      "publishedAt": null,
+      "observedAt": "2026-09-04T11:33:09.717Z",
+      "ageDays": null,
+      "isRecent": false,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "needs_date_review",
+      "associationBasis": "official_site_linked_page"
+    },
+    {
+      "id": "official_page-454e8334e3c4e15ef8",
+      "restaurantId": "osm-node-3104142670-king-of-donair",
+      "restaurantName": "King of Donair",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://def.uber.com/en/challenge?from_service=d2ViLWVhdHMtdjI%3D&q=Mjg3MDY0YjUwNGI2ZThjNTlhNWYzOWIwZDg0OGViNzg6Um1uRFVqTm9SOFNMNlNGTDpSZlNnaEJpeXB0WXFiNTNNeTZ4YUgxS3BlZ29zK093N1JvS2FKdE54YmZ4TThSaXcvbSt2RHJWc1pTVE9wZjF5U21iakNIbDVUNUpNNVZLWmRLcDRyUzI2QldtWkZUNTN1U0pTeSsxbDBMWjFWUXo5SmpaM2V0cGZkMFJXeDJ3dTJJaXpzZWdhYmlTWk9xNmJpd0tYcWRtQ2dNLzNtWE84RUdjSmtDUTF3ZTJ1NjFPY2Z3dFFGb3JPK210RUJiUWpPRUhoK0FCZHRlclNmNGErNTM3NXo3a2srdS9YaWkrQmYzVDVsemwwZHpkeWpVM2JOeDV1M08ra1hIT256aUFpTTFlU2paWUlxcHVDWEc2OE5uZENBeGFPNTF0azpKNERXR3BXMmFjRHJ6eXZreEZ5VDZ3PT0%3D",
+      "mediaUrl": null,
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Official page update",
+      "summary": "Official page update",
+      "primaryCategory": "live_music",
+      "primaryCategoryLabel": "Live music",
+      "categories": [
+        {
+          "id": "live_music",
+          "label": "Live music",
+          "terms": [
+            "dj"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "dj"
+      ],
+      "publishedAt": null,
+      "observedAt": "2026-09-04T11:33:09.100Z",
+      "ageDays": null,
+      "isRecent": false,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "needs_date_review",
+      "associationBasis": "official_site_linked_page"
+    },
+    {
+      "id": "official_page-78dd9fe0e9f8d20125",
+      "restaurantId": "osm-node-8600605850-barburrito",
+      "restaurantName": "BarBurrito",
+      "platform": "official_page",
+      "sourceFamily": "website_page",
+      "sourceLabel": "Official page",
+      "sourceKind": "official_page_html",
+      "postId": null,
+      "platformObjectId": null,
+      "profileHandle": null,
+      "profileUrl": null,
+      "feedUrl": null,
+      "postUrl": "https://def.uber.com/en/challenge?from_service=d2ViLWVhdHMtdjI%3D&q=YzQzYTM4MTJhYmZmNmM3MTUyZGUwOGRhZTk0NjViZmM6ZVZjb2N1a0U1a0FqOU56SzpuTWd6ajlsNlFwVDZHZjZTM09vcjNKaVpCZ05ka21acGJ2VWpxRTlDWk9UT241aWdIYW5uMTVMd1Q3d0VhL3VLN000VDhXN1VwRlU4ZEtUYmtmejhPS0xqYTNzZXgzcVkzSGgzeU5GcVVETk1qUmloeFVCdXVmVUtOWng0SHAzVUtqd0ExNEVqWTF2Mk96VDZ3b1VqM0lxdzQ4T1ZsclVhWkFaT3UzRjhmTEhHUGpzeGp4Y2FaTTBHTXNZUDRVcFVFNDZ4SjNSd2ZnQ3pxYWU3K3hPQlVlVkw3N0xDSm8rSnprRDh0dTlnT1Z2ckMwdVZoNFZPNnExMUhYM05FTVJrRllnRjhodXcwd2szYlFHbHRrTFdBUnBZTFgyV3ZLdFduR0swQ0YrWS9CR0VMQWVyRGczcmoxUzUrVjVkekszdDVCa3VZYWdTbHRNTXo3aDYzMThxTnplOVJPMTM4aTdkeEVtK0pjTnNFU1dDUEg3bU9wc3EybWJudFRsWk5PQW11UkNxM25RbnltSURHRllaM1huZXJOcUZrengzWmdPZjd0SHRSQXEwZ05NdmQ3T3hKbHpwbGgvNmZOVTBDT24zOEMvRUdURThTbFJOa0c1aFQwTkJpdTBwQzBkY0VWeVUzaS83ODdMUGlqUCtTYkNqaFA0emZjR0Nlc1VVbnhrU0Q3cllDMExWTS9iYjZQNjhLY0Q1QUt1S01HSythMmdBN054QkE1S09xOXNVOXFEdFRoMFpwNVFaRDZpbmtRMGhFQjlzL2hONzFJQWp5aC9VaVgybEd5U3U5eE51eWNKbVFmdWcwV0RnYkNOMjI2VTN0QWVYY0JQQTVueUpBWDRPUE4wQWwzaWZtelhqcnBnaEI3Sk9PbjFlOUdjbFBDdzBFRnRNd0xiOTB2SE0yUmdLTEhrMTZuMUIxSWN4aEJGUTdtVkUyUkllc2EwYlYzN2MxN1hzOldPcWtRK0NTeklnZE55WEhIdnNiYnc9PQ%3D%3D",
+      "mediaUrl": null,
+      "thumbnailUrl": null,
+      "mediaType": null,
+      "title": "Official page update",
+      "summary": "Official page update",
+      "primaryCategory": "live_music",
+      "primaryCategoryLabel": "Live music",
+      "categories": [
+        {
+          "id": "live_music",
+          "label": "Live music",
+          "terms": [
+            "dj"
+          ]
+        }
+      ],
+      "matchedTerms": [
+        "dj"
+      ],
+      "publishedAt": null,
+      "observedAt": "2026-09-04T11:33:07.687Z",
+      "ageDays": null,
+      "isRecent": false,
+      "lookbackDays": 180,
+      "confidenceScore": 0.78,
+      "confidence": "official_source_page_signal",
+      "reviewState": "needs_date_review",
+      "associationBasis": "official_site_linked_page"
     },
     {
       "id": "official_page-75026915bcb34039e9",
@@ -9388,8 +10085,8 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "holiday"
       ],
       "publishedAt": "2026-09-04T00:00:00.000Z",
-      "observedAt": "2026-09-04T11:33:58.085Z",
-      "ageDays": 0,
+      "observedAt": "2026-09-04T12:52:58.411Z",
+      "ageDays": 1,
       "isRecent": true,
       "lookbackDays": 180,
       "confidenceScore": 0.78,
@@ -9780,7 +10477,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "seasonal"
       ],
       "publishedAt": "2026-09-02T21:56:31.000Z",
-      "observedAt": "2026-09-04T11:33:18.814Z",
+      "observedAt": "2026-09-04T12:52:25.646Z",
       "ageDays": 2,
       "isRecent": true,
       "lookbackDays": 180,
@@ -9813,7 +10510,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
       "categories": [],
       "matchedTerms": [],
       "publishedAt": "2026-09-02T17:13:14.000Z",
-      "observedAt": "2026-09-04T11:32:36.137Z",
+      "observedAt": "2026-09-04T12:52:12.143Z",
       "ageDays": 2,
       "isRecent": true,
       "lookbackDays": 180,
@@ -10181,7 +10878,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
       "categories": [],
       "matchedTerms": [],
       "publishedAt": "2026-09-01T14:22:55.000Z",
-      "observedAt": "2026-09-04T11:32:36.137Z",
+      "observedAt": "2026-09-04T12:52:12.143Z",
       "ageDays": 3,
       "isRecent": true,
       "lookbackDays": 180,
@@ -10242,8 +10939,8 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "menu"
       ],
       "publishedAt": "2026-09-01T00:00:00.000Z",
-      "observedAt": "2026-09-04T11:34:19.419Z",
-      "ageDays": 3,
+      "observedAt": "2026-09-04T12:53:21.236Z",
+      "ageDays": 4,
       "isRecent": true,
       "lookbackDays": 180,
       "confidenceScore": 0.78,
@@ -10337,7 +11034,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "reservations"
       ],
       "publishedAt": "2026-08-24T15:19:51.000Z",
-      "observedAt": "2026-09-04T11:33:19.598Z",
+      "observedAt": "2026-09-04T12:52:26.300Z",
       "ageDays": 11,
       "isRecent": true,
       "lookbackDays": 180,
@@ -10406,7 +11103,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "reservations"
       ],
       "publishedAt": "2026-08-21T18:25:44.000Z",
-      "observedAt": "2026-09-04T11:33:42.073Z",
+      "observedAt": "2026-09-04T12:52:44.033Z",
       "ageDays": 14,
       "isRecent": true,
       "lookbackDays": 180,
@@ -10501,7 +11198,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "reservation"
       ],
       "publishedAt": "2026-08-19T17:17:56.000Z",
-      "observedAt": "2026-09-04T11:34:00.445Z",
+      "observedAt": "2026-09-04T12:53:01.404Z",
       "ageDays": 16,
       "isRecent": true,
       "lookbackDays": 180,
@@ -10582,7 +11279,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "reservation"
       ],
       "publishedAt": "2026-08-19T01:06:31.000Z",
-      "observedAt": "2026-09-04T11:34:15.671Z",
+      "observedAt": "2026-09-04T12:53:16.590Z",
       "ageDays": 16,
       "isRecent": true,
       "lookbackDays": 180,
@@ -10663,7 +11360,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "reservation"
       ],
       "publishedAt": "2026-08-19T01:06:31.000Z",
-      "observedAt": "2026-09-04T11:34:30.996Z",
+      "observedAt": "2026-09-04T12:53:30.751Z",
       "ageDays": 16,
       "isRecent": true,
       "lookbackDays": 180,
@@ -10760,7 +11457,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "reservation"
       ],
       "publishedAt": "2026-08-17T15:11:30.000Z",
-      "observedAt": "2026-09-04T11:33:52.482Z",
+      "observedAt": "2026-09-04T12:52:53.578Z",
       "ageDays": 18,
       "isRecent": true,
       "lookbackDays": 180,
@@ -10825,7 +11522,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "menu"
       ],
       "publishedAt": "2026-08-17T11:22:21.000Z",
-      "observedAt": "2026-09-04T11:33:32.787Z",
+      "observedAt": "2026-09-04T12:52:35.460Z",
       "ageDays": 18,
       "isRecent": true,
       "lookbackDays": 180,
@@ -10922,7 +11619,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "seasonal"
       ],
       "publishedAt": "2026-08-14T15:19:26.000Z",
-      "observedAt": "2026-09-04T11:34:07.740Z",
+      "observedAt": "2026-09-04T12:53:09.706Z",
       "ageDays": 21,
       "isRecent": true,
       "lookbackDays": 180,
@@ -10995,8 +11692,8 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "reservation"
       ],
       "publishedAt": "2026-08-08T00:39:08.000Z",
-      "observedAt": "2026-09-04T11:34:06.960Z",
-      "ageDays": 27,
+      "observedAt": "2026-09-04T12:53:08.287Z",
+      "ageDays": 28,
       "isRecent": true,
       "lookbackDays": 180,
       "confidenceScore": 0.78,
@@ -11068,8 +11765,8 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "reservation"
       ],
       "publishedAt": "2026-08-08T00:39:08.000Z",
-      "observedAt": "2026-09-04T11:34:21.753Z",
-      "ageDays": 27,
+      "observedAt": "2026-09-04T12:53:21.791Z",
+      "ageDays": 28,
       "isRecent": true,
       "lookbackDays": 180,
       "confidenceScore": 0.78,
@@ -11155,7 +11852,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "reservation"
       ],
       "publishedAt": "2026-08-04T15:03:58.000Z",
-      "observedAt": "2026-09-04T11:33:48.355Z",
+      "observedAt": "2026-09-04T12:52:47.562Z",
       "ageDays": 31,
       "isRecent": true,
       "lookbackDays": 180,
@@ -11208,7 +11905,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "events"
       ],
       "publishedAt": "2026-08-03T22:08:44.000Z",
-      "observedAt": "2026-09-04T11:33:28.377Z",
+      "observedAt": "2026-09-04T12:52:32.104Z",
       "ageDays": 32,
       "isRecent": true,
       "lookbackDays": 180,
@@ -11263,7 +11960,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "$"
       ],
       "publishedAt": "2026-08-01T19:14:27.870473+00:00",
-      "observedAt": "2026-09-03T20:01:16.791Z",
+      "observedAt": "2026-09-04T12:46:37.916Z",
       "ageDays": 34,
       "isRecent": true,
       "lookbackDays": 180,
@@ -11318,7 +12015,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "$"
       ],
       "publishedAt": "2026-08-01T19:14:27.870473+00:00",
-      "observedAt": "2026-09-03T20:01:16.791Z",
+      "observedAt": "2026-09-04T12:46:37.916Z",
       "ageDays": 34,
       "isRecent": true,
       "lookbackDays": 180,
@@ -11371,7 +12068,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "$"
       ],
       "publishedAt": "2026-08-01T19:14:27.870473+00:00",
-      "observedAt": "2026-09-03T20:01:16.791Z",
+      "observedAt": "2026-09-04T12:46:37.916Z",
       "ageDays": 34,
       "isRecent": true,
       "lookbackDays": 180,
@@ -11418,7 +12115,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "happy hour"
       ],
       "publishedAt": "2026-08-01T19:14:27.870473+00:00",
-      "observedAt": "2026-09-03T20:01:16.791Z",
+      "observedAt": "2026-09-04T12:46:37.916Z",
       "ageDays": 34,
       "isRecent": true,
       "lookbackDays": 180,
@@ -11473,7 +12170,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "$"
       ],
       "publishedAt": "2026-08-01T19:14:27.870473+00:00",
-      "observedAt": "2026-09-03T20:01:16.791Z",
+      "observedAt": "2026-09-04T12:46:37.916Z",
       "ageDays": 34,
       "isRecent": true,
       "lookbackDays": 180,
@@ -11528,7 +12225,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "$"
       ],
       "publishedAt": "2026-08-01T19:14:27.870473+00:00",
-      "observedAt": "2026-09-03T20:01:16.791Z",
+      "observedAt": "2026-09-04T12:46:37.916Z",
       "ageDays": 34,
       "isRecent": true,
       "lookbackDays": 180,
@@ -11583,7 +12280,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "$"
       ],
       "publishedAt": "2026-08-01T19:14:27.870473+00:00",
-      "observedAt": "2026-09-03T20:01:16.791Z",
+      "observedAt": "2026-09-04T12:46:37.916Z",
       "ageDays": 34,
       "isRecent": true,
       "lookbackDays": 180,
@@ -11638,7 +12335,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "$"
       ],
       "publishedAt": "2026-08-01T19:14:27.870473+00:00",
-      "observedAt": "2026-09-03T20:01:16.791Z",
+      "observedAt": "2026-09-04T12:46:37.916Z",
       "ageDays": 34,
       "isRecent": true,
       "lookbackDays": 180,
@@ -11693,7 +12390,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "$"
       ],
       "publishedAt": "2026-08-01T19:14:27.870473+00:00",
-      "observedAt": "2026-09-03T20:01:16.791Z",
+      "observedAt": "2026-09-04T12:46:37.916Z",
       "ageDays": 34,
       "isRecent": true,
       "lookbackDays": 180,
@@ -11748,7 +12445,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "$"
       ],
       "publishedAt": "2026-08-01T19:14:27.870473+00:00",
-      "observedAt": "2026-09-03T20:01:16.791Z",
+      "observedAt": "2026-09-04T12:46:37.916Z",
       "ageDays": 34,
       "isRecent": true,
       "lookbackDays": 180,
@@ -11803,7 +12500,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "$"
       ],
       "publishedAt": "2026-08-01T19:14:27.870473+00:00",
-      "observedAt": "2026-09-03T20:01:16.791Z",
+      "observedAt": "2026-09-04T12:46:37.916Z",
       "ageDays": 34,
       "isRecent": true,
       "lookbackDays": 180,
@@ -11850,7 +12547,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "happy hour"
       ],
       "publishedAt": "2026-08-01T19:14:27.870473+00:00",
-      "observedAt": "2026-09-03T20:01:16.791Z",
+      "observedAt": "2026-09-04T12:46:37.916Z",
       "ageDays": 34,
       "isRecent": true,
       "lookbackDays": 180,
@@ -11905,7 +12602,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "menu"
       ],
       "publishedAt": "2026-08-01T19:14:27.870473+00:00",
-      "observedAt": "2026-09-03T20:01:16.791Z",
+      "observedAt": "2026-09-04T12:46:37.916Z",
       "ageDays": 34,
       "isRecent": true,
       "lookbackDays": 180,
@@ -11964,7 +12661,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "specials"
       ],
       "publishedAt": "2026-08-01T19:14:27.870473+00:00",
-      "observedAt": "2026-09-03T20:01:16.791Z",
+      "observedAt": "2026-09-04T12:46:37.916Z",
       "ageDays": 34,
       "isRecent": true,
       "lookbackDays": 180,
@@ -12009,7 +12706,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "oyster_special"
       ],
       "publishedAt": "2026-08-01T19:14:27.870473+00:00",
-      "observedAt": "2026-09-03T20:01:16.791Z",
+      "observedAt": "2026-09-04T12:46:37.916Z",
       "ageDays": 34,
       "isRecent": true,
       "lookbackDays": 180,
@@ -12072,7 +12769,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "menu"
       ],
       "publishedAt": "2026-08-01T19:14:27.870473+00:00",
-      "observedAt": "2026-09-03T20:01:16.791Z",
+      "observedAt": "2026-09-04T12:46:37.916Z",
       "ageDays": 34,
       "isRecent": true,
       "lookbackDays": 180,
@@ -12129,7 +12826,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "specials"
       ],
       "publishedAt": "2026-08-01T19:14:27.870473+00:00",
-      "observedAt": "2026-09-03T20:01:16.791Z",
+      "observedAt": "2026-09-04T12:46:37.916Z",
       "ageDays": 34,
       "isRecent": true,
       "lookbackDays": 180,
@@ -12184,7 +12881,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "$"
       ],
       "publishedAt": "2026-08-01T19:14:27.870473+00:00",
-      "observedAt": "2026-09-03T20:01:16.791Z",
+      "observedAt": "2026-09-04T12:46:37.916Z",
       "ageDays": 34,
       "isRecent": true,
       "lookbackDays": 180,
@@ -12239,7 +12936,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "$"
       ],
       "publishedAt": "2026-08-01T19:14:27.870473+00:00",
-      "observedAt": "2026-09-03T20:01:16.791Z",
+      "observedAt": "2026-09-04T12:46:37.916Z",
       "ageDays": 34,
       "isRecent": true,
       "lookbackDays": 180,
@@ -12286,7 +12983,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "happy hour"
       ],
       "publishedAt": "2026-08-01T19:14:27.870473+00:00",
-      "observedAt": "2026-09-03T20:01:16.791Z",
+      "observedAt": "2026-09-04T12:46:37.916Z",
       "ageDays": 34,
       "isRecent": true,
       "lookbackDays": 180,
@@ -12341,7 +13038,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "$"
       ],
       "publishedAt": "2026-08-01T19:14:27.870473+00:00",
-      "observedAt": "2026-09-03T20:01:16.791Z",
+      "observedAt": "2026-09-04T12:46:37.916Z",
       "ageDays": 34,
       "isRecent": true,
       "lookbackDays": 180,
@@ -12396,7 +13093,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "$"
       ],
       "publishedAt": "2026-08-01T19:14:27.870473+00:00",
-      "observedAt": "2026-09-03T20:01:16.791Z",
+      "observedAt": "2026-09-04T12:46:37.916Z",
       "ageDays": 34,
       "isRecent": true,
       "lookbackDays": 180,
@@ -12443,7 +13140,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "happy hour"
       ],
       "publishedAt": "2026-08-01T19:14:27.870473+00:00",
-      "observedAt": "2026-09-03T20:01:16.791Z",
+      "observedAt": "2026-09-04T12:46:37.916Z",
       "ageDays": 34,
       "isRecent": true,
       "lookbackDays": 180,
@@ -12498,7 +13195,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "$"
       ],
       "publishedAt": "2026-08-01T19:14:27.870473+00:00",
-      "observedAt": "2026-09-03T20:01:16.791Z",
+      "observedAt": "2026-09-04T12:46:37.916Z",
       "ageDays": 34,
       "isRecent": true,
       "lookbackDays": 180,
@@ -12571,7 +13268,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "book a table"
       ],
       "publishedAt": "2026-07-31T20:36:37.000Z",
-      "observedAt": "2026-09-04T11:34:27.567Z",
+      "observedAt": "2026-09-04T12:53:26.370Z",
       "ageDays": 35,
       "isRecent": true,
       "lookbackDays": 180,
@@ -12646,7 +13343,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "book a table"
       ],
       "publishedAt": "2026-07-31T20:35:05.000Z",
-      "observedAt": "2026-09-04T11:34:20.854Z",
+      "observedAt": "2026-09-04T12:53:21.087Z",
       "ageDays": 35,
       "isRecent": true,
       "lookbackDays": 180,
@@ -12743,7 +13440,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "reservation"
       ],
       "publishedAt": "2026-07-31T17:57:08.000Z",
-      "observedAt": "2026-09-04T11:33:56.485Z",
+      "observedAt": "2026-09-04T12:52:57.476Z",
       "ageDays": 35,
       "isRecent": true,
       "lookbackDays": 180,
@@ -12794,7 +13491,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "menu"
       ],
       "publishedAt": "2026-07-30T07:55:33.000Z",
-      "observedAt": "2026-09-04T11:33:58.341Z",
+      "observedAt": "2026-09-04T12:52:59.437Z",
       "ageDays": 36,
       "isRecent": true,
       "lookbackDays": 180,
@@ -12867,7 +13564,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "summer"
       ],
       "publishedAt": "2026-07-29T17:04:44.000Z",
-      "observedAt": "2026-09-04T11:33:33.876Z",
+      "observedAt": "2026-09-04T12:52:37.309Z",
       "ageDays": 37,
       "isRecent": true,
       "lookbackDays": 180,
@@ -12924,7 +13621,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "menu"
       ],
       "publishedAt": "2026-07-28T08:47:42.000Z",
-      "observedAt": "2026-09-04T11:33:58.150Z",
+      "observedAt": "2026-09-04T12:52:59.256Z",
       "ageDays": 38,
       "isRecent": true,
       "lookbackDays": 180,
@@ -12981,7 +13678,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "menu"
       ],
       "publishedAt": "2026-07-27T16:47:17.000Z",
-      "observedAt": "2026-09-04T11:33:30.180Z",
+      "observedAt": "2026-09-04T12:52:33.632Z",
       "ageDays": 39,
       "isRecent": true,
       "lookbackDays": 180,
@@ -13072,7 +13769,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "reservations"
       ],
       "publishedAt": "2026-07-22T17:22:20.000Z",
-      "observedAt": "2026-09-04T11:33:17.734Z",
+      "observedAt": "2026-09-04T12:52:24.521Z",
       "ageDays": 44,
       "isRecent": true,
       "lookbackDays": 180,
@@ -13161,7 +13858,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "reservations"
       ],
       "publishedAt": "2026-07-21T19:23:27.000Z",
-      "observedAt": "2026-09-04T11:33:20.675Z",
+      "observedAt": "2026-09-04T12:52:26.884Z",
       "ageDays": 45,
       "isRecent": true,
       "lookbackDays": 180,
@@ -13204,7 +13901,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "$"
       ],
       "publishedAt": "2026-07-17T13:48:16.000Z",
-      "observedAt": "2026-09-04T11:32:40.203Z",
+      "observedAt": "2026-09-04T12:52:14.164Z",
       "ageDays": 49,
       "isRecent": true,
       "lookbackDays": 180,
@@ -13293,7 +13990,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "patio"
       ],
       "publishedAt": "2026-07-15T18:57:22.000Z",
-      "observedAt": "2026-09-04T11:33:17.899Z",
+      "observedAt": "2026-09-04T12:52:24.969Z",
       "ageDays": 51,
       "isRecent": true,
       "lookbackDays": 180,
@@ -13382,7 +14079,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "patio"
       ],
       "publishedAt": "2026-07-15T18:57:22.000Z",
-      "observedAt": "2026-09-04T11:33:19.233Z",
+      "observedAt": "2026-09-04T12:52:26.015Z",
       "ageDays": 51,
       "isRecent": true,
       "lookbackDays": 180,
@@ -13471,7 +14168,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "patio"
       ],
       "publishedAt": "2026-07-15T18:57:22.000Z",
-      "observedAt": "2026-09-04T11:33:20.014Z",
+      "observedAt": "2026-09-04T12:52:26.598Z",
       "ageDays": 51,
       "isRecent": true,
       "lookbackDays": 180,
@@ -13560,7 +14257,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "patio"
       ],
       "publishedAt": "2026-07-15T18:57:22.000Z",
-      "observedAt": "2026-09-04T11:33:21.249Z",
+      "observedAt": "2026-09-04T12:52:27.242Z",
       "ageDays": 51,
       "isRecent": true,
       "lookbackDays": 180,
@@ -13649,7 +14346,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "patio"
       ],
       "publishedAt": "2026-07-15T18:57:22.000Z",
-      "observedAt": "2026-09-04T11:33:22.080Z",
+      "observedAt": "2026-09-04T12:52:27.904Z",
       "ageDays": 51,
       "isRecent": true,
       "lookbackDays": 180,
@@ -13748,7 +14445,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "christmas"
       ],
       "publishedAt": "2026-07-13T15:57:11.000Z",
-      "observedAt": "2026-09-04T11:33:21.662Z",
+      "observedAt": "2026-09-04T12:52:27.536Z",
       "ageDays": 53,
       "isRecent": true,
       "lookbackDays": 180,
@@ -13809,7 +14506,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "show"
       ],
       "publishedAt": "2026-07-09T14:59:52.000Z",
-      "observedAt": "2026-09-04T11:33:28.642Z",
+      "observedAt": "2026-09-04T12:52:32.235Z",
       "ageDays": 57,
       "isRecent": true,
       "lookbackDays": 180,
@@ -13880,7 +14577,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "book a table"
       ],
       "publishedAt": "2026-07-07T17:38:15.000Z",
-      "observedAt": "2026-09-04T11:34:23.934Z",
+      "observedAt": "2026-09-04T12:53:23.803Z",
       "ageDays": 59,
       "isRecent": true,
       "lookbackDays": 180,
@@ -13963,8 +14660,8 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "reservation"
       ],
       "publishedAt": "2026-06-30T00:24:18.000Z",
-      "observedAt": "2026-09-04T11:33:05.081Z",
-      "ageDays": 66,
+      "observedAt": "2026-09-04T12:52:12.313Z",
+      "ageDays": 67,
       "isRecent": true,
       "lookbackDays": 180,
       "confidenceScore": 0.78,
@@ -14042,7 +14739,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "breakfast"
       ],
       "publishedAt": "2026-06-29T22:58:52.000Z",
-      "observedAt": "2026-09-04T11:33:32.788Z",
+      "observedAt": "2026-09-04T12:52:35.460Z",
       "ageDays": 67,
       "isRecent": true,
       "lookbackDays": 180,
@@ -14117,7 +14814,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "mimosa"
       ],
       "publishedAt": "2026-06-28T15:59:24.000Z",
-      "observedAt": "2026-09-04T11:34:12.337Z",
+      "observedAt": "2026-09-04T12:53:14.057Z",
       "ageDays": 68,
       "isRecent": true,
       "lookbackDays": 180,
@@ -14178,7 +14875,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "breakfast"
       ],
       "publishedAt": "2026-06-28T15:58:30.000Z",
-      "observedAt": "2026-09-04T11:34:08.476Z",
+      "observedAt": "2026-09-04T12:53:10.433Z",
       "ageDays": 68,
       "isRecent": true,
       "lookbackDays": 180,
@@ -14229,7 +14926,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "coming soon"
       ],
       "publishedAt": "2026-06-11T18:03:33.000Z",
-      "observedAt": "2026-09-04T11:33:05.748Z",
+      "observedAt": "2026-09-04T12:52:12.906Z",
       "ageDays": 85,
       "isRecent": true,
       "lookbackDays": 180,
@@ -14294,7 +14991,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "book a table"
       ],
       "publishedAt": "2026-06-11T13:42:17.000Z",
-      "observedAt": "2026-09-04T11:34:14.618Z",
+      "observedAt": "2026-09-04T12:53:16.014Z",
       "ageDays": 85,
       "isRecent": true,
       "lookbackDays": 180,
@@ -14367,7 +15064,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "summer"
       ],
       "publishedAt": "2026-06-03T17:09:29.000Z",
-      "observedAt": "2026-09-04T11:33:56.985Z",
+      "observedAt": "2026-09-04T12:52:57.292Z",
       "ageDays": 93,
       "isRecent": true,
       "lookbackDays": 180,
@@ -14442,7 +15139,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "seasonal"
       ],
       "publishedAt": "2026-06-02T13:53:40.000Z",
-      "observedAt": "2026-09-04T11:33:57.019Z",
+      "observedAt": "2026-09-04T12:52:57.792Z",
       "ageDays": 94,
       "isRecent": true,
       "lookbackDays": 180,
@@ -14517,7 +15214,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "menu"
       ],
       "publishedAt": "2026-05-26T20:05:05.000Z",
-      "observedAt": "2026-09-04T11:33:32.110Z",
+      "observedAt": "2026-09-04T12:52:34.816Z",
       "ageDays": 101,
       "isRecent": true,
       "lookbackDays": 180,
@@ -14564,8 +15261,8 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "$"
       ],
       "publishedAt": "2026-05-21",
-      "observedAt": "2026-09-03T20:01:16.791Z",
-      "ageDays": 106,
+      "observedAt": "2026-09-04T12:46:37.916Z",
+      "ageDays": 107,
       "isRecent": true,
       "lookbackDays": 180,
       "confidenceScore": 0.7,
@@ -14611,8 +15308,8 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "$"
       ],
       "publishedAt": "2026-05-21",
-      "observedAt": "2026-09-03T20:01:16.791Z",
-      "ageDays": 106,
+      "observedAt": "2026-09-04T12:46:37.916Z",
+      "ageDays": 107,
       "isRecent": true,
       "lookbackDays": 180,
       "confidenceScore": 0.7,
@@ -14658,8 +15355,8 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "$"
       ],
       "publishedAt": "2026-05-21",
-      "observedAt": "2026-09-03T20:01:16.791Z",
-      "ageDays": 106,
+      "observedAt": "2026-09-04T12:46:37.916Z",
+      "ageDays": 107,
       "isRecent": true,
       "lookbackDays": 180,
       "confidenceScore": 0.7,
@@ -14705,8 +15402,8 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "$"
       ],
       "publishedAt": "2026-05-21",
-      "observedAt": "2026-09-03T20:01:16.791Z",
-      "ageDays": 106,
+      "observedAt": "2026-09-04T12:46:37.916Z",
+      "ageDays": 107,
       "isRecent": true,
       "lookbackDays": 180,
       "confidenceScore": 0.7,
@@ -14752,8 +15449,8 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "$"
       ],
       "publishedAt": "2026-05-21",
-      "observedAt": "2026-09-03T20:01:16.791Z",
-      "ageDays": 106,
+      "observedAt": "2026-09-04T12:46:37.916Z",
+      "ageDays": 107,
       "isRecent": true,
       "lookbackDays": 180,
       "confidenceScore": 0.7,
@@ -14799,8 +15496,8 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "$"
       ],
       "publishedAt": "2026-05-21",
-      "observedAt": "2026-09-03T20:01:16.791Z",
-      "ageDays": 106,
+      "observedAt": "2026-09-04T12:46:37.916Z",
+      "ageDays": 107,
       "isRecent": true,
       "lookbackDays": 180,
       "confidenceScore": 0.7,
@@ -14846,8 +15543,8 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "$"
       ],
       "publishedAt": "2026-05-21",
-      "observedAt": "2026-09-03T20:01:16.791Z",
-      "ageDays": 106,
+      "observedAt": "2026-09-04T12:46:37.916Z",
+      "ageDays": 107,
       "isRecent": true,
       "lookbackDays": 180,
       "confidenceScore": 0.7,
@@ -14899,7 +15596,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "events"
       ],
       "publishedAt": "2026-05-19T14:50:56.000Z",
-      "observedAt": "2026-09-04T11:33:30.980Z",
+      "observedAt": "2026-09-04T12:52:35.729Z",
       "ageDays": 108,
       "isRecent": true,
       "lookbackDays": 180,
@@ -14952,7 +15649,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "terrace"
       ],
       "publishedAt": "2026-05-11T15:04:47.000Z",
-      "observedAt": "2026-09-04T11:32:36.140Z",
+      "observedAt": "2026-09-04T12:52:12.602Z",
       "ageDays": 116,
       "isRecent": true,
       "lookbackDays": 180,
@@ -15013,7 +15710,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "reservations"
       ],
       "publishedAt": "2026-05-07T14:25:34.000Z",
-      "observedAt": "2026-09-04T11:33:07.569Z",
+      "observedAt": "2026-09-04T12:52:17.674Z",
       "ageDays": 120,
       "isRecent": true,
       "lookbackDays": 180,
@@ -15046,7 +15743,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
       "categories": [],
       "matchedTerms": [],
       "publishedAt": "2026-05-04T18:38:33.000Z",
-      "observedAt": "2026-09-04T11:32:38.236Z",
+      "observedAt": "2026-09-04T12:52:16.332Z",
       "ageDays": 123,
       "isRecent": true,
       "lookbackDays": 180,
@@ -15079,7 +15776,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
       "categories": [],
       "matchedTerms": [],
       "publishedAt": "2026-05-04T17:55:38.000Z",
-      "observedAt": "2026-09-04T11:32:38.236Z",
+      "observedAt": "2026-09-04T12:52:16.332Z",
       "ageDays": 123,
       "isRecent": true,
       "lookbackDays": 180,
@@ -15122,7 +15819,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "brunch"
       ],
       "publishedAt": "2026-04-28T18:12:21.000Z",
-      "observedAt": "2026-09-04T11:32:36.140Z",
+      "observedAt": "2026-09-04T12:52:12.602Z",
       "ageDays": 129,
       "isRecent": true,
       "lookbackDays": 180,
@@ -15195,7 +15892,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "book now"
       ],
       "publishedAt": "2026-04-21T20:05:28.000Z",
-      "observedAt": "2026-09-04T11:33:55.874Z",
+      "observedAt": "2026-09-04T12:52:56.647Z",
       "ageDays": 136,
       "isRecent": true,
       "lookbackDays": 180,
@@ -15238,7 +15935,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "$"
       ],
       "publishedAt": "2026-04-08T16:25:03.000Z",
-      "observedAt": "2026-09-04T11:32:36.140Z",
+      "observedAt": "2026-09-04T12:52:12.602Z",
       "ageDays": 149,
       "isRecent": true,
       "lookbackDays": 180,
@@ -15271,7 +15968,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
       "categories": [],
       "matchedTerms": [],
       "publishedAt": "2026-04-08T15:42:52.000Z",
-      "observedAt": "2026-09-04T11:32:36.140Z",
+      "observedAt": "2026-09-04T12:52:12.602Z",
       "ageDays": 149,
       "isRecent": true,
       "lookbackDays": 180,
@@ -15314,7 +16011,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "breakfast"
       ],
       "publishedAt": "2026-04-02T11:40:44.000Z",
-      "observedAt": "2026-09-04T11:32:36.137Z",
+      "observedAt": "2026-09-04T12:52:12.143Z",
       "ageDays": 155,
       "isRecent": true,
       "lookbackDays": 180,
@@ -15367,7 +16064,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "brunch"
       ],
       "publishedAt": "2026-04-01T19:30:03.000Z",
-      "observedAt": "2026-09-04T11:32:36.140Z",
+      "observedAt": "2026-09-04T12:52:12.602Z",
       "ageDays": 156,
       "isRecent": true,
       "lookbackDays": 180,
@@ -15442,7 +16139,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "seasonal"
       ],
       "publishedAt": "2026-04-01T15:11:15.000Z",
-      "observedAt": "2026-09-04T11:33:55.946Z",
+      "observedAt": "2026-09-04T12:52:56.708Z",
       "ageDays": 156,
       "isRecent": true,
       "lookbackDays": 180,
@@ -15475,7 +16172,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
       "categories": [],
       "matchedTerms": [],
       "publishedAt": "2026-04-01T15:01:16.000Z",
-      "observedAt": "2026-09-04T11:32:42.402Z",
+      "observedAt": "2026-09-04T12:52:12.150Z",
       "ageDays": 156,
       "isRecent": true,
       "lookbackDays": 180,
@@ -15550,7 +16247,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "reservations"
       ],
       "publishedAt": "2026-03-31T01:22:34.000Z",
-      "observedAt": "2026-09-04T11:33:38.808Z",
+      "observedAt": "2026-09-04T12:52:41.221Z",
       "ageDays": 157,
       "isRecent": true,
       "lookbackDays": 180,
@@ -15627,7 +16324,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "reservations"
       ],
       "publishedAt": "2026-03-31T01:10:59.000Z",
-      "observedAt": "2026-09-04T11:33:38.060Z",
+      "observedAt": "2026-09-04T12:52:40.453Z",
       "ageDays": 157,
       "isRecent": true,
       "lookbackDays": 180,
@@ -15728,7 +16425,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "book a table"
       ],
       "publishedAt": "2026-03-27T17:58:20.000Z",
-      "observedAt": "2026-09-04T11:33:12.516Z",
+      "observedAt": "2026-09-04T12:52:20.337Z",
       "ageDays": 161,
       "isRecent": true,
       "lookbackDays": 180,
@@ -15829,7 +16526,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "book a table"
       ],
       "publishedAt": "2026-03-27T17:51:53.000Z",
-      "observedAt": "2026-09-04T11:33:15.083Z",
+      "observedAt": "2026-09-04T12:52:21.355Z",
       "ageDays": 161,
       "isRecent": true,
       "lookbackDays": 180,
@@ -15862,7 +16559,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
       "categories": [],
       "matchedTerms": [],
       "publishedAt": "2026-03-26T15:51:56.000Z",
-      "observedAt": "2026-09-04T11:32:36.140Z",
+      "observedAt": "2026-09-04T12:52:12.602Z",
       "ageDays": 162,
       "isRecent": true,
       "lookbackDays": 180,
@@ -15919,7 +16616,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "menu"
       ],
       "publishedAt": "2026-03-25T20:17:11.000Z",
-      "observedAt": "2026-09-04T11:33:31.620Z",
+      "observedAt": "2026-09-04T12:52:34.971Z",
       "ageDays": 163,
       "isRecent": true,
       "lookbackDays": 180,
@@ -16057,7 +16754,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "beer garden"
       ],
       "publishedAt": "2026-03-11T19:42:44.000Z",
-      "observedAt": "2026-09-04T11:33:30.323Z",
+      "observedAt": "2026-09-04T12:52:33.205Z",
       "ageDays": 177,
       "isRecent": true,
       "lookbackDays": 180,
@@ -16110,7 +16807,7 @@ window.HALIFAX_RECENT_SOCIAL_POSTS = {
         "event"
       ],
       "publishedAt": "+181819-01-01T04:00:00.000Z",
-      "observedAt": "2026-09-04T11:33:57.201Z",
+      "observedAt": "2026-09-04T12:52:57.975Z",
       "ageDays": 0,
       "isRecent": true,
       "lookbackDays": 180,
