@@ -197,4 +197,6 @@ await page.setViewportSize({ width: 390, height: 667 });
 await gotoRoute("#restaurant/field-guide", ".closure-notice");
 await auditRoute("short-iphone-detail");
 
+await browser.close();
+
 if (consoleErrors.length) throw new Error(`Console errors detected during iPhone link audit:\n${consoleErrors.join("\n")}`);
