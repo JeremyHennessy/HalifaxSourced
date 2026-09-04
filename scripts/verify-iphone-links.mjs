@@ -72,12 +72,19 @@ const auditSelectors = [
   "[data-filter-apply]"
 ];
 
+const moreSheetSelectors = [
+  "[data-mobile-more-sheet] a",
+  "[data-mobile-more-sheet] button",
+  ".mobile-more-sheet a",
+  ".mobile-more-sheet button"
+];
+
 async function capture(name) {
   await page.locator(".toast").evaluateAll((nodes) => nodes.forEach((node) => node.remove())).catch(() => {});
   await page.screenshot({ path: resolve("artifacts", `iphone-link-audit-${name}.png`), fullPage: true });
 }
 
-async function auditRoute(name) {
+async function auditRoute(name, selectors = auditSelectors) {
   await page.waitForTimeout(150);
   const result = await page.evaluate((selectors) => {
     const selector = selectors.join(",");
@@ -120,7 +127,7 @@ async function auditRoute(name) {
       unsafeExternalLinks,
       viewport: { width: innerWidth, height: innerHeight }
     };
-  }, auditSelectors);
+  }, selectors);
   if (result.overflow > 2) throw new Error(`${name}: horizontal overflow ${result.overflow}px in ${JSON.stringify(result.viewport)}.`);
   if (result.smallTargets.length) throw new Error(`${name}: touch targets below 44px: ${JSON.stringify(result.smallTargets.slice(0, 12))}`);
   if (result.blockedTargets.length) throw new Error(`${name}: center taps intercepted: ${JSON.stringify(result.blockedTargets.slice(0, 12))}`);
@@ -170,7 +177,7 @@ await auditRoute("map-tab");
 
 await page.locator("#mobileMore").tap();
 await page.locator("[data-mobile-more-sheet]").waitFor({ state: "visible" });
-await auditRoute("more-sheet");
+await auditRoute("more-sheet", moreSheetSelectors);
 const moreLinks = await page.locator("[data-mobile-more-sheet] a").evaluateAll((links) => links.map((link) => link.getAttribute("href")));
 for (const expected of ["#specials", "#menus", "#saved", "#explore?feature=opening"]) {
   if (!moreLinks.includes(expected)) throw new Error(`Mobile More menu is missing ${expected}: ${JSON.stringify(moreLinks)}`);
