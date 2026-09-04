@@ -11,11 +11,19 @@
   }
 
   .restaurant-hero{
-    min-height:360px!important;
+    min-height:280px!important;
   }
 
   .restaurant-hero-overlay{
-    padding-bottom:24px!important;
+    padding-bottom:18px!important;
+  }
+
+  .detail-tabs{
+    gap:18px!important;
+  }
+
+  .detail-section{
+    padding-block:18px!important;
   }
 
   .detail-layout,
