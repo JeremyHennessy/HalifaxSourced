@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-03T19:22:39.932Z",
+  "generatedAt": "2026-09-04T12:00:05.176Z",
   "sourceCommitSha": null,
   "definitions": {
     "approvedThumbnail": "A thumbnail candidate tied to an exact restaurant ID with approved review state and production-approved rights status.",
@@ -10,57 +10,57 @@
   },
   "counts": {
     "restaurants": 740,
-    "candidates": 2804,
+    "candidates": 2976,
     "approvedCandidates": 107,
-    "reviewCandidates": 2697,
+    "reviewCandidates": 2869,
     "restaurantsWithApprovedThumbnail": 107,
-    "restaurantsWithAnyCandidate": 240,
+    "restaurantsWithAnyCandidate": 257,
     "restaurantsMissingApprovedThumbnail": 633,
-    "restaurantsMissingAnyCandidate": 500,
-    "promotionQueue": 43,
-    "sourceCheckQueue": 59,
-    "discoveryQueue": 500,
+    "restaurantsMissingAnyCandidate": 483,
+    "promotionQueue": 50,
+    "sourceCheckQueue": 68,
+    "discoveryQueue": 483,
     "fetchFailures": 200
   },
   "coveragePercent": {
     "approvedThumbnail": 14.5,
-    "anyThumbnailCandidate": 32.4,
+    "anyThumbnailCandidate": 34.7,
     "missingApprovedThumbnail": 85.5,
-    "missingAnyThumbnailCandidate": 67.6
+    "missingAnyThumbnailCandidate": 65.3
   },
   "candidateMix": {
     "bySourceKind": {
       "approved_restaurant_media": 107,
-      "official_page_thumbnail_candidate": 2628,
+      "official_page_thumbnail_candidate": 2800,
       "official_feed_media": 8,
       "public_campaign_menu_image": 41,
       "directory_source_image": 20
     },
     "byReviewState": {
       "approved": 107,
-      "candidate_review": 2639,
+      "candidate_review": 2811,
       "rejected": 24,
       "source_check": 34
     },
     "byRightsStatus": {
       "production_approved": 107,
-      "requires_rights_review": 2673,
+      "requires_rights_review": 2845,
       "rejected": 24
     },
     "byExtractionMethod": {
       "approved_media_manifest": 107,
-      "html_link_image": 319,
-      "html_img_content": 1688,
-      "css_background_image": 334,
-      "declared_post_media": 135,
-      "html_meta_image": 109,
-      "jsonld_image": 51,
+      "html_link_image": 350,
+      "html_img_content": 1800,
+      "css_background_image": 343,
+      "declared_post_media": 144,
+      "html_meta_image": 117,
+      "jsonld_image": 54,
       "public_special_source_declared_image": 41,
       "trusted_directory_declared_image": 20
     },
     "byPlatform": {
       "website_feed": 8,
-      "official_page": 127
+      "official_page": 136
     }
   },
   "queues": {
@@ -243,6 +243,28 @@
         }
       },
       {
+        "restaurantId": "osm-node-10665823259-wing-n-it",
+        "name": "Wing 'n It",
+        "neighborhood": "Armdale / Fairview",
+        "website": "https://wingnit.ca/",
+        "candidateCount": 20,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 20
+        },
+        "reviewStates": {
+          "candidate_review": 20
+        },
+        "bestCandidate": {
+          "id": "thumb-9cfb662bbcaf0078be",
+          "thumbnailUrl": "https://wingnit.ca/assets/images/layout/image-hero-mobile.png",
+          "sourceUrl": "https://wingnit.ca/",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "same_host_official_page_image"
+        }
+      },
+      {
         "restaurantId": "osm-node-5863968671-mirchi-tandoor",
         "name": "Mirchi Tandoor",
         "neighborhood": "Downtown",
@@ -291,12 +313,12 @@
         "name": "Studio East Food+Drink",
         "neighborhood": "North End",
         "website": "https://www.studioeastfood.ca/",
-        "candidateCount": 17,
+        "candidateCount": 18,
         "sourceKinds": {
-          "official_page_thumbnail_candidate": 17
+          "official_page_thumbnail_candidate": 18
         },
         "reviewStates": {
-          "candidate_review": 17
+          "candidate_review": 18
         },
         "bestCandidate": {
           "id": "thumb-e62cfa03dfad157ebf",
@@ -328,6 +350,28 @@
           "reviewState": "candidate_review",
           "rightsStatus": "requires_rights_review",
           "confidence": "official_page_approved_cdn_image"
+        }
+      },
+      {
+        "restaurantId": "osm-node-5157417348-tomavinos-pizzeria",
+        "name": "Tomavinos Pizzeria",
+        "neighborhood": "South End",
+        "website": "https://www.tomavinos.ca/",
+        "candidateCount": 15,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 15
+        },
+        "reviewStates": {
+          "candidate_review": 15
+        },
+        "bestCandidate": {
+          "id": "thumb-749ce16ae3f0c0df08",
+          "thumbnailUrl": "https://tomavinos.ca/images/uploads/site/_crop/Tomavinos_25.jpg",
+          "sourceUrl": "https://www.tomavinos.ca/",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "same_host_official_page_image"
         }
       },
       {
@@ -522,6 +566,28 @@
           "id": "thumb-42f4a7111bfda2ba7b",
           "thumbnailUrl": "https://cdn.sanity.io/images/dw0heewu/production/0bdcb34a72360b6173e5fbb498c35c829bcc8e1d-39x39.png?auto=format",
           "sourceUrl": "https://thekeg.com/en/locations/halifax",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "official_page_approved_cdn_image"
+        }
+      },
+      {
+        "restaurantId": "osm-node-3802169599-wild-leek-food-and-juice-bar",
+        "name": "Wild Leek Food & Juice Bar",
+        "neighborhood": "Downtown",
+        "website": "https://wildleek.ca/",
+        "candidateCount": 9,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 9
+        },
+        "reviewStates": {
+          "candidate_review": 9
+        },
+        "bestCandidate": {
+          "id": "thumb-aaff8456b50fe08a1f",
+          "thumbnailUrl": "https://static.wixstatic.com/media/7da4e6_3e27a591bd6e4f3fb5ea99b19114af59~mv2.jpg/v1/fill/w_318,h_449,q_75,enc_avif,quality_auto/7da4e6_3e27a591bd6e4f3fb5ea99b19114af59~mv2.jpg",
+          "sourceUrl": "https://www.wildleek.ca/",
           "sourceKind": "official_page_thumbnail_candidate",
           "reviewState": "candidate_review",
           "rightsStatus": "requires_rights_review",
@@ -728,6 +794,50 @@
         }
       },
       {
+        "restaurantId": "osm-node-7674206838-tokyo-roll",
+        "name": "Tokyo Roll",
+        "neighborhood": "Downtown",
+        "website": "https://www.tokyorollhalifax.com/",
+        "candidateCount": 2,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 2
+        },
+        "reviewStates": {
+          "candidate_review": 2
+        },
+        "bestCandidate": {
+          "id": "thumb-82cb7512a5b70d380c",
+          "thumbnailUrl": "https://static.wixstatic.com/media/8b57ea_19d6bfda7e264fd3b67d3b6685bae0fd~mv2.jpg/v1/crop/x_0,y_9,w_825,h_1172/fill/w_795,h_1116,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/2025-take%20out%20menu-2.jpg",
+          "sourceUrl": "https://www.tokyorollhalifax.com/menu",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "official_page_approved_cdn_image"
+        }
+      },
+      {
+        "restaurantId": "osm-node-886747513-trident-booksellers-and-cafe",
+        "name": "Trident Booksellers and Cafe",
+        "neighborhood": "Waterfront",
+        "website": "https://tridenthalifax.ca/",
+        "candidateCount": 2,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 2
+        },
+        "reviewStates": {
+          "candidate_review": 2
+        },
+        "bestCandidate": {
+          "id": "thumb-224c2c73b2b6135a36",
+          "thumbnailUrl": "https://tridenthalifax.ca/wp-content/uploads/2024/01/Trident-Halifax-Cafe-flowers-400x400-1-300x300.jpg",
+          "sourceUrl": "https://tridenthalifax.ca/",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "official_page_source_media"
+        }
+      },
+      {
         "restaurantId": "osm-node-771698137-waterfront-warehouse",
         "name": "Waterfront Warehouse",
         "neighborhood": "Waterfront",
@@ -748,6 +858,28 @@
           "reviewState": "candidate_review",
           "rightsStatus": "requires_rights_review",
           "confidence": "official_page_source_media"
+        }
+      },
+      {
+        "restaurantId": "osm-way-181624111-wendy-s",
+        "name": "Wendy's",
+        "neighborhood": "West End",
+        "website": "https://locations.wendys.com/canada/ns/halifax/3580-kempt-road",
+        "candidateCount": 2,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 2
+        },
+        "reviewStates": {
+          "candidate_review": 2
+        },
+        "bestCandidate": {
+          "id": "thumb-7e3569af2565df7664",
+          "thumbnailUrl": "https://www.wendys.com/sites/default/files/2021-10/Header_CADelivery.jpg",
+          "sourceUrl": "https://www.wendys.com/en-ca/delivery",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "same_host_official_page_image"
         }
       },
       {
@@ -810,6 +942,28 @@
           "id": "thumb-e65db47dcfee7af23e",
           "thumbnailUrl": "https://www.foodbooking.com/ordering/restaurant/%60$%7Bwindow.location.origin%7D/api/foodbooking-redirect%60",
           "sourceUrl": "https://www.foodbooking.com/ordering/restaurant/menu?restaurant_uid=de8fb584-7d18-406d-9040-426509400230",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "same_host_official_page_image"
+        }
+      },
+      {
+        "restaurantId": "osm-node-8443747544-saj-house",
+        "name": "Saj House",
+        "neighborhood": "West End",
+        "website": "https://www.sajhouse.ca/",
+        "candidateCount": 1,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 1
+        },
+        "reviewStates": {
+          "candidate_review": 1
+        },
+        "bestCandidate": {
+          "id": "thumb-0311571afbd91336c0",
+          "thumbnailUrl": "https://sajhouse.ca/images/og/sajhouse-og.png",
+          "sourceUrl": "https://www.sajhouse.ca/",
           "sourceKind": "official_page_thumbnail_candidate",
           "reviewState": "candidate_review",
           "rightsStatus": "requires_rights_review",
@@ -993,10 +1147,10 @@
         }
       },
       {
-        "restaurantId": "osm-node-886747513-trident-booksellers-and-cafe",
-        "name": "Trident Booksellers and Cafe",
-        "neighborhood": "Waterfront",
-        "website": "https://tridenthalifax.ca/",
+        "restaurantId": "osm-node-11466743651-uncommon-grounds",
+        "name": "Uncommon Grounds",
+        "neighborhood": "South End",
+        "website": "https://theuncommongroup.com/",
         "candidateCount": 1,
         "sourceKinds": {
           "official_page_thumbnail_candidate": 1
@@ -1005,13 +1159,13 @@
           "candidate_review": 1
         },
         "bestCandidate": {
-          "id": "thumb-224c2c73b2b6135a36",
-          "thumbnailUrl": "https://tridenthalifax.ca/wp-content/uploads/2024/01/Trident-Halifax-Cafe-flowers-400x400-1-300x300.jpg",
-          "sourceUrl": "https://tridenthalifax.ca/",
+          "id": "thumb-52b483fb4dae2c3848",
+          "thumbnailUrl": "https://theuncommongroup.com/cdn/shop/t/18/assets/slide_2.jpg?v=13304079562732043911444937180",
+          "sourceUrl": "https://theuncommongroup.com/",
           "sourceKind": "official_page_thumbnail_candidate",
           "reviewState": "candidate_review",
           "rightsStatus": "requires_rights_review",
-          "confidence": "official_page_source_media"
+          "confidence": "same_host_official_page_image"
         }
       }
     ],
@@ -1149,6 +1303,72 @@
         }
       },
       {
+        "restaurantId": "osm-way-181624111-wendy-s",
+        "name": "Wendy's",
+        "neighborhood": "West End",
+        "website": "https://locations.wendys.com/canada/ns/halifax/3580-kempt-road",
+        "candidateCount": 12,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 12
+        },
+        "reviewStates": {
+          "candidate_review": 12
+        },
+        "bestCandidate": {
+          "id": "thumb-9b105312b98acce677",
+          "thumbnailUrl": "https://dynl.mktgcdn.com/p/0g5X95PE_og8-zESIDHHsMMnkmyOO86NhiKteQB3QXA/619x619.jpg",
+          "sourceUrl": "https://locations.wendys.com/canada/ns/halifax/3580-kempt-road",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "remote_image_host_needs_source_check"
+        }
+      },
+      {
+        "restaurantId": "osm-node-1920996968-tony-s-pizza",
+        "name": "Tony's Pizza",
+        "neighborhood": "North End",
+        "website": "https://www.tonysdonair.ca/",
+        "candidateCount": 11,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 11
+        },
+        "reviewStates": {
+          "candidate_review": 11
+        },
+        "bestCandidate": {
+          "id": "thumb-d7dce4830f08b4dd5e",
+          "thumbnailUrl": "http://static1.squarespace.com/static/55a506a8e4b025e7c4de7ed3/t/598e40914c0dbfafe1e17a3b/1638037593648/tonys+logo+refresh.jpg?format=1500w",
+          "sourceUrl": "https://www.tonysdonair.com/",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "source_host_not_first_party"
+        }
+      },
+      {
+        "restaurantId": "osm-node-5157417348-tomavinos-pizzeria",
+        "name": "Tomavinos Pizzeria",
+        "neighborhood": "South End",
+        "website": "https://www.tomavinos.ca/",
+        "candidateCount": 8,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 8
+        },
+        "reviewStates": {
+          "candidate_review": 8
+        },
+        "bestCandidate": {
+          "id": "thumb-d7913f835eefc75632",
+          "thumbnailUrl": "https://assets.cdn.filesafe.space/wfTmnuFPX9JPZX7F6G8X/media/69e698322c135a8c83b711f9.png",
+          "sourceUrl": "https://book.tomavinos.ca/",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "remote_image_host_needs_source_check"
+        }
+      },
+      {
         "restaurantId": "osm-node-9099103643-the-bread-lounge",
         "name": "The Bread Lounge",
         "neighborhood": "Downtown",
@@ -1193,6 +1413,28 @@
         }
       },
       {
+        "restaurantId": "osm-node-11526163880-pizza-pizza",
+        "name": "Pizza Pizza",
+        "neighborhood": "South End",
+        "website": "https://dal.campusdish.com/LocationsAndMenus/LifeSciencesCentre/PizzaPizza",
+        "candidateCount": 3,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 3
+        },
+        "reviewStates": {
+          "candidate_review": 3
+        },
+        "bestCandidate": {
+          "id": "thumb-be01ade16c69e7bb48",
+          "thumbnailUrl": "https://images.elevate-dxp.com/adobe/assets/urn:aaid:aem:3b1a8dfc-389a-4469-91eb-eb150c8b6d04/as/dalhousie-logo-.webp?height=66",
+          "sourceUrl": "https://dal.mydininghub.ca/en/locations",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "source_host_not_first_party"
+        }
+      },
+      {
         "restaurantId": "osm-node-475876993-ristorante-amano",
         "name": "Ristorante Amano",
         "neighborhood": "Waterfront",
@@ -1215,6 +1457,50 @@
         }
       },
       {
+        "restaurantId": "osm-node-3789756557-smiling-goat",
+        "name": "Smiling Goat",
+        "neighborhood": "Waterfront",
+        "website": "https://www.smilinggoat.ca/locations/",
+        "candidateCount": 3,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 3
+        },
+        "reviewStates": {
+          "candidate_review": 3
+        },
+        "bestCandidate": {
+          "id": "thumb-a3de2ff55ee7ba9c4e",
+          "thumbnailUrl": "https://www.avia-pilott.com/wp-content/uploads/2025/09/aviator_logo-300x300.png",
+          "sourceUrl": "https://www.avia-pilott.com/",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "source_host_not_first_party"
+        }
+      },
+      {
+        "restaurantId": "osm-node-11526163876-starbucks",
+        "name": "Starbucks",
+        "neighborhood": "South End",
+        "website": "https://dal.campusdish.com/LocationsAndMenus/StarbucksatTupperMedicalBuilding",
+        "candidateCount": 3,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 3
+        },
+        "reviewStates": {
+          "candidate_review": 3
+        },
+        "bestCandidate": {
+          "id": "thumb-54c890f9be42cd5861",
+          "thumbnailUrl": "https://images.elevate-dxp.com/adobe/assets/urn:aaid:aem:3b1a8dfc-389a-4469-91eb-eb150c8b6d04/as/dalhousie-logo-.webp?height=66",
+          "sourceUrl": "https://dal.mydininghub.ca/en/locations",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "source_host_not_first_party"
+        }
+      },
+      {
         "restaurantId": "osm-node-8164476189-the-bitter-end",
         "name": "The Bitter End",
         "neighborhood": "Downtown",
@@ -1230,6 +1516,72 @@
           "id": "thumb-3275112d64bcb36cf1",
           "thumbnailUrl": "https://images.unoapp.com/boxdata/asset90014/images/web-logo.png",
           "sourceUrl": "https://www.bitterend.ca/",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "remote_image_host_needs_source_check"
+        }
+      },
+      {
+        "restaurantId": "osm-node-11526163878-tim-hortons",
+        "name": "Tim Hortons",
+        "neighborhood": "South End",
+        "website": "https://dal.campusdish.com/LocationsAndMenus/LifeSciencesCentre/TimHortons",
+        "candidateCount": 3,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 3
+        },
+        "reviewStates": {
+          "candidate_review": 3
+        },
+        "bestCandidate": {
+          "id": "thumb-e995f571bdc1527433",
+          "thumbnailUrl": "https://images.elevate-dxp.com/adobe/assets/urn:aaid:aem:3b1a8dfc-389a-4469-91eb-eb150c8b6d04/as/dalhousie-logo-.webp?height=66",
+          "sourceUrl": "https://dal.mydininghub.ca/en/locations",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "source_host_not_first_party"
+        }
+      },
+      {
+        "restaurantId": "osm-node-11526163879-zoca",
+        "name": "Zoca",
+        "neighborhood": "South End",
+        "website": "https://dal.campusdish.com/LocationsAndMenus/LifeSciencesCentre/Zoca",
+        "candidateCount": 3,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 3
+        },
+        "reviewStates": {
+          "candidate_review": 3
+        },
+        "bestCandidate": {
+          "id": "thumb-8deaca2b827352fb3e",
+          "thumbnailUrl": "https://images.elevate-dxp.com/adobe/assets/urn:aaid:aem:3b1a8dfc-389a-4469-91eb-eb150c8b6d04/as/dalhousie-logo-.webp?height=66",
+          "sourceUrl": "https://dal.mydininghub.ca/en/locations",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "source_host_not_first_party"
+        }
+      },
+      {
+        "restaurantId": "osm-node-11466743651-uncommon-grounds",
+        "name": "Uncommon Grounds",
+        "neighborhood": "South End",
+        "website": "https://theuncommongroup.com/",
+        "candidateCount": 2,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 2
+        },
+        "reviewStates": {
+          "candidate_review": 2
+        },
+        "bestCandidate": {
+          "id": "thumb-eab0c6ededd4494912",
+          "thumbnailUrl": "https://az833301.vo.msecnd.net/images/snippets/arrow-left.png",
+          "sourceUrl": "https://theuncommongroup.com/",
           "sourceKind": "official_page_thumbnail_candidate",
           "reviewState": "candidate_review",
           "rightsStatus": "requires_rights_review",
@@ -5247,16 +5599,6 @@
         "bestCandidate": null
       },
       {
-        "restaurantId": "osm-node-11526163880-pizza-pizza",
-        "name": "Pizza Pizza",
-        "neighborhood": "South End",
-        "website": "https://dal.campusdish.com/LocationsAndMenus/LifeSciencesCentre/PizzaPizza",
-        "candidateCount": 0,
-        "sourceKinds": {},
-        "reviewStates": {},
-        "bestCandidate": null
-      },
-      {
         "restaurantId": "osm-node-32335613-pizza-tomaso",
         "name": "Pizza Tomaso",
         "neighborhood": "Armdale / Fairview",
@@ -5309,6 +5651,16 @@
       {
         "restaurantId": "osm-node-37132554-press-gang",
         "name": "Press Gang",
+        "neighborhood": "Downtown",
+        "website": null,
+        "candidateCount": 0,
+        "sourceKinds": {},
+        "reviewStates": {},
+        "bestCandidate": null
+      },
+      {
+        "restaurantId": "osm-node-13262680652-presto-tea",
+        "name": "Presto Tea",
         "neighborhood": "Downtown",
         "website": null,
         "candidateCount": 0,
@@ -6056,7 +6408,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "official_feed_media",
-        "observedAt": "2026-09-03T18:59:34.142Z",
+        "observedAt": "2026-09-04T11:32:36.137Z",
         "publishedAt": "2026-09-02T17:13:14.000Z"
       },
       {
@@ -6069,7 +6421,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "official_feed_media",
-        "observedAt": "2026-09-03T18:59:34.142Z",
+        "observedAt": "2026-09-04T11:32:36.137Z",
         "publishedAt": "2026-09-01T14:22:55.000Z"
       },
       {
@@ -6082,7 +6434,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "official_feed_media",
-        "observedAt": "2026-09-03T18:59:34.142Z",
+        "observedAt": "2026-09-04T11:32:36.137Z",
         "publishedAt": "2026-04-02T11:40:44.000Z"
       },
       {
@@ -6095,7 +6447,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "official_feed_media",
-        "observedAt": "2026-09-01T15:25:17.355Z",
+        "observedAt": "2026-09-04T11:32:36.137Z",
         "publishedAt": "2026-03-03T14:50:36.000Z"
       },
       {
@@ -6108,7 +6460,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "official_feed_media",
-        "observedAt": "2026-09-01T15:25:17.355Z",
+        "observedAt": "2026-09-04T11:32:36.137Z",
         "publishedAt": "2026-01-17T17:26:36.000Z"
       },
       {
@@ -6519,19 +6871,6 @@
         "restaurantId": "osm-way-393886756-boston-pizza",
         "restaurantName": "Boston Pizza",
         "thumbnailUrl": "https://bostonpizza.com/content/dam/bostonpizza/promotions/2026/kids-eat-free/CountdownClock_Desktop_Continuous_EN.png",
-        "sourceUrl": "https://bostonpizza.com/en/index.html",
-        "sourceKind": "official_page_thumbnail_candidate",
-        "reviewState": "candidate_review",
-        "rightsStatus": "requires_rights_review",
-        "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-02T17:39:07.870Z",
-        "publishedAt": null
-      },
-      {
-        "id": "thumb-28c640fc8f29caf197",
-        "restaurantId": "osm-way-393886756-boston-pizza",
-        "restaurantName": "Boston Pizza",
-        "thumbnailUrl": "https://bostonpizza.com/content/dam/bostonpizza/promotions/2026/kids-eat-free/KEF_Banner_EN-final.png",
         "sourceUrl": "https://bostonpizza.com/en/index.html",
         "sourceKind": "official_page_thumbnail_candidate",
         "reviewState": "candidate_review",
@@ -9217,6 +9556,19 @@
         "confidence": "same_host_official_page_image",
         "observedAt": "2026-09-02T17:39:07.870Z",
         "publishedAt": null
+      },
+      {
+        "id": "thumb-d2c621a345519b281e",
+        "restaurantId": "osm-node-5631529440-hmcs-king-s-wardroom",
+        "restaurantName": "HMCS King’s Wardroom",
+        "thumbnailUrl": "https://ukings.ca/admissions/campus-tours-recruitment/r",
+        "sourceUrl": "https://ukings.ca/admissions/campus-tours-recruitment/",
+        "sourceKind": "official_page_thumbnail_candidate",
+        "reviewState": "candidate_review",
+        "rightsStatus": "requires_rights_review",
+        "confidence": "same_host_official_page_image",
+        "observedAt": "2026-09-02T17:39:07.870Z",
+        "publishedAt": null
       }
     ]
   },
@@ -10225,9 +10577,9 @@
   "exports": {
     "sourceCheckQueueJson": "data/build/thumbnail-source-check-queue.json",
     "sourceCheckQueueCsv": "data/build/thumbnail-source-check-queue.csv",
-    "sourceCheckRows": 191,
+    "sourceCheckRows": 239,
     "ownerMediaOutreachJson": "data/build/owner-media-outreach.json",
     "ownerMediaOutreachCsv": "data/build/owner-media-outreach.csv",
-    "ownerMediaOutreachRows": 500
+    "ownerMediaOutreachRows": 483
   }
 }

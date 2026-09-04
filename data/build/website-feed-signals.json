@@ -1,16 +1,16 @@
 {
   "version": 3,
-  "generatedAt": "2026-09-03T18:59:48.707Z",
-  "feedsDiscovered": 137,
+  "generatedAt": "2026-09-04T11:59:40.952Z",
+  "feedsDiscovered": 138,
   "reviewedFeedsExcluded": 6,
-  "uniqueRestaurantFeeds": 111,
+  "uniqueRestaurantFeeds": 112,
   "sharedFeedUrlsSkipped": 10,
   "feedHostGroups": 57,
-  "concurrency": 10,
-  "lookbackDays": 180,
+  "concurrency": 12,
+  "lookbackDays": 240,
   "excerptChars": 420,
-  "feedsChecked": 106,
-  "failedFeeds": 5,
+  "feedsChecked": 108,
+  "failedFeeds": 4,
   "posts": [
     {
       "restaurantId": "osm-node-10038454787-bird-s-nest-cafe",
@@ -22,7 +22,7 @@
       "feedUrl": "https://www.birdsnesthalifax.com/blog-feed.xml",
       "mediaUrl": "https://static.wixstatic.com/media/110dc9_3a82ceba3e2340f5aef966fe3b725b43~mv2.jpeg/v1/fit/w_1000,h_1000,al_c,q_80/file.png",
       "publishedAt": "2026-09-02T17:13:14.000Z",
-      "observedAt": "2026-09-03T18:59:34.142Z",
+      "observedAt": "2026-09-04T11:32:36.137Z",
       "signalMatches": {},
       "sourceKind": "official_feed",
       "associationBasis": "unique_feed_link_from_official_website",
@@ -39,7 +39,7 @@
       "feedUrl": "https://www.birdsnesthalifax.com/blog-feed.xml",
       "mediaUrl": "https://static.wixstatic.com/media/110dc9_a62017a64bc04441bd78f7cb22257f6a~mv2.jpeg/v1/fit/w_1000,h_960,al_c,q_80/file.png",
       "publishedAt": "2026-09-01T14:22:55.000Z",
-      "observedAt": "2026-09-03T18:59:34.142Z",
+      "observedAt": "2026-09-04T11:32:36.137Z",
       "signalMatches": {},
       "sourceKind": "official_feed",
       "associationBasis": "unique_feed_link_from_official_website",
@@ -56,7 +56,7 @@
       "feedUrl": "https://kennyspizzakearneylake.ca/shop/feed/",
       "mediaUrl": null,
       "publishedAt": "2026-07-17T13:48:16.000Z",
-      "observedAt": "2026-09-03T18:59:38.405Z",
+      "observedAt": "2026-09-04T11:32:40.203Z",
       "signalMatches": {},
       "sourceKind": "official_feed",
       "associationBasis": "unique_feed_link_from_official_website",
@@ -73,7 +73,7 @@
       "feedUrl": "https://www.cafelunette.com/feed/",
       "mediaUrl": null,
       "publishedAt": "2026-05-11T15:04:47.000Z",
-      "observedAt": "2026-09-03T18:59:35.674Z",
+      "observedAt": "2026-09-04T11:32:36.140Z",
       "signalMatches": {
         "openings": [
           "now open"
@@ -98,7 +98,7 @@
       "feedUrl": "https://www.kajohnthairestaurant.ca/blog-feed.xml",
       "mediaUrl": "https://static.wixstatic.com/media/935b09_bba221e694e24cd4b9b12bdbf201943a~mv2.png/v1/fit/w_1000,h_768,al_c,q_80/file.png",
       "publishedAt": "2026-05-04T18:38:33.000Z",
-      "observedAt": "2026-09-03T18:59:39.714Z",
+      "observedAt": "2026-09-04T11:32:38.236Z",
       "signalMatches": {},
       "sourceKind": "official_feed",
       "associationBasis": "unique_feed_link_from_official_website",
@@ -115,7 +115,7 @@
       "feedUrl": "https://www.kajohnthairestaurant.ca/blog-feed.xml",
       "mediaUrl": "https://static.wixstatic.com/media/935b09_58e8dab8eb0244d4b89be881384c216d~mv2.png/v1/fit/w_1000,h_768,al_c,q_80/file.png",
       "publishedAt": "2026-05-04T17:55:38.000Z",
-      "observedAt": "2026-09-03T18:59:39.714Z",
+      "observedAt": "2026-09-04T11:32:38.236Z",
       "signalMatches": {},
       "sourceKind": "official_feed",
       "associationBasis": "unique_feed_link_from_official_website",
@@ -132,7 +132,7 @@
       "feedUrl": "https://www.cafelunette.com/feed/",
       "mediaUrl": null,
       "publishedAt": "2026-04-28T18:12:21.000Z",
-      "observedAt": "2026-09-03T18:59:35.674Z",
+      "observedAt": "2026-09-04T11:32:36.140Z",
       "signalMatches": {
         "brunch": [
           "brunch"
@@ -153,7 +153,7 @@
       "feedUrl": "https://www.cafelunette.com/feed/",
       "mediaUrl": null,
       "publishedAt": "2026-04-08T16:25:03.000Z",
-      "observedAt": "2026-09-03T18:59:35.674Z",
+      "observedAt": "2026-09-04T11:32:36.140Z",
       "signalMatches": {},
       "sourceKind": "official_feed",
       "associationBasis": "unique_feed_link_from_official_website",
@@ -170,7 +170,7 @@
       "feedUrl": "https://www.cafelunette.com/feed/",
       "mediaUrl": null,
       "publishedAt": "2026-04-08T15:42:52.000Z",
-      "observedAt": "2026-09-03T18:59:35.674Z",
+      "observedAt": "2026-09-04T11:32:36.140Z",
       "signalMatches": {},
       "sourceKind": "official_feed",
       "associationBasis": "unique_feed_link_from_official_website",
@@ -187,7 +187,7 @@
       "feedUrl": "https://www.birdsnesthalifax.com/blog-feed.xml",
       "mediaUrl": "https://static.wixstatic.com/media/110dc9_538c90ecfee14537aa62b59c533c2b01~mv2.jpeg/v1/fit/w_1000,h_1000,al_c,q_80/file.png",
       "publishedAt": "2026-04-02T11:40:44.000Z",
-      "observedAt": "2026-09-03T18:59:34.142Z",
+      "observedAt": "2026-09-04T11:32:36.137Z",
       "signalMatches": {
         "brunch": [
           "breakfast"
@@ -208,7 +208,7 @@
       "feedUrl": "https://www.cafelunette.com/feed/",
       "mediaUrl": null,
       "publishedAt": "2026-04-01T19:30:03.000Z",
-      "observedAt": "2026-09-03T18:59:35.674Z",
+      "observedAt": "2026-09-04T11:32:36.140Z",
       "signalMatches": {
         "specials": [
           "offer",
@@ -233,7 +233,7 @@
       "feedUrl": "https://www.shige.ca/blog-feed.xml",
       "mediaUrl": "https://static.wixstatic.com/media/445de3_8cde890dee564907b10a3db536a75443~mv2.png/v1/fit/w_1000,h_1000,al_c,q_80/file.png",
       "publishedAt": "2026-04-01T15:01:16.000Z",
-      "observedAt": "2026-09-03T18:59:34.149Z",
+      "observedAt": "2026-09-04T11:32:42.402Z",
       "signalMatches": {},
       "sourceKind": "official_feed",
       "associationBasis": "unique_feed_link_from_official_website",
@@ -250,7 +250,41 @@
       "feedUrl": "https://www.cafelunette.com/feed/",
       "mediaUrl": null,
       "publishedAt": "2026-03-26T15:51:56.000Z",
-      "observedAt": "2026-09-03T18:59:35.674Z",
+      "observedAt": "2026-09-04T11:32:36.140Z",
+      "signalMatches": {},
+      "sourceKind": "official_feed",
+      "associationBasis": "unique_feed_link_from_official_website",
+      "confidence": "official_source_signal",
+      "reviewState": "source_signal"
+    },
+    {
+      "restaurantId": "osm-node-10038454787-bird-s-nest-cafe",
+      "restaurantName": "Bird's Nest Cafe",
+      "platform": "website_feed",
+      "title": "Catering to wild Sable Island",
+      "excerpt": "Arriving at Sable Island - a 300km helicopter ride from Halifax! There's a place off the coast of Nova Scotia that most Canadians have heard of but almost none will ever visit. A thin crescent of sand barely wide enough to walk across, home to wild horses, grey seals, and more shipwrecks than anywhere else on the Atlantic coast. It has no dock. No airstrip open to the public. No hotel, no restaurant, and no way in...",
+      "postUrl": "https://www.birdsnesthalifax.com/post/catering-to-wild-sable-island",
+      "feedUrl": "https://www.birdsnesthalifax.com/blog-feed.xml",
+      "mediaUrl": "https://static.wixstatic.com/media/110dc9_acbbd34644e2428fbbf7a007c9b5cee6~mv2.jpeg/v1/fit/w_1000,h_1000,al_c,q_80/file.png",
+      "publishedAt": "2026-03-03T14:50:36.000Z",
+      "observedAt": "2026-09-04T11:32:36.137Z",
+      "signalMatches": {},
+      "sourceKind": "official_feed",
+      "associationBasis": "unique_feed_link_from_official_website",
+      "confidence": "official_source_signal",
+      "reviewState": "source_signal"
+    },
+    {
+      "restaurantId": "osm-node-10038454787-bird-s-nest-cafe",
+      "restaurantName": "Bird's Nest Cafe",
+      "platform": "website_feed",
+      "title": "10 New Year’s Resolutions for Haligonians",
+      "excerpt": "New Year, new habits, and a fresh excuse to explore Halifax. 2026 is your year to experience the city like a local — preferably with a hot drink from Bird’s Nest Café in hand. Here’s our list of resolutions to make your year memorable, cozy, and a little adventurous. 1. Walk the Waterfront Every Season Start at the Halifax Seaport and wander past the Cable Wharf. Summer, fall, or snowy January, the waterfront alwa...",
+      "postUrl": "https://www.birdsnesthalifax.com/post/10-new-year-s-resolutions-for-haligonians",
+      "feedUrl": "https://www.birdsnesthalifax.com/blog-feed.xml",
+      "mediaUrl": "https://static.wixstatic.com/media/110dc9_cd4c69a5ab3045b99fb684bff2b14b12~mv2.jpeg/v1/fit/w_1000,h_960,al_c,q_80/file.png",
+      "publishedAt": "2026-01-17T17:26:36.000Z",
+      "observedAt": "2026-09-04T11:32:36.137Z",
       "signalMatches": {},
       "sourceKind": "official_feed",
       "associationBasis": "unique_feed_link_from_official_website",
@@ -269,7 +303,7 @@
       "feedUrl": "https://www.cafelunette.com/feed/",
       "mediaUrl": null,
       "publishedAt": "2026-05-11T15:04:47.000Z",
-      "observedAt": "2026-09-03T18:59:35.674Z",
+      "observedAt": "2026-09-04T11:32:36.140Z",
       "signalMatches": {
         "openings": [
           "now open"
@@ -294,7 +328,7 @@
       "feedUrl": "https://www.cafelunette.com/feed/",
       "mediaUrl": null,
       "publishedAt": "2026-04-28T18:12:21.000Z",
-      "observedAt": "2026-09-03T18:59:35.674Z",
+      "observedAt": "2026-09-04T11:32:36.140Z",
       "signalMatches": {
         "brunch": [
           "brunch"
@@ -315,7 +349,7 @@
       "feedUrl": "https://www.birdsnesthalifax.com/blog-feed.xml",
       "mediaUrl": "https://static.wixstatic.com/media/110dc9_538c90ecfee14537aa62b59c533c2b01~mv2.jpeg/v1/fit/w_1000,h_1000,al_c,q_80/file.png",
       "publishedAt": "2026-04-02T11:40:44.000Z",
-      "observedAt": "2026-09-03T18:59:34.142Z",
+      "observedAt": "2026-09-04T11:32:36.137Z",
       "signalMatches": {
         "brunch": [
           "breakfast"
@@ -336,7 +370,7 @@
       "feedUrl": "https://www.cafelunette.com/feed/",
       "mediaUrl": null,
       "publishedAt": "2026-04-01T19:30:03.000Z",
-      "observedAt": "2026-09-03T18:59:35.674Z",
+      "observedAt": "2026-09-04T11:32:36.140Z",
       "signalMatches": {
         "specials": [
           "offer",
@@ -359,24 +393,28 @@
       "reason": "http_404"
     },
     {
-      "restaurantId": "osm-node-2714920436-greco-pizza",
-      "feedUrl": "https://greco.ca/feed/",
-      "reason": "http_403"
+      "restaurantId": "osm-node-11867490075-cora",
+      "feedUrl": "https://www.chezcora.com/en/breakfast-lunch-restaurants/?feed=rss2",
+      "reason": "http_404"
     },
     {
-      "restaurantId": "osm-node-11526055082-noggins-coburg",
-      "feedUrl": "https://nogginsfarm.ca/feed/",
-      "reason": "http_403"
+      "restaurantId": "osm-node-5987565464-afrite",
+      "feedUrl": "https://afrite.ca/feed/",
+      "reason": "timeout"
     },
     {
-      "restaurantId": "osm-node-11526055082-noggins-coburg",
-      "feedUrl": "https://nogginsfarm.ca/comments/feed/",
-      "reason": "http_403"
-    },
-    {
-      "restaurantId": "osm-node-8841366531-jungle-jim-s",
-      "feedUrl": "https://junglejims.ca/feedback",
-      "reason": "http_403"
+      "restaurantId": "osm-node-5987565464-afrite",
+      "feedUrl": "https://afrite.ca/comments/feed/",
+      "reason": "timeout"
     }
-  ]
+  ],
+  "mergeState": {
+    "strategy": "carry_forward_previous_feed_posts_after_transient_live_crawl_miss",
+    "previousPosts": 15,
+    "currentPosts": 15,
+    "mergedPosts": 15,
+    "previousFeedsDiscovered": 138,
+    "currentFeedsDiscovered": 136,
+    "mergedFeedsDiscovered": 138
+  }
 }
