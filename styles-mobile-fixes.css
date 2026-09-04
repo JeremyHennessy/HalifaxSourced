@@ -1,0 +1,83 @@
+@media (max-width:640px){
+  .filters-panel[data-filter-drawer]{
+    bottom:var(--mobile-tabbar-h)!important;
+    height:calc(100dvh - var(--mobile-tabbar-h))!important;
+    max-height:calc(100dvh - var(--mobile-tabbar-h))!important;
+    padding-bottom:calc(18px + env(safe-area-inset-bottom))!important;
+  }
+
+  .filters-panel[data-filter-drawer] .filter-apply{
+    margin-bottom:0;
+  }
+
+  .event-filter-panel[data-event-filter-panel]{
+    bottom:var(--mobile-tabbar-h)!important;
+    height:calc(100dvh - var(--mobile-tabbar-h))!important;
+    max-height:calc(100dvh - var(--mobile-tabbar-h))!important;
+    padding-bottom:calc(18px + env(safe-area-inset-bottom))!important;
+  }
+
+  .event-filter-panel[data-event-filter-panel] .event-filter-done{
+    margin-bottom:0;
+  }
+
+  #mainMap,
+  .leaflet-container{
+    z-index:0!important;
+  }
+
+  .mobile-tabbar{
+    z-index:5000!important;
+    transform:translateZ(0);
+  }
+
+  .mobile-more-backdrop{
+    z-index:5001!important;
+  }
+
+  .mobile-more-sheet{
+    z-index:5002!important;
+  }
+
+  [data-mobile-more-sheet] button,
+  .mobile-more-sheet button{
+    min-width:44px!important;
+    min-height:44px!important;
+  }
+
+  .restaurant-hero{
+    min-height:280px!important;
+  }
+
+  .restaurant-hero-overlay{
+    padding-bottom:18px!important;
+  }
+
+  .detail-tabs{
+    gap:18px!important;
+  }
+
+  .detail-section{
+    padding-block:18px!important;
+  }
+
+  .mobile-detail-overview{
+    display:flex!important;
+    flex-direction:column;
+  }
+
+  .mobile-essential-actions{
+    order:-1;
+    margin-bottom:4px;
+  }
+
+  .detail-layout,
+  .detail-main{
+    padding-bottom:calc(128px + var(--mobile-tabbar-h))!important;
+  }
+
+  .detail-section:last-child,
+  .detail-sidebar{
+    margin-bottom:calc(32px + var(--mobile-tabbar-h))!important;
+  }
+}
