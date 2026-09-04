@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-04T13:43:50.357Z",
+  "generatedAt": "2026-09-04T14:52:12.153Z",
   "sourceCommitSha": null,
   "baselineCommitHint": null,
   "definitions": {
@@ -1190,7 +1190,7 @@
       ]
     },
     "reconciledFromAcceptedStructuredLayers": true,
-    "reconciledAt": "2026-09-04T13:43:50.356Z"
+    "reconciledAt": "2026-09-04T14:52:12.153Z"
   },
   "eventCoverage": {
     "currentCityEvents": 192,
@@ -1245,8 +1245,8 @@
     "next30Days": 64
   },
   "discoveryCoverage": {
-    "directoryRecords": 701,
-    "directoryNewToCatalog": 549,
+    "directoryRecords": 769,
+    "directoryNewToCatalog": 581,
     "openingWatchLeads": 12,
     "reviewedDiscoveredRestaurants": 12
   },

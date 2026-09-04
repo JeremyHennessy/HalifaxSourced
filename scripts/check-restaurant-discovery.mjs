@@ -24,7 +24,10 @@ const allowedDirectoryKinds = new Set([
   "nova_scotia_tourism_directory",
   "downtown_halifax_directory",
   "business_improvement_district_directory",
-  "restaurant_association_directory"
+  "business_improvement_district_feature_directory",
+  "shopping_centre_directory",
+  "restaurant_association_directory",
+  "culinary_tourism_member_directory"
 ]);
 
 function validUrl(value) {
@@ -114,3 +117,4 @@ if (failures.length) {
   process.exit(1);
 }
 console.log("Restaurant discovery integrity checks passed.");
+

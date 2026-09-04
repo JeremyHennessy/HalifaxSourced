@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-28",
+  "updatedAt": "2026-09-04",
   "scope": {
     "country": "Canada",
     "province": "Nova Scotia",
@@ -84,6 +84,21 @@
       "enabled": true
     },
     {
+      "id": "sackville-food-drink-guide",
+      "name": "Sackville Business Association Food & Drink Guide",
+      "kind": "business_improvement_district_feature_directory",
+      "url": "https://sackvillebusiness.com/food-drink-guide",
+      "geographicScope": ["Lower Sackville", "Sackville Drive", "Halifax Regional Municipality"],
+      "contentTypes": ["place_identity", "address", "phone", "cuisine", "patio", "dietary_features", "liquor_license"],
+      "priority": 2,
+      "authorityClass": "trusted_local_source",
+      "refreshFrequency": "weekly",
+      "parserMode": "single_page_food_drink_feature_guide",
+      "robotsReviewed": "runtime_checked",
+      "termsReviewed": "public_business_directory_reviewed",
+      "enabled": true
+    },
+    {
       "id": "quinpool-road-food-drink",
       "name": "Quinpool Road Mainstreet District Association Food & Drink directory",
       "kind": "business_improvement_district_directory",
@@ -127,6 +142,36 @@
       "parserMode": "next_static_business_directory",
       "robotsReviewed": "runtime_checked",
       "termsReviewed": "public_business_directory_reviewed",
+      "enabled": true
+    },
+    {
+      "id": "bedford-place-mall-dining",
+      "name": "Bedford Place Mall Dining & Fun directory",
+      "kind": "shopping_centre_directory",
+      "url": "https://bedfordplacemall.com/dining.php",
+      "geographicScope": ["Bedford", "Halifax Regional Municipality"],
+      "contentTypes": ["place_identity", "address", "phone", "website", "social_profile"],
+      "priority": 3,
+      "authorityClass": "trusted_local_source",
+      "refreshFrequency": "monthly",
+      "parserMode": "single_page_mall_dining_directory",
+      "robotsReviewed": "runtime_checked",
+      "termsReviewed": "public_business_directory_reviewed",
+      "enabled": true
+    },
+    {
+      "id": "taste-of-nova-scotia-restaurants",
+      "name": "Taste of Nova Scotia restaurant member directory",
+      "kind": "culinary_tourism_member_directory",
+      "url": "https://tasteofnovascotia.com/member-category/restaurants/",
+      "geographicScope": ["Halifax Metro", "Halifax Regional Municipality", "Nova Scotia"],
+      "contentTypes": ["place_identity", "address", "phone", "website", "social_profile", "description", "opening_hours", "local_culinary_membership", "review_image_candidate"],
+      "priority": 2,
+      "authorityClass": "trusted_local_source",
+      "refreshFrequency": "weekly",
+      "parserMode": "member_directory_detail_pages_hrm_filtered",
+      "robotsReviewed": "runtime_checked",
+      "termsReviewed": "public_member_directory_reviewed",
       "enabled": true
     },
     {

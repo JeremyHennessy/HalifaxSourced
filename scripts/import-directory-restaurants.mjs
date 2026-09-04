@@ -601,7 +601,7 @@ function ransMainHtml(html) {
 }
 
 function ransLabeledUrl(text, label) {
-  const escaped = String(label).replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  const escaped = String(label).replace(/[\\^$.*+?()[\]{}|]/g, "\\$&");
   const match = String(text).match(new RegExp(`\\b${escaped}\\s+((?:https?:\\/\\/|www\\.)[^\\s]+)`, "i"));
   if (!match?.[1]) return null;
   const raw = match[1].replace(/[),.;]+$/g, "");
@@ -705,6 +705,218 @@ function parseRansDetail(restRecord, html, sourceMeta) {
     observedAt: new Date().toISOString(),
     reviewState: "directory-listed"
   };
+}
+
+
+function featureTagsFromSackvilleGuide(block) {
+  const strong = decode(String(block).match(/<strong\b[^>]*>([\s\S]*?)<\/strong>/i)?.[1] || '');
+  const tokens = strong.split('|').map((item) => item.replace(/\s+/g, '').toUpperCase()).filter(Boolean);
+  const tags = [];
+  if (tokens.includes('L')) tags.push('liquor_license');
+  if (tokens.includes('P') || /\bPatio\b/i.test(strong)) tags.push('patio');
+  if (tokens.includes('V')) tags.push('vegetarian_options');
+  if (tokens.includes('VG')) tags.push('vegan_options');
+  if (tokens.includes('GF')) tags.push('gluten_free_options');
+  return [...new Set(tags)];
+}
+
+function parseSackvilleFoodDrinkGuide(html, sourceMeta) {
+  const bodyStart = String(html).search(/Listing Icons/i);
+  const bodyEnd = String(html).search(/Please note businesses are operating|Sign Up Today|<footer\b/i);
+  const guideHtml = String(html).slice(bodyStart > 0 ? bodyStart : 0, bodyEnd > bodyStart ? bodyEnd : String(html).length);
+  const headings = [...guideHtml.matchAll(/<h4\b[^>]*>([\s\S]*?)<\/h4>/gi)];
+  const records = [];
+  for (let index = 0; index < headings.length; index += 1) {
+    const name = decode(headings[index][1]).replace(/< Back.*$/i, '').replace(/\s+/g, ' ').replace(/\u00a0/g, ' ').trim();
+    if (!name || name.length > 120 || /^</.test(name)) continue;
+    const start = headings[index].index + headings[index][0].length;
+    const end = index + 1 < headings.length ? headings[index + 1].index : guideHtml.length;
+    const block = guideHtml.slice(start, end);
+    const text = decode(block).replace(/\u00a0/g, ' ');
+    const lines = text.split(/\n+/).map((line) => line.trim()).filter(Boolean);
+    const featureTags = featureTagsFromSackvilleGuide(block);
+    const rawAddressLine = lines.find((line) => /\b\d{1,5}[A-Z]?[- ]/.test(line) && /Sackville Drive|Cobequid Road|Glendale Avenue/i.test(line));
+    const cleanAddress = rawAddressLine?.match(/\b\d{1,5}[A-Z]?[- ]?(?:[^|\n]{1,80})\b(?:Sackville Drive|Cobequid Road|Glendale Avenue)\b/i)?.[0]?.trim() || null;
+    const address = cleanAddress ? cleanAddress + ', Lower Sackville, NS' : extractAddress(lines, 'Lower Sackville');
+    const phone = extractPhone(text);
+    const category = decode(String(block).match(/<em\b[^>]*>([\s\S]*?)<\/em>/i)?.[1] || lines.at(-1) || '').replace(/\s+/g, ' ').trim() || 'Food & Drink';
+    const outbound = classifyOutbound(block, sourceMeta.url);
+    if (outbound.website && /(?:^|\.)restaurantji\.com$/i.test(canonicalHost(outbound.website))) outbound.website = null;
+    if (!address && !phone && !category) continue;
+    records.push({
+      id: 'sba-guide-' + slug(name) + '-' + slug(address || phone || index),
+      name,
+      category,
+      address,
+      city: 'Lower Sackville',
+      neighborhood: 'Sackville',
+      website: outbound.website,
+      socialProfiles: outbound.socialProfiles,
+      linkHubs: outbound.linkHubs,
+      actionLinks: outbound.actionLinks,
+      phone,
+      tags: featureTags,
+      sourceId: sourceMeta.id,
+      sourceName: sourceMeta.name,
+      sourceKind: sourceMeta.kind,
+      sourceUrl: sourceMeta.url,
+      observedAt: new Date().toISOString(),
+      reviewState: 'directory-listed'
+    });
+  }
+  return records;
+}
+
+function parseBedfordPlaceDining(html, sourceMeta) {
+  const records = [];
+  const rows = [...String(html).matchAll(/<div\b[^>]*class=["'][^"']*\brow\b[^"']*["'][^>]*>([\s\S]*?)(?=<div\b[^>]*class=["'][^"']*\brow\b[^"']*["'][^>]*>|<div\b[^>]*class=["']right-side["']|<footer\b|$)/gi)];
+  for (let index = 0; index < rows.length; index += 1) {
+    const block = rows[index][1];
+    const name = decode(String(block).match(/<h6\b[^>]*>([\s\S]*?)<\/h6>/i)?.[1] || '').replace(/\s+/g, ' ').trim();
+    if (!name || name.length > 120) continue;
+    const text = decode(block);
+    const phone = extractPhone(text);
+    const outbound = classifyOutbound(block, sourceMeta.url);
+    outbound.socialProfiles = outbound.socialProfiles.filter((profile, profileIndex, all) => !/BedfordPlaceMall|bedfordmall/i.test(profile.url) && all.findIndex((item) => item.platform === profile.platform && item.url === profile.url) === profileIndex);
+    if (outbound.website && /(?:^|\.)bedfordplacemall\.com$/i.test(canonicalHost(outbound.website))) outbound.website = null;
+    records.push({
+      id: 'bedford-place-' + slug(name) + '-' + slug(phone || index),
+      name,
+      category: 'Mall dining',
+      address: '1658 Bedford Highway, Bedford, NS B4A 2X9',
+      city: 'Bedford',
+      neighborhood: 'Bedford Place Mall',
+      website: outbound.website,
+      socialProfiles: outbound.socialProfiles,
+      linkHubs: outbound.linkHubs,
+      actionLinks: outbound.actionLinks,
+      phone,
+      sourceId: sourceMeta.id,
+      sourceName: sourceMeta.name,
+      sourceKind: sourceMeta.kind,
+      sourceUrl: sourceMeta.url,
+      observedAt: new Date().toISOString(),
+      reviewState: 'directory-listed'
+    });
+  }
+  return records;
+}
+
+const TASTE_HRM_COMMUNITIES = [
+  "Halifax", "Dartmouth", "Bedford", "Lower Sackville", "Sackville", "Cole Harbour",
+  "Eastern Passage", "Fall River", "Hammonds Plains", "Timberlea", "Tantallon", "Goffs"
+];
+
+function tasteMemberLinks(html, baseUrl) {
+  const seen = new Set();
+  const links = [];
+  for (const match of String(html).matchAll(/<a\b[^>]*class=["'][^"']*\bmember-category\b[^"']*\brestaurants\b[^"']*["'][^>]*href\s*=\s*["']([^"']+)["'][^>]*>([\s\S]*?)<\/a>/gi)) {
+    const url = safeUrl(match[1], baseUrl);
+    const name = decode(match[2]).replace(/\s+/g, " ").trim();
+    const key = normalize(name) + "|" + url;
+    if (!url || !normalize(name) || seen.has(key) || name.length > 160) continue;
+    seen.add(key);
+    links.push({ name, url });
+  }
+  return links;
+}
+
+function tasteMainHtml(html) {
+  const source = String(html);
+  const start = source.search(/<article\b|<h1\b/i);
+  const end = source.search(/<section\b[^>]*class=["'][^"']*comments\b|<aside\b[^>]*role=["']complementary["']|<footer\b/i);
+  return source.slice(start > 0 ? start : 0, end > start ? end : source.length);
+}
+
+function tasteSectionText(detailHtml, label) {
+  const escaped = String(label).replace(/[\\^$.*+?()[\]{}|]/g, "\\$&");
+  const pattern = new RegExp("<section\\b[^>]*class=[\"'][^\"']*members-detail[^\"']*[\"'][^>]*>\\s*<h2\\b[^>]*>\\s*" + escaped + "\\s*<\\/h2>([\\s\\S]*?)<\\/section>", "i");
+  const match = String(detailHtml).match(pattern);
+  return match?.[1] ? decode(match[1]).replace(/\s+/g, " ").trim() : null;
+}
+
+function tasteHrmCommunity(text) {
+  return TASTE_HRM_COMMUNITIES.find((community) => new RegExp("\\b" + community.replace(/[\\^$.*+?()[\]{}|]/g, "\\$&") + "\\b", "i").test(text)) || null;
+}
+
+function tasteAddress(value) {
+  const text = String(value || "").replace(/\s*View on Google Maps.*$/i, "").replace(/\s+/g, " ").trim();
+  if (!text) return null;
+  return /Nova Scotia|\bNS\b/i.test(text) ? text : text + ", NS";
+}
+
+function parseTasteDetail(html, url, item, sourceMeta) {
+  const detailHtml = tasteMainHtml(html);
+  const text = decode(detailHtml).replace(/\s+/g, " ").trim();
+  const h1 = String(detailHtml).match(/<h1\b[^>]*>([\s\S]*?)<\/h1>/i);
+  const name = decode(h1?.[1] || item?.name || "").replace(/\s+/g, " ").trim();
+  if (!name || name.length > 160) return null;
+  const region = decode(String(detailHtml).match(/<a\b[^>]*href=["'][^"']*member-region[^"']*["'][^>]*>([\s\S]*?)<\/a>/i)?.[1] || "").replace(/\s+/g, " ").trim();
+  const location = tasteSectionText(detailHtml, "Location");
+  const description = metaContent(detailHtml, "og:description") || metaContent(detailHtml, "description");
+  const community = tasteHrmCommunity(location || "") || tasteHrmCommunity(description || "") || (/Halifax Metro/i.test(region) ? "Halifax Metro" : null);
+  if (!/Halifax Metro/i.test(region) && !community) return null;
+  const outbound = classifyOutbound(detailHtml, url);
+  if (outbound.website && /(?:^|\.)tasteofnovascotia\.com$/i.test(canonicalHost(outbound.website))) outbound.website = null;
+  outbound.socialProfiles = outbound.socialProfiles.filter((profile, index, all) => {
+    const value = profile.url;
+    if (/TasteofNS|tasteofns|\/share\.php|intent\/tweet|pinterest\.com\/pin\/create/i.test(value)) return false;
+    return all.findIndex((item) => item.platform === profile.platform && item.url === profile.url) === index;
+  });
+  const rawImageUrl = metaContent(detailHtml, "og:image") || metaContent(detailHtml, "twitter:image");
+  const explicitImageUrl = rawImageUrl ? safeUrl(rawImageUrl, url) : null;
+  const pageUrl = safeUrl(url);
+  const imageUrl = explicitImageUrl && explicitImageUrl.replace(/\/$/, "") !== pageUrl?.replace(/\/$/, "") ? explicitImageUrl : null;
+  const address = tasteAddress(location) || extractAddress(text.split(/\n+/), community || "Halifax");
+  const phone = extractPhone(tasteSectionText(detailHtml, "Contact") || text);
+  const openingHours = tasteSectionText(detailHtml, "Hours");
+  if (!address && !phone && !outbound.website && !outbound.socialProfiles.length && !openingHours) return null;
+
+  return {
+    id: "taste-ns-" + slug(name) + "-" + slug(address || new URL(url).pathname.split("/").filter(Boolean).at(-1) || "member"),
+    name,
+    category: "Taste of Nova Scotia restaurant member",
+    description: description || null,
+    address,
+    city: community || (region || "Halifax Metro"),
+    neighborhood: community || null,
+    website: outbound.website,
+    socialProfiles: outbound.socialProfiles,
+    linkHubs: outbound.linkHubs,
+    actionLinks: outbound.actionLinks,
+    phone,
+    openingHours,
+    tags: ["taste_of_nova_scotia_member"],
+    sourceImageUrl: imageUrl || null,
+    rightsState: imageUrl ? "requires_rights_review" : null,
+    sourceId: sourceMeta.id,
+    sourceName: sourceMeta.name,
+    sourceKind: sourceMeta.kind,
+    sourceUrl: url,
+    sourceUpdatedAt: metaContent(detailHtml, "article:modified_time") || null,
+    observedAt: new Date().toISOString(),
+    reviewState: "directory-listed"
+  };
+}
+
+async function fetchTasteDirectory(sourceMeta) {
+  const records = [];
+  const { html, resolvedUrl } = await get(sourceMeta.url);
+  const links = tasteMemberLinks(html, resolvedUrl);
+  for (let index = 0; index < links.length; index += 5) {
+    const batch = links.slice(index, index + 5);
+    const results = await Promise.all(batch.map(async (item) => {
+      try {
+        const { html: detailHtml, resolvedUrl: detailUrl } = await get(item.url);
+        return parseTasteDetail(detailHtml, detailUrl, item, sourceMeta);
+      } catch (error) {
+        failures.push({ sourceId: sourceMeta.id, sourceName: sourceMeta.name, sourceUrl: item.url, reason: error.message });
+        return null;
+      }
+    }));
+    records.push(...results.filter(Boolean));
+  }
+  return { records, links, checked: links.length, unknown: records.filter((record) => !knownNames.has(normalize(record.name))).length };
 }
 
 async function fetchRansDirectory(sourceMeta) {
@@ -901,6 +1113,41 @@ try {
 } catch (error) {
   failures.push({ sourceId: sackvilleSource.id, sourceName: sackvilleSource.name, sourceUrl: sackvilleSource.url, reason: error.message });
 }
+
+for (const config of [
+  { sourceId: 'sackville-food-drink-guide', parser: parseSackvilleFoodDrinkGuide, minimumObserved: 40 },
+  { sourceId: 'bedford-place-mall-dining', parser: parseBedfordPlaceDining, minimumObserved: 8 }
+]) {
+  const registered = source(config.sourceId);
+  try {
+    const { html, resolvedUrl } = await get(registered.url);
+    const parsed = config.parser(html, { ...registered, url: resolvedUrl });
+    if (config.minimumObserved && parsed.length < config.minimumObserved) throw new Error('parser_yield_below_expected:' + parsed.length + '<' + config.minimumObserved);
+    records.push(...parsed);
+    sourceMeta.push({ id: registered.id, name: registered.name, kind: registered.kind, url: registered.url, directoryEntriesObserved: parsed.length, parserMode: registered.parserMode });
+  } catch (error) {
+    failures.push({ sourceId: registered.id, sourceName: registered.name, sourceUrl: registered.url, reason: error.message });
+  }
+}
+
+const tasteSource = source("taste-of-nova-scotia-restaurants");
+try {
+  const result = await fetchTasteDirectory(tasteSource);
+  if (result.records.length < 5) throw new Error("parser_yield_below_expected:" + result.records.length + "<5");
+  records.push(...result.records);
+  sourceMeta.push({
+    id: tasteSource.id,
+    name: tasteSource.name,
+    kind: tasteSource.kind,
+    url: tasteSource.url,
+    directoryEntriesObserved: result.links.length,
+    newNameCandidatesChecked: result.checked,
+    parserMode: "member_directory_detail_pages_hrm_filtered"
+  });
+} catch (error) {
+  failures.push({ sourceId: tasteSource.id, sourceName: tasteSource.name, sourceUrl: tasteSource.url, reason: error.message });
+}
+
 const quinpoolSource = source("quinpool-road-food-drink");
 try {
   const result = await fetchQuinpoolDirectory(quinpoolSource);
@@ -996,3 +1243,6 @@ await writeFile(new URL("../data/build/directory-restaurant-leads.json", import.
 await writeFile(new URL("../data/directory-restaurant-leads.js", import.meta.url), `window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = ${JSON.stringify(payload, null, 2)};\n`);
 console.log(`Directory discovery: records=${payload.count}, new-to-catalog-name=${payload.newToCatalogCount}, failures=${failures.length}.`);
 for (const item of sourceMeta) console.log(`- ${item.id}: observed=${item.directoryEntriesObserved ?? "paged"}`);
+
+
+
