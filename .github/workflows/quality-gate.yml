@@ -82,6 +82,7 @@ jobs:
           node scripts/check-patio-directory-facts.mjs
           node scripts/check-public-special-source-leads.mjs
           node scripts/test-hours-state.mjs
+          node scripts/test-event-date-helpers.mjs
           node scripts/check-structured-specials.mjs
           node scripts/test-city-event-source-drift.mjs
 
