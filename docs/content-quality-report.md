@@ -1,6 +1,6 @@
 # Halifax Sourced content quality report
 
-Generated: 2026-09-04T12:01:43.689Z
+Generated: 2026-09-04T12:12:31.090Z
 
 ## Summary
 

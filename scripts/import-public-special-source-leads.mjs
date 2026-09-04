@@ -18,7 +18,7 @@ const foodCrawlEndTime = "20:00";
 const timeoutMs = Number(process.env.PUBLIC_SPECIAL_LEAD_TIMEOUT_MS ?? 12000);
 const limit = Number(process.env.PUBLIC_SPECIAL_LEAD_LIMIT ?? 500);
 const campaignLimit = Number(process.env.PUBLIC_SPECIAL_CAMPAIGN_LIMIT ?? 120);
-const campaignCrawlDelayMs = Number(process.env.PUBLIC_SPECIAL_CAMPAIGN_CRAWL_DELAY_MS ?? 10000);
+const campaignCrawlDelayMs = Number(process.env.PUBLIC_SPECIAL_CAMPAIGN_CRAWL_DELAY_MS ?? 250);
 const userAgent = "HalifaxSourced/0.8 (+https://github.com/JeremyHennessy/HalifaxSourced)";
 const observedAt = new Date().toISOString();
 
