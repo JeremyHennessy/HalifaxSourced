@@ -108,7 +108,7 @@ async function auditRoute(name) {
       const style = getComputedStyle(element);
       if (style.position !== "fixed" || style.visibility === "hidden" || style.opacity === "0" || style.pointerEvents === "none") return false;
       const rect = element.getBoundingClientRect();
-      return tabbar && rect.width > 0 && rect.height > 0 && rect.bottom > tabbar.top + 1 && rect.top < tabbar.bottom - 1;
+      return tabbar && rect.width > 0 && rect.height > 0 && rect.right > 0 && rect.left < innerWidth && rect.bottom > tabbar.top + 1 && rect.top < tabbar.bottom - 1;
     }).map((element) => (element.textContent || element.className || element.tagName).trim().replace(/\s+/g, " ").slice(0, 90));
     const unsafeExternalLinks = [...document.querySelectorAll('main a[href^="http"]')].filter((link) => link.target !== "_blank" || !String(link.rel).includes("noreferrer")).map((link) => link.href);
     return {
