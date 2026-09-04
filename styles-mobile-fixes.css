@@ -10,6 +10,14 @@
     margin-bottom:0;
   }
 
+  .restaurant-hero{
+    min-height:min(430px,calc(100dvh - var(--mobile-tabbar-h) - 40px))!important;
+  }
+
+  .restaurant-hero-overlay{
+    padding-bottom:24px!important;
+  }
+
   .detail-layout,
   .detail-main{
     padding-bottom:calc(128px + var(--mobile-tabbar-h))!important;
