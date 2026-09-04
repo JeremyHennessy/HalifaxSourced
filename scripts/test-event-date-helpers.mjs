@@ -41,6 +41,8 @@ const context = vm.createContext({
   URLSearchParams,
   setTimeout,
   clearTimeout,
+  addEventListener() {},
+  removeEventListener() {},
   window: null,
   document: {
     body: { classList: { add() {}, remove() {}, contains() { return false; } } },
