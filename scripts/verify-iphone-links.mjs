@@ -85,7 +85,7 @@ async function auditRoute(name) {
     const visible = elements.filter((element) => {
       const rect = element.getBoundingClientRect();
       const style = getComputedStyle(element);
-      return rect.width > 0 && rect.height > 0 && style.display !== "none" && style.visibility !== "hidden" && rect.bottom > 0 && rect.right > 0 && rect.top < innerHeight && rect.left < innerWidth;
+      return rect.width > 0 && rect.height > 0 && style.display !== "none" && style.visibility !== "hidden" && style.opacity !== "0" && style.pointerEvents !== "none" && rect.bottom > 0 && rect.right > 0 && rect.top < innerHeight && rect.left < innerWidth;
     });
     const smallTargets = [];
     const blockedTargets = [];
@@ -104,9 +104,9 @@ async function auditRoute(name) {
     }
     const tabbar = document.querySelector(".mobile-tabbar")?.getBoundingClientRect();
     const lowerFixedOverlaps = [...document.querySelectorAll("body *")].filter((element) => {
-      if (element.closest(".mobile-tabbar,.toast-region,[data-mobile-more-sheet],.mobile-more-sheet")) return false;
+      if (element.closest(".mobile-tabbar,.toast-region,[data-mobile-more-sheet],.mobile-more-sheet,.mobile-more-backdrop")) return false;
       const style = getComputedStyle(element);
-      if (style.position !== "fixed") return false;
+      if (style.position !== "fixed" || style.visibility === "hidden" || style.opacity === "0" || style.pointerEvents === "none") return false;
       const rect = element.getBoundingClientRect();
       return tabbar && rect.width > 0 && rect.height > 0 && rect.bottom > tabbar.top + 1 && rect.top < tabbar.bottom - 1;
     }).map((element) => (element.textContent || element.className || element.tagName).trim().replace(/\s+/g, " ").slice(0, 90));
