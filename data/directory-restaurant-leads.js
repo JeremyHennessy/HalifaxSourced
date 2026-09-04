@@ -1,6 +1,6 @@
 window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
   "version": 2,
-  "generatedAt": "2026-09-04T12:50:16.722Z",
+  "generatedAt": "2026-09-04T14:51:31.056Z",
   "registryVersion": 1,
   "sources": [
     {
@@ -15,7 +15,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "kind": "business_improvement_district_directory",
       "url": "https://members.downtownhalifax.ca/directory/Search/food-drink-526691",
       "directoryEntriesObserved": 205,
-      "newNameCandidatesChecked": 122
+      "newNameCandidatesChecked": 120
     },
     {
       "id": "sackville-business-food-drink",
@@ -24,6 +24,31 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "url": "https://sackvillebusiness.com/food-drink",
       "directoryEntriesObserved": 54,
       "parserMode": "drupal_food_drink_listing"
+    },
+    {
+      "id": "sackville-food-drink-guide",
+      "name": "Sackville Business Association Food & Drink Guide",
+      "kind": "business_improvement_district_feature_directory",
+      "url": "https://sackvillebusiness.com/food-drink-guide",
+      "directoryEntriesObserved": 48,
+      "parserMode": "single_page_food_drink_feature_guide"
+    },
+    {
+      "id": "bedford-place-mall-dining",
+      "name": "Bedford Place Mall Dining & Fun directory",
+      "kind": "shopping_centre_directory",
+      "url": "https://bedfordplacemall.com/dining.php",
+      "directoryEntriesObserved": 10,
+      "parserMode": "single_page_mall_dining_directory"
+    },
+    {
+      "id": "taste-of-nova-scotia-restaurants",
+      "name": "Taste of Nova Scotia restaurant member directory",
+      "kind": "culinary_tourism_member_directory",
+      "url": "https://tasteofnovascotia.com/member-category/restaurants/",
+      "directoryEntriesObserved": 56,
+      "newNameCandidatesChecked": 56,
+      "parserMode": "member_directory_detail_pages_hrm_filtered"
     },
     {
       "id": "quinpool-road-food-drink",
@@ -68,8 +93,8 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "directoryEntriesObserved": 82
     }
   ],
-  "count": 701,
-  "newToCatalogCount": 549,
+  "count": 769,
+  "newToCatalogCount": 581,
   "records": [
     {
       "id": "ns-tourism-2-doors-down-food-wine-dartmouth-149-hector-gate-dartmouth-crossing",
@@ -90,7 +115,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/2-doors-down-food-wine-dartmouth/",
-      "observedAt": "2026-09-04T12:46:39.898Z",
+      "observedAt": "2026-09-04T14:49:29.978Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -114,7 +139,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/afishionado-fishmongers/",
-      "observedAt": "2026-09-04T12:46:39.901Z",
+      "observedAt": "2026-09-04T14:49:29.981Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -138,7 +163,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/agricola-street-brasserie/",
-      "observedAt": "2026-09-04T12:46:39.901Z",
+      "observedAt": "2026-09-04T14:49:29.982Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": true,
       "alreadyInCatalog": true
@@ -162,7 +187,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/alderney-landing-community-cultural-centre/",
-      "observedAt": "2026-09-04T12:46:39.901Z",
+      "observedAt": "2026-09-04T14:49:29.982Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -186,7 +211,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/alderney-landing-farmers-market/",
-      "observedAt": "2026-09-04T12:46:39.901Z",
+      "observedAt": "2026-09-04T14:49:29.982Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -210,7 +235,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/alt-hotel-halifax-airport/",
-      "observedAt": "2026-09-04T12:46:39.903Z",
+      "observedAt": "2026-09-04T14:49:29.984Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -234,7 +259,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/anemone-dining/",
-      "observedAt": "2026-09-04T12:46:39.904Z",
+      "observedAt": "2026-09-04T14:49:29.985Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -258,7 +283,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/antojo-tacos-tequila/",
-      "observedAt": "2026-09-04T12:46:41.998Z",
+      "observedAt": "2026-09-04T14:49:31.639Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": true,
       "alreadyInCatalog": true
@@ -282,7 +307,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/aroma-maya-coffee-donuts-dartmouth/",
-      "observedAt": "2026-09-04T12:46:42.000Z",
+      "observedAt": "2026-09-04T14:49:31.640Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -306,7 +331,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/aroma-maya-coffee-donuts-enfield/",
-      "observedAt": "2026-09-04T12:46:42.000Z",
+      "observedAt": "2026-09-04T14:49:31.640Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -330,7 +355,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/atithi-indian-restaurant/",
-      "observedAt": "2026-09-04T12:46:42.004Z",
+      "observedAt": "2026-09-04T14:49:31.642Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -354,7 +379,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/au-liban/",
-      "observedAt": "2026-09-04T12:46:42.005Z",
+      "observedAt": "2026-09-04T14:49:31.643Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": true,
       "alreadyInCatalog": true
@@ -378,7 +403,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/bar-moxy/",
-      "observedAt": "2026-09-04T12:46:42.007Z",
+      "observedAt": "2026-09-04T14:49:31.644Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -402,7 +427,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/bar-sofia/",
-      "observedAt": "2026-09-04T12:46:42.007Z",
+      "observedAt": "2026-09-04T14:49:31.644Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -426,7 +451,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/bar-stillwell/",
-      "observedAt": "2026-09-04T12:46:42.007Z",
+      "observedAt": "2026-09-04T14:49:31.644Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -450,7 +475,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/battery-park-beer-bar-eatery/",
-      "observedAt": "2026-09-04T12:46:44.072Z",
+      "observedAt": "2026-09-04T14:49:33.293Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": true,
       "alreadyInCatalog": true
@@ -474,7 +499,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/beaver-bank-station/",
-      "observedAt": "2026-09-04T12:46:44.076Z",
+      "observedAt": "2026-09-04T14:49:33.295Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -498,7 +523,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/bells-lane-kitchen/",
-      "observedAt": "2026-09-04T12:46:44.078Z",
+      "observedAt": "2026-09-04T14:49:33.296Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -522,7 +547,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/best-western-plus-chocolate-lake-hotel/",
-      "observedAt": "2026-09-04T12:46:44.079Z",
+      "observedAt": "2026-09-04T14:49:33.296Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -546,7 +571,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/best-western-plus-dartmouth-hotel-suites/",
-      "observedAt": "2026-09-04T12:46:44.079Z",
+      "observedAt": "2026-09-04T14:49:33.296Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -570,7 +595,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/beyond-pho-vietnamese-cuisine/",
-      "observedAt": "2026-09-04T12:46:44.080Z",
+      "observedAt": "2026-09-04T14:49:33.297Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -594,7 +619,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/beyond-temptation/",
-      "observedAt": "2026-09-04T12:46:44.080Z",
+      "observedAt": "2026-09-04T14:49:33.297Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -618,7 +643,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/blue-olive-greek-taverna/",
-      "observedAt": "2026-09-04T12:46:46.204Z",
+      "observedAt": "2026-09-04T14:49:34.992Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -642,7 +667,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/boondocks-restaurant/",
-      "observedAt": "2026-09-04T12:46:46.206Z",
+      "observedAt": "2026-09-04T14:49:34.993Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -666,7 +691,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/brewery-park-hotel/",
-      "observedAt": "2026-09-04T12:46:46.207Z",
+      "observedAt": "2026-09-04T14:49:34.994Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -690,7 +715,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/bulwark-cider-house/",
-      "observedAt": "2026-09-04T12:46:46.209Z",
+      "observedAt": "2026-09-04T14:49:34.995Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -714,7 +739,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/bundle-of-bun-halifax/",
-      "observedAt": "2026-09-04T12:46:46.209Z",
+      "observedAt": "2026-09-04T14:49:34.995Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -738,7 +763,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/burnside-brewing-company/",
-      "observedAt": "2026-09-04T12:46:46.209Z",
+      "observedAt": "2026-09-04T14:49:34.996Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -762,7 +787,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/cable-wharf-kitchen-patio/",
-      "observedAt": "2026-09-04T12:46:46.210Z",
+      "observedAt": "2026-09-04T14:49:34.996Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -786,7 +811,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/cafe-lunette/",
-      "observedAt": "2026-09-04T12:46:47.895Z",
+      "observedAt": "2026-09-04T14:49:36.700Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": true,
       "alreadyInCatalog": true
@@ -810,7 +835,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/cambridge-suites-hotel-halifax/",
-      "observedAt": "2026-09-04T12:46:47.895Z",
+      "observedAt": "2026-09-04T14:49:36.700Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -834,7 +859,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/captain-ma-noodles/",
-      "observedAt": "2026-09-04T12:46:47.901Z",
+      "observedAt": "2026-09-04T14:49:36.703Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -858,7 +883,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/chain-yard-urban-cidery/",
-      "observedAt": "2026-09-04T12:46:47.904Z",
+      "observedAt": "2026-09-04T14:49:36.705Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": true,
       "alreadyInCatalog": true
@@ -882,7 +907,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/charger-burger/",
-      "observedAt": "2026-09-04T12:46:47.904Z",
+      "observedAt": "2026-09-04T14:49:36.705Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -906,7 +931,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/chebucto-inn/",
-      "observedAt": "2026-09-04T12:46:47.905Z",
+      "observedAt": "2026-09-04T14:49:36.705Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -930,7 +955,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/cheese-curds-gourmet-burgers-poutinerie/",
-      "observedAt": "2026-09-04T12:46:47.905Z",
+      "observedAt": "2026-09-04T14:49:36.705Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -954,7 +979,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/chef-abod-cafe-catering/",
-      "observedAt": "2026-09-04T12:46:49.978Z",
+      "observedAt": "2026-09-04T14:49:38.518Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -978,7 +1003,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/chicken-little-dairy-bar/",
-      "observedAt": "2026-09-04T12:46:49.979Z",
+      "observedAt": "2026-09-04T14:49:38.519Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -1002,7 +1027,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/citadel-coffee-bar/",
-      "observedAt": "2026-09-04T12:46:49.979Z",
+      "observedAt": "2026-09-04T14:49:38.520Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -1026,7 +1051,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/clayton-park-bar-grill/",
-      "observedAt": "2026-09-04T12:46:49.980Z",
+      "observedAt": "2026-09-04T14:49:38.521Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -1050,7 +1075,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/clearwater-retail-shop-bedford/",
-      "observedAt": "2026-09-04T12:46:49.980Z",
+      "observedAt": "2026-09-04T14:49:38.521Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -1074,7 +1099,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/clearwater-retail-shop/",
-      "observedAt": "2026-09-04T12:46:49.980Z",
+      "observedAt": "2026-09-04T14:49:38.521Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -1098,7 +1123,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/coldstream-clear-distillery-dartmouth/",
-      "observedAt": "2026-09-04T12:46:49.982Z",
+      "observedAt": "2026-09-04T14:49:38.523Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -1122,7 +1147,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/cole-harbour-heritage-farm-museum/",
-      "observedAt": "2026-09-04T12:46:49.983Z",
+      "observedAt": "2026-09-04T14:49:38.523Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -1146,7 +1171,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/compass-distillers/",
-      "observedAt": "2026-09-04T12:46:49.985Z",
+      "observedAt": "2026-09-04T14:49:38.525Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -1170,7 +1195,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/courtyard-by-marriott-halifax-downtown/",
-      "observedAt": "2026-09-04T12:46:49.987Z",
+      "observedAt": "2026-09-04T14:49:38.526Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -1194,7 +1219,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/courtyard-halifax-dartmouth/",
-      "observedAt": "2026-09-04T12:46:49.988Z",
+      "observedAt": "2026-09-04T14:49:38.526Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -1218,7 +1243,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/creme/",
-      "observedAt": "2026-09-04T12:46:52.097Z",
+      "observedAt": "2026-09-04T14:49:40.146Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": true,
       "alreadyInCatalog": true
@@ -1242,7 +1267,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/cup-of-soul-cafe/",
-      "observedAt": "2026-09-04T12:46:52.098Z",
+      "observedAt": "2026-09-04T14:49:40.147Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -1266,7 +1291,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/cut-steakhouse/",
-      "observedAt": "2026-09-04T12:46:52.098Z",
+      "observedAt": "2026-09-04T14:49:40.147Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -1290,7 +1315,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/da-zero-ristorante/",
-      "observedAt": "2026-09-04T12:46:52.098Z",
+      "observedAt": "2026-09-04T14:49:40.147Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": true,
       "alreadyInCatalog": true
@@ -1314,7 +1339,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/dalhousie-university-summer-accommodations/",
-      "observedAt": "2026-09-04T12:46:52.098Z",
+      "observedAt": "2026-09-04T14:49:40.148Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -1338,7 +1363,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/dalhousie-university-archives-and-special-collections/",
-      "observedAt": "2026-09-04T12:46:52.098Z",
+      "observedAt": "2026-09-04T14:49:40.148Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -1362,7 +1387,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/darty-brewing/",
-      "observedAt": "2026-09-04T12:46:52.099Z",
+      "observedAt": "2026-09-04T14:49:40.148Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -1386,7 +1411,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/dear-friend-bar/",
-      "observedAt": "2026-09-04T12:46:52.099Z",
+      "observedAt": "2026-09-04T14:49:40.149Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": true,
       "alreadyInCatalog": true
@@ -1410,7 +1435,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/delta-hotels-by-marriott-dartmouth/",
-      "observedAt": "2026-09-04T12:46:52.099Z",
+      "observedAt": "2026-09-04T14:49:40.149Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -1434,7 +1459,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/dessert-yard/",
-      "observedAt": "2026-09-04T12:46:52.100Z",
+      "observedAt": "2026-09-04T14:49:40.150Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -1458,7 +1483,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/devilla-wok-furinkazan/",
-      "observedAt": "2026-09-04T12:46:52.100Z",
+      "observedAt": "2026-09-04T14:49:40.150Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -1482,7 +1507,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/dilly-dally-coffee-cafe/",
-      "observedAt": "2026-09-04T12:46:52.100Z",
+      "observedAt": "2026-09-04T14:49:40.150Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": true,
       "alreadyInCatalog": true
@@ -1506,7 +1531,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/discovery-centre/",
-      "observedAt": "2026-09-04T12:46:52.101Z",
+      "observedAt": "2026-09-04T14:49:40.150Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -1530,7 +1555,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/donninis-pizza/",
-      "observedAt": "2026-09-04T12:46:52.101Z",
+      "observedAt": "2026-09-04T14:49:40.151Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": true,
       "alreadyInCatalog": true
@@ -1554,7 +1579,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/drift/",
-      "observedAt": "2026-09-04T12:46:54.094Z",
+      "observedAt": "2026-09-04T14:49:41.825Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": true,
       "alreadyInCatalog": true
@@ -1578,7 +1603,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/drink-sprizzi/",
-      "observedAt": "2026-09-04T12:46:54.094Z",
+      "observedAt": "2026-09-04T14:49:41.825Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -1602,7 +1627,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/duck-king/",
-      "observedAt": "2026-09-04T12:46:54.094Z",
+      "observedAt": "2026-09-04T14:49:41.825Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -1626,7 +1651,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/durty-nellys-irish-pub/",
-      "observedAt": "2026-09-04T12:46:54.094Z",
+      "observedAt": "2026-09-04T14:49:41.826Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": true,
       "alreadyInCatalog": true
@@ -1650,7 +1675,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/edna-restaurant/",
-      "observedAt": "2026-09-04T12:46:54.096Z",
+      "observedAt": "2026-09-04T14:49:41.827Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -1674,7 +1699,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/efty-dishes/",
-      "observedAt": "2026-09-04T12:46:54.096Z",
+      "observedAt": "2026-09-04T14:49:41.827Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -1698,7 +1723,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/eliot-and-vine/",
-      "observedAt": "2026-09-04T12:46:54.097Z",
+      "observedAt": "2026-09-04T14:49:41.828Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -1722,7 +1747,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/evans-fresh-seafoods-restaurant/",
-      "observedAt": "2026-09-04T12:46:54.098Z",
+      "observedAt": "2026-09-04T14:49:41.829Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -1746,7 +1771,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/fans-chinese-restaurant/",
-      "observedAt": "2026-09-04T12:46:54.098Z",
+      "observedAt": "2026-09-04T14:49:41.830Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": true,
       "alreadyInCatalog": true
@@ -1770,7 +1795,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/first-sight-coffee-bar/",
-      "observedAt": "2026-09-04T12:46:54.099Z",
+      "observedAt": "2026-09-04T14:49:41.830Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": true,
       "alreadyInCatalog": true
@@ -1794,7 +1819,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/fishermans-cove/",
-      "observedAt": "2026-09-04T12:46:56.292Z",
+      "observedAt": "2026-09-04T14:49:43.839Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -1818,7 +1843,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/fishermans-market-international/",
-      "observedAt": "2026-09-04T12:46:56.292Z",
+      "observedAt": "2026-09-04T14:49:43.839Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -1842,7 +1867,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/five-fishermen-restaurant/",
-      "observedAt": "2026-09-04T12:46:56.292Z",
+      "observedAt": "2026-09-04T14:49:43.839Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -1866,7 +1891,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/flynns-dairy-bar-convenience/",
-      "observedAt": "2026-09-04T12:46:56.293Z",
+      "observedAt": "2026-09-04T14:49:43.840Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -1890,7 +1915,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/four-points-by-sheraton-halifax/",
-      "observedAt": "2026-09-04T12:46:56.294Z",
+      "observedAt": "2026-09-04T14:49:43.841Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -1914,7 +1939,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/frabjous-delights-specialty-foods-whim-chocolate/",
-      "observedAt": "2026-09-04T12:46:56.295Z",
+      "observedAt": "2026-09-04T14:49:43.842Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -1938,7 +1963,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/freedom-culinary-culture/",
-      "observedAt": "2026-09-04T12:46:56.295Z",
+      "observedAt": "2026-09-04T14:49:43.842Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -1962,7 +1987,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/fresh-twenty-one-at-nscc/",
-      "observedAt": "2026-09-04T12:46:56.295Z",
+      "observedAt": "2026-09-04T14:49:43.842Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -1986,7 +2011,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/future-inns-halifax/",
-      "observedAt": "2026-09-04T12:46:56.296Z",
+      "observedAt": "2026-09-04T14:49:43.844Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -2010,7 +2035,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/gahan-house-nova-centre/",
-      "observedAt": "2026-09-04T12:46:56.297Z",
+      "observedAt": "2026-09-04T14:49:43.844Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -2034,7 +2059,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/garrison-brewing-company/",
-      "observedAt": "2026-09-04T12:46:56.297Z",
+      "observedAt": "2026-09-04T14:49:43.844Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -2058,7 +2083,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/geovanno-pizzeria/",
-      "observedAt": "2026-09-04T12:46:56.297Z",
+      "observedAt": "2026-09-04T14:49:43.845Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -2082,7 +2107,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/gio/",
-      "observedAt": "2026-09-04T12:46:58.332Z",
+      "observedAt": "2026-09-04T14:49:45.802Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": true,
       "alreadyInCatalog": true
@@ -2106,7 +2131,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/golden-fortune-restaurant/",
-      "observedAt": "2026-09-04T12:46:58.333Z",
+      "observedAt": "2026-09-04T14:49:45.803Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -2130,7 +2155,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/good-robot-brewing-commons-beer-garden-good-robot-shop/",
-      "observedAt": "2026-09-04T12:46:58.333Z",
+      "observedAt": "2026-09-04T14:49:45.804Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -2154,7 +2179,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/good-robot-brewing-elmsdale/",
-      "observedAt": "2026-09-04T12:46:58.333Z",
+      "observedAt": "2026-09-04T14:49:45.804Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -2178,7 +2203,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/good-robot-brewing-company-robie-street/",
-      "observedAt": "2026-09-04T12:46:58.333Z",
+      "observedAt": "2026-09-04T14:49:45.804Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -2202,7 +2227,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/gourmandises-avenue-chocolaterie/",
-      "observedAt": "2026-09-04T12:46:58.333Z",
+      "observedAt": "2026-09-04T14:49:45.804Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -2226,7 +2251,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/habaneros-modern-taco-bar/",
-      "observedAt": "2026-09-04T12:46:58.335Z",
+      "observedAt": "2026-09-04T14:49:45.807Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": true,
       "alreadyInCatalog": true
@@ -2250,7 +2275,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/halifax-airport-hotel/",
-      "observedAt": "2026-09-04T12:46:58.336Z",
+      "observedAt": "2026-09-04T14:49:45.807Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -2274,7 +2299,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/halifax-backpackers-hostel/",
-      "observedAt": "2026-09-04T12:46:58.336Z",
+      "observedAt": "2026-09-04T14:49:45.807Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -2298,7 +2323,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/halifax-brewery-farmers-market/",
-      "observedAt": "2026-09-04T12:46:58.336Z",
+      "observedAt": "2026-09-04T14:49:45.808Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -2322,7 +2347,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/halifax-distilling-company/",
-      "observedAt": "2026-09-04T12:46:58.337Z",
+      "observedAt": "2026-09-04T14:49:45.808Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -2346,7 +2371,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/halifax-forum-farmers-market/",
-      "observedAt": "2026-09-04T12:46:58.337Z",
+      "observedAt": "2026-09-04T14:49:45.808Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -2370,7 +2395,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/halifax-marriott-harbourfront/",
-      "observedAt": "2026-09-04T12:46:58.337Z",
+      "observedAt": "2026-09-04T14:49:45.808Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -2394,7 +2419,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/halifax-seaport-farmers-market/",
-      "observedAt": "2026-09-04T12:46:58.337Z",
+      "observedAt": "2026-09-04T14:49:45.809Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -2418,7 +2443,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/halifax-tower-hotel-conference-centre/",
-      "observedAt": "2026-09-04T12:46:58.337Z",
+      "observedAt": "2026-09-04T14:49:45.809Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -2442,7 +2467,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/harbour-city-halifax/",
-      "observedAt": "2026-09-04T12:46:59.981Z",
+      "observedAt": "2026-09-04T14:49:47.436Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -2466,7 +2491,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/harbourstone-stones-throw-patio/",
-      "observedAt": "2026-09-04T12:46:59.982Z",
+      "observedAt": "2026-09-04T14:49:47.437Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -2490,7 +2515,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/harvest-clean-eats-bayers-lake/",
-      "observedAt": "2026-09-04T12:46:59.982Z",
+      "observedAt": "2026-09-04T14:49:47.437Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -2514,7 +2539,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/heartwood-by-the-sea/",
-      "observedAt": "2026-09-04T12:46:59.983Z",
+      "observedAt": "2026-09-04T14:49:47.438Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -2538,7 +2563,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/heng-fung-restaurant/",
-      "observedAt": "2026-09-04T12:46:59.983Z",
+      "observedAt": "2026-09-04T14:49:47.438Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -2562,7 +2587,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/highwayman-restaurant-bar/",
-      "observedAt": "2026-09-04T12:46:59.985Z",
+      "observedAt": "2026-09-04T14:49:47.439Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -2586,7 +2611,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/hilton-garden-inn-halifax-airport/",
-      "observedAt": "2026-09-04T12:46:59.985Z",
+      "observedAt": "2026-09-04T14:49:47.439Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -2610,7 +2635,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/historic-properties/",
-      "observedAt": "2026-09-04T12:46:59.985Z",
+      "observedAt": "2026-09-04T14:49:47.440Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -2634,7 +2659,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/hope-blooms-farmers-market/",
-      "observedAt": "2026-09-04T12:46:59.986Z",
+      "observedAt": "2026-09-04T14:49:47.440Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -2658,7 +2683,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/humble-pie-kitchen/",
-      "observedAt": "2026-09-04T12:47:02.017Z",
+      "observedAt": "2026-09-04T14:49:49.123Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": true,
       "alreadyInCatalog": true
@@ -2682,7 +2707,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/hungry-bowl/",
-      "observedAt": "2026-09-04T12:47:02.017Z",
+      "observedAt": "2026-09-04T14:49:49.123Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": true,
       "alreadyInCatalog": true
@@ -2706,7 +2731,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/hux-bar-bistro/",
-      "observedAt": "2026-09-04T12:47:02.017Z",
+      "observedAt": "2026-09-04T14:49:49.123Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -2730,7 +2755,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/hydrostone-district/",
-      "observedAt": "2026-09-04T12:47:02.018Z",
+      "observedAt": "2026-09-04T14:49:49.123Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -2754,7 +2779,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/inn-on-the-lake/",
-      "observedAt": "2026-09-04T12:47:02.019Z",
+      "observedAt": "2026-09-04T14:49:49.124Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -2778,7 +2803,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/jamdouns-food-truck/",
-      "observedAt": "2026-09-04T12:47:02.020Z",
+      "observedAt": "2026-09-04T14:49:49.126Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -2802,7 +2827,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/jolt-cafe/",
-      "observedAt": "2026-09-04T12:47:02.021Z",
+      "observedAt": "2026-09-04T14:49:49.127Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -2826,7 +2851,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/kebab-express/",
-      "observedAt": "2026-09-04T12:47:02.022Z",
+      "observedAt": "2026-09-04T14:49:49.128Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -2850,7 +2875,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/king-of-donair/",
-      "observedAt": "2026-09-04T12:47:04.070Z",
+      "observedAt": "2026-09-04T14:49:50.747Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": true,
       "alreadyInCatalog": true
@@ -2874,7 +2899,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/lake-city-cider/",
-      "observedAt": "2026-09-04T12:47:04.073Z",
+      "observedAt": "2026-09-04T14:49:50.749Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": true,
       "alreadyInCatalog": true
@@ -2898,7 +2923,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/larrys-sandwiches-sides/",
-      "observedAt": "2026-09-04T12:47:04.074Z",
+      "observedAt": "2026-09-04T14:49:50.750Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -2922,7 +2947,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/lord-nelson-hotel-suites/",
-      "observedAt": "2026-09-04T12:47:06.166Z",
+      "observedAt": "2026-09-04T14:49:52.464Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -2946,7 +2971,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/los-toros-authentico-espanol/",
-      "observedAt": "2026-09-04T12:47:06.166Z",
+      "observedAt": "2026-09-04T14:49:52.465Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -2970,7 +2995,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/lot-six-bar-restaurant/",
-      "observedAt": "2026-09-04T12:47:06.166Z",
+      "observedAt": "2026-09-04T14:49:52.465Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": true,
       "alreadyInCatalog": true
@@ -2994,7 +3019,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/manuelas-cakery/",
-      "observedAt": "2026-09-04T12:47:08.200Z",
+      "observedAt": "2026-09-04T14:49:54.056Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -3018,7 +3043,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/marthas-pizza-ii/",
-      "observedAt": "2026-09-04T12:47:08.202Z",
+      "observedAt": "2026-09-04T14:49:54.059Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -3042,7 +3067,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/marys-african-cuisine/",
-      "observedAt": "2026-09-04T12:47:08.202Z",
+      "observedAt": "2026-09-04T14:49:54.059Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": true,
       "alreadyInCatalog": true
@@ -3066,7 +3091,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/masita-k-food/",
-      "observedAt": "2026-09-04T12:47:08.202Z",
+      "observedAt": "2026-09-04T14:49:54.059Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -3090,7 +3115,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/may-garden-chinese-restaurant-bedford/",
-      "observedAt": "2026-09-04T12:47:08.203Z",
+      "observedAt": "2026-09-04T14:49:54.059Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -3114,7 +3139,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/may-garden-chinese-restaurant-dartmouth/",
-      "observedAt": "2026-09-04T12:47:08.203Z",
+      "observedAt": "2026-09-04T14:49:54.059Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -3138,7 +3163,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/may-garden-chinese-restaurant-halifax/",
-      "observedAt": "2026-09-04T12:47:08.203Z",
+      "observedAt": "2026-09-04T14:49:54.059Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -3162,7 +3187,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/may-garden-chinese-restaurant-sackville/",
-      "observedAt": "2026-09-04T12:47:08.203Z",
+      "observedAt": "2026-09-04T14:49:54.059Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -3186,7 +3211,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/mckelvies-restaurant/",
-      "observedAt": "2026-09-04T12:47:08.203Z",
+      "observedAt": "2026-09-04T14:49:54.060Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -3210,7 +3235,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/mediterra-kitchen/",
-      "observedAt": "2026-09-04T12:47:08.204Z",
+      "observedAt": "2026-09-04T14:49:54.060Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -3234,7 +3259,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/melo-cafe-and-catering/",
-      "observedAt": "2026-09-04T12:47:08.204Z",
+      "observedAt": "2026-09-04T14:49:54.060Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -3258,7 +3283,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/millstone-public-house-baker-drive/",
-      "observedAt": "2026-09-04T12:47:10.273Z",
+      "observedAt": "2026-09-04T14:49:55.815Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -3282,7 +3307,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/millstone-public-house-bedford/",
-      "observedAt": "2026-09-04T12:47:10.273Z",
+      "observedAt": "2026-09-04T14:49:55.815Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -3306,7 +3331,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/mishoos-take-out/",
-      "observedAt": "2026-09-04T12:47:10.273Z",
+      "observedAt": "2026-09-04T14:49:55.815Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -3330,7 +3355,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/modern-orchid-asian-cuisine-bedford/",
-      "observedAt": "2026-09-04T12:47:10.274Z",
+      "observedAt": "2026-09-04T14:49:55.815Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -3354,7 +3379,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/modern-orchid-southeast-asian-cuisine-dartmouth/",
-      "observedAt": "2026-09-04T12:47:10.274Z",
+      "observedAt": "2026-09-04T14:49:55.815Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -3378,7 +3403,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/morris-east-restaurant/",
-      "observedAt": "2026-09-04T12:47:10.274Z",
+      "observedAt": "2026-09-04T14:49:55.816Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -3402,7 +3427,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/muir-hotel/",
-      "observedAt": "2026-09-04T12:47:10.275Z",
+      "observedAt": "2026-09-04T14:49:55.817Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -3426,7 +3451,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/mystic/",
-      "observedAt": "2026-09-04T12:47:10.276Z",
+      "observedAt": "2026-09-04T14:49:55.818Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": true,
       "alreadyInCatalog": true
@@ -3450,7 +3475,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/newsbreak-cafe/",
-      "observedAt": "2026-09-04T12:47:10.277Z",
+      "observedAt": "2026-09-04T14:49:55.819Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -3474,7 +3499,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/nine-locks-brewing-co/",
-      "observedAt": "2026-09-04T12:47:10.278Z",
+      "observedAt": "2026-09-04T14:49:55.819Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -3498,7 +3523,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/nine-locks-brewing-co-cold-beer-store-tap-room/",
-      "observedAt": "2026-09-04T12:47:10.278Z",
+      "observedAt": "2026-09-04T14:49:55.819Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -3522,7 +3547,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/north-brewing-company-cole-harbour/",
-      "observedAt": "2026-09-04T12:47:10.278Z",
+      "observedAt": "2026-09-04T14:49:55.819Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -3546,7 +3571,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/north-brewing-company-timberlea/",
-      "observedAt": "2026-09-04T12:47:10.278Z",
+      "observedAt": "2026-09-04T14:49:55.819Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -3570,7 +3595,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/novalea-kitchen-and-market/",
-      "observedAt": "2026-09-04T12:47:11.988Z",
+      "observedAt": "2026-09-04T14:49:57.482Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -3594,7 +3619,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/oasis-pub-eatery/",
-      "observedAt": "2026-09-04T12:47:11.989Z",
+      "observedAt": "2026-09-04T14:49:57.483Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -3618,7 +3643,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/ori-foods/",
-      "observedAt": "2026-09-04T12:47:11.991Z",
+      "observedAt": "2026-09-04T14:49:57.485Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": true,
       "alreadyInCatalog": true
@@ -3642,7 +3667,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/orso-pub-grill/",
-      "observedAt": "2026-09-04T12:47:11.991Z",
+      "observedAt": "2026-09-04T14:49:57.485Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -3666,7 +3691,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/oxalis-restaurant/",
-      "observedAt": "2026-09-04T12:47:11.991Z",
+      "observedAt": "2026-09-04T14:49:57.485Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": true,
       "alreadyInCatalog": true
@@ -3690,7 +3715,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/palm-tree-kitchen-bar/",
-      "observedAt": "2026-09-04T12:47:11.992Z",
+      "observedAt": "2026-09-04T14:49:57.486Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -3714,7 +3739,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/pavia-gallery-espresso-bar-cafe/",
-      "observedAt": "2026-09-04T12:47:11.992Z",
+      "observedAt": "2026-09-04T14:49:57.486Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -3738,7 +3763,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/peace-by-chocolate-halifax/",
-      "observedAt": "2026-09-04T12:47:11.992Z",
+      "observedAt": "2026-09-04T14:49:57.486Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -3762,7 +3787,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/peacock-wine-bar/",
-      "observedAt": "2026-09-04T12:47:11.992Z",
+      "observedAt": "2026-09-04T14:49:57.487Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -3786,7 +3811,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/pi-kings-wharf/",
-      "observedAt": "2026-09-04T12:47:13.595Z",
+      "observedAt": "2026-09-04T14:49:59.099Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -3810,7 +3835,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/press-gang-restaurant-oyster-bar/",
-      "observedAt": "2026-09-04T12:47:13.598Z",
+      "observedAt": "2026-09-04T14:49:59.102Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -3834,7 +3859,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/prince-george-hotel/",
-      "observedAt": "2026-09-04T12:47:13.598Z",
+      "observedAt": "2026-09-04T14:49:59.102Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -3858,7 +3883,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/propeller-bedford-tap-room-and-cold-beer-store/",
-      "observedAt": "2026-09-04T12:47:13.598Z",
+      "observedAt": "2026-09-04T14:49:59.102Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -3882,7 +3907,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/propeller-gottingen-tap-room-and-cold-beer-store-and-propeller-arcade/",
-      "observedAt": "2026-09-04T12:47:13.598Z",
+      "observedAt": "2026-09-04T14:49:59.102Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -3906,7 +3931,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/propeller-quinpool-tap-room-and-cold-beer-store/",
-      "observedAt": "2026-09-04T12:47:13.598Z",
+      "observedAt": "2026-09-04T14:49:59.102Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -3930,7 +3955,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/propeller-windmill-cold-beer-store/",
-      "observedAt": "2026-09-04T12:47:13.598Z",
+      "observedAt": "2026-09-04T14:49:59.102Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -3954,7 +3979,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/ralphs-downeast-diner/",
-      "observedAt": "2026-09-04T12:47:13.599Z",
+      "observedAt": "2026-09-04T14:49:59.104Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -3978,7 +4003,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/red-asian-fusion-restaurant/",
-      "observedAt": "2026-09-04T12:47:13.600Z",
+      "observedAt": "2026-09-04T14:49:59.104Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -4002,7 +4027,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/retas-restaurant/",
-      "observedAt": "2026-09-04T12:47:15.664Z",
+      "observedAt": "2026-09-04T14:50:00.774Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -4026,7 +4051,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/rose-and-kettle-tea-room-at-cole-harbour-heritage-farm-museum/",
-      "observedAt": "2026-09-04T12:47:15.666Z",
+      "observedAt": "2026-09-04T14:50:00.776Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -4050,7 +4075,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/rousseau-chocolatier/",
-      "observedAt": "2026-09-04T12:47:15.667Z",
+      "observedAt": "2026-09-04T14:50:00.777Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -4074,7 +4099,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/rumours-lounge-cabaret/",
-      "observedAt": "2026-09-04T12:47:15.668Z",
+      "observedAt": "2026-09-04T14:50:00.778Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -4098,7 +4123,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/rush-hour-pizza/",
-      "observedAt": "2026-09-04T12:47:15.668Z",
+      "observedAt": "2026-09-04T14:50:00.778Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": true,
       "alreadyInCatalog": true
@@ -4122,7 +4147,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/sackville-farmers-market/",
-      "observedAt": "2026-09-04T12:47:15.668Z",
+      "observedAt": "2026-09-04T14:50:00.778Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -4146,7 +4171,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/salt-sol/",
-      "observedAt": "2026-09-04T12:47:15.669Z",
+      "observedAt": "2026-09-04T14:50:00.779Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": true,
       "alreadyInCatalog": true
@@ -4170,7 +4195,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/sapori-italian-street-food/",
-      "observedAt": "2026-09-04T12:47:17.803Z",
+      "observedAt": "2026-09-04T14:50:02.504Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -4194,7 +4219,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/seaport-social/",
-      "observedAt": "2026-09-04T12:47:17.805Z",
+      "observedAt": "2026-09-04T14:50:02.506Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": true,
       "alreadyInCatalog": true
@@ -4218,7 +4243,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/shuck-seafood-raw-bar/",
-      "observedAt": "2026-09-04T12:47:19.842Z",
+      "observedAt": "2026-09-04T14:50:04.166Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": true,
       "alreadyInCatalog": true
@@ -4242,7 +4267,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/side-hustle-snack-bar/",
-      "observedAt": "2026-09-04T12:47:19.842Z",
+      "observedAt": "2026-09-04T14:50:04.167Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": true,
       "alreadyInCatalog": true
@@ -4266,7 +4291,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/simply-asian/",
-      "observedAt": "2026-09-04T12:47:19.843Z",
+      "observedAt": "2026-09-04T14:50:04.167Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -4290,7 +4315,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/sketti-ball-co/",
-      "observedAt": "2026-09-04T12:47:19.843Z",
+      "observedAt": "2026-09-04T14:50:04.167Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -4314,7 +4339,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/spryfield-district-farmers-market/",
-      "observedAt": "2026-09-04T12:47:19.846Z",
+      "observedAt": "2026-09-04T14:50:04.170Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -4338,7 +4363,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/stardust-motel-bedford/",
-      "observedAt": "2026-09-04T12:47:21.453Z",
+      "observedAt": "2026-09-04T14:50:05.792Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -4362,7 +4387,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/stillwell-beergarden/",
-      "observedAt": "2026-09-04T12:47:21.454Z",
+      "observedAt": "2026-09-04T14:50:05.793Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -4386,7 +4411,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/stillwell-brewing-co/",
-      "observedAt": "2026-09-04T12:47:21.454Z",
+      "observedAt": "2026-09-04T14:50:05.793Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -4410,7 +4435,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/stillwell-freehouse/",
-      "observedAt": "2026-09-04T12:47:21.454Z",
+      "observedAt": "2026-09-04T14:50:05.793Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": true,
       "alreadyInCatalog": true
@@ -4434,7 +4459,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/stubborn-goat-gastropub/",
-      "observedAt": "2026-09-04T12:47:21.455Z",
+      "observedAt": "2026-09-04T14:50:05.794Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -4458,7 +4483,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/studio-east-food-drink/",
-      "observedAt": "2026-09-04T12:47:21.455Z",
+      "observedAt": "2026-09-04T14:50:05.794Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -4482,7 +4507,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/sushi-jet-asian-cuisine/",
-      "observedAt": "2026-09-04T12:47:21.456Z",
+      "observedAt": "2026-09-04T14:50:05.795Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -4506,7 +4531,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/sushi-jet-dartmouth/",
-      "observedAt": "2026-09-04T12:47:21.456Z",
+      "observedAt": "2026-09-04T14:50:05.795Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -4530,7 +4555,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/sushi-jet-larry-uteck/",
-      "observedAt": "2026-09-04T12:47:21.457Z",
+      "observedAt": "2026-09-04T14:50:05.795Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -4554,7 +4579,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/sushi-shige-japanese-restaurant/",
-      "observedAt": "2026-09-04T12:47:21.457Z",
+      "observedAt": "2026-09-04T14:50:05.796Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -4578,7 +4603,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/sushi-wave/",
-      "observedAt": "2026-09-04T12:47:21.457Z",
+      "observedAt": "2026-09-04T14:50:05.796Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -4602,7 +4627,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/sutton-place-hotel-halifax/",
-      "observedAt": "2026-09-04T12:47:21.457Z",
+      "observedAt": "2026-09-04T14:50:05.796Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -4626,7 +4651,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/sweet-spot-chocolate-shop/",
-      "observedAt": "2026-09-04T12:47:21.457Z",
+      "observedAt": "2026-09-04T14:50:05.796Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -4650,7 +4675,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/szechuan-restaurant/",
-      "observedAt": "2026-09-04T12:47:21.458Z",
+      "observedAt": "2026-09-04T14:50:05.797Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -4674,7 +4699,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/tantallon-village-farmers-market/",
-      "observedAt": "2026-09-04T12:47:21.458Z",
+      "observedAt": "2026-09-04T14:50:05.797Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -4698,7 +4723,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/tempo-food-drink/",
-      "observedAt": "2026-09-04T12:47:23.557Z",
+      "observedAt": "2026-09-04T14:50:07.427Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": true,
       "alreadyInCatalog": true
@@ -4722,7 +4747,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/terra-cafe/",
-      "observedAt": "2026-09-04T12:47:23.558Z",
+      "observedAt": "2026-09-04T14:50:07.428Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": true,
       "alreadyInCatalog": true
@@ -4746,7 +4771,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/the-5k-cafe/",
-      "observedAt": "2026-09-04T12:47:23.558Z",
+      "observedAt": "2026-09-04T14:50:07.428Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": true,
       "alreadyInCatalog": true
@@ -4770,7 +4795,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/the-arms/",
-      "observedAt": "2026-09-04T12:47:23.558Z",
+      "observedAt": "2026-09-04T14:50:07.428Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -4794,7 +4819,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/the-barrington-steakhouse-oyster-bar/",
-      "observedAt": "2026-09-04T12:47:23.559Z",
+      "observedAt": "2026-09-04T14:50:07.428Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -4818,7 +4843,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/the-bg-halifax-beer-garden/",
-      "observedAt": "2026-09-04T12:47:23.559Z",
+      "observedAt": "2026-09-04T14:50:07.429Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -4842,7 +4867,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/the-board-room-game-cafe/",
-      "observedAt": "2026-09-04T12:47:23.559Z",
+      "observedAt": "2026-09-04T14:50:07.429Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": true,
       "alreadyInCatalog": true
@@ -4866,7 +4891,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/the-cannery-kitchen-social/",
-      "observedAt": "2026-09-04T12:47:23.559Z",
+      "observedAt": "2026-09-04T14:50:07.429Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": true,
       "alreadyInCatalog": true
@@ -4890,7 +4915,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/the-canteen/",
-      "observedAt": "2026-09-04T12:47:23.559Z",
+      "observedAt": "2026-09-04T14:50:07.429Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": true,
       "alreadyInCatalog": true
@@ -4914,7 +4939,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/the-carleton/",
-      "observedAt": "2026-09-04T12:47:23.560Z",
+      "observedAt": "2026-09-04T14:50:07.429Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": true,
       "alreadyInCatalog": true
@@ -4938,7 +4963,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/the-chickenburger/",
-      "observedAt": "2026-09-04T12:47:23.560Z",
+      "observedAt": "2026-09-04T14:50:07.430Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -4962,7 +4987,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/the-commons-on-portland/",
-      "observedAt": "2026-09-04T12:47:23.560Z",
+      "observedAt": "2026-09-04T14:50:07.430Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -4986,7 +5011,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/the-deerfield-pub/",
-      "observedAt": "2026-09-04T12:47:23.560Z",
+      "observedAt": "2026-09-04T14:50:07.430Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -5010,7 +5035,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/the-esquire-restaurant/",
-      "observedAt": "2026-09-04T12:47:23.561Z",
+      "observedAt": "2026-09-04T14:50:07.430Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -5034,7 +5059,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/the-fourth-lock-bed-and-breakfast/",
-      "observedAt": "2026-09-04T12:47:23.561Z",
+      "observedAt": "2026-09-04T14:50:07.431Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -5058,7 +5083,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/the-hollis-halifax-a-doubletree-suites-by-hilton/",
-      "observedAt": "2026-09-04T12:47:23.562Z",
+      "observedAt": "2026-09-04T14:50:07.431Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -5082,7 +5107,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/the-links-at-brunello/",
-      "observedAt": "2026-09-04T12:47:25.715Z",
+      "observedAt": "2026-09-04T14:50:09.058Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -5106,7 +5131,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/lower-deck-downtown-halifax/",
-      "observedAt": "2026-09-04T12:47:25.715Z",
+      "observedAt": "2026-09-04T14:50:09.058Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -5130,7 +5155,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/the-narrows-public-house/",
-      "observedAt": "2026-09-04T12:47:25.716Z",
+      "observedAt": "2026-09-04T14:50:09.059Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": true,
       "alreadyInCatalog": true
@@ -5154,7 +5179,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/the-orient-chinese-cuisine/",
-      "observedAt": "2026-09-04T12:47:25.716Z",
+      "observedAt": "2026-09-04T14:50:09.059Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -5178,7 +5203,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/the-ostrich-club-restaurant/",
-      "observedAt": "2026-09-04T12:47:25.716Z",
+      "observedAt": "2026-09-04T14:50:09.059Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -5202,7 +5227,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/the-pink-piano-cafe-lounge/",
-      "observedAt": "2026-09-04T12:47:25.717Z",
+      "observedAt": "2026-09-04T14:50:09.060Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -5226,7 +5251,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/the-turtleback-tap-and-grill/",
-      "observedAt": "2026-09-04T12:47:25.719Z",
+      "observedAt": "2026-09-04T14:50:09.062Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -5250,7 +5275,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/thomeh-market-vietnamese-thai-takeout/",
-      "observedAt": "2026-09-04T12:47:25.719Z",
+      "observedAt": "2026-09-04T14:50:09.063Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -5274,7 +5299,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/trattoria-vesso/",
-      "observedAt": "2026-09-04T12:47:27.777Z",
+      "observedAt": "2026-09-04T14:50:10.699Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": true,
       "alreadyInCatalog": true
@@ -5298,7 +5323,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/turbo-chicken/",
-      "observedAt": "2026-09-04T12:47:27.778Z",
+      "observedAt": "2026-09-04T14:50:10.700Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -5322,7 +5347,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/twist-of-india-restaurant-bar/",
-      "observedAt": "2026-09-04T12:47:27.779Z",
+      "observedAt": "2026-09-04T14:50:10.700Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -5346,7 +5371,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/vines-pasta-grill/",
-      "observedAt": "2026-09-04T12:47:27.781Z",
+      "observedAt": "2026-09-04T14:50:10.702Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -5370,7 +5395,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/waterfront-warehouse/",
-      "observedAt": "2026-09-04T12:47:29.863Z",
+      "observedAt": "2026-09-04T14:50:12.378Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": true,
       "alreadyInCatalog": true
@@ -5394,7 +5419,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/westin-nova-scotian/",
-      "observedAt": "2026-09-04T12:47:29.864Z",
+      "observedAt": "2026-09-04T14:50:12.379Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -5418,7 +5443,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "NovaScotia.com",
       "sourceKind": "nova_scotia_tourism_directory",
       "sourceUrl": "https://novascotia.com/listing/whim-chocolate-frabjous-delights-specialty-foods/",
-      "observedAt": "2026-09-04T12:47:29.865Z",
+      "observedAt": "2026-09-04T14:50:12.379Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -5483,7 +5508,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Halifax Business Commission",
       "sourceKind": "downtown_halifax_directory",
       "sourceUrl": "https://members.downtownhalifax.ca/directory/Details/3sixty-casino-nova-scotia-3161332",
-      "observedAt": "2026-09-04T12:47:32.327Z",
+      "observedAt": "2026-09-04T14:50:14.129Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -5558,7 +5583,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Halifax Business Commission",
       "sourceKind": "downtown_halifax_directory",
       "sourceUrl": "https://members.downtownhalifax.ca/directory/Details/5-fishermen-restaurant-3161361",
-      "observedAt": "2026-09-04T12:47:32.434Z",
+      "observedAt": "2026-09-04T14:50:14.241Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -5633,7 +5658,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Halifax Business Commission",
       "sourceKind": "downtown_halifax_directory",
       "sourceUrl": "https://members.downtownhalifax.ca/directory/Details/amin-s-indian-food-3161401",
-      "observedAt": "2026-09-04T12:47:32.481Z",
+      "observedAt": "2026-09-04T14:50:14.336Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -5703,7 +5728,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Halifax Business Commission",
       "sourceKind": "downtown_halifax_directory",
       "sourceUrl": "https://members.downtownhalifax.ca/directory/Details/anemone-dining-3161346",
-      "observedAt": "2026-09-04T12:47:32.458Z",
+      "observedAt": "2026-09-04T14:50:14.241Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -5773,7 +5798,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Halifax Business Commission",
       "sourceKind": "downtown_halifax_directory",
       "sourceUrl": "https://members.downtownhalifax.ca/directory/Details/argyle-station-cafe-3413744",
-      "observedAt": "2026-09-04T12:47:32.513Z",
+      "observedAt": "2026-09-04T14:50:14.312Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -5838,7 +5863,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Halifax Business Commission",
       "sourceKind": "downtown_halifax_directory",
       "sourceUrl": "https://members.downtownhalifax.ca/directory/Details/asap-mabuhay-filipino-grill-3161333",
-      "observedAt": "2026-09-04T12:47:32.632Z",
+      "observedAt": "2026-09-04T14:50:14.443Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -5913,7 +5938,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Halifax Business Commission",
       "sourceKind": "downtown_halifax_directory",
       "sourceUrl": "https://members.downtownhalifax.ca/directory/Details/atithi-indian-restaurant-3569821",
-      "observedAt": "2026-09-04T12:47:32.648Z",
+      "observedAt": "2026-09-04T14:50:14.498Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -5983,7 +6008,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Halifax Business Commission",
       "sourceKind": "downtown_halifax_directory",
       "sourceUrl": "https://members.downtownhalifax.ca/directory/Details/balancing-rock-coffee-house-3161417",
-      "observedAt": "2026-09-04T12:47:32.645Z",
+      "observedAt": "2026-09-04T14:50:14.447Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -6058,7 +6083,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Halifax Business Commission",
       "sourceKind": "downtown_halifax_directory",
       "sourceUrl": "https://members.downtownhalifax.ca/directory/Details/bar-sabbia-3161416",
-      "observedAt": "2026-09-04T12:47:32.648Z",
+      "observedAt": "2026-09-04T14:50:14.470Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -6133,7 +6158,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Halifax Business Commission",
       "sourceKind": "downtown_halifax_directory",
       "sourceUrl": "https://members.downtownhalifax.ca/directory/Details/bar-sofia-3161347",
-      "observedAt": "2026-09-04T12:47:32.645Z",
+      "observedAt": "2026-09-04T14:50:14.477Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -6203,7 +6228,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Halifax Business Commission",
       "sourceKind": "downtown_halifax_directory",
       "sourceUrl": "https://members.downtownhalifax.ca/directory/Details/barrio-s-4195691",
-      "observedAt": "2026-09-04T12:47:32.631Z",
+      "observedAt": "2026-09-04T14:50:14.476Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -6283,7 +6308,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Halifax Business Commission",
       "sourceKind": "downtown_halifax_directory",
       "sourceUrl": "https://members.downtownhalifax.ca/directory/Details/baton-rouge-restaurant-bar-3161415",
-      "observedAt": "2026-09-04T12:47:32.765Z",
+      "observedAt": "2026-09-04T14:50:14.623Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -6358,7 +6383,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Halifax Business Commission",
       "sourceKind": "downtown_halifax_directory",
       "sourceUrl": "https://members.downtownhalifax.ca/directory/Details/beavertails-3161418",
-      "observedAt": "2026-09-04T12:47:32.759Z",
+      "observedAt": "2026-09-04T14:50:14.624Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -6433,7 +6458,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Halifax Business Commission",
       "sourceKind": "downtown_halifax_directory",
       "sourceUrl": "https://members.downtownhalifax.ca/directory/Details/bells-lane-kitchen-3188579",
-      "observedAt": "2026-09-04T12:47:32.775Z",
+      "observedAt": "2026-09-04T14:50:14.623Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -6498,7 +6523,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Halifax Business Commission",
       "sourceKind": "downtown_halifax_directory",
       "sourceUrl": "https://members.downtownhalifax.ca/directory/Details/beyond-hospitality-group-4153130",
-      "observedAt": "2026-09-04T12:47:32.762Z",
+      "observedAt": "2026-09-04T14:50:14.652Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -6573,7 +6598,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Halifax Business Commission",
       "sourceKind": "downtown_halifax_directory",
       "sourceUrl": "https://members.downtownhalifax.ca/directory/Details/black-sheep-restaurant-3161411",
-      "observedAt": "2026-09-04T12:47:32.765Z",
+      "observedAt": "2026-09-04T14:50:14.620Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -6643,7 +6668,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Halifax Business Commission",
       "sourceKind": "downtown_halifax_directory",
       "sourceUrl": "https://members.downtownhalifax.ca/directory/Details/bluenose-ii-restaurant-grill-3161432",
-      "observedAt": "2026-09-04T12:47:32.757Z",
+      "observedAt": "2026-09-04T14:50:14.621Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -6718,7 +6743,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Halifax Business Commission",
       "sourceKind": "downtown_halifax_directory",
       "sourceUrl": "https://members.downtownhalifax.ca/directory/Details/cable-wharf-kitchen-patio-3161466",
-      "observedAt": "2026-09-04T12:47:32.899Z",
+      "observedAt": "2026-09-04T14:50:14.798Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -6783,7 +6808,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Halifax Business Commission",
       "sourceKind": "downtown_halifax_directory",
       "sourceUrl": "https://members.downtownhalifax.ca/directory/Details/cafe-taiyaki-52-3161448",
-      "observedAt": "2026-09-04T12:47:32.886Z",
+      "observedAt": "2026-09-04T14:50:14.787Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -6853,7 +6878,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Halifax Business Commission",
       "sourceKind": "downtown_halifax_directory",
       "sourceUrl": "https://members.downtownhalifax.ca/directory/Details/caffe-luca-3559763",
-      "observedAt": "2026-09-04T12:47:32.899Z",
+      "observedAt": "2026-09-04T14:50:14.785Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -6928,7 +6953,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Halifax Business Commission",
       "sourceKind": "downtown_halifax_directory",
       "sourceUrl": "https://members.downtownhalifax.ca/directory/Details/chop-steakhouse-and-bar-3161535",
-      "observedAt": "2026-09-04T12:47:32.925Z",
+      "observedAt": "2026-09-04T14:50:14.773Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -6998,7 +7023,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Halifax Business Commission",
       "sourceKind": "downtown_halifax_directory",
       "sourceUrl": "https://members.downtownhalifax.ca/directory/Details/cove-soda-4532280",
-      "observedAt": "2026-09-04T12:47:32.897Z",
+      "observedAt": "2026-09-04T14:50:14.767Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -7073,7 +7098,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Halifax Business Commission",
       "sourceKind": "downtown_halifax_directory",
       "sourceUrl": "https://members.downtownhalifax.ca/directory/Details/cows-ice-cream-bishop-s-landing-3161568",
-      "observedAt": "2026-09-04T12:47:32.919Z",
+      "observedAt": "2026-09-04T14:50:14.777Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -7143,7 +7168,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Halifax Business Commission",
       "sourceKind": "downtown_halifax_directory",
       "sourceUrl": "https://members.downtownhalifax.ca/directory/Details/craig-s-cookies-4626483",
-      "observedAt": "2026-09-04T12:47:33.045Z",
+      "observedAt": "2026-09-04T14:50:14.936Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -7213,7 +7238,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Halifax Business Commission",
       "sourceKind": "downtown_halifax_directory",
       "sourceUrl": "https://members.downtownhalifax.ca/directory/Details/cr-me-cafe-cakes-cocktails-4233422",
-      "observedAt": "2026-09-04T12:47:33.068Z",
+      "observedAt": "2026-09-04T14:50:14.922Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -7283,7 +7308,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Halifax Business Commission",
       "sourceKind": "downtown_halifax_directory",
       "sourceUrl": "https://members.downtownhalifax.ca/directory/Details/crooki-cafe-4246773",
-      "observedAt": "2026-09-04T12:47:33.048Z",
+      "observedAt": "2026-09-04T14:50:14.942Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -7358,7 +7383,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Halifax Business Commission",
       "sourceKind": "downtown_halifax_directory",
       "sourceUrl": "https://members.downtownhalifax.ca/directory/Details/cut-steakhouse-3161569",
-      "observedAt": "2026-09-04T12:47:33.043Z",
+      "observedAt": "2026-09-04T14:50:14.921Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -7423,7 +7448,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Halifax Business Commission",
       "sourceKind": "downtown_halifax_directory",
       "sourceUrl": "https://members.downtownhalifax.ca/directory/Details/dessert-yard-3189763",
-      "observedAt": "2026-09-04T12:47:33.044Z",
+      "observedAt": "2026-09-04T14:50:14.930Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -7498,7 +7523,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Halifax Business Commission",
       "sourceKind": "downtown_halifax_directory",
       "sourceUrl": "https://members.downtownhalifax.ca/directory/Details/durty-nelly-s-authentic-irish-pub-3161590",
-      "observedAt": "2026-09-04T12:47:33.071Z",
+      "observedAt": "2026-09-04T14:50:14.959Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -7563,7 +7588,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Halifax Business Commission",
       "sourceKind": "downtown_halifax_directory",
       "sourceUrl": "https://members.downtownhalifax.ca/directory/Details/efendy-express-3161600",
-      "observedAt": "2026-09-04T12:47:33.177Z",
+      "observedAt": "2026-09-04T14:50:15.108Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -7633,7 +7658,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Halifax Business Commission",
       "sourceKind": "downtown_halifax_directory",
       "sourceUrl": "https://members.downtownhalifax.ca/directory/Details/egg-villa-4606422",
-      "observedAt": "2026-09-04T12:47:33.186Z",
+      "observedAt": "2026-09-04T14:50:15.089Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -7698,7 +7723,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Halifax Business Commission",
       "sourceKind": "downtown_halifax_directory",
       "sourceUrl": "https://members.downtownhalifax.ca/directory/Details/far-east-cuisine-3161627",
-      "observedAt": "2026-09-04T12:47:33.205Z",
+      "observedAt": "2026-09-04T14:50:15.086Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -7768,7 +7793,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Halifax Business Commission",
       "sourceKind": "downtown_halifax_directory",
       "sourceUrl": "https://members.downtownhalifax.ca/directory/Details/five-guys-halifax-3161673",
-      "observedAt": "2026-09-04T12:47:33.178Z",
+      "observedAt": "2026-09-04T14:50:15.095Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -7843,7 +7868,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Halifax Business Commission",
       "sourceKind": "downtown_halifax_directory",
       "sourceUrl": "https://members.downtownhalifax.ca/directory/Details/flynn-s-dairy-bar-convenience-3161667",
-      "observedAt": "2026-09-04T12:47:33.207Z",
+      "observedAt": "2026-09-04T14:50:15.101Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -7908,7 +7933,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Halifax Business Commission",
       "sourceKind": "downtown_halifax_directory",
       "sourceUrl": "https://members.downtownhalifax.ca/directory/Details/food-gremlin-catering-4505162",
-      "observedAt": "2026-09-04T12:47:33.205Z",
+      "observedAt": "2026-09-04T14:50:15.107Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -7988,7 +8013,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Halifax Business Commission",
       "sourceKind": "downtown_halifax_directory",
       "sourceUrl": "https://members.downtownhalifax.ca/directory/Details/freak-lunchbox-3161674",
-      "observedAt": "2026-09-04T12:47:33.327Z",
+      "observedAt": "2026-09-04T14:50:15.275Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -8053,7 +8078,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Halifax Business Commission",
       "sourceKind": "downtown_halifax_directory",
       "sourceUrl": "https://members.downtownhalifax.ca/directory/Details/frederic-s-food-coffee-3161661",
-      "observedAt": "2026-09-04T12:47:33.318Z",
+      "observedAt": "2026-09-04T14:50:15.236Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -8128,7 +8153,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Halifax Business Commission",
       "sourceKind": "downtown_halifax_directory",
       "sourceUrl": "https://members.downtownhalifax.ca/directory/Details/freedom-culinary-culture-4195581",
-      "observedAt": "2026-09-04T12:47:33.330Z",
+      "observedAt": "2026-09-04T14:50:15.246Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -8203,7 +8228,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Halifax Business Commission",
       "sourceKind": "downtown_halifax_directory",
       "sourceUrl": "https://members.downtownhalifax.ca/directory/Details/gahan-nova-centre-3161637",
-      "observedAt": "2026-09-04T12:47:33.316Z",
+      "observedAt": "2026-09-04T14:50:15.253Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -8268,7 +8293,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Halifax Business Commission",
       "sourceKind": "downtown_halifax_directory",
       "sourceUrl": "https://members.downtownhalifax.ca/directory/Details/gangnam-korean-bbq-cuisine-3161640",
-      "observedAt": "2026-09-04T12:47:33.320Z",
+      "observedAt": "2026-09-04T14:50:15.235Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -8338,7 +8363,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Halifax Business Commission",
       "sourceKind": "downtown_halifax_directory",
       "sourceUrl": "https://members.downtownhalifax.ca/directory/Details/garrison-brewing-company-3161643",
-      "observedAt": "2026-09-04T12:47:33.313Z",
+      "observedAt": "2026-09-04T14:50:15.252Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -8413,7 +8438,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Halifax Business Commission",
       "sourceKind": "downtown_halifax_directory",
       "sourceUrl": "https://members.downtownhalifax.ca/directory/Details/gio-restaurant-and-bar-3161641",
-      "observedAt": "2026-09-04T12:47:33.455Z",
+      "observedAt": "2026-09-04T14:50:15.417Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -8483,7 +8508,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Halifax Business Commission",
       "sourceKind": "downtown_halifax_directory",
       "sourceUrl": "https://members.downtownhalifax.ca/directory/Details/harbour-city-bar-grill-3161724",
-      "observedAt": "2026-09-04T12:47:33.460Z",
+      "observedAt": "2026-09-04T14:50:15.393Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -8558,7 +8583,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Halifax Business Commission",
       "sourceKind": "downtown_halifax_directory",
       "sourceUrl": "https://members.downtownhalifax.ca/directory/Details/harbourstone-pour-house-3161747",
-      "observedAt": "2026-09-04T12:47:33.473Z",
+      "observedAt": "2026-09-04T14:50:15.440Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -8633,7 +8658,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Halifax Business Commission",
       "sourceKind": "downtown_halifax_directory",
       "sourceUrl": "https://members.downtownhalifax.ca/directory/Details/harvest-clean-eats-3162926",
-      "observedAt": "2026-09-04T12:47:33.456Z",
+      "observedAt": "2026-09-04T14:50:15.397Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -8698,7 +8723,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Halifax Business Commission",
       "sourceKind": "downtown_halifax_directory",
       "sourceUrl": "https://members.downtownhalifax.ca/directory/Details/helene-juane-cookies-3161728",
-      "observedAt": "2026-09-04T12:47:33.455Z",
+      "observedAt": "2026-09-04T14:50:15.501Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -8768,7 +8793,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Halifax Business Commission",
       "sourceKind": "downtown_halifax_directory",
       "sourceUrl": "https://members.downtownhalifax.ca/directory/Details/hux-neo-bistro-4701874",
-      "observedAt": "2026-09-04T12:47:33.461Z",
+      "observedAt": "2026-09-04T14:50:15.414Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -8833,7 +8858,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Halifax Business Commission",
       "sourceKind": "downtown_halifax_directory",
       "sourceUrl": "https://members.downtownhalifax.ca/directory/Details/in-spring-3161786",
-      "observedAt": "2026-09-04T12:47:33.599Z",
+      "observedAt": "2026-09-04T14:50:15.620Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -8898,7 +8923,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Halifax Business Commission",
       "sourceKind": "downtown_halifax_directory",
       "sourceUrl": "https://members.downtownhalifax.ca/directory/Details/ins-market-convenience-4505111",
-      "observedAt": "2026-09-04T12:47:33.589Z",
+      "observedAt": "2026-09-04T14:50:15.659Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -8968,7 +8993,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Halifax Business Commission",
       "sourceKind": "downtown_halifax_directory",
       "sourceUrl": "https://members.downtownhalifax.ca/directory/Details/johny-s-pork-shack-3541022",
-      "observedAt": "2026-09-04T12:47:33.593Z",
+      "observedAt": "2026-09-04T14:50:15.657Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -9038,7 +9063,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Halifax Business Commission",
       "sourceKind": "downtown_halifax_directory",
       "sourceUrl": "https://members.downtownhalifax.ca/directory/Details/jolt-3161805",
-      "observedAt": "2026-09-04T12:47:33.599Z",
+      "observedAt": "2026-09-04T14:50:15.643Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -9103,7 +9128,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Halifax Business Commission",
       "sourceKind": "downtown_halifax_directory",
       "sourceUrl": "https://members.downtownhalifax.ca/directory/Details/katch-a-modern-seafood-shack-3161816",
-      "observedAt": "2026-09-04T12:47:33.601Z",
+      "observedAt": "2026-09-04T14:50:15.626Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -9168,7 +9193,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Halifax Business Commission",
       "sourceKind": "downtown_halifax_directory",
       "sourceUrl": "https://members.downtownhalifax.ca/directory/Details/kebab-express-4705099",
-      "observedAt": "2026-09-04T12:47:33.578Z",
+      "observedAt": "2026-09-04T14:50:15.637Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -9233,7 +9258,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Halifax Business Commission",
       "sourceKind": "downtown_halifax_directory",
       "sourceUrl": "https://members.downtownhalifax.ca/directory/Details/korea-garden-express-3161809",
-      "observedAt": "2026-09-04T12:47:33.711Z",
+      "observedAt": "2026-09-04T14:50:15.790Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -9308,7 +9333,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Halifax Business Commission",
       "sourceKind": "downtown_halifax_directory",
       "sourceUrl": "https://members.downtownhalifax.ca/directory/Details/le-french-fix-patisserie-3161851",
-      "observedAt": "2026-09-04T12:47:33.709Z",
+      "observedAt": "2026-09-04T14:50:15.816Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -9378,7 +9403,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Halifax Business Commission",
       "sourceKind": "downtown_halifax_directory",
       "sourceUrl": "https://members.downtownhalifax.ca/directory/Details/little-fish-wine-bar-grill-3161353",
-      "observedAt": "2026-09-04T12:47:33.710Z",
+      "observedAt": "2026-09-04T14:50:15.782Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -9453,7 +9478,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Halifax Business Commission",
       "sourceKind": "downtown_halifax_directory",
       "sourceUrl": "https://members.downtownhalifax.ca/directory/Details/los-toros-3161841",
-      "observedAt": "2026-09-04T12:47:33.711Z",
+      "observedAt": "2026-09-04T14:50:15.787Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -9528,7 +9553,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Halifax Business Commission",
       "sourceKind": "downtown_halifax_directory",
       "sourceUrl": "https://members.downtownhalifax.ca/directory/Details/lotus-kitchen-bar-noodle-waroom-4505021",
-      "observedAt": "2026-09-04T12:47:33.713Z",
+      "observedAt": "2026-09-04T14:50:15.801Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -9598,7 +9623,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Halifax Business Commission",
       "sourceKind": "downtown_halifax_directory",
       "sourceUrl": "https://members.downtownhalifax.ca/directory/Details/mama-grattis-founders-square-3161869",
-      "observedAt": "2026-09-04T12:47:33.769Z",
+      "observedAt": "2026-09-04T14:50:15.807Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -9663,7 +9688,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Halifax Business Commission",
       "sourceKind": "downtown_halifax_directory",
       "sourceUrl": "https://members.downtownhalifax.ca/directory/Details/martha-s-ii-pizza-4632303",
-      "observedAt": "2026-09-04T12:47:33.916Z",
+      "observedAt": "2026-09-04T14:50:15.968Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -9738,7 +9763,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Halifax Business Commission",
       "sourceKind": "downtown_halifax_directory",
       "sourceUrl": "https://members.downtownhalifax.ca/directory/Details/masita-korean-food-3161882",
-      "observedAt": "2026-09-04T12:47:33.892Z",
+      "observedAt": "2026-09-04T14:50:15.954Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -9803,7 +9828,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Halifax Business Commission",
       "sourceKind": "downtown_halifax_directory",
       "sourceUrl": "https://members.downtownhalifax.ca/directory/Details/masita-korean-food-truck-4921393",
-      "observedAt": "2026-09-04T12:47:33.916Z",
+      "observedAt": "2026-09-04T14:50:15.969Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -9868,7 +9893,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Halifax Business Commission",
       "sourceKind": "downtown_halifax_directory",
       "sourceUrl": "https://members.downtownhalifax.ca/directory/Details/may-garden-chinese-restaurant-inside-casino-ns-3161889",
-      "observedAt": "2026-09-04T12:47:33.891Z",
+      "observedAt": "2026-09-04T14:50:15.984Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -9938,7 +9963,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Halifax Business Commission",
       "sourceKind": "downtown_halifax_directory",
       "sourceUrl": "https://members.downtownhalifax.ca/directory/Details/mckelvie-s-restaurant-grill-3161906",
-      "observedAt": "2026-09-04T12:47:33.895Z",
+      "observedAt": "2026-09-04T14:50:15.936Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -10013,7 +10038,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Halifax Business Commission",
       "sourceKind": "downtown_halifax_directory",
       "sourceUrl": "https://members.downtownhalifax.ca/directory/Details/midtown-tavern-lounge-3161929",
-      "observedAt": "2026-09-04T12:47:33.915Z",
+      "observedAt": "2026-09-04T14:50:15.927Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -10083,7 +10108,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Halifax Business Commission",
       "sourceKind": "downtown_halifax_directory",
       "sourceUrl": "https://members.downtownhalifax.ca/directory/Details/mizo-drinks-4124588",
-      "observedAt": "2026-09-04T12:47:34.085Z",
+      "observedAt": "2026-09-04T14:50:16.153Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -10153,7 +10178,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Halifax Business Commission",
       "sourceKind": "downtown_halifax_directory",
       "sourceUrl": "https://members.downtownhalifax.ca/directory/Details/monky-funky-cafe-4711895",
-      "observedAt": "2026-09-04T12:47:34.058Z",
+      "observedAt": "2026-09-04T14:50:16.099Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -10228,7 +10253,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Halifax Business Commission",
       "sourceKind": "downtown_halifax_directory",
       "sourceUrl": "https://members.downtownhalifax.ca/directory/Details/neon-armadillo-3587994",
-      "observedAt": "2026-09-04T12:47:34.022Z",
+      "observedAt": "2026-09-04T14:50:16.121Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -10298,7 +10323,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Halifax Business Commission",
       "sourceKind": "downtown_halifax_directory",
       "sourceUrl": "https://members.downtownhalifax.ca/directory/Details/niche-lounge-3161955",
-      "observedAt": "2026-09-04T12:47:34.059Z",
+      "observedAt": "2026-09-04T14:50:16.127Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -10368,7 +10393,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Halifax Business Commission",
       "sourceKind": "downtown_halifax_directory",
       "sourceUrl": "https://members.downtownhalifax.ca/directory/Details/our-place-coffeehouse-4501000",
-      "observedAt": "2026-09-04T12:47:34.047Z",
+      "observedAt": "2026-09-04T14:50:16.098Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -10433,7 +10458,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Halifax Business Commission",
       "sourceKind": "downtown_halifax_directory",
       "sourceUrl": "https://members.downtownhalifax.ca/directory/Details/pacifico-bar-grill-3162056",
-      "observedAt": "2026-09-04T12:47:34.046Z",
+      "observedAt": "2026-09-04T14:50:16.153Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -10508,7 +10533,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Halifax Business Commission",
       "sourceKind": "downtown_halifax_directory",
       "sourceUrl": "https://members.downtownhalifax.ca/directory/Details/peacock-wine-bar-3162047",
-      "observedAt": "2026-09-04T12:47:34.218Z",
+      "observedAt": "2026-09-04T14:50:16.269Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -10573,7 +10598,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Halifax Business Commission",
       "sourceKind": "downtown_halifax_directory",
       "sourceUrl": "https://members.downtownhalifax.ca/directory/Details/pho-maniac-3162050",
-      "observedAt": "2026-09-04T12:47:34.216Z",
+      "observedAt": "2026-09-04T14:50:16.276Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -10643,7 +10668,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Halifax Business Commission",
       "sourceKind": "downtown_halifax_directory",
       "sourceUrl": "https://members.downtownhalifax.ca/directory/Details/poke-go-broth-house-3161442",
-      "observedAt": "2026-09-04T12:47:34.216Z",
+      "observedAt": "2026-09-04T14:50:16.359Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -10718,7 +10743,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Halifax Business Commission",
       "sourceKind": "downtown_halifax_directory",
       "sourceUrl": "https://members.downtownhalifax.ca/directory/Details/ragazzi-restobar-3162109",
-      "observedAt": "2026-09-04T12:47:34.224Z",
+      "observedAt": "2026-09-04T14:50:16.287Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -10783,7 +10808,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Halifax Business Commission",
       "sourceKind": "downtown_halifax_directory",
       "sourceUrl": "https://members.downtownhalifax.ca/directory/Details/red-asian-fusion-3162101",
-      "observedAt": "2026-09-04T12:47:34.225Z",
+      "observedAt": "2026-09-04T14:50:16.258Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -10858,7 +10883,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Halifax Business Commission",
       "sourceKind": "downtown_halifax_directory",
       "sourceUrl": "https://members.downtownhalifax.ca/directory/Details/rudy-s-2-go-3162137",
-      "observedAt": "2026-09-04T12:47:34.348Z",
+      "observedAt": "2026-09-04T14:50:16.476Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -10928,7 +10953,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Halifax Business Commission",
       "sourceKind": "downtown_halifax_directory",
       "sourceUrl": "https://members.downtownhalifax.ca/directory/Details/rumours-cabaret-3536347",
-      "observedAt": "2026-09-04T12:47:34.329Z",
+      "observedAt": "2026-09-04T14:50:16.476Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -10998,7 +11023,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Halifax Business Commission",
       "sourceKind": "downtown_halifax_directory",
       "sourceUrl": "https://members.downtownhalifax.ca/directory/Details/salt-sol-latin-food-by-the-ocean-4124549",
-      "observedAt": "2026-09-04T12:47:34.363Z",
+      "observedAt": "2026-09-04T14:50:16.478Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -11068,7 +11093,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Halifax Business Commission",
       "sourceKind": "downtown_halifax_directory",
       "sourceUrl": "https://members.downtownhalifax.ca/directory/Details/salt-yard-social-3162119",
-      "observedAt": "2026-09-04T12:47:34.363Z",
+      "observedAt": "2026-09-04T14:50:16.475Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -11143,7 +11168,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Halifax Business Commission",
       "sourceKind": "downtown_halifax_directory",
       "sourceUrl": "https://members.downtownhalifax.ca/directory/Details/sapori-italian-street-food-3162148",
-      "observedAt": "2026-09-04T12:47:34.360Z",
+      "observedAt": "2026-09-04T14:50:16.471Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -11218,7 +11243,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Halifax Business Commission",
       "sourceKind": "downtown_halifax_directory",
       "sourceUrl": "https://members.downtownhalifax.ca/directory/Details/seaport-social-halifax-3162145",
-      "observedAt": "2026-09-04T12:47:34.330Z",
+      "observedAt": "2026-09-04T14:50:16.472Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -11283,7 +11308,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Halifax Business Commission",
       "sourceKind": "downtown_halifax_directory",
       "sourceUrl": "https://members.downtownhalifax.ca/directory/Details/shiraz-restaurant-3162187",
-      "observedAt": "2026-09-04T12:47:34.485Z",
+      "observedAt": "2026-09-04T14:50:16.591Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -11358,7 +11383,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Halifax Business Commission",
       "sourceKind": "downtown_halifax_directory",
       "sourceUrl": "https://members.downtownhalifax.ca/directory/Details/sicilian-pizza-donairs-subs-3162177",
-      "observedAt": "2026-09-04T12:47:34.484Z",
+      "observedAt": "2026-09-04T14:50:16.598Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -11428,7 +11453,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Halifax Business Commission",
       "sourceKind": "downtown_halifax_directory",
       "sourceUrl": "https://members.downtownhalifax.ca/directory/Details/sip-dip-4924339",
-      "observedAt": "2026-09-04T12:47:34.491Z",
+      "observedAt": "2026-09-04T14:50:16.590Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -11505,7 +11530,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Halifax Business Commission",
       "sourceKind": "downtown_halifax_directory",
       "sourceUrl": "https://members.downtownhalifax.ca/directory/Details/sip-n-dine-3645005",
-      "observedAt": "2026-09-04T12:47:34.473Z",
+      "observedAt": "2026-09-04T14:50:16.601Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -11570,7 +11595,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Halifax Business Commission",
       "sourceKind": "downtown_halifax_directory",
       "sourceUrl": "https://members.downtownhalifax.ca/directory/Details/sketti-ball-co-3189795",
-      "observedAt": "2026-09-04T12:47:34.485Z",
+      "observedAt": "2026-09-04T14:50:16.600Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -11640,7 +11665,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Halifax Business Commission",
       "sourceKind": "downtown_halifax_directory",
       "sourceUrl": "https://members.downtownhalifax.ca/directory/Details/snappy-tomato-3162193",
-      "observedAt": "2026-09-04T12:47:34.470Z",
+      "observedAt": "2026-09-04T14:50:16.589Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -11715,7 +11740,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Halifax Business Commission",
       "sourceKind": "downtown_halifax_directory",
       "sourceUrl": "https://members.downtownhalifax.ca/directory/Details/split-crow-pub-3162218",
-      "observedAt": "2026-09-04T12:47:34.608Z",
+      "observedAt": "2026-09-04T14:50:16.713Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -11780,7 +11805,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Halifax Business Commission",
       "sourceKind": "downtown_halifax_directory",
       "sourceUrl": "https://members.downtownhalifax.ca/directory/Details/starbucks-atlantic-superstore-3162220",
-      "observedAt": "2026-09-04T12:47:34.603Z",
+      "observedAt": "2026-09-04T14:50:16.731Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -11855,7 +11880,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Halifax Business Commission",
       "sourceKind": "downtown_halifax_directory",
       "sourceUrl": "https://members.downtownhalifax.ca/directory/Details/stones-throw-patio-3162276",
-      "observedAt": "2026-09-04T12:47:34.628Z",
+      "observedAt": "2026-09-04T14:50:16.719Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -11930,7 +11955,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Halifax Business Commission",
       "sourceKind": "downtown_halifax_directory",
       "sourceUrl": "https://members.downtownhalifax.ca/directory/Details/stories-halliburton-house-inn-3162252",
-      "observedAt": "2026-09-04T12:47:34.607Z",
+      "observedAt": "2026-09-04T14:50:16.713Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -12000,7 +12025,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Halifax Business Commission",
       "sourceKind": "downtown_halifax_directory",
       "sourceUrl": "https://members.downtownhalifax.ca/directory/Details/summernoon-formerly-the-barn-4904756",
-      "observedAt": "2026-09-04T12:47:34.606Z",
+      "observedAt": "2026-09-04T14:50:16.723Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -12075,7 +12100,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Halifax Business Commission",
       "sourceKind": "downtown_halifax_directory",
       "sourceUrl": "https://members.downtownhalifax.ca/directory/Details/sushi-square-4733357",
-      "observedAt": "2026-09-04T12:47:34.630Z",
+      "observedAt": "2026-09-04T14:50:16.741Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -12145,7 +12170,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Halifax Business Commission",
       "sourceKind": "downtown_halifax_directory",
       "sourceUrl": "https://members.downtownhalifax.ca/directory/Details/talay-thai-restaurant-3162239",
-      "observedAt": "2026-09-04T12:47:34.753Z",
+      "observedAt": "2026-09-04T14:50:16.854Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -12215,7 +12240,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Halifax Business Commission",
       "sourceKind": "downtown_halifax_directory",
       "sourceUrl": "https://members.downtownhalifax.ca/directory/Details/tawa-grill-3162238",
-      "observedAt": "2026-09-04T12:47:34.799Z",
+      "observedAt": "2026-09-04T14:50:16.866Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -12290,7 +12315,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Halifax Business Commission",
       "sourceKind": "downtown_halifax_directory",
       "sourceUrl": "https://members.downtownhalifax.ca/directory/Details/the-barrington-steakhouse-oyster-bar-3162267",
-      "observedAt": "2026-09-04T12:47:34.747Z",
+      "observedAt": "2026-09-04T14:50:16.861Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -12355,7 +12380,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Halifax Business Commission",
       "sourceKind": "downtown_halifax_directory",
       "sourceUrl": "https://members.downtownhalifax.ca/directory/Details/the-basement-at-the-shoe-3162277",
-      "observedAt": "2026-09-04T12:47:34.741Z",
+      "observedAt": "2026-09-04T14:50:16.891Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -12430,7 +12455,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Halifax Business Commission",
       "sourceKind": "downtown_halifax_directory",
       "sourceUrl": "https://members.downtownhalifax.ca/directory/Details/the-bg-halifax-beer-garden-3162278",
-      "observedAt": "2026-09-04T12:47:34.749Z",
+      "observedAt": "2026-09-04T14:50:16.860Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -12495,7 +12520,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Halifax Business Commission",
       "sourceKind": "downtown_halifax_directory",
       "sourceUrl": "https://members.downtownhalifax.ca/directory/Details/the-bistro-courtyard-marriott-halifax-3162263",
-      "observedAt": "2026-09-04T12:47:34.742Z",
+      "observedAt": "2026-09-04T14:50:16.865Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -12560,7 +12585,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Halifax Business Commission",
       "sourceKind": "downtown_halifax_directory",
       "sourceUrl": "https://members.downtownhalifax.ca/directory/Details/the-cake-lady-waterfront-kiosk-3162272",
-      "observedAt": "2026-09-04T12:47:34.922Z",
+      "observedAt": "2026-09-04T14:50:17.011Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -12625,7 +12650,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Halifax Business Commission",
       "sourceKind": "downtown_halifax_directory",
       "sourceUrl": "https://members.downtownhalifax.ca/directory/Details/the-daily-grind-cafe-bar-3162285",
-      "observedAt": "2026-09-04T12:47:34.907Z",
+      "observedAt": "2026-09-04T14:50:17.041Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -12700,7 +12725,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Halifax Business Commission",
       "sourceKind": "downtown_halifax_directory",
       "sourceUrl": "https://members.downtownhalifax.ca/directory/Details/the-dome-nightclub-3162288",
-      "observedAt": "2026-09-04T12:47:34.950Z",
+      "observedAt": "2026-09-04T14:50:17.009Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -12775,7 +12800,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Halifax Business Commission",
       "sourceKind": "downtown_halifax_directory",
       "sourceUrl": "https://members.downtownhalifax.ca/directory/Details/the-economy-shoe-shop-cafe-bar-3162283",
-      "observedAt": "2026-09-04T12:47:34.914Z",
+      "observedAt": "2026-09-04T14:50:17.019Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -12850,7 +12875,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Halifax Business Commission",
       "sourceKind": "downtown_halifax_directory",
       "sourceUrl": "https://members.downtownhalifax.ca/directory/Details/the-fog-company-4904773",
-      "observedAt": "2026-09-04T12:47:34.914Z",
+      "observedAt": "2026-09-04T14:50:17.013Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -12915,7 +12940,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Halifax Business Commission",
       "sourceKind": "downtown_halifax_directory",
       "sourceUrl": "https://members.downtownhalifax.ca/directory/Details/the-henry-house-restaurant-pub-3162297",
-      "observedAt": "2026-09-04T12:47:34.913Z",
+      "observedAt": "2026-09-04T14:50:17.003Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -12990,7 +13015,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Halifax Business Commission",
       "sourceKind": "downtown_halifax_directory",
       "sourceUrl": "https://members.downtownhalifax.ca/directory/Details/the-old-triangle-irish-alehouse-3162291",
-      "observedAt": "2026-09-04T12:47:35.074Z",
+      "observedAt": "2026-09-04T14:50:17.152Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -13065,7 +13090,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Halifax Business Commission",
       "sourceKind": "downtown_halifax_directory",
       "sourceUrl": "https://members.downtownhalifax.ca/directory/Details/the-press-gang-restaurant-oyster-bar-3162296",
-      "observedAt": "2026-09-04T12:47:35.073Z",
+      "observedAt": "2026-09-04T14:50:17.167Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -13135,7 +13160,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Halifax Business Commission",
       "sourceKind": "downtown_halifax_directory",
       "sourceUrl": "https://members.downtownhalifax.ca/directory/Details/the-roxbury-urban-dive-bar-3162332",
-      "observedAt": "2026-09-04T12:47:35.081Z",
+      "observedAt": "2026-09-04T14:50:17.247Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -13210,7 +13235,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Halifax Business Commission",
       "sourceKind": "downtown_halifax_directory",
       "sourceUrl": "https://members.downtownhalifax.ca/directory/Details/the-stubborn-goat-3162330",
-      "observedAt": "2026-09-04T12:47:35.066Z",
+      "observedAt": "2026-09-04T14:50:17.162Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -13285,7 +13310,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Halifax Business Commission",
       "sourceKind": "downtown_halifax_directory",
       "sourceUrl": "https://members.downtownhalifax.ca/directory/Details/the-toothy-moose-3162333",
-      "observedAt": "2026-09-04T12:47:35.073Z",
+      "observedAt": "2026-09-04T14:50:17.168Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -13355,7 +13380,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Halifax Business Commission",
       "sourceKind": "downtown_halifax_directory",
       "sourceUrl": "https://members.downtownhalifax.ca/directory/Details/tony-s-donair-pizza-salt-yard-location-4124635",
-      "observedAt": "2026-09-04T12:47:35.078Z",
+      "observedAt": "2026-09-04T14:50:17.246Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -13420,7 +13445,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Halifax Business Commission",
       "sourceKind": "downtown_halifax_directory",
       "sourceUrl": "https://members.downtownhalifax.ca/directory/Details/treats-caf-3162331",
-      "observedAt": "2026-09-04T12:47:35.203Z",
+      "observedAt": "2026-09-04T14:50:17.361Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -13485,7 +13510,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Halifax Business Commission",
       "sourceKind": "downtown_halifax_directory",
       "sourceUrl": "https://members.downtownhalifax.ca/directory/Details/tribute-food-wine-fire-3823533",
-      "observedAt": "2026-09-04T12:47:35.206Z",
+      "observedAt": "2026-09-04T14:50:17.369Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -13560,7 +13585,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Halifax Business Commission",
       "sourceKind": "downtown_halifax_directory",
       "sourceUrl": "https://members.downtownhalifax.ca/directory/Details/verano-food-purveyors-3162381",
-      "observedAt": "2026-09-04T12:47:35.203Z",
+      "observedAt": "2026-09-04T14:50:17.385Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -13630,7 +13655,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Halifax Business Commission",
       "sourceKind": "downtown_halifax_directory",
       "sourceUrl": "https://members.downtownhalifax.ca/directory/Details/waterfront-coffee-bar-3162400",
-      "observedAt": "2026-09-04T12:47:35.199Z",
+      "observedAt": "2026-09-04T14:50:17.368Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -13695,7 +13720,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Halifax Business Commission",
       "sourceKind": "downtown_halifax_directory",
       "sourceUrl": "https://members.downtownhalifax.ca/directory/Details/waterfront-pizza-wraps-3162386",
-      "observedAt": "2026-09-04T12:47:35.201Z",
+      "observedAt": "2026-09-04T14:50:17.383Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -13770,142 +13795,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Halifax Business Commission",
       "sourceKind": "downtown_halifax_directory",
       "sourceUrl": "https://members.downtownhalifax.ca/directory/Details/weird-harbour-espresso-bar-3162390",
-      "observedAt": "2026-09-04T12:47:35.202Z",
-      "reviewState": "directory-listed",
-      "alreadyInCatalogByName": false,
-      "alreadyInCatalog": false
-    },
-    {
-      "id": "dhbc-willy-s-fresh-cut-fries-burgers-5239-blowers-street-suite-10-halifax-ns-b3j-1j8",
-      "name": "Willy's Fresh Cut Fries & Burgers",
-      "category": "Food & Drink",
-      "address": "5239 Blowers Street, Suite 10\r\n,\r\nHalifax\r\n,\r\nNS\r\n,\r\nB3J 1J8",
-      "city": "Downtown Halifax",
-      "website": "https://downtownhalifax.ca/advocacy",
-      "socialProfiles": [
-        {
-          "platform": "instagram",
-          "url": "https://www.instagram.com/willysfreshcut/",
-          "associationBasis": "trusted_directory_explicit_link"
-        },
-        {
-          "platform": "facebook",
-          "url": "http://www.facebook.com/sharer.php?u=https%3a%2f%2fmembers.downtownhalifax.ca%2fdirectory%2fDetails%2fwilly-s-fresh-cut-fries-burgers-3162391",
-          "associationBasis": "trusted_directory_explicit_link"
-        },
-        {
-          "platform": "linkedin",
-          "url": "http://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fmembers.downtownhalifax.ca%2fdirectory%2fDetails%2fwilly-s-fresh-cut-fries-burgers-3162391&amp;title=Willy%27s+Fresh+Cut+Fries+%26+Burgers",
-          "associationBasis": "trusted_directory_explicit_link"
-        },
-        {
-          "platform": "x",
-          "url": "http://twitter.com/share?text=Willy%27s+Fresh+Cut+Fries+%26+Burgers&amp;url=https%3a%2f%2fmembers.downtownhalifax.ca%2fdirectory%2fDetails%2fwilly-s-fresh-cut-fries-burgers-3162391",
-          "associationBasis": "trusted_directory_explicit_link"
-        },
-        {
-          "platform": "pinterest",
-          "url": "https://pinterest.com/pin/create/button/?media=&amp;url=https%3a%2f%2fmembers.downtownhalifax.ca%2fdirectory%2fDetails%2fwilly-s-fresh-cut-fries-burgers-3162391",
-          "associationBasis": "trusted_directory_explicit_link"
-        },
-        {
-          "platform": "instagram",
-          "url": "https://www.instagram.com/downtownhalifax/",
-          "associationBasis": "trusted_directory_explicit_link"
-        },
-        {
-          "platform": "facebook",
-          "url": "https://www.facebook.com/DowntownHalifax/",
-          "associationBasis": "trusted_directory_explicit_link"
-        },
-        {
-          "platform": "x",
-          "url": "https://twitter.com/downtownhalifax",
-          "associationBasis": "trusted_directory_explicit_link"
-        },
-        {
-          "platform": "linkedin",
-          "url": "https://www.linkedin.com/company/downtown-halifax-business-commission/",
-          "associationBasis": "trusted_directory_explicit_link"
-        },
-        {
-          "platform": "tiktok",
-          "url": "https://www.tiktok.com/@downtownhalifax_",
-          "associationBasis": "trusted_directory_explicit_link"
-        }
-      ],
-      "linkHubs": [],
-      "actionLinks": [],
-      "sourceId": "downtown-halifax-food-drink",
-      "sourceName": "Downtown Halifax Business Commission",
-      "sourceKind": "downtown_halifax_directory",
-      "sourceUrl": "https://members.downtownhalifax.ca/directory/Details/willy-s-fresh-cut-fries-burgers-3162391",
-      "observedAt": "2026-09-04T12:47:35.326Z",
-      "reviewState": "directory-listed",
-      "alreadyInCatalogByName": false,
-      "alreadyInCatalog": false
-    },
-    {
-      "id": "dhbc-yilan-1335-barrington-street-halifax-ns-b3k-0c6",
-      "name": "Yilan",
-      "category": "Food & Drink",
-      "address": "1335 Barrington Street\r\n,\r\nHalifax\r\n,\r\nNS\r\n,\r\nB3K 0C6",
-      "city": "Downtown Halifax",
-      "website": "https://downtownhalifax.ca/advocacy",
-      "socialProfiles": [
-        {
-          "platform": "facebook",
-          "url": "http://www.facebook.com/sharer.php?u=https%3a%2f%2fmembers.downtownhalifax.ca%2fdirectory%2fDetails%2fyilan-3162382",
-          "associationBasis": "trusted_directory_explicit_link"
-        },
-        {
-          "platform": "linkedin",
-          "url": "http://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fmembers.downtownhalifax.ca%2fdirectory%2fDetails%2fyilan-3162382&amp;title=Yilan",
-          "associationBasis": "trusted_directory_explicit_link"
-        },
-        {
-          "platform": "x",
-          "url": "http://twitter.com/share?text=Yilan&amp;url=https%3a%2f%2fmembers.downtownhalifax.ca%2fdirectory%2fDetails%2fyilan-3162382",
-          "associationBasis": "trusted_directory_explicit_link"
-        },
-        {
-          "platform": "pinterest",
-          "url": "https://pinterest.com/pin/create/button/?media=&amp;url=https%3a%2f%2fmembers.downtownhalifax.ca%2fdirectory%2fDetails%2fyilan-3162382",
-          "associationBasis": "trusted_directory_explicit_link"
-        },
-        {
-          "platform": "instagram",
-          "url": "https://www.instagram.com/downtownhalifax/",
-          "associationBasis": "trusted_directory_explicit_link"
-        },
-        {
-          "platform": "facebook",
-          "url": "https://www.facebook.com/DowntownHalifax/",
-          "associationBasis": "trusted_directory_explicit_link"
-        },
-        {
-          "platform": "x",
-          "url": "https://twitter.com/downtownhalifax",
-          "associationBasis": "trusted_directory_explicit_link"
-        },
-        {
-          "platform": "linkedin",
-          "url": "https://www.linkedin.com/company/downtown-halifax-business-commission/",
-          "associationBasis": "trusted_directory_explicit_link"
-        },
-        {
-          "platform": "tiktok",
-          "url": "https://www.tiktok.com/@downtownhalifax_",
-          "associationBasis": "trusted_directory_explicit_link"
-        }
-      ],
-      "linkHubs": [],
-      "actionLinks": [],
-      "sourceId": "downtown-halifax-food-drink",
-      "sourceName": "Downtown Halifax Business Commission",
-      "sourceKind": "downtown_halifax_directory",
-      "sourceUrl": "https://members.downtownhalifax.ca/directory/Details/yilan-3162382",
-      "observedAt": "2026-09-04T12:47:35.312Z",
+      "observedAt": "2026-09-04T14:50:17.369Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -13928,7 +13818,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Sackville Business Association Food & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://sackvillebusiness.com/shops-services/aw-restaurant",
-      "observedAt": "2026-09-04T12:47:35.614Z",
+      "observedAt": "2026-09-04T14:50:17.695Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -13951,7 +13841,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Sackville Business Association Food & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://sackvillebusiness.com/shops-services/alexandras-pizza",
-      "observedAt": "2026-09-04T12:47:35.614Z",
+      "observedAt": "2026-09-04T14:50:17.695Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": true,
       "alreadyInCatalog": true
@@ -13974,7 +13864,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Sackville Business Association Food & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://sackvillebusiness.com/shops-services/antoinettes-cheesecakes",
-      "observedAt": "2026-09-04T12:47:35.614Z",
+      "observedAt": "2026-09-04T14:50:17.695Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -13997,7 +13887,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Sackville Business Association Food & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://sackvillebusiness.com/shops-services/apartment-3-espresso-bar",
-      "observedAt": "2026-09-04T12:47:35.614Z",
+      "observedAt": "2026-09-04T14:50:17.695Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -14020,7 +13910,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Sackville Business Association Food & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://sackvillebusiness.com/shops-services/booster-juice",
-      "observedAt": "2026-09-04T12:47:35.614Z",
+      "observedAt": "2026-09-04T14:50:17.695Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": true,
       "alreadyInCatalog": true
@@ -14043,7 +13933,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Sackville Business Association Food & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://sackvillebusiness.com/shops-services/boston-pizza-sackville",
-      "observedAt": "2026-09-04T12:47:35.614Z",
+      "observedAt": "2026-09-04T14:50:17.695Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -14066,7 +13956,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Sackville Business Association Food & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://sackvillebusiness.com/shops-services/burger-king-sackville",
-      "observedAt": "2026-09-04T12:47:35.614Z",
+      "observedAt": "2026-09-04T14:50:17.695Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -14089,7 +13979,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Sackville Business Association Food & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://sackvillebusiness.com/shops-services/casa-di-stefano",
-      "observedAt": "2026-09-04T12:47:35.614Z",
+      "observedAt": "2026-09-04T14:50:17.695Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -14112,7 +14002,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Sackville Business Association Food & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://sackvillebusiness.com/shops-services/charger-burger-wowly",
-      "observedAt": "2026-09-04T12:47:35.614Z",
+      "observedAt": "2026-09-04T14:50:17.695Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -14135,7 +14025,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Sackville Business Association Food & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://sackvillebusiness.com/shops-services/dairy-queen-sackville",
-      "observedAt": "2026-09-04T12:47:35.614Z",
+      "observedAt": "2026-09-04T14:50:17.695Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -14164,7 +14054,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Sackville Business Association Food & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://sackvillebusiness.com/shops-services/east-coast-smokehouse-bbq-deli-catering-co",
-      "observedAt": "2026-09-04T12:47:35.615Z",
+      "observedAt": "2026-09-04T14:50:17.695Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -14187,7 +14077,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Sackville Business Association Food & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://sackvillebusiness.com/shops-services/edo-japan",
-      "observedAt": "2026-09-04T12:47:35.615Z",
+      "observedAt": "2026-09-04T14:50:17.695Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -14210,7 +14100,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Sackville Business Association Food & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://sackvillebusiness.com/shops-services/freemans-little-new-york",
-      "observedAt": "2026-09-04T12:47:35.615Z",
+      "observedAt": "2026-09-04T14:50:17.695Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": true,
       "alreadyInCatalog": true
@@ -14233,7 +14123,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Sackville Business Association Food & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://sackvillebusiness.com/shops-services/fry-daddys",
-      "observedAt": "2026-09-04T12:47:35.615Z",
+      "observedAt": "2026-09-04T14:50:17.695Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -14256,7 +14146,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Sackville Business Association Food & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://sackvillebusiness.com/shops-services/futures-cafe",
-      "observedAt": "2026-09-04T12:47:35.615Z",
+      "observedAt": "2026-09-04T14:50:17.695Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -14286,7 +14176,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Sackville Business Association Food & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://sackvillebusiness.com/shops-services/great-roads-brewing",
-      "observedAt": "2026-09-04T12:47:35.615Z",
+      "observedAt": "2026-09-04T14:50:17.695Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -14309,7 +14199,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Sackville Business Association Food & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://sackvillebusiness.com/shops-services/greco-pizza",
-      "observedAt": "2026-09-04T12:47:35.615Z",
+      "observedAt": "2026-09-04T14:50:17.695Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": true,
       "alreadyInCatalog": true
@@ -14332,7 +14222,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Sackville Business Association Food & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://sackvillebusiness.com/shops-services/hongs-kitchen",
-      "observedAt": "2026-09-04T12:47:35.615Z",
+      "observedAt": "2026-09-04T14:50:17.695Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -14361,7 +14251,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Sackville Business Association Food & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://sackvillebusiness.com/shops-services/jinloong-restaurant",
-      "observedAt": "2026-09-04T12:47:35.615Z",
+      "observedAt": "2026-09-04T14:50:17.695Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -14384,7 +14274,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Sackville Business Association Food & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://sackvillebusiness.com/shops-services/kaisers-sub-sandwich-shoppes",
-      "observedAt": "2026-09-04T12:47:35.615Z",
+      "observedAt": "2026-09-04T14:50:17.695Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -14413,7 +14303,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Sackville Business Association Food & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://sackvillebusiness.com/shops-services/kee-heong-cantonese-dim-sum",
-      "observedAt": "2026-09-04T12:47:35.615Z",
+      "observedAt": "2026-09-04T14:50:17.695Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -14436,7 +14326,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Sackville Business Association Food & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://sackvillebusiness.com/shops-services/kfc",
-      "observedAt": "2026-09-04T12:47:35.615Z",
+      "observedAt": "2026-09-04T14:50:17.695Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": true,
       "alreadyInCatalog": true
@@ -14459,7 +14349,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Sackville Business Association Food & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://sackvillebusiness.com/shops-services/little-caesars",
-      "observedAt": "2026-09-04T12:47:35.615Z",
+      "observedAt": "2026-09-04T14:50:17.696Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": true,
       "alreadyInCatalog": true
@@ -14488,7 +14378,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Sackville Business Association Food & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://sackvillebusiness.com/shops-services/locally-baked-outlet",
-      "observedAt": "2026-09-04T12:47:35.615Z",
+      "observedAt": "2026-09-04T14:50:17.696Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -14511,7 +14401,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Sackville Business Association Food & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://sackvillebusiness.com/shops-services/mary-browns-sackville",
-      "observedAt": "2026-09-04T12:47:35.615Z",
+      "observedAt": "2026-09-04T14:50:17.696Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -14534,7 +14424,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Sackville Business Association Food & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://sackvillebusiness.com/shops-services/may-garden-chinese-restaurant",
-      "observedAt": "2026-09-04T12:47:35.615Z",
+      "observedAt": "2026-09-04T14:50:17.696Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -14557,7 +14447,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Sackville Business Association Food & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://sackvillebusiness.com/shops-services/mcdonalds-restaurant-sackville",
-      "observedAt": "2026-09-04T12:47:35.615Z",
+      "observedAt": "2026-09-04T14:50:17.696Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -14580,7 +14470,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Sackville Business Association Food & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://sackvillebusiness.com/shops-services/mezza-lebanese-restaurant",
-      "observedAt": "2026-09-04T12:47:35.615Z",
+      "observedAt": "2026-09-04T14:50:17.696Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -14603,7 +14493,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Sackville Business Association Food & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://sackvillebusiness.com/shops-services/mousseline-pastries-delicatessen",
-      "observedAt": "2026-09-04T12:47:35.615Z",
+      "observedAt": "2026-09-04T14:50:17.696Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -14626,7 +14516,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Sackville Business Association Food & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://sackvillebusiness.com/shops-services/mucho-burrito",
-      "observedAt": "2026-09-04T12:47:35.615Z",
+      "observedAt": "2026-09-04T14:50:17.696Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -14649,7 +14539,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Sackville Business Association Food & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://sackvillebusiness.com/shops-services/nayya-pizza-grill",
-      "observedAt": "2026-09-04T12:47:35.615Z",
+      "observedAt": "2026-09-04T14:50:17.696Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": true,
       "alreadyInCatalog": true
@@ -14672,7 +14562,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Sackville Business Association Food & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://sackvillebusiness.com/shops-services/osmows-shawarma",
-      "observedAt": "2026-09-04T12:47:35.615Z",
+      "observedAt": "2026-09-04T14:50:17.696Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -14695,7 +14585,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Sackville Business Association Food & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://sackvillebusiness.com/shops-services/pita-pit",
-      "observedAt": "2026-09-04T12:47:35.615Z",
+      "observedAt": "2026-09-04T14:50:17.696Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": true,
       "alreadyInCatalog": true
@@ -14718,7 +14608,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Sackville Business Association Food & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://sackvillebusiness.com/shops-services/pizza-hut",
-      "observedAt": "2026-09-04T12:47:35.615Z",
+      "observedAt": "2026-09-04T14:50:17.696Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": true,
       "alreadyInCatalog": true
@@ -14741,7 +14631,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Sackville Business Association Food & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://sackvillebusiness.com/shops-services/pizza-pizza",
-      "observedAt": "2026-09-04T12:47:35.615Z",
+      "observedAt": "2026-09-04T14:50:17.696Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": true,
       "alreadyInCatalog": true
@@ -14764,7 +14654,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Sackville Business Association Food & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://sackvillebusiness.com/shops-services/pizzadelic",
-      "observedAt": "2026-09-04T12:47:35.615Z",
+      "observedAt": "2026-09-04T14:50:17.696Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": true,
       "alreadyInCatalog": true
@@ -14787,7 +14677,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Sackville Business Association Food & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://sackvillebusiness.com/shops-services/popeyes-louisiana-kitchen",
-      "observedAt": "2026-09-04T12:47:35.615Z",
+      "observedAt": "2026-09-04T14:50:17.696Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -14810,7 +14700,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Sackville Business Association Food & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://sackvillebusiness.com/shops-services/pzzaco",
-      "observedAt": "2026-09-04T12:47:35.615Z",
+      "observedAt": "2026-09-04T14:50:17.696Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -14839,7 +14729,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Sackville Business Association Food & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://sackvillebusiness.com/shops-services/randys-pizza",
-      "observedAt": "2026-09-04T12:47:35.615Z",
+      "observedAt": "2026-09-04T14:50:17.696Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": true,
       "alreadyInCatalog": true
@@ -14868,7 +14758,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Sackville Business Association Food & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://sackvillebusiness.com/shops-services/roys-restaurant",
-      "observedAt": "2026-09-04T12:47:35.615Z",
+      "observedAt": "2026-09-04T14:50:17.696Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -14891,7 +14781,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Sackville Business Association Food & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://sackvillebusiness.com/shops-services/st-louis-bar-grill",
-      "observedAt": "2026-09-04T12:47:35.615Z",
+      "observedAt": "2026-09-04T14:50:17.696Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": true,
       "alreadyInCatalog": true
@@ -14914,7 +14804,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Sackville Business Association Food & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://sackvillebusiness.com/shops-services/starbucks",
-      "observedAt": "2026-09-04T12:47:35.615Z",
+      "observedAt": "2026-09-04T14:50:17.696Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": true,
       "alreadyInCatalog": true
@@ -14937,7 +14827,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Sackville Business Association Food & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://sackvillebusiness.com/shops-services/starbucks-0",
-      "observedAt": "2026-09-04T12:47:35.615Z",
+      "observedAt": "2026-09-04T14:50:17.696Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": true,
       "alreadyInCatalog": true
@@ -14960,7 +14850,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Sackville Business Association Food & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://sackvillebusiness.com/shops-services/subway-lower-sackville",
-      "observedAt": "2026-09-04T12:47:35.615Z",
+      "observedAt": "2026-09-04T14:50:17.696Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -14983,7 +14873,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Sackville Business Association Food & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://sackvillebusiness.com/shops-services/tap-timber-social",
-      "observedAt": "2026-09-04T12:47:35.615Z",
+      "observedAt": "2026-09-04T14:50:17.696Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -15006,7 +14896,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Sackville Business Association Food & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://sackvillebusiness.com/shops-services/thai-express",
-      "observedAt": "2026-09-04T12:47:35.615Z",
+      "observedAt": "2026-09-04T14:50:17.696Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": true,
       "alreadyInCatalog": true
@@ -15029,7 +14919,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Sackville Business Association Food & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://sackvillebusiness.com/shops-services/pink-piano-cafe-lounge",
-      "observedAt": "2026-09-04T12:47:35.615Z",
+      "observedAt": "2026-09-04T14:50:17.696Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -15052,7 +14942,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Sackville Business Association Food & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://sackvillebusiness.com/shops-services/tim-hortons",
-      "observedAt": "2026-09-04T12:47:35.615Z",
+      "observedAt": "2026-09-04T14:50:17.696Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": true,
       "alreadyInCatalog": true
@@ -15075,7 +14965,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Sackville Business Association Food & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://sackvillebusiness.com/shops-services/tim-hortons-0",
-      "observedAt": "2026-09-04T12:47:35.615Z",
+      "observedAt": "2026-09-04T14:50:17.696Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": true,
       "alreadyInCatalog": true
@@ -15098,7 +14988,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Sackville Business Association Food & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://sackvillebusiness.com/shops-services/toms-family-restaurant",
-      "observedAt": "2026-09-04T12:47:35.615Z",
+      "observedAt": "2026-09-04T14:50:17.696Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -15121,7 +15011,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Sackville Business Association Food & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://sackvillebusiness.com/shops-services/villa-madina",
-      "observedAt": "2026-09-04T12:47:35.615Z",
+      "observedAt": "2026-09-04T14:50:17.696Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": true,
       "alreadyInCatalog": true
@@ -15144,7 +15034,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Sackville Business Association Food & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://sackvillebusiness.com/shops-services/wasabi-asian-cuisine",
-      "observedAt": "2026-09-04T12:47:35.615Z",
+      "observedAt": "2026-09-04T14:50:17.696Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -15167,7 +15057,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Sackville Business Association Food & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://sackvillebusiness.com/shops-services/wendys",
-      "observedAt": "2026-09-04T12:47:35.615Z",
+      "observedAt": "2026-09-04T14:50:17.696Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": true,
       "alreadyInCatalog": true
@@ -15196,7 +15086,2000 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Sackville Business Association Food & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://sackvillebusiness.com/shops-services/wrap-n-roll",
-      "observedAt": "2026-09-04T12:47:35.616Z",
+      "observedAt": "2026-09-04T14:50:17.696Z",
+      "reviewState": "directory-listed",
+      "alreadyInCatalogByName": false,
+      "alreadyInCatalog": false
+    },
+    {
+      "id": "sba-guide-a-w-restaurant-774-sackville-drive-lower-sackville-ns",
+      "name": "A&W RESTAURANT",
+      "category": "Burgers, Fast Food",
+      "address": "774 Sackville Drive, Lower Sackville, NS",
+      "city": "Lower Sackville",
+      "neighborhood": "Sackville",
+      "website": null,
+      "socialProfiles": [],
+      "linkHubs": [],
+      "actionLinks": [],
+      "phone": "(902) 864-5958",
+      "tags": [
+        "patio",
+        "vegetarian_options",
+        "gluten_free_options"
+      ],
+      "sourceId": "sackville-food-drink-guide",
+      "sourceName": "Sackville Business Association Food & Drink Guide",
+      "sourceKind": "business_improvement_district_feature_directory",
+      "sourceUrl": "https://sackvillebusiness.com/food-drink-guide",
+      "observedAt": "2026-09-04T14:50:17.777Z",
+      "reviewState": "directory-listed",
+      "alreadyInCatalogByName": false,
+      "alreadyInCatalog": false
+    },
+    {
+      "id": "sba-guide-alexandra-s-pizza-73-sackville-drive-lower-sackville-ns",
+      "name": "ALEXANDRA’S PIZZA",
+      "category": "Pizza",
+      "address": "73 Sackville Drive, Lower Sackville, NS",
+      "city": "Lower Sackville",
+      "neighborhood": "Sackville",
+      "website": null,
+      "socialProfiles": [],
+      "linkHubs": [],
+      "actionLinks": [],
+      "phone": "(902) 425-1900",
+      "tags": [
+        "vegetarian_options",
+        "vegan_options",
+        "gluten_free_options"
+      ],
+      "sourceId": "sackville-food-drink-guide",
+      "sourceName": "Sackville Business Association Food & Drink Guide",
+      "sourceKind": "business_improvement_district_feature_directory",
+      "sourceUrl": "https://sackvillebusiness.com/food-drink-guide",
+      "observedAt": "2026-09-04T14:50:17.777Z",
+      "reviewState": "directory-listed",
+      "alreadyInCatalogByName": true,
+      "alreadyInCatalog": true
+    },
+    {
+      "id": "sba-guide-apartment-3-espresso-bar-833-sackville-drive-lower-sackville-ns",
+      "name": "APARTMENT 3 ESPRESSO BAR",
+      "category": "Café, Ice Cream",
+      "address": "833 Sackville Drive, Lower Sackville, NS",
+      "city": "Lower Sackville",
+      "neighborhood": "Sackville",
+      "website": null,
+      "socialProfiles": [],
+      "linkHubs": [],
+      "actionLinks": [],
+      "phone": "(902) 869-0269",
+      "tags": [
+        "patio",
+        "vegetarian_options",
+        "gluten_free_options"
+      ],
+      "sourceId": "sackville-food-drink-guide",
+      "sourceName": "Sackville Business Association Food & Drink Guide",
+      "sourceKind": "business_improvement_district_feature_directory",
+      "sourceUrl": "https://sackvillebusiness.com/food-drink-guide",
+      "observedAt": "2026-09-04T14:50:17.777Z",
+      "reviewState": "directory-listed",
+      "alreadyInCatalogByName": false,
+      "alreadyInCatalog": false
+    },
+    {
+      "id": "sba-guide-avodah-cafe-ice-cream-hut-1129-sackville-drive-lower-sackville-ns",
+      "name": "AVODAH CAFÉ& ICE CREAM HUT",
+      "category": "Café, Ice Cream",
+      "address": "1129 Sackville Drive, Lower Sackville, NS",
+      "city": "Lower Sackville",
+      "neighborhood": "Sackville",
+      "website": null,
+      "socialProfiles": [],
+      "linkHubs": [],
+      "actionLinks": [],
+      "phone": "(902) 864-4652",
+      "tags": [
+        "patio",
+        "vegetarian_options",
+        "gluten_free_options"
+      ],
+      "sourceId": "sackville-food-drink-guide",
+      "sourceName": "Sackville Business Association Food & Drink Guide",
+      "sourceKind": "business_improvement_district_feature_directory",
+      "sourceUrl": "https://sackvillebusiness.com/food-drink-guide",
+      "observedAt": "2026-09-04T14:50:17.777Z",
+      "reviewState": "directory-listed",
+      "alreadyInCatalogByName": false,
+      "alreadyInCatalog": false
+    },
+    {
+      "id": "sba-guide-booster-juice-720-sackville-drive-lower-sackville-ns",
+      "name": "BOOSTER JUICE",
+      "category": "Smoothies, Sandwiches",
+      "address": "720 Sackville Drive, Lower Sackville, NS",
+      "city": "Lower Sackville",
+      "neighborhood": "Sackville",
+      "website": null,
+      "socialProfiles": [],
+      "linkHubs": [],
+      "actionLinks": [],
+      "phone": "(902) 865-6330",
+      "tags": [
+        "vegetarian_options",
+        "vegan_options",
+        "gluten_free_options"
+      ],
+      "sourceId": "sackville-food-drink-guide",
+      "sourceName": "Sackville Business Association Food & Drink Guide",
+      "sourceKind": "business_improvement_district_feature_directory",
+      "sourceUrl": "https://sackvillebusiness.com/food-drink-guide",
+      "observedAt": "2026-09-04T14:50:17.777Z",
+      "reviewState": "directory-listed",
+      "alreadyInCatalogByName": true,
+      "alreadyInCatalog": true
+    },
+    {
+      "id": "sba-guide-boston-pizza-710-sackville-drive-lower-sackville-ns",
+      "name": "BOSTON PIZZA",
+      "category": "Family Restaurant, Bar",
+      "address": "710 Sackville Drive, Lower Sackville, NS",
+      "city": "Lower Sackville",
+      "neighborhood": "Sackville",
+      "website": null,
+      "socialProfiles": [],
+      "linkHubs": [],
+      "actionLinks": [],
+      "phone": "(902) 252-7777",
+      "tags": [
+        "liquor_license",
+        "patio",
+        "vegetarian_options",
+        "gluten_free_options"
+      ],
+      "sourceId": "sackville-food-drink-guide",
+      "sourceName": "Sackville Business Association Food & Drink Guide",
+      "sourceKind": "business_improvement_district_feature_directory",
+      "sourceUrl": "https://sackvillebusiness.com/food-drink-guide",
+      "observedAt": "2026-09-04T14:50:17.777Z",
+      "reviewState": "directory-listed",
+      "alreadyInCatalogByName": true,
+      "alreadyInCatalog": true
+    },
+    {
+      "id": "sba-guide-burger-king-641-sackville-drive-lower-sackville-ns",
+      "name": "BURGER KING",
+      "category": "Burgers, Fast Food",
+      "address": "641 Sackville Drive, Lower Sackville, NS",
+      "city": "Lower Sackville",
+      "neighborhood": "Sackville",
+      "website": null,
+      "socialProfiles": [],
+      "linkHubs": [],
+      "actionLinks": [],
+      "phone": "(902) 865-9396",
+      "tags": [
+        "vegetarian_options"
+      ],
+      "sourceId": "sackville-food-drink-guide",
+      "sourceName": "Sackville Business Association Food & Drink Guide",
+      "sourceKind": "business_improvement_district_feature_directory",
+      "sourceUrl": "https://sackvillebusiness.com/food-drink-guide",
+      "observedAt": "2026-09-04T14:50:17.777Z",
+      "reviewState": "directory-listed",
+      "alreadyInCatalogByName": true,
+      "alreadyInCatalog": true
+    },
+    {
+      "id": "sba-guide-burrito-jax-720-sackville-drive-lower-sackville-ns",
+      "name": "BURRITO JAX",
+      "category": "Burritos",
+      "address": "720 Sackville Drive, Lower Sackville, NS",
+      "city": "Lower Sackville",
+      "neighborhood": "Sackville",
+      "website": null,
+      "socialProfiles": [],
+      "linkHubs": [],
+      "actionLinks": [],
+      "phone": "(902) 252-1662",
+      "tags": [
+        "vegetarian_options",
+        "vegan_options",
+        "gluten_free_options"
+      ],
+      "sourceId": "sackville-food-drink-guide",
+      "sourceName": "Sackville Business Association Food & Drink Guide",
+      "sourceKind": "business_improvement_district_feature_directory",
+      "sourceUrl": "https://sackvillebusiness.com/food-drink-guide",
+      "observedAt": "2026-09-04T14:50:17.777Z",
+      "reviewState": "directory-listed",
+      "alreadyInCatalogByName": true,
+      "alreadyInCatalog": true
+    },
+    {
+      "id": "sba-guide-dairy-queen-752-sackville-drive-lower-sackville-ns",
+      "name": "DAIRY QUEEN",
+      "category": "Burgers, Ice Cream",
+      "address": "752 Sackville Drive, Lower Sackville, NS",
+      "city": "Lower Sackville",
+      "neighborhood": "Sackville",
+      "website": null,
+      "socialProfiles": [],
+      "linkHubs": [],
+      "actionLinks": [],
+      "phone": "(902) 865-9611",
+      "tags": [
+        "patio"
+      ],
+      "sourceId": "sackville-food-drink-guide",
+      "sourceName": "Sackville Business Association Food & Drink Guide",
+      "sourceKind": "business_improvement_district_feature_directory",
+      "sourceUrl": "https://sackvillebusiness.com/food-drink-guide",
+      "observedAt": "2026-09-04T14:50:17.777Z",
+      "reviewState": "directory-listed",
+      "alreadyInCatalogByName": true,
+      "alreadyInCatalog": true
+    },
+    {
+      "id": "sba-guide-dekies-restaurant-720-sackville-drive-lower-sackville-ns",
+      "name": "DEKIES RESTAURANT",
+      "category": "| Website",
+      "address": "720 Sackville Drive, Lower Sackville, NS",
+      "city": "Lower Sackville",
+      "neighborhood": "Sackville",
+      "website": null,
+      "socialProfiles": [],
+      "linkHubs": [],
+      "actionLinks": [],
+      "phone": "(902) 252-4100",
+      "tags": [
+        "liquor_license",
+        "vegetarian_options"
+      ],
+      "sourceId": "sackville-food-drink-guide",
+      "sourceName": "Sackville Business Association Food & Drink Guide",
+      "sourceKind": "business_improvement_district_feature_directory",
+      "sourceUrl": "https://sackvillebusiness.com/food-drink-guide",
+      "observedAt": "2026-09-04T14:50:17.777Z",
+      "reviewState": "directory-listed",
+      "alreadyInCatalogByName": false,
+      "alreadyInCatalog": false
+    },
+    {
+      "id": "sba-guide-disco-pizza-sub-575-sackville-drive-lower-sackville-ns",
+      "name": "DISCO PIZZA & SUB",
+      "category": "Pizza, Convenience",
+      "address": "575 Sackville Drive, Lower Sackville, NS",
+      "city": "Lower Sackville",
+      "neighborhood": "Sackville",
+      "website": null,
+      "socialProfiles": [],
+      "linkHubs": [],
+      "actionLinks": [],
+      "phone": "(902) 864-1600",
+      "tags": [
+        "vegetarian_options"
+      ],
+      "sourceId": "sackville-food-drink-guide",
+      "sourceName": "Sackville Business Association Food & Drink Guide",
+      "sourceKind": "business_improvement_district_feature_directory",
+      "sourceUrl": "https://sackvillebusiness.com/food-drink-guide",
+      "observedAt": "2026-09-04T14:50:17.777Z",
+      "reviewState": "directory-listed",
+      "alreadyInCatalogByName": false,
+      "alreadyInCatalog": false
+    },
+    {
+      "id": "sba-guide-east-coast-smokehouse-bbq-deli-catering-co-1053-sackville-drive-lower-sackville-ns",
+      "name": "EAST COAST SMOKEHOUSE, BBQ, DELI & CATERING CO.",
+      "category": "Smoked Meats, Deli",
+      "address": "1053 Sackville Drive, Lower Sackville, NS",
+      "city": "Lower Sackville",
+      "neighborhood": "Sackville",
+      "website": null,
+      "socialProfiles": [],
+      "linkHubs": [],
+      "actionLinks": [],
+      "phone": "(902) 706-0204",
+      "tags": [
+        "vegetarian_options"
+      ],
+      "sourceId": "sackville-food-drink-guide",
+      "sourceName": "Sackville Business Association Food & Drink Guide",
+      "sourceKind": "business_improvement_district_feature_directory",
+      "sourceUrl": "https://sackvillebusiness.com/food-drink-guide",
+      "observedAt": "2026-09-04T14:50:17.777Z",
+      "reviewState": "directory-listed",
+      "alreadyInCatalogByName": false,
+      "alreadyInCatalog": false
+    },
+    {
+      "id": "sba-guide-freeman-s-little-new-york-552-sackville-drive-lower-sackville-ns",
+      "name": "FREEMAN’S LITTLE NEW YORK",
+      "category": "Pub, Pizzeria",
+      "address": "552 Sackville Drive, Lower Sackville, NS",
+      "city": "Lower Sackville",
+      "neighborhood": "Sackville",
+      "website": null,
+      "socialProfiles": [],
+      "linkHubs": [],
+      "actionLinks": [],
+      "phone": "(902) 865-2555",
+      "tags": [
+        "liquor_license",
+        "patio",
+        "vegetarian_options",
+        "vegan_options",
+        "gluten_free_options"
+      ],
+      "sourceId": "sackville-food-drink-guide",
+      "sourceName": "Sackville Business Association Food & Drink Guide",
+      "sourceKind": "business_improvement_district_feature_directory",
+      "sourceUrl": "https://sackvillebusiness.com/food-drink-guide",
+      "observedAt": "2026-09-04T14:50:17.777Z",
+      "reviewState": "directory-listed",
+      "alreadyInCatalogByName": true,
+      "alreadyInCatalog": true
+    },
+    {
+      "id": "sba-guide-futures-cafe-61-glendale-avenue-lower-sackville-ns",
+      "name": "FUTURES CAFÉ",
+      "category": "Café, Sandwiches",
+      "address": "61 Glendale Avenue, Lower Sackville, NS",
+      "city": "Lower Sackville",
+      "neighborhood": "Sackville",
+      "website": null,
+      "socialProfiles": [],
+      "linkHubs": [],
+      "actionLinks": [],
+      "phone": "(902) 865-1797",
+      "tags": [
+        "vegetarian_options",
+        "gluten_free_options"
+      ],
+      "sourceId": "sackville-food-drink-guide",
+      "sourceName": "Sackville Business Association Food & Drink Guide",
+      "sourceKind": "business_improvement_district_feature_directory",
+      "sourceUrl": "https://sackvillebusiness.com/food-drink-guide",
+      "observedAt": "2026-09-04T14:50:17.777Z",
+      "reviewState": "directory-listed",
+      "alreadyInCatalogByName": false,
+      "alreadyInCatalog": false
+    },
+    {
+      "id": "sba-guide-greco-pizza-857-sackville-drive-lower-sackville-ns",
+      "name": "GRECO PIZZA",
+      "category": "Pizza",
+      "address": "857 Sackville Drive, Lower Sackville, NS",
+      "city": "Lower Sackville",
+      "neighborhood": "Sackville",
+      "website": null,
+      "socialProfiles": [],
+      "linkHubs": [],
+      "actionLinks": [],
+      "phone": "(902) 865-1033",
+      "tags": [
+        "vegetarian_options",
+        "gluten_free_options"
+      ],
+      "sourceId": "sackville-food-drink-guide",
+      "sourceName": "Sackville Business Association Food & Drink Guide",
+      "sourceKind": "business_improvement_district_feature_directory",
+      "sourceUrl": "https://sackvillebusiness.com/food-drink-guide",
+      "observedAt": "2026-09-04T14:50:17.777Z",
+      "reviewState": "directory-listed",
+      "alreadyInCatalogByName": true,
+      "alreadyInCatalog": true
+    },
+    {
+      "id": "sba-guide-hong-s-kitchen-584-sackville-drive-lower-sackville-ns",
+      "name": "HONG’S KITCHEN",
+      "category": "Chinese",
+      "address": "584 Sackville Drive, Lower Sackville, NS",
+      "city": "Lower Sackville",
+      "neighborhood": "Sackville",
+      "website": null,
+      "socialProfiles": [],
+      "linkHubs": [],
+      "actionLinks": [],
+      "phone": "(902) 864-2897",
+      "tags": [
+        "liquor_license",
+        "vegetarian_options",
+        "gluten_free_options"
+      ],
+      "sourceId": "sackville-food-drink-guide",
+      "sourceName": "Sackville Business Association Food & Drink Guide",
+      "sourceKind": "business_improvement_district_feature_directory",
+      "sourceUrl": "https://sackvillebusiness.com/food-drink-guide",
+      "observedAt": "2026-09-04T14:50:17.777Z",
+      "reviewState": "directory-listed",
+      "alreadyInCatalogByName": false,
+      "alreadyInCatalog": false
+    },
+    {
+      "id": "sba-guide-jinloong-restaurant-518-sackville-drive-lower-sackville-ns",
+      "name": "JINLOONG RESTAURANT",
+      "category": "Chinese",
+      "address": "518 Sackville Drive, Lower Sackville, NS",
+      "city": "Lower Sackville",
+      "neighborhood": "Sackville",
+      "website": null,
+      "socialProfiles": [],
+      "linkHubs": [],
+      "actionLinks": [],
+      "phone": "(902) 252-4555",
+      "tags": [
+        "vegetarian_options",
+        "vegan_options",
+        "gluten_free_options"
+      ],
+      "sourceId": "sackville-food-drink-guide",
+      "sourceName": "Sackville Business Association Food & Drink Guide",
+      "sourceKind": "business_improvement_district_feature_directory",
+      "sourceUrl": "https://sackvillebusiness.com/food-drink-guide",
+      "observedAt": "2026-09-04T14:50:17.777Z",
+      "reviewState": "directory-listed",
+      "alreadyInCatalogByName": false,
+      "alreadyInCatalog": false
+    },
+    {
+      "id": "sba-guide-jessy-s-pizza-99-cobequid-road-lower-sackville-ns",
+      "name": "JESSY’S PIZZA",
+      "category": "Pizza",
+      "address": "99 Cobequid Road, Lower Sackville, NS",
+      "city": "Lower Sackville",
+      "neighborhood": "Sackville",
+      "website": null,
+      "socialProfiles": [],
+      "linkHubs": [],
+      "actionLinks": [],
+      "phone": "(902) 865-6666",
+      "tags": [
+        "vegetarian_options",
+        "gluten_free_options"
+      ],
+      "sourceId": "sackville-food-drink-guide",
+      "sourceName": "Sackville Business Association Food & Drink Guide",
+      "sourceKind": "business_improvement_district_feature_directory",
+      "sourceUrl": "https://sackvillebusiness.com/food-drink-guide",
+      "observedAt": "2026-09-04T14:50:17.777Z",
+      "reviewState": "directory-listed",
+      "alreadyInCatalogByName": true,
+      "alreadyInCatalog": true
+    },
+    {
+      "id": "sba-guide-kaiser-s-sub-sandwich-shoppe-799-sackville-drive-lower-sackville-ns",
+      "name": "KAISER’S SUB & SANDWICH SHOPPE",
+      "category": "Sandwiches",
+      "address": "799 Sackville Drive, Lower Sackville, NS",
+      "city": "Lower Sackville",
+      "neighborhood": "Sackville",
+      "website": null,
+      "socialProfiles": [],
+      "linkHubs": [],
+      "actionLinks": [],
+      "phone": "(902) 865-6389",
+      "tags": [
+        "vegetarian_options",
+        "gluten_free_options"
+      ],
+      "sourceId": "sackville-food-drink-guide",
+      "sourceName": "Sackville Business Association Food & Drink Guide",
+      "sourceKind": "business_improvement_district_feature_directory",
+      "sourceUrl": "https://sackvillebusiness.com/food-drink-guide",
+      "observedAt": "2026-09-04T14:50:17.777Z",
+      "reviewState": "directory-listed",
+      "alreadyInCatalogByName": false,
+      "alreadyInCatalog": false
+    },
+    {
+      "id": "sba-guide-kam-moon-619-sackville-drive-lower-sackville-ns",
+      "name": "KAM-MOON",
+      "category": "Mediterranean",
+      "address": "619 Sackville Drive, Lower Sackville, NS",
+      "city": "Lower Sackville",
+      "neighborhood": "Sackville",
+      "website": null,
+      "socialProfiles": [],
+      "linkHubs": [],
+      "actionLinks": [],
+      "phone": "(902) 252-2868",
+      "tags": [
+        "vegetarian_options",
+        "vegan_options",
+        "gluten_free_options"
+      ],
+      "sourceId": "sackville-food-drink-guide",
+      "sourceName": "Sackville Business Association Food & Drink Guide",
+      "sourceKind": "business_improvement_district_feature_directory",
+      "sourceUrl": "https://sackvillebusiness.com/food-drink-guide",
+      "observedAt": "2026-09-04T14:50:17.778Z",
+      "reviewState": "directory-listed",
+      "alreadyInCatalogByName": true,
+      "alreadyInCatalog": true
+    },
+    {
+      "id": "sba-guide-kfc-679-sackville-drive-lower-sackville-ns",
+      "name": "KFC",
+      "category": "Chicken, Fast Food",
+      "address": "679 Sackville Drive, Lower Sackville, NS",
+      "city": "Lower Sackville",
+      "neighborhood": "Sackville",
+      "website": null,
+      "socialProfiles": [],
+      "linkHubs": [],
+      "actionLinks": [],
+      "phone": "(902) 865-0180",
+      "tags": [
+        "vegetarian_options"
+      ],
+      "sourceId": "sackville-food-drink-guide",
+      "sourceName": "Sackville Business Association Food & Drink Guide",
+      "sourceKind": "business_improvement_district_feature_directory",
+      "sourceUrl": "https://sackvillebusiness.com/food-drink-guide",
+      "observedAt": "2026-09-04T14:50:17.778Z",
+      "reviewState": "directory-listed",
+      "alreadyInCatalogByName": true,
+      "alreadyInCatalog": true
+    },
+    {
+      "id": "sba-guide-king-of-donair-668-sackville-drive-lower-sackville-ns",
+      "name": "KING OF DONAIR",
+      "category": "Pizza",
+      "address": "668 Sackville Drive, Lower Sackville, NS",
+      "city": "Lower Sackville",
+      "neighborhood": "Sackville",
+      "website": null,
+      "socialProfiles": [],
+      "linkHubs": [],
+      "actionLinks": [],
+      "phone": "(902) 865-0000",
+      "tags": [
+        "patio"
+      ],
+      "sourceId": "sackville-food-drink-guide",
+      "sourceName": "Sackville Business Association Food & Drink Guide",
+      "sourceKind": "business_improvement_district_feature_directory",
+      "sourceUrl": "https://sackvillebusiness.com/food-drink-guide",
+      "observedAt": "2026-09-04T14:50:17.778Z",
+      "reviewState": "directory-listed",
+      "alreadyInCatalogByName": true,
+      "alreadyInCatalog": true
+    },
+    {
+      "id": "sba-guide-locally-baked-622-sackville-drive-lower-sackville-ns",
+      "name": "LOCALLY BAKED",
+      "category": "Baked Goods",
+      "address": "622 Sackville Drive, Lower Sackville, NS",
+      "city": "Lower Sackville",
+      "neighborhood": "Sackville",
+      "website": null,
+      "socialProfiles": [],
+      "linkHubs": [],
+      "actionLinks": [],
+      "phone": "(902) 932-1581",
+      "tags": [
+        "vegetarian_options",
+        "vegan_options",
+        "gluten_free_options"
+      ],
+      "sourceId": "sackville-food-drink-guide",
+      "sourceName": "Sackville Business Association Food & Drink Guide",
+      "sourceKind": "business_improvement_district_feature_directory",
+      "sourceUrl": "https://sackvillebusiness.com/food-drink-guide",
+      "observedAt": "2026-09-04T14:50:17.778Z",
+      "reviewState": "directory-listed",
+      "alreadyInCatalogByName": false,
+      "alreadyInCatalog": false
+    },
+    {
+      "id": "sba-guide-long-dragon-restaurant-963-sackville-drive-lower-sackville-ns",
+      "name": "LONG DRAGON RESTAURANT",
+      "category": "Chinese",
+      "address": "963 Sackville Drive, Lower Sackville, NS",
+      "city": "Lower Sackville",
+      "neighborhood": "Sackville",
+      "website": null,
+      "socialProfiles": [],
+      "linkHubs": [],
+      "actionLinks": [],
+      "phone": "(902) 869-8888",
+      "tags": [
+        "vegetarian_options"
+      ],
+      "sourceId": "sackville-food-drink-guide",
+      "sourceName": "Sackville Business Association Food & Drink Guide",
+      "sourceKind": "business_improvement_district_feature_directory",
+      "sourceUrl": "https://sackvillebusiness.com/food-drink-guide",
+      "observedAt": "2026-09-04T14:50:17.778Z",
+      "reviewState": "directory-listed",
+      "alreadyInCatalogByName": false,
+      "alreadyInCatalog": false
+    },
+    {
+      "id": "sba-guide-mary-brown-s-799-sackville-drive-lower-sackville-ns",
+      "name": "MARY BROWN'S",
+      "category": "Chicken",
+      "address": "799 Sackville Drive, Lower Sackville, NS",
+      "city": "Lower Sackville",
+      "neighborhood": "Sackville",
+      "website": null,
+      "socialProfiles": [],
+      "linkHubs": [],
+      "actionLinks": [],
+      "phone": "(902) 865-5566",
+      "tags": [],
+      "sourceId": "sackville-food-drink-guide",
+      "sourceName": "Sackville Business Association Food & Drink Guide",
+      "sourceKind": "business_improvement_district_feature_directory",
+      "sourceUrl": "https://sackvillebusiness.com/food-drink-guide",
+      "observedAt": "2026-09-04T14:50:17.778Z",
+      "reviewState": "directory-listed",
+      "alreadyInCatalogByName": true,
+      "alreadyInCatalog": true
+    },
+    {
+      "id": "sba-guide-may-garden-829-sackville-drive-lower-sackville-ns",
+      "name": "MAY GARDEN",
+      "category": "Chinese",
+      "address": "829 Sackville Drive, Lower Sackville, NS",
+      "city": "Lower Sackville",
+      "neighborhood": "Sackville",
+      "website": null,
+      "socialProfiles": [],
+      "linkHubs": [],
+      "actionLinks": [],
+      "phone": "(902) 865-2226",
+      "tags": [
+        "liquor_license",
+        "vegetarian_options"
+      ],
+      "sourceId": "sackville-food-drink-guide",
+      "sourceName": "Sackville Business Association Food & Drink Guide",
+      "sourceKind": "business_improvement_district_feature_directory",
+      "sourceUrl": "https://sackvillebusiness.com/food-drink-guide",
+      "observedAt": "2026-09-04T14:50:17.778Z",
+      "reviewState": "directory-listed",
+      "alreadyInCatalogByName": true,
+      "alreadyInCatalog": true
+    },
+    {
+      "id": "sba-guide-mcdonald-s-restaurant-517-sackville-drive-lower-sackville-ns",
+      "name": "MCDONALD’S RESTAURANT",
+      "category": "Burgers, Fast Food",
+      "address": "517 Sackville Drive, Lower Sackville, NS",
+      "city": "Lower Sackville",
+      "neighborhood": "Sackville",
+      "website": null,
+      "socialProfiles": [],
+      "linkHubs": [],
+      "actionLinks": [],
+      "phone": "(902) 865-4823",
+      "tags": [
+        "vegetarian_options"
+      ],
+      "sourceId": "sackville-food-drink-guide",
+      "sourceName": "Sackville Business Association Food & Drink Guide",
+      "sourceKind": "business_improvement_district_feature_directory",
+      "sourceUrl": "https://sackvillebusiness.com/food-drink-guide",
+      "observedAt": "2026-09-04T14:50:17.778Z",
+      "reviewState": "directory-listed",
+      "alreadyInCatalogByName": false,
+      "alreadyInCatalog": false
+    },
+    {
+      "id": "sba-guide-mediterra-kitchen-111-cobequid-road-lower-sackville-ns",
+      "name": "MEDITERRA KITCHEN",
+      "category": "Mediterranean",
+      "address": "111 Cobequid Road, Lower Sackville, NS",
+      "city": "Lower Sackville",
+      "neighborhood": "Sackville",
+      "website": null,
+      "socialProfiles": [],
+      "linkHubs": [],
+      "actionLinks": [],
+      "phone": "(902) 252-3500",
+      "tags": [
+        "liquor_license",
+        "vegetarian_options",
+        "vegan_options",
+        "gluten_free_options"
+      ],
+      "sourceId": "sackville-food-drink-guide",
+      "sourceName": "Sackville Business Association Food & Drink Guide",
+      "sourceKind": "business_improvement_district_feature_directory",
+      "sourceUrl": "https://sackvillebusiness.com/food-drink-guide",
+      "observedAt": "2026-09-04T14:50:17.778Z",
+      "reviewState": "directory-listed",
+      "alreadyInCatalogByName": false,
+      "alreadyInCatalog": false
+    },
+    {
+      "id": "sba-guide-mezza-752-sackville-drive-lower-sackville-ns",
+      "name": "MEZZA",
+      "category": "Lebanese",
+      "address": "752 Sackville Drive, Lower Sackville, NS",
+      "city": "Lower Sackville",
+      "neighborhood": "Sackville",
+      "website": null,
+      "socialProfiles": [],
+      "linkHubs": [],
+      "actionLinks": [],
+      "phone": "(902) 429-2929",
+      "tags": [
+        "vegetarian_options",
+        "vegan_options",
+        "gluten_free_options"
+      ],
+      "sourceId": "sackville-food-drink-guide",
+      "sourceName": "Sackville Business Association Food & Drink Guide",
+      "sourceKind": "business_improvement_district_feature_directory",
+      "sourceUrl": "https://sackvillebusiness.com/food-drink-guide",
+      "observedAt": "2026-09-04T14:50:17.778Z",
+      "reviewState": "directory-listed",
+      "alreadyInCatalogByName": true,
+      "alreadyInCatalog": true
+    },
+    {
+      "id": "sba-guide-peppery-pizza-poutine-512-sackville-drive-lower-sackville-ns",
+      "name": "PEPPERY PIZZA & POUTINE",
+      "category": "Pizza",
+      "address": "512 Sackville Drive, Lower Sackville, NS",
+      "city": "Lower Sackville",
+      "neighborhood": "Sackville",
+      "website": null,
+      "socialProfiles": [],
+      "linkHubs": [],
+      "actionLinks": [],
+      "phone": "(902) 252-5353",
+      "tags": [
+        "vegetarian_options",
+        "vegan_options",
+        "gluten_free_options"
+      ],
+      "sourceId": "sackville-food-drink-guide",
+      "sourceName": "Sackville Business Association Food & Drink Guide",
+      "sourceKind": "business_improvement_district_feature_directory",
+      "sourceUrl": "https://sackvillebusiness.com/food-drink-guide",
+      "observedAt": "2026-09-04T14:50:17.778Z",
+      "reviewState": "directory-listed",
+      "alreadyInCatalogByName": false,
+      "alreadyInCatalog": false
+    },
+    {
+      "id": "sba-guide-pita-pit-745-sackville-drive-lower-sackville-ns",
+      "name": "PITA PIT",
+      "category": "Sandwiches",
+      "address": "745 Sackville Drive, Lower Sackville, NS",
+      "city": "Lower Sackville",
+      "neighborhood": "Sackville",
+      "website": null,
+      "socialProfiles": [],
+      "linkHubs": [],
+      "actionLinks": [],
+      "phone": "(902) 864-7480",
+      "tags": [
+        "vegetarian_options",
+        "gluten_free_options"
+      ],
+      "sourceId": "sackville-food-drink-guide",
+      "sourceName": "Sackville Business Association Food & Drink Guide",
+      "sourceKind": "business_improvement_district_feature_directory",
+      "sourceUrl": "https://sackvillebusiness.com/food-drink-guide",
+      "observedAt": "2026-09-04T14:50:17.778Z",
+      "reviewState": "directory-listed",
+      "alreadyInCatalogByName": true,
+      "alreadyInCatalog": true
+    },
+    {
+      "id": "sba-guide-pizza-girls-799-sackville-drive-lower-sackville-ns",
+      "name": "PIZZA GIRLS",
+      "category": "Pizza",
+      "address": "799 Sackville Drive, Lower Sackville, NS",
+      "city": "Lower Sackville",
+      "neighborhood": "Sackville",
+      "website": null,
+      "socialProfiles": [],
+      "linkHubs": [],
+      "actionLinks": [],
+      "phone": "(902) 864-4646",
+      "tags": [
+        "gluten_free_options"
+      ],
+      "sourceId": "sackville-food-drink-guide",
+      "sourceName": "Sackville Business Association Food & Drink Guide",
+      "sourceKind": "business_improvement_district_feature_directory",
+      "sourceUrl": "https://sackvillebusiness.com/food-drink-guide",
+      "observedAt": "2026-09-04T14:50:17.778Z",
+      "reviewState": "directory-listed",
+      "alreadyInCatalogByName": true,
+      "alreadyInCatalog": true
+    },
+    {
+      "id": "sba-guide-pizza-hut-752-sackville-drive-lower-sackville-ns",
+      "name": "PIZZA HUT",
+      "category": "Pizza",
+      "address": "752 Sackville Drive, Lower Sackville, NS",
+      "city": "Lower Sackville",
+      "neighborhood": "Sackville",
+      "website": null,
+      "socialProfiles": [],
+      "linkHubs": [],
+      "actionLinks": [],
+      "phone": "(902) 869-2200",
+      "tags": [
+        "vegetarian_options",
+        "gluten_free_options"
+      ],
+      "sourceId": "sackville-food-drink-guide",
+      "sourceName": "Sackville Business Association Food & Drink Guide",
+      "sourceKind": "business_improvement_district_feature_directory",
+      "sourceUrl": "https://sackvillebusiness.com/food-drink-guide",
+      "observedAt": "2026-09-04T14:50:17.778Z",
+      "reviewState": "directory-listed",
+      "alreadyInCatalogByName": true,
+      "alreadyInCatalog": true
+    },
+    {
+      "id": "sba-guide-pizzadelic-833-sackville-drive-lower-sackville-ns",
+      "name": "PIZZADELIC",
+      "category": "Pizza",
+      "address": "833 Sackville Drive, Lower Sackville, NS",
+      "city": "Lower Sackville",
+      "neighborhood": "Sackville",
+      "website": null,
+      "socialProfiles": [],
+      "linkHubs": [],
+      "actionLinks": [],
+      "phone": "(902) 865-8655",
+      "tags": [
+        "vegetarian_options",
+        "gluten_free_options"
+      ],
+      "sourceId": "sackville-food-drink-guide",
+      "sourceName": "Sackville Business Association Food & Drink Guide",
+      "sourceKind": "business_improvement_district_feature_directory",
+      "sourceUrl": "https://sackvillebusiness.com/food-drink-guide",
+      "observedAt": "2026-09-04T14:50:17.778Z",
+      "reviewState": "directory-listed",
+      "alreadyInCatalogByName": true,
+      "alreadyInCatalog": true
+    },
+    {
+      "id": "sba-guide-press-play-cafe-585-sackville-drive-lower-sackville-ns",
+      "name": "PRESS PLAY CAFÉ",
+      "category": "Café, Board Games",
+      "address": "585 Sackville Drive, Lower Sackville, NS",
+      "city": "Lower Sackville",
+      "neighborhood": "Sackville",
+      "website": null,
+      "socialProfiles": [],
+      "linkHubs": [],
+      "actionLinks": [],
+      "phone": "(902) 864-4873",
+      "tags": [
+        "patio",
+        "vegetarian_options",
+        "vegan_options"
+      ],
+      "sourceId": "sackville-food-drink-guide",
+      "sourceName": "Sackville Business Association Food & Drink Guide",
+      "sourceKind": "business_improvement_district_feature_directory",
+      "sourceUrl": "https://sackvillebusiness.com/food-drink-guide",
+      "observedAt": "2026-09-04T14:50:17.778Z",
+      "reviewState": "directory-listed",
+      "alreadyInCatalogByName": false,
+      "alreadyInCatalog": false
+    },
+    {
+      "id": "sba-guide-randy-s-pizza-619-sackville-drive-lower-sackville-ns",
+      "name": "RANDY’S PIZZA",
+      "category": "Pizza",
+      "address": "619 Sackville Drive, Lower Sackville, NS",
+      "city": "Lower Sackville",
+      "neighborhood": "Sackville",
+      "website": null,
+      "socialProfiles": [],
+      "linkHubs": [],
+      "actionLinks": [],
+      "phone": "(902) 865-2221",
+      "tags": [
+        "vegetarian_options",
+        "gluten_free_options"
+      ],
+      "sourceId": "sackville-food-drink-guide",
+      "sourceName": "Sackville Business Association Food & Drink Guide",
+      "sourceKind": "business_improvement_district_feature_directory",
+      "sourceUrl": "https://sackvillebusiness.com/food-drink-guide",
+      "observedAt": "2026-09-04T14:50:17.778Z",
+      "reviewState": "directory-listed",
+      "alreadyInCatalogByName": true,
+      "alreadyInCatalog": true
+    },
+    {
+      "id": "sba-guide-st-louis-bar-grill-792-sackville-drive-lower-sackville-ns",
+      "name": "ST. LOUIS BAR & GRILL",
+      "category": "Family Restaurant, Bar",
+      "address": "792 Sackville Drive, Lower Sackville, NS",
+      "city": "Lower Sackville",
+      "neighborhood": "Sackville",
+      "website": null,
+      "socialProfiles": [],
+      "linkHubs": [],
+      "actionLinks": [],
+      "phone": "(902) 252-1901",
+      "tags": [
+        "liquor_license",
+        "patio",
+        "vegetarian_options",
+        "vegan_options"
+      ],
+      "sourceId": "sackville-food-drink-guide",
+      "sourceName": "Sackville Business Association Food & Drink Guide",
+      "sourceKind": "business_improvement_district_feature_directory",
+      "sourceUrl": "https://sackvillebusiness.com/food-drink-guide",
+      "observedAt": "2026-09-04T14:50:17.778Z",
+      "reviewState": "directory-listed",
+      "alreadyInCatalogByName": true,
+      "alreadyInCatalog": true
+    },
+    {
+      "id": "sba-guide-stone-hearthbakery-cafe-1000-sackville-drive-lower-sackville-ns",
+      "name": "STONE HEARTHBAKERY & CAFÉ",
+      "category": "Bakery, Café",
+      "address": "1000 Sackville Drive, Lower Sackville, NS",
+      "city": "Lower Sackville",
+      "neighborhood": "Sackville",
+      "website": null,
+      "socialProfiles": [],
+      "linkHubs": [],
+      "actionLinks": [],
+      "phone": "(902) 252-3435",
+      "tags": [
+        "vegetarian_options"
+      ],
+      "sourceId": "sackville-food-drink-guide",
+      "sourceName": "Sackville Business Association Food & Drink Guide",
+      "sourceKind": "business_improvement_district_feature_directory",
+      "sourceUrl": "https://sackvillebusiness.com/food-drink-guide",
+      "observedAt": "2026-09-04T14:50:17.778Z",
+      "reviewState": "directory-listed",
+      "alreadyInCatalogByName": false,
+      "alreadyInCatalog": false
+    },
+    {
+      "id": "sba-guide-subway-794-sackville-drive-lower-sackville-ns",
+      "name": "SUBWAY",
+      "category": "Sandwiches, Fast Food",
+      "address": "794 Sackville Drive, Lower Sackville, NS",
+      "city": "Lower Sackville",
+      "neighborhood": "Sackville",
+      "website": null,
+      "socialProfiles": [],
+      "linkHubs": [],
+      "actionLinks": [],
+      "phone": "(902) 865-3339",
+      "tags": [
+        "vegetarian_options",
+        "gluten_free_options"
+      ],
+      "sourceId": "sackville-food-drink-guide",
+      "sourceName": "Sackville Business Association Food & Drink Guide",
+      "sourceKind": "business_improvement_district_feature_directory",
+      "sourceUrl": "https://sackvillebusiness.com/food-drink-guide",
+      "observedAt": "2026-09-04T14:50:17.778Z",
+      "reviewState": "directory-listed",
+      "alreadyInCatalogByName": true,
+      "alreadyInCatalog": true
+    },
+    {
+      "id": "sba-guide-tapestry-beer-bar-833-sackville-drive-lower-sackville-ns",
+      "name": "TAPESTRY BEER BAR",
+      "category": "Bar, Taproom",
+      "address": "833 Sackville Drive, Lower Sackville, NS",
+      "city": "Lower Sackville",
+      "neighborhood": "Sackville",
+      "website": null,
+      "socialProfiles": [],
+      "linkHubs": [],
+      "actionLinks": [],
+      "phone": "(902) 252-0610",
+      "tags": [
+        "liquor_license"
+      ],
+      "sourceId": "sackville-food-drink-guide",
+      "sourceName": "Sackville Business Association Food & Drink Guide",
+      "sourceKind": "business_improvement_district_feature_directory",
+      "sourceUrl": "https://sackvillebusiness.com/food-drink-guide",
+      "observedAt": "2026-09-04T14:50:17.778Z",
+      "reviewState": "directory-listed",
+      "alreadyInCatalogByName": false,
+      "alreadyInCatalog": false
+    },
+    {
+      "id": "sba-guide-thai-express-720-sackville-drive-lower-sackville-ns",
+      "name": "THAI EXPRESS",
+      "category": "Thai, Fast Food",
+      "address": "720 Sackville Drive, Lower Sackville, NS",
+      "city": "Lower Sackville",
+      "neighborhood": "Sackville",
+      "website": null,
+      "socialProfiles": [],
+      "linkHubs": [],
+      "actionLinks": [],
+      "phone": "(902) 869-5253",
+      "tags": [
+        "liquor_license",
+        "vegetarian_options",
+        "vegan_options",
+        "gluten_free_options"
+      ],
+      "sourceId": "sackville-food-drink-guide",
+      "sourceName": "Sackville Business Association Food & Drink Guide",
+      "sourceKind": "business_improvement_district_feature_directory",
+      "sourceUrl": "https://sackvillebusiness.com/food-drink-guide",
+      "observedAt": "2026-09-04T14:50:17.778Z",
+      "reviewState": "directory-listed",
+      "alreadyInCatalogByName": true,
+      "alreadyInCatalog": true
+    },
+    {
+      "id": "sba-guide-the-shawarma-king-601-sackville-drive-lower-sackville-ns",
+      "name": "THE SHAWARMA KING",
+      "category": "Middle Eastern",
+      "address": "601 Sackville Drive, Lower Sackville, NS",
+      "city": "Lower Sackville",
+      "neighborhood": "Sackville",
+      "website": null,
+      "socialProfiles": [],
+      "linkHubs": [],
+      "actionLinks": [],
+      "phone": "(902) 252-3520",
+      "tags": [
+        "vegetarian_options",
+        "vegan_options",
+        "gluten_free_options"
+      ],
+      "sourceId": "sackville-food-drink-guide",
+      "sourceName": "Sackville Business Association Food & Drink Guide",
+      "sourceKind": "business_improvement_district_feature_directory",
+      "sourceUrl": "https://sackvillebusiness.com/food-drink-guide",
+      "observedAt": "2026-09-04T14:50:17.778Z",
+      "reviewState": "directory-listed",
+      "alreadyInCatalogByName": false,
+      "alreadyInCatalog": false
+    },
+    {
+      "id": "sba-guide-tim-hortons-629-sackville-drive-lower-sackville-ns",
+      "name": "TIM HORTONS",
+      "category": "Fast Food, Café",
+      "address": "629 Sackville Drive, Lower Sackville, NS",
+      "city": "Lower Sackville",
+      "neighborhood": "Sackville",
+      "website": null,
+      "socialProfiles": [],
+      "linkHubs": [],
+      "actionLinks": [],
+      "phone": "(902) 865-6618",
+      "tags": [
+        "vegetarian_options",
+        "vegan_options"
+      ],
+      "sourceId": "sackville-food-drink-guide",
+      "sourceName": "Sackville Business Association Food & Drink Guide",
+      "sourceKind": "business_improvement_district_feature_directory",
+      "sourceUrl": "https://sackvillebusiness.com/food-drink-guide",
+      "observedAt": "2026-09-04T14:50:17.778Z",
+      "reviewState": "directory-listed",
+      "alreadyInCatalogByName": true,
+      "alreadyInCatalog": true
+    },
+    {
+      "id": "sba-guide-tim-hortons-745-sackville-drive-lower-sackville-ns",
+      "name": "TIM HORTONS",
+      "category": "Fast Food, Café",
+      "address": "745 Sackville Drive, Lower Sackville, NS",
+      "city": "Lower Sackville",
+      "neighborhood": "Sackville",
+      "website": null,
+      "socialProfiles": [],
+      "linkHubs": [],
+      "actionLinks": [],
+      "phone": "(902) 864-1440",
+      "tags": [
+        "vegetarian_options",
+        "vegan_options"
+      ],
+      "sourceId": "sackville-food-drink-guide",
+      "sourceName": "Sackville Business Association Food & Drink Guide",
+      "sourceKind": "business_improvement_district_feature_directory",
+      "sourceUrl": "https://sackvillebusiness.com/food-drink-guide",
+      "observedAt": "2026-09-04T14:50:17.778Z",
+      "reviewState": "directory-listed",
+      "alreadyInCatalogByName": true,
+      "alreadyInCatalog": true
+    },
+    {
+      "id": "sba-guide-tim-hortons-810-sackville-drive-lower-sackville-ns",
+      "name": "TIM HORTONS",
+      "category": "Fast Food, Café",
+      "address": "810 Sackville Drive, Lower Sackville, NS",
+      "city": "Lower Sackville",
+      "neighborhood": "Sackville",
+      "website": null,
+      "socialProfiles": [],
+      "linkHubs": [],
+      "actionLinks": [],
+      "phone": "(902) 864-9273",
+      "tags": [
+        "vegetarian_options",
+        "vegan_options"
+      ],
+      "sourceId": "sackville-food-drink-guide",
+      "sourceName": "Sackville Business Association Food & Drink Guide",
+      "sourceKind": "business_improvement_district_feature_directory",
+      "sourceUrl": "https://sackvillebusiness.com/food-drink-guide",
+      "observedAt": "2026-09-04T14:50:17.778Z",
+      "reviewState": "directory-listed",
+      "alreadyInCatalogByName": true,
+      "alreadyInCatalog": true
+    },
+    {
+      "id": "sba-guide-tom-s-family-restaurant-585-sackville-drive-lower-sackville-ns",
+      "name": "TOM’S FAMILY RESTAURANT",
+      "category": "Family Restaurant",
+      "address": "585 Sackville Drive, Lower Sackville, NS",
+      "city": "Lower Sackville",
+      "neighborhood": "Sackville",
+      "website": null,
+      "socialProfiles": [],
+      "linkHubs": [],
+      "actionLinks": [],
+      "phone": "(902) 252-8667",
+      "tags": [
+        "liquor_license",
+        "vegetarian_options"
+      ],
+      "sourceId": "sackville-food-drink-guide",
+      "sourceName": "Sackville Business Association Food & Drink Guide",
+      "sourceKind": "business_improvement_district_feature_directory",
+      "sourceUrl": "https://sackvillebusiness.com/food-drink-guide",
+      "observedAt": "2026-09-04T14:50:17.778Z",
+      "reviewState": "directory-listed",
+      "alreadyInCatalogByName": false,
+      "alreadyInCatalog": false
+    },
+    {
+      "id": "sba-guide-wasabi-house-566-sackville-drive-lower-sackville-ns",
+      "name": "WASABI HOUSE",
+      "category": "Japanese, Sushi",
+      "address": "566 Sackville Drive, Lower Sackville, NS",
+      "city": "Lower Sackville",
+      "neighborhood": "Sackville",
+      "website": null,
+      "socialProfiles": [],
+      "linkHubs": [],
+      "actionLinks": [],
+      "phone": "(902) 865-2378",
+      "tags": [
+        "liquor_license"
+      ],
+      "sourceId": "sackville-food-drink-guide",
+      "sourceName": "Sackville Business Association Food & Drink Guide",
+      "sourceKind": "business_improvement_district_feature_directory",
+      "sourceUrl": "https://sackvillebusiness.com/food-drink-guide",
+      "observedAt": "2026-09-04T14:50:17.778Z",
+      "reviewState": "directory-listed",
+      "alreadyInCatalogByName": true,
+      "alreadyInCatalog": true
+    },
+    {
+      "id": "sba-guide-wendy-s-720-sackville-drive-lower-sackville-ns",
+      "name": "WENDY’S",
+      "category": "Burgers, Fast Food",
+      "address": "720 Sackville Drive, Lower Sackville, NS",
+      "city": "Lower Sackville",
+      "neighborhood": "Sackville",
+      "website": null,
+      "socialProfiles": [],
+      "linkHubs": [],
+      "actionLinks": [],
+      "phone": "(902) 864-3745",
+      "tags": [],
+      "sourceId": "sackville-food-drink-guide",
+      "sourceName": "Sackville Business Association Food & Drink Guide",
+      "sourceKind": "business_improvement_district_feature_directory",
+      "sourceUrl": "https://sackvillebusiness.com/food-drink-guide",
+      "observedAt": "2026-09-04T14:50:17.778Z",
+      "reviewState": "directory-listed",
+      "alreadyInCatalogByName": true,
+      "alreadyInCatalog": true
+    },
+    {
+      "id": "bedford-place-bedford-neighbourhood-pub-902-406-2650",
+      "name": "Bedford Neighbourhood Pub",
+      "category": "Mall dining",
+      "address": "1658 Bedford Highway, Bedford, NS B4A 2X9",
+      "city": "Bedford",
+      "neighborhood": "Bedford Place Mall",
+      "website": "https://bedfordhood.com/",
+      "socialProfiles": [
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/bedfordhood",
+          "associationBasis": "trusted_directory_explicit_link"
+        },
+        {
+          "platform": "instagram",
+          "url": "https://www.instagram.com/bedfordhood/",
+          "associationBasis": "trusted_directory_explicit_link"
+        }
+      ],
+      "linkHubs": [],
+      "actionLinks": [],
+      "phone": "902-406-2650",
+      "sourceId": "bedford-place-mall-dining",
+      "sourceName": "Bedford Place Mall Dining & Fun directory",
+      "sourceKind": "shopping_centre_directory",
+      "sourceUrl": "https://bedfordplacemall.com/dining.php",
+      "observedAt": "2026-09-04T14:50:18.620Z",
+      "reviewState": "directory-listed",
+      "alreadyInCatalogByName": false,
+      "alreadyInCatalog": false
+    },
+    {
+      "id": "bedford-place-cobs-bread-902-832-9321",
+      "name": "Cobs Bread",
+      "category": "Mall dining",
+      "address": "1658 Bedford Highway, Bedford, NS B4A 2X9",
+      "city": "Bedford",
+      "neighborhood": "Bedford Place Mall",
+      "website": "https://www.cobsbread.com/products/",
+      "socialProfiles": [
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/profile.php?id=100063647332095",
+          "associationBasis": "trusted_directory_explicit_link"
+        }
+      ],
+      "linkHubs": [],
+      "actionLinks": [],
+      "phone": "902-832-9321",
+      "sourceId": "bedford-place-mall-dining",
+      "sourceName": "Bedford Place Mall Dining & Fun directory",
+      "sourceKind": "shopping_centre_directory",
+      "sourceUrl": "https://bedfordplacemall.com/dining.php",
+      "observedAt": "2026-09-04T14:50:18.621Z",
+      "reviewState": "directory-listed",
+      "alreadyInCatalogByName": false,
+      "alreadyInCatalog": false
+    },
+    {
+      "id": "bedford-place-dooly-s-902-832-0780",
+      "name": "Dooly’s",
+      "category": "Mall dining",
+      "address": "1658 Bedford Highway, Bedford, NS B4A 2X9",
+      "city": "Bedford",
+      "neighborhood": "Bedford Place Mall",
+      "website": "http://www.doolys.ca/",
+      "socialProfiles": [
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/DoolysBedford",
+          "associationBasis": "trusted_directory_explicit_link"
+        }
+      ],
+      "linkHubs": [],
+      "actionLinks": [],
+      "phone": "902-832-0780",
+      "sourceId": "bedford-place-mall-dining",
+      "sourceName": "Bedford Place Mall Dining & Fun directory",
+      "sourceKind": "shopping_centre_directory",
+      "sourceUrl": "https://bedfordplacemall.com/dining.php",
+      "observedAt": "2026-09-04T14:50:18.621Z",
+      "reviewState": "directory-listed",
+      "alreadyInCatalogByName": true,
+      "alreadyInCatalog": true
+    },
+    {
+      "id": "bedford-place-galaxy-51-arcade-902-877-1780",
+      "name": "Galaxy 51 Arcade",
+      "category": "Mall dining",
+      "address": "1658 Bedford Highway, Bedford, NS B4A 2X9",
+      "city": "Bedford",
+      "neighborhood": "Bedford Place Mall",
+      "website": null,
+      "socialProfiles": [
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/profile.php?id=100031221670351",
+          "associationBasis": "trusted_directory_explicit_link"
+        }
+      ],
+      "linkHubs": [],
+      "actionLinks": [],
+      "phone": "902-877-1780",
+      "sourceId": "bedford-place-mall-dining",
+      "sourceName": "Bedford Place Mall Dining & Fun directory",
+      "sourceKind": "shopping_centre_directory",
+      "sourceUrl": "https://bedfordplacemall.com/dining.php",
+      "observedAt": "2026-09-04T14:50:18.621Z",
+      "reviewState": "directory-listed",
+      "alreadyInCatalogByName": false,
+      "alreadyInCatalog": false
+    },
+    {
+      "id": "bedford-place-kenny-s-pizza-902-406-2727",
+      "name": "Kenny's Pizza",
+      "category": "Mall dining",
+      "address": "1658 Bedford Highway, Bedford, NS B4A 2X9",
+      "city": "Bedford",
+      "neighborhood": "Bedford Place Mall",
+      "website": "https://kennyspizza.com/bedford/",
+      "socialProfiles": [
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/kennyspizzabedford/",
+          "associationBasis": "trusted_directory_explicit_link"
+        }
+      ],
+      "linkHubs": [],
+      "actionLinks": [],
+      "phone": "902-406-2727",
+      "sourceId": "bedford-place-mall-dining",
+      "sourceName": "Bedford Place Mall Dining & Fun directory",
+      "sourceKind": "shopping_centre_directory",
+      "sourceUrl": "https://bedfordplacemall.com/dining.php",
+      "observedAt": "2026-09-04T14:50:18.621Z",
+      "reviewState": "directory-listed",
+      "alreadyInCatalogByName": true,
+      "alreadyInCatalog": true
+    },
+    {
+      "id": "bedford-place-pur-simple-902-832-3418",
+      "name": "Pür & Simple",
+      "category": "Mall dining",
+      "address": "1658 Bedford Highway, Bedford, NS B4A 2X9",
+      "city": "Bedford",
+      "neighborhood": "Bedford Place Mall",
+      "website": "https://pursimple.com/restaurant/bedford/",
+      "socialProfiles": [],
+      "linkHubs": [],
+      "actionLinks": [],
+      "phone": "(902) 832-3418",
+      "sourceId": "bedford-place-mall-dining",
+      "sourceName": "Bedford Place Mall Dining & Fun directory",
+      "sourceKind": "shopping_centre_directory",
+      "sourceUrl": "https://bedfordplacemall.com/dining.php",
+      "observedAt": "2026-09-04T14:50:18.621Z",
+      "reviewState": "directory-listed",
+      "alreadyInCatalogByName": true,
+      "alreadyInCatalog": true
+    },
+    {
+      "id": "bedford-place-su-su-kitchen-902-701-9779",
+      "name": "Su & Su Kitchen",
+      "category": "Mall dining",
+      "address": "1658 Bedford Highway, Bedford, NS B4A 2X9",
+      "city": "Bedford",
+      "neighborhood": "Bedford Place Mall",
+      "website": "https://suandsukitchen.com/",
+      "socialProfiles": [
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/SUnSUkitchen/",
+          "associationBasis": "trusted_directory_explicit_link"
+        }
+      ],
+      "linkHubs": [],
+      "actionLinks": [],
+      "phone": "902-701-9779",
+      "sourceId": "bedford-place-mall-dining",
+      "sourceName": "Bedford Place Mall Dining & Fun directory",
+      "sourceKind": "shopping_centre_directory",
+      "sourceUrl": "https://bedfordplacemall.com/dining.php",
+      "observedAt": "2026-09-04T14:50:18.621Z",
+      "reviewState": "directory-listed",
+      "alreadyInCatalogByName": false,
+      "alreadyInCatalog": false
+    },
+    {
+      "id": "bedford-place-swiss-chalet-902-835-7974",
+      "name": "Swiss Chalet",
+      "category": "Mall dining",
+      "address": "1658 Bedford Highway, Bedford, NS B4A 2X9",
+      "city": "Bedford",
+      "neighborhood": "Bedford Place Mall",
+      "website": "http://www.swisschalet.com/",
+      "socialProfiles": [
+        {
+          "platform": "facebook",
+          "url": "http://www.facebook.com/SwissChalet",
+          "associationBasis": "trusted_directory_explicit_link"
+        },
+        {
+          "platform": "x",
+          "url": "http://www.twitter.com/SwissChaletCA",
+          "associationBasis": "trusted_directory_explicit_link"
+        }
+      ],
+      "linkHubs": [],
+      "actionLinks": [],
+      "phone": "902-835-7974",
+      "sourceId": "bedford-place-mall-dining",
+      "sourceName": "Bedford Place Mall Dining & Fun directory",
+      "sourceKind": "shopping_centre_directory",
+      "sourceUrl": "https://bedfordplacemall.com/dining.php",
+      "observedAt": "2026-09-04T14:50:18.621Z",
+      "reviewState": "directory-listed",
+      "alreadyInCatalogByName": true,
+      "alreadyInCatalog": true
+    },
+    {
+      "id": "bedford-place-tacoland-902-455-8864",
+      "name": "Tacoland",
+      "category": "Mall dining",
+      "address": "1658 Bedford Highway, Bedford, NS B4A 2X9",
+      "city": "Bedford",
+      "neighborhood": "Bedford Place Mall",
+      "website": "https://tacoland.ca/",
+      "socialProfiles": [
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/profile.php?id=61572478058724",
+          "associationBasis": "trusted_directory_explicit_link"
+        },
+        {
+          "platform": "instagram",
+          "url": "https://www.instagram.com/tacolandhfx/",
+          "associationBasis": "trusted_directory_explicit_link"
+        }
+      ],
+      "linkHubs": [],
+      "actionLinks": [],
+      "phone": "902-455-8864",
+      "sourceId": "bedford-place-mall-dining",
+      "sourceName": "Bedford Place Mall Dining & Fun directory",
+      "sourceKind": "shopping_centre_directory",
+      "sourceUrl": "https://bedfordplacemall.com/dining.php",
+      "observedAt": "2026-09-04T14:50:18.621Z",
+      "reviewState": "directory-listed",
+      "alreadyInCatalogByName": false,
+      "alreadyInCatalog": false
+    },
+    {
+      "id": "bedford-place-true-north-diner-902-832-1950",
+      "name": "True North Diner",
+      "category": "Mall dining",
+      "address": "1658 Bedford Highway, Bedford, NS B4A 2X9",
+      "city": "Bedford",
+      "neighborhood": "Bedford Place Mall",
+      "website": "http://www.truenorthdiner.com/",
+      "socialProfiles": [
+        {
+          "platform": "facebook",
+          "url": "http://www.facebook.com/TrueNorthDinerBedford",
+          "associationBasis": "trusted_directory_explicit_link"
+        },
+        {
+          "platform": "instagram",
+          "url": "https://www.instagram.com/truenorthdiner/",
+          "associationBasis": "trusted_directory_explicit_link"
+        },
+        {
+          "platform": "pinterest",
+          "url": "http://www.pinterest.com/pin/116249234101458131/",
+          "associationBasis": "trusted_directory_explicit_link"
+        }
+      ],
+      "linkHubs": [],
+      "actionLinks": [],
+      "phone": "902-832-1950",
+      "sourceId": "bedford-place-mall-dining",
+      "sourceName": "Bedford Place Mall Dining & Fun directory",
+      "sourceKind": "shopping_centre_directory",
+      "sourceUrl": "https://bedfordplacemall.com/dining.php",
+      "observedAt": "2026-09-04T14:50:18.621Z",
+      "reviewState": "directory-listed",
+      "alreadyInCatalogByName": false,
+      "alreadyInCatalog": false
+    },
+    {
+      "id": "taste-ns-evan-s-seafood-2-ochterloney-st-alderney-landing-dartmouth-ns",
+      "name": "Evan’s Seafood",
+      "category": "Taste of Nova Scotia restaurant member",
+      "description": null,
+      "address": "2 Ochterloney St., Alderney Landing, Dartmouth, NS",
+      "city": "Dartmouth",
+      "neighborhood": "Dartmouth",
+      "website": "http://www.evansfreshseafoods.com/",
+      "socialProfiles": [
+        {
+          "platform": "facebook",
+          "url": "http://www.facebook.com/EvansFreshSeafoodsAndRestaurant",
+          "associationBasis": "trusted_directory_explicit_link"
+        },
+        {
+          "platform": "x",
+          "url": "https://www.twitter.com/EvansSeafoods",
+          "associationBasis": "trusted_directory_explicit_link"
+        },
+        {
+          "platform": "instagram",
+          "url": "https://www.instagram.com/evans.seafood/",
+          "associationBasis": "trusted_directory_explicit_link"
+        }
+      ],
+      "linkHubs": [],
+      "actionLinks": [],
+      "phone": "902-466-2118",
+      "openingHours": "Open every day! Sunday to Thursday : 11-7 Friday and Sat : 11-8",
+      "tags": [
+        "taste_of_nova_scotia_member"
+      ],
+      "sourceImageUrl": null,
+      "rightsState": null,
+      "sourceId": "taste-of-nova-scotia-restaurants",
+      "sourceName": "Taste of Nova Scotia restaurant member directory",
+      "sourceKind": "culinary_tourism_member_directory",
+      "sourceUrl": "https://tasteofnovascotia.com/members/evans-seafoods-restaurant/",
+      "sourceUpdatedAt": null,
+      "observedAt": "2026-09-04T14:50:19.004Z",
+      "reviewState": "directory-listed",
+      "alreadyInCatalogByName": false,
+      "alreadyInCatalog": false
+    },
+    {
+      "id": "taste-ns-harbour-city-delta-hotels-halifax-downtown-1990-barrington-st-halifax-ns",
+      "name": "Harbour City (Delta Hotels Halifax Downtown)",
+      "category": "Taste of Nova Scotia restaurant member",
+      "description": null,
+      "address": "1990 Barrington St., Halifax, NS",
+      "city": "Halifax",
+      "neighborhood": "Halifax",
+      "website": "https://www.marriott.com/en-us/hotels/yhzdd-delta-hotels-halifax-downtown/dining/",
+      "socialProfiles": [
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/harbourcityhalifax",
+          "associationBasis": "trusted_directory_explicit_link"
+        },
+        {
+          "platform": "instagram",
+          "url": "https://www.instagram.com/harbourcityhalifax/",
+          "associationBasis": "trusted_directory_explicit_link"
+        }
+      ],
+      "linkHubs": [],
+      "actionLinks": [],
+      "phone": "902-492-6443",
+      "openingHours": "Mon-Fri: 7:00 AM-10:30 AM & 4:00 PM-11:00 PM / Sat-Sun: 7:00 AM-11:00 AM & 4:00 PM-11:00 PM",
+      "tags": [
+        "taste_of_nova_scotia_member"
+      ],
+      "sourceImageUrl": null,
+      "rightsState": null,
+      "sourceId": "taste-of-nova-scotia-restaurants",
+      "sourceName": "Taste of Nova Scotia restaurant member directory",
+      "sourceKind": "culinary_tourism_member_directory",
+      "sourceUrl": "https://tasteofnovascotia.com/members/harbour-city-bar-grill-delta-halifax-hotel/",
+      "sourceUpdatedAt": null,
+      "observedAt": "2026-09-04T14:50:19.063Z",
+      "reviewState": "directory-listed",
+      "alreadyInCatalogByName": false,
+      "alreadyInCatalog": false
+    },
+    {
+      "id": "taste-ns-larry-s-sandwiches-sides-63-portland-st-dartmouth-ns",
+      "name": "Larry’s Sandwiches & Sides",
+      "category": "Taste of Nova Scotia restaurant member",
+      "description": null,
+      "address": "63 Portland St., Dartmouth, NS",
+      "city": "Dartmouth",
+      "neighborhood": "Dartmouth",
+      "website": null,
+      "socialProfiles": [
+        {
+          "platform": "instagram",
+          "url": "https://www.instagram.com/larrys.dartmouth/",
+          "associationBasis": "trusted_directory_explicit_link"
+        }
+      ],
+      "linkHubs": [],
+      "actionLinks": [
+        {
+          "kind": "ordering",
+          "url": "https://order.toasttab.com/online/larrys",
+          "label": "https://order.toasttab.com/online/larrys",
+          "associationBasis": "trusted_directory_explicit_link"
+        }
+      ],
+      "phone": "902-449-2102",
+      "openingHours": "Please visit website for hours of operation.",
+      "tags": [
+        "taste_of_nova_scotia_member"
+      ],
+      "sourceImageUrl": null,
+      "rightsState": null,
+      "sourceId": "taste-of-nova-scotia-restaurants",
+      "sourceName": "Taste of Nova Scotia restaurant member directory",
+      "sourceKind": "culinary_tourism_member_directory",
+      "sourceUrl": "https://tasteofnovascotia.com/members/larrys-sandwiches-sides/",
+      "sourceUpdatedAt": null,
+      "observedAt": "2026-09-04T14:50:19.116Z",
+      "reviewState": "directory-listed",
+      "alreadyInCatalogByName": false,
+      "alreadyInCatalog": false
+    },
+    {
+      "id": "taste-ns-lot-six-bar-restaurant-1685-argyle-st-halifax-ns",
+      "name": "Lot Six Bar & Restaurant",
+      "category": "Taste of Nova Scotia restaurant member",
+      "description": null,
+      "address": "1685 Argyle St., Halifax, NS",
+      "city": "Halifax",
+      "neighborhood": "Halifax",
+      "website": "http://www.lotsix.ca/",
+      "socialProfiles": [
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/lotsixbar",
+          "associationBasis": "trusted_directory_explicit_link"
+        },
+        {
+          "platform": "x",
+          "url": "https://twitter.com/lotsixbar",
+          "associationBasis": "trusted_directory_explicit_link"
+        },
+        {
+          "platform": "instagram",
+          "url": "https://www.instagram.com/lotsixbar/",
+          "associationBasis": "trusted_directory_explicit_link"
+        }
+      ],
+      "linkHubs": [],
+      "actionLinks": [],
+      "phone": "902-428-7428",
+      "openingHours": null,
+      "tags": [
+        "taste_of_nova_scotia_member"
+      ],
+      "sourceImageUrl": null,
+      "rightsState": null,
+      "sourceId": "taste-of-nova-scotia-restaurants",
+      "sourceName": "Taste of Nova Scotia restaurant member directory",
+      "sourceKind": "culinary_tourism_member_directory",
+      "sourceUrl": "https://tasteofnovascotia.com/members/lot-six-bar-restaurant/",
+      "sourceUpdatedAt": null,
+      "observedAt": "2026-09-04T14:50:19.112Z",
+      "reviewState": "directory-listed",
+      "alreadyInCatalogByName": true,
+      "alreadyInCatalog": true
+    },
+    {
+      "id": "taste-ns-morris-east-restaurant-1984-vernon-st-halifax-620-nine-mile-dr-bedford-ns",
+      "name": "Morris East Restaurant",
+      "category": "Taste of Nova Scotia restaurant member",
+      "description": null,
+      "address": "1984 Vernon St., Halifax 620 Nine Mile Dr., Bedford, NS",
+      "city": "Halifax",
+      "neighborhood": "Halifax",
+      "website": "http://www.morriseast.com/",
+      "socialProfiles": [
+        {
+          "platform": "facebook",
+          "url": "http://www.facebook.com/pages/Morris-East-Restaurant/185068411527921",
+          "associationBasis": "trusted_directory_explicit_link"
+        },
+        {
+          "platform": "x",
+          "url": "https://twitter.com/morriseast",
+          "associationBasis": "trusted_directory_explicit_link"
+        },
+        {
+          "platform": "instagram",
+          "url": "https://www.instagram.com/morriseast/",
+          "associationBasis": "trusted_directory_explicit_link"
+        }
+      ],
+      "linkHubs": [],
+      "actionLinks": [],
+      "phone": "902-444-7663",
+      "openingHours": "Open Daily: Sunday - Thursday: 11:30am- 9:00pm, Friday & Saturday: 11:30am -10:00pm",
+      "tags": [
+        "taste_of_nova_scotia_member"
+      ],
+      "sourceImageUrl": null,
+      "rightsState": null,
+      "sourceId": "taste-of-nova-scotia-restaurants",
+      "sourceName": "Taste of Nova Scotia restaurant member directory",
+      "sourceKind": "culinary_tourism_member_directory",
+      "sourceUrl": "https://tasteofnovascotia.com/members/morris-east-restaurant/",
+      "sourceUpdatedAt": null,
+      "observedAt": "2026-09-04T14:50:19.159Z",
+      "reviewState": "directory-listed",
+      "alreadyInCatalogByName": false,
+      "alreadyInCatalog": false
+    },
+    {
+      "id": "taste-ns-rose-kettle-tea-room-at-the-cole-harbour-heritage-farm-museum-471-poplar-dr-cole-harbour-ns",
+      "name": "Rose & Kettle Tea Room at the Cole Harbour Heritage Farm Museum",
+      "category": "Taste of Nova Scotia restaurant member",
+      "description": null,
+      "address": "471 Poplar Dr., Cole Harbour, NS",
+      "city": "Cole Harbour",
+      "neighborhood": "Cole Harbour",
+      "website": "https://coleharbourfarmmuseum.ca/tearoom/",
+      "socialProfiles": [
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/ColeHarbourHeritageFarmMuseum",
+          "associationBasis": "trusted_directory_explicit_link"
+        }
+      ],
+      "linkHubs": [],
+      "actionLinks": [],
+      "phone": "902-434-0222",
+      "openingHours": "Seasonal May 15 - October 15: Wednesday - Sunday: 11:00a.m. - 3:00p.m",
+      "tags": [
+        "taste_of_nova_scotia_member"
+      ],
+      "sourceImageUrl": null,
+      "rightsState": null,
+      "sourceId": "taste-of-nova-scotia-restaurants",
+      "sourceName": "Taste of Nova Scotia restaurant member directory",
+      "sourceKind": "culinary_tourism_member_directory",
+      "sourceUrl": "https://tasteofnovascotia.com/members/the-rose-kettle-tearoom/",
+      "sourceUpdatedAt": null,
+      "observedAt": "2026-09-04T14:50:19.204Z",
+      "reviewState": "directory-listed",
+      "alreadyInCatalogByName": false,
+      "alreadyInCatalog": false
+    },
+    {
+      "id": "taste-ns-seaport-social-1181-hollis-st-halifax-ns",
+      "name": "Seaport Social",
+      "category": "Taste of Nova Scotia restaurant member",
+      "description": null,
+      "address": "1181 Hollis St., Halifax, NS",
+      "city": "Halifax",
+      "neighborhood": "Halifax",
+      "website": "https://www.seaportsocialhalifax.com/",
+      "socialProfiles": [
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/SeaportSocial",
+          "associationBasis": "trusted_directory_explicit_link"
+        },
+        {
+          "platform": "instagram",
+          "url": "https://www.instagram.com/seaportsocial/",
+          "associationBasis": "trusted_directory_explicit_link"
+        }
+      ],
+      "linkHubs": [],
+      "actionLinks": [],
+      "phone": "902-496-7960",
+      "openingHours": "Please visit website for hours of operation.",
+      "tags": [
+        "taste_of_nova_scotia_member"
+      ],
+      "sourceImageUrl": null,
+      "rightsState": null,
+      "sourceId": "taste-of-nova-scotia-restaurants",
+      "sourceName": "Taste of Nova Scotia restaurant member directory",
+      "sourceKind": "culinary_tourism_member_directory",
+      "sourceUrl": "https://tasteofnovascotia.com/members/seaport-social/",
+      "sourceUpdatedAt": null,
+      "observedAt": "2026-09-04T14:50:19.256Z",
+      "reviewState": "directory-listed",
+      "alreadyInCatalogByName": true,
+      "alreadyInCatalog": true
+    },
+    {
+      "id": "taste-ns-the-cable-wharf-1751-lower-water-st-halifax-ns",
+      "name": "The Cable Wharf",
+      "category": "Taste of Nova Scotia restaurant member",
+      "description": null,
+      "address": "1751 Lower Water St., Halifax, NS",
+      "city": "Halifax",
+      "neighborhood": "Halifax",
+      "website": "http://www.cablewharf.ca/",
+      "socialProfiles": [
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/CableWharf.ca",
+          "associationBasis": "trusted_directory_explicit_link"
+        },
+        {
+          "platform": "instagram",
+          "url": "https://www.instagram.com/cablewharf.ca",
+          "associationBasis": "trusted_directory_explicit_link"
+        }
+      ],
+      "linkHubs": [],
+      "actionLinks": [],
+      "phone": null,
+      "openingHours": "Open Daily: 11:30am - 9:00pm",
+      "tags": [
+        "taste_of_nova_scotia_member"
+      ],
+      "sourceImageUrl": null,
+      "rightsState": null,
+      "sourceId": "taste-of-nova-scotia-restaurants",
+      "sourceName": "Taste of Nova Scotia restaurant member directory",
+      "sourceKind": "culinary_tourism_member_directory",
+      "sourceUrl": "https://tasteofnovascotia.com/members/cable-wharf/",
+      "sourceUpdatedAt": null,
+      "observedAt": "2026-09-04T14:50:19.319Z",
+      "reviewState": "directory-listed",
+      "alreadyInCatalogByName": false,
+      "alreadyInCatalog": false
+    },
+    {
+      "id": "taste-ns-the-canteen-on-portland-22-portland-st-dartmouth-ns",
+      "name": "The Canteen on Portland",
+      "category": "Taste of Nova Scotia restaurant member",
+      "description": null,
+      "address": "22 Portland St., Dartmouth, NS",
+      "city": "Dartmouth",
+      "neighborhood": "Dartmouth",
+      "website": "https://www.thecanteen.ca/",
+      "socialProfiles": [
+        {
+          "platform": "facebook",
+          "url": "http://www.facebook.com/thecanteenns",
+          "associationBasis": "trusted_directory_explicit_link"
+        },
+        {
+          "platform": "x",
+          "url": "http://www.twitter.com/thecanteenns",
+          "associationBasis": "trusted_directory_explicit_link"
+        }
+      ],
+      "linkHubs": [],
+      "actionLinks": [],
+      "phone": "902-425-9272",
+      "openingHours": "Tuesday - Thursday: 11:00am - 9:00pm, Friday - Saturday: 11:00am - 10:00pm",
+      "tags": [
+        "taste_of_nova_scotia_member"
+      ],
+      "sourceImageUrl": null,
+      "rightsState": null,
+      "sourceId": "taste-of-nova-scotia-restaurants",
+      "sourceName": "Taste of Nova Scotia restaurant member directory",
+      "sourceKind": "culinary_tourism_member_directory",
+      "sourceUrl": "https://tasteofnovascotia.com/members/the-canteen/",
+      "sourceUpdatedAt": null,
+      "observedAt": "2026-09-04T14:50:19.317Z",
+      "reviewState": "directory-listed",
+      "alreadyInCatalogByName": true,
+      "alreadyInCatalog": true
+    },
+    {
+      "id": "taste-ns-the-carleton-1685-argyle-st-halifax-ns",
+      "name": "The Carleton",
+      "category": "Taste of Nova Scotia restaurant member",
+      "description": null,
+      "address": "1685 Argyle St., Halifax, NS",
+      "city": "Halifax",
+      "neighborhood": "Halifax",
+      "website": "https://www.thecarleton.ca/",
+      "socialProfiles": [
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/TheCarletonHalifax/",
+          "associationBasis": "trusted_directory_explicit_link"
+        },
+        {
+          "platform": "x",
+          "url": "https://twitter.com/carletonhalifax",
+          "associationBasis": "trusted_directory_explicit_link"
+        },
+        {
+          "platform": "instagram",
+          "url": "https://www.instagram.com/carletonhalifax/",
+          "associationBasis": "trusted_directory_explicit_link"
+        }
+      ],
+      "linkHubs": [],
+      "actionLinks": [],
+      "phone": "902-422-6335",
+      "openingHours": null,
+      "tags": [
+        "taste_of_nova_scotia_member"
+      ],
+      "sourceImageUrl": null,
+      "rightsState": null,
+      "sourceId": "taste-of-nova-scotia-restaurants",
+      "sourceName": "Taste of Nova Scotia restaurant member directory",
+      "sourceKind": "culinary_tourism_member_directory",
+      "sourceUrl": "https://tasteofnovascotia.com/members/the-carleton/",
+      "sourceUpdatedAt": null,
+      "observedAt": "2026-09-04T14:50:19.373Z",
+      "reviewState": "directory-listed",
+      "alreadyInCatalogByName": true,
+      "alreadyInCatalog": true
+    },
+    {
+      "id": "taste-ns-the-press-gang-restaurant-oyster-bar-5218-prince-st-halifax-ns",
+      "name": "The Press Gang Restaurant & Oyster Bar",
+      "category": "Taste of Nova Scotia restaurant member",
+      "description": null,
+      "address": "5218 Prince St., Halifax, NS",
+      "city": "Halifax",
+      "neighborhood": "Halifax",
+      "website": "http://www.thepressgang.net/",
+      "socialProfiles": [
+        {
+          "platform": "facebook",
+          "url": "http://www.facebook.com/PressGangRestaurant?fref=ts",
+          "associationBasis": "trusted_directory_explicit_link"
+        },
+        {
+          "platform": "x",
+          "url": "https://twitter.com/thepressgang",
+          "associationBasis": "trusted_directory_explicit_link"
+        }
+      ],
+      "linkHubs": [],
+      "actionLinks": [],
+      "phone": "902-423-8816",
+      "openingHours": "",
+      "tags": [
+        "taste_of_nova_scotia_member"
+      ],
+      "sourceImageUrl": null,
+      "rightsState": null,
+      "sourceId": "taste-of-nova-scotia-restaurants",
+      "sourceName": "Taste of Nova Scotia restaurant member directory",
+      "sourceKind": "culinary_tourism_member_directory",
+      "sourceUrl": "https://tasteofnovascotia.com/members/the-press-gang-restaurant-oyster-bar/",
+      "sourceUpdatedAt": null,
+      "observedAt": "2026-09-04T14:50:19.380Z",
+      "reviewState": "directory-listed",
+      "alreadyInCatalogByName": false,
+      "alreadyInCatalog": false
+    },
+    {
+      "id": "taste-ns-waterfront-warehouse-restaurant-oyster-house-1549-lower-water-st-halifax-ns",
+      "name": "Waterfront Warehouse Restaurant & Oyster House",
+      "category": "Taste of Nova Scotia restaurant member",
+      "description": null,
+      "address": "1549 Lower Water St., Halifax, NS",
+      "city": "Halifax",
+      "neighborhood": "Halifax",
+      "website": "https://www.waterfrontwarehouse.ca/",
+      "socialProfiles": [
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/WaterfrontWarehouse/",
+          "associationBasis": "trusted_directory_explicit_link"
+        },
+        {
+          "platform": "x",
+          "url": "https://twitter.com/WWHalifax",
+          "associationBasis": "trusted_directory_explicit_link"
+        }
+      ],
+      "linkHubs": [],
+      "actionLinks": [],
+      "phone": "902-425-7610",
+      "openingHours": "Open seven days a week for lunch and dinner - 11:30am - 9:00pm (10:00pm Fri and Sat)",
+      "tags": [
+        "taste_of_nova_scotia_member"
+      ],
+      "sourceImageUrl": null,
+      "rightsState": null,
+      "sourceId": "taste-of-nova-scotia-restaurants",
+      "sourceName": "Taste of Nova Scotia restaurant member directory",
+      "sourceKind": "culinary_tourism_member_directory",
+      "sourceUrl": "https://tasteofnovascotia.com/members/waterfront-warehouse-restaurant-oyster-house/",
+      "sourceUpdatedAt": null,
+      "observedAt": "2026-09-04T14:50:19.427Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -15219,7 +17102,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Quinpool Road Mainstreet District Association",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://quinpoolroad.ca/member/7-peppers-grill/",
-      "observedAt": "2026-09-04T12:47:38.692Z",
+      "observedAt": "2026-09-04T14:50:22.683Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": true,
       "alreadyInCatalog": true
@@ -15242,7 +17125,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Quinpool Road Mainstreet District Association",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://quinpoolroad.ca/member/angelique-french-cafe/",
-      "observedAt": "2026-09-04T12:47:38.903Z",
+      "observedAt": "2026-09-04T14:50:22.636Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -15265,7 +17148,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Quinpool Road Mainstreet District Association",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://quinpoolroad.ca/member/ardmore-tea-room/",
-      "observedAt": "2026-09-04T12:47:39.509Z",
+      "observedAt": "2026-09-04T14:50:22.785Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": true,
       "alreadyInCatalog": true
@@ -15288,7 +17171,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Quinpool Road Mainstreet District Association",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://quinpoolroad.ca/member/banh-mi-ab/",
-      "observedAt": "2026-09-04T12:47:38.826Z",
+      "observedAt": "2026-09-04T14:50:22.760Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": true,
       "alreadyInCatalog": true
@@ -15311,7 +17194,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Quinpool Road Mainstreet District Association",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://quinpoolroad.ca/member/bb-q-chicken/",
-      "observedAt": "2026-09-04T12:47:38.808Z",
+      "observedAt": "2026-09-04T14:50:22.774Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -15340,7 +17223,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Quinpool Road Mainstreet District Association",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://quinpoolroad.ca/member/beirut-way-convenience/",
-      "observedAt": "2026-09-04T12:47:38.868Z",
+      "observedAt": "2026-09-04T14:50:23.474Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -15369,7 +17252,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Quinpool Road Mainstreet District Association",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://quinpoolroad.ca/member/ben-gongs-tea-2/",
-      "observedAt": "2026-09-04T12:47:40.531Z",
+      "observedAt": "2026-09-04T14:50:24.486Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -15392,7 +17275,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Quinpool Road Mainstreet District Association",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://quinpoolroad.ca/member/blue-olive-greek-taverna/",
-      "observedAt": "2026-09-04T12:47:40.530Z",
+      "observedAt": "2026-09-04T14:50:24.511Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -15421,7 +17304,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Quinpool Road Mainstreet District Association",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://quinpoolroad.ca/member/bobars-bubble-tea/",
-      "observedAt": "2026-09-04T12:47:41.424Z",
+      "observedAt": "2026-09-04T14:50:24.496Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -15444,7 +17327,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Quinpool Road Mainstreet District Association",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://quinpoolroad.ca/member/busan-korean-bbq/",
-      "observedAt": "2026-09-04T12:47:40.513Z",
+      "observedAt": "2026-09-04T14:50:24.491Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -15467,7 +17350,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Quinpool Road Mainstreet District Association",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://quinpoolroad.ca/member/chai-samosa/",
-      "observedAt": "2026-09-04T12:47:40.496Z",
+      "observedAt": "2026-09-04T14:50:25.342Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": true,
       "alreadyInCatalog": true
@@ -15490,7 +17373,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Quinpool Road Mainstreet District Association",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://quinpoolroad.ca/member/cheeky-neighbour-diner/",
-      "observedAt": "2026-09-04T12:47:40.502Z",
+      "observedAt": "2026-09-04T14:50:24.529Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": true,
       "alreadyInCatalog": true
@@ -15513,7 +17396,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Quinpool Road Mainstreet District Association",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://quinpoolroad.ca/member/dilly-dally-coffee-cafe/",
-      "observedAt": "2026-09-04T12:47:42.359Z",
+      "observedAt": "2026-09-04T14:50:26.423Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": true,
       "alreadyInCatalog": true
@@ -15536,7 +17419,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Quinpool Road Mainstreet District Association",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://quinpoolroad.ca/member/dominos-pizza/",
-      "observedAt": "2026-09-04T12:47:42.388Z",
+      "observedAt": "2026-09-04T14:50:26.319Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": true,
       "alreadyInCatalog": true
@@ -15559,7 +17442,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Quinpool Road Mainstreet District Association",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://quinpoolroad.ca/member/east-coast-bakery/",
-      "observedAt": "2026-09-04T12:47:42.393Z",
+      "observedAt": "2026-09-04T14:50:26.435Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -15582,7 +17465,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Quinpool Road Mainstreet District Association",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://quinpoolroad.ca/member/freemans-little-new-york/",
-      "observedAt": "2026-09-04T12:47:42.384Z",
+      "observedAt": "2026-09-04T14:50:26.452Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": true,
       "alreadyInCatalog": true
@@ -15611,7 +17494,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Quinpool Road Mainstreet District Association",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://quinpoolroad.ca/member/grill-singh-tikka/",
-      "observedAt": "2026-09-04T12:47:43.200Z",
+      "observedAt": "2026-09-04T14:50:27.229Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -15640,7 +17523,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Quinpool Road Mainstreet District Association",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://quinpoolroad.ca/member/jellies-bar/",
-      "observedAt": "2026-09-04T12:47:42.425Z",
+      "observedAt": "2026-09-04T14:50:26.327Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -15663,7 +17546,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Quinpool Road Mainstreet District Association",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://quinpoolroad.ca/member/kfc/",
-      "observedAt": "2026-09-04T12:47:44.207Z",
+      "observedAt": "2026-09-04T14:50:28.156Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": true,
       "alreadyInCatalog": true
@@ -15686,7 +17569,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Quinpool Road Mainstreet District Association",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://quinpoolroad.ca/member/king-of-donair/",
-      "observedAt": "2026-09-04T12:47:45.044Z",
+      "observedAt": "2026-09-04T14:50:28.265Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": true,
       "alreadyInCatalog": true
@@ -15709,7 +17592,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Quinpool Road Mainstreet District Association",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://quinpoolroad.ca/member/mary-browns/",
-      "observedAt": "2026-09-04T12:47:44.284Z",
+      "observedAt": "2026-09-04T14:50:29.016Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": true,
       "alreadyInCatalog": true
@@ -15732,7 +17615,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Quinpool Road Mainstreet District Association",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://quinpoolroad.ca/member/mcdonalds/",
-      "observedAt": "2026-09-04T12:47:44.234Z",
+      "observedAt": "2026-09-04T14:50:28.239Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": true,
       "alreadyInCatalog": true
@@ -15755,7 +17638,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Quinpool Road Mainstreet District Association",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://quinpoolroad.ca/member/morris-east/",
-      "observedAt": "2026-09-04T12:47:44.188Z",
+      "observedAt": "2026-09-04T14:50:28.205Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": true,
       "alreadyInCatalog": true
@@ -15778,7 +17661,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Quinpool Road Mainstreet District Association",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://quinpoolroad.ca/member/palm-tree-kitchen/",
-      "observedAt": "2026-09-04T12:47:44.255Z",
+      "observedAt": "2026-09-04T14:50:28.217Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": true,
       "alreadyInCatalog": true
@@ -15801,7 +17684,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Quinpool Road Mainstreet District Association",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://quinpoolroad.ca/member/pizza-hut/",
-      "observedAt": "2026-09-04T12:47:45.993Z",
+      "observedAt": "2026-09-04T14:50:30.849Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": true,
       "alreadyInCatalog": true
@@ -15824,7 +17707,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Quinpool Road Mainstreet District Association",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://quinpoolroad.ca/member/propeller-brewing-co/",
-      "observedAt": "2026-09-04T12:47:46.000Z",
+      "observedAt": "2026-09-04T14:50:30.073Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -15847,7 +17730,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Quinpool Road Mainstreet District Association",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://quinpoolroad.ca/member/quinns-arms/",
-      "observedAt": "2026-09-04T12:47:46.956Z",
+      "observedAt": "2026-09-04T14:50:30.058Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": true,
       "alreadyInCatalog": true
@@ -15876,7 +17759,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Quinpool Road Mainstreet District Association",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://quinpoolroad.ca/member/seoulmate-sushi/",
-      "observedAt": "2026-09-04T12:47:46.059Z",
+      "observedAt": "2026-09-04T14:50:30.074Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -15899,7 +17782,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Quinpool Road Mainstreet District Association",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://quinpoolroad.ca/member/slice-convenience-pizzeria/",
-      "observedAt": "2026-09-04T12:47:46.065Z",
+      "observedAt": "2026-09-04T14:50:30.001Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -15922,7 +17805,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Quinpool Road Mainstreet District Association",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://quinpoolroad.ca/member/songs-korean-restaurant/",
-      "observedAt": "2026-09-04T12:47:46.076Z",
+      "observedAt": "2026-09-04T14:50:30.006Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -15945,7 +17828,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Quinpool Road Mainstreet District Association",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://quinpoolroad.ca/member/sweet-hereafter-cheesecakery/",
-      "observedAt": "2026-09-04T12:47:47.956Z",
+      "observedAt": "2026-09-04T14:50:31.994Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -15968,7 +17851,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Quinpool Road Mainstreet District Association",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://quinpoolroad.ca/member/the-beavers-den/",
-      "observedAt": "2026-09-04T12:47:47.944Z",
+      "observedAt": "2026-09-04T14:50:32.750Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": true,
       "alreadyInCatalog": true
@@ -15991,7 +17874,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Quinpool Road Mainstreet District Association",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://quinpoolroad.ca/member/the-cannery-social-kitchen/",
-      "observedAt": "2026-09-04T12:47:47.954Z",
+      "observedAt": "2026-09-04T14:50:32.034Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -16014,7 +17897,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Quinpool Road Mainstreet District Association",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://quinpoolroad.ca/member/the-oxford-tap-room-community-space-retail-store/",
-      "observedAt": "2026-09-04T12:47:47.888Z",
+      "observedAt": "2026-09-04T14:50:31.974Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -16037,7 +17920,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Quinpool Road Mainstreet District Association",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://quinpoolroad.ca/member/tim-hortons/",
-      "observedAt": "2026-09-04T12:47:48.696Z",
+      "observedAt": "2026-09-04T14:50:31.982Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": true,
       "alreadyInCatalog": true
@@ -16060,7 +17943,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Quinpool Road Mainstreet District Association",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://quinpoolroad.ca/member/truly-tasty/",
-      "observedAt": "2026-09-04T12:47:47.915Z",
+      "observedAt": "2026-09-04T14:50:31.890Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": true,
       "alreadyInCatalog": true
@@ -16089,7 +17972,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Quinpool Road Mainstreet District Association",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://quinpoolroad.ca/member/turbo-chicken/",
-      "observedAt": "2026-09-04T12:47:49.675Z",
+      "observedAt": "2026-09-04T14:50:33.762Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -16112,7 +17995,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Quinpool Road Mainstreet District Association",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://quinpoolroad.ca/member/uttarpardesh-sweets-snacks/",
-      "observedAt": "2026-09-04T12:47:49.679Z",
+      "observedAt": "2026-09-04T14:50:33.871Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -16135,7 +18018,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Quinpool Road Mainstreet District Association",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://quinpoolroad.ca/member/wasabi-house-fine-japanese-cuisine/",
-      "observedAt": "2026-09-04T12:47:50.607Z",
+      "observedAt": "2026-09-04T14:50:34.621Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -16158,7 +18041,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Quinpool Road Mainstreet District Association",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://quinpoolroad.ca/member/wendys/",
-      "observedAt": "2026-09-04T12:47:49.735Z",
+      "observedAt": "2026-09-04T14:50:33.765Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": true,
       "alreadyInCatalog": true
@@ -16181,7 +18064,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Quinpool Road Mainstreet District Association",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://quinpoolroad.ca/member/westender-coffee/",
-      "observedAt": "2026-09-04T12:47:49.721Z",
+      "observedAt": "2026-09-04T14:50:33.770Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -16210,7 +18093,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Quinpool Road Mainstreet District Association",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://quinpoolroad.ca/member/wowly/",
-      "observedAt": "2026-09-04T12:47:49.723Z",
+      "observedAt": "2026-09-04T14:50:33.762Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": true,
       "alreadyInCatalog": true
@@ -16237,7 +18120,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceKind": "restaurant_association_directory",
       "sourceUrl": "https://rans.ca/restaurants/starbucks-coffee-halifax-professional-center-22/",
       "sourceUpdatedAt": "2024-08-22T18:54:42",
-      "observedAt": "2026-09-04T12:48:17.623Z",
+      "observedAt": "2026-09-04T14:50:43.424Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -16264,7 +18147,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceKind": "restaurant_association_directory",
       "sourceUrl": "https://rans.ca/restaurants/starbucks-coffee-marriott-halifax-harbourfront-22/",
       "sourceUpdatedAt": "2024-08-22T18:54:41",
-      "observedAt": "2026-09-04T12:48:18.016Z",
+      "observedAt": "2026-09-04T14:50:44.001Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -16291,7 +18174,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceKind": "restaurant_association_directory",
       "sourceUrl": "https://rans.ca/restaurants/starbucks-coffee-halifax-stanfield-intl-airport-22/",
       "sourceUpdatedAt": "2024-08-22T18:54:39",
-      "observedAt": "2026-09-04T12:48:17.696Z",
+      "observedAt": "2026-09-04T14:50:43.458Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -16318,7 +18201,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceKind": "restaurant_association_directory",
       "sourceUrl": "https://rans.ca/restaurants/smokes-poutinerie-halifax-22/",
       "sourceUpdatedAt": "2024-08-22T18:54:32",
-      "observedAt": "2026-09-04T12:48:16.472Z",
+      "observedAt": "2026-09-04T14:50:43.442Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -16345,7 +18228,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceKind": "restaurant_association_directory",
       "sourceUrl": "https://rans.ca/restaurants/pizza-delight-downtown-halifax-22/",
       "sourceUpdatedAt": "2024-08-22T18:54:30",
-      "observedAt": "2026-09-04T12:48:22.354Z",
+      "observedAt": "2026-09-04T14:50:45.320Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -16372,7 +18255,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceKind": "restaurant_association_directory",
       "sourceUrl": "https://rans.ca/restaurants/two-if-by-sea-downtown-halifax-22/",
       "sourceUpdatedAt": "2024-08-22T18:54:27",
-      "observedAt": "2026-09-04T12:48:22.281Z",
+      "observedAt": "2026-09-04T14:50:45.502Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -16399,7 +18282,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceKind": "restaurant_association_directory",
       "sourceUrl": "https://rans.ca/restaurants/big-wedge-pizza-halifax-22/",
       "sourceUpdatedAt": "2024-08-22T18:54:10",
-      "observedAt": "2026-09-04T12:48:22.244Z",
+      "observedAt": "2026-09-04T14:50:45.362Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -16426,7 +18309,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceKind": "restaurant_association_directory",
       "sourceUrl": "https://rans.ca/restaurants/wooden-door-bistro-quality-inn-halifax-airport/",
       "sourceUpdatedAt": "2024-08-22T18:54:07",
-      "observedAt": "2026-09-04T12:48:22.333Z",
+      "observedAt": "2026-09-04T14:50:45.319Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -16453,7 +18336,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceKind": "restaurant_association_directory",
       "sourceUrl": "https://rans.ca/restaurants/dominos-pizza-halifax-22/",
       "sourceUpdatedAt": "2024-08-22T18:54:01",
-      "observedAt": "2026-09-04T12:48:22.353Z",
+      "observedAt": "2026-09-04T14:50:45.323Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -16480,7 +18363,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceKind": "restaurant_association_directory",
       "sourceUrl": "https://rans.ca/restaurants/jessys-pizza-halifax-barrington-street-22/",
       "sourceUpdatedAt": "2024-08-22T18:53:55",
-      "observedAt": "2026-09-04T12:48:26.377Z",
+      "observedAt": "2026-09-04T14:50:46.931Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -16507,7 +18390,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceKind": "restaurant_association_directory",
       "sourceUrl": "https://rans.ca/restaurants/jessys-pizza-halifax-breeze-drive-22/",
       "sourceUpdatedAt": "2024-08-22T18:53:20",
-      "observedAt": "2026-09-04T12:48:26.338Z",
+      "observedAt": "2026-09-04T14:50:47.031Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -16534,7 +18417,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceKind": "restaurant_association_directory",
       "sourceUrl": "https://rans.ca/restaurants/jessys-pizza-halifax-clayton-park-22/",
       "sourceUpdatedAt": "2024-08-22T18:53:17",
-      "observedAt": "2026-09-04T12:48:26.381Z",
+      "observedAt": "2026-09-04T14:50:47.160Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -16561,7 +18444,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceKind": "restaurant_association_directory",
       "sourceUrl": "https://rans.ca/restaurants/jessys-pizza-halifax-north-street-22/",
       "sourceUpdatedAt": "2024-08-22T18:53:16",
-      "observedAt": "2026-09-04T12:48:27.682Z",
+      "observedAt": "2026-09-04T14:50:46.848Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -16588,7 +18471,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceKind": "restaurant_association_directory",
       "sourceUrl": "https://rans.ca/restaurants/jessys-pizza-halifax-herring-cove-road-22/",
       "sourceUpdatedAt": "2024-08-22T18:53:16",
-      "observedAt": "2026-09-04T12:48:26.326Z",
+      "observedAt": "2026-09-04T14:50:47.002Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -16615,7 +18498,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceKind": "restaurant_association_directory",
       "sourceUrl": "https://rans.ca/restaurants/halifax-farmers-market-22/",
       "sourceUpdatedAt": "2024-08-22T18:52:38",
-      "observedAt": "2026-09-04T12:48:31.675Z",
+      "observedAt": "2026-09-04T14:50:48.593Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -16642,7 +18525,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceKind": "restaurant_association_directory",
       "sourceUrl": "https://rans.ca/restaurants/subway-halifax-robie-street-22/",
       "sourceUpdatedAt": "2024-08-22T18:51:51",
-      "observedAt": "2026-09-04T12:48:31.537Z",
+      "observedAt": "2026-09-04T14:50:48.526Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -16669,7 +18552,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceKind": "restaurant_association_directory",
       "sourceUrl": "https://rans.ca/restaurants/doolys-halifax-22/",
       "sourceUpdatedAt": "2024-08-22T18:51:47",
-      "observedAt": "2026-09-04T12:48:31.674Z",
+      "observedAt": "2026-09-04T14:50:48.560Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -16696,7 +18579,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceKind": "restaurant_association_directory",
       "sourceUrl": "https://rans.ca/restaurants/subway-halifax-fenwick-22/",
       "sourceUpdatedAt": "2024-08-22T18:51:23",
-      "observedAt": "2026-09-04T12:48:31.539Z",
+      "observedAt": "2026-09-04T14:50:48.457Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -16723,7 +18606,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceKind": "restaurant_association_directory",
       "sourceUrl": "https://rans.ca/restaurants/swiss-chalet-halifax-kempt-rd-22/",
       "sourceUpdatedAt": "2024-08-22T18:36:28",
-      "observedAt": "2026-09-04T12:48:31.577Z",
+      "observedAt": "2026-09-04T14:50:48.434Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -16750,7 +18633,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceKind": "restaurant_association_directory",
       "sourceUrl": "https://rans.ca/restaurants/swiss-chalet-halifax-lacewood-dr-22/",
       "sourceUpdatedAt": "2024-08-22T18:36:27",
-      "observedAt": "2026-09-04T12:48:36.996Z",
+      "observedAt": "2026-09-04T14:50:49.879Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -16777,7 +18660,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceKind": "restaurant_association_directory",
       "sourceUrl": "https://rans.ca/restaurants/halifax-marriott-harbourfront-22/",
       "sourceUpdatedAt": "2024-08-22T18:35:09",
-      "observedAt": "2026-09-04T12:48:35.732Z",
+      "observedAt": "2026-09-04T14:50:49.972Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -16804,7 +18687,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceKind": "restaurant_association_directory",
       "sourceUrl": "https://rans.ca/restaurants/smittys-family-restaurant-halifax/",
       "sourceUpdatedAt": "2024-08-22T18:34:24",
-      "observedAt": "2026-09-04T12:48:35.806Z",
+      "observedAt": "2026-09-04T14:50:49.985Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -16831,7 +18714,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceKind": "restaurant_association_directory",
       "sourceUrl": "https://rans.ca/restaurants/halifax-feast-dinner-theatre/",
       "sourceUpdatedAt": "2024-08-22T18:34:12",
-      "observedAt": "2026-09-04T12:48:35.845Z",
+      "observedAt": "2026-09-04T14:50:50.205Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -16868,7 +18751,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceKind": "restaurant_association_directory",
       "sourceUrl": "https://rans.ca/restaurants/garden-food-bar-lounge/",
       "sourceUpdatedAt": "2024-06-18T21:17:16",
-      "observedAt": "2026-09-04T12:48:42.153Z",
+      "observedAt": "2026-09-04T14:50:52.105Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -16900,7 +18783,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceKind": "restaurant_association_directory",
       "sourceUrl": "https://rans.ca/restaurants/halifax-alehouse-22/",
       "sourceUpdatedAt": "2024-06-18T21:16:37",
-      "observedAt": "2026-09-04T12:48:43.167Z",
+      "observedAt": "2026-09-04T14:50:51.845Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -16931,7 +18814,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceKind": "restaurant_association_directory",
       "sourceUrl": "https://rans.ca/restaurants/halifax-club-the/",
       "sourceUpdatedAt": "2024-06-18T21:16:09",
-      "observedAt": "2026-09-04T12:48:41.410Z",
+      "observedAt": "2026-09-04T14:50:51.711Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": true,
       "alreadyInCatalog": true
@@ -16962,7 +18845,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceKind": "restaurant_association_directory",
       "sourceUrl": "https://rans.ca/restaurants/the-old-triangle-irish-alehouse-2/",
       "sourceUpdatedAt": "2025-07-18T17:58:36",
-      "observedAt": "2026-09-04T12:48:42.861Z",
+      "observedAt": "2026-09-04T14:50:51.734Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -16994,7 +18877,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceKind": "restaurant_association_directory",
       "sourceUrl": "https://rans.ca/restaurants/seasons-by-atlantica-atlantica-hotel-halifax/",
       "sourceUpdatedAt": "2024-06-18T21:16:01",
-      "observedAt": "2026-09-04T12:48:41.475Z",
+      "observedAt": "2026-09-04T14:50:51.765Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -17068,7 +18951,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceKind": "restaurant_association_directory",
       "sourceUrl": "https://rans.ca/restaurants/good-robot-brewing-robie-st-pub/",
       "sourceUpdatedAt": "2026-03-26T13:02:01",
-      "observedAt": "2026-09-04T12:48:48.103Z",
+      "observedAt": "2026-09-04T14:50:54.140Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -17130,7 +19013,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceKind": "restaurant_association_directory",
       "sourceUrl": "https://rans.ca/restaurants/good-robot-brewing-the-commons-beer-garden-beer-store/",
       "sourceUpdatedAt": "2026-03-26T13:03:53",
-      "observedAt": "2026-09-04T12:48:47.949Z",
+      "observedAt": "2026-09-04T14:50:53.870Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -17189,7 +19072,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceKind": "restaurant_association_directory",
       "sourceUrl": "https://rans.ca/restaurants/good-robot-brewing-elmsdale-beer-garden-beer-store/",
       "sourceUpdatedAt": "2026-03-26T13:04:42",
-      "observedAt": "2026-09-04T12:48:47.878Z",
+      "observedAt": "2026-09-04T14:50:53.901Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -17237,7 +19120,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceKind": "restaurant_association_directory",
       "sourceUrl": "https://rans.ca/restaurants/bravado-wine-bar/",
       "sourceUpdatedAt": "2025-10-20T12:57:53",
-      "observedAt": "2026-09-04T12:48:47.868Z",
+      "observedAt": "2026-09-04T14:50:54.116Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -17297,7 +19180,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceKind": "restaurant_association_directory",
       "sourceUrl": "https://rans.ca/restaurants/hungry-bowl/",
       "sourceUpdatedAt": "2025-06-06T13:27:15",
-      "observedAt": "2026-09-04T12:48:47.876Z",
+      "observedAt": "2026-09-04T14:50:53.983Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": true,
       "alreadyInCatalog": true
@@ -17324,7 +19207,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceKind": "restaurant_association_directory",
       "sourceUrl": "https://rans.ca/restaurants/boneheads-bbq-22/",
       "sourceUpdatedAt": "2024-08-22T19:03:12",
-      "observedAt": "2026-09-04T12:48:52.104Z",
+      "observedAt": "2026-09-04T14:50:55.742Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": true,
       "alreadyInCatalog": true
@@ -17351,7 +19234,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceKind": "restaurant_association_directory",
       "sourceUrl": "https://rans.ca/restaurants/steak-and-stein-family-restaurant-dartmouth/",
       "sourceUpdatedAt": "2024-08-22T18:34:25",
-      "observedAt": "2026-09-04T12:48:52.278Z",
+      "observedAt": "2026-09-04T14:50:55.539Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -17378,7 +19261,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceKind": "restaurant_association_directory",
       "sourceUrl": "https://rans.ca/restaurants/hamachi-house/",
       "sourceUpdatedAt": "2024-08-22T18:34:12",
-      "observedAt": "2026-09-04T12:48:52.247Z",
+      "observedAt": "2026-09-04T14:50:55.641Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -17405,7 +19288,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceKind": "restaurant_association_directory",
       "sourceUrl": "https://rans.ca/restaurants/cheelin-restaurant-22/",
       "sourceUpdatedAt": "2024-08-22T18:34:05",
-      "observedAt": "2026-09-04T12:48:52.198Z",
+      "observedAt": "2026-09-04T14:50:55.604Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -17440,7 +19323,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceKind": "restaurant_association_directory",
       "sourceUrl": "https://rans.ca/restaurants/ragazzi-restobar/",
       "sourceUpdatedAt": "2025-07-18T18:09:42",
-      "observedAt": "2026-09-04T12:48:52.427Z",
+      "observedAt": "2026-09-04T14:50:55.848Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -17477,7 +19360,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceKind": "restaurant_association_directory",
       "sourceUrl": "https://rans.ca/restaurants/kyo-kitchen-bar/",
       "sourceUpdatedAt": "2024-06-18T21:18:18",
-      "observedAt": "2026-09-04T12:48:57.145Z",
+      "observedAt": "2026-09-04T14:50:57.773Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -17523,7 +19406,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceKind": "restaurant_association_directory",
       "sourceUrl": "https://rans.ca/restaurants/casablanca-authentic-moroccan-cuisine/",
       "sourceUpdatedAt": "2024-06-18T21:18:16",
-      "observedAt": "2026-09-04T12:48:57.287Z",
+      "observedAt": "2026-09-04T14:50:57.748Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -17579,7 +19462,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceKind": "restaurant_association_directory",
       "sourceUrl": "https://rans.ca/restaurants/the-cannery-kitchen-and-social/",
       "sourceUpdatedAt": "2025-06-06T16:18:26",
-      "observedAt": "2026-09-04T12:48:57.434Z",
+      "observedAt": "2026-09-04T14:50:57.931Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -17618,7 +19501,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceKind": "restaurant_association_directory",
       "sourceUrl": "https://rans.ca/restaurants/bent-ridge-winery/",
       "sourceUpdatedAt": "2024-06-18T21:18:11",
-      "observedAt": "2026-09-04T12:48:57.126Z",
+      "observedAt": "2026-09-04T14:50:57.584Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -17655,7 +19538,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceKind": "restaurant_association_directory",
       "sourceUrl": "https://rans.ca/restaurants/the-italian-market/",
       "sourceUpdatedAt": "2025-06-16T18:58:18",
-      "observedAt": "2026-09-04T12:48:57.146Z",
+      "observedAt": "2026-09-04T14:50:57.571Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -17693,7 +19576,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceKind": "restaurant_association_directory",
       "sourceUrl": "https://rans.ca/restaurants/drift/",
       "sourceUpdatedAt": "2025-06-06T18:36:22",
-      "observedAt": "2026-09-04T12:49:02.271Z",
+      "observedAt": "2026-09-04T14:50:59.715Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": true,
       "alreadyInCatalog": true
@@ -17730,7 +19613,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceKind": "restaurant_association_directory",
       "sourceUrl": "https://rans.ca/restaurants/seaport-social/",
       "sourceUpdatedAt": "2024-06-18T21:18:04",
-      "observedAt": "2026-09-04T12:49:02.475Z",
+      "observedAt": "2026-09-04T14:50:59.644Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": true,
       "alreadyInCatalog": true
@@ -17763,7 +19646,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceKind": "restaurant_association_directory",
       "sourceUrl": "https://rans.ca/restaurants/firkin-and-flyer/",
       "sourceUpdatedAt": "2024-06-18T21:18:03",
-      "observedAt": "2026-09-04T12:49:02.157Z",
+      "observedAt": "2026-09-04T14:50:59.423Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -17802,7 +19685,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceKind": "restaurant_association_directory",
       "sourceUrl": "https://rans.ca/restaurants/le-rouge/",
       "sourceUpdatedAt": "2025-07-18T14:33:04",
-      "observedAt": "2026-09-04T12:49:02.569Z",
+      "observedAt": "2026-09-04T14:50:59.614Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -17841,7 +19724,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceKind": "restaurant_association_directory",
       "sourceUrl": "https://rans.ca/restaurants/sapori-italian-street-food-ltd/",
       "sourceUpdatedAt": "2024-06-18T21:17:59",
-      "observedAt": "2026-09-04T12:49:02.476Z",
+      "observedAt": "2026-09-04T14:51:00.063Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -17878,7 +19761,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceKind": "restaurant_association_directory",
       "sourceUrl": "https://rans.ca/restaurants/fishy-dishy-seafood-and-pizza/",
       "sourceUpdatedAt": "2024-06-18T21:17:56",
-      "observedAt": "2026-09-04T12:49:07.442Z",
+      "observedAt": "2026-09-04T14:51:01.851Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -17928,7 +19811,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceKind": "restaurant_association_directory",
       "sourceUrl": "https://rans.ca/restaurants/the-dahlia-by-jukai/",
       "sourceUpdatedAt": "2025-06-06T18:06:21",
-      "observedAt": "2026-09-04T12:49:07.679Z",
+      "observedAt": "2026-09-04T14:51:02.151Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -17968,7 +19851,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceKind": "restaurant_association_directory",
       "sourceUrl": "https://rans.ca/restaurants/economy-shoe-shop/",
       "sourceUpdatedAt": "2024-06-18T21:17:46",
-      "observedAt": "2026-09-04T12:49:07.169Z",
+      "observedAt": "2026-09-04T14:51:01.856Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": true,
       "alreadyInCatalog": true
@@ -18005,7 +19888,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceKind": "restaurant_association_directory",
       "sourceUrl": "https://rans.ca/restaurants/good-robot-brewing-company/",
       "sourceUpdatedAt": "2024-06-18T21:17:44",
-      "observedAt": "2026-09-04T12:49:07.441Z",
+      "observedAt": "2026-09-04T14:51:01.852Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": true,
       "alreadyInCatalog": true
@@ -18043,7 +19926,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceKind": "restaurant_association_directory",
       "sourceUrl": "https://rans.ca/restaurants/midtown-boomers-tavern-lounge/",
       "sourceUpdatedAt": "2024-06-18T21:17:35",
-      "observedAt": "2026-09-04T12:49:07.444Z",
+      "observedAt": "2026-09-04T14:51:01.903Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -18078,7 +19961,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceKind": "restaurant_association_directory",
       "sourceUrl": "https://rans.ca/restaurants/spinnakers/",
       "sourceUpdatedAt": "2024-06-18T21:17:18",
-      "observedAt": "2026-09-04T12:49:12.140Z",
+      "observedAt": "2026-09-04T14:51:03.815Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -18118,7 +20001,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceKind": "restaurant_association_directory",
       "sourceUrl": "https://rans.ca/restaurants/the-nook-espresso-bar-and-lounge/",
       "sourceUpdatedAt": "2024-06-18T21:17:13",
-      "observedAt": "2026-09-04T12:49:12.360Z",
+      "observedAt": "2026-09-04T14:51:03.816Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -18156,7 +20039,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceKind": "restaurant_association_directory",
       "sourceUrl": "https://rans.ca/restaurants/mabata/",
       "sourceUpdatedAt": "2024-06-18T21:17:13",
-      "observedAt": "2026-09-04T12:49:12.288Z",
+      "observedAt": "2026-09-04T14:51:04.178Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -18190,7 +20073,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceKind": "restaurant_association_directory",
       "sourceUrl": "https://rans.ca/restaurants/saltys-restaurant-22/",
       "sourceUpdatedAt": "2024-06-18T21:16:51",
-      "observedAt": "2026-09-04T12:49:11.878Z",
+      "observedAt": "2026-09-04T14:51:03.538Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -18224,7 +20107,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceKind": "restaurant_association_directory",
       "sourceUrl": "https://rans.ca/restaurants/ristorante-a-mano-22/",
       "sourceUpdatedAt": "2024-06-18T21:16:50",
-      "observedAt": "2026-09-04T12:49:11.900Z",
+      "observedAt": "2026-09-04T14:51:03.449Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": true,
       "alreadyInCatalog": true
@@ -18258,7 +20141,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceKind": "restaurant_association_directory",
       "sourceUrl": "https://rans.ca/restaurants/look-ho-ho-22/",
       "sourceUpdatedAt": "2024-06-18T21:16:45",
-      "observedAt": "2026-09-04T12:49:16.700Z",
+      "observedAt": "2026-09-04T14:51:05.708Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": true,
       "alreadyInCatalog": true
@@ -18292,7 +20175,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceKind": "restaurant_association_directory",
       "sourceUrl": "https://rans.ca/restaurants/hfx-sports-bar-grill-22/",
       "sourceUpdatedAt": "2025-06-06T19:08:52",
-      "observedAt": "2026-09-04T12:49:16.925Z",
+      "observedAt": "2026-09-04T14:51:05.771Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -18324,7 +20207,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceKind": "restaurant_association_directory",
       "sourceUrl": "https://rans.ca/restaurants/damaurizio-22/",
       "sourceUpdatedAt": "2024-06-18T21:16:34",
-      "observedAt": "2026-09-04T12:49:16.702Z",
+      "observedAt": "2026-09-04T14:51:05.772Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -18360,7 +20243,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceKind": "restaurant_association_directory",
       "sourceUrl": "https://rans.ca/restaurants/darrells-restaurant-22/",
       "sourceUpdatedAt": "2025-06-06T18:07:50",
-      "observedAt": "2026-09-04T12:49:16.919Z",
+      "observedAt": "2026-09-04T14:51:06.271Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -18396,7 +20279,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceKind": "restaurant_association_directory",
       "sourceUrl": "https://rans.ca/restaurants/bluenose-ii-restaurant-22/",
       "sourceUpdatedAt": "2024-06-18T21:16:31",
-      "observedAt": "2026-09-04T12:49:18.224Z",
+      "observedAt": "2026-09-04T14:51:05.720Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -18430,7 +20313,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceKind": "restaurant_association_directory",
       "sourceUrl": "https://rans.ca/restaurants/grounded-coffee-bar-22/",
       "sourceUpdatedAt": "2024-06-18T21:16:29",
-      "observedAt": "2026-09-04T12:49:22.507Z",
+      "observedAt": "2026-09-04T14:51:07.641Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -18462,7 +20345,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceKind": "restaurant_association_directory",
       "sourceUrl": "https://rans.ca/restaurants/gio-22/",
       "sourceUpdatedAt": "2025-06-06T18:56:10",
-      "observedAt": "2026-09-04T12:49:22.667Z",
+      "observedAt": "2026-09-04T14:51:07.714Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": true,
       "alreadyInCatalog": true
@@ -18493,7 +20376,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceKind": "restaurant_association_directory",
       "sourceUrl": "https://rans.ca/restaurants/cafe-chianti/",
       "sourceUpdatedAt": "2024-06-18T21:16:23",
-      "observedAt": "2026-09-04T12:49:22.595Z",
+      "observedAt": "2026-09-04T14:51:07.749Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": true,
       "alreadyInCatalog": true
@@ -18526,7 +20409,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceKind": "restaurant_association_directory",
       "sourceUrl": "https://rans.ca/restaurants/antojo-22/",
       "sourceUpdatedAt": "2025-06-06T13:33:41",
-      "observedAt": "2026-09-04T12:49:22.609Z",
+      "observedAt": "2026-09-04T14:51:07.894Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": true,
       "alreadyInCatalog": true
@@ -18570,7 +20453,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceKind": "restaurant_association_directory",
       "sourceUrl": "https://rans.ca/restaurants/eliot-and-vine/",
       "sourceUpdatedAt": "2025-06-06T18:26:03",
-      "observedAt": "2026-09-04T12:49:23.022Z",
+      "observedAt": "2026-09-04T14:51:08.627Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": true,
       "alreadyInCatalog": true
@@ -18614,7 +20497,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceKind": "restaurant_association_directory",
       "sourceUrl": "https://rans.ca/restaurants/honey-bee-ice-cream-parlour/",
       "sourceUpdatedAt": "2025-06-06T19:24:43",
-      "observedAt": "2026-09-04T12:49:29.104Z",
+      "observedAt": "2026-09-04T14:51:10.270Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -18648,7 +20531,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceKind": "restaurant_association_directory",
       "sourceUrl": "https://rans.ca/restaurants/2-doors-down-2-22/",
       "sourceUpdatedAt": "2025-11-13T15:05:26",
-      "observedAt": "2026-09-04T12:49:29.179Z",
+      "observedAt": "2026-09-04T14:51:10.358Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": true,
       "alreadyInCatalog": true
@@ -18679,7 +20562,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceKind": "restaurant_association_directory",
       "sourceUrl": "https://rans.ca/restaurants/scanway-catering-and-pastry/",
       "sourceUpdatedAt": "2024-06-18T21:16:05",
-      "observedAt": "2026-09-04T12:49:27.672Z",
+      "observedAt": "2026-09-04T14:51:10.117Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -18710,7 +20593,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceKind": "restaurant_association_directory",
       "sourceUrl": "https://rans.ca/restaurants/mckelvies-2/",
       "sourceUpdatedAt": "2024-06-18T21:16:04",
-      "observedAt": "2026-09-04T12:49:27.595Z",
+      "observedAt": "2026-09-04T14:51:10.065Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": true,
       "alreadyInCatalog": true
@@ -18742,7 +20625,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceKind": "restaurant_association_directory",
       "sourceUrl": "https://rans.ca/restaurants/kempsters-cookhouse-and-eatery/",
       "sourceUpdatedAt": "2024-06-18T21:16:02",
-      "observedAt": "2026-09-04T12:49:27.808Z",
+      "observedAt": "2026-09-04T14:51:10.115Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -18773,7 +20656,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceKind": "restaurant_association_directory",
       "sourceUrl": "https://rans.ca/restaurants/bicycle-thief-the/",
       "sourceUpdatedAt": "2025-06-06T15:48:32",
-      "observedAt": "2026-09-04T12:49:33.802Z",
+      "observedAt": "2026-09-04T14:51:11.966Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": true,
       "alreadyInCatalog": true
@@ -18800,7 +20683,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceKind": "restaurant_association_directory",
       "sourceUrl": "https://rans.ca/restaurants/starbucks-coffee-dartmouth-crossing-22/",
       "sourceUpdatedAt": "2024-08-22T18:54:39",
-      "observedAt": "2026-09-04T12:49:33.765Z",
+      "observedAt": "2026-09-04T14:51:11.585Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -18827,7 +20710,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceKind": "restaurant_association_directory",
       "sourceUrl": "https://rans.ca/restaurants/dominos-pizza-dartmouth/",
       "sourceUpdatedAt": "2024-08-22T18:54:00",
-      "observedAt": "2026-09-04T12:49:33.549Z",
+      "observedAt": "2026-09-04T14:51:11.582Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -18854,7 +20737,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceKind": "restaurant_association_directory",
       "sourceUrl": "https://rans.ca/restaurants/swiss-chalet-dartmouth-crossing-22/",
       "sourceUpdatedAt": "2024-08-22T18:53:59",
-      "observedAt": "2026-09-04T12:49:33.558Z",
+      "observedAt": "2026-09-04T14:51:11.637Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -18881,7 +20764,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceKind": "restaurant_association_directory",
       "sourceUrl": "https://rans.ca/restaurants/swiss-chalet-dartmouth-22/",
       "sourceUpdatedAt": "2024-08-22T18:53:59",
-      "observedAt": "2026-09-04T12:49:34.396Z",
+      "observedAt": "2026-09-04T14:51:11.616Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -18908,7 +20791,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceKind": "restaurant_association_directory",
       "sourceUrl": "https://rans.ca/restaurants/pizzadelic-dartmouth-burnside/",
       "sourceUpdatedAt": "2024-08-22T18:53:56",
-      "observedAt": "2026-09-04T12:49:38.575Z",
+      "observedAt": "2026-09-04T14:51:13.276Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -18935,7 +20818,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceKind": "restaurant_association_directory",
       "sourceUrl": "https://rans.ca/restaurants/pizzatown-dartmouth-22/",
       "sourceUpdatedAt": "2024-08-22T18:53:53",
-      "observedAt": "2026-09-04T12:49:38.667Z",
+      "observedAt": "2026-09-04T14:51:13.394Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -18962,7 +20845,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceKind": "restaurant_association_directory",
       "sourceUrl": "https://rans.ca/restaurants/mrs-vanellis-dartmouth-22/",
       "sourceUpdatedAt": "2024-08-22T18:53:51",
-      "observedAt": "2026-09-04T12:49:38.605Z",
+      "observedAt": "2026-09-04T14:51:13.317Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -18989,7 +20872,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceKind": "restaurant_association_directory",
       "sourceUrl": "https://rans.ca/restaurants/greco-pizza-dartmouth-westphal-22/",
       "sourceUpdatedAt": "2024-08-22T18:53:45",
-      "observedAt": "2026-09-04T12:49:38.488Z",
+      "observedAt": "2026-09-04T14:51:13.757Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -19016,7 +20899,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceKind": "restaurant_association_directory",
       "sourceUrl": "https://rans.ca/restaurants/manhattan-pizza-ltd-dartmouth-22/",
       "sourceUpdatedAt": "2024-08-22T18:53:39",
-      "observedAt": "2026-09-04T12:49:38.398Z",
+      "observedAt": "2026-09-04T14:51:13.319Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -19043,7 +20926,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceKind": "restaurant_association_directory",
       "sourceUrl": "https://rans.ca/restaurants/jessys-pizza-dartmouth-caledonia-road/",
       "sourceUpdatedAt": "2024-08-22T18:53:18",
-      "observedAt": "2026-09-04T12:49:42.649Z",
+      "observedAt": "2026-09-04T14:51:15.326Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -19070,7 +20953,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceKind": "restaurant_association_directory",
       "sourceUrl": "https://rans.ca/restaurants/jessys-pizza-dartmouth-wright-avenue-22/",
       "sourceUpdatedAt": "2024-08-22T18:53:17",
-      "observedAt": "2026-09-04T12:49:42.601Z",
+      "observedAt": "2026-09-04T14:51:15.315Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -19097,7 +20980,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceKind": "restaurant_association_directory",
       "sourceUrl": "https://rans.ca/restaurants/jessys-pizza-dartmouth-pleasant-street-22/",
       "sourceUpdatedAt": "2024-08-22T18:51:31",
-      "observedAt": "2026-09-04T12:49:42.686Z",
+      "observedAt": "2026-09-04T14:51:15.314Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -19126,7 +21009,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceKind": "restaurant_association_directory",
       "sourceUrl": "https://rans.ca/restaurants/smittys-family-restaurant-dartmouth/",
       "sourceUpdatedAt": "2024-08-22T18:34:23",
-      "observedAt": "2026-09-04T12:49:42.873Z",
+      "observedAt": "2026-09-04T14:51:15.427Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -19161,7 +21044,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceKind": "restaurant_association_directory",
       "sourceUrl": "https://rans.ca/restaurants/ela-greek-taverna-dartmouth-crossing/",
       "sourceUpdatedAt": "2025-06-06T18:24:44",
-      "observedAt": "2026-09-04T12:49:42.969Z",
+      "observedAt": "2026-09-04T14:51:15.521Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -19224,7 +21107,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceKind": "restaurant_association_directory",
       "sourceUrl": "https://rans.ca/restaurants/tilted-tap-bar-grill/",
       "sourceUpdatedAt": "2025-06-06T14:53:14",
-      "observedAt": "2026-09-04T12:49:47.512Z",
+      "observedAt": "2026-09-04T14:51:17.568Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -19262,7 +21145,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceKind": "restaurant_association_directory",
       "sourceUrl": "https://rans.ca/restaurants/spicehub-indian-kitchen/",
       "sourceUpdatedAt": "2024-06-18T21:17:52",
-      "observedAt": "2026-09-04T12:49:47.436Z",
+      "observedAt": "2026-09-04T14:51:17.382Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -19289,7 +21172,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceKind": "restaurant_association_directory",
       "sourceUrl": "https://rans.ca/restaurants/morris-east-bedford-west/",
       "sourceUpdatedAt": "2024-08-22T18:55:52",
-      "observedAt": "2026-09-04T12:49:46.946Z",
+      "observedAt": "2026-09-04T14:51:16.987Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -19316,7 +21199,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceKind": "restaurant_association_directory",
       "sourceUrl": "https://rans.ca/restaurants/swiss-chalet-bedford-place-mall-22/",
       "sourceUpdatedAt": "2024-08-22T18:53:58",
-      "observedAt": "2026-09-04T12:49:47.114Z",
+      "observedAt": "2026-09-04T14:51:17.052Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -19343,7 +21226,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceKind": "restaurant_association_directory",
       "sourceUrl": "https://rans.ca/restaurants/manhattan-pizza-ltd-bedford-22/",
       "sourceUpdatedAt": "2024-08-22T18:53:39",
-      "observedAt": "2026-09-04T12:49:46.931Z",
+      "observedAt": "2026-09-04T14:51:17.004Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -19370,7 +21253,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceKind": "restaurant_association_directory",
       "sourceUrl": "https://rans.ca/restaurants/jessys-pizza-bedford-22/",
       "sourceUpdatedAt": "2024-08-22T18:53:18",
-      "observedAt": "2026-09-04T12:49:51.353Z",
+      "observedAt": "2026-09-04T14:51:19.058Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -19397,7 +21280,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceKind": "restaurant_association_directory",
       "sourceUrl": "https://rans.ca/restaurants/coras-bedford-highway-22/",
       "sourceUpdatedAt": "2024-08-22T18:52:28",
-      "observedAt": "2026-09-04T12:49:51.598Z",
+      "observedAt": "2026-09-04T14:51:19.145Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -19424,7 +21307,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceKind": "restaurant_association_directory",
       "sourceUrl": "https://rans.ca/restaurants/subway-bedford-21876-22/",
       "sourceUpdatedAt": "2024-08-22T18:51:59",
-      "observedAt": "2026-09-04T12:49:51.599Z",
+      "observedAt": "2026-09-04T14:51:18.990Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -19451,7 +21334,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceKind": "restaurant_association_directory",
       "sourceUrl": "https://rans.ca/restaurants/subway-bedford-31052-22/",
       "sourceUpdatedAt": "2024-08-22T18:51:59",
-      "observedAt": "2026-09-04T12:49:51.435Z",
+      "observedAt": "2026-09-04T14:51:19.195Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -19478,7 +21361,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceKind": "restaurant_association_directory",
       "sourceUrl": "https://rans.ca/restaurants/starbucks-coffee-bedford-highway-22/",
       "sourceUpdatedAt": "2024-08-22T18:51:58",
-      "observedAt": "2026-09-04T12:49:51.343Z",
+      "observedAt": "2026-09-04T14:51:19.011Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -19505,7 +21388,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceKind": "restaurant_association_directory",
       "sourceUrl": "https://rans.ca/restaurants/may-garden-chinese-food-bedford-22/",
       "sourceUpdatedAt": "2024-08-22T18:35:56",
-      "observedAt": "2026-09-04T12:49:55.468Z",
+      "observedAt": "2026-09-04T14:51:20.541Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -19532,7 +21415,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceKind": "restaurant_association_directory",
       "sourceUrl": "https://rans.ca/restaurants/great-canadian-bagel-the-bedford-22/",
       "sourceUpdatedAt": "2024-08-22T18:35:31",
-      "observedAt": "2026-09-04T12:49:55.510Z",
+      "observedAt": "2026-09-04T14:51:20.727Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -19564,7 +21447,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceKind": "restaurant_association_directory",
       "sourceUrl": "https://rans.ca/restaurants/esquire-restaurant/",
       "sourceUpdatedAt": "2024-06-18T14:46:12",
-      "observedAt": "2026-09-04T12:49:55.628Z",
+      "observedAt": "2026-09-04T14:51:21.287Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -19591,7 +21474,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceKind": "restaurant_association_directory",
       "sourceUrl": "https://rans.ca/restaurants/taco-bell-lower-sackville-22/",
       "sourceUpdatedAt": "2024-08-22T18:54:53",
-      "observedAt": "2026-09-04T12:49:55.562Z",
+      "observedAt": "2026-09-04T14:51:20.563Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -19618,7 +21501,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceKind": "restaurant_association_directory",
       "sourceUrl": "https://rans.ca/restaurants/pizzadelic-lower-sackville/",
       "sourceUpdatedAt": "2024-08-22T18:53:56",
-      "observedAt": "2026-09-04T12:49:55.676Z",
+      "observedAt": "2026-09-04T14:51:20.627Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -19645,7 +21528,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceKind": "restaurant_association_directory",
       "sourceUrl": "https://rans.ca/restaurants/swiss-chalet-lower-sackville-22/",
       "sourceUpdatedAt": "2024-08-22T18:36:28",
-      "observedAt": "2026-09-04T12:49:59.435Z",
+      "observedAt": "2026-09-04T14:51:22.757Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -19672,7 +21555,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceKind": "restaurant_association_directory",
       "sourceUrl": "https://rans.ca/restaurants/freemans-sackville-22/",
       "sourceUpdatedAt": "2024-08-22T19:02:27",
-      "observedAt": "2026-09-04T12:49:59.415Z",
+      "observedAt": "2026-09-04T14:51:22.807Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -19699,7 +21582,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceKind": "restaurant_association_directory",
       "sourceUrl": "https://rans.ca/restaurants/kentucky-fried-chicken-sackville-22/",
       "sourceUpdatedAt": "2024-08-22T18:54:48",
-      "observedAt": "2026-09-04T12:49:59.469Z",
+      "observedAt": "2026-09-04T14:51:23.415Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -19726,7 +21609,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceKind": "restaurant_association_directory",
       "sourceUrl": "https://rans.ca/restaurants/pizzatown-sackville/",
       "sourceUpdatedAt": "2024-08-22T18:54:45",
-      "observedAt": "2026-09-04T12:49:59.345Z",
+      "observedAt": "2026-09-04T14:51:22.777Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -19753,7 +21636,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceKind": "restaurant_association_directory",
       "sourceUrl": "https://rans.ca/restaurants/boston-pizza-sackville-22/",
       "sourceUpdatedAt": "2024-08-22T18:52:21",
-      "observedAt": "2026-09-04T12:50:03.508Z",
+      "observedAt": "2026-09-04T14:51:24.892Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -19780,7 +21663,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceKind": "restaurant_association_directory",
       "sourceUrl": "https://rans.ca/restaurants/pizza-hut-sackville-dr-22/",
       "sourceUpdatedAt": "2024-08-22T18:36:10",
-      "observedAt": "2026-09-04T12:50:03.525Z",
+      "observedAt": "2026-09-04T14:51:24.931Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -19807,7 +21690,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceKind": "restaurant_association_directory",
       "sourceUrl": "https://rans.ca/restaurants/doolys-sackville-22/",
       "sourceUpdatedAt": "2024-08-22T18:35:17",
-      "observedAt": "2026-09-04T12:50:03.739Z",
+      "observedAt": "2026-09-04T14:51:24.851Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -19834,7 +21717,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceKind": "restaurant_association_directory",
       "sourceUrl": "https://rans.ca/restaurants/boston-pizza-bayers-lake-22/",
       "sourceUpdatedAt": "2024-08-22T18:52:22",
-      "observedAt": "2026-09-04T12:50:03.494Z",
+      "observedAt": "2026-09-04T14:51:25.025Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -19863,7 +21746,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceKind": "restaurant_association_directory",
       "sourceUrl": "https://rans.ca/restaurants/pizza-delight-bayers-lake-22/",
       "sourceUpdatedAt": "2024-08-22T18:36:09",
-      "observedAt": "2026-09-04T12:50:03.675Z",
+      "observedAt": "2026-09-04T14:51:24.909Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -19898,7 +21781,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceKind": "restaurant_association_directory",
       "sourceUrl": "https://rans.ca/restaurants/ela-greek-taverna-bayers-lake/",
       "sourceUpdatedAt": "2025-06-06T18:21:18",
-      "observedAt": "2026-09-04T12:50:09.066Z",
+      "observedAt": "2026-09-04T14:51:27.183Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -19925,7 +21808,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceKind": "restaurant_association_directory",
       "sourceUrl": "https://rans.ca/restaurants/dominos-pizza-clayton-park-22/",
       "sourceUpdatedAt": "2024-08-22T18:54:01",
-      "observedAt": "2026-09-04T12:50:07.899Z",
+      "observedAt": "2026-09-04T14:51:26.460Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -19952,7 +21835,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceKind": "restaurant_association_directory",
       "sourceUrl": "https://rans.ca/restaurants/pizzadelic-clayton-park/",
       "sourceUpdatedAt": "2024-08-22T18:53:57",
-      "observedAt": "2026-09-04T12:50:07.775Z",
+      "observedAt": "2026-09-04T14:51:26.526Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -19979,7 +21862,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceKind": "restaurant_association_directory",
       "sourceUrl": "https://rans.ca/restaurants/sushi-nami-royale-clayton-park-22/",
       "sourceUpdatedAt": "2024-08-22T18:53:02",
-      "observedAt": "2026-09-04T12:50:07.853Z",
+      "observedAt": "2026-09-04T14:51:26.478Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -20006,7 +21889,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceKind": "restaurant_association_directory",
       "sourceUrl": "https://rans.ca/restaurants/greco-pizza-captain-sub-clayton-park-22/",
       "sourceUpdatedAt": "2024-08-22T18:51:19",
-      "observedAt": "2026-09-04T12:50:07.933Z",
+      "observedAt": "2026-09-04T14:51:26.486Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -20038,7 +21921,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceKind": "restaurant_association_directory",
       "sourceUrl": "https://rans.ca/restaurants/vernons-thunderbird-diner/",
       "sourceUpdatedAt": "2025-07-23T19:58:40",
-      "observedAt": "2026-09-04T12:50:14.476Z",
+      "observedAt": "2026-09-04T14:51:28.796Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -20065,7 +21948,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceKind": "restaurant_association_directory",
       "sourceUrl": "https://rans.ca/restaurants/pizzadelic-fall-river/",
       "sourceUpdatedAt": "2024-08-22T18:53:58",
-      "observedAt": "2026-09-04T12:50:12.963Z",
+      "observedAt": "2026-09-04T14:51:28.629Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -20092,7 +21975,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceKind": "restaurant_association_directory",
       "sourceUrl": "https://rans.ca/restaurants/jessys-pizza-fall-river-22/",
       "sourceUpdatedAt": "2024-08-22T18:53:55",
-      "observedAt": "2026-09-04T12:50:12.945Z",
+      "observedAt": "2026-09-04T14:51:28.618Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -20121,7 +22004,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceKind": "restaurant_association_directory",
       "sourceUrl": "https://rans.ca/restaurants/gleneagle-gourmet-bakery-cole-harbour/",
       "sourceUpdatedAt": "2024-08-22T18:35:29",
-      "observedAt": "2026-09-04T12:50:13.126Z",
+      "observedAt": "2026-09-04T14:51:28.720Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -20148,7 +22031,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceKind": "restaurant_association_directory",
       "sourceUrl": "https://rans.ca/restaurants/timberlea-beverage-room-22/",
       "sourceUpdatedAt": "2024-08-22T18:36:32",
-      "observedAt": "2026-09-04T12:50:13.095Z",
+      "observedAt": "2026-09-04T14:51:28.608Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -20172,7 +22055,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Bayers Lake Business Directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://bayerslakepark.com/future-inns-halifax",
-      "observedAt": "2026-09-04T12:50:15.556Z",
+      "observedAt": "2026-09-04T14:51:29.873Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -20196,7 +22079,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Bayers Lake Business Directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://bayerslakepark.com/hobson-lake-cafe",
-      "observedAt": "2026-09-04T12:50:15.561Z",
+      "observedAt": "2026-09-04T14:51:29.887Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -20220,7 +22103,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Bayers Lake Business Directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://bayerslakepark.com/redwood-grill",
-      "observedAt": "2026-09-04T12:50:15.566Z",
+      "observedAt": "2026-09-04T14:51:29.908Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -20244,7 +22127,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Bayers Lake Business Directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://bayerslakepark.com/jungle-jims-eatery",
-      "observedAt": "2026-09-04T12:50:15.590Z",
+      "observedAt": "2026-09-04T14:51:29.885Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -20268,7 +22151,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Bayers Lake Business Directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://bayerslakepark.com/osmows-shawarma",
-      "observedAt": "2026-09-04T12:50:15.578Z",
+      "observedAt": "2026-09-04T14:51:29.877Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -20292,7 +22175,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Bayers Lake Business Directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://bayerslakepark.com/le-rouge-grill",
-      "observedAt": "2026-09-04T12:50:16.031Z",
+      "observedAt": "2026-09-04T14:51:30.395Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -20316,7 +22199,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Bayers Lake Business Directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://bayerslakepark.com/mizu-halifax",
-      "observedAt": "2026-09-04T12:50:16.006Z",
+      "observedAt": "2026-09-04T14:51:30.402Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -20340,7 +22223,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Bayers Lake Business Directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://bayerslakepark.com/boston-pizza",
-      "observedAt": "2026-09-04T12:50:16.019Z",
+      "observedAt": "2026-09-04T14:51:30.390Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": true,
       "alreadyInCatalog": true
@@ -20364,7 +22247,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Bayers Lake Business Directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://bayerslakepark.com/jack-astors-bar-and-grill",
-      "observedAt": "2026-09-04T12:50:16.001Z",
+      "observedAt": "2026-09-04T14:51:30.401Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -20388,7 +22271,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Bayers Lake Business Directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://bayerslakepark.com/dhaba-indian-restaurant",
-      "observedAt": "2026-09-04T12:50:16.005Z",
+      "observedAt": "2026-09-04T14:51:30.393Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -20409,7 +22292,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Dartmouth Business Commission Food & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://www.downtowndartmouth.ca/fooddrink",
-      "observedAt": "2026-09-04T12:50:16.240Z",
+      "observedAt": "2026-09-04T14:51:30.597Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": true,
       "alreadyInCatalog": true
@@ -20430,7 +22313,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Dartmouth Business Commission Food & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://www.downtowndartmouth.ca/fooddrink",
-      "observedAt": "2026-09-04T12:50:16.240Z",
+      "observedAt": "2026-09-04T14:51:30.597Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": true,
       "alreadyInCatalog": true
@@ -20457,7 +22340,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Dartmouth Business Commission Food & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://www.downtowndartmouth.ca/fooddrink",
-      "observedAt": "2026-09-04T12:50:16.241Z",
+      "observedAt": "2026-09-04T14:51:30.597Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -20485,7 +22368,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Dartmouth Business Commission Food & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://www.downtowndartmouth.ca/fooddrink",
-      "observedAt": "2026-09-04T12:50:16.241Z",
+      "observedAt": "2026-09-04T14:51:30.597Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -20506,7 +22389,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Dartmouth Business Commission Food & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://www.downtowndartmouth.ca/fooddrink",
-      "observedAt": "2026-09-04T12:50:16.241Z",
+      "observedAt": "2026-09-04T14:51:30.597Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -20533,7 +22416,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Dartmouth Business Commission Food & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://www.downtowndartmouth.ca/fooddrink",
-      "observedAt": "2026-09-04T12:50:16.241Z",
+      "observedAt": "2026-09-04T14:51:30.597Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": true,
       "alreadyInCatalog": true
@@ -20554,7 +22437,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Dartmouth Business Commission Food & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://www.downtowndartmouth.ca/fooddrink",
-      "observedAt": "2026-09-04T12:50:16.241Z",
+      "observedAt": "2026-09-04T14:51:30.597Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": true,
       "alreadyInCatalog": true
@@ -20575,7 +22458,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Dartmouth Business Commission Food & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://www.downtowndartmouth.ca/fooddrink",
-      "observedAt": "2026-09-04T12:50:16.241Z",
+      "observedAt": "2026-09-04T14:51:30.597Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": true,
       "alreadyInCatalog": true
@@ -20596,7 +22479,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Dartmouth Business Commission Food & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://www.downtowndartmouth.ca/fooddrink",
-      "observedAt": "2026-09-04T12:50:16.241Z",
+      "observedAt": "2026-09-04T14:51:30.597Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": true,
       "alreadyInCatalog": true
@@ -20617,7 +22500,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Dartmouth Business Commission Food & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://www.downtowndartmouth.ca/fooddrink",
-      "observedAt": "2026-09-04T12:50:16.241Z",
+      "observedAt": "2026-09-04T14:51:30.597Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -20644,7 +22527,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Dartmouth Business Commission Food & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://www.downtowndartmouth.ca/fooddrink",
-      "observedAt": "2026-09-04T12:50:16.241Z",
+      "observedAt": "2026-09-04T14:51:30.597Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": true,
       "alreadyInCatalog": true
@@ -20665,7 +22548,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Dartmouth Business Commission Food & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://www.downtowndartmouth.ca/fooddrink",
-      "observedAt": "2026-09-04T12:50:16.241Z",
+      "observedAt": "2026-09-04T14:51:30.597Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": true,
       "alreadyInCatalog": true
@@ -20686,7 +22569,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Dartmouth Business Commission Food & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://www.downtowndartmouth.ca/fooddrink",
-      "observedAt": "2026-09-04T12:50:16.241Z",
+      "observedAt": "2026-09-04T14:51:30.597Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -20707,7 +22590,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Dartmouth Business Commission Food & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://www.downtowndartmouth.ca/fooddrink",
-      "observedAt": "2026-09-04T12:50:16.241Z",
+      "observedAt": "2026-09-04T14:51:30.597Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": true,
       "alreadyInCatalog": true
@@ -20728,7 +22611,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Dartmouth Business Commission Food & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://www.downtowndartmouth.ca/fooddrink",
-      "observedAt": "2026-09-04T12:50:16.241Z",
+      "observedAt": "2026-09-04T14:51:30.597Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": true,
       "alreadyInCatalog": true
@@ -20749,7 +22632,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Dartmouth Business Commission Food & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://www.downtowndartmouth.ca/fooddrink",
-      "observedAt": "2026-09-04T12:50:16.241Z",
+      "observedAt": "2026-09-04T14:51:30.598Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": true,
       "alreadyInCatalog": true
@@ -20776,7 +22659,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Dartmouth Business Commission Food & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://www.downtowndartmouth.ca/fooddrink",
-      "observedAt": "2026-09-04T12:50:16.241Z",
+      "observedAt": "2026-09-04T14:51:30.598Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -20797,7 +22680,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Dartmouth Business Commission Food & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://www.downtowndartmouth.ca/fooddrink",
-      "observedAt": "2026-09-04T12:50:16.241Z",
+      "observedAt": "2026-09-04T14:51:30.598Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -20818,7 +22701,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Dartmouth Business Commission Food & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://www.downtowndartmouth.ca/fooddrink",
-      "observedAt": "2026-09-04T12:50:16.242Z",
+      "observedAt": "2026-09-04T14:51:30.598Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": true,
       "alreadyInCatalog": true
@@ -20839,7 +22722,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Dartmouth Business Commission Food & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://www.downtowndartmouth.ca/fooddrink",
-      "observedAt": "2026-09-04T12:50:16.242Z",
+      "observedAt": "2026-09-04T14:51:30.598Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -20860,7 +22743,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Dartmouth Business Commission Food & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://www.downtowndartmouth.ca/fooddrink",
-      "observedAt": "2026-09-04T12:50:16.242Z",
+      "observedAt": "2026-09-04T14:51:30.598Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -20881,7 +22764,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Dartmouth Business Commission Food & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://www.downtowndartmouth.ca/fooddrink",
-      "observedAt": "2026-09-04T12:50:16.242Z",
+      "observedAt": "2026-09-04T14:51:30.598Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": true,
       "alreadyInCatalog": true
@@ -20902,7 +22785,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Dartmouth Business Commission Food & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://www.downtowndartmouth.ca/fooddrink",
-      "observedAt": "2026-09-04T12:50:16.242Z",
+      "observedAt": "2026-09-04T14:51:30.598Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -20923,7 +22806,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Dartmouth Business Commission Food & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://www.downtowndartmouth.ca/fooddrink",
-      "observedAt": "2026-09-04T12:50:16.242Z",
+      "observedAt": "2026-09-04T14:51:30.598Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": true,
       "alreadyInCatalog": true
@@ -20944,7 +22827,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Dartmouth Business Commission Food & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://www.downtowndartmouth.ca/fooddrink",
-      "observedAt": "2026-09-04T12:50:16.242Z",
+      "observedAt": "2026-09-04T14:51:30.598Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": true,
       "alreadyInCatalog": true
@@ -20971,7 +22854,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Dartmouth Business Commission Food & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://www.downtowndartmouth.ca/fooddrink",
-      "observedAt": "2026-09-04T12:50:16.242Z",
+      "observedAt": "2026-09-04T14:51:30.598Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -20992,7 +22875,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Dartmouth Business Commission Food & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://www.downtowndartmouth.ca/fooddrink",
-      "observedAt": "2026-09-04T12:50:16.242Z",
+      "observedAt": "2026-09-04T14:51:30.598Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -21013,7 +22896,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Dartmouth Business Commission Food & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://www.downtowndartmouth.ca/fooddrink",
-      "observedAt": "2026-09-04T12:50:16.242Z",
+      "observedAt": "2026-09-04T14:51:30.598Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": true,
       "alreadyInCatalog": true
@@ -21034,7 +22917,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Dartmouth Business Commission Food & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://www.downtowndartmouth.ca/fooddrink",
-      "observedAt": "2026-09-04T12:50:16.242Z",
+      "observedAt": "2026-09-04T14:51:30.598Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": true,
       "alreadyInCatalog": true
@@ -21061,7 +22944,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Dartmouth Business Commission Food & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://www.downtowndartmouth.ca/fooddrink",
-      "observedAt": "2026-09-04T12:50:16.242Z",
+      "observedAt": "2026-09-04T14:51:30.598Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -21088,7 +22971,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Dartmouth Business Commission Food & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://www.downtowndartmouth.ca/fooddrink",
-      "observedAt": "2026-09-04T12:50:16.242Z",
+      "observedAt": "2026-09-04T14:51:30.598Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -21109,7 +22992,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Dartmouth Business Commission Food & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://www.downtowndartmouth.ca/fooddrink",
-      "observedAt": "2026-09-04T12:50:16.242Z",
+      "observedAt": "2026-09-04T14:51:30.598Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -21130,7 +23013,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Dartmouth Business Commission Food & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://www.downtowndartmouth.ca/fooddrink",
-      "observedAt": "2026-09-04T12:50:16.242Z",
+      "observedAt": "2026-09-04T14:51:30.598Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": true,
       "alreadyInCatalog": true
@@ -21151,7 +23034,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Dartmouth Business Commission Food & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://www.downtowndartmouth.ca/fooddrink",
-      "observedAt": "2026-09-04T12:50:16.242Z",
+      "observedAt": "2026-09-04T14:51:30.598Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -21172,7 +23055,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Dartmouth Business Commission Food & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://www.downtowndartmouth.ca/fooddrink",
-      "observedAt": "2026-09-04T12:50:16.242Z",
+      "observedAt": "2026-09-04T14:51:30.598Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -21193,7 +23076,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Dartmouth Business Commission Food & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://www.downtowndartmouth.ca/fooddrink",
-      "observedAt": "2026-09-04T12:50:16.242Z",
+      "observedAt": "2026-09-04T14:51:30.598Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": true,
       "alreadyInCatalog": true
@@ -21214,7 +23097,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Dartmouth Business Commission Food & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://www.downtowndartmouth.ca/fooddrink",
-      "observedAt": "2026-09-04T12:50:16.242Z",
+      "observedAt": "2026-09-04T14:51:30.599Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": true,
       "alreadyInCatalog": true
@@ -21241,7 +23124,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Dartmouth Business Commission Food & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://www.downtowndartmouth.ca/fooddrink",
-      "observedAt": "2026-09-04T12:50:16.242Z",
+      "observedAt": "2026-09-04T14:51:30.599Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -21262,7 +23145,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Dartmouth Business Commission Food & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://www.downtowndartmouth.ca/fooddrink",
-      "observedAt": "2026-09-04T12:50:16.243Z",
+      "observedAt": "2026-09-04T14:51:30.599Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": true,
       "alreadyInCatalog": true
@@ -21294,7 +23177,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Dartmouth Business Commission Food & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://www.downtowndartmouth.ca/fooddrink",
-      "observedAt": "2026-09-04T12:50:16.243Z",
+      "observedAt": "2026-09-04T14:51:30.599Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -21315,7 +23198,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Dartmouth Business Commission Food & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://www.downtowndartmouth.ca/fooddrink",
-      "observedAt": "2026-09-04T12:50:16.243Z",
+      "observedAt": "2026-09-04T14:51:30.599Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": true,
       "alreadyInCatalog": true
@@ -21336,7 +23219,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Dartmouth Business Commission Food & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://www.downtowndartmouth.ca/fooddrink",
-      "observedAt": "2026-09-04T12:50:16.243Z",
+      "observedAt": "2026-09-04T14:51:30.599Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": true,
       "alreadyInCatalog": true
@@ -21357,7 +23240,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Dartmouth Business Commission Food & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://www.downtowndartmouth.ca/fooddrink",
-      "observedAt": "2026-09-04T12:50:16.243Z",
+      "observedAt": "2026-09-04T14:51:30.599Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -21378,7 +23261,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Dartmouth Business Commission Food & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://www.downtowndartmouth.ca/fooddrink",
-      "observedAt": "2026-09-04T12:50:16.243Z",
+      "observedAt": "2026-09-04T14:51:30.599Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": true,
       "alreadyInCatalog": true
@@ -21399,7 +23282,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Dartmouth Business Commission Food & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://www.downtowndartmouth.ca/fooddrink",
-      "observedAt": "2026-09-04T12:50:16.243Z",
+      "observedAt": "2026-09-04T14:51:30.599Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -21420,7 +23303,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Dartmouth Business Commission Food & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://www.downtowndartmouth.ca/fooddrink",
-      "observedAt": "2026-09-04T12:50:16.243Z",
+      "observedAt": "2026-09-04T14:51:30.599Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -21447,7 +23330,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Dartmouth Business Commission Food & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://www.downtowndartmouth.ca/fooddrink",
-      "observedAt": "2026-09-04T12:50:16.243Z",
+      "observedAt": "2026-09-04T14:51:30.599Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": true,
       "alreadyInCatalog": true
@@ -21489,7 +23372,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Downtown Dartmouth Business Commission Food & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://www.downtowndartmouth.ca/fooddrink",
-      "observedAt": "2026-09-04T12:50:16.244Z",
+      "observedAt": "2026-09-04T14:51:30.600Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": true,
       "alreadyInCatalog": true
@@ -21516,7 +23399,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Spring Garden Area Business Association Eat & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://www.springgardenarea.com/eat-drink",
-      "observedAt": "2026-09-04T12:50:16.458Z",
+      "observedAt": "2026-09-04T14:51:30.775Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -21537,7 +23420,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Spring Garden Area Business Association Eat & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://www.springgardenarea.com/eat-drink",
-      "observedAt": "2026-09-04T12:50:16.458Z",
+      "observedAt": "2026-09-04T14:51:30.775Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -21558,7 +23441,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Spring Garden Area Business Association Eat & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://www.springgardenarea.com/eat-drink",
-      "observedAt": "2026-09-04T12:50:16.458Z",
+      "observedAt": "2026-09-04T14:51:30.775Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -21579,7 +23462,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Spring Garden Area Business Association Eat & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://www.springgardenarea.com/eat-drink",
-      "observedAt": "2026-09-04T12:50:16.458Z",
+      "observedAt": "2026-09-04T14:51:30.775Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -21600,7 +23483,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Spring Garden Area Business Association Eat & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://www.springgardenarea.com/eat-drink",
-      "observedAt": "2026-09-04T12:50:16.458Z",
+      "observedAt": "2026-09-04T14:51:30.775Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": true,
       "alreadyInCatalog": true
@@ -21621,7 +23504,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Spring Garden Area Business Association Eat & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://www.springgardenarea.com/eat-drink",
-      "observedAt": "2026-09-04T12:50:16.459Z",
+      "observedAt": "2026-09-04T14:51:30.775Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -21642,7 +23525,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Spring Garden Area Business Association Eat & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://www.springgardenarea.com/eat-drink",
-      "observedAt": "2026-09-04T12:50:16.459Z",
+      "observedAt": "2026-09-04T14:51:30.775Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -21663,7 +23546,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Spring Garden Area Business Association Eat & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://www.springgardenarea.com/eat-drink",
-      "observedAt": "2026-09-04T12:50:16.459Z",
+      "observedAt": "2026-09-04T14:51:30.775Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": true,
       "alreadyInCatalog": true
@@ -21684,7 +23567,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Spring Garden Area Business Association Eat & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://www.springgardenarea.com/eat-drink",
-      "observedAt": "2026-09-04T12:50:16.459Z",
+      "observedAt": "2026-09-04T14:51:30.775Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": true,
       "alreadyInCatalog": true
@@ -21705,7 +23588,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Spring Garden Area Business Association Eat & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://www.springgardenarea.com/eat-drink",
-      "observedAt": "2026-09-04T12:50:16.459Z",
+      "observedAt": "2026-09-04T14:51:30.775Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -21732,7 +23615,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Spring Garden Area Business Association Eat & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://www.springgardenarea.com/eat-drink",
-      "observedAt": "2026-09-04T12:50:16.459Z",
+      "observedAt": "2026-09-04T14:51:30.775Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -21753,7 +23636,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Spring Garden Area Business Association Eat & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://www.springgardenarea.com/eat-drink",
-      "observedAt": "2026-09-04T12:50:16.459Z",
+      "observedAt": "2026-09-04T14:51:30.775Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -21774,7 +23657,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Spring Garden Area Business Association Eat & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://www.springgardenarea.com/eat-drink",
-      "observedAt": "2026-09-04T12:50:16.459Z",
+      "observedAt": "2026-09-04T14:51:30.775Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -21795,7 +23678,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Spring Garden Area Business Association Eat & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://www.springgardenarea.com/eat-drink",
-      "observedAt": "2026-09-04T12:50:16.459Z",
+      "observedAt": "2026-09-04T14:51:30.775Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -21816,7 +23699,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Spring Garden Area Business Association Eat & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://www.springgardenarea.com/eat-drink",
-      "observedAt": "2026-09-04T12:50:16.459Z",
+      "observedAt": "2026-09-04T14:51:30.775Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": true,
       "alreadyInCatalog": true
@@ -21843,7 +23726,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Spring Garden Area Business Association Eat & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://www.springgardenarea.com/eat-drink",
-      "observedAt": "2026-09-04T12:50:16.459Z",
+      "observedAt": "2026-09-04T14:51:30.775Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -21864,7 +23747,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Spring Garden Area Business Association Eat & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://www.springgardenarea.com/eat-drink",
-      "observedAt": "2026-09-04T12:50:16.459Z",
+      "observedAt": "2026-09-04T14:51:30.775Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -21892,7 +23775,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Spring Garden Area Business Association Eat & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://www.springgardenarea.com/eat-drink",
-      "observedAt": "2026-09-04T12:50:16.459Z",
+      "observedAt": "2026-09-04T14:51:30.776Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -21913,7 +23796,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Spring Garden Area Business Association Eat & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://www.springgardenarea.com/eat-drink",
-      "observedAt": "2026-09-04T12:50:16.459Z",
+      "observedAt": "2026-09-04T14:51:30.776Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": true,
       "alreadyInCatalog": true
@@ -21934,7 +23817,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Spring Garden Area Business Association Eat & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://www.springgardenarea.com/eat-drink",
-      "observedAt": "2026-09-04T12:50:16.459Z",
+      "observedAt": "2026-09-04T14:51:30.776Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": true,
       "alreadyInCatalog": true
@@ -21955,7 +23838,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Spring Garden Area Business Association Eat & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://www.springgardenarea.com/eat-drink",
-      "observedAt": "2026-09-04T12:50:16.459Z",
+      "observedAt": "2026-09-04T14:51:30.776Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -21982,7 +23865,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Spring Garden Area Business Association Eat & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://www.springgardenarea.com/eat-drink",
-      "observedAt": "2026-09-04T12:50:16.459Z",
+      "observedAt": "2026-09-04T14:51:30.776Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -22003,7 +23886,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Spring Garden Area Business Association Eat & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://www.springgardenarea.com/eat-drink",
-      "observedAt": "2026-09-04T12:50:16.459Z",
+      "observedAt": "2026-09-04T14:51:30.776Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -22024,7 +23907,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Spring Garden Area Business Association Eat & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://www.springgardenarea.com/eat-drink",
-      "observedAt": "2026-09-04T12:50:16.459Z",
+      "observedAt": "2026-09-04T14:51:30.776Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -22051,7 +23934,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Spring Garden Area Business Association Eat & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://www.springgardenarea.com/eat-drink",
-      "observedAt": "2026-09-04T12:50:16.459Z",
+      "observedAt": "2026-09-04T14:51:30.776Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -22072,7 +23955,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Spring Garden Area Business Association Eat & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://www.springgardenarea.com/eat-drink",
-      "observedAt": "2026-09-04T12:50:16.459Z",
+      "observedAt": "2026-09-04T14:51:30.776Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -22099,7 +23982,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Spring Garden Area Business Association Eat & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://www.springgardenarea.com/eat-drink",
-      "observedAt": "2026-09-04T12:50:16.459Z",
+      "observedAt": "2026-09-04T14:51:30.776Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": true,
       "alreadyInCatalog": true
@@ -22120,7 +24003,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Spring Garden Area Business Association Eat & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://www.springgardenarea.com/eat-drink",
-      "observedAt": "2026-09-04T12:50:16.459Z",
+      "observedAt": "2026-09-04T14:51:30.776Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -22141,7 +24024,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Spring Garden Area Business Association Eat & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://www.springgardenarea.com/eat-drink",
-      "observedAt": "2026-09-04T12:50:16.459Z",
+      "observedAt": "2026-09-04T14:51:30.776Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -22162,7 +24045,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Spring Garden Area Business Association Eat & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://www.springgardenarea.com/eat-drink",
-      "observedAt": "2026-09-04T12:50:16.459Z",
+      "observedAt": "2026-09-04T14:51:30.776Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": true,
       "alreadyInCatalog": true
@@ -22183,7 +24066,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Spring Garden Area Business Association Eat & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://www.springgardenarea.com/eat-drink",
-      "observedAt": "2026-09-04T12:50:16.459Z",
+      "observedAt": "2026-09-04T14:51:30.776Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": true,
       "alreadyInCatalog": true
@@ -22211,7 +24094,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Spring Garden Area Business Association Eat & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://www.springgardenarea.com/eat-drink",
-      "observedAt": "2026-09-04T12:50:16.459Z",
+      "observedAt": "2026-09-04T14:51:30.776Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -22238,7 +24121,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Spring Garden Area Business Association Eat & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://www.springgardenarea.com/eat-drink",
-      "observedAt": "2026-09-04T12:50:16.459Z",
+      "observedAt": "2026-09-04T14:51:30.776Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -22259,7 +24142,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Spring Garden Area Business Association Eat & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://www.springgardenarea.com/eat-drink",
-      "observedAt": "2026-09-04T12:50:16.459Z",
+      "observedAt": "2026-09-04T14:51:30.776Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": true,
       "alreadyInCatalog": true
@@ -22280,7 +24163,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Spring Garden Area Business Association Eat & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://www.springgardenarea.com/eat-drink",
-      "observedAt": "2026-09-04T12:50:16.459Z",
+      "observedAt": "2026-09-04T14:51:30.776Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": true,
       "alreadyInCatalog": true
@@ -22301,7 +24184,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Spring Garden Area Business Association Eat & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://www.springgardenarea.com/eat-drink",
-      "observedAt": "2026-09-04T12:50:16.459Z",
+      "observedAt": "2026-09-04T14:51:30.776Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -22322,7 +24205,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Spring Garden Area Business Association Eat & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://www.springgardenarea.com/eat-drink",
-      "observedAt": "2026-09-04T12:50:16.459Z",
+      "observedAt": "2026-09-04T14:51:30.776Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -22343,7 +24226,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Spring Garden Area Business Association Eat & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://www.springgardenarea.com/eat-drink",
-      "observedAt": "2026-09-04T12:50:16.459Z",
+      "observedAt": "2026-09-04T14:51:30.776Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -22364,7 +24247,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Spring Garden Area Business Association Eat & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://www.springgardenarea.com/eat-drink",
-      "observedAt": "2026-09-04T12:50:16.459Z",
+      "observedAt": "2026-09-04T14:51:30.776Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -22391,7 +24274,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Spring Garden Area Business Association Eat & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://www.springgardenarea.com/eat-drink",
-      "observedAt": "2026-09-04T12:50:16.459Z",
+      "observedAt": "2026-09-04T14:51:30.776Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -22412,7 +24295,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Spring Garden Area Business Association Eat & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://www.springgardenarea.com/eat-drink",
-      "observedAt": "2026-09-04T12:50:16.459Z",
+      "observedAt": "2026-09-04T14:51:30.776Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": true,
       "alreadyInCatalog": true
@@ -22433,7 +24316,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Spring Garden Area Business Association Eat & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://www.springgardenarea.com/eat-drink",
-      "observedAt": "2026-09-04T12:50:16.460Z",
+      "observedAt": "2026-09-04T14:51:30.776Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -22454,7 +24337,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Spring Garden Area Business Association Eat & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://www.springgardenarea.com/eat-drink",
-      "observedAt": "2026-09-04T12:50:16.460Z",
+      "observedAt": "2026-09-04T14:51:30.776Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -22481,7 +24364,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Spring Garden Area Business Association Eat & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://www.springgardenarea.com/eat-drink",
-      "observedAt": "2026-09-04T12:50:16.460Z",
+      "observedAt": "2026-09-04T14:51:30.776Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -22508,7 +24391,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Spring Garden Area Business Association Eat & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://www.springgardenarea.com/eat-drink",
-      "observedAt": "2026-09-04T12:50:16.460Z",
+      "observedAt": "2026-09-04T14:51:30.776Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -22529,7 +24412,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Spring Garden Area Business Association Eat & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://www.springgardenarea.com/eat-drink",
-      "observedAt": "2026-09-04T12:50:16.460Z",
+      "observedAt": "2026-09-04T14:51:30.776Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -22556,7 +24439,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Spring Garden Area Business Association Eat & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://www.springgardenarea.com/eat-drink",
-      "observedAt": "2026-09-04T12:50:16.460Z",
+      "observedAt": "2026-09-04T14:51:30.776Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": true,
       "alreadyInCatalog": true
@@ -22583,7 +24466,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Spring Garden Area Business Association Eat & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://www.springgardenarea.com/eat-drink",
-      "observedAt": "2026-09-04T12:50:16.460Z",
+      "observedAt": "2026-09-04T14:51:30.776Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -22604,7 +24487,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Spring Garden Area Business Association Eat & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://www.springgardenarea.com/eat-drink",
-      "observedAt": "2026-09-04T12:50:16.460Z",
+      "observedAt": "2026-09-04T14:51:30.776Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": true,
       "alreadyInCatalog": true
@@ -22625,7 +24508,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Spring Garden Area Business Association Eat & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://www.springgardenarea.com/eat-drink",
-      "observedAt": "2026-09-04T12:50:16.460Z",
+      "observedAt": "2026-09-04T14:51:30.776Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": true,
       "alreadyInCatalog": true
@@ -22652,7 +24535,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Spring Garden Area Business Association Eat & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://www.springgardenarea.com/eat-drink",
-      "observedAt": "2026-09-04T12:50:16.460Z",
+      "observedAt": "2026-09-04T14:51:30.776Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": true,
       "alreadyInCatalog": true
@@ -22673,7 +24556,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Spring Garden Area Business Association Eat & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://www.springgardenarea.com/eat-drink",
-      "observedAt": "2026-09-04T12:50:16.460Z",
+      "observedAt": "2026-09-04T14:51:30.776Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -22694,7 +24577,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Spring Garden Area Business Association Eat & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://www.springgardenarea.com/eat-drink",
-      "observedAt": "2026-09-04T12:50:16.460Z",
+      "observedAt": "2026-09-04T14:51:30.776Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -22721,7 +24604,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Spring Garden Area Business Association Eat & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://www.springgardenarea.com/eat-drink",
-      "observedAt": "2026-09-04T12:50:16.460Z",
+      "observedAt": "2026-09-04T14:51:30.776Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -22742,7 +24625,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Spring Garden Area Business Association Eat & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://www.springgardenarea.com/eat-drink",
-      "observedAt": "2026-09-04T12:50:16.460Z",
+      "observedAt": "2026-09-04T14:51:30.777Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -22763,7 +24646,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Spring Garden Area Business Association Eat & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://www.springgardenarea.com/eat-drink",
-      "observedAt": "2026-09-04T12:50:16.460Z",
+      "observedAt": "2026-09-04T14:51:30.777Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -22784,7 +24667,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Spring Garden Area Business Association Eat & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://www.springgardenarea.com/eat-drink",
-      "observedAt": "2026-09-04T12:50:16.460Z",
+      "observedAt": "2026-09-04T14:51:30.777Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -22812,7 +24695,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Spring Garden Area Business Association Eat & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://www.springgardenarea.com/eat-drink",
-      "observedAt": "2026-09-04T12:50:16.460Z",
+      "observedAt": "2026-09-04T14:51:30.777Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -22839,7 +24722,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Spring Garden Area Business Association Eat & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://www.springgardenarea.com/eat-drink",
-      "observedAt": "2026-09-04T12:50:16.460Z",
+      "observedAt": "2026-09-04T14:51:30.777Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -22860,7 +24743,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Spring Garden Area Business Association Eat & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://www.springgardenarea.com/eat-drink",
-      "observedAt": "2026-09-04T12:50:16.460Z",
+      "observedAt": "2026-09-04T14:51:30.777Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": true,
       "alreadyInCatalog": true
@@ -22881,7 +24764,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Spring Garden Area Business Association Eat & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://www.springgardenarea.com/eat-drink",
-      "observedAt": "2026-09-04T12:50:16.460Z",
+      "observedAt": "2026-09-04T14:51:30.777Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": true,
       "alreadyInCatalog": true
@@ -22902,7 +24785,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Spring Garden Area Business Association Eat & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://www.springgardenarea.com/eat-drink",
-      "observedAt": "2026-09-04T12:50:16.460Z",
+      "observedAt": "2026-09-04T14:51:30.777Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": true,
       "alreadyInCatalog": true
@@ -22923,7 +24806,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Spring Garden Area Business Association Eat & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://www.springgardenarea.com/eat-drink",
-      "observedAt": "2026-09-04T12:50:16.460Z",
+      "observedAt": "2026-09-04T14:51:30.777Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": true,
       "alreadyInCatalog": true
@@ -22944,7 +24827,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Spring Garden Area Business Association Eat & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://www.springgardenarea.com/eat-drink",
-      "observedAt": "2026-09-04T12:50:16.460Z",
+      "observedAt": "2026-09-04T14:51:30.777Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": true,
       "alreadyInCatalog": true
@@ -22965,7 +24848,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Spring Garden Area Business Association Eat & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://www.springgardenarea.com/eat-drink",
-      "observedAt": "2026-09-04T12:50:16.460Z",
+      "observedAt": "2026-09-04T14:51:30.777Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -22986,7 +24869,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Spring Garden Area Business Association Eat & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://www.springgardenarea.com/eat-drink",
-      "observedAt": "2026-09-04T12:50:16.460Z",
+      "observedAt": "2026-09-04T14:51:30.777Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": true,
       "alreadyInCatalog": true
@@ -23007,7 +24890,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Spring Garden Area Business Association Eat & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://www.springgardenarea.com/eat-drink",
-      "observedAt": "2026-09-04T12:50:16.460Z",
+      "observedAt": "2026-09-04T14:51:30.777Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": true,
       "alreadyInCatalog": true
@@ -23028,7 +24911,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Spring Garden Area Business Association Eat & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://www.springgardenarea.com/eat-drink",
-      "observedAt": "2026-09-04T12:50:16.460Z",
+      "observedAt": "2026-09-04T14:51:30.777Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": true,
       "alreadyInCatalog": true
@@ -23049,7 +24932,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Spring Garden Area Business Association Eat & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://www.springgardenarea.com/eat-drink",
-      "observedAt": "2026-09-04T12:50:16.460Z",
+      "observedAt": "2026-09-04T14:51:30.777Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -23077,7 +24960,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Spring Garden Area Business Association Eat & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://www.springgardenarea.com/eat-drink",
-      "observedAt": "2026-09-04T12:50:16.460Z",
+      "observedAt": "2026-09-04T14:51:30.777Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -23104,7 +24987,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Spring Garden Area Business Association Eat & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://www.springgardenarea.com/eat-drink",
-      "observedAt": "2026-09-04T12:50:16.460Z",
+      "observedAt": "2026-09-04T14:51:30.777Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -23125,7 +25008,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Spring Garden Area Business Association Eat & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://www.springgardenarea.com/eat-drink",
-      "observedAt": "2026-09-04T12:50:16.460Z",
+      "observedAt": "2026-09-04T14:51:30.777Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -23152,7 +25035,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Spring Garden Area Business Association Eat & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://www.springgardenarea.com/eat-drink",
-      "observedAt": "2026-09-04T12:50:16.460Z",
+      "observedAt": "2026-09-04T14:51:30.777Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -23173,7 +25056,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Spring Garden Area Business Association Eat & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://www.springgardenarea.com/eat-drink",
-      "observedAt": "2026-09-04T12:50:16.460Z",
+      "observedAt": "2026-09-04T14:51:30.777Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -23200,7 +25083,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Spring Garden Area Business Association Eat & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://www.springgardenarea.com/eat-drink",
-      "observedAt": "2026-09-04T12:50:16.460Z",
+      "observedAt": "2026-09-04T14:51:30.777Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -23221,7 +25104,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Spring Garden Area Business Association Eat & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://www.springgardenarea.com/eat-drink",
-      "observedAt": "2026-09-04T12:50:16.460Z",
+      "observedAt": "2026-09-04T14:51:30.777Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -23242,7 +25125,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Spring Garden Area Business Association Eat & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://www.springgardenarea.com/eat-drink",
-      "observedAt": "2026-09-04T12:50:16.460Z",
+      "observedAt": "2026-09-04T14:51:30.777Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": true,
       "alreadyInCatalog": true
@@ -23263,7 +25146,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Spring Garden Area Business Association Eat & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://www.springgardenarea.com/eat-drink",
-      "observedAt": "2026-09-04T12:50:16.460Z",
+      "observedAt": "2026-09-04T14:51:30.777Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -23284,7 +25167,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Spring Garden Area Business Association Eat & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://www.springgardenarea.com/eat-drink",
-      "observedAt": "2026-09-04T12:50:16.460Z",
+      "observedAt": "2026-09-04T14:51:30.777Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -23305,7 +25188,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Spring Garden Area Business Association Eat & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://www.springgardenarea.com/eat-drink",
-      "observedAt": "2026-09-04T12:50:16.460Z",
+      "observedAt": "2026-09-04T14:51:30.777Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": true,
       "alreadyInCatalog": true
@@ -23332,7 +25215,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Spring Garden Area Business Association Eat & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://www.springgardenarea.com/eat-drink",
-      "observedAt": "2026-09-04T12:50:16.460Z",
+      "observedAt": "2026-09-04T14:51:30.777Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false
@@ -23364,7 +25247,7 @@ window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = {
       "sourceName": "Spring Garden Area Business Association Eat & Drink directory",
       "sourceKind": "business_improvement_district_directory",
       "sourceUrl": "https://www.springgardenarea.com/eat-drink",
-      "observedAt": "2026-09-04T12:50:16.460Z",
+      "observedAt": "2026-09-04T14:51:30.777Z",
       "reviewState": "directory-listed",
       "alreadyInCatalogByName": false,
       "alreadyInCatalog": false

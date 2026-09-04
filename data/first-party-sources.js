@@ -1,9 +1,9 @@
 window.HALIFAX_FIRST_PARTY_SOURCES = {
   "version": 3,
-  "generatedAt": "2026-09-04T12:51:47.588Z",
+  "generatedAt": "2026-09-04T13:34:13.421Z",
   "platformRegistryVersion": 1,
   "checkedWebsites": 241,
-  "failedWebsites": 66,
+  "failedWebsites": 65,
   "hostGroups": 234,
   "concurrency": 12,
   "ownedPageLimit": 5,
@@ -21,9 +21,9 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
   },
   "linkHubCount": 0,
   "linkHubCounts": {},
-  "relatedLinkCount": 748,
+  "relatedLinkCount": 758,
   "relatedKindCounts": {
-    "menu": 479,
+    "menu": 489,
     "reservations": 75,
     "ordering": 117,
     "events": 70,
@@ -51,15 +51,15 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "reason": "fetch failed"
     },
     {
-      "restaurantId": "osm-node-4474954245-bai-wei-grill-bar",
-      "name": "Bai Wei Grill Bar",
-      "website": "http://baiweigrillbar.com/",
-      "reason": "fetch failed"
-    },
-    {
       "restaurantId": "osm-node-12143582175-asia-restaurant-and-bar",
       "name": "Asia Restaurant & Bar",
       "website": "https://asiahalifax.com/",
+      "reason": "fetch failed"
+    },
+    {
+      "restaurantId": "osm-node-4474954245-bai-wei-grill-bar",
+      "name": "Bai Wei Grill Bar",
+      "website": "http://baiweigrillbar.com/",
       "reason": "fetch failed"
     },
     {
@@ -81,16 +81,16 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "reason": "fetch failed"
     },
     {
-      "restaurantId": "osm-node-4421124794-cafe-marco-polo",
-      "name": "Cafe Marco Polo",
-      "website": "https://justuscoffee.com/locations/kings-wharf-dartmouth",
-      "reason": "http_404"
-    },
-    {
       "restaurantId": "osm-node-5810620690-castello-cafe",
       "name": "Castello Café",
       "website": "https://www.facebook.com/CastelloCafeCatering/",
       "reason": "robots_disallow"
+    },
+    {
+      "restaurantId": "osm-node-4421124794-cafe-marco-polo",
+      "name": "Cafe Marco Polo",
+      "website": "https://justuscoffee.com/locations/kings-wharf-dartmouth",
+      "reason": "http_404"
     },
     {
       "restaurantId": "osm-node-11752773940-colleen-s-pub",
@@ -159,6 +159,12 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "reason": "fetch failed"
     },
     {
+      "restaurantId": "osm-node-2721708504-curry-village",
+      "name": "Curry Village",
+      "website": "https://www.curryvillage.ca/",
+      "reason": "http_526"
+    },
+    {
       "restaurantId": "osm-node-2721708515-cha-baa-thai",
       "name": "Cha Baa Thai",
       "website": "https://www.chabaathairestaurant.ca/",
@@ -168,6 +174,12 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "restaurantId": "osm-node-7082566318-g-street-pizza",
       "name": "G-Street Pizza",
       "website": "https://gstreetpizza.ca/",
+      "reason": "fetch failed"
+    },
+    {
+      "restaurantId": "osm-node-32335616-jim-s-family-restaurant",
+      "name": "Jim's Family Restaurant",
+      "website": "https://www.jimsfamilyrestauranthalifax.com/cl",
       "reason": "fetch failed"
     },
     {
@@ -183,12 +195,6 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "reason": "http_404"
     },
     {
-      "restaurantId": "osm-node-32335616-jim-s-family-restaurant",
-      "name": "Jim's Family Restaurant",
-      "website": "https://www.jimsfamilyrestauranthalifax.com/cl",
-      "reason": "fetch failed"
-    },
-    {
       "restaurantId": "osm-node-5723553932-kam-moon",
       "name": "Kam-moon",
       "website": "https://kam-moon.com/",
@@ -199,18 +205,6 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Kebab Kitchen",
       "website": "http://www.kebabkitchens.com/",
       "reason": "fetch failed"
-    },
-    {
-      "restaurantId": "osm-way-460939327-la-piazza-ristorante",
-      "name": "La Piazza Ristorante",
-      "website": "https://www.lapiazzarestocafe.com/",
-      "reason": "fetch failed"
-    },
-    {
-      "restaurantId": "osm-node-2721708504-curry-village",
-      "name": "Curry Village",
-      "website": "https://www.curryvillage.ca/",
-      "reason": "http_526"
     },
     {
       "restaurantId": "osm-node-3575616966-layla-s-mediterranean-cuisine",
@@ -261,6 +255,12 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "reason": "robots_disallow"
     },
     {
+      "restaurantId": "osm-node-9652937830-arirang-korean-and-japanese",
+      "name": "Arirang Korean & Japanese",
+      "website": "https://arirang-restaurant.com/",
+      "reason": "fetch failed"
+    },
+    {
       "restaurantId": "osm-node-8142450011-montana-s",
       "name": "Montana's",
       "website": "https://www.montanas.ca/en/locations/3617/halifax-chain-lake-dr.html",
@@ -273,10 +273,10 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "reason": "fetch failed"
     },
     {
-      "restaurantId": "osm-node-9652937830-arirang-korean-and-japanese",
-      "name": "Arirang Korean & Japanese",
-      "website": "https://arirang-restaurant.com/",
-      "reason": "fetch failed"
+      "restaurantId": "dear-friend",
+      "name": "Dear Friend Bar",
+      "website": "https://dearfriendbar.com/",
+      "reason": "timeout"
     },
     {
       "restaurantId": "osm-node-4965917621-patrons-golf-and-lounge",
@@ -297,6 +297,12 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "reason": "http_404"
     },
     {
+      "restaurantId": "osm-way-460939327-la-piazza-ristorante",
+      "name": "La Piazza Ristorante",
+      "website": "https://www.lapiazzarestocafe.com/",
+      "reason": "fetch failed"
+    },
+    {
       "restaurantId": "osm-node-9652977384-saffron-multi-cuisine-indian-restaurant",
       "name": "Saffron Multi Cuisine Indian Restaurant",
       "website": "https://saffron-indian-restaurant.com/",
@@ -307,12 +313,6 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Shiraz",
       "website": "https://www.shirazhalifax.ca/",
       "reason": "fetch failed"
-    },
-    {
-      "restaurantId": "osm-node-5503919661-jukai",
-      "name": "Jukai",
-      "website": "https://jukairestaurant.com/",
-      "reason": "timeout"
     },
     {
       "restaurantId": "osm-node-3791840157-krave-burger",
@@ -369,16 +369,22 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "reason": "http_404"
     },
     {
+      "restaurantId": "osm-node-13286458034-vandal-doughnuts",
+      "name": "Vandal Doughnuts",
+      "website": "https://vandaldoughnuts.ca/",
+      "reason": "fetch failed"
+    },
+    {
       "restaurantId": "osm-node-13141551801-mcdonald-s",
       "name": "McDonald's",
       "website": "https://www.mcdonalds.com/ca/en-ca.html",
       "reason": "timeout"
     },
     {
-      "restaurantId": "osm-node-4428984290-stone-pizza",
-      "name": "Stone Pizza",
-      "website": "https://stonepizza.ca/",
-      "reason": "timeout"
+      "restaurantId": "osm-node-5150731134-way2roll",
+      "name": "Way2Roll",
+      "website": "https://way2roll.ca/",
+      "reason": "fetch failed"
     },
     {
       "restaurantId": "osm-node-12143325435-krave-burger",
@@ -387,16 +393,10 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "reason": "timeout"
     },
     {
-      "restaurantId": "osm-node-13286458034-vandal-doughnuts",
-      "name": "Vandal Doughnuts",
-      "website": "https://vandaldoughnuts.ca/",
-      "reason": "fetch failed"
-    },
-    {
-      "restaurantId": "osm-node-5150731134-way2roll",
-      "name": "Way2Roll",
-      "website": "https://way2roll.ca/",
-      "reason": "fetch failed"
+      "restaurantId": "osm-node-4428984290-stone-pizza",
+      "name": "Stone Pizza",
+      "website": "https://stonepizza.ca/",
+      "reason": "timeout"
     },
     {
       "restaurantId": "osm-node-6393893025-pizza-hut",
@@ -408,12 +408,6 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "restaurantId": "osm-way-181621820-mcdonald-s",
       "name": "McDonald's",
       "website": "https://www.mcdonalds.com/ca/en-ca/location/halifax/halifax-kempt/3486-kempt-road/3141.html",
-      "reason": "timeout"
-    },
-    {
-      "restaurantId": "osm-node-33117793-wasabi-house",
-      "name": "Wasabi House",
-      "website": "http://www.wasabihouse.ca/",
       "reason": "timeout"
     },
     {
@@ -435,8 +429,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "2 Doors Down",
       "website": "https://go2doorsdown.com/",
       "resolvedUrl": "https://go2doorsdown.com/",
-      "observedAt": "2026-09-04T12:50:43.472Z",
-      "lastVerifiedAt": "2026-09-04T12:50:43.472Z",
+      "observedAt": "2026-09-04T13:33:07.648Z",
+      "lastVerifiedAt": "2026-09-04T13:33:07.648Z",
       "scannedOwnedPages": [
         "https://go2doorsdown.com/",
         "https://go2doorsdown.com/",
@@ -454,8 +448,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://go2doorsdown.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:43.472Z",
-          "lastVerifiedAt": "2026-09-04T12:50:43.472Z",
+          "observedAt": "2026-09-04T13:33:07.648Z",
+          "lastVerifiedAt": "2026-09-04T13:33:07.648Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -471,8 +465,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://go2doorsdown.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:43.472Z",
-          "lastVerifiedAt": "2026-09-04T12:50:43.472Z",
+          "observedAt": "2026-09-04T13:33:07.648Z",
+          "lastVerifiedAt": "2026-09-04T13:33:07.648Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -488,8 +482,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://go2doorsdown.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:43.472Z",
-          "lastVerifiedAt": "2026-09-04T12:50:43.472Z",
+          "observedAt": "2026-09-04T13:33:07.648Z",
+          "lastVerifiedAt": "2026-09-04T13:33:07.648Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -505,8 +499,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://go2doorsdown.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:43.472Z",
-          "lastVerifiedAt": "2026-09-04T12:50:43.472Z",
+          "observedAt": "2026-09-04T13:33:07.648Z",
+          "lastVerifiedAt": "2026-09-04T13:33:07.648Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -520,8 +514,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Menus",
           "discoveredFrom": "https://go2doorsdown.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:43.472Z",
-          "lastVerifiedAt": "2026-09-04T12:50:43.472Z",
+          "observedAt": "2026-09-04T13:33:07.648Z",
+          "lastVerifiedAt": "2026-09-04T13:33:07.648Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -532,8 +526,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Book Table",
           "discoveredFrom": "https://go2doorsdown.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:43.472Z",
-          "lastVerifiedAt": "2026-09-04T12:50:43.472Z",
+          "observedAt": "2026-09-04T13:33:07.648Z",
+          "lastVerifiedAt": "2026-09-04T13:33:07.648Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -544,8 +538,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Menus",
           "discoveredFrom": "https://go2doorsdown.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:43.472Z",
-          "lastVerifiedAt": "2026-09-04T12:50:43.472Z",
+          "observedAt": "2026-09-04T13:33:07.648Z",
+          "lastVerifiedAt": "2026-09-04T13:33:07.648Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -556,8 +550,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Dinner Menu",
           "discoveredFrom": "https://go2doorsdown.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:43.472Z",
-          "lastVerifiedAt": "2026-09-04T12:50:43.472Z",
+          "observedAt": "2026-09-04T13:33:07.648Z",
+          "lastVerifiedAt": "2026-09-04T13:33:07.648Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -568,8 +562,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Dessert Menu",
           "discoveredFrom": "https://go2doorsdown.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:43.472Z",
-          "lastVerifiedAt": "2026-09-04T12:50:43.472Z",
+          "observedAt": "2026-09-04T13:33:07.648Z",
+          "lastVerifiedAt": "2026-09-04T13:33:07.648Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -580,8 +574,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Lunch Menu",
           "discoveredFrom": "https://go2doorsdown.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:43.472Z",
-          "lastVerifiedAt": "2026-09-04T12:50:43.472Z",
+          "observedAt": "2026-09-04T13:33:07.648Z",
+          "lastVerifiedAt": "2026-09-04T13:33:07.648Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -592,8 +586,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Kids Menu",
           "discoveredFrom": "https://go2doorsdown.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:43.472Z",
-          "lastVerifiedAt": "2026-09-04T12:50:43.472Z",
+          "observedAt": "2026-09-04T13:33:07.648Z",
+          "lastVerifiedAt": "2026-09-04T13:33:07.648Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -604,8 +598,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Order Online",
           "discoveredFrom": "https://go2doorsdown.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:43.472Z",
-          "lastVerifiedAt": "2026-09-04T12:50:43.472Z",
+          "observedAt": "2026-09-04T13:33:07.648Z",
+          "lastVerifiedAt": "2026-09-04T13:33:07.648Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -643,8 +637,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Bar Kismet",
       "website": "https://barkismet.com/",
       "resolvedUrl": "https://barkismet.com/",
-      "observedAt": "2026-09-04T12:50:43.426Z",
-      "lastVerifiedAt": "2026-09-04T12:50:43.426Z",
+      "observedAt": "2026-09-04T13:33:07.600Z",
+      "lastVerifiedAt": "2026-09-04T13:33:07.600Z",
       "scannedOwnedPages": [
         "https://barkismet.com/",
         "https://barkismet.com/about/"
@@ -661,8 +655,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://barkismet.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:43.426Z",
-          "lastVerifiedAt": "2026-09-04T12:50:43.426Z",
+          "observedAt": "2026-09-04T13:33:07.600Z",
+          "lastVerifiedAt": "2026-09-04T13:33:07.600Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -676,8 +670,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "MENU",
           "discoveredFrom": "https://barkismet.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:43.426Z",
-          "lastVerifiedAt": "2026-09-04T12:50:43.426Z",
+          "observedAt": "2026-09-04T13:33:07.600Z",
+          "lastVerifiedAt": "2026-09-04T13:33:07.600Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -688,8 +682,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "RESERVATIONS",
           "discoveredFrom": "https://barkismet.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:43.426Z",
-          "lastVerifiedAt": "2026-09-04T12:50:43.426Z",
+          "observedAt": "2026-09-04T13:33:07.600Z",
+          "lastVerifiedAt": "2026-09-04T13:33:07.600Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -706,7 +700,7 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "confidence": "authoritative",
           "status": "active",
           "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-09-04T12:51:47.588Z"
+          "carriedForwardAt": "2026-09-04T13:34:13.421Z"
         }
       ],
       "feeds": [],
@@ -719,8 +713,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Battery Park Beer Bar",
       "website": "https://batterypark.ca/",
       "resolvedUrl": "https://batterypark.ca/",
-      "observedAt": "2026-09-04T12:50:43.473Z",
-      "lastVerifiedAt": "2026-09-04T12:50:43.473Z",
+      "observedAt": "2026-09-04T13:33:07.649Z",
+      "lastVerifiedAt": "2026-09-04T13:33:07.649Z",
       "scannedOwnedPages": [
         "https://batterypark.ca/"
       ],
@@ -736,8 +730,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://batterypark.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:43.473Z",
-          "lastVerifiedAt": "2026-09-04T12:50:43.473Z",
+          "observedAt": "2026-09-04T13:33:07.649Z",
+          "lastVerifiedAt": "2026-09-04T13:33:07.649Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -753,8 +747,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://batterypark.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:43.473Z",
-          "lastVerifiedAt": "2026-09-04T12:50:43.473Z",
+          "observedAt": "2026-09-04T13:33:07.649Z",
+          "lastVerifiedAt": "2026-09-04T13:33:07.649Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -774,8 +768,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "The Canteen on Portland",
       "website": "https://www.thecanteen.ca/",
       "resolvedUrl": "https://www.thecanteen.ca/",
-      "observedAt": "2026-09-04T12:51:22.219Z",
-      "lastVerifiedAt": "2026-09-04T12:51:22.219Z",
+      "observedAt": "2026-09-04T13:33:45.677Z",
+      "lastVerifiedAt": "2026-09-04T13:33:45.677Z",
       "scannedOwnedPages": [
         "https://www.thecanteen.ca/",
         "https://www.thecanteen.ca/our-story",
@@ -793,8 +787,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.thecanteen.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:22.219Z",
-          "lastVerifiedAt": "2026-09-04T12:51:22.219Z",
+          "observedAt": "2026-09-04T13:33:45.677Z",
+          "lastVerifiedAt": "2026-09-04T13:33:45.677Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -810,8 +804,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.thecanteen.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:22.219Z",
-          "lastVerifiedAt": "2026-09-04T12:51:22.219Z",
+          "observedAt": "2026-09-04T13:33:45.677Z",
+          "lastVerifiedAt": "2026-09-04T13:33:45.677Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -827,8 +821,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.thecanteen.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:22.219Z",
-          "lastVerifiedAt": "2026-09-04T12:51:22.219Z",
+          "observedAt": "2026-09-04T13:33:45.677Z",
+          "lastVerifiedAt": "2026-09-04T13:33:45.677Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -842,8 +836,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "TAKE-OUT",
           "discoveredFrom": "https://www.thecanteen.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:22.219Z",
-          "lastVerifiedAt": "2026-09-04T12:51:22.219Z",
+          "observedAt": "2026-09-04T13:33:45.677Z",
+          "lastVerifiedAt": "2026-09-04T13:33:45.677Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -854,8 +848,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "RESERVATIONS",
           "discoveredFrom": "https://www.thecanteen.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:22.219Z",
-          "lastVerifiedAt": "2026-09-04T12:51:22.219Z",
+          "observedAt": "2026-09-04T13:33:45.677Z",
+          "lastVerifiedAt": "2026-09-04T13:33:45.677Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -866,8 +860,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Folder: MENUS",
           "discoveredFrom": "https://www.thecanteen.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:22.219Z",
-          "lastVerifiedAt": "2026-09-04T12:51:22.219Z",
+          "observedAt": "2026-09-04T13:33:45.677Z",
+          "lastVerifiedAt": "2026-09-04T13:33:45.677Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -878,8 +872,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "SEE OUR MENUS",
           "discoveredFrom": "https://www.thecanteen.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:22.219Z",
-          "lastVerifiedAt": "2026-09-04T12:51:22.219Z",
+          "observedAt": "2026-09-04T13:33:45.677Z",
+          "lastVerifiedAt": "2026-09-04T13:33:45.677Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -897,8 +891,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Darty Brewing Co.",
       "website": "https://www.dartybrewing.ca/",
       "resolvedUrl": "https://www.dartybrewing.ca/",
-      "observedAt": "2026-09-04T12:51:21.834Z",
-      "lastVerifiedAt": "2026-09-04T12:51:21.834Z",
+      "observedAt": "2026-09-04T13:33:45.553Z",
+      "lastVerifiedAt": "2026-09-04T13:33:45.553Z",
       "scannedOwnedPages": [
         "https://www.dartybrewing.ca/",
         "https://www.dartybrewing.ca/pages/about-us",
@@ -917,8 +911,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.dartybrewing.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:21.834Z",
-          "lastVerifiedAt": "2026-09-04T12:51:21.834Z",
+          "observedAt": "2026-09-04T13:33:45.553Z",
+          "lastVerifiedAt": "2026-09-04T13:33:45.553Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -934,8 +928,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.dartybrewing.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:21.834Z",
-          "lastVerifiedAt": "2026-09-04T12:51:21.834Z",
+          "observedAt": "2026-09-04T13:33:45.553Z",
+          "lastVerifiedAt": "2026-09-04T13:33:45.553Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -957,9 +951,7 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "resolvedUrl": "https://dearfriendbar.com/",
       "observedAt": "2026-09-04T12:50:43.473Z",
       "lastVerifiedAt": "2026-09-04T12:50:43.473Z",
-      "scannedOwnedPages": [
-        "https://dearfriendbar.com/"
-      ],
+      "scannedOwnedPages": [],
       "socialProfiles": [],
       "linkHubs": [],
       "relatedLinks": [
@@ -973,7 +965,9 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "lastVerifiedAt": "2026-09-04T12:50:43.473Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
-          "status": "active"
+          "status": "active",
+          "refreshState": "carried_forward_previous_verification",
+          "carriedForwardAt": "2026-09-04T13:34:13.421Z"
         },
         {
           "kind": "reservations",
@@ -985,7 +979,9 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "lastVerifiedAt": "2026-09-04T12:50:43.473Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
-          "status": "active"
+          "status": "active",
+          "refreshState": "carried_forward_previous_verification",
+          "carriedForwardAt": "2026-09-04T13:34:13.421Z"
         },
         {
           "kind": "events",
@@ -997,7 +993,9 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "lastVerifiedAt": "2026-09-04T12:50:43.473Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
-          "status": "active"
+          "status": "active",
+          "refreshState": "carried_forward_previous_verification",
+          "carriedForwardAt": "2026-09-04T13:34:13.421Z"
         }
       ],
       "feeds": [],
@@ -1005,15 +1003,16 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
         "https://dearfriendbar.com/sitemap.xml"
       ],
       "sourceKind": "official_website_discovery",
-      "reviewState": "verified"
+      "reviewState": "verified",
+      "refreshState": "carried_forward_after_refresh_failure"
     },
     {
       "restaurantId": "edna",
       "name": "EDNA",
       "website": "https://www.ednarestaurant.com/",
       "resolvedUrl": "https://www.ednarestaurant.com/",
-      "observedAt": "2026-09-04T12:50:43.470Z",
-      "lastVerifiedAt": "2026-09-04T12:50:43.470Z",
+      "observedAt": "2026-09-04T13:33:07.646Z",
+      "lastVerifiedAt": "2026-09-04T13:33:07.646Z",
       "scannedOwnedPages": [
         "https://www.ednarestaurant.com/"
       ],
@@ -1029,8 +1028,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.ednarestaurant.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:43.470Z",
-          "lastVerifiedAt": "2026-09-04T12:50:43.470Z",
+          "observedAt": "2026-09-04T13:33:07.646Z",
+          "lastVerifiedAt": "2026-09-04T13:33:07.646Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -1046,8 +1045,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.ednarestaurant.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:43.470Z",
-          "lastVerifiedAt": "2026-09-04T12:50:43.470Z",
+          "observedAt": "2026-09-04T13:33:07.646Z",
+          "lastVerifiedAt": "2026-09-04T13:33:07.646Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -1061,8 +1060,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Menu",
           "discoveredFrom": "https://www.ednarestaurant.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:43.470Z",
-          "lastVerifiedAt": "2026-09-04T12:50:43.470Z",
+          "observedAt": "2026-09-04T13:33:07.646Z",
+          "lastVerifiedAt": "2026-09-04T13:33:07.646Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -1073,8 +1072,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Reservations",
           "discoveredFrom": "https://www.ednarestaurant.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:43.470Z",
-          "lastVerifiedAt": "2026-09-04T12:50:43.470Z",
+          "observedAt": "2026-09-04T13:33:07.646Z",
+          "lastVerifiedAt": "2026-09-04T13:33:07.646Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -1085,8 +1084,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Book a Table",
           "discoveredFrom": "https://www.ednarestaurant.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:43.470Z",
-          "lastVerifiedAt": "2026-09-04T12:50:43.470Z",
+          "observedAt": "2026-09-04T13:33:07.646Z",
+          "lastVerifiedAt": "2026-09-04T13:33:07.646Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -1104,8 +1103,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Highwayman",
       "website": "https://www.highwaymanhfx.com/",
       "resolvedUrl": "https://www.highwaymanhfx.com/",
-      "observedAt": "2026-09-04T12:50:43.474Z",
-      "lastVerifiedAt": "2026-09-04T12:50:43.474Z",
+      "observedAt": "2026-09-04T13:33:07.650Z",
+      "lastVerifiedAt": "2026-09-04T13:33:07.650Z",
       "scannedOwnedPages": [
         "https://www.highwaymanhfx.com/",
         "https://www.highwaymanhfx.com/about"
@@ -1122,8 +1121,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.highwaymanhfx.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:43.474Z",
-          "lastVerifiedAt": "2026-09-04T12:50:43.474Z",
+          "observedAt": "2026-09-04T13:33:07.650Z",
+          "lastVerifiedAt": "2026-09-04T13:33:07.650Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -1139,8 +1138,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.highwaymanhfx.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:43.474Z",
-          "lastVerifiedAt": "2026-09-04T12:50:43.474Z",
+          "observedAt": "2026-09-04T13:33:07.650Z",
+          "lastVerifiedAt": "2026-09-04T13:33:07.650Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -1154,8 +1153,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "RESERVE",
           "discoveredFrom": "https://www.highwaymanhfx.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:43.474Z",
-          "lastVerifiedAt": "2026-09-04T12:50:43.474Z",
+          "observedAt": "2026-09-04T13:33:07.650Z",
+          "lastVerifiedAt": "2026-09-04T13:33:07.650Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -1166,8 +1165,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Folder: MENUS",
           "discoveredFrom": "https://www.highwaymanhfx.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:43.474Z",
-          "lastVerifiedAt": "2026-09-04T12:50:43.474Z",
+          "observedAt": "2026-09-04T13:33:07.650Z",
+          "lastVerifiedAt": "2026-09-04T13:33:07.650Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -1178,8 +1177,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "OUR FOOD MENU",
           "discoveredFrom": "https://www.highwaymanhfx.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:43.474Z",
-          "lastVerifiedAt": "2026-09-04T12:50:43.474Z",
+          "observedAt": "2026-09-04T13:33:07.650Z",
+          "lastVerifiedAt": "2026-09-04T13:33:07.650Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -1190,8 +1189,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "OUR DRINK MENU",
           "discoveredFrom": "https://www.highwaymanhfx.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:43.474Z",
-          "lastVerifiedAt": "2026-09-04T12:50:43.474Z",
+          "observedAt": "2026-09-04T13:33:07.650Z",
+          "lastVerifiedAt": "2026-09-04T13:33:07.650Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -1209,8 +1208,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Lake City Cider",
       "website": "https://lakecitycider.ca/",
       "resolvedUrl": "https://lakecitycider.ca/",
-      "observedAt": "2026-09-04T12:51:22.504Z",
-      "lastVerifiedAt": "2026-09-04T12:51:22.504Z",
+      "observedAt": "2026-09-04T13:33:46.065Z",
+      "lastVerifiedAt": "2026-09-04T13:33:46.065Z",
       "scannedOwnedPages": [
         "https://lakecitycider.ca/",
         "https://lakecitycider.ca/pages/about",
@@ -1229,8 +1228,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://lakecitycider.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:22.504Z",
-          "lastVerifiedAt": "2026-09-04T12:51:22.504Z",
+          "observedAt": "2026-09-04T13:33:46.065Z",
+          "lastVerifiedAt": "2026-09-04T13:33:46.065Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -1246,8 +1245,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://lakecitycider.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:22.504Z",
-          "lastVerifiedAt": "2026-09-04T12:51:22.504Z",
+          "observedAt": "2026-09-04T13:33:46.065Z",
+          "lastVerifiedAt": "2026-09-04T13:33:46.065Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -1263,8 +1262,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://lakecitycider.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:22.504Z",
-          "lastVerifiedAt": "2026-09-04T12:51:22.504Z",
+          "observedAt": "2026-09-04T13:33:46.065Z",
+          "lastVerifiedAt": "2026-09-04T13:33:46.065Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -1278,8 +1277,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Spend $45 or more to receive FREE delivery anywhere in the HRM! | Canada wide shipping available.",
           "discoveredFrom": "https://lakecitycider.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:22.504Z",
-          "lastVerifiedAt": "2026-09-04T12:51:22.504Z",
+          "observedAt": "2026-09-04T13:33:46.065Z",
+          "lastVerifiedAt": "2026-09-04T13:33:46.065Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -1297,8 +1296,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Magnolia",
       "website": "https://www.magnoliahfx.com/",
       "resolvedUrl": "https://www.magnoliahfx.com/",
-      "observedAt": "2026-09-04T12:51:21.819Z",
-      "lastVerifiedAt": "2026-09-04T12:51:21.819Z",
+      "observedAt": "2026-09-04T13:33:45.552Z",
+      "lastVerifiedAt": "2026-09-04T13:33:45.552Z",
       "scannedOwnedPages": [
         "https://www.magnoliahfx.com/",
         "https://www.magnoliahfx.com/about",
@@ -1316,8 +1315,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.magnoliahfx.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:21.819Z",
-          "lastVerifiedAt": "2026-09-04T12:51:21.819Z",
+          "observedAt": "2026-09-04T13:33:45.552Z",
+          "lastVerifiedAt": "2026-09-04T13:33:45.552Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -1331,8 +1330,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Menu",
           "discoveredFrom": "https://www.magnoliahfx.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:21.819Z",
-          "lastVerifiedAt": "2026-09-04T12:51:21.819Z",
+          "observedAt": "2026-09-04T13:33:45.552Z",
+          "lastVerifiedAt": "2026-09-04T13:33:45.552Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -1343,8 +1342,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "BOOK A TABLE",
           "discoveredFrom": "https://www.magnoliahfx.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:21.819Z",
-          "lastVerifiedAt": "2026-09-04T12:51:21.819Z",
+          "observedAt": "2026-09-04T13:33:45.552Z",
+          "lastVerifiedAt": "2026-09-04T13:33:45.552Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -1355,8 +1354,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Weekly Specials & Happy Hour Menu",
           "discoveredFrom": "https://www.magnoliahfx.com/about",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:21.819Z",
-          "lastVerifiedAt": "2026-09-04T12:51:21.819Z",
+          "observedAt": "2026-09-04T13:33:45.552Z",
+          "lastVerifiedAt": "2026-09-04T13:33:45.552Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -1367,8 +1366,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Food & Drink Menu",
           "discoveredFrom": "https://www.magnoliahfx.com/about",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:21.819Z",
-          "lastVerifiedAt": "2026-09-04T12:51:21.819Z",
+          "observedAt": "2026-09-04T13:33:45.552Z",
+          "lastVerifiedAt": "2026-09-04T13:33:45.552Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -1386,9 +1385,10 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Maria's Pantry",
       "website": "https://www.mariaspantry.ca/",
       "resolvedUrl": "https://www.mariaspantry.ca/",
-      "observedAt": "2026-09-04T12:51:21.877Z",
-      "lastVerifiedAt": "2026-09-04T12:51:21.877Z",
+      "observedAt": "2026-09-04T13:33:45.644Z",
+      "lastVerifiedAt": "2026-09-04T13:33:45.644Z",
       "scannedOwnedPages": [
+        "https://www.mariaspantry.ca/",
         "https://www.mariaspantry.ca/",
         "https://www.mariaspantry.ca/",
         "https://www.mariaspantry.ca/products/pages/about"
@@ -1405,8 +1405,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.mariaspantry.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:21.877Z",
-          "lastVerifiedAt": "2026-09-04T12:51:21.877Z",
+          "observedAt": "2026-09-04T13:33:45.644Z",
+          "lastVerifiedAt": "2026-09-04T13:33:45.644Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -1422,8 +1422,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.mariaspantry.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:21.877Z",
-          "lastVerifiedAt": "2026-09-04T12:51:21.877Z",
+          "observedAt": "2026-09-04T13:33:45.644Z",
+          "lastVerifiedAt": "2026-09-04T13:33:45.644Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -1437,8 +1437,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Menu",
           "discoveredFrom": "https://www.mariaspantry.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:21.877Z",
-          "lastVerifiedAt": "2026-09-04T12:51:21.877Z",
+          "observedAt": "2026-09-04T13:33:45.644Z",
+          "lastVerifiedAt": "2026-09-04T13:33:45.644Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -1449,8 +1449,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Menu",
           "discoveredFrom": "https://www.mariaspantry.ca/products/pages/about",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:21.877Z",
-          "lastVerifiedAt": "2026-09-04T12:51:21.877Z",
+          "observedAt": "2026-09-04T13:33:45.644Z",
+          "lastVerifiedAt": "2026-09-04T13:33:45.644Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -1468,8 +1468,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Matadora Tapas Bar",
       "website": "https://matadorahfx.ca/",
       "resolvedUrl": "https://matadorahfx.ca/",
-      "observedAt": "2026-09-04T12:51:05.232Z",
-      "lastVerifiedAt": "2026-09-04T12:51:05.232Z",
+      "observedAt": "2026-09-04T13:33:27.521Z",
+      "lastVerifiedAt": "2026-09-04T13:33:27.521Z",
       "scannedOwnedPages": [
         "https://matadorahfx.ca/",
         "https://matadorahfx.ca/",
@@ -1484,8 +1484,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Reservations",
           "discoveredFrom": "https://matadorahfx.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:05.232Z",
-          "lastVerifiedAt": "2026-09-04T12:51:05.232Z",
+          "observedAt": "2026-09-04T13:33:27.521Z",
+          "lastVerifiedAt": "2026-09-04T13:33:27.521Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -1496,8 +1496,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Dinner & DESSERT Menu",
           "discoveredFrom": "https://matadorahfx.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:05.232Z",
-          "lastVerifiedAt": "2026-09-04T12:51:05.232Z",
+          "observedAt": "2026-09-04T13:33:27.521Z",
+          "lastVerifiedAt": "2026-09-04T13:33:27.521Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -1528,8 +1528,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Bird's Nest Cafe",
       "website": "https://www.birdsnesthalifax.com/",
       "resolvedUrl": "https://www.birdsnesthalifax.com/",
-      "observedAt": "2026-09-04T12:50:44.315Z",
-      "lastVerifiedAt": "2026-09-04T12:50:44.315Z",
+      "observedAt": "2026-09-04T13:33:08.488Z",
+      "lastVerifiedAt": "2026-09-04T13:33:08.488Z",
       "scannedOwnedPages": [
         "https://www.birdsnesthalifax.com/",
         "https://www.birdsnesthalifax.com/about",
@@ -1547,8 +1547,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.birdsnesthalifax.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:44.315Z",
-          "lastVerifiedAt": "2026-09-04T12:50:44.315Z",
+          "observedAt": "2026-09-04T13:33:08.488Z",
+          "lastVerifiedAt": "2026-09-04T13:33:08.488Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -1564,8 +1564,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.birdsnesthalifax.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:44.315Z",
-          "lastVerifiedAt": "2026-09-04T12:50:44.315Z",
+          "observedAt": "2026-09-04T13:33:08.488Z",
+          "lastVerifiedAt": "2026-09-04T13:33:08.488Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -1579,8 +1579,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Order Take Out",
           "discoveredFrom": "https://www.birdsnesthalifax.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:44.315Z",
-          "lastVerifiedAt": "2026-09-04T12:50:44.315Z",
+          "observedAt": "2026-09-04T13:33:08.488Z",
+          "lastVerifiedAt": "2026-09-04T13:33:08.488Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -1606,8 +1606,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Starbucks",
       "website": "https://www.starbucks.ca/store-locator/store/12465-151926/86-chain-lake-drive-86-chain-lake-drive-halifax-ns-b-3-s-1-a-2-ca",
       "resolvedUrl": "https://www.starbucks.ca/store-locator/store/12465-151926/86-chain-lake-drive-86-chain-lake-drive-halifax-ns-b-3-s-1-a-2-ca",
-      "observedAt": "2026-09-04T12:50:51.871Z",
-      "lastVerifiedAt": "2026-09-04T12:50:51.871Z",
+      "observedAt": "2026-09-04T13:33:17.231Z",
+      "lastVerifiedAt": "2026-09-04T13:33:17.231Z",
       "scannedOwnedPages": [
         "https://www.starbucks.ca/store-locator/store/12465-151926/86-chain-lake-drive-86-chain-lake-drive-halifax-ns-b-3-s-1-a-2-ca"
       ],
@@ -1626,8 +1626,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Darrell's",
       "website": "https://darrellsrestaurants.com/",
       "resolvedUrl": "https://darrellsrestaurants.com/",
-      "observedAt": "2026-09-04T12:50:47.851Z",
-      "lastVerifiedAt": "2026-09-04T12:50:47.851Z",
+      "observedAt": "2026-09-04T13:33:12.334Z",
+      "lastVerifiedAt": "2026-09-04T13:33:12.334Z",
       "scannedOwnedPages": [
         "https://darrellsrestaurants.com/",
         "https://darrellsrestaurants.com/about-darrells/",
@@ -1645,8 +1645,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://darrellsrestaurants.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:47.851Z",
-          "lastVerifiedAt": "2026-09-04T12:50:47.851Z",
+          "observedAt": "2026-09-04T13:33:12.334Z",
+          "lastVerifiedAt": "2026-09-04T13:33:12.334Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -1662,8 +1662,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://darrellsrestaurants.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:47.851Z",
-          "lastVerifiedAt": "2026-09-04T12:50:47.851Z",
+          "observedAt": "2026-09-04T13:33:12.334Z",
+          "lastVerifiedAt": "2026-09-04T13:33:12.334Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -1679,8 +1679,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://darrellsrestaurants.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:47.851Z",
-          "lastVerifiedAt": "2026-09-04T12:50:47.851Z",
+          "observedAt": "2026-09-04T13:33:12.334Z",
+          "lastVerifiedAt": "2026-09-04T13:33:12.334Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -1694,8 +1694,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "MENU/ORDER NOW",
           "discoveredFrom": "https://darrellsrestaurants.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:47.851Z",
-          "lastVerifiedAt": "2026-09-04T12:50:47.851Z",
+          "observedAt": "2026-09-04T13:33:12.334Z",
+          "lastVerifiedAt": "2026-09-04T13:33:12.334Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -1706,8 +1706,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Catering Menu",
           "discoveredFrom": "https://darrellsrestaurants.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:47.851Z",
-          "lastVerifiedAt": "2026-09-04T12:50:47.851Z",
+          "observedAt": "2026-09-04T13:33:12.334Z",
+          "lastVerifiedAt": "2026-09-04T13:33:12.334Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -1738,8 +1738,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Ben & Florentine",
       "website": "https://benetflorentine.com/",
       "resolvedUrl": "https://locations.benetflorentine.com/",
-      "observedAt": "2026-09-04T12:50:44.289Z",
-      "lastVerifiedAt": "2026-09-04T12:50:44.289Z",
+      "observedAt": "2026-09-04T13:33:08.439Z",
+      "lastVerifiedAt": "2026-09-04T13:33:08.439Z",
       "scannedOwnedPages": [
         "https://locations.benetflorentine.com/"
       ],
@@ -1755,8 +1755,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://locations.benetflorentine.com/",
           "associationBasis": "jsonld_sameAs",
-          "observedAt": "2026-09-04T12:50:44.289Z",
-          "lastVerifiedAt": "2026-09-04T12:50:44.289Z",
+          "observedAt": "2026-09-04T13:33:08.439Z",
+          "lastVerifiedAt": "2026-09-04T13:33:08.439Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -1772,8 +1772,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://locations.benetflorentine.com/",
           "associationBasis": "jsonld_sameAs",
-          "observedAt": "2026-09-04T12:50:44.289Z",
-          "lastVerifiedAt": "2026-09-04T12:50:44.289Z",
+          "observedAt": "2026-09-04T13:33:08.439Z",
+          "lastVerifiedAt": "2026-09-04T13:33:08.439Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -1789,8 +1789,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://locations.benetflorentine.com/",
           "associationBasis": "jsonld_sameAs",
-          "observedAt": "2026-09-04T12:50:44.289Z",
-          "lastVerifiedAt": "2026-09-04T12:50:44.289Z",
+          "observedAt": "2026-09-04T13:33:08.439Z",
+          "lastVerifiedAt": "2026-09-04T13:33:08.439Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -1804,8 +1804,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Menu",
           "discoveredFrom": "https://locations.benetflorentine.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:44.289Z",
-          "lastVerifiedAt": "2026-09-04T12:50:44.289Z",
+          "observedAt": "2026-09-04T13:33:08.439Z",
+          "lastVerifiedAt": "2026-09-04T13:33:08.439Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -1816,8 +1816,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "ORDER ONLINE",
           "discoveredFrom": "https://locations.benetflorentine.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:44.289Z",
-          "lastVerifiedAt": "2026-09-04T12:50:44.289Z",
+          "observedAt": "2026-09-04T13:33:08.439Z",
+          "lastVerifiedAt": "2026-09-04T13:33:08.439Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -1836,8 +1836,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Wing 'n It",
       "website": "https://wingnit.ca/",
       "resolvedUrl": "https://wingnit.ca/",
-      "observedAt": "2026-09-04T12:51:21.426Z",
-      "lastVerifiedAt": "2026-09-04T12:51:21.426Z",
+      "observedAt": "2026-09-04T13:33:44.966Z",
+      "lastVerifiedAt": "2026-09-04T13:33:44.966Z",
       "scannedOwnedPages": [
         "https://wingnit.ca/",
         "https://wingnit.ca/locations",
@@ -1855,8 +1855,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://wingnit.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:21.426Z",
-          "lastVerifiedAt": "2026-09-04T12:51:21.426Z",
+          "observedAt": "2026-09-04T13:33:44.966Z",
+          "lastVerifiedAt": "2026-09-04T13:33:44.966Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -1872,8 +1872,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://wingnit.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:21.426Z",
-          "lastVerifiedAt": "2026-09-04T12:51:21.426Z",
+          "observedAt": "2026-09-04T13:33:44.966Z",
+          "lastVerifiedAt": "2026-09-04T13:33:44.966Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -1887,8 +1887,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Menu",
           "discoveredFrom": "https://wingnit.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:21.426Z",
-          "lastVerifiedAt": "2026-09-04T12:51:21.426Z",
+          "observedAt": "2026-09-04T13:33:44.966Z",
+          "lastVerifiedAt": "2026-09-04T13:33:44.966Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -1899,8 +1899,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Appetizers Start things off right with Wing’n It’s crave-worthy appetizers! From crispy bites and cheesy classics to shareable platters and ",
           "discoveredFrom": "https://wingnit.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:21.426Z",
-          "lastVerifiedAt": "2026-09-04T12:51:21.426Z",
+          "observedAt": "2026-09-04T13:33:44.966Z",
+          "lastVerifiedAt": "2026-09-04T13:33:44.966Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -1911,8 +1911,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Nachos Wing’n It’s nachos are piled high with bold flavours and crave-worthy toppings. Whether you’re flying solo or sharing with the table,",
           "discoveredFrom": "https://wingnit.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:21.426Z",
-          "lastVerifiedAt": "2026-09-04T12:51:21.426Z",
+          "observedAt": "2026-09-04T13:33:44.966Z",
+          "lastVerifiedAt": "2026-09-04T13:33:44.966Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -1923,8 +1923,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Salad & Soup Fresh, crisp salads loaded with vibrant ingredients for a healthy and tasty choice.",
           "discoveredFrom": "https://wingnit.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:21.426Z",
-          "lastVerifiedAt": "2026-09-04T12:51:21.426Z",
+          "observedAt": "2026-09-04T13:33:44.966Z",
+          "lastVerifiedAt": "2026-09-04T13:33:44.966Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -1935,8 +1935,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Sandwiches & Wraps",
           "discoveredFrom": "https://wingnit.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:21.426Z",
-          "lastVerifiedAt": "2026-09-04T12:51:21.426Z",
+          "observedAt": "2026-09-04T13:33:44.966Z",
+          "lastVerifiedAt": "2026-09-04T13:33:44.966Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -1947,8 +1947,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Wings Our signature wings, sauced and seasoned to perfection, are a must-try.",
           "discoveredFrom": "https://wingnit.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:21.426Z",
-          "lastVerifiedAt": "2026-09-04T12:51:21.426Z",
+          "observedAt": "2026-09-04T13:33:44.966Z",
+          "lastVerifiedAt": "2026-09-04T13:33:44.966Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -1959,8 +1959,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Entrees Satisfy your hunger with our hearty and delicious entrees, crafted to perfection.",
           "discoveredFrom": "https://wingnit.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:21.426Z",
-          "lastVerifiedAt": "2026-09-04T12:51:21.426Z",
+          "observedAt": "2026-09-04T13:33:44.966Z",
+          "lastVerifiedAt": "2026-09-04T13:33:44.966Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -1971,8 +1971,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Burgers All burgers are 100% Canadian beef and double stacked! Served on a brioche bun with fries.",
           "discoveredFrom": "https://wingnit.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:21.426Z",
-          "lastVerifiedAt": "2026-09-04T12:51:21.426Z",
+          "observedAt": "2026-09-04T13:33:44.966Z",
+          "lastVerifiedAt": "2026-09-04T13:33:44.966Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -1983,8 +1983,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Fries Golden, crispy fries served just the way you like them.",
           "discoveredFrom": "https://wingnit.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:21.426Z",
-          "lastVerifiedAt": "2026-09-04T12:51:21.426Z",
+          "observedAt": "2026-09-04T13:33:44.966Z",
+          "lastVerifiedAt": "2026-09-04T13:33:44.966Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -1995,8 +1995,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Onion Rings Crunchy, golden onion rings with just the right amount of seasoning.",
           "discoveredFrom": "https://wingnit.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:21.426Z",
-          "lastVerifiedAt": "2026-09-04T12:51:21.426Z",
+          "observedAt": "2026-09-04T13:33:44.966Z",
+          "lastVerifiedAt": "2026-09-04T13:33:44.966Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -2007,8 +2007,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Kids Our Kids' Menu is specially designed for children 12 years and under, offering a variety of kid-friendly dishes that are nutritious and",
           "discoveredFrom": "https://wingnit.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:21.426Z",
-          "lastVerifiedAt": "2026-09-04T12:51:21.426Z",
+          "observedAt": "2026-09-04T13:33:44.966Z",
+          "lastVerifiedAt": "2026-09-04T13:33:44.966Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -2019,8 +2019,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Beverages Sip, savour, and refresh with every drink—quench your thirst with Wing'n It’s unbeatable beverage lineup!",
           "discoveredFrom": "https://wingnit.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:21.426Z",
-          "lastVerifiedAt": "2026-09-04T12:51:21.426Z",
+          "observedAt": "2026-09-04T13:33:44.966Z",
+          "lastVerifiedAt": "2026-09-04T13:33:44.966Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -2031,8 +2031,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Desserts End on a sweet note! Our desserts are the perfect finish to any feast—irresistibly delicious, every time!",
           "discoveredFrom": "https://wingnit.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:21.426Z",
-          "lastVerifiedAt": "2026-09-04T12:51:21.426Z",
+          "observedAt": "2026-09-04T13:33:44.966Z",
+          "lastVerifiedAt": "2026-09-04T13:33:44.966Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -2051,8 +2051,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Lockside Canteen",
       "website": "https://lemon.dog/",
       "resolvedUrl": "https://lemon.dog/",
-      "observedAt": "2026-09-04T12:50:57.055Z",
-      "lastVerifiedAt": "2026-09-04T12:50:57.055Z",
+      "observedAt": "2026-09-04T13:33:22.284Z",
+      "lastVerifiedAt": "2026-09-04T13:33:22.284Z",
       "scannedOwnedPages": [
         "https://lemon.dog/"
       ],
@@ -2068,8 +2068,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": true,
           "discoveredFrom": "https://lemon.dog/",
           "associationBasis": "shared_brand_profile",
-          "observedAt": "2026-09-04T12:50:57.055Z",
-          "lastVerifiedAt": "2026-09-04T12:50:57.055Z",
+          "observedAt": "2026-09-04T13:33:22.284Z",
+          "lastVerifiedAt": "2026-09-04T13:33:22.284Z",
           "reviewState": "verified_link",
           "confidence": "high",
           "status": "active"
@@ -2085,8 +2085,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://lemon.dog/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:57.055Z",
-          "lastVerifiedAt": "2026-09-04T12:50:57.055Z",
+          "observedAt": "2026-09-04T13:33:22.284Z",
+          "lastVerifiedAt": "2026-09-04T13:33:22.284Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -2102,8 +2102,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://lemon.dog/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:57.055Z",
-          "lastVerifiedAt": "2026-09-04T12:50:57.055Z",
+          "observedAt": "2026-09-04T13:33:22.284Z",
+          "lastVerifiedAt": "2026-09-04T13:33:22.284Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -2136,8 +2136,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "THE 5K CAFE",
       "website": "https://www.the5kcafe.ca/",
       "resolvedUrl": "https://www.the5kcafe.ca/",
-      "observedAt": "2026-09-04T12:51:10.098Z",
-      "lastVerifiedAt": "2026-09-04T12:51:10.098Z",
+      "observedAt": "2026-09-04T13:33:37.064Z",
+      "lastVerifiedAt": "2026-09-04T13:33:37.064Z",
       "scannedOwnedPages": [
         "https://www.the5kcafe.ca/",
         "https://www.the5kcafe.ca/about",
@@ -2155,8 +2155,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.the5kcafe.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:10.098Z",
-          "lastVerifiedAt": "2026-09-04T12:51:10.098Z",
+          "observedAt": "2026-09-04T13:33:37.064Z",
+          "lastVerifiedAt": "2026-09-04T13:33:37.064Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -2170,8 +2170,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Menu",
           "discoveredFrom": "https://www.the5kcafe.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:10.098Z",
-          "lastVerifiedAt": "2026-09-04T12:51:10.098Z",
+          "observedAt": "2026-09-04T13:33:37.064Z",
+          "lastVerifiedAt": "2026-09-04T13:33:37.064Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -2189,8 +2189,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Bicycle Thief",
       "website": "https://bicyclethief.ca/",
       "resolvedUrl": "https://bicyclethief.ca/",
-      "observedAt": "2026-09-04T12:50:44.468Z",
-      "lastVerifiedAt": "2026-09-04T12:50:44.468Z",
+      "observedAt": "2026-09-04T13:33:09.708Z",
+      "lastVerifiedAt": "2026-09-04T13:33:09.708Z",
       "scannedOwnedPages": [
         "https://bicyclethief.ca/",
         "https://bicyclethief.ca/contact-us-reservations/"
@@ -2207,8 +2207,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://bicyclethief.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:44.468Z",
-          "lastVerifiedAt": "2026-09-04T12:50:44.468Z",
+          "observedAt": "2026-09-04T13:33:09.708Z",
+          "lastVerifiedAt": "2026-09-04T13:33:09.708Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -2224,8 +2224,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://bicyclethief.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:44.468Z",
-          "lastVerifiedAt": "2026-09-04T12:50:44.468Z",
+          "observedAt": "2026-09-04T13:33:09.708Z",
+          "lastVerifiedAt": "2026-09-04T13:33:09.708Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -2241,8 +2241,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://bicyclethief.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:44.468Z",
-          "lastVerifiedAt": "2026-09-04T12:50:44.468Z",
+          "observedAt": "2026-09-04T13:33:09.708Z",
+          "lastVerifiedAt": "2026-09-04T13:33:09.708Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -2256,8 +2256,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Reservations",
           "discoveredFrom": "https://bicyclethief.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:44.468Z",
-          "lastVerifiedAt": "2026-09-04T12:50:44.468Z",
+          "observedAt": "2026-09-04T13:33:09.708Z",
+          "lastVerifiedAt": "2026-09-04T13:33:09.708Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -2281,8 +2281,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Humble Pie Kitchen",
       "website": "https://humblepiekitchen.ca/",
       "resolvedUrl": "https://humblepiekitchen.ca/",
-      "observedAt": "2026-09-04T12:50:54.030Z",
-      "lastVerifiedAt": "2026-09-04T12:50:54.030Z",
+      "observedAt": "2026-09-04T13:33:19.285Z",
+      "lastVerifiedAt": "2026-09-04T13:33:19.285Z",
       "scannedOwnedPages": [
         "https://humblepiekitchen.ca/"
       ],
@@ -2298,8 +2298,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://humblepiekitchen.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:54.030Z",
-          "lastVerifiedAt": "2026-09-04T12:50:54.030Z",
+          "observedAt": "2026-09-04T13:33:19.285Z",
+          "lastVerifiedAt": "2026-09-04T13:33:19.285Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -2315,8 +2315,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://humblepiekitchen.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:54.030Z",
-          "lastVerifiedAt": "2026-09-04T12:50:54.030Z",
+          "observedAt": "2026-09-04T13:33:19.285Z",
+          "lastVerifiedAt": "2026-09-04T13:33:19.285Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -2332,8 +2332,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://humblepiekitchen.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:54.030Z",
-          "lastVerifiedAt": "2026-09-04T12:50:54.030Z",
+          "observedAt": "2026-09-04T13:33:19.285Z",
+          "lastVerifiedAt": "2026-09-04T13:33:19.285Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -2347,8 +2347,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "PIE MENU",
           "discoveredFrom": "https://humblepiekitchen.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:54.030Z",
-          "lastVerifiedAt": "2026-09-04T12:50:54.030Z",
+          "observedAt": "2026-09-04T13:33:19.285Z",
+          "lastVerifiedAt": "2026-09-04T13:33:19.285Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -2381,8 +2381,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Freeman's Little New York",
       "website": "https://www.freemanspizza.ca/",
       "resolvedUrl": "https://www.freemanspizza.ca/",
-      "observedAt": "2026-09-04T12:50:49.420Z",
-      "lastVerifiedAt": "2026-09-04T12:50:49.420Z",
+      "observedAt": "2026-09-04T13:33:14.507Z",
+      "lastVerifiedAt": "2026-09-04T13:33:14.507Z",
       "scannedOwnedPages": [
         "https://www.freemanspizza.ca/",
         "https://www.freemanspizza.ca/about-us",
@@ -2397,8 +2397,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Our Menus",
           "discoveredFrom": "https://www.freemanspizza.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:49.420Z",
-          "lastVerifiedAt": "2026-09-04T12:50:49.420Z",
+          "observedAt": "2026-09-04T13:33:14.507Z",
+          "lastVerifiedAt": "2026-09-04T13:33:14.507Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -2409,8 +2409,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Order Online",
           "discoveredFrom": "https://www.freemanspizza.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:49.420Z",
-          "lastVerifiedAt": "2026-09-04T12:50:49.420Z",
+          "observedAt": "2026-09-04T13:33:14.507Z",
+          "lastVerifiedAt": "2026-09-04T13:33:14.507Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -2421,8 +2421,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Events",
           "discoveredFrom": "https://www.freemanspizza.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:49.420Z",
-          "lastVerifiedAt": "2026-09-04T12:50:49.420Z",
+          "observedAt": "2026-09-04T13:33:14.507Z",
+          "lastVerifiedAt": "2026-09-04T13:33:14.507Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -2440,8 +2440,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Uncommon Grounds",
       "website": "https://theuncommongroup.com/",
       "resolvedUrl": "https://theuncommongroup.com/",
-      "observedAt": "2026-09-04T12:51:20.242Z",
-      "lastVerifiedAt": "2026-09-04T12:51:20.242Z",
+      "observedAt": "2026-09-04T13:33:43.304Z",
+      "lastVerifiedAt": "2026-09-04T13:33:43.304Z",
       "scannedOwnedPages": [
         "https://theuncommongroup.com/",
         "https://theuncommongroup.com/pages/uncommon-grounds",
@@ -2461,8 +2461,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://theuncommongroup.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:20.242Z",
-          "lastVerifiedAt": "2026-09-04T12:51:20.242Z",
+          "observedAt": "2026-09-04T13:33:43.304Z",
+          "lastVerifiedAt": "2026-09-04T13:33:43.304Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -2482,8 +2482,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Kenny's Pizza",
       "website": "http://kennyspizzakearneylake.ca/",
       "resolvedUrl": "http://kennyspizzakearneylake.ca/",
-      "observedAt": "2026-09-04T12:50:56.037Z",
-      "lastVerifiedAt": "2026-09-04T12:50:56.037Z",
+      "observedAt": "2026-09-04T13:33:20.653Z",
+      "lastVerifiedAt": "2026-09-04T13:33:20.653Z",
       "scannedOwnedPages": [
         "http://kennyspizzakearneylake.ca/"
       ],
@@ -2496,8 +2496,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Order Menu",
           "discoveredFrom": "http://kennyspizzakearneylake.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:56.037Z",
-          "lastVerifiedAt": "2026-09-04T12:50:56.037Z",
+          "observedAt": "2026-09-04T13:33:20.653Z",
+          "lastVerifiedAt": "2026-09-04T13:33:20.653Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -2508,8 +2508,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Menu Close",
           "discoveredFrom": "http://kennyspizzakearneylake.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:56.037Z",
-          "lastVerifiedAt": "2026-09-04T12:50:56.037Z",
+          "observedAt": "2026-09-04T13:33:20.653Z",
+          "lastVerifiedAt": "2026-09-04T13:33:20.653Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -2549,8 +2549,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Charm School",
       "website": "https://unfuckingfiltered.com/",
       "resolvedUrl": "https://unfuckingfiltered.com/",
-      "observedAt": "2026-09-04T12:50:46.289Z",
-      "lastVerifiedAt": "2026-09-04T12:50:46.289Z",
+      "observedAt": "2026-09-04T13:33:10.699Z",
+      "lastVerifiedAt": "2026-09-04T13:33:10.699Z",
       "scannedOwnedPages": [
         "https://unfuckingfiltered.com/",
         "https://unfuckingfiltered.com/contact-us/"
@@ -2567,8 +2567,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://unfuckingfiltered.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:46.289Z",
-          "lastVerifiedAt": "2026-09-04T12:50:46.289Z",
+          "observedAt": "2026-09-04T13:33:10.699Z",
+          "lastVerifiedAt": "2026-09-04T13:33:10.699Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -2604,8 +2604,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Noggins Coburg",
       "website": "https://nogginsfarm.ca/farm-markets/coburg-market/",
       "resolvedUrl": "https://nogginsfarm.ca/farm-markets/coburg-market/",
-      "observedAt": "2026-09-04T12:51:01.649Z",
-      "lastVerifiedAt": "2026-09-04T12:51:01.649Z",
+      "observedAt": "2026-09-04T13:33:27.415Z",
+      "lastVerifiedAt": "2026-09-04T13:33:27.415Z",
       "scannedOwnedPages": [
         "https://nogginsfarm.ca/farm-markets/coburg-market/",
         "https://nogginsfarm.ca/faq-about-the-farm/",
@@ -2625,8 +2625,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://nogginsfarm.ca/farm-markets/coburg-market/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:01.649Z",
-          "lastVerifiedAt": "2026-09-04T12:51:01.649Z",
+          "observedAt": "2026-09-04T13:33:27.415Z",
+          "lastVerifiedAt": "2026-09-04T13:33:27.415Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -2642,8 +2642,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://nogginsfarm.ca/farm-markets/",
           "associationBasis": "linked_from_official_location_page",
-          "observedAt": "2026-09-04T12:51:01.649Z",
-          "lastVerifiedAt": "2026-09-04T12:51:01.649Z",
+          "observedAt": "2026-09-04T13:33:27.415Z",
+          "lastVerifiedAt": "2026-09-04T13:33:27.415Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -2659,8 +2659,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://nogginsfarm.ca/farm-markets/",
           "associationBasis": "linked_from_official_location_page",
-          "observedAt": "2026-09-04T12:51:01.649Z",
-          "lastVerifiedAt": "2026-09-04T12:51:01.649Z",
+          "observedAt": "2026-09-04T13:33:27.415Z",
+          "lastVerifiedAt": "2026-09-04T13:33:27.415Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -2676,8 +2676,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": true,
           "discoveredFrom": "https://nogginsfarm.ca/farm-markets/",
           "associationBasis": "shared_brand_profile",
-          "observedAt": "2026-09-04T12:51:01.649Z",
-          "lastVerifiedAt": "2026-09-04T12:51:01.649Z",
+          "observedAt": "2026-09-04T13:33:27.415Z",
+          "lastVerifiedAt": "2026-09-04T13:33:27.415Z",
           "reviewState": "verified_link",
           "confidence": "high",
           "status": "active"
@@ -2693,8 +2693,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://nogginsfarm.ca/farm-markets/",
           "associationBasis": "linked_from_official_location_page",
-          "observedAt": "2026-09-04T12:51:01.649Z",
-          "lastVerifiedAt": "2026-09-04T12:51:01.649Z",
+          "observedAt": "2026-09-04T13:33:27.415Z",
+          "lastVerifiedAt": "2026-09-04T13:33:27.415Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -2710,8 +2710,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://nogginsfarm.ca/farm-markets/",
           "associationBasis": "linked_from_official_location_page",
-          "observedAt": "2026-09-04T12:51:01.649Z",
-          "lastVerifiedAt": "2026-09-04T12:51:01.649Z",
+          "observedAt": "2026-09-04T13:33:27.415Z",
+          "lastVerifiedAt": "2026-09-04T13:33:27.415Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -2746,8 +2746,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Starbucks",
       "website": "https://dal.campusdish.com/LocationsAndMenus/StarbucksatTupperMedicalBuilding",
       "resolvedUrl": "https://dal.mydininghub.ca/en/locations",
-      "observedAt": "2026-09-04T12:50:49.366Z",
-      "lastVerifiedAt": "2026-09-04T12:50:49.366Z",
+      "observedAt": "2026-09-04T13:33:12.945Z",
+      "lastVerifiedAt": "2026-09-04T13:33:12.945Z",
       "scannedOwnedPages": [
         "https://dal.mydininghub.ca/en/locations",
         "https://dal.mydininghub.ca/en/locations",
@@ -2767,8 +2767,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://dal.mydininghub.ca/en/locations",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:49.366Z",
-          "lastVerifiedAt": "2026-09-04T12:50:49.366Z",
+          "observedAt": "2026-09-04T13:33:12.945Z",
+          "lastVerifiedAt": "2026-09-04T13:33:12.945Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -2784,8 +2784,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://dal.mydininghub.ca/en/about-us/connect-with-us",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:49.366Z",
-          "lastVerifiedAt": "2026-09-04T12:50:49.366Z",
+          "observedAt": "2026-09-04T13:33:12.945Z",
+          "lastVerifiedAt": "2026-09-04T13:33:12.945Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -2799,8 +2799,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "My Menu",
           "discoveredFrom": "https://dal.mydininghub.ca/en/locations",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:49.366Z",
-          "lastVerifiedAt": "2026-09-04T12:50:49.366Z",
+          "observedAt": "2026-09-04T13:33:12.945Z",
+          "lastVerifiedAt": "2026-09-04T13:33:12.945Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -2811,8 +2811,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Locations & Menus",
           "discoveredFrom": "https://dal.mydininghub.ca/en/account?section=my-locations",
           "associationBasis": "linked_from_official_location_page",
-          "observedAt": "2026-09-04T12:50:49.366Z",
-          "lastVerifiedAt": "2026-09-04T12:50:49.366Z",
+          "observedAt": "2026-09-04T13:33:12.945Z",
+          "lastVerifiedAt": "2026-09-04T13:33:12.945Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -2830,8 +2830,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Fillings Bistro 32",
       "website": "https://dal.campusdish.com/LocationsAndMenus/FillingsBistroatDentistry",
       "resolvedUrl": "https://dal.mydininghub.ca/en/locations",
-      "observedAt": "2026-09-04T12:50:47.159Z",
-      "lastVerifiedAt": "2026-09-04T12:50:47.159Z",
+      "observedAt": "2026-09-04T13:33:10.682Z",
+      "lastVerifiedAt": "2026-09-04T13:33:10.682Z",
       "scannedOwnedPages": [
         "https://dal.mydininghub.ca/en/locations",
         "https://dal.mydininghub.ca/en/locations",
@@ -2851,8 +2851,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://dal.mydininghub.ca/en/locations",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:47.159Z",
-          "lastVerifiedAt": "2026-09-04T12:50:47.159Z",
+          "observedAt": "2026-09-04T13:33:10.682Z",
+          "lastVerifiedAt": "2026-09-04T13:33:10.682Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -2868,8 +2868,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://dal.mydininghub.ca/en/about-us/connect-with-us",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:47.159Z",
-          "lastVerifiedAt": "2026-09-04T12:50:47.159Z",
+          "observedAt": "2026-09-04T13:33:10.682Z",
+          "lastVerifiedAt": "2026-09-04T13:33:10.682Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -2883,8 +2883,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "My Menu",
           "discoveredFrom": "https://dal.mydininghub.ca/en/locations",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:47.159Z",
-          "lastVerifiedAt": "2026-09-04T12:50:47.159Z",
+          "observedAt": "2026-09-04T13:33:10.682Z",
+          "lastVerifiedAt": "2026-09-04T13:33:10.682Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -2895,8 +2895,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Locations & Menus",
           "discoveredFrom": "https://dal.mydininghub.ca/en/account?section=my-locations",
           "associationBasis": "linked_from_official_location_page",
-          "observedAt": "2026-09-04T12:50:47.159Z",
-          "lastVerifiedAt": "2026-09-04T12:50:47.159Z",
+          "observedAt": "2026-09-04T13:33:10.682Z",
+          "lastVerifiedAt": "2026-09-04T13:33:10.682Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -2914,8 +2914,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Tim Hortons",
       "website": "https://dal.campusdish.com/LocationsAndMenus/LifeSciencesCentre/TimHortons",
       "resolvedUrl": "https://dal.mydininghub.ca/en/locations",
-      "observedAt": "2026-09-04T12:50:49.817Z",
-      "lastVerifiedAt": "2026-09-04T12:50:49.817Z",
+      "observedAt": "2026-09-04T13:33:13.388Z",
+      "lastVerifiedAt": "2026-09-04T13:33:13.388Z",
       "scannedOwnedPages": [
         "https://dal.mydininghub.ca/en/locations",
         "https://dal.mydininghub.ca/en/locations",
@@ -2935,8 +2935,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://dal.mydininghub.ca/en/locations",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:49.817Z",
-          "lastVerifiedAt": "2026-09-04T12:50:49.817Z",
+          "observedAt": "2026-09-04T13:33:13.388Z",
+          "lastVerifiedAt": "2026-09-04T13:33:13.388Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -2952,8 +2952,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://dal.mydininghub.ca/en/about-us/connect-with-us",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:49.817Z",
-          "lastVerifiedAt": "2026-09-04T12:50:49.817Z",
+          "observedAt": "2026-09-04T13:33:13.388Z",
+          "lastVerifiedAt": "2026-09-04T13:33:13.388Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -2967,8 +2967,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "My Menu",
           "discoveredFrom": "https://dal.mydininghub.ca/en/locations",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:49.817Z",
-          "lastVerifiedAt": "2026-09-04T12:50:49.817Z",
+          "observedAt": "2026-09-04T13:33:13.388Z",
+          "lastVerifiedAt": "2026-09-04T13:33:13.388Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -2979,8 +2979,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Locations & Menus",
           "discoveredFrom": "https://dal.mydininghub.ca/en/account?section=my-locations",
           "associationBasis": "linked_from_official_location_page",
-          "observedAt": "2026-09-04T12:50:49.817Z",
-          "lastVerifiedAt": "2026-09-04T12:50:49.817Z",
+          "observedAt": "2026-09-04T13:33:13.388Z",
+          "lastVerifiedAt": "2026-09-04T13:33:13.388Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -2998,8 +2998,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Zoca",
       "website": "https://dal.campusdish.com/LocationsAndMenus/LifeSciencesCentre/Zoca",
       "resolvedUrl": "https://dal.mydininghub.ca/en/locations",
-      "observedAt": "2026-09-04T12:50:50.271Z",
-      "lastVerifiedAt": "2026-09-04T12:50:50.271Z",
+      "observedAt": "2026-09-04T13:33:13.854Z",
+      "lastVerifiedAt": "2026-09-04T13:33:13.854Z",
       "scannedOwnedPages": [
         "https://dal.mydininghub.ca/en/locations",
         "https://dal.mydininghub.ca/en/locations",
@@ -3019,8 +3019,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://dal.mydininghub.ca/en/locations",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:50.271Z",
-          "lastVerifiedAt": "2026-09-04T12:50:50.271Z",
+          "observedAt": "2026-09-04T13:33:13.854Z",
+          "lastVerifiedAt": "2026-09-04T13:33:13.854Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -3036,8 +3036,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://dal.mydininghub.ca/en/about-us/connect-with-us",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:50.271Z",
-          "lastVerifiedAt": "2026-09-04T12:50:50.271Z",
+          "observedAt": "2026-09-04T13:33:13.854Z",
+          "lastVerifiedAt": "2026-09-04T13:33:13.854Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -3051,8 +3051,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "My Menu",
           "discoveredFrom": "https://dal.mydininghub.ca/en/locations",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:50.271Z",
-          "lastVerifiedAt": "2026-09-04T12:50:50.271Z",
+          "observedAt": "2026-09-04T13:33:13.854Z",
+          "lastVerifiedAt": "2026-09-04T13:33:13.854Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -3063,8 +3063,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Locations & Menus",
           "discoveredFrom": "https://dal.mydininghub.ca/en/account?section=my-locations",
           "associationBasis": "linked_from_official_location_page",
-          "observedAt": "2026-09-04T12:50:50.271Z",
-          "lastVerifiedAt": "2026-09-04T12:50:50.271Z",
+          "observedAt": "2026-09-04T13:33:13.854Z",
+          "lastVerifiedAt": "2026-09-04T13:33:13.854Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -3082,8 +3082,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Pizza Pizza",
       "website": "https://dal.campusdish.com/LocationsAndMenus/LifeSciencesCentre/PizzaPizza",
       "resolvedUrl": "https://dal.mydininghub.ca/en/locations",
-      "observedAt": "2026-09-04T12:50:48.930Z",
-      "lastVerifiedAt": "2026-09-04T12:50:48.930Z",
+      "observedAt": "2026-09-04T13:33:12.503Z",
+      "lastVerifiedAt": "2026-09-04T13:33:12.503Z",
       "scannedOwnedPages": [
         "https://dal.mydininghub.ca/en/locations",
         "https://dal.mydininghub.ca/en/locations",
@@ -3103,8 +3103,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://dal.mydininghub.ca/en/locations",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:48.930Z",
-          "lastVerifiedAt": "2026-09-04T12:50:48.930Z",
+          "observedAt": "2026-09-04T13:33:12.503Z",
+          "lastVerifiedAt": "2026-09-04T13:33:12.503Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -3120,8 +3120,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://dal.mydininghub.ca/en/about-us/connect-with-us",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:48.930Z",
-          "lastVerifiedAt": "2026-09-04T12:50:48.930Z",
+          "observedAt": "2026-09-04T13:33:12.503Z",
+          "lastVerifiedAt": "2026-09-04T13:33:12.503Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -3135,8 +3135,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "My Menu",
           "discoveredFrom": "https://dal.mydininghub.ca/en/locations",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:48.930Z",
-          "lastVerifiedAt": "2026-09-04T12:50:48.930Z",
+          "observedAt": "2026-09-04T13:33:12.503Z",
+          "lastVerifiedAt": "2026-09-04T13:33:12.503Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -3147,8 +3147,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Locations & Menus",
           "discoveredFrom": "https://dal.mydininghub.ca/en/account?section=my-locations",
           "associationBasis": "linked_from_official_location_page",
-          "observedAt": "2026-09-04T12:50:48.930Z",
-          "lastVerifiedAt": "2026-09-04T12:50:48.930Z",
+          "observedAt": "2026-09-04T13:33:12.503Z",
+          "lastVerifiedAt": "2026-09-04T13:33:12.503Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -3166,8 +3166,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Grille Works",
       "website": "https://dal.campusdish.com/LocationsAndMenus/LifeSciencesCentre/GrilleWorks",
       "resolvedUrl": "https://dal.mydininghub.ca/en/locations",
-      "observedAt": "2026-09-04T12:50:48.039Z",
-      "lastVerifiedAt": "2026-09-04T12:50:48.039Z",
+      "observedAt": "2026-09-04T13:33:11.601Z",
+      "lastVerifiedAt": "2026-09-04T13:33:11.601Z",
       "scannedOwnedPages": [
         "https://dal.mydininghub.ca/en/locations",
         "https://dal.mydininghub.ca/en/locations",
@@ -3187,8 +3187,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://dal.mydininghub.ca/en/locations",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:48.039Z",
-          "lastVerifiedAt": "2026-09-04T12:50:48.039Z",
+          "observedAt": "2026-09-04T13:33:11.601Z",
+          "lastVerifiedAt": "2026-09-04T13:33:11.601Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -3204,8 +3204,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://dal.mydininghub.ca/en/about-us/connect-with-us",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:48.039Z",
-          "lastVerifiedAt": "2026-09-04T12:50:48.039Z",
+          "observedAt": "2026-09-04T13:33:11.601Z",
+          "lastVerifiedAt": "2026-09-04T13:33:11.601Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -3219,8 +3219,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "My Menu",
           "discoveredFrom": "https://dal.mydininghub.ca/en/locations",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:48.039Z",
-          "lastVerifiedAt": "2026-09-04T12:50:48.039Z",
+          "observedAt": "2026-09-04T13:33:11.601Z",
+          "lastVerifiedAt": "2026-09-04T13:33:11.601Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -3231,8 +3231,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Locations & Menus",
           "discoveredFrom": "https://dal.mydininghub.ca/en/account?section=my-locations",
           "associationBasis": "linked_from_official_location_page",
-          "observedAt": "2026-09-04T12:50:48.039Z",
-          "lastVerifiedAt": "2026-09-04T12:50:48.039Z",
+          "observedAt": "2026-09-04T13:33:11.601Z",
+          "lastVerifiedAt": "2026-09-04T13:33:11.601Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -3250,8 +3250,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Brief Break",
       "website": "https://dal.campusdish.com/LocationsAndMenus/WeldonLawBuilding",
       "resolvedUrl": "https://dal.mydininghub.ca/en/locations",
-      "observedAt": "2026-09-04T12:50:45.354Z",
-      "lastVerifiedAt": "2026-09-04T12:50:45.354Z",
+      "observedAt": "2026-09-04T13:33:09.805Z",
+      "lastVerifiedAt": "2026-09-04T13:33:09.805Z",
       "scannedOwnedPages": [
         "https://dal.mydininghub.ca/en/locations",
         "https://dal.mydininghub.ca/en/locations",
@@ -3271,8 +3271,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://dal.mydininghub.ca/en/locations",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:45.354Z",
-          "lastVerifiedAt": "2026-09-04T12:50:45.354Z",
+          "observedAt": "2026-09-04T13:33:09.805Z",
+          "lastVerifiedAt": "2026-09-04T13:33:09.805Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -3288,8 +3288,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://dal.mydininghub.ca/en/about-us/connect-with-us",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:45.354Z",
-          "lastVerifiedAt": "2026-09-04T12:50:45.354Z",
+          "observedAt": "2026-09-04T13:33:09.805Z",
+          "lastVerifiedAt": "2026-09-04T13:33:09.805Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -3303,8 +3303,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "My Menu",
           "discoveredFrom": "https://dal.mydininghub.ca/en/locations",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:45.354Z",
-          "lastVerifiedAt": "2026-09-04T12:50:45.354Z",
+          "observedAt": "2026-09-04T13:33:09.805Z",
+          "lastVerifiedAt": "2026-09-04T13:33:09.805Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -3315,8 +3315,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Locations & Menus",
           "discoveredFrom": "https://dal.mydininghub.ca/en/account?section=my-locations",
           "associationBasis": "linked_from_official_location_page",
-          "observedAt": "2026-09-04T12:50:45.354Z",
-          "lastVerifiedAt": "2026-09-04T12:50:45.354Z",
+          "observedAt": "2026-09-04T13:33:09.805Z",
+          "lastVerifiedAt": "2026-09-04T13:33:09.805Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -3334,8 +3334,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Green Café",
       "website": "https://dal.campusdish.com/LocationsAndMenus/GreenCafeatRoweManagementBuilding",
       "resolvedUrl": "https://dal.mydininghub.ca/en/locations",
-      "observedAt": "2026-09-04T12:50:47.595Z",
-      "lastVerifiedAt": "2026-09-04T12:50:47.595Z",
+      "observedAt": "2026-09-04T13:33:11.142Z",
+      "lastVerifiedAt": "2026-09-04T13:33:11.142Z",
       "scannedOwnedPages": [
         "https://dal.mydininghub.ca/en/locations",
         "https://dal.mydininghub.ca/en/locations",
@@ -3355,8 +3355,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://dal.mydininghub.ca/en/locations",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:47.595Z",
-          "lastVerifiedAt": "2026-09-04T12:50:47.595Z",
+          "observedAt": "2026-09-04T13:33:11.142Z",
+          "lastVerifiedAt": "2026-09-04T13:33:11.142Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -3372,8 +3372,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://dal.mydininghub.ca/en/about-us/connect-with-us",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:47.595Z",
-          "lastVerifiedAt": "2026-09-04T12:50:47.595Z",
+          "observedAt": "2026-09-04T13:33:11.142Z",
+          "lastVerifiedAt": "2026-09-04T13:33:11.142Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -3387,8 +3387,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "My Menu",
           "discoveredFrom": "https://dal.mydininghub.ca/en/locations",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:47.595Z",
-          "lastVerifiedAt": "2026-09-04T12:50:47.595Z",
+          "observedAt": "2026-09-04T13:33:11.142Z",
+          "lastVerifiedAt": "2026-09-04T13:33:11.142Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -3399,8 +3399,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Locations & Menus",
           "discoveredFrom": "https://dal.mydininghub.ca/en/account?section=my-locations",
           "associationBasis": "linked_from_official_location_page",
-          "observedAt": "2026-09-04T12:50:47.595Z",
-          "lastVerifiedAt": "2026-09-04T12:50:47.595Z",
+          "observedAt": "2026-09-04T13:33:11.142Z",
+          "lastVerifiedAt": "2026-09-04T13:33:11.142Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -3418,8 +3418,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Ground Zero",
       "website": "https://dal.campusdish.com/LocationsAndMenus/GroundZero",
       "resolvedUrl": "https://dal.mydininghub.ca/en/locations",
-      "observedAt": "2026-09-04T12:50:48.473Z",
-      "lastVerifiedAt": "2026-09-04T12:50:48.473Z",
+      "observedAt": "2026-09-04T13:33:12.048Z",
+      "lastVerifiedAt": "2026-09-04T13:33:12.048Z",
       "scannedOwnedPages": [
         "https://dal.mydininghub.ca/en/locations",
         "https://dal.mydininghub.ca/en/locations",
@@ -3439,8 +3439,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://dal.mydininghub.ca/en/locations",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:48.473Z",
-          "lastVerifiedAt": "2026-09-04T12:50:48.473Z",
+          "observedAt": "2026-09-04T13:33:12.048Z",
+          "lastVerifiedAt": "2026-09-04T13:33:12.048Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -3456,8 +3456,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://dal.mydininghub.ca/en/about-us/connect-with-us",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:48.473Z",
-          "lastVerifiedAt": "2026-09-04T12:50:48.473Z",
+          "observedAt": "2026-09-04T13:33:12.048Z",
+          "lastVerifiedAt": "2026-09-04T13:33:12.048Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -3471,8 +3471,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "My Menu",
           "discoveredFrom": "https://dal.mydininghub.ca/en/locations",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:48.473Z",
-          "lastVerifiedAt": "2026-09-04T12:50:48.473Z",
+          "observedAt": "2026-09-04T13:33:12.048Z",
+          "lastVerifiedAt": "2026-09-04T13:33:12.048Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -3483,8 +3483,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Locations & Menus",
           "discoveredFrom": "https://dal.mydininghub.ca/en/account?section=my-locations",
           "associationBasis": "linked_from_official_location_page",
-          "observedAt": "2026-09-04T12:50:48.473Z",
-          "lastVerifiedAt": "2026-09-04T12:50:48.473Z",
+          "observedAt": "2026-09-04T13:33:12.048Z",
+          "lastVerifiedAt": "2026-09-04T13:33:12.048Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -3502,8 +3502,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Doraku",
       "website": "https://doraku.yolasite.com/",
       "resolvedUrl": "https://doraku.yolasite.com/",
-      "observedAt": "2026-09-04T12:50:48.648Z",
-      "lastVerifiedAt": "2026-09-04T12:50:48.648Z",
+      "observedAt": "2026-09-04T13:33:13.403Z",
+      "lastVerifiedAt": "2026-09-04T13:33:13.403Z",
       "scannedOwnedPages": [
         "https://doraku.yolasite.com/"
       ],
@@ -3519,8 +3519,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://doraku.yolasite.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:48.648Z",
-          "lastVerifiedAt": "2026-09-04T12:50:48.648Z",
+          "observedAt": "2026-09-04T13:33:13.403Z",
+          "lastVerifiedAt": "2026-09-04T13:33:13.403Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -3536,8 +3536,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://doraku.yolasite.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:48.648Z",
-          "lastVerifiedAt": "2026-09-04T12:50:48.648Z",
+          "observedAt": "2026-09-04T13:33:13.403Z",
+          "lastVerifiedAt": "2026-09-04T13:33:13.403Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -3557,8 +3557,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Sushi Shige",
       "website": "https://www.shige.ca/",
       "resolvedUrl": "https://www.shige.ca/",
-      "observedAt": "2026-09-04T12:51:09.241Z",
-      "lastVerifiedAt": "2026-09-04T12:51:09.241Z",
+      "observedAt": "2026-09-04T13:33:36.470Z",
+      "lastVerifiedAt": "2026-09-04T13:33:36.470Z",
       "scannedOwnedPages": [
         "https://www.shige.ca/"
       ],
@@ -3574,8 +3574,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.shige.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:09.241Z",
-          "lastVerifiedAt": "2026-09-04T12:51:09.241Z",
+          "observedAt": "2026-09-04T13:33:36.470Z",
+          "lastVerifiedAt": "2026-09-04T13:33:36.470Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -3591,8 +3591,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.shige.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:09.241Z",
-          "lastVerifiedAt": "2026-09-04T12:51:09.241Z",
+          "observedAt": "2026-09-04T13:33:36.470Z",
+          "lastVerifiedAt": "2026-09-04T13:33:36.470Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -3608,8 +3608,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.shige.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:09.241Z",
-          "lastVerifiedAt": "2026-09-04T12:51:09.241Z",
+          "observedAt": "2026-09-04T13:33:36.470Z",
+          "lastVerifiedAt": "2026-09-04T13:33:36.470Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -3623,8 +3623,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "ORDER ONLINE PlCKUP",
           "discoveredFrom": "https://www.shige.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:09.241Z",
-          "lastVerifiedAt": "2026-09-04T12:51:09.241Z",
+          "observedAt": "2026-09-04T13:33:36.470Z",
+          "lastVerifiedAt": "2026-09-04T13:33:36.470Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -3635,8 +3635,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "DELIVERY",
           "discoveredFrom": "https://www.shige.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:09.241Z",
-          "lastVerifiedAt": "2026-09-04T12:51:09.241Z",
+          "observedAt": "2026-09-04T13:33:36.470Z",
+          "lastVerifiedAt": "2026-09-04T13:33:36.470Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -3647,8 +3647,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "VIEW MENU",
           "discoveredFrom": "https://www.shige.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:09.241Z",
-          "lastVerifiedAt": "2026-09-04T12:51:09.241Z",
+          "observedAt": "2026-09-04T13:33:36.470Z",
+          "lastVerifiedAt": "2026-09-04T13:33:36.470Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -3674,8 +3674,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Sushi Cove",
       "website": "https://sushicovehalifax.com/",
       "resolvedUrl": "https://sushisquare.ca/",
-      "observedAt": "2026-09-04T12:51:08.885Z",
-      "lastVerifiedAt": "2026-09-04T12:51:08.885Z",
+      "observedAt": "2026-09-04T13:33:35.786Z",
+      "lastVerifiedAt": "2026-09-04T13:33:35.786Z",
       "scannedOwnedPages": [
         "https://sushisquare.ca/",
         "https://sushisquare.ca/contact/"
@@ -3692,8 +3692,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://sushisquare.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:08.885Z",
-          "lastVerifiedAt": "2026-09-04T12:51:08.885Z",
+          "observedAt": "2026-09-04T13:33:35.786Z",
+          "lastVerifiedAt": "2026-09-04T13:33:35.786Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -3707,8 +3707,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Menu",
           "discoveredFrom": "https://sushisquare.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:08.885Z",
-          "lastVerifiedAt": "2026-09-04T12:51:08.885Z",
+          "observedAt": "2026-09-04T13:33:35.786Z",
+          "lastVerifiedAt": "2026-09-04T13:33:35.786Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -3741,8 +3741,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Kanpai Izakaya",
       "website": "https://kanpaiizakaya.com/",
       "resolvedUrl": "https://kanpaiizakaya.com/",
-      "observedAt": "2026-09-04T12:50:55.900Z",
-      "lastVerifiedAt": "2026-09-04T12:50:55.900Z",
+      "observedAt": "2026-09-04T13:33:20.475Z",
+      "lastVerifiedAt": "2026-09-04T13:33:20.475Z",
       "scannedOwnedPages": [
         "https://kanpaiizakaya.com/",
         "https://kanpaiizakaya.com/about-us"
@@ -3759,8 +3759,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://kanpaiizakaya.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:55.900Z",
-          "lastVerifiedAt": "2026-09-04T12:50:55.900Z",
+          "observedAt": "2026-09-04T13:33:20.475Z",
+          "lastVerifiedAt": "2026-09-04T13:33:20.475Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -3776,8 +3776,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://kanpaiizakaya.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:55.900Z",
-          "lastVerifiedAt": "2026-09-04T12:50:55.900Z",
+          "observedAt": "2026-09-04T13:33:20.475Z",
+          "lastVerifiedAt": "2026-09-04T13:33:20.475Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -3791,8 +3791,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Menu",
           "discoveredFrom": "https://kanpaiizakaya.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:55.900Z",
-          "lastVerifiedAt": "2026-09-04T12:50:55.900Z",
+          "observedAt": "2026-09-04T13:33:20.475Z",
+          "lastVerifiedAt": "2026-09-04T13:33:20.475Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -3808,8 +3808,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Kofuku Japanese and Thai",
       "website": "https://www.kofukujapaneseandthai.ca/",
       "resolvedUrl": "https://www.kofukujapaneseandthai.ca/",
-      "observedAt": "2026-09-04T12:50:56.100Z",
-      "lastVerifiedAt": "2026-09-04T12:50:56.100Z",
+      "observedAt": "2026-09-04T13:33:20.794Z",
+      "lastVerifiedAt": "2026-09-04T13:33:20.794Z",
       "scannedOwnedPages": [
         "https://www.kofukujapaneseandthai.ca/",
         "https://www.kofukujapaneseandthai.ca/service/about/",
@@ -3827,8 +3827,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.kofukujapaneseandthai.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:56.100Z",
-          "lastVerifiedAt": "2026-09-04T12:50:56.100Z",
+          "observedAt": "2026-09-04T13:33:20.794Z",
+          "lastVerifiedAt": "2026-09-04T13:33:20.794Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -3844,8 +3844,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.kofukujapaneseandthai.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:56.100Z",
-          "lastVerifiedAt": "2026-09-04T12:50:56.100Z",
+          "observedAt": "2026-09-04T13:33:20.794Z",
+          "lastVerifiedAt": "2026-09-04T13:33:20.794Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -3859,8 +3859,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Order Online",
           "discoveredFrom": "https://www.kofukujapaneseandthai.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:56.100Z",
-          "lastVerifiedAt": "2026-09-04T12:50:56.100Z",
+          "observedAt": "2026-09-04T13:33:20.794Z",
+          "lastVerifiedAt": "2026-09-04T13:33:20.794Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -3871,8 +3871,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Order online",
           "discoveredFrom": "https://www.kofukujapaneseandthai.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:56.100Z",
-          "lastVerifiedAt": "2026-09-04T12:50:56.100Z",
+          "observedAt": "2026-09-04T13:33:20.794Z",
+          "lastVerifiedAt": "2026-09-04T13:33:20.794Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -3898,8 +3898,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Sushi Nami Royale",
       "website": "https://sushinami.ca/",
       "resolvedUrl": "https://sushinami.ca/",
-      "observedAt": "2026-09-04T12:51:15.245Z",
-      "lastVerifiedAt": "2026-09-04T12:51:15.245Z",
+      "observedAt": "2026-09-04T13:33:40.450Z",
+      "lastVerifiedAt": "2026-09-04T13:33:40.450Z",
       "scannedOwnedPages": [
         "https://sushinami.ca/",
         "https://sushinami.ca/",
@@ -3919,8 +3919,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://sushinami.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:15.245Z",
-          "lastVerifiedAt": "2026-09-04T12:51:15.245Z",
+          "observedAt": "2026-09-04T13:33:40.450Z",
+          "lastVerifiedAt": "2026-09-04T13:33:40.450Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -3936,8 +3936,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://sushinami.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:15.245Z",
-          "lastVerifiedAt": "2026-09-04T12:51:15.245Z",
+          "observedAt": "2026-09-04T13:33:40.450Z",
+          "lastVerifiedAt": "2026-09-04T13:33:40.450Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -3953,8 +3953,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://sushinami.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:15.245Z",
-          "lastVerifiedAt": "2026-09-04T12:51:15.245Z",
+          "observedAt": "2026-09-04T13:33:40.450Z",
+          "lastVerifiedAt": "2026-09-04T13:33:40.450Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -3968,8 +3968,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Lunch Menu",
           "discoveredFrom": "https://sushinami.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:15.245Z",
-          "lastVerifiedAt": "2026-09-04T12:51:15.245Z",
+          "observedAt": "2026-09-04T13:33:40.450Z",
+          "lastVerifiedAt": "2026-09-04T13:33:40.450Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -3980,8 +3980,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Take Out Menu",
           "discoveredFrom": "https://sushinami.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:15.245Z",
-          "lastVerifiedAt": "2026-09-04T12:51:15.245Z",
+          "observedAt": "2026-09-04T13:33:40.450Z",
+          "lastVerifiedAt": "2026-09-04T13:33:40.450Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -3992,8 +3992,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Lunch Menu",
           "discoveredFrom": "https://sushinami.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:15.245Z",
-          "lastVerifiedAt": "2026-09-04T12:51:15.245Z",
+          "observedAt": "2026-09-04T13:33:40.450Z",
+          "lastVerifiedAt": "2026-09-04T13:33:40.450Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -4004,8 +4004,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Lunch Menu",
           "discoveredFrom": "https://sushinami.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:15.245Z",
-          "lastVerifiedAt": "2026-09-04T12:51:15.245Z",
+          "observedAt": "2026-09-04T13:33:40.450Z",
+          "lastVerifiedAt": "2026-09-04T13:33:40.450Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -4016,8 +4016,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Lunch Menu",
           "discoveredFrom": "https://sushinami.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:15.245Z",
-          "lastVerifiedAt": "2026-09-04T12:51:15.245Z",
+          "observedAt": "2026-09-04T13:33:40.450Z",
+          "lastVerifiedAt": "2026-09-04T13:33:40.450Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -4028,8 +4028,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Private Events",
           "discoveredFrom": "https://sushinami.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:15.245Z",
-          "lastVerifiedAt": "2026-09-04T12:51:15.245Z",
+          "observedAt": "2026-09-04T13:33:40.450Z",
+          "lastVerifiedAt": "2026-09-04T13:33:40.450Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -4040,8 +4040,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "See Dinner Menu",
           "discoveredFrom": "https://sushinami.ca/downtown-halifax/",
           "associationBasis": "linked_from_official_location_page",
-          "observedAt": "2026-09-04T12:51:15.245Z",
-          "lastVerifiedAt": "2026-09-04T12:51:15.245Z",
+          "observedAt": "2026-09-04T13:33:40.450Z",
+          "lastVerifiedAt": "2026-09-04T13:33:40.450Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -4052,8 +4052,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "See Dinner Menu",
           "discoveredFrom": "https://sushinami.ca/bayers-lake/",
           "associationBasis": "linked_from_official_location_page",
-          "observedAt": "2026-09-04T12:51:15.245Z",
-          "lastVerifiedAt": "2026-09-04T12:51:15.245Z",
+          "observedAt": "2026-09-04T13:33:40.450Z",
+          "lastVerifiedAt": "2026-09-04T13:33:40.450Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -4064,8 +4064,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "See Dinner Menu",
           "discoveredFrom": "https://sushinami.ca/dartmouth-crossing/",
           "associationBasis": "linked_from_official_location_page",
-          "observedAt": "2026-09-04T12:51:15.245Z",
-          "lastVerifiedAt": "2026-09-04T12:51:15.245Z",
+          "observedAt": "2026-09-04T13:33:40.450Z",
+          "lastVerifiedAt": "2026-09-04T13:33:40.450Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -4096,8 +4096,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "JUKAI Japanese & Thai",
       "website": "https://www.jukairestaurant.com/",
       "resolvedUrl": "https://www.jukairestaurant.com/",
-      "observedAt": "2026-09-04T12:51:07.743Z",
-      "lastVerifiedAt": "2026-09-04T12:51:07.743Z",
+      "observedAt": "2026-09-04T13:33:20.845Z",
+      "lastVerifiedAt": "2026-09-04T13:33:20.845Z",
       "scannedOwnedPages": [
         "https://www.jukairestaurant.com/"
       ],
@@ -4110,8 +4110,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Order Online",
           "discoveredFrom": "https://www.jukairestaurant.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:07.743Z",
-          "lastVerifiedAt": "2026-09-04T12:51:07.743Z",
+          "observedAt": "2026-09-04T13:33:20.845Z",
+          "lastVerifiedAt": "2026-09-04T13:33:20.845Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -4129,8 +4129,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Mizu Sushi",
       "website": "https://mizutakeout.ca/",
       "resolvedUrl": "https://mizutakeout.ca/",
-      "observedAt": "2026-09-04T12:50:59.833Z",
-      "lastVerifiedAt": "2026-09-04T12:50:59.833Z",
+      "observedAt": "2026-09-04T13:33:26.149Z",
+      "lastVerifiedAt": "2026-09-04T13:33:26.149Z",
       "scannedOwnedPages": [
         "https://mizutakeout.ca/"
       ],
@@ -4147,8 +4147,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Tako Sushi & Ramen",
       "website": "https://www.takosushiramen.ca/",
       "resolvedUrl": "https://www.takosushiramen.ca/",
-      "observedAt": "2026-09-04T12:51:09.793Z",
-      "lastVerifiedAt": "2026-09-04T12:51:09.793Z",
+      "observedAt": "2026-09-04T13:33:36.880Z",
+      "lastVerifiedAt": "2026-09-04T13:33:36.880Z",
       "scannedOwnedPages": [
         "https://www.takosushiramen.ca/",
         "https://www.takosushiramen.ca/contact"
@@ -4165,8 +4165,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.takosushiramen.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:09.793Z",
-          "lastVerifiedAt": "2026-09-04T12:51:09.793Z",
+          "observedAt": "2026-09-04T13:33:36.880Z",
+          "lastVerifiedAt": "2026-09-04T13:33:36.880Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -4180,8 +4180,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Menu",
           "discoveredFrom": "https://www.takosushiramen.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:09.793Z",
-          "lastVerifiedAt": "2026-09-04T12:51:09.793Z",
+          "observedAt": "2026-09-04T13:33:36.880Z",
+          "lastVerifiedAt": "2026-09-04T13:33:36.880Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -4192,8 +4192,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Tempura",
           "discoveredFrom": "https://www.takosushiramen.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:09.793Z",
-          "lastVerifiedAt": "2026-09-04T12:51:09.793Z",
+          "observedAt": "2026-09-04T13:33:36.880Z",
+          "lastVerifiedAt": "2026-09-04T13:33:36.880Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -4204,8 +4204,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Entrees",
           "discoveredFrom": "https://www.takosushiramen.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:09.793Z",
-          "lastVerifiedAt": "2026-09-04T12:51:09.793Z",
+          "observedAt": "2026-09-04T13:33:36.880Z",
+          "lastVerifiedAt": "2026-09-04T13:33:36.880Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -4216,8 +4216,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Ramen",
           "discoveredFrom": "https://www.takosushiramen.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:09.793Z",
-          "lastVerifiedAt": "2026-09-04T12:51:09.793Z",
+          "observedAt": "2026-09-04T13:33:36.880Z",
+          "lastVerifiedAt": "2026-09-04T13:33:36.880Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -4228,8 +4228,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Party Tray",
           "discoveredFrom": "https://www.takosushiramen.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:09.793Z",
-          "lastVerifiedAt": "2026-09-04T12:51:09.793Z",
+          "observedAt": "2026-09-04T13:33:36.880Z",
+          "lastVerifiedAt": "2026-09-04T13:33:36.880Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -4240,8 +4240,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Lunch Special",
           "discoveredFrom": "https://www.takosushiramen.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:09.793Z",
-          "lastVerifiedAt": "2026-09-04T12:51:09.793Z",
+          "observedAt": "2026-09-04T13:33:36.880Z",
+          "lastVerifiedAt": "2026-09-04T13:33:36.880Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -4257,8 +4257,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Mizu Sushi",
       "website": "https://mizutakeout.ca/",
       "resolvedUrl": "https://mizutakeout.ca/",
-      "observedAt": "2026-09-04T12:51:00.253Z",
-      "lastVerifiedAt": "2026-09-04T12:51:00.253Z",
+      "observedAt": "2026-09-04T13:33:26.569Z",
+      "lastVerifiedAt": "2026-09-04T13:33:26.569Z",
       "scannedOwnedPages": [
         "https://mizutakeout.ca/"
       ],
@@ -4275,8 +4275,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Lady Hammond Grill",
       "website": "https://chebuctoinn.com/lhg-diner/",
       "resolvedUrl": "https://chebuctoinn.com/lhg-diner/",
-      "observedAt": "2026-09-04T12:50:56.302Z",
-      "lastVerifiedAt": "2026-09-04T12:50:56.302Z",
+      "observedAt": "2026-09-04T13:33:21.272Z",
+      "lastVerifiedAt": "2026-09-04T13:33:21.272Z",
       "scannedOwnedPages": [
         "https://chebuctoinn.com/lhg-diner/",
         "https://chebuctoinn.com/our-story/",
@@ -4291,8 +4291,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Our Menu",
           "discoveredFrom": "https://chebuctoinn.com/lhg-diner/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:56.302Z",
-          "lastVerifiedAt": "2026-09-04T12:50:56.302Z",
+          "observedAt": "2026-09-04T13:33:21.272Z",
+          "lastVerifiedAt": "2026-09-04T13:33:21.272Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -4303,8 +4303,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Search and reserve your room online,",
           "discoveredFrom": "https://chebuctoinn.com/contact-us/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:56.302Z",
-          "lastVerifiedAt": "2026-09-04T12:50:56.302Z",
+          "observedAt": "2026-09-04T13:33:21.272Z",
+          "lastVerifiedAt": "2026-09-04T13:33:21.272Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -4337,8 +4337,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Subway",
       "website": "https://www.subway.com/",
       "resolvedUrl": "https://www.subway.com/en-ca",
-      "observedAt": "2026-09-04T12:51:09.299Z",
-      "lastVerifiedAt": "2026-09-04T12:51:09.299Z",
+      "observedAt": "2026-09-04T13:33:35.577Z",
+      "lastVerifiedAt": "2026-09-04T13:33:35.577Z",
       "scannedOwnedPages": [
         "https://www.subway.com/en-ca"
       ],
@@ -4351,8 +4351,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Start Order",
           "discoveredFrom": "https://www.subway.com/en-ca",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:09.299Z",
-          "lastVerifiedAt": "2026-09-04T12:51:09.299Z",
+          "observedAt": "2026-09-04T13:33:35.577Z",
+          "lastVerifiedAt": "2026-09-04T13:33:35.577Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -4375,8 +4375,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Swaad Sagaa Indian Cuisine Incorporated",
       "website": "https://www.swaadsagaa.com/",
       "resolvedUrl": "https://www.swaadsagaa.com/",
-      "observedAt": "2026-09-04T12:51:09.584Z",
-      "lastVerifiedAt": "2026-09-04T12:51:09.584Z",
+      "observedAt": "2026-09-04T13:33:36.763Z",
+      "lastVerifiedAt": "2026-09-04T13:33:36.763Z",
       "scannedOwnedPages": [
         "https://www.swaadsagaa.com/"
       ],
@@ -4392,8 +4392,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.swaadsagaa.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:09.584Z",
-          "lastVerifiedAt": "2026-09-04T12:51:09.584Z",
+          "observedAt": "2026-09-04T13:33:36.763Z",
+          "lastVerifiedAt": "2026-09-04T13:33:36.763Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -4409,8 +4409,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.swaadsagaa.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:09.584Z",
-          "lastVerifiedAt": "2026-09-04T12:51:09.584Z",
+          "observedAt": "2026-09-04T13:33:36.763Z",
+          "lastVerifiedAt": "2026-09-04T13:33:36.763Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -4426,8 +4426,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.swaadsagaa.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:09.584Z",
-          "lastVerifiedAt": "2026-09-04T12:51:09.584Z",
+          "observedAt": "2026-09-04T13:33:36.763Z",
+          "lastVerifiedAt": "2026-09-04T13:33:36.763Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -4441,8 +4441,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "ordering",
           "discoveredFrom": "https://www.swaadsagaa.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:09.584Z",
-          "lastVerifiedAt": "2026-09-04T12:51:09.584Z",
+          "observedAt": "2026-09-04T13:33:36.763Z",
+          "lastVerifiedAt": "2026-09-04T13:33:36.763Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -4453,8 +4453,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "ordering",
           "discoveredFrom": "https://www.swaadsagaa.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:09.584Z",
-          "lastVerifiedAt": "2026-09-04T12:51:09.584Z",
+          "observedAt": "2026-09-04T13:33:36.763Z",
+          "lastVerifiedAt": "2026-09-04T13:33:36.763Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -4465,8 +4465,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Call to place your order (Pick up)",
           "discoveredFrom": "https://www.swaadsagaa.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:09.584Z",
-          "lastVerifiedAt": "2026-09-04T12:51:09.584Z",
+          "observedAt": "2026-09-04T13:33:36.763Z",
+          "lastVerifiedAt": "2026-09-04T13:33:36.763Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -4492,8 +4492,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Osmow's",
       "website": "https://osmows.com/shawarma-halifax/",
       "resolvedUrl": "https://locations.osmows.com/ca/ns/halifax",
-      "observedAt": "2026-09-04T12:51:02.115Z",
-      "lastVerifiedAt": "2026-09-04T12:51:02.115Z",
+      "observedAt": "2026-09-04T13:33:27.717Z",
+      "lastVerifiedAt": "2026-09-04T13:33:27.717Z",
       "scannedOwnedPages": [
         "https://locations.osmows.com/ca/ns/halifax",
         "https://locations.osmows.com/locations",
@@ -4513,8 +4513,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://locations.osmows.com/ca/ns/halifax",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:02.115Z",
-          "lastVerifiedAt": "2026-09-04T12:51:02.115Z",
+          "observedAt": "2026-09-04T13:33:27.717Z",
+          "lastVerifiedAt": "2026-09-04T13:33:27.717Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -4530,8 +4530,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://locations.osmows.com/ca/ns/halifax",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:02.115Z",
-          "lastVerifiedAt": "2026-09-04T12:51:02.115Z",
+          "observedAt": "2026-09-04T13:33:27.717Z",
+          "lastVerifiedAt": "2026-09-04T13:33:27.717Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -4547,8 +4547,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://locations.osmows.com/ca/ns/halifax",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:02.115Z",
-          "lastVerifiedAt": "2026-09-04T12:51:02.115Z",
+          "observedAt": "2026-09-04T13:33:27.717Z",
+          "lastVerifiedAt": "2026-09-04T13:33:27.717Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -4564,8 +4564,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://locations.osmows.com/ca/ns/halifax",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:02.115Z",
-          "lastVerifiedAt": "2026-09-04T12:51:02.115Z",
+          "observedAt": "2026-09-04T13:33:27.717Z",
+          "lastVerifiedAt": "2026-09-04T13:33:27.717Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -4581,8 +4581,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://locations.osmows.com/ca/ns/halifax",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:02.115Z",
-          "lastVerifiedAt": "2026-09-04T12:51:02.115Z",
+          "observedAt": "2026-09-04T13:33:27.717Z",
+          "lastVerifiedAt": "2026-09-04T13:33:27.717Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -4596,8 +4596,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Order Now",
           "discoveredFrom": "https://locations.osmows.com/ca/ns/halifax",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:02.115Z",
-          "lastVerifiedAt": "2026-09-04T12:51:02.115Z",
+          "observedAt": "2026-09-04T13:33:27.717Z",
+          "lastVerifiedAt": "2026-09-04T13:33:27.717Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -4608,8 +4608,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Menu",
           "discoveredFrom": "https://locations.osmows.com/ca/ns/halifax",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:02.115Z",
-          "lastVerifiedAt": "2026-09-04T12:51:02.115Z",
+          "observedAt": "2026-09-04T13:33:27.717Z",
+          "lastVerifiedAt": "2026-09-04T13:33:27.717Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -4620,8 +4620,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Menu",
           "discoveredFrom": "https://osmows.com/fr/about",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:02.115Z",
-          "lastVerifiedAt": "2026-09-04T12:51:02.115Z",
+          "observedAt": "2026-09-04T13:33:27.717Z",
+          "lastVerifiedAt": "2026-09-04T13:33:27.717Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -4637,8 +4637,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Second Cup",
       "website": "https://secondcup.com/en/location/bayers-lake/",
       "resolvedUrl": "https://secondcup.com/en/location/bayers-lake/",
-      "observedAt": "2026-09-04T12:51:05.548Z",
-      "lastVerifiedAt": "2026-09-04T12:51:05.548Z",
+      "observedAt": "2026-09-04T13:33:32.852Z",
+      "lastVerifiedAt": "2026-09-04T13:33:32.852Z",
       "scannedOwnedPages": [
         "https://secondcup.com/en/location/bayers-lake/",
         "https://secondcup.com/en/location/bayers-lake/",
@@ -4658,8 +4658,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://secondcup.com/en/location/bayers-lake/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:05.548Z",
-          "lastVerifiedAt": "2026-09-04T12:51:05.548Z",
+          "observedAt": "2026-09-04T13:33:32.852Z",
+          "lastVerifiedAt": "2026-09-04T13:33:32.852Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -4675,8 +4675,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://secondcup.com/en/location/bayers-lake/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:05.548Z",
-          "lastVerifiedAt": "2026-09-04T12:51:05.548Z",
+          "observedAt": "2026-09-04T13:33:32.852Z",
+          "lastVerifiedAt": "2026-09-04T13:33:32.852Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -4692,8 +4692,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://secondcup.com/en/location/bayers-lake/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:05.548Z",
-          "lastVerifiedAt": "2026-09-04T12:51:05.548Z",
+          "observedAt": "2026-09-04T13:33:32.852Z",
+          "lastVerifiedAt": "2026-09-04T13:33:32.852Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -4707,8 +4707,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "BEVERAGES",
           "discoveredFrom": "https://secondcup.com/en/location/bayers-lake/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:05.548Z",
-          "lastVerifiedAt": "2026-09-04T12:51:05.548Z",
+          "observedAt": "2026-09-04T13:33:32.852Z",
+          "lastVerifiedAt": "2026-09-04T13:33:32.852Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -4719,8 +4719,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "LATTES & ESPRESSOS",
           "discoveredFrom": "https://secondcup.com/en/location/bayers-lake/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:05.548Z",
-          "lastVerifiedAt": "2026-09-04T12:51:05.548Z",
+          "observedAt": "2026-09-04T13:33:32.852Z",
+          "lastVerifiedAt": "2026-09-04T13:33:32.852Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -4731,8 +4731,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "ON ICE",
           "discoveredFrom": "https://secondcup.com/en/location/bayers-lake/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:05.548Z",
-          "lastVerifiedAt": "2026-09-04T12:51:05.548Z",
+          "observedAt": "2026-09-04T13:33:32.852Z",
+          "lastVerifiedAt": "2026-09-04T13:33:32.852Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -4743,8 +4743,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "BLENDED",
           "discoveredFrom": "https://secondcup.com/en/location/bayers-lake/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:05.548Z",
-          "lastVerifiedAt": "2026-09-04T12:51:05.548Z",
+          "observedAt": "2026-09-04T13:33:32.852Z",
+          "lastVerifiedAt": "2026-09-04T13:33:32.852Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -4755,8 +4755,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "FLASH COLD BREW",
           "discoveredFrom": "https://secondcup.com/en/location/bayers-lake/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:05.548Z",
-          "lastVerifiedAt": "2026-09-04T12:51:05.548Z",
+          "observedAt": "2026-09-04T13:33:32.852Z",
+          "lastVerifiedAt": "2026-09-04T13:33:32.852Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -4767,8 +4767,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "BREWED COFFEE & TEA",
           "discoveredFrom": "https://secondcup.com/en/location/bayers-lake/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:05.548Z",
-          "lastVerifiedAt": "2026-09-04T12:51:05.548Z",
+          "observedAt": "2026-09-04T13:33:32.852Z",
+          "lastVerifiedAt": "2026-09-04T13:33:32.852Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -4779,8 +4779,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "TEA LATTES",
           "discoveredFrom": "https://secondcup.com/en/location/bayers-lake/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:05.548Z",
-          "lastVerifiedAt": "2026-09-04T12:51:05.548Z",
+          "observedAt": "2026-09-04T13:33:32.852Z",
+          "lastVerifiedAt": "2026-09-04T13:33:32.852Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -4791,8 +4791,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "HOT CHOCOLATES",
           "discoveredFrom": "https://secondcup.com/en/location/bayers-lake/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:05.548Z",
-          "lastVerifiedAt": "2026-09-04T12:51:05.548Z",
+          "observedAt": "2026-09-04T13:33:32.852Z",
+          "lastVerifiedAt": "2026-09-04T13:33:32.852Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -4803,8 +4803,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "SMOOTHIES",
           "discoveredFrom": "https://secondcup.com/en/location/bayers-lake/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:05.548Z",
-          "lastVerifiedAt": "2026-09-04T12:51:05.548Z",
+          "observedAt": "2026-09-04T13:33:32.852Z",
+          "lastVerifiedAt": "2026-09-04T13:33:32.852Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -4815,8 +4815,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "FOOD",
           "discoveredFrom": "https://secondcup.com/en/location/bayers-lake/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:05.548Z",
-          "lastVerifiedAt": "2026-09-04T12:51:05.548Z",
+          "observedAt": "2026-09-04T13:33:32.852Z",
+          "lastVerifiedAt": "2026-09-04T13:33:32.852Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -4827,8 +4827,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "BAKED GOODS",
           "discoveredFrom": "https://secondcup.com/en/location/bayers-lake/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:05.548Z",
-          "lastVerifiedAt": "2026-09-04T12:51:05.548Z",
+          "observedAt": "2026-09-04T13:33:32.852Z",
+          "lastVerifiedAt": "2026-09-04T13:33:32.852Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -4839,8 +4839,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "BREAKFAST",
           "discoveredFrom": "https://secondcup.com/en/location/bayers-lake/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:05.548Z",
-          "lastVerifiedAt": "2026-09-04T12:51:05.548Z",
+          "observedAt": "2026-09-04T13:33:32.852Z",
+          "lastVerifiedAt": "2026-09-04T13:33:32.852Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -4851,8 +4851,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "SEASONAL MENU",
           "discoveredFrom": "https://secondcup.com/en/location/bayers-lake/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:05.548Z",
-          "lastVerifiedAt": "2026-09-04T12:51:05.548Z",
+          "observedAt": "2026-09-04T13:33:32.852Z",
+          "lastVerifiedAt": "2026-09-04T13:33:32.852Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -4863,8 +4863,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "MENU",
           "discoveredFrom": "https://secondcup.com/en/location/bayers-lake/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:05.548Z",
-          "lastVerifiedAt": "2026-09-04T12:51:05.548Z",
+          "observedAt": "2026-09-04T13:33:32.852Z",
+          "lastVerifiedAt": "2026-09-04T13:33:32.852Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -4875,8 +4875,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Order Online",
           "discoveredFrom": "https://secondcup.com/en/location/bayers-lake/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:05.548Z",
-          "lastVerifiedAt": "2026-09-04T12:51:05.548Z",
+          "observedAt": "2026-09-04T13:33:32.852Z",
+          "lastVerifiedAt": "2026-09-04T13:33:32.852Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -4887,8 +4887,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Skip the Dishes",
           "discoveredFrom": "https://secondcup.com/en/location/bayers-lake/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:05.548Z",
-          "lastVerifiedAt": "2026-09-04T12:51:05.548Z",
+          "observedAt": "2026-09-04T13:33:32.852Z",
+          "lastVerifiedAt": "2026-09-04T13:33:32.852Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -4899,8 +4899,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Uber Eats",
           "discoveredFrom": "https://secondcup.com/en/location/bayers-lake/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:05.548Z",
-          "lastVerifiedAt": "2026-09-04T12:51:05.548Z",
+          "observedAt": "2026-09-04T13:33:32.852Z",
+          "lastVerifiedAt": "2026-09-04T13:33:32.852Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -4933,8 +4933,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Starbucks",
       "website": "https://www.starbucks.ca/store-locator/store/65774-300165/atlantic-superstore-chain-lake-210-chain-lake-drive-halifax-ns-b-3-s-1-c-5-ca",
       "resolvedUrl": "https://www.starbucks.ca/store-locator/store/65774-300165/atlantic-superstore-chain-lake-210-chain-lake-drive-halifax-ns-b-3-s-1-c-5-ca",
-      "observedAt": "2026-09-04T12:50:52.104Z",
-      "lastVerifiedAt": "2026-09-04T12:50:52.104Z",
+      "observedAt": "2026-09-04T13:33:17.467Z",
+      "lastVerifiedAt": "2026-09-04T13:33:17.467Z",
       "scannedOwnedPages": [
         "https://www.starbucks.ca/store-locator/store/65774-300165/atlantic-superstore-chain-lake-210-chain-lake-drive-halifax-ns-b-3-s-1-c-5-ca"
       ],
@@ -4953,9 +4953,10 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Sketti and Ball",
       "website": "https://skettiandballco.ca/",
       "resolvedUrl": "https://skettiandballco.ca/",
-      "observedAt": "2026-09-04T12:51:05.997Z",
-      "lastVerifiedAt": "2026-09-04T12:51:05.997Z",
+      "observedAt": "2026-09-04T13:33:33.028Z",
+      "lastVerifiedAt": "2026-09-04T13:33:33.028Z",
       "scannedOwnedPages": [
+        "https://skettiandballco.ca/",
         "https://skettiandballco.ca/",
         "https://skettiandballco.ca/",
         "https://skettiandballco.ca/"
@@ -4972,8 +4973,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://skettiandballco.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:05.997Z",
-          "lastVerifiedAt": "2026-09-04T12:51:05.997Z",
+          "observedAt": "2026-09-04T13:33:33.028Z",
+          "lastVerifiedAt": "2026-09-04T13:33:33.028Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -4987,8 +4988,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Menus",
           "discoveredFrom": "https://skettiandballco.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:05.997Z",
-          "lastVerifiedAt": "2026-09-04T12:51:05.997Z",
+          "observedAt": "2026-09-04T13:33:33.028Z",
+          "lastVerifiedAt": "2026-09-04T13:33:33.028Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -4999,8 +5000,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Reserve",
           "discoveredFrom": "https://skettiandballco.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:05.997Z",
-          "lastVerifiedAt": "2026-09-04T12:51:05.997Z",
+          "observedAt": "2026-09-04T13:33:33.028Z",
+          "lastVerifiedAt": "2026-09-04T13:33:33.028Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -5040,8 +5041,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Rush Hour Pizza",
       "website": "https://rushhourpizza.ca/",
       "resolvedUrl": "https://rushhourpizza.ca/",
-      "observedAt": "2026-09-04T12:51:04.950Z",
-      "lastVerifiedAt": "2026-09-04T12:51:04.950Z",
+      "observedAt": "2026-09-04T13:33:32.527Z",
+      "lastVerifiedAt": "2026-09-04T13:33:32.527Z",
       "scannedOwnedPages": [
         "https://rushhourpizza.ca/"
       ],
@@ -5054,8 +5055,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Order Online",
           "discoveredFrom": "https://rushhourpizza.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:04.950Z",
-          "lastVerifiedAt": "2026-09-04T12:51:04.950Z",
+          "observedAt": "2026-09-04T13:33:32.527Z",
+          "lastVerifiedAt": "2026-09-04T13:33:32.527Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -5073,8 +5074,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Seaport Social",
       "website": "https://www.seaportsocialhalifax.com/",
       "resolvedUrl": "https://www.seaportsocialhalifax.com/",
-      "observedAt": "2026-09-04T12:51:05.275Z",
-      "lastVerifiedAt": "2026-09-04T12:51:05.275Z",
+      "observedAt": "2026-09-04T13:33:32.852Z",
+      "lastVerifiedAt": "2026-09-04T13:33:32.852Z",
       "scannedOwnedPages": [
         "https://www.seaportsocialhalifax.com/",
         "https://www.seaportsocialhalifax.com/about-us",
@@ -5093,8 +5094,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.seaportsocialhalifax.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:05.275Z",
-          "lastVerifiedAt": "2026-09-04T12:51:05.275Z",
+          "observedAt": "2026-09-04T13:33:32.852Z",
+          "lastVerifiedAt": "2026-09-04T13:33:32.852Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -5110,8 +5111,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.seaportsocialhalifax.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:05.275Z",
-          "lastVerifiedAt": "2026-09-04T12:51:05.275Z",
+          "observedAt": "2026-09-04T13:33:32.852Z",
+          "lastVerifiedAt": "2026-09-04T13:33:32.852Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -5125,8 +5126,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Our Menus",
           "discoveredFrom": "https://www.seaportsocialhalifax.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:05.275Z",
-          "lastVerifiedAt": "2026-09-04T12:51:05.275Z",
+          "observedAt": "2026-09-04T13:33:32.852Z",
+          "lastVerifiedAt": "2026-09-04T13:33:32.852Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -5137,8 +5138,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "booking widget BOOK A TABLE",
           "discoveredFrom": "https://www.seaportsocialhalifax.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:05.275Z",
-          "lastVerifiedAt": "2026-09-04T12:51:05.275Z",
+          "observedAt": "2026-09-04T13:33:32.852Z",
+          "lastVerifiedAt": "2026-09-04T13:33:32.852Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -5157,8 +5158,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Café Lunette",
       "website": "https://www.cafelunette.com/",
       "resolvedUrl": "https://www.cafelunette.com/",
-      "observedAt": "2026-09-04T12:50:45.772Z",
-      "lastVerifiedAt": "2026-09-04T12:50:45.772Z",
+      "observedAt": "2026-09-04T13:33:10.192Z",
+      "lastVerifiedAt": "2026-09-04T13:33:10.192Z",
       "scannedOwnedPages": [
         "https://www.cafelunette.com/",
         "https://www.cafelunette.com/about/",
@@ -5176,8 +5177,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.cafelunette.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:45.772Z",
-          "lastVerifiedAt": "2026-09-04T12:50:45.772Z",
+          "observedAt": "2026-09-04T13:33:10.192Z",
+          "lastVerifiedAt": "2026-09-04T13:33:10.192Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -5193,8 +5194,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.cafelunette.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:45.772Z",
-          "lastVerifiedAt": "2026-09-04T12:50:45.772Z",
+          "observedAt": "2026-09-04T13:33:10.192Z",
+          "lastVerifiedAt": "2026-09-04T13:33:10.192Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -5208,8 +5209,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Menu",
           "discoveredFrom": "https://www.cafelunette.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:45.772Z",
-          "lastVerifiedAt": "2026-09-04T12:50:45.772Z",
+          "observedAt": "2026-09-04T13:33:10.192Z",
+          "lastVerifiedAt": "2026-09-04T13:33:10.192Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -5220,8 +5221,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Reserve",
           "discoveredFrom": "https://www.cafelunette.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:45.772Z",
-          "lastVerifiedAt": "2026-09-04T12:50:45.772Z",
+          "observedAt": "2026-09-04T13:33:10.192Z",
+          "lastVerifiedAt": "2026-09-04T13:33:10.192Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -5232,8 +5233,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Order Online Grab + Go",
           "discoveredFrom": "https://www.cafelunette.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:45.772Z",
-          "lastVerifiedAt": "2026-09-04T12:50:45.772Z",
+          "observedAt": "2026-09-04T13:33:10.192Z",
+          "lastVerifiedAt": "2026-09-04T13:33:10.192Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -5244,8 +5245,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "reserve your table",
           "discoveredFrom": "https://www.cafelunette.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:45.772Z",
-          "lastVerifiedAt": "2026-09-04T12:50:45.772Z",
+          "observedAt": "2026-09-04T13:33:10.192Z",
+          "lastVerifiedAt": "2026-09-04T13:33:10.192Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -5256,8 +5257,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Private Events",
           "discoveredFrom": "https://www.cafelunette.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:45.772Z",
-          "lastVerifiedAt": "2026-09-04T12:50:45.772Z",
+          "observedAt": "2026-09-04T13:33:10.192Z",
+          "lastVerifiedAt": "2026-09-04T13:33:10.192Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -5290,8 +5291,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Café Good Luck",
       "website": "https://www.manualfoodanddrinkco.com/goodluck",
       "resolvedUrl": "https://cafegoodluck.ca/goodluck",
-      "observedAt": "2026-09-04T12:50:45.628Z",
-      "lastVerifiedAt": "2026-09-04T12:50:45.628Z",
+      "observedAt": "2026-09-04T13:33:09.981Z",
+      "lastVerifiedAt": "2026-09-04T13:33:09.981Z",
       "scannedOwnedPages": [
         "https://cafegoodluck.ca/goodluck",
         "https://cafegoodluck.ca/contact"
@@ -5308,8 +5309,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://cafegoodluck.ca/goodluck",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:45.628Z",
-          "lastVerifiedAt": "2026-09-04T12:50:45.628Z",
+          "observedAt": "2026-09-04T13:33:09.981Z",
+          "lastVerifiedAt": "2026-09-04T13:33:09.981Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -5329,8 +5330,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "East Cup Cafe",
       "website": "https://eastcupcafe.com/",
       "resolvedUrl": "https://eastcupcafe.com/",
-      "observedAt": "2026-09-04T12:50:48.993Z",
-      "lastVerifiedAt": "2026-09-04T12:50:48.993Z",
+      "observedAt": "2026-09-04T13:33:13.807Z",
+      "lastVerifiedAt": "2026-09-04T13:33:13.807Z",
       "scannedOwnedPages": [
         "https://eastcupcafe.com/",
         "https://eastcupcafe.com/pages/contact-us"
@@ -5347,8 +5348,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://eastcupcafe.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:48.993Z",
-          "lastVerifiedAt": "2026-09-04T12:50:48.993Z",
+          "observedAt": "2026-09-04T13:33:13.807Z",
+          "lastVerifiedAt": "2026-09-04T13:33:13.807Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -5368,8 +5369,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Papa John's",
       "website": "https://locations.papajohns.com/canada/ns/b2w-6c4/dartmouth/644-portland-street",
       "resolvedUrl": "https://locations.papajohns.com/canada/ns/b2w-6c4/dartmouth/644-portland-street",
-      "observedAt": "2026-09-04T12:51:02.229Z",
-      "lastVerifiedAt": "2026-09-04T12:51:02.229Z",
+      "observedAt": "2026-09-04T13:33:27.808Z",
+      "lastVerifiedAt": "2026-09-04T13:33:27.808Z",
       "scannedOwnedPages": [
         "https://locations.papajohns.com/canada/ns/b2w-6c4/dartmouth/644-portland-street"
       ],
@@ -5385,8 +5386,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://locations.papajohns.com/canada/ns/b2w-6c4/dartmouth/644-portland-street",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:02.229Z",
-          "lastVerifiedAt": "2026-09-04T12:51:02.229Z",
+          "observedAt": "2026-09-04T13:33:27.808Z",
+          "lastVerifiedAt": "2026-09-04T13:33:27.808Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -5402,8 +5403,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://locations.papajohns.com/canada/ns/b2w-6c4/dartmouth/644-portland-street",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:02.229Z",
-          "lastVerifiedAt": "2026-09-04T12:51:02.229Z",
+          "observedAt": "2026-09-04T13:33:27.808Z",
+          "lastVerifiedAt": "2026-09-04T13:33:27.808Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -5419,8 +5420,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://locations.papajohns.com/canada/ns/b2w-6c4/dartmouth/644-portland-street",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:02.229Z",
-          "lastVerifiedAt": "2026-09-04T12:51:02.229Z",
+          "observedAt": "2026-09-04T13:33:27.808Z",
+          "lastVerifiedAt": "2026-09-04T13:33:27.808Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -5436,8 +5437,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://locations.papajohns.com/canada/ns/b2w-6c4/dartmouth/644-portland-street",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:02.229Z",
-          "lastVerifiedAt": "2026-09-04T12:51:02.229Z",
+          "observedAt": "2026-09-04T13:33:27.808Z",
+          "lastVerifiedAt": "2026-09-04T13:33:27.808Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -5451,8 +5452,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Menu",
           "discoveredFrom": "https://locations.papajohns.com/canada/ns/b2w-6c4/dartmouth/644-portland-street",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:02.229Z",
-          "lastVerifiedAt": "2026-09-04T12:51:02.229Z",
+          "observedAt": "2026-09-04T13:33:27.808Z",
+          "lastVerifiedAt": "2026-09-04T13:33:27.808Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -5463,8 +5464,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Order Delivery",
           "discoveredFrom": "https://locations.papajohns.com/canada/ns/b2w-6c4/dartmouth/644-portland-street",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:02.229Z",
-          "lastVerifiedAt": "2026-09-04T12:51:02.229Z",
+          "observedAt": "2026-09-04T13:33:27.808Z",
+          "lastVerifiedAt": "2026-09-04T13:33:27.808Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -5482,8 +5483,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Cora",
       "website": "https://www.chezcora.com/en/",
       "resolvedUrl": "https://www.chezcora.com/en/",
-      "observedAt": "2026-09-04T12:50:51.180Z",
-      "lastVerifiedAt": "2026-09-04T12:50:51.180Z",
+      "observedAt": "2026-09-04T13:33:15.771Z",
+      "lastVerifiedAt": "2026-09-04T13:33:15.771Z",
       "scannedOwnedPages": [
         "https://www.chezcora.com/en/",
         "https://www.chezcora.com/en/careers-restaurant/",
@@ -5503,8 +5504,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.chezcora.com/en/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:51.180Z",
-          "lastVerifiedAt": "2026-09-04T12:50:51.180Z",
+          "observedAt": "2026-09-04T13:33:15.771Z",
+          "lastVerifiedAt": "2026-09-04T13:33:15.771Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -5520,8 +5521,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.chezcora.com/en/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:51.180Z",
-          "lastVerifiedAt": "2026-09-04T12:50:51.180Z",
+          "observedAt": "2026-09-04T13:33:15.771Z",
+          "lastVerifiedAt": "2026-09-04T13:33:15.771Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -5537,8 +5538,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.chezcora.com/en/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:51.180Z",
-          "lastVerifiedAt": "2026-09-04T12:50:51.180Z",
+          "observedAt": "2026-09-04T13:33:15.771Z",
+          "lastVerifiedAt": "2026-09-04T13:33:15.771Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -5554,8 +5555,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.chezcora.com/en/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:51.180Z",
-          "lastVerifiedAt": "2026-09-04T12:50:51.180Z",
+          "observedAt": "2026-09-04T13:33:15.771Z",
+          "lastVerifiedAt": "2026-09-04T13:33:15.771Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -5577,7 +5578,7 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "confidence": "authoritative",
           "status": "active",
           "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-09-04T12:51:47.588Z"
+          "carriedForwardAt": "2026-09-04T13:34:13.421Z"
         }
       ],
       "linkHubs": [],
@@ -5588,8 +5589,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Menu",
           "discoveredFrom": "https://www.chezcora.com/en/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:51.180Z",
-          "lastVerifiedAt": "2026-09-04T12:50:51.180Z",
+          "observedAt": "2026-09-04T13:33:15.771Z",
+          "lastVerifiedAt": "2026-09-04T13:33:15.771Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -5600,8 +5601,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Newsletter",
           "discoveredFrom": "https://www.chezcora.com/en/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:51.180Z",
-          "lastVerifiedAt": "2026-09-04T12:50:51.180Z",
+          "observedAt": "2026-09-04T13:33:15.771Z",
+          "lastVerifiedAt": "2026-09-04T13:33:15.771Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -5612,8 +5613,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Ben & Dictine",
           "discoveredFrom": "https://www.chezcora.com/en/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:51.180Z",
-          "lastVerifiedAt": "2026-09-04T12:50:51.180Z",
+          "observedAt": "2026-09-04T13:33:15.771Z",
+          "lastVerifiedAt": "2026-09-04T13:33:15.771Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -5624,8 +5625,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Beverages",
           "discoveredFrom": "https://www.chezcora.com/en/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:51.180Z",
-          "lastVerifiedAt": "2026-09-04T12:50:51.180Z",
+          "observedAt": "2026-09-04T13:33:15.771Z",
+          "lastVerifiedAt": "2026-09-04T13:33:15.771Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -5636,8 +5637,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Skillets",
           "discoveredFrom": "https://www.chezcora.com/en/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:51.180Z",
-          "lastVerifiedAt": "2026-09-04T12:50:51.180Z",
+          "observedAt": "2026-09-04T13:33:15.771Z",
+          "lastVerifiedAt": "2026-09-04T13:33:15.771Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -5648,8 +5649,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Crêpes",
           "discoveredFrom": "https://www.chezcora.com/en/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:51.180Z",
-          "lastVerifiedAt": "2026-09-04T12:50:51.180Z",
+          "observedAt": "2026-09-04T13:33:15.771Z",
+          "lastVerifiedAt": "2026-09-04T13:33:15.771Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -5660,8 +5661,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Teen favourites",
           "discoveredFrom": "https://www.chezcora.com/en/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:51.180Z",
-          "lastVerifiedAt": "2026-09-04T12:50:51.180Z",
+          "observedAt": "2026-09-04T13:33:15.771Z",
+          "lastVerifiedAt": "2026-09-04T13:33:15.771Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -5672,8 +5673,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Fresh fruit",
           "discoveredFrom": "https://www.chezcora.com/en/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:51.180Z",
-          "lastVerifiedAt": "2026-09-04T12:50:51.180Z",
+          "observedAt": "2026-09-04T13:33:15.771Z",
+          "lastVerifiedAt": "2026-09-04T13:33:15.771Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -5684,8 +5685,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Waffles",
           "discoveredFrom": "https://www.chezcora.com/en/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:51.180Z",
-          "lastVerifiedAt": "2026-09-04T12:50:51.180Z",
+          "observedAt": "2026-09-04T13:33:15.771Z",
+          "lastVerifiedAt": "2026-09-04T13:33:15.771Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -5696,8 +5697,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Kids' menu",
           "discoveredFrom": "https://www.chezcora.com/en/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:51.180Z",
-          "lastVerifiedAt": "2026-09-04T12:50:51.180Z",
+          "observedAt": "2026-09-04T13:33:15.771Z",
+          "lastVerifiedAt": "2026-09-04T13:33:15.771Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -5708,8 +5709,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Early Bird menu",
           "discoveredFrom": "https://www.chezcora.com/en/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:51.180Z",
-          "lastVerifiedAt": "2026-09-04T12:50:51.180Z",
+          "observedAt": "2026-09-04T13:33:15.771Z",
+          "lastVerifiedAt": "2026-09-04T13:33:15.771Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -5720,8 +5721,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Eggs",
           "discoveredFrom": "https://www.chezcora.com/en/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:51.180Z",
-          "lastVerifiedAt": "2026-09-04T12:50:51.180Z",
+          "observedAt": "2026-09-04T13:33:15.771Z",
+          "lastVerifiedAt": "2026-09-04T13:33:15.771Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -5732,8 +5733,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Omelettes and crêpomelettes",
           "discoveredFrom": "https://www.chezcora.com/en/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:51.180Z",
-          "lastVerifiedAt": "2026-09-04T12:50:51.180Z",
+          "observedAt": "2026-09-04T13:33:15.771Z",
+          "lastVerifiedAt": "2026-09-04T13:33:15.771Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -5744,8 +5745,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "French toast",
           "discoveredFrom": "https://www.chezcora.com/en/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:51.180Z",
-          "lastVerifiedAt": "2026-09-04T12:50:51.180Z",
+          "observedAt": "2026-09-04T13:33:15.771Z",
+          "lastVerifiedAt": "2026-09-04T13:33:15.771Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -5756,8 +5757,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Pancakes",
           "discoveredFrom": "https://www.chezcora.com/en/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:51.180Z",
-          "lastVerifiedAt": "2026-09-04T12:50:51.180Z",
+          "observedAt": "2026-09-04T13:33:15.771Z",
+          "lastVerifiedAt": "2026-09-04T13:33:15.771Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -5768,8 +5769,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Sandwiches",
           "discoveredFrom": "https://www.chezcora.com/en/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:51.180Z",
-          "lastVerifiedAt": "2026-09-04T12:50:51.180Z",
+          "observedAt": "2026-09-04T13:33:15.771Z",
+          "lastVerifiedAt": "2026-09-04T13:33:15.771Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -5780,8 +5781,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Sweet 'n salty",
           "discoveredFrom": "https://www.chezcora.com/en/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:51.180Z",
-          "lastVerifiedAt": "2026-09-04T12:50:51.180Z",
+          "observedAt": "2026-09-04T13:33:15.771Z",
+          "lastVerifiedAt": "2026-09-04T13:33:15.771Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -5792,8 +5793,128 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Reserve now",
           "discoveredFrom": "https://www.chezcora.com/en/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:51.180Z",
-          "lastVerifiedAt": "2026-09-04T12:50:51.180Z",
+          "observedAt": "2026-09-04T13:33:15.771Z",
+          "lastVerifiedAt": "2026-09-04T13:33:15.771Z",
+          "reviewState": "verified_link",
+          "confidence": "authoritative",
+          "status": "active"
+        },
+        {
+          "kind": "menu",
+          "url": "https://www.chezcora.com/en/menus/?_pagination=1",
+          "label": "1",
+          "discoveredFrom": "https://www.chezcora.com/en/breakfast-lunch-restaurants/",
+          "associationBasis": "linked_from_official_website",
+          "observedAt": "2026-09-04T13:33:15.771Z",
+          "lastVerifiedAt": "2026-09-04T13:33:15.771Z",
+          "reviewState": "verified_link",
+          "confidence": "authoritative",
+          "status": "active"
+        },
+        {
+          "kind": "menu",
+          "url": "https://www.chezcora.com/en/menus/?_pagination=2",
+          "label": "2",
+          "discoveredFrom": "https://www.chezcora.com/en/breakfast-lunch-restaurants/",
+          "associationBasis": "linked_from_official_website",
+          "observedAt": "2026-09-04T13:33:15.771Z",
+          "lastVerifiedAt": "2026-09-04T13:33:15.771Z",
+          "reviewState": "verified_link",
+          "confidence": "authoritative",
+          "status": "active"
+        },
+        {
+          "kind": "menu",
+          "url": "https://www.chezcora.com/en/menus/?_pagination=3",
+          "label": "3",
+          "discoveredFrom": "https://www.chezcora.com/en/breakfast-lunch-restaurants/",
+          "associationBasis": "linked_from_official_website",
+          "observedAt": "2026-09-04T13:33:15.771Z",
+          "lastVerifiedAt": "2026-09-04T13:33:15.771Z",
+          "reviewState": "verified_link",
+          "confidence": "authoritative",
+          "status": "active"
+        },
+        {
+          "kind": "menu",
+          "url": "https://www.chezcora.com/en/menus/?_pagination=10",
+          "label": "10",
+          "discoveredFrom": "https://www.chezcora.com/en/breakfast-lunch-restaurants/",
+          "associationBasis": "linked_from_official_website",
+          "observedAt": "2026-09-04T13:33:15.771Z",
+          "lastVerifiedAt": "2026-09-04T13:33:15.771Z",
+          "reviewState": "verified_link",
+          "confidence": "authoritative",
+          "status": "active"
+        },
+        {
+          "kind": "menu",
+          "url": "https://www.chezcora.com/en/menus/?_pagination=11",
+          "label": "11",
+          "discoveredFrom": "https://www.chezcora.com/en/breakfast-lunch-restaurants/",
+          "associationBasis": "linked_from_official_website",
+          "observedAt": "2026-09-04T13:33:15.771Z",
+          "lastVerifiedAt": "2026-09-04T13:33:15.771Z",
+          "reviewState": "verified_link",
+          "confidence": "authoritative",
+          "status": "active"
+        },
+        {
+          "kind": "menu",
+          "url": "https://www.chezcora.com/en/menu/kids-menu/?_pagination=1",
+          "label": "1",
+          "discoveredFrom": "https://www.chezcora.com/en/breakfast-lunch-restaurants/?_filtre_province=colombie-britannique",
+          "associationBasis": "linked_from_official_website",
+          "observedAt": "2026-09-04T13:33:15.771Z",
+          "lastVerifiedAt": "2026-09-04T13:33:15.771Z",
+          "reviewState": "verified_link",
+          "confidence": "authoritative",
+          "status": "active"
+        },
+        {
+          "kind": "menu",
+          "url": "https://www.chezcora.com/en/menu/kids-menu/?_pagination=2",
+          "label": "2",
+          "discoveredFrom": "https://www.chezcora.com/en/breakfast-lunch-restaurants/?_filtre_province=colombie-britannique",
+          "associationBasis": "linked_from_official_website",
+          "observedAt": "2026-09-04T13:33:15.771Z",
+          "lastVerifiedAt": "2026-09-04T13:33:15.771Z",
+          "reviewState": "verified_link",
+          "confidence": "authoritative",
+          "status": "active"
+        },
+        {
+          "kind": "menu",
+          "url": "https://www.chezcora.com/en/menu/kids-menu/?_pagination=3",
+          "label": "3",
+          "discoveredFrom": "https://www.chezcora.com/en/breakfast-lunch-restaurants/?_filtre_province=colombie-britannique",
+          "associationBasis": "linked_from_official_website",
+          "observedAt": "2026-09-04T13:33:15.771Z",
+          "lastVerifiedAt": "2026-09-04T13:33:15.771Z",
+          "reviewState": "verified_link",
+          "confidence": "authoritative",
+          "status": "active"
+        },
+        {
+          "kind": "menu",
+          "url": "https://www.chezcora.com/en/menu/kids-menu/?_pagination=10",
+          "label": "10",
+          "discoveredFrom": "https://www.chezcora.com/en/breakfast-lunch-restaurants/?_filtre_province=colombie-britannique",
+          "associationBasis": "linked_from_official_website",
+          "observedAt": "2026-09-04T13:33:15.771Z",
+          "lastVerifiedAt": "2026-09-04T13:33:15.771Z",
+          "reviewState": "verified_link",
+          "confidence": "authoritative",
+          "status": "active"
+        },
+        {
+          "kind": "menu",
+          "url": "https://www.chezcora.com/en/menu/kids-menu/?_pagination=11",
+          "label": "11",
+          "discoveredFrom": "https://www.chezcora.com/en/breakfast-lunch-restaurants/?_filtre_province=colombie-britannique",
+          "associationBasis": "linked_from_official_website",
+          "observedAt": "2026-09-04T13:33:15.771Z",
+          "lastVerifiedAt": "2026-09-04T13:33:15.771Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -5810,7 +5931,7 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "confidence": "authoritative",
           "status": "active",
           "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-09-04T12:51:47.588Z"
+          "carriedForwardAt": "2026-09-04T13:34:13.421Z"
         },
         {
           "kind": "menu",
@@ -5824,7 +5945,7 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "confidence": "authoritative",
           "status": "active",
           "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-09-04T12:51:47.588Z"
+          "carriedForwardAt": "2026-09-04T13:34:13.421Z"
         },
         {
           "kind": "menu",
@@ -5838,7 +5959,7 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "confidence": "authoritative",
           "status": "active",
           "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-09-04T12:51:47.588Z"
+          "carriedForwardAt": "2026-09-04T13:34:13.421Z"
         },
         {
           "kind": "ordering",
@@ -5852,7 +5973,7 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "confidence": "authoritative",
           "status": "active",
           "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-09-04T12:51:47.588Z"
+          "carriedForwardAt": "2026-09-04T13:34:13.421Z"
         },
         {
           "kind": "menu",
@@ -5866,7 +5987,7 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "confidence": "authoritative",
           "status": "active",
           "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-09-04T12:51:47.588Z"
+          "carriedForwardAt": "2026-09-04T13:34:13.421Z"
         },
         {
           "kind": "menu",
@@ -5880,7 +6001,7 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "confidence": "authoritative",
           "status": "active",
           "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-09-04T12:51:47.588Z"
+          "carriedForwardAt": "2026-09-04T13:34:13.421Z"
         },
         {
           "kind": "menu",
@@ -5894,7 +6015,7 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "confidence": "authoritative",
           "status": "active",
           "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-09-04T12:51:47.588Z"
+          "carriedForwardAt": "2026-09-04T13:34:13.421Z"
         },
         {
           "kind": "menu",
@@ -5908,7 +6029,7 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "confidence": "authoritative",
           "status": "active",
           "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-09-04T12:51:47.588Z"
+          "carriedForwardAt": "2026-09-04T13:34:13.421Z"
         },
         {
           "kind": "menu",
@@ -5922,7 +6043,7 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "confidence": "authoritative",
           "status": "active",
           "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-09-04T12:51:47.588Z"
+          "carriedForwardAt": "2026-09-04T13:34:13.421Z"
         }
       ],
       "feeds": [
@@ -5957,8 +6078,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Station 1 Lebanese Kitchen",
       "website": "https://station1lebanesekitchen.com/",
       "resolvedUrl": "https://station1lebanesekitchen.com/",
-      "observedAt": "2026-09-04T12:51:07.493Z",
-      "lastVerifiedAt": "2026-09-04T12:51:07.493Z",
+      "observedAt": "2026-09-04T13:33:33.917Z",
+      "lastVerifiedAt": "2026-09-04T13:33:33.917Z",
       "scannedOwnedPages": [
         "https://station1lebanesekitchen.com/",
         "https://station1lebanesekitchen.com/",
@@ -5976,8 +6097,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://station1lebanesekitchen.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:07.493Z",
-          "lastVerifiedAt": "2026-09-04T12:51:07.493Z",
+          "observedAt": "2026-09-04T13:33:33.917Z",
+          "lastVerifiedAt": "2026-09-04T13:33:33.917Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -5993,8 +6114,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://station1lebanesekitchen.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:07.493Z",
-          "lastVerifiedAt": "2026-09-04T12:51:07.493Z",
+          "observedAt": "2026-09-04T13:33:33.917Z",
+          "lastVerifiedAt": "2026-09-04T13:33:33.917Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -6008,8 +6129,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Menu",
           "discoveredFrom": "https://station1lebanesekitchen.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:07.493Z",
-          "lastVerifiedAt": "2026-09-04T12:51:07.493Z",
+          "observedAt": "2026-09-04T13:33:33.917Z",
+          "lastVerifiedAt": "2026-09-04T13:33:33.917Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -6042,8 +6163,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Subway",
       "website": "https://www.subway.com/",
       "resolvedUrl": "https://www.subway.com/en-ca",
-      "observedAt": "2026-09-04T12:51:08.148Z",
-      "lastVerifiedAt": "2026-09-04T12:51:08.148Z",
+      "observedAt": "2026-09-04T13:33:34.400Z",
+      "lastVerifiedAt": "2026-09-04T13:33:34.400Z",
       "scannedOwnedPages": [
         "https://www.subway.com/en-ca"
       ],
@@ -6056,8 +6177,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Start Order",
           "discoveredFrom": "https://www.subway.com/en-ca",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:08.148Z",
-          "lastVerifiedAt": "2026-09-04T12:51:08.148Z",
+          "observedAt": "2026-09-04T13:33:34.400Z",
+          "lastVerifiedAt": "2026-09-04T13:33:34.400Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -6080,8 +6201,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Lou Pécou",
       "website": "https://www.lou-pecou.ca/",
       "resolvedUrl": "https://www.loupecou.com/",
-      "observedAt": "2026-09-04T12:50:57.539Z",
-      "lastVerifiedAt": "2026-09-04T12:50:57.539Z",
+      "observedAt": "2026-09-04T13:33:22.647Z",
+      "lastVerifiedAt": "2026-09-04T13:33:22.647Z",
       "scannedOwnedPages": [
         "https://www.loupecou.com/",
         "https://www.loupecou.com/about",
@@ -6099,8 +6220,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.loupecou.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:57.539Z",
-          "lastVerifiedAt": "2026-09-04T12:50:57.539Z",
+          "observedAt": "2026-09-04T13:33:22.647Z",
+          "lastVerifiedAt": "2026-09-04T13:33:22.647Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -6116,8 +6237,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.loupecou.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:57.539Z",
-          "lastVerifiedAt": "2026-09-04T12:50:57.539Z",
+          "observedAt": "2026-09-04T13:33:22.647Z",
+          "lastVerifiedAt": "2026-09-04T13:33:22.647Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -6131,8 +6252,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "EAT",
           "discoveredFrom": "https://www.loupecou.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:57.539Z",
-          "lastVerifiedAt": "2026-09-04T12:50:57.539Z",
+          "observedAt": "2026-09-04T13:33:22.647Z",
+          "lastVerifiedAt": "2026-09-04T13:33:22.647Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -6143,8 +6264,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "RESERVE",
           "discoveredFrom": "https://www.loupecou.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:57.539Z",
-          "lastVerifiedAt": "2026-09-04T12:50:57.539Z",
+          "observedAt": "2026-09-04T13:33:22.647Z",
+          "lastVerifiedAt": "2026-09-04T13:33:22.647Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -6155,8 +6276,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "GIVE",
           "discoveredFrom": "https://www.loupecou.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:57.539Z",
-          "lastVerifiedAt": "2026-09-04T12:50:57.539Z",
+          "observedAt": "2026-09-04T13:33:22.647Z",
+          "lastVerifiedAt": "2026-09-04T13:33:22.647Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -6167,8 +6288,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "MENU",
           "discoveredFrom": "https://www.loupecou.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:57.539Z",
-          "lastVerifiedAt": "2026-09-04T12:50:57.539Z",
+          "observedAt": "2026-09-04T13:33:22.647Z",
+          "lastVerifiedAt": "2026-09-04T13:33:22.647Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -6186,8 +6307,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Starbucks",
       "website": "https://www.starbucks.ca/store-locator/store/79117-307543/318-herring-cove-rd-318-herring-cove-rd-halifax-ns-b-3-r-1-v-4-ca",
       "resolvedUrl": "https://www.starbucks.ca/store-locator/store/79117-307543/318-herring-cove-rd-318-herring-cove-rd-halifax-ns-b-3-r-1-v-4-ca",
-      "observedAt": "2026-09-04T12:50:52.336Z",
-      "lastVerifiedAt": "2026-09-04T12:50:52.336Z",
+      "observedAt": "2026-09-04T13:33:17.756Z",
+      "lastVerifiedAt": "2026-09-04T13:33:17.756Z",
       "scannedOwnedPages": [
         "https://www.starbucks.ca/store-locator/store/79117-307543/318-herring-cove-rd-318-herring-cove-rd-halifax-ns-b-3-r-1-v-4-ca"
       ],
@@ -6206,8 +6327,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Starbucks",
       "website": "https://www.starbucks.ca/store-locator/store/66230-300523/sobeys-clayton-park-644-287-lacewood-drive-halifax-ns-b-3-m-3-y-7-ca",
       "resolvedUrl": "https://www.starbucks.ca/store-locator/store/66230-300523/sobeys-clayton-park-644-287-lacewood-drive-halifax-ns-b-3-m-3-y-7-ca",
-      "observedAt": "2026-09-04T12:50:52.592Z",
-      "lastVerifiedAt": "2026-09-04T12:50:52.592Z",
+      "observedAt": "2026-09-04T13:33:17.982Z",
+      "lastVerifiedAt": "2026-09-04T13:33:17.982Z",
       "scannedOwnedPages": [
         "https://www.starbucks.ca/store-locator/store/66230-300523/sobeys-clayton-park-644-287-lacewood-drive-halifax-ns-b-3-m-3-y-7-ca"
       ],
@@ -6226,8 +6347,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Starbucks",
       "website": "https://www.starbucks.ca/store-locator/store/61586-294956/atlantic-superstore-joseph-how-3601-joseph-howe-drive-halifax-ns-b-3-l-4-h-8-ca",
       "resolvedUrl": "https://www.starbucks.ca/store-locator/store/61586-294956/atlantic-superstore-joseph-how-3601-joseph-howe-drive-halifax-ns-b-3-l-4-h-8-ca",
-      "observedAt": "2026-09-04T12:50:52.836Z",
-      "lastVerifiedAt": "2026-09-04T12:50:52.836Z",
+      "observedAt": "2026-09-04T13:33:18.245Z",
+      "lastVerifiedAt": "2026-09-04T13:33:18.245Z",
       "scannedOwnedPages": [
         "https://www.starbucks.ca/store-locator/store/61586-294956/atlantic-superstore-joseph-how-3601-joseph-howe-drive-halifax-ns-b-3-l-4-h-8-ca"
       ],
@@ -6246,8 +6367,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Starbucks",
       "website": "https://www.starbucks.ca/store-locator/store/23087-222344/675-windmill-road-11-cuddy-lane-dartmouth-ns-b-3-b-0-l-1-ca",
       "resolvedUrl": "https://www.starbucks.ca/store-locator/store/23087-222344/675-windmill-road-11-cuddy-lane-dartmouth-ns-b-3-b-0-l-1-ca",
-      "observedAt": "2026-09-04T12:50:53.103Z",
-      "lastVerifiedAt": "2026-09-04T12:50:53.103Z",
+      "observedAt": "2026-09-04T13:33:18.520Z",
+      "lastVerifiedAt": "2026-09-04T13:33:18.520Z",
       "scannedOwnedPages": [
         "https://www.starbucks.ca/store-locator/store/23087-222344/675-windmill-road-11-cuddy-lane-dartmouth-ns-b-3-b-0-l-1-ca"
       ],
@@ -6287,7 +6408,7 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "confidence": "authoritative",
           "status": "active",
           "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-09-04T12:51:47.588Z"
+          "carriedForwardAt": "2026-09-04T13:34:13.421Z"
         },
         {
           "platform": "x",
@@ -6306,7 +6427,7 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "confidence": "authoritative",
           "status": "active",
           "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-09-04T12:51:47.588Z"
+          "carriedForwardAt": "2026-09-04T13:34:13.421Z"
         },
         {
           "platform": "instagram",
@@ -6325,7 +6446,7 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "confidence": "authoritative",
           "status": "active",
           "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-09-04T12:51:47.588Z"
+          "carriedForwardAt": "2026-09-04T13:34:13.421Z"
         }
       ],
       "linkHubs": [],
@@ -6342,7 +6463,7 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "confidence": "authoritative",
           "status": "active",
           "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-09-04T12:51:47.588Z"
+          "carriedForwardAt": "2026-09-04T13:34:13.421Z"
         },
         {
           "kind": "menu",
@@ -6356,7 +6477,7 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "confidence": "authoritative",
           "status": "active",
           "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-09-04T12:51:47.588Z"
+          "carriedForwardAt": "2026-09-04T13:34:13.421Z"
         },
         {
           "kind": "ordering",
@@ -6370,7 +6491,7 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "confidence": "authoritative",
           "status": "active",
           "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-09-04T12:51:47.588Z"
+          "carriedForwardAt": "2026-09-04T13:34:13.421Z"
         },
         {
           "kind": "ordering",
@@ -6384,7 +6505,7 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "confidence": "authoritative",
           "status": "active",
           "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-09-04T12:51:47.588Z"
+          "carriedForwardAt": "2026-09-04T13:34:13.421Z"
         }
       ],
       "feeds": [],
@@ -6419,7 +6540,7 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "confidence": "authoritative",
           "status": "active",
           "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-09-04T12:51:47.588Z"
+          "carriedForwardAt": "2026-09-04T13:34:13.421Z"
         }
       ],
       "linkHubs": [],
@@ -6436,7 +6557,7 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "confidence": "authoritative",
           "status": "active",
           "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-09-04T12:51:47.588Z"
+          "carriedForwardAt": "2026-09-04T13:34:13.421Z"
         },
         {
           "kind": "menu",
@@ -6450,7 +6571,7 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "confidence": "authoritative",
           "status": "active",
           "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-09-04T12:51:47.588Z"
+          "carriedForwardAt": "2026-09-04T13:34:13.421Z"
         }
       ],
       "feeds": [],
@@ -6464,8 +6585,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Jacky's Cafe",
       "website": "https://jackyscafehalifax.com/",
       "resolvedUrl": "https://jackyscafehalifax.com/",
-      "observedAt": "2026-09-04T12:50:54.754Z",
-      "lastVerifiedAt": "2026-09-04T12:50:54.754Z",
+      "observedAt": "2026-09-04T13:33:19.541Z",
+      "lastVerifiedAt": "2026-09-04T13:33:19.541Z",
       "scannedOwnedPages": [
         "https://jackyscafehalifax.com/",
         "https://jackyscafehalifax.com/location/"
@@ -6479,8 +6600,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Order Online",
           "discoveredFrom": "https://jackyscafehalifax.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:54.754Z",
-          "lastVerifiedAt": "2026-09-04T12:50:54.754Z",
+          "observedAt": "2026-09-04T13:33:19.541Z",
+          "lastVerifiedAt": "2026-09-04T13:33:19.541Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -6491,8 +6612,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Menu",
           "discoveredFrom": "https://jackyscafehalifax.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:54.754Z",
-          "lastVerifiedAt": "2026-09-04T12:50:54.754Z",
+          "observedAt": "2026-09-04T13:33:19.541Z",
+          "lastVerifiedAt": "2026-09-04T13:33:19.541Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -6510,8 +6631,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "The Mic Mac Bar and Grill",
       "website": "https://micmacbarandgrill.com/",
       "resolvedUrl": "https://micmacbarandgrill.com/",
-      "observedAt": "2026-09-04T12:51:13.581Z",
-      "lastVerifiedAt": "2026-09-04T12:51:13.581Z",
+      "observedAt": "2026-09-04T13:33:39.241Z",
+      "lastVerifiedAt": "2026-09-04T13:33:39.241Z",
       "scannedOwnedPages": [
         "https://micmacbarandgrill.com/",
         "https://micmacbarandgrill.com/our-story/",
@@ -6529,8 +6650,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://micmacbarandgrill.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:13.581Z",
-          "lastVerifiedAt": "2026-09-04T12:51:13.581Z",
+          "observedAt": "2026-09-04T13:33:39.241Z",
+          "lastVerifiedAt": "2026-09-04T13:33:39.241Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -6546,8 +6667,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://micmacbarandgrill.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:13.581Z",
-          "lastVerifiedAt": "2026-09-04T12:51:13.581Z",
+          "observedAt": "2026-09-04T13:33:39.241Z",
+          "lastVerifiedAt": "2026-09-04T13:33:39.241Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -6563,8 +6684,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://micmacbarandgrill.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:13.581Z",
-          "lastVerifiedAt": "2026-09-04T12:51:13.581Z",
+          "observedAt": "2026-09-04T13:33:39.241Z",
+          "lastVerifiedAt": "2026-09-04T13:33:39.241Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -6578,8 +6699,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Menus",
           "discoveredFrom": "https://micmacbarandgrill.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:13.581Z",
-          "lastVerifiedAt": "2026-09-04T12:51:13.581Z",
+          "observedAt": "2026-09-04T13:33:39.241Z",
+          "lastVerifiedAt": "2026-09-04T13:33:39.241Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -6590,8 +6711,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Reservations",
           "discoveredFrom": "https://micmacbarandgrill.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:13.581Z",
-          "lastVerifiedAt": "2026-09-04T12:51:13.581Z",
+          "observedAt": "2026-09-04T13:33:39.241Z",
+          "lastVerifiedAt": "2026-09-04T13:33:39.241Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -6602,8 +6723,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Order Online",
           "discoveredFrom": "https://micmacbarandgrill.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:13.581Z",
-          "lastVerifiedAt": "2026-09-04T12:51:13.581Z",
+          "observedAt": "2026-09-04T13:33:39.241Z",
+          "lastVerifiedAt": "2026-09-04T13:33:39.241Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -6614,8 +6735,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Browse Our Food Menu",
           "discoveredFrom": "https://micmacbarandgrill.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:13.581Z",
-          "lastVerifiedAt": "2026-09-04T12:51:13.581Z",
+          "observedAt": "2026-09-04T13:33:39.241Z",
+          "lastVerifiedAt": "2026-09-04T13:33:39.241Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -6626,8 +6747,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Browse our specials",
           "discoveredFrom": "https://micmacbarandgrill.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:13.581Z",
-          "lastVerifiedAt": "2026-09-04T12:51:13.581Z",
+          "observedAt": "2026-09-04T13:33:39.241Z",
+          "lastVerifiedAt": "2026-09-04T13:33:39.241Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -6638,8 +6759,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Kids",
           "discoveredFrom": "https://micmacbarandgrill.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:13.581Z",
-          "lastVerifiedAt": "2026-09-04T12:51:13.581Z",
+          "observedAt": "2026-09-04T13:33:39.241Z",
+          "lastVerifiedAt": "2026-09-04T13:33:39.241Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -6655,8 +6776,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Classic Pizza",
       "website": "https://classic-pizza.order-online.ai/",
       "resolvedUrl": "https://classic-pizza.order-online.ai/",
-      "observedAt": "2026-09-04T12:50:46.898Z",
-      "lastVerifiedAt": "2026-09-04T12:50:46.898Z",
+      "observedAt": "2026-09-04T13:33:11.586Z",
+      "lastVerifiedAt": "2026-09-04T13:33:11.586Z",
       "scannedOwnedPages": [
         "https://classic-pizza.order-online.ai/"
       ],
@@ -6673,8 +6794,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Rollz Ice Cream",
       "website": "https://rollzicecream.ca/",
       "resolvedUrl": "https://rollzicecream.ca/",
-      "observedAt": "2026-09-04T12:51:04.694Z",
-      "lastVerifiedAt": "2026-09-04T12:51:04.694Z",
+      "observedAt": "2026-09-04T13:33:32.426Z",
+      "lastVerifiedAt": "2026-09-04T13:33:32.426Z",
       "scannedOwnedPages": [
         "https://rollzicecream.ca/"
       ],
@@ -6691,8 +6812,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Pizza Pizza",
       "website": "https://www.pizzapizza.ca/",
       "resolvedUrl": "https://www.pizzapizza.ca/",
-      "observedAt": "2026-09-04T12:51:03.650Z",
-      "lastVerifiedAt": "2026-09-04T12:51:03.650Z",
+      "observedAt": "2026-09-04T13:33:32.574Z",
+      "lastVerifiedAt": "2026-09-04T13:33:32.574Z",
       "scannedOwnedPages": [
         "https://www.pizzapizza.ca/"
       ],
@@ -6712,8 +6833,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Latitude 44°",
       "website": "https://www.lat44hfx.com/",
       "resolvedUrl": "https://www.lat44hfx.com/",
-      "observedAt": "2026-09-04T12:50:56.452Z",
-      "lastVerifiedAt": "2026-09-04T12:50:56.452Z",
+      "observedAt": "2026-09-04T13:33:21.507Z",
+      "lastVerifiedAt": "2026-09-04T13:33:21.507Z",
       "scannedOwnedPages": [
         "https://www.lat44hfx.com/",
         "https://www.lat44hfx.com/contact-location"
@@ -6730,8 +6851,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.lat44hfx.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:56.452Z",
-          "lastVerifiedAt": "2026-09-04T12:50:56.452Z",
+          "observedAt": "2026-09-04T13:33:21.507Z",
+          "lastVerifiedAt": "2026-09-04T13:33:21.507Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -6747,8 +6868,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.lat44hfx.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:56.452Z",
-          "lastVerifiedAt": "2026-09-04T12:50:56.452Z",
+          "observedAt": "2026-09-04T13:33:21.507Z",
+          "lastVerifiedAt": "2026-09-04T13:33:21.507Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -6762,8 +6883,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "OUR MENU",
           "discoveredFrom": "https://www.lat44hfx.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:56.452Z",
-          "lastVerifiedAt": "2026-09-04T12:50:56.452Z",
+          "observedAt": "2026-09-04T13:33:21.507Z",
+          "lastVerifiedAt": "2026-09-04T13:33:21.507Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -6774,8 +6895,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "RESERVE",
           "discoveredFrom": "https://www.lat44hfx.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:56.452Z",
-          "lastVerifiedAt": "2026-09-04T12:50:56.452Z",
+          "observedAt": "2026-09-04T13:33:21.507Z",
+          "lastVerifiedAt": "2026-09-04T13:33:21.507Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -6786,8 +6907,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "ORDER ON OPENTABLE",
           "discoveredFrom": "https://www.lat44hfx.com/contact-location",
           "associationBasis": "linked_from_official_location_page",
-          "observedAt": "2026-09-04T12:50:56.452Z",
-          "lastVerifiedAt": "2026-09-04T12:50:56.452Z",
+          "observedAt": "2026-09-04T13:33:21.507Z",
+          "lastVerifiedAt": "2026-09-04T13:33:21.507Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -6806,8 +6927,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "India Paradise",
       "website": "https://www.indiaparadise.ca/",
       "resolvedUrl": "https://www.indiaparadise.ca/",
-      "observedAt": "2026-09-04T12:50:54.649Z",
-      "lastVerifiedAt": "2026-09-04T12:50:54.649Z",
+      "observedAt": "2026-09-04T13:33:19.482Z",
+      "lastVerifiedAt": "2026-09-04T13:33:19.482Z",
       "scannedOwnedPages": [
         "https://www.indiaparadise.ca/",
         "https://www.indiaparadise.ca/contact"
@@ -6821,8 +6942,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Order Now",
           "discoveredFrom": "https://www.indiaparadise.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:54.649Z",
-          "lastVerifiedAt": "2026-09-04T12:50:54.649Z",
+          "observedAt": "2026-09-04T13:33:19.482Z",
+          "lastVerifiedAt": "2026-09-04T13:33:19.482Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -6833,8 +6954,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Mar 12, 2026 Calgary News Opening on March 18th in Calgary New Spot Alert: India Paradise is coming to Calgary! 🥘🔥Mark your calendars for ",
           "discoveredFrom": "https://www.indiaparadise.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:54.649Z",
-          "lastVerifiedAt": "2026-09-04T12:50:54.649Z",
+          "observedAt": "2026-09-04T13:33:19.482Z",
+          "lastVerifiedAt": "2026-09-04T13:33:19.482Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -6845,8 +6966,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "View Menu",
           "discoveredFrom": "https://www.indiaparadise.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:54.649Z",
-          "lastVerifiedAt": "2026-09-04T12:50:54.649Z",
+          "observedAt": "2026-09-04T13:33:19.482Z",
+          "lastVerifiedAt": "2026-09-04T13:33:19.482Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -6864,8 +6985,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Bitter End Martini Bar & Restaurant",
       "website": "https://www.bitterend.ca/",
       "resolvedUrl": "https://www.bitterend.ca/",
-      "observedAt": "2026-09-04T12:50:44.372Z",
-      "lastVerifiedAt": "2026-09-04T12:50:44.372Z",
+      "observedAt": "2026-09-04T13:33:08.535Z",
+      "lastVerifiedAt": "2026-09-04T13:33:08.535Z",
       "scannedOwnedPages": [
         "https://www.bitterend.ca/",
         "https://www.bitterend.ca/about.html",
@@ -6880,8 +7001,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Reserve",
           "discoveredFrom": "https://www.bitterend.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:44.372Z",
-          "lastVerifiedAt": "2026-09-04T12:50:44.372Z",
+          "observedAt": "2026-09-04T13:33:08.535Z",
+          "lastVerifiedAt": "2026-09-04T13:33:08.535Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -6892,8 +7013,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "menu",
           "discoveredFrom": "https://www.bitterend.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:44.372Z",
-          "lastVerifiedAt": "2026-09-04T12:50:44.372Z",
+          "observedAt": "2026-09-04T13:33:08.535Z",
+          "lastVerifiedAt": "2026-09-04T13:33:08.535Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -6904,8 +7025,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "menu",
           "discoveredFrom": "https://www.bitterend.ca/about.html",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:44.372Z",
-          "lastVerifiedAt": "2026-09-04T12:50:44.372Z",
+          "observedAt": "2026-09-04T13:33:08.535Z",
+          "lastVerifiedAt": "2026-09-04T13:33:08.535Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -6921,8 +7042,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Public - Café, Bakery & Bar",
       "website": "https://www.rcr.ca/restaurants/public-cafe-bakery-bar/",
       "resolvedUrl": "https://www.rcr.ca/restaurants/public-cafe-bakery-bar/",
-      "observedAt": "2026-09-04T12:51:02.883Z",
-      "lastVerifiedAt": "2026-09-04T12:51:02.883Z",
+      "observedAt": "2026-09-04T13:33:28.597Z",
+      "lastVerifiedAt": "2026-09-04T13:33:28.597Z",
       "scannedOwnedPages": [
         "https://www.rcr.ca/restaurants/public-cafe-bakery-bar/",
         "https://www.rcr.ca/restaurants/",
@@ -6942,8 +7063,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.rcr.ca/restaurants/public-cafe-bakery-bar/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:02.883Z",
-          "lastVerifiedAt": "2026-09-04T12:51:02.883Z",
+          "observedAt": "2026-09-04T13:33:28.597Z",
+          "lastVerifiedAt": "2026-09-04T13:33:28.597Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -6959,8 +7080,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.rcr.ca/restaurants/agricola-street-brasserie/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:02.883Z",
-          "lastVerifiedAt": "2026-09-04T12:51:02.883Z",
+          "observedAt": "2026-09-04T13:33:28.597Z",
+          "lastVerifiedAt": "2026-09-04T13:33:28.597Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -6976,8 +7097,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.rcr.ca/restaurants/agricola-street-brasserie/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:02.883Z",
-          "lastVerifiedAt": "2026-09-04T12:51:02.883Z",
+          "observedAt": "2026-09-04T13:33:28.597Z",
+          "lastVerifiedAt": "2026-09-04T13:33:28.597Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -6991,8 +7112,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Dinner Menu",
           "discoveredFrom": "https://www.rcr.ca/restaurants/agricola-street-brasserie/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:02.883Z",
-          "lastVerifiedAt": "2026-09-04T12:51:02.883Z",
+          "observedAt": "2026-09-04T13:33:28.597Z",
+          "lastVerifiedAt": "2026-09-04T13:33:28.597Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -7011,8 +7132,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Matadora Tapas Bar",
       "website": "https://matadorahfx.ca/",
       "resolvedUrl": "https://matadorahfx.ca/",
-      "observedAt": "2026-09-04T12:50:58.431Z",
-      "lastVerifiedAt": "2026-09-04T12:50:58.431Z",
+      "observedAt": "2026-09-04T13:33:23.960Z",
+      "lastVerifiedAt": "2026-09-04T13:33:23.960Z",
       "scannedOwnedPages": [
         "https://matadorahfx.ca/",
         "https://matadorahfx.ca/",
@@ -7027,8 +7148,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Reservations",
           "discoveredFrom": "https://matadorahfx.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:58.431Z",
-          "lastVerifiedAt": "2026-09-04T12:50:58.431Z",
+          "observedAt": "2026-09-04T13:33:23.960Z",
+          "lastVerifiedAt": "2026-09-04T13:33:23.960Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -7039,8 +7160,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Dinner & DESSERT Menu",
           "discoveredFrom": "https://matadorahfx.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:58.431Z",
-          "lastVerifiedAt": "2026-09-04T12:50:58.431Z",
+          "observedAt": "2026-09-04T13:33:23.960Z",
+          "lastVerifiedAt": "2026-09-04T13:33:23.960Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -7071,8 +7192,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Water Polo",
       "website": "https://waterpolohfx.ca/",
       "resolvedUrl": "https://www.waterpolohfx.ca/",
-      "observedAt": "2026-09-04T12:51:20.825Z",
-      "lastVerifiedAt": "2026-09-04T12:51:20.825Z",
+      "observedAt": "2026-09-04T13:33:43.893Z",
+      "lastVerifiedAt": "2026-09-04T13:33:43.893Z",
       "scannedOwnedPages": [
         "https://www.waterpolohfx.ca/",
         "https://www.waterpolohfx.ca/our-story/",
@@ -7091,8 +7212,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.waterpolohfx.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:20.825Z",
-          "lastVerifiedAt": "2026-09-04T12:51:20.825Z",
+          "observedAt": "2026-09-04T13:33:43.893Z",
+          "lastVerifiedAt": "2026-09-04T13:33:43.893Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -7106,8 +7227,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "The Bar",
           "discoveredFrom": "https://www.waterpolohfx.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:20.825Z",
-          "lastVerifiedAt": "2026-09-04T12:51:20.825Z",
+          "observedAt": "2026-09-04T13:33:43.893Z",
+          "lastVerifiedAt": "2026-09-04T13:33:43.893Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -7118,8 +7239,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "The Kitchen",
           "discoveredFrom": "https://www.waterpolohfx.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:20.825Z",
-          "lastVerifiedAt": "2026-09-04T12:51:20.825Z",
+          "observedAt": "2026-09-04T13:33:43.893Z",
+          "lastVerifiedAt": "2026-09-04T13:33:43.893Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -7130,8 +7251,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Reservations",
           "discoveredFrom": "https://www.waterpolohfx.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:20.825Z",
-          "lastVerifiedAt": "2026-09-04T12:51:20.825Z",
+          "observedAt": "2026-09-04T13:33:43.893Z",
+          "lastVerifiedAt": "2026-09-04T13:33:43.893Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -7142,8 +7263,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "View Menus",
           "discoveredFrom": "https://www.waterpolohfx.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:20.825Z",
-          "lastVerifiedAt": "2026-09-04T12:51:20.825Z",
+          "observedAt": "2026-09-04T13:33:43.893Z",
+          "lastVerifiedAt": "2026-09-04T13:33:43.893Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -7154,8 +7275,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "View Menu",
           "discoveredFrom": "https://www.waterpolohfx.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:20.825Z",
-          "lastVerifiedAt": "2026-09-04T12:51:20.825Z",
+          "observedAt": "2026-09-04T13:33:43.893Z",
+          "lastVerifiedAt": "2026-09-04T13:33:43.893Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -7173,8 +7294,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Crème",
       "website": "https://cremehalifax.com/",
       "resolvedUrl": "https://cremehalifax.com/",
-      "observedAt": "2026-09-04T12:50:47.490Z",
-      "lastVerifiedAt": "2026-09-04T12:50:47.490Z",
+      "observedAt": "2026-09-04T13:33:12.002Z",
+      "lastVerifiedAt": "2026-09-04T13:33:12.002Z",
       "scannedOwnedPages": [
         "https://cremehalifax.com/",
         "https://cremehalifax.com/cakes"
@@ -7191,8 +7312,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://cremehalifax.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:47.490Z",
-          "lastVerifiedAt": "2026-09-04T12:50:47.490Z",
+          "observedAt": "2026-09-04T13:33:12.002Z",
+          "lastVerifiedAt": "2026-09-04T13:33:12.002Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -7208,8 +7329,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://cremehalifax.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:47.490Z",
-          "lastVerifiedAt": "2026-09-04T12:50:47.490Z",
+          "observedAt": "2026-09-04T13:33:12.002Z",
+          "lastVerifiedAt": "2026-09-04T13:33:12.002Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -7223,8 +7344,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Menu",
           "discoveredFrom": "https://cremehalifax.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:47.490Z",
-          "lastVerifiedAt": "2026-09-04T12:50:47.490Z",
+          "observedAt": "2026-09-04T13:33:12.002Z",
+          "lastVerifiedAt": "2026-09-04T13:33:12.002Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -7235,8 +7356,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Make a Reservation",
           "discoveredFrom": "https://cremehalifax.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:47.490Z",
-          "lastVerifiedAt": "2026-09-04T12:50:47.490Z",
+          "observedAt": "2026-09-04T13:33:12.002Z",
+          "lastVerifiedAt": "2026-09-04T13:33:12.002Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -7247,8 +7368,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Order Online",
           "discoveredFrom": "https://cremehalifax.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:47.490Z",
-          "lastVerifiedAt": "2026-09-04T12:50:47.490Z",
+          "observedAt": "2026-09-04T13:33:12.002Z",
+          "lastVerifiedAt": "2026-09-04T13:33:12.002Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -7264,8 +7385,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Jean's Chinese Restaurant",
       "website": "https://www.jeansrestaurant.ca/",
       "resolvedUrl": "https://www.jeansrestaurant.ca/",
-      "observedAt": "2026-09-04T12:50:54.986Z",
-      "lastVerifiedAt": "2026-09-04T12:50:54.986Z",
+      "observedAt": "2026-09-04T13:33:19.809Z",
+      "lastVerifiedAt": "2026-09-04T13:33:19.809Z",
       "scannedOwnedPages": [
         "https://www.jeansrestaurant.ca/",
         "https://www.jeansrestaurant.ca/contact",
@@ -7284,8 +7405,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.jeansrestaurant.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:54.986Z",
-          "lastVerifiedAt": "2026-09-04T12:50:54.986Z",
+          "observedAt": "2026-09-04T13:33:19.809Z",
+          "lastVerifiedAt": "2026-09-04T13:33:19.809Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -7301,8 +7422,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.jeansrestaurant.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:54.986Z",
-          "lastVerifiedAt": "2026-09-04T12:50:54.986Z",
+          "observedAt": "2026-09-04T13:33:19.809Z",
+          "lastVerifiedAt": "2026-09-04T13:33:19.809Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -7316,8 +7437,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Delivery Map",
           "discoveredFrom": "https://www.jeansrestaurant.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:54.986Z",
-          "lastVerifiedAt": "2026-09-04T12:50:54.986Z",
+          "observedAt": "2026-09-04T13:33:19.809Z",
+          "lastVerifiedAt": "2026-09-04T13:33:19.809Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -7328,8 +7449,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Order Online",
           "discoveredFrom": "https://www.jeansrestaurant.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:54.986Z",
-          "lastVerifiedAt": "2026-09-04T12:50:54.986Z",
+          "observedAt": "2026-09-04T13:33:19.809Z",
+          "lastVerifiedAt": "2026-09-04T13:33:19.809Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -7340,8 +7461,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Menu Download",
           "discoveredFrom": "https://www.jeansrestaurant.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:54.986Z",
-          "lastVerifiedAt": "2026-09-04T12:50:54.986Z",
+          "observedAt": "2026-09-04T13:33:19.809Z",
+          "lastVerifiedAt": "2026-09-04T13:33:19.809Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -7359,8 +7480,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "A&W",
       "website": "https://web.aw.ca/en/locations/6012/dartmouth/240-victoria-rd",
       "resolvedUrl": "https://web.aw.ca/en/locations/6012/dartmouth/240-victoria-rd",
-      "observedAt": "2026-09-04T12:50:43.796Z",
-      "lastVerifiedAt": "2026-09-04T12:50:43.796Z",
+      "observedAt": "2026-09-04T13:33:07.974Z",
+      "lastVerifiedAt": "2026-09-04T13:33:07.974Z",
       "scannedOwnedPages": [
         "https://web.aw.ca/en/locations/6012/dartmouth/240-victoria-rd"
       ],
@@ -7379,8 +7500,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Battery Park Beer Bar & Eatery",
       "website": "http://batterypark.ca/",
       "resolvedUrl": "https://batterypark.ca/",
-      "observedAt": "2026-09-04T12:50:43.766Z",
-      "lastVerifiedAt": "2026-09-04T12:50:43.766Z",
+      "observedAt": "2026-09-04T13:33:08.123Z",
+      "lastVerifiedAt": "2026-09-04T13:33:08.123Z",
       "scannedOwnedPages": [
         "https://batterypark.ca/"
       ],
@@ -7396,8 +7517,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://batterypark.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:43.766Z",
-          "lastVerifiedAt": "2026-09-04T12:50:43.766Z",
+          "observedAt": "2026-09-04T13:33:08.123Z",
+          "lastVerifiedAt": "2026-09-04T13:33:08.123Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -7413,8 +7534,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://batterypark.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:43.766Z",
-          "lastVerifiedAt": "2026-09-04T12:50:43.766Z",
+          "observedAt": "2026-09-04T13:33:08.123Z",
+          "lastVerifiedAt": "2026-09-04T13:33:08.123Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -7434,8 +7555,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Phở Hoang Minh",
       "website": "https://www.phohoangminh.ca/",
       "resolvedUrl": "https://phohoangminh.ca/",
-      "observedAt": "2026-09-04T12:51:02.983Z",
-      "lastVerifiedAt": "2026-09-04T12:51:02.983Z",
+      "observedAt": "2026-09-04T13:33:28.637Z",
+      "lastVerifiedAt": "2026-09-04T13:33:28.637Z",
       "scannedOwnedPages": [
         "https://phohoangminh.ca/",
         "https://phohoangminh.ca/about/",
@@ -7453,8 +7574,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://phohoangminh.ca/contact/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:02.983Z",
-          "lastVerifiedAt": "2026-09-04T12:51:02.983Z",
+          "observedAt": "2026-09-04T13:33:28.637Z",
+          "lastVerifiedAt": "2026-09-04T13:33:28.637Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -7470,8 +7591,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://phohoangminh.ca/contact/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:02.983Z",
-          "lastVerifiedAt": "2026-09-04T12:51:02.983Z",
+          "observedAt": "2026-09-04T13:33:28.637Z",
+          "lastVerifiedAt": "2026-09-04T13:33:28.637Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -7487,8 +7608,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://phohoangminh.ca/contact/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:02.983Z",
-          "lastVerifiedAt": "2026-09-04T12:51:02.983Z",
+          "observedAt": "2026-09-04T13:33:28.637Z",
+          "lastVerifiedAt": "2026-09-04T13:33:28.637Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -7504,8 +7625,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://phohoangminh.ca/contact/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:02.983Z",
-          "lastVerifiedAt": "2026-09-04T12:51:02.983Z",
+          "observedAt": "2026-09-04T13:33:28.637Z",
+          "lastVerifiedAt": "2026-09-04T13:33:28.637Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -7521,8 +7642,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://phohoangminh.ca/contact/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:02.983Z",
-          "lastVerifiedAt": "2026-09-04T12:51:02.983Z",
+          "observedAt": "2026-09-04T13:33:28.637Z",
+          "lastVerifiedAt": "2026-09-04T13:33:28.637Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -7557,8 +7678,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Starbucks",
       "website": "https://www.starbucks.ca/store-locator/store/6149-147151/5554-kaye-street-5554-kaye-street-halifax-ns-b-3-k-1-y-5-ca",
       "resolvedUrl": "https://www.starbucks.ca/store-locator/store/6149-147151/5554-kaye-street-5554-kaye-street-halifax-ns-b-3-k-1-y-5-ca",
-      "observedAt": "2026-09-04T12:50:49.958Z",
-      "lastVerifiedAt": "2026-09-04T12:50:49.958Z",
+      "observedAt": "2026-09-04T13:33:15.054Z",
+      "lastVerifiedAt": "2026-09-04T13:33:15.054Z",
       "scannedOwnedPages": [
         "https://www.starbucks.ca/store-locator/store/6149-147151/5554-kaye-street-5554-kaye-street-halifax-ns-b-3-k-1-y-5-ca"
       ],
@@ -7577,8 +7698,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Metro Pizza",
       "website": "https://metropizzahalifax.ca/",
       "resolvedUrl": "https://metropizzahalifax.ca/",
-      "observedAt": "2026-09-04T12:50:59.445Z",
-      "lastVerifiedAt": "2026-09-04T12:50:59.445Z",
+      "observedAt": "2026-09-04T13:33:24.566Z",
+      "lastVerifiedAt": "2026-09-04T13:33:24.566Z",
       "scannedOwnedPages": [
         "https://metropizzahalifax.ca/",
         "https://metropizzahalifax.ca/about-us-1",
@@ -7593,8 +7714,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Menu",
           "discoveredFrom": "https://metropizzahalifax.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:59.445Z",
-          "lastVerifiedAt": "2026-09-04T12:50:59.445Z",
+          "observedAt": "2026-09-04T13:33:24.566Z",
+          "lastVerifiedAt": "2026-09-04T13:33:24.566Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -7610,8 +7731,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Tony's Pizza",
       "website": "https://www.tonysdonair.ca/",
       "resolvedUrl": "https://www.tonysdonair.com/",
-      "observedAt": "2026-09-04T12:51:19.258Z",
-      "lastVerifiedAt": "2026-09-04T12:51:19.258Z",
+      "observedAt": "2026-09-04T13:33:42.232Z",
+      "lastVerifiedAt": "2026-09-04T13:33:42.232Z",
       "scannedOwnedPages": [
         "https://www.tonysdonair.com/",
         "https://www.tonysdonair.com/our-story",
@@ -7629,8 +7750,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.tonysdonair.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:19.258Z",
-          "lastVerifiedAt": "2026-09-04T12:51:19.258Z",
+          "observedAt": "2026-09-04T13:33:42.232Z",
+          "lastVerifiedAt": "2026-09-04T13:33:42.232Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -7646,8 +7767,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.tonysdonair.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:19.258Z",
-          "lastVerifiedAt": "2026-09-04T12:51:19.258Z",
+          "observedAt": "2026-09-04T13:33:42.232Z",
+          "lastVerifiedAt": "2026-09-04T13:33:42.232Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -7661,8 +7782,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Other Menu Items",
           "discoveredFrom": "https://www.tonysdonair.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:19.258Z",
-          "lastVerifiedAt": "2026-09-04T12:51:19.258Z",
+          "observedAt": "2026-09-04T13:33:42.232Z",
+          "lastVerifiedAt": "2026-09-04T13:33:42.232Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -7673,8 +7794,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Order Online",
           "discoveredFrom": "https://www.tonysdonair.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:19.258Z",
-          "lastVerifiedAt": "2026-09-04T12:51:19.258Z",
+          "observedAt": "2026-09-04T13:33:42.232Z",
+          "lastVerifiedAt": "2026-09-04T13:33:42.232Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -7692,8 +7813,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Cheese Curds Burgers",
       "website": "https://www.cheesecurdsburgers.com/",
       "resolvedUrl": "https://www.cheesecurdsburgers.com/",
-      "observedAt": "2026-09-04T12:50:46.416Z",
-      "lastVerifiedAt": "2026-09-04T12:50:46.416Z",
+      "observedAt": "2026-09-04T13:33:10.892Z",
+      "lastVerifiedAt": "2026-09-04T13:33:10.892Z",
       "scannedOwnedPages": [
         "https://www.cheesecurdsburgers.com/",
         "https://www.cheesecurdsburgers.com/about-us",
@@ -7712,8 +7833,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.cheesecurdsburgers.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:46.416Z",
-          "lastVerifiedAt": "2026-09-04T12:50:46.416Z",
+          "observedAt": "2026-09-04T13:33:10.892Z",
+          "lastVerifiedAt": "2026-09-04T13:33:10.892Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -7729,8 +7850,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.cheesecurdsburgers.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:46.416Z",
-          "lastVerifiedAt": "2026-09-04T12:50:46.416Z",
+          "observedAt": "2026-09-04T13:33:10.892Z",
+          "lastVerifiedAt": "2026-09-04T13:33:10.892Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -7746,8 +7867,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.cheesecurdsburgers.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:46.416Z",
-          "lastVerifiedAt": "2026-09-04T12:50:46.416Z",
+          "observedAt": "2026-09-04T13:33:10.892Z",
+          "lastVerifiedAt": "2026-09-04T13:33:10.892Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -7763,8 +7884,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.cheesecurdsburgers.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:46.416Z",
-          "lastVerifiedAt": "2026-09-04T12:50:46.416Z",
+          "observedAt": "2026-09-04T13:33:10.892Z",
+          "lastVerifiedAt": "2026-09-04T13:33:10.892Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -7778,8 +7899,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "MENU",
           "discoveredFrom": "https://www.cheesecurdsburgers.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:46.416Z",
-          "lastVerifiedAt": "2026-09-04T12:50:46.416Z",
+          "observedAt": "2026-09-04T13:33:10.892Z",
+          "lastVerifiedAt": "2026-09-04T13:33:10.892Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -7790,8 +7911,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "ORDER ONLINE",
           "discoveredFrom": "https://www.cheesecurdsburgers.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:46.416Z",
-          "lastVerifiedAt": "2026-09-04T12:50:46.416Z",
+          "observedAt": "2026-09-04T13:33:10.892Z",
+          "lastVerifiedAt": "2026-09-04T13:33:10.892Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -7809,8 +7930,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Narrow Espresso",
       "website": "http://narrowespresso.com/",
       "resolvedUrl": "http://narrowespresso.com/",
-      "observedAt": "2026-09-04T12:51:01.282Z",
-      "lastVerifiedAt": "2026-09-04T12:51:01.282Z",
+      "observedAt": "2026-09-04T13:33:26.751Z",
+      "lastVerifiedAt": "2026-09-04T13:33:26.751Z",
       "scannedOwnedPages": [
         "http://narrowespresso.com/"
       ],
@@ -7827,8 +7948,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Gingerbread Haus Bakery",
       "website": "https://www.gingerbreadhausbakery.com/",
       "resolvedUrl": "https://www.gingerbreadhausbakery.com/",
-      "observedAt": "2026-09-04T12:50:50.737Z",
-      "lastVerifiedAt": "2026-09-04T12:50:50.737Z",
+      "observedAt": "2026-09-04T13:33:15.073Z",
+      "lastVerifiedAt": "2026-09-04T13:33:15.073Z",
       "scannedOwnedPages": [
         "https://www.gingerbreadhausbakery.com/",
         "https://www.gingerbreadhausbakery.com/contact/",
@@ -7876,8 +7997,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Salvatore's Pizzaiolo Trattoria",
       "website": "https://www.salvatorespizza.ca/",
       "resolvedUrl": "https://www.salvatorespizza.ca/",
-      "observedAt": "2026-09-04T12:51:05.193Z",
-      "lastVerifiedAt": "2026-09-04T12:51:05.193Z",
+      "observedAt": "2026-09-04T13:33:32.741Z",
+      "lastVerifiedAt": "2026-09-04T13:33:32.741Z",
       "scannedOwnedPages": [
         "https://www.salvatorespizza.ca/",
         "https://www.salvatorespizza.ca/find-us/",
@@ -7895,8 +8016,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.salvatorespizza.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:05.193Z",
-          "lastVerifiedAt": "2026-09-04T12:51:05.193Z",
+          "observedAt": "2026-09-04T13:33:32.741Z",
+          "lastVerifiedAt": "2026-09-04T13:33:32.741Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -7929,8 +8050,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Dooly's",
       "website": "https://www.doolys.ca/",
       "resolvedUrl": "https://www.doolys.ca/",
-      "observedAt": "2026-09-04T12:50:48.149Z",
-      "lastVerifiedAt": "2026-09-04T12:50:48.149Z",
+      "observedAt": "2026-09-04T13:33:12.853Z",
+      "lastVerifiedAt": "2026-09-04T13:33:12.853Z",
       "scannedOwnedPages": [
         "https://www.doolys.ca/",
         "https://www.doolys.ca/our-story-1",
@@ -7950,8 +8071,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.doolys.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:48.149Z",
-          "lastVerifiedAt": "2026-09-04T12:50:48.149Z",
+          "observedAt": "2026-09-04T13:33:12.853Z",
+          "lastVerifiedAt": "2026-09-04T13:33:12.853Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -7967,8 +8088,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.doolys.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:48.149Z",
-          "lastVerifiedAt": "2026-09-04T12:50:48.149Z",
+          "observedAt": "2026-09-04T13:33:12.853Z",
+          "lastVerifiedAt": "2026-09-04T13:33:12.853Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -8017,8 +8138,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "The Black Sheep",
       "website": "https://blacksheephalifax.com/",
       "resolvedUrl": "https://blacksheephalifax.com/",
-      "observedAt": "2026-09-04T12:51:11.300Z",
-      "lastVerifiedAt": "2026-09-04T12:51:11.300Z",
+      "observedAt": "2026-09-04T13:33:37.727Z",
+      "lastVerifiedAt": "2026-09-04T13:33:37.727Z",
       "scannedOwnedPages": [
         "https://blacksheephalifax.com/",
         "https://blacksheephalifax.com/about/"
@@ -8035,8 +8156,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://blacksheephalifax.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:11.300Z",
-          "lastVerifiedAt": "2026-09-04T12:51:11.300Z",
+          "observedAt": "2026-09-04T13:33:37.727Z",
+          "lastVerifiedAt": "2026-09-04T13:33:37.727Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -8052,8 +8173,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://blacksheephalifax.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:11.300Z",
-          "lastVerifiedAt": "2026-09-04T12:51:11.300Z",
+          "observedAt": "2026-09-04T13:33:37.727Z",
+          "lastVerifiedAt": "2026-09-04T13:33:37.727Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -8067,8 +8188,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "MENU",
           "discoveredFrom": "https://blacksheephalifax.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:11.300Z",
-          "lastVerifiedAt": "2026-09-04T12:51:11.300Z",
+          "observedAt": "2026-09-04T13:33:37.727Z",
+          "lastVerifiedAt": "2026-09-04T13:33:37.727Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -8079,8 +8200,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "private events",
           "discoveredFrom": "https://blacksheephalifax.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:11.300Z",
-          "lastVerifiedAt": "2026-09-04T12:51:11.300Z",
+          "observedAt": "2026-09-04T13:33:37.727Z",
+          "lastVerifiedAt": "2026-09-04T13:33:37.727Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -8091,8 +8212,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "reserve a table",
           "discoveredFrom": "https://blacksheephalifax.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:11.300Z",
-          "lastVerifiedAt": "2026-09-04T12:51:11.300Z",
+          "observedAt": "2026-09-04T13:33:37.727Z",
+          "lastVerifiedAt": "2026-09-04T13:33:37.727Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -8126,8 +8247,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Bluenose II",
       "website": "https://www.bluenoseii.ca/",
       "resolvedUrl": "https://bluenoseii.ca/",
-      "observedAt": "2026-09-04T12:50:44.677Z",
-      "lastVerifiedAt": "2026-09-04T12:50:44.677Z",
+      "observedAt": "2026-09-04T13:33:08.856Z",
+      "lastVerifiedAt": "2026-09-04T13:33:08.856Z",
       "scannedOwnedPages": [
         "https://bluenoseii.ca/",
         "https://bluenoseii.ca/wp-login.php?redirect_to=https%3A%2F%2Fbluenoseii.ca%2Fwp-admin%2Fnav-menus.php%3Faction%3Dlocations&reauth=1",
@@ -8142,8 +8263,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Please select a menu in this location",
           "discoveredFrom": "https://bluenoseii.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:44.677Z",
-          "lastVerifiedAt": "2026-09-04T12:50:44.677Z",
+          "observedAt": "2026-09-04T13:33:08.856Z",
+          "lastVerifiedAt": "2026-09-04T13:33:08.856Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -8154,8 +8275,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "View The Full Menu",
           "discoveredFrom": "https://bluenoseii.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:44.677Z",
-          "lastVerifiedAt": "2026-09-04T12:50:44.677Z",
+          "observedAt": "2026-09-04T13:33:08.856Z",
+          "lastVerifiedAt": "2026-09-04T13:33:08.856Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -8166,8 +8287,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Make a Reservation",
           "discoveredFrom": "https://bluenoseii.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:44.677Z",
-          "lastVerifiedAt": "2026-09-04T12:50:44.677Z",
+          "observedAt": "2026-09-04T13:33:08.856Z",
+          "lastVerifiedAt": "2026-09-04T13:33:08.856Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -8198,8 +8319,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Starbucks",
       "website": "https://www.starbucks.ca/store-locator/store/4086-140770/20-parkland-dr-20-parkland-dr-halifax-ns-b-3-s-1-p-1-ca",
       "resolvedUrl": "https://www.starbucks.ca/store-locator/store/4086-140770/20-parkland-dr-20-parkland-dr-halifax-ns-b-3-s-1-p-1-ca",
-      "observedAt": "2026-09-04T12:50:50.247Z",
-      "lastVerifiedAt": "2026-09-04T12:50:50.247Z",
+      "observedAt": "2026-09-04T13:33:15.567Z",
+      "lastVerifiedAt": "2026-09-04T13:33:15.567Z",
       "scannedOwnedPages": [
         "https://www.starbucks.ca/store-locator/store/4086-140770/20-parkland-dr-20-parkland-dr-halifax-ns-b-3-s-1-p-1-ca"
       ],
@@ -8218,8 +8339,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "The Mellow Mug",
       "website": "https://www.mellowmug.ca/",
       "resolvedUrl": "https://www.mellowmug.ca/",
-      "observedAt": "2026-09-04T12:51:12.563Z",
-      "lastVerifiedAt": "2026-09-04T12:51:12.563Z",
+      "observedAt": "2026-09-04T13:33:38.766Z",
+      "lastVerifiedAt": "2026-09-04T13:33:38.766Z",
       "scannedOwnedPages": [
         "https://www.mellowmug.ca/",
         "https://www.mellowmug.ca/about-us",
@@ -8237,8 +8358,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.mellowmug.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:12.563Z",
-          "lastVerifiedAt": "2026-09-04T12:51:12.563Z",
+          "observedAt": "2026-09-04T13:33:38.766Z",
+          "lastVerifiedAt": "2026-09-04T13:33:38.766Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -8254,8 +8375,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.mellowmug.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:12.563Z",
-          "lastVerifiedAt": "2026-09-04T12:51:12.563Z",
+          "observedAt": "2026-09-04T13:33:38.766Z",
+          "lastVerifiedAt": "2026-09-04T13:33:38.766Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -8269,8 +8390,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "MENU",
           "discoveredFrom": "https://www.mellowmug.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:12.563Z",
-          "lastVerifiedAt": "2026-09-04T12:51:12.563Z",
+          "observedAt": "2026-09-04T13:33:38.766Z",
+          "lastVerifiedAt": "2026-09-04T13:33:38.766Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -8281,8 +8402,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "ORDER ONLINE",
           "discoveredFrom": "https://www.mellowmug.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:12.563Z",
-          "lastVerifiedAt": "2026-09-04T12:51:12.563Z",
+          "observedAt": "2026-09-04T13:33:38.766Z",
+          "lastVerifiedAt": "2026-09-04T13:33:38.766Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -8300,8 +8421,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "ela! Greek Taverna",
       "website": "https://www.elagreektaverna.com/",
       "resolvedUrl": "https://elagreektaverna.com/",
-      "observedAt": "2026-09-04T12:50:50.618Z",
-      "lastVerifiedAt": "2026-09-04T12:50:50.618Z",
+      "observedAt": "2026-09-04T13:33:15.507Z",
+      "lastVerifiedAt": "2026-09-04T13:33:15.507Z",
       "scannedOwnedPages": [
         "https://elagreektaverna.com/",
         "https://elagreektaverna.com/about/",
@@ -8319,8 +8440,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://elagreektaverna.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:50.618Z",
-          "lastVerifiedAt": "2026-09-04T12:50:50.618Z",
+          "observedAt": "2026-09-04T13:33:15.507Z",
+          "lastVerifiedAt": "2026-09-04T13:33:15.507Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -8336,8 +8457,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://elagreektaverna.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:50.618Z",
-          "lastVerifiedAt": "2026-09-04T12:50:50.618Z",
+          "observedAt": "2026-09-04T13:33:15.507Z",
+          "lastVerifiedAt": "2026-09-04T13:33:15.507Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -8353,8 +8474,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://elagreektaverna.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:50.618Z",
-          "lastVerifiedAt": "2026-09-04T12:50:50.618Z",
+          "observedAt": "2026-09-04T13:33:15.507Z",
+          "lastVerifiedAt": "2026-09-04T13:33:15.507Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -8368,8 +8489,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Menu",
           "discoveredFrom": "https://elagreektaverna.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:50.618Z",
-          "lastVerifiedAt": "2026-09-04T12:50:50.618Z",
+          "observedAt": "2026-09-04T13:33:15.507Z",
+          "lastVerifiedAt": "2026-09-04T13:33:15.507Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -8380,8 +8501,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Reservations",
           "discoveredFrom": "https://elagreektaverna.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:50.618Z",
-          "lastVerifiedAt": "2026-09-04T12:50:50.618Z",
+          "observedAt": "2026-09-04T13:33:15.507Z",
+          "lastVerifiedAt": "2026-09-04T13:33:15.507Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -8392,8 +8513,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "View Our Menus",
           "discoveredFrom": "https://elagreektaverna.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:50.618Z",
-          "lastVerifiedAt": "2026-09-04T12:50:50.618Z",
+          "observedAt": "2026-09-04T13:33:15.507Z",
+          "lastVerifiedAt": "2026-09-04T13:33:15.507Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -8404,8 +8525,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Order Online",
           "discoveredFrom": "https://elagreektaverna.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:50.618Z",
-          "lastVerifiedAt": "2026-09-04T12:50:50.618Z",
+          "observedAt": "2026-09-04T13:33:15.507Z",
+          "lastVerifiedAt": "2026-09-04T13:33:15.507Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -8416,8 +8537,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Contact our events team",
           "discoveredFrom": "https://elagreektaverna.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:50.618Z",
-          "lastVerifiedAt": "2026-09-04T12:50:50.618Z",
+          "observedAt": "2026-09-04T13:33:15.507Z",
+          "lastVerifiedAt": "2026-09-04T13:33:15.507Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -8428,8 +8549,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Private events",
           "discoveredFrom": "https://elagreektaverna.com/contact/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:50.618Z",
-          "lastVerifiedAt": "2026-09-04T12:50:50.618Z",
+          "observedAt": "2026-09-04T13:33:15.507Z",
+          "lastVerifiedAt": "2026-09-04T13:33:15.507Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -8462,8 +8583,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Pizza.Co",
       "website": "https://pzzaco.ca/",
       "resolvedUrl": "https://pzzaco.ca/",
-      "observedAt": "2026-09-04T12:51:03.633Z",
-      "lastVerifiedAt": "2026-09-04T12:51:03.633Z",
+      "observedAt": "2026-09-04T13:33:29.632Z",
+      "lastVerifiedAt": "2026-09-04T13:33:29.632Z",
       "scannedOwnedPages": [
         "https://pzzaco.ca/",
         "https://pzzaco.ca/contact-us/"
@@ -8480,8 +8601,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://pzzaco.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:03.633Z",
-          "lastVerifiedAt": "2026-09-04T12:51:03.633Z",
+          "observedAt": "2026-09-04T13:33:29.632Z",
+          "lastVerifiedAt": "2026-09-04T13:33:29.632Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -8497,8 +8618,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://pzzaco.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:03.633Z",
-          "lastVerifiedAt": "2026-09-04T12:51:03.633Z",
+          "observedAt": "2026-09-04T13:33:29.632Z",
+          "lastVerifiedAt": "2026-09-04T13:33:29.632Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -8533,8 +8654,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "The Beaver's Den",
       "website": "https://thebeaversden.ca/",
       "resolvedUrl": "https://thebeaversden.ca/",
-      "observedAt": "2026-09-04T12:51:10.414Z",
-      "lastVerifiedAt": "2026-09-04T12:51:10.414Z",
+      "observedAt": "2026-09-04T13:33:37.209Z",
+      "lastVerifiedAt": "2026-09-04T13:33:37.209Z",
       "scannedOwnedPages": [
         "https://thebeaversden.ca/"
       ],
@@ -8550,8 +8671,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://thebeaversden.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:10.414Z",
-          "lastVerifiedAt": "2026-09-04T12:51:10.414Z",
+          "observedAt": "2026-09-04T13:33:37.209Z",
+          "lastVerifiedAt": "2026-09-04T13:33:37.209Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -8567,8 +8688,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://thebeaversden.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:10.414Z",
-          "lastVerifiedAt": "2026-09-04T12:51:10.414Z",
+          "observedAt": "2026-09-04T13:33:37.209Z",
+          "lastVerifiedAt": "2026-09-04T13:33:37.209Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -8582,8 +8703,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "RESERVATIONS",
           "discoveredFrom": "https://thebeaversden.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:10.414Z",
-          "lastVerifiedAt": "2026-09-04T12:51:10.414Z",
+          "observedAt": "2026-09-04T13:33:37.209Z",
+          "lastVerifiedAt": "2026-09-04T13:33:37.209Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -8594,8 +8715,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Calendar",
           "discoveredFrom": "https://thebeaversden.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:10.414Z",
-          "lastVerifiedAt": "2026-09-04T12:51:10.414Z",
+          "observedAt": "2026-09-04T13:33:37.209Z",
+          "lastVerifiedAt": "2026-09-04T13:33:37.209Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -8606,8 +8727,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Menu",
           "discoveredFrom": "https://thebeaversden.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:10.414Z",
-          "lastVerifiedAt": "2026-09-04T12:51:10.414Z",
+          "observedAt": "2026-09-04T13:33:37.209Z",
+          "lastVerifiedAt": "2026-09-04T13:33:37.209Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -8623,8 +8744,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Wendy's",
       "website": "https://www.wendys.com/en-ca",
       "resolvedUrl": "https://www.wendys.com/en-ca",
-      "observedAt": "2026-09-04T12:51:20.947Z",
-      "lastVerifiedAt": "2026-09-04T12:51:20.947Z",
+      "observedAt": "2026-09-04T13:33:44.595Z",
+      "lastVerifiedAt": "2026-09-04T13:33:44.595Z",
       "scannedOwnedPages": [
         "https://www.wendys.com/en-ca",
         "https://order.wendys.com/ca/en/select-restaurant"
@@ -8641,8 +8762,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.wendys.com/en-ca",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:20.947Z",
-          "lastVerifiedAt": "2026-09-04T12:51:20.947Z",
+          "observedAt": "2026-09-04T13:33:44.595Z",
+          "lastVerifiedAt": "2026-09-04T13:33:44.595Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -8658,8 +8779,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.wendys.com/en-ca",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:20.947Z",
-          "lastVerifiedAt": "2026-09-04T12:51:20.947Z",
+          "observedAt": "2026-09-04T13:33:44.595Z",
+          "lastVerifiedAt": "2026-09-04T13:33:44.595Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -8675,8 +8796,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.wendys.com/en-ca",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:20.947Z",
-          "lastVerifiedAt": "2026-09-04T12:51:20.947Z",
+          "observedAt": "2026-09-04T13:33:44.595Z",
+          "lastVerifiedAt": "2026-09-04T13:33:44.595Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -8692,8 +8813,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.wendys.com/en-ca",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:20.947Z",
-          "lastVerifiedAt": "2026-09-04T12:51:20.947Z",
+          "observedAt": "2026-09-04T13:33:44.595Z",
+          "lastVerifiedAt": "2026-09-04T13:33:44.595Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -8709,8 +8830,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.wendys.com/en-ca",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:20.947Z",
-          "lastVerifiedAt": "2026-09-04T12:51:20.947Z",
+          "observedAt": "2026-09-04T13:33:44.595Z",
+          "lastVerifiedAt": "2026-09-04T13:33:44.595Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -8726,8 +8847,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://order.wendys.com/ca/en/select-restaurant",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:20.947Z",
-          "lastVerifiedAt": "2026-09-04T12:51:20.947Z",
+          "observedAt": "2026-09-04T13:33:44.595Z",
+          "lastVerifiedAt": "2026-09-04T13:33:44.595Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -8743,8 +8864,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://order.wendys.com/ca/en/select-restaurant",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:20.947Z",
-          "lastVerifiedAt": "2026-09-04T12:51:20.947Z",
+          "observedAt": "2026-09-04T13:33:44.595Z",
+          "lastVerifiedAt": "2026-09-04T13:33:44.595Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -8760,8 +8881,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://order.wendys.com/ca/en/select-restaurant",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:20.947Z",
-          "lastVerifiedAt": "2026-09-04T12:51:20.947Z",
+          "observedAt": "2026-09-04T13:33:44.595Z",
+          "lastVerifiedAt": "2026-09-04T13:33:44.595Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -8775,8 +8896,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Order Pickup",
           "discoveredFrom": "https://www.wendys.com/en-ca",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:20.947Z",
-          "lastVerifiedAt": "2026-09-04T12:51:20.947Z",
+          "observedAt": "2026-09-04T13:33:44.595Z",
+          "lastVerifiedAt": "2026-09-04T13:33:44.595Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -8787,8 +8908,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Order Delivery",
           "discoveredFrom": "https://www.wendys.com/en-ca",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:20.947Z",
-          "lastVerifiedAt": "2026-09-04T12:51:20.947Z",
+          "observedAt": "2026-09-04T13:33:44.595Z",
+          "lastVerifiedAt": "2026-09-04T13:33:44.595Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -8799,8 +8920,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "View Our Menu",
           "discoveredFrom": "https://www.wendys.com/en-ca",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:20.947Z",
-          "lastVerifiedAt": "2026-09-04T12:51:20.947Z",
+          "observedAt": "2026-09-04T13:33:44.595Z",
+          "lastVerifiedAt": "2026-09-04T13:33:44.595Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -8811,8 +8932,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "View Our Menu",
           "discoveredFrom": "https://www.wendys.com/en-ca",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:20.947Z",
-          "lastVerifiedAt": "2026-09-04T12:51:20.947Z",
+          "observedAt": "2026-09-04T13:33:44.595Z",
+          "lastVerifiedAt": "2026-09-04T13:33:44.595Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -8823,8 +8944,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Crave Away",
           "discoveredFrom": "https://www.wendys.com/en-ca",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:20.947Z",
-          "lastVerifiedAt": "2026-09-04T12:51:20.947Z",
+          "observedAt": "2026-09-04T13:33:44.595Z",
+          "lastVerifiedAt": "2026-09-04T13:33:44.595Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -8835,8 +8956,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Dave's Double Combo Combos",
           "discoveredFrom": "https://www.wendys.com/en-ca",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:20.947Z",
-          "lastVerifiedAt": "2026-09-04T12:51:20.947Z",
+          "observedAt": "2026-09-04T13:33:44.595Z",
+          "lastVerifiedAt": "2026-09-04T13:33:44.595Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -8847,8 +8968,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Wendy's Fresh Never Frozen Beef Cheeseburgers",
           "discoveredFrom": "https://www.wendys.com/en-ca",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:20.947Z",
-          "lastVerifiedAt": "2026-09-04T12:51:20.947Z",
+          "observedAt": "2026-09-04T13:33:44.595Z",
+          "lastVerifiedAt": "2026-09-04T13:33:44.595Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -8859,8 +8980,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Wendy's Chicken Wraps & More Chicken, Wraps & More",
           "discoveredFrom": "https://www.wendys.com/en-ca",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:20.947Z",
-          "lastVerifiedAt": "2026-09-04T12:51:20.947Z",
+          "observedAt": "2026-09-04T13:33:44.595Z",
+          "lastVerifiedAt": "2026-09-04T13:33:44.595Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -8871,8 +8992,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Wendy's Apple Pecan Salad Fresh-Made Salads",
           "discoveredFrom": "https://www.wendys.com/en-ca",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:20.947Z",
-          "lastVerifiedAt": "2026-09-04T12:51:20.947Z",
+          "observedAt": "2026-09-04T13:33:44.595Z",
+          "lastVerifiedAt": "2026-09-04T13:33:44.595Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -8883,8 +9004,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Wendy's Fries & Sides Fries & Sides",
           "discoveredFrom": "https://www.wendys.com/en-ca",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:20.947Z",
-          "lastVerifiedAt": "2026-09-04T12:51:20.947Z",
+          "observedAt": "2026-09-04T13:33:44.595Z",
+          "lastVerifiedAt": "2026-09-04T13:33:44.595Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -8895,8 +9016,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Wendy's Frosty Frosty®",
           "discoveredFrom": "https://www.wendys.com/en-ca",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:20.947Z",
-          "lastVerifiedAt": "2026-09-04T12:51:20.947Z",
+          "observedAt": "2026-09-04T13:33:44.595Z",
+          "lastVerifiedAt": "2026-09-04T13:33:44.595Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -8907,8 +9028,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Wendy's Breakfast Combos Breakfast Combos",
           "discoveredFrom": "https://www.wendys.com/en-ca",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:20.947Z",
-          "lastVerifiedAt": "2026-09-04T12:51:20.947Z",
+          "observedAt": "2026-09-04T13:33:44.595Z",
+          "lastVerifiedAt": "2026-09-04T13:33:44.595Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -8919,8 +9040,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Wendy's Croissant Breakfast Sandwiches Croissants",
           "discoveredFrom": "https://www.wendys.com/en-ca",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:20.947Z",
-          "lastVerifiedAt": "2026-09-04T12:51:20.947Z",
+          "observedAt": "2026-09-04T13:33:44.595Z",
+          "lastVerifiedAt": "2026-09-04T13:33:44.595Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -8931,8 +9052,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Wendy's Sausage, Egg & Cheese Biscuit Biscuits",
           "discoveredFrom": "https://www.wendys.com/en-ca",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:20.947Z",
-          "lastVerifiedAt": "2026-09-04T12:51:20.947Z",
+          "observedAt": "2026-09-04T13:33:44.595Z",
+          "lastVerifiedAt": "2026-09-04T13:33:44.595Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -8943,8 +9064,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Wendy's Classic Breakfast Sandwiches Classics",
           "discoveredFrom": "https://www.wendys.com/en-ca",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:20.947Z",
-          "lastVerifiedAt": "2026-09-04T12:51:20.947Z",
+          "observedAt": "2026-09-04T13:33:44.595Z",
+          "lastVerifiedAt": "2026-09-04T13:33:44.595Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -8955,8 +9076,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Wendy's Breakfast Sides & Sweets Sides & Sweets",
           "discoveredFrom": "https://www.wendys.com/en-ca",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:20.947Z",
-          "lastVerifiedAt": "2026-09-04T12:51:20.947Z",
+          "observedAt": "2026-09-04T13:33:44.595Z",
+          "lastVerifiedAt": "2026-09-04T13:33:44.595Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -8967,8 +9088,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Wendy's Coffee Coffee",
           "discoveredFrom": "https://www.wendys.com/en-ca",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:20.947Z",
-          "lastVerifiedAt": "2026-09-04T12:51:20.947Z",
+          "observedAt": "2026-09-04T13:33:44.595Z",
+          "lastVerifiedAt": "2026-09-04T13:33:44.595Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -8979,8 +9100,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Wendy's Beverages Beverages",
           "discoveredFrom": "https://www.wendys.com/en-ca",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:20.947Z",
-          "lastVerifiedAt": "2026-09-04T12:51:20.947Z",
+          "observedAt": "2026-09-04T13:33:44.595Z",
+          "lastVerifiedAt": "2026-09-04T13:33:44.595Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -8991,8 +9112,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Wendy's Quality Choices Quality Choices",
           "discoveredFrom": "https://www.wendys.com/en-ca",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:20.947Z",
-          "lastVerifiedAt": "2026-09-04T12:51:20.947Z",
+          "observedAt": "2026-09-04T13:33:44.595Z",
+          "lastVerifiedAt": "2026-09-04T13:33:44.595Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -9003,8 +9124,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Wendy's Kids Meals Kids' Meals",
           "discoveredFrom": "https://www.wendys.com/en-ca",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:20.947Z",
-          "lastVerifiedAt": "2026-09-04T12:51:20.947Z",
+          "observedAt": "2026-09-04T13:33:44.595Z",
+          "lastVerifiedAt": "2026-09-04T13:33:44.595Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -9022,8 +9143,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "7 Peppers Grill",
       "website": "https://www.7peppersgrill.net/",
       "resolvedUrl": "https://www.7peppersgrill.net/",
-      "observedAt": "2026-09-04T12:50:43.476Z",
-      "lastVerifiedAt": "2026-09-04T12:50:43.476Z",
+      "observedAt": "2026-09-04T13:33:07.652Z",
+      "lastVerifiedAt": "2026-09-04T13:33:07.652Z",
       "scannedOwnedPages": [
         "https://www.7peppersgrill.net/",
         "https://www.7peppersgrill.net/about",
@@ -9041,8 +9162,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.7peppersgrill.net/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:43.476Z",
-          "lastVerifiedAt": "2026-09-04T12:50:43.476Z",
+          "observedAt": "2026-09-04T13:33:07.652Z",
+          "lastVerifiedAt": "2026-09-04T13:33:07.652Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -9058,8 +9179,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.7peppersgrill.net/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:43.476Z",
-          "lastVerifiedAt": "2026-09-04T12:50:43.476Z",
+          "observedAt": "2026-09-04T13:33:07.652Z",
+          "lastVerifiedAt": "2026-09-04T13:33:07.652Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -9075,8 +9196,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.7peppersgrill.net/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:43.476Z",
-          "lastVerifiedAt": "2026-09-04T12:50:43.476Z",
+          "observedAt": "2026-09-04T13:33:07.652Z",
+          "lastVerifiedAt": "2026-09-04T13:33:07.652Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -9092,8 +9213,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.7peppersgrill.net/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:43.476Z",
-          "lastVerifiedAt": "2026-09-04T12:50:43.476Z",
+          "observedAt": "2026-09-04T13:33:07.652Z",
+          "lastVerifiedAt": "2026-09-04T13:33:07.652Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -9107,8 +9228,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Menu",
           "discoveredFrom": "https://www.7peppersgrill.net/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:43.476Z",
-          "lastVerifiedAt": "2026-09-04T12:50:43.476Z",
+          "observedAt": "2026-09-04T13:33:07.652Z",
+          "lastVerifiedAt": "2026-09-04T13:33:07.652Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -9126,8 +9247,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Greco Pizza",
       "website": "https://greco.ca/",
       "resolvedUrl": "https://greco.ca/",
-      "observedAt": "2026-09-04T12:50:51.751Z",
-      "lastVerifiedAt": "2026-09-04T12:50:51.751Z",
+      "observedAt": "2026-09-04T13:33:16.564Z",
+      "lastVerifiedAt": "2026-09-04T13:33:16.564Z",
       "scannedOwnedPages": [
         "https://greco.ca/",
         "https://greco.ca/locations/",
@@ -9145,8 +9266,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://greco.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:51.751Z",
-          "lastVerifiedAt": "2026-09-04T12:50:51.751Z",
+          "observedAt": "2026-09-04T13:33:16.564Z",
+          "lastVerifiedAt": "2026-09-04T13:33:16.564Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -9162,8 +9283,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://greco.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:51.751Z",
-          "lastVerifiedAt": "2026-09-04T12:50:51.751Z",
+          "observedAt": "2026-09-04T13:33:16.564Z",
+          "lastVerifiedAt": "2026-09-04T13:33:16.564Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -9179,8 +9300,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://greco.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:51.751Z",
-          "lastVerifiedAt": "2026-09-04T12:50:51.751Z",
+          "observedAt": "2026-09-04T13:33:16.564Z",
+          "lastVerifiedAt": "2026-09-04T13:33:16.564Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -9196,8 +9317,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://greco.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:51.751Z",
-          "lastVerifiedAt": "2026-09-04T12:50:51.751Z",
+          "observedAt": "2026-09-04T13:33:16.564Z",
+          "lastVerifiedAt": "2026-09-04T13:33:16.564Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -9213,8 +9334,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://greco.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:51.751Z",
-          "lastVerifiedAt": "2026-09-04T12:50:51.751Z",
+          "observedAt": "2026-09-04T13:33:16.564Z",
+          "lastVerifiedAt": "2026-09-04T13:33:16.564Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -9230,8 +9351,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://greco.ca/our-story/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:51.751Z",
-          "lastVerifiedAt": "2026-09-04T12:50:51.751Z",
+          "observedAt": "2026-09-04T13:33:16.564Z",
+          "lastVerifiedAt": "2026-09-04T13:33:16.564Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -9245,8 +9366,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Menu",
           "discoveredFrom": "https://greco.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:51.751Z",
-          "lastVerifiedAt": "2026-09-04T12:50:51.751Z",
+          "observedAt": "2026-09-04T13:33:16.564Z",
+          "lastVerifiedAt": "2026-09-04T13:33:16.564Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -9257,8 +9378,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Subscribe to our Newsletter",
           "discoveredFrom": "https://greco.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:51.751Z",
-          "lastVerifiedAt": "2026-09-04T12:50:51.751Z",
+          "observedAt": "2026-09-04T13:33:16.564Z",
+          "lastVerifiedAt": "2026-09-04T13:33:16.564Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -9269,8 +9390,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "SUBSCRIBE",
           "discoveredFrom": "https://greco.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:51.751Z",
-          "lastVerifiedAt": "2026-09-04T12:50:51.751Z",
+          "observedAt": "2026-09-04T13:33:16.564Z",
+          "lastVerifiedAt": "2026-09-04T13:33:16.564Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -9281,8 +9402,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Menu",
           "discoveredFrom": "https://greco.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:51.751Z",
-          "lastVerifiedAt": "2026-09-04T12:50:51.751Z",
+          "observedAt": "2026-09-04T13:33:16.564Z",
+          "lastVerifiedAt": "2026-09-04T13:33:16.564Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -9316,8 +9437,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Cheese Curds and Habaneros",
       "website": "https://cheesecurdsgourmetburgersandpoutinerie.unuhub.net/",
       "resolvedUrl": "https://cheesecurdsgourmetburgersandpoutinerie.unuhub.net/",
-      "observedAt": "2026-09-04T12:50:46.291Z",
-      "lastVerifiedAt": "2026-09-04T12:50:46.291Z",
+      "observedAt": "2026-09-04T13:33:10.741Z",
+      "lastVerifiedAt": "2026-09-04T13:33:10.741Z",
       "scannedOwnedPages": [
         "https://cheesecurdsgourmetburgersandpoutinerie.unuhub.net/"
       ],
@@ -9333,8 +9454,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://cheesecurdsgourmetburgersandpoutinerie.unuhub.net/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:46.291Z",
-          "lastVerifiedAt": "2026-09-04T12:50:46.291Z",
+          "observedAt": "2026-09-04T13:33:10.741Z",
+          "lastVerifiedAt": "2026-09-04T13:33:10.741Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -9350,8 +9471,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://cheesecurdsgourmetburgersandpoutinerie.unuhub.net/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:46.291Z",
-          "lastVerifiedAt": "2026-09-04T12:50:46.291Z",
+          "observedAt": "2026-09-04T13:33:10.741Z",
+          "lastVerifiedAt": "2026-09-04T13:33:10.741Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -9367,8 +9488,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://cheesecurdsgourmetburgersandpoutinerie.unuhub.net/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:46.291Z",
-          "lastVerifiedAt": "2026-09-04T12:50:46.291Z",
+          "observedAt": "2026-09-04T13:33:10.741Z",
+          "lastVerifiedAt": "2026-09-04T13:33:10.741Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -9386,8 +9507,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Mashawee Mediterranean Grill",
       "website": "https://www.mashaweemediterraneangrill.ca/",
       "resolvedUrl": "https://www.skipthedishes.com/?utm_source=mashaweemediterraneangrill.ca&utm_medium=microsites&utm_campaign=microsites",
-      "observedAt": "2026-09-04T12:50:58.335Z",
-      "lastVerifiedAt": "2026-09-04T12:50:58.335Z",
+      "observedAt": "2026-09-04T13:33:23.481Z",
+      "lastVerifiedAt": "2026-09-04T13:33:23.481Z",
       "scannedOwnedPages": [
         "https://www.skipthedishes.com/?utm_source=mashaweemediterraneangrill.ca&utm_medium=microsites&utm_campaign=microsites",
         "https://www.skipthedishes.com/brands/humptys-family-restaurant",
@@ -9407,8 +9528,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.skipthedishes.com/?utm_source=mashaweemediterraneangrill.ca&utm_medium=microsites&utm_campaign=microsites",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:58.335Z",
-          "lastVerifiedAt": "2026-09-04T12:50:58.335Z",
+          "observedAt": "2026-09-04T13:33:23.481Z",
+          "lastVerifiedAt": "2026-09-04T13:33:23.481Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -9424,8 +9545,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.skipthedishes.com/?utm_source=mashaweemediterraneangrill.ca&utm_medium=microsites&utm_campaign=microsites",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:58.335Z",
-          "lastVerifiedAt": "2026-09-04T12:50:58.335Z",
+          "observedAt": "2026-09-04T13:33:23.481Z",
+          "lastVerifiedAt": "2026-09-04T13:33:23.481Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -9441,8 +9562,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.skipthedishes.com/?utm_source=mashaweemediterraneangrill.ca&utm_medium=microsites&utm_campaign=microsites",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:58.335Z",
-          "lastVerifiedAt": "2026-09-04T12:50:58.335Z",
+          "observedAt": "2026-09-04T13:33:23.481Z",
+          "lastVerifiedAt": "2026-09-04T13:33:23.481Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -9458,8 +9579,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.skipthedishes.com/?utm_source=mashaweemediterraneangrill.ca&utm_medium=microsites&utm_campaign=microsites",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:58.335Z",
-          "lastVerifiedAt": "2026-09-04T12:50:58.335Z",
+          "observedAt": "2026-09-04T13:33:23.481Z",
+          "lastVerifiedAt": "2026-09-04T13:33:23.481Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -9473,8 +9594,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Sign Up",
           "discoveredFrom": "https://www.skipthedishes.com/?utm_source=mashaweemediterraneangrill.ca&utm_medium=microsites&utm_campaign=microsites",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:58.335Z",
-          "lastVerifiedAt": "2026-09-04T12:50:58.335Z",
+          "observedAt": "2026-09-04T13:33:23.481Z",
+          "lastVerifiedAt": "2026-09-04T13:33:23.481Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -9485,8 +9606,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Join Now",
           "discoveredFrom": "https://www.skipthedishes.com/?utm_source=mashaweemediterraneangrill.ca&utm_medium=microsites&utm_campaign=microsites",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:58.335Z",
-          "lastVerifiedAt": "2026-09-04T12:50:58.335Z",
+          "observedAt": "2026-09-04T13:33:23.481Z",
+          "lastVerifiedAt": "2026-09-04T13:33:23.481Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -9497,8 +9618,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Learn More",
           "discoveredFrom": "https://www.skipthedishes.com/?utm_source=mashaweemediterraneangrill.ca&utm_medium=microsites&utm_campaign=microsites",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:58.335Z",
-          "lastVerifiedAt": "2026-09-04T12:50:58.335Z",
+          "observedAt": "2026-09-04T13:33:23.481Z",
+          "lastVerifiedAt": "2026-09-04T13:33:23.481Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -9509,8 +9630,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Partner Success Guide",
           "discoveredFrom": "https://www.skipthedishes.com/brands/humptys-family-restaurant",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:58.335Z",
-          "lastVerifiedAt": "2026-09-04T12:50:58.335Z",
+          "observedAt": "2026-09-04T13:33:23.481Z",
+          "lastVerifiedAt": "2026-09-04T13:33:23.481Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -9528,8 +9649,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Canton Garden",
       "website": "https://www.cantongardenhalifax.com/",
       "resolvedUrl": "https://www.cantongardenns.com/yik8nsx2/restaurant/order-online?utm_source=redirect&utm_medium=cantongardenhalifax.com",
-      "observedAt": "2026-09-04T12:50:45.877Z",
-      "lastVerifiedAt": "2026-09-04T12:50:45.877Z",
+      "observedAt": "2026-09-04T13:33:10.240Z",
+      "lastVerifiedAt": "2026-09-04T13:33:10.240Z",
       "scannedOwnedPages": [
         "https://www.cantongardenns.com/yik8nsx2/restaurant/order-online?utm_source=redirect&utm_medium=cantongardenhalifax.com",
         "https://www.cantongardenns.com/yik8nsx2/restaurant/order-online?utm_source=redirect&utm_medium=cantongardenhalifax.com",
@@ -9546,8 +9667,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "All Day Menu",
           "discoveredFrom": "https://www.cantongardenns.com/yik8nsx2/restaurant/order-online?utm_source=redirect&utm_medium=cantongardenhalifax.com",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:45.877Z",
-          "lastVerifiedAt": "2026-09-04T12:50:45.877Z",
+          "observedAt": "2026-09-04T13:33:10.240Z",
+          "lastVerifiedAt": "2026-09-04T13:33:10.240Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -9558,8 +9679,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Lunch Menu",
           "discoveredFrom": "https://www.cantongardenns.com/yik8nsx2/restaurant/order-online?utm_source=redirect&utm_medium=cantongardenhalifax.com",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:45.877Z",
-          "lastVerifiedAt": "2026-09-04T12:50:45.877Z",
+          "observedAt": "2026-09-04T13:33:10.240Z",
+          "lastVerifiedAt": "2026-09-04T13:33:10.240Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -9570,8 +9691,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "🤩 POPULAR 1. Spring Roll (1pc) Pastry filled with vegetables. $ 3.50",
           "discoveredFrom": "https://www.cantongardenns.com/yik8nsx2/restaurant/order-online?utm_source=redirect&utm_medium=cantongardenhalifax.com",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:45.877Z",
-          "lastVerifiedAt": "2026-09-04T12:50:45.877Z",
+          "observedAt": "2026-09-04T13:33:10.240Z",
+          "lastVerifiedAt": "2026-09-04T13:33:10.240Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -9582,8 +9703,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "1a. Shrimp Roll (4) $ 15.50",
           "discoveredFrom": "https://www.cantongardenns.com/yik8nsx2/restaurant/order-online?utm_source=redirect&utm_medium=cantongardenhalifax.com",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:45.877Z",
-          "lastVerifiedAt": "2026-09-04T12:50:45.877Z",
+          "observedAt": "2026-09-04T13:33:10.240Z",
+          "lastVerifiedAt": "2026-09-04T13:33:10.240Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -9594,8 +9715,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "🤩 POPULAR 2. Egg Roll (1pc) Crispy fried roll filled with vegetables and served with a sweet chili sauce. $ 3.50",
           "discoveredFrom": "https://www.cantongardenns.com/yik8nsx2/restaurant/order-online?utm_source=redirect&utm_medium=cantongardenhalifax.com",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:45.877Z",
-          "lastVerifiedAt": "2026-09-04T12:50:45.877Z",
+          "observedAt": "2026-09-04T13:33:10.240Z",
+          "lastVerifiedAt": "2026-09-04T13:33:10.240Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -9606,8 +9727,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "3. Fried Wontons (12) Crispy fried wontons with a delicate filling. $ 7.25",
           "discoveredFrom": "https://www.cantongardenns.com/yik8nsx2/restaurant/order-online?utm_source=redirect&utm_medium=cantongardenhalifax.com",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:45.877Z",
-          "lastVerifiedAt": "2026-09-04T12:50:45.877Z",
+          "observedAt": "2026-09-04T13:33:10.240Z",
+          "lastVerifiedAt": "2026-09-04T13:33:10.240Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -9618,8 +9739,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "4. Spicy Fried Tofu $ 7.25",
           "discoveredFrom": "https://www.cantongardenns.com/yik8nsx2/restaurant/order-online?utm_source=redirect&utm_medium=cantongardenhalifax.com",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:45.877Z",
-          "lastVerifiedAt": "2026-09-04T12:50:45.877Z",
+          "observedAt": "2026-09-04T13:33:10.240Z",
+          "lastVerifiedAt": "2026-09-04T13:33:10.240Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -9630,8 +9751,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "5. Pan Fried Dumplings (12 pcs) $ 16.50",
           "discoveredFrom": "https://www.cantongardenns.com/yik8nsx2/restaurant/order-online?utm_source=redirect&utm_medium=cantongardenhalifax.com",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:45.877Z",
-          "lastVerifiedAt": "2026-09-04T12:50:45.877Z",
+          "observedAt": "2026-09-04T13:33:10.240Z",
+          "lastVerifiedAt": "2026-09-04T13:33:10.240Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -9642,8 +9763,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "6. Fried Chicken Wings Crispy fried chicken wings, served hot and ready to enjoy. $ 16.50",
           "discoveredFrom": "https://www.cantongardenns.com/yik8nsx2/restaurant/order-online?utm_source=redirect&utm_medium=cantongardenhalifax.com",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:45.877Z",
-          "lastVerifiedAt": "2026-09-04T12:50:45.877Z",
+          "observedAt": "2026-09-04T13:33:10.240Z",
+          "lastVerifiedAt": "2026-09-04T13:33:10.240Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -9654,8 +9775,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "7. Deep Fried Shrimp Balls (12 pcs) $ 26.25",
           "discoveredFrom": "https://www.cantongardenns.com/yik8nsx2/restaurant/order-online?utm_source=redirect&utm_medium=cantongardenhalifax.com",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:45.877Z",
-          "lastVerifiedAt": "2026-09-04T12:50:45.877Z",
+          "observedAt": "2026-09-04T13:33:10.240Z",
+          "lastVerifiedAt": "2026-09-04T13:33:10.240Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -9666,8 +9787,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "👍🏼 OFTEN LIKED 8. Moo Shu Pork (6 pcs) Tender pork, scrambled eggs, and vegetables wrapped in thin pancakes $ 17.25",
           "discoveredFrom": "https://www.cantongardenns.com/yik8nsx2/restaurant/order-online?utm_source=redirect&utm_medium=cantongardenhalifax.com",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:45.877Z",
-          "lastVerifiedAt": "2026-09-04T12:50:45.877Z",
+          "observedAt": "2026-09-04T13:33:10.240Z",
+          "lastVerifiedAt": "2026-09-04T13:33:10.240Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -9678,8 +9799,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "9. Combination Appetizer Dumpling, Spare Ribs, Fried Meat Wonton, Spring Roll, BBQ Pork $ 35.95",
           "discoveredFrom": "https://www.cantongardenns.com/yik8nsx2/restaurant/order-online?utm_source=redirect&utm_medium=cantongardenhalifax.com",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:45.877Z",
-          "lastVerifiedAt": "2026-09-04T12:50:45.877Z",
+          "observedAt": "2026-09-04T13:33:10.240Z",
+          "lastVerifiedAt": "2026-09-04T13:33:10.240Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -9690,8 +9811,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "10. Shrimp Wonton Noodle Soup $ 14.95",
           "discoveredFrom": "https://www.cantongardenns.com/yik8nsx2/restaurant/order-online?utm_source=redirect&utm_medium=cantongardenhalifax.com",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:45.877Z",
-          "lastVerifiedAt": "2026-09-04T12:50:45.877Z",
+          "observedAt": "2026-09-04T13:33:10.240Z",
+          "lastVerifiedAt": "2026-09-04T13:33:10.240Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -9702,8 +9823,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "11. Hot and Sour Soup Classic comfort soup with a balance of spicy and tangy flavors in a rich broth. $ 6.75",
           "discoveredFrom": "https://www.cantongardenns.com/yik8nsx2/restaurant/order-online?utm_source=redirect&utm_medium=cantongardenhalifax.com",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:45.877Z",
-          "lastVerifiedAt": "2026-09-04T12:50:45.877Z",
+          "observedAt": "2026-09-04T13:33:10.240Z",
+          "lastVerifiedAt": "2026-09-04T13:33:10.240Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -9714,8 +9835,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "12. Mushroom Egg Drop Soup $ 6.75",
           "discoveredFrom": "https://www.cantongardenns.com/yik8nsx2/restaurant/order-online?utm_source=redirect&utm_medium=cantongardenhalifax.com",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:45.877Z",
-          "lastVerifiedAt": "2026-09-04T12:50:45.877Z",
+          "observedAt": "2026-09-04T13:33:10.240Z",
+          "lastVerifiedAt": "2026-09-04T13:33:10.240Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -9726,8 +9847,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "👍🏼 OFTEN LIKED 13. Wonton Soup Tender wontons, served in a light broth. $ 7.15",
           "discoveredFrom": "https://www.cantongardenns.com/yik8nsx2/restaurant/order-online?utm_source=redirect&utm_medium=cantongardenhalifax.com",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:45.877Z",
-          "lastVerifiedAt": "2026-09-04T12:50:45.877Z",
+          "observedAt": "2026-09-04T13:33:10.240Z",
+          "lastVerifiedAt": "2026-09-04T13:33:10.240Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -9738,8 +9859,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "14. Chicken Corn Soup Tender chicken and sweet corn in a comforting, creamy broth. $ 15.75",
           "discoveredFrom": "https://www.cantongardenns.com/yik8nsx2/restaurant/order-online?utm_source=redirect&utm_medium=cantongardenhalifax.com",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:45.877Z",
-          "lastVerifiedAt": "2026-09-04T12:50:45.877Z",
+          "observedAt": "2026-09-04T13:33:10.240Z",
+          "lastVerifiedAt": "2026-09-04T13:33:10.240Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -9750,8 +9871,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "15. West Lake Mince Beef Tofu Soup $ 18.50",
           "discoveredFrom": "https://www.cantongardenns.com/yik8nsx2/restaurant/order-online?utm_source=redirect&utm_medium=cantongardenhalifax.com",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:45.877Z",
-          "lastVerifiedAt": "2026-09-04T12:50:45.877Z",
+          "observedAt": "2026-09-04T13:33:10.240Z",
+          "lastVerifiedAt": "2026-09-04T13:33:10.240Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -9762,8 +9883,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "16. Mixed Seafood Tofu Soup $ 23.25",
           "discoveredFrom": "https://www.cantongardenns.com/yik8nsx2/restaurant/order-online?utm_source=redirect&utm_medium=cantongardenhalifax.com",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:45.877Z",
-          "lastVerifiedAt": "2026-09-04T12:50:45.877Z",
+          "observedAt": "2026-09-04T13:33:10.240Z",
+          "lastVerifiedAt": "2026-09-04T13:33:10.240Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -9774,8 +9895,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "17. Crab Meat Fish Maw Soup $ 28.25",
           "discoveredFrom": "https://www.cantongardenns.com/yik8nsx2/restaurant/order-online?utm_source=redirect&utm_medium=cantongardenhalifax.com",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:45.877Z",
-          "lastVerifiedAt": "2026-09-04T12:50:45.877Z",
+          "observedAt": "2026-09-04T13:33:10.240Z",
+          "lastVerifiedAt": "2026-09-04T13:33:10.240Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -9786,8 +9907,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Menu",
           "discoveredFrom": "https://www.cantongardenns.com/yik8nsx2/restaurant/order-online?utm_source=redirect&utm_medium=cantongardenhalifax.com",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:45.877Z",
-          "lastVerifiedAt": "2026-09-04T12:50:45.877Z",
+          "observedAt": "2026-09-04T13:33:10.240Z",
+          "lastVerifiedAt": "2026-09-04T13:33:10.240Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -9798,8 +9919,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Lunch Specials Combo 1 Sweet & Sour Chicken, Chicken Fried Rice and Egg Roll $ 16.25",
           "discoveredFrom": "https://www.cantongardenns.com/yik8nsx2/restaurant/order-online?menu=Lunch+Menu",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:45.877Z",
-          "lastVerifiedAt": "2026-09-04T12:50:45.877Z",
+          "observedAt": "2026-09-04T13:33:10.240Z",
+          "lastVerifiedAt": "2026-09-04T13:33:10.240Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -9810,8 +9931,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Lunch Specials Combo 2 Spicy Mixed Vegetables, Vegetable Fried Rice and Spring Roll $ 16.25",
           "discoveredFrom": "https://www.cantongardenns.com/yik8nsx2/restaurant/order-online?menu=Lunch+Menu",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:45.877Z",
-          "lastVerifiedAt": "2026-09-04T12:50:45.877Z",
+          "observedAt": "2026-09-04T13:33:10.240Z",
+          "lastVerifiedAt": "2026-09-04T13:33:10.240Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -9822,8 +9943,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Lunch Specials Combo 3 Lemon Chicken, Chicken Fried Rice and Egg Roll $ 16.25",
           "discoveredFrom": "https://www.cantongardenns.com/yik8nsx2/restaurant/order-online?menu=Lunch+Menu",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:45.877Z",
-          "lastVerifiedAt": "2026-09-04T12:50:45.877Z",
+          "observedAt": "2026-09-04T13:33:10.240Z",
+          "lastVerifiedAt": "2026-09-04T13:33:10.240Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -9834,8 +9955,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Lunch Specials Combo 4 Curried Chicken, Steamed Rice and Egg Roll $ 16.25",
           "discoveredFrom": "https://www.cantongardenns.com/yik8nsx2/restaurant/order-online?menu=Lunch+Menu",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:45.877Z",
-          "lastVerifiedAt": "2026-09-04T12:50:45.877Z",
+          "observedAt": "2026-09-04T13:33:10.240Z",
+          "lastVerifiedAt": "2026-09-04T13:33:10.240Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -9846,8 +9967,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Lunch Specials Combo 5 Beef & Broccoli, Chicken Fried Rice and Egg Roll $ 16.25",
           "discoveredFrom": "https://www.cantongardenns.com/yik8nsx2/restaurant/order-online?menu=Lunch+Menu",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:45.877Z",
-          "lastVerifiedAt": "2026-09-04T12:50:45.877Z",
+          "observedAt": "2026-09-04T13:33:10.240Z",
+          "lastVerifiedAt": "2026-09-04T13:33:10.240Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -9858,8 +9979,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Lunch Specials Combo 6 Chicken Chow Mein and Sweet & Sour Chicken and Egg Roll $ 16.95",
           "discoveredFrom": "https://www.cantongardenns.com/yik8nsx2/restaurant/order-online?menu=Lunch+Menu",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:45.877Z",
-          "lastVerifiedAt": "2026-09-04T12:50:45.877Z",
+          "observedAt": "2026-09-04T13:33:10.240Z",
+          "lastVerifiedAt": "2026-09-04T13:33:10.240Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -9870,8 +9991,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Skip to main content",
           "discoveredFrom": "https://www.cantongardenns.com/yik8nsx2/restaurant/order-online/menus/all-day-menu/42050420?menu=All+Day+Menu&amp;category=Appetizers",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:45.877Z",
-          "lastVerifiedAt": "2026-09-04T12:50:45.877Z",
+          "observedAt": "2026-09-04T13:33:10.240Z",
+          "lastVerifiedAt": "2026-09-04T13:33:10.240Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -9882,8 +10003,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "All Day Menu",
           "discoveredFrom": "https://www.cantongardenns.com/yik8nsx2/restaurant/order-online/menus/all-day-menu/42050420?menu=All+Day+Menu&amp;category=Appetizers",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:45.877Z",
-          "lastVerifiedAt": "2026-09-04T12:50:45.877Z",
+          "observedAt": "2026-09-04T13:33:10.240Z",
+          "lastVerifiedAt": "2026-09-04T13:33:10.240Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -9894,8 +10015,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Lunch Menu",
           "discoveredFrom": "https://www.cantongardenns.com/yik8nsx2/restaurant/order-online/menus/all-day-menu/42050420?menu=All+Day+Menu&amp;category=Appetizers",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:45.877Z",
-          "lastVerifiedAt": "2026-09-04T12:50:45.877Z",
+          "observedAt": "2026-09-04T13:33:10.240Z",
+          "lastVerifiedAt": "2026-09-04T13:33:10.240Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -9906,8 +10027,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Start New Order",
           "discoveredFrom": "https://www.cantongardenns.com/yik8nsx2/restaurant/order-online/menus/all-day-menu/42050420?menu=All+Day+Menu&amp;category=Appetizers",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:45.877Z",
-          "lastVerifiedAt": "2026-09-04T12:50:45.877Z",
+          "observedAt": "2026-09-04T13:33:10.240Z",
+          "lastVerifiedAt": "2026-09-04T13:33:10.240Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -9925,8 +10046,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Ardmore Tea Room",
       "website": "https://www.ardmoretearoom.ca/",
       "resolvedUrl": "https://www.ardmoretearoom.ca/",
-      "observedAt": "2026-09-04T12:50:43.940Z",
-      "lastVerifiedAt": "2026-09-04T12:50:43.940Z",
+      "observedAt": "2026-09-04T13:33:08.057Z",
+      "lastVerifiedAt": "2026-09-04T13:33:08.057Z",
       "scannedOwnedPages": [
         "https://www.ardmoretearoom.ca/",
         "https://www.ardmoretearoom.ca/contact"
@@ -9943,8 +10064,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.ardmoretearoom.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:43.940Z",
-          "lastVerifiedAt": "2026-09-04T12:50:43.940Z",
+          "observedAt": "2026-09-04T13:33:08.057Z",
+          "lastVerifiedAt": "2026-09-04T13:33:08.057Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -9960,8 +10081,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.ardmoretearoom.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:43.940Z",
-          "lastVerifiedAt": "2026-09-04T12:50:43.940Z",
+          "observedAt": "2026-09-04T13:33:08.057Z",
+          "lastVerifiedAt": "2026-09-04T13:33:08.057Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -9977,8 +10098,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.ardmoretearoom.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:43.940Z",
-          "lastVerifiedAt": "2026-09-04T12:50:43.940Z",
+          "observedAt": "2026-09-04T13:33:08.057Z",
+          "lastVerifiedAt": "2026-09-04T13:33:08.057Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -9992,8 +10113,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Menu",
           "discoveredFrom": "https://www.ardmoretearoom.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:43.940Z",
-          "lastVerifiedAt": "2026-09-04T12:50:43.940Z",
+          "observedAt": "2026-09-04T13:33:08.057Z",
+          "lastVerifiedAt": "2026-09-04T13:33:08.057Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -10004,8 +10125,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Breakfast Takeout Halifax",
           "discoveredFrom": "https://www.ardmoretearoom.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:43.940Z",
-          "lastVerifiedAt": "2026-09-04T12:50:43.940Z",
+          "observedAt": "2026-09-04T13:33:08.057Z",
+          "lastVerifiedAt": "2026-09-04T13:33:08.057Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -10023,8 +10144,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "King of Donair",
       "website": "https://www.kingofdonair.ca/",
       "resolvedUrl": "https://www.kingofdonair.ca/",
-      "observedAt": "2026-09-04T12:50:56.084Z",
-      "lastVerifiedAt": "2026-09-04T12:50:56.084Z",
+      "observedAt": "2026-09-04T13:33:20.705Z",
+      "lastVerifiedAt": "2026-09-04T13:33:20.705Z",
       "scannedOwnedPages": [
         "https://www.kingofdonair.ca/",
         "https://www.kingofdonair.ca/order-online-choose-a-location/",
@@ -10043,8 +10164,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.kingofdonair.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:56.084Z",
-          "lastVerifiedAt": "2026-09-04T12:50:56.084Z",
+          "observedAt": "2026-09-04T13:33:20.705Z",
+          "lastVerifiedAt": "2026-09-04T13:33:20.705Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -10060,8 +10181,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.kingofdonair.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:56.084Z",
-          "lastVerifiedAt": "2026-09-04T12:50:56.084Z",
+          "observedAt": "2026-09-04T13:33:20.705Z",
+          "lastVerifiedAt": "2026-09-04T13:33:20.705Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -10077,8 +10198,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.kingofdonair.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:56.084Z",
-          "lastVerifiedAt": "2026-09-04T12:50:56.084Z",
+          "observedAt": "2026-09-04T13:33:20.705Z",
+          "lastVerifiedAt": "2026-09-04T13:33:20.705Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -10092,8 +10213,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Menu",
           "discoveredFrom": "https://www.kingofdonair.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:56.084Z",
-          "lastVerifiedAt": "2026-09-04T12:50:56.084Z",
+          "observedAt": "2026-09-04T13:33:20.705Z",
+          "lastVerifiedAt": "2026-09-04T13:33:20.705Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -10104,8 +10225,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "View Menu",
           "discoveredFrom": "https://www.kingofdonair.ca/order-online-choose-a-location/",
           "associationBasis": "linked_from_official_location_page",
-          "observedAt": "2026-09-04T12:50:56.084Z",
-          "lastVerifiedAt": "2026-09-04T12:50:56.084Z",
+          "observedAt": "2026-09-04T13:33:20.705Z",
+          "lastVerifiedAt": "2026-09-04T13:33:20.705Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -10116,8 +10237,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Order on Skip the Dishes",
           "discoveredFrom": "https://www.kingofdonair.ca/order-online-choose-a-location/",
           "associationBasis": "linked_from_official_location_page",
-          "observedAt": "2026-09-04T12:50:56.084Z",
-          "lastVerifiedAt": "2026-09-04T12:50:56.084Z",
+          "observedAt": "2026-09-04T13:33:20.705Z",
+          "lastVerifiedAt": "2026-09-04T13:33:20.705Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -10128,8 +10249,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Order on UberEats",
           "discoveredFrom": "https://www.kingofdonair.ca/order-online-choose-a-location/",
           "associationBasis": "linked_from_official_location_page",
-          "observedAt": "2026-09-04T12:50:56.084Z",
-          "lastVerifiedAt": "2026-09-04T12:50:56.084Z",
+          "observedAt": "2026-09-04T13:33:20.705Z",
+          "lastVerifiedAt": "2026-09-04T13:33:20.705Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -10140,8 +10261,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Order on DoorDash",
           "discoveredFrom": "https://www.kingofdonair.ca/order-online-choose-a-location/",
           "associationBasis": "linked_from_official_location_page",
-          "observedAt": "2026-09-04T12:50:56.084Z",
-          "lastVerifiedAt": "2026-09-04T12:50:56.084Z",
+          "observedAt": "2026-09-04T13:33:20.705Z",
+          "lastVerifiedAt": "2026-09-04T13:33:20.705Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -10167,8 +10288,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Tim Hortons",
       "website": "https://www.timhortons.ca/store-locator/store/restaurant_66914",
       "resolvedUrl": "https://www.timhortons.ca/store-locator/store/restaurant_66914",
-      "observedAt": "2026-09-04T12:51:15.962Z",
-      "lastVerifiedAt": "2026-09-04T12:51:15.962Z",
+      "observedAt": "2026-09-04T13:33:40.728Z",
+      "lastVerifiedAt": "2026-09-04T13:33:40.728Z",
       "scannedOwnedPages": [
         "https://www.timhortons.ca/store-locator/store/restaurant_66914"
       ],
@@ -10185,8 +10306,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Tim Hortons",
       "website": "https://www.timhortons.com/",
       "resolvedUrl": "https://www.timhortons.com/",
-      "observedAt": "2026-09-04T12:51:17.885Z",
-      "lastVerifiedAt": "2026-09-04T12:51:17.885Z",
+      "observedAt": "2026-09-04T13:33:41.779Z",
+      "lastVerifiedAt": "2026-09-04T13:33:41.779Z",
       "scannedOwnedPages": [
         "https://www.timhortons.com/"
       ],
@@ -10203,9 +10324,12 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Wasabi House",
       "website": "http://www.wasabihouse.ca/",
       "resolvedUrl": "http://wasabihouse.ca/",
-      "observedAt": "2026-09-04T11:31:50.705Z",
-      "lastVerifiedAt": "2026-09-04T11:31:50.705Z",
-      "scannedOwnedPages": [],
+      "observedAt": "2026-09-04T13:33:43.879Z",
+      "lastVerifiedAt": "2026-09-04T13:33:43.879Z",
+      "scannedOwnedPages": [
+        "http://wasabihouse.ca/",
+        "http://wasabihouse.ca/about/"
+      ],
       "socialProfiles": [],
       "linkHubs": [],
       "relatedLinks": [],
@@ -10215,32 +10339,27 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "type": "application/rss+xml",
           "title": "&raquo; Feed",
           "discoveredFrom": "http://wasabihouse.ca/",
-          "reviewState": "verified_link",
-          "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-09-04T12:51:47.588Z"
+          "reviewState": "verified_link"
         },
         {
           "url": "http://wasabihouse.ca/comments/feed/",
           "type": "application/rss+xml",
           "title": "&raquo; Comments Feed",
           "discoveredFrom": "http://wasabihouse.ca/",
-          "reviewState": "verified_link",
-          "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-09-04T12:51:47.588Z"
+          "reviewState": "verified_link"
         }
       ],
       "sitemaps": [],
       "sourceKind": "official_website_discovery",
-      "reviewState": "verified",
-      "refreshState": "carried_forward_after_refresh_failure"
+      "reviewState": "verified"
     },
     {
       "restaurantId": "osm-node-37132580-durty-nelly-s-irish-pub",
       "name": "Durty Nelly's Irish Pub",
       "website": "https://durtynellys.ca/",
       "resolvedUrl": "https://durtynellys.ca/",
-      "observedAt": "2026-09-04T12:50:48.890Z",
-      "lastVerifiedAt": "2026-09-04T12:50:48.890Z",
+      "observedAt": "2026-09-04T13:33:13.660Z",
+      "lastVerifiedAt": "2026-09-04T13:33:13.660Z",
       "scannedOwnedPages": [
         "https://durtynellys.ca/",
         "https://durtynellys.ca/about/",
@@ -10255,8 +10374,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Menu",
           "discoveredFrom": "https://durtynellys.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:48.890Z",
-          "lastVerifiedAt": "2026-09-04T12:50:48.890Z",
+          "observedAt": "2026-09-04T13:33:13.660Z",
+          "lastVerifiedAt": "2026-09-04T13:33:13.660Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -10267,8 +10386,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Sunday Roast",
           "discoveredFrom": "https://durtynellys.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:48.890Z",
-          "lastVerifiedAt": "2026-09-04T12:50:48.890Z",
+          "observedAt": "2026-09-04T13:33:13.660Z",
+          "lastVerifiedAt": "2026-09-04T13:33:13.660Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -10279,8 +10398,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "RESERVATIONS",
           "discoveredFrom": "https://durtynellys.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:48.890Z",
-          "lastVerifiedAt": "2026-09-04T12:50:48.890Z",
+          "observedAt": "2026-09-04T13:33:13.660Z",
+          "lastVerifiedAt": "2026-09-04T13:33:13.660Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -10313,8 +10432,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "The Loose Cannon",
       "website": "https://theloosecannon.ca/",
       "resolvedUrl": "https://www.theloosecannon.ca/",
-      "observedAt": "2026-09-04T12:51:12.119Z",
-      "lastVerifiedAt": "2026-09-04T12:51:12.119Z",
+      "observedAt": "2026-09-04T13:33:38.259Z",
+      "lastVerifiedAt": "2026-09-04T13:33:38.259Z",
       "scannedOwnedPages": [
         "https://www.theloosecannon.ca/",
         "https://www.theloosecannon.ca/contact"
@@ -10328,8 +10447,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Menu",
           "discoveredFrom": "https://www.theloosecannon.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:12.119Z",
-          "lastVerifiedAt": "2026-09-04T12:51:12.119Z",
+          "observedAt": "2026-09-04T13:33:38.259Z",
+          "lastVerifiedAt": "2026-09-04T13:33:38.259Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -10345,8 +10464,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Smiling Goat",
       "website": "https://www.smilinggoat.ca/locations/",
       "resolvedUrl": "https://www.avia-pilott.com/",
-      "observedAt": "2026-09-04T12:51:06.078Z",
-      "lastVerifiedAt": "2026-09-04T12:51:06.078Z",
+      "observedAt": "2026-09-04T13:33:33.063Z",
+      "lastVerifiedAt": "2026-09-04T13:33:33.063Z",
       "scannedOwnedPages": [
         "https://www.avia-pilott.com/",
         "https://www.avia-pilott.com/contact-us/"
@@ -10366,8 +10485,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Cabin Coffee",
       "website": "https://cabincoffeehalifax.com/",
       "resolvedUrl": "https://cabincoffeehalifax.com/",
-      "observedAt": "2026-09-04T12:50:45.399Z",
-      "lastVerifiedAt": "2026-09-04T12:50:45.399Z",
+      "observedAt": "2026-09-04T13:33:09.947Z",
+      "lastVerifiedAt": "2026-09-04T13:33:09.947Z",
       "scannedOwnedPages": [
         "https://cabincoffeehalifax.com/"
       ],
@@ -10384,8 +10503,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Turkish Delight",
       "website": "https://www.turkishdelighthalifax.ca/contact-us",
       "resolvedUrl": "https://turkishdelighthalifax.ca/",
-      "observedAt": "2026-09-04T12:51:20.177Z",
-      "lastVerifiedAt": "2026-09-04T12:51:20.177Z",
+      "observedAt": "2026-09-04T13:33:42.663Z",
+      "lastVerifiedAt": "2026-09-04T13:33:42.663Z",
       "scannedOwnedPages": [
         "https://turkishdelighthalifax.ca/"
       ],
@@ -10423,7 +10542,7 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "confidence": "authoritative",
           "status": "active",
           "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-09-04T12:51:47.588Z"
+          "carriedForwardAt": "2026-09-04T13:34:13.421Z"
         },
         {
           "platform": "x",
@@ -10442,7 +10561,7 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "confidence": "authoritative",
           "status": "active",
           "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-09-04T12:51:47.588Z"
+          "carriedForwardAt": "2026-09-04T13:34:13.421Z"
         },
         {
           "platform": "instagram",
@@ -10461,7 +10580,7 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "confidence": "authoritative",
           "status": "active",
           "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-09-04T12:51:47.588Z"
+          "carriedForwardAt": "2026-09-04T13:34:13.421Z"
         }
       ],
       "linkHubs": [],
@@ -10478,7 +10597,7 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "confidence": "authoritative",
           "status": "active",
           "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-09-04T12:51:47.588Z"
+          "carriedForwardAt": "2026-09-04T13:34:13.421Z"
         },
         {
           "kind": "menu",
@@ -10492,7 +10611,7 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "confidence": "authoritative",
           "status": "active",
           "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-09-04T12:51:47.588Z"
+          "carriedForwardAt": "2026-09-04T13:34:13.421Z"
         },
         {
           "kind": "ordering",
@@ -10506,7 +10625,7 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "confidence": "authoritative",
           "status": "active",
           "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-09-04T12:51:47.588Z"
+          "carriedForwardAt": "2026-09-04T13:34:13.421Z"
         },
         {
           "kind": "ordering",
@@ -10520,7 +10639,7 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "confidence": "authoritative",
           "status": "active",
           "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-09-04T12:51:47.588Z"
+          "carriedForwardAt": "2026-09-04T13:34:13.421Z"
         }
       ],
       "feeds": [],
@@ -10534,8 +10653,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Great Wall Restaurant",
       "website": "http://www.thegreatwall.ca/",
       "resolvedUrl": "https://www.thegreatwall.ca/",
-      "observedAt": "2026-09-04T12:50:50.928Z",
-      "lastVerifiedAt": "2026-09-04T12:50:50.928Z",
+      "observedAt": "2026-09-04T13:33:15.657Z",
+      "lastVerifiedAt": "2026-09-04T13:33:15.657Z",
       "scannedOwnedPages": [
         "https://www.thegreatwall.ca/",
         "https://www.thegreatwall.ca/contact.html"
@@ -10549,8 +10668,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Menu",
           "discoveredFrom": "https://www.thegreatwall.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:50.928Z",
-          "lastVerifiedAt": "2026-09-04T12:50:50.928Z",
+          "observedAt": "2026-09-04T13:33:15.657Z",
+          "lastVerifiedAt": "2026-09-04T13:33:15.657Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -10561,8 +10680,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Order Now",
           "discoveredFrom": "https://www.thegreatwall.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:50.928Z",
-          "lastVerifiedAt": "2026-09-04T12:50:50.928Z",
+          "observedAt": "2026-09-04T13:33:15.657Z",
+          "lastVerifiedAt": "2026-09-04T13:33:15.657Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -10579,7 +10698,7 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "confidence": "authoritative",
           "status": "active",
           "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-09-04T12:51:47.588Z"
+          "carriedForwardAt": "2026-09-04T13:34:13.421Z"
         }
       ],
       "feeds": [],
@@ -10594,8 +10713,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "The Nook",
       "website": "http://www.thenookhfx.ca/#about",
       "resolvedUrl": "http://www.thenookhfx.ca/",
-      "observedAt": "2026-09-04T12:51:14.614Z",
-      "lastVerifiedAt": "2026-09-04T12:51:14.614Z",
+      "observedAt": "2026-09-04T13:33:39.996Z",
+      "lastVerifiedAt": "2026-09-04T13:33:39.996Z",
       "scannedOwnedPages": [
         "http://www.thenookhfx.ca/"
       ],
@@ -10612,8 +10731,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Cora",
       "website": "https://www.chezcora.com/en/breakfast-lunch-restaurants/cora-halifax-downtown/",
       "resolvedUrl": "https://www.chezcora.com/en/breakfast-lunch-restaurants/halifax-downtown/",
-      "observedAt": "2026-09-04T12:50:47.349Z",
-      "lastVerifiedAt": "2026-09-04T12:50:47.349Z",
+      "observedAt": "2026-09-04T13:33:11.869Z",
+      "lastVerifiedAt": "2026-09-04T13:33:11.869Z",
       "scannedOwnedPages": [
         "https://www.chezcora.com/en/breakfast-lunch-restaurants/halifax-downtown/",
         "https://www.chezcora.com/en/breakfast-lunch-restaurants/halifax-downtown/",
@@ -10633,8 +10752,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.chezcora.com/en/breakfast-lunch-restaurants/halifax-downtown/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:47.349Z",
-          "lastVerifiedAt": "2026-09-04T12:50:47.349Z",
+          "observedAt": "2026-09-04T13:33:11.869Z",
+          "lastVerifiedAt": "2026-09-04T13:33:11.869Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -10650,8 +10769,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.chezcora.com/en/breakfast-lunch-restaurants/halifax-downtown/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:47.349Z",
-          "lastVerifiedAt": "2026-09-04T12:50:47.349Z",
+          "observedAt": "2026-09-04T13:33:11.869Z",
+          "lastVerifiedAt": "2026-09-04T13:33:11.869Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -10667,8 +10786,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.chezcora.com/en/breakfast-lunch-restaurants/halifax-downtown/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:47.349Z",
-          "lastVerifiedAt": "2026-09-04T12:50:47.349Z",
+          "observedAt": "2026-09-04T13:33:11.869Z",
+          "lastVerifiedAt": "2026-09-04T13:33:11.869Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -10684,8 +10803,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.chezcora.com/en/breakfast-lunch-restaurants/halifax-downtown/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:47.349Z",
-          "lastVerifiedAt": "2026-09-04T12:50:47.349Z",
+          "observedAt": "2026-09-04T13:33:11.869Z",
+          "lastVerifiedAt": "2026-09-04T13:33:11.869Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -10707,7 +10826,7 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "confidence": "authoritative",
           "status": "active",
           "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-09-04T12:51:47.588Z"
+          "carriedForwardAt": "2026-09-04T13:34:13.421Z"
         }
       ],
       "linkHubs": [],
@@ -10718,8 +10837,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Menu",
           "discoveredFrom": "https://www.chezcora.com/en/breakfast-lunch-restaurants/halifax-downtown/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:47.349Z",
-          "lastVerifiedAt": "2026-09-04T12:50:47.349Z",
+          "observedAt": "2026-09-04T13:33:11.869Z",
+          "lastVerifiedAt": "2026-09-04T13:33:11.869Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -10730,8 +10849,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Newsletter",
           "discoveredFrom": "https://www.chezcora.com/en/breakfast-lunch-restaurants/halifax-downtown/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:47.349Z",
-          "lastVerifiedAt": "2026-09-04T12:50:47.349Z",
+          "observedAt": "2026-09-04T13:33:11.869Z",
+          "lastVerifiedAt": "2026-09-04T13:33:11.869Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -10742,8 +10861,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Reserve now",
           "discoveredFrom": "https://www.chezcora.com/en/breakfast-lunch-restaurants/halifax-downtown/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:47.349Z",
-          "lastVerifiedAt": "2026-09-04T12:50:47.349Z",
+          "observedAt": "2026-09-04T13:33:11.869Z",
+          "lastVerifiedAt": "2026-09-04T13:33:11.869Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -10754,8 +10873,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Ben & Dictine",
           "discoveredFrom": "https://www.chezcora.com/en/breakfast-lunch-restaurants/halifax-downtown/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:47.349Z",
-          "lastVerifiedAt": "2026-09-04T12:50:47.349Z",
+          "observedAt": "2026-09-04T13:33:11.869Z",
+          "lastVerifiedAt": "2026-09-04T13:33:11.869Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -10766,8 +10885,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Beverages",
           "discoveredFrom": "https://www.chezcora.com/en/breakfast-lunch-restaurants/halifax-downtown/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:47.349Z",
-          "lastVerifiedAt": "2026-09-04T12:50:47.349Z",
+          "observedAt": "2026-09-04T13:33:11.869Z",
+          "lastVerifiedAt": "2026-09-04T13:33:11.869Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -10778,8 +10897,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Skillets",
           "discoveredFrom": "https://www.chezcora.com/en/breakfast-lunch-restaurants/halifax-downtown/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:47.349Z",
-          "lastVerifiedAt": "2026-09-04T12:50:47.349Z",
+          "observedAt": "2026-09-04T13:33:11.869Z",
+          "lastVerifiedAt": "2026-09-04T13:33:11.869Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -10790,8 +10909,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Crêpes",
           "discoveredFrom": "https://www.chezcora.com/en/breakfast-lunch-restaurants/halifax-downtown/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:47.349Z",
-          "lastVerifiedAt": "2026-09-04T12:50:47.349Z",
+          "observedAt": "2026-09-04T13:33:11.869Z",
+          "lastVerifiedAt": "2026-09-04T13:33:11.869Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -10802,8 +10921,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Teen favourites",
           "discoveredFrom": "https://www.chezcora.com/en/breakfast-lunch-restaurants/halifax-downtown/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:47.349Z",
-          "lastVerifiedAt": "2026-09-04T12:50:47.349Z",
+          "observedAt": "2026-09-04T13:33:11.869Z",
+          "lastVerifiedAt": "2026-09-04T13:33:11.869Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -10814,8 +10933,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Fresh fruit",
           "discoveredFrom": "https://www.chezcora.com/en/breakfast-lunch-restaurants/halifax-downtown/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:47.349Z",
-          "lastVerifiedAt": "2026-09-04T12:50:47.349Z",
+          "observedAt": "2026-09-04T13:33:11.869Z",
+          "lastVerifiedAt": "2026-09-04T13:33:11.869Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -10826,8 +10945,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Waffles",
           "discoveredFrom": "https://www.chezcora.com/en/breakfast-lunch-restaurants/halifax-downtown/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:47.349Z",
-          "lastVerifiedAt": "2026-09-04T12:50:47.349Z",
+          "observedAt": "2026-09-04T13:33:11.869Z",
+          "lastVerifiedAt": "2026-09-04T13:33:11.869Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -10838,8 +10957,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Kids' menu",
           "discoveredFrom": "https://www.chezcora.com/en/breakfast-lunch-restaurants/halifax-downtown/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:47.349Z",
-          "lastVerifiedAt": "2026-09-04T12:50:47.349Z",
+          "observedAt": "2026-09-04T13:33:11.869Z",
+          "lastVerifiedAt": "2026-09-04T13:33:11.869Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -10850,8 +10969,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Early Bird menu",
           "discoveredFrom": "https://www.chezcora.com/en/breakfast-lunch-restaurants/halifax-downtown/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:47.349Z",
-          "lastVerifiedAt": "2026-09-04T12:50:47.349Z",
+          "observedAt": "2026-09-04T13:33:11.869Z",
+          "lastVerifiedAt": "2026-09-04T13:33:11.869Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -10862,8 +10981,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Eggs",
           "discoveredFrom": "https://www.chezcora.com/en/breakfast-lunch-restaurants/halifax-downtown/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:47.349Z",
-          "lastVerifiedAt": "2026-09-04T12:50:47.349Z",
+          "observedAt": "2026-09-04T13:33:11.869Z",
+          "lastVerifiedAt": "2026-09-04T13:33:11.869Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -10874,8 +10993,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Omelettes and crêpomelettes",
           "discoveredFrom": "https://www.chezcora.com/en/breakfast-lunch-restaurants/halifax-downtown/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:47.349Z",
-          "lastVerifiedAt": "2026-09-04T12:50:47.349Z",
+          "observedAt": "2026-09-04T13:33:11.869Z",
+          "lastVerifiedAt": "2026-09-04T13:33:11.869Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -10886,8 +11005,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "French toast",
           "discoveredFrom": "https://www.chezcora.com/en/breakfast-lunch-restaurants/halifax-downtown/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:47.349Z",
-          "lastVerifiedAt": "2026-09-04T12:50:47.349Z",
+          "observedAt": "2026-09-04T13:33:11.869Z",
+          "lastVerifiedAt": "2026-09-04T13:33:11.869Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -10898,8 +11017,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Pancakes",
           "discoveredFrom": "https://www.chezcora.com/en/breakfast-lunch-restaurants/halifax-downtown/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:47.349Z",
-          "lastVerifiedAt": "2026-09-04T12:50:47.349Z",
+          "observedAt": "2026-09-04T13:33:11.869Z",
+          "lastVerifiedAt": "2026-09-04T13:33:11.869Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -10910,8 +11029,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Sandwiches",
           "discoveredFrom": "https://www.chezcora.com/en/breakfast-lunch-restaurants/halifax-downtown/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:47.349Z",
-          "lastVerifiedAt": "2026-09-04T12:50:47.349Z",
+          "observedAt": "2026-09-04T13:33:11.869Z",
+          "lastVerifiedAt": "2026-09-04T13:33:11.869Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -10922,8 +11041,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Sweet 'n salty",
           "discoveredFrom": "https://www.chezcora.com/en/breakfast-lunch-restaurants/halifax-downtown/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:47.349Z",
-          "lastVerifiedAt": "2026-09-04T12:50:47.349Z",
+          "observedAt": "2026-09-04T13:33:11.869Z",
+          "lastVerifiedAt": "2026-09-04T13:33:11.869Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -10940,7 +11059,7 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "confidence": "authoritative",
           "status": "active",
           "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-09-04T12:51:47.588Z"
+          "carriedForwardAt": "2026-09-04T13:34:13.421Z"
         },
         {
           "kind": "menu",
@@ -10954,7 +11073,7 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "confidence": "authoritative",
           "status": "active",
           "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-09-04T12:51:47.588Z"
+          "carriedForwardAt": "2026-09-04T13:34:13.421Z"
         },
         {
           "kind": "menu",
@@ -10968,7 +11087,7 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "confidence": "authoritative",
           "status": "active",
           "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-09-04T12:51:47.588Z"
+          "carriedForwardAt": "2026-09-04T13:34:13.421Z"
         },
         {
           "kind": "ordering",
@@ -10982,7 +11101,7 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "confidence": "authoritative",
           "status": "active",
           "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-09-04T12:51:47.588Z"
+          "carriedForwardAt": "2026-09-04T13:34:13.421Z"
         }
       ],
       "feeds": [
@@ -11010,8 +11129,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Subway",
       "website": "https://www.subway.com/",
       "resolvedUrl": "https://www.subway.com/en-ca",
-      "observedAt": "2026-09-04T12:51:08.464Z",
-      "lastVerifiedAt": "2026-09-04T12:51:08.464Z",
+      "observedAt": "2026-09-04T13:33:34.856Z",
+      "lastVerifiedAt": "2026-09-04T13:33:34.856Z",
       "scannedOwnedPages": [
         "https://www.subway.com/en-ca"
       ],
@@ -11024,8 +11143,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Start Order",
           "discoveredFrom": "https://www.subway.com/en-ca",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:08.464Z",
-          "lastVerifiedAt": "2026-09-04T12:51:08.464Z",
+          "observedAt": "2026-09-04T13:33:34.856Z",
+          "lastVerifiedAt": "2026-09-04T13:33:34.856Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -11048,8 +11167,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "The Lower Deck",
       "website": "https://www.lowerdeck.ca/",
       "resolvedUrl": "https://lowerdeck.ca/",
-      "observedAt": "2026-09-04T12:51:12.311Z",
-      "lastVerifiedAt": "2026-09-04T12:51:12.311Z",
+      "observedAt": "2026-09-04T13:33:38.680Z",
+      "lastVerifiedAt": "2026-09-04T13:33:38.680Z",
       "scannedOwnedPages": [
         "https://lowerdeck.ca/",
         "https://lowerdeck.ca/contact"
@@ -11066,8 +11185,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://lowerdeck.ca/contact",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:12.311Z",
-          "lastVerifiedAt": "2026-09-04T12:51:12.311Z",
+          "observedAt": "2026-09-04T13:33:38.680Z",
+          "lastVerifiedAt": "2026-09-04T13:33:38.680Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -11083,8 +11202,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://lowerdeck.ca/contact",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:12.311Z",
-          "lastVerifiedAt": "2026-09-04T12:51:12.311Z",
+          "observedAt": "2026-09-04T13:33:38.680Z",
+          "lastVerifiedAt": "2026-09-04T13:33:38.680Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -11098,8 +11217,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Private Events",
           "discoveredFrom": "https://lowerdeck.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:12.311Z",
-          "lastVerifiedAt": "2026-09-04T12:51:12.311Z",
+          "observedAt": "2026-09-04T13:33:38.680Z",
+          "lastVerifiedAt": "2026-09-04T13:33:38.680Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -11110,8 +11229,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Menu",
           "discoveredFrom": "https://lowerdeck.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:12.311Z",
-          "lastVerifiedAt": "2026-09-04T12:51:12.311Z",
+          "observedAt": "2026-09-04T13:33:38.680Z",
+          "lastVerifiedAt": "2026-09-04T13:33:38.680Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -11129,8 +11248,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Barrios Kitchen & Bar",
       "website": "https://www.barrioshfx.ca/",
       "resolvedUrl": "https://barrioshfx.ca/",
-      "observedAt": "2026-09-04T12:50:44.223Z",
-      "lastVerifiedAt": "2026-09-04T12:50:44.223Z",
+      "observedAt": "2026-09-04T13:33:08.345Z",
+      "lastVerifiedAt": "2026-09-04T13:33:08.345Z",
       "scannedOwnedPages": [
         "https://barrioshfx.ca/",
         "https://barrioshfx.ca/our-story"
@@ -11147,8 +11266,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://barrioshfx.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:44.223Z",
-          "lastVerifiedAt": "2026-09-04T12:50:44.223Z",
+          "observedAt": "2026-09-04T13:33:08.345Z",
+          "lastVerifiedAt": "2026-09-04T13:33:08.345Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -11164,8 +11283,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://barrioshfx.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:44.223Z",
-          "lastVerifiedAt": "2026-09-04T12:50:44.223Z",
+          "observedAt": "2026-09-04T13:33:08.345Z",
+          "lastVerifiedAt": "2026-09-04T13:33:08.345Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -11179,8 +11298,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Barrios Menu",
           "discoveredFrom": "https://barrioshfx.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:44.223Z",
-          "lastVerifiedAt": "2026-09-04T12:50:44.223Z",
+          "observedAt": "2026-09-04T13:33:08.345Z",
+          "lastVerifiedAt": "2026-09-04T13:33:08.345Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -11191,8 +11310,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Delivery",
           "discoveredFrom": "https://barrioshfx.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:44.223Z",
-          "lastVerifiedAt": "2026-09-04T12:50:44.223Z",
+          "observedAt": "2026-09-04T13:33:08.345Z",
+          "lastVerifiedAt": "2026-09-04T13:33:08.345Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -11203,8 +11322,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Reservation",
           "discoveredFrom": "https://barrioshfx.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:44.223Z",
-          "lastVerifiedAt": "2026-09-04T12:50:44.223Z",
+          "observedAt": "2026-09-04T13:33:08.345Z",
+          "lastVerifiedAt": "2026-09-04T13:33:08.345Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -11215,8 +11334,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Menu Guide",
           "discoveredFrom": "https://barrioshfx.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:44.223Z",
-          "lastVerifiedAt": "2026-09-04T12:50:44.223Z",
+          "observedAt": "2026-09-04T13:33:08.345Z",
+          "lastVerifiedAt": "2026-09-04T13:33:08.345Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -11234,8 +11353,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "The Middle Spoon Desserterie & Bar",
       "website": "https://www.themiddlespoon.ca/",
       "resolvedUrl": "https://themiddlespoon.com/",
-      "observedAt": "2026-09-04T12:51:14.146Z",
-      "lastVerifiedAt": "2026-09-04T12:51:14.146Z",
+      "observedAt": "2026-09-04T13:33:39.272Z",
+      "lastVerifiedAt": "2026-09-04T13:33:39.272Z",
       "scannedOwnedPages": [
         "https://themiddlespoon.com/",
         "https://themiddlespoon.com/private-events",
@@ -11250,8 +11369,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Menu",
           "discoveredFrom": "https://themiddlespoon.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:14.146Z",
-          "lastVerifiedAt": "2026-09-04T12:51:14.146Z",
+          "observedAt": "2026-09-04T13:33:39.272Z",
+          "lastVerifiedAt": "2026-09-04T13:33:39.272Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -11262,8 +11381,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Reservations",
           "discoveredFrom": "https://themiddlespoon.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:14.146Z",
-          "lastVerifiedAt": "2026-09-04T12:51:14.146Z",
+          "observedAt": "2026-09-04T13:33:39.272Z",
+          "lastVerifiedAt": "2026-09-04T13:33:39.272Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -11274,8 +11393,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Events",
           "discoveredFrom": "https://themiddlespoon.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:14.146Z",
-          "lastVerifiedAt": "2026-09-04T12:51:14.146Z",
+          "observedAt": "2026-09-04T13:33:39.272Z",
+          "lastVerifiedAt": "2026-09-04T13:33:39.272Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -11286,8 +11405,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Private Events",
           "discoveredFrom": "https://themiddlespoon.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:14.146Z",
-          "lastVerifiedAt": "2026-09-04T12:51:14.146Z",
+          "observedAt": "2026-09-04T13:33:39.272Z",
+          "lastVerifiedAt": "2026-09-04T13:33:39.272Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -11298,8 +11417,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Order Takeout or delivery",
           "discoveredFrom": "https://themiddlespoon.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:14.146Z",
-          "lastVerifiedAt": "2026-09-04T12:51:14.146Z",
+          "observedAt": "2026-09-04T13:33:39.272Z",
+          "lastVerifiedAt": "2026-09-04T13:33:39.272Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -11317,8 +11436,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Stillwell",
       "website": "https://www.barstillwell.com/",
       "resolvedUrl": "https://www.barstillwell.com/",
-      "observedAt": "2026-09-04T12:51:07.827Z",
-      "lastVerifiedAt": "2026-09-04T12:51:07.827Z",
+      "observedAt": "2026-09-04T13:33:33.936Z",
+      "lastVerifiedAt": "2026-09-04T13:33:33.936Z",
       "scannedOwnedPages": [
         "https://www.barstillwell.com/",
         "https://www.barstillwell.com/pages/locations",
@@ -11337,8 +11456,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.barstillwell.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:07.827Z",
-          "lastVerifiedAt": "2026-09-04T12:51:07.827Z",
+          "observedAt": "2026-09-04T13:33:33.936Z",
+          "lastVerifiedAt": "2026-09-04T13:33:33.936Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -11354,8 +11473,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.barstillwell.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:07.827Z",
-          "lastVerifiedAt": "2026-09-04T12:51:07.827Z",
+          "observedAt": "2026-09-04T13:33:33.936Z",
+          "lastVerifiedAt": "2026-09-04T13:33:33.936Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -11369,8 +11488,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Events",
           "discoveredFrom": "https://www.barstillwell.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:07.827Z",
-          "lastVerifiedAt": "2026-09-04T12:51:07.827Z",
+          "observedAt": "2026-09-04T13:33:33.936Z",
+          "lastVerifiedAt": "2026-09-04T13:33:33.936Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -11381,8 +11500,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Next Events ›",
           "discoveredFrom": "https://www.barstillwell.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:07.827Z",
-          "lastVerifiedAt": "2026-09-04T12:51:07.827Z",
+          "observedAt": "2026-09-04T13:33:33.936Z",
+          "lastVerifiedAt": "2026-09-04T13:33:33.936Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -11400,8 +11519,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Rinaldo’s",
       "website": "https://rinaldos.ca/",
       "resolvedUrl": "https://www.rinaldos.ca/",
-      "observedAt": "2026-09-04T12:51:04.416Z",
-      "lastVerifiedAt": "2026-09-04T12:51:04.416Z",
+      "observedAt": "2026-09-04T13:33:30.948Z",
+      "lastVerifiedAt": "2026-09-04T13:33:30.948Z",
       "scannedOwnedPages": [
         "https://www.rinaldos.ca/"
       ],
@@ -11417,8 +11536,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.rinaldos.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:04.416Z",
-          "lastVerifiedAt": "2026-09-04T12:51:04.416Z",
+          "observedAt": "2026-09-04T13:33:30.948Z",
+          "lastVerifiedAt": "2026-09-04T13:33:30.948Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -11434,8 +11553,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.rinaldos.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:04.416Z",
-          "lastVerifiedAt": "2026-09-04T12:51:04.416Z",
+          "observedAt": "2026-09-04T13:33:30.948Z",
+          "lastVerifiedAt": "2026-09-04T13:33:30.948Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -11451,8 +11570,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.rinaldos.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:04.416Z",
-          "lastVerifiedAt": "2026-09-04T12:51:04.416Z",
+          "observedAt": "2026-09-04T13:33:30.948Z",
+          "lastVerifiedAt": "2026-09-04T13:33:30.948Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -11466,8 +11585,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Order Online",
           "discoveredFrom": "https://www.rinaldos.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:04.416Z",
-          "lastVerifiedAt": "2026-09-04T12:51:04.416Z",
+          "observedAt": "2026-09-04T13:33:30.948Z",
+          "lastVerifiedAt": "2026-09-04T13:33:30.948Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -11478,8 +11597,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Reserve Now",
           "discoveredFrom": "https://www.rinaldos.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:04.416Z",
-          "lastVerifiedAt": "2026-09-04T12:51:04.416Z",
+          "observedAt": "2026-09-04T13:33:30.948Z",
+          "lastVerifiedAt": "2026-09-04T13:33:30.948Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -11497,8 +11616,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Wild Leek Food & Juice Bar",
       "website": "https://wildleek.ca/",
       "resolvedUrl": "https://www.wildleek.ca/",
-      "observedAt": "2026-09-04T12:51:21.127Z",
-      "lastVerifiedAt": "2026-09-04T12:51:21.127Z",
+      "observedAt": "2026-09-04T13:33:44.892Z",
+      "lastVerifiedAt": "2026-09-04T13:33:44.892Z",
       "scannedOwnedPages": [
         "https://www.wildleek.ca/",
         "https://www.wildleek.ca/contact-us"
@@ -11515,8 +11634,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.wildleek.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:21.127Z",
-          "lastVerifiedAt": "2026-09-04T12:51:21.127Z",
+          "observedAt": "2026-09-04T13:33:44.892Z",
+          "lastVerifiedAt": "2026-09-04T13:33:44.892Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -11532,8 +11651,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.wildleek.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:21.127Z",
-          "lastVerifiedAt": "2026-09-04T12:51:21.127Z",
+          "observedAt": "2026-09-04T13:33:44.892Z",
+          "lastVerifiedAt": "2026-09-04T13:33:44.892Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -11549,8 +11668,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.wildleek.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:21.127Z",
-          "lastVerifiedAt": "2026-09-04T12:51:21.127Z",
+          "observedAt": "2026-09-04T13:33:44.892Z",
+          "lastVerifiedAt": "2026-09-04T13:33:44.892Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -11564,8 +11683,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "MENU",
           "discoveredFrom": "https://www.wildleek.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:21.127Z",
-          "lastVerifiedAt": "2026-09-04T12:51:21.127Z",
+          "observedAt": "2026-09-04T13:33:44.892Z",
+          "lastVerifiedAt": "2026-09-04T13:33:44.892Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -11576,8 +11695,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Order Take Out",
           "discoveredFrom": "https://www.wildleek.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:21.127Z",
-          "lastVerifiedAt": "2026-09-04T12:51:21.127Z",
+          "observedAt": "2026-09-04T13:33:44.892Z",
+          "lastVerifiedAt": "2026-09-04T13:33:44.892Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -11595,8 +11714,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Food Court of Spring Garden Place",
       "website": "https://www.starbucks.ca/store-locator/store/4085-255631/5640-spring-garden-road-5640-spring-garden-road-301-halifax-ns-b-3-j-3-m-7",
       "resolvedUrl": "https://www.starbucks.ca/store-locator/store/4085-255631/5640-spring-garden-road-5640-spring-garden-road-301-halifax-ns-b-3-j-3-m-7",
-      "observedAt": "2026-09-04T12:50:49.366Z",
-      "lastVerifiedAt": "2026-09-04T12:50:49.366Z",
+      "observedAt": "2026-09-04T13:33:14.442Z",
+      "lastVerifiedAt": "2026-09-04T13:33:14.442Z",
       "scannedOwnedPages": [
         "https://www.starbucks.ca/store-locator/store/4085-255631/5640-spring-garden-road-5640-spring-garden-road-301-halifax-ns-b-3-j-3-m-7"
       ],
@@ -11615,8 +11734,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Hamachi Kita",
       "website": "https://www.hamachikita.com/",
       "resolvedUrl": "https://www.hamachikita.com/",
-      "observedAt": "2026-09-04T12:50:52.954Z",
-      "lastVerifiedAt": "2026-09-04T12:50:52.954Z",
+      "observedAt": "2026-09-04T13:33:17.804Z",
+      "lastVerifiedAt": "2026-09-04T13:33:17.804Z",
       "scannedOwnedPages": [
         "https://www.hamachikita.com/",
         "https://www.hamachikita.com/contact-feed",
@@ -11636,8 +11755,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.hamachikita.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:52.954Z",
-          "lastVerifiedAt": "2026-09-04T12:50:52.954Z",
+          "observedAt": "2026-09-04T13:33:17.804Z",
+          "lastVerifiedAt": "2026-09-04T13:33:17.804Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -11651,8 +11770,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Menu",
           "discoveredFrom": "https://www.hamachikita.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:52.954Z",
-          "lastVerifiedAt": "2026-09-04T12:50:52.954Z",
+          "observedAt": "2026-09-04T13:33:17.804Z",
+          "lastVerifiedAt": "2026-09-04T13:33:17.804Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -11663,8 +11782,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Order Online",
           "discoveredFrom": "https://www.hamachikita.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:52.954Z",
-          "lastVerifiedAt": "2026-09-04T12:50:52.954Z",
+          "observedAt": "2026-09-04T13:33:17.804Z",
+          "lastVerifiedAt": "2026-09-04T13:33:17.804Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -11704,8 +11823,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "The Ostrich Club",
       "website": "https://theostrichclub.ca/",
       "resolvedUrl": "https://theostrichclub.ca/",
-      "observedAt": "2026-09-04T12:51:15.795Z",
-      "lastVerifiedAt": "2026-09-04T12:51:15.795Z",
+      "observedAt": "2026-09-04T13:33:40.145Z",
+      "lastVerifiedAt": "2026-09-04T13:33:40.145Z",
       "scannedOwnedPages": [
         "https://theostrichclub.ca/"
       ],
@@ -11721,8 +11840,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://theostrichclub.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:15.795Z",
-          "lastVerifiedAt": "2026-09-04T12:51:15.795Z",
+          "observedAt": "2026-09-04T13:33:40.145Z",
+          "lastVerifiedAt": "2026-09-04T13:33:40.145Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -11738,8 +11857,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://theostrichclub.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:15.795Z",
-          "lastVerifiedAt": "2026-09-04T12:51:15.795Z",
+          "observedAt": "2026-09-04T13:33:40.145Z",
+          "lastVerifiedAt": "2026-09-04T13:33:40.145Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -11772,8 +11891,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Lucy's Hydrostone Cafe",
       "website": "https://lucyshydrostone.ca/",
       "resolvedUrl": "https://lucyshydrostone.ca/",
-      "observedAt": "2026-09-04T12:50:57.562Z",
-      "lastVerifiedAt": "2026-09-04T12:50:57.562Z",
+      "observedAt": "2026-09-04T13:33:22.715Z",
+      "lastVerifiedAt": "2026-09-04T13:33:22.715Z",
       "scannedOwnedPages": [
         "https://lucyshydrostone.ca/",
         "https://lucyshydrostone.ca/"
@@ -11787,8 +11906,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Menu",
           "discoveredFrom": "https://lucyshydrostone.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:57.562Z",
-          "lastVerifiedAt": "2026-09-04T12:50:57.562Z",
+          "observedAt": "2026-09-04T13:33:22.715Z",
+          "lastVerifiedAt": "2026-09-04T13:33:22.715Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -11806,8 +11925,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "The BG",
       "website": "https://www.stubborngoat.ca/halifax/waterfront-beer-garden/",
       "resolvedUrl": "https://www.stubborngoat.ca/",
-      "observedAt": "2026-09-04T12:51:11.114Z",
-      "lastVerifiedAt": "2026-09-04T12:51:11.114Z",
+      "observedAt": "2026-09-04T13:33:37.515Z",
+      "lastVerifiedAt": "2026-09-04T13:33:37.515Z",
       "scannedOwnedPages": [
         "https://www.stubborngoat.ca/",
         "https://www.stubborngoat.ca/",
@@ -11825,8 +11944,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.stubborngoat.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:11.114Z",
-          "lastVerifiedAt": "2026-09-04T12:51:11.114Z",
+          "observedAt": "2026-09-04T13:33:37.515Z",
+          "lastVerifiedAt": "2026-09-04T13:33:37.515Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -11842,8 +11961,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.stubborngoat.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:11.114Z",
-          "lastVerifiedAt": "2026-09-04T12:51:11.114Z",
+          "observedAt": "2026-09-04T13:33:37.515Z",
+          "lastVerifiedAt": "2026-09-04T13:33:37.515Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -11859,8 +11978,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.stubborngoat.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:11.114Z",
-          "lastVerifiedAt": "2026-09-04T12:51:11.114Z",
+          "observedAt": "2026-09-04T13:33:37.515Z",
+          "lastVerifiedAt": "2026-09-04T13:33:37.515Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -11874,8 +11993,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Menus",
           "discoveredFrom": "https://www.stubborngoat.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:11.114Z",
-          "lastVerifiedAt": "2026-09-04T12:51:11.114Z",
+          "observedAt": "2026-09-04T13:33:37.515Z",
+          "lastVerifiedAt": "2026-09-04T13:33:37.515Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -11886,8 +12005,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Reserve",
           "discoveredFrom": "https://www.stubborngoat.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:11.114Z",
-          "lastVerifiedAt": "2026-09-04T12:51:11.114Z",
+          "observedAt": "2026-09-04T13:33:37.515Z",
+          "lastVerifiedAt": "2026-09-04T13:33:37.515Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -11898,8 +12017,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Reserve",
           "discoveredFrom": "https://www.stubborngoat.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:11.114Z",
-          "lastVerifiedAt": "2026-09-04T12:51:11.114Z",
+          "observedAt": "2026-09-04T13:33:37.515Z",
+          "lastVerifiedAt": "2026-09-04T13:33:37.515Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -11939,8 +12058,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Starbucks",
       "website": "https://www.starbucks.ca/store-locator?map=57.751076,-101.645508,4z",
       "resolvedUrl": "https://www.starbucks.ca/store-locator?map=57.751076,-101.645508,4z",
-      "observedAt": "2026-09-04T12:50:50.484Z",
-      "lastVerifiedAt": "2026-09-04T12:50:50.484Z",
+      "observedAt": "2026-09-04T13:33:15.822Z",
+      "lastVerifiedAt": "2026-09-04T13:33:15.822Z",
       "scannedOwnedPages": [
         "https://www.starbucks.ca/store-locator?map=57.751076,-101.645508,4z"
       ],
@@ -11959,8 +12078,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Glitter Bean Cafe",
       "website": "https://www.glitterbeancafe.com/",
       "resolvedUrl": "https://justitalymentone.com/",
-      "observedAt": "2026-09-04T12:50:50.780Z",
-      "lastVerifiedAt": "2026-09-04T12:50:50.780Z",
+      "observedAt": "2026-09-04T13:33:15.472Z",
+      "lastVerifiedAt": "2026-09-04T13:33:15.472Z",
       "scannedOwnedPages": [
         "https://justitalymentone.com/"
       ],
@@ -11979,8 +12098,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Primal Kitchen",
       "website": "https://www.primalhfx.ca/",
       "resolvedUrl": "https://www.primalhfx.ca/",
-      "observedAt": "2026-09-04T12:51:04.317Z",
-      "lastVerifiedAt": "2026-09-04T12:51:04.317Z",
+      "observedAt": "2026-09-04T13:33:30.286Z",
+      "lastVerifiedAt": "2026-09-04T13:33:30.286Z",
       "scannedOwnedPages": [
         "https://www.primalhfx.ca/"
       ],
@@ -11997,8 +12116,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Two if By Sea",
       "website": "https://www.twoifbyseacafe.ca/",
       "resolvedUrl": "https://twoifbyseacafe.ca/",
-      "observedAt": "2026-09-04T12:51:20.237Z",
-      "lastVerifiedAt": "2026-09-04T12:51:20.237Z",
+      "observedAt": "2026-09-04T13:33:42.720Z",
+      "lastVerifiedAt": "2026-09-04T13:33:42.720Z",
       "scannedOwnedPages": [
         "https://twoifbyseacafe.ca/",
         "https://twoifbyseacafe.ca/about-us/",
@@ -12019,8 +12138,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Le Bistro by Liz",
       "website": "https://www.lebistrohalifax.com/",
       "resolvedUrl": "https://www.lebistrohalifax.com/",
-      "observedAt": "2026-09-04T12:50:56.769Z",
-      "lastVerifiedAt": "2026-09-04T12:50:56.769Z",
+      "observedAt": "2026-09-04T13:33:21.993Z",
+      "lastVerifiedAt": "2026-09-04T13:33:21.993Z",
       "scannedOwnedPages": [
         "https://www.lebistrohalifax.com/",
         "https://www.lebistrohalifax.com/our-story/",
@@ -12038,8 +12157,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.lebistrohalifax.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:56.769Z",
-          "lastVerifiedAt": "2026-09-04T12:50:56.769Z",
+          "observedAt": "2026-09-04T13:33:21.993Z",
+          "lastVerifiedAt": "2026-09-04T13:33:21.993Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -12055,8 +12174,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.lebistrohalifax.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:56.769Z",
-          "lastVerifiedAt": "2026-09-04T12:50:56.769Z",
+          "observedAt": "2026-09-04T13:33:21.993Z",
+          "lastVerifiedAt": "2026-09-04T13:33:21.993Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -12072,8 +12191,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.lebistrohalifax.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:56.769Z",
-          "lastVerifiedAt": "2026-09-04T12:50:56.769Z",
+          "observedAt": "2026-09-04T13:33:21.993Z",
+          "lastVerifiedAt": "2026-09-04T13:33:21.993Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -12087,8 +12206,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Brunch Menu",
           "discoveredFrom": "https://www.lebistrohalifax.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:56.769Z",
-          "lastVerifiedAt": "2026-09-04T12:50:56.769Z",
+          "observedAt": "2026-09-04T13:33:21.993Z",
+          "lastVerifiedAt": "2026-09-04T13:33:21.993Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -12099,8 +12218,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Lunch & Dinner Menu",
           "discoveredFrom": "https://www.lebistrohalifax.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:56.769Z",
-          "lastVerifiedAt": "2026-09-04T12:50:56.769Z",
+          "observedAt": "2026-09-04T13:33:21.993Z",
+          "lastVerifiedAt": "2026-09-04T13:33:21.993Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -12111,8 +12230,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Vegan Menu",
           "discoveredFrom": "https://www.lebistrohalifax.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:56.769Z",
-          "lastVerifiedAt": "2026-09-04T12:50:56.769Z",
+          "observedAt": "2026-09-04T13:33:21.993Z",
+          "lastVerifiedAt": "2026-09-04T13:33:21.993Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -12123,8 +12242,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Kids Menu",
           "discoveredFrom": "https://www.lebistrohalifax.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:56.769Z",
-          "lastVerifiedAt": "2026-09-04T12:50:56.769Z",
+          "observedAt": "2026-09-04T13:33:21.993Z",
+          "lastVerifiedAt": "2026-09-04T13:33:21.993Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -12135,8 +12254,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "View Menus",
           "discoveredFrom": "https://www.lebistrohalifax.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:56.769Z",
-          "lastVerifiedAt": "2026-09-04T12:50:56.769Z",
+          "observedAt": "2026-09-04T13:33:21.993Z",
+          "lastVerifiedAt": "2026-09-04T13:33:21.993Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -12147,8 +12266,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "View Menu",
           "discoveredFrom": "https://www.lebistrohalifax.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:56.769Z",
-          "lastVerifiedAt": "2026-09-04T12:50:56.769Z",
+          "observedAt": "2026-09-04T13:33:21.993Z",
+          "lastVerifiedAt": "2026-09-04T13:33:21.993Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -12159,8 +12278,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "View Menu",
           "discoveredFrom": "https://www.lebistrohalifax.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:56.769Z",
-          "lastVerifiedAt": "2026-09-04T12:50:56.769Z",
+          "observedAt": "2026-09-04T13:33:21.993Z",
+          "lastVerifiedAt": "2026-09-04T13:33:21.993Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -12191,8 +12310,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Board Room Game Cafe",
       "website": "http://boardroomgames.ca/",
       "resolvedUrl": "https://boardroomgames.wixsite.com/tbrgc",
-      "observedAt": "2026-09-04T12:50:44.713Z",
-      "lastVerifiedAt": "2026-09-04T12:50:44.713Z",
+      "observedAt": "2026-09-04T13:33:08.955Z",
+      "lastVerifiedAt": "2026-09-04T13:33:08.955Z",
       "scannedOwnedPages": [
         "https://boardroomgames.wixsite.com/tbrgc"
       ],
@@ -12208,8 +12327,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://boardroomgames.wixsite.com/tbrgc",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:44.713Z",
-          "lastVerifiedAt": "2026-09-04T12:50:44.713Z",
+          "observedAt": "2026-09-04T13:33:08.955Z",
+          "lastVerifiedAt": "2026-09-04T13:33:08.955Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -12225,8 +12344,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://boardroomgames.wixsite.com/tbrgc",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:44.713Z",
-          "lastVerifiedAt": "2026-09-04T12:50:44.713Z",
+          "observedAt": "2026-09-04T13:33:08.955Z",
+          "lastVerifiedAt": "2026-09-04T13:33:08.955Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -12240,8 +12359,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "BOOK A TABLE",
           "discoveredFrom": "https://boardroomgames.wixsite.com/tbrgc",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:44.713Z",
-          "lastVerifiedAt": "2026-09-04T12:50:44.713Z",
+          "observedAt": "2026-09-04T13:33:08.955Z",
+          "lastVerifiedAt": "2026-09-04T13:33:08.955Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -12252,8 +12371,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Menus",
           "discoveredFrom": "https://boardroomgames.wixsite.com/tbrgc",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:44.713Z",
-          "lastVerifiedAt": "2026-09-04T12:50:44.713Z",
+          "observedAt": "2026-09-04T13:33:08.955Z",
+          "lastVerifiedAt": "2026-09-04T13:33:08.955Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -12264,8 +12383,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Events",
           "discoveredFrom": "https://boardroomgames.wixsite.com/tbrgc",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:44.713Z",
-          "lastVerifiedAt": "2026-09-04T12:50:44.713Z",
+          "observedAt": "2026-09-04T13:33:08.955Z",
+          "lastVerifiedAt": "2026-09-04T13:33:08.955Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -12276,8 +12395,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "TTRPG Events",
           "discoveredFrom": "https://boardroomgames.wixsite.com/tbrgc",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:44.713Z",
-          "lastVerifiedAt": "2026-09-04T12:50:44.713Z",
+          "observedAt": "2026-09-04T13:33:08.955Z",
+          "lastVerifiedAt": "2026-09-04T13:33:08.955Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -12293,8 +12412,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Heppy's Pie Lady",
       "website": "http://www.heppys.com/",
       "resolvedUrl": "http://www.heppys.com/",
-      "observedAt": "2026-09-04T12:50:53.585Z",
-      "lastVerifiedAt": "2026-09-04T12:50:53.585Z",
+      "observedAt": "2026-09-04T13:33:18.834Z",
+      "lastVerifiedAt": "2026-09-04T13:33:18.834Z",
       "scannedOwnedPages": [
         "http://www.heppys.com/"
       ],
@@ -12307,8 +12426,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Order Now",
           "discoveredFrom": "http://www.heppys.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:53.585Z",
-          "lastVerifiedAt": "2026-09-04T12:50:53.585Z",
+          "observedAt": "2026-09-04T13:33:18.834Z",
+          "lastVerifiedAt": "2026-09-04T13:33:18.834Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -12324,8 +12443,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Humani-T",
       "website": "https://humanitea.com/",
       "resolvedUrl": "https://humanitea.com/",
-      "observedAt": "2026-09-04T12:50:53.980Z",
-      "lastVerifiedAt": "2026-09-04T12:50:53.980Z",
+      "observedAt": "2026-09-04T13:33:19.096Z",
+      "lastVerifiedAt": "2026-09-04T13:33:19.096Z",
       "scannedOwnedPages": [
         "https://humanitea.com/"
       ],
@@ -12363,7 +12482,7 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "confidence": "authoritative",
           "status": "active",
           "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-09-04T12:51:47.588Z"
+          "carriedForwardAt": "2026-09-04T13:34:13.421Z"
         },
         {
           "platform": "x",
@@ -12382,7 +12501,7 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "confidence": "authoritative",
           "status": "active",
           "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-09-04T12:51:47.588Z"
+          "carriedForwardAt": "2026-09-04T13:34:13.421Z"
         },
         {
           "platform": "instagram",
@@ -12401,7 +12520,7 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "confidence": "authoritative",
           "status": "active",
           "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-09-04T12:51:47.588Z"
+          "carriedForwardAt": "2026-09-04T13:34:13.421Z"
         }
       ],
       "linkHubs": [],
@@ -12418,7 +12537,7 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "confidence": "authoritative",
           "status": "active",
           "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-09-04T12:51:47.588Z"
+          "carriedForwardAt": "2026-09-04T13:34:13.421Z"
         },
         {
           "kind": "ordering",
@@ -12432,7 +12551,7 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "confidence": "authoritative",
           "status": "active",
           "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-09-04T12:51:47.588Z"
+          "carriedForwardAt": "2026-09-04T13:34:13.421Z"
         }
       ],
       "feeds": [
@@ -12443,7 +12562,7 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "discoveredFrom": "https://stonepizza.ca/",
           "reviewState": "verified_link",
           "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-09-04T12:51:47.588Z"
+          "carriedForwardAt": "2026-09-04T13:34:13.421Z"
         },
         {
           "url": "https://stonepizza.ca/comments/feed/",
@@ -12452,7 +12571,7 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "discoveredFrom": "https://stonepizza.ca/",
           "reviewState": "verified_link",
           "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-09-04T12:51:47.588Z"
+          "carriedForwardAt": "2026-09-04T13:34:13.421Z"
         }
       ],
       "sitemaps": [],
@@ -12465,8 +12584,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "St. Louis Bar & Grill",
       "website": "https://locations.stlouiswings.com/ns-dartmouth-2201/",
       "resolvedUrl": "https://locations.stlouiswings.com/ns-dartmouth-2201/",
-      "observedAt": "2026-09-04T12:51:07.413Z",
-      "lastVerifiedAt": "2026-09-04T12:51:07.413Z",
+      "observedAt": "2026-09-04T13:33:33.746Z",
+      "lastVerifiedAt": "2026-09-04T13:33:33.746Z",
       "scannedOwnedPages": [
         "https://locations.stlouiswings.com/ns-dartmouth-2201/",
         "https://locations.stlouiswings.com/"
@@ -12483,8 +12602,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://locations.stlouiswings.com/ns-dartmouth-2201/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:07.413Z",
-          "lastVerifiedAt": "2026-09-04T12:51:07.413Z",
+          "observedAt": "2026-09-04T13:33:33.746Z",
+          "lastVerifiedAt": "2026-09-04T13:33:33.746Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -12500,8 +12619,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://locations.stlouiswings.com/ns-dartmouth-2201/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:07.413Z",
-          "lastVerifiedAt": "2026-09-04T12:51:07.413Z",
+          "observedAt": "2026-09-04T13:33:33.746Z",
+          "lastVerifiedAt": "2026-09-04T13:33:33.746Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -12517,8 +12636,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://locations.stlouiswings.com/ns-dartmouth-2201/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:07.413Z",
-          "lastVerifiedAt": "2026-09-04T12:51:07.413Z",
+          "observedAt": "2026-09-04T13:33:33.746Z",
+          "lastVerifiedAt": "2026-09-04T13:33:33.746Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -12534,8 +12653,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://locations.stlouiswings.com/ns-dartmouth-2201/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:07.413Z",
-          "lastVerifiedAt": "2026-09-04T12:51:07.413Z",
+          "observedAt": "2026-09-04T13:33:33.746Z",
+          "lastVerifiedAt": "2026-09-04T13:33:33.746Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -12549,8 +12668,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Menu",
           "discoveredFrom": "https://locations.stlouiswings.com/ns-dartmouth-2201/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:07.413Z",
-          "lastVerifiedAt": "2026-09-04T12:51:07.413Z",
+          "observedAt": "2026-09-04T13:33:33.746Z",
+          "lastVerifiedAt": "2026-09-04T13:33:33.746Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -12583,8 +12702,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Starbucks",
       "website": "https://www.starbucks.ca/",
       "resolvedUrl": "https://www.starbucks.ca/",
-      "observedAt": "2026-09-04T12:50:50.738Z",
-      "lastVerifiedAt": "2026-09-04T12:50:50.738Z",
+      "observedAt": "2026-09-04T13:33:16.088Z",
+      "lastVerifiedAt": "2026-09-04T13:33:16.088Z",
       "scannedOwnedPages": [
         "https://www.starbucks.ca/",
         "https://www.starbucks.ca/about-us/",
@@ -12602,8 +12721,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.starbucks.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:50.738Z",
-          "lastVerifiedAt": "2026-09-04T12:50:50.738Z",
+          "observedAt": "2026-09-04T13:33:16.088Z",
+          "lastVerifiedAt": "2026-09-04T13:33:16.088Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -12619,8 +12738,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.starbucks.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:50.738Z",
-          "lastVerifiedAt": "2026-09-04T12:50:50.738Z",
+          "observedAt": "2026-09-04T13:33:16.088Z",
+          "lastVerifiedAt": "2026-09-04T13:33:16.088Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -12636,8 +12755,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.starbucks.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:50.738Z",
-          "lastVerifiedAt": "2026-09-04T12:50:50.738Z",
+          "observedAt": "2026-09-04T13:33:16.088Z",
+          "lastVerifiedAt": "2026-09-04T13:33:16.088Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -12651,8 +12770,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Menu",
           "discoveredFrom": "https://www.starbucks.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:50.738Z",
-          "lastVerifiedAt": "2026-09-04T12:50:50.738Z",
+          "observedAt": "2026-09-04T13:33:16.088Z",
+          "lastVerifiedAt": "2026-09-04T13:33:16.088Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -12663,8 +12782,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "See the pumpkin menu",
           "discoveredFrom": "https://www.starbucks.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:50.738Z",
-          "lastVerifiedAt": "2026-09-04T12:50:50.738Z",
+          "observedAt": "2026-09-04T13:33:16.088Z",
+          "lastVerifiedAt": "2026-09-04T13:33:16.088Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -12675,8 +12794,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Order now",
           "discoveredFrom": "https://www.starbucks.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:50.738Z",
-          "lastVerifiedAt": "2026-09-04T12:50:50.738Z",
+          "observedAt": "2026-09-04T13:33:16.088Z",
+          "lastVerifiedAt": "2026-09-04T13:33:16.088Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -12687,8 +12806,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Delivery",
           "discoveredFrom": "https://www.starbucks.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:50.738Z",
-          "lastVerifiedAt": "2026-09-04T12:50:50.738Z",
+          "observedAt": "2026-09-04T13:33:16.088Z",
+          "lastVerifiedAt": "2026-09-04T13:33:16.088Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -12706,8 +12825,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Genji Sushi",
       "website": "http://www.genjisushi.ca/",
       "resolvedUrl": "http://www.genjisushi.ca/",
-      "observedAt": "2026-09-04T12:50:50.197Z",
-      "lastVerifiedAt": "2026-09-04T12:50:50.197Z",
+      "observedAt": "2026-09-04T13:33:14.928Z",
+      "lastVerifiedAt": "2026-09-04T13:33:14.928Z",
       "scannedOwnedPages": [
         "http://www.genjisushi.ca/",
         "http://www.genjisushi.ca/?page_id=234",
@@ -12726,8 +12845,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "http://www.genjisushi.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:50.197Z",
-          "lastVerifiedAt": "2026-09-04T12:50:50.197Z",
+          "observedAt": "2026-09-04T13:33:14.928Z",
+          "lastVerifiedAt": "2026-09-04T13:33:14.928Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -12743,8 +12862,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "http://www.genjisushi.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:50.197Z",
-          "lastVerifiedAt": "2026-09-04T12:50:50.197Z",
+          "observedAt": "2026-09-04T13:33:14.928Z",
+          "lastVerifiedAt": "2026-09-04T13:33:14.928Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -12758,8 +12877,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "AYCE Menu",
           "discoveredFrom": "http://www.genjisushi.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:50.197Z",
-          "lastVerifiedAt": "2026-09-04T12:50:50.197Z",
+          "observedAt": "2026-09-04T13:33:14.928Z",
+          "lastVerifiedAt": "2026-09-04T13:33:14.928Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -12770,8 +12889,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Take Out Menu",
           "discoveredFrom": "http://www.genjisushi.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:50.197Z",
-          "lastVerifiedAt": "2026-09-04T12:50:50.197Z",
+          "observedAt": "2026-09-04T13:33:14.928Z",
+          "lastVerifiedAt": "2026-09-04T13:33:14.928Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -12782,8 +12901,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Sake and Wine Menu",
           "discoveredFrom": "http://www.genjisushi.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:50.197Z",
-          "lastVerifiedAt": "2026-09-04T12:50:50.197Z",
+          "observedAt": "2026-09-04T13:33:14.928Z",
+          "lastVerifiedAt": "2026-09-04T13:33:14.928Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -12794,8 +12913,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Reservations",
           "discoveredFrom": "http://www.genjisushi.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:50.197Z",
-          "lastVerifiedAt": "2026-09-04T12:50:50.197Z",
+          "observedAt": "2026-09-04T13:33:14.928Z",
+          "lastVerifiedAt": "2026-09-04T13:33:14.928Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -12806,8 +12925,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Take-out Menu",
           "discoveredFrom": "http://www.genjisushi.ca/?page_id=234",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:50.197Z",
-          "lastVerifiedAt": "2026-09-04T12:50:50.197Z",
+          "observedAt": "2026-09-04T13:33:14.928Z",
+          "lastVerifiedAt": "2026-09-04T13:33:14.928Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -12854,8 +12973,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Ristorante Amano",
       "website": "https://www.ristoranteamano.ca/",
       "resolvedUrl": "https://www.ristoranteamano.ca/",
-      "observedAt": "2026-09-04T12:51:04.516Z",
-      "lastVerifiedAt": "2026-09-04T12:51:04.516Z",
+      "observedAt": "2026-09-04T13:33:32.270Z",
+      "lastVerifiedAt": "2026-09-04T13:33:32.270Z",
       "scannedOwnedPages": [
         "https://www.ristoranteamano.ca/"
       ],
@@ -12871,8 +12990,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.ristoranteamano.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:04.516Z",
-          "lastVerifiedAt": "2026-09-04T12:51:04.516Z",
+          "observedAt": "2026-09-04T13:33:32.270Z",
+          "lastVerifiedAt": "2026-09-04T13:33:32.270Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -12888,8 +13007,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.ristoranteamano.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:04.516Z",
-          "lastVerifiedAt": "2026-09-04T12:51:04.516Z",
+          "observedAt": "2026-09-04T13:33:32.270Z",
+          "lastVerifiedAt": "2026-09-04T13:33:32.270Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -12905,8 +13024,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.ristoranteamano.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:04.516Z",
-          "lastVerifiedAt": "2026-09-04T12:51:04.516Z",
+          "observedAt": "2026-09-04T13:33:32.270Z",
+          "lastVerifiedAt": "2026-09-04T13:33:32.270Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -12920,8 +13039,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Reservations",
           "discoveredFrom": "https://www.ristoranteamano.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:04.516Z",
-          "lastVerifiedAt": "2026-09-04T12:51:04.516Z",
+          "observedAt": "2026-09-04T13:33:32.270Z",
+          "lastVerifiedAt": "2026-09-04T13:33:32.270Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -12947,8 +13066,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Sea Smoke",
       "website": "https://www.seasmokehalifax.com/",
       "resolvedUrl": "https://www.seasmokehalifax.com/",
-      "observedAt": "2026-09-04T12:51:05.214Z",
-      "lastVerifiedAt": "2026-09-04T12:51:05.214Z",
+      "observedAt": "2026-09-04T13:33:32.831Z",
+      "lastVerifiedAt": "2026-09-04T13:33:32.831Z",
       "scannedOwnedPages": [
         "https://www.seasmokehalifax.com/",
         "https://www.seasmokehalifax.com/contact"
@@ -12965,8 +13084,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.seasmokehalifax.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:05.214Z",
-          "lastVerifiedAt": "2026-09-04T12:51:05.214Z",
+          "observedAt": "2026-09-04T13:33:32.831Z",
+          "lastVerifiedAt": "2026-09-04T13:33:32.831Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -12982,8 +13101,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.seasmokehalifax.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:05.214Z",
-          "lastVerifiedAt": "2026-09-04T12:51:05.214Z",
+          "observedAt": "2026-09-04T13:33:32.831Z",
+          "lastVerifiedAt": "2026-09-04T13:33:32.831Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -12997,8 +13116,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Menu",
           "discoveredFrom": "https://www.seasmokehalifax.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:05.214Z",
-          "lastVerifiedAt": "2026-09-04T12:51:05.214Z",
+          "observedAt": "2026-09-04T13:33:32.831Z",
+          "lastVerifiedAt": "2026-09-04T13:33:32.831Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -13009,8 +13128,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Reservations",
           "discoveredFrom": "https://www.seasmokehalifax.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:05.214Z",
-          "lastVerifiedAt": "2026-09-04T12:51:05.214Z",
+          "observedAt": "2026-09-04T13:33:32.831Z",
+          "lastVerifiedAt": "2026-09-04T13:33:32.831Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -13028,8 +13147,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Morris East",
       "website": "https://morriseast.com/",
       "resolvedUrl": "https://www.morriseast.com/",
-      "observedAt": "2026-09-04T12:51:00.479Z",
-      "lastVerifiedAt": "2026-09-04T12:51:00.479Z",
+      "observedAt": "2026-09-04T13:33:26.568Z",
+      "lastVerifiedAt": "2026-09-04T13:33:26.568Z",
       "scannedOwnedPages": [
         "https://www.morriseast.com/",
         "https://www.morriseast.com/visit-us",
@@ -13048,8 +13167,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.morriseast.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:00.479Z",
-          "lastVerifiedAt": "2026-09-04T12:51:00.479Z",
+          "observedAt": "2026-09-04T13:33:26.568Z",
+          "lastVerifiedAt": "2026-09-04T13:33:26.568Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -13065,8 +13184,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.morriseast.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:00.479Z",
-          "lastVerifiedAt": "2026-09-04T12:51:00.479Z",
+          "observedAt": "2026-09-04T13:33:26.568Z",
+          "lastVerifiedAt": "2026-09-04T13:33:26.568Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -13082,8 +13201,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.morriseast.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:00.479Z",
-          "lastVerifiedAt": "2026-09-04T12:51:00.479Z",
+          "observedAt": "2026-09-04T13:33:26.568Z",
+          "lastVerifiedAt": "2026-09-04T13:33:26.568Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -13097,8 +13216,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Reservation",
           "discoveredFrom": "https://www.morriseast.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:00.479Z",
-          "lastVerifiedAt": "2026-09-04T12:51:00.479Z",
+          "observedAt": "2026-09-04T13:33:26.568Z",
+          "lastVerifiedAt": "2026-09-04T13:33:26.568Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -13109,8 +13228,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Catering & Events",
           "discoveredFrom": "https://www.morriseast.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:00.479Z",
-          "lastVerifiedAt": "2026-09-04T12:51:00.479Z",
+          "observedAt": "2026-09-04T13:33:26.568Z",
+          "lastVerifiedAt": "2026-09-04T13:33:26.568Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -13121,8 +13240,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Order Now",
           "discoveredFrom": "https://www.morriseast.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:00.479Z",
-          "lastVerifiedAt": "2026-09-04T12:51:00.479Z",
+          "observedAt": "2026-09-04T13:33:26.568Z",
+          "lastVerifiedAt": "2026-09-04T13:33:26.568Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -13133,8 +13252,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "RESERVE",
           "discoveredFrom": "https://www.morriseast.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:00.479Z",
-          "lastVerifiedAt": "2026-09-04T12:51:00.479Z",
+          "observedAt": "2026-09-04T13:33:26.568Z",
+          "lastVerifiedAt": "2026-09-04T13:33:26.568Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -13145,8 +13264,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Group Catering Menu",
           "discoveredFrom": "https://www.morriseast.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:00.479Z",
-          "lastVerifiedAt": "2026-09-04T12:51:00.479Z",
+          "observedAt": "2026-09-04T13:33:26.568Z",
+          "lastVerifiedAt": "2026-09-04T13:33:26.568Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -13164,8 +13283,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Downtown Pizza",
       "website": "https://downtownpizza.ca/",
       "resolvedUrl": "https://downtownpizza.ca/",
-      "observedAt": "2026-09-04T12:50:48.820Z",
-      "lastVerifiedAt": "2026-09-04T12:50:48.820Z",
+      "observedAt": "2026-09-04T13:33:13.454Z",
+      "lastVerifiedAt": "2026-09-04T13:33:13.454Z",
       "scannedOwnedPages": [
         "https://downtownpizza.ca/",
         "https://downtownpizza.ca/contact/"
@@ -13179,8 +13298,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Menu",
           "discoveredFrom": "https://downtownpizza.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:48.820Z",
-          "lastVerifiedAt": "2026-09-04T12:50:48.820Z",
+          "observedAt": "2026-09-04T13:33:13.454Z",
+          "lastVerifiedAt": "2026-09-04T13:33:13.454Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -13191,8 +13310,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "ORDER ONLINE – HALIFAX",
           "discoveredFrom": "https://downtownpizza.ca/contact/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:48.820Z",
-          "lastVerifiedAt": "2026-09-04T12:50:48.820Z",
+          "observedAt": "2026-09-04T13:33:13.454Z",
+          "lastVerifiedAt": "2026-09-04T13:33:13.454Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -13203,8 +13322,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "ORDER ONLINE – WOODSIDE",
           "discoveredFrom": "https://downtownpizza.ca/contact/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:48.820Z",
-          "lastVerifiedAt": "2026-09-04T12:50:48.820Z",
+          "observedAt": "2026-09-04T13:33:13.454Z",
+          "lastVerifiedAt": "2026-09-04T13:33:13.454Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -13237,8 +13356,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Tilted Tap",
       "website": "https://www.tiltedtap.ca/",
       "resolvedUrl": "https://www.tiltedtap.ca/",
-      "observedAt": "2026-09-04T12:51:15.839Z",
-      "lastVerifiedAt": "2026-09-04T12:51:15.839Z",
+      "observedAt": "2026-09-04T13:33:40.247Z",
+      "lastVerifiedAt": "2026-09-04T13:33:40.247Z",
       "scannedOwnedPages": [
         "https://www.tiltedtap.ca/",
         "https://www.tiltedtap.ca/contact"
@@ -13255,8 +13374,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.tiltedtap.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:15.839Z",
-          "lastVerifiedAt": "2026-09-04T12:51:15.839Z",
+          "observedAt": "2026-09-04T13:33:40.247Z",
+          "lastVerifiedAt": "2026-09-04T13:33:40.247Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -13272,8 +13391,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.tiltedtap.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:15.839Z",
-          "lastVerifiedAt": "2026-09-04T12:51:15.839Z",
+          "observedAt": "2026-09-04T13:33:40.247Z",
+          "lastVerifiedAt": "2026-09-04T13:33:40.247Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -13287,8 +13406,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "OUR MENU",
           "discoveredFrom": "https://www.tiltedtap.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:15.839Z",
-          "lastVerifiedAt": "2026-09-04T12:51:15.839Z",
+          "observedAt": "2026-09-04T13:33:40.247Z",
+          "lastVerifiedAt": "2026-09-04T13:33:40.247Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -13299,8 +13418,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "ORDER ONLINE",
           "discoveredFrom": "https://www.tiltedtap.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:15.839Z",
-          "lastVerifiedAt": "2026-09-04T12:51:15.839Z",
+          "observedAt": "2026-09-04T13:33:40.247Z",
+          "lastVerifiedAt": "2026-09-04T13:33:40.247Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -13311,8 +13430,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "RESERVATIONS",
           "discoveredFrom": "https://www.tiltedtap.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:15.839Z",
-          "lastVerifiedAt": "2026-09-04T12:51:15.839Z",
+          "observedAt": "2026-09-04T13:33:40.247Z",
+          "lastVerifiedAt": "2026-09-04T13:33:40.247Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -13323,8 +13442,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "EVENTS",
           "discoveredFrom": "https://www.tiltedtap.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:15.839Z",
-          "lastVerifiedAt": "2026-09-04T12:51:15.839Z",
+          "observedAt": "2026-09-04T13:33:40.247Z",
+          "lastVerifiedAt": "2026-09-04T13:33:40.247Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -13335,8 +13454,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Drink Menu",
           "discoveredFrom": "https://www.tiltedtap.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:15.839Z",
-          "lastVerifiedAt": "2026-09-04T12:51:15.839Z",
+          "observedAt": "2026-09-04T13:33:40.247Z",
+          "lastVerifiedAt": "2026-09-04T13:33:40.247Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -13347,8 +13466,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Brunch Menu",
           "discoveredFrom": "https://www.tiltedtap.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:15.839Z",
-          "lastVerifiedAt": "2026-09-04T12:51:15.839Z",
+          "observedAt": "2026-09-04T13:33:40.247Z",
+          "lastVerifiedAt": "2026-09-04T13:33:40.247Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -13366,8 +13485,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Subway",
       "website": "https://restaurants.subway.com/canada/ns/dartmouth/100-main-st",
       "resolvedUrl": "https://restaurants.subway.com/canada/ns/dartmouth/100-main-st",
-      "observedAt": "2026-09-04T12:51:08.516Z",
-      "lastVerifiedAt": "2026-09-04T12:51:08.516Z",
+      "observedAt": "2026-09-04T13:33:35.354Z",
+      "lastVerifiedAt": "2026-09-04T13:33:35.354Z",
       "scannedOwnedPages": [
         "https://restaurants.subway.com/canada/ns/dartmouth/100-main-st",
         "https://restaurants.subway.com/index.html",
@@ -13387,8 +13506,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://restaurants.subway.com/canada/ns/dartmouth/100-main-st",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:08.516Z",
-          "lastVerifiedAt": "2026-09-04T12:51:08.516Z",
+          "observedAt": "2026-09-04T13:33:35.354Z",
+          "lastVerifiedAt": "2026-09-04T13:33:35.354Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -13404,8 +13523,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://restaurants.subway.com/canada/ns/dartmouth/100-main-st",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:08.516Z",
-          "lastVerifiedAt": "2026-09-04T12:51:08.516Z",
+          "observedAt": "2026-09-04T13:33:35.354Z",
+          "lastVerifiedAt": "2026-09-04T13:33:35.354Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -13421,8 +13540,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://restaurants.subway.com/canada/ns/dartmouth/100-main-st",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:08.516Z",
-          "lastVerifiedAt": "2026-09-04T12:51:08.516Z",
+          "observedAt": "2026-09-04T13:33:35.354Z",
+          "lastVerifiedAt": "2026-09-04T13:33:35.354Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -13438,8 +13557,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://restaurants.subway.com/canada/ns/dartmouth/100-main-st",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:08.516Z",
-          "lastVerifiedAt": "2026-09-04T12:51:08.516Z",
+          "observedAt": "2026-09-04T13:33:35.354Z",
+          "lastVerifiedAt": "2026-09-04T13:33:35.354Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -13453,8 +13572,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Order Pick Up",
           "discoveredFrom": "https://restaurants.subway.com/canada/ns/dartmouth/100-main-st",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:08.516Z",
-          "lastVerifiedAt": "2026-09-04T12:51:08.516Z",
+          "observedAt": "2026-09-04T13:33:35.354Z",
+          "lastVerifiedAt": "2026-09-04T13:33:35.354Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -13465,8 +13584,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Breakfast",
           "discoveredFrom": "https://restaurants.subway.com/canada/ns/dartmouth/100-main-st",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:08.516Z",
-          "lastVerifiedAt": "2026-09-04T12:51:08.516Z",
+          "observedAt": "2026-09-04T13:33:35.354Z",
+          "lastVerifiedAt": "2026-09-04T13:33:35.354Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -13477,8 +13596,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "See Catering Menu",
           "discoveredFrom": "https://restaurants.subway.com/canada/ns/dartmouth/100-main-st",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:08.516Z",
-          "lastVerifiedAt": "2026-09-04T12:51:08.516Z",
+          "observedAt": "2026-09-04T13:33:35.354Z",
+          "lastVerifiedAt": "2026-09-04T13:33:35.354Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -13489,8 +13608,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "View National Menu",
           "discoveredFrom": "https://restaurants.subway.com/canada/ns/dartmouth/100-main-st",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:08.516Z",
-          "lastVerifiedAt": "2026-09-04T12:51:08.516Z",
+          "observedAt": "2026-09-04T13:33:35.354Z",
+          "lastVerifiedAt": "2026-09-04T13:33:35.354Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -13501,8 +13620,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Unsubscribe",
           "discoveredFrom": "https://restaurants.subway.com/canada/ns/dartmouth/100-main-st",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:08.516Z",
-          "lastVerifiedAt": "2026-09-04T12:51:08.516Z",
+          "observedAt": "2026-09-04T13:33:35.354Z",
+          "lastVerifiedAt": "2026-09-04T13:33:35.354Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -13513,8 +13632,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Menu",
           "discoveredFrom": "https://restaurants.subway.com/index.html",
           "associationBasis": "linked_from_official_location_page",
-          "observedAt": "2026-09-04T12:51:08.516Z",
-          "lastVerifiedAt": "2026-09-04T12:51:08.516Z",
+          "observedAt": "2026-09-04T13:33:35.354Z",
+          "lastVerifiedAt": "2026-09-04T13:33:35.354Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -13525,8 +13644,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Grilled Chicken",
           "discoveredFrom": "https://www.subway.com/en-ca/restaurant/13072-0/menu?intcmp=yext-local:owned:order:Order%20Pickup:fwh-no-value-w2-2020:0:button:0:orderpickup:hu:local-ca-en-v1&segment_code=0",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:08.516Z",
-          "lastVerifiedAt": "2026-09-04T12:51:08.516Z",
+          "observedAt": "2026-09-04T13:33:35.354Z",
+          "lastVerifiedAt": "2026-09-04T13:33:35.354Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -13537,8 +13656,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Meal of the Day",
           "discoveredFrom": "https://www.subway.com/en-ca/restaurant/13072-0/menu?intcmp=yext-local:owned:order:Order%20Pickup:fwh-no-value-w2-2020:0:button:0:orderpickup:hu:local-ca-en-v1&segment_code=0",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:08.516Z",
-          "lastVerifiedAt": "2026-09-04T12:51:08.516Z",
+          "observedAt": "2026-09-04T13:33:35.354Z",
+          "lastVerifiedAt": "2026-09-04T13:33:35.354Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -13549,8 +13668,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Sandwiches",
           "discoveredFrom": "https://www.subway.com/en-ca/restaurant/13072-0/menu?intcmp=yext-local:owned:order:Order%20Pickup:fwh-no-value-w2-2020:0:button:0:orderpickup:hu:local-ca-en-v1&segment_code=0",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:08.516Z",
-          "lastVerifiedAt": "2026-09-04T12:51:08.516Z",
+          "observedAt": "2026-09-04T13:33:35.354Z",
+          "lastVerifiedAt": "2026-09-04T13:33:35.354Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -13561,8 +13680,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Everyday Value",
           "discoveredFrom": "https://www.subway.com/en-ca/restaurant/13072-0/menu?intcmp=yext-local:owned:order:Order%20Pickup:fwh-no-value-w2-2020:0:button:0:orderpickup:hu:local-ca-en-v1&segment_code=0",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:08.516Z",
-          "lastVerifiedAt": "2026-09-04T12:51:08.516Z",
+          "observedAt": "2026-09-04T13:33:35.354Z",
+          "lastVerifiedAt": "2026-09-04T13:33:35.354Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -13573,8 +13692,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Power Bowls",
           "discoveredFrom": "https://www.subway.com/en-ca/restaurant/13072-0/menu?intcmp=yext-local:owned:order:Order%20Pickup:fwh-no-value-w2-2020:0:button:0:orderpickup:hu:local-ca-en-v1&segment_code=0",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:08.516Z",
-          "lastVerifiedAt": "2026-09-04T12:51:08.516Z",
+          "observedAt": "2026-09-04T13:33:35.354Z",
+          "lastVerifiedAt": "2026-09-04T13:33:35.354Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -13585,8 +13704,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Snackwiches",
           "discoveredFrom": "https://www.subway.com/en-ca/restaurant/13072-0/menu?intcmp=yext-local:owned:order:Order%20Pickup:fwh-no-value-w2-2020:0:button:0:orderpickup:hu:local-ca-en-v1&segment_code=0",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:08.516Z",
-          "lastVerifiedAt": "2026-09-04T12:51:08.516Z",
+          "observedAt": "2026-09-04T13:33:35.354Z",
+          "lastVerifiedAt": "2026-09-04T13:33:35.354Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -13597,8 +13716,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Wraps",
           "discoveredFrom": "https://www.subway.com/en-ca/restaurant/13072-0/menu?intcmp=yext-local:owned:order:Order%20Pickup:fwh-no-value-w2-2020:0:button:0:orderpickup:hu:local-ca-en-v1&segment_code=0",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:08.516Z",
-          "lastVerifiedAt": "2026-09-04T12:51:08.516Z",
+          "observedAt": "2026-09-04T13:33:35.354Z",
+          "lastVerifiedAt": "2026-09-04T13:33:35.354Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -13609,8 +13728,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Salads",
           "discoveredFrom": "https://www.subway.com/en-ca/restaurant/13072-0/menu?intcmp=yext-local:owned:order:Order%20Pickup:fwh-no-value-w2-2020:0:button:0:orderpickup:hu:local-ca-en-v1&segment_code=0",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:08.516Z",
-          "lastVerifiedAt": "2026-09-04T12:51:08.516Z",
+          "observedAt": "2026-09-04T13:33:35.354Z",
+          "lastVerifiedAt": "2026-09-04T13:33:35.354Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -13621,8 +13740,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Snacks & Sides",
           "discoveredFrom": "https://www.subway.com/en-ca/restaurant/13072-0/menu?intcmp=yext-local:owned:order:Order%20Pickup:fwh-no-value-w2-2020:0:button:0:orderpickup:hu:local-ca-en-v1&segment_code=0",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:08.516Z",
-          "lastVerifiedAt": "2026-09-04T12:51:08.516Z",
+          "observedAt": "2026-09-04T13:33:35.354Z",
+          "lastVerifiedAt": "2026-09-04T13:33:35.354Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -13633,8 +13752,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Breakfast",
           "discoveredFrom": "https://www.subway.com/en-ca/restaurant/13072-0/menu?intcmp=yext-local:owned:order:Order%20Pickup:fwh-no-value-w2-2020:0:button:0:orderpickup:hu:local-ca-en-v1&segment_code=0",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:08.516Z",
-          "lastVerifiedAt": "2026-09-04T12:51:08.516Z",
+          "observedAt": "2026-09-04T13:33:35.354Z",
+          "lastVerifiedAt": "2026-09-04T13:33:35.354Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -13645,8 +13764,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Soups",
           "discoveredFrom": "https://www.subway.com/en-ca/restaurant/13072-0/menu?intcmp=yext-local:owned:order:Order%20Pickup:fwh-no-value-w2-2020:0:button:0:orderpickup:hu:local-ca-en-v1&segment_code=0",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:08.516Z",
-          "lastVerifiedAt": "2026-09-04T12:51:08.516Z",
+          "observedAt": "2026-09-04T13:33:35.354Z",
+          "lastVerifiedAt": "2026-09-04T13:33:35.354Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -13657,8 +13776,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Drinks",
           "discoveredFrom": "https://www.subway.com/en-ca/restaurant/13072-0/menu?intcmp=yext-local:owned:order:Order%20Pickup:fwh-no-value-w2-2020:0:button:0:orderpickup:hu:local-ca-en-v1&segment_code=0",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:08.516Z",
-          "lastVerifiedAt": "2026-09-04T12:51:08.516Z",
+          "observedAt": "2026-09-04T13:33:35.354Z",
+          "lastVerifiedAt": "2026-09-04T13:33:35.354Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -13676,8 +13795,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "The Keg",
       "website": "https://thekeg.com/en/locations/halifax",
       "resolvedUrl": "https://thekeg.com/en/locations/halifax",
-      "observedAt": "2026-09-04T12:51:11.714Z",
-      "lastVerifiedAt": "2026-09-04T12:51:11.714Z",
+      "observedAt": "2026-09-04T13:33:38.164Z",
+      "lastVerifiedAt": "2026-09-04T13:33:38.164Z",
       "scannedOwnedPages": [
         "https://thekeg.com/en/locations/halifax",
         "https://thekeg.com/fr/restaurants/halifax",
@@ -13697,8 +13816,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://thekeg.com/en/locations/halifax",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:11.714Z",
-          "lastVerifiedAt": "2026-09-04T12:51:11.714Z",
+          "observedAt": "2026-09-04T13:33:38.164Z",
+          "lastVerifiedAt": "2026-09-04T13:33:38.164Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -13714,8 +13833,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://thekeg.com/en/locations/halifax",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:11.714Z",
-          "lastVerifiedAt": "2026-09-04T12:51:11.714Z",
+          "observedAt": "2026-09-04T13:33:38.164Z",
+          "lastVerifiedAt": "2026-09-04T13:33:38.164Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -13731,8 +13850,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://thekeg.com/en/locations/halifax",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:11.714Z",
-          "lastVerifiedAt": "2026-09-04T12:51:11.714Z",
+          "observedAt": "2026-09-04T13:33:38.164Z",
+          "lastVerifiedAt": "2026-09-04T13:33:38.164Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -13748,8 +13867,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://thekeg.com/en/locations/halifax",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:11.714Z",
-          "lastVerifiedAt": "2026-09-04T12:51:11.714Z",
+          "observedAt": "2026-09-04T13:33:38.164Z",
+          "lastVerifiedAt": "2026-09-04T13:33:38.164Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -13763,8 +13882,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Reserve Now",
           "discoveredFrom": "https://thekeg.com/en/locations/halifax",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:11.714Z",
-          "lastVerifiedAt": "2026-09-04T12:51:11.714Z",
+          "observedAt": "2026-09-04T13:33:38.164Z",
+          "lastVerifiedAt": "2026-09-04T13:33:38.164Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -13775,8 +13894,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "View menu",
           "discoveredFrom": "https://thekeg.com/en/locations/halifax",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:11.714Z",
-          "lastVerifiedAt": "2026-09-04T12:51:11.714Z",
+          "observedAt": "2026-09-04T13:33:38.164Z",
+          "lastVerifiedAt": "2026-09-04T13:33:38.164Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -13787,8 +13906,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Voir le menu",
           "discoveredFrom": "https://thekeg.com/fr/restaurants/halifax",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:11.714Z",
-          "lastVerifiedAt": "2026-09-04T12:51:11.714Z",
+          "observedAt": "2026-09-04T13:33:38.164Z",
+          "lastVerifiedAt": "2026-09-04T13:33:38.164Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -13799,8 +13918,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "View menu",
           "discoveredFrom": "https://thekeg.com/en/locations",
           "associationBasis": "linked_from_official_location_page",
-          "observedAt": "2026-09-04T12:51:11.714Z",
-          "lastVerifiedAt": "2026-09-04T12:51:11.714Z",
+          "observedAt": "2026-09-04T13:33:38.164Z",
+          "lastVerifiedAt": "2026-09-04T13:33:38.164Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -13811,8 +13930,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Reserve Now",
           "discoveredFrom": "https://thekeg.com/en/locations",
           "associationBasis": "linked_from_official_location_page",
-          "observedAt": "2026-09-04T12:51:11.714Z",
-          "lastVerifiedAt": "2026-09-04T12:51:11.714Z",
+          "observedAt": "2026-09-04T13:33:38.164Z",
+          "lastVerifiedAt": "2026-09-04T13:33:38.164Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -13823,8 +13942,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "View menu",
           "discoveredFrom": "https://thekeg.com/en/locations",
           "associationBasis": "linked_from_official_location_page",
-          "observedAt": "2026-09-04T12:51:11.714Z",
-          "lastVerifiedAt": "2026-09-04T12:51:11.714Z",
+          "observedAt": "2026-09-04T13:33:38.164Z",
+          "lastVerifiedAt": "2026-09-04T13:33:38.164Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -13835,8 +13954,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "View menu",
           "discoveredFrom": "https://thekeg.com/en/locations",
           "associationBasis": "linked_from_official_location_page",
-          "observedAt": "2026-09-04T12:51:11.714Z",
-          "lastVerifiedAt": "2026-09-04T12:51:11.714Z",
+          "observedAt": "2026-09-04T13:33:38.164Z",
+          "lastVerifiedAt": "2026-09-04T13:33:38.164Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -13847,8 +13966,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Reserve Now",
           "discoveredFrom": "https://thekeg.com/en/locations",
           "associationBasis": "linked_from_official_location_page",
-          "observedAt": "2026-09-04T12:51:11.714Z",
-          "lastVerifiedAt": "2026-09-04T12:51:11.714Z",
+          "observedAt": "2026-09-04T13:33:38.164Z",
+          "lastVerifiedAt": "2026-09-04T13:33:38.164Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -13859,8 +13978,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "View menu",
           "discoveredFrom": "https://thekeg.com/en/locations",
           "associationBasis": "linked_from_official_location_page",
-          "observedAt": "2026-09-04T12:51:11.714Z",
-          "lastVerifiedAt": "2026-09-04T12:51:11.714Z",
+          "observedAt": "2026-09-04T13:33:38.164Z",
+          "lastVerifiedAt": "2026-09-04T13:33:38.164Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -13871,8 +13990,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "View menu",
           "discoveredFrom": "https://thekeg.com/en/locations",
           "associationBasis": "linked_from_official_location_page",
-          "observedAt": "2026-09-04T12:51:11.714Z",
-          "lastVerifiedAt": "2026-09-04T12:51:11.714Z",
+          "observedAt": "2026-09-04T13:33:38.164Z",
+          "lastVerifiedAt": "2026-09-04T13:33:38.164Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -13883,8 +14002,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "View menu",
           "discoveredFrom": "https://thekeg.com/en/locations",
           "associationBasis": "linked_from_official_location_page",
-          "observedAt": "2026-09-04T12:51:11.714Z",
-          "lastVerifiedAt": "2026-09-04T12:51:11.714Z",
+          "observedAt": "2026-09-04T13:33:38.164Z",
+          "lastVerifiedAt": "2026-09-04T13:33:38.164Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -13895,8 +14014,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "View menu",
           "discoveredFrom": "https://thekeg.com/en/locations",
           "associationBasis": "linked_from_official_location_page",
-          "observedAt": "2026-09-04T12:51:11.714Z",
-          "lastVerifiedAt": "2026-09-04T12:51:11.714Z",
+          "observedAt": "2026-09-04T13:33:38.164Z",
+          "lastVerifiedAt": "2026-09-04T13:33:38.164Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -13907,8 +14026,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "View menu",
           "discoveredFrom": "https://thekeg.com/en/locations",
           "associationBasis": "linked_from_official_location_page",
-          "observedAt": "2026-09-04T12:51:11.714Z",
-          "lastVerifiedAt": "2026-09-04T12:51:11.714Z",
+          "observedAt": "2026-09-04T13:33:38.164Z",
+          "lastVerifiedAt": "2026-09-04T13:33:38.164Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -13924,8 +14043,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Sully & Porter",
       "website": "https://sullyandporter.com/",
       "resolvedUrl": "https://sullyandporter.com/",
-      "observedAt": "2026-09-04T12:51:08.579Z",
-      "lastVerifiedAt": "2026-09-04T12:51:08.579Z",
+      "observedAt": "2026-09-04T13:33:35.446Z",
+      "lastVerifiedAt": "2026-09-04T13:33:35.446Z",
       "scannedOwnedPages": [
         "https://sullyandporter.com/",
         "https://sullyandporter.com/"
@@ -13942,8 +14061,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://sullyandporter.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:08.579Z",
-          "lastVerifiedAt": "2026-09-04T12:51:08.579Z",
+          "observedAt": "2026-09-04T13:33:35.446Z",
+          "lastVerifiedAt": "2026-09-04T13:33:35.446Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -13959,8 +14078,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://sullyandporter.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:08.579Z",
-          "lastVerifiedAt": "2026-09-04T12:51:08.579Z",
+          "observedAt": "2026-09-04T13:33:35.446Z",
+          "lastVerifiedAt": "2026-09-04T13:33:35.446Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -13974,8 +14093,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Menu",
           "discoveredFrom": "https://sullyandporter.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:08.579Z",
-          "lastVerifiedAt": "2026-09-04T12:51:08.579Z",
+          "observedAt": "2026-09-04T13:33:35.446Z",
+          "lastVerifiedAt": "2026-09-04T13:33:35.446Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -14006,8 +14125,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Sweet & Sassy",
       "website": "https://sweetandsassy.ca/",
       "resolvedUrl": "https://sweetandsassy.ca/",
-      "observedAt": "2026-09-04T12:51:09.645Z",
-      "lastVerifiedAt": "2026-09-04T12:51:09.645Z",
+      "observedAt": "2026-09-04T13:33:36.779Z",
+      "lastVerifiedAt": "2026-09-04T13:33:36.779Z",
       "scannedOwnedPages": [
         "https://sweetandsassy.ca/",
         "https://sweetandsassy.ca/about",
@@ -14025,8 +14144,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://sweetandsassy.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:09.645Z",
-          "lastVerifiedAt": "2026-09-04T12:51:09.645Z",
+          "observedAt": "2026-09-04T13:33:36.779Z",
+          "lastVerifiedAt": "2026-09-04T13:33:36.779Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -14042,8 +14161,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://sweetandsassy.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:09.645Z",
-          "lastVerifiedAt": "2026-09-04T12:51:09.645Z",
+          "observedAt": "2026-09-04T13:33:36.779Z",
+          "lastVerifiedAt": "2026-09-04T13:33:36.779Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -14059,8 +14178,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://sweetandsassy.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:09.645Z",
-          "lastVerifiedAt": "2026-09-04T12:51:09.645Z",
+          "observedAt": "2026-09-04T13:33:36.779Z",
+          "lastVerifiedAt": "2026-09-04T13:33:36.779Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -14074,8 +14193,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Caribbean Menu",
           "discoveredFrom": "https://sweetandsassy.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:09.645Z",
-          "lastVerifiedAt": "2026-09-04T12:51:09.645Z",
+          "observedAt": "2026-09-04T13:33:36.779Z",
+          "lastVerifiedAt": "2026-09-04T13:33:36.779Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -14086,8 +14205,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Breakfast Menu",
           "discoveredFrom": "https://sweetandsassy.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:09.645Z",
-          "lastVerifiedAt": "2026-09-04T12:51:09.645Z",
+          "observedAt": "2026-09-04T13:33:36.779Z",
+          "lastVerifiedAt": "2026-09-04T13:33:36.779Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -14098,8 +14217,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Purchase ticket",
           "discoveredFrom": "https://sweetandsassy.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:09.645Z",
-          "lastVerifiedAt": "2026-09-04T12:51:09.645Z",
+          "observedAt": "2026-09-04T13:33:36.779Z",
+          "lastVerifiedAt": "2026-09-04T13:33:36.779Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -14117,8 +14236,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Summit Cafe",
       "website": "https://www.thesummitcafe.ca/",
       "resolvedUrl": "https://www.thesummitcafe.ca/",
-      "observedAt": "2026-09-04T12:51:08.609Z",
-      "lastVerifiedAt": "2026-09-04T12:51:08.609Z",
+      "observedAt": "2026-09-04T13:33:35.597Z",
+      "lastVerifiedAt": "2026-09-04T13:33:35.597Z",
       "scannedOwnedPages": [
         "https://www.thesummitcafe.ca/",
         "https://www.thesummitcafe.ca/contact-us/"
@@ -14135,8 +14254,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.thesummitcafe.ca/",
           "associationBasis": "jsonld_sameAs",
-          "observedAt": "2026-09-04T12:51:08.609Z",
-          "lastVerifiedAt": "2026-09-04T12:51:08.609Z",
+          "observedAt": "2026-09-04T13:33:35.597Z",
+          "lastVerifiedAt": "2026-09-04T13:33:35.597Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -14152,8 +14271,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.thesummitcafe.ca/",
           "associationBasis": "jsonld_sameAs",
-          "observedAt": "2026-09-04T12:51:08.609Z",
-          "lastVerifiedAt": "2026-09-04T12:51:08.609Z",
+          "observedAt": "2026-09-04T13:33:35.597Z",
+          "lastVerifiedAt": "2026-09-04T13:33:35.597Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -14167,8 +14286,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Our Menu",
           "discoveredFrom": "https://www.thesummitcafe.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:08.609Z",
-          "lastVerifiedAt": "2026-09-04T12:51:08.609Z",
+          "observedAt": "2026-09-04T13:33:35.597Z",
+          "lastVerifiedAt": "2026-09-04T13:33:35.597Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -14184,8 +14303,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Studio East Food+Drink",
       "website": "https://www.studioeastfood.ca/",
       "resolvedUrl": "https://www.studioeastfood.ca/",
-      "observedAt": "2026-09-04T12:51:08.057Z",
-      "lastVerifiedAt": "2026-09-04T12:51:08.057Z",
+      "observedAt": "2026-09-04T13:33:34.291Z",
+      "lastVerifiedAt": "2026-09-04T13:33:34.291Z",
       "scannedOwnedPages": [
         "https://www.studioeastfood.ca/",
         "https://www.studioeastfood.ca/events/restaurant",
@@ -14204,8 +14323,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.studioeastfood.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:08.057Z",
-          "lastVerifiedAt": "2026-09-04T12:51:08.057Z",
+          "observedAt": "2026-09-04T13:33:34.291Z",
+          "lastVerifiedAt": "2026-09-04T13:33:34.291Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -14221,8 +14340,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.studioeastfood.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:08.057Z",
-          "lastVerifiedAt": "2026-09-04T12:51:08.057Z",
+          "observedAt": "2026-09-04T13:33:34.291Z",
+          "lastVerifiedAt": "2026-09-04T13:33:34.291Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -14238,8 +14357,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.studioeastfood.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:08.057Z",
-          "lastVerifiedAt": "2026-09-04T12:51:08.057Z",
+          "observedAt": "2026-09-04T13:33:34.291Z",
+          "lastVerifiedAt": "2026-09-04T13:33:34.291Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -14253,8 +14372,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Brunch Menu",
           "discoveredFrom": "https://www.studioeastfood.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:08.057Z",
-          "lastVerifiedAt": "2026-09-04T12:51:08.057Z",
+          "observedAt": "2026-09-04T13:33:34.291Z",
+          "lastVerifiedAt": "2026-09-04T13:33:34.291Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -14265,8 +14384,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Lunch and Dinner",
           "discoveredFrom": "https://www.studioeastfood.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:08.057Z",
-          "lastVerifiedAt": "2026-09-04T12:51:08.057Z",
+          "observedAt": "2026-09-04T13:33:34.291Z",
+          "lastVerifiedAt": "2026-09-04T13:33:34.291Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -14277,8 +14396,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Private Events at Studio East",
           "discoveredFrom": "https://www.studioeastfood.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:08.057Z",
-          "lastVerifiedAt": "2026-09-04T12:51:08.057Z",
+          "observedAt": "2026-09-04T13:33:34.291Z",
+          "lastVerifiedAt": "2026-09-04T13:33:34.291Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -14289,8 +14408,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Restaurant Events",
           "discoveredFrom": "https://www.studioeastfood.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:08.057Z",
-          "lastVerifiedAt": "2026-09-04T12:51:08.057Z",
+          "observedAt": "2026-09-04T13:33:34.291Z",
+          "lastVerifiedAt": "2026-09-04T13:33:34.291Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -14301,8 +14420,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Cocktail Events at the Dragon Bar",
           "discoveredFrom": "https://www.studioeastfood.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:08.057Z",
-          "lastVerifiedAt": "2026-09-04T12:51:08.057Z",
+          "observedAt": "2026-09-04T13:33:34.291Z",
+          "lastVerifiedAt": "2026-09-04T13:33:34.291Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -14313,8 +14432,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Reservations",
           "discoveredFrom": "https://www.studioeastfood.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:08.057Z",
-          "lastVerifiedAt": "2026-09-04T12:51:08.057Z",
+          "observedAt": "2026-09-04T13:33:34.291Z",
+          "lastVerifiedAt": "2026-09-04T13:33:34.291Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -14325,8 +14444,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Folder: Menus",
           "discoveredFrom": "https://www.studioeastfood.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:08.057Z",
-          "lastVerifiedAt": "2026-09-04T12:51:08.057Z",
+          "observedAt": "2026-09-04T13:33:34.291Z",
+          "lastVerifiedAt": "2026-09-04T13:33:34.291Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -14337,8 +14456,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Folder: Events and Catering",
           "discoveredFrom": "https://www.studioeastfood.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:08.057Z",
-          "lastVerifiedAt": "2026-09-04T12:51:08.057Z",
+          "observedAt": "2026-09-04T13:33:34.291Z",
+          "lastVerifiedAt": "2026-09-04T13:33:34.291Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -14349,8 +14468,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Menu",
           "discoveredFrom": "https://www.studioeastfood.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:08.057Z",
-          "lastVerifiedAt": "2026-09-04T12:51:08.057Z",
+          "observedAt": "2026-09-04T13:33:34.291Z",
+          "lastVerifiedAt": "2026-09-04T13:33:34.291Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -14361,8 +14480,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "reservations",
           "discoveredFrom": "https://www.studioeastfood.ca/aboutus",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:08.057Z",
-          "lastVerifiedAt": "2026-09-04T12:51:08.057Z",
+          "observedAt": "2026-09-04T13:33:34.291Z",
+          "lastVerifiedAt": "2026-09-04T13:33:34.291Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -14380,8 +14499,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "2 Crows Brewing",
       "website": "https://www.2crowsbrewing.com/",
       "resolvedUrl": "https://2crowsbrewing.com/",
-      "observedAt": "2026-09-04T12:50:43.476Z",
-      "lastVerifiedAt": "2026-09-04T12:50:43.476Z",
+      "observedAt": "2026-09-04T13:33:07.652Z",
+      "lastVerifiedAt": "2026-09-04T13:33:07.652Z",
       "scannedOwnedPages": [
         "https://2crowsbrewing.com/"
       ],
@@ -14397,8 +14516,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://2crowsbrewing.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:43.476Z",
-          "lastVerifiedAt": "2026-09-04T12:50:43.476Z",
+          "observedAt": "2026-09-04T13:33:07.652Z",
+          "lastVerifiedAt": "2026-09-04T13:33:07.652Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -14414,8 +14533,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://2crowsbrewing.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:43.476Z",
-          "lastVerifiedAt": "2026-09-04T12:50:43.476Z",
+          "observedAt": "2026-09-04T13:33:07.652Z",
+          "lastVerifiedAt": "2026-09-04T13:33:07.652Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -14443,8 +14562,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Peter's Pizzeria",
       "website": "https://www.peterspizzeriahfx.com/",
       "resolvedUrl": "https://www.peterspizzeriahfx.com/",
-      "observedAt": "2026-09-04T12:51:02.533Z",
-      "lastVerifiedAt": "2026-09-04T12:51:02.533Z",
+      "observedAt": "2026-09-04T13:33:28.263Z",
+      "lastVerifiedAt": "2026-09-04T13:33:28.263Z",
       "scannedOwnedPages": [
         "https://www.peterspizzeriahfx.com/",
         "https://www.peterspizzeriahfx.com/"
@@ -14458,8 +14577,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Menu",
           "discoveredFrom": "https://www.peterspizzeriahfx.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:02.533Z",
-          "lastVerifiedAt": "2026-09-04T12:51:02.533Z",
+          "observedAt": "2026-09-04T13:33:28.263Z",
+          "lastVerifiedAt": "2026-09-04T13:33:28.263Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -14470,8 +14589,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Order Online",
           "discoveredFrom": "https://www.peterspizzeriahfx.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:02.533Z",
-          "lastVerifiedAt": "2026-09-04T12:51:02.533Z",
+          "observedAt": "2026-09-04T13:33:28.263Z",
+          "lastVerifiedAt": "2026-09-04T13:33:28.263Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -14482,8 +14601,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "See Our Menu",
           "discoveredFrom": "https://www.peterspizzeriahfx.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:02.533Z",
-          "lastVerifiedAt": "2026-09-04T12:51:02.533Z",
+          "observedAt": "2026-09-04T13:33:28.263Z",
+          "lastVerifiedAt": "2026-09-04T13:33:28.263Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -14501,8 +14620,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Good Robot Brewing Company",
       "website": "https://goodrobotbrewing.ca/",
       "resolvedUrl": "https://goodrobotbrewing.ca/",
-      "observedAt": "2026-09-04T12:50:50.915Z",
-      "lastVerifiedAt": "2026-09-04T12:50:50.915Z",
+      "observedAt": "2026-09-04T13:33:15.552Z",
+      "lastVerifiedAt": "2026-09-04T13:33:15.552Z",
       "scannedOwnedPages": [
         "https://goodrobotbrewing.ca/",
         "https://goodrobotbrewing.ca/locations/",
@@ -14521,8 +14640,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://goodrobotbrewing.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:50.915Z",
-          "lastVerifiedAt": "2026-09-04T12:50:50.915Z",
+          "observedAt": "2026-09-04T13:33:15.552Z",
+          "lastVerifiedAt": "2026-09-04T13:33:15.552Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -14538,8 +14657,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://goodrobotbrewing.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:50.915Z",
-          "lastVerifiedAt": "2026-09-04T12:50:50.915Z",
+          "observedAt": "2026-09-04T13:33:15.552Z",
+          "lastVerifiedAt": "2026-09-04T13:33:15.552Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -14555,8 +14674,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://goodrobotbrewing.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:50.915Z",
-          "lastVerifiedAt": "2026-09-04T12:50:50.915Z",
+          "observedAt": "2026-09-04T13:33:15.552Z",
+          "lastVerifiedAt": "2026-09-04T13:33:15.552Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -14570,8 +14689,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Events",
           "discoveredFrom": "https://goodrobotbrewing.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:50.915Z",
-          "lastVerifiedAt": "2026-09-04T12:50:50.915Z",
+          "observedAt": "2026-09-04T13:33:15.552Z",
+          "lastVerifiedAt": "2026-09-04T13:33:15.552Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -14582,8 +14701,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Shipping & Delivery Policy",
           "discoveredFrom": "https://goodrobotbrewing.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:50.915Z",
-          "lastVerifiedAt": "2026-09-04T12:50:50.915Z",
+          "observedAt": "2026-09-04T13:33:15.552Z",
+          "lastVerifiedAt": "2026-09-04T13:33:15.552Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -14594,8 +14713,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Find Food Here",
           "discoveredFrom": "https://goodrobotbrewing.ca/locations/",
           "associationBasis": "linked_from_official_location_page",
-          "observedAt": "2026-09-04T12:50:50.915Z",
-          "lastVerifiedAt": "2026-09-04T12:50:50.915Z",
+          "observedAt": "2026-09-04T13:33:15.552Z",
+          "lastVerifiedAt": "2026-09-04T13:33:15.552Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -14628,8 +14747,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Starbucks",
       "website": "https://www.starbucks.ca/",
       "resolvedUrl": "https://www.starbucks.ca/",
-      "observedAt": "2026-09-04T12:50:51.220Z",
-      "lastVerifiedAt": "2026-09-04T12:50:51.220Z",
+      "observedAt": "2026-09-04T13:33:16.540Z",
+      "lastVerifiedAt": "2026-09-04T13:33:16.540Z",
       "scannedOwnedPages": [
         "https://www.starbucks.ca/",
         "https://www.starbucks.ca/about-us/",
@@ -14647,8 +14766,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.starbucks.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:51.220Z",
-          "lastVerifiedAt": "2026-09-04T12:50:51.220Z",
+          "observedAt": "2026-09-04T13:33:16.540Z",
+          "lastVerifiedAt": "2026-09-04T13:33:16.540Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -14664,8 +14783,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.starbucks.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:51.220Z",
-          "lastVerifiedAt": "2026-09-04T12:50:51.220Z",
+          "observedAt": "2026-09-04T13:33:16.540Z",
+          "lastVerifiedAt": "2026-09-04T13:33:16.540Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -14681,8 +14800,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.starbucks.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:51.220Z",
-          "lastVerifiedAt": "2026-09-04T12:50:51.220Z",
+          "observedAt": "2026-09-04T13:33:16.540Z",
+          "lastVerifiedAt": "2026-09-04T13:33:16.540Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -14696,8 +14815,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Menu",
           "discoveredFrom": "https://www.starbucks.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:51.220Z",
-          "lastVerifiedAt": "2026-09-04T12:50:51.220Z",
+          "observedAt": "2026-09-04T13:33:16.540Z",
+          "lastVerifiedAt": "2026-09-04T13:33:16.540Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -14708,8 +14827,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "See the pumpkin menu",
           "discoveredFrom": "https://www.starbucks.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:51.220Z",
-          "lastVerifiedAt": "2026-09-04T12:50:51.220Z",
+          "observedAt": "2026-09-04T13:33:16.540Z",
+          "lastVerifiedAt": "2026-09-04T13:33:16.540Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -14720,8 +14839,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Order now",
           "discoveredFrom": "https://www.starbucks.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:51.220Z",
-          "lastVerifiedAt": "2026-09-04T12:50:51.220Z",
+          "observedAt": "2026-09-04T13:33:16.540Z",
+          "lastVerifiedAt": "2026-09-04T13:33:16.540Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -14732,8 +14851,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Delivery",
           "discoveredFrom": "https://www.starbucks.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:51.220Z",
-          "lastVerifiedAt": "2026-09-04T12:50:51.220Z",
+          "observedAt": "2026-09-04T13:33:16.540Z",
+          "lastVerifiedAt": "2026-09-04T13:33:16.540Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -14751,8 +14870,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Cheese Curds Gourmet Burgers and Poutinerie/Habaneros Modern Taco Bar",
       "website": "https://www.cheesecurdsburgers.com/",
       "resolvedUrl": "https://www.cheesecurdsburgers.com/",
-      "observedAt": "2026-09-04T12:50:47.079Z",
-      "lastVerifiedAt": "2026-09-04T12:50:47.079Z",
+      "observedAt": "2026-09-04T13:33:11.302Z",
+      "lastVerifiedAt": "2026-09-04T13:33:11.302Z",
       "scannedOwnedPages": [
         "https://www.cheesecurdsburgers.com/",
         "https://www.cheesecurdsburgers.com/about-us",
@@ -14771,8 +14890,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.cheesecurdsburgers.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:47.079Z",
-          "lastVerifiedAt": "2026-09-04T12:50:47.079Z",
+          "observedAt": "2026-09-04T13:33:11.302Z",
+          "lastVerifiedAt": "2026-09-04T13:33:11.302Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -14788,8 +14907,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.cheesecurdsburgers.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:47.079Z",
-          "lastVerifiedAt": "2026-09-04T12:50:47.079Z",
+          "observedAt": "2026-09-04T13:33:11.302Z",
+          "lastVerifiedAt": "2026-09-04T13:33:11.302Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -14805,8 +14924,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.cheesecurdsburgers.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:47.079Z",
-          "lastVerifiedAt": "2026-09-04T12:50:47.079Z",
+          "observedAt": "2026-09-04T13:33:11.302Z",
+          "lastVerifiedAt": "2026-09-04T13:33:11.302Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -14822,8 +14941,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.cheesecurdsburgers.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:47.079Z",
-          "lastVerifiedAt": "2026-09-04T12:50:47.079Z",
+          "observedAt": "2026-09-04T13:33:11.302Z",
+          "lastVerifiedAt": "2026-09-04T13:33:11.302Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -14837,8 +14956,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "MENU",
           "discoveredFrom": "https://www.cheesecurdsburgers.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:47.079Z",
-          "lastVerifiedAt": "2026-09-04T12:50:47.079Z",
+          "observedAt": "2026-09-04T13:33:11.302Z",
+          "lastVerifiedAt": "2026-09-04T13:33:11.302Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -14849,8 +14968,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "ORDER ONLINE",
           "discoveredFrom": "https://www.cheesecurdsburgers.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:47.079Z",
-          "lastVerifiedAt": "2026-09-04T12:50:47.079Z",
+          "observedAt": "2026-09-04T13:33:11.302Z",
+          "lastVerifiedAt": "2026-09-04T13:33:11.302Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -14868,8 +14987,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Tomavinos Pizzeria",
       "website": "https://www.tomavinos.ca/",
       "resolvedUrl": "https://www.tomavinos.ca/",
-      "observedAt": "2026-09-04T12:51:18.263Z",
-      "lastVerifiedAt": "2026-09-04T12:51:18.263Z",
+      "observedAt": "2026-09-04T13:33:42.176Z",
+      "lastVerifiedAt": "2026-09-04T13:33:42.176Z",
       "scannedOwnedPages": [
         "https://www.tomavinos.ca/",
         "https://tomavinos.ca/about",
@@ -14887,8 +15006,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.tomavinos.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:18.263Z",
-          "lastVerifiedAt": "2026-09-04T12:51:18.263Z",
+          "observedAt": "2026-09-04T13:33:42.176Z",
+          "lastVerifiedAt": "2026-09-04T13:33:42.176Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -14904,8 +15023,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.tomavinos.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:18.263Z",
-          "lastVerifiedAt": "2026-09-04T12:51:18.263Z",
+          "observedAt": "2026-09-04T13:33:42.176Z",
+          "lastVerifiedAt": "2026-09-04T13:33:42.176Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -14921,8 +15040,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.tomavinos.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:18.263Z",
-          "lastVerifiedAt": "2026-09-04T12:51:18.263Z",
+          "observedAt": "2026-09-04T13:33:42.176Z",
+          "lastVerifiedAt": "2026-09-04T13:33:42.176Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -14936,8 +15055,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Menu",
           "discoveredFrom": "https://www.tomavinos.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:18.263Z",
-          "lastVerifiedAt": "2026-09-04T12:51:18.263Z",
+          "observedAt": "2026-09-04T13:33:42.176Z",
+          "lastVerifiedAt": "2026-09-04T13:33:42.176Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -14948,8 +15067,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Menu",
           "discoveredFrom": "https://www.tomavinos.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:18.263Z",
-          "lastVerifiedAt": "2026-09-04T12:51:18.263Z",
+          "observedAt": "2026-09-04T13:33:42.176Z",
+          "lastVerifiedAt": "2026-09-04T13:33:42.176Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -14960,8 +15079,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Order Online",
           "discoveredFrom": "https://www.tomavinos.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:18.263Z",
-          "lastVerifiedAt": "2026-09-04T12:51:18.263Z",
+          "observedAt": "2026-09-04T13:33:42.176Z",
+          "lastVerifiedAt": "2026-09-04T13:33:42.176Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -14972,8 +15091,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Reserve a Table",
           "discoveredFrom": "https://www.tomavinos.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:18.263Z",
-          "lastVerifiedAt": "2026-09-04T12:51:18.263Z",
+          "observedAt": "2026-09-04T13:33:42.176Z",
+          "lastVerifiedAt": "2026-09-04T13:33:42.176Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -14984,8 +15103,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Menu",
           "discoveredFrom": "https://tomavinos.ca/about",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:18.263Z",
-          "lastVerifiedAt": "2026-09-04T12:51:18.263Z",
+          "observedAt": "2026-09-04T13:33:42.176Z",
+          "lastVerifiedAt": "2026-09-04T13:33:42.176Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -14996,8 +15115,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Menu",
           "discoveredFrom": "https://tomavinos.ca/contact",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:18.263Z",
-          "lastVerifiedAt": "2026-09-04T12:51:18.263Z",
+          "observedAt": "2026-09-04T13:33:42.176Z",
+          "lastVerifiedAt": "2026-09-04T13:33:42.176Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -15013,8 +15132,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Sushi Nami Royale",
       "website": "https://sushinami.ca/",
       "resolvedUrl": "https://sushinami.ca/",
-      "observedAt": "2026-09-04T12:51:09.240Z",
-      "lastVerifiedAt": "2026-09-04T12:51:09.240Z",
+      "observedAt": "2026-09-04T13:33:35.848Z",
+      "lastVerifiedAt": "2026-09-04T13:33:35.848Z",
       "scannedOwnedPages": [
         "https://sushinami.ca/",
         "https://sushinami.ca/",
@@ -15034,8 +15153,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://sushinami.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:09.240Z",
-          "lastVerifiedAt": "2026-09-04T12:51:09.240Z",
+          "observedAt": "2026-09-04T13:33:35.848Z",
+          "lastVerifiedAt": "2026-09-04T13:33:35.848Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -15051,8 +15170,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://sushinami.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:09.240Z",
-          "lastVerifiedAt": "2026-09-04T12:51:09.240Z",
+          "observedAt": "2026-09-04T13:33:35.848Z",
+          "lastVerifiedAt": "2026-09-04T13:33:35.848Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -15068,8 +15187,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://sushinami.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:09.240Z",
-          "lastVerifiedAt": "2026-09-04T12:51:09.240Z",
+          "observedAt": "2026-09-04T13:33:35.848Z",
+          "lastVerifiedAt": "2026-09-04T13:33:35.848Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -15083,8 +15202,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Lunch Menu",
           "discoveredFrom": "https://sushinami.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:09.240Z",
-          "lastVerifiedAt": "2026-09-04T12:51:09.240Z",
+          "observedAt": "2026-09-04T13:33:35.848Z",
+          "lastVerifiedAt": "2026-09-04T13:33:35.848Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -15095,8 +15214,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Take Out Menu",
           "discoveredFrom": "https://sushinami.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:09.240Z",
-          "lastVerifiedAt": "2026-09-04T12:51:09.240Z",
+          "observedAt": "2026-09-04T13:33:35.848Z",
+          "lastVerifiedAt": "2026-09-04T13:33:35.848Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -15107,8 +15226,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Lunch Menu",
           "discoveredFrom": "https://sushinami.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:09.240Z",
-          "lastVerifiedAt": "2026-09-04T12:51:09.240Z",
+          "observedAt": "2026-09-04T13:33:35.848Z",
+          "lastVerifiedAt": "2026-09-04T13:33:35.848Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -15119,8 +15238,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Lunch Menu",
           "discoveredFrom": "https://sushinami.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:09.240Z",
-          "lastVerifiedAt": "2026-09-04T12:51:09.240Z",
+          "observedAt": "2026-09-04T13:33:35.848Z",
+          "lastVerifiedAt": "2026-09-04T13:33:35.848Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -15131,8 +15250,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Lunch Menu",
           "discoveredFrom": "https://sushinami.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:09.240Z",
-          "lastVerifiedAt": "2026-09-04T12:51:09.240Z",
+          "observedAt": "2026-09-04T13:33:35.848Z",
+          "lastVerifiedAt": "2026-09-04T13:33:35.848Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -15143,8 +15262,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Private Events",
           "discoveredFrom": "https://sushinami.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:09.240Z",
-          "lastVerifiedAt": "2026-09-04T12:51:09.240Z",
+          "observedAt": "2026-09-04T13:33:35.848Z",
+          "lastVerifiedAt": "2026-09-04T13:33:35.848Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -15155,8 +15274,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "See Dinner Menu",
           "discoveredFrom": "https://sushinami.ca/downtown-halifax/",
           "associationBasis": "linked_from_official_location_page",
-          "observedAt": "2026-09-04T12:51:09.240Z",
-          "lastVerifiedAt": "2026-09-04T12:51:09.240Z",
+          "observedAt": "2026-09-04T13:33:35.848Z",
+          "lastVerifiedAt": "2026-09-04T13:33:35.848Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -15167,8 +15286,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "See Dinner Menu",
           "discoveredFrom": "https://sushinami.ca/bayers-lake/",
           "associationBasis": "linked_from_official_location_page",
-          "observedAt": "2026-09-04T12:51:09.240Z",
-          "lastVerifiedAt": "2026-09-04T12:51:09.240Z",
+          "observedAt": "2026-09-04T13:33:35.848Z",
+          "lastVerifiedAt": "2026-09-04T13:33:35.848Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -15179,8 +15298,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "See Dinner Menu",
           "discoveredFrom": "https://sushinami.ca/dartmouth-crossing/",
           "associationBasis": "linked_from_official_location_page",
-          "observedAt": "2026-09-04T12:51:09.240Z",
-          "lastVerifiedAt": "2026-09-04T12:51:09.240Z",
+          "observedAt": "2026-09-04T13:33:35.848Z",
+          "lastVerifiedAt": "2026-09-04T13:33:35.848Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -15211,8 +15330,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Donnini's Pizza",
       "website": "https://donninispizza.com/",
       "resolvedUrl": "https://donninispizza.com/",
-      "observedAt": "2026-09-04T12:50:47.931Z",
-      "lastVerifiedAt": "2026-09-04T12:50:47.931Z",
+      "observedAt": "2026-09-04T13:33:12.661Z",
+      "lastVerifiedAt": "2026-09-04T13:33:12.661Z",
       "scannedOwnedPages": [
         "https://donninispizza.com/"
       ],
@@ -15228,8 +15347,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://donninispizza.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:47.931Z",
-          "lastVerifiedAt": "2026-09-04T12:50:47.931Z",
+          "observedAt": "2026-09-04T13:33:12.661Z",
+          "lastVerifiedAt": "2026-09-04T13:33:12.661Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -15245,8 +15364,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://donninispizza.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:47.931Z",
-          "lastVerifiedAt": "2026-09-04T12:50:47.931Z",
+          "observedAt": "2026-09-04T13:33:12.661Z",
+          "lastVerifiedAt": "2026-09-04T13:33:12.661Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -15260,8 +15379,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Order Online",
           "discoveredFrom": "https://donninispizza.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:47.931Z",
-          "lastVerifiedAt": "2026-09-04T12:50:47.931Z",
+          "observedAt": "2026-09-04T13:33:12.661Z",
+          "lastVerifiedAt": "2026-09-04T13:33:12.661Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -15294,9 +15413,11 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Jukai",
       "website": "https://jukairestaurant.com/",
       "resolvedUrl": "https://www.jukairestaurant.com/",
-      "observedAt": "2026-09-04T11:31:22.679Z",
-      "lastVerifiedAt": "2026-09-04T11:31:22.679Z",
-      "scannedOwnedPages": [],
+      "observedAt": "2026-09-04T13:33:20.185Z",
+      "lastVerifiedAt": "2026-09-04T13:33:20.185Z",
+      "scannedOwnedPages": [
+        "https://www.jukairestaurant.com/"
+      ],
       "socialProfiles": [],
       "linkHubs": [],
       "relatedLinks": [
@@ -15306,13 +15427,11 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Order Online",
           "discoveredFrom": "https://www.jukairestaurant.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T11:31:22.679Z",
-          "lastVerifiedAt": "2026-09-04T11:31:22.679Z",
+          "observedAt": "2026-09-04T13:33:20.185Z",
+          "lastVerifiedAt": "2026-09-04T13:33:20.185Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
-          "status": "active",
-          "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-09-04T12:51:47.588Z"
+          "status": "active"
         }
       ],
       "feeds": [],
@@ -15320,16 +15439,15 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
         "https://www.jukairestaurant.com/sitemap.xml"
       ],
       "sourceKind": "official_website_discovery",
-      "reviewState": "verified",
-      "refreshState": "carried_forward_after_refresh_failure"
+      "reviewState": "verified"
     },
     {
       "restaurantId": "osm-node-5584342024-pleasant-street-diner",
       "name": "Pleasant Street Diner",
       "website": "https://pleasantstdiner.com/",
       "resolvedUrl": "https://pleasantstdiner.com/",
-      "observedAt": "2026-09-04T12:51:03.996Z",
-      "lastVerifiedAt": "2026-09-04T12:51:03.996Z",
+      "observedAt": "2026-09-04T13:33:29.648Z",
+      "lastVerifiedAt": "2026-09-04T13:33:29.648Z",
       "scannedOwnedPages": [
         "https://pleasantstdiner.com/"
       ],
@@ -15346,8 +15464,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "HMCS King’s Wardroom",
       "website": "https://ukings.ca/hmcs-kings-wardroom/",
       "resolvedUrl": "https://ukings.ca/campus-community/student-life/the-wardroom/",
-      "observedAt": "2026-09-04T12:50:53.617Z",
-      "lastVerifiedAt": "2026-09-04T12:50:53.617Z",
+      "observedAt": "2026-09-04T13:33:18.986Z",
+      "lastVerifiedAt": "2026-09-04T13:33:18.986Z",
       "scannedOwnedPages": [
         "https://ukings.ca/campus-community/student-life/the-wardroom/",
         "https://ukings.ca/campus-community/about-kings/",
@@ -15366,8 +15484,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://ukings.ca/campus-community/student-life/the-wardroom/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:53.617Z",
-          "lastVerifiedAt": "2026-09-04T12:50:53.617Z",
+          "observedAt": "2026-09-04T13:33:18.986Z",
+          "lastVerifiedAt": "2026-09-04T13:33:18.986Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -15383,8 +15501,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://ukings.ca/campus-community/student-life/the-wardroom/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:53.617Z",
-          "lastVerifiedAt": "2026-09-04T12:50:53.617Z",
+          "observedAt": "2026-09-04T13:33:18.986Z",
+          "lastVerifiedAt": "2026-09-04T13:33:18.986Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -15400,8 +15518,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://ukings.ca/campus-community/student-life/the-wardroom/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:53.617Z",
-          "lastVerifiedAt": "2026-09-04T12:50:53.617Z",
+          "observedAt": "2026-09-04T13:33:18.986Z",
+          "lastVerifiedAt": "2026-09-04T13:33:18.986Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -15417,8 +15535,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://ukings.ca/campus-community/student-life/the-wardroom/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:53.617Z",
-          "lastVerifiedAt": "2026-09-04T12:50:53.617Z",
+          "observedAt": "2026-09-04T13:33:18.986Z",
+          "lastVerifiedAt": "2026-09-04T13:33:18.986Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -15434,8 +15552,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://ukings.ca/campus-community/student-life/the-wardroom/",
           "associationBasis": "jsonld_sameAs",
-          "observedAt": "2026-09-04T12:50:53.617Z",
-          "lastVerifiedAt": "2026-09-04T12:50:53.617Z",
+          "observedAt": "2026-09-04T13:33:18.986Z",
+          "lastVerifiedAt": "2026-09-04T13:33:18.986Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -15449,8 +15567,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Conference & Event Services",
           "discoveredFrom": "https://ukings.ca/campus-community/student-life/the-wardroom/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:53.617Z",
-          "lastVerifiedAt": "2026-09-04T12:50:53.617Z",
+          "observedAt": "2026-09-04T13:33:18.986Z",
+          "lastVerifiedAt": "2026-09-04T13:33:18.986Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -15461,8 +15579,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Campus Tours & Recruitment Events",
           "discoveredFrom": "https://ukings.ca/campus-community/student-life/the-wardroom/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:53.617Z",
-          "lastVerifiedAt": "2026-09-04T12:50:53.617Z",
+          "observedAt": "2026-09-04T13:33:18.986Z",
+          "lastVerifiedAt": "2026-09-04T13:33:18.986Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -15473,8 +15591,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Events at King’s",
           "discoveredFrom": "https://ukings.ca/campus-community/student-life/the-wardroom/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:53.617Z",
-          "lastVerifiedAt": "2026-09-04T12:50:53.617Z",
+          "observedAt": "2026-09-04T13:33:18.986Z",
+          "lastVerifiedAt": "2026-09-04T13:33:18.986Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -15485,8 +15603,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Sexualized Violence Prevention and Response",
           "discoveredFrom": "https://ukings.ca/campus-community/student-life/the-wardroom/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:53.617Z",
-          "lastVerifiedAt": "2026-09-04T12:50:53.617Z",
+          "observedAt": "2026-09-04T13:33:18.986Z",
+          "lastVerifiedAt": "2026-09-04T13:33:18.986Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -15497,8 +15615,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Academic Calendar",
           "discoveredFrom": "https://ukings.ca/campus-community/student-life/the-wardroom/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:53.617Z",
-          "lastVerifiedAt": "2026-09-04T12:50:53.617Z",
+          "observedAt": "2026-09-04T13:33:18.986Z",
+          "lastVerifiedAt": "2026-09-04T13:33:18.986Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -15509,8 +15627,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Events Calendar",
           "discoveredFrom": "https://ukings.ca/campus-community/about-kings/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:53.617Z",
-          "lastVerifiedAt": "2026-09-04T12:50:53.617Z",
+          "observedAt": "2026-09-04T13:33:18.986Z",
+          "lastVerifiedAt": "2026-09-04T13:33:18.986Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -15521,8 +15639,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Events List",
           "discoveredFrom": "https://ukings.ca/campus-community/about-kings/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:53.617Z",
-          "lastVerifiedAt": "2026-09-04T12:50:53.617Z",
+          "observedAt": "2026-09-04T13:33:18.986Z",
+          "lastVerifiedAt": "2026-09-04T13:33:18.986Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -15533,8 +15651,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "King's Events",
           "discoveredFrom": "https://ukings.ca/campus-community/about-kings/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:53.617Z",
-          "lastVerifiedAt": "2026-09-04T12:50:53.617Z",
+          "observedAt": "2026-09-04T13:33:18.986Z",
+          "lastVerifiedAt": "2026-09-04T13:33:18.986Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -15550,8 +15668,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Orso Pub & Grill",
       "website": "https://orsopub.ca/",
       "resolvedUrl": "https://orsopub.ca/",
-      "observedAt": "2026-09-04T12:51:01.883Z",
-      "lastVerifiedAt": "2026-09-04T12:51:01.883Z",
+      "observedAt": "2026-09-04T13:33:27.497Z",
+      "lastVerifiedAt": "2026-09-04T13:33:27.497Z",
       "scannedOwnedPages": [
         "https://orsopub.ca/",
         "https://orsopub.ca/about/",
@@ -15571,8 +15689,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://orsopub.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:01.883Z",
-          "lastVerifiedAt": "2026-09-04T12:51:01.883Z",
+          "observedAt": "2026-09-04T13:33:27.497Z",
+          "lastVerifiedAt": "2026-09-04T13:33:27.497Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -15588,8 +15706,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://orsopub.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:01.883Z",
-          "lastVerifiedAt": "2026-09-04T12:51:01.883Z",
+          "observedAt": "2026-09-04T13:33:27.497Z",
+          "lastVerifiedAt": "2026-09-04T13:33:27.497Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -15603,8 +15721,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Book table",
           "discoveredFrom": "https://orsopub.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:01.883Z",
-          "lastVerifiedAt": "2026-09-04T12:51:01.883Z",
+          "observedAt": "2026-09-04T13:33:27.497Z",
+          "lastVerifiedAt": "2026-09-04T13:33:27.497Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -15615,8 +15733,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Full Menu",
           "discoveredFrom": "https://orsopub.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:01.883Z",
-          "lastVerifiedAt": "2026-09-04T12:51:01.883Z",
+          "observedAt": "2026-09-04T13:33:27.497Z",
+          "lastVerifiedAt": "2026-09-04T13:33:27.497Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -15627,8 +15745,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Drinks Menu",
           "discoveredFrom": "https://orsopub.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:01.883Z",
-          "lastVerifiedAt": "2026-09-04T12:51:01.883Z",
+          "observedAt": "2026-09-04T13:33:27.497Z",
+          "lastVerifiedAt": "2026-09-04T13:33:27.497Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -15646,8 +15764,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Fujiyama",
       "website": "http://www.sushifujiyama.com/",
       "resolvedUrl": "http://www.sushifujiyama.com/",
-      "observedAt": "2026-09-04T12:50:49.600Z",
-      "lastVerifiedAt": "2026-09-04T12:50:49.600Z",
+      "observedAt": "2026-09-04T13:33:14.537Z",
+      "lastVerifiedAt": "2026-09-04T13:33:14.537Z",
       "scannedOwnedPages": [
         "http://www.sushifujiyama.com/"
       ],
@@ -15664,8 +15782,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Pizza Pizza",
       "website": "https://www.pizzapizza.ca/",
       "resolvedUrl": "https://www.pizzapizza.ca/",
-      "observedAt": "2026-09-04T12:51:03.262Z",
-      "lastVerifiedAt": "2026-09-04T12:51:03.262Z",
+      "observedAt": "2026-09-04T13:33:29.439Z",
+      "lastVerifiedAt": "2026-09-04T13:33:29.439Z",
       "scannedOwnedPages": [
         "https://www.pizzapizza.ca/"
       ],
@@ -15685,8 +15803,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Mirchi Tandoor",
       "website": "https://mirchitandoor.com/",
       "resolvedUrl": "https://mirchitandoor.com/",
-      "observedAt": "2026-09-04T12:50:59.818Z",
-      "lastVerifiedAt": "2026-09-04T12:50:59.818Z",
+      "observedAt": "2026-09-04T13:33:25.601Z",
+      "lastVerifiedAt": "2026-09-04T13:33:25.601Z",
       "scannedOwnedPages": [
         "https://mirchitandoor.com/",
         "https://mirchitandoor.com/location/"
@@ -15700,8 +15818,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Order Online",
           "discoveredFrom": "https://mirchitandoor.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:59.818Z",
-          "lastVerifiedAt": "2026-09-04T12:50:59.818Z",
+          "observedAt": "2026-09-04T13:33:25.601Z",
+          "lastVerifiedAt": "2026-09-04T13:33:25.601Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -15712,8 +15830,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Menu",
           "discoveredFrom": "https://mirchitandoor.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:59.818Z",
-          "lastVerifiedAt": "2026-09-04T12:50:59.818Z",
+          "observedAt": "2026-09-04T13:33:25.601Z",
+          "lastVerifiedAt": "2026-09-04T13:33:25.601Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -15731,8 +15849,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "aFrite",
       "website": "https://afrite.ca/",
       "resolvedUrl": "https://afrite.ca/",
-      "observedAt": "2026-09-04T12:50:43.811Z",
-      "lastVerifiedAt": "2026-09-04T12:50:43.811Z",
+      "observedAt": "2026-09-04T13:33:07.974Z",
+      "lastVerifiedAt": "2026-09-04T13:33:07.974Z",
       "scannedOwnedPages": [
         "https://afrite.ca/",
         "https://afrite.ca/about/",
@@ -15752,8 +15870,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://afrite.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:43.811Z",
-          "lastVerifiedAt": "2026-09-04T12:50:43.811Z",
+          "observedAt": "2026-09-04T13:33:07.974Z",
+          "lastVerifiedAt": "2026-09-04T13:33:07.974Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -15769,8 +15887,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://afrite.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:43.811Z",
-          "lastVerifiedAt": "2026-09-04T12:50:43.811Z",
+          "observedAt": "2026-09-04T13:33:07.974Z",
+          "lastVerifiedAt": "2026-09-04T13:33:07.974Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -15786,8 +15904,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://afrite.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:43.811Z",
-          "lastVerifiedAt": "2026-09-04T12:50:43.811Z",
+          "observedAt": "2026-09-04T13:33:07.974Z",
+          "lastVerifiedAt": "2026-09-04T13:33:07.974Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -15803,8 +15921,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://afrite.ca/",
           "associationBasis": "jsonld_sameAs",
-          "observedAt": "2026-09-04T12:50:43.811Z",
-          "lastVerifiedAt": "2026-09-04T12:50:43.811Z",
+          "observedAt": "2026-09-04T13:33:07.974Z",
+          "lastVerifiedAt": "2026-09-04T13:33:07.974Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -15820,8 +15938,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://afrite.ca/",
           "associationBasis": "jsonld_sameAs",
-          "observedAt": "2026-09-04T12:50:43.811Z",
-          "lastVerifiedAt": "2026-09-04T12:50:43.811Z",
+          "observedAt": "2026-09-04T13:33:07.974Z",
+          "lastVerifiedAt": "2026-09-04T13:33:07.974Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -15837,8 +15955,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://afrite.ca/",
           "associationBasis": "jsonld_sameAs",
-          "observedAt": "2026-09-04T12:50:43.811Z",
-          "lastVerifiedAt": "2026-09-04T12:50:43.811Z",
+          "observedAt": "2026-09-04T13:33:07.974Z",
+          "lastVerifiedAt": "2026-09-04T13:33:07.974Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -15852,8 +15970,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Menu",
           "discoveredFrom": "https://afrite.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:43.811Z",
-          "lastVerifiedAt": "2026-09-04T12:50:43.811Z",
+          "observedAt": "2026-09-04T13:33:07.974Z",
+          "lastVerifiedAt": "2026-09-04T13:33:07.974Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -15864,8 +15982,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Call for Reservations",
           "discoveredFrom": "https://afrite.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:43.811Z",
-          "lastVerifiedAt": "2026-09-04T12:50:43.811Z",
+          "observedAt": "2026-09-04T13:33:07.974Z",
+          "lastVerifiedAt": "2026-09-04T13:33:07.974Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -15896,8 +16014,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Fan's Chinese Restaurant",
       "website": "https://www.fansrestaurant.ca/",
       "resolvedUrl": "https://www.fansrestaurant.ca/",
-      "observedAt": "2026-09-04T12:50:49.251Z",
-      "lastVerifiedAt": "2026-09-04T12:50:49.251Z",
+      "observedAt": "2026-09-04T13:33:14.316Z",
+      "lastVerifiedAt": "2026-09-04T13:33:14.316Z",
       "scannedOwnedPages": [
         "https://www.fansrestaurant.ca/"
       ],
@@ -15913,8 +16031,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.fansrestaurant.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:49.251Z",
-          "lastVerifiedAt": "2026-09-04T12:50:49.251Z",
+          "observedAt": "2026-09-04T13:33:14.316Z",
+          "lastVerifiedAt": "2026-09-04T13:33:14.316Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -15930,8 +16048,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.fansrestaurant.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:49.251Z",
-          "lastVerifiedAt": "2026-09-04T12:50:49.251Z",
+          "observedAt": "2026-09-04T13:33:14.316Z",
+          "lastVerifiedAt": "2026-09-04T13:33:14.316Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -15945,8 +16063,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Dim Sum Menu",
           "discoveredFrom": "https://www.fansrestaurant.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:49.251Z",
-          "lastVerifiedAt": "2026-09-04T12:50:49.251Z",
+          "observedAt": "2026-09-04T13:33:14.316Z",
+          "lastVerifiedAt": "2026-09-04T13:33:14.316Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -15957,8 +16075,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Fusion Menu",
           "discoveredFrom": "https://www.fansrestaurant.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:49.251Z",
-          "lastVerifiedAt": "2026-09-04T12:50:49.251Z",
+          "observedAt": "2026-09-04T13:33:14.316Z",
+          "lastVerifiedAt": "2026-09-04T13:33:14.316Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -15969,8 +16087,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Book a Table",
           "discoveredFrom": "https://www.fansrestaurant.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:49.251Z",
-          "lastVerifiedAt": "2026-09-04T12:50:49.251Z",
+          "observedAt": "2026-09-04T13:33:14.316Z",
+          "lastVerifiedAt": "2026-09-04T13:33:14.316Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -15981,8 +16099,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Order Online",
           "discoveredFrom": "https://www.fansrestaurant.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:49.251Z",
-          "lastVerifiedAt": "2026-09-04T12:50:49.251Z",
+          "observedAt": "2026-09-04T13:33:14.316Z",
+          "lastVerifiedAt": "2026-09-04T13:33:14.316Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -16008,8 +16126,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "The Mercantile Social",
       "website": "https://themercantilesocial.ca/",
       "resolvedUrl": "https://www.themercantilesocial.com/",
-      "observedAt": "2026-09-04T12:51:12.911Z",
-      "lastVerifiedAt": "2026-09-04T12:51:12.911Z",
+      "observedAt": "2026-09-04T13:33:39.182Z",
+      "lastVerifiedAt": "2026-09-04T13:33:39.182Z",
       "scannedOwnedPages": [
         "https://www.themercantilesocial.com/"
       ],
@@ -16025,8 +16143,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.themercantilesocial.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:12.911Z",
-          "lastVerifiedAt": "2026-09-04T12:51:12.911Z",
+          "observedAt": "2026-09-04T13:33:39.182Z",
+          "lastVerifiedAt": "2026-09-04T13:33:39.182Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -16046,8 +16164,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Mexi's",
       "website": "https://www.mexicalirosas.com/halifax/",
       "resolvedUrl": "https://www.mexicalirosas.com/halifax/",
-      "observedAt": "2026-09-04T12:50:59.634Z",
-      "lastVerifiedAt": "2026-09-04T12:50:59.634Z",
+      "observedAt": "2026-09-04T13:33:24.975Z",
+      "lastVerifiedAt": "2026-09-04T13:33:24.975Z",
       "scannedOwnedPages": [
         "https://www.mexicalirosas.com/halifax/",
         "https://www.mexicalirosas.com/contact-us/",
@@ -16065,8 +16183,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.mexicalirosas.com/halifax/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:59.634Z",
-          "lastVerifiedAt": "2026-09-04T12:50:59.634Z",
+          "observedAt": "2026-09-04T13:33:24.975Z",
+          "lastVerifiedAt": "2026-09-04T13:33:24.975Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -16082,8 +16200,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.mexicalirosas.com/halifax/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:59.634Z",
-          "lastVerifiedAt": "2026-09-04T12:50:59.634Z",
+          "observedAt": "2026-09-04T13:33:24.975Z",
+          "lastVerifiedAt": "2026-09-04T13:33:24.975Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -16099,8 +16217,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.mexicalirosas.com/halifax/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:59.634Z",
-          "lastVerifiedAt": "2026-09-04T12:50:59.634Z",
+          "observedAt": "2026-09-04T13:33:24.975Z",
+          "lastVerifiedAt": "2026-09-04T13:33:24.975Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -16114,8 +16232,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Order Online",
           "discoveredFrom": "https://www.mexicalirosas.com/halifax/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:59.634Z",
-          "lastVerifiedAt": "2026-09-04T12:50:59.634Z",
+          "observedAt": "2026-09-04T13:33:24.975Z",
+          "lastVerifiedAt": "2026-09-04T13:33:24.975Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -16126,8 +16244,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Book a Table Book a Table",
           "discoveredFrom": "https://www.mexicalirosas.com/halifax/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:59.634Z",
-          "lastVerifiedAt": "2026-09-04T12:50:59.634Z",
+          "observedAt": "2026-09-04T13:33:24.975Z",
+          "lastVerifiedAt": "2026-09-04T13:33:24.975Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -16138,8 +16256,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Lunch Menu",
           "discoveredFrom": "https://www.mexicalirosas.com/halifax/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:59.634Z",
-          "lastVerifiedAt": "2026-09-04T12:50:59.634Z",
+          "observedAt": "2026-09-04T13:33:24.975Z",
+          "lastVerifiedAt": "2026-09-04T13:33:24.975Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -16150,8 +16268,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Dinner Menu",
           "discoveredFrom": "https://www.mexicalirosas.com/halifax/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:59.634Z",
-          "lastVerifiedAt": "2026-09-04T12:50:59.634Z",
+          "observedAt": "2026-09-04T13:33:24.975Z",
+          "lastVerifiedAt": "2026-09-04T13:33:24.975Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -16162,8 +16280,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Kids Menu",
           "discoveredFrom": "https://www.mexicalirosas.com/halifax/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:59.634Z",
-          "lastVerifiedAt": "2026-09-04T12:50:59.634Z",
+          "observedAt": "2026-09-04T13:33:24.975Z",
+          "lastVerifiedAt": "2026-09-04T13:33:24.975Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -16174,8 +16292,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Lunch Menu",
           "discoveredFrom": "https://www.mexicalirosas.com/halifax/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:59.634Z",
-          "lastVerifiedAt": "2026-09-04T12:50:59.634Z",
+          "observedAt": "2026-09-04T13:33:24.975Z",
+          "lastVerifiedAt": "2026-09-04T13:33:24.975Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -16186,8 +16304,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Dinner Menu",
           "discoveredFrom": "https://www.mexicalirosas.com/halifax/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:59.634Z",
-          "lastVerifiedAt": "2026-09-04T12:50:59.634Z",
+          "observedAt": "2026-09-04T13:33:24.975Z",
+          "lastVerifiedAt": "2026-09-04T13:33:24.975Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -16198,8 +16316,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Kids Menu",
           "discoveredFrom": "https://www.mexicalirosas.com/halifax/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:59.634Z",
-          "lastVerifiedAt": "2026-09-04T12:50:59.634Z",
+          "observedAt": "2026-09-04T13:33:24.975Z",
+          "lastVerifiedAt": "2026-09-04T13:33:24.975Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -16210,8 +16328,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Lunch Menu",
           "discoveredFrom": "https://www.mexicalirosas.com/halifax/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:59.634Z",
-          "lastVerifiedAt": "2026-09-04T12:50:59.634Z",
+          "observedAt": "2026-09-04T13:33:24.975Z",
+          "lastVerifiedAt": "2026-09-04T13:33:24.975Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -16222,8 +16340,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Dinner Menu",
           "discoveredFrom": "https://www.mexicalirosas.com/halifax/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:59.634Z",
-          "lastVerifiedAt": "2026-09-04T12:50:59.634Z",
+          "observedAt": "2026-09-04T13:33:24.975Z",
+          "lastVerifiedAt": "2026-09-04T13:33:24.975Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -16234,8 +16352,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Kids Menu",
           "discoveredFrom": "https://www.mexicalirosas.com/halifax/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:59.634Z",
-          "lastVerifiedAt": "2026-09-04T12:50:59.634Z",
+          "observedAt": "2026-09-04T13:33:24.975Z",
+          "lastVerifiedAt": "2026-09-04T13:33:24.975Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -16246,8 +16364,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Lunch Menu",
           "discoveredFrom": "https://www.mexicalirosas.com/halifax/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:59.634Z",
-          "lastVerifiedAt": "2026-09-04T12:50:59.634Z",
+          "observedAt": "2026-09-04T13:33:24.975Z",
+          "lastVerifiedAt": "2026-09-04T13:33:24.975Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -16258,8 +16376,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Dinner Menu",
           "discoveredFrom": "https://www.mexicalirosas.com/halifax/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:59.634Z",
-          "lastVerifiedAt": "2026-09-04T12:50:59.634Z",
+          "observedAt": "2026-09-04T13:33:24.975Z",
+          "lastVerifiedAt": "2026-09-04T13:33:24.975Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -16270,8 +16388,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Kids Menu",
           "discoveredFrom": "https://www.mexicalirosas.com/halifax/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:59.634Z",
-          "lastVerifiedAt": "2026-09-04T12:50:59.634Z",
+          "observedAt": "2026-09-04T13:33:24.975Z",
+          "lastVerifiedAt": "2026-09-04T13:33:24.975Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -16282,8 +16400,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Dinner Menu",
           "discoveredFrom": "https://www.mexicalirosas.com/halifax/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:59.634Z",
-          "lastVerifiedAt": "2026-09-04T12:50:59.634Z",
+          "observedAt": "2026-09-04T13:33:24.975Z",
+          "lastVerifiedAt": "2026-09-04T13:33:24.975Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -16294,8 +16412,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Kids Menu",
           "discoveredFrom": "https://www.mexicalirosas.com/halifax/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:59.634Z",
-          "lastVerifiedAt": "2026-09-04T12:50:59.634Z",
+          "observedAt": "2026-09-04T13:33:24.975Z",
+          "lastVerifiedAt": "2026-09-04T13:33:24.975Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -16306,8 +16424,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Lunch Menu",
           "discoveredFrom": "https://www.mexicalirosas.com/halifax/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:59.634Z",
-          "lastVerifiedAt": "2026-09-04T12:50:59.634Z",
+          "observedAt": "2026-09-04T13:33:24.975Z",
+          "lastVerifiedAt": "2026-09-04T13:33:24.975Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -16318,8 +16436,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Dinner Menu",
           "discoveredFrom": "https://www.mexicalirosas.com/halifax/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:59.634Z",
-          "lastVerifiedAt": "2026-09-04T12:50:59.634Z",
+          "observedAt": "2026-09-04T13:33:24.975Z",
+          "lastVerifiedAt": "2026-09-04T13:33:24.975Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -16330,8 +16448,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Kids Menu",
           "discoveredFrom": "https://www.mexicalirosas.com/halifax/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:59.634Z",
-          "lastVerifiedAt": "2026-09-04T12:50:59.634Z",
+          "observedAt": "2026-09-04T13:33:24.975Z",
+          "lastVerifiedAt": "2026-09-04T13:33:24.975Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -16342,8 +16460,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Lunch Menu",
           "discoveredFrom": "https://www.mexicalirosas.com/halifax/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:59.634Z",
-          "lastVerifiedAt": "2026-09-04T12:50:59.634Z",
+          "observedAt": "2026-09-04T13:33:24.975Z",
+          "lastVerifiedAt": "2026-09-04T13:33:24.975Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -16354,8 +16472,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Dinner Menu",
           "discoveredFrom": "https://www.mexicalirosas.com/halifax/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:59.634Z",
-          "lastVerifiedAt": "2026-09-04T12:50:59.634Z",
+          "observedAt": "2026-09-04T13:33:24.975Z",
+          "lastVerifiedAt": "2026-09-04T13:33:24.975Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -16366,8 +16484,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Kids Menu",
           "discoveredFrom": "https://www.mexicalirosas.com/halifax/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:59.634Z",
-          "lastVerifiedAt": "2026-09-04T12:50:59.634Z",
+          "observedAt": "2026-09-04T13:33:24.975Z",
+          "lastVerifiedAt": "2026-09-04T13:33:24.975Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -16378,8 +16496,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Lunch Menu",
           "discoveredFrom": "https://www.mexicalirosas.com/halifax/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:59.634Z",
-          "lastVerifiedAt": "2026-09-04T12:50:59.634Z",
+          "observedAt": "2026-09-04T13:33:24.975Z",
+          "lastVerifiedAt": "2026-09-04T13:33:24.975Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -16390,8 +16508,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Dinner Menu",
           "discoveredFrom": "https://www.mexicalirosas.com/halifax/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:59.634Z",
-          "lastVerifiedAt": "2026-09-04T12:50:59.634Z",
+          "observedAt": "2026-09-04T13:33:24.975Z",
+          "lastVerifiedAt": "2026-09-04T13:33:24.975Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -16402,8 +16520,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Kids Menu",
           "discoveredFrom": "https://www.mexicalirosas.com/halifax/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:59.634Z",
-          "lastVerifiedAt": "2026-09-04T12:50:59.634Z",
+          "observedAt": "2026-09-04T13:33:24.975Z",
+          "lastVerifiedAt": "2026-09-04T13:33:24.975Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -16436,8 +16554,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Chkn Chop",
       "website": "https://www.chknchop.com/",
       "resolvedUrl": "https://www.chknchop.com/",
-      "observedAt": "2026-09-04T12:50:46.882Z",
-      "lastVerifiedAt": "2026-09-04T12:50:46.882Z",
+      "observedAt": "2026-09-04T13:33:11.405Z",
+      "lastVerifiedAt": "2026-09-04T13:33:11.405Z",
       "scannedOwnedPages": [
         "https://www.chknchop.com/",
         "https://www.chknchop.com/contact",
@@ -16452,8 +16570,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Menu",
           "discoveredFrom": "https://www.chknchop.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:46.882Z",
-          "lastVerifiedAt": "2026-09-04T12:50:46.882Z",
+          "observedAt": "2026-09-04T13:33:11.405Z",
+          "lastVerifiedAt": "2026-09-04T13:33:11.405Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -16464,8 +16582,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "ordering",
           "discoveredFrom": "https://www.chknchop.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:46.882Z",
-          "lastVerifiedAt": "2026-09-04T12:50:46.882Z",
+          "observedAt": "2026-09-04T13:33:11.405Z",
+          "lastVerifiedAt": "2026-09-04T13:33:11.405Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -16491,8 +16609,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Cut Contemporary Steak House & Urban Grill",
       "website": "https://www.cutsteakhouse.ca/",
       "resolvedUrl": "https://www.rcr.ca/restaurants/cut-steakhouse/",
-      "observedAt": "2026-09-04T12:50:47.555Z",
-      "lastVerifiedAt": "2026-09-04T12:50:47.555Z",
+      "observedAt": "2026-09-04T13:33:12.187Z",
+      "lastVerifiedAt": "2026-09-04T13:33:12.187Z",
       "scannedOwnedPages": [
         "https://www.rcr.ca/restaurants/cut-steakhouse/",
         "https://www.rcr.ca/restaurants/",
@@ -16512,8 +16630,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.rcr.ca/restaurants/cut-steakhouse/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:47.555Z",
-          "lastVerifiedAt": "2026-09-04T12:50:47.555Z",
+          "observedAt": "2026-09-04T13:33:12.187Z",
+          "lastVerifiedAt": "2026-09-04T13:33:12.187Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -16529,8 +16647,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.rcr.ca/restaurants/cut-steakhouse/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:47.555Z",
-          "lastVerifiedAt": "2026-09-04T12:50:47.555Z",
+          "observedAt": "2026-09-04T13:33:12.187Z",
+          "lastVerifiedAt": "2026-09-04T13:33:12.187Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -16546,8 +16664,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.rcr.ca/restaurants/cut-steakhouse/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:47.555Z",
-          "lastVerifiedAt": "2026-09-04T12:50:47.555Z",
+          "observedAt": "2026-09-04T13:33:12.187Z",
+          "lastVerifiedAt": "2026-09-04T13:33:12.187Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -16563,8 +16681,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.rcr.ca/restaurants/agricola-street-brasserie/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:47.555Z",
-          "lastVerifiedAt": "2026-09-04T12:50:47.555Z",
+          "observedAt": "2026-09-04T13:33:12.187Z",
+          "lastVerifiedAt": "2026-09-04T13:33:12.187Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -16580,8 +16698,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.rcr.ca/restaurants/agricola-street-brasserie/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:47.555Z",
-          "lastVerifiedAt": "2026-09-04T12:50:47.555Z",
+          "observedAt": "2026-09-04T13:33:12.187Z",
+          "lastVerifiedAt": "2026-09-04T13:33:12.187Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -16595,8 +16713,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Dinner Menu",
           "discoveredFrom": "https://www.rcr.ca/restaurants/cut-steakhouse/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:47.555Z",
-          "lastVerifiedAt": "2026-09-04T12:50:47.555Z",
+          "observedAt": "2026-09-04T13:33:12.187Z",
+          "lastVerifiedAt": "2026-09-04T13:33:12.187Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -16607,8 +16725,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Dinner Menu",
           "discoveredFrom": "https://www.rcr.ca/restaurants/agricola-street-brasserie/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:47.555Z",
-          "lastVerifiedAt": "2026-09-04T12:50:47.555Z",
+          "observedAt": "2026-09-04T13:33:12.187Z",
+          "lastVerifiedAt": "2026-09-04T13:33:12.187Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -16627,8 +16745,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Real Fake Meats",
       "website": "https://www.realfakemeats.com/",
       "resolvedUrl": "https://www.realfakemeats.com/",
-      "observedAt": "2026-09-04T12:51:04.343Z",
-      "lastVerifiedAt": "2026-09-04T12:51:04.343Z",
+      "observedAt": "2026-09-04T13:33:30.333Z",
+      "lastVerifiedAt": "2026-09-04T13:33:30.333Z",
       "scannedOwnedPages": [
         "https://www.realfakemeats.com/",
         "https://www.realfakemeats.com/contact",
@@ -16646,8 +16764,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.realfakemeats.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:04.343Z",
-          "lastVerifiedAt": "2026-09-04T12:51:04.343Z",
+          "observedAt": "2026-09-04T13:33:30.333Z",
+          "lastVerifiedAt": "2026-09-04T13:33:30.333Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -16661,8 +16779,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Menus",
           "discoveredFrom": "https://www.realfakemeats.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:04.343Z",
-          "lastVerifiedAt": "2026-09-04T12:51:04.343Z",
+          "observedAt": "2026-09-04T13:33:30.333Z",
+          "lastVerifiedAt": "2026-09-04T13:33:30.333Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -16673,8 +16791,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Order Online Now! (Local Pickup & Delivery)",
           "discoveredFrom": "https://www.realfakemeats.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:04.343Z",
-          "lastVerifiedAt": "2026-09-04T12:51:04.343Z",
+          "observedAt": "2026-09-04T13:33:30.333Z",
+          "lastVerifiedAt": "2026-09-04T13:33:30.333Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -16700,8 +16818,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Springhouse Market",
       "website": "https://eatspringhouse.com/",
       "resolvedUrl": "https://www.eatspringhouse.com/",
-      "observedAt": "2026-09-04T12:51:06.882Z",
-      "lastVerifiedAt": "2026-09-04T12:51:06.882Z",
+      "observedAt": "2026-09-04T13:33:33.295Z",
+      "lastVerifiedAt": "2026-09-04T13:33:33.295Z",
       "scannedOwnedPages": [
         "https://www.eatspringhouse.com/"
       ],
@@ -16720,8 +16838,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Kajohn Thai",
       "website": "https://www.kajohnthairestaurant.ca/",
       "resolvedUrl": "https://www.kajohnthairestaurant.ca/",
-      "observedAt": "2026-09-04T12:50:55.653Z",
-      "lastVerifiedAt": "2026-09-04T12:50:55.653Z",
+      "observedAt": "2026-09-04T13:33:20.315Z",
+      "lastVerifiedAt": "2026-09-04T13:33:20.315Z",
       "scannedOwnedPages": [
         "https://www.kajohnthairestaurant.ca/",
         "https://www.kajohnthairestaurant.ca/about-us"
@@ -16738,8 +16856,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.kajohnthairestaurant.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:55.653Z",
-          "lastVerifiedAt": "2026-09-04T12:50:55.653Z",
+          "observedAt": "2026-09-04T13:33:20.315Z",
+          "lastVerifiedAt": "2026-09-04T13:33:20.315Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -16755,8 +16873,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.kajohnthairestaurant.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:55.653Z",
-          "lastVerifiedAt": "2026-09-04T12:50:55.653Z",
+          "observedAt": "2026-09-04T13:33:20.315Z",
+          "lastVerifiedAt": "2026-09-04T13:33:20.315Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -16770,8 +16888,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "MENU",
           "discoveredFrom": "https://www.kajohnthairestaurant.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:55.653Z",
-          "lastVerifiedAt": "2026-09-04T12:50:55.653Z",
+          "observedAt": "2026-09-04T13:33:20.315Z",
+          "lastVerifiedAt": "2026-09-04T13:33:20.315Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -16797,8 +16915,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "New Wing Wah",
       "website": "https://newwingwah.ca/",
       "resolvedUrl": "https://newwingwah.ca/",
-      "observedAt": "2026-09-04T12:51:01.550Z",
-      "lastVerifiedAt": "2026-09-04T12:51:01.550Z",
+      "observedAt": "2026-09-04T13:33:27.166Z",
+      "lastVerifiedAt": "2026-09-04T13:33:27.166Z",
       "scannedOwnedPages": [
         "https://newwingwah.ca/",
         "https://newwingwah.ca/contact.html"
@@ -16812,8 +16930,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Menu",
           "discoveredFrom": "https://newwingwah.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:01.550Z",
-          "lastVerifiedAt": "2026-09-04T12:51:01.550Z",
+          "observedAt": "2026-09-04T13:33:27.166Z",
+          "lastVerifiedAt": "2026-09-04T13:33:27.166Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -16829,8 +16947,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Hop Sing Restaurant",
       "website": "https://hopsingrestaurant.ca/",
       "resolvedUrl": "https://hopsingrestaurant.ca/",
-      "observedAt": "2026-09-04T12:50:53.932Z",
-      "lastVerifiedAt": "2026-09-04T12:50:53.932Z",
+      "observedAt": "2026-09-04T13:33:19.046Z",
+      "lastVerifiedAt": "2026-09-04T13:33:19.046Z",
       "scannedOwnedPages": [
         "https://hopsingrestaurant.ca/",
         "https://hopsingrestaurant.ca/",
@@ -16849,8 +16967,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://hopsingrestaurant.ca/contact",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:53.932Z",
-          "lastVerifiedAt": "2026-09-04T12:50:53.932Z",
+          "observedAt": "2026-09-04T13:33:19.046Z",
+          "lastVerifiedAt": "2026-09-04T13:33:19.046Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -16864,8 +16982,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Main Menu",
           "discoveredFrom": "https://hopsingrestaurant.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:53.932Z",
-          "lastVerifiedAt": "2026-09-04T12:50:53.932Z",
+          "observedAt": "2026-09-04T13:33:19.046Z",
+          "lastVerifiedAt": "2026-09-04T13:33:19.046Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -16881,8 +16999,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Antojo Tacos + Tequila",
       "website": "https://antojo.ca/",
       "resolvedUrl": "https://antojo.ca/",
-      "observedAt": "2026-09-04T12:50:43.940Z",
-      "lastVerifiedAt": "2026-09-04T12:50:43.940Z",
+      "observedAt": "2026-09-04T13:33:08.002Z",
+      "lastVerifiedAt": "2026-09-04T13:33:08.002Z",
       "scannedOwnedPages": [
         "https://antojo.ca/",
         "https://antojo.ca/"
@@ -16899,8 +17017,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://antojo.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:43.940Z",
-          "lastVerifiedAt": "2026-09-04T12:50:43.940Z",
+          "observedAt": "2026-09-04T13:33:08.002Z",
+          "lastVerifiedAt": "2026-09-04T13:33:08.002Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -16916,8 +17034,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://antojo.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:43.940Z",
-          "lastVerifiedAt": "2026-09-04T12:50:43.940Z",
+          "observedAt": "2026-09-04T13:33:08.002Z",
+          "lastVerifiedAt": "2026-09-04T13:33:08.002Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -16933,8 +17051,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://antojo.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:43.940Z",
-          "lastVerifiedAt": "2026-09-04T12:50:43.940Z",
+          "observedAt": "2026-09-04T13:33:08.002Z",
+          "lastVerifiedAt": "2026-09-04T13:33:08.002Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -16948,8 +17066,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Menus",
           "discoveredFrom": "https://antojo.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:43.940Z",
-          "lastVerifiedAt": "2026-09-04T12:50:43.940Z",
+          "observedAt": "2026-09-04T13:33:08.002Z",
+          "lastVerifiedAt": "2026-09-04T13:33:08.002Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -16960,8 +17078,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Reserve",
           "discoveredFrom": "https://antojo.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:43.940Z",
-          "lastVerifiedAt": "2026-09-04T12:50:43.940Z",
+          "observedAt": "2026-09-04T13:33:08.002Z",
+          "lastVerifiedAt": "2026-09-04T13:33:08.002Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -16972,8 +17090,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "food & dessert menu",
           "discoveredFrom": "https://antojo.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:43.940Z",
-          "lastVerifiedAt": "2026-09-04T12:50:43.940Z",
+          "observedAt": "2026-09-04T13:33:08.002Z",
+          "lastVerifiedAt": "2026-09-04T13:33:08.002Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -16984,8 +17102,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "drink menu",
           "discoveredFrom": "https://antojo.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:43.940Z",
-          "lastVerifiedAt": "2026-09-04T12:50:43.940Z",
+          "observedAt": "2026-09-04T13:33:08.002Z",
+          "lastVerifiedAt": "2026-09-04T13:33:08.002Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -17018,8 +17136,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Brawta Jamaican Jerk Joint",
       "website": "https://brawtajerk.ca/",
       "resolvedUrl": "https://brawtajerk.ca/",
-      "observedAt": "2026-09-04T12:50:45.183Z",
-      "lastVerifiedAt": "2026-09-04T12:50:45.183Z",
+      "observedAt": "2026-09-04T13:33:09.666Z",
+      "lastVerifiedAt": "2026-09-04T13:33:09.666Z",
       "scannedOwnedPages": [
         "https://brawtajerk.ca/",
         "https://brawtajerk.ca/our-story",
@@ -17037,8 +17155,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://brawtajerk.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:45.183Z",
-          "lastVerifiedAt": "2026-09-04T12:50:45.183Z",
+          "observedAt": "2026-09-04T13:33:09.666Z",
+          "lastVerifiedAt": "2026-09-04T13:33:09.666Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -17052,8 +17170,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "ORDER HERE",
           "discoveredFrom": "https://brawtajerk.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:45.183Z",
-          "lastVerifiedAt": "2026-09-04T12:50:45.183Z",
+          "observedAt": "2026-09-04T13:33:09.666Z",
+          "lastVerifiedAt": "2026-09-04T13:33:09.666Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -17064,8 +17182,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Grafton St Menu",
           "discoveredFrom": "https://brawtajerk.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:45.183Z",
-          "lastVerifiedAt": "2026-09-04T12:50:45.183Z",
+          "observedAt": "2026-09-04T13:33:09.666Z",
+          "lastVerifiedAt": "2026-09-04T13:33:09.666Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -17076,8 +17194,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Order Now",
           "discoveredFrom": "https://brawtajerk.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:45.183Z",
-          "lastVerifiedAt": "2026-09-04T12:50:45.183Z",
+          "observedAt": "2026-09-04T13:33:09.666Z",
+          "lastVerifiedAt": "2026-09-04T13:33:09.666Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -17095,8 +17213,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Tim Hortons",
       "website": "https://www.timhortons.com/",
       "resolvedUrl": "https://www.timhortons.com/",
-      "observedAt": "2026-09-04T12:51:16.829Z",
-      "lastVerifiedAt": "2026-09-04T12:51:16.829Z",
+      "observedAt": "2026-09-04T13:33:41.096Z",
+      "lastVerifiedAt": "2026-09-04T13:33:41.096Z",
       "scannedOwnedPages": [
         "https://www.timhortons.com/"
       ],
@@ -17113,8 +17231,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Ela Greek Taverna",
       "website": "https://elagreektaverna.com/",
       "resolvedUrl": "https://elagreektaverna.com/",
-      "observedAt": "2026-09-04T12:50:49.159Z",
-      "lastVerifiedAt": "2026-09-04T12:50:49.159Z",
+      "observedAt": "2026-09-04T13:33:14.089Z",
+      "lastVerifiedAt": "2026-09-04T13:33:14.089Z",
       "scannedOwnedPages": [
         "https://elagreektaverna.com/",
         "https://elagreektaverna.com/about/",
@@ -17132,8 +17250,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://elagreektaverna.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:49.159Z",
-          "lastVerifiedAt": "2026-09-04T12:50:49.159Z",
+          "observedAt": "2026-09-04T13:33:14.089Z",
+          "lastVerifiedAt": "2026-09-04T13:33:14.089Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -17149,8 +17267,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://elagreektaverna.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:49.159Z",
-          "lastVerifiedAt": "2026-09-04T12:50:49.159Z",
+          "observedAt": "2026-09-04T13:33:14.089Z",
+          "lastVerifiedAt": "2026-09-04T13:33:14.089Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -17166,8 +17284,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://elagreektaverna.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:49.159Z",
-          "lastVerifiedAt": "2026-09-04T12:50:49.159Z",
+          "observedAt": "2026-09-04T13:33:14.089Z",
+          "lastVerifiedAt": "2026-09-04T13:33:14.089Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -17181,8 +17299,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Menu",
           "discoveredFrom": "https://elagreektaverna.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:49.159Z",
-          "lastVerifiedAt": "2026-09-04T12:50:49.159Z",
+          "observedAt": "2026-09-04T13:33:14.089Z",
+          "lastVerifiedAt": "2026-09-04T13:33:14.089Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -17193,8 +17311,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Reservations",
           "discoveredFrom": "https://elagreektaverna.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:49.159Z",
-          "lastVerifiedAt": "2026-09-04T12:50:49.159Z",
+          "observedAt": "2026-09-04T13:33:14.089Z",
+          "lastVerifiedAt": "2026-09-04T13:33:14.089Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -17205,8 +17323,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "View Our Menus",
           "discoveredFrom": "https://elagreektaverna.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:49.159Z",
-          "lastVerifiedAt": "2026-09-04T12:50:49.159Z",
+          "observedAt": "2026-09-04T13:33:14.089Z",
+          "lastVerifiedAt": "2026-09-04T13:33:14.089Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -17217,8 +17335,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Order Online",
           "discoveredFrom": "https://elagreektaverna.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:49.159Z",
-          "lastVerifiedAt": "2026-09-04T12:50:49.159Z",
+          "observedAt": "2026-09-04T13:33:14.089Z",
+          "lastVerifiedAt": "2026-09-04T13:33:14.089Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -17229,8 +17347,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Contact our events team",
           "discoveredFrom": "https://elagreektaverna.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:49.159Z",
-          "lastVerifiedAt": "2026-09-04T12:50:49.159Z",
+          "observedAt": "2026-09-04T13:33:14.089Z",
+          "lastVerifiedAt": "2026-09-04T13:33:14.089Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -17241,8 +17359,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Private events",
           "discoveredFrom": "https://elagreektaverna.com/contact/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:49.159Z",
-          "lastVerifiedAt": "2026-09-04T12:50:49.159Z",
+          "observedAt": "2026-09-04T13:33:14.089Z",
+          "lastVerifiedAt": "2026-09-04T13:33:14.089Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -17275,8 +17393,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Moxie's",
       "website": "https://moxies.com/",
       "resolvedUrl": "https://moxies.com/",
-      "observedAt": "2026-09-04T12:51:01.216Z",
-      "lastVerifiedAt": "2026-09-04T12:51:01.216Z",
+      "observedAt": "2026-09-04T13:33:26.651Z",
+      "lastVerifiedAt": "2026-09-04T13:33:26.651Z",
       "scannedOwnedPages": [
         "https://moxies.com/",
         "https://moxies.com/",
@@ -17296,8 +17414,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://moxies.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:01.216Z",
-          "lastVerifiedAt": "2026-09-04T12:51:01.216Z",
+          "observedAt": "2026-09-04T13:33:26.651Z",
+          "lastVerifiedAt": "2026-09-04T13:33:26.651Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -17313,8 +17431,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://moxies.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:01.216Z",
-          "lastVerifiedAt": "2026-09-04T12:51:01.216Z",
+          "observedAt": "2026-09-04T13:33:26.651Z",
+          "lastVerifiedAt": "2026-09-04T13:33:26.651Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -17328,8 +17446,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Menu",
           "discoveredFrom": "https://moxies.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:01.216Z",
-          "lastVerifiedAt": "2026-09-04T12:51:01.216Z",
+          "observedAt": "2026-09-04T13:33:26.651Z",
+          "lastVerifiedAt": "2026-09-04T13:33:26.651Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -17340,8 +17458,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Book Event",
           "discoveredFrom": "https://moxies.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:01.216Z",
-          "lastVerifiedAt": "2026-09-04T12:51:01.216Z",
+          "observedAt": "2026-09-04T13:33:26.651Z",
+          "lastVerifiedAt": "2026-09-04T13:33:26.651Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -17352,8 +17470,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Reserve",
           "discoveredFrom": "https://moxies.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:01.216Z",
-          "lastVerifiedAt": "2026-09-04T12:51:01.216Z",
+          "observedAt": "2026-09-04T13:33:26.651Z",
+          "lastVerifiedAt": "2026-09-04T13:33:26.651Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -17364,8 +17482,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Terms of Use",
           "discoveredFrom": "https://moxies.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:01.216Z",
-          "lastVerifiedAt": "2026-09-04T12:51:01.216Z",
+          "observedAt": "2026-09-04T13:33:26.651Z",
+          "lastVerifiedAt": "2026-09-04T13:33:26.651Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -17376,8 +17494,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Book Event",
           "discoveredFrom": "https://moxies.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:01.216Z",
-          "lastVerifiedAt": "2026-09-04T12:51:01.216Z",
+          "observedAt": "2026-09-04T13:33:26.651Z",
+          "lastVerifiedAt": "2026-09-04T13:33:26.651Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -17388,8 +17506,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Menus",
           "discoveredFrom": "https://moxies.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:01.216Z",
-          "lastVerifiedAt": "2026-09-04T12:51:01.216Z",
+          "observedAt": "2026-09-04T13:33:26.651Z",
+          "lastVerifiedAt": "2026-09-04T13:33:26.651Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -17400,8 +17518,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Pickup",
           "discoveredFrom": "https://moxies.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:01.216Z",
-          "lastVerifiedAt": "2026-09-04T12:51:01.216Z",
+          "observedAt": "2026-09-04T13:33:26.651Z",
+          "lastVerifiedAt": "2026-09-04T13:33:26.651Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -17412,8 +17530,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Book Event",
           "discoveredFrom": "https://moxies.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:01.216Z",
-          "lastVerifiedAt": "2026-09-04T12:51:01.216Z",
+          "observedAt": "2026-09-04T13:33:26.651Z",
+          "lastVerifiedAt": "2026-09-04T13:33:26.651Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -17424,8 +17542,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Menus",
           "discoveredFrom": "https://moxies.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:01.216Z",
-          "lastVerifiedAt": "2026-09-04T12:51:01.216Z",
+          "observedAt": "2026-09-04T13:33:26.651Z",
+          "lastVerifiedAt": "2026-09-04T13:33:26.651Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -17436,8 +17554,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Door Dash",
           "discoveredFrom": "https://moxies.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:01.216Z",
-          "lastVerifiedAt": "2026-09-04T12:51:01.216Z",
+          "observedAt": "2026-09-04T13:33:26.651Z",
+          "lastVerifiedAt": "2026-09-04T13:33:26.651Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -17448,8 +17566,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Book Event",
           "discoveredFrom": "https://moxies.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:01.216Z",
-          "lastVerifiedAt": "2026-09-04T12:51:01.216Z",
+          "observedAt": "2026-09-04T13:33:26.651Z",
+          "lastVerifiedAt": "2026-09-04T13:33:26.651Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -17460,8 +17578,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Menus",
           "discoveredFrom": "https://moxies.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:01.216Z",
-          "lastVerifiedAt": "2026-09-04T12:51:01.216Z",
+          "observedAt": "2026-09-04T13:33:26.651Z",
+          "lastVerifiedAt": "2026-09-04T13:33:26.651Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -17472,8 +17590,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Book Event",
           "discoveredFrom": "https://moxies.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:01.216Z",
-          "lastVerifiedAt": "2026-09-04T12:51:01.216Z",
+          "observedAt": "2026-09-04T13:33:26.651Z",
+          "lastVerifiedAt": "2026-09-04T13:33:26.651Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -17484,8 +17602,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Menus",
           "discoveredFrom": "https://moxies.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:01.216Z",
-          "lastVerifiedAt": "2026-09-04T12:51:01.216Z",
+          "observedAt": "2026-09-04T13:33:26.651Z",
+          "lastVerifiedAt": "2026-09-04T13:33:26.651Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -17496,8 +17614,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Book Event",
           "discoveredFrom": "https://moxies.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:01.216Z",
-          "lastVerifiedAt": "2026-09-04T12:51:01.216Z",
+          "observedAt": "2026-09-04T13:33:26.651Z",
+          "lastVerifiedAt": "2026-09-04T13:33:26.651Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -17508,8 +17626,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Menus",
           "discoveredFrom": "https://moxies.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:01.216Z",
-          "lastVerifiedAt": "2026-09-04T12:51:01.216Z",
+          "observedAt": "2026-09-04T13:33:26.651Z",
+          "lastVerifiedAt": "2026-09-04T13:33:26.651Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -17520,8 +17638,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Book Event",
           "discoveredFrom": "https://moxies.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:01.216Z",
-          "lastVerifiedAt": "2026-09-04T12:51:01.216Z",
+          "observedAt": "2026-09-04T13:33:26.651Z",
+          "lastVerifiedAt": "2026-09-04T13:33:26.651Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -17532,8 +17650,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Menus",
           "discoveredFrom": "https://moxies.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:01.216Z",
-          "lastVerifiedAt": "2026-09-04T12:51:01.216Z",
+          "observedAt": "2026-09-04T13:33:26.651Z",
+          "lastVerifiedAt": "2026-09-04T13:33:26.651Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -17544,8 +17662,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Pickup",
           "discoveredFrom": "https://moxies.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:01.216Z",
-          "lastVerifiedAt": "2026-09-04T12:51:01.216Z",
+          "observedAt": "2026-09-04T13:33:26.651Z",
+          "lastVerifiedAt": "2026-09-04T13:33:26.651Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -17556,8 +17674,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Book Event",
           "discoveredFrom": "https://moxies.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:01.216Z",
-          "lastVerifiedAt": "2026-09-04T12:51:01.216Z",
+          "observedAt": "2026-09-04T13:33:26.651Z",
+          "lastVerifiedAt": "2026-09-04T13:33:26.651Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -17568,8 +17686,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Menus",
           "discoveredFrom": "https://moxies.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:01.216Z",
-          "lastVerifiedAt": "2026-09-04T12:51:01.216Z",
+          "observedAt": "2026-09-04T13:33:26.651Z",
+          "lastVerifiedAt": "2026-09-04T13:33:26.651Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -17580,8 +17698,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Book Event",
           "discoveredFrom": "https://moxies.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:01.216Z",
-          "lastVerifiedAt": "2026-09-04T12:51:01.216Z",
+          "observedAt": "2026-09-04T13:33:26.651Z",
+          "lastVerifiedAt": "2026-09-04T13:33:26.651Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -17592,8 +17710,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Menus",
           "discoveredFrom": "https://moxies.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:01.216Z",
-          "lastVerifiedAt": "2026-09-04T12:51:01.216Z",
+          "observedAt": "2026-09-04T13:33:26.651Z",
+          "lastVerifiedAt": "2026-09-04T13:33:26.651Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -17604,8 +17722,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Book Event",
           "discoveredFrom": "https://moxies.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:01.216Z",
-          "lastVerifiedAt": "2026-09-04T12:51:01.216Z",
+          "observedAt": "2026-09-04T13:33:26.651Z",
+          "lastVerifiedAt": "2026-09-04T13:33:26.651Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -17616,8 +17734,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Menus",
           "discoveredFrom": "https://moxies.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:01.216Z",
-          "lastVerifiedAt": "2026-09-04T12:51:01.216Z",
+          "observedAt": "2026-09-04T13:33:26.651Z",
+          "lastVerifiedAt": "2026-09-04T13:33:26.651Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -17628,8 +17746,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Menu",
           "discoveredFrom": "https://moxies.com/about/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:01.216Z",
-          "lastVerifiedAt": "2026-09-04T12:51:01.216Z",
+          "observedAt": "2026-09-04T13:33:26.651Z",
+          "lastVerifiedAt": "2026-09-04T13:33:26.651Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -17640,8 +17758,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Book Event",
           "discoveredFrom": "https://moxies.com/about/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:01.216Z",
-          "lastVerifiedAt": "2026-09-04T12:51:01.216Z",
+          "observedAt": "2026-09-04T13:33:26.651Z",
+          "lastVerifiedAt": "2026-09-04T13:33:26.651Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -17652,8 +17770,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Menu",
           "discoveredFrom": "https://moxies.com/contact-us/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:01.216Z",
-          "lastVerifiedAt": "2026-09-04T12:51:01.216Z",
+          "observedAt": "2026-09-04T13:33:26.651Z",
+          "lastVerifiedAt": "2026-09-04T13:33:26.651Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -17664,8 +17782,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Book Event",
           "discoveredFrom": "https://moxies.com/contact-us/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:01.216Z",
-          "lastVerifiedAt": "2026-09-04T12:51:01.216Z",
+          "observedAt": "2026-09-04T13:33:26.651Z",
+          "lastVerifiedAt": "2026-09-04T13:33:26.651Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -17676,8 +17794,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Moxies Houston Restaurant Menu",
           "discoveredFrom": "https://moxies.com/contact-us/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:01.216Z",
-          "lastVerifiedAt": "2026-09-04T12:51:01.216Z",
+          "observedAt": "2026-09-04T13:33:26.651Z",
+          "lastVerifiedAt": "2026-09-04T13:33:26.651Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -17688,8 +17806,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Moxies West Palm Beach Restaurant Menu",
           "discoveredFrom": "https://moxies.com/contact-us/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:01.216Z",
-          "lastVerifiedAt": "2026-09-04T12:51:01.216Z",
+          "observedAt": "2026-09-04T13:33:26.651Z",
+          "lastVerifiedAt": "2026-09-04T13:33:26.651Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -17700,8 +17818,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Menu",
           "discoveredFrom": "https://moxies.com/restaurants/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:01.216Z",
-          "lastVerifiedAt": "2026-09-04T12:51:01.216Z",
+          "observedAt": "2026-09-04T13:33:26.651Z",
+          "lastVerifiedAt": "2026-09-04T13:33:26.651Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -17712,8 +17830,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Book Event",
           "discoveredFrom": "https://moxies.com/restaurants/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:01.216Z",
-          "lastVerifiedAt": "2026-09-04T12:51:01.216Z",
+          "observedAt": "2026-09-04T13:33:26.651Z",
+          "lastVerifiedAt": "2026-09-04T13:33:26.651Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -17724,8 +17842,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Book Event",
           "discoveredFrom": "https://moxies.com/restaurants/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:01.216Z",
-          "lastVerifiedAt": "2026-09-04T12:51:01.216Z",
+          "observedAt": "2026-09-04T13:33:26.651Z",
+          "lastVerifiedAt": "2026-09-04T13:33:26.651Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -17736,8 +17854,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Book Event",
           "discoveredFrom": "https://moxies.com/restaurants/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:01.216Z",
-          "lastVerifiedAt": "2026-09-04T12:51:01.216Z",
+          "observedAt": "2026-09-04T13:33:26.651Z",
+          "lastVerifiedAt": "2026-09-04T13:33:26.651Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -17748,8 +17866,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Book Event",
           "discoveredFrom": "https://moxies.com/restaurants/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:01.216Z",
-          "lastVerifiedAt": "2026-09-04T12:51:01.216Z",
+          "observedAt": "2026-09-04T13:33:26.651Z",
+          "lastVerifiedAt": "2026-09-04T13:33:26.651Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -17760,8 +17878,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Book Event",
           "discoveredFrom": "https://moxies.com/restaurants/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:01.216Z",
-          "lastVerifiedAt": "2026-09-04T12:51:01.216Z",
+          "observedAt": "2026-09-04T13:33:26.651Z",
+          "lastVerifiedAt": "2026-09-04T13:33:26.651Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -17772,8 +17890,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Book Event",
           "discoveredFrom": "https://moxies.com/restaurants/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:01.216Z",
-          "lastVerifiedAt": "2026-09-04T12:51:01.216Z",
+          "observedAt": "2026-09-04T13:33:26.651Z",
+          "lastVerifiedAt": "2026-09-04T13:33:26.651Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -17784,8 +17902,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Book Event",
           "discoveredFrom": "https://moxies.com/restaurants/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:01.216Z",
-          "lastVerifiedAt": "2026-09-04T12:51:01.216Z",
+          "observedAt": "2026-09-04T13:33:26.651Z",
+          "lastVerifiedAt": "2026-09-04T13:33:26.651Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -17796,8 +17914,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Book Event",
           "discoveredFrom": "https://moxies.com/restaurants/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:01.216Z",
-          "lastVerifiedAt": "2026-09-04T12:51:01.216Z",
+          "observedAt": "2026-09-04T13:33:26.651Z",
+          "lastVerifiedAt": "2026-09-04T13:33:26.651Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -17808,8 +17926,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Book Event",
           "discoveredFrom": "https://moxies.com/restaurants/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:01.216Z",
-          "lastVerifiedAt": "2026-09-04T12:51:01.216Z",
+          "observedAt": "2026-09-04T13:33:26.651Z",
+          "lastVerifiedAt": "2026-09-04T13:33:26.651Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -17820,8 +17938,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Book Event",
           "discoveredFrom": "https://moxies.com/restaurants/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:01.216Z",
-          "lastVerifiedAt": "2026-09-04T12:51:01.216Z",
+          "observedAt": "2026-09-04T13:33:26.651Z",
+          "lastVerifiedAt": "2026-09-04T13:33:26.651Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -17832,8 +17950,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Book Event",
           "discoveredFrom": "https://moxies.com/restaurants/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:01.216Z",
-          "lastVerifiedAt": "2026-09-04T12:51:01.216Z",
+          "observedAt": "2026-09-04T13:33:26.651Z",
+          "lastVerifiedAt": "2026-09-04T13:33:26.651Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -17844,8 +17962,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Menus",
           "discoveredFrom": "https://moxies.com/restaurants/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:01.216Z",
-          "lastVerifiedAt": "2026-09-04T12:51:01.216Z",
+          "observedAt": "2026-09-04T13:33:26.651Z",
+          "lastVerifiedAt": "2026-09-04T13:33:26.651Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -17856,8 +17974,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Globally Inspired Menus. Handcrafted Cocktails.",
           "discoveredFrom": "https://moxies.com/restaurants/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:01.216Z",
-          "lastVerifiedAt": "2026-09-04T12:51:01.216Z",
+          "observedAt": "2026-09-04T13:33:26.651Z",
+          "lastVerifiedAt": "2026-09-04T13:33:26.651Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -17890,8 +18008,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Gahan House",
       "website": "https://gahan.ca/",
       "resolvedUrl": "https://gahan.ca/",
-      "observedAt": "2026-09-04T12:50:49.903Z",
-      "lastVerifiedAt": "2026-09-04T12:50:49.903Z",
+      "observedAt": "2026-09-04T13:33:14.655Z",
+      "lastVerifiedAt": "2026-09-04T13:33:14.655Z",
       "scannedOwnedPages": [
         "https://gahan.ca/",
         "https://gahan.ca/restaurants/",
@@ -17910,8 +18028,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://gahan.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:49.903Z",
-          "lastVerifiedAt": "2026-09-04T12:50:49.903Z",
+          "observedAt": "2026-09-04T13:33:14.655Z",
+          "lastVerifiedAt": "2026-09-04T13:33:14.655Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -17927,8 +18045,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://gahan.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:49.903Z",
-          "lastVerifiedAt": "2026-09-04T12:50:49.903Z",
+          "observedAt": "2026-09-04T13:33:14.655Z",
+          "lastVerifiedAt": "2026-09-04T13:33:14.655Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -17942,8 +18060,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "menu",
           "discoveredFrom": "https://gahan.ca/restaurants/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:49.903Z",
-          "lastVerifiedAt": "2026-09-04T12:50:49.903Z",
+          "observedAt": "2026-09-04T13:33:14.655Z",
+          "lastVerifiedAt": "2026-09-04T13:33:14.655Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -17969,8 +18087,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Tokyo Roll",
       "website": "https://www.tokyorollhalifax.com/",
       "resolvedUrl": "https://www.tokyorollhalifax.com/",
-      "observedAt": "2026-09-04T12:51:17.679Z",
-      "lastVerifiedAt": "2026-09-04T12:51:17.679Z",
+      "observedAt": "2026-09-04T13:33:41.680Z",
+      "lastVerifiedAt": "2026-09-04T13:33:41.680Z",
       "scannedOwnedPages": [
         "https://www.tokyorollhalifax.com/",
         "https://www.tokyorollhalifax.com/about",
@@ -17988,8 +18106,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.tokyorollhalifax.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:17.679Z",
-          "lastVerifiedAt": "2026-09-04T12:51:17.679Z",
+          "observedAt": "2026-09-04T13:33:41.680Z",
+          "lastVerifiedAt": "2026-09-04T13:33:41.680Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -18005,8 +18123,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.tokyorollhalifax.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:17.679Z",
-          "lastVerifiedAt": "2026-09-04T12:51:17.679Z",
+          "observedAt": "2026-09-04T13:33:41.680Z",
+          "lastVerifiedAt": "2026-09-04T13:33:41.680Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -18020,8 +18138,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Menu",
           "discoveredFrom": "https://www.tokyorollhalifax.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:17.679Z",
-          "lastVerifiedAt": "2026-09-04T12:51:17.679Z",
+          "observedAt": "2026-09-04T13:33:41.680Z",
+          "lastVerifiedAt": "2026-09-04T13:33:41.680Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -18039,8 +18157,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "in spring asian fusion cuisine",
       "website": "https://www.inspringhotpot.com/",
       "resolvedUrl": "https://www.skipthedishes.com/?utm_source=inspringhotpot.com&utm_medium=microsites&utm_campaign=microsites",
-      "observedAt": "2026-09-04T12:50:54.369Z",
-      "lastVerifiedAt": "2026-09-04T12:50:54.369Z",
+      "observedAt": "2026-09-04T13:33:19.449Z",
+      "lastVerifiedAt": "2026-09-04T13:33:19.449Z",
       "scannedOwnedPages": [
         "https://www.skipthedishes.com/?utm_source=inspringhotpot.com&utm_medium=microsites&utm_campaign=microsites",
         "https://www.skipthedishes.com/brands/humptys-family-restaurant",
@@ -18060,8 +18178,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.skipthedishes.com/?utm_source=inspringhotpot.com&utm_medium=microsites&utm_campaign=microsites",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:54.369Z",
-          "lastVerifiedAt": "2026-09-04T12:50:54.369Z",
+          "observedAt": "2026-09-04T13:33:19.449Z",
+          "lastVerifiedAt": "2026-09-04T13:33:19.449Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -18077,8 +18195,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.skipthedishes.com/?utm_source=inspringhotpot.com&utm_medium=microsites&utm_campaign=microsites",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:54.369Z",
-          "lastVerifiedAt": "2026-09-04T12:50:54.369Z",
+          "observedAt": "2026-09-04T13:33:19.449Z",
+          "lastVerifiedAt": "2026-09-04T13:33:19.449Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -18094,8 +18212,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.skipthedishes.com/?utm_source=inspringhotpot.com&utm_medium=microsites&utm_campaign=microsites",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:54.369Z",
-          "lastVerifiedAt": "2026-09-04T12:50:54.369Z",
+          "observedAt": "2026-09-04T13:33:19.449Z",
+          "lastVerifiedAt": "2026-09-04T13:33:19.449Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -18111,8 +18229,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.skipthedishes.com/?utm_source=inspringhotpot.com&utm_medium=microsites&utm_campaign=microsites",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:54.369Z",
-          "lastVerifiedAt": "2026-09-04T12:50:54.369Z",
+          "observedAt": "2026-09-04T13:33:19.449Z",
+          "lastVerifiedAt": "2026-09-04T13:33:19.449Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -18126,8 +18244,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Sign Up",
           "discoveredFrom": "https://www.skipthedishes.com/?utm_source=inspringhotpot.com&utm_medium=microsites&utm_campaign=microsites",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:54.369Z",
-          "lastVerifiedAt": "2026-09-04T12:50:54.369Z",
+          "observedAt": "2026-09-04T13:33:19.449Z",
+          "lastVerifiedAt": "2026-09-04T13:33:19.449Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -18138,8 +18256,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Join Now",
           "discoveredFrom": "https://www.skipthedishes.com/?utm_source=inspringhotpot.com&utm_medium=microsites&utm_campaign=microsites",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:54.369Z",
-          "lastVerifiedAt": "2026-09-04T12:50:54.369Z",
+          "observedAt": "2026-09-04T13:33:19.449Z",
+          "lastVerifiedAt": "2026-09-04T13:33:19.449Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -18150,8 +18268,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Learn More",
           "discoveredFrom": "https://www.skipthedishes.com/?utm_source=inspringhotpot.com&utm_medium=microsites&utm_campaign=microsites",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:54.369Z",
-          "lastVerifiedAt": "2026-09-04T12:50:54.369Z",
+          "observedAt": "2026-09-04T13:33:19.449Z",
+          "lastVerifiedAt": "2026-09-04T13:33:19.449Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -18162,8 +18280,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Partner Success Guide",
           "discoveredFrom": "https://www.skipthedishes.com/brands/humptys-family-restaurant",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:54.369Z",
-          "lastVerifiedAt": "2026-09-04T12:50:54.369Z",
+          "observedAt": "2026-09-04T13:33:19.449Z",
+          "lastVerifiedAt": "2026-09-04T13:33:19.449Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -18181,8 +18299,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Shuck Seafood + Raw Bar",
       "website": "https://www.rcr.ca/restaurants/shuck-seafood-raw-bar/",
       "resolvedUrl": "https://www.rcr.ca/restaurants/shuck-seafood-raw-bar/",
-      "observedAt": "2026-09-04T12:51:03.214Z",
-      "lastVerifiedAt": "2026-09-04T12:51:03.214Z",
+      "observedAt": "2026-09-04T13:33:28.936Z",
+      "lastVerifiedAt": "2026-09-04T13:33:28.936Z",
       "scannedOwnedPages": [
         "https://www.rcr.ca/restaurants/shuck-seafood-raw-bar/",
         "https://www.rcr.ca/restaurants/",
@@ -18202,8 +18320,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.rcr.ca/restaurants/shuck-seafood-raw-bar/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:03.214Z",
-          "lastVerifiedAt": "2026-09-04T12:51:03.214Z",
+          "observedAt": "2026-09-04T13:33:28.936Z",
+          "lastVerifiedAt": "2026-09-04T13:33:28.936Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -18219,8 +18337,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.rcr.ca/restaurants/shuck-seafood-raw-bar/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:03.214Z",
-          "lastVerifiedAt": "2026-09-04T12:51:03.214Z",
+          "observedAt": "2026-09-04T13:33:28.936Z",
+          "lastVerifiedAt": "2026-09-04T13:33:28.936Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -18236,8 +18354,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.rcr.ca/restaurants/shuck-seafood-raw-bar/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:03.214Z",
-          "lastVerifiedAt": "2026-09-04T12:51:03.214Z",
+          "observedAt": "2026-09-04T13:33:28.936Z",
+          "lastVerifiedAt": "2026-09-04T13:33:28.936Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -18253,8 +18371,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.rcr.ca/restaurants/agricola-street-brasserie/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:03.214Z",
-          "lastVerifiedAt": "2026-09-04T12:51:03.214Z",
+          "observedAt": "2026-09-04T13:33:28.936Z",
+          "lastVerifiedAt": "2026-09-04T13:33:28.936Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -18270,8 +18388,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.rcr.ca/restaurants/agricola-street-brasserie/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:03.214Z",
-          "lastVerifiedAt": "2026-09-04T12:51:03.214Z",
+          "observedAt": "2026-09-04T13:33:28.936Z",
+          "lastVerifiedAt": "2026-09-04T13:33:28.936Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -18285,8 +18403,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "shuckseafood.ca",
           "discoveredFrom": "https://www.rcr.ca/restaurants/shuck-seafood-raw-bar/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:03.214Z",
-          "lastVerifiedAt": "2026-09-04T12:51:03.214Z",
+          "observedAt": "2026-09-04T13:33:28.936Z",
+          "lastVerifiedAt": "2026-09-04T13:33:28.936Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -18297,8 +18415,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Dinner Menu",
           "discoveredFrom": "https://www.rcr.ca/restaurants/shuck-seafood-raw-bar/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:03.214Z",
-          "lastVerifiedAt": "2026-09-04T12:51:03.214Z",
+          "observedAt": "2026-09-04T13:33:28.936Z",
+          "lastVerifiedAt": "2026-09-04T13:33:28.936Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -18309,8 +18427,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Dinner Menu",
           "discoveredFrom": "https://www.rcr.ca/restaurants/agricola-street-brasserie/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:03.214Z",
-          "lastVerifiedAt": "2026-09-04T12:51:03.214Z",
+          "observedAt": "2026-09-04T13:33:28.936Z",
+          "lastVerifiedAt": "2026-09-04T13:33:28.936Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -18329,8 +18447,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "PG Cafe and Grill",
       "website": "https://pgcafeandgrill.com/",
       "resolvedUrl": "https://pgcafeandgrill.com/",
-      "observedAt": "2026-09-04T12:51:02.954Z",
-      "lastVerifiedAt": "2026-09-04T12:51:02.954Z",
+      "observedAt": "2026-09-04T13:33:28.402Z",
+      "lastVerifiedAt": "2026-09-04T13:33:28.402Z",
       "scannedOwnedPages": [
         "https://pgcafeandgrill.com/"
       ],
@@ -18343,8 +18461,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "See Our Menu",
           "discoveredFrom": "https://pgcafeandgrill.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:02.954Z",
-          "lastVerifiedAt": "2026-09-04T12:51:02.954Z",
+          "observedAt": "2026-09-04T13:33:28.402Z",
+          "lastVerifiedAt": "2026-09-04T13:33:28.402Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -18375,8 +18493,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Waterfront Warehouse",
       "website": "https://www.rcr.ca/restaurants/waterfront-warehouse/",
       "resolvedUrl": "https://www.rcr.ca/restaurants/waterfront-warehouse/",
-      "observedAt": "2026-09-04T12:51:03.544Z",
-      "lastVerifiedAt": "2026-09-04T12:51:03.544Z",
+      "observedAt": "2026-09-04T13:33:29.277Z",
+      "lastVerifiedAt": "2026-09-04T13:33:29.277Z",
       "scannedOwnedPages": [
         "https://www.rcr.ca/restaurants/waterfront-warehouse/",
         "https://www.rcr.ca/restaurants/",
@@ -18396,8 +18514,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.rcr.ca/restaurants/waterfront-warehouse/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:03.544Z",
-          "lastVerifiedAt": "2026-09-04T12:51:03.544Z",
+          "observedAt": "2026-09-04T13:33:29.277Z",
+          "lastVerifiedAt": "2026-09-04T13:33:29.277Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -18413,8 +18531,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.rcr.ca/restaurants/waterfront-warehouse/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:03.544Z",
-          "lastVerifiedAt": "2026-09-04T12:51:03.544Z",
+          "observedAt": "2026-09-04T13:33:29.277Z",
+          "lastVerifiedAt": "2026-09-04T13:33:29.277Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -18430,8 +18548,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.rcr.ca/restaurants/waterfront-warehouse/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:03.544Z",
-          "lastVerifiedAt": "2026-09-04T12:51:03.544Z",
+          "observedAt": "2026-09-04T13:33:29.277Z",
+          "lastVerifiedAt": "2026-09-04T13:33:29.277Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -18447,8 +18565,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.rcr.ca/restaurants/agricola-street-brasserie/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:03.544Z",
-          "lastVerifiedAt": "2026-09-04T12:51:03.544Z",
+          "observedAt": "2026-09-04T13:33:29.277Z",
+          "lastVerifiedAt": "2026-09-04T13:33:29.277Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -18464,8 +18582,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.rcr.ca/restaurants/agricola-street-brasserie/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:03.544Z",
-          "lastVerifiedAt": "2026-09-04T12:51:03.544Z",
+          "observedAt": "2026-09-04T13:33:29.277Z",
+          "lastVerifiedAt": "2026-09-04T13:33:29.277Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -18479,8 +18597,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Lunch Menu",
           "discoveredFrom": "https://www.rcr.ca/restaurants/waterfront-warehouse/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:03.544Z",
-          "lastVerifiedAt": "2026-09-04T12:51:03.544Z",
+          "observedAt": "2026-09-04T13:33:29.277Z",
+          "lastVerifiedAt": "2026-09-04T13:33:29.277Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -18491,8 +18609,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Dinner Menu",
           "discoveredFrom": "https://www.rcr.ca/restaurants/waterfront-warehouse/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:03.544Z",
-          "lastVerifiedAt": "2026-09-04T12:51:03.544Z",
+          "observedAt": "2026-09-04T13:33:29.277Z",
+          "lastVerifiedAt": "2026-09-04T13:33:29.277Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -18503,8 +18621,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Sample Oyster Menu",
           "discoveredFrom": "https://www.rcr.ca/restaurants/waterfront-warehouse/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:03.544Z",
-          "lastVerifiedAt": "2026-09-04T12:51:03.544Z",
+          "observedAt": "2026-09-04T13:33:29.277Z",
+          "lastVerifiedAt": "2026-09-04T13:33:29.277Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -18515,8 +18633,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Kids Menu",
           "discoveredFrom": "https://www.rcr.ca/restaurants/waterfront-warehouse/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:03.544Z",
-          "lastVerifiedAt": "2026-09-04T12:51:03.544Z",
+          "observedAt": "2026-09-04T13:33:29.277Z",
+          "lastVerifiedAt": "2026-09-04T13:33:29.277Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -18527,8 +18645,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Dinner Menu",
           "discoveredFrom": "https://www.rcr.ca/restaurants/agricola-street-brasserie/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:03.544Z",
-          "lastVerifiedAt": "2026-09-04T12:51:03.544Z",
+          "observedAt": "2026-09-04T13:33:29.277Z",
+          "lastVerifiedAt": "2026-09-04T13:33:29.277Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -18547,8 +18665,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Subway",
       "website": "https://www.subway.com/",
       "resolvedUrl": "https://www.subway.com/en-ca",
-      "observedAt": "2026-09-04T12:51:08.763Z",
-      "lastVerifiedAt": "2026-09-04T12:51:08.763Z",
+      "observedAt": "2026-09-04T13:33:35.082Z",
+      "lastVerifiedAt": "2026-09-04T13:33:35.082Z",
       "scannedOwnedPages": [
         "https://www.subway.com/en-ca"
       ],
@@ -18561,8 +18679,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Start Order",
           "discoveredFrom": "https://www.subway.com/en-ca",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:08.763Z",
-          "lastVerifiedAt": "2026-09-04T12:51:08.763Z",
+          "observedAt": "2026-09-04T13:33:35.082Z",
+          "lastVerifiedAt": "2026-09-04T13:33:35.082Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -18585,8 +18703,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Smokehouse Brewery",
       "website": "https://smokehousebrewery.ca/",
       "resolvedUrl": "https://smokehousebrewery.ca/",
-      "observedAt": "2026-09-04T12:51:06.354Z",
-      "lastVerifiedAt": "2026-09-04T12:51:06.354Z",
+      "observedAt": "2026-09-04T13:33:33.181Z",
+      "lastVerifiedAt": "2026-09-04T13:33:33.181Z",
       "scannedOwnedPages": [
         "https://smokehousebrewery.ca/",
         "https://smokehousebrewery.ca/"
@@ -18603,8 +18721,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://smokehousebrewery.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:06.354Z",
-          "lastVerifiedAt": "2026-09-04T12:51:06.354Z",
+          "observedAt": "2026-09-04T13:33:33.181Z",
+          "lastVerifiedAt": "2026-09-04T13:33:33.181Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -18620,8 +18738,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://smokehousebrewery.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:06.354Z",
-          "lastVerifiedAt": "2026-09-04T12:51:06.354Z",
+          "observedAt": "2026-09-04T13:33:33.181Z",
+          "lastVerifiedAt": "2026-09-04T13:33:33.181Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -18635,8 +18753,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "View Full Calendar",
           "discoveredFrom": "https://smokehousebrewery.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:06.354Z",
-          "lastVerifiedAt": "2026-09-04T12:51:06.354Z",
+          "observedAt": "2026-09-04T13:33:33.181Z",
+          "lastVerifiedAt": "2026-09-04T13:33:33.181Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -18647,8 +18765,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Subscribe",
           "discoveredFrom": "https://smokehousebrewery.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:06.354Z",
-          "lastVerifiedAt": "2026-09-04T12:51:06.354Z",
+          "observedAt": "2026-09-04T13:33:33.181Z",
+          "lastVerifiedAt": "2026-09-04T13:33:33.181Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -18681,8 +18799,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Almonak",
       "website": "https://www.almonak.com/",
       "resolvedUrl": "https://www.almonak.com/",
-      "observedAt": "2026-09-04T12:50:43.905Z",
-      "lastVerifiedAt": "2026-09-04T12:50:43.905Z",
+      "observedAt": "2026-09-04T13:33:08.001Z",
+      "lastVerifiedAt": "2026-09-04T13:33:08.001Z",
       "scannedOwnedPages": [
         "https://www.almonak.com/",
         "https://www.almonak.com/about"
@@ -18699,8 +18817,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.almonak.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:43.905Z",
-          "lastVerifiedAt": "2026-09-04T12:50:43.905Z",
+          "observedAt": "2026-09-04T13:33:08.001Z",
+          "lastVerifiedAt": "2026-09-04T13:33:08.001Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -18714,8 +18832,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Book an Event",
           "discoveredFrom": "https://www.almonak.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:43.905Z",
-          "lastVerifiedAt": "2026-09-04T12:50:43.905Z",
+          "observedAt": "2026-09-04T13:33:08.001Z",
+          "lastVerifiedAt": "2026-09-04T13:33:08.001Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -18726,8 +18844,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Book a Table",
           "discoveredFrom": "https://www.almonak.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:43.905Z",
-          "lastVerifiedAt": "2026-09-04T12:50:43.905Z",
+          "observedAt": "2026-09-04T13:33:08.001Z",
+          "lastVerifiedAt": "2026-09-04T13:33:08.001Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -18753,8 +18871,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "The Bitter End",
       "website": "https://www.bitterend.ca/home",
       "resolvedUrl": "https://www.bitterend.ca/",
-      "observedAt": "2026-09-04T12:50:44.764Z",
-      "lastVerifiedAt": "2026-09-04T12:50:44.764Z",
+      "observedAt": "2026-09-04T13:33:09.118Z",
+      "lastVerifiedAt": "2026-09-04T13:33:09.118Z",
       "scannedOwnedPages": [
         "https://www.bitterend.ca/",
         "https://www.bitterend.ca/about.html",
@@ -18769,8 +18887,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Reserve",
           "discoveredFrom": "https://www.bitterend.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:44.764Z",
-          "lastVerifiedAt": "2026-09-04T12:50:44.764Z",
+          "observedAt": "2026-09-04T13:33:09.118Z",
+          "lastVerifiedAt": "2026-09-04T13:33:09.118Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -18781,8 +18899,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "menu",
           "discoveredFrom": "https://www.bitterend.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:44.764Z",
-          "lastVerifiedAt": "2026-09-04T12:50:44.764Z",
+          "observedAt": "2026-09-04T13:33:09.118Z",
+          "lastVerifiedAt": "2026-09-04T13:33:09.118Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -18793,8 +18911,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "menu",
           "discoveredFrom": "https://www.bitterend.ca/about.html",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:44.764Z",
-          "lastVerifiedAt": "2026-09-04T12:50:44.764Z",
+          "observedAt": "2026-09-04T13:33:09.118Z",
+          "lastVerifiedAt": "2026-09-04T13:33:09.118Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -18810,8 +18928,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Portland Street Creperie",
       "website": "http://www.portlandstreetcreperie.com/",
       "resolvedUrl": "http://www.portlandstreetcreperie.com/",
-      "observedAt": "2026-09-04T12:51:04.054Z",
-      "lastVerifiedAt": "2026-09-04T12:51:04.054Z",
+      "observedAt": "2026-09-04T13:33:30.099Z",
+      "lastVerifiedAt": "2026-09-04T13:33:30.099Z",
       "scannedOwnedPages": [
         "http://www.portlandstreetcreperie.com/"
       ],
@@ -18828,8 +18946,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Saj House",
       "website": "https://www.sajhouse.ca/",
       "resolvedUrl": "https://www.sajhouse.ca/",
-      "observedAt": "2026-09-04T12:51:05.167Z",
-      "lastVerifiedAt": "2026-09-04T12:51:05.167Z",
+      "observedAt": "2026-09-04T13:33:32.733Z",
+      "lastVerifiedAt": "2026-09-04T13:33:32.733Z",
       "scannedOwnedPages": [
         "https://www.sajhouse.ca/",
         "https://www.sajhouse.ca/contact/",
@@ -18850,8 +18968,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "BarBurrito",
       "website": "https://www.barburrito.ca/location/dartmouth/",
       "resolvedUrl": "https://www.barburrito.ca/location/dartmouth/",
-      "observedAt": "2026-09-04T12:50:44.139Z",
-      "lastVerifiedAt": "2026-09-04T12:50:44.139Z",
+      "observedAt": "2026-09-04T13:33:08.320Z",
+      "lastVerifiedAt": "2026-09-04T13:33:08.320Z",
       "scannedOwnedPages": [
         "https://www.barburrito.ca/location/dartmouth/",
         "https://www.barburrito.ca/location/dartmouth/",
@@ -18871,8 +18989,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.barburrito.ca/location/dartmouth/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:44.139Z",
-          "lastVerifiedAt": "2026-09-04T12:50:44.139Z",
+          "observedAt": "2026-09-04T13:33:08.320Z",
+          "lastVerifiedAt": "2026-09-04T13:33:08.320Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -18888,8 +19006,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.barburrito.ca/location/dartmouth/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:44.139Z",
-          "lastVerifiedAt": "2026-09-04T12:50:44.139Z",
+          "observedAt": "2026-09-04T13:33:08.320Z",
+          "lastVerifiedAt": "2026-09-04T13:33:08.320Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -18905,8 +19023,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.barburrito.ca/location/dartmouth/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:44.139Z",
-          "lastVerifiedAt": "2026-09-04T12:50:44.139Z",
+          "observedAt": "2026-09-04T13:33:08.320Z",
+          "lastVerifiedAt": "2026-09-04T13:33:08.320Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -18922,8 +19040,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.barburrito.ca/location/dartmouth/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:44.139Z",
-          "lastVerifiedAt": "2026-09-04T12:50:44.139Z",
+          "observedAt": "2026-09-04T13:33:08.320Z",
+          "lastVerifiedAt": "2026-09-04T13:33:08.320Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -18939,8 +19057,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.barburrito.ca/location/dartmouth/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:44.139Z",
-          "lastVerifiedAt": "2026-09-04T12:50:44.139Z",
+          "observedAt": "2026-09-04T13:33:08.320Z",
+          "lastVerifiedAt": "2026-09-04T13:33:08.320Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -18956,8 +19074,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.barburrito.ca/location/dartmouth/",
           "associationBasis": "jsonld_sameAs",
-          "observedAt": "2026-09-04T12:50:44.139Z",
-          "lastVerifiedAt": "2026-09-04T12:50:44.139Z",
+          "observedAt": "2026-09-04T13:33:08.320Z",
+          "lastVerifiedAt": "2026-09-04T13:33:08.320Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -18971,8 +19089,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Order Online",
           "discoveredFrom": "https://www.barburrito.ca/location/dartmouth/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:44.139Z",
-          "lastVerifiedAt": "2026-09-04T12:50:44.139Z",
+          "observedAt": "2026-09-04T13:33:08.320Z",
+          "lastVerifiedAt": "2026-09-04T13:33:08.320Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -18983,8 +19101,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Menu",
           "discoveredFrom": "https://www.barburrito.ca/location/dartmouth/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:44.139Z",
-          "lastVerifiedAt": "2026-09-04T12:50:44.139Z",
+          "observedAt": "2026-09-04T13:33:08.320Z",
+          "lastVerifiedAt": "2026-09-04T13:33:08.320Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -18995,8 +19113,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Order Pickup",
           "discoveredFrom": "https://www.barburrito.ca/location/dartmouth/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:44.139Z",
-          "lastVerifiedAt": "2026-09-04T12:50:44.139Z",
+          "observedAt": "2026-09-04T13:33:08.320Z",
+          "lastVerifiedAt": "2026-09-04T13:33:08.320Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -19007,8 +19125,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "DoorDash",
           "discoveredFrom": "https://www.barburrito.ca/location/dartmouth/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:44.139Z",
-          "lastVerifiedAt": "2026-09-04T12:50:44.139Z",
+          "observedAt": "2026-09-04T13:33:08.320Z",
+          "lastVerifiedAt": "2026-09-04T13:33:08.320Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -19019,8 +19137,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "SkipTheDishes‎",
           "discoveredFrom": "https://www.barburrito.ca/location/dartmouth/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:44.139Z",
-          "lastVerifiedAt": "2026-09-04T12:50:44.139Z",
+          "observedAt": "2026-09-04T13:33:08.320Z",
+          "lastVerifiedAt": "2026-09-04T13:33:08.320Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -19031,8 +19149,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Uber Eats",
           "discoveredFrom": "https://www.barburrito.ca/location/dartmouth/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:44.139Z",
-          "lastVerifiedAt": "2026-09-04T12:50:44.139Z",
+          "observedAt": "2026-09-04T13:33:08.320Z",
+          "lastVerifiedAt": "2026-09-04T13:33:08.320Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -19043,8 +19161,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Menu",
           "discoveredFrom": "https://www.barburrito.ca/fr/location/dartmouth/",
           "associationBasis": "linked_from_official_location_page",
-          "observedAt": "2026-09-04T12:50:44.139Z",
-          "lastVerifiedAt": "2026-09-04T12:50:44.139Z",
+          "observedAt": "2026-09-04T13:33:08.320Z",
+          "lastVerifiedAt": "2026-09-04T13:33:08.320Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -19077,8 +19195,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Booster Juice",
       "website": "https://www.boosterjuice.com/",
       "resolvedUrl": "https://boosterjuice.com/en-ca",
-      "observedAt": "2026-09-04T12:50:44.780Z",
-      "lastVerifiedAt": "2026-09-04T12:50:44.780Z",
+      "observedAt": "2026-09-04T13:33:08.955Z",
+      "lastVerifiedAt": "2026-09-04T13:33:08.955Z",
       "scannedOwnedPages": [
         "https://boosterjuice.com/en-ca",
         "https://boosterjuice.com/en-ca/pages/our-story",
@@ -19098,8 +19216,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://boosterjuice.com/en-ca",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:44.780Z",
-          "lastVerifiedAt": "2026-09-04T12:50:44.780Z",
+          "observedAt": "2026-09-04T13:33:08.955Z",
+          "lastVerifiedAt": "2026-09-04T13:33:08.955Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -19115,8 +19233,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://boosterjuice.com/en-ca",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:44.780Z",
-          "lastVerifiedAt": "2026-09-04T12:50:44.780Z",
+          "observedAt": "2026-09-04T13:33:08.955Z",
+          "lastVerifiedAt": "2026-09-04T13:33:08.955Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -19132,8 +19250,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://boosterjuice.com/en-ca",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:44.780Z",
-          "lastVerifiedAt": "2026-09-04T12:50:44.780Z",
+          "observedAt": "2026-09-04T13:33:08.955Z",
+          "lastVerifiedAt": "2026-09-04T13:33:08.955Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -19149,8 +19267,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://boosterjuice.com/en-ca",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:44.780Z",
-          "lastVerifiedAt": "2026-09-04T12:50:44.780Z",
+          "observedAt": "2026-09-04T13:33:08.955Z",
+          "lastVerifiedAt": "2026-09-04T13:33:08.955Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -19166,8 +19284,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://boosterjuice.com/en-ca",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:44.780Z",
-          "lastVerifiedAt": "2026-09-04T12:50:44.780Z",
+          "observedAt": "2026-09-04T13:33:08.955Z",
+          "lastVerifiedAt": "2026-09-04T13:33:08.955Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -19181,8 +19299,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "CORPORATE & EVENT PROGRAM",
           "discoveredFrom": "https://boosterjuice.com/en-ca",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:44.780Z",
-          "lastVerifiedAt": "2026-09-04T12:50:44.780Z",
+          "observedAt": "2026-09-04T13:33:08.955Z",
+          "lastVerifiedAt": "2026-09-04T13:33:08.955Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -19200,8 +19318,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Mezza Lebanese Kitchen",
       "website": "https://www.mezzalebanesekitchen.com/",
       "resolvedUrl": "https://www.ordermezza.com/",
-      "observedAt": "2026-09-04T12:50:59.817Z",
-      "lastVerifiedAt": "2026-09-04T12:50:59.817Z",
+      "observedAt": "2026-09-04T13:33:24.994Z",
+      "lastVerifiedAt": "2026-09-04T13:33:24.994Z",
       "scannedOwnedPages": [
         "https://www.ordermezza.com/",
         "https://www.ordermezza.com/locations",
@@ -19220,8 +19338,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.ordermezza.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:59.817Z",
-          "lastVerifiedAt": "2026-09-04T12:50:59.817Z",
+          "observedAt": "2026-09-04T13:33:24.994Z",
+          "lastVerifiedAt": "2026-09-04T13:33:24.994Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -19237,8 +19355,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.ordermezza.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:59.817Z",
-          "lastVerifiedAt": "2026-09-04T12:50:59.817Z",
+          "observedAt": "2026-09-04T13:33:24.994Z",
+          "lastVerifiedAt": "2026-09-04T13:33:24.994Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -19254,8 +19372,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.ordermezza.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:59.817Z",
-          "lastVerifiedAt": "2026-09-04T12:50:59.817Z",
+          "observedAt": "2026-09-04T13:33:24.994Z",
+          "lastVerifiedAt": "2026-09-04T13:33:24.994Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -19271,8 +19389,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.ordermezza.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:59.817Z",
-          "lastVerifiedAt": "2026-09-04T12:50:59.817Z",
+          "observedAt": "2026-09-04T13:33:24.994Z",
+          "lastVerifiedAt": "2026-09-04T13:33:24.994Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -19286,8 +19404,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Menu",
           "discoveredFrom": "https://www.ordermezza.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:59.817Z",
-          "lastVerifiedAt": "2026-09-04T12:50:59.817Z",
+          "observedAt": "2026-09-04T13:33:24.994Z",
+          "lastVerifiedAt": "2026-09-04T13:33:24.994Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -19305,8 +19423,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Lion's Head Tavern",
       "website": "https://lionshead.ca/",
       "resolvedUrl": "https://lionshead.ca/",
-      "observedAt": "2026-09-04T12:50:56.969Z",
-      "lastVerifiedAt": "2026-09-04T12:50:56.969Z",
+      "observedAt": "2026-09-04T13:33:21.994Z",
+      "lastVerifiedAt": "2026-09-04T13:33:21.994Z",
       "scannedOwnedPages": [
         "https://lionshead.ca/",
         "https://lionshead.ca/about/",
@@ -19321,8 +19439,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "SIGN ME UP",
           "discoveredFrom": "https://lionshead.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:56.969Z",
-          "lastVerifiedAt": "2026-09-04T12:50:56.969Z",
+          "observedAt": "2026-09-04T13:33:21.994Z",
+          "lastVerifiedAt": "2026-09-04T13:33:21.994Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -19333,8 +19451,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "MENU",
           "discoveredFrom": "https://lionshead.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:56.969Z",
-          "lastVerifiedAt": "2026-09-04T12:50:56.969Z",
+          "observedAt": "2026-09-04T13:33:21.994Z",
+          "lastVerifiedAt": "2026-09-04T13:33:21.994Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -19345,8 +19463,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "EVENTS",
           "discoveredFrom": "https://lionshead.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:56.969Z",
-          "lastVerifiedAt": "2026-09-04T12:50:56.969Z",
+          "observedAt": "2026-09-04T13:33:21.994Z",
+          "lastVerifiedAt": "2026-09-04T13:33:21.994Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -19357,8 +19475,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "RESERVE",
           "discoveredFrom": "https://lionshead.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:56.969Z",
-          "lastVerifiedAt": "2026-09-04T12:50:56.969Z",
+          "observedAt": "2026-09-04T13:33:21.994Z",
+          "lastVerifiedAt": "2026-09-04T13:33:21.994Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -19374,8 +19492,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Jungle Jim's",
       "website": "https://junglejims.ca/",
       "resolvedUrl": "https://junglejims.ca/",
-      "observedAt": "2026-09-04T12:50:55.569Z",
-      "lastVerifiedAt": "2026-09-04T12:50:55.569Z",
+      "observedAt": "2026-09-04T13:33:20.285Z",
+      "lastVerifiedAt": "2026-09-04T13:33:20.285Z",
       "scannedOwnedPages": [
         "https://junglejims.ca/",
         "https://junglejims.ca/find-a-restaurant",
@@ -19394,8 +19512,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://junglejims.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:55.569Z",
-          "lastVerifiedAt": "2026-09-04T12:50:55.569Z",
+          "observedAt": "2026-09-04T13:33:20.285Z",
+          "lastVerifiedAt": "2026-09-04T13:33:20.285Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -19411,8 +19529,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://junglejims.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:55.569Z",
-          "lastVerifiedAt": "2026-09-04T12:50:55.569Z",
+          "observedAt": "2026-09-04T13:33:20.285Z",
+          "lastVerifiedAt": "2026-09-04T13:33:20.285Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -19428,8 +19546,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://junglejims.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:55.569Z",
-          "lastVerifiedAt": "2026-09-04T12:50:55.569Z",
+          "observedAt": "2026-09-04T13:33:20.285Z",
+          "lastVerifiedAt": "2026-09-04T13:33:20.285Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -19443,8 +19561,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Menu",
           "discoveredFrom": "https://junglejims.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:55.569Z",
-          "lastVerifiedAt": "2026-09-04T12:50:55.569Z",
+          "observedAt": "2026-09-04T13:33:20.285Z",
+          "lastVerifiedAt": "2026-09-04T13:33:20.285Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -19455,8 +19573,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Bay Roberts, N.L.",
           "discoveredFrom": "https://junglejims.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:55.569Z",
-          "lastVerifiedAt": "2026-09-04T12:50:55.569Z",
+          "observedAt": "2026-09-04T13:33:20.285Z",
+          "lastVerifiedAt": "2026-09-04T13:33:20.285Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -19467,8 +19585,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "CBS (Manuels), N.L.",
           "discoveredFrom": "https://junglejims.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:55.569Z",
-          "lastVerifiedAt": "2026-09-04T12:50:55.569Z",
+          "observedAt": "2026-09-04T13:33:20.285Z",
+          "lastVerifiedAt": "2026-09-04T13:33:20.285Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -19479,8 +19597,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Clarenville, N.L.",
           "discoveredFrom": "https://junglejims.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:55.569Z",
-          "lastVerifiedAt": "2026-09-04T12:50:55.569Z",
+          "observedAt": "2026-09-04T13:33:20.285Z",
+          "lastVerifiedAt": "2026-09-04T13:33:20.285Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -19491,8 +19609,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Corner Brook, N.L.",
           "discoveredFrom": "https://junglejims.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:55.569Z",
-          "lastVerifiedAt": "2026-09-04T12:50:55.569Z",
+          "observedAt": "2026-09-04T13:33:20.285Z",
+          "lastVerifiedAt": "2026-09-04T13:33:20.285Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -19503,8 +19621,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Deer Lake, N.L.",
           "discoveredFrom": "https://junglejims.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:55.569Z",
-          "lastVerifiedAt": "2026-09-04T12:50:55.569Z",
+          "observedAt": "2026-09-04T13:33:20.285Z",
+          "lastVerifiedAt": "2026-09-04T13:33:20.285Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -19515,8 +19633,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Fredericton, N.B.",
           "discoveredFrom": "https://junglejims.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:55.569Z",
-          "lastVerifiedAt": "2026-09-04T12:50:55.569Z",
+          "observedAt": "2026-09-04T13:33:20.285Z",
+          "lastVerifiedAt": "2026-09-04T13:33:20.285Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -19527,8 +19645,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Gander, N.L.",
           "discoveredFrom": "https://junglejims.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:55.569Z",
-          "lastVerifiedAt": "2026-09-04T12:50:55.569Z",
+          "observedAt": "2026-09-04T13:33:20.285Z",
+          "lastVerifiedAt": "2026-09-04T13:33:20.285Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -19539,8 +19657,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Goulds, N.L.",
           "discoveredFrom": "https://junglejims.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:55.569Z",
-          "lastVerifiedAt": "2026-09-04T12:50:55.569Z",
+          "observedAt": "2026-09-04T13:33:20.285Z",
+          "lastVerifiedAt": "2026-09-04T13:33:20.285Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -19551,8 +19669,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Grand Falls-Windsor, N.L.",
           "discoveredFrom": "https://junglejims.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:55.569Z",
-          "lastVerifiedAt": "2026-09-04T12:50:55.569Z",
+          "observedAt": "2026-09-04T13:33:20.285Z",
+          "lastVerifiedAt": "2026-09-04T13:33:20.285Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -19563,8 +19681,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Halifax (Bayers Lake), N.S.",
           "discoveredFrom": "https://junglejims.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:55.569Z",
-          "lastVerifiedAt": "2026-09-04T12:50:55.569Z",
+          "observedAt": "2026-09-04T13:33:20.285Z",
+          "lastVerifiedAt": "2026-09-04T13:33:20.285Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -19575,8 +19693,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Happy Valley-Goose Bay, LAB",
           "discoveredFrom": "https://junglejims.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:55.569Z",
-          "lastVerifiedAt": "2026-09-04T12:50:55.569Z",
+          "observedAt": "2026-09-04T13:33:20.285Z",
+          "lastVerifiedAt": "2026-09-04T13:33:20.285Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -19587,8 +19705,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "L'Anse au Clair, LAB",
           "discoveredFrom": "https://junglejims.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:55.569Z",
-          "lastVerifiedAt": "2026-09-04T12:50:55.569Z",
+          "observedAt": "2026-09-04T13:33:20.285Z",
+          "lastVerifiedAt": "2026-09-04T13:33:20.285Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -19599,8 +19717,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Labrador City, LAB",
           "discoveredFrom": "https://junglejims.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:55.569Z",
-          "lastVerifiedAt": "2026-09-04T12:50:55.569Z",
+          "observedAt": "2026-09-04T13:33:20.285Z",
+          "lastVerifiedAt": "2026-09-04T13:33:20.285Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -19611,8 +19729,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Lewisporte, N.L.",
           "discoveredFrom": "https://junglejims.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:55.569Z",
-          "lastVerifiedAt": "2026-09-04T12:50:55.569Z",
+          "observedAt": "2026-09-04T13:33:20.285Z",
+          "lastVerifiedAt": "2026-09-04T13:33:20.285Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -19623,8 +19741,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Old Perlican, N.L.",
           "discoveredFrom": "https://junglejims.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:55.569Z",
-          "lastVerifiedAt": "2026-09-04T12:50:55.569Z",
+          "observedAt": "2026-09-04T13:33:20.285Z",
+          "lastVerifiedAt": "2026-09-04T13:33:20.285Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -19635,8 +19753,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Oromocto, N.B.",
           "discoveredFrom": "https://junglejims.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:55.569Z",
-          "lastVerifiedAt": "2026-09-04T12:50:55.569Z",
+          "observedAt": "2026-09-04T13:33:20.285Z",
+          "lastVerifiedAt": "2026-09-04T13:33:20.285Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -19647,8 +19765,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Saint John, N.B.",
           "discoveredFrom": "https://junglejims.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:55.569Z",
-          "lastVerifiedAt": "2026-09-04T12:50:55.569Z",
+          "observedAt": "2026-09-04T13:33:20.285Z",
+          "lastVerifiedAt": "2026-09-04T13:33:20.285Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -19659,8 +19777,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "St. Anthony, N.L.",
           "discoveredFrom": "https://junglejims.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:55.569Z",
-          "lastVerifiedAt": "2026-09-04T12:50:55.569Z",
+          "observedAt": "2026-09-04T13:33:20.285Z",
+          "lastVerifiedAt": "2026-09-04T13:33:20.285Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -19671,8 +19789,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "St. John’s (George Street), N.L.",
           "discoveredFrom": "https://junglejims.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:55.569Z",
-          "lastVerifiedAt": "2026-09-04T12:50:55.569Z",
+          "observedAt": "2026-09-04T13:33:20.285Z",
+          "lastVerifiedAt": "2026-09-04T13:33:20.285Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -19683,8 +19801,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "St. John’s (Topsail Road), N.L.",
           "discoveredFrom": "https://junglejims.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:55.569Z",
-          "lastVerifiedAt": "2026-09-04T12:50:55.569Z",
+          "observedAt": "2026-09-04T13:33:20.285Z",
+          "lastVerifiedAt": "2026-09-04T13:33:20.285Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -19695,8 +19813,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "St. John’s (Torbay Road), N.L.",
           "discoveredFrom": "https://junglejims.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:55.569Z",
-          "lastVerifiedAt": "2026-09-04T12:50:55.569Z",
+          "observedAt": "2026-09-04T13:33:20.285Z",
+          "lastVerifiedAt": "2026-09-04T13:33:20.285Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -19707,8 +19825,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Stellarton, N.S.",
           "discoveredFrom": "https://junglejims.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:55.569Z",
-          "lastVerifiedAt": "2026-09-04T12:50:55.569Z",
+          "observedAt": "2026-09-04T13:33:20.285Z",
+          "lastVerifiedAt": "2026-09-04T13:33:20.285Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -19719,8 +19837,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Yarmouth, N.S.",
           "discoveredFrom": "https://junglejims.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:55.569Z",
-          "lastVerifiedAt": "2026-09-04T12:50:55.569Z",
+          "observedAt": "2026-09-04T13:33:20.285Z",
+          "lastVerifiedAt": "2026-09-04T13:33:20.285Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -19731,8 +19849,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "RESERVE",
           "discoveredFrom": "https://junglejims.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:55.569Z",
-          "lastVerifiedAt": "2026-09-04T12:50:55.569Z",
+          "observedAt": "2026-09-04T13:33:20.285Z",
+          "lastVerifiedAt": "2026-09-04T13:33:20.285Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -19743,8 +19861,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Goulds, N.L.",
           "discoveredFrom": "https://junglejims.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:55.569Z",
-          "lastVerifiedAt": "2026-09-04T12:50:55.569Z",
+          "observedAt": "2026-09-04T13:33:20.285Z",
+          "lastVerifiedAt": "2026-09-04T13:33:20.285Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -19755,8 +19873,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "DoorDash",
           "discoveredFrom": "https://junglejims.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:55.569Z",
-          "lastVerifiedAt": "2026-09-04T12:50:55.569Z",
+          "observedAt": "2026-09-04T13:33:20.285Z",
+          "lastVerifiedAt": "2026-09-04T13:33:20.285Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -19767,8 +19885,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "DoorDash",
           "discoveredFrom": "https://junglejims.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:55.569Z",
-          "lastVerifiedAt": "2026-09-04T12:50:55.569Z",
+          "observedAt": "2026-09-04T13:33:20.285Z",
+          "lastVerifiedAt": "2026-09-04T13:33:20.285Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -19792,8 +19910,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Trident Booksellers and Cafe",
       "website": "https://tridenthalifax.ca/",
       "resolvedUrl": "https://tridenthalifax.ca/",
-      "observedAt": "2026-09-04T12:51:19.478Z",
-      "lastVerifiedAt": "2026-09-04T12:51:19.478Z",
+      "observedAt": "2026-09-04T13:33:42.646Z",
+      "lastVerifiedAt": "2026-09-04T13:33:42.646Z",
       "scannedOwnedPages": [
         "https://tridenthalifax.ca/",
         "https://tridenthalifax.ca/contact-the-trident/"
@@ -19810,8 +19928,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://tridenthalifax.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:19.478Z",
-          "lastVerifiedAt": "2026-09-04T12:51:19.478Z",
+          "observedAt": "2026-09-04T13:33:42.646Z",
+          "lastVerifiedAt": "2026-09-04T13:33:42.646Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -19827,8 +19945,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://tridenthalifax.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:19.478Z",
-          "lastVerifiedAt": "2026-09-04T12:51:19.478Z",
+          "observedAt": "2026-09-04T13:33:42.646Z",
+          "lastVerifiedAt": "2026-09-04T13:33:42.646Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -19844,8 +19962,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://tridenthalifax.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:19.478Z",
-          "lastVerifiedAt": "2026-09-04T12:51:19.478Z",
+          "observedAt": "2026-09-04T13:33:42.646Z",
+          "lastVerifiedAt": "2026-09-04T13:33:42.646Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -19859,8 +19977,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Events at the Trident",
           "discoveredFrom": "https://tridenthalifax.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:19.478Z",
-          "lastVerifiedAt": "2026-09-04T12:51:19.478Z",
+          "observedAt": "2026-09-04T13:33:42.646Z",
+          "lastVerifiedAt": "2026-09-04T13:33:42.646Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -19871,8 +19989,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Live Music! Gourmet Club!",
           "discoveredFrom": "https://tridenthalifax.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:19.478Z",
-          "lastVerifiedAt": "2026-09-04T12:51:19.478Z",
+          "observedAt": "2026-09-04T13:33:42.646Z",
+          "lastVerifiedAt": "2026-09-04T13:33:42.646Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -19883,8 +20001,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Live Music: Kate Ferguson!",
           "discoveredFrom": "https://tridenthalifax.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:19.478Z",
-          "lastVerifiedAt": "2026-09-04T12:51:19.478Z",
+          "observedAt": "2026-09-04T13:33:42.646Z",
+          "lastVerifiedAt": "2026-09-04T13:33:42.646Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -19915,8 +20033,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Marigold Kitchen",
       "website": "https://marigoldkitchen.ca/",
       "resolvedUrl": "https://marigoldkitchen.ca/",
-      "observedAt": "2026-09-04T12:50:57.833Z",
-      "lastVerifiedAt": "2026-09-04T12:50:57.833Z",
+      "observedAt": "2026-09-04T13:33:22.953Z",
+      "lastVerifiedAt": "2026-09-04T13:33:22.953Z",
       "scannedOwnedPages": [
         "https://marigoldkitchen.ca/",
         "https://marigoldkitchen.ca/location/"
@@ -19930,8 +20048,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Order Online",
           "discoveredFrom": "https://marigoldkitchen.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:57.833Z",
-          "lastVerifiedAt": "2026-09-04T12:50:57.833Z",
+          "observedAt": "2026-09-04T13:33:22.953Z",
+          "lastVerifiedAt": "2026-09-04T13:33:22.953Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -19942,8 +20060,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Menu",
           "discoveredFrom": "https://marigoldkitchen.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:57.833Z",
-          "lastVerifiedAt": "2026-09-04T12:50:57.833Z",
+          "observedAt": "2026-09-04T13:33:22.953Z",
+          "lastVerifiedAt": "2026-09-04T13:33:22.953Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -19961,8 +20079,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Pazzo Ristorante & Enoteca",
       "website": "https://www.rcr.ca/restaurants/pazzo-italian-ristorante/",
       "resolvedUrl": "https://www.rcr.ca/restaurants/pazzo-italian-ristorante/",
-      "observedAt": "2026-09-04T12:51:02.494Z",
-      "lastVerifiedAt": "2026-09-04T12:51:02.494Z",
+      "observedAt": "2026-09-04T13:33:28.182Z",
+      "lastVerifiedAt": "2026-09-04T13:33:28.182Z",
       "scannedOwnedPages": [
         "https://www.rcr.ca/restaurants/pazzo-italian-ristorante/",
         "https://www.rcr.ca/restaurants/",
@@ -19982,8 +20100,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.rcr.ca/restaurants/pazzo-italian-ristorante/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:02.494Z",
-          "lastVerifiedAt": "2026-09-04T12:51:02.494Z",
+          "observedAt": "2026-09-04T13:33:28.182Z",
+          "lastVerifiedAt": "2026-09-04T13:33:28.182Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -19999,8 +20117,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.rcr.ca/restaurants/agricola-street-brasserie/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:02.494Z",
-          "lastVerifiedAt": "2026-09-04T12:51:02.494Z",
+          "observedAt": "2026-09-04T13:33:28.182Z",
+          "lastVerifiedAt": "2026-09-04T13:33:28.182Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -20016,8 +20134,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.rcr.ca/restaurants/agricola-street-brasserie/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:02.494Z",
-          "lastVerifiedAt": "2026-09-04T12:51:02.494Z",
+          "observedAt": "2026-09-04T13:33:28.182Z",
+          "lastVerifiedAt": "2026-09-04T13:33:28.182Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -20031,8 +20149,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Dinner Menu",
           "discoveredFrom": "https://www.rcr.ca/restaurants/pazzo-italian-ristorante/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:02.494Z",
-          "lastVerifiedAt": "2026-09-04T12:51:02.494Z",
+          "observedAt": "2026-09-04T13:33:28.182Z",
+          "lastVerifiedAt": "2026-09-04T13:33:28.182Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -20043,8 +20161,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Seasonal Tasting Menu",
           "discoveredFrom": "https://www.rcr.ca/restaurants/pazzo-italian-ristorante/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:02.494Z",
-          "lastVerifiedAt": "2026-09-04T12:51:02.494Z",
+          "observedAt": "2026-09-04T13:33:28.182Z",
+          "lastVerifiedAt": "2026-09-04T13:33:28.182Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -20055,8 +20173,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "reservations",
           "discoveredFrom": "https://www.rcr.ca/restaurants/pazzo-italian-ristorante/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:02.494Z",
-          "lastVerifiedAt": "2026-09-04T12:51:02.494Z",
+          "observedAt": "2026-09-04T13:33:28.182Z",
+          "lastVerifiedAt": "2026-09-04T13:33:28.182Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -20067,8 +20185,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Dinner Menu",
           "discoveredFrom": "https://www.rcr.ca/restaurants/agricola-street-brasserie/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:02.494Z",
-          "lastVerifiedAt": "2026-09-04T12:51:02.494Z",
+          "observedAt": "2026-09-04T13:33:28.182Z",
+          "lastVerifiedAt": "2026-09-04T13:33:28.182Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -20087,8 +20205,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "The Bread Lounge",
       "website": "https://breadlounge.ca/",
       "resolvedUrl": "https://thebreadloungebakery.square.site/",
-      "observedAt": "2026-09-04T12:51:11.301Z",
-      "lastVerifiedAt": "2026-09-04T12:51:11.301Z",
+      "observedAt": "2026-09-04T13:33:37.743Z",
+      "lastVerifiedAt": "2026-09-04T13:33:37.743Z",
       "scannedOwnedPages": [
         "https://thebreadloungebakery.square.site/"
       ],
@@ -20107,8 +20225,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Masala Delight",
       "website": "https://masaladelight.com/",
       "resolvedUrl": "https://masaladelight.com/",
-      "observedAt": "2026-09-04T12:50:57.968Z",
-      "lastVerifiedAt": "2026-09-04T12:50:57.968Z",
+      "observedAt": "2026-09-04T13:33:23.433Z",
+      "lastVerifiedAt": "2026-09-04T13:33:23.433Z",
       "scannedOwnedPages": [
         "https://masaladelight.com/"
       ],
@@ -20125,8 +20243,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "King of Donair",
       "website": "https://www.kingofdonair.ca/",
       "resolvedUrl": "https://www.kingofdonair.ca/",
-      "observedAt": "2026-09-04T12:50:58.301Z",
-      "lastVerifiedAt": "2026-09-04T12:50:58.301Z",
+      "observedAt": "2026-09-04T13:33:22.699Z",
+      "lastVerifiedAt": "2026-09-04T13:33:22.699Z",
       "scannedOwnedPages": [
         "https://www.kingofdonair.ca/",
         "https://www.kingofdonair.ca/order-online-choose-a-location/",
@@ -20145,8 +20263,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.kingofdonair.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:58.301Z",
-          "lastVerifiedAt": "2026-09-04T12:50:58.301Z",
+          "observedAt": "2026-09-04T13:33:22.699Z",
+          "lastVerifiedAt": "2026-09-04T13:33:22.699Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -20162,8 +20280,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.kingofdonair.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:58.301Z",
-          "lastVerifiedAt": "2026-09-04T12:50:58.301Z",
+          "observedAt": "2026-09-04T13:33:22.699Z",
+          "lastVerifiedAt": "2026-09-04T13:33:22.699Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -20179,8 +20297,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.kingofdonair.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:58.301Z",
-          "lastVerifiedAt": "2026-09-04T12:50:58.301Z",
+          "observedAt": "2026-09-04T13:33:22.699Z",
+          "lastVerifiedAt": "2026-09-04T13:33:22.699Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -20194,8 +20312,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Menu",
           "discoveredFrom": "https://www.kingofdonair.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:58.301Z",
-          "lastVerifiedAt": "2026-09-04T12:50:58.301Z",
+          "observedAt": "2026-09-04T13:33:22.699Z",
+          "lastVerifiedAt": "2026-09-04T13:33:22.699Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -20206,8 +20324,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "View Menu",
           "discoveredFrom": "https://www.kingofdonair.ca/order-online-choose-a-location/",
           "associationBasis": "linked_from_official_location_page",
-          "observedAt": "2026-09-04T12:50:58.301Z",
-          "lastVerifiedAt": "2026-09-04T12:50:58.301Z",
+          "observedAt": "2026-09-04T13:33:22.699Z",
+          "lastVerifiedAt": "2026-09-04T13:33:22.699Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -20218,8 +20336,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Order on Skip the Dishes",
           "discoveredFrom": "https://www.kingofdonair.ca/order-online-choose-a-location/",
           "associationBasis": "linked_from_official_location_page",
-          "observedAt": "2026-09-04T12:50:58.301Z",
-          "lastVerifiedAt": "2026-09-04T12:50:58.301Z",
+          "observedAt": "2026-09-04T13:33:22.699Z",
+          "lastVerifiedAt": "2026-09-04T13:33:22.699Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -20230,8 +20348,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Order on UberEats",
           "discoveredFrom": "https://www.kingofdonair.ca/order-online-choose-a-location/",
           "associationBasis": "linked_from_official_location_page",
-          "observedAt": "2026-09-04T12:50:58.301Z",
-          "lastVerifiedAt": "2026-09-04T12:50:58.301Z",
+          "observedAt": "2026-09-04T13:33:22.699Z",
+          "lastVerifiedAt": "2026-09-04T13:33:22.699Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -20242,8 +20360,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Order on DoorDash",
           "discoveredFrom": "https://www.kingofdonair.ca/order-online-choose-a-location/",
           "associationBasis": "linked_from_official_location_page",
-          "observedAt": "2026-09-04T12:50:58.301Z",
-          "lastVerifiedAt": "2026-09-04T12:50:58.301Z",
+          "observedAt": "2026-09-04T13:33:22.699Z",
+          "lastVerifiedAt": "2026-09-04T13:33:22.699Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -20269,8 +20387,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "HARVEST",
       "website": "https://www.orderharvest.ca/",
       "resolvedUrl": "https://www.harvestcleaneats.ca/",
-      "observedAt": "2026-09-04T12:50:53.231Z",
-      "lastVerifiedAt": "2026-09-04T12:50:53.231Z",
+      "observedAt": "2026-09-04T13:33:18.566Z",
+      "lastVerifiedAt": "2026-09-04T13:33:18.566Z",
       "scannedOwnedPages": [
         "https://www.harvestcleaneats.ca/",
         "https://www.harvestcleaneats.ca/locations",
@@ -20290,8 +20408,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.harvestcleaneats.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:53.231Z",
-          "lastVerifiedAt": "2026-09-04T12:50:53.231Z",
+          "observedAt": "2026-09-04T13:33:18.566Z",
+          "lastVerifiedAt": "2026-09-04T13:33:18.566Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -20307,8 +20425,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.harvestcleaneats.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:53.231Z",
-          "lastVerifiedAt": "2026-09-04T12:50:53.231Z",
+          "observedAt": "2026-09-04T13:33:18.566Z",
+          "lastVerifiedAt": "2026-09-04T13:33:18.566Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -20324,8 +20442,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.harvestcleaneats.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:53.231Z",
-          "lastVerifiedAt": "2026-09-04T12:50:53.231Z",
+          "observedAt": "2026-09-04T13:33:18.566Z",
+          "lastVerifiedAt": "2026-09-04T13:33:18.566Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -20339,8 +20457,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Menu",
           "discoveredFrom": "https://www.harvestcleaneats.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:53.231Z",
-          "lastVerifiedAt": "2026-09-04T12:50:53.231Z",
+          "observedAt": "2026-09-04T13:33:18.566Z",
+          "lastVerifiedAt": "2026-09-04T13:33:18.566Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -20351,8 +20469,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "ORDER ONLINE",
           "discoveredFrom": "https://www.harvestcleaneats.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:53.231Z",
-          "lastVerifiedAt": "2026-09-04T12:50:53.231Z",
+          "observedAt": "2026-09-04T13:33:18.566Z",
+          "lastVerifiedAt": "2026-09-04T13:33:18.566Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -20363,8 +20481,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "TRY IT TODAY",
           "discoveredFrom": "https://www.harvestcleaneats.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:53.231Z",
-          "lastVerifiedAt": "2026-09-04T12:50:53.231Z",
+          "observedAt": "2026-09-04T13:33:18.566Z",
+          "lastVerifiedAt": "2026-09-04T13:33:18.566Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -20382,8 +20500,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Mother's Pizza",
       "website": "https://motherspizzahalifax.ca/",
       "resolvedUrl": "https://motherspizzahalifax.ca/",
-      "observedAt": "2026-09-04T12:51:00.693Z",
-      "lastVerifiedAt": "2026-09-04T12:51:00.693Z",
+      "observedAt": "2026-09-04T13:33:26.599Z",
+      "lastVerifiedAt": "2026-09-04T13:33:26.599Z",
       "scannedOwnedPages": [
         "https://motherspizzahalifax.ca/",
         "https://motherspizzahalifax.ca/menu-restaurant/",
@@ -20402,8 +20520,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://motherspizzahalifax.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:00.693Z",
-          "lastVerifiedAt": "2026-09-04T12:51:00.693Z",
+          "observedAt": "2026-09-04T13:33:26.599Z",
+          "lastVerifiedAt": "2026-09-04T13:33:26.599Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -20419,8 +20537,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://motherspizzahalifax.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:00.693Z",
-          "lastVerifiedAt": "2026-09-04T12:51:00.693Z",
+          "observedAt": "2026-09-04T13:33:26.599Z",
+          "lastVerifiedAt": "2026-09-04T13:33:26.599Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -20434,8 +20552,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Tripadvisor",
           "discoveredFrom": "https://motherspizzahalifax.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:00.693Z",
-          "lastVerifiedAt": "2026-09-04T12:51:00.693Z",
+          "observedAt": "2026-09-04T13:33:26.599Z",
+          "lastVerifiedAt": "2026-09-04T13:33:26.599Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -20446,8 +20564,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Menu",
           "discoveredFrom": "https://motherspizzahalifax.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:00.693Z",
-          "lastVerifiedAt": "2026-09-04T12:51:00.693Z",
+          "observedAt": "2026-09-04T13:33:26.599Z",
+          "lastVerifiedAt": "2026-09-04T13:33:26.599Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -20458,8 +20576,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Order Online",
           "discoveredFrom": "https://motherspizzahalifax.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:00.693Z",
-          "lastVerifiedAt": "2026-09-04T12:51:00.693Z",
+          "observedAt": "2026-09-04T13:33:26.599Z",
+          "lastVerifiedAt": "2026-09-04T13:33:26.599Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -20470,8 +20588,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Online order and menu",
           "discoveredFrom": "https://motherspizzahalifax.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:00.693Z",
-          "lastVerifiedAt": "2026-09-04T12:51:00.693Z",
+          "observedAt": "2026-09-04T13:33:26.599Z",
+          "lastVerifiedAt": "2026-09-04T13:33:26.599Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -20504,8 +20622,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Subway",
       "website": "https://www.subway.com/",
       "resolvedUrl": "https://www.subway.com/en-ca",
-      "observedAt": "2026-09-04T12:51:08.966Z",
-      "lastVerifiedAt": "2026-09-04T12:51:08.966Z",
+      "observedAt": "2026-09-04T13:33:35.339Z",
+      "lastVerifiedAt": "2026-09-04T13:33:35.339Z",
       "scannedOwnedPages": [
         "https://www.subway.com/en-ca"
       ],
@@ -20518,8 +20636,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Start Order",
           "discoveredFrom": "https://www.subway.com/en-ca",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:08.966Z",
-          "lastVerifiedAt": "2026-09-04T12:51:08.966Z",
+          "observedAt": "2026-09-04T13:33:35.339Z",
+          "lastVerifiedAt": "2026-09-04T13:33:35.339Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -20542,8 +20660,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Budapest Bisztro",
       "website": "https://budapestbisztro.ca/",
       "resolvedUrl": "https://budapestbisztro.ca/",
-      "observedAt": "2026-09-04T12:50:45.355Z",
-      "lastVerifiedAt": "2026-09-04T12:50:45.355Z",
+      "observedAt": "2026-09-04T13:33:09.907Z",
+      "lastVerifiedAt": "2026-09-04T13:33:09.907Z",
       "scannedOwnedPages": [
         "https://budapestbisztro.ca/"
       ],
@@ -20560,8 +20678,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Starbucks",
       "website": "https://www.starbucks.ca/store-locator/store/65775-299863/atlantic-superstore-portland-s-650-portland-street-dartmouth-ns-b-2-w-2-m-7-ca",
       "resolvedUrl": "https://www.starbucks.ca/store-locator/store/65775-299863/atlantic-superstore-portland-s-650-portland-street-dartmouth-ns-b-2-w-2-m-7-ca",
-      "observedAt": "2026-09-04T12:50:51.619Z",
-      "lastVerifiedAt": "2026-09-04T12:50:51.619Z",
+      "observedAt": "2026-09-04T13:33:17.003Z",
+      "lastVerifiedAt": "2026-09-04T13:33:17.003Z",
       "scannedOwnedPages": [
         "https://www.starbucks.ca/store-locator/store/65775-299863/atlantic-superstore-portland-s-650-portland-street-dartmouth-ns-b-2-w-2-m-7-ca"
       ],
@@ -20580,8 +20698,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "IHOP",
       "website": "https://restaurants.ihop.com/en-ca/ns/bedford/breakfast-80-hogan-court-4023",
       "resolvedUrl": "https://ihop.ca/",
-      "observedAt": "2026-09-04T12:50:54.285Z",
-      "lastVerifiedAt": "2026-09-04T12:50:54.285Z",
+      "observedAt": "2026-09-04T13:33:19.368Z",
+      "lastVerifiedAt": "2026-09-04T13:33:19.368Z",
       "scannedOwnedPages": [
         "https://ihop.ca/"
       ],
@@ -20597,8 +20715,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://ihop.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:54.285Z",
-          "lastVerifiedAt": "2026-09-04T12:50:54.285Z",
+          "observedAt": "2026-09-04T13:33:19.368Z",
+          "lastVerifiedAt": "2026-09-04T13:33:19.368Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -20612,8 +20730,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Order Online",
           "discoveredFrom": "https://ihop.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:54.285Z",
-          "lastVerifiedAt": "2026-09-04T12:50:54.285Z",
+          "observedAt": "2026-09-04T13:33:19.368Z",
+          "lastVerifiedAt": "2026-09-04T13:33:19.368Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -20639,8 +20757,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Terra Cafe",
       "website": "https://terracafe.ca/",
       "resolvedUrl": "https://terracafe.ca/",
-      "observedAt": "2026-09-04T12:51:10.071Z",
-      "lastVerifiedAt": "2026-09-04T12:51:10.071Z",
+      "observedAt": "2026-09-04T13:33:36.985Z",
+      "lastVerifiedAt": "2026-09-04T13:33:36.985Z",
       "scannedOwnedPages": [
         "https://terracafe.ca/",
         "https://terracafe.ca/aboutus"
@@ -20657,8 +20775,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://terracafe.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:10.071Z",
-          "lastVerifiedAt": "2026-09-04T12:51:10.071Z",
+          "observedAt": "2026-09-04T13:33:36.985Z",
+          "lastVerifiedAt": "2026-09-04T13:33:36.985Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -20674,8 +20792,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://terracafe.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:10.071Z",
-          "lastVerifiedAt": "2026-09-04T12:51:10.071Z",
+          "observedAt": "2026-09-04T13:33:36.985Z",
+          "lastVerifiedAt": "2026-09-04T13:33:36.985Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -20689,8 +20807,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "The Kitchen Menu",
           "discoveredFrom": "https://terracafe.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:10.071Z",
-          "lastVerifiedAt": "2026-09-04T12:51:10.071Z",
+          "observedAt": "2026-09-04T13:33:36.985Z",
+          "lastVerifiedAt": "2026-09-04T13:33:36.985Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -20701,8 +20819,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Folder: Menu",
           "discoveredFrom": "https://terracafe.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:10.071Z",
-          "lastVerifiedAt": "2026-09-04T12:51:10.071Z",
+          "observedAt": "2026-09-04T13:33:36.985Z",
+          "lastVerifiedAt": "2026-09-04T13:33:36.985Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -20713,8 +20831,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "menu",
           "discoveredFrom": "https://terracafe.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:10.071Z",
-          "lastVerifiedAt": "2026-09-04T12:51:10.071Z",
+          "observedAt": "2026-09-04T13:33:36.985Z",
+          "lastVerifiedAt": "2026-09-04T13:33:36.985Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -20732,8 +20850,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Starbucks",
       "website": "https://www.starbucks.ca/store-locator/store/20568-206464/halifax-shopping-centre-leve-7001-mumford-road-halifax-ns-b-3-l-4-t-8-ca",
       "resolvedUrl": "https://www.starbucks.ca/store-locator/store/20568-206464/halifax-shopping-centre-leve-7001-mumford-road-halifax-ns-b-3-l-4-t-8-ca",
-      "observedAt": "2026-09-04T12:50:53.344Z",
-      "lastVerifiedAt": "2026-09-04T12:50:53.344Z",
+      "observedAt": "2026-09-04T13:33:18.750Z",
+      "lastVerifiedAt": "2026-09-04T13:33:18.750Z",
       "scannedOwnedPages": [
         "https://www.starbucks.ca/store-locator/store/20568-206464/halifax-shopping-centre-leve-7001-mumford-road-halifax-ns-b-3-l-4-t-8-ca"
       ],
@@ -20752,8 +20870,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Tim Hortons",
       "website": "https://www.timhortons.com/",
       "resolvedUrl": "https://www.timhortons.com/",
-      "observedAt": "2026-09-04T12:51:18.896Z",
-      "lastVerifiedAt": "2026-09-04T12:51:18.896Z",
+      "observedAt": "2026-09-04T13:33:42.339Z",
+      "lastVerifiedAt": "2026-09-04T13:33:42.339Z",
       "scannedOwnedPages": [
         "https://www.timhortons.com/"
       ],
@@ -20770,8 +20888,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Tim Hortons",
       "website": "https://locations.timhortons.ca/en/ns/halifax/390-osborne-street/",
       "resolvedUrl": "https://locations.timhortons.ca/en/ns/halifax/390-osborne-street/",
-      "observedAt": "2026-09-04T12:51:16.859Z",
-      "lastVerifiedAt": "2026-09-04T12:51:16.859Z",
+      "observedAt": "2026-09-04T13:33:41.567Z",
+      "lastVerifiedAt": "2026-09-04T13:33:41.567Z",
       "scannedOwnedPages": [
         "https://locations.timhortons.ca/en/ns/halifax/390-osborne-street/",
         "https://locations.timhortons.ca/en/locations-list/",
@@ -20791,8 +20909,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://locations.timhortons.ca/en/ns/halifax/390-osborne-street/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:16.859Z",
-          "lastVerifiedAt": "2026-09-04T12:51:16.859Z",
+          "observedAt": "2026-09-04T13:33:41.567Z",
+          "lastVerifiedAt": "2026-09-04T13:33:41.567Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -20808,8 +20926,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://locations.timhortons.ca/en/ns/halifax/390-osborne-street/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:16.859Z",
-          "lastVerifiedAt": "2026-09-04T12:51:16.859Z",
+          "observedAt": "2026-09-04T13:33:41.567Z",
+          "lastVerifiedAt": "2026-09-04T13:33:41.567Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -20825,8 +20943,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://locations.timhortons.ca/en/ns/halifax/390-osborne-street/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:16.859Z",
-          "lastVerifiedAt": "2026-09-04T12:51:16.859Z",
+          "observedAt": "2026-09-04T13:33:41.567Z",
+          "lastVerifiedAt": "2026-09-04T13:33:41.567Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -20842,8 +20960,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://locations.timhortons.ca/en/ns/halifax/390-osborne-street/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:16.859Z",
-          "lastVerifiedAt": "2026-09-04T12:51:16.859Z",
+          "observedAt": "2026-09-04T13:33:41.567Z",
+          "lastVerifiedAt": "2026-09-04T13:33:41.567Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -20857,8 +20975,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Order Pickup",
           "discoveredFrom": "https://locations.timhortons.ca/en/ns/halifax/390-osborne-street/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:16.859Z",
-          "lastVerifiedAt": "2026-09-04T12:51:16.859Z",
+          "observedAt": "2026-09-04T13:33:41.567Z",
+          "lastVerifiedAt": "2026-09-04T13:33:41.567Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -20869,8 +20987,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Order Now",
           "discoveredFrom": "https://locations.timhortons.ca/en/ns/halifax/390-osborne-street/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:16.859Z",
-          "lastVerifiedAt": "2026-09-04T12:51:16.859Z",
+          "observedAt": "2026-09-04T13:33:41.567Z",
+          "lastVerifiedAt": "2026-09-04T13:33:41.567Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -20881,8 +20999,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Reserve Mines",
           "discoveredFrom": "https://locations.timhortons.ca/en/locations-list/ns/",
           "associationBasis": "linked_from_official_location_page",
-          "observedAt": "2026-09-04T12:51:16.859Z",
-          "lastVerifiedAt": "2026-09-04T12:51:16.859Z",
+          "observedAt": "2026-09-04T13:33:41.567Z",
+          "lastVerifiedAt": "2026-09-04T13:33:41.567Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -20900,8 +21018,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Tim Hortons",
       "website": "https://www.timhortons.ca/store-locator/store/restaurant_67296",
       "resolvedUrl": "https://www.timhortons.ca/store-locator/store/restaurant_67296",
-      "observedAt": "2026-09-04T12:51:17.478Z",
-      "lastVerifiedAt": "2026-09-04T12:51:17.478Z",
+      "observedAt": "2026-09-04T13:33:41.470Z",
+      "lastVerifiedAt": "2026-09-04T13:33:41.470Z",
       "scannedOwnedPages": [
         "https://www.timhortons.ca/store-locator/store/restaurant_67296"
       ],
@@ -20918,8 +21036,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Wendy's",
       "website": "https://locations.wendys.com/canada/ns/halifax/3580-kempt-road",
       "resolvedUrl": "https://locations.wendys.com/canada/ns/halifax/3580-kempt-road",
-      "observedAt": "2026-09-04T12:51:21.076Z",
-      "lastVerifiedAt": "2026-09-04T12:51:21.076Z",
+      "observedAt": "2026-09-04T13:33:44.645Z",
+      "lastVerifiedAt": "2026-09-04T13:33:44.645Z",
       "scannedOwnedPages": [
         "https://locations.wendys.com/canada/ns/halifax/3580-kempt-road",
         "https://locations.wendys.com/index.html",
@@ -20939,8 +21057,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://locations.wendys.com/canada/ns/halifax/3580-kempt-road",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:21.076Z",
-          "lastVerifiedAt": "2026-09-04T12:51:21.076Z",
+          "observedAt": "2026-09-04T13:33:44.645Z",
+          "lastVerifiedAt": "2026-09-04T13:33:44.645Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -20956,8 +21074,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://locations.wendys.com/canada/ns/halifax/3580-kempt-road",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:21.076Z",
-          "lastVerifiedAt": "2026-09-04T12:51:21.076Z",
+          "observedAt": "2026-09-04T13:33:44.645Z",
+          "lastVerifiedAt": "2026-09-04T13:33:44.645Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -20973,8 +21091,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://locations.wendys.com/canada/ns/halifax/3580-kempt-road",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:21.076Z",
-          "lastVerifiedAt": "2026-09-04T12:51:21.076Z",
+          "observedAt": "2026-09-04T13:33:44.645Z",
+          "lastVerifiedAt": "2026-09-04T13:33:44.645Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -20988,8 +21106,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Order Delivery",
           "discoveredFrom": "https://locations.wendys.com/canada/ns/halifax/3580-kempt-road",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:21.076Z",
-          "lastVerifiedAt": "2026-09-04T12:51:21.076Z",
+          "observedAt": "2026-09-04T13:33:44.645Z",
+          "lastVerifiedAt": "2026-09-04T13:33:44.645Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -21000,8 +21118,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "VIEW OUR MENU",
           "discoveredFrom": "https://locations.wendys.com/canada/ns/halifax/3580-kempt-road",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:21.076Z",
-          "lastVerifiedAt": "2026-09-04T12:51:21.076Z",
+          "observedAt": "2026-09-04T13:33:44.645Z",
+          "lastVerifiedAt": "2026-09-04T13:33:44.645Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -21012,8 +21130,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Menu",
           "discoveredFrom": "https://locations.wendys.com/canada/ns/halifax/3580-kempt-road",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:21.076Z",
-          "lastVerifiedAt": "2026-09-04T12:51:21.076Z",
+          "observedAt": "2026-09-04T13:33:44.645Z",
+          "lastVerifiedAt": "2026-09-04T13:33:44.645Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -21024,8 +21142,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "View Menu",
           "discoveredFrom": "https://locations.wendys.com/canada/ns/halifax/3580-kempt-road",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:21.076Z",
-          "lastVerifiedAt": "2026-09-04T12:51:21.076Z",
+          "observedAt": "2026-09-04T13:33:44.645Z",
+          "lastVerifiedAt": "2026-09-04T13:33:44.645Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -21036,8 +21154,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Dave's Double®",
           "discoveredFrom": "https://locations.wendys.com/canada/ns/halifax/3580-kempt-road",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:21.076Z",
-          "lastVerifiedAt": "2026-09-04T12:51:21.076Z",
+          "observedAt": "2026-09-04T13:33:44.645Z",
+          "lastVerifiedAt": "2026-09-04T13:33:44.645Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -21048,8 +21166,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Apple Pecan Chicken Salad",
           "discoveredFrom": "https://locations.wendys.com/canada/ns/halifax/3580-kempt-road",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:21.076Z",
-          "lastVerifiedAt": "2026-09-04T12:51:21.076Z",
+          "observedAt": "2026-09-04T13:33:44.645Z",
+          "lastVerifiedAt": "2026-09-04T13:33:44.645Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -21060,8 +21178,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Spicy Chicken Sandwich",
           "discoveredFrom": "https://locations.wendys.com/canada/ns/halifax/3580-kempt-road",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:21.076Z",
-          "lastVerifiedAt": "2026-09-04T12:51:21.076Z",
+          "observedAt": "2026-09-04T13:33:44.645Z",
+          "lastVerifiedAt": "2026-09-04T13:33:44.645Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -21072,8 +21190,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Hot Coffee",
           "discoveredFrom": "https://locations.wendys.com/canada/ns/halifax/3580-kempt-road",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:21.076Z",
-          "lastVerifiedAt": "2026-09-04T12:51:21.076Z",
+          "observedAt": "2026-09-04T13:33:44.645Z",
+          "lastVerifiedAt": "2026-09-04T13:33:44.645Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -21084,8 +21202,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Vanilla Frosty®-ccino",
           "discoveredFrom": "https://locations.wendys.com/canada/ns/halifax/3580-kempt-road",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:21.076Z",
-          "lastVerifiedAt": "2026-09-04T12:51:21.076Z",
+          "observedAt": "2026-09-04T13:33:44.645Z",
+          "lastVerifiedAt": "2026-09-04T13:33:44.645Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -21096,8 +21214,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Breakfast Baconator™",
           "discoveredFrom": "https://locations.wendys.com/canada/ns/halifax/3580-kempt-road",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:21.076Z",
-          "lastVerifiedAt": "2026-09-04T12:51:21.076Z",
+          "observedAt": "2026-09-04T13:33:44.645Z",
+          "lastVerifiedAt": "2026-09-04T13:33:44.645Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -21108,8 +21226,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Order Order Pickup",
           "discoveredFrom": "https://locations.wendys.com/index.html",
           "associationBasis": "linked_from_official_location_page",
-          "observedAt": "2026-09-04T12:51:21.076Z",
-          "lastVerifiedAt": "2026-09-04T12:51:21.076Z",
+          "observedAt": "2026-09-04T13:33:44.645Z",
+          "lastVerifiedAt": "2026-09-04T13:33:44.645Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -21120,8 +21238,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Order Delivery",
           "discoveredFrom": "https://locations.wendys.com/index.html",
           "associationBasis": "linked_from_official_location_page",
-          "observedAt": "2026-09-04T12:51:21.076Z",
-          "lastVerifiedAt": "2026-09-04T12:51:21.076Z",
+          "observedAt": "2026-09-04T13:33:44.645Z",
+          "lastVerifiedAt": "2026-09-04T13:33:44.645Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -21132,8 +21250,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "VIEW OUR MENU",
           "discoveredFrom": "https://locations.wendys.com/index.html",
           "associationBasis": "linked_from_official_location_page",
-          "observedAt": "2026-09-04T12:51:21.076Z",
-          "lastVerifiedAt": "2026-09-04T12:51:21.076Z",
+          "observedAt": "2026-09-04T13:33:44.645Z",
+          "lastVerifiedAt": "2026-09-04T13:33:44.645Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -21144,8 +21262,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Food",
           "discoveredFrom": "https://locations.wendys.com/index.html",
           "associationBasis": "linked_from_official_location_page",
-          "observedAt": "2026-09-04T12:51:21.076Z",
-          "lastVerifiedAt": "2026-09-04T12:51:21.076Z",
+          "observedAt": "2026-09-04T13:33:44.645Z",
+          "lastVerifiedAt": "2026-09-04T13:33:44.645Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -21163,8 +21281,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Tim Hortons",
       "website": "https://www.timhortons.ca/store-locator/store/restaurant_66291",
       "resolvedUrl": "https://www.timhortons.ca/store-locator/store/restaurant_66291",
-      "observedAt": "2026-09-04T12:51:18.045Z",
-      "lastVerifiedAt": "2026-09-04T12:51:18.045Z",
+      "observedAt": "2026-09-04T13:33:41.890Z",
+      "lastVerifiedAt": "2026-09-04T13:33:41.890Z",
       "scannedOwnedPages": [
         "https://www.timhortons.ca/store-locator/store/restaurant_66291"
       ],
@@ -21181,8 +21299,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Tim Hortons",
       "website": "https://timhortons.ca/",
       "resolvedUrl": "https://www.timhortons.ca/",
-      "observedAt": "2026-09-04T12:51:18.661Z",
-      "lastVerifiedAt": "2026-09-04T12:51:18.661Z",
+      "observedAt": "2026-09-04T13:33:42.231Z",
+      "lastVerifiedAt": "2026-09-04T13:33:42.231Z",
       "scannedOwnedPages": [
         "https://www.timhortons.ca/"
       ],
@@ -21199,8 +21317,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "The Armview Restaurant & Lounge",
       "website": "https://www.thearmview.com/",
       "resolvedUrl": "https://www.thearmview.com/",
-      "observedAt": "2026-09-04T12:51:10.177Z",
-      "lastVerifiedAt": "2026-09-04T12:51:10.177Z",
+      "observedAt": "2026-09-04T13:33:37.174Z",
+      "lastVerifiedAt": "2026-09-04T13:33:37.174Z",
       "scannedOwnedPages": [
         "https://www.thearmview.com/",
         "https://www.thearmview.com/about-the-armview/",
@@ -21218,8 +21336,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.thearmview.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:10.177Z",
-          "lastVerifiedAt": "2026-09-04T12:51:10.177Z",
+          "observedAt": "2026-09-04T13:33:37.174Z",
+          "lastVerifiedAt": "2026-09-04T13:33:37.174Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -21235,8 +21353,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.thearmview.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:10.177Z",
-          "lastVerifiedAt": "2026-09-04T12:51:10.177Z",
+          "observedAt": "2026-09-04T13:33:37.174Z",
+          "lastVerifiedAt": "2026-09-04T13:33:37.174Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -21252,8 +21370,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.thearmview.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:10.177Z",
-          "lastVerifiedAt": "2026-09-04T12:51:10.177Z",
+          "observedAt": "2026-09-04T13:33:37.174Z",
+          "lastVerifiedAt": "2026-09-04T13:33:37.174Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -21267,8 +21385,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "order online",
           "discoveredFrom": "https://www.thearmview.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:10.177Z",
-          "lastVerifiedAt": "2026-09-04T12:51:10.177Z",
+          "observedAt": "2026-09-04T13:33:37.174Z",
+          "lastVerifiedAt": "2026-09-04T13:33:37.174Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -21279,8 +21397,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Menus",
           "discoveredFrom": "https://www.thearmview.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:10.177Z",
-          "lastVerifiedAt": "2026-09-04T12:51:10.177Z",
+          "observedAt": "2026-09-04T13:33:37.174Z",
+          "lastVerifiedAt": "2026-09-04T13:33:37.174Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -21291,8 +21409,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Drinks Menu",
           "discoveredFrom": "https://www.thearmview.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:10.177Z",
-          "lastVerifiedAt": "2026-09-04T12:51:10.177Z",
+          "observedAt": "2026-09-04T13:33:37.174Z",
+          "lastVerifiedAt": "2026-09-04T13:33:37.174Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -21303,8 +21421,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Armview Park Menu",
           "discoveredFrom": "https://www.thearmview.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:10.177Z",
-          "lastVerifiedAt": "2026-09-04T12:51:10.177Z",
+          "observedAt": "2026-09-04T13:33:37.174Z",
+          "lastVerifiedAt": "2026-09-04T13:33:37.174Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -21315,8 +21433,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Events Menu",
           "discoveredFrom": "https://www.thearmview.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:10.177Z",
-          "lastVerifiedAt": "2026-09-04T12:51:10.177Z",
+          "observedAt": "2026-09-04T13:33:37.174Z",
+          "lastVerifiedAt": "2026-09-04T13:33:37.174Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -21327,8 +21445,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "menu",
           "discoveredFrom": "https://www.thearmview.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:10.177Z",
-          "lastVerifiedAt": "2026-09-04T12:51:10.177Z",
+          "observedAt": "2026-09-04T13:33:37.174Z",
+          "lastVerifiedAt": "2026-09-04T13:33:37.174Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -21359,8 +21477,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Chinatown",
       "website": "https://www.chinatownhalifax.com/",
       "resolvedUrl": "https://www.chinatownhalifax.com/",
-      "observedAt": "2026-09-04T12:50:46.488Z",
-      "lastVerifiedAt": "2026-09-04T12:50:46.488Z",
+      "observedAt": "2026-09-04T13:33:11.011Z",
+      "lastVerifiedAt": "2026-09-04T13:33:11.011Z",
       "scannedOwnedPages": [
         "https://www.chinatownhalifax.com/",
         "https://www.chinatownhalifax.com/about-us/",
@@ -21375,8 +21493,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Menu",
           "discoveredFrom": "https://www.chinatownhalifax.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:46.488Z",
-          "lastVerifiedAt": "2026-09-04T12:50:46.488Z",
+          "observedAt": "2026-09-04T13:33:11.011Z",
+          "lastVerifiedAt": "2026-09-04T13:33:11.011Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -21387,8 +21505,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "中文菜单 Chinese Menu",
           "discoveredFrom": "https://www.chinatownhalifax.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:46.488Z",
-          "lastVerifiedAt": "2026-09-04T12:50:46.488Z",
+          "observedAt": "2026-09-04T13:33:11.011Z",
+          "lastVerifiedAt": "2026-09-04T13:33:11.011Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -21399,8 +21517,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "点心菜单 Dim Sum Menu",
           "discoveredFrom": "https://www.chinatownhalifax.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:46.488Z",
-          "lastVerifiedAt": "2026-09-04T12:50:46.488Z",
+          "observedAt": "2026-09-04T13:33:11.011Z",
+          "lastVerifiedAt": "2026-09-04T13:33:11.011Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -21411,8 +21529,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Order Online",
           "discoveredFrom": "https://www.chinatownhalifax.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:46.488Z",
-          "lastVerifiedAt": "2026-09-04T12:50:46.488Z",
+          "observedAt": "2026-09-04T13:33:11.011Z",
+          "lastVerifiedAt": "2026-09-04T13:33:11.011Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -21423,8 +21541,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Reserve Table",
           "discoveredFrom": "https://www.chinatownhalifax.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:46.488Z",
-          "lastVerifiedAt": "2026-09-04T12:50:46.488Z",
+          "observedAt": "2026-09-04T13:33:11.011Z",
+          "lastVerifiedAt": "2026-09-04T13:33:11.011Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -21455,8 +21573,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Sicilian Pizza",
       "website": "http://www.sicilian.ca/",
       "resolvedUrl": "http://www.sicilian.ca/",
-      "observedAt": "2026-09-04T12:51:05.982Z",
-      "lastVerifiedAt": "2026-09-04T12:51:05.982Z",
+      "observedAt": "2026-09-04T13:33:32.978Z",
+      "lastVerifiedAt": "2026-09-04T13:33:32.978Z",
       "scannedOwnedPages": [
         "http://www.sicilian.ca/",
         "http://www.sicilian.ca/locations.php",
@@ -21474,8 +21592,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "http://www.sicilian.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:05.982Z",
-          "lastVerifiedAt": "2026-09-04T12:51:05.982Z",
+          "observedAt": "2026-09-04T13:33:32.978Z",
+          "lastVerifiedAt": "2026-09-04T13:33:32.978Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -21491,8 +21609,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "http://www.sicilian.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:05.982Z",
-          "lastVerifiedAt": "2026-09-04T12:51:05.982Z",
+          "observedAt": "2026-09-04T13:33:32.978Z",
+          "lastVerifiedAt": "2026-09-04T13:33:32.978Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -21508,8 +21626,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "http://www.sicilian.ca/locations.php",
           "associationBasis": "linked_from_official_location_page",
-          "observedAt": "2026-09-04T12:51:05.982Z",
-          "lastVerifiedAt": "2026-09-04T12:51:05.982Z",
+          "observedAt": "2026-09-04T13:33:32.978Z",
+          "lastVerifiedAt": "2026-09-04T13:33:32.978Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -21523,8 +21641,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "MENU",
           "discoveredFrom": "http://www.sicilian.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:05.982Z",
-          "lastVerifiedAt": "2026-09-04T12:51:05.982Z",
+          "observedAt": "2026-09-04T13:33:32.978Z",
+          "lastVerifiedAt": "2026-09-04T13:33:32.978Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -21535,8 +21653,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "SALADS & APPETIZERS",
           "discoveredFrom": "http://www.sicilian.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:05.982Z",
-          "lastVerifiedAt": "2026-09-04T12:51:05.982Z",
+          "observedAt": "2026-09-04T13:33:32.978Z",
+          "lastVerifiedAt": "2026-09-04T13:33:32.978Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -21547,8 +21665,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "FRIES & POUTINE",
           "discoveredFrom": "http://www.sicilian.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:05.982Z",
-          "lastVerifiedAt": "2026-09-04T12:51:05.982Z",
+          "observedAt": "2026-09-04T13:33:32.978Z",
+          "lastVerifiedAt": "2026-09-04T13:33:32.978Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -21559,8 +21677,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "WINGS",
           "discoveredFrom": "http://www.sicilian.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:05.982Z",
-          "lastVerifiedAt": "2026-09-04T12:51:05.982Z",
+          "observedAt": "2026-09-04T13:33:32.978Z",
+          "lastVerifiedAt": "2026-09-04T13:33:32.978Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -21571,8 +21689,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "GARLIC FINGERS",
           "discoveredFrom": "http://www.sicilian.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:05.982Z",
-          "lastVerifiedAt": "2026-09-04T12:51:05.982Z",
+          "observedAt": "2026-09-04T13:33:32.978Z",
+          "lastVerifiedAt": "2026-09-04T13:33:32.978Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -21583,8 +21701,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "CREATE YOUR OWN PIZZA",
           "discoveredFrom": "http://www.sicilian.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:05.982Z",
-          "lastVerifiedAt": "2026-09-04T12:51:05.982Z",
+          "observedAt": "2026-09-04T13:33:32.978Z",
+          "lastVerifiedAt": "2026-09-04T13:33:32.978Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -21595,8 +21713,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "SPECIALTY PIZZA",
           "discoveredFrom": "http://www.sicilian.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:05.982Z",
-          "lastVerifiedAt": "2026-09-04T12:51:05.982Z",
+          "observedAt": "2026-09-04T13:33:32.978Z",
+          "lastVerifiedAt": "2026-09-04T13:33:32.978Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -21607,8 +21725,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "CALZONES",
           "discoveredFrom": "http://www.sicilian.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:05.982Z",
-          "lastVerifiedAt": "2026-09-04T12:51:05.982Z",
+          "observedAt": "2026-09-04T13:33:32.978Z",
+          "lastVerifiedAt": "2026-09-04T13:33:32.978Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -21619,8 +21737,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "DONAIRS",
           "discoveredFrom": "http://www.sicilian.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:05.982Z",
-          "lastVerifiedAt": "2026-09-04T12:51:05.982Z",
+          "observedAt": "2026-09-04T13:33:32.978Z",
+          "lastVerifiedAt": "2026-09-04T13:33:32.978Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -21631,8 +21749,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "SUBS",
           "discoveredFrom": "http://www.sicilian.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:05.982Z",
-          "lastVerifiedAt": "2026-09-04T12:51:05.982Z",
+          "observedAt": "2026-09-04T13:33:32.978Z",
+          "lastVerifiedAt": "2026-09-04T13:33:32.978Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -21643,8 +21761,20 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "DRINKS",
           "discoveredFrom": "http://www.sicilian.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:05.982Z",
-          "lastVerifiedAt": "2026-09-04T12:51:05.982Z",
+          "observedAt": "2026-09-04T13:33:32.978Z",
+          "lastVerifiedAt": "2026-09-04T13:33:32.978Z",
+          "reviewState": "verified_link",
+          "confidence": "authoritative",
+          "status": "active"
+        },
+        {
+          "kind": "ordering",
+          "url": "https://www.order.store/store/sicilian-pizza-pizza-corner-blowers-st/0OT0-Va9QbSq_7jc_cRAbQ",
+          "label": "ORDER ONLINE",
+          "discoveredFrom": "http://www.sicilian.ca/",
+          "associationBasis": "linked_from_official_website",
+          "observedAt": "2026-09-04T13:33:32.978Z",
+          "lastVerifiedAt": "2026-09-04T13:33:32.978Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -21659,21 +21789,9 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "lastVerifiedAt": "2026-09-04T12:51:05.982Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
-          "status": "active"
-        },
-        {
-          "kind": "ordering",
-          "url": "https://www.order.store/store/sicilian-pizza-pizza-corner-blowers-st/0OT0-Va9QbSq_7jc_cRAbQ",
-          "label": "ORDER ONLINE",
-          "discoveredFrom": "http://www.sicilian.ca/",
-          "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-03T20:03:41.192Z",
-          "lastVerifiedAt": "2026-09-03T20:03:41.192Z",
-          "reviewState": "verified_link",
-          "confidence": "authoritative",
           "status": "active",
           "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-09-04T12:51:47.588Z"
+          "carriedForwardAt": "2026-09-04T13:34:13.421Z"
         }
       ],
       "feeds": [],
@@ -21686,8 +21804,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Boston Pizza",
       "website": "https://bostonpizza.com/en/index.html",
       "resolvedUrl": "https://bostonpizza.com/en/index.html",
-      "observedAt": "2026-09-04T12:50:44.917Z",
-      "lastVerifiedAt": "2026-09-04T12:50:44.917Z",
+      "observedAt": "2026-09-04T13:33:09.494Z",
+      "lastVerifiedAt": "2026-09-04T13:33:09.494Z",
       "scannedOwnedPages": [
         "https://bostonpizza.com/en/index.html",
         "https://bostonpizza.com/en/locations.html",
@@ -21707,8 +21825,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://bostonpizza.com/en/index.html",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:44.917Z",
-          "lastVerifiedAt": "2026-09-04T12:50:44.917Z",
+          "observedAt": "2026-09-04T13:33:09.494Z",
+          "lastVerifiedAt": "2026-09-04T13:33:09.494Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -21724,8 +21842,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://bostonpizza.com/en/index.html",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:44.917Z",
-          "lastVerifiedAt": "2026-09-04T12:50:44.917Z",
+          "observedAt": "2026-09-04T13:33:09.494Z",
+          "lastVerifiedAt": "2026-09-04T13:33:09.494Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -21741,8 +21859,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://bostonpizza.com/en/index.html",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:44.917Z",
-          "lastVerifiedAt": "2026-09-04T12:50:44.917Z",
+          "observedAt": "2026-09-04T13:33:09.494Z",
+          "lastVerifiedAt": "2026-09-04T13:33:09.494Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -21758,8 +21876,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://bostonpizza.com/en/index.html",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:44.917Z",
-          "lastVerifiedAt": "2026-09-04T12:50:44.917Z",
+          "observedAt": "2026-09-04T13:33:09.494Z",
+          "lastVerifiedAt": "2026-09-04T13:33:09.494Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -21773,8 +21891,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Menu",
           "discoveredFrom": "https://bostonpizza.com/en/index.html",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:44.917Z",
-          "lastVerifiedAt": "2026-09-04T12:50:44.917Z",
+          "observedAt": "2026-09-04T13:33:09.494Z",
+          "lastVerifiedAt": "2026-09-04T13:33:09.494Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -21785,8 +21903,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "LIVE MUSIC",
           "discoveredFrom": "https://bostonpizza.com/en/index.html",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:44.917Z",
-          "lastVerifiedAt": "2026-09-04T12:50:44.917Z",
+          "observedAt": "2026-09-04T13:33:09.494Z",
+          "lastVerifiedAt": "2026-09-04T13:33:09.494Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -21797,8 +21915,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "VIEW MENU",
           "discoveredFrom": "https://bostonpizza.com/en/index.html",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:44.917Z",
-          "lastVerifiedAt": "2026-09-04T12:50:44.917Z",
+          "observedAt": "2026-09-04T13:33:09.494Z",
+          "lastVerifiedAt": "2026-09-04T13:33:09.494Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -21809,8 +21927,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "View Lunch Menu",
           "discoveredFrom": "https://bostonpizza.com/en/index.html",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:44.917Z",
-          "lastVerifiedAt": "2026-09-04T12:50:44.917Z",
+          "observedAt": "2026-09-04T13:33:09.494Z",
+          "lastVerifiedAt": "2026-09-04T13:33:09.494Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -21821,8 +21939,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "ORDER ONLINE",
           "discoveredFrom": "https://bostonpizza.com/en/index.html",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:44.917Z",
-          "lastVerifiedAt": "2026-09-04T12:50:44.917Z",
+          "observedAt": "2026-09-04T13:33:09.494Z",
+          "lastVerifiedAt": "2026-09-04T13:33:09.494Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -21840,8 +21958,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Tim Hortons",
       "website": "https://www.timhortons.ca/store-locator/store/restaurant_66191",
       "resolvedUrl": "https://www.timhortons.ca/store-locator/store/restaurant_66191",
-      "observedAt": "2026-09-04T12:51:19.697Z",
-      "lastVerifiedAt": "2026-09-04T12:51:19.697Z",
+      "observedAt": "2026-09-04T13:33:42.945Z",
+      "lastVerifiedAt": "2026-09-04T13:33:42.945Z",
       "scannedOwnedPages": [
         "https://www.timhortons.ca/store-locator/store/restaurant_66191"
       ],
@@ -21858,8 +21976,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "May Garden",
       "website": "https://maygarden.ca/",
       "resolvedUrl": "https://maygarden.ca/",
-      "observedAt": "2026-09-04T12:50:58.445Z",
-      "lastVerifiedAt": "2026-09-04T12:50:58.445Z",
+      "observedAt": "2026-09-04T13:33:23.976Z",
+      "lastVerifiedAt": "2026-09-04T13:33:23.976Z",
       "scannedOwnedPages": [
         "https://maygarden.ca/",
         "https://maygarden.ca/about-2/",
@@ -21878,8 +21996,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://maygarden.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:58.445Z",
-          "lastVerifiedAt": "2026-09-04T12:50:58.445Z",
+          "observedAt": "2026-09-04T13:33:23.976Z",
+          "lastVerifiedAt": "2026-09-04T13:33:23.976Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -21895,8 +22013,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://maygarden.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:58.445Z",
-          "lastVerifiedAt": "2026-09-04T12:50:58.445Z",
+          "observedAt": "2026-09-04T13:33:23.976Z",
+          "lastVerifiedAt": "2026-09-04T13:33:23.976Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -21910,8 +22028,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Order Online",
           "discoveredFrom": "https://maygarden.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:58.445Z",
-          "lastVerifiedAt": "2026-09-04T12:50:58.445Z",
+          "observedAt": "2026-09-04T13:33:23.976Z",
+          "lastVerifiedAt": "2026-09-04T13:33:23.976Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -21922,8 +22040,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Order Pickup from Sackville",
           "discoveredFrom": "https://maygarden.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:58.445Z",
-          "lastVerifiedAt": "2026-09-04T12:50:58.445Z",
+          "observedAt": "2026-09-04T13:33:23.976Z",
+          "lastVerifiedAt": "2026-09-04T13:33:23.976Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -21934,8 +22052,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Menu",
           "discoveredFrom": "https://maygarden.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:58.445Z",
-          "lastVerifiedAt": "2026-09-04T12:50:58.445Z",
+          "observedAt": "2026-09-04T13:33:23.976Z",
+          "lastVerifiedAt": "2026-09-04T13:33:23.976Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -21968,8 +22086,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Look Ho Ho",
       "website": "https://www.lookhoho.com/",
       "resolvedUrl": "https://www.lookhoho.com/",
-      "observedAt": "2026-09-04T12:50:57.451Z",
-      "lastVerifiedAt": "2026-09-04T12:50:57.451Z",
+      "observedAt": "2026-09-04T13:33:22.300Z",
+      "lastVerifiedAt": "2026-09-04T13:33:22.300Z",
       "scannedOwnedPages": [
         "https://www.lookhoho.com/"
       ],
@@ -21985,8 +22103,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.lookhoho.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:57.451Z",
-          "lastVerifiedAt": "2026-09-04T12:50:57.451Z",
+          "observedAt": "2026-09-04T13:33:22.300Z",
+          "lastVerifiedAt": "2026-09-04T13:33:22.300Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -22000,8 +22118,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Full Menu",
           "discoveredFrom": "https://www.lookhoho.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:57.451Z",
-          "lastVerifiedAt": "2026-09-04T12:50:57.451Z",
+          "observedAt": "2026-09-04T13:33:22.300Z",
+          "lastVerifiedAt": "2026-09-04T13:33:22.300Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -22019,8 +22137,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Bedford Beer Garden",
       "website": "https://www.bedfordbeergarden.com/",
       "resolvedUrl": "https://www.bedfordbeergarden.com/",
-      "observedAt": "2026-09-04T12:50:44.237Z",
-      "lastVerifiedAt": "2026-09-04T12:50:44.237Z",
+      "observedAt": "2026-09-04T13:33:08.407Z",
+      "lastVerifiedAt": "2026-09-04T13:33:08.407Z",
       "scannedOwnedPages": [
         "https://www.bedfordbeergarden.com/",
         "https://www.bedfordbeergarden.com/contact"
@@ -22037,8 +22155,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.bedfordbeergarden.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:44.237Z",
-          "lastVerifiedAt": "2026-09-04T12:50:44.237Z",
+          "observedAt": "2026-09-04T13:33:08.407Z",
+          "lastVerifiedAt": "2026-09-04T13:33:08.407Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -22054,8 +22172,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.bedfordbeergarden.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:44.237Z",
-          "lastVerifiedAt": "2026-09-04T12:50:44.237Z",
+          "observedAt": "2026-09-04T13:33:08.407Z",
+          "lastVerifiedAt": "2026-09-04T13:33:08.407Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -22069,8 +22187,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Food Menu",
           "discoveredFrom": "https://www.bedfordbeergarden.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:44.237Z",
-          "lastVerifiedAt": "2026-09-04T12:50:44.237Z",
+          "observedAt": "2026-09-04T13:33:08.407Z",
+          "lastVerifiedAt": "2026-09-04T13:33:08.407Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -22081,8 +22199,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Drink Menu",
           "discoveredFrom": "https://www.bedfordbeergarden.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:44.237Z",
-          "lastVerifiedAt": "2026-09-04T12:50:44.237Z",
+          "observedAt": "2026-09-04T13:33:08.407Z",
+          "lastVerifiedAt": "2026-09-04T13:33:08.407Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -22093,8 +22211,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Events",
           "discoveredFrom": "https://www.bedfordbeergarden.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:44.237Z",
-          "lastVerifiedAt": "2026-09-04T12:50:44.237Z",
+          "observedAt": "2026-09-04T13:33:08.407Z",
+          "lastVerifiedAt": "2026-09-04T13:33:08.407Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -22112,8 +22230,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Tim Hortons",
       "website": "https://www.timhortons.com/",
       "resolvedUrl": "https://www.timhortons.com/",
-      "observedAt": "2026-09-04T12:51:18.262Z",
-      "lastVerifiedAt": "2026-09-04T12:51:18.262Z",
+      "observedAt": "2026-09-04T13:33:42.064Z",
+      "lastVerifiedAt": "2026-09-04T13:33:42.064Z",
       "scannedOwnedPages": [
         "https://www.timhortons.com/"
       ],
@@ -22130,8 +22248,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Henry House",
       "website": "http://henryhouse.ca/",
       "resolvedUrl": "http://henryhouse.ca/",
-      "observedAt": "2026-09-04T12:50:53.383Z",
-      "lastVerifiedAt": "2026-09-04T12:50:53.383Z",
+      "observedAt": "2026-09-04T13:33:18.802Z",
+      "lastVerifiedAt": "2026-09-04T13:33:18.802Z",
       "scannedOwnedPages": [
         "http://henryhouse.ca/"
       ],
@@ -22148,8 +22266,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Wooden Monkey",
       "website": "https://www.thewoodenmonkey.ca/",
       "resolvedUrl": "https://www.thewoodenmonkey.ca/",
-      "observedAt": "2026-09-04T12:51:21.726Z",
-      "lastVerifiedAt": "2026-09-04T12:51:21.726Z",
+      "observedAt": "2026-09-04T13:33:44.982Z",
+      "lastVerifiedAt": "2026-09-04T13:33:44.982Z",
       "scannedOwnedPages": [
         "https://www.thewoodenmonkey.ca/",
         "https://www.thewoodenmonkey.ca/about",
@@ -22169,8 +22287,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.thewoodenmonkey.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:21.726Z",
-          "lastVerifiedAt": "2026-09-04T12:51:21.726Z",
+          "observedAt": "2026-09-04T13:33:44.982Z",
+          "lastVerifiedAt": "2026-09-04T13:33:44.982Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -22186,8 +22304,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.thewoodenmonkey.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:21.726Z",
-          "lastVerifiedAt": "2026-09-04T12:51:21.726Z",
+          "observedAt": "2026-09-04T13:33:44.982Z",
+          "lastVerifiedAt": "2026-09-04T13:33:44.982Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -22203,8 +22321,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.thewoodenmonkey.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:21.726Z",
-          "lastVerifiedAt": "2026-09-04T12:51:21.726Z",
+          "observedAt": "2026-09-04T13:33:44.982Z",
+          "lastVerifiedAt": "2026-09-04T13:33:44.982Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -22218,8 +22336,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "MENUS",
           "discoveredFrom": "https://www.thewoodenmonkey.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:21.726Z",
-          "lastVerifiedAt": "2026-09-04T12:51:21.726Z",
+          "observedAt": "2026-09-04T13:33:44.982Z",
+          "lastVerifiedAt": "2026-09-04T13:33:44.982Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -22230,8 +22348,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "RESERVATIONS",
           "discoveredFrom": "https://www.thewoodenmonkey.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:21.726Z",
-          "lastVerifiedAt": "2026-09-04T12:51:21.726Z",
+          "observedAt": "2026-09-04T13:33:44.982Z",
+          "lastVerifiedAt": "2026-09-04T13:33:44.982Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -22242,8 +22360,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Live Music",
           "discoveredFrom": "https://www.thewoodenmonkey.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:21.726Z",
-          "lastVerifiedAt": "2026-09-04T12:51:21.726Z",
+          "observedAt": "2026-09-04T13:33:44.982Z",
+          "lastVerifiedAt": "2026-09-04T13:33:44.982Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -22260,7 +22378,7 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "confidence": "authoritative",
           "status": "active",
           "refreshState": "carried_forward_previous_verification",
-          "carriedForwardAt": "2026-09-04T12:51:47.588Z"
+          "carriedForwardAt": "2026-09-04T13:34:13.421Z"
         }
       ],
       "feeds": [],
@@ -22275,8 +22393,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Oxalis Restaurant",
       "website": "https://www.oxalisrestaurant.com/",
       "resolvedUrl": "https://www.oxalisrestaurant.com/",
-      "observedAt": "2026-09-04T12:51:22.272Z",
-      "lastVerifiedAt": "2026-09-04T12:51:22.272Z",
+      "observedAt": "2026-09-04T13:33:45.710Z",
+      "lastVerifiedAt": "2026-09-04T13:33:45.710Z",
       "scannedOwnedPages": [
         "https://www.oxalisrestaurant.com/",
         "https://www.oxalisrestaurant.com/home",
@@ -22295,8 +22413,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.oxalisrestaurant.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:22.272Z",
-          "lastVerifiedAt": "2026-09-04T12:51:22.272Z",
+          "observedAt": "2026-09-04T13:33:45.710Z",
+          "lastVerifiedAt": "2026-09-04T13:33:45.710Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -22312,8 +22430,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.oxalisrestaurant.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:22.272Z",
-          "lastVerifiedAt": "2026-09-04T12:51:22.272Z",
+          "observedAt": "2026-09-04T13:33:45.710Z",
+          "lastVerifiedAt": "2026-09-04T13:33:45.710Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -22327,8 +22445,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Menu",
           "discoveredFrom": "https://www.oxalisrestaurant.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:22.272Z",
-          "lastVerifiedAt": "2026-09-04T12:51:22.272Z",
+          "observedAt": "2026-09-04T13:33:45.710Z",
+          "lastVerifiedAt": "2026-09-04T13:33:45.710Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -22339,8 +22457,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Book your Oxalis Restaurant, CA reservation on Resy",
           "discoveredFrom": "https://www.oxalisrestaurant.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:22.272Z",
-          "lastVerifiedAt": "2026-09-04T12:51:22.272Z",
+          "observedAt": "2026-09-04T13:33:45.710Z",
+          "lastVerifiedAt": "2026-09-04T13:33:45.710Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -22358,8 +22476,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Side Hustle Snack Bar",
       "website": "https://www.sidehustlesnackbar.com/",
       "resolvedUrl": "https://www.sidehustlesnackbar.com/",
-      "observedAt": "2026-09-04T12:51:22.373Z",
-      "lastVerifiedAt": "2026-09-04T12:51:22.373Z",
+      "observedAt": "2026-09-04T13:33:45.778Z",
+      "lastVerifiedAt": "2026-09-04T13:33:45.778Z",
       "scannedOwnedPages": [
         "https://www.sidehustlesnackbar.com/",
         "https://www.sidehustlesnackbar.com/contact"
@@ -22376,8 +22494,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.sidehustlesnackbar.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:22.373Z",
-          "lastVerifiedAt": "2026-09-04T12:51:22.373Z",
+          "observedAt": "2026-09-04T13:33:45.778Z",
+          "lastVerifiedAt": "2026-09-04T13:33:45.778Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -22393,8 +22511,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.sidehustlesnackbar.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:22.373Z",
-          "lastVerifiedAt": "2026-09-04T12:51:22.373Z",
+          "observedAt": "2026-09-04T13:33:45.778Z",
+          "lastVerifiedAt": "2026-09-04T13:33:45.778Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -22408,8 +22526,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "FOOD & DRINK",
           "discoveredFrom": "https://www.sidehustlesnackbar.com/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:22.373Z",
-          "lastVerifiedAt": "2026-09-04T12:51:22.373Z",
+          "observedAt": "2026-09-04T13:33:45.778Z",
+          "lastVerifiedAt": "2026-09-04T13:33:45.778Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -22427,8 +22545,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Stardust Bar + Kitchen",
       "website": "https://www.stardustbar.ca/",
       "resolvedUrl": "https://www.stardustbar.ca/",
-      "observedAt": "2026-09-04T12:51:21.747Z",
-      "lastVerifiedAt": "2026-09-04T12:51:21.747Z",
+      "observedAt": "2026-09-04T13:33:45.313Z",
+      "lastVerifiedAt": "2026-09-04T13:33:45.313Z",
       "scannedOwnedPages": [
         "https://www.stardustbar.ca/"
       ],
@@ -22444,8 +22562,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.stardustbar.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:21.747Z",
-          "lastVerifiedAt": "2026-09-04T12:51:21.747Z",
+          "observedAt": "2026-09-04T13:33:45.313Z",
+          "lastVerifiedAt": "2026-09-04T13:33:45.313Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -22461,8 +22579,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.stardustbar.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:21.747Z",
-          "lastVerifiedAt": "2026-09-04T12:51:21.747Z",
+          "observedAt": "2026-09-04T13:33:45.313Z",
+          "lastVerifiedAt": "2026-09-04T13:33:45.313Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -22478,8 +22596,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.stardustbar.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:21.747Z",
-          "lastVerifiedAt": "2026-09-04T12:51:21.747Z",
+          "observedAt": "2026-09-04T13:33:45.313Z",
+          "lastVerifiedAt": "2026-09-04T13:33:45.313Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -22493,8 +22611,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Event Assets",
           "discoveredFrom": "https://www.stardustbar.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:21.747Z",
-          "lastVerifiedAt": "2026-09-04T12:51:21.747Z",
+          "observedAt": "2026-09-04T13:33:45.313Z",
+          "lastVerifiedAt": "2026-09-04T13:33:45.313Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -22505,8 +22623,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Events",
           "discoveredFrom": "https://www.stardustbar.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:21.747Z",
-          "lastVerifiedAt": "2026-09-04T12:51:21.747Z",
+          "observedAt": "2026-09-04T13:33:45.313Z",
+          "lastVerifiedAt": "2026-09-04T13:33:45.313Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -22517,8 +22635,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Reservations",
           "discoveredFrom": "https://www.stardustbar.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:21.747Z",
-          "lastVerifiedAt": "2026-09-04T12:51:21.747Z",
+          "observedAt": "2026-09-04T13:33:45.313Z",
+          "lastVerifiedAt": "2026-09-04T13:33:45.313Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -22529,8 +22647,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Drink Menu",
           "discoveredFrom": "https://www.stardustbar.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:21.747Z",
-          "lastVerifiedAt": "2026-09-04T12:51:21.747Z",
+          "observedAt": "2026-09-04T13:33:45.313Z",
+          "lastVerifiedAt": "2026-09-04T13:33:45.313Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -22548,8 +22666,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "The Bicycle Thief",
       "website": "https://bicyclethief.ca/",
       "resolvedUrl": "https://bicyclethief.ca/",
-      "observedAt": "2026-09-04T12:50:43.469Z",
-      "lastVerifiedAt": "2026-09-04T12:50:43.469Z",
+      "observedAt": "2026-09-04T13:33:07.645Z",
+      "lastVerifiedAt": "2026-09-04T13:33:07.645Z",
       "scannedOwnedPages": [
         "https://bicyclethief.ca/",
         "https://bicyclethief.ca/contact-us-reservations/"
@@ -22566,8 +22684,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://bicyclethief.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:43.469Z",
-          "lastVerifiedAt": "2026-09-04T12:50:43.469Z",
+          "observedAt": "2026-09-04T13:33:07.645Z",
+          "lastVerifiedAt": "2026-09-04T13:33:07.645Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -22583,8 +22701,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://bicyclethief.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:43.469Z",
-          "lastVerifiedAt": "2026-09-04T12:50:43.469Z",
+          "observedAt": "2026-09-04T13:33:07.645Z",
+          "lastVerifiedAt": "2026-09-04T13:33:07.645Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -22600,8 +22718,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://bicyclethief.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:43.469Z",
-          "lastVerifiedAt": "2026-09-04T12:50:43.469Z",
+          "observedAt": "2026-09-04T13:33:07.645Z",
+          "lastVerifiedAt": "2026-09-04T13:33:07.645Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -22615,8 +22733,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Reservations",
           "discoveredFrom": "https://bicyclethief.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:43.469Z",
-          "lastVerifiedAt": "2026-09-04T12:50:43.469Z",
+          "observedAt": "2026-09-04T13:33:07.645Z",
+          "lastVerifiedAt": "2026-09-04T13:33:07.645Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -22640,8 +22758,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "The Narrows Public House",
       "website": "https://www.thenarrowspublichouse.ca/",
       "resolvedUrl": "https://www.thenarrowspublichouse.ca/",
-      "observedAt": "2026-09-04T12:50:43.471Z",
-      "lastVerifiedAt": "2026-09-04T12:50:43.471Z",
+      "observedAt": "2026-09-04T13:33:07.647Z",
+      "lastVerifiedAt": "2026-09-04T13:33:07.647Z",
       "scannedOwnedPages": [
         "https://www.thenarrowspublichouse.ca/",
         "https://www.thenarrowspublichouse.ca/contact"
@@ -22658,8 +22776,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.thenarrowspublichouse.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:43.471Z",
-          "lastVerifiedAt": "2026-09-04T12:50:43.471Z",
+          "observedAt": "2026-09-04T13:33:07.647Z",
+          "lastVerifiedAt": "2026-09-04T13:33:07.647Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -22675,8 +22793,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.thenarrowspublichouse.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:43.471Z",
-          "lastVerifiedAt": "2026-09-04T12:50:43.471Z",
+          "observedAt": "2026-09-04T13:33:07.647Z",
+          "lastVerifiedAt": "2026-09-04T13:33:07.647Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -22690,8 +22808,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "MENU",
           "discoveredFrom": "https://www.thenarrowspublichouse.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:43.471Z",
-          "lastVerifiedAt": "2026-09-04T12:50:43.471Z",
+          "observedAt": "2026-09-04T13:33:07.647Z",
+          "lastVerifiedAt": "2026-09-04T13:33:07.647Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -22709,8 +22827,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "The Press Gang",
       "website": "https://thepressgang.ca/",
       "resolvedUrl": "https://thepressgang.ca/",
-      "observedAt": "2026-09-04T12:50:43.471Z",
-      "lastVerifiedAt": "2026-09-04T12:50:43.471Z",
+      "observedAt": "2026-09-04T13:33:07.647Z",
+      "lastVerifiedAt": "2026-09-04T13:33:07.647Z",
       "scannedOwnedPages": [
         "https://thepressgang.ca/",
         "https://thepressgang.ca/about"
@@ -22727,8 +22845,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://thepressgang.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:43.471Z",
-          "lastVerifiedAt": "2026-09-04T12:50:43.471Z",
+          "observedAt": "2026-09-04T13:33:07.647Z",
+          "lastVerifiedAt": "2026-09-04T13:33:07.647Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -22744,8 +22862,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://thepressgang.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:43.471Z",
-          "lastVerifiedAt": "2026-09-04T12:50:43.471Z",
+          "observedAt": "2026-09-04T13:33:07.647Z",
+          "lastVerifiedAt": "2026-09-04T13:33:07.647Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -22761,8 +22879,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://thepressgang.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:43.471Z",
-          "lastVerifiedAt": "2026-09-04T12:50:43.471Z",
+          "observedAt": "2026-09-04T13:33:07.647Z",
+          "lastVerifiedAt": "2026-09-04T13:33:07.647Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -22776,8 +22894,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Menu",
           "discoveredFrom": "https://thepressgang.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:43.471Z",
-          "lastVerifiedAt": "2026-09-04T12:50:43.471Z",
+          "observedAt": "2026-09-04T13:33:07.647Z",
+          "lastVerifiedAt": "2026-09-04T13:33:07.647Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -22788,8 +22906,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Reservations",
           "discoveredFrom": "https://thepressgang.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:43.471Z",
-          "lastVerifiedAt": "2026-09-04T12:50:43.471Z",
+          "observedAt": "2026-09-04T13:33:07.647Z",
+          "lastVerifiedAt": "2026-09-04T13:33:07.647Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -22800,8 +22918,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Make a Reservation",
           "discoveredFrom": "https://thepressgang.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:50:43.471Z",
-          "lastVerifiedAt": "2026-09-04T12:50:43.471Z",
+          "observedAt": "2026-09-04T13:33:07.647Z",
+          "lastVerifiedAt": "2026-09-04T13:33:07.647Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -22817,8 +22935,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Tribute",
       "website": "https://www.tributerestaurant.ca/",
       "resolvedUrl": "https://www.tributerestaurant.ca/",
-      "observedAt": "2026-09-04T12:51:21.727Z",
-      "lastVerifiedAt": "2026-09-04T12:51:21.727Z",
+      "observedAt": "2026-09-04T13:33:45.283Z",
+      "lastVerifiedAt": "2026-09-04T13:33:45.283Z",
       "scannedOwnedPages": [
         "https://www.tributerestaurant.ca/",
         "https://www.tributerestaurant.ca/about",
@@ -22836,8 +22954,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.tributerestaurant.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:21.727Z",
-          "lastVerifiedAt": "2026-09-04T12:51:21.727Z",
+          "observedAt": "2026-09-04T13:33:45.283Z",
+          "lastVerifiedAt": "2026-09-04T13:33:45.283Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -22851,8 +22969,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Menu",
           "discoveredFrom": "https://www.tributerestaurant.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:21.727Z",
-          "lastVerifiedAt": "2026-09-04T12:51:21.727Z",
+          "observedAt": "2026-09-04T13:33:45.283Z",
+          "lastVerifiedAt": "2026-09-04T13:33:45.283Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -22863,8 +22981,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Reserve",
           "discoveredFrom": "https://www.tributerestaurant.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:21.727Z",
-          "lastVerifiedAt": "2026-09-04T12:51:21.727Z",
+          "observedAt": "2026-09-04T13:33:45.283Z",
+          "lastVerifiedAt": "2026-09-04T13:33:45.283Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -22882,8 +23000,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
       "name": "Water Polo Restaurant",
       "website": "https://www.waterpolohfx.ca/",
       "resolvedUrl": "https://www.waterpolohfx.ca/",
-      "observedAt": "2026-09-04T12:51:21.469Z",
-      "lastVerifiedAt": "2026-09-04T12:51:21.469Z",
+      "observedAt": "2026-09-04T13:33:44.710Z",
+      "lastVerifiedAt": "2026-09-04T13:33:44.710Z",
       "scannedOwnedPages": [
         "https://www.waterpolohfx.ca/",
         "https://www.waterpolohfx.ca/our-story/",
@@ -22902,8 +23020,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "sharedBrandProfile": false,
           "discoveredFrom": "https://www.waterpolohfx.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:21.469Z",
-          "lastVerifiedAt": "2026-09-04T12:51:21.469Z",
+          "observedAt": "2026-09-04T13:33:44.710Z",
+          "lastVerifiedAt": "2026-09-04T13:33:44.710Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -22917,8 +23035,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "The Bar",
           "discoveredFrom": "https://www.waterpolohfx.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:21.469Z",
-          "lastVerifiedAt": "2026-09-04T12:51:21.469Z",
+          "observedAt": "2026-09-04T13:33:44.710Z",
+          "lastVerifiedAt": "2026-09-04T13:33:44.710Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -22929,8 +23047,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "The Kitchen",
           "discoveredFrom": "https://www.waterpolohfx.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:21.469Z",
-          "lastVerifiedAt": "2026-09-04T12:51:21.469Z",
+          "observedAt": "2026-09-04T13:33:44.710Z",
+          "lastVerifiedAt": "2026-09-04T13:33:44.710Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -22941,8 +23059,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "Reservations",
           "discoveredFrom": "https://www.waterpolohfx.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:21.469Z",
-          "lastVerifiedAt": "2026-09-04T12:51:21.469Z",
+          "observedAt": "2026-09-04T13:33:44.710Z",
+          "lastVerifiedAt": "2026-09-04T13:33:44.710Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -22953,8 +23071,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "View Menus",
           "discoveredFrom": "https://www.waterpolohfx.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:21.469Z",
-          "lastVerifiedAt": "2026-09-04T12:51:21.469Z",
+          "observedAt": "2026-09-04T13:33:44.710Z",
+          "lastVerifiedAt": "2026-09-04T13:33:44.710Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -22965,8 +23083,8 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
           "label": "View Menu",
           "discoveredFrom": "https://www.waterpolohfx.ca/",
           "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T12:51:21.469Z",
-          "lastVerifiedAt": "2026-09-04T12:51:21.469Z",
+          "observedAt": "2026-09-04T13:33:44.710Z",
+          "lastVerifiedAt": "2026-09-04T13:33:44.710Z",
           "reviewState": "verified_link",
           "confidence": "authoritative",
           "status": "active"
@@ -22983,18 +23101,18 @@ window.HALIFAX_FIRST_PARTY_SOURCES = {
   "facebookCount": 149,
   "instagramCount": 152,
   "carryForward": {
-    "previousGeneratedAt": "2026-09-04T11:59:40.899Z",
+    "previousGeneratedAt": "2026-09-04T12:51:47.588Z",
     "maxAgeDays": 180,
-    "recordsCarriedAfterRefreshFailure": 6,
+    "recordsCarriedAfterRefreshFailure": 5,
     "socialProfilesCarried": 19,
     "linkHubsCarried": 0,
-    "relatedLinksCarried": 71,
-    "feedsCarried": 8,
+    "relatedLinksCarried": 73,
+    "feedsCarried": 6,
     "previousProfilesRejectedByCurrentRegistry": 0,
-    "appliedAt": "2026-09-04T12:51:47.588Z"
+    "appliedAt": "2026-09-04T13:34:13.421Z"
   },
   "sanitization": {
-    "appliedAt": "2026-09-04T12:51:56.846Z",
+    "appliedAt": "2026-09-04T13:34:21.570Z",
     "registryVersion": 1,
     "removedGenericOrInvalidProfiles": 0,
     "reviewedProfilesExcluded": 16,

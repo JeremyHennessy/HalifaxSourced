@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-04T12:54:54.440Z",
+  "generatedAt": "2026-09-04T13:39:48.632Z",
   "decisionManifestGeneratedAt": "2026-08-31T11:50:13.422Z",
   "policy": "Only posts reviewed as approve_post are surfaced as approved recent updates. Raw feed and Meta API observations remain source leads until reviewed.",
   "counts": {
@@ -51,7 +51,7 @@
         "$"
       ],
       "publishedAt": "2026-07-17T13:48:16.000Z",
-      "observedAt": "2026-09-04T12:52:14.164Z",
+      "observedAt": "2026-09-04T13:39:15.372Z",
       "ageDays": 49,
       "isRecent": true,
       "lookbackDays": 180,
@@ -108,7 +108,7 @@
         "terrace"
       ],
       "publishedAt": "2026-05-11T15:04:47.000Z",
-      "observedAt": "2026-09-04T12:52:12.602Z",
+      "observedAt": "2026-09-04T13:39:14.236Z",
       "ageDays": 116,
       "isRecent": true,
       "lookbackDays": 180,
@@ -145,7 +145,7 @@
       "categories": [],
       "matchedTerms": [],
       "publishedAt": "2026-04-08T15:42:52.000Z",
-      "observedAt": "2026-09-04T12:52:12.602Z",
+      "observedAt": "2026-09-04T13:39:14.236Z",
       "ageDays": 149,
       "isRecent": true,
       "lookbackDays": 180,
@@ -192,7 +192,7 @@
         "breakfast"
       ],
       "publishedAt": "2026-04-02T11:40:44.000Z",
-      "observedAt": "2026-09-04T12:52:12.143Z",
+      "observedAt": "2026-09-04T13:39:13.555Z",
       "ageDays": 155,
       "isRecent": true,
       "lookbackDays": 180,
@@ -229,7 +229,7 @@
       "categories": [],
       "matchedTerms": [],
       "publishedAt": "2026-03-26T15:51:56.000Z",
-      "observedAt": "2026-09-04T12:52:12.602Z",
+      "observedAt": "2026-09-04T13:39:14.236Z",
       "ageDays": 162,
       "isRecent": true,
       "lookbackDays": 180,

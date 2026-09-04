@@ -47,6 +47,12 @@ jobs:
       - name: Build patio directory facts
         run: node scripts/import-patio-directory-facts.mjs
 
+      - name: Refresh review-directory discovery candidates
+        run: |
+          node scripts/import-review-directory-restaurants.mjs
+          node scripts/resolve-place-candidates.mjs
+          node scripts/check-place-source-resolution.mjs
+
       - name: Build recent post intelligence
         run: |
           node scripts/build-recent-social-posts.mjs
@@ -106,6 +112,10 @@ jobs:
             artifacts/thumbnail-candidates-report.json
             artifacts/thumbnail-coverage-report.json
             artifacts/restaurant-discovery-report.json
+            artifacts/place-source-resolution-report.json
+            data/build/place-source-resolutions.json
+            data/directory-restaurant-leads.js
+            data/build/directory-restaurant-leads.json
             data/build/restaurant-lifecycle-report.json
             docs/restaurant-lifecycle-report.md
             data/build/restaurant-media-rights-report.json
@@ -164,6 +174,11 @@ jobs:
 
       - name: Build structured specials for browser verification
         run: node scripts/build-structured-specials.mjs
+
+      - name: Build review-directory discovery data for browser verification
+        run: |
+          node scripts/import-review-directory-restaurants.mjs
+          node scripts/resolve-place-candidates.mjs
 
       - name: Build recent post intelligence for browser verification
         run: |

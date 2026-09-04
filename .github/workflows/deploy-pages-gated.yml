@@ -60,6 +60,10 @@ jobs:
           node scripts/check-structured-specials.mjs
           node scripts/check-restaurant-lifecycle.mjs
           node scripts/check-restaurant-media-rights.mjs
+          node scripts/import-review-directory-restaurants.mjs
+          node scripts/resolve-place-candidates.mjs
+          node scripts/check-place-source-resolution.mjs
+          node scripts/check-restaurant-discovery.mjs
           node scripts/build-content-coverage-report.mjs
           node scripts/reconcile-structured-coverage.mjs
           node scripts/check-report-deployment-parity.mjs

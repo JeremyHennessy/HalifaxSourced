@@ -1,18 +1,18 @@
 {
-  "generatedAt": "2026-09-04T12:59:13.716Z",
+  "generatedAt": "2026-09-04T14:52:29.959Z",
   "counts": {
     "curated": 10,
     "osm": 736,
     "officialSignals": 290,
     "officialWithValidSite": 289,
-    "officialCandidateLinks": 982,
+    "officialCandidateLinks": 984,
     "productionMedia": 107,
     "ownerSubmissions": 0,
     "ownerMediaPendingReview": 0,
     "structuredEvents": 20,
     "staleStructuredEvents": 0,
-    "verifiedMenuSources": 380,
-    "verifiedSpecialSources": 88,
+    "verifiedMenuSources": 429,
+    "verifiedSpecialSources": 92,
     "verifiedSourceFailures": 21,
     "multiLocationNameGroups": 54,
     "nearDuplicatePairs": 2,
@@ -1968,7 +1968,7 @@
           "url": "https://elagreektaverna.com/dinner/",
           "label": "View Our Menus",
           "website": "https://elagreektaverna.com/",
-          "observedAt": "2026-09-04T12:37:21.317Z",
+          "observedAt": "2026-09-04T13:17:40.852Z",
           "reason": "http_404"
         },
         {
@@ -1978,7 +1978,7 @@
           "url": "https://elagreektaverna.com/dinner/",
           "label": "View Our Menus",
           "website": "https://elagreektaverna.com/",
-          "observedAt": "2026-09-04T12:37:22.042Z",
+          "observedAt": "2026-09-04T13:17:41.469Z",
           "reason": "http_404"
         },
         {
@@ -1988,7 +1988,7 @@
           "url": "https://moxies.com/restaurants/boston-seaport/menus/",
           "label": "Menus",
           "website": "https://moxies.com/",
-          "observedAt": "2026-09-04T12:37:32.450Z",
+          "observedAt": "2026-09-04T13:17:50.745Z",
           "reason": "location_mismatch"
         },
         {
@@ -1998,7 +1998,7 @@
           "url": "https://moxies.com/restaurants/dallas-uptown/menus/",
           "label": "Menus",
           "website": "https://moxies.com/",
-          "observedAt": "2026-09-04T12:37:32.450Z",
+          "observedAt": "2026-09-04T13:17:50.745Z",
           "reason": "location_mismatch"
         },
         {
@@ -2008,7 +2008,7 @@
           "url": "https://moxies.com/restaurants/fort-lauderdale/menus/",
           "label": "Menus",
           "website": "https://moxies.com/",
-          "observedAt": "2026-09-04T12:37:32.450Z",
+          "observedAt": "2026-09-04T13:17:50.745Z",
           "reason": "location_mismatch"
         },
         {
@@ -2018,7 +2018,7 @@
           "url": "https://moxies.com/restaurants/houston/menus/",
           "label": "Menus",
           "website": "https://moxies.com/",
-          "observedAt": "2026-09-04T12:37:32.450Z",
+          "observedAt": "2026-09-04T13:17:50.745Z",
           "reason": "location_mismatch"
         },
         {
@@ -2028,7 +2028,7 @@
           "url": "https://www.sajhouse.ca/go?source=sajhouse.ca",
           "label": "Promotions",
           "website": "https://www.sajhouse.ca/",
-          "observedAt": "2026-09-04T12:37:39.083Z",
+          "observedAt": "2026-09-04T13:17:58.410Z",
           "reason": "robots_disallow"
         },
         {
@@ -2038,7 +2038,7 @@
           "url": "https://secondcup.com/en/?page_id=2527",
           "label": "SEASONAL SPECIALS",
           "website": "https://secondcup.com/en/location/bayers-lake/",
-          "observedAt": "2026-09-04T12:37:39.575Z",
+          "observedAt": "2026-09-04T13:17:58.945Z",
           "reason": "http_404"
         },
         {
@@ -2048,7 +2048,7 @@
           "url": "https://www.studioeastfood.ca/menu/dinner",
           "label": "Menu",
           "website": "https://www.studioeastfood.ca/",
-          "observedAt": "2026-09-04T12:37:41.716Z",
+          "observedAt": "2026-09-04T13:18:02.078Z",
           "reason": "http_404"
         },
         {
@@ -2058,7 +2058,7 @@
           "url": "https://www.subway.com/content/subway/content-pages/ca/en_ca/modals/terms-and-conditions-promo-card-1.html",
           "label": "Terms and Conditions Apply",
           "website": "https://www.subway.com/en-ca",
-          "observedAt": "2026-09-04T12:37:41.850Z",
+          "observedAt": "2026-09-04T13:18:02.310Z",
           "reason": "http_404"
         },
         {
@@ -2068,7 +2068,7 @@
           "url": "https://www.subway.com/content/subway/content-pages/ca/en_ca/modals/terms-and-conditions-promo-card-2.html",
           "label": "Terms and Conditions Apply",
           "website": "https://www.subway.com/en-ca",
-          "observedAt": "2026-09-04T12:37:41.850Z",
+          "observedAt": "2026-09-04T13:18:02.310Z",
           "reason": "http_404"
         },
         {
@@ -2078,7 +2078,7 @@
           "url": "https://www.subway.com/content/subway/content-pages/ca/en_ca/modals/terms-and-conditions-promo-card-1.html",
           "label": "Terms and Conditions Apply",
           "website": "https://www.subway.com/en-ca",
-          "observedAt": "2026-09-04T12:37:42.312Z",
+          "observedAt": "2026-09-04T13:18:02.727Z",
           "reason": "http_404"
         },
         {
@@ -2088,7 +2088,7 @@
           "url": "https://www.subway.com/content/subway/content-pages/ca/en_ca/modals/terms-and-conditions-promo-card-2.html",
           "label": "Terms and Conditions Apply",
           "website": "https://www.subway.com/en-ca",
-          "observedAt": "2026-09-04T12:37:42.312Z",
+          "observedAt": "2026-09-04T13:18:02.727Z",
           "reason": "http_404"
         },
         {
@@ -2098,7 +2098,7 @@
           "url": "https://www.subway.com/content/subway/content-pages/ca/en_ca/modals/terms-and-conditions-promo-card-1.html",
           "label": "Terms and Conditions Apply",
           "website": "https://www.subway.com/en-ca",
-          "observedAt": "2026-09-04T12:37:42.602Z",
+          "observedAt": "2026-09-04T13:18:02.955Z",
           "reason": "http_404"
         },
         {
@@ -2108,7 +2108,7 @@
           "url": "https://www.subway.com/content/subway/content-pages/ca/en_ca/modals/terms-and-conditions-promo-card-2.html",
           "label": "Terms and Conditions Apply",
           "website": "https://www.subway.com/en-ca",
-          "observedAt": "2026-09-04T12:37:42.602Z",
+          "observedAt": "2026-09-04T13:18:02.955Z",
           "reason": "http_404"
         },
         {
@@ -2118,7 +2118,7 @@
           "url": "https://www.subway.com/content/subway/content-pages/ca/en_ca/modals/terms-and-conditions-promo-card-1.html",
           "label": "Terms and Conditions Apply",
           "website": "https://www.subway.com/en-ca",
-          "observedAt": "2026-09-04T12:37:42.785Z",
+          "observedAt": "2026-09-04T13:18:03.159Z",
           "reason": "http_404"
         },
         {
@@ -2128,7 +2128,7 @@
           "url": "https://www.subway.com/content/subway/content-pages/ca/en_ca/modals/terms-and-conditions-promo-card-2.html",
           "label": "Terms and Conditions Apply",
           "website": "https://www.subway.com/en-ca",
-          "observedAt": "2026-09-04T12:37:42.785Z",
+          "observedAt": "2026-09-04T13:18:03.159Z",
           "reason": "http_404"
         },
         {
@@ -2138,7 +2138,7 @@
           "url": "https://www.subway.com/content/subway/content-pages/ca/en_ca/modals/terms-and-conditions-promo-card-1.html",
           "label": "Terms and Conditions Apply",
           "website": "https://www.subway.com/en-ca",
-          "observedAt": "2026-09-04T12:37:42.984Z",
+          "observedAt": "2026-09-04T13:18:03.371Z",
           "reason": "http_404"
         },
         {
@@ -2148,7 +2148,7 @@
           "url": "https://www.subway.com/content/subway/content-pages/ca/en_ca/modals/terms-and-conditions-promo-card-2.html",
           "label": "Terms and Conditions Apply",
           "website": "https://www.subway.com/en-ca",
-          "observedAt": "2026-09-04T12:37:42.984Z",
+          "observedAt": "2026-09-04T13:18:03.371Z",
           "reason": "http_404"
         },
         {
@@ -2158,7 +2158,7 @@
           "url": "https://terracafe.ca/menu-1-2",
           "label": "https://terracafe.ca/menu-1-2",
           "website": "https://terracafe.ca/",
-          "observedAt": "2026-09-04T12:37:44.650Z",
+          "observedAt": "2026-09-04T13:18:05.003Z",
           "reason": "http_404"
         }
       ]

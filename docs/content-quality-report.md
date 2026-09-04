@@ -1,12 +1,12 @@
 # Halifax Sourced content quality report
 
-Generated: 2026-09-04T13:02:03.053Z
+Generated: 2026-09-04T14:52:13.360Z
 
 ## Summary
 
 - **canonicalPlaces**: 750
 - **placesWithSocial**: 160
-- **structuredPlaceFactRecords**: 176
+- **structuredPlaceFactRecords**: 177
 - **patioDirectoryRecords**: 75
 - **patioDirectoryResolved**: 47
 - **patioDirectoryNeedsReview**: 28
@@ -14,8 +14,8 @@ Generated: 2026-09-04T13:02:03.053Z
 - **publicSpecialSourceLeadsResolved**: 92
 - **publicSpecialSourceLeadsNeedsReview**: 51
 - **structuredHours**: 13
-- **structuredMenus**: 143
-- **structuredReservations**: 55
+- **structuredMenus**: 144
+- **structuredReservations**: 56
 - **structuredOrdering**: 78
 - **structuredSpecials**: 170
 - **verifiedCurrentSpecials**: 49
@@ -24,20 +24,20 @@ Generated: 2026-09-04T13:02:03.053Z
 - **venueResolvedEvents**: 139
 - **organizerResolvedEvents**: 166
 - **restaurantLinkedEvents**: 10
-- **sourceFailures**: 69
-- **unresolvedPlaceCandidates**: 333
-- **nameOnlyPlaceReviews**: 41
-- **placeSourceConflicts**: 89
+- **sourceFailures**: 138
+- **unresolvedPlaceCandidates**: 365
+- **nameOnlyPlaceReviews**: 55
+- **placeSourceConflicts**: 107
 - **blockedEventSources**: 0
 - **eventSourcesInAdapterReview**: 4
-- **brokenUrls**: 8
-- **restrictedUrls**: 4
-- **transientUrlFailures**: 40
+- **brokenUrls**: 13
+- **restrictedUrls**: 10
+- **transientUrlFailures**: 38
 
 ## Freshness
 
-- **firstPartyRelationships**: <7d 1162; 7–30d 0; 30–90d 0; >90d 0; unknown 0
-- **structuredPlaceFacts**: <7d 176; 7–30d 0; 30–90d 0; >90d 0; unknown 0
+- **firstPartyRelationships**: <7d 1172; 7–30d 0; 30–90d 0; >90d 0; unknown 0
+- **structuredPlaceFacts**: <7d 177; 7–30d 0; 30–90d 0; >90d 0; unknown 0
 - **patioDirectoryFacts**: <7d 75; 7–30d 0; 30–90d 0; >90d 0; unknown 0
 - **publicSpecialLeads**: <7d 143; 7–30d 0; 30–90d 0; >90d 0; unknown 0
 - **specials**: <7d 169; 7–30d 1; 30–90d 0; >90d 0; unknown 0
@@ -45,9 +45,9 @@ Generated: 2026-09-04T13:02:03.053Z
 
 ## Review queues
 
-- Place source conflicts: 89
-- Name-only place matches: 41
-- Unresolved place candidates: 333
+- Place source conflicts: 107
+- Name-only place matches: 55
+- Unresolved place candidates: 365
 - Orphan special-source relationships: 51
 - Blocked event source adapters: 0
 - Event source adapters under review: 4
