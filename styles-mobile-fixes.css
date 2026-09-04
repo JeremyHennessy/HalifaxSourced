@@ -10,6 +10,24 @@
     margin-bottom:0;
   }
 
+  #mainMap,
+  .leaflet-container{
+    z-index:0!important;
+  }
+
+  .mobile-tabbar{
+    z-index:5000!important;
+    transform:translateZ(0);
+  }
+
+  .mobile-more-backdrop{
+    z-index:5001!important;
+  }
+
+  .mobile-more-sheet{
+    z-index:5002!important;
+  }
+
   .restaurant-hero{
     min-height:280px!important;
   }
