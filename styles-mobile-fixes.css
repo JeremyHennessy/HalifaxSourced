@@ -39,6 +39,12 @@
     z-index:5002!important;
   }
 
+  [data-mobile-more-sheet] button,
+  .mobile-more-sheet button{
+    min-width:44px!important;
+    min-height:44px!important;
+  }
+
   .restaurant-hero{
     min-height:280px!important;
   }
