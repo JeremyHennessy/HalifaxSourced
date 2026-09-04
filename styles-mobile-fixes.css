@@ -26,6 +26,16 @@
     padding-block:18px!important;
   }
 
+  .mobile-detail-overview{
+    display:flex!important;
+    flex-direction:column;
+  }
+
+  .mobile-essential-actions{
+    order:-1;
+    margin-bottom:4px;
+  }
+
   .detail-layout,
   .detail-main{
     padding-bottom:calc(128px + var(--mobile-tabbar-h))!important;
