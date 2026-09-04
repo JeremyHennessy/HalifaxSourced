@@ -134,6 +134,16 @@ async function gotoRoute(hash, waitSelector) {
   if (waitSelector) await page.locator(waitSelector).first().waitFor({ state: "visible" });
 }
 
+async function waitForAnyVisible(selector) {
+  await page.waitForFunction((visibleSelector) => {
+    return [...document.querySelectorAll(visibleSelector)].some((element) => {
+      const rect = element.getBoundingClientRect();
+      const style = getComputedStyle(element);
+      return rect.width > 0 && rect.height > 0 && style.display !== "none" && style.visibility !== "hidden" && style.opacity !== "0" && rect.bottom > 0 && rect.right > 0 && rect.top < innerHeight && rect.left < innerWidth;
+    });
+  }, selector);
+}
+
 await gotoRoute("#home", ".mobile-tabbar");
 await auditRoute("home");
 
@@ -149,7 +159,7 @@ await auditRoute("detail");
 
 await page.locator('.mobile-tabbar [data-route-link="events"]').tap();
 await page.waitForURL(/#events/);
-await page.locator(".event-card,.rich-event-card,.event-filter-panel").first().waitFor({ state: "visible" });
+await waitForAnyVisible(".event-card,.rich-event-card,[data-event-filter-open]");
 await auditRoute("events-tab");
 
 await page.locator('.mobile-tabbar [data-route-link="map"]').tap();
@@ -188,6 +198,3 @@ await gotoRoute("#restaurant/field-guide", ".closure-notice");
 await auditRoute("short-iphone-detail");
 
 if (consoleErrors.length) throw new Error(`Console errors detected during iPhone link audit:\n${consoleErrors.join("\n")}`);
-await context.close();
-await browser.close();
-console.log("Halifax Sourced iPhone link audit verified mobile routes, More links, tap targets, safe external targets, and tab-bar collision checks.");
