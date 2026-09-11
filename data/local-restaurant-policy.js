@@ -158,7 +158,7 @@
       .normalize("NFKD")
       .replace(/[\u0300-\u036f]/g, "")
       .replace(/&/g, " and ")
-      .replace(/[']/g, "")
+      .replace(/['\u2019]/g, "")
       .replace(/[^a-z0-9]+/g, " ")
       .replace(/\s+/g, " ")
       .trim();
