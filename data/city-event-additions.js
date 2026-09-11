@@ -1,13 +1,13 @@
 "use strict";
 
-window.HALIFAX_CITY_EVENT_ADDITIONS = {
+window.HALIFAX_CITY_EVENT_ADDITIONS = JSON.parse(`{
   "version": 1,
   "generatedAt": "2026-09-11T15:00:00.000Z",
   "policy": "Curated city-event additions are source-backed records used when current official or local calendars have not yet been promoted into the primary city-events build.",
   "sources": [
     {
-      "sourceId": "taste-asia-official",
-      "sourceName": "Taste Asia",
+      "sourceId": "taste-asia-2026",
+      "sourceName": "Taste Asia 2026",
       "sourceUrl": "https://tasteasia.ca/",
       "authority": "official_primary"
     },
@@ -81,8 +81,8 @@ window.HALIFAX_CITY_EVENT_ADDITIONS = {
       ],
       "sourceEvidence": [
         {
-          "sourceId": "taste-asia-official",
-          "sourceName": "Taste Asia",
+          "sourceId": "taste-asia-2026",
+          "sourceName": "Taste Asia 2026",
           "sourceUrl": "https://tasteasia.ca/",
           "basis": "official_primary",
           "observedFacts": [
@@ -125,7 +125,7 @@ window.HALIFAX_CITY_EVENT_ADDITIONS = {
       ]
     }
   ]
-};
+}`);
 
 (function applyCityEventAdditions() {
   const additions = window.HALIFAX_CITY_EVENT_ADDITIONS;
