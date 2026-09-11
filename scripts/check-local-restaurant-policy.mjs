@@ -18,9 +18,13 @@ const excludedFixtures = [
   "Cora's",
   "Cora\u2019s Breakfast and Lunch",
   "BarBurrito",
+  "Ben & Florentine",
   "Booster Juice",
   "Boston Pizza",
-  "The Keg Steakhouse"
+  "Osmow's",
+  "The Keg Steakhouse",
+  "Wing 'n It",
+  "Wing\u2019n It"
 ];
 const localFixtures = [
   "The Canteen",
