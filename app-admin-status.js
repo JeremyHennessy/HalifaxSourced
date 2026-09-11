@@ -172,6 +172,7 @@ function buildDataProductRows(reports) {
   const preview = reports.preview || {};
   return [
     { label: "Deployment metadata", at: deployment.generatedAt, count: deployment.counts?.canonicalPlaces, countLabel: "places", href: ADMIN_STATUS_REPORT_FILES.deployment },
+    { label: "Local policy exclusions", at: deployment.catalogGeneratedAt || deployment.generatedAt, count: deployment.counts?.localPolicyExcluded, countLabel: "excluded", href: ADMIN_STATUS_REPORT_FILES.deployment },
     { label: "Latest preview artifact", at: preview.generatedAt, count: preview.promotedFileCount, countLabel: "files", href: ADMIN_STATUS_REPORT_FILES.preview },
     { label: "City events", at: reports.cityEvents?.generatedAt, count: reports.cityEvents?.eventCount, countLabel: "events", href: ADMIN_STATUS_REPORT_FILES.cityEvents },
     { label: "Content quality", at: reports.quality?.generatedAt, count: reports.quality?.summary?.canonicalPlaces, countLabel: "places", href: ADMIN_STATUS_REPORT_FILES.contentQuality },
