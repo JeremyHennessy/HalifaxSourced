@@ -1,5 +1,6 @@
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import vm from "node:vm";
+import { localRestaurantPolicyDecision } from "./lib/local-restaurant-policy.mjs";
 
 async function loadWindowScript(path) {
   const source = await readFile(new URL(`../${path}`, import.meta.url), "utf8");
@@ -15,8 +16,18 @@ const feedReviewOverrides = JSON.parse(await readFile(new URL("../data/feed-revi
 const socialProfileOverrides = JSON.parse(await readFile(new URL("../data/social-profile-review-overrides.json", import.meta.url), "utf8").catch(() => "{\"records\":[]}"));
 const discoveredWindow = await loadWindowScript("data/discovered-restaurants.js").catch(() => ({ HALIFAX_DISCOVERED_RESTAURANTS: [] }));
 const discoveredRestaurants = Array.isArray(discoveredWindow.HALIFAX_DISCOVERED_RESTAURANTS) ? discoveredWindow.HALIFAX_DISCOVERED_RESTAURANTS : [];
+const rawCuratedWindow = await loadWindowScript("data/restaurants.js").catch(() => ({ HALIFAX_RESTAURANTS: [] }));
+const rawOsmWindow = await loadWindowScript("data/osm-restaurants.js").catch(() => ({ HALIFAX_OSM_RESTAURANTS: [] }));
+const rawCuratedRestaurants = Array.isArray(rawCuratedWindow.HALIFAX_RESTAURANTS) ? rawCuratedWindow.HALIFAX_RESTAURANTS : [];
+const rawOsmRestaurants = Array.isArray(rawOsmWindow.HALIFAX_OSM_RESTAURANTS) ? rawOsmWindow.HALIFAX_OSM_RESTAURANTS : [];
+const rawRestaurantRecords = [...rawCuratedRestaurants, ...rawOsmRestaurants, ...discoveredRestaurants, ...(catalog.restaurants || [])];
+const rawRestaurantIds = new Set(rawRestaurantRecords.map((restaurant) => restaurant?.id).filter(Boolean));
 const localPolicyExcludedIds = new Set((catalog.sourceMeta?.localRestaurantPolicy?.excludedRecords || []).map((record) => record?.id).filter(Boolean));
-const restaurantIds = new Set([...(catalog.restaurants || []), ...discoveredRestaurants].map((restaurant) => restaurant.id));
+for (const restaurant of rawRestaurantRecords) {
+  if (restaurant?.id && localRestaurantPolicyDecision(restaurant).excluded) localPolicyExcludedIds.add(restaurant.id);
+}
+const localEligibleDiscoveredRestaurants = discoveredRestaurants.filter((restaurant) => !localPolicyExcludedIds.has(restaurant?.id));
+const restaurantIds = new Set([...(catalog.restaurants || []), ...localEligibleDiscoveredRestaurants].map((restaurant) => restaurant.id).filter(Boolean));
 const firstPartyWindow = await loadWindowScript("data/first-party-sources.js");
 const feedWindow = await loadWindowScript("data/website-feed-signals.js");
 const websitePageWindow = await loadWindowScript("data/website-page-intelligence.js").catch(() => ({ HALIFAX_WEBSITE_PAGE_INTELLIGENCE: { records: [], signals: [] } }));
@@ -50,25 +61,30 @@ const allowedFeedExclusionReasons = new Set(["compromised_off_topic_feed", "shar
 const allowedSocialProfileExclusionReasons = new Set(["person_or_creator_profile", "parent_institution_profile", "wrong_location_profile", "supplier_or_partner_profile", "conflicting_profile_evidence"]);
 const allowedRecentCategories = new Set(["happy_hour", "specials", "events", "live_music", "openings", "menu", "patio", "brunch", "seasonal", "reservations", "general_update"]);
 const excludedFeedUrls = new Set();
+const reviewedFeedUrls = new Set();
 const excludedProfileUrlsByRestaurant = new Map();
 for (const record of feedReviewOverrides.records || []) {
-  if (localPolicyExcludedIds.has(record.restaurantId)) continue;
-  if (!restaurantIds.has(record.restaurantId) || record.reviewState !== "reviewed_exclusion" || !allowedFeedExclusionReasons.has(record.reason) || !validDate(record.observedAt) || !String(record.evidence || "").trim() || !(record.feedUrls || []).length) {
+  const localPolicyExcluded = localPolicyExcludedIds.has(record.restaurantId);
+  if (!rawRestaurantIds.has(record.restaurantId) || record.reviewState !== "reviewed_exclusion" || !allowedFeedExclusionReasons.has(record.reason) || !validDate(record.observedAt) || !String(record.evidence || "").trim() || !(record.feedUrls || []).length) {
     failures.push({ type: "invalid_feed_review_exclusion", restaurantId: record.restaurantId });
     continue;
   }
   for (const url of record.feedUrls) {
     if (!validUrl(url)) failures.push({ type: "invalid_feed_review_exclusion_url", restaurantId: record.restaurantId, url });
-    else excludedFeedUrls.add(url);
+    else {
+      reviewedFeedUrls.add(url);
+      if (!localPolicyExcluded) excludedFeedUrls.add(url);
+    }
   }
 }
-if ((feedPayload.reviewedFeedsExcluded ?? 0) !== excludedFeedUrls.size) failures.push({ type: "feed_review_exclusion_count_mismatch", expected: excludedFeedUrls.size, actual: feedPayload.reviewedFeedsExcluded ?? 0 });
+if ((feedPayload.reviewedFeedsExcluded ?? 0) !== reviewedFeedUrls.size) failures.push({ type: "feed_review_exclusion_count_mismatch", expected: reviewedFeedUrls.size, actual: feedPayload.reviewedFeedsExcluded ?? 0 });
 for (const record of socialProfileOverrides.records || []) {
-  if (localPolicyExcludedIds.has(record.restaurantId)) continue;
-  if (!restaurantIds.has(record.restaurantId) || record.reviewState !== "reviewed_exclusion" || !allowedSocialProfileExclusionReasons.has(record.reason) || !validDate(record.observedAt) || !String(record.evidence || "").trim() || !(record.profileUrls || []).length) {
+  const localPolicyExcluded = localPolicyExcludedIds.has(record.restaurantId);
+  if (!rawRestaurantIds.has(record.restaurantId) || record.reviewState !== "reviewed_exclusion" || !allowedSocialProfileExclusionReasons.has(record.reason) || !validDate(record.observedAt) || !String(record.evidence || "").trim() || !(record.profileUrls || []).length) {
     failures.push({ type: "invalid_social_profile_review_exclusion", restaurantId: record.restaurantId });
     continue;
   }
+  if (localPolicyExcluded) continue;
   if (!excludedProfileUrlsByRestaurant.has(record.restaurantId)) excludedProfileUrlsByRestaurant.set(record.restaurantId, new Set());
   const bucket = excludedProfileUrlsByRestaurant.get(record.restaurantId);
   for (const url of record.profileUrls) {
