@@ -76,6 +76,10 @@ jobs:
           node scripts/test-lifecycle-language.mjs
           node scripts/check-restaurant-media-rights.mjs
           node scripts/check-neighbourhood-resolutions.mjs
+          node scripts/check-city-event-additions.mjs
+          node scripts/apply-city-event-additions.mjs
+          node scripts/sanitize-city-events.mjs
+          node scripts/resolve-city-event-entities.mjs
           node scripts/check-city-events.mjs
           node scripts/check-event-entity-resolution.mjs
           node scripts/check-structured-place-facts.mjs
@@ -121,6 +125,7 @@ jobs:
             docs/restaurant-lifecycle-report.md
             data/build/restaurant-media-rights-report.json
             data/build/neighbourhood-resolution-report.json
+            artifacts/city-event-additions-report.json
             artifacts/city-event-integrity-report.json
             artifacts/event-entity-resolution-report.json
             artifacts/structured-place-facts-report.json
@@ -188,6 +193,13 @@ jobs:
 
       - name: Build thumbnail candidates for browser verification
         run: node scripts/build-thumbnail-candidates.mjs
+
+      - name: Apply city event additions for browser verification
+        run: |
+          node scripts/check-city-event-additions.mjs
+          node scripts/apply-city-event-additions.mjs
+          node scripts/sanitize-city-events.mjs
+          node scripts/resolve-city-event-entities.mjs
 
       - name: Install Playwright
         run: |

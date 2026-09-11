@@ -1,6 +1,6 @@
 {
-  "version": 2,
-  "updatedAt": "2026-08-28",
+  "version": 3,
+  "updatedAt": "2026-09-11",
   "venues": [
     {"venueId":"scotiabank-centre-halifax","name":"Scotiabank Centre","alternateNames":["Halifax Metro Centre"],"type":"arena","address":"1800 Argyle Street, Halifax, NS","city":"Halifax","neighbourhood":"Downtown","website":"https://www.scotiabank-centre.com/","sourceIds":["scotiabank-centre","halifax-mooseheads-home","halifax-thunderbirds"],"authorityClass":"official_venue"},
     {"venueId":"light-house-arts-centre-halifax","name":"Light House Arts Centre","alternateNames":["Light House Arts Centre Halifax"],"type":"performing_arts_venue","address":"1800 Argyle Street, Halifax, NS","city":"Halifax","neighbourhood":"Downtown","website":"https://www.lighthouseartscentre.ca/","sourceIds":["light-house-arts-centre"],"authorityClass":"official_venue"},
@@ -17,6 +17,7 @@
     {"venueId":"dartmouth-north-library-temporary","name":"Dartmouth North - Temporary Location","alternateNames":[],"type":"public_library","city":"Dartmouth","sourceIds":[],"authorityClass":"public_institution"},
     {"venueId":"dartmouth-north-library","name":"Dartmouth North Public Library","alternateNames":[],"type":"public_library","city":"Dartmouth","sourceIds":[],"authorityClass":"public_institution"},
     {"venueId":"woodlawn-library","name":"Woodlawn Public Library","alternateNames":[],"type":"public_library","address":"31 Eisener Boulevard, Dartmouth, NS B2W 0J1","city":"Dartmouth","latitude":44.6715,"longitude":-63.5316,"website":"https://www.halifaxpubliclibraries.ca/locations/woodlawn-public-library/","sourceIds":["woodlawn-library-events"],"authorityClass":"public_institution"},
-    {"venueId":"bedford-library","name":"Bedford Public Library","alternateNames":[],"type":"public_library","address":"15 Dartmouth Road, Bedford, NS B4A 3X6","city":"Bedford","latitude":44.7314,"longitude":-63.6571,"website":"https://www.halifaxpubliclibraries.ca/locations/bedford-public-library/","sourceIds":["bedford-library-events"],"authorityClass":"public_institution"}
+    {"venueId":"bedford-library","name":"Bedford Public Library","alternateNames":[],"type":"public_library","address":"15 Dartmouth Road, Bedford, NS B4A 3X6","city":"Bedford","latitude":44.7314,"longitude":-63.6571,"website":"https://www.halifaxpubliclibraries.ca/locations/bedford-public-library/","sourceIds":["bedford-library-events"],"authorityClass":"public_institution"},
+    {"venueId":"waterfront-salter-lot-halifax","name":"Waterfront Salter Lot","alternateNames":["Salter Lot","Halifax Waterfront Salter Lot","Salter Lot, Halifax Waterfront"],"type":"outdoor_event_venue","address":"1521 Lower Water Street, Halifax, NS B3J 1R9","city":"Halifax","neighbourhood":"Waterfront","website":"https://tasteasia.ca/","sourceIds":["taste-asia-2026"],"authorityClass":"official_event_venue"}
   ]
 }

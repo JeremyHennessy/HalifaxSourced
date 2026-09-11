@@ -1,0 +1,126 @@
+{
+  "version": 1,
+  "generatedAt": "2026-09-11T15:00:00.000Z",
+  "policy": "Curated city-event additions are source-backed records used when current official or local calendars have not yet been promoted into the primary city-events build.",
+  "sources": [
+    {
+      "sourceId": "taste-asia-2026",
+      "sourceName": "Taste Asia 2026",
+      "sourceUrl": "https://tasteasia.ca/",
+      "authority": "official_primary"
+    },
+    {
+      "sourceId": "discover-halifax-taste-asia-2026",
+      "sourceName": "Discover Halifax",
+      "sourceUrl": "https://discoverhalifaxns.com/event/taste-asia-2026/",
+      "authority": "local_tourism_directory"
+    },
+    {
+      "sourceId": "downtown-halifax-taste-asia-2026",
+      "sourceName": "Downtown Halifax Business Commission",
+      "sourceUrl": "https://downtownhalifax.ca/event/taste-asia-festival-2026",
+      "authority": "local_business_district_directory"
+    },
+    {
+      "sourceId": "eventbrite-taste-asia-2026",
+      "sourceName": "Eventbrite",
+      "sourceUrl": "https://www.eventbrite.com/e/taste-asia-2026-4-days-food-culture-music-celebrationsep-10-13-tickets-1999327820331",
+      "authority": "ticketing_directory"
+    }
+  ],
+  "events": [
+    {
+      "id": "taste-asia-2026-food-culture-festival",
+      "title": "Taste Asia 2026",
+      "startAt": "2026-09-10",
+      "endAt": "2026-09-13",
+      "allDay": true,
+      "venueName": "Waterfront Salter Lot",
+      "address": "1521 Lower Water Street, Halifax, NS B3J 1R9",
+      "city": "Halifax",
+      "categories": [
+        "Food & Drink",
+        "Festivals",
+        "Arts",
+        "Music",
+        "Community",
+        "Outdoor",
+        "Family"
+      ],
+      "price": "Free general admission; selected programs may require tickets",
+      "ticketUrl": "https://www.eventbrite.com/e/taste-asia-2026-4-days-food-culture-music-celebrationsep-10-13-tickets-1999327820331",
+      "eventUrl": "https://tasteasia.ca/",
+      "sourceUrl": "https://tasteasia.ca/",
+      "sourceId": "taste-asia-2026",
+      "sourceName": "Taste Asia 2026",
+      "sourceKind": "official_festival_page",
+      "observedAt": "2026-09-11T15:00:00.000Z",
+      "reviewState": "source_observed",
+      "venueId": "waterfront-salter-lot-halifax",
+      "neighbourhood": "Waterfront",
+      "organizerId": "taste-asia-fest",
+      "organizerName": "Taste Asia Fest",
+      "alternateSources": [
+        {
+          "sourceId": "discover-halifax-taste-asia-2026",
+          "sourceName": "Discover Halifax",
+          "sourceUrl": "https://discoverhalifaxns.com/event/taste-asia-2026/"
+        },
+        {
+          "sourceId": "downtown-halifax-taste-asia-2026",
+          "sourceName": "Downtown Halifax Business Commission",
+          "sourceUrl": "https://downtownhalifax.ca/event/taste-asia-festival-2026"
+        },
+        {
+          "sourceId": "eventbrite-taste-asia-2026",
+          "sourceName": "Eventbrite",
+          "sourceUrl": "https://www.eventbrite.com/e/taste-asia-2026-4-days-food-culture-music-celebrationsep-10-13-tickets-1999327820331"
+        }
+      ],
+      "sourceEvidence": [
+        {
+          "sourceId": "taste-asia-2026",
+          "sourceName": "Taste Asia 2026",
+          "sourceUrl": "https://tasteasia.ca/",
+          "basis": "official_primary",
+          "observedFacts": [
+            "Dates: September 10-13, 2026",
+            "Venue: Waterfront Salter Lot, 1521 Lower Water St, Halifax",
+            "Admission: free general admission"
+          ]
+        },
+        {
+          "sourceId": "discover-halifax-taste-asia-2026",
+          "sourceName": "Discover Halifax",
+          "sourceUrl": "https://discoverhalifaxns.com/event/taste-asia-2026/",
+          "basis": "tourism_directory_corroboration",
+          "observedFacts": [
+            "Dates: September 10-13, 2026",
+            "Venue: Waterfront Salter Lot",
+            "Categories include Food & Drink, Free, Music and Signature Major Events"
+          ]
+        },
+        {
+          "sourceId": "downtown-halifax-taste-asia-2026",
+          "sourceName": "Downtown Halifax Business Commission",
+          "sourceUrl": "https://downtownhalifax.ca/event/taste-asia-festival-2026",
+          "basis": "district_directory_corroboration",
+          "observedFacts": [
+            "Dates: September 10-13, 2026",
+            "Location: Salter Lot, Halifax Waterfront"
+          ]
+        },
+        {
+          "sourceId": "eventbrite-taste-asia-2026",
+          "sourceName": "Eventbrite",
+          "sourceUrl": "https://www.eventbrite.com/e/taste-asia-2026-4-days-food-culture-music-celebrationsep-10-13-tickets-1999327820331",
+          "basis": "ticketing_corroboration",
+          "observedFacts": [
+            "Dates: September 10-13, 2026",
+            "Location: Salter Lot, 1521 Lower Water Street, Halifax"
+          ]
+        }
+      ]
+    }
+  ]
+}

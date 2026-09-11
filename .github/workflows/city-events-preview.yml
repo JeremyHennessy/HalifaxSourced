@@ -4,6 +4,29 @@ on:
   workflow_dispatch:
   schedule:
     - cron: "23 */6 * * *"
+  push:
+    branches:
+      - main
+    paths:
+      - .github/workflows/city-events-preview.yml
+      - data/event-source-registry.json
+      - data/event-source-supplements.json
+      - data/event-source-candidates.json
+      - data/venue-registry.json
+      - data/organizer-registry.json
+      - data/city-event-additions.js
+      - data/build/city-event-additions.json
+      - scripts/import-city-events.mjs
+      - scripts/import-supplemental-city-events.mjs
+      - scripts/apply-city-event-additions.mjs
+      - scripts/check-city-event-additions.mjs
+      - scripts/sanitize-city-events.mjs
+      - scripts/reconcile-city-event-source-drift.mjs
+      - scripts/event-source-drift-lib.mjs
+      - scripts/test-city-event-source-drift.mjs
+      - scripts/resolve-city-event-entities.mjs
+      - scripts/check-event-entity-resolution.mjs
+      - scripts/check-city-events.mjs
   pull_request:
     branches:
       - main
@@ -14,8 +37,12 @@ on:
       - data/event-source-candidates.json
       - data/venue-registry.json
       - data/organizer-registry.json
+      - data/city-event-additions.js
+      - data/build/city-event-additions.json
       - scripts/import-city-events.mjs
       - scripts/import-supplemental-city-events.mjs
+      - scripts/apply-city-event-additions.mjs
+      - scripts/check-city-event-additions.mjs
       - scripts/sanitize-city-events.mjs
       - scripts/reconcile-city-event-source-drift.mjs
       - scripts/event-source-drift-lib.mjs
@@ -58,6 +85,12 @@ jobs:
           LIBRARY_EVENT_DELAY_MS: 100
         run: node scripts/import-supplemental-city-events.mjs
 
+      - name: Validate curated city-event additions
+        run: node scripts/check-city-event-additions.mjs
+
+      - name: Apply curated city-event additions
+        run: node scripts/apply-city-event-additions.mjs
+
       - name: Reconcile anomalous high-yield source drops
         env:
           CITY_EVENTS_PREVIOUS_PATH: /tmp/city-events.previous.json
@@ -89,5 +122,6 @@ jobs:
             artifacts/city-event-source-drift-report.json
             artifacts/city-event-integrity-report.json
             artifacts/event-entity-resolution-report.json
+            artifacts/city-event-additions-report.json
           if-no-files-found: error
           retention-days: 30
