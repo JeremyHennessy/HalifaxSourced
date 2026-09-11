@@ -97,6 +97,7 @@ jobs:
           node scripts/check-restaurant-lifecycle.mjs
           node scripts/build-content-coverage-report.mjs
           node scripts/build-thumbnail-coverage-report.mjs
+          node scripts/plan-thumbnail-coverage-attack.mjs
           node scripts/reconcile-structured-coverage.mjs
           node scripts/check-report-deployment-parity.mjs
           node scripts/render-content-coverage-report.mjs
@@ -116,6 +117,7 @@ jobs:
             artifacts/expanded-source-integrity-report.json
             artifacts/thumbnail-candidates-report.json
             artifacts/thumbnail-coverage-report.json
+            artifacts/thumbnail-promotion-plan.json
             artifacts/restaurant-discovery-report.json
             artifacts/place-source-resolution-report.json
             data/build/place-source-resolutions.json
@@ -150,7 +152,13 @@ jobs:
             data/build/thumbnail-candidates.json
             data/thumbnail-candidates.js
             data/build/thumbnail-coverage-report.json
+            data/build/thumbnail-promotion-plan.json
+            data/build/thumbnail-promotion-plan.csv
+            data/build/thumbnail-source-check-priority.csv
+            data/build/thumbnail-owner-outreach-priority.json
+            data/build/thumbnail-owner-outreach-priority.csv
             docs/thumbnail-coverage-report.md
+            docs/thumbnail-coverage-attack-plan.md
             data/build/halifax_sourced.sqlite
             data/build/content-coverage-report.json
             docs/content-coverage-report.md
