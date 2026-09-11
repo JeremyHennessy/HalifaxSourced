@@ -146,7 +146,7 @@ jobs:
         id: pull-request
         if: steps.changes.outputs.changed == 'true'
         env:
-          GH_TOKEN: ${{ github.token }}
+          GH_TOKEN: ${{ secrets.PREVIEW_PROMOTION_PR_TOKEN || github.token }}
         shell: bash
         run: |
           artifact_name="${{ steps.preview.outputs.artifact_name }}"
@@ -154,8 +154,12 @@ jobs:
           branch="${{ steps.commit.outputs.branch }}"
           source_run_url="${{ steps.preview.outputs.source_run_url }}"
           title="Promote ${artifact_name} data preview"
+          pr_body="$RUNNER_TEMP/pr-body.md"
+          pr_error=""
+          pr_url=""
+          existing_pr=""
 
-          cat > "$RUNNER_TEMP/pr-body.md" <<BODY
+          cat > "$pr_body" <<BODY
           Automated promotion of the \`${artifact_name}\` preview artifact.
 
           Source workflow run: ${source_run_url}
@@ -165,13 +169,37 @@ jobs:
           This PR dispatches \`Quality Gate\` for \`${branch}\`. The existing gated Pages workflow deploys after this PR is merged and \`Quality Gate\` succeeds on \`main\`.
           BODY
 
-          existing_pr="$(gh pr list --head "$branch" --base main --state open --json number --jq '.[0].number // empty')"
-          if [ -n "$existing_pr" ]; then
-            gh pr edit "$existing_pr" --title "$title" --body-file "$RUNNER_TEMP/pr-body.md"
-            pr_url="$(gh pr view "$existing_pr" --json url --jq '.url')"
+          if ! existing_pr="$(gh pr list --head "$branch" --base main --state open --json number --jq '.[0].number // empty' 2>"$RUNNER_TEMP/pr-list-error.log")"; then
+            pr_error="$(cat "$RUNNER_TEMP/pr-list-error.log")"
+          elif [ -n "$existing_pr" ]; then
+            if gh pr edit "$existing_pr" --title "$title" --body-file "$pr_body" 2>"$RUNNER_TEMP/pr-edit-error.log"; then
+              pr_url="$(gh pr view "$existing_pr" --json url --jq '.url')"
+            else
+              pr_error="$(cat "$RUNNER_TEMP/pr-edit-error.log")"
+            fi
           else
-            pr_url="$(gh pr create --base main --head "$branch" --title "$title" --body-file "$RUNNER_TEMP/pr-body.md")"
-            existing_pr="${pr_url##*/}"
+            if gh pr create --base main --head "$branch" --title "$title" --body-file "$pr_body" >"$RUNNER_TEMP/pr-url.txt" 2>"$RUNNER_TEMP/pr-create-error.log"; then
+              pr_url="$(cat "$RUNNER_TEMP/pr-url.txt")"
+              existing_pr="${pr_url##*/}"
+            else
+              pr_error="$(cat "$RUNNER_TEMP/pr-create-error.log")"
+            fi
+          fi
+
+          if [ -n "$pr_error" ]; then
+            echo "::warning::Could not open or update promotion PR for ${branch}: ${pr_error}"
+            {
+              echo "## Promotion PR action needed"
+              echo ""
+              echo "Promoted branch: \`${branch}\`"
+              echo "Artifact: \`${artifact_name}\`"
+              echo "Source workflow run: ${source_run_url}"
+              echo ""
+              echo "GitHub rejected automatic PR creation. Enable repository Actions PR creation or configure a \`PREVIEW_PROMOTION_PR_TOKEN\` secret with contents and pull request write access."
+            } >> "$GITHUB_STEP_SUMMARY"
+            echo "number=" >> "$GITHUB_OUTPUT"
+            echo "url=" >> "$GITHUB_OUTPUT"
+            exit 0
           fi
 
           echo "number=$existing_pr" >> "$GITHUB_OUTPUT"
@@ -190,5 +218,16 @@ jobs:
       - name: Promotion result
         if: steps.changes.outputs.changed == 'true'
         run: |
-          echo "Promotion PR: ${{ steps.pull-request.outputs.url }}"
+          if [ -n "${{ steps.pull-request.outputs.url }}" ]; then
+            echo "Promotion PR: ${{ steps.pull-request.outputs.url }}"
+          else
+            echo "Promotion branch: ${{ steps.commit.outputs.branch }}"
+            echo "Promotion PR was not opened automatically; see workflow summary for the required repository/token setting."
+          fi
           echo "Pages deploy remains gated by the main-branch Quality Gate after merge."
+
+      - name: Require promotion pull request
+        if: steps.changes.outputs.changed == 'true' && steps.pull-request.outputs.url == ''
+        run: |
+          echo "::error::Promoted data branch was created, but no promotion PR was opened. Enable repository Actions PR creation or configure PREVIEW_PROMOTION_PR_TOKEN."
+          exit 1
