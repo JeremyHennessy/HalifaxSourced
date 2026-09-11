@@ -175,10 +175,15 @@ function normalizeHost(value) {
   }
 }
 
+function chainTokenMatches(token, chain) {
+  const possessive = `${chain}s`;
+  return token === chain || token === possessive || token.startsWith(`${chain} `) || token.startsWith(`${possessive} `) || token.endsWith(` ${chain}`) || token.endsWith(` ${possessive}`);
+}
+
 function chainLabelMatch(value) {
   const token = localRestaurantPolicyToken(value);
   if (!token) return null;
-  const matchedToken = CHAIN_TOKENS.find((chain) => token === chain || token.startsWith(`${chain} `) || token.endsWith(` ${chain}`));
+  const matchedToken = CHAIN_TOKENS.find((chain) => chainTokenMatches(token, chain));
   return matchedToken ? { matchedToken, matchedValue: String(value) } : null;
 }
 
