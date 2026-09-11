@@ -1,14 +1,14 @@
 {
-  "generatedAt": "2026-09-04T13:17:25.660Z",
-  "eventCount": 192,
-  "venueResolved": 139,
-  "organizerResolved": 166,
+  "generatedAt": "2026-09-11T14:46:40.363Z",
+  "eventCount": 191,
+  "venueResolved": 138,
+  "organizerResolved": 168,
   "restaurantResolved": 10,
   "unresolvedVenue": 53,
-  "unresolvedOrganizer": 26,
+  "unresolvedOrganizer": 23,
   "resolutions": [
     {
-      "eventId": "tourism-ns-events-861ded775ec1c2bf",
+      "eventId": "tourism-ns-events-8137fad6339a2db5",
       "title": "Ta’n me’j Tel-keknuo’ltiek: How Unique We Still Are",
       "sourceId": "tourism-ns-events",
       "venueId": null,
@@ -30,7 +30,7 @@
       "restaurantBasis": null
     },
     {
-      "eventId": "tourism-ns-events-d235c3f09dcabcb8",
+      "eventId": "tourism-ns-events-c089f9cfeae560fc",
       "title": "Halifax Wanderers 2026 Season",
       "sourceId": "tourism-ns-events",
       "venueId": "wanderers-grounds-halifax",
@@ -41,7 +41,7 @@
       "restaurantBasis": null
     },
     {
-      "eventId": "tourism-ns-events-213e96f17b9adfdd",
+      "eventId": "tourism-ns-events-f16a9115082603e7",
       "title": "Halifax Tides FC 2026 Season",
       "sourceId": "tourism-ns-events",
       "venueId": "wanderers-grounds-halifax",
@@ -74,17 +74,6 @@
       "restaurantBasis": null
     },
     {
-      "eventId": "alderney-landing-events-e5cf740d67247e04",
-      "title": "On the Threshold",
-      "sourceId": "alderney-landing-events",
-      "venueId": "alderney-landing-dartmouth",
-      "venueBasis": "source_id",
-      "organizerId": null,
-      "organizerBasis": null,
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
       "eventId": "https://novascotia.com/event/the-halifax-fringe-festival/#event",
       "title": "The Halifax Fringe Festival",
       "sourceId": "tourism-ns-events",
@@ -96,301 +85,15 @@
       "restaurantBasis": null
     },
     {
-      "eventId": "tourism-ns-events-06d790170c15ee40",
-      "title": "Kings of Hali 9 – Premier Video Gaming Tournament",
-      "sourceId": "tourism-ns-events",
-      "venueId": null,
-      "venueBasis": null,
-      "organizerId": null,
-      "organizerBasis": null,
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "alderney-gate-library-events-d0f17172b2f2d4a3",
-      "title": "Get Directions , opens a new window",
-      "sourceId": "alderney-gate-library-events",
-      "venueId": "alderney-gate-library",
+      "eventId": "taste-asia-2026-food-culture-festival",
+      "title": "Taste Asia 2026",
+      "sourceId": "taste-asia-2026",
+      "venueId": "waterfront-salter-lot-halifax",
       "venueBasis": "source_id",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "alderney-gate-library-events-d1ca113d7e7139f9",
-      "title": "Community Café",
-      "sourceId": "alderney-gate-library-events",
-      "venueId": "alderney-gate-library",
-      "venueBasis": "source_id",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "the-carleton-5653652a17ce28b1",
-      "title": "Nick Earle & The Reckless Hearts w/ LeafGreen",
-      "sourceId": "the-carleton",
-      "venueId": "the-carleton-halifax",
-      "venueBasis": "source_id",
-      "organizerId": "the-carleton",
-      "organizerBasis": "source_id",
-      "restaurantId": "osm-node-771690675-the-carleton",
-      "restaurantBasis": "exact_venue_place_name"
-    },
-    {
-      "eventId": "alderney-landing-events-e22ff3bdb41d4e96",
-      "title": "Tommy Green Jr",
-      "sourceId": "alderney-landing-events",
-      "venueId": "alderney-landing-dartmouth",
-      "venueBasis": "source_id",
-      "organizerId": null,
-      "organizerBasis": null,
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "alderney-landing-events-9be8f68633ed92e8",
-      "title": "Farmers Market",
-      "sourceId": "alderney-landing-events",
-      "venueId": "alderney-landing-dartmouth",
-      "venueBasis": "source_id",
-      "organizerId": null,
-      "organizerBasis": null,
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "alderney-gate-library-events-4343201b2d3d4cdc",
-      "title": "Scribble & Script: Stationery Meet-up",
-      "sourceId": "alderney-gate-library-events",
-      "venueId": "alderney-gate-library",
-      "venueBasis": "source_id",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "the-carleton-6e434a448bce7c32",
-      "title": "Lindsay Misiner Full Band Show W/Anna Martin (Duo)",
-      "sourceId": "the-carleton",
-      "venueId": "the-carleton-halifax",
-      "venueBasis": "source_id",
-      "organizerId": "the-carleton",
-      "organizerBasis": "source_id",
-      "restaurantId": "osm-node-771690675-the-carleton",
-      "restaurantBasis": "exact_venue_place_name"
-    },
-    {
-      "eventId": "the-carleton-6620c897af0b40ca",
-      "title": "Ikoum (Just Wôan & Kamila Nasr)",
-      "sourceId": "the-carleton",
-      "venueId": "the-carleton-halifax",
-      "venueBasis": "source_id",
-      "organizerId": "the-carleton",
-      "organizerBasis": "source_id",
-      "restaurantId": "osm-node-771690675-the-carleton",
-      "restaurantBasis": "exact_venue_place_name"
-    },
-    {
-      "eventId": "hfx-wanderers-home-756f8bf6829dc15e",
-      "title": "HFX Wanderers FC vs Cavalry FC",
-      "sourceId": "hfx-wanderers-home",
-      "venueId": "wanderers-grounds-halifax",
-      "venueBasis": "source_id",
-      "organizerId": "hfx-wanderers",
+      "organizerId": "taste-asia-fest",
       "organizerBasis": "source_id",
       "restaurantId": null,
       "restaurantBasis": null
-    },
-    {
-      "eventId": "bedford-library-events-71e473ba88850aea",
-      "title": "Baby's First Books",
-      "sourceId": "bedford-library-events",
-      "venueId": "bedford-library",
-      "venueBasis": "source_id",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "bedford-library-events-80b6b1484d180e47",
-      "title": "Parenting Support Drop-in for New Families",
-      "sourceId": "bedford-library-events",
-      "venueId": "bedford-library",
-      "venueBasis": "source_id",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "woodlawn-library-events-7cf8114f8d758394",
-      "title": "Get Directions , opens a new window",
-      "sourceId": "woodlawn-library-events",
-      "venueId": "woodlawn-library",
-      "venueBasis": "source_id",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "woodlawn-library-events-0d3c533510bb2c7b",
-      "title": "Author Talk with Anthea Taljaard: The Objects We Keep (&…",
-      "sourceId": "woodlawn-library-events",
-      "venueId": "woodlawn-library",
-      "venueBasis": "source_id",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "scotiabank-centre-176001ab42281a2a",
-      "title": "Max McNown - RESCHEDULED",
-      "sourceId": "scotiabank-centre",
-      "venueId": "scotiabank-centre-halifax",
-      "venueBasis": "source_id",
-      "organizerId": "scotiabank-centre",
-      "organizerBasis": "source_id",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "bedford-library-events-e02933a3d9862a4e",
-      "title": "Tinkering Toddlers",
-      "sourceId": "bedford-library-events",
-      "venueId": "bedford-library",
-      "venueBasis": "source_id",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "halifax-convention-centre-5d61de8a415728c9",
-      "title": "Port of Halifax - Supply Chain Forum 2026",
-      "sourceId": "halifax-convention-centre",
-      "venueId": "halifax-convention-centre",
-      "venueBasis": "source_id",
-      "organizerId": "halifax-convention-centre",
-      "organizerBasis": "source_id",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "bedford-library-events-fc6945f379ff8edd",
-      "title": "Community Crafters",
-      "sourceId": "bedford-library-events",
-      "venueId": "bedford-library",
-      "venueBasis": "source_id",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "woodlawn-library-events-eabf90031f251805",
-      "title": "Movie: Late Bloomers",
-      "sourceId": "woodlawn-library-events",
-      "venueId": "woodlawn-library",
-      "venueBasis": "source_id",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "alderney-gate-library-events-cb9422d71d2a40d3",
-      "title": "Craft Club: Q-Tip Flower Painting",
-      "sourceId": "alderney-gate-library-events",
-      "venueId": "alderney-gate-library",
-      "venueBasis": "source_id",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "bedford-library-events-c988b832f7cb5126",
-      "title": "After School Club",
-      "sourceId": "bedford-library-events",
-      "venueId": "bedford-library",
-      "venueBasis": "source_id",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "alderney-gate-library-events-b2d1574a904d0499",
-      "title": "Teen Night: UNO",
-      "sourceId": "alderney-gate-library-events",
-      "venueId": "alderney-gate-library",
-      "venueBasis": "source_id",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "bedford-library-events-62e7c30883f622b6",
-      "title": "Bedford Authors Writers' Group",
-      "sourceId": "bedford-library-events",
-      "venueId": "bedford-library",
-      "venueBasis": "source_id",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "alderney-gate-library-events-4b1b75b6f773e687",
-      "title": "Meet Juno, a St. John Ambulance Therapy Dog",
-      "sourceId": "alderney-gate-library-events",
-      "venueId": "alderney-gate-library",
-      "venueBasis": "source_id",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "alderney-gate-library-events-d7fb1e70e8ab244f",
-      "title": "Meet Juno, a St. John Ambulance Therapy Dog Meet Juno, a St. John Ambulance Therapy Dog",
-      "sourceId": "alderney-gate-library-events",
-      "venueId": "alderney-gate-library",
-      "venueBasis": "source_id",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "the-carleton-a0e66cf12ed390be",
-      "title": "SOLD OUT: Ben Caplan – Wednesday",
-      "sourceId": "the-carleton",
-      "venueId": "the-carleton-halifax",
-      "venueBasis": "source_id",
-      "organizerId": "the-carleton",
-      "organizerBasis": "source_id",
-      "restaurantId": "osm-node-771690675-the-carleton",
-      "restaurantBasis": "exact_venue_place_name"
-    },
-    {
-      "eventId": "the-carleton-1af69bcfb2106149",
-      "title": "SOLD OUT: Ben Caplan – Thursday",
-      "sourceId": "the-carleton",
-      "venueId": "the-carleton-halifax",
-      "venueBasis": "source_id",
-      "organizerId": "the-carleton",
-      "organizerBasis": "source_id",
-      "restaurantId": "osm-node-771690675-the-carleton",
-      "restaurantBasis": "exact_venue_place_name"
     },
     {
       "eventId": "https://novascotia.com/event/festa-italiana-halifax/#event",
@@ -415,8 +118,8 @@
       "restaurantBasis": null
     },
     {
-      "eventId": "the-carleton-d65b88f56600dca5",
-      "title": "10 TIX LEFT! Ben Caplan – Friday",
+      "eventId": "the-carleton-f4a3f267b7631e3a",
+      "title": "SOLD OUT: Ben Caplan – Friday",
       "sourceId": "the-carleton",
       "venueId": "the-carleton-halifax",
       "venueBasis": "source_id",
@@ -437,10 +140,32 @@
       "restaurantBasis": null
     },
     {
+      "eventId": "bedford-library-events-9d546cdf8d7a5b14",
+      "title": "Family Drop-in",
+      "sourceId": "bedford-library-events",
+      "venueId": "bedford-library",
+      "venueBasis": "source_id",
+      "organizerId": "halifax-public-libraries",
+      "organizerBasis": "source_name_token",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
       "eventId": "woodlawn-library-events-4373b2f8647f148b",
       "title": "Stay Connected: Hearing Health, Technology & Accessibility",
       "sourceId": "woodlawn-library-events",
       "venueId": "woodlawn-library",
+      "venueBasis": "source_id",
+      "organizerId": "halifax-public-libraries",
+      "organizerBasis": "source_name_token",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
+      "eventId": "bedford-library-events-3af2ce9bfb754e48",
+      "title": "Super Saturday: Giant Games",
+      "sourceId": "bedford-library-events",
+      "venueId": "bedford-library",
       "venueBasis": "source_id",
       "organizerId": "halifax-public-libraries",
       "organizerBasis": "source_name_token",
@@ -470,6 +195,28 @@
       "restaurantBasis": "exact_venue_place_name"
     },
     {
+      "eventId": "alderney-gate-library-events-54bcc65153f057dd",
+      "title": "Big Blue Blocks",
+      "sourceId": "alderney-gate-library-events",
+      "venueId": "alderney-gate-library",
+      "venueBasis": "source_id",
+      "organizerId": "halifax-public-libraries",
+      "organizerBasis": "source_name_token",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
+      "eventId": "bedford-library-events-67587ec6fdc505da",
+      "title": "Build & Play",
+      "sourceId": "bedford-library-events",
+      "venueId": "bedford-library",
+      "venueBasis": "source_id",
+      "organizerId": "halifax-public-libraries",
+      "organizerBasis": "source_name_token",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
       "eventId": "woodlawn-library-events-d8f736a0d9411526",
       "title": "Acoustic Song Circle",
       "sourceId": "woodlawn-library-events",
@@ -492,6 +239,50 @@
       "restaurantBasis": "exact_venue_place_name"
     },
     {
+      "eventId": "alderney-gate-library-events-e285b5f5f5a894b2",
+      "title": "Nova Scotia Legal Aid: Drop-in Support",
+      "sourceId": "alderney-gate-library-events",
+      "venueId": "alderney-gate-library",
+      "venueBasis": "source_id",
+      "organizerId": "halifax-public-libraries",
+      "organizerBasis": "source_name_token",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
+      "eventId": "alderney-gate-library-events-2b760351a0b407e4",
+      "title": "Pre-teen Dungeons & Dragons",
+      "sourceId": "alderney-gate-library-events",
+      "venueId": "alderney-gate-library",
+      "venueBasis": "source_id",
+      "organizerId": "halifax-public-libraries",
+      "organizerBasis": "source_name_token",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
+      "eventId": "bedford-library-events-aeb2f6a01c498e87",
+      "title": "Baby's First Books",
+      "sourceId": "bedford-library-events",
+      "venueId": "bedford-library",
+      "venueBasis": "source_id",
+      "organizerId": "halifax-public-libraries",
+      "organizerBasis": "source_name_token",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
+      "eventId": "alderney-gate-library-events-eaf5a2e646e9b38a",
+      "title": "Shake, Rattle & Read",
+      "sourceId": "alderney-gate-library-events",
+      "venueId": "alderney-gate-library",
+      "venueBasis": "source_id",
+      "organizerId": "halifax-public-libraries",
+      "organizerBasis": "source_name_token",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
       "eventId": "halifax-convention-centre-4b5125ab825eb1a5",
       "title": "2026 Canadian Surgery Forum",
       "sourceId": "halifax-convention-centre",
@@ -503,6 +294,50 @@
       "restaurantBasis": null
     },
     {
+      "eventId": "woodlawn-library-events-9dfb33af9ad78879",
+      "title": "Needle Niche",
+      "sourceId": "woodlawn-library-events",
+      "venueId": "woodlawn-library",
+      "venueBasis": "source_id",
+      "organizerId": "halifax-public-libraries",
+      "organizerBasis": "source_name_token",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
+      "eventId": "alderney-gate-library-events-a0a5cad09a007894",
+      "title": "Alderney Ideas Seminar: Online & In-Person",
+      "sourceId": "alderney-gate-library-events",
+      "venueId": "alderney-gate-library",
+      "venueBasis": "source_id",
+      "organizerId": "halifax-public-libraries",
+      "organizerBasis": "source_name_token",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
+      "eventId": "alderney-gate-library-events-9c8031e751f682ed",
+      "title": "Dartmouth Open Writing Group",
+      "sourceId": "alderney-gate-library-events",
+      "venueId": "alderney-gate-library",
+      "venueBasis": "source_id",
+      "organizerId": "halifax-public-libraries",
+      "organizerBasis": "source_name_token",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
+      "eventId": "woodlawn-library-events-6bb2261e0223bf8d",
+      "title": "Decode Your Dog: How to Identify Needs & Build a…",
+      "sourceId": "woodlawn-library-events",
+      "venueId": "woodlawn-library",
+      "venueBasis": "source_id",
+      "organizerId": "halifax-public-libraries",
+      "organizerBasis": "source_name_token",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
       "eventId": "https://novascotia.com/event/atlantic-international-film-festival-aiff/#event",
       "title": "Atlantic International Film Festival (AIFF)",
       "sourceId": "tourism-ns-events",
@@ -510,6 +345,61 @@
       "venueBasis": null,
       "organizerId": null,
       "organizerBasis": null,
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
+      "eventId": "woodlawn-library-events-5caa22ac87bcecad",
+      "title": "Baby's First Books",
+      "sourceId": "woodlawn-library-events",
+      "venueId": "woodlawn-library",
+      "venueBasis": "source_id",
+      "organizerId": "halifax-public-libraries",
+      "organizerBasis": "source_name_token",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
+      "eventId": "bedford-library-events-65173f76d873bab1",
+      "title": "Tinkering Toddlers",
+      "sourceId": "bedford-library-events",
+      "venueId": "bedford-library",
+      "venueBasis": "source_id",
+      "organizerId": "halifax-public-libraries",
+      "organizerBasis": "source_name_token",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
+      "eventId": "bedford-library-events-aa636e36c7acf6d5",
+      "title": "Community Crafters",
+      "sourceId": "bedford-library-events",
+      "venueId": "bedford-library",
+      "venueBasis": "source_id",
+      "organizerId": "halifax-public-libraries",
+      "organizerBasis": "source_name_token",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
+      "eventId": "alderney-gate-library-events-b619c2f648fed0ab",
+      "title": "Makers Gonna Make Makers Gonna Make",
+      "sourceId": "alderney-gate-library-events",
+      "venueId": "alderney-gate-library",
+      "venueBasis": "source_id",
+      "organizerId": "halifax-public-libraries",
+      "organizerBasis": "source_name_token",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
+      "eventId": "alderney-gate-library-events-6c854870e9ecfd52",
+      "title": "Meet Juno, a St. John Ambulance Therapy Dog Meet Juno, a St. John Ambulance Therapy Dog",
+      "sourceId": "alderney-gate-library-events",
+      "venueId": "alderney-gate-library",
+      "venueBasis": "source_id",
+      "organizerId": "halifax-public-libraries",
+      "organizerBasis": "source_name_token",
       "restaurantId": null,
       "restaurantBasis": null
     },
@@ -569,6 +459,17 @@
       "restaurantBasis": null
     },
     {
+      "eventId": "the-carleton-3dfcce6fdac89343",
+      "title": "Angelique Francis Band",
+      "sourceId": "the-carleton",
+      "venueId": "the-carleton-halifax",
+      "venueBasis": "source_id",
+      "organizerId": "the-carleton",
+      "organizerBasis": "source_id",
+      "restaurantId": "osm-node-771690675-the-carleton",
+      "restaurantBasis": "exact_venue_place_name"
+    },
+    {
       "eventId": "light-house-arts-centre-92cc511a679f5160",
       "title": "Tickets | Thunder From Down Under (Friday September 18 2026) | Halifax — Light House Arts Centre",
       "sourceId": "light-house-arts-centre",
@@ -580,7 +481,7 @@
       "restaurantBasis": null
     },
     {
-      "eventId": "symphony-nova-scotia-ddeef28518ad1226",
+      "eventId": "symphony-nova-scotia-55824655816cb6f0",
       "title": "Season 2025-2026",
       "sourceId": "symphony-nova-scotia",
       "venueId": null,
@@ -622,6 +523,17 @@
       "organizerBasis": "source_id",
       "restaurantId": null,
       "restaurantBasis": null
+    },
+    {
+      "eventId": "the-carleton-8eba3064b3da5fff",
+      "title": "Newbridge W/ Jackson Weldon",
+      "sourceId": "the-carleton",
+      "venueId": "the-carleton-halifax",
+      "venueBasis": "source_id",
+      "organizerId": "the-carleton",
+      "organizerBasis": "source_id",
+      "restaurantId": "osm-node-771690675-the-carleton",
+      "restaurantBasis": "exact_venue_place_name"
     },
     {
       "eventId": "light-house-arts-centre-c8acae6ecf4e62cf",
@@ -679,6 +591,28 @@
       "restaurantBasis": null
     },
     {
+      "eventId": "the-carleton-4baca55598470cba",
+      "title": "Kim Churchill (Australia)",
+      "sourceId": "the-carleton",
+      "venueId": "the-carleton-halifax",
+      "venueBasis": "source_id",
+      "organizerId": "the-carleton",
+      "organizerBasis": "source_id",
+      "restaurantId": "osm-node-771690675-the-carleton",
+      "restaurantBasis": "exact_venue_place_name"
+    },
+    {
+      "eventId": "the-carleton-58c7ceb3c6abf199",
+      "title": "Craft Draught Showdown: Annapolis VS Tanner & Co.",
+      "sourceId": "the-carleton",
+      "venueId": "the-carleton-halifax",
+      "venueBasis": "source_id",
+      "organizerId": "the-carleton",
+      "organizerBasis": "source_id",
+      "restaurantId": "osm-node-771690675-the-carleton",
+      "restaurantBasis": "exact_venue_place_name"
+    },
+    {
       "eventId": "scotiabank-centre-4bc8dd5de1e95de4",
       "title": "Sabaton",
       "sourceId": "scotiabank-centre",
@@ -699,6 +633,17 @@
       "organizerBasis": null,
       "restaurantId": null,
       "restaurantBasis": null
+    },
+    {
+      "eventId": "the-carleton-77dd3e7575ea0742",
+      "title": "Private Event",
+      "sourceId": "the-carleton",
+      "venueId": "the-carleton-halifax",
+      "venueBasis": "source_id",
+      "organizerId": "the-carleton",
+      "organizerBasis": "source_id",
+      "restaurantId": "osm-node-771690675-the-carleton",
+      "restaurantBasis": "exact_venue_place_name"
     },
     {
       "eventId": "https://novascotia.com/event/prismatic-arts-festival/#event",
@@ -928,6 +873,17 @@
       "venueBasis": null,
       "organizerId": "symphony-nova-scotia",
       "organizerBasis": "source_id",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
+      "eventId": "https://novascotia.com/event/halifax-paranormal-symposium/#event",
+      "title": "Halifax Paranormal Symposium",
+      "sourceId": "tourism-ns-events",
+      "venueId": null,
+      "venueBasis": null,
+      "organizerId": null,
+      "organizerBasis": null,
       "restaurantId": null,
       "restaurantBasis": null
     },
@@ -1328,6 +1284,17 @@
       "restaurantBasis": null
     },
     {
+      "eventId": "light-house-arts-centre-422acafc8d4d509c",
+      "title": "Daniel James McFadyen — Light House Arts Centre",
+      "sourceId": "light-house-arts-centre",
+      "venueId": "light-house-arts-centre-halifax",
+      "venueBasis": "source_id",
+      "organizerId": "light-house-arts-centre",
+      "organizerBasis": "source_id",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
       "eventId": "symphony-nova-scotia-a4d5d17eef5c8570",
       "title": "Tafelmusik Baroque Orchestra: Staircases",
       "sourceId": "symphony-nova-scotia",
@@ -1680,6 +1647,17 @@
       "restaurantBasis": null
     },
     {
+      "eventId": "scotiabank-centre-ea565d75bdb9a37c",
+      "title": "Halifax Mooseheads vs Newfoundland Regiment",
+      "sourceId": "scotiabank-centre",
+      "venueId": "scotiabank-centre-halifax",
+      "venueBasis": "source_id",
+      "organizerId": "scotiabank-centre",
+      "organizerBasis": "source_id",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
       "eventId": "halifax-mooseheads-home-c2bc145d9b94d479",
       "title": "Halifax Mooseheads vs Baie-Comeau",
       "sourceId": "halifax-mooseheads-home",
@@ -1950,6 +1928,17 @@
       "venueId": "scotiabank-centre-halifax",
       "venueBasis": "source_id",
       "organizerId": "halifax-mooseheads",
+      "organizerBasis": "source_id",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
+      "eventId": "light-house-arts-centre-6a571344c929ceee",
+      "title": "Theory of a Deadman in Halifax — Light House Arts Centre",
+      "sourceId": "light-house-arts-centre",
+      "venueId": "light-house-arts-centre-halifax",
+      "venueBasis": "source_id",
+      "organizerId": "light-house-arts-centre",
       "organizerBasis": "source_id",
       "restaurantId": null,
       "restaurantBasis": null

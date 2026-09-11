@@ -1,57 +1,57 @@
 window.HALIFAX_CITY_EVENTS = {
   "version": 4,
-  "generatedAt": "2026-09-04T13:15:08.369Z",
+  "generatedAt": "2026-09-11T14:44:31.966Z",
   "range": {
-    "start": "2026-09-04T07:14:57.893Z",
-    "end": "2027-10-09T13:14:57.893Z"
+    "start": "2026-09-11T08:44:21.514Z",
+    "end": "2027-10-16T14:44:21.514Z"
   },
-  "eventCount": 192,
+  "eventCount": 191,
   "categoryCounts": {
-    "Arts": 44,
+    "Food & Drink": 10,
+    "Arts": 103,
+    "Outdoor": 7,
+    "Community": 34,
     "Comedy": 4,
-    "Sports": 61,
-    "Festivals": 18,
-    "Community": 29,
-    "Markets": 1,
-    "Music": 57,
-    "Outdoor": 1,
-    "Food & Drink": 4,
-    "Other": 2
+    "Sports": 62,
+    "Festivals": 19,
+    "Family": 6,
+    "Music": 63,
+    "Other": 6
   },
   "sourceStats": [
     {
       "sourceId": "tourism-ns-events",
       "sourceName": "Tourism Nova Scotia Events",
       "mode": "tourism_event_crawl",
-      "observedAt": "2026-09-04T13:15:02.854Z",
+      "observedAt": "2026-09-11T14:44:26.531Z",
       "eventCount": 219,
-      "durationMs": 4961,
+      "durationMs": 5018,
       "status": "ok"
     },
     {
       "sourceId": "halifax-mooseheads-home",
       "sourceName": "Halifax Mooseheads Home Schedule",
       "mode": "mooseheads_home_table",
-      "observedAt": "2026-09-04T13:15:02.994Z",
+      "observedAt": "2026-09-11T14:44:26.746Z",
       "eventCount": 32,
-      "durationMs": 138,
+      "durationMs": 214,
       "status": "ok"
     },
     {
       "sourceId": "scotiabank-centre",
       "sourceName": "Scotiabank Centre",
       "mode": "scotiabank_calendar",
-      "observedAt": "2026-09-04T13:15:03.027Z",
+      "observedAt": "2026-09-11T14:44:26.775Z",
       "eventCount": 33,
-      "durationMs": 33,
+      "durationMs": 29,
       "status": "ok"
     },
     {
       "sourceId": "hfx-wanderers-home",
       "sourceName": "HFX Wanderers 2026 Home Schedule",
       "mode": "sports_bullet_schedule",
-      "observedAt": "2026-09-04T13:15:03.058Z",
-      "eventCount": 5,
+      "observedAt": "2026-09-11T14:44:26.806Z",
+      "eventCount": 4,
       "durationMs": 31,
       "status": "ok"
     },
@@ -59,126 +59,147 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "halifax-tides-home",
       "sourceName": "Halifax Tides 2026 Home Schedule",
       "mode": "sports_bullet_schedule",
-      "observedAt": "2026-09-04T13:15:03.088Z",
+      "observedAt": "2026-09-11T14:44:26.837Z",
       "eventCount": 4,
-      "durationMs": 30,
+      "durationMs": 31,
       "status": "ok"
     },
     {
       "sourceId": "light-house-arts-centre",
       "sourceName": "Light House Arts Centre",
       "mode": "lighthouse_index",
-      "observedAt": "2026-09-04T13:15:05.094Z",
-      "eventCount": 18,
-      "durationMs": 2006,
+      "observedAt": "2026-09-11T14:44:30.286Z",
+      "eventCount": 20,
+      "durationMs": 3449,
       "status": "ok"
     },
     {
       "sourceId": "the-carleton",
       "sourceName": "The Carleton",
       "mode": "html_calendar",
-      "observedAt": "2026-09-04T13:15:06.105Z",
+      "observedAt": "2026-09-11T14:44:31.075Z",
       "eventCount": 10,
-      "durationMs": 1011,
+      "durationMs": 789,
       "status": "ok"
     },
     {
       "sourceId": "neptune-theatre",
       "sourceName": "Neptune Theatre",
       "mode": "neptune_season",
-      "observedAt": "2026-09-04T13:15:06.392Z",
+      "observedAt": "2026-09-11T14:44:31.426Z",
       "eventCount": 3,
-      "durationMs": 287,
+      "durationMs": 350,
       "status": "ok"
     },
     {
       "sourceId": "halifax-thunderbirds",
       "sourceName": "Halifax Thunderbirds",
       "mode": "embedded_event_data",
-      "observedAt": "2026-09-04T13:15:07.127Z",
+      "observedAt": "2026-09-11T14:44:31.661Z",
       "eventCount": 0,
-      "durationMs": 734,
+      "durationMs": 235,
       "status": "ok"
     },
     {
       "sourceId": "halifax-events-community",
       "sourceName": "HalifaxEvents.ca",
       "mode": "tribe_list_crawl",
-      "observedAt": "2026-09-04T13:15:08.350Z",
+      "observedAt": "2026-09-11T14:44:31.945Z",
       "eventCount": 0,
-      "durationMs": 1223,
+      "durationMs": 284,
       "status": "ok"
     },
     {
       "sourceId": "halifax-convention-centre",
       "sourceName": "Halifax Convention Centre",
       "status": "ok",
-      "eventCount": 8,
-      "observedAt": "2026-09-04T13:15:23.983Z",
-      "durationMs": 740
+      "eventCount": 7,
+      "observedAt": "2026-09-11T14:44:32.813Z",
+      "durationMs": 732
     },
     {
       "sourceId": "symphony-nova-scotia",
       "sourceName": "Symphony Nova Scotia",
       "status": "ok",
       "eventCount": 37,
-      "observedAt": "2026-09-04T13:15:24.141Z",
-      "durationMs": 158
+      "observedAt": "2026-09-11T14:44:32.948Z",
+      "durationMs": 135
     },
     {
       "sourceId": "halifax-public-libraries",
       "sourceName": "Halifax Public Libraries",
       "status": "ok",
       "eventCount": 1,
-      "observedAt": "2026-09-04T13:17:09.508Z",
-      "durationMs": 105367
+      "observedAt": "2026-09-11T14:46:37.225Z",
+      "durationMs": 124277
     },
     {
       "sourceId": "alderney-gate-library-events",
       "sourceName": "Alderney Gate Public Library",
       "status": "ok",
-      "eventCount": 8,
-      "observedAt": "2026-09-04T13:17:10.815Z",
-      "durationMs": 1307
+      "eventCount": 10,
+      "observedAt": "2026-09-11T14:46:38.342Z",
+      "durationMs": 1116
     },
     {
       "sourceId": "woodlawn-library-events",
       "sourceName": "Woodlawn Public Library",
       "status": "ok",
       "eventCount": 6,
-      "observedAt": "2026-09-04T13:17:11.976Z",
-      "durationMs": 1161
+      "observedAt": "2026-09-11T14:46:38.505Z",
+      "durationMs": 163
     },
     {
       "sourceId": "bedford-library-events",
       "sourceName": "Bedford Public Library",
       "status": "ok",
       "eventCount": 6,
-      "observedAt": "2026-09-04T13:17:13.276Z",
-      "durationMs": 1300
+      "observedAt": "2026-09-11T14:46:39.896Z",
+      "durationMs": 1391
     },
     {
       "sourceId": "alderney-landing-events",
       "sourceName": "Alderney Landing",
-      "status": "ok",
-      "eventCount": 3,
-      "observedAt": "2026-09-04T13:17:15.848Z",
-      "durationMs": 2572
+      "status": "failed",
+      "eventCount": 0,
+      "reason": "http_403",
+      "observedAt": "2026-09-11T14:46:40.013Z",
+      "durationMs": 117
+    },
+    {
+      "sourceId": "taste-asia-2026",
+      "sourceName": "Taste Asia 2026",
+      "mode": "official_festival_page",
+      "observedAt": "2026-09-11T15:00:00.000Z",
+      "eventCount": 1,
+      "durationMs": 0,
+      "status": "ok"
     }
   ],
-  "failures": [],
+  "failures": [
+    {
+      "sourceId": "alderney-landing-events",
+      "sourceName": "Alderney Landing",
+      "url": "https://www.alderneylanding.com/events-directory/",
+      "reason": "http_403",
+      "observedAt": "2026-09-11T14:46:40.013Z"
+    }
+  ],
   "events": [
     {
-      "id": "tourism-ns-events-861ded775ec1c2bf",
+      "id": "tourism-ns-events-8137fad6339a2db5",
       "title": "Ta’n me’j Tel-keknuo’ltiek: How Unique We Still Are",
-      "startAt": "2025-10-01T12:00:00.000Z",
-      "endAt": "2028-11-29T03:00:00.000Z",
+      "startAt": "2025-10-01T18:00:00.000Z",
+      "endAt": "2028-11-28T21:00:00.000Z",
       "allDay": false,
       "venueName": "Maritime Museum of the Atlantic",
       "address": "1675 Lower Water Street, Halifax, NS, Canada",
       "city": "Halifax",
       "categories": [
-        "Arts"
+        "Food & Drink",
+        "Arts",
+        "Outdoor",
+        "Community"
       ],
       "price": "$2 CAD",
       "ticketUrl": "https://novascotia.com/explore-nova-scotia/events/?region=29",
@@ -187,7 +208,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "tourism-ns-events",
       "sourceName": "Tourism Nova Scotia Events",
       "sourceKind": "official_tourism_calendar",
-      "observedAt": "2026-09-04T13:14:58.805Z",
+      "observedAt": "2026-09-11T14:44:22.567Z",
       "reviewState": "source-observed",
       "alternateSources": [
         {
@@ -200,14 +221,15 @@ window.HALIFAX_CITY_EVENTS = {
     {
       "id": "https://novascotia.com/event/better-times-comedy/#event",
       "title": "Better Times Comedy",
-      "startAt": "2026-01-08T23:00:00.000Z",
-      "endAt": "2026-12-18T02:00:00.000Z",
+      "startAt": "2026-01-08T19:00:00.000Z",
+      "endAt": "2026-12-17T22:00:00.000Z",
       "allDay": false,
       "venueName": "Good Robot Robie Street",
       "address": "2736 Robie St, Halifax, NS B3K 4P2, Halifax, NS, CA",
       "city": "Halifax",
       "categories": [
-        "Comedy"
+        "Comedy",
+        "Arts"
       ],
       "price": "15",
       "ticketUrl": "https://www.jumpcomedy.com/e/better-times-comedy",
@@ -216,7 +238,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "tourism-ns-events",
       "sourceName": "Tourism Nova Scotia Events",
       "sourceKind": "official_tourism_calendar",
-      "observedAt": "2026-09-04T13:14:58.783Z",
+      "observedAt": "2026-09-11T14:44:22.545Z",
       "reviewState": "source-observed",
       "alternateSources": [
         {
@@ -227,16 +249,20 @@ window.HALIFAX_CITY_EVENTS = {
       ]
     },
     {
-      "id": "tourism-ns-events-d235c3f09dcabcb8",
+      "id": "tourism-ns-events-c089f9cfeae560fc",
       "title": "Halifax Wanderers 2026 Season",
-      "startAt": "2026-04-18T12:00:00.000Z",
-      "endAt": "2026-10-26T02:00:00.000Z",
+      "startAt": "2026-04-18T18:00:00.000Z",
+      "endAt": "2026-10-25T20:00:00.000Z",
       "allDay": false,
       "venueName": "Wanderers Grounds",
       "address": "5819 Sackville St, Halifax, NS, Canada",
       "city": "Halifax",
       "categories": [
-        "Sports"
+        "Sports",
+        "Food & Drink",
+        "Arts",
+        "Outdoor",
+        "Community"
       ],
       "price": "$24.95 CAD",
       "ticketUrl": "https://hfxwanderersfc.canpl.ca/tickets",
@@ -245,7 +271,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "tourism-ns-events",
       "sourceName": "Tourism Nova Scotia Events",
       "sourceKind": "official_tourism_calendar",
-      "observedAt": "2026-09-04T13:14:58.856Z",
+      "observedAt": "2026-09-11T14:44:22.626Z",
       "reviewState": "source-observed",
       "alternateSources": [
         {
@@ -258,16 +284,20 @@ window.HALIFAX_CITY_EVENTS = {
       "neighbourhood": "Downtown"
     },
     {
-      "id": "tourism-ns-events-213e96f17b9adfdd",
+      "id": "tourism-ns-events-f16a9115082603e7",
       "title": "Halifax Tides FC 2026 Season",
-      "startAt": "2026-04-25T12:00:00.000Z",
-      "endAt": "2026-10-27T02:00:00.000Z",
+      "startAt": "2026-04-25T18:00:00.000Z",
+      "endAt": "2026-10-26T20:00:00.000Z",
       "allDay": false,
       "venueName": "Wanderers Grounds",
       "address": "5819 Sackville St, Halifax, NS, Canada",
       "city": "Halifax",
       "categories": [
-        "Sports"
+        "Sports",
+        "Food & Drink",
+        "Arts",
+        "Outdoor",
+        "Community"
       ],
       "price": "$25.56 CAD",
       "ticketUrl": "https://am.ticketmaster.com/halifaxtidesfc/buy?",
@@ -276,7 +306,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "tourism-ns-events",
       "sourceName": "Tourism Nova Scotia Events",
       "sourceKind": "official_tourism_calendar",
-      "observedAt": "2026-09-04T13:14:58.852Z",
+      "observedAt": "2026-09-11T14:44:22.633Z",
       "reviewState": "source-observed",
       "alternateSources": [
         {
@@ -291,15 +321,17 @@ window.HALIFAX_CITY_EVENTS = {
     {
       "id": "https://novascotia.com/event/family-fun-at-the-fair/#event",
       "title": "Family Fun at the Fair!",
-      "startAt": "2026-07-27T03:00:00.000Z",
-      "endAt": "2026-10-04T03:00:00.000Z",
+      "startAt": "2026-07-27T00:00:00.000Z",
+      "endAt": "2026-10-04T00:00:00.000Z",
       "allDay": false,
       "venueName": null,
       "address": "Halifax, NS, CA",
       "city": "Halifax",
       "categories": [
         "Festivals",
-        "Community"
+        "Arts",
+        "Community",
+        "Family"
       ],
       "price": null,
       "ticketUrl": "https://novascotia.com/explore-nova-scotia/events/?region=29",
@@ -308,7 +340,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "tourism-ns-events",
       "sourceName": "Tourism Nova Scotia Events",
       "sourceKind": "official_tourism_calendar",
-      "observedAt": "2026-09-04T13:14:58.865Z",
+      "observedAt": "2026-09-11T14:44:22.727Z",
       "reviewState": "source-observed",
       "alternateSources": [
         {
@@ -338,38 +370,12 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-09-04T13:15:25.090Z",
+      "observedAt": "2026-09-11T14:44:33.747Z",
       "reviewState": "source_observed",
       "venueId": "central-library-halifax",
       "neighbourhood": null,
       "organizerId": "halifax-public-libraries",
       "organizerName": "Halifax Public Libraries"
-    },
-    {
-      "id": "alderney-landing-events-e5cf740d67247e04",
-      "title": "On the Threshold",
-      "startAt": "2026-08-25T15:00:00.000Z",
-      "endAt": "2026-09-27T15:00:00.000Z",
-      "allDay": true,
-      "venueName": "Alderney Landing",
-      "address": "2 Ochterloney Street, Dartmouth, NS B2Y 3Z3",
-      "city": "Dartmouth",
-      "categories": [
-        "Community"
-      ],
-      "eventUrl": "https://www.alderneylanding.com/events/on-the-threshold/",
-      "ticketUrl": "https://www.alderneylanding.com/events-directory/",
-      "price": null,
-      "sourceId": "alderney-landing-events",
-      "sourceName": "Alderney Landing",
-      "sourceKind": "official_venue_calendar",
-      "sourceUrl": "https://www.alderneylanding.com/events-directory/",
-      "observedAt": "2026-09-04T13:17:15.848Z",
-      "reviewState": "source_observed",
-      "latitude": 44.6647,
-      "longitude": -63.5694,
-      "venueId": "alderney-landing-dartmouth",
-      "neighbourhood": "Downtown Dartmouth"
     },
     {
       "id": "https://novascotia.com/event/the-halifax-fringe-festival/#event",
@@ -391,7 +397,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "tourism-ns-events",
       "sourceName": "Tourism Nova Scotia Events",
       "sourceKind": "official_tourism_calendar",
-      "observedAt": "2026-09-04T13:14:58.868Z",
+      "observedAt": "2026-09-11T14:44:22.731Z",
       "reviewState": "source-observed",
       "alternateSources": [
         {
@@ -402,756 +408,103 @@ window.HALIFAX_CITY_EVENTS = {
       ]
     },
     {
-      "id": "tourism-ns-events-06d790170c15ee40",
-      "title": "Kings of Hali 9 – Premier Video Gaming Tournament",
-      "startAt": "2026-09-04T12:00:00.000Z",
-      "endAt": "2026-09-07T02:00:00.000Z",
-      "allDay": false,
-      "venueName": "Lighthouse Arts Centre",
-      "address": "1800 Argyle St, Halifax, NS, B3J 3N8, Canada",
+      "id": "taste-asia-2026-food-culture-festival",
+      "title": "Taste Asia 2026",
+      "startAt": "2026-09-10",
+      "endAt": "2026-09-13",
+      "allDay": true,
+      "venueName": "Waterfront Salter Lot",
+      "address": "1521 Lower Water Street, Halifax, NS B3J 1R9",
       "city": "Halifax",
       "categories": [
-        "Arts"
+        "Food & Drink",
+        "Festivals",
+        "Arts",
+        "Music",
+        "Community",
+        "Outdoor",
+        "Family"
       ],
-      "price": "$2 CAD",
-      "ticketUrl": "https://novascotia.com/explore-nova-scotia/events/?region=29",
-      "eventUrl": "https://novascotia.com/event/kings-of-hali-9-premier-video-gaming-tournament/",
-      "sourceUrl": "https://novascotia.com/event/kings-of-hali-9-premier-video-gaming-tournament/",
-      "sourceId": "tourism-ns-events",
-      "sourceName": "Tourism Nova Scotia Events",
-      "sourceKind": "official_tourism_calendar",
-      "observedAt": "2026-09-04T13:14:58.875Z",
-      "reviewState": "source-observed",
+      "price": "Free general admission; selected programs may require tickets",
+      "ticketUrl": "https://www.eventbrite.com/e/taste-asia-2026-4-days-food-culture-music-celebrationsep-10-13-tickets-1999327820331",
+      "eventUrl": "https://tasteasia.ca/",
+      "sourceUrl": "https://tasteasia.ca/",
+      "sourceId": "taste-asia-2026",
+      "sourceName": "Taste Asia 2026",
+      "sourceKind": "official_festival_page",
+      "observedAt": "2026-09-11T15:00:00.000Z",
+      "reviewState": "source_observed",
+      "venueId": "waterfront-salter-lot-halifax",
+      "neighbourhood": "Waterfront",
+      "organizerId": "taste-asia-fest",
+      "organizerName": "Taste Asia Fest",
       "alternateSources": [
         {
-          "sourceId": "tourism-ns-events",
-          "sourceName": "Tourism Nova Scotia Events",
-          "sourceUrl": "https://novascotia.com/event/kings-of-hali-9-premier-video-gaming-tournament/"
+          "sourceId": "discover-halifax-taste-asia-2026",
+          "sourceName": "Discover Halifax",
+          "sourceUrl": "https://discoverhalifaxns.com/event/taste-asia-2026/"
+        },
+        {
+          "sourceId": "downtown-halifax-taste-asia-2026",
+          "sourceName": "Downtown Halifax Business Commission",
+          "sourceUrl": "https://downtownhalifax.ca/event/taste-asia-festival-2026"
+        },
+        {
+          "sourceId": "eventbrite-taste-asia-2026",
+          "sourceName": "Eventbrite",
+          "sourceUrl": "https://www.eventbrite.com/e/taste-asia-2026-4-days-food-culture-music-celebrationsep-10-13-tickets-1999327820331"
+        }
+      ],
+      "sourceEvidence": [
+        {
+          "sourceId": "taste-asia-2026",
+          "sourceName": "Taste Asia 2026",
+          "sourceUrl": "https://tasteasia.ca/",
+          "basis": "official_primary",
+          "observedFacts": [
+            "Dates: September 10-13, 2026",
+            "Venue: Waterfront Salter Lot, 1521 Lower Water St, Halifax",
+            "Admission: free general admission"
+          ]
+        },
+        {
+          "sourceId": "discover-halifax-taste-asia-2026",
+          "sourceName": "Discover Halifax",
+          "sourceUrl": "https://discoverhalifaxns.com/event/taste-asia-2026/",
+          "basis": "tourism_directory_corroboration",
+          "observedFacts": [
+            "Dates: September 10-13, 2026",
+            "Venue: Waterfront Salter Lot",
+            "Categories include Food & Drink, Free, Music and Signature Major Events"
+          ]
+        },
+        {
+          "sourceId": "downtown-halifax-taste-asia-2026",
+          "sourceName": "Downtown Halifax Business Commission",
+          "sourceUrl": "https://downtownhalifax.ca/event/taste-asia-festival-2026",
+          "basis": "district_directory_corroboration",
+          "observedFacts": [
+            "Dates: September 10-13, 2026",
+            "Location: Salter Lot, Halifax Waterfront"
+          ]
+        },
+        {
+          "sourceId": "eventbrite-taste-asia-2026",
+          "sourceName": "Eventbrite",
+          "sourceUrl": "https://www.eventbrite.com/e/taste-asia-2026-4-days-food-culture-music-celebrationsep-10-13-tickets-1999327820331",
+          "basis": "ticketing_corroboration",
+          "observedFacts": [
+            "Dates: September 10-13, 2026",
+            "Location: Salter Lot, 1521 Lower Water Street, Halifax"
+          ]
         }
       ]
     },
     {
-      "id": "alderney-gate-library-events-d0f17172b2f2d4a3",
-      "title": "Get Directions , opens a new window",
-      "startAt": "2026-09-04T13:00:00.000Z",
-      "endAt": "2026-09-04T14:30:00.000Z",
-      "allDay": false,
-      "venueName": "Alderney Gate Public Library",
-      "address": "60 Alderney Drive, Dartmouth, NS B2Y 4P8",
-      "city": "Dartmouth",
-      "categories": [
-        "Community"
-      ],
-      "eventUrl": "https://www.google.com/maps/dir/?api=1&amp;destination=60%20%20Alderney%20Drive%20Dartmouth%20NS",
-      "ticketUrl": "https://www.halifaxpubliclibraries.ca/locations/alderney-gate-public-library/",
-      "price": null,
-      "sourceId": "alderney-gate-library-events",
-      "sourceName": "Alderney Gate Public Library",
-      "sourceKind": "official_library_location_calendar",
-      "sourceUrl": "https://www.halifaxpubliclibraries.ca/locations/alderney-gate-public-library/",
-      "observedAt": "2026-09-04T13:17:10.812Z",
-      "reviewState": "source_observed",
-      "latitude": 44.6665,
-      "longitude": -63.5684,
-      "venueId": "alderney-gate-library",
-      "neighbourhood": "Downtown Dartmouth",
-      "organizerId": "halifax-public-libraries",
-      "organizerName": "Halifax Public Libraries"
-    },
-    {
-      "id": "alderney-gate-library-events-d1ca113d7e7139f9",
-      "title": "Community Café",
-      "startAt": "2026-09-04T13:30:00.000Z",
-      "endAt": "2026-09-04T14:30:00.000Z",
-      "allDay": false,
-      "venueName": "Alderney Gate Public Library",
-      "address": "60 Alderney Drive, Dartmouth, NS B2Y 4P8",
-      "city": "Dartmouth",
-      "categories": [
-        "Community"
-      ],
-      "eventUrl": "https://halifax.bibliocommons.com/events/69d55c511e64afd01e679831",
-      "ticketUrl": "https://www.halifaxpubliclibraries.ca/locations/alderney-gate-public-library/",
-      "price": null,
-      "sourceId": "alderney-gate-library-events",
-      "sourceName": "Alderney Gate Public Library",
-      "sourceKind": "official_library_location_calendar",
-      "sourceUrl": "https://www.halifaxpubliclibraries.ca/locations/alderney-gate-public-library/",
-      "observedAt": "2026-09-04T13:17:10.813Z",
-      "reviewState": "source_observed",
-      "latitude": 44.6665,
-      "longitude": -63.5684,
-      "venueId": "alderney-gate-library",
-      "neighbourhood": "Downtown Dartmouth",
-      "organizerId": "halifax-public-libraries",
-      "organizerName": "Halifax Public Libraries"
-    },
-    {
-      "id": "the-carleton-5653652a17ce28b1",
-      "title": "Nick Earle & The Reckless Hearts w/ LeafGreen",
-      "startAt": "2026-09-04T23:00:00.000Z",
-      "endAt": "2026-09-05T02:00:00.000Z",
-      "allDay": false,
-      "venueName": "The Carleton",
-      "address": "1685 Argyle Street, Halifax, NS",
-      "city": "Halifax",
-      "categories": [
-        "Arts"
-      ],
-      "price": null,
-      "ticketUrl": "https://www.thecarleton.ca/music/upcoming-performances/",
-      "eventUrl": "https://www.thecarleton.ca/events/nick-earle-the-reckless-hearts/",
-      "sourceUrl": "https://www.thecarleton.ca/events/nick-earle-the-reckless-hearts/",
-      "sourceId": "the-carleton",
-      "sourceName": "The Carleton",
-      "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-09-04T13:15:06.103Z",
-      "reviewState": "source-observed",
-      "venueId": "the-carleton-halifax",
-      "neighbourhood": "Downtown",
-      "organizerId": "the-carleton",
-      "organizerName": "The Carleton",
-      "restaurantId": "osm-node-771690675-the-carleton"
-    },
-    {
-      "id": "alderney-landing-events-e22ff3bdb41d4e96",
-      "title": "Tommy Green Jr",
-      "startAt": "2026-09-04T23:00:00.000Z",
-      "endAt": "2026-09-05T02:59:00.000Z",
-      "allDay": false,
-      "venueName": "Alderney Landing",
-      "address": "2 Ochterloney Street, Dartmouth, NS B2Y 3Z3",
-      "city": "Dartmouth",
-      "categories": [
-        "Community"
-      ],
-      "eventUrl": "https://www.alderneylanding.com/events/tommy-green-jr/",
-      "ticketUrl": "https://www.alderneylanding.com/events-directory/",
-      "price": null,
-      "sourceId": "alderney-landing-events",
-      "sourceName": "Alderney Landing",
-      "sourceKind": "official_venue_calendar",
-      "sourceUrl": "https://www.alderneylanding.com/events-directory/",
-      "observedAt": "2026-09-04T13:17:15.848Z",
-      "reviewState": "source_observed",
-      "latitude": 44.6647,
-      "longitude": -63.5694,
-      "venueId": "alderney-landing-dartmouth",
-      "neighbourhood": "Downtown Dartmouth"
-    },
-    {
-      "id": "alderney-landing-events-9be8f68633ed92e8",
-      "title": "Farmers Market",
-      "startAt": "2026-09-05T11:00:00.000Z",
-      "endAt": "2026-09-05T16:00:00.000Z",
-      "allDay": false,
-      "venueName": "Alderney Landing",
-      "address": "2 Ochterloney Street, Dartmouth, NS B2Y 3Z3",
-      "city": "Dartmouth",
-      "categories": [
-        "Markets"
-      ],
-      "eventUrl": "https://www.alderneylanding.com/events/farmers-market-2026/var/ri-35.l-L1",
-      "ticketUrl": "https://www.alderneylanding.com/events-directory/",
-      "price": null,
-      "sourceId": "alderney-landing-events",
-      "sourceName": "Alderney Landing",
-      "sourceKind": "official_venue_calendar",
-      "sourceUrl": "https://www.alderneylanding.com/events-directory/",
-      "observedAt": "2026-09-04T13:17:15.848Z",
-      "reviewState": "source_observed",
-      "latitude": 44.6647,
-      "longitude": -63.5694,
-      "venueId": "alderney-landing-dartmouth",
-      "neighbourhood": "Downtown Dartmouth"
-    },
-    {
-      "id": "alderney-gate-library-events-4343201b2d3d4cdc",
-      "title": "Scribble & Script: Stationery Meet-up",
-      "startAt": "2026-09-05T16:30:00.000Z",
-      "endAt": "2026-09-05T18:30:00.000Z",
-      "allDay": false,
-      "venueName": "Alderney Gate Public Library",
-      "address": "60 Alderney Drive, Dartmouth, NS B2Y 4P8",
-      "city": "Dartmouth",
-      "categories": [
-        "Community"
-      ],
-      "eventUrl": "https://halifax.bibliocommons.com/events/6a836219b20478002993849e",
-      "ticketUrl": "https://www.halifaxpubliclibraries.ca/locations/alderney-gate-public-library/",
-      "price": null,
-      "sourceId": "alderney-gate-library-events",
-      "sourceName": "Alderney Gate Public Library",
-      "sourceKind": "official_library_location_calendar",
-      "sourceUrl": "https://www.halifaxpubliclibraries.ca/locations/alderney-gate-public-library/",
-      "observedAt": "2026-09-04T13:17:10.813Z",
-      "reviewState": "source_observed",
-      "latitude": 44.6665,
-      "longitude": -63.5684,
-      "venueId": "alderney-gate-library",
-      "neighbourhood": "Downtown Dartmouth",
-      "organizerId": "halifax-public-libraries",
-      "organizerName": "Halifax Public Libraries"
-    },
-    {
-      "id": "the-carleton-6e434a448bce7c32",
-      "title": "Lindsay Misiner Full Band Show W/Anna Martin (Duo)",
-      "startAt": "2026-09-05T23:00:00.000Z",
-      "endAt": "2026-09-06T02:00:00.000Z",
-      "allDay": false,
-      "venueName": "The Carleton",
-      "address": "1685 Argyle Street, Halifax, NS",
-      "city": "Halifax",
-      "categories": [
-        "Music"
-      ],
-      "price": null,
-      "ticketUrl": "https://www.thecarleton.ca/music/upcoming-performances/",
-      "eventUrl": "https://www.thecarleton.ca/events/lindsay-misiner-full-band-show/",
-      "sourceUrl": "https://www.thecarleton.ca/events/lindsay-misiner-full-band-show/",
-      "sourceId": "the-carleton",
-      "sourceName": "The Carleton",
-      "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-09-04T13:15:06.103Z",
-      "reviewState": "source-observed",
-      "venueId": "the-carleton-halifax",
-      "neighbourhood": "Downtown",
-      "organizerId": "the-carleton",
-      "organizerName": "The Carleton",
-      "restaurantId": "osm-node-771690675-the-carleton"
-    },
-    {
-      "id": "the-carleton-6620c897af0b40ca",
-      "title": "Ikoum (Just Wôan & Kamila Nasr)",
-      "startAt": "2026-09-06T22:00:00.000Z",
-      "endAt": "2026-09-07T00:00:00.000Z",
-      "allDay": false,
-      "venueName": "The Carleton",
-      "address": "1685 Argyle Street, Halifax, NS",
-      "city": "Halifax",
-      "categories": [
-        "Music"
-      ],
-      "price": null,
-      "ticketUrl": "https://www.thecarleton.ca/music/upcoming-performances/",
-      "eventUrl": "https://www.thecarleton.ca/events/ikoum-just-woan-kamila-nasr/",
-      "sourceUrl": "https://www.thecarleton.ca/events/ikoum-just-woan-kamila-nasr/",
-      "sourceId": "the-carleton",
-      "sourceName": "The Carleton",
-      "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-09-04T13:15:06.103Z",
-      "reviewState": "source-observed",
-      "venueId": "the-carleton-halifax",
-      "neighbourhood": "Downtown",
-      "organizerId": "the-carleton",
-      "organizerName": "The Carleton",
-      "restaurantId": "osm-node-771690675-the-carleton"
-    },
-    {
-      "id": "hfx-wanderers-home-756f8bf6829dc15e",
-      "title": "HFX Wanderers FC vs Cavalry FC",
-      "startAt": "2026-09-07T19:00:00.000Z",
-      "endAt": "2026-09-07T19:00:00.000Z",
-      "allDay": false,
-      "venueName": "Wanderers Grounds",
-      "address": "5819 Sackville Street, Halifax, NS",
-      "city": "Halifax",
-      "categories": [
-        "Sports"
-      ],
-      "price": null,
-      "ticketUrl": "https://novascotia.com/event/halifax-wanderers-2026-season/",
-      "eventUrl": "https://novascotia.com/event/halifax-wanderers-2026-season/",
-      "sourceUrl": "https://novascotia.com/event/halifax-wanderers-2026-season/",
-      "sourceId": "hfx-wanderers-home",
-      "sourceName": "HFX Wanderers 2026 Home Schedule",
-      "sourceKind": "official_tourism_sports_schedule",
-      "observedAt": "2026-09-04T13:15:03.058Z",
-      "reviewState": "source-observed",
-      "venueId": "wanderers-grounds-halifax",
-      "neighbourhood": "Downtown",
-      "organizerId": "hfx-wanderers",
-      "organizerName": "HFX Wanderers FC"
-    },
-    {
-      "id": "bedford-library-events-71e473ba88850aea",
-      "title": "Baby's First Books",
-      "startAt": "2026-09-08T13:30:00.000Z",
-      "endAt": "2026-09-08T14:30:00.000Z",
-      "allDay": false,
-      "venueName": "Bedford Public Library",
-      "address": "15 Dartmouth Road, Bedford, NS B4A 3X6",
-      "city": "Bedford",
-      "categories": [
-        "Community"
-      ],
-      "eventUrl": "https://halifax.bibliocommons.com/events/6a835f4bb2047800299383da",
-      "ticketUrl": "https://www.halifaxpubliclibraries.ca/locations/bedford-public-library/",
-      "price": null,
-      "sourceId": "bedford-library-events",
-      "sourceName": "Bedford Public Library",
-      "sourceKind": "official_library_location_calendar",
-      "sourceUrl": "https://www.halifaxpubliclibraries.ca/locations/bedford-public-library/",
-      "observedAt": "2026-09-04T13:17:13.273Z",
-      "reviewState": "source_observed",
-      "latitude": 44.7314,
-      "longitude": -63.6571,
-      "venueId": "bedford-library",
-      "neighbourhood": null,
-      "organizerId": "halifax-public-libraries",
-      "organizerName": "Halifax Public Libraries"
-    },
-    {
-      "id": "bedford-library-events-80b6b1484d180e47",
-      "title": "Parenting Support Drop-in for New Families",
-      "startAt": "2026-09-08T14:00:00.000Z",
-      "endAt": "2026-09-08T15:00:00.000Z",
-      "allDay": false,
-      "venueName": "Bedford Public Library",
-      "address": "15 Dartmouth Road, Bedford, NS B4A 3X6",
-      "city": "Bedford",
-      "categories": [
-        "Community"
-      ],
-      "eventUrl": "https://halifax.bibliocommons.com/events/6a8f34d7be148200298a46b3",
-      "ticketUrl": "https://www.halifaxpubliclibraries.ca/locations/bedford-public-library/",
-      "price": null,
-      "sourceId": "bedford-library-events",
-      "sourceName": "Bedford Public Library",
-      "sourceKind": "official_library_location_calendar",
-      "sourceUrl": "https://www.halifaxpubliclibraries.ca/locations/bedford-public-library/",
-      "observedAt": "2026-09-04T13:17:13.273Z",
-      "reviewState": "source_observed",
-      "latitude": 44.7314,
-      "longitude": -63.6571,
-      "venueId": "bedford-library",
-      "neighbourhood": null,
-      "organizerId": "halifax-public-libraries",
-      "organizerName": "Halifax Public Libraries"
-    },
-    {
-      "id": "woodlawn-library-events-7cf8114f8d758394",
-      "title": "Get Directions , opens a new window",
-      "startAt": "2026-09-08T16:00:00.000Z",
-      "endAt": "2026-09-08T18:00:00.000Z",
-      "allDay": false,
-      "venueName": "Woodlawn Public Library",
-      "address": "31 Eisener Boulevard, Dartmouth, NS B2W 0J1",
-      "city": "Dartmouth",
-      "categories": [
-        "Community"
-      ],
-      "eventUrl": "https://www.google.com/maps/dir/?api=1&amp;destination=31%20Eisener%20Boulevard%20Dartmouth%20NS",
-      "ticketUrl": "https://www.halifaxpubliclibraries.ca/locations/woodlawn-public-library/",
-      "price": null,
-      "sourceId": "woodlawn-library-events",
-      "sourceName": "Woodlawn Public Library",
-      "sourceKind": "official_library_location_calendar",
-      "sourceUrl": "https://www.halifaxpubliclibraries.ca/locations/woodlawn-public-library/",
-      "observedAt": "2026-09-04T13:17:11.973Z",
-      "reviewState": "source_observed",
-      "latitude": 44.6715,
-      "longitude": -63.5316,
-      "venueId": "woodlawn-library",
-      "neighbourhood": null,
-      "organizerId": "halifax-public-libraries",
-      "organizerName": "Halifax Public Libraries"
-    },
-    {
-      "id": "woodlawn-library-events-0d3c533510bb2c7b",
-      "title": "Author Talk with Anthea Taljaard: The Objects We Keep (&…",
-      "startAt": "2026-09-08T22:00:00.000Z",
-      "endAt": "2026-09-08T23:00:00.000Z",
-      "allDay": false,
-      "venueName": "Woodlawn Public Library",
-      "address": "31 Eisener Boulevard, Dartmouth, NS B2W 0J1",
-      "city": "Dartmouth",
-      "categories": [
-        "Arts",
-        "Community"
-      ],
-      "eventUrl": "https://halifax.bibliocommons.com/events/6a29b8f18d1b82ca9f78fd0e",
-      "ticketUrl": "https://www.halifaxpubliclibraries.ca/locations/woodlawn-public-library/",
-      "price": null,
-      "sourceId": "woodlawn-library-events",
-      "sourceName": "Woodlawn Public Library",
-      "sourceKind": "official_library_location_calendar",
-      "sourceUrl": "https://www.halifaxpubliclibraries.ca/locations/woodlawn-public-library/",
-      "observedAt": "2026-09-04T13:17:11.973Z",
-      "reviewState": "source_observed",
-      "latitude": 44.6715,
-      "longitude": -63.5316,
-      "venueId": "woodlawn-library",
-      "neighbourhood": null,
-      "organizerId": "halifax-public-libraries",
-      "organizerName": "Halifax Public Libraries"
-    },
-    {
-      "id": "scotiabank-centre-176001ab42281a2a",
-      "title": "Max McNown - RESCHEDULED",
-      "startAt": "2026-09-08T22:30:00.000Z",
-      "endAt": "2026-09-08T22:30:00.000Z",
-      "allDay": false,
-      "venueName": "Scotiabank Centre",
-      "address": "1800 Argyle Street, Halifax, NS",
-      "city": "Halifax",
-      "categories": [
-        "Music"
-      ],
-      "price": null,
-      "ticketUrl": "https://www.scotiabank-centre.com/premium-seating/eventcalendar",
-      "eventUrl": "https://www.scotiabank-centre.com/premium-seating/eventcalendar",
-      "sourceUrl": "https://www.scotiabank-centre.com/premium-seating/eventcalendar",
-      "sourceId": "scotiabank-centre",
-      "sourceName": "Scotiabank Centre",
-      "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-09-04T13:15:03.025Z",
-      "reviewState": "source-observed",
-      "venueId": "scotiabank-centre-halifax",
-      "neighbourhood": "Downtown",
-      "organizerId": "scotiabank-centre",
-      "organizerName": "Scotiabank Centre"
-    },
-    {
-      "id": "bedford-library-events-e02933a3d9862a4e",
-      "title": "Tinkering Toddlers",
-      "startAt": "2026-09-09T13:30:00.000Z",
-      "endAt": "2026-09-09T14:15:00.000Z",
-      "allDay": false,
-      "venueName": "Bedford Public Library",
-      "address": "15 Dartmouth Road, Bedford, NS B4A 3X6",
-      "city": "Bedford",
-      "categories": [
-        "Community"
-      ],
-      "eventUrl": "https://halifax.bibliocommons.com/events/6a87269969166f088b938452",
-      "ticketUrl": "https://www.halifaxpubliclibraries.ca/locations/bedford-public-library/",
-      "price": null,
-      "sourceId": "bedford-library-events",
-      "sourceName": "Bedford Public Library",
-      "sourceKind": "official_library_location_calendar",
-      "sourceUrl": "https://www.halifaxpubliclibraries.ca/locations/bedford-public-library/",
-      "observedAt": "2026-09-04T13:17:13.274Z",
-      "reviewState": "source_observed",
-      "latitude": 44.7314,
-      "longitude": -63.6571,
-      "venueId": "bedford-library",
-      "neighbourhood": null,
-      "organizerId": "halifax-public-libraries",
-      "organizerName": "Halifax Public Libraries"
-    },
-    {
-      "id": "halifax-convention-centre-5d61de8a415728c9",
-      "title": "Port of Halifax - Supply Chain Forum 2026",
-      "startAt": "2026-09-09T15:00:00.000Z",
-      "endAt": "2026-09-10T15:00:00.000Z",
-      "allDay": true,
-      "venueName": "Halifax Convention Centre",
-      "address": "1650 Argyle Street, Halifax, NS",
-      "city": "Halifax",
-      "categories": [
-        "Festivals"
-      ],
-      "eventUrl": "https://www.halifaxconventioncentre.com/events/231598/",
-      "ticketUrl": "https://www.halifaxconventioncentre.com/Events",
-      "price": null,
-      "sourceId": "halifax-convention-centre",
-      "sourceName": "Halifax Convention Centre",
-      "sourceKind": "official_venue_calendar",
-      "sourceUrl": "https://www.halifaxconventioncentre.com/Events",
-      "observedAt": "2026-09-04T13:15:23.980Z",
-      "reviewState": "source_observed",
-      "venueId": "halifax-convention-centre",
-      "neighbourhood": "Downtown",
-      "organizerId": "halifax-convention-centre",
-      "organizerName": "Halifax Convention Centre"
-    },
-    {
-      "id": "bedford-library-events-fc6945f379ff8edd",
-      "title": "Community Crafters",
-      "startAt": "2026-09-09T15:30:00.000Z",
-      "endAt": "2026-09-09T17:30:00.000Z",
-      "allDay": false,
-      "venueName": "Bedford Public Library",
-      "address": "15 Dartmouth Road, Bedford, NS B4A 3X6",
-      "city": "Bedford",
-      "categories": [
-        "Community"
-      ],
-      "eventUrl": "https://halifax.bibliocommons.com/events/6a87462857c264087ad27fdc",
-      "ticketUrl": "https://www.halifaxpubliclibraries.ca/locations/bedford-public-library/",
-      "price": null,
-      "sourceId": "bedford-library-events",
-      "sourceName": "Bedford Public Library",
-      "sourceKind": "official_library_location_calendar",
-      "sourceUrl": "https://www.halifaxpubliclibraries.ca/locations/bedford-public-library/",
-      "observedAt": "2026-09-04T13:17:13.274Z",
-      "reviewState": "source_observed",
-      "latitude": 44.7314,
-      "longitude": -63.6571,
-      "venueId": "bedford-library",
-      "neighbourhood": null,
-      "organizerId": "halifax-public-libraries",
-      "organizerName": "Halifax Public Libraries"
-    },
-    {
-      "id": "woodlawn-library-events-eabf90031f251805",
-      "title": "Movie: Late Bloomers",
-      "startAt": "2026-09-09T16:30:00.000Z",
-      "endAt": "2026-09-09T18:15:00.000Z",
-      "allDay": false,
-      "venueName": "Woodlawn Public Library",
-      "address": "31 Eisener Boulevard, Dartmouth, NS B2W 0J1",
-      "city": "Dartmouth",
-      "categories": [
-        "Arts",
-        "Community"
-      ],
-      "eventUrl": "https://halifax.bibliocommons.com/events/6a7b68d6f68ff70029b6faa0",
-      "ticketUrl": "https://www.halifaxpubliclibraries.ca/locations/woodlawn-public-library/",
-      "price": null,
-      "sourceId": "woodlawn-library-events",
-      "sourceName": "Woodlawn Public Library",
-      "sourceKind": "official_library_location_calendar",
-      "sourceUrl": "https://www.halifaxpubliclibraries.ca/locations/woodlawn-public-library/",
-      "observedAt": "2026-09-04T13:17:11.974Z",
-      "reviewState": "source_observed",
-      "latitude": 44.6715,
-      "longitude": -63.5316,
-      "venueId": "woodlawn-library",
-      "neighbourhood": null,
-      "organizerId": "halifax-public-libraries",
-      "organizerName": "Halifax Public Libraries"
-    },
-    {
-      "id": "alderney-gate-library-events-cb9422d71d2a40d3",
-      "title": "Craft Club: Q-Tip Flower Painting",
-      "startAt": "2026-09-09T17:00:00.000Z",
-      "endAt": "2026-09-09T18:30:00.000Z",
-      "allDay": false,
-      "venueName": "Alderney Gate Public Library",
-      "address": "60 Alderney Drive, Dartmouth, NS B2Y 4P8",
-      "city": "Dartmouth",
-      "categories": [
-        "Arts",
-        "Community"
-      ],
-      "eventUrl": "https://halifax.bibliocommons.com/events/6a7b6918d033f1003e0aa21f",
-      "ticketUrl": "https://www.halifaxpubliclibraries.ca/locations/alderney-gate-public-library/",
-      "price": null,
-      "sourceId": "alderney-gate-library-events",
-      "sourceName": "Alderney Gate Public Library",
-      "sourceKind": "official_library_location_calendar",
-      "sourceUrl": "https://www.halifaxpubliclibraries.ca/locations/alderney-gate-public-library/",
-      "observedAt": "2026-09-04T13:17:10.813Z",
-      "reviewState": "source_observed",
-      "latitude": 44.6665,
-      "longitude": -63.5684,
-      "venueId": "alderney-gate-library",
-      "neighbourhood": "Downtown Dartmouth",
-      "organizerId": "halifax-public-libraries",
-      "organizerName": "Halifax Public Libraries"
-    },
-    {
-      "id": "bedford-library-events-c988b832f7cb5126",
-      "title": "After School Club",
-      "startAt": "2026-09-09T18:30:00.000Z",
-      "endAt": "2026-09-09T19:30:00.000Z",
-      "allDay": false,
-      "venueName": "Bedford Public Library",
-      "address": "15 Dartmouth Road, Bedford, NS B4A 3X6",
-      "city": "Bedford",
-      "categories": [
-        "Community"
-      ],
-      "eventUrl": "https://halifax.bibliocommons.com/events/6a860ada69166f088b9358cb",
-      "ticketUrl": "https://www.halifaxpubliclibraries.ca/locations/bedford-public-library/",
-      "price": null,
-      "sourceId": "bedford-library-events",
-      "sourceName": "Bedford Public Library",
-      "sourceKind": "official_library_location_calendar",
-      "sourceUrl": "https://www.halifaxpubliclibraries.ca/locations/bedford-public-library/",
-      "observedAt": "2026-09-04T13:17:13.274Z",
-      "reviewState": "source_observed",
-      "latitude": 44.7314,
-      "longitude": -63.6571,
-      "venueId": "bedford-library",
-      "neighbourhood": null,
-      "organizerId": "halifax-public-libraries",
-      "organizerName": "Halifax Public Libraries"
-    },
-    {
-      "id": "alderney-gate-library-events-b2d1574a904d0499",
-      "title": "Teen Night: UNO",
-      "startAt": "2026-09-09T20:00:00.000Z",
-      "endAt": "2026-09-09T22:00:00.000Z",
-      "allDay": false,
-      "venueName": "Alderney Gate Public Library",
-      "address": "60 Alderney Drive, Dartmouth, NS B2Y 4P8",
-      "city": "Dartmouth",
-      "categories": [
-        "Community"
-      ],
-      "eventUrl": "https://halifax.bibliocommons.com/events/6a7387aae700090faa68b9e8",
-      "ticketUrl": "https://www.halifaxpubliclibraries.ca/locations/alderney-gate-public-library/",
-      "price": null,
-      "sourceId": "alderney-gate-library-events",
-      "sourceName": "Alderney Gate Public Library",
-      "sourceKind": "official_library_location_calendar",
-      "sourceUrl": "https://www.halifaxpubliclibraries.ca/locations/alderney-gate-public-library/",
-      "observedAt": "2026-09-04T13:17:10.814Z",
-      "reviewState": "source_observed",
-      "latitude": 44.6665,
-      "longitude": -63.5684,
-      "venueId": "alderney-gate-library",
-      "neighbourhood": "Downtown Dartmouth",
-      "organizerId": "halifax-public-libraries",
-      "organizerName": "Halifax Public Libraries"
-    },
-    {
-      "id": "bedford-library-events-62e7c30883f622b6",
-      "title": "Bedford Authors Writers' Group",
-      "startAt": "2026-09-09T21:15:00.000Z",
-      "endAt": "2026-09-09T22:45:00.000Z",
-      "allDay": false,
-      "venueName": "Bedford Public Library",
-      "address": "15 Dartmouth Road, Bedford, NS B4A 3X6",
-      "city": "Bedford",
-      "categories": [
-        "Arts",
-        "Community"
-      ],
-      "eventUrl": "https://halifax.bibliocommons.com/events/695fbb294a9fd98b7f765428",
-      "ticketUrl": "https://www.halifaxpubliclibraries.ca/locations/bedford-public-library/",
-      "price": null,
-      "sourceId": "bedford-library-events",
-      "sourceName": "Bedford Public Library",
-      "sourceKind": "official_library_location_calendar",
-      "sourceUrl": "https://www.halifaxpubliclibraries.ca/locations/bedford-public-library/",
-      "observedAt": "2026-09-04T13:17:13.275Z",
-      "reviewState": "source_observed",
-      "latitude": 44.7314,
-      "longitude": -63.6571,
-      "venueId": "bedford-library",
-      "neighbourhood": null,
-      "organizerId": "halifax-public-libraries",
-      "organizerName": "Halifax Public Libraries"
-    },
-    {
-      "id": "alderney-gate-library-events-4b1b75b6f773e687",
-      "title": "Meet Juno, a St. John Ambulance Therapy Dog",
-      "startAt": "2026-09-09T21:30:00.000Z",
-      "endAt": "2026-09-09T22:30:00.000Z",
-      "allDay": false,
-      "venueName": "Alderney Gate Public Library",
-      "address": "60 Alderney Drive, Dartmouth, NS B2Y 4P8",
-      "city": "Dartmouth",
-      "categories": [
-        "Community"
-      ],
-      "eventUrl": "https://halifax.bibliocommons.com/events/6a8ddc4657c264087ad3ac16",
-      "ticketUrl": "https://www.halifaxpubliclibraries.ca/locations/alderney-gate-public-library/",
-      "price": null,
-      "sourceId": "alderney-gate-library-events",
-      "sourceName": "Alderney Gate Public Library",
-      "sourceKind": "official_library_location_calendar",
-      "sourceUrl": "https://www.halifaxpubliclibraries.ca/locations/alderney-gate-public-library/",
-      "observedAt": "2026-09-04T13:17:10.814Z",
-      "reviewState": "source_observed",
-      "latitude": 44.6665,
-      "longitude": -63.5684,
-      "venueId": "alderney-gate-library",
-      "neighbourhood": "Downtown Dartmouth",
-      "organizerId": "halifax-public-libraries",
-      "organizerName": "Halifax Public Libraries"
-    },
-    {
-      "id": "alderney-gate-library-events-d7fb1e70e8ab244f",
-      "title": "Meet Juno, a St. John Ambulance Therapy Dog Meet Juno, a St. John Ambulance Therapy Dog",
-      "startAt": "2026-09-09T21:30:00.000Z",
-      "endAt": "2026-09-09T22:30:00.000Z",
-      "allDay": false,
-      "venueName": "Alderney Gate Public Library",
-      "address": "60 Alderney Drive, Dartmouth, NS B2Y 4P8",
-      "city": "Dartmouth",
-      "categories": [
-        "Community"
-      ],
-      "eventUrl": "https://halifax.bibliocommons.com/events/6a8ddc4657c264087ad3ac16",
-      "ticketUrl": "https://www.halifaxpubliclibraries.ca/locations/alderney-gate-public-library/",
-      "price": null,
-      "sourceId": "alderney-gate-library-events",
-      "sourceName": "Alderney Gate Public Library",
-      "sourceKind": "official_library_location_calendar",
-      "sourceUrl": "https://www.halifaxpubliclibraries.ca/locations/alderney-gate-public-library/",
-      "observedAt": "2026-09-04T13:17:10.814Z",
-      "reviewState": "source_observed",
-      "latitude": 44.6665,
-      "longitude": -63.5684,
-      "venueId": "alderney-gate-library",
-      "neighbourhood": "Downtown Dartmouth",
-      "organizerId": "halifax-public-libraries",
-      "organizerName": "Halifax Public Libraries"
-    },
-    {
-      "id": "the-carleton-a0e66cf12ed390be",
-      "title": "SOLD OUT: Ben Caplan – Wednesday",
-      "startAt": "2026-09-09T22:00:00.000Z",
-      "endAt": "2026-09-10T00:00:00.000Z",
-      "allDay": false,
-      "venueName": "The Carleton",
-      "address": "1685 Argyle Street, Halifax, NS",
-      "city": "Halifax",
-      "categories": [
-        "Music"
-      ],
-      "price": null,
-      "ticketUrl": "https://www.thecarleton.ca/music/upcoming-performances/",
-      "eventUrl": "https://www.thecarleton.ca/events/ben-caplan-sep9/",
-      "sourceUrl": "https://www.thecarleton.ca/events/ben-caplan-sep9/",
-      "sourceId": "the-carleton",
-      "sourceName": "The Carleton",
-      "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-09-04T13:15:06.103Z",
-      "reviewState": "source-observed",
-      "venueId": "the-carleton-halifax",
-      "neighbourhood": "Downtown",
-      "organizerId": "the-carleton",
-      "organizerName": "The Carleton",
-      "restaurantId": "osm-node-771690675-the-carleton"
-    },
-    {
-      "id": "the-carleton-1af69bcfb2106149",
-      "title": "SOLD OUT: Ben Caplan – Thursday",
-      "startAt": "2026-09-10T22:30:00.000Z",
-      "endAt": "2026-09-11T00:30:00.000Z",
-      "allDay": false,
-      "venueName": "The Carleton",
-      "address": "1685 Argyle Street, Halifax, NS",
-      "city": "Halifax",
-      "categories": [
-        "Music"
-      ],
-      "price": null,
-      "ticketUrl": "https://www.thecarleton.ca/music/upcoming-performances/",
-      "eventUrl": "https://www.thecarleton.ca/events/ben-caplan-sep10/",
-      "sourceUrl": "https://www.thecarleton.ca/events/ben-caplan-sep10/",
-      "sourceId": "the-carleton",
-      "sourceName": "The Carleton",
-      "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-09-04T13:15:06.104Z",
-      "reviewState": "source-observed",
-      "venueId": "the-carleton-halifax",
-      "neighbourhood": "Downtown",
-      "organizerId": "the-carleton",
-      "organizerName": "The Carleton",
-      "restaurantId": "osm-node-771690675-the-carleton"
-    },
-    {
       "id": "https://novascotia.com/event/festa-italiana-halifax/#event",
       "title": "Festa Italiana Halifax – Experience Italy in the Heart of Halifax",
-      "startAt": "2026-09-11T03:00:00.000Z",
-      "endAt": "2026-12-10T03:59:00.000Z",
+      "startAt": "2026-09-11T00:00:00.000Z",
+      "endAt": "2026-12-09T23:59:00.000Z",
       "allDay": false,
       "venueName": null,
       "address": "Halifax, NS, CA",
@@ -1166,7 +519,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "tourism-ns-events",
       "sourceName": "Tourism Nova Scotia Events",
       "sourceKind": "official_tourism_calendar",
-      "observedAt": "2026-09-04T13:14:58.876Z",
+      "observedAt": "2026-09-11T14:44:22.736Z",
       "reviewState": "source-observed",
       "alternateSources": [
         {
@@ -1179,13 +532,14 @@ window.HALIFAX_CITY_EVENTS = {
     {
       "id": "https://novascotia.com/event/2026-international-gathering-of-clan-macneacail-flag-raising-welcome/#event",
       "title": "2026 International Gathering of Clan MacNeacail – Flag Raising & Welcome",
-      "startAt": "2026-09-11T18:00:00.000Z",
-      "endAt": "2026-11-09T21:00:00.000Z",
+      "startAt": "2026-09-11T15:00:00.000Z",
+      "endAt": "2026-11-09T17:00:00.000Z",
       "allDay": false,
       "venueName": "Halifax Grand Parade",
       "address": "1770 Barrington Street, Halifax, Nova Scotia, B3J 3A5, Canada, Halifax, NS, CA",
       "city": "Halifax",
       "categories": [
+        "Arts",
         "Community"
       ],
       "price": null,
@@ -1195,7 +549,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "tourism-ns-events",
       "sourceName": "Tourism Nova Scotia Events",
       "sourceKind": "official_tourism_calendar",
-      "observedAt": "2026-09-04T13:14:58.858Z",
+      "observedAt": "2026-09-11T14:44:22.745Z",
       "reviewState": "source-observed",
       "alternateSources": [
         {
@@ -1206,8 +560,8 @@ window.HALIFAX_CITY_EVENTS = {
       ]
     },
     {
-      "id": "the-carleton-d65b88f56600dca5",
-      "title": "10 TIX LEFT! Ben Caplan – Friday",
+      "id": "the-carleton-f4a3f267b7631e3a",
+      "title": "SOLD OUT: Ben Caplan – Friday",
       "startAt": "2026-09-11T23:00:00.000Z",
       "endAt": "2026-09-12T01:00:00.000Z",
       "allDay": false,
@@ -1215,7 +569,8 @@ window.HALIFAX_CITY_EVENTS = {
       "address": "1685 Argyle Street, Halifax, NS",
       "city": "Halifax",
       "categories": [
-        "Music"
+        "Music",
+        "Arts"
       ],
       "price": null,
       "ticketUrl": "https://www.thecarleton.ca/music/upcoming-performances/",
@@ -1224,7 +579,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "the-carleton",
       "sourceName": "The Carleton",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-09-04T13:15:06.104Z",
+      "observedAt": "2026-09-11T14:44:31.074Z",
       "reviewState": "source-observed",
       "venueId": "the-carleton-halifax",
       "neighbourhood": "Downtown",
@@ -1235,14 +590,15 @@ window.HALIFAX_CITY_EVENTS = {
     {
       "id": "https://novascotia.com/event/nhl-street-harbour-fest-2026/#event",
       "title": "NHL STREET Harbour Fest 2026",
-      "startAt": "2026-09-12T03:00:00.000Z",
-      "endAt": "2026-09-14T02:59:00.000Z",
+      "startAt": "2026-09-12T00:00:00.000Z",
+      "endAt": "2026-09-13T23:59:00.000Z",
       "allDay": false,
       "venueName": "Emera Oval",
       "address": "5775 Cogswell St, Halifax, NS B3K 4B2, Halifax, NS, CA",
       "city": "Halifax",
       "categories": [
         "Festivals",
+        "Arts",
         "Outdoor"
       ],
       "price": null,
@@ -1252,7 +608,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "tourism-ns-events",
       "sourceName": "Tourism Nova Scotia Events",
       "sourceKind": "official_tourism_calendar",
-      "observedAt": "2026-09-04T13:14:59.001Z",
+      "observedAt": "2026-09-11T14:44:22.771Z",
       "reviewState": "source-observed",
       "alternateSources": [
         {
@@ -1261,6 +617,35 @@ window.HALIFAX_CITY_EVENTS = {
           "sourceUrl": "https://novascotia.com/event/nhl-street-harbour-fest-2026/"
         }
       ]
+    },
+    {
+      "id": "bedford-library-events-9d546cdf8d7a5b14",
+      "title": "Family Drop-in",
+      "startAt": "2026-09-12T13:30:00.000Z",
+      "endAt": "2026-09-12T14:30:00.000Z",
+      "allDay": false,
+      "venueName": "Bedford Public Library",
+      "address": "15 Dartmouth Road, Bedford, NS B4A 3X6",
+      "city": "Bedford",
+      "categories": [
+        "Community",
+        "Family"
+      ],
+      "eventUrl": "https://halifax.bibliocommons.com/events/6a835f144cb69d003e2168f7",
+      "ticketUrl": "https://www.halifaxpubliclibraries.ca/locations/bedford-public-library/",
+      "price": null,
+      "sourceId": "bedford-library-events",
+      "sourceName": "Bedford Public Library",
+      "sourceKind": "official_library_location_calendar",
+      "sourceUrl": "https://www.halifaxpubliclibraries.ca/locations/bedford-public-library/",
+      "observedAt": "2026-09-11T14:46:39.893Z",
+      "reviewState": "source_observed",
+      "latitude": 44.7314,
+      "longitude": -63.6571,
+      "venueId": "bedford-library",
+      "neighbourhood": null,
+      "organizerId": "halifax-public-libraries",
+      "organizerName": "Halifax Public Libraries"
     },
     {
       "id": "woodlawn-library-events-4373b2f8647f148b",
@@ -1281,11 +666,39 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Woodlawn Public Library",
       "sourceKind": "official_library_location_calendar",
       "sourceUrl": "https://www.halifaxpubliclibraries.ca/locations/woodlawn-public-library/",
-      "observedAt": "2026-09-04T13:17:11.974Z",
+      "observedAt": "2026-09-11T14:46:38.502Z",
       "reviewState": "source_observed",
       "latitude": 44.6715,
       "longitude": -63.5316,
       "venueId": "woodlawn-library",
+      "neighbourhood": null,
+      "organizerId": "halifax-public-libraries",
+      "organizerName": "Halifax Public Libraries"
+    },
+    {
+      "id": "bedford-library-events-3af2ce9bfb754e48",
+      "title": "Super Saturday: Giant Games",
+      "startAt": "2026-09-12T17:00:00.000Z",
+      "endAt": "2026-09-12T18:00:00.000Z",
+      "allDay": false,
+      "venueName": "Bedford Public Library",
+      "address": "15 Dartmouth Road, Bedford, NS B4A 3X6",
+      "city": "Bedford",
+      "categories": [
+        "Community"
+      ],
+      "eventUrl": "https://halifax.bibliocommons.com/events/6a835ef7a821f90037ee766e",
+      "ticketUrl": "https://www.halifaxpubliclibraries.ca/locations/bedford-public-library/",
+      "price": null,
+      "sourceId": "bedford-library-events",
+      "sourceName": "Bedford Public Library",
+      "sourceKind": "official_library_location_calendar",
+      "sourceUrl": "https://www.halifaxpubliclibraries.ca/locations/bedford-public-library/",
+      "observedAt": "2026-09-11T14:46:39.893Z",
+      "reviewState": "source_observed",
+      "latitude": 44.7314,
+      "longitude": -63.6571,
+      "venueId": "bedford-library",
       "neighbourhood": null,
       "organizerId": "halifax-public-libraries",
       "organizerName": "Halifax Public Libraries"
@@ -1310,7 +723,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Woodlawn Public Library",
       "sourceKind": "official_library_location_calendar",
       "sourceUrl": "https://www.halifaxpubliclibraries.ca/locations/woodlawn-public-library/",
-      "observedAt": "2026-09-04T13:17:11.974Z",
+      "observedAt": "2026-09-11T14:46:38.502Z",
       "reviewState": "source_observed",
       "latitude": 44.6715,
       "longitude": -63.5316,
@@ -1329,7 +742,8 @@ window.HALIFAX_CITY_EVENTS = {
       "address": "1685 Argyle Street, Halifax, NS",
       "city": "Halifax",
       "categories": [
-        "Music"
+        "Music",
+        "Arts"
       ],
       "price": null,
       "ticketUrl": "https://www.thecarleton.ca/music/upcoming-performances/",
@@ -1338,13 +752,70 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "the-carleton",
       "sourceName": "The Carleton",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-09-04T13:15:06.104Z",
+      "observedAt": "2026-09-11T14:44:31.074Z",
       "reviewState": "source-observed",
       "venueId": "the-carleton-halifax",
       "neighbourhood": "Downtown",
       "organizerId": "the-carleton",
       "organizerName": "The Carleton",
       "restaurantId": "osm-node-771690675-the-carleton"
+    },
+    {
+      "id": "alderney-gate-library-events-54bcc65153f057dd",
+      "title": "Big Blue Blocks",
+      "startAt": "2026-09-13T16:00:00.000Z",
+      "endAt": "2026-09-13T19:00:00.000Z",
+      "allDay": false,
+      "venueName": "Alderney Gate Public Library",
+      "address": "60 Alderney Drive, Dartmouth, NS B2Y 4P8",
+      "city": "Dartmouth",
+      "categories": [
+        "Community"
+      ],
+      "eventUrl": "https://halifax.bibliocommons.com/events/6a96f8afb204780029972f13",
+      "ticketUrl": "https://www.halifaxpubliclibraries.ca/locations/alderney-gate-public-library/",
+      "price": null,
+      "sourceId": "alderney-gate-library-events",
+      "sourceName": "Alderney Gate Public Library",
+      "sourceKind": "official_library_location_calendar",
+      "sourceUrl": "https://www.halifaxpubliclibraries.ca/locations/alderney-gate-public-library/",
+      "observedAt": "2026-09-11T14:46:38.337Z",
+      "reviewState": "source_observed",
+      "latitude": 44.6665,
+      "longitude": -63.5684,
+      "venueId": "alderney-gate-library",
+      "neighbourhood": "Downtown Dartmouth",
+      "organizerId": "halifax-public-libraries",
+      "organizerName": "Halifax Public Libraries"
+    },
+    {
+      "id": "bedford-library-events-67587ec6fdc505da",
+      "title": "Build & Play",
+      "startAt": "2026-09-13T17:00:00.000Z",
+      "endAt": "2026-09-13T19:00:00.000Z",
+      "allDay": false,
+      "venueName": "Bedford Public Library",
+      "address": "15 Dartmouth Road, Bedford, NS B4A 3X6",
+      "city": "Bedford",
+      "categories": [
+        "Community",
+        "Arts"
+      ],
+      "eventUrl": "https://halifax.bibliocommons.com/events/6a91c6b3be148200298ac56b",
+      "ticketUrl": "https://www.halifaxpubliclibraries.ca/locations/bedford-public-library/",
+      "price": null,
+      "sourceId": "bedford-library-events",
+      "sourceName": "Bedford Public Library",
+      "sourceKind": "official_library_location_calendar",
+      "sourceUrl": "https://www.halifaxpubliclibraries.ca/locations/bedford-public-library/",
+      "observedAt": "2026-09-11T14:46:39.894Z",
+      "reviewState": "source_observed",
+      "latitude": 44.7314,
+      "longitude": -63.6571,
+      "venueId": "bedford-library",
+      "neighbourhood": null,
+      "organizerId": "halifax-public-libraries",
+      "organizerName": "Halifax Public Libraries"
     },
     {
       "id": "woodlawn-library-events-d8f736a0d9411526",
@@ -1365,7 +836,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Woodlawn Public Library",
       "sourceKind": "official_library_location_calendar",
       "sourceUrl": "https://www.halifaxpubliclibraries.ca/locations/woodlawn-public-library/",
-      "observedAt": "2026-09-04T13:17:11.975Z",
+      "observedAt": "2026-09-11T14:46:38.502Z",
       "reviewState": "source_observed",
       "latitude": 44.6715,
       "longitude": -63.5316,
@@ -1384,7 +855,8 @@ window.HALIFAX_CITY_EVENTS = {
       "address": "1685 Argyle Street, Halifax, NS",
       "city": "Halifax",
       "categories": [
-        "Music"
+        "Music",
+        "Arts"
       ],
       "price": null,
       "ticketUrl": "https://www.thecarleton.ca/music/upcoming-performances/",
@@ -1393,13 +865,125 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "the-carleton",
       "sourceName": "The Carleton",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-09-04T13:15:06.104Z",
+      "observedAt": "2026-09-11T14:44:31.074Z",
       "reviewState": "source-observed",
       "venueId": "the-carleton-halifax",
       "neighbourhood": "Downtown",
       "organizerId": "the-carleton",
       "organizerName": "The Carleton",
       "restaurantId": "osm-node-771690675-the-carleton"
+    },
+    {
+      "id": "alderney-gate-library-events-e285b5f5f5a894b2",
+      "title": "Nova Scotia Legal Aid: Drop-in Support",
+      "startAt": "2026-09-14T12:00:00.000Z",
+      "endAt": "2026-09-14T16:00:00.000Z",
+      "allDay": false,
+      "venueName": "Alderney Gate Public Library",
+      "address": "60 Alderney Drive, Dartmouth, NS B2Y 4P8",
+      "city": "Dartmouth",
+      "categories": [
+        "Community"
+      ],
+      "eventUrl": "https://halifax.bibliocommons.com/events/69dd3a344dacf581ff8888b8",
+      "ticketUrl": "https://www.halifaxpubliclibraries.ca/locations/alderney-gate-public-library/",
+      "price": null,
+      "sourceId": "alderney-gate-library-events",
+      "sourceName": "Alderney Gate Public Library",
+      "sourceKind": "official_library_location_calendar",
+      "sourceUrl": "https://www.halifaxpubliclibraries.ca/locations/alderney-gate-public-library/",
+      "observedAt": "2026-09-11T14:46:38.338Z",
+      "reviewState": "source_observed",
+      "latitude": 44.6665,
+      "longitude": -63.5684,
+      "venueId": "alderney-gate-library",
+      "neighbourhood": "Downtown Dartmouth",
+      "organizerId": "halifax-public-libraries",
+      "organizerName": "Halifax Public Libraries"
+    },
+    {
+      "id": "alderney-gate-library-events-2b760351a0b407e4",
+      "title": "Pre-teen Dungeons & Dragons",
+      "startAt": "2026-09-14T18:30:00.000Z",
+      "endAt": "2026-09-14T19:45:00.000Z",
+      "allDay": false,
+      "venueName": "Alderney Gate Public Library",
+      "address": "60 Alderney Drive, Dartmouth, NS B2Y 4P8",
+      "city": "Dartmouth",
+      "categories": [
+        "Community"
+      ],
+      "eventUrl": "https://halifax.bibliocommons.com/events/6a85f8e569166f088b935407",
+      "ticketUrl": "https://www.halifaxpubliclibraries.ca/locations/alderney-gate-public-library/",
+      "price": null,
+      "sourceId": "alderney-gate-library-events",
+      "sourceName": "Alderney Gate Public Library",
+      "sourceKind": "official_library_location_calendar",
+      "sourceUrl": "https://www.halifaxpubliclibraries.ca/locations/alderney-gate-public-library/",
+      "observedAt": "2026-09-11T14:46:38.338Z",
+      "reviewState": "source_observed",
+      "latitude": 44.6665,
+      "longitude": -63.5684,
+      "venueId": "alderney-gate-library",
+      "neighbourhood": "Downtown Dartmouth",
+      "organizerId": "halifax-public-libraries",
+      "organizerName": "Halifax Public Libraries"
+    },
+    {
+      "id": "bedford-library-events-aeb2f6a01c498e87",
+      "title": "Baby's First Books",
+      "startAt": "2026-09-15T13:30:00.000Z",
+      "endAt": "2026-09-15T14:30:00.000Z",
+      "allDay": false,
+      "venueName": "Bedford Public Library",
+      "address": "15 Dartmouth Road, Bedford, NS B4A 3X6",
+      "city": "Bedford",
+      "categories": [
+        "Community"
+      ],
+      "eventUrl": "https://halifax.bibliocommons.com/events/6a835f4bb2047800299383db",
+      "ticketUrl": "https://www.halifaxpubliclibraries.ca/locations/bedford-public-library/",
+      "price": null,
+      "sourceId": "bedford-library-events",
+      "sourceName": "Bedford Public Library",
+      "sourceKind": "official_library_location_calendar",
+      "sourceUrl": "https://www.halifaxpubliclibraries.ca/locations/bedford-public-library/",
+      "observedAt": "2026-09-11T14:46:39.894Z",
+      "reviewState": "source_observed",
+      "latitude": 44.7314,
+      "longitude": -63.6571,
+      "venueId": "bedford-library",
+      "neighbourhood": null,
+      "organizerId": "halifax-public-libraries",
+      "organizerName": "Halifax Public Libraries"
+    },
+    {
+      "id": "alderney-gate-library-events-eaf5a2e646e9b38a",
+      "title": "Shake, Rattle & Read",
+      "startAt": "2026-09-15T13:30:00.000Z",
+      "endAt": "2026-09-15T14:15:00.000Z",
+      "allDay": false,
+      "venueName": "Alderney Gate Public Library",
+      "address": "60 Alderney Drive, Dartmouth, NS B2Y 4P8",
+      "city": "Dartmouth",
+      "categories": [
+        "Community"
+      ],
+      "eventUrl": "https://halifax.bibliocommons.com/events/6a83651ca821f90037ee78d6",
+      "ticketUrl": "https://www.halifaxpubliclibraries.ca/locations/alderney-gate-public-library/",
+      "price": null,
+      "sourceId": "alderney-gate-library-events",
+      "sourceName": "Alderney Gate Public Library",
+      "sourceKind": "official_library_location_calendar",
+      "sourceUrl": "https://www.halifaxpubliclibraries.ca/locations/alderney-gate-public-library/",
+      "observedAt": "2026-09-11T14:46:38.338Z",
+      "reviewState": "source_observed",
+      "latitude": 44.6665,
+      "longitude": -63.5684,
+      "venueId": "alderney-gate-library",
+      "neighbourhood": "Downtown Dartmouth",
+      "organizerId": "halifax-public-libraries",
+      "organizerName": "Halifax Public Libraries"
     },
     {
       "id": "halifax-convention-centre-4b5125ab825eb1a5",
@@ -1411,6 +995,7 @@ window.HALIFAX_CITY_EVENTS = {
       "address": "1650 Argyle Street, Halifax, NS",
       "city": "Halifax",
       "categories": [
+        "Other",
         "Festivals"
       ],
       "eventUrl": "https://www.halifaxconventioncentre.com/events/230046/",
@@ -1420,7 +1005,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Convention Centre",
       "sourceKind": "official_venue_calendar",
       "sourceUrl": "https://www.halifaxconventioncentre.com/Events",
-      "observedAt": "2026-09-04T13:15:23.981Z",
+      "observedAt": "2026-09-11T14:44:32.810Z",
       "reviewState": "source_observed",
       "venueId": "halifax-convention-centre",
       "neighbourhood": "Downtown",
@@ -1428,17 +1013,131 @@ window.HALIFAX_CITY_EVENTS = {
       "organizerName": "Halifax Convention Centre"
     },
     {
+      "id": "woodlawn-library-events-9dfb33af9ad78879",
+      "title": "Needle Niche",
+      "startAt": "2026-09-15T16:00:00.000Z",
+      "endAt": "2026-09-15T18:00:00.000Z",
+      "allDay": false,
+      "venueName": "Woodlawn Public Library",
+      "address": "31 Eisener Boulevard, Dartmouth, NS B2W 0J1",
+      "city": "Dartmouth",
+      "categories": [
+        "Community"
+      ],
+      "eventUrl": "https://halifax.bibliocommons.com/events/6944511a8b29ea2800c4ded1",
+      "ticketUrl": "https://www.halifaxpubliclibraries.ca/locations/woodlawn-public-library/",
+      "price": null,
+      "sourceId": "woodlawn-library-events",
+      "sourceName": "Woodlawn Public Library",
+      "sourceKind": "official_library_location_calendar",
+      "sourceUrl": "https://www.halifaxpubliclibraries.ca/locations/woodlawn-public-library/",
+      "observedAt": "2026-09-11T14:46:38.503Z",
+      "reviewState": "source_observed",
+      "latitude": 44.6715,
+      "longitude": -63.5316,
+      "venueId": "woodlawn-library",
+      "neighbourhood": null,
+      "organizerId": "halifax-public-libraries",
+      "organizerName": "Halifax Public Libraries"
+    },
+    {
+      "id": "alderney-gate-library-events-a0a5cad09a007894",
+      "title": "Alderney Ideas Seminar: Online & In-Person",
+      "startAt": "2026-09-15T16:30:00.000Z",
+      "endAt": "2026-09-15T17:30:00.000Z",
+      "allDay": false,
+      "venueName": "Alderney Gate Public Library",
+      "address": "60 Alderney Drive, Dartmouth, NS B2Y 4P8",
+      "city": "Dartmouth",
+      "categories": [
+        "Community"
+      ],
+      "eventUrl": "https://halifax.bibliocommons.com/events/6a91c16560ccaf01c021b319",
+      "ticketUrl": "https://www.halifaxpubliclibraries.ca/locations/alderney-gate-public-library/",
+      "price": null,
+      "sourceId": "alderney-gate-library-events",
+      "sourceName": "Alderney Gate Public Library",
+      "sourceKind": "official_library_location_calendar",
+      "sourceUrl": "https://www.halifaxpubliclibraries.ca/locations/alderney-gate-public-library/",
+      "observedAt": "2026-09-11T14:46:38.339Z",
+      "reviewState": "source_observed",
+      "latitude": 44.6665,
+      "longitude": -63.5684,
+      "venueId": "alderney-gate-library",
+      "neighbourhood": "Downtown Dartmouth",
+      "organizerId": "halifax-public-libraries",
+      "organizerName": "Halifax Public Libraries"
+    },
+    {
+      "id": "alderney-gate-library-events-9c8031e751f682ed",
+      "title": "Dartmouth Open Writing Group",
+      "startAt": "2026-09-15T20:30:00.000Z",
+      "endAt": "2026-09-15T22:30:00.000Z",
+      "allDay": false,
+      "venueName": "Alderney Gate Public Library",
+      "address": "60 Alderney Drive, Dartmouth, NS B2Y 4P8",
+      "city": "Dartmouth",
+      "categories": [
+        "Arts",
+        "Community"
+      ],
+      "eventUrl": "https://halifax.bibliocommons.com/events/6a8ddb4b57c264087ad3abb7",
+      "ticketUrl": "https://www.halifaxpubliclibraries.ca/locations/alderney-gate-public-library/",
+      "price": null,
+      "sourceId": "alderney-gate-library-events",
+      "sourceName": "Alderney Gate Public Library",
+      "sourceKind": "official_library_location_calendar",
+      "sourceUrl": "https://www.halifaxpubliclibraries.ca/locations/alderney-gate-public-library/",
+      "observedAt": "2026-09-11T14:46:38.339Z",
+      "reviewState": "source_observed",
+      "latitude": 44.6665,
+      "longitude": -63.5684,
+      "venueId": "alderney-gate-library",
+      "neighbourhood": "Downtown Dartmouth",
+      "organizerId": "halifax-public-libraries",
+      "organizerName": "Halifax Public Libraries"
+    },
+    {
+      "id": "woodlawn-library-events-6bb2261e0223bf8d",
+      "title": "Decode Your Dog: How to Identify Needs & Build a…",
+      "startAt": "2026-09-15T21:30:00.000Z",
+      "endAt": "2026-09-15T23:00:00.000Z",
+      "allDay": false,
+      "venueName": "Woodlawn Public Library",
+      "address": "31 Eisener Boulevard, Dartmouth, NS B2W 0J1",
+      "city": "Dartmouth",
+      "categories": [
+        "Community"
+      ],
+      "eventUrl": "https://halifax.bibliocommons.com/events/6a3ecb07296ea565de2ef55a",
+      "ticketUrl": "https://www.halifaxpubliclibraries.ca/locations/woodlawn-public-library/",
+      "price": null,
+      "sourceId": "woodlawn-library-events",
+      "sourceName": "Woodlawn Public Library",
+      "sourceKind": "official_library_location_calendar",
+      "sourceUrl": "https://www.halifaxpubliclibraries.ca/locations/woodlawn-public-library/",
+      "observedAt": "2026-09-11T14:46:38.503Z",
+      "reviewState": "source_observed",
+      "latitude": 44.6715,
+      "longitude": -63.5316,
+      "venueId": "woodlawn-library",
+      "neighbourhood": null,
+      "organizerId": "halifax-public-libraries",
+      "organizerName": "Halifax Public Libraries"
+    },
+    {
       "id": "https://novascotia.com/event/atlantic-international-film-festival-aiff/#event",
       "title": "Atlantic International Film Festival (AIFF)",
-      "startAt": "2026-09-16T03:00:00.000Z",
-      "endAt": "2026-09-23T03:00:00.000Z",
+      "startAt": "2026-09-16T00:00:00.000Z",
+      "endAt": "2026-09-23T00:00:00.000Z",
       "allDay": false,
       "venueName": "Cineplex Park Lane",
       "address": "5657 Spring Garden Rd, Halifax, NS, B3J 3R4, Halifax, NS, CA",
       "city": "Halifax",
       "categories": [
         "Festivals",
-        "Arts"
+        "Arts",
+        "Outdoor"
       ],
       "price": null,
       "ticketUrl": "https://atlanticfilmfestival.ca/2026-tickets",
@@ -1447,7 +1146,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "tourism-ns-events",
       "sourceName": "Tourism Nova Scotia Events",
       "sourceKind": "official_tourism_calendar",
-      "observedAt": "2026-09-04T13:14:59.004Z",
+      "observedAt": "2026-09-11T14:44:22.923Z",
       "reviewState": "source-observed",
       "alternateSources": [
         {
@@ -1456,6 +1155,147 @@ window.HALIFAX_CITY_EVENTS = {
           "sourceUrl": "https://novascotia.com/event/atlantic-international-film-festival-aiff/"
         }
       ]
+    },
+    {
+      "id": "woodlawn-library-events-5caa22ac87bcecad",
+      "title": "Baby's First Books",
+      "startAt": "2026-09-16T13:00:00.000Z",
+      "endAt": "2026-09-16T13:45:00.000Z",
+      "allDay": false,
+      "venueName": "Woodlawn Public Library",
+      "address": "31 Eisener Boulevard, Dartmouth, NS B2W 0J1",
+      "city": "Dartmouth",
+      "categories": [
+        "Community"
+      ],
+      "eventUrl": "https://halifax.bibliocommons.com/events/6a6b9f4ec7e02e3d006cbbb0",
+      "ticketUrl": "https://www.halifaxpubliclibraries.ca/locations/woodlawn-public-library/",
+      "price": null,
+      "sourceId": "woodlawn-library-events",
+      "sourceName": "Woodlawn Public Library",
+      "sourceKind": "official_library_location_calendar",
+      "sourceUrl": "https://www.halifaxpubliclibraries.ca/locations/woodlawn-public-library/",
+      "observedAt": "2026-09-11T14:46:38.504Z",
+      "reviewState": "source_observed",
+      "latitude": 44.6715,
+      "longitude": -63.5316,
+      "venueId": "woodlawn-library",
+      "neighbourhood": null,
+      "organizerId": "halifax-public-libraries",
+      "organizerName": "Halifax Public Libraries"
+    },
+    {
+      "id": "bedford-library-events-65173f76d873bab1",
+      "title": "Tinkering Toddlers",
+      "startAt": "2026-09-16T13:30:00.000Z",
+      "endAt": "2026-09-16T14:15:00.000Z",
+      "allDay": false,
+      "venueName": "Bedford Public Library",
+      "address": "15 Dartmouth Road, Bedford, NS B4A 3X6",
+      "city": "Bedford",
+      "categories": [
+        "Community"
+      ],
+      "eventUrl": "https://halifax.bibliocommons.com/events/6a87269969166f088b938453",
+      "ticketUrl": "https://www.halifaxpubliclibraries.ca/locations/bedford-public-library/",
+      "price": null,
+      "sourceId": "bedford-library-events",
+      "sourceName": "Bedford Public Library",
+      "sourceKind": "official_library_location_calendar",
+      "sourceUrl": "https://www.halifaxpubliclibraries.ca/locations/bedford-public-library/",
+      "observedAt": "2026-09-11T14:46:39.895Z",
+      "reviewState": "source_observed",
+      "latitude": 44.7314,
+      "longitude": -63.6571,
+      "venueId": "bedford-library",
+      "neighbourhood": null,
+      "organizerId": "halifax-public-libraries",
+      "organizerName": "Halifax Public Libraries"
+    },
+    {
+      "id": "bedford-library-events-aa636e36c7acf6d5",
+      "title": "Community Crafters",
+      "startAt": "2026-09-16T15:30:00.000Z",
+      "endAt": "2026-09-16T17:30:00.000Z",
+      "allDay": false,
+      "venueName": "Bedford Public Library",
+      "address": "15 Dartmouth Road, Bedford, NS B4A 3X6",
+      "city": "Bedford",
+      "categories": [
+        "Arts",
+        "Community"
+      ],
+      "eventUrl": "https://halifax.bibliocommons.com/events/6a87462857c264087ad27fdd",
+      "ticketUrl": "https://www.halifaxpubliclibraries.ca/locations/bedford-public-library/",
+      "price": null,
+      "sourceId": "bedford-library-events",
+      "sourceName": "Bedford Public Library",
+      "sourceKind": "official_library_location_calendar",
+      "sourceUrl": "https://www.halifaxpubliclibraries.ca/locations/bedford-public-library/",
+      "observedAt": "2026-09-11T14:46:39.895Z",
+      "reviewState": "source_observed",
+      "latitude": 44.7314,
+      "longitude": -63.6571,
+      "venueId": "bedford-library",
+      "neighbourhood": null,
+      "organizerId": "halifax-public-libraries",
+      "organizerName": "Halifax Public Libraries"
+    },
+    {
+      "id": "alderney-gate-library-events-b619c2f648fed0ab",
+      "title": "Makers Gonna Make Makers Gonna Make",
+      "startAt": "2026-09-16T18:30:00.000Z",
+      "endAt": "2026-09-16T19:30:00.000Z",
+      "allDay": false,
+      "venueName": "Alderney Gate Public Library",
+      "address": "60 Alderney Drive, Dartmouth, NS B2Y 4P8",
+      "city": "Dartmouth",
+      "categories": [
+        "Community"
+      ],
+      "eventUrl": "https://halifax.bibliocommons.com/events/6a9acd4769166f088b9746c3",
+      "ticketUrl": "https://www.halifaxpubliclibraries.ca/locations/alderney-gate-public-library/",
+      "price": null,
+      "sourceId": "alderney-gate-library-events",
+      "sourceName": "Alderney Gate Public Library",
+      "sourceKind": "official_library_location_calendar",
+      "sourceUrl": "https://www.halifaxpubliclibraries.ca/locations/alderney-gate-public-library/",
+      "observedAt": "2026-09-11T14:46:38.340Z",
+      "reviewState": "source_observed",
+      "latitude": 44.6665,
+      "longitude": -63.5684,
+      "venueId": "alderney-gate-library",
+      "neighbourhood": "Downtown Dartmouth",
+      "organizerId": "halifax-public-libraries",
+      "organizerName": "Halifax Public Libraries"
+    },
+    {
+      "id": "alderney-gate-library-events-6c854870e9ecfd52",
+      "title": "Meet Juno, a St. John Ambulance Therapy Dog Meet Juno, a St. John Ambulance Therapy Dog",
+      "startAt": "2026-09-16T21:30:00.000Z",
+      "endAt": "2026-09-16T22:30:00.000Z",
+      "allDay": false,
+      "venueName": "Alderney Gate Public Library",
+      "address": "60 Alderney Drive, Dartmouth, NS B2Y 4P8",
+      "city": "Dartmouth",
+      "categories": [
+        "Community"
+      ],
+      "eventUrl": "https://halifax.bibliocommons.com/events/6a8ddc4657c264087ad3ac17",
+      "ticketUrl": "https://www.halifaxpubliclibraries.ca/locations/alderney-gate-public-library/",
+      "price": null,
+      "sourceId": "alderney-gate-library-events",
+      "sourceName": "Alderney Gate Public Library",
+      "sourceKind": "official_library_location_calendar",
+      "sourceUrl": "https://www.halifaxpubliclibraries.ca/locations/alderney-gate-public-library/",
+      "observedAt": "2026-09-11T14:46:38.340Z",
+      "reviewState": "source_observed",
+      "latitude": 44.6665,
+      "longitude": -63.5684,
+      "venueId": "alderney-gate-library",
+      "neighbourhood": "Downtown Dartmouth",
+      "organizerId": "halifax-public-libraries",
+      "organizerName": "Halifax Public Libraries"
     },
     {
       "id": "the-carleton-5a87dc94c0075bb7",
@@ -1467,7 +1307,8 @@ window.HALIFAX_CITY_EVENTS = {
       "address": "1685 Argyle Street, Halifax, NS",
       "city": "Halifax",
       "categories": [
-        "Music"
+        "Music",
+        "Arts"
       ],
       "price": null,
       "ticketUrl": "https://www.thecarleton.ca/music/upcoming-performances/",
@@ -1476,7 +1317,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "the-carleton",
       "sourceName": "The Carleton",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-09-04T13:15:06.104Z",
+      "observedAt": "2026-09-11T14:44:31.074Z",
       "reviewState": "source-observed",
       "venueId": "the-carleton-halifax",
       "neighbourhood": "Downtown",
@@ -1487,8 +1328,8 @@ window.HALIFAX_CITY_EVENTS = {
     {
       "id": "https://novascotia.com/event/prairies-to-ports-paintings-by-jacqueline-faye-miller-peter-ollerhead/#event",
       "title": "Prairies to Ports: Paintings by Jacqueline Faye Miller & Peter Ollerhead",
-      "startAt": "2026-09-17T13:00:00.000Z",
-      "endAt": "2026-10-09T21:00:00.000Z",
+      "startAt": "2026-09-17T10:00:00.000Z",
+      "endAt": "2026-10-09T18:00:00.000Z",
       "allDay": false,
       "venueName": "The Prow Gallery",
       "address": "1479 Lower Water Street, Unit 185, Halifax, NS, Halifax, NS, CA",
@@ -1503,7 +1344,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "tourism-ns-events",
       "sourceName": "Tourism Nova Scotia Events",
       "sourceKind": "official_tourism_calendar",
-      "observedAt": "2026-09-04T13:14:59.188Z",
+      "observedAt": "2026-09-11T14:44:23.078Z",
       "reviewState": "source-observed",
       "alternateSources": [
         {
@@ -1523,6 +1364,7 @@ window.HALIFAX_CITY_EVENTS = {
       "address": "1650 Argyle Street, Halifax, NS",
       "city": "Halifax",
       "categories": [
+        "Other",
         "Food & Drink",
         "Festivals"
       ],
@@ -1533,7 +1375,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Convention Centre",
       "sourceKind": "official_venue_calendar",
       "sourceUrl": "https://www.halifaxconventioncentre.com/Events",
-      "observedAt": "2026-09-04T13:15:23.981Z",
+      "observedAt": "2026-09-11T14:44:32.811Z",
       "reviewState": "source_observed",
       "venueId": "halifax-convention-centre",
       "neighbourhood": "Downtown",
@@ -1550,7 +1392,8 @@ window.HALIFAX_CITY_EVENTS = {
       "address": "1685 Argyle Street, Halifax, NS",
       "city": "Halifax",
       "categories": [
-        "Music"
+        "Music",
+        "Arts"
       ],
       "price": null,
       "ticketUrl": "https://www.thecarleton.ca/music/upcoming-performances/",
@@ -1559,7 +1402,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "the-carleton",
       "sourceName": "The Carleton",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-09-04T13:15:06.105Z",
+      "observedAt": "2026-09-11T14:44:31.075Z",
       "reviewState": "source-observed",
       "venueId": "the-carleton-halifax",
       "neighbourhood": "Downtown",
@@ -1570,8 +1413,8 @@ window.HALIFAX_CITY_EVENTS = {
     {
       "id": "https://novascotia.com/event/combo-show-sept-18/#event",
       "title": "Combo Show Sept 18",
-      "startAt": "2026-09-18T22:30:00.000Z",
-      "endAt": "2026-09-19T00:00:00.000Z",
+      "startAt": "2026-09-18T19:30:00.000Z",
+      "endAt": "2026-09-18T21:00:00.000Z",
       "allDay": false,
       "venueName": "The Bus Stop Theatre Co-operative",
       "address": "2203 Gottingen St, Halifax, NS B3K 3B5, Halifax, NS, CA",
@@ -1587,7 +1430,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "tourism-ns-events",
       "sourceName": "Tourism Nova Scotia Events",
       "sourceKind": "official_tourism_calendar",
-      "observedAt": "2026-09-04T13:14:58.999Z",
+      "observedAt": "2026-09-11T14:44:22.920Z",
       "reviewState": "source-observed",
       "alternateSources": [
         {
@@ -1596,6 +1439,34 @@ window.HALIFAX_CITY_EVENTS = {
           "sourceUrl": "https://novascotia.com/event/combo-show-sept-18/"
         }
       ]
+    },
+    {
+      "id": "the-carleton-3dfcce6fdac89343",
+      "title": "Angelique Francis Band",
+      "startAt": "2026-09-18T23:00:00.000Z",
+      "endAt": "2026-09-19T02:00:00.000Z",
+      "allDay": false,
+      "venueName": "The Carleton",
+      "address": "1685 Argyle Street, Halifax, NS",
+      "city": "Halifax",
+      "categories": [
+        "Music",
+        "Arts"
+      ],
+      "price": null,
+      "ticketUrl": "https://www.thecarleton.ca/music/upcoming-performances/",
+      "eventUrl": "https://www.thecarleton.ca/events/angelique-francis-band/",
+      "sourceUrl": "https://www.thecarleton.ca/events/angelique-francis-band/",
+      "sourceId": "the-carleton",
+      "sourceName": "The Carleton",
+      "sourceKind": "official_venue_calendar",
+      "observedAt": "2026-09-11T14:44:31.075Z",
+      "reviewState": "source-observed",
+      "venueId": "the-carleton-halifax",
+      "neighbourhood": "Downtown",
+      "organizerId": "the-carleton",
+      "organizerName": "The Carleton",
+      "restaurantId": "osm-node-771690675-the-carleton"
     },
     {
       "id": "light-house-arts-centre-92cc511a679f5160",
@@ -1616,7 +1487,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "light-house-arts-centre",
       "sourceName": "Light House Arts Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-09-04T13:15:03.595Z",
+      "observedAt": "2026-09-11T14:44:27.290Z",
       "reviewState": "source-observed",
       "venueId": "light-house-arts-centre-halifax",
       "neighbourhood": "Downtown",
@@ -1624,16 +1495,17 @@ window.HALIFAX_CITY_EVENTS = {
       "organizerName": "Light House Arts Centre"
     },
     {
-      "id": "symphony-nova-scotia-ddeef28518ad1226",
+      "id": "symphony-nova-scotia-55824655816cb6f0",
       "title": "Season 2025-2026",
-      "startAt": "2026-09-19T15:15:00.000Z",
-      "endAt": "2026-09-19T15:15:00.000Z",
+      "startAt": "2026-09-19T13:15:00.000Z",
+      "endAt": "2026-09-19T13:15:00.000Z",
       "allDay": false,
       "venueName": "Rebecca Cohn",
       "address": null,
       "city": "Halifax",
       "categories": [
-        "Music"
+        "Music",
+        "Arts"
       ],
       "eventUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/?season=2025-2026#choose-a-concert",
       "ticketUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
@@ -1642,7 +1514,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Symphony Nova Scotia",
       "sourceKind": "official_arts_calendar",
       "sourceUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
-      "observedAt": "2026-09-04T13:15:24.137Z",
+      "observedAt": "2026-09-11T14:44:32.939Z",
       "reviewState": "source_observed",
       "organizerId": "symphony-nova-scotia",
       "organizerName": "Symphony Nova Scotia"
@@ -1666,7 +1538,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "halifax-tides-home",
       "sourceName": "Halifax Tides 2026 Home Schedule",
       "sourceKind": "official_tourism_sports_schedule",
-      "observedAt": "2026-09-04T13:15:03.087Z",
+      "observedAt": "2026-09-11T14:44:26.837Z",
       "reviewState": "source-observed",
       "venueId": "wanderers-grounds-halifax",
       "neighbourhood": "Downtown",
@@ -1692,7 +1564,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "halifax-mooseheads-home",
       "sourceName": "Halifax Mooseheads Home Schedule",
       "sourceKind": "official_sports_schedule",
-      "observedAt": "2026-09-04T13:15:02.992Z",
+      "observedAt": "2026-09-11T14:44:26.744Z",
       "reviewState": "source-observed",
       "venueId": "scotiabank-centre-halifax",
       "neighbourhood": "Downtown",
@@ -1718,12 +1590,40 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "scotiabank-centre",
       "sourceName": "Scotiabank Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-09-04T13:15:03.025Z",
+      "observedAt": "2026-09-11T14:44:26.773Z",
       "reviewState": "source-observed",
       "venueId": "scotiabank-centre-halifax",
       "neighbourhood": "Downtown",
       "organizerId": "scotiabank-centre",
       "organizerName": "Scotiabank Centre"
+    },
+    {
+      "id": "the-carleton-8eba3064b3da5fff",
+      "title": "Newbridge W/ Jackson Weldon",
+      "startAt": "2026-09-19T23:00:00.000Z",
+      "endAt": "2026-09-20T02:00:00.000Z",
+      "allDay": false,
+      "venueName": "The Carleton",
+      "address": "1685 Argyle Street, Halifax, NS",
+      "city": "Halifax",
+      "categories": [
+        "Music",
+        "Arts"
+      ],
+      "price": null,
+      "ticketUrl": "https://www.thecarleton.ca/music/upcoming-performances/",
+      "eventUrl": "https://www.thecarleton.ca/events/newbridge/",
+      "sourceUrl": "https://www.thecarleton.ca/events/newbridge/",
+      "sourceId": "the-carleton",
+      "sourceName": "The Carleton",
+      "sourceKind": "official_venue_calendar",
+      "observedAt": "2026-09-11T14:44:31.075Z",
+      "reviewState": "source-observed",
+      "venueId": "the-carleton-halifax",
+      "neighbourhood": "Downtown",
+      "organizerId": "the-carleton",
+      "organizerName": "The Carleton",
+      "restaurantId": "osm-node-771690675-the-carleton"
     },
     {
       "id": "light-house-arts-centre-c8acae6ecf4e62cf",
@@ -1744,7 +1644,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "light-house-arts-centre",
       "sourceName": "Light House Arts Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-09-04T13:15:03.842Z",
+      "observedAt": "2026-09-11T14:44:27.315Z",
       "reviewState": "source-observed",
       "venueId": "light-house-arts-centre-halifax",
       "neighbourhood": "Downtown",
@@ -1770,7 +1670,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "hfx-wanderers-home",
       "sourceName": "HFX Wanderers 2026 Home Schedule",
       "sourceKind": "official_tourism_sports_schedule",
-      "observedAt": "2026-09-04T13:15:03.058Z",
+      "observedAt": "2026-09-11T14:44:26.805Z",
       "reviewState": "source-observed",
       "venueId": "wanderers-grounds-halifax",
       "neighbourhood": "Downtown",
@@ -1787,8 +1687,8 @@ window.HALIFAX_CITY_EVENTS = {
       "address": "1650 Argyle Street, Halifax, NS",
       "city": "Halifax",
       "categories": [
-        "Festivals",
-        "Community"
+        "Community",
+        "Festivals"
       ],
       "eventUrl": "https://www.halifaxconventioncentre.com/events/230050/",
       "ticketUrl": "https://www.halifaxconventioncentre.com/Events",
@@ -1797,7 +1697,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Convention Centre",
       "sourceKind": "official_venue_calendar",
       "sourceUrl": "https://www.halifaxconventioncentre.com/Events",
-      "observedAt": "2026-09-04T13:15:23.981Z",
+      "observedAt": "2026-09-11T14:44:32.811Z",
       "reviewState": "source_observed",
       "venueId": "halifax-convention-centre",
       "neighbourhood": "Downtown",
@@ -1814,6 +1714,7 @@ window.HALIFAX_CITY_EVENTS = {
       "address": "1650 Argyle Street, Halifax, NS",
       "city": "Halifax",
       "categories": [
+        "Other",
         "Festivals"
       ],
       "eventUrl": "https://www.halifaxconventioncentre.com/events/230020/",
@@ -1823,7 +1724,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Convention Centre",
       "sourceKind": "official_venue_calendar",
       "sourceUrl": "https://www.halifaxconventioncentre.com/Events",
-      "observedAt": "2026-09-04T13:15:23.981Z",
+      "observedAt": "2026-09-11T14:44:32.812Z",
       "reviewState": "source_observed",
       "venueId": "halifax-convention-centre",
       "neighbourhood": "Downtown",
@@ -1833,8 +1734,8 @@ window.HALIFAX_CITY_EVENTS = {
     {
       "id": "https://novascotia.com/event/women-of-the-fur-trade/#event",
       "title": "Women of the Fur Trade",
-      "startAt": "2026-09-22T22:30:00.000Z",
-      "endAt": "2026-10-12T01:00:00.000Z",
+      "startAt": "2026-09-22T19:30:00.000Z",
+      "endAt": "2026-10-11T22:00:00.000Z",
       "allDay": false,
       "venueName": "Neptune Theatre",
       "address": "1593 Argyle Street, Halifax, NS B3J 2B2, Halifax, NS, CA",
@@ -1849,7 +1750,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "tourism-ns-events",
       "sourceName": "Tourism Nova Scotia Events",
       "sourceKind": "official_tourism_calendar",
-      "observedAt": "2026-09-04T13:15:00.091Z",
+      "observedAt": "2026-09-11T14:44:23.963Z",
       "reviewState": "source-observed",
       "alternateSources": [
         {
@@ -1860,6 +1761,65 @@ window.HALIFAX_CITY_EVENTS = {
       ],
       "venueId": "neptune-theatre-halifax",
       "neighbourhood": "Downtown"
+    },
+    {
+      "id": "the-carleton-4baca55598470cba",
+      "title": "Kim Churchill (Australia)",
+      "startAt": "2026-09-22T22:00:00.000Z",
+      "endAt": "2026-09-23T00:00:00.000Z",
+      "allDay": false,
+      "venueName": "The Carleton",
+      "address": "1685 Argyle Street, Halifax, NS",
+      "city": "Halifax",
+      "categories": [
+        "Music",
+        "Festivals",
+        "Arts"
+      ],
+      "price": null,
+      "ticketUrl": "https://www.thecarleton.ca/music/upcoming-performances/",
+      "eventUrl": "https://www.thecarleton.ca/events/kim-churchill-australia/",
+      "sourceUrl": "https://www.thecarleton.ca/events/kim-churchill-australia/",
+      "sourceId": "the-carleton",
+      "sourceName": "The Carleton",
+      "sourceKind": "official_venue_calendar",
+      "observedAt": "2026-09-11T14:44:31.075Z",
+      "reviewState": "source-observed",
+      "venueId": "the-carleton-halifax",
+      "neighbourhood": "Downtown",
+      "organizerId": "the-carleton",
+      "organizerName": "The Carleton",
+      "restaurantId": "osm-node-771690675-the-carleton"
+    },
+    {
+      "id": "the-carleton-58c7ceb3c6abf199",
+      "title": "Craft Draught Showdown: Annapolis VS Tanner & Co.",
+      "startAt": "2026-09-23T22:00:00.000Z",
+      "endAt": "2026-09-24T01:00:00.000Z",
+      "allDay": false,
+      "venueName": "The Carleton",
+      "address": "1685 Argyle Street, Halifax, NS",
+      "city": "Halifax",
+      "categories": [
+        "Sports",
+        "Music",
+        "Food & Drink",
+        "Arts"
+      ],
+      "price": null,
+      "ticketUrl": "https://www.thecarleton.ca/music/upcoming-performances/",
+      "eventUrl": "https://www.thecarleton.ca/events/craft-draught-showdown-annapolis-vs-tanner-co/",
+      "sourceUrl": "https://www.thecarleton.ca/events/craft-draught-showdown-annapolis-vs-tanner-co/",
+      "sourceId": "the-carleton",
+      "sourceName": "The Carleton",
+      "sourceKind": "official_venue_calendar",
+      "observedAt": "2026-09-11T14:44:31.075Z",
+      "reviewState": "source-observed",
+      "venueId": "the-carleton-halifax",
+      "neighbourhood": "Downtown",
+      "organizerId": "the-carleton",
+      "organizerName": "The Carleton",
+      "restaurantId": "osm-node-771690675-the-carleton"
     },
     {
       "id": "scotiabank-centre-4bc8dd5de1e95de4",
@@ -1880,7 +1840,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "scotiabank-centre",
       "sourceName": "Scotiabank Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-09-04T13:15:03.026Z",
+      "observedAt": "2026-09-11T14:44:26.774Z",
       "reviewState": "source-observed",
       "venueId": "scotiabank-centre-halifax",
       "neighbourhood": "Downtown",
@@ -1890,15 +1850,16 @@ window.HALIFAX_CITY_EVENTS = {
     {
       "id": "https://novascotia.com/event/magnetic-world-music-festival/#event",
       "title": "Magnetic World Music Festival",
-      "startAt": "2026-09-25T22:00:00.000Z",
-      "endAt": "2026-09-27T02:00:00.000Z",
+      "startAt": "2026-09-25T19:00:00.000Z",
+      "endAt": "2026-09-26T23:00:00.000Z",
       "allDay": false,
       "venueName": "Garrison Grounds",
       "address": "Citadel Hill, Halifax, NS, B3J 3Y3, Canada, Halifax, NS, CA",
       "city": "Halifax",
       "categories": [
         "Music",
-        "Festivals"
+        "Festivals",
+        "Arts"
       ],
       "price": null,
       "ticketUrl": "https://novascotia.com/explore-nova-scotia/events/?region=29",
@@ -1907,7 +1868,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "tourism-ns-events",
       "sourceName": "Tourism Nova Scotia Events",
       "sourceKind": "official_tourism_calendar",
-      "observedAt": "2026-09-04T13:14:59.463Z",
+      "observedAt": "2026-09-11T14:44:23.347Z",
       "reviewState": "source-observed",
       "alternateSources": [
         {
@@ -1918,10 +1879,39 @@ window.HALIFAX_CITY_EVENTS = {
       ]
     },
     {
+      "id": "the-carleton-77dd3e7575ea0742",
+      "title": "Private Event",
+      "startAt": "2026-09-25T21:00:00.000Z",
+      "endAt": "2026-09-26T02:55:00.000Z",
+      "allDay": false,
+      "venueName": "The Carleton",
+      "address": "1685 Argyle Street, Halifax, NS",
+      "city": "Halifax",
+      "categories": [
+        "Music",
+        "Food & Drink",
+        "Arts"
+      ],
+      "price": null,
+      "ticketUrl": "https://www.thecarleton.ca/music/upcoming-performances/",
+      "eventUrl": "https://www.thecarleton.ca/events/private-event-22/",
+      "sourceUrl": "https://www.thecarleton.ca/events/private-event-22/",
+      "sourceId": "the-carleton",
+      "sourceName": "The Carleton",
+      "sourceKind": "official_venue_calendar",
+      "observedAt": "2026-09-11T14:44:31.075Z",
+      "reviewState": "source-observed",
+      "venueId": "the-carleton-halifax",
+      "neighbourhood": "Downtown",
+      "organizerId": "the-carleton",
+      "organizerName": "The Carleton",
+      "restaurantId": "osm-node-771690675-the-carleton"
+    },
+    {
       "id": "https://novascotia.com/event/prismatic-arts-festival/#event",
       "title": "Prismatic Arts Festival",
-      "startAt": "2026-09-26T03:00:00.000Z",
-      "endAt": "2026-10-04T03:00:00.000Z",
+      "startAt": "2026-09-26T00:00:00.000Z",
+      "endAt": "2026-10-04T00:00:00.000Z",
       "allDay": false,
       "venueName": "Various venues in downtown Halifax",
       "address": "Neptune Theatre,1593 Argyle St, Halifax, NS B3J 2B2, Halifax, NS, CA",
@@ -1937,7 +1927,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "tourism-ns-events",
       "sourceName": "Tourism Nova Scotia Events",
       "sourceKind": "official_tourism_calendar",
-      "observedAt": "2026-09-04T13:14:59.189Z",
+      "observedAt": "2026-09-11T14:44:22.918Z",
       "reviewState": "source-observed",
       "alternateSources": [
         {
@@ -1950,14 +1940,14 @@ window.HALIFAX_CITY_EVENTS = {
     {
       "id": "https://novascotia.com/event/the-womens-show-wellness-lifestyle-beauty/#event",
       "title": "The Women’s Show: Wellness, Lifestyle & Beauty",
-      "startAt": "2026-09-26T13:00:00.000Z",
-      "endAt": "2026-09-26T20:00:00.000Z",
+      "startAt": "2026-09-26T10:00:00.000Z",
+      "endAt": "2026-09-26T17:00:00.000Z",
       "allDay": false,
       "venueName": "Cedar Event Centre",
       "address": "111 Clayton Park Dr, Halifax, NS B3M 1M3, Halifax, NS, CA",
       "city": "Halifax",
       "categories": [
-        "Other"
+        "Arts"
       ],
       "price": "11.69",
       "ticketUrl": "https://www.thehalifaxhealthandwellnessshow.ca/event-details/the-fall-womens-show",
@@ -1966,7 +1956,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "tourism-ns-events",
       "sourceName": "Tourism Nova Scotia Events",
       "sourceKind": "official_tourism_calendar",
-      "observedAt": "2026-09-04T13:14:59.018Z",
+      "observedAt": "2026-09-11T14:44:22.886Z",
       "reviewState": "source-observed",
       "alternateSources": [
         {
@@ -1986,6 +1976,7 @@ window.HALIFAX_CITY_EVENTS = {
       "address": "1650 Argyle Street, Halifax, NS",
       "city": "Halifax",
       "categories": [
+        "Other",
         "Festivals"
       ],
       "eventUrl": "https://www.halifaxconventioncentre.com/events/230007/",
@@ -1995,7 +1986,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Convention Centre",
       "sourceKind": "official_venue_calendar",
       "sourceUrl": "https://www.halifaxconventioncentre.com/Events",
-      "observedAt": "2026-09-04T13:15:23.982Z",
+      "observedAt": "2026-09-11T14:44:32.812Z",
       "reviewState": "source_observed",
       "venueId": "halifax-convention-centre",
       "neighbourhood": "Downtown",
@@ -2012,6 +2003,7 @@ window.HALIFAX_CITY_EVENTS = {
       "address": "1650 Argyle Street, Halifax, NS",
       "city": "Halifax",
       "categories": [
+        "Other",
         "Festivals"
       ],
       "eventUrl": "https://www.halifaxconventioncentre.com/events/232515/",
@@ -2021,7 +2013,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Convention Centre",
       "sourceKind": "official_venue_calendar",
       "sourceUrl": "https://www.halifaxconventioncentre.com/Events",
-      "observedAt": "2026-09-04T13:15:23.982Z",
+      "observedAt": "2026-09-11T14:44:32.813Z",
       "reviewState": "source_observed",
       "venueId": "halifax-convention-centre",
       "neighbourhood": "Downtown",
@@ -2047,7 +2039,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "hfx-wanderers-home",
       "sourceName": "HFX Wanderers 2026 Home Schedule",
       "sourceKind": "official_tourism_sports_schedule",
-      "observedAt": "2026-09-04T13:15:03.058Z",
+      "observedAt": "2026-09-11T14:44:26.806Z",
       "reviewState": "source-observed",
       "venueId": "wanderers-grounds-halifax",
       "neighbourhood": "Downtown",
@@ -2064,6 +2056,7 @@ window.HALIFAX_CITY_EVENTS = {
       "address": "1650 Argyle Street, Halifax, NS",
       "city": "Halifax",
       "categories": [
+        "Other",
         "Festivals"
       ],
       "eventUrl": "https://www.halifaxconventioncentre.com/events/232529/",
@@ -2073,7 +2066,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Convention Centre",
       "sourceKind": "official_venue_calendar",
       "sourceUrl": "https://www.halifaxconventioncentre.com/Events",
-      "observedAt": "2026-09-04T13:15:23.982Z",
+      "observedAt": "2026-09-11T14:44:32.813Z",
       "reviewState": "source_observed",
       "venueId": "halifax-convention-centre",
       "neighbourhood": "Downtown",
@@ -2099,7 +2092,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "halifax-tides-home",
       "sourceName": "Halifax Tides 2026 Home Schedule",
       "sourceKind": "official_tourism_sports_schedule",
-      "observedAt": "2026-09-04T13:15:03.088Z",
+      "observedAt": "2026-09-11T14:44:26.837Z",
       "reviewState": "source-observed",
       "venueId": "wanderers-grounds-halifax",
       "neighbourhood": "Downtown",
@@ -2125,7 +2118,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "light-house-arts-centre",
       "sourceName": "Light House Arts Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-09-04T13:15:03.673Z",
+      "observedAt": "2026-09-11T14:44:27.326Z",
       "reviewState": "source-observed",
       "venueId": "light-house-arts-centre-halifax",
       "neighbourhood": "Downtown",
@@ -2152,7 +2145,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "light-house-arts-centre",
       "sourceName": "Light House Arts Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-09-04T13:15:03.845Z",
+      "observedAt": "2026-09-11T14:44:27.332Z",
       "reviewState": "source-observed",
       "venueId": "light-house-arts-centre-halifax",
       "neighbourhood": "Downtown",
@@ -2170,7 +2163,10 @@ window.HALIFAX_CITY_EVENTS = {
       "city": "Halifax",
       "categories": [
         "Food & Drink",
-        "Festivals"
+        "Festivals",
+        "Arts",
+        "Outdoor",
+        "Community"
       ],
       "price": "$95.38 CAD",
       "ticketUrl": "https://www.eventbrite.ca/e/wine-fair-halifax-2026-tickets-1974262691857?aff=erellivmlt",
@@ -2179,7 +2175,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "tourism-ns-events",
       "sourceName": "Tourism Nova Scotia Events",
       "sourceKind": "official_tourism_calendar",
-      "observedAt": "2026-09-04T13:14:59.060Z",
+      "observedAt": "2026-09-11T14:44:22.957Z",
       "reviewState": "source-observed",
       "alternateSources": [
         {
@@ -2210,7 +2206,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "halifax-tides-home",
       "sourceName": "Halifax Tides 2026 Home Schedule",
       "sourceKind": "official_tourism_sports_schedule",
-      "observedAt": "2026-09-04T13:15:03.088Z",
+      "observedAt": "2026-09-11T14:44:26.837Z",
       "reviewState": "source-observed",
       "venueId": "wanderers-grounds-halifax",
       "neighbourhood": "Downtown",
@@ -2227,7 +2223,8 @@ window.HALIFAX_CITY_EVENTS = {
       "address": null,
       "city": "Halifax",
       "categories": [
-        "Music"
+        "Music",
+        "Arts"
       ],
       "eventUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/rebecca-cohn-auditorium/flying-on-your-own-a-tribute-to-rita-macneil-2026/",
       "ticketUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
@@ -2236,7 +2233,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Symphony Nova Scotia",
       "sourceKind": "official_arts_calendar",
       "sourceUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
-      "observedAt": "2026-09-04T13:15:24.137Z",
+      "observedAt": "2026-09-11T14:44:32.939Z",
       "reviewState": "source_observed",
       "organizerId": "symphony-nova-scotia",
       "organizerName": "Symphony Nova Scotia"
@@ -2251,7 +2248,8 @@ window.HALIFAX_CITY_EVENTS = {
       "address": null,
       "city": "Halifax",
       "categories": [
-        "Music"
+        "Music",
+        "Arts"
       ],
       "eventUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/rebecca-cohn-auditorium/flying-on-your-own-a-tribute-to-rita-macneil-2026/",
       "ticketUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
@@ -2260,7 +2258,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Symphony Nova Scotia",
       "sourceKind": "official_arts_calendar",
       "sourceUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
-      "observedAt": "2026-09-04T13:15:24.137Z",
+      "observedAt": "2026-09-11T14:44:32.939Z",
       "reviewState": "source_observed",
       "organizerId": "symphony-nova-scotia",
       "organizerName": "Symphony Nova Scotia"
@@ -2284,7 +2282,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "halifax-mooseheads-home",
       "sourceName": "Halifax Mooseheads Home Schedule",
       "sourceKind": "official_sports_schedule",
-      "observedAt": "2026-09-04T13:15:02.992Z",
+      "observedAt": "2026-09-11T14:44:26.744Z",
       "reviewState": "source-observed",
       "venueId": "scotiabank-centre-halifax",
       "neighbourhood": "Downtown",
@@ -2310,7 +2308,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "scotiabank-centre",
       "sourceName": "Scotiabank Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-09-04T13:15:03.026Z",
+      "observedAt": "2026-09-11T14:44:26.774Z",
       "reviewState": "source-observed",
       "venueId": "scotiabank-centre-halifax",
       "neighbourhood": "Downtown",
@@ -2336,7 +2334,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "halifax-mooseheads-home",
       "sourceName": "Halifax Mooseheads Home Schedule",
       "sourceKind": "official_sports_schedule",
-      "observedAt": "2026-09-04T13:15:02.992Z",
+      "observedAt": "2026-09-11T14:44:26.744Z",
       "reviewState": "source-observed",
       "venueId": "scotiabank-centre-halifax",
       "neighbourhood": "Downtown",
@@ -2362,7 +2360,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "scotiabank-centre",
       "sourceName": "Scotiabank Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-09-04T13:15:03.026Z",
+      "observedAt": "2026-09-11T14:44:26.774Z",
       "reviewState": "source-observed",
       "venueId": "scotiabank-centre-halifax",
       "neighbourhood": "Downtown",
@@ -2388,7 +2386,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "hfx-wanderers-home",
       "sourceName": "HFX Wanderers 2026 Home Schedule",
       "sourceKind": "official_tourism_sports_schedule",
-      "observedAt": "2026-09-04T13:15:03.058Z",
+      "observedAt": "2026-09-11T14:44:26.806Z",
       "reviewState": "source-observed",
       "venueId": "wanderers-grounds-halifax",
       "neighbourhood": "Downtown",
@@ -2414,7 +2412,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "scotiabank-centre",
       "sourceName": "Scotiabank Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-09-04T13:15:03.026Z",
+      "observedAt": "2026-09-11T14:44:26.774Z",
       "reviewState": "source-observed",
       "venueId": "scotiabank-centre-halifax",
       "neighbourhood": "Downtown",
@@ -2424,8 +2422,8 @@ window.HALIFAX_CITY_EVENTS = {
     {
       "id": "https://novascotia.com/event/nocturne-art-at-night/#event",
       "title": "Nocturne: Art at Night",
-      "startAt": "2026-10-15T03:00:00.000Z",
-      "endAt": "2026-10-15T03:00:00.000Z",
+      "startAt": "2026-10-15T00:00:00.000Z",
+      "endAt": "2026-10-15T00:00:00.000Z",
       "allDay": false,
       "venueName": null,
       "address": "Halifax, NS, CA",
@@ -2440,7 +2438,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "tourism-ns-events",
       "sourceName": "Tourism Nova Scotia Events",
       "sourceKind": "official_tourism_calendar",
-      "observedAt": "2026-09-04T13:14:59.480Z",
+      "observedAt": "2026-09-11T14:44:23.086Z",
       "reviewState": "source-observed",
       "alternateSources": [
         {
@@ -2460,7 +2458,8 @@ window.HALIFAX_CITY_EVENTS = {
       "address": null,
       "city": "Halifax",
       "categories": [
-        "Music"
+        "Music",
+        "Arts"
       ],
       "eventUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/rebecca-cohn-auditorium/shadows-light-barber-brahms/",
       "ticketUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
@@ -2469,10 +2468,40 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Symphony Nova Scotia",
       "sourceKind": "official_arts_calendar",
       "sourceUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
-      "observedAt": "2026-09-04T13:15:24.137Z",
+      "observedAt": "2026-09-11T14:44:32.940Z",
       "reviewState": "source_observed",
       "organizerId": "symphony-nova-scotia",
       "organizerName": "Symphony Nova Scotia"
+    },
+    {
+      "id": "https://novascotia.com/event/halifax-paranormal-symposium/#event",
+      "title": "Halifax Paranormal Symposium",
+      "startAt": "2026-10-16T19:00:00.000Z",
+      "endAt": "2026-10-16T19:00:00.000Z",
+      "allDay": false,
+      "venueName": "Halifax Tower Hotel & Conference Centre",
+      "address": "15 Lakelands Blvd, Halifax, NS, Canada, Halifax, NS, CA",
+      "city": "Halifax",
+      "categories": [
+        "Arts",
+        "Community"
+      ],
+      "price": null,
+      "ticketUrl": "https://www.eventbrite.ca/e/2026-halifax-paranormal-symposium-tickets-1984184904462?aff=oddtdtcreator",
+      "eventUrl": "https://novascotia.com/event/halifax-paranormal-symposium/",
+      "sourceUrl": "https://novascotia.com/event/halifax-paranormal-symposium/",
+      "sourceId": "tourism-ns-events",
+      "sourceName": "Tourism Nova Scotia Events",
+      "sourceKind": "official_tourism_calendar",
+      "observedAt": "2026-09-11T14:44:23.994Z",
+      "reviewState": "source-observed",
+      "alternateSources": [
+        {
+          "sourceId": "tourism-ns-events",
+          "sourceName": "Tourism Nova Scotia Events",
+          "sourceUrl": "https://novascotia.com/event/halifax-paranormal-symposium/"
+        }
+      ]
     },
     {
       "id": "halifax-mooseheads-home-fd19871c9a8e2c98",
@@ -2493,7 +2522,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "halifax-mooseheads-home",
       "sourceName": "Halifax Mooseheads Home Schedule",
       "sourceKind": "official_sports_schedule",
-      "observedAt": "2026-09-04T13:15:02.992Z",
+      "observedAt": "2026-09-11T14:44:26.744Z",
       "reviewState": "source-observed",
       "venueId": "scotiabank-centre-halifax",
       "neighbourhood": "Downtown",
@@ -2519,7 +2548,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "scotiabank-centre",
       "sourceName": "Scotiabank Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-09-04T13:15:03.026Z",
+      "observedAt": "2026-09-11T14:44:26.774Z",
       "reviewState": "source-observed",
       "venueId": "scotiabank-centre-halifax",
       "neighbourhood": "Downtown",
@@ -2545,7 +2574,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "light-house-arts-centre",
       "sourceName": "Light House Arts Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-09-04T13:15:03.775Z",
+      "observedAt": "2026-09-11T14:44:27.592Z",
       "reviewState": "source-observed",
       "venueId": "light-house-arts-centre-halifax",
       "neighbourhood": "Downtown",
@@ -2571,7 +2600,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "halifax-tides-home",
       "sourceName": "Halifax Tides 2026 Home Schedule",
       "sourceKind": "official_tourism_sports_schedule",
-      "observedAt": "2026-09-04T13:15:03.088Z",
+      "observedAt": "2026-09-11T14:44:26.837Z",
       "reviewState": "source-observed",
       "venueId": "wanderers-grounds-halifax",
       "neighbourhood": "Downtown",
@@ -2597,7 +2626,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "light-house-arts-centre",
       "sourceName": "Light House Arts Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-09-04T13:15:03.920Z",
+      "observedAt": "2026-09-11T14:44:27.620Z",
       "reviewState": "source-observed",
       "venueId": "light-house-arts-centre-halifax",
       "neighbourhood": "Downtown",
@@ -2614,7 +2643,8 @@ window.HALIFAX_CITY_EVENTS = {
       "address": null,
       "city": "Halifax",
       "categories": [
-        "Music"
+        "Music",
+        "Arts"
       ],
       "eventUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/halifax-united-church/james-ehnes-50th-birthday-recital/",
       "ticketUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
@@ -2623,7 +2653,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Symphony Nova Scotia",
       "sourceKind": "official_arts_calendar",
       "sourceUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
-      "observedAt": "2026-09-04T13:15:24.137Z",
+      "observedAt": "2026-09-11T14:44:32.940Z",
       "reviewState": "source_observed",
       "organizerId": "symphony-nova-scotia",
       "organizerName": "Symphony Nova Scotia"
@@ -2647,7 +2677,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "halifax-mooseheads-home",
       "sourceName": "Halifax Mooseheads Home Schedule",
       "sourceKind": "official_sports_schedule",
-      "observedAt": "2026-09-04T13:15:02.992Z",
+      "observedAt": "2026-09-11T14:44:26.744Z",
       "reviewState": "source-observed",
       "venueId": "scotiabank-centre-halifax",
       "neighbourhood": "Downtown",
@@ -2673,7 +2703,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "scotiabank-centre",
       "sourceName": "Scotiabank Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-09-04T13:15:03.026Z",
+      "observedAt": "2026-09-11T14:44:26.774Z",
       "reviewState": "source-observed",
       "venueId": "scotiabank-centre-halifax",
       "neighbourhood": "Downtown",
@@ -2699,7 +2729,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "scotiabank-centre",
       "sourceName": "Scotiabank Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-09-04T13:15:03.026Z",
+      "observedAt": "2026-09-11T14:44:26.774Z",
       "reviewState": "source-observed",
       "venueId": "scotiabank-centre-halifax",
       "neighbourhood": "Downtown",
@@ -2709,14 +2739,15 @@ window.HALIFAX_CITY_EVENTS = {
     {
       "id": "https://novascotia.com/event/francofest/#event",
       "title": "Francofest",
-      "startAt": "2026-10-22T03:00:00.000Z",
-      "endAt": "2026-10-22T03:00:00.000Z",
+      "startAt": "2026-10-22T00:00:00.000Z",
+      "endAt": "2026-10-22T00:00:00.000Z",
       "allDay": false,
       "venueName": null,
       "address": "Halifax, NS, CA",
       "city": "Halifax",
       "categories": [
-        "Festivals"
+        "Festivals",
+        "Arts"
       ],
       "price": null,
       "ticketUrl": "https://novascotia.com/explore-nova-scotia/events/?region=29",
@@ -2725,7 +2756,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "tourism-ns-events",
       "sourceName": "Tourism Nova Scotia Events",
       "sourceKind": "official_tourism_calendar",
-      "observedAt": "2026-09-04T13:15:01.114Z",
+      "observedAt": "2026-09-11T14:44:24.934Z",
       "reviewState": "source-observed"
     },
     {
@@ -2747,7 +2778,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "halifax-mooseheads-home",
       "sourceName": "Halifax Mooseheads Home Schedule",
       "sourceKind": "official_sports_schedule",
-      "observedAt": "2026-09-04T13:15:02.992Z",
+      "observedAt": "2026-09-11T14:44:26.744Z",
       "reviewState": "source-observed",
       "venueId": "scotiabank-centre-halifax",
       "neighbourhood": "Downtown",
@@ -2773,7 +2804,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "scotiabank-centre",
       "sourceName": "Scotiabank Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-09-04T13:15:03.026Z",
+      "observedAt": "2026-09-11T14:44:26.774Z",
       "reviewState": "source-observed",
       "venueId": "scotiabank-centre-halifax",
       "neighbourhood": "Downtown",
@@ -2790,7 +2821,8 @@ window.HALIFAX_CITY_EVENTS = {
       "address": null,
       "city": "Halifax",
       "categories": [
-        "Music"
+        "Music",
+        "Arts"
       ],
       "eventUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/rebecca-cohn-auditorium/alex-cuba-symphony-nova-scotia/",
       "ticketUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
@@ -2799,7 +2831,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Symphony Nova Scotia",
       "sourceKind": "official_arts_calendar",
       "sourceUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
-      "observedAt": "2026-09-04T13:15:24.137Z",
+      "observedAt": "2026-09-11T14:44:32.940Z",
       "reviewState": "source_observed",
       "organizerId": "symphony-nova-scotia",
       "organizerName": "Symphony Nova Scotia"
@@ -2823,7 +2855,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "halifax-mooseheads-home",
       "sourceName": "Halifax Mooseheads Home Schedule",
       "sourceKind": "official_sports_schedule",
-      "observedAt": "2026-09-04T13:15:02.992Z",
+      "observedAt": "2026-09-11T14:44:26.744Z",
       "reviewState": "source-observed",
       "venueId": "scotiabank-centre-halifax",
       "neighbourhood": "Downtown",
@@ -2849,7 +2881,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "scotiabank-centre",
       "sourceName": "Scotiabank Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-09-04T13:15:03.026Z",
+      "observedAt": "2026-09-11T14:44:26.774Z",
       "reviewState": "source-observed",
       "venueId": "scotiabank-centre-halifax",
       "neighbourhood": "Downtown",
@@ -2875,7 +2907,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "hfx-wanderers-home",
       "sourceName": "HFX Wanderers 2026 Home Schedule",
       "sourceKind": "official_tourism_sports_schedule",
-      "observedAt": "2026-09-04T13:15:03.058Z",
+      "observedAt": "2026-09-11T14:44:26.806Z",
       "reviewState": "source-observed",
       "venueId": "wanderers-grounds-halifax",
       "neighbourhood": "Downtown",
@@ -2892,7 +2924,8 @@ window.HALIFAX_CITY_EVENTS = {
       "address": null,
       "city": "Halifax",
       "categories": [
-        "Music"
+        "Music",
+        "Arts"
       ],
       "eventUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/rebecca-cohn-auditorium/beethovens-pastoral-symphony-2026/",
       "ticketUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
@@ -2901,7 +2934,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Symphony Nova Scotia",
       "sourceKind": "official_arts_calendar",
       "sourceUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
-      "observedAt": "2026-09-04T13:15:24.138Z",
+      "observedAt": "2026-09-11T14:44:32.940Z",
       "reviewState": "source_observed",
       "organizerId": "symphony-nova-scotia",
       "organizerName": "Symphony Nova Scotia"
@@ -2916,6 +2949,7 @@ window.HALIFAX_CITY_EVENTS = {
       "address": "1800 Argyle Street Suite 301\nHalifax, NS, B3J 3N8\nCanada",
       "city": "Halifax",
       "categories": [
+        "Music",
         "Arts"
       ],
       "price": null,
@@ -2925,7 +2959,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "light-house-arts-centre",
       "sourceName": "Light House Arts Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-09-04T13:15:03.922Z",
+      "observedAt": "2026-09-11T14:44:27.611Z",
       "reviewState": "source-observed",
       "venueId": "light-house-arts-centre-halifax",
       "neighbourhood": "Downtown",
@@ -2935,14 +2969,15 @@ window.HALIFAX_CITY_EVENTS = {
     {
       "id": "https://novascotia.com/event/hal-con/#event",
       "title": "Hal-Con 2026",
-      "startAt": "2026-11-06T04:00:00.000Z",
-      "endAt": "2026-11-08T04:00:00.000Z",
+      "startAt": "2026-11-06T00:00:00.000Z",
+      "endAt": "2026-11-08T00:00:00.000Z",
       "allDay": false,
       "venueName": "Halifax Convention Centre",
       "address": "1650 Argyle Street, Halifax, NS, B3J 0E6, Canada, Halifax, NS, CA",
       "city": "Halifax",
       "categories": [
-        "Festivals"
+        "Festivals",
+        "Arts"
       ],
       "price": null,
       "ticketUrl": "https://hal-con.com/tickets",
@@ -2951,7 +2986,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "tourism-ns-events",
       "sourceName": "Tourism Nova Scotia Events",
       "sourceKind": "official_tourism_calendar",
-      "observedAt": "2026-09-04T13:15:01.244Z",
+      "observedAt": "2026-09-11T14:44:24.924Z",
       "reviewState": "source-observed",
       "venueId": "halifax-convention-centre",
       "neighbourhood": "Downtown"
@@ -2975,7 +3010,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "halifax-mooseheads-home",
       "sourceName": "Halifax Mooseheads Home Schedule",
       "sourceKind": "official_sports_schedule",
-      "observedAt": "2026-09-04T13:15:02.992Z",
+      "observedAt": "2026-09-11T14:44:26.744Z",
       "reviewState": "source-observed",
       "venueId": "scotiabank-centre-halifax",
       "neighbourhood": "Downtown",
@@ -3001,7 +3036,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "scotiabank-centre",
       "sourceName": "Scotiabank Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-09-04T13:15:03.026Z",
+      "observedAt": "2026-09-11T14:44:26.774Z",
       "reviewState": "source-observed",
       "venueId": "scotiabank-centre-halifax",
       "neighbourhood": "Downtown",
@@ -3027,7 +3062,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "light-house-arts-centre",
       "sourceName": "Light House Arts Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-09-04T13:15:03.890Z",
+      "observedAt": "2026-09-11T14:44:27.618Z",
       "reviewState": "source-observed",
       "venueId": "light-house-arts-centre-halifax",
       "neighbourhood": "Downtown",
@@ -3053,7 +3088,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "halifax-mooseheads-home",
       "sourceName": "Halifax Mooseheads Home Schedule",
       "sourceKind": "official_sports_schedule",
-      "observedAt": "2026-09-04T13:15:02.992Z",
+      "observedAt": "2026-09-11T14:44:26.744Z",
       "reviewState": "source-observed",
       "venueId": "scotiabank-centre-halifax",
       "neighbourhood": "Downtown",
@@ -3079,7 +3114,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "scotiabank-centre",
       "sourceName": "Scotiabank Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-09-04T13:15:03.026Z",
+      "observedAt": "2026-09-11T14:44:26.774Z",
       "reviewState": "source-observed",
       "venueId": "scotiabank-centre-halifax",
       "neighbourhood": "Downtown",
@@ -3096,7 +3131,8 @@ window.HALIFAX_CITY_EVENTS = {
       "address": null,
       "city": "Halifax",
       "categories": [
-        "Music"
+        "Music",
+        "Arts"
       ],
       "eventUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/halifax-united-church/bach-bach-bach-bach/",
       "ticketUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
@@ -3105,7 +3141,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Symphony Nova Scotia",
       "sourceKind": "official_arts_calendar",
       "sourceUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
-      "observedAt": "2026-09-04T13:15:24.138Z",
+      "observedAt": "2026-09-11T14:44:32.941Z",
       "reviewState": "source_observed",
       "organizerId": "symphony-nova-scotia",
       "organizerName": "Symphony Nova Scotia"
@@ -3129,7 +3165,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "neptune-theatre",
       "sourceName": "Neptune Theatre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-09-04T13:15:06.392Z",
+      "observedAt": "2026-09-11T14:44:31.425Z",
       "reviewState": "source-observed",
       "venueId": "neptune-theatre-halifax",
       "neighbourhood": "Downtown",
@@ -3139,14 +3175,14 @@ window.HALIFAX_CITY_EVENTS = {
     {
       "id": "https://novascotia.com/event/craft-nova-scotia-designer-craft-show/#event",
       "title": "Craft Nova Scotia Designer Craft Show",
-      "startAt": "2026-11-13T16:00:00.000Z",
-      "endAt": "2026-11-15T20:00:00.000Z",
+      "startAt": "2026-11-13T12:00:00.000Z",
+      "endAt": "2026-11-15T16:00:00.000Z",
       "allDay": false,
       "venueName": "Pier 22 Pavilion",
       "address": "1031 Marginal Rd, Halifax, NS, B3H 4P7, Canada, Halifax, NS, CA",
       "city": "Halifax",
       "categories": [
-        "Other"
+        "Arts"
       ],
       "price": "TBD",
       "ticketUrl": "https://www.designercraftshop.ca/",
@@ -3155,7 +3191,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "tourism-ns-events",
       "sourceName": "Tourism Nova Scotia Events",
       "sourceKind": "official_tourism_calendar",
-      "observedAt": "2026-09-04T13:15:00.224Z",
+      "observedAt": "2026-09-11T14:44:24.142Z",
       "reviewState": "source-observed",
       "alternateSources": [
         {
@@ -3175,7 +3211,8 @@ window.HALIFAX_CITY_EVENTS = {
       "address": null,
       "city": "Halifax",
       "categories": [
-        "Music"
+        "Music",
+        "Arts"
       ],
       "eventUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/rebecca-cohn-auditorium/symphonicon-music-of-anime/",
       "ticketUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
@@ -3184,7 +3221,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Symphony Nova Scotia",
       "sourceKind": "official_arts_calendar",
       "sourceUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
-      "observedAt": "2026-09-04T13:15:24.138Z",
+      "observedAt": "2026-09-11T14:44:32.941Z",
       "reviewState": "source_observed",
       "organizerId": "symphony-nova-scotia",
       "organizerName": "Symphony Nova Scotia"
@@ -3208,7 +3245,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "halifax-mooseheads-home",
       "sourceName": "Halifax Mooseheads Home Schedule",
       "sourceKind": "official_sports_schedule",
-      "observedAt": "2026-09-04T13:15:02.993Z",
+      "observedAt": "2026-09-11T14:44:26.744Z",
       "reviewState": "source-observed",
       "venueId": "scotiabank-centre-halifax",
       "neighbourhood": "Downtown",
@@ -3235,7 +3272,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "scotiabank-centre",
       "sourceName": "Scotiabank Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-09-04T13:15:03.026Z",
+      "observedAt": "2026-09-11T14:44:26.774Z",
       "reviewState": "source-observed",
       "venueId": "scotiabank-centre-halifax",
       "neighbourhood": "Downtown",
@@ -3261,7 +3298,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "halifax-mooseheads-home",
       "sourceName": "Halifax Mooseheads Home Schedule",
       "sourceKind": "official_sports_schedule",
-      "observedAt": "2026-09-04T13:15:02.993Z",
+      "observedAt": "2026-09-11T14:44:26.744Z",
       "reviewState": "source-observed",
       "venueId": "scotiabank-centre-halifax",
       "neighbourhood": "Downtown",
@@ -3287,7 +3324,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "scotiabank-centre",
       "sourceName": "Scotiabank Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-09-04T13:15:03.026Z",
+      "observedAt": "2026-09-11T14:44:26.774Z",
       "reviewState": "source-observed",
       "venueId": "scotiabank-centre-halifax",
       "neighbourhood": "Downtown",
@@ -3304,7 +3341,8 @@ window.HALIFAX_CITY_EVENTS = {
       "address": null,
       "city": "Halifax",
       "categories": [
-        "Music"
+        "Music",
+        "Arts"
       ],
       "eventUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/rebecca-cohn-auditorium/peace-remembrance-ravel-vaughan-williams/",
       "ticketUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
@@ -3313,7 +3351,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Symphony Nova Scotia",
       "sourceKind": "official_arts_calendar",
       "sourceUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
-      "observedAt": "2026-09-04T13:15:24.138Z",
+      "observedAt": "2026-09-11T14:44:32.941Z",
       "reviewState": "source_observed",
       "organizerId": "symphony-nova-scotia",
       "organizerName": "Symphony Nova Scotia"
@@ -3337,7 +3375,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "light-house-arts-centre",
       "sourceName": "Light House Arts Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-09-04T13:15:03.923Z",
+      "observedAt": "2026-09-11T14:44:27.616Z",
       "reviewState": "source-observed",
       "venueId": "light-house-arts-centre-halifax",
       "neighbourhood": "Downtown",
@@ -3354,7 +3392,8 @@ window.HALIFAX_CITY_EVENTS = {
       "address": null,
       "city": "Halifax",
       "categories": [
-        "Music"
+        "Music",
+        "Arts"
       ],
       "eventUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/halifax-united-church/nsyo-music-in-motion/",
       "ticketUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
@@ -3363,7 +3402,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Symphony Nova Scotia",
       "sourceKind": "official_arts_calendar",
       "sourceUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
-      "observedAt": "2026-09-04T13:15:24.138Z",
+      "observedAt": "2026-09-11T14:44:32.941Z",
       "reviewState": "source_observed",
       "organizerId": "symphony-nova-scotia",
       "organizerName": "Symphony Nova Scotia"
@@ -3387,12 +3426,38 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "scotiabank-centre",
       "sourceName": "Scotiabank Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-09-04T13:15:03.026Z",
+      "observedAt": "2026-09-11T14:44:26.775Z",
       "reviewState": "source-observed",
       "venueId": "scotiabank-centre-halifax",
       "neighbourhood": "Downtown",
       "organizerId": "scotiabank-centre",
       "organizerName": "Scotiabank Centre"
+    },
+    {
+      "id": "light-house-arts-centre-422acafc8d4d509c",
+      "title": "Daniel James McFadyen — Light House Arts Centre",
+      "startAt": "2026-11-22T01:00:00.000Z",
+      "endAt": "2026-11-22T04:00:00.000Z",
+      "allDay": false,
+      "venueName": "Light House Arts Centre",
+      "address": "1800 Argyle Street Suite 301\nHalifax, NS, B3J 3N8\nCanada",
+      "city": "Halifax",
+      "categories": [
+        "Arts"
+      ],
+      "price": null,
+      "ticketUrl": "https://www.lighthouseartscentre.ca/events/",
+      "eventUrl": "https://www.lighthouseartscentre.ca/events/daniel-james-mcfadyen-nov-21-2026",
+      "sourceUrl": "https://www.lighthouseartscentre.ca/events/daniel-james-mcfadyen-nov-21-2026",
+      "sourceId": "light-house-arts-centre",
+      "sourceName": "Light House Arts Centre",
+      "sourceKind": "official_venue_calendar",
+      "observedAt": "2026-09-11T14:44:27.621Z",
+      "reviewState": "source-observed",
+      "venueId": "light-house-arts-centre-halifax",
+      "neighbourhood": "Downtown",
+      "organizerId": "light-house-arts-centre",
+      "organizerName": "Light House Arts Centre"
     },
     {
       "id": "symphony-nova-scotia-a4d5d17eef5c8570",
@@ -3404,7 +3469,8 @@ window.HALIFAX_CITY_EVENTS = {
       "address": null,
       "city": "Halifax",
       "categories": [
-        "Music"
+        "Music",
+        "Arts"
       ],
       "eventUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/rebecca-cohn-auditorium/tafelmusik-baroque-orchestra-staircases/",
       "ticketUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
@@ -3413,7 +3479,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Symphony Nova Scotia",
       "sourceKind": "official_arts_calendar",
       "sourceUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
-      "observedAt": "2026-09-04T13:15:24.138Z",
+      "observedAt": "2026-09-11T14:44:32.942Z",
       "reviewState": "source_observed",
       "organizerId": "symphony-nova-scotia",
       "organizerName": "Symphony Nova Scotia"
@@ -3438,7 +3504,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "light-house-arts-centre",
       "sourceName": "Light House Arts Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-09-04T13:15:03.921Z",
+      "observedAt": "2026-09-11T14:44:27.799Z",
       "reviewState": "source-observed",
       "venueId": "light-house-arts-centre-halifax",
       "neighbourhood": "Downtown",
@@ -3464,7 +3530,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "halifax-mooseheads-home",
       "sourceName": "Halifax Mooseheads Home Schedule",
       "sourceKind": "official_sports_schedule",
-      "observedAt": "2026-09-04T13:15:02.993Z",
+      "observedAt": "2026-09-11T14:44:26.744Z",
       "reviewState": "source-observed",
       "venueId": "scotiabank-centre-halifax",
       "neighbourhood": "Downtown",
@@ -3490,7 +3556,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "scotiabank-centre",
       "sourceName": "Scotiabank Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-09-04T13:15:03.026Z",
+      "observedAt": "2026-09-11T14:44:26.775Z",
       "reviewState": "source-observed",
       "venueId": "scotiabank-centre-halifax",
       "neighbourhood": "Downtown",
@@ -3507,7 +3573,8 @@ window.HALIFAX_CITY_EVENTS = {
       "address": null,
       "city": "Halifax",
       "categories": [
-        "Music"
+        "Music",
+        "Arts"
       ],
       "eventUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/rebecca-cohn-auditorium/merry-murdoch-mysteries-in-concert/",
       "ticketUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
@@ -3516,7 +3583,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Symphony Nova Scotia",
       "sourceKind": "official_arts_calendar",
       "sourceUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
-      "observedAt": "2026-09-04T13:15:24.138Z",
+      "observedAt": "2026-09-11T14:44:32.942Z",
       "reviewState": "source_observed",
       "organizerId": "symphony-nova-scotia",
       "organizerName": "Symphony Nova Scotia"
@@ -3524,15 +3591,16 @@ window.HALIFAX_CITY_EVENTS = {
     {
       "id": "https://novascotia.com/event/halifax-international-wine-festival/#event",
       "title": "Halifax International Wine Festival",
-      "startAt": "2026-11-28T18:00:00.000Z",
-      "endAt": "2026-11-29T02:00:00.000Z",
+      "startAt": "2026-11-28T14:00:00.000Z",
+      "endAt": "2026-11-28T22:00:00.000Z",
       "allDay": false,
       "venueName": "Halifax Convention Centre",
       "address": "1650 Argyle Street, Halifax, NS, B3J 0E6, Canada, Halifax, NS, CA",
       "city": "Halifax",
       "categories": [
         "Food & Drink",
-        "Festivals"
+        "Festivals",
+        "Arts"
       ],
       "price": null,
       "ticketUrl": "https://www.hfxwinefest.ca/event-details-registration/halifax-international-wine-festival-1",
@@ -3541,7 +3609,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "tourism-ns-events",
       "sourceName": "Tourism Nova Scotia Events",
       "sourceKind": "official_tourism_calendar",
-      "observedAt": "2026-09-04T13:15:00.336Z",
+      "observedAt": "2026-09-11T14:44:24.136Z",
       "reviewState": "source-observed",
       "alternateSources": [
         {
@@ -3572,7 +3640,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "scotiabank-centre",
       "sourceName": "Scotiabank Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-09-04T13:15:03.026Z",
+      "observedAt": "2026-09-11T14:44:26.775Z",
       "reviewState": "source-observed",
       "venueId": "scotiabank-centre-halifax",
       "neighbourhood": "Downtown",
@@ -3598,7 +3666,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "halifax-mooseheads-home",
       "sourceName": "Halifax Mooseheads Home Schedule",
       "sourceKind": "official_sports_schedule",
-      "observedAt": "2026-09-04T13:15:02.993Z",
+      "observedAt": "2026-09-11T14:44:26.745Z",
       "reviewState": "source-observed",
       "venueId": "scotiabank-centre-halifax",
       "neighbourhood": "Downtown",
@@ -3624,7 +3692,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "scotiabank-centre",
       "sourceName": "Scotiabank Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-09-04T13:15:03.027Z",
+      "observedAt": "2026-09-11T14:44:26.775Z",
       "reviewState": "source-observed",
       "venueId": "scotiabank-centre-halifax",
       "neighbourhood": "Downtown",
@@ -3641,7 +3709,8 @@ window.HALIFAX_CITY_EVENTS = {
       "address": null,
       "city": "Halifax",
       "categories": [
-        "Music"
+        "Music",
+        "Arts"
       ],
       "eventUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/rebecca-cohn-auditorium/the-nutcracker-2026/",
       "ticketUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
@@ -3650,7 +3719,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Symphony Nova Scotia",
       "sourceKind": "official_arts_calendar",
       "sourceUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
-      "observedAt": "2026-09-04T13:15:24.138Z",
+      "observedAt": "2026-09-11T14:44:32.942Z",
       "reviewState": "source_observed",
       "organizerId": "symphony-nova-scotia",
       "organizerName": "Symphony Nova Scotia"
@@ -3665,7 +3734,8 @@ window.HALIFAX_CITY_EVENTS = {
       "address": null,
       "city": "Halifax",
       "categories": [
-        "Music"
+        "Music",
+        "Arts"
       ],
       "eventUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/rebecca-cohn-auditorium/the-nutcracker-2026/",
       "ticketUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
@@ -3674,7 +3744,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Symphony Nova Scotia",
       "sourceKind": "official_arts_calendar",
       "sourceUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
-      "observedAt": "2026-09-04T13:15:24.138Z",
+      "observedAt": "2026-09-11T14:44:32.942Z",
       "reviewState": "source_observed",
       "organizerId": "symphony-nova-scotia",
       "organizerName": "Symphony Nova Scotia"
@@ -3699,7 +3769,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "scotiabank-centre",
       "sourceName": "Scotiabank Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-09-04T13:15:03.027Z",
+      "observedAt": "2026-09-11T14:44:26.775Z",
       "reviewState": "source-observed",
       "venueId": "scotiabank-centre-halifax",
       "neighbourhood": "Downtown",
@@ -3725,7 +3795,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "halifax-mooseheads-home",
       "sourceName": "Halifax Mooseheads Home Schedule",
       "sourceKind": "official_sports_schedule",
-      "observedAt": "2026-09-04T13:15:02.993Z",
+      "observedAt": "2026-09-11T14:44:26.745Z",
       "reviewState": "source-observed",
       "venueId": "scotiabank-centre-halifax",
       "neighbourhood": "Downtown",
@@ -3751,7 +3821,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "scotiabank-centre",
       "sourceName": "Scotiabank Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-09-04T13:15:03.027Z",
+      "observedAt": "2026-09-11T14:44:26.775Z",
       "reviewState": "source-observed",
       "venueId": "scotiabank-centre-halifax",
       "neighbourhood": "Downtown",
@@ -3777,7 +3847,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "light-house-arts-centre",
       "sourceName": "Light House Arts Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-09-04T13:15:04.041Z",
+      "observedAt": "2026-09-11T14:44:27.801Z",
       "reviewState": "source-observed",
       "venueId": "light-house-arts-centre-halifax",
       "neighbourhood": "Downtown",
@@ -3803,7 +3873,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "scotiabank-centre",
       "sourceName": "Scotiabank Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-09-04T13:15:03.027Z",
+      "observedAt": "2026-09-11T14:44:26.775Z",
       "reviewState": "source-observed",
       "venueId": "scotiabank-centre-halifax",
       "neighbourhood": "Downtown",
@@ -3829,7 +3899,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "halifax-mooseheads-home",
       "sourceName": "Halifax Mooseheads Home Schedule",
       "sourceKind": "official_sports_schedule",
-      "observedAt": "2026-09-04T13:15:02.993Z",
+      "observedAt": "2026-09-11T14:44:26.745Z",
       "reviewState": "source-observed",
       "venueId": "scotiabank-centre-halifax",
       "neighbourhood": "Downtown",
@@ -3855,7 +3925,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "scotiabank-centre",
       "sourceName": "Scotiabank Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-09-04T13:15:03.027Z",
+      "observedAt": "2026-09-11T14:44:26.775Z",
       "reviewState": "source-observed",
       "venueId": "scotiabank-centre-halifax",
       "neighbourhood": "Downtown",
@@ -3881,7 +3951,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "halifax-mooseheads-home",
       "sourceName": "Halifax Mooseheads Home Schedule",
       "sourceKind": "official_sports_schedule",
-      "observedAt": "2026-09-04T13:15:02.993Z",
+      "observedAt": "2026-09-11T14:44:26.745Z",
       "reviewState": "source-observed",
       "venueId": "scotiabank-centre-halifax",
       "neighbourhood": "Downtown",
@@ -3907,7 +3977,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "scotiabank-centre",
       "sourceName": "Scotiabank Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-09-04T13:15:03.027Z",
+      "observedAt": "2026-09-11T14:44:26.775Z",
       "reviewState": "source-observed",
       "venueId": "scotiabank-centre-halifax",
       "neighbourhood": "Downtown",
@@ -3933,7 +4003,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "light-house-arts-centre",
       "sourceName": "Light House Arts Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-09-04T13:15:04.039Z",
+      "observedAt": "2026-09-11T14:44:28.020Z",
       "reviewState": "source-observed",
       "venueId": "light-house-arts-centre-halifax",
       "neighbourhood": "Downtown",
@@ -3959,7 +4029,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "halifax-mooseheads-home",
       "sourceName": "Halifax Mooseheads Home Schedule",
       "sourceKind": "official_sports_schedule",
-      "observedAt": "2026-09-04T13:15:02.993Z",
+      "observedAt": "2026-09-11T14:44:26.745Z",
       "reviewState": "source-observed",
       "venueId": "scotiabank-centre-halifax",
       "neighbourhood": "Downtown",
@@ -3985,7 +4055,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "scotiabank-centre",
       "sourceName": "Scotiabank Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-09-04T13:15:03.027Z",
+      "observedAt": "2026-09-11T14:44:26.775Z",
       "reviewState": "source-observed",
       "venueId": "scotiabank-centre-halifax",
       "neighbourhood": "Downtown",
@@ -4002,7 +4072,8 @@ window.HALIFAX_CITY_EVENTS = {
       "address": null,
       "city": "Halifax",
       "categories": [
-        "Music"
+        "Music",
+        "Arts"
       ],
       "eventUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/rebecca-cohn-auditorium/handels-dublin-messiah/",
       "ticketUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
@@ -4011,7 +4082,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Symphony Nova Scotia",
       "sourceKind": "official_arts_calendar",
       "sourceUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
-      "observedAt": "2026-09-04T13:15:24.139Z",
+      "observedAt": "2026-09-11T14:44:32.943Z",
       "reviewState": "source_observed",
       "organizerId": "symphony-nova-scotia",
       "organizerName": "Symphony Nova Scotia"
@@ -4026,7 +4097,8 @@ window.HALIFAX_CITY_EVENTS = {
       "address": null,
       "city": "Halifax",
       "categories": [
-        "Music"
+        "Music",
+        "Arts"
       ],
       "eventUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/rebecca-cohn-auditorium/handels-dublin-messiah/",
       "ticketUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
@@ -4035,7 +4107,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Symphony Nova Scotia",
       "sourceKind": "official_arts_calendar",
       "sourceUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
-      "observedAt": "2026-09-04T13:15:24.139Z",
+      "observedAt": "2026-09-11T14:44:32.943Z",
       "reviewState": "source_observed",
       "organizerId": "symphony-nova-scotia",
       "organizerName": "Symphony Nova Scotia"
@@ -4060,7 +4132,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "light-house-arts-centre",
       "sourceName": "Light House Arts Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-09-04T13:15:04.003Z",
+      "observedAt": "2026-09-11T14:44:27.802Z",
       "reviewState": "source-observed",
       "venueId": "light-house-arts-centre-halifax",
       "neighbourhood": "Downtown",
@@ -4077,7 +4149,9 @@ window.HALIFAX_CITY_EVENTS = {
       "address": "1800 Argyle Street, Halifax, NS",
       "city": "Halifax",
       "categories": [
-        "Community"
+        "Arts",
+        "Community",
+        "Family"
       ],
       "price": null,
       "ticketUrl": "https://www.scotiabank-centre.com/premium-seating/eventcalendar",
@@ -4086,7 +4160,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "scotiabank-centre",
       "sourceName": "Scotiabank Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-09-04T13:15:03.027Z",
+      "observedAt": "2026-09-11T14:44:26.775Z",
       "reviewState": "source-observed",
       "venueId": "scotiabank-centre-halifax",
       "neighbourhood": "Downtown",
@@ -4103,7 +4177,9 @@ window.HALIFAX_CITY_EVENTS = {
       "address": "1800 Argyle Street, Halifax, NS",
       "city": "Halifax",
       "categories": [
-        "Community"
+        "Arts",
+        "Community",
+        "Family"
       ],
       "price": null,
       "ticketUrl": "https://www.scotiabank-centre.com/premium-seating/eventcalendar",
@@ -4112,7 +4188,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "scotiabank-centre",
       "sourceName": "Scotiabank Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-09-04T13:15:03.027Z",
+      "observedAt": "2026-09-11T14:44:26.775Z",
       "reviewState": "source-observed",
       "alternateSources": [
         {
@@ -4136,7 +4212,9 @@ window.HALIFAX_CITY_EVENTS = {
       "address": "1800 Argyle Street, Halifax, NS",
       "city": "Halifax",
       "categories": [
-        "Community"
+        "Arts",
+        "Community",
+        "Family"
       ],
       "price": null,
       "ticketUrl": "https://www.scotiabank-centre.com/premium-seating/eventcalendar",
@@ -4145,7 +4223,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "scotiabank-centre",
       "sourceName": "Scotiabank Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-09-04T13:15:03.027Z",
+      "observedAt": "2026-09-11T14:44:26.775Z",
       "reviewState": "source-observed",
       "alternateSources": [
         {
@@ -4178,7 +4256,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "halifax-mooseheads-home",
       "sourceName": "Halifax Mooseheads Home Schedule",
       "sourceKind": "official_sports_schedule",
-      "observedAt": "2026-09-04T13:15:02.993Z",
+      "observedAt": "2026-09-11T14:44:26.745Z",
       "reviewState": "source-observed",
       "venueId": "scotiabank-centre-halifax",
       "neighbourhood": "Downtown",
@@ -4204,7 +4282,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "scotiabank-centre",
       "sourceName": "Scotiabank Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-09-04T13:15:03.027Z",
+      "observedAt": "2026-09-11T14:44:26.775Z",
       "reviewState": "source-observed",
       "venueId": "scotiabank-centre-halifax",
       "neighbourhood": "Downtown",
@@ -4230,12 +4308,38 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "halifax-mooseheads-home",
       "sourceName": "Halifax Mooseheads Home Schedule",
       "sourceKind": "official_sports_schedule",
-      "observedAt": "2026-09-04T13:15:02.993Z",
+      "observedAt": "2026-09-11T14:44:26.745Z",
       "reviewState": "source-observed",
       "venueId": "scotiabank-centre-halifax",
       "neighbourhood": "Downtown",
       "organizerId": "halifax-mooseheads",
       "organizerName": "Halifax Mooseheads"
+    },
+    {
+      "id": "scotiabank-centre-ea565d75bdb9a37c",
+      "title": "Halifax Mooseheads vs Newfoundland Regiment",
+      "startAt": "2027-01-03T18:00:00.000Z",
+      "endAt": "2027-01-03T18:00:00.000Z",
+      "allDay": false,
+      "venueName": "Scotiabank Centre",
+      "address": "1800 Argyle Street, Halifax, NS",
+      "city": "Halifax",
+      "categories": [
+        "Sports"
+      ],
+      "price": null,
+      "ticketUrl": "https://www.scotiabank-centre.com/premium-seating/eventcalendar",
+      "eventUrl": "https://www.scotiabank-centre.com/premium-seating/eventcalendar",
+      "sourceUrl": "https://www.scotiabank-centre.com/premium-seating/eventcalendar",
+      "sourceId": "scotiabank-centre",
+      "sourceName": "Scotiabank Centre",
+      "sourceKind": "official_venue_calendar",
+      "observedAt": "2026-09-11T14:44:26.775Z",
+      "reviewState": "source-observed",
+      "venueId": "scotiabank-centre-halifax",
+      "neighbourhood": "Downtown",
+      "organizerId": "scotiabank-centre",
+      "organizerName": "Scotiabank Centre"
     },
     {
       "id": "halifax-mooseheads-home-c2bc145d9b94d479",
@@ -4256,7 +4360,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "halifax-mooseheads-home",
       "sourceName": "Halifax Mooseheads Home Schedule",
       "sourceKind": "official_sports_schedule",
-      "observedAt": "2026-09-04T13:15:02.993Z",
+      "observedAt": "2026-09-11T14:44:26.745Z",
       "reviewState": "source-observed",
       "venueId": "scotiabank-centre-halifax",
       "neighbourhood": "Downtown",
@@ -4283,7 +4387,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "light-house-arts-centre",
       "sourceName": "Light House Arts Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-09-04T13:15:04.036Z",
+      "observedAt": "2026-09-11T14:44:27.810Z",
       "reviewState": "source-observed",
       "venueId": "light-house-arts-centre-halifax",
       "neighbourhood": "Downtown",
@@ -4309,7 +4413,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "halifax-mooseheads-home",
       "sourceName": "Halifax Mooseheads Home Schedule",
       "sourceKind": "official_sports_schedule",
-      "observedAt": "2026-09-04T13:15:02.993Z",
+      "observedAt": "2026-09-11T14:44:26.745Z",
       "reviewState": "source-observed",
       "venueId": "scotiabank-centre-halifax",
       "neighbourhood": "Downtown",
@@ -4326,7 +4430,8 @@ window.HALIFAX_CITY_EVENTS = {
       "address": null,
       "city": "Halifax",
       "categories": [
-        "Music"
+        "Music",
+        "Arts"
       ],
       "eventUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/halifax-united-church/the-extraordinary-women-of-venice/",
       "ticketUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
@@ -4335,7 +4440,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Symphony Nova Scotia",
       "sourceKind": "official_arts_calendar",
       "sourceUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
-      "observedAt": "2026-09-04T13:15:24.139Z",
+      "observedAt": "2026-09-11T14:44:32.943Z",
       "reviewState": "source_observed",
       "organizerId": "symphony-nova-scotia",
       "organizerName": "Symphony Nova Scotia"
@@ -4359,7 +4464,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "halifax-mooseheads-home",
       "sourceName": "Halifax Mooseheads Home Schedule",
       "sourceKind": "official_sports_schedule",
-      "observedAt": "2026-09-04T13:15:02.993Z",
+      "observedAt": "2026-09-11T14:44:26.745Z",
       "reviewState": "source-observed",
       "venueId": "scotiabank-centre-halifax",
       "neighbourhood": "Downtown",
@@ -4376,7 +4481,8 @@ window.HALIFAX_CITY_EVENTS = {
       "address": null,
       "city": "Halifax",
       "categories": [
-        "Music"
+        "Music",
+        "Arts"
       ],
       "eventUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/rebecca-cohn-auditorium/rajaton-sings-abba/",
       "ticketUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
@@ -4385,7 +4491,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Symphony Nova Scotia",
       "sourceKind": "official_arts_calendar",
       "sourceUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
-      "observedAt": "2026-09-04T13:15:24.139Z",
+      "observedAt": "2026-09-11T14:44:32.943Z",
       "reviewState": "source_observed",
       "organizerId": "symphony-nova-scotia",
       "organizerName": "Symphony Nova Scotia"
@@ -4400,7 +4506,8 @@ window.HALIFAX_CITY_EVENTS = {
       "address": null,
       "city": "Halifax",
       "categories": [
-        "Music"
+        "Music",
+        "Arts"
       ],
       "eventUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/rebecca-cohn-auditorium/rajaton-sings-abba/",
       "ticketUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
@@ -4409,7 +4516,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Symphony Nova Scotia",
       "sourceKind": "official_arts_calendar",
       "sourceUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
-      "observedAt": "2026-09-04T13:15:24.139Z",
+      "observedAt": "2026-09-11T14:44:32.943Z",
       "reviewState": "source_observed",
       "organizerId": "symphony-nova-scotia",
       "organizerName": "Symphony Nova Scotia"
@@ -4433,7 +4540,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "halifax-mooseheads-home",
       "sourceName": "Halifax Mooseheads Home Schedule",
       "sourceKind": "official_sports_schedule",
-      "observedAt": "2026-09-04T13:15:02.993Z",
+      "observedAt": "2026-09-11T14:44:26.745Z",
       "reviewState": "source-observed",
       "venueId": "scotiabank-centre-halifax",
       "neighbourhood": "Downtown",
@@ -4459,7 +4566,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "halifax-mooseheads-home",
       "sourceName": "Halifax Mooseheads Home Schedule",
       "sourceKind": "official_sports_schedule",
-      "observedAt": "2026-09-04T13:15:02.993Z",
+      "observedAt": "2026-09-11T14:44:26.745Z",
       "reviewState": "source-observed",
       "venueId": "scotiabank-centre-halifax",
       "neighbourhood": "Downtown",
@@ -4476,6 +4583,7 @@ window.HALIFAX_CITY_EVENTS = {
       "address": null,
       "city": "Halifax",
       "categories": [
+        "Music",
         "Arts"
       ],
       "eventUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/rebecca-cohn-auditorium/magnificent-mozart-2027/",
@@ -4485,7 +4593,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Symphony Nova Scotia",
       "sourceKind": "official_arts_calendar",
       "sourceUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
-      "observedAt": "2026-09-04T13:15:24.139Z",
+      "observedAt": "2026-09-11T14:44:32.944Z",
       "reviewState": "source_observed",
       "organizerId": "symphony-nova-scotia",
       "organizerName": "Symphony Nova Scotia"
@@ -4509,7 +4617,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "halifax-mooseheads-home",
       "sourceName": "Halifax Mooseheads Home Schedule",
       "sourceKind": "official_sports_schedule",
-      "observedAt": "2026-09-04T13:15:02.993Z",
+      "observedAt": "2026-09-11T14:44:26.745Z",
       "reviewState": "source-observed",
       "venueId": "scotiabank-centre-halifax",
       "neighbourhood": "Downtown",
@@ -4536,7 +4644,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "light-house-arts-centre",
       "sourceName": "Light House Arts Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-09-04T13:15:04.049Z",
+      "observedAt": "2026-09-11T14:44:28.337Z",
       "reviewState": "source-observed",
       "venueId": "light-house-arts-centre-halifax",
       "neighbourhood": "Downtown",
@@ -4562,7 +4670,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "halifax-mooseheads-home",
       "sourceName": "Halifax Mooseheads Home Schedule",
       "sourceKind": "official_sports_schedule",
-      "observedAt": "2026-09-04T13:15:02.994Z",
+      "observedAt": "2026-09-11T14:44:26.745Z",
       "reviewState": "source-observed",
       "venueId": "scotiabank-centre-halifax",
       "neighbourhood": "Downtown",
@@ -4588,7 +4696,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "scotiabank-centre",
       "sourceName": "Scotiabank Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-09-04T13:15:03.027Z",
+      "observedAt": "2026-09-11T14:44:26.775Z",
       "reviewState": "source-observed",
       "venueId": "scotiabank-centre-halifax",
       "neighbourhood": "Downtown",
@@ -4605,7 +4713,8 @@ window.HALIFAX_CITY_EVENTS = {
       "address": null,
       "city": "Halifax",
       "categories": [
-        "Music"
+        "Music",
+        "Arts"
       ],
       "eventUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/rebecca-cohn-auditorium/fiesta-espanola-carmen-capriccio-espagnol/",
       "ticketUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
@@ -4614,7 +4723,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Symphony Nova Scotia",
       "sourceKind": "official_arts_calendar",
       "sourceUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
-      "observedAt": "2026-09-04T13:15:24.139Z",
+      "observedAt": "2026-09-11T14:44:32.944Z",
       "reviewState": "source_observed",
       "organizerId": "symphony-nova-scotia",
       "organizerName": "Symphony Nova Scotia"
@@ -4638,7 +4747,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "halifax-mooseheads-home",
       "sourceName": "Halifax Mooseheads Home Schedule",
       "sourceKind": "official_sports_schedule",
-      "observedAt": "2026-09-04T13:15:02.994Z",
+      "observedAt": "2026-09-11T14:44:26.745Z",
       "reviewState": "source-observed",
       "venueId": "scotiabank-centre-halifax",
       "neighbourhood": "Downtown",
@@ -4664,7 +4773,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "halifax-mooseheads-home",
       "sourceName": "Halifax Mooseheads Home Schedule",
       "sourceKind": "official_sports_schedule",
-      "observedAt": "2026-09-04T13:15:02.994Z",
+      "observedAt": "2026-09-11T14:44:26.745Z",
       "reviewState": "source-observed",
       "venueId": "scotiabank-centre-halifax",
       "neighbourhood": "Downtown",
@@ -4691,7 +4800,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "neptune-theatre",
       "sourceName": "Neptune Theatre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-09-04T13:15:06.392Z",
+      "observedAt": "2026-09-11T14:44:31.426Z",
       "reviewState": "source-observed",
       "venueId": "neptune-theatre-halifax",
       "neighbourhood": "Downtown",
@@ -4718,7 +4827,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "light-house-arts-centre",
       "sourceName": "Light House Arts Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-09-04T13:15:04.225Z",
+      "observedAt": "2026-09-11T14:44:28.036Z",
       "reviewState": "source-observed",
       "venueId": "light-house-arts-centre-halifax",
       "neighbourhood": "Downtown",
@@ -4745,7 +4854,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "light-house-arts-centre",
       "sourceName": "Light House Arts Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-09-04T13:15:04.237Z",
+      "observedAt": "2026-09-11T14:44:28.356Z",
       "reviewState": "source-observed",
       "venueId": "light-house-arts-centre-halifax",
       "neighbourhood": "Downtown",
@@ -4762,6 +4871,7 @@ window.HALIFAX_CITY_EVENTS = {
       "address": null,
       "city": "Halifax",
       "categories": [
+        "Music",
         "Arts"
       ],
       "eventUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/halifax-united-church/mozart-le-chevalier/",
@@ -4771,7 +4881,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Symphony Nova Scotia",
       "sourceKind": "official_arts_calendar",
       "sourceUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
-      "observedAt": "2026-09-04T13:15:24.139Z",
+      "observedAt": "2026-09-11T14:44:32.944Z",
       "reviewState": "source_observed",
       "organizerId": "symphony-nova-scotia",
       "organizerName": "Symphony Nova Scotia"
@@ -4795,7 +4905,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "halifax-mooseheads-home",
       "sourceName": "Halifax Mooseheads Home Schedule",
       "sourceKind": "official_sports_schedule",
-      "observedAt": "2026-09-04T13:15:02.994Z",
+      "observedAt": "2026-09-11T14:44:26.745Z",
       "reviewState": "source-observed",
       "venueId": "scotiabank-centre-halifax",
       "neighbourhood": "Downtown",
@@ -4812,7 +4922,8 @@ window.HALIFAX_CITY_EVENTS = {
       "address": null,
       "city": "Halifax",
       "categories": [
-        "Music"
+        "Music",
+        "Arts"
       ],
       "eventUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/halifax-united-church/nsyo-curtain-up/",
       "ticketUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
@@ -4821,7 +4932,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Symphony Nova Scotia",
       "sourceKind": "official_arts_calendar",
       "sourceUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
-      "observedAt": "2026-09-04T13:15:24.139Z",
+      "observedAt": "2026-09-11T14:44:32.944Z",
       "reviewState": "source_observed",
       "organizerId": "symphony-nova-scotia",
       "organizerName": "Symphony Nova Scotia"
@@ -4836,7 +4947,8 @@ window.HALIFAX_CITY_EVENTS = {
       "address": null,
       "city": "Halifax",
       "categories": [
-        "Music"
+        "Music",
+        "Arts"
       ],
       "eventUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/rebecca-cohn-auditorium/bravo-broadway/",
       "ticketUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
@@ -4845,7 +4957,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Symphony Nova Scotia",
       "sourceKind": "official_arts_calendar",
       "sourceUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
-      "observedAt": "2026-09-04T13:15:24.139Z",
+      "observedAt": "2026-09-11T14:44:32.945Z",
       "reviewState": "source_observed",
       "organizerId": "symphony-nova-scotia",
       "organizerName": "Symphony Nova Scotia"
@@ -4869,12 +4981,38 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "halifax-mooseheads-home",
       "sourceName": "Halifax Mooseheads Home Schedule",
       "sourceKind": "official_sports_schedule",
-      "observedAt": "2026-09-04T13:15:02.994Z",
+      "observedAt": "2026-09-11T14:44:26.745Z",
       "reviewState": "source-observed",
       "venueId": "scotiabank-centre-halifax",
       "neighbourhood": "Downtown",
       "organizerId": "halifax-mooseheads",
       "organizerName": "Halifax Mooseheads"
+    },
+    {
+      "id": "light-house-arts-centre-6a571344c929ceee",
+      "title": "Theory of a Deadman in Halifax — Light House Arts Centre",
+      "startAt": "2027-03-06T01:00:00.000Z",
+      "endAt": "2027-03-06T04:00:00.000Z",
+      "allDay": false,
+      "venueName": "Light House Arts Centre",
+      "address": "1800 Argyle Street Suite 301\nHalifax, NS, B3J 3N8\nCanada",
+      "city": "Halifax",
+      "categories": [
+        "Arts"
+      ],
+      "price": null,
+      "ticketUrl": "https://www.lighthouseartscentre.ca/events/",
+      "eventUrl": "https://www.lighthouseartscentre.ca/events/theory-of-a-deadman-mar-5-2027",
+      "sourceUrl": "https://www.lighthouseartscentre.ca/events/theory-of-a-deadman-mar-5-2027",
+      "sourceId": "light-house-arts-centre",
+      "sourceName": "Light House Arts Centre",
+      "sourceKind": "official_venue_calendar",
+      "observedAt": "2026-09-11T14:44:28.041Z",
+      "reviewState": "source-observed",
+      "venueId": "light-house-arts-centre-halifax",
+      "neighbourhood": "Downtown",
+      "organizerId": "light-house-arts-centre",
+      "organizerName": "Light House Arts Centre"
     },
     {
       "id": "halifax-mooseheads-home-339a73256d6d8c35",
@@ -4895,7 +5033,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "halifax-mooseheads-home",
       "sourceName": "Halifax Mooseheads Home Schedule",
       "sourceKind": "official_sports_schedule",
-      "observedAt": "2026-09-04T13:15:02.994Z",
+      "observedAt": "2026-09-11T14:44:26.746Z",
       "reviewState": "source-observed",
       "venueId": "scotiabank-centre-halifax",
       "neighbourhood": "Downtown",
@@ -4912,7 +5050,8 @@ window.HALIFAX_CITY_EVENTS = {
       "address": null,
       "city": "Halifax",
       "categories": [
-        "Music"
+        "Music",
+        "Arts"
       ],
       "eventUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/rebecca-cohn-auditorium/postcards-from-italy-rossini-mendelssohn/",
       "ticketUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
@@ -4921,7 +5060,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Symphony Nova Scotia",
       "sourceKind": "official_arts_calendar",
       "sourceUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
-      "observedAt": "2026-09-04T13:15:24.139Z",
+      "observedAt": "2026-09-11T14:44:32.945Z",
       "reviewState": "source_observed",
       "organizerId": "symphony-nova-scotia",
       "organizerName": "Symphony Nova Scotia"
@@ -4946,7 +5085,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "light-house-arts-centre",
       "sourceName": "Light House Arts Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-09-04T13:15:04.198Z",
+      "observedAt": "2026-09-11T14:44:28.262Z",
       "reviewState": "source-observed",
       "venueId": "light-house-arts-centre-halifax",
       "neighbourhood": "Downtown",
@@ -4963,7 +5102,8 @@ window.HALIFAX_CITY_EVENTS = {
       "address": null,
       "city": "Halifax",
       "categories": [
-        "Music"
+        "Music",
+        "Arts"
       ],
       "eventUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/rebecca-cohn-auditorium/aquakultre-symphony-nova-scotia/",
       "ticketUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
@@ -4972,7 +5112,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Symphony Nova Scotia",
       "sourceKind": "official_arts_calendar",
       "sourceUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
-      "observedAt": "2026-09-04T13:15:24.139Z",
+      "observedAt": "2026-09-11T14:44:32.945Z",
       "reviewState": "source_observed",
       "organizerId": "symphony-nova-scotia",
       "organizerName": "Symphony Nova Scotia"
@@ -4996,7 +5136,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "halifax-mooseheads-home",
       "sourceName": "Halifax Mooseheads Home Schedule",
       "sourceKind": "official_sports_schedule",
-      "observedAt": "2026-09-04T13:15:02.994Z",
+      "observedAt": "2026-09-11T14:44:26.746Z",
       "reviewState": "source-observed",
       "venueId": "scotiabank-centre-halifax",
       "neighbourhood": "Downtown",
@@ -5013,7 +5153,8 @@ window.HALIFAX_CITY_EVENTS = {
       "address": null,
       "city": "Halifax",
       "categories": [
-        "Music"
+        "Music",
+        "Arts"
       ],
       "eventUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/rebecca-cohn-auditorium/pranks-jokes-hoaxes-haydn-pdq-bach/",
       "ticketUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
@@ -5022,7 +5163,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Symphony Nova Scotia",
       "sourceKind": "official_arts_calendar",
       "sourceUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
-      "observedAt": "2026-09-04T13:15:24.140Z",
+      "observedAt": "2026-09-11T14:44:32.945Z",
       "reviewState": "source_observed",
       "organizerId": "symphony-nova-scotia",
       "organizerName": "Symphony Nova Scotia"
@@ -5038,6 +5179,7 @@ window.HALIFAX_CITY_EVENTS = {
       "city": "Halifax",
       "categories": [
         "Music",
+        "Arts",
         "Food & Drink"
       ],
       "eventUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/rebecca-cohn-auditorium/kitchen-party-with-rum-ragged-symphony-nova-scotia/",
@@ -5047,7 +5189,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Symphony Nova Scotia",
       "sourceKind": "official_arts_calendar",
       "sourceUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
-      "observedAt": "2026-09-04T13:15:24.140Z",
+      "observedAt": "2026-09-11T14:44:32.946Z",
       "reviewState": "source_observed",
       "organizerId": "symphony-nova-scotia",
       "organizerName": "Symphony Nova Scotia"
@@ -5062,7 +5204,8 @@ window.HALIFAX_CITY_EVENTS = {
       "address": null,
       "city": "Halifax",
       "categories": [
-        "Music"
+        "Music",
+        "Arts"
       ],
       "eventUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/halifax-united-church/four-seasons-four-elements/",
       "ticketUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
@@ -5071,7 +5214,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Symphony Nova Scotia",
       "sourceKind": "official_arts_calendar",
       "sourceUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
-      "observedAt": "2026-09-04T13:15:24.140Z",
+      "observedAt": "2026-09-11T14:44:32.946Z",
       "reviewState": "source_observed",
       "organizerId": "symphony-nova-scotia",
       "organizerName": "Symphony Nova Scotia"
@@ -5086,7 +5229,8 @@ window.HALIFAX_CITY_EVENTS = {
       "address": null,
       "city": "Halifax",
       "categories": [
-        "Music"
+        "Music",
+        "Arts"
       ],
       "eventUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/rebecca-cohn-auditorium/vinyl-favourites-of-the-60s-70s-with-jim-witter/",
       "ticketUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
@@ -5095,7 +5239,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Symphony Nova Scotia",
       "sourceKind": "official_arts_calendar",
       "sourceUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
-      "observedAt": "2026-09-04T13:15:24.140Z",
+      "observedAt": "2026-09-11T14:44:32.946Z",
       "reviewState": "source_observed",
       "organizerId": "symphony-nova-scotia",
       "organizerName": "Symphony Nova Scotia"
@@ -5110,7 +5254,8 @@ window.HALIFAX_CITY_EVENTS = {
       "address": null,
       "city": "Halifax",
       "categories": [
-        "Music"
+        "Music",
+        "Arts"
       ],
       "eventUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/rebecca-cohn-auditorium/vinyl-favourites-of-the-60s-70s-with-jim-witter/",
       "ticketUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
@@ -5119,7 +5264,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Symphony Nova Scotia",
       "sourceKind": "official_arts_calendar",
       "sourceUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
-      "observedAt": "2026-09-04T13:15:24.140Z",
+      "observedAt": "2026-09-11T14:44:32.946Z",
       "reviewState": "source_observed",
       "organizerId": "symphony-nova-scotia",
       "organizerName": "Symphony Nova Scotia"
@@ -5134,6 +5279,7 @@ window.HALIFAX_CITY_EVENTS = {
       "address": null,
       "city": "Halifax",
       "categories": [
+        "Music",
         "Arts"
       ],
       "eventUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/rebecca-cohn-auditorium/the-art-of-friendship-brahms-the-schumanns/",
@@ -5143,7 +5289,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Symphony Nova Scotia",
       "sourceKind": "official_arts_calendar",
       "sourceUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
-      "observedAt": "2026-09-04T13:15:24.140Z",
+      "observedAt": "2026-09-11T14:44:32.947Z",
       "reviewState": "source_observed",
       "organizerId": "symphony-nova-scotia",
       "organizerName": "Symphony Nova Scotia"
@@ -5158,7 +5304,8 @@ window.HALIFAX_CITY_EVENTS = {
       "address": null,
       "city": "Halifax",
       "categories": [
-        "Music"
+        "Music",
+        "Arts"
       ],
       "eventUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/halifax-united-church/nsyo-water-music/",
       "ticketUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
@@ -5167,7 +5314,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Symphony Nova Scotia",
       "sourceKind": "official_arts_calendar",
       "sourceUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
-      "observedAt": "2026-09-04T13:15:24.140Z",
+      "observedAt": "2026-09-11T14:44:32.947Z",
       "reviewState": "source_observed",
       "organizerId": "symphony-nova-scotia",
       "organizerName": "Symphony Nova Scotia"
@@ -5191,7 +5338,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "neptune-theatre",
       "sourceName": "Neptune Theatre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-09-04T13:15:06.392Z",
+      "observedAt": "2026-09-11T14:44:31.426Z",
       "reviewState": "source-observed",
       "venueId": "neptune-theatre-halifax",
       "neighbourhood": "Downtown",
@@ -5208,6 +5355,7 @@ window.HALIFAX_CITY_EVENTS = {
       "address": null,
       "city": "Halifax",
       "categories": [
+        "Music",
         "Arts"
       ],
       "eventUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/halifax-united-church/mozart-handel/",
@@ -5217,7 +5365,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Symphony Nova Scotia",
       "sourceKind": "official_arts_calendar",
       "sourceUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
-      "observedAt": "2026-09-04T13:15:24.140Z",
+      "observedAt": "2026-09-11T14:44:32.947Z",
       "reviewState": "source_observed",
       "organizerId": "symphony-nova-scotia",
       "organizerName": "Symphony Nova Scotia"
@@ -5232,7 +5380,8 @@ window.HALIFAX_CITY_EVENTS = {
       "address": null,
       "city": "Halifax",
       "categories": [
-        "Music"
+        "Music",
+        "Arts"
       ],
       "eventUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/rebecca-cohn-auditorium/lennie-gallant-symphony-nova-scotia/",
       "ticketUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
@@ -5241,18 +5390,18 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Symphony Nova Scotia",
       "sourceKind": "official_arts_calendar",
       "sourceUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
-      "observedAt": "2026-09-04T13:15:24.141Z",
+      "observedAt": "2026-09-11T14:44:32.947Z",
       "reviewState": "source_observed",
       "organizerId": "symphony-nova-scotia",
       "organizerName": "Symphony Nova Scotia"
     }
   ],
-  "sanitizedAt": "2026-09-04T13:17:25.582Z",
+  "sanitizedAt": "2026-09-11T14:46:40.267Z",
   "scopeAudit": {
-    "inputEvents": 192,
-    "keptEvents": 192,
+    "inputEvents": 191,
+    "keptEvents": 191,
     "removedOutOfScope": 0,
-    "categoryReclassified": 46,
+    "categoryReclassified": 10,
     "allowedMunicipalities": [
       "Halifax",
       "Dartmouth",
@@ -5260,77 +5409,95 @@ window.HALIFAX_CITY_EVENTS = {
     ],
     "removedSample": []
   },
-  "supplementalAt": "2026-09-04T13:17:15.850Z",
+  "supplementalAt": "2026-09-11T14:46:40.018Z",
   "supplementalAudit": {
-    "addedBeforeDedupe": 69,
+    "addedBeforeDedupe": 67,
     "sourceStats": [
       {
         "sourceId": "halifax-convention-centre",
         "sourceName": "Halifax Convention Centre",
         "status": "ok",
-        "eventCount": 8,
-        "observedAt": "2026-09-04T13:15:23.983Z",
-        "durationMs": 740
+        "eventCount": 7,
+        "observedAt": "2026-09-11T14:44:32.813Z",
+        "durationMs": 732
       },
       {
         "sourceId": "symphony-nova-scotia",
         "sourceName": "Symphony Nova Scotia",
         "status": "ok",
         "eventCount": 37,
-        "observedAt": "2026-09-04T13:15:24.141Z",
-        "durationMs": 158
+        "observedAt": "2026-09-11T14:44:32.948Z",
+        "durationMs": 135
       },
       {
         "sourceId": "halifax-public-libraries",
         "sourceName": "Halifax Public Libraries",
         "status": "ok",
         "eventCount": 1,
-        "observedAt": "2026-09-04T13:17:09.508Z",
-        "durationMs": 105367
+        "observedAt": "2026-09-11T14:46:37.225Z",
+        "durationMs": 124277
       },
       {
         "sourceId": "alderney-gate-library-events",
         "sourceName": "Alderney Gate Public Library",
         "status": "ok",
-        "eventCount": 8,
-        "observedAt": "2026-09-04T13:17:10.815Z",
-        "durationMs": 1307
+        "eventCount": 10,
+        "observedAt": "2026-09-11T14:46:38.342Z",
+        "durationMs": 1116
       },
       {
         "sourceId": "woodlawn-library-events",
         "sourceName": "Woodlawn Public Library",
         "status": "ok",
         "eventCount": 6,
-        "observedAt": "2026-09-04T13:17:11.976Z",
-        "durationMs": 1161
+        "observedAt": "2026-09-11T14:46:38.505Z",
+        "durationMs": 163
       },
       {
         "sourceId": "bedford-library-events",
         "sourceName": "Bedford Public Library",
         "status": "ok",
         "eventCount": 6,
-        "observedAt": "2026-09-04T13:17:13.276Z",
-        "durationMs": 1300
+        "observedAt": "2026-09-11T14:46:39.896Z",
+        "durationMs": 1391
       },
       {
         "sourceId": "alderney-landing-events",
         "sourceName": "Alderney Landing",
-        "status": "ok",
-        "eventCount": 3,
-        "observedAt": "2026-09-04T13:17:15.848Z",
-        "durationMs": 2572
+        "status": "failed",
+        "eventCount": 0,
+        "reason": "http_403",
+        "observedAt": "2026-09-11T14:46:40.013Z",
+        "durationMs": 117
       }
     ],
-    "failures": []
+    "failures": [
+      {
+        "sourceId": "alderney-landing-events",
+        "sourceName": "Alderney Landing",
+        "url": "https://www.alderneylanding.com/events-directory/",
+        "reason": "http_403",
+        "observedAt": "2026-09-11T14:46:40.013Z"
+      }
+    ]
+  },
+  "manualAdditions": {
+    "appliedAt": "2026-09-11T14:46:40.152Z",
+    "source": "data/build/city-event-additions.json",
+    "eventCount": 1,
+    "addedIds": [
+      "taste-asia-2026-food-culture-festival"
+    ],
+    "mergedIds": []
   },
   "refreshAnomalies": [],
   "entityResolution": {
-    "appliedAt": "2026-09-04T13:17:25.656Z",
-    "venueRegistryVersion": 2,
-    "organizerRegistryVersion": 1,
-    "venueResolved": 139,
-    "organizerResolved": 166,
+    "appliedAt": "2026-09-11T14:46:40.359Z",
+    "venueRegistryVersion": 3,
+    "organizerRegistryVersion": 2,
+    "venueResolved": 138,
+    "organizerResolved": 168,
     "restaurantResolved": 10,
-    "eventCount": 192
+    "eventCount": 191
   }
 };
