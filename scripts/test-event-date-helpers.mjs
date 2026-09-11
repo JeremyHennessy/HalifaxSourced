@@ -58,6 +58,16 @@ const cityEvents = [
     sourceName: "Test source"
   },
   {
+    id: "ongoing-multiday",
+    title: "Ongoing multi-day festival",
+    startAt: "2026-09-02",
+    endAt: "2026-09-06",
+    allDay: true,
+    categories: ["Festivals"],
+    city: "Halifax",
+    sourceName: "Test source"
+  },
+  {
     id: "past-event",
     title: "Past event",
     startAt: "2026-09-03T15:00:00.000Z",
@@ -132,7 +142,7 @@ const context = vm.createContext({
 context.window = context;
 context.HALIFAX_CITY_EVENTS = { events: cityEvents, failures: [] };
 
-for (const file of ["app-events.js", "app-event-pagination.js", "app-event-date-fixes.js"]) {
+for (const file of ["app-events.js", "app-event-pagination.js", "app-event-date-fixes.js", "app-event-local-sort-fixes.js"]) {
   const source = await readFile(resolve(file), "utf8");
   vm.runInContext(source, context, { filename: file });
 }
@@ -142,27 +152,39 @@ const result = vm.runInContext(`(() => {
   const dateOnly = window.HALIFAX_CITY_EVENTS.events[0];
   const utcMidnight = window.HALIFAX_CITY_EVENTS.events[1];
   const timed = window.HALIFAX_CITY_EVENTS.events[2];
+  const ongoing = window.HALIFAX_CITY_EVENTS.events[3];
   cityEventState.windowDays = "7";
+  cityEventState.sort = "soonest";
   const nextSevenIds = cityEventsForWindow(window.HALIFAX_CITY_EVENTS.events).map((event) => event.id);
+  const sortedNextSevenIds = filteredCityEvents(window.HALIFAX_CITY_EVENTS.events).map((event) => event.id);
   cityEventState.windowDays = "today";
   const todayIds = cityEventsForWindow(window.HALIFAX_CITY_EVENTS.events).map((event) => event.id);
+  const filteredTodayIds = filteredCityEvents(window.HALIFAX_CITY_EVENTS.events).map((event) => event.id);
   return {
     dateOnlyStart: debug.eventBoundaryKey(dateOnly, "startAt"),
     dateOnlyEnd: debug.eventBoundaryKey(dateOnly, "endAt"),
     utcMidnightStart: debug.eventBoundaryKey(utcMidnight, "startAt"),
     utcMidnightEnd: debug.eventBoundaryKey(utcMidnight, "endAt"),
+    ongoingStart: debug.eventBoundaryKey(ongoing, "startAt"),
+    ongoingEnd: debug.eventBoundaryKey(ongoing, "endAt"),
+    ongoingSortKey: debug.eventLocalSortKey(ongoing),
+    ongoingCalendarDays: debug.eventCalendarDayKeys(ongoing),
     dateOnlyToday: debug.eventOverlapsDateRange(dateOnly, "2026-09-04", "2026-09-04"),
     dateOnlyPreviousDay: debug.eventOverlapsDateRange(dateOnly, "2026-09-03", "2026-09-03"),
     utcMidnightToday: debug.eventOverlapsDateRange(utcMidnight, "2026-09-04", "2026-09-04"),
+    ongoingToday: debug.eventOverlapsDateRange(ongoing, "2026-09-04", "2026-09-04"),
     nextSevenRange: debug.eventDateWindowRange("7"),
     todayRange: debug.eventDateWindowRange("today"),
     nextSevenIds,
+    sortedNextSevenIds,
     todayIds,
+    filteredTodayIds,
     dateOnlyWhen: structuredEventWhen(dateOnly),
     utcMidnightWhen: structuredEventWhen(utcMidnight),
     timedWhen: structuredEventWhen(timed),
     dateOnlyCard: cityEventCard(dateOnly),
     utcMidnightCard: cityEventCard(utcMidnight),
+    calendar: simpleCalendar([ongoing]),
     dateOnlyTimeKind: eventTimeKind(dateOnly),
     timedTimeKind: eventTimeKind(timed)
   };
@@ -171,14 +193,26 @@ const result = vm.runInContext(`(() => {
 const failures = [];
 if (result.dateOnlyStart !== "2026-09-04" || result.dateOnlyEnd !== "2026-09-04") failures.push(`date-only boundary keys shifted: ${JSON.stringify(result)}`);
 if (result.utcMidnightStart !== "2026-09-04" || result.utcMidnightEnd !== "2026-09-04") failures.push(`UTC-midnight all-day boundary keys shifted: ${JSON.stringify(result)}`);
+if (result.ongoingStart !== "2026-09-02" || result.ongoingEnd !== "2026-09-06") failures.push(`multi-day boundary keys shifted: ${JSON.stringify(result)}`);
+if (result.ongoingSortKey !== "2026-09-04") failures.push(`ongoing multi-day event should sort as today: ${JSON.stringify(result)}`);
 if (!result.dateOnlyToday || result.dateOnlyPreviousDay) failures.push(`date-only overlap matched the wrong Halifax day: ${JSON.stringify(result)}`);
 if (!result.utcMidnightToday) failures.push(`UTC-midnight all-day event missed its Halifax day: ${JSON.stringify(result)}`);
+if (!result.ongoingToday) failures.push(`ongoing multi-day event should overlap today: ${JSON.stringify(result)}`);
 if (result.todayRange?.startKey !== "2026-09-04" || result.todayRange?.endKey !== "2026-09-04") failures.push(`today range should only cover Sep 4: ${JSON.stringify(result)}`);
 if (result.nextSevenRange?.startKey !== "2026-09-04" || result.nextSevenRange?.endKey !== "2026-09-11") failures.push(`next 7 days should include today through the seventh future calendar date: ${JSON.stringify(result)}`);
 if (!result.nextSevenIds.includes("next-seven-boundary")) failures.push(`next 7 days should include the Sep 11 boundary event: ${JSON.stringify(result)}`);
 if (result.nextSevenIds.includes("next-eight-outside")) failures.push(`next 7 days should exclude the Sep 12 event: ${JSON.stringify(result)}`);
 if (result.nextSevenIds.includes("past-event")) failures.push(`next 7 days should exclude prior-day events: ${JSON.stringify(result)}`);
+if (!result.nextSevenIds.includes("ongoing-multiday")) failures.push(`next 7 days should include ongoing multi-day events: ${JSON.stringify(result)}`);
+if (!result.todayIds.includes("ongoing-multiday") || !result.filteredTodayIds.includes("ongoing-multiday")) failures.push(`today filters should include ongoing multi-day events: ${JSON.stringify(result)}`);
 if (result.todayIds.includes("next-seven-boundary")) failures.push(`today filter should not include future boundary events: ${JSON.stringify(result)}`);
+if (result.sortedNextSevenIds.indexOf("ongoing-multiday") === -1 || result.sortedNextSevenIds.indexOf("ongoing-multiday") > result.sortedNextSevenIds.indexOf("next-seven-boundary")) failures.push(`ongoing events should sort before later future events: ${JSON.stringify(result)}`);
+for (const key of ["2026-09-02", "2026-09-03", "2026-09-04", "2026-09-05", "2026-09-06"]) {
+  if (!result.ongoingCalendarDays.includes(key)) failures.push(`calendar day range missed ${key}: ${JSON.stringify(result)}`);
+}
+for (const day of ["2", "3", "4", "5", "6"]) {
+  if (!new RegExp(`>\\*${day}<\\/span>`).test(result.calendar)) failures.push(`calendar markup did not mark Sep ${day}: ${JSON.stringify(result)}`);
+}
 if (/Sep(?:t)? 3|<strong>3<\/strong>/.test(`${result.dateOnlyWhen} ${result.utcMidnightWhen} ${result.dateOnlyCard} ${result.utcMidnightCard}`)) failures.push(`all-day event rendered as the previous date: ${JSON.stringify(result)}`);
 if (!/<strong>4<\/strong>/.test(result.dateOnlyCard) || !/<strong>4<\/strong>/.test(result.utcMidnightCard)) failures.push(`event card date badge did not render Sep 4: ${JSON.stringify(result)}`);
 if (result.dateOnlyTimeKind !== "all-day") failures.push(`date-only event should be all-day, got ${result.dateOnlyTimeKind}`);
