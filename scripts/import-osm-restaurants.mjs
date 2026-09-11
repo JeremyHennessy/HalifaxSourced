@@ -1,3 +1,5 @@
+import { isLocalRestaurantRecord } from "./lib/local-restaurant-policy.mjs";
+
 const scope = {
   name: "Halifax peninsula, Dartmouth, Armdale, Fairview, and immediately surrounding areas",
   bbox: { south: 44.575, west: -63.69, north: 44.705, east: -63.505 }
@@ -30,6 +32,8 @@ const query = `
 );
 out center tags;
 `;
+
+let rejectedNonLocalCount = 0;
 
 function slugify(value) {
   return value
@@ -119,6 +123,11 @@ function transformElement(element) {
   const website = tags.website ?? tags["contact:website"] ?? null;
   const phone = tags.phone ?? tags["contact:phone"] ?? null;
 
+  if (!isLocalRestaurantRecord({ name, website, osm: { amenity, rawTags: tags } })) {
+    rejectedNonLocalCount += 1;
+    return null;
+  }
+
   return {
     id: `osm-${element.type}-${element.id}-${slugify(name)}`,
     name,
@@ -175,8 +184,9 @@ const { mkdir, writeFile } = await import("node:fs/promises");
 const { endpoint, payload } = await fetchOverpass();
 const restaurants = payload.elements.map(transformElement).filter(Boolean).sort((a, b) => a.name.localeCompare(b.name));
 const generatedAt = new Date().toISOString();
-const output = `window.HALIFAX_OSM_META = ${JSON.stringify({ generatedAt, source: `OpenStreetMap via Overpass API (${endpoint})`, scope: scope.name, bbox: scope.bbox, count: restaurants.length }, null, 2)};\n\nwindow.HALIFAX_OSM_RESTAURANTS = ${JSON.stringify(restaurants, null, 2)};\n`;
+const output = `window.HALIFAX_OSM_META = ${JSON.stringify({ generatedAt, source: `OpenStreetMap via Overpass API (${endpoint})`, scope: scope.name, bbox: scope.bbox, count: restaurants.length, localPolicyExcluded: rejectedNonLocalCount }, null, 2)};\n\nwindow.HALIFAX_OSM_RESTAURANTS = ${JSON.stringify(restaurants, null, 2)};\n`;
 await mkdir(new URL("../data", import.meta.url), { recursive: true });
 await writeFile(new URL("../data/osm-restaurants.js", import.meta.url), output);
 console.log(`Imported ${restaurants.length} food and drink places from OpenStreetMap.`);
+if (rejectedNonLocalCount) console.log(`Excluded ${rejectedNonLocalCount} non-local chain/franchise places by local restaurant policy.`);
 console.log(`Scope: ${scope.name}`);
