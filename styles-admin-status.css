@@ -1,0 +1,206 @@
+.admin-status-intro p {
+  max-width: 820px;
+}
+
+.admin-status-panel {
+  display: grid;
+  gap: 22px;
+  padding-bottom: 72px;
+}
+
+.admin-status-summary {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.admin-status-card,
+.admin-status-release-card,
+.admin-status-block {
+  min-width: 0;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: var(--shadow-soft);
+}
+
+.admin-status-card {
+  display: grid;
+  gap: 10px;
+  padding: 18px;
+}
+
+.admin-status-card > div,
+.admin-status-release-card,
+.admin-status-actions,
+.admin-status-row,
+.admin-status-examples article {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.admin-status-card > div,
+.admin-status-release-card,
+.admin-status-row,
+.admin-status-examples article {
+  justify-content: space-between;
+}
+
+.admin-status-card strong {
+  color: var(--navy-950);
+  font-size: 30px;
+  line-height: 1.05;
+  overflow-wrap: anywhere;
+}
+
+.admin-status-card span:not(.admin-status-pill),
+.admin-status-card p,
+.admin-status-row span,
+.admin-status-examples span,
+.admin-status-release-card p {
+  color: var(--muted);
+}
+
+.admin-status-card span:not(.admin-status-pill),
+.admin-status-row span {
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.admin-status-card p,
+.admin-status-release-card p {
+  margin: 0;
+  font-size: 13px;
+}
+
+.admin-status-pill {
+  display: inline-flex;
+  align-items: center;
+  min-height: 24px;
+  border-radius: 999px;
+  padding: 0 9px;
+  background: var(--surface-soft);
+  color: var(--navy-900);
+  font-size: 10px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.admin-status-pill.is-fresh {
+  background: var(--seafoam-100);
+  color: var(--teal-700);
+}
+
+.admin-status-pill.is-warn {
+  background: #fff4df;
+  color: #8a5a08;
+}
+
+.admin-status-pill.is-stale {
+  background: #ffe8e1;
+  color: #9a3f31;
+}
+
+.admin-status-pill.is-unknown {
+  background: #eef3f7;
+  color: var(--muted);
+}
+
+.admin-status-release-card {
+  padding: 18px;
+}
+
+.admin-status-release-card h2 {
+  color: var(--navy-950);
+  font-size: 22px;
+  line-height: 1.15;
+  margin: 4px 0 6px;
+}
+
+.admin-status-actions {
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.admin-status-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  align-items: start;
+}
+
+.admin-status-block {
+  padding: 18px;
+}
+
+.admin-status-list,
+.admin-status-examples {
+  display: grid;
+  gap: 10px;
+}
+
+.admin-status-row,
+.admin-status-examples article {
+  min-width: 0;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--surface-soft);
+  padding: 12px;
+}
+
+.admin-status-row div,
+.admin-status-examples div {
+  min-width: 0;
+}
+
+.admin-status-row strong,
+.admin-status-examples strong {
+  display: block;
+  color: var(--navy-950);
+  overflow-wrap: anywhere;
+}
+
+.admin-status-row a,
+.admin-status-examples a {
+  color: var(--teal-700);
+  font-size: 12px;
+  font-weight: 900;
+  text-decoration: none;
+}
+
+.admin-status-row > div:last-of-type {
+  min-width: 88px;
+  text-align: right;
+}
+
+@media (max-width: 1120px) {
+  .admin-status-summary,
+  .admin-status-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 760px) {
+  .admin-status-summary,
+  .admin-status-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-status-release-card,
+  .admin-status-row,
+  .admin-status-examples article {
+    align-items: flex-start;
+    display: grid;
+  }
+
+  .admin-status-actions {
+    justify-content: flex-start;
+  }
+
+  .admin-status-row > div:last-of-type {
+    min-width: 0;
+    text-align: left;
+  }
+}
