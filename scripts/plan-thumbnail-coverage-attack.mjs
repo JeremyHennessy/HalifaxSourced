@@ -2,11 +2,12 @@ import { mkdir, readFile, writeFile } from "node:fs/promises";
 import vm from "node:vm";
 
 const generatedAt = new Date().toISOString();
-const directLimit = Math.max(1, Number(process.env.THUMBNAIL_PROMOTION_DIRECT_LIMIT ?? 50));
-const sourceCheckLimit = Math.max(1, Number(process.env.THUMBNAIL_SOURCE_CHECK_LIMIT ?? 75));
+const directLimit = positiveInteger(process.env.THUMBNAIL_PROMOTION_DIRECT_LIMIT, 50);
+const sourceCheckLimit = positiveInteger(process.env.THUMBNAIL_SOURCE_CHECK_LIMIT, 75);
 const applyPromotion = String(process.env.THUMBNAIL_PROMOTION_APPLY ?? "0") === "1";
-const outputRoot = new URL("../", import.meta.url);
-const approvedRemoteRightsBasis = "App-owner-reviewed HTTPS image reference from the restaurant official website or official feed; remote thumbnail reference only, not rehosted.";
+const root = new URL("../", import.meta.url);
+
+const approvedRemoteRightsBasis = "App-owner-reviewed HTTPS remote image reference from the restaurant official website or official feed; image is linked to first-party media and is not rehosted.";
 
 const directPromotionSourceKinds = new Set([
   "official_page_thumbnail_candidate",
@@ -14,6 +15,7 @@ const directPromotionSourceKinds = new Set([
   "approved_restaurant_media",
   "owner_submitted_image"
 ]);
+
 const productionReadyConfidence = new Set([
   "same_host_official_page_image",
   "official_page_approved_cdn_image",
@@ -21,6 +23,7 @@ const productionReadyConfidence = new Set([
   "approved_exact_restaurant_id",
   "owner_submitted_permission_declared"
 ]);
+
 const hardBlockFlags = new Set([
   "insecure_thumbnail_url",
   "icon_or_favicon",
@@ -39,14 +42,20 @@ const hardBlockFlags = new Set([
   "very_small_image_payload",
   "image_probe_failed"
 ]);
+
 const sourceCheckOnlyFlags = new Set([
   "remote_image_host_needs_source_check",
   "reviewed_needs_source_check"
 ]);
 
+function positiveInteger(value, fallback) {
+  const parsed = Number(value);
+  return Number.isFinite(parsed) && parsed > 0 ? Math.floor(parsed) : fallback;
+}
+
 async function loadJson(path, fallback) {
   try {
-    return JSON.parse(await readFile(new URL(path, outputRoot), "utf8"));
+    return JSON.parse(await readFile(new URL(path, root), "utf8"));
   } catch {
     return fallback;
   }
@@ -54,7 +63,7 @@ async function loadJson(path, fallback) {
 
 async function loadWindowScript(path, globalName, fallback) {
   try {
-    const source = await readFile(new URL(path, outputRoot), "utf8");
+    const source = await readFile(new URL(path, root), "utf8");
     const context = { window: {} };
     vm.createContext(context);
     vm.runInContext(source, context, { filename: path, timeout: 20_000 });
@@ -72,7 +81,16 @@ function token(value) {
     .replace(/^_+|_+$/g, "");
 }
 
-function safeUrl(value) {
+function asHttpsUrl(value) {
+  try {
+    const url = new URL(String(value ?? "").trim());
+    return url.protocol === "https:" ? url.href : null;
+  } catch {
+    return null;
+  }
+}
+
+function asHttpUrl(value) {
   try {
     const url = new URL(String(value ?? "").trim());
     return ["http:", "https:"].includes(url.protocol) ? url.href : null;
@@ -95,18 +113,19 @@ function flags(value) {
 }
 
 function hasHardBlock(candidate) {
-  return flags(candidate?.qualityFlags).some((flag) => hardBlockFlags.has(flag) || flag.startsWith("reviewed_rejected"));
+  return flags(candidate?.qualityFlags || candidate?.quality_flags).some(
+    (flag) => hardBlockFlags.has(flag) || flag.startsWith("reviewed_rejected")
+  );
 }
 
 function priority(candidate) {
-  const score = Number(candidate?.reviewPriority);
+  const score = Number(candidate?.reviewPriority ?? candidate?.review_priority);
   return Number.isFinite(score) ? score : candidate?.eligibleForProduction ? 100 : 0;
 }
 
 function sameHostOrApprovedCdn(candidate) {
-  const state = token(candidate?.sourceHostValidation);
+  const state = token(candidate?.sourceHostValidation ?? candidate?.source_host_validation);
   if (["first_party_image_host", "approved_cdn_image_host"].includes(state)) return true;
-  if (!state && productionReadyConfidence.has(String(candidate?.confidence || ""))) return true;
   return productionReadyConfidence.has(String(candidate?.confidence || ""));
 }
 
@@ -116,13 +135,15 @@ function canDirectPromote(candidate) {
   if (token(candidate.rightsStatus) !== "requires_rights_review") return false;
   if (token(candidate.promotionReviewState) === "source_check") return false;
   if (!directPromotionSourceKinds.has(String(candidate.sourceKind || ""))) return false;
+  if (hasHardBlock(candidate)) return false;
+
   if (String(candidate.sourceKind || "") === "owner_submitted_image") {
-    return candidate.permissionConfirmed === true && Boolean(candidate.rightsBasis) && Boolean(candidate.attribution) && !hasHardBlock(candidate);
+    return candidate.permissionConfirmed === true && Boolean(candidate.rightsBasis) && Boolean(candidate.attribution);
   }
-  if (!safeUrl(candidate.thumbnailUrl) || !safeUrl(candidate.sourceUrl)) return false;
-  if (!String(candidate.thumbnailUrl).startsWith("https://")) return false;
+
+  if (!asHttpsUrl(candidate.thumbnailUrl) || !asHttpUrl(candidate.sourceUrl)) return false;
   if (!sameHostOrApprovedCdn(candidate)) return false;
-  return priority(candidate) >= 45 && !hasHardBlock(candidate);
+  return priority(candidate) >= 45;
 }
 
 function directScore(candidate) {
@@ -134,13 +155,15 @@ function directScore(candidate) {
   if (candidate?.sourceKind === "owner_submitted_image") score += 18;
   if (["html_img_content", "jsonld_image"].includes(candidate?.extractionMethod)) score += 3;
   if (["html_meta_image", "html_link_image", "css_background_image"].includes(candidate?.extractionMethod)) score -= 2;
+
   const width = Number(candidate?.width);
   const height = Number(candidate?.height);
   if (Number.isFinite(width) && Number.isFinite(height)) {
     if (width >= 900 && height >= 480) score += 6;
     else if (width >= 600 && height >= 320) score += 3;
   }
-  const name = String(candidate?.restaurantName || "").toLowerCase();
+
+  const name = String(candidate?.restaurantName || candidate?.name || "").toLowerCase();
   if (/\b(subway|pizza pizza|papa john|mcdonald|burger king|kfc|a&w|tim hortons)\b/.test(name)) score -= 6;
   return score;
 }
@@ -150,7 +173,7 @@ function candidateExport(candidate, rank, action) {
     rank,
     recommended_action: action,
     restaurant_id: candidate.restaurantId,
-    restaurant_name: candidate.restaurantName,
+    restaurant_name: candidate.restaurantName || candidate.name || "",
     neighborhood: candidate.neighborhood || candidate.neighbourhood || "",
     candidate_id: candidate.id,
     thumbnail_url: candidate.thumbnailUrl,
@@ -181,7 +204,7 @@ function sourceCheckScore(row) {
   const rowFlags = flags(row.quality_flags || row.qualityFlags);
   let score = 50;
   if (cleanSourceCheck(row)) score += 20;
-  if (token(row.source_host_validation) === "remote_image_host_needs_source_check") score += 8;
+  if (token(row.source_host_validation || row.sourceHostValidation) === "remote_image_host_needs_source_check") score += 8;
   if (String(row.thumbnail_url || row.thumbnailUrl || "").startsWith("https://")) score += 4;
   for (const flag of rowFlags) {
     if (hardBlockFlags.has(flag)) score -= 30;
@@ -193,7 +216,9 @@ function sourceCheckExport(row, rank) {
   const rowFlags = flags(row.quality_flags || row.qualityFlags);
   return {
     rank,
-    recommended_action: cleanSourceCheck(row) ? "verify remote image host is first-party-controlled, then move to visual promotion review" : "reject or keep held until quality/source issues are resolved",
+    recommended_action: cleanSourceCheck(row)
+      ? "verify remote image host is first-party-controlled, then move to visual promotion review"
+      : "reject or keep held until quality/source issues are resolved",
     restaurant_id: row.restaurant_id || row.restaurantId,
     restaurant_name: row.restaurant_name || row.restaurantName,
     neighborhood: row.neighborhood || "",
@@ -212,17 +237,19 @@ function sourceCheckExport(row, rank) {
 
 function outreachScore(row) {
   let score = 0;
-  if (safeUrl(row.source_url || row.sourceUrl)) score += 30;
+  if (asHttpUrl(row.source_url || row.sourceUrl)) score += 30;
   if (String(row.neighborhood || "").trim()) score += 5;
   return score;
 }
 
 function outreachExport(row, rank) {
-  const hasWebsite = Boolean(safeUrl(row.source_url || row.sourceUrl));
+  const hasWebsite = Boolean(asHttpUrl(row.source_url || row.sourceUrl));
   return {
     outreach_rank: rank,
     outreach_priority: hasWebsite ? "website_first" : "manual_contact_lookup",
-    recommended_action: hasWebsite ? "use official site/contact page for owner media permission request" : "find verified owner contact before requesting media",
+    recommended_action: hasWebsite
+      ? "use official site/contact page for owner media permission request"
+      : "find verified owner contact before requesting media",
     restaurant_id: row.restaurant_id || row.restaurantId,
     name: row.name || row.restaurant_name || row.restaurantName,
     neighborhood: row.neighborhood || "",
@@ -247,7 +274,7 @@ function outreachExport(row, rank) {
 
 function csvEscape(value) {
   const text = String(value ?? "");
-  return /[",\r\n]/.test(text) ? `"${text.replace(/"/g, """")}"` : text;
+  return /[",\r\n]/.test(text) ? `"${text.replace(/"/g, '""')}"` : text;
 }
 
 function csvRows(headers, rows) {
@@ -269,11 +296,11 @@ function mediaRecordFromCandidate(row) {
     url: row.thumbnail_url,
     alt: `${row.restaurant_name} official website image`,
     sourceUrl: row.source_url,
-    sourceType: "official_site_permitted",
+    sourceType: "official_site_remote_reference",
     creator: row.restaurant_name,
-    license: "First-party official site media",
+    license: "First-party official site remote media reference",
     rightsBasis: approvedRemoteRightsBasis,
-    permission: "permitted",
+    permission: "permitted_remote_reference",
     permissionConfirmed: true,
     attribution: `${row.restaurant_name}, official website`,
     reviewState: "approved",
@@ -292,13 +319,13 @@ function decisionRecordFromCandidate(row) {
     decision: "approve_thumbnail",
     decidedAt: generatedAt,
     decidedBy: "Halifax Sourced governed thumbnail promotion planner",
-    note: "Clean direct-promotion candidate selected from source-backed thumbnail queue.",
+    note: "Clean exact-ID candidate selected from source-backed thumbnail queue; remote first-party media reference only.",
     sourceKind: row.source_kind,
     extractionMethod: row.extraction_method,
     confidence: row.confidence,
     reviewPriority: row.review_priority,
     visualReviewState: "ready_for_media_manifest",
-    permission: "permitted",
+    permission: "permitted_remote_reference",
     permissionConfirmed: true,
     rightsBasis: approvedRemoteRightsBasis,
     attribution: `${row.restaurant_name}, official website`
@@ -308,19 +335,23 @@ function decisionRecordFromCandidate(row) {
 async function applyDirectPromotions(rows) {
   const decisions = await loadJson("data/reviewed-thumbnail-decisions.json", { version: 1, records: [] });
   const media = await loadWindowScript("data/restaurant-media.js", "HALIFAX_RESTAURANT_MEDIA", { version: 1, records: [] });
-  const priority = await loadJson("data/restaurant-media-priority.json", { version: 1, records: [] });
+  const priorityPayload = await loadJson("data/restaurant-media-priority.json", { version: 1, records: [] });
   const existingDecisionKeys = new Set((decisions.records || []).map((record) => record.id || `${record.restaurantId}|${record.thumbnailUrl}`));
   const newDecisionRecords = rows
     .map(decisionRecordFromCandidate)
     .filter((record) => !existingDecisionKeys.has(record.id) && !existingDecisionKeys.has(`${record.restaurantId}|${record.thumbnailUrl}`));
-  const mediaRecords = rows.map(mediaRecordFromCandidate);
-  const mergedMedia = upsertByRestaurant(media.records || [], mediaRecords);
-  const priorityByRestaurant = new Map((priority.records || []).map((record) => [record.restaurantId, record]));
+  const mergedMedia = upsertByRestaurant(media.records || [], rows.map(mediaRecordFromCandidate));
+  const priorityByRestaurant = new Map((priorityPayload.records || []).map((record) => [record.restaurantId, record]));
+
   for (const row of rows) {
     priorityByRestaurant.set(row.restaurant_id, { restaurantId: row.restaurant_id, name: row.restaurant_name, status: "approved" });
   }
-  const priorityRecords = [...priorityByRestaurant.values()].sort((a, b) => String(a.name || "").localeCompare(String(b.name || "")) || String(a.restaurantId).localeCompare(String(b.restaurantId)));
-  const updatedDecisions = {
+
+  const priorityRecords = [...priorityByRestaurant.values()].sort(
+    (a, b) => String(a.name || "").localeCompare(String(b.name || "")) || String(a.restaurantId).localeCompare(String(b.restaurantId))
+  );
+
+  await writeFile(new URL("data/reviewed-thumbnail-decisions.json", root), JSON.stringify({
     ...decisions,
     generatedAt,
     counts: {
@@ -330,23 +361,30 @@ async function applyDirectPromotions(rows) {
       total: (decisions.records || []).length + newDecisionRecords.length
     },
     records: [...(decisions.records || []), ...newDecisionRecords]
-  };
-  const updatedMedia = {
+  }, null, 2) + "\n");
+  await writeFile(new URL("data/restaurant-media.js", root), `window.HALIFAX_RESTAURANT_MEDIA = ${JSON.stringify({
     ...media,
     version: Number(media.version || 0) + 1,
     generatedAt,
     records: mergedMedia
-  };
-  const updatedPriority = {
-    ...priority,
+  }, null, 2)};\n`);
+  await writeFile(new URL("data/restaurant-media-priority.json", root), JSON.stringify({
+    ...priorityPayload,
     generatedAt,
     targetCount: priorityRecords.length,
     records: priorityRecords
-  };
-  await writeFile(new URL("data/reviewed-thumbnail-decisions.json", outputRoot), JSON.stringify(updatedDecisions, null, 2) + "\n");
-  await writeFile(new URL("data/restaurant-media.js", outputRoot), `window.HALIFAX_RESTAURANT_MEDIA = ${JSON.stringify(updatedMedia, null, 2)};\n`);
-  await writeFile(new URL("data/restaurant-media-priority.json", outputRoot), JSON.stringify(updatedPriority, null, 2) + "\n");
+  }, null, 2) + "\n");
+
   return { decisionsAdded: newDecisionRecords.length, mediaRecords: mergedMedia.length, priorityRecords: priorityRecords.length };
+}
+
+function countBy(rows, getter) {
+  const counts = {};
+  for (const row of rows) {
+    const key = getter(row) || "unknown";
+    counts[key] = (counts[key] || 0) + 1;
+  }
+  return counts;
 }
 
 const catalog = await loadJson("data/build/catalog.json", { restaurants: [] });
@@ -354,6 +392,7 @@ const thumbnailPayload = await loadJson("data/build/thumbnail-candidates.json", 
 const coverageReport = await loadJson("data/build/thumbnail-coverage-report.json", { counts: {}, queues: {} });
 const sourceCheckPayload = await loadJson("data/build/thumbnail-source-check-queue.json", { records: [] });
 const ownerOutreachPayload = await loadJson("data/build/owner-media-outreach.json", { records: [] });
+
 const candidates = Array.isArray(thumbnailPayload.candidates) ? thumbnailPayload.candidates : [];
 const restaurants = Array.isArray(catalog.restaurants) ? catalog.restaurants : [];
 const restaurantsById = new Map(restaurants.map((restaurant) => [restaurant.id, restaurant]));
@@ -361,8 +400,9 @@ const approvedRestaurantIds = new Set(candidates.filter((candidate) => candidate
 
 const directEligible = candidates
   .filter((candidate) => canDirectPromote(candidate) && !approvedRestaurantIds.has(candidate.restaurantId))
-  .map((candidate) => ({ ...candidate, ...(restaurantsById.get(candidate.restaurantId) || {}) }))
+  .map((candidate) => ({ ...(restaurantsById.get(candidate.restaurantId) || {}), ...candidate }))
   .sort((a, b) => directScore(b) - directScore(a) || String(a.restaurantName || a.name || "").localeCompare(String(b.restaurantName || b.name || "")));
+
 const bestByRestaurant = [];
 const seenRestaurants = new Set();
 for (const candidate of directEligible) {
@@ -370,13 +410,18 @@ for (const candidate of directEligible) {
   seenRestaurants.add(candidate.restaurantId);
   bestByRestaurant.push(candidate);
 }
-const directPromotionRows = bestByRestaurant.map((candidate, index) => candidateExport(candidate, index + 1, index < directLimit ? "promote_to_restaurant_media_first" : "keep_in_direct_promotion_backlog"));
+
+const directPromotionRows = bestByRestaurant.map((candidate, index) => candidateExport(
+  candidate,
+  index + 1,
+  index < directLimit ? "promote_to_restaurant_media_first" : "keep_in_direct_promotion_backlog"
+));
 const directPromotionBatch = directPromotionRows.slice(0, directLimit);
 const directPromotionBacklog = directPromotionRows.slice(directLimit);
 
 const sourceCheckRows = (sourceCheckPayload.records || [])
   .filter((row) => !approvedRestaurantIds.has(row.restaurant_id || row.restaurantId))
-  .sort((a, b) => sourceCheckScore(b) - sourceCheckScore(a) || String(a.restaurant_name || "").localeCompare(String(b.restaurant_name || "")))
+  .sort((a, b) => sourceCheckScore(b) - sourceCheckScore(a) || String(a.restaurant_name || a.restaurantName || "").localeCompare(String(b.restaurant_name || b.restaurantName || "")))
   .map((row, index) => sourceCheckExport(row, index + 1));
 const cleanSourceCheckRows = sourceCheckRows.filter((row) => !flags(row.quality_flags).some((flag) => hardBlockFlags.has(flag)));
 const sourceCheckFirst = cleanSourceCheckRows.slice(0, sourceCheckLimit);
@@ -431,15 +476,6 @@ const plan = {
   }
 };
 
-function countBy(rows, getter) {
-  const counts = {};
-  for (const row of rows) {
-    const key = getter(row) || "unknown";
-    counts[key] = (counts[key] || 0) + 1;
-  }
-  return counts;
-}
-
 plan.mix = {
   directPromotionByConfidence: countBy(directPromotionRows, (row) => row.confidence),
   directPromotionBySourceKind: countBy(directPromotionRows, (row) => row.source_kind),
@@ -452,16 +488,16 @@ const outreachHeaders = ["outreach_rank", "outreach_priority", "recommended_acti
 
 const markdown = `# Thumbnail coverage attack plan\n\nGenerated: ${generatedAt}\n\nThis plan works thumbnail coverage in three governed batches: direct-promotion candidates first, source-check holds second, and owner outreach for restaurants that still have no candidate.\n\n## Counts\n\n| Metric | Count |\n| --- | ---: |\n| Restaurants | ${plan.counts.restaurants.toLocaleString()} |\n| Thumbnail candidates | ${plan.counts.candidates.toLocaleString()} |\n| Restaurants with approved thumbnail | ${Number(plan.counts.restaurantsWithApprovedThumbnail || 0).toLocaleString()} |\n| Restaurants missing approved thumbnail | ${Number(plan.counts.restaurantsMissingApprovedThumbnail || 0).toLocaleString()} |\n| Restaurants missing any candidate | ${Number(plan.counts.restaurantsMissingAnyCandidate || 0).toLocaleString()} |\n| Direct-promotion eligible restaurants | ${plan.counts.directPromotionEligibleRestaurants.toLocaleString()} |\n| Direct-promotion first batch | ${plan.counts.directPromotionBatch.toLocaleString()} |\n| Clean source-check candidates | ${plan.counts.cleanSourceCheckCandidates.toLocaleString()} |\n| Owner outreach rows | ${plan.counts.ownerOutreachRows.toLocaleString()} |\n\n## First batch\n\nThe first batch is written to \`data/build/thumbnail-promotion-plan.csv\`. Apply mode is intentionally opt-in with \`THUMBNAIL_PROMOTION_APPLY=1\`; normal Quality Gate runs only emit the plan.\n\n## Source-check pass\n\nThe source-check shortlist is written to \`data/build/thumbnail-source-check-priority.csv\`. These records are not production-ready until the remote image host and first-party provenance have been checked.\n\n## Owner outreach\n\nThe no-candidate outreach list is written to \`data/build/thumbnail-owner-outreach-priority.csv\` with all ${plan.counts.ownerOutreachRows.toLocaleString()} current owner-submission rows.\n`;
 
-await mkdir(new URL("data/build", outputRoot), { recursive: true });
-await mkdir(new URL("artifacts", outputRoot), { recursive: true });
-await mkdir(new URL("docs", outputRoot), { recursive: true });
-await writeFile(new URL("data/build/thumbnail-promotion-plan.json", outputRoot), JSON.stringify(plan, null, 2) + "\n");
-await writeFile(new URL("artifacts/thumbnail-promotion-plan.json", outputRoot), JSON.stringify(plan, null, 2) + "\n");
-await writeFile(new URL("data/build/thumbnail-promotion-plan.csv", outputRoot), csvRows(promotionHeaders, directPromotionRows));
-await writeFile(new URL("data/build/thumbnail-source-check-priority.csv", outputRoot), csvRows(sourceCheckHeaders, sourceCheckRows));
-await writeFile(new URL("data/build/thumbnail-owner-outreach-priority.json", outputRoot), JSON.stringify({ generatedAt, count: ownerOutreachRows.length, records: ownerOutreachRows }, null, 2) + "\n");
-await writeFile(new URL("data/build/thumbnail-owner-outreach-priority.csv", outputRoot), csvRows(outreachHeaders, ownerOutreachRows));
-await writeFile(new URL("docs/thumbnail-coverage-attack-plan.md", outputRoot), markdown);
+await mkdir(new URL("data/build", root), { recursive: true });
+await mkdir(new URL("artifacts", root), { recursive: true });
+await mkdir(new URL("docs", root), { recursive: true });
+await writeFile(new URL("data/build/thumbnail-promotion-plan.json", root), JSON.stringify(plan, null, 2) + "\n");
+await writeFile(new URL("artifacts/thumbnail-promotion-plan.json", root), JSON.stringify(plan, null, 2) + "\n");
+await writeFile(new URL("data/build/thumbnail-promotion-plan.csv", root), csvRows(promotionHeaders, directPromotionRows));
+await writeFile(new URL("data/build/thumbnail-source-check-priority.csv", root), csvRows(sourceCheckHeaders, sourceCheckRows));
+await writeFile(new URL("data/build/thumbnail-owner-outreach-priority.json", root), JSON.stringify({ generatedAt, count: ownerOutreachRows.length, records: ownerOutreachRows }, null, 2) + "\n");
+await writeFile(new URL("data/build/thumbnail-owner-outreach-priority.csv", root), csvRows(outreachHeaders, ownerOutreachRows));
+await writeFile(new URL("docs/thumbnail-coverage-attack-plan.md", root), markdown);
 
 console.log(JSON.stringify({ counts: plan.counts, mode: plan.mode, applyResult }, null, 2));
 console.log("Thumbnail coverage attack plan written to data/build, artifacts, and docs.");
