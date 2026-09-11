@@ -1,5 +1,6 @@
 import { readFile } from "node:fs/promises";
 import { Script, createContext } from "node:vm";
+import { isLocalRestaurantRecord, localRestaurantPolicyDecision } from "./lib/local-restaurant-policy.mjs";
 
 const context = createContext({ window: {} });
 for (const file of ["../data/restaurants.js", "../data/osm-restaurants.js", "../data/ns-food-inspections.js", "../data/official-site-signals.js"]) {
@@ -18,6 +19,15 @@ const statuses = new Set(["verified", "needs-review", "restricted"]);
 const operatingStatuses = new Set(["active", "temporarily_closed", "permanently_closed", "moved", "coming_soon", "unknown"]);
 const nsFoodInspections = context.window.HALIFAX_NS_FOOD_INSPECTIONS ?? null;
 const officialSiteSignals = context.window.HALIFAX_OFFICIAL_SITE_SIGNALS ?? null;
+const localPolicyExcluded = { curated: 0, openstreetmap: 0 };
+
+for (const name of ["McDonald's", "Wendy's", "Tim Hortons", "Subway"]) {
+  if (isLocalRestaurantRecord({ name })) errors.push(`Local restaurant policy fixture should be excluded: ${name}`);
+}
+for (const name of ["The Canteen", "EDNA Restaurant", "Bar Kismet", "Cafe Good Luck"]) {
+  const decision = localRestaurantPolicyDecision({ name });
+  if (decision.excluded) errors.push(`Local restaurant policy fixture should remain eligible: ${name} matched ${decision.matchedToken}`);
+}
 
 for (const { label, records } of groups) {
   if (!Array.isArray(records)) {
@@ -28,6 +38,14 @@ for (const { label, records } of groups) {
   for (const [index, restaurant] of records.entries()) {
     for (const field of requiredFields) {
       if (!(field in restaurant)) errors.push(`${label} restaurant ${index} is missing ${field}.`);
+    }
+
+    const policyDecision = localRestaurantPolicyDecision(restaurant);
+    if (policyDecision.excluded) {
+      localPolicyExcluded[label] += 1;
+      if (label === "curated") {
+        errors.push(`${restaurant.id} is curated but matches non-local chain policy via ${policyDecision.field}: ${policyDecision.matchedValue}`);
+      }
     }
 
     if (ids.has(restaurant.id)) errors.push(`Duplicate id across sources: ${restaurant.id}`);
@@ -109,3 +127,4 @@ const total = groups.reduce((count, group) => count + group.records.length, 0);
 const nsCount = nsFoodInspections?.records?.length ?? 0;
 const officialCount = officialSiteSignals?.results?.length ?? 0;
 console.log(`Validated ${total} directory records (${groups.map((group) => `${group.records.length} ${group.label}`).join(", ")}), ${nsCount} Nova Scotia public registry records, and ${officialCount} official website signal records.`);
+console.log(`Local restaurant policy would exclude ${localPolicyExcluded.openstreetmap} raw OpenStreetMap chain/franchise records before app/catalog merge.`);
