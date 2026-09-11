@@ -10,6 +10,7 @@ const DEFAULT_EVENT_FILTERS = Object.freeze({
   time: "all",
   source: "all",
   access: "all",
+  duration: "short",
   query: "",
   sort: "soonest",
   savedOnly: false
@@ -24,6 +25,7 @@ Object.assign(cityEventState, {
   time: cityEventState.time || DEFAULT_EVENT_FILTERS.time,
   source: cityEventState.source || DEFAULT_EVENT_FILTERS.source,
   access: cityEventState.access || DEFAULT_EVENT_FILTERS.access,
+  duration: cityEventState.duration || DEFAULT_EVENT_FILTERS.duration,
   query: cityEventState.query || DEFAULT_EVENT_FILTERS.query,
   sort: cityEventState.sort || DEFAULT_EVENT_FILTERS.sort,
   savedOnly: Boolean(cityEventState.savedOnly),
@@ -67,11 +69,62 @@ function dateKeyFromParts(parts) {
   return `${String(parts.year).padStart(4, "0")}-${String(parts.month).padStart(2, "0")}-${String(parts.day).padStart(2, "0")}`;
 }
 
+function partsFromDateKey(key) {
+  const match = /^(\d{4})-(\d{2})-(\d{2})$/.exec(String(key || ""));
+  if (!match) return null;
+  return { year: Number(match[1]), month: Number(match[2]), day: Number(match[3]) };
+}
+
+function compareDateKeys(a, b) {
+  const left = partsFromDateKey(a);
+  const right = partsFromDateKey(b);
+  if (!left || !right) return 0;
+  return Date.UTC(left.year, left.month - 1, left.day) - Date.UTC(right.year, right.month - 1, right.day);
+}
+
 function eventOverlapsDateRange(event, startKey, endKey) {
   const start = halifaxDateKey(event.startAt);
   const end = halifaxDateKey(event.endAt || event.startAt) || start;
   if (!start || !end) return false;
   return end >= startKey && start <= endKey;
+}
+
+function eventInclusiveDurationDays(event) {
+  const start = halifaxDateKey(event?.startAt);
+  const end = halifaxDateKey(event?.endAt || event?.startAt) || start;
+  const startParts = partsFromDateKey(start);
+  const endParts = partsFromDateKey(end);
+  if (!startParts || !endParts) return null;
+  const days = Math.round((Date.UTC(endParts.year, endParts.month - 1, endParts.day) - Date.UTC(startParts.year, startParts.month - 1, startParts.day)) / 86400000) + 1;
+  return Number.isFinite(days) ? Math.max(1, days) : null;
+}
+
+function eventIsLongRunning(event) {
+  const days = eventInclusiveDurationDays(event);
+  return Number.isFinite(days) && days > 7;
+}
+
+function eventDurationKind(event) {
+  return eventIsLongRunning(event) ? "long" : "short";
+}
+
+function eventDurationLabel(value) {
+  return ({ short: "1-7 day events", long: "Long-running", all: "Any length" })[String(value)] || "1-7 day events";
+}
+
+function eventLooksLikeSportsSeason(event) {
+  const title = String(event?.title || "");
+  const categories = Array.isArray(event?.categories) ? event.categories : [];
+  const sports = categories.includes("Sports") || /official_.*sports|sports_schedule/i.test(String(event?.sourceKind || ""));
+  if (!sports) return false;
+  if (!/\bseason\b|season ticket|home schedule/i.test(title)) return false;
+  if (!eventIsLongRunning(event)) return false;
+  const specificGameCue = /\b(vs\.?|v\.?|versus| at |@)\b|\bhome opener\b|\bmatch(day)?\b|\bgame\s+\d+\b/i;
+  return !specificGameCue.test(` ${title} `);
+}
+
+function isDiscoverableCityEvent(event) {
+  return !eventLooksLikeSportsSeason(event);
 }
 
 function cityEventsForWindow(items) {
@@ -143,6 +196,7 @@ function eventSearchText(event) {
     event.city,
     event.sourceName,
     event.price,
+    eventDurationLabel(eventDurationKind(event)),
     ...(event.categories || [])
   ].filter(Boolean).join(" ").toLowerCase();
 }
@@ -188,29 +242,41 @@ function cityEventSources(items) {
   return [...counts.entries()].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]));
 }
 
-function filteredCityEvents(allItems) {
+function eventPassesFacetFilters(event, options = {}) {
+  const includeDuration = options.includeDuration !== false;
   const query = String(cityEventState.query || "").trim().toLowerCase();
-  let items = allItems.filter((event) => {
-    if (cityEventState.category !== "All" && !(event.categories || []).includes(cityEventState.category)) return false;
-    if (cityEventState.city !== "all" && eventCityName(event) !== cityEventState.city) return false;
-    if (cityEventState.cost !== "all" && eventCostKind(event) !== cityEventState.cost) return false;
-    if (cityEventState.time !== "all" && eventTimeKind(event) !== cityEventState.time) return false;
-    if (cityEventState.source !== "all" && (event.sourceName || "Other source") !== cityEventState.source) return false;
-    if (cityEventState.access === "tickets" && !safeUrl(event.ticketUrl)) return false;
-    if (cityEventState.access === "source" && safeUrl(event.ticketUrl)) return false;
-    if (cityEventState.savedOnly && !savedCityEvents.has(String(event.id))) return false;
-    if (query && !eventSearchText(event).includes(query)) return false;
-    return true;
-  });
+  if (!isDiscoverableCityEvent(event)) return false;
+  if (cityEventState.category !== "All" && !(event.categories || []).includes(cityEventState.category)) return false;
+  if (cityEventState.city !== "all" && eventCityName(event) !== cityEventState.city) return false;
+  if (cityEventState.cost !== "all" && eventCostKind(event) !== cityEventState.cost) return false;
+  if (cityEventState.time !== "all" && eventTimeKind(event) !== cityEventState.time) return false;
+  if (cityEventState.source !== "all" && (event.sourceName || "Other source") !== cityEventState.source) return false;
+  if (cityEventState.access === "tickets" && !safeUrl(event.ticketUrl)) return false;
+  if (cityEventState.access === "source" && safeUrl(event.ticketUrl)) return false;
+  if (includeDuration && cityEventState.duration !== "all" && eventDurationKind(event) !== cityEventState.duration) return false;
+  if (cityEventState.savedOnly && !savedCityEvents.has(String(event.id))) return false;
+  if (query && !eventSearchText(event).includes(query)) return false;
+  return true;
+}
 
-  items = cityEventsForWindow(items);
-
+function sortCityEventList(items) {
   return items.sort((a, b) => {
     if (cityEventState.sort === "latest") return String(b.startAt || "").localeCompare(String(a.startAt || "")) || String(a.title || "").localeCompare(String(b.title || ""));
     if (cityEventState.sort === "title") return String(a.title || "").localeCompare(String(b.title || ""));
     if (cityEventState.sort === "venue") return String(a.venueName || "").localeCompare(String(b.venueName || "")) || String(a.title || "").localeCompare(String(b.title || ""));
     return String(a.startAt || "").localeCompare(String(b.startAt || "")) || String(a.title || "").localeCompare(String(b.title || ""));
   });
+}
+
+function filteredCityEvents(allItems) {
+  const items = cityEventsForWindow(allItems.filter((event) => eventPassesFacetFilters(event)));
+  return sortCityEventList(items);
+}
+
+function matchingLongRunningCityEvents(allItems) {
+  if (cityEventState.duration !== "short" || cityEventState.windowDays === "all") return [];
+  const items = allItems.filter((event) => eventPassesFacetFilters(event, { includeDuration: false }) && eventIsLongRunning(event));
+  return sortCityEventList(cityEventsForWindow(items));
 }
 
 function eventFilterKey() {
@@ -222,6 +288,7 @@ function eventFilterKey() {
     time: cityEventState.time,
     source: cityEventState.source,
     access: cityEventState.access,
+    duration: cityEventState.duration,
     query: cityEventState.query,
     sort: cityEventState.sort,
     savedOnly: cityEventState.savedOnly
@@ -239,6 +306,7 @@ function syncCityEventStateFromRoute() {
   cityEventState.time = params.get("time") || DEFAULT_EVENT_FILTERS.time;
   cityEventState.source = params.get("source") || DEFAULT_EVENT_FILTERS.source;
   cityEventState.access = params.get("access") || DEFAULT_EVENT_FILTERS.access;
+  cityEventState.duration = params.get("length") || params.get("duration") || DEFAULT_EVENT_FILTERS.duration;
   cityEventState.query = params.get("event") || DEFAULT_EVENT_FILTERS.query;
   cityEventState.sort = params.get("sort") || DEFAULT_EVENT_FILTERS.sort;
   cityEventState.savedOnly = params.get("saved") === "1";
@@ -256,6 +324,7 @@ function eventFilterHash() {
   if (cityEventState.time !== DEFAULT_EVENT_FILTERS.time) params.set("time", cityEventState.time);
   if (cityEventState.source !== DEFAULT_EVENT_FILTERS.source) params.set("source", cityEventState.source);
   if (cityEventState.access !== DEFAULT_EVENT_FILTERS.access) params.set("access", cityEventState.access);
+  if (cityEventState.duration !== DEFAULT_EVENT_FILTERS.duration) params.set("length", cityEventState.duration);
   if (cityEventState.query) params.set("event", cityEventState.query);
   if (cityEventState.sort !== DEFAULT_EVENT_FILTERS.sort) params.set("sort", cityEventState.sort);
   if (cityEventState.savedOnly) params.set("saved", "1");
@@ -275,7 +344,7 @@ function resetCityEventFilters() {
 }
 
 function eventWindowLabel(value) {
-  return ({ today: "Today", weekend: "This weekend", "7": "Next 7 days", "30": "Next 30 days", "90": "Next 90 days", all: "All upcoming" })[String(value)] || "All upcoming";
+  return ({ today: "Today", weekend: "This weekend", "7": "Next 7 calendar days", "30": "Next 30 days", "90": "Next 90 days", all: "All upcoming" })[String(value)] || "All upcoming";
 }
 
 function eventActiveFilterLabels() {
@@ -289,6 +358,7 @@ function eventActiveFilterLabels() {
   if (cityEventState.source !== "all") labels.push(cityEventState.source);
   if (cityEventState.access === "tickets") labels.push("Tickets / registration");
   if (cityEventState.access === "source") labels.push("Source page only");
+  if (cityEventState.duration !== DEFAULT_EVENT_FILTERS.duration) labels.push(eventDurationLabel(cityEventState.duration));
   if (cityEventState.savedOnly) labels.push("Saved events");
   return labels;
 }
@@ -297,16 +367,34 @@ function eventFilterSelect(label, id, selected, options) {
   return `<label class="event-filter-control"><span>${escapeHtml(label)}</span><select id="${id}">${options.map(([value, text]) => `<option value="${escapeHtml(value)}" ${String(selected) === String(value) ? "selected" : ""}>${escapeHtml(text)}</option>`).join("")}</select></label>`;
 }
 
+function eventDateBadge(event) {
+  const start = new Date(event.startAt);
+  if (Number.isNaN(start.getTime())) return { label: "DATE", primary: "TBD", className: "" };
+  if (eventIsLongRunning(event)) {
+    const end = new Date(event.endAt || event.startAt);
+    const endLabel = Number.isNaN(end.getTime()) ? "TBD" : end.toLocaleDateString("en-CA", { month: "short", day: "numeric", timeZone: HALIFAX_EVENT_TIME_ZONE });
+    return { label: "ONGOING", primary: `Until ${endLabel}`, className: "is-long-running" };
+  }
+  return {
+    label: start.toLocaleDateString("en-CA", { month: "short", timeZone: HALIFAX_EVENT_TIME_ZONE }).toUpperCase(),
+    primary: start.toLocaleDateString("en-CA", { day: "numeric", timeZone: HALIFAX_EVENT_TIME_ZONE }),
+    className: ""
+  };
+}
+
 renderCityEvents = function renderCityEventsWithCapabilities(allItems) {
   document.body.classList.remove("event-filter-drawer-open");
   syncCityEventStateFromRoute();
-  const categories = cityEventCategories(allItems);
-  const cities = cityEventCities(allItems);
-  const sources = cityEventSources(allItems);
-  const items = filteredCityEvents(allItems);
+  const discoverableItems = allItems.filter(isDiscoverableCityEvent);
+  const suppressedSportsSeasonCount = allItems.length - discoverableItems.length;
+  const categories = cityEventCategories(discoverableItems);
+  const cities = cityEventCities(discoverableItems);
+  const sources = cityEventSources(discoverableItems);
+  const items = filteredCityEvents(discoverableItems);
+  const longRunningMatches = matchingLongRunningCityEvents(discoverableItems);
   const visibleItems = items.slice(0, cityEventState.page * CITY_EVENT_PAGE_SIZE);
-  const featured = visibleItems[0] || allItems[0];
-  const sourceCount = new Set(allItems.map((event) => event.sourceId).filter(Boolean)).size;
+  const featured = visibleItems[0] || discoverableItems[0];
+  const sourceCount = new Set(discoverableItems.map((event) => event.sourceId).filter(Boolean)).size;
   const failedSourceCount = Array.isArray(cityEventPayload?.failures) ? cityEventPayload.failures.length : 0;
   const scopeRemoved = cityEventPayload?.scopeAudit?.removedOutOfScope ?? 0;
   const activeLabels = eventActiveFilterLabels();
@@ -319,11 +407,14 @@ renderCityEvents = function renderCityEventsWithCapabilities(allItems) {
     time: cityEventState.time,
     source: cityEventState.source,
     access: cityEventState.access,
+    duration: cityEventState.duration,
     query: cityEventState.query,
     sort: cityEventState.sort,
     savedOnly: cityEventState.savedOnly,
     matched: items.length,
-    visible: visibleItems.length
+    visible: visibleItems.length,
+    longRunningMatches: longRunningMatches.length,
+    suppressedSportsSeasonCount
   };
 
   if (globalSearch) {
@@ -334,14 +425,14 @@ renderCityEvents = function renderCityEventsWithCapabilities(allItems) {
   appView.innerHTML = `
     <section class="editorial-hero events-hero">
       <div class="page-shell editorial-hero-inner">
-        <div><span class="eyebrow">What's happening</span><h1>Events in Halifax</h1><p>Find sports, music, food, festivals, arts, comedy, community events and more — then narrow by date, city, price, time, source and ticket availability.</p></div>
+        <div><span class="eyebrow">What's happening</span><h1>Events in Halifax</h1><p>Find specific local games, music, food, festivals, arts, comedy, community events and short-run listings, with long-running listings kept in their own event length filter.</p></div>
         ${featured ? `<div class="featured-event"><span>UPCOMING EVENT</span><h2>${escapeHtml(featured.title)}</h2><p>${escapeHtml(structuredEventWhen(featured))}${featured.venueName ? ` · ${escapeHtml(featured.venueName)}` : ""}</p>${eventSourceButton(featured, "View source ↗", "button light")}</div>` : ""}
       </div>
     </section>
     <section class="page-shell two-column-page event-discovery-layout">
       <div>
         <div class="event-mobile-filter-bar">
-          <div><strong>${items.length.toLocaleString()} events</strong>${activeLabels.length ? `<span>${activeLabels.length} filter${activeLabels.length === 1 ? "" : "s"} active</span>` : `<span>All upcoming events</span>`}</div>
+          <div><strong>${items.length.toLocaleString()} events</strong>${activeLabels.length ? `<span>${activeLabels.length} filter${activeLabels.length === 1 ? "" : "s"} active</span>` : `<span>${eventDurationLabel(cityEventState.duration)}</span>`}</div>
           <button class="button secondary" type="button" data-event-filter-open aria-expanded="false"><span aria-hidden="true">☷</span> Filters${activeLabels.length ? ` (${activeLabels.length})` : ""}</button>
         </div>
         <div class="event-filter-backdrop" data-event-filter-backdrop></div>
@@ -356,13 +447,14 @@ renderCityEvents = function renderCityEventsWithCapabilities(allItems) {
             ${[["today", "Today"], ["weekend", "This weekend"], ["7", "7 days"], ["30", "30 days"], ["90", "90 days"], ["all", "All upcoming"]].map(([value, label]) => `<button class="chip ${String(cityEventState.windowDays) === value ? "is-active" : ""}" type="button" data-event-window="${value}" aria-pressed="${String(cityEventState.windowDays) === value}">${label}</button>`).join("")}
           </div>
           <div class="chip-row city-event-filters" aria-label="Event categories">
-            <button class="chip ${cityEventState.category === "All" ? "is-active" : ""}" type="button" data-event-category="All" aria-pressed="${cityEventState.category === "All"}">All categories <small>${allItems.length}</small></button>
+            <button class="chip ${cityEventState.category === "All" ? "is-active" : ""}" type="button" data-event-category="All" aria-pressed="${cityEventState.category === "All"}">All categories <small>${discoverableItems.length}</small></button>
             ${categories.map(([category, count]) => `<button class="chip ${cityEventState.category === category ? "is-active" : ""}" type="button" data-event-category="${escapeHtml(category)}" aria-pressed="${cityEventState.category === category}">${escapeHtml(category)} <small>${count}</small></button>`).join("")}
           </div>
           <div class="event-filter-grid">
             ${eventFilterSelect("Area", "eventCityFilter", cityEventState.city, [["all", "All areas"], ...cities.map(([name, count]) => [name, `${name} (${count})`])])}
             ${eventFilterSelect("Price", "eventCostFilter", cityEventState.cost, [["all", "Any price"], ["free", "Free"], ["paid", "Paid"], ["unknown", "Price not listed"]])}
             ${eventFilterSelect("Time", "eventTimeFilter", cityEventState.time, [["all", "Any time"], ["all-day", "All day"], ["morning", "Morning"], ["afternoon", "Afternoon"], ["evening", "Evening"]])}
+            ${eventFilterSelect("Length", "eventDurationFilter", cityEventState.duration, [["short", "1-7 day events"], ["long", "Long-running only"], ["all", "Any length"]])}
             ${eventFilterSelect("Access", "eventAccessFilter", cityEventState.access, [["all", "Any access"], ["tickets", "Tickets / registration"], ["source", "Source page only"]])}
             ${eventFilterSelect("Source", "eventSourceFilter", cityEventState.source, [["all", "All sources"], ...sources.map(([name, count]) => [name, `${name} (${count})`])])}
             ${eventFilterSelect("Sort", "eventSortFilter", cityEventState.sort, [["soonest", "Soonest first"], ["latest", "Latest first"], ["title", "Event name"], ["venue", "Venue"]])}
@@ -372,13 +464,14 @@ renderCityEvents = function renderCityEventsWithCapabilities(allItems) {
           <button class="button primary event-filter-done" type="button" data-event-filter-close>Show ${items.length.toLocaleString()} events</button>
         </section>
 
+        ${longRunningMatches.length ? `<div class="event-scope-note"><div><strong>${longRunningMatches.length.toLocaleString()} long-running listing${longRunningMatches.length === 1 ? "" : "s"} overlap ${escapeHtml(eventWindowLabel(cityEventState.windowDays).toLowerCase())}.</strong><span>They are separated from one-to-seven-day events.</span></div><button class="button secondary" type="button" data-event-duration="long">Show long-running</button></div>` : ""}
         <div class="section-heading no-top event-results-heading"><div><h2>${cityEventState.category === "All" ? "Upcoming events" : `${escapeHtml(cityEventState.category)} events`}</h2><p>Every listing keeps its source. Confirm last-minute schedule, ticket, price and availability changes with the linked organizer or venue.</p></div><span class="editorial-count" data-event-result-count>Showing ${visibleItems.length} of ${items.length} matching events</span></div>
         <div class="event-list">${visibleItems.length ? visibleItems.map(cityEventCard).join("") : emptyPageState("No upcoming events match these filters. Try clearing one or two filters.")}</div>
         ${items.length > visibleItems.length ? `<div class="editorial-more"><button class="button secondary" type="button" data-event-load-more>Load ${Math.min(CITY_EVENT_PAGE_SIZE, items.length - visibleItems.length)} more events</button><p>${items.length - visibleItems.length} more events remain in the current filter.</p></div>` : ""}
       </div>
       <aside class="events-sidebar">
         <div class="calendar-card">${simpleCalendar(items)}</div>
-        <div class="source-card"><h2>Event coverage</h2><p>${allItems.length.toLocaleString()} upcoming Halifax-metro events from ${sourceCount.toLocaleString()} source feeds.</p><p>${categories.length.toLocaleString()} source categories, ${cities.length.toLocaleString()} areas and ${sources.length.toLocaleString()} source calendars are available as filters.</p>${scopeRemoved ? `<p>${scopeRemoved.toLocaleString()} province-wide records were excluded in the latest scope audit because their locations were outside the Halifax-metro publication scope.</p>` : ""}${failedSourceCount ? `<p>${failedSourceCount} source${failedSourceCount === 1 ? "" : "s"} reported a refresh warning.</p>` : ""}</div>
+        <div class="source-card"><h2>Event coverage</h2><p>${discoverableItems.length.toLocaleString()} upcoming Halifax-metro event listings from ${sourceCount.toLocaleString()} source feeds.</p><p>${categories.length.toLocaleString()} source categories, ${cities.length.toLocaleString()} areas and ${sources.length.toLocaleString()} source calendars are available as filters.</p>${suppressedSportsSeasonCount ? `<p>${suppressedSportsSeasonCount.toLocaleString()} sports season summary ${suppressedSportsSeasonCount === 1 ? "listing is" : "listings are"} hidden from discovery so Sports shows dated local games and matches.</p>` : ""}${scopeRemoved ? `<p>${scopeRemoved.toLocaleString()} province-wide records were excluded in the latest scope audit because their locations were outside the Halifax-metro publication scope.</p>` : ""}${failedSourceCount ? `<p>${failedSourceCount} source${failedSourceCount === 1 ? "" : "s"} reported a refresh warning.</p>` : ""}</div>
         <div class="source-card event-capability-card"><h2>Plan from the listing</h2><p>Save events on this device or create an .ics calendar file directly from any event card. No account is required.</p></div>
       </aside>
     </section>`;
@@ -388,18 +481,16 @@ renderCityEvents = function renderCityEventsWithCapabilities(allItems) {
 };
 
 cityEventCard = function cityEventCardWithActions(event) {
-  const date = new Date(event.startAt);
-  const month = date.toLocaleDateString("en-CA", { month: "short", timeZone: HALIFAX_EVENT_TIME_ZONE }).toUpperCase();
-  const day = date.toLocaleDateString("en-CA", { day: "numeric", timeZone: HALIFAX_EVENT_TIME_ZONE });
+  const badge = eventDateBadge(event);
   const primaryCategory = event.categories?.[0] || "Event";
-  const tags = [...new Set([primaryCategory, ...(event.categories || []).slice(1, 3)])];
+  const tags = [...new Set([primaryCategory, ...(event.categories || []).slice(1, 3), eventIsLongRunning(event) ? "Long-running" : null].filter(Boolean))];
   const source = safeUrl(event.eventUrl) || safeUrl(event.ticketUrl) || safeUrl(event.sourceUrl);
   const eventId = String(event.id || `${event.title}-${event.startAt}`);
   const saved = savedCityEvents.has(eventId);
   const priceLabel = event.price ? String(event.price) : "Price not listed";
   const city = eventCityName(event);
-  return `<article class="event-card" data-event-id="${escapeHtml(eventId)}" data-event-categories="${escapeHtml((event.categories || []).join("|"))}" data-event-city="${escapeHtml(city)}" data-event-cost="${escapeHtml(eventCostKind(event))}">
-    <div class="event-date"><span>${escapeHtml(month)}</span><strong>${escapeHtml(day)}</strong></div>
+  return `<article class="event-card" data-event-id="${escapeHtml(eventId)}" data-event-categories="${escapeHtml((event.categories || []).join("|"))}" data-event-city="${escapeHtml(city)}" data-event-cost="${escapeHtml(eventCostKind(event))}" data-event-duration="${escapeHtml(eventDurationKind(event))}">
+    <div class="event-date ${escapeHtml(badge.className || "")}"><span>${escapeHtml(badge.label)}</span><strong>${escapeHtml(badge.primary)}</strong>${badge.secondary ? `<em>${escapeHtml(badge.secondary)}</em>` : ""}</div>
     <div class="event-thumb media-dining"></div>
     <div class="event-copy"><div class="event-title-line"><h3>${escapeHtml(event.title)}</h3><span>${escapeHtml(primaryCategory)}</span></div><p>${escapeHtml(event.venueName || event.address || city)}</p><small>${escapeHtml(structuredEventWhen(event))} · ${escapeHtml(city)} · ${escapeHtml(priceLabel)}</small><div class="card-tags">${tags.map((tag) => `<span>${escapeHtml(tag)}</span>`).join("")}<span>${escapeHtml(event.sourceName || "Source")}</span></div></div>
     <div class="event-card-actions">${source ? `<a class="button tertiary" href="${escapeHtml(source)}" target="_blank" rel="noreferrer">Source ↗</a>` : ""}<button class="button tertiary ${saved ? "is-saved" : ""}" type="button" data-save-event-id="${escapeHtml(eventId)}" aria-pressed="${saved}" aria-label="${saved ? "Remove" : "Save"} ${escapeHtml(event.title)}">${saved ? "♥ Saved" : "♡ Save"}</button><button class="button tertiary" type="button" data-event-calendar="${escapeHtml(eventId)}">+ Calendar</button></div>
@@ -448,10 +539,20 @@ function bindExpandedCityEventActions() {
     });
   }
 
+  for (const button of document.querySelectorAll("[data-event-duration]")) {
+    button.addEventListener("click", () => {
+      cityEventState.duration = button.dataset.eventDuration || DEFAULT_EVENT_FILTERS.duration;
+      cityEventState.page = 1;
+      replaceEventHash();
+      renderEvents();
+    });
+  }
+
   const selectBindings = [
     ["#eventCityFilter", "city"],
     ["#eventCostFilter", "cost"],
     ["#eventTimeFilter", "time"],
+    ["#eventDurationFilter", "duration"],
     ["#eventAccessFilter", "access"],
     ["#eventSourceFilter", "source"],
     ["#eventSortFilter", "sort"]
@@ -572,7 +673,7 @@ structuredEventWhen = function structuredEventWhenWithAllDay(event) {
     const end = new Date(event.endAt || event.startAt);
     if (Number.isNaN(end.getTime()) || start.toLocaleDateString("en-CA", { timeZone: HALIFAX_EVENT_TIME_ZONE }) === end.toLocaleDateString("en-CA", { timeZone: HALIFAX_EVENT_TIME_ZONE })) return startLabel;
     const endLabel = end.toLocaleDateString("en-CA", { month: "short", day: "numeric", timeZone: HALIFAX_EVENT_TIME_ZONE });
-    return `${startLabel} – ${endLabel}`;
+    return `${startLabel} - ${endLabel}`;
   }
   return baseStructuredEventWhenForAllDay(event);
 };
