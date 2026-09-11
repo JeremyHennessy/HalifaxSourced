@@ -10,6 +10,7 @@ if (!sourceCommitSha || !/^[0-9a-f]{40}$/i.test(sourceCommitSha)) throw new Erro
 
 const coverage = await json("data/build/content-coverage-report.json");
 const lifecycle = await json("data/build/restaurant-lifecycle-report.json");
+const catalog = await json("data/build/catalog.json");
 if (coverage.sourceCommitSha !== sourceCommitSha) throw new Error(`Coverage report SHA ${coverage.sourceCommitSha || "missing"} does not match deployment SHA ${sourceCommitSha}.`);
 
 const metadata = {
@@ -20,13 +21,18 @@ const metadata = {
   deploymentWorkflowRunId: process.env.GITHUB_RUN_ID || null,
   coverageGeneratedAt: coverage.generatedAt || null,
   lifecycleGeneratedAt: lifecycle.generatedAt || null,
+  catalogGeneratedAt: catalog.generatedAt || null,
+  localRestaurantPolicyVersion: catalog.sourceMeta?.localRestaurantPolicy?.version || null,
   counts: {
     canonicalPlaces: coverage.restaurantCoverage?.totalCanonicalPlaces ?? null,
     activePlaces: coverage.restaurantCoverage?.activeCanonicalPlaces ?? null,
     archivedPlaces: coverage.restaurantCoverage?.archivedLifecyclePlaces ?? null,
     rightsApprovedMedia: coverage.restaurantCoverage?.withUsableMedia ?? null,
     canonicalRestaurantsWithUpcomingStructuredEvents: coverage.restaurantCoverage?.withStructuredUpcomingEvents ?? null,
-    upcomingStructuredRestaurantEventRecords: coverage.eventCoverage?.upcomingStructuredRestaurantEventRecords ?? null
+    upcomingStructuredRestaurantEventRecords: coverage.eventCoverage?.upcomingStructuredRestaurantEventRecords ?? null,
+    localPolicyExcluded: catalog.counts?.localPolicyExcluded?.total ?? null,
+    localPolicyExcludedOpenStreetMap: catalog.counts?.localPolicyExcluded?.openStreetMap ?? null,
+    localPolicyExcludedCurated: catalog.counts?.localPolicyExcluded?.curated ?? null
   }
 };
 
