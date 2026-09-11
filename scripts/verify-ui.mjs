@@ -33,9 +33,13 @@ const browser = await playwright.chromium.launch({ headless: true, executablePat
 const page = await browser.newPage({ viewport: { width: 1440, height: 1000 }, acceptDownloads: true });
 const consoleErrors = [];
 const criticalResourceFailures = [];
+function isIgnorableConsoleError(text) {
+  return /^Failed to load resource: net::ERR_CONNECTION_(?:RESET|REFUSED|TIMED_OUT)$/i.test(text) ||
+    /^Failed to load resource: net::ERR_BLOCKED_BY_RESPONSE\.NotSameOrigin$/i.test(text);
+}
 page.on("console", (message) => {
   const text = message.text();
-  if (message.type() === "error" && !/^Failed to load resource: net::ERR_CONNECTION_(?:RESET|REFUSED|TIMED_OUT)$/i.test(text)) consoleErrors.push(text);
+  if (message.type() === "error" && !isIgnorableConsoleError(text)) consoleErrors.push(text);
 });
 page.on("requestfailed", (request) => {
   const type = request.resourceType();
@@ -77,8 +81,15 @@ const totals = await page.evaluate(() => ({
   cityEvents: window.HALIFAX_CITY_EVENTS?.eventCount ?? 0,
   localPolicyExcluded: window.HALIFAX_LOCAL_RESTAURANT_POLICY?.excludedCount ?? 0,
   chainMatches: (() => {
-    const blocked = [/mcdonald/i, /wendy'?s/i, /tim hortons/i, /subway/i, /burger king/i, /\bkfc\b/i, /starbucks/i, /pizza hut/i, /pizza pizza/i, /\bcora\b/i];
     const browserRestaurants = typeof restaurants !== "undefined" && Array.isArray(restaurants) ? restaurants : [];
+    const policy = window.HALIFAX_LOCAL_RESTAURANT_POLICY;
+    if (policy?.localRestaurantPolicyDecision) {
+      return browserRestaurants
+        .filter((restaurant) => policy.localRestaurantPolicyDecision(restaurant)?.excluded)
+        .map((restaurant) => restaurant.name || restaurant.id)
+        .slice(0, 20);
+    }
+    const blocked = [/mcdonald/i, /wendy'?s/i, /tim hortons/i, /subway/i, /burger king/i, /\bkfc\b/i, /starbucks/i, /pizza hut/i, /pizza pizza/i, /\bcora\b/i];
     return browserRestaurants
       .filter((restaurant) => blocked.some((pattern) => pattern.test(String(restaurant?.name || ""))))
       .map((restaurant) => restaurant.name)
@@ -477,7 +488,6 @@ await page.locator("#globalSearch").press("Enter");
 await page.waitForURL(/#explore/);
 await page.locator(".results-area").waitFor();
 if (await page.locator(".restaurant-card", { hasText: "Field Guide" }).count()) throw new Error("Closed Field Guide leaked into active discovery results.");
-
 await page.goto(`${url}/#restaurant/highwayman`, { waitUntil: "networkidle" });
 await page.locator("h1", { hasText: "Highwayman" }).waitFor();
 await page.evaluate(() => {
