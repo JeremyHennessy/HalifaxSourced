@@ -226,6 +226,10 @@ GitHub Actions secrets used by the Meta pull are `META_FB_ACCESS_TOKEN`, `META_I
 
 Preview workflows are **artifact-only** on feature branches. They do not push generated commits back into an active pull-request branch. This prevents bot-authored refresh commits from invalidating or suppressing the PR Quality Gate. Generated output should be reviewed and deliberately promoted.
 
+`Promote Preview Artifacts` is the promotion bridge for successful `main` preview artifacts. It runs after successful scheduled or manual preview runs, downloads the selected artifact, rejects unknown artifact paths, copies only the approved `data/` and `data/build/` files, opens or updates a `codex/promote-<artifact>` PR, and dispatches `Quality Gate` for that branch. After the promotion PR is merged, the existing `main` Quality Gate triggers the gated Pages deploy.
+
+Manual promotion uses the same guardrails. Start `Promote Preview Artifacts` with the source workflow run ID and one of `source-expansion-preview`, `social-source-preview`, or `city-events-preview`.
+
 ## Deployment and quality gate
 
 GitHub Pages deployment is gated behind the `Quality Gate` workflow. Pull requests and `main` run JavaScript syntax checks, data-integrity gates, city-event scope validation, restaurant-discovery checks, thumbnail candidate checks, thumbnail coverage reporting, SQLite artifact generation, content-coverage generation, the Explore mini-map lifecycle regression, and Playwright UI verification. The gated Pages workflow deploys the exact `main` commit SHA that passed verification.
