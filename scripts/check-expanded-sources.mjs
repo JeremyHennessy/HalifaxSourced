@@ -15,6 +15,7 @@ const feedReviewOverrides = JSON.parse(await readFile(new URL("../data/feed-revi
 const socialProfileOverrides = JSON.parse(await readFile(new URL("../data/social-profile-review-overrides.json", import.meta.url), "utf8").catch(() => "{\"records\":[]}"));
 const discoveredWindow = await loadWindowScript("data/discovered-restaurants.js").catch(() => ({ HALIFAX_DISCOVERED_RESTAURANTS: [] }));
 const discoveredRestaurants = Array.isArray(discoveredWindow.HALIFAX_DISCOVERED_RESTAURANTS) ? discoveredWindow.HALIFAX_DISCOVERED_RESTAURANTS : [];
+const localPolicyExcludedIds = new Set((catalog.sourceMeta?.localRestaurantPolicy?.excludedRecords || []).map((record) => record?.id).filter(Boolean));
 const restaurantIds = new Set([...(catalog.restaurants || []), ...discoveredRestaurants].map((restaurant) => restaurant.id));
 const firstPartyWindow = await loadWindowScript("data/first-party-sources.js");
 const feedWindow = await loadWindowScript("data/website-feed-signals.js");
@@ -26,13 +27,23 @@ const feedPayload = feedWindow.HALIFAX_WEBSITE_FEED_SIGNALS || { signals: [] };
 const websitePagePayload = websitePageWindow.HALIFAX_WEBSITE_PAGE_INTELLIGENCE || { records: [], signals: [] };
 const socialPayload = socialWindow.HALIFAX_SOCIAL_SIGNALS || { signals: [] };
 const recentPayload = recentWindow.HALIFAX_RECENT_SOCIAL_POSTS || { records: [] };
-const records = Array.isArray(firstParty.records) ? firstParty.records : [];
-const feedSignals = Array.isArray(feedPayload.signals) ? feedPayload.signals : [];
-const feedPosts = Array.isArray(feedPayload.posts) ? feedPayload.posts : feedSignals;
-const websitePageRecords = Array.isArray(websitePagePayload.records) ? websitePagePayload.records : [];
-const socialSignals = Array.isArray(socialPayload.signals) ? socialPayload.signals : [];
-const socialPosts = Array.isArray(socialPayload.posts) ? socialPayload.posts : socialSignals;
-const recentPosts = Array.isArray(recentPayload.records) ? recentPayload.records : [];
+function localEligibleRestaurantItems(items) {
+  return (Array.isArray(items) ? items : []).filter((item) => !localPolicyExcludedIds.has(item?.restaurantId));
+}
+const rawRecords = Array.isArray(firstParty.records) ? firstParty.records : [];
+const rawFeedSignals = Array.isArray(feedPayload.signals) ? feedPayload.signals : [];
+const rawFeedPosts = Array.isArray(feedPayload.posts) ? feedPayload.posts : rawFeedSignals;
+const rawWebsitePageRecords = Array.isArray(websitePagePayload.records) ? websitePagePayload.records : [];
+const rawSocialSignals = Array.isArray(socialPayload.signals) ? socialPayload.signals : [];
+const rawSocialPosts = Array.isArray(socialPayload.posts) ? socialPayload.posts : rawSocialSignals;
+const rawRecentPosts = Array.isArray(recentPayload.records) ? recentPayload.records : [];
+const records = localEligibleRestaurantItems(rawRecords);
+const feedSignals = localEligibleRestaurantItems(rawFeedSignals);
+const feedPosts = localEligibleRestaurantItems(rawFeedPosts);
+const websitePageRecords = localEligibleRestaurantItems(rawWebsitePageRecords);
+const socialSignals = localEligibleRestaurantItems(rawSocialSignals);
+const socialPosts = localEligibleRestaurantItems(rawSocialPosts);
+const recentPosts = localEligibleRestaurantItems(rawRecentPosts);
 const failures = [];
 const warnings = [];
 const allowedFeedExclusionReasons = new Set(["compromised_off_topic_feed", "shared_brand_nonlocal_feed"]);
@@ -41,6 +52,7 @@ const allowedRecentCategories = new Set(["happy_hour", "specials", "events", "li
 const excludedFeedUrls = new Set();
 const excludedProfileUrlsByRestaurant = new Map();
 for (const record of feedReviewOverrides.records || []) {
+  if (localPolicyExcludedIds.has(record.restaurantId)) continue;
   if (!restaurantIds.has(record.restaurantId) || record.reviewState !== "reviewed_exclusion" || !allowedFeedExclusionReasons.has(record.reason) || !validDate(record.observedAt) || !String(record.evidence || "").trim() || !(record.feedUrls || []).length) {
     failures.push({ type: "invalid_feed_review_exclusion", restaurantId: record.restaurantId });
     continue;
@@ -52,6 +64,7 @@ for (const record of feedReviewOverrides.records || []) {
 }
 if ((feedPayload.reviewedFeedsExcluded ?? 0) !== excludedFeedUrls.size) failures.push({ type: "feed_review_exclusion_count_mismatch", expected: excludedFeedUrls.size, actual: feedPayload.reviewedFeedsExcluded ?? 0 });
 for (const record of socialProfileOverrides.records || []) {
+  if (localPolicyExcludedIds.has(record.restaurantId)) continue;
   if (!restaurantIds.has(record.restaurantId) || record.reviewState !== "reviewed_exclusion" || !allowedSocialProfileExclusionReasons.has(record.reason) || !validDate(record.observedAt) || !String(record.evidence || "").trim() || !(record.profileUrls || []).length) {
     failures.push({ type: "invalid_social_profile_review_exclusion", restaurantId: record.restaurantId });
     continue;
@@ -253,6 +266,16 @@ const report = {
   socialPlatformRegistryVersion: socialRegistry.version,
   counts: {
     firstPartyRecords: records.length,
+    localPolicyExcludedRestaurantIds: localPolicyExcludedIds.size,
+    localPolicyExcludedSourceRecords: {
+      firstPartyRecords: rawRecords.length - records.length,
+      websiteFeedSignals: rawFeedSignals.length - feedSignals.length,
+      websiteFeedPosts: rawFeedPosts.length - feedPosts.length,
+      websitePageIntelligence: rawWebsitePageRecords.length - websitePageRecords.length,
+      socialSignals: rawSocialSignals.length - socialSignals.length,
+      socialPosts: rawSocialPosts.length - socialPosts.length,
+      recentSocialPosts: rawRecentPosts.length - recentPosts.length
+    },
     socialProfiles: records.reduce((sum, record) => sum + (record.socialProfiles?.length || 0), 0),
     platformCounts,
     linkHubs: records.reduce((sum, record) => sum + (record.linkHubs?.length || 0), 0),
