@@ -573,29 +573,34 @@ for (const post of [
   ...(socialPayload.posts || [])
 ]) {
   const restaurant = restaurantsById.get(post.restaurantId);
+  if (!restaurant) continue;
   const sourceKind = post.sourceFamily === "social_api" || ["facebook", "instagram"].includes(post.platform) ? "meta_social_media" : post.sourceFamily === "website_page" || post.platform === "official_page" ? "official_page_thumbnail_candidate" : "official_feed_media";
-  const candidate = postCandidate(post, restaurant?.name || post.restaurantName, sourceKind);
+  const candidate = postCandidate(post, restaurant.name, sourceKind);
   if (candidate) candidates.push(candidate);
 }
 for (const lead of publicSpecialPayload.records || []) {
   const restaurant = restaurantsById.get(lead.restaurantId);
-  const candidate = publicSpecialImageCandidate(lead, restaurant?.name || lead.venueName);
+  if (!restaurant) continue;
+  const candidate = publicSpecialImageCandidate(lead, restaurant.name || lead.venueName);
   if (candidate) candidates.push(candidate);
 }
 
 for (const lead of directoryPayload.records || []) {
   const resolution = resolvedDirectoryByCandidateId.get(lead.id);
   const restaurant = restaurantsById.get(resolution?.matchedRestaurantId);
-  const candidate = directoryImageCandidate(lead, resolution, restaurant?.name);
+  if (!restaurant) continue;
+  const candidate = directoryImageCandidate(lead, resolution, restaurant.name);
   if (candidate) candidates.push(candidate);
 }
 for (const candidate of existingThumbnailPayload.candidates || []) {
+  if (candidate?.restaurantId && !restaurantsById.has(candidate.restaurantId)) continue;
   if (!["approved_restaurant_media", "directory_source_image"].includes(candidate?.sourceKind)) candidates.push(candidate);
 }
 for (const submission of ownerSubmissionPayload.submissions || []) {
   const restaurant = restaurantsById.get(submission.restaurantId);
+  if (!restaurant) continue;
   for (const image of submission.images || []) {
-    const candidate = ownerSubmittedImageCandidate(submission, image, restaurant?.name || submission.name);
+    const candidate = ownerSubmittedImageCandidate(submission, image, restaurant.name || submission.name);
     if (candidate) candidates.push(candidate);
   }
 }
@@ -644,6 +649,7 @@ if (fetchOfficialPages && pageLimit > 0) {
 const normalized = candidates
   .map(normalizeCandidate)
   .filter(Boolean)
+  .filter((candidate) => restaurantsById.has(candidate.restaurantId))
   .filter((candidate, index, all) => all.findIndex((item) => item.restaurantId === candidate.restaurantId && item.thumbnailUrl === candidate.thumbnailUrl && item.sourceKind === candidate.sourceKind) === index);
 
 const approvedRestaurantIds = new Set(normalized.filter((candidate) => candidate.eligibleForProduction).map((candidate) => candidate.restaurantId));
