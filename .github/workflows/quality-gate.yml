@@ -27,7 +27,8 @@ jobs:
 
       - name: Check JavaScript syntax
         run: |
-          for file in app-*.js scripts/*.mjs; do
+          for file in app-*.js data/local-restaurant-policy.js scripts/*.mjs scripts/lib/*.mjs; do
+            [ -e "$file" ] || continue
             node --check "$file"
           done
 
@@ -57,6 +58,11 @@ jobs:
         run: |
           node scripts/build-recent-social-posts.mjs
           node scripts/build-reviewed-social-posts.mjs
+
+      - name: Build local restaurant catalog
+        run: |
+          node scripts/export-catalog.mjs
+          node scripts/check-local-restaurant-policy.mjs
 
       - name: Build thumbnail candidates
         run: node scripts/build-thumbnail-candidates.mjs
@@ -89,6 +95,7 @@ jobs:
           node scripts/test-event-date-helpers.mjs
           node scripts/check-structured-specials.mjs
           node scripts/test-city-event-source-drift.mjs
+          node scripts/check-local-restaurant-policy.mjs
 
       - name: Build content coverage and quality reports
         env:
@@ -123,6 +130,7 @@ jobs:
             data/build/place-source-resolutions.json
             data/directory-restaurant-leads.js
             data/build/directory-restaurant-leads.json
+            data/build/catalog.json
             data/build/restaurant-lifecycle-report.json
             docs/restaurant-lifecycle-report.md
             data/build/restaurant-media-rights-report.json
@@ -196,6 +204,11 @@ jobs:
         run: |
           node scripts/build-recent-social-posts.mjs
           node scripts/build-reviewed-social-posts.mjs
+
+      - name: Build local restaurant catalog for browser verification
+        run: |
+          node scripts/export-catalog.mjs
+          node scripts/check-local-restaurant-policy.mjs
 
       - name: Build thumbnail candidates for browser verification
         run: node scripts/build-thumbnail-candidates.mjs
