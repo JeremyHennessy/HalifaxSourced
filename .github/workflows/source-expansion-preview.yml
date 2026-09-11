@@ -11,6 +11,11 @@ on:
       - .github/workflows/source-expansion-preview.yml
       - data/social-platform-registry.json
       - data/reviewed-social-post-decisions.json
+      - data/local-restaurant-policy.js
+      - scripts/lib/local-restaurant-policy.mjs
+      - scripts/check-local-restaurant-policy.mjs
+      - scripts/export-catalog.mjs
+      - scripts/import-osm-restaurants.mjs
       - scripts/import-official-sites.mjs
       - scripts/verify-official-source-pages.mjs
       - scripts/import-structured-events.mjs
@@ -139,6 +144,11 @@ jobs:
           node scripts/build-recent-social-posts.mjs
           node scripts/build-reviewed-social-posts.mjs
 
+      - name: Build local restaurant catalog
+        run: |
+          node scripts/export-catalog.mjs
+          node scripts/check-local-restaurant-policy.mjs
+
       - name: Discover source-backed thumbnail candidates
         env:
           THUMBNAIL_DISCOVERY_FETCH: 1
@@ -157,6 +167,7 @@ jobs:
           node scripts/check-thumbnail-candidates.mjs
           node scripts/check-patio-directory-facts.mjs
           node scripts/check-public-special-source-leads.mjs
+          node scripts/check-local-restaurant-policy.mjs
           node scripts/build-thumbnail-coverage-report.mjs
           node scripts/plan-thumbnail-coverage-attack.mjs
 
@@ -188,6 +199,7 @@ jobs:
             data/build/recent-social-posts.json
             data/reviewed-social-posts.js
             data/build/reviewed-social-posts.json
+            data/build/catalog.json
             data/thumbnail-candidates.js
             data/build/thumbnail-candidates.json
             data/build/thumbnail-coverage-report.json
