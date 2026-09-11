@@ -64,6 +64,10 @@ jobs:
           node scripts/resolve-place-candidates.mjs
           node scripts/check-place-source-resolution.mjs
           node scripts/check-restaurant-discovery.mjs
+          node scripts/build-thumbnail-candidates.mjs
+          node scripts/check-thumbnail-candidates.mjs
+          node scripts/build-thumbnail-coverage-report.mjs
+          node scripts/plan-thumbnail-coverage-attack.mjs
           node scripts/build-content-coverage-report.mjs
           node scripts/reconcile-structured-coverage.mjs
           node scripts/check-report-deployment-parity.mjs
