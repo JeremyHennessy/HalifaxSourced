@@ -13,6 +13,22 @@ const allowedMunicipalities = new Map([
   ["dartmouth", "Dartmouth"],
   ["bedford", "Bedford"]
 ]);
+const trustedCategoryNames = [
+  "Sports",
+  "Music",
+  "Food & Drink",
+  "Festivals",
+  "Markets",
+  "Arts",
+  "Comedy",
+  "Outdoor",
+  "Community",
+  "Family",
+  "Theatre",
+  "Business",
+  "Education",
+  "Other"
+];
 
 function clean(value) {
   return String(value ?? "").replace(/\s+/g, " ").trim();
@@ -68,11 +84,18 @@ function classifyEvent(event) {
   const title = clean(event.title);
   const venue = clean(event.venueName);
   const sourceName = clean(event.sourceName);
-  const text = `${title} ${venue}`.toLowerCase();
+  const existingCategories = Array.isArray(event.categories) ? event.categories.map(clean).filter(Boolean) : [];
+  const text = `${title} ${venue} ${sourceName} ${existingCategories.join(" ")}`.toLowerCase();
   const categories = [];
 
+  if (event.sourceId !== "tourism-ns-events" && (event.sourceKind === "official_festival_page" || event.reviewState === "source_observed")) {
+    for (const category of existingCategories) {
+      if (trustedCategoryNames.includes(category) && !categories.includes(category)) categories.push(category);
+    }
+  }
+
   if (source?.kind === "official_sports_schedule" || /mooseheads|wanderers|thunderbirds|halifax tides|\bvs\.?\b|soccer|football|hockey|lacrosse|basketball|baseball|rugby|match\b|game\b/.test(text)) {
-    categories.push("Sports");
+    if (!categories.includes("Sports")) categories.push("Sports");
   }
   addCategory(categories, "Music", /concert|music|symphony|orchestra|recital|songwriter|singer|band\b|\bdj\b|jazz|rock\b|folk\b|opera|choir|choral|album|tribute/, text);
   addCategory(categories, "Food & Drink", /food|drink|beer|wine|cocktail|tasting|dinner|brunch|culinary|chef|brew|cider|spirits|oyster|supper|kitchen party/, text);
@@ -82,14 +105,13 @@ function classifyEvent(event) {
   addCategory(categories, "Arts", /theatre|theater|dance|film|cinema|gallery|museum|performance|musical|play\b|ballet|art\b|arts|exhibit|exhibition/, text);
   addCategory(categories, "Outdoor", /outdoor|trail|garden|beach|paddle|kayak|harbour|harbor|waterfront/, text);
   addCategory(categories, "Community", /community|family|parade|heritage|culture|cultural|pride|fundraiser|conference/, text);
+  addCategory(categories, "Family", /family|families|kids|children|all ages|all-ages/, text);
 
   if (!categories.length) {
     if (event.sourceId === "the-carleton" || /symphony nova scotia/i.test(sourceName)) categories.push("Music");
     else if (event.sourceId === "neptune-theatre" || event.sourceId === "light-house-arts-centre") categories.push("Arts");
     else {
-      const trustworthyExisting = (event.categories || []).filter((category) => [
-        "Sports", "Music", "Food & Drink", "Festivals", "Markets", "Arts", "Comedy", "Outdoor", "Community"
-      ].includes(category));
+      const trustworthyExisting = existingCategories.filter((category) => trustedCategoryNames.includes(category));
       if (event.sourceId !== "tourism-ns-events" && trustworthyExisting.length) categories.push(...trustworthyExisting.slice(0, 3));
       else categories.push("Other");
     }
