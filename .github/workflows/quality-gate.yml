@@ -151,6 +151,7 @@ jobs:
           node scripts/check-report-deployment-parity.mjs
           node scripts/render-content-coverage-report.mjs
           node scripts/build-content-quality-report.mjs
+          node scripts/report-missed-local-restaurants.mjs
           node scripts/build-deployment-metadata.mjs
 
       - name: Build SQLite database artifacts
@@ -212,6 +213,7 @@ jobs:
             docs/content-coverage-report.md
             data/build/content-quality-report.json
             docs/content-quality-report.md
+            artifacts/missed-local-restaurant-candidates.json
             data/build/deployment-metadata.json
           if-no-files-found: ignore
 
