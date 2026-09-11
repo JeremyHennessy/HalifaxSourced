@@ -32,6 +32,7 @@ const NON_LOCAL_CHAIN_NAMES = [
   "Manchu Wok",
   "Mary Brown's",
   "McCafe",
+  "McDonald",
   "McDonald's",
   "Milestones",
   "Montana's",
@@ -64,6 +65,7 @@ const NON_LOCAL_CHAIN_NAMES = [
   "Tim Hortons",
   "Tim Horton's",
   "Villa Madina",
+  "Wendy",
   "Wendy's"
 ];
 
@@ -202,6 +204,10 @@ export function localRestaurantPolicyDecision(record) {
   const tags = rawTagsFor(record);
   const labelCandidates = [
     ["name", record?.name ?? tags.name],
+    ["restaurantName", record?.restaurantName],
+    ["venueName", record?.venueName],
+    ["candidateName", record?.candidateName],
+    ["sourceName", record?.sourceName],
     ["official_name", record?.officialName ?? tags.official_name],
     ["brand", record?.brand ?? tags.brand],
     ["operator", record?.operator ?? tags.operator],
@@ -218,7 +224,10 @@ export function localRestaurantPolicyDecision(record) {
   const hostCandidates = [
     ["website", record?.website ?? tags.website],
     ["contact:website", tags["contact:website"]],
-    ["url", record?.url ?? tags.url]
+    ["url", record?.url ?? tags.url],
+    ["sourceUrl", record?.sourceUrl],
+    ["sourcePageUrl", record?.sourcePageUrl],
+    ["thumbnailUrl", record?.thumbnailUrl]
   ];
 
   for (const [field, value] of hostCandidates) {
