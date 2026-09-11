@@ -231,21 +231,26 @@
     return !localRestaurantPolicyDecision(record).excluded;
   }
 
-  function filterRecords(records, sourceLayer) {
+  function excludedSummary(record, sourceLayer, decision) {
+    return {
+      sourceLayer,
+      id: record && record.id,
+      name: record && record.name,
+      reason: decision.reason,
+      field: decision.field,
+      matchedToken: decision.matchedToken,
+      matchedValue: decision.matchedValue
+    };
+  }
+
+  function filterRecords(records, sourceLayer, excludedIds) {
     const included = [];
     const excluded = [];
     for (const record of Array.isArray(records) ? records : []) {
       const decision = localRestaurantPolicyDecision(record);
       if (decision.excluded) {
-        excluded.push({
-          sourceLayer,
-          id: record && record.id,
-          name: record && record.name,
-          reason: decision.reason,
-          field: decision.field,
-          matchedToken: decision.matchedToken,
-          matchedValue: decision.matchedValue
-        });
+        if (record && record.id) excludedIds.add(record.id);
+        excluded.push(excludedSummary(record, sourceLayer, decision));
       } else {
         included.push(record);
       }
@@ -253,19 +258,58 @@
     return { included, excluded };
   }
 
-  const curated = filterRecords(window.HALIFAX_RESTAURANTS, "curated");
-  const openStreetMap = filterRecords(window.HALIFAX_OSM_RESTAURANTS, "openstreetmap");
+  function filterChildRecords(records, excludedIds, sourceLayer) {
+    const included = [];
+    const excluded = [];
+    for (const record of Array.isArray(records) ? records : []) {
+      if (excludedIds.has(record && record.restaurantId)) {
+        excluded.push({ sourceLayer, restaurantId: record && record.restaurantId, id: record && record.id, name: record && record.name });
+      } else {
+        included.push(record);
+      }
+    }
+    return { included, excluded };
+  }
+
+  function applyPayloadRecordFilter(payload, field, excludedIds, sourceLayer) {
+    if (!payload || !Array.isArray(payload[field])) return { included: 0, excluded: 0 };
+    const result = filterChildRecords(payload[field], excludedIds, sourceLayer);
+    payload[field] = result.included;
+    return { included: result.included.length, excluded: result.excluded.length };
+  }
+
+  const excludedIds = new Set();
+  const curated = filterRecords(window.HALIFAX_RESTAURANTS, "curated", excludedIds);
+  const openStreetMap = filterRecords(window.HALIFAX_OSM_RESTAURANTS, "openstreetmap", excludedIds);
+  const discovered = filterRecords(window.HALIFAX_DISCOVERED_RESTAURANTS, "local_discovery", excludedIds);
 
   window.HALIFAX_RESTAURANTS = curated.included;
   window.HALIFAX_OSM_RESTAURANTS = openStreetMap.included;
+  if (Array.isArray(window.HALIFAX_DISCOVERED_RESTAURANTS)) window.HALIFAX_DISCOVERED_RESTAURANTS = discovered.included;
+
+  const childDatasetCounts = {
+    firstPartySources: applyPayloadRecordFilter(window.HALIFAX_FIRST_PARTY_SOURCES, "records", excludedIds, "first_party_sources"),
+    websiteFeedSignals: applyPayloadRecordFilter(window.HALIFAX_WEBSITE_FEED_SIGNALS, "signals", excludedIds, "website_feed_signals"),
+    websiteFeedPosts: applyPayloadRecordFilter(window.HALIFAX_WEBSITE_FEED_SIGNALS, "posts", excludedIds, "website_feed_posts"),
+    websitePageIntelligenceRecords: applyPayloadRecordFilter(window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE, "records", excludedIds, "website_page_intelligence"),
+    websitePageIntelligenceSignals: applyPayloadRecordFilter(window.HALIFAX_WEBSITE_PAGE_INTELLIGENCE, "signals", excludedIds, "website_page_signals"),
+    socialSignals: applyPayloadRecordFilter(window.HALIFAX_SOCIAL_SIGNALS, "signals", excludedIds, "social_signals"),
+    socialPosts: applyPayloadRecordFilter(window.HALIFAX_SOCIAL_SIGNALS, "posts", excludedIds, "social_posts"),
+    recentSocialPosts: applyPayloadRecordFilter(window.HALIFAX_RECENT_SOCIAL_POSTS, "records", excludedIds, "recent_social_posts"),
+    reviewedSocialPosts: applyPayloadRecordFilter(window.HALIFAX_REVIEWED_SOCIAL_POSTS, "records", excludedIds, "reviewed_social_posts")
+  };
+
   window.HALIFAX_LOCAL_RESTAURANT_POLICY = {
     version: "2026-09-11",
-    excludedCount: curated.excluded.length + openStreetMap.excluded.length,
+    excludedCount: curated.excluded.length + openStreetMap.excluded.length + discovered.excluded.length,
     excludedByLayer: {
       curated: curated.excluded.length,
-      openStreetMap: openStreetMap.excluded.length
+      openStreetMap: openStreetMap.excluded.length,
+      localDiscovery: discovered.excluded.length
     },
-    excludedRecords: [...curated.excluded, ...openStreetMap.excluded].slice(0, 250),
+    excludedChildRecordCounts: Object.fromEntries(Object.entries(childDatasetCounts).map(([key, value]) => [key, value.excluded])),
+    excludedIds: Array.from(excludedIds).slice(0, 500),
+    excludedRecords: [...curated.excluded, ...openStreetMap.excluded, ...discovered.excluded].slice(0, 500),
     isLocalRestaurantRecord,
     localRestaurantPolicyDecision
   };
