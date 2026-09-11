@@ -115,12 +115,14 @@ jobs:
         shell: bash
         run: |
           git status --short
-          if [ -z "$(git status --porcelain)" ]; then
+          data_status="$(git status --porcelain -- data ':!data/build/preview-promotion-metadata.json')"
+          if [ -z "$data_status" ]; then
             echo "changed=false" >> "$GITHUB_OUTPUT"
             echo "No promoted data changes found."
           else
             echo "changed=true" >> "$GITHUB_OUTPUT"
-            git diff --stat
+            echo "$data_status"
+            git diff --stat -- data ':!data/build/preview-promotion-metadata.json'
           fi
 
       - name: Commit promoted data
