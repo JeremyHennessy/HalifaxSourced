@@ -70,32 +70,74 @@ jobs:
       - name: Run social platform sanitation regression
         run: node scripts/test-social-platform-registry.mjs
 
-      - name: Run data integrity and deterministic regressions
-        run: |
-          node scripts/validate-data.mjs
-          node scripts/check-restaurant-lifecycle.mjs
-          node scripts/check-data-integrity.mjs
-          node scripts/check-expanded-sources.mjs
-          node scripts/check-thumbnail-candidates.mjs
-          node scripts/check-restaurant-discovery.mjs
-          node scripts/check-restaurant-lifecycle.mjs
-          node scripts/test-lifecycle-language.mjs
-          node scripts/check-restaurant-media-rights.mjs
-          node scripts/check-neighbourhood-resolutions.mjs
-          node scripts/check-city-event-additions.mjs
-          node scripts/apply-city-event-additions.mjs
-          node scripts/sanitize-city-events.mjs
-          node scripts/resolve-city-event-entities.mjs
-          node scripts/check-city-events.mjs
-          node scripts/check-event-entity-resolution.mjs
-          node scripts/check-structured-place-facts.mjs
-          node scripts/check-patio-directory-facts.mjs
-          node scripts/check-public-special-source-leads.mjs
-          node scripts/test-hours-state.mjs
-          node scripts/test-event-date-helpers.mjs
-          node scripts/check-structured-specials.mjs
-          node scripts/test-city-event-source-drift.mjs
-          node scripts/check-local-restaurant-policy.mjs
+      - name: Validate directory data
+        run: node scripts/validate-data.mjs
+
+      - name: Check restaurant lifecycle
+        run: node scripts/check-restaurant-lifecycle.mjs
+
+      - name: Check data integrity
+        run: node scripts/check-data-integrity.mjs
+
+      - name: Check expanded sources
+        run: node scripts/check-expanded-sources.mjs
+
+      - name: Check thumbnail candidates
+        run: node scripts/check-thumbnail-candidates.mjs
+
+      - name: Check restaurant discovery
+        run: node scripts/check-restaurant-discovery.mjs
+
+      - name: Test lifecycle language
+        run: node scripts/test-lifecycle-language.mjs
+
+      - name: Check restaurant media rights
+        run: node scripts/check-restaurant-media-rights.mjs
+
+      - name: Check neighbourhood resolutions
+        run: node scripts/check-neighbourhood-resolutions.mjs
+
+      - name: Check city event additions
+        run: node scripts/check-city-event-additions.mjs
+
+      - name: Apply city event additions
+        run: node scripts/apply-city-event-additions.mjs
+
+      - name: Sanitize city events
+        run: node scripts/sanitize-city-events.mjs
+
+      - name: Resolve city event entities
+        run: node scripts/resolve-city-event-entities.mjs
+
+      - name: Check city events
+        run: node scripts/check-city-events.mjs
+
+      - name: Check event entity resolution
+        run: node scripts/check-event-entity-resolution.mjs
+
+      - name: Check structured place facts
+        run: node scripts/check-structured-place-facts.mjs
+
+      - name: Check patio directory facts
+        run: node scripts/check-patio-directory-facts.mjs
+
+      - name: Check public special source leads
+        run: node scripts/check-public-special-source-leads.mjs
+
+      - name: Test hours state
+        run: node scripts/test-hours-state.mjs
+
+      - name: Test event date helpers
+        run: node scripts/test-event-date-helpers.mjs
+
+      - name: Check structured specials
+        run: node scripts/check-structured-specials.mjs
+
+      - name: Test city event source drift
+        run: node scripts/test-city-event-source-drift.mjs
+
+      - name: Check local restaurant policy
+        run: node scripts/check-local-restaurant-policy.mjs
 
       - name: Build content coverage and quality reports
         env:
