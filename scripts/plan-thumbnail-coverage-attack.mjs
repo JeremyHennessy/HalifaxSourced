@@ -235,43 +235,6 @@ function sourceCheckExport(row, rank) {
   };
 }
 
-function outreachScore(row) {
-  let score = 0;
-  if (asHttpUrl(row.source_url || row.sourceUrl)) score += 30;
-  if (String(row.neighborhood || "").trim()) score += 5;
-  return score;
-}
-
-function outreachExport(row, rank) {
-  const hasWebsite = Boolean(asHttpUrl(row.source_url || row.sourceUrl));
-  return {
-    outreach_rank: rank,
-    outreach_priority: hasWebsite ? "website_first" : "manual_contact_lookup",
-    recommended_action: hasWebsite
-      ? "use official site/contact page for owner media permission request"
-      : "find verified owner contact before requesting media",
-    restaurant_id: row.restaurant_id || row.restaurantId,
-    name: row.name || row.restaurant_name || row.restaurantName,
-    neighborhood: row.neighborhood || "",
-    cuisines: row.cuisines || "",
-    vibe: row.vibe || "",
-    special_title: row.special_title || "",
-    special_cadence: row.special_cadence || "",
-    event_title: row.event_title || "",
-    event_timing: row.event_timing || "",
-    source_url: row.source_url || row.sourceUrl || "",
-    contact_email: row.contact_email || "",
-    image_url: row.image_url || "",
-    image_alt: row.image_alt || `${row.name || row.restaurant_name || "Restaurant"} restaurant photo`,
-    image_source_url: row.image_source_url || "",
-    image_source_type: row.image_source_type || "owner_submission",
-    image_rights_basis: row.image_rights_basis || "owner_attestation",
-    image_permission_confirmed: row.image_permission_confirmed || "",
-    image_attribution: row.image_attribution || row.name || "",
-    image_review_state: row.image_review_state || "needs_review"
-  };
-}
-
 function csvEscape(value) {
   const text = String(value ?? "");
   return /[",\r\n]/.test(text) ? `"${text.replace(/"/g, '""')}"` : text;
@@ -387,6 +350,23 @@ function countBy(rows, getter) {
   return counts;
 }
 
+function outreachSummary(records) {
+  const rows = Array.isArray(records) ? records : [];
+  let websiteFirst = 0;
+  let manualContactLookup = 0;
+  for (const row of rows) {
+    if (asHttpUrl(row.source_url || row.sourceUrl)) websiteFirst += 1;
+    else manualContactLookup += 1;
+  }
+  return {
+    rows: rows.length,
+    websiteFirst,
+    manualContactLookup,
+    publicExport: "aggregate_only",
+    nextAction: "Use the private owner-submission workflow for row-level outreach and explicit image-rights metadata."
+  };
+}
+
 const catalog = await loadJson("data/build/catalog.json", { restaurants: [] });
 const thumbnailPayload = await loadJson("data/build/thumbnail-candidates.json", { candidates: [], missingAnyCandidate: [], counts: {} });
 const coverageReport = await loadJson("data/build/thumbnail-coverage-report.json", { counts: {}, queues: {} });
@@ -425,10 +405,7 @@ const sourceCheckRows = (sourceCheckPayload.records || [])
   .map((row, index) => sourceCheckExport(row, index + 1));
 const cleanSourceCheckRows = sourceCheckRows.filter((row) => !flags(row.quality_flags).some((flag) => hardBlockFlags.has(flag)));
 const sourceCheckFirst = cleanSourceCheckRows.slice(0, sourceCheckLimit);
-
-const ownerOutreachRows = (ownerOutreachPayload.records || [])
-  .sort((a, b) => outreachScore(b) - outreachScore(a) || String(a.name || a.restaurant_name || "").localeCompare(String(b.name || b.restaurant_name || "")))
-  .map((row, index) => outreachExport(row, index + 1));
+const outreach = outreachSummary(ownerOutreachPayload.records);
 
 let applyResult = null;
 if (applyPromotion) {
@@ -443,7 +420,7 @@ const plan = {
   policy: {
     directPromotion: "Only exact-ID official-page/feed/owner candidates with HTTPS images, no hard quality flags, and first-party or approved-CDN provenance enter the direct promotion batch.",
     sourceCheck: "Remote image hosts and reviewed source-check rows stay held until first-party control, image content, and rights fit are manually confirmed.",
-    ownerOutreach: "Restaurants with no candidate remain an owner-submission queue and require explicit owner attestation before production media."
+    ownerOutreach: "No-candidate restaurants are counted in public artifacts, but row-level owner outreach and submitted-image rights metadata stay in the private owner-submission workflow."
   },
   inputs: {
     restaurants: restaurants.length,
@@ -457,7 +434,7 @@ const plan = {
     candidates: candidates.length,
     restaurantsWithApprovedThumbnail: coverageReport.counts?.restaurantsWithApprovedThumbnail ?? approvedRestaurantIds.size,
     restaurantsMissingApprovedThumbnail: coverageReport.counts?.restaurantsMissingApprovedThumbnail ?? null,
-    restaurantsMissingAnyCandidate: coverageReport.counts?.restaurantsMissingAnyCandidate ?? ownerOutreachRows.length,
+    restaurantsMissingAnyCandidate: coverageReport.counts?.restaurantsMissingAnyCandidate ?? outreach.rows,
     promotionQueueRestaurants: coverageReport.counts?.promotionQueue ?? null,
     sourceCheckQueueRestaurants: coverageReport.counts?.sourceCheckQueue ?? null,
     directPromotionEligibleRestaurants: directPromotionRows.length,
@@ -465,28 +442,26 @@ const plan = {
     directPromotionBacklog: directPromotionBacklog.length,
     cleanSourceCheckCandidates: cleanSourceCheckRows.length,
     sourceCheckFirst: sourceCheckFirst.length,
-    ownerOutreachRows: ownerOutreachRows.length
+    ownerOutreachRows: outreach.rows
   },
+  ownerOutreach: outreach,
   applyResult,
   queues: {
     directPromotionBatch,
     directPromotionBacklog,
-    sourceCheckFirst,
-    ownerOutreachPriority: ownerOutreachRows
+    sourceCheckFirst
   }
 };
 
 plan.mix = {
   directPromotionByConfidence: countBy(directPromotionRows, (row) => row.confidence),
-  directPromotionBySourceKind: countBy(directPromotionRows, (row) => row.source_kind),
-  ownerOutreachByPriority: countBy(ownerOutreachRows, (row) => row.outreach_priority)
+  directPromotionBySourceKind: countBy(directPromotionRows, (row) => row.source_kind)
 };
 
 const promotionHeaders = ["rank", "recommended_action", "restaurant_id", "restaurant_name", "neighborhood", "candidate_id", "thumbnail_url", "source_url", "source_kind", "extraction_method", "confidence", "source_host_validation", "image_host", "source_host", "width", "height", "review_priority", "direct_score", "quality_flags", "rights_status", "review_state"];
 const sourceCheckHeaders = ["rank", "recommended_action", "restaurant_id", "restaurant_name", "neighborhood", "website", "candidate_id", "thumbnail_url", "source_url", "source_kind", "source_host", "image_host", "source_host_validation", "quality_flags", "source_check_score"];
-const outreachHeaders = ["outreach_rank", "outreach_priority", "recommended_action", "restaurant_id", "name", "neighborhood", "cuisines", "vibe", "special_title", "special_cadence", "event_title", "event_timing", "source_url", "contact_email", "image_url", "image_alt", "image_source_url", "image_source_type", "image_rights_basis", "image_permission_confirmed", "image_attribution", "image_review_state"];
 
-const markdown = `# Thumbnail coverage attack plan\n\nGenerated: ${generatedAt}\n\nThis plan works thumbnail coverage in three governed batches: direct-promotion candidates first, source-check holds second, and owner outreach for restaurants that still have no candidate.\n\n## Counts\n\n| Metric | Count |\n| --- | ---: |\n| Restaurants | ${plan.counts.restaurants.toLocaleString()} |\n| Thumbnail candidates | ${plan.counts.candidates.toLocaleString()} |\n| Restaurants with approved thumbnail | ${Number(plan.counts.restaurantsWithApprovedThumbnail || 0).toLocaleString()} |\n| Restaurants missing approved thumbnail | ${Number(plan.counts.restaurantsMissingApprovedThumbnail || 0).toLocaleString()} |\n| Restaurants missing any candidate | ${Number(plan.counts.restaurantsMissingAnyCandidate || 0).toLocaleString()} |\n| Direct-promotion eligible restaurants | ${plan.counts.directPromotionEligibleRestaurants.toLocaleString()} |\n| Direct-promotion first batch | ${plan.counts.directPromotionBatch.toLocaleString()} |\n| Clean source-check candidates | ${plan.counts.cleanSourceCheckCandidates.toLocaleString()} |\n| Owner outreach rows | ${plan.counts.ownerOutreachRows.toLocaleString()} |\n\n## First batch\n\nThe first batch is written to \`data/build/thumbnail-promotion-plan.csv\`. Apply mode is intentionally opt-in with \`THUMBNAIL_PROMOTION_APPLY=1\`; normal Quality Gate runs only emit the plan.\n\n## Source-check pass\n\nThe source-check shortlist is written to \`data/build/thumbnail-source-check-priority.csv\`. These records are not production-ready until the remote image host and first-party provenance have been checked.\n\n## Owner outreach\n\nThe no-candidate outreach list is written to \`data/build/thumbnail-owner-outreach-priority.csv\` with all ${plan.counts.ownerOutreachRows.toLocaleString()} current owner-submission rows.\n`;
+const markdown = `# Thumbnail coverage attack plan\n\nGenerated: ${generatedAt}\n\nThis plan works thumbnail coverage in three governed batches: direct-promotion candidates first, source-check holds second, and owner outreach for restaurants that still have no candidate.\n\n## Counts\n\n| Metric | Count |\n| --- | ---: |\n| Restaurants | ${plan.counts.restaurants.toLocaleString()} |\n| Thumbnail candidates | ${plan.counts.candidates.toLocaleString()} |\n| Restaurants with approved thumbnail | ${Number(plan.counts.restaurantsWithApprovedThumbnail || 0).toLocaleString()} |\n| Restaurants missing approved thumbnail | ${Number(plan.counts.restaurantsMissingApprovedThumbnail || 0).toLocaleString()} |\n| Restaurants missing any candidate | ${Number(plan.counts.restaurantsMissingAnyCandidate || 0).toLocaleString()} |\n| Direct-promotion eligible restaurants | ${plan.counts.directPromotionEligibleRestaurants.toLocaleString()} |\n| Direct-promotion first batch | ${plan.counts.directPromotionBatch.toLocaleString()} |\n| Clean source-check candidates | ${plan.counts.cleanSourceCheckCandidates.toLocaleString()} |\n| Owner outreach rows counted | ${plan.counts.ownerOutreachRows.toLocaleString()} |\n\n## First batch\n\nThe first batch is written to \`data/build/thumbnail-promotion-plan.csv\`. Apply mode is intentionally opt-in with \`THUMBNAIL_PROMOTION_APPLY=1\`; normal Quality Gate runs only emit the plan.\n\n## Source-check pass\n\nThe source-check shortlist is written to \`data/build/thumbnail-source-check-priority.csv\`. These records are not production-ready until the remote image host and first-party provenance have been checked.\n\n## Owner outreach\n\nThe no-candidate outreach total is included as aggregate metadata only: ${outreach.websiteFirst.toLocaleString()} website-first rows and ${outreach.manualContactLookup.toLocaleString()} manual-contact rows. Row-level owner outreach and submitted-image rights metadata should stay in the private owner-submission workflow unless publication is explicitly approved.\n`;
 
 await mkdir(new URL("data/build", root), { recursive: true });
 await mkdir(new URL("artifacts", root), { recursive: true });
@@ -495,9 +470,7 @@ await writeFile(new URL("data/build/thumbnail-promotion-plan.json", root), JSON.
 await writeFile(new URL("artifacts/thumbnail-promotion-plan.json", root), JSON.stringify(plan, null, 2) + "\n");
 await writeFile(new URL("data/build/thumbnail-promotion-plan.csv", root), csvRows(promotionHeaders, directPromotionRows));
 await writeFile(new URL("data/build/thumbnail-source-check-priority.csv", root), csvRows(sourceCheckHeaders, sourceCheckRows));
-await writeFile(new URL("data/build/thumbnail-owner-outreach-priority.json", root), JSON.stringify({ generatedAt, count: ownerOutreachRows.length, records: ownerOutreachRows }, null, 2) + "\n");
-await writeFile(new URL("data/build/thumbnail-owner-outreach-priority.csv", root), csvRows(outreachHeaders, ownerOutreachRows));
 await writeFile(new URL("docs/thumbnail-coverage-attack-plan.md", root), markdown);
 
-console.log(JSON.stringify({ counts: plan.counts, mode: plan.mode, applyResult }, null, 2));
+console.log(JSON.stringify({ counts: plan.counts, ownerOutreach: plan.ownerOutreach, mode: plan.mode, applyResult }, null, 2));
 console.log("Thumbnail coverage attack plan written to data/build, artifacts, and docs.");
