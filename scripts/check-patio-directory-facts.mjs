@@ -1,5 +1,6 @@
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import vm from "node:vm";
+import { localRestaurantPolicyDecision } from "./lib/local-restaurant-policy.mjs";
 
 async function loadWindow(path) {
   const source = await readFile(new URL(`../${path}`, import.meta.url), "utf8");
@@ -20,16 +21,47 @@ function validDate(value) {
   return Number.isFinite(Date.parse(String(value ?? "")));
 }
 
+function policyRecord(record) {
+  return {
+    id: record?.restaurantId,
+    name: record?.name,
+    restaurantName: record?.restaurantName,
+    venueName: record?.venueName,
+    candidateName: record?.candidateName,
+    sourceName: record?.sourceName,
+    website: record?.website,
+    url: record?.url,
+    sourceUrl: record?.sourceUrl,
+    sourcePageUrl: record?.sourcePageUrl,
+    sourceImageUrl: record?.sourceImageUrl,
+    thumbnailUrl: record?.thumbnailUrl
+  };
+}
+
+function excludedByLocalPolicy(record, localPolicyExcludedIds) {
+  return localPolicyExcludedIds.has(record?.restaurantId) || localRestaurantPolicyDecision(policyRecord(record)).excluded;
+}
+
 const catalog = JSON.parse(await readFile(new URL("../data/build/catalog.json", import.meta.url), "utf8"));
 const windowData = await loadWindow("data/patio-directory-facts.js");
+const osmWindow = await loadWindow("data/osm-restaurants.js");
 const payload = windowData.HALIFAX_PATIO_DIRECTORY_FACTS || {};
-const records = Array.isArray(payload.records) ? payload.records : [];
+const rawRecords = Array.isArray(payload.records) ? payload.records : [];
+const rawOsmRestaurants = Array.isArray(osmWindow.HALIFAX_OSM_RESTAURANTS) ? osmWindow.HALIFAX_OSM_RESTAURANTS : [];
+const localPolicyExcludedIds = new Set(
+  rawOsmRestaurants
+    .filter((restaurant) => localRestaurantPolicyDecision(restaurant).excluded)
+    .map((restaurant) => restaurant.id)
+    .filter(Boolean)
+);
+const records = rawRecords.filter((record) => !excludedByLocalPolicy(record, localPolicyExcludedIds));
+const localPolicyExcludedRecords = rawRecords.length - records.length;
 const restaurantIds = new Set((catalog.restaurants || []).map((restaurant) => restaurant.id));
 const failures = [];
 const warnings = [];
 const seen = new Set();
 
-if (payload.counts?.total !== records.length) failures.push({ type: "count_mismatch", expected: records.length, actual: payload.counts?.total });
+if (payload.counts?.total !== rawRecords.length) failures.push({ type: "raw_count_mismatch", expected: rawRecords.length, actual: payload.counts?.total });
 if (!validDate(payload.generatedAt)) failures.push({ type: "invalid_generated_at", value: payload.generatedAt });
 
 for (const [index, record] of records.entries()) {
@@ -49,6 +81,8 @@ const report = {
   generatedAt: new Date().toISOString(),
   counts: {
     total: records.length,
+    rawTotal: rawRecords.length,
+    localPolicyExcludedRecords,
     resolved: records.filter((record) => record.restaurantId).length,
     unresolved: records.filter((record) => !record.restaurantId && record.matchMethod === "unresolved").length,
     conflicts: records.filter((record) => record.matchMethod === "conflict").length,
