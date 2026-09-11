@@ -4,6 +4,7 @@ const NON_LOCAL_CHAIN_NAMES = [
   "BarBurrito",
   "Baskin Robbins",
   "BeaverTails",
+  "Ben & Florentine",
   "Booster Juice",
   "Boston Pizza",
   "Burger King",
@@ -40,6 +41,8 @@ const NON_LOCAL_CHAIN_NAMES = [
   "Mr. Sub",
   "Mucho Burrito",
   "New York Fries",
+  "Osmow",
+  "Osmow's",
   "Papa John's",
   "Pizza Delight",
   "Pizza Hut",
@@ -66,7 +69,9 @@ const NON_LOCAL_CHAIN_NAMES = [
   "Tim Horton's",
   "Villa Madina",
   "Wendy",
-  "Wendy's"
+  "Wendy's",
+  "Wing 'n It",
+  "Wing'n It"
 ];
 
 const NON_LOCAL_CHAIN_HOSTS = [
@@ -77,6 +82,7 @@ const NON_LOCAL_CHAIN_HOSTS = [
   "baskinrobbins.ca",
   "baskinrobbins.com",
   "beavertails.com",
+  "benetflorentine.com",
   "boosterjuice.com",
   "bostonpizza.com",
   "burgerking.ca",
@@ -119,6 +125,7 @@ const NON_LOCAL_CHAIN_HOSTS = [
   "mrsub.ca",
   "muchoburrito.com",
   "newyorkfries.com",
+  "osmows.com",
   "papajohns.ca",
   "papajohns.com",
   "pizzadelight.com",
@@ -148,7 +155,8 @@ const NON_LOCAL_CHAIN_HOSTS = [
   "timhortons.com",
   "villamadina.com",
   "wendys.ca",
-  "wendys.com"
+  "wendys.com",
+  "wingnit.ca"
 ];
 
 const CHAIN_TOKENS = NON_LOCAL_CHAIN_NAMES.map(localRestaurantPolicyToken).filter(Boolean);
@@ -227,6 +235,7 @@ export function localRestaurantPolicyDecision(record) {
     ["url", record?.url ?? tags.url],
     ["sourceUrl", record?.sourceUrl],
     ["sourcePageUrl", record?.sourcePageUrl],
+    ["sourceImageUrl", record?.sourceImageUrl],
     ["thumbnailUrl", record?.thumbnailUrl]
   ];
 
