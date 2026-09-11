@@ -273,7 +273,7 @@
     const included = [];
     const excluded = [];
     for (const record of Array.isArray(records) ? records : []) {
-      if (excludedIds.has(record && record.restaurantId)) {
+      if (excludedIds.has(record && record.restaurantId) || localRestaurantPolicyDecision(record).excluded) {
         excluded.push({ sourceLayer, restaurantId: record && record.restaurantId, id: record && record.id, name: record && record.name });
       } else {
         included.push(record);
@@ -320,6 +320,7 @@
     socialPosts: applyPayloadRecordFilter(window.HALIFAX_SOCIAL_SIGNALS, "posts", excludedIds, "social_posts"),
     recentSocialPosts: applyPayloadRecordFilter(window.HALIFAX_RECENT_SOCIAL_POSTS, "records", excludedIds, "recent_social_posts"),
     reviewedSocialPosts: applyPayloadRecordFilter(window.HALIFAX_REVIEWED_SOCIAL_POSTS, "records", excludedIds, "reviewed_social_posts"),
+    reviewedPlaceResolutions: applyPayloadRecordFilter(window.HALIFAX_REVIEWED_PLACE_RESOLUTIONS, "records", excludedIds, "reviewed_place_resolutions"),
     thumbnailCandidates: applyPayloadRecordFilter(window.HALIFAX_THUMBNAIL_CANDIDATES, "candidates", excludedIds, "thumbnail_candidates"),
     thumbnailMissingApproved: applyPayloadRecordFilter(window.HALIFAX_THUMBNAIL_CANDIDATES, "missingApproved", excludedIds, "thumbnail_missing_approved"),
     thumbnailMissingAnyCandidate: applyPayloadRecordFilter(window.HALIFAX_THUMBNAIL_CANDIDATES, "missingAnyCandidate", excludedIds, "thumbnail_missing_any")
