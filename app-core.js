@@ -366,7 +366,14 @@ function searchableText(restaurant) {
     ...(restaurant.structuredEvents || []).map((event) => event.title)
   ].filter(Boolean).join(" ").toLowerCase();
 }
-
+function matchesRestaurantSearch(restaurant, query) {
+  const rawQuery = String(query ?? "").trim().toLowerCase();
+  if (!rawQuery) return true;
+  const text = searchableText(restaurant);
+  if (text.includes(rawQuery)) return true;
+  const compactQuery = normalize(rawQuery);
+  return compactQuery ? normalize(text).includes(compactQuery) : false;
+}
 function filteredRestaurants(options = {}) {
   const query = (options.query ?? state.query).trim().toLowerCase();
   const cuisine = options.cuisine ?? state.cuisine;
@@ -375,7 +382,7 @@ function filteredRestaurants(options = {}) {
   const sort = options.sort ?? state.sort;
 
   const filtered = activeRestaurants.filter((restaurant) => {
-    if (query && !searchableText(restaurant).includes(query)) return false;
+    if (!matchesRestaurantSearch(restaurant, query)) return false;
     if (cuisine !== "all" && !(restaurant.cuisines || []).some((item) => item.toLowerCase() === cuisine.toLowerCase())) return false;
     if (neighbourhood !== "all" && (restaurant.neighborhood || "Halifax").toLowerCase() !== neighbourhood.toLowerCase()) return false;
     if (feature === "menus" && !restaurant.hasMenu) return false;
@@ -384,6 +391,8 @@ function filteredRestaurants(options = {}) {
     if (feature === "patio" && !restaurant.hasPatio) return false;
     if (feature === "opening" && !restaurant.hasOpening) return false;
     if (feature === "social" && !restaurant.hasSocial) return false;
+    if (feature === "reservations" && !restaurant.hasReservation) return false;
+    if (feature === "ordering" && !restaurant.hasOrdering) return false;
     if (feature === "images" && !permittedImageFor(restaurant)) return false;
     if (feature === "saved" && !state.saved.has(restaurant.id)) return false;
     return true;

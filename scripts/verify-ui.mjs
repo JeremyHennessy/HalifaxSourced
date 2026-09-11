@@ -126,6 +126,23 @@ await page.locator("#globalSearch").fill("Sakaba");
 await page.locator("#globalSearch").press("Enter");
 await page.waitForURL(/#explore/);
 await page.locator(".restaurant-card", { hasText: "Sakaba" }).first().waitFor();
+await page.locator("#globalSearch").fill("seasmoke");
+await page.locator("#globalSearch").press("Enter");
+await page.waitForURL(/#explore/);
+const seaSmokeCard = page.locator(".restaurant-card", { hasText: "Sea Smoke" }).first();
+await seaSmokeCard.waitFor();
+const seaSmokeHref = await seaSmokeCard.locator('h3 a[href^="#restaurant/"]').getAttribute("href");
+if (!seaSmokeHref) throw new Error("Expected Sea Smoke detail route from no-space search.");
+const seaSmokeSearchState = await page.evaluate(() => {
+  const result = filteredRestaurants({ query: "seasmoke" }).find((restaurant) => normalize(restaurant.name) === normalize("Sea Smoke"));
+  return result ? { hasMenu: result.hasMenu, hasReservation: result.hasReservation, hasSocial: result.hasSocial, hasPatio: result.hasPatio, phone: result.phone, openingHours: result.openingHours, sources: result.sources?.length || 0 } : null;
+});
+if (!seaSmokeSearchState?.hasMenu || !seaSmokeSearchState?.hasReservation || !seaSmokeSearchState?.hasSocial || !seaSmokeSearchState?.hasPatio || !seaSmokeSearchState.phone || !seaSmokeSearchState.openingHours || seaSmokeSearchState.sources < 4) throw new Error(`Expected Sea Smoke to be searchable and source-backed, got ${JSON.stringify(seaSmokeSearchState)}.`);
+await page.goto(`${url}/${seaSmokeHref}`, { waitUntil: "networkidle" });
+await page.locator("h1", { hasText: "Sea Smoke" }).waitFor();
+if (await page.locator("#detailInfo .sidebar-link", { hasText: "Menu" }).count() < 1) throw new Error("Expected Sea Smoke menu action on detail page.");
+if (await page.locator("#detailInfo .sidebar-link", { hasText: "Reservations" }).count() < 1) throw new Error("Expected Sea Smoke reservation action on detail page.");
+if (await page.locator("#detailLinks .source-link-row").count() < 2) throw new Error("Expected Sea Smoke official social and related links on detail page.");
 
 for (const name of ["Darty Brewing Co.", "Maria's Pantry"]) {
   await page.locator("#globalSearch").fill(name);
