@@ -1,20 +1,20 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-01T14:36:17.015Z",
+  "generatedAt": "2026-09-11T18:43:50.557Z",
   "policy": "Only location-specific matches supported by compatible identity plus address, official domain, phone or reviewed discovery evidence are published. Conflicts and name-only matches remain queued.",
   "downtownDartmouth": {
     "candidates": 48,
-    "algorithmResolved": 13,
+    "algorithmResolved": 14,
     "publishedReviewed": 15,
     "heldForReview": 33,
     "counts": {
-      "unresolved": 12,
+      "review_conflict": 3,
       "unresolved_conflict": 9,
       "non_name_evidence_review": 7,
-      "name_only_review": 5,
+      "name_only_review": 4,
       "resolved_probable": 4,
-      "resolved_high": 9,
-      "review_conflict": 2
+      "unresolved": 11,
+      "resolved_high": 10
     }
   },
   "springGarden": {
@@ -33,6 +33,32 @@
     "publicationDecision": "partial_publication_location_specific_evidence_only"
   },
   "publishedRecords": [
+    {
+      "restaurantId": "osm-node-475877047-sea-smoke",
+      "name": "Sea Smoke Restaurant & Bar",
+      "resolutionState": "resolved_high",
+      "evidence": [
+        "compatible_name",
+        "exact_official_domain",
+        "compatible_street_address",
+        "official_contact_and_hours",
+        "official_menu_published",
+        "official_site_linked_socials",
+        "business_district_patio_listing"
+      ],
+      "completeness": {
+        "identity": true,
+        "address": true,
+        "coordinates": true,
+        "currentStatus": true,
+        "officialWebsite": true,
+        "menu": true,
+        "hours": true,
+        "phone": true,
+        "socialProfiles": true,
+        "duplicateConflictCleared": true
+      }
+    },
     {
       "restaurantId": "battery-park",
       "name": "Battery Park Beer Bar",

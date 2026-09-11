@@ -18,6 +18,7 @@ const directory = directoryWindow.HALIFAX_DIRECTORY_RESTAURANT_LEADS || { record
 const opening = openingWindow.HALIFAX_OPENING_WATCH_LEADS || { leads: [] };
 const discovered = Array.isArray(discoveredWindow.HALIFAX_DISCOVERED_RESTAURANTS) ? discoveredWindow.HALIFAX_DISCOVERED_RESTAURANTS : [];
 const knownIds = new Set((catalog.restaurants || []).map((restaurant) => restaurant.id));
+const knownNames = new Set((catalog.restaurants || []).map((restaurant) => normalize(restaurant.name)));
 const failures = [];
 const warnings = [];
 const allowedDirectoryKinds = new Set([
@@ -92,6 +93,9 @@ for (const restaurant of discovered) {
 
 if (!discovered.some((restaurant) => normalize(restaurant.name) === "sakaba")) {
   failures.push({ type: "sakaba_missing_from_discovered_restaurants" });
+}
+if (!knownNames.has(normalize("Sea Smoke"))) {
+  failures.push({ type: "sea_smoke_missing_from_catalog" });
 }
 if (!openingLeads.some((lead) => normalize(lead.name) === "sakaba")) {
   warnings.push({ type: "sakaba_not_extracted_from_opening_watch_current_run" });

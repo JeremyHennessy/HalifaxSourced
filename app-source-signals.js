@@ -2,6 +2,8 @@
 
 const firstPartySourcePayload = window.HALIFAX_FIRST_PARTY_SOURCES ?? null;
 const firstPartySourceRecords = Array.isArray(firstPartySourcePayload?.records) ? firstPartySourcePayload.records : [];
+const patioDirectoryPayload = window.HALIFAX_PATIO_DIRECTORY_FACTS ?? null;
+const patioDirectoryRecords = Array.isArray(patioDirectoryPayload?.records) ? patioDirectoryPayload.records : [];
 const websiteFeedSignalPayload = window.HALIFAX_WEBSITE_FEED_SIGNALS ?? null;
 const websiteFeedSignals = Array.isArray(websiteFeedSignalPayload?.signals) ? websiteFeedSignalPayload.signals : [];
 const websiteFeedPosts = Array.isArray(websiteFeedSignalPayload?.posts) ? websiteFeedSignalPayload.posts : websiteFeedSignals;
@@ -105,6 +107,7 @@ const websiteFeedPostsByRestaurant = sourceSignalGroup(websiteFeedPosts);
 const socialByRestaurant = sourceSignalGroup(socialSignals);
 const socialPostsByRestaurant = sourceSignalGroup(socialPosts);
 const recentPostsByRestaurant = sourceSignalGroup(recentOfficialPosts);
+const patioDirectoryByRestaurant = sourceSignalGroup(patioDirectoryRecords);
 const profileAssociationCounts = new Map();
 for (const record of firstPartySourceRecords) {
   const seenInRecord = new Set();
@@ -124,6 +127,7 @@ for (const restaurant of restaurants) {
   const apiSignals = socialByRestaurant.get(restaurant.id) || [];
   const apiPosts = socialPostsByRestaurant.get(restaurant.id) || [];
   const normalizedPosts = recentPostsByRestaurant.get(restaurant.id) || [];
+  const patioFacts = patioDirectoryByRestaurant.get(restaurant.id) || [];
   const allSignals = [...feedSignals, ...apiSignals];
   const currentSignals = allSignals.filter((signal) => sourceSignalFresh(signal));
   const allProfiles = mergeSocialProfiles(restaurant.socialProfiles || [], Array.isArray(firstParty?.socialProfiles) ? firstParty.socialProfiles : []);
@@ -133,6 +137,7 @@ for (const restaurant of restaurants) {
   const relatedLinks = Array.isArray(firstParty?.relatedLinks) ? firstParty.relatedLinks : [];
 
   restaurant.firstPartySources = firstParty;
+  restaurant.patioDirectoryFacts = patioFacts;
   restaurant.websiteFeedSignals = feedSignals;
   restaurant.socialSignals = apiSignals;
   restaurant.currentSourceSignals = currentSignals;
@@ -184,7 +189,7 @@ for (const restaurant of restaurants) {
   restaurant.hasSpecial = Boolean(restaurant.hasSpecial || specialSignalLinks.length || relatedSpecialLinks.length);
   restaurant.hasEvent = Boolean(restaurant.hasEvent || eventSignalLinks.length || relatedEventLinks.length);
   restaurant.hasOpening = Boolean(isRestaurantActive(restaurant) && (restaurant.hasOpening || currentSignals.some((signal) => sourceSignalHas(signal, "openings"))));
-  restaurant.hasPatio = Boolean(restaurant.hasPatio || currentSignals.some((signal) => sourceSignalHas(signal, "patio")));
+  restaurant.hasPatio = Boolean(restaurant.hasPatio || patioFacts.length || currentSignals.some((signal) => sourceSignalHas(signal, "patio")));
   restaurant.hasSocial = allProfiles.length > 0;
   restaurant.hasLinkHub = linkHubs.length > 0;
   restaurant.hasReservation = Boolean(restaurant.hasReservation || relatedReservationLinks.length);
@@ -216,10 +221,20 @@ for (const restaurant of restaurants) {
     associationBasis: link.associationBasis,
     lastVerifiedAt: link.lastVerifiedAt || link.observedAt || null
   }));
-  restaurant.sources = mergeSources(restaurant.sources, [...profileSources, ...hubSources, ...relatedSources]);
+  const patioSources = patioFacts.map((record) => ({
+    label: record.sourceName || "Patio directory",
+    type: record.sourceKind || "patio_directory",
+    url: record.sourceUrl,
+    status: record.reviewState || "source_signal",
+    associationBasis: record.matchMethod || "directory_match",
+    lastVerifiedAt: record.observedAt || null
+  }));
+  restaurant.sources = mergeSources(restaurant.sources, [...profileSources, ...hubSources, ...relatedSources, ...patioSources]);
 }
 
 window.__halifaxFirstPartySourceCount = firstPartySourceRecords.length;
+window.__halifaxPatioDirectoryRecordCount = patioDirectoryRecords.length;
+window.__halifaxPatioLinkedRestaurantCount = patioDirectoryRecords.filter((record) => record.restaurantId).length;
 window.__halifaxFirstPartySocialProfileCount = firstPartySourceRecords.reduce((sum, record) => sum + (record.socialProfiles?.length || 0), 0);
 window.__halifaxFirstPartyLinkHubCount = firstPartySourceRecords.reduce((sum, record) => sum + (record.linkHubs?.length || 0), 0);
 window.__halifaxFirstPartyRelatedLinkCount = firstPartySourceRecords.reduce((sum, record) => sum + (record.relatedLinks?.length || 0), 0);
