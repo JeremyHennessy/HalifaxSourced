@@ -247,9 +247,20 @@
     const included = [];
     const excluded = [];
     for (const record of Array.isArray(records) ? records : []) {
+      const id = record && record.id;
+      if (id && excludedIds.has(id)) {
+        excluded.push(excludedSummary(record, sourceLayer, {
+          excluded: true,
+          reason: "non_local_chain_id",
+          field: "id",
+          matchedToken: id,
+          matchedValue: id
+        }));
+        continue;
+      }
       const decision = localRestaurantPolicyDecision(record);
       if (decision.excluded) {
-        if (record && record.id) excludedIds.add(record.id);
+        if (id) excludedIds.add(id);
         excluded.push(excludedSummary(record, sourceLayer, decision));
       } else {
         included.push(record);
