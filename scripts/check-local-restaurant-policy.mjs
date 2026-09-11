@@ -3,8 +3,10 @@ import { isLocalRestaurantRecord, localRestaurantPolicyDecision } from "./lib/lo
 
 const errors = [];
 const excludedFixtures = [
+  "McDonald",
   "McDonald's",
   "McDonald\u2019s",
+  "Wendy",
   "Wendy's",
   "Wendy\u2019s",
   "Tim Hortons",
@@ -12,7 +14,13 @@ const excludedFixtures = [
   "Burger King",
   "KFC",
   "Starbucks",
-  "Pizza Hut"
+  "Pizza Hut",
+  "Cora's",
+  "Cora\u2019s Breakfast and Lunch",
+  "BarBurrito",
+  "Booster Juice",
+  "Boston Pizza",
+  "The Keg Steakhouse"
 ];
 const localFixtures = [
   "The Canteen",
