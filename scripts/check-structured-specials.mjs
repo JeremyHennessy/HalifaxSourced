@@ -1,10 +1,59 @@
 import { mkdir, readFile, writeFile } from "node:fs/promises";
+import vm from "node:vm";
+import { localRestaurantPolicyDecision } from "./lib/local-restaurant-policy.mjs";
 
 const payload = JSON.parse(await readFile(new URL("../data/build/structured-specials.json", import.meta.url), "utf8"));
 const catalog = JSON.parse(await readFile(new URL("../data/build/catalog.json", import.meta.url), "utf8"));
 const verifiedPages = JSON.parse(await readFile(new URL("../data/build/verified-source-pages.json", import.meta.url), "utf8"));
 const discoveryOverrides = JSON.parse(await readFile(new URL("../data/discovery-overrides.json", import.meta.url), "utf8").catch(() => "{\"approved\":[]}"));
-function normalizeName(value) { return String(value || "").toLowerCase().normalize("NFKD").replace(/[\u0300-\u036f]/g, "").replace(/\bthe\b/g, "").replace(/[^a-z0-9]+/g, ""); }
+
+async function loadWindow(path) {
+  const source = await readFile(new URL(`../${path}`, import.meta.url), "utf8");
+  const context = { window: {} };
+  vm.createContext(context);
+  vm.runInContext(source, context, { filename: path, timeout: 20_000 });
+  return context.window;
+}
+
+function normalizeName(value) {
+  return String(value || "").toLowerCase().normalize("NFKD").replace(/[\u0300-\u036f]/g, "").replace(/\bthe\b/g, "").replace(/[^a-z0-9]+/g, "");
+}
+
+function policyRecord(record) {
+  return {
+    id: record?.restaurantId,
+    name: record?.name,
+    restaurantName: record?.restaurantName,
+    venueName: record?.venueName,
+    candidateName: record?.candidateName,
+    sourceName: record?.sourceName,
+    website: record?.website,
+    url: record?.url,
+    sourceUrl: record?.sourceUrl,
+    sourcePageUrl: record?.sourcePageUrl,
+    sourceImageUrl: record?.sourceImageUrl,
+    thumbnailUrl: record?.thumbnailUrl
+  };
+}
+
+function excludedByLocalPolicy(record, localPolicyExcludedIds) {
+  return localPolicyExcludedIds.has(record?.restaurantId) || localRestaurantPolicyDecision(policyRecord(record)).excluded;
+}
+
+const osmWindow = await loadWindow("data/osm-restaurants.js");
+const rawOsmRestaurants = Array.isArray(osmWindow.HALIFAX_OSM_RESTAURANTS) ? osmWindow.HALIFAX_OSM_RESTAURANTS : [];
+const localPolicyExcludedIds = new Set(
+  rawOsmRestaurants
+    .filter((restaurant) => localRestaurantPolicyDecision(restaurant).excluded)
+    .map((restaurant) => restaurant.id)
+    .filter(Boolean)
+);
+const rawRecords = Array.isArray(payload.records) ? payload.records : [];
+const records = rawRecords.filter((record) => !excludedByLocalPolicy(record, localPolicyExcludedIds));
+const rawOrphanSources = Array.isArray(payload.orphanSources) ? payload.orphanSources : [];
+const orphanSources = rawOrphanSources.filter((record) => !excludedByLocalPolicy(record, localPolicyExcludedIds));
+const localPolicyExcludedRecords = rawRecords.length - records.length;
+const localPolicyExcludedOrphans = rawOrphanSources.length - orphanSources.length;
 const catalogByName = new Map((catalog.restaurants || []).map((restaurant) => [normalizeName(restaurant.name), restaurant.id]));
 const discoveredIds = (discoveryOverrides.approved || []).map((restaurant) => catalogByName.get(normalizeName(restaurant.name)) || restaurant.id);
 const ids = new Set([...(catalog.restaurants || []).map((restaurant) => restaurant.id), ...discoveredIds]);
@@ -20,7 +69,7 @@ function validTime(value) { return value === null || /^([01]\d|2[0-3]):[0-5]\d$/
 function validDate(value) { return value === null || Number.isFinite(Date.parse(String(value || ""))); }
 function ageDays(value) { const stamp = Date.parse(String(value || "")); return Number.isFinite(stamp) ? (now - stamp) / 86400000 : null; }
 
-for (const record of payload.records || []) {
+for (const record of records) {
   if (!record.specialId || seen.has(record.specialId)) errors.push(`invalid_or_duplicate_id:${record.specialId}`);
   seen.add(record.specialId);
   if (!ids.has(record.restaurantId)) errors.push(`unknown_restaurant:${record.specialId}`);
@@ -47,28 +96,32 @@ for (const record of payload.records || []) {
   }
 }
 
-for (const orphan of payload.orphanSources || []) {
+for (const orphan of orphanSources) {
   const unresolvedPublicLead = !orphan.restaurantId && orphan.sourceType === "public_directory_special_lead" && orphan.sourceRecordId && orphan.candidateName && orphan.reason === "restaurant_id_not_in_canonical_catalog";
   if (!unresolvedPublicLead && (!orphan.restaurantId || ids.has(orphan.restaurantId) || !orphan.title || !validUrl(orphan.sourceUrl) || orphan.reason !== "restaurant_id_not_in_canonical_catalog")) {
     errors.push(`invalid_orphan_source:${orphan.restaurantId || "missing"}:${orphan.sourceUrl || "missing"}`);
   }
 }
-if ((payload.orphanSources || []).length !== Number(payload.orphanSourceCount || 0)) errors.push(`orphan_count_mismatch:${payload.orphanSourceCount || 0}:${(payload.orphanSources || []).length}`);
-if ((payload.orphanSources || []).length) warnings.push(`orphan_special_sources_need_entity_review:${payload.orphanSources.length}`);
-if (!(payload.records || []).length) warnings.push("zero_structured_special_records");
-const reviewedCurrent = (payload.records || []).filter((record) => record.sourceType === "reviewed_restaurant_owned_source" && record.status === "verified_current").length;
+if (rawOrphanSources.length !== Number(payload.orphanSourceCount || 0)) errors.push(`orphan_count_mismatch:${payload.orphanSourceCount || 0}:${rawOrphanSources.length}`);
+if (orphanSources.length) warnings.push(`orphan_special_sources_need_entity_review:${orphanSources.length}`);
+if (!records.length) warnings.push("zero_structured_special_records");
+const reviewedCurrent = records.filter((record) => record.sourceType === "reviewed_restaurant_owned_source" && record.status === "verified_current").length;
 if (reviewedCurrent < 30) errors.push(`reviewed_current_specials_below_target:${reviewedCurrent}:30`);
 
 const report = {
   generatedAt: new Date().toISOString(),
-  count: payload.count || 0,
-  verifiedCurrent: payload.verifiedCurrent || 0,
+  count: records.length,
+  rawCount: rawRecords.length,
+  localPolicyExcludedRecords,
+  verifiedCurrent: records.filter((record) => record.status === "verified_current").length,
   reviewedCurrent,
-  recurringVerify: payload.recurringVerify || 0,
-  sourceLeads: payload.sourceLeads || 0,
-  stale: payload.stale || 0,
-  expired: payload.expired || 0,
-  orphanSourceCount: payload.orphanSourceCount || 0,
+  recurringVerify: records.filter((record) => record.status === "likely_recurring_verify").length,
+  sourceLeads: records.filter((record) => record.status === "source_lead").length,
+  stale: records.filter((record) => record.status === "stale").length,
+  expired: records.filter((record) => record.status === "expired").length,
+  orphanSourceCount: orphanSources.length,
+  rawOrphanSourceCount: rawOrphanSources.length,
+  localPolicyExcludedOrphans,
   currentVerificationMaxAgeDays: currentVerifyDays,
   errors,
   warnings
