@@ -155,8 +155,6 @@ jobs:
             data/build/thumbnail-promotion-plan.json
             data/build/thumbnail-promotion-plan.csv
             data/build/thumbnail-source-check-priority.csv
-            data/build/thumbnail-owner-outreach-priority.json
-            data/build/thumbnail-owner-outreach-priority.csv
             docs/thumbnail-coverage-report.md
             docs/thumbnail-coverage-attack-plan.md
             data/build/halifax_sourced.sqlite
