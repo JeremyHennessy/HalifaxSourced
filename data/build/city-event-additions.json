@@ -4,8 +4,8 @@
   "policy": "Curated city-event additions are source-backed records used when current official or local calendars have not yet been promoted into the primary city-events build.",
   "sources": [
     {
-      "sourceId": "taste-asia-official",
-      "sourceName": "Taste Asia",
+      "sourceId": "taste-asia-2026",
+      "sourceName": "Taste Asia 2026",
       "sourceUrl": "https://tasteasia.ca/",
       "authority": "official_primary"
     },
@@ -79,8 +79,8 @@
       ],
       "sourceEvidence": [
         {
-          "sourceId": "taste-asia-official",
-          "sourceName": "Taste Asia",
+          "sourceId": "taste-asia-2026",
+          "sourceName": "Taste Asia 2026",
           "sourceUrl": "https://tasteasia.ca/",
           "basis": "official_primary",
           "observedFacts": [
