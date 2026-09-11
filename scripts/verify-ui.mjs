@@ -74,9 +74,19 @@ const totals = await page.evaluate(() => ({
   orderingRestaurants: window.__halifaxOrderingLinkedRestaurantCount ?? 0,
   structuredSpecials: window.__halifaxStructuredSpecialCount ?? 0,
   verifiedCurrentSpecials: window.__halifaxVerifiedCurrentSpecialCount ?? 0,
-  cityEvents: window.HALIFAX_CITY_EVENTS?.eventCount ?? 0
+  cityEvents: window.HALIFAX_CITY_EVENTS?.eventCount ?? 0,
+  localPolicyExcluded: window.HALIFAX_LOCAL_RESTAURANT_POLICY?.excludedCount ?? 0,
+  chainMatches: (() => {
+    const blocked = [/mcdonald/i, /wendy'?s/i, /tim hortons/i, /subway/i, /burger king/i, /\bkfc\b/i, /starbucks/i, /pizza hut/i, /pizza pizza/i, /\bcora\b/i];
+    const browserRestaurants = typeof restaurants !== "undefined" && Array.isArray(restaurants) ? restaurants : [];
+    return browserRestaurants
+      .filter((restaurant) => blocked.some((pattern) => pattern.test(String(restaurant?.name || ""))))
+      .map((restaurant) => restaurant.name)
+      .slice(0, 20);
+  })()
 }));
-if (totals.restaurants < 700 || totals.officialSignals < 100) throw new Error(`Expected preserved discovery data, got ${JSON.stringify(totals)}.`);
+if (totals.restaurants < 550 || totals.officialSignals < 100 || totals.localPolicyExcluded < 150) throw new Error(`Expected preserved local-eligible discovery data after chain filtering, got ${JSON.stringify(totals)}.`);
+if (totals.chainMatches.length) throw new Error(`Expected fast-food and big-chain restaurants to be removed from the browser model, found ${JSON.stringify(totals.chainMatches)}.`);
 if (totals.discoveredRestaurants < 1) throw new Error(`Expected reviewed local discovery records, got ${JSON.stringify(totals)}.`);
 if (totals.socialProfiles < 100 || totals.relatedLinks < 100 || totals.socialRestaurants < 50) throw new Error(`Expected expanded first-party link coverage, got ${JSON.stringify(totals)}.`);
 if (totals.structuredSpecials < 60 || totals.verifiedCurrentSpecials < 40) throw new Error(`Expected reviewed structured specials, got ${JSON.stringify(totals)}.`);
@@ -394,8 +404,7 @@ for (const target of [
   { id: "osm-node-13262595504-mappatura-bistro", title: "Mappatura Bistro", address: "5883 Spring Garden", menu: "mappaturabistro.ca/menu", socialProfiles: 2 },
   { id: "osm-node-26041177-your-father-s-moustache", title: "Your Father's Moustache", address: "5686 Spring Garden", menu: "yourfathersmoustache.ca/our-menu" },
   { id: "osm-node-5161526522-sushi-nami-royale", title: "Sushi Nami Royale", address: "1458 Queen", menu: "sushinami.ca/downtown-halifax", socialProfiles: 3 },
-  { id: "osm-node-3791840157-krave-burger", title: "Krave Burger", address: "5680 Spring Garden", menu: "kraveburger.com/menu" },
-  { id: "osm-node-3799422457-cora", title: "Cora", address: "1535 Dresden", menu: "chezcora.com/en/menu" }
+  { id: "osm-node-3791840157-krave-burger", title: "Krave Burger", address: "5680 Spring Garden", menu: "kraveburger.com/menu" }
 ]) {
   await page.goto(`${url}/#restaurant/${target.id}`, { waitUntil: "networkidle" });
   await page.locator("h1", { hasText: target.title }).waitFor();
@@ -663,4 +672,4 @@ await page.screenshot({ path: resolve("artifacts", "ui-check-mobile.png"), fullP
 if (criticalResourceFailures.length) throw new Error(`Critical resource failures detected:\n${criticalResourceFailures.join("\n")}`);
 if (consoleErrors.length) throw new Error(`Console errors detected:\n${consoleErrors.join("\n")}`);
 await browser.close();
-console.log("Halifax Sourced UI verified: discovery, social links, booking/ordering, functional event filters, event search, saved events, calendar export, map/list sync, desktop, and mobile navigation.");
+console.log("Halifax Sourced UI verified: local restaurant policy, discovery, social links, booking/ordering, functional event filters, event search, saved events, calendar export, map/list sync, desktop, and mobile navigation.");
