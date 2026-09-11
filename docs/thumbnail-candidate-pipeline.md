@@ -16,6 +16,7 @@ node scripts/build-recent-social-posts.mjs
 node scripts/build-thumbnail-candidates.mjs
 node scripts/check-thumbnail-candidates.mjs
 node scripts/build-thumbnail-coverage-report.mjs
+node scripts/plan-thumbnail-coverage-attack.mjs
 ```
 
 Run a live official-page thumbnail discovery pass:
@@ -27,6 +28,7 @@ THUMBNAIL_DISCOVERY_PAGES_PER_RESTAURANT=3 \
 node scripts/build-thumbnail-candidates.mjs
 node scripts/check-thumbnail-candidates.mjs
 node scripts/build-thumbnail-coverage-report.mjs
+node scripts/plan-thumbnail-coverage-attack.mjs
 ```
 
 The coverage builder writes:
@@ -42,6 +44,18 @@ The report separates:
 - restaurants missing an approved thumbnail but having candidates ready for review
 - restaurants with no candidate at all
 - candidates grouped by source kind, review state, rights state, extraction method and platform
+
+The attack planner writes:
+
+- `data/build/thumbnail-promotion-plan.json`
+- `data/build/thumbnail-promotion-plan.csv`
+- `data/build/thumbnail-source-check-priority.csv`
+- `artifacts/thumbnail-promotion-plan.json`
+- `docs/thumbnail-coverage-attack-plan.md`
+
+The promotion CSV ranks the cleanest exact-ID candidate-review images first. It admits only HTTPS images, first-party or approved-CDN provenance, no hard decoded-image quality flags, and source kinds that can move through governed review. The source-check CSV keeps remote-host cases held, but sorts the cleanest records first for first-party host validation.
+
+Owner outreach remains aggregate-only in public artifacts. The planner counts the no-candidate restaurants and splits them into website-first versus manual-contact lookup buckets, but row-level owner outreach and submitted-image rights metadata should stay in the private owner-submission workflow unless publication is explicitly approved.
 
 Store the resulting candidates in the local SQLite database:
 

@@ -26,6 +26,7 @@ on:
       - scripts/build-reviewed-social-posts.mjs
       - scripts/build-thumbnail-candidates.mjs
       - scripts/build-thumbnail-coverage-report.mjs
+      - scripts/plan-thumbnail-coverage-attack.mjs
       - scripts/check-thumbnail-candidates.mjs
       - scripts/check-patio-directory-facts.mjs
       - scripts/check-public-special-source-leads.mjs
@@ -148,6 +149,8 @@ jobs:
         run: node scripts/build-thumbnail-candidates.mjs
 
       - name: Validate source datasets
+        env:
+          SOURCE_COMMIT_SHA: ${{ github.event.pull_request.head.sha || github.sha }}
         run: |
           node scripts/check-data-integrity.mjs
           node scripts/check-expanded-sources.mjs
@@ -155,6 +158,7 @@ jobs:
           node scripts/check-patio-directory-facts.mjs
           node scripts/check-public-special-source-leads.mjs
           node scripts/build-thumbnail-coverage-report.mjs
+          node scripts/plan-thumbnail-coverage-attack.mjs
 
       - name: Upload source expansion preview
         uses: actions/upload-artifact@v4
@@ -187,11 +191,16 @@ jobs:
             data/thumbnail-candidates.js
             data/build/thumbnail-candidates.json
             data/build/thumbnail-coverage-report.json
+            data/build/thumbnail-promotion-plan.json
+            data/build/thumbnail-promotion-plan.csv
+            data/build/thumbnail-source-check-priority.csv
             docs/thumbnail-coverage-report.md
+            docs/thumbnail-coverage-attack-plan.md
             artifacts/data-integrity-report.json
             artifacts/expanded-source-integrity-report.json
             artifacts/thumbnail-candidates-report.json
             artifacts/thumbnail-coverage-report.json
+            artifacts/thumbnail-promotion-plan.json
             artifacts/patio-directory-facts-report.json
             artifacts/public-special-source-leads-report.json
           if-no-files-found: error
