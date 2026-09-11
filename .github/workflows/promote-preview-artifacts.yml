@@ -1,0 +1,194 @@
+name: Promote Preview Artifacts
+
+on:
+  workflow_run:
+    workflows:
+      - Source Expansion Preview
+      - City Events Preview
+      - Social Source Preview
+    types:
+      - completed
+    branches:
+      - main
+  workflow_dispatch:
+    inputs:
+      run_id:
+        description: Workflow run ID containing the preview artifact to promote.
+        required: true
+        type: string
+      artifact_name:
+        description: Preview artifact name to promote.
+        required: true
+        type: choice
+        options:
+          - source-expansion-preview
+          - city-events-preview
+          - social-source-preview
+
+permissions:
+  actions: write
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: preview-artifact-promotion
+  cancel-in-progress: false
+
+jobs:
+  promote:
+    name: Promote preview artifact
+    if: >-
+      github.event_name == 'workflow_dispatch' ||
+      (
+        github.event.workflow_run.conclusion == 'success' &&
+        github.event.workflow_run.head_branch == 'main' &&
+        github.event.workflow_run.head_repository.full_name == github.repository &&
+        github.event.workflow_run.event != 'pull_request'
+      )
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Resolve preview artifact
+        id: preview
+        shell: bash
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_run" ]; then
+            run_id="${{ github.event.workflow_run.id }}"
+            workflow_name="${{ github.event.workflow_run.name }}"
+            source_run_url="${{ github.event.workflow_run.html_url }}"
+
+            case "$workflow_name" in
+              "Source Expansion Preview") artifact_name="source-expansion-preview" ;;
+              "City Events Preview") artifact_name="city-events-preview" ;;
+              "Social Source Preview") artifact_name="social-source-preview" ;;
+              *)
+                echo "::error::Unsupported preview workflow: $workflow_name"
+                exit 1
+                ;;
+            esac
+          else
+            run_id="${{ inputs.run_id }}"
+            artifact_name="${{ inputs.artifact_name }}"
+            workflow_name="manual promotion"
+            source_run_url="${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ inputs.run_id }}"
+          fi
+
+          if [ -z "$run_id" ] || [ -z "$artifact_name" ]; then
+            echo "::error::run_id and artifact_name are required."
+            exit 1
+          fi
+
+          echo "run_id=$run_id" >> "$GITHUB_OUTPUT"
+          echo "artifact_name=$artifact_name" >> "$GITHUB_OUTPUT"
+          echo "workflow_name=$workflow_name" >> "$GITHUB_OUTPUT"
+          echo "source_run_url=$source_run_url" >> "$GITHUB_OUTPUT"
+
+      - name: Checkout main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Download preview artifact
+        uses: actions/download-artifact@v4
+        with:
+          github-token: ${{ github.token }}
+          run-id: ${{ steps.preview.outputs.run_id }}
+          name: ${{ steps.preview.outputs.artifact_name }}
+          path: ${{ runner.temp }}/preview-artifact
+
+      - name: Promote allowlisted data files
+        env:
+          ARTIFACT_DIR: ${{ runner.temp }}/preview-artifact
+          ARTIFACT_NAME: ${{ steps.preview.outputs.artifact_name }}
+          ARTIFACT_RUN_ID: ${{ steps.preview.outputs.run_id }}
+          SOURCE_WORKFLOW_NAME: ${{ steps.preview.outputs.workflow_name }}
+          SOURCE_WORKFLOW_RUN_URL: ${{ steps.preview.outputs.source_run_url }}
+        run: node scripts/promote-preview-artifacts.mjs
+
+      - name: Detect promoted data changes
+        id: changes
+        shell: bash
+        run: |
+          git status --short
+          data_status="$(git status --porcelain -- data ':!data/build/preview-promotion-metadata.json')"
+          if [ -z "$data_status" ]; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "No promoted data changes found."
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+            echo "$data_status"
+            git diff --stat -- data ':!data/build/preview-promotion-metadata.json'
+          fi
+
+      - name: Commit promoted data
+        id: commit
+        if: steps.changes.outputs.changed == 'true'
+        shell: bash
+        run: |
+          artifact_name="${{ steps.preview.outputs.artifact_name }}"
+          branch="codex/promote-${artifact_name}"
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -B "$branch"
+          git add data data/build
+          git commit -m "Promote ${artifact_name} data preview"
+          git push --force-with-lease origin "$branch"
+
+          echo "branch=$branch" >> "$GITHUB_OUTPUT"
+
+      - name: Open or update promotion pull request
+        id: pull-request
+        if: steps.changes.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          artifact_name="${{ steps.preview.outputs.artifact_name }}"
+          artifact_run_id="${{ steps.preview.outputs.run_id }}"
+          branch="${{ steps.commit.outputs.branch }}"
+          source_run_url="${{ steps.preview.outputs.source_run_url }}"
+          title="Promote ${artifact_name} data preview"
+
+          cat > "$RUNNER_TEMP/pr-body.md" <<BODY
+          Automated promotion of the \`${artifact_name}\` preview artifact.
+
+          Source workflow run: ${source_run_url}
+          Source run ID: \`${artifact_run_id}\`
+          Promoted paths: \`data/\` and \`data/build/\` allowlist only.
+
+          This PR dispatches \`Quality Gate\` for \`${branch}\`. The existing gated Pages workflow deploys after this PR is merged and \`Quality Gate\` succeeds on \`main\`.
+          BODY
+
+          existing_pr="$(gh pr list --head "$branch" --base main --state open --json number --jq '.[0].number // empty')"
+          if [ -n "$existing_pr" ]; then
+            gh pr edit "$existing_pr" --title "$title" --body-file "$RUNNER_TEMP/pr-body.md"
+            pr_url="$(gh pr view "$existing_pr" --json url --jq '.url')"
+          else
+            pr_url="$(gh pr create --base main --head "$branch" --title "$title" --body-file "$RUNNER_TEMP/pr-body.md")"
+            existing_pr="${pr_url##*/}"
+          fi
+
+          echo "number=$existing_pr" >> "$GITHUB_OUTPUT"
+          echo "url=$pr_url" >> "$GITHUB_OUTPUT"
+          echo "Opened or updated PR: $pr_url"
+
+      - name: Run Quality Gate for promotion branch
+        if: steps.changes.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          gh workflow run "Quality Gate" --ref "${{ steps.commit.outputs.branch }}"
+          echo "Dispatched Quality Gate for ${{ steps.commit.outputs.branch }}."
+
+      - name: Promotion result
+        if: steps.changes.outputs.changed == 'true'
+        run: |
+          echo "Promotion PR: ${{ steps.pull-request.outputs.url }}"
+          echo "Pages deploy remains gated by the main-branch Quality Gate after merge."
