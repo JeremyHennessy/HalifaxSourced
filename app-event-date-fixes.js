@@ -87,6 +87,53 @@
     return { startKey: todayKey, endKey: formatPartsKey(end) };
   }
 
+  function durationDaysBetween(startParts, endParts) {
+    if (!startParts || !endParts) return null;
+    const days = Math.round((Date.UTC(endParts.year, endParts.month - 1, endParts.day) - Date.UTC(startParts.year, startParts.month - 1, startParts.day)) / 86400000) + 1;
+    return Number.isFinite(days) ? Math.max(1, days) : null;
+  }
+
+  function eventInclusiveDurationDaysWithLocalDates(event) {
+    const start = eventBoundaryParts(event, "startAt");
+    const end = eventBoundaryParts(event, "endAt") || start;
+    return durationDaysBetween(start, end);
+  }
+
+  function eventIsLongRunningWithLocalDates(event) {
+    const days = eventInclusiveDurationDaysWithLocalDates(event);
+    return Number.isFinite(days) && days > 7;
+  }
+
+  function eventDurationKindWithLocalDates(event) {
+    return eventIsLongRunningWithLocalDates(event) ? "long" : "short";
+  }
+
+  function eventLooksLikeSportsSeasonWithLocalDates(event) {
+    const title = String(event?.title || "");
+    const categories = Array.isArray(event?.categories) ? event.categories : [];
+    const sports = categories.includes("Sports") || /official_.*sports|sports_schedule/i.test(String(event?.sourceKind || ""));
+    if (!sports || !/\bseason\b|season ticket|home schedule/i.test(title) || !eventIsLongRunningWithLocalDates(event)) return false;
+    return !/\b(vs\.?|v\.?|versus)\b|\s(?:at|@)\s|\bhome opener\b|\bmatch(day)?\b|\bgame\s+\d+\b/i.test(` ${title} `);
+  }
+
+  function eventShortDateLabel(parts, options = {}) {
+    const date = dateForDisplayParts(parts);
+    if (!date) return "TBD";
+    return date.toLocaleDateString("en-CA", {
+      weekday: options.weekday ? "short" : undefined,
+      month: "short",
+      day: "numeric",
+      timeZone: HALIFAX_EVENT_TIME_ZONE
+    });
+  }
+
+  function eventIsOngoingToday(event) {
+    const todayKey = formatPartsKey(halifaxDateParts(new Date()));
+    const startKey = eventBoundaryKey(event, "startAt");
+    const endKey = eventBoundaryKey(event, "endAt") || startKey;
+    return Boolean(todayKey && startKey && endKey && startKey <= todayKey && endKey >= todayKey);
+  }
+
   halifaxDateParts = function halifaxDatePartsWithDateOnly(value) {
     const dateOnly = parseDateOnlyParts(value);
     if (dateOnly) return dateOnly;
@@ -142,6 +189,14 @@
     };
   }
 
+  eventInclusiveDurationDays = eventInclusiveDurationDaysWithLocalDates;
+  eventIsLongRunning = eventIsLongRunningWithLocalDates;
+  eventDurationKind = eventDurationKindWithLocalDates;
+  eventLooksLikeSportsSeason = eventLooksLikeSportsSeasonWithLocalDates;
+  isDiscoverableCityEvent = function isDiscoverableCityEventWithSportsGamePolicy(event) {
+    return !eventLooksLikeSportsSeasonWithLocalDates(event);
+  };
+
   if (typeof eventTimeKind === "function") {
     eventTimeKind = function eventTimeKindWithDateOnly(event) {
       if (event?.allDay || parseDateOnlyParts(event?.startAt)) return "all-day";
@@ -163,34 +218,58 @@
   structuredEventWhen = function structuredEventWhenWithLocalDates(event) {
     const start = eventStartInstant(event);
     if (!start) return "Date unavailable";
+    const startParts = eventBoundaryParts(event, "startAt");
+    const endParts = eventBoundaryParts(event, "endAt") || startParts;
+    const startKey = formatPartsKey(startParts);
+    const endKey = formatPartsKey(endParts);
     const isDateOnly = Boolean(event?.allDay || parseDateOnlyParts(event?.startAt));
-    const displayDate = isDateOnly ? dateForDisplayParts(eventBoundaryParts(event, "startAt")) : start;
+
+    if (eventIsLongRunningWithLocalDates(event) && startKey && endKey) {
+      const endLabel = eventShortDateLabel(endParts, { weekday: true });
+      if (eventIsOngoingToday(event)) return `Ongoing through ${endLabel}`;
+      return `Runs ${eventShortDateLabel(startParts, { weekday: true })} - ${endLabel}`;
+    }
+
+    const displayDate = isDateOnly ? dateForDisplayParts(startParts) : start;
     const date = displayDate.toLocaleDateString("en-CA", { weekday: "short", month: "short", day: "numeric", timeZone: HALIFAX_EVENT_TIME_ZONE });
     if (isDateOnly) {
-      const startKey = eventBoundaryKey(event, "startAt");
-      const endKey = eventBoundaryKey(event, "endAt");
       if (!endKey || endKey === startKey) return date;
-      const endDate = dateForDisplayParts(eventBoundaryParts(event, "endAt"));
-      const endLabel = endDate.toLocaleDateString("en-CA", { month: "short", day: "numeric", timeZone: HALIFAX_EVENT_TIME_ZONE });
+      const endLabel = eventShortDateLabel(endParts, { weekday: true });
       return `${date} - ${endLabel}`;
     }
     const time = start.toLocaleTimeString("en-CA", { hour: "numeric", minute: "2-digit", timeZone: HALIFAX_EVENT_TIME_ZONE, timeZoneName: "short" });
     return `${date} - ${time}`;
   };
 
+  eventDateBadge = function eventDateBadgeWithLocalDates(event) {
+    const startParts = eventBoundaryParts(event, "startAt");
+    const displayDate = dateForDisplayParts(startParts) || eventStartInstant(event);
+    if (!displayDate) return { label: "DATE", primary: "TBD", className: "" };
+    if (eventIsLongRunningWithLocalDates(event)) {
+      const endParts = eventBoundaryParts(event, "endAt") || startParts;
+      const startLabel = eventShortDateLabel(startParts);
+      const endLabel = eventShortDateLabel(endParts);
+      if (eventIsOngoingToday(event)) return { label: "ONGOING", primary: "Until", secondary: endLabel, className: "is-long-running" };
+      return { label: "RUNS", primary: startLabel, secondary: `to ${endLabel}`, className: "is-long-running" };
+    }
+    return {
+      label: displayDate.toLocaleDateString("en-CA", { month: "short", timeZone: HALIFAX_EVENT_TIME_ZONE }).toUpperCase(),
+      primary: displayDate.toLocaleDateString("en-CA", { day: "numeric", timeZone: HALIFAX_EVENT_TIME_ZONE }),
+      className: ""
+    };
+  };
+
   cityEventCard = function cityEventCardWithLocalDates(event) {
-    const displayDate = dateForDisplayParts(eventBoundaryParts(event, "startAt")) || eventStartInstant(event);
-    const month = displayDate.toLocaleDateString("en-CA", { month: "short", timeZone: HALIFAX_EVENT_TIME_ZONE }).toUpperCase();
-    const day = displayDate.toLocaleDateString("en-CA", { day: "numeric", timeZone: HALIFAX_EVENT_TIME_ZONE });
+    const badge = eventDateBadge(event);
     const primaryCategory = event.categories?.[0] || "Event";
-    const tags = [...new Set([primaryCategory, ...(event.categories || []).slice(1, 3)])];
+    const tags = [...new Set([primaryCategory, ...(event.categories || []).slice(1, 3), eventIsLongRunning(event) ? "Long-running" : null].filter(Boolean))];
     const source = safeUrl(event.eventUrl) || safeUrl(event.ticketUrl) || safeUrl(event.sourceUrl);
     const eventId = String(event.id || `${event.title}-${event.startAt}`);
     const saved = savedCityEvents.has(eventId);
     const priceLabel = event.price ? String(event.price) : "Price not listed";
     const city = eventCityName(event);
-    return `<article class="event-card" data-event-id="${escapeHtml(eventId)}" data-event-categories="${escapeHtml((event.categories || []).join("|"))}" data-event-city="${escapeHtml(city)}" data-event-cost="${escapeHtml(eventCostKind(event))}">
-    <div class="event-date"><span>${escapeHtml(month)}</span><strong>${escapeHtml(day)}</strong></div>
+    return `<article class="event-card" data-event-id="${escapeHtml(eventId)}" data-event-categories="${escapeHtml((event.categories || []).join("|"))}" data-event-city="${escapeHtml(city)}" data-event-cost="${escapeHtml(eventCostKind(event))}" data-event-duration="${escapeHtml(eventDurationKind(event))}">
+    <div class="event-date ${escapeHtml(badge.className || "")}"><span>${escapeHtml(badge.label)}</span><strong>${escapeHtml(badge.primary)}</strong>${badge.secondary ? `<em>${escapeHtml(badge.secondary)}</em>` : ""}</div>
     <div class="event-thumb media-dining"></div>
     <div class="event-copy"><div class="event-title-line"><h3>${escapeHtml(event.title)}</h3><span>${escapeHtml(primaryCategory)}</span></div><p>${escapeHtml(event.venueName || event.address || city)}</p><small>${escapeHtml(structuredEventWhen(event))} - ${escapeHtml(city)} - ${escapeHtml(priceLabel)}</small><div class="card-tags">${tags.map((tag) => `<span>${escapeHtml(tag)}</span>`).join("")}<span>${escapeHtml(event.sourceName || "Source")}</span></div></div>
     <div class="event-card-actions">${source ? `<a class="button tertiary" href="${escapeHtml(source)}" target="_blank" rel="noreferrer">Source</a>` : ""}<button class="button tertiary ${saved ? "is-saved" : ""}" type="button" data-save-event-id="${escapeHtml(eventId)}" aria-pressed="${saved}" aria-label="${saved ? "Remove" : "Save"} ${escapeHtml(event.title)}">${saved ? "Saved" : "Save"}</button><button class="button tertiary" type="button" data-event-calendar="${escapeHtml(eventId)}">Calendar</button></div>
@@ -199,11 +278,9 @@
 
   structuredEventCard = function structuredEventCardWithLocalDates(event) {
     const restaurant = restaurants.find((item) => item.id === event.restaurantId);
-    const displayDate = dateForDisplayParts(eventBoundaryParts(event, "startAt")) || eventStartInstant(event);
-    const month = displayDate.toLocaleDateString("en-CA", { month: "short", timeZone: HALIFAX_EVENT_TIME_ZONE }).toUpperCase();
-    const day = displayDate.toLocaleDateString("en-CA", { day: "numeric", timeZone: HALIFAX_EVENT_TIME_ZONE });
+    const badge = eventDateBadge(event);
     const source = safeUrl(event.eventUrl) || safeUrl(event.sourceUrl);
-    return `<article class="event-card"><div class="event-date"><span>${escapeHtml(month)}</span><strong>${escapeHtml(day)}</strong></div><div class="event-thumb media-${restaurant ? mediaTone(restaurant) : "dining"}${restaurant ? permittedImageClass(restaurant) : ""}">${restaurant ? mediaImageMarkup(restaurant) : ""}</div><div class="event-copy"><div class="event-title-line"><h3>${escapeHtml(event.title)}</h3><span>${escapeHtml(String(event.eventType || "Event").replace(/Event$/, "") || "Event")}</span></div><p>${escapeHtml(event.venueName || restaurant?.name || "Halifax")}</p><small>${escapeHtml(structuredEventWhen(event))}${restaurant?.neighborhood ? ` - ${escapeHtml(restaurant.neighborhood)}` : ""}</small><div class="card-tags"><span>Structured date</span><span>Official source</span></div></div>${source ? `<a class="button tertiary" href="${escapeHtml(source)}" target="_blank" rel="noreferrer">Source</a>` : restaurant ? `<a class="button tertiary" href="#restaurant/${encodeURIComponent(restaurant.id)}">View</a>` : ""}</article>`;
+    return `<article class="event-card" data-event-duration="${escapeHtml(eventDurationKind(event))}"><div class="event-date ${escapeHtml(badge.className || "")}"><span>${escapeHtml(badge.label)}</span><strong>${escapeHtml(badge.primary)}</strong>${badge.secondary ? `<em>${escapeHtml(badge.secondary)}</em>` : ""}</div><div class="event-thumb media-${restaurant ? mediaTone(restaurant) : "dining"}${restaurant ? permittedImageClass(restaurant) : ""}">${restaurant ? mediaImageMarkup(restaurant) : ""}</div><div class="event-copy"><div class="event-title-line"><h3>${escapeHtml(event.title)}</h3><span>${escapeHtml(String(event.eventType || "Event").replace(/Event$/, "") || "Event")}</span></div><p>${escapeHtml(event.venueName || restaurant?.name || "Halifax")}</p><small>${escapeHtml(structuredEventWhen(event))}${restaurant?.neighborhood ? ` - ${escapeHtml(restaurant.neighborhood)}` : ""}</small><div class="card-tags"><span>Structured date</span><span>Official source</span>${eventIsLongRunning(event) ? "<span>Long-running</span>" : ""}</div></div>${source ? `<a class="button tertiary" href="${escapeHtml(source)}" target="_blank" rel="noreferrer">Source</a>` : restaurant ? `<a class="button tertiary" href="#restaurant/${encodeURIComponent(restaurant.id)}">View</a>` : ""}</article>`;
   };
 
   simpleCalendar = function simpleCalendarWithLocalDates(events = []) {
@@ -233,8 +310,9 @@
       const today = formatPartsKey(halifaxDateParts(now));
       const tomorrow = formatPartsKey(addDaysToHalifaxParts(halifaxDateParts(now), 1));
       const events = (window.HALIFAX_CITY_EVENTS?.events || [])
+        .filter((event) => typeof isDiscoverableCityEvent !== "function" || isDiscoverableCityEvent(event))
         .map((event) => ({ event, start: eventStartInstant(event) }))
-        .filter((item) => item.start && item.start >= new Date(now.getTime() - 6 * 3600000) && !(item.event?.allDay || parseDateOnlyParts(item.event?.startAt)))
+        .filter((item) => item.start && item.start >= new Date(now.getTime() - 6 * 3600000) && !(item.event?.allDay || parseDateOnlyParts(item.event?.startAt)) && !eventIsLongRunningWithLocalDates(item.event))
         .sort((a, b) => a.start - b.start);
       const tonight = events
         .filter(({ start }) => {
@@ -274,6 +352,11 @@
     eventEndInstant,
     eventDateWindowRange,
     parseDateOnlyParts,
-    structuredEventWhen
+    structuredEventWhen,
+    eventInclusiveDurationDays: eventInclusiveDurationDaysWithLocalDates,
+    eventIsLongRunning: eventIsLongRunningWithLocalDates,
+    eventDurationKind: eventDurationKindWithLocalDates,
+    eventLooksLikeSportsSeason: eventLooksLikeSportsSeasonWithLocalDates,
+    eventDateBadge
   };
 })();
