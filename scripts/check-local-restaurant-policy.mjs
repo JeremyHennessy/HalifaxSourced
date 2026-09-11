@@ -4,7 +4,9 @@ import { isLocalRestaurantRecord, localRestaurantPolicyDecision } from "./lib/lo
 const errors = [];
 const excludedFixtures = [
   "McDonald's",
+  "McDonald\u2019s",
   "Wendy's",
+  "Wendy\u2019s",
   "Tim Hortons",
   "Subway",
   "Burger King",
