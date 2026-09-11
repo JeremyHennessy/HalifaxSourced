@@ -1,5 +1,6 @@
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import vm from "node:vm";
+import { localRestaurantPolicyDecision } from "./lib/local-restaurant-policy.mjs";
 
 async function json(path, fallback = {}) {
   try { return JSON.parse(await readFile(new URL(`../${path}`, import.meta.url), "utf8")); }
@@ -24,7 +25,9 @@ const verifiedPages = await json("data/build/verified-source-pages.json", { menu
 const curatedWindow = await windowData("data/restaurants.js");
 const reviewedWindow = await windowData("data/reviewed-place-resolutions.js");
 const curated = curatedWindow.HALIFAX_RESTAURANTS || [];
-const reviewed = reviewedWindow.HALIFAX_REVIEWED_PLACE_RESOLUTIONS?.records || [];
+const reviewedRaw = reviewedWindow.HALIFAX_REVIEWED_PLACE_RESOLUTIONS?.records || [];
+const reviewed = reviewedRaw.filter((record) => !localRestaurantPolicyDecision(record).excluded);
+const localPolicyExcludedReviewed = reviewedRaw.length - reviewed.length;
 const resolutionByCandidateId = new Map((resolutions.resolutions || []).map((record) => [record.candidateId, record]));
 const places = new Map([...(catalog.restaurants || []), ...(discovered.restaurants || []), ...curated].map((place) => [place.id, place]));
 const firstPartyById = new Map((firstParty.records || []).map((record) => [record.restaurantId, record]));
@@ -88,6 +91,7 @@ const report = {
   version: 1,
   generatedAt: new Date().toISOString(),
   policy: reviewedWindow.HALIFAX_REVIEWED_PLACE_RESOLUTIONS?.policy || null,
+  localPolicyExcludedReviewed,
   downtownDartmouth: sourceQueue("downtown-dartmouth-food-drink"),
   springGarden: { ...sourceQueue("spring-garden-eat-drink"), publicationDecision: "partial_publication_location_specific_evidence_only" },
   publishedRecords: records,
@@ -98,4 +102,4 @@ const report = {
 await mkdir(new URL("../data/build", import.meta.url), { recursive: true });
 await writeFile(new URL("../data/build/neighbourhood-resolution-report.json", import.meta.url), JSON.stringify(report, null, 2));
 if (failures.length) { console.error(JSON.stringify(failures, null, 2)); process.exit(1); }
-console.log(JSON.stringify({ downtownDartmouth: report.downtownDartmouth, springGarden: report.springGarden, practicalGapCounts: report.practicalGapCounts }, null, 2));
+console.log(JSON.stringify({ downtownDartmouth: report.downtownDartmouth, springGarden: report.springGarden, localPolicyExcludedReviewed, practicalGapCounts: report.practicalGapCounts }, null, 2));
