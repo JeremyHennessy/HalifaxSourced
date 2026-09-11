@@ -289,6 +289,18 @@
     return { included: result.included.length, excluded: result.excluded.length };
   }
 
+  function refreshThumbnailCounts(payload) {
+    if (!payload || !payload.counts) return;
+    const candidates = Array.isArray(payload.candidates) ? payload.candidates : [];
+    const approvedRestaurantIds = new Set(candidates.filter((candidate) => candidate && candidate.eligibleForProduction).map((candidate) => candidate.restaurantId));
+    const anyCandidateRestaurantIds = new Set(candidates.map((candidate) => candidate && candidate.restaurantId).filter(Boolean));
+    payload.counts.thumbnailCandidates = candidates.length;
+    payload.counts.restaurantsWithApprovedThumbnail = approvedRestaurantIds.size;
+    payload.counts.restaurantsWithAnyCandidate = anyCandidateRestaurantIds.size;
+    if (Array.isArray(payload.missingApproved)) payload.counts.restaurantsMissingApprovedThumbnail = payload.missingApproved.length;
+    if (Array.isArray(payload.missingAnyCandidate)) payload.counts.restaurantsMissingAnyCandidate = payload.missingAnyCandidate.length;
+  }
+
   const excludedIds = new Set();
   const curated = filterRecords(window.HALIFAX_RESTAURANTS, "curated", excludedIds);
   const openStreetMap = filterRecords(window.HALIFAX_OSM_RESTAURANTS, "openstreetmap", excludedIds);
@@ -307,8 +319,12 @@
     socialSignals: applyPayloadRecordFilter(window.HALIFAX_SOCIAL_SIGNALS, "signals", excludedIds, "social_signals"),
     socialPosts: applyPayloadRecordFilter(window.HALIFAX_SOCIAL_SIGNALS, "posts", excludedIds, "social_posts"),
     recentSocialPosts: applyPayloadRecordFilter(window.HALIFAX_RECENT_SOCIAL_POSTS, "records", excludedIds, "recent_social_posts"),
-    reviewedSocialPosts: applyPayloadRecordFilter(window.HALIFAX_REVIEWED_SOCIAL_POSTS, "records", excludedIds, "reviewed_social_posts")
+    reviewedSocialPosts: applyPayloadRecordFilter(window.HALIFAX_REVIEWED_SOCIAL_POSTS, "records", excludedIds, "reviewed_social_posts"),
+    thumbnailCandidates: applyPayloadRecordFilter(window.HALIFAX_THUMBNAIL_CANDIDATES, "candidates", excludedIds, "thumbnail_candidates"),
+    thumbnailMissingApproved: applyPayloadRecordFilter(window.HALIFAX_THUMBNAIL_CANDIDATES, "missingApproved", excludedIds, "thumbnail_missing_approved"),
+    thumbnailMissingAnyCandidate: applyPayloadRecordFilter(window.HALIFAX_THUMBNAIL_CANDIDATES, "missingAnyCandidate", excludedIds, "thumbnail_missing_any")
   };
+  refreshThumbnailCounts(window.HALIFAX_THUMBNAIL_CANDIDATES);
 
   window.HALIFAX_LOCAL_RESTAURANT_POLICY = {
     version: "2026-09-11",
