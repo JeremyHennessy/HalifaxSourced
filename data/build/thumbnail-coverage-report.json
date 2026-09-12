@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-04T14:52:13.911Z",
-  "sourceCommitSha": null,
+  "generatedAt": "2026-09-12T12:25:41.822Z",
+  "sourceCommitSha": "7063613d2e9b93d9f66e391a61e47bb1dcd45d07",
   "definitions": {
     "approvedThumbnail": "A thumbnail candidate tied to an exact restaurant ID with approved review state and production-approved rights status.",
     "anyThumbnailCandidate": "Any source-backed thumbnail lead for a restaurant, including official feed, Meta API, official page metadata, or already approved media.",
@@ -6408,7 +6408,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "official_feed_media",
-        "observedAt": "2026-09-04T13:39:13.555Z",
+        "observedAt": "2026-09-12T12:22:22.354Z",
         "publishedAt": "2026-09-02T17:13:14.000Z"
       },
       {
@@ -6421,7 +6421,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "official_feed_media",
-        "observedAt": "2026-09-04T13:39:13.555Z",
+        "observedAt": "2026-09-12T12:22:22.354Z",
         "publishedAt": "2026-09-01T14:22:55.000Z"
       },
       {
@@ -6434,7 +6434,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "official_feed_media",
-        "observedAt": "2026-09-04T13:39:13.555Z",
+        "observedAt": "2026-09-12T12:22:22.354Z",
         "publishedAt": "2026-04-02T11:40:44.000Z"
       },
       {

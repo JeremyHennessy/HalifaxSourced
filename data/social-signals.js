@@ -1,15 +1,15 @@
 window.HALIFAX_SOCIAL_SIGNALS = {
   "version": 3,
-  "generatedAt": "2026-09-04T13:39:40.296Z",
+  "generatedAt": "2026-09-12T12:22:46.477Z",
   "graphVersion": "v25.0",
-  "lookbackDays": 240,
+  "lookbackDays": 60,
   "summaryChars": 420,
   "credentialState": {
     "facebook": "missing",
     "instagram": "missing"
   },
-  "discoveredProfileAssociations": 301,
-  "uniqueRestaurantProfiles": 226,
+  "discoveredProfileAssociations": 307,
+  "uniqueRestaurantProfiles": 232,
   "sharedProfileAssociationsSkipped": 75,
   "sharedProfileHandles": 27,
   "profilesAttempted": 0,
