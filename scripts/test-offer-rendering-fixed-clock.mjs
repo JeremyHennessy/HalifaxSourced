@@ -2,6 +2,7 @@ import assert from 'node:assert/strict';
 import {existsSync} from 'node:fs';
 import {readFile,writeFile,mkdir} from 'node:fs/promises';
 import vm from 'node:vm';
+import {installOfflineResources} from './lib/offline-browser-resources.mjs';
 let playwright;for(const candidate of [process.env.PLAYWRIGHT_MODULE,'file:///C:/Users/JeremyHennessy/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright/index.mjs','playwright'].filter(Boolean)){try{playwright=await import(candidate);break;}catch{}}
 if(!playwright)throw Error('Playwright required');
 const browser=await playwright.chromium.launch({headless:true,executablePath:[process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE,'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe','/usr/bin/chromium'].filter(Boolean).find(existsSync)});
@@ -14,7 +15,7 @@ try{
  assert.equal(snapshot.records.filter(r=>context.HalifaxDataIntegrity.currentOffer(r,Date.parse(now),30)).length,0);
  for(const viewport of [{width:1440,height:1000},{width:390,height:844}]){
   const page=await browser.newPage({viewport});await page.clock.install({time:new Date(now)});
-  await page.route('**/*',route=>new URL(route.request().url()).origin===new URL(url).origin?route.continue():route.abort('blockedbyclient'));
+  const resources=await installOfflineResources(page,url);
   await page.goto(url+'/#specials',{waitUntil:'networkidle'});await page.locator('[data-specials-filter-form]').waitFor();
   const fixtures=[['valid',{}],['stale',{status:'stale'}],['oldVerification',{verifiedAt:'2026-08-29T00:00:00Z'}],['future',{verifiedAt:'2026-10-07T00:00:00Z'}],['expired',{validTo:'2026-10-05T00:00:00Z'}],['wrongEntity',{identityValidated:false}],['wrongLocation',{locationValidated:false}],['quarantined',{quarantined:true}],['unsafeSource',{sourceUrl:'https://glitterbeancafe.com/contact'}],['urlOnly',{sourceType:'verified_restaurant_owned_page'}]];
   for(const [name,changes] of fixtures){
@@ -36,7 +37,7 @@ try{
    if(name!=='valid')assert.match(await page.locator('#detailSpecials').innerText(),/Current availability is unverified/);
    evidence.push({viewport,name,currentRendered:name==='valid',passed:true});
   }
-  await page.close();
+  await page.waitForLoadState('networkidle');resources.assertClean();await page.close();
  }
  await mkdir(new URL('../artifacts/',import.meta.url),{recursive:true});await writeFile(new URL('../artifacts/offer-rendering-fixed-clock.json',import.meta.url),JSON.stringify({fixedTime:now,snapshot:{records:160,current:0,stale:55},evidence},null,2));console.log('Fixed-clock offer rendering passed: positive and nine negative cases at desktop/mobile; reviewed snapshot 0 current, 55 stale.');
 }finally{await browser.close();}

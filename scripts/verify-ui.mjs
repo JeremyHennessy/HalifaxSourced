@@ -1,6 +1,7 @@
 import { existsSync } from "node:fs";
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import { resolve } from "node:path";
+import { installOfflineResources } from './lib/offline-browser-resources.mjs';
 
 const candidates = [
   process.env.PLAYWRIGHT_MODULE,
@@ -31,6 +32,8 @@ const browserPaths = [
 const executablePath = browserPaths.find((path) => existsSync(path));
 const browser = await playwright.chromium.launch({ headless: true, executablePath });
 const page = await browser.newPage({ viewport: { width: 1440, height: 1000 }, acceptDownloads: true });
+await page.clock.install({time:new Date('2026-10-06T02:00:00Z')});
+const offlineResources = await installOfflineResources(page, url, {expectedLocal404:['/assets/restaurants/qa-intentionally-missing.jpg']});
 const consoleErrors = [];
 const criticalResourceFailures = [];
 function isIgnorableConsoleError(text) {
@@ -57,17 +60,6 @@ const expectedFeedReviewState = {
   media: expectedWebsiteFeedSignals.posts?.filter((post) => post.mediaUrl).length || 0,
   reviewedFeedsExcluded: expectedWebsiteFeedSignals.reviewedFeedsExcluded || 0
 };
-// Isolate feed-image rendering from third-party availability. These exact URLs
-// come from the loaded model; a licensed repository image supplies test bytes.
-const feedImageFixture = await readFile(resolve('assets/restaurants/the-narrows-exterior.jpg'));
-const imageControlEvidence = [];
-async function controlFeedImages(restaurantId) {
-  const urls = await page.evaluate((id) => [...new Set((restaurants.find(r => r.id === id)?.officialUpdates || []).map(update => safeUrl(update.mediaUrl || update.thumbnailUrl)).filter(Boolean))], restaurantId);
-  for (const sourceUrl of urls) await page.route(sourceUrl, async route => {
-    imageControlEvidence.push({ restaurantId, sourceUrl, status: 200, response: 'licensed-local-test-fixture' });
-    await route.fulfill({ status: 200, contentType: 'image/jpeg', body: feedImageFixture });
-  });
-}
 async function captureIphone(name) {
   await page.locator(".toast").evaluateAll((nodes) => nodes.forEach((node) => node.remove()));
   await page.screenshot({ path: resolve("artifacts", `ui-check-iphone-${name}.png`), fullPage: true });
@@ -363,7 +355,6 @@ await page.goto(`${url}/#restaurant/osm-node-11751643550-cafe-lunette`, { waitUn
 await page.locator("#detailUpdates .official-update-card").first().waitFor();
 if (await page.locator("#detailUpdates .official-update-card").count() < 3) throw new Error("Expected official Café Lunette feed updates on restaurant detail.");
 await captureIphone("official-updates");
-await controlFeedImages('osm-node-10038454787-bird-s-nest-cafe');
 await page.goto(`${url}/#restaurant/osm-node-10038454787-bird-s-nest-cafe`, { waitUntil: "networkidle" });
 const birdsNestUpdateState = await page.evaluate(() => {
   const restaurant = restaurants.find((item) => item.id === "osm-node-10038454787-bird-s-nest-cafe");
@@ -382,7 +373,6 @@ await page.waitForFunction(() => {
 });
 await page.locator(".toast").evaluateAll((nodes) => nodes.forEach((node) => node.remove()));
 await page.screenshot({ path: resolve("artifacts", "ui-check-iphone-official-update-media.png"), fullPage: false });
-await controlFeedImages('osm-node-7139174640-kajohn-thai');
 await page.goto(`${url}/#restaurant/osm-node-7139174640-kajohn-thai`, { waitUntil: "networkidle" });
 const kajohnUpdateState = await page.evaluate(() => {
   const restaurant = restaurants.find((item) => item.id === "osm-node-7139174640-kajohn-thai");
@@ -518,6 +508,8 @@ await page.evaluate(() => {
   renderRestaurantDetail("the-narrows");
 });
 await page.waitForFunction(() => !document.querySelector(".restaurant-hero-photo") && !document.querySelector(".restaurant-hero")?.classList.contains("has-permitted-image"));
+const narrowsFallbackGeometry = await page.evaluate(() => ({overflow:document.documentElement.scrollWidth-innerWidth,rowRight:Math.max(...[...document.querySelectorAll('.source-link-row')].map(el=>el.getBoundingClientRect().right))}));
+if(narrowsFallbackGeometry.overflow>2||narrowsFallbackGeometry.rowRight>392)throw new Error(`Narrows fallback exceeds mobile viewport: ${JSON.stringify(narrowsFallbackGeometry)}`);
 const brokenImageErrors = consoleErrors.splice(brokenImageErrorStart);
 if (brokenImageErrors.length !== 1 || !/404(?: \(Not Found\)| \(\)|\b)/.test(brokenImageErrors[0])) throw new Error(`Expected exactly one intentional missing-image 404, got ${JSON.stringify(brokenImageErrors)}.`);
 await captureIphone("broken-image-fallback");
@@ -736,7 +728,8 @@ if (!externalTargetState.external || externalTargetState.unsafeTargets) throw ne
 await page.goto(`${url}/#home`, { waitUntil: "networkidle" });
 await page.screenshot({ path: resolve("artifacts", "ui-check-mobile.png"), fullPage: true });
 
-await writeFile(resolve('artifacts/feed-image-success-control.json'), JSON.stringify(imageControlEvidence, null, 2));
+await writeFile(resolve('artifacts/offline-resource-evidence.json'), JSON.stringify(offlineResources.evidence, null, 2));
+offlineResources.assertClean();
 if (criticalResourceFailures.length) throw new Error(`Critical resource failures detected:\n${criticalResourceFailures.join("\n")}`);
 if (consoleErrors.length) throw new Error(`Console errors detected:\n${consoleErrors.join("\n")}`);
 await browser.close();
