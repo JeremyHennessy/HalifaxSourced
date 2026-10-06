@@ -1898,20 +1898,6 @@ window.HALIFAX_VERIFIED_SOURCE_PAGES = {
       "reviewState": "verified"
     },
     {
-      "restaurantId": "osm-node-13141377001-india-paradise",
-      "kind": "menu",
-      "url": "https://www.indiaparadise.ca/mississauga/food-menu",
-      "label": "View Menu",
-      "sourceWebsite": "https://www.indiaparadise.ca/",
-      "sourceKind": "official_page",
-      "verificationMethod": "reachable_official_page",
-      "observedAt": "2026-09-04T13:17:44.962Z",
-      "verifiedAt": "2026-09-04T13:20:33.870Z",
-      "contentType": "text/html; charset=utf-8",
-      "locationValidated": false,
-      "reviewState": "verified"
-    },
-    {
       "restaurantId": "osm-node-13141457102-bitter-end-martini-bar-and-restaurant",
       "kind": "menu",
       "url": "https://www.bitterend.ca/menu.html",
@@ -6730,34 +6716,6 @@ window.HALIFAX_VERIFIED_SOURCE_PAGES = {
       "reviewState": "verified"
     },
     {
-      "restaurantId": "osm-node-13141377001-india-paradise",
-      "kind": "specials",
-      "url": "https://www.indiaparadise.ca/post/calgary-free-biryani-alert",
-      "label": "Mar 12, 2026 Calgary Offer CALGARY: FREE BIRYANI ALERT! CALGARY: FREE BIRYANI ALERT! 🚨🥘 To celebrate our Grand Opening",
-      "sourceWebsite": "https://www.indiaparadise.ca/",
-      "sourceKind": "official_page",
-      "verificationMethod": "reachable_official_page",
-      "observedAt": "2026-09-04T13:17:44.962Z",
-      "verifiedAt": "2026-09-04T13:20:34.166Z",
-      "contentType": "text/html; charset=utf-8",
-      "locationValidated": false,
-      "reviewState": "verified"
-    },
-    {
-      "restaurantId": "osm-node-13141377001-india-paradise",
-      "kind": "specials",
-      "url": "https://www.indiaparadise.ca/post/opening-on-march-18th-in-calgary",
-      "label": "Mar 12, 2026 Calgary News Opening on March 18th in Calgary New Spot Alert: India Paradise is coming to Calgary! 🥘🔥Mark",
-      "sourceWebsite": "https://www.indiaparadise.ca/",
-      "sourceKind": "official_page",
-      "verificationMethod": "reachable_official_page",
-      "observedAt": "2026-09-04T13:17:44.962Z",
-      "verifiedAt": "2026-09-04T13:20:34.468Z",
-      "contentType": "text/html; charset=utf-8",
-      "locationValidated": false,
-      "reviewState": "verified"
-    },
-    {
       "restaurantId": "osm-node-13262694122-public-cafe-bakery-and-bar",
       "kind": "specials",
       "url": "https://www.rcr.ca/content/uploads/2025/10/Public-Happy-Hour-June-2026.pdf",
@@ -7020,20 +6978,6 @@ window.HALIFAX_VERIFIED_SOURCE_PAGES = {
       "observedAt": "2026-09-04T13:18:12.026Z",
       "verifiedAt": "2026-09-04T13:23:56.562Z",
       "contentType": "text/html; charset=UTF-8",
-      "locationValidated": false,
-      "reviewState": "verified"
-    },
-    {
-      "restaurantId": "osm-node-4416774495-glitter-bean-cafe",
-      "kind": "specials",
-      "url": "https://justitalymentone.com/",
-      "label": "Promosi",
-      "sourceWebsite": "https://justitalymentone.com/",
-      "sourceKind": "official_page",
-      "verificationMethod": "reachable_official_page",
-      "observedAt": "2026-09-04T13:17:42.517Z",
-      "verifiedAt": "2026-09-04T13:20:21.645Z",
-      "contentType": "text/html",
       "locationValidated": false,
       "reviewState": "verified"
     },

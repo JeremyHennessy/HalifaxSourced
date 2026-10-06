@@ -35,6 +35,18 @@ jobs:
       - name: Run structured-special evidence regression
         run: node scripts/test-structured-specials-model.mjs
 
+      - name: Run network-disabled source verifier startup regression
+        run: node scripts/test-source-verifier-startup.mjs
+
+      - name: Run source quarantine, local media and refresh regressions
+        run: |
+          node scripts/test-source-integrity.mjs
+          node scripts/test-public-source-fetch.mjs
+          node scripts/test-scheduled-source-guards.mjs
+          node scripts/test-robots-redirect-guards.mjs
+          node scripts/test-local-media-repair.mjs
+          node scripts/test-event-refresh-dedupe.mjs
+
       - name: Build public happy-hour source leads
         env:
           PUBLIC_SPECIAL_CAMPAIGN_LIMIT: 80
@@ -285,6 +297,11 @@ jobs:
         env:
           APP_URL: http://127.0.0.1:5173
         run: |
+          node scripts/test-offer-rendering-fixed-clock.mjs
+          node scripts/test-feed-image-controls.mjs
+          node scripts/test-offline-resource-gate.mjs
+          node scripts/test-popup-resource-gate.mjs
+          node scripts/test-map-tile-controls.mjs
           node scripts/verify-ui.mjs
           node scripts/verify-admin-status.mjs
           node scripts/verify-iphone-links.mjs

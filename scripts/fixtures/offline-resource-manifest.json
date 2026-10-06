@@ -1,0 +1,625 @@
+{
+  "sourceHead": "6c30ba9746ff970825807c0e9e9541b4bb5b8b41",
+  "sourceInventorySHA256": "2e4b0fed63c96b5eb0536edeb358d2a443373d09359f956250eaafa8682b5cc2",
+  "policy": "frozen exact URL + method + resource type; unknowns fatal; no automatic expansion",
+  "resources": [
+    {
+      "url": "https://barkismet.com/wp-content/uploads/2022/10/bar-kismet-patio-30.jpg",
+      "method": "GET",
+      "resourceType": "image",
+      "category": "media-image",
+      "fixture": "../../assets/restaurants/the-narrows-exterior.jpg"
+    },
+    {
+      "url": "https://bicyclethief.ca/wp-content/uploads/2021/07/OpeningPatios-3-845x684.jpg",
+      "method": "GET",
+      "resourceType": "image",
+      "category": "media-image",
+      "fixture": "../../assets/restaurants/the-narrows-exterior.jpg"
+    },
+    {
+      "url": "https://dearfriendbar.com/assets/images/share.jpg?v=0108bfbb",
+      "method": "GET",
+      "resourceType": "image",
+      "category": "media-image",
+      "fixture": "../../assets/restaurants/the-narrows-exterior.jpg"
+    },
+    {
+      "url": "https://images.squarespace-cdn.com/content/v1/61eb00b3d6de8446f2b486c4/a912d05a-04d4-463d-ab1d-72865b8c52aa/PXL_20211220_184452708.PORTRAIT.jpg",
+      "method": "GET",
+      "resourceType": "image",
+      "category": "media-image",
+      "fixture": "../../assets/restaurants/the-narrows-exterior.jpg"
+    },
+    {
+      "url": "https://static1.squarespace.com/static/5f3ab2aad4d7be367932fd9a/t/5f7b70b9bb198e4c36ce5d91/1601925309926/DSC03601.jpg?format=1500w",
+      "method": "GET",
+      "resourceType": "image",
+      "category": "media-image",
+      "fixture": "../../assets/restaurants/the-narrows-exterior.jpg"
+    },
+    {
+      "url": "https://a.tile.openstreetmap.org/12/1324/1478.png",
+      "method": "GET",
+      "resourceType": "image",
+      "category": "map-tile",
+      "fixture": "synthetic-map-tile.png"
+    },
+    {
+      "url": "https://b.tile.openstreetmap.org/12/1325/1478.png",
+      "method": "GET",
+      "resourceType": "image",
+      "category": "map-tile",
+      "fixture": "synthetic-map-tile.png"
+    },
+    {
+      "url": "https://b.tile.openstreetmap.org/12/1324/1479.png",
+      "method": "GET",
+      "resourceType": "image",
+      "category": "map-tile",
+      "fixture": "synthetic-map-tile.png"
+    },
+    {
+      "url": "https://c.tile.openstreetmap.org/12/1325/1479.png",
+      "method": "GET",
+      "resourceType": "image",
+      "category": "map-tile",
+      "fixture": "synthetic-map-tile.png"
+    },
+    {
+      "url": "https://c.tile.openstreetmap.org/15/10596/11831.png",
+      "method": "GET",
+      "resourceType": "image",
+      "category": "map-tile",
+      "fixture": "synthetic-map-tile.png"
+    },
+    {
+      "url": "https://a.tile.openstreetmap.org/15/10596/11832.png",
+      "method": "GET",
+      "resourceType": "image",
+      "category": "map-tile",
+      "fixture": "synthetic-map-tile.png"
+    },
+    {
+      "url": "https://b.tile.openstreetmap.org/15/10595/11831.png",
+      "method": "GET",
+      "resourceType": "image",
+      "category": "map-tile",
+      "fixture": "synthetic-map-tile.png"
+    },
+    {
+      "url": "https://a.tile.openstreetmap.org/15/10597/11831.png",
+      "method": "GET",
+      "resourceType": "image",
+      "category": "map-tile",
+      "fixture": "synthetic-map-tile.png"
+    },
+    {
+      "url": "https://c.tile.openstreetmap.org/15/10595/11832.png",
+      "method": "GET",
+      "resourceType": "image",
+      "category": "map-tile",
+      "fixture": "synthetic-map-tile.png"
+    },
+    {
+      "url": "https://b.tile.openstreetmap.org/15/10597/11832.png",
+      "method": "GET",
+      "resourceType": "image",
+      "category": "map-tile",
+      "fixture": "synthetic-map-tile.png"
+    },
+    {
+      "url": "https://go2doorsdown.com/wp-content/uploads/2024/02/Dinner-1.jpg",
+      "method": "GET",
+      "resourceType": "image",
+      "category": "media-image",
+      "fixture": "../../assets/restaurants/the-narrows-exterior.jpg"
+    },
+    {
+      "url": "https://go2doorsdown.com/wp-content/uploads/2025/12/2-doors-down_Dartmouth.jpg",
+      "method": "GET",
+      "resourceType": "image",
+      "category": "media-image",
+      "fixture": "../../assets/restaurants/the-narrows-exterior.jpg"
+    },
+    {
+      "url": "https://c.tile.openstreetmap.org/15/10598/11832.png",
+      "method": "GET",
+      "resourceType": "image",
+      "category": "map-tile",
+      "fixture": "synthetic-map-tile.png"
+    },
+    {
+      "url": "https://c.tile.openstreetmap.org/15/10597/11833.png",
+      "method": "GET",
+      "resourceType": "image",
+      "category": "map-tile",
+      "fixture": "synthetic-map-tile.png"
+    },
+    {
+      "url": "https://a.tile.openstreetmap.org/15/10598/11833.png",
+      "method": "GET",
+      "resourceType": "image",
+      "category": "map-tile",
+      "fixture": "synthetic-map-tile.png"
+    },
+    {
+      "url": "https://images.squarespace-cdn.com/content/v1/602810f8c8fe0a7f210814fd/36896399-ceea-431a-b9e6-67c115ae8b4e/4B2A3719.jpg",
+      "method": "GET",
+      "resourceType": "image",
+      "category": "media-image",
+      "fixture": "../../assets/restaurants/the-narrows-exterior.jpg"
+    },
+    {
+      "url": "https://images.squarespace-cdn.com/content/v1/602810f8c8fe0a7f210814fd/a3311d92-e754-4a61-a833-ed7d310e4dd6/4B2A2753.jpg",
+      "method": "GET",
+      "resourceType": "image",
+      "category": "media-image",
+      "fixture": "../../assets/restaurants/the-narrows-exterior.jpg"
+    },
+    {
+      "url": "https://discoverhalifaxns.com/wp-content/uploads/2026/01/107341_menu_photo_3e9c7230-c7c9-4c69-a49f-2a6bc183017e.jpg",
+      "method": "GET",
+      "resourceType": "image",
+      "category": "media-image",
+      "fixture": "../../assets/restaurants/the-narrows-exterior.jpg"
+    },
+    {
+      "url": "https://c.tile.openstreetmap.org/15/10597/11830.png",
+      "method": "GET",
+      "resourceType": "image",
+      "category": "map-tile",
+      "fixture": "synthetic-map-tile.png"
+    },
+    {
+      "url": "https://a.tile.openstreetmap.org/15/10598/11830.png",
+      "method": "GET",
+      "resourceType": "image",
+      "category": "map-tile",
+      "fixture": "synthetic-map-tile.png"
+    },
+    {
+      "url": "https://images.squarespace-cdn.com/content/v1/55917d39e4b0b8f716f2fe05/1609902059282-UVICAXQUWMUHHNKV9GR7/Battery+Park+%28Feb+26+16%29+%2820+of+28%29.jpg",
+      "method": "GET",
+      "resourceType": "image",
+      "category": "media-image",
+      "fixture": "../../assets/restaurants/the-narrows-exterior.jpg"
+    },
+    {
+      "url": "https://station1lebanesekitchen.com/wp-content/uploads/2019/10/slide1.jpg",
+      "method": "GET",
+      "resourceType": "image",
+      "category": "media-image",
+      "fixture": "../../assets/restaurants/the-narrows-exterior.jpg"
+    },
+    {
+      "url": "https://images.squarespace-cdn.com/content/v1/54c16f23e4b02a2061ab9e1c/f008d8af-0593-43b6-8975-b2815fb371ed/Header.jpg",
+      "method": "GET",
+      "resourceType": "image",
+      "category": "media-image",
+      "fixture": "../../assets/restaurants/the-narrows-exterior.jpg"
+    },
+    {
+      "url": "https://www.kingofdonair.ca/wp-content/user_files/2024/10/24-KOD-MENU-WEB-1.png",
+      "method": "GET",
+      "resourceType": "image",
+      "category": "media-image",
+      "fixture": "../../assets/restaurants/the-narrows-exterior.jpg"
+    },
+    {
+      "url": "https://maygarden.ca/wp-content/uploads/2022/05/DSC03657.jpg",
+      "method": "GET",
+      "resourceType": "image",
+      "category": "media-image",
+      "fixture": "../../assets/restaurants/the-narrows-exterior.jpg"
+    },
+    {
+      "url": "https://static.wixstatic.com/media/0a8a69_4118a950d5d645d5bd4cf1f82a9ae244%7Emv2.jpg/v1/fit/w_2500,h_1330,al_c/0a8a69_4118a950d5d645d5bd4cf1f82a9ae244%7Emv2.jpg",
+      "method": "GET",
+      "resourceType": "image",
+      "category": "media-image",
+      "fixture": "../../assets/restaurants/the-narrows-exterior.jpg"
+    },
+    {
+      "url": "https://doraku.yolasite.com/resources/IMG_1118.jpg?timestamp=1737263113116",
+      "method": "GET",
+      "resourceType": "image",
+      "category": "media-image",
+      "fixture": "../../assets/restaurants/the-narrows-exterior.jpg"
+    },
+    {
+      "url": "https://elagreektaverna.com/wp-content/uploads/2020/07/ela-halifax-interior.jpg",
+      "method": "GET",
+      "resourceType": "image",
+      "category": "media-image",
+      "fixture": "../../assets/restaurants/the-narrows-exterior.jpg"
+    },
+    {
+      "url": "https://static.wixstatic.com/media/84770f_68df86c5dc154741a10447bcfc69a7c2~mv2.png/v1/fill/w_889,h_697,al_c,q_90,enc_avif,quality_auto/84770f_68df86c5dc154741a10447bcfc69a7c2~mv2.png",
+      "method": "GET",
+      "resourceType": "image",
+      "category": "media-image",
+      "fixture": "../../assets/restaurants/the-narrows-exterior.jpg"
+    },
+    {
+      "url": "https://c.tile.openstreetmap.org/12/1324/1477.png",
+      "method": "GET",
+      "resourceType": "image",
+      "category": "map-tile",
+      "fixture": "synthetic-map-tile.png"
+    },
+    {
+      "url": "https://a.tile.openstreetmap.org/12/1325/1477.png",
+      "method": "GET",
+      "resourceType": "image",
+      "category": "map-tile",
+      "fixture": "synthetic-map-tile.png"
+    },
+    {
+      "url": "https://c.tile.openstreetmap.org/12/1323/1478.png",
+      "method": "GET",
+      "resourceType": "image",
+      "category": "map-tile",
+      "fixture": "synthetic-map-tile.png"
+    },
+    {
+      "url": "https://c.tile.openstreetmap.org/12/1326/1478.png",
+      "method": "GET",
+      "resourceType": "image",
+      "category": "map-tile",
+      "fixture": "synthetic-map-tile.png"
+    },
+    {
+      "url": "https://a.tile.openstreetmap.org/12/1323/1479.png",
+      "method": "GET",
+      "resourceType": "image",
+      "category": "map-tile",
+      "fixture": "synthetic-map-tile.png"
+    },
+    {
+      "url": "https://a.tile.openstreetmap.org/12/1326/1479.png",
+      "method": "GET",
+      "resourceType": "image",
+      "category": "map-tile",
+      "fixture": "synthetic-map-tile.png"
+    },
+    {
+      "url": "https://c.tile.openstreetmap.org/12/1324/1480.png",
+      "method": "GET",
+      "resourceType": "image",
+      "category": "map-tile",
+      "fixture": "synthetic-map-tile.png"
+    },
+    {
+      "url": "https://a.tile.openstreetmap.org/12/1325/1480.png",
+      "method": "GET",
+      "resourceType": "image",
+      "category": "map-tile",
+      "fixture": "synthetic-map-tile.png"
+    },
+    {
+      "url": "https://b.tile.openstreetmap.org/12/1323/1477.png",
+      "method": "GET",
+      "resourceType": "image",
+      "category": "map-tile",
+      "fixture": "synthetic-map-tile.png"
+    },
+    {
+      "url": "https://b.tile.openstreetmap.org/12/1326/1477.png",
+      "method": "GET",
+      "resourceType": "image",
+      "category": "map-tile",
+      "fixture": "synthetic-map-tile.png"
+    },
+    {
+      "url": "https://b.tile.openstreetmap.org/12/1323/1480.png",
+      "method": "GET",
+      "resourceType": "image",
+      "category": "map-tile",
+      "fixture": "synthetic-map-tile.png"
+    },
+    {
+      "url": "https://b.tile.openstreetmap.org/12/1326/1480.png",
+      "method": "GET",
+      "resourceType": "image",
+      "category": "map-tile",
+      "fixture": "synthetic-map-tile.png"
+    },
+    {
+      "url": "https://immediac.blob.core.windows.net/cremecafeasiarestaurant/asiarestaurant/Levels%201-4.jpg",
+      "method": "GET",
+      "resourceType": "image",
+      "category": "media-image",
+      "fixture": "../../assets/restaurants/the-narrows-exterior.jpg"
+    },
+    {
+      "url": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YX4x8ONG0OcbvP8w/barrios.barrington-A1a5y6elBxtMQveE.png",
+      "method": "GET",
+      "resourceType": "image",
+      "category": "media-image",
+      "fixture": "../../assets/restaurants/the-narrows-exterior.jpg"
+    },
+    {
+      "url": "https://static1.squarespace.com/static/5f47dc734de4ba4d31a626ce/t/5f4d371626a82f6f01aecca3/1781981917479/",
+      "method": "GET",
+      "resourceType": "image",
+      "category": "media-image",
+      "fixture": "../../assets/restaurants/the-narrows-exterior.jpg"
+    },
+    {
+      "url": "https://donninispizza.com/wp-content/uploads/2021/05/special_06_Extra_large_3_topping_pizza_medium_garlic_fingers_2lt_pop_donninis_pizza.png",
+      "method": "GET",
+      "resourceType": "image",
+      "category": "media-image",
+      "fixture": "../../assets/restaurants/the-narrows-exterior.jpg"
+    },
+    {
+      "url": "https://a.tile.openstreetmap.org/15/10594/11831.png",
+      "method": "GET",
+      "resourceType": "image",
+      "category": "map-tile",
+      "fixture": "synthetic-map-tile.png"
+    },
+    {
+      "url": "https://c.tile.openstreetmap.org/15/10594/11830.png",
+      "method": "GET",
+      "resourceType": "image",
+      "category": "map-tile",
+      "fixture": "synthetic-map-tile.png"
+    },
+    {
+      "url": "https://a.tile.openstreetmap.org/15/10595/11830.png",
+      "method": "GET",
+      "resourceType": "image",
+      "category": "map-tile",
+      "fixture": "synthetic-map-tile.png"
+    },
+    {
+      "url": "https://b.tile.openstreetmap.org/15/10594/11832.png",
+      "method": "GET",
+      "resourceType": "image",
+      "category": "map-tile",
+      "fixture": "synthetic-map-tile.png"
+    },
+    {
+      "url": "https://c.tile.openstreetmap.org/15/10593/11831.png",
+      "method": "GET",
+      "resourceType": "image",
+      "category": "map-tile",
+      "fixture": "synthetic-map-tile.png"
+    },
+    {
+      "url": "https://b.tile.openstreetmap.org/15/10593/11830.png",
+      "method": "GET",
+      "resourceType": "image",
+      "category": "map-tile",
+      "fixture": "synthetic-map-tile.png"
+    },
+    {
+      "url": "https://b.tile.openstreetmap.org/15/10596/11830.png",
+      "method": "GET",
+      "resourceType": "image",
+      "category": "map-tile",
+      "fixture": "synthetic-map-tile.png"
+    },
+    {
+      "url": "https://a.tile.openstreetmap.org/15/10593/11832.png",
+      "method": "GET",
+      "resourceType": "image",
+      "category": "map-tile",
+      "fixture": "synthetic-map-tile.png"
+    },
+    {
+      "url": "https://www.cafelunette.com/wp-content/uploads/2025/10/DSC_3591-1-683x1024.jpg",
+      "method": "GET",
+      "resourceType": "image",
+      "category": "media-image",
+      "fixture": "../../assets/restaurants/the-narrows-exterior.jpg"
+    },
+    {
+      "url": "https://www.cafelunette.com/wp-content/uploads/2026/05/A28A8116edit-scaled.jpg",
+      "method": "GET",
+      "resourceType": "image",
+      "category": "media-image",
+      "fixture": "../../assets/restaurants/the-narrows-exterior.jpg"
+    },
+    {
+      "url": "https://www.cafelunette.com/wp-content/uploads/2025/10/CafeLunette_ToGo2025-8969-e1774633223183-1024x1006.jpg",
+      "method": "GET",
+      "resourceType": "image",
+      "category": "media-image",
+      "fixture": "../../assets/restaurants/the-narrows-exterior.jpg"
+    },
+    {
+      "url": "https://static.wixstatic.com/media/110dc9_538c90ecfee14537aa62b59c533c2b01~mv2.jpeg/v1/fit/w_1000,h_1000,al_c,q_80/file.png",
+      "method": "GET",
+      "resourceType": "image",
+      "category": "media-image",
+      "fixture": "../../assets/restaurants/the-narrows-exterior.jpg"
+    },
+    {
+      "url": "https://static.wixstatic.com/media/f67ed8423aaf440b81164ccd259ed7f6.jpg/v1/fill/w_140,h_93,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/f67ed8423aaf440b81164ccd259ed7f6.jpg",
+      "method": "GET",
+      "resourceType": "image",
+      "category": "media-image",
+      "fixture": "../../assets/restaurants/the-narrows-exterior.jpg"
+    },
+    {
+      "url": "https://discoverhalifaxns.com/wp-content/uploads/2026/01/106527_menu_photo_c1659751-e382-467a-b2b0-b1040921c990.jpg",
+      "method": "GET",
+      "resourceType": "image",
+      "category": "media-image",
+      "fixture": "../../assets/restaurants/the-narrows-exterior.jpg"
+    },
+    {
+      "url": "https://b.tile.openstreetmap.org/15/10596/11833.png",
+      "method": "GET",
+      "resourceType": "image",
+      "category": "map-tile",
+      "fixture": "synthetic-map-tile.png"
+    },
+    {
+      "url": "https://static.wixstatic.com/media/110dc9_3a82ceba3e2340f5aef966fe3b725b43~mv2.jpeg/v1/fit/w_1000,h_1000,al_c,q_80/file.png",
+      "method": "GET",
+      "resourceType": "image",
+      "category": "media-image",
+      "fixture": "../../assets/restaurants/the-narrows-exterior.jpg"
+    },
+    {
+      "url": "https://static.wixstatic.com/media/110dc9_a62017a64bc04441bd78f7cb22257f6a~mv2.jpeg/v1/fit/w_1000,h_960,al_c,q_80/file.png",
+      "method": "GET",
+      "resourceType": "image",
+      "category": "media-image",
+      "fixture": "../../assets/restaurants/the-narrows-exterior.jpg"
+    },
+    {
+      "url": "https://static.wixstatic.com/media/935b09_7684f855e5c346db87d9d1f3f4fee56c%7Emv2.jpg/v1/fit/w_2500,h_1330,al_c/935b09_7684f855e5c346db87d9d1f3f4fee56c%7Emv2.jpg",
+      "method": "GET",
+      "resourceType": "image",
+      "category": "media-image",
+      "fixture": "../../assets/restaurants/the-narrows-exterior.jpg"
+    },
+    {
+      "url": "https://static.wixstatic.com/media/935b09_dfe29aa9c04d4c4893131b68e5f779f3~mv2.png/v1/fit/w_2500,h_1330,al_c/935b09_dfe29aa9c04d4c4893131b68e5f779f3~mv2.png",
+      "method": "GET",
+      "resourceType": "image",
+      "category": "media-image",
+      "fixture": "../../assets/restaurants/the-narrows-exterior.jpg"
+    },
+    {
+      "url": "https://static.wixstatic.com/media/935b09_bba221e694e24cd4b9b12bdbf201943a~mv2.png/v1/fit/w_1000,h_768,al_c,q_80/file.png",
+      "method": "GET",
+      "resourceType": "image",
+      "category": "media-image",
+      "fixture": "../../assets/restaurants/the-narrows-exterior.jpg"
+    },
+    {
+      "url": "https://static.wixstatic.com/media/935b09_58e8dab8eb0244d4b89be881384c216d~mv2.png/v1/fit/w_1000,h_768,al_c,q_80/file.png",
+      "method": "GET",
+      "resourceType": "image",
+      "category": "media-image",
+      "fixture": "../../assets/restaurants/the-narrows-exterior.jpg"
+    },
+    {
+      "url": "https://phohoangminh.ca/wp-content/uploads/featured-image-player-responsibilities-in-the-3-5-2-formation-discipline-structural-integrity.webp",
+      "method": "GET",
+      "resourceType": "image",
+      "category": "media-image",
+      "fixture": "../../assets/restaurants/the-narrows-exterior.jpg"
+    },
+    {
+      "url": "https://a.tile.openstreetmap.org/15/10596/11829.png",
+      "method": "GET",
+      "resourceType": "image",
+      "category": "map-tile",
+      "fixture": "synthetic-map-tile.png"
+    },
+    {
+      "url": "https://b.tile.openstreetmap.org/15/10597/11829.png",
+      "method": "GET",
+      "resourceType": "image",
+      "category": "map-tile",
+      "fixture": "synthetic-map-tile.png"
+    },
+    {
+      "url": "https://i0.wp.com/afrite.ca/wp-content/uploads/2021/04/grilled-meat-with-herbs-on-black-top-view-4QPYVKD-scaled.jpg?resize=370%2C260&ssl=1",
+      "method": "GET",
+      "resourceType": "image",
+      "category": "media-image",
+      "fixture": "../../assets/restaurants/the-narrows-exterior.jpg"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/5a9175138433cb00017eefdf/5a9175138433cb00017ef019_imageedit_1_2839820776.png",
+      "method": "GET",
+      "resourceType": "image",
+      "category": "media-image",
+      "fixture": "../../assets/restaurants/the-narrows-exterior.jpg"
+    },
+    {
+      "url": "https://www.lebistrohalifax.com//wp-content//uploads//2023//07//brunch-2.jpg",
+      "method": "GET",
+      "resourceType": "image",
+      "category": "media-image",
+      "fixture": "../../assets/restaurants/the-narrows-exterior.jpg"
+    },
+    {
+      "url": "https://www.lebistrohalifax.com/wp-content/uploads/2023/07/takeout-le-bistro.jpg",
+      "method": "GET",
+      "resourceType": "image",
+      "category": "media-image",
+      "fixture": "../../assets/restaurants/the-narrows-exterior.jpg"
+    },
+    {
+      "url": "https://a.tile.openstreetmap.org/15/10595/11833.png",
+      "method": "GET",
+      "resourceType": "image",
+      "category": "map-tile",
+      "fixture": "synthetic-map-tile.png"
+    },
+    {
+      "url": "https://sushinami.ca/wp-content/uploads/2022/04/sushinami-105.jpg",
+      "method": "GET",
+      "resourceType": "image",
+      "category": "media-image",
+      "fixture": "../../assets/restaurants/the-narrows-exterior.jpg"
+    },
+    {
+      "url": "https://menuimages.chownowcdn.com/cdn-cgi/image/04522713-f448-434a-9fab-c3646041e690.jpg",
+      "method": "GET",
+      "resourceType": "image",
+      "category": "media-image",
+      "fixture": "../../assets/restaurants/the-narrows-exterior.jpg"
+    },
+    {
+      "url": "https://images.squarespace-cdn.com/content/v1/64ad9b1d3f683979014072dc/7af3eb47-1a72-472d-834f-dadda4770152/narrows+full+-+hi+-+blue.png?format=1500w",
+      "method": "GET",
+      "resourceType": "image",
+      "category": "media-image",
+      "fixture": "../../assets/restaurants/the-narrows-exterior.jpg"
+    },
+    {
+      "url": "http://static1.squarespace.com/static/64ad9b1d3f683979014072dc/t/64e774b416390156149009da/1692890292271/narrows+full+-+hi+-+blue.png?format=1500w",
+      "method": "GET",
+      "resourceType": "image",
+      "category": "media-image",
+      "fixture": "../../assets/restaurants/the-narrows-exterior.jpg"
+    },
+    {
+      "url": "https://static.wixstatic.com/media/417737_94bd652dc91142a7adc8d68d1c67fd9e%7Emv2.jpg/v1/fit/w_2500,h_1330,al_c/417737_94bd652dc91142a7adc8d68d1c67fd9e%7Emv2.jpg",
+      "method": "GET",
+      "resourceType": "image",
+      "category": "media-image",
+      "fixture": "../../assets/restaurants/the-narrows-exterior.jpg"
+    },
+    {
+      "url": "https://lemondog1594a.zapwp.com/wp-content/uploads/2021/08/IMG_0624-scaled-e1652897066693.jpg",
+      "method": "GET",
+      "resourceType": "image",
+      "category": "media-image",
+      "fixture": "../../assets/restaurants/the-narrows-exterior.jpg"
+    },
+    {
+      "url": "https://afrite.ca/wp-content/uploads/revslider/Home-Classic-Banner-2.jpg",
+      "method": "GET",
+      "resourceType": "image",
+      "category": "media-image",
+      "fixture": "../../assets/restaurants/the-narrows-exterior.jpg",
+      "declarationBasis": "Manual static addition after fatal offline unknown; already present in accepted recent-social-posts.js and website-page-intelligence.js. Review required; no request to source."
+    },
+    {
+      "url": "http://static1.squarespace.com/static/5f3ab2aad4d7be367932fd9a/t/5f91993f4555cb19218e7c01/1601301167954/drinks.jpg?format=1500w",
+      "method": "GET",
+      "resourceType": "image",
+      "category": "media-image",
+      "fixture": "../../assets/restaurants/the-narrows-exterior.jpg",
+      "declarationBasis": "Manual static addition after context gate exposed original Highwayman HTTP image variant; HTTPS variant already frozen. No scheme normalization or source contact; review required."
+    },
+    {
+      "url": "https://example.test/feed-image.jpg",
+      "method": "GET",
+      "resourceType": "image",
+      "category": "controlled-feed-image",
+      "fixture": "../../assets/restaurants/the-narrows-exterior.jpg"
+    }
+  ]
+}

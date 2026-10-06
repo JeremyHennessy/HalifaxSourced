@@ -330,6 +330,7 @@
       const reviewedPosts = Array.isArray(window.HALIFAX_REVIEWED_SOCIAL_POSTS?.records) ? window.HALIFAX_REVIEWED_SOCIAL_POSTS.records : [];
       const sourceLeadPosts = Array.isArray(recentOfficialPosts) ? recentOfficialPosts : [];
       const posts = (reviewedPosts.length ? reviewedPosts : sourceLeadPosts)
+        .filter((post) => HalifaxDataIntegrity.locationSafe(post) && HalifaxDataIntegrity.safeSource(post.postUrl) && HalifaxDataIntegrity.publicationState(post.publishedAt).isRecent)
         .slice()
         .sort((a, b) => String(b.publishedAt || b.observedAt || "").localeCompare(String(a.publishedAt || a.observedAt || "")))
         .slice(0, 4);

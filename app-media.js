@@ -32,8 +32,21 @@ function normalizeImageToken(value) {
 function safeImageUrl(value) {
   const raw = String(value ?? "").trim();
   if (!raw) return null;
-  if (/^(?:\.\/)?assets\/[a-zA-Z0-9._/-]+$/.test(raw)) return raw.startsWith("./") ? raw : `./${raw}`;
-  return safeUrl(raw);
+  if (/^(?:\.\/)?assets\/[a-zA-Z0-9._/-]+$/.test(raw)) {
+    const segments = raw.replace(/^\.\//, "").split("/");
+    if (segments.some((segment) => !segment || segment === "." || segment === "..")) return null;
+    return raw.startsWith("./") ? raw : `./${raw}`;
+  }
+  return publicMediaSourceUrl(raw);
+}
+
+function publicMediaSourceUrl(value) {
+  const safe = safeUrl(value);
+  if (!safe) return null;
+  try {
+    const url = new URL(safe);
+    return ["http:", "https:"].includes(url.protocol) && !url.username && !url.password ? safe : null;
+  } catch { return null; }
 }
 
 function mediaManifestCandidates(restaurant) {
@@ -51,6 +64,8 @@ function imageCandidates(restaurant) {
 
 function permittedImageFor(restaurant) {
   for (const image of imageCandidates(restaurant)) {
+    if (image.restaurantId !== restaurant?.id) continue;
+    if (!hasMediaPermission(image)) continue;
     const sourceType = normalizeImageToken(image.sourceType ?? image.sourceKind ?? image.source ?? image.permissionSource);
     const permission = normalizeImageToken(image.permission ?? image.usageRights ?? image.rights);
     const reviewState = normalizeImageToken(image.reviewState ?? image.reviewStatus);
@@ -80,6 +95,67 @@ function permittedImageFor(restaurant) {
     };
   }
   return null;
+}
+
+function approvedMediaLocation(image) {
+  const urls = [image.url, image.src, image.mediaUrl, image.thumbnailUrl]
+    .filter(value => value != null && String(value).trim()).map(safeImageUrl);
+  if (!urls.length || urls.some(url => !url || !(url.startsWith("https://")
+    || /^\.\/assets\/restaurants\/[a-z0-9-]+\.jpg$/.test(url)))) return null;
+  return urls[0];
+}
+
+function referenceMediaProblems(record) {
+  const problems = [];
+  const publicUrl = value => Boolean(publicMediaSourceUrl(value));
+  if (!String(record?.restaurantId || "").trim() || !publicUrl(record?.url) || !publicUrl(record?.sourceUrl)
+    || String(record?.alt || "").trim().length < 20 || !String(record?.creator || "").trim()
+    || record?.rightsBasis !== "Public source reference retained; specific licence or owner grant not evidenced in the reviewed record.") problems.push("reference identity, safe URLs, description, creator and unverified rights basis required");
+  if (record?.recordKind !== "source_reference" || record?.sourceType !== "public_reference"
+    || record?.renderable !== false || record?.rightsState !== "unverified" || record?.reviewState !== "rights_review_required"
+    || record?.permission !== "unknown" || record?.permissionConfirmed !== false || record?.license != null) problems.push("reference-only schema required");
+  const aliases = {rightsStatus:"unverified", reviewStatus:"rights_review_required", usageRights:"unknown", rights:"unknown"};
+  if ((record?.ownerApproved != null && record.ownerApproved !== false) || record?.permissionSource != null
+    || record?.rightsNote != null || record?.licence != null || record?.eligibleForProduction === true
+    || Object.keys(aliases).some(key => record?.[key] != null && record[key] !== aliases[key])) problems.push("conflicting reference permission claim");
+  return problems;
+}
+
+function mediaRecordState(record) {
+  if (record?.recordKind === "source_reference") return referenceMediaProblems(record).length ? "invalid" : "reference_only";
+  return hasMediaPermission(record) ? "approved" : "invalid";
+}
+
+// A public source reference documents a fact, not an image licence. Denials and
+// uncertain rights take precedence over legacy approval flags.
+function hasMediaPermission(image) {
+  if (!image || typeof image !== "object") return false;
+  if (!String(image.restaurantId || "").trim() || String(image.alt || "").trim().length < 20 || !String(image.attribution || "").trim() || !approvedMediaLocation(image)) return false;
+  // Check every supplied contract alias before selecting a value. A permissive
+  // primary field must never hide an explicit denial in another field.
+  if (image.quarantined || image.renderable === false || image.recordKind === "source_reference") return false;
+  const supplied = (fields) => fields.map((field) => image[field]).filter((value) => value != null && String(value).trim() !== "");
+  const rightsStates = new Set(["licensed", "owner_authorized", "permission_verified", "production_approved", "permitted", "owner_approved"]);
+  if (supplied(["rightsState", "rightsStatus"]).some((value) => !rightsStates.has(normalizeImageToken(value)))) return false;
+  if (supplied(["reviewState", "reviewStatus"]).some((value) => normalizeImageToken(value) !== "approved")) return false;
+  if (supplied(["permission", "usageRights", "rights"]).some((value) => !PERMITTED_IMAGE_PERMISSION_VALUES.has(normalizeImageToken(value)))) return false;
+  if (image.permissionConfirmed === false || image.ownerApproved === false) return false;
+  if (supplied(["license", "licence"]).some((value) => ["unknown", "unverified", "restricted", "denied", "quarantined", "public_reference_not_media_licence"].includes(normalizeImageToken(value)) || /first-party official site media/i.test(String(value)))) return false;
+  if (supplied(["rightsBasis", "rightsNote"]).some((value) => /remote thumbnail reference only|not rehosted/i.test(String(value)))) return false;
+  const license = String(image.license ?? image.licence ?? "").trim();
+  const basis = String(image.rightsBasis ?? image.rightsNote ?? "").trim();
+  if (["unknown", "unverified", "restricted", "public_reference_not_media_licence"].includes(normalizeImageToken(license))) return false;
+  if (/first-party official site media/i.test(license) || /remote thumbnail reference only|not rehosted/i.test(basis)) return false;
+  return normalizeImageToken(image.reviewState ?? image.reviewStatus) === "approved"
+    && PERMITTED_IMAGE_SOURCE_TYPES.has(normalizeImageToken(image.sourceType ?? image.permissionSource))
+    && PERMITTED_IMAGE_PERMISSION_VALUES.has(normalizeImageToken(image.permission ?? image.usageRights ?? image.rights))
+    && (image.permissionConfirmed === true || image.ownerApproved === true)
+    && Boolean(license && basis && String(image.creator ?? "").trim())
+    && Boolean(publicMediaSourceUrl(image.sourceUrl ?? image.provenanceUrl ?? image.pageUrl ?? image.postUrl));
+}
+
+function permittedPostMediaUrl(post) {
+  return hasMediaPermission(post) ? safeImageUrl(post.mediaUrl || post.thumbnailUrl) : null;
 }
 
 function mediaImageMarkup(restaurant, options = {}) {

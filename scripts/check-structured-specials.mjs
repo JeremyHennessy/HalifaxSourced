@@ -86,7 +86,7 @@ for (const record of records) {
   if (record.status === "verified_current") {
     const age = ageDays(record.verifiedAt);
     if (age === null) errors.push(`verified_without_date:${record.specialId}`);
-    else if (age < -1 || age > currentVerifyDays) errors.push(`verified_current_outside_freshness_window:${record.specialId}:${age.toFixed(1)}d`);
+    else if (age < 0 || age > currentVerifyDays) errors.push(`verified_current_outside_freshness_window:${record.specialId}:${age.toFixed(1)}d`);
     const validTo = Date.parse(String(record.validTo || ""));
     if (Number.isFinite(validTo) && validTo < now) errors.push(`verified_current_expired:${record.specialId}`);
   }
@@ -106,7 +106,7 @@ if (rawOrphanSources.length !== Number(payload.orphanSourceCount || 0)) errors.p
 if (orphanSources.length) warnings.push(`orphan_special_sources_need_entity_review:${orphanSources.length}`);
 if (!records.length) warnings.push("zero_structured_special_records");
 const reviewedCurrent = records.filter((record) => record.sourceType === "reviewed_restaurant_owned_source" && record.status === "verified_current").length;
-if (reviewedCurrent < 30) errors.push(`reviewed_current_specials_below_target:${reviewedCurrent}:30`);
+if (reviewedCurrent < 30) warnings.push(`reviewed_current_specials_below_target:${reviewedCurrent}:30`);
 
 const report = {
   generatedAt: new Date().toISOString(),

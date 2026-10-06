@@ -1,5 +1,6 @@
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import vm from "node:vm";
+import {mediaPermitted,referenceProblems} from "./lib/media-rights-contract.mjs";
 
 const DAY_MS = 24 * 60 * 60 * 1000;
 const now = Date.now();
@@ -79,6 +80,9 @@ const curatedWindow = await loadWindow("data/restaurants.js");
 const osmWindow = await loadWindow("data/osm-restaurants.js");
 const discoveredWindow = await loadWindow("data/discovered-restaurants.js");
 const mediaWindow = await loadWindow("data/restaurant-media.js");
+const referenceWindow = await loadWindow("data/restaurant-media-references.js");
+const mediaReferences = referenceWindow.HALIFAX_MEDIA_SOURCE_REFERENCES?.records || [];
+if (mediaReferences.some(record => referenceProblems(record).length)) throw Error("Invalid reference-only media schema");
 const openingWindow = await loadWindow("data/opening-watch-leads.js");
 const directoryWindow = await loadWindow("data/directory-restaurant-leads.js");
 const cityWindow = await loadWindow("data/city-events.js");
@@ -251,7 +255,8 @@ const hoursIds = uniqueIds(canonical.filter((restaurant) => String(restaurant.op
 const coordinateIds = uniqueIds(canonical.filter((restaurant) => validCoordinates(restaurant.coordinates)).map((restaurant) => restaurant.id));
 const neighbourhoodIds = uniqueIds(canonical.filter((restaurant) => String(restaurant.neighborhood || "").trim()).map((restaurant) => restaurant.id));
 const cuisineIds = uniqueIds(canonical.filter((restaurant) => Array.isArray(restaurant.cuisines) && restaurant.cuisines.some(Boolean)).map((restaurant) => restaurant.id));
-const mediaIds = uniqueIds(media.filter((record) => record.reviewState === "approved" && (validUrl(record.url) || /^\.?\/?assets\//.test(String(record.url || "")))).map((record) => record.restaurantId));
+if (media.some(record => !mediaPermitted(record))) throw Error("Invalid approved media in coverage input");
+const mediaIds = uniqueIds(media.filter(mediaPermitted).map((record) => record.restaurantId));
 
 const patioIds = new Set();
 const accessibilityIds = new Set();
@@ -384,6 +389,7 @@ const report = {
     withAccessibilityInformation: accessibilityIds.size,
     withPatioInformation: patioIds.size,
     withUsableMedia: mediaIds.size,
+    retainedMediaSourceReferences: mediaReferences.length,
     lifecycle,
     activeCanonicalPlaces: total - lifecycle.temporarily_closed - lifecycle.permanently_closed - lifecycle.moved,
     freshness,

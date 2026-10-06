@@ -1,22 +1,22 @@
 {
-  "generatedAt": "2026-09-04T14:52:30.105Z",
+  "generatedAt": "2026-10-06T04:18:33.293Z",
   "counts": {
-    "restaurants": 740,
-    "candidates": 2977,
-    "restaurantsWithApprovedThumbnail": 107,
-    "restaurantsWithAnyCandidate": 257,
-    "restaurantsMissingApprovedThumbnail": 633,
-    "restaurantsMissingAnyCandidate": 483
+    "restaurants": 554,
+    "candidates": 2424,
+    "restaurantsWithApprovedThumbnail": 6,
+    "restaurantsWithAnyCandidate": 196,
+    "restaurantsMissingApprovedThumbnail": 548,
+    "restaurantsMissingAnyCandidate": 358
   },
   "failures": [],
   "warnings": [
     {
       "type": "restaurants_missing_approved_thumbnail",
-      "count": 633
+      "count": 548
     },
     {
       "type": "restaurants_missing_any_thumbnail_candidate",
-      "count": 483
+      "count": 358
     }
   ]
 }

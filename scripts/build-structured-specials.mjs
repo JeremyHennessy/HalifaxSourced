@@ -25,7 +25,7 @@ function specialId(restaurantId, title, sourceUrl) {
 }
 function to24(hour, minute, ampm) { let h = Number(hour) % 12; if (String(ampm).toLowerCase() === "pm") h += 12; return `${String(h).padStart(2, "0")}:${String(minute || "00").padStart(2, "0")}`; }
 function parsedStamp(value) { const stamp = Date.parse(String(value || "")); return Number.isFinite(stamp) ? stamp : null; }
-function recentlyVerified(value) { const stamp = parsedStamp(value); return stamp !== null && stamp <= nowStamp + 86400000 && nowStamp - stamp <= CURRENT_VERIFY_DAYS * 86400000; }
+function recentlyVerified(value) { const stamp = parsedStamp(value); return stamp !== null && stamp <= nowStamp && nowStamp - stamp <= CURRENT_VERIFY_DAYS * 86400000; }
 function numericPrice(value) {
   if (value === null || value === undefined || String(value).trim() === "") return null;
   const parsed = Number(value);
@@ -70,7 +70,8 @@ function typeFor(title) {
   if (/lunch/.test(text)) return "lunch_special";
   return "daily_or_promotional_special";
 }
-function statusFor({ sourceVerified, verifiedAt, validFrom, validTo, recurrence }) {
+function statusFor({ sourceVerified, verifiedAt, validFrom, validTo, recurrence, locationValidated, identityValidated }) {
+  if (locationValidated === false || identityValidated === false) return "source_lead";
   const from = parsedStamp(validFrom);
   const to = parsedStamp(validTo);
   if (to !== null && to < nowStamp) return "expired";
@@ -111,7 +112,7 @@ for (const special of reviewedSpecials.records || []) {
     sourceType: "reviewed_restaurant_owned_source",
     observedAt: special.observedAt || special.verifiedAt || now,
     verifiedAt: special.verifiedAt || null,
-    status: statusFor({ sourceVerified: true, verifiedAt: special.verifiedAt, validFrom: special.validFrom, validTo: special.validTo, recurrence: special.recurrence })
+    status: statusFor({ sourceVerified: true, locationValidated: special.locationValidated, identityValidated: special.identityValidated, verifiedAt: special.verifiedAt, validFrom: special.validFrom, validTo: special.validTo, recurrence: special.recurrence })
   });
 }
 

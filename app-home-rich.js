@@ -46,14 +46,14 @@ function freshSourceCard(restaurant) {
 }
 function currentSpecialCards(limit = 4) {
   return activeRestaurants
-    .flatMap((restaurant) => (restaurant.currentVerifiedSpecials || restaurant.structuredSpecials || []).map((special) => ({ restaurant, special })))
+    .flatMap((restaurant) => (restaurant.structuredSpecials || []).filter(currentStructuredSpecial).map((special) => ({ restaurant, special })))
     .sort((a, b) => String(b.special.verifiedAt || b.special.observedAt || "").localeCompare(String(a.special.verifiedAt || a.special.observedAt || "")))
     .slice(0, limit)
     .map(({ restaurant, special }) => richSpecialCard(restaurant, special));
 }
 function recentPostCard(post) {
   const restaurant = activeRestaurants.find((item) => item.id === post.restaurantId);
-  const mediaUrl = safeUrl(post.mediaUrl || post.thumbnailUrl);
+  const mediaUrl = permittedPostMediaUrl(post);
   const postUrl = safeUrl(post.postUrl || post.sourceUrl);
   const title = post.title || `${post.primaryCategoryLabel || "Restaurant"} update`;
   return `<article class="recent-post-card${mediaUrl ? " has-media" : ""}">
@@ -94,6 +94,7 @@ function homeRichSections() {
   const reviewedPosts = Array.isArray(window.HALIFAX_REVIEWED_SOCIAL_POSTS?.records) ? window.HALIFAX_REVIEWED_SOCIAL_POSTS.records : [];
   const sourceLeadPosts = Array.isArray(recentOfficialPosts) ? recentOfficialPosts : [];
   const posts = (reviewedPosts.length ? reviewedPosts : sourceLeadPosts)
+        .filter((post) => HalifaxDataIntegrity.locationSafe(post) && HalifaxDataIntegrity.safeSource(post.postUrl) && HalifaxDataIntegrity.publicationState(post.publishedAt).isRecent)
     .slice()
     .sort((a, b) => String(b.publishedAt || b.observedAt || "").localeCompare(String(a.publishedAt || a.observedAt || "")))
     .slice(0, 4);

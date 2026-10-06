@@ -1,3 +1,4 @@
+import integrity from "../source-integrity.js";
 import { createHash } from "node:crypto";
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import vm from "node:vm";
@@ -145,10 +146,7 @@ function platformLabel(platform) {
 }
 
 function recencyState(publishedAt) {
-  const stamp = Date.parse(String(publishedAt ?? ""));
-  if (!Number.isFinite(stamp)) return { ageDays: null, isRecent: false };
-  const ageDays = Math.max(0, Math.round((Date.now() - stamp) / (24 * 60 * 60 * 1000)));
-  return { ageDays, isRecent: stamp >= cutoff };
+  return integrity.publicationState(publishedAt, Date.now(), lookbackDays);
 }
 
 function normalizePost(post, sourceFamily) {
@@ -164,16 +162,18 @@ function normalizePost(post, sourceFamily) {
   const feedUrl = validUrl(post.feedUrl);
   const mediaUrl = validUrl(post.mediaUrl);
   const thumbnailUrl = validUrl(post.thumbnailUrl);
-  const { ageDays, isRecent } = recencyState(post.publishedAt);
+  const trustedPublication = sourceFamily !== 'website_page' || post.publicationDateBasis === 'explicit_publisher_metadata';
+  const publishedAt = trustedPublication ? post.publishedAt : null;
+  const { ageDays, isRecent, dateState } = recencyState(publishedAt);
   const sourceIdentifier = post.postId || post.platformObjectId || postUrl || title;
-  const reviewState = post.reviewState === "needs_date_review" || !post.publishedAt
+  const reviewState = dateState !== "valid" || post.reviewState === "needs_date_review" || !post.publishedAt
     ? "needs_date_review"
     : primary.id === "general_update"
       ? "needs_category_review"
       : (post.reviewState || "source_signal");
   const confidenceScore = post.sourceKind?.startsWith("meta_graph_api") ? 0.9 : post.sourceKind === "official_feed" ? 0.84 : post.sourceKind === "official_page_html" ? 0.78 : 0.7;
 
-  if (!post.restaurantId || !postUrl) return null;
+  if (!post.restaurantId || !postUrl || !integrity.safeSource(postUrl) || !integrity.locationSafe(post)) return null;
   return {
     id: `${platform}-${hashId([post.restaurantId, platform, sourceIdentifier])}`,
     restaurantId: post.restaurantId,
@@ -197,8 +197,13 @@ function normalizePost(post, sourceFamily) {
     primaryCategoryLabel: primary.label,
     categories: categories.map(({ id, label, terms }) => ({ id, label, terms })),
     matchedTerms: [...new Set(categories.flatMap((category) => category.terms))].slice(0, 30),
-    publishedAt: post.publishedAt || null,
-    observedAt: post.observedAt || generatedAt,
+    publishedAt: publishedAt || null,
+    unverifiedPublisherDate: trustedPublication ? null : post.publishedAt || null,
+    observedAt: post.observedAt || null,
+    dateState,
+    publicationDateBasis: post.publicationDateBasis || null,
+    contentHash: createHash("sha256").update(`${title}|${summary}`).digest("hex"),
+    rightsState: "public_reference_not_media_licence",
     ageDays,
     isRecent,
     lookbackDays,
@@ -225,7 +230,7 @@ function normalizePublicSpecialLead(lead) {
     thumbnailUrl: lead.sourceImageUrl,
     title,
     summary,
-    publishedAt: lead.validFrom || lead.sourceUpdatedAt || lead.observedAt,
+    publishedAt: lead.publishedAt || null,
     observedAt: lead.observedAt,
     sourceKind: lead.sourceKind,
     confidence: "matched_public_directory_signal",

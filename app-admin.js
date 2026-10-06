@@ -334,7 +334,7 @@ function adminCandidateCard(candidate, decisions, options = {}) {
   const sourceKind = String(candidate.sourceKind || "unknown_source");
   const reviewState = String(candidate.reviewState || "unreviewed");
   const rightsStatus = String(candidate.rightsStatus || "unknown");
-  const imageUrl = thumbnailAssetUrl(candidate.thumbnailUrl);
+  const imageUrl = hasMediaPermission(candidate) ? thumbnailAssetUrl(candidate.thumbnailUrl) : null;
   const sourceUrl = safeUrl(candidate.sourceUrl || candidate.pageUrl || candidate.postUrl);
   const localDecision = normalizeThumbnailDecision(thumbnailReviewDecisionValue(decisions[candidate.id]));
   const directPromotion = isDirectPromotionCandidate(candidate);
@@ -468,7 +468,7 @@ function renderSocialPostAdmin() {
 function socialPostReviewCard(post, decisions) {
   const id = post.id || post.postUrl || `${post.restaurantId}-${post.publishedAt}`;
   const sourceUrl = safeUrl(post.postUrl || post.profileUrl || post.feedUrl);
-  const mediaUrl = safeUrl(post.mediaUrl || post.thumbnailUrl);
+  const mediaUrl = permittedPostMediaUrl(post);
   const decision = decisions[id]?.decision || null;
   const categories = (post.categories || []).slice(0, 4);
   return `<article class="admin-candidate-card social-post-review-card">

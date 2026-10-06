@@ -8308,7 +8308,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
     {
       "restaurantId": "osm-node-4416774495-glitter-bean-cafe",
       "name": "Glitter Bean Cafe",
-      "website": "https://justitalymentone.com/",
+      "website": "https://www.glitterbeancafe.com/contact",
       "status": 200,
       "observedAt": "2026-09-04T13:17:42.517Z",
       "keywordHits": [
@@ -8333,26 +8333,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
         "reservations": [],
         "takeout": []
       },
-      "candidateLinks": [
-        {
-          "text": "Promosi",
-          "href": "https://justitalymentone.com/",
-          "signalMatches": {
-            "menu": [],
-            "specials": [
-              "promo"
-            ],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        }
-      ],
+      "candidateLinks": [],
       "sourceKind": "official_website",
       "reviewState": "cross-check"
     },
@@ -9858,7 +9839,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
     {
       "restaurantId": "osm-node-13141377001-india-paradise",
       "name": "India Paradise",
-      "website": "https://www.indiaparadise.ca/",
+      "website": "https://www.indiaparadise.ca/halifax/downtown/home",
       "status": 200,
       "observedAt": "2026-09-04T13:17:44.962Z",
       "keywordHits": [
@@ -9922,66 +9903,6 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
             "takeout": [
               "pickup"
             ]
-          }
-        },
-        {
-          "text": "Mar 12, 2026 Calgary Offer CALGARY: FREE BIRYANI ALERT! CALGARY: FREE BIRYANI ALERT! 🚨🥘 To celebrate our Grand Opening, we’re giving away 25 FREE Biryanis every single day from our exclusive Chef Series! 📍 Where: India Paradise, 3131 27 St NE Unit #1, Calgary 🗓️ When: March 18th – March 22nd ⏰ The Deal: First 25 people only! 🥡 Note: Take-out only Set your alarms and get here early—once they’re gone, they’re gone!",
-          "href": "https://www.indiaparadise.ca/post/calgary-free-biryani-alert",
-          "signalMatches": {
-            "menu": [],
-            "specials": [
-              "deal"
-            ],
-            "events": [],
-            "patio": [],
-            "openings": [
-              "grand opening"
-            ],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Mar 12, 2026 Calgary News Opening on March 18th in Calgary New Spot Alert: India Paradise is coming to Calgary! 🥘🔥Mark your calendars for March 18th. We aren&#x27;t just opening our doors; we’re opening the kitchen to the most authentic flavors in YYC. 🎁 GRAND OPENING SPECIAL:Get a complimentary Jilebi Rabdi on us when you dine in!(Available March 18 – April 12) Don&#x27;t just take our word for it—come taste the magic yours",
-          "href": "https://www.indiaparadise.ca/post/opening-on-march-18th-in-calgary",
-          "signalMatches": {
-            "menu": [],
-            "specials": [
-              "special"
-            ],
-            "events": [
-              "calendar"
-            ],
-            "patio": [],
-            "openings": [
-              "grand opening"
-            ],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "View Menu",
-          "href": "https://www.indiaparadise.ca/mississauga/food-menu",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
           }
         }
       ],

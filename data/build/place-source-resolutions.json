@@ -1,16 +1,16 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-04T14:51:58.445Z",
+  "generatedAt": "2026-10-06T02:02:00.615Z",
   "directoryGeneratedAt": "2026-09-04T14:51:31.056Z",
   "candidateCount": 769,
-  "resolvedCount": 98,
+  "resolvedCount": 87,
   "counts": {
-    "resolved_high": 74,
-    "non_name_evidence_review": 144,
-    "unresolved": 365,
-    "unresolved_conflict": 102,
-    "name_only_review": 55,
-    "resolved_probable": 24,
+    "resolved_high": 68,
+    "non_name_evidence_review": 140,
+    "unresolved": 427,
+    "unresolved_conflict": 74,
+    "name_only_review": 36,
+    "resolved_probable": 19,
     "review_conflict": 5
   },
   "resolutionPolicy": {
@@ -413,19 +413,15 @@
       "sourceUrl": "https://novascotia.com/listing/best-western-plus-chocolate-lake-hotel/",
       "candidateAddress": "250 St Margaret's Bay Road, B3N 1J4",
       "candidateWebsite": null,
-      "state": "unresolved_conflict",
+      "state": "unresolved",
       "matchedRestaurantId": null,
       "matchedRestaurantName": null,
-      "score": 5,
-      "evidence": [
-        "coordinates_within_200m"
-      ],
-      "conflicts": [
-        "street_number_conflict"
-      ],
-      "distanceMeters": 84,
-      "addressSimilarity": 0.2,
-      "scoreMargin": 5,
+      "score": 0,
+      "evidence": [],
+      "conflicts": [],
+      "distanceMeters": null,
+      "addressSimilarity": 0,
+      "scoreMargin": 0,
       "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
@@ -444,10 +440,10 @@
         "coordinates_within_500m"
       ],
       "conflicts": [],
-      "distanceMeters": 468,
+      "distanceMeters": 449,
       "addressSimilarity": 0,
-      "scoreMargin": 0,
-      "nextBestRestaurantId": "osm-node-620090348-pizza-town",
+      "scoreMargin": 10,
+      "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
     {
@@ -760,8 +756,8 @@
       "conflicts": [],
       "distanceMeters": 15,
       "addressSimilarity": 0,
-      "scoreMargin": 15,
-      "nextBestRestaurantId": "osm-way-181617786-tim-hortons",
+      "scoreMargin": 30,
+      "nextBestRestaurantId": "osm-node-11542167428-kempster-s-cookhouse",
       "reviewState": "needs-review"
     },
     {
@@ -1109,15 +1105,15 @@
       "state": "non_name_evidence_review",
       "matchedRestaurantId": null,
       "matchedRestaurantName": null,
-      "score": 40,
+      "score": 25,
       "evidence": [
-        "coordinates_within_60m"
+        "coordinates_within_200m"
       ],
       "conflicts": [],
-      "distanceMeters": 59,
+      "distanceMeters": 62,
       "addressSimilarity": 0,
       "scoreMargin": 15,
-      "nextBestRestaurantId": "osm-node-11526163879-zoca",
+      "nextBestRestaurantId": "osm-node-11526055082-noggins-coburg",
       "reviewState": "needs-review"
     },
     {
@@ -1240,15 +1236,15 @@
       "state": "non_name_evidence_review",
       "matchedRestaurantId": null,
       "matchedRestaurantName": null,
-      "score": 25,
+      "score": 10,
       "evidence": [
-        "coordinates_within_200m"
+        "coordinates_within_500m"
       ],
       "conflicts": [],
-      "distanceMeters": 187,
+      "distanceMeters": 210,
       "addressSimilarity": 0,
-      "scoreMargin": 15,
-      "nextBestRestaurantId": "osm-node-10099149520-the-happy-plate",
+      "scoreMargin": 0,
+      "nextBestRestaurantId": "osm-node-2714920432-sicilian-pizza",
       "reviewState": "needs-review"
     },
     {
@@ -1442,15 +1438,15 @@
       "state": "non_name_evidence_review",
       "matchedRestaurantId": null,
       "matchedRestaurantName": null,
-      "score": 25,
+      "score": 10,
       "evidence": [
-        "coordinates_within_200m"
+        "coordinates_within_500m"
       ],
       "conflicts": [],
-      "distanceMeters": 184,
+      "distanceMeters": 404,
       "addressSimilarity": 0,
-      "scoreMargin": 0,
-      "nextBestRestaurantId": "osm-node-2714920437-captain-sub",
+      "scoreMargin": 10,
+      "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
     {
@@ -1724,7 +1720,7 @@
       "distanceMeters": 421,
       "addressSimilarity": 0,
       "scoreMargin": 0,
-      "nextBestRestaurantId": "osm-node-30945183-smitty-s",
+      "nextBestRestaurantId": "osm-node-6393893024-shengs-chinese-restaurant",
       "reviewState": "needs-review"
     },
     {
@@ -1782,15 +1778,15 @@
       "state": "non_name_evidence_review",
       "matchedRestaurantId": null,
       "matchedRestaurantName": null,
-      "score": 25,
+      "score": 10,
       "evidence": [
-        "coordinates_within_200m"
+        "coordinates_within_500m"
       ],
       "conflicts": [],
-      "distanceMeters": 65,
+      "distanceMeters": 209,
       "addressSimilarity": 0,
-      "scoreMargin": 15,
-      "nextBestRestaurantId": "osm-node-620090348-pizza-town",
+      "scoreMargin": 10,
+      "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
     {
@@ -1824,17 +1820,15 @@
       "sourceUrl": "https://novascotia.com/listing/golden-fortune-restaurant/",
       "candidateAddress": "189 Herring Cove Road, B3P 1K9",
       "candidateWebsite": null,
-      "state": "non_name_evidence_review",
+      "state": "unresolved",
       "matchedRestaurantId": null,
       "matchedRestaurantName": null,
-      "score": 25,
-      "evidence": [
-        "coordinates_within_200m"
-      ],
+      "score": 0,
+      "evidence": [],
       "conflicts": [],
-      "distanceMeters": 86,
-      "addressSimilarity": 0.4,
-      "scoreMargin": 25,
+      "distanceMeters": null,
+      "addressSimilarity": 0,
+      "scoreMargin": 0,
       "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
@@ -1941,8 +1935,8 @@
       "conflicts": [],
       "distanceMeters": 108,
       "addressSimilarity": 0.091,
-      "scoreMargin": 0,
-      "nextBestRestaurantId": "osm-way-96156514-tim-hortons",
+      "scoreMargin": 15,
+      "nextBestRestaurantId": "osm-node-12143325436-vero-pizza",
       "reviewState": "needs-review"
     },
     {
@@ -2098,19 +2092,15 @@
       "sourceUrl": "https://novascotia.com/listing/halifax-tower-hotel-conference-centre/",
       "candidateAddress": "15 Lakelands Blvd, B3S 1G4",
       "candidateWebsite": null,
-      "state": "unresolved_conflict",
+      "state": "unresolved",
       "matchedRestaurantId": null,
       "matchedRestaurantName": null,
-      "score": 5,
-      "evidence": [
-        "coordinates_within_200m"
-      ],
-      "conflicts": [
-        "street_number_conflict"
-      ],
-      "distanceMeters": 173,
-      "addressSimilarity": 0.25,
-      "scoreMargin": 5,
+      "score": 0,
+      "evidence": [],
+      "conflicts": [],
+      "distanceMeters": null,
+      "addressSimilarity": 0,
+      "scoreMargin": 0,
       "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
@@ -2175,8 +2165,8 @@
       ],
       "distanceMeters": 19,
       "addressSimilarity": 0.5,
-      "scoreMargin": 10,
-      "nextBestRestaurantId": "osm-way-171149704-boston-pizza",
+      "scoreMargin": 20,
+      "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
     {
@@ -2218,8 +2208,8 @@
       "conflicts": [],
       "distanceMeters": 19,
       "addressSimilarity": 0.5,
-      "scoreMargin": 70,
-      "nextBestRestaurantId": "osm-way-363363462-tim-hortons",
+      "scoreMargin": 75,
+      "nextBestRestaurantId": null,
       "reviewState": "resolved-by-evidence"
     },
     {
@@ -2430,10 +2420,10 @@
         "coordinates_within_500m"
       ],
       "conflicts": [],
-      "distanceMeters": 470,
+      "distanceMeters": 489,
       "addressSimilarity": 0,
       "scoreMargin": 0,
-      "nextBestRestaurantId": "osm-node-12908626114-dairy-bar",
+      "nextBestRestaurantId": "osm-node-13262595504-mappatura-bistro",
       "reviewState": "needs-review"
     },
     {
@@ -2846,17 +2836,15 @@
       "sourceUrl": "https://novascotia.com/listing/millstone-public-house-baker-drive/",
       "candidateAddress": "250 Baker Drive",
       "candidateWebsite": null,
-      "state": "non_name_evidence_review",
+      "state": "unresolved",
       "matchedRestaurantId": null,
       "matchedRestaurantName": null,
-      "score": 25,
-      "evidence": [
-        "coordinates_within_200m"
-      ],
+      "score": 0,
+      "evidence": [],
       "conflicts": [],
-      "distanceMeters": 151,
+      "distanceMeters": null,
       "addressSimilarity": 0,
-      "scoreMargin": 25,
+      "scoreMargin": 0,
       "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
@@ -3012,15 +3000,15 @@
       "state": "non_name_evidence_review",
       "matchedRestaurantId": null,
       "matchedRestaurantName": null,
-      "score": 25,
+      "score": 10,
       "evidence": [
-        "coordinates_within_200m"
+        "coordinates_within_500m"
       ],
       "conflicts": [],
-      "distanceMeters": 156,
-      "addressSimilarity": 0.5,
-      "scoreMargin": 0,
-      "nextBestRestaurantId": "osm-node-620090343-burger-king",
+      "distanceMeters": 432,
+      "addressSimilarity": 0,
+      "scoreMargin": 5,
+      "nextBestRestaurantId": "osm-node-5150027725-100-cha-baa-tai",
       "reviewState": "needs-review"
     },
     {
@@ -3451,8 +3439,8 @@
       "conflicts": [],
       "distanceMeters": 172,
       "addressSimilarity": 0,
-      "scoreMargin": 0,
-      "nextBestRestaurantId": "osm-node-478118760-mcdonald-s",
+      "scoreMargin": 25,
+      "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
     {
@@ -4484,8 +4472,8 @@
       "conflicts": [],
       "distanceMeters": 11,
       "addressSimilarity": 0.4,
-      "scoreMargin": 15,
-      "nextBestRestaurantId": "osm-node-1748435000-starbucks",
+      "scoreMargin": 30,
+      "nextBestRestaurantId": "osm-node-11698520839-bells-lane-kitchen-at-purdy-s-wharf",
       "reviewState": "needs-review"
     },
     {
@@ -4659,7 +4647,7 @@
       "distanceMeters": 7,
       "addressSimilarity": 0.5,
       "scoreMargin": 35,
-      "nextBestRestaurantId": "osm-node-33117796-tim-hortons",
+      "nextBestRestaurantId": "osm-node-3796313457-chaii-samosa",
       "reviewState": "needs-review"
     },
     {
@@ -5381,7 +5369,7 @@
       "distanceMeters": null,
       "addressSimilarity": 0.6,
       "scoreMargin": 0,
-      "nextBestRestaurantId": "osm-node-2712744136-a-and-w",
+      "nextBestRestaurantId": "osm-node-2712744154-sushi-you-and-me",
       "reviewState": "needs-review"
     },
     {
@@ -5425,7 +5413,7 @@
       "distanceMeters": null,
       "addressSimilarity": 0.6,
       "scoreMargin": 0,
-      "nextBestRestaurantId": "osm-node-2712744136-a-and-w",
+      "nextBestRestaurantId": "osm-node-2712744154-sushi-you-and-me",
       "reviewState": "needs-review"
     },
     {
@@ -5438,16 +5426,13 @@
       "state": "unresolved",
       "matchedRestaurantId": null,
       "matchedRestaurantName": null,
-      "score": 50,
-      "evidence": [
-        "compatible_name",
-        "compatible_street_address"
-      ],
+      "score": 0,
+      "evidence": [],
       "conflicts": [],
       "distanceMeters": null,
-      "addressSimilarity": 0.6,
-      "scoreMargin": 35,
-      "nextBestRestaurantId": "osm-node-11699350872-five-guys",
+      "addressSimilarity": 0,
+      "scoreMargin": 0,
+      "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
     {
@@ -5865,7 +5850,7 @@
       "distanceMeters": null,
       "addressSimilarity": 0.6,
       "scoreMargin": 0,
-      "nextBestRestaurantId": "osm-node-2712744136-a-and-w",
+      "nextBestRestaurantId": "osm-node-2712744154-sushi-you-and-me",
       "reviewState": "needs-review"
     },
     {
@@ -6595,15 +6580,13 @@
       "state": "unresolved",
       "matchedRestaurantId": null,
       "matchedRestaurantName": null,
-      "score": 15,
-      "evidence": [
-        "compatible_name"
-      ],
+      "score": 0,
+      "evidence": [],
       "conflicts": [],
       "distanceMeters": null,
       "addressSimilarity": 0,
       "scoreMargin": 0,
-      "nextBestRestaurantId": "osm-node-5056880420-starbucks",
+      "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
     {
@@ -7182,22 +7165,16 @@
       "sourceUrl": "https://sackvillebusiness.com/shops-services/aw-restaurant",
       "candidateAddress": "774 Sackville Drive, Lower Sackville, NS",
       "candidateWebsite": "https://web.aw.ca/en/home",
-      "state": "unresolved_conflict",
+      "state": "unresolved",
       "matchedRestaurantId": null,
       "matchedRestaurantName": null,
-      "score": 45,
-      "evidence": [
-        "exact_normalized_name",
-        "exact_official_domain"
-      ],
-      "conflicts": [
-        "street_number_conflict",
-        "phone_conflict"
-      ],
+      "score": 0,
+      "evidence": [],
+      "conflicts": [],
       "distanceMeters": null,
       "addressSimilarity": 0,
-      "scoreMargin": 10,
-      "nextBestRestaurantId": "osm-way-1047164106-a-and-w",
+      "scoreMargin": 0,
+      "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
     {
@@ -7269,22 +7246,16 @@
       "sourceUrl": "https://sackvillebusiness.com/shops-services/booster-juice",
       "candidateAddress": "720 Sackville Drive, Unit #105, Lower Sackville, NS",
       "candidateWebsite": "http://boosterjuice.com/",
-      "state": "unresolved_conflict",
+      "state": "unresolved",
       "matchedRestaurantId": null,
       "matchedRestaurantName": null,
-      "score": 45,
-      "evidence": [
-        "exact_normalized_name",
-        "exact_official_domain"
-      ],
-      "conflicts": [
-        "street_number_conflict",
-        "phone_conflict"
-      ],
+      "score": 0,
+      "evidence": [],
+      "conflicts": [],
       "distanceMeters": null,
       "addressSimilarity": 0,
-      "scoreMargin": 30,
-      "nextBestRestaurantId": "osm-node-2716971771-booster-juice",
+      "scoreMargin": 0,
+      "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
     {
@@ -7294,22 +7265,16 @@
       "sourceUrl": "https://sackvillebusiness.com/shops-services/boston-pizza-sackville",
       "candidateAddress": "710 Sackville Drive, Lower Sackville, NS",
       "candidateWebsite": "http://www.bostonpizza.com/",
-      "state": "unresolved_conflict",
+      "state": "unresolved",
       "matchedRestaurantId": null,
       "matchedRestaurantName": null,
-      "score": 25,
-      "evidence": [
-        "compatible_name",
-        "exact_official_domain"
-      ],
-      "conflicts": [
-        "street_number_conflict",
-        "phone_conflict"
-      ],
+      "score": 0,
+      "evidence": [],
+      "conflicts": [],
       "distanceMeters": null,
       "addressSimilarity": 0,
-      "scoreMargin": 10,
-      "nextBestRestaurantId": "osm-way-171149704-boston-pizza",
+      "scoreMargin": 0,
+      "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
     {
@@ -7322,15 +7287,13 @@
       "state": "unresolved",
       "matchedRestaurantId": null,
       "matchedRestaurantName": null,
-      "score": 15,
-      "evidence": [
-        "compatible_name"
-      ],
+      "score": 0,
+      "evidence": [],
       "conflicts": [],
       "distanceMeters": null,
       "addressSimilarity": 0,
       "scoreMargin": 0,
-      "nextBestRestaurantId": "osm-way-171149719-burger-king",
+      "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
     {
@@ -7516,20 +7479,17 @@
       "sourceUrl": "https://sackvillebusiness.com/shops-services/greco-pizza",
       "candidateAddress": "857 Sackville Drive, Lower Sackville, NS",
       "candidateWebsite": "http://www.greco.ca/",
-      "state": "resolved_high",
-      "matchedRestaurantId": "osm-node-2714920436-greco-pizza",
-      "matchedRestaurantName": "Greco Pizza",
-      "score": 85,
-      "evidence": [
-        "exact_normalized_name",
-        "exact_official_domain"
-      ],
+      "state": "unresolved",
+      "matchedRestaurantId": null,
+      "matchedRestaurantName": null,
+      "score": 0,
+      "evidence": [],
       "conflicts": [],
       "distanceMeters": null,
       "addressSimilarity": 0,
-      "scoreMargin": 85,
+      "scoreMargin": 0,
       "nextBestRestaurantId": null,
-      "reviewState": "resolved-by-evidence"
+      "reviewState": "needs-review"
     },
     {
       "candidateId": "sba-hong-s-kitchen-584-sackville-drive-lower-sackville-ns",
@@ -7614,20 +7574,16 @@
       "sourceUrl": "https://sackvillebusiness.com/shops-services/kfc",
       "candidateAddress": "679 Sackville Drive, Lower Sackville, NS",
       "candidateWebsite": "http://www.kfc.ca/",
-      "state": "unresolved_conflict",
+      "state": "unresolved",
       "matchedRestaurantId": null,
       "matchedRestaurantName": null,
-      "score": 15,
-      "evidence": [
-        "exact_normalized_name"
-      ],
-      "conflicts": [
-        "street_number_conflict"
-      ],
+      "score": 0,
+      "evidence": [],
+      "conflicts": [],
       "distanceMeters": null,
       "addressSimilarity": 0,
       "scoreMargin": 0,
-      "nextBestRestaurantId": "osm-way-240110430-kfc",
+      "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
     {
@@ -7637,19 +7593,15 @@
       "sourceUrl": "https://sackvillebusiness.com/shops-services/little-caesars",
       "candidateAddress": "799 Sackville Drive, Lower Sackville, NS",
       "candidateWebsite": "https://littlecaesars.ca/en-ca/",
-      "state": "unresolved_conflict",
+      "state": "unresolved",
       "matchedRestaurantId": null,
       "matchedRestaurantName": null,
-      "score": 15,
-      "evidence": [
-        "exact_normalized_name"
-      ],
-      "conflicts": [
-        "street_number_conflict"
-      ],
+      "score": 0,
+      "evidence": [],
+      "conflicts": [],
       "distanceMeters": null,
       "addressSimilarity": 0,
-      "scoreMargin": 15,
+      "scoreMargin": 0,
       "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
@@ -7682,14 +7634,12 @@
       "state": "unresolved",
       "matchedRestaurantId": null,
       "matchedRestaurantName": null,
-      "score": 15,
-      "evidence": [
-        "compatible_name"
-      ],
+      "score": 0,
+      "evidence": [],
       "conflicts": [],
       "distanceMeters": null,
       "addressSimilarity": 0,
-      "scoreMargin": 15,
+      "scoreMargin": 0,
       "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
@@ -7725,20 +7675,17 @@
       "sourceUrl": "https://sackvillebusiness.com/shops-services/mcdonalds-restaurant-sackville",
       "candidateAddress": "517 Sackville Drive, Lower Sackville, NS",
       "candidateWebsite": "http://www.mcdonalds.ca/",
-      "state": "resolved_probable",
-      "matchedRestaurantId": "osm-node-478118760-mcdonald-s",
-      "matchedRestaurantName": "McDonald's",
-      "score": 65,
-      "evidence": [
-        "compatible_name",
-        "exact_official_domain"
-      ],
+      "state": "unresolved",
+      "matchedRestaurantId": null,
+      "matchedRestaurantName": null,
+      "score": 0,
+      "evidence": [],
       "conflicts": [],
       "distanceMeters": null,
       "addressSimilarity": 0,
-      "scoreMargin": 20,
-      "nextBestRestaurantId": "osm-node-2712689447-mcdonald-s",
-      "reviewState": "resolved-by-evidence"
+      "scoreMargin": 0,
+      "nextBestRestaurantId": null,
+      "reviewState": "needs-review"
     },
     {
       "candidateId": "sba-mezza-lebanese-restaurant-752-sackville-drive-lower-sackville-ns",
@@ -7844,20 +7791,16 @@
       "sourceUrl": "https://sackvillebusiness.com/shops-services/pita-pit",
       "candidateAddress": "745 Sackville Drive, Lower Sackville, NS",
       "candidateWebsite": "https://pitapit.ca/",
-      "state": "unresolved_conflict",
+      "state": "unresolved",
       "matchedRestaurantId": null,
       "matchedRestaurantName": null,
-      "score": 15,
-      "evidence": [
-        "exact_normalized_name"
-      ],
-      "conflicts": [
-        "street_number_conflict"
-      ],
+      "score": 0,
+      "evidence": [],
+      "conflicts": [],
       "distanceMeters": null,
       "addressSimilarity": 0,
       "scoreMargin": 0,
-      "nextBestRestaurantId": "osm-node-4915907943-pita-pit",
+      "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
     {
@@ -7867,22 +7810,16 @@
       "sourceUrl": "https://sackvillebusiness.com/shops-services/pizza-hut",
       "candidateAddress": "752 Sackville Drive, Lower Sackville, NS",
       "candidateWebsite": "http://www.pizzahut.ca/",
-      "state": "unresolved_conflict",
+      "state": "unresolved",
       "matchedRestaurantId": null,
       "matchedRestaurantName": null,
-      "score": 45,
-      "evidence": [
-        "exact_normalized_name",
-        "exact_official_domain"
-      ],
-      "conflicts": [
-        "street_number_conflict",
-        "phone_conflict"
-      ],
+      "score": 0,
+      "evidence": [],
+      "conflicts": [],
       "distanceMeters": null,
       "addressSimilarity": 0,
       "scoreMargin": 0,
-      "nextBestRestaurantId": "osm-way-358577265-pizza-hut",
+      "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
     {
@@ -7892,22 +7829,16 @@
       "sourceUrl": "https://sackvillebusiness.com/shops-services/pizza-pizza",
       "candidateAddress": "601 Sackville Drive, Unit 7B, Lower Sackville, NS",
       "candidateWebsite": "https://www.pizzapizza.ca/store/1/delivery",
-      "state": "unresolved_conflict",
+      "state": "unresolved",
       "matchedRestaurantId": null,
       "matchedRestaurantName": null,
-      "score": 110,
-      "evidence": [
-        "exact_normalized_name",
-        "exact_phone",
-        "exact_official_domain"
-      ],
-      "conflicts": [
-        "street_number_conflict"
-      ],
+      "score": 0,
+      "evidence": [],
+      "conflicts": [],
       "distanceMeters": null,
       "addressSimilarity": 0,
       "scoreMargin": 0,
-      "nextBestRestaurantId": "osm-node-5863968665-pizza-pizza",
+      "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
     {
@@ -8040,22 +7971,16 @@
       "sourceUrl": "https://sackvillebusiness.com/shops-services/starbucks",
       "candidateAddress": "745 Sackville Drive, Lower Sackville, NS",
       "candidateWebsite": "https://www.starbucks.ca/store-locator/store/1044903/atlantic-superstore-lower-sack-745-sackville-drive-lower-sackville-ns-b-4-e-2-r-2",
-      "state": "unresolved_conflict",
+      "state": "unresolved",
       "matchedRestaurantId": null,
       "matchedRestaurantName": null,
-      "score": 45,
-      "evidence": [
-        "exact_normalized_name",
-        "exact_official_domain"
-      ],
-      "conflicts": [
-        "street_number_conflict",
-        "phone_conflict"
-      ],
+      "score": 0,
+      "evidence": [],
+      "conflicts": [],
       "distanceMeters": null,
       "addressSimilarity": 0,
       "scoreMargin": 0,
-      "nextBestRestaurantId": "osm-node-11699350869-starbucks",
+      "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
     {
@@ -8065,22 +7990,16 @@
       "sourceUrl": "https://sackvillebusiness.com/shops-services/starbucks-0",
       "candidateAddress": "858 Sackville Drive, Lower Sackville, NS",
       "candidateWebsite": "https://www.starbucks.ca/",
-      "state": "unresolved_conflict",
+      "state": "unresolved",
       "matchedRestaurantId": null,
       "matchedRestaurantName": null,
-      "score": 45,
-      "evidence": [
-        "exact_normalized_name",
-        "exact_official_domain"
-      ],
-      "conflicts": [
-        "street_number_conflict",
-        "phone_conflict"
-      ],
+      "score": 0,
+      "evidence": [],
+      "conflicts": [],
       "distanceMeters": null,
       "addressSimilarity": 0,
       "scoreMargin": 0,
-      "nextBestRestaurantId": "osm-node-11699350869-starbucks",
+      "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
     {
@@ -8128,19 +8047,15 @@
       "sourceUrl": "https://sackvillebusiness.com/shops-services/thai-express",
       "candidateAddress": "720 Sackville Drive, Lower Sackville, NS",
       "candidateWebsite": "https://www.thaiexpress.ca/",
-      "state": "unresolved_conflict",
+      "state": "unresolved",
       "matchedRestaurantId": null,
       "matchedRestaurantName": null,
-      "score": 15,
-      "evidence": [
-        "exact_normalized_name"
-      ],
-      "conflicts": [
-        "street_number_conflict"
-      ],
+      "score": 0,
+      "evidence": [],
+      "conflicts": [],
       "distanceMeters": null,
       "addressSimilarity": 0,
-      "scoreMargin": 15,
+      "scoreMargin": 0,
       "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
@@ -8170,20 +8085,17 @@
       "sourceUrl": "https://sackvillebusiness.com/shops-services/tim-hortons",
       "candidateAddress": "810 Sackville Drive, Lower Sackville, NS",
       "candidateWebsite": "http://www.timhortons.com/",
-      "state": "resolved_high",
-      "matchedRestaurantId": "osm-node-3275051476-tim-hortons",
-      "matchedRestaurantName": "Tim Hortons",
-      "score": 85,
-      "evidence": [
-        "exact_normalized_name",
-        "exact_official_domain"
-      ],
+      "state": "unresolved",
+      "matchedRestaurantId": null,
+      "matchedRestaurantName": null,
+      "score": 0,
+      "evidence": [],
       "conflicts": [],
       "distanceMeters": null,
       "addressSimilarity": 0,
-      "scoreMargin": 20,
-      "nextBestRestaurantId": "osm-node-761848503-tim-hortons",
-      "reviewState": "resolved-by-evidence"
+      "scoreMargin": 0,
+      "nextBestRestaurantId": null,
+      "reviewState": "needs-review"
     },
     {
       "candidateId": "sba-tim-hortons-629-sackville-drive-lower-sackville-ns",
@@ -8192,20 +8104,17 @@
       "sourceUrl": "https://sackvillebusiness.com/shops-services/tim-hortons-0",
       "candidateAddress": "629 Sackville Drive, Lower Sackville, NS",
       "candidateWebsite": "https://www.timhortons.com/",
-      "state": "resolved_high",
-      "matchedRestaurantId": "osm-node-3275051476-tim-hortons",
-      "matchedRestaurantName": "Tim Hortons",
-      "score": 85,
-      "evidence": [
-        "exact_normalized_name",
-        "exact_official_domain"
-      ],
+      "state": "unresolved",
+      "matchedRestaurantId": null,
+      "matchedRestaurantName": null,
+      "score": 0,
+      "evidence": [],
       "conflicts": [],
       "distanceMeters": null,
       "addressSimilarity": 0,
-      "scoreMargin": 20,
-      "nextBestRestaurantId": "osm-node-761848503-tim-hortons",
-      "reviewState": "resolved-by-evidence"
+      "scoreMargin": 0,
+      "nextBestRestaurantId": null,
+      "reviewState": "needs-review"
     },
     {
       "candidateId": "sba-tom-s-family-restaurant-585-sackville-drive-lower-sackville-ns",
@@ -8233,19 +8142,15 @@
       "sourceUrl": "https://sackvillebusiness.com/shops-services/villa-madina",
       "candidateAddress": "858 Sackville Drive, Lower Sackville, NS",
       "candidateWebsite": "https://villamadina.com/",
-      "state": "unresolved_conflict",
+      "state": "unresolved",
       "matchedRestaurantId": null,
       "matchedRestaurantName": null,
-      "score": 15,
-      "evidence": [
-        "exact_normalized_name"
-      ],
-      "conflicts": [
-        "street_number_conflict"
-      ],
+      "score": 0,
+      "evidence": [],
+      "conflicts": [],
       "distanceMeters": null,
       "addressSimilarity": 0,
-      "scoreMargin": 15,
+      "scoreMargin": 0,
       "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
@@ -8279,22 +8184,16 @@
       "sourceUrl": "https://sackvillebusiness.com/shops-services/wendys",
       "candidateAddress": "720 Sackville Drive, Lower Sackville, NS",
       "candidateWebsite": "http://www.wendys.com/en-ca",
-      "state": "unresolved_conflict",
+      "state": "unresolved",
       "matchedRestaurantId": null,
       "matchedRestaurantName": null,
-      "score": 45,
-      "evidence": [
-        "exact_normalized_name",
-        "exact_official_domain"
-      ],
-      "conflicts": [
-        "street_number_conflict",
-        "phone_conflict"
-      ],
+      "score": 0,
+      "evidence": [],
+      "conflicts": [],
       "distanceMeters": null,
       "addressSimilarity": 0,
-      "scoreMargin": 30,
-      "nextBestRestaurantId": "osm-node-4924076574-wendy-s",
+      "scoreMargin": 0,
+      "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
     {
@@ -8323,18 +8222,16 @@
       "sourceUrl": "https://sackvillebusiness.com/food-drink-guide",
       "candidateAddress": "774 Sackville Drive, Lower Sackville, NS",
       "candidateWebsite": null,
-      "state": "name_only_review",
+      "state": "unresolved",
       "matchedRestaurantId": null,
       "matchedRestaurantName": null,
-      "score": 35,
-      "evidence": [
-        "exact_normalized_name"
-      ],
+      "score": 0,
+      "evidence": [],
       "conflicts": [],
       "distanceMeters": null,
       "addressSimilarity": 0,
       "scoreMargin": 0,
-      "nextBestRestaurantId": "osm-way-171149714-a-and-w",
+      "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
     {
@@ -8406,20 +8303,16 @@
       "sourceUrl": "https://sackvillebusiness.com/food-drink-guide",
       "candidateAddress": "720 Sackville Drive, Lower Sackville, NS",
       "candidateWebsite": null,
-      "state": "unresolved_conflict",
+      "state": "unresolved",
       "matchedRestaurantId": null,
       "matchedRestaurantName": null,
-      "score": 15,
-      "evidence": [
-        "exact_normalized_name"
-      ],
-      "conflicts": [
-        "street_number_conflict"
-      ],
+      "score": 0,
+      "evidence": [],
+      "conflicts": [],
       "distanceMeters": null,
       "addressSimilarity": 0,
       "scoreMargin": 0,
-      "nextBestRestaurantId": "osm-node-7139174643-booster-juice",
+      "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
     {
@@ -8429,18 +8322,16 @@
       "sourceUrl": "https://sackvillebusiness.com/food-drink-guide",
       "candidateAddress": "710 Sackville Drive, Lower Sackville, NS",
       "candidateWebsite": null,
-      "state": "name_only_review",
+      "state": "unresolved",
       "matchedRestaurantId": null,
       "matchedRestaurantName": null,
-      "score": 35,
-      "evidence": [
-        "exact_normalized_name"
-      ],
+      "score": 0,
+      "evidence": [],
       "conflicts": [],
       "distanceMeters": null,
       "addressSimilarity": 0,
-      "scoreMargin": 20,
-      "nextBestRestaurantId": "osm-node-1139389219-boston-pizza",
+      "scoreMargin": 0,
+      "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
     {
@@ -8450,18 +8341,16 @@
       "sourceUrl": "https://sackvillebusiness.com/food-drink-guide",
       "candidateAddress": "641 Sackville Drive, Lower Sackville, NS",
       "candidateWebsite": null,
-      "state": "name_only_review",
+      "state": "unresolved",
       "matchedRestaurantId": null,
       "matchedRestaurantName": null,
-      "score": 35,
-      "evidence": [
-        "exact_normalized_name"
-      ],
+      "score": 0,
+      "evidence": [],
       "conflicts": [],
       "distanceMeters": null,
       "addressSimilarity": 0,
       "scoreMargin": 0,
-      "nextBestRestaurantId": "osm-way-171149719-burger-king",
+      "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
     {
@@ -8494,20 +8383,16 @@
       "sourceUrl": "https://sackvillebusiness.com/food-drink-guide",
       "candidateAddress": "752 Sackville Drive, Lower Sackville, NS",
       "candidateWebsite": null,
-      "state": "unresolved_conflict",
+      "state": "unresolved",
       "matchedRestaurantId": null,
       "matchedRestaurantName": null,
-      "score": 15,
-      "evidence": [
-        "exact_normalized_name"
-      ],
-      "conflicts": [
-        "street_number_conflict"
-      ],
+      "score": 0,
+      "evidence": [],
+      "conflicts": [],
       "distanceMeters": null,
       "addressSimilarity": 0,
       "scoreMargin": 0,
-      "nextBestRestaurantId": "osm-way-224130096-dairy-queen",
+      "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
     {
@@ -8616,17 +8501,15 @@
       "sourceUrl": "https://sackvillebusiness.com/food-drink-guide",
       "candidateAddress": "857 Sackville Drive, Lower Sackville, NS",
       "candidateWebsite": null,
-      "state": "name_only_review",
+      "state": "unresolved",
       "matchedRestaurantId": null,
       "matchedRestaurantName": null,
-      "score": 35,
-      "evidence": [
-        "exact_normalized_name"
-      ],
+      "score": 0,
+      "evidence": [],
       "conflicts": [],
       "distanceMeters": null,
       "addressSimilarity": 0,
-      "scoreMargin": 35,
+      "scoreMargin": 0,
       "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
@@ -8738,20 +8621,16 @@
       "sourceUrl": "https://sackvillebusiness.com/food-drink-guide",
       "candidateAddress": "679 Sackville Drive, Lower Sackville, NS",
       "candidateWebsite": null,
-      "state": "unresolved_conflict",
+      "state": "unresolved",
       "matchedRestaurantId": null,
       "matchedRestaurantName": null,
-      "score": 15,
-      "evidence": [
-        "exact_normalized_name"
-      ],
-      "conflicts": [
-        "street_number_conflict"
-      ],
+      "score": 0,
+      "evidence": [],
+      "conflicts": [],
       "distanceMeters": null,
       "addressSimilarity": 0,
       "scoreMargin": 0,
-      "nextBestRestaurantId": "osm-way-240110430-kfc",
+      "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
     {
@@ -8822,17 +8701,15 @@
       "sourceUrl": "https://sackvillebusiness.com/food-drink-guide",
       "candidateAddress": "799 Sackville Drive, Lower Sackville, NS",
       "candidateWebsite": null,
-      "state": "name_only_review",
+      "state": "unresolved",
       "matchedRestaurantId": null,
       "matchedRestaurantName": null,
-      "score": 35,
-      "evidence": [
-        "exact_normalized_name"
-      ],
+      "score": 0,
+      "evidence": [],
       "conflicts": [],
       "distanceMeters": null,
       "addressSimilarity": 0,
-      "scoreMargin": 35,
+      "scoreMargin": 0,
       "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
@@ -8862,18 +8739,16 @@
       "sourceUrl": "https://sackvillebusiness.com/food-drink-guide",
       "candidateAddress": "517 Sackville Drive, Lower Sackville, NS",
       "candidateWebsite": null,
-      "state": "name_only_review",
+      "state": "unresolved",
       "matchedRestaurantId": null,
       "matchedRestaurantName": null,
-      "score": 35,
-      "evidence": [
-        "exact_normalized_name"
-      ],
+      "score": 0,
+      "evidence": [],
       "conflicts": [],
       "distanceMeters": null,
       "addressSimilarity": 0,
-      "scoreMargin": 20,
-      "nextBestRestaurantId": "osm-node-2712689447-mcdonald-s",
+      "scoreMargin": 0,
+      "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
     {
@@ -8942,20 +8817,16 @@
       "sourceUrl": "https://sackvillebusiness.com/food-drink-guide",
       "candidateAddress": "745 Sackville Drive, Lower Sackville, NS",
       "candidateWebsite": null,
-      "state": "unresolved_conflict",
+      "state": "unresolved",
       "matchedRestaurantId": null,
       "matchedRestaurantName": null,
-      "score": 15,
-      "evidence": [
-        "exact_normalized_name"
-      ],
-      "conflicts": [
-        "street_number_conflict"
-      ],
+      "score": 0,
+      "evidence": [],
+      "conflicts": [],
       "distanceMeters": null,
       "addressSimilarity": 0,
       "scoreMargin": 0,
-      "nextBestRestaurantId": "osm-node-4915907943-pita-pit",
+      "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
     {
@@ -9104,18 +8975,16 @@
       "sourceUrl": "https://sackvillebusiness.com/food-drink-guide",
       "candidateAddress": "794 Sackville Drive, Lower Sackville, NS",
       "candidateWebsite": null,
-      "state": "name_only_review",
+      "state": "unresolved",
       "matchedRestaurantId": null,
       "matchedRestaurantName": null,
-      "score": 35,
-      "evidence": [
-        "exact_normalized_name"
-      ],
+      "score": 0,
+      "evidence": [],
       "conflicts": [],
       "distanceMeters": null,
       "addressSimilarity": 0,
       "scoreMargin": 0,
-      "nextBestRestaurantId": "osm-node-11526163887-subway",
+      "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
     {
@@ -9144,19 +9013,15 @@
       "sourceUrl": "https://sackvillebusiness.com/food-drink-guide",
       "candidateAddress": "720 Sackville Drive, Lower Sackville, NS",
       "candidateWebsite": null,
-      "state": "unresolved_conflict",
+      "state": "unresolved",
       "matchedRestaurantId": null,
       "matchedRestaurantName": null,
-      "score": 15,
-      "evidence": [
-        "exact_normalized_name"
-      ],
-      "conflicts": [
-        "street_number_conflict"
-      ],
+      "score": 0,
+      "evidence": [],
+      "conflicts": [],
       "distanceMeters": null,
       "addressSimilarity": 0,
-      "scoreMargin": 15,
+      "scoreMargin": 0,
       "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
@@ -9186,18 +9051,16 @@
       "sourceUrl": "https://sackvillebusiness.com/food-drink-guide",
       "candidateAddress": "629 Sackville Drive, Lower Sackville, NS",
       "candidateWebsite": null,
-      "state": "name_only_review",
+      "state": "unresolved",
       "matchedRestaurantId": null,
       "matchedRestaurantName": null,
-      "score": 35,
-      "evidence": [
-        "exact_normalized_name"
-      ],
+      "score": 0,
+      "evidence": [],
       "conflicts": [],
       "distanceMeters": null,
       "addressSimilarity": 0,
       "scoreMargin": 0,
-      "nextBestRestaurantId": "osm-node-2737126855-tim-hortons",
+      "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
     {
@@ -9207,18 +9070,16 @@
       "sourceUrl": "https://sackvillebusiness.com/food-drink-guide",
       "candidateAddress": "745 Sackville Drive, Lower Sackville, NS",
       "candidateWebsite": null,
-      "state": "name_only_review",
+      "state": "unresolved",
       "matchedRestaurantId": null,
       "matchedRestaurantName": null,
-      "score": 35,
-      "evidence": [
-        "exact_normalized_name"
-      ],
+      "score": 0,
+      "evidence": [],
       "conflicts": [],
       "distanceMeters": null,
       "addressSimilarity": 0,
       "scoreMargin": 0,
-      "nextBestRestaurantId": "osm-node-2737126855-tim-hortons",
+      "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
     {
@@ -9228,18 +9089,16 @@
       "sourceUrl": "https://sackvillebusiness.com/food-drink-guide",
       "candidateAddress": "810 Sackville Drive, Lower Sackville, NS",
       "candidateWebsite": null,
-      "state": "name_only_review",
+      "state": "unresolved",
       "matchedRestaurantId": null,
       "matchedRestaurantName": null,
-      "score": 35,
-      "evidence": [
-        "exact_normalized_name"
-      ],
+      "score": 0,
+      "evidence": [],
       "conflicts": [],
       "distanceMeters": null,
       "addressSimilarity": 0,
       "scoreMargin": 0,
-      "nextBestRestaurantId": "osm-node-2737126855-tim-hortons",
+      "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
     {
@@ -9291,20 +9150,16 @@
       "sourceUrl": "https://sackvillebusiness.com/food-drink-guide",
       "candidateAddress": "720 Sackville Drive, Lower Sackville, NS",
       "candidateWebsite": null,
-      "state": "unresolved_conflict",
+      "state": "unresolved",
       "matchedRestaurantId": null,
       "matchedRestaurantName": null,
-      "score": 15,
-      "evidence": [
-        "exact_normalized_name"
-      ],
-      "conflicts": [
-        "street_number_conflict"
-      ],
+      "score": 0,
+      "evidence": [],
+      "conflicts": [],
       "distanceMeters": null,
       "addressSimilarity": 0,
       "scoreMargin": 0,
-      "nextBestRestaurantId": "osm-way-173999394-wendy-s",
+      "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
     {
@@ -9414,17 +9269,15 @@
       "sourceUrl": "https://bedfordplacemall.com/dining.php",
       "candidateAddress": "1658 Bedford Highway, Bedford, NS B4A 2X9",
       "candidateWebsite": "https://pursimple.com/restaurant/bedford/",
-      "state": "name_only_review",
+      "state": "unresolved",
       "matchedRestaurantId": null,
       "matchedRestaurantName": null,
-      "score": 35,
-      "evidence": [
-        "exact_normalized_name"
-      ],
+      "score": 0,
+      "evidence": [],
       "conflicts": [],
       "distanceMeters": null,
       "addressSimilarity": 0,
-      "scoreMargin": 35,
+      "scoreMargin": 0,
       "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
@@ -9454,20 +9307,16 @@
       "sourceUrl": "https://bedfordplacemall.com/dining.php",
       "candidateAddress": "1658 Bedford Highway, Bedford, NS B4A 2X9",
       "candidateWebsite": "http://www.swisschalet.com/",
-      "state": "unresolved_conflict",
+      "state": "unresolved",
       "matchedRestaurantId": null,
       "matchedRestaurantName": null,
-      "score": 15,
-      "evidence": [
-        "exact_normalized_name"
-      ],
-      "conflicts": [
-        "street_number_conflict"
-      ],
+      "score": 0,
+      "evidence": [],
+      "conflicts": [],
       "distanceMeters": null,
       "addressSimilarity": 0,
       "scoreMargin": 0,
-      "nextBestRestaurantId": "osm-way-366157259-swiss-chalet",
+      "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
     {
@@ -9791,8 +9640,8 @@
       "conflicts": [],
       "distanceMeters": null,
       "addressSimilarity": 1,
-      "scoreMargin": 105,
-      "nextBestRestaurantId": "osm-node-2714150702-wendy-s",
+      "scoreMargin": 120,
+      "nextBestRestaurantId": null,
       "reviewState": "resolved-by-evidence"
     },
     {
@@ -10050,20 +9899,19 @@
       "sourceUrl": "https://quinpoolroad.ca/member/dominos-pizza/",
       "candidateAddress": "6024 Quinpool Rd, Halifax, NS",
       "candidateWebsite": "https://pizza.dominos.ca/Halifax-NS-10982/",
-      "state": "resolved_probable",
-      "matchedRestaurantId": "osm-node-4424182190-domino-s-pizza",
-      "matchedRestaurantName": "Domino's Pizza",
-      "score": 70,
+      "state": "non_name_evidence_review",
+      "matchedRestaurantId": null,
+      "matchedRestaurantName": null,
+      "score": 35,
       "evidence": [
-        "exact_normalized_name",
         "compatible_street_address"
       ],
       "conflicts": [],
       "distanceMeters": null,
       "addressSimilarity": 1,
-      "scoreMargin": 35,
-      "nextBestRestaurantId": "osm-node-3799399358-cherry-berry",
-      "reviewState": "resolved-by-evidence"
+      "scoreMargin": 0,
+      "nextBestRestaurantId": "osm-node-3799413958-relish-gourmet-burgers",
+      "reviewState": "needs-review"
     },
     {
       "candidateId": "qrmda-east-coast-bakery-6257-quinpool-rd-halifax-ns",
@@ -10155,20 +10003,17 @@
       "sourceUrl": "https://quinpoolroad.ca/member/kfc/",
       "candidateAddress": "6310 Quinpool Rd, Halifax, NS",
       "candidateWebsite": "https://www.kfc.ca/find-a-kfc",
-      "state": "resolved_probable",
-      "matchedRestaurantId": "osm-way-466806758-kfc",
-      "matchedRestaurantName": "KFC",
-      "score": 70,
-      "evidence": [
-        "exact_normalized_name",
-        "compatible_street_address"
-      ],
+      "state": "unresolved",
+      "matchedRestaurantId": null,
+      "matchedRestaurantName": null,
+      "score": 0,
+      "evidence": [],
       "conflicts": [],
       "distanceMeters": null,
-      "addressSimilarity": 1,
-      "scoreMargin": 55,
-      "nextBestRestaurantId": "osm-node-8066235495-kfc",
-      "reviewState": "resolved-by-evidence"
+      "addressSimilarity": 0,
+      "scoreMargin": 0,
+      "nextBestRestaurantId": null,
+      "reviewState": "needs-review"
     },
     {
       "candidateId": "qrmda-king-of-donair-6422-quinpool-rd-halifax-ns",
@@ -10200,17 +10045,15 @@
       "sourceUrl": "https://quinpoolroad.ca/member/mary-browns/",
       "candidateAddress": "6140 Quinpool Road, Halifax, NS B3L 1A3",
       "candidateWebsite": "https://marybrowns.com/",
-      "state": "name_only_review",
+      "state": "unresolved",
       "matchedRestaurantId": null,
       "matchedRestaurantName": null,
-      "score": 35,
-      "evidence": [
-        "exact_normalized_name"
-      ],
+      "score": 0,
+      "evidence": [],
       "conflicts": [],
       "distanceMeters": null,
       "addressSimilarity": 0,
-      "scoreMargin": 35,
+      "scoreMargin": 0,
       "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
@@ -10221,21 +10064,17 @@
       "sourceUrl": "https://quinpoolroad.ca/member/mcdonalds/",
       "candidateAddress": "6304 Quinpool Road, Halifax, NS",
       "candidateWebsite": "https://www.mcdonalds.com/ca/en-ca.html",
-      "state": "resolved_high",
-      "matchedRestaurantId": "osm-node-13141551801-mcdonald-s",
-      "matchedRestaurantName": "McDonald's",
-      "score": 120,
-      "evidence": [
-        "exact_normalized_name",
-        "exact_official_domain",
-        "compatible_street_address"
-      ],
+      "state": "unresolved",
+      "matchedRestaurantId": null,
+      "matchedRestaurantName": null,
+      "score": 0,
+      "evidence": [],
       "conflicts": [],
       "distanceMeters": null,
-      "addressSimilarity": 1,
-      "scoreMargin": 55,
-      "nextBestRestaurantId": "osm-way-181621820-mcdonald-s",
-      "reviewState": "resolved-by-evidence"
+      "addressSimilarity": 0,
+      "scoreMargin": 0,
+      "nextBestRestaurantId": null,
+      "reviewState": "needs-review"
     },
     {
       "candidateId": "qrmda-morris-east-1984-vernon-st-halifax-ns",
@@ -10290,21 +10129,17 @@
       "sourceUrl": "https://quinpoolroad.ca/member/pizza-hut/",
       "candidateAddress": "6310 Quinpool Rd, Halifax, NS",
       "candidateWebsite": "https://www.pizzahut.ca/huts/ca-1/R30102/",
-      "state": "resolved_high",
-      "matchedRestaurantId": "osm-node-9991598303-pizza-hut-delivery",
-      "matchedRestaurantName": "Pizza Hut Delivery",
-      "score": 100,
-      "evidence": [
-        "compatible_name",
-        "exact_official_domain",
-        "compatible_street_address"
-      ],
+      "state": "unresolved",
+      "matchedRestaurantId": null,
+      "matchedRestaurantName": null,
+      "score": 0,
+      "evidence": [],
       "conflicts": [],
       "distanceMeters": null,
-      "addressSimilarity": 1,
-      "scoreMargin": 35,
-      "nextBestRestaurantId": "osm-node-6393893025-pizza-hut",
-      "reviewState": "resolved-by-evidence"
+      "addressSimilarity": 0,
+      "scoreMargin": 0,
+      "nextBestRestaurantId": null,
+      "reviewState": "needs-review"
     },
     {
       "candidateId": "qrmda-propeller-brewing-co-6112-quinpool-rd-halifax-ns",
@@ -10501,18 +10336,16 @@
       "sourceUrl": "https://quinpoolroad.ca/member/tim-hortons/",
       "candidateAddress": "6455 Quinpool Rd, Halifax, NS",
       "candidateWebsite": "https://www.timhortons.ca/",
-      "state": "non_name_evidence_review",
+      "state": "unresolved",
       "matchedRestaurantId": null,
       "matchedRestaurantName": null,
-      "score": 35,
-      "evidence": [
-        "compatible_street_address"
-      ],
+      "score": 0,
+      "evidence": [],
       "conflicts": [],
       "distanceMeters": null,
-      "addressSimilarity": 1,
-      "scoreMargin": 5,
-      "nextBestRestaurantId": "osm-node-31794073-tim-hortons",
+      "addressSimilarity": 0,
+      "scoreMargin": 0,
+      "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
     {
@@ -10609,21 +10442,21 @@
       "sourceUrl": "https://quinpoolroad.ca/member/wendys/",
       "candidateAddress": "6169 Quinpool Rd, Halifax, NS",
       "candidateWebsite": "https://www.wendys.com/en-ca/home",
-      "state": "resolved_high",
-      "matchedRestaurantId": "osm-node-2714150702-wendy-s",
-      "matchedRestaurantName": "Wendy's",
-      "score": 120,
+      "state": "unresolved_conflict",
+      "matchedRestaurantId": null,
+      "matchedRestaurantName": null,
+      "score": 15,
       "evidence": [
-        "exact_normalized_name",
-        "exact_official_domain",
         "compatible_street_address"
       ],
-      "conflicts": [],
+      "conflicts": [
+        "domain_conflict"
+      ],
       "distanceMeters": null,
       "addressSimilarity": 1,
-      "scoreMargin": 105,
-      "nextBestRestaurantId": "osm-node-2714150704-7-peppers-grill",
-      "reviewState": "resolved-by-evidence"
+      "scoreMargin": 15,
+      "nextBestRestaurantId": null,
+      "reviewState": "needs-review"
     },
     {
       "candidateId": "qrmda-westender-coffee-6418-quinpool-road-halifax-ns",
@@ -10676,21 +10509,19 @@
       "sourceUrl": "https://rans.ca/restaurants/starbucks-coffee-halifax-professional-center-22/",
       "candidateAddress": "5991 Spring Garden Road, Halifax",
       "candidateWebsite": "http://www.starbucks.ca/",
-      "state": "resolved_probable",
-      "matchedRestaurantId": "osm-node-4416579191-starbucks",
-      "matchedRestaurantName": "Starbucks",
-      "score": 85,
+      "state": "non_name_evidence_review",
+      "matchedRestaurantId": null,
+      "matchedRestaurantName": null,
+      "score": 20,
       "evidence": [
-        "compatible_name",
-        "exact_official_domain",
         "high_address_similarity"
       ],
       "conflicts": [],
       "distanceMeters": null,
       "addressSimilarity": 0.75,
-      "scoreMargin": 15,
-      "nextBestRestaurantId": "osm-node-3802788957-food-court-of-spring-garden-place",
-      "reviewState": "resolved-by-evidence"
+      "scoreMargin": 0,
+      "nextBestRestaurantId": "osm-node-26041177-your-father-s-moustache",
+      "reviewState": "needs-review"
     },
     {
       "candidateId": "rans-starbucks-coffee-marriott-halifax-harbourfront-1919-upper-water-st-halifax",
@@ -10699,21 +10530,16 @@
       "sourceUrl": "https://rans.ca/restaurants/starbucks-coffee-marriott-halifax-harbourfront-22/",
       "candidateAddress": "1919 Upper Water St, Halifax",
       "candidateWebsite": "http://www.starbucks.ca/",
-      "state": "unresolved_conflict",
+      "state": "unresolved",
       "matchedRestaurantId": null,
       "matchedRestaurantName": null,
-      "score": 45,
-      "evidence": [
-        "compatible_name",
-        "exact_official_domain"
-      ],
-      "conflicts": [
-        "street_number_conflict"
-      ],
+      "score": 0,
+      "evidence": [],
+      "conflicts": [],
       "distanceMeters": null,
       "addressSimilarity": 0,
       "scoreMargin": 0,
-      "nextBestRestaurantId": "osm-node-11699350869-starbucks",
+      "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
     {
@@ -10723,21 +10549,16 @@
       "sourceUrl": "https://rans.ca/restaurants/starbucks-coffee-halifax-stanfield-intl-airport-22/",
       "candidateAddress": "1 Bell Boulevard",
       "candidateWebsite": "http://www.starbucks.ca/",
-      "state": "unresolved_conflict",
+      "state": "unresolved",
       "matchedRestaurantId": null,
       "matchedRestaurantName": null,
-      "score": 45,
-      "evidence": [
-        "compatible_name",
-        "exact_official_domain"
-      ],
-      "conflicts": [
-        "street_number_conflict"
-      ],
+      "score": 0,
+      "evidence": [],
+      "conflicts": [],
       "distanceMeters": null,
       "addressSimilarity": 0,
       "scoreMargin": 0,
-      "nextBestRestaurantId": "osm-node-11699350869-starbucks",
+      "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
     {
@@ -10768,19 +10589,18 @@
       "sourceUrl": "https://rans.ca/restaurants/pizza-delight-downtown-halifax-22/",
       "candidateAddress": "5680 Spring Garden Rd, Halifax",
       "candidateWebsite": null,
-      "state": "unresolved",
+      "state": "non_name_evidence_review",
       "matchedRestaurantId": null,
       "matchedRestaurantName": null,
-      "score": 50,
+      "score": 35,
       "evidence": [
-        "compatible_name",
         "compatible_street_address"
       ],
       "conflicts": [],
       "distanceMeters": null,
       "addressSimilarity": 1,
-      "scoreMargin": 15,
-      "nextBestRestaurantId": "osm-node-3791832157-turkish-delight",
+      "scoreMargin": 0,
+      "nextBestRestaurantId": "osm-node-3791840157-krave-burger",
       "reviewState": "needs-review"
     },
     {
@@ -10800,8 +10620,8 @@
       "conflicts": [],
       "distanceMeters": null,
       "addressSimilarity": 0.75,
-      "scoreMargin": 0,
-      "nextBestRestaurantId": "osm-node-761848503-tim-hortons",
+      "scoreMargin": 20,
+      "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
     {
@@ -10854,14 +10674,12 @@
       "state": "unresolved",
       "matchedRestaurantId": null,
       "matchedRestaurantName": null,
-      "score": 15,
-      "evidence": [
-        "compatible_name"
-      ],
+      "score": 0,
+      "evidence": [],
       "conflicts": [],
       "distanceMeters": null,
-      "addressSimilarity": 0.667,
-      "scoreMargin": 15,
+      "addressSimilarity": 0,
+      "scoreMargin": 0,
       "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
@@ -10967,7 +10785,7 @@
       "distanceMeters": null,
       "addressSimilarity": 0.75,
       "scoreMargin": 0,
-      "nextBestRestaurantId": "osm-node-1819605596-subway",
+      "nextBestRestaurantId": "osm-node-4421306590-heppy-s-pie-lady",
       "reviewState": "needs-review"
     },
     {
@@ -11008,8 +10826,8 @@
       "conflicts": [],
       "distanceMeters": null,
       "addressSimilarity": 1,
-      "scoreMargin": 0,
-      "nextBestRestaurantId": "osm-node-9416778099-tarek-s-cafe",
+      "scoreMargin": 35,
+      "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
     {
@@ -11040,17 +10858,15 @@
       "sourceUrl": "https://rans.ca/restaurants/subway-halifax-fenwick-22/",
       "candidateAddress": "5560 Fenwick Street, Halifax",
       "candidateWebsite": null,
-      "state": "non_name_evidence_review",
+      "state": "unresolved",
       "matchedRestaurantId": null,
       "matchedRestaurantName": null,
-      "score": 35,
-      "evidence": [
-        "compatible_street_address"
-      ],
+      "score": 0,
+      "evidence": [],
       "conflicts": [],
       "distanceMeters": null,
-      "addressSimilarity": 1,
-      "scoreMargin": 35,
+      "addressSimilarity": 0,
+      "scoreMargin": 0,
       "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
@@ -11064,15 +10880,12 @@
       "state": "unresolved",
       "matchedRestaurantId": null,
       "matchedRestaurantName": null,
-      "score": 50,
-      "evidence": [
-        "compatible_name",
-        "compatible_street_address"
-      ],
+      "score": 0,
+      "evidence": [],
       "conflicts": [],
       "distanceMeters": null,
-      "addressSimilarity": 1,
-      "scoreMargin": 50,
+      "addressSimilarity": 0,
+      "scoreMargin": 0,
       "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
@@ -11086,15 +10899,12 @@
       "state": "unresolved",
       "matchedRestaurantId": null,
       "matchedRestaurantName": null,
-      "score": 50,
-      "evidence": [
-        "compatible_name",
-        "compatible_street_address"
-      ],
+      "score": 0,
+      "evidence": [],
       "conflicts": [],
       "distanceMeters": null,
-      "addressSimilarity": 1,
-      "scoreMargin": 50,
+      "addressSimilarity": 0,
+      "scoreMargin": 0,
       "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
@@ -11115,8 +10925,8 @@
       "conflicts": [],
       "distanceMeters": null,
       "addressSimilarity": 0.75,
-      "scoreMargin": 0,
-      "nextBestRestaurantId": "osm-node-761848503-tim-hortons",
+      "scoreMargin": 20,
+      "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
     {
@@ -11129,14 +10939,12 @@
       "state": "unresolved",
       "matchedRestaurantId": null,
       "matchedRestaurantName": null,
-      "score": 15,
-      "evidence": [
-        "compatible_name"
-      ],
+      "score": 0,
+      "evidence": [],
       "conflicts": [],
       "distanceMeters": null,
       "addressSimilarity": 0,
-      "scoreMargin": 15,
+      "scoreMargin": 0,
       "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
@@ -12226,21 +12034,16 @@
       "sourceUrl": "https://rans.ca/restaurants/starbucks-coffee-dartmouth-crossing-22/",
       "candidateAddress": "32 Foulis Rd, Dartmouth",
       "candidateWebsite": "http://www.starbucks.ca/",
-      "state": "unresolved_conflict",
+      "state": "unresolved",
       "matchedRestaurantId": null,
       "matchedRestaurantName": null,
-      "score": 45,
-      "evidence": [
-        "compatible_name",
-        "exact_official_domain"
-      ],
-      "conflicts": [
-        "street_number_conflict"
-      ],
+      "score": 0,
+      "evidence": [],
+      "conflicts": [],
       "distanceMeters": null,
       "addressSimilarity": 0,
       "scoreMargin": 0,
-      "nextBestRestaurantId": "osm-node-11699350869-starbucks",
+      "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
     {
@@ -12298,8 +12101,8 @@
       "conflicts": [],
       "distanceMeters": null,
       "addressSimilarity": 0.667,
-      "scoreMargin": 0,
-      "nextBestRestaurantId": "osm-node-5150027725-100-cha-baa-tai",
+      "scoreMargin": 35,
+      "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
     {
@@ -12358,7 +12161,7 @@
       "distanceMeters": null,
       "addressSimilarity": 0.667,
       "scoreMargin": 0,
-      "nextBestRestaurantId": "osm-node-8066235495-kfc",
+      "nextBestRestaurantId": "osm-node-8066235507-jugo-juice",
       "reviewState": "needs-review"
     },
     {
@@ -12368,20 +12171,19 @@
       "sourceUrl": "https://rans.ca/restaurants/greco-pizza-dartmouth-westphal-22/",
       "candidateAddress": "100 Main St, Dartmouth",
       "candidateWebsite": "http://www.greco.ca/",
-      "state": "resolved_probable",
-      "matchedRestaurantId": "osm-node-2714920436-greco-pizza",
-      "matchedRestaurantName": "Greco Pizza",
-      "score": 65,
+      "state": "non_name_evidence_review",
+      "matchedRestaurantId": null,
+      "matchedRestaurantName": null,
+      "score": 35,
       "evidence": [
-        "compatible_name",
-        "exact_official_domain"
+        "compatible_street_address"
       ],
       "conflicts": [],
       "distanceMeters": null,
-      "addressSimilarity": 0,
-      "scoreMargin": 30,
-      "nextBestRestaurantId": "osm-node-4395473556-subway",
-      "reviewState": "resolved-by-evidence"
+      "addressSimilarity": 0.667,
+      "scoreMargin": 35,
+      "nextBestRestaurantId": null,
+      "reviewState": "needs-review"
     },
     {
       "candidateId": "rans-manhattan-pizza-ltd-dartmouth-132-main-street-dartmouth",
@@ -12475,15 +12277,13 @@
       "state": "unresolved",
       "matchedRestaurantId": null,
       "matchedRestaurantName": null,
-      "score": 15,
-      "evidence": [
-        "compatible_name"
-      ],
+      "score": 0,
+      "evidence": [],
       "conflicts": [],
       "distanceMeters": null,
       "addressSimilarity": 0,
       "scoreMargin": 0,
-      "nextBestRestaurantId": "osm-node-5149749022-smitty-s",
+      "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
     {
@@ -12689,21 +12489,16 @@
       "sourceUrl": "https://rans.ca/restaurants/starbucks-coffee-bedford-highway-22/",
       "candidateAddress": "936 Bedford Highway, Bedford",
       "candidateWebsite": "http://www.starbucks.ca/",
-      "state": "unresolved_conflict",
+      "state": "unresolved",
       "matchedRestaurantId": null,
       "matchedRestaurantName": null,
-      "score": 45,
-      "evidence": [
-        "compatible_name",
-        "exact_official_domain"
-      ],
-      "conflicts": [
-        "street_number_conflict"
-      ],
+      "score": 0,
+      "evidence": [],
+      "conflicts": [],
       "distanceMeters": null,
       "addressSimilarity": 0,
       "scoreMargin": 0,
-      "nextBestRestaurantId": "osm-node-11699350869-starbucks",
+      "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
     {
@@ -12891,14 +12686,12 @@
       "state": "unresolved",
       "matchedRestaurantId": null,
       "matchedRestaurantName": null,
-      "score": 15,
-      "evidence": [
-        "compatible_name"
-      ],
+      "score": 0,
+      "evidence": [],
       "conflicts": [],
       "distanceMeters": null,
       "addressSimilarity": 0,
-      "scoreMargin": 15,
+      "scoreMargin": 0,
       "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
@@ -12909,21 +12702,16 @@
       "sourceUrl": "https://rans.ca/restaurants/pizza-hut-sackville-dr-22/",
       "candidateAddress": "752 Sackville Dr, Lower Sackville",
       "candidateWebsite": "http://www.pizzahut.ca/",
-      "state": "unresolved_conflict",
+      "state": "unresolved",
       "matchedRestaurantId": null,
       "matchedRestaurantName": null,
-      "score": 45,
-      "evidence": [
-        "compatible_name",
-        "exact_official_domain"
-      ],
-      "conflicts": [
-        "street_number_conflict"
-      ],
+      "score": 0,
+      "evidence": [],
+      "conflicts": [],
       "distanceMeters": null,
       "addressSimilarity": 0,
       "scoreMargin": 0,
-      "nextBestRestaurantId": "osm-way-358577265-pizza-hut",
+      "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
     {
@@ -12967,7 +12755,7 @@
       "distanceMeters": null,
       "addressSimilarity": 0.75,
       "scoreMargin": 0,
-      "nextBestRestaurantId": "osm-node-11699344555-osmow-s",
+      "nextBestRestaurantId": "osm-node-6910685885-mexi-s",
       "reviewState": "needs-review"
     },
     {
@@ -12977,18 +12765,16 @@
       "sourceUrl": "https://rans.ca/restaurants/pizza-delight-bayers-lake-22/",
       "candidateAddress": "209 Chain Lake Dr, Halifax",
       "candidateWebsite": "http://www.pizzadelight.com/",
-      "state": "non_name_evidence_review",
+      "state": "unresolved",
       "matchedRestaurantId": null,
       "matchedRestaurantName": null,
-      "score": 20,
-      "evidence": [
-        "high_address_similarity"
-      ],
+      "score": 0,
+      "evidence": [],
       "conflicts": [],
       "distanceMeters": null,
-      "addressSimilarity": 0.75,
+      "addressSimilarity": 0,
       "scoreMargin": 0,
-      "nextBestRestaurantId": "osm-way-173999385-jack-astor-s",
+      "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
     {
@@ -13017,19 +12803,20 @@
       "sourceUrl": "https://rans.ca/restaurants/dominos-pizza-clayton-park-22/",
       "candidateAddress": "480 Parkland Drive, Halifax",
       "candidateWebsite": "http://express.dominos.ca/",
-      "state": "unresolved",
+      "state": "unresolved_conflict",
       "matchedRestaurantId": null,
       "matchedRestaurantName": null,
-      "score": 50,
+      "score": 15,
       "evidence": [
-        "compatible_name",
         "compatible_street_address"
       ],
-      "conflicts": [],
+      "conflicts": [
+        "domain_conflict"
+      ],
       "distanceMeters": null,
       "addressSimilarity": 1,
-      "scoreMargin": 35,
-      "nextBestRestaurantId": "osm-node-11552510567-tako-sushi-and-ramen",
+      "scoreMargin": 0,
+      "nextBestRestaurantId": "osm-node-2702737179-9-nine",
       "reviewState": "needs-review"
     },
     {
@@ -13072,7 +12859,7 @@
       "distanceMeters": null,
       "addressSimilarity": 1,
       "scoreMargin": 0,
-      "nextBestRestaurantId": "osm-node-2716971767-lower-deck-bar-and-grill",
+      "nextBestRestaurantId": "osm-node-2716971768-king-of-donair",
       "reviewState": "needs-review"
     },
     {
@@ -13085,16 +12872,13 @@
       "state": "unresolved",
       "matchedRestaurantId": null,
       "matchedRestaurantName": null,
-      "score": 50,
-      "evidence": [
-        "compatible_name",
-        "compatible_street_address"
-      ],
+      "score": 0,
+      "evidence": [],
       "conflicts": [],
       "distanceMeters": null,
-      "addressSimilarity": 1,
-      "scoreMargin": 35,
-      "nextBestRestaurantId": "osm-node-2714920436-greco-pizza",
+      "addressSimilarity": 0,
+      "scoreMargin": 0,
+      "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
     {
@@ -13280,20 +13064,16 @@
       "sourceUrl": "https://bayerslakepark.com/osmows-shawarma",
       "candidateAddress": "1a Chain Lake Drive, Halifax, NS, Canada",
       "candidateWebsite": "https://osmows.com/shawarma-halifax",
-      "state": "non_name_evidence_review",
+      "state": "unresolved",
       "matchedRestaurantId": null,
       "matchedRestaurantName": null,
-      "score": 115,
-      "evidence": [
-        "exact_phone",
-        "exact_official_domain",
-        "high_address_similarity"
-      ],
+      "score": 0,
+      "evidence": [],
       "conflicts": [],
       "distanceMeters": null,
-      "addressSimilarity": 0.75,
-      "scoreMargin": 95,
-      "nextBestRestaurantId": "osm-way-171149709-tim-hortons",
+      "addressSimilarity": 0,
+      "scoreMargin": 0,
+      "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
     {
@@ -13344,22 +13124,16 @@
       "sourceUrl": "https://bayerslakepark.com/boston-pizza",
       "candidateAddress": "194A Chain Lake Drive, Halifax, Nova Scotia, Canada",
       "candidateWebsite": "https://www.bostonpizza.com/",
-      "state": "unresolved_conflict",
+      "state": "unresolved",
       "matchedRestaurantId": null,
       "matchedRestaurantName": null,
-      "score": 45,
-      "evidence": [
-        "exact_normalized_name",
-        "exact_official_domain"
-      ],
-      "conflicts": [
-        "street_number_conflict",
-        "phone_conflict"
-      ],
+      "score": 0,
+      "evidence": [],
+      "conflicts": [],
       "distanceMeters": null,
       "addressSimilarity": 0,
-      "scoreMargin": 10,
-      "nextBestRestaurantId": "osm-way-171149704-boston-pizza",
+      "scoreMargin": 0,
+      "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
     {
@@ -13372,16 +13146,13 @@
       "state": "unresolved",
       "matchedRestaurantId": null,
       "matchedRestaurantName": null,
-      "score": 50,
-      "evidence": [
-        "compatible_name",
-        "compatible_street_address"
-      ],
+      "score": 0,
+      "evidence": [],
       "conflicts": [],
       "distanceMeters": null,
-      "addressSimilarity": 1,
-      "scoreMargin": 30,
-      "nextBestRestaurantId": "osm-way-171149709-tim-hortons",
+      "addressSimilarity": 0,
+      "scoreMargin": 0,
+      "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
     {
@@ -13459,19 +13230,15 @@
       "sourceUrl": "https://www.downtowndartmouth.ca/fooddrink",
       "candidateAddress": "84 Portland Street Dartmouth, NS",
       "candidateWebsite": null,
-      "state": "unresolved_conflict",
+      "state": "unresolved",
       "matchedRestaurantId": null,
       "matchedRestaurantName": null,
-      "score": 15,
-      "evidence": [
-        "compatible_street_address"
-      ],
-      "conflicts": [
-        "phone_conflict"
-      ],
+      "score": 0,
+      "evidence": [],
+      "conflicts": [],
       "distanceMeters": null,
-      "addressSimilarity": 0.667,
-      "scoreMargin": 15,
+      "addressSimilarity": 0,
+      "scoreMargin": 0,
       "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
@@ -13617,19 +13384,15 @@
       "sourceUrl": "https://www.downtowndartmouth.ca/fooddrink",
       "candidateAddress": "41 Portland Street Dartmouth, NS",
       "candidateWebsite": "https://www.chanoeyspasta.com/",
-      "state": "unresolved_conflict",
+      "state": "unresolved",
       "matchedRestaurantId": null,
       "matchedRestaurantName": null,
-      "score": 15,
-      "evidence": [
-        "compatible_street_address"
-      ],
-      "conflicts": [
-        "domain_conflict"
-      ],
+      "score": 0,
+      "evidence": [],
+      "conflicts": [],
       "distanceMeters": null,
-      "addressSimilarity": 1,
-      "scoreMargin": 15,
+      "addressSimilarity": 0,
+      "scoreMargin": 0,
       "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
@@ -13841,7 +13604,7 @@
       "distanceMeters": null,
       "addressSimilarity": 1,
       "scoreMargin": 0,
-      "nextBestRestaurantId": "osm-node-8066235495-kfc",
+      "nextBestRestaurantId": "osm-node-8066235507-jugo-juice",
       "reviewState": "needs-review"
     },
     {
@@ -13896,18 +13659,16 @@
       "sourceUrl": "https://www.downtowndartmouth.ca/fooddrink",
       "candidateAddress": "106 Portland Street Dartmouth, NS",
       "candidateWebsite": "https://www.jacobslounge.com/",
-      "state": "non_name_evidence_review",
+      "state": "unresolved",
       "matchedRestaurantId": null,
       "matchedRestaurantName": null,
-      "score": 35,
-      "evidence": [
-        "compatible_street_address"
-      ],
+      "score": 0,
+      "evidence": [],
       "conflicts": [],
       "distanceMeters": null,
-      "addressSimilarity": 0.667,
+      "addressSimilarity": 0,
       "scoreMargin": 0,
-      "nextBestRestaurantId": "osm-node-4924076575-tim-hortons",
+      "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
     {
@@ -14562,18 +14323,16 @@
       "sourceUrl": "https://www.springgardenarea.com/eat-drink",
       "candidateAddress": null,
       "candidateWebsite": "http://www.chezcora.com/en",
-      "state": "non_name_evidence_review",
+      "state": "unresolved",
       "matchedRestaurantId": null,
       "matchedRestaurantName": null,
-      "score": 50,
-      "evidence": [
-        "exact_official_domain"
-      ],
+      "score": 0,
+      "evidence": [],
       "conflicts": [],
       "distanceMeters": null,
       "addressSimilarity": 0,
       "scoreMargin": 0,
-      "nextBestRestaurantId": "osm-node-3799422457-cora",
+      "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
     {
@@ -15266,19 +15025,16 @@
       "sourceUrl": "https://www.springgardenarea.com/eat-drink",
       "candidateAddress": null,
       "candidateWebsite": "https://www.timhortons.com/?lang=en&amp;region=CA",
-      "state": "name_only_review",
+      "state": "unresolved",
       "matchedRestaurantId": null,
       "matchedRestaurantName": null,
-      "score": 85,
-      "evidence": [
-        "exact_normalized_name",
-        "exact_official_domain"
-      ],
+      "score": 0,
+      "evidence": [],
       "conflicts": [],
       "distanceMeters": null,
       "addressSimilarity": 0,
       "scoreMargin": 0,
-      "nextBestRestaurantId": "osm-node-761848503-tim-hortons",
+      "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
     {
@@ -15425,19 +15181,16 @@
       "sourceUrl": "https://www.springgardenarea.com/eat-drink",
       "candidateAddress": null,
       "candidateWebsite": "https://www.starbucks.ca/",
-      "state": "name_only_review",
+      "state": "unresolved",
       "matchedRestaurantId": null,
       "matchedRestaurantName": null,
-      "score": 85,
-      "evidence": [
-        "exact_normalized_name",
-        "exact_official_domain"
-      ],
+      "score": 0,
+      "evidence": [],
       "conflicts": [],
       "distanceMeters": null,
       "addressSimilarity": 0,
       "scoreMargin": 0,
-      "nextBestRestaurantId": "osm-node-11699350869-starbucks",
+      "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
     {
@@ -15709,17 +15462,15 @@
       "sourceUrl": "https://www.springgardenarea.com/eat-drink",
       "candidateAddress": null,
       "candidateWebsite": "https://thaiexpress.ca/",
-      "state": "name_only_review",
+      "state": "unresolved",
       "matchedRestaurantId": null,
       "matchedRestaurantName": null,
-      "score": 35,
-      "evidence": [
-        "exact_normalized_name"
-      ],
+      "score": 0,
+      "evidence": [],
       "conflicts": [],
       "distanceMeters": null,
       "addressSimilarity": 0,
-      "scoreMargin": 35,
+      "scoreMargin": 0,
       "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
@@ -15768,19 +15519,16 @@
       "sourceUrl": "https://www.springgardenarea.com/eat-drink",
       "candidateAddress": null,
       "candidateWebsite": "https://www.mcdonalds.com/ca/en-ca.html",
-      "state": "name_only_review",
+      "state": "unresolved",
       "matchedRestaurantId": null,
       "matchedRestaurantName": null,
-      "score": 85,
-      "evidence": [
-        "exact_normalized_name",
-        "exact_official_domain"
-      ],
+      "score": 0,
+      "evidence": [],
       "conflicts": [],
       "distanceMeters": null,
       "addressSimilarity": 0,
       "scoreMargin": 0,
-      "nextBestRestaurantId": "osm-way-181621820-mcdonald-s",
+      "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
     {
@@ -15790,18 +15538,16 @@
       "sourceUrl": "https://www.springgardenarea.com/eat-drink",
       "candidateAddress": null,
       "candidateWebsite": "https://pitapit.ca/",
-      "state": "name_only_review",
+      "state": "unresolved",
       "matchedRestaurantId": null,
       "matchedRestaurantName": null,
-      "score": 35,
-      "evidence": [
-        "exact_normalized_name"
-      ],
+      "score": 0,
+      "evidence": [],
       "conflicts": [],
       "distanceMeters": null,
       "addressSimilarity": 0,
       "scoreMargin": 0,
-      "nextBestRestaurantId": "osm-node-2721708536-pita-pit",
+      "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
     {
@@ -15811,19 +15557,16 @@
       "sourceUrl": "https://www.springgardenarea.com/eat-drink",
       "candidateAddress": null,
       "candidateWebsite": "http://www.subway.com/en-ca/",
-      "state": "name_only_review",
+      "state": "unresolved",
       "matchedRestaurantId": null,
       "matchedRestaurantName": null,
-      "score": 85,
-      "evidence": [
-        "exact_normalized_name",
-        "exact_official_domain"
-      ],
+      "score": 0,
+      "evidence": [],
       "conflicts": [],
       "distanceMeters": null,
       "addressSimilarity": 0,
       "scoreMargin": 0,
-      "nextBestRestaurantId": "osm-node-1202688542-subway",
+      "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
     {
@@ -15985,18 +15728,16 @@
       "sourceUrl": "https://www.springgardenarea.com/eat-drink",
       "candidateAddress": null,
       "candidateWebsite": "https://www.dairyqueen.com/en-ca/",
-      "state": "name_only_review",
+      "state": "unresolved",
       "matchedRestaurantId": null,
       "matchedRestaurantName": null,
-      "score": 35,
-      "evidence": [
-        "exact_normalized_name"
-      ],
+      "score": 0,
+      "evidence": [],
       "conflicts": [],
       "distanceMeters": null,
       "addressSimilarity": 0,
       "scoreMargin": 0,
-      "nextBestRestaurantId": "osm-way-224130096-dairy-queen",
+      "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
     {
@@ -16394,19 +16135,15 @@
       "sourceUrl": "https://novascotia.com/listing/best-western-plus-chocolate-lake-hotel/",
       "candidateAddress": "250 St Margaret's Bay Road, B3N 1J4",
       "candidateWebsite": null,
-      "state": "unresolved_conflict",
+      "state": "unresolved",
       "matchedRestaurantId": null,
       "matchedRestaurantName": null,
-      "score": 5,
-      "evidence": [
-        "coordinates_within_200m"
-      ],
-      "conflicts": [
-        "street_number_conflict"
-      ],
-      "distanceMeters": 84,
-      "addressSimilarity": 0.2,
-      "scoreMargin": 5,
+      "score": 0,
+      "evidence": [],
+      "conflicts": [],
+      "distanceMeters": null,
+      "addressSimilarity": 0,
+      "scoreMargin": 0,
       "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
@@ -16425,10 +16162,10 @@
         "coordinates_within_500m"
       ],
       "conflicts": [],
-      "distanceMeters": 468,
+      "distanceMeters": 449,
       "addressSimilarity": 0,
-      "scoreMargin": 0,
-      "nextBestRestaurantId": "osm-node-620090348-pizza-town",
+      "scoreMargin": 10,
+      "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
     {
@@ -16695,8 +16432,8 @@
       "conflicts": [],
       "distanceMeters": 15,
       "addressSimilarity": 0,
-      "scoreMargin": 15,
-      "nextBestRestaurantId": "osm-way-181617786-tim-hortons",
+      "scoreMargin": 30,
+      "nextBestRestaurantId": "osm-node-11542167428-kempster-s-cookhouse",
       "reviewState": "needs-review"
     },
     {
@@ -16999,15 +16736,15 @@
       "state": "non_name_evidence_review",
       "matchedRestaurantId": null,
       "matchedRestaurantName": null,
-      "score": 40,
+      "score": 25,
       "evidence": [
-        "coordinates_within_60m"
+        "coordinates_within_200m"
       ],
       "conflicts": [],
-      "distanceMeters": 59,
+      "distanceMeters": 62,
       "addressSimilarity": 0,
       "scoreMargin": 15,
-      "nextBestRestaurantId": "osm-node-11526163879-zoca",
+      "nextBestRestaurantId": "osm-node-11526055082-noggins-coburg",
       "reviewState": "needs-review"
     },
     {
@@ -17083,15 +16820,15 @@
       "state": "non_name_evidence_review",
       "matchedRestaurantId": null,
       "matchedRestaurantName": null,
-      "score": 25,
+      "score": 10,
       "evidence": [
-        "coordinates_within_200m"
+        "coordinates_within_500m"
       ],
       "conflicts": [],
-      "distanceMeters": 187,
+      "distanceMeters": 210,
       "addressSimilarity": 0,
-      "scoreMargin": 15,
-      "nextBestRestaurantId": "osm-node-10099149520-the-happy-plate",
+      "scoreMargin": 0,
+      "nextBestRestaurantId": "osm-node-2714920432-sicilian-pizza",
       "reviewState": "needs-review"
     },
     {
@@ -17191,15 +16928,15 @@
       "state": "non_name_evidence_review",
       "matchedRestaurantId": null,
       "matchedRestaurantName": null,
-      "score": 25,
+      "score": 10,
       "evidence": [
-        "coordinates_within_200m"
+        "coordinates_within_500m"
       ],
       "conflicts": [],
-      "distanceMeters": 184,
+      "distanceMeters": 404,
       "addressSimilarity": 0,
-      "scoreMargin": 0,
-      "nextBestRestaurantId": "osm-node-2714920437-captain-sub",
+      "scoreMargin": 10,
+      "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
     {
@@ -17405,7 +17142,7 @@
       "distanceMeters": 421,
       "addressSimilarity": 0,
       "scoreMargin": 0,
-      "nextBestRestaurantId": "osm-node-30945183-smitty-s",
+      "nextBestRestaurantId": "osm-node-6393893024-shengs-chinese-restaurant",
       "reviewState": "needs-review"
     },
     {
@@ -17439,15 +17176,15 @@
       "state": "non_name_evidence_review",
       "matchedRestaurantId": null,
       "matchedRestaurantName": null,
-      "score": 25,
+      "score": 10,
       "evidence": [
-        "coordinates_within_200m"
+        "coordinates_within_500m"
       ],
       "conflicts": [],
-      "distanceMeters": 65,
+      "distanceMeters": 209,
       "addressSimilarity": 0,
-      "scoreMargin": 15,
-      "nextBestRestaurantId": "osm-node-620090348-pizza-town",
+      "scoreMargin": 10,
+      "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
     {
@@ -17457,17 +17194,15 @@
       "sourceUrl": "https://novascotia.com/listing/golden-fortune-restaurant/",
       "candidateAddress": "189 Herring Cove Road, B3P 1K9",
       "candidateWebsite": null,
-      "state": "non_name_evidence_review",
+      "state": "unresolved",
       "matchedRestaurantId": null,
       "matchedRestaurantName": null,
-      "score": 25,
-      "evidence": [
-        "coordinates_within_200m"
-      ],
+      "score": 0,
+      "evidence": [],
       "conflicts": [],
-      "distanceMeters": 86,
-      "addressSimilarity": 0.4,
-      "scoreMargin": 25,
+      "distanceMeters": null,
+      "addressSimilarity": 0,
+      "scoreMargin": 0,
       "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
@@ -17550,8 +17285,8 @@
       "conflicts": [],
       "distanceMeters": 108,
       "addressSimilarity": 0.091,
-      "scoreMargin": 0,
-      "nextBestRestaurantId": "osm-way-96156514-tim-hortons",
+      "scoreMargin": 15,
+      "nextBestRestaurantId": "osm-node-12143325436-vero-pizza",
       "reviewState": "needs-review"
     },
     {
@@ -17707,19 +17442,15 @@
       "sourceUrl": "https://novascotia.com/listing/halifax-tower-hotel-conference-centre/",
       "candidateAddress": "15 Lakelands Blvd, B3S 1G4",
       "candidateWebsite": null,
-      "state": "unresolved_conflict",
+      "state": "unresolved",
       "matchedRestaurantId": null,
       "matchedRestaurantName": null,
-      "score": 5,
-      "evidence": [
-        "coordinates_within_200m"
-      ],
-      "conflicts": [
-        "street_number_conflict"
-      ],
-      "distanceMeters": 173,
-      "addressSimilarity": 0.25,
-      "scoreMargin": 5,
+      "score": 0,
+      "evidence": [],
+      "conflicts": [],
+      "distanceMeters": null,
+      "addressSimilarity": 0,
+      "scoreMargin": 0,
       "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
@@ -17784,8 +17515,8 @@
       ],
       "distanceMeters": 19,
       "addressSimilarity": 0.5,
-      "scoreMargin": 10,
-      "nextBestRestaurantId": "osm-way-171149704-boston-pizza",
+      "scoreMargin": 20,
+      "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
     {
@@ -17948,10 +17679,10 @@
         "coordinates_within_500m"
       ],
       "conflicts": [],
-      "distanceMeters": 470,
+      "distanceMeters": 489,
       "addressSimilarity": 0,
       "scoreMargin": 0,
-      "nextBestRestaurantId": "osm-node-12908626114-dairy-bar",
+      "nextBestRestaurantId": "osm-node-13262595504-mappatura-bistro",
       "reviewState": "needs-review"
     },
     {
@@ -18250,17 +17981,15 @@
       "sourceUrl": "https://novascotia.com/listing/millstone-public-house-baker-drive/",
       "candidateAddress": "250 Baker Drive",
       "candidateWebsite": null,
-      "state": "non_name_evidence_review",
+      "state": "unresolved",
       "matchedRestaurantId": null,
       "matchedRestaurantName": null,
-      "score": 25,
-      "evidence": [
-        "coordinates_within_200m"
-      ],
+      "score": 0,
+      "evidence": [],
       "conflicts": [],
-      "distanceMeters": 151,
+      "distanceMeters": null,
       "addressSimilarity": 0,
-      "scoreMargin": 25,
+      "scoreMargin": 0,
       "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
@@ -18394,15 +18123,15 @@
       "state": "non_name_evidence_review",
       "matchedRestaurantId": null,
       "matchedRestaurantName": null,
-      "score": 25,
+      "score": 10,
       "evidence": [
-        "coordinates_within_200m"
+        "coordinates_within_500m"
       ],
       "conflicts": [],
-      "distanceMeters": 156,
-      "addressSimilarity": 0.5,
-      "scoreMargin": 0,
-      "nextBestRestaurantId": "osm-node-620090343-burger-king",
+      "distanceMeters": 432,
+      "addressSimilarity": 0,
+      "scoreMargin": 5,
+      "nextBestRestaurantId": "osm-node-5150027725-100-cha-baa-tai",
       "reviewState": "needs-review"
     },
     {
@@ -18695,8 +18424,8 @@
       "conflicts": [],
       "distanceMeters": 172,
       "addressSimilarity": 0,
-      "scoreMargin": 0,
-      "nextBestRestaurantId": "osm-node-478118760-mcdonald-s",
+      "scoreMargin": 25,
+      "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
     {
@@ -19427,8 +19156,8 @@
       "conflicts": [],
       "distanceMeters": 11,
       "addressSimilarity": 0.4,
-      "scoreMargin": 15,
-      "nextBestRestaurantId": "osm-node-1748435000-starbucks",
+      "scoreMargin": 30,
+      "nextBestRestaurantId": "osm-node-11698520839-bells-lane-kitchen-at-purdy-s-wharf",
       "reviewState": "needs-review"
     },
     {
@@ -19555,7 +19284,7 @@
       "distanceMeters": 7,
       "addressSimilarity": 0.5,
       "scoreMargin": 35,
-      "nextBestRestaurantId": "osm-node-33117796-tim-hortons",
+      "nextBestRestaurantId": "osm-node-3796313457-chaii-samosa",
       "reviewState": "needs-review"
     },
     {
@@ -20253,7 +19982,7 @@
       "distanceMeters": null,
       "addressSimilarity": 0.6,
       "scoreMargin": 0,
-      "nextBestRestaurantId": "osm-node-2712744136-a-and-w",
+      "nextBestRestaurantId": "osm-node-2712744154-sushi-you-and-me",
       "reviewState": "needs-review"
     },
     {
@@ -20297,7 +20026,7 @@
       "distanceMeters": null,
       "addressSimilarity": 0.6,
       "scoreMargin": 0,
-      "nextBestRestaurantId": "osm-node-2712744136-a-and-w",
+      "nextBestRestaurantId": "osm-node-2712744154-sushi-you-and-me",
       "reviewState": "needs-review"
     },
     {
@@ -20310,16 +20039,13 @@
       "state": "unresolved",
       "matchedRestaurantId": null,
       "matchedRestaurantName": null,
-      "score": 50,
-      "evidence": [
-        "compatible_name",
-        "compatible_street_address"
-      ],
+      "score": 0,
+      "evidence": [],
       "conflicts": [],
       "distanceMeters": null,
-      "addressSimilarity": 0.6,
-      "scoreMargin": 35,
-      "nextBestRestaurantId": "osm-node-11699350872-five-guys",
+      "addressSimilarity": 0,
+      "scoreMargin": 0,
+      "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
     {
@@ -20737,7 +20463,7 @@
       "distanceMeters": null,
       "addressSimilarity": 0.6,
       "scoreMargin": 0,
-      "nextBestRestaurantId": "osm-node-2712744136-a-and-w",
+      "nextBestRestaurantId": "osm-node-2712744154-sushi-you-and-me",
       "reviewState": "needs-review"
     },
     {
@@ -21467,15 +21193,13 @@
       "state": "unresolved",
       "matchedRestaurantId": null,
       "matchedRestaurantName": null,
-      "score": 15,
-      "evidence": [
-        "compatible_name"
-      ],
+      "score": 0,
+      "evidence": [],
       "conflicts": [],
       "distanceMeters": null,
       "addressSimilarity": 0,
       "scoreMargin": 0,
-      "nextBestRestaurantId": "osm-node-5056880420-starbucks",
+      "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
     {
@@ -22054,22 +21778,16 @@
       "sourceUrl": "https://sackvillebusiness.com/shops-services/aw-restaurant",
       "candidateAddress": "774 Sackville Drive, Lower Sackville, NS",
       "candidateWebsite": "https://web.aw.ca/en/home",
-      "state": "unresolved_conflict",
+      "state": "unresolved",
       "matchedRestaurantId": null,
       "matchedRestaurantName": null,
-      "score": 45,
-      "evidence": [
-        "exact_normalized_name",
-        "exact_official_domain"
-      ],
-      "conflicts": [
-        "street_number_conflict",
-        "phone_conflict"
-      ],
+      "score": 0,
+      "evidence": [],
+      "conflicts": [],
       "distanceMeters": null,
       "addressSimilarity": 0,
-      "scoreMargin": 10,
-      "nextBestRestaurantId": "osm-way-1047164106-a-and-w",
+      "scoreMargin": 0,
+      "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
     {
@@ -22141,22 +21859,16 @@
       "sourceUrl": "https://sackvillebusiness.com/shops-services/booster-juice",
       "candidateAddress": "720 Sackville Drive, Unit #105, Lower Sackville, NS",
       "candidateWebsite": "http://boosterjuice.com/",
-      "state": "unresolved_conflict",
+      "state": "unresolved",
       "matchedRestaurantId": null,
       "matchedRestaurantName": null,
-      "score": 45,
-      "evidence": [
-        "exact_normalized_name",
-        "exact_official_domain"
-      ],
-      "conflicts": [
-        "street_number_conflict",
-        "phone_conflict"
-      ],
+      "score": 0,
+      "evidence": [],
+      "conflicts": [],
       "distanceMeters": null,
       "addressSimilarity": 0,
-      "scoreMargin": 30,
-      "nextBestRestaurantId": "osm-node-2716971771-booster-juice",
+      "scoreMargin": 0,
+      "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
     {
@@ -22166,22 +21878,16 @@
       "sourceUrl": "https://sackvillebusiness.com/shops-services/boston-pizza-sackville",
       "candidateAddress": "710 Sackville Drive, Lower Sackville, NS",
       "candidateWebsite": "http://www.bostonpizza.com/",
-      "state": "unresolved_conflict",
+      "state": "unresolved",
       "matchedRestaurantId": null,
       "matchedRestaurantName": null,
-      "score": 25,
-      "evidence": [
-        "compatible_name",
-        "exact_official_domain"
-      ],
-      "conflicts": [
-        "street_number_conflict",
-        "phone_conflict"
-      ],
+      "score": 0,
+      "evidence": [],
+      "conflicts": [],
       "distanceMeters": null,
       "addressSimilarity": 0,
-      "scoreMargin": 10,
-      "nextBestRestaurantId": "osm-way-171149704-boston-pizza",
+      "scoreMargin": 0,
+      "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
     {
@@ -22194,15 +21900,13 @@
       "state": "unresolved",
       "matchedRestaurantId": null,
       "matchedRestaurantName": null,
-      "score": 15,
-      "evidence": [
-        "compatible_name"
-      ],
+      "score": 0,
+      "evidence": [],
       "conflicts": [],
       "distanceMeters": null,
       "addressSimilarity": 0,
       "scoreMargin": 0,
-      "nextBestRestaurantId": "osm-way-171149719-burger-king",
+      "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
     {
@@ -22382,6 +22086,25 @@
       "reviewState": "needs-review"
     },
     {
+      "candidateId": "sba-greco-pizza-857-sackville-drive-lower-sackville-ns",
+      "candidateName": "Greco Pizza",
+      "sourceId": "sackville-business-food-drink",
+      "sourceUrl": "https://sackvillebusiness.com/shops-services/greco-pizza",
+      "candidateAddress": "857 Sackville Drive, Lower Sackville, NS",
+      "candidateWebsite": "http://www.greco.ca/",
+      "state": "unresolved",
+      "matchedRestaurantId": null,
+      "matchedRestaurantName": null,
+      "score": 0,
+      "evidence": [],
+      "conflicts": [],
+      "distanceMeters": null,
+      "addressSimilarity": 0,
+      "scoreMargin": 0,
+      "nextBestRestaurantId": null,
+      "reviewState": "needs-review"
+    },
+    {
       "candidateId": "sba-hong-s-kitchen-584-sackville-drive-lower-sackville-ns",
       "candidateName": "Hong's Kitchen",
       "sourceId": "sackville-business-food-drink",
@@ -22464,20 +22187,16 @@
       "sourceUrl": "https://sackvillebusiness.com/shops-services/kfc",
       "candidateAddress": "679 Sackville Drive, Lower Sackville, NS",
       "candidateWebsite": "http://www.kfc.ca/",
-      "state": "unresolved_conflict",
+      "state": "unresolved",
       "matchedRestaurantId": null,
       "matchedRestaurantName": null,
-      "score": 15,
-      "evidence": [
-        "exact_normalized_name"
-      ],
-      "conflicts": [
-        "street_number_conflict"
-      ],
+      "score": 0,
+      "evidence": [],
+      "conflicts": [],
       "distanceMeters": null,
       "addressSimilarity": 0,
       "scoreMargin": 0,
-      "nextBestRestaurantId": "osm-way-240110430-kfc",
+      "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
     {
@@ -22487,19 +22206,15 @@
       "sourceUrl": "https://sackvillebusiness.com/shops-services/little-caesars",
       "candidateAddress": "799 Sackville Drive, Lower Sackville, NS",
       "candidateWebsite": "https://littlecaesars.ca/en-ca/",
-      "state": "unresolved_conflict",
+      "state": "unresolved",
       "matchedRestaurantId": null,
       "matchedRestaurantName": null,
-      "score": 15,
-      "evidence": [
-        "exact_normalized_name"
-      ],
-      "conflicts": [
-        "street_number_conflict"
-      ],
+      "score": 0,
+      "evidence": [],
+      "conflicts": [],
       "distanceMeters": null,
       "addressSimilarity": 0,
-      "scoreMargin": 15,
+      "scoreMargin": 0,
       "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
@@ -22532,14 +22247,12 @@
       "state": "unresolved",
       "matchedRestaurantId": null,
       "matchedRestaurantName": null,
-      "score": 15,
-      "evidence": [
-        "compatible_name"
-      ],
+      "score": 0,
+      "evidence": [],
       "conflicts": [],
       "distanceMeters": null,
       "addressSimilarity": 0,
-      "scoreMargin": 15,
+      "scoreMargin": 0,
       "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
@@ -22565,6 +22278,25 @@
       "distanceMeters": null,
       "addressSimilarity": 0,
       "scoreMargin": 25,
+      "nextBestRestaurantId": null,
+      "reviewState": "needs-review"
+    },
+    {
+      "candidateId": "sba-mcdonald-s-restaurant-sackville-517-sackville-drive-lower-sackville-ns",
+      "candidateName": "McDonald's Restaurant Sackville",
+      "sourceId": "sackville-business-food-drink",
+      "sourceUrl": "https://sackvillebusiness.com/shops-services/mcdonalds-restaurant-sackville",
+      "candidateAddress": "517 Sackville Drive, Lower Sackville, NS",
+      "candidateWebsite": "http://www.mcdonalds.ca/",
+      "state": "unresolved",
+      "matchedRestaurantId": null,
+      "matchedRestaurantName": null,
+      "score": 0,
+      "evidence": [],
+      "conflicts": [],
+      "distanceMeters": null,
+      "addressSimilarity": 0,
+      "scoreMargin": 0,
       "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
@@ -22672,20 +22404,16 @@
       "sourceUrl": "https://sackvillebusiness.com/shops-services/pita-pit",
       "candidateAddress": "745 Sackville Drive, Lower Sackville, NS",
       "candidateWebsite": "https://pitapit.ca/",
-      "state": "unresolved_conflict",
+      "state": "unresolved",
       "matchedRestaurantId": null,
       "matchedRestaurantName": null,
-      "score": 15,
-      "evidence": [
-        "exact_normalized_name"
-      ],
-      "conflicts": [
-        "street_number_conflict"
-      ],
+      "score": 0,
+      "evidence": [],
+      "conflicts": [],
       "distanceMeters": null,
       "addressSimilarity": 0,
       "scoreMargin": 0,
-      "nextBestRestaurantId": "osm-node-4915907943-pita-pit",
+      "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
     {
@@ -22695,22 +22423,16 @@
       "sourceUrl": "https://sackvillebusiness.com/shops-services/pizza-hut",
       "candidateAddress": "752 Sackville Drive, Lower Sackville, NS",
       "candidateWebsite": "http://www.pizzahut.ca/",
-      "state": "unresolved_conflict",
+      "state": "unresolved",
       "matchedRestaurantId": null,
       "matchedRestaurantName": null,
-      "score": 45,
-      "evidence": [
-        "exact_normalized_name",
-        "exact_official_domain"
-      ],
-      "conflicts": [
-        "street_number_conflict",
-        "phone_conflict"
-      ],
+      "score": 0,
+      "evidence": [],
+      "conflicts": [],
       "distanceMeters": null,
       "addressSimilarity": 0,
       "scoreMargin": 0,
-      "nextBestRestaurantId": "osm-way-358577265-pizza-hut",
+      "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
     {
@@ -22720,22 +22442,16 @@
       "sourceUrl": "https://sackvillebusiness.com/shops-services/pizza-pizza",
       "candidateAddress": "601 Sackville Drive, Unit 7B, Lower Sackville, NS",
       "candidateWebsite": "https://www.pizzapizza.ca/store/1/delivery",
-      "state": "unresolved_conflict",
+      "state": "unresolved",
       "matchedRestaurantId": null,
       "matchedRestaurantName": null,
-      "score": 110,
-      "evidence": [
-        "exact_normalized_name",
-        "exact_phone",
-        "exact_official_domain"
-      ],
-      "conflicts": [
-        "street_number_conflict"
-      ],
+      "score": 0,
+      "evidence": [],
+      "conflicts": [],
       "distanceMeters": null,
       "addressSimilarity": 0,
       "scoreMargin": 0,
-      "nextBestRestaurantId": "osm-node-5863968665-pizza-pizza",
+      "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
     {
@@ -22868,22 +22584,16 @@
       "sourceUrl": "https://sackvillebusiness.com/shops-services/starbucks",
       "candidateAddress": "745 Sackville Drive, Lower Sackville, NS",
       "candidateWebsite": "https://www.starbucks.ca/store-locator/store/1044903/atlantic-superstore-lower-sack-745-sackville-drive-lower-sackville-ns-b-4-e-2-r-2",
-      "state": "unresolved_conflict",
+      "state": "unresolved",
       "matchedRestaurantId": null,
       "matchedRestaurantName": null,
-      "score": 45,
-      "evidence": [
-        "exact_normalized_name",
-        "exact_official_domain"
-      ],
-      "conflicts": [
-        "street_number_conflict",
-        "phone_conflict"
-      ],
+      "score": 0,
+      "evidence": [],
+      "conflicts": [],
       "distanceMeters": null,
       "addressSimilarity": 0,
       "scoreMargin": 0,
-      "nextBestRestaurantId": "osm-node-11699350869-starbucks",
+      "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
     {
@@ -22893,22 +22603,16 @@
       "sourceUrl": "https://sackvillebusiness.com/shops-services/starbucks-0",
       "candidateAddress": "858 Sackville Drive, Lower Sackville, NS",
       "candidateWebsite": "https://www.starbucks.ca/",
-      "state": "unresolved_conflict",
+      "state": "unresolved",
       "matchedRestaurantId": null,
       "matchedRestaurantName": null,
-      "score": 45,
-      "evidence": [
-        "exact_normalized_name",
-        "exact_official_domain"
-      ],
-      "conflicts": [
-        "street_number_conflict",
-        "phone_conflict"
-      ],
+      "score": 0,
+      "evidence": [],
+      "conflicts": [],
       "distanceMeters": null,
       "addressSimilarity": 0,
       "scoreMargin": 0,
-      "nextBestRestaurantId": "osm-node-11699350869-starbucks",
+      "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
     {
@@ -22956,19 +22660,15 @@
       "sourceUrl": "https://sackvillebusiness.com/shops-services/thai-express",
       "candidateAddress": "720 Sackville Drive, Lower Sackville, NS",
       "candidateWebsite": "https://www.thaiexpress.ca/",
-      "state": "unresolved_conflict",
+      "state": "unresolved",
       "matchedRestaurantId": null,
       "matchedRestaurantName": null,
-      "score": 15,
-      "evidence": [
-        "exact_normalized_name"
-      ],
-      "conflicts": [
-        "street_number_conflict"
-      ],
+      "score": 0,
+      "evidence": [],
+      "conflicts": [],
       "distanceMeters": null,
       "addressSimilarity": 0,
-      "scoreMargin": 15,
+      "scoreMargin": 0,
       "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
@@ -22979,6 +22679,44 @@
       "sourceUrl": "https://sackvillebusiness.com/shops-services/pink-piano-cafe-lounge",
       "candidateAddress": "585 Sackville Drive, Lower Sackville, NS",
       "candidateWebsite": "https://thepinkpianocafe.com/",
+      "state": "unresolved",
+      "matchedRestaurantId": null,
+      "matchedRestaurantName": null,
+      "score": 0,
+      "evidence": [],
+      "conflicts": [],
+      "distanceMeters": null,
+      "addressSimilarity": 0,
+      "scoreMargin": 0,
+      "nextBestRestaurantId": null,
+      "reviewState": "needs-review"
+    },
+    {
+      "candidateId": "sba-tim-hortons-810-sackville-drive-lower-sackville-ns",
+      "candidateName": "Tim Hortons",
+      "sourceId": "sackville-business-food-drink",
+      "sourceUrl": "https://sackvillebusiness.com/shops-services/tim-hortons",
+      "candidateAddress": "810 Sackville Drive, Lower Sackville, NS",
+      "candidateWebsite": "http://www.timhortons.com/",
+      "state": "unresolved",
+      "matchedRestaurantId": null,
+      "matchedRestaurantName": null,
+      "score": 0,
+      "evidence": [],
+      "conflicts": [],
+      "distanceMeters": null,
+      "addressSimilarity": 0,
+      "scoreMargin": 0,
+      "nextBestRestaurantId": null,
+      "reviewState": "needs-review"
+    },
+    {
+      "candidateId": "sba-tim-hortons-629-sackville-drive-lower-sackville-ns",
+      "candidateName": "Tim Hortons",
+      "sourceId": "sackville-business-food-drink",
+      "sourceUrl": "https://sackvillebusiness.com/shops-services/tim-hortons-0",
+      "candidateAddress": "629 Sackville Drive, Lower Sackville, NS",
+      "candidateWebsite": "https://www.timhortons.com/",
       "state": "unresolved",
       "matchedRestaurantId": null,
       "matchedRestaurantName": null,
@@ -23017,19 +22755,15 @@
       "sourceUrl": "https://sackvillebusiness.com/shops-services/villa-madina",
       "candidateAddress": "858 Sackville Drive, Lower Sackville, NS",
       "candidateWebsite": "https://villamadina.com/",
-      "state": "unresolved_conflict",
+      "state": "unresolved",
       "matchedRestaurantId": null,
       "matchedRestaurantName": null,
-      "score": 15,
-      "evidence": [
-        "exact_normalized_name"
-      ],
-      "conflicts": [
-        "street_number_conflict"
-      ],
+      "score": 0,
+      "evidence": [],
+      "conflicts": [],
       "distanceMeters": null,
       "addressSimilarity": 0,
-      "scoreMargin": 15,
+      "scoreMargin": 0,
       "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
@@ -23063,22 +22797,16 @@
       "sourceUrl": "https://sackvillebusiness.com/shops-services/wendys",
       "candidateAddress": "720 Sackville Drive, Lower Sackville, NS",
       "candidateWebsite": "http://www.wendys.com/en-ca",
-      "state": "unresolved_conflict",
+      "state": "unresolved",
       "matchedRestaurantId": null,
       "matchedRestaurantName": null,
-      "score": 45,
-      "evidence": [
-        "exact_normalized_name",
-        "exact_official_domain"
-      ],
-      "conflicts": [
-        "street_number_conflict",
-        "phone_conflict"
-      ],
+      "score": 0,
+      "evidence": [],
+      "conflicts": [],
       "distanceMeters": null,
       "addressSimilarity": 0,
-      "scoreMargin": 30,
-      "nextBestRestaurantId": "osm-node-4924076574-wendy-s",
+      "scoreMargin": 0,
+      "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
     {
@@ -23107,18 +22835,16 @@
       "sourceUrl": "https://sackvillebusiness.com/food-drink-guide",
       "candidateAddress": "774 Sackville Drive, Lower Sackville, NS",
       "candidateWebsite": null,
-      "state": "name_only_review",
+      "state": "unresolved",
       "matchedRestaurantId": null,
       "matchedRestaurantName": null,
-      "score": 35,
-      "evidence": [
-        "exact_normalized_name"
-      ],
+      "score": 0,
+      "evidence": [],
       "conflicts": [],
       "distanceMeters": null,
       "addressSimilarity": 0,
       "scoreMargin": 0,
-      "nextBestRestaurantId": "osm-way-171149714-a-and-w",
+      "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
     {
@@ -23190,20 +22916,16 @@
       "sourceUrl": "https://sackvillebusiness.com/food-drink-guide",
       "candidateAddress": "720 Sackville Drive, Lower Sackville, NS",
       "candidateWebsite": null,
-      "state": "unresolved_conflict",
+      "state": "unresolved",
       "matchedRestaurantId": null,
       "matchedRestaurantName": null,
-      "score": 15,
-      "evidence": [
-        "exact_normalized_name"
-      ],
-      "conflicts": [
-        "street_number_conflict"
-      ],
+      "score": 0,
+      "evidence": [],
+      "conflicts": [],
       "distanceMeters": null,
       "addressSimilarity": 0,
       "scoreMargin": 0,
-      "nextBestRestaurantId": "osm-node-7139174643-booster-juice",
+      "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
     {
@@ -23213,18 +22935,16 @@
       "sourceUrl": "https://sackvillebusiness.com/food-drink-guide",
       "candidateAddress": "710 Sackville Drive, Lower Sackville, NS",
       "candidateWebsite": null,
-      "state": "name_only_review",
+      "state": "unresolved",
       "matchedRestaurantId": null,
       "matchedRestaurantName": null,
-      "score": 35,
-      "evidence": [
-        "exact_normalized_name"
-      ],
+      "score": 0,
+      "evidence": [],
       "conflicts": [],
       "distanceMeters": null,
       "addressSimilarity": 0,
-      "scoreMargin": 20,
-      "nextBestRestaurantId": "osm-node-1139389219-boston-pizza",
+      "scoreMargin": 0,
+      "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
     {
@@ -23234,18 +22954,16 @@
       "sourceUrl": "https://sackvillebusiness.com/food-drink-guide",
       "candidateAddress": "641 Sackville Drive, Lower Sackville, NS",
       "candidateWebsite": null,
-      "state": "name_only_review",
+      "state": "unresolved",
       "matchedRestaurantId": null,
       "matchedRestaurantName": null,
-      "score": 35,
-      "evidence": [
-        "exact_normalized_name"
-      ],
+      "score": 0,
+      "evidence": [],
       "conflicts": [],
       "distanceMeters": null,
       "addressSimilarity": 0,
       "scoreMargin": 0,
-      "nextBestRestaurantId": "osm-way-171149719-burger-king",
+      "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
     {
@@ -23278,20 +22996,16 @@
       "sourceUrl": "https://sackvillebusiness.com/food-drink-guide",
       "candidateAddress": "752 Sackville Drive, Lower Sackville, NS",
       "candidateWebsite": null,
-      "state": "unresolved_conflict",
+      "state": "unresolved",
       "matchedRestaurantId": null,
       "matchedRestaurantName": null,
-      "score": 15,
-      "evidence": [
-        "exact_normalized_name"
-      ],
-      "conflicts": [
-        "street_number_conflict"
-      ],
+      "score": 0,
+      "evidence": [],
+      "conflicts": [],
       "distanceMeters": null,
       "addressSimilarity": 0,
       "scoreMargin": 0,
-      "nextBestRestaurantId": "osm-way-224130096-dairy-queen",
+      "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
     {
@@ -23400,17 +23114,15 @@
       "sourceUrl": "https://sackvillebusiness.com/food-drink-guide",
       "candidateAddress": "857 Sackville Drive, Lower Sackville, NS",
       "candidateWebsite": null,
-      "state": "name_only_review",
+      "state": "unresolved",
       "matchedRestaurantId": null,
       "matchedRestaurantName": null,
-      "score": 35,
-      "evidence": [
-        "exact_normalized_name"
-      ],
+      "score": 0,
+      "evidence": [],
       "conflicts": [],
       "distanceMeters": null,
       "addressSimilarity": 0,
-      "scoreMargin": 35,
+      "scoreMargin": 0,
       "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
@@ -23522,20 +23234,16 @@
       "sourceUrl": "https://sackvillebusiness.com/food-drink-guide",
       "candidateAddress": "679 Sackville Drive, Lower Sackville, NS",
       "candidateWebsite": null,
-      "state": "unresolved_conflict",
+      "state": "unresolved",
       "matchedRestaurantId": null,
       "matchedRestaurantName": null,
-      "score": 15,
-      "evidence": [
-        "exact_normalized_name"
-      ],
-      "conflicts": [
-        "street_number_conflict"
-      ],
+      "score": 0,
+      "evidence": [],
+      "conflicts": [],
       "distanceMeters": null,
       "addressSimilarity": 0,
       "scoreMargin": 0,
-      "nextBestRestaurantId": "osm-way-240110430-kfc",
+      "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
     {
@@ -23606,17 +23314,15 @@
       "sourceUrl": "https://sackvillebusiness.com/food-drink-guide",
       "candidateAddress": "799 Sackville Drive, Lower Sackville, NS",
       "candidateWebsite": null,
-      "state": "name_only_review",
+      "state": "unresolved",
       "matchedRestaurantId": null,
       "matchedRestaurantName": null,
-      "score": 35,
-      "evidence": [
-        "exact_normalized_name"
-      ],
+      "score": 0,
+      "evidence": [],
       "conflicts": [],
       "distanceMeters": null,
       "addressSimilarity": 0,
-      "scoreMargin": 35,
+      "scoreMargin": 0,
       "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
@@ -23646,18 +23352,16 @@
       "sourceUrl": "https://sackvillebusiness.com/food-drink-guide",
       "candidateAddress": "517 Sackville Drive, Lower Sackville, NS",
       "candidateWebsite": null,
-      "state": "name_only_review",
+      "state": "unresolved",
       "matchedRestaurantId": null,
       "matchedRestaurantName": null,
-      "score": 35,
-      "evidence": [
-        "exact_normalized_name"
-      ],
+      "score": 0,
+      "evidence": [],
       "conflicts": [],
       "distanceMeters": null,
       "addressSimilarity": 0,
-      "scoreMargin": 20,
-      "nextBestRestaurantId": "osm-node-2712689447-mcdonald-s",
+      "scoreMargin": 0,
+      "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
     {
@@ -23726,20 +23430,16 @@
       "sourceUrl": "https://sackvillebusiness.com/food-drink-guide",
       "candidateAddress": "745 Sackville Drive, Lower Sackville, NS",
       "candidateWebsite": null,
-      "state": "unresolved_conflict",
+      "state": "unresolved",
       "matchedRestaurantId": null,
       "matchedRestaurantName": null,
-      "score": 15,
-      "evidence": [
-        "exact_normalized_name"
-      ],
-      "conflicts": [
-        "street_number_conflict"
-      ],
+      "score": 0,
+      "evidence": [],
+      "conflicts": [],
       "distanceMeters": null,
       "addressSimilarity": 0,
       "scoreMargin": 0,
-      "nextBestRestaurantId": "osm-node-4915907943-pita-pit",
+      "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
     {
@@ -23888,18 +23588,16 @@
       "sourceUrl": "https://sackvillebusiness.com/food-drink-guide",
       "candidateAddress": "794 Sackville Drive, Lower Sackville, NS",
       "candidateWebsite": null,
-      "state": "name_only_review",
+      "state": "unresolved",
       "matchedRestaurantId": null,
       "matchedRestaurantName": null,
-      "score": 35,
-      "evidence": [
-        "exact_normalized_name"
-      ],
+      "score": 0,
+      "evidence": [],
       "conflicts": [],
       "distanceMeters": null,
       "addressSimilarity": 0,
       "scoreMargin": 0,
-      "nextBestRestaurantId": "osm-node-11526163887-subway",
+      "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
     {
@@ -23928,19 +23626,15 @@
       "sourceUrl": "https://sackvillebusiness.com/food-drink-guide",
       "candidateAddress": "720 Sackville Drive, Lower Sackville, NS",
       "candidateWebsite": null,
-      "state": "unresolved_conflict",
+      "state": "unresolved",
       "matchedRestaurantId": null,
       "matchedRestaurantName": null,
-      "score": 15,
-      "evidence": [
-        "exact_normalized_name"
-      ],
-      "conflicts": [
-        "street_number_conflict"
-      ],
+      "score": 0,
+      "evidence": [],
+      "conflicts": [],
       "distanceMeters": null,
       "addressSimilarity": 0,
-      "scoreMargin": 15,
+      "scoreMargin": 0,
       "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
@@ -23970,18 +23664,16 @@
       "sourceUrl": "https://sackvillebusiness.com/food-drink-guide",
       "candidateAddress": "629 Sackville Drive, Lower Sackville, NS",
       "candidateWebsite": null,
-      "state": "name_only_review",
+      "state": "unresolved",
       "matchedRestaurantId": null,
       "matchedRestaurantName": null,
-      "score": 35,
-      "evidence": [
-        "exact_normalized_name"
-      ],
+      "score": 0,
+      "evidence": [],
       "conflicts": [],
       "distanceMeters": null,
       "addressSimilarity": 0,
       "scoreMargin": 0,
-      "nextBestRestaurantId": "osm-node-2737126855-tim-hortons",
+      "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
     {
@@ -23991,18 +23683,16 @@
       "sourceUrl": "https://sackvillebusiness.com/food-drink-guide",
       "candidateAddress": "745 Sackville Drive, Lower Sackville, NS",
       "candidateWebsite": null,
-      "state": "name_only_review",
+      "state": "unresolved",
       "matchedRestaurantId": null,
       "matchedRestaurantName": null,
-      "score": 35,
-      "evidence": [
-        "exact_normalized_name"
-      ],
+      "score": 0,
+      "evidence": [],
       "conflicts": [],
       "distanceMeters": null,
       "addressSimilarity": 0,
       "scoreMargin": 0,
-      "nextBestRestaurantId": "osm-node-2737126855-tim-hortons",
+      "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
     {
@@ -24012,18 +23702,16 @@
       "sourceUrl": "https://sackvillebusiness.com/food-drink-guide",
       "candidateAddress": "810 Sackville Drive, Lower Sackville, NS",
       "candidateWebsite": null,
-      "state": "name_only_review",
+      "state": "unresolved",
       "matchedRestaurantId": null,
       "matchedRestaurantName": null,
-      "score": 35,
-      "evidence": [
-        "exact_normalized_name"
-      ],
+      "score": 0,
+      "evidence": [],
       "conflicts": [],
       "distanceMeters": null,
       "addressSimilarity": 0,
       "scoreMargin": 0,
-      "nextBestRestaurantId": "osm-node-2737126855-tim-hortons",
+      "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
     {
@@ -24075,20 +23763,16 @@
       "sourceUrl": "https://sackvillebusiness.com/food-drink-guide",
       "candidateAddress": "720 Sackville Drive, Lower Sackville, NS",
       "candidateWebsite": null,
-      "state": "unresolved_conflict",
+      "state": "unresolved",
       "matchedRestaurantId": null,
       "matchedRestaurantName": null,
-      "score": 15,
-      "evidence": [
-        "exact_normalized_name"
-      ],
-      "conflicts": [
-        "street_number_conflict"
-      ],
+      "score": 0,
+      "evidence": [],
+      "conflicts": [],
       "distanceMeters": null,
       "addressSimilarity": 0,
       "scoreMargin": 0,
-      "nextBestRestaurantId": "osm-way-173999394-wendy-s",
+      "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
     {
@@ -24198,17 +23882,15 @@
       "sourceUrl": "https://bedfordplacemall.com/dining.php",
       "candidateAddress": "1658 Bedford Highway, Bedford, NS B4A 2X9",
       "candidateWebsite": "https://pursimple.com/restaurant/bedford/",
-      "state": "name_only_review",
+      "state": "unresolved",
       "matchedRestaurantId": null,
       "matchedRestaurantName": null,
-      "score": 35,
-      "evidence": [
-        "exact_normalized_name"
-      ],
+      "score": 0,
+      "evidence": [],
       "conflicts": [],
       "distanceMeters": null,
       "addressSimilarity": 0,
-      "scoreMargin": 35,
+      "scoreMargin": 0,
       "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
@@ -24238,20 +23920,16 @@
       "sourceUrl": "https://bedfordplacemall.com/dining.php",
       "candidateAddress": "1658 Bedford Highway, Bedford, NS B4A 2X9",
       "candidateWebsite": "http://www.swisschalet.com/",
-      "state": "unresolved_conflict",
+      "state": "unresolved",
       "matchedRestaurantId": null,
       "matchedRestaurantName": null,
-      "score": 15,
-      "evidence": [
-        "exact_normalized_name"
-      ],
-      "conflicts": [
-        "street_number_conflict"
-      ],
+      "score": 0,
+      "evidence": [],
+      "conflicts": [],
       "distanceMeters": null,
       "addressSimilarity": 0,
       "scoreMargin": 0,
-      "nextBestRestaurantId": "osm-way-366157259-swiss-chalet",
+      "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
     {
@@ -24668,6 +24346,27 @@
       "reviewState": "needs-review"
     },
     {
+      "candidateId": "qrmda-domino-s-pizza-6024-quinpool-rd-halifax-ns",
+      "candidateName": "Domino’s Pizza",
+      "sourceId": "quinpool-road-food-drink",
+      "sourceUrl": "https://quinpoolroad.ca/member/dominos-pizza/",
+      "candidateAddress": "6024 Quinpool Rd, Halifax, NS",
+      "candidateWebsite": "https://pizza.dominos.ca/Halifax-NS-10982/",
+      "state": "non_name_evidence_review",
+      "matchedRestaurantId": null,
+      "matchedRestaurantName": null,
+      "score": 35,
+      "evidence": [
+        "compatible_street_address"
+      ],
+      "conflicts": [],
+      "distanceMeters": null,
+      "addressSimilarity": 1,
+      "scoreMargin": 0,
+      "nextBestRestaurantId": "osm-node-3799413958-relish-gourmet-burgers",
+      "reviewState": "needs-review"
+    },
+    {
       "candidateId": "qrmda-east-coast-bakery-6257-quinpool-rd-halifax-ns",
       "candidateName": "East Coast Bakery",
       "sourceId": "quinpool-road-food-drink",
@@ -24751,23 +24450,59 @@
       "reviewState": "needs-review"
     },
     {
+      "candidateId": "qrmda-kfc-6310-quinpool-rd-halifax-ns",
+      "candidateName": "​KFC",
+      "sourceId": "quinpool-road-food-drink",
+      "sourceUrl": "https://quinpoolroad.ca/member/kfc/",
+      "candidateAddress": "6310 Quinpool Rd, Halifax, NS",
+      "candidateWebsite": "https://www.kfc.ca/find-a-kfc",
+      "state": "unresolved",
+      "matchedRestaurantId": null,
+      "matchedRestaurantName": null,
+      "score": 0,
+      "evidence": [],
+      "conflicts": [],
+      "distanceMeters": null,
+      "addressSimilarity": 0,
+      "scoreMargin": 0,
+      "nextBestRestaurantId": null,
+      "reviewState": "needs-review"
+    },
+    {
       "candidateId": "qrmda-mary-brown-s-6140-quinpool-road-halifax-ns-b3l-1a3",
       "candidateName": "Mary Brown’s",
       "sourceId": "quinpool-road-food-drink",
       "sourceUrl": "https://quinpoolroad.ca/member/mary-browns/",
       "candidateAddress": "6140 Quinpool Road, Halifax, NS B3L 1A3",
       "candidateWebsite": "https://marybrowns.com/",
-      "state": "name_only_review",
+      "state": "unresolved",
       "matchedRestaurantId": null,
       "matchedRestaurantName": null,
-      "score": 35,
-      "evidence": [
-        "exact_normalized_name"
-      ],
+      "score": 0,
+      "evidence": [],
       "conflicts": [],
       "distanceMeters": null,
       "addressSimilarity": 0,
-      "scoreMargin": 35,
+      "scoreMargin": 0,
+      "nextBestRestaurantId": null,
+      "reviewState": "needs-review"
+    },
+    {
+      "candidateId": "qrmda-mcdonald-s-6304-quinpool-road-halifax-ns",
+      "candidateName": "McDonald’s",
+      "sourceId": "quinpool-road-food-drink",
+      "sourceUrl": "https://quinpoolroad.ca/member/mcdonalds/",
+      "candidateAddress": "6304 Quinpool Road, Halifax, NS",
+      "candidateWebsite": "https://www.mcdonalds.com/ca/en-ca.html",
+      "state": "unresolved",
+      "matchedRestaurantId": null,
+      "matchedRestaurantName": null,
+      "score": 0,
+      "evidence": [],
+      "conflicts": [],
+      "distanceMeters": null,
+      "addressSimilarity": 0,
+      "scoreMargin": 0,
       "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
@@ -24793,6 +24528,25 @@
       "addressSimilarity": 0.333,
       "scoreMargin": 30,
       "nextBestRestaurantId": "osm-node-2704746819-morris-east",
+      "reviewState": "needs-review"
+    },
+    {
+      "candidateId": "qrmda-pizza-hut-6310-quinpool-rd-halifax-ns",
+      "candidateName": "Pizza Hut",
+      "sourceId": "quinpool-road-food-drink",
+      "sourceUrl": "https://quinpoolroad.ca/member/pizza-hut/",
+      "candidateAddress": "6310 Quinpool Rd, Halifax, NS",
+      "candidateWebsite": "https://www.pizzahut.ca/huts/ca-1/R30102/",
+      "state": "unresolved",
+      "matchedRestaurantId": null,
+      "matchedRestaurantName": null,
+      "score": 0,
+      "evidence": [],
+      "conflicts": [],
+      "distanceMeters": null,
+      "addressSimilarity": 0,
+      "scoreMargin": 0,
+      "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
     {
@@ -24945,18 +24699,16 @@
       "sourceUrl": "https://quinpoolroad.ca/member/tim-hortons/",
       "candidateAddress": "6455 Quinpool Rd, Halifax, NS",
       "candidateWebsite": "https://www.timhortons.ca/",
-      "state": "non_name_evidence_review",
+      "state": "unresolved",
       "matchedRestaurantId": null,
       "matchedRestaurantName": null,
-      "score": 35,
-      "evidence": [
-        "compatible_street_address"
-      ],
+      "score": 0,
+      "evidence": [],
       "conflicts": [],
       "distanceMeters": null,
-      "addressSimilarity": 1,
-      "scoreMargin": 5,
-      "nextBestRestaurantId": "osm-node-31794073-tim-hortons",
+      "addressSimilarity": 0,
+      "scoreMargin": 0,
+      "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
     {
@@ -25024,6 +24776,29 @@
       "reviewState": "needs-review"
     },
     {
+      "candidateId": "qrmda-wendy-s-6169-quinpool-rd-halifax-ns",
+      "candidateName": "Wendy’s",
+      "sourceId": "quinpool-road-food-drink",
+      "sourceUrl": "https://quinpoolroad.ca/member/wendys/",
+      "candidateAddress": "6169 Quinpool Rd, Halifax, NS",
+      "candidateWebsite": "https://www.wendys.com/en-ca/home",
+      "state": "unresolved_conflict",
+      "matchedRestaurantId": null,
+      "matchedRestaurantName": null,
+      "score": 15,
+      "evidence": [
+        "compatible_street_address"
+      ],
+      "conflicts": [
+        "domain_conflict"
+      ],
+      "distanceMeters": null,
+      "addressSimilarity": 1,
+      "scoreMargin": 15,
+      "nextBestRestaurantId": null,
+      "reviewState": "needs-review"
+    },
+    {
       "candidateId": "qrmda-westender-coffee-6418-quinpool-road-halifax-ns",
       "candidateName": "Westender Coffee",
       "sourceId": "quinpool-road-food-drink",
@@ -25046,27 +24821,43 @@
       "reviewState": "needs-review"
     },
     {
+      "candidateId": "rans-starbucks-coffee-halifax-professional-center-5991-spring-garden-road-halifax",
+      "candidateName": "Starbucks Coffee (Halifax Professional Center)",
+      "sourceId": "rans-restaurant-directory",
+      "sourceUrl": "https://rans.ca/restaurants/starbucks-coffee-halifax-professional-center-22/",
+      "candidateAddress": "5991 Spring Garden Road, Halifax",
+      "candidateWebsite": "http://www.starbucks.ca/",
+      "state": "non_name_evidence_review",
+      "matchedRestaurantId": null,
+      "matchedRestaurantName": null,
+      "score": 20,
+      "evidence": [
+        "high_address_similarity"
+      ],
+      "conflicts": [],
+      "distanceMeters": null,
+      "addressSimilarity": 0.75,
+      "scoreMargin": 0,
+      "nextBestRestaurantId": "osm-node-26041177-your-father-s-moustache",
+      "reviewState": "needs-review"
+    },
+    {
       "candidateId": "rans-starbucks-coffee-marriott-halifax-harbourfront-1919-upper-water-st-halifax",
       "candidateName": "Starbucks Coffee (Marriott Halifax Harbourfront)",
       "sourceId": "rans-restaurant-directory",
       "sourceUrl": "https://rans.ca/restaurants/starbucks-coffee-marriott-halifax-harbourfront-22/",
       "candidateAddress": "1919 Upper Water St, Halifax",
       "candidateWebsite": "http://www.starbucks.ca/",
-      "state": "unresolved_conflict",
+      "state": "unresolved",
       "matchedRestaurantId": null,
       "matchedRestaurantName": null,
-      "score": 45,
-      "evidence": [
-        "compatible_name",
-        "exact_official_domain"
-      ],
-      "conflicts": [
-        "street_number_conflict"
-      ],
+      "score": 0,
+      "evidence": [],
+      "conflicts": [],
       "distanceMeters": null,
       "addressSimilarity": 0,
       "scoreMargin": 0,
-      "nextBestRestaurantId": "osm-node-11699350869-starbucks",
+      "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
     {
@@ -25076,21 +24867,16 @@
       "sourceUrl": "https://rans.ca/restaurants/starbucks-coffee-halifax-stanfield-intl-airport-22/",
       "candidateAddress": "1 Bell Boulevard",
       "candidateWebsite": "http://www.starbucks.ca/",
-      "state": "unresolved_conflict",
+      "state": "unresolved",
       "matchedRestaurantId": null,
       "matchedRestaurantName": null,
-      "score": 45,
-      "evidence": [
-        "compatible_name",
-        "exact_official_domain"
-      ],
-      "conflicts": [
-        "street_number_conflict"
-      ],
+      "score": 0,
+      "evidence": [],
+      "conflicts": [],
       "distanceMeters": null,
       "addressSimilarity": 0,
       "scoreMargin": 0,
-      "nextBestRestaurantId": "osm-node-11699350869-starbucks",
+      "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
     {
@@ -25121,19 +24907,18 @@
       "sourceUrl": "https://rans.ca/restaurants/pizza-delight-downtown-halifax-22/",
       "candidateAddress": "5680 Spring Garden Rd, Halifax",
       "candidateWebsite": null,
-      "state": "unresolved",
+      "state": "non_name_evidence_review",
       "matchedRestaurantId": null,
       "matchedRestaurantName": null,
-      "score": 50,
+      "score": 35,
       "evidence": [
-        "compatible_name",
         "compatible_street_address"
       ],
       "conflicts": [],
       "distanceMeters": null,
       "addressSimilarity": 1,
-      "scoreMargin": 15,
-      "nextBestRestaurantId": "osm-node-3791832157-turkish-delight",
+      "scoreMargin": 0,
+      "nextBestRestaurantId": "osm-node-3791840157-krave-burger",
       "reviewState": "needs-review"
     },
     {
@@ -25153,8 +24938,8 @@
       "conflicts": [],
       "distanceMeters": null,
       "addressSimilarity": 0.75,
-      "scoreMargin": 0,
-      "nextBestRestaurantId": "osm-node-761848503-tim-hortons",
+      "scoreMargin": 20,
+      "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
     {
@@ -25207,14 +24992,12 @@
       "state": "unresolved",
       "matchedRestaurantId": null,
       "matchedRestaurantName": null,
-      "score": 15,
-      "evidence": [
-        "compatible_name"
-      ],
+      "score": 0,
+      "evidence": [],
       "conflicts": [],
       "distanceMeters": null,
-      "addressSimilarity": 0.667,
-      "scoreMargin": 15,
+      "addressSimilarity": 0,
+      "scoreMargin": 0,
       "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
@@ -25320,7 +25103,7 @@
       "distanceMeters": null,
       "addressSimilarity": 0.75,
       "scoreMargin": 0,
-      "nextBestRestaurantId": "osm-node-1819605596-subway",
+      "nextBestRestaurantId": "osm-node-4421306590-heppy-s-pie-lady",
       "reviewState": "needs-review"
     },
     {
@@ -25361,8 +25144,8 @@
       "conflicts": [],
       "distanceMeters": null,
       "addressSimilarity": 1,
-      "scoreMargin": 0,
-      "nextBestRestaurantId": "osm-node-9416778099-tarek-s-cafe",
+      "scoreMargin": 35,
+      "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
     {
@@ -25393,17 +25176,15 @@
       "sourceUrl": "https://rans.ca/restaurants/subway-halifax-fenwick-22/",
       "candidateAddress": "5560 Fenwick Street, Halifax",
       "candidateWebsite": null,
-      "state": "non_name_evidence_review",
+      "state": "unresolved",
       "matchedRestaurantId": null,
       "matchedRestaurantName": null,
-      "score": 35,
-      "evidence": [
-        "compatible_street_address"
-      ],
+      "score": 0,
+      "evidence": [],
       "conflicts": [],
       "distanceMeters": null,
-      "addressSimilarity": 1,
-      "scoreMargin": 35,
+      "addressSimilarity": 0,
+      "scoreMargin": 0,
       "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
@@ -25417,15 +25198,12 @@
       "state": "unresolved",
       "matchedRestaurantId": null,
       "matchedRestaurantName": null,
-      "score": 50,
-      "evidence": [
-        "compatible_name",
-        "compatible_street_address"
-      ],
+      "score": 0,
+      "evidence": [],
       "conflicts": [],
       "distanceMeters": null,
-      "addressSimilarity": 1,
-      "scoreMargin": 50,
+      "addressSimilarity": 0,
+      "scoreMargin": 0,
       "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
@@ -25439,15 +25217,12 @@
       "state": "unresolved",
       "matchedRestaurantId": null,
       "matchedRestaurantName": null,
-      "score": 50,
-      "evidence": [
-        "compatible_name",
-        "compatible_street_address"
-      ],
+      "score": 0,
+      "evidence": [],
       "conflicts": [],
       "distanceMeters": null,
-      "addressSimilarity": 1,
-      "scoreMargin": 50,
+      "addressSimilarity": 0,
+      "scoreMargin": 0,
       "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
@@ -25468,8 +25243,8 @@
       "conflicts": [],
       "distanceMeters": null,
       "addressSimilarity": 0.75,
-      "scoreMargin": 0,
-      "nextBestRestaurantId": "osm-node-761848503-tim-hortons",
+      "scoreMargin": 20,
+      "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
     {
@@ -25482,14 +25257,12 @@
       "state": "unresolved",
       "matchedRestaurantId": null,
       "matchedRestaurantName": null,
-      "score": 15,
-      "evidence": [
-        "compatible_name"
-      ],
+      "score": 0,
+      "evidence": [],
       "conflicts": [],
       "distanceMeters": null,
       "addressSimilarity": 0,
-      "scoreMargin": 15,
+      "scoreMargin": 0,
       "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
@@ -26534,21 +26307,16 @@
       "sourceUrl": "https://rans.ca/restaurants/starbucks-coffee-dartmouth-crossing-22/",
       "candidateAddress": "32 Foulis Rd, Dartmouth",
       "candidateWebsite": "http://www.starbucks.ca/",
-      "state": "unresolved_conflict",
+      "state": "unresolved",
       "matchedRestaurantId": null,
       "matchedRestaurantName": null,
-      "score": 45,
-      "evidence": [
-        "compatible_name",
-        "exact_official_domain"
-      ],
-      "conflicts": [
-        "street_number_conflict"
-      ],
+      "score": 0,
+      "evidence": [],
+      "conflicts": [],
       "distanceMeters": null,
       "addressSimilarity": 0,
       "scoreMargin": 0,
-      "nextBestRestaurantId": "osm-node-11699350869-starbucks",
+      "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
     {
@@ -26606,8 +26374,8 @@
       "conflicts": [],
       "distanceMeters": null,
       "addressSimilarity": 0.667,
-      "scoreMargin": 0,
-      "nextBestRestaurantId": "osm-node-5150027725-100-cha-baa-tai",
+      "scoreMargin": 35,
+      "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
     {
@@ -26666,7 +26434,28 @@
       "distanceMeters": null,
       "addressSimilarity": 0.667,
       "scoreMargin": 0,
-      "nextBestRestaurantId": "osm-node-8066235495-kfc",
+      "nextBestRestaurantId": "osm-node-8066235507-jugo-juice",
+      "reviewState": "needs-review"
+    },
+    {
+      "candidateId": "rans-greco-pizza-dartmouth-westphal-100-main-st-dartmouth",
+      "candidateName": "Greco Pizza – Dartmouth (Westphal)",
+      "sourceId": "rans-restaurant-directory",
+      "sourceUrl": "https://rans.ca/restaurants/greco-pizza-dartmouth-westphal-22/",
+      "candidateAddress": "100 Main St, Dartmouth",
+      "candidateWebsite": "http://www.greco.ca/",
+      "state": "non_name_evidence_review",
+      "matchedRestaurantId": null,
+      "matchedRestaurantName": null,
+      "score": 35,
+      "evidence": [
+        "compatible_street_address"
+      ],
+      "conflicts": [],
+      "distanceMeters": null,
+      "addressSimilarity": 0.667,
+      "scoreMargin": 35,
+      "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
     {
@@ -26761,15 +26550,13 @@
       "state": "unresolved",
       "matchedRestaurantId": null,
       "matchedRestaurantName": null,
-      "score": 15,
-      "evidence": [
-        "compatible_name"
-      ],
+      "score": 0,
+      "evidence": [],
       "conflicts": [],
       "distanceMeters": null,
       "addressSimilarity": 0,
       "scoreMargin": 0,
-      "nextBestRestaurantId": "osm-node-5149749022-smitty-s",
+      "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
     {
@@ -26975,21 +26762,16 @@
       "sourceUrl": "https://rans.ca/restaurants/starbucks-coffee-bedford-highway-22/",
       "candidateAddress": "936 Bedford Highway, Bedford",
       "candidateWebsite": "http://www.starbucks.ca/",
-      "state": "unresolved_conflict",
+      "state": "unresolved",
       "matchedRestaurantId": null,
       "matchedRestaurantName": null,
-      "score": 45,
-      "evidence": [
-        "compatible_name",
-        "exact_official_domain"
-      ],
-      "conflicts": [
-        "street_number_conflict"
-      ],
+      "score": 0,
+      "evidence": [],
+      "conflicts": [],
       "distanceMeters": null,
       "addressSimilarity": 0,
       "scoreMargin": 0,
-      "nextBestRestaurantId": "osm-node-11699350869-starbucks",
+      "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
     {
@@ -27177,14 +26959,12 @@
       "state": "unresolved",
       "matchedRestaurantId": null,
       "matchedRestaurantName": null,
-      "score": 15,
-      "evidence": [
-        "compatible_name"
-      ],
+      "score": 0,
+      "evidence": [],
       "conflicts": [],
       "distanceMeters": null,
       "addressSimilarity": 0,
-      "scoreMargin": 15,
+      "scoreMargin": 0,
       "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
@@ -27195,21 +26975,16 @@
       "sourceUrl": "https://rans.ca/restaurants/pizza-hut-sackville-dr-22/",
       "candidateAddress": "752 Sackville Dr, Lower Sackville",
       "candidateWebsite": "http://www.pizzahut.ca/",
-      "state": "unresolved_conflict",
+      "state": "unresolved",
       "matchedRestaurantId": null,
       "matchedRestaurantName": null,
-      "score": 45,
-      "evidence": [
-        "compatible_name",
-        "exact_official_domain"
-      ],
-      "conflicts": [
-        "street_number_conflict"
-      ],
+      "score": 0,
+      "evidence": [],
+      "conflicts": [],
       "distanceMeters": null,
       "addressSimilarity": 0,
       "scoreMargin": 0,
-      "nextBestRestaurantId": "osm-way-358577265-pizza-hut",
+      "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
     {
@@ -27253,7 +27028,7 @@
       "distanceMeters": null,
       "addressSimilarity": 0.75,
       "scoreMargin": 0,
-      "nextBestRestaurantId": "osm-node-11699344555-osmow-s",
+      "nextBestRestaurantId": "osm-node-6910685885-mexi-s",
       "reviewState": "needs-review"
     },
     {
@@ -27263,18 +27038,16 @@
       "sourceUrl": "https://rans.ca/restaurants/pizza-delight-bayers-lake-22/",
       "candidateAddress": "209 Chain Lake Dr, Halifax",
       "candidateWebsite": "http://www.pizzadelight.com/",
-      "state": "non_name_evidence_review",
+      "state": "unresolved",
       "matchedRestaurantId": null,
       "matchedRestaurantName": null,
-      "score": 20,
-      "evidence": [
-        "high_address_similarity"
-      ],
+      "score": 0,
+      "evidence": [],
       "conflicts": [],
       "distanceMeters": null,
-      "addressSimilarity": 0.75,
+      "addressSimilarity": 0,
       "scoreMargin": 0,
-      "nextBestRestaurantId": "osm-way-173999385-jack-astor-s",
+      "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
     {
@@ -27303,19 +27076,20 @@
       "sourceUrl": "https://rans.ca/restaurants/dominos-pizza-clayton-park-22/",
       "candidateAddress": "480 Parkland Drive, Halifax",
       "candidateWebsite": "http://express.dominos.ca/",
-      "state": "unresolved",
+      "state": "unresolved_conflict",
       "matchedRestaurantId": null,
       "matchedRestaurantName": null,
-      "score": 50,
+      "score": 15,
       "evidence": [
-        "compatible_name",
         "compatible_street_address"
       ],
-      "conflicts": [],
+      "conflicts": [
+        "domain_conflict"
+      ],
       "distanceMeters": null,
       "addressSimilarity": 1,
-      "scoreMargin": 35,
-      "nextBestRestaurantId": "osm-node-11552510567-tako-sushi-and-ramen",
+      "scoreMargin": 0,
+      "nextBestRestaurantId": "osm-node-2702737179-9-nine",
       "reviewState": "needs-review"
     },
     {
@@ -27358,7 +27132,7 @@
       "distanceMeters": null,
       "addressSimilarity": 1,
       "scoreMargin": 0,
-      "nextBestRestaurantId": "osm-node-2716971767-lower-deck-bar-and-grill",
+      "nextBestRestaurantId": "osm-node-2716971768-king-of-donair",
       "reviewState": "needs-review"
     },
     {
@@ -27371,16 +27145,13 @@
       "state": "unresolved",
       "matchedRestaurantId": null,
       "matchedRestaurantName": null,
-      "score": 50,
-      "evidence": [
-        "compatible_name",
-        "compatible_street_address"
-      ],
+      "score": 0,
+      "evidence": [],
       "conflicts": [],
       "distanceMeters": null,
-      "addressSimilarity": 1,
-      "scoreMargin": 35,
-      "nextBestRestaurantId": "osm-node-2714920436-greco-pizza",
+      "addressSimilarity": 0,
+      "scoreMargin": 0,
+      "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
     {
@@ -27544,20 +27315,16 @@
       "sourceUrl": "https://bayerslakepark.com/osmows-shawarma",
       "candidateAddress": "1a Chain Lake Drive, Halifax, NS, Canada",
       "candidateWebsite": "https://osmows.com/shawarma-halifax",
-      "state": "non_name_evidence_review",
+      "state": "unresolved",
       "matchedRestaurantId": null,
       "matchedRestaurantName": null,
-      "score": 115,
-      "evidence": [
-        "exact_phone",
-        "exact_official_domain",
-        "high_address_similarity"
-      ],
+      "score": 0,
+      "evidence": [],
       "conflicts": [],
       "distanceMeters": null,
-      "addressSimilarity": 0.75,
-      "scoreMargin": 95,
-      "nextBestRestaurantId": "osm-way-171149709-tim-hortons",
+      "addressSimilarity": 0,
+      "scoreMargin": 0,
+      "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
     {
@@ -27608,22 +27375,16 @@
       "sourceUrl": "https://bayerslakepark.com/boston-pizza",
       "candidateAddress": "194A Chain Lake Drive, Halifax, Nova Scotia, Canada",
       "candidateWebsite": "https://www.bostonpizza.com/",
-      "state": "unresolved_conflict",
+      "state": "unresolved",
       "matchedRestaurantId": null,
       "matchedRestaurantName": null,
-      "score": 45,
-      "evidence": [
-        "exact_normalized_name",
-        "exact_official_domain"
-      ],
-      "conflicts": [
-        "street_number_conflict",
-        "phone_conflict"
-      ],
+      "score": 0,
+      "evidence": [],
+      "conflicts": [],
       "distanceMeters": null,
       "addressSimilarity": 0,
-      "scoreMargin": 10,
-      "nextBestRestaurantId": "osm-way-171149704-boston-pizza",
+      "scoreMargin": 0,
+      "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
     {
@@ -27636,16 +27397,13 @@
       "state": "unresolved",
       "matchedRestaurantId": null,
       "matchedRestaurantName": null,
-      "score": 50,
-      "evidence": [
-        "compatible_name",
-        "compatible_street_address"
-      ],
+      "score": 0,
+      "evidence": [],
       "conflicts": [],
       "distanceMeters": null,
-      "addressSimilarity": 1,
-      "scoreMargin": 30,
-      "nextBestRestaurantId": "osm-way-171149709-tim-hortons",
+      "addressSimilarity": 0,
+      "scoreMargin": 0,
+      "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
     {
@@ -27723,19 +27481,15 @@
       "sourceUrl": "https://www.downtowndartmouth.ca/fooddrink",
       "candidateAddress": "84 Portland Street Dartmouth, NS",
       "candidateWebsite": null,
-      "state": "unresolved_conflict",
+      "state": "unresolved",
       "matchedRestaurantId": null,
       "matchedRestaurantName": null,
-      "score": 15,
-      "evidence": [
-        "compatible_street_address"
-      ],
-      "conflicts": [
-        "phone_conflict"
-      ],
+      "score": 0,
+      "evidence": [],
+      "conflicts": [],
       "distanceMeters": null,
-      "addressSimilarity": 0.667,
-      "scoreMargin": 15,
+      "addressSimilarity": 0,
+      "scoreMargin": 0,
       "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
@@ -27859,19 +27613,15 @@
       "sourceUrl": "https://www.downtowndartmouth.ca/fooddrink",
       "candidateAddress": "41 Portland Street Dartmouth, NS",
       "candidateWebsite": "https://www.chanoeyspasta.com/",
-      "state": "unresolved_conflict",
+      "state": "unresolved",
       "matchedRestaurantId": null,
       "matchedRestaurantName": null,
-      "score": 15,
-      "evidence": [
-        "compatible_street_address"
-      ],
-      "conflicts": [
-        "domain_conflict"
-      ],
+      "score": 0,
+      "evidence": [],
+      "conflicts": [],
       "distanceMeters": null,
-      "addressSimilarity": 1,
-      "scoreMargin": 15,
+      "addressSimilarity": 0,
+      "scoreMargin": 0,
       "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
@@ -27992,7 +27742,7 @@
       "distanceMeters": null,
       "addressSimilarity": 1,
       "scoreMargin": 0,
-      "nextBestRestaurantId": "osm-node-8066235495-kfc",
+      "nextBestRestaurantId": "osm-node-8066235507-jugo-juice",
       "reviewState": "needs-review"
     },
     {
@@ -28023,18 +27773,16 @@
       "sourceUrl": "https://www.downtowndartmouth.ca/fooddrink",
       "candidateAddress": "106 Portland Street Dartmouth, NS",
       "candidateWebsite": "https://www.jacobslounge.com/",
-      "state": "non_name_evidence_review",
+      "state": "unresolved",
       "matchedRestaurantId": null,
       "matchedRestaurantName": null,
-      "score": 35,
-      "evidence": [
-        "compatible_street_address"
-      ],
+      "score": 0,
+      "evidence": [],
       "conflicts": [],
       "distanceMeters": null,
-      "addressSimilarity": 0.667,
+      "addressSimilarity": 0,
       "scoreMargin": 0,
-      "nextBestRestaurantId": "osm-node-4924076575-tim-hortons",
+      "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
     {
@@ -28480,18 +28228,16 @@
       "sourceUrl": "https://www.springgardenarea.com/eat-drink",
       "candidateAddress": null,
       "candidateWebsite": "http://www.chezcora.com/en",
-      "state": "non_name_evidence_review",
+      "state": "unresolved",
       "matchedRestaurantId": null,
       "matchedRestaurantName": null,
-      "score": 50,
-      "evidence": [
-        "exact_official_domain"
-      ],
+      "score": 0,
+      "evidence": [],
       "conflicts": [],
       "distanceMeters": null,
       "addressSimilarity": 0,
       "scoreMargin": 0,
-      "nextBestRestaurantId": "osm-node-3799422457-cora",
+      "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
     {
@@ -29118,19 +28864,16 @@
       "sourceUrl": "https://www.springgardenarea.com/eat-drink",
       "candidateAddress": null,
       "candidateWebsite": "https://www.timhortons.com/?lang=en&amp;region=CA",
-      "state": "name_only_review",
+      "state": "unresolved",
       "matchedRestaurantId": null,
       "matchedRestaurantName": null,
-      "score": 85,
-      "evidence": [
-        "exact_normalized_name",
-        "exact_official_domain"
-      ],
+      "score": 0,
+      "evidence": [],
       "conflicts": [],
       "distanceMeters": null,
       "addressSimilarity": 0,
       "scoreMargin": 0,
-      "nextBestRestaurantId": "osm-node-761848503-tim-hortons",
+      "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
     {
@@ -29277,19 +29020,16 @@
       "sourceUrl": "https://www.springgardenarea.com/eat-drink",
       "candidateAddress": null,
       "candidateWebsite": "https://www.starbucks.ca/",
-      "state": "name_only_review",
+      "state": "unresolved",
       "matchedRestaurantId": null,
       "matchedRestaurantName": null,
-      "score": 85,
-      "evidence": [
-        "exact_normalized_name",
-        "exact_official_domain"
-      ],
+      "score": 0,
+      "evidence": [],
       "conflicts": [],
       "distanceMeters": null,
       "addressSimilarity": 0,
       "scoreMargin": 0,
-      "nextBestRestaurantId": "osm-node-11699350869-starbucks",
+      "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
     {
@@ -29539,17 +29279,15 @@
       "sourceUrl": "https://www.springgardenarea.com/eat-drink",
       "candidateAddress": null,
       "candidateWebsite": "https://thaiexpress.ca/",
-      "state": "name_only_review",
+      "state": "unresolved",
       "matchedRestaurantId": null,
       "matchedRestaurantName": null,
-      "score": 35,
-      "evidence": [
-        "exact_normalized_name"
-      ],
+      "score": 0,
+      "evidence": [],
       "conflicts": [],
       "distanceMeters": null,
       "addressSimilarity": 0,
-      "scoreMargin": 35,
+      "scoreMargin": 0,
       "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
@@ -29598,19 +29336,16 @@
       "sourceUrl": "https://www.springgardenarea.com/eat-drink",
       "candidateAddress": null,
       "candidateWebsite": "https://www.mcdonalds.com/ca/en-ca.html",
-      "state": "name_only_review",
+      "state": "unresolved",
       "matchedRestaurantId": null,
       "matchedRestaurantName": null,
-      "score": 85,
-      "evidence": [
-        "exact_normalized_name",
-        "exact_official_domain"
-      ],
+      "score": 0,
+      "evidence": [],
       "conflicts": [],
       "distanceMeters": null,
       "addressSimilarity": 0,
       "scoreMargin": 0,
-      "nextBestRestaurantId": "osm-way-181621820-mcdonald-s",
+      "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
     {
@@ -29620,18 +29355,16 @@
       "sourceUrl": "https://www.springgardenarea.com/eat-drink",
       "candidateAddress": null,
       "candidateWebsite": "https://pitapit.ca/",
-      "state": "name_only_review",
+      "state": "unresolved",
       "matchedRestaurantId": null,
       "matchedRestaurantName": null,
-      "score": 35,
-      "evidence": [
-        "exact_normalized_name"
-      ],
+      "score": 0,
+      "evidence": [],
       "conflicts": [],
       "distanceMeters": null,
       "addressSimilarity": 0,
       "scoreMargin": 0,
-      "nextBestRestaurantId": "osm-node-2721708536-pita-pit",
+      "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
     {
@@ -29641,19 +29374,16 @@
       "sourceUrl": "https://www.springgardenarea.com/eat-drink",
       "candidateAddress": null,
       "candidateWebsite": "http://www.subway.com/en-ca/",
-      "state": "name_only_review",
+      "state": "unresolved",
       "matchedRestaurantId": null,
       "matchedRestaurantName": null,
-      "score": 85,
-      "evidence": [
-        "exact_normalized_name",
-        "exact_official_domain"
-      ],
+      "score": 0,
+      "evidence": [],
       "conflicts": [],
       "distanceMeters": null,
       "addressSimilarity": 0,
       "scoreMargin": 0,
-      "nextBestRestaurantId": "osm-node-1202688542-subway",
+      "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
     {
@@ -29815,18 +29545,16 @@
       "sourceUrl": "https://www.springgardenarea.com/eat-drink",
       "candidateAddress": null,
       "candidateWebsite": "https://www.dairyqueen.com/en-ca/",
-      "state": "name_only_review",
+      "state": "unresolved",
       "matchedRestaurantId": null,
       "matchedRestaurantName": null,
-      "score": 35,
-      "evidence": [
-        "exact_normalized_name"
-      ],
+      "score": 0,
+      "evidence": [],
       "conflicts": [],
       "distanceMeters": null,
       "addressSimilarity": 0,
       "scoreMargin": 0,
-      "nextBestRestaurantId": "osm-way-224130096-dairy-queen",
+      "nextBestRestaurantId": null,
       "reviewState": "needs-review"
     },
     {

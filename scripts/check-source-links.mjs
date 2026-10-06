@@ -1,3 +1,4 @@
+import { fetchGuardedSource as fetch } from "./lib/fetch-public-source.mjs";
 import { mkdir,readFile,writeFile } from "node:fs/promises";
 const catalog=JSON.parse(await readFile(new URL("../data/build/catalog.json",import.meta.url),"utf8"));const firstParty=JSON.parse(await readFile(new URL("../data/build/first-party-sources.json",import.meta.url),"utf8"));const facts=JSON.parse(await readFile(new URL("../data/build/structured-place-facts.json",import.meta.url),"utf8").catch(()=>"{}"));const city=JSON.parse(await readFile(new URL("../data/build/city-events.json",import.meta.url),"utf8"));
 const timeoutMs=Number(process.env.LINK_HEALTH_TIMEOUT_MS||8000), concurrency=Math.max(1,Math.min(20,Number(process.env.LINK_HEALTH_CONCURRENCY||10))), limit=Number(process.env.LINK_HEALTH_LIMIT||1500), userAgent="HalifaxSourced/0.9 (+https://github.com/JeremyHennessy/HalifaxSourced)";

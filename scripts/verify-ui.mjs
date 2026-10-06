@@ -1,6 +1,7 @@
 import { existsSync } from "node:fs";
-import { mkdir, readFile } from "node:fs/promises";
+import { mkdir, readFile, writeFile } from "node:fs/promises";
 import { resolve } from "node:path";
+import { installOfflineResources } from './lib/offline-browser-resources.mjs';
 
 const candidates = [
   process.env.PLAYWRIGHT_MODULE,
@@ -30,7 +31,10 @@ const browserPaths = [
 ].filter(Boolean);
 const executablePath = browserPaths.find((path) => existsSync(path));
 const browser = await playwright.chromium.launch({ headless: true, executablePath });
-const page = await browser.newPage({ viewport: { width: 1440, height: 1000 }, acceptDownloads: true });
+const context = await browser.newContext({ viewport: { width: 1440, height: 1000 }, acceptDownloads: true, serviceWorkers:'block' });
+const offlineResources = await installOfflineResources(context, url, {expectedLocal404:['/assets/restaurants/qa-intentionally-missing.jpg']});
+const page = await context.newPage();
+await page.clock.install({time:new Date('2026-10-06T02:00:00Z')});
 const consoleErrors = [];
 const criticalResourceFailures = [];
 function isIgnorableConsoleError(text) {
@@ -100,7 +104,24 @@ if (totals.restaurants < 550 || totals.officialSignals < 100 || totals.localPoli
 if (totals.chainMatches.length) throw new Error(`Expected fast-food and big-chain restaurants to be removed from the browser model, found ${JSON.stringify(totals.chainMatches)}.`);
 if (totals.discoveredRestaurants < 1) throw new Error(`Expected reviewed local discovery records, got ${JSON.stringify(totals)}.`);
 if (totals.socialProfiles < 100 || totals.relatedLinks < 100 || totals.socialRestaurants < 50) throw new Error(`Expected expanded first-party link coverage, got ${JSON.stringify(totals)}.`);
-if (totals.structuredSpecials < 60 || totals.verifiedCurrentSpecials < 40) throw new Error(`Expected reviewed structured specials, got ${JSON.stringify(totals)}.`);
+if (totals.structuredSpecials < 60) throw new Error(`Expected retained structured special evidence, got ${JSON.stringify(totals)}.`);
+const currentOfferIntegrity = await page.evaluate(() => {
+  const now = Date.now();
+  const advertised = restaurants.flatMap((restaurant) => restaurant.currentVerifiedSpecials || []);
+  const invalid = advertised.filter((special) => {
+    const verified = Date.parse(special.verifiedAt || "");
+    const maxAge = Number(structuredSpecialPayload?.currentVerificationMaxAgeDays || 30) * 86400000;
+    return special.status !== "verified_current" || !Number.isFinite(verified) || verified > now || now - verified > maxAge ||
+      special.locationValidated === false || special.identityValidated === false || special.quarantined || special.reviewState === "quarantined" ||
+      !HalifaxDataIntegrity.safeSource(special.sourceUrl) ||
+      ["official_website_link", "verified_restaurant_owned_page"].includes(special.sourceType) ||
+      (special.validFrom && (!Number.isFinite(Date.parse(special.validFrom)) || Date.parse(special.validFrom) > now)) ||
+      (special.validTo && (!Number.isFinite(Date.parse(special.validTo)) || Date.parse(special.validTo) < now)) ||
+      (special.restaurantId === "osm-node-13141377001-india-paradise" && !/\/halifax\/downtown\//i.test(special.sourceUrl || "") && special.locationValidated !== true);
+  }).map((special) => special.id || special.restaurantId);
+  return { advertised: advertised.length, invalid };
+});
+if (currentOfferIntegrity.invalid.length || currentOfferIntegrity.advertised !== totals.verifiedCurrentSpecials) throw new Error(`Current-offer evidence mismatch: ${JSON.stringify(currentOfferIntegrity)}; totals=${JSON.stringify(totals)}.`);
 await page.screenshot({ path: resolve("artifacts", "ui-check-desktop.png"), fullPage: true });
 
 // Lifecycle regression: inactive places must fail closed in discovery but keep a
@@ -169,7 +190,16 @@ for (const target of [
   if (await page.locator("#detailLinks .source-link-row").count() < 2) throw new Error(`Expected source-backed social and related links for ${target.name}.`);
   if ((await page.locator("#detailInfo").innerText()).includes("Hours not available")) throw new Error(`Expected verified hours for ${target.name}.`);
   if (await page.locator("#detailInfo .sidebar-link", { hasText: target.action }).count() < 1) throw new Error(`Expected ${target.action} action for ${target.name}.`);
-  if (target.special && await page.locator("#detailSpecials", { hasText: target.special }).count() !== 1) throw new Error(`Expected verified special for ${target.name}.`);
+  if (target.special) {
+    const evidence = await page.evaluate(({ id, title }) => {
+      const restaurant = restaurants.find((item) => item.id === id);
+      const records = (restaurant?.structuredSpecials || []).filter((item) => item.title === title);
+      return { retained: records.length, current: records.some(currentStructuredSpecial) };
+    }, { id: target.id, title: target.special });
+    if (!evidence.retained) throw new Error(`Expected retained special evidence for ${target.name}.`);
+    if (evidence.current && await page.locator("#detailSpecials", { hasText: target.special }).count() !== 1) throw new Error(`Expected current special for ${target.name}.`);
+    if (!evidence.current && await page.locator("#detailSpecials .info-message", { hasText: "Current availability is unverified" }).count() !== 1) throw new Error(`Expected honest historical-special notice for ${target.name}.`);
+  }
 }
 
 await page.locator("#globalSearch").fill("Dartmouth");
@@ -330,15 +360,15 @@ await page.goto(`${url}/#restaurant/osm-node-10038454787-bird-s-nest-cafe`, { wa
 const birdsNestUpdateState = await page.evaluate(() => {
   const restaurant = restaurants.find((item) => item.id === "osm-node-10038454787-bird-s-nest-cafe");
   const updates = (restaurant?.officialUpdates || []).filter((update) => safeUrl(update.postUrl)).slice(0, 12);
-  return { expected: updates.length, expectedMedia: updates.filter((update) => safeUrl(update.mediaUrl || update.thumbnailUrl)).length };
+  return { expected: updates.length, expectedMedia: updates.filter((update) => permittedPostMediaUrl(update)).length };
 });
 if (birdsNestUpdateState.expected < 1) throw new Error(`Expected reviewed Bird's Nest first-party feed updates in the browser model, got ${JSON.stringify(birdsNestUpdateState)}.`);
 if (await page.locator("#detailUpdates .official-update-card").count() !== birdsNestUpdateState.expected) throw new Error(`Expected rendered Bird's Nest updates to match the browser model, got ${JSON.stringify(birdsNestUpdateState)}.`);
 if (await page.locator("#detailUpdates .official-update-media").count() < Math.min(1, birdsNestUpdateState.expectedMedia)) throw new Error(`Expected at least one feed-published Bird's Nest media preview, got ${JSON.stringify(birdsNestUpdateState)}.`);
 const officialMedia = page.locator("#detailUpdates .official-update-media").first();
-await officialMedia.waitFor();
-await officialMedia.scrollIntoViewIfNeeded();
-await page.waitForFunction(() => {
+if (birdsNestUpdateState.expectedMedia) await officialMedia.waitFor();
+await page.locator('#detailUpdates .official-update-card').first().scrollIntoViewIfNeeded();
+if (birdsNestUpdateState.expectedMedia) await page.waitForFunction(() => {
   const image = document.querySelector("#detailUpdates .official-update-media");
   return image instanceof HTMLImageElement && image.complete && image.naturalWidth > 0;
 });
@@ -348,14 +378,14 @@ await page.goto(`${url}/#restaurant/osm-node-7139174640-kajohn-thai`, { waitUnti
 const kajohnUpdateState = await page.evaluate(() => {
   const restaurant = restaurants.find((item) => item.id === "osm-node-7139174640-kajohn-thai");
   const updates = (restaurant?.officialUpdates || []).filter((update) => safeUrl(update.postUrl)).slice(0, 12);
-  return { expected: updates.length, expectedMedia: updates.filter((update) => safeUrl(update.mediaUrl || update.thumbnailUrl)).length };
+  return { expected: updates.length, expectedMedia: updates.filter((update) => permittedPostMediaUrl(update)).length };
 });
 if (kajohnUpdateState.expected < 2) throw new Error(`Expected at least two Kajohn Thai official updates in the browser model, got ${JSON.stringify(kajohnUpdateState)}.`);
 if (await page.locator("#detailUpdates .official-update-card").count() !== kajohnUpdateState.expected) throw new Error(`Expected rendered Kajohn Thai updates to match the browser model, got ${JSON.stringify(kajohnUpdateState)}.`);
 if (await page.locator("#detailUpdates .official-update-media").count() < Math.min(2, kajohnUpdateState.expectedMedia)) throw new Error(`Expected retained media on reviewed Kajohn Thai updates, got ${JSON.stringify(kajohnUpdateState)}.`);
 const kajohnMedia = page.locator("#detailUpdates .official-update-media").first();
-await kajohnMedia.scrollIntoViewIfNeeded();
-await page.waitForFunction(() => {
+await page.locator('#detailUpdates .official-update-card').first().scrollIntoViewIfNeeded();
+if (kajohnUpdateState.expectedMedia) await page.waitForFunction(() => {
   const image = document.querySelector("#detailUpdates .official-update-media");
   return image instanceof HTMLImageElement && image.complete && image.naturalWidth > 0;
 });
@@ -479,6 +509,8 @@ await page.evaluate(() => {
   renderRestaurantDetail("the-narrows");
 });
 await page.waitForFunction(() => !document.querySelector(".restaurant-hero-photo") && !document.querySelector(".restaurant-hero")?.classList.contains("has-permitted-image"));
+const narrowsFallbackGeometry = await page.evaluate(() => ({overflow:document.documentElement.scrollWidth-innerWidth,rowRight:Math.max(...[...document.querySelectorAll('.source-link-row')].map(el=>el.getBoundingClientRect().right))}));
+if(narrowsFallbackGeometry.overflow>2||narrowsFallbackGeometry.rowRight>392)throw new Error(`Narrows fallback exceeds mobile viewport: ${JSON.stringify(narrowsFallbackGeometry)}`);
 const brokenImageErrors = consoleErrors.splice(brokenImageErrorStart);
 if (brokenImageErrors.length !== 1 || !/404(?: \(Not Found\)| \(\)|\b)/.test(brokenImageErrors[0])) throw new Error(`Expected exactly one intentional missing-image 404, got ${JSON.stringify(brokenImageErrors)}.`);
 await captureIphone("broken-image-fallback");
@@ -634,9 +666,10 @@ const specialsState = await page.evaluate(() => ({
   verifiedSections: document.querySelectorAll(".special-card.is-verified").length,
   leadSections: document.querySelectorAll(".special-card.is-lead").length,
   visible: document.querySelectorAll(".special-card").length,
-  controls: document.querySelectorAll("[data-specials-filter-form] input,[data-specials-filter-form] select").length
+  controls: document.querySelectorAll("[data-specials-filter-form] input,[data-specials-filter-form] select").length,
+  expectedVerified: Math.min(6, activeRestaurants.filter(r => r.hasSpecial && isVerifiedSpecialRestaurant(r)).length)
 }));
-if (specialsState.controls < 3 || specialsState.visible < 2 || specialsState.visible > 12 || specialsState.verifiedSections < 1 || specialsState.leadSections < 1) throw new Error(`Expected separated, paginated mobile specials discovery, got ${JSON.stringify(specialsState)}.`);
+if (specialsState.controls < 3 || specialsState.visible < 2 || specialsState.visible > 12 || specialsState.leadSections < 1 || specialsState.verifiedSections !== specialsState.expectedVerified) throw new Error(`Expected truthful, paginated mobile specials discovery, got ${JSON.stringify(specialsState)}.`);
 await page.locator("#specialsKind").selectOption("leads");
 await page.locator("[data-specials-filter-form] .button.primary").click();
 if (await page.locator(".special-card.is-verified").count()) throw new Error("Official-source lead filter rendered verified-special cards.");
@@ -696,6 +729,8 @@ if (!externalTargetState.external || externalTargetState.unsafeTargets) throw ne
 await page.goto(`${url}/#home`, { waitUntil: "networkidle" });
 await page.screenshot({ path: resolve("artifacts", "ui-check-mobile.png"), fullPage: true });
 
+await writeFile(resolve('artifacts/offline-resource-evidence.json'), JSON.stringify(offlineResources.evidence, null, 2));
+offlineResources.assertClean();
 if (criticalResourceFailures.length) throw new Error(`Critical resource failures detected:\n${criticalResourceFailures.join("\n")}`);
 if (consoleErrors.length) throw new Error(`Console errors detected:\n${consoleErrors.join("\n")}`);
 await browser.close();
