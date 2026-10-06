@@ -85,3 +85,17 @@ release to the same validated and browser-tested artifact, with receipts for
 every file and source SHA/run, or an equivalent explicit provenance gate
 validates any changed data. No deployment workflow or credentials were changed
 by this fixture patch.
+
+## Context/popup correction
+
+Independent review accepted the offer, feed/tile, exact error, static aFrite
+fixture and Narrows geometry changes, but identified page.route's first-popup
+navigation gap. The smallest subsequent correction installs context.route
+before any page exists, collects console and web errors at context scope,
+and blocks service workers in these test contexts. The frozen URL/method/type
+manifest and acceptance conditions stay the same. An isolated popup control
+rejects an unknown first document request before transmission and verifies
+fatal accounting; a separate about:blank popup proves all-page console and
+script errors are captured. Neither controlled invalid case is an acceptance
+pass or an allowance for production errors. Pipeline planning remains separate;
+no mutable deployment path was changed by this correction.

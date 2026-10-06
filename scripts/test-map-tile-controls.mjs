@@ -8,7 +8,8 @@ const browser=await playwright.chromium.launch({headless:true,executablePath:[pr
 const url=(process.env.APP_URL||'http://127.0.0.1:5173').replace(/\/$/,'');const manifest=JSON.parse(await readFile(new URL('./fixtures/offline-resource-manifest.json',import.meta.url),'utf8')),tiles=manifest.resources.filter(r=>r.category==='map-tile').map(r=>r.url),evidence=[];
 try{
  for(const viewport of [{width:1440,height:1000},{width:390,height:844}])for(const status of [200,503]){
-  const page=await browser.newPage({viewport});await page.clock.install({time:new Date('2026-10-06T02:00:00Z')});const gate=await installOfflineResources(page,url,{failedURLs:status===503?tiles:[]});
+  const context=await browser.newContext({viewport,serviceWorkers:'block'}),gate=await installOfflineResources(context,url,{failedURLs:status===503?tiles:[]});
+  const page=await context.newPage();await page.clock.install({time:new Date('2026-10-06T02:00:00Z')});
   await page.goto(url+'/#map',{waitUntil:'networkidle'});await page.locator('.map-result-row').first().waitFor({state:'attached'});await page.waitForFunction(()=>window.__halifaxMapMarkerCount>0);
   if(status===200)await page.waitForFunction(()=>[...document.querySelectorAll('.leaflet-tile')].some(i=>i.complete&&i.naturalWidth===256&&i.naturalHeight===256));
   else await page.waitForFunction(()=>[...document.querySelectorAll('.leaflet-tile')].some(i=>i.complete&&i.naturalWidth===0));
@@ -21,7 +22,7 @@ try{
   assert.equal(await page.locator('.map-result-row.is-highlighted').isVisible(),true);
   await page.waitForLoadState('networkidle');gate.assertClean();
   const tileRequests=gate.evidence.requests.filter(r=>r.category==='map-tile');assert(tileRequests.length>0&&tileRequests.length<=39,'Tile attempts bounded to frozen manifest');assert(tileRequests.every(r=>r.status===status));
-  evidence.push({viewport,status,state,tileRequests,console:gate.evidence.console,unknown:gate.evidence.unknown,afterFinalInteraction:'list toggle; strict exact-URL error check passed'});await page.close();
+  evidence.push({viewport,status,state,tileRequests,console:gate.evidence.console,unknown:gate.evidence.unknown,afterFinalInteraction:'list interaction; strict exact-URL error check passed'});await context.close();
  }
  await mkdir(new URL('../artifacts/',import.meta.url),{recursive:true});await writeFile(new URL('../artifacts/map-tile-controls.json',import.meta.url),JSON.stringify(evidence,null,2));console.log('Real tile decode and bounded degraded map/list controls passed at desktop/mobile.');
 }finally{await browser.close();}

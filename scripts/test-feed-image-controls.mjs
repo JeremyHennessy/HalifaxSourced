@@ -8,8 +8,8 @@ const browser=await playwright.chromium.launch({headless:true,executablePath:[pr
 const url=(process.env.APP_URL||'http://127.0.0.1:5173').replace(/\/$/,'');const fixtureUrl='https://example.test/feed-image.jpg';const evidence=[];
 try{
  for(const viewport of [{width:1440,height:1000},{width:390,height:844}])for(const status of [200,503]){
-  const page=await browser.newPage({viewport});const pageErrors=[];page.on('pageerror',e=>pageErrors.push(e.message));
-  const resources=await installOfflineResources(page,url,{failedURLs:status===503?[fixtureUrl]:[]});
+  const context=await browser.newContext({viewport,serviceWorkers:'block'}),resources=await installOfflineResources(context,url,{failedURLs:status===503?[fixtureUrl]:[]});
+  const page=await context.newPage();const pageErrors=[];page.on('pageerror',e=>pageErrors.push(e.message));
   await page.goto(url+'/#explore',{waitUntil:'networkidle'});await page.locator('.restaurant-card').first().waitFor();
   const consoleErrors=[];page.on('console',message=>{if(message.type()==='error')consoleErrors.push(message.text());});
   await page.evaluate((fixtureUrl)=>{const target=restaurants.find(r=>r.id==='side-hustle-snack-bar-dartmouth');target.coordinates=null;target.officialUpdates=[{title:'Controlled update',summary:'Retained source-backed text',postUrl:'https://example.test/source',mediaUrl:fixtureUrl,publishedAt:'2026-10-01T00:00:00Z',platform:'website_feed'}];renderRestaurantDetail(target.id);},fixtureUrl);
@@ -24,7 +24,7 @@ try{
   else{assert.equal(state.images,0);assert.equal(state.hasMedia,false,'Failed image must restore non-media card layout');assert.equal(state.paddingTop,'17px');}
   await page.locator('.detail-tabs a[href="#detailMenu"]').click();assert.equal(await page.evaluate(()=>document.activeElement.id),'detailMenu');
   await page.waitForLoadState('networkidle');resources.assertClean();
-  await page.close();
+  await context.close();
  }
  await mkdir(new URL('../artifacts/',import.meta.url),{recursive:true});await writeFile(new URL('../artifacts/feed-image-controls.json',import.meta.url),JSON.stringify(evidence,null,2));console.log('Exact-URL image success/failure controls passed at desktop/mobile.');
 }finally{await browser.close();}

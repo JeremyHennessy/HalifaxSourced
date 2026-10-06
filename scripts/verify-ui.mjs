@@ -31,9 +31,10 @@ const browserPaths = [
 ].filter(Boolean);
 const executablePath = browserPaths.find((path) => existsSync(path));
 const browser = await playwright.chromium.launch({ headless: true, executablePath });
-const page = await browser.newPage({ viewport: { width: 1440, height: 1000 }, acceptDownloads: true });
+const context = await browser.newContext({ viewport: { width: 1440, height: 1000 }, acceptDownloads: true, serviceWorkers:'block' });
+const offlineResources = await installOfflineResources(context, url, {expectedLocal404:['/assets/restaurants/qa-intentionally-missing.jpg']});
+const page = await context.newPage();
 await page.clock.install({time:new Date('2026-10-06T02:00:00Z')});
-const offlineResources = await installOfflineResources(page, url, {expectedLocal404:['/assets/restaurants/qa-intentionally-missing.jpg']});
 const consoleErrors = [];
 const criticalResourceFailures = [];
 function isIgnorableConsoleError(text) {

@@ -14,8 +14,8 @@ try{
  const context={window:{}};vm.createContext(context);vm.runInContext(await readFile(new URL('../source-integrity.js',import.meta.url),'utf8'),context);
  assert.equal(snapshot.records.filter(r=>context.HalifaxDataIntegrity.currentOffer(r,Date.parse(now),30)).length,0);
  for(const viewport of [{width:1440,height:1000},{width:390,height:844}]){
-  const page=await browser.newPage({viewport});await page.clock.install({time:new Date(now)});
-  const resources=await installOfflineResources(page,url);
+  const context=await browser.newContext({viewport,serviceWorkers:'block'}),resources=await installOfflineResources(context,url);
+  const page=await context.newPage();await page.clock.install({time:new Date(now)});
   await page.goto(url+'/#specials',{waitUntil:'networkidle'});await page.locator('[data-specials-filter-form]').waitFor();
   const fixtures=[['valid',{}],['stale',{status:'stale'}],['oldVerification',{verifiedAt:'2026-08-29T00:00:00Z'}],['future',{verifiedAt:'2026-10-07T00:00:00Z'}],['expired',{validTo:'2026-10-05T00:00:00Z'}],['wrongEntity',{identityValidated:false}],['wrongLocation',{locationValidated:false}],['quarantined',{quarantined:true}],['unsafeSource',{sourceUrl:'https://glitterbeancafe.com/contact'}],['urlOnly',{sourceType:'verified_restaurant_owned_page'}]];
   for(const [name,changes] of fixtures){
@@ -37,7 +37,7 @@ try{
    if(name!=='valid')assert.match(await page.locator('#detailSpecials').innerText(),/Current availability is unverified/);
    evidence.push({viewport,name,currentRendered:name==='valid',passed:true});
   }
-  await page.waitForLoadState('networkidle');resources.assertClean();await page.close();
+  await page.waitForLoadState('networkidle');resources.assertClean();await context.close();
  }
  await mkdir(new URL('../artifacts/',import.meta.url),{recursive:true});await writeFile(new URL('../artifacts/offer-rendering-fixed-clock.json',import.meta.url),JSON.stringify({fixedTime:now,snapshot:{records:160,current:0,stale:55},evidence},null,2));console.log('Fixed-clock offer rendering passed: positive and nine negative cases at desktop/mobile; reviewed snapshot 0 current, 55 stale.');
 }finally{await browser.close();}

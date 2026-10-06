@@ -300,6 +300,7 @@ jobs:
           node scripts/test-offer-rendering-fixed-clock.mjs
           node scripts/test-feed-image-controls.mjs
           node scripts/test-offline-resource-gate.mjs
+          node scripts/test-popup-resource-gate.mjs
           node scripts/test-map-tile-controls.mjs
           node scripts/verify-ui.mjs
           node scripts/verify-admin-status.mjs

@@ -1,7 +1,9 @@
 import assert from 'node:assert/strict';
 import {readFile} from 'node:fs/promises';
 const manifestURL=new URL('../fixtures/offline-resource-manifest.json',import.meta.url);
-export async function installOfflineResources(page,appURL,{failedURLs=[],expectedLocal404=[]}={}){
+export async function installOfflineResources(context,appURL,{failedURLs=[],expectedLocal404=[]}={}){
+ assert.equal(typeof context.newPage,'function','Install the gate on a browser context before creating pages');
+ assert.equal(context.pages().length,0,'The context gate must precede every page and navigation');
  const manifest=JSON.parse(await readFile(manifestURL,'utf8'));
  const key=(url,method,type)=>JSON.stringify([url,method,type]);
  const allowed=new Map(manifest.resources.map(r=>[key(r.url,r.method,r.resourceType),Object.freeze(r)]));
@@ -9,10 +11,10 @@ export async function installOfflineResources(page,appURL,{failedURLs=[],expecte
  const failures=new Set(failedURLs);for(const url of failures)assert(allowed.has(key(url,'GET','image')),'Failure control must be in frozen manifest: '+url);
  const localOrigin=new URL(appURL).origin,local404=new Set(expectedLocal404.map(p=>new URL(p,appURL).href));
  const evidence={manifestSourceHead:manifest.sourceHead,requests:[],unknown:[],console:[],pageErrors:[],responses:[]};
- page.on('console',m=>{if(m.type()==='error')evidence.console.push({text:m.text(),url:m.location().url||null});});
- page.on('pageerror',e=>evidence.pageErrors.push(e.message));
- page.on('response',r=>{if(r.status()>=400)evidence.responses.push({url:r.url(),status:r.status()});});
- await page.route('**/*',async route=>{
+ context.on('console',m=>{if(m.type()==='error')evidence.console.push({text:m.text(),url:m.location().url||null,pageURL:m.page()?.url()||null});});
+ context.on('weberror',e=>evidence.pageErrors.push(e.error().message));
+ context.on('response',r=>{if(r.status()>=400)evidence.responses.push({url:r.url(),status:r.status()});});
+ await context.route('**/*',async route=>{
   const request=route.request(),row={url:request.url(),method:request.method(),resourceType:request.resourceType()};
   if(new URL(row.url).origin===localOrigin){evidence.requests.push({...row,action:'local server'});return route.continue();}
   const resource=allowed.get(key(row.url,row.method,row.resourceType));
