@@ -1,5 +1,5 @@
 import { existsSync } from "node:fs";
-import { mkdir, readFile } from "node:fs/promises";
+import { mkdir, readFile, writeFile } from "node:fs/promises";
 import { resolve } from "node:path";
 
 const candidates = [
@@ -57,6 +57,17 @@ const expectedFeedReviewState = {
   media: expectedWebsiteFeedSignals.posts?.filter((post) => post.mediaUrl).length || 0,
   reviewedFeedsExcluded: expectedWebsiteFeedSignals.reviewedFeedsExcluded || 0
 };
+// Isolate feed-image rendering from third-party availability. These exact URLs
+// come from the loaded model; a licensed repository image supplies test bytes.
+const feedImageFixture = await readFile(resolve('assets/restaurants/the-narrows-exterior.jpg'));
+const imageControlEvidence = [];
+async function controlFeedImages(restaurantId) {
+  const urls = await page.evaluate((id) => [...new Set((restaurants.find(r => r.id === id)?.officialUpdates || []).map(update => safeUrl(update.mediaUrl || update.thumbnailUrl)).filter(Boolean))], restaurantId);
+  for (const sourceUrl of urls) await page.route(sourceUrl, async route => {
+    imageControlEvidence.push({ restaurantId, sourceUrl, status: 200, response: 'licensed-local-test-fixture' });
+    await route.fulfill({ status: 200, contentType: 'image/jpeg', body: feedImageFixture });
+  });
+}
 async function captureIphone(name) {
   await page.locator(".toast").evaluateAll((nodes) => nodes.forEach((node) => node.remove()));
   await page.screenshot({ path: resolve("artifacts", `ui-check-iphone-${name}.png`), fullPage: true });
@@ -352,6 +363,7 @@ await page.goto(`${url}/#restaurant/osm-node-11751643550-cafe-lunette`, { waitUn
 await page.locator("#detailUpdates .official-update-card").first().waitFor();
 if (await page.locator("#detailUpdates .official-update-card").count() < 3) throw new Error("Expected official Café Lunette feed updates on restaurant detail.");
 await captureIphone("official-updates");
+await controlFeedImages('osm-node-10038454787-bird-s-nest-cafe');
 await page.goto(`${url}/#restaurant/osm-node-10038454787-bird-s-nest-cafe`, { waitUntil: "networkidle" });
 const birdsNestUpdateState = await page.evaluate(() => {
   const restaurant = restaurants.find((item) => item.id === "osm-node-10038454787-bird-s-nest-cafe");
@@ -363,13 +375,14 @@ if (await page.locator("#detailUpdates .official-update-card").count() !== birds
 if (await page.locator("#detailUpdates .official-update-media").count() < Math.min(1, birdsNestUpdateState.expectedMedia)) throw new Error(`Expected at least one feed-published Bird's Nest media preview, got ${JSON.stringify(birdsNestUpdateState)}.`);
 const officialMedia = page.locator("#detailUpdates .official-update-media").first();
 await officialMedia.waitFor();
-await officialMedia.scrollIntoViewIfNeeded();
+await page.locator('#detailUpdates .official-update-card').first().scrollIntoViewIfNeeded();
 await page.waitForFunction(() => {
   const image = document.querySelector("#detailUpdates .official-update-media");
   return image instanceof HTMLImageElement && image.complete && image.naturalWidth > 0;
 });
 await page.locator(".toast").evaluateAll((nodes) => nodes.forEach((node) => node.remove()));
 await page.screenshot({ path: resolve("artifacts", "ui-check-iphone-official-update-media.png"), fullPage: false });
+await controlFeedImages('osm-node-7139174640-kajohn-thai');
 await page.goto(`${url}/#restaurant/osm-node-7139174640-kajohn-thai`, { waitUntil: "networkidle" });
 const kajohnUpdateState = await page.evaluate(() => {
   const restaurant = restaurants.find((item) => item.id === "osm-node-7139174640-kajohn-thai");
@@ -380,7 +393,7 @@ if (kajohnUpdateState.expected < 2) throw new Error(`Expected at least two Kajoh
 if (await page.locator("#detailUpdates .official-update-card").count() !== kajohnUpdateState.expected) throw new Error(`Expected rendered Kajohn Thai updates to match the browser model, got ${JSON.stringify(kajohnUpdateState)}.`);
 if (await page.locator("#detailUpdates .official-update-media").count() < Math.min(2, kajohnUpdateState.expectedMedia)) throw new Error(`Expected retained media on reviewed Kajohn Thai updates, got ${JSON.stringify(kajohnUpdateState)}.`);
 const kajohnMedia = page.locator("#detailUpdates .official-update-media").first();
-await kajohnMedia.scrollIntoViewIfNeeded();
+await page.locator('#detailUpdates .official-update-card').first().scrollIntoViewIfNeeded();
 await page.waitForFunction(() => {
   const image = document.querySelector("#detailUpdates .official-update-media");
   return image instanceof HTMLImageElement && image.complete && image.naturalWidth > 0;
@@ -660,9 +673,10 @@ const specialsState = await page.evaluate(() => ({
   verifiedSections: document.querySelectorAll(".special-card.is-verified").length,
   leadSections: document.querySelectorAll(".special-card.is-lead").length,
   visible: document.querySelectorAll(".special-card").length,
-  controls: document.querySelectorAll("[data-specials-filter-form] input,[data-specials-filter-form] select").length
+  controls: document.querySelectorAll("[data-specials-filter-form] input,[data-specials-filter-form] select").length,
+  expectedVerified: Math.min(6, activeRestaurants.filter(r => r.hasSpecial && isVerifiedSpecialRestaurant(r)).length)
 }));
-if (specialsState.controls < 3 || specialsState.visible < 2 || specialsState.visible > 12 || specialsState.leadSections < 1 || (totals.verifiedCurrentSpecials === 0 && specialsState.verifiedSections !== 0)) throw new Error(`Expected truthful, paginated mobile specials discovery, got ${JSON.stringify(specialsState)}.`);
+if (specialsState.controls < 3 || specialsState.visible < 2 || specialsState.visible > 12 || specialsState.leadSections < 1 || specialsState.verifiedSections !== specialsState.expectedVerified) throw new Error(`Expected truthful, paginated mobile specials discovery, got ${JSON.stringify(specialsState)}.`);
 await page.locator("#specialsKind").selectOption("leads");
 await page.locator("[data-specials-filter-form] .button.primary").click();
 if (await page.locator(".special-card.is-verified").count()) throw new Error("Official-source lead filter rendered verified-special cards.");
@@ -722,6 +736,7 @@ if (!externalTargetState.external || externalTargetState.unsafeTargets) throw ne
 await page.goto(`${url}/#home`, { waitUntil: "networkidle" });
 await page.screenshot({ path: resolve("artifacts", "ui-check-mobile.png"), fullPage: true });
 
+await writeFile(resolve('artifacts/feed-image-success-control.json'), JSON.stringify(imageControlEvidence, null, 2));
 if (criticalResourceFailures.length) throw new Error(`Critical resource failures detected:\n${criticalResourceFailures.join("\n")}`);
 if (consoleErrors.length) throw new Error(`Console errors detected:\n${consoleErrors.join("\n")}`);
 await browser.close();
