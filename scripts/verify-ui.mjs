@@ -100,7 +100,24 @@ if (totals.restaurants < 550 || totals.officialSignals < 100 || totals.localPoli
 if (totals.chainMatches.length) throw new Error(`Expected fast-food and big-chain restaurants to be removed from the browser model, found ${JSON.stringify(totals.chainMatches)}.`);
 if (totals.discoveredRestaurants < 1) throw new Error(`Expected reviewed local discovery records, got ${JSON.stringify(totals)}.`);
 if (totals.socialProfiles < 100 || totals.relatedLinks < 100 || totals.socialRestaurants < 50) throw new Error(`Expected expanded first-party link coverage, got ${JSON.stringify(totals)}.`);
-if (totals.structuredSpecials < 60 || totals.verifiedCurrentSpecials < 40) throw new Error(`Expected reviewed structured specials, got ${JSON.stringify(totals)}.`);
+if (totals.structuredSpecials < 60) throw new Error(`Expected retained structured special evidence, got ${JSON.stringify(totals)}.`);
+const currentOfferIntegrity = await page.evaluate(() => {
+  const now = Date.now();
+  const advertised = restaurants.flatMap((restaurant) => restaurant.currentVerifiedSpecials || []);
+  const invalid = advertised.filter((special) => {
+    const verified = Date.parse(special.verifiedAt || "");
+    const maxAge = Number(structuredSpecialPayload?.currentVerificationMaxAgeDays || 30) * 86400000;
+    return special.status !== "verified_current" || !Number.isFinite(verified) || verified > now || now - verified > maxAge ||
+      special.locationValidated === false || special.identityValidated === false || special.quarantined || special.reviewState === "quarantined" ||
+      !HalifaxDataIntegrity.safeSource(special.sourceUrl) ||
+      ["official_website_link", "verified_restaurant_owned_page"].includes(special.sourceType) ||
+      (special.validFrom && (!Number.isFinite(Date.parse(special.validFrom)) || Date.parse(special.validFrom) > now)) ||
+      (special.validTo && (!Number.isFinite(Date.parse(special.validTo)) || Date.parse(special.validTo) < now)) ||
+      (special.restaurantId === "osm-node-13141377001-india-paradise" && !/\/halifax\/downtown\//i.test(special.sourceUrl || "") && special.locationValidated !== true);
+  }).map((special) => special.id || special.restaurantId);
+  return { advertised: advertised.length, invalid };
+});
+if (currentOfferIntegrity.invalid.length || currentOfferIntegrity.advertised !== totals.verifiedCurrentSpecials) throw new Error(`Current-offer evidence mismatch: ${JSON.stringify(currentOfferIntegrity)}; totals=${JSON.stringify(totals)}.`);
 await page.screenshot({ path: resolve("artifacts", "ui-check-desktop.png"), fullPage: true });
 
 // Lifecycle regression: inactive places must fail closed in discovery but keep a
@@ -169,7 +186,16 @@ for (const target of [
   if (await page.locator("#detailLinks .source-link-row").count() < 2) throw new Error(`Expected source-backed social and related links for ${target.name}.`);
   if ((await page.locator("#detailInfo").innerText()).includes("Hours not available")) throw new Error(`Expected verified hours for ${target.name}.`);
   if (await page.locator("#detailInfo .sidebar-link", { hasText: target.action }).count() < 1) throw new Error(`Expected ${target.action} action for ${target.name}.`);
-  if (target.special && await page.locator("#detailSpecials", { hasText: target.special }).count() !== 1) throw new Error(`Expected verified special for ${target.name}.`);
+  if (target.special) {
+    const evidence = await page.evaluate(({ id, title }) => {
+      const restaurant = restaurants.find((item) => item.id === id);
+      const records = (restaurant?.structuredSpecials || []).filter((item) => item.title === title);
+      return { retained: records.length, current: records.some(currentStructuredSpecial) };
+    }, { id: target.id, title: target.special });
+    if (!evidence.retained) throw new Error(`Expected retained special evidence for ${target.name}.`);
+    if (evidence.current && await page.locator("#detailSpecials", { hasText: target.special }).count() !== 1) throw new Error(`Expected current special for ${target.name}.`);
+    if (!evidence.current && await page.locator("#detailSpecials .info-message", { hasText: "Current availability is unverified" }).count() !== 1) throw new Error(`Expected honest historical-special notice for ${target.name}.`);
+  }
 }
 
 await page.locator("#globalSearch").fill("Dartmouth");
@@ -636,7 +662,7 @@ const specialsState = await page.evaluate(() => ({
   visible: document.querySelectorAll(".special-card").length,
   controls: document.querySelectorAll("[data-specials-filter-form] input,[data-specials-filter-form] select").length
 }));
-if (specialsState.controls < 3 || specialsState.visible < 2 || specialsState.visible > 12 || specialsState.verifiedSections < 1 || specialsState.leadSections < 1) throw new Error(`Expected separated, paginated mobile specials discovery, got ${JSON.stringify(specialsState)}.`);
+if (specialsState.controls < 3 || specialsState.visible < 2 || specialsState.visible > 12 || specialsState.leadSections < 1 || (totals.verifiedCurrentSpecials === 0 && specialsState.verifiedSections !== 0)) throw new Error(`Expected truthful, paginated mobile specials discovery, got ${JSON.stringify(specialsState)}.`);
 await page.locator("#specialsKind").selectOption("leads");
 await page.locator("[data-specials-filter-form] .button.primary").click();
 if (await page.locator(".special-card.is-verified").count()) throw new Error("Official-source lead filter rendered verified-special cards.");
