@@ -1,3 +1,4 @@
+import integrity from "../source-integrity.js";
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import { LIFECYCLE_SIGNAL_GROUPS } from "./lib/lifecycle-language.mjs";
 
@@ -129,9 +130,10 @@ let feedsChecked = 0;
 async function scanFeed(feed) {
   const observedAt = new Date().toISOString();
   try {
+    if (!integrity.safeSource(feed.url)) throw new Error("quarantined_source");
     const response = await fetch(feed.url, {
       headers: { "User-Agent": userAgent, Accept: "application/rss+xml,application/atom+xml,application/xml,text/xml;q=0.9,*/*;q=0.5" },
-      redirect: "follow",
+      redirect: "manual",
       signal: AbortSignal.timeout(timeoutMs)
     });
     if (!response.ok) { failures.push({ restaurantId: feed.restaurantId, feedUrl: feed.url, reason: `http_${response.status}` }); return; }

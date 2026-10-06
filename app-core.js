@@ -62,7 +62,7 @@ function escapeHtml(value) {
 }
 
 function safeUrl(value) {
-  if (!value) return null;
+  if (!value || !HalifaxDataIntegrity.safeSource(value)) return null;
   try {
     const url = new URL(value);
     return ["http:", "https:"].includes(url.protocol) ? url.href : null;

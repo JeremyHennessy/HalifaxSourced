@@ -185,20 +185,6 @@ window.HALIFAX_RESTAURANT_MEDIA = {
       "reviewState": "approved"
     },
     {
-      "restaurantId": "osm-node-26041177-your-father-s-moustache",
-      "url": "assets/restaurants/your-fathers-moustache.jpg",
-      "alt": "Your Father's Moustache at 5686 Spring Garden Road in Halifax",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Your_Father%27s_Moustache_(36747782933).jpg",
-      "sourceType": "licensed",
-      "creator": "Coastal Elite",
-      "license": "CC BY-SA 2.0",
-      "rightsBasis": "Creative Commons Attribution-ShareAlike 2.0 Generic (CC BY-SA 2.0); resized from the original without other modification",
-      "permission": "licensed",
-      "permissionConfirmed": true,
-      "attribution": "Coastal Elite, CC BY-SA 2.0, via Wikimedia Commons",
-      "reviewState": "approved"
-    },
-    {
       "restaurantId": "osm-node-3104067229-ardmore-tea-room",
       "url": "https://www.fbgcdn.com/pictures/29c468cc-0bab-4c38-9c59-b43483b31cfa.jpg",
       "alt": "Ardmore Tea Room official website image",
@@ -280,34 +266,6 @@ window.HALIFAX_RESTAURANT_MEDIA = {
       "permission": "permitted",
       "permissionConfirmed": true,
       "attribution": "Heppy's Pie Lady, official website",
-      "reviewState": "approved"
-    },
-    {
-      "restaurantId": "osm-node-472054712-the-wooden-monkey",
-      "url": "assets/restaurants/wooden-monkey-dartmouth.jpg",
-      "alt": "The Wooden Monkey restaurant at the Dartmouth Ferry Terminal on Halifax Harbour",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_Wooden_Monkey_Restaurant,_Dartmouth_(25270762221).jpg",
-      "sourceType": "licensed",
-      "creator": "Tony Webster",
-      "license": "CC BY-SA 2.0",
-      "rightsBasis": "Creative Commons Attribution-ShareAlike 2.0 Generic (CC BY-SA 2.0); resized from the original without other modification",
-      "permission": "licensed",
-      "permissionConfirmed": true,
-      "attribution": "Tony Webster, CC BY-SA 2.0, via Wikimedia Commons",
-      "reviewState": "approved"
-    },
-    {
-      "restaurantId": "osm-node-5149749022-smitty-s",
-      "url": "assets/restaurants/smittys-main-street-dartmouth.jpg",
-      "alt": "Smitty's Family Restaurant at 107 Main Street in Dartmouth",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Smitty%27s_Family_Restaurant,_Dartmouth,_Nova_Scotia.jpg",
-      "sourceType": "licensed",
-      "creator": "Coastal Elite",
-      "license": "CC BY-SA 2.0",
-      "rightsBasis": "Creative Commons Attribution-ShareAlike 2.0 Generic (CC BY-SA 2.0); resized from the original without other modification",
-      "permission": "licensed",
-      "permissionConfirmed": true,
-      "attribution": "Coastal Elite, CC BY-SA 2.0, via Wikimedia Commons",
       "reviewState": "approved"
     },
     {
@@ -462,62 +420,6 @@ window.HALIFAX_RESTAURANT_MEDIA = {
       "permission": "permitted",
       "permissionConfirmed": true,
       "attribution": "HARVEST, official website",
-      "reviewState": "approved"
-    },
-    {
-      "restaurantId": "osm-way-372779851-sicilian-pizza",
-      "url": "assets/restaurants/sicilian-pizza-blowers.jpg",
-      "alt": "Sicilian Pizza at Blowers and Grafton Streets in Halifax",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sicilian_Pizza,_Pizza_Corner,_Halifax,_September_2018.jpg",
-      "sourceType": "licensed",
-      "creator": "Coastal Elite",
-      "license": "CC BY-SA 2.0",
-      "rightsBasis": "Creative Commons Attribution-ShareAlike 2.0 Generic (CC BY-SA 2.0); resized from the original without other modification",
-      "permission": "licensed",
-      "permissionConfirmed": true,
-      "attribution": "Coastal Elite, CC BY-SA 2.0, via Wikimedia Commons",
-      "reviewState": "approved"
-    },
-    {
-      "restaurantId": "osm-way-512985217-look-ho-ho",
-      "url": "assets/restaurants/look-ho-ho.jpg",
-      "alt": "Look Ho Ho restaurant sign at 6420 Bayers Road in Halifax",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Look_HoHo_(7172600835).jpg",
-      "sourceType": "licensed",
-      "creator": "Nicole Bratt",
-      "license": "CC BY-SA 2.0",
-      "rightsBasis": "Creative Commons Attribution-ShareAlike 2.0 Generic (CC BY-SA 2.0); resized from the original without other modification",
-      "permission": "licensed",
-      "permissionConfirmed": true,
-      "attribution": "Nicole Bratt, CC BY-SA 2.0, via Wikimedia Commons",
-      "reviewState": "approved"
-    },
-    {
-      "restaurantId": "osm-way-88879193-henry-house",
-      "url": "assets/restaurants/henry-house.jpg",
-      "alt": "The stone exterior of Henry House at 1222 Barrington Street in Halifax",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Henry_House,_Halifax,_Nova_Scotia,_Canada_-_August_2019_01.jpg",
-      "sourceType": "licensed",
-      "creator": "Msact",
-      "license": "CC BY-SA 4.0",
-      "rightsBasis": "Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0); resized from the original without other modification",
-      "permission": "licensed",
-      "permissionConfirmed": true,
-      "attribution": "Msact, CC BY-SA 4.0, via Wikimedia Commons",
-      "reviewState": "approved"
-    },
-    {
-      "restaurantId": "the-narrows",
-      "url": "assets/restaurants/the-narrows-exterior.jpg",
-      "alt": "The historic building housing The Narrows Public House at 2720 Gottingen Street in winter",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2720_Gottingen_Street.jpg",
-      "sourceType": "licensed",
-      "creator": "JeffNS",
-      "license": "CC BY-SA 4.0",
-      "rightsBasis": "Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0); resized from the original without other modification",
-      "permission": "licensed",
-      "permissionConfirmed": true,
-      "attribution": "JeffNS, CC BY-SA 4.0, via Wikimedia Commons",
       "reviewState": "approved"
     },
     {
@@ -1218,20 +1120,6 @@ window.HALIFAX_RESTAURANT_MEDIA = {
       "permission": "permitted",
       "permissionConfirmed": true,
       "attribution": "Station 1 Lebanese Kitchen, official website",
-      "reviewState": "approved"
-    },
-    {
-      "restaurantId": "osm-node-13141377001-india-paradise",
-      "url": "https://cdn.prod.website-files.com/6261c545bac2436193a5b09b/657fd03374351fdd7e0aaf80_637BECD2-DB08-4DB3-B6CE-559A72579303.jpg",
-      "alt": "India Paradise thumbnail candidate",
-      "sourceUrl": "https://www.indiaparadise.ca/",
-      "sourceType": "official_site_permitted",
-      "creator": "India Paradise",
-      "license": "First-party official site media",
-      "rightsBasis": "App-owner-reviewed HTTPS image reference from the restaurant official website or official feed; remote thumbnail reference only, not rehosted.",
-      "permission": "permitted",
-      "permissionConfirmed": true,
-      "attribution": "India Paradise, official website",
       "reviewState": "approved"
     },
     {

@@ -16,7 +16,7 @@ function discoveryNeighbourhoodOptions(items) {
 }
 
 function isVerifiedSpecialRestaurant(restaurant) {
-  return Boolean((restaurant.currentVerifiedSpecials || []).length || (restaurant.specialLinks || []).some((link) => link.verified));
+  return Boolean((restaurant.structuredSpecials || []).some(currentStructuredSpecial));
 }
 
 function renderSpecials() {

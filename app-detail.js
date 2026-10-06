@@ -15,7 +15,8 @@ function renderRestaurantDetail(id) {
   const linkHubs = (restaurant.linkHubs || []).filter((hub) => safeUrl(hub.url));
   const relatedLinks = active ? (restaurant.relatedLinks || []).filter((link) => safeUrl(link.url)) : [];
   const officialUpdates = active ? (restaurant.officialUpdates || []).filter((update) => safeUrl(update.postUrl)) : [];
-  const verifiedSpecials = active ? (restaurant.currentVerifiedSpecials || []).filter((special) => special?.title) : [];
+  const verifiedSpecials = active ? (restaurant.structuredSpecials || []).filter(currentStructuredSpecial) : [];
+  const historicalSpecials = active ? (restaurant.structuredSpecials || []).filter(special => ['stale', 'expired'].includes(special.status) || (special.status === 'verified_current' && !currentStructuredSpecial(special))) : [];
   const statusEvidenceUrl = safeUrl(restaurant.operatingStatusEvidence?.sourceUrl);
   const closureDate = restaurant.closureDate ? new Date(`${restaurant.closureDate}T12:00:00`).toLocaleDateString("en-CA", { year: "numeric", month: "long", day: "numeric" }) : null;
   const statusLabel = restaurant.operatingStatus === "permanently_closed" ? "Permanently closed" : restaurant.operatingStatus === "temporarily_closed" ? "Temporarily closed" : restaurant.operatingStatus === "moved" ? "Moved" : "Status unavailable";
@@ -60,7 +61,14 @@ function renderRestaurantDetail(id) {
         ${restaurant.coordinates ? `<div class="sidebar-card"><h2>Map</h2><div id="detailMap" class="detail-map"></div><a class="sidebar-link" href="https://www.openstreetmap.org/?mlat=${restaurant.coordinates.lat}&mlon=${restaurant.coordinates.lon}#map=17/${restaurant.coordinates.lat}/${restaurant.coordinates.lon}" target="_blank" rel="noreferrer">Open map ↗</a></div>` : ""}
       </aside>
     </section>`;
+  document.querySelectorAll('.detail-tabs a').forEach((link) => link.addEventListener('click', (event) => {
+    event.preventDefault();
+    let target = document.getElementById(link.getAttribute('href').slice(1));
+    if (target && !target.getClientRects().length) target = document.getElementById('detailInfo');
+    if (target) { target.setAttribute('tabindex', '-1'); target.focus({ preventScroll: true }); target.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+  }));
   bindCommonActions();
+  if (historicalSpecials.length) document.querySelector('#detailSpecials .section-heading')?.insertAdjacentHTML('afterend', `<div class="info-message">${historicalSpecials.length} historical offer record${historicalSpecials.length === 1 ? '' : 's'} need${historicalSpecials.length === 1 ? 's' : ''} a fresh check. Current availability is unverified.</div>`);
   if (restaurant.coordinates) {
     const detailMapElement = document.querySelector("#detailMap");
     requestAnimationFrame(() => {
@@ -154,7 +162,7 @@ function sourceLinkRow(link) {
 function officialUpdateCard(update) {
   const url = safeUrl(update.postUrl);
   if (!url) return "";
-  const published = new Date(update.publishedAt);
+  const published = new Date(update.publishedAt || NaN);
   const date = Number.isNaN(published.getTime()) ? "Date unavailable" : published.toLocaleDateString("en-CA", { month: "short", day: "numeric", year: "numeric", timeZone: "America/Halifax" });
   const platform = update.sourceLabel || (update.platform === "website_feed" ? "Official website" : socialPlatformLabel(update.platform));
   const mediaUrl = safeUrl(update.mediaUrl || update.thumbnailUrl);

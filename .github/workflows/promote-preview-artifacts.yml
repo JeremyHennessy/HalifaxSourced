@@ -135,10 +135,19 @@ jobs:
 
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          expected_sha=""
+          if git ls-remote --exit-code --heads origin "refs/heads/$branch" > "$RUNNER_TEMP/promotion-ref"; then
+            git fetch --no-tags --depth=1 origin "refs/heads/$branch:refs/remotes/origin/$branch"
+            expected_sha="$(git rev-parse "refs/remotes/origin/$branch")"
+            test "$expected_sha" = "$(cut -f1 "$RUNNER_TEMP/promotion-ref")" || { echo "::error::Promotion ref changed during fetch"; exit 1; }
+          else
+            ref_status=$?
+            test "$ref_status" -eq 2 || exit "$ref_status"
+          fi
           git checkout -B "$branch"
           git add data data/build
           git commit -m "Promote ${artifact_name} data preview"
-          git push --force-with-lease origin "$branch"
+          git push --force-with-lease="refs/heads/$branch:$expected_sha" origin "HEAD:refs/heads/$branch"
 
           echo "branch=$branch" >> "$GITHUB_OUTPUT"
 

@@ -5,14 +5,14 @@ window.HALIFAX_CITY_EVENTS = {
     "start": "2026-09-11T08:44:21.514Z",
     "end": "2027-10-16T14:44:21.514Z"
   },
-  "eventCount": 191,
+  "eventCount": 189,
   "categoryCounts": {
     "Food & Drink": 10,
     "Arts": 103,
     "Outdoor": 7,
     "Community": 34,
     "Comedy": 4,
-    "Sports": 62,
+    "Sports": 60,
     "Festivals": 19,
     "Family": 6,
     "Music": 63,
@@ -2287,33 +2287,18 @@ window.HALIFAX_CITY_EVENTS = {
       "venueId": "scotiabank-centre-halifax",
       "neighbourhood": "Downtown",
       "organizerId": "halifax-mooseheads",
-      "organizerName": "Halifax Mooseheads"
-    },
-    {
-      "id": "scotiabank-centre-17a0d9531d73646c",
-      "title": "Halifax Mooseheads vs Rouyn-Noranda Huskies",
-      "startAt": "2026-10-08T22:00:00.000Z",
-      "endAt": "2026-10-08T22:00:00.000Z",
-      "allDay": false,
-      "venueName": "Scotiabank Centre",
-      "address": "1800 Argyle Street, Halifax, NS",
-      "city": "Halifax",
-      "categories": [
-        "Sports"
+      "organizerName": "Halifax Mooseheads",
+      "sourceUrls": [
+        "https://www.scotiabank-centre.com/events/2026-2027-halifax-mooseheads",
+        "https://www.scotiabank-centre.com/premium-seating/eventcalendar"
       ],
-      "price": null,
-      "ticketUrl": "https://www.scotiabank-centre.com/premium-seating/eventcalendar",
-      "eventUrl": "https://www.scotiabank-centre.com/premium-seating/eventcalendar",
-      "sourceUrl": "https://www.scotiabank-centre.com/premium-seating/eventcalendar",
-      "sourceId": "scotiabank-centre",
-      "sourceName": "Scotiabank Centre",
-      "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-09-11T14:44:26.774Z",
-      "reviewState": "source-observed",
-      "venueId": "scotiabank-centre-halifax",
-      "neighbourhood": "Downtown",
-      "organizerId": "scotiabank-centre",
-      "organizerName": "Scotiabank Centre"
+      "sourceIds": [
+        "halifax-mooseheads-home",
+        "scotiabank-centre"
+      ],
+      "duplicateEventIds": [
+        "scotiabank-centre-17a0d9531d73646c"
+      ]
     },
     {
       "id": "halifax-mooseheads-home-b8cd97060b31415b",
@@ -2339,33 +2324,18 @@ window.HALIFAX_CITY_EVENTS = {
       "venueId": "scotiabank-centre-halifax",
       "neighbourhood": "Downtown",
       "organizerId": "halifax-mooseheads",
-      "organizerName": "Halifax Mooseheads"
-    },
-    {
-      "id": "scotiabank-centre-0e94a2e36a22459e",
-      "title": "Halifax Mooseheads vs Drummondville Voltigeurs",
-      "startAt": "2026-10-10T22:00:00.000Z",
-      "endAt": "2026-10-10T22:00:00.000Z",
-      "allDay": false,
-      "venueName": "Scotiabank Centre",
-      "address": "1800 Argyle Street, Halifax, NS",
-      "city": "Halifax",
-      "categories": [
-        "Sports"
+      "organizerName": "Halifax Mooseheads",
+      "sourceUrls": [
+        "https://www.scotiabank-centre.com/events/2026-2027-halifax-mooseheads",
+        "https://www.scotiabank-centre.com/premium-seating/eventcalendar"
       ],
-      "price": null,
-      "ticketUrl": "https://www.scotiabank-centre.com/premium-seating/eventcalendar",
-      "eventUrl": "https://www.scotiabank-centre.com/premium-seating/eventcalendar",
-      "sourceUrl": "https://www.scotiabank-centre.com/premium-seating/eventcalendar",
-      "sourceId": "scotiabank-centre",
-      "sourceName": "Scotiabank Centre",
-      "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-09-11T14:44:26.774Z",
-      "reviewState": "source-observed",
-      "venueId": "scotiabank-centre-halifax",
-      "neighbourhood": "Downtown",
-      "organizerId": "scotiabank-centre",
-      "organizerName": "Scotiabank Centre"
+      "sourceIds": [
+        "halifax-mooseheads-home",
+        "scotiabank-centre"
+      ],
+      "duplicateEventIds": [
+        "scotiabank-centre-0e94a2e36a22459e"
+      ]
     },
     {
       "id": "hfx-wanderers-home-315de978d06b24da",
@@ -5396,12 +5366,13 @@ window.HALIFAX_CITY_EVENTS = {
       "organizerName": "Symphony Nova Scotia"
     }
   ],
-  "sanitizedAt": "2026-09-11T14:46:40.267Z",
+  "sanitizedAt": "2026-10-06T01:19:53.585Z",
   "scopeAudit": {
     "inputEvents": 191,
-    "keptEvents": 191,
+    "keptEvents": 189,
+    "canonicalDuplicatesMerged": 2,
     "removedOutOfScope": 0,
-    "categoryReclassified": 10,
+    "categoryReclassified": 0,
     "allowedMunicipalities": [
       "Halifax",
       "Dartmouth",

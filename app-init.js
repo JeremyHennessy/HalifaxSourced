@@ -40,7 +40,13 @@ function bindExploreActions() {
 }
 
 function bindCommonActions() {
+  document.querySelectorAll('a[href="#appView"], a[href="#mainContent"]').forEach((link) => {
+    if (link.dataset.anchorBound) return; link.dataset.anchorBound = 'true';
+    link.addEventListener('click', (event) => { event.preventDefault(); const target = document.getElementById(link.getAttribute('href').slice(1)); if (target) { target.setAttribute('tabindex', '-1'); target.focus(); target.scrollIntoView(); } });
+  });
   document.querySelectorAll("[data-save-id]").forEach((button) => {
+    if (button.dataset.saveBound) return;
+    button.dataset.saveBound = "true";
     button.addEventListener("click", (event) => {
       event.preventDefault();
       event.stopPropagation();

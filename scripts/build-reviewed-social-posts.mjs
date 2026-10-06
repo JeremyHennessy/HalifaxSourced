@@ -60,7 +60,7 @@ const records = recentRecords
     const decision = decisionMap.get(id) || decisionMap.get(post.postUrl || "");
     if (!approvedDecision(decision)) return null;
     const sourceUrl = validUrl(post.postUrl || post.profileUrl || post.feedUrl);
-    if (!sourceUrl || !post.restaurantId) return null;
+    if (!sourceUrl || !post.restaurantId || post.dateState !== "valid" || post.reviewState === "quarantined") return null;
     return {
       ...post,
       sourceUrl,

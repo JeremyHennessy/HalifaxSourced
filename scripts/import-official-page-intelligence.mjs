@@ -1,3 +1,5 @@
+import { fetchPublicSource } from "./lib/fetch-public-source.mjs";
+import integrity from "../source-integrity.js";
 import { createHash } from "node:crypto";
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import { LIFECYCLE_SIGNAL_GROUPS } from "./lib/lifecycle-language.mjs";
@@ -121,7 +123,7 @@ async function robotsAllows(url) {
       try {
         const response = await fetch(new URL("/robots.txt", parsed.origin), {
           headers: { "User-Agent": userAgent },
-          redirect: "follow",
+          redirect: "manual",
           signal: AbortSignal.timeout(Math.min(timeoutMs, 8000))
         });
         if (response.status === 401 || response.status === 403) return ["/"];
@@ -136,13 +138,14 @@ async function robotsAllows(url) {
   return !disallow.some((prefix) => prefix === "/" || (prefix && parsed.pathname.startsWith(prefix)));
 }
 async function fetchHtml(url) {
+  if (!integrity.safeSource(url)) return { error: "quarantined_source", url };
   if (!(await robotsAllows(url))) return { error: "robots_disallow", url };
   try {
-    const response = await fetch(url, {
+    const response = await fetchPublicSource(url, {
       headers: { "User-Agent": userAgent, Accept: "text/html,application/xhtml+xml" },
       redirect: "follow",
       signal: AbortSignal.timeout(timeoutMs)
-    });
+    }, robotsAllows);
     const contentType = response.headers.get("content-type") || "";
     if (!response.ok) return { error: `http_${response.status}`, url };
     if (!/html|xhtml/i.test(contentType)) return { error: "not_html", url };
@@ -184,17 +187,7 @@ function imageFromHtml(html, baseUrl) {
   }
   return [...new Set(candidates)].find((url) => !badImageNeedle.test(url.toLowerCase())) || null;
 }
-function datesFromHtml(html) {
-  const values = [];
-  for (const match of String(html).matchAll(/<(?:time|meta)\b([^>]*)>/gi)) {
-    const attr = attrs(match[1]);
-    for (const key of ["datetime", "content"]) {
-      const stamp = Date.parse(attr[key] || "");
-      if (Number.isFinite(stamp)) values.push(new Date(stamp).toISOString());
-    }
-  }
-  return [...new Set(values)].sort().reverse();
-}
+function datesFromHtml(html) { return integrity.publisherDates(html); }
 function contextualExcerpt(text, matches) {
   const lowered = text.toLowerCase();
   const terms = [...new Set(Object.values(matches).flat())];
@@ -226,7 +219,7 @@ function targetPages(restaurant) {
   const pages = [];
   function add(url, reason, label = "") {
     const parsed = safeUrl(url, restaurant.website);
-    if (!parsed || ignoredPath.test(parsed.pathname)) return;
+    if (!parsed || !integrity.safeSource(parsed.href) || ignoredPath.test(parsed.pathname)) return;
     parsed.hash = "";
     const key = parsed.href.replace(/\/+$/, "");
     if (seen.has(key)) return;
@@ -272,6 +265,9 @@ async function scan(item) {
     postUrl: resolvedUrl,
     mediaUrl: imageFromHtml(fetched.html, resolvedUrl),
     publishedAt: dates[0] || null,
+    publicationDateBasis: dates[0] ? "explicit_publisher_metadata" : null,
+    rightsState: "public_reference_not_media_licence",
+    contentHash: createHash("sha256").update(fetched.html).digest("hex"),
     observedAt,
     signalMatches,
     candidateLinks,

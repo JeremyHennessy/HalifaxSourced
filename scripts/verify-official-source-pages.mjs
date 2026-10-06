@@ -1,3 +1,5 @@
+import { fetchPublicSource } from "./lib/fetch-public-source.mjs";
+import integrity from "../source-integrity.js";
 import { readFile, writeFile } from "node:fs/promises";
 import vm from "node:vm";
 
@@ -10,6 +12,7 @@ const timeoutMs = Number(process.env.SOURCE_VERIFY_TIMEOUT_MS ?? 12000);
 const userAgent = "HalifaxSourced/0.3 (+https://github.com/JeremyHennessy/HalifaxSourced)";
 
 async function loadWindowScript(url) {
+  if (!integrity.safeSource(url)) return null;
   const source = await readFile(url, "utf8");
   const context = { window: {} };
   vm.createContext(context);
@@ -127,6 +130,7 @@ function parseRobotsGroup(text, wantedAgent) {
 }
 
 async function robotsAllows(url) {
+  if (!integrity.safeSource(url)) return null;
   const parsed = new URL(url);
   const origin = parsed.origin;
   if (!robotsCache.has(origin)) {
@@ -202,6 +206,9 @@ for (const candidate of uniqueCandidates.slice(0, pageLimit)) {
     continue;
   }
 
+  if (!integrity.safeSource(candidate.url) || !integrity.locationSafe({ ...candidate, sourceUrl: candidate.url })) {
+    failures.push({ ...candidate, reason: "quarantined_identity_or_location" }); continue;
+  }
   if (!sameSite(candidate.url, candidate.website)) {
     recordSource(candidate, {
       sourceKind: "official_outbound_link",
@@ -219,11 +226,11 @@ for (const candidate of uniqueCandidates.slice(0, pageLimit)) {
 
   await sleep(delayMs);
   try {
-    const response = await fetch(candidate.url, {
+    const response = await fetchPublicSource(candidate.url, {
       headers: { "User-Agent": userAgent, Accept: "text/html,application/xhtml+xml,application/pdf;q=0.9,*/*;q=0.2" },
-      redirect: "follow",
+      redirect: "manual",
       signal: AbortSignal.timeout(timeoutMs)
-    });
+    }, robotsAllows);
     if (!response.ok) {
       failures.push({ ...candidate, reason: `http_${response.status}` });
       continue;

@@ -1,15 +1,145 @@
 {
   "version": 3,
-  "generatedAt": "2026-09-04T13:43:49.948Z",
+  "generatedAt": "2026-10-06T01:26:37.669Z",
   "currentVerificationMaxAgeDays": 30,
-  "count": 170,
-  "verifiedCurrent": 49,
+  "count": 160,
+  "verifiedCurrent": 0,
   "recurringVerify": 5,
-  "sourceLeads": 110,
-  "stale": 6,
+  "sourceLeads": 100,
+  "stale": 55,
   "expired": 0,
-  "orphanSourceCount": 51,
+  "orphanSourceCount": 61,
   "orphanSources": [
+    {
+      "restaurantId": "osm-node-10665823259-wing-n-it",
+      "candidateName": null,
+      "sourceRecordId": null,
+      "matchMethod": null,
+      "matchConfidence": null,
+      "title": "Kids Our Kids' Menu is specially designed for children 12 years and under, offering a variety of kid-friendly dishes that are nutritious and",
+      "sourceUrl": "https://wingnit.ca/menu/kids",
+      "sourceType": "official_website_link",
+      "observedAt": "2026-09-04T13:33:44.966Z",
+      "verifiedAt": "2026-09-04T13:33:44.966Z",
+      "reason": "restaurant_id_not_in_canonical_catalog"
+    },
+    {
+      "restaurantId": "osm-node-11699344564-second-cup",
+      "candidateName": null,
+      "sourceRecordId": null,
+      "matchMethod": null,
+      "matchConfidence": null,
+      "title": "SEASONAL MENU",
+      "sourceUrl": "https://secondcup.com/en/menu/seasonal-specials/",
+      "sourceType": "official_website_link",
+      "observedAt": "2026-09-04T13:33:32.852Z",
+      "verifiedAt": "2026-09-04T13:33:32.852Z",
+      "reason": "restaurant_id_not_in_canonical_catalog"
+    },
+    {
+      "restaurantId": "osm-node-2714920436-greco-pizza",
+      "candidateName": null,
+      "sourceRecordId": null,
+      "matchMethod": null,
+      "matchConfidence": null,
+      "title": "Menu",
+      "sourceUrl": "https://grecopizza.weborder.net/Items/deals-1024/",
+      "sourceType": "official_website_link",
+      "observedAt": "2026-09-04T13:33:16.564Z",
+      "verifiedAt": "2026-09-04T13:33:16.564Z",
+      "reason": "restaurant_id_not_in_canonical_catalog"
+    },
+    {
+      "restaurantId": "osm-node-4550005602-starbucks",
+      "candidateName": null,
+      "sourceRecordId": null,
+      "matchMethod": null,
+      "matchConfidence": null,
+      "title": "Order now",
+      "sourceUrl": "https://www.starbucks.ca/menu/featured/",
+      "sourceType": "official_website_link",
+      "observedAt": "2026-09-04T13:33:16.088Z",
+      "verifiedAt": "2026-09-04T13:33:16.088Z",
+      "reason": "restaurant_id_not_in_canonical_catalog"
+    },
+    {
+      "restaurantId": "osm-node-5150371021-starbucks",
+      "candidateName": null,
+      "sourceRecordId": null,
+      "matchMethod": null,
+      "matchConfidence": null,
+      "title": "Order now",
+      "sourceUrl": "https://www.starbucks.ca/menu/featured/",
+      "sourceType": "official_website_link",
+      "observedAt": "2026-09-04T13:33:16.540Z",
+      "verifiedAt": "2026-09-04T13:33:16.540Z",
+      "reason": "restaurant_id_not_in_canonical_catalog"
+    },
+    {
+      "restaurantId": "osm-way-393886756-boston-pizza",
+      "candidateName": null,
+      "sourceRecordId": null,
+      "matchMethod": null,
+      "matchConfidence": null,
+      "title": "LIVE MUSIC",
+      "sourceUrl": "https://bostonpizza.com/en/promotions/summer-promotion.html",
+      "sourceType": "official_website_link",
+      "observedAt": "2026-09-04T13:33:09.494Z",
+      "verifiedAt": "2026-09-04T13:33:09.494Z",
+      "reason": "restaurant_id_not_in_canonical_catalog"
+    },
+    {
+      "restaurantId": "osm-way-393886756-boston-pizza",
+      "candidateName": null,
+      "sourceRecordId": null,
+      "matchMethod": null,
+      "matchConfidence": null,
+      "title": "VIEW MENU",
+      "sourceUrl": "https://bostonpizza.com/en/promotions/winter-cravings.html",
+      "sourceType": "official_website_link",
+      "observedAt": "2026-09-04T13:33:09.494Z",
+      "verifiedAt": "2026-09-04T13:33:09.494Z",
+      "reason": "restaurant_id_not_in_canonical_catalog"
+    },
+    {
+      "restaurantId": "osm-way-393886756-boston-pizza",
+      "candidateName": null,
+      "sourceRecordId": null,
+      "matchMethod": null,
+      "matchConfidence": null,
+      "title": "View Lunch Menu",
+      "sourceUrl": "https://bostonpizza.com/en/promotions/lunch-menu.html",
+      "sourceType": "official_website_link",
+      "observedAt": "2026-09-04T13:33:09.494Z",
+      "verifiedAt": "2026-09-04T13:33:09.494Z",
+      "reason": "restaurant_id_not_in_canonical_catalog"
+    },
+    {
+      "restaurantId": "osm-node-7674175977-moxie-s",
+      "candidateName": "Moxies - Nova Centre",
+      "sourceRecordId": "discover-halifax-dine-around-2026-moxies-nova-centre-dine-around-menu-50-3-course-menu-5cd3461ff14d",
+      "matchMethod": "street_address",
+      "matchConfidence": "high",
+      "title": "Dine Around 2026: $50 3 Course Menu",
+      "sourceUrl": "https://discoverhalifaxns.com/dinearound/menu/moxies-nova-centre-dine-around-menu/?menu=50-3-course-menu",
+      "sourceType": "public_directory_special_lead",
+      "observedAt": "2026-09-04T13:32:30.604Z",
+      "verifiedAt": null,
+      "reason": "restaurant_id_not_in_canonical_catalog"
+    },
+    {
+      "restaurantId": "osm-node-7674175977-moxie-s",
+      "candidateName": "Moxies Bayers Lake",
+      "sourceRecordId": "halifax-events-happy-hour-moxies-bayers-lake-happy-hour-a7b721f9bbb0",
+      "matchMethod": "unique_website_host",
+      "matchConfidence": "high",
+      "title": "Happy Hour",
+      "sourceUrl": "https://moxies.com/",
+      "sourceType": "public_directory_special_lead",
+      "observedAt": "2026-09-04T13:32:30.604Z",
+      "verifiedAt": null,
+      "reason": "restaurant_id_not_in_canonical_catalog"
+    },
     {
       "restaurantId": null,
       "candidateName": "Anemone Dining",
@@ -701,7 +831,7 @@
       "sourceType": "reviewed_restaurant_owned_source",
       "observedAt": "2026-08-29T00:00:00.000Z",
       "verifiedAt": "2026-08-29T00:00:00.000Z",
-      "status": "verified_current"
+      "status": "stale"
     },
     {
       "specialId": "highwayman-mojito-happy-hour-glass-f415b6aeea",
@@ -729,7 +859,7 @@
       "sourceType": "reviewed_restaurant_owned_source",
       "observedAt": "2026-08-29T00:00:00.000Z",
       "verifiedAt": "2026-08-29T00:00:00.000Z",
-      "status": "verified_current"
+      "status": "stale"
     },
     {
       "specialId": "highwayman-americano-happy-hour-glass-e212088f96",
@@ -757,7 +887,7 @@
       "sourceType": "reviewed_restaurant_owned_source",
       "observedAt": "2026-08-29T00:00:00.000Z",
       "verifiedAt": "2026-08-29T00:00:00.000Z",
-      "status": "verified_current"
+      "status": "stale"
     },
     {
       "specialId": "highwayman-aperol-spritz-happy-hour-glass-29248bc420",
@@ -785,7 +915,7 @@
       "sourceType": "reviewed_restaurant_owned_source",
       "observedAt": "2026-08-29T00:00:00.000Z",
       "verifiedAt": "2026-08-29T00:00:00.000Z",
-      "status": "verified_current"
+      "status": "stale"
     },
     {
       "specialId": "highwayman-white-wine-spritzer-happy-hour-glass-ac8a7287ff",
@@ -813,7 +943,7 @@
       "sourceType": "reviewed_restaurant_owned_source",
       "observedAt": "2026-08-29T00:00:00.000Z",
       "verifiedAt": "2026-08-29T00:00:00.000Z",
-      "status": "verified_current"
+      "status": "stale"
     },
     {
       "specialId": "highwayman-sangria-by-the-glass-2f9521b662",
@@ -841,7 +971,7 @@
       "sourceType": "reviewed_restaurant_owned_source",
       "observedAt": "2026-08-29T00:00:00.000Z",
       "verifiedAt": "2026-08-29T00:00:00.000Z",
-      "status": "verified_current"
+      "status": "stale"
     },
     {
       "specialId": "highwayman-cava-by-the-glass-d82a323203",
@@ -869,7 +999,7 @@
       "sourceType": "reviewed_restaurant_owned_source",
       "observedAt": "2026-08-29T00:00:00.000Z",
       "verifiedAt": "2026-08-29T00:00:00.000Z",
-      "status": "verified_current"
+      "status": "stale"
     },
     {
       "specialId": "highwayman-happy-hour-oysters-1d7f82a15c",
@@ -897,7 +1027,7 @@
       "sourceType": "reviewed_restaurant_owned_source",
       "observedAt": "2026-08-29T00:00:00.000Z",
       "verifiedAt": "2026-08-29T00:00:00.000Z",
-      "status": "verified_current"
+      "status": "stale"
     },
     {
       "specialId": "highwayman-happy-hour-snack-platter-a905659b54",
@@ -925,7 +1055,7 @@
       "sourceType": "reviewed_restaurant_owned_source",
       "observedAt": "2026-08-29T00:00:00.000Z",
       "verifiedAt": "2026-08-29T00:00:00.000Z",
-      "status": "verified_current"
+      "status": "stale"
     },
     {
       "specialId": "highwayman-happy-hour-seafood-platter-a671f727e1",
@@ -953,7 +1083,7 @@
       "sourceType": "reviewed_restaurant_owned_source",
       "observedAt": "2026-08-29T00:00:00.000Z",
       "verifiedAt": "2026-08-29T00:00:00.000Z",
-      "status": "verified_current"
+      "status": "stale"
     },
     {
       "specialId": "osm-node-11751560115-seaport-social-afternoon-tea-1efb04cbbc",
@@ -973,7 +1103,7 @@
       "sourceType": "reviewed_restaurant_owned_source",
       "observedAt": "2026-08-29T00:00:00.000Z",
       "verifiedAt": "2026-08-29T00:00:00.000Z",
-      "status": "verified_current"
+      "status": "stale"
     },
     {
       "specialId": "osm-node-11751560115-seaport-social-happy-hour-draught-cf56212df6",
@@ -1001,7 +1131,7 @@
       "sourceType": "reviewed_restaurant_owned_source",
       "observedAt": "2026-08-29T00:00:00.000Z",
       "verifiedAt": "2026-08-29T00:00:00.000Z",
-      "status": "verified_current"
+      "status": "stale"
     },
     {
       "specialId": "osm-node-11751560115-seaport-social-happy-hour-house-wine-57c0d73dd3",
@@ -1029,7 +1159,7 @@
       "sourceType": "reviewed_restaurant_owned_source",
       "observedAt": "2026-08-29T00:00:00.000Z",
       "verifiedAt": "2026-08-29T00:00:00.000Z",
-      "status": "verified_current"
+      "status": "stale"
     },
     {
       "specialId": "osm-node-11751560115-seaport-social-happy-hour-curated-menu-704e4c5eb6",
@@ -1057,7 +1187,7 @@
       "sourceType": "reviewed_restaurant_owned_source",
       "observedAt": "2026-08-29T00:00:00.000Z",
       "verifiedAt": "2026-08-29T00:00:00.000Z",
-      "status": "verified_current"
+      "status": "stale"
     },
     {
       "specialId": "osm-node-11726396167-rush-hour-pizza-pizza-and-donairs-combo-a6da3c8cbd",
@@ -1077,7 +1207,7 @@
       "sourceType": "reviewed_restaurant_owned_source",
       "observedAt": "2026-08-29T00:00:00.000Z",
       "verifiedAt": "2026-08-29T00:00:00.000Z",
-      "status": "verified_current"
+      "status": "stale"
     },
     {
       "specialId": "osm-node-11726396167-rush-hour-pizza-pizza-and-wings-combo-57e0e3d4af",
@@ -1097,7 +1227,7 @@
       "sourceType": "reviewed_restaurant_owned_source",
       "observedAt": "2026-08-29T00:00:00.000Z",
       "verifiedAt": "2026-08-29T00:00:00.000Z",
-      "status": "verified_current"
+      "status": "stale"
     },
     {
       "specialId": "osm-node-11726396167-rush-hour-pizza-pizza-and-donair-eggrolls-combo-f49ce825b5",
@@ -1117,7 +1247,7 @@
       "sourceType": "reviewed_restaurant_owned_source",
       "observedAt": "2026-08-29T00:00:00.000Z",
       "verifiedAt": "2026-08-29T00:00:00.000Z",
-      "status": "verified_current"
+      "status": "stale"
     },
     {
       "specialId": "osm-node-11726396167-rush-hour-pizza-pizza-and-garlic-fingers-combo-3736d6a4a4",
@@ -1137,7 +1267,7 @@
       "sourceType": "reviewed_restaurant_owned_source",
       "observedAt": "2026-08-29T00:00:00.000Z",
       "verifiedAt": "2026-08-29T00:00:00.000Z",
-      "status": "verified_current"
+      "status": "stale"
     },
     {
       "specialId": "osm-node-11726396167-rush-hour-pizza-three-small-donairs-combo-d895adb001",
@@ -1157,7 +1287,7 @@
       "sourceType": "reviewed_restaurant_owned_source",
       "observedAt": "2026-08-29T00:00:00.000Z",
       "verifiedAt": "2026-08-29T00:00:00.000Z",
-      "status": "verified_current"
+      "status": "stale"
     },
     {
       "specialId": "osm-node-11726396167-rush-hour-pizza-large-five-topping-pizza-8179589a81",
@@ -1177,7 +1307,7 @@
       "sourceType": "reviewed_restaurant_owned_source",
       "observedAt": "2026-08-29T00:00:00.000Z",
       "verifiedAt": "2026-08-29T00:00:00.000Z",
-      "status": "verified_current"
+      "status": "stale"
     },
     {
       "specialId": "osm-node-11726396167-rush-hour-pizza-two-large-five-topping-pizzas-e28a88539c",
@@ -1197,7 +1327,7 @@
       "sourceType": "reviewed_restaurant_owned_source",
       "observedAt": "2026-08-29T00:00:00.000Z",
       "verifiedAt": "2026-08-29T00:00:00.000Z",
-      "status": "verified_current"
+      "status": "stale"
     },
     {
       "specialId": "osm-node-11726396167-rush-hour-pizza-medium-five-topping-pizza-c0c93df9a8",
@@ -1217,7 +1347,7 @@
       "sourceType": "reviewed_restaurant_owned_source",
       "observedAt": "2026-08-29T00:00:00.000Z",
       "verifiedAt": "2026-08-29T00:00:00.000Z",
-      "status": "verified_current"
+      "status": "stale"
     },
     {
       "specialId": "osm-node-11726396167-rush-hour-pizza-two-medium-five-topping-pizzas-37e4461cb6",
@@ -1237,7 +1367,7 @@
       "sourceType": "reviewed_restaurant_owned_source",
       "observedAt": "2026-08-29T00:00:00.000Z",
       "verifiedAt": "2026-08-29T00:00:00.000Z",
-      "status": "verified_current"
+      "status": "stale"
     },
     {
       "specialId": "osm-node-11726396167-rush-hour-pizza-small-five-topping-pizza-ba60c0851b",
@@ -1257,7 +1387,7 @@
       "sourceType": "reviewed_restaurant_owned_source",
       "observedAt": "2026-08-29T00:00:00.000Z",
       "verifiedAt": "2026-08-29T00:00:00.000Z",
-      "status": "verified_current"
+      "status": "stale"
     },
     {
       "specialId": "osm-node-11726396167-rush-hour-pizza-two-small-five-topping-pizzas-82a46aa601",
@@ -1277,7 +1407,7 @@
       "sourceType": "reviewed_restaurant_owned_source",
       "observedAt": "2026-08-29T00:00:00.000Z",
       "verifiedAt": "2026-08-29T00:00:00.000Z",
-      "status": "verified_current"
+      "status": "stale"
     },
     {
       "specialId": "osm-node-11726396167-rush-hour-pizza-pickup-large-three-topping-pizza-896a6fc110",
@@ -1297,7 +1427,7 @@
       "sourceType": "reviewed_restaurant_owned_source",
       "observedAt": "2026-08-29T00:00:00.000Z",
       "verifiedAt": "2026-08-29T00:00:00.000Z",
-      "status": "verified_current"
+      "status": "stale"
     },
     {
       "specialId": "osm-node-11726396167-rush-hour-pizza-pickup-medium-three-topping-pizza-000c7dec58",
@@ -1317,7 +1447,7 @@
       "sourceType": "reviewed_restaurant_owned_source",
       "observedAt": "2026-08-29T00:00:00.000Z",
       "verifiedAt": "2026-08-29T00:00:00.000Z",
-      "status": "verified_current"
+      "status": "stale"
     },
     {
       "specialId": "osm-node-11726396167-rush-hour-pizza-pickup-small-three-topping-pizza-ccf9c80e5e",
@@ -1337,7 +1467,7 @@
       "sourceType": "reviewed_restaurant_owned_source",
       "observedAt": "2026-08-29T00:00:00.000Z",
       "verifiedAt": "2026-08-29T00:00:00.000Z",
-      "status": "verified_current"
+      "status": "stale"
     },
     {
       "specialId": "osm-node-11726396167-rush-hour-pizza-pickup-large-one-topping-pizza-6c8f6f28f0",
@@ -1357,7 +1487,7 @@
       "sourceType": "reviewed_restaurant_owned_source",
       "observedAt": "2026-08-29T00:00:00.000Z",
       "verifiedAt": "2026-08-29T00:00:00.000Z",
-      "status": "verified_current"
+      "status": "stale"
     },
     {
       "specialId": "osm-node-11726396167-rush-hour-pizza-pickup-medium-one-topping-pizza-98c98807dd",
@@ -1377,7 +1507,7 @@
       "sourceType": "reviewed_restaurant_owned_source",
       "observedAt": "2026-08-29T00:00:00.000Z",
       "verifiedAt": "2026-08-29T00:00:00.000Z",
-      "status": "verified_current"
+      "status": "stale"
     },
     {
       "specialId": "osm-node-11726396167-rush-hour-pizza-pickup-small-one-topping-pizza-6c69b8ded1",
@@ -1397,7 +1527,7 @@
       "sourceType": "reviewed_restaurant_owned_source",
       "observedAt": "2026-08-29T00:00:00.000Z",
       "verifiedAt": "2026-08-29T00:00:00.000Z",
-      "status": "verified_current"
+      "status": "stale"
     },
     {
       "specialId": "osm-node-11506685695-kenny-s-pizza-two-small-pizzas-5616dd9686",
@@ -1417,7 +1547,7 @@
       "sourceType": "reviewed_restaurant_owned_source",
       "observedAt": "2026-08-29T00:00:00.000Z",
       "verifiedAt": "2026-08-29T00:00:00.000Z",
-      "status": "verified_current"
+      "status": "stale"
     },
     {
       "specialId": "osm-node-11506685695-kenny-s-pizza-two-medium-pizzas-4832dcfbd6",
@@ -1437,7 +1567,7 @@
       "sourceType": "reviewed_restaurant_owned_source",
       "observedAt": "2026-08-29T00:00:00.000Z",
       "verifiedAt": "2026-08-29T00:00:00.000Z",
-      "status": "verified_current"
+      "status": "stale"
     },
     {
       "specialId": "osm-node-11506685695-kenny-s-pizza-two-large-pizzas-a9273f8021",
@@ -1457,7 +1587,7 @@
       "sourceType": "reviewed_restaurant_owned_source",
       "observedAt": "2026-08-29T00:00:00.000Z",
       "verifiedAt": "2026-08-29T00:00:00.000Z",
-      "status": "verified_current"
+      "status": "stale"
     },
     {
       "specialId": "osm-node-4797459277-downtown-pizza-combo-1-b35616c8d0",
@@ -1477,7 +1607,7 @@
       "sourceType": "reviewed_restaurant_owned_source",
       "observedAt": "2026-08-29T00:00:00.000Z",
       "verifiedAt": "2026-08-29T00:00:00.000Z",
-      "status": "verified_current"
+      "status": "stale"
     },
     {
       "specialId": "osm-node-4797459277-downtown-pizza-combo-2-9939e030dc",
@@ -1497,7 +1627,7 @@
       "sourceType": "reviewed_restaurant_owned_source",
       "observedAt": "2026-08-29T00:00:00.000Z",
       "verifiedAt": "2026-08-29T00:00:00.000Z",
-      "status": "verified_current"
+      "status": "stale"
     },
     {
       "specialId": "osm-node-4797459277-downtown-pizza-combo-3-ee224718c9",
@@ -1517,7 +1647,7 @@
       "sourceType": "reviewed_restaurant_owned_source",
       "observedAt": "2026-08-29T00:00:00.000Z",
       "verifiedAt": "2026-08-29T00:00:00.000Z",
-      "status": "verified_current"
+      "status": "stale"
     },
     {
       "specialId": "osm-node-4797459277-downtown-pizza-desi-pizza-deal-1-23cddbfad4",
@@ -1537,7 +1667,7 @@
       "sourceType": "reviewed_restaurant_owned_source",
       "observedAt": "2026-08-29T00:00:00.000Z",
       "verifiedAt": "2026-08-29T00:00:00.000Z",
-      "status": "verified_current"
+      "status": "stale"
     },
     {
       "specialId": "osm-node-4797459277-downtown-pizza-desi-pizza-deal-2-98165b4589",
@@ -1557,7 +1687,7 @@
       "sourceType": "reviewed_restaurant_owned_source",
       "observedAt": "2026-08-29T00:00:00.000Z",
       "verifiedAt": "2026-08-29T00:00:00.000Z",
-      "status": "verified_current"
+      "status": "stale"
     },
     {
       "specialId": "osm-node-4797459277-downtown-pizza-desi-pizza-deal-3-6395f7df67",
@@ -1577,7 +1707,7 @@
       "sourceType": "reviewed_restaurant_owned_source",
       "observedAt": "2026-08-29T00:00:00.000Z",
       "verifiedAt": "2026-08-29T00:00:00.000Z",
-      "status": "verified_current"
+      "status": "stale"
     },
     {
       "specialId": "osm-node-4797459277-downtown-pizza-dt-special-pizza-c0f865cdba",
@@ -1597,7 +1727,7 @@
       "sourceType": "reviewed_restaurant_owned_source",
       "observedAt": "2026-08-29T00:00:00.000Z",
       "verifiedAt": "2026-08-29T00:00:00.000Z",
-      "status": "verified_current"
+      "status": "stale"
     },
     {
       "specialId": "osm-node-4797459277-downtown-pizza-pepperoni-pizza-special-104e302029",
@@ -1617,7 +1747,7 @@
       "sourceType": "reviewed_restaurant_owned_source",
       "observedAt": "2026-08-29T00:00:00.000Z",
       "verifiedAt": "2026-08-29T00:00:00.000Z",
-      "status": "verified_current"
+      "status": "stale"
     },
     {
       "specialId": "osm-node-4797459277-downtown-pizza-the-maritimer-pizza-special-91390caf5a",
@@ -1637,7 +1767,7 @@
       "sourceType": "reviewed_restaurant_owned_source",
       "observedAt": "2026-08-29T00:00:00.000Z",
       "verifiedAt": "2026-08-29T00:00:00.000Z",
-      "status": "verified_current"
+      "status": "stale"
     },
     {
       "specialId": "osm-node-4797459277-downtown-pizza-pesto-chicken-pizza-special-6d4b3d5e16",
@@ -1657,7 +1787,7 @@
       "sourceType": "reviewed_restaurant_owned_source",
       "observedAt": "2026-08-29T00:00:00.000Z",
       "verifiedAt": "2026-08-29T00:00:00.000Z",
-      "status": "verified_current"
+      "status": "stale"
     },
     {
       "specialId": "osm-node-5188870965-donnini-s-pizza-medium-pepperoni-pizza-pickup-special-b390146fe1",
@@ -1677,7 +1807,7 @@
       "sourceType": "reviewed_restaurant_owned_source",
       "observedAt": "2026-08-29T00:00:00.000Z",
       "verifiedAt": "2026-08-29T00:00:00.000Z",
-      "status": "verified_current"
+      "status": "stale"
     },
     {
       "specialId": "osm-node-5188870965-donnini-s-pizza-large-pepperoni-pizza-pickup-special-21eb40526a",
@@ -1697,7 +1827,7 @@
       "sourceType": "reviewed_restaurant_owned_source",
       "observedAt": "2026-08-29T00:00:00.000Z",
       "verifiedAt": "2026-08-29T00:00:00.000Z",
-      "status": "verified_current"
+      "status": "stale"
     },
     {
       "specialId": "osm-node-5188870965-donnini-s-pizza-two-medium-pizzas-9e3bbc7e41",
@@ -1717,7 +1847,7 @@
       "sourceType": "reviewed_restaurant_owned_source",
       "observedAt": "2026-08-29T00:00:00.000Z",
       "verifiedAt": "2026-08-29T00:00:00.000Z",
-      "status": "verified_current"
+      "status": "stale"
     },
     {
       "specialId": "osm-node-5188870965-donnini-s-pizza-two-large-pizzas-58c7386019",
@@ -1737,7 +1867,7 @@
       "sourceType": "reviewed_restaurant_owned_source",
       "observedAt": "2026-08-29T00:00:00.000Z",
       "verifiedAt": "2026-08-29T00:00:00.000Z",
-      "status": "verified_current"
+      "status": "stale"
     },
     {
       "specialId": "osm-node-5188870965-donnini-s-pizza-large-works-pizza-combo-2cbe28cb89",
@@ -1757,7 +1887,7 @@
       "sourceType": "reviewed_restaurant_owned_source",
       "observedAt": "2026-08-29T00:00:00.000Z",
       "verifiedAt": "2026-08-29T00:00:00.000Z",
-      "status": "verified_current"
+      "status": "stale"
     },
     {
       "specialId": "bar-kismet-rotating-bar-and-kitchen-specials-3a64a49042",
@@ -2012,26 +2142,6 @@
       "status": "source_lead"
     },
     {
-      "specialId": "osm-node-10665823259-wing-n-it-kids-our-kids-menu-is-specially-designed-for-children-12-years-and-under-offering-a-variety-of-kid-friendly-dishes-that-are-nutritious-and-151dd5c82b",
-      "restaurantId": "osm-node-10665823259-wing-n-it",
-      "title": "Kids Our Kids' Menu is specially designed for children 12 years and under, offering a variety of kid-friendly dishes that are nutritious and",
-      "specialType": "daily_or_promotional_special",
-      "description": null,
-      "dayOfWeek": null,
-      "startTime": null,
-      "endTime": null,
-      "validFrom": null,
-      "validTo": null,
-      "price": null,
-      "currency": null,
-      "recurrence": null,
-      "sourceUrl": "https://wingnit.ca/menu/kids",
-      "sourceType": "official_website_link",
-      "observedAt": "2026-09-04T13:33:44.966Z",
-      "verifiedAt": "2026-09-04T13:33:44.966Z",
-      "status": "source_lead"
-    },
-    {
       "specialId": "osm-node-11552510567-tako-sushi-and-ramen-menu-f55f393293",
       "restaurantId": "osm-node-11552510567-tako-sushi-and-ramen",
       "title": "Menu",
@@ -2092,26 +2202,6 @@
       "status": "source_lead"
     },
     {
-      "specialId": "osm-node-11699344564-second-cup-seasonal-menu-0637bd29d9",
-      "restaurantId": "osm-node-11699344564-second-cup",
-      "title": "SEASONAL MENU",
-      "specialType": "daily_or_promotional_special",
-      "description": null,
-      "dayOfWeek": null,
-      "startTime": null,
-      "endTime": null,
-      "validFrom": null,
-      "validTo": null,
-      "price": null,
-      "currency": null,
-      "recurrence": null,
-      "sourceUrl": "https://secondcup.com/en/menu/seasonal-specials/",
-      "sourceType": "official_website_link",
-      "observedAt": "2026-09-04T13:33:32.852Z",
-      "verifiedAt": "2026-09-04T13:33:32.852Z",
-      "status": "source_lead"
-    },
-    {
       "specialId": "osm-node-1254843900-the-mic-mac-bar-and-grill-browse-our-specials-748d5ef4ab",
       "restaurantId": "osm-node-1254843900-the-mic-mac-bar-and-grill",
       "title": "Browse our specials",
@@ -2129,26 +2219,6 @@
       "sourceType": "official_website_link",
       "observedAt": "2026-09-04T13:33:39.241Z",
       "verifiedAt": "2026-09-04T13:33:39.241Z",
-      "status": "source_lead"
-    },
-    {
-      "specialId": "osm-node-2714920436-greco-pizza-menu-bab3173ed7",
-      "restaurantId": "osm-node-2714920436-greco-pizza",
-      "title": "Menu",
-      "specialType": "daily_or_promotional_special",
-      "description": null,
-      "dayOfWeek": null,
-      "startTime": null,
-      "endTime": null,
-      "validFrom": null,
-      "validTo": null,
-      "price": null,
-      "currency": null,
-      "recurrence": null,
-      "sourceUrl": "https://grecopizza.weborder.net/Items/deals-1024/",
-      "sourceType": "official_website_link",
-      "observedAt": "2026-09-04T13:33:16.564Z",
-      "verifiedAt": "2026-09-04T13:33:16.564Z",
       "status": "source_lead"
     },
     {
@@ -2272,46 +2342,6 @@
       "status": "source_lead"
     },
     {
-      "specialId": "osm-node-4550005602-starbucks-order-now-87f5e88b2f",
-      "restaurantId": "osm-node-4550005602-starbucks",
-      "title": "Order now",
-      "specialType": "daily_or_promotional_special",
-      "description": null,
-      "dayOfWeek": null,
-      "startTime": null,
-      "endTime": null,
-      "validFrom": null,
-      "validTo": null,
-      "price": null,
-      "currency": null,
-      "recurrence": null,
-      "sourceUrl": "https://www.starbucks.ca/menu/featured/",
-      "sourceType": "official_website_link",
-      "observedAt": "2026-09-04T13:33:16.088Z",
-      "verifiedAt": "2026-09-04T13:33:16.088Z",
-      "status": "source_lead"
-    },
-    {
-      "specialId": "osm-node-5150371021-starbucks-order-now-dd21e683a7",
-      "restaurantId": "osm-node-5150371021-starbucks",
-      "title": "Order now",
-      "specialType": "daily_or_promotional_special",
-      "description": null,
-      "dayOfWeek": null,
-      "startTime": null,
-      "endTime": null,
-      "validFrom": null,
-      "validTo": null,
-      "price": null,
-      "currency": null,
-      "recurrence": null,
-      "sourceUrl": "https://www.starbucks.ca/menu/featured/",
-      "sourceType": "official_website_link",
-      "observedAt": "2026-09-04T13:33:16.540Z",
-      "verifiedAt": "2026-09-04T13:33:16.540Z",
-      "status": "source_lead"
-    },
-    {
       "specialId": "osm-way-372779851-sicilian-pizza-specialty-pizza-44acfa0ae4",
       "restaurantId": "osm-way-372779851-sicilian-pizza",
       "title": "SPECIALTY PIZZA",
@@ -2329,66 +2359,6 @@
       "sourceType": "official_website_link",
       "observedAt": "2026-09-04T13:33:32.978Z",
       "verifiedAt": "2026-09-04T13:33:32.978Z",
-      "status": "source_lead"
-    },
-    {
-      "specialId": "osm-way-393886756-boston-pizza-live-music-f3c633152b",
-      "restaurantId": "osm-way-393886756-boston-pizza",
-      "title": "LIVE MUSIC",
-      "specialType": "daily_or_promotional_special",
-      "description": null,
-      "dayOfWeek": null,
-      "startTime": null,
-      "endTime": null,
-      "validFrom": null,
-      "validTo": null,
-      "price": null,
-      "currency": null,
-      "recurrence": null,
-      "sourceUrl": "https://bostonpizza.com/en/promotions/summer-promotion.html",
-      "sourceType": "official_website_link",
-      "observedAt": "2026-09-04T13:33:09.494Z",
-      "verifiedAt": "2026-09-04T13:33:09.494Z",
-      "status": "source_lead"
-    },
-    {
-      "specialId": "osm-way-393886756-boston-pizza-view-menu-5d086e0750",
-      "restaurantId": "osm-way-393886756-boston-pizza",
-      "title": "VIEW MENU",
-      "specialType": "daily_or_promotional_special",
-      "description": null,
-      "dayOfWeek": null,
-      "startTime": null,
-      "endTime": null,
-      "validFrom": null,
-      "validTo": null,
-      "price": null,
-      "currency": null,
-      "recurrence": null,
-      "sourceUrl": "https://bostonpizza.com/en/promotions/winter-cravings.html",
-      "sourceType": "official_website_link",
-      "observedAt": "2026-09-04T13:33:09.494Z",
-      "verifiedAt": "2026-09-04T13:33:09.494Z",
-      "status": "source_lead"
-    },
-    {
-      "specialId": "osm-way-393886756-boston-pizza-view-lunch-menu-1527a5329e",
-      "restaurantId": "osm-way-393886756-boston-pizza",
-      "title": "View Lunch Menu",
-      "specialType": "lunch_special",
-      "description": null,
-      "dayOfWeek": null,
-      "startTime": null,
-      "endTime": null,
-      "validFrom": null,
-      "validTo": null,
-      "price": null,
-      "currency": null,
-      "recurrence": null,
-      "sourceUrl": "https://bostonpizza.com/en/promotions/lunch-menu.html",
-      "sourceType": "official_website_link",
-      "observedAt": "2026-09-04T13:33:09.494Z",
-      "verifiedAt": "2026-09-04T13:33:09.494Z",
       "status": "source_lead"
     },
     {
@@ -3871,76 +3841,6 @@
       "status": "source_lead",
       "reviewState": "source_signal",
       "matchMethod": "exact_name",
-      "matchConfidence": "high"
-    },
-    {
-      "specialId": "osm-node-7674175977-moxie-s-dine-around-2026-50-3-course-menu-7cce835234",
-      "restaurantId": "osm-node-7674175977-moxie-s",
-      "restaurantName": "Moxies - Nova Centre",
-      "title": "Dine Around 2026: $50 3 Course Menu",
-      "specialType": "prix_fixe",
-      "description": null,
-      "dayOfWeek": null,
-      "startTime": null,
-      "endTime": null,
-      "validFrom": "2026-02-01",
-      "validTo": "2026-02-28",
-      "price": 50,
-      "currency": "CAD",
-      "recurrence": "Dine Around Halifax, February 2026",
-      "sourceUrl": "https://discoverhalifaxns.com/dinearound/menu/moxies-nova-centre-dine-around-menu/?menu=50-3-course-menu",
-      "sourcePageUrl": "https://downtownhalifax.ca/dinearound",
-      "sourceType": "public_directory_special_lead",
-      "sourceName": "Discover Halifax Dine Around 2026",
-      "sourceRecordId": "discover-halifax-dine-around-2026-moxies-nova-centre-dine-around-menu-50-3-course-menu-5cd3461ff14d",
-      "address": "1610 Argyle Street, Halifax, Nova Scotia B3J 0G2",
-      "neighborhood": null,
-      "sourceImageUrl": "https://discoverhalifaxns.com/wp-content/uploads/2026/01/106881_menu_photo_a9102299-4a8c-4369-863c-f19ee65ad95e.jpg",
-      "rightsState": "requires_rights_review",
-      "observedAt": "2026-09-04T13:32:30.604Z",
-      "verifiedAt": null,
-      "status": "source_lead",
-      "reviewState": "source_signal",
-      "matchMethod": "street_address",
-      "matchConfidence": "high"
-    },
-    {
-      "specialId": "osm-node-7674175977-moxie-s-happy-hour-c9029a1246",
-      "restaurantId": "osm-node-7674175977-moxie-s",
-      "restaurantName": "Moxies Bayers Lake",
-      "title": "Happy Hour",
-      "specialType": "happy_hour",
-      "description": "Happy hour food and drink menu",
-      "dayOfWeek": [
-        "sunday",
-        "monday",
-        "tuesday",
-        "wednesday",
-        "thursday",
-        "friday",
-        "saturday"
-      ],
-      "startTime": "14:00",
-      "endTime": "17:00",
-      "validFrom": null,
-      "validTo": null,
-      "price": null,
-      "currency": null,
-      "recurrence": "Daily 14:00-17:00",
-      "sourceUrl": "https://moxies.com/",
-      "sourcePageUrl": "https://halifaxevents.ca/happy-hour",
-      "sourceType": "public_directory_special_lead",
-      "sourceName": "HalifaxEvents.ca Happy Hour",
-      "sourceRecordId": "halifax-events-happy-hour-moxies-bayers-lake-happy-hour-a7b721f9bbb0",
-      "address": "194 Chain Lake Dr, Halifax, NS",
-      "neighborhood": "Bayers Lake",
-      "sourceImageUrl": null,
-      "rightsState": null,
-      "observedAt": "2026-09-04T13:32:30.604Z",
-      "verifiedAt": null,
-      "status": "source_lead",
-      "reviewState": "source_signal",
-      "matchMethod": "unique_website_host",
       "matchConfidence": "high"
     },
     {

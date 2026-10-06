@@ -31,8 +31,7 @@ function sourceSignalHas(item, kind) {
 function sourceSignalFresh(item, maxDays = CURRENT_SOURCE_SIGNAL_DAYS) {
   const stamp = Date.parse(String(item?.publishedAt ?? ""));
   if (!Number.isFinite(stamp)) return false;
-  const age = Date.now() - stamp;
-  return age >= -24 * 60 * 60 * 1000 && age <= maxDays * 24 * 60 * 60 * 1000;
+  return HalifaxDataIntegrity.locationSafe(item) && HalifaxDataIntegrity.publicationState(item.publishedAt, Date.now(), maxDays).isRecent;
 }
 
 function uniqueSourceSignalLinks(existing, additions) {
@@ -142,7 +141,7 @@ for (const restaurant of restaurants) {
   restaurant.socialSignals = apiSignals;
   restaurant.currentSourceSignals = currentSignals;
   restaurant.officialUpdates = (normalizedPosts.length ? normalizedPosts : [...feedPosts, ...apiPosts])
-    .filter((signal) => safeUrl(signal?.postUrl))
+    .filter((signal) => safeUrl(signal?.postUrl) && HalifaxDataIntegrity.locationSafe(signal) && HalifaxDataIntegrity.publicationState(signal.publishedAt).dateState !== "future")
     .filter((signal, index, all) => all.findIndex((item) => item.postUrl === signal.postUrl) === index)
     .sort((a, b) => String(b.publishedAt || b.observedAt || "").localeCompare(String(a.publishedAt || a.observedAt || "")));
   restaurant.socialProfiles = allProfiles;

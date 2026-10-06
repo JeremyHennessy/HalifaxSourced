@@ -1,3 +1,5 @@
+import { fetchPublicSource } from "./lib/fetch-public-source.mjs";
+import integrity from "../source-integrity.js";
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import { LIFECYCLE_SIGNAL_GROUPS } from "./lib/lifecycle-language.mjs";
 
@@ -59,11 +61,12 @@ function parseRobotsGroup(text, wantedAgent) {
   return (specific || wildcard)?.disallow ?? [];
 }
 async function robotsAllows(url) {
+  if (!integrity.safeSource(url)) return false;
   const parsed = new URL(url);
   if (!robotsCache.has(parsed.origin)) {
     robotsCache.set(parsed.origin, (async () => {
       try {
-        const response = await fetch(new URL("/robots.txt", parsed.origin), { headers: { "User-Agent": userAgent }, redirect: "follow", signal: AbortSignal.timeout(Math.min(timeoutMs, 8000)) });
+        const response = await fetch(new URL("/robots.txt", parsed.origin), { headers: { "User-Agent": userAgent }, redirect: "manual", signal: AbortSignal.timeout(Math.min(timeoutMs, 8000)) });
         if (response.status === 401 || response.status === 403) return ["/"];
         if (!response.ok) return [];
         return parseRobotsGroup(await response.text(), "HalifaxSourced");
@@ -118,7 +121,7 @@ async function scanRestaurant(item) {
     return;
   }
   try {
-    const response = await fetch(website, { headers: { "User-Agent": userAgent, Accept: "text/html,application/xhtml+xml" }, redirect: "follow", signal: AbortSignal.timeout(timeoutMs) });
+    const response = await fetchPublicSource(website, { headers: { "User-Agent": userAgent, Accept: "text/html,application/xhtml+xml" }, redirect: "manual", signal: AbortSignal.timeout(timeoutMs) }, robotsAllows);
     const contentType = response.headers.get("content-type") || "";
     if (!/html|xhtml/i.test(contentType)) {
       results[index] = { restaurantId: restaurant.id, name: restaurant.name, website, status: response.status, error: "not_html", observedAt, sourceKind: "official_website", reviewState: "cross-check" };
