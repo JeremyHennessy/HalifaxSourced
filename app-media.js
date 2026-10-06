@@ -32,7 +32,11 @@ function normalizeImageToken(value) {
 function safeImageUrl(value) {
   const raw = String(value ?? "").trim();
   if (!raw) return null;
-  if (/^(?:\.\/)?assets\/[a-zA-Z0-9._/-]+$/.test(raw)) return raw.startsWith("./") ? raw : `./${raw}`;
+  if (/^(?:\.\/)?assets\/[a-zA-Z0-9._/-]+$/.test(raw)) {
+    const segments = raw.replace(/^\.\//, "").split("/");
+    if (segments.some((segment) => !segment || segment === "." || segment === "..")) return null;
+    return raw.startsWith("./") ? raw : `./${raw}`;
+  }
   return safeUrl(raw);
 }
 
@@ -87,8 +91,17 @@ function permittedImageFor(restaurant) {
 // uncertain rights take precedence over legacy approval flags.
 function hasMediaPermission(image) {
   if (!image || typeof image !== "object") return false;
-  const state = normalizeImageToken(image.rightsState);
-  if (state && !["licensed", "owner_authorized", "permission_verified"].includes(state)) return false;
+  // Check every supplied contract alias before selecting a value. A permissive
+  // primary field must never hide an explicit denial in another field.
+  if (image.quarantined) return false;
+  const supplied = (fields) => fields.map((field) => image[field]).filter((value) => value != null && String(value).trim() !== "");
+  const rightsStates = new Set(["licensed", "owner_authorized", "permission_verified", "production_approved", "permitted", "owner_approved"]);
+  if (supplied(["rightsState", "rightsStatus"]).some((value) => !rightsStates.has(normalizeImageToken(value)))) return false;
+  if (supplied(["reviewState", "reviewStatus"]).some((value) => normalizeImageToken(value) !== "approved")) return false;
+  if (supplied(["permission", "usageRights", "rights"]).some((value) => !PERMITTED_IMAGE_PERMISSION_VALUES.has(normalizeImageToken(value)))) return false;
+  if (image.permissionConfirmed === false || image.ownerApproved === false) return false;
+  if (supplied(["license", "licence"]).some((value) => ["unknown", "unverified", "restricted", "denied", "quarantined", "public_reference_not_media_licence"].includes(normalizeImageToken(value)) || /first-party official site media/i.test(String(value)))) return false;
+  if (supplied(["rightsBasis", "rightsNote"]).some((value) => /remote thumbnail reference only|not rehosted/i.test(String(value)))) return false;
   const license = String(image.license ?? image.licence ?? "").trim();
   const basis = String(image.rightsBasis ?? image.rightsNote ?? "").trim();
   if (["unknown", "unverified", "restricted", "public_reference_not_media_licence"].includes(normalizeImageToken(license))) return false;

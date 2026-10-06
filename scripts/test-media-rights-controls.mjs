@@ -18,10 +18,33 @@ try{for(const viewport of [{width:1440,height:1000},{width:390,height:844}]){
    checks.push({rightsState,detailImages:detail.querySelectorAll('img').length,detailText:detail.innerText,detailHref:detail.querySelector('a').href,home,restaurantMarkup:mediaImageMarkup(restaurant),restaurantClass:permittedImageClass(restaurant)});
    document.body.insertAdjacentHTML('beforeend',home+mediaImageMarkup(restaurant));
   }
+  const contradictory = [
+   {quarantined:true},
+   {rightsState:'licensed',rightsStatus:'public_reference_not_media_licence'},
+   {rightsState:'owner_authorized',rightsStatus:' UNVERIFIED '},
+   {rightsState:'public-reference-not-media-licence',rightsStatus:'production_approved'},
+   {reviewState:'approved',reviewStatus:'quarantined'},
+   {permission:'licensed',usageRights:'denied'},
+   {permission:'licensed',rights:'restricted'},
+   {permissionConfirmed:false,ownerApproved:true},
+   {permissionConfirmed:true,ownerApproved:false},
+   {license:'Specific fixture grant',licence:'unknown'},
+   {rightsBasis:'Owner grants reuse',rightsNote:'remote thumbnail reference only, not rehosted.'}
+  ];
+  const rendererChecks = contradictory.map((denial) => {
+   const post={...approved,rightsState:'permission_verified',...denial,id:'rights-contradiction',restaurantId:target.id};
+   const restaurant={...target,image:{...post,url:post.mediaUrl},images:[]};
+   const markups={detail:officialUpdateCard(post),home:recentPostCard(post),socialAdmin:socialPostReviewCard(post,{}),candidateAdmin:adminCandidateCard(post,{}),restaurant:mediaImageMarkup(restaurant)};
+   for(const html of Object.values(markups)) document.body.insertAdjacentHTML('beforeend',html);
+   return {denial,eligible:hasMediaPermission(post),markups};
+  });
+  const pathChecks=['assets/../test.jpg','./assets/../test.jpg','assets/./test.jpg','assets//test.jpg','assets/%2e%2e/test.jpg','assets/\\test.jpg'].map(path=>({path,url:safeImageUrl(path)}));
   const unknown={...approved};delete unknown.permissionConfirmed;checks.push({rightsState:'missing_permission',media:permittedPostMediaUrl(unknown)});
-  return {checks,approvedAssets:window.HALIFAX_RESTAURANT_MEDIA.records.filter(hasMediaPermission).length,assetChecks:window.HALIFAX_RESTAURANT_MEDIA.records.filter(r=>r.reviewState==="approved").map(r=>({id:r.restaurantId,permitted:hasMediaPermission(r),source:safeUrl(r.sourceUrl),license:r.license,rightsBasis:r.rightsBasis})),positive:hasMediaPermission({...approved,rightsState:'owner_authorized'}),legacyRejected:hasMediaPermission({...approved,license:'First-party official site media'})};
+  return {checks,rendererChecks,pathChecks,approvedAssets:window.HALIFAX_RESTAURANT_MEDIA.records.filter(hasMediaPermission).length,assetChecks:window.HALIFAX_RESTAURANT_MEDIA.records.filter(r=>r.reviewState==="approved").map(r=>({id:r.restaurantId,permitted:hasMediaPermission(r),source:safeUrl(r.sourceUrl),license:r.license,rightsBasis:r.rightsBasis})),positive:hasMediaPermission({...approved,rightsState:'owner_authorized'}),legacyRejected:hasMediaPermission({...approved,license:'First-party official site media'})};
  });
  for(const c of result.checks){if(c.rightsState==='missing_permission'){assert.equal(c.media,null);continue;}assert.equal(c.detailImages,0);assert.match(c.detailText,/Retained factual summary/);assert.equal(c.detailHref,'https://example.test/source');assert(!c.home.includes('<img'));assert.equal(c.restaurantMarkup,'');assert.equal(c.restaurantClass,'');}
+ for(const c of result.rendererChecks){assert.equal(c.eligible,false,JSON.stringify(c.denial));for(const [renderer,html] of Object.entries(c.markups)){assert(!/<img\b/i.test(html),renderer+JSON.stringify(c.denial));if(renderer!=='restaurant'){assert(html.includes('https://example.test/source'));assert(html.includes('Rights control'));}}}
+ for(const c of result.pathChecks)assert.equal(c.url,null,c.path);
  assert.equal(result.approvedAssets,6);assert.equal(result.positive,true);assert.equal(result.legacyRejected,false);await page.waitForLoadState('networkidle');assert.deepEqual(requests,[]);gate.assertClean();evidence.push({viewport,result,unlicensedRequests:requests});await context.close();
 }await mkdir('artifacts',{recursive:true});await writeFile('artifacts/media-rights-controls.json',JSON.stringify(evidence,null,2));console.log('Media rights controls passed: denied/unknown images never requested; facts and source links retained; six consumer-eligible licensed assets preserved (Smittys excluded by existing local-restaurant policy).');}finally{await browser.close();}
 
