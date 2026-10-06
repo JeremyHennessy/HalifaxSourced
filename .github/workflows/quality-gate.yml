@@ -35,6 +35,9 @@ jobs:
       - name: Run structured-special evidence regression
         run: node scripts/test-structured-specials-model.mjs
 
+      - name: Run network-disabled source verifier startup regression
+        run: node scripts/test-source-verifier-startup.mjs
+
       - name: Build public happy-hour source leads
         env:
           PUBLIC_SPECIAL_CAMPAIGN_LIMIT: 80

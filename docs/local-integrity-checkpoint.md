@@ -31,4 +31,10 @@ No API credentials were sought. Facebook/Instagram post coverage remains explici
 
 Remaining independent review items: generic media provenance/licensing and owner media fields; missing link-health incorrectly shown as zero/fresh; immutable tested deployment artifacts; full-catalog lifecycle audit; eager payload size. These are not resolved or claimed as validated here.
 
-Publication remains blocked on recognized explicit approval in the parent task.
+Publication approval has since been granted for a repair branch and draft PR only. Publication remains on hold until the independent audit completes; merge and deployment are not approved.
+
+## Independent-review correction
+
+The original `2183ec7` commit had a startup regression: its HTTP-only source guard also ran in the trusted local catalog loader. The network-disabled startup test reproduced the null catalog crash at line 28 with zero requests. The repaired loader accepts only the two explicit local catalog file URLs and throws for any other local script; external protocols and quarantine rules are unchanged. The same test now starts the actual collector in an isolated fixture, records stubbed robots/menu requests, verifies one retained menu, and proves unsafe-domain and untrusted file URLs were never fetched. The test is wired into Quality Gate, but no remote workflow was dispatched.
+
+The earlier review bundle is retained as negative evidence. The revised bundle includes raw commit bytes, full tree manifests, canonical Git archives, and a Git bundle for exact-object verification.

@@ -10,9 +10,13 @@ const delayMs = Number(process.env.SOURCE_VERIFY_DELAY_MS ?? 250);
 const pageLimit = Number(process.env.SOURCE_VERIFY_PAGE_LIMIT ?? 300);
 const timeoutMs = Number(process.env.SOURCE_VERIFY_TIMEOUT_MS ?? 12000);
 const userAgent = "HalifaxSourced/0.3 (+https://github.com/JeremyHennessy/HalifaxSourced)";
+const trustedCatalogScripts = new Set([
+  new URL('../data/restaurants.js', import.meta.url).href,
+  new URL('../data/osm-restaurants.js', import.meta.url).href
+]);
 
 async function loadWindowScript(url) {
-  if (!integrity.safeSource(url)) return null;
+  if (!(url instanceof URL) || !trustedCatalogScripts.has(url.href)) throw new Error('untrusted_local_catalog_script');
   const source = await readFile(url, "utf8");
   const context = { window: {} };
   vm.createContext(context);
