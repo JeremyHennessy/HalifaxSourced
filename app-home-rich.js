@@ -53,7 +53,7 @@ function currentSpecialCards(limit = 4) {
 }
 function recentPostCard(post) {
   const restaurant = activeRestaurants.find((item) => item.id === post.restaurantId);
-  const mediaUrl = safeUrl(post.mediaUrl || post.thumbnailUrl);
+  const mediaUrl = permittedPostMediaUrl(post);
   const postUrl = safeUrl(post.postUrl || post.sourceUrl);
   const title = post.title || `${post.primaryCategoryLabel || "Restaurant"} update`;
   return `<article class="recent-post-card${mediaUrl ? " has-media" : ""}">

@@ -1,7 +1,16 @@
-window.HALIFAX_RESTAURANT_MEDIA = {
-  "version": 7,
-  "generatedAt": "2026-09-03T13:08:09Z",
-  "records": [
+{
+  "baselineCommit": "4d384b12b6b9ce7021ccd292fc5a67c9db00b2e2",
+  "method": "Local metadata inspection only; no source refetch. Public availability and remote reference do not establish authorization. Unverified does not assert absence of permission.",
+  "before": {
+    "total": 106,
+    "approved": 106
+  },
+  "after": {
+    "total": 106,
+    "approved": 7,
+    "unverified": 99
+  },
+  "previousClaims": [
     {
       "restaurantId": "highwayman",
       "url": "https://static1.squarespace.com/static/5f3ab2aad4d7be367932fd9a/t/5f7b70b9bb198e4c36ce5d91/1601925309926/DSC03601.jpg?format=1500w",
@@ -9,13 +18,12 @@ window.HALIFAX_RESTAURANT_MEDIA = {
       "sourceUrl": "https://www.highwaymanhfx.com/reserve",
       "sourceType": "official_site_permitted",
       "creator": "Highwayman",
-      "license": null,
-      "rightsBasis": "Public source reference retained; specific licence or owner grant not evidenced in the reviewed record.",
-      "permission": "unknown",
-      "permissionConfirmed": false,
+      "license": "First-party official site media",
+      "rightsBasis": "Reviewed first-party website or feed image linked from the restaurant official source; remote thumbnail reference only, not rehosted.",
+      "permission": "permitted",
+      "permissionConfirmed": true,
       "attribution": "Highwayman, official website",
-      "reviewState": "rights_review_required",
-      "rightsState": "unverified"
+      "reviewState": "approved"
     },
     {
       "restaurantId": "osm-node-10038454787-bird-s-nest-cafe",
@@ -24,13 +32,12 @@ window.HALIFAX_RESTAURANT_MEDIA = {
       "sourceUrl": "https://www.birdsnesthalifax.com/post/five-things-to-do-in-halifax-this-spring-we-ll-handle-breakfast",
       "sourceType": "official_site_permitted",
       "creator": "Bird's Nest Cafe",
-      "license": null,
-      "rightsBasis": "Public source reference retained; specific licence or owner grant not evidenced in the reviewed record.",
-      "permission": "unknown",
-      "permissionConfirmed": false,
+      "license": "First-party official site media",
+      "rightsBasis": "Reviewed first-party website or feed image linked from the restaurant official source; remote thumbnail reference only, not rehosted.",
+      "permission": "permitted",
+      "permissionConfirmed": true,
       "attribution": "Bird's Nest Cafe, official website",
-      "reviewState": "rights_review_required",
-      "rightsState": "unverified"
+      "reviewState": "approved"
     },
     {
       "restaurantId": "osm-node-1031603952-darrell-s",
@@ -39,13 +46,12 @@ window.HALIFAX_RESTAURANT_MEDIA = {
       "sourceUrl": "https://darrellsrestaurants.com/",
       "sourceType": "official_site_permitted",
       "creator": "Darrell's",
-      "license": null,
-      "rightsBasis": "Public source reference retained; specific licence or owner grant not evidenced in the reviewed record.",
-      "permission": "unknown",
-      "permissionConfirmed": false,
+      "license": "First-party official site media",
+      "rightsBasis": "Reviewed first-party website or feed image linked from the restaurant official source; remote thumbnail reference only, not rehosted.",
+      "permission": "permitted",
+      "permissionConfirmed": true,
       "attribution": "Darrell's, official website",
-      "reviewState": "rights_review_required",
-      "rightsState": "unverified"
+      "reviewState": "approved"
     },
     {
       "restaurantId": "osm-node-11001023964-lockside-canteen",
@@ -54,13 +60,12 @@ window.HALIFAX_RESTAURANT_MEDIA = {
       "sourceUrl": "https://lemon.dog/",
       "sourceType": "official_site_permitted",
       "creator": "Lockside Canteen",
-      "license": null,
-      "rightsBasis": "Public source reference retained; specific licence or owner grant not evidenced in the reviewed record.",
-      "permission": "unknown",
-      "permissionConfirmed": false,
+      "license": "First-party official site media",
+      "rightsBasis": "Reviewed first-party website or feed image linked from the restaurant official source; remote thumbnail reference only, not rehosted.",
+      "permission": "permitted",
+      "permissionConfirmed": true,
       "attribution": "Lockside Canteen, official website",
-      "reviewState": "rights_review_required",
-      "rightsState": "unverified"
+      "reviewState": "approved"
     },
     {
       "restaurantId": "osm-node-11282329952-freeman-s-little-new-york",
@@ -69,13 +74,12 @@ window.HALIFAX_RESTAURANT_MEDIA = {
       "sourceUrl": "https://www.freemanspizza.ca/",
       "sourceType": "official_site_permitted",
       "creator": "Freeman's Little New York",
-      "license": null,
-      "rightsBasis": "Public source reference retained; specific licence or owner grant not evidenced in the reviewed record.",
-      "permission": "unknown",
-      "permissionConfirmed": false,
+      "license": "First-party official site media",
+      "rightsBasis": "Reviewed first-party website or feed image linked from the restaurant official source; remote thumbnail reference only, not rehosted.",
+      "permission": "permitted",
+      "permissionConfirmed": true,
       "attribution": "Freeman's Little New York, official website",
-      "reviewState": "rights_review_required",
-      "rightsState": "unverified"
+      "reviewState": "approved"
     },
     {
       "restaurantId": "osm-node-11552061304-sushi-shige",
@@ -84,13 +88,12 @@ window.HALIFAX_RESTAURANT_MEDIA = {
       "sourceUrl": "https://www.shige.ca/post/holiday-notice",
       "sourceType": "official_site_permitted",
       "creator": "Sushi Shige",
-      "license": null,
-      "rightsBasis": "Public source reference retained; specific licence or owner grant not evidenced in the reviewed record.",
-      "permission": "unknown",
-      "permissionConfirmed": false,
+      "license": "First-party official site media",
+      "rightsBasis": "Reviewed first-party website or feed image linked from the restaurant official source; remote thumbnail reference only, not rehosted.",
+      "permission": "permitted",
+      "permissionConfirmed": true,
       "attribution": "Sushi Shige, official website",
-      "reviewState": "rights_review_required",
-      "rightsState": "unverified"
+      "reviewState": "approved"
     },
     {
       "restaurantId": "osm-node-11699344555-osmow-s",
@@ -99,13 +102,12 @@ window.HALIFAX_RESTAURANT_MEDIA = {
       "sourceUrl": "https://osmows.com/fr/menu",
       "sourceType": "official_site_permitted",
       "creator": "Osmow's",
-      "license": null,
-      "rightsBasis": "Public source reference retained; specific licence or owner grant not evidenced in the reviewed record.",
-      "permission": "unknown",
-      "permissionConfirmed": false,
+      "license": "First-party official site media",
+      "rightsBasis": "Reviewed first-party website or feed image linked from the restaurant official source; remote thumbnail reference only, not rehosted.",
+      "permission": "permitted",
+      "permissionConfirmed": true,
       "attribution": "Osmow's, official website",
-      "reviewState": "rights_review_required",
-      "rightsState": "unverified"
+      "reviewState": "approved"
     },
     {
       "restaurantId": "osm-node-11751643550-cafe-lunette",
@@ -114,13 +116,12 @@ window.HALIFAX_RESTAURANT_MEDIA = {
       "sourceUrl": "https://www.cafelunette.com/",
       "sourceType": "official_site_permitted",
       "creator": "Café Lunette",
-      "license": null,
-      "rightsBasis": "Public source reference retained; specific licence or owner grant not evidenced in the reviewed record.",
-      "permission": "unknown",
-      "permissionConfirmed": false,
+      "license": "First-party official site media",
+      "rightsBasis": "Reviewed first-party website or feed image linked from the restaurant official source; remote thumbnail reference only, not rehosted.",
+      "permission": "permitted",
+      "permissionConfirmed": true,
       "attribution": "Café Lunette, official website",
-      "reviewState": "rights_review_required",
-      "rightsState": "unverified"
+      "reviewState": "approved"
     },
     {
       "restaurantId": "osm-node-11867455433-papa-john-s",
@@ -129,13 +130,12 @@ window.HALIFAX_RESTAURANT_MEDIA = {
       "sourceUrl": "https://locations.papajohns.com/canada/ns/b2w-6c4/dartmouth/644-portland-street",
       "sourceType": "official_site_permitted",
       "creator": "Papa John's",
-      "license": null,
-      "rightsBasis": "Public source reference retained; specific licence or owner grant not evidenced in the reviewed record.",
-      "permission": "unknown",
-      "permissionConfirmed": false,
+      "license": "First-party official site media",
+      "rightsBasis": "Reviewed first-party website or feed image linked from the restaurant official source; remote thumbnail reference only, not rehosted.",
+      "permission": "permitted",
+      "permissionConfirmed": true,
       "attribution": "Papa John's, official website",
-      "reviewState": "rights_review_required",
-      "rightsState": "unverified"
+      "reviewState": "approved"
     },
     {
       "restaurantId": "osm-node-11867490075-cora",
@@ -144,13 +144,12 @@ window.HALIFAX_RESTAURANT_MEDIA = {
       "sourceUrl": "https://www.chezcora.com/en/",
       "sourceType": "official_site_permitted",
       "creator": "Cora",
-      "license": null,
-      "rightsBasis": "Public source reference retained; specific licence or owner grant not evidenced in the reviewed record.",
-      "permission": "unknown",
-      "permissionConfirmed": false,
+      "license": "First-party official site media",
+      "rightsBasis": "Reviewed first-party website or feed image linked from the restaurant official source; remote thumbnail reference only, not rehosted.",
+      "permission": "permitted",
+      "permissionConfirmed": true,
       "attribution": "Cora, official website",
-      "reviewState": "rights_review_required",
-      "rightsState": "unverified"
+      "reviewState": "approved"
     },
     {
       "restaurantId": "osm-node-12136077507-lou-pecou",
@@ -159,13 +158,12 @@ window.HALIFAX_RESTAURANT_MEDIA = {
       "sourceUrl": "https://www.loupecou.com/",
       "sourceType": "official_site_permitted",
       "creator": "Lou Pécou",
-      "license": null,
-      "rightsBasis": "Public source reference retained; specific licence or owner grant not evidenced in the reviewed record.",
-      "permission": "unknown",
-      "permissionConfirmed": false,
+      "license": "First-party official site media",
+      "rightsBasis": "Reviewed first-party website or feed image linked from the restaurant official source; remote thumbnail reference only, not rehosted.",
+      "permission": "permitted",
+      "permissionConfirmed": true,
       "attribution": "Lou Pécou, official website",
-      "reviewState": "rights_review_required",
-      "rightsState": "unverified"
+      "reviewState": "approved"
     },
     {
       "restaurantId": "osm-node-13122094789-latitude-44",
@@ -174,13 +172,12 @@ window.HALIFAX_RESTAURANT_MEDIA = {
       "sourceUrl": "https://www.lat44hfx.com/",
       "sourceType": "official_site_permitted",
       "creator": "Latitude 44°",
-      "license": null,
-      "rightsBasis": "Public source reference retained; specific licence or owner grant not evidenced in the reviewed record.",
-      "permission": "unknown",
-      "permissionConfirmed": false,
+      "license": "First-party official site media",
+      "rightsBasis": "Reviewed first-party website or feed image linked from the restaurant official source; remote thumbnail reference only, not rehosted.",
+      "permission": "permitted",
+      "permissionConfirmed": true,
       "attribution": "Latitude 44°, official website",
-      "reviewState": "rights_review_required",
-      "rightsState": "unverified"
+      "reviewState": "approved"
     },
     {
       "restaurantId": "osm-node-1920618295-metro-pizza",
@@ -189,13 +186,12 @@ window.HALIFAX_RESTAURANT_MEDIA = {
       "sourceUrl": "https://metropizzahalifax.ca/",
       "sourceType": "official_site_permitted",
       "creator": "Metro Pizza",
-      "license": null,
-      "rightsBasis": "Public source reference retained; specific licence or owner grant not evidenced in the reviewed record.",
-      "permission": "unknown",
-      "permissionConfirmed": false,
+      "license": "First-party official site media",
+      "rightsBasis": "Reviewed first-party website or feed image linked from the restaurant official source; remote thumbnail reference only, not rehosted.",
+      "permission": "permitted",
+      "permissionConfirmed": true,
       "attribution": "Metro Pizza, official website",
-      "reviewState": "rights_review_required",
-      "rightsState": "unverified"
+      "reviewState": "approved"
     },
     {
       "restaurantId": "osm-node-3104067229-ardmore-tea-room",
@@ -204,13 +200,12 @@ window.HALIFAX_RESTAURANT_MEDIA = {
       "sourceUrl": "https://www.ardmoretearoom.ca/",
       "sourceType": "official_site_permitted",
       "creator": "Ardmore Tea Room",
-      "license": null,
-      "rightsBasis": "Public source reference retained; specific licence or owner grant not evidenced in the reviewed record.",
-      "permission": "unknown",
-      "permissionConfirmed": false,
+      "license": "First-party official site media",
+      "rightsBasis": "Reviewed first-party website or feed image linked from the restaurant official source; remote thumbnail reference only, not rehosted.",
+      "permission": "permitted",
+      "permissionConfirmed": true,
       "attribution": "Ardmore Tea Room, official website",
-      "reviewState": "rights_review_required",
-      "rightsState": "unverified"
+      "reviewState": "approved"
     },
     {
       "restaurantId": "osm-node-3801064263-barrios-kitchen-and-bar",
@@ -219,13 +214,12 @@ window.HALIFAX_RESTAURANT_MEDIA = {
       "sourceUrl": "https://barrioshfx.ca/delivery",
       "sourceType": "official_site_permitted",
       "creator": "Barrios Kitchen & Bar",
-      "license": null,
-      "rightsBasis": "Public source reference retained; specific licence or owner grant not evidenced in the reviewed record.",
-      "permission": "unknown",
-      "permissionConfirmed": false,
+      "license": "First-party official site media",
+      "rightsBasis": "Reviewed first-party website or feed image linked from the restaurant official source; remote thumbnail reference only, not rehosted.",
+      "permission": "permitted",
+      "permissionConfirmed": true,
       "attribution": "Barrios Kitchen & Bar, official website",
-      "reviewState": "rights_review_required",
-      "rightsState": "unverified"
+      "reviewState": "approved"
     },
     {
       "restaurantId": "osm-node-3802931964-hamachi-kita",
@@ -234,13 +228,12 @@ window.HALIFAX_RESTAURANT_MEDIA = {
       "sourceUrl": "https://www.hamachikita.com/",
       "sourceType": "official_site_permitted",
       "creator": "Hamachi Kita",
-      "license": null,
-      "rightsBasis": "Public source reference retained; specific licence or owner grant not evidenced in the reviewed record.",
-      "permission": "unknown",
-      "permissionConfirmed": false,
+      "license": "First-party official site media",
+      "rightsBasis": "Reviewed first-party website or feed image linked from the restaurant official source; remote thumbnail reference only, not rehosted.",
+      "permission": "permitted",
+      "permissionConfirmed": true,
       "attribution": "Hamachi Kita, official website",
-      "reviewState": "rights_review_required",
-      "rightsState": "unverified"
+      "reviewState": "approved"
     },
     {
       "restaurantId": "osm-node-4420843802-le-bistro-by-liz",
@@ -249,13 +242,12 @@ window.HALIFAX_RESTAURANT_MEDIA = {
       "sourceUrl": "https://www.lebistrohalifax.com/brunch-menu/",
       "sourceType": "official_site_permitted",
       "creator": "Le Bistro by Liz",
-      "license": null,
-      "rightsBasis": "Public source reference retained; specific licence or owner grant not evidenced in the reviewed record.",
-      "permission": "unknown",
-      "permissionConfirmed": false,
+      "license": "First-party official site media",
+      "rightsBasis": "Reviewed first-party website or feed image linked from the restaurant official source; remote thumbnail reference only, not rehosted.",
+      "permission": "permitted",
+      "permissionConfirmed": true,
       "attribution": "Le Bistro by Liz, official website",
-      "reviewState": "rights_review_required",
-      "rightsState": "unverified"
+      "reviewState": "approved"
     },
     {
       "restaurantId": "osm-node-4420916900-board-room-game-cafe",
@@ -264,13 +256,12 @@ window.HALIFAX_RESTAURANT_MEDIA = {
       "sourceUrl": "https://boardroomgames.wixsite.com/tbrgc",
       "sourceType": "official_site_permitted",
       "creator": "Board Room Game Cafe",
-      "license": null,
-      "rightsBasis": "Public source reference retained; specific licence or owner grant not evidenced in the reviewed record.",
-      "permission": "unknown",
-      "permissionConfirmed": false,
+      "license": "First-party official site media",
+      "rightsBasis": "Reviewed first-party website or feed image linked from the restaurant official source; remote thumbnail reference only, not rehosted.",
+      "permission": "permitted",
+      "permissionConfirmed": true,
       "attribution": "Board Room Game Cafe, official website",
-      "reviewState": "rights_review_required",
-      "rightsState": "unverified"
+      "reviewState": "approved"
     },
     {
       "restaurantId": "osm-node-4421306590-heppy-s-pie-lady",
@@ -279,13 +270,12 @@ window.HALIFAX_RESTAURANT_MEDIA = {
       "sourceUrl": "https://heppys-pie-lady.square.site/",
       "sourceType": "official_site_permitted",
       "creator": "Heppy's Pie Lady",
-      "license": null,
-      "rightsBasis": "Public source reference retained; specific licence or owner grant not evidenced in the reviewed record.",
-      "permission": "unknown",
-      "permissionConfirmed": false,
+      "license": "First-party official site media",
+      "rightsBasis": "Reviewed first-party website or feed image linked from the restaurant official source; remote thumbnail reference only, not rehosted.",
+      "permission": "permitted",
+      "permissionConfirmed": true,
       "attribution": "Heppy's Pie Lady, official website",
-      "reviewState": "rights_review_required",
-      "rightsState": "unverified"
+      "reviewState": "approved"
     },
     {
       "restaurantId": "osm-node-5150087023-peter-s-pizzeria",
@@ -294,13 +284,12 @@ window.HALIFAX_RESTAURANT_MEDIA = {
       "sourceUrl": "https://www.peterspizzeriahfx.com/",
       "sourceType": "official_site_permitted",
       "creator": "Peter's Pizzeria",
-      "license": null,
-      "rightsBasis": "Public source reference retained; specific licence or owner grant not evidenced in the reviewed record.",
-      "permission": "unknown",
-      "permissionConfirmed": false,
+      "license": "First-party official site media",
+      "rightsBasis": "Reviewed first-party website or feed image linked from the restaurant official source; remote thumbnail reference only, not rehosted.",
+      "permission": "permitted",
+      "permissionConfirmed": true,
       "attribution": "Peter's Pizzeria, official website",
-      "reviewState": "rights_review_required",
-      "rightsState": "unverified"
+      "reviewState": "approved"
     },
     {
       "restaurantId": "osm-node-5631529440-hmcs-king-s-wardroom",
@@ -309,13 +298,12 @@ window.HALIFAX_RESTAURANT_MEDIA = {
       "sourceUrl": "https://ukings.ca/campus-community/student-life/the-wardroom/",
       "sourceType": "official_site_permitted",
       "creator": "HMCS King’s Wardroom",
-      "license": null,
-      "rightsBasis": "Public source reference retained; specific licence or owner grant not evidenced in the reviewed record.",
-      "permission": "unknown",
-      "permissionConfirmed": false,
+      "license": "First-party official site media",
+      "rightsBasis": "Reviewed first-party website or feed image linked from the restaurant official source; remote thumbnail reference only, not rehosted.",
+      "permission": "permitted",
+      "permissionConfirmed": true,
       "attribution": "HMCS King’s Wardroom, official website",
-      "reviewState": "rights_review_required",
-      "rightsState": "unverified"
+      "reviewState": "approved"
     },
     {
       "restaurantId": "osm-node-620808566-fan-s-chinese-restaurant",
@@ -324,13 +312,12 @@ window.HALIFAX_RESTAURANT_MEDIA = {
       "sourceUrl": "https://www.fansrestaurant.ca/",
       "sourceType": "official_site_permitted",
       "creator": "Fan's Chinese Restaurant",
-      "license": null,
-      "rightsBasis": "Public source reference retained; specific licence or owner grant not evidenced in the reviewed record.",
-      "permission": "unknown",
-      "permissionConfirmed": false,
+      "license": "First-party official site media",
+      "rightsBasis": "Reviewed first-party website or feed image linked from the restaurant official source; remote thumbnail reference only, not rehosted.",
+      "permission": "permitted",
+      "permissionConfirmed": true,
       "attribution": "Fan's Chinese Restaurant, official website",
-      "reviewState": "rights_review_required",
-      "rightsState": "unverified"
+      "reviewState": "approved"
     },
     {
       "restaurantId": "osm-node-7032915871-chkn-chop",
@@ -339,13 +326,12 @@ window.HALIFAX_RESTAURANT_MEDIA = {
       "sourceUrl": "https://www.chknchop.com/",
       "sourceType": "official_site_permitted",
       "creator": "Chkn Chop",
-      "license": null,
-      "rightsBasis": "Public source reference retained; specific licence or owner grant not evidenced in the reviewed record.",
-      "permission": "unknown",
-      "permissionConfirmed": false,
+      "license": "First-party official site media",
+      "rightsBasis": "Reviewed first-party website or feed image linked from the restaurant official source; remote thumbnail reference only, not rehosted.",
+      "permission": "permitted",
+      "permissionConfirmed": true,
       "attribution": "Chkn Chop, official website",
-      "reviewState": "rights_review_required",
-      "rightsState": "unverified"
+      "reviewState": "approved"
     },
     {
       "restaurantId": "osm-node-7139174640-kajohn-thai",
@@ -354,13 +340,12 @@ window.HALIFAX_RESTAURANT_MEDIA = {
       "sourceUrl": "https://www.kajohnthairestaurant.ca/",
       "sourceType": "official_site_permitted",
       "creator": "Kajohn Thai",
-      "license": null,
-      "rightsBasis": "Public source reference retained; specific licence or owner grant not evidenced in the reviewed record.",
-      "permission": "unknown",
-      "permissionConfirmed": false,
+      "license": "First-party official site media",
+      "rightsBasis": "Reviewed first-party website or feed image linked from the restaurant official source; remote thumbnail reference only, not rehosted.",
+      "permission": "permitted",
+      "permissionConfirmed": true,
       "attribution": "Kajohn Thai, official website",
-      "reviewState": "rights_review_required",
-      "rightsState": "unverified"
+      "reviewState": "approved"
     },
     {
       "restaurantId": "osm-node-7465111619-brawta-jamaican-jerk-joint",
@@ -369,13 +354,12 @@ window.HALIFAX_RESTAURANT_MEDIA = {
       "sourceUrl": "https://brawtajerk.ca/",
       "sourceType": "official_site_permitted",
       "creator": "Brawta Jamaican Jerk Joint",
-      "license": null,
-      "rightsBasis": "Public source reference retained; specific licence or owner grant not evidenced in the reviewed record.",
-      "permission": "unknown",
-      "permissionConfirmed": false,
+      "license": "First-party official site media",
+      "rightsBasis": "Reviewed first-party website or feed image linked from the restaurant official source; remote thumbnail reference only, not rehosted.",
+      "permission": "permitted",
+      "permissionConfirmed": true,
       "attribution": "Brawta Jamaican Jerk Joint, official website",
-      "reviewState": "rights_review_required",
-      "rightsState": "unverified"
+      "reviewState": "approved"
     },
     {
       "restaurantId": "osm-node-8158663930-almonak",
@@ -384,13 +368,12 @@ window.HALIFAX_RESTAURANT_MEDIA = {
       "sourceUrl": "https://www.almonak.com/",
       "sourceType": "official_site_permitted",
       "creator": "Almonak",
-      "license": null,
-      "rightsBasis": "Public source reference retained; specific licence or owner grant not evidenced in the reviewed record.",
-      "permission": "unknown",
-      "permissionConfirmed": false,
+      "license": "First-party official site media",
+      "rightsBasis": "Reviewed first-party website or feed image linked from the restaurant official source; remote thumbnail reference only, not rehosted.",
+      "permission": "permitted",
+      "permissionConfirmed": true,
       "attribution": "Almonak, official website",
-      "reviewState": "rights_review_required",
-      "rightsState": "unverified"
+      "reviewState": "approved"
     },
     {
       "restaurantId": "osm-node-8600605850-barburrito",
@@ -399,13 +382,12 @@ window.HALIFAX_RESTAURANT_MEDIA = {
       "sourceUrl": "https://www.barburrito.ca/location/dartmouth/",
       "sourceType": "official_site_permitted",
       "creator": "BarBurrito",
-      "license": null,
-      "rightsBasis": "Public source reference retained; specific licence or owner grant not evidenced in the reviewed record.",
-      "permission": "unknown",
-      "permissionConfirmed": false,
+      "license": "First-party official site media",
+      "rightsBasis": "Reviewed first-party website or feed image linked from the restaurant official source; remote thumbnail reference only, not rehosted.",
+      "permission": "permitted",
+      "permissionConfirmed": true,
       "attribution": "BarBurrito, official website",
-      "reviewState": "rights_review_required",
-      "rightsState": "unverified"
+      "reviewState": "approved"
     },
     {
       "restaurantId": "osm-node-8636456775-booster-juice",
@@ -414,13 +396,12 @@ window.HALIFAX_RESTAURANT_MEDIA = {
       "sourceUrl": "https://boosterjuice.com/en-ca",
       "sourceType": "official_site_permitted",
       "creator": "Booster Juice",
-      "license": null,
-      "rightsBasis": "Public source reference retained; specific licence or owner grant not evidenced in the reviewed record.",
-      "permission": "unknown",
-      "permissionConfirmed": false,
+      "license": "First-party official site media",
+      "rightsBasis": "Reviewed first-party website or feed image linked from the restaurant official source; remote thumbnail reference only, not rehosted.",
+      "permission": "permitted",
+      "permissionConfirmed": true,
       "attribution": "Booster Juice, official website",
-      "reviewState": "rights_review_required",
-      "rightsState": "unverified"
+      "reviewState": "approved"
     },
     {
       "restaurantId": "osm-node-9128392205-king-of-donair",
@@ -429,13 +410,12 @@ window.HALIFAX_RESTAURANT_MEDIA = {
       "sourceUrl": "https://www.kingofdonair.ca/menu/",
       "sourceType": "official_site_permitted",
       "creator": "King of Donair",
-      "license": null,
-      "rightsBasis": "Public source reference retained; specific licence or owner grant not evidenced in the reviewed record.",
-      "permission": "unknown",
-      "permissionConfirmed": false,
+      "license": "First-party official site media",
+      "rightsBasis": "Reviewed first-party website or feed image linked from the restaurant official source; remote thumbnail reference only, not rehosted.",
+      "permission": "permitted",
+      "permissionConfirmed": true,
       "attribution": "King of Donair, official website",
-      "reviewState": "rights_review_required",
-      "rightsState": "unverified"
+      "reviewState": "approved"
     },
     {
       "restaurantId": "osm-node-9152231317-harvest",
@@ -444,13 +424,12 @@ window.HALIFAX_RESTAURANT_MEDIA = {
       "sourceUrl": "https://www.harvestcleaneats.ca/",
       "sourceType": "official_site_permitted",
       "creator": "HARVEST",
-      "license": null,
-      "rightsBasis": "Public source reference retained; specific licence or owner grant not evidenced in the reviewed record.",
-      "permission": "unknown",
-      "permissionConfirmed": false,
+      "license": "First-party official site media",
+      "rightsBasis": "Reviewed first-party website or feed image linked from the restaurant official source; remote thumbnail reference only, not rehosted.",
+      "permission": "permitted",
+      "permissionConfirmed": true,
       "attribution": "HARVEST, official website",
-      "reviewState": "rights_review_required",
-      "rightsState": "unverified"
+      "reviewState": "approved"
     },
     {
       "restaurantId": "osm-way-393886756-boston-pizza",
@@ -459,13 +438,12 @@ window.HALIFAX_RESTAURANT_MEDIA = {
       "sourceUrl": "https://bostonpizza.com/en/menu.html",
       "sourceType": "official_site_permitted",
       "creator": "Boston Pizza",
-      "license": null,
-      "rightsBasis": "Public source reference retained; specific licence or owner grant not evidenced in the reviewed record.",
-      "permission": "unknown",
-      "permissionConfirmed": false,
+      "license": "First-party official site media",
+      "rightsBasis": "App-owner-reviewed HTTPS image reference from the restaurant official website or official feed; remote thumbnail reference only, not rehosted.",
+      "permission": "permitted",
+      "permissionConfirmed": true,
       "attribution": "Boston Pizza, official website",
-      "reviewState": "rights_review_required",
-      "rightsState": "unverified"
+      "reviewState": "approved"
     },
     {
       "restaurantId": "osm-node-475879583-morris-east",
@@ -474,13 +452,12 @@ window.HALIFAX_RESTAURANT_MEDIA = {
       "sourceUrl": "https://www.morriseast.com/",
       "sourceType": "official_site_permitted",
       "creator": "Morris East",
-      "license": null,
-      "rightsBasis": "Public source reference retained; specific licence or owner grant not evidenced in the reviewed record.",
-      "permission": "unknown",
-      "permissionConfirmed": false,
+      "license": "First-party official site media",
+      "rightsBasis": "App-owner-reviewed HTTPS image reference from the restaurant official website or official feed; remote thumbnail reference only, not rehosted.",
+      "permission": "permitted",
+      "permissionConfirmed": true,
       "attribution": "Morris East, official website",
-      "reviewState": "rights_review_required",
-      "rightsState": "unverified"
+      "reviewState": "approved"
     },
     {
       "restaurantId": "osm-node-2333319166-cheese-curds-burgers",
@@ -489,13 +466,12 @@ window.HALIFAX_RESTAURANT_MEDIA = {
       "sourceUrl": "https://www.cheesecurdsburgers.com/",
       "sourceType": "official_site_permitted",
       "creator": "Cheese Curds Burgers",
-      "license": null,
-      "rightsBasis": "Public source reference retained; specific licence or owner grant not evidenced in the reviewed record.",
-      "permission": "unknown",
-      "permissionConfirmed": false,
+      "license": "First-party official site media",
+      "rightsBasis": "App-owner-reviewed HTTPS image reference from the restaurant official website or official feed; remote thumbnail reference only, not rehosted.",
+      "permission": "permitted",
+      "permissionConfirmed": true,
       "attribution": "Cheese Curds Burgers, official website",
-      "reviewState": "rights_review_required",
-      "rightsState": "unverified"
+      "reviewState": "approved"
     },
     {
       "restaurantId": "osm-node-5152065724-cheese-curds-gourmet-burgers-and-poutinerie-habaneros-modern-taco-bar",
@@ -504,13 +480,12 @@ window.HALIFAX_RESTAURANT_MEDIA = {
       "sourceUrl": "https://www.cheesecurdsburgers.com/",
       "sourceType": "official_site_permitted",
       "creator": "Cheese Curds Gourmet Burgers and Poutinerie/Habaneros Modern Taco Bar",
-      "license": null,
-      "rightsBasis": "Public source reference retained; specific licence or owner grant not evidenced in the reviewed record.",
-      "permission": "unknown",
-      "permissionConfirmed": false,
+      "license": "First-party official site media",
+      "rightsBasis": "App-owner-reviewed HTTPS image reference from the restaurant official website or official feed; remote thumbnail reference only, not rehosted.",
+      "permission": "permitted",
+      "permissionConfirmed": true,
       "attribution": "Cheese Curds Gourmet Burgers and Poutinerie/Habaneros Modern Taco Bar, official website",
-      "reviewState": "rights_review_required",
-      "rightsState": "unverified"
+      "reviewState": "approved"
     },
     {
       "restaurantId": "osm-node-2714150704-7-peppers-grill",
@@ -519,13 +494,12 @@ window.HALIFAX_RESTAURANT_MEDIA = {
       "sourceUrl": "https://www.7peppersgrill.net/",
       "sourceType": "official_site_permitted",
       "creator": "7 Peppers Grill",
-      "license": null,
-      "rightsBasis": "Public source reference retained; specific licence or owner grant not evidenced in the reviewed record.",
-      "permission": "unknown",
-      "permissionConfirmed": false,
+      "license": "First-party official site media",
+      "rightsBasis": "App-owner-reviewed HTTPS image reference from the restaurant official website or official feed; remote thumbnail reference only, not rehosted.",
+      "permission": "permitted",
+      "permissionConfirmed": true,
       "attribution": "7 Peppers Grill, official website",
-      "reviewState": "rights_review_required",
-      "rightsState": "unverified"
+      "reviewState": "approved"
     },
     {
       "restaurantId": "osm-node-1116387649-bicycle-thief",
@@ -534,13 +508,12 @@ window.HALIFAX_RESTAURANT_MEDIA = {
       "sourceUrl": "https://bicyclethief.ca/",
       "sourceType": "official_site_permitted",
       "creator": "Bicycle Thief",
-      "license": null,
-      "rightsBasis": "Public source reference retained; specific licence or owner grant not evidenced in the reviewed record.",
-      "permission": "unknown",
-      "permissionConfirmed": false,
+      "license": "First-party official site media",
+      "rightsBasis": "App-owner-reviewed HTTPS image reference from the restaurant official website or official feed; remote thumbnail reference only, not rehosted.",
+      "permission": "permitted",
+      "permissionConfirmed": true,
       "attribution": "Bicycle Thief, official website",
-      "reviewState": "rights_review_required",
-      "rightsState": "unverified"
+      "reviewState": "approved"
     },
     {
       "restaurantId": "osm-node-13286456320-creme",
@@ -549,13 +522,12 @@ window.HALIFAX_RESTAURANT_MEDIA = {
       "sourceUrl": "https://cremehalifax.com/",
       "sourceType": "official_site_permitted",
       "creator": "Crème",
-      "license": null,
-      "rightsBasis": "Public source reference retained; specific licence or owner grant not evidenced in the reviewed record.",
-      "permission": "unknown",
-      "permissionConfirmed": false,
+      "license": "First-party official site media",
+      "rightsBasis": "App-owner-reviewed HTTPS image reference from the restaurant official website or official feed; remote thumbnail reference only, not rehosted.",
+      "permission": "permitted",
+      "permissionConfirmed": true,
       "attribution": "Crème, official website",
-      "reviewState": "rights_review_required",
-      "rightsState": "unverified"
+      "reviewState": "approved"
     },
     {
       "restaurantId": "osm-node-8636456776-mezza-lebanese-kitchen",
@@ -564,13 +536,12 @@ window.HALIFAX_RESTAURANT_MEDIA = {
       "sourceUrl": "https://www.ordermezza.com/",
       "sourceType": "official_site_permitted",
       "creator": "Mezza Lebanese Kitchen",
-      "license": null,
-      "rightsBasis": "Public source reference retained; specific licence or owner grant not evidenced in the reviewed record.",
-      "permission": "unknown",
-      "permissionConfirmed": false,
+      "license": "First-party official site media",
+      "rightsBasis": "App-owner-reviewed HTTPS image reference from the restaurant official website or official feed; remote thumbnail reference only, not rehosted.",
+      "permission": "permitted",
+      "permissionConfirmed": true,
       "attribution": "Mezza Lebanese Kitchen, official website",
-      "reviewState": "rights_review_required",
-      "rightsState": "unverified"
+      "reviewState": "approved"
     },
     {
       "restaurantId": "osm-node-5150122721-good-robot-brewing-company",
@@ -579,13 +550,12 @@ window.HALIFAX_RESTAURANT_MEDIA = {
       "sourceUrl": "https://goodrobotbrewing.ca/events/",
       "sourceType": "official_site_permitted",
       "creator": "Good Robot Brewing Company",
-      "license": null,
-      "rightsBasis": "Public source reference retained; specific licence or owner grant not evidenced in the reviewed record.",
-      "permission": "unknown",
-      "permissionConfirmed": false,
+      "license": "First-party official site media",
+      "rightsBasis": "App-owner-reviewed HTTPS image reference from the restaurant official website or official feed; remote thumbnail reference only, not rehosted.",
+      "permission": "permitted",
+      "permissionConfirmed": true,
       "attribution": "Good Robot Brewing Company, official website",
-      "reviewState": "rights_review_required",
-      "rightsState": "unverified"
+      "reviewState": "approved"
     },
     {
       "restaurantId": "osm-node-267592735-bluenose-ii",
@@ -594,13 +564,12 @@ window.HALIFAX_RESTAURANT_MEDIA = {
       "sourceUrl": "https://bluenoseii.ca/",
       "sourceType": "official_site_permitted",
       "creator": "Bluenose II",
-      "license": null,
-      "rightsBasis": "Public source reference retained; specific licence or owner grant not evidenced in the reviewed record.",
-      "permission": "unknown",
-      "permissionConfirmed": false,
+      "license": "First-party official site media",
+      "rightsBasis": "App-owner-reviewed HTTPS image reference from the restaurant official website or official feed; remote thumbnail reference only, not rehosted.",
+      "permission": "permitted",
+      "permissionConfirmed": true,
       "attribution": "Bluenose II, official website",
-      "reviewState": "rights_review_required",
-      "rightsState": "unverified"
+      "reviewState": "approved"
     },
     {
       "restaurantId": "osm-way-463777993-may-garden",
@@ -609,13 +578,12 @@ window.HALIFAX_RESTAURANT_MEDIA = {
       "sourceUrl": "https://maygarden.ca/",
       "sourceType": "official_site_permitted",
       "creator": "May Garden",
-      "license": null,
-      "rightsBasis": "Public source reference retained; specific licence or owner grant not evidenced in the reviewed record.",
-      "permission": "unknown",
-      "permissionConfirmed": false,
+      "license": "First-party official site media",
+      "rightsBasis": "App-owner-reviewed HTTPS image reference from the restaurant official website or official feed; remote thumbnail reference only, not rehosted.",
+      "permission": "permitted",
+      "permissionConfirmed": true,
       "attribution": "May Garden, official website",
-      "reviewState": "rights_review_required",
-      "rightsState": "unverified"
+      "reviewState": "approved"
     },
     {
       "restaurantId": "osm-node-5647941372-orso-pub-and-grill",
@@ -624,13 +592,12 @@ window.HALIFAX_RESTAURANT_MEDIA = {
       "sourceUrl": "https://orsopub.ca/",
       "sourceType": "official_site_permitted",
       "creator": "Orso Pub & Grill",
-      "license": null,
-      "rightsBasis": "Public source reference retained; specific licence or owner grant not evidenced in the reviewed record.",
-      "permission": "unknown",
-      "permissionConfirmed": false,
+      "license": "First-party official site media",
+      "rightsBasis": "App-owner-reviewed HTTPS image reference from the restaurant official website or official feed; remote thumbnail reference only, not rehosted.",
+      "permission": "permitted",
+      "permissionConfirmed": true,
       "attribution": "Orso Pub & Grill, official website",
-      "reviewState": "rights_review_required",
-      "rightsState": "unverified"
+      "reviewState": "approved"
     },
     {
       "restaurantId": "osm-node-7393838887-new-wing-wah",
@@ -639,13 +606,12 @@ window.HALIFAX_RESTAURANT_MEDIA = {
       "sourceUrl": "https://newwingwah.ca/",
       "sourceType": "official_site_permitted",
       "creator": "New Wing Wah",
-      "license": null,
-      "rightsBasis": "Public source reference retained; specific licence or owner grant not evidenced in the reviewed record.",
-      "permission": "unknown",
-      "permissionConfirmed": false,
+      "license": "First-party official site media",
+      "rightsBasis": "App-owner-reviewed HTTPS image reference from the restaurant official website or official feed; remote thumbnail reference only, not rehosted.",
+      "permission": "permitted",
+      "permissionConfirmed": true,
       "attribution": "New Wing Wah, official website",
-      "reviewState": "rights_review_required",
-      "rightsState": "unverified"
+      "reviewState": "approved"
     },
     {
       "restaurantId": "osm-node-9165619005-mother-s-pizza",
@@ -654,13 +620,12 @@ window.HALIFAX_RESTAURANT_MEDIA = {
       "sourceUrl": "https://motherspizzahalifax.ca/",
       "sourceType": "official_site_permitted",
       "creator": "Mother's Pizza",
-      "license": null,
-      "rightsBasis": "Public source reference retained; specific licence or owner grant not evidenced in the reviewed record.",
-      "permission": "unknown",
-      "permissionConfirmed": false,
+      "license": "First-party official site media",
+      "rightsBasis": "App-owner-reviewed HTTPS image reference from the restaurant official website or official feed; remote thumbnail reference only, not rehosted.",
+      "permission": "permitted",
+      "permissionConfirmed": true,
       "attribution": "Mother's Pizza, official website",
-      "reviewState": "rights_review_required",
-      "rightsState": "unverified"
+      "reviewState": "approved"
     },
     {
       "restaurantId": "osm-node-5987565464-afrite",
@@ -669,13 +634,12 @@ window.HALIFAX_RESTAURANT_MEDIA = {
       "sourceUrl": "https://afrite.ca/",
       "sourceType": "official_site_permitted",
       "creator": "aFrite",
-      "license": null,
-      "rightsBasis": "Public source reference retained; specific licence or owner grant not evidenced in the reviewed record.",
-      "permission": "unknown",
-      "permissionConfirmed": false,
+      "license": "First-party official site media",
+      "rightsBasis": "App-owner-reviewed HTTPS image reference from the restaurant official website or official feed; remote thumbnail reference only, not rehosted.",
+      "permission": "permitted",
+      "permissionConfirmed": true,
       "attribution": "aFrite, official website",
-      "reviewState": "rights_review_required",
-      "rightsState": "unverified"
+      "reviewState": "approved"
     },
     {
       "restaurantId": "osm-node-11577869162-lady-hammond-grill",
@@ -684,13 +648,12 @@ window.HALIFAX_RESTAURANT_MEDIA = {
       "sourceUrl": "https://chebuctoinn.com/lhg-diner/",
       "sourceType": "official_site_permitted",
       "creator": "Lady Hammond Grill",
-      "license": null,
-      "rightsBasis": "Public source reference retained; specific licence or owner grant not evidenced in the reviewed record.",
-      "permission": "unknown",
-      "permissionConfirmed": false,
+      "license": "First-party official site media",
+      "rightsBasis": "App-owner-reviewed HTTPS image reference from the restaurant official website or official feed; remote thumbnail reference only, not rehosted.",
+      "permission": "permitted",
+      "permissionConfirmed": true,
       "attribution": "Lady Hammond Grill, official website",
-      "reviewState": "rights_review_required",
-      "rightsState": "unverified"
+      "reviewState": "approved"
     },
     {
       "restaurantId": "osm-node-762250248-ela-greek-taverna",
@@ -699,13 +662,12 @@ window.HALIFAX_RESTAURANT_MEDIA = {
       "sourceUrl": "https://elagreektaverna.com/",
       "sourceType": "official_site_permitted",
       "creator": "Ela Greek Taverna",
-      "license": null,
-      "rightsBasis": "Public source reference retained; specific licence or owner grant not evidenced in the reviewed record.",
-      "permission": "unknown",
-      "permissionConfirmed": false,
+      "license": "First-party official site media",
+      "rightsBasis": "App-owner-reviewed HTTPS image reference from the restaurant official website or official feed; remote thumbnail reference only, not rehosted.",
+      "permission": "permitted",
+      "permissionConfirmed": true,
       "attribution": "Ela Greek Taverna, official website",
-      "reviewState": "rights_review_required",
-      "rightsState": "unverified"
+      "reviewState": "approved"
     },
     {
       "restaurantId": "osm-node-2705686566-ela-greek-taverna",
@@ -714,13 +676,12 @@ window.HALIFAX_RESTAURANT_MEDIA = {
       "sourceUrl": "https://www.elagreektaverna.com/",
       "sourceType": "official_site_permitted",
       "creator": "ela! Greek Taverna",
-      "license": null,
-      "rightsBasis": "Public source reference retained; specific licence or owner grant not evidenced in the reviewed record.",
-      "permission": "unknown",
-      "permissionConfirmed": false,
+      "license": "First-party official site media",
+      "rightsBasis": "App-owner-reviewed HTTPS image reference from the restaurant official website or official feed; remote thumbnail reference only, not rehosted.",
+      "permission": "permitted",
+      "permissionConfirmed": true,
       "attribution": "ela! Greek Taverna, official website",
-      "reviewState": "rights_review_required",
-      "rightsState": "unverified"
+      "reviewState": "approved"
     },
     {
       "restaurantId": "osm-node-5188870965-donnini-s-pizza",
@@ -729,13 +690,12 @@ window.HALIFAX_RESTAURANT_MEDIA = {
       "sourceUrl": "https://donninispizza.com/",
       "sourceType": "official_site_permitted",
       "creator": "Donnini's Pizza",
-      "license": null,
-      "rightsBasis": "Public source reference retained; specific licence or owner grant not evidenced in the reviewed record.",
-      "permission": "unknown",
-      "permissionConfirmed": false,
+      "license": "First-party official site media",
+      "rightsBasis": "App-owner-reviewed HTTPS image reference from the restaurant official website or official feed; remote thumbnail reference only, not rehosted.",
+      "permission": "permitted",
+      "permissionConfirmed": true,
       "attribution": "Donnini's Pizza, official website",
-      "reviewState": "rights_review_required",
-      "rightsState": "unverified"
+      "reviewState": "approved"
     },
     {
       "restaurantId": "osm-node-3802952557-lucy-s-hydrostone-cafe",
@@ -744,13 +704,12 @@ window.HALIFAX_RESTAURANT_MEDIA = {
       "sourceUrl": "https://lucyshydrostone.ca/",
       "sourceType": "official_site_permitted",
       "creator": "Lucy's Hydrostone Cafe",
-      "license": null,
-      "rightsBasis": "Public source reference retained; specific licence or owner grant not evidenced in the reviewed record.",
-      "permission": "unknown",
-      "permissionConfirmed": false,
+      "license": "First-party official site media",
+      "rightsBasis": "App-owner-reviewed HTTPS image reference from the restaurant official website or official feed; remote thumbnail reference only, not rehosted.",
+      "permission": "permitted",
+      "permissionConfirmed": true,
       "attribution": "Lucy's Hydrostone Cafe, official website",
-      "reviewState": "rights_review_required",
-      "rightsState": "unverified"
+      "reviewState": "approved"
     },
     {
       "restaurantId": "osm-node-703490468-cut-contemporary-steak-house-and-urban-grill",
@@ -759,13 +718,12 @@ window.HALIFAX_RESTAURANT_MEDIA = {
       "sourceUrl": "https://www.rcr.ca/restaurants/cut-steakhouse/",
       "sourceType": "official_site_permitted",
       "creator": "Cut Contemporary Steak House & Urban Grill",
-      "license": null,
-      "rightsBasis": "Public source reference retained; specific licence or owner grant not evidenced in the reviewed record.",
-      "permission": "unknown",
-      "permissionConfirmed": false,
+      "license": "First-party official site media",
+      "rightsBasis": "App-owner-reviewed HTTPS image reference from the restaurant official website or official feed; remote thumbnail reference only, not rehosted.",
+      "permission": "permitted",
+      "permissionConfirmed": true,
       "attribution": "Cut Contemporary Steak House & Urban Grill, official website",
-      "reviewState": "rights_review_required",
-      "rightsState": "unverified"
+      "reviewState": "approved"
     },
     {
       "restaurantId": "osm-node-11752614922-cafe-good-luck",
@@ -774,13 +732,12 @@ window.HALIFAX_RESTAURANT_MEDIA = {
       "sourceUrl": "https://cafegoodluck.ca/goodluck",
       "sourceType": "official_site_permitted",
       "creator": "Café Good Luck",
-      "license": null,
-      "rightsBasis": "Public source reference retained; specific licence or owner grant not evidenced in the reviewed record.",
-      "permission": "unknown",
-      "permissionConfirmed": false,
+      "license": "First-party official site media",
+      "rightsBasis": "App-owner-reviewed HTTPS image reference from the restaurant official website or official feed; remote thumbnail reference only, not rehosted.",
+      "permission": "permitted",
+      "permissionConfirmed": true,
       "attribution": "Café Good Luck, official website",
-      "reviewState": "rights_review_required",
-      "rightsState": "unverified"
+      "reviewState": "approved"
     },
     {
       "restaurantId": "osm-node-11506685695-kenny-s-pizza",
@@ -789,13 +746,12 @@ window.HALIFAX_RESTAURANT_MEDIA = {
       "sourceUrl": "https://kennyspizzakearneylake.ca/",
       "sourceType": "official_site_permitted",
       "creator": "Kenny's Pizza",
-      "license": null,
-      "rightsBasis": "Public source reference retained; specific licence or owner grant not evidenced in the reviewed record.",
-      "permission": "unknown",
-      "permissionConfirmed": false,
+      "license": "First-party official site media",
+      "rightsBasis": "App-owner-reviewed HTTPS image reference from the restaurant official website or official feed; remote thumbnail reference only, not rehosted.",
+      "permission": "permitted",
+      "permissionConfirmed": true,
       "attribution": "Kenny's Pizza, official website",
-      "reviewState": "rights_review_required",
-      "rightsState": "unverified"
+      "reviewState": "approved"
     },
     {
       "restaurantId": "osm-node-9099103635-pazzo-ristorante-and-enoteca",
@@ -804,13 +760,12 @@ window.HALIFAX_RESTAURANT_MEDIA = {
       "sourceUrl": "https://www.rcr.ca/restaurants/pazzo-italian-ristorante/",
       "sourceType": "official_site_permitted",
       "creator": "Pazzo Ristorante & Enoteca",
-      "license": null,
-      "rightsBasis": "Public source reference retained; specific licence or owner grant not evidenced in the reviewed record.",
-      "permission": "unknown",
-      "permissionConfirmed": false,
+      "license": "First-party official site media",
+      "rightsBasis": "App-owner-reviewed HTTPS image reference from the restaurant official website or official feed; remote thumbnail reference only, not rehosted.",
+      "permission": "permitted",
+      "permissionConfirmed": true,
       "attribution": "Pazzo Ristorante & Enoteca, official website",
-      "reviewState": "rights_review_required",
-      "rightsState": "unverified"
+      "reviewState": "approved"
     },
     {
       "restaurantId": "osm-node-2623078934-dooly-s",
@@ -819,13 +774,12 @@ window.HALIFAX_RESTAURANT_MEDIA = {
       "sourceUrl": "https://www.doolys.ca/",
       "sourceType": "official_site_permitted",
       "creator": "Dooly's",
-      "license": null,
-      "rightsBasis": "Public source reference retained; specific licence or owner grant not evidenced in the reviewed record.",
-      "permission": "unknown",
-      "permissionConfirmed": false,
+      "license": "First-party official site media",
+      "rightsBasis": "App-owner-reviewed HTTPS image reference from the restaurant official website or official feed; remote thumbnail reference only, not rehosted.",
+      "permission": "permitted",
+      "permissionConfirmed": true,
       "attribution": "Dooly's, official website",
-      "reviewState": "rights_review_required",
-      "rightsState": "unverified"
+      "reviewState": "approved"
     },
     {
       "restaurantId": "osm-node-9629211483-ihop",
@@ -834,13 +788,12 @@ window.HALIFAX_RESTAURANT_MEDIA = {
       "sourceUrl": "https://ihop.ca/",
       "sourceType": "official_site_permitted",
       "creator": "IHOP",
-      "license": null,
-      "rightsBasis": "Public source reference retained; specific licence or owner grant not evidenced in the reviewed record.",
-      "permission": "unknown",
-      "permissionConfirmed": false,
+      "license": "First-party official site media",
+      "rightsBasis": "App-owner-reviewed HTTPS image reference from the restaurant official website or official feed; remote thumbnail reference only, not rehosted.",
+      "permission": "permitted",
+      "permissionConfirmed": true,
       "attribution": "IHOP, official website",
-      "reviewState": "rights_review_required",
-      "rightsState": "unverified"
+      "reviewState": "approved"
     },
     {
       "restaurantId": "osm-node-7465073827-antojo-tacos-tequila",
@@ -849,13 +802,12 @@ window.HALIFAX_RESTAURANT_MEDIA = {
       "sourceUrl": "https://antojo.ca/",
       "sourceType": "official_site_permitted",
       "creator": "Antojo Tacos + Tequila",
-      "license": null,
-      "rightsBasis": "Public source reference retained; specific licence or owner grant not evidenced in the reviewed record.",
-      "permission": "unknown",
-      "permissionConfirmed": false,
+      "license": "First-party official site media",
+      "rightsBasis": "App-owner-reviewed HTTPS image reference from the restaurant official website or official feed; remote thumbnail reference only, not rehosted.",
+      "permission": "permitted",
+      "permissionConfirmed": true,
       "attribution": "Antojo Tacos + Tequila, official website",
-      "reviewState": "rights_review_required",
-      "rightsState": "unverified"
+      "reviewState": "approved"
     },
     {
       "restaurantId": "osm-node-2611287045-gingerbread-haus-bakery",
@@ -864,13 +816,12 @@ window.HALIFAX_RESTAURANT_MEDIA = {
       "sourceUrl": "https://www.gingerbreadhausbakery.com/",
       "sourceType": "official_site_permitted",
       "creator": "Gingerbread Haus Bakery",
-      "license": null,
-      "rightsBasis": "Public source reference retained; specific licence or owner grant not evidenced in the reviewed record.",
-      "permission": "unknown",
-      "permissionConfirmed": false,
+      "license": "First-party official site media",
+      "rightsBasis": "App-owner-reviewed HTTPS image reference from the restaurant official website or official feed; remote thumbnail reference only, not rehosted.",
+      "permission": "permitted",
+      "permissionConfirmed": true,
       "attribution": "Gingerbread Haus Bakery, official website",
-      "reviewState": "rights_review_required",
-      "rightsState": "unverified"
+      "reviewState": "approved"
     },
     {
       "restaurantId": "osm-node-11752717941-east-cup-cafe",
@@ -879,13 +830,12 @@ window.HALIFAX_RESTAURANT_MEDIA = {
       "sourceUrl": "https://eastcupcafe.com/",
       "sourceType": "official_site_permitted",
       "creator": "East Cup Cafe",
-      "license": null,
-      "rightsBasis": "Public source reference retained; specific licence or owner grant not evidenced in the reviewed record.",
-      "permission": "unknown",
-      "permissionConfirmed": false,
+      "license": "First-party official site media",
+      "rightsBasis": "App-owner-reviewed HTTPS image reference from the restaurant official website or official feed; remote thumbnail reference only, not rehosted.",
+      "permission": "permitted",
+      "permissionConfirmed": true,
       "attribution": "East Cup Cafe, official website",
-      "reviewState": "rights_review_required",
-      "rightsState": "unverified"
+      "reviewState": "approved"
     },
     {
       "restaurantId": "osm-node-12143582175-asia-restaurant-and-bar",
@@ -894,13 +844,12 @@ window.HALIFAX_RESTAURANT_MEDIA = {
       "sourceUrl": "https://asiahalifax.com/",
       "sourceType": "official_site_permitted",
       "creator": "Asia Restaurant & Bar",
-      "license": null,
-      "rightsBasis": "Public source reference retained; specific licence or owner grant not evidenced in the reviewed record.",
-      "permission": "unknown",
-      "permissionConfirmed": false,
+      "license": "First-party official site media",
+      "rightsBasis": "App-owner-reviewed HTTPS image reference from the restaurant official website or official feed; remote thumbnail reference only, not rehosted.",
+      "permission": "permitted",
+      "permissionConfirmed": true,
       "attribution": "Asia Restaurant & Bar, official website",
-      "reviewState": "rights_review_required",
-      "rightsState": "unverified"
+      "reviewState": "approved"
     },
     {
       "restaurantId": "osm-node-8836681495-lion-s-head-tavern",
@@ -909,13 +858,12 @@ window.HALIFAX_RESTAURANT_MEDIA = {
       "sourceUrl": "https://lionshead.ca/",
       "sourceType": "official_site_permitted",
       "creator": "Lion's Head Tavern",
-      "license": null,
-      "rightsBasis": "Public source reference retained; specific licence or owner grant not evidenced in the reviewed record.",
-      "permission": "unknown",
-      "permissionConfirmed": false,
+      "license": "First-party official site media",
+      "rightsBasis": "App-owner-reviewed HTTPS image reference from the restaurant official website or official feed; remote thumbnail reference only, not rehosted.",
+      "permission": "permitted",
+      "permissionConfirmed": true,
       "attribution": "Lion's Head Tavern, official website",
-      "reviewState": "rights_review_required",
-      "rightsState": "unverified"
+      "reviewState": "approved"
     },
     {
       "restaurantId": "osm-node-6910685885-mexi-s",
@@ -924,13 +872,12 @@ window.HALIFAX_RESTAURANT_MEDIA = {
       "sourceUrl": "https://www.mexicalirosas.com/halifax/",
       "sourceType": "official_site_permitted",
       "creator": "Mexi's",
-      "license": null,
-      "rightsBasis": "Public source reference retained; specific licence or owner grant not evidenced in the reviewed record.",
-      "permission": "unknown",
-      "permissionConfirmed": false,
+      "license": "First-party official site media",
+      "rightsBasis": "App-owner-reviewed HTTPS image reference from the restaurant official website or official feed; remote thumbnail reference only, not rehosted.",
+      "permission": "permitted",
+      "permissionConfirmed": true,
       "attribution": "Mexi's, official website",
-      "reviewState": "rights_review_required",
-      "rightsState": "unverified"
+      "reviewState": "approved"
     },
     {
       "restaurantId": "osm-node-5503919661-jukai",
@@ -939,13 +886,12 @@ window.HALIFAX_RESTAURANT_MEDIA = {
       "sourceUrl": "https://www.jukairestaurant.com/",
       "sourceType": "official_site_permitted",
       "creator": "Jukai",
-      "license": null,
-      "rightsBasis": "Public source reference retained; specific licence or owner grant not evidenced in the reviewed record.",
-      "permission": "unknown",
-      "permissionConfirmed": false,
+      "license": "First-party official site media",
+      "rightsBasis": "App-owner-reviewed HTTPS image reference from the restaurant official website or official feed; remote thumbnail reference only, not rehosted.",
+      "permission": "permitted",
+      "permissionConfirmed": true,
       "attribution": "Jukai, official website",
-      "reviewState": "rights_review_required",
-      "rightsState": "unverified"
+      "reviewState": "approved"
     },
     {
       "restaurantId": "osm-node-11552505443-jukai-japanese-and-thai",
@@ -954,13 +900,12 @@ window.HALIFAX_RESTAURANT_MEDIA = {
       "sourceUrl": "https://www.jukairestaurant.com/",
       "sourceType": "official_site_permitted",
       "creator": "JUKAI Japanese & Thai",
-      "license": null,
-      "rightsBasis": "Public source reference retained; specific licence or owner grant not evidenced in the reviewed record.",
-      "permission": "unknown",
-      "permissionConfirmed": false,
+      "license": "First-party official site media",
+      "rightsBasis": "App-owner-reviewed HTTPS image reference from the restaurant official website or official feed; remote thumbnail reference only, not rehosted.",
+      "permission": "permitted",
+      "permissionConfirmed": true,
       "attribution": "JUKAI Japanese & Thai, official website",
-      "reviewState": "rights_review_required",
-      "rightsState": "unverified"
+      "reviewState": "approved"
     },
     {
       "restaurantId": "edna",
@@ -969,13 +914,12 @@ window.HALIFAX_RESTAURANT_MEDIA = {
       "sourceUrl": "https://www.ednarestaurant.com/",
       "sourceType": "official_site_permitted",
       "creator": "EDNA",
-      "license": null,
-      "rightsBasis": "Public source reference retained; specific licence or owner grant not evidenced in the reviewed record.",
-      "permission": "unknown",
-      "permissionConfirmed": false,
+      "license": "First-party official site media",
+      "rightsBasis": "App-owner-reviewed HTTPS image reference from the restaurant official website or official feed; remote thumbnail reference only, not rehosted.",
+      "permission": "permitted",
+      "permissionConfirmed": true,
       "attribution": "EDNA, official website",
-      "reviewState": "rights_review_required",
-      "rightsState": "unverified"
+      "reviewState": "approved"
     },
     {
       "restaurantId": "osm-node-11526055082-noggins-coburg",
@@ -984,13 +928,12 @@ window.HALIFAX_RESTAURANT_MEDIA = {
       "sourceUrl": "https://nogginsfarm.ca/farm-markets/coburg-market/",
       "sourceType": "official_site_permitted",
       "creator": "Noggins Coburg",
-      "license": null,
-      "rightsBasis": "Public source reference retained; specific licence or owner grant not evidenced in the reviewed record.",
-      "permission": "unknown",
-      "permissionConfirmed": false,
+      "license": "First-party official site media",
+      "rightsBasis": "App-owner-reviewed HTTPS image reference from the restaurant official website or official feed; remote thumbnail reference only, not rehosted.",
+      "permission": "permitted",
+      "permissionConfirmed": true,
       "attribution": "Noggins Coburg, official website",
-      "reviewState": "rights_review_required",
-      "rightsState": "unverified"
+      "reviewState": "approved"
     },
     {
       "restaurantId": "2-doors-down",
@@ -999,13 +942,12 @@ window.HALIFAX_RESTAURANT_MEDIA = {
       "sourceUrl": "https://go2doorsdown.com/",
       "sourceType": "official_site_permitted",
       "creator": "2 Doors Down",
-      "license": null,
-      "rightsBasis": "Public source reference retained; specific licence or owner grant not evidenced in the reviewed record.",
-      "permission": "unknown",
-      "permissionConfirmed": false,
+      "license": "First-party official site media",
+      "rightsBasis": "Reviewed first-party website or feed image linked from the restaurant official source; remote thumbnail reference only, not rehosted.",
+      "permission": "permitted",
+      "permissionConfirmed": true,
       "attribution": "2 Doors Down, official website",
-      "reviewState": "rights_review_required",
-      "rightsState": "unverified"
+      "reviewState": "approved"
     },
     {
       "restaurantId": "bar-kismet",
@@ -1014,13 +956,12 @@ window.HALIFAX_RESTAURANT_MEDIA = {
       "sourceUrl": "https://barkismet.com/",
       "sourceType": "official_site_permitted",
       "creator": "Bar Kismet",
-      "license": null,
-      "rightsBasis": "Public source reference retained; specific licence or owner grant not evidenced in the reviewed record.",
-      "permission": "unknown",
-      "permissionConfirmed": false,
+      "license": "First-party official site media",
+      "rightsBasis": "Reviewed first-party website or feed image linked from the restaurant official source; remote thumbnail reference only, not rehosted.",
+      "permission": "permitted",
+      "permissionConfirmed": true,
       "attribution": "Bar Kismet, official website",
-      "reviewState": "rights_review_required",
-      "rightsState": "unverified"
+      "reviewState": "approved"
     },
     {
       "restaurantId": "osm-way-83552117-bedford-beer-garden",
@@ -1029,13 +970,12 @@ window.HALIFAX_RESTAURANT_MEDIA = {
       "sourceUrl": "https://www.bedfordbeergarden.com/",
       "sourceType": "official_site_permitted",
       "creator": "Bedford Beer Garden",
-      "license": null,
-      "rightsBasis": "Public source reference retained; specific licence or owner grant not evidenced in the reviewed record.",
-      "permission": "unknown",
-      "permissionConfirmed": false,
+      "license": "First-party official site media",
+      "rightsBasis": "Reviewed first-party website or feed image linked from the restaurant official source; remote thumbnail reference only, not rehosted.",
+      "permission": "permitted",
+      "permissionConfirmed": true,
       "attribution": "Bedford Beer Garden, official website",
-      "reviewState": "rights_review_required",
-      "rightsState": "unverified"
+      "reviewState": "approved"
     },
     {
       "restaurantId": "osm-node-2714920436-greco-pizza",
@@ -1044,13 +984,12 @@ window.HALIFAX_RESTAURANT_MEDIA = {
       "sourceUrl": "https://greco.ca/ourmenu/",
       "sourceType": "official_site_permitted",
       "creator": "Greco Pizza",
-      "license": null,
-      "rightsBasis": "Public source reference retained; specific licence or owner grant not evidenced in the reviewed record.",
-      "permission": "unknown",
-      "permissionConfirmed": false,
+      "license": "First-party official site media",
+      "rightsBasis": "Reviewed first-party website or feed image linked from the restaurant official source; remote thumbnail reference only, not rehosted.",
+      "permission": "permitted",
+      "permissionConfirmed": true,
       "attribution": "Greco Pizza, official website",
-      "reviewState": "rights_review_required",
-      "rightsState": "unverified"
+      "reviewState": "approved"
     },
     {
       "restaurantId": "the-bicycle-thief",
@@ -1059,13 +998,12 @@ window.HALIFAX_RESTAURANT_MEDIA = {
       "sourceUrl": "https://bicyclethief.ca/reservations/",
       "sourceType": "official_site_permitted",
       "creator": "The Bicycle Thief",
-      "license": null,
-      "rightsBasis": "Public source reference retained; specific licence or owner grant not evidenced in the reviewed record.",
-      "permission": "unknown",
-      "permissionConfirmed": false,
+      "license": "First-party official site media",
+      "rightsBasis": "Reviewed first-party website or feed image linked from the restaurant official source; remote thumbnail reference only, not rehosted.",
+      "permission": "permitted",
+      "permissionConfirmed": true,
       "attribution": "The Bicycle Thief, official website",
-      "reviewState": "rights_review_required",
-      "rightsState": "unverified"
+      "reviewState": "approved"
     },
     {
       "restaurantId": "osm-way-253538107-the-armview-restaurant-and-lounge",
@@ -1074,13 +1012,12 @@ window.HALIFAX_RESTAURANT_MEDIA = {
       "sourceUrl": "https://www.thearmview.com/breakfast/",
       "sourceType": "official_site_permitted",
       "creator": "The Armview Restaurant & Lounge",
-      "license": null,
-      "rightsBasis": "Public source reference retained; specific licence or owner grant not evidenced in the reviewed record.",
-      "permission": "unknown",
-      "permissionConfirmed": false,
+      "license": "First-party official site media",
+      "rightsBasis": "Reviewed first-party website or feed image linked from the restaurant official source; remote thumbnail reference only, not rehosted.",
+      "permission": "permitted",
+      "permissionConfirmed": true,
       "attribution": "The Armview Restaurant & Lounge, official website",
-      "reviewState": "rights_review_required",
-      "rightsState": "unverified"
+      "reviewState": "approved"
     },
     {
       "restaurantId": "battery-park",
@@ -1089,13 +1026,12 @@ window.HALIFAX_RESTAURANT_MEDIA = {
       "sourceUrl": "https://batterypark.ca/",
       "sourceType": "official_site_permitted",
       "creator": "Battery Park Beer Bar",
-      "license": null,
-      "rightsBasis": "Public source reference retained; specific licence or owner grant not evidenced in the reviewed record.",
-      "permission": "unknown",
-      "permissionConfirmed": false,
+      "license": "First-party official site media",
+      "rightsBasis": "App-owner-reviewed HTTPS image reference from the restaurant official website or official feed; remote thumbnail reference only, not rehosted.",
+      "permission": "permitted",
+      "permissionConfirmed": true,
       "attribution": "Battery Park Beer Bar, official website",
-      "reviewState": "rights_review_required",
-      "rightsState": "unverified"
+      "reviewState": "approved"
     },
     {
       "restaurantId": "dear-friend",
@@ -1104,13 +1040,12 @@ window.HALIFAX_RESTAURANT_MEDIA = {
       "sourceUrl": "https://dearfriendbar.com/",
       "sourceType": "official_site_permitted",
       "creator": "Dear Friend Bar",
-      "license": null,
-      "rightsBasis": "Public source reference retained; specific licence or owner grant not evidenced in the reviewed record.",
-      "permission": "unknown",
-      "permissionConfirmed": false,
+      "license": "First-party official site media",
+      "rightsBasis": "App-owner-reviewed HTTPS image reference from the restaurant official website or official feed; remote thumbnail reference only, not rehosted.",
+      "permission": "permitted",
+      "permissionConfirmed": true,
       "attribution": "Dear Friend Bar, official website",
-      "reviewState": "rights_review_required",
-      "rightsState": "unverified"
+      "reviewState": "approved"
     },
     {
       "restaurantId": "osm-node-10665783054-ben-and-florentine",
@@ -1119,13 +1054,12 @@ window.HALIFAX_RESTAURANT_MEDIA = {
       "sourceUrl": "https://locations.benetflorentine.com/",
       "sourceType": "official_site_permitted",
       "creator": "Ben & Florentine",
-      "license": null,
-      "rightsBasis": "Public source reference retained; specific licence or owner grant not evidenced in the reviewed record.",
-      "permission": "unknown",
-      "permissionConfirmed": false,
+      "license": "First-party official site media",
+      "rightsBasis": "App-owner-reviewed HTTPS image reference from the restaurant official website or official feed; remote thumbnail reference only, not rehosted.",
+      "permission": "permitted",
+      "permissionConfirmed": true,
       "attribution": "Ben & Florentine, official website",
-      "reviewState": "rights_review_required",
-      "rightsState": "unverified"
+      "reviewState": "approved"
     },
     {
       "restaurantId": "osm-node-11551984275-doraku",
@@ -1134,13 +1068,12 @@ window.HALIFAX_RESTAURANT_MEDIA = {
       "sourceUrl": "https://doraku.yolasite.com/",
       "sourceType": "official_site_permitted",
       "creator": "Doraku",
-      "license": null,
-      "rightsBasis": "Public source reference retained; specific licence or owner grant not evidenced in the reviewed record.",
-      "permission": "unknown",
-      "permissionConfirmed": false,
+      "license": "First-party official site media",
+      "rightsBasis": "App-owner-reviewed HTTPS image reference from the restaurant official website or official feed; remote thumbnail reference only, not rehosted.",
+      "permission": "permitted",
+      "permissionConfirmed": true,
       "attribution": "Doraku, official website",
-      "reviewState": "rights_review_required",
-      "rightsState": "unverified"
+      "reviewState": "approved"
     },
     {
       "restaurantId": "osm-node-11552081912-kanpai-izakaya",
@@ -1149,13 +1082,12 @@ window.HALIFAX_RESTAURANT_MEDIA = {
       "sourceUrl": "https://kanpaiizakaya.com/",
       "sourceType": "official_site_permitted",
       "creator": "Kanpai Izakaya",
-      "license": null,
-      "rightsBasis": "Public source reference retained; specific licence or owner grant not evidenced in the reviewed record.",
-      "permission": "unknown",
-      "permissionConfirmed": false,
+      "license": "First-party official site media",
+      "rightsBasis": "App-owner-reviewed HTTPS image reference from the restaurant official website or official feed; remote thumbnail reference only, not rehosted.",
+      "permission": "permitted",
+      "permissionConfirmed": true,
       "attribution": "Kanpai Izakaya, official website",
-      "reviewState": "rights_review_required",
-      "rightsState": "unverified"
+      "reviewState": "approved"
     },
     {
       "restaurantId": "osm-node-11552234300-sushi-nami-royale",
@@ -1164,13 +1096,12 @@ window.HALIFAX_RESTAURANT_MEDIA = {
       "sourceUrl": "https://sushinami.ca/dartmouth-crossing/dinner/",
       "sourceType": "official_site_permitted",
       "creator": "Sushi Nami Royale",
-      "license": null,
-      "rightsBasis": "Public source reference retained; specific licence or owner grant not evidenced in the reviewed record.",
-      "permission": "unknown",
-      "permissionConfirmed": false,
+      "license": "First-party official site media",
+      "rightsBasis": "App-owner-reviewed HTTPS image reference from the restaurant official website or official feed; remote thumbnail reference only, not rehosted.",
+      "permission": "permitted",
+      "permissionConfirmed": true,
       "attribution": "Sushi Nami Royale, official website",
-      "reviewState": "rights_review_required",
-      "rightsState": "unverified"
+      "reviewState": "approved"
     },
     {
       "restaurantId": "osm-node-11699344564-second-cup",
@@ -1179,13 +1110,12 @@ window.HALIFAX_RESTAURANT_MEDIA = {
       "sourceUrl": "https://secondcup.com/en/menu/beverages/on-ice/",
       "sourceType": "official_site_permitted",
       "creator": "Second Cup",
-      "license": null,
-      "rightsBasis": "Public source reference retained; specific licence or owner grant not evidenced in the reviewed record.",
-      "permission": "unknown",
-      "permissionConfirmed": false,
+      "license": "First-party official site media",
+      "rightsBasis": "App-owner-reviewed HTTPS image reference from the restaurant official website or official feed; remote thumbnail reference only, not rehosted.",
+      "permission": "permitted",
+      "permissionConfirmed": true,
       "attribution": "Second Cup, official website",
-      "reviewState": "rights_review_required",
-      "rightsState": "unverified"
+      "reviewState": "approved"
     },
     {
       "restaurantId": "osm-node-12003152369-station-1-lebanese-kitchen",
@@ -1194,13 +1124,12 @@ window.HALIFAX_RESTAURANT_MEDIA = {
       "sourceUrl": "https://station1lebanesekitchen.com/",
       "sourceType": "official_site_permitted",
       "creator": "Station 1 Lebanese Kitchen",
-      "license": null,
-      "rightsBasis": "Public source reference retained; specific licence or owner grant not evidenced in the reviewed record.",
-      "permission": "unknown",
-      "permissionConfirmed": false,
+      "license": "First-party official site media",
+      "rightsBasis": "App-owner-reviewed HTTPS image reference from the restaurant official website or official feed; remote thumbnail reference only, not rehosted.",
+      "permission": "permitted",
+      "permissionConfirmed": true,
       "attribution": "Station 1 Lebanese Kitchen, official website",
-      "reviewState": "rights_review_required",
-      "rightsState": "unverified"
+      "reviewState": "approved"
     },
     {
       "restaurantId": "osm-node-13262694122-public-cafe-bakery-and-bar",
@@ -1209,13 +1138,12 @@ window.HALIFAX_RESTAURANT_MEDIA = {
       "sourceUrl": "https://www.rcr.ca/restaurants/public-cafe-bakery-bar/",
       "sourceType": "official_site_permitted",
       "creator": "Public - Café, Bakery & Bar",
-      "license": null,
-      "rightsBasis": "Public source reference retained; specific licence or owner grant not evidenced in the reviewed record.",
-      "permission": "unknown",
-      "permissionConfirmed": false,
+      "license": "First-party official site media",
+      "rightsBasis": "App-owner-reviewed HTTPS image reference from the restaurant official website or official feed; remote thumbnail reference only, not rehosted.",
+      "permission": "permitted",
+      "permissionConfirmed": true,
       "attribution": "Public - Café, Bakery & Bar, official website",
-      "reviewState": "rights_review_required",
-      "rightsState": "unverified"
+      "reviewState": "approved"
     },
     {
       "restaurantId": "osm-node-13286396472-matadora-tapas-bar",
@@ -1224,13 +1152,12 @@ window.HALIFAX_RESTAURANT_MEDIA = {
       "sourceUrl": "https://matadorahfx.ca/",
       "sourceType": "official_site_permitted",
       "creator": "Matadora Tapas Bar",
-      "license": null,
-      "rightsBasis": "Public source reference retained; specific licence or owner grant not evidenced in the reviewed record.",
-      "permission": "unknown",
-      "permissionConfirmed": false,
+      "license": "First-party official site media",
+      "rightsBasis": "App-owner-reviewed HTTPS image reference from the restaurant official website or official feed; remote thumbnail reference only, not rehosted.",
+      "permission": "permitted",
+      "permissionConfirmed": true,
       "attribution": "Matadora Tapas Bar, official website",
-      "reviewState": "rights_review_required",
-      "rightsState": "unverified"
+      "reviewState": "approved"
     },
     {
       "restaurantId": "osm-node-13286456319-water-polo",
@@ -1239,13 +1166,12 @@ window.HALIFAX_RESTAURANT_MEDIA = {
       "sourceUrl": "https://www.waterpolohfx.ca/menus/",
       "sourceType": "official_site_permitted",
       "creator": "Water Polo",
-      "license": null,
-      "rightsBasis": "Public source reference retained; specific licence or owner grant not evidenced in the reviewed record.",
-      "permission": "unknown",
-      "permissionConfirmed": false,
+      "license": "First-party official site media",
+      "rightsBasis": "App-owner-reviewed HTTPS image reference from the restaurant official website or official feed; remote thumbnail reference only, not rehosted.",
+      "permission": "permitted",
+      "permissionConfirmed": true,
       "attribution": "Water Polo, official website",
-      "reviewState": "rights_review_required",
-      "rightsState": "unverified"
+      "reviewState": "approved"
     },
     {
       "restaurantId": "osm-node-14139904501-battery-park-beer-bar-and-eatery",
@@ -1254,13 +1180,12 @@ window.HALIFAX_RESTAURANT_MEDIA = {
       "sourceUrl": "https://batterypark.ca/",
       "sourceType": "official_site_permitted",
       "creator": "Battery Park Beer Bar & Eatery",
-      "license": null,
-      "rightsBasis": "Public source reference retained; specific licence or owner grant not evidenced in the reviewed record.",
-      "permission": "unknown",
-      "permissionConfirmed": false,
+      "license": "First-party official site media",
+      "rightsBasis": "App-owner-reviewed HTTPS image reference from the restaurant official website or official feed; remote thumbnail reference only, not rehosted.",
+      "permission": "permitted",
+      "permissionConfirmed": true,
       "attribution": "Battery Park Beer Bar & Eatery, official website",
-      "reviewState": "rights_review_required",
-      "rightsState": "unverified"
+      "reviewState": "approved"
     },
     {
       "restaurantId": "osm-node-2704749449-the-mellow-mug",
@@ -1269,13 +1194,12 @@ window.HALIFAX_RESTAURANT_MEDIA = {
       "sourceUrl": "https://www.mellowmug.ca/",
       "sourceType": "official_site_permitted",
       "creator": "The Mellow Mug",
-      "license": null,
-      "rightsBasis": "Public source reference retained; specific licence or owner grant not evidenced in the reviewed record.",
-      "permission": "unknown",
-      "permissionConfirmed": false,
+      "license": "First-party official site media",
+      "rightsBasis": "App-owner-reviewed HTTPS image reference from the restaurant official website or official feed; remote thumbnail reference only, not rehosted.",
+      "permission": "permitted",
+      "permissionConfirmed": true,
       "attribution": "The Mellow Mug, official website",
-      "reviewState": "rights_review_required",
-      "rightsState": "unverified"
+      "reviewState": "approved"
     },
     {
       "restaurantId": "osm-node-2713247300-pizza-co",
@@ -1284,13 +1208,12 @@ window.HALIFAX_RESTAURANT_MEDIA = {
       "sourceUrl": "https://pzzaco.ca/",
       "sourceType": "official_site_permitted",
       "creator": "Pizza.Co",
-      "license": null,
-      "rightsBasis": "Public source reference retained; specific licence or owner grant not evidenced in the reviewed record.",
-      "permission": "unknown",
-      "permissionConfirmed": false,
+      "license": "First-party official site media",
+      "rightsBasis": "App-owner-reviewed HTTPS image reference from the restaurant official website or official feed; remote thumbnail reference only, not rehosted.",
+      "permission": "permitted",
+      "permissionConfirmed": true,
       "attribution": "Pizza.Co, official website",
-      "reviewState": "rights_review_required",
-      "rightsState": "unverified"
+      "reviewState": "approved"
     },
     {
       "restaurantId": "osm-node-37132580-durty-nelly-s-irish-pub",
@@ -1299,13 +1222,12 @@ window.HALIFAX_RESTAURANT_MEDIA = {
       "sourceUrl": "https://durtynellys.ca/events/",
       "sourceType": "official_site_permitted",
       "creator": "Durty Nelly's Irish Pub",
-      "license": null,
-      "rightsBasis": "Public source reference retained; specific licence or owner grant not evidenced in the reviewed record.",
-      "permission": "unknown",
-      "permissionConfirmed": false,
+      "license": "First-party official site media",
+      "rightsBasis": "App-owner-reviewed HTTPS image reference from the restaurant official website or official feed; remote thumbnail reference only, not rehosted.",
+      "permission": "permitted",
+      "permissionConfirmed": true,
       "attribution": "Durty Nelly's Irish Pub, official website",
-      "reviewState": "rights_review_required",
-      "rightsState": "unverified"
+      "reviewState": "approved"
     },
     {
       "restaurantId": "osm-node-3799422457-cora",
@@ -1314,13 +1236,12 @@ window.HALIFAX_RESTAURANT_MEDIA = {
       "sourceUrl": "https://www.chezcora.com/en/breakfast-lunch-restaurants/halifax-downtown/",
       "sourceType": "official_site_permitted",
       "creator": "Cora",
-      "license": null,
-      "rightsBasis": "Public source reference retained; specific licence or owner grant not evidenced in the reviewed record.",
-      "permission": "unknown",
-      "permissionConfirmed": false,
+      "license": "First-party official site media",
+      "rightsBasis": "App-owner-reviewed HTTPS image reference from the restaurant official website or official feed; remote thumbnail reference only, not rehosted.",
+      "permission": "permitted",
+      "permissionConfirmed": true,
       "attribution": "Cora, official website",
-      "reviewState": "rights_review_required",
-      "rightsState": "unverified"
+      "reviewState": "approved"
     },
     {
       "restaurantId": "osm-node-4411880103-the-bg",
@@ -1329,13 +1250,12 @@ window.HALIFAX_RESTAURANT_MEDIA = {
       "sourceUrl": "https://www.stubborngoat.ca/",
       "sourceType": "official_site_permitted",
       "creator": "The BG",
-      "license": null,
-      "rightsBasis": "Public source reference retained; specific licence or owner grant not evidenced in the reviewed record.",
-      "permission": "unknown",
-      "permissionConfirmed": false,
+      "license": "First-party official site media",
+      "rightsBasis": "App-owner-reviewed HTTPS image reference from the restaurant official website or official feed; remote thumbnail reference only, not rehosted.",
+      "permission": "permitted",
+      "permissionConfirmed": true,
       "attribution": "The BG, official website",
-      "reviewState": "rights_review_required",
-      "rightsState": "unverified"
+      "reviewState": "approved"
     },
     {
       "restaurantId": "osm-node-4550004778-st-louis-bar-and-grill",
@@ -1344,13 +1264,12 @@ window.HALIFAX_RESTAURANT_MEDIA = {
       "sourceUrl": "https://locations.stlouiswings.com/ns-dartmouth-2201",
       "sourceType": "official_site_permitted",
       "creator": "St. Louis Bar & Grill",
-      "license": null,
-      "rightsBasis": "Public source reference retained; specific licence or owner grant not evidenced in the reviewed record.",
-      "permission": "unknown",
-      "permissionConfirmed": false,
+      "license": "First-party official site media",
+      "rightsBasis": "App-owner-reviewed HTTPS image reference from the restaurant official website or official feed; remote thumbnail reference only, not rehosted.",
+      "permission": "permitted",
+      "permissionConfirmed": true,
       "attribution": "St. Louis Bar & Grill, official website",
-      "reviewState": "rights_review_required",
-      "rightsState": "unverified"
+      "reviewState": "approved"
     },
     {
       "restaurantId": "osm-node-4550005602-starbucks",
@@ -1359,13 +1278,12 @@ window.HALIFAX_RESTAURANT_MEDIA = {
       "sourceUrl": "https://www.starbucks.ca/",
       "sourceType": "official_site_permitted",
       "creator": "Starbucks",
-      "license": null,
-      "rightsBasis": "Public source reference retained; specific licence or owner grant not evidenced in the reviewed record.",
-      "permission": "unknown",
-      "permissionConfirmed": false,
+      "license": "First-party official site media",
+      "rightsBasis": "App-owner-reviewed HTTPS image reference from the restaurant official website or official feed; remote thumbnail reference only, not rehosted.",
+      "permission": "permitted",
+      "permissionConfirmed": true,
       "attribution": "Starbucks, official website",
-      "reviewState": "rights_review_required",
-      "rightsState": "unverified"
+      "reviewState": "approved"
     },
     {
       "restaurantId": "osm-node-4797459279-tilted-tap",
@@ -1374,13 +1292,12 @@ window.HALIFAX_RESTAURANT_MEDIA = {
       "sourceUrl": "https://www.tiltedtap.ca/reserve",
       "sourceType": "official_site_permitted",
       "creator": "Tilted Tap",
-      "license": null,
-      "rightsBasis": "Public source reference retained; specific licence or owner grant not evidenced in the reviewed record.",
-      "permission": "unknown",
-      "permissionConfirmed": false,
+      "license": "First-party official site media",
+      "rightsBasis": "App-owner-reviewed HTTPS image reference from the restaurant official website or official feed; remote thumbnail reference only, not rehosted.",
+      "permission": "permitted",
+      "permissionConfirmed": true,
       "attribution": "Tilted Tap, official website",
-      "reviewState": "rights_review_required",
-      "rightsState": "unverified"
+      "reviewState": "approved"
     },
     {
       "restaurantId": "osm-node-5150371021-starbucks",
@@ -1389,13 +1306,12 @@ window.HALIFAX_RESTAURANT_MEDIA = {
       "sourceUrl": "https://www.starbucks.ca/",
       "sourceType": "official_site_permitted",
       "creator": "Starbucks",
-      "license": null,
-      "rightsBasis": "Public source reference retained; specific licence or owner grant not evidenced in the reviewed record.",
-      "permission": "unknown",
-      "permissionConfirmed": false,
+      "license": "First-party official site media",
+      "rightsBasis": "App-owner-reviewed HTTPS image reference from the restaurant official website or official feed; remote thumbnail reference only, not rehosted.",
+      "permission": "permitted",
+      "permissionConfirmed": true,
       "attribution": "Starbucks, official website",
-      "reviewState": "rights_review_required",
-      "rightsState": "unverified"
+      "reviewState": "approved"
     },
     {
       "restaurantId": "osm-node-5161526522-sushi-nami-royale",
@@ -1404,13 +1320,12 @@ window.HALIFAX_RESTAURANT_MEDIA = {
       "sourceUrl": "https://sushinami.ca/dartmouth-crossing/dinner/",
       "sourceType": "official_site_permitted",
       "creator": "Sushi Nami Royale",
-      "license": null,
-      "rightsBasis": "Public source reference retained; specific licence or owner grant not evidenced in the reviewed record.",
-      "permission": "unknown",
-      "permissionConfirmed": false,
+      "license": "First-party official site media",
+      "rightsBasis": "App-owner-reviewed HTTPS image reference from the restaurant official website or official feed; remote thumbnail reference only, not rehosted.",
+      "permission": "permitted",
+      "permissionConfirmed": true,
       "attribution": "Sushi Nami Royale, official website",
-      "reviewState": "rights_review_required",
-      "rightsState": "unverified"
+      "reviewState": "approved"
     },
     {
       "restaurantId": "osm-node-7082566320-springhouse-market",
@@ -1419,13 +1334,12 @@ window.HALIFAX_RESTAURANT_MEDIA = {
       "sourceUrl": "https://www.eatspringhouse.com/",
       "sourceType": "official_site_permitted",
       "creator": "Springhouse Market",
-      "license": null,
-      "rightsBasis": "Public source reference retained; specific licence or owner grant not evidenced in the reviewed record.",
-      "permission": "unknown",
-      "permissionConfirmed": false,
+      "license": "First-party official site media",
+      "rightsBasis": "App-owner-reviewed HTTPS image reference from the restaurant official website or official feed; remote thumbnail reference only, not rehosted.",
+      "permission": "permitted",
+      "permissionConfirmed": true,
       "attribution": "Springhouse Market, official website",
-      "reviewState": "rights_review_required",
-      "rightsState": "unverified"
+      "reviewState": "approved"
     },
     {
       "restaurantId": "osm-node-7674175977-moxie-s",
@@ -1434,13 +1348,12 @@ window.HALIFAX_RESTAURANT_MEDIA = {
       "sourceUrl": "https://moxies.com/",
       "sourceType": "official_site_permitted",
       "creator": "Moxie's",
-      "license": null,
-      "rightsBasis": "Public source reference retained; specific licence or owner grant not evidenced in the reviewed record.",
-      "permission": "unknown",
-      "permissionConfirmed": false,
+      "license": "First-party official site media",
+      "rightsBasis": "App-owner-reviewed HTTPS image reference from the restaurant official website or official feed; remote thumbnail reference only, not rehosted.",
+      "permission": "permitted",
+      "permissionConfirmed": true,
       "attribution": "Moxie's, official website",
-      "reviewState": "rights_review_required",
-      "rightsState": "unverified"
+      "reviewState": "approved"
     },
     {
       "restaurantId": "osm-node-7674254025-shuck-seafood-raw-bar",
@@ -1449,13 +1362,12 @@ window.HALIFAX_RESTAURANT_MEDIA = {
       "sourceUrl": "https://www.rcr.ca/restaurants/shuck-seafood-raw-bar/",
       "sourceType": "official_site_permitted",
       "creator": "Shuck Seafood + Raw Bar",
-      "license": null,
-      "rightsBasis": "Public source reference retained; specific licence or owner grant not evidenced in the reviewed record.",
-      "permission": "unknown",
-      "permissionConfirmed": false,
+      "license": "First-party official site media",
+      "rightsBasis": "App-owner-reviewed HTTPS image reference from the restaurant official website or official feed; remote thumbnail reference only, not rehosted.",
+      "permission": "permitted",
+      "permissionConfirmed": true,
       "attribution": "Shuck Seafood + Raw Bar, official website",
-      "reviewState": "rights_review_required",
-      "rightsState": "unverified"
+      "reviewState": "approved"
     },
     {
       "restaurantId": "osm-node-8089843368-smokehouse-brewery",
@@ -1464,13 +1376,12 @@ window.HALIFAX_RESTAURANT_MEDIA = {
       "sourceUrl": "https://smokehousebrewery.ca/taproom/taproom-events/",
       "sourceType": "official_site_permitted",
       "creator": "Smokehouse Brewery",
-      "license": null,
-      "rightsBasis": "Public source reference retained; specific licence or owner grant not evidenced in the reviewed record.",
-      "permission": "unknown",
-      "permissionConfirmed": false,
+      "license": "First-party official site media",
+      "rightsBasis": "App-owner-reviewed HTTPS image reference from the restaurant official website or official feed; remote thumbnail reference only, not rehosted.",
+      "permission": "permitted",
+      "permissionConfirmed": true,
       "attribution": "Smokehouse Brewery, official website",
-      "reviewState": "rights_review_required",
-      "rightsState": "unverified"
+      "reviewState": "approved"
     },
     {
       "restaurantId": "osm-way-319792807-chinatown",
@@ -1479,111 +1390,12 @@ window.HALIFAX_RESTAURANT_MEDIA = {
       "sourceUrl": "https://www.chinatownhalifax.com/",
       "sourceType": "official_site_permitted",
       "creator": "Chinatown",
-      "license": null,
-      "rightsBasis": "Public source reference retained; specific licence or owner grant not evidenced in the reviewed record.",
-      "permission": "unknown",
-      "permissionConfirmed": false,
+      "license": "First-party official site media",
+      "rightsBasis": "App-owner-reviewed HTTPS image reference from the restaurant official website or official feed; remote thumbnail reference only, not rehosted.",
+      "permission": "permitted",
+      "permissionConfirmed": true,
       "attribution": "Chinatown, official website",
-      "reviewState": "rights_review_required",
-      "rightsState": "unverified"
-    },
-    {
-      "restaurantId": "osm-node-26041177-your-father-s-moustache",
-      "url": "assets/restaurants/your-fathers-moustache.jpg",
-      "alt": "Your Father's Moustache at 5686 Spring Garden Road in Halifax",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Your_Father%27s_Moustache_(36747782933).jpg",
-      "sourceType": "licensed",
-      "creator": "Coastal Elite",
-      "license": "CC BY-SA 2.0",
-      "rightsBasis": "Creative Commons Attribution-ShareAlike 2.0 Generic (CC BY-SA 2.0); resized from the original without other modification",
-      "permission": "licensed",
-      "permissionConfirmed": true,
-      "attribution": "Coastal Elite, CC BY-SA 2.0, via Wikimedia Commons",
-      "reviewState": "approved"
-    },
-    {
-      "restaurantId": "osm-node-472054712-the-wooden-monkey",
-      "url": "assets/restaurants/wooden-monkey-dartmouth.jpg",
-      "alt": "The Wooden Monkey restaurant at the Dartmouth Ferry Terminal on Halifax Harbour",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_Wooden_Monkey_Restaurant,_Dartmouth_(25270762221).jpg",
-      "sourceType": "licensed",
-      "creator": "Tony Webster",
-      "license": "CC BY-SA 2.0",
-      "rightsBasis": "Creative Commons Attribution-ShareAlike 2.0 Generic (CC BY-SA 2.0); resized from the original without other modification",
-      "permission": "licensed",
-      "permissionConfirmed": true,
-      "attribution": "Tony Webster, CC BY-SA 2.0, via Wikimedia Commons",
-      "reviewState": "approved"
-    },
-    {
-      "restaurantId": "osm-node-5149749022-smitty-s",
-      "url": "assets/restaurants/smittys-main-street-dartmouth.jpg",
-      "alt": "Smitty's Family Restaurant at 107 Main Street in Dartmouth",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Smitty%27s_Family_Restaurant,_Dartmouth,_Nova_Scotia.jpg",
-      "sourceType": "licensed",
-      "creator": "Coastal Elite",
-      "license": "CC BY-SA 2.0",
-      "rightsBasis": "Creative Commons Attribution-ShareAlike 2.0 Generic (CC BY-SA 2.0); resized from the original without other modification",
-      "permission": "licensed",
-      "permissionConfirmed": true,
-      "attribution": "Coastal Elite, CC BY-SA 2.0, via Wikimedia Commons",
-      "reviewState": "approved"
-    },
-    {
-      "restaurantId": "osm-way-372779851-sicilian-pizza",
-      "url": "assets/restaurants/sicilian-pizza-blowers.jpg",
-      "alt": "Sicilian Pizza at Blowers and Grafton Streets in Halifax",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sicilian_Pizza,_Pizza_Corner,_Halifax,_September_2018.jpg",
-      "sourceType": "licensed",
-      "creator": "Coastal Elite",
-      "license": "CC BY-SA 2.0",
-      "rightsBasis": "Creative Commons Attribution-ShareAlike 2.0 Generic (CC BY-SA 2.0); resized from the original without other modification",
-      "permission": "licensed",
-      "permissionConfirmed": true,
-      "attribution": "Coastal Elite, CC BY-SA 2.0, via Wikimedia Commons",
-      "reviewState": "approved"
-    },
-    {
-      "restaurantId": "osm-way-512985217-look-ho-ho",
-      "url": "assets/restaurants/look-ho-ho.jpg",
-      "alt": "Look Ho Ho restaurant sign at 6420 Bayers Road in Halifax",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Look_HoHo_(7172600835).jpg",
-      "sourceType": "licensed",
-      "creator": "Nicole Bratt",
-      "license": "CC BY-SA 2.0",
-      "rightsBasis": "Creative Commons Attribution-ShareAlike 2.0 Generic (CC BY-SA 2.0); resized from the original without other modification",
-      "permission": "licensed",
-      "permissionConfirmed": true,
-      "attribution": "Nicole Bratt, CC BY-SA 2.0, via Wikimedia Commons",
-      "reviewState": "approved"
-    },
-    {
-      "restaurantId": "osm-way-88879193-henry-house",
-      "url": "assets/restaurants/henry-house.jpg",
-      "alt": "The stone exterior of Henry House at 1222 Barrington Street in Halifax",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Henry_House,_Halifax,_Nova_Scotia,_Canada_-_August_2019_01.jpg",
-      "sourceType": "licensed",
-      "creator": "Msact",
-      "license": "CC BY-SA 4.0",
-      "rightsBasis": "Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0); resized from the original without other modification",
-      "permission": "licensed",
-      "permissionConfirmed": true,
-      "attribution": "Msact, CC BY-SA 4.0, via Wikimedia Commons",
-      "reviewState": "approved"
-    },
-    {
-      "restaurantId": "the-narrows",
-      "url": "assets/restaurants/the-narrows-exterior.jpg",
-      "alt": "The historic building housing The Narrows Public House at 2720 Gottingen Street in winter",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2720_Gottingen_Street.jpg",
-      "sourceType": "licensed",
-      "creator": "JeffNS",
-      "license": "CC BY-SA 4.0",
-      "rightsBasis": "Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0); resized from the original without other modification",
-      "permission": "licensed",
-      "permissionConfirmed": true,
-      "attribution": "JeffNS, CC BY-SA 4.0, via Wikimedia Commons",
       "reviewState": "approved"
     }
   ]
-};
+}

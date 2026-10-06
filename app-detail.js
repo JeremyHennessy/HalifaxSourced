@@ -165,7 +165,7 @@ function officialUpdateCard(update) {
   const published = new Date(update.publishedAt || NaN);
   const date = Number.isNaN(published.getTime()) ? "Date unavailable" : published.toLocaleDateString("en-CA", { month: "short", day: "numeric", year: "numeric", timeZone: "America/Halifax" });
   const platform = update.sourceLabel || (update.platform === "website_feed" ? "Official website" : socialPlatformLabel(update.platform));
-  const mediaUrl = safeUrl(update.mediaUrl || update.thumbnailUrl);
+  const mediaUrl = permittedPostMediaUrl(update);
   const media = mediaUrl ? `<img class="official-update-media" src="${escapeHtml(mediaUrl)}" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.closest('.official-update-card')?.classList.remove('has-media');this.remove()">` : "";
   const summary = String(update.summary || update.excerpt || "").trim();
   const categories = Array.isArray(update.categories) ? update.categories.slice(0, 4) : [];

@@ -12,7 +12,7 @@ try{
   const page=await context.newPage();const pageErrors=[];page.on('pageerror',e=>pageErrors.push(e.message));
   await page.goto(url+'/#explore',{waitUntil:'networkidle'});await page.locator('.restaurant-card').first().waitFor();
   const consoleErrors=[];page.on('console',message=>{if(message.type()==='error')consoleErrors.push(message.text());});
-  await page.evaluate((fixtureUrl)=>{const target=restaurants.find(r=>r.id==='side-hustle-snack-bar-dartmouth');target.coordinates=null;target.officialUpdates=[{title:'Controlled update',summary:'Retained source-backed text',postUrl:'https://example.test/source',mediaUrl:fixtureUrl,publishedAt:'2026-10-01T00:00:00Z',platform:'website_feed'}];renderRestaurantDetail(target.id);},fixtureUrl);
+  await page.evaluate((fixtureUrl)=>{const target=restaurants.find(r=>r.id==='side-hustle-snack-bar-dartmouth');target.coordinates=null;target.officialUpdates=[{title:'Controlled update',summary:'Retained source-backed text',postUrl:'https://example.test/source',mediaUrl:fixtureUrl,publishedAt:'2026-10-01T00:00:00Z',platform:'website_feed',rightsState:'permission_verified',sourceType:'licensed',permission:'licensed',permissionConfirmed:true,reviewState:'approved',creator:'Test fixture author',license:'Test fixture licence',rightsBasis:'Explicit deterministic test grant',sourceUrl:'https://example.test/source'}];renderRestaurantDetail(target.id);},fixtureUrl);
   const card=page.locator('#detailUpdates .official-update-card');await card.scrollIntoViewIfNeeded();
   if(status===200)await page.waitForFunction(()=>{const i=document.querySelector('#detailUpdates img');return i?.complete&&i.naturalWidth>0;});
   else await page.waitForFunction(()=>!document.querySelector('#detailUpdates img'));

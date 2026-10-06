@@ -51,6 +51,7 @@ function imageCandidates(restaurant) {
 
 function permittedImageFor(restaurant) {
   for (const image of imageCandidates(restaurant)) {
+    if (!hasMediaPermission(image)) continue;
     const sourceType = normalizeImageToken(image.sourceType ?? image.sourceKind ?? image.source ?? image.permissionSource);
     const permission = normalizeImageToken(image.permission ?? image.usageRights ?? image.rights);
     const reviewState = normalizeImageToken(image.reviewState ?? image.reviewStatus);
@@ -80,6 +81,28 @@ function permittedImageFor(restaurant) {
     };
   }
   return null;
+}
+
+// A public source reference documents a fact, not an image licence. Denials and
+// uncertain rights take precedence over legacy approval flags.
+function hasMediaPermission(image) {
+  if (!image || typeof image !== "object") return false;
+  const state = normalizeImageToken(image.rightsState);
+  if (state && !["licensed", "owner_authorized", "permission_verified"].includes(state)) return false;
+  const license = String(image.license ?? image.licence ?? "").trim();
+  const basis = String(image.rightsBasis ?? image.rightsNote ?? "").trim();
+  if (["unknown", "unverified", "restricted", "public_reference_not_media_licence"].includes(normalizeImageToken(license))) return false;
+  if (/first-party official site media/i.test(license) || /remote thumbnail reference only|not rehosted/i.test(basis)) return false;
+  return normalizeImageToken(image.reviewState ?? image.reviewStatus) === "approved"
+    && PERMITTED_IMAGE_SOURCE_TYPES.has(normalizeImageToken(image.sourceType ?? image.permissionSource))
+    && PERMITTED_IMAGE_PERMISSION_VALUES.has(normalizeImageToken(image.permission ?? image.usageRights ?? image.rights))
+    && (image.permissionConfirmed === true || image.ownerApproved === true)
+    && Boolean(license && basis && String(image.creator ?? "").trim())
+    && Boolean(safeUrl(image.sourceUrl ?? image.provenanceUrl ?? image.pageUrl ?? image.postUrl));
+}
+
+function permittedPostMediaUrl(post) {
+  return hasMediaPermission(post) ? safeImageUrl(post.mediaUrl || post.thumbnailUrl) : null;
 }
 
 function mediaImageMarkup(restaurant, options = {}) {

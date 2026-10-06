@@ -2,7 +2,7 @@
   "version": 1,
   "generatedAt": "2026-09-03T13:08:09Z",
   "targetCount": 117,
-  "policy": "Approved restaurant media may include Wikimedia Commons files with explicit reusable licences, documented restaurant-owner submissions, explicitly licensed material, or app-owner-reviewed HTTPS image references from restaurant official websites or feeds. Remote official-site images are linked with source attribution and are not rehosted.",
+  "policy": "Consumer media requires a specific reusable licence or documented owner grant. Public website references remain unverified until authorization evidence is reviewed.",
   "allowedSources": [
     "wikimedia_commons",
     "restaurant_owner_submission",
@@ -13,102 +13,122 @@
     {
       "restaurantId": "2-doors-down",
       "name": "2 Doors Down",
-      "status": "approved"
+      "status": "rights_review_required",
+      "rightsState": "unverified"
     },
     {
       "restaurantId": "osm-node-2714150704-7-peppers-grill",
       "name": "7 Peppers Grill",
-      "status": "approved"
+      "status": "rights_review_required",
+      "rightsState": "unverified"
     },
     {
       "restaurantId": "osm-node-5987565464-afrite",
       "name": "aFrite",
-      "status": "approved"
+      "status": "rights_review_required",
+      "rightsState": "unverified"
     },
     {
       "restaurantId": "osm-node-8158663930-almonak",
       "name": "Almonak",
-      "status": "approved"
+      "status": "rights_review_required",
+      "rightsState": "unverified"
     },
     {
       "restaurantId": "osm-node-7465073827-antojo-tacos-tequila",
       "name": "Antojo Tacos + Tequila",
-      "status": "approved"
+      "status": "rights_review_required",
+      "rightsState": "unverified"
     },
     {
       "restaurantId": "osm-node-3104067229-ardmore-tea-room",
       "name": "Ardmore Tea Room",
-      "status": "approved"
+      "status": "rights_review_required",
+      "rightsState": "unverified"
     },
     {
       "restaurantId": "osm-node-12143582175-asia-restaurant-and-bar",
       "name": "Asia Restaurant & Bar",
-      "status": "approved"
+      "status": "rights_review_required",
+      "rightsState": "unverified"
     },
     {
       "restaurantId": "bar-kismet",
       "name": "Bar Kismet",
-      "status": "approved"
+      "status": "rights_review_required",
+      "rightsState": "unverified"
     },
     {
       "restaurantId": "osm-node-8600605850-barburrito",
       "name": "BarBurrito",
-      "status": "approved"
+      "status": "rights_review_required",
+      "rightsState": "unverified"
     },
     {
       "restaurantId": "osm-node-3801064263-barrios-kitchen-and-bar",
       "name": "Barrios Kitchen & Bar",
-      "status": "approved"
+      "status": "rights_review_required",
+      "rightsState": "unverified"
     },
     {
       "restaurantId": "battery-park",
       "name": "Battery Park Beer Bar",
-      "status": "approved"
+      "status": "rights_review_required",
+      "rightsState": "unverified"
     },
     {
       "restaurantId": "osm-node-1116387649-bicycle-thief",
       "name": "Bicycle Thief",
-      "status": "approved"
+      "status": "rights_review_required",
+      "rightsState": "unverified"
     },
     {
       "restaurantId": "osm-node-10038454787-bird-s-nest-cafe",
       "name": "Bird's Nest Cafe",
-      "status": "approved"
+      "status": "rights_review_required",
+      "rightsState": "unverified"
     },
     {
       "restaurantId": "osm-node-267592735-bluenose-ii",
       "name": "Bluenose II",
-      "status": "approved"
+      "status": "rights_review_required",
+      "rightsState": "unverified"
     },
     {
       "restaurantId": "osm-node-4420916900-board-room-game-cafe",
       "name": "Board Room Game Cafe",
-      "status": "approved"
+      "status": "rights_review_required",
+      "rightsState": "unverified"
     },
     {
       "restaurantId": "osm-node-8636456775-booster-juice",
       "name": "Booster Juice",
-      "status": "approved"
+      "status": "rights_review_required",
+      "rightsState": "unverified"
     },
     {
       "restaurantId": "osm-way-393886756-boston-pizza",
       "name": "Boston Pizza",
-      "status": "approved"
+      "status": "rights_review_required",
+      "rightsState": "unverified"
     },
     {
       "restaurantId": "osm-node-7465111619-brawta-jamaican-jerk-joint",
       "name": "Brawta Jamaican Jerk Joint",
-      "status": "approved"
+      "status": "rights_review_required",
+      "rightsState": "unverified"
     },
     {
       "restaurantId": "osm-node-11752614922-cafe-good-luck",
       "name": "Café Good Luck",
-      "status": "approved"
+      "status": "rights_review_required",
+      "rightsState": "unverified"
     },
     {
       "restaurantId": "osm-node-11751643550-cafe-lunette",
       "name": "Café Lunette",
-      "status": "approved"
+      "status": "rights_review_required",
+      "rightsState": "unverified"
     },
     {
       "restaurantId": "osm-node-3800103657-celtic-corner-public-house",
@@ -118,37 +138,44 @@
     {
       "restaurantId": "osm-node-2333319166-cheese-curds-burgers",
       "name": "Cheese Curds Burgers",
-      "status": "approved"
+      "status": "rights_review_required",
+      "rightsState": "unverified"
     },
     {
       "restaurantId": "osm-node-5152065724-cheese-curds-gourmet-burgers-and-poutinerie-habaneros-modern-taco-bar",
       "name": "Cheese Curds Gourmet Burgers and Poutinerie/Habaneros Modern Taco Bar",
-      "status": "approved"
+      "status": "rights_review_required",
+      "rightsState": "unverified"
     },
     {
       "restaurantId": "osm-node-7032915871-chkn-chop",
       "name": "Chkn Chop",
-      "status": "approved"
+      "status": "rights_review_required",
+      "rightsState": "unverified"
     },
     {
       "restaurantId": "osm-node-11867490075-cora",
       "name": "Cora",
-      "status": "approved"
+      "status": "rights_review_required",
+      "rightsState": "unverified"
     },
     {
       "restaurantId": "osm-node-13286456320-creme",
       "name": "Crème",
-      "status": "approved"
+      "status": "rights_review_required",
+      "rightsState": "unverified"
     },
     {
       "restaurantId": "osm-node-703490468-cut-contemporary-steak-house-and-urban-grill",
       "name": "Cut Contemporary Steak House & Urban Grill",
-      "status": "approved"
+      "status": "rights_review_required",
+      "rightsState": "unverified"
     },
     {
       "restaurantId": "osm-node-1031603952-darrell-s",
       "name": "Darrell's",
-      "status": "approved"
+      "status": "rights_review_required",
+      "rightsState": "unverified"
     },
     {
       "restaurantId": "darty-brewing-dartmouth",
@@ -158,72 +185,86 @@
     {
       "restaurantId": "dear-friend",
       "name": "Dear Friend Bar",
-      "status": "approved"
+      "status": "rights_review_required",
+      "rightsState": "unverified"
     },
     {
       "restaurantId": "osm-node-5188870965-donnini-s-pizza",
       "name": "Donnini's Pizza",
-      "status": "approved"
+      "status": "rights_review_required",
+      "rightsState": "unverified"
     },
     {
       "restaurantId": "osm-node-2623078934-dooly-s",
       "name": "Dooly's",
-      "status": "approved"
+      "status": "rights_review_required",
+      "rightsState": "unverified"
     },
     {
       "restaurantId": "osm-node-11551984275-doraku",
       "name": "Doraku",
-      "status": "approved"
+      "status": "rights_review_required",
+      "rightsState": "unverified"
     },
     {
       "restaurantId": "osm-node-11752717941-east-cup-cafe",
       "name": "East Cup Cafe",
-      "status": "approved"
+      "status": "rights_review_required",
+      "rightsState": "unverified"
     },
     {
       "restaurantId": "edna",
       "name": "EDNA",
-      "status": "approved"
+      "status": "rights_review_required",
+      "rightsState": "unverified"
     },
     {
       "restaurantId": "osm-node-762250248-ela-greek-taverna",
       "name": "Ela Greek Taverna",
-      "status": "approved"
+      "status": "rights_review_required",
+      "rightsState": "unverified"
     },
     {
       "restaurantId": "osm-node-2705686566-ela-greek-taverna",
       "name": "ela! Greek Taverna",
-      "status": "approved"
+      "status": "rights_review_required",
+      "rightsState": "unverified"
     },
     {
       "restaurantId": "osm-node-620808566-fan-s-chinese-restaurant",
       "name": "Fan's Chinese Restaurant",
-      "status": "approved"
+      "status": "rights_review_required",
+      "rightsState": "unverified"
     },
     {
       "restaurantId": "osm-node-11282329952-freeman-s-little-new-york",
       "name": "Freeman's Little New York",
-      "status": "approved"
+      "status": "rights_review_required",
+      "rightsState": "unverified"
     },
     {
       "restaurantId": "osm-node-2611287045-gingerbread-haus-bakery",
       "name": "Gingerbread Haus Bakery",
-      "status": "approved"
+      "status": "rights_review_required",
+      "rightsState": "unverified"
     },
     {
       "restaurantId": "osm-node-5150122721-good-robot-brewing-company",
       "name": "Good Robot Brewing Company",
-      "status": "approved"
+      "status": "rights_review_required",
+      "rightsState": "unverified"
     },
     {
       "restaurantId": "osm-node-3802931964-hamachi-kita",
       "name": "Hamachi Kita",
-      "status": "approved"
+      "status": "rights_review_required",
+      "rightsState": "unverified"
     },
     {
       "restaurantId": "osm-node-9152231317-harvest",
       "name": "HARVEST",
-      "status": "approved"
+      "status": "rights_review_required",
+      "rightsState": "unverified"
     },
     {
       "restaurantId": "osm-way-88879193-henry-house",
@@ -233,17 +274,20 @@
     {
       "restaurantId": "osm-node-4421306590-heppy-s-pie-lady",
       "name": "Heppy's Pie Lady",
-      "status": "approved"
+      "status": "rights_review_required",
+      "rightsState": "unverified"
     },
     {
       "restaurantId": "highwayman",
       "name": "Highwayman",
-      "status": "approved"
+      "status": "rights_review_required",
+      "rightsState": "unverified"
     },
     {
       "restaurantId": "osm-node-5631529440-hmcs-king-s-wardroom",
       "name": "HMCS King’s Wardroom",
-      "status": "approved"
+      "status": "rights_review_required",
+      "rightsState": "unverified"
     },
     {
       "restaurantId": "osm-node-11239721834-humble-pie-kitchen",
@@ -253,37 +297,44 @@
     {
       "restaurantId": "osm-node-9629211483-ihop",
       "name": "IHOP",
-      "status": "approved"
+      "status": "rights_review_required",
+      "rightsState": "unverified"
     },
     {
       "restaurantId": "osm-node-5503919661-jukai",
       "name": "Jukai",
-      "status": "approved"
+      "status": "rights_review_required",
+      "rightsState": "unverified"
     },
     {
       "restaurantId": "osm-node-11552505443-jukai-japanese-and-thai",
       "name": "JUKAI Japanese & Thai",
-      "status": "approved"
+      "status": "rights_review_required",
+      "rightsState": "unverified"
     },
     {
       "restaurantId": "osm-node-7139174640-kajohn-thai",
       "name": "Kajohn Thai",
-      "status": "approved"
+      "status": "rights_review_required",
+      "rightsState": "unverified"
     },
     {
       "restaurantId": "osm-node-11506685695-kenny-s-pizza",
       "name": "Kenny's Pizza",
-      "status": "approved"
+      "status": "rights_review_required",
+      "rightsState": "unverified"
     },
     {
       "restaurantId": "osm-node-9128392205-king-of-donair",
       "name": "King of Donair",
-      "status": "approved"
+      "status": "rights_review_required",
+      "rightsState": "unverified"
     },
     {
       "restaurantId": "osm-node-11577869162-lady-hammond-grill",
       "name": "Lady Hammond Grill",
-      "status": "approved"
+      "status": "rights_review_required",
+      "rightsState": "unverified"
     },
     {
       "restaurantId": "lake-city-cider-dartmouth",
@@ -293,22 +344,26 @@
     {
       "restaurantId": "osm-node-13122094789-latitude-44",
       "name": "Latitude 44°",
-      "status": "approved"
+      "status": "rights_review_required",
+      "rightsState": "unverified"
     },
     {
       "restaurantId": "osm-node-4420843802-le-bistro-by-liz",
       "name": "Le Bistro by Liz",
-      "status": "approved"
+      "status": "rights_review_required",
+      "rightsState": "unverified"
     },
     {
       "restaurantId": "osm-node-8836681495-lion-s-head-tavern",
       "name": "Lion's Head Tavern",
-      "status": "approved"
+      "status": "rights_review_required",
+      "rightsState": "unverified"
     },
     {
       "restaurantId": "osm-node-11001023964-lockside-canteen",
       "name": "Lockside Canteen",
-      "status": "approved"
+      "status": "rights_review_required",
+      "rightsState": "unverified"
     },
     {
       "restaurantId": "osm-way-512985217-look-ho-ho",
@@ -318,12 +373,14 @@
     {
       "restaurantId": "osm-node-12136077507-lou-pecou",
       "name": "Lou Pécou",
-      "status": "approved"
+      "status": "rights_review_required",
+      "rightsState": "unverified"
     },
     {
       "restaurantId": "osm-node-3802952557-lucy-s-hydrostone-cafe",
       "name": "Lucy's Hydrostone Cafe",
-      "status": "approved"
+      "status": "rights_review_required",
+      "rightsState": "unverified"
     },
     {
       "restaurantId": "marias-pantry-dartmouth",
@@ -333,52 +390,62 @@
     {
       "restaurantId": "osm-way-463777993-may-garden",
       "name": "May Garden",
-      "status": "approved"
+      "status": "rights_review_required",
+      "rightsState": "unverified"
     },
     {
       "restaurantId": "osm-node-1920618295-metro-pizza",
       "name": "Metro Pizza",
-      "status": "approved"
+      "status": "rights_review_required",
+      "rightsState": "unverified"
     },
     {
       "restaurantId": "osm-node-6910685885-mexi-s",
       "name": "Mexi's",
-      "status": "approved"
+      "status": "rights_review_required",
+      "rightsState": "unverified"
     },
     {
       "restaurantId": "osm-node-8636456776-mezza-lebanese-kitchen",
       "name": "Mezza Lebanese Kitchen",
-      "status": "approved"
+      "status": "rights_review_required",
+      "rightsState": "unverified"
     },
     {
       "restaurantId": "osm-node-475879583-morris-east",
       "name": "Morris East",
-      "status": "approved"
+      "status": "rights_review_required",
+      "rightsState": "unverified"
     },
     {
       "restaurantId": "osm-node-9165619005-mother-s-pizza",
       "name": "Mother's Pizza",
-      "status": "approved"
+      "status": "rights_review_required",
+      "rightsState": "unverified"
     },
     {
       "restaurantId": "osm-node-7393838887-new-wing-wah",
       "name": "New Wing Wah",
-      "status": "approved"
+      "status": "rights_review_required",
+      "rightsState": "unverified"
     },
     {
       "restaurantId": "osm-node-11526055082-noggins-coburg",
       "name": "Noggins Coburg",
-      "status": "approved"
+      "status": "rights_review_required",
+      "rightsState": "unverified"
     },
     {
       "restaurantId": "osm-node-5647941372-orso-pub-and-grill",
       "name": "Orso Pub & Grill",
-      "status": "approved"
+      "status": "rights_review_required",
+      "rightsState": "unverified"
     },
     {
       "restaurantId": "osm-node-11699344555-osmow-s",
       "name": "Osmow's",
-      "status": "approved"
+      "status": "rights_review_required",
+      "rightsState": "unverified"
     },
     {
       "restaurantId": "oxalis-dartmouth",
@@ -388,17 +455,20 @@
     {
       "restaurantId": "osm-node-11867455433-papa-john-s",
       "name": "Papa John's",
-      "status": "approved"
+      "status": "rights_review_required",
+      "rightsState": "unverified"
     },
     {
       "restaurantId": "osm-node-9099103635-pazzo-ristorante-and-enoteca",
       "name": "Pazzo Ristorante & Enoteca",
-      "status": "approved"
+      "status": "rights_review_required",
+      "rightsState": "unverified"
     },
     {
       "restaurantId": "osm-node-5150087023-peter-s-pizzeria",
       "name": "Peter's Pizzeria",
-      "status": "approved"
+      "status": "rights_review_required",
+      "rightsState": "unverified"
     },
     {
       "restaurantId": "osm-node-3801688860-revana-pizza",
@@ -428,12 +498,14 @@
     {
       "restaurantId": "osm-node-11552061304-sushi-shige",
       "name": "Sushi Shige",
-      "status": "approved"
+      "status": "rights_review_required",
+      "rightsState": "unverified"
     },
     {
       "restaurantId": "the-bicycle-thief",
       "name": "The Bicycle Thief",
-      "status": "approved"
+      "status": "rights_review_required",
+      "rightsState": "unverified"
     },
     {
       "restaurantId": "the-narrows",
@@ -458,42 +530,50 @@
     {
       "restaurantId": "osm-way-83552117-bedford-beer-garden",
       "name": "Bedford Beer Garden",
-      "status": "approved"
+      "status": "rights_review_required",
+      "rightsState": "unverified"
     },
     {
       "restaurantId": "osm-node-2714920436-greco-pizza",
       "name": "Greco Pizza",
-      "status": "approved"
+      "status": "rights_review_required",
+      "rightsState": "unverified"
     },
     {
       "restaurantId": "osm-way-253538107-the-armview-restaurant-and-lounge",
       "name": "The Armview Restaurant & Lounge",
-      "status": "approved"
+      "status": "rights_review_required",
+      "rightsState": "unverified"
     },
     {
       "restaurantId": "osm-node-10665783054-ben-and-florentine",
       "name": "Ben & Florentine",
-      "status": "approved"
+      "status": "rights_review_required",
+      "rightsState": "unverified"
     },
     {
       "restaurantId": "osm-node-11552081912-kanpai-izakaya",
       "name": "Kanpai Izakaya",
-      "status": "approved"
+      "status": "rights_review_required",
+      "rightsState": "unverified"
     },
     {
       "restaurantId": "osm-node-11552234300-sushi-nami-royale",
       "name": "Sushi Nami Royale",
-      "status": "approved"
+      "status": "rights_review_required",
+      "rightsState": "unverified"
     },
     {
       "restaurantId": "osm-node-11699344564-second-cup",
       "name": "Second Cup",
-      "status": "approved"
+      "status": "rights_review_required",
+      "rightsState": "unverified"
     },
     {
       "restaurantId": "osm-node-12003152369-station-1-lebanese-kitchen",
       "name": "Station 1 Lebanese Kitchen",
-      "status": "approved"
+      "status": "rights_review_required",
+      "rightsState": "unverified"
     },
     {
       "restaurantId": "osm-node-13141377001-india-paradise",
@@ -504,97 +584,116 @@
     {
       "restaurantId": "osm-node-13262694122-public-cafe-bakery-and-bar",
       "name": "Public - Café, Bakery & Bar",
-      "status": "approved"
+      "status": "rights_review_required",
+      "rightsState": "unverified"
     },
     {
       "restaurantId": "osm-node-13286396472-matadora-tapas-bar",
       "name": "Matadora Tapas Bar",
-      "status": "approved"
+      "status": "rights_review_required",
+      "rightsState": "unverified"
     },
     {
       "restaurantId": "osm-node-13286456319-water-polo",
       "name": "Water Polo",
-      "status": "approved"
+      "status": "rights_review_required",
+      "rightsState": "unverified"
     },
     {
       "restaurantId": "osm-node-14139904501-battery-park-beer-bar-and-eatery",
       "name": "Battery Park Beer Bar & Eatery",
-      "status": "approved"
+      "status": "rights_review_required",
+      "rightsState": "unverified"
     },
     {
       "restaurantId": "osm-node-2704749449-the-mellow-mug",
       "name": "The Mellow Mug",
-      "status": "approved"
+      "status": "rights_review_required",
+      "rightsState": "unverified"
     },
     {
       "restaurantId": "osm-node-2713247300-pizza-co",
       "name": "Pizza.Co",
-      "status": "approved"
+      "status": "rights_review_required",
+      "rightsState": "unverified"
     },
     {
       "restaurantId": "osm-node-37132580-durty-nelly-s-irish-pub",
       "name": "Durty Nelly's Irish Pub",
-      "status": "approved"
+      "status": "rights_review_required",
+      "rightsState": "unverified"
     },
     {
       "restaurantId": "osm-node-3799422457-cora",
       "name": "Cora",
-      "status": "approved"
+      "status": "rights_review_required",
+      "rightsState": "unverified"
     },
     {
       "restaurantId": "osm-node-4411880103-the-bg",
       "name": "The BG",
-      "status": "approved"
+      "status": "rights_review_required",
+      "rightsState": "unverified"
     },
     {
       "restaurantId": "osm-node-4550004778-st-louis-bar-and-grill",
       "name": "St. Louis Bar & Grill",
-      "status": "approved"
+      "status": "rights_review_required",
+      "rightsState": "unverified"
     },
     {
       "restaurantId": "osm-node-4550005602-starbucks",
       "name": "Starbucks",
-      "status": "approved"
+      "status": "rights_review_required",
+      "rightsState": "unverified"
     },
     {
       "restaurantId": "osm-node-4797459279-tilted-tap",
       "name": "Tilted Tap",
-      "status": "approved"
+      "status": "rights_review_required",
+      "rightsState": "unverified"
     },
     {
       "restaurantId": "osm-node-5150371021-starbucks",
       "name": "Starbucks",
-      "status": "approved"
+      "status": "rights_review_required",
+      "rightsState": "unverified"
     },
     {
       "restaurantId": "osm-node-5161526522-sushi-nami-royale",
       "name": "Sushi Nami Royale",
-      "status": "approved"
+      "status": "rights_review_required",
+      "rightsState": "unverified"
     },
     {
       "restaurantId": "osm-node-7082566320-springhouse-market",
       "name": "Springhouse Market",
-      "status": "approved"
+      "status": "rights_review_required",
+      "rightsState": "unverified"
     },
     {
       "restaurantId": "osm-node-7674175977-moxie-s",
       "name": "Moxie's",
-      "status": "approved"
+      "status": "rights_review_required",
+      "rightsState": "unverified"
     },
     {
       "restaurantId": "osm-node-7674254025-shuck-seafood-raw-bar",
       "name": "Shuck Seafood + Raw Bar",
-      "status": "approved"
+      "status": "rights_review_required",
+      "rightsState": "unverified"
     },
     {
       "restaurantId": "osm-node-8089843368-smokehouse-brewery",
       "name": "Smokehouse Brewery",
-      "status": "approved"
+      "status": "rights_review_required",
+      "rightsState": "unverified"
     },
     {
       "restaurantId": "osm-way-319792807-chinatown",
       "name": "Chinatown",
-      "status": "approved"
+      "status": "rights_review_required",
+      "rightsState": "unverified"
     }
   ]
 }

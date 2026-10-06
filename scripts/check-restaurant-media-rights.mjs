@@ -19,6 +19,8 @@ if (!Array.isArray(priority.records) || priority.records.length !== priority.tar
 if (new Set((priority.records || []).map((record) => record.restaurantId)).size !== priority.records?.length) failures.push("priority queue contains duplicate restaurant IDs");
 
 for (const record of media) {
+  if (record.rightsState === "unverified" && record.reviewState === "rights_review_required" && record.permission === "unknown" && record.permissionConfirmed === false && isHttp(record.sourceUrl)) continue;
+  if (/First-party official site media/i.test(record.license || "") || /remote thumbnail reference only|not rehosted/i.test(record.rightsBasis || "")) failures.push(`${record.restaurantId}: public reference is not authorization`);
   if (record.reviewState !== "approved" || record.permissionConfirmed !== true || !allowedPermissions.has(record.permission) || !allowedSourceTypes.has(record.sourceType)) failures.push(`${record.restaurantId}: approval contract failed`);
   if (!record.creator || !record.license || !record.attribution || !record.rightsBasis || !isHttp(record.sourceUrl)) failures.push(`${record.restaurantId}: creator, licence, attribution, rights basis and source URL are required`);
   if (!record.alt || record.alt.length < 20) failures.push(`${record.restaurantId}: descriptive alt text is required`);
@@ -29,7 +31,7 @@ for (const record of media) {
     try { await access(new URL("../" + record.url, import.meta.url)); } catch { failures.push(record.restaurantId + ": local media asset is missing"); }
   }
 }
-const approvedIds = new Set(media.map((record) => record.restaurantId));
+const approvedIds = new Set(media.filter(record => record.reviewState === "approved").map((record) => record.restaurantId));
 const priorityIds = new Set((priority.records || []).map((record) => record.restaurantId));
 for (const record of media) {
   if (!priorityIds.has(record.restaurantId)) failures.push(`${record.restaurantId}: manifest media is missing from priority queue`);
@@ -43,7 +45,7 @@ const report = {
   version: 1,
   generatedAt: new Date().toISOString(),
   targetCount: priority.targetCount,
-  approvedCount: media.length,
+  approvedCount: approvedIds.size,
   pendingCount: (priority.records || []).filter((record) => record.status !== "approved").length,
   policy: priority.policy,
   approvedRestaurantIds: [...approvedIds],

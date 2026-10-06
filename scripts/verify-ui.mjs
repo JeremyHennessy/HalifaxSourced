@@ -360,15 +360,15 @@ await page.goto(`${url}/#restaurant/osm-node-10038454787-bird-s-nest-cafe`, { wa
 const birdsNestUpdateState = await page.evaluate(() => {
   const restaurant = restaurants.find((item) => item.id === "osm-node-10038454787-bird-s-nest-cafe");
   const updates = (restaurant?.officialUpdates || []).filter((update) => safeUrl(update.postUrl)).slice(0, 12);
-  return { expected: updates.length, expectedMedia: updates.filter((update) => safeUrl(update.mediaUrl || update.thumbnailUrl)).length };
+  return { expected: updates.length, expectedMedia: updates.filter((update) => permittedPostMediaUrl(update)).length };
 });
 if (birdsNestUpdateState.expected < 1) throw new Error(`Expected reviewed Bird's Nest first-party feed updates in the browser model, got ${JSON.stringify(birdsNestUpdateState)}.`);
 if (await page.locator("#detailUpdates .official-update-card").count() !== birdsNestUpdateState.expected) throw new Error(`Expected rendered Bird's Nest updates to match the browser model, got ${JSON.stringify(birdsNestUpdateState)}.`);
 if (await page.locator("#detailUpdates .official-update-media").count() < Math.min(1, birdsNestUpdateState.expectedMedia)) throw new Error(`Expected at least one feed-published Bird's Nest media preview, got ${JSON.stringify(birdsNestUpdateState)}.`);
 const officialMedia = page.locator("#detailUpdates .official-update-media").first();
-await officialMedia.waitFor();
+if (birdsNestUpdateState.expectedMedia) await officialMedia.waitFor();
 await page.locator('#detailUpdates .official-update-card').first().scrollIntoViewIfNeeded();
-await page.waitForFunction(() => {
+if (birdsNestUpdateState.expectedMedia) await page.waitForFunction(() => {
   const image = document.querySelector("#detailUpdates .official-update-media");
   return image instanceof HTMLImageElement && image.complete && image.naturalWidth > 0;
 });
@@ -378,14 +378,14 @@ await page.goto(`${url}/#restaurant/osm-node-7139174640-kajohn-thai`, { waitUnti
 const kajohnUpdateState = await page.evaluate(() => {
   const restaurant = restaurants.find((item) => item.id === "osm-node-7139174640-kajohn-thai");
   const updates = (restaurant?.officialUpdates || []).filter((update) => safeUrl(update.postUrl)).slice(0, 12);
-  return { expected: updates.length, expectedMedia: updates.filter((update) => safeUrl(update.mediaUrl || update.thumbnailUrl)).length };
+  return { expected: updates.length, expectedMedia: updates.filter((update) => permittedPostMediaUrl(update)).length };
 });
 if (kajohnUpdateState.expected < 2) throw new Error(`Expected at least two Kajohn Thai official updates in the browser model, got ${JSON.stringify(kajohnUpdateState)}.`);
 if (await page.locator("#detailUpdates .official-update-card").count() !== kajohnUpdateState.expected) throw new Error(`Expected rendered Kajohn Thai updates to match the browser model, got ${JSON.stringify(kajohnUpdateState)}.`);
 if (await page.locator("#detailUpdates .official-update-media").count() < Math.min(2, kajohnUpdateState.expectedMedia)) throw new Error(`Expected retained media on reviewed Kajohn Thai updates, got ${JSON.stringify(kajohnUpdateState)}.`);
 const kajohnMedia = page.locator("#detailUpdates .official-update-media").first();
 await page.locator('#detailUpdates .official-update-card').first().scrollIntoViewIfNeeded();
-await page.waitForFunction(() => {
+if (kajohnUpdateState.expectedMedia) await page.waitForFunction(() => {
   const image = document.querySelector("#detailUpdates .official-update-media");
   return image instanceof HTMLImageElement && image.complete && image.naturalWidth > 0;
 });
