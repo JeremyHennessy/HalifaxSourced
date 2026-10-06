@@ -607,6 +607,14 @@
       "declarationBasis": "Manual static addition after fatal offline unknown; already present in accepted recent-social-posts.js and website-page-intelligence.js. Review required; no request to source."
     },
     {
+      "url": "http://static1.squarespace.com/static/5f3ab2aad4d7be367932fd9a/t/5f91993f4555cb19218e7c01/1601301167954/drinks.jpg?format=1500w",
+      "method": "GET",
+      "resourceType": "image",
+      "category": "media-image",
+      "fixture": "../../assets/restaurants/the-narrows-exterior.jpg",
+      "declarationBasis": "Manual static addition after context gate exposed original Highwayman HTTP image variant; HTTPS variant already frozen. No scheme normalization or source contact; review required."
+    },
+    {
       "url": "https://example.test/feed-image.jpg",
       "method": "GET",
       "resourceType": "image",

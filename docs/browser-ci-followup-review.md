@@ -99,3 +99,9 @@ fatal accounting; a separate about:blank popup proves all-page console and
 script errors are captured. Neither controlled invalid case is an acceptance
 pass or an allowance for production errors. Pipeline planning remains separate;
 no mutable deployment path was changed by this correction.
+
+The first exact-head context-gate full run failed on the original Highwayman
+HTTP image variant, while the manifest had its HTTPS form. This preserved
+fatal failure justified one explicit static HTTP entry for review. Matching
+still requires the full original URL/method/type; no scheme normalization,
+runtime expansion or real source request was added.
