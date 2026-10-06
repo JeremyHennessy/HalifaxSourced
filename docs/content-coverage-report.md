@@ -1,6 +1,6 @@
 # Halifax Sourced content coverage baseline
 
-Generated: 2026-10-06T02:02:00.935Z
+Generated: 2026-10-06T04:15:34.993Z
 
 This report measures the currently committed production data layers. It is a content-completeness baseline, **not a restaurant quality or popularity rating**. Unknown data remains unknown; source leads are not converted into fabricated facts.
 
@@ -28,7 +28,7 @@ This report measures the currently committed production data layers. It is a con
 | Cuisine classification | 564 | 100% |
 | Accessibility information | 168 | 29.8% |
 | Patio information | 72 | 12.8% |
-| Usable rights-approved media | 106 | 18.8% |
+| Usable rights-approved media | 7 | 1.2% |
 
 Raw layers: 10 curated, 736 OpenStreetMap, 12 reviewed local-discovery records, 554 pre-discovery catalog records.
 

@@ -1,6 +1,7 @@
 import { readFile, mkdir, writeFile } from "node:fs/promises";
 import { resolve } from "node:path";
 import vm from "node:vm";
+import {mediaPermitted,referenceProblems} from "./lib/media-rights-contract.mjs";
 
 async function loadWindowScript(path) {
   const source = await readFile(path, "utf8");
@@ -70,6 +71,8 @@ const officialPayload = officialWindow.HALIFAX_OFFICIAL_SITE_SIGNALS ?? null;
 const official = Array.isArray(officialPayload?.results) ? officialPayload.results : [];
 const mediaPayload = mediaWindow.HALIFAX_RESTAURANT_MEDIA ?? null;
 const mediaRecords = Array.isArray(mediaPayload?.records) ? mediaPayload.records : [];
+const referenceWindow = await loadWindowScript(resolve("data", "restaurant-media-references.js"));
+const mediaReferences = referenceWindow.HALIFAX_MEDIA_SOURCE_REFERENCES?.records || [];
 const structuredEventPayload = structuredEventWindow.HALIFAX_STRUCTURED_EVENTS ?? null;
 const structuredEvents = Array.isArray(structuredEventPayload?.events) ? structuredEventPayload.events : [];
 const verifiedSourcePayload = verifiedSourceWindow.HALIFAX_VERIFIED_SOURCE_PAGES ?? null;
@@ -156,12 +159,18 @@ for (const signal of official) {
 }
 if (ignoredCandidateLinks.length) warnings.push({ type: "non_http_candidate_links_ignored_by_ui", count: ignoredCandidateLinks.length, examples: ignoredCandidateLinks.slice(0, 25) });
 
-const allowedMediaSources = new Set(["owner", "owner_submission", "restaurant_owner", "first_party", "official_site_permitted", "licensed"]);
-const allowedMediaPermissions = new Set(["permitted", "owner_approved", "written_permission", "licensed"]);
+const allowedMediaSources = new Set(["owner", "owner_submission", "restaurant_owner", "restaurant_owner_submission", "first_party", "official_site_permitted", "licensed"]);
+const allowedMediaPermissions = new Set(["permitted", "owner_approved", "written_permission", "owner_submitted", "licensed"]);
 const duplicateMedia = duplicateValues(mediaRecords, (record) => record.restaurantId && record.url ? `${record.restaurantId}|${record.url}` : null);
 if (duplicateMedia.length) failures.push({ type: "duplicate_media_records", values: duplicateMedia.slice(0, 25) });
-const invalidApprovedMedia = mediaRecords.filter((record) => token(record.reviewState) !== "approved" || !rawIds.has(record.restaurantId) || !validMediaUrl(record.url) || !validHttpUrl(record.sourceUrl) || !allowedMediaSources.has(token(record.sourceType)) || !allowedMediaPermissions.has(token(record.permission)) || record.permissionConfirmed !== true || !String(record.rightsBasis ?? "").trim());
+const invalidApprovedMedia = mediaRecords.filter((record) => !mediaPermitted(record) || token(record.reviewState) !== "approved" || !rawIds.has(record.restaurantId) || !validMediaUrl(record.url) || !validHttpUrl(record.sourceUrl) || !allowedMediaSources.has(token(record.sourceType)) || !allowedMediaPermissions.has(token(record.permission)) || record.permissionConfirmed !== true || !String(record.rightsBasis ?? "").trim());
 if (invalidApprovedMedia.length) failures.push({ type: "production_media_missing_provenance", count: invalidApprovedMedia.length, examples: invalidApprovedMedia.slice(0, 20) });
+const duplicateReferences = duplicateValues(mediaReferences, record => `${record.restaurantId}|${record.url}`);
+if (duplicateReferences.length) failures.push({type:"duplicate_media_source_references",values:duplicateReferences});
+const conflictingRoles = mediaReferences.filter(record => mediaRecords.some(media => media.restaurantId === record.restaurantId && media.url === record.url));
+if (conflictingRoles.length) failures.push({type:"conflicting_media_record_roles",count:conflictingRoles.length});
+const invalidReferences = mediaReferences.filter(record => !rawIds.has(record.restaurantId) || referenceProblems(record).length);
+if (invalidReferences.length) failures.push({type:"invalid_media_source_references",count:invalidReferences.length,examples:invalidReferences.slice(0,20)});
 const pendingOwnerMedia = ownerSubmissions.flatMap((submission) => (submission.images ?? []).map((image) => ({ restaurantId: submission.restaurantId, name: submission.name, ...image }))).filter((image) => token(image.reviewState) !== "approved");
 if (pendingOwnerMedia.length) warnings.push({ type: "owner_media_pending_review", count: pendingOwnerMedia.length, examples: pendingOwnerMedia.slice(0, 20).map(({ restaurantId, name, url, sourceType, reviewState }) => ({ restaurantId, name, url, sourceType, reviewState })) });
 
@@ -212,6 +221,7 @@ const report = {
     officialWithValidSite,
     officialCandidateLinks,
     productionMedia: mediaRecords.length,
+    retainedMediaSourceReferences: mediaReferences.length,
     ownerSubmissions: ownerSubmissions.length,
     ownerMediaPendingReview: pendingOwnerMedia.length,
     structuredEvents: structuredEvents.length,

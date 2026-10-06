@@ -1,7 +1,6 @@
-window.HALIFAX_RESTAURANT_MEDIA = {
-  "version": 7,
-  "generatedAt": "2026-09-03T13:08:09Z",
-  "records": [
+{
+  "baseline": "4d384b12b6b9ce7021ccd292fc5a67c9db00b2e2",
+  "licensedRecords": [
     {
       "restaurantId": "osm-node-26041177-your-father-s-moustache",
       "url": "assets/restaurants/your-fathers-moustache.jpg",
@@ -100,5 +99,7 @@ window.HALIFAX_RESTAURANT_MEDIA = {
       "attribution": "JeffNS, CC BY-SA 4.0, via Wikimedia Commons",
       "reviewState": "approved"
     }
-  ]
-};
+  ],
+  "archivedClaimsCount": 99,
+  "archivedClaimsSha256": "57256e02de9a3ac36d34d4514b14e4acb8b388f6f01b22ca80f55d3301f358e7"
+}

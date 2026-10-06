@@ -1,8 +1,8 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-06T02:02:00.935Z",
-  "sourceCommitSha": "7c000775844e5b5307416e0a38877fc426b2285a",
-  "baselineCommitHint": "7c000775844e5b5307416e0a38877fc426b2285a",
+  "generatedAt": "2026-10-06T04:15:34.993Z",
+  "sourceCommitSha": null,
+  "baselineCommitHint": null,
   "definitions": {
     "canonicalPlaces": "Current user-facing merge of catalog restaurants plus reviewed discovery records, matching the app's existing name-based discovery merge behavior.",
     "verifiedOfficialWebsite": "Official-site fetch returned a successful HTTP status or the first-party discovery layer successfully fetched the restaurant-owned site.",
@@ -62,7 +62,8 @@
     "withCuisineClassification": 564,
     "withAccessibilityInformation": 168,
     "withPatioInformation": 72,
-    "withUsableMedia": 106,
+    "withUsableMedia": 7,
+    "retainedMediaSourceReferences": 99,
     "lifecycle": {
       "active": 11,
       "temporarily_closed": 0,
@@ -126,7 +127,7 @@
     "cuisine": 100,
     "accessibility": 29.8,
     "patio": 12.8,
-    "media": 18.8
+    "media": 1.2
   },
   "socialAudit": {
     "placesWithSocial": 161,

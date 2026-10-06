@@ -2,6 +2,7 @@ import { fetchGuardedSource as fetch } from "./lib/fetch-public-source.mjs";
 import { createHash } from "node:crypto";
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import vm from "node:vm";
+import {mediaPermitted,referenceProblems} from "./lib/media-rights-contract.mjs";
 
 const generatedAt = new Date().toISOString();
 const timeoutMs = Number(process.env.THUMBNAIL_DISCOVERY_TIMEOUT_MS ?? 8000);
@@ -338,7 +339,9 @@ function extractHtmlContentImages(html, baseUrl) {
     .slice(0, 18);
 }
 function approvedCandidate(record, restaurantName) {
+  if (!mediaPermitted(record)) throw Error(`Invalid approved media: ${record.restaurantId}`);
   return {
+    ...record,
     restaurantId: record.restaurantId,
     restaurantName,
     thumbnailUrl: record.url,
@@ -519,11 +522,12 @@ function normalizeCandidate(candidate) {
     attribution: candidate.attribution || null,
     alt: String(candidate.alt || candidate.restaurantName || "Restaurant thumbnail").slice(0, 180),
     confidence: candidate.confidence,
-    observedAt: candidate.observedAt || generatedAt,
+    observedAt: (candidate.recordKind === "source_reference" || candidate.sourceKind === "approved_restaurant_media") ? (candidate.observedAt || null) : (candidate.observedAt || generatedAt),
     publishedAt: candidate.publishedAt || null,
     title: candidate.title || null,
     category: candidate.category || null,
-    eligibleForProduction: candidate.reviewState === "approved" && candidate.rightsStatus === "production_approved"
+    eligibleForProduction: candidate.reviewState === "approved" && candidate.rightsStatus === "production_approved",
+    ...Object.fromEntries(["url", "sourceType", "creator", "license", "licence", "rightsState", "reviewStatus", "usageRights", "rights", "ownerApproved", "quarantined", "renderable", "recordKind", "permissionSource", "rightsNote"].filter(key => key in candidate).map(key => [key, candidate[key]]))
   };
   const reviewedDecision = reviewedThumbnailDecisionsById.get(normalized.id) || reviewedThumbnailDecisionsByImage.get(`${normalized.restaurantId}|${normalized.thumbnailUrl}`);
   if (reviewedDecision === "needs_source_check") normalized.reviewState = "source_check";
@@ -531,7 +535,8 @@ function normalizeCandidate(candidate) {
     normalized.reviewState = "rejected";
     normalized.rightsStatus = "rejected";
   }
-  normalized.eligibleForProduction = normalized.reviewState === "approved" && normalized.rightsStatus === "production_approved";
+  if (normalized.reviewState === "approved" && !mediaPermitted(normalized)) throw Error(`Invalid approved thumbnail: ${normalized.id}`);
+  normalized.eligibleForProduction = normalized.reviewState === "approved" && normalized.rightsStatus === "production_approved" && mediaPermitted(normalized);
   normalized.qualityFlags = thumbnailQualityFlags(normalized);
   normalized.reviewPriority = thumbnailReviewPriority(normalized);
   normalized.promotionReviewState = promotionReviewState(normalized);
@@ -547,6 +552,7 @@ const publicSpecialPayload = await loadJson("../data/build/public-special-source
 const directoryPayload = await loadJson("../data/build/directory-restaurant-leads.json", { records: [] });
 const placeResolutionPayload = await loadJson("../data/build/place-source-resolutions.json", { resolutions: [] });
 const mediaPayload = await loadWindowScript("data/restaurant-media.js", "HALIFAX_RESTAURANT_MEDIA", { records: [] });
+const referencePayload = await loadWindowScript("data/restaurant-media-references.js", "HALIFAX_MEDIA_SOURCE_REFERENCES", {records:[]});
 const rejectionPayload = await loadJson("../data/thumbnail-rejected-candidates.json", { records: [] });
 const reviewedDecisionPayload = await loadJson("../data/reviewed-thumbnail-decisions.json", { records: [] });
 const ownerSubmissionPayload = await loadJson("../data/build/owner-submissions.normalized.json", { submissions: [] });
@@ -564,9 +570,15 @@ const candidates = [];
 const failures = [];
 
 for (const media of mediaPayload.records || []) {
+  if (!mediaPermitted(media)) throw Error(`Invalid approved media: ${media.restaurantId}`);
   const restaurant = restaurantsById.get(media.restaurantId);
   if (!restaurant) continue;
   candidates.push(approvedCandidate(media, restaurant.name));
+}
+for (const record of referencePayload.records || []) {
+  if (referenceProblems(record).length) throw Error(`Invalid media reference: ${record.restaurantId}`);
+  const restaurant = restaurantsById.get(record.restaurantId);
+  if (restaurant) candidates.push({...record,restaurantName:restaurant.name,thumbnailUrl:record.url,sourceKind:"retained_media_reference",extractionMethod:"retained_public_reference",reviewState:"candidate_review",rightsStatus:"requires_rights_review",confidence:"unverified_media_reference",observedAt:record.observedAt || null});
 }
 for (const post of [
   ...(recentPosts.records || []),
@@ -595,7 +607,7 @@ for (const lead of directoryPayload.records || []) {
 }
 for (const candidate of existingThumbnailPayload.candidates || []) {
   if (candidate?.restaurantId && !restaurantsById.has(candidate.restaurantId)) continue;
-  if (!["approved_restaurant_media", "directory_source_image"].includes(candidate?.sourceKind)) candidates.push(candidate);
+  if (!["approved_restaurant_media", "directory_source_image", "retained_media_reference"].includes(candidate?.sourceKind)) candidates.push(candidate);
 }
 for (const submission of ownerSubmissionPayload.submissions || []) {
   const restaurant = restaurantsById.get(submission.restaurantId);

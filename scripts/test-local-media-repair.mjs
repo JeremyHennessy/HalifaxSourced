@@ -6,8 +6,9 @@ import {spawn} from 'node:child_process';
 import vm from 'node:vm';
 const root=await mkdtemp(join(tmpdir(),'halifax-local-media-'));
 try {
-  await mkdir(join(root,'scripts'),{recursive:true});await mkdir(join(root,'data','build'),{recursive:true});await mkdir(join(root,'assets','restaurants'),{recursive:true});
-  for(const file of ['scripts/repair-source-integrity.mjs','scripts/check-restaurant-media-rights.mjs','source-integrity.js'])await copyFile(new URL('../'+file,import.meta.url),join(root,file));
+  await mkdir(join(root,'scripts','lib'),{recursive:true});await mkdir(join(root,'data','build'),{recursive:true});await mkdir(join(root,'assets','restaurants'),{recursive:true});
+  for(const file of ['scripts/repair-source-integrity.mjs','scripts/check-restaurant-media-rights.mjs','scripts/lib/media-rights-contract.mjs','app-media.js','source-integrity.js'])await copyFile(new URL('../'+file,import.meta.url),join(root,file));
+  await writeFile(join(root,'data','restaurant-media-references.js'),'window.HALIFAX_MEDIA_SOURCE_REFERENCES = {records:[]};');
   const local={url:'assets/restaurants/fixture.jpg',alt:'Fixture licensed restaurant exterior for this isolated test',sourceUrl:'https://commons.example/fixture',sourceType:'licensed',creator:'Fixture creator',license:'Fixture CC BY-SA 4.0',rightsBasis:'Fixture explicit licence',permission:'licensed',permissionConfirmed:true,attribution:'Fixture creator CC BY-SA 4.0',reviewState:'approved'};
   const licensed=Array.from({length:25},(_,index)=>({...local,restaurantId:'fixture-'+index}));
   const bad=[{...local,restaurantId:'traversal',url:'assets/restaurants/../../outside.jpg'},{...local,restaurantId:'quarantined',url:'https://justitalymentone.com/image.jpg'}];
