@@ -1,3 +1,4 @@
+import { fetchGuardedSource as fetch } from "./lib/fetch-public-source.mjs";
 import integrity from "../source-integrity.js";
 import { createHash } from "node:crypto";
 import { mkdir, readFile, writeFile } from "node:fs/promises";
@@ -149,7 +150,7 @@ async function robotsAllows(url) {
         if (!response.ok) return [];
         return parseRobotsGroup(await response.text(), "HalifaxSourced");
       } catch {
-        return [];
+        return ["/"];
       }
     })();
     robotsCache.set(origin, promise);

@@ -498,7 +498,8 @@
     {
       "restaurantId": "osm-node-13141377001-india-paradise",
       "name": "India Paradise",
-      "status": "approved"
+      "status": "source_check",
+      "reviewReason": "Prior brand-wide source does not establish Halifax downtown image identity or media permission. Original approval retained in data/source-quarantine.json."
     },
     {
       "restaurantId": "osm-node-13262694122-public-cafe-bakery-and-bar",

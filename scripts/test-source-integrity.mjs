@@ -14,4 +14,7 @@ assert.equal(integrity.currentOffer(offer,now),true);
 for(const changed of [{verifiedAt:'2026-08-29'},{verifiedAt:'2026-10-07'},{validTo:'2026-10-01'},{validFrom:'2026-10-07'},{locationValidated:false},{sourceType:'official_website_link'},{sourceUrl:'https://justitalymentone.com'}]) assert.equal(integrity.currentOffer({...offer,...changed},now),false);
 assert.equal(integrity.locationSafe({restaurantId:'osm-node-13141377001-india-paradise',postUrl:'https://www.indiaparadise.ca/post/calgary-free-biryani-alert'}),false);
 assert.equal(integrity.safeSource('https://www.bowtiecreamery.com/a'),false);
+assert.equal(integrity.safeSource('https://glitterbeancafe.com./'),false);
+assert.equal(integrity.safeSource('https://WWW.justitalymentone.com../'),false);
+assert.equal(integrity.sourceHost('https://www.fixture.example./'),'fixture.example');
 console.log('Source integrity regression passed: future/unknown dates, metadata scope, offer expiry, location and unsafe domains.');

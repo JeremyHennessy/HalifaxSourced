@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-09-11T14:46:40.363Z",
-  "eventCount": 191,
-  "venueResolved": 138,
-  "organizerResolved": 168,
+  "generatedAt": "2026-10-06T01:57:51.166Z",
+  "eventCount": 189,
+  "venueResolved": 136,
+  "organizerResolved": 166,
   "restaurantResolved": 10,
   "unresolvedVenue": 53,
   "unresolvedOrganizer": 23,
@@ -800,34 +800,12 @@
       "restaurantBasis": null
     },
     {
-      "eventId": "scotiabank-centre-17a0d9531d73646c",
-      "title": "Halifax Mooseheads vs Rouyn-Noranda Huskies",
-      "sourceId": "scotiabank-centre",
-      "venueId": "scotiabank-centre-halifax",
-      "venueBasis": "source_id",
-      "organizerId": "scotiabank-centre",
-      "organizerBasis": "source_id",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
       "eventId": "halifax-mooseheads-home-b8cd97060b31415b",
       "title": "Halifax Mooseheads vs Drummondville",
       "sourceId": "halifax-mooseheads-home",
       "venueId": "scotiabank-centre-halifax",
       "venueBasis": "source_id",
       "organizerId": "halifax-mooseheads",
-      "organizerBasis": "source_id",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "scotiabank-centre-0e94a2e36a22459e",
-      "title": "Halifax Mooseheads vs Drummondville Voltigeurs",
-      "sourceId": "scotiabank-centre",
-      "venueId": "scotiabank-centre-halifax",
-      "venueBasis": "source_id",
-      "organizerId": "scotiabank-centre",
       "organizerBasis": "source_id",
       "restaurantId": null,
       "restaurantBasis": null

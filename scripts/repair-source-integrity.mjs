@@ -9,7 +9,8 @@ const quarantine = [];
 const previousQuarantine = JSON.parse(await readFile(new URL('source-quarantine.json',root),'utf8').catch(()=>'{}')).records || [];
 function suspect(row, parentId) {
   const id = row.restaurantId || parentId;
-  const urls = ['url','sourceUrl','postUrl','resolvedUrl','href','feedUrl'].map(k=>row[k]).filter(Boolean);
+  const reviewedLocalAsset = /^assets\/restaurants\/[a-z0-9-]+\.jpg$/.test(row.url || '') && row.sourceType === 'licensed' && row.permissionConfirmed === true && row.permission === 'licensed' && Boolean(row.creator && row.license && row.attribution && row.rightsBasis) && integrity.safeSource(row.sourceUrl);
+  const urls = ['url','sourceUrl','postUrl','resolvedUrl','href','feedUrl'].filter(k=>!(k==='url' && reviewedLocalAsset)).map(k=>row[k]).filter(Boolean);
   if (urls.some(u=>!integrity.safeSource(u))) return 'unsafe_or_wrong_entity_domain';
   if (id === india && urls.length && urls.some(u=>/indiaparadise\.ca/i.test(u) && !/\/halifax\/downtown\//i.test(u))) return 'location_not_halifax_downtown';
   if (id === india && row.locationValidated === false) return 'location_validation_failed';

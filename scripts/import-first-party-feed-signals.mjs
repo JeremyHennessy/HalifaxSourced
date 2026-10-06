@@ -1,3 +1,4 @@
+import { fetchGuardedSource as fetch } from "./lib/fetch-public-source.mjs";
 import integrity from "../source-integrity.js";
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import { LIFECYCLE_SIGNAL_GROUPS } from "./lib/lifecycle-language.mjs";

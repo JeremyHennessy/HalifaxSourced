@@ -1,3 +1,4 @@
+import { fetchGuardedSource as fetch } from "./lib/fetch-public-source.mjs";
 import { fetchPublicSource } from "./lib/fetch-public-source.mjs";
 import integrity from "../source-integrity.js";
 import { createHash } from "node:crypto";

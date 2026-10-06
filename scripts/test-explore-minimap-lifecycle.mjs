@@ -2,10 +2,15 @@ import { existsSync } from "node:fs";
 
 let playwright;
 try { playwright = await import("playwright"); } catch {}
+if (!playwright) {
+  for (const candidate of [process.env.PLAYWRIGHT_MODULE, 'file:///C:/Users/JeremyHennessy/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright/index.mjs'].filter(Boolean)) {
+    try { playwright = await import(candidate); break; } catch {}
+  }
+}
 if (!playwright?.chromium) throw new Error("Playwright is required for this regression test.");
 
 const url = (process.env.APP_URL ?? "http://127.0.0.1:5173").replace(/\/$/, "");
-const executablePath = [process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE, "/usr/bin/chromium"].filter(Boolean).find((path) => existsSync(path));
+const executablePath = [process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE, "/usr/bin/chromium", 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe'].filter(Boolean).find((path) => existsSync(path));
 const browser = await playwright.chromium.launch({ headless: true, executablePath });
 
 for (let attempt = 1; attempt <= 2; attempt += 1) {

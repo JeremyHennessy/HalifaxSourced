@@ -1,3 +1,4 @@
+import { fetchGuardedSource as fetch } from "./lib/fetch-public-source.mjs";
 import { readFile, writeFile } from "node:fs/promises";
 
 const registry = JSON.parse(await readFile(new URL("../data/place-source-registry.json", import.meta.url), "utf8"));

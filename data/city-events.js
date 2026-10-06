@@ -5463,12 +5463,12 @@ window.HALIFAX_CITY_EVENTS = {
   },
   "refreshAnomalies": [],
   "entityResolution": {
-    "appliedAt": "2026-09-11T14:46:40.359Z",
+    "appliedAt": "2026-10-06T01:57:51.162Z",
     "venueRegistryVersion": 3,
     "organizerRegistryVersion": 2,
-    "venueResolved": 138,
-    "organizerResolved": 168,
+    "venueResolved": 136,
+    "organizerResolved": 166,
     "restaurantResolved": 10,
-    "eventCount": 191
+    "eventCount": 189
   }
 };

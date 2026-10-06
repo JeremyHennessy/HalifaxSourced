@@ -3,8 +3,11 @@
   // The purported replacement also returned a cross-entity redirect during the
   // bounded repair. Keep it out of consumer navigation until independently repaired.
   const blockedHosts = new Set(['justitalymentone.com', 'bowtiecreamery.com', 'glitterbeancafe.com']);
+  function sourceHost(value) {
+    try { return new URL(value).hostname.toLowerCase().replace(/\.+$/, '').replace(/^www\./, ''); } catch { return ''; }
+  }
   function safeSource(value) {
-    try { const u = new URL(value); const host = u.hostname.toLowerCase().replace(/^www\./, ''); return ['http:', 'https:'].includes(u.protocol) && ![...blockedHosts].some(h => host === h || host.endsWith('.' + h)); } catch { return false; }
+    try { const u = new URL(value); const host = sourceHost(u); return Boolean(host) && ['http:', 'https:'].includes(u.protocol) && ![...blockedHosts].some(h => host === h || host.endsWith('.' + h)); } catch { return false; }
   }
   function publicationState(value, now = Date.now(), maxDays = 180) {
     const stamp = Date.parse(String(value || ''));
@@ -46,7 +49,7 @@
     }
     return [...new Set(dates)].sort().reverse();
   }
-  const api = { safeSource, publicationState, locationSafe, currentOffer, publisherDates };
+  const api = { safeSource, sourceHost, publicationState, locationSafe, currentOffer, publisherDates };
   root.HalifaxDataIntegrity = api;
   if (typeof module !== 'undefined') module.exports = api;
 })(globalThis);

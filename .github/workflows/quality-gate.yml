@@ -38,6 +38,15 @@ jobs:
       - name: Run network-disabled source verifier startup regression
         run: node scripts/test-source-verifier-startup.mjs
 
+      - name: Run source quarantine, local media and refresh regressions
+        run: |
+          node scripts/test-source-integrity.mjs
+          node scripts/test-public-source-fetch.mjs
+          node scripts/test-scheduled-source-guards.mjs
+          node scripts/test-robots-redirect-guards.mjs
+          node scripts/test-local-media-repair.mjs
+          node scripts/test-event-refresh-dedupe.mjs
+
       - name: Build public happy-hour source leads
         env:
           PUBLIC_SPECIAL_CAMPAIGN_LIMIT: 80

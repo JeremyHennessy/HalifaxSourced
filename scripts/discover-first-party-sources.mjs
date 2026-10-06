@@ -1,3 +1,4 @@
+import { fetchGuardedSource as fetch } from "./lib/fetch-public-source.mjs";
 import { fetchPublicSource } from "./lib/fetch-public-source.mjs";
 import integrity from "../source-integrity.js";
 // First-party discovery runs as a bounded, review-only refresh before production publication.

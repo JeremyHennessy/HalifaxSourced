@@ -268,7 +268,10 @@
         "permissionConfirmed": true,
         "attribution": "Coastal Elite, CC BY-SA 2.0, via Wikimedia Commons",
         "reviewState": "approved"
-      }
+      },
+      "quarantineActive": false,
+      "resolution": "Restored unchanged licensed local asset from baseline; original false-positive quarantine retained as negative evidence.",
+      "baselineCommitSha": "7063613d2e9b93d9f66e391a61e47bb1dcd45d07"
     },
     {
       "file": "restaurant-media.js",
@@ -286,7 +289,10 @@
         "permissionConfirmed": true,
         "attribution": "Tony Webster, CC BY-SA 2.0, via Wikimedia Commons",
         "reviewState": "approved"
-      }
+      },
+      "quarantineActive": false,
+      "resolution": "Restored unchanged licensed local asset from baseline; original false-positive quarantine retained as negative evidence.",
+      "baselineCommitSha": "7063613d2e9b93d9f66e391a61e47bb1dcd45d07"
     },
     {
       "file": "restaurant-media.js",
@@ -304,7 +310,10 @@
         "permissionConfirmed": true,
         "attribution": "Coastal Elite, CC BY-SA 2.0, via Wikimedia Commons",
         "reviewState": "approved"
-      }
+      },
+      "quarantineActive": false,
+      "resolution": "Restored unchanged licensed local asset from baseline; original false-positive quarantine retained as negative evidence.",
+      "baselineCommitSha": "7063613d2e9b93d9f66e391a61e47bb1dcd45d07"
     },
     {
       "file": "restaurant-media.js",
@@ -322,7 +331,10 @@
         "permissionConfirmed": true,
         "attribution": "Coastal Elite, CC BY-SA 2.0, via Wikimedia Commons",
         "reviewState": "approved"
-      }
+      },
+      "quarantineActive": false,
+      "resolution": "Restored unchanged licensed local asset from baseline; original false-positive quarantine retained as negative evidence.",
+      "baselineCommitSha": "7063613d2e9b93d9f66e391a61e47bb1dcd45d07"
     },
     {
       "file": "restaurant-media.js",
@@ -340,7 +352,10 @@
         "permissionConfirmed": true,
         "attribution": "Nicole Bratt, CC BY-SA 2.0, via Wikimedia Commons",
         "reviewState": "approved"
-      }
+      },
+      "quarantineActive": false,
+      "resolution": "Restored unchanged licensed local asset from baseline; original false-positive quarantine retained as negative evidence.",
+      "baselineCommitSha": "7063613d2e9b93d9f66e391a61e47bb1dcd45d07"
     },
     {
       "file": "restaurant-media.js",
@@ -358,7 +373,10 @@
         "permissionConfirmed": true,
         "attribution": "Msact, CC BY-SA 4.0, via Wikimedia Commons",
         "reviewState": "approved"
-      }
+      },
+      "quarantineActive": false,
+      "resolution": "Restored unchanged licensed local asset from baseline; original false-positive quarantine retained as negative evidence.",
+      "baselineCommitSha": "7063613d2e9b93d9f66e391a61e47bb1dcd45d07"
     },
     {
       "file": "restaurant-media.js",
@@ -376,7 +394,10 @@
         "permissionConfirmed": true,
         "attribution": "JeffNS, CC BY-SA 4.0, via Wikimedia Commons",
         "reviewState": "approved"
-      }
+      },
+      "quarantineActive": false,
+      "resolution": "Restored unchanged licensed local asset from baseline; original false-positive quarantine retained as negative evidence.",
+      "baselineCommitSha": "7063613d2e9b93d9f66e391a61e47bb1dcd45d07"
     },
     {
       "file": "restaurant-media.js",

@@ -5,9 +5,13 @@ const aliases = new Map([
   ['drummondville', 'drummondville'], ['drummondville voltigeurs', 'drummondville']
 ]);
 const normalize = value => String(value || '').toLowerCase().normalize('NFKD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9]+/g,' ').trim();
+const venueAliases = new Map([
+  ['scotiabank centre', 'scotiabank-centre-halifax'],
+  ['scotiabank center', 'scotiabank-centre-halifax']
+]);
 export function canonicalEventKey(event) {
   const teams=normalize(event.title).split(/\s+vs?\s+/).map(name=>aliases.get(name));
-  const venue=event.venueId || normalize(event.venueName);
+  const venue=event.venueId || venueAliases.get(normalize(event.venueName)) || normalize(event.venueName);
   const stamp=Date.parse(event.startAt);
   if(teams.length!==2 || teams.some(team=>!team) || !venue || !Number.isFinite(stamp)) return null;
   return `${teams.join('|')}|${venue}|${stamp}`;

@@ -1,5 +1,5 @@
 import integrity from '../../source-integrity.js';
-const host = value => new URL(value).hostname.toLowerCase().replace(/^www\./,'');
+const host = integrity.sourceHost;
 export async function fetchPublicSource(url, options, robotsAllows) {
   const originalHost=host(url);
   let target=url;
@@ -13,4 +13,10 @@ export async function fetchPublicSource(url, options, robotsAllows) {
     target=new URL(location,target).href;
   }
   throw new Error('redirect_limit');
+}
+
+// For existing source consumers without a robots callback, preserve their own
+// access checks while enforcing quarantine and every redirect destination.
+export function fetchGuardedSource(url, options = {}) {
+  return fetchPublicSource(url, options, async () => true);
 }
