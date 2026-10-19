@@ -1,11 +1,13 @@
 "use strict";
 function renderRestaurantDetail(id) {
+  id = reviewedRestaurantCorrections.aliases.find(alias => alias.from === id)?.to || id;
   const restaurant = restaurants.find((item) => item.id === id || encodeURIComponent(item.id) === id);
   if (!restaurant) {
     appView.innerHTML = `<section class="page-shell page-intro">${emptyPageState("That restaurant could not be found in the current dataset.")}</section>`;
     return;
   }
   const active = isRestaurantActive(restaurant);
+  const successor = restaurants.find(item => item.id === restaurant.successorId && isRestaurantActive(item));
   const website = active ? safeUrl(restaurant.website) : null;
   const menuLink = safeUrl(restaurant.menuLinks?.[0]?.url);
   const reservation = safeUrl(restaurant.reservationLinks?.[0]?.url);
@@ -15,10 +17,11 @@ function renderRestaurantDetail(id) {
   const linkHubs = (restaurant.linkHubs || []).filter((hub) => safeUrl(hub.url));
   const relatedLinks = active ? (restaurant.relatedLinks || []).filter((link) => safeUrl(link.url)) : [];
   const officialUpdates = active ? (restaurant.officialUpdates || []).filter((update) => safeUrl(update.postUrl)) : [];
-  const verifiedSpecials = active ? (restaurant.currentVerifiedSpecials || []).filter((special) => special?.title) : [];
+  const verifiedSpecials = active ? (restaurant.structuredSpecials || []).filter(currentStructuredSpecial) : [];
+  const historicalSpecials = active ? (restaurant.structuredSpecials || []).filter(special => ['stale', 'expired'].includes(special.status) || (special.status === 'verified_current' && !currentStructuredSpecial(special))) : [];
   const statusEvidenceUrl = safeUrl(restaurant.operatingStatusEvidence?.sourceUrl);
   const closureDate = restaurant.closureDate ? new Date(`${restaurant.closureDate}T12:00:00`).toLocaleDateString("en-CA", { year: "numeric", month: "long", day: "numeric" }) : null;
-  const statusLabel = restaurant.operatingStatus === "permanently_closed" ? "Permanently closed" : restaurant.operatingStatus === "temporarily_closed" ? "Temporarily closed" : restaurant.operatingStatus === "moved" ? "Moved" : "Status unavailable";
+  const statusLabel = restaurant.operatingStatus === "permanently_closed" ? "Permanently closed" : restaurant.operatingStatus === "temporarily_closed" ? "Temporarily closed" : restaurant.operatingStatus === "moved" ? "Moved" : restaurant.operatingStatus === "replaced" ? "Replaced at this location" : "Status unavailable";
   const denseMobileOverview = active && restaurant.phone && (menuLink || ordering) && (reservation || website);
 
   appView.innerHTML = `
@@ -29,13 +32,13 @@ function renderRestaurantDetail(id) {
     </section>
     <section class="page-shell detail-layout">
       <div class="detail-main">
-        ${!active ? `<section class="closure-notice" role="status"><strong>${escapeHtml(statusLabel)}${closureDate ? ` · final service ${escapeHtml(closureDate)}` : ""}</strong><p>${escapeHtml(restaurant.operatingStatusEvidence?.claim || "This record is retained for historical source evidence and is excluded from current discovery.")}</p>${statusEvidenceUrl ? `<a href="${escapeHtml(statusEvidenceUrl)}" target="_blank" rel="noreferrer">View official status evidence ↗</a>` : ""}</section>` : ""}
+        ${!active ? `<section class="closure-notice" role="status"><strong>${escapeHtml(statusLabel)}${closureDate ? ` · final service ${escapeHtml(closureDate)}` : ""}</strong><p>${escapeHtml(restaurant.operatingStatusEvidence?.claim || "This record is retained for historical source evidence and is excluded from current discovery.")}</p>${statusEvidenceUrl ? `<a href="${escapeHtml(statusEvidenceUrl)}" target="_blank" rel="noreferrer">View official status evidence ↗</a>` : ""}${successor ? `<p><a class="successor-link" href="#restaurant/${escapeHtml(successor.id)}">View ${escapeHtml(successor.name)} at its current location →</a></p>` : ""}</section>` : ""}
         <nav class="detail-tabs"><a href="#detailOverview">Overview</a><a href="#detailMenu">Menu</a><a href="#detailSpecials">Specials</a><a href="#detailEvents">Events</a>${officialUpdates.length ? '<a href="#detailUpdates">Updates</a>' : ""}<a href="#detailLinks">Links</a><a href="#detailSources">Sources</a></nav>
         <section id="detailOverview" class="mobile-detail-overview${denseMobileOverview ? " is-dense" : ""}" aria-label="Restaurant essentials">
           <div class="mobile-essential-facts">
-            <div><span>Hours</span><strong>${escapeHtml(restaurant.openingHours || "Check official source")}</strong></div>
-            <div><span>Location</span><strong>${escapeHtml(restaurant.address || restaurant.neighborhood || "Halifax")}</strong></div>
-            ${restaurant.phone ? `<div><span>Phone</span><strong>${escapeHtml(restaurant.phone)}</strong></div>` : ""}
+            <div><span>${active ? "Hours" : "Operating status"}</span><strong>${escapeHtml(active ? restaurant.openingHours || "Check official source" : statusLabel)}</strong></div>
+            <div><span>${active ? "Location" : "Historical location"}</span><strong>${escapeHtml(restaurant.address || restaurant.neighborhood || "Halifax")}</strong></div>
+            ${active && restaurant.phone ? `<div><span>Phone</span><strong>${escapeHtml(restaurant.phone)}</strong></div>` : ""}
           </div>
           ${active ? `<div class="mobile-essential-actions">
             ${menuLink ? `<a class="button primary" href="${escapeHtml(menuLink)}" target="_blank" rel="noreferrer">View menu ↗</a>` : ordering ? `<a class="button primary" href="${escapeHtml(ordering)}" target="_blank" rel="noreferrer">Order online ↗</a>` : ""}
@@ -52,15 +55,22 @@ function renderRestaurantDetail(id) {
       </div>
       <aside class="detail-sidebar" id="detailInfo">
         ${infoCard(active ? "Hours" : "Operating status", active ? (restaurant.openingHours || "Hours not available in the current source data.") : `${statusLabel}${closureDate ? ` · final service ${closureDate}` : ""}`, "◷")}
-        ${infoCard("Location", restaurant.address || restaurant.neighborhood || "Halifax", "⌖")}
-        ${restaurant.phone ? infoCard("Phone", restaurant.phone, "☎") : ""}
+        ${infoCard(active ? "Location" : "Historical location", restaurant.address || restaurant.neighborhood || "Halifax", "⌖")}
+        ${active && restaurant.phone ? infoCard("Phone", restaurant.phone, "☎") : ""}
         ${website || menuLink || reservation || ordering ? `<div class="sidebar-card detail-official-actions"><h2>Official actions</h2>${website ? `<a class="sidebar-link" href="${escapeHtml(website)}" target="_blank" rel="noreferrer">Website ↗</a>` : ""}${menuLink ? `<a class="sidebar-link" href="${escapeHtml(menuLink)}" target="_blank" rel="noreferrer">Menu ↗</a>` : ""}${reservation ? `<a class="sidebar-link" href="${escapeHtml(reservation)}" target="_blank" rel="noreferrer">Reservations ↗</a>` : ""}${ordering ? `<a class="sidebar-link" href="${escapeHtml(ordering)}" target="_blank" rel="noreferrer">Order online ↗</a>` : ""}</div>` : ""}
         ${socialProfiles.length ? `<div class="sidebar-card detail-follow-card"><h2>Follow</h2>${socialProfiles.slice(0, 8).map((profile) => `<a class="sidebar-link" href="${escapeHtml(safeUrl(profile.url))}" target="_blank" rel="noreferrer">${escapeHtml(socialPlatformLabel(profile.platform))}${profile.handle ? ` · @${escapeHtml(String(profile.handle).replace(/^@/, ""))}` : ""} ↗</a>`).join("")}</div>` : ""}
         ${linkHubs.length ? `<div class="sidebar-card"><h2>Official link hub</h2>${linkHubs.slice(0, 3).map((hub) => `<a class="sidebar-link" href="${escapeHtml(safeUrl(hub.url))}" target="_blank" rel="noreferrer">${escapeHtml(linkHubLabel(hub.platform))} ↗</a>`).join("")}</div>` : ""}
         ${restaurant.coordinates ? `<div class="sidebar-card"><h2>Map</h2><div id="detailMap" class="detail-map"></div><a class="sidebar-link" href="https://www.openstreetmap.org/?mlat=${restaurant.coordinates.lat}&mlon=${restaurant.coordinates.lon}#map=17/${restaurant.coordinates.lat}/${restaurant.coordinates.lon}" target="_blank" rel="noreferrer">Open map ↗</a></div>` : ""}
       </aside>
     </section>`;
+  document.querySelectorAll('.detail-tabs a').forEach((link) => link.addEventListener('click', (event) => {
+    event.preventDefault();
+    let target = document.getElementById(link.getAttribute('href').slice(1));
+    if (target && !target.getClientRects().length) target = document.getElementById('detailInfo');
+    if (target) { target.setAttribute('tabindex', '-1'); target.focus({ preventScroll: true }); target.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+  }));
   bindCommonActions();
+  if (historicalSpecials.length) document.querySelector('#detailSpecials .section-heading')?.insertAdjacentHTML('afterend', `<div class="info-message">${historicalSpecials.length} historical offer record${historicalSpecials.length === 1 ? '' : 's'} need${historicalSpecials.length === 1 ? 's' : ''} a fresh check. Current availability is unverified.</div>`);
   if (restaurant.coordinates) {
     const detailMapElement = document.querySelector("#detailMap");
     requestAnimationFrame(() => {
@@ -154,11 +164,11 @@ function sourceLinkRow(link) {
 function officialUpdateCard(update) {
   const url = safeUrl(update.postUrl);
   if (!url) return "";
-  const published = new Date(update.publishedAt);
+  const published = new Date(update.publishedAt || NaN);
   const date = Number.isNaN(published.getTime()) ? "Date unavailable" : published.toLocaleDateString("en-CA", { month: "short", day: "numeric", year: "numeric", timeZone: "America/Halifax" });
   const platform = update.sourceLabel || (update.platform === "website_feed" ? "Official website" : socialPlatformLabel(update.platform));
-  const mediaUrl = safeUrl(update.mediaUrl || update.thumbnailUrl);
-  const media = mediaUrl ? `<img class="official-update-media" src="${escapeHtml(mediaUrl)}" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">` : "";
+  const mediaUrl = permittedPostMediaUrl(update);
+  const media = mediaUrl ? `<img class="official-update-media" src="${escapeHtml(mediaUrl)}" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.closest('.official-update-card')?.classList.remove('has-media');this.remove()">` : "";
   const summary = String(update.summary || update.excerpt || "").trim();
   const categories = Array.isArray(update.categories) ? update.categories.slice(0, 4) : [];
   const chips = categories.length ? `<div class="official-update-tags">${categories.map((category) => `<span>${escapeHtml(category.label || category.id)}</span>`).join("")}</div>` : "";

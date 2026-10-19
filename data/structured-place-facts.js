@@ -3332,61 +3332,6 @@ window.HALIFAX_STRUCTURED_PLACE_FACTS = {
       "ordering": []
     },
     {
-      "restaurantId": "osm-node-13141377001-india-paradise",
-      "name": "India Paradise",
-      "sourceUrl": "https://www.indiaparadise.ca/",
-      "observedAt": "2026-09-04T13:24:18.230Z",
-      "lastVerifiedAt": "2026-09-04T13:24:18.230Z",
-      "sourceKind": "official_website_structured_facts",
-      "reviewState": "verified_source",
-      "hours": null,
-      "phone": null,
-      "email": null,
-      "address": null,
-      "features": [
-        {
-          "feature": "catering",
-          "evidencePhrase": "catering",
-          "sourceUrl": "https://www.indiaparadise.ca/",
-          "observedAt": "2026-09-04T13:24:18.230Z",
-          "lastVerifiedAt": "2026-09-04T13:24:18.230Z",
-          "confidence": "official_source_explicit_text"
-        },
-        {
-          "feature": "takeout",
-          "evidencePhrase": "Take-out",
-          "sourceUrl": "https://www.indiaparadise.ca/",
-          "observedAt": "2026-09-04T13:24:18.230Z",
-          "lastVerifiedAt": "2026-09-04T13:24:18.230Z",
-          "confidence": "official_source_explicit_text"
-        }
-      ],
-      "menus": [
-        {
-          "menuType": "general",
-          "title": "View Menu",
-          "url": "https://www.indiaparadise.ca/mississauga/food-menu",
-          "format": "html",
-          "locationSpecific": true,
-          "verifiedAt": "2026-09-04T12:50:54.649Z",
-          "source": "official_website_link",
-          "status": "verified_link"
-        }
-      ],
-      "reservations": [],
-      "ordering": [
-        {
-          "provider": "restaurant_owned",
-          "url": "https://order.online/store/india-paradise-829212",
-          "locationSpecific": true,
-          "mode": "first_party_or_direct",
-          "observedAt": "2026-09-04T12:50:54.649Z",
-          "verifiedAt": "2026-09-04T12:50:54.649Z",
-          "status": "verified_link"
-        }
-      ]
-    },
-    {
       "restaurantId": "osm-node-13141457102-bitter-end-martini-bar-and-restaurant",
       "name": "Bitter End Martini Bar & Restaurant",
       "sourceUrl": "https://www.bitterend.ca/",

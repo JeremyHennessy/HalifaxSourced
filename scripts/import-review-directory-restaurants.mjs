@@ -1,3 +1,4 @@
+import { fetchGuardedSource as fetch } from "./lib/fetch-public-source.mjs";
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import { fetchRestaurantjiDirectory } from "./review-directory-sources.mjs";
 

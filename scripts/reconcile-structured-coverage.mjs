@@ -147,6 +147,9 @@ for (const resolution of reviewedResolutions) {
   }
 }
 
+for (const ids of [basePhoneIds, baseHoursIds, baseMenuIds, baseSpecialIds, baseReservationIds, baseOrderingIds, basePatioIds, baseAccessibilityIds, verifiedSpecialIds, phoneIds, hoursIds, menuIds, specialIds, reservationIds, orderingIds, patioIds, accessibilityIds, socialIds, hubIds, ...Object.values(platformSets)]) {
+  for (const id of ids) if (!catalogById.has(id)) ids.delete(id);
+}
 const rc = report.restaurantCoverage ||= {};
 const rp = report.restaurantCoveragePercent ||= {};
 rc.withPhone = Number(report.restaurantCoverage?.withPhone || 0) + [...phoneIds].filter((id) => !basePhoneIds.has(id)).length;

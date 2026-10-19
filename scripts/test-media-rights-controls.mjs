@@ -1,0 +1,63 @@
+import assert from 'node:assert/strict';
+import vm from 'node:vm';
+import {referenceProblems} from './lib/media-rights-contract.mjs';
+import {existsSync} from 'node:fs';
+import {readFile,mkdir,writeFile} from 'node:fs/promises';
+import {installOfflineResources} from './lib/offline-browser-resources.mjs';
+let playwright;for(const candidate of [process.env.PLAYWRIGHT_MODULE,'file:///C:/Users/JeremyHennessy/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright/index.mjs','playwright'].filter(Boolean)){try{playwright=await import(candidate);break;}catch{}}
+const browser=await playwright.chromium.launch({headless:true,executablePath:['C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe','/usr/bin/chromium'].find(existsSync)});
+const referenceContext={window:{}};vm.runInNewContext(await readFile(new URL('../data/restaurant-media-references.js',import.meta.url),'utf8'),referenceContext);const references=JSON.parse(JSON.stringify(referenceContext.window.HALIFAX_MEDIA_SOURCE_REFERENCES.records));assert.equal(references.length,99);for(const r of references)assert.deepEqual(referenceProblems(r),[]);
+const candidateContext={window:{}};vm.runInNewContext(await readFile(new URL('../data/thumbnail-candidates.js',import.meta.url),'utf8'),candidateContext);const referenceCandidates=JSON.parse(JSON.stringify(candidateContext.window.HALIFAX_THUMBNAIL_CANDIDATES.candidates.filter(r=>r.sourceKind==='retained_media_reference')));assert.equal(referenceCandidates.length,84);
+const url=process.env.APP_URL||'http://127.0.0.1:5173',evidence=[];
+try{for(const viewport of [{width:1440,height:1000},{width:390,height:844}]){
+ const context=await browser.newContext({viewport,serviceWorkers:'block'}),gate=await installOfflineResources(context,url),page=await context.newPage(),requests=[];
+ page.on('request',r=>{if(r.url().includes('unlicensed-media.example')||references.some(x=>x.url===r.url()))requests.push(r.url());});
+ await page.goto(url+'/#explore',{waitUntil:'networkidle'});await page.locator('.restaurant-card').first().waitFor();
+ const result=await page.evaluate((references)=>{
+  const target=restaurants.find(r=>r.id==='side-hustle-snack-bar-dartmouth');target.coordinates=null;
+  const approved={title:'Rights control',summary:'Retained factual summary',postUrl:'https://example.test/source',sourceUrl:'https://example.test/source',mediaUrl:'https://unlicensed-media.example/reference.jpg',thumbnailUrl:'https://unlicensed-media.example/thumb.jpg',publishedAt:'2026-10-01T00:00:00Z',sourceType:'licensed',permission:'licensed',permissionConfirmed:true,reviewState:'approved',restaurantId:'side-hustle-snack-bar-dartmouth',alt:'Controlled licensed fixture illustration',attribution:'Fixture author',creator:'Fixture author',license:'Specific fixture grant',rightsBasis:'Owner grants reuse'};
+  const states=['public_reference_not_media_licence','unverified','unknown','restricted'];const checks=[];
+  for(const rightsState of states){const post={...approved,rightsState};target.officialUpdates=[post];renderRestaurantDetail(target.id);
+   const detail=document.querySelector('#detailUpdates');const home=recentPostCard(post);const restaurant={...target,image:{...post,url:post.mediaUrl},images:[]};
+   checks.push({rightsState,detailImages:detail.querySelectorAll('img').length,detailText:detail.innerText,detailHref:detail.querySelector('a').href,home,restaurantMarkup:mediaImageMarkup(restaurant),restaurantClass:permittedImageClass(restaurant)});
+   document.body.insertAdjacentHTML('beforeend',home+mediaImageMarkup(restaurant));
+  }
+  const contradictory = [
+   {quarantined:true},
+   {rightsState:'licensed',rightsStatus:'public_reference_not_media_licence'},
+   {rightsState:'owner_authorized',rightsStatus:' UNVERIFIED '},
+   {rightsState:'public-reference-not-media-licence',rightsStatus:'production_approved'},
+   {reviewState:'approved',reviewStatus:'quarantined'},
+   {permission:'licensed',usageRights:'denied'},
+   {permission:'licensed',rights:'restricted'},
+   {permissionConfirmed:false,ownerApproved:true},
+   {permissionConfirmed:true,ownerApproved:false},
+   {license:'Specific fixture grant',licence:'unknown'},
+   {rightsBasis:'Owner grants reuse',rightsNote:'remote thumbnail reference only, not rehosted.'},
+   {alt:'short'}, {attribution:''}, {restaurantId:''}, {mediaUrl:'http://unlicensed-media.example/insecure.jpg'}, {thumbnailUrl:'assets/logo.jpg'}, {mediaUrl:'https://user:password@unlicensed-media.example/photo.jpg'}
+  ];
+  const rendererChecks = contradictory.map((denial) => {
+   const post={...approved,rightsState:'permission_verified',...denial,id:'rights-contradiction'};
+   const restaurant={...target,image:{...post,url:post.mediaUrl},images:[]};
+   const markups={detail:officialUpdateCard(post),home:recentPostCard(post),socialAdmin:socialPostReviewCard(post,{}),candidateAdmin:adminCandidateCard(post,{}),restaurant:mediaImageMarkup(restaurant)};
+   for(const html of Object.values(markups)) document.body.insertAdjacentHTML('beforeend',html);
+   return {denial,eligible:hasMediaPermission(post),markups};
+  });
+  const pathChecks=['assets/../test.jpg','./assets/../test.jpg','assets/./test.jpg','assets//test.jpg','assets/%2e%2e/test.jpg','assets/\\test.jpg'].map(path=>({path,url:safeImageUrl(path)}));
+  const acceptedReferenceChecks=references.map((reference,index)=>{
+   const post={...reference,title:reference.alt,summary:'Retained reference',postUrl:reference.sourceUrl,mediaUrl:reference.url,thumbnailUrl:reference.url,id:'reference-'+index};
+   const restaurant={...target,id:reference.restaurantId,image:reference,images:[]};
+   const markups=[officialUpdateCard(post),recentPostCard(post),socialPostReviewCard(post,{}),adminCandidateCard(post,{}),mediaImageMarkup(restaurant)];
+   for(const html of markups)document.body.insertAdjacentHTML('beforeend',html);
+   return {restaurantId:reference.restaurantId,images:markups.filter(html=>/<img\b/i.test(html)).length};
+  });
+  const unknown={...approved};delete unknown.permissionConfirmed;checks.push({rightsState:'missing_permission',media:permittedPostMediaUrl(unknown)});
+  return {checks,acceptedReferenceChecks,rendererChecks,pathChecks,approvedAssets:window.HALIFAX_RESTAURANT_MEDIA.records.filter(hasMediaPermission).length,assetChecks:window.HALIFAX_RESTAURANT_MEDIA.records.filter(r=>r.reviewState==="approved").map(r=>({id:r.restaurantId,permitted:hasMediaPermission(r),source:safeUrl(r.sourceUrl),license:r.license,rightsBasis:r.rightsBasis})),positive:hasMediaPermission({...approved,rightsState:'owner_authorized'}),legacyRejected:hasMediaPermission({...approved,license:'First-party official site media'})};
+ },[...references,...referenceCandidates]);
+ for(const c of result.checks){if(c.rightsState==='missing_permission'){assert.equal(c.media,null);continue;}assert.equal(c.detailImages,0);assert.match(c.detailText,/Retained factual summary/);assert.equal(c.detailHref,'https://example.test/source');assert(!c.home.includes('<img'));assert.equal(c.restaurantMarkup,'');assert.equal(c.restaurantClass,'');}
+ for(const c of result.rendererChecks){assert.equal(c.eligible,false,JSON.stringify(c.denial));for(const [renderer,html] of Object.entries(c.markups)){assert(!/<img\b/i.test(html),renderer+JSON.stringify(c.denial));if(renderer!=='restaurant'){assert(html.includes('https://example.test/source'));assert(html.includes('Rights control'));}}}
+ assert.equal(result.acceptedReferenceChecks.length,183);for(const c of result.acceptedReferenceChecks)assert.equal(c.images,0,c.restaurantId);
+ for(const c of result.pathChecks)assert.equal(c.url,null,c.path);
+ assert.equal(result.approvedAssets,6);assert.equal(result.positive,true);assert.equal(result.legacyRejected,false);await page.waitForLoadState('networkidle');assert.deepEqual(requests,[]);gate.assertClean();evidence.push({viewport,result,unlicensedRequests:requests});await context.close();
+}await mkdir('artifacts',{recursive:true});await writeFile('artifacts/media-rights-controls.json',JSON.stringify(evidence,null,2));console.log('Media rights controls passed: denied/unknown images never requested; facts and source links retained; six consumer-eligible licensed assets preserved (Smittys excluded by existing local-restaurant policy).');}finally{await browser.close();}
+

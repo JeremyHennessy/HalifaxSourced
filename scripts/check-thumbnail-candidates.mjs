@@ -1,5 +1,6 @@
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import vm from "node:vm";
+import {mediaPermitted} from "./lib/media-rights-contract.mjs";
 
 async function loadWindowScript(path, globalName, fallback) {
   try {
@@ -19,8 +20,10 @@ const restaurants = Array.isArray(catalog.restaurants) ? catalog.restaurants : [
 const restaurantIds = new Set(restaurants.map((restaurant) => restaurant.id));
 const candidates = Array.isArray(thumbnailPayload.candidates) ? thumbnailPayload.candidates : [];
 const failures = [];
+const storedJson = JSON.parse(await readFile(new URL("../data/build/thumbnail-candidates.json", import.meta.url), "utf8"));
+if (JSON.stringify(storedJson) !== JSON.stringify(thumbnailPayload)) failures.push({type:"thumbnail_script_json_mismatch"});
 const warnings = [];
-const allowedSourceKinds = new Set(["approved_restaurant_media", "official_feed_media", "meta_social_media", "official_page_thumbnail_candidate", "public_campaign_menu_image", "public_special_source_image", "directory_source_image", "owner_submitted_image"]);
+const allowedSourceKinds = new Set(["retained_media_reference", "approved_restaurant_media", "official_feed_media", "meta_social_media", "official_page_thumbnail_candidate", "public_campaign_menu_image", "public_special_source_image", "directory_source_image", "owner_submitted_image"]);
 const allowedReviewStates = new Set(["approved", "candidate_review", "source_check", "rejected"]);
 const allowedRightsStates = new Set(["production_approved", "requires_rights_review", "rejected"]);
 
@@ -72,7 +75,7 @@ for (const candidate of candidates) {
   if (!candidate.id || !restaurantIds.has(candidate.restaurantId) || !validUrl(candidate.thumbnailUrl) || !validHttpUrl(candidate.sourceUrl) || !allowedSourceKinds.has(candidate.sourceKind) || !allowedReviewStates.has(candidate.reviewState) || !allowedRightsStates.has(candidate.rightsStatus) || !String(candidate.alt || "").trim() || !String(candidate.confidence || "").trim()) {
     failures.push({ type: "invalid_thumbnail_candidate", id: candidate.id, restaurantId: candidate.restaurantId, thumbnailUrl: candidate.thumbnailUrl, sourceKind: candidate.sourceKind });
   }
-  if (candidate.eligibleForProduction && (candidate.reviewState !== "approved" || candidate.rightsStatus !== "production_approved" || !candidate.rightsBasis || !candidate.permission)) {
+  if (candidate.eligibleForProduction && (!mediaPermitted(candidate) || candidate.reviewState !== "approved" || candidate.rightsStatus !== "production_approved" || !candidate.rightsBasis || !candidate.permission)) {
     failures.push({ type: "thumbnail_production_candidate_missing_rights", id: candidate.id, restaurantId: candidate.restaurantId });
   }
   if (!candidate.eligibleForProduction && candidate.reviewState === "approved") {

@@ -1,3 +1,4 @@
+import {mediaPermitted} from "./lib/media-rights-contract.mjs";
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 
 async function loadJson(path, fallback) {
@@ -76,7 +77,8 @@ for (const list of candidatesByRestaurant.values()) {
   list.sort((a, b) => Number(b.eligibleForProduction) - Number(a.eligibleForProduction) || String(a.sourceKind).localeCompare(String(b.sourceKind)) || String(a.thumbnailUrl).localeCompare(String(b.thumbnailUrl)));
 }
 
-const approvedCandidates = candidates.filter((candidate) => candidate.eligibleForProduction === true && candidate.reviewState === "approved" && candidate.rightsStatus === "production_approved");
+if (candidates.some(candidate => candidate.eligibleForProduction === true && !mediaPermitted(candidate))) throw Error("Invalid production approval in thumbnail report input");
+const approvedCandidates = candidates.filter((candidate) => candidate.eligibleForProduction === true && mediaPermitted(candidate) && candidate.reviewState === "approved" && candidate.rightsStatus === "production_approved");
 const reviewCandidates = candidates.filter((candidate) => candidate.eligibleForProduction !== true);
 const approvedRestaurantIds = new Set(approvedCandidates.map((candidate) => candidate.restaurantId));
 const anyCandidateRestaurantIds = new Set(candidates.map((candidate) => candidate.restaurantId));

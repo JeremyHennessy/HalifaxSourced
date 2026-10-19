@@ -1,5 +1,7 @@
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import vm from "node:vm";
+import integrity from "../source-integrity.js";
+import {mediaPermitted,referenceProblems} from "./lib/media-rights-contract.mjs";
 
 const DAY_MS = 24 * 60 * 60 * 1000;
 const now = Date.now();
@@ -24,8 +26,8 @@ async function loadWindow(path, fallback = {}) {
 function normalize(value) {
   return String(value ?? "").toLowerCase().normalize("NFKD")
     .replace(/[\u0300-\u036f]/g, "")
-    .replace(/\b(the|restaurant|bar|cafe|café|pub)\b/g, " ")
-    .replace(/[^a-z0-9]+/g, " ")
+    .replace(/\bthe\b/g, " ")
+    .replace(/[^a-z0-9]+/g, "")
     .replace(/\s+/g, " ")
     .trim();
 }
@@ -79,6 +81,9 @@ const curatedWindow = await loadWindow("data/restaurants.js");
 const osmWindow = await loadWindow("data/osm-restaurants.js");
 const discoveredWindow = await loadWindow("data/discovered-restaurants.js");
 const mediaWindow = await loadWindow("data/restaurant-media.js");
+const referenceWindow = await loadWindow("data/restaurant-media-references.js");
+const mediaReferences = referenceWindow.HALIFAX_MEDIA_SOURCE_REFERENCES?.records || [];
+if (mediaReferences.some(record => referenceProblems(record).length)) throw Error("Invalid reference-only media schema");
 const openingWindow = await loadWindow("data/opening-watch-leads.js");
 const directoryWindow = await loadWindow("data/directory-restaurant-leads.js");
 const cityWindow = await loadWindow("data/city-events.js");
@@ -100,7 +105,7 @@ const osm = Array.isArray(osmWindow.HALIFAX_OSM_RESTAURANTS) ? osmWindow.HALIFAX
 const discovered = Array.isArray(discoveredWindow.HALIFAX_DISCOVERED_RESTAURANTS) ? discoveredWindow.HALIFAX_DISCOVERED_RESTAURANTS : [];
 const media = Array.isArray(mediaWindow.HALIFAX_RESTAURANT_MEDIA?.records) ? mediaWindow.HALIFAX_RESTAURANT_MEDIA.records : [];
 const reviewedResolutions = Array.isArray(reviewedResolutionWindow.HALIFAX_REVIEWED_PLACE_RESOLUTIONS?.records) ? reviewedResolutionWindow.HALIFAX_REVIEWED_PLACE_RESOLUTIONS.records : [];
-const inactiveLifecycleIds = uniqueIds((lifecycleReport.curatedAudit?.records || []).filter((record) => ["temporarily_closed", "permanently_closed", "moved"].includes(record.status)).map((record) => record.restaurantId));
+const inactiveLifecycleIds = uniqueIds((lifecycleReport.catalogAudit?.records || lifecycleReport.curatedAudit?.records || []).filter((record) => ["temporarily_closed", "permanently_closed", "moved", "replaced"].includes(record.status)).map((record) => record.restaurantId));
 const cityPayload = cityWindow.HALIFAX_CITY_EVENTS || { events: [] };
 const cityEvents = Array.isArray(cityPayload.events) ? cityPayload.events : [];
 const openingPayload = openingWindow.HALIFAX_OPENING_WATCH_LEADS || { leads: [], failures: [] };
@@ -153,9 +158,9 @@ for (const item of discovered) {
 }
 
 const canonicalIds = new Set(canonical.map((restaurant) => restaurant.id));
-const officialResults = Array.isArray(official.results) ? official.results : [];
+const officialResults = (Array.isArray(official.results) ? official.results : []).filter(item => canonicalIds.has(item.restaurantId));
 const officialById = new Map(officialResults.map((result) => [result.restaurantId, result]));
-const firstPartyRecords = Array.isArray(firstParty.records) ? firstParty.records : [];
+const firstPartyRecords = (Array.isArray(firstParty.records) ? firstParty.records : []).filter(item => canonicalIds.has(item.restaurantId));
 const firstPartyById = new Map(firstPartyRecords.map((record) => [record.restaurantId, record]));
 const feedSignals = Array.isArray(websiteFeeds.signals) ? websiteFeeds.signals : [];
 const apiSignals = Array.isArray(socialSignals.signals) ? socialSignals.signals : [];
@@ -164,7 +169,8 @@ const verifiedWebsiteIds = uniqueIds([
   ...officialResults.filter((result) => Number(result.status) >= 200 && Number(result.status) < 400 && !result.error).map((result) => result.restaurantId),
   ...firstPartyRecords.filter((record) => record.reviewState === "verified" && validUrl(record.resolvedUrl || record.website)).map((record) => record.restaurantId)
 ]);
-const websiteIds = uniqueIds(canonical.filter((restaurant) => validUrl(restaurant.website)).map((restaurant) => restaurant.id));
+const websiteIds = uniqueIds(canonical.filter((restaurant) => validUrl(restaurant.website) && integrity.safeSource(restaurant.website)).map((restaurant) => restaurant.id));
+for (const id of verifiedWebsiteIds) if (!websiteIds.has(id)) verifiedWebsiteIds.delete(id);
 const inspectionIds = uniqueIds(canonical.filter((restaurant) => (restaurant.inspectionRecords || []).length > 0).map((restaurant) => restaurant.id));
 
 const verifiedMenuIds = uniqueIds((verifiedPages.menuSources || []).map((source) => source.restaurantId));
@@ -251,7 +257,8 @@ const hoursIds = uniqueIds(canonical.filter((restaurant) => String(restaurant.op
 const coordinateIds = uniqueIds(canonical.filter((restaurant) => validCoordinates(restaurant.coordinates)).map((restaurant) => restaurant.id));
 const neighbourhoodIds = uniqueIds(canonical.filter((restaurant) => String(restaurant.neighborhood || "").trim()).map((restaurant) => restaurant.id));
 const cuisineIds = uniqueIds(canonical.filter((restaurant) => Array.isArray(restaurant.cuisines) && restaurant.cuisines.some(Boolean)).map((restaurant) => restaurant.id));
-const mediaIds = uniqueIds(media.filter((record) => record.reviewState === "approved" && (validUrl(record.url) || /^\.?\/?assets\//.test(String(record.url || "")))).map((record) => record.restaurantId));
+if (media.some(record => !mediaPermitted(record))) throw Error("Invalid approved media in coverage input");
+const mediaIds = uniqueIds(media.filter(mediaPermitted).map((record) => record.restaurantId));
 
 const patioIds = new Set();
 const accessibilityIds = new Set();
@@ -305,10 +312,13 @@ const freshness = { lt7Days: 0, days7To30: 0, days30To90: 0, gt90Days: 0, unknow
 const staleRestaurantIds = new Set();
 for (const restaurant of canonical) {
   const observed = [
-    restaurant.freshnessDate,
+    restaurant.sourceObservedAt,
+    restaurant.reviewedPlaceResolution?.observedAt,
+    restaurant.operatingStatusEvidence?.observedAt || restaurant.operatingStatusEvidence?.verifiedAt,
+    ...(restaurant.sources || []).map(source => source.observedAt),
     firstPartyById.get(restaurant.id)?.observedAt,
     officialById.get(restaurant.id)?.observedAt
-  ].map(dateStamp).filter((stamp) => stamp !== null).sort((a, b) => b - a)[0];
+  ].map(dateStamp).filter((stamp) => stamp !== null && stamp <= now).sort((a, b) => b - a)[0];
   const bucket = freshnessBucket(observed === undefined ? null : new Date(observed).toISOString());
   freshness[bucket] += 1;
   if (bucket === "gt90Days") staleRestaurantIds.add(restaurant.id);
@@ -329,11 +339,15 @@ const sourceFailures = {
   patioDirectorySources: Array.isArray(patioDirectory.failures) ? patioDirectory.failures.length : 0
 };
 
+// Every place metric uses the same published catalog universe.
+for (const ids of [verifiedWebsiteIds, verifiedMenuIds, verifiedSpecialIds, menuIds, specialIds, reservationIds, orderingIds, directEventIds, socialPlaceIds, socialOrHubPlaceIds, linkHubIds, mediaIds, structuredUpcomingRestaurantIds, ...Object.values(socialPlatformPlaceIds)]) {
+  for (const id of ids) if (!canonicalIds.has(id)) ids.delete(id);
+}
 const socialCoverage = {};
 for (const platform of [...SOCIAL_PLATFORMS, ...LINK_HUB_PLATFORMS]) socialCoverage[platform] = socialPlatformPlaceIds[platform]?.size || 0;
 
 const total = canonical.length;
-const lifecycle = { active: 0, temporarily_closed: 0, permanently_closed: 0, moved: 0, coming_soon: 0, unknown: 0 };
+const lifecycle = { active: 0, temporarily_closed: 0, permanently_closed: 0, moved: 0, replaced: 0, coming_soon: 0, unknown: 0 };
 for (const restaurant of canonical) increment(lifecycle, restaurant.operatingStatus || "unknown");
 const report = {
   version: 1,
@@ -346,7 +360,7 @@ const report = {
     menuLink: "Verified menu source, first-party menu action, or official-site menu candidate link. Verified menu is reported separately.",
     specials: "Curated special, verified specials page, first-party specials-related action, or official-site specials signal. Exact terms are not assumed current unless separately structured.",
     socialCoverage: "Count of canonical places associated with at least one supported profile; link hubs are reported separately from social networks.",
-    staleRestaurant: "Latest available restaurant freshness/official-site/first-party observation is more than 90 days old. Unknown dates are reported separately.",
+    staleRestaurant: "Latest dated restaurant-specific source observation, excluding import/rebuild/freshnessDate timestamps, is more than 90 days old. Unknown dates are reported separately.",
     eventVenueMatch: "Conservative exact normalized venue-name match to a canonical place; no canonical venue entity exists yet.",
     duplicateEventCount: "Additional current event records sharing normalized title, local date, and normalized venue/address key.",
     canonicalRestaurantsWithStructuredUpcomingEvents: "Distinct canonical restaurant IDs that have one or more upcoming structured event records. This is a place count.",
@@ -384,8 +398,10 @@ const report = {
     withAccessibilityInformation: accessibilityIds.size,
     withPatioInformation: patioIds.size,
     withUsableMedia: mediaIds.size,
+    approvedLicensedMediaRecords: media.length,
+    retainedMediaSourceReferences: mediaReferences.length,
     lifecycle,
-    activeCanonicalPlaces: total - lifecycle.temporarily_closed - lifecycle.permanently_closed - lifecycle.moved,
+    activeCanonicalPlaces: total - lifecycle.temporarily_closed - lifecycle.permanently_closed - lifecycle.moved - lifecycle.replaced,
     freshness,
     staleRestaurantRecords: staleRestaurantIds.size,
     publicSpecialSourceLayer: {

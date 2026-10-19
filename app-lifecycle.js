@@ -3,6 +3,8 @@
 // Run after all source/fact decorators so a later enrichment layer cannot make a
 // closed or moved record look current again. Historical source and social links
 // remain available on the direct detail route as evidence.
+// Reapply reviewed fields after enrichment so stale facts cannot reopen a venue.
+HalifaxRestaurantCorrections.apply(restaurants, reviewedRestaurantCorrections);
 for (const restaurant of restaurants) {
   if (isRestaurantActive(restaurant)) continue;
   restaurant.menuLinks = [];
@@ -24,4 +26,6 @@ for (const restaurant of restaurants) {
   restaurant.hasReservation = false;
   restaurant.hasOrdering = false;
   restaurant.currentHoursState = { state: "closed", reason: restaurant.operatingStatus };
+  restaurant.openingHours = null;
 }
+activeRestaurants.splice(0, activeRestaurants.length, ...restaurants.filter(isRestaurantActive));

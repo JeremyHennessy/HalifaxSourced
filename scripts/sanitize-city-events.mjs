@@ -1,4 +1,5 @@
 import { mkdir, readFile, writeFile } from "node:fs/promises";
+import { dedupeCanonicalEvents } from "./lib/canonical-event-dedupe.mjs";
 
 const buildUrl = new URL("../data/build/city-events.json", import.meta.url);
 const jsUrl = new URL("../data/city-events.js", import.meta.url);
@@ -120,7 +121,7 @@ function classifyEvent(event) {
   return [...new Set(categories)];
 }
 
-const kept = [];
+let kept = [];
 const removed = [];
 let categoryReclassified = 0;
 for (const event of events) {
@@ -144,6 +145,8 @@ for (const event of events) {
   kept.push({ ...event, city: municipality, categories });
 }
 
+const preDedupeCount = kept.length;
+kept = dedupeCanonicalEvents(kept);
 const categoryCounts = {};
 for (const event of kept) for (const category of event.categories || []) categoryCounts[category] = (categoryCounts[category] || 0) + 1;
 
@@ -156,6 +159,7 @@ const output = {
   scopeAudit: {
     inputEvents: events.length,
     keptEvents: kept.length,
+    canonicalDuplicatesMerged: preDedupeCount - kept.length,
     removedOutOfScope: removed.length,
     categoryReclassified,
     allowedMunicipalities: [...allowedMunicipalities.values()],

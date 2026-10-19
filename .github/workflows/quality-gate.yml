@@ -15,10 +15,12 @@ permissions:
 jobs:
   data-integrity:
     runs-on: ubuntu-latest
-    timeout-minutes: 25
+    timeout-minutes: 45
     steps:
       - name: Checkout
         uses: actions/checkout@v6
+        with:
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
 
       - name: Set up Node
         uses: actions/setup-node@v4
@@ -35,6 +37,25 @@ jobs:
       - name: Run structured-special evidence regression
         run: node scripts/test-structured-specials-model.mjs
 
+      - name: Test preview promotion contract and branch leases
+        run: node scripts/test-preview-promotion.mjs
+
+      - name: Run network-disabled source verifier startup regression
+        run: node scripts/test-source-verifier-startup.mjs
+
+      - name: Run source quarantine, local media and refresh regressions
+        run: |
+          node scripts/test-source-integrity.mjs
+          node scripts/test-public-source-fetch.mjs
+          node scripts/test-scheduled-source-guards.mjs
+          node scripts/test-robots-redirect-guards.mjs
+          node scripts/test-local-media-repair.mjs
+          node scripts/test-event-refresh-dedupe.mjs
+
+      - name: Export reviewed catalog before dependent builds
+        run: |
+          node scripts/export-catalog.mjs
+
       - name: Build public happy-hour source leads
         env:
           PUBLIC_SPECIAL_CAMPAIGN_LIMIT: 80
@@ -44,6 +65,9 @@ jobs:
 
       - name: Build deterministic structured specials
         run: node scripts/build-structured-specials.mjs
+
+      - name: Test reviewed identities and expiry
+        run: node scripts/test-reviewed-corrections.mjs
 
       - name: Build patio directory facts
         run: node scripts/import-patio-directory-facts.mjs
@@ -139,9 +163,21 @@ jobs:
       - name: Check local restaurant policy
         run: node scripts/check-local-restaurant-policy.mjs
 
+      - name: Check current official, social, menu and action links
+        env:
+          SOURCE_COMMIT_SHA: ${{ github.event.pull_request.head.sha || github.sha }}
+          LINK_HEALTH_SCOPE: release
+          LINK_HEALTH_LIMIT: 0
+          LINK_HEALTH_TIMEOUT_MS: 4000
+          LINK_HEALTH_CONCURRENCY: 16
+        run: |
+          node scripts/check-source-links.mjs
+          node scripts/check-release-link-health.mjs
+
       - name: Build content coverage and quality reports
         env:
           SOURCE_COMMIT_SHA: ${{ github.event.pull_request.head.sha || github.sha }}
+          QUALITY_WORKFLOW_RUN_ID: ${{ github.run_id }}
         run: |
           node scripts/check-restaurant-lifecycle.mjs
           node scripts/build-content-coverage-report.mjs
@@ -156,6 +192,25 @@ jobs:
 
       - name: Build SQLite database artifacts
         run: python3 scripts/build-sqlite-db.py
+
+      - name: Test immutable release receipts
+        run: node scripts/test-release-artifact.mjs
+
+      - name: Package validated release
+        env:
+          SOURCE_COMMIT_SHA: ${{ github.event.pull_request.head.sha || github.sha }}
+          QUALITY_WORKFLOW_RUN_ID: ${{ github.run_id }}
+        run: |
+          node scripts/release-artifact.mjs build
+          node scripts/release-artifact.mjs verify
+
+      - name: Upload validated release for browser testing
+        uses: actions/upload-artifact@v4
+        with:
+          name: validated-site
+          path: .release-site/
+          include-hidden-files: true
+          if-no-files-found: error
 
       - name: Upload integrity reports
         if: always()
@@ -218,51 +273,33 @@ jobs:
           if-no-files-found: ignore
 
   ui-verification:
+    needs: data-integrity
     runs-on: ubuntu-latest
     timeout-minutes: 30
     steps:
       - name: Checkout
         uses: actions/checkout@v6
+        with:
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
 
       - name: Set up Node
         uses: actions/setup-node@v4
         with:
           node-version: 22
 
-      - name: Build public happy-hour source leads for browser verification
+      - name: Download the validated release
+        uses: actions/download-artifact@v4
+        with:
+          name: validated-site
+          path: .release-site
+
+      - name: Verify release receipt and use its data for assertions
         env:
-          PUBLIC_SPECIAL_CAMPAIGN_LIMIT: 80
-          PUBLIC_SPECIAL_CAMPAIGN_CRAWL_DELAY_MS: 250
-          PUBLIC_SPECIAL_LEAD_TIMEOUT_MS: 10000
-        run: node scripts/import-public-special-source-leads.mjs
-
-      - name: Build structured specials for browser verification
-        run: node scripts/build-structured-specials.mjs
-
-      - name: Build review-directory discovery data for browser verification
+          SOURCE_COMMIT_SHA: ${{ github.event.pull_request.head.sha || github.sha }}
+          QUALITY_WORKFLOW_RUN_ID: ${{ github.run_id }}
         run: |
-          node scripts/import-review-directory-restaurants.mjs
-          node scripts/resolve-place-candidates.mjs
-
-      - name: Build recent post intelligence for browser verification
-        run: |
-          node scripts/build-recent-social-posts.mjs
-          node scripts/build-reviewed-social-posts.mjs
-
-      - name: Build local restaurant catalog for browser verification
-        run: |
-          node scripts/export-catalog.mjs
-          node scripts/check-local-restaurant-policy.mjs
-
-      - name: Build thumbnail candidates for browser verification
-        run: node scripts/build-thumbnail-candidates.mjs
-
-      - name: Apply city event additions for browser verification
-        run: |
-          node scripts/check-city-event-additions.mjs
-          node scripts/apply-city-event-additions.mjs
-          node scripts/sanitize-city-events.mjs
-          node scripts/resolve-city-event-entities.mjs
+          node scripts/release-artifact.mjs verify
+          cp -a .release-site/data/. data/
 
       - name: Install Playwright
         run: |
@@ -270,6 +307,8 @@ jobs:
           npx playwright install --with-deps chromium
 
       - name: Start local app
+        env:
+          APP_ROOT: ${{ github.workspace }}/.release-site
         run: |
           node scripts/dev-server.mjs > /tmp/halifax-sourced-server.log 2>&1 &
           for i in {1..30}; do
@@ -285,11 +324,31 @@ jobs:
         env:
           APP_URL: http://127.0.0.1:5173
         run: |
+          node scripts/test-offer-rendering-fixed-clock.mjs
+          node scripts/test-feed-image-controls.mjs
+          node scripts/test-offline-resource-gate.mjs
+          node scripts/test-popup-resource-gate.mjs
+          node scripts/test-map-tile-controls.mjs
           node scripts/verify-ui.mjs
+          node scripts/verify-reviewed-corrections.mjs
           node scripts/verify-admin-status.mjs
           node scripts/verify-iphone-links.mjs
           node scripts/test-explore-minimap-lifecycle.mjs
           node scripts/test-rich-discovery.mjs
+
+      - name: Verify tested release is unchanged
+        env:
+          SOURCE_COMMIT_SHA: ${{ github.event.pull_request.head.sha || github.sha }}
+          QUALITY_WORKFLOW_RUN_ID: ${{ github.run_id }}
+        run: node scripts/release-artifact.mjs verify
+
+      - name: Upload tested release for deployment
+        uses: actions/upload-artifact@v4
+        with:
+          name: tested-site
+          path: .release-site/
+          include-hidden-files: true
+          if-no-files-found: error
 
       - name: Upload UI screenshots
         if: always()

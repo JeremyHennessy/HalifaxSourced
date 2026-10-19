@@ -62,7 +62,7 @@ function escapeHtml(value) {
 }
 
 function safeUrl(value) {
-  if (!value) return null;
+  if (!value || !HalifaxDataIntegrity.safeSource(value)) return null;
   try {
     const url = new URL(value);
     return ["http:", "https:"].includes(url.protocol) ? url.href : null;
@@ -307,7 +307,7 @@ function enrichRestaurant(restaurant) {
 }
 
 function isRestaurantActive(restaurant) {
-  return !["permanently_closed", "temporarily_closed", "moved"].includes(restaurant?.operatingStatus);
+  return !["permanently_closed", "temporarily_closed", "moved", "replaced"].includes(restaurant?.operatingStatus);
 }
 
 function sourceCoverageScore(restaurant, signal, inspections) {

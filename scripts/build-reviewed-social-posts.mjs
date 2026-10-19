@@ -1,3 +1,4 @@
+import integrity from "../source-integrity.js";
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 
 const decisionsPath = new URL("../data/reviewed-social-post-decisions.json", import.meta.url);
@@ -60,11 +61,16 @@ const records = recentRecords
     const decision = decisionMap.get(id) || decisionMap.get(post.postUrl || "");
     if (!approvedDecision(decision)) return null;
     const sourceUrl = validUrl(post.postUrl || post.profileUrl || post.feedUrl);
-    if (!sourceUrl || !post.restaurantId) return null;
+    if (!sourceUrl || !post.restaurantId || post.dateState !== "valid" || post.reviewState === "quarantined") return null;
+    const reviewedAt = decision.approvedAt || decision.decidedAt || decision.reviewedAt || null;
+    const reviewStamp = Date.parse(reviewedAt || '');
     return {
       ...post,
+      reviewedAt,
+      reviewDueAt: decision.reviewDueAt || (Number.isFinite(reviewStamp) ? new Date(reviewStamp + 30 * 86400000).toISOString() : null),
+      expiresAt: decision.expiresAt || integrity.postExpiry(post),
       sourceUrl,
-      approvedAt: decision.approvedAt || decision.decidedAt || decision.reviewedAt || generatedAt,
+      approvedAt: reviewedAt,
       approvedBy: decision.approvedBy || "Halifax Sourced admin review",
       reviewState: "approved_post",
       reviewNote: decision.note || decision.reviewNote || null

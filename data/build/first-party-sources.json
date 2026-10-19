@@ -1,17 +1,19 @@
 {
   "version": 3,
-  "generatedAt": "2026-09-04T13:34:13.421Z",
+  "generatedAt": "2026-10-06T01:20:49.519Z",
   "platformRegistryVersion": 1,
-  "checkedWebsites": 241,
-  "failedWebsites": 65,
-  "hostGroups": 234,
-  "concurrency": 12,
-  "ownedPageLimit": 5,
-  "linkHubLimit": 4,
-  "profileCount": 414,
+  "checkedWebsites": 2,
+  "refreshedRecords": 1,
+  "retainedRecords": 239,
+  "failedWebsites": 1,
+  "hostGroups": 2,
+  "concurrency": 1,
+  "ownedPageLimit": 1,
+  "linkHubLimit": 0,
+  "profileCount": 416,
   "platformCounts": {
-    "facebook": 149,
-    "instagram": 152,
+    "facebook": 150,
+    "instagram": 153,
     "youtube": 14,
     "x": 67,
     "tiktok": 18,
@@ -21,11 +23,11 @@
   },
   "linkHubCount": 0,
   "linkHubCounts": {},
-  "relatedLinkCount": 758,
+  "relatedLinkCount": 757,
   "relatedKindCounts": {
     "menu": 489,
     "reservations": 75,
-    "ordering": 117,
+    "ordering": 116,
     "events": 70,
     "newsletter": 6,
     "tickets": 1
@@ -33,394 +35,10 @@
   "feedCount": 138,
   "failures": [
     {
-      "restaurantId": "osm-node-5134046822-chain-yard-urban-cidery",
-      "name": "Chain Yard Urban Cidery",
-      "website": "http://://www.chainyardcider.com",
-      "reason": "invalid_url"
-    },
-    {
-      "restaurantId": "field-guide",
-      "name": "Field Guide",
-      "website": "https://fieldguidehfx.com/",
-      "reason": "fetch failed"
-    },
-    {
-      "restaurantId": "osm-node-2702737179-9-nine",
-      "name": "9 + Nine",
-      "website": "https://9plus9.ca/",
-      "reason": "fetch failed"
-    },
-    {
-      "restaurantId": "osm-node-12143582175-asia-restaurant-and-bar",
-      "name": "Asia Restaurant & Bar",
-      "website": "https://asiahalifax.com/",
-      "reason": "fetch failed"
-    },
-    {
-      "restaurantId": "osm-node-4474954245-bai-wei-grill-bar",
-      "name": "Bai Wei Grill Bar",
-      "website": "http://baiweigrillbar.com/",
-      "reason": "fetch failed"
-    },
-    {
-      "restaurantId": "osm-node-11752691591-bramble-cafe",
-      "name": "Bramble Cafe",
-      "website": "https://www.instagram.com/bramble.hfx",
-      "reason": "robots_disallow"
-    },
-    {
-      "restaurantId": "osm-node-11752688345-the-grounds-cafe-by-drift-coffee",
-      "name": "The Grounds Cafe by Drift Coffee",
-      "website": "https://www.instagram.com/driftcoffeehfx/",
-      "reason": "robots_disallow"
-    },
-    {
-      "restaurantId": "osm-node-9089629991-cafe-lara",
-      "name": "Café Lara",
-      "website": "https://cafelara.ca/",
-      "reason": "fetch failed"
-    },
-    {
-      "restaurantId": "osm-node-5810620690-castello-cafe",
-      "name": "Castello Café",
-      "website": "https://www.facebook.com/CastelloCafeCatering/",
-      "reason": "robots_disallow"
-    },
-    {
-      "restaurantId": "osm-node-4421124794-cafe-marco-polo",
-      "name": "Cafe Marco Polo",
-      "website": "https://justuscoffee.com/locations/kings-wharf-dartmouth",
-      "reason": "http_404"
-    },
-    {
-      "restaurantId": "osm-node-11752773940-colleen-s-pub",
-      "name": "Colleen's Pub",
-      "website": "https://www.facebook.com/oldwrinkleranch/",
-      "reason": "robots_disallow"
-    },
-    {
-      "restaurantId": "osm-node-7108250973-creative-cup-cafe",
-      "name": "Creative Cup Cafe",
-      "website": "https://facebook.com/Creative-Cup-Cafe-112888013737872/",
-      "reason": "robots_disallow"
-    },
-    {
-      "restaurantId": "osm-node-8018171257-fattoush-mediterranean-grill",
-      "name": "Fattoush Mediterranean Grill",
-      "website": "https://m.facebook.com/FattoushMediterraneanGrill/",
-      "reason": "robots_disallow"
-    },
-    {
-      "restaurantId": "osm-node-3789811257-flynn-s-dairy-bar",
-      "name": "Flynn's Dairy Bar",
-      "website": "https://www.facebook.com/flynns711/",
-      "reason": "robots_disallow"
-    },
-    {
-      "restaurantId": "osm-node-1570206711-fries-and-co",
-      "name": "Fries & Co.",
-      "website": "http://www.facebook.com/pages/Fries-Co/339657883852",
-      "reason": "robots_disallow"
-    },
-    {
-      "restaurantId": "osm-node-1920646706-jenny-s-place",
-      "name": "Jenny's Place",
-      "website": "https://www.facebook.com/people/Jennys-Place-Pub/100028409456739/",
-      "reason": "robots_disallow"
-    },
-    {
-      "restaurantId": "osm-node-1749780391-cousins-restaurant",
-      "name": "Cousins Restaurant",
-      "website": "https://cousinsrestaurant.webs.com/",
-      "reason": "fetch failed"
-    },
-    {
-      "restaurantId": "osm-node-7185511974-clay-west-bar-and-grill",
-      "name": "Clay West Bar & Grill",
-      "website": "https://claywesthalifax.business.site/",
-      "reason": "http_404"
-    },
-    {
-      "restaurantId": "osm-node-5863968654-dharma-sushi",
-      "name": "Dharma sushi",
-      "website": "https://dharmasushi.ca/",
-      "reason": "fetch failed"
-    },
-    {
-      "restaurantId": "osm-node-2721708503-efendy-turkish-and-mediterranean-grill",
-      "name": "Efendy Turkish & Mediterranean Grill",
-      "website": "http://www.efendyrestaurant.com/",
-      "reason": "fetch failed"
-    },
-    {
-      "restaurantId": "osm-node-5823814053-espresso-46",
-      "name": "Espresso 46",
-      "website": "https://espresso46.com/",
-      "reason": "fetch failed"
-    },
-    {
-      "restaurantId": "osm-node-2721708504-curry-village",
-      "name": "Curry Village",
-      "website": "https://www.curryvillage.ca/",
-      "reason": "http_526"
-    },
-    {
-      "restaurantId": "osm-node-2721708515-cha-baa-thai",
-      "name": "Cha Baa Thai",
-      "website": "https://www.chabaathairestaurant.ca/",
-      "reason": "fetch failed"
-    },
-    {
-      "restaurantId": "osm-node-7082566318-g-street-pizza",
-      "name": "G-Street Pizza",
-      "website": "https://gstreetpizza.ca/",
-      "reason": "fetch failed"
-    },
-    {
-      "restaurantId": "osm-node-32335616-jim-s-family-restaurant",
-      "name": "Jim's Family Restaurant",
-      "website": "https://www.jimsfamilyrestauranthalifax.com/cl",
-      "reason": "fetch failed"
-    },
-    {
-      "restaurantId": "osm-node-4995047387-john-s-lunch",
-      "name": "John's Lunch",
-      "website": "https://johnslunch.com/",
-      "reason": "fetch failed"
-    },
-    {
-      "restaurantId": "osm-node-2624400763-java-blend",
-      "name": "Java Blend",
-      "website": "https://javablendcoffee.com/contact",
-      "reason": "http_404"
-    },
-    {
-      "restaurantId": "osm-node-5723553932-kam-moon",
-      "name": "Kam-moon",
-      "website": "https://kam-moon.com/",
-      "reason": "fetch failed"
-    },
-    {
-      "restaurantId": "osm-node-2712744143-kebab-kitchen",
-      "name": "Kebab Kitchen",
-      "website": "http://www.kebabkitchens.com/",
-      "reason": "fetch failed"
-    },
-    {
-      "restaurantId": "osm-node-3575616966-layla-s-mediterranean-cuisine",
-      "name": "Layla's Mediterranean Cuisine",
-      "website": "http://laylacuisine.ca/",
-      "reason": "fetch failed"
-    },
-    {
-      "restaurantId": "osm-node-4416786989-manhattan-pizza",
-      "name": "Manhattan Pizza",
-      "website": "http://www.manhattanpizza.ca/locations.html",
-      "reason": "fetch failed"
-    },
-    {
-      "restaurantId": "osm-node-33078674-mcdonald-s",
-      "name": "McDonald's",
-      "website": "http://www.mcdonalds.ca/",
-      "reason": "robots_disallow"
-    },
-    {
-      "restaurantId": "osm-node-478118760-mcdonald-s",
-      "name": "McDonald's",
-      "website": "http://www.mcdonalds.ca/",
-      "reason": "robots_disallow"
-    },
-    {
-      "restaurantId": "osm-node-2712689447-mcdonald-s",
-      "name": "McDonald's",
-      "website": "http://www.mcdonalds.ca/",
-      "reason": "robots_disallow"
-    },
-    {
-      "restaurantId": "osm-node-3034604253-mcdonald-s",
-      "name": "McDonald's",
-      "website": "http://www.mcdonalds.ca/",
-      "reason": "robots_disallow"
-    },
-    {
-      "restaurantId": "osm-node-8593116375-mcdonald-s",
-      "name": "McDonald's",
-      "website": "http://www.mcdonalds.ca/",
-      "reason": "robots_disallow"
-    },
-    {
-      "restaurantId": "osm-way-364014694-mcdonald-s",
-      "name": "McDonald's",
-      "website": "http://www.mcdonalds.ca/",
-      "reason": "robots_disallow"
-    },
-    {
-      "restaurantId": "osm-node-9652937830-arirang-korean-and-japanese",
-      "name": "Arirang Korean & Japanese",
-      "website": "https://arirang-restaurant.com/",
-      "reason": "fetch failed"
-    },
-    {
-      "restaurantId": "osm-node-8142450011-montana-s",
-      "name": "Montana's",
-      "website": "https://www.montanas.ca/en/locations/3617/halifax-chain-lake-dr.html",
-      "reason": "robots_disallow"
-    },
-    {
-      "restaurantId": "osm-node-7674271948-new-asia",
-      "name": "New Asia",
-      "website": "http://www.newasiahalifax.ca/",
-      "reason": "fetch failed"
-    },
-    {
-      "restaurantId": "dear-friend",
-      "name": "Dear Friend Bar",
-      "website": "https://dearfriendbar.com/",
-      "reason": "timeout"
-    },
-    {
-      "restaurantId": "osm-node-4965917621-patrons-golf-and-lounge",
-      "name": "Patrons Golf & Lounge",
-      "website": "https://www.patronsgolflounge.ca/",
-      "reason": "fetch failed"
-    },
-    {
-      "restaurantId": "osm-node-3789869157-piece-of-cake-bakery-and-cafe",
-      "name": "Piece of Cake Bakery and Cafe",
-      "website": "https://bishopslanding.com/dining/piece-of-cake-fine-bakery-cafe/",
-      "reason": "http_404"
-    },
-    {
-      "restaurantId": "osm-node-3789835257-the-juice-press",
-      "name": "The Juice Press",
-      "website": "https://bishopslanding.com/dining/juice-press-inc/",
-      "reason": "http_404"
-    },
-    {
-      "restaurantId": "osm-way-460939327-la-piazza-ristorante",
-      "name": "La Piazza Ristorante",
-      "website": "https://www.lapiazzarestocafe.com/",
-      "reason": "fetch failed"
-    },
-    {
-      "restaurantId": "osm-node-9652977384-saffron-multi-cuisine-indian-restaurant",
-      "name": "Saffron Multi Cuisine Indian Restaurant",
-      "website": "https://saffron-indian-restaurant.com/",
-      "reason": "fetch failed"
-    },
-    {
-      "restaurantId": "osm-node-7674268236-shiraz",
-      "name": "Shiraz",
-      "website": "https://www.shirazhalifax.ca/",
-      "reason": "fetch failed"
-    },
-    {
-      "restaurantId": "osm-node-3791840157-krave-burger",
-      "name": "Krave Burger",
-      "website": "http://kraveburger.com/",
-      "reason": "timeout"
-    },
-    {
-      "restaurantId": "osm-node-11552151862-sushi-jet",
-      "name": "Sushi Jet",
-      "website": "https://sushi-jet.com/location/dartmouth",
-      "reason": "http_404"
-    },
-    {
-      "restaurantId": "osm-node-11552180279-sushi-jet",
-      "name": "Sushi Jet",
-      "website": "https://sushi-jet.com/location/Halifax",
-      "reason": "http_404"
-    },
-    {
-      "restaurantId": "osm-node-2721708502-suzuki-japanese-restaurant",
-      "name": "Suzuki Japanese Restaurant",
-      "website": "http://www.suzukirestaurant.ca/",
-      "reason": "fetch failed"
-    },
-    {
-      "restaurantId": "osm-node-9416778099-tarek-s-cafe",
-      "name": "Tarek's Cafe",
-      "website": "http://www.tarekscafe.ca/",
-      "reason": "fetch failed"
-    },
-    {
-      "restaurantId": "osm-node-5151935621-the-bedford-basin-market",
-      "name": "the Bedford Basin Market",
-      "website": "https://www.bedfordbasinmarket.com/",
-      "reason": "fetch failed"
-    },
-    {
-      "restaurantId": "osm-node-1921015225-the-brooklyn-warehouse",
-      "name": "The Brooklyn Warehouse",
-      "website": "https://brooklynwarehouse.ca/",
-      "reason": "robots_disallow"
-    },
-    {
-      "restaurantId": "osm-node-5157477122-the-butcher-s-block-pub-and-eatery",
-      "name": "The Butcher's Block Pub and Eatery",
-      "website": "http://www.butchersblockpub.com/",
-      "reason": "robots_disallow"
-    },
-    {
-      "restaurantId": "osm-node-1689418207-the-old-triangle-irish-pub",
-      "name": "The Old Triangle Irish Pub",
-      "website": "https://www.oldtriangle.com/welcome/",
-      "reason": "http_404"
-    },
-    {
-      "restaurantId": "osm-node-13286458034-vandal-doughnuts",
-      "name": "Vandal Doughnuts",
-      "website": "https://vandaldoughnuts.ca/",
-      "reason": "fetch failed"
-    },
-    {
-      "restaurantId": "osm-node-13141551801-mcdonald-s",
-      "name": "McDonald's",
-      "website": "https://www.mcdonalds.com/ca/en-ca.html",
-      "reason": "timeout"
-    },
-    {
-      "restaurantId": "osm-node-5150731134-way2roll",
-      "name": "Way2Roll",
-      "website": "https://way2roll.ca/",
-      "reason": "fetch failed"
-    },
-    {
-      "restaurantId": "osm-node-12143325435-krave-burger",
-      "name": "Krave Burger",
-      "website": "http://kraveburger.com/",
-      "reason": "timeout"
-    },
-    {
-      "restaurantId": "osm-node-4428984290-stone-pizza",
-      "name": "Stone Pizza",
-      "website": "https://stonepizza.ca/",
-      "reason": "timeout"
-    },
-    {
-      "restaurantId": "osm-node-6393893025-pizza-hut",
-      "name": "Pizza Hut",
-      "website": "https://www.pizzahut.ca/huts/ca-1/R30103/",
-      "reason": "timeout"
-    },
-    {
-      "restaurantId": "osm-way-181621820-mcdonald-s",
-      "name": "McDonald's",
-      "website": "https://www.mcdonalds.com/ca/en-ca/location/halifax/halifax-kempt/3486-kempt-road/3141.html",
-      "reason": "timeout"
-    },
-    {
-      "restaurantId": "osm-way-358577265-pizza-hut",
-      "name": "Pizza Hut",
-      "website": "https://www.pizzahut.ca/huts/ca-1/R30104/",
-      "reason": "timeout"
-    },
-    {
-      "restaurantId": "osm-node-9991598303-pizza-hut-delivery",
-      "name": "Pizza Hut Delivery",
-      "website": "https://www.pizzahut.ca/huts/ca-1/R30102/",
-      "reason": "timeout"
+      "restaurantId": "osm-node-4416774495-glitter-bean-cafe",
+      "name": "Glitter Bean Cafe",
+      "website": "https://www.glitterbeancafe.com/contact",
+      "reason": "quarantined_cross_entity_redirect"
     }
   ],
   "records": [
@@ -6923,64 +6541,6 @@
       "reviewState": "verified"
     },
     {
-      "restaurantId": "osm-node-13141377001-india-paradise",
-      "name": "India Paradise",
-      "website": "https://www.indiaparadise.ca/",
-      "resolvedUrl": "https://www.indiaparadise.ca/",
-      "observedAt": "2026-09-04T13:33:19.482Z",
-      "lastVerifiedAt": "2026-09-04T13:33:19.482Z",
-      "scannedOwnedPages": [
-        "https://www.indiaparadise.ca/",
-        "https://www.indiaparadise.ca/contact"
-      ],
-      "socialProfiles": [],
-      "linkHubs": [],
-      "relatedLinks": [
-        {
-          "kind": "ordering",
-          "url": "https://order.online/store/india-paradise-829212",
-          "label": "Order Now",
-          "discoveredFrom": "https://www.indiaparadise.ca/",
-          "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T13:33:19.482Z",
-          "lastVerifiedAt": "2026-09-04T13:33:19.482Z",
-          "reviewState": "verified_link",
-          "confidence": "authoritative",
-          "status": "active"
-        },
-        {
-          "kind": "events",
-          "url": "https://www.indiaparadise.ca/post/opening-on-march-18th-in-calgary",
-          "label": "Mar 12, 2026 Calgary News Opening on March 18th in Calgary New Spot Alert: India Paradise is coming to Calgary! 🥘🔥Mark your calendars for ",
-          "discoveredFrom": "https://www.indiaparadise.ca/",
-          "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T13:33:19.482Z",
-          "lastVerifiedAt": "2026-09-04T13:33:19.482Z",
-          "reviewState": "verified_link",
-          "confidence": "authoritative",
-          "status": "active"
-        },
-        {
-          "kind": "menu",
-          "url": "https://www.indiaparadise.ca/mississauga/food-menu",
-          "label": "View Menu",
-          "discoveredFrom": "https://www.indiaparadise.ca/",
-          "associationBasis": "linked_from_official_website",
-          "observedAt": "2026-09-04T13:33:19.482Z",
-          "lastVerifiedAt": "2026-09-04T13:33:19.482Z",
-          "reviewState": "verified_link",
-          "confidence": "authoritative",
-          "status": "active"
-        }
-      ],
-      "feeds": [],
-      "sitemaps": [
-        "https://www.indiaparadise.ca/sitemap.xml"
-      ],
-      "sourceKind": "official_website_discovery",
-      "reviewState": "verified"
-    },
-    {
       "restaurantId": "osm-node-13141457102-bitter-end-martini-bar-and-restaurant",
       "name": "Bitter End Martini Bar & Restaurant",
       "website": "https://www.bitterend.ca/",
@@ -12069,26 +11629,6 @@
       "feeds": [],
       "sitemaps": [
         "https://www.starbucks.ca/sitemap.xml"
-      ],
-      "sourceKind": "official_website_discovery",
-      "reviewState": "verified"
-    },
-    {
-      "restaurantId": "osm-node-4416774495-glitter-bean-cafe",
-      "name": "Glitter Bean Cafe",
-      "website": "https://www.glitterbeancafe.com/",
-      "resolvedUrl": "https://justitalymentone.com/",
-      "observedAt": "2026-09-04T13:33:15.472Z",
-      "lastVerifiedAt": "2026-09-04T13:33:15.472Z",
-      "scannedOwnedPages": [
-        "https://justitalymentone.com/"
-      ],
-      "socialProfiles": [],
-      "linkHubs": [],
-      "relatedLinks": [],
-      "feeds": [],
-      "sitemaps": [
-        "https://justitalymentone.com/sitemap.xml"
       ],
       "sourceKind": "official_website_discovery",
       "reviewState": "verified"
@@ -23096,34 +22636,86 @@
       ],
       "sourceKind": "official_website_discovery",
       "reviewState": "verified"
+    },
+    {
+      "restaurantId": "osm-node-13141377001-india-paradise",
+      "name": "India Paradise",
+      "website": "https://www.indiaparadise.ca/halifax/downtown/home",
+      "resolvedUrl": "https://www.indiaparadise.ca/halifax/downtown/home",
+      "observedAt": "2026-10-06T01:20:49.169Z",
+      "lastVerifiedAt": "2026-10-06T01:20:49.169Z",
+      "scannedOwnedPages": [
+        "https://www.indiaparadise.ca/halifax/downtown/home"
+      ],
+      "socialProfiles": [
+        {
+          "platform": "instagram",
+          "platformKind": "social",
+          "handle": "indiaparadisehalifaxdowntown",
+          "url": "https://www.instagram.com/indiaparadisehalifaxdowntown",
+          "profileUrl": "https://www.instagram.com/indiaparadisehalifaxdowntown",
+          "label": "@indiaparadisehalifaxdowntown",
+          "locationSpecific": false,
+          "sharedBrandProfile": false,
+          "discoveredFrom": "https://www.indiaparadise.ca/halifax/downtown/home",
+          "associationBasis": "linked_from_official_website",
+          "observedAt": "2026-10-06T01:20:49.169Z",
+          "lastVerifiedAt": "2026-10-06T01:20:49.169Z",
+          "reviewState": "verified_link",
+          "confidence": "authoritative",
+          "status": "active"
+        },
+        {
+          "platform": "facebook",
+          "platformKind": "social",
+          "handle": "IndiaParadiseHalifaxDowntown",
+          "url": "https://www.facebook.com/IndiaParadiseHalifaxDowntown",
+          "profileUrl": "https://www.facebook.com/IndiaParadiseHalifaxDowntown",
+          "label": "@IndiaParadiseHalifaxDowntown",
+          "locationSpecific": false,
+          "sharedBrandProfile": false,
+          "discoveredFrom": "https://www.indiaparadise.ca/halifax/downtown/home",
+          "associationBasis": "linked_from_official_website",
+          "observedAt": "2026-10-06T01:20:49.169Z",
+          "lastVerifiedAt": "2026-10-06T01:20:49.169Z",
+          "reviewState": "verified_link",
+          "confidence": "authoritative",
+          "status": "active"
+        }
+      ],
+      "linkHubs": [],
+      "relatedLinks": [
+        {
+          "kind": "menu",
+          "url": "https://www.indiaparadise.ca/halifax/downtown/food",
+          "label": "Menu",
+          "discoveredFrom": "https://www.indiaparadise.ca/halifax/downtown/home",
+          "associationBasis": "linked_from_official_website",
+          "observedAt": "2026-10-06T01:20:49.169Z",
+          "lastVerifiedAt": "2026-10-06T01:20:49.169Z",
+          "reviewState": "verified_link",
+          "confidence": "authoritative",
+          "status": "active"
+        },
+        {
+          "kind": "events",
+          "url": "http://indiaparadise.ca/halifax/downtown/home",
+          "label": "News & Events",
+          "discoveredFrom": "https://www.indiaparadise.ca/halifax/downtown/home",
+          "associationBasis": "linked_from_official_website",
+          "observedAt": "2026-10-06T01:20:49.169Z",
+          "lastVerifiedAt": "2026-10-06T01:20:49.169Z",
+          "reviewState": "verified_link",
+          "confidence": "authoritative",
+          "status": "active"
+        }
+      ],
+      "feeds": [],
+      "sitemaps": [
+        "https://www.indiaparadise.ca/sitemap.xml"
+      ],
+      "sourceKind": "official_website_discovery",
+      "reviewState": "verified"
     }
-  ],
-  "facebookCount": 149,
-  "instagramCount": 152,
-  "carryForward": {
-    "previousGeneratedAt": "2026-09-04T12:51:47.588Z",
-    "maxAgeDays": 180,
-    "recordsCarriedAfterRefreshFailure": 5,
-    "socialProfilesCarried": 19,
-    "linkHubsCarried": 0,
-    "relatedLinksCarried": 73,
-    "feedsCarried": 6,
-    "previousProfilesRejectedByCurrentRegistry": 0,
-    "appliedAt": "2026-09-04T13:34:13.421Z"
-  },
-  "sanitization": {
-    "appliedAt": "2026-09-04T13:34:21.570Z",
-    "registryVersion": 1,
-    "removedGenericOrInvalidProfiles": 0,
-    "reviewedProfilesExcluded": 16,
-    "duplicateProfilesRemoved": 8,
-    "normalizedFacebookLegacyProfiles": 14,
-    "sharedBrandProfilesFlagged": 2,
-    "removedGenericOrInvalidLinkHubs": 0,
-    "duplicateLinkHubsRemoved": 0,
-    "removedInvalidRelatedLinks": 0,
-    "duplicateRelatedLinksRemoved": 41,
-    "removedInvalidOrOembedFeeds": 0,
-    "duplicateFeedsRemoved": 4
-  }
+  ]
 }

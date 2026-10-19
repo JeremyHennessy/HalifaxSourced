@@ -10,6 +10,7 @@ on:
       - main
 
 permissions:
+  actions: read
   contents: read
   pages: write
   id-token: write
@@ -46,36 +47,19 @@ jobs:
         with:
           node-version: 22
 
-      - name: Build verified structured specials for deployment
+      - name: Download exact browser-tested release
+        uses: actions/download-artifact@v4
+        with:
+          github-token: ${{ github.token }}
+          run-id: ${{ github.event.workflow_run.id }}
+          name: tested-site
+          path: .release-site
+
+      - name: Verify tested file hashes and deployment metadata
         env:
           SOURCE_COMMIT_SHA: ${{ github.event.workflow_run.head_sha }}
           QUALITY_WORKFLOW_RUN_ID: ${{ github.event.workflow_run.id }}
-          PUBLIC_SPECIAL_CAMPAIGN_LIMIT: 80
-          PUBLIC_SPECIAL_CAMPAIGN_CRAWL_DELAY_MS: 250
-          PUBLIC_SPECIAL_LEAD_TIMEOUT_MS: 10000
-        run: |
-          node scripts/import-public-special-source-leads.mjs
-          node scripts/build-structured-specials.mjs
-          node scripts/check-public-special-source-leads.mjs
-          node scripts/check-structured-specials.mjs
-          node scripts/check-restaurant-lifecycle.mjs
-          node scripts/check-restaurant-media-rights.mjs
-          node scripts/import-review-directory-restaurants.mjs
-          node scripts/resolve-place-candidates.mjs
-          node scripts/check-place-source-resolution.mjs
-          node scripts/check-restaurant-discovery.mjs
-          node scripts/export-catalog.mjs
-          node scripts/check-local-restaurant-policy.mjs
-          node scripts/build-thumbnail-candidates.mjs
-          node scripts/check-thumbnail-candidates.mjs
-          node scripts/build-thumbnail-coverage-report.mjs
-          node scripts/plan-thumbnail-coverage-attack.mjs
-          node scripts/build-content-coverage-report.mjs
-          node scripts/reconcile-structured-coverage.mjs
-          node scripts/check-report-deployment-parity.mjs
-          node scripts/render-content-coverage-report.mjs
-          node scripts/build-content-quality-report.mjs
-          node scripts/build-deployment-metadata.mjs
+        run: node scripts/release-artifact.mjs verify
 
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
@@ -83,7 +67,7 @@ jobs:
       - name: Upload verified site artifact
         uses: actions/upload-pages-artifact@v4
         with:
-          path: .
+          path: .release-site
 
       - name: Deploy verified site
         id: deployment

@@ -1,5 +1,9 @@
+import { fetchGuardedSource as fetch } from "./lib/fetch-public-source.mjs";
+import { fetchPublicSource } from "./lib/fetch-public-source.mjs";
+import integrity from "../source-integrity.js";
 // First-party discovery runs as a bounded, review-only refresh before production publication.
 import { mkdir, readFile, writeFile } from "node:fs/promises";
+import { createHash } from "node:crypto";
 
 const catalog = JSON.parse(await readFile(new URL("../data/build/catalog.json", import.meta.url), "utf8"));
 const socialRegistry = JSON.parse(await readFile(new URL("../data/social-platform-registry.json", import.meta.url), "utf8"));
@@ -110,13 +114,14 @@ function parseRobots(text) {
 }
 
 async function robotsFor(url) {
+  if (!integrity.safeSource(url)) return null;
   const parsed = new URL(url);
   if (!robotsCache.has(parsed.origin)) {
     robotsCache.set(parsed.origin, (async () => {
       try {
         const response = await fetch(new URL("/robots.txt", parsed.origin), {
           headers: { "User-Agent": userAgent },
-          redirect: "follow",
+          redirect: "manual",
           signal: AbortSignal.timeout(Math.min(timeoutMs, 8000))
         });
         if (response.status === 401 || response.status === 403) return { disallow: ["/"], sitemaps: [] };
@@ -131,6 +136,7 @@ async function robotsFor(url) {
 }
 
 async function robotsAllows(url) {
+  if (!integrity.safeSource(url)) return null;
   const parsed = new URL(url);
   const robots = await robotsFor(url);
   return !robots.disallow.some((prefix) => prefix === "/" || (prefix && parsed.pathname.startsWith(prefix)));
@@ -362,13 +368,14 @@ function discoverOwnedPageCandidates(html, baseUrl) {
 }
 
 async function fetchHtml(url) {
+  if (!integrity.safeSource(url)) return { error: "quarantined_source", url };
   if (!(await robotsAllows(url))) return { error: "robots_disallow", url };
   try {
-    const response = await fetch(url, {
+    const response = await fetchPublicSource(url, {
       headers: { "User-Agent": userAgent, Accept: "text/html,application/xhtml+xml" },
-      redirect: "follow",
+      redirect: "manual",
       signal: AbortSignal.timeout(timeoutMs)
-    });
+    }, robotsAllows);
     const contentType = response.headers.get("content-type") || "";
     if (!response.ok) return { error: `http_${response.status}`, url };
     if (!/html|xhtml/i.test(contentType)) return { error: "not_html", url };
@@ -428,7 +435,7 @@ async function scanRestaurant(item) {
     if (hubResult.failure) failures.push({ restaurantId: restaurant.id, name: restaurant.name, website, reason: `link_hub_${hubResult.failure.reason}`, sourceUrl: hubResult.failure.url });
   }
   socialProfiles = dedupePlatformRecords(socialProfiles.filter((profile) => SOCIAL_PLATFORM_IDS.has(profile.platform)));
-  relatedLinks = relatedLinks.filter((link, idx, all) => {
+  relatedLinks = relatedLinks.filter(link => integrity.locationSafe({ ...link, restaurantId: restaurant.id })).filter((link, idx, all) => {
     const key = ["reservations", "ordering"].includes(link.kind) ? `${link.kind}|${hostKey(link.url)}` : `${link.kind}|${link.url}`;
     return all.findIndex((item) => {
       const itemKey = ["reservations", "ordering"].includes(item.kind) ? `${item.kind}|${hostKey(item.url)}` : `${item.kind}|${item.url}`;
@@ -445,6 +452,8 @@ async function scanRestaurant(item) {
     observedAt,
     lastVerifiedAt: observedAt,
     scannedOwnedPages: pages.map((page) => page.url),
+    contentHash: createHash('sha256').update(pages.map(page => `${page.url}|${page.html}`).join('\n')).digest('hex'),
+    rightsState: 'public_reference_not_media_licence',
     socialProfiles,
     linkHubs,
     relatedLinks,
@@ -481,7 +490,11 @@ async function worker() {
 }
 await Promise.all(Array.from({ length: Math.min(concurrency, hostGroups.length || 1) }, () => worker()));
 
-const finalRecords = records.filter(Boolean);
+const observedRecords = records.filter(Boolean);
+const previous = JSON.parse(await readFile(new URL('../data/build/first-party-sources.json', import.meta.url), 'utf8').catch(() => '{"records":[]}'));
+const refreshedIds = new Set(observedRecords.map(record => record.restaurantId));
+const retainedRecords = (previous.records || []).filter(record => !refreshedIds.has(record.restaurantId) && integrity.safeSource(record.resolvedUrl || record.website));
+const finalRecords = [...retainedRecords, ...observedRecords];
 const platformCounts = {};
 const linkHubCounts = {};
 for (const record of finalRecords) {
@@ -498,7 +511,9 @@ const output = {
   version: 3,
   generatedAt: new Date().toISOString(),
   platformRegistryVersion: socialRegistry.version,
-  checkedWebsites: finalRecords.length,
+  checkedWebsites: targets.length,
+  refreshedRecords: observedRecords.length,
+  retainedRecords: retainedRecords.length,
   failedWebsites: failures.length,
   hostGroups: hostGroups.length,
   concurrency,

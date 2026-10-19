@@ -1,0 +1,207 @@
+{
+  "version": 1,
+  "reviewedAt": "2026-10-19",
+  "sourceCommitSha": "7b0eb562bbdf03864c6d672cf8af9f4b80c23014",
+  "qualityWorkflowRunId": "39284370034",
+  "decision": "Suppress only twice-confirmed HTTP 404 action/social URLs. Preserve venue identities and official homepages; replacement URLs require new source evidence.",
+  "records": [
+    {
+      "url": "https://www.magnoliahfx.com/s/trianglemenu_sept25.pdf",
+      "kinds": [
+        "action:menu"
+      ],
+      "entityIds": [
+        "magnolia-halifax"
+      ],
+      "observedAt": "2026-10-19T16:19:49.501Z",
+      "status": 404,
+      "state": "broken",
+      "finalUrl": "https://www.magnoliahfx.com/s/trianglemenu_sept25.pdf",
+      "attempt": 2,
+      "lifecycle": [],
+      "confirmedBroken": true
+    },
+    {
+      "url": "https://www.magnoliahfx.com/s/menu_sept2025.pdf",
+      "kinds": [
+        "action:menu"
+      ],
+      "entityIds": [
+        "magnolia-halifax"
+      ],
+      "observedAt": "2026-10-19T16:19:49.825Z",
+      "status": 404,
+      "state": "broken",
+      "finalUrl": "https://www.magnoliahfx.com/s/menu_sept2025.pdf",
+      "attempt": 2,
+      "lifecycle": [],
+      "confirmedBroken": true
+    },
+    {
+      "url": "https://www.swaadsagaa.com/tel&#x3A;9023996229",
+      "kinds": [
+        "action:ordering",
+        "ordering"
+      ],
+      "entityIds": [
+        "osm-node-11612206582-swaad-sagaa-indian-cuisine-incorporated"
+      ],
+      "observedAt": "2026-10-19T16:19:53.888Z",
+      "status": 404,
+      "state": "broken",
+      "finalUrl": "https://www.swaadsagaa.com/tel&",
+      "attempt": 2,
+      "lifecycle": [],
+      "confirmedBroken": true
+    },
+    {
+      "url": "https://www.loupecou.com/menu",
+      "kinds": [
+        "action:menu",
+        "menu"
+      ],
+      "entityIds": [
+        "osm-node-12136077507-lou-pecou"
+      ],
+      "observedAt": "2026-10-19T16:19:54.848Z",
+      "status": 404,
+      "state": "broken",
+      "finalUrl": "https://www.loupecou.com/menu",
+      "attempt": 2,
+      "lifecycle": [],
+      "confirmedBroken": true
+    },
+    {
+      "url": "https://x.com/phohoangminh.ca",
+      "kinds": [
+        "social:x"
+      ],
+      "entityIds": [
+        "osm-node-1666719782-pho-hoang-minh"
+      ],
+      "observedAt": "2026-10-19T16:19:57.441Z",
+      "status": 404,
+      "state": "broken",
+      "finalUrl": "https://x.com/phohoangminh.ca",
+      "attempt": 2,
+      "lifecycle": [],
+      "confirmedBroken": true
+    },
+    {
+      "url": "https://youtube.com/@phohoangminh.ca",
+      "kinds": [
+        "social:youtube"
+      ],
+      "entityIds": [
+        "osm-node-1666719782-pho-hoang-minh"
+      ],
+      "observedAt": "2026-10-19T16:19:57.450Z",
+      "status": 404,
+      "state": "broken",
+      "finalUrl": "https://www.youtube.com/@phohoangminh.ca",
+      "attempt": 2,
+      "lifecycle": [],
+      "confirmedBroken": true
+    },
+    {
+      "url": "https://www.restaurantlogin.com/api/fb/6qxm_n",
+      "kinds": [
+        "action:ordering",
+        "ordering"
+      ],
+      "entityIds": [
+        "osm-node-4797459277-downtown-pizza"
+      ],
+      "observedAt": "2026-10-19T16:20:02.882Z",
+      "status": 404,
+      "state": "broken",
+      "finalUrl": "https://www.restaurantlogin.com/api/fb/6qxm_n",
+      "attempt": 2,
+      "lifecycle": [],
+      "confirmedBroken": true
+    },
+    {
+      "url": "https://www.studioeastfood.ca/menu/dinner",
+      "kinds": [
+        "action:menu",
+        "menu"
+      ],
+      "entityIds": [
+        "osm-node-5140336622-studio-east-food-drink"
+      ],
+      "observedAt": "2026-10-19T16:20:04.297Z",
+      "status": 404,
+      "state": "broken",
+      "finalUrl": "https://www.studioeastfood.ca/menu/dinner",
+      "attempt": 2,
+      "lifecycle": [],
+      "confirmedBroken": true
+    },
+    {
+      "url": "https://youtube.com/afriteresto",
+      "kinds": [
+        "social:youtube"
+      ],
+      "entityIds": [
+        "osm-node-5987565464-afrite"
+      ],
+      "observedAt": "2026-10-19T16:20:05.982Z",
+      "status": 404,
+      "state": "broken",
+      "finalUrl": "https://www.youtube.com/afriteresto",
+      "attempt": 2,
+      "lifecycle": [],
+      "confirmedBroken": true
+    },
+    {
+      "url": "https://brawta-by-grafton.square.site/",
+      "kinds": [
+        "action:ordering",
+        "ordering"
+      ],
+      "entityIds": [
+        "osm-node-7465111619-brawta-jamaican-jerk-joint"
+      ],
+      "observedAt": "2026-10-19T16:20:11.388Z",
+      "status": 404,
+      "state": "broken",
+      "finalUrl": "https://brawta-by-grafton.square.site/",
+      "attempt": 2,
+      "lifecycle": [],
+      "confirmedBroken": true
+    },
+    {
+      "url": "https://brawtajerk.ca/menu",
+      "kinds": [
+        "action:menu",
+        "menu"
+      ],
+      "entityIds": [
+        "osm-node-7465111619-brawta-jamaican-jerk-joint"
+      ],
+      "observedAt": "2026-10-19T16:20:11.395Z",
+      "status": 404,
+      "state": "broken",
+      "finalUrl": "https://www.brawtajerk.ca/menu",
+      "attempt": 2,
+      "lifecycle": [],
+      "confirmedBroken": true
+    },
+    {
+      "url": "https://www.stardustbar.ca/reservations",
+      "kinds": [
+        "action:reservations"
+      ],
+      "entityIds": [
+        "stardust-bar-kitchen-halifax"
+      ],
+      "observedAt": "2026-10-19T16:20:24.191Z",
+      "status": 404,
+      "state": "broken",
+      "finalUrl": "https://www.stardustbar.ca/reservations",
+      "attempt": 2,
+      "lifecycle": [],
+      "confirmedBroken": true
+    }
+  ]
+}

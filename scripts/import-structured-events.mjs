@@ -1,3 +1,5 @@
+import { fetchGuardedSource as fetch } from "./lib/fetch-public-source.mjs";
+import integrity from "../source-integrity.js";
 import { createHash } from "node:crypto";
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import vm from "node:vm";
@@ -137,6 +139,7 @@ function parseRobotsGroup(text, wantedAgent) {
 }
 
 async function robotsAllows(url) {
+  if (!integrity.safeSource(url)) return false;
   const parsed = new URL(url);
   const origin = parsed.origin;
   if (!robotsCache.has(origin)) {
@@ -147,7 +150,7 @@ async function robotsAllows(url) {
         if (!response.ok) return [];
         return parseRobotsGroup(await response.text(), "HalifaxSourced");
       } catch {
-        return [];
+        return ["/"];
       }
     })();
     robotsCache.set(origin, promise);
@@ -268,7 +271,8 @@ for (const page of pages) {
   await sleep(delayMs);
   const observedAt = new Date().toISOString();
   try {
-    const response = await fetch(page.pageUrl, { headers: { "User-Agent": userAgent, Accept: "text/html,application/xhtml+xml" }, redirect: "follow" });
+    if (!integrity.safeSource(page.pageUrl)) throw new Error("quarantined_source");
+    const response = await fetch(page.pageUrl, { headers: { "User-Agent": userAgent, Accept: "text/html,application/xhtml+xml" }, redirect: "manual" });
     if (!response.ok) {
       failures.push({ ...page, reason: `http_${response.status}` });
       continue;

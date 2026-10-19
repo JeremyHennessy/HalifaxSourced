@@ -18,7 +18,9 @@ const metadata = {
   generatedAt: new Date().toISOString(),
   sourceCommitSha,
   qualityWorkflowRunId: process.env.QUALITY_WORKFLOW_RUN_ID || null,
-  deploymentWorkflowRunId: process.env.GITHUB_RUN_ID || null,
+  // The immutable bundle is built in Quality Gate, before a deployment run exists.
+  deploymentWorkflowRunId: null,
+  buildWorkflowRunId: process.env.GITHUB_RUN_ID || null,
   coverageGeneratedAt: coverage.generatedAt || null,
   lifecycleGeneratedAt: lifecycle.generatedAt || null,
   catalogGeneratedAt: catalog.generatedAt || null,

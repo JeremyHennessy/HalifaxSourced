@@ -3,7 +3,7 @@ import { readFile } from "node:fs/promises";
 import { extname, join, normalize } from "node:path";
 import { fileURLToPath } from "node:url";
 
-const root = normalize(join(fileURLToPath(new URL("..", import.meta.url))));
+const root = normalize(process.env.APP_ROOT || join(fileURLToPath(new URL("..", import.meta.url))));
 const port = Number(process.env.PORT ?? 5173);
 
 const contentTypes = {

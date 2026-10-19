@@ -11140,7 +11140,7 @@ window.HALIFAX_OSM_RESTAURANTS = [
     "summary": "Cafe captured from OpenStreetMap at 5896 Spring Garden Road, Halifax, Nova Scotia. Needs cross-reference for menus, specials, events, patios, and opening signals.",
     "address": "5896 Spring Garden Road, Halifax, Nova Scotia",
     "phone": "+1-902-423-0856",
-    "website": "https://www.glitterbeancafe.com/",
+    "website": "https://www.glitterbeancafe.com/contact",
     "openingHours": "Mo-Fr 07:30-18:00; Sa 10:00-17:00; Su 11:00-17:00",
     "coordinates": {
       "lat": 44.6407905,
@@ -11182,7 +11182,7 @@ window.HALIFAX_OSM_RESTAURANTS = [
         "phone": "+1-902-423-0856",
         "smoking": "no",
         "toilets:wheelchair": "no",
-        "website": "https://www.glitterbeancafe.com/",
+        "website": "https://www.glitterbeancafe.com/contact",
         "wheelchair": "no",
         "wheelchair:description": "There are 5 stairs after the entrance that lead to the main level. Bathroom is on the second level, which can only be accessed by a staircase. #DalOT #studentproject"
       }
@@ -13514,7 +13514,7 @@ window.HALIFAX_OSM_RESTAURANTS = [
     "summary": "Restaurant captured from OpenStreetMap at 1537 Barrington Street. Needs cross-reference for menus, specials, events, patios, and opening signals.",
     "address": "1537 Barrington Street",
     "phone": "+1-902-446-6677",
-    "website": "https://www.indiaparadise.ca/",
+    "website": "https://www.indiaparadise.ca/halifax/downtown/home",
     "openingHours": "Su-Th 11:00-23:00; Fr-Sa 11:00-00:00",
     "coordinates": {
       "lat": 44.6450843,
@@ -13543,7 +13543,7 @@ window.HALIFAX_OSM_RESTAURANTS = [
         "name": "India Paradise",
         "opening_hours": "Su-Th 11:00-23:00; Fr-Sa 11:00-00:00",
         "phone": "+1-902-446-6677",
-        "website": "https://www.indiaparadise.ca/",
+        "website": "https://www.indiaparadise.ca/halifax/downtown/home",
         "website:menu": "https://order.online/store/india-paradise-halifax-30667832/"
       }
     }
