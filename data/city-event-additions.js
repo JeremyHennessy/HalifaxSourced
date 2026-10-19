@@ -2,7 +2,7 @@
 
 window.HALIFAX_CITY_EVENT_ADDITIONS = JSON.parse(`{
   "version": 1,
-  "generatedAt": "2026-09-11T15:00:00.000Z",
+  "generatedAt": "2026-10-19T21:28:09.893Z",
   "policy": "Curated city-event additions are source-backed records used when current official or local calendars have not yet been promoted into the primary city-events build.",
   "sources": [
     {
@@ -28,6 +28,24 @@ window.HALIFAX_CITY_EVENT_ADDITIONS = JSON.parse(`{
       "sourceName": "Eventbrite",
       "sourceUrl": "https://www.eventbrite.com/e/taste-asia-2026-4-days-food-culture-music-celebrationsep-10-13-tickets-1999327820331",
       "authority": "ticketing_directory"
+    },
+    {
+      "sourceId": "maritime-museum-atlantic-2026",
+      "sourceName": "Maritime Museum of the Atlantic",
+      "sourceUrl": "https://maritimemuseum.novascotia.ca/whats-on",
+      "authority": "official_primary"
+    },
+    {
+      "sourceId": "rejigged-festival-2026",
+      "sourceName": "ReJigged Festival",
+      "sourceUrl": "https://www.rejiggedfestival.com/",
+      "authority": "official_primary"
+    },
+    {
+      "sourceId": "discover-halifax-events-2026",
+      "sourceName": "Discover Halifax",
+      "sourceUrl": "https://discoverhalifaxns.com/events/",
+      "authority": "local_tourism_directory"
     }
   ],
   "events": [
@@ -120,6 +138,216 @@ window.HALIFAX_CITY_EVENT_ADDITIONS = JSON.parse(`{
           "observedFacts": [
             "Dates: September 10-13, 2026",
             "Location: Salter Lot, 1521 Lower Water Street, Halifax"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "maritime-museum-peggys-cove-talk-2026-10-20",
+      "title": "Beyond Peggy's Cove: Discovering Nova Scotia's Remarkable Places",
+      "startAt": "2026-10-20T21:30:00.000Z",
+      "endAt": "2026-10-20T22:30:00.000Z",
+      "allDay": false,
+      "venueName": "Maritime Museum of the Atlantic",
+      "address": "1675 Lower Water Street, Halifax, NS B3J 1S3",
+      "city": "Halifax",
+      "categories": [
+        "Education",
+        "Arts",
+        "Community"
+      ],
+      "price": "Free Tuesday-night admission",
+      "ticketUrl": null,
+      "eventUrl": "https://maritimemuseum.novascotia.ca/whats-on/beyond-peggys-cove-discovering-nova-scotias-remarkable-places",
+      "sourceUrl": "https://maritimemuseum.novascotia.ca/whats-on/beyond-peggys-cove-discovering-nova-scotias-remarkable-places",
+      "sourceId": "maritime-museum-atlantic-2026",
+      "sourceName": "Maritime Museum of the Atlantic",
+      "sourceKind": "official_event_page",
+      "observedAt": "2026-10-19T21:28:09.893Z",
+      "reviewState": "source_observed",
+      "neighbourhood": "Waterfront",
+      "alternateSources": [
+        {
+          "sourceId": "discover-halifax-events-2026",
+          "sourceName": "Discover Halifax",
+          "sourceUrl": "https://discoverhalifaxns.com/event/tuesday-night-talks-beyond-peggys-cove-discovering-nova-scotias-remarkable-places/"
+        }
+      ],
+      "sourceEvidence": [
+        {
+          "sourceId": "maritime-museum-atlantic-2026",
+          "sourceName": "Maritime Museum of the Atlantic",
+          "sourceUrl": "https://maritimemuseum.novascotia.ca/whats-on/beyond-peggys-cove-discovering-nova-scotias-remarkable-places",
+          "basis": "official_primary",
+          "observedFacts": [
+            "October 20, 2026, 6:30–7:30pm Halifax local time",
+            "Stacy Ann Milford Tuesday Night Talk at Maritime Museum of the Atlantic",
+            "Free admission 4–8pm on Tuesday"
+          ]
+        },
+        {
+          "sourceId": "discover-halifax-events-2026",
+          "sourceName": "Discover Halifax",
+          "sourceUrl": "https://discoverhalifaxns.com/event/tuesday-night-talks-beyond-peggys-cove-discovering-nova-scotias-remarkable-places/",
+          "basis": "tourism_directory_corroboration",
+          "observedFacts": [
+            "Local venue and event occurrence confirmed in tourism directory"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rejigged-2026-10-22-macgillivrays",
+      "title": "ReJigged Festival: The MacGillivrays with Patricia Murray",
+      "startAt": "2026-10-22T22:30:00.000Z",
+      "endAt": null,
+      "allDay": false,
+      "venueName": "Sanctuary Arts Centre",
+      "address": "100 Ochterloney Street, Dartmouth, NS",
+      "city": "Dartmouth",
+      "categories": [
+        "Music",
+        "Festivals",
+        "Arts"
+      ],
+      "price": "CA$42 general admission",
+      "ticketUrl": null,
+      "eventUrl": "https://www.rejiggedfestival.com/thursday-oct-22-2026",
+      "sourceUrl": "https://www.rejiggedfestival.com/thursday-oct-22-2026",
+      "sourceId": "rejigged-festival-2026",
+      "sourceName": "ReJigged Festival",
+      "sourceKind": "official_event_page",
+      "observedAt": "2026-10-19T21:28:09.893Z",
+      "reviewState": "source_observed",
+      "neighbourhood": "Downtown Dartmouth",
+      "alternateSources": [],
+      "sourceEvidence": [
+        {
+          "sourceId": "rejigged-festival-2026",
+          "sourceName": "ReJigged Festival",
+          "sourceUrl": "https://www.rejiggedfestival.com/thursday-oct-22-2026",
+          "basis": "official_primary",
+          "observedFacts": [
+            "October 22, 2026, doors 6:45pm, concert 7:30pm Halifax local time",
+            "The MacGillivrays and Patricia Murray",
+            "Sanctuary Arts Centre, Dartmouth; general admission CA$42"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rejigged-2026-10-23-cassie-maggie-traverse",
+      "title": "ReJigged Festival: Cassie and Maggie, Traverse with Nic Gareiss",
+      "startAt": "2026-10-23T22:30:00.000Z",
+      "endAt": null,
+      "allDay": false,
+      "venueName": "Sanctuary Arts Centre",
+      "address": "100 Ochterloney Street, Dartmouth, NS",
+      "city": "Dartmouth",
+      "categories": [
+        "Music",
+        "Festivals",
+        "Arts"
+      ],
+      "price": "CA$42 general admission",
+      "ticketUrl": null,
+      "eventUrl": "https://www.rejiggedfestival.com/friday-oct-23-2026",
+      "sourceUrl": "https://www.rejiggedfestival.com/friday-oct-23-2026",
+      "sourceId": "rejigged-festival-2026",
+      "sourceName": "ReJigged Festival",
+      "sourceKind": "official_event_page",
+      "observedAt": "2026-10-19T21:28:09.893Z",
+      "reviewState": "source_observed",
+      "neighbourhood": "Downtown Dartmouth",
+      "alternateSources": [],
+      "sourceEvidence": [
+        {
+          "sourceId": "rejigged-festival-2026",
+          "sourceName": "ReJigged Festival",
+          "sourceUrl": "https://www.rejiggedfestival.com/friday-oct-23-2026",
+          "basis": "official_primary",
+          "observedFacts": [
+            "October 23, 2026, doors 6:45pm, concert 7:30pm Halifax local time",
+            "Cassie and Maggie, Traverse and Nic Gareiss",
+            "Sanctuary Arts Centre, Dartmouth; general admission CA$42"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rejigged-2026-10-24-ete-inn-echo",
+      "title": "ReJigged Festival: É.T.É., Yaëlle Azoulay, Nic Gareiss and Inn Echo",
+      "startAt": "2026-10-24T22:30:00.000Z",
+      "endAt": null,
+      "allDay": false,
+      "venueName": "Sanctuary Arts Centre",
+      "address": "100 Ochterloney Street, Dartmouth, NS",
+      "city": "Dartmouth",
+      "categories": [
+        "Music",
+        "Festivals",
+        "Arts"
+      ],
+      "price": "CA$42 general admission",
+      "ticketUrl": null,
+      "eventUrl": "https://www.rejiggedfestival.com/saturday-oct-24-2026",
+      "sourceUrl": "https://www.rejiggedfestival.com/saturday-oct-24-2026",
+      "sourceId": "rejigged-festival-2026",
+      "sourceName": "ReJigged Festival",
+      "sourceKind": "official_event_page",
+      "observedAt": "2026-10-19T21:28:09.893Z",
+      "reviewState": "source_observed",
+      "neighbourhood": "Downtown Dartmouth",
+      "alternateSources": [],
+      "sourceEvidence": [
+        {
+          "sourceId": "rejigged-festival-2026",
+          "sourceName": "ReJigged Festival",
+          "sourceUrl": "https://www.rejiggedfestival.com/saturday-oct-24-2026",
+          "basis": "official_primary",
+          "observedFacts": [
+            "October 24, 2026, doors 6:45pm, concert 7:30pm Halifax local time",
+            "É.T.É., Yaëlle Azoulay, Nic Gareiss and Inn Echo",
+            "Sanctuary Arts Centre, Dartmouth; general admission CA$42"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "maritime-museum-sea-turtle-talk-2026-10-27",
+      "title": "Nova Scotia Vessels as Research Platforms: The Sea Turtle Story",
+      "startAt": "2026-10-27T21:30:00.000Z",
+      "endAt": "2026-10-27T22:30:00.000Z",
+      "allDay": false,
+      "venueName": "Maritime Museum of the Atlantic",
+      "address": "1675 Lower Water Street, Halifax, NS B3J 1S3",
+      "city": "Halifax",
+      "categories": [
+        "Education",
+        "Arts",
+        "Community"
+      ],
+      "price": "Free Tuesday-night admission",
+      "ticketUrl": null,
+      "eventUrl": "https://maritimemuseum.novascotia.ca/whats-on/nova-scotia-vessels-research-platforms-sea-turtle-story",
+      "sourceUrl": "https://maritimemuseum.novascotia.ca/whats-on/nova-scotia-vessels-research-platforms-sea-turtle-story",
+      "sourceId": "maritime-museum-atlantic-2026",
+      "sourceName": "Maritime Museum of the Atlantic",
+      "sourceKind": "official_event_page",
+      "observedAt": "2026-10-19T21:28:09.893Z",
+      "reviewState": "source_observed",
+      "neighbourhood": "Waterfront",
+      "alternateSources": [],
+      "sourceEvidence": [
+        {
+          "sourceId": "maritime-museum-atlantic-2026",
+          "sourceName": "Maritime Museum of the Atlantic",
+          "sourceUrl": "https://maritimemuseum.novascotia.ca/whats-on/nova-scotia-vessels-research-platforms-sea-turtle-story",
+          "basis": "official_primary",
+          "observedFacts": [
+            "October 27, 2026, 6:30–7:30pm Halifax local time",
+            "Kathleen Martin, Canadian Sea Turtle Network, Tuesday Night Talk",
+            "Free admission 4–8pm on Tuesday"
           ]
         }
       ]
