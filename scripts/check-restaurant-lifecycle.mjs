@@ -1,6 +1,7 @@
 import { mkdir, readFile, writeFile } from 'node:fs/promises';
 import { classifyLifecycleLanguage } from './lib/lifecycle-language.mjs';
 import { applyReviewedCorrections } from './lib/reviewed-corrections.mjs';
+import integrity from '../source-integrity.js';
 
 const json = async path => JSON.parse(await readFile(new URL('../' + path, import.meta.url), 'utf8'));
 const catalog = await json('data/build/catalog.json');
@@ -24,19 +25,24 @@ for (const [file, field] of [['official-site-signals', 'results'], ['first-party
     const signals = classifyLifecycleLanguage(text);
     if (!Object.values(signals).some(values => values.length)) continue;
     const restaurant = restaurants.find(record => record.id === item.restaurantId);
-    candidates.push({ restaurantId: item.restaurantId, name: restaurant.name, sourceLayer: file, sourceUrl: item.postUrl || item.sourceUrl || item.website || item.resolvedUrl || null, observedAt: item.observedAt || null, publishedAt: item.publishedAt || null, signals, excerpt: text.slice(0, 900), reviewState: inactive.has(restaurant.operatingStatus) ? 'reviewed_inactive' : 'candidate_requires_location_review' });
+    const publicationDateState = integrity.publicationState(item.publishedAt).dateState;
+    candidates.push({ restaurantId: item.restaurantId, name: restaurant.name, sourceLayer: file, sourceUrl: item.postUrl || item.sourceUrl || item.website || item.resolvedUrl || null, observedAt: item.observedAt || null, publishedAt: publicationDateState === 'valid' ? item.publishedAt : null, publicationDateState, signals, excerpt: text.slice(0, 900), reviewState: inactive.has(restaurant.operatingStatus) ? 'reviewed_inactive' : 'candidate_requires_location_review' });
   }
 }
+const expectedSha = process.env.SOURCE_COMMIT_SHA || process.env.GITHUB_SHA || null;
+let liveSourceAudit = { state: 'not_available', candidates: 0 };
 try {
-  const links = await json('source-link-health-report.json');
-  for (const item of links.lifecycleCandidates || []) for (const id of item.restaurantIds || []) {
+  const links = await json('data/build/source-link-health-report.json');
+  const current = Boolean(expectedSha && links.sourceCommitSha === expectedSha && links.complete);
+  liveSourceAudit = { state: current ? 'same_head_complete' : 'not_current_complete', sourceCommitSha: links.sourceCommitSha || null, observedAt: links.generatedAt || null, candidates: 0 };
+  for (const item of current ? links.lifecycleCandidates || [] : []) for (const id of item.restaurantIds || []) {
     const restaurant = restaurants.find(record => record.id === id);
-    if (restaurant) candidates.push({ ...item, restaurantId: id, name: restaurant.name, sourceLayer: 'release_official_page_fetch', reviewState: inactive.has(restaurant.operatingStatus) ? 'reviewed_inactive' : 'candidate_requires_location_review' });
+    if (restaurant) { liveSourceAudit.candidates++; candidates.push({ ...item, restaurantId: id, name: restaurant.name, sourceLayer: 'release_official_page_fetch', reviewState: inactive.has(restaurant.operatingStatus) ? 'reviewed_inactive' : 'candidate_requires_location_review' }); }
   }
 } catch (error) { if (error.code !== 'ENOENT') throw error; }
 const statusCounts = records.reduce((counts, item) => { counts[item.status] = (counts[item.status] || 0) + 1; return counts; }, {});
 const audit = { total: records.length, statusCounts, invalid: failures.length, records };
-const report = { version: 2, generatedAt: new Date().toISOString(), sourceCommitSha: process.env.SOURCE_COMMIT_SHA || process.env.GITHUB_SHA || null, policy: { inactiveStatuses: [...inactive], candidateSignals: 'Scans the full catalog and retained official-site/feed/page/post observations. Candidates never change status automatically. Missing or old observations are not represented as a fresh fetch.' }, catalogAudit: audit, curatedAudit: { ...audit, scope: 'Compatibility alias: now the complete published catalog, not ten curated records.' }, candidates, failures };
+const report = { version: 3, liveSourceAudit, generatedAt: new Date().toISOString(), sourceCommitSha: process.env.SOURCE_COMMIT_SHA || process.env.GITHUB_SHA || null, policy: { inactiveStatuses: [...inactive], candidateSignals: 'Scans the full catalog and retained official-site/feed/page/post observations. Candidates never change status automatically. Missing or old observations are not represented as a fresh fetch.' }, catalogAudit: audit, curatedAudit: { ...audit, scope: 'Compatibility alias: now the complete published catalog, not ten curated records.' }, candidates, failures };
 await mkdir(new URL('../data/build/', import.meta.url), { recursive: true });
 await writeFile(new URL('../data/build/restaurant-lifecycle-report.json', import.meta.url), JSON.stringify(report, null, 2) + '\n');
 await writeFile(new URL('../docs/restaurant-lifecycle-report.md', import.meta.url), `# Restaurant lifecycle review\n\nGenerated ${report.generatedAt}. Source SHA: ${report.sourceCommitSha || 'local, unbound'}.\n\n${records.length} catalog records checked; ${records.filter(item => inactive.has(item.status)).length} archived/inactive; ${candidates.filter(item => item.reviewState === 'candidate_requires_location_review').length} source-language candidates require review. Source observation dates remain separate from this report build date.\n`);
