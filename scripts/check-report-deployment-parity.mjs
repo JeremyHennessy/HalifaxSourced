@@ -15,6 +15,14 @@ const catalog = JSON.parse(await readFile(new URL("../data/build/catalog.json", 
 const canonicalIds = new Set(catalog.restaurants.map(item => item.id));
 const mediaCount = new Set((mediaWindow.HALIFAX_RESTAURANT_MEDIA?.records || []).filter(item => canonicalIds.has(item.restaurantId)).map(item => item.restaurantId)).size;
 const failures = [];
+try {
+  const links = JSON.parse(await readFile(new URL('../data/build/source-link-health-report.json', import.meta.url), 'utf8'));
+  if (links.sourceCommitSha === expectedSha && links.complete) {
+    const expectedCandidates = (links.lifecycleCandidates || []).reduce((count,item) => count + (item.restaurantIds || []).filter(id => canonicalIds.has(id)).length, 0);
+    const actualCandidates = (lifecycle.candidates || []).filter(item => item.sourceLayer === 'release_official_page_fetch').length;
+    if (lifecycle.liveSourceAudit?.state !== 'same_head_complete' || lifecycle.liveSourceAudit?.sourceCommitSha !== expectedSha || actualCandidates !== expectedCandidates) failures.push('lifecycle report omits same-head fresh-page observations');
+  }
+} catch(error) { if(error.code !== 'ENOENT') throw error; }
 if (coverage.restaurantCoverage?.totalCanonicalPlaces !== catalog.restaurants.length) failures.push("coverage and catalog universe differ");
 if (coverage.restaurantCoverage?.withVerifiedOfficialWebsite > coverage.restaurantCoverage?.withOfficialWebsite) failures.push("verified websites cannot exceed official websites");
 if (lifecycle.catalogAudit?.total !== catalog.restaurants.length) failures.push("lifecycle audit does not cover the full catalog");

@@ -1,5 +1,5 @@
 import { fetchGuardedSource as fetch } from './lib/fetch-public-source.mjs';
-import { classifyLifecycleLanguage } from './lib/lifecycle-language.mjs';
+import { classifyLifecycleLanguage, lifecycleText } from './lib/lifecycle-language.mjs';
 import { mkdir, readFile, writeFile } from 'node:fs/promises';
 const load = async (name, fallback) => JSON.parse(await readFile(new URL('../data/build/' + name + '.json', import.meta.url), 'utf8').catch(() => JSON.stringify(fallback)));
 const catalog = await load('catalog', {restaurants:[]}), firstParty = await load('first-party-sources', {records:[]}), facts = await load('structured-place-facts', {records:[]}), city = await load('city-events', {events:[]});
@@ -50,7 +50,7 @@ async function inspect(item) {
       if (response.ok && item.kinds.has('official_website') && /html/i.test(response.headers.get('content-type') || '')) {
         const reader = response.body?.getReader(); let bytes = 0, html = ''; const decoder = new TextDecoder();
         if (reader) { while (bytes < 512000) { const chunk = await reader.read(); if (chunk.done) break; bytes += chunk.value.length; html += decoder.decode(chunk.value, {stream:true}); } await reader.cancel(); }
-        const text = html.replace(/<(script|style)\b[^>]*>[\s\S]*?<\/\1>/gi,' ').replace(/<[^>]*>/g,' ').replace(/\s+/g,' ');
+        const text = lifecycleText(html);
         const signals = classifyLifecycleLanguage(text);
         for (const [kind, phrases] of Object.entries(signals)) for (const phrase of phrases) { const offset = text.toLowerCase().indexOf(phrase); lifecycle.push({kind, phrase, excerpt:text.slice(Math.max(0,offset-180), offset+400), reviewState:'candidate_requires_location_review'}); }
       } else try { await response.body?.cancel(); } catch {}
