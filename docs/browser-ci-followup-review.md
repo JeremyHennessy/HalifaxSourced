@@ -105,3 +105,9 @@ HTTP image variant, while the manifest had its HTTPS form. This preserved
 fatal failure justified one explicit static HTTP entry for review. Matching
 still requires the full original URL/method/type; no scheme normalization,
 runtime expansion or real source request was added.
+# Release provenance repair — October 19, 2026
+
+The workflow changes now package the data-integrity job's validated runtime files once. The dependent browser job downloads that exact bundle, verifies SHA-256 receipts and source/run metadata, serves it directly, verifies it again after tests, and uploads it as `tested-site`. Pages downloads `tested-site` from the successful main Quality Gate run and verifies it without running collectors or rebuilding data. A missing artifact, changed file, wrong source SHA, wrong run ID, symlink, or metadata/coverage mismatch fails the release.
+
+The 13 isolated receipt regression checks pass locally, alongside source integrity, public fetch, scheduled-source, robots redirect, local media and event deduplication regressions. Exact-head remote Quality Gate and post-merge deployment verification remain required; this entry is not a claim that publication has completed. Earlier review notes below record the original blocker and are retained as history.
+
