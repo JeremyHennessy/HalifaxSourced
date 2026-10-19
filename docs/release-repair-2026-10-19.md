@@ -27,3 +27,9 @@ Read current PR #91/#92 heads and required checks first. PR #91 incorporates the
 Do not promote old preview artifacts blindly. The ordinary source-expansion workflows may have accumulated preview branches during the outage; use the repaired promotion path and review identities, dates and rights before merging. Confirm the new tested-site artifact and live manifest rather than relying only on a successful deployment status.
 
 Downtown Dartmouth and Spring Garden identity conflicts without exact-location evidence remain review work, not permission to invent a match. Crown & Anchor, Saj House's replacement, Crème and HEAL require current owner/location evidence. HUX Monday hours conflict, Sushi Square's malformed hours and uncertain successor coordinates remain explicitly unset/held. No new reusable image rights were inferred from an official-site photograph.
+
+## Reconciled stacked PR #93
+
+PR #93 was based on the earlier release head. Its Sushi Shige and WAARIS identities are already covered here; its older partial lifecycle/coverage reports must not replace the full-catalog report. The September 19 owner announcement does not establish an exact final-service day, so no fabricated Shige closure date is copied. Seaport Social November 14 tea was independently rechecked on the official specials page on October 19: 2–4pm, $55 or $57 with Prosecco, tax/gratuity extra. It is separate from expired October 17 tea, with Halifax-offset start/end timestamps.
+
+HEAL Bayers Lake at 218 Chain Lake Drive is supported by https://healwellness.ca/locations/, but the same owner directory lists a national/international franchise. It is classified as excluded under the existing local-only policy, not silently added as an independent restaurant. Coordinates and hours were not inferred. No generated snapshots or weaker partial-report checks from #93 are imported.
