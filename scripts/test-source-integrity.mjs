@@ -1,5 +1,13 @@
 import assert from 'node:assert/strict';
 import integrity from '../source-integrity.js';
+import { readFile } from 'node:fs/promises';
+const broken = JSON.parse(await readFile(new URL('../data/reviewed-broken-links.json',import.meta.url)));
+for (const item of broken.records) {
+  assert.equal(item.confirmedBroken,true);
+  assert.equal(item.attempt,2);
+  assert.equal(integrity.safeSource(item.url),false,item.url);
+}
+for (const url of ['https://www.magnoliahfx.com/','https://www.loupecou.com/','https://www.studioeastfood.ca/','https://www.brawtajerk.ca/','https://www.stardustbar.ca/']) assert.equal(integrity.safeSource(url),true,'Path quarantine must preserve official homepage');
 const now=Date.parse('2026-10-06T12:00:00Z');
 assert.equal(integrity.publicationState('2026-10-06T12:00:01Z',now).isRecent,false);
 assert.equal(integrity.publicationState('2027-01-01',now).ageDays,null);

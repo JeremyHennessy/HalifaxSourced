@@ -620,6 +620,70 @@
       "resourceType": "image",
       "category": "controlled-feed-image",
       "fixture": "../../assets/restaurants/the-narrows-exterior.jpg"
+    },
+    {
+      "url": "https://b.tile.openstreetmap.org/15/10598/11825.png",
+      "method": "GET",
+      "resourceType": "image",
+      "category": "map-tile",
+      "fixture": "synthetic-map-tile.png",
+      "declarationBasis": "Reviewed exact zoom-15 tiles requested by the new Lockside/Clay West archived-detail scenarios at 390x667 in run39284370034. Existing synthetic tile fixture; no wildcard, live request, or automatic allowlist expansion."
+    },
+    {
+      "url": "https://c.tile.openstreetmap.org/15/10599/11825.png",
+      "method": "GET",
+      "resourceType": "image",
+      "category": "map-tile",
+      "fixture": "synthetic-map-tile.png",
+      "declarationBasis": "Reviewed exact zoom-15 tiles requested by the new Lockside/Clay West archived-detail scenarios at 390x667 in run39284370034. Existing synthetic tile fixture; no wildcard, live request, or automatic allowlist expansion."
+    },
+    {
+      "url": "https://c.tile.openstreetmap.org/15/10598/11826.png",
+      "method": "GET",
+      "resourceType": "image",
+      "category": "map-tile",
+      "fixture": "synthetic-map-tile.png",
+      "declarationBasis": "Reviewed exact zoom-15 tiles requested by the new Lockside/Clay West archived-detail scenarios at 390x667 in run39284370034. Existing synthetic tile fixture; no wildcard, live request, or automatic allowlist expansion."
+    },
+    {
+      "url": "https://a.tile.openstreetmap.org/15/10599/11826.png",
+      "method": "GET",
+      "resourceType": "image",
+      "category": "map-tile",
+      "fixture": "synthetic-map-tile.png",
+      "declarationBasis": "Reviewed exact zoom-15 tiles requested by the new Lockside/Clay West archived-detail scenarios at 390x667 in run39284370034. Existing synthetic tile fixture; no wildcard, live request, or automatic allowlist expansion."
+    },
+    {
+      "url": "https://a.tile.openstreetmap.org/15/10587/11832.png",
+      "method": "GET",
+      "resourceType": "image",
+      "category": "map-tile",
+      "fixture": "synthetic-map-tile.png",
+      "declarationBasis": "Reviewed exact zoom-15 tiles requested by the new Lockside/Clay West archived-detail scenarios at 390x667 in run39284370034. Existing synthetic tile fixture; no wildcard, live request, or automatic allowlist expansion."
+    },
+    {
+      "url": "https://b.tile.openstreetmap.org/15/10588/11832.png",
+      "method": "GET",
+      "resourceType": "image",
+      "category": "map-tile",
+      "fixture": "synthetic-map-tile.png",
+      "declarationBasis": "Reviewed exact zoom-15 tiles requested by the new Lockside/Clay West archived-detail scenarios at 390x667 in run39284370034. Existing synthetic tile fixture; no wildcard, live request, or automatic allowlist expansion."
+    },
+    {
+      "url": "https://b.tile.openstreetmap.org/15/10587/11833.png",
+      "method": "GET",
+      "resourceType": "image",
+      "category": "map-tile",
+      "fixture": "synthetic-map-tile.png",
+      "declarationBasis": "Reviewed exact zoom-15 tiles requested by the new Lockside/Clay West archived-detail scenarios at 390x667 in run39284370034. Existing synthetic tile fixture; no wildcard, live request, or automatic allowlist expansion."
+    },
+    {
+      "url": "https://c.tile.openstreetmap.org/15/10588/11833.png",
+      "method": "GET",
+      "resourceType": "image",
+      "category": "map-tile",
+      "fixture": "synthetic-map-tile.png",
+      "declarationBasis": "Reviewed exact zoom-15 tiles requested by the new Lockside/Clay West archived-detail scenarios at 390x667 in run39284370034. Existing synthetic tile fixture; no wildcard, live request, or automatic allowlist expansion."
     }
   ]
 }

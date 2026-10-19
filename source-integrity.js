@@ -5,7 +5,23 @@
   const blockedHosts = new Set(['justitalymentone.com', 'bowtiecreamery.com', 'glitterbeancafe.com', 'turkishdelighthalifax.ca', 'humanitea.com']);
   // Repeated 404 responses observed October 19; quarantine only these paths,
   // not the operating restaurants or their entire domains.
-  const brokenPaths = new Set(['elagreektaverna.com/dinner', 'doordash.com/en-CA/store/jungle-jim', 'terracafe.ca/menu-1-2']);
+  const brokenPaths = new Set([
+  "elagreektaverna.com/dinner",
+  "doordash.com/en-CA/store/jungle-jim",
+  "terracafe.ca/menu-1-2",
+  "magnoliahfx.com/s/trianglemenu_sept25.pdf",
+  "magnoliahfx.com/s/menu_sept2025.pdf",
+  "swaadsagaa.com/tel&",
+  "loupecou.com/menu",
+  "x.com/phohoangminh.ca",
+  "youtube.com/@phohoangminh.ca",
+  "restaurantlogin.com/api/fb/6qxm_n",
+  "studioeastfood.ca/menu/dinner",
+  "youtube.com/afriteresto",
+  "brawta-by-grafton.square.site",
+  "brawtajerk.ca/menu",
+  "stardustbar.ca/reservations"
+]);
   function sourceHost(value) {
     try { return new URL(value).hostname.toLowerCase().replace(/\.+$/, '').replace(/^www\./, ''); } catch { return ''; }
   }
