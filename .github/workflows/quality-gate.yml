@@ -73,6 +73,9 @@ jobs:
       - name: Build patio directory facts
         run: node scripts/import-patio-directory-facts.mjs
 
+      - name: Test source name decoding
+        run: node scripts/test-dartmouth-directory-names.mjs
+
       - name: Refresh review-directory discovery candidates
         run: |
           node scripts/import-review-directory-restaurants.mjs

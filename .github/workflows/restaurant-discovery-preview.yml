@@ -13,6 +13,7 @@ on:
       - scripts/import-review-directory-restaurants.mjs
       - scripts/review-directory-sources.mjs
       - scripts/refine-dartmouth-directory.mjs
+      - scripts/test-dartmouth-directory-names.mjs
       - scripts/import-opening-watch.mjs
       - scripts/resolve-place-candidates.mjs
       - scripts/build-discovered-restaurants.mjs
@@ -36,6 +37,9 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 22
+
+      - name: Test source name decoding
+        run: node scripts/test-dartmouth-directory-names.mjs
 
       - name: Refresh directory restaurant candidates
         env:

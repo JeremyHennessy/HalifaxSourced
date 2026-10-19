@@ -32,6 +32,10 @@ function decode(value) {
     .replace(/&amp;/gi, "&")
     .replace(/&quot;/gi, '"')
     .replace(/&#39;|&apos;/gi, "'")
+    .replace(/&eacute;/gi, "é")
+    .replace(/&egrave;/gi, "è")
+    .replace(/&agrave;/gi, "à")
+    .replace(/&ccedil;/gi, "ç")
     .replace(/&nbsp;/gi, " ")
     .replace(/&#(\d+);/g, (_, code) => String.fromCodePoint(Number(code)))
     .replace(/&#x([0-9a-f]+);/gi, (_, code) => String.fromCodePoint(parseInt(code, 16)))
@@ -39,6 +43,12 @@ function decode(value) {
     .replace(/\n\s+/g, "\n")
     .replace(/\n{2,}/g, "\n")
     .trim();
+}
+
+function normalizeDirectoryCafeName(value) {
+  // Observed directory output includes "Caf e Goodluck" and "Caf e Marco Polo".
+  // Repair only that malformed prefix; do not infer other names or identities.
+  return String(value ?? "").replace(/^Caf\s+e(?=\s)/i, "Cafe");
 }
 
 function safeUrl(value, base) {
@@ -114,7 +124,7 @@ for (let index = 0; index < anchors.length; index += 1) {
   for (let i = addressIndex - 1; i >= Math.max(0, addressIndex - 8); i -= 1) {
     const line = lines[i];
     if (!line || genericLine(line) || /@/.test(line) || phone(line) || line.length > 120) continue;
-    name = line;
+    name = normalizeDirectoryCafeName(line);
     break;
   }
   if (!name) continue;
