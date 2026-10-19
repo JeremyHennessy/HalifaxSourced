@@ -31,6 +31,11 @@ try {
       assert.equal(model.image,false);
       assert.equal(model.actions,0);
       assert.equal(model.hours,null);
+      const essentials = await page.locator(".mobile-essential-facts").innerText();
+      assert(essentials.includes("Operating status"));
+      assert(essentials.includes("Historical location"));
+      assert(!essentials.includes("Check official source"));
+      if (["moved-juice-press","replaced-clay-west"].includes(label)) assert.equal(await page.locator(".successor-link").count(),1);
     }
     await page.screenshot({path:new URL(`../artifacts/ui-check-iphone-${label}.png`,import.meta.url).pathname,fullPage:true});
   }

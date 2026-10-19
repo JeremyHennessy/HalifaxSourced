@@ -7,6 +7,7 @@ function renderRestaurantDetail(id) {
     return;
   }
   const active = isRestaurantActive(restaurant);
+  const successor = restaurants.find(item => item.id === restaurant.successorId && isRestaurantActive(item));
   const website = active ? safeUrl(restaurant.website) : null;
   const menuLink = safeUrl(restaurant.menuLinks?.[0]?.url);
   const reservation = safeUrl(restaurant.reservationLinks?.[0]?.url);
@@ -31,13 +32,13 @@ function renderRestaurantDetail(id) {
     </section>
     <section class="page-shell detail-layout">
       <div class="detail-main">
-        ${!active ? `<section class="closure-notice" role="status"><strong>${escapeHtml(statusLabel)}${closureDate ? ` · final service ${escapeHtml(closureDate)}` : ""}</strong><p>${escapeHtml(restaurant.operatingStatusEvidence?.claim || "This record is retained for historical source evidence and is excluded from current discovery.")}</p>${statusEvidenceUrl ? `<a href="${escapeHtml(statusEvidenceUrl)}" target="_blank" rel="noreferrer">View official status evidence ↗</a>` : ""}</section>` : ""}
+        ${!active ? `<section class="closure-notice" role="status"><strong>${escapeHtml(statusLabel)}${closureDate ? ` · final service ${escapeHtml(closureDate)}` : ""}</strong><p>${escapeHtml(restaurant.operatingStatusEvidence?.claim || "This record is retained for historical source evidence and is excluded from current discovery.")}</p>${statusEvidenceUrl ? `<a href="${escapeHtml(statusEvidenceUrl)}" target="_blank" rel="noreferrer">View official status evidence ↗</a>` : ""}${successor ? `<p><a class="successor-link" href="#restaurant/${escapeHtml(successor.id)}">View ${escapeHtml(successor.name)} at its current location →</a></p>` : ""}</section>` : ""}
         <nav class="detail-tabs"><a href="#detailOverview">Overview</a><a href="#detailMenu">Menu</a><a href="#detailSpecials">Specials</a><a href="#detailEvents">Events</a>${officialUpdates.length ? '<a href="#detailUpdates">Updates</a>' : ""}<a href="#detailLinks">Links</a><a href="#detailSources">Sources</a></nav>
         <section id="detailOverview" class="mobile-detail-overview${denseMobileOverview ? " is-dense" : ""}" aria-label="Restaurant essentials">
           <div class="mobile-essential-facts">
-            <div><span>Hours</span><strong>${escapeHtml(restaurant.openingHours || "Check official source")}</strong></div>
-            <div><span>Location</span><strong>${escapeHtml(restaurant.address || restaurant.neighborhood || "Halifax")}</strong></div>
-            ${restaurant.phone ? `<div><span>Phone</span><strong>${escapeHtml(restaurant.phone)}</strong></div>` : ""}
+            <div><span>${active ? "Hours" : "Operating status"}</span><strong>${escapeHtml(active ? restaurant.openingHours || "Check official source" : statusLabel)}</strong></div>
+            <div><span>${active ? "Location" : "Historical location"}</span><strong>${escapeHtml(restaurant.address || restaurant.neighborhood || "Halifax")}</strong></div>
+            ${active && restaurant.phone ? `<div><span>Phone</span><strong>${escapeHtml(restaurant.phone)}</strong></div>` : ""}
           </div>
           ${active ? `<div class="mobile-essential-actions">
             ${menuLink ? `<a class="button primary" href="${escapeHtml(menuLink)}" target="_blank" rel="noreferrer">View menu ↗</a>` : ordering ? `<a class="button primary" href="${escapeHtml(ordering)}" target="_blank" rel="noreferrer">Order online ↗</a>` : ""}
@@ -54,8 +55,8 @@ function renderRestaurantDetail(id) {
       </div>
       <aside class="detail-sidebar" id="detailInfo">
         ${infoCard(active ? "Hours" : "Operating status", active ? (restaurant.openingHours || "Hours not available in the current source data.") : `${statusLabel}${closureDate ? ` · final service ${closureDate}` : ""}`, "◷")}
-        ${infoCard("Location", restaurant.address || restaurant.neighborhood || "Halifax", "⌖")}
-        ${restaurant.phone ? infoCard("Phone", restaurant.phone, "☎") : ""}
+        ${infoCard(active ? "Location" : "Historical location", restaurant.address || restaurant.neighborhood || "Halifax", "⌖")}
+        ${active && restaurant.phone ? infoCard("Phone", restaurant.phone, "☎") : ""}
         ${website || menuLink || reservation || ordering ? `<div class="sidebar-card detail-official-actions"><h2>Official actions</h2>${website ? `<a class="sidebar-link" href="${escapeHtml(website)}" target="_blank" rel="noreferrer">Website ↗</a>` : ""}${menuLink ? `<a class="sidebar-link" href="${escapeHtml(menuLink)}" target="_blank" rel="noreferrer">Menu ↗</a>` : ""}${reservation ? `<a class="sidebar-link" href="${escapeHtml(reservation)}" target="_blank" rel="noreferrer">Reservations ↗</a>` : ""}${ordering ? `<a class="sidebar-link" href="${escapeHtml(ordering)}" target="_blank" rel="noreferrer">Order online ↗</a>` : ""}</div>` : ""}
         ${socialProfiles.length ? `<div class="sidebar-card detail-follow-card"><h2>Follow</h2>${socialProfiles.slice(0, 8).map((profile) => `<a class="sidebar-link" href="${escapeHtml(safeUrl(profile.url))}" target="_blank" rel="noreferrer">${escapeHtml(socialPlatformLabel(profile.platform))}${profile.handle ? ` · @${escapeHtml(String(profile.handle).replace(/^@/, ""))}` : ""} ↗</a>`).join("")}</div>` : ""}
         ${linkHubs.length ? `<div class="sidebar-card"><h2>Official link hub</h2>${linkHubs.slice(0, 3).map((hub) => `<a class="sidebar-link" href="${escapeHtml(safeUrl(hub.url))}" target="_blank" rel="noreferrer">${escapeHtml(linkHubLabel(hub.platform))} ↗</a>`).join("")}</div>` : ""}
