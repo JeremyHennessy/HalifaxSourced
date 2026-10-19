@@ -417,9 +417,10 @@ const afriteSocialState = await page.evaluate(() => {
   const hrefs = [...document.querySelectorAll("#detailLinks .source-link-row")].map((anchor) => anchor.href);
   return { profiles, hrefs };
 });
-for (const expectedProfile of ["tiktok:afriteresto", "pinterest:afriteresto", "youtube:afriteresto"]) {
+for (const expectedProfile of ["tiktok:afriteresto", "pinterest:afriteresto"]) {
   if (!afriteSocialState.profiles.includes(expectedProfile)) throw new Error(`Expected reviewed aFrite social profile ${expectedProfile}, got ${JSON.stringify(afriteSocialState)}.`);
 }
+if (afriteSocialState.profiles.includes("youtube:afriteresto") || afriteSocialState.hrefs.some(href => /youtube\.com\/afriteresto\/?$/i.test(href))) throw new Error("Twice-confirmed 404 aFrite YouTube link leaked into current navigation.");
 if (afriteSocialState.hrefs.some((href) => /facebook\.com\/afriteresto(?:\/|$)/i.test(href))) throw new Error(`Held aFrite alternate Facebook profile leaked into detail links: ${JSON.stringify(afriteSocialState.hrefs)}.`);
 await page.goto(`${url}/#restaurant/osm-way-96322798-wooden-monkey`, { waitUntil: "networkidle" });
 await page.locator("#detailLinks .source-link-row").first().waitFor();
