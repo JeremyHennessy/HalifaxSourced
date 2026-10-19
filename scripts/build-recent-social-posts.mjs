@@ -5,7 +5,7 @@ import vm from "node:vm";
 
 const outputJsonPath = new URL("../data/build/recent-social-posts.json", import.meta.url);
 const outputScriptPath = new URL("../data/recent-social-posts.js", import.meta.url);
-const lookbackDays = Number(process.env.RECENT_POST_LOOKBACK_DAYS ?? 180);
+const lookbackDays = Number(process.env.RECENT_POST_LOOKBACK_DAYS ?? 60);
 const summaryLimit = Math.max(120, Math.min(700, Number(process.env.RECENT_POST_SUMMARY_CHARS ?? 420)));
 const generatedAt = new Date().toISOString();
 const cutoff = Date.now() - lookbackDays * 24 * 60 * 60 * 1000;
@@ -197,15 +197,18 @@ function normalizePost(post, sourceFamily) {
     primaryCategoryLabel: primary.label,
     categories: categories.map(({ id, label, terms }) => ({ id, label, terms })),
     matchedTerms: [...new Set(categories.flatMap((category) => category.terms))].slice(0, 30),
-    publishedAt: publishedAt || null,
-    unverifiedPublisherDate: trustedPublication ? null : post.publishedAt || null,
+    publishedAt: dateState === "valid" ? publishedAt : null,
+    unverifiedPublisherDate: dateState === "valid" ? null : post.publishedAt || null,
+    expiresAt: dateState === "valid" ? integrity.postExpiry({ ...post, title, publishedAt }, lookbackDays) : null,
+    reviewedAt: post.reviewedAt || null,
+    reviewDueAt: post.reviewDueAt || null,
     observedAt: post.observedAt || null,
     dateState,
     publicationDateBasis: post.publicationDateBasis || null,
     contentHash: createHash("sha256").update(`${title}|${summary}`).digest("hex"),
     rightsState: "public_reference_not_media_licence",
     ageDays,
-    isRecent,
+    isRecent: isRecent && integrity.currentPost({ ...post, title, publishedAt }, Date.now(), lookbackDays),
     lookbackDays,
     confidenceScore,
     confidence: post.confidence || (sourceFamily === "feed" || sourceFamily === "website_page" ? "official_source_signal" : "official_social_api_signal"),

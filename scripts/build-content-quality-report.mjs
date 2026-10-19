@@ -17,13 +17,13 @@ const firstParty = await json("data/build/first-party-sources.json", { records: 
 const discovery = await json("artifacts/restaurant-discovery-report.json", { failures: [], warnings: [] });
 const expanded = await json("artifacts/expanded-source-integrity-report.json", { failures: [], warnings: [] });
 const cityIntegrity = await json("artifacts/city-event-integrity-report.json", { failures: [], warnings: [] });
-const linkHealth = await json("artifacts/source-link-health-report.json", null);
+const linkHealth = await json("data/build/source-link-health-report.json", null);
 const eventCandidates = await json("data/event-source-candidates.json", { candidates: [] });
 
 const now = Date.now();
 function ageDays(value) {
   const stamp = Date.parse(String(value || ""));
-  return Number.isFinite(stamp) ? Math.max(0, (now - stamp) / 86400000) : null;
+  return Number.isFinite(stamp) && stamp <= now ? (now - stamp) / 86400000 : null;
 }
 function bucket(value) {
   const age = ageDays(value);
@@ -52,10 +52,10 @@ for (const record of firstParty.records || []) {
   for (const item of [...(record.socialProfiles || []), ...(record.linkHubs || []), ...(record.relatedLinks || [])]) addBucket(freshness.firstPartyRelationships, item.lastVerifiedAt || item.observedAt || record.lastVerifiedAt || record.observedAt);
 }
 for (const record of facts.records || []) addBucket(freshness.structuredPlaceFacts, record.lastVerifiedAt || record.observedAt);
-for (const record of patioDirectory.records || []) addBucket(freshness.patioDirectoryFacts, record.observedAt || patioDirectory.generatedAt);
-for (const record of publicSpecialLeads.records || []) addBucket(freshness.publicSpecialLeads, record.observedAt || publicSpecialLeads.generatedAt);
+for (const record of patioDirectory.records || []) addBucket(freshness.patioDirectoryFacts, record.observedAt);
+for (const record of publicSpecialLeads.records || []) addBucket(freshness.publicSpecialLeads, record.observedAt);
 for (const record of specials.records || []) addBucket(freshness.specials, record.verifiedAt || record.observedAt);
-for (const event of cityEvents.events || []) addBucket(freshness.events, event.lastVerifiedAt || event.observedAt || event.sourceUpdatedAt || cityEvents.generatedAt);
+for (const event of cityEvents.events || []) addBucket(freshness.events, event.lastVerifiedAt || event.observedAt || event.sourceUpdatedAt);
 
 const conflictItems = (placeResolution.reviewQueue || []).filter((item) => String(item.state || "").includes("conflict") || (item.conflicts || []).length);
 const nameOnlyItems = (placeResolution.reviewQueue || []).filter((item) => item.state === "name_only_review");

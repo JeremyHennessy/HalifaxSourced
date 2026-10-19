@@ -307,7 +307,7 @@ function enrichRestaurant(restaurant) {
 }
 
 function isRestaurantActive(restaurant) {
-  return !["permanently_closed", "temporarily_closed", "moved"].includes(restaurant?.operatingStatus);
+  return !["permanently_closed", "temporarily_closed", "moved", "replaced"].includes(restaurant?.operatingStatus);
 }
 
 function sourceCoverageScore(restaurant, signal, inspections) {

@@ -1,5 +1,6 @@
 "use strict";
 function renderRestaurantDetail(id) {
+  id = reviewedRestaurantCorrections.aliases.find(alias => alias.from === id)?.to || id;
   const restaurant = restaurants.find((item) => item.id === id || encodeURIComponent(item.id) === id);
   if (!restaurant) {
     appView.innerHTML = `<section class="page-shell page-intro">${emptyPageState("That restaurant could not be found in the current dataset.")}</section>`;
@@ -19,7 +20,7 @@ function renderRestaurantDetail(id) {
   const historicalSpecials = active ? (restaurant.structuredSpecials || []).filter(special => ['stale', 'expired'].includes(special.status) || (special.status === 'verified_current' && !currentStructuredSpecial(special))) : [];
   const statusEvidenceUrl = safeUrl(restaurant.operatingStatusEvidence?.sourceUrl);
   const closureDate = restaurant.closureDate ? new Date(`${restaurant.closureDate}T12:00:00`).toLocaleDateString("en-CA", { year: "numeric", month: "long", day: "numeric" }) : null;
-  const statusLabel = restaurant.operatingStatus === "permanently_closed" ? "Permanently closed" : restaurant.operatingStatus === "temporarily_closed" ? "Temporarily closed" : restaurant.operatingStatus === "moved" ? "Moved" : "Status unavailable";
+  const statusLabel = restaurant.operatingStatus === "permanently_closed" ? "Permanently closed" : restaurant.operatingStatus === "temporarily_closed" ? "Temporarily closed" : restaurant.operatingStatus === "moved" ? "Moved" : restaurant.operatingStatus === "replaced" ? "Replaced at this location" : "Status unavailable";
   const denseMobileOverview = active && restaurant.phone && (menuLink || ordering) && (reservation || website);
 
   appView.innerHTML = `

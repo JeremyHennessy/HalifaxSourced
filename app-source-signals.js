@@ -31,7 +31,7 @@ function sourceSignalHas(item, kind) {
 function sourceSignalFresh(item, maxDays = CURRENT_SOURCE_SIGNAL_DAYS) {
   const stamp = Date.parse(String(item?.publishedAt ?? ""));
   if (!Number.isFinite(stamp)) return false;
-  return HalifaxDataIntegrity.locationSafe(item) && HalifaxDataIntegrity.publicationState(item.publishedAt, Date.now(), maxDays).isRecent;
+  return HalifaxDataIntegrity.currentPost(item, Date.now(), Math.min(maxDays, 60));
 }
 
 function uniqueSourceSignalLinks(existing, additions) {

@@ -63,6 +63,7 @@ function imageCandidates(restaurant) {
 }
 
 function permittedImageFor(restaurant) {
+  if (!isRestaurantActive(restaurant)) return null;
   for (const image of imageCandidates(restaurant)) {
     if (image.restaurantId !== restaurant?.id) continue;
     if (!hasMediaPermission(image)) continue;

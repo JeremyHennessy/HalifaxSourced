@@ -85,6 +85,13 @@ function statusFor({ sourceVerified, verifiedAt, validFrom, validTo, recurrence,
 const records = [];
 const seen = new Set();
 function push(record) {
+  // Expiry applies to every evidence tier, including unverified directory leads.
+  const end = parsedStamp(record.validTo);
+  record.expiresAt = end === null ? null : new Date(end).toISOString();
+  record.reviewedAt = record.verifiedAt || null;
+  const reviewed = parsedStamp(record.reviewedAt);
+  record.reviewDueAt = reviewed === null ? null : new Date(reviewed + CURRENT_VERIFY_DAYS * 86400000).toISOString();
+  if (end !== null && end < nowStamp) record.status = "expired";
   const key = `${record.restaurantId}|${record.sourceUrl}|${record.title}`.toLowerCase();
   if (seen.has(key)) return;
   seen.add(key);
@@ -232,7 +239,7 @@ for (const record of firstParty.records || []) {
       sourceUrl: url,
       sourceType: "official_website_link",
       observedAt: link.observedAt || now,
-      verifiedAt: link.lastVerifiedAt || link.observedAt || now,
+      verifiedAt: link.lastVerifiedAt || link.observedAt || null,
       status: "source_lead"
     });
   }
@@ -241,7 +248,7 @@ for (const lead of publicSpecialLeads.records || []) {
   const sourceUrl = safeUrl(lead.sourceUrl) || safeUrl(lead.sourcePageUrl);
   if (!sourceUrl || !lead.title) continue;
   const restaurantId = lead.restaurantId ? canonicalRestaurantId(lead.restaurantId) : null;
-  const observed = lead.observedAt || lead.sourceUpdatedAt || lead.lastVerifiedAt || now;
+  const observed = lead.observedAt || lead.sourceUpdatedAt || lead.lastVerifiedAt || null;
   push({
     specialId: specialId(restaurantId || `unresolved-${lead.sourceRecordId || lead.venueName || "special"}`, lead.title, sourceUrl),
     restaurantId,

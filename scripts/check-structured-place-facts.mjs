@@ -4,7 +4,7 @@ import { localRestaurantPolicyDecision } from "./lib/local-restaurant-policy.mjs
 
 const facts = JSON.parse(await readFile(new URL("../data/build/structured-place-facts.json", import.meta.url), "utf8"));
 const catalog = JSON.parse(await readFile(new URL("../data/build/catalog.json", import.meta.url), "utf8"));
-const ids = new Set((catalog.restaurants || []).map((restaurant) => restaurant.id));
+const ids = new Set((catalog.restaurants || []).flatMap((restaurant) => [restaurant.id, ...(restaurant.aliasIds || [])]));
 const errors = [];
 const warnings = [];
 const seen = new Set();

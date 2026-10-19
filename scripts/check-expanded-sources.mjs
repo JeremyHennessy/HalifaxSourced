@@ -27,7 +27,7 @@ for (const restaurant of rawRestaurantRecords) {
   if (restaurant?.id && localRestaurantPolicyDecision(restaurant).excluded) localPolicyExcludedIds.add(restaurant.id);
 }
 const localEligibleDiscoveredRestaurants = discoveredRestaurants.filter((restaurant) => !localPolicyExcludedIds.has(restaurant?.id));
-const restaurantIds = new Set([...(catalog.restaurants || []), ...localEligibleDiscoveredRestaurants].map((restaurant) => restaurant.id).filter(Boolean));
+const restaurantIds = new Set([...(catalog.restaurants || []), ...localEligibleDiscoveredRestaurants].flatMap((restaurant) => [restaurant.id, ...(restaurant.aliasIds || [])]).filter(Boolean));
 const firstPartyWindow = await loadWindowScript("data/first-party-sources.js");
 const feedWindow = await loadWindowScript("data/website-feed-signals.js");
 const websitePageWindow = await loadWindowScript("data/website-page-intelligence.js").catch(() => ({ HALIFAX_WEBSITE_PAGE_INTELLIGENCE: { records: [], signals: [] } }));

@@ -2,3 +2,5 @@ artifacts/
 .DS_Store
 Thumbs.db
 scripts/__pycache__/
+
+.release-site/

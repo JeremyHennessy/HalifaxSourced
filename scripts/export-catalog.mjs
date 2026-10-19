@@ -1,9 +1,10 @@
 import { readFile, writeFile, mkdir } from "node:fs/promises";
 import { Script, createContext } from "node:vm";
+import { applyReviewedCorrections } from "./lib/reviewed-corrections.mjs";
 import { filterLocalRestaurantRecords, localRestaurantPolicy } from "./lib/local-restaurant-policy.mjs";
 
 const context = createContext({ window: {} });
-for (const file of ["../data/restaurants.js", "../data/osm-restaurants.js", "../data/ns-food-inspections.js"]) {
+for (const file of ["../data/restaurants.js", "../data/osm-restaurants.js", "../data/ns-food-inspections.js", "../data/discovered-restaurants.js", "../data/discovery-source-supplements.js"]) {
   const source = await readFile(new URL(file, import.meta.url), "utf8");
   new Script(source, { filename: file }).runInContext(context);
 }
@@ -23,7 +24,7 @@ try {
 } catch {}
 
 function keyForName(name) {
-  return String(name ?? "").toLowerCase().normalize("NFKD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-z0-9]+/g, "").trim();
+  return String(name ?? "").toLowerCase().normalize("NFKD").replace(/[\u0300-\u036f]/g, "").replace(/\bthe\b/g, "").replace(/[^a-z0-9]+/g, "").trim();
 }
 
 function normalizeLookup(value) {
@@ -99,6 +100,7 @@ for (const restaurant of osm) {
     restaurants.push({ ...restaurant, sourceLayer: "openstreetmap" });
     continue;
   }
+  match.aliasIds = [...new Set([...(match.aliasIds || []), restaurant.id])];
   match.category ??= restaurant.category;
   match.address ??= restaurant.address;
   match.phone ??= restaurant.phone;
@@ -114,7 +116,16 @@ const localPolicyExcluded = {
   openStreetMap: osmPolicy.excluded.length,
   total: curatedPolicy.excluded.length + osmPolicy.excluded.length
 };
-const enrichedRestaurants = restaurants.map(withInspectionEvidence);
+for (const discovered of context.window.HALIFAX_DISCOVERED_RESTAURANTS || []) {
+  if (filterLocalRestaurantRecords([discovered]).excluded.length) continue;
+  const existing = restaurants.find(item => item.id === discovered.id || keyForName(item.name) === keyForName(discovered.name));
+  if (!existing) restaurants.push({ ...discovered, sourceLayer: "local_discovery" });
+  else {
+    for (const field of ["address", "phone", "website", "openingHours", "coordinates", "neighborhood"]) existing[field] ||= discovered[field];
+    existing.sources = mergeSources(existing.sources, discovered.sources);
+  }
+}
+const enrichedRestaurants = applyReviewedCorrections(restaurants).map(withInspectionEvidence);
 const catalog = {
   generatedAt: new Date().toISOString(),
   sourceMeta: {

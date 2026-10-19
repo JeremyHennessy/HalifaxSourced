@@ -15,7 +15,7 @@ permissions:
 jobs:
   data-integrity:
     runs-on: ubuntu-latest
-    timeout-minutes: 25
+    timeout-minutes: 45
     steps:
       - name: Checkout
         uses: actions/checkout@v6
@@ -37,6 +37,9 @@ jobs:
       - name: Run structured-special evidence regression
         run: node scripts/test-structured-specials-model.mjs
 
+      - name: Test preview promotion contract and branch leases
+        run: node scripts/test-preview-promotion.mjs
+
       - name: Run network-disabled source verifier startup regression
         run: node scripts/test-source-verifier-startup.mjs
 
@@ -49,6 +52,10 @@ jobs:
           node scripts/test-local-media-repair.mjs
           node scripts/test-event-refresh-dedupe.mjs
 
+      - name: Export reviewed catalog before dependent builds
+        run: |
+          node scripts/export-catalog.mjs
+
       - name: Build public happy-hour source leads
         env:
           PUBLIC_SPECIAL_CAMPAIGN_LIMIT: 80
@@ -58,6 +65,9 @@ jobs:
 
       - name: Build deterministic structured specials
         run: node scripts/build-structured-specials.mjs
+
+      - name: Test reviewed identities and expiry
+        run: node scripts/test-reviewed-corrections.mjs
 
       - name: Build patio directory facts
         run: node scripts/import-patio-directory-facts.mjs
@@ -152,6 +162,17 @@ jobs:
 
       - name: Check local restaurant policy
         run: node scripts/check-local-restaurant-policy.mjs
+
+      - name: Check current official, social, menu and action links
+        env:
+          SOURCE_COMMIT_SHA: ${{ github.event.pull_request.head.sha || github.sha }}
+          LINK_HEALTH_SCOPE: release
+          LINK_HEALTH_LIMIT: 0
+          LINK_HEALTH_TIMEOUT_MS: 4000
+          LINK_HEALTH_CONCURRENCY: 16
+        run: |
+          node scripts/check-source-links.mjs
+          node scripts/check-release-link-health.mjs
 
       - name: Build content coverage and quality reports
         env:
@@ -309,6 +330,7 @@ jobs:
           node scripts/test-popup-resource-gate.mjs
           node scripts/test-map-tile-controls.mjs
           node scripts/verify-ui.mjs
+          node scripts/verify-reviewed-corrections.mjs
           node scripts/verify-admin-status.mjs
           node scripts/verify-iphone-links.mjs
           node scripts/test-explore-minimap-lifecycle.mjs
