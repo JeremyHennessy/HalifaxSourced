@@ -31,7 +31,7 @@ try {
       assert.equal(model.image,false);
       assert.equal(model.actions,0);
       assert.equal(model.hours,null);
-      const essentials = await page.locator(".mobile-essential-facts").innerText();
+      const essentials = await page.locator(".mobile-essential-facts").textContent();
       assert(essentials.includes("Operating status"));
       assert(essentials.includes("Historical location"));
       assert(!essentials.includes("Check official source"));
