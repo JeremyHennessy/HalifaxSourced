@@ -4,6 +4,18 @@ window.HALIFAX_RESTAURANT_CORRECTIONS = {
   "policy": "Reviewed location evidence overrides stale imports; observation dates are retained and uncertain coordinates, hours, successor identities and closure day remain unknown.",
   "records": [
     {
+      "restaurantId": "osm-node-11752614922-cafe-good-luck",
+      "fields": {
+        "website": "https://cafegoodluck.ca/goodluck",
+        "openingHours": "Mo-Su 08:00-16:00; kitchen Mo-Su 08:00-14:00"
+      },
+      "sourceUrl": "https://cafegoodluck.ca/goodluck",
+      "claim": "Official Café Goodluck site confirms café daily 8am–4pm and kitchen daily 8am–2pm. The Downtown Dartmouth directory independently lists this venue at 145 Portland Street; do not copy outdated directory outbound URL or infer new status.",
+      "observedAt": "2026-10-19",
+      "reviewedAt": "2026-10-19",
+      "reviewState": "verified"
+    },
+    {
       "restaurantId": "osm-node-267592027-the-black-sheep",
       "fields": {
         "openingHours": "Mo-Th 10:00-21:00; Fr 10:00-22:00; Sa 09:00-22:00; Su 09:00-16:00",
