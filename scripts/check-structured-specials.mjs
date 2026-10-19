@@ -5,6 +5,7 @@ import { localRestaurantPolicyDecision } from "./lib/local-restaurant-policy.mjs
 const payload = JSON.parse(await readFile(new URL("../data/build/structured-specials.json", import.meta.url), "utf8"));
 const catalog = JSON.parse(await readFile(new URL("../data/build/catalog.json", import.meta.url), "utf8"));
 const verifiedPages = JSON.parse(await readFile(new URL("../data/build/verified-source-pages.json", import.meta.url), "utf8"));
+const reviewedPages = JSON.parse(await readFile(new URL("../data/reviewed-special-source-pages.json", import.meta.url), "utf8"));
 const discoveryOverrides = JSON.parse(await readFile(new URL("../data/discovery-overrides.json", import.meta.url), "utf8").catch(() => "{\"approved\":[]}"));
 
 async function loadWindow(path) {
@@ -57,7 +58,14 @@ const localPolicyExcludedOrphans = rawOrphanSources.length - orphanSources.lengt
 const catalogByName = new Map((catalog.restaurants || []).map((restaurant) => [normalizeName(restaurant.name), restaurant.id]));
 const discoveredIds = (discoveryOverrides.approved || []).map((restaurant) => catalogByName.get(normalizeName(restaurant.name)) || restaurant.id);
 const ids = new Set([...(catalog.restaurants || []).map((restaurant) => restaurant.id), ...discoveredIds]);
-const verifiedSpecialUrls = new Set((verifiedPages.specialSources || []).map((source) => source.url));
+// Human-reviewed pages are authoritative inputs, independent of an older crawler snapshot.
+// Bind approval to the specific restaurant and require dated, location-specific evidence.
+const reviewedSpecialSources = (reviewedPages.records || []).filter(source =>
+  source.reviewState === "verified" && source.location && source.evidence &&
+  Number.isFinite(Date.parse(source.observedAt)) && Date.parse(source.observedAt) <= Date.now() &&
+  (catalog.restaurants || []).some(place => place.id === source.restaurantId && place.address === source.location && place.website === source.url));
+if (reviewedSpecialSources.length !== (reviewedPages.records || []).length) throw new Error("Invalid reviewed special source evidence");
+const verifiedSpecialUrls = new Set([...(verifiedPages.specialSources || []), ...reviewedSpecialSources].map(source => `${source.restaurantId}|${source.url}`));
 const errors = [];
 const warnings = [];
 const seen = new Set();
@@ -79,7 +87,7 @@ for (const record of records) {
   if (record.price !== null && (!Number.isFinite(Number(record.price)) || Number(record.price) < 0)) errors.push(`invalid_price:${record.specialId}`);
   if (record.price !== null && !record.currency) errors.push(`priced_record_without_currency:${record.specialId}`);
   if (record.sourceType === "reviewed_restaurant_owned_source") {
-    if (!verifiedSpecialUrls.has(record.sourceUrl)) errors.push(`reviewed_source_not_in_verified_registry:${record.specialId}`);
+    if (!verifiedSpecialUrls.has(`${record.restaurantId}|${record.sourceUrl}`)) errors.push(`reviewed_source_not_in_verified_registry:${record.specialId}`);
     if (!record.description && record.price === null) errors.push(`reviewed_record_without_specific_detail:${record.specialId}`);
   }
 

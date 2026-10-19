@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "records": [
+    {
+      "restaurantId": "hux-halifax",
+      "url": "https://www.huxhalifax.com/",
+      "location": "1533 Barrington Street, Halifax, NS",
+      "observedAt": "2026-10-19",
+      "reviewState": "verified",
+      "evidence": "The owner-controlled homepage publishes a $55 three-course prix fixe Tuesday–Thursday, optional $25 wine pairing, and 4–6pm $10 classic cocktails and $6 draught beer. Regular service is Tuesday–Sunday; Monday offer availability remains unconfirmed."
+    }
+  ]
+}
