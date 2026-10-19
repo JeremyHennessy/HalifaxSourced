@@ -21,8 +21,12 @@ for (const item of reviewedCorrections.records) {
   const exported = catalog.restaurants.find(record=>record.id === item.restaurantId);
   assert(browserRecord && exported,item.restaurantId);
   for (const [field,value] of Object.entries(item.fields)) {
-    assert.deepEqual(browserRecord[field],value,`Browser correction: ${item.restaurantId}/${field}`);
-    assert.deepEqual(exported[field],value,`Export correction: ${item.restaurantId}/${field}`);
+    // JSON-backed schedules originate in different VM realms; compare the actual fields, not VM prototypes.
+    const browserValue = field === 'effectiveDatedHours' ? JSON.parse(JSON.stringify(browserRecord[field])) : browserRecord[field];
+    const expectedValue = field === 'effectiveDatedHours' ? JSON.parse(JSON.stringify(value)) : value;
+    const exportValue = field === 'effectiveDatedHours' ? JSON.parse(JSON.stringify(exported[field])) : exported[field];
+    assert.deepEqual(browserValue,expectedValue,`Browser correction: ${item.restaurantId}/${field}`);
+    assert.deepEqual(exportValue,expectedValue,`Export correction: ${item.restaurantId}/${field}`);
   }
   if (['permanently_closed','moved','replaced'].includes(item.fields.operatingStatus)) {
     assert(!active.has(item.restaurantId));

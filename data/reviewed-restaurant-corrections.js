@@ -4,6 +4,31 @@ window.HALIFAX_RESTAURANT_CORRECTIONS = {
   "policy": "Reviewed location evidence overrides stale imports; observation dates are retained and uncertain coordinates, hours, successor identities and closure day remain unknown.",
   "records": [
     {
+      "restaurantId": "osm-node-267592027-the-black-sheep",
+      "fields": {
+        "openingHours": "Mo-Th 10:00-21:00; Fr 10:00-22:00; Sa 09:00-22:00; Su 09:00-16:00",
+        "effectiveDatedHours": {
+          "revisions": [
+            {
+              "from": "2026-10-26",
+              "hours": "Mo closed; Tu-Th 10:00-21:00; Fr 10:00-22:00; Sa 09:00-22:00; Su 09:00-16:00"
+            }
+          ],
+          "dateOverrides": [
+            {
+              "date": "2026-11-14",
+              "hours": "Mo closed; Tu-Th 10:00-21:00; Fr 10:00-22:00; Sa 09:00-14:00 (Nov 14 only); Su 09:00-16:00"
+            }
+          ]
+        }
+      },
+      "sourceUrl": "https://blacksheephalifax.com/",
+      "claim": "Official Black Sheep hours: Mondays 10am–9pm through October 25, 2026; Monday closure effective October 26; one-day November 14 close at 2pm for a private event. Other standard day hours unchanged.",
+      "observedAt": "2026-10-19",
+      "reviewedAt": "2026-10-19",
+      "reviewState": "verified"
+    },
+    {
       "restaurantId": "osm-node-11001023964-lockside-canteen",
       "fields": {
         "operatingStatus": "permanently_closed",
