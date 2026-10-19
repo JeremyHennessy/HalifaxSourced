@@ -46,8 +46,8 @@ function decode(value) {
 }
 
 function normalizeDirectoryCafeName(value) {
-  // The source occasionally splits the final "e" of "Cafe" across inline markup.
-  // Rejoin only that observed prefix; do not infer any other name or identity.
+  // Observed directory output includes "Caf e Goodluck" and "Caf e Marco Polo".
+  // Repair only that malformed prefix; do not infer other names or identities.
   return String(value ?? "").replace(/^Caf\s+e(?=\s)/i, "Cafe");
 }
 
