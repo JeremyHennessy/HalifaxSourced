@@ -24,27 +24,38 @@ jobs:
   audit:
     runs-on: ubuntu-24.04
     timeout-minutes: 25
+    env:
+      SOURCE_COMMIT_SHA: ${{ github.event.pull_request.head.sha || github.sha }}
     steps:
       - name: Checkout
         uses: actions/checkout@v6
+        with:
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
       - name: Set up Node
         uses: actions/setup-node@v4
         with:
           node-version: 22
+      - name: Export the reviewed canonical catalog
+        run: node scripts/export-catalog.mjs
       - name: Build deterministic structured specials
         run: |
           node scripts/build-structured-specials.mjs
           node scripts/check-structured-specials.mjs
       - name: Audit source link health
         env:
-          LINK_HEALTH_LIMIT: 1500
-          LINK_HEALTH_TIMEOUT_MS: 8000
-          LINK_HEALTH_CONCURRENCY: 10
-        run: node scripts/check-source-links.mjs
+          LINK_HEALTH_SCOPE: release
+          LINK_HEALTH_LIMIT: 0
+          LINK_HEALTH_TIMEOUT_MS: 4000
+          LINK_HEALTH_CONCURRENCY: 16
+        run: |
+          node scripts/check-source-links.mjs
+          node scripts/check-release-link-health.mjs
       - name: Rebuild reconciled content quality report
         run: |
+          node scripts/check-restaurant-lifecycle.mjs
           node scripts/build-content-coverage-report.mjs
           node scripts/reconcile-structured-coverage.mjs
+          node scripts/check-report-deployment-parity.mjs
           node scripts/build-content-quality-report.mjs
       - name: Upload quality audit
         uses: actions/upload-artifact@v4
