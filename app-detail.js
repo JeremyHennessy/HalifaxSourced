@@ -36,7 +36,7 @@ function renderRestaurantDetail(id) {
         <nav class="detail-tabs"><a href="#detailOverview">Overview</a><a href="#detailMenu">Menu</a><a href="#detailSpecials">Specials</a><a href="#detailEvents">Events</a>${officialUpdates.length ? '<a href="#detailUpdates">Updates</a>' : ""}<a href="#detailLinks">Links</a><a href="#detailSources">Sources</a></nav>
         <section id="detailOverview" class="mobile-detail-overview${denseMobileOverview ? " is-dense" : ""}" aria-label="Restaurant essentials">
           <div class="mobile-essential-facts">
-            <div><span>${active ? "Hours" : "Operating status"}</span><strong>${escapeHtml(active ? restaurant.openingHours || "Check official source" : statusLabel)}</strong></div>
+            <div><span>${active ? "Hours" : "Operating status"}</span><strong>${escapeHtml(active ? restaurantDisplayedHours(restaurant) || "Check official source" : statusLabel)}</strong></div>
             <div><span>${active ? "Location" : "Historical location"}</span><strong>${escapeHtml(restaurant.address || restaurant.neighborhood || "Halifax")}</strong></div>
             ${active && restaurant.phone ? `<div><span>Phone</span><strong>${escapeHtml(restaurant.phone)}</strong></div>` : ""}
           </div>
@@ -54,7 +54,7 @@ function renderRestaurantDetail(id) {
         <section id="detailSources" class="detail-section"><div class="section-heading no-top"><div><h2>Source evidence</h2><p>What Halifax Sourced has actually observed for this listing.</p></div></div><div class="source-evidence-grid"><div><strong>${restaurant.score || 0}</strong><span>source coverage score</span></div><div><strong>${restaurant.sources.length}</strong><span>listing sources</span></div><div><strong>${restaurant.inspections.length}</strong><span>public registry matches</span></div><div><strong>${socialProfiles.length}</strong><span>official social links</span></div></div><div class="link-list">${sourceLinks.length ? sourceLinks.map(sourceLinkRow).join("") : '<div class="info-message">No direct source links are available.</div>'}</div></section>
       </div>
       <aside class="detail-sidebar" id="detailInfo">
-        ${infoCard(active ? "Hours" : "Operating status", active ? (restaurant.openingHours || "Hours not available in the current source data.") : `${statusLabel}${closureDate ? ` · final service ${closureDate}` : ""}`, "◷")}
+        ${infoCard(active ? "Hours" : "Operating status", active ? (restaurantDisplayedHours(restaurant) || "Hours not available in the current source data.") : `${statusLabel}${closureDate ? ` · final service ${closureDate}` : ""}`, "◷")}
         ${infoCard(active ? "Location" : "Historical location", restaurant.address || restaurant.neighborhood || "Halifax", "⌖")}
         ${active && restaurant.phone ? infoCard("Phone", restaurant.phone, "☎") : ""}
         ${website || menuLink || reservation || ordering ? `<div class="sidebar-card detail-official-actions"><h2>Official actions</h2>${website ? `<a class="sidebar-link" href="${escapeHtml(website)}" target="_blank" rel="noreferrer">Website ↗</a>` : ""}${menuLink ? `<a class="sidebar-link" href="${escapeHtml(menuLink)}" target="_blank" rel="noreferrer">Menu ↗</a>` : ""}${reservation ? `<a class="sidebar-link" href="${escapeHtml(reservation)}" target="_blank" rel="noreferrer">Reservations ↗</a>` : ""}${ordering ? `<a class="sidebar-link" href="${escapeHtml(ordering)}" target="_blank" rel="noreferrer">Order online ↗</a>` : ""}</div>` : ""}

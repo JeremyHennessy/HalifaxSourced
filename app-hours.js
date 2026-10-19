@@ -18,3 +18,18 @@ function restaurantHoursState(weekly, date = new Date()) {
   if(upcoming)return {state:"closed",opensAt:upcoming.interval.open,opensLaterToday:true};
   return {state:"closed",reason:"no_current_interval"};
 }
+
+function restaurantDisplayedHours(restaurant, date = new Date()) {
+  const original = restaurant?.openingHours || null;
+  const schedule = restaurant?.effectiveDatedHours;
+  if (!schedule || typeof schedule !== "object") return original;
+  const parts = new Intl.DateTimeFormat("en-CA", {
+    timeZone: HALIFAX_TIME_ZONE, year: "numeric", month: "2-digit", day: "2-digit"
+  }).formatToParts(date);
+  const values = Object.fromEntries(parts.map(part => [part.type, part.value]));
+  const today = `${values.year}-${values.month}-${values.day}`;
+  const exception = (schedule.dateOverrides || []).find(entry => entry.date === today);
+  if (typeof exception?.hours === "string") return exception.hours;
+  const applicable = (schedule.revisions || []).filter(entry => entry.from <= today && typeof entry.hours === "string").sort((a,b) => b.from.localeCompare(a.from));
+  return applicable[0]?.hours || original;
+}
