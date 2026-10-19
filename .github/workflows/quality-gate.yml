@@ -35,6 +35,9 @@ jobs:
       - name: Run structured-special evidence regression
         run: node scripts/test-structured-specials-model.mjs
 
+      - name: Test preview promotion contract and branch leases
+        run: node scripts/test-preview-promotion.mjs
+
       - name: Build public happy-hour source leads
         env:
           PUBLIC_SPECIAL_CAMPAIGN_LIMIT: 80

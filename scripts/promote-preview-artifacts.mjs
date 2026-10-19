@@ -53,6 +53,13 @@ const PROMOTED_FILES_BY_ARTIFACT = {
 const REVIEW_ONLY_FILES_BY_ARTIFACT = {
   "source-expansion-preview": [
     "docs/thumbnail-coverage-report.md",
+    // Produced for review only. Rebuild the catalog from accepted inputs at release.
+    "data/build/catalog.json",
+    "data/build/thumbnail-promotion-plan.json",
+    "data/build/thumbnail-promotion-plan.csv",
+    "data/build/thumbnail-source-check-priority.csv",
+    "docs/thumbnail-coverage-attack-plan.md",
+    "artifacts/thumbnail-promotion-plan.json",
     "artifacts/data-integrity-report.json",
     "artifacts/expanded-source-integrity-report.json",
     "artifacts/thumbnail-candidates-report.json",
