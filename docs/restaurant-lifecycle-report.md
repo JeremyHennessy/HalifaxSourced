@@ -1,20 +1,15 @@
-# Restaurant lifecycle audit
+# Restaurant lifecycle report
 
-Generated: 2026-08-29T16:41:21.695Z
+Generated: 2026-10-19T15:55:52.554Z
 
-Official closure and move language creates a review candidate only. Production lifecycle changes require reviewed, location-specific evidence.
+This controlled build combines curated restaurants with reviewed lifecycle resolutions. Unreviewed crawler signals do not alter operating status.
 
-| Curated place | Status | Effective date | Audit |
-| --- | --- | --- | --- |
-| Bar Kismet | open | — | verified |
-| The Bicycle Thief | open | — | verified |
-| EDNA | open | — | verified |
-| The Press Gang | open | — | verified |
-| The Narrows Public House | open | — | verified |
-| 2 Doors Down | open | — | verified |
-| Battery Park Beer Bar | open | — | verified |
-| Dear Friend Bar | open | — | verified |
-| Highwayman | open | — | verified |
-| Field Guide | permanently closed | 2026-04-29 | verified |
+## Counts
 
-Official-source lifecycle candidates awaiting review: **0**.
+- open: **9**
+- permanently_closed: **2**
+
+## Archived records
+
+- **Field Guide** — permanently_closed; effective 2026-04-29; [evidence](https://www.facebook.com/fieldguidehfx/videos/2017145352561161/)
+- **Sushi Shige** — permanently_closed; effective 2026-09-19; [evidence](https://www.shige.ca/post/with-millions-of-thanks)

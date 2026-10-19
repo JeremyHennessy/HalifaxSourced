@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-06T02:00:21.709Z",
+  "generatedAt": "2026-10-19T15:57:30.437Z",
   "policy": "Only location-specific matches supported by compatible identity plus address, official domain, phone or reviewed discovery evidence are published. Conflicts and name-only matches remain queued.",
   "localPolicyExcludedReviewed": 1,
   "downtownDartmouth": {
@@ -10,11 +10,11 @@
     "heldForReview": 33,
     "counts": {
       "review_conflict": 3,
-      "unresolved_conflict": 9,
-      "non_name_evidence_review": 7,
+      "unresolved_conflict": 7,
+      "unresolved": 14,
+      "non_name_evidence_review": 6,
       "name_only_review": 4,
       "resolved_probable": 4,
-      "unresolved": 11,
       "resolved_high": 10
     }
   },
@@ -24,16 +24,39 @@
     "publishedReviewed": 8,
     "heldForReview": 74,
     "counts": {
-      "unresolved": 55,
+      "unresolved": 63,
       "resolved_high": 3,
-      "non_name_evidence_review": 2,
-      "name_only_review": 18,
+      "non_name_evidence_review": 1,
+      "name_only_review": 11,
       "unresolved_conflict": 2,
       "resolved_probable": 2
     },
     "publicationDecision": "partial_publication_location_specific_evidence_only"
   },
   "publishedRecords": [
+    {
+      "restaurantId": "osm-node-11552061304-sushi-shige",
+      "name": "Sushi Shige",
+      "resolutionState": "resolved_high",
+      "evidence": [
+        "exact_normalized_name",
+        "exact_official_domain",
+        "compatible_street_address",
+        "owner_closure_announcement"
+      ],
+      "completeness": {
+        "identity": true,
+        "address": true,
+        "coordinates": true,
+        "currentStatus": true,
+        "officialWebsite": true,
+        "menu": true,
+        "hours": true,
+        "phone": true,
+        "socialProfiles": true,
+        "duplicateConflictCleared": true
+      }
+    },
     {
       "restaurantId": "osm-node-475877047-sea-smoke",
       "name": "Sea Smoke Restaurant & Bar",

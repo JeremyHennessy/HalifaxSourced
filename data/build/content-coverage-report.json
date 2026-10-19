@@ -1,6 +1,7 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-06T04:15:34.993Z",
+  "generatedAt": "2026-10-19T15:59:07.189Z",
+  "snapshotKind": "historical_committed_snapshot",
   "sourceCommitSha": null,
   "baselineCommitHint": null,
   "definitions": {
@@ -17,14 +18,13 @@
     "lifecycleStatus": "Reviewed restaurant operating state. Inactive records remain addressable as archived details but are excluded from active discovery, menus, specials and maps."
   },
   "restaurantCoverage": {
-    "totalCanonicalPlaces": 564,
-    "activeCanonicalPlaces": 563,
-    "archivedLifecyclePlaces": 1,
+    "totalCanonicalPlaces": 566,
+    "archivedLifecyclePlaces": 2,
     "curatedRestaurants": 10,
     "osmRestaurants": 736,
-    "locallyDiscoveredRestaurants": 12,
+    "locallyDiscoveredRestaurants": 14,
     "catalogMergedRestaurants": 554,
-    "withOfficialWebsite": 237,
+    "withOfficialWebsite": 239,
     "withVerifiedOfficialWebsite": 241,
     "withInspectionMatch": 326,
     "withMenuLink": 167,
@@ -55,26 +55,28 @@
       "bento": 0
     },
     "withLinkHub": 0,
-    "withPhone": 206,
-    "withStructuredOrSourceHours": 195,
+    "withPhone": 207,
+    "withStructuredOrSourceHours": 196,
     "withCoordinates": 553,
-    "withNeighbourhood": 564,
-    "withCuisineClassification": 564,
+    "withNeighbourhood": 566,
+    "withCuisineClassification": 566,
     "withAccessibilityInformation": 168,
     "withPatioInformation": 72,
     "withUsableMedia": 7,
     "retainedMediaSourceReferences": 99,
     "lifecycle": {
-      "active": 11,
+      "active": 9,
       "temporarily_closed": 0,
-      "permanently_closed": 1,
+      "permanently_closed": 2,
       "moved": 0,
       "coming_soon": 0,
-      "unknown": 552
+      "unknown": 537,
+      "listed_current": 18
     },
+    "activeCanonicalPlaces": 564,
     "freshness": {
-      "lt7Days": 1,
-      "days7To30": 0,
+      "lt7Days": 2,
+      "days7To30": 1,
       "days30To90": 563,
       "gt90Days": 0,
       "unknown": 0
@@ -108,25 +110,25 @@
     }
   },
   "restaurantCoveragePercent": {
-    "officialWebsite": 42,
-    "verifiedOfficialWebsite": 42.7,
-    "inspection": 57.8,
-    "menu": 29.6,
-    "verifiedMenu": 26.1,
-    "specials": 18.3,
+    "officialWebsite": 42.2,
+    "verifiedOfficialWebsite": 42.6,
+    "inspection": 57.6,
+    "menu": 29.5,
+    "verifiedMenu": 26,
+    "specials": 18.2,
     "verifiedSpecials": 7.6,
     "reservations": 11.3,
-    "ordering": 14.2,
+    "ordering": 14.1,
     "events": 8.5,
     "structuredUpcomingEvents": 0.2,
-    "social": 28.5,
-    "phone": 36.5,
+    "social": 28.4,
+    "phone": 36.6,
     "hours": 34.6,
-    "coordinates": 98,
+    "coordinates": 97.7,
     "neighbourhood": 100,
     "cuisine": 100,
-    "accessibility": 29.8,
-    "patio": 12.8,
+    "accessibility": 29.7,
+    "patio": 12.7,
     "media": 1.2
   },
   "socialAudit": {
@@ -155,7 +157,7 @@
     "candidatePlacesAwaitingVerification": 0,
     "staleSocialVerificationPlaces": 0,
     "noWebsitePlaces": 327,
-    "websiteButNoSocialPlaces": 102,
+    "websiteButNoSocialPlaces": 104,
     "priorityGapQueue": {
       "websiteButNoSocial": [
         {
@@ -1164,52 +1166,51 @@
     }
   },
   "eventCoverage": {
-    "currentCityEvents": 126,
+    "currentCityEvents": 109,
     "allStoredCityEvents": 189,
-    "cityEventSources": 8,
+    "cityEventSources": 7,
     "bySource": {
-      "Tourism Nova Scotia Events": 14,
-      "Halifax Mooseheads Home Schedule": 31,
-      "HFX Wanderers 2026 Home Schedule": 2,
-      "Scotiabank Centre": 26,
-      "Symphony Nova Scotia": 33,
-      "Light House Arts Centre": 16,
-      "Halifax Tides 2026 Home Schedule": 1,
+      "Tourism Nova Scotia Events": 10,
+      "Scotiabank Centre": 23,
+      "Halifax Mooseheads Home Schedule": 27,
+      "Symphony Nova Scotia": 31,
+      "HFX Wanderers 2026 Home Schedule": 1,
+      "Light House Arts Centre": 14,
       "Neptune Theatre": 3
     },
     "byCategory": {
       "Food & Drink": 5,
-      "Arts": 71,
+      "Arts": 63,
       "Outdoor": 3,
-      "Community": 9,
+      "Community": 8,
       "Comedy": 3,
-      "Sports": 52,
-      "Music": 46,
+      "Sports": 44,
+      "Music": 43,
       "Festivals": 3,
       "Family": 3
     },
     "byMunicipality": {
-      "Halifax": 126
+      "Halifax": 109
     },
     "withVenueRestaurantNameMatch": 0,
     "withCoordinates": 0,
-    "withTicketLink": 126,
-    "withPrice": 7,
+    "withTicketLink": 109,
+    "withPrice": 6,
     "freeEvents": 0,
     "duplicateEventCount": 0,
     "structuredRestaurantEvents": 20,
-    "structuredUpcomingRestaurantEvents": 2,
+    "structuredUpcomingRestaurantEvents": 1,
     "canonicalRestaurantsWithStructuredUpcomingEvents": 1,
-    "upcomingStructuredRestaurantEventRecords": 2,
-    "expiredStructuredRestaurantEvents": 18,
-    "next7Days": 3,
-    "next30Days": 25
+    "upcomingStructuredRestaurantEventRecords": 1,
+    "expiredStructuredRestaurantEvents": 19,
+    "next7Days": 8,
+    "next30Days": 24
   },
   "discoveryCoverage": {
     "directoryRecords": 769,
     "directoryNewToCatalog": 581,
     "openingWatchLeads": 12,
-    "reviewedDiscoveredRestaurants": 12
+    "reviewedDiscoveredRestaurants": 14
   },
   "sourceFailures": {
     "officialWebsiteChecks": 63,

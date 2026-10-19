@@ -88,7 +88,9 @@ jobs:
         run: node scripts/validate-data.mjs
 
       - name: Check restaurant lifecycle
-        run: node scripts/check-restaurant-lifecycle.mjs
+        run: |
+          node scripts/check-restaurant-lifecycle.mjs
+          node scripts/build-restaurant-lifecycle-report.mjs
 
       - name: Check data integrity
         run: node scripts/check-data-integrity.mjs
@@ -103,7 +105,9 @@ jobs:
         run: node scripts/check-restaurant-discovery.mjs
 
       - name: Test lifecycle language
-        run: node scripts/test-lifecycle-language.mjs
+        run: |
+          node scripts/test-lifecycle-language.mjs
+          node scripts/test-data-trust-corrections.mjs
 
       - name: Check restaurant media rights
         run: node scripts/check-restaurant-media-rights.mjs

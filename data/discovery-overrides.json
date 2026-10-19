@@ -2,6 +2,56 @@
   "version": 2,
   "approved": [
     {
+      "id": "heal-wellness-bayers-lake",
+      "name": "HEAL Wellness - Bayers Lake",
+      "neighborhood": "Bayers Lake",
+      "category": "Cafe",
+      "cuisines": ["Smoothies", "Açaí bowls", "Wellness drinks"],
+      "vibe": ["healthy", "quick service", "takeaway"],
+      "qualityScore": 76,
+      "freshnessDate": "2026-10-19",
+      "evidenceStatus": "verified",
+      "address": "218 Chain Lake Drive, Halifax, NS",
+      "website": "https://healwellness.ca/locations/",
+      "openingStatus": "open",
+      "summary": "HEAL Wellness's official location directory lists its Bayers Lake shop at 218 Chain Lake Drive.",
+      "sources": [
+        {
+          "label": "HEAL Wellness official locations",
+          "type": "restaurant_site",
+          "url": "https://healwellness.ca/locations/",
+          "status": "verified"
+        }
+      ],
+      "reviewNote": "Published as a location-specific current business from the official location directory; coordinates remain unset pending an authoritative coordinate source."
+    },
+    {
+      "id": "waaris-dartmouth",
+      "name": "WAARIS Cuisine of India",
+      "neighborhood": "Dartmouth Crossing",
+      "category": "Restaurant",
+      "cuisines": ["Indian"],
+      "vibe": ["dine-in", "takeaway", "catering"],
+      "qualityScore": 78,
+      "freshnessDate": "2026-10-19",
+      "evidenceStatus": "verified",
+      "address": "151 Hector Gate, Dartmouth, NS B3B 0E5",
+      "phone": "902-404-6777",
+      "website": "https://www.thewaaris.com/",
+      "openingHours": "Daily 11:00am-9:30pm; express lunch Monday-Friday 11:30am-3:00pm",
+      "openingStatus": "open",
+      "summary": "Dartmouth Indian restaurant offering dine-in, takeout and catering, listed at 151 Hector Gate on its official site.",
+      "sources": [
+        {
+          "label": "WAARIS official website",
+          "type": "restaurant_site",
+          "url": "https://www.thewaaris.com/",
+          "status": "verified"
+        }
+      ],
+      "reviewNote": "Official site confirms the exact Dartmouth identity, address, phone and current hours; coordinates remain unset rather than inferred."
+    },
+    {
       "id": "sakaba-halifax",
       "name": "Sakaba",
       "neighborhood": "Waterfront",

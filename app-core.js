@@ -164,6 +164,8 @@ function applyReviewedPlaceResolution(restaurant) {
   restaurant.website ||= resolution.website;
   restaurant.socialProfiles = [...(restaurant.socialProfiles || []), ...(resolution.socialProfiles || [])];
   restaurant.operatingStatus = resolution.operatingStatus || restaurant.operatingStatus;
+  restaurant.closureDate = resolution.closureDate || restaurant.closureDate;
+  restaurant.operatingStatusEvidence = resolution.operatingStatusEvidence || restaurant.operatingStatusEvidence;
   restaurant.reviewedPlaceResolution = resolution;
   restaurant.sources = mergeSources(restaurant.sources, [
     source,

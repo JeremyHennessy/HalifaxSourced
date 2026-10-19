@@ -531,12 +531,35 @@ const closedState = await page.evaluate(() => ({
 if (!/Permanently closed/i.test(closedState.badge) || !/April 29, 2026/.test(closedState.notice) || /menu|order|reserv/i.test(closedState.actionText)) throw new Error(`Expected an archived Field Guide detail without current commerce actions, got ${JSON.stringify(closedState)}.`);
 if (new Set(closedState.visibleActionLabels).size !== closedState.visibleActionLabels.length) throw new Error(`Duplicate visible mobile actions found on closed detail: ${JSON.stringify(closedState.visibleActionLabels)}.`);
 await captureIphone("closed-field-guide");
+await page.goto(`${url}/#restaurant/osm-node-11552061304-sushi-shige`, { waitUntil: "networkidle" });
+await page.locator(".closure-notice", { hasText: "Permanently closed" }).waitFor();
+const sushiClosedState = await page.evaluate(() => ({
+  badge: document.querySelector(".title-badges")?.textContent || "",
+  notice: document.querySelector(".closure-notice")?.textContent || "",
+  currentActions: document.querySelectorAll(".detail-official-actions,.mobile-essential-actions").length
+}));
+if (!/Permanently closed/i.test(sushiClosedState.badge) || !/September 19, 2026/.test(sushiClosedState.notice) || sushiClosedState.currentActions) throw new Error(`Expected an archived Sushi Shige detail without current actions, got ${JSON.stringify(sushiClosedState)}.`);
+await captureIphone("closed-sushi-shige");
 await page.goto(`${url}/#explore`, { waitUntil: "networkidle" });
 await page.locator("#globalSearch").fill("Field Guide");
 await page.locator("#globalSearch").press("Enter");
 await page.waitForURL(/#explore/);
 await page.locator(".results-area").waitFor();
 if (await page.locator(".restaurant-card", { hasText: "Field Guide" }).count()) throw new Error("Closed Field Guide leaked into active discovery results.");
+await page.locator("#globalSearch").fill("Sushi Shige");
+await page.locator("#globalSearch").press("Enter");
+await page.locator(".results-area").waitFor();
+if (await page.locator(".restaurant-card", { hasText: "Sushi Shige" }).count()) throw new Error("Closed Sushi Shige leaked into active discovery results.");
+await page.goto(`${url}/#restaurant/heal-wellness-bayers-lake`, { waitUntil: "networkidle" });
+await page.locator("h1", { hasText: "HEAL Wellness - Bayers Lake" }).waitFor();
+if (!/218 Chain Lake Drive/.test(await page.locator("body").innerText())) throw new Error("HEAL Bayers Lake did not render its official location identity.");
+await captureIphone("heal-bayers-lake");
+await page.goto(`${url}/#restaurant/waaris-dartmouth`, { waitUntil: "networkidle" });
+await page.locator("h1", { hasText: "WAARIS Cuisine of India" }).waitFor();
+if (!/151 Hector Gate/.test(await page.locator("body").innerText())) throw new Error("WAARIS did not render its official Dartmouth identity.");
+const teaStates = await page.evaluate(() => Object.fromEntries((window.HALIFAX_STRUCTURED_SPECIALS?.records || []).filter((record) => /Afternoon Tea/.test(record.title)).map((record) => [record.title, record.status])));
+if (teaStates["Afternoon Tea — October 17"] !== "expired" || teaStates["Afternoon Tea — November 14"] !== "source_lead") throw new Error(`Seaport Social tea lifecycle states are incorrect: ${JSON.stringify(teaStates)}`);
+await captureIphone("waaris-dartmouth");
 await page.goto(`${url}/#restaurant/highwayman`, { waitUntil: "networkidle" });
 await page.locator("h1", { hasText: "Highwayman" }).waitFor();
 await page.evaluate(() => {
