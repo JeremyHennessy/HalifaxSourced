@@ -1,9 +1,12 @@
 import { fetchGuardedSource as fetch } from "./lib/fetch-public-source.mjs";
 import { mkdir, readFile, writeFile } from "node:fs/promises";
+import { blockedFactReason, inactiveFactStatuses, reconcilePlaceFacts } from './lib/place-facts-history.mjs';
 
 const catalog = JSON.parse(await readFile(new URL("../data/build/catalog.json", import.meta.url), "utf8"));
 const firstParty = JSON.parse(await readFile(new URL("../data/build/first-party-sources.json", import.meta.url), "utf8"));
 const verifiedPages = JSON.parse(await readFile(new URL("../data/build/verified-source-pages.json", import.meta.url), "utf8").catch(() => "{}"));
+const previous = JSON.parse(await readFile(new URL('../data/build/structured-place-facts.json', import.meta.url), 'utf8').catch(error => { if (error.code === 'ENOENT') return '{}'; throw error; }));
+if (previous.records !== undefined && !Array.isArray(previous.records)) throw new Error('Invalid accepted place-facts records; refusing refresh');
 const limit = Number(process.env.STRUCTURED_PLACE_FACT_LIMIT ?? 9999);
 const delayMs = Number(process.env.STRUCTURED_PLACE_FACT_DELAY_MS ?? 120);
 const timeoutMs = Number(process.env.STRUCTURED_PLACE_FACT_TIMEOUT_MS ?? 10000);
@@ -116,9 +119,17 @@ const placesById=new Map((catalog.restaurants||[]).map((p)=>[p.id,p]));
 const verifiedRecords=Array.isArray(verifiedPages.records)?verifiedPages.records:Array.isArray(verifiedPages.pages)?verifiedPages.pages:[];
 const verifiedByRestaurant=new Map();
 for(const page of verifiedRecords){ const id=page.restaurantId; if(!id)continue; if(!verifiedByRestaurant.has(id))verifiedByRestaurant.set(id,[]); verifiedByRestaurant.get(id).push(page); }
-const targets=(firstParty.records||[]).filter((r)=>placesById.has(r.restaurantId)&&safeUrl(r.resolvedUrl||r.website)).slice(0,limit);
-const output=new Array(targets.length); const failures=[]; let cursor=0;
-async function worker(){ while(true){ const i=cursor++; if(i>=targets.length)return; const source=targets[i]; const place=placesById.get(source.restaurantId); const observedAt=new Date().toISOString(); const fetched=await fetchHtml(source.resolvedUrl||source.website); if(!fetched.html){failures.push({restaurantId:source.restaurantId,sourceUrl:source.resolvedUrl||source.website,reason:fetched.error}); continue;} const nodes=[]; for(const m of fetched.html.matchAll(/<script\b[^>]*type\s*=\s*["']application\/ld\+json["'][^>]*>([\s\S]*?)<\/script>/gi)){try{flattenJsonLd(JSON.parse(m[1].trim()),nodes);}catch{}} const fact={restaurantId:source.restaurantId,name:place.name,sourceUrl:fetched.url,observedAt,lastVerifiedAt:observedAt,sourceKind:"official_website_structured_facts",reviewState:"verified_source",hours:null,phone:null,email:null,address:null,features:[],menus:[],reservations:[],ordering:[]};
+const targets=(firstParty.records||[]).filter((r)=>placesById.has(r.restaurantId)&&!inactiveFactStatuses.has(placesById.get(r.restaurantId).operatingStatus)&&safeUrl(r.resolvedUrl||r.website)).slice(0,limit);
+const accessRestrictions = [...(previous.accessRestrictions || []), ...(previous.failures || []).filter(item => blockedFactReason(item.reason))]
+  .filter((item,index,all) => all.findIndex(other => other.sourceUrl === item.sourceUrl) === index);
+const knownBlocked = new Map(accessRestrictions.map(item => [item.sourceUrl, item.reason]));
+const output=new Array(targets.length); const failures=[]; const observations=[]; let cursor=0;
+async function worker(){ while(true){ const i=cursor++; if(i>=targets.length)return; const source=targets[i]; const place=placesById.get(source.restaurantId); const observedAt=new Date().toISOString(); const sourceUrl=source.resolvedUrl||source.website;
+      const blocked=knownBlocked.get(sourceUrl);
+      const fetched=blocked?{error:blocked}:await fetchHtml(sourceUrl);
+      if(!fetched.html){const failure={restaurantId:source.restaurantId,sourceUrl,reason:fetched.error,checkedAt:observedAt,attempted:!blocked}; failures.push(failure); if(!blocked&&blockedFactReason(fetched.error))accessRestrictions.push(failure); observations.push({restaurantId:source.restaurantId,state:blockedFactReason(fetched.error)?'blocked':'failed',reason:fetched.error,checkedAt:observedAt,attempted:!blocked}); continue;}
+      observations.push({restaurantId:source.restaurantId,state:'refreshed',checkedAt:observedAt,attempted:true});
+      const nodes=[]; for(const m of fetched.html.matchAll(/<script\b[^>]*type\s*=\s*["']application\/ld\+json["'][^>]*>([\s\S]*?)<\/script>/gi)){try{flattenJsonLd(JSON.parse(m[1].trim()),nodes);}catch{}} const fact={restaurantId:source.restaurantId,name:place.name,sourceUrl:fetched.url,observedAt,lastVerifiedAt:observedAt,sourceKind:"official_website_structured_facts",reviewState:"verified_source",hours:null,phone:null,email:null,address:null,features:[],menus:[],reservations:[],ordering:[]};
       for(const node of nodes){ if(!fact.phone && node.telephone) fact.phone=String(node.telephone).trim(); if(!fact.email && node.email) fact.email=String(node.email).replace(/^mailto:/i,"").trim(); if(!fact.address) fact.address=structuredAddress(node); if(!fact.hours){ fact.hours=parseOpeningHoursSpecification(node.openingHoursSpecification)||parseOpeningHoursStrings(node.openingHours); } }
       if(!fact.phone){ const tel=fetched.html.match(/href\s*=\s*["']tel:([^"']+)["']/i); if(tel)fact.phone=cleanText(tel[1]); }
       const text=cleanText(fetched.html); for(const [feature,re] of featurePatterns){ const match=text.match(re); if(match)fact.features.push({feature,evidencePhrase:match[0],sourceUrl:fetched.url,observedAt,lastVerifiedAt:observedAt,confidence:"official_source_explicit_text"}); }
@@ -126,9 +137,12 @@ async function worker(){ while(true){ const i=cursor++; if(i>=targets.length)ret
       for(const link of source.relatedLinks||[]){ const url=safeUrl(link.url); if(!url)continue; if(link.kind==='reservations')fact.reservations.push({provider:provider(url,reservationProviders)||"restaurant_owned",url,locationSpecific:true,observedAt:link.observedAt||observedAt,verifiedAt:link.lastVerifiedAt||link.observedAt||observedAt,status:"verified_link"}); if(link.kind==='ordering')fact.ordering.push({provider:provider(url,orderingProviders)||"restaurant_owned",url,locationSpecific:true,mode:/doordash|ubereats|skipthedishes/i.test(url)?"third_party_delivery":"first_party_or_direct",observedAt:link.observedAt||observedAt,verifiedAt:link.lastVerifiedAt||link.observedAt||observedAt,status:"verified_link"}); if(link.kind==='menu' && !fact.menus.some((m)=>m.url===url))fact.menus.push({menuType:menuType(link.label,url),title:link.label||"Menu",url,format:/\.pdf(?:$|\?)/i.test(url)?"pdf":"html",locationSpecific:true,verifiedAt:link.lastVerifiedAt||link.observedAt||observedAt,source:"official_website_link",status:"verified_link"}); }
       const dedupe=(arr,key)=>arr.filter((x,j,a)=>a.findIndex((y)=>key(y)===key(x))===j); fact.features=dedupe(fact.features,(x)=>x.feature); fact.menus=dedupe(fact.menus,(x)=>x.url); fact.reservations=dedupe(fact.reservations,(x)=>x.url); fact.ordering=dedupe(fact.ordering,(x)=>x.url);
       if(fact.hours||fact.phone||fact.email||fact.address||fact.features.length||fact.menus.length||fact.reservations.length||fact.ordering.length)output[i]=fact;
+      else Object.assign(observations.at(-1), {state:'inconclusive',reason:'no_extractable_facts'});
       if(delayMs>0)await sleep(delayMs);
   }}
 await Promise.all(Array.from({length:Math.min(concurrency,targets.length||1)},()=>worker()));
-const records=output.filter(Boolean); const counts={records:records.length,hours:records.filter(r=>r.hours).length,phone:records.filter(r=>r.phone).length,email:records.filter(r=>r.email).length,address:records.filter(r=>r.address).length,features:records.filter(r=>r.features.length).length,menus:records.filter(r=>r.menus.length).length,reservations:records.filter(r=>r.reservations.length).length,ordering:records.filter(r=>r.ordering.length).length};
-const payload={version:1,generatedAt:new Date().toISOString(),checkedPlaces:targets.length,failures:failures.slice(0,200),counts,records};
+const generatedAt=new Date().toISOString();
+const reconciled=reconcilePlaceFacts({previous,fresh:output.filter(Boolean),catalog:catalog.restaurants||[],observations,checkedAt:generatedAt});
+const {records}=reconciled; const counts={records:records.length,hours:records.filter(r=>r.hours).length,phone:records.filter(r=>r.phone).length,email:records.filter(r=>r.email).length,address:records.filter(r=>r.address).length,features:records.filter(r=>r.features?.length).length,menus:records.filter(r=>r.menus?.length).length,reservations:records.filter(r=>r.reservations?.length).length,ordering:records.filter(r=>r.ordering?.length).length};
+const payload={version:1,generatedAt,checkedPlaces:targets.length,failures,accessRestrictions,counts,...reconciled};
 await mkdir(new URL("../data/build",import.meta.url),{recursive:true}); await writeFile(new URL("../data/build/structured-place-facts.json",import.meta.url),JSON.stringify(payload,null,2)+"\n"); await writeFile(new URL("../data/structured-place-facts.js",import.meta.url),`window.HALIFAX_STRUCTURED_PLACE_FACTS = ${JSON.stringify(payload,null,2)};\n`); console.log(JSON.stringify({checkedPlaces:targets.length,failures:failures.length,...counts},null,2));

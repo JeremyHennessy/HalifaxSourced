@@ -69,6 +69,24 @@ const localPolicyExcludedIds = new Set(
 );
 
 const allRecords = Array.isArray(facts.records) ? facts.records : [];
+// Older accepted payloads predate collection receipts. New refreshes must keep
+// record totals, attempt states and carried provenance independently auditable.
+if (facts.refreshObservations) {
+  if (facts.counts?.records !== allRecords.length) errors.push('refresh_record_count_mismatch');
+  const observationIds = new Set();
+  for (const item of facts.refreshObservations) {
+    if (observationIds.has(item.restaurantId)) errors.push(`duplicate_refresh_observation:${item.restaurantId}`);
+    observationIds.add(item.restaurantId);
+    if (!validDate(item.checkedAt) || !['changed','unchanged','failed','blocked','inconclusive','not_attempted'].includes(item.state)) errors.push(`invalid_refresh_observation:${item.restaurantId}`);
+    if (item.state === 'not_attempted' && item.attempted !== false) errors.push(`invalid_unattempted_receipt:${item.restaurantId}`);
+  }
+  for (const [state, count] of Object.entries(facts.refreshCounts || {})) {
+    if (count !== facts.refreshObservations.filter(item => item.state === state).length) errors.push(`refresh_count_mismatch:${state}`);
+  }
+  for (const entry of facts.sourceHistory || []) {
+    if (!entry.record?.restaurantId || !validDate(entry.record.observedAt) || !validDate(entry.record.lastVerifiedAt) || !validDate(entry.retainedAt)) errors.push('invalid_source_history_provenance');
+  }
+}
 const publicRecords = allRecords.filter((record) => !excludedByLocalPolicy(record, localPolicyExcludedIds));
 const localPolicyExcludedRecords = allRecords.length - publicRecords.length;
 
