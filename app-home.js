@@ -68,11 +68,14 @@ function renderHome() {
 }
 
 function homeUpcomingCityEvents() {
-  const items = Array.isArray(window.HALIFAX_CITY_EVENTS?.events) ? window.HALIFAX_CITY_EVENTS.events : [];
-  const cutoff = Date.now() - 30 * 60 * 1000;
-  return items
-    .filter((event) => Number.isFinite(Date.parse(event.startAt)) && Date.parse(event.endAt || event.startAt) >= cutoff)
-    .sort((a, b) => String(a.startAt).localeCompare(String(b.startAt)) || String(a.title).localeCompare(String(b.title)));
+  // Reuse the Events page's Halifax-local date and effective-soonest ordering.
+  // Season summaries and long-running exhibitions belong in the full directory,
+  // not the short "What's on next" list.
+  if (typeof activeCityEvents === "function") {
+    return activeCityEvents().filter((event) =>
+      isDiscoverableCityEvent(event) && !eventIsLongRunning(event));
+  }
+  return [];
 }
 
 function topCuisineButtons(limit) {
@@ -163,9 +166,14 @@ function sourceLabel(restaurant) {
 }
 
 function homeEventWhen(event) {
-  const date = new Date(event.startAt);
-  if (Number.isNaN(date.getTime())) return "Upcoming";
-  return date.toLocaleDateString("en-CA", { month: "short", day: "numeric", timeZone: "America/Halifax" });
+  const dates = window.__halifaxEventDateDebug;
+  if (!dates) return "Upcoming";
+  const startKey = dates.eventBoundaryKey(event, "startAt");
+  const endKey = dates.eventBoundaryKey(event, "endAt") || startKey;
+  const today = dates.eventBoundaryKey({ startAt: new Date().toISOString() }, "startAt");
+  if (startKey && endKey && startKey < today && endKey >= today) return "Ongoing";
+  const badge = dates.eventDateBadge(event);
+  return badge.primary === "TBD" ? "Upcoming" : `${badge.label} ${badge.primary}`;
 }
 
 function cityEventLeadRow(event) {

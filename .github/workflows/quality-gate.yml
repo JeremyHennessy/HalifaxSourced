@@ -52,6 +52,7 @@ jobs:
           node scripts/test-robots-redirect-guards.mjs
           node scripts/test-local-media-repair.mjs
           node scripts/test-event-refresh-dedupe.mjs
+          node scripts/test-canonical-event-dedupe.mjs
 
       - name: Export reviewed catalog before dependent builds
         run: |

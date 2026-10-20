@@ -122,6 +122,12 @@ const currentOfferIntegrity = await page.evaluate(() => {
   return { advertised: advertised.length, invalid };
 });
 if (currentOfferIntegrity.invalid.length || currentOfferIntegrity.advertised !== totals.verifiedCurrentSpecials) throw new Error(`Current-offer evidence mismatch: ${JSON.stringify(currentOfferIntegrity)}; totals=${JSON.stringify(totals)}.`);
+const homeDiscovery = await page.evaluate(() => ({
+  invalidEvents: homeUpcomingCityEvents().filter(event => !isDiscoverableCityEvent(event) || eventIsLongRunning(event)).map(event => event.id),
+  adminLinks: document.querySelectorAll('.home-action-section a[href^="#admin/"]').length,
+  setupCopy: /Meta secrets|Thumbnail admin|Admin-approved post intelligence/.test(document.querySelector('#app-view')?.textContent || document.body.textContent)
+}));
+if (homeDiscovery.invalidEvents.length || homeDiscovery.adminLinks || homeDiscovery.setupCopy) throw new Error(`Public home discovery regression: ${JSON.stringify(homeDiscovery)}`);
 await page.screenshot({ path: resolve("artifacts", "ui-check-desktop.png"), fullPage: true });
 
 // Regression for the wide desktop hero: its right-aligned portrait artwork must
