@@ -18,7 +18,8 @@ try {
     ['sushi-square-scotia-square','current-sushi-square'],
     ['hux-halifax','current-hux'],
     ['osm-node-4421124794-cafe-marco-polo','current-marco-polo'],
-    ['evans-fresh-seafoods-dartmouth','current-evans-seafood']
+    ['evans-fresh-seafoods-dartmouth','current-evans-seafood'],
+    ['chanoeys-pasta-dartmouth','current-chanoeys-pasta']
   ]) {
     await page.goto(`${base}/#restaurant/${id}`,{waitUntil:'networkidle'});
     await page.locator('.restaurant-hero').waitFor();
@@ -27,6 +28,20 @@ try {
       return {active:isRestaurantActive(place),hours:place.openingHours,phone:place.phone,address:place.address,image:Boolean(permittedImageFor(place)),actions:place.menuLinks.length+place.orderingLinks.length+place.reservationLinks.length,overflow:document.documentElement.scrollWidth-innerWidth};
     },id);
     assert(model.overflow<=2,label+' horizontal overflow');
+    if (label === 'current-chanoeys-pasta') {
+      assert(model.active);
+      assert.equal(model.address, '41 Portland Street, Dartmouth, NS B2Y 1H1');
+      assert.equal(model.phone, '902-405-2211');
+      assert.equal(model.image, false, 'Web photos are reference-only');
+      assert.equal(await page.locator('#detailMenu a[href="https://www.chanoeyspasta.com/menu"]').count(),1);
+      const schedule = await page.evaluate(() => {
+        const place = restaurants.find(record=>record.id === 'chanoeys-pasta-dartmouth');
+        return {closure:restaurantDisplayedHours(place,new Date('2026-10-20T16:00:00Z')),normal:restaurantDisplayedHours(place,new Date('2026-10-23T16:00:00Z')),today:restaurantDisplayedHours(place)};
+      });
+      assert.equal(schedule.closure, 'Scheduled closure Oct 9–22, 2026');
+      assert.equal(schedule.normal, model.hours);
+      assert((await page.locator('#detailOverview .mobile-essential-facts').innerText()).includes(schedule.today), 'Mobile essential hours reflect dated owner exception');
+    }
     if (label === 'current-evans-seafood') {
       assert(model.active);
       assert.equal(model.hours, 'Mo-Su 11:00-20:00');
