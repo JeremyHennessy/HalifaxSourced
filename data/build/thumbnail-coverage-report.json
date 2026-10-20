@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-06T04:15:35.055Z",
-  "sourceCommitSha": null,
+  "generatedAt": "2026-10-20T13:53:04.117Z",
+  "sourceCommitSha": "21bc7c5ea62920d25d962b6b44bfb3200fc1cc4c",
   "definitions": {
     "approvedThumbnail": "A thumbnail candidate tied to an exact restaurant ID with approved review state and production-approved rights status.",
     "anyThumbnailCandidate": "Any source-backed thumbnail lead for a restaurant, including official feed, Meta API, official page metadata, or already approved media.",
@@ -10,50 +10,50 @@
   },
   "counts": {
     "restaurants": 554,
-    "candidates": 2424,
-    "approvedCandidates": 6,
-    "reviewCandidates": 2418,
-    "restaurantsWithApprovedThumbnail": 6,
-    "restaurantsWithAnyCandidate": 196,
-    "restaurantsMissingApprovedThumbnail": 548,
-    "restaurantsMissingAnyCandidate": 358,
-    "promotionQueue": 134,
+    "candidates": 2452,
+    "approvedCandidates": 8,
+    "reviewCandidates": 2444,
+    "restaurantsWithApprovedThumbnail": 8,
+    "restaurantsWithAnyCandidate": 199,
+    "restaurantsMissingApprovedThumbnail": 546,
+    "restaurantsMissingAnyCandidate": 355,
+    "promotionQueue": 132,
     "sourceCheckQueue": 47,
-    "discoveryQueue": 358,
+    "discoveryQueue": 355,
     "fetchFailures": 200
   },
   "coveragePercent": {
-    "approvedThumbnail": 1.1,
-    "anyThumbnailCandidate": 35.4,
-    "missingApprovedThumbnail": 98.9,
-    "missingAnyThumbnailCandidate": 64.6
+    "approvedThumbnail": 1.4,
+    "anyThumbnailCandidate": 35.9,
+    "missingApprovedThumbnail": 98.6,
+    "missingAnyThumbnailCandidate": 64.1
   },
   "candidateMix": {
     "bySourceKind": {
-      "approved_restaurant_media": 6,
-      "official_page_thumbnail_candidate": 2235,
+      "approved_restaurant_media": 8,
+      "official_page_thumbnail_candidate": 2261,
       "official_feed_media": 48,
       "retained_media_reference": 84,
       "public_campaign_menu_image": 40,
       "directory_source_image": 11
     },
     "byReviewState": {
-      "approved": 6,
-      "candidate_review": 2345,
+      "approved": 8,
+      "candidate_review": 2371,
       "source_check": 56,
       "rejected": 17
     },
     "byRightsStatus": {
-      "production_approved": 6,
-      "requires_rights_review": 2401,
+      "production_approved": 8,
+      "requires_rights_review": 2427,
       "rejected": 17
     },
     "byExtractionMethod": {
-      "approved_media_manifest": 6,
-      "html_link_image": 246,
-      "html_img_content": 1323,
+      "approved_media_manifest": 8,
+      "html_link_image": 248,
+      "html_img_content": 1341,
       "declared_post_media": 350,
-      "css_background_image": 275,
+      "css_background_image": 281,
       "html_meta_image": 37,
       "jsonld_image": 52,
       "retained_public_reference": 84,
@@ -1910,28 +1910,6 @@
         }
       },
       {
-        "restaurantId": "osm-node-886747513-trident-booksellers-and-cafe",
-        "name": "Trident Booksellers and Cafe",
-        "neighborhood": "Waterfront",
-        "website": "https://tridenthalifax.ca/",
-        "candidateCount": 5,
-        "sourceKinds": {
-          "official_page_thumbnail_candidate": 5
-        },
-        "reviewStates": {
-          "candidate_review": 5
-        },
-        "bestCandidate": {
-          "id": "thumb-224c2c73b2b6135a36",
-          "thumbnailUrl": "https://tridenthalifax.ca/wp-content/uploads/2024/01/Trident-Halifax-Cafe-flowers-400x400-1-300x300.jpg",
-          "sourceUrl": "https://tridenthalifax.ca/",
-          "sourceKind": "official_page_thumbnail_candidate",
-          "reviewState": "candidate_review",
-          "rightsStatus": "requires_rights_review",
-          "confidence": "official_page_source_media"
-        }
-      },
-      {
         "restaurantId": "osm-node-4420916900-board-room-game-cafe",
         "name": "Board Room Game Cafe",
         "neighborhood": "South End",
@@ -3107,31 +3085,31 @@
           "rightsStatus": "requires_rights_review",
           "confidence": "official_page_source_media"
         }
-      },
-      {
-        "restaurantId": "osm-way-96322798-wooden-monkey",
-        "name": "Wooden Monkey",
-        "neighborhood": "Downtown",
-        "website": "https://www.thewoodenmonkey.ca/",
-        "candidateCount": 1,
-        "sourceKinds": {
-          "official_page_thumbnail_candidate": 1
-        },
-        "reviewStates": {
-          "candidate_review": 1
-        },
-        "bestCandidate": {
-          "id": "thumb-acdbe7c5b897cc2a85",
-          "thumbnailUrl": "https://cdn.prod.website-files.com/5a9175138433cb00017eefdf/5a9175138433cb00017ef019_imageedit_1_2839820776.png",
-          "sourceUrl": "https://www.thewoodenmonkey.ca/special-menus",
-          "sourceKind": "official_page_thumbnail_candidate",
-          "reviewState": "candidate_review",
-          "rightsStatus": "requires_rights_review",
-          "confidence": "official_page_source_media"
-        }
       }
     ],
     "sourceCheckQueue": [
+      {
+        "restaurantId": "osm-node-13141377001-india-paradise",
+        "name": "India Paradise",
+        "neighborhood": "Downtown",
+        "website": "https://www.indiaparadise.ca/halifax/downtown/home",
+        "candidateCount": 20,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 20
+        },
+        "reviewStates": {
+          "candidate_review": 20
+        },
+        "bestCandidate": {
+          "id": "thumb-36aeab680a8a5028bf",
+          "thumbnailUrl": "https://cdn.prod.website-files.com/6261c545bac2436193a5b09b/6261ccf21a64303e254b725a_logo.png",
+          "sourceUrl": "https://www.indiaparadise.ca/halifax/downtown/home",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "remote_image_host_needs_source_check"
+        }
+      },
       {
         "restaurantId": "osm-node-11612206582-swaad-sagaa-indian-cuisine-incorporated",
         "name": "Swaad Sagaa Indian Cuisine Incorporated",
@@ -3923,29 +3901,6 @@
           "reviewState": "candidate_review",
           "rightsStatus": "requires_rights_review",
           "confidence": "remote_image_host_needs_source_check"
-        }
-      },
-      {
-        "restaurantId": "osm-way-96322798-wooden-monkey",
-        "name": "Wooden Monkey",
-        "neighborhood": "Downtown",
-        "website": "https://www.thewoodenmonkey.ca/",
-        "candidateCount": 2,
-        "sourceKinds": {
-          "official_feed_media": 1,
-          "public_campaign_menu_image": 1
-        },
-        "reviewStates": {
-          "source_check": 2
-        },
-        "bestCandidate": {
-          "id": "thumb-e6960a2e22b1285769",
-          "thumbnailUrl": "https://discoverhalifaxns.com/wp-content/uploads/2026/01/106935_menu_photo_9fdf3e22-7757-488b-b623-55004caed5dd-rotated.jpg",
-          "sourceUrl": "https://discoverhalifaxns.com/dinearound/menu/the-wooden-monkey-halifax-dine-around-2026/?menu=dine-around-3-courses-50",
-          "sourceKind": "official_feed_media",
-          "reviewState": "source_check",
-          "rightsStatus": "requires_rights_review",
-          "confidence": "official_feed_media"
         }
       },
       {
@@ -5683,16 +5638,6 @@
         "bestCandidate": null
       },
       {
-        "restaurantId": "osm-node-13141377001-india-paradise",
-        "name": "India Paradise",
-        "neighborhood": "Downtown",
-        "website": "https://www.indiaparadise.ca/halifax/downtown/home",
-        "candidateCount": 0,
-        "sourceKinds": {},
-        "reviewStates": {},
-        "bestCandidate": null
-      },
-      {
         "restaurantId": "osm-node-7347281231-indochine-banh-mi",
         "name": "Indochine Banh Mi",
         "neighborhood": "Downtown",
@@ -7143,16 +7088,6 @@
         "bestCandidate": null
       },
       {
-        "restaurantId": "osm-node-5151935621-the-bedford-basin-market",
-        "name": "the Bedford Basin Market",
-        "neighborhood": "Armdale / Fairview",
-        "website": "https://www.bedfordbasinmarket.com",
-        "candidateCount": 0,
-        "sourceKinds": {},
-        "reviewStates": {},
-        "bestCandidate": null
-      },
-      {
         "restaurantId": "osm-node-11611960223-the-big-wedge",
         "name": "The Big Wedge",
         "neighborhood": "North End",
@@ -7187,6 +7122,26 @@
         "name": "The Brooklyn Warehouse",
         "neighborhood": "North End",
         "website": "https://brooklynwarehouse.ca/",
+        "candidateCount": 0,
+        "sourceKinds": {},
+        "reviewStates": {},
+        "bestCandidate": null
+      },
+      {
+        "restaurantId": "osm-node-3789833657-the-brown-hound",
+        "name": "The Brown Hound",
+        "neighborhood": "North End",
+        "website": null,
+        "candidateCount": 0,
+        "sourceKinds": {},
+        "reviewStates": {},
+        "bestCandidate": null
+      },
+      {
+        "restaurantId": "osm-node-8622604791-the-brown-hound",
+        "name": "The Brown Hound",
+        "neighborhood": "Downtown",
+        "website": null,
         "candidateCount": 0,
         "sourceKinds": {},
         "reviewStates": {},
@@ -7854,7 +7809,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "official_feed_media",
-        "observedAt": "2026-09-04T13:39:13.555Z",
+        "observedAt": "2026-10-20T13:50:51.725Z",
         "publishedAt": "2026-09-02T17:13:14.000Z"
       },
       {
@@ -7867,7 +7822,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "official_feed_media",
-        "observedAt": "2026-09-04T13:39:13.555Z",
+        "observedAt": "2026-10-20T13:50:51.725Z",
         "publishedAt": "2026-09-01T14:22:55.000Z"
       },
       {
@@ -10428,7 +10383,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "official_feed_media",
-        "observedAt": "2026-09-04T13:39:18.762Z",
+        "observedAt": "2026-10-20T13:50:55.592Z",
         "publishedAt": "2026-05-04T18:38:33.000Z"
       },
       {
@@ -10441,7 +10396,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "official_feed_media",
-        "observedAt": "2026-09-04T13:39:18.762Z",
+        "observedAt": "2026-10-20T13:50:55.592Z",
         "publishedAt": "2026-05-04T17:55:38.000Z"
       },
       {
@@ -12101,9 +12056,9 @@
   "exports": {
     "sourceCheckQueueJson": "data/build/thumbnail-source-check-queue.json",
     "sourceCheckQueueCsv": "data/build/thumbnail-source-check-queue.csv",
-    "sourceCheckRows": 144,
+    "sourceCheckRows": 162,
     "ownerMediaOutreachJson": "data/build/owner-media-outreach.json",
     "ownerMediaOutreachCsv": "data/build/owner-media-outreach.csv",
-    "ownerMediaOutreachRows": 358
+    "ownerMediaOutreachRows": 355
   }
 }
