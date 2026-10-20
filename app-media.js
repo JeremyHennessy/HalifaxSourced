@@ -98,6 +98,40 @@ function permittedImageFor(restaurant) {
   return null;
 }
 
+// Separately labeled external image previews are *not* licensed production
+// media. A public source link neither proves an owner grant nor changes the
+// immutable rights records. Only the actual active catalog object may use this
+// explicit public preview path; synthetic/ad-hoc records cannot inject images.
+function sourcePreviewImageFor(restaurant) {
+  if (!restaurant || !isRestaurantActive(restaurant) ||
+      !Array.isArray(activeRestaurants) || !activeRestaurants.includes(restaurant)) return null;
+  const records = window.HALIFAX_MEDIA_SOURCE_REFERENCES?.records;
+  if (!Array.isArray(records)) return null;
+  for (const reference of records) {
+    if (reference.restaurantId !== restaurant.id || referenceMediaProblems(reference).length) continue;
+    if (reference.recordKind !== "source_reference" || reference.rightsState !== "unverified" ||
+        reference.permissionConfirmed !== false || reference.license != null) continue;
+    const url = publicMediaSourceUrl(reference.url);
+    const sourceUrl = publicMediaSourceUrl(reference.sourceUrl);
+    if (!url?.startsWith("https://") || !sourceUrl?.startsWith("https://")) continue;
+    // No social-host scraping or image proxy: browsers fetch the exact archived
+    // restaurant-site image directly, without a referring page.
+    const host = new URL(url).hostname.toLowerCase();
+    if (/(^|\.)(facebook\.com|instagram\.com|fbcdn\.net|tiktok\.com|google\.com|pinterest\.com)$/.test(host) ||
+        host.startsWith("scontent-")) continue;
+    return {
+      url, sourceUrl, alt: reference.alt, sourceType: "public_source_preview",
+      creator: reference.creator, attribution: reference.attribution,
+      rightsState: "unverified", externalPreview: true
+    };
+  }
+  return null;
+}
+
+function restaurantDisplayImageFor(restaurant) {
+  return permittedImageFor(restaurant) || sourcePreviewImageFor(restaurant);
+}
+
 function approvedMediaLocation(image) {
   const urls = [image.url, image.src, image.mediaUrl, image.thumbnailUrl]
     .filter(value => value != null && String(value).trim()).map(safeImageUrl);
@@ -160,19 +194,21 @@ function permittedPostMediaUrl(post) {
 }
 
 function mediaImageMarkup(restaurant, options = {}) {
-  const image = permittedImageFor(restaurant);
+  const image = restaurantDisplayImageFor(restaurant);
   if (!image) return "";
   const loading = options.loading === "eager" ? "eager" : "lazy";
   const className = options.className || "media-photo";
-  return `<img class="${escapeHtml(className)}" src="${escapeHtml(image.url)}" alt="${escapeHtml(options.alt ?? image.alt)}" loading="${loading}" decoding="async" data-media-source="${escapeHtml(image.sourceType)}" onerror="this.parentElement?.querySelector('.media-attribution')?.remove();this.closest('.has-permitted-image')?.classList.remove('has-permitted-image');this.remove()" />`;
+  return `<img class="${escapeHtml(className)}" src="${escapeHtml(image.url)}" alt="${escapeHtml(options.alt ?? image.alt)}" loading="${loading}" decoding="async" referrerpolicy="no-referrer" data-media-source="${escapeHtml(image.sourceType)}" data-media-rights="${escapeHtml(image.rightsState || "licensed")}" onerror="this.parentElement?.querySelector('.media-attribution')?.remove();this.closest('.has-permitted-image')?.classList.remove('has-permitted-image');this.remove()" />`;
 }
 
 function mediaAttributionMarkup(restaurant) {
-  const image = permittedImageFor(restaurant);
+  const image = restaurantDisplayImageFor(restaurant);
   if (!image?.sourceUrl || !image.attribution) return "";
-  return `<a class="media-attribution" href="${escapeHtml(image.sourceUrl)}" target="_blank" rel="noreferrer">Photo: ${escapeHtml(image.attribution)} ↗</a>`;
+  const label = image.externalPreview ? "External photo source" : "Photo";
+  return `<a class="media-attribution" href="${escapeHtml(image.sourceUrl)}" target="_blank" rel="noreferrer">${label}: ${escapeHtml(image.attribution)} ↗</a>`;
 }
 
 function permittedImageClass(restaurant) {
-  return permittedImageFor(restaurant) ? " has-permitted-image" : "";
+  // Existing CSS presentation class; it does not assert the image's rights.
+  return restaurantDisplayImageFor(restaurant) ? " has-permitted-image" : "";
 }
