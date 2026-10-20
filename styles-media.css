@@ -122,45 +122,30 @@
 .map-result-row:is(:hover,.is-highlighted){background:var(--seafoam-100);box-shadow:inset 3px 0 0 var(--teal-600)}
 .map-result-row:focus-visible{outline:3px solid rgba(69,170,165,.32);outline-offset:-3px}
 
+/* A separate, content-anchored illustration keeps the harbour landmarks in
+   frame. Its own feather hides the image edges; no viewport-wide gradient or
+   discontinuous 1500px zoom is involved. Mobile's existing background is intact. */
+.hero-artwork{display:none}
 @media (min-width:641px){
-  /* The desktop source artwork is intentionally subtle; reuse the richer vertical
-     harbour composition as a right-side illustration so the desktop hero retains
-     the approved coastal lighthouse/skyline character instead of reading blank. */
-  .home-hero{
-    background-color:#f8fbfc;
-    background-image:
-      linear-gradient(90deg,rgba(255,255,255,.99) 0%,rgba(255,255,255,.95) 38%,rgba(255,255,255,.55) 58%,rgba(255,255,255,.08) 78%,rgba(255,255,255,0) 100%),
-      url("./assets/backgrounds/hero-mobile.webp");
-    background-repeat:no-repeat;
-    background-size:auto 188%;
-    background-position:right 56%;
+  .home-hero{background:#fff;position:relative;isolation:isolate}
+  .hero-content{position:relative}
+  .hero-copy{position:relative;z-index:1;max-width:min(640px,50%)}
+  .hero-artwork{
+    display:block;position:absolute;right:0;top:50%;transform:translateY(-50%);
+    width:calc(50% - 32px);max-width:560px;aspect-ratio:1.12;
+    overflow:hidden;pointer-events:none;z-index:0;
+  }
+  .hero-artwork img{display:block;width:100%;height:100%;object-fit:cover;object-position:50% 90%}
+  .hero-artwork::after{
+    content:"";position:absolute;inset:0;pointer-events:none;
+    background:linear-gradient(90deg,#fff 0%,transparent 13%,transparent 92%,#fff 100%),
+      linear-gradient(180deg,#fff 0%,transparent 7%,transparent 92%,#fff 100%);
   }
 }
 
-/* Desktop only: the portrait harbour image at 188% fills only a narrow strip
-   along the far right. Enlarge it toward the headline, keep the right edge filled,
-   and fade the white overlay earlier so the lighthouse is visible. */
-@media (min-width:901px){
-  .home-hero{
-    background-image:
-      linear-gradient(90deg,rgba(255,255,255,.99) 0%,rgba(255,255,255,.95) 38%,rgba(255,255,255,.22) 54%,rgba(255,255,255,0) 72%),
-      url("./assets/backgrounds/hero-mobile.webp");
-    background-size:cover,auto 290%;
-    background-position:center,right 66%;
-  }
-}
-
-/* On wide desktops, let the harbour artwork extend into the open space beside
-   the headline. Using viewport-relative height moves the lighthouse left while
-   keeping the sky, birds, and skyline within the 520px-high hero crop. */
-@media (min-width:1500px){
-  .home-hero{
-    background-image:
-      linear-gradient(90deg,rgba(255,255,255,.99) 0%,rgba(255,255,255,.97) 34%,rgba(255,255,255,.78) 43%,rgba(255,255,255,.12) 50%,rgba(255,255,255,0) 59%),
-      url("./assets/backgrounds/hero-mobile.webp");
-    background-size:cover,auto 100vw;
-    background-position:center,right 62%;
-  }
+@media (min-width:641px) and (max-width:900px){
+  .hero-copy h1{font-size:clamp(38px,5vw,46px)}
+  .hero-copy p{font-size:17px}
 }
 
 @media (max-width:767px){

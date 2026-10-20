@@ -55,6 +55,8 @@ await page.locator("[data-admin-status-panel]").waitFor();
 await page.waitForFunction(() => window.__halifaxAdminStatus?.loaded === true);
 const desktopState = await page.evaluate(() => ({
   title: document.querySelector("h1")?.textContent || "",
+  ledgerPresent: !!document.querySelector("[data-update-ledger]"),
+  ledgerText: document.querySelector("[data-update-ledger]")?.textContent || "",
   metrics: window.__halifaxAdminStatus?.metrics || {},
   metricCards: document.querySelectorAll("[data-admin-status-metric]").length,
   dataRows: document.querySelectorAll("[data-admin-data-row]").length,
@@ -64,6 +66,7 @@ const desktopState = await page.evaluate(() => ({
   overflow: document.documentElement.scrollWidth - document.documentElement.clientWidth
 }));
 
+if (!desktopState.ledgerPresent || !desktopState.ledgerText.includes("Latest successful observation") || !desktopState.ledgerText.includes("Prioritized publication queue")) throw new Error("Expected source observation and publication ledger");
 if (!/Freshness and source status/i.test(desktopState.title)) {
   throw new Error(`Expected admin status heading, got ${JSON.stringify(desktopState)}.`);
 }

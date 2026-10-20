@@ -235,13 +235,17 @@ function allowedSymphonyVenue(block) {
 
 async function importSymphony(source) {
   const page = await fetchHtml(source.url);
-  const headingMatches = [...page.text.matchAll(/<h3\b[^>]*>[\s\S]*?<a\b[^>]*href=["']([^"']+)["'][^>]*>([\s\S]*?)<\/a>[\s\S]*?<\/h3>/gi)];
+  // Bound each heading before looking for a link. A non-linked filter heading
+  // must not consume a season link and the first concert's heading.
+  const headingMatches = [...page.text.matchAll(/<h3\b[^>]*>([\s\S]*?)<\/h3>/gi)];
   const events = [];
   for (let index = 0; index < headingMatches.length; index += 1) {
     const current = headingMatches[index];
+    const link = current[1].match(/<a\b[^>]*href=["']([^"']+)["'][^>]*>([\s\S]*?)<\/a>/i);
+    if (!link) continue;
     const nextIndex = headingMatches[index + 1]?.index ?? page.text.length;
     const block = clean(page.text.slice(current.index, nextIndex));
-    const title = inline(current[2]);
+    const title = inline(link[2]);
     const venue = allowedSymphonyVenue(block);
     if (!title || !venue) continue;
     const regex = /(\d{1,2}:\d{2})\s*(am|pm)\s*[•·]\s*(?:Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday),?\s+(January|February|March|April|May|June|July|August|September|October|November|December)\s+(\d{1,2}),\s+(20\d{2})/gi;
@@ -249,7 +253,7 @@ async function importSymphony(source) {
       const month = monthNumber(dateMatch[3]);
       const { hour, minute } = timeParts(dateMatch[1], dateMatch[2]);
       const startAt = zonedIso(Number(dateMatch[5]), month, Number(dateMatch[4]), hour, minute);
-      const event = makeEvent(source, { title, startAt, endAt: startAt, venueName: venue[0], city: venue[1], categories: ["Music", "Arts"], eventUrl: absoluteUrl(current[1], page.resolvedUrl) });
+      const event = makeEvent(source, { title, startAt, endAt: startAt, venueName: venue[0], city: venue[1], categories: ["Music", "Arts"], eventUrl: absoluteUrl(link[1], page.resolvedUrl) });
       if (event) events.push(event);
     }
   }

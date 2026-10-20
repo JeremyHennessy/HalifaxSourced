@@ -11,7 +11,7 @@ const root = await mkdtemp(join(tmpdir(), 'halifax-facts-history-'));
 try {
   await mkdir(join(root, 'scripts/lib'), { recursive: true });
   await mkdir(join(root, 'data/build'), { recursive: true });
-  for (const file of ['scripts/import-structured-place-facts.mjs', 'scripts/check-structured-place-facts.mjs', 'scripts/lib/local-restaurant-policy.mjs', 'scripts/lib/fetch-public-source.mjs', 'source-integrity.js']) {
+  for (const file of ['scripts/import-structured-place-facts.mjs', 'scripts/check-structured-place-facts.mjs', 'scripts/lib/local-restaurant-policy.mjs', 'scripts/lib/fetch-public-source.mjs', 'scripts/lib/reviewed-corrections.mjs', 'restaurant-corrections.js', 'data/reviewed-restaurant-corrections.js', 'data/reviewed-place-resolutions.js', 'source-integrity.js']) {
     await copyFile(new URL('../' + file, import.meta.url), join(root, file));
   }
   // The helper is absent before the repair; exercise the actual old importer too.

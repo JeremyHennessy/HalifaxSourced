@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "items": [
+    {
+      "id": "automatic-pr-creation",
+      "lane": "publication",
+      "priority": 1,
+      "state": "verification-pending",
+      "blocker": "The repository Actions PR-creation setting was explicitly authorized, enabled and read back on 2026-10-20. A successful new automated PR still needs verification.",
+      "retryWhen": "After reserved old automatic branches are safely resolved, verify a coordinator-created draft PR and exact-head checks without auto-approval.",
+      "url": "https://github.com/JeremyHennessy/HalifaxSourced/actions/workflows/promote-preview-artifacts.yml"
+    },
+    {
+      "id": "inspection-address-evidence",
+      "lane": "restaurant-facts",
+      "priority": 2,
+      "state": "needs-evidence",
+      "blocker": "Unlinked inspections need matching civic/street/location evidence. Never restore name-only matching.",
+      "retryWhen": "Official location-specific address evidence is available.",
+      "url": "https://github.com/JeremyHennessy/HalifaxSourced/blob/main/docs/inspection-location-matching.md"
+    },
+    {
+      "id": "held-facts-preview",
+      "lane": "restaurant-facts",
+      "priority": 2,
+      "state": "needs-review",
+      "blocker": "Preview changes are not accepted facts until location-specific review; preserve prior accepted records on source failure.",
+      "retryWhen": "A source-linked bounded review batch has passed identity and history checks.",
+      "url": "https://github.com/JeremyHennessy/HalifaxSourced/pull/116"
+    }
+  ]
+}

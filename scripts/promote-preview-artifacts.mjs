@@ -1,6 +1,8 @@
-import { copyFile, mkdir, readdir, writeFile } from "node:fs/promises";
+import { copyFile, mkdir, readdir, readFile, writeFile } from "node:fs/promises";
 import { dirname, isAbsolute, relative, resolve, sep } from "node:path";
 import process from "node:process";
+
+import { meaningfulHash } from "./lib/update-consistency.mjs";
 
 const PROMOTED_FILES_BY_ARTIFACT = {
   "source-expansion-preview": [
@@ -166,6 +168,22 @@ async function main() {
     return;
   }
 
+  // Ignore receipt-only timestamps, never semantic changes such as expiry,
+  // status, URLs, prices or review decisions. Keep the whole accepted bundle
+  // untouched on no-op so a scrape cannot masquerade as a new publication.
+  const meaningfulChanges = [];
+  for (const filePath of promotedFiles) {
+    const incoming = await readFile(resolve(artifactRoot, filePath), "utf8");
+    let existing = null;
+    try { existing = await readFile(resolve(repoRoot, filePath), "utf8"); } catch {}
+    if (existing === null || meaningfulHash(incoming) !== meaningfulHash(existing)) meaningfulChanges.push(filePath);
+  }
+  if (process.env.PROMOTION_RESULT_PATH) await writeFile(process.env.PROMOTION_RESULT_PATH, JSON.stringify({artifactName, artifactRunId:process.env.ARTIFACT_RUN_ID || null, checkedAt:new Date().toISOString(), changed:meaningfulChanges.length > 0, meaningfulChanges}, null, 2) + "\n");
+  if (!meaningfulChanges.length) {
+    console.log("No meaningful content changes; accepted snapshots and publication metadata are unchanged.");
+    return;
+  }
+
   for (const filePath of artifactFiles) {
     if (!promotedFiles.has(filePath)) {
       continue;
@@ -179,6 +197,22 @@ async function main() {
     await copyFile(sourcePath, targetPath);
   }
 
+  // Each lane keeps its own accepted provenance once this commit reaches main.
+  // Preparing a receipt is not a review or publication timestamp.
+  const receiptPath = resolve(repoRoot, `data/build/promotion-receipts/${artifactName}.json`);
+  ensureInsideRepo(repoRoot, receiptPath);
+  await mkdir(dirname(receiptPath), { recursive: true });
+  await writeFile(receiptPath, JSON.stringify({
+    schemaVersion: 1, artifactName, artifactRunId: process.env.ARTIFACT_RUN_ID || null,
+    sourceRunCreatedAt: process.env.SOURCE_RUN_CREATED_AT || null,
+    sourceWorkflowName: process.env.SOURCE_WORKFLOW_NAME || null,
+    sourceWorkflowRunUrl: process.env.SOURCE_WORKFLOW_RUN_URL || null,
+    baseCommitSha: process.env.BASE_COMMIT_SHA || null,
+    preparedAt: new Date().toISOString(), state: "prepared-for-review",
+    reviewedAt: null, publishedAt: null,
+    meaningfulChanges, promotedFiles: [...promotedFiles].sort()
+  }, null, 2) + "\n");
+
   const metadataPath = resolve(repoRoot, "data/build/preview-promotion-metadata.json");
   ensureInsideRepo(repoRoot, metadataPath);
   await mkdir(dirname(metadataPath), { recursive: true });
@@ -186,7 +220,11 @@ async function main() {
     metadataPath,
     `${JSON.stringify(
       {
-        schemaVersion: 1,
+        schemaVersion: 2,
+        meaningfulChanges,
+        state: "prepared-for-review",
+        reviewedAt: null,
+        publishedAt: null,
         generatedAt: new Date().toISOString(),
         artifactName,
         artifactRunId: process.env.ARTIFACT_RUN_ID || null,

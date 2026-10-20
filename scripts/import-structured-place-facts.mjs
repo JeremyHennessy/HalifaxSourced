@@ -1,6 +1,7 @@
 import { fetchGuardedSource as fetch } from "./lib/fetch-public-source.mjs";
 import { mkdir, readFile, writeFile } from "node:fs/promises";
-import { blockedFactReason, inactiveFactStatuses, reconcilePlaceFacts } from './lib/place-facts-history.mjs';
+import { blockedFactReason, inactiveFactStatuses, placeFactEvidenceKey, reconcilePlaceFacts } from './lib/place-facts-history.mjs';
+import { applyReviewedFactFieldRejections } from './lib/reviewed-corrections.mjs';
 
 const catalog = JSON.parse(await readFile(new URL("../data/build/catalog.json", import.meta.url), "utf8"));
 const firstParty = JSON.parse(await readFile(new URL("../data/build/first-party-sources.json", import.meta.url), "utf8"));
@@ -142,7 +143,31 @@ async function worker(){ while(true){ const i=cursor++; if(i>=targets.length)ret
   }}
 await Promise.all(Array.from({length:Math.min(concurrency,targets.length||1)},()=>worker()));
 const generatedAt=new Date().toISOString();
-const reconciled=reconcilePlaceFacts({previous,fresh:output.filter(Boolean),catalog:catalog.restaurants||[],observations,checkedAt:generatedAt});
+const rawFresh=output.filter(Boolean);
+const acceptedPrevious=applyReviewedFactFieldRejections(previous.records||[]);
+const acceptedFresh=applyReviewedFactFieldRejections(rawFresh);
+const reconciled=reconcilePlaceFacts({previous:{...previous,records:acceptedPrevious},fresh:acceptedFresh,catalog:catalog.restaurants||[],observations,checkedAt:generatedAt});
+// Reconcile only publishable evidence. A repeated rejected field is not an
+// accepted-content change, even though the source was freshly checked.
+// Preserve distinct raw evidence separately without one history row per scrape.
+const rejectionEvidenceKey=record=>{
+  const {rejectedFactFields,...rawEvidence}=record;
+  return placeFactEvidenceKey(rawEvidence);
+};
+const rejectedEvidence=new Set(reconciled.sourceHistory.filter(entry=>entry.reason==='reviewed_field_rejection').map(entry=>rejectionEvidenceKey(entry.record)));
+for (const [rawRecords,acceptedRecords] of [[previous.records||[],acceptedPrevious],[rawFresh,acceptedFresh]]) {
+  for (let index=0;index<acceptedRecords.length;index++) {
+    const original=rawRecords[index];
+    const accepted=acceptedRecords[index];
+    if (accepted.rejectedFactFields?.some(item=>original[item.field]!=null)) {
+      const key=rejectionEvidenceKey(original);
+      if (!rejectedEvidence.has(key)) {
+        reconciled.sourceHistory.push({record:original,reason:'reviewed_field_rejection',retainedAt:generatedAt});
+        rejectedEvidence.add(key);
+      }
+    }
+  }
+}
 const {records}=reconciled; const counts={records:records.length,hours:records.filter(r=>r.hours).length,phone:records.filter(r=>r.phone).length,email:records.filter(r=>r.email).length,address:records.filter(r=>r.address).length,features:records.filter(r=>r.features?.length).length,menus:records.filter(r=>r.menus?.length).length,reservations:records.filter(r=>r.reservations?.length).length,ordering:records.filter(r=>r.ordering?.length).length};
 const payload={version:1,generatedAt,checkedPlaces:targets.length,failures,accessRestrictions,counts,...reconciled};
 await mkdir(new URL("../data/build",import.meta.url),{recursive:true}); await writeFile(new URL("../data/build/structured-place-facts.json",import.meta.url),JSON.stringify(payload,null,2)+"\n"); await writeFile(new URL("../data/structured-place-facts.js",import.meta.url),`window.HALIFAX_STRUCTURED_PLACE_FACTS = ${JSON.stringify(payload,null,2)};\n`); console.log(JSON.stringify({checkedPlaces:targets.length,failures:failures.length,...counts},null,2));

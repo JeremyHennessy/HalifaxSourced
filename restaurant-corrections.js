@@ -28,7 +28,27 @@
     for (const record of records) if (['permanently_closed', 'temporarily_closed', 'moved', 'replaced'].includes(record.operatingStatus)) record.openingHours = null;
     return records;
   }
-  const api = { apply };
+  // A rejected source field is held until an explicit location review removes
+  // the rule. Apply to both retained and freshly collected observations, not
+  // merely to the current generated snapshot.
+  function applyFactFieldRejections(records, payload) {
+    const allowed = new Set(['address', 'phone', 'email', 'hours']);
+    return records.map(record => {
+      const rules = (payload.factFieldRejections || []).filter(rule =>
+        rule.restaurantId === record.restaurantId && rule.reviewState === 'rejected');
+      if (!rules.length) return record;
+      const result = { ...record };
+      const rejected = new Map((record.rejectedFactFields || []).map(item => [item.field, item]));
+      for (const rule of rules) for (const field of rule.fields || []) {
+        if (!allowed.has(field)) continue;
+        result[field] = null;
+        rejected.set(field, { field, reviewId: rule.id, reason: rule.reason, reviewedAt: rule.reviewedAt });
+      }
+      if (rejected.size) result.rejectedFactFields = [...rejected.values()];
+      return result;
+    });
+  }
+  const api = { apply, applyFactFieldRejections };
   root.HalifaxRestaurantCorrections = api;
   if (typeof module !== 'undefined') module.exports = api;
 })(globalThis);

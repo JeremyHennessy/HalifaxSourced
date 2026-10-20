@@ -46,12 +46,14 @@ window.HALIFAX_RESTAURANT_CORRECTIONS = {
               "hours": "Mo closed; Tu-Th 10:00-21:00; Fr 10:00-22:00; Sa 09:00-14:00 (Nov 14 only); Su 09:00-16:00"
             }
           ]
-        }
+        },
+        "address": "BH204 – 1496 Lower Water Street, Halifax, NS B3J 1R9",
+        "phone": "902-429-6491"
       },
       "sourceUrl": "https://blacksheephalifax.com/",
-      "claim": "Official Black Sheep hours: Mondays 10am–9pm through October 25, 2026; Monday closure effective October 26; one-day November 14 close at 2pm for a private event. Other standard day hours unchanged.",
-      "observedAt": "2026-10-19",
-      "reviewedAt": "2026-10-19",
+      "claim": "Official Black Sheep hours: Mondays 10am–9pm through October 25, 2026; Monday closure effective October 26; one-day November 14 close at 2pm for a private event. Other standard day hours unchanged. Owner contact block also confirms BH204 – 1496 Lower Water Street, Halifax, NS B3J 1R9 and telephone 902-429-6491; existing coordinates are unchanged.",
+      "observedAt": "2026-10-20",
+      "reviewedAt": "2026-10-20",
       "reviewState": "verified"
     },
     {
@@ -250,6 +252,32 @@ window.HALIFAX_RESTAURANT_CORRECTIONS = {
       "claim": "Barrington Street location hours: Monday–Friday 8am–3pm, Saturday 9am–2pm; Discovery Centre hours are a separate location.",
       "observedAt": "2026-09-14",
       "reviewedAt": "2026-10-19",
+      "reviewState": "verified"
+    },
+    {
+      "restaurantId": "osm-node-11751643550-cafe-lunette",
+      "fields": {
+        "address": "160-1741 Lower Water Street, Halifax, NS B3J 0J2",
+        "phone": "902-334-1300",
+        "openingHours": "Mo-Th 07:30-22:00; Fr 07:30-23:00; Sa 09:00-23:00; Su 09:00-22:00"
+      },
+      "sourceUrl": "https://www.cafelunette.com/contact/",
+      "claim": "Owner contact page confirms this exact location, telephone and café opening hours. These are café hours, not continuous full-menu kitchen service. Preserve the existing reviewed duplicate alias and coordinates.",
+      "observedAt": "2026-10-20",
+      "reviewedAt": "2026-10-20",
+      "reviewState": "verified"
+    },
+    {
+      "restaurantId": "osm-node-4797459279-tilted-tap",
+      "fields": {
+        "address": "172 Wyse Road, Dartmouth, NS B3A 1M6",
+        "phone": "902-462-5333",
+        "openingHours": "Bar: Mo-Tu 10:00-23:00; We-Su 10:00-24:00. Kitchen: Mo-We 11:30-21:00; Th-Fr 11:30-22:00; Sa 10:00-22:00; Su 10:00-21:00. Holidays open at 12:00; check official source."
+      },
+      "sourceUrl": "https://www.tiltedtap.ca/contact",
+      "claim": "Owner contact page and homepage agree on this address, telephone, bar hours and distinct kitchen hours. Retain the holiday opening caveat without inventing holiday dates or continuous kitchen service.",
+      "observedAt": "2026-10-20",
+      "reviewedAt": "2026-10-20",
       "reviewState": "verified"
     }
   ],
@@ -568,6 +596,14 @@ window.HALIFAX_RESTAURANT_CORRECTIONS = {
           "url": "https://sushisquare.ca/",
           "observedAt": "2026-10-19",
           "status": "verified"
+        },
+        {
+          "type": "menu",
+          "label": "Official Sushi Square lunch and dinner menu",
+          "url": "https://sushisquare.ca/menu/",
+          "status": "verified",
+          "observedAt": "2026-10-20",
+          "reviewedAt": "2026-10-20"
         }
       ],
       "evidenceStatus": "verified",
@@ -675,6 +711,22 @@ window.HALIFAX_RESTAURANT_CORRECTIONS = {
           "url": "https://www.retasrestaurant.com/",
           "observedAt": "2026-10-19",
           "status": "verified"
+        },
+        {
+          "type": "menu",
+          "label": "Reta’s official food menu",
+          "url": "https://www.retasrestaurant.com/s/Retas-FOOD-menu-16th-October-2026.pdf",
+          "status": "verified",
+          "observedAt": "2026-10-20",
+          "reviewedAt": "2026-10-20"
+        },
+        {
+          "type": "menu",
+          "label": "Reta’s official drinks menu",
+          "url": "https://www.retasrestaurant.com/s/Retas-DRINK-menu-16th-October-2026.pdf",
+          "status": "verified",
+          "observedAt": "2026-10-20",
+          "reviewedAt": "2026-10-20"
         }
       ],
       "evidenceStatus": "verified",
@@ -751,6 +803,22 @@ window.HALIFAX_RESTAURANT_CORRECTIONS = {
       ],
       "evidenceStatus": "verified",
       "sourceLayer": "reviewed_location_correction"
+    }
+  ],
+  "factFieldRejections": [
+    {
+      "id": "saj-house-foreign-address-20261020",
+      "restaurantId": "osm-node-8443747544-saj-house",
+      "fields": [
+        "address"
+      ],
+      "sourceUrl": "https://www.sajhouse.ca/",
+      "reason": "The imported Gibraltar address is not location evidence for this Halifax entity. Hold source-derived addresses until an explicit location review resolves the conflict; preserve the existing local OSM address without treating it as a fresh owner verification.",
+      "rejectedValue": "433 World Trade Center, Gibraltar, GI",
+      "localEvidenceUrl": "https://www.openstreetmap.org/node/8443747544",
+      "localEvidenceSnapshotDate": "2026-09-01",
+      "reviewedAt": "2026-10-20",
+      "reviewState": "rejected"
     }
   ]
 };
