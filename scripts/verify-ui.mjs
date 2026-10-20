@@ -143,39 +143,7 @@ const heroArtwork = await page.locator(".home-hero").evaluate(async (hero) => {
 if (heroArtwork.imageLeft > heroArtwork.heroWidth * .46) throw new Error(`Desktop hero artwork starts too far to the right: ${JSON.stringify(heroArtwork)}`);
 await page.screenshot({ path: resolve("artifacts", "ui-check-desktop-wide-home.png"), fullPage: false });
 
-// TEMPORARY, REVIEW-ONLY DIAGNOSTIC: compare actual desktop hero pixels from
-// the tested release and custom-domain production. Remove before merging.
-const localHeroState = await page.locator(".home-hero").evaluate((hero) => ({
-  size: getComputedStyle(hero).backgroundSize,
-  position: getComputedStyle(hero).backgroundPosition,
-  image: getComputedStyle(hero).backgroundImage.slice(0, 230),
-  box: { width: hero.clientWidth, height: hero.clientHeight }
-}));
-console.log("HERO_DIAG_LOCAL_CSS=" + JSON.stringify(localHeroState));
-console.log("HERO_DIAG_LOCAL_JPEG_B64=" + (await page.locator(".home-hero").screenshot({ type: "jpeg", quality: 38 })).toString("base64"));
-const liveContext = await browser.newContext({viewport: {width: 1743, height: 900},serviceWorkers:"block"});
-try {
-  const livePage = await liveContext.newPage();
-  await livePage.goto("https://halifaxsourced.com/#home", {waitUntil: "domcontentloaded", timeout: 35000});
-  await livePage.locator(".home-hero").waitFor({timeout: 30000});
-  const liveState = await livePage.evaluate(() => {
-    const hero = document.querySelector(".home-hero");
-    return {
-      size: getComputedStyle(hero).backgroundSize,
-      position: getComputedStyle(hero).backgroundPosition,
-      image: getComputedStyle(hero).backgroundImage.slice(0, 230),
-      stylesheet: document.querySelector('link[href*="styles-media.css"]')?.href,
-      box: { width:hero.clientWidth, height:hero.clientHeight }
-    };
-  });
-  console.log("HERO_DIAG_LIVE_CSS=" + JSON.stringify(liveState));
-  console.log("HERO_DIAG_LIVE_JPEG_B64=" + (await livePage.locator(".home-hero").screenshot({type:"jpeg", quality:38})).toString("base64"));
-} catch(error) {
-  console.log("HERO_DIAG_LIVE_ERROR=" + String(error));
-} finally {
-  await liveContext.close();
-}
-// END TEMPORARY DIAGNOSTIC
+
 await page.setViewportSize({ width: 1440, height: 1000 });
 
 // Lifecycle regression: inactive places must fail closed in discovery but keep a
