@@ -1,4 +1,5 @@
 import { fetchGuardedSource as fetch } from "./lib/fetch-public-source.mjs";
+import { assertTasteMemberCompleteness, tasteDetailAddress, tasteDetailOpeningHours, tasteMemberApiUrl, tasteMemberLinksFromApi, tasteRegionId, tasteScopedDetailHtml } from "./lib/taste-ns-member-api.mjs";
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 
 const catalog = JSON.parse(await readFile(new URL("../data/build/catalog.json", import.meta.url), "utf8"));
@@ -808,25 +809,8 @@ const TASTE_HRM_COMMUNITIES = [
   "Eastern Passage", "Fall River", "Hammonds Plains", "Timberlea", "Tantallon", "Goffs"
 ];
 
-function tasteMemberLinks(html, baseUrl) {
-  const seen = new Set();
-  const links = [];
-  for (const match of String(html).matchAll(/<a\b[^>]*class=["'][^"']*\bmember-category\b[^"']*\brestaurants\b[^"']*["'][^>]*href\s*=\s*["']([^"']+)["'][^>]*>([\s\S]*?)<\/a>/gi)) {
-    const url = safeUrl(match[1], baseUrl);
-    const name = decode(match[2]).replace(/\s+/g, " ").trim();
-    const key = normalize(name) + "|" + url;
-    if (!url || !normalize(name) || seen.has(key) || name.length > 160) continue;
-    seen.add(key);
-    links.push({ name, url });
-  }
-  return links;
-}
-
 function tasteMainHtml(html) {
-  const source = String(html);
-  const start = source.search(/<article\b|<h1\b/i);
-  const end = source.search(/<section\b[^>]*class=["'][^"']*comments\b|<aside\b[^>]*role=["']complementary["']|<footer\b/i);
-  return source.slice(start > 0 ? start : 0, end > start ? end : source.length);
+  return tasteScopedDetailHtml(html);
 }
 
 function tasteSectionText(detailHtml, label) {
@@ -852,9 +836,9 @@ function parseTasteDetail(html, url, item, sourceMeta) {
   const h1 = String(detailHtml).match(/<h1\b[^>]*>([\s\S]*?)<\/h1>/i);
   const name = decode(h1?.[1] || item?.name || "").replace(/\s+/g, " ").trim();
   if (!name || name.length > 160) return null;
-  const region = decode(String(detailHtml).match(/<a\b[^>]*href=["'][^"']*member-region[^"']*["'][^>]*>([\s\S]*?)<\/a>/i)?.[1] || "").replace(/\s+/g, " ").trim();
-  const location = tasteSectionText(detailHtml, "Location");
-  const description = metaContent(detailHtml, "og:description") || metaContent(detailHtml, "description");
+  const region = decode(String(detailHtml).match(/<a\b[^>]*href=["'][^"']*member-region[^"']*["'][^>]*>([\s\S]*?)<\/a>/i)?.[1] || (item?.apiRegionQualified ? "Halifax Metro" : "")).replace(/\s+/g, " ").trim();
+  const location = tasteDetailAddress(detailHtml, decode) || tasteSectionText(detailHtml, "Location");
+  const description = metaContent(html, "og:description") || metaContent(html, "description");
   const community = tasteHrmCommunity(location || "") || tasteHrmCommunity(description || "") || (/Halifax Metro/i.test(region) ? "Halifax Metro" : null);
   if (!/Halifax Metro/i.test(region) && !community) return null;
   const outbound = classifyOutbound(detailHtml, url);
@@ -864,13 +848,14 @@ function parseTasteDetail(html, url, item, sourceMeta) {
     if (/TasteofNS|tasteofns|\/share\.php|intent\/tweet|pinterest\.com\/pin\/create/i.test(value)) return false;
     return all.findIndex((item) => item.platform === profile.platform && item.url === profile.url) === index;
   });
-  const rawImageUrl = metaContent(detailHtml, "og:image") || metaContent(detailHtml, "twitter:image");
+  const rawImageUrl = metaContent(html, "og:image") || metaContent(html, "twitter:image");
   const explicitImageUrl = rawImageUrl ? safeUrl(rawImageUrl, url) : null;
   const pageUrl = safeUrl(url);
   const imageUrl = explicitImageUrl && explicitImageUrl.replace(/\/$/, "") !== pageUrl?.replace(/\/$/, "") ? explicitImageUrl : null;
   const address = tasteAddress(location) || extractAddress(text.split(/\n+/), community || "Halifax");
   const phone = extractPhone(tasteSectionText(detailHtml, "Contact") || text);
-  const openingHours = tasteSectionText(detailHtml, "Hours");
+  const legacyHours = tasteSectionText(detailHtml, "Hours");
+  const openingHours = tasteDetailOpeningHours(detailHtml, decode) || (!/(?:please\s+)?(?:visit|check|see)\s+(?:our\s+)?website|hours?\s+(?:may\s+)?vary/i.test(legacyHours || "") ? legacyHours : null);
   if (!address && !phone && !outbound.website && !outbound.socialProfiles.length && !openingHours) return null;
 
   return {
@@ -894,7 +879,7 @@ function parseTasteDetail(html, url, item, sourceMeta) {
     sourceName: sourceMeta.name,
     sourceKind: sourceMeta.kind,
     sourceUrl: url,
-    sourceUpdatedAt: metaContent(detailHtml, "article:modified_time") || null,
+    sourceUpdatedAt: item?.modifiedAt || metaContent(html, "article:modified_time") || null,
     observedAt: new Date().toISOString(),
     reviewState: "directory-listed"
   };
@@ -902,14 +887,38 @@ function parseTasteDetail(html, url, item, sourceMeta) {
 
 async function fetchTasteDirectory(sourceMeta) {
   const records = [];
-  const { html, resolvedUrl } = await get(sourceMeta.url);
-  const links = tasteMemberLinks(html, resolvedUrl);
+  const apiBase = (sourceMeta.apiUrl || new URL("/wp-json/wp/v2", sourceMeta.url).href).replace(/\/$/, "");
+  if (canonicalHost(apiBase) !== canonicalHost(sourceMeta.url)) throw new Error("taste_api_cross_entity_host");
+  const { json: regionTerms } = await getJson(`${apiBase}/member-region?per_page=100&_fields=id,name,slug,count`);
+  const regionId = tasteRegionId(regionTerms, sourceMeta.regionSlug || "halifax-metro");
+  const perPage = 100;
+  const maxPages = 5;
+  let totalPages = 1;
+  let expectedTotal = null;
+  const apiRecords = [];
+  for (let page = 1; page <= totalPages; page += 1) {
+    if (page > maxPages) throw new Error(`taste_api_pages_above_limit:${totalPages}>${maxPages}`);
+    const apiUrl = tasteMemberApiUrl({ apiBase, categoryId: sourceMeta.categoryId, regionId, page, perPage });
+    const { json, headers } = await getJson(apiUrl);
+    if (!Array.isArray(json)) throw new Error("taste_members_not_array");
+    if (page === 1) {
+      totalPages = Number(headers.get("x-wp-totalpages") || 1);
+      expectedTotal = Number(headers.get("x-wp-total") || json.length);
+      if (!Number.isInteger(totalPages) || totalPages < 1 || totalPages > maxPages) throw new Error(`taste_api_pages_above_limit:${totalPages}>${maxPages}`);
+      if (!Number.isInteger(expectedTotal) || expectedTotal < 1) throw new Error("taste_api_total_invalid");
+    }
+    apiRecords.push(...json);
+  }
+  const links = tasteMemberLinksFromApi(apiRecords, { regionId, sourceUrl: sourceMeta.url });
+  assertTasteMemberCompleteness(expectedTotal, links, links);
   for (let index = 0; index < links.length; index += 5) {
     const batch = links.slice(index, index + 5);
     const results = await Promise.all(batch.map(async (item) => {
       try {
         const { html: detailHtml, resolvedUrl: detailUrl } = await get(item.url);
-        return parseTasteDetail(detailHtml, detailUrl, item, sourceMeta);
+        const record = parseTasteDetail(detailHtml, detailUrl, item, sourceMeta);
+        if (!record) throw new Error("taste_detail_unparseable");
+        return record;
       } catch (error) {
         failures.push({ sourceId: sourceMeta.id, sourceName: sourceMeta.name, sourceUrl: item.url, reason: error.message });
         return null;
@@ -917,7 +926,8 @@ async function fetchTasteDirectory(sourceMeta) {
     }));
     records.push(...results.filter(Boolean));
   }
-  return { records, links, checked: links.length, unknown: records.filter((record) => !knownNames.has(normalize(record.name))).length };
+  assertTasteMemberCompleteness(expectedTotal, links, records);
+  return { records, links, checked: links.length, apiMemberTotal: expectedTotal, regionId, unknown: records.filter((record) => !knownNames.has(normalize(record.name))).length };
 }
 
 async function fetchRansDirectory(sourceMeta) {
@@ -1143,7 +1153,9 @@ try {
     url: tasteSource.url,
     directoryEntriesObserved: result.links.length,
     newNameCandidatesChecked: result.checked,
-    parserMode: "member_directory_detail_pages_hrm_filtered"
+    apiMemberTotal: result.apiMemberTotal,
+    regionId: result.regionId,
+    parserMode: "wordpress_member_api_halifax_region_detail_pages"
   });
 } catch (error) {
   failures.push({ sourceId: tasteSource.id, sourceName: tasteSource.name, sourceUrl: tasteSource.url, reason: error.message });
