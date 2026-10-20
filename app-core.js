@@ -393,7 +393,7 @@ function filteredRestaurants(options = {}) {
     if (feature === "social" && !restaurant.hasSocial) return false;
     if (feature === "reservations" && !restaurant.hasReservation) return false;
     if (feature === "ordering" && !restaurant.hasOrdering) return false;
-    if (feature === "images" && !permittedImageFor(restaurant)) return false;
+    if (feature === "images" && !restaurantDisplayImageFor(restaurant)) return false;
     if (feature === "saved" && !state.saved.has(restaurant.id)) return false;
     return true;
   });
