@@ -1,0 +1,5 @@
+{
+  "version": 1,
+  "description": "Image-specific evidence from actual location, decoded-image and usage-rights verification. Empty until those checks are complete. Automated assessment does not require human approval, and public availability or historical approval labels are not a rights grant.",
+  "records": []
+}

@@ -33,12 +33,12 @@ for (const record of media) {
     try { await access(new URL("../" + record.url, import.meta.url)); } catch { failures.push(record.restaurantId + ": local media asset is missing"); }
   }
 }
+const approvedIds = new Set(media.filter(record => record.reviewState === "approved").map(record => record.restaurantId));
 for (const record of refs) {
   for (const problem of referenceProblems(record)) failures.push(`${record.restaurantId}: ${problem}`);
   const queue = priority.records.find(item => item.restaurantId === record.restaurantId);
-  if (queue?.status !== "rights_review_required" || queue?.rightsState !== "unverified" || queue?.permissionConfirmed === true || queue?.renderable === true || queue?.license != null) failures.push(`${record.restaurantId}: reference queue claims inconsistent rights`);
+  if ((queue?.status !== "rights_review_required" && !(queue?.status === "approved" && approvedIds.has(record.restaurantId))) || queue?.rightsState !== "unverified" || queue?.permissionConfirmed === true || queue?.renderable === true || queue?.license != null) failures.push(`${record.restaurantId}: reference queue claims inconsistent rights`);
 }
-const approvedIds = new Set(media.filter(record => record.reviewState === "approved").map((record) => record.restaurantId));
 const priorityIds = new Set((priority.records || []).map((record) => record.restaurantId));
 for (const record of media) {
   if (!priorityIds.has(record.restaurantId)) failures.push(`${record.restaurantId}: manifest media is missing from priority queue`);

@@ -54,6 +54,7 @@ const PROMOTED_FILES_BY_ARTIFACT = {
 
 const REVIEW_ONLY_FILES_BY_ARTIFACT = {
   "source-expansion-preview": [
+    "data/build/thumbnail-auto-approval-report.json",
     "docs/thumbnail-coverage-report.md",
     // Produced for review only. Rebuild the catalog from accepted inputs at release.
     "data/build/catalog.json",
@@ -70,6 +71,7 @@ const REVIEW_ONLY_FILES_BY_ARTIFACT = {
     "artifacts/public-special-source-leads-report.json"
   ],
   "social-source-preview": [
+    "data/build/thumbnail-auto-approval-report.json",
     "docs/thumbnail-coverage-report.md",
     "artifacts/expanded-source-integrity-report.json",
     "artifacts/thumbnail-candidates-report.json",

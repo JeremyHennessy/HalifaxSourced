@@ -1,5 +1,4 @@
 import { mkdir, readFile, writeFile } from "node:fs/promises";
-import vm from "node:vm";
 
 const generatedAt = new Date().toISOString();
 const directLimit = positiveInteger(process.env.THUMBNAIL_PROMOTION_DIRECT_LIMIT, 50);
@@ -7,7 +6,7 @@ const sourceCheckLimit = positiveInteger(process.env.THUMBNAIL_SOURCE_CHECK_LIMI
 const applyPromotion = String(process.env.THUMBNAIL_PROMOTION_APPLY ?? "0") === "1";
 const root = new URL("../", import.meta.url);
 
-const approvedRemoteRightsBasis = "App-owner-reviewed HTTPS remote image reference from the restaurant official website or official feed; image is linked to first-party media and is not rehosted.";
+if (applyPromotion) throw Error("Metadata-only thumbnail promotion is disabled; use approve-eligible-thumbnails.mjs with verified assessment evidence.");
 
 const directPromotionSourceKinds = new Set([
   "official_page_thumbnail_candidate",
@@ -56,18 +55,6 @@ function positiveInteger(value, fallback) {
 async function loadJson(path, fallback) {
   try {
     return JSON.parse(await readFile(new URL(path, root), "utf8"));
-  } catch {
-    return fallback;
-  }
-}
-
-async function loadWindowScript(path, globalName, fallback) {
-  try {
-    const source = await readFile(new URL(path, root), "utf8");
-    const context = { window: {} };
-    vm.createContext(context);
-    vm.runInContext(source, context, { filename: path, timeout: 20_000 });
-    return context.window[globalName] ?? fallback;
   } catch {
     return fallback;
   }
@@ -244,103 +231,6 @@ function csvRows(headers, rows) {
   return [headers.join(","), ...rows.map((row) => headers.map((header) => csvEscape(row[header])).join(","))].join("\n") + "\n";
 }
 
-function upsertByRestaurant(existing, additions) {
-  const byRestaurant = new Map();
-  for (const record of existing) byRestaurant.set(record.restaurantId, record);
-  for (const record of additions) {
-    if (!byRestaurant.has(record.restaurantId)) byRestaurant.set(record.restaurantId, record);
-  }
-  return [...byRestaurant.values()].sort((a, b) => String(a.restaurantId).localeCompare(String(b.restaurantId)));
-}
-
-function mediaRecordFromCandidate(row) {
-  return {
-    restaurantId: row.restaurant_id,
-    url: row.thumbnail_url,
-    alt: `${row.restaurant_name} official website image`,
-    sourceUrl: row.source_url,
-    sourceType: "official_site_remote_reference",
-    creator: row.restaurant_name,
-    license: "First-party official site remote media reference",
-    rightsBasis: approvedRemoteRightsBasis,
-    permission: "permitted_remote_reference",
-    permissionConfirmed: true,
-    attribution: `${row.restaurant_name}, official website`,
-    reviewState: "approved",
-    reviewedAt: generatedAt,
-    reviewCandidateId: row.candidate_id
-  };
-}
-
-function decisionRecordFromCandidate(row) {
-  return {
-    id: row.candidate_id,
-    restaurantId: row.restaurant_id,
-    restaurantName: row.restaurant_name,
-    thumbnailUrl: row.thumbnail_url,
-    sourceUrl: row.source_url,
-    decision: "approve_thumbnail",
-    decidedAt: generatedAt,
-    decidedBy: "Halifax Sourced governed thumbnail promotion planner",
-    note: "Clean exact-ID candidate selected from source-backed thumbnail queue; remote first-party media reference only.",
-    sourceKind: row.source_kind,
-    extractionMethod: row.extraction_method,
-    confidence: row.confidence,
-    reviewPriority: row.review_priority,
-    visualReviewState: "ready_for_media_manifest",
-    permission: "permitted_remote_reference",
-    permissionConfirmed: true,
-    rightsBasis: approvedRemoteRightsBasis,
-    attribution: `${row.restaurant_name}, official website`
-  };
-}
-
-async function applyDirectPromotions(rows) {
-  const decisions = await loadJson("data/reviewed-thumbnail-decisions.json", { version: 1, records: [] });
-  const media = await loadWindowScript("data/restaurant-media.js", "HALIFAX_RESTAURANT_MEDIA", { version: 1, records: [] });
-  const priorityPayload = await loadJson("data/restaurant-media-priority.json", { version: 1, records: [] });
-  const existingDecisionKeys = new Set((decisions.records || []).map((record) => record.id || `${record.restaurantId}|${record.thumbnailUrl}`));
-  const newDecisionRecords = rows
-    .map(decisionRecordFromCandidate)
-    .filter((record) => !existingDecisionKeys.has(record.id) && !existingDecisionKeys.has(`${record.restaurantId}|${record.thumbnailUrl}`));
-  const mergedMedia = upsertByRestaurant(media.records || [], rows.map(mediaRecordFromCandidate));
-  const priorityByRestaurant = new Map((priorityPayload.records || []).map((record) => [record.restaurantId, record]));
-
-  for (const row of rows) {
-    priorityByRestaurant.set(row.restaurant_id, { restaurantId: row.restaurant_id, name: row.restaurant_name, status: "approved" });
-  }
-
-  const priorityRecords = [...priorityByRestaurant.values()].sort(
-    (a, b) => String(a.name || "").localeCompare(String(b.name || "")) || String(a.restaurantId).localeCompare(String(b.restaurantId))
-  );
-
-  await writeFile(new URL("data/reviewed-thumbnail-decisions.json", root), JSON.stringify({
-    ...decisions,
-    generatedAt,
-    counts: {
-      approved: (decisions.records || []).filter((record) => token(record.decision) === "approve_thumbnail").length + newDecisionRecords.length,
-      rejected: (decisions.records || []).filter((record) => ["reject_thumbnail", "reject_candidate"].includes(token(record.decision))).length,
-      needsSourceCheck: (decisions.records || []).filter((record) => token(record.decision) === "needs_source_check").length,
-      total: (decisions.records || []).length + newDecisionRecords.length
-    },
-    records: [...(decisions.records || []), ...newDecisionRecords]
-  }, null, 2) + "\n");
-  await writeFile(new URL("data/restaurant-media.js", root), `window.HALIFAX_RESTAURANT_MEDIA = ${JSON.stringify({
-    ...media,
-    version: Number(media.version || 0) + 1,
-    generatedAt,
-    records: mergedMedia
-  }, null, 2)};\n`);
-  await writeFile(new URL("data/restaurant-media-priority.json", root), JSON.stringify({
-    ...priorityPayload,
-    generatedAt,
-    targetCount: priorityRecords.length,
-    records: priorityRecords
-  }, null, 2) + "\n");
-
-  return { decisionsAdded: newDecisionRecords.length, mediaRecords: mergedMedia.length, priorityRecords: priorityRecords.length };
-}
-
 function countBy(rows, getter) {
   const counts = {};
   for (const row of rows) {
@@ -394,7 +284,7 @@ for (const candidate of directEligible) {
 const directPromotionRows = bestByRestaurant.map((candidate, index) => candidateExport(
   candidate,
   index + 1,
-  index < directLimit ? "promote_to_restaurant_media_first" : "keep_in_direct_promotion_backlog"
+  index < directLimit ? "assess_location_visual_and_rights_first" : "keep_in_assessment_backlog"
 ));
 const directPromotionBatch = directPromotionRows.slice(0, directLimit);
 const directPromotionBacklog = directPromotionRows.slice(directLimit);
@@ -407,19 +297,16 @@ const cleanSourceCheckRows = sourceCheckRows.filter((row) => !flags(row.quality_
 const sourceCheckFirst = cleanSourceCheckRows.slice(0, sourceCheckLimit);
 const outreach = outreachSummary(ownerOutreachPayload.records);
 
-let applyResult = null;
-if (applyPromotion) {
-  applyResult = await applyDirectPromotions(directPromotionBatch);
-}
+const applyResult = null;
 
 const plan = {
   version: 1,
   generatedAt,
-  mode: applyPromotion ? "applied_direct_promotions" : "plan_only",
+  mode: "assessment_shortlist_only",
   sourceCommitSha: process.env.SOURCE_COMMIT_SHA || process.env.GITHUB_SHA || null,
   policy: {
-    directPromotion: "Only exact-ID official-page/feed/owner candidates with HTTPS images, no hard quality flags, and first-party or approved-CDN provenance enter the direct promotion batch.",
-    sourceCheck: "Remote image hosts and reviewed source-check rows stay held until first-party control, image content, and rights fit are manually confirmed.",
+    directPromotion: "This metadata shortlist is NOT production eligibility. Every candidate still needs exact-location, decoded-image and usage-rights evidence through approve-eligible-thumbnails.mjs.",
+    sourceCheck: "Remote image hosts and reviewed source-check rows stay held until first-party control, image content, and usage rights are verified. No human approval is required after those checks.",
     ownerOutreach: "No-candidate restaurants are counted in public artifacts, but row-level owner outreach and submitted-image rights metadata stay in the private owner-submission workflow."
   },
   inputs: {
@@ -461,7 +348,7 @@ plan.mix = {
 const promotionHeaders = ["rank", "recommended_action", "restaurant_id", "restaurant_name", "neighborhood", "candidate_id", "thumbnail_url", "source_url", "source_kind", "extraction_method", "confidence", "source_host_validation", "image_host", "source_host", "width", "height", "review_priority", "direct_score", "quality_flags", "rights_status", "review_state"];
 const sourceCheckHeaders = ["rank", "recommended_action", "restaurant_id", "restaurant_name", "neighborhood", "website", "candidate_id", "thumbnail_url", "source_url", "source_kind", "source_host", "image_host", "source_host_validation", "quality_flags", "source_check_score"];
 
-const markdown = `# Thumbnail coverage attack plan\n\nGenerated: ${generatedAt}\n\nThis plan works thumbnail coverage in three governed batches: direct-promotion candidates first, source-check holds second, and owner outreach for restaurants that still have no candidate.\n\n## Counts\n\n| Metric | Count |\n| --- | ---: |\n| Restaurants | ${plan.counts.restaurants.toLocaleString()} |\n| Thumbnail candidates | ${plan.counts.candidates.toLocaleString()} |\n| Restaurants with approved thumbnail | ${Number(plan.counts.restaurantsWithApprovedThumbnail || 0).toLocaleString()} |\n| Restaurants missing approved thumbnail | ${Number(plan.counts.restaurantsMissingApprovedThumbnail || 0).toLocaleString()} |\n| Restaurants missing any candidate | ${Number(plan.counts.restaurantsMissingAnyCandidate || 0).toLocaleString()} |\n| Direct-promotion eligible restaurants | ${plan.counts.directPromotionEligibleRestaurants.toLocaleString()} |\n| Direct-promotion first batch | ${plan.counts.directPromotionBatch.toLocaleString()} |\n| Clean source-check candidates | ${plan.counts.cleanSourceCheckCandidates.toLocaleString()} |\n| Owner outreach rows counted | ${plan.counts.ownerOutreachRows.toLocaleString()} |\n\n## First batch\n\nThe first batch is written to \`data/build/thumbnail-promotion-plan.csv\`. Apply mode is intentionally opt-in with \`THUMBNAIL_PROMOTION_APPLY=1\`; normal Quality Gate runs only emit the plan.\n\n## Source-check pass\n\nThe source-check shortlist is written to \`data/build/thumbnail-source-check-priority.csv\`. These records are not production-ready until the remote image host and first-party provenance have been checked.\n\n## Owner outreach\n\nThe no-candidate outreach total is included as aggregate metadata only: ${outreach.websiteFirst.toLocaleString()} website-first rows and ${outreach.manualContactLookup.toLocaleString()} manual-contact rows. Row-level owner outreach and submitted-image rights metadata should stay in the private owner-submission workflow unless publication is explicitly approved.\n`;
+const markdown = `# Thumbnail coverage attack plan\n\nGenerated: ${generatedAt}\n\nThis plan works thumbnail coverage in three governed batches: direct-promotion candidates first, source-check holds second, and owner outreach for restaurants that still have no candidate.\n\n## Counts\n\n| Metric | Count |\n| --- | ---: |\n| Restaurants | ${plan.counts.restaurants.toLocaleString()} |\n| Thumbnail candidates | ${plan.counts.candidates.toLocaleString()} |\n| Restaurants with approved thumbnail | ${Number(plan.counts.restaurantsWithApprovedThumbnail || 0).toLocaleString()} |\n| Restaurants missing approved thumbnail | ${Number(plan.counts.restaurantsMissingApprovedThumbnail || 0).toLocaleString()} |\n| Restaurants missing any candidate | ${Number(plan.counts.restaurantsMissingAnyCandidate || 0).toLocaleString()} |\n| Metadata-shortlisted restaurants (not approved) | ${plan.counts.directPromotionEligibleRestaurants.toLocaleString()} |\n| Direct-promotion first batch | ${plan.counts.directPromotionBatch.toLocaleString()} |\n| Clean source-check candidates | ${plan.counts.cleanSourceCheckCandidates.toLocaleString()} |\n| Owner outreach rows counted | ${plan.counts.ownerOutreachRows.toLocaleString()} |\n\n## First batch\n\nThe first batch is written to \`data/build/thumbnail-promotion-plan.csv\`. Legacy metadata-only apply mode is disabled. Automatic publication uses \`scripts/approve-eligible-thumbnails.mjs\` and verified image-specific evidence; this shortlist alone never grants rights.\n\n## Source-check pass\n\nThe source-check shortlist is written to \`data/build/thumbnail-source-check-priority.csv\`. These records are not production-ready until the remote image host and first-party provenance have been checked.\n\n## Owner outreach\n\nThe no-candidate outreach total is included as aggregate metadata only: ${outreach.websiteFirst.toLocaleString()} website-first rows and ${outreach.manualContactLookup.toLocaleString()} manual-contact rows. Row-level owner outreach and submitted-image rights metadata should stay in the private owner-submission workflow unless publication is explicitly approved.\n`;
 
 await mkdir(new URL("data/build", root), { recursive: true });
 await mkdir(new URL("artifacts", root), { recursive: true });

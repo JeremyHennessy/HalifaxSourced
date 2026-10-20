@@ -2,6 +2,7 @@ import assert from 'node:assert/strict';
 import {createHash} from 'node:crypto';
 import {readFile} from 'node:fs/promises';
 import vm from 'node:vm';
+import { AUTOMATIC_THUMBNAIL_POLICY } from './lib/automatic-thumbnail-approval.mjs';
 import {mediaPermitted,referenceProblems} from './lib/media-rights-contract.mjs';
 const load=async(path,key)=>{const c={window:{}};vm.runInNewContext(await readFile(new URL('../'+path,import.meta.url),'utf8'),c);return JSON.parse(JSON.stringify(c.window[key]));};
 const refs=(await load('data/restaurant-media-references.js','HALIFAX_MEDIA_SOURCE_REFERENCES')).records;
@@ -13,12 +14,14 @@ const mediaKey=record=>JSON.stringify([record.restaurantId,String(record.url || 
 const preservedKeys=new Set(preservation.licensedRecords.map(mediaKey));
 assert.equal(preservation.licensedRecords.length,7);
 assert.deepEqual(media.filter(record=>preservedKeys.has(mediaKey(record))),preservation.licensedRecords);
-const addedMedia=media.filter(record=>!preservedKeys.has(mediaKey(record)));
+const automaticMedia=media.filter(record=>record.approvalMethod===AUTOMATIC_THUMBNAIL_POLICY);
+const addedMedia=media.filter(record=>!preservedKeys.has(mediaKey(record))&&record.approvalMethod!==AUTOMATIC_THUMBNAIL_POLICY);
 assert.deepEqual(addedMedia.map(({restaurantId,sourceUrl,reviewedAt})=>({restaurantId,sourceUrl,reviewedAt})),[
   {restaurantId:'osm-way-96322798-wooden-monkey',sourceUrl:'https://commons.wikimedia.org/wiki/File:Wooden_Monkey_Restaurant,_Halifax,_Nova_Scotia_(25274647981).jpg',reviewedAt:'2026-10-20'},
   {restaurantId:'osm-node-886747513-trident-booksellers-and-cafe',sourceUrl:'https://commons.wikimedia.org/wiki/File:DSC07401_(7172975247).jpg',reviewedAt:'2026-10-20'}
 ]);
-assert.equal(media.length,preservation.licensedRecords.length+2);
+assert.equal(media.length,preservation.licensedRecords.length+2+automaticMedia.length);
+for(const record of automaticMedia){assert(mediaPermitted(record));assert(/^[a-f0-9]{64}$/.test(record.assetSha256));assert(record.assessmentId&&record.assessedAt&&record.rightsEvidenceUrl);}
 assert.equal(claims.length,preservation.archivedClaimsCount);assert.equal(createHash('sha256').update(JSON.stringify(claims)).digest('hex'),preservation.archivedClaimsSha256);
 for(const record of refs){const prior=claims.find(r=>r.restaurantId===record.restaurantId&&r.url===record.url);assert(prior);for(const key of ['restaurantId','url','sourceUrl','alt','creator'])assert.equal(record[key],prior[key]);}
 for(const record of refs){assert.deepEqual(referenceProblems(record),[]);assert.equal(mediaPermitted(record),false);for(const conflict of [{permission:'licensed'},{permissionConfirmed:true},{ownerApproved:true},{license:'CC BY-SA 4.0'},{licence:'CC BY-SA 4.0'},{rightsStatus:'production_approved'},{reviewStatus:'approved'},{renderable:true},{url:'javascript:alert(1)'},{sourceUrl:'broken'},{restaurantId:''},{creator:''},{alt:''},{rightsBasis:'Owner grants reuse'},{permissionSource:'licensed'},{rightsNote:'Licensed media'}])assert(referenceProblems({...record,...conflict}).length,JSON.stringify(conflict));}
@@ -38,7 +41,7 @@ const approved=candidates.filter(r=>r.eligibleForProduction);
 // A rebuilt snapshot must include every permitted in-scope addition, not merely
 // preserve a minimum count or a nonempty approved set.
 const snapshotTime=Date.parse(candidatePayload.generatedAt);assert(Number.isFinite(snapshotTime));
-const expectedApproved=[...preservation.licensedRecords,...addedMedia.filter(record=>Date.parse(record.reviewedAt)<=snapshotTime)].filter(record=>snapshotRestaurantIds.has(record.restaurantId));
+const expectedApproved=[...preservation.licensedRecords,...addedMedia.filter(record=>Date.parse(record.reviewedAt)<=snapshotTime),...automaticMedia.filter(record=>Date.parse(record.assessedAt)<=snapshotTime)].filter(record=>snapshotRestaurantIds.has(record.restaurantId));
 assert.deepEqual(sortedKeys(approved),sortedKeys(expectedApproved));
 assert.equal(new Set(approved.map(record=>record.restaurantId)).size,candidatePayload.counts.restaurantsWithApprovedThumbnail);
 for(const record of approved)assert(mediaPermitted(record));

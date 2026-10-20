@@ -95,3 +95,61 @@ Candidate thumbnails are not automatically production restaurant photos. Anythin
 - `permissionConfirmed: true`
 
 Recent update cards may use source-declared feed/API media as linked update media, with the original post/source retained for context. Restaurant cards continue to use only approved restaurant media or branded fallbacks.
+
+## Automatic evidence-gated approval
+
+`node scripts/approve-eligible-thumbnails.mjs` assesses every rebuilt candidate and
+writes `data/build/thumbnail-auto-approval-report.json`. It updates only validated generated media. `--assess-only` produces a report
+without changing public media.
+The existing Quality Gate runs this command in apply mode before final candidate
+validation and immutable release packaging; existing source/social preview jobs
+run assessment-only. Preview reports are review-only artifacts, never authority
+for production approval. No new scheduled or paid AI job is introduced.
+
+No human approval is needed. An assistant may inspect the actual source and image,
+record genuine verification evidence in `data/thumbnail-assessments.json`, and let
+the deterministic publisher approve the image. The script does not pretend to
+perform semantic visual review from filenames or dimensions. It holds incomplete,
+uncertain, rejected, mismatched, stale and reference-only candidates.
+
+Each assessment is image-specific, not a restaurant-wide authorization:
+
+- `candidateId`, `restaurantId`, `thumbnailUrl` and `sourceUrl` must exactly match.
+- `assessedBy` and `assessedAt` identify the completed assessment.
+- `location`: `verified: true`, exact active canonical `restaurantId` and current
+  `address`, source-confirmed `operatingStatus: active`, HTTPS `sourceUrl`, and `notes` explaining the actual location match.
+- `visual`: `inspected: true`, `verdict: usable`, actual inspected local JPEG's
+  `sha256`, decoded `width`/`height`, and `notes` about subject/crop/quality.
+- `assetPath`: a repository `assets/restaurants/<name>.jpg`. It must contain the
+  exact inspected bytes; unavailable, changed, tiny or unsuitable-aspect assets
+  are held. Remote originals are not downloaded by this script. A grant must
+  permit local reproduction before a local asset is added.
+- `alt`: useful location-specific alternative text, at least 20 characters.
+- `rights`: `verified: true`, `permissionConfirmed: true`, HTTPS `evidenceUrl`,
+  `verifiedAt`, `localReproductionPermitted: true`, `conditionsSatisfied: true`,
+  `usageConditions`, optional `expiresAt`, and `notes` documenting the actual licence/grant and compliance,
+  `sourceType`, `permission`, `rightsBasis`, `creator`, `license`, and `attribution`.
+  All applicable attribution and licence conditions must already be satisfied.
+
+Evidence must describe checks actually performed, not generated assertions.
+Existing source-host confidence, owner app clicks, public availability and
+noncommercial intent do not establish usage rights. Historical source references
+remain unchanged and separate from licensed production media. The old metadata
+planner is now a shortlist only; `THUMBNAIL_PROMOTION_APPLY=1` fails closed.
+
+The publisher preserves separately reviewed media. Automatically managed records
+are reevaluated each build and withdrawn if their supporting assessment disappears
+or its location/content/rights checks fail. Repeated runs with unchanged evidence and lifecycle/expiry state are deterministic
+and create no timestamp-only changes. The browser's existing media-permission
+predicate remains the final shared validation gate.
+
+### Initial batch, October 20, 2026
+
+A full catalog and candidate rebuild assessed 2,393 candidates: 8 already approved
+catalog thumbnails and 2,385 held candidates. Of the held candidates, 2,368 require
+rights review and 17 were rejected. There are no owner submissions or additional
+verified image assessments. Therefore **zero new thumbnails are approved**.
+All 9 previously licensed manifest records are preserved (one is outside the
+current eligible catalog). The report gives overlapping hold-reason counts and a
+per-candidate disposition, rather than presenting the 72 metadata-shortlisted
+restaurants as permission-cleared.

@@ -21,7 +21,7 @@ const offlineScripts = new Set([
   "export-catalog", "check-public-special-source-leads", "check-patio-directory-facts",
   "build-structured-specials", "resolve-place-candidates", "check-place-source-resolution",
   "build-recent-social-posts", "build-reviewed-social-posts", "check-local-restaurant-policy",
-  "build-thumbnail-candidates", "validate-data", "check-restaurant-lifecycle",
+  "build-thumbnail-candidates", "approve-eligible-thumbnails", "validate-data", "check-restaurant-lifecycle",
   "check-data-integrity", "check-expanded-sources", "check-thumbnail-candidates",
   "check-restaurant-discovery", "check-restaurant-media-rights", "check-neighbourhood-resolutions",
   "check-city-event-additions", "apply-city-event-additions", "sanitize-city-events",
