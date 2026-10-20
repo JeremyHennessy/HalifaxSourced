@@ -210,7 +210,9 @@ jobs:
           node scripts/check-regional-restaurant-coverage.mjs
 
       - name: Build SQLite database artifacts
-        run: python3 scripts/build-sqlite-db.py
+        run: |
+          python3 scripts/build-sqlite-db.py
+          python3 scripts/test-sqlite-catalog.py
 
       - name: Test immutable release receipts
         run: node scripts/test-release-artifact.mjs

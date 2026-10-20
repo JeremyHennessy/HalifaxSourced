@@ -63,7 +63,8 @@ function releaseCommands(source) {
         assert([
           "for file in app-*.js data/local-restaurant-policy.js scripts/*.mjs scripts/lib/*.mjs; do",
           '[ -e "$file" ] || continue', 'node --check "$file"', "done",
-          "python3 scripts/build-sqlite-db.py"
+          "python3 scripts/build-sqlite-db.py",
+          "python3 scripts/test-sqlite-catalog.py"
         ].includes(line), `Unclassified release command could bypass source isolation: ${line}`);
       }
     }
