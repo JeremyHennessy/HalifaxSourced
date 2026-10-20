@@ -172,12 +172,15 @@ window.HALIFAX_RESTAURANT_CORRECTIONS = {
     {
       "restaurantId": "osm-node-4421124794-cafe-marco-polo",
       "fields": {
-        "website": "https://cafemarcopolodartmouth.com/"
+        "website": "https://cafemarcopolodartmouth.com/",
+        "address": "15 Kings Wharf Place, Dartmouth, NS B2Y 0B4",
+        "phone": "902-406-0901",
+        "openingHours": "Mo-Fr 07:00-16:00; Sa-Su 08:00-16:00"
       },
       "sourceUrl": "https://cafemarcopolodartmouth.com/",
-      "claim": "Replace the malformed or obsolete official URL with the current location-specific official source.",
-      "observedAt": "2026-10-19",
-      "reviewedAt": "2026-10-19",
+      "claim": "Official Café Marco Polo homepage confirms 15 Kings Wharf Place, Dartmouth, phone 902-406-0901, weekdays 7am–4pm and weekends 8am–4pm. Its Contact page independently repeats this address and phone. Preserve the existing location identity and source coordinates; do not infer special holiday hours or image permission.",
+      "observedAt": "2026-10-20",
+      "reviewedAt": "2026-10-20",
       "reviewState": "verified"
     },
     {

@@ -16,7 +16,8 @@ try {
     ['osm-node-3789835257-the-juice-press','moved-juice-press'],
     ['osm-node-7185511974-clay-west-bar-and-grill','replaced-clay-west'],
     ['sushi-square-scotia-square','current-sushi-square'],
-    ['hux-halifax','current-hux']
+    ['hux-halifax','current-hux'],
+    ['osm-node-4421124794-cafe-marco-polo','current-marco-polo']
   ]) {
     await page.goto(`${base}/#restaurant/${id}`,{waitUntil:'networkidle'});
     await page.locator('.restaurant-hero').waitFor();
@@ -25,6 +26,14 @@ try {
       return {active:isRestaurantActive(place),hours:place.openingHours,image:Boolean(permittedImageFor(place)),actions:place.menuLinks.length+place.orderingLinks.length+place.reservationLinks.length,overflow:document.documentElement.scrollWidth-innerWidth};
     },id);
     assert(model.overflow<=2,label+' horizontal overflow');
+    if (label === 'current-marco-polo') {
+      assert(model.active, 'Café Marco Polo must retain its existing active identity');
+      assert.equal(model.hours, 'Mo-Fr 07:00-16:00; Sa-Su 08:00-16:00');
+      assert((await page.locator('#detailInfo').innerText()).includes('902-406-0901'));
+      assert((await page.locator('#detailInfo').innerText()).includes('15 Kings Wharf Place'));
+      assert.equal(await page.locator('#detailMenu a[href="https://cafemarcopolodartmouth.com/11-2/"]').count(), 1);
+      assert.equal(model.image, false, 'A menu-page image is not a reuse grant');
+    }
     if (!model.active) {
       assert.equal(await page.locator('.closure-notice').count(),1);
       assert.equal(await page.locator('.mobile-essential-actions').count(),0);
