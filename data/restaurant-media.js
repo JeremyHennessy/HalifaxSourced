@@ -1,6 +1,6 @@
 window.HALIFAX_RESTAURANT_MEDIA = {
-  "version": 7,
-  "generatedAt": "2026-09-03T13:08:09Z",
+  "version": 8,
+  "generatedAt": "2026-10-20",
   "records": [
     {
       "restaurantId": "osm-node-26041177-your-father-s-moustache",
@@ -99,6 +99,36 @@ window.HALIFAX_RESTAURANT_MEDIA = {
       "permissionConfirmed": true,
       "attribution": "JeffNS, CC BY-SA 4.0, via Wikimedia Commons",
       "reviewState": "approved"
+    },
+    {
+      "restaurantId": "osm-way-96322798-wooden-monkey",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/Wooden_Monkey_Restaurant%2C_Halifax%2C_Nova_Scotia_%2825274647981%29.jpg/960px-Wooden_Monkey_Restaurant%2C_Halifax%2C_Nova_Scotia_%2825274647981%29.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+      "alt": "The Wooden Monkey Halifax location at 1707 Grafton Street, photographed in 2015",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wooden_Monkey_Restaurant,_Halifax,_Nova_Scotia_(25274647981).jpg",
+      "sourceType": "licensed",
+      "creator": "Tony Webster",
+      "license": "CC BY-SA 2.0",
+      "rightsBasis": "Commons verified CC BY-SA 2.0 (20 March 2016); Wikimedia-hosted 960px preview of September 2015 exterior; historical photo, not a claim of current appearance.",
+      "permission": "licensed",
+      "permissionConfirmed": true,
+      "attribution": "Tony Webster, CC BY-SA 2.0, via Wikimedia Commons (2015)",
+      "reviewState": "approved",
+      "reviewedAt": "2026-10-20"
+    },
+    {
+      "restaurantId": "osm-node-886747513-trident-booksellers-and-cafe",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/DSC07401_%287172975247%29.jpg/960px-DSC07401_%287172975247%29.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+      "alt": "Coffee photographed at Trident Booksellers & Cafe on Hollis Street in Halifax in 2012",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:DSC07401_(7172975247).jpg",
+      "sourceType": "licensed",
+      "creator": "Nicole Bratt",
+      "license": "CC BY-SA 2.0",
+      "rightsBasis": "Commons verified CC BY-SA 2.0 (7 July 2019); Wikimedia-hosted 960px preview of coffee photographed June 2012 at Trident; historical photo.",
+      "permission": "licensed",
+      "permissionConfirmed": true,
+      "attribution": "Nicole Bratt, CC BY-SA 2.0, via Wikimedia Commons (2012)",
+      "reviewState": "approved",
+      "reviewedAt": "2026-10-20"
     }
   ]
 };
