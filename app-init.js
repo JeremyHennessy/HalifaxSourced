@@ -86,17 +86,18 @@ function initMiniMap(items, element = document.querySelector("#exploreMiniMap"))
 
 function initMainMap(items, element = document.querySelector("#mainMap")) {
   if (!element || !window.L || !element.isConnected || element._leaflet_id) return;
-  const map = L.map(element, { preferCanvas: true, zoomAnimation: false, fadeAnimation: false, markerZoomAnimation: false }).setView(MAP_DEFAULT, 12, { animate: false });
+  const map = L.map(element, { preferCanvas: false, zoomAnimation: false, fadeAnimation: false, markerZoomAnimation: false }).setView(MAP_DEFAULT, 12, { animate: false });
   L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", { maxZoom: 19, attribution: "&copy; OpenStreetMap contributors" }).addTo(map);
   hardenLeafletAttributionLinks(element);
-  // Fit before Canvas markers queue redraws. A synchronous fitBounds redraw can
-  // otherwise lose Leaflet's pending frame handle and outlive route teardown.
+  // Establish regional bounds before adding marker paths.
   const located = items.filter(restaurant => restaurant.coordinates);
   if (state.neighbourhood !== "all" && located.length) {
     const bounds = L.latLngBounds(located.map(restaurant => [restaurant.coordinates.lat, restaurant.coordinates.lon]));
     map.fitBounds(bounds, { padding: [30, 30], maxZoom: 15, animate: false });
   }
-  const renderer = L.canvas({ padding: 0.5 });
+  // SVG uses synchronous path updates. Canvas can lose a queued redraw handle
+  // when Leaflet's public map.stop() redraws during rapid route teardown.
+  const renderer = L.svg({ padding: 0.5 });
   const layer = L.layerGroup().addTo(map);
   state.mapMarkers = new Map();
   let count = 0;
