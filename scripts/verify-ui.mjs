@@ -129,15 +129,18 @@ await page.screenshot({ path: resolve("artifacts", "ui-check-desktop.png"), full
 await page.setViewportSize({ width: 1743, height: 900 });
 const heroArtwork = await page.locator(".home-hero").evaluate(async (hero) => {
   const size = getComputedStyle(hero).backgroundSize;
-  const scale = /auto\s+([\d.]+)%/.exec(size);
-  if (!scale) return { size, imageWidth: 0, heroWidth: hero.getBoundingClientRect().width };
+  const scale = /auto\s+([\d.]+)(%|px|vw)/.exec(size);
+  if (!scale) return { size, imageLeft: Infinity, heroWidth: hero.getBoundingClientRect().width };
   const image = new Image();
   image.src = "./assets/backgrounds/hero-mobile.webp";
   await image.decode();
-  const height = hero.getBoundingClientRect().height * Number(scale[1]) / 100;
-  return { size, imageWidth: Math.round(height * image.naturalWidth / image.naturalHeight), heroWidth: hero.getBoundingClientRect().width };
+  const heroBox = hero.getBoundingClientRect();
+  const height = scale[2] === "%" ? heroBox.height * Number(scale[1]) / 100 :
+    scale[2] === "vw" ? innerWidth * Number(scale[1]) / 100 : Number(scale[1]);
+  const imageWidth = height * image.naturalWidth / image.naturalHeight;
+  return { size, imageWidth: Math.round(imageWidth), imageLeft: Math.round(heroBox.width - imageWidth), heroWidth: heroBox.width };
 });
-if (heroArtwork.imageWidth < heroArtwork.heroWidth * .45) throw new Error(`Desktop hero image leaves excessive blank space: ${JSON.stringify(heroArtwork)}`);
+if (heroArtwork.imageLeft > heroArtwork.heroWidth * .46) throw new Error(`Desktop hero artwork starts too far to the right: ${JSON.stringify(heroArtwork)}`);
 await page.screenshot({ path: resolve("artifacts", "ui-check-desktop-wide-home.png"), fullPage: false });
 
 // TEMPORARY, REVIEW-ONLY DIAGNOSTIC: compare actual desktop hero pixels from
