@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-06T04:15:35.055Z",
-  "sourceCommitSha": null,
+  "generatedAt": "2026-10-20T14:27:50.067Z",
+  "sourceCommitSha": "a7c378ffbdd5fbaa52d78da23c3fe2d6eb58a623",
   "definitions": {
     "approvedThumbnail": "A thumbnail candidate tied to an exact restaurant ID with approved review state and production-approved rights status.",
     "anyThumbnailCandidate": "Any source-backed thumbnail lead for a restaurant, including official feed, Meta API, official page metadata, or already approved media.",
@@ -9,61 +9,61 @@
     "discoveryQueue": "Restaurants with no current thumbnail candidate in the generated source-backed candidate set."
   },
   "counts": {
-    "restaurants": 554,
-    "candidates": 2424,
-    "approvedCandidates": 6,
-    "reviewCandidates": 2418,
-    "restaurantsWithApprovedThumbnail": 6,
-    "restaurantsWithAnyCandidate": 196,
-    "restaurantsMissingApprovedThumbnail": 548,
-    "restaurantsMissingAnyCandidate": 358,
-    "promotionQueue": 134,
-    "sourceCheckQueue": 47,
-    "discoveryQueue": 358,
+    "restaurants": 578,
+    "candidates": 2948,
+    "approvedCandidates": 8,
+    "reviewCandidates": 2940,
+    "restaurantsWithApprovedThumbnail": 8,
+    "restaurantsWithAnyCandidate": 228,
+    "restaurantsMissingApprovedThumbnail": 570,
+    "restaurantsMissingAnyCandidate": 350,
+    "promotionQueue": 164,
+    "sourceCheckQueue": 56,
+    "discoveryQueue": 350,
     "fetchFailures": 200
   },
   "coveragePercent": {
-    "approvedThumbnail": 1.1,
-    "anyThumbnailCandidate": 35.4,
-    "missingApprovedThumbnail": 98.9,
-    "missingAnyThumbnailCandidate": 64.6
+    "approvedThumbnail": 1.4,
+    "anyThumbnailCandidate": 39.4,
+    "missingApprovedThumbnail": 98.6,
+    "missingAnyThumbnailCandidate": 60.6
   },
   "candidateMix": {
     "bySourceKind": {
-      "approved_restaurant_media": 6,
-      "official_page_thumbnail_candidate": 2235,
+      "approved_restaurant_media": 8,
+      "official_page_thumbnail_candidate": 2758,
       "official_feed_media": 48,
-      "retained_media_reference": 84,
+      "retained_media_reference": 83,
       "public_campaign_menu_image": 40,
       "directory_source_image": 11
     },
     "byReviewState": {
-      "approved": 6,
-      "candidate_review": 2345,
+      "approved": 8,
+      "candidate_review": 2867,
       "source_check": 56,
       "rejected": 17
     },
     "byRightsStatus": {
-      "production_approved": 6,
-      "requires_rights_review": 2401,
+      "production_approved": 8,
+      "requires_rights_review": 2923,
       "rejected": 17
     },
     "byExtractionMethod": {
-      "approved_media_manifest": 6,
-      "html_link_image": 246,
-      "html_img_content": 1323,
-      "declared_post_media": 350,
-      "css_background_image": 275,
-      "html_meta_image": 37,
-      "jsonld_image": 52,
-      "retained_public_reference": 84,
+      "approved_media_manifest": 8,
+      "html_link_image": 273,
+      "html_img_content": 1668,
+      "declared_post_media": 372,
+      "css_background_image": 341,
+      "jsonld_image": 82,
+      "html_meta_image": 70,
+      "retained_public_reference": 83,
       "public_special_source_declared_image": 40,
       "trusted_directory_declared_image": 11
     },
     "byPlatform": {
       "public_source": 40,
       "website_feed": 8,
-      "official_page": 302
+      "official_page": 324
     }
   },
   "queues": {
@@ -255,6 +255,29 @@
         }
       },
       {
+        "restaurantId": "osm-node-4420843802-le-bistro-by-liz",
+        "name": "Le Bistro by Liz",
+        "neighborhood": "South End",
+        "website": "https://www.lebistrohalifax.com",
+        "candidateCount": 25,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 24,
+          "retained_media_reference": 1
+        },
+        "reviewStates": {
+          "candidate_review": 25
+        },
+        "bestCandidate": {
+          "id": "thumb-7cd739e3375a25c7bd",
+          "thumbnailUrl": "https://lebistrohalifax.com/images/share-preview.jpg",
+          "sourceUrl": "https://lebistrohalifax.com/",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "official_page_source_media"
+        }
+      },
+      {
         "restaurantId": "osm-way-463777993-may-garden",
         "name": "May Garden",
         "neighborhood": "Dartmouth",
@@ -347,40 +370,17 @@
         }
       },
       {
-        "restaurantId": "osm-node-4420843802-le-bistro-by-liz",
-        "name": "Le Bistro by Liz",
-        "neighborhood": "South End",
-        "website": "https://www.lebistrohalifax.com",
-        "candidateCount": 24,
-        "sourceKinds": {
-          "official_page_thumbnail_candidate": 23,
-          "retained_media_reference": 1
-        },
-        "reviewStates": {
-          "candidate_review": 24
-        },
-        "bestCandidate": {
-          "id": "thumb-1f249be937f46d9b97",
-          "thumbnailUrl": "https://www.lebistrohalifax.com//wp-content//uploads//2023//07//brunch-2.jpg",
-          "sourceUrl": "https://www.lebistrohalifax.com/brunch-menu/",
-          "sourceKind": "official_page_thumbnail_candidate",
-          "reviewState": "candidate_review",
-          "rightsStatus": "requires_rights_review",
-          "confidence": "same_host_official_page_image"
-        }
-      },
-      {
         "restaurantId": "osm-node-1031603952-darrell-s",
         "name": "Darrell's",
         "neighborhood": "South End",
         "website": "https://darrellsrestaurants.com",
-        "candidateCount": 22,
+        "candidateCount": 23,
         "sourceKinds": {
-          "official_page_thumbnail_candidate": 21,
+          "official_page_thumbnail_candidate": 22,
           "retained_media_reference": 1
         },
         "reviewStates": {
-          "candidate_review": 22
+          "candidate_review": 23
         },
         "bestCandidate": {
           "id": "thumb-cc8da96ff929b96fe6",
@@ -461,6 +461,29 @@
         }
       },
       {
+        "restaurantId": "osm-node-7032915871-chkn-chop",
+        "name": "Chkn Chop",
+        "neighborhood": "North End",
+        "website": "https://www.chknchop.com/",
+        "candidateCount": 21,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 20,
+          "retained_media_reference": 1
+        },
+        "reviewStates": {
+          "candidate_review": 21
+        },
+        "bestCandidate": {
+          "id": "thumb-66be939606f500bc1f",
+          "thumbnailUrl": "https://images.squarespace-cdn.com/content/v1/595fc19ae4fcb53915024e3f/09a3ccc3-a7f5-49ea-add7-0df03fa4e389/DRINK+LIST+FEB+2026.jpg",
+          "sourceUrl": "https://www.chknchop.com/menu",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "official_page_declared_remote_image"
+        }
+      },
+      {
         "restaurantId": "osm-node-5188870965-donnini-s-pizza",
         "name": "Donnini's Pizza",
         "neighborhood": "North End",
@@ -481,29 +504,6 @@
           "reviewState": "candidate_review",
           "rightsStatus": "requires_rights_review",
           "confidence": "same_host_official_page_image"
-        }
-      },
-      {
-        "restaurantId": "osm-node-7032915871-chkn-chop",
-        "name": "Chkn Chop",
-        "neighborhood": "North End",
-        "website": "https://www.chknchop.com/",
-        "candidateCount": 20,
-        "sourceKinds": {
-          "official_page_thumbnail_candidate": 19,
-          "retained_media_reference": 1
-        },
-        "reviewStates": {
-          "candidate_review": 20
-        },
-        "bestCandidate": {
-          "id": "thumb-66be939606f500bc1f",
-          "thumbnailUrl": "https://images.squarespace-cdn.com/content/v1/595fc19ae4fcb53915024e3f/09a3ccc3-a7f5-49ea-add7-0df03fa4e389/DRINK+LIST+FEB+2026.jpg",
-          "sourceUrl": "https://www.chknchop.com/menu",
-          "sourceKind": "official_page_thumbnail_candidate",
-          "reviewState": "candidate_review",
-          "rightsStatus": "requires_rights_review",
-          "confidence": "official_page_declared_remote_image"
         }
       },
       {
@@ -544,7 +544,7 @@
         "bestCandidate": {
           "id": "thumb-6348d5cdfcf7995f93",
           "thumbnailUrl": "https://img1.wsimg.com/isteam/ip/5d7c9443-8d7f-4fc0-b026-ec2d2e0ee6ab/sweetandsassy-23.jpg",
-          "sourceUrl": "https://sweetandsassy.ca/breakfast-menu",
+          "sourceUrl": "https://sweetandsassy.ca/private-events",
           "sourceKind": "official_page_thumbnail_candidate",
           "reviewState": "candidate_review",
           "rightsStatus": "requires_rights_review",
@@ -666,29 +666,6 @@
         }
       },
       {
-        "restaurantId": "osm-node-1116387649-bicycle-thief",
-        "name": "Bicycle Thief",
-        "neighborhood": "Waterfront",
-        "website": "https://bicyclethief.ca/",
-        "candidateCount": 18,
-        "sourceKinds": {
-          "official_page_thumbnail_candidate": 17,
-          "retained_media_reference": 1
-        },
-        "reviewStates": {
-          "candidate_review": 18
-        },
-        "bestCandidate": {
-          "id": "thumb-8a722ce2d0a3723be7",
-          "thumbnailUrl": "https://bertossigroup.com/in-the-news/Best-of-Halifax-Generic-Bronze-Black.png",
-          "sourceUrl": "https://bicyclethief.ca/reservations/",
-          "sourceKind": "official_page_thumbnail_candidate",
-          "reviewState": "candidate_review",
-          "rightsStatus": "requires_rights_review",
-          "confidence": "official_page_declared_remote_image"
-        }
-      },
-      {
         "restaurantId": "osm-node-5140336622-studio-east-food-drink",
         "name": "Studio East Food+Drink",
         "neighborhood": "North End",
@@ -784,7 +761,7 @@
         "restaurantId": "osm-node-11752614922-cafe-good-luck",
         "name": "Café Good Luck",
         "neighborhood": "Dartmouth",
-        "website": "https://www.manualfoodanddrinkco.com/goodluck",
+        "website": "https://cafegoodluck.ca/goodluck",
         "candidateCount": 16,
         "sourceKinds": {
           "official_page_thumbnail_candidate": 15,
@@ -895,6 +872,51 @@
         }
       },
       {
+        "restaurantId": "tulipan-dartmouth",
+        "name": "Tulipan",
+        "neighborhood": "Downtown Dartmouth",
+        "website": "https://www.tulipanrestaurant.com/",
+        "candidateCount": 15,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 15
+        },
+        "reviewStates": {
+          "candidate_review": 15
+        },
+        "bestCandidate": {
+          "id": "thumb-f1b72538764ce2dd33",
+          "thumbnailUrl": "https://images.squarespace-cdn.com/content/v1/695ad4ee1c320213052299aa/0b6ae01e-b744-4e93-a24c-d0d816262b81/IMG_1267-2.jpg",
+          "sourceUrl": "https://www.tulipanrestaurant.com/",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "official_page_approved_cdn_image"
+        }
+      },
+      {
+        "restaurantId": "osm-way-319792807-chinatown",
+        "name": "Chinatown",
+        "neighborhood": "Armdale / Fairview",
+        "website": "https://www.chinatownhalifax.com/",
+        "candidateCount": 14,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 13,
+          "retained_media_reference": 1
+        },
+        "reviewStates": {
+          "candidate_review": 14
+        },
+        "bestCandidate": {
+          "id": "thumb-b7f09d235d0d6b83f0",
+          "thumbnailUrl": "https://www.chinatownhalifax.com/chinese-menu/r",
+          "sourceUrl": "https://www.chinatownhalifax.com/chinese-menu/",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "same_host_official_page_image"
+        }
+      },
+      {
         "restaurantId": "osm-node-3802931964-hamachi-kita",
         "name": "Hamachi Kita",
         "neighborhood": "North End",
@@ -940,10 +962,32 @@
         }
       },
       {
-        "restaurantId": "osm-way-319792807-chinatown",
-        "name": "Chinatown",
-        "neighborhood": "Armdale / Fairview",
-        "website": "https://www.chinatownhalifax.com/",
+        "restaurantId": "osm-node-5134046822-chain-yard-urban-cidery",
+        "name": "Chain Yard Urban Cidery",
+        "neighborhood": "North End",
+        "website": "https://www.chainyardcider.com/",
+        "candidateCount": 13,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 13
+        },
+        "reviewStates": {
+          "candidate_review": 13
+        },
+        "bestCandidate": {
+          "id": "thumb-ef77ba39587af1d9c1",
+          "thumbnailUrl": "https://images.squarespace-cdn.com/content/v1/6204578a9e4ef240c87d783e/10272502-d6a1-4f26-98af-2cf23bcf4ea2/intrepid-four-pack-e1586543417739.jpeg",
+          "sourceUrl": "https://www.chainyardcider.com/",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "official_page_approved_cdn_image"
+        }
+      },
+      {
+        "restaurantId": "osm-node-5150122721-good-robot-brewing-company",
+        "name": "Good Robot Brewing Company",
+        "neighborhood": "North End",
+        "website": "https://goodrobotbrewing.ca/",
         "candidateCount": 13,
         "sourceKinds": {
           "official_page_thumbnail_candidate": 12,
@@ -953,13 +997,13 @@
           "candidate_review": 13
         },
         "bestCandidate": {
-          "id": "thumb-b7f09d235d0d6b83f0",
-          "thumbnailUrl": "https://www.chinatownhalifax.com/chinese-menu/r",
-          "sourceUrl": "https://www.chinatownhalifax.com/chinese-menu/",
+          "id": "thumb-d66a534cc2ac503e38",
+          "thumbnailUrl": "https://bunny-wp-pullzone-tt3dehskqo.b-cdn.net/wp-content/themes/goodrobot-store/img/GR-DefaultImage.jpg",
+          "sourceUrl": "https://goodrobotbrewing.ca/events/",
           "sourceKind": "official_page_thumbnail_candidate",
           "reviewState": "candidate_review",
           "rightsStatus": "requires_rights_review",
-          "confidence": "same_host_official_page_image"
+          "confidence": "official_page_source_media"
         }
       },
       {
@@ -978,6 +1022,28 @@
           "id": "thumb-96d095eed4149a70dd",
           "thumbnailUrl": "https://images.squarespace-cdn.com/content/v1/5aba805412b13f27716a7d1a/1524722358596-CAIJURSXM9WDVV5R6QBS/RFM-StandAlone-White.png",
           "sourceUrl": "https://www.realfakemeats.com/",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "official_page_approved_cdn_image"
+        }
+      },
+      {
+        "restaurantId": "canteen-on-portland-dartmouth",
+        "name": "The Canteen on Portland",
+        "neighborhood": "Downtown Dartmouth",
+        "website": "https://www.thecanteen.ca/",
+        "candidateCount": 13,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 13
+        },
+        "reviewStates": {
+          "candidate_review": 13
+        },
+        "bestCandidate": {
+          "id": "thumb-84f24f031eaec58ad0",
+          "thumbnailUrl": "https://images.squarespace-cdn.com/content/v1/52f6862be4b0a5a45c189050/10beb4e5-dc3e-4b25-a764-298a480e1d83/CanteenRestaurant_Dinner.png",
+          "sourceUrl": "https://www.thecanteen.ca/mainmenus",
           "sourceKind": "official_page_thumbnail_candidate",
           "reviewState": "candidate_review",
           "rightsStatus": "requires_rights_review",
@@ -1007,29 +1073,6 @@
           "reviewState": "candidate_review",
           "rightsStatus": "requires_rights_review",
           "confidence": "official_feed_media"
-        }
-      },
-      {
-        "restaurantId": "osm-node-5150122721-good-robot-brewing-company",
-        "name": "Good Robot Brewing Company",
-        "neighborhood": "North End",
-        "website": "https://goodrobotbrewing.ca/",
-        "candidateCount": 12,
-        "sourceKinds": {
-          "official_page_thumbnail_candidate": 11,
-          "retained_media_reference": 1
-        },
-        "reviewStates": {
-          "candidate_review": 12
-        },
-        "bestCandidate": {
-          "id": "thumb-4570d19277905ef5db",
-          "thumbnailUrl": "https://bunny-wp-pullzone-tt3dehskqo.b-cdn.net/wp-content/uploads/2026/03/A7304048-1-1024x683.webp",
-          "sourceUrl": "https://goodrobotbrewing.ca/",
-          "sourceKind": "official_page_thumbnail_candidate",
-          "reviewState": "candidate_review",
-          "rightsStatus": "requires_rights_review",
-          "confidence": "official_page_declared_remote_image"
         }
       },
       {
@@ -1170,6 +1213,28 @@
         }
       },
       {
+        "restaurantId": "via-condotti-queen",
+        "name": "Via Condotti",
+        "neighborhood": "Spring Garden",
+        "website": "https://www.viacondotti.ca/",
+        "candidateCount": 11,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 11
+        },
+        "reviewStates": {
+          "candidate_review": 11
+        },
+        "bestCandidate": {
+          "id": "thumb-3aa1725df205945a44",
+          "thumbnailUrl": "https://images.getbento.com/accounts/87df5e4c0b2db909743dbe70d3e81a80/media/images/12469IMG_9617.jpg?w=5400&fit=max&auto=compress,format&cs=origin",
+          "sourceUrl": "https://www.viacondotti.ca/",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "official_page_approved_cdn_image"
+        }
+      },
+      {
         "restaurantId": "osm-node-7465073827-antojo-tacos-tequila",
         "name": "Antojo Tacos + Tequila",
         "neighborhood": "Downtown",
@@ -1192,6 +1257,29 @@
           "reviewState": "candidate_review",
           "rightsStatus": "requires_rights_review",
           "confidence": "official_feed_media"
+        }
+      },
+      {
+        "restaurantId": "dear-friend",
+        "name": "Dear Friend Bar",
+        "neighborhood": "Dartmouth",
+        "website": "https://dearfriendbar.com/",
+        "candidateCount": 10,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 9,
+          "retained_media_reference": 1
+        },
+        "reviewStates": {
+          "candidate_review": 10
+        },
+        "bestCandidate": {
+          "id": "thumb-8635f99e3ef4adfb70",
+          "thumbnailUrl": "https://dearfriendbar.com/+%20i.src%20+",
+          "sourceUrl": "https://dearfriendbar.com/",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "same_host_official_page_image"
         }
       },
       {
@@ -1286,6 +1374,50 @@
         }
       },
       {
+        "restaurantId": "osm-node-11552180279-sushi-jet",
+        "name": "Sushi Jet",
+        "neighborhood": "Downtown",
+        "website": "https://www.sushijethalifax.com/",
+        "candidateCount": 10,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 10
+        },
+        "reviewStates": {
+          "candidate_review": 10
+        },
+        "bestCandidate": {
+          "id": "thumb-0f4e8c102bcd3fcdf9",
+          "thumbnailUrl": "https://static.wixstatic.com//media//9bc8f8_c10adab0041d44e1870ccb9be5870141~mv2.jpg",
+          "sourceUrl": "https://www.sushijethalifax.com/menu",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "official_page_approved_cdn_image"
+        }
+      },
+      {
+        "restaurantId": "water-polo-halifax",
+        "name": "Water Polo Restaurant",
+        "neighborhood": "Waterfront",
+        "website": "https://www.waterpolohfx.ca/",
+        "candidateCount": 10,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 10
+        },
+        "reviewStates": {
+          "candidate_review": 10
+        },
+        "bestCandidate": {
+          "id": "thumb-879a3112e67929e3e9",
+          "thumbnailUrl": "https://images.getbento.com/accounts/15bdd5135b436c32400cc8748f21a401/media/CJcJ4fr1QdCYSsTwqAXw_IMG_0218.jpg?w=5400&fit=max&auto=compress,format&cs=origin",
+          "sourceUrl": "https://www.waterpolohfx.ca/",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "official_page_approved_cdn_image"
+        }
+      },
+      {
         "restaurantId": "bar-kismet",
         "name": "Bar Kismet",
         "neighborhood": "North End",
@@ -1334,29 +1466,6 @@
         }
       },
       {
-        "restaurantId": "dear-friend",
-        "name": "Dear Friend Bar",
-        "neighborhood": "Dartmouth",
-        "website": "https://dearfriendbar.com/",
-        "candidateCount": 9,
-        "sourceKinds": {
-          "official_page_thumbnail_candidate": 8,
-          "retained_media_reference": 1
-        },
-        "reviewStates": {
-          "candidate_review": 9
-        },
-        "bestCandidate": {
-          "id": "thumb-8635f99e3ef4adfb70",
-          "thumbnailUrl": "https://dearfriendbar.com/+%20i.src%20+",
-          "sourceUrl": "https://dearfriendbar.com/",
-          "sourceKind": "official_page_thumbnail_candidate",
-          "reviewState": "candidate_review",
-          "rightsStatus": "requires_rights_review",
-          "confidence": "same_host_official_page_image"
-        }
-      },
-      {
         "restaurantId": "osm-node-11752717941-east-cup-cafe",
         "name": "East Cup Cafe",
         "neighborhood": "Downtown",
@@ -1377,6 +1486,28 @@
           "reviewState": "candidate_review",
           "rightsStatus": "requires_rights_review",
           "confidence": "same_host_official_page_image"
+        }
+      },
+      {
+        "restaurantId": "hux-halifax",
+        "name": "HUX Bar & Bistro",
+        "neighborhood": "Downtown Halifax",
+        "website": "https://www.huxhalifax.com/",
+        "candidateCount": 9,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 9
+        },
+        "reviewStates": {
+          "candidate_review": 9
+        },
+        "bestCandidate": {
+          "id": "thumb-0c2981ba9c7709cef6",
+          "thumbnailUrl": "https://images.squarespace-cdn.com/content/v1/69f3b96fc94e4135765ba776/0cd5aec6-24dc-4bd7-982d-6bf102650d00/hux_branding_graphic_transparent.png",
+          "sourceUrl": "https://www.huxhalifax.com/",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "official_page_approved_cdn_image"
         }
       },
       {
@@ -1424,6 +1555,28 @@
         }
       },
       {
+        "restaurantId": "darty-brewing-dartmouth",
+        "name": "Darty Brewing Co.",
+        "neighborhood": "Downtown Dartmouth",
+        "website": "https://www.dartybrewing.ca/",
+        "candidateCount": 8,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 8
+        },
+        "reviewStates": {
+          "candidate_review": 8
+        },
+        "bestCandidate": {
+          "id": "thumb-4789c97c1f52bd7d2d",
+          "thumbnailUrl": "https://www.dartybrewing.ca/cdn/shop/files/Darty-6_Pack_Mockup-355ml-102-Lite.png?crop=center&height=300&v=1746058870&width=300",
+          "sourceUrl": "https://www.dartybrewing.ca/",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "same_host_official_page_image"
+        }
+      },
+      {
         "restaurantId": "osm-node-2611287045-gingerbread-haus-bakery",
         "name": "Gingerbread Haus Bakery",
         "neighborhood": "South End",
@@ -1463,6 +1616,73 @@
           "id": "thumb-94f055ce672f63a066",
           "thumbnailUrl": "https://lucyshydrostone.ca/wp-content/uploads/Feature-1.jpg",
           "sourceUrl": "https://lucyshydrostone.ca/",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "same_host_official_page_image"
+        }
+      },
+      {
+        "restaurantId": "retas-gottingen",
+        "name": "Reta’s",
+        "neighborhood": "North End",
+        "website": "https://www.retasrestaurant.com/",
+        "candidateCount": 8,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 8
+        },
+        "reviewStates": {
+          "candidate_review": 8
+        },
+        "bestCandidate": {
+          "id": "thumb-ccf1645c1dd21972e3",
+          "thumbnailUrl": "https://images.squarespace-cdn.com/content/v1/66d3961753b0d32223c290e8/0c3fe35e-42c2-44d3-a568-f27a7aef290a/Beef+.png",
+          "sourceUrl": "https://www.retasrestaurant.com/",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "official_page_approved_cdn_image"
+        }
+      },
+      {
+        "restaurantId": "osm-node-3801064263-barrios-kitchen-and-bar",
+        "name": "Barrios Kitchen & Bar",
+        "neighborhood": "Downtown",
+        "website": "https://www.barrioshfx.ca/",
+        "candidateCount": 7,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 6,
+          "retained_media_reference": 1
+        },
+        "reviewStates": {
+          "candidate_review": 7
+        },
+        "bestCandidate": {
+          "id": "thumb-3a949d6be0a476d723",
+          "thumbnailUrl": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YX4x8ONG0OcbvP8w/barrios.barrington-A1a5y6elBxtMQveE.png",
+          "sourceUrl": "https://barrioshfx.ca/delivery",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "official_page_declared_remote_image"
+        }
+      },
+      {
+        "restaurantId": "busan-korean-bbq-halifax",
+        "name": "Busan Korean BBQ",
+        "neighborhood": "Quinpool",
+        "website": "https://www.busankoreanbbq.com/",
+        "candidateCount": 7,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 7
+        },
+        "reviewStates": {
+          "candidate_review": 7
+        },
+        "bestCandidate": {
+          "id": "thumb-3947121f0b581618aa",
+          "thumbnailUrl": "https://www.busankoreanbbq.com/wp-content/uploads/2020/07/2020-02-05.jpg",
+          "sourceUrl": "https://www.busankoreanbbq.com/",
           "sourceKind": "official_page_thumbnail_candidate",
           "reviewState": "candidate_review",
           "rightsStatus": "requires_rights_review",
@@ -1563,6 +1783,72 @@
         }
       },
       {
+        "restaurantId": "stardust-bar-kitchen-halifax",
+        "name": "Stardust Bar + Kitchen",
+        "neighborhood": "Downtown",
+        "website": "https://www.stardustbar.ca/",
+        "candidateCount": 7,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 7
+        },
+        "reviewStates": {
+          "candidate_review": 7
+        },
+        "bestCandidate": {
+          "id": "thumb-bf214c5294358a75d9",
+          "thumbnailUrl": "https://images.squarespace-cdn.com/content/v1/66743e6e0ee17a2451ac4790/19522abc-4e6a-40ef-84fe-848ba5563be7/IMG_9842.jpeg",
+          "sourceUrl": "https://www.stardustbar.ca/events",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "official_page_approved_cdn_image"
+        }
+      },
+      {
+        "restaurantId": "sushi-square-scotia-square",
+        "name": "Sushi Square",
+        "neighborhood": "Downtown Halifax",
+        "website": "https://sushisquare.ca/",
+        "candidateCount": 7,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 7
+        },
+        "reviewStates": {
+          "candidate_review": 7
+        },
+        "bestCandidate": {
+          "id": "thumb-cb4a67f770f888c302",
+          "thumbnailUrl": "https://sushisquare.ca/wp-content/uploads/2020/11/800px-Sushi_platter-300x300.jpg",
+          "sourceUrl": "https://sushisquare.ca/",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "same_host_official_page_image"
+        }
+      },
+      {
+        "restaurantId": "village-taphouse-west-bedford",
+        "name": "The Village Taphouse of West Bedford",
+        "neighborhood": "West Bedford",
+        "website": "https://villagetaphouse.ca/",
+        "candidateCount": 7,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 7
+        },
+        "reviewStates": {
+          "candidate_review": 7
+        },
+        "bestCandidate": {
+          "id": "thumb-bc03c8c67f13c0fcb8",
+          "thumbnailUrl": "https://villagetaphouse.ca/wp-content/uploads/2021/04/cropped-Village-Taphouse-Lightening-B-03.png",
+          "sourceUrl": "https://villagetaphouse.ca/",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "same_host_official_page_image"
+        }
+      },
+      {
         "restaurantId": "osm-node-8158663930-almonak",
         "name": "Almonak",
         "neighborhood": "North End",
@@ -1586,10 +1872,32 @@
         }
       },
       {
-        "restaurantId": "osm-node-3801064263-barrios-kitchen-and-bar",
-        "name": "Barrios Kitchen & Bar",
+        "restaurantId": "osm-node-4421124794-cafe-marco-polo",
+        "name": "Cafe Marco Polo",
+        "neighborhood": "Dartmouth",
+        "website": "https://cafemarcopolodartmouth.com/",
+        "candidateCount": 6,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 6
+        },
+        "reviewStates": {
+          "candidate_review": 6
+        },
+        "bestCandidate": {
+          "id": "thumb-13928883253b616d0e",
+          "thumbnailUrl": "https://cafemarcopolodartmouth.com/wp-content/uploads/2022/03/img_6938.jpg",
+          "sourceUrl": "https://cafemarcopolodartmouth.com/",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "same_host_official_page_image"
+        }
+      },
+      {
+        "restaurantId": "highwayman",
+        "name": "Highwayman",
         "neighborhood": "Downtown",
-        "website": "https://www.barrioshfx.ca/",
+        "website": "https://www.highwaymanhfx.com/",
         "candidateCount": 6,
         "sourceKinds": {
           "official_page_thumbnail_candidate": 5,
@@ -1599,9 +1907,9 @@
           "candidate_review": 6
         },
         "bestCandidate": {
-          "id": "thumb-3a949d6be0a476d723",
-          "thumbnailUrl": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YX4x8ONG0OcbvP8w/barrios.barrington-A1a5y6elBxtMQveE.png",
-          "sourceUrl": "https://barrioshfx.ca/delivery",
+          "id": "thumb-465cf944fd9de8b294",
+          "thumbnailUrl": "https://images.squarespace-cdn.com/content/v1/5f3ab2aad4d7be367932fd9a/1599568848788-0DVCC2Z0DAPXXJLR6OPL/hwm-illustration-pos-green.png",
+          "sourceUrl": "https://www.highwaymanhfx.com/",
           "sourceKind": "official_page_thumbnail_candidate",
           "reviewState": "candidate_review",
           "rightsStatus": "requires_rights_review",
@@ -1701,26 +2009,135 @@
         }
       },
       {
-        "restaurantId": "highwayman",
-        "name": "Highwayman",
-        "neighborhood": "Downtown",
-        "website": "https://www.highwaymanhfx.com/",
+        "restaurantId": "side-hustle-snack-bar-dartmouth",
+        "name": "Side Hustle Snack Bar",
+        "neighborhood": "Downtown Dartmouth",
+        "website": "https://www.sidehustlesnackbar.com/",
+        "candidateCount": 6,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 6
+        },
+        "reviewStates": {
+          "candidate_review": 6
+        },
+        "bestCandidate": {
+          "id": "thumb-2a77229ba59949a7ab",
+          "thumbnailUrl": "https://images.squarespace-cdn.com/content/v1/5cbe6a27fd91f3000196b139/1664581414628-RX14EY9MO6FTIJBKPIG5/Side_Hustle_27.jpg",
+          "sourceUrl": "https://www.sidehustlesnackbar.com/",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "official_page_approved_cdn_image"
+        }
+      },
+      {
+        "restaurantId": "osm-node-11552151862-sushi-jet",
+        "name": "Sushi Jet",
+        "neighborhood": "Dartmouth",
+        "website": "https://www.sushijetdartmouth.ca/",
+        "candidateCount": 6,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 6
+        },
+        "reviewStates": {
+          "candidate_review": 6
+        },
+        "bestCandidate": {
+          "id": "thumb-35e952af08e91809d7",
+          "thumbnailUrl": "https://static.wixstatic.com//media//cf748c_4b4f5ac442be40bdb242cac5a5e4c04d~mv2.jpg",
+          "sourceUrl": "https://www.sushijetdartmouth.ca/menu",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "official_page_approved_cdn_image"
+        }
+      },
+      {
+        "restaurantId": "buta-ramen-bedford",
+        "name": "Buta Ramen Bedford",
+        "neighborhood": "Bedford",
+        "website": "https://butaramen.ca/",
         "candidateCount": 5,
         "sourceKinds": {
-          "official_page_thumbnail_candidate": 4,
-          "retained_media_reference": 1
+          "official_page_thumbnail_candidate": 5
         },
         "reviewStates": {
           "candidate_review": 5
         },
         "bestCandidate": {
-          "id": "thumb-465cf944fd9de8b294",
-          "thumbnailUrl": "https://images.squarespace-cdn.com/content/v1/5f3ab2aad4d7be367932fd9a/1599568848788-0DVCC2Z0DAPXXJLR6OPL/hwm-illustration-pos-green.png",
-          "sourceUrl": "https://www.highwaymanhfx.com/",
+          "id": "thumb-83752d99c59a05ef88",
+          "thumbnailUrl": "https://images.squarespace-cdn.com/content/v1/66631223baf27134eb0d8c1c/0fd40db2-19de-46fa-9ccb-5e91b07cb38c/ButaB.jpg",
+          "sourceUrl": "https://butaramen.ca/",
           "sourceKind": "official_page_thumbnail_candidate",
           "reviewState": "candidate_review",
           "rightsStatus": "requires_rights_review",
-          "confidence": "official_page_declared_remote_image"
+          "confidence": "official_page_approved_cdn_image"
+        }
+      },
+      {
+        "restaurantId": "buta-ramen-dartmouth",
+        "name": "Buta Ramen Dartmouth",
+        "neighborhood": "Downtown Dartmouth",
+        "website": "https://butaramen.ca/",
+        "candidateCount": 5,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 5
+        },
+        "reviewStates": {
+          "candidate_review": 5
+        },
+        "bestCandidate": {
+          "id": "thumb-17acbe4f7332065ae6",
+          "thumbnailUrl": "https://images.squarespace-cdn.com/content/v1/66631223baf27134eb0d8c1c/0fd40db2-19de-46fa-9ccb-5e91b07cb38c/ButaB.jpg",
+          "sourceUrl": "https://butaramen.ca/",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "official_page_approved_cdn_image"
+        }
+      },
+      {
+        "restaurantId": "buta-ramen-halifax",
+        "name": "Buta Ramen Halifax",
+        "neighborhood": "Downtown",
+        "website": "https://butaramen.ca/",
+        "candidateCount": 5,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 5
+        },
+        "reviewStates": {
+          "candidate_review": 5
+        },
+        "bestCandidate": {
+          "id": "thumb-b809fda7f7352f3074",
+          "thumbnailUrl": "https://images.squarespace-cdn.com/content/v1/66631223baf27134eb0d8c1c/0fd40db2-19de-46fa-9ccb-5e91b07cb38c/ButaB.jpg",
+          "sourceUrl": "https://butaramen.ca/",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "official_page_approved_cdn_image"
+        }
+      },
+      {
+        "restaurantId": "osm-node-2624400763-java-blend",
+        "name": "Java Blend",
+        "neighborhood": "North End",
+        "website": "https://javablendcoffee.com/pages/contact-us",
+        "candidateCount": 5,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 5
+        },
+        "reviewStates": {
+          "candidate_review": 5
+        },
+        "bestCandidate": {
+          "id": "thumb-ca44fd327814754903",
+          "thumbnailUrl": "https://javablendcoffee.com/cdn/shop/files/DSC01864_500x500.jpg?v=1616114238",
+          "sourceUrl": "https://javablendcoffee.com/pages/contact-us",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "same_host_official_page_image"
         }
       },
       {
@@ -1769,6 +2186,28 @@
         }
       },
       {
+        "restaurantId": "oxalis-dartmouth",
+        "name": "Oxalis Restaurant",
+        "neighborhood": "Downtown Dartmouth",
+        "website": "https://www.oxalisrestaurant.com/",
+        "candidateCount": 5,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 5
+        },
+        "reviewStates": {
+          "candidate_review": 5
+        },
+        "bestCandidate": {
+          "id": "thumb-a65925c132f0b442f8",
+          "thumbnailUrl": "https://images.squarespace-cdn.com/content/v1/60368a7421823d1fa70aefdd/6de7fd82-a886-41ea-a3e1-9bb9d7a2f63f/IMG_4182.JPG",
+          "sourceUrl": "https://www.oxalisrestaurant.com/",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "official_page_approved_cdn_image"
+        }
+      },
+      {
         "restaurantId": "osm-node-9099103635-pazzo-ristorante-and-enoteca",
         "name": "Pazzo Ristorante & Enoteca",
         "neighborhood": "Downtown",
@@ -1791,6 +2230,28 @@
           "reviewState": "candidate_review",
           "rightsStatus": "requires_rights_review",
           "confidence": "official_feed_media"
+        }
+      },
+      {
+        "restaurantId": "osm-node-11751560115-seaport-social",
+        "name": "Seaport Social",
+        "neighborhood": "Waterfront",
+        "website": "https://www.seaportsocialhalifax.com/",
+        "candidateCount": 5,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 5
+        },
+        "reviewStates": {
+          "candidate_review": 5
+        },
+        "bestCandidate": {
+          "id": "thumb-15c7c1e29330880ab4",
+          "thumbnailUrl": "https://mds-assets.marriott.com/cdn-cgi/image/f=auto/cms-platform-for-marriott/yhzwi-seaport-social/site-images/migrated-images/bar-thumb-image.jpg?width=1000&height=653",
+          "sourceUrl": "https://www.seaportsocialhalifax.com/",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "official_page_source_media"
         }
       },
       {
@@ -1840,6 +2301,28 @@
         }
       },
       {
+        "restaurantId": "osm-node-11612206582-swaad-sagaa-indian-cuisine-incorporated",
+        "name": "Swaad Sagaa Indian Cuisine Incorporated",
+        "neighborhood": "North End",
+        "website": "https://www.swaadsagaa.com/",
+        "candidateCount": 5,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 5
+        },
+        "reviewStates": {
+          "candidate_review": 5
+        },
+        "bestCandidate": {
+          "id": "thumb-b00508a01c6c75f434",
+          "thumbnailUrl": "https://mmg.whatsapp.net/v/t61.24694-24/390412780_217536521362094_7239966747836541380_n.jpg?ccb=1-7&_nc_sid=5a2cf7&_nc_ohc=cldpfocZDE8Q7kNvwHRn4E-&_nc_oc=AdropvqrnlzZ2O41fM32RUMlLRTZa2tetWWAs580SZegX27FPS23Wwz7-QiozQfB0w0&_nc_zt=3&_nc_ht=mmg.whatsapp.net&_nc_gid=kqAmqu3MgYEhhC7kVg_3Jg&_nc_ss=7f289&oh=01_Q5Aa5gFmTrNmp018P5rwBloUTMymYZSC7x4KCRVqgHdIbxLtSA&oe=6AC23988",
+          "sourceUrl": "https://www.whatsapp.com/channel/0029VaE7oCOJ3juwQFbnhR1C",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "official_page_source_media"
+        }
+      },
+      {
         "restaurantId": "osm-way-253538107-the-armview-restaurant-and-lounge",
         "name": "The Armview Restaurant & Lounge",
         "neighborhood": "Halifax Peninsula",
@@ -1855,7 +2338,7 @@
         "bestCandidate": {
           "id": "thumb-7b9bcd7fdc0d0b3d3f",
           "thumbnailUrl": "https://www.thearmview.com/wp-content/uploads/2022/11/armview-restaurant-lounge.jpg",
-          "sourceUrl": "https://www.thearmview.com/armview-park-menu/",
+          "sourceUrl": "https://www.thearmview.com/",
           "sourceKind": "official_page_thumbnail_candidate",
           "reviewState": "candidate_review",
           "rightsStatus": "requires_rights_review",
@@ -1903,28 +2386,6 @@
           "id": "thumb-a3e20019c7c579102a",
           "thumbnailUrl": "https://static.wixstatic.com/media/417737_94bd652dc91142a7adc8d68d1c67fd9e%7Emv2.jpg/v1/fit/w_2500,h_1330,al_c/417737_94bd652dc91142a7adc8d68d1c67fd9e%7Emv2.jpg",
           "sourceUrl": "https://www.tiltedtap.ca/drink-menu",
-          "sourceKind": "official_page_thumbnail_candidate",
-          "reviewState": "candidate_review",
-          "rightsStatus": "requires_rights_review",
-          "confidence": "official_page_source_media"
-        }
-      },
-      {
-        "restaurantId": "osm-node-886747513-trident-booksellers-and-cafe",
-        "name": "Trident Booksellers and Cafe",
-        "neighborhood": "Waterfront",
-        "website": "https://tridenthalifax.ca/",
-        "candidateCount": 5,
-        "sourceKinds": {
-          "official_page_thumbnail_candidate": 5
-        },
-        "reviewStates": {
-          "candidate_review": 5
-        },
-        "bestCandidate": {
-          "id": "thumb-224c2c73b2b6135a36",
-          "thumbnailUrl": "https://tridenthalifax.ca/wp-content/uploads/2024/01/Trident-Halifax-Cafe-flowers-400x400-1-300x300.jpg",
-          "sourceUrl": "https://tridenthalifax.ca/",
           "sourceKind": "official_page_thumbnail_candidate",
           "reviewState": "candidate_review",
           "rightsStatus": "requires_rights_review",
@@ -2002,6 +2463,29 @@
         }
       },
       {
+        "restaurantId": "osm-node-4421306590-heppy-s-pie-lady",
+        "name": "Heppy's Pie Lady",
+        "neighborhood": "South End",
+        "website": "http://www.heppys.com",
+        "candidateCount": 4,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 3,
+          "retained_media_reference": 1
+        },
+        "reviewStates": {
+          "candidate_review": 4
+        },
+        "bestCandidate": {
+          "id": "thumb-a963a3061200a066af",
+          "thumbnailUrl": "https://heppys-pie-lady.square.site/uploads/b/c0736ab0-905a-11ee-9fdb-39aa1d6b8b09/Heppys-illu.jpg",
+          "sourceUrl": "https://heppys-pie-lady.square.site/",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "same_host_official_page_image"
+        }
+      },
+      {
         "restaurantId": "osm-node-11506685695-kenny-s-pizza",
         "name": "Kenny's Pizza",
         "neighborhood": "Armdale / Fairview",
@@ -2018,6 +2502,51 @@
           "id": "thumb-81d0da427aa425f2c6",
           "thumbnailUrl": "https://kennyspizzakearneylake.ca/wp-content/uploads/2020/04/apps-1-200x190.jpg",
           "sourceUrl": "https://kennyspizzakearneylake.ca/",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "official_page_source_media"
+        }
+      },
+      {
+        "restaurantId": "lake-city-cider-dartmouth",
+        "name": "Lake City Cider",
+        "neighborhood": "Downtown Dartmouth",
+        "website": "https://lakecitycider.ca/",
+        "candidateCount": 4,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 4
+        },
+        "reviewStates": {
+          "candidate_review": 4
+        },
+        "bestCandidate": {
+          "id": "thumb-1935d9b3321fc6c08e",
+          "thumbnailUrl": "https://lakecitycider.ca/cdn/shop/files/IMG-2759_300x.jpg?v=1790183823",
+          "sourceUrl": "https://lakecitycider.ca/collections/cider",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "same_host_official_page_image"
+        }
+      },
+      {
+        "restaurantId": "osm-node-11001023964-lockside-canteen",
+        "name": "Lockside Canteen",
+        "neighborhood": "Dartmouth",
+        "website": "https://lemon.dog/",
+        "candidateCount": 4,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 3,
+          "retained_media_reference": 1
+        },
+        "reviewStates": {
+          "candidate_review": 4
+        },
+        "bestCandidate": {
+          "id": "thumb-c731a0b20c08ea9125",
+          "thumbnailUrl": "https://lemon.dog/wp-content/uploads/2021/08/IMG_0624-scaled-e1652897066693.jpg",
+          "sourceUrl": "https://lemon.dog/",
           "sourceKind": "official_page_thumbnail_candidate",
           "reviewState": "candidate_review",
           "rightsStatus": "requires_rights_review",
@@ -2118,6 +2647,28 @@
         }
       },
       {
+        "restaurantId": "tribute-halifax",
+        "name": "Tribute",
+        "neighborhood": "Waterfront",
+        "website": "https://www.tributerestaurant.ca/",
+        "candidateCount": 4,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 4
+        },
+        "reviewStates": {
+          "candidate_review": 4
+        },
+        "bestCandidate": {
+          "id": "thumb-ef211264e392085a82",
+          "thumbnailUrl": "https://images.squarespace-cdn.com/content/v1/66ce7a7e86dbd53b00b13b8e/09be0d1e-5e0d-43d1-95ba-310734fc0bb4/Tribute+tasting+menu+20261014+WEB.jpg",
+          "sourceUrl": "https://www.tributerestaurant.ca/menu",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "official_page_approved_cdn_image"
+        }
+      },
+      {
         "restaurantId": "osm-way-83552117-bedford-beer-garden",
         "name": "Bedford Beer Garden",
         "neighborhood": "Armdale / Fairview",
@@ -2186,29 +2737,6 @@
         }
       },
       {
-        "restaurantId": "osm-node-4421306590-heppy-s-pie-lady",
-        "name": "Heppy's Pie Lady",
-        "neighborhood": "South End",
-        "website": "http://www.heppys.com",
-        "candidateCount": 3,
-        "sourceKinds": {
-          "official_page_thumbnail_candidate": 2,
-          "retained_media_reference": 1
-        },
-        "reviewStates": {
-          "candidate_review": 3
-        },
-        "bestCandidate": {
-          "id": "thumb-a963a3061200a066af",
-          "thumbnailUrl": "https://heppys-pie-lady.square.site/uploads/b/c0736ab0-905a-11ee-9fdb-39aa1d6b8b09/Heppys-illu.jpg",
-          "sourceUrl": "https://heppys-pie-lady.square.site/",
-          "sourceKind": "official_page_thumbnail_candidate",
-          "reviewState": "candidate_review",
-          "rightsStatus": "requires_rights_review",
-          "confidence": "same_host_official_page_image"
-        }
-      },
-      {
         "restaurantId": "osm-node-5503919661-jukai",
         "name": "Jukai",
         "neighborhood": "Downtown",
@@ -2271,29 +2799,6 @@
           "id": "thumb-aa0d3d4ad5893f3fe9",
           "thumbnailUrl": "https://img1.wsimg.com/isteam/ip/e4444fa9-54fc-4bcc-a771-89a81207ef2c/KakaoTalk_20191225_195011730%20(1).jpg/:/",
           "sourceUrl": "https://kanpaiizakaya.com/",
-          "sourceKind": "official_page_thumbnail_candidate",
-          "reviewState": "candidate_review",
-          "rightsStatus": "requires_rights_review",
-          "confidence": "official_page_declared_remote_image"
-        }
-      },
-      {
-        "restaurantId": "osm-node-11001023964-lockside-canteen",
-        "name": "Lockside Canteen",
-        "neighborhood": "Dartmouth",
-        "website": "https://lemon.dog/",
-        "candidateCount": 3,
-        "sourceKinds": {
-          "official_page_thumbnail_candidate": 2,
-          "retained_media_reference": 1
-        },
-        "reviewStates": {
-          "candidate_review": 3
-        },
-        "bestCandidate": {
-          "id": "thumb-9f99ee52325e00b2de",
-          "thumbnailUrl": "https://lemondog1594a.zapwp.com/wp-content/uploads/2021/08/IMG_0624-scaled-e1652897066693.jpg",
-          "sourceUrl": "https://lemon.dog/",
           "sourceKind": "official_page_thumbnail_candidate",
           "reviewState": "candidate_review",
           "rightsStatus": "requires_rights_review",
@@ -2393,28 +2898,6 @@
         }
       },
       {
-        "restaurantId": "osm-node-11612206582-swaad-sagaa-indian-cuisine-incorporated",
-        "name": "Swaad Sagaa Indian Cuisine Incorporated",
-        "neighborhood": "North End",
-        "website": "https://www.swaadsagaa.com/",
-        "candidateCount": 3,
-        "sourceKinds": {
-          "official_page_thumbnail_candidate": 3
-        },
-        "reviewStates": {
-          "candidate_review": 3
-        },
-        "bestCandidate": {
-          "id": "thumb-b00508a01c6c75f434",
-          "thumbnailUrl": "https://mmg.whatsapp.net/v/t61.24694-24/390412780_217536521362094_7239966747836541380_n.jpg?ccb=1-7&_nc_sid=5a2cf7&_nc_ohc=cldpfocZDE8Q7kNvwHRn4E-&_nc_oc=AdropvqrnlzZ2O41fM32RUMlLRTZa2tetWWAs580SZegX27FPS23Wwz7-QiozQfB0w0&_nc_zt=3&_nc_ht=mmg.whatsapp.net&_nc_gid=kqAmqu3MgYEhhC7kVg_3Jg&_nc_ss=7f289&oh=01_Q5Aa5gFmTrNmp018P5rwBloUTMymYZSC7x4KCRVqgHdIbxLtSA&oe=6AC23988",
-          "sourceUrl": "https://www.whatsapp.com/channel/0029VaE7oCOJ3juwQFbnhR1C",
-          "sourceKind": "official_page_thumbnail_candidate",
-          "reviewState": "candidate_review",
-          "rightsStatus": "requires_rights_review",
-          "confidence": "official_page_source_media"
-        }
-      },
-      {
         "restaurantId": "osm-node-2714150694-the-beaver-s-den",
         "name": "The Beaver's Den",
         "neighborhood": "Downtown",
@@ -2507,6 +2990,72 @@
         }
       },
       {
+        "restaurantId": "big-leagues-bayers-lake",
+        "name": "Big Leagues Bayer’s Lake",
+        "neighborhood": "Bayers Lake",
+        "website": "https://bigleagues.ca/",
+        "candidateCount": 2,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 2
+        },
+        "reviewStates": {
+          "candidate_review": 2
+        },
+        "bestCandidate": {
+          "id": "thumb-a7fafb6b82ce10e5e9",
+          "thumbnailUrl": "https://bigleagues.ca/api/menu-items/9eef9d9a-1895-474a-b685-0e1048fc04b6/image?v=7f881e9b83",
+          "sourceUrl": "https://bigleagues.ca/",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "same_host_official_page_image"
+        }
+      },
+      {
+        "restaurantId": "chanoeys-pasta-dartmouth",
+        "name": "Chanoey’s Pasta — Dartmouth",
+        "neighborhood": "Downtown Dartmouth",
+        "website": "https://www.chanoeyspasta.com/",
+        "candidateCount": 2,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 2
+        },
+        "reviewStates": {
+          "candidate_review": 2
+        },
+        "bestCandidate": {
+          "id": "thumb-8b3ec351b3c1fdf64e",
+          "thumbnailUrl": "https://static.wixstatic.com/media/56b022_5b0b24327f414e90b1b40fbcf448c5c7%7Emv2.png/v1/fit/w_2500,h_1330,al_c/56b022_5b0b24327f414e90b1b40fbcf448c5c7%7Emv2.png",
+          "sourceUrl": "https://www.chanoeyspasta.com/",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "official_page_approved_cdn_image"
+        }
+      },
+      {
+        "restaurantId": "evans-fresh-seafoods-dartmouth",
+        "name": "Evan’s Fresh Seafoods & Restaurant",
+        "neighborhood": "Downtown Dartmouth",
+        "website": "https://www.evansfreshseafoods.com/",
+        "candidateCount": 2,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 2
+        },
+        "reviewStates": {
+          "candidate_review": 2
+        },
+        "bestCandidate": {
+          "id": "thumb-4dbf64d17f5abf59a4",
+          "thumbnailUrl": "https://www.evansfreshseafoods.com/wp-content/uploads/2014/10/7.-Boat.jpg",
+          "sourceUrl": "https://www.evansfreshseafoods.com/",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "same_host_official_page_image"
+        }
+      },
+      {
         "restaurantId": "osm-node-1139389702-five-fishermen",
         "name": "Five Fishermen",
         "neighborhood": "Downtown",
@@ -2574,6 +3123,28 @@
         }
       },
       {
+        "restaurantId": "magnolia-halifax",
+        "name": "Magnolia",
+        "neighborhood": "Downtown",
+        "website": "https://www.magnoliahfx.com/",
+        "candidateCount": 2,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 2
+        },
+        "reviewStates": {
+          "candidate_review": 2
+        },
+        "bestCandidate": {
+          "id": "thumb-415c95eca3c0cb7fe8",
+          "thumbnailUrl": "https://images.squarespace-cdn.com/content/v1/65eb23b9b2b12339e00c0914/2431709e-197a-45b0-b672-e154e5e8bd55/Magnolia_Alt+Wordmark+CLEAN.png?format=1500w",
+          "sourceUrl": "https://www.magnoliahfx.com/",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "official_page_approved_cdn_image"
+        }
+      },
+      {
         "restaurantId": "osm-node-11526055082-noggins-coburg",
         "name": "Noggins Coburg",
         "neighborhood": "South End",
@@ -2612,28 +3183,6 @@
           "id": "thumb-a03a9614f15d87bb7f",
           "thumbnailUrl": "https://images.squarespace-cdn.com/content/v1/602810f8c8fe0a7f210814fd/36896399-ceea-431a-b9e6-67c115ae8b4e/4B2A3719.jpg",
           "sourceUrl": "https://www.seasmokehalifax.com/menu",
-          "sourceKind": "official_page_thumbnail_candidate",
-          "reviewState": "candidate_review",
-          "rightsStatus": "requires_rights_review",
-          "confidence": "official_page_source_media"
-        }
-      },
-      {
-        "restaurantId": "osm-node-11751560115-seaport-social",
-        "name": "Seaport Social",
-        "neighborhood": "Waterfront",
-        "website": "https://www.seaportsocialhalifax.com/",
-        "candidateCount": 2,
-        "sourceKinds": {
-          "official_page_thumbnail_candidate": 2
-        },
-        "reviewStates": {
-          "candidate_review": 2
-        },
-        "bestCandidate": {
-          "id": "thumb-7fefb335c78dadfd3e",
-          "thumbnailUrl": "https://www.seaportsocialhalifax.com/resourcefiles/homeimages/small-charcuterie.jpg?version=8142026051329",
-          "sourceUrl": "https://www.seaportsocialhalifax.com/our-menus",
           "sourceKind": "official_page_thumbnail_candidate",
           "reviewState": "candidate_review",
           "rightsStatus": "requires_rights_review",
@@ -2746,7 +3295,7 @@
         "bestCandidate": {
           "id": "thumb-15fc9ee91d6cbf6161",
           "thumbnailUrl": "https://sushinami.ca/wp-content/uploads/2022/04/sushinami-105.jpg",
-          "sourceUrl": "https://sushinami.ca/dartmouth-crossing/dinner/",
+          "sourceUrl": "https://sushinami.ca/",
           "sourceKind": "official_page_thumbnail_candidate",
           "reviewState": "candidate_review",
           "rightsStatus": "requires_rights_review",
@@ -2769,11 +3318,33 @@
         "bestCandidate": {
           "id": "thumb-fa23164cdd9fa9fee6",
           "thumbnailUrl": "https://sushinami.ca/wp-content/uploads/2022/04/sushinami-105.jpg",
-          "sourceUrl": "https://sushinami.ca/dartmouth-crossing/dinner/",
+          "sourceUrl": "https://sushinami.ca/",
           "sourceKind": "official_page_thumbnail_candidate",
           "reviewState": "candidate_review",
           "rightsStatus": "requires_rights_review",
           "confidence": "official_page_source_media"
+        }
+      },
+      {
+        "restaurantId": "juice-press-dutch-village",
+        "name": "The Juice Press — Dutch Village Road",
+        "neighborhood": "Fairview",
+        "website": "https://juicepresshfx.myshopify.com/pages/ordering-pick-up-protocol",
+        "candidateCount": 2,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 2
+        },
+        "reviewStates": {
+          "candidate_review": 2
+        },
+        "bestCandidate": {
+          "id": "thumb-4fb746ca474f18ae17",
+          "thumbnailUrl": "https://juicepresshfx.myshopify.com/pages/ordering-pick-up-protocol#pi-paint0_linear",
+          "sourceUrl": "https://juicepresshfx.myshopify.com/pages/ordering-pick-up-protocol",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "same_host_official_page_image"
         }
       },
       {
@@ -2867,6 +3438,28 @@
         }
       },
       {
+        "restaurantId": "osm-node-13141457102-bitter-end-martini-bar-and-restaurant",
+        "name": "Bitter End Martini Bar & Restaurant",
+        "neighborhood": "Downtown",
+        "website": "https://www.bitterend.ca/",
+        "candidateCount": 1,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 1
+        },
+        "reviewStates": {
+          "candidate_review": 1
+        },
+        "bestCandidate": {
+          "id": "thumb-5333baacf3425dd4c1",
+          "thumbnailUrl": "https://d1k7e91iovemsu.cloudfront.net/images/prod/bitter_end/root/7cdabf93-189e-4a6f-94f5-108c597977c6.png",
+          "sourceUrl": "https://www.bitterend.ca/",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "official_page_source_media"
+        }
+      },
+      {
         "restaurantId": "osm-node-7674194896-gahan-house",
         "name": "Gahan House",
         "neighborhood": "Downtown",
@@ -2889,6 +3482,28 @@
         }
       },
       {
+        "restaurantId": "osm-node-13141377001-india-paradise",
+        "name": "India Paradise",
+        "neighborhood": "Downtown",
+        "website": "https://www.indiaparadise.ca/halifax/downtown/home",
+        "candidateCount": 1,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 1
+        },
+        "reviewStates": {
+          "candidate_review": 1
+        },
+        "bestCandidate": {
+          "id": "thumb-3e9c80eca385034ceb",
+          "thumbnailUrl": "https://cdn.prod.website-files.com/6261c545bac2436193a5b09b%2F6762b0db731d40facfe22b3e_slider%20video%20basic-poster-00001.jpg",
+          "sourceUrl": "https://www.indiaparadise.ca/halifax/downtown/home",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "official_page_source_media"
+        }
+      },
+      {
         "restaurantId": "osm-node-13912668535-jean-s-chinese-restaurant",
         "name": "Jean's Chinese Restaurant",
         "neighborhood": "Dartmouth",
@@ -2908,6 +3523,28 @@
           "reviewState": "candidate_review",
           "rightsStatus": "requires_rights_review",
           "confidence": "same_host_official_page_image"
+        }
+      },
+      {
+        "restaurantId": "osm-node-3802109750-rinaldo-s",
+        "name": "Rinaldo’s",
+        "neighborhood": "West End",
+        "website": "https://rinaldos.ca",
+        "candidateCount": 1,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 1
+        },
+        "reviewStates": {
+          "candidate_review": 1
+        },
+        "bestCandidate": {
+          "id": "thumb-918ac651322c660c60",
+          "thumbnailUrl": "https://rinaldos.ca/wp-content/uploads/2026/08/rinaldos-family-photo-about-us-1024x814.webp",
+          "sourceUrl": "https://rinaldos.ca/",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "official_page_source_media"
         }
       },
       {
@@ -3087,6 +3724,50 @@
         }
       },
       {
+        "restaurantId": "waaris-dartmouth",
+        "name": "The Waaris",
+        "neighborhood": "Dartmouth Crossing",
+        "website": "https://www.thewaaris.com/",
+        "candidateCount": 1,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 1
+        },
+        "reviewStates": {
+          "candidate_review": 1
+        },
+        "bestCandidate": {
+          "id": "thumb-19dc10b1cfa706aada",
+          "thumbnailUrl": "https://www.thewaaris.com/%23n",
+          "sourceUrl": "https://www.thewaaris.com/",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "same_host_official_page_image"
+        }
+      },
+      {
+        "restaurantId": "osm-node-4420631892-two-if-by-sea",
+        "name": "Two if By Sea",
+        "neighborhood": "Dartmouth",
+        "website": "https://www.twoifbyseacafe.ca/",
+        "candidateCount": 1,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 1
+        },
+        "reviewStates": {
+          "candidate_review": 1
+        },
+        "bestCandidate": {
+          "id": "thumb-7568adcc4648142ce8",
+          "thumbnailUrl": "https://twoifbyseacafe.ca/wp-content/uploads/2026/09/courier-hand-delivery-cash-lobby.jpeg",
+          "sourceUrl": "https://twoifbyseacafe.ca/2026/09/16/how-to-pay-cash-for-food-delivery-even-fresh-seafood/",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "official_page_source_media"
+        }
+      },
+      {
         "restaurantId": "osm-node-11466743651-uncommon-grounds",
         "name": "Uncommon Grounds",
         "neighborhood": "South End",
@@ -3107,47 +3788,69 @@
           "rightsStatus": "requires_rights_review",
           "confidence": "official_page_source_media"
         }
-      },
-      {
-        "restaurantId": "osm-way-96322798-wooden-monkey",
-        "name": "Wooden Monkey",
-        "neighborhood": "Downtown",
-        "website": "https://www.thewoodenmonkey.ca/",
-        "candidateCount": 1,
-        "sourceKinds": {
-          "official_page_thumbnail_candidate": 1
-        },
-        "reviewStates": {
-          "candidate_review": 1
-        },
-        "bestCandidate": {
-          "id": "thumb-acdbe7c5b897cc2a85",
-          "thumbnailUrl": "https://cdn.prod.website-files.com/5a9175138433cb00017eefdf/5a9175138433cb00017ef019_imageedit_1_2839820776.png",
-          "sourceUrl": "https://www.thewoodenmonkey.ca/special-menus",
-          "sourceKind": "official_page_thumbnail_candidate",
-          "reviewState": "candidate_review",
-          "rightsStatus": "requires_rights_review",
-          "confidence": "official_page_source_media"
-        }
       }
     ],
     "sourceCheckQueue": [
       {
-        "restaurantId": "osm-node-11612206582-swaad-sagaa-indian-cuisine-incorporated",
-        "name": "Swaad Sagaa Indian Cuisine Incorporated",
-        "neighborhood": "North End",
-        "website": "https://www.swaadsagaa.com/",
-        "candidateCount": 14,
+        "restaurantId": "waaris-dartmouth",
+        "name": "The Waaris",
+        "neighborhood": "Dartmouth Crossing",
+        "website": "https://www.thewaaris.com/",
+        "candidateCount": 27,
         "sourceKinds": {
-          "official_page_thumbnail_candidate": 14
+          "official_page_thumbnail_candidate": 27
         },
         "reviewStates": {
-          "candidate_review": 14
+          "candidate_review": 27
         },
         "bestCandidate": {
-          "id": "thumb-fcf7023c24d74fb849",
-          "thumbnailUrl": "https://assets.jwwb.nl/assets/brand/webador/icon/favicon.png?bust=2299e1307cbb69076146",
-          "sourceUrl": "https://www.swaadsagaa.com/",
+          "id": "thumb-1c9889d462479b98d4",
+          "thumbnailUrl": "https://framerusercontent.com/assets/7WkldBZU5wA3GV1lDTiUxB5IOQ.png",
+          "sourceUrl": "https://www.thewaaris.com/",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "remote_image_host_needs_source_check"
+        }
+      },
+      {
+        "restaurantId": "casa-di-stefano-lower-sackville",
+        "name": "Casa di Stefano",
+        "neighborhood": "Lower Sackville",
+        "website": "https://casadistefano.ca/",
+        "candidateCount": 20,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 20
+        },
+        "reviewStates": {
+          "candidate_review": 20
+        },
+        "bestCandidate": {
+          "id": "thumb-7ba367399c5c0a9e5a",
+          "thumbnailUrl": "https://cdn01.s4shops.com/skytabweb/assets/icons/reservationsBackground.png",
+          "sourceUrl": "https://casadistefano.ca/",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "remote_image_host_needs_source_check"
+        }
+      },
+      {
+        "restaurantId": "marias-pantry-dartmouth",
+        "name": "Maria's Pantry",
+        "neighborhood": "Downtown Dartmouth",
+        "website": "https://www.mariaspantry.ca/",
+        "candidateCount": 16,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 16
+        },
+        "reviewStates": {
+          "candidate_review": 16
+        },
+        "bestCandidate": {
+          "id": "thumb-fe94f7b205b49d976c",
+          "thumbnailUrl": "https://d1oxsl77a1kjht.cloudfront.net/css/new?hc=0&ownerid=31024005",
+          "sourceUrl": "https://www.mariaspantry.ca/products/pages/about",
           "sourceKind": "official_page_thumbnail_candidate",
           "reviewState": "candidate_review",
           "rightsStatus": "requires_rights_review",
@@ -3170,6 +3873,28 @@
           "id": "thumb-745f6186d6507eb596",
           "thumbnailUrl": "https://d1k7e91iovemsu.cloudfront.net/images/prod/consumer_live_/root/b4210929-33fe-4670-a76e-f6dccc09f91c.png",
           "sourceUrl": "https://www.theloosecannon.ca/",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "remote_image_host_needs_source_check"
+        }
+      },
+      {
+        "restaurantId": "osm-node-11612206582-swaad-sagaa-indian-cuisine-incorporated",
+        "name": "Swaad Sagaa Indian Cuisine Incorporated",
+        "neighborhood": "North End",
+        "website": "https://www.swaadsagaa.com/",
+        "candidateCount": 13,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 13
+        },
+        "reviewStates": {
+          "candidate_review": 13
+        },
+        "bestCandidate": {
+          "id": "thumb-fcf7023c24d74fb849",
+          "thumbnailUrl": "https://assets.jwwb.nl/assets/brand/webador/icon/favicon.png?bust=2299e1307cbb69076146",
+          "sourceUrl": "https://www.swaadsagaa.com/",
           "sourceKind": "official_page_thumbnail_candidate",
           "reviewState": "candidate_review",
           "rightsStatus": "requires_rights_review",
@@ -3243,6 +3968,28 @@
         }
       },
       {
+        "restaurantId": "sushi-square-scotia-square",
+        "name": "Sushi Square",
+        "neighborhood": "Downtown Halifax",
+        "website": "https://sushisquare.ca/",
+        "candidateCount": 8,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 8
+        },
+        "reviewStates": {
+          "candidate_review": 8
+        },
+        "bestCandidate": {
+          "id": "thumb-143a556df62268ca2c",
+          "thumbnailUrl": "https://lh3.googleusercontent.com/a-/ALV-UjV7BvvQMSX-FcCvcjmCmk6ifRwCB1lr0_ZaX_8pJaQzGiW9-AaKpw=w40-h40-c-rp-mo-ba12-br100",
+          "sourceUrl": "https://sushisquare.ca/",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "remote_image_host_needs_source_check"
+        }
+      },
+      {
         "restaurantId": "osm-node-5157417348-tomavinos-pizzeria",
         "name": "Tomavinos Pizzeria",
         "neighborhood": "South End",
@@ -3284,6 +4031,28 @@
           "reviewState": "candidate_review",
           "rightsStatus": "requires_rights_review",
           "confidence": "source_host_not_first_party"
+        }
+      },
+      {
+        "restaurantId": "osm-node-4421124794-cafe-marco-polo",
+        "name": "Cafe Marco Polo",
+        "neighborhood": "Dartmouth",
+        "website": "https://cafemarcopolodartmouth.com/",
+        "candidateCount": 3,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 3
+        },
+        "reviewStates": {
+          "candidate_review": 3
+        },
+        "bestCandidate": {
+          "id": "thumb-35ab9bdfdc69cdb9bb",
+          "thumbnailUrl": "https://pixel.wp.com/b.gif?v=noscript",
+          "sourceUrl": "https://cafemarcopolodartmouth.com/",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "remote_image_host_needs_source_check"
         }
       },
       {
@@ -3815,7 +4584,7 @@
         "restaurantId": "osm-node-1689418207-the-old-triangle-irish-pub",
         "name": "The Old Triangle Irish Pub",
         "neighborhood": "Downtown",
-        "website": "https://www.oldtriangle.com/welcome/",
+        "website": "https://oldtriangle.com/",
         "candidateCount": 2,
         "sourceKinds": {
           "official_feed_media": 1,
@@ -3923,29 +4692,6 @@
           "reviewState": "candidate_review",
           "rightsStatus": "requires_rights_review",
           "confidence": "remote_image_host_needs_source_check"
-        }
-      },
-      {
-        "restaurantId": "osm-way-96322798-wooden-monkey",
-        "name": "Wooden Monkey",
-        "neighborhood": "Downtown",
-        "website": "https://www.thewoodenmonkey.ca/",
-        "candidateCount": 2,
-        "sourceKinds": {
-          "official_feed_media": 1,
-          "public_campaign_menu_image": 1
-        },
-        "reviewStates": {
-          "source_check": 2
-        },
-        "bestCandidate": {
-          "id": "thumb-e6960a2e22b1285769",
-          "thumbnailUrl": "https://discoverhalifaxns.com/wp-content/uploads/2026/01/106935_menu_photo_9fdf3e22-7757-488b-b623-55004caed5dd-rotated.jpg",
-          "sourceUrl": "https://discoverhalifaxns.com/dinearound/menu/the-wooden-monkey-halifax-dine-around-2026/?menu=dine-around-3-courses-50",
-          "sourceKind": "official_feed_media",
-          "reviewState": "source_check",
-          "rightsStatus": "requires_rights_review",
-          "confidence": "official_feed_media"
         }
       },
       {
@@ -4059,6 +4805,28 @@
         }
       },
       {
+        "restaurantId": "lake-city-cider-dartmouth",
+        "name": "Lake City Cider",
+        "neighborhood": "Downtown Dartmouth",
+        "website": "https://lakecitycider.ca/",
+        "candidateCount": 1,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 1
+        },
+        "reviewStates": {
+          "candidate_review": 1
+        },
+        "bestCandidate": {
+          "id": "thumb-6927acfcab90a51977",
+          "thumbnailUrl": "https://fonts.googleapis.com/css2?family=ABeeZee:&family=ABeeZee:&family=ABeeZee:&family=ABeeZee:&display=swap",
+          "sourceUrl": "https://lakecitycider.ca/",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "remote_image_host_needs_source_check"
+        }
+      },
+      {
         "restaurantId": "osm-node-9099100703-marigold-kitchen",
         "name": "Marigold Kitchen",
         "neighborhood": "Downtown",
@@ -4125,6 +4893,50 @@
         }
       },
       {
+        "restaurantId": "osm-node-11552151862-sushi-jet",
+        "name": "Sushi Jet",
+        "neighborhood": "Dartmouth",
+        "website": "https://www.sushijetdartmouth.ca/",
+        "candidateCount": 1,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 1
+        },
+        "reviewStates": {
+          "candidate_review": 1
+        },
+        "bestCandidate": {
+          "id": "thumb-063f467ed0b19175b0",
+          "thumbnailUrl": "https://static.parastorage.com/services/restaurant-menus-showcase-ooi/6534c6689b6eff9c6166dec62c6906f4d6682cec6b49c79c3caa0a9f/media/menus_side_image.7077f229.jpeg",
+          "sourceUrl": "https://www.sushijetdartmouth.ca/menu",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "remote_image_host_needs_source_check"
+        }
+      },
+      {
+        "restaurantId": "osm-node-11552180279-sushi-jet",
+        "name": "Sushi Jet",
+        "neighborhood": "Downtown",
+        "website": "https://www.sushijethalifax.com/",
+        "candidateCount": 1,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 1
+        },
+        "reviewStates": {
+          "candidate_review": 1
+        },
+        "bestCandidate": {
+          "id": "thumb-a13a0c5a6278766438",
+          "thumbnailUrl": "https://static.parastorage.com/services/restaurant-menus-showcase-ooi/073a3ac4383d1e96d248a442e17e560c4897d0993d9b4167bb521fd8/media/menus_side_image.7077f229.jpeg",
+          "sourceUrl": "https://www.sushijethalifax.com/menu",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "remote_image_host_needs_source_check"
+        }
+      },
+      {
         "restaurantId": "osm-node-1254843900-the-mic-mac-bar-and-grill",
         "name": "The Mic Mac Bar and Grill",
         "neighborhood": "Dartmouth",
@@ -4166,6 +4978,50 @@
           "reviewState": "source_check",
           "rightsStatus": "requires_rights_review",
           "confidence": "official_page_source_media"
+        }
+      },
+      {
+        "restaurantId": "via-condotti-queen",
+        "name": "Via Condotti",
+        "neighborhood": "Spring Garden",
+        "website": "https://www.viacondotti.ca/",
+        "candidateCount": 1,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 1
+        },
+        "reviewStates": {
+          "candidate_review": 1
+        },
+        "bestCandidate": {
+          "id": "thumb-90e0c1899f2b2d83f5",
+          "thumbnailUrl": "https://media-cdn.getbento.com/accounts/87df5e4c0b2db909743dbe70d3e81a80/media/images/24035c-fav.png",
+          "sourceUrl": "https://www.viacondotti.ca/",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "remote_image_host_needs_source_check"
+        }
+      },
+      {
+        "restaurantId": "water-polo-halifax",
+        "name": "Water Polo Restaurant",
+        "neighborhood": "Waterfront",
+        "website": "https://www.waterpolohfx.ca/",
+        "candidateCount": 1,
+        "sourceKinds": {
+          "official_page_thumbnail_candidate": 1
+        },
+        "reviewStates": {
+          "candidate_review": 1
+        },
+        "bestCandidate": {
+          "id": "thumb-11baf111fb3295e089",
+          "thumbnailUrl": "https://media-cdn.getbento.com/accounts/15bdd5135b436c32400cc8748f21a401/media/images/8166favicon.png",
+          "sourceUrl": "https://www.waterpolohfx.ca/",
+          "sourceKind": "official_page_thumbnail_candidate",
+          "reviewState": "candidate_review",
+          "rightsStatus": "requires_rights_review",
+          "confidence": "remote_image_host_needs_source_check"
         }
       },
       {
@@ -4593,16 +5449,6 @@
         "bestCandidate": null
       },
       {
-        "restaurantId": "osm-node-2721726004-bubba-ray-s-sports-bar",
-        "name": "Bubba Ray's Sports Bar",
-        "neighborhood": "Downtown",
-        "website": null,
-        "candidateCount": 0,
-        "sourceKinds": {},
-        "reviewStates": {},
-        "bestCandidate": null
-      },
-      {
         "restaurantId": "osm-node-3789619357-bubba-ray-s-sports-bar",
         "name": "Bubba Ray's Sports Bar",
         "neighborhood": "Downtown",
@@ -4743,26 +5589,6 @@
         "bestCandidate": null
       },
       {
-        "restaurantId": "osm-node-12984675528-cafe-lunette",
-        "name": "Café Lunette",
-        "neighborhood": "Downtown",
-        "website": null,
-        "candidateCount": 0,
-        "sourceKinds": {},
-        "reviewStates": {},
-        "bestCandidate": null
-      },
-      {
-        "restaurantId": "osm-node-4421124794-cafe-marco-polo",
-        "name": "Cafe Marco Polo",
-        "neighborhood": "Dartmouth",
-        "website": "https://justuscoffee.com/locations/kings-wharf-dartmouth",
-        "candidateCount": 0,
-        "sourceKinds": {},
-        "reviewStates": {},
-        "bestCandidate": null
-      },
-      {
         "restaurantId": "osm-node-475876899-cafe-ristretto",
         "name": "Cafe Ristretto",
         "neighborhood": "Waterfront",
@@ -4827,16 +5653,6 @@
         "name": "Cha Baa Thai",
         "neighborhood": "West End",
         "website": null,
-        "candidateCount": 0,
-        "sourceKinds": {},
-        "reviewStates": {},
-        "bestCandidate": null
-      },
-      {
-        "restaurantId": "osm-node-5134046822-chain-yard-urban-cidery",
-        "name": "Chain Yard Urban Cidery",
-        "neighborhood": "North End",
-        "website": "http://://www.chainyardcider.com",
         "candidateCount": 0,
         "sourceKinds": {},
         "reviewStates": {},
@@ -5646,7 +6462,7 @@
         "restaurantId": "osm-node-4421959790-humani-t",
         "name": "Humani-T",
         "neighborhood": "South End",
-        "website": "https://humanitea.com/",
+        "website": null,
         "candidateCount": 0,
         "sourceKinds": {},
         "reviewStates": {},
@@ -5683,16 +6499,6 @@
         "bestCandidate": null
       },
       {
-        "restaurantId": "osm-node-13141377001-india-paradise",
-        "name": "India Paradise",
-        "neighborhood": "Downtown",
-        "website": "https://www.indiaparadise.ca/halifax/downtown/home",
-        "candidateCount": 0,
-        "sourceKinds": {},
-        "reviewStates": {},
-        "bestCandidate": null
-      },
-      {
         "restaurantId": "osm-node-7347281231-indochine-banh-mi",
         "name": "Indochine Banh Mi",
         "neighborhood": "Downtown",
@@ -5707,16 +6513,6 @@
         "name": "Jane's Next Door",
         "neighborhood": "North End",
         "website": null,
-        "candidateCount": 0,
-        "sourceKinds": {},
-        "reviewStates": {},
-        "bestCandidate": null
-      },
-      {
-        "restaurantId": "osm-node-2624400763-java-blend",
-        "name": "Java Blend",
-        "neighborhood": "North End",
-        "website": "https://javablendcoffee.com/contact",
         "candidateCount": 0,
         "sourceKinds": {},
         "reviewStates": {},
@@ -5947,6 +6743,16 @@
         "name": "La Piazza Ristorante",
         "neighborhood": "West End",
         "website": "https://www.lapiazzarestocafe.com/",
+        "candidateCount": 0,
+        "sourceKinds": {},
+        "reviewStates": {},
+        "bestCandidate": null
+      },
+      {
+        "restaurantId": "larrys-sandwiches-dartmouth",
+        "name": "Larry’s Sandwiches & Sides",
+        "neighborhood": "Downtown Dartmouth",
+        "website": "https://larryssandwiches.com/",
         "candidateCount": 0,
         "sourceKinds": {},
         "reviewStates": {},
@@ -6543,16 +7349,6 @@
         "bestCandidate": null
       },
       {
-        "restaurantId": "osm-node-37132554-press-gang",
-        "name": "Press Gang",
-        "neighborhood": "Downtown",
-        "website": null,
-        "candidateCount": 0,
-        "sourceKinds": {},
-        "reviewStates": {},
-        "bestCandidate": null
-      },
-      {
         "restaurantId": "osm-node-13262680652-presto-tea",
         "name": "Presto Tea",
         "neighborhood": "Downtown",
@@ -6687,6 +7483,16 @@
         "name": "Saffron Multi Cuisine Indian Restaurant",
         "neighborhood": "Armdale / Fairview",
         "website": "https://saffron-indian-restaurant.com/",
+        "candidateCount": 0,
+        "sourceKinds": {},
+        "reviewStates": {},
+        "bestCandidate": null
+      },
+      {
+        "restaurantId": "sakaba-halifax",
+        "name": "Sakaba",
+        "neighborhood": "Waterfront",
+        "website": null,
         "candidateCount": 0,
         "sourceKinds": {},
         "reviewStates": {},
@@ -6963,26 +7769,6 @@
         "bestCandidate": null
       },
       {
-        "restaurantId": "osm-node-11552151862-sushi-jet",
-        "name": "Sushi Jet",
-        "neighborhood": "Dartmouth",
-        "website": "https://sushi-jet.com/location/dartmouth",
-        "candidateCount": 0,
-        "sourceKinds": {},
-        "reviewStates": {},
-        "bestCandidate": null
-      },
-      {
-        "restaurantId": "osm-node-11552180279-sushi-jet",
-        "name": "Sushi Jet",
-        "neighborhood": "Downtown",
-        "website": "https://sushi-jet.com/location/Halifax",
-        "candidateCount": 0,
-        "sourceKinds": {},
-        "reviewStates": {},
-        "bestCandidate": null
-      },
-      {
         "restaurantId": "osm-node-2712744154-sushi-you-and-me",
         "name": "Sushi You & Me",
         "neighborhood": "Downtown",
@@ -7143,16 +7929,6 @@
         "bestCandidate": null
       },
       {
-        "restaurantId": "osm-node-5151935621-the-bedford-basin-market",
-        "name": "the Bedford Basin Market",
-        "neighborhood": "Armdale / Fairview",
-        "website": "https://www.bedfordbasinmarket.com",
-        "candidateCount": 0,
-        "sourceKinds": {},
-        "reviewStates": {},
-        "bestCandidate": null
-      },
-      {
         "restaurantId": "osm-node-11611960223-the-big-wedge",
         "name": "The Big Wedge",
         "neighborhood": "North End",
@@ -7187,6 +7963,86 @@
         "name": "The Brooklyn Warehouse",
         "neighborhood": "North End",
         "website": "https://brooklynwarehouse.ca/",
+        "candidateCount": 0,
+        "sourceKinds": {},
+        "reviewStates": {},
+        "bestCandidate": null
+      },
+      {
+        "restaurantId": "osm-node-3789833657-the-brown-hound",
+        "name": "The Brown Hound",
+        "neighborhood": "North End",
+        "website": null,
+        "candidateCount": 0,
+        "sourceKinds": {},
+        "reviewStates": {},
+        "bestCandidate": null
+      },
+      {
+        "restaurantId": "osm-node-8622604791-the-brown-hound",
+        "name": "The Brown Hound",
+        "neighborhood": "Downtown",
+        "website": null,
+        "candidateCount": 0,
+        "sourceKinds": {},
+        "reviewStates": {},
+        "bestCandidate": null
+      },
+      {
+        "restaurantId": "osm-node-2624724240-the-brown-hound-public-house",
+        "name": "The Brown Hound Public House",
+        "neighborhood": "North End",
+        "website": null,
+        "candidateCount": 0,
+        "sourceKinds": {},
+        "reviewStates": {},
+        "bestCandidate": null
+      },
+      {
+        "restaurantId": "osm-node-5157477122-the-butcher-s-block-pub-and-eatery",
+        "name": "The Butcher's Block Pub and Eatery",
+        "neighborhood": "Bedford",
+        "website": "http://www.butchersblockpub.com/",
+        "candidateCount": 0,
+        "sourceKinds": {},
+        "reviewStates": {},
+        "bestCandidate": null
+      },
+      {
+        "restaurantId": "osm-node-13037895605-the-cheeky-neighbour-diner",
+        "name": "The Cheeky Neighbour Diner",
+        "neighborhood": "Downtown",
+        "website": null,
+        "candidateCount": 0,
+        "sourceKinds": {},
+        "reviewStates": {},
+        "bestCandidate": null
+      },
+      {
+        "restaurantId": "osm-node-11695080432-the-daily-grind",
+        "name": "The Daily Grind",
+        "neighborhood": "Downtown",
+        "website": null,
+        "candidateCount": 0,
+        "sourceKinds": {},
+        "reviewStates": {},
+        "bestCandidate": null
+      },
+      {
+        "restaurantId": "osm-node-1139389574-the-dome",
+        "name": "The Dome",
+        "neighborhood": "Downtown",
+        "website": null,
+        "candidateCount": 0,
+        "sourceKinds": {},
+        "reviewStates": {},
+        "bestCandidate": null
+      },
+      {
+        "restaurantId": "osm-node-12291896201-the-east-coast-hub-saloon",
+        "name": "The East Coast Hub Saloon",
+        "neighborhood": "Dartmouth",
+        "website": null,
         "candidateCount": 0,
         "sourceKinds": {},
         "reviewStates": {},
@@ -7373,7 +8229,7 @@
         "reviewState": "source_check",
         "rightsStatus": "requires_rights_review",
         "confidence": "official_feed_media",
-        "observedAt": "2026-09-04T13:32:30.604Z",
+        "observedAt": "2026-10-20T14:22:14.254Z",
         "publishedAt": null
       },
       {
@@ -7425,7 +8281,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "official_feed_media",
-        "observedAt": "2026-09-04T13:32:30.604Z",
+        "observedAt": "2026-10-20T14:22:14.254Z",
         "publishedAt": null
       },
       {
@@ -7529,7 +8385,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "official_feed_media",
-        "observedAt": "2026-09-04T13:32:30.604Z",
+        "observedAt": "2026-10-20T14:22:14.254Z",
         "publishedAt": null
       },
       {
@@ -7646,7 +8502,7 @@
         "reviewState": "source_check",
         "rightsStatus": "requires_rights_review",
         "confidence": "official_feed_media",
-        "observedAt": "2026-09-04T13:32:30.604Z",
+        "observedAt": "2026-10-20T14:22:14.254Z",
         "publishedAt": null
       },
       {
@@ -7672,7 +8528,7 @@
         "reviewState": "source_check",
         "rightsStatus": "requires_rights_review",
         "confidence": "official_feed_media",
-        "observedAt": "2026-09-04T13:32:30.604Z",
+        "observedAt": "2026-10-20T14:22:14.254Z",
         "publishedAt": null
       },
       {
@@ -7689,146 +8545,29 @@
         "publishedAt": null
       },
       {
-        "id": "thumb-5b5407d7d60b15c50e",
-        "restaurantId": "osm-node-1116387649-bicycle-thief",
-        "restaurantName": "Bicycle Thief",
-        "thumbnailUrl": "https://bicyclethief.ca/wp-content/uploads/2017/09/upper-old-castle.jpg",
-        "sourceUrl": "https://bicyclethief.ca/",
+        "id": "thumb-a7fafb6b82ce10e5e9",
+        "restaurantId": "big-leagues-bayers-lake",
+        "restaurantName": "Big Leagues Bayer’s Lake",
+        "thumbnailUrl": "https://bigleagues.ca/api/menu-items/9eef9d9a-1895-474a-b685-0e1048fc04b6/image?v=7f881e9b83",
+        "sourceUrl": "https://bigleagues.ca/",
         "sourceKind": "official_page_thumbnail_candidate",
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-02T17:39:07.870Z",
+        "observedAt": "2026-10-20T14:25:07.303Z",
         "publishedAt": null
       },
       {
-        "id": "thumb-9063c3206c3928a29d",
-        "restaurantId": "osm-node-1116387649-bicycle-thief",
-        "restaurantName": "Bicycle Thief",
-        "thumbnailUrl": "https://bicyclethief.ca/wp-content/uploads/2017/09/upper-number-kids.jpg",
-        "sourceUrl": "https://bicyclethief.ca/",
+        "id": "thumb-f34945b0dbefc4d3d0",
+        "restaurantId": "big-leagues-bayers-lake",
+        "restaurantName": "Big Leagues Bayer’s Lake",
+        "thumbnailUrl": "https://bigleagues.ca/api/menu-items/e9c2517b-7d12-4bcd-bbf4-eed75a43c2d5/image?v=46eff1a429",
+        "sourceUrl": "https://bigleagues.ca/",
         "sourceKind": "official_page_thumbnail_candidate",
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-02T17:39:07.870Z",
-        "publishedAt": null
-      },
-      {
-        "id": "thumb-7c984e54a89e05c7e4",
-        "restaurantId": "osm-node-1116387649-bicycle-thief",
-        "restaurantName": "Bicycle Thief",
-        "thumbnailUrl": "https://bicyclethief.ca/wp-content/uploads/2017/09/upper-looking-at-bike.jpg",
-        "sourceUrl": "https://bicyclethief.ca/",
-        "sourceKind": "official_page_thumbnail_candidate",
-        "reviewState": "candidate_review",
-        "rightsStatus": "requires_rights_review",
-        "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-02T17:39:07.870Z",
-        "publishedAt": null
-      },
-      {
-        "id": "thumb-97c1fe76d51024d1d1",
-        "restaurantId": "osm-node-1116387649-bicycle-thief",
-        "restaurantName": "Bicycle Thief",
-        "thumbnailUrl": "https://bicyclethief.ca/wp-content/uploads/2017/09/upper-group-on-bikes.jpg",
-        "sourceUrl": "https://bicyclethief.ca/",
-        "sourceKind": "official_page_thumbnail_candidate",
-        "reviewState": "candidate_review",
-        "rightsStatus": "requires_rights_review",
-        "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-02T17:39:07.870Z",
-        "publishedAt": null
-      },
-      {
-        "id": "thumb-be51ff6c89296fbb09",
-        "restaurantId": "osm-node-1116387649-bicycle-thief",
-        "restaurantName": "Bicycle Thief",
-        "thumbnailUrl": "https://bicyclethief.ca/wp-content/uploads/2017/09/upper-big-gate.jpg",
-        "sourceUrl": "https://bicyclethief.ca/",
-        "sourceKind": "official_page_thumbnail_candidate",
-        "reviewState": "candidate_review",
-        "rightsStatus": "requires_rights_review",
-        "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-02T17:39:07.870Z",
-        "publishedAt": null
-      },
-      {
-        "id": "thumb-e3d6039c5e0fd9839a",
-        "restaurantId": "osm-node-1116387649-bicycle-thief",
-        "restaurantName": "Bicycle Thief",
-        "thumbnailUrl": "https://bicyclethief.ca/wp-content/uploads/2017/09/upper-at-the-beach.jpg",
-        "sourceUrl": "https://bicyclethief.ca/",
-        "sourceKind": "official_page_thumbnail_candidate",
-        "reviewState": "candidate_review",
-        "rightsStatus": "requires_rights_review",
-        "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-02T17:39:07.870Z",
-        "publishedAt": null
-      },
-      {
-        "id": "thumb-3cb330575e1e2ad7f3",
-        "restaurantId": "osm-node-1116387649-bicycle-thief",
-        "restaurantName": "Bicycle Thief",
-        "thumbnailUrl": "https://bicyclethief.ca/wp-content/uploads/2017/09/ut-north-american-food-italian-soul.png",
-        "sourceUrl": "https://bicyclethief.ca/",
-        "sourceKind": "official_page_thumbnail_candidate",
-        "reviewState": "candidate_review",
-        "rightsStatus": "requires_rights_review",
-        "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-02T17:39:07.870Z",
-        "publishedAt": null
-      },
-      {
-        "id": "thumb-7ad74d9c0e8fc10f16",
-        "restaurantId": "osm-node-1116387649-bicycle-thief",
-        "restaurantName": "Bicycle Thief",
-        "thumbnailUrl": "https://bicyclethief.ca/wp-content/themes/enfold-child/img/twitter-bicycle.png",
-        "sourceUrl": "https://bicyclethief.ca/reservations/",
-        "sourceKind": "official_page_thumbnail_candidate",
-        "reviewState": "candidate_review",
-        "rightsStatus": "requires_rights_review",
-        "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-02T17:39:07.870Z",
-        "publishedAt": null
-      },
-      {
-        "id": "thumb-c0f37ddd88dadf4217",
-        "restaurantId": "osm-node-1116387649-bicycle-thief",
-        "restaurantName": "Bicycle Thief",
-        "thumbnailUrl": "https://bicyclethief.ca/wp-content/themes/enfold-child/img/facebook-bicycle.png",
-        "sourceUrl": "https://bicyclethief.ca/reservations/",
-        "sourceKind": "official_page_thumbnail_candidate",
-        "reviewState": "candidate_review",
-        "rightsStatus": "requires_rights_review",
-        "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-02T17:39:07.870Z",
-        "publishedAt": null
-      },
-      {
-        "id": "thumb-43f188ff20b5b16a24",
-        "restaurantId": "osm-node-1116387649-bicycle-thief",
-        "restaurantName": "Bicycle Thief",
-        "thumbnailUrl": "https://bicyclethief.ca/wp-content/themes/enfold-child/img/instagram-bicycle.png",
-        "sourceUrl": "https://bicyclethief.ca/reservations/",
-        "sourceKind": "official_page_thumbnail_candidate",
-        "reviewState": "candidate_review",
-        "rightsStatus": "requires_rights_review",
-        "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-02T17:39:07.870Z",
-        "publishedAt": null
-      },
-      {
-        "id": "thumb-f1258d8ae1b3726c5e",
-        "restaurantId": "osm-node-1116387649-bicycle-thief",
-        "restaurantName": "Bicycle Thief",
-        "thumbnailUrl": "https://bicyclethief.ca/reservations/img/menu-big.gif",
-        "sourceUrl": "https://bicyclethief.ca/reservations/",
-        "sourceKind": "official_page_thumbnail_candidate",
-        "reviewState": "candidate_review",
-        "rightsStatus": "requires_rights_review",
-        "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-02T17:39:07.870Z",
+        "observedAt": "2026-10-20T14:25:07.303Z",
         "publishedAt": null
       },
       {
@@ -7841,7 +8580,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "official_feed_media",
-        "observedAt": "2026-09-04T13:32:30.604Z",
+        "observedAt": "2026-10-20T14:22:14.254Z",
         "publishedAt": null
       },
       {
@@ -7854,7 +8593,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "official_feed_media",
-        "observedAt": "2026-09-04T13:39:13.555Z",
+        "observedAt": "2026-10-20T14:24:53.764Z",
         "publishedAt": "2026-09-02T17:13:14.000Z"
       },
       {
@@ -7867,7 +8606,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "official_feed_media",
-        "observedAt": "2026-09-04T13:39:13.555Z",
+        "observedAt": "2026-10-20T14:24:53.764Z",
         "publishedAt": "2026-09-01T14:22:55.000Z"
       },
       {
@@ -7919,7 +8658,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "official_feed_media",
-        "observedAt": "2026-09-04T13:32:30.604Z",
+        "observedAt": "2026-10-20T14:22:14.254Z",
         "publishedAt": null
       },
       {
@@ -8196,6 +8935,97 @@
         "publishedAt": null
       },
       {
+        "id": "thumb-79d58f774d0a5bcc57",
+        "restaurantId": "busan-korean-bbq-halifax",
+        "restaurantName": "Busan Korean BBQ",
+        "thumbnailUrl": "https://www.busankoreanbbq.com/wp-content/uploads/2020/07/dolsotbibimbap.png",
+        "sourceUrl": "https://www.busankoreanbbq.com/",
+        "sourceKind": "official_page_thumbnail_candidate",
+        "reviewState": "candidate_review",
+        "rightsStatus": "requires_rights_review",
+        "confidence": "same_host_official_page_image",
+        "observedAt": "2026-10-20T14:25:07.303Z",
+        "publishedAt": null
+      },
+      {
+        "id": "thumb-be9c755df682e43f6d",
+        "restaurantId": "busan-korean-bbq-halifax",
+        "restaurantName": "Busan Korean BBQ",
+        "thumbnailUrl": "https://www.busankoreanbbq.com/wp-content/uploads/2020/07/PngItem_4096088.png",
+        "sourceUrl": "https://www.busankoreanbbq.com/",
+        "sourceKind": "official_page_thumbnail_candidate",
+        "reviewState": "candidate_review",
+        "rightsStatus": "requires_rights_review",
+        "confidence": "same_host_official_page_image",
+        "observedAt": "2026-10-20T14:25:07.303Z",
+        "publishedAt": null
+      },
+      {
+        "id": "thumb-c16dfb9c49eb88f405",
+        "restaurantId": "busan-korean-bbq-halifax",
+        "restaurantName": "Busan Korean BBQ",
+        "thumbnailUrl": "https://www.busankoreanbbq.com/wp-content/uploads/2020/07/perilla.png",
+        "sourceUrl": "https://www.busankoreanbbq.com/",
+        "sourceKind": "official_page_thumbnail_candidate",
+        "reviewState": "candidate_review",
+        "rightsStatus": "requires_rights_review",
+        "confidence": "same_host_official_page_image",
+        "observedAt": "2026-10-20T14:25:07.303Z",
+        "publishedAt": null
+      },
+      {
+        "id": "thumb-979c3747a067e18773",
+        "restaurantId": "busan-korean-bbq-halifax",
+        "restaurantName": "Busan Korean BBQ",
+        "thumbnailUrl": "https://www.busankoreanbbq.com/wp-content/uploads/2020/07/2020-02-06.jpg",
+        "sourceUrl": "https://www.busankoreanbbq.com/",
+        "sourceKind": "official_page_thumbnail_candidate",
+        "reviewState": "candidate_review",
+        "rightsStatus": "requires_rights_review",
+        "confidence": "same_host_official_page_image",
+        "observedAt": "2026-10-20T14:25:07.303Z",
+        "publishedAt": null
+      },
+      {
+        "id": "thumb-3947121f0b581618aa",
+        "restaurantId": "busan-korean-bbq-halifax",
+        "restaurantName": "Busan Korean BBQ",
+        "thumbnailUrl": "https://www.busankoreanbbq.com/wp-content/uploads/2020/07/2020-02-05.jpg",
+        "sourceUrl": "https://www.busankoreanbbq.com/",
+        "sourceKind": "official_page_thumbnail_candidate",
+        "reviewState": "candidate_review",
+        "rightsStatus": "requires_rights_review",
+        "confidence": "same_host_official_page_image",
+        "observedAt": "2026-10-20T14:25:07.303Z",
+        "publishedAt": null
+      },
+      {
+        "id": "thumb-a2addd7422abca68f5",
+        "restaurantId": "busan-korean-bbq-halifax",
+        "restaurantName": "Busan Korean BBQ",
+        "thumbnailUrl": "https://www.busankoreanbbq.com/wp-content/uploads/2020/07/soupBowl.png",
+        "sourceUrl": "https://www.busankoreanbbq.com/",
+        "sourceKind": "official_page_thumbnail_candidate",
+        "reviewState": "candidate_review",
+        "rightsStatus": "requires_rights_review",
+        "confidence": "same_host_official_page_image",
+        "observedAt": "2026-10-20T14:25:07.303Z",
+        "publishedAt": null
+      },
+      {
+        "id": "thumb-45fe2bed2dbd9c9ed3",
+        "restaurantId": "busan-korean-bbq-halifax",
+        "restaurantName": "Busan Korean BBQ",
+        "thumbnailUrl": "https://www.busankoreanbbq.com/wp-content/uploads/2020/07/MeatBalls.png",
+        "sourceUrl": "https://www.busankoreanbbq.com/",
+        "sourceKind": "official_page_thumbnail_candidate",
+        "reviewState": "candidate_review",
+        "rightsStatus": "requires_rights_review",
+        "confidence": "same_host_official_page_image",
+        "observedAt": "2026-10-20T14:25:07.303Z",
+        "publishedAt": null
+      },
+      {
         "id": "thumb-7b2b3e3190ad2551e9",
         "restaurantId": "osm-node-11751643550-cafe-lunette",
         "restaurantName": "Café Lunette",
@@ -8205,7 +9035,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "official_feed_media",
-        "observedAt": "2026-09-04T13:32:30.604Z",
+        "observedAt": "2026-10-20T14:22:14.254Z",
         "publishedAt": null
       },
       {
@@ -8232,6 +9062,71 @@
         "rightsStatus": "requires_rights_review",
         "confidence": "same_host_official_page_image",
         "observedAt": "2026-09-02T17:39:07.870Z",
+        "publishedAt": null
+      },
+      {
+        "id": "thumb-b13ead8ca96a2eff06",
+        "restaurantId": "osm-node-4421124794-cafe-marco-polo",
+        "restaurantName": "Cafe Marco Polo",
+        "thumbnailUrl": "https://cafemarcopolodartmouth.com/wp-content/uploads/2022/03/isssajpeg.jpg",
+        "sourceUrl": "https://cafemarcopolodartmouth.com/",
+        "sourceKind": "official_page_thumbnail_candidate",
+        "reviewState": "candidate_review",
+        "rightsStatus": "requires_rights_review",
+        "confidence": "same_host_official_page_image",
+        "observedAt": "2026-10-20T14:25:07.303Z",
+        "publishedAt": null
+      },
+      {
+        "id": "thumb-13928883253b616d0e",
+        "restaurantId": "osm-node-4421124794-cafe-marco-polo",
+        "restaurantName": "Cafe Marco Polo",
+        "thumbnailUrl": "https://cafemarcopolodartmouth.com/wp-content/uploads/2022/03/img_6938.jpg",
+        "sourceUrl": "https://cafemarcopolodartmouth.com/",
+        "sourceKind": "official_page_thumbnail_candidate",
+        "reviewState": "candidate_review",
+        "rightsStatus": "requires_rights_review",
+        "confidence": "same_host_official_page_image",
+        "observedAt": "2026-10-20T14:25:07.303Z",
+        "publishedAt": null
+      },
+      {
+        "id": "thumb-956db380a39e946cf8",
+        "restaurantId": "osm-node-4421124794-cafe-marco-polo",
+        "restaurantName": "Cafe Marco Polo",
+        "thumbnailUrl": "https://cafemarcopolodartmouth.com/wp-content/uploads/2022/03/isssajpeg.jpg?w=640",
+        "sourceUrl": "https://cafemarcopolodartmouth.com/",
+        "sourceKind": "official_page_thumbnail_candidate",
+        "reviewState": "candidate_review",
+        "rightsStatus": "requires_rights_review",
+        "confidence": "same_host_official_page_image",
+        "observedAt": "2026-10-20T14:25:07.303Z",
+        "publishedAt": null
+      },
+      {
+        "id": "thumb-7b53d8a72fdd6428f8",
+        "restaurantId": "osm-node-4421124794-cafe-marco-polo",
+        "restaurantName": "Cafe Marco Polo",
+        "thumbnailUrl": "https://cafemarcopolodartmouth.com/wp-content/uploads/2022/03/img_6938.jpg?w=1024",
+        "sourceUrl": "https://cafemarcopolodartmouth.com/",
+        "sourceKind": "official_page_thumbnail_candidate",
+        "reviewState": "candidate_review",
+        "rightsStatus": "requires_rights_review",
+        "confidence": "same_host_official_page_image",
+        "observedAt": "2026-10-20T14:25:07.303Z",
+        "publishedAt": null
+      },
+      {
+        "id": "thumb-22c580b916e3b1a433",
+        "restaurantId": "osm-node-4421124794-cafe-marco-polo",
+        "restaurantName": "Cafe Marco Polo",
+        "thumbnailUrl": "https://cafemarcopolodartmouth.com/wp-content/uploads/2022/03/isssajpeg.jpg?w=1024",
+        "sourceUrl": "https://cafemarcopolodartmouth.com/",
+        "sourceKind": "official_page_thumbnail_candidate",
+        "reviewState": "candidate_review",
+        "rightsStatus": "requires_rights_review",
+        "confidence": "same_host_official_page_image",
+        "observedAt": "2026-10-20T14:25:07.303Z",
         "publishedAt": null
       },
       {
@@ -8400,7 +9295,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "official_feed_media",
-        "observedAt": "2026-09-04T13:32:30.604Z",
+        "observedAt": "2026-10-20T14:22:14.254Z",
         "publishedAt": null
       },
       {
@@ -8413,7 +9308,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "official_feed_media",
-        "observedAt": "2026-09-04T13:32:30.604Z",
+        "observedAt": "2026-10-20T14:22:14.254Z",
         "publishedAt": null
       },
       {
@@ -8443,6 +9338,110 @@
         "publishedAt": null
       },
       {
+        "id": "thumb-c78d30252eadeaceaa",
+        "restaurantId": "darty-brewing-dartmouth",
+        "restaurantName": "Darty Brewing Co.",
+        "thumbnailUrl": "https://www.dartybrewing.ca/cdn/shop/files/Darty-Can_Mockup-473ml-104-Oat_Pale_Ale.png?v=1744380247&width=1080",
+        "sourceUrl": "https://www.dartybrewing.ca/",
+        "sourceKind": "official_page_thumbnail_candidate",
+        "reviewState": "candidate_review",
+        "rightsStatus": "requires_rights_review",
+        "confidence": "same_host_official_page_image",
+        "observedAt": "2026-10-20T14:25:07.303Z",
+        "publishedAt": null
+      },
+      {
+        "id": "thumb-c56267ece11b6feda3",
+        "restaurantId": "darty-brewing-dartmouth",
+        "restaurantName": "Darty Brewing Co.",
+        "thumbnailUrl": "https://www.dartybrewing.ca/cdn/shop/files/Darty-Pint_Glass.png?v=1748913621&width=1080",
+        "sourceUrl": "https://www.dartybrewing.ca/",
+        "sourceKind": "official_page_thumbnail_candidate",
+        "reviewState": "candidate_review",
+        "rightsStatus": "requires_rights_review",
+        "confidence": "same_host_official_page_image",
+        "observedAt": "2026-10-20T14:25:07.303Z",
+        "publishedAt": null
+      },
+      {
+        "id": "thumb-b7bf55e13ace205c2c",
+        "restaurantId": "darty-brewing-dartmouth",
+        "restaurantName": "Darty Brewing Co.",
+        "thumbnailUrl": "https://www.dartybrewing.ca/cdn/shop/files/Darty-Website_Banner-02_bfabca8f-c552-434c-81e0-3da21d75a71e.jpg?v=1748869053&width=600",
+        "sourceUrl": "https://www.dartybrewing.ca/",
+        "sourceKind": "official_page_thumbnail_candidate",
+        "reviewState": "candidate_review",
+        "rightsStatus": "requires_rights_review",
+        "confidence": "same_host_official_page_image",
+        "observedAt": "2026-10-20T14:25:07.303Z",
+        "publishedAt": null
+      },
+      {
+        "id": "thumb-4789c97c1f52bd7d2d",
+        "restaurantId": "darty-brewing-dartmouth",
+        "restaurantName": "Darty Brewing Co.",
+        "thumbnailUrl": "https://www.dartybrewing.ca/cdn/shop/files/Darty-6_Pack_Mockup-355ml-102-Lite.png?crop=center&height=300&v=1746058870&width=300",
+        "sourceUrl": "https://www.dartybrewing.ca/",
+        "sourceKind": "official_page_thumbnail_candidate",
+        "reviewState": "candidate_review",
+        "rightsStatus": "requires_rights_review",
+        "confidence": "same_host_official_page_image",
+        "observedAt": "2026-10-20T14:25:07.303Z",
+        "publishedAt": null
+      },
+      {
+        "id": "thumb-4e9f1b9449de28af9d",
+        "restaurantId": "darty-brewing-dartmouth",
+        "restaurantName": "Darty Brewing Co.",
+        "thumbnailUrl": "https://www.dartybrewing.ca/cdn/shop/files/Darty-Can_Mockup-473ml-104-Oat_Pale_Ale.png?crop=center&height=300&v=1744380247&width=300",
+        "sourceUrl": "https://www.dartybrewing.ca/",
+        "sourceKind": "official_page_thumbnail_candidate",
+        "reviewState": "candidate_review",
+        "rightsStatus": "requires_rights_review",
+        "confidence": "same_host_official_page_image",
+        "observedAt": "2026-10-20T14:25:07.303Z",
+        "publishedAt": null
+      },
+      {
+        "id": "thumb-dea021fef29183e08c",
+        "restaurantId": "darty-brewing-dartmouth",
+        "restaurantName": "Darty Brewing Co.",
+        "thumbnailUrl": "https://www.dartybrewing.ca/cdn/shop/files/Darty-Website_Small-Banner-01.jpg?v=1748869308&width=300",
+        "sourceUrl": "https://www.dartybrewing.ca/",
+        "sourceKind": "official_page_thumbnail_candidate",
+        "reviewState": "candidate_review",
+        "rightsStatus": "requires_rights_review",
+        "confidence": "same_host_official_page_image",
+        "observedAt": "2026-10-20T14:25:07.303Z",
+        "publishedAt": null
+      },
+      {
+        "id": "thumb-324b6d117f6acd5405",
+        "restaurantId": "darty-brewing-dartmouth",
+        "restaurantName": "Darty Brewing Co.",
+        "thumbnailUrl": "https://www.dartybrewing.ca/cdn/shop/files/Darty-T_Shirt-Heather_Navy-Front-01.png?v=1748913618&width=300",
+        "sourceUrl": "https://www.dartybrewing.ca/",
+        "sourceKind": "official_page_thumbnail_candidate",
+        "reviewState": "candidate_review",
+        "rightsStatus": "requires_rights_review",
+        "confidence": "same_host_official_page_image",
+        "observedAt": "2026-10-20T14:25:07.303Z",
+        "publishedAt": null
+      },
+      {
+        "id": "thumb-7fdb310b1b93d04248",
+        "restaurantId": "darty-brewing-dartmouth",
+        "restaurantName": "Darty Brewing Co.",
+        "thumbnailUrl": "https://www.dartybrewing.ca/cdn/shop/files/lake-city-cider-duck-hat-826168_03e33b87-d4c5-4ea2-8b86-950a785e263e.jpg?v=1758737132&width=300",
+        "sourceUrl": "https://www.dartybrewing.ca/",
+        "sourceKind": "official_page_thumbnail_candidate",
+        "reviewState": "candidate_review",
+        "rightsStatus": "requires_rights_review",
+        "confidence": "same_host_official_page_image",
+        "observedAt": "2026-10-20T14:25:07.303Z",
+        "publishedAt": null
+      },
+      {
         "id": "thumb-4172d127ba85e8cbf9",
         "restaurantId": "osm-node-10916309830-darya",
         "restaurantName": "Daryâ",
@@ -8452,7 +9451,7 @@
         "reviewState": "source_check",
         "rightsStatus": "requires_rights_review",
         "confidence": "official_feed_media",
-        "observedAt": "2026-09-04T13:32:30.604Z",
+        "observedAt": "2026-10-20T14:22:14.254Z",
         "publishedAt": null
       },
       {
@@ -8829,7 +9828,7 @@
         "reviewState": "source_check",
         "rightsStatus": "requires_rights_review",
         "confidence": "official_feed_media",
-        "observedAt": "2026-09-04T13:32:30.604Z",
+        "observedAt": "2026-10-20T14:22:14.254Z",
         "publishedAt": null
       },
       {
@@ -8842,7 +9841,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "official_feed_media",
-        "observedAt": "2026-09-04T13:32:30.604Z",
+        "observedAt": "2026-10-20T14:22:14.254Z",
         "publishedAt": null
       },
       {
@@ -9180,7 +10179,7 @@
         "reviewState": "source_check",
         "rightsStatus": "requires_rights_review",
         "confidence": "official_feed_media",
-        "observedAt": "2026-09-04T13:32:30.604Z",
+        "observedAt": "2026-10-20T14:22:14.254Z",
         "publishedAt": null
       },
       {
@@ -9496,6 +10495,32 @@
         "publishedAt": null
       },
       {
+        "id": "thumb-c865594fbd144e764f",
+        "restaurantId": "evans-fresh-seafoods-dartmouth",
+        "restaurantName": "Evan’s Fresh Seafoods & Restaurant",
+        "thumbnailUrl": "https://www.evansfreshseafoods.com/wp-content/uploads/2018/03/gf-1.jpg",
+        "sourceUrl": "https://www.evansfreshseafoods.com/",
+        "sourceKind": "official_page_thumbnail_candidate",
+        "reviewState": "candidate_review",
+        "rightsStatus": "requires_rights_review",
+        "confidence": "same_host_official_page_image",
+        "observedAt": "2026-10-20T14:25:07.303Z",
+        "publishedAt": null
+      },
+      {
+        "id": "thumb-4dbf64d17f5abf59a4",
+        "restaurantId": "evans-fresh-seafoods-dartmouth",
+        "restaurantName": "Evan’s Fresh Seafoods & Restaurant",
+        "thumbnailUrl": "https://www.evansfreshseafoods.com/wp-content/uploads/2014/10/7.-Boat.jpg",
+        "sourceUrl": "https://www.evansfreshseafoods.com/",
+        "sourceKind": "official_page_thumbnail_candidate",
+        "reviewState": "candidate_review",
+        "rightsStatus": "requires_rights_review",
+        "confidence": "same_host_official_page_image",
+        "observedAt": "2026-10-20T14:25:07.303Z",
+        "publishedAt": null
+      },
+      {
         "id": "thumb-7baa4f47c389731c0a",
         "restaurantId": "osm-node-620808566-fan-s-chinese-restaurant",
         "restaurantName": "Fan's Chinese Restaurant",
@@ -9518,7 +10543,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "official_feed_media",
-        "observedAt": "2026-09-04T13:32:30.604Z",
+        "observedAt": "2026-10-20T14:22:14.254Z",
         "publishedAt": null
       },
       {
@@ -9531,7 +10556,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "official_feed_media",
-        "observedAt": "2026-09-04T13:32:30.604Z",
+        "observedAt": "2026-10-20T14:22:14.254Z",
         "publishedAt": null
       },
       {
@@ -9557,7 +10582,7 @@
         "reviewState": "source_check",
         "rightsStatus": "requires_rights_review",
         "confidence": "official_feed_media",
-        "observedAt": "2026-09-04T13:32:30.604Z",
+        "observedAt": "2026-10-20T14:22:14.254Z",
         "publishedAt": null
       },
       {
@@ -9661,7 +10686,7 @@
         "reviewState": "source_check",
         "rightsStatus": "requires_rights_review",
         "confidence": "official_feed_media",
-        "observedAt": "2026-09-04T13:32:30.604Z",
+        "observedAt": "2026-10-20T14:22:14.254Z",
         "publishedAt": null
       },
       {
@@ -10068,6 +11093,71 @@
         "publishedAt": null
       },
       {
+        "id": "thumb-ca44fd327814754903",
+        "restaurantId": "osm-node-2624400763-java-blend",
+        "restaurantName": "Java Blend",
+        "thumbnailUrl": "https://javablendcoffee.com/cdn/shop/files/DSC01864_500x500.jpg?v=1616114238",
+        "sourceUrl": "https://javablendcoffee.com/pages/contact-us",
+        "sourceKind": "official_page_thumbnail_candidate",
+        "reviewState": "candidate_review",
+        "rightsStatus": "requires_rights_review",
+        "confidence": "same_host_official_page_image",
+        "observedAt": "2026-10-20T14:25:07.303Z",
+        "publishedAt": null
+      },
+      {
+        "id": "thumb-9c1fad11356ea8463a",
+        "restaurantId": "osm-node-2624400763-java-blend",
+        "restaurantName": "Java Blend",
+        "thumbnailUrl": "https://javablendcoffee.com/cdn/shop/files/jb_breakfastblend_banner_720x.jpg?v=1614219367",
+        "sourceUrl": "https://javablendcoffee.com/pages/contact-us",
+        "sourceKind": "official_page_thumbnail_candidate",
+        "reviewState": "candidate_review",
+        "rightsStatus": "requires_rights_review",
+        "confidence": "same_host_official_page_image",
+        "observedAt": "2026-10-20T14:25:07.303Z",
+        "publishedAt": null
+      },
+      {
+        "id": "thumb-f89091338dcbb1e5e7",
+        "restaurantId": "osm-node-2624400763-java-blend",
+        "restaurantName": "Java Blend",
+        "thumbnailUrl": "https://javablendcoffee.com/cdn/shop/files/JB_Survey_Invitation_Email_240x240_crop_center.jpg?v=1630531409",
+        "sourceUrl": "https://javablendcoffee.com/pages/contact-us",
+        "sourceKind": "official_page_thumbnail_candidate",
+        "reviewState": "candidate_review",
+        "rightsStatus": "requires_rights_review",
+        "confidence": "same_host_official_page_image",
+        "observedAt": "2026-10-20T14:25:07.303Z",
+        "publishedAt": null
+      },
+      {
+        "id": "thumb-1aa75d65bdc16b9300",
+        "restaurantId": "osm-node-2624400763-java-blend",
+        "restaurantName": "Java Blend",
+        "thumbnailUrl": "https://javablendcoffee.com/cdn/shop/files/jb_espressocup_web.png?v=1614537884",
+        "sourceUrl": "https://javablendcoffee.com/pages/contact-us",
+        "sourceKind": "official_page_thumbnail_candidate",
+        "reviewState": "candidate_review",
+        "rightsStatus": "requires_rights_review",
+        "confidence": "same_host_official_page_image",
+        "observedAt": "2026-10-20T14:25:07.303Z",
+        "publishedAt": null
+      },
+      {
+        "id": "thumb-a953b17cecc5b92df0",
+        "restaurantId": "osm-node-2624400763-java-blend",
+        "restaurantName": "Java Blend",
+        "thumbnailUrl": "https://javablendcoffee.com/cdn/shop/files/jb_branch_web.png?v=1614441266",
+        "sourceUrl": "https://javablendcoffee.com/pages/contact-us",
+        "sourceKind": "official_page_thumbnail_candidate",
+        "reviewState": "candidate_review",
+        "rightsStatus": "requires_rights_review",
+        "confidence": "same_host_official_page_image",
+        "observedAt": "2026-10-20T14:25:07.303Z",
+        "publishedAt": null
+      },
+      {
         "id": "thumb-e65db47dcfee7af23e",
         "restaurantId": "osm-node-13912668535-jean-s-chinese-restaurant",
         "restaurantName": "Jean's Chinese Restaurant",
@@ -10428,7 +11518,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "official_feed_media",
-        "observedAt": "2026-09-04T13:39:18.762Z",
+        "observedAt": "2026-10-20T14:25:00.018Z",
         "publishedAt": "2026-05-04T18:38:33.000Z"
       },
       {
@@ -10441,7 +11531,7 @@
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
         "confidence": "official_feed_media",
-        "observedAt": "2026-09-04T13:39:18.762Z",
+        "observedAt": "2026-10-20T14:25:00.018Z",
         "publishedAt": "2026-05-04T17:55:38.000Z"
       },
       {
@@ -10731,6 +11821,58 @@
         "publishedAt": null
       },
       {
+        "id": "thumb-145ecee06c89101aa9",
+        "restaurantId": "lake-city-cider-dartmouth",
+        "restaurantName": "Lake City Cider",
+        "thumbnailUrl": "https://lakecitycider.ca/cdn/shop/files/Screen_Shot_2019-12-01_at_11.32.38_AM_600x.png?v=1614914650",
+        "sourceUrl": "https://lakecitycider.ca/",
+        "sourceKind": "official_page_thumbnail_candidate",
+        "reviewState": "candidate_review",
+        "rightsStatus": "requires_rights_review",
+        "confidence": "same_host_official_page_image",
+        "observedAt": "2026-10-20T14:25:07.303Z",
+        "publishedAt": null
+      },
+      {
+        "id": "thumb-1935d9b3321fc6c08e",
+        "restaurantId": "lake-city-cider-dartmouth",
+        "restaurantName": "Lake City Cider",
+        "thumbnailUrl": "https://lakecitycider.ca/cdn/shop/files/IMG-2759_300x.jpg?v=1790183823",
+        "sourceUrl": "https://lakecitycider.ca/collections/cider",
+        "sourceKind": "official_page_thumbnail_candidate",
+        "reviewState": "candidate_review",
+        "rightsStatus": "requires_rights_review",
+        "confidence": "same_host_official_page_image",
+        "observedAt": "2026-10-20T14:25:07.303Z",
+        "publishedAt": null
+      },
+      {
+        "id": "thumb-62c68284027c98af95",
+        "restaurantId": "lake-city-cider-dartmouth",
+        "restaurantName": "Lake City Cider",
+        "thumbnailUrl": "https://lakecitycider.ca/cdn/shop/products/raspberry-6-pack-281366_300x.jpg?v=1730310291",
+        "sourceUrl": "https://lakecitycider.ca/collections/cider",
+        "sourceKind": "official_page_thumbnail_candidate",
+        "reviewState": "candidate_review",
+        "rightsStatus": "requires_rights_review",
+        "confidence": "same_host_official_page_image",
+        "observedAt": "2026-10-20T14:25:07.303Z",
+        "publishedAt": null
+      },
+      {
+        "id": "thumb-55bc65d965564e37fc",
+        "restaurantId": "lake-city-cider-dartmouth",
+        "restaurantName": "Lake City Cider",
+        "thumbnailUrl": "https://lakecitycider.ca/cdn/shop/files/LCC-473ml-Can_Mockup-Watermelon-2025_300x.png?v=1754940174",
+        "sourceUrl": "https://lakecitycider.ca/collections/cider",
+        "sourceKind": "official_page_thumbnail_candidate",
+        "reviewState": "candidate_review",
+        "rightsStatus": "requires_rights_review",
+        "confidence": "same_host_official_page_image",
+        "observedAt": "2026-10-20T14:25:07.303Z",
+        "publishedAt": null
+      },
+      {
         "id": "thumb-036130193aaa80ac09",
         "restaurantId": "osm-node-4420843802-le-bistro-by-liz",
         "restaurantName": "Le Bistro by Liz",
@@ -10801,292 +11943,6 @@
         "restaurantName": "Le Bistro by Liz",
         "thumbnailUrl": "https://www.lebistrohalifax.com/wp-content/uploads/2026/03/Lemon-Pie-Best.jpg",
         "sourceUrl": "https://www.lebistrohalifax.com/",
-        "sourceKind": "official_page_thumbnail_candidate",
-        "reviewState": "candidate_review",
-        "rightsStatus": "requires_rights_review",
-        "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-02T17:39:07.870Z",
-        "publishedAt": null
-      },
-      {
-        "id": "thumb-d066fb21c0cfdd3d04",
-        "restaurantId": "osm-node-4420843802-le-bistro-by-liz",
-        "restaurantName": "Le Bistro by Liz",
-        "thumbnailUrl": "https://www.lebistrohalifax.com/wp-content/uploads/2023/07/Unwined-Wednesday.jpg",
-        "sourceUrl": "https://www.lebistrohalifax.com/",
-        "sourceKind": "official_page_thumbnail_candidate",
-        "reviewState": "candidate_review",
-        "rightsStatus": "requires_rights_review",
-        "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-02T17:39:07.870Z",
-        "publishedAt": null
-      },
-      {
-        "id": "thumb-40f102b695f6964510",
-        "restaurantId": "osm-node-4420843802-le-bistro-by-liz",
-        "restaurantName": "Le Bistro by Liz",
-        "thumbnailUrl": "https://www.lebistrohalifax.com/wp-content/uploads/2023/07/wines.jpg",
-        "sourceUrl": "https://www.lebistrohalifax.com/",
-        "sourceKind": "official_page_thumbnail_candidate",
-        "reviewState": "candidate_review",
-        "rightsStatus": "requires_rights_review",
-        "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-02T17:39:07.870Z",
-        "publishedAt": null
-      },
-      {
-        "id": "thumb-b6bf39161775368f6b",
-        "restaurantId": "osm-node-4420843802-le-bistro-by-liz",
-        "restaurantName": "Le Bistro by Liz",
-        "thumbnailUrl": "https://www.lebistrohalifax.com/wp-content/uploads/2023/07/Le_Bistro_halifax_4.jpg",
-        "sourceUrl": "https://www.lebistrohalifax.com/",
-        "sourceKind": "official_page_thumbnail_candidate",
-        "reviewState": "candidate_review",
-        "rightsStatus": "requires_rights_review",
-        "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-02T17:39:07.870Z",
-        "publishedAt": null
-      },
-      {
-        "id": "thumb-de57bee816f88fcf36",
-        "restaurantId": "osm-node-4420843802-le-bistro-by-liz",
-        "restaurantName": "Le Bistro by Liz",
-        "thumbnailUrl": "https://www.lebistrohalifax.com/wp-content/uploads/2023/07/Chef-Brian.jpg",
-        "sourceUrl": "https://www.lebistrohalifax.com/",
-        "sourceKind": "official_page_thumbnail_candidate",
-        "reviewState": "candidate_review",
-        "rightsStatus": "requires_rights_review",
-        "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-02T17:39:07.870Z",
-        "publishedAt": null
-      },
-      {
-        "id": "thumb-127ed0c247b45f0b0e",
-        "restaurantId": "osm-node-4420843802-le-bistro-by-liz",
-        "restaurantName": "Le Bistro by Liz",
-        "thumbnailUrl": "https://www.lebistrohalifax.com/wp-content/uploads/2023/07/brunch-Free-mimosas.jpg",
-        "sourceUrl": "https://www.lebistrohalifax.com/",
-        "sourceKind": "official_page_thumbnail_candidate",
-        "reviewState": "candidate_review",
-        "rightsStatus": "requires_rights_review",
-        "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-02T17:39:07.870Z",
-        "publishedAt": null
-      },
-      {
-        "id": "thumb-2d6103b2a7ac386144",
-        "restaurantId": "osm-node-4420843802-le-bistro-by-liz",
-        "restaurantName": "Le Bistro by Liz",
-        "thumbnailUrl": "https://www.lebistrohalifax.com/wp-content/uploads/2023/07/Fresh-Panko-Haddock-1.jpg",
-        "sourceUrl": "https://www.lebistrohalifax.com/",
-        "sourceKind": "official_page_thumbnail_candidate",
-        "reviewState": "candidate_review",
-        "rightsStatus": "requires_rights_review",
-        "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-02T17:39:07.870Z",
-        "publishedAt": null
-      },
-      {
-        "id": "thumb-1f249be937f46d9b97",
-        "restaurantId": "osm-node-4420843802-le-bistro-by-liz",
-        "restaurantName": "Le Bistro by Liz",
-        "thumbnailUrl": "https://www.lebistrohalifax.com//wp-content//uploads//2023//07//brunch-2.jpg",
-        "sourceUrl": "https://www.lebistrohalifax.com/brunch-menu/",
-        "sourceKind": "official_page_thumbnail_candidate",
-        "reviewState": "candidate_review",
-        "rightsStatus": "requires_rights_review",
-        "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-02T17:39:07.870Z",
-        "publishedAt": null
-      },
-      {
-        "id": "thumb-e4dfd5483435d4b728",
-        "restaurantId": "osm-node-4420843802-le-bistro-by-liz",
-        "restaurantName": "Le Bistro by Liz",
-        "thumbnailUrl": "https://www.lebistrohalifax.com/brunch-menu/r",
-        "sourceUrl": "https://www.lebistrohalifax.com/brunch-menu/",
-        "sourceKind": "official_page_thumbnail_candidate",
-        "reviewState": "candidate_review",
-        "rightsStatus": "requires_rights_review",
-        "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-02T17:39:07.870Z",
-        "publishedAt": null
-      },
-      {
-        "id": "thumb-3177ad6f98229850cc",
-        "restaurantId": "osm-node-4420843802-le-bistro-by-liz",
-        "restaurantName": "Le Bistro by Liz",
-        "thumbnailUrl": "https://www.lebistrohalifax.com//wp-content//uploads//2023//07//Chicken-BLT.jpg",
-        "sourceUrl": "https://www.lebistrohalifax.com/lunch-dinner-menu/",
-        "sourceKind": "official_page_thumbnail_candidate",
-        "reviewState": "candidate_review",
-        "rightsStatus": "requires_rights_review",
-        "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-02T17:39:07.870Z",
-        "publishedAt": null
-      },
-      {
-        "id": "thumb-bcf6842a5beb948381",
-        "restaurantId": "osm-node-4420843802-le-bistro-by-liz",
-        "restaurantName": "Le Bistro by Liz",
-        "thumbnailUrl": "https://www.lebistrohalifax.com/lunch-dinner-menu/r",
-        "sourceUrl": "https://www.lebistrohalifax.com/lunch-dinner-menu/",
-        "sourceKind": "official_page_thumbnail_candidate",
-        "reviewState": "candidate_review",
-        "rightsStatus": "requires_rights_review",
-        "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-02T17:39:07.870Z",
-        "publishedAt": null
-      },
-      {
-        "id": "thumb-88f1d3649769967351",
-        "restaurantId": "osm-node-8836681495-lion-s-head-tavern",
-        "restaurantName": "Lion's Head Tavern",
-        "thumbnailUrl": "https://lionshead.ca/mt-content/uploads/2021/02/wingnight.jpg",
-        "sourceUrl": "https://lionshead.ca/",
-        "sourceKind": "official_page_thumbnail_candidate",
-        "reviewState": "candidate_review",
-        "rightsStatus": "requires_rights_review",
-        "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-02T17:39:07.870Z",
-        "publishedAt": null
-      },
-      {
-        "id": "thumb-64845612815d58eb1e",
-        "restaurantId": "osm-node-8836681495-lion-s-head-tavern",
-        "restaurantName": "Lion's Head Tavern",
-        "thumbnailUrl": "https://lionshead.ca/mt-content/uploads/2021/02/trivianight-01.jpg",
-        "sourceUrl": "https://lionshead.ca/",
-        "sourceKind": "official_page_thumbnail_candidate",
-        "reviewState": "candidate_review",
-        "rightsStatus": "requires_rights_review",
-        "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-02T17:39:07.870Z",
-        "publishedAt": null
-      },
-      {
-        "id": "thumb-27443e359f96bea6ef",
-        "restaurantId": "osm-node-8836681495-lion-s-head-tavern",
-        "restaurantName": "Lion's Head Tavern",
-        "thumbnailUrl": "https://lionshead.ca/mt-content/uploads/2021/02/lh.jpg",
-        "sourceUrl": "https://lionshead.ca/",
-        "sourceKind": "official_page_thumbnail_candidate",
-        "reviewState": "candidate_review",
-        "rightsStatus": "requires_rights_review",
-        "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-02T17:39:07.870Z",
-        "publishedAt": null
-      },
-      {
-        "id": "thumb-2c087045f0c3e762a3",
-        "restaurantId": "osm-node-1139389702-five-fishermen",
-        "restaurantName": "Little Fish Wine Bar",
-        "thumbnailUrl": "https://discoverhalifaxns.com/wp-content/uploads/2026/01/106360_menu_photo_f65544f6-7d4d-450f-a179-e64d2f829ada.jpg",
-        "sourceUrl": "https://discoverhalifaxns.com/dinearound/menu/little-fish-wine-bar-dine-around-menu/?menu=fondue-february",
-        "sourceKind": "official_feed_media",
-        "reviewState": "candidate_review",
-        "rightsStatus": "requires_rights_review",
-        "confidence": "official_feed_media",
-        "observedAt": "2026-09-04T13:32:30.604Z",
-        "publishedAt": null
-      },
-      {
-        "id": "thumb-0031e33556607cfec7",
-        "restaurantId": "osm-node-3802952557-lucy-s-hydrostone-cafe",
-        "restaurantName": "Lucy's Hydrostone Cafe",
-        "thumbnailUrl": "https://lucyshydrostone.ca/wp-content/uploads/Lucys-Our-Story-Image.jpg",
-        "sourceUrl": "https://lucyshydrostone.ca/",
-        "sourceKind": "official_page_thumbnail_candidate",
-        "reviewState": "candidate_review",
-        "rightsStatus": "requires_rights_review",
-        "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-02T17:39:07.870Z",
-        "publishedAt": null
-      },
-      {
-        "id": "thumb-222025422a83dcd405",
-        "restaurantId": "osm-node-3802952557-lucy-s-hydrostone-cafe",
-        "restaurantName": "Lucy's Hydrostone Cafe",
-        "thumbnailUrl": "https://lucyshydrostone.ca/wp-content/uploads/Lucys-baked-goods.jpg",
-        "sourceUrl": "https://lucyshydrostone.ca/",
-        "sourceKind": "official_page_thumbnail_candidate",
-        "reviewState": "candidate_review",
-        "rightsStatus": "requires_rights_review",
-        "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-02T17:39:07.870Z",
-        "publishedAt": null
-      },
-      {
-        "id": "thumb-94f055ce672f63a066",
-        "restaurantId": "osm-node-3802952557-lucy-s-hydrostone-cafe",
-        "restaurantName": "Lucy's Hydrostone Cafe",
-        "thumbnailUrl": "https://lucyshydrostone.ca/wp-content/uploads/Feature-1.jpg",
-        "sourceUrl": "https://lucyshydrostone.ca/",
-        "sourceKind": "official_page_thumbnail_candidate",
-        "reviewState": "candidate_review",
-        "rightsStatus": "requires_rights_review",
-        "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-02T17:39:07.870Z",
-        "publishedAt": null
-      },
-      {
-        "id": "thumb-b8bc5dd42c5623003d",
-        "restaurantId": "osm-node-3802952557-lucy-s-hydrostone-cafe",
-        "restaurantName": "Lucy's Hydrostone Cafe",
-        "thumbnailUrl": "https://lucyshydrostone.ca/wp-content/uploads/Feature-2.1.jpg",
-        "sourceUrl": "https://lucyshydrostone.ca/",
-        "sourceKind": "official_page_thumbnail_candidate",
-        "reviewState": "candidate_review",
-        "rightsStatus": "requires_rights_review",
-        "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-02T17:39:07.870Z",
-        "publishedAt": null
-      },
-      {
-        "id": "thumb-446bd38a72e37cba9d",
-        "restaurantId": "osm-node-3802952557-lucy-s-hydrostone-cafe",
-        "restaurantName": "Lucy's Hydrostone Cafe",
-        "thumbnailUrl": "https://lucyshydrostone.ca/wp-content/uploads/Feature-3.2.jpg",
-        "sourceUrl": "https://lucyshydrostone.ca/",
-        "sourceKind": "official_page_thumbnail_candidate",
-        "reviewState": "candidate_review",
-        "rightsStatus": "requires_rights_review",
-        "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-02T17:39:07.870Z",
-        "publishedAt": null
-      },
-      {
-        "id": "thumb-3869a39db4ba96f26a",
-        "restaurantId": "osm-node-3802952557-lucy-s-hydrostone-cafe",
-        "restaurantName": "Lucy's Hydrostone Cafe",
-        "thumbnailUrl": "https://lucyshydrostone.ca/wp-content/uploads/Feature-4.2.jpg",
-        "sourceUrl": "https://lucyshydrostone.ca/",
-        "sourceKind": "official_page_thumbnail_candidate",
-        "reviewState": "candidate_review",
-        "rightsStatus": "requires_rights_review",
-        "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-02T17:39:07.870Z",
-        "publishedAt": null
-      },
-      {
-        "id": "thumb-53f2a5939d50a870bb",
-        "restaurantId": "osm-node-2721720399-mashawee-mediterranean-grill",
-        "restaurantName": "Mashawee Mediterranean Grill",
-        "thumbnailUrl": "https://www.skipthedishes.com/images/gift-of-skip/gift-card.png",
-        "sourceUrl": "https://www.skipthedishes.com/?utm_source=mashaweemediterraneangrill.ca&utm_medium=microsites&utm_campaign=microsites",
-        "sourceKind": "official_page_thumbnail_candidate",
-        "reviewState": "candidate_review",
-        "rightsStatus": "requires_rights_review",
-        "confidence": "same_host_official_page_image",
-        "observedAt": "2026-09-02T17:39:07.870Z",
-        "publishedAt": null
-      },
-      {
-        "id": "thumb-03239ce7446397ab86",
-        "restaurantId": "osm-node-13286396472-matadora-tapas-bar",
-        "restaurantName": "Matadora Tapas Bar",
-        "thumbnailUrl": "https://matadorahfx.ca/wp-content/uploads/2024/12/Danza_Page_1-622x1024.jpg",
-        "sourceUrl": "https://matadorahfx.ca/",
         "sourceKind": "official_page_thumbnail_candidate",
         "reviewState": "candidate_review",
         "rightsStatus": "requires_rights_review",
@@ -12101,9 +12957,9 @@
   "exports": {
     "sourceCheckQueueJson": "data/build/thumbnail-source-check-queue.json",
     "sourceCheckQueueCsv": "data/build/thumbnail-source-check-queue.csv",
-    "sourceCheckRows": 144,
+    "sourceCheckRows": 220,
     "ownerMediaOutreachJson": "data/build/owner-media-outreach.json",
     "ownerMediaOutreachCsv": "data/build/owner-media-outreach.csv",
-    "ownerMediaOutreachRows": 358
+    "ownerMediaOutreachRows": 350
   }
 }
