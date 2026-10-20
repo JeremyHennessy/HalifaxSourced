@@ -81,15 +81,6 @@ function normalize(value) {
     .trim();
 }
 
-function addressKey(value) {
-  return String(value ?? "")
-    .toLowerCase()
-    .normalize("NFKD")
-    .replace(/[\u0300-\u036f]/g, "")
-    .replace(/\b(street|st|avenue|ave|road|rd|drive|dr|boulevard|blvd|lane|ln|nova scotia|halifax|dartmouth|bedford)\b/g, "")
-    .replace(/[^a-z0-9]+/g, "")
-    .trim();
-}
 
 const officialById = new Map(officialSignals.map((signal) => [signal.restaurantId, signal]));
 const structuredEventsByRestaurant = new Map();
@@ -186,19 +177,7 @@ function mergeSources(a = [], b = []) {
 }
 
 function inspectionMatches(restaurant) {
-  if (!restaurant.name) return [];
-  const name = normalize(restaurant.name);
-  const address = addressKey(restaurant.address);
-  const matches = [];
-  for (const record of inspectionRecords) {
-    const recordName = normalize(record.name);
-    const recordAddress = addressKey(record.address);
-    const nameMatch = recordName === name || (name.length > 8 && recordName.includes(name)) || (recordName.length > 8 && name.includes(recordName));
-    const addressMatch = address && recordAddress && (recordAddress.includes(address.slice(0, 10)) || address.includes(recordAddress.slice(0, 10)));
-    if (nameMatch || (addressMatch && recordName.slice(0, 6) === name.slice(0, 6))) matches.push(record);
-    if (matches.length >= 3) break;
-  }
-  return matches;
+  return window.HalifaxInspectionMatching.matches(restaurant, inspectionRecords);
 }
 
 function signalHas(signal, kind) {
