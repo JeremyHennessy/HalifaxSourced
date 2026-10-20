@@ -10,6 +10,8 @@ on:
     paths:
       - .github/workflows/restaurant-discovery-preview.yml
       - scripts/import-directory-restaurants.mjs
+      - scripts/lib/taste-ns-member-api.mjs
+      - scripts/test-taste-ns-member-api.mjs
       - scripts/import-review-directory-restaurants.mjs
       - scripts/review-directory-sources.mjs
       - scripts/refine-dartmouth-directory.mjs
@@ -39,7 +41,9 @@ jobs:
           node-version: 22
 
       - name: Test source name decoding
-        run: node scripts/test-dartmouth-directory-names.mjs
+        run: |
+          node scripts/test-dartmouth-directory-names.mjs
+          node scripts/test-taste-ns-member-api.mjs
 
       - name: Refresh directory restaurant candidates
         env:
