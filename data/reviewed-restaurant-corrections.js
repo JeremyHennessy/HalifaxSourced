@@ -1098,6 +1098,15 @@ window.HALIFAX_RESTAURANT_CORRECTIONS = {
   ],
   "factFieldRejections": [
     {
+      "id": "battery-park-ambiguous-weekly-hours-20261020",
+      "restaurantId": "battery-park",
+      "fields": ["hours"],
+      "sourceUrl": "https://batterypark.ca/",
+      "reason": "The owner Thursday entry is ambiguous (11:30am -11am), while imported 24-hour and historical directory schedules conflict with the current owner page. Hold structured weekly hours for this exact location until explicit owner review resolves that ambiguity. Retain raw observations and original evidence dates; do not infer an overnight period, a closing time, or that an unspecified day is closed.",
+      "reviewedAt": "2026-10-20T18:15:55Z",
+      "reviewState": "rejected"
+    },
+    {
       "id": "saj-house-foreign-address-20261020",
       "restaurantId": "osm-node-8443747544-saj-house",
       "fields": [

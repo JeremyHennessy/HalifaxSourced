@@ -19,6 +19,11 @@ const html = await readFile(new URL('index.html',root),'utf8');
 for (const match of html.matchAll(/<script src="\.\/([^"?]+)[^\"]*"><\/script>/g)) {
   const file = match[1]; if (file.startsWith('vendor/')) continue;
   vm.runInContext(await readFile(new URL(file,root),'utf8'),context,{filename:file,timeout:60000});
+  if (file === 'data/structured-place-facts.js') {
+    const batteryFacts = context.window.HALIFAX_STRUCTURED_PLACE_FACTS.records.find(item => item.restaurantId === 'battery-park');
+    batteryFacts.hours = Object.fromEntries(['monday','tuesday','wednesday','thursday','friday','saturday','sunday'].map(day => [day,[{open:'00:00',close:'24:00',overnight:false}]]));
+    batteryFacts.lastVerifiedAt = FIXTURE_NOW;
+  }
   if (file === 'app-lifecycle.js') break;
 }
 const app = JSON.parse(vm.runInContext('JSON.stringify({restaurants,active:activeRestaurants.map(item=>item.id),saved:[...state.saved]})',context));
@@ -47,6 +52,9 @@ assert(active.has(woodenDartmouthId));
 const batteryAlias = 'osm-node-14139904501-battery-park-beer-bar-and-eatery';
 assert.deepEqual(app.saved, ['battery-park'], 'Old and canonical saved IDs reconcile to one persisted bookmark');
 assert.deepEqual(JSON.parse(savedWrites.at(-1)), ['battery-park']);
+const batteryRuntime = app.restaurants.find(record => record.id === 'battery-park');
+assert.equal(batteryRuntime.structuredHours, null, 'A freshly fetched but rejected schedule cannot restore an open-now claim');
+assert.equal(batteryRuntime.currentHoursState.state, 'unknown');
 for (const records of [app.restaurants, catalog.restaurants]) {
   const battery = records.find(record => record.id === 'battery-park');
   assert.equal(records.filter(record => /battery park/i.test(record.name)).length, 1, 'One source-reviewed Battery Park location, not two name variants');

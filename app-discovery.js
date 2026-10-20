@@ -110,7 +110,8 @@ function renderMapPage() {
     document.querySelectorAll("[data-map-mode]").forEach((item) => { item.classList.toggle("is-active", item.dataset.mapMode === mapUiMode); item.setAttribute("aria-pressed", String(item.dataset.mapMode === mapUiMode)); });
     if (mapUiMode === "map") setTimeout(() => state.map?.invalidateSize?.(), 0);
   }));
-  requestAnimationFrame(() => initMainMap(results));
+  const element = document.querySelector("#mainMap");
+  requestAnimationFrame(() => initMainMap(results, element));
 }
 
 function mapResultRow(restaurant) {

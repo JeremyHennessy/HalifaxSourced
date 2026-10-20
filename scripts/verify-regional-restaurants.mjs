@@ -9,7 +9,7 @@ const review = JSON.parse(await readFile(new URL('../data/reviewed-regional-rest
 await mkdir('artifacts', { recursive: true });
 try {
  for (const viewport of [{width:390,height:844},{width:1440,height:1000}]) {
-  const page=await browser.newPage({viewport});const errors=[];page.on('pageerror',error=>errors.push(error.message));
+  const page=await browser.newPage({viewport});const errors=[];page.on('pageerror',error=>errors.push(`${page.url()} ${viewport.width}: ${error.stack || error.message}`));
   await page.goto(url+'/#explore',{waitUntil:'domcontentloaded'});
   await page.waitForFunction(()=>typeof restaurants!=='undefined'&&restaurants.some(item=>item.id==='watermark-indian-harbour'));
   const state=await page.evaluate(()=>({
@@ -37,6 +37,24 @@ try {
   await page.locator('#mapNeighbourhood').selectOption('Downtown Dartmouth');
   await page.waitForFunction(()=>state.neighbourhood==='Downtown Dartmouth'&&state.mapMarkers?.size>0);
   assert(await page.evaluate(()=>[...state.mapMarkers.values()].every(marker=>state.map.getBounds().contains(marker.getLatLng()))));
+  assert(await page.evaluate(()=>state.mapRenderer instanceof L.SVG && document.querySelectorAll('#mainMap .leaflet-overlay-pane svg path').length===state.mapMarkers.size),'Main map uses supported SVG paths for every located result');
+  // Rapid filter changes must not let an old queued initialization win.
+  await page.evaluate(()=>{
+   state.neighbourhood='North End';destroyMap();renderMapPage();
+   state.neighbourhood='Downtown Dartmouth';destroyMap();renderMapPage();
+  });
+  await page.waitForFunction(()=>state.mapMarkers?.size>0);
+  assert(await page.evaluate(()=>[...state.mapMarkers.keys()].every(id=>restaurants.find(r=>r.id===id)?.neighborhood==='Downtown Dartmouth')));
+  // Tear down after initialization but before the next Canvas draw frame.
+  await page.evaluate(async()=>{
+   for(let i=0;i<3;i++){
+    destroyMap();renderMapPage();
+    await new Promise(resolve=>requestAnimationFrame(resolve));
+    destroyMap();
+   }
+   renderMapPage();
+   await new Promise(resolve=>requestAnimationFrame(()=>requestAnimationFrame(resolve)));
+  });
   await page.goto(url+'/#restaurant/tuna-blue-hubbards',{waitUntil:'domcontentloaded'});
   await page.locator('.closure-notice').waitFor();
   assert.match(await page.locator('.closure-notice').innerText(),/Closed for the season/);
@@ -45,6 +63,16 @@ try {
   await page.goto(url+'/#restaurant/osm-node-37132554-press-gang',{waitUntil:'domcontentloaded'});
   await page.locator('.restaurant-title h1').waitFor();
   assert.match(await page.locator('.restaurant-title h1').innerText(),/Press Gang/);
+  await page.goto(url+'/#home',{waitUntil:'domcontentloaded'});
+  await page.locator('[data-home-openings]').waitFor();
+  const openings=await page.evaluate(()=>({
+   actual:[...document.querySelectorAll('[data-home-openings] .lead-row>a')].map(a=>decodeURIComponent(a.hash.replace('#restaurant/',''))),
+   expected:homeOpeningLeads().map(r=>r.id)
+  }));
+  assert(openings.actual.length>0,'Existing explicit opening leads remain visible');
+  assert.deepEqual(openings.actual,openings.expected);
+  for(const row of review.accepted) assert(!openings.actual.includes(row.id),'Established addition incorrectly labeled NEW: '+row.id);
+  await page.screenshot({path:`artifacts/regional-home-openings-${viewport.width}.png`,fullPage:true});
   assert.deepEqual(errors,[]);await page.close();
  }
  console.log('Regional browser acceptance passed: desktop/mobile area filters, separate outlets, un-geocoded lists, regional map bounds, seasonal detail and legacy alias routes.');

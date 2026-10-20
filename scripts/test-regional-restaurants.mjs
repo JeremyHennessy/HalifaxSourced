@@ -48,6 +48,16 @@ for(const match of html.matchAll(/<script src="\.\/([^"?]+)[^"]*"><\/script>/g))
   if(file==='app-lifecycle.js')break;
 }
 const browser=JSON.parse(vm.runInContext('JSON.stringify(restaurants)',context));
+vm.runInContext(await readFile(new URL('app-home.js',root),'utf8'),context,{filename:'app-home.js'});
+const homeOpeningIds=JSON.parse(vm.runInContext('JSON.stringify(homeOpeningLeads().map(r=>r.id))',context));
+assert(homeOpeningIds.length>0,'Existing explicit opening signals still produce home leads');
+for(const row of regional.accepted) assert(!homeOpeningIds.includes(row.id),'Recently cataloged established location is not a home opening: '+row.id);
+const explicitOpening=browser.find(row=>row.id==='sakaba-halifax');
+const established=browser.find(row=>row.id==='esquire-restaurant-bedford');
+assert.equal(explicitOpening.hasOpening,true,'Existing explicit reported-opening record retained');
+assert.equal(established.hasOpening,false);
+context.homeOpeningFixtures=[{...established,freshnessDate:'2099-01-01'},explicitOpening,{id:'missing-opening-flag',sourceLayer:'local_discovery',freshnessDate:'2099-01-02'}];
+assert.deepEqual(JSON.parse(vm.runInContext('JSON.stringify(homeOpeningLeads(homeOpeningFixtures).map(r=>r.id))',context)),[explicitOpening.id],'Catalog freshness/source layer cannot create an opening claim; an explicit opening remains eligible');
 assert.deepEqual(browser.map(r=>r.id).sort(),catalog.restaurants.map(r=>r.id).sort(),'Runtime/export identity parity');
 assert.deepEqual(JSON.parse(JSON.stringify(context.window.__halifaxIdentityReviewQueue)),catalog.identityReviewQueue);
 for(const accepted of regional.accepted){
