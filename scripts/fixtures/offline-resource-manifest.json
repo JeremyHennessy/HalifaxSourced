@@ -11,6 +11,14 @@
       "fixture": "../../assets/restaurants/the-narrows-exterior.jpg"
     },
     {
+      "url": "https://c.tile.openstreetmap.org/15/10598/11829.png",
+      "method": "GET",
+      "resourceType": "image",
+      "category": "map-tile",
+      "fixture": "synthetic-map-tile.png",
+      "declarationBasis": "Manually reviewed exact request in Quality Gate 39474729182 job 118808984411 at 2026-10-20T18:31:41Z, Battery Park old-ID detail route after preserving its accepted OSM coordinate 44.6669046,-63.5678828. Offline synthetic fixture only; no tile fetch, wildcard or automatic inventory expansion."
+    },
+    {
       "url": "https://bicyclethief.ca/wp-content/uploads/2021/07/OpeningPatios-3-845x684.jpg",
       "method": "GET",
       "resourceType": "image",

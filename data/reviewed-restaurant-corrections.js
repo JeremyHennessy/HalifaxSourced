@@ -4,6 +4,20 @@ window.HALIFAX_RESTAURANT_CORRECTIONS = {
   "policy": "Reviewed location evidence overrides stale imports; observation dates are retained and uncertain coordinates, hours, successor identities and closure day remain unknown.",
   "records": [
     {
+      "restaurantId": "battery-park",
+      "fields": {
+        "address": "62 Ochterloney Street, Dartmouth, NS B2Y 1C2",
+        "phone": "902-446-2337",
+        "website": "https://batterypark.ca/",
+        "openingHours": null
+      },
+      "sourceUrl": "https://batterypark.ca/",
+      "claim": "Owner confirms Battery Park at 62 Ochterloney Street, Dartmouth, phone 902-446-2337. The current owner schedule gives Monday and Sunday 11:30-22:00, Tuesday closed, Wednesday 11:30-23:00 and Friday-Saturday 11:30-midnight, but Thursday is literally 11:30am -11am. Hold the weekly opening-hours field until that ambiguous day is clarified; do not invent 23:00, retain stale directory hours, or publish imported 24-hour service. The source-linked partial schedule remains evidence, not a complete verified weekly schedule.",
+      "observedAt": "2026-10-20T18:15:55Z",
+      "reviewedAt": "2026-10-20T18:15:55Z",
+      "reviewState": "verified"
+    },
+    {
       "restaurantId": "osm-node-472054712-the-wooden-monkey",
       "fields": {
         "address": "40 Alderney Drive, #305, Level 2 Alderney Ferry Terminal, Dartmouth, NS B2Y 2N5",
@@ -282,6 +296,37 @@ window.HALIFAX_RESTAURANT_CORRECTIONS = {
     }
   ],
   "aliases": [
+    {
+      "from": "osm-node-14139904501-battery-park-beer-bar-and-eatery",
+      "to": "battery-park",
+      "sourceUrl": "https://batterypark.ca/",
+      "reviewedAt": "2026-10-20T18:15:55Z",
+      "reason": "The owner identifies one Battery Park Beerbar & Eatery at 62 Ochterloney Street, Dartmouth, phone 902-446-2337. The curated and OSM name variants share this exact civic/street address, phone and owner domain. Preserve the curated ID, old-ID redirect, OSM source coordinate and both source histories; this is not a generic name/domain or proximity merge.",
+      "evidence": [
+        {
+          "type": "official_location",
+          "url": "https://batterypark.ca/",
+          "observedAt": "2026-10-20T18:15:55Z",
+          "address": "62 Ochterloney Street, Dartmouth, NS B2Y 1C2",
+          "phone": "902-446-2337"
+        },
+        {
+          "type": "tourism_location",
+          "url": "https://novascotia.com/listing/battery-park-beer-bar-eatery/",
+          "observedAt": "2026-10-20T18:15:55Z",
+          "address": "62 Ochterloney Street, Dartmouth",
+          "phone": "902-446-2337"
+        },
+        {
+          "type": "committed_source_records",
+          "commit": "f5071b632b4b3c7340e2938c583bddc383498621",
+          "canonicalId": "battery-park",
+          "incomingId": "osm-node-14139904501-battery-park-beer-bar-and-eatery",
+          "incomingSourceUrl": "https://www.openstreetmap.org/node/14139904501",
+          "coordinates": { "lat": 44.6669046, "lon": -63.5678828 }
+        }
+      ]
+    },
     {
       "to": "osm-node-11751643550-cafe-lunette",
       "reviewedAt": "2026-10-19",
@@ -1052,6 +1097,15 @@ window.HALIFAX_RESTAURANT_CORRECTIONS = {
     }
   ],
   "factFieldRejections": [
+    {
+      "id": "battery-park-ambiguous-weekly-hours-20261020",
+      "restaurantId": "battery-park",
+      "fields": ["hours"],
+      "sourceUrl": "https://batterypark.ca/",
+      "reason": "The owner Thursday entry is ambiguous (11:30am -11am), while imported 24-hour and historical directory schedules conflict with the current owner page. Hold structured weekly hours for this exact location until explicit owner review resolves that ambiguity. Retain raw observations and original evidence dates; do not infer an overnight period, a closing time, or that an unspecified day is closed.",
+      "reviewedAt": "2026-10-20T18:15:55Z",
+      "reviewState": "rejected"
+    },
     {
       "id": "saj-house-foreign-address-20261020",
       "restaurantId": "osm-node-8443747544-saj-house",

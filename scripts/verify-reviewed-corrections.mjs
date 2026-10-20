@@ -112,6 +112,14 @@ try {
   await page.goto(base+'/#restaurant/osm-node-12984675528-cafe-lunette',{waitUntil:'networkidle'});
   await page.locator('.restaurant-hero').waitFor();
   assert(await page.locator('[data-save-id="osm-node-11751643550-cafe-lunette"]').count()>0,'Old detail route must resolve to canonical identity');
+  await page.goto(base+'/#explore?q=Battery%20Park',{waitUntil:'networkidle'});
+  await page.locator('.restaurant-card').first().waitFor();
+  assert.equal(await page.locator('.restaurant-card').count(),1,'Duplicate Battery Park card');
+  await page.goto(base+'/#restaurant/osm-node-14139904501-battery-park-beer-bar-and-eatery',{waitUntil:'networkidle'});
+  await page.locator('.restaurant-hero').waitFor();
+  assert(await page.locator('[data-save-id="battery-park"]').count()>0,'Old Battery Park detail route must resolve to canonical saved identity');
+  assert.equal(await page.evaluate(()=>restaurants.find(item=>item.id==='battery-park').openingHours),null,'Do not publish ambiguous Thursday hours or imported 24-hour service');
+  await page.screenshot({path:new URL('../artifacts/ui-check-iphone-battery-park-merged.png',import.meta.url).pathname,fullPage:true});
   resources.assertClean();
   console.log(`Short-iPhone lifecycle, replacement, current-location, merged-route and ${ids.length}-identity release parity checks passed.`);
   await context.close();

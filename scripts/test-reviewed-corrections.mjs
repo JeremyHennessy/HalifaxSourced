@@ -13,14 +13,20 @@ class FixtureDate extends Date {
   constructor(...args) { super(...(args.length ? args : [FIXTURE_NOW])); }
   static now() { return Date.parse(FIXTURE_NOW); }
 }
-const context = vm.createContext({window:{}, document:{querySelector:()=>({}),querySelectorAll:()=>[]},localStorage:{getItem:()=>null,setItem:()=>{}}, console, URL, Date:FixtureDate, Intl, Set, Map});
+const savedWrites = [];
+const context = vm.createContext({window:{}, document:{querySelector:()=>({}),querySelectorAll:()=>[]},localStorage:{getItem:()=>JSON.stringify(['battery-park','osm-node-14139904501-battery-park-beer-bar-and-eatery']),setItem:(_key,value)=>savedWrites.push(value)}, console, URL, Date:FixtureDate, Intl, Set, Map});
 const html = await readFile(new URL('index.html',root),'utf8');
 for (const match of html.matchAll(/<script src="\.\/([^"?]+)[^\"]*"><\/script>/g)) {
   const file = match[1]; if (file.startsWith('vendor/')) continue;
   vm.runInContext(await readFile(new URL(file,root),'utf8'),context,{filename:file,timeout:60000});
+  if (file === 'data/structured-place-facts.js') {
+    const batteryFacts = context.window.HALIFAX_STRUCTURED_PLACE_FACTS.records.find(item => item.restaurantId === 'battery-park');
+    batteryFacts.hours = Object.fromEntries(['monday','tuesday','wednesday','thursday','friday','saturday','sunday'].map(day => [day,[{open:'00:00',close:'24:00',overnight:false}]]));
+    batteryFacts.lastVerifiedAt = FIXTURE_NOW;
+  }
   if (file === 'app-lifecycle.js') break;
 }
-const app = JSON.parse(vm.runInContext('JSON.stringify({restaurants,active:activeRestaurants.map(item=>item.id)})',context));
+const app = JSON.parse(vm.runInContext('JSON.stringify({restaurants,active:activeRestaurants.map(item=>item.id),saved:[...state.saved]})',context));
 const catalog = JSON.parse(await readFile(new URL('data/build/catalog.json',root)));
 assert.deepEqual(app.restaurants.map(item=>item.id).sort(),catalog.restaurants.map(item=>item.id).sort(),'Browser and export must use the same exact identities');
 const active = new Set(app.active);
@@ -43,6 +49,26 @@ for (const records of [app.restaurants, catalog.restaurants]) {
   assert(!dartmouth.aliasIds?.includes(halifax.id), 'These are separate locations, not duplicate identities');
 }
 assert(active.has(woodenDartmouthId));
+const batteryAlias = 'osm-node-14139904501-battery-park-beer-bar-and-eatery';
+assert.deepEqual(app.saved, ['battery-park'], 'Old and canonical saved IDs reconcile to one persisted bookmark');
+assert.deepEqual(JSON.parse(savedWrites.at(-1)), ['battery-park']);
+const batteryRuntime = app.restaurants.find(record => record.id === 'battery-park');
+assert.equal(batteryRuntime.structuredHours, null, 'A freshly fetched but rejected schedule cannot restore an open-now claim');
+assert.equal(batteryRuntime.currentHoursState.state, 'unknown');
+for (const records of [app.restaurants, catalog.restaurants]) {
+  const battery = records.find(record => record.id === 'battery-park');
+  assert.equal(records.filter(record => /battery park/i.test(record.name)).length, 1, 'One source-reviewed Battery Park location, not two name variants');
+  assert(!records.some(record => record.id === batteryAlias));
+  assert(battery.aliasIds.includes(batteryAlias), 'The old saved ID and detail route must remain resolvable');
+  assert.equal(battery.address, '62 Ochterloney Street, Dartmouth, NS B2Y 1C2');
+  assert.equal(battery.phone, '902-446-2337');
+  assert.equal(battery.coordinates.lat, 44.6669046, 'Retain the accepted OSM coordinate, not a new geocode');
+  assert.equal(battery.coordinates.lon, -63.5678828);
+  assert.equal(battery.openingHours, null, 'Ambiguous Thursday owner hours must not become guessed weekly hours or 24-hour service');
+  assert(battery.sources.some(source => source.type === 'openstreetmap'));
+  assert((battery.inspectionRecords || battery.inspections).some(record => record.facilityId === '2118924'), 'Retain the exact accepted inspection facility');
+  assert(battery.mergedIdentityEvidence.some(item => item.id === batteryAlias));
+}
 assert(app.restaurants.find(record => record.id === woodenDartmouthId).menuLinks.some(link => link.url === 'https://www.thewoodenmonkey.ca/main-menu'));
 const chanoeyId = 'chanoeys-pasta-dartmouth';
 for (const records of [app.restaurants, catalog.restaurants]) {
