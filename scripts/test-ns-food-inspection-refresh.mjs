@@ -80,7 +80,13 @@ try {
   await fail({badCity:'Dartmouth'},'Halifax,Dartmouth',/unrecognized HTML/);
   await save(Array.from({length:24},(_,i)=>record(1000+i,'Halifax')));
   await fail({pages:{Halifax:page([row('11')])}},'Halifax',/unexpectedly fell/);
+  await fail({pages:{Halifax:page(Array.from({length:24},(_,i)=>row('11','Trading alias '+i)))}},'Halifax',/unexpectedly fell/);
+  await fail({pages:{Halifax:page([...Array.from({length:17},(_,i)=>row(String(1000+i))),...Array.from({length:7},()=>row('1000','Trading alias'))])}},'Halifax',/unexpectedly fell/);
+  result=await run({pages:{Halifax:page([...Array.from({length:18},(_,i)=>row(String(1000+i))),...Array.from({length:6},()=>row('1000','Trading alias'))])}},'Halifax');
+  assert.equal(result.code,0,result.error);
+  fresh=JSON.parse(await readFile(snapshot,'utf8'));
+  assert.equal(fresh.count,18,'exactly 75% unique facilities should remain accepted');
   await writeFile(snapshot,JSON.stringify({count:99,records:[record('1')]}));
   await fail({},'Halifax',/Existing inspection snapshot failed/);
-  console.log('Inspection snapshot safety regression passed: valid full/partial refresh, de-duplication and 12 failure modes.');
+  console.log('Inspection snapshot safety regression passed: valid full/partial refresh, alias-aware de-duplication, 75% boundary and 14 failure modes.');
 } finally {await rm(root,{recursive:true,force:true});}
