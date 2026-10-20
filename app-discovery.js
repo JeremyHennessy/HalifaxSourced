@@ -91,23 +91,16 @@ function renderMenus() {
 }
 
 function renderMapPage() {
-  const areas = ["All neighbourhoods", "Downtown", "North End", "South End", "Waterfront", "Dartmouth", "Bedford"];
   const results = filteredRestaurants({ neighbourhood: state.neighbourhood });
   appView.innerHTML = `
     <section class="page-shell page-intro map-intro"><div><span class="eyebrow">Neighbourhood discovery</span><h1>Explore Halifax</h1><p>Browse local places by neighbourhood and move between the map and source-backed listings.</p></div><a class="button secondary" href="#explore">View as list</a></section>
     <section class="page-shell map-page">
       <div class="map-mode-switch" role="group" aria-label="Map display mode"><button type="button" data-map-mode="map" class="${mapUiMode === "map" ? "is-active" : ""}" aria-pressed="${mapUiMode === "map"}">Map</button><button type="button" data-map-mode="list" class="${mapUiMode === "list" ? "is-active" : ""}" aria-pressed="${mapUiMode === "list"}">List</button></div>
-      <label class="filter-control"><span>All communities</span><select id="mapNeighbourhood"><option value="all">All neighbourhoods</option>${discoveryNeighbourhoodOptions(activeRestaurants).map(area => `<option value="${escapeHtml(area)}" ${area === state.neighbourhood ? "selected" : ""}>${escapeHtml(area)}</option>`).join("")}</select></label>
-      <p>${results.filter(item => !item.coordinates).length} places have no verified map coordinates and remain available in the list.</p>
-      <div class="map-chips">${areas.map((area) => `<button type="button" data-map-area="${area === "All neighbourhoods" ? "all" : escapeHtml(area)}" class="${(area === "All neighbourhoods" && state.neighbourhood === "all") || area === state.neighbourhood ? "is-active" : ""}">${escapeHtml(area)}</button>`).join("")}</div>
+      <label class="filter-control map-community-control"><span>All communities</span><select id="mapNeighbourhood"><option value="all">All neighbourhoods</option>${discoveryNeighbourhoodOptions(activeRestaurants).map(area => `<option value="${escapeHtml(area)}" ${area === state.neighbourhood ? "selected" : ""}>${escapeHtml(area)}</option>`).join("")}</select></label>
+      <p class="map-coordinate-note">${results.filter(item => !item.coordinates).length} places have no verified map coordinates and remain available in the list.</p>
       <div class="map-split mode-${mapUiMode}"><div class="map-large" id="mainMap"></div><aside class="map-results"><div class="results-toolbar"><strong>${results.length.toLocaleString()} places</strong><label>Sort <select id="mapSort"><option value="recommended" ${state.sort === "recommended" ? "selected" : ""}>Recommended</option><option value="name" ${state.sort === "name" ? "selected" : ""}>Name</option></select></label></div><div class="local-picks"><h2>Local picks</h2>${results.slice(0, 2).map((r, i) => restaurantCard(r, { compact: true, index: i })).join("")}</div><div class="map-result-list">${results.slice(0, 18).map(mapResultRow).join("")}${results.length > 18 ? `<p>Showing 18 places. Select a community above or <a href="#explore">browse the full list</a>.</p>` : ""}</div></aside></div>
     </section>`;
   bindCommonActions();
-  document.querySelectorAll("[data-map-area]").forEach((button) => button.addEventListener("click", () => {
-    state.neighbourhood = button.dataset.mapArea;
-    destroyMap();
-    renderMapPage();
-  }));
   document.querySelector("#mapNeighbourhood")?.addEventListener("change", event => { state.neighbourhood = event.target.value; destroyMap(); renderMapPage(); });
   document.querySelector("#mapSort")?.addEventListener("change", (event) => { state.sort = event.target.value; destroyMap(); renderMapPage(); });
   document.querySelectorAll("[data-map-mode]").forEach((button) => button.addEventListener("click", () => {

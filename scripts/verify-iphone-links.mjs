@@ -65,6 +65,8 @@ const auditSelectors = [
   ".pagination button",
   ".chip",
   ".map-chips button",
+  "#mapNeighbourhood",
+  "[data-map-mode]",
   "[data-event-category]",
   "[data-event-window]",
   "[data-save-event-id]",
