@@ -5,10 +5,15 @@
       "id": "automatic-pr-creation",
       "lane": "publication",
       "priority": 1,
-      "state": "verification-pending",
-      "blocker": "The repository Actions PR-creation setting was explicitly authorized, enabled and read back on 2026-10-20. A successful new automated PR still needs verification.",
-      "retryWhen": "After reserved old automatic branches are safely resolved, verify a coordinator-created draft PR and exact-head checks without auto-approval.",
-      "url": "https://github.com/JeremyHennessy/HalifaxSourced/actions/workflows/promote-preview-artifacts.yml"
+      "state": "verified",
+      "blocker": null,
+      "url": "https://github.com/JeremyHennessy/HalifaxSourced/actions/runs/39457128592",
+      "verifiedAt": "2026-10-20",
+      "evidence": "Coordinator run 39457128592 successfully created draft PRs 121 and 122; social lane reserved behind active source-expansion review. Creation success is not data approval. PR 121 remains independently reviewed; PR 122 remains held for identity/source review.",
+      "receipts": [
+        "https://github.com/JeremyHennessy/HalifaxSourced/pull/121",
+        "https://github.com/JeremyHennessy/HalifaxSourced/pull/122"
+      ]
     },
     {
       "id": "inspection-address-evidence",

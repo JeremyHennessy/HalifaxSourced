@@ -85,6 +85,7 @@ jobs:
           node scripts/test-promotion-semantic-noop.mjs
           node scripts/test-preview-coordinator.mjs
           node scripts/test-reviewed-fact-batch.mjs
+          node scripts/test-regional-restaurants.mjs
 
       - name: Test source name decoding
         run: node scripts/test-dartmouth-directory-names.mjs
@@ -206,9 +207,12 @@ jobs:
           node scripts/report-missed-local-restaurants.mjs
           node scripts/build-deployment-metadata.mjs
           node scripts/build-update-ledger.mjs
+          node scripts/check-regional-restaurant-coverage.mjs
 
       - name: Build SQLite database artifacts
-        run: python3 scripts/build-sqlite-db.py
+        run: |
+          python3 scripts/build-sqlite-db.py
+          python3 scripts/test-sqlite-catalog.py
 
       - name: Test immutable release receipts
         run: node scripts/test-release-artifact.mjs
@@ -288,6 +292,7 @@ jobs:
             artifacts/missed-local-restaurant-candidates.json
             data/build/deployment-metadata.json
             data/build/update-ledger.json
+            data/build/regional-restaurant-coverage-report.json
           if-no-files-found: ignore
 
   ui-verification:
@@ -349,6 +354,7 @@ jobs:
           node scripts/test-map-tile-controls.mjs
           node scripts/verify-ui.mjs
           node scripts/verify-reviewed-corrections.mjs
+          node scripts/verify-regional-restaurants.mjs
           node scripts/verify-admin-status.mjs
           node scripts/verify-iphone-links.mjs
           node scripts/test-explore-minimap-lifecycle.mjs

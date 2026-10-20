@@ -1,0 +1,70 @@
+import assert from 'node:assert/strict';
+import { readFile } from 'node:fs/promises';
+import vm from 'node:vm';
+import identity from '../app-restaurant-identity.js';
+import lifecycle from '../restaurant-corrections.js';
+const place = (id, address, extra = {}) => ({ id, name:'Example Cafe', address, website:'https://brand.example/', ...extra });
+const a = place('original', '10 Main Street, Dartmouth');
+assert.equal(identity.decide(a, place('other', '11 Main Street, Dartmouth')).state, 'distinct');
+assert.equal(identity.decide(a, place('other', '10 Main Road, Dartmouth')).state, 'distinct');
+assert.equal(identity.decide(a, place('other', '10 Main Street, Sackville')).state, 'review');
+assert.equal(identity.decide(a, place('other', '')).state, 'review');
+assert.equal(identity.decide(place('a', '10 Main Street'), place('b', '10 Main Street, Dartmouth')).state, 'review');
+assert.equal(identity.decide(place('a', '10 Main Street'), place('b', '10 Main Street')).state, 'review');
+assert.equal(identity.decide(place('a', '10 Main Street, Unit 1, Dartmouth'), place('b', '10 Main Street, Unit 2, Dartmouth')).state, 'distinct');
+const raw = (id, tags) => place(id, '10 Main Street', { osm:{ rawTags:tags } });
+assert.equal(identity.decide(raw('a', { 'addr:unit':'1', 'addr:city':'Dartmouth' }), raw('b', { 'addr:unit':'2', 'addr:city':'Dartmouth' })).state, 'distinct');
+assert.equal(identity.decide(raw('a', { 'addr:city':'Dartmouth' }), raw('b', { 'addr:city':'Sackville' })).state, 'review');
+assert.equal(identity.decide(place('a', '1-10 Main Street, Dartmouth'), place('a', '2-10 Main Street, Dartmouth')).state, 'review');
+assert.equal(identity.decide(a, place('original', '20 Main Street, Dartmouth')).state, 'review');
+assert.equal(identity.decide(a, place('other', a.address, { name:'Different Business' })).state, 'distinct');
+assert.equal(identity.decide(place('a', '', { coordinates:{lat:44.6,lon:-63.5} }), place('b', '', {coordinates:{lat:44.8,lon:-63.8}})).state, 'distinct');
+const aliases = [{ from:'alias', to:'original', reviewedAt:'2026-10-20', reason:'Owner confirms exact same location', sourceUrl:'https://brand.example/contact' }];
+const incoming = place('alias', a.address, {name:'Former Name',sources:[{type:'restaurant_site',url:'https://brand.example/contact'}]});
+const decision = identity.find([a], incoming, aliases);
+assert.equal(decision.state, 'match');
+const merged = identity.merge(structuredClone(a), incoming, decision);
+assert.equal(merged.id, 'original');
+assert(merged.aliasIds.includes('alias'));
+assert.equal(merged.mergedIdentityEvidence[0].reviewedAlias.sourceUrl, aliases[0].sourceUrl);
+assert.equal(identity.decide(a, {...incoming,address:'20 Main Street, Dartmouth'},aliases).state,'review');
+const seasonal = {operatingStatus:'active',lifecycleSchedule:{seasonEndsOn:'2026-10-25'}};
+assert.equal(lifecycle.status(seasonal,new Date('2026-10-26T02:59:59Z')),'active','Season closes after October25 in Halifax, not UTC');
+assert.equal(lifecycle.status(seasonal,new Date('2026-10-26T03:00:00Z')),'seasonally_closed');
+assert.equal(lifecycle.status(seasonal,new Date('2027-06-01T12:00:00Z')),'seasonally_closed','No invented next-year reopening');
+assert(!lifecycle.isActive({operatingStatus:'seasonally_closed'}));
+assert.equal(lifecycle.status({...seasonal,operatingStatus:'permanently_closed'},new Date('2026-10-26T12:00:00Z')),'permanently_closed');
+
+const root = new URL('../', import.meta.url);
+const catalog = JSON.parse(await readFile(new URL('data/build/catalog.json',root)));
+const regional = JSON.parse(await readFile(new URL('data/reviewed-regional-restaurants.json',root)));
+const savedWrites=[];
+const context = vm.createContext({window:{},document:{querySelector:()=>({}),querySelectorAll:()=>[]},localStorage:{getItem:()=>JSON.stringify(['matadora-tapas-bar-halifax','osm-node-37132554-press-gang']),setItem:(key,value)=>savedWrites.push(value)},console,URL,Date,Intl,Set,Map});
+const html = await readFile(new URL('index.html',root),'utf8');
+for(const match of html.matchAll(/<script src="\.\/([^"?]+)[^"]*"><\/script>/g)) {
+  const file=match[1]; if(file.startsWith('vendor/'))continue;
+  vm.runInContext(await readFile(new URL(file,root),'utf8'),context,{filename:file,timeout:60000});
+  if(file==='app-source-signals.js') vm.runInContext(`{const r=restaurants.find(item=>item.id==='tuna-blue-hubbards');if(r){r.openingHours='Mo-Su 00:00-24:00';r.hasOpening=true;r.hasMenu=true;r.menuLinks=[{url:'https://example.com/stale'}];}}`,context);
+  if(file==='app-lifecycle.js')break;
+}
+const browser=JSON.parse(vm.runInContext('JSON.stringify(restaurants)',context));
+assert.deepEqual(browser.map(r=>r.id).sort(),catalog.restaurants.map(r=>r.id).sort(),'Runtime/export identity parity');
+assert.deepEqual(JSON.parse(JSON.stringify(context.window.__halifaxIdentityReviewQueue)),catalog.identityReviewQueue);
+for(const accepted of regional.accepted){
+  const published=catalog.restaurants.find(r=>r.id===accepted.id);const runtime=browser.find(r=>r.id===accepted.id);
+  assert(published&&runtime,accepted.id);
+  for(const field of ['name','address','website','operatingStatus','openingHours','coordinates']) assert.equal(JSON.stringify(runtime[field]),JSON.stringify(published[field]),accepted.id+':'+field);
+  assert.equal(runtime.hasOpening,false,'Established restaurant is not a new-opening claim: '+accepted.id);
+  assert.equal(published.coordinates,null,'No guessed location centroid: '+accepted.id);
+}
+for(const name of ["Antoinette's Cheesecakes",'Apartment 3 Espresso Bar']) {
+  const records=browser.filter(r=>r.name===name);assert.equal(records.length,name.startsWith('Antoinette')?3:2);assert.equal(new Set(records.map(r=>r.address)).size,records.length);
+}
+const tuna=browser.find(r=>r.id==='tuna-blue-hubbards');assert.equal(tuna.operatingStatus,'seasonally_closed');assert.equal(tuna.openingHours,null);assert.equal(tuna.hasMenu,false);assert.equal(tuna.hasOpening,false);assert.equal(tuna.menuLinks.length,0);
+assert.equal(browser.find(r=>r.id==='field-guide').operatingStatus,'permanently_closed');
+assert.equal(savedWrites.length,1,'Merged legacy bookmarks persist once');
+assert.deepEqual(JSON.parse(savedWrites[0]).sort(),['osm-node-13286396472-matadora-tapas-bar','the-press-gang'].sort());
+assert.equal(identity.decide({name:'Big Wedge',address:''},{name:'Big Wedge',address:'5019 Highway 7, Porters Lake'}).state,'review');
+const builder=await readFile(new URL('scripts/build-discovered-restaurants.mjs',root),'utf8');assert(!builder.includes('item.vibe || ["new opening"]'));
+const explore=await readFile(new URL('app-explore.js',root),'utf8');assert(!explore.includes('liveNeighbourhoods.slice(0, 24)'));
+console.log('Regional regressions passed: branch/unit/city isolation, evidence aliases, ambiguous identity holds, lifecycle dates, runtime/export parity, bookmarks, and established discovery flags.');

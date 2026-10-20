@@ -114,53 +114,22 @@ const verifiedSpecialSourcesByRestaurant = groupVerifiedSources(verifiedSpecialS
 
 function mergeRestaurantLayers() {
   const merged = curatedRestaurants.map((restaurant) => ({ ...restaurant, sourceLayer: "curated" }));
-  const byName = new Map(merged.map((restaurant) => [normalize(restaurant.name), restaurant]));
-
+  const curatedTargets = [...merged];
+  window.__halifaxIdentityReviewQueue = [];
   for (const osm of osmRestaurants) {
-    const key = normalize(osm.name);
-    const existing = byName.get(key);
-    if (!existing) {
-      merged.push({ ...osm, sourceLayer: "openstreetmap" });
+    const decision = window.HalifaxRestaurantIdentity.find(curatedTargets, osm, window.HALIFAX_RESTAURANT_CORRECTIONS?.aliases || []);
+    if (decision.state === "review") {
+      window.__halifaxIdentityReviewQueue.push({ sourceId: osm.id, name: osm.name, reason: decision.reason, candidateIds: decision.candidateIds || [] });
       continue;
     }
-    existing.category ||= osm.category;
-    existing.cuisines = unique([...(existing.cuisines || []), ...(osm.cuisines || [])]);
-    existing.vibe = unique([...(existing.vibe || []), ...(osm.vibe || [])]);
-    existing.address ||= osm.address;
-    existing.phone ||= osm.phone;
-    existing.website ||= osm.website;
-    existing.openingHours ||= osm.openingHours;
-    existing.coordinates ||= osm.coordinates;
-    existing.osm ||= osm.osm;
-    existing.sources = mergeSources(existing.sources, osm.sources);
+    if (decision.state === "match") window.HalifaxRestaurantIdentity.merge(decision.record, osm, decision);
+    else merged.push({ ...osm, sourceLayer: "openstreetmap" });
   }
   return merged.map((restaurant) => enrichRestaurant(applyReviewedPlaceResolution(restaurant)));
 }
 
 function applyReviewedPlaceResolution(restaurant) {
-  const resolution = reviewedPlaceResolutionById.get(restaurant?.id);
-  if (!resolution) return restaurant;
-  const source = {
-    label: "Reviewed neighbourhood resolution",
-    type: "business_district_directory",
-    url: resolution.sourceUrl,
-    status: resolution.reviewState,
-    observedAt: resolution.observedAt
-  };
-  restaurant.neighborhood = resolution.neighborhood || restaurant.neighborhood;
-  restaurant.address ||= resolution.address;
-  restaurant.coordinates ||= resolution.coordinates;
-  restaurant.phone ||= resolution.phone;
-  restaurant.openingHours ||= resolution.openingHours;
-  restaurant.website ||= resolution.website;
-  restaurant.socialProfiles = [...(restaurant.socialProfiles || []), ...(resolution.socialProfiles || [])];
-  restaurant.operatingStatus = resolution.operatingStatus || restaurant.operatingStatus;
-  restaurant.reviewedPlaceResolution = resolution;
-  restaurant.sources = mergeSources(restaurant.sources, [
-    source,
-    ...(resolution.menuUrl ? [{ label: "Official menu", type: "menu", url: resolution.menuUrl, status: "verified", observedAt: resolution.observedAt }] : [])
-  ]);
-  return restaurant;
+  return window.HalifaxRestaurantIdentity.applyResolution(restaurant, reviewedPlaceResolutions);
 }
 
 function unique(values) {
@@ -286,7 +255,7 @@ function enrichRestaurant(restaurant) {
 }
 
 function isRestaurantActive(restaurant) {
-  return !["permanently_closed", "temporarily_closed", "moved", "replaced"].includes(restaurant?.operatingStatus);
+  return HalifaxRestaurantCorrections.isActive(restaurant);
 }
 
 function sourceCoverageScore(restaurant, signal, inspections) {

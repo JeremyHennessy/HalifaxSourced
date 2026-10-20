@@ -1,4 +1,21 @@
 @media (max-width:640px){
+  .map-community-control{
+    margin:0 14px 12px;
+    min-width:0;
+  }
+
+  .map-community-control select,
+  .map-mode-switch button{
+    min-height:44px;
+  }
+
+  .map-coordinate-note{
+    margin:0 14px 14px;
+    font-size:12px;
+    line-height:1.5;
+    color:var(--muted);
+  }
+
   .filters-panel[data-filter-drawer]{
     bottom:var(--mobile-tabbar-h)!important;
     height:calc(100dvh - var(--mobile-tabbar-h))!important;

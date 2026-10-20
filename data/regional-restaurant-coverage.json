@@ -1,0 +1,397 @@
+{
+  "version": 1,
+  "observedAt": "2026-10-20",
+  "scope": {
+    "primary": "Entire Halifax Regional Municipality, not just Halifax postal city or Halifax Metro tourism region.",
+    "boundaryAuthority": "https://www.halifax.ca/city-hall/elections/district-boundaries",
+    "boundaryRule": "Use the current HRM municipality/community polygons for exact edge decisions; district names organize work, not consumer-facing location assertions. The subcommunity lists below are a practical audit checklist, not an exhaustive municipal gazetteer or exact district assignment.",
+    "adjacentCandidateAreas": [
+      {
+        "area": "Enfield, Elmsdale, Lantz, Milford, Shubenacadie, Mount Uniacke",
+        "municipality": "East Hants / boundary-specific",
+        "recommendation": "Separate nearby-communities lane. Enfield postal naming crosses the HRM boundary; confirm civic location, not name alone."
+      },
+      {
+        "area": "Hubbards west side, Fox Point, Mill Cove, Bayswater, Blandford, Chester",
+        "municipality": "Municipality of Chester / boundary-specific",
+        "recommendation": "Keep separate from HRM until intended surrounding-area boundary is settled; do not use a South Shore tourism tag as municipal proof."
+      },
+      {
+        "area": "Windsor and Hantsport",
+        "municipality": "West Hants",
+        "recommendation": "More distant optional expansion, not an automatic consequence of an HRM local operator’s second location."
+      }
+    ]
+  },
+  "baseline": {
+    "catalogGeneratedAt": "2026-10-20 T 15:27:26.684 Z",
+    "canonicalCount": 578,
+    "inactiveExplicitCount": 10,
+    "withAddress": 412,
+    "withCoordinates": 551,
+    "withWebsite": 250,
+    "neighborhoodLabels": {
+      "North End": 83,
+      "Waterfront": 31,
+      "Downtown": 203,
+      "Dartmouth": 63,
+      "West End": 40,
+      "Armdale / Fairview": 42,
+      "South End": 61,
+      "Halifax Peninsula": 26,
+      "Bayers Lake Business Park": 4,
+      "Bedford": 4,
+      "Regency Park": 1,
+      "Downtown Dartmouth": 11,
+      "Lower Sackville": 1,
+      "West Bedford": 1,
+      "Quinpool": 1,
+      "Bayers Lake": 1,
+      "Fairview": 1,
+      "Downtown Halifax": 2,
+      "Dartmouth Crossing": 1,
+      "Spring Garden": 1
+    },
+    "osmBoundingBox": {
+      "south": 44.575,
+      "west": -63.69,
+      "north": 44.705,
+      "east": -63.505
+    },
+    "inspectionSearchCities": [
+      "Halifax",
+      "Dartmouth",
+      "Bedford"
+    ],
+    "directoryCandidates": 769,
+    "directorySnapshotAt": "2026-09-04 T 14:51:31.056 Z",
+    "resolutionSnapshotAt": "2026-10-06 T 02:02:00.615 Z",
+    "resolutionStates": {
+      "resolved_high": 68,
+      "non_name_evidence_review": 140,
+      "unresolved": 427,
+      "unresolved_conflict": 74,
+      "name_only_review": 36,
+      "resolved_probable": 19,
+      "review_conflict": 5
+    },
+    "note": "578 includes archived records and substantial unknown fields. Neighborhood labels are not geographic coverage percentages.670 of 769 candidates are merely not excluded by the current chain policy, not proven independent restaurants."
+  },
+  "districts": [
+    {
+      "district": 1,
+      "name": "Waverley – Fall River – Musquodoboit Valley",
+      "subcommunityAuditChecklist": [
+        "Waverley",
+        "Fall River",
+        "Wellington",
+        "Fletchers Lake",
+        "Grand Lake",
+        "Oakfield",
+        "Goffs / airport",
+        "Oldham",
+        "Dutch Settlement",
+        "Middle Musquodoboit",
+        "Upper Musquodoboit"
+      ],
+      "priority": 1,
+      "baselineFinding": "No explicit neighborhood entries; northern candidates being verified.",
+      "sourcePlan": "NS inspection community searches + Tourism NS/RANS + owner sites",
+      "status": "partial_not_exhausted"
+    },
+    {
+      "district": 2,
+      "name": "Lawrencetown – The Lakes – Chezzetcook – Eastern Shore",
+      "subcommunityAuditChecklist": [
+        "Lawrencetown",
+        "Lake Echo",
+        "Porters Lake",
+        "Mineville",
+        "East / West Chezzetcook",
+        "Musquodoboit Harbour",
+        "Head of Jeddore",
+        "Oyster Pond",
+        "Lake Charlotte",
+        "Clam Harbour",
+        "Ship Harbour",
+        "Tangier",
+        "Sheet Harbour",
+        "Moser River / Ecum Secum boundary"
+      ],
+      "priority": 1,
+      "baselineFinding": "No explicit neighborhood entries; coastal candidate batch covers only selected hubs. Eastern Shore remainder is not exhausted.",
+      "sourcePlan": "NS inspection community searches + Tourism NS Eastern Shore listings + owner sites",
+      "status": "partial_not_exhausted"
+    },
+    {
+      "district": 3,
+      "name": "Dartmouth South – Woodside – Eastern Passage",
+      "subcommunityAuditChecklist": [
+        "Woodside",
+        "Southdale",
+        "Portland Estates / Baker Drive",
+        "Eastern Passage",
+        "Cow Bay"
+      ],
+      "priority": 1,
+      "baselineFinding": "Dartmouth umbrella has records, but Eastern Passage/Cow Bay are unrepresented by explicit labels.",
+      "sourcePlan": "Dartmouth inspection search + Eastern Passage/Cow Bay searches + Fisherman’s Cove / owner sites",
+      "status": "partial_not_exhausted"
+    },
+    {
+      "district": 4,
+      "name": "Cole Harbour – Preston – Westphal – Cherry Brook",
+      "subcommunityAuditChecklist": [
+        "Cole Harbour",
+        "Westphal",
+        "Cherry Brook",
+        "Lake Loon",
+        "North Preston",
+        "East Preston"
+      ],
+      "priority": 1,
+      "baselineFinding": "Some Dartmouth-labelled records may be in this district; exact address/polygon reconciliation needed.",
+      "sourcePlan": "Dartmouth/Cole Harbour/Preston inspection searches + local tourism + owner sites",
+      "status": "partial_not_exhausted"
+    },
+    {
+      "district": 5,
+      "name": "Dartmouth Centre",
+      "subcommunityAuditChecklist": [
+        "Downtown Dartmouth",
+        "Alderney",
+        "Dartmouth Common",
+        "Dartmouth waterfront"
+      ],
+      "priority": 3,
+      "baselineFinding": "Dartmouth and Downtown Dartmouth labels have 74 combined records, not district counts.",
+      "sourcePlan": "Downtown Dartmouth BIA + Dartmouth inspections + OSM existing snapshot + owners",
+      "status": "partial_not_exhausted"
+    },
+    {
+      "district": 6,
+      "name": "Dartmouth East – Burnside",
+      "subcommunityAuditChecklist": [
+        "Burnside",
+        "Dartmouth Crossing",
+        "Dartmouth East",
+        "Woodlawn / Mic Mac vicinity"
+      ],
+      "priority": 2,
+      "baselineFinding": "Dartmouth umbrella plus only 1 explicit Dartmouth Crossing label. Additional distinct brand outlets must be resolved.",
+      "sourcePlan": "Dartmouth inspection search + Tourism NS location pages + business-park / owners",
+      "status": "partial_not_exhausted"
+    },
+    {
+      "district": 7,
+      "name": "Halifax South Downtown",
+      "subcommunityAuditChecklist": [
+        "Downtown Halifax",
+        "Waterfront",
+        "Spring Garden",
+        "South End"
+      ],
+      "priority": 3,
+      "baselineFinding": "Large existing core coverage; lifecycle, missing address and same-brand checks remain.",
+      "sourcePlan": "DHBC + Spring Garden BIA + Halifax inspections + OSM existing snapshot + owners",
+      "status": "partial_not_exhausted"
+    },
+    {
+      "district": 8,
+      "name": "Halifax Peninsula North",
+      "subcommunityAuditChecklist": [
+        "North End",
+        "Hydrostone",
+        "Agricola / Gottingen",
+        "North peninsula"
+      ],
+      "priority": 3,
+      "baselineFinding": "83 North End labels, not a completeness denominator.",
+      "sourcePlan": "Halifax inspections + owner sites + existing OSM + current openings review",
+      "status": "partial_not_exhausted"
+    },
+    {
+      "district": 9,
+      "name": "Halifax West – Armdale",
+      "subcommunityAuditChecklist": [
+        "West End",
+        "Quinpool",
+        "Armdale",
+        "Dutch Village Road edges"
+      ],
+      "priority": 3,
+      "baselineFinding": "40 West End and 42 Armdale/Fairview labels; mixed area labels need later normalization.",
+      "sourcePlan": "Quinpool BIA + Halifax inspections + existing OSM + owners",
+      "status": "partial_not_exhausted"
+    },
+    {
+      "district": 10,
+      "name": "Halifax – Bedford Basin West",
+      "subcommunityAuditChecklist": [
+        "Fairview",
+        "Rockingham",
+        "Bedford Basin west",
+        "Clayton Park east"
+      ],
+      "priority": 2,
+      "baselineFinding": "Current Armdale/Fairview catchall mixes real communities; some unaddressed Bedford-area rows are mislabeled.",
+      "sourcePlan": "Halifax/Bedford inspections + Tourism NS + owners; municipal community geometry",
+      "status": "partial_not_exhausted"
+    },
+    {
+      "district": 11,
+      "name": "Spryfield – Sambro Loop",
+      "subcommunityAuditChecklist": [
+        "Spryfield",
+        "Herring Cove",
+        "Harrietsfield",
+        "Williamswood",
+        "Ketch Harbour",
+        "Portuguese Cove",
+        "Duncans Cove",
+        "Sambro",
+        "Sambro Creek",
+        "East / West Pennant"
+      ],
+      "priority": 1,
+      "baselineFinding": "Spryfield Herring Cove Road listings currently mislabeled South End; PAVIA Herring Cove missing.",
+      "sourcePlan": "Halifax/Herring Cove/Sambro/locality inspections + Tourism NS + owners",
+      "status": "partial_not_exhausted"
+    },
+    {
+      "district": 12,
+      "name": "Timberlea – Beechville – Clayton Park – Wedgewood",
+      "subcommunityAuditChecklist": [
+        "Timberlea",
+        "Beechville",
+        "Lakeside",
+        "Bayers Lake",
+        "Clayton Park west",
+        "Wedgewood"
+      ],
+      "priority": 1,
+      "baselineFinding": "Bayers Lake labels have 5 combined records. Timberlea/other hubs need geographic audit beyond core box.",
+      "sourcePlan": "Bayers Lake BIA + Halifax/Timberlea/Lakeside inspection searches + owner sites",
+      "status": "partial_not_exhausted"
+    },
+    {
+      "district": 13,
+      "name": "Prospect Road – St. Margarets",
+      "subcommunityAuditChecklist": [
+        "Goodwood",
+        "Prospect",
+        "Prospect Bay",
+        "Hatchet Lake",
+        "Terence Bay",
+        "Shad Bay",
+        "Bayside",
+        "Brookside",
+        "Upper Tantallon",
+        "Tantallon",
+        "Hubley",
+        "Lewis Lake",
+        "Glen Haven",
+        "Glen Margaret",
+        "Indian Harbour",
+        "Peggys Cove",
+        "Hacketts Cove",
+        "Boutiliers Point",
+        "Ingramport",
+        "Black Point",
+        "Queensland",
+        "Hubbards HRM side"
+      ],
+      "priority": 1,
+      "baselineFinding": "Coastal candidate batch only starts coverage; Goodwood existing row is mislabeled Armdale/Fairview.",
+      "sourcePlan": "NS inspections by locality + Tourism NS South Shore listings + owner sites; HRM boundary check at Hubbards",
+      "status": "partial_not_exhausted"
+    },
+    {
+      "district": 14,
+      "name": "Hammonds Plains – Upper Hammonds Plains – Lucasville – Middle & Upper Sackville",
+      "subcommunityAuditChecklist": [
+        "Hammonds Plains",
+        "Upper Hammonds Plains",
+        "Lucasville",
+        "Middle Sackville",
+        "Upper Sackville"
+      ],
+      "priority": 1,
+      "baselineFinding": "No explicit neighborhood entries before batch; some Sackville BIA rows incorrectly default to Lower Sackville.",
+      "sourcePlan": "Sackville BIA + community inspection searches + RANS + owners",
+      "status": "partial_not_exhausted"
+    },
+    {
+      "district": 15,
+      "name": "Lower Sackville – Beaver Bank",
+      "subcommunityAuditChecklist": [
+        "Lower Sackville",
+        "Beaver Bank",
+        "Kinsac"
+      ],
+      "priority": 1,
+      "baselineFinding": "Only 1 explicit Lower Sackville record, Casa di Stefano. Existing Sackville directories supply many review leads.",
+      "sourcePlan": "Sackville BIA current directory (not stale guide alone) + community inspections + owners",
+      "status": "partial_not_exhausted"
+    },
+    {
+      "district": 16,
+      "name": "Bedford – Wentworth",
+      "subcommunityAuditChecklist": [
+        "Bedford",
+        "West Bedford",
+        "Sunnyside",
+        "Mill Cove",
+        "Larry Uteck / Wentworth"
+      ],
+      "priority": 1,
+      "baselineFinding": "5 explicit Bedford/West Bedford entries; Morris East unaddressed OSM likely already represents Bedford outlet.",
+      "sourcePlan": "Bedford inspections + Bedford BIA/mall + Tourism NS + owner sites",
+      "status": "partial_not_exhausted"
+    }
+  ],
+  "sourceGaps": [
+    {
+      "source": "OpenStreetMap",
+      "state": "Existing snapshot limited to small core bounding box",
+      "action": "Governed named-area or tiled-HRM discovery with original attribution and rate/robots restrictions; do not retry known Overpass denial without new permission/evidence."
+    },
+    {
+      "source": "NS food inspections",
+      "state": "Only Halifax,Dartmouth,Bedford queried",
+      "action": "Expand explicit locality search manifest with source result counts and as-of timestamps; retain old snapshots on partial source failures. Facilities include non-restaurants, so classification/manual review remains necessary."
+    },
+    {
+      "source": "Tourism Nova Scotia",
+      "state": "Importer filters Region=Halifax Metro and bounded pages",
+      "action": "Consider HRM portions of Eastern Shore/South Shore and source exhaustion marker; filter by verified municipality/community evidence, not tourism region alone."
+    },
+    {
+      "source": "RANS",
+      "state": "Search community list has only 12 terms",
+      "action": "Expand exact HRM locality vocabulary and reject corrupted address parser outputs. Existing records contain narrative fragments in civic fields."
+    },
+    {
+      "source": "Taste of Nova Scotia",
+      "state": "HRM allowlist only 14 terms",
+      "action": "Add boundary-confirmed rural communities and review each owner location."
+    },
+    {
+      "source": "Sackville BIA",
+      "state": "Current directory and old feature guide disagree",
+      "action": "Use current detail + owner evidence. Guide still contains legacy COVID language and old tenants; never publish wholesale."
+    },
+    {
+      "source": "Blocked sources",
+      "state": "YellowPages disabled 403; HappyCow/Yelp not approved adapters; Discover Halifax adapter pending",
+      "action": "Preserve disabled state. Manual permitted tourism/editorial pages can support a specific review, not silently activate a bulk adapter."
+    }
+  ],
+  "completionCriteria": [
+    "All 16 official district audit lanes plus boundary candidates have an explicit scope and source-attempt record, including failures and no-result communities.",
+    "Every candidate in the current agreed source union has a disposition: published canonical location, existing identity/alias, excluded non-local/non-restaurant/outside scope, seasonal/inactive, or held with exact missing evidence.",
+    "Published locations have location-specific owner or authoritative evidence, stable IDs, source dates, conservative hours/menu links, correct locality and lifecycle. Different branches survive same-name/domain matches.",
+    "Browser, exported catalog, SQLite/report artifacts and discovery filters expose the same accepted locations. No false new-opening flags, fabricated coordinates, ratings, photos or open-now claims.",
+    "An initial release can report a bounded verified increase and named remaining gaps. Never claim every regional restaurant is captured from a finite, non-exhaustive directory union."
+  ]
+}

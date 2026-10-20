@@ -103,6 +103,10 @@ function initMainMap(items) {
     state.mapMarkers.set(restaurant.id, marker);
     count += 1;
   }
+  if (state.neighbourhood !== "all" && count) {
+    const bounds = L.latLngBounds([...state.mapMarkers.values()].map(marker => marker.getLatLng()));
+    map.fitBounds(bounds, { padding: [30, 30], maxZoom: 15, animate: false });
+  }
   window.__halifaxMapMarkerCount = count;
   state.map = map;
   state.mapLayer = layer;

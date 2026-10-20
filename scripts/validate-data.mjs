@@ -16,7 +16,7 @@ const errors = [];
 const ids = new Set();
 const requiredFields = ["id", "name", "neighborhood", "cuisines", "vibe", "qualityScore", "freshnessDate", "evidenceStatus", "sources"];
 const statuses = new Set(["verified", "needs-review", "restricted"]);
-const operatingStatuses = new Set(["active", "temporarily_closed", "permanently_closed", "moved", "coming_soon", "unknown"]);
+const operatingStatuses = new Set(["active", "seasonally_closed", "temporarily_closed", "permanently_closed", "moved", "coming_soon", "unknown"]);
 const nsFoodInspections = context.window.HALIFAX_NS_FOOD_INSPECTIONS ?? null;
 const officialSiteSignals = context.window.HALIFAX_OFFICIAL_SITE_SIGNALS ?? null;
 const localPolicyExcluded = { curated: 0, openstreetmap: 0 };
@@ -53,7 +53,7 @@ for (const { label, records } of groups) {
 
     if (!statuses.has(restaurant.evidenceStatus)) errors.push(`${restaurant.id} has invalid evidenceStatus: ${restaurant.evidenceStatus}`);
     if (label === "curated" && !operatingStatuses.has(restaurant.operatingStatus)) errors.push(`${restaurant.id} has invalid or missing operatingStatus: ${restaurant.operatingStatus}`);
-    if (["temporarily_closed", "permanently_closed", "moved"].includes(restaurant.operatingStatus)) {
+    if (["seasonally_closed", "temporarily_closed", "permanently_closed", "moved"].includes(restaurant.operatingStatus)) {
       const evidence = restaurant.operatingStatusEvidence;
       if (!evidence?.claim || !evidence?.location || !evidence?.sourceUrl || !evidence?.verifiedAt) errors.push(`${restaurant.id} requires claim, location, sourceUrl, and verifiedAt operating-status evidence.`);
       if (restaurant.operatingStatus === "permanently_closed" && !restaurant.closureDate) errors.push(`${restaurant.id} requires closureDate when permanently closed.`);

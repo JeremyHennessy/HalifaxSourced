@@ -7,7 +7,7 @@ const load = async (name, fallback) => JSON.parse(await readFile(new URL('../dat
 const catalog = await load('catalog', {restaurants:[]}), firstParty = await load('first-party-sources', {records:[]}), facts = await load('structured-place-facts', {records:[]}), city = await load('city-events', {events:[]});
 const release = process.env.LINK_HEALTH_SCOPE === 'release';
 const timeoutMs = Number(process.env.LINK_HEALTH_TIMEOUT_MS || 8000), concurrency = Math.max(1, Math.min(20, Number(process.env.LINK_HEALTH_CONCURRENCY || 10))), limit = Number(process.env.LINK_HEALTH_LIMIT ?? 1500);
-const inactive = new Set(['permanently_closed','temporarily_closed','moved','replaced']);
+const inactive = new Set(['permanently_closed','seasonally_closed', 'seasonally_closed','temporarily_closed','moved','replaced']);
 const activeIds = new Set(catalog.restaurants.filter(item => !inactive.has(item.operatingStatus)).map(item => item.id));
 const urls = new Map();
 function add(value, kind, id) {

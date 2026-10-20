@@ -22,7 +22,7 @@ function renderExplore() {
       <aside class="filters-panel" id="exploreFilters" data-filter-drawer aria-label="Restaurant filters">
         <div class="filter-title"><h2>Filters</h2><div class="filter-title-actions"><button type="button" data-clear-filters>Clear all</button><button class="filter-close" type="button" data-close-filters aria-label="Close filters">×</button></div></div>
         ${filterSelect("Cuisine", "cuisineFilter", state.cuisine, [["all", "All cuisines"], ...liveCuisines.slice(0, 24).map(([name, count]) => [name, `${name} (${count})`])])}
-        ${filterSelect("Neighbourhood", "neighbourhoodFilter", state.neighbourhood, [["all", "All neighbourhoods"], ...liveNeighbourhoods.slice(0, 24).map(([name, count]) => [name, `${name} (${count})`])])}
+        ${filterSelect("Neighbourhood", "neighbourhoodFilter", state.neighbourhood, [["all", "All neighbourhoods"], ...liveNeighbourhoods.sort((a, b) => a[0].localeCompare(b[0])).map(([name, count]) => [name, `${name} (${count})`])])}
         ${filterSelect("Feature", "featureFilter", state.feature, [["all", "All places"], ["menus", "Menu link"], ["specials", "Special signal"], ["events", "Event signal"], ["patio", "Patio"], ["opening", "New / opening"], ["social", "Official social profiles"], ["reservations", "Reservations"], ["ordering", "Online ordering"]])}
         <button class="button primary filter-apply" type="button" data-filter-apply>Apply filters</button>
       </aside>

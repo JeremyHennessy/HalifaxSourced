@@ -1,5 +1,16 @@
 /* Reviewed, location-specific corrections survive subsequent source refreshes. */
 (function (root) {
+  const inactiveStatuses = new Set(['permanently_closed', 'temporarily_closed', 'seasonally_closed', 'moved', 'replaced']);
+  function status(record, date = new Date()) {
+    const schedule = record?.lifecycleSchedule;
+    if (schedule?.seasonEndsOn && /^\d{4}-\d{2}-\d{2}$/.test(schedule.seasonEndsOn)) {
+      const values = Object.fromEntries(new Intl.DateTimeFormat('en-CA', { timeZone: 'America/Halifax', year: 'numeric', month: '2-digit', day: '2-digit' }).formatToParts(date).map(part => [part.type, part.value]));
+      const today = `${values.year}-${values.month}-${values.day}`;
+      if (today > schedule.seasonEndsOn && !inactiveStatuses.has(record.operatingStatus)) return 'seasonally_closed';
+    }
+    return record?.operatingStatus || 'unknown';
+  }
+  function isActive(record, date = new Date()) { return !inactiveStatuses.has(status(record, date)); }
   function apply(records, payload, makeRecord = value => value) {
     for (const addition of payload.additions || []) {
       if (!records.some(record => record.id === addition.id)) records.push(makeRecord(JSON.parse(JSON.stringify(addition))));
@@ -25,7 +36,14 @@
       record.sources.push(evidence);
       if (correction.fields.operatingStatus) record.operatingStatusEvidence = { ...evidence, sourceUrl: correction.sourceUrl, claim: correction.claim, location: record.address || correction.location, reviewState: 'verified', effectiveDate: correction.effectiveDate || null };
     }
-    for (const record of records) if (['permanently_closed', 'temporarily_closed', 'moved', 'replaced'].includes(record.operatingStatus)) record.openingHours = null;
+    for (const record of records) {
+      const currentStatus = status(record);
+      if (currentStatus !== record.operatingStatus && currentStatus === 'seasonally_closed') {
+        record.operatingStatus = currentStatus;
+        record.operatingStatusEvidence = record.lifecycleSchedule.evidence;
+      }
+      if (!isActive(record)) record.openingHours = null;
+    }
     return records;
   }
   // A rejected source field is held until an explicit location review removes
@@ -48,7 +66,7 @@
       return result;
     });
   }
-  const api = { apply, applyFactFieldRejections };
+  const api = { apply, applyFactFieldRejections, status, isActive, inactiveStatuses };
   root.HalifaxRestaurantCorrections = api;
   if (typeof module !== 'undefined') module.exports = api;
 })(globalThis);

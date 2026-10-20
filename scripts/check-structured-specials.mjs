@@ -55,9 +55,9 @@ const rawOrphanSources = Array.isArray(payload.orphanSources) ? payload.orphanSo
 const orphanSources = rawOrphanSources.filter((record) => !excludedByLocalPolicy(record, localPolicyExcludedIds));
 const localPolicyExcludedRecords = rawRecords.length - records.length;
 const localPolicyExcludedOrphans = rawOrphanSources.length - orphanSources.length;
-const catalogByName = new Map((catalog.restaurants || []).map((restaurant) => [normalizeName(restaurant.name), restaurant.id]));
-const discoveredIds = (discoveryOverrides.approved || []).map((restaurant) => catalogByName.get(normalizeName(restaurant.name)) || restaurant.id);
-const ids = new Set([...(catalog.restaurants || []).map((restaurant) => restaurant.id), ...discoveredIds]);
+const aliases = new Map((catalog.restaurants || []).flatMap(restaurant => (restaurant.aliasIds || []).map(id => [id, restaurant.id])));
+const discoveredIds = (discoveryOverrides.approved || []).map(restaurant => aliases.get(restaurant.id) || restaurant.id);
+const ids = new Set([...(catalog.restaurants || []).map(restaurant => restaurant.id), ...discoveredIds]);
 // Human-reviewed pages are authoritative inputs, independent of an older crawler snapshot.
 // Bind approval to the specific restaurant and require dated, location-specific evidence.
 const reviewedSpecialSources = (reviewedPages.records || []).filter(source =>

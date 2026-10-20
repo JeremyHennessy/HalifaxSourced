@@ -29,7 +29,7 @@ const offlineScripts = new Set([
   "check-structured-place-facts", "check-structured-specials", "build-content-coverage-report",
   "build-thumbnail-coverage-report", "plan-thumbnail-coverage-attack", "reconcile-structured-coverage",
   "check-report-deployment-parity", "render-content-coverage-report", "build-content-quality-report",
-  "report-missed-local-restaurants", "build-deployment-metadata", "build-update-ledger"
+  "report-missed-local-restaurants", "build-deployment-metadata", "build-update-ledger", "check-regional-restaurant-coverage"
 ].map(name => `scripts/${name}.mjs`));
 const networkException = new Set(["scripts/check-source-links.mjs", "scripts/check-release-link-health.mjs"]);
 const packagingException = "scripts/release-artifact.mjs";
@@ -63,7 +63,8 @@ function releaseCommands(source) {
         assert([
           "for file in app-*.js data/local-restaurant-policy.js scripts/*.mjs scripts/lib/*.mjs; do",
           '[ -e "$file" ] || continue', 'node --check "$file"', "done",
-          "python3 scripts/build-sqlite-db.py"
+          "python3 scripts/build-sqlite-db.py",
+          "python3 scripts/test-sqlite-catalog.py"
         ].includes(line), `Unclassified release command could bypass source isolation: ${line}`);
       }
     }

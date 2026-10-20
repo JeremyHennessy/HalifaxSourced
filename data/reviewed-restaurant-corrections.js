@@ -293,6 +293,230 @@ window.HALIFAX_RESTAURANT_CORRECTIONS = {
       "reviewedAt": "2026-10-19",
       "reason": "Same restaurant name and exact 5650 Spring Garden address; retain both source records as evidence. Lifecycle remains unresolved.",
       "from": "osm-node-2721726004-bubba-ray-s-sports-bar"
+    },
+    {
+      "from": "osm-node-5134084721-bar-kismet",
+      "to": "bar-kismet",
+      "reviewedAt": "2026-10-20",
+      "sourceUrl": "https://barkismet.com/",
+      "reason": "Same normalized name and matching civic street address, corroborated by official location source.",
+      "evidence": [
+        {
+          "type": "committed_source_records",
+          "commit": "84640bc3d7cc7a6005898531ac80950b780e4c85",
+          "claim": "Raw legacy pair and source attributes are captured in canonical/incoming fields."
+        },
+        {
+          "type": "official_location",
+          "url": "https://barkismet.com/",
+          "observedAt": "2026-10-20",
+          "claim": "Official location source corroborates the canonical street address.",
+          "fetchState": "page_read"
+        }
+      ]
+    },
+    {
+      "from": "osm-way-462587944-bar-kismet",
+      "to": "bar-kismet",
+      "reviewedAt": "2026-10-20",
+      "sourceUrl": "https://barkismet.com/",
+      "reason": "Same Bar Kismet name on OSM building way and exact-address node, less than 6 metres apart. Official site confirms 2733 Agricola Street. This supports this specific legacy alias, not a general proximity rule.",
+      "evidence": [
+        {
+          "type": "committed_source_records",
+          "commit": "84640bc3d7cc7a6005898531ac80950b780e4c85",
+          "claim": "Raw legacy pair and source attributes are captured in canonical/incoming fields."
+        },
+        {
+          "type": "official_location",
+          "url": "https://barkismet.com/",
+          "observedAt": "2026-10-20",
+          "claim": "Official location source corroborates the canonical street address.",
+          "fetchState": "page_read"
+        },
+        {
+          "type": "osm_node_way_pair",
+          "nodeId": "osm-node-5134084721-bar-kismet",
+          "nodeCoordinates": {
+            "lat": 44.657464,
+            "lon": -63.5961815
+          },
+          "wayCoordinates": {
+            "lat": 44.6575129,
+            "lon": -63.5961889
+          },
+          "distanceMetres": 5.47,
+          "nodeUrl": "https://www.openstreetmap.org/node/5134084721",
+          "wayUrl": "https://www.openstreetmap.org/way/462587944"
+        }
+      ]
+    },
+    {
+      "from": "osm-node-1116387649-bicycle-thief",
+      "to": "the-bicycle-thief",
+      "reviewedAt": "2026-10-20",
+      "sourceUrl": "https://bicyclethief.ca/contact-us-reservations/",
+      "reason": "Same normalized name and matching civic street address, corroborated by official location source.",
+      "evidence": [
+        {
+          "type": "committed_source_records",
+          "commit": "84640bc3d7cc7a6005898531ac80950b780e4c85",
+          "claim": "Raw legacy pair and source attributes are captured in canonical/incoming fields."
+        },
+        {
+          "type": "official_location",
+          "url": "https://bicyclethief.ca/contact-us-reservations/",
+          "observedAt": "2026-10-20",
+          "claim": "Official location source corroborates the canonical street address.",
+          "fetchState": "page_read"
+        }
+      ]
+    },
+    {
+      "from": "osm-node-2624365676-edna",
+      "to": "edna",
+      "reviewedAt": "2026-10-20",
+      "sourceUrl": "https://www.ednarestaurant.com/",
+      "reason": "Same normalized name and matching civic street address, corroborated by official location source.",
+      "evidence": [
+        {
+          "type": "committed_source_records",
+          "commit": "84640bc3d7cc7a6005898531ac80950b780e4c85",
+          "claim": "Raw legacy pair and source attributes are captured in canonical/incoming fields."
+        },
+        {
+          "type": "official_location",
+          "url": "https://www.ednarestaurant.com/",
+          "observedAt": "2026-10-20",
+          "claim": "Official location source corroborates the canonical street address.",
+          "fetchState": "page_read"
+        }
+      ]
+    },
+    {
+      "from": "osm-node-37132554-press-gang",
+      "to": "the-press-gang",
+      "reviewedAt": "2026-10-20",
+      "sourceUrl": "https://thepressgang.ca/",
+      "reason": "Official Press Gang address 5218 Prince Street matches Tourism Nova Scotia listing, whose map coordinates are within 15m of OSM node 37132554. Preserve established the-press-gang ID.",
+      "evidence": [
+        {
+          "type": "committed_source_records",
+          "commit": "84640bc3d7cc7a6005898531ac80950b780e4c85",
+          "claim": "Raw legacy pair and source attributes are captured in canonical/incoming fields."
+        },
+        {
+          "type": "official_location",
+          "url": "https://thepressgang.ca/",
+          "observedAt": "2026-10-20",
+          "claim": "Official location source corroborates the canonical street address.",
+          "fetchState": "page_read"
+        },
+        {
+          "type": "official_tourism_location",
+          "url": "https://novascotia.com/listing/press-gang-restaurant-oyster-bar/",
+          "observedAt": "2026-10-20",
+          "address": "5218 Prince Street, Halifax, B3J 3X4",
+          "coordinates": {
+            "lat": 44.647071,
+            "lon": -63.574403
+          },
+          "mapUrl": "https://www.google.com/maps?q=44.647071%2C-63.574403",
+          "coordinateEvidence": "Exact destination of official tourism Open In Google Maps link. Destination map fetch failed, but the link was observed.",
+          "distanceToOsmMetres": 14.66
+        }
+      ]
+    },
+    {
+      "from": "osm-way-463454708-the-narrows-public-house",
+      "to": "the-narrows",
+      "reviewedAt": "2026-10-20",
+      "sourceUrl": "https://www.thenarrowspublichouse.ca/",
+      "reason": "Same normalized name and matching civic street address, corroborated by official location source.",
+      "evidence": [
+        {
+          "type": "committed_source_records",
+          "commit": "84640bc3d7cc7a6005898531ac80950b780e4c85",
+          "claim": "Raw legacy pair and source attributes are captured in canonical/incoming fields."
+        },
+        {
+          "type": "official_location",
+          "url": "https://www.thenarrowspublichouse.ca/",
+          "observedAt": "2026-10-20",
+          "claim": "Official location source corroborates the canonical street address.",
+          "fetchState": "page_read"
+        }
+      ]
+    },
+    {
+      "from": "osm-node-9099100702-highwayman",
+      "to": "highwayman",
+      "reviewedAt": "2026-10-20",
+      "sourceUrl": "https://www.highwaymanhfx.com/",
+      "reason": "Same normalized name and matching civic street address, corroborated by official location source.",
+      "evidence": [
+        {
+          "type": "committed_source_records",
+          "commit": "84640bc3d7cc7a6005898531ac80950b780e4c85",
+          "claim": "Raw legacy pair and source attributes are captured in canonical/incoming fields."
+        },
+        {
+          "type": "official_location",
+          "url": "https://www.highwaymanhfx.com/",
+          "observedAt": "2026-10-20",
+          "claim": "Official location source corroborates the canonical street address.",
+          "fetchState": "page_read"
+        }
+      ]
+    },
+    {
+      "from": "osm-node-8158371727-field-guide",
+      "to": "field-guide",
+      "reviewedAt": "2026-10-20",
+      "sourceUrl": "https://fieldguidehfx.com/",
+      "reason": "Existing curated operatingStatusEvidence.location and OSM both identify 2076 Gottingen Street; same official domain. Preserve archived field-guide ID and permanently_closed status, not stale website hours.",
+      "evidence": [
+        {
+          "type": "committed_source_records",
+          "commit": "84640bc3d7cc7a6005898531ac80950b780e4c85",
+          "claim": "Raw legacy pair and source attributes are captured in canonical/incoming fields."
+        },
+        {
+          "type": "official_location",
+          "url": "https://fieldguidehfx.com/",
+          "observedAt": "2026-10-20",
+          "claim": "Official search-index snapshot includes 2076 Gottingen St., Halifax and 902-405-4506; direct page returned 502. Not evidence of current operation.",
+          "fetchState": "search_snapshot_only_direct_fetch_502"
+        },
+        {
+          "type": "retained_reviewed_closure_location",
+          "claim": "The restaurant announced that its last day of service was April 29, 2026.",
+          "location": "2076 Gottingen Street, Halifax, NS",
+          "sourceUrl": "https://www.facebook.com/fieldguidehfx/videos/2017145352561161/",
+          "verifiedAt": "2026-08-29"
+        }
+      ]
+    },
+    {
+      "from": "matadora-tapas-bar-halifax",
+      "to": "osm-node-13286396472-matadora-tapas-bar",
+      "reviewedAt": "2026-10-20",
+      "sourceUrl": "https://matadorahfx.ca/",
+      "reason": "Same normalized name and matching civic street address, corroborated by official location source.",
+      "evidence": [
+        {
+          "type": "committed_source_records",
+          "commit": "84640bc3d7cc7a6005898531ac80950b780e4c85",
+          "claim": "Raw legacy pair and source attributes are captured in canonical/incoming fields."
+        },
+        {
+          "type": "official_location",
+          "url": "https://matadorahfx.ca/",
+          "observedAt": "2026-10-20",
+          "claim": "Official location source corroborates the canonical street address.",
+          "fetchState": "page_read"
+        }
+      ]
     }
   ],
   "additions": [
@@ -440,15 +664,35 @@ window.HALIFAX_RESTAURANT_CORRECTIONS = {
         "reviewState": "verified",
         "location": "2 Ochterloney Street, Dartmouth, NS B2Y 1B2"
       },
-      "cuisines": ["Seafood"],
+      "cuisines": [
+        "Seafood"
+      ],
       "vibe": [],
       "specials": [],
       "events": [],
       "socialProfiles": [],
       "sources": [
-        { "type": "official_website", "label": "Owner Dartmouth contact and kitchen hours", "url": "https://www.evansfreshseafoods.com/contact/", "observedAt": "2026-10-20T10:22:48.221Z", "status": "verified" },
-        { "type": "official_website", "label": "Owner local family-operation evidence", "url": "https://www.evansfreshseafoods.com/about-us/", "observedAt": "2026-10-20T10:22:49.141Z", "status": "verified" },
-        { "type": "menu", "label": "Official 2026 restaurant menu", "url": "https://www.evansfreshseafoods.com/menu/", "observedAt": "2026-10-20T10:22:50.342Z", "status": "verified" }
+        {
+          "type": "official_website",
+          "label": "Owner Dartmouth contact and kitchen hours",
+          "url": "https://www.evansfreshseafoods.com/contact/",
+          "observedAt": "2026-10-20T10:22:48.221Z",
+          "status": "verified"
+        },
+        {
+          "type": "official_website",
+          "label": "Owner local family-operation evidence",
+          "url": "https://www.evansfreshseafoods.com/about-us/",
+          "observedAt": "2026-10-20T10:22:49.141Z",
+          "status": "verified"
+        },
+        {
+          "type": "menu",
+          "label": "Official 2026 restaurant menu",
+          "url": "https://www.evansfreshseafoods.com/menu/",
+          "observedAt": "2026-10-20T10:22:50.342Z",
+          "status": "verified"
+        }
       ],
       "evidenceStatus": "verified",
       "sourceLayer": "reviewed_location_correction"
@@ -471,7 +715,9 @@ window.HALIFAX_RESTAURANT_CORRECTIONS = {
         "reviewState": "verified",
         "location": "63 Portland Street, Dartmouth, NS B2Y 1H1"
       },
-      "cuisines": ["Sandwiches"],
+      "cuisines": [
+        "Sandwiches"
+      ],
       "vibe": [],
       "specials": [],
       "events": [],
