@@ -39,6 +39,7 @@ try {
   }
   await mkdir(join(root,'data/build'),{recursive:true}); await mkdir(join(root,'docs'));
   await writeFile(join(root,'data/reviewed-restaurant-corrections.js'),'window.HALIFAX_RESTAURANT_CORRECTIONS={records:[],aliases:[],additions:[]};');
+  await writeFile(join(root,'data/reviewed-place-resolutions.js'),'window.HALIFAX_REVIEWED_PLACE_RESOLUTIONS={records:[]};');
   const save = (file,value) => writeFile(join(root,'data/build',file+'.json'),JSON.stringify(value));
   await save('catalog',{restaurants:[{id:'venue',name:'Venue'}]});
   for(const name of ['official-site-signals','first-party-sources','website-feed-signals','recent-social-posts']) await save(name,{});
