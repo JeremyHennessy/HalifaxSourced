@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-03T13:08:09Z",
-  "targetCount": 117,
+  "generatedAt": "2026-10-20",
+  "targetCount": 119,
   "policy": "Consumer media requires a specific reusable licence or documented owner grant. Public website references remain unverified until authorization evidence is reviewed.",
   "allowedSources": [
     "wikimedia_commons",
@@ -694,6 +694,22 @@
       "name": "Chinatown",
       "status": "rights_review_required",
       "rightsState": "unverified"
+    },
+    {
+      "restaurantId": "osm-way-96322798-wooden-monkey",
+      "name": "Wooden Monkey — Halifax",
+      "status": "approved",
+      "rightsState": "licensed",
+      "license": "CC BY-SA 2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wooden_Monkey_Restaurant,_Halifax,_Nova_Scotia_(25274647981).jpg"
+    },
+    {
+      "restaurantId": "osm-node-886747513-trident-booksellers-and-cafe",
+      "name": "Trident Booksellers & Cafe",
+      "status": "approved",
+      "rightsState": "licensed",
+      "license": "CC BY-SA 2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:DSC07401_(7172975247).jpg"
     }
   ]
 }
