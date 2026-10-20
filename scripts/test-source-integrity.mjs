@@ -1,6 +1,7 @@
 import assert from 'node:assert/strict';
 import integrity from '../source-integrity.js';
 import { readFile } from 'node:fs/promises';
+import { reviewedLocationLinks, reviewedCorrections } from './lib/reviewed-corrections.mjs';
 const broken = JSON.parse(await readFile(new URL('../data/reviewed-broken-links.json',import.meta.url)));
 for (const item of broken.records) {
   assert.equal(item.confirmedBroken,true);
@@ -25,4 +26,19 @@ assert.equal(integrity.safeSource('https://www.bowtiecreamery.com/a'),false);
 assert.equal(integrity.safeSource('https://glitterbeancafe.com./'),false);
 assert.equal(integrity.safeSource('https://WWW.justitalymentone.com../'),false);
 assert.equal(integrity.sourceHost('https://www.fixture.example./'),'fixture.example');
-console.log('Source integrity regression passed: future/unknown dates, metadata scope, offer expiry, location and unsafe domains.');
+const reviewedLinks = reviewedLocationLinks([
+  {id:'active', sources:[{type:'menu', url:'https://local.example/menu'}, {type:'openstreetmap', url:'https://local.example/history'}]},
+  {id:'archived', operatingStatus:'permanently_closed', sources:[{type:'menu',url:'https://closed.example/menu'}]}
+], [
+  {restaurantId:'active',website:'https://local.example/',menuUrl:'https://local.example/menu',socialProfiles:[{platform:'instagram',url:'https://www.instagram.com/local_fixture/'}]},
+  {restaurantId:'archived',website:'https://closed.example/',menuUrl:'https://closed.example/menu'},
+  {restaurantId:'excluded',website:'https://excluded.example/',menuUrl:'https://excluded.example/menu'}
+]);
+assert.deepEqual(reviewedLinks.map(item=>item.url).sort(), ['https://local.example/','https://local.example/menu','https://www.instagram.com/local_fixture/'].sort());
+assert(reviewedLinks.every(item=>item.restaurantId==='active'), 'Archived and noncanonical identities must stay out of release scope');
+const productionReviewed = reviewedLocationLinks([
+  {id:'osm-node-4421124794-cafe-marco-polo'},
+  reviewedCorrections.additions.find(item=>item.id==='larrys-sandwiches-dartmouth')
+]);
+for (const url of ['https://cafemarcopolodartmouth.com/11-2/','https://larryssandwiches.com/order']) assert(productionReviewed.some(item=>item.url===url),'Reviewed browser menu must be audited: '+url);
+console.log('Source integrity regression passed: future/unknown dates, metadata scope, offer expiry, location, unsafe domains and active reviewed-link audit coverage.');

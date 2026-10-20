@@ -1,5 +1,5 @@
 import { readFile } from 'node:fs/promises';
-import { reviewedCorrections } from './lib/reviewed-corrections.mjs';
+import { reviewedCorrections, reviewedLocationLinks } from './lib/reviewed-corrections.mjs';
 const report = JSON.parse(await readFile(new URL('../data/build/source-link-health-report.json', import.meta.url)));
 const catalog = JSON.parse(await readFile(new URL('../data/build/catalog.json', import.meta.url)));
 if (report.totalCatalogRecords !== catalog.restaurants.length) throw Error('Link audit catalog count mismatch');
@@ -8,6 +8,11 @@ const expected = process.env.SOURCE_COMMIT_SHA || process.env.GITHUB_SHA;
 if (!expected || report.sourceCommitSha !== expected || !report.complete || report.scope !== 'active_catalog_official_social_menu_actions') throw Error('Missing, partial or wrong-SHA release link-health evidence');
 const corrected = new Set(reviewedCorrections.records.filter(item => item.fields.website).map(item => item.fields.website));
 for (const item of reviewedCorrections.additions) if (item.website) corrected.add(item.website);
+const reviewedLinks = reviewedLocationLinks(catalog.restaurants);
+const audited = new Set((report.results || []).map(item => item.url));
+const missing = reviewedLinks.filter(item => !audited.has(item.url));
+if (missing.length) throw Error('Release audit omitted active reviewed links: ' + [...new Set(missing.map(item => item.url))].join(', '));
+for (const item of reviewedLinks) corrected.add(item.url);
 const failures = report.broken.filter(item => corrected.has(item.url));
 if (failures.length) throw Error('Reviewed current official URL failed repeated 404/410: ' + failures.map(item => item.url).join(', '));
 console.log(JSON.stringify({sourceCommitSha:expected, checked:report.counts.checked, knownBrokenReviewCandidates:report.counts.broken, restricted:report.counts.restricted, inconclusive:report.counts.transient, policy:'Require complete same-head evidence; block confirmed broken newly reviewed official URLs. Legacy broken links remain explicit review candidates; timeouts and social restrictions never prove closure.'},null,2));
