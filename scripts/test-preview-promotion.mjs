@@ -42,9 +42,26 @@ try {
   // Exercise the workflow's real shell in fresh shallow clones, with and without
   // a pre-existing promotion branch, and with a competing remote update.
   const workflow = readFileSync(join(root, '.github/workflows/promote-preview-artifacts.yml'), 'utf8');
-  const section = workflow.split('      - name: Commit promoted data\n')[1].split('\n      - name:')[0];
-  const shell = section.split('        run: |\n')[1].split('\n').map(s => s.replace(/^          /, '')).join('\n')
-    .replace(/\$\{\{ steps.preview.outputs.artifact_name \}\}/g, 'city-events-preview');
+  const step = name => {
+    const section = workflow.split(`      - name: ${name}\n`)[1];
+    assert.ok(section, `Missing workflow step: ${name}`);
+    return section.split('\n      - name:')[0];
+  };
+  const values = {
+    'github.server_url': 'https://github.com',
+    'github.repository': 'JeremyHennessy/HalifaxSourced',
+    'steps.preview.outputs.artifact_name': 'city-events-preview',
+    'steps.preview.outputs.run_id': '12345',
+    'steps.preview.outputs.source_run_url': 'https://github.com/JeremyHennessy/HalifaxSourced/actions/runs/12345',
+    'steps.commit.outputs.branch': 'codex/promote-city-events-preview'
+  };
+  const shellFor = (name, extra = {}) => step(name).split('        run: |\n')[1]
+    .split('\n').map(s => s.replace(/^          /, '')).join('\n')
+    .replace(/\$\{\{ ([\w.-]+) \}\}/g, (_, key) => {
+      assert.ok(Object.hasOwn({ ...values, ...extra }, key), `Unresolved workflow expression: ${key}`);
+      return { ...values, ...extra }[key];
+    });
+  const shell = shellFor('Commit promoted data');
   assert.match(shell, /--force-with-lease="refs\/heads\/\$branch:\$expected_sha"/); assertions++;
   const remote = join(scratch, 'remote.git'); const seed = join(scratch, 'seed');
   mkdirSync(seed); git(seed, 'init', '-b', 'main'); identity(seed);
@@ -54,10 +71,11 @@ try {
   const realGit = execFileSync('which', ['git'], { encoding: 'utf8' }).trim();
   const shim = join(scratch, 'bin', 'git');
   put(shim, `#!/bin/bash\nif [ "$1" = push ] && [ -n "$RACE_SHA" ]; then\n  "${realGit}" --git-dir="$RACE_REMOTE" update-ref "${branch}" "$RACE_SHA"\nfi\nexec "${realGit}" "$@"\n`); chmodSync(shim, 0o755);
-  const run = (label, extra = {}) => {
+  const run = (label, extra = {}, dataLabel = label) => {
     const cwd = join(scratch, label);
     git(scratch, 'clone', '--depth=1', '--branch=main', `file://${remote}`, cwd);
-    put(join(cwd, 'data/change.json'), JSON.stringify({ label }));
+    put(join(cwd, 'data/change.json'), JSON.stringify({ label: dataLabel }));
+    put(join(cwd, 'data/build/preview-promotion-metadata.json'), JSON.stringify({ artifactRunId: label }));
     const result = spawnSync('bash', ['-e', '-o', 'pipefail', '-c', shell], {
       cwd, encoding: 'utf8', env: { ...process.env, RUNNER_TEMP: scratch, GITHUB_OUTPUT: join(scratch, 'outputs'), ...extra }
     });
@@ -66,12 +84,98 @@ try {
   let pushed = run('initial'); assert.equal(pushed.status, 0, pushed.stderr); assertions++;
   const first = git(scratch, '--git-dir=' + remote, 'rev-parse', branch);
   pushed = run('existing'); assert.equal(pushed.status, 0, pushed.stderr);
-  assert.notEqual(git(scratch, '--git-dir=' + remote, 'rev-parse', branch), first); assertions += 2;
+  const existing = git(scratch, '--git-dir=' + remote, 'rev-parse', branch);
+  assert.notEqual(existing, first); assertions += 2;
+  pushed = run('same-data', {}, 'existing');
+  assert.equal(pushed.status, 0, pushed.stderr);
+  assert.equal(git(scratch, '--git-dir=' + remote, 'rev-parse', branch), existing);
+  assert.match(pushed.stdout, /keeping existing branch commit/);
+  assert.equal(git(scratch, '--git-dir=' + remote, 'show', `${branch}:data/build/preview-promotion-metadata.json`), '{"artifactRunId":"existing"}');
+  assertions += 4;
+
+  // Identical preview data must not preserve stale code when main has advanced.
+  put(join(seed, 'app.js'), '// main code update\n'); git(seed, 'add', '.'); git(seed, 'commit', '-m', 'main code update'); git(seed, 'push', 'origin', 'main');
+  pushed = run('main-changed', {}, 'existing');
+  assert.equal(pushed.status, 0, pushed.stderr);
+  assert.notEqual(git(scratch, '--git-dir=' + remote, 'rev-parse', branch), existing);
+  assert.equal(git(scratch, '--git-dir=' + remote, 'show', `${branch}:app.js`), '// main code update');
+  assertions += 3;
   put(join(seed, 'data/racer.json'), '{}'); git(seed, 'add', '.'); git(seed, 'commit', '-m', 'competing writer'); git(seed, 'push', 'origin', 'HEAD:refs/heads/race-object');
   const raceSha = git(seed, 'rev-parse', 'HEAD');
   pushed = run('race', { PATH: dirname(shim) + ':' + process.env.PATH, RACE_REMOTE: remote, RACE_SHA: raceSha });
   assert.notEqual(pushed.status, 0); assert.match(pushed.stderr, /stale info/);
   assert.equal(git(scratch, '--git-dir=' + remote, 'rev-parse', branch), raceSha); assertions += 3;
   pushed = run('retry'); assert.equal(pushed.status, 0, pushed.stderr); assertions++;
-  console.log(`Preview promotion: ${assertions} assertions passed (producer contract, review-only isolation, malformed artifacts, initial/existing/racing/retried branch pushes).`);
+
+  // Run the real PR and Quality Gate shell with a local gh stub. In particular,
+  // invoke the gate shell even on a blocked PR to exercise its fail-closed guard,
+  // not just a text assertion about the Actions expression.
+  assert.equal(step('Run Quality Gate for promotion branch').match(/^        if: (.+)$/m)[1], "steps.changes.outputs.changed == 'true' && steps.pull-request.outputs.url != ''");
+  assert.equal(step('Require promotion pull request').match(/^        if: (.+)$/m)[1], "steps.changes.outputs.changed == 'true' && steps.pull-request.outputs.url == ''");
+  assertions += 2;
+  const ghShim = join(scratch, 'bin', 'gh');
+  put(ghShim, `#!/bin/bash
+printf '%s ' "$@" >> "$GH_CALL_LOG"
+printf '\\n' >> "$GH_CALL_LOG"
+case "$1 $2" in
+  "pr list")
+    if [ "$GH_SCENARIO" = list-fails ]; then echo "Cannot list PRs" >&2; exit 1; fi
+    case "$GH_SCENARIO" in existing-pr|edit-fails|view-fails|view-partial-fails) echo 17 ;; esac
+    ;;
+  "pr edit")
+    if [ "$GH_SCENARIO" = edit-fails ]; then echo "Cannot edit PR" >&2; exit 1; fi
+    ;;
+  "pr view")
+    if [ "$GH_SCENARIO" = view-fails ]; then echo "Cannot view PR" >&2; exit 1; fi
+    echo "https://github.com/JeremyHennessy/HalifaxSourced/pull/17"
+    if [ "$GH_SCENARIO" = view-partial-fails ]; then exit 1; fi
+    ;;
+  "pr create")
+    if [ "$GH_SCENARIO" = create-blocked ]; then echo "GitHub Actions is not permitted to create or approve pull requests" >&2; exit 1; fi
+    if [ "$GH_SCENARIO" = empty-url ]; then exit 0; fi
+    if [ "$GH_SCENARIO" = invalid-url ]; then echo "null"; exit 0; fi
+    echo "https://github.com/JeremyHennessy/HalifaxSourced/pull/18"
+    ;;
+  "workflow run") ;;
+  *) echo "Unexpected gh invocation: $*" >&2; exit 2 ;;
+esac
+`);
+  chmodSync(ghShim, 0o755);
+  const compareUrl = 'https://github.com/JeremyHennessy/HalifaxSourced/compare/main...codex/promote-city-events-preview?expand=1';
+  for (const scenario of ['create-blocked', 'existing-pr', 'new-pr', 'list-fails', 'edit-fails', 'view-fails', 'view-partial-fails', 'empty-url', 'invalid-url']) {
+    const cwd = join(scratch, `pr-${scenario}`); mkdirSync(cwd);
+    const output = join(cwd, 'outputs'); const summary = join(cwd, 'summary'); const calls = join(cwd, 'gh-calls');
+    const env = { ...process.env, PATH: dirname(ghShim) + ':' + process.env.PATH, RUNNER_TEMP: cwd, GITHUB_OUTPUT: output, GITHUB_STEP_SUMMARY: summary, GH_CALL_LOG: calls, GH_SCENARIO: scenario };
+    const execute = (script, extra = {}) => spawnSync('bash', ['-e', '-o', 'pipefail', '-c', script], { cwd, encoding: 'utf8', env: { ...env, ...extra } });
+    result = execute(shellFor('Open or update promotion pull request'));
+    assert.equal(result.status, 0, `${scenario}: ${result.stderr}`); assertions++;
+    const outputs = Object.fromEntries(readFileSync(output, 'utf8').trim().split('\n').map(line => {
+      const separator = line.indexOf('='); return [line.slice(0, separator), line.slice(separator + 1)];
+    }));
+    assert.equal(outputs.compare_url, compareUrl); assertions++;
+    const hasPr = scenario === 'existing-pr' || scenario === 'new-pr';
+    assert.equal(outputs.url, hasPr ? `https://github.com/JeremyHennessy/HalifaxSourced/pull/${scenario === 'existing-pr' ? 17 : 18}` : ''); assertions++;
+    result = execute(shellFor('Run Quality Gate for promotion branch'), {
+      PROMOTION_PR_URL: outputs.url,
+      PROMOTION_BRANCH: values['steps.commit.outputs.branch']
+    });
+    assert.equal(result.status, 0, `${scenario}: ${result.stderr}`); assertions++;
+    const ghCalls = readFileSync(calls, 'utf8');
+    const dispatches = ghCalls.split('\n').filter(line => line.startsWith('workflow run '));
+    assert.equal(dispatches.length, hasPr ? 1 : 0, `${scenario}: ${ghCalls}`); assertions++;
+    if (hasPr) {
+      assert.equal(dispatches[0].trim(), 'workflow run Quality Gate --ref codex/promote-city-events-preview');
+      assert.ok(ghCalls.includes(scenario === 'existing-pr' ? 'pr edit 17 ' : 'pr create '));
+      assertions += 2;
+    } else {
+      const report = readFileSync(summary, 'utf8');
+      assert.ok(report.includes(compareUrl));
+      assert.match(report, /Quality Gate will not be dispatched/);
+      assert.doesNotMatch(report, /Enable repository|configure.*TOKEN/);
+      result = execute(shellFor('Require promotion pull request', { 'steps.pull-request.outputs.compare_url': outputs.compare_url }));
+      assert.notEqual(result.status, 0, `${scenario}: missing PR must remain an actionable failure`);
+      assert.ok(result.stdout.includes(compareUrl)); assertions += 5;
+    }
+  }
+  console.log(`Preview promotion: ${assertions} assertions passed (producer contract, review-only isolation, malformed artifacts, idempotent and leased branch updates, blocked/existing/new PR dispatch guards).`);
 } finally { rmSync(scratch, { recursive: true, force: true }); }
