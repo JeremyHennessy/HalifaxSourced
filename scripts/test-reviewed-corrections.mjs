@@ -16,6 +16,23 @@ const app = JSON.parse(vm.runInContext('JSON.stringify({restaurants,active:activ
 const catalog = JSON.parse(await readFile(new URL('data/build/catalog.json',root)));
 assert.deepEqual(app.restaurants.map(item=>item.id).sort(),catalog.restaurants.map(item=>item.id).sort(),'Browser and export must use the same exact identities');
 const active = new Set(app.active);
+const larryId = 'larrys-sandwiches-dartmouth';
+for (const records of [app.restaurants, catalog.restaurants]) {
+  const matches = records.filter(record => record.id === larryId);
+  assert.equal(matches.length, 1, 'Larry’s must have one stable canonical identity');
+  const larry = matches[0];
+  assert.equal(larry.address, '63 Portland Street, Dartmouth, NS B2Y 1H1');
+  assert.equal(larry.phone, '902-449-2102');
+  assert.equal(larry.website, 'https://larryssandwiches.com/');
+  assert.equal(larry.openingHours, null, 'Dynamic ordering availability is not ordinary weekly hours');
+  assert.equal(larry.coordinates, null, 'Do not borrow nearby Lake City Cider coordinates');
+  assert.equal(larry.specials.length, 0, 'An undated sandwich of the week is not a verified current offer');
+  assert.equal(larry.events.length, 0);
+  assert(larry.sources.some(source => source.type === 'menu' && source.url === 'https://larryssandwiches.com/order'));
+  assert(records.some(record => record.id === 'lake-city-cider-dartmouth'), 'Nearby existing identity must survive');
+}
+assert(active.has(larryId));
+assert(app.restaurants.find(record => record.id === larryId).menuLinks.some(link => link.url === 'https://larryssandwiches.com/order'));
 for (const item of reviewedCorrections.records) {
   const browserRecord = app.restaurants.find(record=>record.id === item.restaurantId);
   const exported = catalog.restaurants.find(record=>record.id === item.restaurantId);

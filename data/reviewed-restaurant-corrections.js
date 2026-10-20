@@ -1,6 +1,6 @@
 window.HALIFAX_RESTAURANT_CORRECTIONS = {
   "version": 1,
-  "reviewedAt": "2026-10-19",
+  "reviewedAt": "2026-10-20",
   "policy": "Reviewed location evidence overrides stale imports; observation dates are retained and uncertain coordinates, hours, successor identities and closure day remain unknown.",
   "records": [
     {
@@ -251,6 +251,55 @@ window.HALIFAX_RESTAURANT_CORRECTIONS = {
     }
   ],
   "additions": [
+    {
+      "id": "larrys-sandwiches-dartmouth",
+      "name": "Larry’s Sandwiches & Sides",
+      "address": "63 Portland Street, Dartmouth, NS B2Y 1H1",
+      "neighborhood": "Downtown Dartmouth",
+      "category": "Quick eats",
+      "website": "https://larryssandwiches.com/",
+      "phone": "902-449-2102",
+      "coordinates": null,
+      "openingHours": null,
+      "operatingStatus": "active",
+      "operatingStatusEvidence": {
+        "claim": "Official ordering page confirms this Dartmouth location, phone and sandwich menu. Tourism Nova Scotia identifies the local team behind Dear Friend Bar. No opening date or ordinary weekly hours established; dynamic ordering availability is not a weekly schedule.",
+        "sourceUrl": "https://larryssandwiches.com/order",
+        "observedAt": "2026-10-20",
+        "reviewState": "verified",
+        "location": "63 Portland Street, Dartmouth, NS B2Y 1H1"
+      },
+      "cuisines": ["Sandwiches"],
+      "vibe": [],
+      "specials": [],
+      "events": [],
+      "socialProfiles": [],
+      "sources": [
+        {
+          "type": "official_website",
+          "label": "Official Dartmouth location and contact",
+          "url": "https://larryssandwiches.com/",
+          "observedAt": "2026-10-20",
+          "status": "verified"
+        },
+        {
+          "type": "menu",
+          "label": "Official sandwich menu and ordering",
+          "url": "https://larryssandwiches.com/order",
+          "observedAt": "2026-10-20",
+          "status": "verified"
+        },
+        {
+          "type": "tourism_directory",
+          "label": "Tourism Nova Scotia: local operator and Dartmouth address",
+          "url": "https://novascotia.com/listing/larrys-sandwiches-sides/",
+          "observedAt": "2026-10-20",
+          "status": "verified"
+        }
+      ],
+      "evidenceStatus": "verified",
+      "sourceLayer": "reviewed_location_correction"
+    },
     {
       "id": "big-leagues-bayers-lake",
       "name": "Big Leagues Bayer’s Lake",
