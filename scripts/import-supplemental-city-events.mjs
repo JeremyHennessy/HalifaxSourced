@@ -334,6 +334,19 @@ const supplemental = [];
 const sourceStats = [];
 const failures = [];
 for (const source of sources) {
+  if (source.enabled === false) {
+    // A known access restriction is not permission to retry on every schedule.
+    // Carry accepted evidence unchanged, including its original clocks.
+    const retained = (payload.events || []).filter(event => event.sourceId === source.id);
+    const previous = (payload.sourceStats || []).find(stat => stat.sourceId === source.id);
+    const lastAttemptAt = source.accessReview?.lastAttemptAt || previous?.lastAttemptAt || previous?.observedAt || null;
+    const reason = source.disabledReason || "source_disabled";
+    supplemental.push(...retained);
+    sourceStats.push({sourceId: source.id, sourceName: source.name, status: "blocked", attempted: false, reason, eventCount: retained.length, observedAt: previous?.observedAt || null, lastAttemptAt, resumeWhen: source.accessReview?.resumeWhen || "Explicit source review required"});
+    failures.push({sourceId: source.id, sourceName: source.name, url: source.url, status: "blocked", attempted: false, reason, observedAt: lastAttemptAt});
+    console.log(`${source.name}: blocked (${reason}); zero requests, ${retained.length} accepted events retained.`);
+    continue;
+  }
   const started = Date.now();
   try {
     let events = [];
