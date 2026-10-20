@@ -16,7 +16,11 @@ try{
   await page.goto(url+'/#explore?neighbourhood=Bedford&sort=name');await page.waitForFunction(()=>state.neighbourhood==='Bedford');
   await page.locator('#globalSearch').fill('Bar Kismet');await page.locator('#globalSearch').press('Enter');await page.waitForFunction(()=>location.hash==='#explore?q=Bar+Kismet');
   assert.equal(await page.evaluate(()=>state.neighbourhood),'all');assert.match(await page.locator('#appView').innerText(),/Bar Kismet/);
-  await page.reload({waitUntil:'networkidle'});assert.equal(await page.evaluate(()=>state.query),'Bar Kismet');
+  const beforeReload=await page.evaluate(()=>({url:location.href,query:state.query,ready:document.readyState}));
+  await page.reload({waitUntil:'networkidle'});
+  const afterReload=await page.evaluate(()=>({url:location.href,query:state.query,ready:document.readyState,input:globalSearch.value,body:document.querySelector('#appView')?.innerText.slice(0,300)}));
+  console.log('Discovery reload diagnostic',JSON.stringify({width,beforeReload,afterReload,errors,unknownResources:resources.evidence.unknown}));
+  assert.equal(afterReload.query,'Bar Kismet');
   if(width<=640) await page.locator('[data-open-filters]').click();
   await page.locator('[data-clear-filters]').first().click();await page.waitForFunction(()=>location.hash==='#explore');assert.equal(await page.locator('#globalSearch').inputValue(),'');
   await page.goBack();await page.waitForFunction(()=>state.query==='Bar Kismet');await page.goForward();await page.waitForFunction(()=>state.query==='');
