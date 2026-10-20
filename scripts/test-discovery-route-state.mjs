@@ -1,0 +1,18 @@
+import assert from 'node:assert/strict';
+import {readFileSync} from 'node:fs';
+import vm from 'node:vm';
+const source=readFileSync(new URL('../app-core.js',import.meta.url),'utf8');
+const helpers=source.slice(source.indexOf('function discoveryStateFromParams'),source.indexOf('function renderRoute()'));
+const context={URLSearchParams,state:{},navigate:hash=>context.hash=hash};
+vm.createContext(context);vm.runInContext(helpers,context);
+const defaults=context.discoveryStateFromParams(new URLSearchParams());
+assert.equal(defaults.query,'');assert.equal(defaults.neighbourhood,'all');assert.equal(defaults.page,1);
+context.state={...defaults,query:'Bar Kismet',neighbourhood:'Bedford',cuisine:'Seafood',sort:'name',feature:'patio',page:3};
+const hash=context.discoveryHash();
+assert.equal(hash,'#explore?q=Bar+Kismet&cuisine=Seafood&neighbourhood=Bedford&feature=patio&sort=name&page=3');
+assert.equal(JSON.stringify(context.discoveryStateFromParams(new URLSearchParams(hash.split('?')[1]))),JSON.stringify(context.state));
+context.navigateDiscovery({query:'Bar Kismet'},'explore',true);
+assert.equal(context.hash,'#explore?q=Bar+Kismet');
+context.navigateDiscovery({},'explore',true);assert.equal(context.hash,'#explore');
+for(const bad of ['-1','0','abc','1.2','Infinity']) assert.equal(context.discoveryStateFromParams(new URLSearchParams('page='+bad)).page,1);
+console.log('Discovery route state passed: complete URL round trip, global reset, clear and invalid pagination.');

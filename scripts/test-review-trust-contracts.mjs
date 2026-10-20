@@ -1,0 +1,26 @@
+import assert from 'node:assert/strict';
+import {readFileSync} from 'node:fs';
+import vm from 'node:vm';
+const src=readFileSync(new URL('../app-admin.js',import.meta.url),'utf8');
+const localStorage={getItem:()=>null,setItem:()=>{}};
+const candidate={id:'x',restaurantId:'place',thumbnailUrl:'./assets/review.jpg',sourceKind:'official_page_thumbnail_candidate',sourceUrl:'https://example.test/',rightsStatus:'requires_rights_review'};
+const ctx={window:{HALIFAX_THUMBNAIL_CANDIDATES:{candidates:[candidate]}},localStorage,URL,Set,safeUrl:v=>v,escapeHtml:v=>v};
+vm.createContext(ctx);vm.runInContext(readFileSync(new URL('../app-media.js',import.meta.url),'utf8'),ctx);vm.runInContext(src.slice(0,src.indexOf('function renderThumbnailAdmin')),ctx);
+assert.equal(ctx.isDirectPromotionCandidate(candidate),false);
+assert.equal(ctx.thumbnailReviewPreviewUrl(candidate),'./assets/review.jpg');
+let review=ctx.thumbnailDecisionPayload(candidate,'approve_thumbnail');assert.equal(review.previewInspected,false);assert.equal(review.permissionConfirmed,false);assert.equal(review.rightsBasis,null);
+vm.runInContext('thumbnailPreviewsLoaded.add("x")',ctx);review=ctx.thumbnailDecisionPayload(candidate,'approve_thumbnail');assert.equal(review.previewInspected,true);assert.equal(review.permissionConfirmed,false);assert.equal(ctx.approvedThumbnailMediaRecords({x:review}).length,0);
+assert.equal(ctx.approvedThumbnailMediaRecords({x:{...review,permissionConfirmed:true,rightsBasis:'fabricated'}}).length,0);
+assert.equal(ctx.thumbnailReviewPreviewUrl({...candidate,thumbnailUrl:'https://example.test/unlicensed.jpg'}),null);
+assert.equal(ctx.thumbnailReviewPreviewUrl({...candidate,quarantined:true}),null);
+assert.equal(ctx.thumbnailReviewPreviewUrl({...candidate,thumbnailUrl:'./assets/../index.html'}),null);
+Object.assign(candidate,{thumbnailUrl:'./assets/restaurants/licensed-review.jpg',permissionConfirmed:true,permission:'permitted',rightsBasis:'Specific owner grant',attribution:'Named owner',creator:'Named owner',license:'Owner grant',sourceType:'owner_submission',reviewState:'approved',rightsStatus:'production_approved',alt:'Owner-authorized restaurant interior image'});
+review=ctx.thumbnailDecisionPayload(candidate,'approve_thumbnail');assert.equal(review.rightsBasis,'Specific owner grant');assert.equal(ctx.approvedThumbnailMediaRecords({x:review}).length,1);
+assert.equal(ctx.approvedThumbnailMediaRecords({x:{...review,thumbnailUrl:'https://other.test/injected.jpg'}}).length,0);
+const events=readFileSync(new URL('../app-events.js',import.meta.url),'utf8');vm.runInContext(events.slice(events.indexOf('function canonicalEventUrl'),events.indexOf('function renderStructuredEvents')),ctx);
+assert.equal(ctx.canonicalEventUrl({eventUrl:'https://event.test/detail',sourceUrl:'https://event.test/'}),'https://event.test/detail');
+assert.equal(ctx.eventDisplayTitle({title:'Meet Juno Meet Juno'}),'Meet Juno');assert.equal(ctx.eventDisplayTitle({title:'Meet Juno and friends'}),'Meet Juno and friends');
+console.log('Review trust passed: preview is not rights, unseen/legacy approvals cannot export, canonical event links and exact title dedupe.');
+
+let exportedBlob;ctx.Blob=Blob;ctx.document={createElement:()=>({click(){},remove(){}}),body:{appendChild(){}}};ctx.toast=()=>{};ctx.URL.createObjectURL=blob=>{exportedBlob=blob;return 'blob:test'};ctx.URL.revokeObjectURL=()=>{};
+ctx.exportApprovedThumbnailMediaRecords();const exported=JSON.parse(await exportedBlob.text());assert.equal(exported.records.length,0);assert.match(exported.policy,/does not grant rights/);

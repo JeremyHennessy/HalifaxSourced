@@ -20,6 +20,13 @@ window.HALIFAX_DISCOVERED_RESTAURANTS = [
     "sourceLayer": "local_discovery",
     "address": "Lower Water Street, Halifax, NS",
     "phone": null,
+    "email": null,
+    "contactUrl": null,
+    "contactScope": null,
+    "fieldEvidence": null,
+    "openingHoursVerifiedAt": null,
+    "hoursValidThrough": null,
+    "hoursScope": null,
     "website": null,
     "openingHours": null,
     "operatingStatus": "unknown",
@@ -68,6 +75,13 @@ window.HALIFAX_DISCOVERED_RESTAURANTS = [
     "sourceLayer": "local_discovery",
     "address": "1341 Lower Water Street, Halifax, NS B3J 3S8",
     "phone": "902-474-7269",
+    "email": null,
+    "contactUrl": null,
+    "contactScope": null,
+    "fieldEvidence": null,
+    "openingHoursVerifiedAt": null,
+    "hoursValidThrough": null,
+    "hoursScope": null,
     "website": "https://www.waterpolohfx.ca/",
     "openingHours": null,
     "operatingStatus": "unknown",
@@ -122,6 +136,13 @@ window.HALIFAX_DISCOVERED_RESTAURANTS = [
     "sourceLayer": "local_discovery",
     "address": "1341 Lower Water Street, Unit 121, Halifax, NS",
     "phone": "902-492-9222",
+    "email": null,
+    "contactUrl": null,
+    "contactScope": null,
+    "fieldEvidence": null,
+    "openingHoursVerifiedAt": null,
+    "hoursValidThrough": null,
+    "hoursScope": null,
     "website": "https://www.tributerestaurant.ca/",
     "openingHours": "Wednesday–Sunday, 5pm–late",
     "operatingStatus": "unknown",
@@ -176,6 +197,13 @@ window.HALIFAX_DISCOVERED_RESTAURANTS = [
     "sourceLayer": "local_discovery",
     "address": "1688 Barrington Street, Halifax, NS",
     "phone": "902-405-0368",
+    "email": null,
+    "contactUrl": null,
+    "contactScope": null,
+    "fieldEvidence": null,
+    "openingHoursVerifiedAt": null,
+    "hoursValidThrough": null,
+    "hoursScope": null,
     "website": "https://www.stardustbar.ca/",
     "openingHours": "Wednesday–Friday from 3pm; Saturday–Sunday from 11am; closing varies by day",
     "operatingStatus": "unknown",
@@ -229,6 +257,13 @@ window.HALIFAX_DISCOVERED_RESTAURANTS = [
     "sourceLayer": "local_discovery",
     "address": "5189 Prince Street, Halifax, NS",
     "phone": null,
+    "email": null,
+    "contactUrl": null,
+    "contactScope": null,
+    "fieldEvidence": null,
+    "openingHoursVerifiedAt": null,
+    "hoursValidThrough": null,
+    "hoursScope": null,
     "website": "https://www.magnoliahfx.com/",
     "openingHours": "Monday–Thursday 5pm–12am; Friday–Saturday 5pm–1am",
     "operatingStatus": "unknown",
@@ -291,6 +326,13 @@ window.HALIFAX_DISCOVERED_RESTAURANTS = [
     "sourceLayer": "local_discovery",
     "address": "1341 Lower Water Street, Halifax, NS",
     "phone": "902-421-0147",
+    "email": null,
+    "contactUrl": null,
+    "contactScope": null,
+    "fieldEvidence": null,
+    "openingHoursVerifiedAt": null,
+    "hoursValidThrough": null,
+    "hoursScope": null,
     "website": "https://matadorahfx.ca/",
     "openingHours": "Monday–Sunday, 2pm–late",
     "operatingStatus": "unknown",
@@ -338,6 +380,13 @@ window.HALIFAX_DISCOVERED_RESTAURANTS = [
     "sourceLayer": "local_discovery",
     "address": "35 Portland Street, Dartmouth, NS B2Y 1H1",
     "phone": "902-466-7818",
+    "email": null,
+    "contactUrl": null,
+    "contactScope": null,
+    "fieldEvidence": null,
+    "openingHoursVerifiedAt": null,
+    "hoursValidThrough": null,
+    "hoursScope": null,
     "website": "https://www.dartybrewing.ca/",
     "openingHours": "Sunday–Thursday 11am–11pm; Friday–Saturday 11am–midnight",
     "operatingStatus": "unknown",
@@ -416,6 +465,13 @@ window.HALIFAX_DISCOVERED_RESTAURANTS = [
     "sourceLayer": "local_discovery",
     "address": "17 Prince Street, Dartmouth, NS B2Y 4W9",
     "phone": "902-407-2029",
+    "email": null,
+    "contactUrl": null,
+    "contactScope": null,
+    "fieldEvidence": null,
+    "openingHoursVerifiedAt": null,
+    "hoursValidThrough": null,
+    "hoursScope": null,
     "website": "https://www.mariaspantry.ca/",
     "openingHours": "Pantry Tuesday–Saturday 10am–6pm; lunch Friday–Saturday 12pm–2pm",
     "operatingStatus": "unknown",
@@ -488,6 +544,13 @@ window.HALIFAX_DISCOVERED_RESTAURANTS = [
     "sourceLayer": "local_discovery",
     "address": "22 Portland Street, Dartmouth, NS B2Y 1G9",
     "phone": "902-425-9272",
+    "email": null,
+    "contactUrl": null,
+    "contactScope": null,
+    "fieldEvidence": null,
+    "openingHoursVerifiedAt": null,
+    "hoursValidThrough": null,
+    "hoursScope": null,
     "website": "https://www.thecanteen.ca/",
     "openingHours": "Tuesday–Thursday 11am–2:30pm and 5pm–9pm; Friday 11am–2:30pm and 5pm–10pm; Saturday 10am–2pm and 5pm–10pm; Sunday 10am–2pm and 5pm–9pm; Monday closed",
     "operatingStatus": "unknown",
@@ -558,6 +621,13 @@ window.HALIFAX_DISCOVERED_RESTAURANTS = [
     "sourceLayer": "local_discovery",
     "address": "22 Wentworth Street, Dartmouth, NS B2Y 2S6",
     "phone": "902-466-6454",
+    "email": null,
+    "contactUrl": null,
+    "contactScope": null,
+    "fieldEvidence": null,
+    "openingHoursVerifiedAt": null,
+    "hoursValidThrough": null,
+    "hoursScope": null,
     "website": "https://www.oxalisrestaurant.com/",
     "openingHours": "Wednesday–Sunday 5pm–9pm; Monday–Tuesday closed",
     "operatingStatus": "unknown",
@@ -628,6 +698,13 @@ window.HALIFAX_DISCOVERED_RESTAURANTS = [
     "sourceLayer": "local_discovery",
     "address": "21 Portland Street, Unit 2, Dartmouth, NS B2Y 1H1",
     "phone": "902-469-5899",
+    "email": null,
+    "contactUrl": null,
+    "contactScope": null,
+    "fieldEvidence": null,
+    "openingHoursVerifiedAt": null,
+    "hoursValidThrough": null,
+    "hoursScope": null,
     "website": "https://www.sidehustlesnackbar.com/",
     "openingHours": "Tuesday–Thursday 11am–9pm; Friday–Saturday 11am–10pm; Sunday brunch 10:30am–2:30pm; Monday closed",
     "operatingStatus": "unknown",
@@ -706,6 +783,13 @@ window.HALIFAX_DISCOVERED_RESTAURANTS = [
     "sourceLayer": "local_discovery",
     "address": "35 Portland Street, Dartmouth, NS B2Y 1H1",
     "phone": "902-466-7818",
+    "email": null,
+    "contactUrl": null,
+    "contactScope": null,
+    "fieldEvidence": null,
+    "openingHoursVerifiedAt": null,
+    "hoursValidThrough": null,
+    "hoursScope": null,
     "website": "https://lakecitycider.ca/",
     "openingHours": "Daily from 11am; closing varies by day",
     "operatingStatus": "unknown",
@@ -790,8 +874,87 @@ window.HALIFAX_DISCOVERED_RESTAURANTS = [
     "sourceLayer": "local_discovery",
     "address": "799 Sackville Drive, Lower Sackville, NS B4E 1R6",
     "phone": "902-865-6389",
+    "email": null,
+    "contactUrl": "https://kaisersubs.com/contact-us",
+    "contactScope": null,
+    "fieldEvidence": {
+      "coordinates": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://kaisersubs.com/"
+        ],
+        "observedAt": "2026-10-20T19:04:01.565928+00:00",
+        "observation": "Owner homepage JSON-LD Restaurant object inside srcdoc explicitly names Kaisers, 799 Sackville Drive, and latitude 44.7745623 / longitude -63.6931034.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://kaisersubs.com/",
+            "fetchedAt": "2026-10-20T19:04:01.565928+00:00",
+            "httpStatus": 200,
+            "sha256": "e5ce1e61096a99681f0f42ed02f98a00fc798efadff5a255ce44faf3b22b07b0"
+          }
+        ]
+      },
+      "hours": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://kaisersubs.com/contact-us",
+          "https://kaisersubs.com/"
+        ],
+        "observedAt": "2026-10-20T19:04:01.565928+00:00",
+        "observation": "Owner contact states Monday–Saturday order-taking 09:30–19:30, Sunday closed, with pickup from 10:00–19:30. Owner Restaurant JSON-LD confirms Mo-Sa 10:00-19:30.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://kaisersubs.com/contact-us",
+            "fetchedAt": "2026-10-20T19:04:01.564892+00:00",
+            "httpStatus": 200,
+            "sha256": "cdb8d94f3e5f0250c0d815601e6f041c1a24be7c6c9df9ec279e3d20f08ead20"
+          },
+          {
+            "url": "https://kaisersubs.com/",
+            "fetchedAt": "2026-10-20T19:04:01.565928+00:00",
+            "httpStatus": 200,
+            "sha256": "e5ce1e61096a99681f0f42ed02f98a00fc798efadff5a255ce44faf3b22b07b0"
+          }
+        ]
+      },
+      "phone": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://kaisersubs.com/contact-us"
+        ],
+        "observedAt": "2026-10-20T19:04:01.564892+00:00",
+        "observation": "Visible contact phone, matching the same address.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://kaisersubs.com/contact-us",
+            "fetchedAt": "2026-10-20T19:04:01.564892+00:00",
+            "httpStatus": 200,
+            "sha256": "cdb8d94f3e5f0250c0d815601e6f041c1a24be7c6c9df9ec279e3d20f08ead20"
+          }
+        ]
+      },
+      "contact": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://kaisersubs.com/contact-us"
+        ],
+        "observedAt": "2026-10-20T19:04:01.564892+00:00",
+        "observation": "Official contact page with address and telephone.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://kaisersubs.com/contact-us",
+            "fetchedAt": "2026-10-20T19:04:01.564892+00:00",
+            "httpStatus": 200,
+            "sha256": "cdb8d94f3e5f0250c0d815601e6f041c1a24be7c6c9df9ec279e3d20f08ead20"
+          }
+        ]
+      }
+    },
+    "openingHoursVerifiedAt": "2026-10-20T19:04:01.565928+00:00",
+    "hoursValidThrough": null,
+    "hoursScope": "pickup",
     "website": "https://kaisersubs.com/",
-    "openingHours": null,
+    "openingHours": "Pickup hours: Mo 10:00–19:30; Tu 10:00–19:30; We 10:00–19:30; Th 10:00–19:30; Fr 10:00–19:30; Sa 10:00–19:30; Su closed",
     "operatingStatus": "active",
     "operatingStatusEvidence": {
       "claim": "Owner homepage advertises present takeaway/online service. Contact page supplies location and weekly schedule.",
@@ -814,7 +977,10 @@ window.HALIFAX_DISCOVERED_RESTAURANTS = [
       "observedAt": "2026-10-20"
     },
     "openingStatus": null,
-    "coordinates": null,
+    "coordinates": {
+      "lat": 44.7745623,
+      "lon": -63.6931034
+    },
     "socialProfiles": [],
     "summary": "Local takeout in Lower Sackville. Location and operation reviewed against linked sources.",
     "specials": [],
@@ -840,6 +1006,20 @@ window.HALIFAX_DISCOVERED_RESTAURANTS = [
         "url": "https://sackvillebusiness.com/shops-services/kaisers-sub-sandwich-shoppes",
         "status": "verified",
         "observedAt": "2026-10-20"
+      },
+      {
+        "type": "reviewed_field_source",
+        "url": "https://kaisersubs.com/",
+        "label": "Reviewed coordinates source",
+        "status": "verified",
+        "observedAt": "2026-10-20T19:04:01.565928+00:00"
+      },
+      {
+        "type": "reviewed_field_source",
+        "url": "https://kaisersubs.com/contact-us",
+        "label": "Reviewed hours source",
+        "status": "verified",
+        "observedAt": "2026-10-20T19:04:01.565928+00:00"
       }
     ],
     "discoveryReview": {
@@ -861,6 +1041,99 @@ window.HALIFAX_DISCOVERED_RESTAURANTS = [
     "sourceLayer": "local_discovery",
     "address": "585 Sackville Drive, Lower Sackville, NS B4C 2S4",
     "phone": "902-252-8667",
+    "email": null,
+    "contactUrl": "https://www.tomsfamilyrestaurant.ca/location/",
+    "contactScope": null,
+    "fieldEvidence": {
+      "coordinates": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.tomsfamilyrestaurant.ca/location/",
+          "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2832.6124008476445!2d-63.68721208414305!3d44.76831897909889!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4b5988ec21ffb74f%3A0xa6230bf6dc68fafc!2sTom's+Family+Restaurant!5e0!3m2!1sen!2sca!4v1537975487666"
+        ],
+        "observedAt": "2026-10-20T19:04:55.955758+00:00",
+        "observation": "Owner contact embeds a Google map whose current response identifies Tom’s Restaurant, 585 Sackville Dr, and actual place marker [44.768319,-63.6850234]. The iframe viewport longitude -63.68721208414305 was not used.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://www.tomsfamilyrestaurant.ca/location/",
+            "fetchedAt": "2026-10-20T19:03:38.380803+00:00",
+            "httpStatus": 200,
+            "sha256": "5648582aa95d479b1dbdab0f6e882c348a9e7b10fa0c6b6bdea7d5ce72f2c5a0"
+          },
+          {
+            "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2832.6124008476445!2d-63.68721208414305!3d44.76831897909889!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4b5988ec21ffb74f%3A0xa6230bf6dc68fafc!2sTom's+Family+Restaurant!5e0!3m2!1sen!2sca!4v1537975487666",
+            "fetchedAt": "2026-10-20T19:04:55.955758+00:00",
+            "httpStatus": 200,
+            "sha256": "e1a473a8828bcd9b7f5b886cb508157d7196ba7bebcf736f039046f2a01db1b8"
+          }
+        ]
+      },
+      "menu": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.tomsfamilyrestaurant.ca/",
+          "https://www.tomsfamilyrestaurant.ca/desert/",
+          "https://www.tomsfamilyrestaurant.ca/breakfast/"
+        ],
+        "observedAt": "2026-10-20T19:06:18.393373+00:00",
+        "observation": "Official navigation labels /desert/ as Dinner. Dinner and Breakfast pages returned 200 and contain image-based menu content. Menu images were not downloaded or copied.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://www.tomsfamilyrestaurant.ca/",
+            "fetchedAt": "2026-10-20T19:04:01.566744+00:00",
+            "httpStatus": 200,
+            "sha256": "417b3afdab49dce6e641f1b7e4f13c46597bcd5a9eadfaf9b161b1021ebe26cd"
+          },
+          {
+            "url": "https://www.tomsfamilyrestaurant.ca/desert/",
+            "fetchedAt": "2026-10-20T19:06:18.392449+00:00",
+            "httpStatus": 200,
+            "sha256": "12901facebcdc2a04d163866e7c57f92a2b5a6b302e769e161cbf30afe75cbcf"
+          },
+          {
+            "url": "https://www.tomsfamilyrestaurant.ca/breakfast/",
+            "fetchedAt": "2026-10-20T19:06:18.393373+00:00",
+            "httpStatus": 200,
+            "sha256": "18a58b5c6ebc30d68f4a08c1435b6a23719ce10520c46447fd757d16b6078281"
+          }
+        ]
+      },
+      "phone": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.tomsfamilyrestaurant.ca/location/"
+        ],
+        "observedAt": "2026-10-20T19:03:38.380803+00:00",
+        "observation": "Visible official contact phone.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://www.tomsfamilyrestaurant.ca/location/",
+            "fetchedAt": "2026-10-20T19:03:38.380803+00:00",
+            "httpStatus": 200,
+            "sha256": "5648582aa95d479b1dbdab0f6e882c348a9e7b10fa0c6b6bdea7d5ce72f2c5a0"
+          }
+        ]
+      },
+      "contact": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.tomsfamilyrestaurant.ca/location/"
+        ],
+        "observedAt": "2026-10-20T19:03:38.380803+00:00",
+        "observation": "Official Contact Us page with location and contact form; no form submitted.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://www.tomsfamilyrestaurant.ca/location/",
+            "fetchedAt": "2026-10-20T19:03:38.380803+00:00",
+            "httpStatus": 200,
+            "sha256": "5648582aa95d479b1dbdab0f6e882c348a9e7b10fa0c6b6bdea7d5ce72f2c5a0"
+          }
+        ]
+      }
+    },
+    "openingHoursVerifiedAt": null,
+    "hoursValidThrough": null,
+    "hoursScope": null,
     "website": "https://www.tomsfamilyrestaurant.ca/",
     "openingHours": null,
     "operatingStatus": "active",
@@ -885,7 +1158,10 @@ window.HALIFAX_DISCOVERED_RESTAURANTS = [
       "observedAt": "2026-10-20"
     },
     "openingStatus": null,
-    "coordinates": null,
+    "coordinates": {
+      "lat": 44.768319,
+      "lon": -63.6850234
+    },
     "socialProfiles": [],
     "summary": "Local restaurant in Lower Sackville. Location and operation reviewed against linked sources.",
     "specials": [],
@@ -911,6 +1187,57 @@ window.HALIFAX_DISCOVERED_RESTAURANTS = [
         "url": "https://sackvillebusiness.com/shops-services/toms-family-restaurant",
         "status": "verified",
         "observedAt": "2026-10-20"
+      },
+      {
+        "type": "reviewed_field_source",
+        "url": "https://www.tomsfamilyrestaurant.ca/location/",
+        "label": "Reviewed coordinates source",
+        "status": "verified",
+        "observedAt": "2026-10-20T19:04:55.955758+00:00"
+      },
+      {
+        "type": "reviewed_field_source",
+        "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2832.6124008476445!2d-63.68721208414305!3d44.76831897909889!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4b5988ec21ffb74f%3A0xa6230bf6dc68fafc!2sTom's+Family+Restaurant!5e0!3m2!1sen!2sca!4v1537975487666",
+        "label": "Reviewed coordinates source",
+        "status": "verified",
+        "observedAt": "2026-10-20T19:04:55.955758+00:00"
+      },
+      {
+        "type": "menu",
+        "url": "https://www.tomsfamilyrestaurant.ca/desert/",
+        "label": "Owner menu source (confirm current items and prices)",
+        "status": "verified",
+        "observedAt": "2026-10-20T19:06:18.393373+00:00",
+        "contentVerified": false
+      },
+      {
+        "type": "menu",
+        "url": "https://www.tomsfamilyrestaurant.ca/breakfast/",
+        "label": "Owner menu source (confirm current items and prices)",
+        "status": "verified",
+        "observedAt": "2026-10-20T19:06:18.393373+00:00",
+        "contentVerified": false
+      },
+      {
+        "type": "reviewed_field_source",
+        "url": "https://www.tomsfamilyrestaurant.ca/",
+        "label": "Reviewed menu source",
+        "status": "verified",
+        "observedAt": "2026-10-20T19:06:18.393373+00:00"
+      },
+      {
+        "type": "reviewed_field_source",
+        "url": "https://www.tomsfamilyrestaurant.ca/desert/",
+        "label": "Reviewed menu source",
+        "status": "verified",
+        "observedAt": "2026-10-20T19:06:18.393373+00:00"
+      },
+      {
+        "type": "reviewed_field_source",
+        "url": "https://www.tomsfamilyrestaurant.ca/breakfast/",
+        "label": "Reviewed menu source",
+        "status": "verified",
+        "observedAt": "2026-10-20T19:06:18.393373+00:00"
       }
     ],
     "discoveryReview": {
@@ -932,6 +1259,92 @@ window.HALIFAX_DISCOVERED_RESTAURANTS = [
     "sourceLayer": "local_discovery",
     "address": "111 Cobequid Road, Lower Sackville, NS B4C 2N1",
     "phone": "902-252-3500",
+    "email": "mediterrakitchen@hotmail.com",
+    "contactUrl": "https://mediterrakitchen.ca/#contact",
+    "contactScope": null,
+    "fieldEvidence": {
+      "coordinates": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://mediterrakitchen.ca/",
+          "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2833.2061065640396!2d-63.66350408436192!3d44.756211179099!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4b598850139badd1%3A0x142ea99345fe4d3c!2s111%20Cobequid%20Rd%2C%20Lower%20Sackville%2C%20NS%20B4C%202N1!5e0!3m2!1sen!2sca!4v1605755505370!5m2!1sen!2sca"
+        ],
+        "observedAt": "2026-10-20T19:04:59.303313+00:00",
+        "observation": "Owner homepage embeds exact 111 Cobequid Road address pin. Embed response attaches [44.75615,-63.66135] to 111 Cobequid Rd, Lower Sackville, NS B4C 2N1; viewport center not used.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://mediterrakitchen.ca/",
+            "fetchedAt": "2026-10-20T19:04:01.567604+00:00",
+            "httpStatus": 200,
+            "sha256": "3a0ac8c61901fc527d544c6f6a8c2310989cf3959cd036c96728e50b617d3c38"
+          },
+          {
+            "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2833.2061065640396!2d-63.66350408436192!3d44.756211179099!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4b598850139badd1%3A0x142ea99345fe4d3c!2s111%20Cobequid%20Rd%2C%20Lower%20Sackville%2C%20NS%20B4C%202N1!5e0!3m2!1sen!2sca!4v1605755505370!5m2!1sen!2sca",
+            "fetchedAt": "2026-10-20T19:04:59.303313+00:00",
+            "httpStatus": 200,
+            "sha256": "737d430a3d51024f40e1494cf7207aab3b399704f29143eabc237cc5320883af"
+          }
+        ]
+      },
+      "menu": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://mediterrakitchen.ca/",
+          "https://mediterrakitchen.ca/our-menu/"
+        ],
+        "observedAt": "2026-10-20T19:04:06.344770+00:00",
+        "observation": "Official Menu navigation and full restaurant food menu under same domain.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://mediterrakitchen.ca/",
+            "fetchedAt": "2026-10-20T19:04:01.567604+00:00",
+            "httpStatus": 200,
+            "sha256": "3a0ac8c61901fc527d544c6f6a8c2310989cf3959cd036c96728e50b617d3c38"
+          },
+          {
+            "url": "https://mediterrakitchen.ca/our-menu/",
+            "fetchedAt": "2026-10-20T19:04:06.344770+00:00",
+            "httpStatus": 200,
+            "sha256": "354afbd48576b5af13dfee5f096695683ec5bc055605c9a0e91572cefef3a3a5"
+          }
+        ]
+      },
+      "phone": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://mediterrakitchen.ca/"
+        ],
+        "observedAt": "2026-10-20T19:04:01.567604+00:00",
+        "observation": "Visible Phone (902) 252 3500 in contact section for 111 Cobequid Road.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://mediterrakitchen.ca/",
+            "fetchedAt": "2026-10-20T19:04:01.567604+00:00",
+            "httpStatus": 200,
+            "sha256": "3a0ac8c61901fc527d544c6f6a8c2310989cf3959cd036c96728e50b617d3c38"
+          }
+        ]
+      },
+      "contact": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://mediterrakitchen.ca/"
+        ],
+        "observedAt": "2026-10-20T19:04:01.567604+00:00",
+        "observation": "Official contact section explicitly publishes the restaurant email and matching address.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://mediterrakitchen.ca/",
+            "fetchedAt": "2026-10-20T19:04:01.567604+00:00",
+            "httpStatus": 200,
+            "sha256": "3a0ac8c61901fc527d544c6f6a8c2310989cf3959cd036c96728e50b617d3c38"
+          }
+        ]
+      }
+    },
+    "openingHoursVerifiedAt": null,
+    "hoursValidThrough": null,
+    "hoursScope": null,
     "website": "https://mediterrakitchen.ca/",
     "openingHours": null,
     "operatingStatus": "active",
@@ -957,7 +1370,10 @@ window.HALIFAX_DISCOVERED_RESTAURANTS = [
       "observedAt": "2026-10-20"
     },
     "openingStatus": null,
-    "coordinates": null,
+    "coordinates": {
+      "lat": 44.75615,
+      "lon": -63.66135
+    },
     "socialProfiles": [],
     "summary": "Local restaurant in Lower Sackville. Location and operation reviewed against linked sources.",
     "specials": [],
@@ -990,6 +1406,27 @@ window.HALIFAX_DISCOVERED_RESTAURANTS = [
         "url": "https://mediterrakitchen.ca/our-menu/",
         "status": "verified",
         "observedAt": "2026-10-20"
+      },
+      {
+        "type": "reviewed_field_source",
+        "url": "https://mediterrakitchen.ca/",
+        "label": "Reviewed coordinates source",
+        "status": "verified",
+        "observedAt": "2026-10-20T19:04:59.303313+00:00"
+      },
+      {
+        "type": "reviewed_field_source",
+        "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2833.2061065640396!2d-63.66350408436192!3d44.756211179099!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4b598850139badd1%3A0x142ea99345fe4d3c!2s111%20Cobequid%20Rd%2C%20Lower%20Sackville%2C%20NS%20B4C%202N1!5e0!3m2!1sen!2sca!4v1605755505370!5m2!1sen!2sca",
+        "label": "Reviewed coordinates source",
+        "status": "verified",
+        "observedAt": "2026-10-20T19:04:59.303313+00:00"
+      },
+      {
+        "type": "reviewed_field_source",
+        "url": "https://mediterrakitchen.ca/our-menu/",
+        "label": "Reviewed menu source",
+        "status": "verified",
+        "observedAt": "2026-10-20T19:04:06.344770+00:00"
       }
     ],
     "discoveryReview": {
@@ -1011,6 +1448,13 @@ window.HALIFAX_DISCOVERED_RESTAURANTS = [
     "sourceLayer": "local_discovery",
     "address": "963 Sackville Drive, Middle Sackville, NS B4E 1S2",
     "phone": "902-865-6194",
+    "email": null,
+    "contactUrl": null,
+    "contactScope": null,
+    "fieldEvidence": {},
+    "openingHoursVerifiedAt": null,
+    "hoursValidThrough": null,
+    "hoursScope": null,
     "website": "https://tapandtimber.ca/",
     "openingHours": null,
     "operatingStatus": "active",
@@ -1074,6 +1518,60 @@ window.HALIFAX_DISCOVERED_RESTAURANTS = [
     "sourceLayer": "local_discovery",
     "address": "585 Sackville Drive, Unit 1, Lower Sackville, NS B4C 2S4",
     "phone": "902-864-6401",
+    "email": "hello@thepinkpianocafe.com",
+    "contactUrl": "https://thepinkpianocafe.com/",
+    "contactScope": null,
+    "fieldEvidence": {
+      "phone": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://thepinkpianocafe.com/",
+          "https://thepinkpianocafe.com/pages/about"
+        ],
+        "observedAt": "2026-10-20T19:04:07.135613+00:00",
+        "observation": "Matching visible footer phone on both owner pages.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://thepinkpianocafe.com/",
+            "fetchedAt": "2026-10-20T19:04:07.063936+00:00",
+            "httpStatus": 200,
+            "sha256": "3a9a456b0d896cc8a58ea8ce204bf67c39252bbd180a5883bb7fbd6a61c49da8"
+          },
+          {
+            "url": "https://thepinkpianocafe.com/pages/about",
+            "fetchedAt": "2026-10-20T19:04:07.135613+00:00",
+            "httpStatus": 200,
+            "sha256": "b6bbb98490ec6bc85265aff523527aefe6018868d0cb22c03d26f9d7509f6ae6"
+          }
+        ]
+      },
+      "contact": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://thepinkpianocafe.com/",
+          "https://thepinkpianocafe.com/pages/about"
+        ],
+        "observedAt": "2026-10-20T19:04:07.135613+00:00",
+        "observation": "Matching public email on both owner pages.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://thepinkpianocafe.com/",
+            "fetchedAt": "2026-10-20T19:04:07.063936+00:00",
+            "httpStatus": 200,
+            "sha256": "3a9a456b0d896cc8a58ea8ce204bf67c39252bbd180a5883bb7fbd6a61c49da8"
+          },
+          {
+            "url": "https://thepinkpianocafe.com/pages/about",
+            "fetchedAt": "2026-10-20T19:04:07.135613+00:00",
+            "httpStatus": 200,
+            "sha256": "b6bbb98490ec6bc85265aff523527aefe6018868d0cb22c03d26f9d7509f6ae6"
+          }
+        ]
+      }
+    },
+    "openingHoursVerifiedAt": null,
+    "hoursValidThrough": null,
+    "hoursScope": null,
     "website": "https://thepinkpianocafe.com/",
     "openingHours": null,
     "operatingStatus": "active",
@@ -1124,6 +1622,20 @@ window.HALIFAX_DISCOVERED_RESTAURANTS = [
         "url": "https://sackvillebusiness.com/shops-services/pink-piano-cafe-lounge",
         "status": "verified",
         "observedAt": "2026-10-20"
+      },
+      {
+        "type": "reviewed_field_source",
+        "url": "https://thepinkpianocafe.com/",
+        "label": "Reviewed phone source",
+        "status": "verified",
+        "observedAt": "2026-10-20T19:04:07.135613+00:00"
+      },
+      {
+        "type": "reviewed_field_source",
+        "url": "https://thepinkpianocafe.com/pages/about",
+        "label": "Reviewed phone source",
+        "status": "verified",
+        "observedAt": "2026-10-20T19:04:07.135613+00:00"
       }
     ],
     "discoveryReview": {
@@ -1145,6 +1657,13 @@ window.HALIFAX_DISCOVERED_RESTAURANTS = [
     "sourceLayer": "local_discovery",
     "address": "1622 Sackville Drive, Middle Sackville, NS B4E 3A8",
     "phone": "902-252-2925",
+    "email": null,
+    "contactUrl": null,
+    "contactScope": null,
+    "fieldEvidence": {},
+    "openingHoursVerifiedAt": null,
+    "hoursValidThrough": null,
+    "hoursScope": null,
     "website": "https://frydaddyssackville.com/",
     "openingHours": null,
     "operatingStatus": "active",
@@ -1208,6 +1727,46 @@ window.HALIFAX_DISCOVERED_RESTAURANTS = [
     "sourceLayer": "local_discovery",
     "address": "858 Sackville Drive, Lower Sackville, NS B4E 1R7",
     "phone": "902-864-2094",
+    "email": null,
+    "contactUrl": "https://antoinettescheesecakes.ca/pages/contact-us",
+    "contactScope": null,
+    "fieldEvidence": {
+      "phone": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://antoinettescheesecakes.ca/pages/contact-us"
+        ],
+        "observedAt": "2026-10-20T19:04:11.231876+00:00",
+        "observation": "Official locations page explicitly pairs LOWER SACKVILLE / 858 Sackville Drive with 902-864-2094.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://antoinettescheesecakes.ca/pages/contact-us",
+            "fetchedAt": "2026-10-20T19:04:11.231876+00:00",
+            "httpStatus": 200,
+            "sha256": "6ecb26ba2cda84bc775678d3ee27ecfbc6e81e3699f4dd71a9617da365acf1a2"
+          }
+        ]
+      },
+      "contact": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://antoinettescheesecakes.ca/pages/contact-us"
+        ],
+        "observedAt": "2026-10-20T19:04:11.231876+00:00",
+        "observation": "Owner Locations & Hours page gives separate location phones.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://antoinettescheesecakes.ca/pages/contact-us",
+            "fetchedAt": "2026-10-20T19:04:11.231876+00:00",
+            "httpStatus": 200,
+            "sha256": "6ecb26ba2cda84bc775678d3ee27ecfbc6e81e3699f4dd71a9617da365acf1a2"
+          }
+        ]
+      }
+    },
+    "openingHoursVerifiedAt": null,
+    "hoursValidThrough": null,
+    "hoursScope": null,
     "website": "https://antoinettescheesecakes.ca/",
     "openingHours": null,
     "operatingStatus": "active",
@@ -1258,6 +1817,13 @@ window.HALIFAX_DISCOVERED_RESTAURANTS = [
         "url": "https://antoinettescheesecakes.ca/",
         "status": "verified",
         "observedAt": "2026-10-20"
+      },
+      {
+        "type": "reviewed_field_source",
+        "url": "https://antoinettescheesecakes.ca/pages/contact-us",
+        "label": "Reviewed phone source",
+        "status": "verified",
+        "observedAt": "2026-10-20T19:04:11.231876+00:00"
       }
     ],
     "discoveryReview": {
@@ -1279,6 +1845,46 @@ window.HALIFAX_DISCOVERED_RESTAURANTS = [
     "sourceLayer": "local_discovery",
     "address": "771 Bedford Highway, Halifax, NS B4A 1A1",
     "phone": "902-835-2032",
+    "email": null,
+    "contactUrl": "https://antoinettescheesecakes.ca/pages/contact-us",
+    "contactScope": null,
+    "fieldEvidence": {
+      "phone": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://antoinettescheesecakes.ca/pages/contact-us"
+        ],
+        "observedAt": "2026-10-20T19:04:11.231876+00:00",
+        "observation": "Official locations page explicitly pairs BEDFORD / 771 Bedford Highway with 902-835-2032.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://antoinettescheesecakes.ca/pages/contact-us",
+            "fetchedAt": "2026-10-20T19:04:11.231876+00:00",
+            "httpStatus": 200,
+            "sha256": "6ecb26ba2cda84bc775678d3ee27ecfbc6e81e3699f4dd71a9617da365acf1a2"
+          }
+        ]
+      },
+      "contact": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://antoinettescheesecakes.ca/pages/contact-us"
+        ],
+        "observedAt": "2026-10-20T19:04:11.231876+00:00",
+        "observation": "Owner Locations & Hours page gives separate location phones.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://antoinettescheesecakes.ca/pages/contact-us",
+            "fetchedAt": "2026-10-20T19:04:11.231876+00:00",
+            "httpStatus": 200,
+            "sha256": "6ecb26ba2cda84bc775678d3ee27ecfbc6e81e3699f4dd71a9617da365acf1a2"
+          }
+        ]
+      }
+    },
+    "openingHoursVerifiedAt": null,
+    "hoursValidThrough": null,
+    "hoursScope": null,
     "website": "https://antoinettescheesecakes.ca/",
     "openingHours": null,
     "operatingStatus": "active",
@@ -1329,6 +1935,13 @@ window.HALIFAX_DISCOVERED_RESTAURANTS = [
         "url": "https://antoinettescheesecakes.ca/",
         "status": "verified",
         "observedAt": "2026-10-20"
+      },
+      {
+        "type": "reviewed_field_source",
+        "url": "https://antoinettescheesecakes.ca/pages/contact-us",
+        "label": "Reviewed phone source",
+        "status": "verified",
+        "observedAt": "2026-10-20T19:04:11.231876+00:00"
       }
     ],
     "discoveryReview": {
@@ -1350,6 +1963,46 @@ window.HALIFAX_DISCOVERED_RESTAURANTS = [
     "sourceLayer": "local_discovery",
     "address": "250 Baker Drive, Dartmouth, NS B2W 6L4",
     "phone": "902-880-9113",
+    "email": null,
+    "contactUrl": "https://antoinettescheesecakes.ca/pages/contact-us",
+    "contactScope": null,
+    "fieldEvidence": {
+      "phone": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://antoinettescheesecakes.ca/pages/contact-us"
+        ],
+        "observedAt": "2026-10-20T19:04:11.231876+00:00",
+        "observation": "Official locations page explicitly pairs DARTMOUTH / 250 Baker Drive with 902-880-9113.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://antoinettescheesecakes.ca/pages/contact-us",
+            "fetchedAt": "2026-10-20T19:04:11.231876+00:00",
+            "httpStatus": 200,
+            "sha256": "6ecb26ba2cda84bc775678d3ee27ecfbc6e81e3699f4dd71a9617da365acf1a2"
+          }
+        ]
+      },
+      "contact": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://antoinettescheesecakes.ca/pages/contact-us"
+        ],
+        "observedAt": "2026-10-20T19:04:11.231876+00:00",
+        "observation": "Owner Locations & Hours page gives separate location phones.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://antoinettescheesecakes.ca/pages/contact-us",
+            "fetchedAt": "2026-10-20T19:04:11.231876+00:00",
+            "httpStatus": 200,
+            "sha256": "6ecb26ba2cda84bc775678d3ee27ecfbc6e81e3699f4dd71a9617da365acf1a2"
+          }
+        ]
+      }
+    },
+    "openingHoursVerifiedAt": null,
+    "hoursValidThrough": null,
+    "hoursScope": null,
     "website": "https://antoinettescheesecakes.ca/",
     "openingHours": null,
     "operatingStatus": "active",
@@ -1400,6 +2053,13 @@ window.HALIFAX_DISCOVERED_RESTAURANTS = [
         "url": "https://antoinettescheesecakes.ca/",
         "status": "verified",
         "observedAt": "2026-10-20"
+      },
+      {
+        "type": "reviewed_field_source",
+        "url": "https://antoinettescheesecakes.ca/pages/contact-us",
+        "label": "Reviewed phone source",
+        "status": "verified",
+        "observedAt": "2026-10-20T19:04:11.231876+00:00"
       }
     ],
     "discoveryReview": {
@@ -1421,8 +2081,64 @@ window.HALIFAX_DISCOVERED_RESTAURANTS = [
     "sourceLayer": "local_discovery",
     "address": "833 Sackville Drive, Unit 104, Lower Sackville, NS",
     "phone": null,
+    "email": "hello@apt3coffee.com",
+    "contactUrl": "https://apt3coffee.com/#contact",
+    "contactScope": "shared_brand",
+    "fieldEvidence": {
+      "coordinates": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://apt3coffee.com/"
+        ],
+        "observedAt": "2026-10-20T19:04:12.425200+00:00",
+        "observation": "Owner Squarespace map block location object explicitly supplies markerLat/markerLng next to the matching street address.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://apt3coffee.com/",
+            "fetchedAt": "2026-10-20T19:04:12.425200+00:00",
+            "httpStatus": 200,
+            "sha256": "b2f81c43db4303e1ad2df2d81796240b1a08e4a4c9db2061a31beb36bd321049"
+          }
+        ]
+      },
+      "hours": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://apt3coffee.com/"
+        ],
+        "observedAt": "2026-10-20T19:04:12.425200+00:00",
+        "observation": "833 Sackville Drive Unit 104: Mon–Fri 07:00–18:00; Sat 08:00–17:00; Sun 12:00–17:00.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://apt3coffee.com/",
+            "fetchedAt": "2026-10-20T19:04:12.425200+00:00",
+            "httpStatus": 200,
+            "sha256": "b2f81c43db4303e1ad2df2d81796240b1a08e4a4c9db2061a31beb36bd321049"
+          }
+        ]
+      },
+      "contact": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://apt3coffee.com/"
+        ],
+        "observedAt": "2026-10-20T19:04:12.425200+00:00",
+        "observation": "Owner navigation explicitly links mailto:hello@apt3coffee.com, shared by this two-location site.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://apt3coffee.com/",
+            "fetchedAt": "2026-10-20T19:04:12.425200+00:00",
+            "httpStatus": 200,
+            "sha256": "b2f81c43db4303e1ad2df2d81796240b1a08e4a4c9db2061a31beb36bd321049"
+          }
+        ]
+      }
+    },
+    "openingHoursVerifiedAt": "2026-10-20T19:04:12.425200+00:00",
+    "hoursValidThrough": null,
+    "hoursScope": "cafe",
     "website": "https://apt3coffee.com/",
-    "openingHours": null,
+    "openingHours": "Mo 07:00–18:00; Tu 07:00–18:00; We 07:00–18:00; Th 07:00–18:00; Fr 07:00–18:00; Sa 08:00–17:00; Su 12:00–17:00",
     "operatingStatus": "active",
     "operatingStatusEvidence": {
       "claim": "Owner homepage separately identifies both locations and weekly schedules, with catering/private dining links.",
@@ -1445,7 +2161,10 @@ window.HALIFAX_DISCOVERED_RESTAURANTS = [
       "observedAt": "2026-10-20"
     },
     "openingStatus": null,
-    "coordinates": null,
+    "coordinates": {
+      "lat": 44.7759475,
+      "lon": -63.69469099999999
+    },
     "socialProfiles": [],
     "summary": "Local cafe in Lower Sackville. Location and operation reviewed against linked sources.",
     "specials": [],
@@ -1471,6 +2190,13 @@ window.HALIFAX_DISCOVERED_RESTAURANTS = [
         "url": "https://www.thecoast.ca/food-drink-2/where-i-work-apartment-3-espresso-bar-16329640/",
         "status": "verified",
         "observedAt": "2026-10-20"
+      },
+      {
+        "type": "reviewed_field_source",
+        "url": "https://apt3coffee.com/",
+        "label": "Reviewed coordinates source",
+        "status": "verified",
+        "observedAt": "2026-10-20T19:04:12.425200+00:00"
       }
     ],
     "discoveryReview": {
@@ -1492,8 +2218,64 @@ window.HALIFAX_DISCOVERED_RESTAURANTS = [
     "sourceLayer": "local_discovery",
     "address": "1565 South Park Street, Unit 2, Halifax, NS",
     "phone": null,
+    "email": "hello@apt3coffee.com",
+    "contactUrl": "https://apt3coffee.com/#contact",
+    "contactScope": "shared_brand",
+    "fieldEvidence": {
+      "coordinates": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://apt3coffee.com/"
+        ],
+        "observedAt": "2026-10-20T19:04:12.425200+00:00",
+        "observation": "Owner Squarespace map block location object explicitly supplies markerLat/markerLng next to the matching street address.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://apt3coffee.com/",
+            "fetchedAt": "2026-10-20T19:04:12.425200+00:00",
+            "httpStatus": 200,
+            "sha256": "b2f81c43db4303e1ad2df2d81796240b1a08e4a4c9db2061a31beb36bd321049"
+          }
+        ]
+      },
+      "hours": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://apt3coffee.com/"
+        ],
+        "observedAt": "2026-10-20T19:04:12.425200+00:00",
+        "observation": "1565 South Park Street Unit 2: Mon closed; Tue–Fri 08:00–15:00; Sat 09:00–15:00; Sun 09:00–13:00.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://apt3coffee.com/",
+            "fetchedAt": "2026-10-20T19:04:12.425200+00:00",
+            "httpStatus": 200,
+            "sha256": "b2f81c43db4303e1ad2df2d81796240b1a08e4a4c9db2061a31beb36bd321049"
+          }
+        ]
+      },
+      "contact": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://apt3coffee.com/"
+        ],
+        "observedAt": "2026-10-20T19:04:12.425200+00:00",
+        "observation": "Owner navigation explicitly links mailto:hello@apt3coffee.com, shared by this two-location site.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://apt3coffee.com/",
+            "fetchedAt": "2026-10-20T19:04:12.425200+00:00",
+            "httpStatus": 200,
+            "sha256": "b2f81c43db4303e1ad2df2d81796240b1a08e4a4c9db2061a31beb36bd321049"
+          }
+        ]
+      }
+    },
+    "openingHoursVerifiedAt": "2026-10-20T19:04:12.425200+00:00",
+    "hoursValidThrough": null,
+    "hoursScope": "cafe",
     "website": "https://apt3coffee.com/",
-    "openingHours": null,
+    "openingHours": "Mo closed; Tu 08:00–15:00; We 08:00–15:00; Th 08:00–15:00; Fr 08:00–15:00; Sa 09:00–15:00; Su 09:00–13:00",
     "operatingStatus": "active",
     "operatingStatusEvidence": {
       "claim": "Owner homepage separately identifies both locations and weekly schedules, with catering/private dining links.",
@@ -1516,7 +2298,10 @@ window.HALIFAX_DISCOVERED_RESTAURANTS = [
       "observedAt": "2026-10-20"
     },
     "openingStatus": null,
-    "coordinates": null,
+    "coordinates": {
+      "lat": 44.6437785,
+      "lon": -63.5799444
+    },
     "socialProfiles": [],
     "summary": "Local cafe in South End. Location and operation reviewed against linked sources.",
     "specials": [],
@@ -1542,6 +2327,13 @@ window.HALIFAX_DISCOVERED_RESTAURANTS = [
         "url": "https://www.thecoast.ca/food-drink-2/where-i-work-apartment-3-espresso-bar-16329640/",
         "status": "verified",
         "observedAt": "2026-10-20"
+      },
+      {
+        "type": "reviewed_field_source",
+        "url": "https://apt3coffee.com/",
+        "label": "Reviewed coordinates source",
+        "status": "verified",
+        "observedAt": "2026-10-20T19:04:12.425200+00:00"
       }
     ],
     "discoveryReview": {
@@ -1562,7 +2354,93 @@ window.HALIFAX_DISCOVERED_RESTAURANTS = [
     "evidenceStatus": "verified",
     "sourceLayer": "local_discovery",
     "address": "995 Herring Cove Road, Herring Cove, NS B3V 1H6",
-    "phone": null,
+    "phone": "902-407-4008",
+    "email": "info@paviagallery.com",
+    "contactUrl": "https://www.paviagallery.com/contact",
+    "contactScope": null,
+    "fieldEvidence": {
+      "coordinates": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.paviagallery.com/contact"
+        ],
+        "observedAt": "2026-10-20T19:04:13.490767+00:00",
+        "observation": "Owner contact address link includes exact Google place marker !3d44.5703383!4d-63.5684298. Viewport longitude -63.5706185 not used.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://www.paviagallery.com/contact",
+            "fetchedAt": "2026-10-20T19:04:13.490767+00:00",
+            "httpStatus": 200,
+            "sha256": "13a479d3063ee1823a9f15557ad3dcca167f91d399dc2b3a57fd5b1d0f012077"
+          }
+        ]
+      },
+      "menu": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.paviagallery.com/menu"
+        ],
+        "observedAt": "2026-10-20T19:04:14.918664+00:00",
+        "observation": "Current Our MENU page has restaurant menu text and warns of seasonal variation. No imagery copied.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://www.paviagallery.com/menu",
+            "fetchedAt": "2026-10-20T19:04:14.918664+00:00",
+            "httpStatus": 200,
+            "sha256": "ec7c34cb213cd2e56d561500bed5eb2a7c0fdd6467b7b19cfb3c27b573081fe2"
+          }
+        ]
+      },
+      "phone": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.paviagallery.com/contact",
+          "https://www.paviagallery.com/menu"
+        ],
+        "observedAt": "2026-10-20T19:04:14.918664+00:00",
+        "observation": "Owner Organization JSON-LD specifies telephone 9024074008 and exact 995 Herring Cove Road address.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://www.paviagallery.com/contact",
+            "fetchedAt": "2026-10-20T19:04:13.490767+00:00",
+            "httpStatus": 200,
+            "sha256": "13a479d3063ee1823a9f15557ad3dcca167f91d399dc2b3a57fd5b1d0f012077"
+          },
+          {
+            "url": "https://www.paviagallery.com/menu",
+            "fetchedAt": "2026-10-20T19:04:14.918664+00:00",
+            "httpStatus": 200,
+            "sha256": "ec7c34cb213cd2e56d561500bed5eb2a7c0fdd6467b7b19cfb3c27b573081fe2"
+          }
+        ]
+      },
+      "contact": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.paviagallery.com/contact",
+          "https://www.paviagallery.com/menu"
+        ],
+        "observedAt": "2026-10-20T19:04:14.918664+00:00",
+        "observation": "Footer mailto link and owner Organization schema both publish info@paviagallery.com.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://www.paviagallery.com/contact",
+            "fetchedAt": "2026-10-20T19:04:13.490767+00:00",
+            "httpStatus": 200,
+            "sha256": "13a479d3063ee1823a9f15557ad3dcca167f91d399dc2b3a57fd5b1d0f012077"
+          },
+          {
+            "url": "https://www.paviagallery.com/menu",
+            "fetchedAt": "2026-10-20T19:04:14.918664+00:00",
+            "httpStatus": 200,
+            "sha256": "ec7c34cb213cd2e56d561500bed5eb2a7c0fdd6467b7b19cfb3c27b573081fe2"
+          }
+        ]
+      }
+    },
+    "openingHoursVerifiedAt": null,
+    "hoursValidThrough": null,
+    "hoursScope": null,
     "website": "https://www.paviagallery.com/",
     "openingHours": null,
     "operatingStatus": "active",
@@ -1589,7 +2467,10 @@ window.HALIFAX_DISCOVERED_RESTAURANTS = [
       "observedAt": "2026-10-20"
     },
     "openingStatus": null,
-    "coordinates": null,
+    "coordinates": {
+      "lat": 44.5703383,
+      "lon": -63.5684298
+    },
     "socialProfiles": [],
     "summary": "Local cafe in Herring Cove. Location and operation reviewed against linked sources.",
     "specials": [],
@@ -1629,6 +2510,20 @@ window.HALIFAX_DISCOVERED_RESTAURANTS = [
         "url": "https://www.paviagallery.com/menu",
         "status": "verified",
         "observedAt": "2026-10-20"
+      },
+      {
+        "type": "reviewed_field_source",
+        "url": "https://www.paviagallery.com/contact",
+        "label": "Reviewed coordinates source",
+        "status": "verified",
+        "observedAt": "2026-10-20T19:04:13.490767+00:00"
+      },
+      {
+        "type": "reviewed_field_source",
+        "url": "https://www.paviagallery.com/menu",
+        "label": "Reviewed menu source",
+        "status": "verified",
+        "observedAt": "2026-10-20T19:04:14.918664+00:00"
       }
     ],
     "discoveryReview": {
@@ -1652,7 +2547,70 @@ window.HALIFAX_DISCOVERED_RESTAURANTS = [
     "evidenceStatus": "verified",
     "sourceLayer": "local_discovery",
     "address": "6 Government Wharf Rd, Eastern Passage, NS B3G 1M7",
-    "phone": null,
+    "phone": "902-465-3474",
+    "email": "info@boondocksrestaurant.ca",
+    "contactUrl": "https://www.boondocksrestaurant.ca/contact-us",
+    "contactScope": null,
+    "fieldEvidence": {
+      "menu": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.boondocksrestaurant.ca/copy-of-menu"
+        ],
+        "observedAt": "2026-10-20T19:04:50.881790+00:00",
+        "observation": "Owner MENU link and fetched page contain the full appetizers and main meals menu.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://www.boondocksrestaurant.ca/copy-of-menu",
+            "fetchedAt": "2026-10-20T19:04:50.881790+00:00",
+            "httpStatus": 200,
+            "sha256": "99484c9be45dfad614f4497f9ac9046390257d293eecf54ea6118b062bd7922a"
+          }
+        ]
+      },
+      "phone": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.boondocksrestaurant.ca/"
+        ],
+        "observedAt": "2026-10-20T19:03:31Z",
+        "observation": "Owner page publishes 902-465-3474.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://www.boondocksrestaurant.ca/",
+            "fetchedAt": "2026-10-20T19:03:31Z",
+            "httpStatus": 200,
+            "sha256": "6e0125afbff42519e1119a8c790dea7d6100cd6cb2132d88303953ae7981a938"
+          }
+        ]
+      },
+      "contact": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.boondocksrestaurant.ca/contact-us",
+          "https://www.boondocksrestaurant.ca/"
+        ],
+        "observedAt": "2026-10-20T19:04:50.880703+00:00",
+        "observation": "Official contact page successfully fetched. Owner page publishes info@boondocksrestaurant.ca.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://www.boondocksrestaurant.ca/",
+            "fetchedAt": "2026-10-20T19:03:31Z",
+            "httpStatus": 200,
+            "sha256": "6e0125afbff42519e1119a8c790dea7d6100cd6cb2132d88303953ae7981a938"
+          },
+          {
+            "url": "https://www.boondocksrestaurant.ca/contact-us",
+            "fetchedAt": "2026-10-20T19:04:50.880703+00:00",
+            "httpStatus": 200,
+            "sha256": "c7a0638a9c694765bb1bcb4bd835ae5c25f01c41d0b1b4f668f654ca1cd44ba5"
+          }
+        ]
+      }
+    },
+    "openingHoursVerifiedAt": null,
+    "hoursValidThrough": null,
+    "hoursScope": null,
     "website": "https://www.boondocksrestaurant.ca/",
     "openingHours": null,
     "operatingStatus": "active",
@@ -1695,6 +2653,35 @@ window.HALIFAX_DISCOVERED_RESTAURANTS = [
         "url": "https://rans.ca/restaurants/boondocks-restaurant/",
         "status": "verified",
         "observedAt": "2026-10-20"
+      },
+      {
+        "type": "menu",
+        "url": "https://www.boondocksrestaurant.ca/copy-of-menu",
+        "label": "Owner menu source (confirm current items and prices)",
+        "status": "verified",
+        "observedAt": "2026-10-20T19:04:50.881790+00:00",
+        "contentVerified": true
+      },
+      {
+        "type": "reviewed_field_source",
+        "url": "https://www.boondocksrestaurant.ca/copy-of-menu",
+        "label": "Reviewed menu source",
+        "status": "verified",
+        "observedAt": "2026-10-20T19:04:50.881790+00:00"
+      },
+      {
+        "type": "reviewed_field_source",
+        "url": "https://www.boondocksrestaurant.ca/",
+        "label": "Reviewed phone source",
+        "status": "verified",
+        "observedAt": "2026-10-20T19:03:31Z"
+      },
+      {
+        "type": "reviewed_field_source",
+        "url": "https://www.boondocksrestaurant.ca/contact-us",
+        "label": "Reviewed contact source",
+        "status": "verified",
+        "observedAt": "2026-10-20T19:04:50.880703+00:00"
       }
     ],
     "discoveryReview": {
@@ -1718,9 +2705,104 @@ window.HALIFAX_DISCOVERED_RESTAURANTS = [
     "evidenceStatus": "verified",
     "sourceLayer": "local_discovery",
     "address": "942 Cole Harbour Rd, Dartmouth, NS B2V 1E6",
-    "phone": null,
+    "phone": "902-434-6402",
+    "email": "fernando@palladiumfamily.ca",
+    "contactUrl": "https://palladiumfamily.ca/contact/",
+    "contactScope": null,
+    "fieldEvidence": {
+      "coordinates": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://palladiumfamily.ca/"
+        ],
+        "observedAt": "2026-10-20T19:03:49.715843+00:00",
+        "observation": "Owner HTML has class awb-openstreet-map-marker and data-latitude=\"44.67105004414676\" data-longitude=\"-63.496347360700256\". This is an explicit marker, not map center.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://palladiumfamily.ca/",
+            "fetchedAt": "2026-10-20T19:03:49.715843+00:00",
+            "httpStatus": 200,
+            "sha256": "44b58170eae4e65fba1255f3b672ca60ab05e08a0c1ed8ec2f43d978c9c3fc9b"
+          }
+        ]
+      },
+      "hours": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://palladiumfamily.ca/"
+        ],
+        "observedAt": "2026-10-20T19:03:49.715843+00:00",
+        "observation": "Hours of Operation: Monday CLOSED; TUESDAY-FRIDAY 10AM-8PM; SATURDAY 9AM-8PM; SUNDAY 9AM-7PM.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://palladiumfamily.ca/",
+            "fetchedAt": "2026-10-20T19:03:49.715843+00:00",
+            "httpStatus": 200,
+            "sha256": "44b58170eae4e65fba1255f3b672ca60ab05e08a0c1ed8ec2f43d978c9c3fc9b"
+          }
+        ]
+      },
+      "menu": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://palladiumfamily.ca/our-menu/"
+        ],
+        "observedAt": "2026-10-20T19:04:50.883766+00:00",
+        "observation": "Official Our Menu/Dine In link resolves to /our-menu/ with an owner menu presentation and takeout-menu navigation.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://palladiumfamily.ca/our-menu/",
+            "fetchedAt": "2026-10-20T19:04:50.883766+00:00",
+            "httpStatus": 200,
+            "sha256": "84def129e1a581eb3db2027d074645e41db00c1a4578f0be2603ee9107bec1f3"
+          }
+        ]
+      },
+      "phone": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://palladiumfamily.ca/"
+        ],
+        "observedAt": "2026-10-20T19:03:49.715843+00:00",
+        "observation": "Phone numbers to place an order: (902) 434-6402 and (902) 434-0171. Footer tel. (902) 434-6402.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://palladiumfamily.ca/",
+            "fetchedAt": "2026-10-20T19:03:49.715843+00:00",
+            "httpStatus": 200,
+            "sha256": "44b58170eae4e65fba1255f3b672ca60ab05e08a0c1ed8ec2f43d978c9c3fc9b"
+          }
+        ]
+      },
+      "contact": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://palladiumfamily.ca/contact/",
+          "https://palladiumfamily.ca/"
+        ],
+        "observedAt": "2026-10-20T19:04:50.882805+00:00",
+        "observation": "Official contact page successfully fetched. Owner page publishes fernando@palladiumfamily.ca.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://palladiumfamily.ca/",
+            "fetchedAt": "2026-10-20T19:03:49.715843+00:00",
+            "httpStatus": 200,
+            "sha256": "44b58170eae4e65fba1255f3b672ca60ab05e08a0c1ed8ec2f43d978c9c3fc9b"
+          },
+          {
+            "url": "https://palladiumfamily.ca/contact/",
+            "fetchedAt": "2026-10-20T19:04:50.882805+00:00",
+            "httpStatus": 200,
+            "sha256": "118a48955e6258ac3d018b77a10d88e3fee7c05b2c15ec754285e4cd4b06cef6"
+          }
+        ]
+      }
+    },
+    "openingHoursVerifiedAt": "2026-10-20T19:03:49.715843+00:00",
+    "hoursValidThrough": null,
+    "hoursScope": "venue",
     "website": "https://palladiumfamily.ca/",
-    "openingHours": null,
+    "openingHours": "Mo closed; Tu 10:00–20:00; We 10:00–20:00; Th 10:00–20:00; Fr 10:00–20:00; Sa 09:00–20:00; Su 09:00–19:00",
     "operatingStatus": "active",
     "operatingStatusEvidence": {
       "claim": "Official homepage updated July 30, 2026 and current weekly hours/order link; current DMO listing.",
@@ -1742,7 +2824,10 @@ window.HALIFAX_DISCOVERED_RESTAURANTS = [
       "observedAt": "2026-10-20"
     },
     "openingStatus": null,
-    "coordinates": null,
+    "coordinates": {
+      "lat": 44.67105004414676,
+      "lon": -63.496347360700256
+    },
     "socialProfiles": [],
     "summary": "Official food/menu descriptions and takeout ordering cover breakfast, seafood, souvlaki, sandwiches and dinner.",
     "specials": [],
@@ -1761,6 +2846,35 @@ window.HALIFAX_DISCOVERED_RESTAURANTS = [
         "url": "https://discoverhalifaxns.com/listings/palladium-family-restaurant/",
         "status": "verified",
         "observedAt": "2026-10-20"
+      },
+      {
+        "type": "reviewed_field_source",
+        "url": "https://palladiumfamily.ca/",
+        "label": "Reviewed coordinates source",
+        "status": "verified",
+        "observedAt": "2026-10-20T19:03:49.715843+00:00"
+      },
+      {
+        "type": "menu",
+        "url": "https://palladiumfamily.ca/our-menu/",
+        "label": "Owner menu source (confirm current items and prices)",
+        "status": "verified",
+        "observedAt": "2026-10-20T19:04:50.883766+00:00",
+        "contentVerified": false
+      },
+      {
+        "type": "reviewed_field_source",
+        "url": "https://palladiumfamily.ca/our-menu/",
+        "label": "Reviewed menu source",
+        "status": "verified",
+        "observedAt": "2026-10-20T19:04:50.883766+00:00"
+      },
+      {
+        "type": "reviewed_field_source",
+        "url": "https://palladiumfamily.ca/contact/",
+        "label": "Reviewed contact source",
+        "status": "verified",
+        "observedAt": "2026-10-20T19:04:50.882805+00:00"
       }
     ],
     "discoveryReview": {
@@ -1785,9 +2899,72 @@ window.HALIFAX_DISCOVERED_RESTAURANTS = [
     "evidenceStatus": "verified",
     "sourceLayer": "local_discovery",
     "address": "1090 Cole Harbour Road, Dartmouth, NS",
-    "phone": null,
+    "phone": "902-463-0080",
+    "email": "info@selby.store",
+    "contactUrl": "https://selby.store/pages/contact-us",
+    "contactScope": null,
+    "fieldEvidence": {
+      "hours": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://selby.store/"
+        ],
+        "observedAt": "2026-10-20T19:03:49.716568+00:00",
+        "observation": "HOURS: 8am to 5pm Monday to Friday; 7am to 5pm Saturday & Sunday.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://selby.store/",
+            "fetchedAt": "2026-10-20T19:03:49.716568+00:00",
+            "httpStatus": 200,
+            "sha256": "3045f01c954fa9581406a8384a2acc6ac7c582745350ac1e15c8a67e94c5f472"
+          }
+        ]
+      },
+      "phone": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://selby.store/"
+        ],
+        "observedAt": "2026-10-20T19:03:49.716568+00:00",
+        "observation": "Owner page publishes 902-463-0080.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://selby.store/",
+            "fetchedAt": "2026-10-20T19:03:49.716568+00:00",
+            "httpStatus": 200,
+            "sha256": "3045f01c954fa9581406a8384a2acc6ac7c582745350ac1e15c8a67e94c5f472"
+          }
+        ]
+      },
+      "contact": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://selby.store/pages/contact-us",
+          "https://selby.store/"
+        ],
+        "observedAt": "2026-10-20T19:04:50.887413+00:00",
+        "observation": "Official contact page successfully fetched. Owner page publishes info@selby.store.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://selby.store/",
+            "fetchedAt": "2026-10-20T19:03:49.716568+00:00",
+            "httpStatus": 200,
+            "sha256": "3045f01c954fa9581406a8384a2acc6ac7c582745350ac1e15c8a67e94c5f472"
+          },
+          {
+            "url": "https://selby.store/pages/contact-us",
+            "fetchedAt": "2026-10-20T19:04:50.887413+00:00",
+            "httpStatus": 200,
+            "sha256": "53e459f8a35f2c0493f9858f0a3786a1f532af40a13af774723d7493225efa36"
+          }
+        ]
+      }
+    },
+    "openingHoursVerifiedAt": "2026-10-20T19:03:49.716568+00:00",
+    "hoursValidThrough": null,
+    "hoursScope": "venue",
     "website": "https://selby.store/",
-    "openingHours": null,
+    "openingHours": "Mo 08:00–17:00; Tu 08:00–17:00; We 08:00–17:00; Th 08:00–17:00; Fr 08:00–17:00; Sa 07:00–17:00; Su 07:00–17:00",
     "operatingStatus": "active",
     "operatingStatusEvidence": {
       "claim": "Live official page lists seven-day cafe hours and food service.",
@@ -1836,6 +3013,20 @@ window.HALIFAX_DISCOVERED_RESTAURANTS = [
         "url": "https://halifax.citynews.ca/2023/05/23/abandoned-building-in-west-end-to-get-second-life-as-cafe/",
         "status": "verified",
         "observedAt": "2026-10-20"
+      },
+      {
+        "type": "reviewed_field_source",
+        "url": "https://selby.store/",
+        "label": "Reviewed hours source",
+        "status": "verified",
+        "observedAt": "2026-10-20T19:03:49.716568+00:00"
+      },
+      {
+        "type": "reviewed_field_source",
+        "url": "https://selby.store/pages/contact-us",
+        "label": "Reviewed contact source",
+        "status": "verified",
+        "observedAt": "2026-10-20T19:04:50.887413+00:00"
       }
     ],
     "discoveryReview": {
@@ -1859,7 +3050,70 @@ window.HALIFAX_DISCOVERED_RESTAURANTS = [
     "evidenceStatus": "verified",
     "sourceLayer": "local_discovery",
     "address": "204 Conrad Road, Lawrencetown, NS B2Z 1S1",
-    "phone": null,
+    "phone": "902-452-4661",
+    "email": "bettervibeco@gmail.com",
+    "contactUrl": "https://www.bettervibe.ca/contact",
+    "contactScope": null,
+    "fieldEvidence": {
+      "coordinates": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.bettervibe.ca/"
+        ],
+        "observedAt": "2026-10-20T19:03:49.717628+00:00",
+        "observation": "Owner page configuration for its Lawrencetown postal address has businessLocationCoordinates {\"latitude\":44.653208,\"longitude\":-63.3675823}.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://www.bettervibe.ca/",
+            "fetchedAt": "2026-10-20T19:03:49.717628+00:00",
+            "httpStatus": 200,
+            "sha256": "6e3b4b839f3ae0684dc9e7dc4cfd4d9d13f2f10dfb6a022f16c75c37383c9564"
+          }
+        ]
+      },
+      "phone": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.bettervibe.ca/"
+        ],
+        "observedAt": "2026-10-20T19:03:49.717628+00:00",
+        "observation": "Owner page publishes 902-452-4661.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://www.bettervibe.ca/",
+            "fetchedAt": "2026-10-20T19:03:49.717628+00:00",
+            "httpStatus": 200,
+            "sha256": "6e3b4b839f3ae0684dc9e7dc4cfd4d9d13f2f10dfb6a022f16c75c37383c9564"
+          }
+        ]
+      },
+      "contact": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.bettervibe.ca/contact",
+          "https://www.bettervibe.ca/"
+        ],
+        "observedAt": "2026-10-20T19:04:50.888520+00:00",
+        "observation": "Official contact page successfully fetched. Owner page publishes bettervibeco@gmail.com.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://www.bettervibe.ca/",
+            "fetchedAt": "2026-10-20T19:03:49.717628+00:00",
+            "httpStatus": 200,
+            "sha256": "6e3b4b839f3ae0684dc9e7dc4cfd4d9d13f2f10dfb6a022f16c75c37383c9564"
+          },
+          {
+            "url": "https://www.bettervibe.ca/contact",
+            "fetchedAt": "2026-10-20T19:04:50.888520+00:00",
+            "httpStatus": 200,
+            "sha256": "97e51eb65287b3597e79fe462ec641c5cdfbd8a65fc5646cc69d35a536c03997"
+          }
+        ]
+      }
+    },
+    "openingHoursVerifiedAt": null,
+    "hoursValidThrough": null,
+    "hoursScope": null,
     "website": "https://www.bettervibe.ca/",
     "openingHours": null,
     "operatingStatus": "active",
@@ -1883,7 +3137,10 @@ window.HALIFAX_DISCOVERED_RESTAURANTS = [
       "observedAt": "2026-10-20"
     },
     "openingStatus": null,
-    "coordinates": null,
+    "coordinates": {
+      "lat": 44.653208,
+      "lon": -63.3675823
+    },
     "socialProfiles": [],
     "summary": "Official homepage describes breakfast sandwiches and coffee, with menu and food catering links.",
     "specials": [],
@@ -1902,6 +3159,20 @@ window.HALIFAX_DISCOVERED_RESTAURANTS = [
         "url": "https://www.novascotia.com/wp-content/uploads/2025/09/DoersDreamersTravelGuide2025ENG.pdf",
         "status": "verified",
         "observedAt": "2026-10-20"
+      },
+      {
+        "type": "reviewed_field_source",
+        "url": "https://www.bettervibe.ca/",
+        "label": "Reviewed coordinates source",
+        "status": "verified",
+        "observedAt": "2026-10-20T19:03:49.717628+00:00"
+      },
+      {
+        "type": "reviewed_field_source",
+        "url": "https://www.bettervibe.ca/contact",
+        "label": "Reviewed contact source",
+        "status": "verified",
+        "observedAt": "2026-10-20T19:04:50.888520+00:00"
       }
     ],
     "discoveryReview": {
@@ -1926,7 +3197,86 @@ window.HALIFAX_DISCOVERED_RESTAURANTS = [
     "evidenceStatus": "verified",
     "sourceLayer": "local_discovery",
     "address": "6502 Highway 207, Grand Desert, NS B0J 1N0",
-    "phone": null,
+    "phone": "902-827-1042",
+    "email": "roseandrooster@gmail.com",
+    "contactUrl": "https://roseandrooster.com/locations",
+    "contactScope": null,
+    "fieldEvidence": {
+      "coordinates": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://roseandrooster.com/locations"
+        ],
+        "observedAt": "2026-10-20T19:04:54.719894+00:00",
+        "observation": "Owner Squarespace location marker explicitly has markerLat 44.6879515, markerLng -63.257250399999975 for Rose and Rooster Bakery, 6502 Hwy 207. Separate viewport mapLat/mapLng are not used.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://roseandrooster.com/locations",
+            "fetchedAt": "2026-10-20T19:04:54.719894+00:00",
+            "httpStatus": 200,
+            "sha256": "5fe9c93625497e2bf262256642a83478284a8c224ff4b48f7fc743731139c8dd"
+          }
+        ]
+      },
+      "menu": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://roseandrooster.com/menus"
+        ],
+        "observedAt": "2026-10-20T19:04:54.762935+00:00",
+        "observation": "Fetched owner Menus page lists breakfast, sandwiches, lunch and weekend brunch.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://roseandrooster.com/menus",
+            "fetchedAt": "2026-10-20T19:04:54.762935+00:00",
+            "httpStatus": 200,
+            "sha256": "66f2605d9f53ff1a4df9098b0684f47b36fb028c4290b8704b0232d33b1d12a7"
+          }
+        ]
+      },
+      "phone": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://roseandrooster.com/"
+        ],
+        "observedAt": "2026-10-20T19:03:49.718577+00:00",
+        "observation": "Owner page publishes 902-827-1042.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://roseandrooster.com/",
+            "fetchedAt": "2026-10-20T19:03:49.718577+00:00",
+            "httpStatus": 200,
+            "sha256": "6770f3f63e0208484ebf1902a5d0fc333d6748f7e0acc0e966117abfb25a6b29"
+          }
+        ]
+      },
+      "contact": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://roseandrooster.com/locations",
+          "https://roseandrooster.com/"
+        ],
+        "observedAt": "2026-10-20T19:04:54.719894+00:00",
+        "observation": "Official contact page successfully fetched. Owner page publishes roseandrooster@gmail.com.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://roseandrooster.com/locations",
+            "fetchedAt": "2026-10-20T19:04:54.719894+00:00",
+            "httpStatus": 200,
+            "sha256": "5fe9c93625497e2bf262256642a83478284a8c224ff4b48f7fc743731139c8dd"
+          },
+          {
+            "url": "https://roseandrooster.com/",
+            "fetchedAt": "2026-10-20T19:03:49.718577+00:00",
+            "httpStatus": 200,
+            "sha256": "6770f3f63e0208484ebf1902a5d0fc333d6748f7e0acc0e966117abfb25a6b29"
+          }
+        ]
+      }
+    },
+    "openingHoursVerifiedAt": null,
+    "hoursValidThrough": null,
+    "hoursScope": null,
     "website": "https://roseandrooster.com/",
     "openingHours": null,
     "operatingStatus": "active",
@@ -1953,7 +3303,10 @@ window.HALIFAX_DISCOVERED_RESTAURANTS = [
       "observedAt": "2026-10-20"
     },
     "openingStatus": null,
-    "coordinates": null,
+    "coordinates": {
+      "lat": 44.6879515,
+      "lon": -63.257250399999975
+    },
     "socialProfiles": [],
     "summary": "Official menu lists breakfast sandwiches, wraps, lunch and weekend brunch.",
     "specials": [],
@@ -1993,6 +3346,35 @@ window.HALIFAX_DISCOVERED_RESTAURANTS = [
         "url": "https://discoverhalifaxns.com/things-to-do/experiences/visit-musquodoboit-harbour/",
         "status": "verified",
         "observedAt": "2026-10-20"
+      },
+      {
+        "type": "reviewed_field_source",
+        "url": "https://roseandrooster.com/locations",
+        "label": "Reviewed coordinates source",
+        "status": "verified",
+        "observedAt": "2026-10-20T19:04:54.719894+00:00"
+      },
+      {
+        "type": "menu",
+        "url": "https://roseandrooster.com/menus",
+        "label": "Owner menu source (confirm current items and prices)",
+        "status": "verified",
+        "observedAt": "2026-10-20T19:04:54.762935+00:00",
+        "contentVerified": true
+      },
+      {
+        "type": "reviewed_field_source",
+        "url": "https://roseandrooster.com/menus",
+        "label": "Reviewed menu source",
+        "status": "verified",
+        "observedAt": "2026-10-20T19:04:54.762935+00:00"
+      },
+      {
+        "type": "reviewed_field_source",
+        "url": "https://roseandrooster.com/",
+        "label": "Reviewed phone source",
+        "status": "verified",
+        "observedAt": "2026-10-20T19:03:49.718577+00:00"
       }
     ],
     "discoveryReview": {
@@ -2018,6 +3400,13 @@ window.HALIFAX_DISCOVERED_RESTAURANTS = [
     "sourceLayer": "local_discovery",
     "address": "5019 Highway 7, Porters Lake, NS",
     "phone": null,
+    "email": null,
+    "contactUrl": null,
+    "contactScope": null,
+    "fieldEvidence": {},
+    "openingHoursVerifiedAt": null,
+    "hoursValidThrough": null,
+    "hoursScope": null,
     "website": "https://www.thebigwedge.com/",
     "openingHours": null,
     "operatingStatus": "active",
@@ -2086,6 +3475,13 @@ window.HALIFAX_DISCOVERED_RESTAURANTS = [
     "sourceLayer": "local_discovery",
     "address": "7992 Highway 7 (Marine Drive), Musquodoboit Harbour, NS B0J 2L0",
     "phone": null,
+    "email": null,
+    "contactUrl": null,
+    "contactScope": null,
+    "fieldEvidence": {},
+    "openingHoursVerifiedAt": null,
+    "hoursValidThrough": null,
+    "hoursScope": null,
     "website": "https://www.uprootedmarketcafe.ca/",
     "openingHours": null,
     "operatingStatus": "active",
@@ -2160,6 +3556,13 @@ window.HALIFAX_DISCOVERED_RESTAURANTS = [
     "sourceLayer": "local_discovery",
     "address": "1196 West Petpeswick Road, Musquodoboit Harbour, NS B0J 2L0",
     "phone": null,
+    "email": null,
+    "contactUrl": null,
+    "contactScope": null,
+    "fieldEvidence": {},
+    "openingHoursVerifiedAt": null,
+    "hoursValidThrough": null,
+    "hoursScope": null,
     "website": "https://lupindining.ca/",
     "openingHours": null,
     "operatingStatus": "active",
@@ -2233,7 +3636,86 @@ window.HALIFAX_DISCOVERED_RESTAURANTS = [
     "evidenceStatus": "verified",
     "sourceLayer": "local_discovery",
     "address": "22478 Highway 7, Sheet Harbour, NS",
-    "phone": null,
+    "phone": "902-885-3335",
+    "email": "meryl@henleyhouse.ca",
+    "contactUrl": "https://www.henleyhouse.ca/#contact",
+    "contactScope": null,
+    "fieldEvidence": {
+      "coordinates": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.henleyhouse.ca/",
+          "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2824.910529052988!2d-62.543002684099974!3d44.92515497909824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4b5ba160d04d0041%3A0x3839e512392fe462!2sHenley%20House%20Pub%20And%20Restaurant!5e0!3m2!1sen!2sbd!4v1616111910155!5m2!1sen!2sbd"
+        ],
+        "observedAt": "2026-10-20T19:06:03.727915+00:00",
+        "observation": "Owner homepage contains this exact Google map iframe for Henley House Pub And Restaurant. Exact Google map iframe embedded by owner resolves to place marker [44.925155,-62.540814] labeled Henley House Pub And Restaurant, 22478 Nova Scotia Trunk 7, Sheet Harbour.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://www.henleyhouse.ca/",
+            "fetchedAt": "2026-10-20T19:03:54.382345+00:00",
+            "httpStatus": 200,
+            "sha256": "2de9d4761ff745ae5b25afb54babd8c6acb5896778a03580e10139065f6d5734"
+          },
+          {
+            "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2824.910529052988!2d-62.543002684099974!3d44.92515497909824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4b5ba160d04d0041%3A0x3839e512392fe462!2sHenley%20House%20Pub%20And%20Restaurant!5e0!3m2!1sen!2sbd!4v1616111910155!5m2!1sen!2sbd",
+            "fetchedAt": "2026-10-20T19:06:03.727915+00:00",
+            "httpStatus": 200,
+            "sha256": "eac68610ee0428b664b19e033da851b8cdce4c60a870cad776270b6c23b3ffa7"
+          }
+        ]
+      },
+      "menu": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.henleyhouse.ca/menu/"
+        ],
+        "observedAt": "2026-10-20T19:04:55.663914+00:00",
+        "observation": "Official menu page contains a 2026 Summer Menu and current food categories.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://www.henleyhouse.ca/menu/",
+            "fetchedAt": "2026-10-20T19:04:55.663914+00:00",
+            "httpStatus": 200,
+            "sha256": "3570c45a6021ea8abf77089660ef5ddd94e8f55d34e69f7dbfeab378063fd862"
+          }
+        ]
+      },
+      "phone": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2824.910529052988!2d-62.543002684099974!3d44.92515497909824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4b5ba160d04d0041%3A0x3839e512392fe462!2sHenley%20House%20Pub%20And%20Restaurant!5e0!3m2!1sen!2sbd!4v1616111910155!5m2!1sen!2sbd"
+        ],
+        "observedAt": "2026-10-20T19:06:03.727915+00:00",
+        "observation": "Owner-embedded Henley House place card gives +1 902-885-3335; matches existing Tourism Nova Scotia research.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2824.910529052988!2d-62.543002684099974!3d44.92515497909824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4b5ba160d04d0041%3A0x3839e512392fe462!2sHenley%20House%20Pub%20And%20Restaurant!5e0!3m2!1sen!2sbd!4v1616111910155!5m2!1sen!2sbd",
+            "fetchedAt": "2026-10-20T19:06:03.727915+00:00",
+            "httpStatus": 200,
+            "sha256": "eac68610ee0428b664b19e033da851b8cdce4c60a870cad776270b6c23b3ffa7"
+          }
+        ]
+      },
+      "contact": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.henleyhouse.ca/"
+        ],
+        "observedAt": "2026-10-20T19:03:54.382345+00:00",
+        "observation": "Official Contact navigation points to homepage #contact section. Email: meryl@henleyhouse.ca",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://www.henleyhouse.ca/",
+            "fetchedAt": "2026-10-20T19:03:54.382345+00:00",
+            "httpStatus": 200,
+            "sha256": "2de9d4761ff745ae5b25afb54babd8c6acb5896778a03580e10139065f6d5734"
+          }
+        ]
+      }
+    },
+    "openingHoursVerifiedAt": null,
+    "hoursValidThrough": null,
+    "hoursScope": null,
     "website": "https://www.henleyhouse.ca/",
     "openingHours": null,
     "operatingStatus": "active",
@@ -2257,7 +3739,10 @@ window.HALIFAX_DISCOVERED_RESTAURANTS = [
       "observedAt": "2026-10-20"
     },
     "openingStatus": null,
-    "coordinates": null,
+    "coordinates": {
+      "lat": 44.925155,
+      "lon": -62.540814
+    },
     "socialProfiles": [],
     "summary": "Official site describes seafood and daily specials, and explicitly offers dine-in, patio, takeout and meals for neighboring beer garden.",
     "specials": [],
@@ -2276,6 +3761,35 @@ window.HALIFAX_DISCOVERED_RESTAURANTS = [
         "url": "https://novascotia.com/listing/henley-house-pub-restaurant/",
         "status": "verified",
         "observedAt": "2026-10-20"
+      },
+      {
+        "type": "reviewed_field_source",
+        "url": "https://www.henleyhouse.ca/",
+        "label": "Reviewed coordinates source",
+        "status": "verified",
+        "observedAt": "2026-10-20T19:06:03.727915+00:00"
+      },
+      {
+        "type": "reviewed_field_source",
+        "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2824.910529052988!2d-62.543002684099974!3d44.92515497909824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4b5ba160d04d0041%3A0x3839e512392fe462!2sHenley%20House%20Pub%20And%20Restaurant!5e0!3m2!1sen!2sbd!4v1616111910155!5m2!1sen!2sbd",
+        "label": "Reviewed coordinates source",
+        "status": "verified",
+        "observedAt": "2026-10-20T19:06:03.727915+00:00"
+      },
+      {
+        "type": "menu",
+        "url": "https://www.henleyhouse.ca/menu/",
+        "label": "Owner menu source (confirm current items and prices)",
+        "status": "verified",
+        "observedAt": "2026-10-20T19:04:55.663914+00:00",
+        "contentVerified": true
+      },
+      {
+        "type": "reviewed_field_source",
+        "url": "https://www.henleyhouse.ca/menu/",
+        "label": "Reviewed menu source",
+        "status": "verified",
+        "observedAt": "2026-10-20T19:04:55.663914+00:00"
       }
     ],
     "discoveryReview": {
@@ -2301,9 +3815,88 @@ window.HALIFAX_DISCOVERED_RESTAURANTS = [
     "evidenceStatus": "verified",
     "sourceLayer": "local_discovery",
     "address": "5401 St. Margaret's Bay Road, Tantallon, NS",
-    "phone": null,
+    "phone": "902-820-3400",
+    "email": "info@bikeandbean.ca",
+    "contactUrl": "https://bikeandbean.ca/contact-us",
+    "contactScope": null,
+    "fieldEvidence": {
+      "hours": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://bikeandbean.ca/"
+        ],
+        "observedAt": "2026-10-20T19:03:55.897282+00:00",
+        "observation": "Cafe Hours: Monday - Sunday: 8:00am - 4:00pm.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://bikeandbean.ca/",
+            "fetchedAt": "2026-10-20T19:03:55.897282+00:00",
+            "httpStatus": 200,
+            "sha256": "d40996a1845af8a0b3de86dfc416d659c4b7b79f5be6cbf71913dfbedf687237"
+          }
+        ]
+      },
+      "menu": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://bikeandbean.ca/menu"
+        ],
+        "observedAt": "2026-10-20T19:04:58.641498+00:00",
+        "observation": "Owner Café Menu page contains food and beverages, including paninis/wraps, breakfast, salads and soup.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://bikeandbean.ca/menu",
+            "fetchedAt": "2026-10-20T19:04:58.641498+00:00",
+            "httpStatus": 200,
+            "sha256": "05d4e2cff940c8cdd25e6110e66a152cb85a2cbc207ffb7ccb9b0bd4f7d4c2a9"
+          }
+        ]
+      },
+      "phone": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://bikeandbean.ca/"
+        ],
+        "observedAt": "2026-10-20T19:03:55.897282+00:00",
+        "observation": "Owner page publishes 902-820-3400.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://bikeandbean.ca/",
+            "fetchedAt": "2026-10-20T19:03:55.897282+00:00",
+            "httpStatus": 200,
+            "sha256": "d40996a1845af8a0b3de86dfc416d659c4b7b79f5be6cbf71913dfbedf687237"
+          }
+        ]
+      },
+      "contact": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://bikeandbean.ca/contact-us",
+          "https://bikeandbean.ca/"
+        ],
+        "observedAt": "2026-10-20T19:04:56.035836+00:00",
+        "observation": "Official contact page successfully fetched. Owner page publishes info@bikeandbean.ca.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://bikeandbean.ca/",
+            "fetchedAt": "2026-10-20T19:03:55.897282+00:00",
+            "httpStatus": 200,
+            "sha256": "d40996a1845af8a0b3de86dfc416d659c4b7b79f5be6cbf71913dfbedf687237"
+          },
+          {
+            "url": "https://bikeandbean.ca/contact-us",
+            "fetchedAt": "2026-10-20T19:04:56.035836+00:00",
+            "httpStatus": 200,
+            "sha256": "5e24c5e1af7b5ed6d8f766cfe5942467a3c94cc1b3b04dcaf8b7e54ff52a9b5e"
+          }
+        ]
+      }
+    },
+    "openingHoursVerifiedAt": "2026-10-20T19:03:55.897282+00:00",
+    "hoursValidThrough": null,
+    "hoursScope": "venue",
     "website": "https://bikeandbean.ca/",
-    "openingHours": null,
+    "openingHours": "Mo 08:00–16:00; Tu 08:00–16:00; We 08:00–16:00; Th 08:00–16:00; Fr 08:00–16:00; Sa 08:00–16:00; Su 08:00–16:00",
     "operatingStatus": "active",
     "operatingStatusEvidence": {
       "claim": "Live official page lists current cafe hours, ordering, and food menu.",
@@ -2352,6 +3945,35 @@ window.HALIFAX_DISCOVERED_RESTAURANTS = [
         "url": "https://novascotia.com/fr/listing/train-station-bike-bean/",
         "status": "verified",
         "observedAt": "2026-10-20"
+      },
+      {
+        "type": "reviewed_field_source",
+        "url": "https://bikeandbean.ca/",
+        "label": "Reviewed hours source",
+        "status": "verified",
+        "observedAt": "2026-10-20T19:03:55.897282+00:00"
+      },
+      {
+        "type": "menu",
+        "url": "https://bikeandbean.ca/menu",
+        "label": "Owner menu source (confirm current items and prices)",
+        "status": "verified",
+        "observedAt": "2026-10-20T19:04:58.641498+00:00",
+        "contentVerified": true
+      },
+      {
+        "type": "reviewed_field_source",
+        "url": "https://bikeandbean.ca/menu",
+        "label": "Reviewed menu source",
+        "status": "verified",
+        "observedAt": "2026-10-20T19:04:58.641498+00:00"
+      },
+      {
+        "type": "reviewed_field_source",
+        "url": "https://bikeandbean.ca/contact-us",
+        "label": "Reviewed contact source",
+        "status": "verified",
+        "observedAt": "2026-10-20T19:04:56.035836+00:00"
       }
     ],
     "discoveryReview": {
@@ -2376,7 +3998,47 @@ window.HALIFAX_DISCOVERED_RESTAURANTS = [
     "evidenceStatus": "verified",
     "sourceLayer": "local_discovery",
     "address": "5411 St. Margarets Bay Road, Upper Tantallon, NS",
-    "phone": null,
+    "phone": "902-826-1799",
+    "email": null,
+    "contactUrl": "https://cavicchismeats.com/pages/contact",
+    "contactScope": null,
+    "fieldEvidence": {
+      "phone": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://cavicchismeats.com/pages/contact"
+        ],
+        "observedAt": "2026-10-20T19:04:58.804284+00:00",
+        "observation": "Owner page publishes 902-826-1799.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://cavicchismeats.com/pages/contact",
+            "fetchedAt": "2026-10-20T19:04:58.804284+00:00",
+            "httpStatus": 200,
+            "sha256": "2a92de0b4c34eb7fc23028325078a597d76c52ccc99acce6ab13ce043efdefba"
+          }
+        ]
+      },
+      "contact": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://cavicchismeats.com/pages/contact"
+        ],
+        "observedAt": "2026-10-20T19:04:58.804284+00:00",
+        "observation": "Official contact page successfully fetched.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://cavicchismeats.com/pages/contact",
+            "fetchedAt": "2026-10-20T19:04:58.804284+00:00",
+            "httpStatus": 200,
+            "sha256": "2a92de0b4c34eb7fc23028325078a597d76c52ccc99acce6ab13ce043efdefba"
+          }
+        ]
+      }
+    },
+    "openingHoursVerifiedAt": null,
+    "hoursValidThrough": null,
+    "hoursScope": null,
     "website": "https://cavicchismeats.com/",
     "openingHours": null,
     "operatingStatus": "active",
@@ -2427,6 +4089,13 @@ window.HALIFAX_DISCOVERED_RESTAURANTS = [
         "url": "https://www.peggyscoveregion.com/nova-scotia/dining/",
         "status": "verified",
         "observedAt": "2026-10-20"
+      },
+      {
+        "type": "reviewed_field_source",
+        "url": "https://cavicchismeats.com/pages/contact",
+        "label": "Reviewed phone source",
+        "status": "verified",
+        "observedAt": "2026-10-20T19:04:58.804284+00:00"
       }
     ],
     "discoveryReview": {
@@ -2450,9 +4119,81 @@ window.HALIFAX_DISCOVERED_RESTAURANTS = [
     "evidenceStatus": "verified",
     "sourceLayer": "local_discovery",
     "address": "178 Peggy's Point Road, Peggy's Cove, NS B3Z 3S2",
-    "phone": null,
+    "phone": "902-823-2561",
+    "email": "nicole@peggys-cove.com",
+    "contactUrl": "https://shoppeggyscove.com/pages/contact-us",
+    "contactScope": null,
+    "fieldEvidence": {
+      "hours": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://shoppeggyscove.com/"
+        ],
+        "observedAt": "2026-10-20T19:03:56.893495+00:00",
+        "observation": "The Sou'Wester is open Monday - Sunday 8:30am-7:00pm. Sea you soon!",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://shoppeggyscove.com/",
+            "fetchedAt": "2026-10-20T19:03:56.893495+00:00",
+            "httpStatus": 200,
+            "sha256": "206bb1604eda6d2578fb842321c22422e31daaba41210afc61786a6b98347adf"
+          }
+        ]
+      },
+      "menu": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://shoppeggyscove.com/pages/menu"
+        ],
+        "observedAt": "2026-10-20T19:04:59.868652+00:00",
+        "observation": "Owner navigation labels /pages/menu as Menu; URL responds with owner menu page.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://shoppeggyscove.com/pages/menu",
+            "fetchedAt": "2026-10-20T19:04:59.868652+00:00",
+            "httpStatus": 200,
+            "sha256": "e5e062b55547cbfbf7cedf278fad936e455c37d46c36689e5ac1aeb20f8b35d4"
+          }
+        ]
+      },
+      "phone": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://shoppeggyscove.com/pages/contact-us"
+        ],
+        "observedAt": "2026-10-20T19:04:59.424735+00:00",
+        "observation": "Telephone: Dining Room: 902.823.2561; Giftshop: 902.823.2564; Head Office: 902.823.2349. Use dining room number.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://shoppeggyscove.com/pages/contact-us",
+            "fetchedAt": "2026-10-20T19:04:59.424735+00:00",
+            "httpStatus": 200,
+            "sha256": "c1767e21c194b0b72272a5099b808af72e46977db0f2500f57c7aeeef3729456"
+          }
+        ]
+      },
+      "contact": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://shoppeggyscove.com/pages/contact-us"
+        ],
+        "observedAt": "2026-10-20T19:04:59.424735+00:00",
+        "observation": "Official contact page successfully fetched. Dining room inquiries nicole@peggys-cove.com. General inquiries souwest@peggys-cove.com.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://shoppeggyscove.com/pages/contact-us",
+            "fetchedAt": "2026-10-20T19:04:59.424735+00:00",
+            "httpStatus": 200,
+            "sha256": "c1767e21c194b0b72272a5099b808af72e46977db0f2500f57c7aeeef3729456"
+          }
+        ]
+      }
+    },
+    "openingHoursVerifiedAt": "2026-10-20T19:03:56.893495+00:00",
+    "hoursValidThrough": null,
+    "hoursScope": "venue",
     "website": "https://shoppeggyscove.com/",
-    "openingHours": null,
+    "openingHours": "Mo 08:30–19:00; Tu 08:30–19:00; We 08:30–19:00; Th 08:30–19:00; Fr 08:30–19:00; Sa 08:30–19:00; Su 08:30–19:00",
     "operatingStatus": "active",
     "operatingStatusEvidence": {
       "claim": "Live homepage states daily restaurant service and links full menu/reservations.",
@@ -2501,6 +4242,35 @@ window.HALIFAX_DISCOVERED_RESTAURANTS = [
         "url": "https://visitpeggyscove.ca/visitor-information/",
         "status": "verified",
         "observedAt": "2026-10-20"
+      },
+      {
+        "type": "reviewed_field_source",
+        "url": "https://shoppeggyscove.com/",
+        "label": "Reviewed hours source",
+        "status": "verified",
+        "observedAt": "2026-10-20T19:03:56.893495+00:00"
+      },
+      {
+        "type": "menu",
+        "url": "https://shoppeggyscove.com/pages/menu",
+        "label": "Owner menu source (confirm current items and prices)",
+        "status": "verified",
+        "observedAt": "2026-10-20T19:04:59.868652+00:00",
+        "contentVerified": false
+      },
+      {
+        "type": "reviewed_field_source",
+        "url": "https://shoppeggyscove.com/pages/menu",
+        "label": "Reviewed menu source",
+        "status": "verified",
+        "observedAt": "2026-10-20T19:04:59.868652+00:00"
+      },
+      {
+        "type": "reviewed_field_source",
+        "url": "https://shoppeggyscove.com/pages/contact-us",
+        "label": "Reviewed phone source",
+        "status": "verified",
+        "observedAt": "2026-10-20T19:04:59.424735+00:00"
       }
     ],
     "discoveryReview": {
@@ -2527,8 +4297,64 @@ window.HALIFAX_DISCOVERED_RESTAURANTS = [
     "sourceLayer": "local_discovery",
     "address": "126 Peggy's Point Road, Peggy's Cove, NS B3Z 3S2",
     "phone": null,
+    "email": "info@margaretsns.ca",
+    "contactUrl": "https://www.margaretsns.ca/contact",
+    "contactScope": null,
+    "fieldEvidence": {
+      "hours": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.margaretsns.ca/"
+        ],
+        "observedAt": "2026-10-20T19:03:57.119944+00:00",
+        "observation": "Published page content in initial HTML: Location and Hours; May 7 - October 25, 2026; Monday - Sunday; 9 a.m. - 5 p.m.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://www.margaretsns.ca/",
+            "fetchedAt": "2026-10-20T19:03:57.119944+00:00",
+            "httpStatus": 200,
+            "sha256": "c5aea2599abb94589593d966d50a7a2b227a7ad428bb88c7102b1165f3c5aa97"
+          }
+        ]
+      },
+      "menu": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.margaretsns.ca/menu"
+        ],
+        "observedAt": "2026-10-20T19:05:29.933452+00:00",
+        "observation": "Owner route map and menu-page payload identify Menu, including chowder, paninis, bagels and beverages.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://www.margaretsns.ca/menu",
+            "fetchedAt": "2026-10-20T19:05:29.933452+00:00",
+            "httpStatus": 200,
+            "sha256": "2e8a02dc7fb77b725127a590eac811ce9f3303a021b5a2bfe886e7c6a05b11da"
+          }
+        ]
+      },
+      "contact": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.margaretsns.ca/contact"
+        ],
+        "observedAt": "2026-10-20T19:05:29.930926+00:00",
+        "observation": "Official contact page successfully fetched. Owner page publishes info@margaretsns.ca.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://www.margaretsns.ca/contact",
+            "fetchedAt": "2026-10-20T19:05:29.930926+00:00",
+            "httpStatus": 200,
+            "sha256": "a05d62c90f6fac1d656017c7ef7d030b24f67499a203f370649017fb6472ec58"
+          }
+        ]
+      }
+    },
+    "openingHoursVerifiedAt": "2026-10-20T19:03:57.119944+00:00",
+    "hoursValidThrough": "2026-10-25",
+    "hoursScope": "venue",
     "website": "https://www.margaretsns.ca/",
-    "openingHours": null,
+    "openingHours": "Mo 09:00–17:00; Tu 09:00–17:00; We 09:00–17:00; Th 09:00–17:00; Fr 09:00–17:00; Sa 09:00–17:00; Su 09:00–17:00; season ends 2026-10-25",
     "operatingStatus": "active",
     "operatingStatusEvidence": {
       "claim": "Official cafe page explicitly posts May 7–October 25, 2026 service season.",
@@ -2589,6 +4415,35 @@ window.HALIFAX_DISCOVERED_RESTAURANTS = [
         "url": "https://visitpeggyscove.ca/visitor-information/",
         "status": "verified",
         "observedAt": "2026-10-20"
+      },
+      {
+        "type": "reviewed_field_source",
+        "url": "https://www.margaretsns.ca/",
+        "label": "Reviewed hours source",
+        "status": "verified",
+        "observedAt": "2026-10-20T19:03:57.119944+00:00"
+      },
+      {
+        "type": "menu",
+        "url": "https://www.margaretsns.ca/menu",
+        "label": "Owner menu source (confirm current items and prices)",
+        "status": "verified",
+        "observedAt": "2026-10-20T19:05:29.933452+00:00",
+        "contentVerified": true
+      },
+      {
+        "type": "reviewed_field_source",
+        "url": "https://www.margaretsns.ca/menu",
+        "label": "Reviewed menu source",
+        "status": "verified",
+        "observedAt": "2026-10-20T19:05:29.933452+00:00"
+      },
+      {
+        "type": "reviewed_field_source",
+        "url": "https://www.margaretsns.ca/contact",
+        "label": "Reviewed contact source",
+        "status": "verified",
+        "observedAt": "2026-10-20T19:05:29.930926+00:00"
       }
     ],
     "discoveryReview": {
@@ -2613,7 +4468,70 @@ window.HALIFAX_DISCOVERED_RESTAURANTS = [
     "evidenceStatus": "verified",
     "sourceLayer": "local_discovery",
     "address": "22 Highway 3, Hubbards, NS B0J 1T0",
-    "phone": null,
+    "phone": "902-857-1188",
+    "email": null,
+    "contactUrl": null,
+    "contactScope": null,
+    "fieldEvidence": {
+      "coordinates": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.thetrelliscafe.com/",
+          "https://www.google.com/maps?q=Trellis+Cafe,+Hubbards,+NS&output=embed"
+        ],
+        "observedAt": "2026-10-20T19:06:03.729348+00:00",
+        "observation": "Owner homepage embeds https://www.google.com/maps?q=Trellis+Cafe,+Hubbards,+NS&output=embed. Exact owner-embedded Google map resolves to Trellis Cafe, 22 Nova Scotia Trunk 3, Hubbards, place marker [44.6378975,-64.06727599999999].",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://www.thetrelliscafe.com/",
+            "fetchedAt": "2026-10-20T19:03:57.400465+00:00",
+            "httpStatus": 200,
+            "sha256": "a25f3233fb7a4cebfc9356ccca6cf186ab07289a4241e8679a05dbe55b13ad50"
+          },
+          {
+            "url": "https://www.google.com/maps?q=Trellis+Cafe,+Hubbards,+NS&output=embed",
+            "fetchedAt": "2026-10-20T19:06:03.729348+00:00",
+            "httpStatus": 200,
+            "sha256": "89798eca20965a427560baaa40c847ce2309b59600e9f0cf5ef6e038799e19d3"
+          }
+        ]
+      },
+      "menu": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.thetrelliscafe.com/menus"
+        ],
+        "observedAt": "2026-10-20T19:04:59.948856+00:00",
+        "observation": "Current owner Menus page links breakfast.pdf, lunch.pdf, dinner.pdf, wine.pdf and beer-and-other-drinks.pdf.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://www.thetrelliscafe.com/menus",
+            "fetchedAt": "2026-10-20T19:04:59.948856+00:00",
+            "httpStatus": 200,
+            "sha256": "6983293ceb8369743b348e68b0627f1f78361b8069b4d689f3d48c9d97698533"
+          }
+        ]
+      },
+      "phone": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.thetrelliscafe.com/"
+        ],
+        "observedAt": "2026-10-20T19:03:57.400465+00:00",
+        "observation": "Owner page publishes 902-857-1188.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://www.thetrelliscafe.com/",
+            "fetchedAt": "2026-10-20T19:03:57.400465+00:00",
+            "httpStatus": 200,
+            "sha256": "a25f3233fb7a4cebfc9356ccca6cf186ab07289a4241e8679a05dbe55b13ad50"
+          }
+        ]
+      }
+    },
+    "openingHoursVerifiedAt": null,
+    "hoursValidThrough": null,
+    "hoursScope": null,
     "website": "https://www.thetrelliscafe.com/",
     "openingHours": null,
     "operatingStatus": "active",
@@ -2640,7 +4558,10 @@ window.HALIFAX_DISCOVERED_RESTAURANTS = [
       "observedAt": "2026-10-20"
     },
     "openingStatus": null,
-    "coordinates": null,
+    "coordinates": {
+      "lat": 44.6378975,
+      "lon": -64.06727599999999
+    },
     "socialProfiles": [],
     "summary": "Current site links breakfast, lunch and dinner menus and October music/dining events.",
     "specials": [],
@@ -2680,6 +4601,35 @@ window.HALIFAX_DISCOVERED_RESTAURANTS = [
         "url": "https://novascotia.com/listing/trellis-cafe/",
         "status": "verified",
         "observedAt": "2026-10-20"
+      },
+      {
+        "type": "reviewed_field_source",
+        "url": "https://www.thetrelliscafe.com/",
+        "label": "Reviewed coordinates source",
+        "status": "verified",
+        "observedAt": "2026-10-20T19:06:03.729348+00:00"
+      },
+      {
+        "type": "reviewed_field_source",
+        "url": "https://www.google.com/maps?q=Trellis+Cafe,+Hubbards,+NS&output=embed",
+        "label": "Reviewed coordinates source",
+        "status": "verified",
+        "observedAt": "2026-10-20T19:06:03.729348+00:00"
+      },
+      {
+        "type": "menu",
+        "url": "https://www.thetrelliscafe.com/menus",
+        "label": "Owner menu source (confirm current items and prices)",
+        "status": "verified",
+        "observedAt": "2026-10-20T19:04:59.948856+00:00",
+        "contentVerified": false
+      },
+      {
+        "type": "reviewed_field_source",
+        "url": "https://www.thetrelliscafe.com/menus",
+        "label": "Reviewed menu source",
+        "status": "verified",
+        "observedAt": "2026-10-20T19:04:59.948856+00:00"
       }
     ],
     "discoveryReview": {
@@ -2703,7 +4653,79 @@ window.HALIFAX_DISCOVERED_RESTAURANTS = [
     "evidenceStatus": "verified",
     "sourceLayer": "local_discovery",
     "address": "167 Shore Club Road, Hubbards, NS B0J 1T0",
-    "phone": null,
+    "phone": "902-857-1790",
+    "email": "info@tunablue.ca",
+    "contactUrl": "https://www.tunablue.ca/",
+    "contactScope": null,
+    "fieldEvidence": {
+      "coordinates": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.tunablue.ca/"
+        ],
+        "observedAt": "2026-10-20T19:03:59.147020+00:00",
+        "observation": "Owner LocalBusiness/restaurant JSON-LD geo has latitude \"44.6366086\", longitude \"-64.05618989999999\" associated with 167 Shore Club Road. Owner businessLocationCoordinates repeats same values.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://www.tunablue.ca/",
+            "fetchedAt": "2026-10-20T19:03:59.147020+00:00",
+            "httpStatus": 200,
+            "sha256": "2e951a429d49e6aebe35c43e1a2e5fef85fc6e92af7d9d800a1236041b5d9d5c"
+          }
+        ]
+      },
+      "menu": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.tunablue.ca/menu"
+        ],
+        "observedAt": "2026-10-20T19:05:00.058192+00:00",
+        "observation": "Official Tuna Blue Menu page contains itemized food menu and phone for lobster-feast reservations.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://www.tunablue.ca/menu",
+            "fetchedAt": "2026-10-20T19:05:00.058192+00:00",
+            "httpStatus": 200,
+            "sha256": "1d400b8a4e8dffff6d073fefc7ba32929062facba6c8ea2681b878098465c212"
+          }
+        ]
+      },
+      "phone": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.tunablue.ca/"
+        ],
+        "observedAt": "2026-10-20T19:03:59.147020+00:00",
+        "observation": "Owner page publishes 902-857-1790.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://www.tunablue.ca/",
+            "fetchedAt": "2026-10-20T19:03:59.147020+00:00",
+            "httpStatus": 200,
+            "sha256": "2e951a429d49e6aebe35c43e1a2e5fef85fc6e92af7d9d800a1236041b5d9d5c"
+          }
+        ]
+      },
+      "contact": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.tunablue.ca/"
+        ],
+        "observedAt": "2026-10-20T19:03:59.147020+00:00",
+        "observation": "Homepage contains CONTACT block with business phone and email. Owner page publishes info@tunablue.ca.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://www.tunablue.ca/",
+            "fetchedAt": "2026-10-20T19:03:59.147020+00:00",
+            "httpStatus": 200,
+            "sha256": "2e951a429d49e6aebe35c43e1a2e5fef85fc6e92af7d9d800a1236041b5d9d5c"
+          }
+        ]
+      }
+    },
+    "openingHoursVerifiedAt": null,
+    "hoursValidThrough": null,
+    "hoursScope": null,
     "website": "https://www.tunablue.ca/",
     "openingHours": null,
     "operatingStatus": "seasonally_closed",
@@ -2729,7 +4751,10 @@ window.HALIFAX_DISCOVERED_RESTAURANTS = [
       "observedAt": "2026-10-20"
     },
     "openingStatus": null,
-    "coordinates": null,
+    "coordinates": {
+      "lat": 44.6366086,
+      "lon": -64.05618989999999
+    },
     "socialProfiles": [],
     "summary": "Official restaurant menu is live; restaurant attached to locally owned inn/marina.",
     "specials": [],
@@ -2762,6 +4787,28 @@ window.HALIFAX_DISCOVERED_RESTAURANTS = [
         "url": "https://hubbards.ca/event/tunes-at-the-tuna-blue-2-2-2-2-2-2/",
         "status": "verified",
         "observedAt": "2026-10-20"
+      },
+      {
+        "type": "reviewed_field_source",
+        "url": "https://www.tunablue.ca/",
+        "label": "Reviewed coordinates source",
+        "status": "verified",
+        "observedAt": "2026-10-20T19:03:59.147020+00:00"
+      },
+      {
+        "type": "menu",
+        "url": "https://www.tunablue.ca/menu",
+        "label": "Owner menu source (confirm current items and prices)",
+        "status": "verified",
+        "observedAt": "2026-10-20T19:05:00.058192+00:00",
+        "contentVerified": true
+      },
+      {
+        "type": "reviewed_field_source",
+        "url": "https://www.tunablue.ca/menu",
+        "label": "Reviewed menu source",
+        "status": "verified",
+        "observedAt": "2026-10-20T19:05:00.058192+00:00"
       }
     ],
     "discoveryReview": {
@@ -2783,6 +4830,13 @@ window.HALIFAX_DISCOVERED_RESTAURANTS = [
     "sourceLayer": "local_discovery",
     "address": "2094 Hammonds Plains Road, Hammonds Plains, NS B4B 1P3",
     "phone": "902-832-9999",
+    "email": null,
+    "contactUrl": null,
+    "contactScope": null,
+    "fieldEvidence": {},
+    "openingHoursVerifiedAt": null,
+    "hoursValidThrough": null,
+    "hoursScope": null,
     "website": "https://vernonsdiner.ca/",
     "openingHours": null,
     "operatingStatus": "active",
@@ -2846,6 +4900,13 @@ window.HALIFAX_DISCOVERED_RESTAURANTS = [
     "sourceLayer": "local_discovery",
     "address": "1438 Hammonds Plains Road, Unit 1, Hammonds Plains, NS B4B 1P6",
     "phone": "902-832-7777",
+    "email": null,
+    "contactUrl": null,
+    "contactScope": null,
+    "fieldEvidence": {},
+    "openingHoursVerifiedAt": null,
+    "hoursValidThrough": null,
+    "hoursScope": null,
     "website": "https://www.740restaurant.ca/",
     "openingHours": null,
     "operatingStatus": "active",
@@ -2925,6 +4986,13 @@ window.HALIFAX_DISCOVERED_RESTAURANTS = [
     "sourceLayer": "local_discovery",
     "address": "40 Clubhouse Lane, Hammonds Plains, NS B4B 1T4",
     "phone": null,
+    "email": null,
+    "contactUrl": null,
+    "contactScope": null,
+    "fieldEvidence": {},
+    "openingHoursVerifiedAt": null,
+    "hoursValidThrough": null,
+    "hoursScope": null,
     "website": "https://www.deerfieldpub.ca/",
     "openingHours": null,
     "operatingStatus": "active",
@@ -3012,8 +5080,64 @@ window.HALIFAX_DISCOVERED_RESTAURANTS = [
     "sourceLayer": "local_discovery",
     "address": "991 Windgate Drive, Beaver Bank, NS B4G 0A7",
     "phone": "902-864-5634",
+    "email": "Beaverbankstation09@gmail.com",
+    "contactUrl": "https://www.beaverbankstation.com/",
+    "contactScope": null,
+    "fieldEvidence": {
+      "hours": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.beaverbankstation.com/"
+        ],
+        "observedAt": "2026-10-20T19:03:54.736562+00:00",
+        "observation": "Visible Hours block has a complete seven-day schedule; LocalBusiness JSON-LD openingHours is empty, not conflicting.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://www.beaverbankstation.com/",
+            "fetchedAt": "2026-10-20T19:03:54.736562+00:00",
+            "httpStatus": 200,
+            "sha256": "f0aa43c6c4ecc5c7eccb78cdd313c5a71dd085ead864b38ac4107361f25dedaa"
+          }
+        ]
+      },
+      "phone": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.beaverbankstation.com/"
+        ],
+        "observedAt": "2026-10-20T19:03:54.736562+00:00",
+        "observation": "Current first-party location contact text supplies this exact telephone number.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://www.beaverbankstation.com/",
+            "fetchedAt": "2026-10-20T19:03:54.736562+00:00",
+            "httpStatus": 200,
+            "sha256": "f0aa43c6c4ecc5c7eccb78cdd313c5a71dd085ead864b38ac4107361f25dedaa"
+          }
+        ]
+      },
+      "contact": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.beaverbankstation.com/"
+        ],
+        "observedAt": "2026-10-20T19:03:54.736562+00:00",
+        "observation": "Official contact page or homepage publishes this contact route. No contact made.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://www.beaverbankstation.com/",
+            "fetchedAt": "2026-10-20T19:03:54.736562+00:00",
+            "httpStatus": 200,
+            "sha256": "f0aa43c6c4ecc5c7eccb78cdd313c5a71dd085ead864b38ac4107361f25dedaa"
+          }
+        ]
+      }
+    },
+    "openingHoursVerifiedAt": "2026-10-20T19:03:54.736562+00:00",
+    "hoursValidThrough": null,
+    "hoursScope": "restaurant",
     "website": "https://www.beaverbankstation.com/",
-    "openingHours": null,
+    "openingHours": "Mo closed; Tu 16:00–21:00; We 16:00–21:00; Th 11:30–21:30; Fr 11:30–23:00; Sa 11:00–23:00; Su 11:00–20:00",
     "operatingStatus": "active",
     "operatingStatusEvidence": {
       "claim": "Official restaurant website has live menu and Clover order link; Nova Scotia Tourism corroborates address and year-round food service.",
@@ -3070,6 +5194,13 @@ window.HALIFAX_DISCOVERED_RESTAURANTS = [
         "url": "https://nslegislature.ca/sites/default/files/pdfs/proceedings/hansard/63-1/h52apr18.pdf?1014=",
         "status": "verified",
         "observedAt": "2026-10-20"
+      },
+      {
+        "type": "reviewed_field_source",
+        "url": "https://www.beaverbankstation.com/",
+        "label": "Reviewed hours source",
+        "status": "verified",
+        "observedAt": "2026-10-20T19:03:54.736562+00:00"
       }
     ],
     "discoveryReview": {
@@ -3091,8 +5222,110 @@ window.HALIFAX_DISCOVERED_RESTAURANTS = [
     "sourceLayer": "local_discovery",
     "address": "3187 Highway 2, Fall River, NS B2T 1J5",
     "phone": "902-860-3610",
+    "email": "info@theturtleback.ca",
+    "contactUrl": "https://www.theturtleback.ca/contact",
+    "contactScope": null,
+    "fieldEvidence": {
+      "coordinates": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.theturtleback.ca/"
+        ],
+        "observedAt": "2026-10-20T19:03:54.737947+00:00",
+        "observation": "Owner Wix businessLocationCoordinates explicitly associates these values with 3187 Nova Scotia Trunk 2, B2T 1J5. Same pair appears in current contact/menu HTML.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://www.theturtleback.ca/",
+            "fetchedAt": "2026-10-20T19:03:54.737947+00:00",
+            "httpStatus": 200,
+            "sha256": "8c296121673f0129cdd202eba8ecc3ca225946f5229e1bea45143e2ec6a63791"
+          }
+        ]
+      },
+      "hours": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.theturtleback.ca/",
+          "https://www.theturtleback.ca/menu"
+        ],
+        "observedAt": "2026-10-20T19:05:20.342283+00:00",
+        "observation": "Main RESTAURANT HOURS, not separate Snack Shack: Mon 11:30–8; Tue–Fri 11:30–9; Sat 10–9; Sun 10–8. Weekend brunch 10–2 is a subset, not whole-day hours. Menu service window is shorter than venue hours Tue–Thu: Lunch/Dinner served Mon–Thu until 8PM, while restaurant hours list Tue–Thu until 9PM. Keep food-service limitation visible and never use it to infer full kitchen service until venue close.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://www.theturtleback.ca/",
+            "fetchedAt": "2026-10-20T19:03:54.737947+00:00",
+            "httpStatus": 200,
+            "sha256": "8c296121673f0129cdd202eba8ecc3ca225946f5229e1bea45143e2ec6a63791"
+          },
+          {
+            "url": "https://www.theturtleback.ca/menu",
+            "fetchedAt": "2026-10-20T19:05:20.342283+00:00",
+            "httpStatus": 200,
+            "sha256": "d5300be151337666807ad6f01e40945733329310147423ab7bfdd8099038f53b"
+          }
+        ]
+      },
+      "menu": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.theturtleback.ca/",
+          "https://www.theturtleback.ca/menu"
+        ],
+        "observedAt": "2026-10-20T19:05:20.342283+00:00",
+        "observation": "Exact menu destination is linked by the official owner website and was retrieved successfully.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://www.theturtleback.ca/",
+            "fetchedAt": "2026-10-20T19:03:54.737947+00:00",
+            "httpStatus": 200,
+            "sha256": "8c296121673f0129cdd202eba8ecc3ca225946f5229e1bea45143e2ec6a63791"
+          },
+          {
+            "url": "https://www.theturtleback.ca/menu",
+            "fetchedAt": "2026-10-20T19:05:20.342283+00:00",
+            "httpStatus": 200,
+            "sha256": "d5300be151337666807ad6f01e40945733329310147423ab7bfdd8099038f53b"
+          }
+        ]
+      },
+      "phone": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.theturtleback.ca/"
+        ],
+        "observedAt": "2026-10-20T19:03:54.737947+00:00",
+        "observation": "Current first-party location contact text supplies this exact telephone number.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://www.theturtleback.ca/",
+            "fetchedAt": "2026-10-20T19:03:54.737947+00:00",
+            "httpStatus": 200,
+            "sha256": "8c296121673f0129cdd202eba8ecc3ca225946f5229e1bea45143e2ec6a63791"
+          }
+        ]
+      },
+      "contact": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.theturtleback.ca/contact"
+        ],
+        "observedAt": "2026-10-20T19:05:20.341579+00:00",
+        "observation": "Official contact page or homepage publishes this contact route. No contact made.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://www.theturtleback.ca/contact",
+            "fetchedAt": "2026-10-20T19:05:20.341579+00:00",
+            "httpStatus": 200,
+            "sha256": "d5761647de45f034017fc3f8a20a6d883effae5d0a09bb66e4668a953c7b2f46"
+          }
+        ]
+      }
+    },
+    "openingHoursVerifiedAt": "2026-10-20T19:05:20.342283+00:00",
+    "hoursValidThrough": null,
+    "hoursScope": "restaurant",
     "website": "https://www.theturtleback.ca/",
-    "openingHours": null,
+    "openingHours": "Mo 11:30–20:00; Tu 11:30–21:00; We 11:30–21:00; Th 11:30–21:00; Fr 11:30–21:00; Sa 10:00–21:00; Su 10:00–20:00; Food service: Lunch/dinner Mon–Thu 11:30–20:00; Friday 11:30–21:00; Saturday 14:00–21:00; Sunday 14:00–20:00. Weekend brunch is separate.",
     "operatingStatus": "active",
     "operatingStatusEvidence": {
       "claim": "Official menu and restaurant hours/takeout are live; Nova Scotia Tourism corroborates address and year-round restaurant operation.",
@@ -3116,7 +5349,10 @@ window.HALIFAX_DISCOVERED_RESTAURANTS = [
       "observedAt": "2026-10-20"
     },
     "openingStatus": null,
-    "coordinates": null,
+    "coordinates": {
+      "lat": 44.8135813,
+      "lon": -63.6106054
+    },
     "socialProfiles": [],
     "summary": "Seafood chowder, burgers, fish and chips, pasta and weekend brunch; dine-in, reservations and takeout.",
     "specials": [],
@@ -3149,6 +5385,35 @@ window.HALIFAX_DISCOVERED_RESTAURANTS = [
         "url": "https://novascotia.com/listing/the-turtleback-tap-and-grill/",
         "status": "verified",
         "observedAt": "2026-10-20"
+      },
+      {
+        "type": "reviewed_field_source",
+        "url": "https://www.theturtleback.ca/",
+        "label": "Reviewed coordinates source",
+        "status": "verified",
+        "observedAt": "2026-10-20T19:03:54.737947+00:00"
+      },
+      {
+        "type": "reviewed_field_source",
+        "url": "https://www.theturtleback.ca/menu",
+        "label": "Reviewed hours source",
+        "status": "verified",
+        "observedAt": "2026-10-20T19:05:20.342283+00:00"
+      },
+      {
+        "type": "menu",
+        "url": "https://www.theturtleback.ca/menu",
+        "label": "Owner menu source (confirm current items and prices)",
+        "status": "verified",
+        "observedAt": "2026-10-20T19:05:20.342283+00:00",
+        "contentVerified": true
+      },
+      {
+        "type": "reviewed_field_source",
+        "url": "https://www.theturtleback.ca/contact",
+        "label": "Reviewed contact source",
+        "status": "verified",
+        "observedAt": "2026-10-20T19:05:20.341579+00:00"
       }
     ],
     "discoveryReview": {
@@ -3170,6 +5435,76 @@ window.HALIFAX_DISCOVERED_RESTAURANTS = [
     "sourceLayer": "local_discovery",
     "address": "4313 NS-2, Wellington, NS B2T 1J4",
     "phone": "902-861-1111",
+    "email": null,
+    "contactUrl": "https://wellingtonpizza.com/",
+    "contactScope": null,
+    "fieldEvidence": {
+      "menu": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://wellingtonpizza.com/",
+          "https://wellingtonpizza.com/menu",
+          "https://wellingtonpizza.com/assets/MenuPage-DzQyoadc.js"
+        ],
+        "observedAt": "2026-10-20T19:11:44.693987+00:00",
+        "observation": "Owner current route /menu lazy-loads MenuPage-DzQyoadc.js. Both route HTML and exact public frontend asset fetched HTTP 200; asset contains substantive named pizza, donair, seafood and related menu entries. No prices imported.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://wellingtonpizza.com/",
+            "fetchedAt": "2026-10-20T19:03:59.090737+00:00",
+            "httpStatus": 200,
+            "sha256": "d5d74d51c0c5610ff3dd195078812c599f1545d9744f4a5772ee5679b8586945"
+          },
+          {
+            "url": "https://wellingtonpizza.com/menu",
+            "fetchedAt": "2026-10-20T19:10:39.680320+00:00",
+            "httpStatus": 200,
+            "sha256": "68fea792655247597501c8600d0ac4f09240e6488246a1d2170f5c52cace9ca1"
+          },
+          {
+            "url": "https://wellingtonpizza.com/assets/MenuPage-DzQyoadc.js",
+            "fetchedAt": "2026-10-20T19:11:44.693987+00:00",
+            "httpStatus": 200,
+            "sha256": null
+          }
+        ]
+      },
+      "phone": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://wellingtonpizza.com/"
+        ],
+        "observedAt": "2026-10-20T19:03:59.090737+00:00",
+        "observation": "Current first-party location contact text supplies this exact telephone number.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://wellingtonpizza.com/",
+            "fetchedAt": "2026-10-20T19:03:59.090737+00:00",
+            "httpStatus": 200,
+            "sha256": "d5d74d51c0c5610ff3dd195078812c599f1545d9744f4a5772ee5679b8586945"
+          }
+        ]
+      },
+      "contact": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://wellingtonpizza.com/"
+        ],
+        "observedAt": "2026-10-20T19:03:59.090737+00:00",
+        "observation": "Official homepage is a current contact route; no message sent.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://wellingtonpizza.com/",
+            "fetchedAt": "2026-10-20T19:03:59.090737+00:00",
+            "httpStatus": 200,
+            "sha256": "d5d74d51c0c5610ff3dd195078812c599f1545d9744f4a5772ee5679b8586945"
+          }
+        ]
+      }
+    },
+    "openingHoursVerifiedAt": null,
+    "hoursValidThrough": null,
+    "hoursScope": null,
     "website": "https://wellingtonpizza.com/",
     "openingHours": null,
     "operatingStatus": "active",
@@ -3220,6 +5555,35 @@ window.HALIFAX_DISCOVERED_RESTAURANTS = [
         "url": "https://www.tripadvisor.ca/Restaurant_Review-g11547681-d10035808-Reviews-Wellington_Pizza-Wellington_Nova_Scotia.html",
         "status": "verified",
         "observedAt": "2026-10-20"
+      },
+      {
+        "type": "menu",
+        "url": "https://wellingtonpizza.com/menu",
+        "label": "Owner menu source (confirm current items and prices)",
+        "status": "verified",
+        "observedAt": "2026-10-20T19:11:44.693987+00:00",
+        "contentVerified": true
+      },
+      {
+        "type": "reviewed_field_source",
+        "url": "https://wellingtonpizza.com/",
+        "label": "Reviewed menu source",
+        "status": "verified",
+        "observedAt": "2026-10-20T19:11:44.693987+00:00"
+      },
+      {
+        "type": "reviewed_field_source",
+        "url": "https://wellingtonpizza.com/menu",
+        "label": "Reviewed menu source",
+        "status": "verified",
+        "observedAt": "2026-10-20T19:11:44.693987+00:00"
+      },
+      {
+        "type": "reviewed_field_source",
+        "url": "https://wellingtonpizza.com/assets/MenuPage-DzQyoadc.js",
+        "label": "Reviewed menu source",
+        "status": "verified",
+        "observedAt": "2026-10-20T19:11:44.693987+00:00"
       }
     ],
     "discoveryReview": {
@@ -3241,6 +5605,13 @@ window.HALIFAX_DISCOVERED_RESTAURANTS = [
     "sourceLayer": "local_discovery",
     "address": "1531 Bedford Highway, Bedford, NS B4A 1E5",
     "phone": "902-835-6565",
+    "email": null,
+    "contactUrl": null,
+    "contactScope": null,
+    "fieldEvidence": {},
+    "openingHoursVerifiedAt": null,
+    "hoursValidThrough": null,
+    "hoursScope": null,
     "website": "https://chickenburger.com/",
     "openingHours": null,
     "operatingStatus": "active",
@@ -3320,6 +5691,13 @@ window.HALIFAX_DISCOVERED_RESTAURANTS = [
     "sourceLayer": "local_discovery",
     "address": "50 Gary Martin Drive, Bedford, NS B4B 1H3",
     "phone": "902-431-8053",
+    "email": null,
+    "contactUrl": null,
+    "contactScope": null,
+    "fieldEvidence": {},
+    "openingHoursVerifiedAt": null,
+    "hoursValidThrough": null,
+    "hoursScope": null,
     "website": "https://millstonepublichouse.com/",
     "openingHours": null,
     "operatingStatus": "active",
@@ -3383,8 +5761,71 @@ window.HALIFAX_DISCOVERED_RESTAURANTS = [
     "sourceLayer": "local_discovery",
     "address": "772 Bedford Highway, Bedford, NS B4A 1A2",
     "phone": "902-835-9033",
+    "email": "esquire@graftonconnor.com",
+    "contactUrl": "https://www.esquirerestaurant.ca/contact-us/",
+    "contactScope": null,
+    "fieldEvidence": {
+      "hours": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.esquirerestaurant.ca/home/",
+          "https://www.esquirerestaurant.ca/contact-us/"
+        ],
+        "observedAt": "2026-10-20T19:05:20.343071+00:00",
+        "observation": "Homepage and contact page agree: weekdays 9AM–7:30PM; weekends 8AM–7:30PM. Correct civic address remains 772 Bedford Highway.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://www.esquirerestaurant.ca/home/",
+            "fetchedAt": "2026-10-20T19:04:00.767728+00:00",
+            "httpStatus": 200,
+            "sha256": "ee837d9cf28245b7991e26ddbf488a798b03a45091e99cd7ec162d78b7963303"
+          },
+          {
+            "url": "https://www.esquirerestaurant.ca/contact-us/",
+            "fetchedAt": "2026-10-20T19:05:20.343071+00:00",
+            "httpStatus": 200,
+            "sha256": "d79f30c38b7847cee7627890b9e94518adf1051bd902a6ce0a6bacdd662fc1f6"
+          }
+        ]
+      },
+      "phone": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.esquirerestaurant.ca/home/"
+        ],
+        "observedAt": "2026-10-20T19:04:00.767728+00:00",
+        "observation": "Current first-party location contact text supplies this exact telephone number.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://www.esquirerestaurant.ca/home/",
+            "fetchedAt": "2026-10-20T19:04:00.767728+00:00",
+            "httpStatus": 200,
+            "sha256": "ee837d9cf28245b7991e26ddbf488a798b03a45091e99cd7ec162d78b7963303"
+          }
+        ]
+      },
+      "contact": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.esquirerestaurant.ca/contact-us/"
+        ],
+        "observedAt": "2026-10-20T19:05:20.343071+00:00",
+        "observation": "Official contact page or homepage publishes this contact route. No contact made.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://www.esquirerestaurant.ca/contact-us/",
+            "fetchedAt": "2026-10-20T19:05:20.343071+00:00",
+            "httpStatus": 200,
+            "sha256": "d79f30c38b7847cee7627890b9e94518adf1051bd902a6ce0a6bacdd662fc1f6"
+          }
+        ]
+      }
+    },
+    "openingHoursVerifiedAt": "2026-10-20T19:05:20.343071+00:00",
+    "hoursValidThrough": null,
+    "hoursScope": "restaurant",
     "website": "https://www.esquirerestaurant.ca/home/",
-    "openingHours": null,
+    "openingHours": "Mo 09:00–19:30; Tu 09:00–19:30; We 09:00–19:30; Th 09:00–19:30; Fr 09:00–19:30; Sa 08:00–19:30; Su 08:00–19:30",
     "operatingStatus": "active",
     "operatingStatusEvidence": {
       "claim": "Live restaurant ordering/service page and current official Grafton Connor restaurant listing agree on venue and civic address.",
@@ -3441,6 +5882,20 @@ window.HALIFAX_DISCOVERED_RESTAURANTS = [
         "url": "https://www.graftonconnor.com/family-dining/",
         "status": "verified",
         "observedAt": "2026-10-20"
+      },
+      {
+        "type": "reviewed_field_source",
+        "url": "https://www.esquirerestaurant.ca/home/",
+        "label": "Reviewed hours source",
+        "status": "verified",
+        "observedAt": "2026-10-20T19:05:20.343071+00:00"
+      },
+      {
+        "type": "reviewed_field_source",
+        "url": "https://www.esquirerestaurant.ca/contact-us/",
+        "label": "Reviewed hours source",
+        "status": "verified",
+        "observedAt": "2026-10-20T19:05:20.343071+00:00"
       }
     ],
     "discoveryReview": {
@@ -3462,6 +5917,62 @@ window.HALIFAX_DISCOVERED_RESTAURANTS = [
     "sourceLayer": "local_discovery",
     "address": "1595 Bedford Highway, Sunnyside Mall, Bedford, NS B4A 3Y4",
     "phone": "902-832-4531",
+    "email": "ilmercatobedford@gmail.com",
+    "contactUrl": "https://www.il-mercato.ca/contact/",
+    "contactScope": null,
+    "fieldEvidence": {
+      "coordinates": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.il-mercato.ca/contact/"
+        ],
+        "observedAt": "2026-10-20T19:05:25.515909+00:00",
+        "observation": "Owner av_google_map['av_gmap_0']['marker']['0'] explicitly sets lat and long and labels 1595 Bedford Highway / Bedford / Canada. This is the marker, not map center. Shared mall civic address does not merge venues.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://www.il-mercato.ca/contact/",
+            "fetchedAt": "2026-10-20T19:05:25.515909+00:00",
+            "httpStatus": 200,
+            "sha256": "ac3da8fcec2c61058cfd75dac608f3d266ae6f2988dd955963a4dc2b62a8de57"
+          }
+        ]
+      },
+      "phone": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.il-mercato.ca/contact/"
+        ],
+        "observedAt": "2026-10-20T19:05:25.515909+00:00",
+        "observation": "Current first-party location contact text supplies this exact telephone number.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://www.il-mercato.ca/contact/",
+            "fetchedAt": "2026-10-20T19:05:25.515909+00:00",
+            "httpStatus": 200,
+            "sha256": "ac3da8fcec2c61058cfd75dac608f3d266ae6f2988dd955963a4dc2b62a8de57"
+          }
+        ]
+      },
+      "contact": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.il-mercato.ca/contact/"
+        ],
+        "observedAt": "2026-10-20T19:05:25.515909+00:00",
+        "observation": "Official contact page or homepage publishes this contact route. No contact made.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://www.il-mercato.ca/contact/",
+            "fetchedAt": "2026-10-20T19:05:25.515909+00:00",
+            "httpStatus": 200,
+            "sha256": "ac3da8fcec2c61058cfd75dac608f3d266ae6f2988dd955963a4dc2b62a8de57"
+          }
+        ]
+      }
+    },
+    "openingHoursVerifiedAt": null,
+    "hoursValidThrough": null,
+    "hoursScope": null,
     "website": "https://www.il-mercato.ca/",
     "openingHours": null,
     "operatingStatus": "active",
@@ -3486,7 +5997,10 @@ window.HALIFAX_DISCOVERED_RESTAURANTS = [
       "observedAt": "2026-10-20"
     },
     "openingStatus": null,
-    "coordinates": null,
+    "coordinates": {
+      "lat": 44.7330744,
+      "lon": -63.65454599999998
+    },
     "socialProfiles": [],
     "summary": "Italian trattoria with handmade pasta and other Italian dishes; dine-in and reservations.",
     "specials": [],
@@ -3512,6 +6026,13 @@ window.HALIFAX_DISCOVERED_RESTAURANTS = [
         "url": "https://bertossigroup.com/",
         "status": "verified",
         "observedAt": "2026-10-20"
+      },
+      {
+        "type": "reviewed_field_source",
+        "url": "https://www.il-mercato.ca/contact/",
+        "label": "Reviewed coordinates source",
+        "status": "verified",
+        "observedAt": "2026-10-20T19:05:25.515909+00:00"
       }
     ],
     "discoveryReview": {
@@ -3533,8 +6054,87 @@ window.HALIFAX_DISCOVERED_RESTAURANTS = [
     "sourceLayer": "local_discovery",
     "address": "1595 Bedford Highway, Sunnyside Mall, Bedford, NS B4A 3Y4",
     "phone": "902-707-6956",
+    "email": "cheers@finbars.ca",
+    "contactUrl": "https://www.finbars.ca/",
+    "contactScope": null,
+    "fieldEvidence": {
+      "hours": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.finbars.ca/"
+        ],
+        "observedAt": "2026-10-20T19:04:04.204067+00:00",
+        "observation": "Owner distinguishes food and drinks: Mon–Thu food until 9PM/drinks until 10PM; Fri–Sat food 10PM/drinks 11PM; Sun food 8PM/drinks 9PM; all open 11AM. Proposed venue schedule ends at drinks close. Keep kitchen limitation visible.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://www.finbars.ca/",
+            "fetchedAt": "2026-10-20T19:04:04.204067+00:00",
+            "httpStatus": 200,
+            "sha256": "666153a4e50f49cd9f3fd9959231de62cbb9bb6b3e8840531f4df69e7eb8e780"
+          }
+        ]
+      },
+      "menu": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.finbars.ca/",
+          "https://www.finbars.ca/_files/ugd/ba8133_7cdd21809d6b4b369e6350d6329b7639.pdf"
+        ],
+        "observedAt": "2026-10-20T19:10:53.552387+00:00",
+        "observation": "Owner homepage Dinner Menu link resolves to a PDF fetched directly with HTTP 200. pdftotext confirms substantive appetizer, salad, main-dish menu content; no prices imported.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://www.finbars.ca/",
+            "fetchedAt": "2026-10-20T19:04:04.204067+00:00",
+            "httpStatus": 200,
+            "sha256": "666153a4e50f49cd9f3fd9959231de62cbb9bb6b3e8840531f4df69e7eb8e780"
+          },
+          {
+            "url": "https://www.finbars.ca/_files/ugd/ba8133_7cdd21809d6b4b369e6350d6329b7639.pdf",
+            "fetchedAt": "2026-10-20T19:10:53.552387+00:00",
+            "httpStatus": 200,
+            "sha256": null
+          }
+        ]
+      },
+      "phone": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.finbars.ca/"
+        ],
+        "observedAt": "2026-10-20T19:04:04.204067+00:00",
+        "observation": "Current first-party location contact text supplies this exact telephone number.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://www.finbars.ca/",
+            "fetchedAt": "2026-10-20T19:04:04.204067+00:00",
+            "httpStatus": 200,
+            "sha256": "666153a4e50f49cd9f3fd9959231de62cbb9bb6b3e8840531f4df69e7eb8e780"
+          }
+        ]
+      },
+      "contact": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.finbars.ca/"
+        ],
+        "observedAt": "2026-10-20T19:04:04.204067+00:00",
+        "observation": "Official contact page or homepage publishes this contact route. No contact made.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://www.finbars.ca/",
+            "fetchedAt": "2026-10-20T19:04:04.204067+00:00",
+            "httpStatus": 200,
+            "sha256": "666153a4e50f49cd9f3fd9959231de62cbb9bb6b3e8840531f4df69e7eb8e780"
+          }
+        ]
+      }
+    },
+    "openingHoursVerifiedAt": "2026-10-20T19:04:04.204067+00:00",
+    "hoursValidThrough": null,
+    "hoursScope": "venue_with_separate_kitchen_hours",
     "website": "https://www.finbars.ca/",
-    "openingHours": null,
+    "openingHours": "Venue hours: Mo 11:00–22:00; Tu 11:00–22:00; We 11:00–22:00; Th 11:00–22:00; Fr 11:00–23:00; Sa 11:00–23:00; Su 11:00–21:00; Kitchen: Mo 11:00–21:00; Tu 11:00–21:00; We 11:00–21:00; Th 11:00–21:00; Fr 11:00–22:00; Sa 11:00–22:00; Su 11:00–20:00",
     "operatingStatus": "active",
     "operatingStatusEvidence": {
       "claim": "Official live site, current contact/hours and April 2026 dinner menu. Mall directory corroborates current phone.",
@@ -3591,6 +6191,28 @@ window.HALIFAX_DISCOVERED_RESTAURANTS = [
         "url": "https://sunnysidemall.ca/directory?c=finbars",
         "status": "verified",
         "observedAt": "2026-10-20"
+      },
+      {
+        "type": "reviewed_field_source",
+        "url": "https://www.finbars.ca/",
+        "label": "Reviewed hours source",
+        "status": "verified",
+        "observedAt": "2026-10-20T19:04:04.204067+00:00"
+      },
+      {
+        "type": "menu",
+        "url": "https://www.finbars.ca/_files/ugd/ba8133_7cdd21809d6b4b369e6350d6329b7639.pdf",
+        "label": "Owner menu source (confirm current items and prices)",
+        "status": "verified",
+        "observedAt": "2026-10-20T19:10:53.552387+00:00",
+        "contentVerified": true
+      },
+      {
+        "type": "reviewed_field_source",
+        "url": "https://www.finbars.ca/_files/ugd/ba8133_7cdd21809d6b4b369e6350d6329b7639.pdf",
+        "label": "Reviewed menu source",
+        "status": "verified",
+        "observedAt": "2026-10-20T19:10:53.552387+00:00"
       }
     ],
     "discoveryReview": {
@@ -3615,6 +6237,13 @@ window.HALIFAX_DISCOVERED_RESTAURANTS = [
     "sourceLayer": "local_discovery",
     "address": "1842 Prospect Rd, Hatchet Lake, NS",
     "phone": "902-852-2220",
+    "email": null,
+    "contactUrl": null,
+    "contactScope": null,
+    "fieldEvidence": {},
+    "openingHoursVerifiedAt": null,
+    "hoursValidThrough": null,
+    "hoursScope": null,
     "website": "https://www.gspizza.ca/",
     "openingHours": null,
     "operatingStatus": "active",
@@ -3681,6 +6310,62 @@ window.HALIFAX_DISCOVERED_RESTAURANTS = [
     "sourceLayer": "local_discovery",
     "address": "199 Old Coach Rd, Hatchet Lake, NS B3T 1P6",
     "phone": "902-850-2501",
+    "email": "martinskitchenil@gmail.com",
+    "contactUrl": "https://www.martinskitchenil.com/contact",
+    "contactScope": null,
+    "fieldEvidence": {
+      "coordinates": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.martinskitchenil.com/"
+        ],
+        "observedAt": "2026-10-20T19:04:04.938123+00:00",
+        "observation": "Owner businessLocationCoordinates explicitly tied to 199 Old Coach Road, Hatchet Lake B3T 1P6. Repeated on current contact page.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://www.martinskitchenil.com/",
+            "fetchedAt": "2026-10-20T19:04:04.938123+00:00",
+            "httpStatus": 200,
+            "sha256": "17f2915417230eafdf510c4176f7860c393dbdafd2be09bea3f2ec6f2d07c261"
+          }
+        ]
+      },
+      "phone": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.martinskitchenil.com/contact"
+        ],
+        "observedAt": "2026-10-20T19:05:25.728710+00:00",
+        "observation": "Current first-party location contact text supplies this exact telephone number.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://www.martinskitchenil.com/contact",
+            "fetchedAt": "2026-10-20T19:05:25.728710+00:00",
+            "httpStatus": 200,
+            "sha256": "ca837af4a431ec0694ff7a88a1069e730cb53845b2418fff4bb369d450e5ca4a"
+          }
+        ]
+      },
+      "contact": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.martinskitchenil.com/contact"
+        ],
+        "observedAt": "2026-10-20T19:05:25.728710+00:00",
+        "observation": "Official contact page or homepage publishes this contact route. No contact made.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://www.martinskitchenil.com/contact",
+            "fetchedAt": "2026-10-20T19:05:25.728710+00:00",
+            "httpStatus": 200,
+            "sha256": "ca837af4a431ec0694ff7a88a1069e730cb53845b2418fff4bb369d450e5ca4a"
+          }
+        ]
+      }
+    },
+    "openingHoursVerifiedAt": null,
+    "hoursValidThrough": null,
+    "hoursScope": null,
     "website": "https://www.martinskitchenil.com/",
     "openingHours": null,
     "operatingStatus": "active",
@@ -3706,7 +6391,10 @@ window.HALIFAX_DISCOVERED_RESTAURANTS = [
       "observedAt": "2026-10-20"
     },
     "openingStatus": null,
-    "coordinates": null,
+    "coordinates": {
+      "lat": 44.5950248,
+      "lon": -63.7052193
+    },
     "socialProfiles": [],
     "summary": "Official homepage explicitly offers dine-in and takeout. Restaurant page describes pasta, pizza and fish; booking and food-and-wine pages are linked.",
     "specials": [],
@@ -3739,6 +6427,20 @@ window.HALIFAX_DISCOVERED_RESTAURANTS = [
         "url": "https://discoverhalifaxns.com/dinearound/menu/martins-kitchen-dine-around-menu/",
         "status": "verified",
         "observedAt": "2026-10-20"
+      },
+      {
+        "type": "reviewed_field_source",
+        "url": "https://www.martinskitchenil.com/",
+        "label": "Reviewed coordinates source",
+        "status": "verified",
+        "observedAt": "2026-10-20T19:04:04.938123+00:00"
+      },
+      {
+        "type": "reviewed_field_source",
+        "url": "https://www.martinskitchenil.com/contact",
+        "label": "Reviewed phone source",
+        "status": "verified",
+        "observedAt": "2026-10-20T19:05:25.728710+00:00"
       }
     ],
     "discoveryReview": {
@@ -3761,9 +6463,72 @@ window.HALIFAX_DISCOVERED_RESTAURANTS = [
     "evidenceStatus": "verified",
     "sourceLayer": "local_discovery",
     "address": "501 Timberlea Village Parkway, Unit 200, Timberlea, NS B3T 0J1",
-    "phone": null,
+    "phone": "902-876-2023",
+    "email": null,
+    "contactUrl": "https://northbrewing.ca/pages/contact",
+    "contactScope": null,
+    "fieldEvidence": {
+      "hours": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://northbrewing.ca/",
+          "https://northbrewing.ca/pages/menu"
+        ],
+        "observedAt": "2026-10-20T19:05:30.430535+00:00",
+        "observation": "501 Timberlea Village block: Monday 12–7 is RETAIL SHOP ONLY, taproom closed. Tue–Thu noon–9; Fri–Sat 11:30–9; Sun noon–9. Proposed schedule is taproom/restaurant, not retail.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://northbrewing.ca/",
+            "fetchedAt": "2026-10-20T19:04:05.182812+00:00",
+            "httpStatus": 200,
+            "sha256": "d8326e3382acd87315405d4e54efc4ffaa47eb6168eed94d98d15c040ed4cf25"
+          },
+          {
+            "url": "https://northbrewing.ca/pages/menu",
+            "fetchedAt": "2026-10-20T19:05:30.430535+00:00",
+            "httpStatus": 200,
+            "sha256": "d084d75b41f57d5488362329ca0af91a749ec0d44622d6e045c58b551511e16e"
+          }
+        ]
+      },
+      "phone": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://northbrewing.ca/pages/menu"
+        ],
+        "observedAt": "2026-10-20T19:05:30.430535+00:00",
+        "observation": "Fresh direct owner Food page explicitly says: To order food click or call: Cole Harbour - 902-444-7765 Timberlea - 902-876-2023. Use Timberlea number, not shared brand or Cole Harbour number.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://northbrewing.ca/pages/menu",
+            "fetchedAt": "2026-10-20T19:05:30.430535+00:00",
+            "httpStatus": 200,
+            "sha256": "d084d75b41f57d5488362329ca0af91a749ec0d44622d6e045c58b551511e16e"
+          }
+        ]
+      },
+      "contact": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://northbrewing.ca/pages/contact"
+        ],
+        "observedAt": "2026-10-20T19:05:26.684664+00:00",
+        "observation": "Official Taproom Bookings form supports Timberlea group inquiries; owner Food page additionally supplies Timberlea 902-876-2023. No form submitted.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://northbrewing.ca/pages/contact",
+            "fetchedAt": "2026-10-20T19:05:26.684664+00:00",
+            "httpStatus": 200,
+            "sha256": "8e7e63cee10af511b72547cbaaca0098becf7a914f0d77489800501b30a2f771"
+          }
+        ]
+      }
+    },
+    "openingHoursVerifiedAt": "2026-10-20T19:05:30.430535+00:00",
+    "hoursValidThrough": null,
+    "hoursScope": "taproom_not_retail",
     "website": "https://northbrewing.ca/",
-    "openingHours": null,
+    "openingHours": "Taproom hours (not retail): Mo closed; Tu 12:00–21:00; We 12:00–21:00; Th 12:00–21:00; Fr 11:30–21:00; Sa 11:30–21:00; Su 12:00–21:00",
     "operatingStatus": "active",
     "operatingStatusEvidence": {
       "claim": "Live official site lists Timberlea restaurant service and clearly distinguishes retail-only Mondays. About page contains a 2026 scholarship update, providing a dated sign of maintained first-party content.",
@@ -3836,6 +6601,27 @@ window.HALIFAX_DISCOVERED_RESTAURANTS = [
         "url": "https://www.savourfoodandwine.com/restaurant/north-brewing-timberlea/",
         "status": "verified",
         "observedAt": "2026-10-20"
+      },
+      {
+        "type": "reviewed_field_source",
+        "url": "https://northbrewing.ca/",
+        "label": "Reviewed hours source",
+        "status": "verified",
+        "observedAt": "2026-10-20T19:05:30.430535+00:00"
+      },
+      {
+        "type": "reviewed_field_source",
+        "url": "https://northbrewing.ca/pages/menu",
+        "label": "Reviewed hours source",
+        "status": "verified",
+        "observedAt": "2026-10-20T19:05:30.430535+00:00"
+      },
+      {
+        "type": "reviewed_field_source",
+        "url": "https://northbrewing.ca/pages/contact",
+        "label": "Reviewed contact source",
+        "status": "verified",
+        "observedAt": "2026-10-20T19:05:26.684664+00:00"
       }
     ],
     "discoveryReview": {
@@ -3860,6 +6646,85 @@ window.HALIFAX_DISCOVERED_RESTAURANTS = [
     "sourceLayer": "local_discovery",
     "address": "48 Peggy's Point Road, Peggy's Cove, NS B3Z 3E6",
     "phone": "902-821-2171",
+    "email": null,
+    "contactUrl": "https://www.bubbamagoos.com/contact-us",
+    "contactScope": null,
+    "fieldEvidence": {
+      "coordinates": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.bubbamagoos.com/"
+        ],
+        "observedAt": "2026-10-20T19:04:07.101696+00:00",
+        "observation": "Owner Wix businessLocationCoordinates explicitly paired with 48 Peggys Point Road. Owner contact and schema postal codes differ; existing street identity preserved, no postal correction proposed.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://www.bubbamagoos.com/",
+            "fetchedAt": "2026-10-20T19:04:07.101696+00:00",
+            "httpStatus": 200,
+            "sha256": "fdea82513e1dcabad92e90984e188cb75526d28e3f78524656365b277113879d"
+          }
+        ]
+      },
+      "menu": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.bubbamagoos.com/",
+          "https://www.bubbamagoos.com/menus"
+        ],
+        "observedAt": "2026-10-20T19:05:31.346417+00:00",
+        "observation": "Exact menu destination is linked by the official owner website and was retrieved successfully.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://www.bubbamagoos.com/",
+            "fetchedAt": "2026-10-20T19:04:07.101696+00:00",
+            "httpStatus": 200,
+            "sha256": "fdea82513e1dcabad92e90984e188cb75526d28e3f78524656365b277113879d"
+          },
+          {
+            "url": "https://www.bubbamagoos.com/menus",
+            "fetchedAt": "2026-10-20T19:05:31.346417+00:00",
+            "httpStatus": 200,
+            "sha256": "b2f1cd426c77c92e171be5bbae07bb19adebeaf4b0deb561a632e9d178edf94d"
+          }
+        ]
+      },
+      "phone": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.bubbamagoos.com/"
+        ],
+        "observedAt": "2026-10-20T19:04:07.101696+00:00",
+        "observation": "Current first-party location contact text supplies this exact telephone number.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://www.bubbamagoos.com/",
+            "fetchedAt": "2026-10-20T19:04:07.101696+00:00",
+            "httpStatus": 200,
+            "sha256": "fdea82513e1dcabad92e90984e188cb75526d28e3f78524656365b277113879d"
+          }
+        ]
+      },
+      "contact": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.bubbamagoos.com/contact-us"
+        ],
+        "observedAt": "2026-10-20T19:05:30.478977+00:00",
+        "observation": "Contact text shows sales@bubbamagoos.com but underlying email link is placeholder mailto:info@mysite.com. Existing caution retained; publish phone/contact URL, not email.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://www.bubbamagoos.com/contact-us",
+            "fetchedAt": "2026-10-20T19:05:30.478977+00:00",
+            "httpStatus": 200,
+            "sha256": "b330381cc5d53499bd34888290cf429e018c9b9c515690157bf8888e6b22c370"
+          }
+        ]
+      }
+    },
+    "openingHoursVerifiedAt": null,
+    "hoursValidThrough": null,
+    "hoursScope": null,
     "website": "https://www.bubbamagoos.com/",
     "openingHours": null,
     "operatingStatus": "active",
@@ -3887,7 +6752,10 @@ window.HALIFAX_DISCOVERED_RESTAURANTS = [
       "observedAt": "2026-10-20"
     },
     "openingStatus": null,
-    "coordinates": null,
+    "coordinates": {
+      "lat": 44.495737,
+      "lon": -63.91445129999999
+    },
     "socialProfiles": [],
     "summary": "Official website offers a second-floor bistro and lower-floor takeout window with meals including burgers and donair fries, not merely candy or souvenirs.",
     "specials": [],
@@ -3934,6 +6802,35 @@ window.HALIFAX_DISCOVERED_RESTAURANTS = [
         "url": "https://www.peggyscoveregion.com/LapMap2022.pdf",
         "status": "verified",
         "observedAt": "2026-10-20"
+      },
+      {
+        "type": "reviewed_field_source",
+        "url": "https://www.bubbamagoos.com/",
+        "label": "Reviewed coordinates source",
+        "status": "verified",
+        "observedAt": "2026-10-20T19:04:07.101696+00:00"
+      },
+      {
+        "type": "menu",
+        "url": "https://www.bubbamagoos.com/menus",
+        "label": "Owner menu source (confirm current items and prices)",
+        "status": "verified",
+        "observedAt": "2026-10-20T19:05:31.346417+00:00",
+        "contentVerified": true
+      },
+      {
+        "type": "reviewed_field_source",
+        "url": "https://www.bubbamagoos.com/menus",
+        "label": "Reviewed menu source",
+        "status": "verified",
+        "observedAt": "2026-10-20T19:05:31.346417+00:00"
+      },
+      {
+        "type": "reviewed_field_source",
+        "url": "https://www.bubbamagoos.com/contact-us",
+        "label": "Reviewed contact source",
+        "status": "verified",
+        "observedAt": "2026-10-20T19:05:30.478977+00:00"
       }
     ],
     "discoveryReview": {
@@ -3958,6 +6855,13 @@ window.HALIFAX_DISCOVERED_RESTAURANTS = [
     "sourceLayer": "local_discovery",
     "address": "12930 Peggy's Cove Rd, Tantallon, NS B3Z 2K4",
     "phone": "902-826-1966",
+    "email": null,
+    "contactUrl": null,
+    "contactScope": null,
+    "fieldEvidence": {},
+    "openingHoursVerifiedAt": null,
+    "hoursValidThrough": null,
+    "hoursScope": null,
     "website": "https://whitesailsbakery.com/",
     "openingHours": null,
     "operatingStatus": "active",
@@ -4040,6 +6944,69 @@ window.HALIFAX_DISCOVERED_RESTAURANTS = [
     "sourceLayer": "local_discovery",
     "address": "10 Sonnys Road, Upper Tantallon, NS B3Z 4R4",
     "phone": "902-826-2866",
+    "email": null,
+    "contactUrl": "https://therusticcrustpizzeria.com/",
+    "contactScope": null,
+    "fieldEvidence": {
+      "menu": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://therusticcrustpizzeria.com/",
+          "https://therusticcrustpizzeria.com/menu"
+        ],
+        "observedAt": "2026-10-20T19:05:32.654137+00:00",
+        "observation": "Exact menu destination is linked by the official owner website and was retrieved successfully.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://therusticcrustpizzeria.com/",
+            "fetchedAt": "2026-10-20T19:04:07.840522+00:00",
+            "httpStatus": 200,
+            "sha256": "95aaee159b9a12bc0e0d874a3fb603dc1f6f835d45d53b4daff8811eba839ab3"
+          },
+          {
+            "url": "https://therusticcrustpizzeria.com/menu",
+            "fetchedAt": "2026-10-20T19:05:32.654137+00:00",
+            "httpStatus": 200,
+            "sha256": "7a6bb360ab5cf0cf3efb72ce3033c2015490f030d7afb6a8ca3cdc77912eb215"
+          }
+        ]
+      },
+      "phone": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://therusticcrustpizzeria.com/"
+        ],
+        "observedAt": "2026-10-20T19:04:07.840522+00:00",
+        "observation": "Current first-party location contact text supplies this exact telephone number.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://therusticcrustpizzeria.com/",
+            "fetchedAt": "2026-10-20T19:04:07.840522+00:00",
+            "httpStatus": 200,
+            "sha256": "95aaee159b9a12bc0e0d874a3fb603dc1f6f835d45d53b4daff8811eba839ab3"
+          }
+        ]
+      },
+      "contact": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://therusticcrustpizzeria.com/"
+        ],
+        "observedAt": "2026-10-20T19:04:07.840522+00:00",
+        "observation": "Homepage contains contact form and telephone. No message submitted.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://therusticcrustpizzeria.com/",
+            "fetchedAt": "2026-10-20T19:04:07.840522+00:00",
+            "httpStatus": 200,
+            "sha256": "95aaee159b9a12bc0e0d874a3fb603dc1f6f835d45d53b4daff8811eba839ab3"
+          }
+        ]
+      }
+    },
+    "openingHoursVerifiedAt": null,
+    "hoursValidThrough": null,
+    "hoursScope": null,
     "website": "https://therusticcrustpizzeria.com/",
     "openingHours": null,
     "operatingStatus": "active",
@@ -4106,6 +7073,28 @@ window.HALIFAX_DISCOVERED_RESTAURANTS = [
         "url": "https://myeastcoastexperience.com/2016/11/16/taste-good-life/",
         "status": "verified",
         "observedAt": "2026-10-20"
+      },
+      {
+        "type": "menu",
+        "url": "https://therusticcrustpizzeria.com/menu",
+        "label": "Owner menu source (confirm current items and prices)",
+        "status": "verified",
+        "observedAt": "2026-10-20T19:05:32.654137+00:00",
+        "contentVerified": true
+      },
+      {
+        "type": "reviewed_field_source",
+        "url": "https://therusticcrustpizzeria.com/",
+        "label": "Reviewed menu source",
+        "status": "verified",
+        "observedAt": "2026-10-20T19:05:32.654137+00:00"
+      },
+      {
+        "type": "reviewed_field_source",
+        "url": "https://therusticcrustpizzeria.com/menu",
+        "label": "Reviewed menu source",
+        "status": "verified",
+        "observedAt": "2026-10-20T19:05:32.654137+00:00"
       }
     ],
     "discoveryReview": {
@@ -4127,8 +7116,103 @@ window.HALIFAX_DISCOVERED_RESTAURANTS = [
     "sourceLayer": "local_discovery",
     "address": "56 Supreme Court, Halifax, NS",
     "phone": "902-466-6767",
+    "email": null,
+    "contactUrl": "https://www.panadapizza.com/contact-us",
+    "contactScope": null,
+    "fieldEvidence": {
+      "coordinates": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.panadapizza.com/"
+        ],
+        "observedAt": "2026-10-20T19:04:09.488902+00:00",
+        "observation": "Restaurant JSON-LD geo and Wix businessLocationCoordinates identify 56 Supreme Court, Halifax. Not Musquodoboit coordinates. Conflicting postal metadata is not imported.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://www.panadapizza.com/",
+            "fetchedAt": "2026-10-20T19:04:09.488902+00:00",
+            "httpStatus": 200,
+            "sha256": "e189b21b8fcb60df922b25e0e65147141acec17052f1aedaaeb2982ca927f6eb"
+          }
+        ]
+      },
+      "hours": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.panadapizza.com/contact-us"
+        ],
+        "observedAt": "2026-10-20T19:05:32.800425+00:00",
+        "observation": "Halifax/Fairview visible schedule: Mon–Thu 11AM–12AM; Fri/Sat 11AM–2AM; Sun noon–11PM. Midnight and 2AM closures fall on next calendar day. Wix metadata splits overnight intervals and omits explicit Monday day token; do not infer Monday closed or attach this schedule to another outlet.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://www.panadapizza.com/contact-us",
+            "fetchedAt": "2026-10-20T19:05:32.800425+00:00",
+            "httpStatus": 200,
+            "sha256": "e631752554a2dc365a505038b2aa5a8cdaa2bacbe90cd7d658cca63855badab0"
+          }
+        ]
+      },
+      "menu": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.panadapizza.com/",
+          "https://www.panadapizza.com/menus"
+        ],
+        "observedAt": "2026-10-20T19:05:32.873325+00:00",
+        "observation": "Live official Menu navigation and menu page cover named Halifax/Fairview and Musquodoboit outlets. Do not import other outlet prices/hours.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://www.panadapizza.com/",
+            "fetchedAt": "2026-10-20T19:04:09.488902+00:00",
+            "httpStatus": 200,
+            "sha256": "e189b21b8fcb60df922b25e0e65147141acec17052f1aedaaeb2982ca927f6eb"
+          },
+          {
+            "url": "https://www.panadapizza.com/menus",
+            "fetchedAt": "2026-10-20T19:05:32.873325+00:00",
+            "httpStatus": 200,
+            "sha256": "08766d80e45dba7f10aaa3505167999a3d9c4b65030c393a4c39f7cd8e1bc771"
+          }
+        ]
+      },
+      "phone": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.panadapizza.com/contact-us"
+        ],
+        "observedAt": "2026-10-20T19:05:32.800425+00:00",
+        "observation": "Current first-party location contact text supplies this exact telephone number.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://www.panadapizza.com/contact-us",
+            "fetchedAt": "2026-10-20T19:05:32.800425+00:00",
+            "httpStatus": 200,
+            "sha256": "e631752554a2dc365a505038b2aa5a8cdaa2bacbe90cd7d658cca63855badab0"
+          }
+        ]
+      },
+      "contact": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.panadapizza.com/contact-us"
+        ],
+        "observedAt": "2026-10-20T19:05:32.800425+00:00",
+        "observation": "Official contact page or homepage publishes this contact route. No contact made.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://www.panadapizza.com/contact-us",
+            "fetchedAt": "2026-10-20T19:05:32.800425+00:00",
+            "httpStatus": 200,
+            "sha256": "e631752554a2dc365a505038b2aa5a8cdaa2bacbe90cd7d658cca63855badab0"
+          }
+        ]
+      }
+    },
+    "openingHoursVerifiedAt": "2026-10-20T19:05:32.800425+00:00",
+    "hoursValidThrough": null,
+    "hoursScope": "restaurant",
     "website": "https://www.panadapizza.com/",
-    "openingHours": null,
+    "openingHours": "Mo 11:00–00:00 next day; Tu 11:00–00:00 next day; We 11:00–00:00 next day; Th 11:00–00:00 next day; Fr 11:00–02:00 next day; Sa 11:00–02:00 next day; Su 12:00–23:00",
     "operatingStatus": "active",
     "operatingStatusEvidence": {
       "claim": "Live first-party contact/menu pages; current Skip restaurant menu at the exact civic address. Active 2026 broker listing identifies Panada as tenant/operator, but a business-sale listing is not proof of closure or completed ownership transfer.",
@@ -4153,7 +7237,10 @@ window.HALIFAX_DISCOVERED_RESTAURANTS = [
       "observedAt": "2026-10-20"
     },
     "openingStatus": null,
-    "coordinates": null,
+    "coordinates": {
+      "lat": 44.6574244,
+      "lon": -63.6338579
+    },
     "socialProfiles": [],
     "summary": "Pizza, donairs, poutine, subs, burgers, chicken, seafood and Mediterranean dishes; pickup, delivery and catering.",
     "specials": [],
@@ -4193,6 +7280,27 @@ window.HALIFAX_DISCOVERED_RESTAURANTS = [
         "url": "https://www.panadapizza.com/menus",
         "status": "verified",
         "observedAt": "2026-10-20"
+      },
+      {
+        "type": "reviewed_field_source",
+        "url": "https://www.panadapizza.com/",
+        "label": "Reviewed coordinates source",
+        "status": "verified",
+        "observedAt": "2026-10-20T19:04:09.488902+00:00"
+      },
+      {
+        "type": "reviewed_field_source",
+        "url": "https://www.panadapizza.com/contact-us",
+        "label": "Reviewed hours source",
+        "status": "verified",
+        "observedAt": "2026-10-20T19:05:32.800425+00:00"
+      },
+      {
+        "type": "reviewed_field_source",
+        "url": "https://www.panadapizza.com/menus",
+        "label": "Reviewed menu source",
+        "status": "verified",
+        "observedAt": "2026-10-20T19:05:32.873325+00:00"
       }
     ],
     "discoveryReview": {
@@ -4214,6 +7322,46 @@ window.HALIFAX_DISCOVERED_RESTAURANTS = [
     "sourceLayer": "local_discovery",
     "address": "7907 Nova Scotia Trunk 7, Musquodoboit Harbour, NS",
     "phone": "902-889-3322",
+    "email": null,
+    "contactUrl": "https://www.panadapizza.com/contact-us",
+    "contactScope": null,
+    "fieldEvidence": {
+      "phone": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.panadapizza.com/contact-us"
+        ],
+        "observedAt": "2026-10-20T19:05:32.800425+00:00",
+        "observation": "Current first-party location contact text supplies this exact telephone number.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://www.panadapizza.com/contact-us",
+            "fetchedAt": "2026-10-20T19:05:32.800425+00:00",
+            "httpStatus": 200,
+            "sha256": "e631752554a2dc365a505038b2aa5a8cdaa2bacbe90cd7d658cca63855badab0"
+          }
+        ]
+      },
+      "contact": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.panadapizza.com/contact-us"
+        ],
+        "observedAt": "2026-10-20T19:05:32.800425+00:00",
+        "observation": "Official contact page or homepage publishes this contact route. No contact made.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://www.panadapizza.com/contact-us",
+            "fetchedAt": "2026-10-20T19:05:32.800425+00:00",
+            "httpStatus": 200,
+            "sha256": "e631752554a2dc365a505038b2aa5a8cdaa2bacbe90cd7d658cca63855badab0"
+          }
+        ]
+      }
+    },
+    "openingHoursVerifiedAt": null,
+    "hoursValidThrough": null,
+    "hoursScope": null,
     "website": "https://www.panadapizza.com/",
     "openingHours": null,
     "operatingStatus": "active",
@@ -4288,6 +7436,13 @@ window.HALIFAX_DISCOVERED_RESTAURANTS = [
         "url": "https://www.panadapizza.com/menus",
         "status": "verified",
         "observedAt": "2026-10-20"
+      },
+      {
+        "type": "reviewed_field_source",
+        "url": "https://www.panadapizza.com/contact-us",
+        "label": "Reviewed phone source",
+        "status": "verified",
+        "observedAt": "2026-10-20T19:05:32.800425+00:00"
       }
     ],
     "discoveryReview": {
@@ -4312,8 +7467,118 @@ window.HALIFAX_DISCOVERED_RESTAURANTS = [
     "sourceLayer": "local_discovery",
     "address": "8650 Peggy's Cove Road, Indian Harbour, NS B3Z 3P4",
     "phone": "902-821-3013",
+    "email": "watermark@oceanstoneresort.com",
+    "contactUrl": "https://watermarkrestaurant.ca/contact/",
+    "contactScope": null,
+    "fieldEvidence": {
+      "coordinates": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://watermarkrestaurant.ca/",
+          "https://maps.app.goo.gl/LuoXyUpkKCos5ZWG9"
+        ],
+        "observedAt": "2026-10-20T19:04:10.588571+00:00",
+        "observation": "Owner Get Directions link redirects to Watermark Restaurant at Oceanstone place URL with !3d44.5208042!4d-63.9363972. The @ viewport longitude -63.9389775 is deliberately not used.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://watermarkrestaurant.ca/",
+            "fetchedAt": "2026-10-20T19:04:10.588571+00:00",
+            "httpStatus": 200,
+            "sha256": "5e4b1ff4a1a815ac051e02eb181f1443774a86deb6d9da3171d8fb72b818a6c3"
+          }
+        ]
+      },
+      "hours": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://watermarkrestaurant.ca/",
+          "https://watermarkrestaurant.ca/contact/"
+        ],
+        "observedAt": "2026-10-20T19:05:35.792953+00:00",
+        "observation": "Current first-party homepage, contact and menu pages agree: open daily noon–9PM. Prior owner-linked OpenTable said 11:30–9; current owner evidence is preferred with discrepancy retained. No Rhubarb schedule or lifecycle dates imported.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://watermarkrestaurant.ca/",
+            "fetchedAt": "2026-10-20T19:04:10.588571+00:00",
+            "httpStatus": 200,
+            "sha256": "5e4b1ff4a1a815ac051e02eb181f1443774a86deb6d9da3171d8fb72b818a6c3"
+          },
+          {
+            "url": "https://watermarkrestaurant.ca/contact/",
+            "fetchedAt": "2026-10-20T19:05:35.792953+00:00",
+            "httpStatus": 200,
+            "sha256": "e263b7a45bc20c15e7be3e6f4ecadbc6bfc043a62b744e055fe4025b15d633dc"
+          }
+        ]
+      },
+      "menu": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://watermarkrestaurant.ca/",
+          "https://watermarkrestaurant.ca/menu/",
+          "https://watermarkrestaurant.ca/wp-content/uploads/2026/07/Watermark-Dinner-menu-20260714-REVISED.pdf"
+        ],
+        "observedAt": "2026-10-20T19:10:53.554285+00:00",
+        "observation": "Live owner Menu landing links lunch, dinner, drinks, dessert PDFs. Exact linked Dinner PDF fetched directly HTTP 200; pdftotext confirms substantive appetizers and dinner items. No former Rhubarb content inherited.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://watermarkrestaurant.ca/",
+            "fetchedAt": "2026-10-20T19:04:10.588571+00:00",
+            "httpStatus": 200,
+            "sha256": "5e4b1ff4a1a815ac051e02eb181f1443774a86deb6d9da3171d8fb72b818a6c3"
+          },
+          {
+            "url": "https://watermarkrestaurant.ca/menu/",
+            "fetchedAt": "2026-10-20T19:05:35.854824+00:00",
+            "httpStatus": 200,
+            "sha256": "e5ab00181a6c2b94a6ee93958d2440f746edaf294df7a79948887b5c53bf363f"
+          },
+          {
+            "url": "https://watermarkrestaurant.ca/wp-content/uploads/2026/07/Watermark-Dinner-menu-20260714-REVISED.pdf",
+            "fetchedAt": "2026-10-20T19:10:53.554285+00:00",
+            "httpStatus": 200,
+            "sha256": null
+          }
+        ]
+      },
+      "phone": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://watermarkrestaurant.ca/"
+        ],
+        "observedAt": "2026-10-20T19:04:10.588571+00:00",
+        "observation": "Current first-party location contact text supplies this exact telephone number.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://watermarkrestaurant.ca/",
+            "fetchedAt": "2026-10-20T19:04:10.588571+00:00",
+            "httpStatus": 200,
+            "sha256": "5e4b1ff4a1a815ac051e02eb181f1443774a86deb6d9da3171d8fb72b818a6c3"
+          }
+        ]
+      },
+      "contact": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://watermarkrestaurant.ca/contact/"
+        ],
+        "observedAt": "2026-10-20T19:05:35.792953+00:00",
+        "observation": "Official contact page or homepage publishes this contact route. No contact made.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://watermarkrestaurant.ca/contact/",
+            "fetchedAt": "2026-10-20T19:05:35.792953+00:00",
+            "httpStatus": 200,
+            "sha256": "e263b7a45bc20c15e7be3e6f4ecadbc6bfc043a62b744e055fe4025b15d633dc"
+          }
+        ]
+      }
+    },
+    "openingHoursVerifiedAt": "2026-10-20T19:05:35.792953+00:00",
+    "hoursValidThrough": null,
+    "hoursScope": "restaurant",
     "website": "https://watermarkrestaurant.ca/",
-    "openingHours": null,
+    "openingHours": "Mo 12:00–21:00; Tu 12:00–21:00; We 12:00–21:00; Th 12:00–21:00; Fr 12:00–21:00; Sa 12:00–21:00; Su 12:00–21:00",
     "operatingStatus": "active",
     "operatingStatusEvidence": {
       "claim": "Current first-party restaurant site explicitly serves lunch and dinner daily to public walk-ins and reservations; parent resort dining page and two tourism directories corroborate exact location.",
@@ -4338,7 +7603,10 @@ window.HALIFAX_DISCOVERED_RESTAURANTS = [
       "observedAt": "2026-10-20"
     },
     "openingStatus": null,
-    "coordinates": null,
+    "coordinates": {
+      "lat": 44.5208042,
+      "lon": -63.9363972
+    },
     "socialProfiles": [],
     "summary": "Oceanstone Resort restaurant in Indian Harbour serving lunch and dinner to public walk-ins and reservations.",
     "specials": [],
@@ -4385,6 +7653,41 @@ window.HALIFAX_DISCOVERED_RESTAURANTS = [
         "url": "https://watermarkrestaurant.ca/menu/",
         "status": "verified",
         "observedAt": "2026-10-20"
+      },
+      {
+        "type": "reviewed_field_source",
+        "url": "https://watermarkrestaurant.ca/",
+        "label": "Reviewed coordinates source",
+        "status": "verified",
+        "observedAt": "2026-10-20T19:04:10.588571+00:00"
+      },
+      {
+        "type": "reviewed_field_source",
+        "url": "https://maps.app.goo.gl/LuoXyUpkKCos5ZWG9",
+        "label": "Reviewed coordinates source",
+        "status": "verified",
+        "observedAt": "2026-10-20T19:04:10.588571+00:00"
+      },
+      {
+        "type": "reviewed_field_source",
+        "url": "https://watermarkrestaurant.ca/contact/",
+        "label": "Reviewed hours source",
+        "status": "verified",
+        "observedAt": "2026-10-20T19:05:35.792953+00:00"
+      },
+      {
+        "type": "reviewed_field_source",
+        "url": "https://watermarkrestaurant.ca/menu/",
+        "label": "Reviewed menu source",
+        "status": "verified",
+        "observedAt": "2026-10-20T19:10:53.554285+00:00"
+      },
+      {
+        "type": "reviewed_field_source",
+        "url": "https://watermarkrestaurant.ca/wp-content/uploads/2026/07/Watermark-Dinner-menu-20260714-REVISED.pdf",
+        "label": "Reviewed menu source",
+        "status": "verified",
+        "observedAt": "2026-10-20T19:10:53.554285+00:00"
       }
     ],
     "discoveryReview": {

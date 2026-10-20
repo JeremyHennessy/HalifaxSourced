@@ -14,6 +14,7 @@ function restaurantHoursState(weekly, date = new Date()) {
   const now=halifaxClockParts(date); const todays=Array.isArray(weekly[now.day])?weekly[now.day]:[];
   for(const interval of todays){ const open=hoursMinutes(interval.open), close=hoursMinutes(interval.close); if(open===null||close===null)continue; if(interval.overnight){ if(now.minutes>=open)return {state:"open",closesAt:interval.close,overnight:true}; } else if(now.minutes>=open&&now.minutes<close)return {state:"open",closesAt:interval.close,overnight:false}; }
   const prev=previousWeekday(now.day); for(const interval of Array.isArray(weekly[prev])?weekly[prev]:[]){ if(!interval.overnight)continue; const close=hoursMinutes(interval.close); if(close!==null&&now.minutes<close)return {state:"open",closesAt:interval.close,overnight:true,carriedFromPreviousDay:true}; }
+  if (!Array.isArray(weekly[now.day]) || !Array.isArray(weekly[prev])) return {state:"unknown",reason:"partial_weekly_schedule"};
   const upcoming=todays.map((interval)=>({interval,open:hoursMinutes(interval.open)})).filter((x)=>x.open!==null&&x.open>now.minutes).sort((a,b)=>a.open-b.open)[0];
   if(upcoming)return {state:"closed",opensAt:upcoming.interval.open,opensLaterToday:true};
   return {state:"closed",reason:"no_current_interval"};

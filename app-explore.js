@@ -6,6 +6,8 @@ function renderExplore() {
   const results = filteredRestaurants();
   const pages = Math.max(1, Math.ceil(results.length / PAGE_SIZE));
   state.page = Math.min(state.page, pages);
+  const canonicalHash = discoveryHash("explore");
+  if (location.hash !== canonicalHash) history.replaceState(null, "", canonicalHash);
   const start = (state.page - 1) * PAGE_SIZE;
   const pageItems = results.slice(start, start + PAGE_SIZE);
   const filterCount = [state.cuisine, state.neighbourhood, state.feature].filter((value) => value !== "all").length;
@@ -35,7 +37,7 @@ function renderExplore() {
         ${pagination(state.page, pages)}
       </div>
       <aside class="context-column">
-        <div class="mini-map-card"><div id="exploreMiniMap" class="mini-map"></div><a href="#map">Open full map →</a></div>
+        <div class="mini-map-card"><div id="exploreMiniMap" class="mini-map"></div><a href="${escapeHtml(discoveryHash("map"))}">Open full map →</a></div>
         <div class="tip-card"><span>♧</span><div><h2>Local tip</h2><p>Menu, social, reservation, ordering, specials, event, patio and opening badges indicate source-backed links or signals. Confirm time-sensitive details with the restaurant.</p></div></div>
         <div class="source-card"><h2>Source coverage</h2><p>${restaurants.length.toLocaleString()} combined restaurant and venue records are loaded from curated, public-map and reviewed discovery layers.</p><p>${officialPayload ? `${(officialPayload.count ?? officialSignals.length).toLocaleString()} restaurant-owned sites checked for menu, event, special, reservation and social links.` : "Official-site signal data not loaded."}</p><p>${window.__halifaxFirstPartySocialProfileCount ? `${window.__halifaxFirstPartySocialProfileCount.toLocaleString()} official-site-linked social profiles and ${window.__halifaxFirstPartyRelatedLinkCount.toLocaleString()} related first-party links are indexed.` : "Social and related-link discovery data is still growing."}</p></div>
       </aside>

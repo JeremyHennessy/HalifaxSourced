@@ -430,7 +430,7 @@ renderCityEvents = function renderCityEventsWithCapabilities(allItems) {
     <section class="editorial-hero events-hero">
       <div class="page-shell editorial-hero-inner">
         <div><span class="eyebrow">What's happening</span><h1>Events in Halifax</h1><p>Find specific local games, music, food, festivals, arts, comedy, community events and short-run listings, with long-running listings kept in their own event length filter.</p></div>
-        ${featured ? `<div class="featured-event"><span>UPCOMING EVENT</span><h2>${escapeHtml(featured.title)}</h2><p>${escapeHtml(structuredEventWhen(featured))}${featured.venueName ? ` · ${escapeHtml(featured.venueName)}` : ""}</p>${eventSourceButton(featured, "View source ↗", "button light")}</div>` : ""}
+        ${featured ? `<div class="featured-event"><span>UPCOMING EVENT</span><h2>${escapeHtml(eventDisplayTitle(featured))}</h2><p>${escapeHtml(structuredEventWhen(featured))}${featured.venueName ? ` · ${escapeHtml(featured.venueName)}` : ""}</p>${eventSourceButton(featured, "View source ↗", "button light")}</div>` : ""}
       </div>
     </section>
     <section class="page-shell two-column-page event-discovery-layout">
@@ -488,7 +488,7 @@ cityEventCard = function cityEventCardWithActions(event) {
   const badge = eventDateBadge(event);
   const primaryCategory = event.categories?.[0] || "Event";
   const tags = [...new Set([primaryCategory, ...(event.categories || []).slice(1, 3), eventIsLongRunning(event) ? "Long-running" : null].filter(Boolean))];
-  const source = safeUrl(event.eventUrl) || safeUrl(event.ticketUrl) || safeUrl(event.sourceUrl);
+  const source = canonicalEventUrl(event);
   const eventId = String(event.id || `${event.title}-${event.startAt}`);
   const saved = savedCityEvents.has(eventId);
   const priceLabel = event.price ? String(event.price) : "Price not listed";
@@ -496,8 +496,8 @@ cityEventCard = function cityEventCardWithActions(event) {
   return `<article class="event-card" data-event-id="${escapeHtml(eventId)}" data-event-categories="${escapeHtml((event.categories || []).join("|"))}" data-event-city="${escapeHtml(city)}" data-event-cost="${escapeHtml(eventCostKind(event))}" data-event-duration="${escapeHtml(eventDurationKind(event))}">
     <div class="event-date ${escapeHtml(badge.className || "")}"><span>${escapeHtml(badge.label)}</span><strong>${escapeHtml(badge.primary)}</strong>${badge.secondary ? `<em>${escapeHtml(badge.secondary)}</em>` : ""}</div>
     <div class="event-thumb media-dining"></div>
-    <div class="event-copy"><div class="event-title-line"><h3>${escapeHtml(event.title)}</h3><span>${escapeHtml(primaryCategory)}</span></div><p>${escapeHtml(event.venueName || event.address || city)}</p><small>${escapeHtml(structuredEventWhen(event))} · ${escapeHtml(city)} · ${escapeHtml(priceLabel)}</small><div class="card-tags">${tags.map((tag) => `<span>${escapeHtml(tag)}</span>`).join("")}<span>${escapeHtml(event.sourceName || "Source")}</span></div></div>
-    <div class="event-card-actions">${source ? `<a class="button tertiary" href="${escapeHtml(source)}" target="_blank" rel="noreferrer">Source ↗</a>` : ""}<button class="button tertiary ${saved ? "is-saved" : ""}" type="button" data-save-event-id="${escapeHtml(eventId)}" aria-pressed="${saved}" aria-label="${saved ? "Remove" : "Save"} ${escapeHtml(event.title)}">${saved ? "♥ Saved" : "♡ Save"}</button><button class="button tertiary" type="button" data-event-calendar="${escapeHtml(eventId)}">+ Calendar</button></div>
+    <div class="event-copy"><div class="event-title-line"><h3>${escapeHtml(eventDisplayTitle(event))}</h3><span>${escapeHtml(primaryCategory)}</span></div><p>${escapeHtml(event.venueName || event.address || city)}</p><small>${escapeHtml(structuredEventWhen(event))} · ${escapeHtml(city)} · ${escapeHtml(priceLabel)}</small><div class="card-tags">${tags.map((tag) => `<span>${escapeHtml(tag)}</span>`).join("")}<span>${escapeHtml(event.sourceName || "Source")}</span></div></div>
+    <div class="event-card-actions">${source ? `<a class="button tertiary" href="${escapeHtml(source)}" target="_blank" rel="noreferrer">Source ↗</a>` : ""}<button class="button tertiary ${saved ? "is-saved" : ""}" type="button" data-save-event-id="${escapeHtml(eventId)}" aria-pressed="${saved}" aria-label="${saved ? "Remove" : "Save"} ${escapeHtml(eventDisplayTitle(event))}">${saved ? "♥ Saved" : "♡ Save"}</button><button class="button tertiary" type="button" data-event-calendar="${escapeHtml(eventId)}">+ Calendar</button></div>
   </article>`;
 };
 
@@ -638,7 +638,7 @@ function downloadEventCalendar(event) {
   const start = icsUtc(event.startAt);
   if (!start) return;
   const end = icsUtc(event.endAt || event.startAt) || start;
-  const source = safeUrl(event.eventUrl) || safeUrl(event.ticketUrl) || safeUrl(event.sourceUrl) || "";
+  const source = canonicalEventUrl(event) || "";
   const uid = `${String(event.id || event.title || "event").replace(/[^a-z0-9-]+/gi, "-")}@halifaxsourced`;
   const lines = [
     "BEGIN:VCALENDAR",
@@ -650,7 +650,7 @@ function downloadEventCalendar(event) {
     `DTSTAMP:${icsUtc(new Date())}`,
     `DTSTART:${start}`,
     `DTEND:${end}`,
-    `SUMMARY:${icsEscape(event.title)}`,
+    `SUMMARY:${icsEscape(eventDisplayTitle(event))}`,
     `LOCATION:${icsEscape(event.venueName || event.address || eventCityName(event))}`,
     `DESCRIPTION:${icsEscape(`Source: ${event.sourceName || "Halifax Sourced"}${source ? ` - ${source}` : ""}`)}`,
     source ? `URL:${icsEscape(source)}` : null,

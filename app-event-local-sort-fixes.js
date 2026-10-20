@@ -130,7 +130,7 @@
       }
     }
     const cells = [...Array(blanks).fill(""), ...Array.from({ length: days }, (_, i) => String(i + 1))];
-    return `<div class="calendar-heading"><span></span><h2>${escapeHtml(monthLabel)}</h2></div><div class="calendar-week"><span>S</span><span>M</span><span>T</span><span>W</span><span>T</span><span>F</span><span>S</span></div><div class="calendar-grid">${cells.map((cell) => `<span class="${Number(cell) === day ? "today" : ""}"${eventDays.has(Number(cell)) ? ' title="Event available"' : ""}>${eventDays.has(Number(cell)) ? "*" : ""}${cell}</span>`).join("")}</div><p>${events.length ? "Markers show event dates in the current month." : "No structured city event dates are loaded yet."}</p>`;
+    return `<div class="calendar-heading"><span></span><h2>${escapeHtml(monthLabel)}</h2></div><div class="calendar-week"><span>S</span><span>M</span><span>T</span><span>W</span><span>T</span><span>F</span><span>S</span></div><div class="calendar-grid">${cells.map((cell) => `<span class="${Number(cell) === day ? "today" : ""}"${eventDays.has(Number(cell)) ? ' title="Event available"' : ""}>${eventDays.has(Number(cell)) ? "*" : ""}${cell}</span>`).join("")}</div><p>${events.length ? "Month summary: markers show matching event dates (not selectable)." : "No event dates match the current filters."}</p>`;
   };
 
   window.__halifaxEventDateDebug = {

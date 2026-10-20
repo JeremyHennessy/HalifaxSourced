@@ -33,8 +33,8 @@ try {
   assert.match(await page.locator('.map-results').innerText(),/Martin's Kitchen/);
   await page.screenshot({path:`artifacts/regional-map-${viewport.width}.png`,fullPage:true});
   // A known coordinate-bearing community must be brought into view, not left at the core default.
-  if(viewport.width<700) await page.locator('[data-map-mode="map"]').click();
   await page.locator('#mapNeighbourhood').selectOption('Downtown Dartmouth');
+  if(viewport.width<700) await page.locator('[data-map-mode="map"]').click();
   await page.waitForFunction(()=>state.neighbourhood==='Downtown Dartmouth'&&state.mapMarkers?.size>0);
   assert(await page.evaluate(()=>[...state.mapMarkers.values()].every(marker=>state.map.getBounds().contains(marker.getLatLng()))));
   assert(await page.evaluate(()=>state.mapRenderer instanceof L.SVG && document.querySelectorAll('#mainMap .leaflet-overlay-pane svg path').length===state.mapMarkers.size),'Main map uses supported SVG paths for every located result');

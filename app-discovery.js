@@ -28,7 +28,7 @@ function renderSpecials() {
     if (specialsUiState.kind === "leads" && isVerifiedSpecialRestaurant(restaurant)) return false;
     return true;
   });
-  const verified = filtered.filter(isVerifiedSpecialRestaurant);
+  const verified = filtered.flatMap(restaurant => (restaurant.structuredSpecials || []).filter(currentStructuredSpecial).map(offer => ({ restaurant, offer })));
   const leads = filtered.filter((restaurant) => !isVerifiedSpecialRestaurant(restaurant));
   const groupedPageSize = Math.floor(SPECIALS_PAGE_SIZE / 2);
   const verifiedLimit = specialsUiState.kind === "leads" ? 0 : specialsUiState.kind === "verified" ? specialsUiState.page * SPECIALS_PAGE_SIZE : specialsUiState.page * groupedPageSize;
@@ -41,13 +41,13 @@ function renderSpecials() {
     <section class="page-shell page-intro"><span class="eyebrow">Worth checking now</span><h1>Specials & happy-hour leads</h1><p>Direct official-source pages for happy hours, rotating features, promos, and specials — with verification links instead of fabricated prices or times.</p></section>
     <section class="page-shell discovery-control-panel specials-control-panel" aria-label="Filter specials">
       <form data-specials-filter-form><label><span>Search</span><input id="specialsSearch" type="search" value="${escapeHtml(specialsUiState.query)}" placeholder="Restaurant, cuisine, or neighbourhood" /></label><label><span>Area</span><select id="specialsNeighbourhood"><option value="all">All areas</option>${discoveryNeighbourhoodOptions(allItems).map((name) => `<option value="${escapeHtml(name)}" ${specialsUiState.neighbourhood === name ? "selected" : ""}>${escapeHtml(name)}</option>`).join("")}</select></label><label><span>Evidence</span><select id="specialsKind"><option value="all">Verified offers and leads</option><option value="verified" ${specialsUiState.kind === "verified" ? "selected" : ""}>Verified offers</option><option value="leads" ${specialsUiState.kind === "leads" ? "selected" : ""}>Official-source leads</option></select></label><button class="button primary" type="submit">Apply</button>${activeCount ? `<button class="button tertiary" type="button" data-specials-clear>Clear</button>` : ""}</form>
-      <p><strong>${filtered.length.toLocaleString()} results</strong> · ${verified.length.toLocaleString()} verified offers · ${leads.length.toLocaleString()} official-source leads</p>
+      <p><strong>${(verified.length + leads.length).toLocaleString()} results</strong> · ${verified.length.toLocaleString()} verified offers · ${leads.length.toLocaleString()} official-source leads</p>
     </section>
     <section class="page-shell specials-results">
-      ${visibleVerified.length ? `<div class="discovery-section-heading"><div><span class="eyebrow">Verified offers</span><h2>Current structured specials</h2></div><p>Terms and timing are represented in reviewed structured data. Confirm before visiting.</p></div><div class="specials-grid">${visibleVerified.map((restaurant, index) => specialCard(restaurant, index, true)).join("")}</div>` : ""}
+      ${visibleVerified.length ? `<div class="discovery-section-heading"><div><span class="eyebrow">Verified offers</span><h2>Current structured specials</h2></div><p>Terms and timing are represented in reviewed structured data. Confirm before visiting.</p></div><div class="specials-grid">${visibleVerified.map(({ restaurant, offer }, index) => specialCard(restaurant, index, true, offer)).join("")}</div>` : ""}
       ${visibleLeads.length ? `<div class="discovery-section-heading"><div><span class="eyebrow">Official-source leads</span><h2>Worth checking on the official page</h2></div><p>These pages mention specials or promotions but do not yet provide a separately verified current offer.</p></div><div class="specials-grid">${visibleLeads.map((restaurant, index) => specialCard(restaurant, visibleVerified.length + index, false)).join("")}</div>` : ""}
       ${filtered.length ? "" : emptyPageState("No specials match the current filters.")}
-      ${visibleCount < filtered.length ? `<div class="discovery-load-more"><button class="button secondary" type="button" data-specials-more>Load ${Math.min(SPECIALS_PAGE_SIZE, filtered.length - visibleCount)} more</button><span>${filtered.length - visibleCount} remaining</span></div>` : ""}
+      ${visibleCount < verified.length + leads.length ? `<div class="discovery-load-more"><button class="button secondary" type="button" data-specials-more>Load ${Math.min(SPECIALS_PAGE_SIZE, verified.length + leads.length - visibleCount)} more</button><span>${verified.length + leads.length - visibleCount} remaining</span></div>` : ""}
     </section>`;
   document.querySelector("[data-specials-filter-form]")?.addEventListener("submit", (event) => {
     event.preventDefault();
@@ -62,9 +62,10 @@ function renderSpecials() {
   bindCommonActions();
 }
 
-function specialCard(restaurant, index, verified = isVerifiedSpecialRestaurant(restaurant)) {
-  const link = restaurant.specialLinks[0];
-  const curated = restaurant.currentVerifiedSpecials?.[0] || restaurant.specials?.[0];
+function specialCard(restaurant, index, verified = isVerifiedSpecialRestaurant(restaurant), offer = null) {
+  const curated = offer;
+  const offerUrl = safeUrl(offer?.sourceUrl);
+  const link = offerUrl ? { url: offerUrl } : restaurant.specialLinks[0];
   const linkLabel = String(link?.label || "").trim();
   const title = curated?.title || (/^https?:\/\//i.test(linkLabel) ? "" : linkLabel) || `${restaurant.name} specials`;
   return `<article class="special-card ${verified ? "is-verified" : "is-lead"}"><div class="special-image media-${mediaTone(restaurant)}${permittedImageClass(restaurant)}" style="--media-pos:${20 + ((index * 13) % 60)}%">${mediaImageMarkup(restaurant)}<span>${verified ? "Verified offer" : "Source lead"}</span></div><div><p class="special-kicker">${escapeHtml(restaurant.neighborhood || "Halifax")}</p><h2>${escapeHtml(title)}</h2><p>${escapeHtml(restaurant.name)} · ${escapeHtml(primaryCuisine(restaurant))}</p><small>${curated?.recurrence ? escapeHtml(curated.recurrence) : curated?.cadence ? escapeHtml(curated.cadence) : "Confirm current terms, price, and timing on the official source."}</small><div class="special-actions"><a class="button tertiary" href="#restaurant/${encodeURIComponent(restaurant.id)}">View place</a>${link ? `<a class="text-link" href="${escapeHtml(link.url)}" target="_blank" rel="noreferrer">Official source ↗</a>` : ""}</div></div></article>`;
@@ -92,17 +93,19 @@ function renderMenus() {
 
 function renderMapPage() {
   const results = filteredRestaurants({ neighbourhood: state.neighbourhood });
+  const hasMapPins = results.some(item => item.coordinates);
+  if (!hasMapPins) mapUiMode = "list";
   appView.innerHTML = `
-    <section class="page-shell page-intro map-intro"><div><span class="eyebrow">Neighbourhood discovery</span><h1>Explore Halifax</h1><p>Browse local places by neighbourhood and move between the map and source-backed listings.</p></div><a class="button secondary" href="#explore">View as list</a></section>
+    <section class="page-shell page-intro map-intro"><div><span class="eyebrow">Neighbourhood discovery</span><h1>Explore Halifax</h1><p>Browse local places by neighbourhood and move between the map and source-backed listings.</p></div><a class="button secondary" href="${escapeHtml(discoveryHash("explore"))}">View as list</a></section>
     <section class="page-shell map-page">
-      <div class="map-mode-switch" role="group" aria-label="Map display mode"><button type="button" data-map-mode="map" class="${mapUiMode === "map" ? "is-active" : ""}" aria-pressed="${mapUiMode === "map"}">Map</button><button type="button" data-map-mode="list" class="${mapUiMode === "list" ? "is-active" : ""}" aria-pressed="${mapUiMode === "list"}">List</button></div>
+      <div class="map-mode-switch" role="group" aria-label="Map display mode"><button type="button" data-map-mode="map" ${hasMapPins ? "" : "disabled"} class="${mapUiMode === "map" ? "is-active" : ""}" aria-pressed="${mapUiMode === "map"}">Map</button><button type="button" data-map-mode="list" class="${mapUiMode === "list" ? "is-active" : ""}" aria-pressed="${mapUiMode === "list"}">List</button></div>
       <label class="filter-control map-community-control"><span>All communities</span><select id="mapNeighbourhood"><option value="all">All neighbourhoods</option>${discoveryNeighbourhoodOptions(activeRestaurants).map(area => `<option value="${escapeHtml(area)}" ${area === state.neighbourhood ? "selected" : ""}>${escapeHtml(area)}</option>`).join("")}</select></label>
       <p class="map-coordinate-note">${results.filter(item => !item.coordinates).length} places have no verified map coordinates and remain available in the list.</p>
-      <div class="map-split mode-${mapUiMode}"><div class="map-large" id="mainMap"></div><aside class="map-results"><div class="results-toolbar"><strong>${results.length.toLocaleString()} places</strong><label>Sort <select id="mapSort"><option value="recommended" ${state.sort === "recommended" ? "selected" : ""}>Recommended</option><option value="name" ${state.sort === "name" ? "selected" : ""}>Name</option></select></label></div><div class="local-picks"><h2>Local picks</h2>${results.slice(0, 2).map((r, i) => restaurantCard(r, { compact: true, index: i })).join("")}</div><div class="map-result-list">${results.slice(0, 18).map(mapResultRow).join("")}${results.length > 18 ? `<p>Showing 18 places. Select a community above or <a href="#explore">browse the full list</a>.</p>` : ""}</div></aside></div>
+      <div class="map-split mode-${mapUiMode}">${hasMapPins ? `<div class="map-large" id="mainMap"></div>` : `<div class="map-empty-state" role="status"><h2>No verified map pins for these results</h2><p>Browse the listings below. We do not guess restaurant coordinates.</p></div>`}<aside class="map-results"><div class="results-toolbar"><strong>${results.length.toLocaleString()} places</strong><label>Sort <select id="mapSort"><option value="recommended" ${state.sort === "recommended" ? "selected" : ""}>Recommended</option><option value="name" ${state.sort === "name" ? "selected" : ""}>Name</option></select></label></div><div class="local-picks"><h2>Local picks</h2>${results.slice(0, 2).map((r, i) => restaurantCard(r, { compact: true, index: i })).join("")}</div><div class="map-result-list">${results.slice(0, 18).map(mapResultRow).join("")}${results.length > 18 ? `<p>Showing 18 places. Select a community above or <a href="${escapeHtml(discoveryHash("explore"))}">browse the full list</a>.</p>` : ""}</div></aside></div>
     </section>`;
   bindCommonActions();
-  document.querySelector("#mapNeighbourhood")?.addEventListener("change", event => { state.neighbourhood = event.target.value; destroyMap(); renderMapPage(); });
-  document.querySelector("#mapSort")?.addEventListener("change", (event) => { state.sort = event.target.value; destroyMap(); renderMapPage(); });
+  document.querySelector("#mapNeighbourhood")?.addEventListener("change", event => { navigateDiscovery({ neighbourhood: event.target.value, page: 1 }, "map"); });
+  document.querySelector("#mapSort")?.addEventListener("change", (event) => { navigateDiscovery({ sort: event.target.value, page: 1 }, "map"); });
   document.querySelectorAll("[data-map-mode]").forEach((button) => button.addEventListener("click", () => {
     mapUiMode = button.dataset.mapMode === "list" ? "list" : "map";
     document.querySelector(".map-split")?.classList.toggle("mode-map", mapUiMode === "map");

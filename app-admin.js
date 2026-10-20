@@ -4,8 +4,7 @@ const THUMBNAIL_REVIEW_STORAGE_KEY = "halifaxSourced.thumbnailReview.v1";
 const SOCIAL_REVIEW_STORAGE_KEY = "halifaxSourced.socialPostReview.v1";
 const PLACE_REVIEW_STORAGE_KEY = "halifaxSourced.placeReview.v1";
 const thumbnailAdminState = { queue: "promotion", sourceKind: "all", reviewState: "all", decisionState: "undecided" };
-const DIRECT_PROMOTION_SOURCE_KINDS = new Set(["official_page_thumbnail_candidate", "official_feed_media", "approved_restaurant_media"]);
-const APPROVED_REMOTE_THUMBNAIL_RIGHTS_BASIS = "App-owner-reviewed HTTPS image reference from the restaurant official website or official feed; remote thumbnail reference only, not rehosted.";
+const thumbnailPreviewsLoaded = new Set();
 
 function readThumbnailReviewDecisions() {
   try {
@@ -35,20 +34,19 @@ function candidateById(id) {
 }
 
 function isDirectPromotionCandidate(candidate) {
-  if (!candidate) return false;
-  const imageUrl = thumbnailAssetUrl(candidate.thumbnailUrl);
-  if (!imageUrl || !imageUrl.startsWith("https://")) return false;
-  if (candidate.sourceKind === "owner_submitted_image") {
-    const permission = String(candidate.permission || "").toLowerCase();
-    return candidate.permissionConfirmed === true && permission === "permitted" && Boolean(candidate.rightsBasis) && Boolean(candidate.attribution);
-  }
-  return DIRECT_PROMOTION_SOURCE_KINDS.has(String(candidate.sourceKind || ""));
+  return Boolean(candidate && hasMediaPermission(candidate) && thumbnailAssetUrl(candidate.thumbnailUrl));
+}
+function thumbnailReviewPreviewUrl(candidate) {
+  if (!candidate || candidate.quarantined || /denied|restricted|blocked/.test(String(candidate.accessState || ""))) return null;
+  const url = thumbnailAssetUrl(candidate.thumbnailUrl);
+  // Source-backed cached files can be inspected without granting publication rights.
+  return url && (url.startsWith("./assets/") || hasMediaPermission(candidate)) ? url : null;
 }
 
 function thumbnailDecisionPayload(candidate, decision, reason = "") {
   const imageUrl = thumbnailAssetUrl(candidate?.thumbnailUrl);
   const sourceUrl = safeUrl(candidate?.sourceUrl || candidate?.pageUrl || candidate?.postUrl);
-  const directPromotion = decision === "approve_thumbnail" && isDirectPromotionCandidate(candidate);
+  const directPromotion = decision === "approve_thumbnail" && thumbnailPreviewsLoaded.has(candidate?.id) && isDirectPromotionCandidate(candidate);
   return {
     decision,
     decidedAt: new Date().toISOString(),
@@ -64,11 +62,12 @@ function thumbnailDecisionPayload(candidate, decision, reason = "") {
     confidence: candidate?.confidence || null,
     observedAt: candidate?.observedAt || null,
     reviewPriority: thumbnailReviewPriority(candidate),
+    previewInspected: decision === "approve_thumbnail" && thumbnailPreviewsLoaded.has(candidate?.id),
     visualReviewState: directPromotion ? "ready_for_media_manifest" : decision === "approve_thumbnail" ? "visual_fit_needs_rights_review" : decision,
     permission: directPromotion ? "permitted" : null,
     permissionConfirmed: directPromotion,
-    rightsBasis: directPromotion ? APPROVED_REMOTE_THUMBNAIL_RIGHTS_BASIS : null,
-    attribution: directPromotion ? `${candidate?.restaurantName || "Restaurant"}, official website` : null
+    rightsBasis: directPromotion ? candidate.rightsBasis : null,
+    attribution: directPromotion ? candidate.attribution : null
   };
 }
 
@@ -80,10 +79,7 @@ function writeThumbnailReviewDecision(id, decision, candidate = null, reason = "
 }
 
 function thumbnailAssetUrl(value) {
-  const raw = String(value || "").trim();
-  if (/^(?:\.\/)?assets\/[a-zA-Z0-9._/-]+$/.test(raw)) return raw.startsWith("./") ? raw : `./${raw}`;
-  if (raw.startsWith("http://")) return safeUrl(`https://${raw.slice(7)}`) || safeUrl(raw);
-  return safeUrl(raw);
+  return safeImageUrl(value);
 }
 
 function thumbnailReviewPriority(candidate) {
@@ -125,9 +121,10 @@ function thumbnailReviewDecisionCounts(decisions) {
     if (decision === "approve_thumbnail") counts.approved += 1;
     if (decision === "reject_thumbnail") counts.rejected += 1;
     if (decision === "needs_source_check") counts.sourceCheck += 1;
-    if (record?.permissionConfirmed && record?.thumbnailUrl) counts.readyForManifest += 1;
+
     if (record?.visualReviewState === "visual_fit_needs_rights_review") counts.visualFitNeedsRights += 1;
   }
+  counts.readyForManifest = approvedThumbnailMediaRecords(decisions).length;
   return counts;
 }
 
@@ -153,20 +150,20 @@ function approvedThumbnailMediaRecords(decisions) {
     const decision = normalizeThumbnailDecision(thumbnailReviewDecisionValue(storedRecord));
     if (decision !== "approve_thumbnail") continue;
     const candidate = candidateById(id);
-    const reviewRecord = { ...thumbnailDecisionPayload(candidate, "approve_thumbnail"), ...(typeof storedRecord === "object" ? storedRecord : {}) };
-    if (!reviewRecord.permissionConfirmed || !reviewRecord.thumbnailUrl || !reviewRecord.restaurantId) continue;
+    const reviewRecord = typeof storedRecord === "object" ? storedRecord : {};
+    if (!isDirectPromotionCandidate(candidate) || reviewRecord.previewInspected !== true || !reviewRecord.permissionConfirmed || !reviewRecord.thumbnailUrl || !reviewRecord.restaurantId || reviewRecord.thumbnailUrl !== thumbnailAssetUrl(candidate.thumbnailUrl) || reviewRecord.restaurantId !== candidate.restaurantId) continue;
     records.push({
       restaurantId: reviewRecord.restaurantId,
       url: reviewRecord.thumbnailUrl,
       alt: reviewRecord.alt || `${reviewRecord.restaurantName || "Restaurant"} official website image`,
       sourceUrl: reviewRecord.sourceUrl,
-      sourceType: "official_site_permitted",
-      creator: reviewRecord.restaurantName || "Restaurant",
-      license: "First-party official site media",
-      rightsBasis: reviewRecord.rightsBasis || APPROVED_REMOTE_THUMBNAIL_RIGHTS_BASIS,
+      sourceType: candidate.sourceType || candidate.sourceKind,
+      creator: candidate.creator,
+      license: candidate.license,
+      rightsBasis: candidate.rightsBasis,
       permission: "permitted",
       permissionConfirmed: true,
-      attribution: reviewRecord.attribution || `${reviewRecord.restaurantName || "Restaurant"}, official website`,
+      attribution: candidate.attribution,
       reviewState: "approved",
       reviewedAt: reviewRecord.decidedAt,
       reviewCandidateId: id
@@ -182,7 +179,7 @@ function exportApprovedThumbnailMediaRecords() {
     version: 1,
     generatedAt: new Date().toISOString(),
     targetFile: "data/restaurant-media.js",
-    policy: APPROVED_REMOTE_THUMBNAIL_RIGHTS_BASIS,
+    policy: "Visual acceptance does not grant rights. Export includes only source-identical, inspected candidates with existing documented publication permission.",
     records
   };
   const blob = new Blob([JSON.stringify(payload, null, 2)], { type: "application/json" });
@@ -194,7 +191,7 @@ function exportApprovedThumbnailMediaRecords() {
   const url = link.href;
   link.remove();
   URL.revokeObjectURL(url);
-  toast(records.length ? `Exported ${records.length} approved media records` : "No direct-promotion approvals to export yet");
+  toast(records.length ? `Exported ${records.length} approved media records` : "No inspected, rights-documented approvals to export yet");
 }
 
 function renderThumbnailAdmin() {
@@ -264,7 +261,7 @@ function renderThumbnailAdmin() {
           <a class="admin-secondary-action" href="data/build/thumbnail-source-check-queue.csv" download>Source-check CSV <span>${sourceCheckCandidates.length}</span></a>
           <a class="admin-secondary-action" href="data/build/owner-media-outreach.csv" download>Owner outreach CSV <span>${missingAny.length}</span></a>
         </div>
-        <p>Default view shows undecided promotion candidates. Approvals from official restaurant pages or feeds export as permission-confirmed remote references; other visually good images stay flagged for rights review.</p>
+        <p>Default view shows undecided promotion candidates. Visual acceptance never grants image rights. Export requires existing documented publication permission and a successfully loaded preview.</p>
       </aside>
       <div class="admin-review-results">
         ${thumbnailAdminState.queue === "promotion" ? renderPromotionQueue(promotionQueue, decisions, allPromotionQueue) : ""}
@@ -300,7 +297,7 @@ function renderPromotionReviewGroup(item, decisions) {
   return `<section class="admin-promotion-group" aria-label="Thumbnail candidates for ${escapeHtml(restaurantName)}">
     <div class="admin-promotion-group-header">
       <div>
-        <div class="title-badges"><span>${escapeHtml(item.neighborhood || item.neighbourhood || "Neighbourhood unknown")}</span><span>${item.candidates.length} candidates</span><span>${directCount} direct-ready</span></div>
+        <div class="title-badges"><span>${escapeHtml(item.neighborhood || item.neighbourhood || "Neighbourhood unknown")}</span><span>${item.candidates.length} candidates</span><span>${directCount} rights documented</span></div>
         <h2>${escapeHtml(restaurantName)}</h2>
         <p>Compare each real preview against the restaurant and source before approving. Use reject reasons to keep the next queue clean.</p>
       </div>
@@ -334,11 +331,11 @@ function adminCandidateCard(candidate, decisions, options = {}) {
   const sourceKind = String(candidate.sourceKind || "unknown_source");
   const reviewState = String(candidate.reviewState || "unreviewed");
   const rightsStatus = String(candidate.rightsStatus || "unknown");
-  const imageUrl = hasMediaPermission(candidate) ? thumbnailAssetUrl(candidate.thumbnailUrl) : null;
+  const imageUrl = thumbnailReviewPreviewUrl(candidate);
   const sourceUrl = safeUrl(candidate.sourceUrl || candidate.pageUrl || candidate.postUrl);
   const localDecision = normalizeThumbnailDecision(thumbnailReviewDecisionValue(decisions[candidate.id]));
   const directPromotion = isDirectPromotionCandidate(candidate);
-  const promoted = candidate.eligibleForProduction ? "Production approved" : directPromotion ? "Direct promotion ready" : "Visual fit only";
+  const promoted = candidate.eligibleForProduction ? "Production approved" : directPromotion ? "Rights documented; inspect preview" : "Publication rights unconfirmed";
   const restaurantId = candidate.restaurantId ? String(candidate.restaurantId) : "";
   const dimensions = Number(candidate.width) && Number(candidate.height) ? `${candidate.width} x ${candidate.height}` : "Unknown";
   const imageHost = sourceHost(imageUrl);
@@ -346,7 +343,7 @@ function adminCandidateCard(candidate, decisions, options = {}) {
   const decisionClass = localDecision ? `is-local-${localDecision.replace(/_/g, "-")}` : "";
   const candidateTitle = candidate.title || candidate.alt || "Thumbnail candidate";
   return `<article class="admin-candidate-card ${candidate.eligibleForProduction ? "is-approved" : "is-review"} ${decisionClass}">
-    <div class="admin-candidate-image">${imageUrl ? `<img src="${escapeHtml(imageUrl)}" alt="${escapeHtml(candidate.alt || candidate.restaurantName || "Thumbnail candidate")}" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.closest('.admin-candidate-image').classList.add('is-broken');this.remove()" />` : `<span>No preview</span>`}</div>
+    <div class="admin-candidate-image">${imageUrl ? `<img src="${escapeHtml(imageUrl)}" alt="${escapeHtml(candidate.alt || candidate.restaurantName || "Thumbnail candidate")}" loading="lazy" decoding="async" referrerpolicy="no-referrer" data-thumbnail-preview="${escapeHtml(candidate.id || "")}" />` : `<span>No review preview available. Check the source; visual acceptance is disabled.</span>`}</div>
     <div class="admin-candidate-body">
       <div class="title-badges"><span>${escapeHtml(sourceKind.replace(/_/g, " "))}</span><span>${escapeHtml(promoted)}</span>${localDecision ? `<span>${escapeHtml(localDecision.replace(/_/g, " "))}</span>` : ""}</div>
       ${normalizedOptions.showRestaurant === false ? "" : `<h2>${escapeHtml(candidate.restaurantName || "Unknown restaurant")}</h2>`}
@@ -359,7 +356,7 @@ function adminCandidateCard(candidate, decisions, options = {}) {
         ${imageUrl ? `<a class="button tertiary" href="${escapeHtml(imageUrl)}" target="_blank" rel="noreferrer">Image</a>` : ""}
       </div>
       <div class="admin-candidate-actions admin-decision-actions" aria-label="Thumbnail review decisions">
-        <button type="button" data-thumb-decision="approve_thumbnail" data-thumb-id="${escapeHtml(candidate.id || "")}">Approve</button>
+        <button type="button" data-thumb-decision="approve_thumbnail" data-thumb-id="${escapeHtml(candidate.id || "")}" disabled>Accept visual fit</button>
         <button type="button" data-thumb-decision="reject_thumbnail" data-thumb-reason="blurry_low_quality" data-thumb-id="${escapeHtml(candidate.id || "")}">Blurry</button>
         <button type="button" data-thumb-decision="reject_thumbnail" data-thumb-reason="logo_or_placeholder" data-thumb-id="${escapeHtml(candidate.id || "")}">Logo</button>
         <button type="button" data-thumb-decision="reject_thumbnail" data-thumb-reason="unrelated_or_wrong_place" data-thumb-id="${escapeHtml(candidate.id || "")}">Unrelated</button>
@@ -387,11 +384,23 @@ function bindThumbnailAdminActions() {
     renderThumbnailAdmin();
   });
   document.querySelector("[data-thumb-export-approved]")?.addEventListener("click", exportApprovedThumbnailMediaRecords);
+  document.querySelectorAll("[data-thumbnail-preview]").forEach(image => {
+    const update = () => {
+      const id = image.dataset.thumbnailPreview;
+      const loaded = image.complete && image.naturalWidth > 0;
+      if (loaded) thumbnailPreviewsLoaded.add(id); else thumbnailPreviewsLoaded.delete(id);
+      const approve = image.closest(".admin-candidate-card")?.querySelector('[data-thumb-decision="approve_thumbnail"]');
+      if (approve) approve.disabled = !loaded;
+      image.closest(".admin-candidate-image")?.classList.toggle("is-broken", !loaded);
+    };
+    image.addEventListener("load", update); image.addEventListener("error", update); update();
+  });
   document.querySelectorAll("[data-thumb-decision]").forEach((button) => button.addEventListener("click", () => {
     const candidate = candidateById(button.dataset.thumbId);
     const decision = button.dataset.thumbDecision;
+    if (decision === "approve_thumbnail" && !thumbnailPreviewsLoaded.has(candidate?.id)) return;
     writeThumbnailReviewDecision(button.dataset.thumbId, decision, candidate, button.dataset.thumbReason || "");
-    const directReady = decision === "approve_thumbnail" && isDirectPromotionCandidate(candidate);
+    const directReady = decision === "approve_thumbnail" && thumbnailPreviewsLoaded.has(candidate?.id) && isDirectPromotionCandidate(candidate);
     const label = decision === "approve_thumbnail" ? directReady ? "Candidate approved for media export" : "Candidate marked visually good, rights review needed" : decision === "needs_source_check" ? "Candidate marked for source check" : "Candidate rejected";
     toast(label);
     renderThumbnailAdmin();
@@ -589,6 +598,7 @@ if (typeof halifaxBaseRenderRoute === "function") {
     if (current.name === "admin" && ["thumbnails", "social", "places"].includes(current.id)) {
       destroyMap();
       updateNav("admin");
+      document.title = `${{ thumbnails: "Thumbnail review", social: "Post review", places: "Place queues" }[current.id]} | Halifax Sourced`;
       if (globalSearch) globalSearch.value = state.query;
       if (current.id === "social") renderSocialPostAdmin();
       else if (current.id === "places") renderPlaceQueueAdmin();

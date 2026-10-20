@@ -1,0 +1,845 @@
+{
+  "version": 1,
+  "reviewedAt": "2026-10-20",
+  "method": "Live robots-checked direct HTTP retrieval, readable page text and JSON-LD manually reconciled by exact location. Stored source retrieval and evidence verification are distinct. No repository files changed.",
+  "timeZone": "America/Halifax",
+  "counts": {
+    "rawHoursReviewed": 13,
+    "canonicalHoursReviewed": 11,
+    "canonicalProposedSchedules": 7,
+    "completeSchedules": 5,
+    "partialSchedules": 2,
+    "canonicalHeldOrRemoved": 4,
+    "excludedNoncanonical": 2
+  },
+  "parsingRequirements": [
+    "Interpret all weekly times in America/Halifax, including DST transitions.",
+    "An explicit close of 00:00 after a positive opening time is the end of the service day: set overnight=true (or normalize to 24:00 with validated support).",
+    "An interval closing at 02:00 starts on its listed day and extends to the following local day.",
+    "Do not merge happy hour, pickup hours or last-order deadlines into ordinary opening intervals.",
+    "Omitted or unlisted days are unknown unless the source establishes closure or a complete weekly schedule. Null days in these proposals are unknown, not closed arrays.",
+    "Reject malformed, partial-parser and cross-location schemas rather than using absence to claim closure.",
+    "Prefer the reviewed visible location-specific hours over stale/contradictory machine metadata; retain conflicting raw evidence in history.",
+    "No holiday or temporary exceptions were established by these pages."
+  ],
+  "records": [
+    {
+      "restaurantId": "osm-node-10038454787-bird-s-nest-cafe",
+      "name": "Bird's Nest Cafe",
+      "canonical": true,
+      "sourceUrl": "https://www.birdsnesthalifax.com/",
+      "attemptedAt": "2026-10-20T19:04:28.397Z",
+      "retrievedAt": "2026-10-20T19:04:34.372Z",
+      "timeZone": "America/Halifax",
+      "evidenceSha256": "ff8f789c48e02ddb3db9225bf40244fa24023d183e3ba1e4fca1e4107bae350b",
+      "previousObservedAt": "2026-09-04T13:24:13.943Z",
+      "hours": {
+        "monday": [
+          {
+            "open": "08:00",
+            "close": "15:00",
+            "overnight": false,
+            "sourceForm": "reviewed_visible_official_hours"
+          }
+        ],
+        "tuesday": [
+          {
+            "open": "08:00",
+            "close": "15:00",
+            "overnight": false,
+            "sourceForm": "reviewed_visible_official_hours"
+          }
+        ],
+        "wednesday": [
+          {
+            "open": "08:00",
+            "close": "15:00",
+            "overnight": false,
+            "sourceForm": "reviewed_visible_official_hours"
+          }
+        ],
+        "thursday": [
+          {
+            "open": "08:00",
+            "close": "15:00",
+            "overnight": false,
+            "sourceForm": "reviewed_visible_official_hours"
+          }
+        ],
+        "friday": [
+          {
+            "open": "08:00",
+            "close": "15:00",
+            "overnight": false,
+            "sourceForm": "reviewed_visible_official_hours"
+          }
+        ],
+        "saturday": [
+          {
+            "open": "09:00",
+            "close": "14:00",
+            "overnight": false,
+            "sourceForm": "reviewed_visible_official_hours"
+          }
+        ],
+        "sunday": null
+      },
+      "openingHours": "Mo-Fr 08:00-15:00; Sa 09:00-14:00; Sunday not stated",
+      "unknownDays": [
+        "sunday"
+      ],
+      "reason": "Location-labelled visible Barrington hours supersede outdated JSON-LD. Do not import Discovery Centre hours. Sunday is not explicitly stated.",
+      "evidenceSummary": "Barrington Street location: weekdays 8am–3pm and Saturday 9am–2pm. The footer repeats these hours.",
+      "decision": "replace_with_reviewed_hours",
+      "observedAt": "2026-10-20T19:04:34.372Z",
+      "lastVerifiedAt": "2026-10-20T19:04:34.372Z",
+      "reviewState": "reviewed_visible_official_source",
+      "hoursVerifiedAt": "2026-10-20T19:04:34.372Z"
+    },
+    {
+      "restaurantId": "osm-node-11001023964-lockside-canteen",
+      "name": "Lockside Canteen",
+      "canonical": true,
+      "sourceUrl": "https://lemon.dog/",
+      "attemptedAt": "2026-10-20T19:04:28.399Z",
+      "retrievedAt": "2026-10-20T19:04:34.771Z",
+      "timeZone": "America/Halifax",
+      "evidenceSha256": "24dc96e2e8e14ec7a22462e49f249867c98ff22916b521fe1cb30e48de3583ff",
+      "previousObservedAt": "2026-09-04T13:24:14.283Z",
+      "decision": "remove_current_hours_and_flag_legacy_operator",
+      "hours": null,
+      "hoursVerifiedAt": null,
+      "reason": "operator_ended",
+      "evidenceSummary": "Owner says Lemon Dogs ended its Lockside Canteen operation in September 2024. This is affirmative evidence against using its historical hours as current. Do not infer whether a successor currently operates the premises.",
+      "reviewState": "held",
+      "preservePreviousEvidenceInHistory": true
+    },
+    {
+      "restaurantId": "osm-node-11867455433-papa-john-s",
+      "name": "Papa John's",
+      "canonical": false,
+      "sourceUrl": "https://locations.papajohns.com/canada/ns/b2w-6c4/dartmouth/644-portland-street",
+      "attemptedAt": "2026-10-20T19:04:28.399Z",
+      "retrievedAt": "2026-10-20T19:04:33.666Z",
+      "timeZone": "America/Halifax",
+      "evidenceSha256": "3f5baf641ac67ac06e53d8a5cfd2888f27f4d35719865054dce9cdb9aac2a98a",
+      "previousObservedAt": "2026-09-04T13:24:17.102Z",
+      "decision": "retain_noncanonical_exclusion",
+      "hours": null,
+      "hoursVerifiedAt": null,
+      "reviewState": "noncanonical",
+      "reason": "The catalog excludes this chain venue. Source was checked but it must not be resurrected by a raw-facts refresh.",
+      "sourceScheduleNotForPublication": {
+        "monday": [
+          {
+            "open": "11:00",
+            "close": "00:00",
+            "overnight": true,
+            "sourceForm": "reviewed_visible_official_hours"
+          }
+        ],
+        "tuesday": [
+          {
+            "open": "11:00",
+            "close": "00:00",
+            "overnight": true,
+            "sourceForm": "reviewed_visible_official_hours"
+          }
+        ],
+        "wednesday": [
+          {
+            "open": "11:00",
+            "close": "00:00",
+            "overnight": true,
+            "sourceForm": "reviewed_visible_official_hours"
+          }
+        ],
+        "thursday": [
+          {
+            "open": "11:00",
+            "close": "00:00",
+            "overnight": true,
+            "sourceForm": "reviewed_visible_official_hours"
+          }
+        ],
+        "friday": [
+          {
+            "open": "11:00",
+            "close": "01:00",
+            "overnight": true,
+            "sourceForm": "reviewed_visible_official_hours"
+          }
+        ],
+        "saturday": [
+          {
+            "open": "11:00",
+            "close": "01:00",
+            "overnight": true,
+            "sourceForm": "reviewed_visible_official_hours"
+          }
+        ],
+        "sunday": [
+          {
+            "open": "11:00",
+            "close": "00:00",
+            "overnight": true,
+            "sourceForm": "reviewed_visible_official_hours"
+          }
+        ]
+      },
+      "evidenceSummary": "Both delivery and carryout list 11am–midnight Sunday–Thursday and 11am–1am Friday–Saturday."
+    },
+    {
+      "restaurantId": "osm-node-12003152369-station-1-lebanese-kitchen",
+      "name": "Station 1 Lebanese Kitchen",
+      "canonical": true,
+      "sourceUrl": "https://station1lebanesekitchen.com/",
+      "attemptedAt": "2026-10-20T19:04:33.669Z",
+      "retrievedAt": "2026-10-20T19:04:37.421Z",
+      "timeZone": "America/Halifax",
+      "evidenceSha256": "6b65a67d53b9cfb2686536901416c8391e559ce3a888e248c0da14c1a7977899",
+      "previousObservedAt": "2026-09-04T13:24:17.155Z",
+      "decision": "remove_current_hours_and_location_contaminated_address_phone",
+      "hours": null,
+      "hoursVerifiedAt": null,
+      "reason": "location_mismatch_and_conflicting_visible_hours",
+      "evidenceSummary": "Catalog/OSM location and phone identify 50 Tacoma Drive, Dartmouth, but JSON-LD address/hours belong to 640 Brookline Drive, Bedford. Dartmouth visible blocks disagree on Mon–Thu closing (21:00 vs 20:00) and Sunday noon vs midnight. Never apply Bedford hours to Dartmouth or silently choose a conflict.",
+      "reviewState": "held",
+      "preservePreviousEvidenceInHistory": true
+    },
+    {
+      "restaurantId": "osm-node-13122094789-latitude-44",
+      "name": "Latitude 44°",
+      "canonical": true,
+      "sourceUrl": "https://www.lat44hfx.com/",
+      "attemptedAt": "2026-10-20T19:04:34.376Z",
+      "retrievedAt": "2026-10-20T19:04:38.241Z",
+      "timeZone": "America/Halifax",
+      "evidenceSha256": "5b131ca14aa96311d3432b0062c7443d3b0e6346ec279bd376a75f0a76bcd5d7",
+      "previousObservedAt": "2026-09-04T13:24:18.135Z",
+      "decision": "hold_current_structured_hours",
+      "hours": null,
+      "hoursVerifiedAt": null,
+      "reason": "live_content_unavailable_and_conflicting_snapshot",
+      "evidenceSummary": "Direct GET returned HTTP 200 with a 195-byte Site Unavailable page, not source evidence. Separately retrieved web-index rendering shows homepage closing at 22:00, 23:00 and midnight. Keep the old evidence date; do not refresh precise hours. Happy-hour 15:00–18:00 is not another business-hours interval.",
+      "reviewState": "held",
+      "preservePreviousEvidenceInHistory": true
+    },
+    {
+      "restaurantId": "osm-node-13912668535-jean-s-chinese-restaurant",
+      "name": "Jean's Chinese Restaurant",
+      "canonical": true,
+      "sourceUrl": "https://www.jeansrestaurant.ca/",
+      "attemptedAt": "2026-10-20T19:04:34.773Z",
+      "retrievedAt": "2026-10-20T19:04:40.127Z",
+      "timeZone": "America/Halifax",
+      "evidenceSha256": "b04d05a294fe1a49aa812c654cee6e8d6e1b1d1075d1d73ae84f77a824c17bc8",
+      "previousObservedAt": "2026-09-04T13:24:18.630Z",
+      "hours": {
+        "monday": [
+          {
+            "open": "11:00",
+            "close": "21:00",
+            "overnight": false,
+            "sourceForm": "reviewed_visible_official_hours"
+          }
+        ],
+        "tuesday": [
+          {
+            "open": "11:00",
+            "close": "21:00",
+            "overnight": false,
+            "sourceForm": "reviewed_visible_official_hours"
+          }
+        ],
+        "wednesday": [
+          {
+            "open": "11:00",
+            "close": "21:00",
+            "overnight": false,
+            "sourceForm": "reviewed_visible_official_hours"
+          }
+        ],
+        "thursday": [
+          {
+            "open": "11:00",
+            "close": "21:00",
+            "overnight": false,
+            "sourceForm": "reviewed_visible_official_hours"
+          }
+        ],
+        "friday": [
+          {
+            "open": "11:00",
+            "close": "22:00",
+            "overnight": false,
+            "sourceForm": "reviewed_visible_official_hours"
+          }
+        ],
+        "saturday": [
+          {
+            "open": "11:00",
+            "close": "22:00",
+            "overnight": false,
+            "sourceForm": "reviewed_visible_official_hours"
+          }
+        ],
+        "sunday": [
+          {
+            "open": "11:00",
+            "close": "21:00",
+            "overnight": false,
+            "sourceForm": "reviewed_visible_official_hours"
+          }
+        ]
+      },
+      "openingHours": "Su-Th 11:00-21:00; Fr-Sa 11:00-22:00",
+      "reason": "Visible opening-hours section overrides older JSON-LD. Current homepage footer and JSON-LD address identify 516 Pleasant Street. Page title still mentions the former Spring Garden address; do not use it to relocate this record.",
+      "evidenceSummary": "Visible owner hours: Sunday–Thursday 11am–9pm; Friday–Saturday 11am–10pm. Dartmouth address in contact/footer.",
+      "decision": "replace_with_reviewed_hours",
+      "observedAt": "2026-10-20T19:04:40.127Z",
+      "lastVerifiedAt": "2026-10-20T19:04:40.127Z",
+      "reviewState": "reviewed_visible_official_source",
+      "hoursVerifiedAt": "2026-10-20T19:04:40.127Z"
+    },
+    {
+      "restaurantId": "osm-node-3104067229-ardmore-tea-room",
+      "name": "Ardmore Tea Room",
+      "canonical": true,
+      "sourceUrl": "https://www.ardmoretearoom.ca/",
+      "attemptedAt": "2026-10-20T19:04:37.425Z",
+      "retrievedAt": "2026-10-20T19:04:42.664Z",
+      "timeZone": "America/Halifax",
+      "evidenceSha256": "f663d91405125cc34e9afbfb3f7f73249fbb64c8a7d401f88585dfb9d948f90b",
+      "previousObservedAt": "2026-09-04T13:24:20.747Z",
+      "hours": {
+        "monday": [
+          {
+            "open": "08:00",
+            "close": "14:00",
+            "overnight": false,
+            "sourceForm": "reviewed_visible_official_hours"
+          }
+        ],
+        "tuesday": [
+          {
+            "open": "08:00",
+            "close": "14:00",
+            "overnight": false,
+            "sourceForm": "reviewed_visible_official_hours"
+          }
+        ],
+        "wednesday": [
+          {
+            "open": "08:00",
+            "close": "14:00",
+            "overnight": false,
+            "sourceForm": "reviewed_visible_official_hours"
+          }
+        ],
+        "thursday": [
+          {
+            "open": "08:00",
+            "close": "14:00",
+            "overnight": false,
+            "sourceForm": "reviewed_visible_official_hours"
+          }
+        ],
+        "friday": [
+          {
+            "open": "08:00",
+            "close": "14:00",
+            "overnight": false,
+            "sourceForm": "reviewed_visible_official_hours"
+          }
+        ],
+        "saturday": [
+          {
+            "open": "08:00",
+            "close": "14:00",
+            "overnight": false,
+            "sourceForm": "reviewed_visible_official_hours"
+          }
+        ],
+        "sunday": [
+          {
+            "open": "08:00",
+            "close": "14:00",
+            "overnight": false,
+            "sourceForm": "reviewed_visible_official_hours"
+          }
+        ]
+      },
+      "openingHours": "Mo-Su 08:00-14:00; pickup ends at 13:45",
+      "reason": "Keep ordinary opening hours separate from pickup service. Do not merge the second 08:00–13:45 interval into business hours.",
+      "serviceHours": {
+        "pickup": {
+          "monday": [
+            {
+              "open": "08:00",
+              "close": "13:45",
+              "overnight": false,
+              "sourceForm": "reviewed_visible_official_hours"
+            }
+          ],
+          "tuesday": [
+            {
+              "open": "08:00",
+              "close": "13:45",
+              "overnight": false,
+              "sourceForm": "reviewed_visible_official_hours"
+            }
+          ],
+          "wednesday": [
+            {
+              "open": "08:00",
+              "close": "13:45",
+              "overnight": false,
+              "sourceForm": "reviewed_visible_official_hours"
+            }
+          ],
+          "thursday": [
+            {
+              "open": "08:00",
+              "close": "13:45",
+              "overnight": false,
+              "sourceForm": "reviewed_visible_official_hours"
+            }
+          ],
+          "friday": [
+            {
+              "open": "08:00",
+              "close": "13:45",
+              "overnight": false,
+              "sourceForm": "reviewed_visible_official_hours"
+            }
+          ],
+          "saturday": [
+            {
+              "open": "08:00",
+              "close": "13:45",
+              "overnight": false,
+              "sourceForm": "reviewed_visible_official_hours"
+            }
+          ],
+          "sunday": [
+            {
+              "open": "08:00",
+              "close": "13:45",
+              "overnight": false,
+              "sourceForm": "reviewed_visible_official_hours"
+            }
+          ]
+        }
+      },
+      "evidenceSummary": "Owner explicitly lists daily opening 8am–2pm and separately lists daily pickup 8am–1:45pm.",
+      "decision": "replace_with_reviewed_hours",
+      "observedAt": "2026-10-20T19:04:42.664Z",
+      "lastVerifiedAt": "2026-10-20T19:04:42.664Z",
+      "reviewState": "reviewed_visible_official_source",
+      "hoursVerifiedAt": "2026-10-20T19:04:42.664Z"
+    },
+    {
+      "restaurantId": "osm-node-3801119557-the-middle-spoon-desserterie-and-bar",
+      "name": "The Middle Spoon Desserterie & Bar",
+      "canonical": true,
+      "sourceUrl": "https://themiddlespoon.com/",
+      "attemptedAt": "2026-10-20T19:04:38.245Z",
+      "retrievedAt": "2026-10-20T19:04:42.259Z",
+      "timeZone": "America/Halifax",
+      "evidenceSha256": "f5f22f60a623a404a703ddd15d05f6a610e77f16edc9f7ee2baaeb817bc6233e",
+      "previousObservedAt": "2026-09-04T13:24:23.017Z",
+      "hours": {
+        "monday": [
+          {
+            "open": "16:00",
+            "close": "23:00",
+            "overnight": false,
+            "sourceForm": "reviewed_visible_official_hours"
+          }
+        ],
+        "tuesday": [
+          {
+            "open": "16:00",
+            "close": "23:00",
+            "overnight": false,
+            "sourceForm": "reviewed_visible_official_hours"
+          }
+        ],
+        "wednesday": [
+          {
+            "open": "16:00",
+            "close": "23:00",
+            "overnight": false,
+            "sourceForm": "reviewed_visible_official_hours"
+          }
+        ],
+        "thursday": [
+          {
+            "open": "16:00",
+            "close": "00:00",
+            "overnight": true,
+            "sourceForm": "reviewed_visible_official_hours"
+          }
+        ],
+        "friday": [
+          {
+            "open": "16:00",
+            "close": "02:00",
+            "overnight": true,
+            "sourceForm": "reviewed_visible_official_hours"
+          }
+        ],
+        "saturday": [
+          {
+            "open": "16:00",
+            "close": "02:00",
+            "overnight": true,
+            "sourceForm": "reviewed_visible_official_hours"
+          }
+        ],
+        "sunday": null
+      },
+      "openingHours": "Mo-We 16:00-23:00; Th 16:00-24:00; Fr-Sa 16:00-02:00 next day; Sunday not stated",
+      "unknownDays": [
+        "sunday"
+      ],
+      "reason": "Home JSON-LD corroborated by newly fetched /contact visible hours. Thursday midnight means the end of Thursday, not the start. Friday/Saturday continue into the next local date. No Sunday schedule is stated.",
+      "evidenceSummary": "Monday–Wednesday 4pm–11pm, Thursday 4pm–midnight, Friday–Saturday 4pm–2am; 1563 Barrington Street.",
+      "decision": "replace_with_reviewed_hours",
+      "observedAt": "2026-10-20T19:04:42.259Z",
+      "lastVerifiedAt": "2026-10-20T19:04:42.259Z",
+      "reviewState": "reviewed_visible_official_source",
+      "hoursVerifiedAt": "2026-10-20T19:04:42.259Z",
+      "corroboratingSource": {
+        "url": "https://themiddlespoon.com/contact",
+        "observedAt": "2026-10-20T19:04:55.984Z",
+        "file": "raw/middle-spoon-contact.html"
+      }
+    },
+    {
+      "restaurantId": "osm-node-4550004778-st-louis-bar-and-grill",
+      "name": "St. Louis Bar & Grill",
+      "canonical": false,
+      "sourceUrl": "https://locations.stlouiswings.com/ns-dartmouth-2201/",
+      "attemptedAt": "2026-10-20T19:04:40.133Z",
+      "retrievedAt": "2026-10-20T19:04:43.949Z",
+      "timeZone": "America/Halifax",
+      "evidenceSha256": "886a73ac20bde12ebd279b37e6bfb840528d0864303607bed11604bb7f69fc56",
+      "previousObservedAt": "2026-09-04T13:24:25.041Z",
+      "decision": "retain_noncanonical_exclusion",
+      "hours": null,
+      "hoursVerifiedAt": null,
+      "reviewState": "noncanonical",
+      "reason": "The catalog excludes this chain venue. Source was checked but it must not be resurrected by a raw-facts refresh.",
+      "sourceScheduleNotForPublication": {
+        "monday": [
+          {
+            "open": "11:00",
+            "close": "00:00",
+            "overnight": true,
+            "sourceForm": "reviewed_visible_official_hours"
+          }
+        ],
+        "tuesday": [
+          {
+            "open": "11:00",
+            "close": "01:00",
+            "overnight": true,
+            "sourceForm": "reviewed_visible_official_hours"
+          }
+        ],
+        "wednesday": [
+          {
+            "open": "11:00",
+            "close": "01:00",
+            "overnight": true,
+            "sourceForm": "reviewed_visible_official_hours"
+          }
+        ],
+        "thursday": [
+          {
+            "open": "11:00",
+            "close": "01:00",
+            "overnight": true,
+            "sourceForm": "reviewed_visible_official_hours"
+          }
+        ],
+        "friday": [
+          {
+            "open": "11:00",
+            "close": "01:00",
+            "overnight": true,
+            "sourceForm": "reviewed_visible_official_hours"
+          }
+        ],
+        "saturday": [
+          {
+            "open": "11:00",
+            "close": "01:00",
+            "overnight": true,
+            "sourceForm": "reviewed_visible_official_hours"
+          }
+        ],
+        "sunday": [
+          {
+            "open": "11:00",
+            "close": "00:00",
+            "overnight": true,
+            "sourceForm": "reviewed_visible_official_hours"
+          }
+        ]
+      },
+      "evidenceSummary": "Owner lists Monday/Sunday 11am–midnight, Tuesday–Saturday 11am–1am."
+    },
+    {
+      "restaurantId": "osm-node-5150087023-peter-s-pizzeria",
+      "name": "Peter's Pizzeria",
+      "canonical": true,
+      "sourceUrl": "https://www.peterspizzeriahfx.com/",
+      "attemptedAt": "2026-10-20T19:04:42.262Z",
+      "retrievedAt": "2026-10-20T19:04:47.632Z",
+      "timeZone": "America/Halifax",
+      "evidenceSha256": "c3ca2f44be762575d6d766c1b72be20cc5dc92df8f2fe8f5cf4b7db7b1057b8b",
+      "previousObservedAt": "2026-09-04T13:24:26.997Z",
+      "hours": {
+        "monday": [
+          {
+            "open": "11:00",
+            "close": "23:59",
+            "overnight": false,
+            "sourceForm": "reviewed_visible_official_hours"
+          }
+        ],
+        "tuesday": [
+          {
+            "open": "11:00",
+            "close": "23:59",
+            "overnight": false,
+            "sourceForm": "reviewed_visible_official_hours"
+          }
+        ],
+        "wednesday": [
+          {
+            "open": "11:00",
+            "close": "23:59",
+            "overnight": false,
+            "sourceForm": "reviewed_visible_official_hours"
+          }
+        ],
+        "thursday": [
+          {
+            "open": "11:00",
+            "close": "23:59",
+            "overnight": false,
+            "sourceForm": "reviewed_visible_official_hours"
+          }
+        ],
+        "friday": [
+          {
+            "open": "11:00",
+            "close": "23:59",
+            "overnight": false,
+            "sourceForm": "reviewed_visible_official_hours"
+          }
+        ],
+        "saturday": [
+          {
+            "open": "11:00",
+            "close": "23:59",
+            "overnight": false,
+            "sourceForm": "reviewed_visible_official_hours"
+          }
+        ],
+        "sunday": [
+          {
+            "open": "14:00",
+            "close": "23:00",
+            "overnight": false,
+            "sourceForm": "reviewed_visible_official_hours"
+          }
+        ]
+      },
+      "openingHours": "Mo-Sa 11:00-23:59; Su 14:00-23:00",
+      "reason": "Use complete visible hours. JSON-LD omits Monday and has seconds/midnight split artifacts; do not invent 24-hour intervals or turn omitted days into closed.",
+      "evidenceSummary": "The owner lists Monday–Saturday 11am–11:59pm and Sunday 2pm–11pm at 5391 Inglis Street.",
+      "decision": "replace_with_reviewed_hours",
+      "observedAt": "2026-10-20T19:04:47.632Z",
+      "lastVerifiedAt": "2026-10-20T19:04:47.632Z",
+      "reviewState": "reviewed_visible_official_source",
+      "hoursVerifiedAt": "2026-10-20T19:04:47.632Z"
+    },
+    {
+      "restaurantId": "osm-node-7139174640-kajohn-thai",
+      "name": "Kajohn Thai",
+      "canonical": true,
+      "sourceUrl": "https://www.kajohnthairestaurant.ca/",
+      "attemptedAt": "2026-10-20T19:04:42.668Z",
+      "retrievedAt": "2026-10-20T19:04:45.913Z",
+      "timeZone": "America/Halifax",
+      "evidenceSha256": "69d13beb4f7a8ba4df75fbe6a009df489f4bb6f11d47a6f287e15121336d5d38",
+      "previousObservedAt": "2026-09-04T13:24:29.198Z",
+      "hours": {
+        "monday": [
+          {
+            "open": "11:00",
+            "close": "20:30",
+            "overnight": false,
+            "sourceForm": "reviewed_visible_official_hours"
+          }
+        ],
+        "tuesday": [
+          {
+            "open": "11:00",
+            "close": "20:30",
+            "overnight": false,
+            "sourceForm": "reviewed_visible_official_hours"
+          }
+        ],
+        "wednesday": [
+          {
+            "open": "11:00",
+            "close": "20:30",
+            "overnight": false,
+            "sourceForm": "reviewed_visible_official_hours"
+          }
+        ],
+        "thursday": [
+          {
+            "open": "11:00",
+            "close": "20:30",
+            "overnight": false,
+            "sourceForm": "reviewed_visible_official_hours"
+          }
+        ],
+        "friday": [
+          {
+            "open": "11:00",
+            "close": "20:30",
+            "overnight": false,
+            "sourceForm": "reviewed_visible_official_hours"
+          }
+        ],
+        "saturday": [
+          {
+            "open": "11:00",
+            "close": "20:30",
+            "overnight": false,
+            "sourceForm": "reviewed_visible_official_hours"
+          }
+        ],
+        "sunday": []
+      },
+      "openingHours": "Mo-Sa 11:00-20:30; Su closed. Last dine-in order 19:30; last takeout order 20:15.",
+      "knownClosedDays": [
+        "sunday"
+      ],
+      "serviceRestrictions": {
+        "lastDineInOrder": "19:30",
+        "lastTakeoutOrder": "20:15"
+      },
+      "reason": "Visible location-hours block and footer agree; both supersede old JSON-LD. Retain last-order restrictions separately.",
+      "evidenceSummary": "Monday–Saturday 11am–8:30pm; Sunday closed; last dine-in order 7:30pm; last takeout order 8:15pm.",
+      "decision": "replace_with_reviewed_hours",
+      "observedAt": "2026-10-20T19:04:45.913Z",
+      "lastVerifiedAt": "2026-10-20T19:04:45.913Z",
+      "reviewState": "reviewed_visible_official_source",
+      "hoursVerifiedAt": "2026-10-20T19:04:45.913Z"
+    },
+    {
+      "restaurantId": "osm-node-9099103643-the-bread-lounge",
+      "name": "The Bread Lounge",
+      "canonical": true,
+      "sourceUrl": "https://thebreadloungebakery.square.site/",
+      "attemptedAt": "2026-10-20T19:04:43.953Z",
+      "retrievedAt": "2026-10-20T19:04:48.569Z",
+      "timeZone": "America/Halifax",
+      "evidenceSha256": "eda6e61d766db72cdb9a459b36ff970b25d36724756cbfc57696234048e1e9aa",
+      "previousObservedAt": "2026-09-04T13:24:32.229Z",
+      "decision": "remove_current_hours_and_location_contaminated_address_phone",
+      "hours": null,
+      "hoursVerifiedAt": null,
+      "reason": "location_mismatch",
+      "evidenceSummary": "Fresh JSON-LD is explicitly for 5880 Demone Street (+1 902 210 3441), while canonical entity is 1505 Barrington Street (+1 902 405 2374). The Demone schedule is real but cannot populate this Barrington venue.",
+      "reviewState": "held",
+      "preservePreviousEvidenceInHistory": true
+    },
+    {
+      "restaurantId": "osm-way-512985217-look-ho-ho",
+      "name": "Look Ho Ho",
+      "canonical": true,
+      "sourceUrl": "https://www.lookhoho.com/",
+      "attemptedAt": "2026-10-20T19:04:45.917Z",
+      "retrievedAt": "2026-10-20T19:04:52.646Z",
+      "timeZone": "America/Halifax",
+      "evidenceSha256": "4ca9e6f1ba40991d86db587657362ec23afcbeedf9c61817cddb0c02f4a2de4a",
+      "previousObservedAt": "2026-09-04T13:24:33.726Z",
+      "hours": {
+        "monday": [
+          {
+            "open": "11:30",
+            "close": "21:00",
+            "overnight": false,
+            "sourceForm": "reviewed_visible_official_hours"
+          }
+        ],
+        "tuesday": [
+          {
+            "open": "11:30",
+            "close": "21:00",
+            "overnight": false,
+            "sourceForm": "reviewed_visible_official_hours"
+          }
+        ],
+        "wednesday": [
+          {
+            "open": "11:30",
+            "close": "21:00",
+            "overnight": false,
+            "sourceForm": "reviewed_visible_official_hours"
+          }
+        ],
+        "thursday": [
+          {
+            "open": "11:30",
+            "close": "21:00",
+            "overnight": false,
+            "sourceForm": "reviewed_visible_official_hours"
+          }
+        ],
+        "friday": [
+          {
+            "open": "11:30",
+            "close": "22:00",
+            "overnight": false,
+            "sourceForm": "reviewed_visible_official_hours"
+          }
+        ],
+        "saturday": [
+          {
+            "open": "11:30",
+            "close": "22:00",
+            "overnight": false,
+            "sourceForm": "reviewed_visible_official_hours"
+          }
+        ],
+        "sunday": [
+          {
+            "open": "11:30",
+            "close": "21:00",
+            "overnight": false,
+            "sourceForm": "reviewed_visible_official_hours"
+          }
+        ]
+      },
+      "openingHours": "Su-Th 11:30-21:00; Fr-Sa 11:30-22:00",
+      "reason": "Visible owner opening-hours table supersedes old JSON-LD that omits Monday and closes all other days at 20:30. Day/time lists are matched in their published order: Saturday, Sunday, Monday, Tuesday, Wednesday, Thursday, Friday.",
+      "evidenceSummary": "Owner table lists Saturday and Friday closing at 10pm, Sunday–Thursday at 9pm, with 11:30am opening daily.",
+      "decision": "replace_with_reviewed_hours",
+      "observedAt": "2026-10-20T19:04:52.646Z",
+      "lastVerifiedAt": "2026-10-20T19:04:52.646Z",
+      "reviewState": "reviewed_visible_official_source",
+      "hoursVerifiedAt": "2026-10-20T19:04:52.646Z"
+    }
+  ]
+}

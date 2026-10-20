@@ -33,6 +33,7 @@ const state = {
   feature: "all",
   page: 1,
   sort: "recommended",
+  discoveryReturnHash: "#explore",
   saved: readSaved(),
   map: null,
   mapLayer: null,
@@ -367,16 +368,34 @@ function navigate(hash) {
   else location.hash = hash;
 }
 
+// The URL is the complete discovery state: missing parameters never inherit old filters.
+function discoveryStateFromParams(params) {
+  const page = Number(params.get("page"));
+  return { query: params.get("q") || "", cuisine: params.get("cuisine") || "all",
+    neighbourhood: params.get("neighbourhood") || "all", feature: params.get("feature") || "all",
+    sort: ["recommended", "fresh", "name", "neighbourhood"].includes(params.get("sort")) ? params.get("sort") : "recommended",
+    page: Number.isSafeInteger(page) && page > 0 ? page : 1 };
+}
+function discoveryHash(name = "explore", values = state) {
+  const params = new URLSearchParams();
+  for (const [key, field, fallback] of [["q", "query", ""], ["cuisine", "cuisine", "all"], ["neighbourhood", "neighbourhood", "all"], ["feature", "feature", "all"], ["sort", "sort", "recommended"], ["page", "page", 1]]) {
+    if (values[field] != null && values[field] !== fallback && values[field] !== "") params.set(key, values[field]);
+  }
+  return `#${name}${params.size ? `?${params}` : ""}`;
+}
+function navigateDiscovery(values = {}, name = "explore", reset = false) {
+  navigate(discoveryHash(name, { ...(reset ? discoveryStateFromParams(new URLSearchParams()) : state), ...values }));
+}
 function renderRoute() {
   destroyMap();
   const current = route();
   updateNav(current.name);
-  if (current.params.has("q")) state.query = current.params.get("q") || "";
-  if (current.params.has("cuisine")) state.cuisine = current.params.get("cuisine") || "all";
-  if (current.params.has("neighbourhood")) state.neighbourhood = current.params.get("neighbourhood") || "all";
-  if (current.params.has("feature")) state.feature = current.params.get("feature") || "all";
-  if (current.params.has("sort")) state.sort = current.params.get("sort") || "recommended";
+  Object.assign(state, discoveryStateFromParams(current.params));
   globalSearch.value = state.query;
+  if (["explore", "map"].includes(current.name)) state.discoveryReturnHash = discoveryHash(current.name);
+  const titles = { home: "Local restaurants, events & specials", explore: "Restaurants", events: "Events", specials: "Specials", menus: "Menus", map: "Restaurant map", saved: "Saved places" };
+  const restaurantTitle = current.name === "restaurant" ? restaurants.find(item => item.id === current.id)?.name : null;
+  document.title = `${restaurantTitle || titles[current.name] || "Discover local"} | Halifax Sourced`;
 
   switch (current.name) {
     case "explore": renderExplore(); break;

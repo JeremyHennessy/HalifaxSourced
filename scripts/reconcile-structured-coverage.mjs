@@ -1,3 +1,4 @@
+import { placeFactCounts } from "./lib/coverage-values.mjs";
 import { readFile, writeFile } from "node:fs/promises";
 import vm from "node:vm";
 import integrity from "../source-integrity.js";
@@ -172,7 +173,7 @@ rc.withAtLeastOneSocialProfile = socialIds.size || rc.withAtLeastOneSocialProfil
 rc.withLinkHub = hubIds.size;
 rc.withAnySocialOrLinkHub = new Set([...socialIds, ...hubIds]).size;
 rc.socialByPlatform = Object.fromEntries(Object.entries(platformSets).map(([platform, ids]) => [platform, ids.size]));
-rc.structuredFactLayer = { generatedAt: facts.generatedAt || null, checkedPlaces: facts.checkedPlaces || 0, sourceFailures: (facts.failures || []).length, ...(facts.counts || {}) };
+rc.structuredFactLayer = { generatedAt: facts.generatedAt || null, checkedPlaces: facts.checkedPlaces || 0, sourceFailures: (facts.failures || []).length, ...placeFactCounts(applyReviewedFactFieldRejections(facts.records || [])) };
 rc.patioDirectoryLayer = { generatedAt: patioDirectory.generatedAt || null, sourceFailures: (patioDirectory.failures || []).length, ...(patioDirectory.counts || {}) };
 rc.structuredSpecialLayer = { generatedAt: specials.generatedAt || null, count: specials.count || 0, verifiedCurrent: specials.verifiedCurrent || 0, recurringVerify: specials.recurringVerify || 0, sourceLeads: specials.sourceLeads || 0, stale: specials.stale || 0, expired: specials.expired || 0, orphanSourceCount: specials.orphanSourceCount || 0 };
 

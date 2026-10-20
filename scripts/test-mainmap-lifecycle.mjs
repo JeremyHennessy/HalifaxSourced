@@ -192,7 +192,7 @@ function harness() {
     latLngBounds: values => values
   };
   const context = vm.createContext({
-    console, Map, window: { L }, L, state, activeRestaurants: records,
+    console, Map, URLSearchParams, window: { L }, L, state, activeRestaurants: records,
     mapUiMode: 'map', MAP_DEFAULT: [44.6, -63.5],
     document: {
       querySelector: selector => selector === '#mainMap' ? element : { addEventListener() {} },
@@ -205,7 +205,7 @@ function harness() {
     restaurantCard: () => '', mapResultRow: () => '', bindCommonActions() {},
     hardenLeafletAttributionLinks() {}, categoryColor: () => ''
   });
-  vm.runInContext([initSource, destroySource, renderSource].join('\n'), context, { filename: 'actual-mainmap-application.js' });
+  vm.runInContext([read('app-core.js').slice(read('app-core.js').indexOf('function discoveryStateFromParams'),read('app-core.js').indexOf('function renderRoute()')), initSource, destroySource, renderSource].join('\n'), context, { filename: 'actual-mainmap-application.js' });
   return { queue, order, maps, state, records, run: code => vm.runInContext(code, context) };
 }
 

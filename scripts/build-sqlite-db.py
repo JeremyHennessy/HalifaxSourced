@@ -754,6 +754,21 @@ for post in recent_posts.get("records", []) or []:
             (post.get("restaurantId"), "recent_social_post", post.get("id"), post.get("reviewState"), post.get("postUrl"), post.get("observedAt")),
         )
 
+# Versioned partial export: consumers must not infer complete app-data parity.
+contract = {
+    "version": 1,
+    "scope": "partial_research_export",
+    "identityParity": "all canonical restaurant IDs, including inactive records",
+    "events": "curated restaurant.events only; not city-events or structured-events",
+    "specials": "curated restaurant.specials only; not structured-specials",
+    "omittedDatasets": ["city-events", "structured-events", "structured-place-facts", "structured-specials", "restaurant-lifecycle"],
+    "authoritativeSource": "data/build/catalog.json and versioned source JSON payloads",
+    "warning": "Do not use this export to determine current operating status, open-now hours, current offers, or complete event coverage."
+}
+cur.execute("create table if not exists export_contract (key text primary key, value text not null)")
+cur.execute("delete from export_contract")
+cur.executemany("insert into export_contract values (?, ?)", [(key, json.dumps(value)) for key, value in contract.items()])
+(build_dir / "sqlite-export-contract.json").write_text(json.dumps(contract, indent=2) + "\n", encoding="utf-8")
 conn.commit()
 conn.close()
 

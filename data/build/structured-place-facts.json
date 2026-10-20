@@ -20,15 +20,15 @@
     }
   ],
   "counts": {
-    "records": 177,
-    "hours": 13,
-    "phone": 78,
+    "records": 176,
+    "hours": 9,
+    "phone": 76,
     "email": 10,
-    "address": 30,
-    "features": 132,
-    "menus": 144,
+    "address": 28,
+    "features": 131,
+    "menus": 143,
     "reservations": 56,
-    "ordering": 78
+    "ordering": 77
   },
   "records": [
     {
@@ -199,7 +199,15 @@
       ],
       "menus": [],
       "reservations": [],
-      "ordering": []
+      "ordering": [],
+      "rejectedFactFields": [
+        {
+          "field": "hours",
+          "reviewId": "battery-park-ambiguous-weekly-hours-20261020",
+          "reason": "The owner Thursday entry is ambiguous (11:30am -11am), while imported 24-hour and historical directory schedules conflict with the current owner page. Hold structured weekly hours for this exact location until explicit owner review resolves that ambiguity. Retain raw observations and original evidence dates; do not infer an overnight period, a closing time, or that an unspecified day is closed.",
+          "reviewedAt": "2026-10-20T18:15:55Z"
+        }
+      ]
     },
     {
       "restaurantId": "dear-friend",
@@ -358,37 +366,44 @@
       "sourceKind": "official_website_structured_facts",
       "reviewState": "verified_source",
       "hours": {
-        "monday": [],
+        "monday": [
+          {
+            "open": "08:00",
+            "close": "15:00",
+            "overnight": false,
+            "sourceForm": "reviewed_visible_official_hours"
+          }
+        ],
         "tuesday": [
           {
-            "open": "07:30",
-            "close": "17:00",
+            "open": "08:00",
+            "close": "15:00",
             "overnight": false,
-            "sourceForm": "schema_openingHoursSpecification"
+            "sourceForm": "reviewed_visible_official_hours"
           }
         ],
         "wednesday": [
           {
-            "open": "07:30",
-            "close": "17:00",
+            "open": "08:00",
+            "close": "15:00",
             "overnight": false,
-            "sourceForm": "schema_openingHoursSpecification"
+            "sourceForm": "reviewed_visible_official_hours"
           }
         ],
         "thursday": [
           {
-            "open": "07:30",
-            "close": "17:00",
+            "open": "08:00",
+            "close": "15:00",
             "overnight": false,
-            "sourceForm": "schema_openingHoursSpecification"
+            "sourceForm": "reviewed_visible_official_hours"
           }
         ],
         "friday": [
           {
-            "open": "07:30",
-            "close": "17:00",
+            "open": "08:00",
+            "close": "15:00",
             "overnight": false,
-            "sourceForm": "schema_openingHoursSpecification"
+            "sourceForm": "reviewed_visible_official_hours"
           }
         ],
         "saturday": [
@@ -396,10 +411,10 @@
             "open": "09:00",
             "close": "14:00",
             "overnight": false,
-            "sourceForm": "schema_openingHoursSpecification"
+            "sourceForm": "reviewed_visible_official_hours"
           }
         ],
-        "sunday": []
+        "sunday": null
       },
       "phone": "(902) 423-5282",
       "email": null,
@@ -450,7 +465,13 @@
           "verifiedAt": "2026-09-04T12:50:44.315Z",
           "status": "verified_link"
         }
-      ]
+      ],
+      "hoursVerifiedAt": "2026-10-20T19:04:34.372Z",
+      "hoursSourceUrl": "https://www.birdsnesthalifax.com/",
+      "hoursUnknownDays": [
+        "sunday"
+      ],
+      "hoursReviewEvidence": "Barrington Street location: weekdays 8am–3pm and Saturday 9am–2pm. The footer repeats these hours."
     },
     {
       "restaurantId": "osm-node-1031603952-darrell-s",
@@ -726,55 +747,22 @@
       "lastVerifiedAt": "2026-09-04T13:24:14.283Z",
       "sourceKind": "official_website_structured_facts",
       "reviewState": "verified_source",
-      "hours": {
-        "monday": [],
-        "tuesday": [],
-        "wednesday": [],
-        "thursday": [],
-        "friday": [
-          {
-            "open": "16:00",
-            "close": "19:00",
-            "overnight": false,
-            "sourceForm": "schema_openingHoursSpecification"
-          }
-        ],
-        "saturday": [
-          {
-            "open": "12:00",
-            "close": "00:00",
-            "overnight": false,
-            "sourceForm": "schema_openingHoursSpecification"
-          },
-          {
-            "open": "00:00",
-            "close": "18:00",
-            "overnight": false,
-            "sourceForm": "schema_openingHoursSpecification"
-          }
-        ],
-        "sunday": [
-          {
-            "open": "12:00",
-            "close": "00:00",
-            "overnight": false,
-            "sourceForm": "schema_openingHoursSpecification"
-          },
-          {
-            "open": "00:00",
-            "close": "18:00",
-            "overnight": false,
-            "sourceForm": "schema_openingHoursSpecification"
-          }
-        ]
-      },
+      "hours": null,
       "phone": null,
       "email": null,
       "address": "54 Locks Rd, Dartmouth, Nova Scotia, B2X 2W7, Canada",
       "features": [],
       "menus": [],
       "reservations": [],
-      "ordering": []
+      "ordering": [],
+      "rejectedFactFields": [
+        {
+          "field": "hours",
+          "reviewId": "hours-review-2026-10-20-osm-node-11001023964-lockside-canteen",
+          "reason": "operator_ended",
+          "reviewedAt": "2026-10-20T19:04:34.771Z"
+        }
+      ]
     },
     {
       "restaurantId": "osm-node-11162905766-the-5k-cafe",
@@ -2796,25 +2784,10 @@
       "lastVerifiedAt": "2026-09-04T13:24:17.155Z",
       "sourceKind": "official_website_structured_facts",
       "reviewState": "verified_source",
-      "hours": {
-        "monday": [],
-        "tuesday": [],
-        "wednesday": [],
-        "thursday": [],
-        "friday": [],
-        "saturday": [],
-        "sunday": [
-          {
-            "open": "12:00",
-            "close": "21:00",
-            "overnight": false,
-            "sourceForm": "schema_openingHours"
-          }
-        ]
-      },
-      "phone": "+1+19024605555",
+      "hours": null,
+      "phone": null,
       "email": null,
-      "address": "640 Brookline Drrive Unit 106, Bedford, Nova Scotia, B4B 1S8",
+      "address": null,
       "features": [
         {
           "feature": "catering",
@@ -2846,7 +2819,27 @@
         }
       ],
       "reservations": [],
-      "ordering": []
+      "ordering": [],
+      "rejectedFactFields": [
+        {
+          "field": "hours",
+          "reviewId": "hours-review-2026-10-20-osm-node-12003152369-station-1-lebanese-kitchen",
+          "reason": "location_mismatch_and_conflicting_visible_hours",
+          "reviewedAt": "2026-10-20T19:04:37.421Z"
+        },
+        {
+          "field": "address",
+          "reviewId": "hours-review-2026-10-20-osm-node-12003152369-station-1-lebanese-kitchen",
+          "reason": "location_mismatch_and_conflicting_visible_hours",
+          "reviewedAt": "2026-10-20T19:04:37.421Z"
+        },
+        {
+          "field": "phone",
+          "reviewId": "hours-review-2026-10-20-osm-node-12003152369-station-1-lebanese-kitchen",
+          "reason": "location_mismatch_and_conflicting_visible_hours",
+          "reviewedAt": "2026-10-20T19:04:37.421Z"
+        }
+      ]
     },
     {
       "restaurantId": "osm-node-1202688542-subway",
@@ -3186,106 +3179,7 @@
       "lastVerifiedAt": "2026-09-04T13:24:18.135Z",
       "sourceKind": "official_website_structured_facts",
       "reviewState": "verified_source",
-      "hours": {
-        "monday": [
-          {
-            "open": "06:30",
-            "close": "23:00",
-            "overnight": false,
-            "sourceForm": "schema_openingHoursSpecification"
-          },
-          {
-            "open": "15:00",
-            "close": "18:00",
-            "overnight": false,
-            "sourceForm": "schema_openingHoursSpecification"
-          }
-        ],
-        "tuesday": [
-          {
-            "open": "06:30",
-            "close": "23:00",
-            "overnight": false,
-            "sourceForm": "schema_openingHoursSpecification"
-          },
-          {
-            "open": "15:00",
-            "close": "18:00",
-            "overnight": false,
-            "sourceForm": "schema_openingHoursSpecification"
-          }
-        ],
-        "wednesday": [
-          {
-            "open": "06:30",
-            "close": "23:00",
-            "overnight": false,
-            "sourceForm": "schema_openingHoursSpecification"
-          },
-          {
-            "open": "15:00",
-            "close": "18:00",
-            "overnight": false,
-            "sourceForm": "schema_openingHoursSpecification"
-          }
-        ],
-        "thursday": [
-          {
-            "open": "06:30",
-            "close": "23:00",
-            "overnight": false,
-            "sourceForm": "schema_openingHoursSpecification"
-          },
-          {
-            "open": "15:00",
-            "close": "18:00",
-            "overnight": false,
-            "sourceForm": "schema_openingHoursSpecification"
-          }
-        ],
-        "friday": [
-          {
-            "open": "06:30",
-            "close": "23:00",
-            "overnight": false,
-            "sourceForm": "schema_openingHoursSpecification"
-          },
-          {
-            "open": "15:00",
-            "close": "18:00",
-            "overnight": false,
-            "sourceForm": "schema_openingHoursSpecification"
-          }
-        ],
-        "saturday": [
-          {
-            "open": "06:30",
-            "close": "23:00",
-            "overnight": false,
-            "sourceForm": "schema_openingHoursSpecification"
-          },
-          {
-            "open": "15:00",
-            "close": "18:00",
-            "overnight": false,
-            "sourceForm": "schema_openingHoursSpecification"
-          }
-        ],
-        "sunday": [
-          {
-            "open": "06:30",
-            "close": "23:00",
-            "overnight": false,
-            "sourceForm": "schema_openingHoursSpecification"
-          },
-          {
-            "open": "15:00",
-            "close": "18:00",
-            "overnight": false,
-            "sourceForm": "schema_openingHoursSpecification"
-          }
-        ]
-      },
+      "hours": null,
       "phone": "+1-902-444-0816",
       "email": "latitude44@fourpointshalifax.com",
       "address": "1496 Hollis St., Halifax, Nova Scotia, B3J 3Z1, Canada",
@@ -3329,7 +3223,15 @@
           "status": "verified_link"
         }
       ],
-      "ordering": []
+      "ordering": [],
+      "rejectedFactFields": [
+        {
+          "field": "hours",
+          "reviewId": "hours-review-2026-10-20-osm-node-13122094789-latitude-44",
+          "reason": "live_content_unavailable_and_conflicting_snapshot",
+          "reviewedAt": "2026-10-20T19:04:38.241Z"
+        }
+      ]
     },
     {
       "restaurantId": "osm-node-13141457102-bitter-end-martini-bar-and-restaurant",
@@ -3658,53 +3560,60 @@
       "sourceKind": "official_website_structured_facts",
       "reviewState": "verified_source",
       "hours": {
-        "monday": [],
+        "monday": [
+          {
+            "open": "11:00",
+            "close": "21:00",
+            "overnight": false,
+            "sourceForm": "reviewed_visible_official_hours"
+          }
+        ],
         "tuesday": [
           {
             "open": "11:00",
-            "close": "20:00",
+            "close": "21:00",
             "overnight": false,
-            "sourceForm": "schema_openingHoursSpecification"
+            "sourceForm": "reviewed_visible_official_hours"
           }
         ],
         "wednesday": [
           {
             "open": "11:00",
-            "close": "20:00",
+            "close": "21:00",
             "overnight": false,
-            "sourceForm": "schema_openingHoursSpecification"
+            "sourceForm": "reviewed_visible_official_hours"
           }
         ],
         "thursday": [
           {
             "open": "11:00",
-            "close": "20:00",
+            "close": "21:00",
             "overnight": false,
-            "sourceForm": "schema_openingHoursSpecification"
+            "sourceForm": "reviewed_visible_official_hours"
           }
         ],
         "friday": [
           {
             "open": "11:00",
-            "close": "21:00",
+            "close": "22:00",
             "overnight": false,
-            "sourceForm": "schema_openingHoursSpecification"
+            "sourceForm": "reviewed_visible_official_hours"
           }
         ],
         "saturday": [
           {
             "open": "11:00",
-            "close": "21:00",
+            "close": "22:00",
             "overnight": false,
-            "sourceForm": "schema_openingHoursSpecification"
+            "sourceForm": "reviewed_visible_official_hours"
           }
         ],
         "sunday": [
           {
             "open": "11:00",
-            "close": "20:00",
+            "close": "21:00",
             "overnight": false,
-            "sourceForm": "schema_openingHoursSpecification"
+            "sourceForm": "reviewed_visible_official_hours"
           }
         ]
       },
@@ -3753,7 +3662,11 @@
           "verifiedAt": "2026-09-04T12:50:54.986Z",
           "status": "verified_link"
         }
-      ]
+      ],
+      "hoursVerifiedAt": "2026-10-20T19:04:40.127Z",
+      "hoursSourceUrl": "https://www.jeansrestaurant.ca/",
+      "hoursUnknownDays": [],
+      "hoursReviewEvidence": "Visible owner hours: Sunday–Thursday 11am–9pm; Friday–Saturday 11am–10pm. Dartmouth address in contact/footer."
     },
     {
       "restaurantId": "osm-node-14139904501-battery-park-beer-bar-and-eatery",
@@ -4994,13 +4907,7 @@
             "open": "08:00",
             "close": "14:00",
             "overnight": false,
-            "sourceForm": "schema_openingHours"
-          },
-          {
-            "open": "08:00",
-            "close": "13:45",
-            "overnight": false,
-            "sourceForm": "schema_openingHours"
+            "sourceForm": "reviewed_visible_official_hours"
           }
         ],
         "tuesday": [
@@ -5008,13 +4915,7 @@
             "open": "08:00",
             "close": "14:00",
             "overnight": false,
-            "sourceForm": "schema_openingHours"
-          },
-          {
-            "open": "08:00",
-            "close": "13:45",
-            "overnight": false,
-            "sourceForm": "schema_openingHours"
+            "sourceForm": "reviewed_visible_official_hours"
           }
         ],
         "wednesday": [
@@ -5022,13 +4923,7 @@
             "open": "08:00",
             "close": "14:00",
             "overnight": false,
-            "sourceForm": "schema_openingHours"
-          },
-          {
-            "open": "08:00",
-            "close": "13:45",
-            "overnight": false,
-            "sourceForm": "schema_openingHours"
+            "sourceForm": "reviewed_visible_official_hours"
           }
         ],
         "thursday": [
@@ -5036,13 +4931,7 @@
             "open": "08:00",
             "close": "14:00",
             "overnight": false,
-            "sourceForm": "schema_openingHours"
-          },
-          {
-            "open": "08:00",
-            "close": "13:45",
-            "overnight": false,
-            "sourceForm": "schema_openingHours"
+            "sourceForm": "reviewed_visible_official_hours"
           }
         ],
         "friday": [
@@ -5050,13 +4939,7 @@
             "open": "08:00",
             "close": "14:00",
             "overnight": false,
-            "sourceForm": "schema_openingHours"
-          },
-          {
-            "open": "08:00",
-            "close": "13:45",
-            "overnight": false,
-            "sourceForm": "schema_openingHours"
+            "sourceForm": "reviewed_visible_official_hours"
           }
         ],
         "saturday": [
@@ -5064,13 +4947,7 @@
             "open": "08:00",
             "close": "14:00",
             "overnight": false,
-            "sourceForm": "schema_openingHours"
-          },
-          {
-            "open": "08:00",
-            "close": "13:45",
-            "overnight": false,
-            "sourceForm": "schema_openingHours"
+            "sourceForm": "reviewed_visible_official_hours"
           }
         ],
         "sunday": [
@@ -5078,13 +4955,7 @@
             "open": "08:00",
             "close": "14:00",
             "overnight": false,
-            "sourceForm": "schema_openingHours"
-          },
-          {
-            "open": "08:00",
-            "close": "13:45",
-            "overnight": false,
-            "sourceForm": "schema_openingHours"
+            "sourceForm": "reviewed_visible_official_hours"
           }
         ]
       },
@@ -5132,7 +5003,11 @@
           "verifiedAt": "2026-09-04T12:50:43.940Z",
           "status": "verified_link"
         }
-      ]
+      ],
+      "hoursVerifiedAt": "2026-10-20T19:04:42.664Z",
+      "hoursSourceUrl": "https://www.ardmoretearoom.ca/",
+      "hoursUnknownDays": [],
+      "hoursReviewEvidence": "Owner explicitly lists daily opening 8am–2pm and separately lists daily pickup 8am–1:45pm."
     },
     {
       "restaurantId": "osm-node-3104142670-king-of-donair",
@@ -5900,7 +5775,7 @@
             "open": "16:00",
             "close": "23:00",
             "overnight": false,
-            "sourceForm": "schema_openingHoursSpecification"
+            "sourceForm": "reviewed_visible_official_hours"
           }
         ],
         "tuesday": [
@@ -5908,7 +5783,7 @@
             "open": "16:00",
             "close": "23:00",
             "overnight": false,
-            "sourceForm": "schema_openingHoursSpecification"
+            "sourceForm": "reviewed_visible_official_hours"
           }
         ],
         "wednesday": [
@@ -5916,15 +5791,15 @@
             "open": "16:00",
             "close": "23:00",
             "overnight": false,
-            "sourceForm": "schema_openingHoursSpecification"
+            "sourceForm": "reviewed_visible_official_hours"
           }
         ],
         "thursday": [
           {
             "open": "16:00",
             "close": "00:00",
-            "overnight": false,
-            "sourceForm": "schema_openingHoursSpecification"
+            "overnight": true,
+            "sourceForm": "reviewed_visible_official_hours"
           }
         ],
         "friday": [
@@ -5932,7 +5807,7 @@
             "open": "16:00",
             "close": "02:00",
             "overnight": true,
-            "sourceForm": "schema_openingHoursSpecification"
+            "sourceForm": "reviewed_visible_official_hours"
           }
         ],
         "saturday": [
@@ -5940,10 +5815,10 @@
             "open": "16:00",
             "close": "02:00",
             "overnight": true,
-            "sourceForm": "schema_openingHoursSpecification"
+            "sourceForm": "reviewed_visible_official_hours"
           }
         ],
-        "sunday": []
+        "sunday": null
       },
       "phone": "+1-902-407-4002",
       "email": null,
@@ -6022,7 +5897,13 @@
           "verifiedAt": "2026-09-04T12:51:14.146Z",
           "status": "verified_link"
         }
-      ]
+      ],
+      "hoursVerifiedAt": "2026-10-20T19:04:42.259Z",
+      "hoursSourceUrl": "https://themiddlespoon.com/",
+      "hoursUnknownDays": [
+        "sunday"
+      ],
+      "hoursReviewEvidence": "Monday–Wednesday 4pm–11pm, Thursday 4pm–midnight, Friday–Saturday 4pm–2am; 1563 Barrington Street."
     },
     {
       "restaurantId": "osm-node-3802109750-rinaldo-s",
@@ -7769,18 +7650,60 @@
       "sourceKind": "official_website_structured_facts",
       "reviewState": "verified_source",
       "hours": {
-        "monday": [],
-        "tuesday": [],
-        "wednesday": [],
-        "thursday": [],
-        "friday": [],
-        "saturday": [],
+        "monday": [
+          {
+            "open": "11:00",
+            "close": "23:59",
+            "overnight": false,
+            "sourceForm": "reviewed_visible_official_hours"
+          }
+        ],
+        "tuesday": [
+          {
+            "open": "11:00",
+            "close": "23:59",
+            "overnight": false,
+            "sourceForm": "reviewed_visible_official_hours"
+          }
+        ],
+        "wednesday": [
+          {
+            "open": "11:00",
+            "close": "23:59",
+            "overnight": false,
+            "sourceForm": "reviewed_visible_official_hours"
+          }
+        ],
+        "thursday": [
+          {
+            "open": "11:00",
+            "close": "23:59",
+            "overnight": false,
+            "sourceForm": "reviewed_visible_official_hours"
+          }
+        ],
+        "friday": [
+          {
+            "open": "11:00",
+            "close": "23:59",
+            "overnight": false,
+            "sourceForm": "reviewed_visible_official_hours"
+          }
+        ],
+        "saturday": [
+          {
+            "open": "11:00",
+            "close": "23:59",
+            "overnight": false,
+            "sourceForm": "reviewed_visible_official_hours"
+          }
+        ],
         "sunday": [
           {
             "open": "14:00",
             "close": "23:00",
             "overnight": false,
-            "sourceForm": "schema_openingHoursSpecification"
+            "sourceForm": "reviewed_visible_official_hours"
           }
         ]
       },
@@ -7838,7 +7761,11 @@
           "verifiedAt": "2026-09-04T12:51:02.533Z",
           "status": "verified_link"
         }
-      ]
+      ],
+      "hoursVerifiedAt": "2026-10-20T19:04:47.632Z",
+      "hoursSourceUrl": "https://www.peterspizzeriahfx.com/",
+      "hoursUnknownDays": [],
+      "hoursReviewEvidence": "The owner lists Monday–Saturday 11am–11:59pm and Sunday 2pm–11pm at 5391 Inglis Street."
     },
     {
       "restaurantId": "osm-node-5150122721-good-robot-brewing-company",
@@ -8944,45 +8871,52 @@
       "sourceKind": "official_website_structured_facts",
       "reviewState": "verified_source",
       "hours": {
-        "monday": [],
+        "monday": [
+          {
+            "open": "11:00",
+            "close": "20:30",
+            "overnight": false,
+            "sourceForm": "reviewed_visible_official_hours"
+          }
+        ],
         "tuesday": [
           {
             "open": "11:00",
-            "close": "21:00",
+            "close": "20:30",
             "overnight": false,
-            "sourceForm": "schema_openingHoursSpecification"
+            "sourceForm": "reviewed_visible_official_hours"
           }
         ],
         "wednesday": [
           {
             "open": "11:00",
-            "close": "21:00",
+            "close": "20:30",
             "overnight": false,
-            "sourceForm": "schema_openingHoursSpecification"
+            "sourceForm": "reviewed_visible_official_hours"
           }
         ],
         "thursday": [
           {
             "open": "11:00",
-            "close": "21:00",
+            "close": "20:30",
             "overnight": false,
-            "sourceForm": "schema_openingHoursSpecification"
+            "sourceForm": "reviewed_visible_official_hours"
           }
         ],
         "friday": [
           {
             "open": "11:00",
-            "close": "21:30",
+            "close": "20:30",
             "overnight": false,
-            "sourceForm": "schema_openingHoursSpecification"
+            "sourceForm": "reviewed_visible_official_hours"
           }
         ],
         "saturday": [
           {
             "open": "11:00",
-            "close": "21:30",
+            "close": "20:30",
             "overnight": false,
-            "sourceForm": "schema_openingHoursSpecification"
+            "sourceForm": "reviewed_visible_official_hours"
           }
         ],
         "sunday": []
@@ -9021,7 +8955,11 @@
         }
       ],
       "reservations": [],
-      "ordering": []
+      "ordering": [],
+      "hoursVerifiedAt": "2026-10-20T19:04:45.913Z",
+      "hoursSourceUrl": "https://www.kajohnthairestaurant.ca/",
+      "hoursUnknownDays": [],
+      "hoursReviewEvidence": "Monday–Saturday 11am–8:30pm; Sunday closed; last dine-in order 7:30pm; last takeout order 8:15pm."
     },
     {
       "restaurantId": "osm-node-7393838887-new-wing-wah",
@@ -10747,71 +10685,34 @@
       "lastVerifiedAt": "2026-09-04T13:24:32.229Z",
       "sourceKind": "official_website_structured_facts",
       "reviewState": "verified_source",
-      "hours": {
-        "monday": [
-          {
-            "open": "07:00",
-            "close": "19:00",
-            "overnight": false,
-            "sourceForm": "schema_openingHoursSpecification"
-          }
-        ],
-        "tuesday": [
-          {
-            "open": "07:00",
-            "close": "19:00",
-            "overnight": false,
-            "sourceForm": "schema_openingHoursSpecification"
-          }
-        ],
-        "wednesday": [
-          {
-            "open": "07:00",
-            "close": "19:00",
-            "overnight": false,
-            "sourceForm": "schema_openingHoursSpecification"
-          }
-        ],
-        "thursday": [
-          {
-            "open": "07:00",
-            "close": "19:00",
-            "overnight": false,
-            "sourceForm": "schema_openingHoursSpecification"
-          }
-        ],
-        "friday": [
-          {
-            "open": "07:00",
-            "close": "19:00",
-            "overnight": false,
-            "sourceForm": "schema_openingHoursSpecification"
-          }
-        ],
-        "saturday": [
-          {
-            "open": "07:00",
-            "close": "19:00",
-            "overnight": false,
-            "sourceForm": "schema_openingHoursSpecification"
-          }
-        ],
-        "sunday": [
-          {
-            "open": "09:00",
-            "close": "17:00",
-            "overnight": false,
-            "sourceForm": "schema_openingHoursSpecification"
-          }
-        ]
-      },
-      "phone": "+19022103441",
+      "hours": null,
+      "phone": null,
       "email": null,
-      "address": "5880 Demone Street, Halifax, NS, B3K 1X9, CA",
+      "address": null,
       "features": [],
       "menus": [],
       "reservations": [],
-      "ordering": []
+      "ordering": [],
+      "rejectedFactFields": [
+        {
+          "field": "hours",
+          "reviewId": "hours-review-2026-10-20-osm-node-9099103643-the-bread-lounge",
+          "reason": "location_mismatch",
+          "reviewedAt": "2026-10-20T19:04:48.569Z"
+        },
+        {
+          "field": "address",
+          "reviewId": "hours-review-2026-10-20-osm-node-9099103643-the-bread-lounge",
+          "reason": "location_mismatch",
+          "reviewedAt": "2026-10-20T19:04:48.569Z"
+        },
+        {
+          "field": "phone",
+          "reviewId": "hours-review-2026-10-20-osm-node-9099103643-the-bread-lounge",
+          "reason": "location_mismatch",
+          "reviewedAt": "2026-10-20T19:04:48.569Z"
+        }
+      ]
     },
     {
       "restaurantId": "osm-node-9128392205-king-of-donair",
@@ -11900,53 +11801,60 @@
       "sourceKind": "official_website_structured_facts",
       "reviewState": "verified_source",
       "hours": {
-        "monday": [],
+        "monday": [
+          {
+            "open": "11:30",
+            "close": "21:00",
+            "overnight": false,
+            "sourceForm": "reviewed_visible_official_hours"
+          }
+        ],
         "tuesday": [
           {
             "open": "11:30",
-            "close": "20:30",
+            "close": "21:00",
             "overnight": false,
-            "sourceForm": "schema_openingHoursSpecification"
+            "sourceForm": "reviewed_visible_official_hours"
           }
         ],
         "wednesday": [
           {
             "open": "11:30",
-            "close": "20:30",
+            "close": "21:00",
             "overnight": false,
-            "sourceForm": "schema_openingHoursSpecification"
+            "sourceForm": "reviewed_visible_official_hours"
           }
         ],
         "thursday": [
           {
             "open": "11:30",
-            "close": "20:30",
+            "close": "21:00",
             "overnight": false,
-            "sourceForm": "schema_openingHoursSpecification"
+            "sourceForm": "reviewed_visible_official_hours"
           }
         ],
         "friday": [
           {
             "open": "11:30",
-            "close": "20:30",
+            "close": "22:00",
             "overnight": false,
-            "sourceForm": "schema_openingHoursSpecification"
+            "sourceForm": "reviewed_visible_official_hours"
           }
         ],
         "saturday": [
           {
             "open": "11:30",
-            "close": "20:30",
+            "close": "22:00",
             "overnight": false,
-            "sourceForm": "schema_openingHoursSpecification"
+            "sourceForm": "reviewed_visible_official_hours"
           }
         ],
         "sunday": [
           {
             "open": "11:30",
-            "close": "20:30",
+            "close": "21:00",
             "overnight": false,
-            "sourceForm": "schema_openingHoursSpecification"
+            "sourceForm": "reviewed_visible_official_hours"
           }
         ]
       },
@@ -11976,7 +11884,11 @@
         }
       ],
       "reservations": [],
-      "ordering": []
+      "ordering": [],
+      "hoursVerifiedAt": "2026-10-20T19:04:52.646Z",
+      "hoursSourceUrl": "https://www.lookhoho.com/",
+      "hoursUnknownDays": [],
+      "hoursReviewEvidence": "Owner table lists Saturday and Friday closing at 10pm, Sunday–Thursday at 9pm, with 11:30am opening daily."
     },
     {
       "restaurantId": "osm-way-83552117-bedford-beer-garden",
@@ -12233,6 +12145,1181 @@
       },
       "reason": "reviewed_field_rejection",
       "retainedAt": "2026-10-20"
+    },
+    {
+      "reason": "reviewed_hours_refresh_2026_10_20",
+      "retainedAt": "2026-10-20T19:09:25.048Z",
+      "record": {
+        "restaurantId": "battery-park",
+        "name": "Battery Park Beer Bar",
+        "sourceUrl": "https://batterypark.ca/",
+        "observedAt": "2026-09-04T13:24:13.940Z",
+        "lastVerifiedAt": "2026-09-04T13:24:13.940Z",
+        "sourceKind": "official_website_structured_facts",
+        "reviewState": "verified_source",
+        "hours": null,
+        "phone": "902 446 2337",
+        "email": "eat@batterypark.ca",
+        "address": "62 Ochterloney Street\nDartmouth, NS, B2Y 1C2\nCanada",
+        "features": [
+          {
+            "feature": "takeout",
+            "evidencePhrase": "take-out",
+            "sourceUrl": "https://batterypark.ca/",
+            "observedAt": "2026-09-04T13:24:13.940Z",
+            "lastVerifiedAt": "2026-09-04T13:24:13.940Z",
+            "confidence": "official_source_explicit_text"
+          }
+        ],
+        "menus": [],
+        "reservations": [],
+        "ordering": []
+      }
+    },
+    {
+      "reason": "reviewed_hours_refresh_2026_10_20",
+      "retainedAt": "2026-10-20T19:09:25.050Z",
+      "record": {
+        "restaurantId": "osm-node-10038454787-bird-s-nest-cafe",
+        "name": "Bird's Nest Cafe",
+        "sourceUrl": "https://www.birdsnesthalifax.com/",
+        "observedAt": "2026-09-04T13:24:13.943Z",
+        "lastVerifiedAt": "2026-09-04T13:24:13.943Z",
+        "sourceKind": "official_website_structured_facts",
+        "reviewState": "verified_source",
+        "hours": {
+          "monday": [],
+          "tuesday": [
+            {
+              "open": "07:30",
+              "close": "17:00",
+              "overnight": false,
+              "sourceForm": "schema_openingHoursSpecification"
+            }
+          ],
+          "wednesday": [
+            {
+              "open": "07:30",
+              "close": "17:00",
+              "overnight": false,
+              "sourceForm": "schema_openingHoursSpecification"
+            }
+          ],
+          "thursday": [
+            {
+              "open": "07:30",
+              "close": "17:00",
+              "overnight": false,
+              "sourceForm": "schema_openingHoursSpecification"
+            }
+          ],
+          "friday": [
+            {
+              "open": "07:30",
+              "close": "17:00",
+              "overnight": false,
+              "sourceForm": "schema_openingHoursSpecification"
+            }
+          ],
+          "saturday": [
+            {
+              "open": "09:00",
+              "close": "14:00",
+              "overnight": false,
+              "sourceForm": "schema_openingHoursSpecification"
+            }
+          ],
+          "sunday": []
+        },
+        "phone": "(902) 423-5282",
+        "email": null,
+        "address": "1547 Barrington Street, Halifax, NS, B3J 1Z4, CA",
+        "features": [
+          {
+            "feature": "breakfast",
+            "evidencePhrase": "breakfast",
+            "sourceUrl": "https://www.birdsnesthalifax.com/",
+            "observedAt": "2026-09-04T13:24:13.943Z",
+            "lastVerifiedAt": "2026-09-04T13:24:13.943Z",
+            "confidence": "official_source_explicit_text"
+          },
+          {
+            "feature": "catering",
+            "evidencePhrase": "Catering",
+            "sourceUrl": "https://www.birdsnesthalifax.com/",
+            "observedAt": "2026-09-04T13:24:13.943Z",
+            "lastVerifiedAt": "2026-09-04T13:24:13.943Z",
+            "confidence": "official_source_explicit_text"
+          },
+          {
+            "feature": "takeout",
+            "evidencePhrase": "Take Out",
+            "sourceUrl": "https://www.birdsnesthalifax.com/",
+            "observedAt": "2026-09-04T13:24:13.943Z",
+            "lastVerifiedAt": "2026-09-04T13:24:13.943Z",
+            "confidence": "official_source_explicit_text"
+          },
+          {
+            "feature": "delivery",
+            "evidencePhrase": "DELIVERY",
+            "sourceUrl": "https://www.birdsnesthalifax.com/",
+            "observedAt": "2026-09-04T13:24:13.943Z",
+            "lastVerifiedAt": "2026-09-04T13:24:13.943Z",
+            "confidence": "official_source_explicit_text"
+          }
+        ],
+        "menus": [],
+        "reservations": [],
+        "ordering": [
+          {
+            "provider": "square",
+            "url": "https://birds-nest-cafe.square.site/",
+            "locationSpecific": true,
+            "mode": "first_party_or_direct",
+            "observedAt": "2026-09-04T12:50:44.315Z",
+            "verifiedAt": "2026-09-04T12:50:44.315Z",
+            "status": "verified_link"
+          }
+        ]
+      }
+    },
+    {
+      "reason": "reviewed_hours_refresh_2026_10_20",
+      "retainedAt": "2026-10-20T19:09:25.050Z",
+      "record": {
+        "restaurantId": "osm-node-11001023964-lockside-canteen",
+        "name": "Lockside Canteen",
+        "sourceUrl": "https://lemon.dog/",
+        "observedAt": "2026-09-04T13:24:14.283Z",
+        "lastVerifiedAt": "2026-09-04T13:24:14.283Z",
+        "sourceKind": "official_website_structured_facts",
+        "reviewState": "verified_source",
+        "hours": {
+          "monday": [],
+          "tuesday": [],
+          "wednesday": [],
+          "thursday": [],
+          "friday": [
+            {
+              "open": "16:00",
+              "close": "19:00",
+              "overnight": false,
+              "sourceForm": "schema_openingHoursSpecification"
+            }
+          ],
+          "saturday": [
+            {
+              "open": "12:00",
+              "close": "00:00",
+              "overnight": false,
+              "sourceForm": "schema_openingHoursSpecification"
+            },
+            {
+              "open": "00:00",
+              "close": "18:00",
+              "overnight": false,
+              "sourceForm": "schema_openingHoursSpecification"
+            }
+          ],
+          "sunday": [
+            {
+              "open": "12:00",
+              "close": "00:00",
+              "overnight": false,
+              "sourceForm": "schema_openingHoursSpecification"
+            },
+            {
+              "open": "00:00",
+              "close": "18:00",
+              "overnight": false,
+              "sourceForm": "schema_openingHoursSpecification"
+            }
+          ]
+        },
+        "phone": null,
+        "email": null,
+        "address": "54 Locks Rd, Dartmouth, Nova Scotia, B2X 2W7, Canada",
+        "features": [],
+        "menus": [],
+        "reservations": [],
+        "ordering": []
+      }
+    },
+    {
+      "reason": "reviewed_hours_refresh_2026_10_20",
+      "retainedAt": "2026-10-20T19:09:25.051Z",
+      "record": {
+        "restaurantId": "osm-node-12003152369-station-1-lebanese-kitchen",
+        "name": "Station 1 Lebanese Kitchen",
+        "sourceUrl": "https://station1lebanesekitchen.com/",
+        "observedAt": "2026-09-04T13:24:17.155Z",
+        "lastVerifiedAt": "2026-09-04T13:24:17.155Z",
+        "sourceKind": "official_website_structured_facts",
+        "reviewState": "verified_source",
+        "hours": {
+          "monday": [],
+          "tuesday": [],
+          "wednesday": [],
+          "thursday": [],
+          "friday": [],
+          "saturday": [],
+          "sunday": [
+            {
+              "open": "12:00",
+              "close": "21:00",
+              "overnight": false,
+              "sourceForm": "schema_openingHours"
+            }
+          ]
+        },
+        "phone": "+1+19024605555",
+        "email": null,
+        "address": "640 Brookline Drrive Unit 106, Bedford, Nova Scotia, B4B 1S8",
+        "features": [
+          {
+            "feature": "catering",
+            "evidencePhrase": "Catering",
+            "sourceUrl": "https://station1lebanesekitchen.com/",
+            "observedAt": "2026-09-04T13:24:17.155Z",
+            "lastVerifiedAt": "2026-09-04T13:24:17.155Z",
+            "confidence": "official_source_explicit_text"
+          },
+          {
+            "feature": "takeout",
+            "evidencePhrase": "take out",
+            "sourceUrl": "https://station1lebanesekitchen.com/",
+            "observedAt": "2026-09-04T13:24:17.155Z",
+            "lastVerifiedAt": "2026-09-04T13:24:17.155Z",
+            "confidence": "official_source_explicit_text"
+          }
+        ],
+        "menus": [
+          {
+            "menuType": "general",
+            "title": "Menu",
+            "url": "https://station1lebanesekitchen.com/#plates",
+            "format": "html",
+            "locationSpecific": true,
+            "verifiedAt": "2026-09-04T12:51:07.493Z",
+            "source": "official_website_link",
+            "status": "verified_link"
+          }
+        ],
+        "reservations": [],
+        "ordering": []
+      }
+    },
+    {
+      "reason": "reviewed_hours_refresh_2026_10_20",
+      "retainedAt": "2026-10-20T19:09:25.052Z",
+      "record": {
+        "restaurantId": "osm-node-13122094789-latitude-44",
+        "name": "Latitude 44°",
+        "sourceUrl": "https://www.lat44hfx.com/",
+        "observedAt": "2026-09-04T13:24:18.135Z",
+        "lastVerifiedAt": "2026-09-04T13:24:18.135Z",
+        "sourceKind": "official_website_structured_facts",
+        "reviewState": "verified_source",
+        "hours": {
+          "monday": [
+            {
+              "open": "06:30",
+              "close": "23:00",
+              "overnight": false,
+              "sourceForm": "schema_openingHoursSpecification"
+            },
+            {
+              "open": "15:00",
+              "close": "18:00",
+              "overnight": false,
+              "sourceForm": "schema_openingHoursSpecification"
+            }
+          ],
+          "tuesday": [
+            {
+              "open": "06:30",
+              "close": "23:00",
+              "overnight": false,
+              "sourceForm": "schema_openingHoursSpecification"
+            },
+            {
+              "open": "15:00",
+              "close": "18:00",
+              "overnight": false,
+              "sourceForm": "schema_openingHoursSpecification"
+            }
+          ],
+          "wednesday": [
+            {
+              "open": "06:30",
+              "close": "23:00",
+              "overnight": false,
+              "sourceForm": "schema_openingHoursSpecification"
+            },
+            {
+              "open": "15:00",
+              "close": "18:00",
+              "overnight": false,
+              "sourceForm": "schema_openingHoursSpecification"
+            }
+          ],
+          "thursday": [
+            {
+              "open": "06:30",
+              "close": "23:00",
+              "overnight": false,
+              "sourceForm": "schema_openingHoursSpecification"
+            },
+            {
+              "open": "15:00",
+              "close": "18:00",
+              "overnight": false,
+              "sourceForm": "schema_openingHoursSpecification"
+            }
+          ],
+          "friday": [
+            {
+              "open": "06:30",
+              "close": "23:00",
+              "overnight": false,
+              "sourceForm": "schema_openingHoursSpecification"
+            },
+            {
+              "open": "15:00",
+              "close": "18:00",
+              "overnight": false,
+              "sourceForm": "schema_openingHoursSpecification"
+            }
+          ],
+          "saturday": [
+            {
+              "open": "06:30",
+              "close": "23:00",
+              "overnight": false,
+              "sourceForm": "schema_openingHoursSpecification"
+            },
+            {
+              "open": "15:00",
+              "close": "18:00",
+              "overnight": false,
+              "sourceForm": "schema_openingHoursSpecification"
+            }
+          ],
+          "sunday": [
+            {
+              "open": "06:30",
+              "close": "23:00",
+              "overnight": false,
+              "sourceForm": "schema_openingHoursSpecification"
+            },
+            {
+              "open": "15:00",
+              "close": "18:00",
+              "overnight": false,
+              "sourceForm": "schema_openingHoursSpecification"
+            }
+          ]
+        },
+        "phone": "+1-902-444-0816",
+        "email": "latitude44@fourpointshalifax.com",
+        "address": "1496 Hollis St., Halifax, Nova Scotia, B3J 3Z1, Canada",
+        "features": [
+          {
+            "feature": "private_dining",
+            "evidencePhrase": "private dining",
+            "sourceUrl": "https://www.lat44hfx.com/",
+            "observedAt": "2026-09-04T13:24:18.135Z",
+            "lastVerifiedAt": "2026-09-04T13:24:18.135Z",
+            "confidence": "official_source_explicit_text"
+          }
+        ],
+        "menus": [
+          {
+            "menuType": "general",
+            "title": "OUR MENU",
+            "url": "https://www.lat44hfx.com/our-menus",
+            "format": "html",
+            "locationSpecific": true,
+            "verifiedAt": "2026-09-04T12:50:56.452Z",
+            "source": "official_website_link",
+            "status": "verified_link"
+          }
+        ],
+        "reservations": [
+          {
+            "provider": "opentable",
+            "url": "http://www.opentable.com/restaurant/profile/1320568/reserve?restref=1320568",
+            "locationSpecific": true,
+            "observedAt": "2026-09-04T12:50:56.452Z",
+            "verifiedAt": "2026-09-04T12:50:56.452Z",
+            "status": "verified_link"
+          },
+          {
+            "provider": "opentable",
+            "url": "https://www.opentable.ca/r/latitude-44-restaurant-and-taproom-halifax?ref=16423",
+            "locationSpecific": true,
+            "observedAt": "2026-09-04T12:50:56.452Z",
+            "verifiedAt": "2026-09-04T12:50:56.452Z",
+            "status": "verified_link"
+          }
+        ],
+        "ordering": []
+      }
+    },
+    {
+      "reason": "reviewed_hours_refresh_2026_10_20",
+      "retainedAt": "2026-10-20T19:09:25.052Z",
+      "record": {
+        "restaurantId": "osm-node-13912668535-jean-s-chinese-restaurant",
+        "name": "Jean's Chinese Restaurant",
+        "sourceUrl": "https://www.jeansrestaurant.ca/",
+        "observedAt": "2026-09-04T13:24:18.630Z",
+        "lastVerifiedAt": "2026-09-04T13:24:18.630Z",
+        "sourceKind": "official_website_structured_facts",
+        "reviewState": "verified_source",
+        "hours": {
+          "monday": [],
+          "tuesday": [
+            {
+              "open": "11:00",
+              "close": "20:00",
+              "overnight": false,
+              "sourceForm": "schema_openingHoursSpecification"
+            }
+          ],
+          "wednesday": [
+            {
+              "open": "11:00",
+              "close": "20:00",
+              "overnight": false,
+              "sourceForm": "schema_openingHoursSpecification"
+            }
+          ],
+          "thursday": [
+            {
+              "open": "11:00",
+              "close": "20:00",
+              "overnight": false,
+              "sourceForm": "schema_openingHoursSpecification"
+            }
+          ],
+          "friday": [
+            {
+              "open": "11:00",
+              "close": "21:00",
+              "overnight": false,
+              "sourceForm": "schema_openingHoursSpecification"
+            }
+          ],
+          "saturday": [
+            {
+              "open": "11:00",
+              "close": "21:00",
+              "overnight": false,
+              "sourceForm": "schema_openingHoursSpecification"
+            }
+          ],
+          "sunday": [
+            {
+              "open": "11:00",
+              "close": "20:00",
+              "overnight": false,
+              "sourceForm": "schema_openingHoursSpecification"
+            }
+          ]
+        },
+        "phone": "(902) 444-7776",
+        "email": null,
+        "address": "516 Pleasant Street, Dartmouth, NS, B2W 1A4, CA",
+        "features": [
+          {
+            "feature": "delivery",
+            "evidencePhrase": "Delivery",
+            "sourceUrl": "https://www.jeansrestaurant.ca/",
+            "observedAt": "2026-09-04T13:24:18.630Z",
+            "lastVerifiedAt": "2026-09-04T13:24:18.630Z",
+            "confidence": "official_source_explicit_text"
+          }
+        ],
+        "menus": [
+          {
+            "menuType": "general",
+            "title": "Menu Download",
+            "url": "https://www.jeansrestaurant.ca/_files/ugd/762b6e_eef30358765c4c19aa23d8d85d48e49c.pdf",
+            "format": "pdf",
+            "locationSpecific": true,
+            "verifiedAt": "2026-09-04T12:50:54.986Z",
+            "source": "official_website_link",
+            "status": "verified_link"
+          }
+        ],
+        "reservations": [],
+        "ordering": [
+          {
+            "provider": "restaurant_owned",
+            "url": "https://www.jeansrestaurant.ca/contact",
+            "locationSpecific": true,
+            "mode": "first_party_or_direct",
+            "observedAt": "2026-09-04T12:50:54.986Z",
+            "verifiedAt": "2026-09-04T12:50:54.986Z",
+            "status": "verified_link"
+          },
+          {
+            "provider": "restaurant_owned",
+            "url": "https://www.foodbooking.com/ordering/restaurant/menu?restaurant_uid=de8fb584-7d18-406d-9040-426509400230",
+            "locationSpecific": true,
+            "mode": "first_party_or_direct",
+            "observedAt": "2026-09-04T12:50:54.986Z",
+            "verifiedAt": "2026-09-04T12:50:54.986Z",
+            "status": "verified_link"
+          }
+        ]
+      }
+    },
+    {
+      "reason": "reviewed_hours_refresh_2026_10_20",
+      "retainedAt": "2026-10-20T19:09:25.053Z",
+      "record": {
+        "restaurantId": "osm-node-3104067229-ardmore-tea-room",
+        "name": "Ardmore Tea Room",
+        "sourceUrl": "https://www.ardmoretearoom.ca/",
+        "observedAt": "2026-09-04T13:24:20.747Z",
+        "lastVerifiedAt": "2026-09-04T13:24:20.747Z",
+        "sourceKind": "official_website_structured_facts",
+        "reviewState": "verified_source",
+        "hours": {
+          "monday": [
+            {
+              "open": "08:00",
+              "close": "14:00",
+              "overnight": false,
+              "sourceForm": "schema_openingHours"
+            },
+            {
+              "open": "08:00",
+              "close": "13:45",
+              "overnight": false,
+              "sourceForm": "schema_openingHours"
+            }
+          ],
+          "tuesday": [
+            {
+              "open": "08:00",
+              "close": "14:00",
+              "overnight": false,
+              "sourceForm": "schema_openingHours"
+            },
+            {
+              "open": "08:00",
+              "close": "13:45",
+              "overnight": false,
+              "sourceForm": "schema_openingHours"
+            }
+          ],
+          "wednesday": [
+            {
+              "open": "08:00",
+              "close": "14:00",
+              "overnight": false,
+              "sourceForm": "schema_openingHours"
+            },
+            {
+              "open": "08:00",
+              "close": "13:45",
+              "overnight": false,
+              "sourceForm": "schema_openingHours"
+            }
+          ],
+          "thursday": [
+            {
+              "open": "08:00",
+              "close": "14:00",
+              "overnight": false,
+              "sourceForm": "schema_openingHours"
+            },
+            {
+              "open": "08:00",
+              "close": "13:45",
+              "overnight": false,
+              "sourceForm": "schema_openingHours"
+            }
+          ],
+          "friday": [
+            {
+              "open": "08:00",
+              "close": "14:00",
+              "overnight": false,
+              "sourceForm": "schema_openingHours"
+            },
+            {
+              "open": "08:00",
+              "close": "13:45",
+              "overnight": false,
+              "sourceForm": "schema_openingHours"
+            }
+          ],
+          "saturday": [
+            {
+              "open": "08:00",
+              "close": "14:00",
+              "overnight": false,
+              "sourceForm": "schema_openingHours"
+            },
+            {
+              "open": "08:00",
+              "close": "13:45",
+              "overnight": false,
+              "sourceForm": "schema_openingHours"
+            }
+          ],
+          "sunday": [
+            {
+              "open": "08:00",
+              "close": "14:00",
+              "overnight": false,
+              "sourceForm": "schema_openingHours"
+            },
+            {
+              "open": "08:00",
+              "close": "13:45",
+              "overnight": false,
+              "sourceForm": "schema_openingHours"
+            }
+          ]
+        },
+        "phone": "+1 902 423 7523",
+        "email": null,
+        "address": "6499 Quinpool Road, Halifax, NS, B3L 1B2, Canada",
+        "features": [
+          {
+            "feature": "breakfast",
+            "evidencePhrase": "Breakfast",
+            "sourceUrl": "https://www.ardmoretearoom.ca/",
+            "observedAt": "2026-09-04T13:24:20.747Z",
+            "lastVerifiedAt": "2026-09-04T13:24:20.747Z",
+            "confidence": "official_source_explicit_text"
+          },
+          {
+            "feature": "takeout",
+            "evidencePhrase": "Takeout",
+            "sourceUrl": "https://www.ardmoretearoom.ca/",
+            "observedAt": "2026-09-04T13:24:20.747Z",
+            "lastVerifiedAt": "2026-09-04T13:24:20.747Z",
+            "confidence": "official_source_explicit_text"
+          }
+        ],
+        "menus": [
+          {
+            "menuType": "general",
+            "title": "Menu",
+            "url": "https://www.ardmoretearoom.ca/menu",
+            "format": "html",
+            "locationSpecific": true,
+            "verifiedAt": "2026-09-04T12:50:43.940Z",
+            "source": "official_website_link",
+            "status": "verified_link"
+          }
+        ],
+        "reservations": [],
+        "ordering": [
+          {
+            "provider": "restaurant_owned",
+            "url": "https://www.ardmoretearoom.ca/breakfast-takeout-halifax",
+            "locationSpecific": true,
+            "mode": "first_party_or_direct",
+            "observedAt": "2026-09-04T12:50:43.940Z",
+            "verifiedAt": "2026-09-04T12:50:43.940Z",
+            "status": "verified_link"
+          }
+        ]
+      }
+    },
+    {
+      "reason": "reviewed_hours_refresh_2026_10_20",
+      "retainedAt": "2026-10-20T19:09:25.053Z",
+      "record": {
+        "restaurantId": "osm-node-3801119557-the-middle-spoon-desserterie-and-bar",
+        "name": "The Middle Spoon Desserterie & Bar",
+        "sourceUrl": "https://themiddlespoon.com/",
+        "observedAt": "2026-09-04T13:24:23.017Z",
+        "lastVerifiedAt": "2026-09-04T13:24:23.017Z",
+        "sourceKind": "official_website_structured_facts",
+        "reviewState": "verified_source",
+        "hours": {
+          "monday": [
+            {
+              "open": "16:00",
+              "close": "23:00",
+              "overnight": false,
+              "sourceForm": "schema_openingHoursSpecification"
+            }
+          ],
+          "tuesday": [
+            {
+              "open": "16:00",
+              "close": "23:00",
+              "overnight": false,
+              "sourceForm": "schema_openingHoursSpecification"
+            }
+          ],
+          "wednesday": [
+            {
+              "open": "16:00",
+              "close": "23:00",
+              "overnight": false,
+              "sourceForm": "schema_openingHoursSpecification"
+            }
+          ],
+          "thursday": [
+            {
+              "open": "16:00",
+              "close": "00:00",
+              "overnight": false,
+              "sourceForm": "schema_openingHoursSpecification"
+            }
+          ],
+          "friday": [
+            {
+              "open": "16:00",
+              "close": "02:00",
+              "overnight": true,
+              "sourceForm": "schema_openingHoursSpecification"
+            }
+          ],
+          "saturday": [
+            {
+              "open": "16:00",
+              "close": "02:00",
+              "overnight": true,
+              "sourceForm": "schema_openingHoursSpecification"
+            }
+          ],
+          "sunday": []
+        },
+        "phone": "+1-902-407-4002",
+        "email": null,
+        "address": "1563 Barrington Street, Halifax, NS, B3J 1Z7, CA",
+        "features": [
+          {
+            "feature": "trivia",
+            "evidencePhrase": "Trivia",
+            "sourceUrl": "https://themiddlespoon.com/",
+            "observedAt": "2026-09-04T13:24:23.017Z",
+            "lastVerifiedAt": "2026-09-04T13:24:23.017Z",
+            "confidence": "official_source_explicit_text"
+          },
+          {
+            "feature": "late_night",
+            "evidencePhrase": "late-night",
+            "sourceUrl": "https://themiddlespoon.com/",
+            "observedAt": "2026-09-04T13:24:23.017Z",
+            "lastVerifiedAt": "2026-09-04T13:24:23.017Z",
+            "confidence": "official_source_explicit_text"
+          },
+          {
+            "feature": "catering",
+            "evidencePhrase": "Catering",
+            "sourceUrl": "https://themiddlespoon.com/",
+            "observedAt": "2026-09-04T13:24:23.017Z",
+            "lastVerifiedAt": "2026-09-04T13:24:23.017Z",
+            "confidence": "official_source_explicit_text"
+          },
+          {
+            "feature": "takeout",
+            "evidencePhrase": "Takeout",
+            "sourceUrl": "https://themiddlespoon.com/",
+            "observedAt": "2026-09-04T13:24:23.017Z",
+            "lastVerifiedAt": "2026-09-04T13:24:23.017Z",
+            "confidence": "official_source_explicit_text"
+          },
+          {
+            "feature": "delivery",
+            "evidencePhrase": "delivery",
+            "sourceUrl": "https://themiddlespoon.com/",
+            "observedAt": "2026-09-04T13:24:23.017Z",
+            "lastVerifiedAt": "2026-09-04T13:24:23.017Z",
+            "confidence": "official_source_explicit_text"
+          }
+        ],
+        "menus": [
+          {
+            "menuType": "general",
+            "title": "Menu",
+            "url": "https://themiddlespoon.com/menu",
+            "format": "html",
+            "locationSpecific": true,
+            "verifiedAt": "2026-09-04T12:51:14.146Z",
+            "source": "official_website_link",
+            "status": "verified_link"
+          }
+        ],
+        "reservations": [
+          {
+            "provider": "restaurant_owned",
+            "url": "https://themiddlespoon.com/reservations",
+            "locationSpecific": true,
+            "observedAt": "2026-09-04T12:51:14.146Z",
+            "verifiedAt": "2026-09-04T12:51:14.146Z",
+            "status": "verified_link"
+          }
+        ],
+        "ordering": [
+          {
+            "provider": "restaurant_owned",
+            "url": "https://the-middle-spoon.orderwebsite.com/",
+            "locationSpecific": true,
+            "mode": "first_party_or_direct",
+            "observedAt": "2026-09-04T12:51:14.146Z",
+            "verifiedAt": "2026-09-04T12:51:14.146Z",
+            "status": "verified_link"
+          }
+        ]
+      }
+    },
+    {
+      "reason": "reviewed_hours_refresh_2026_10_20",
+      "retainedAt": "2026-10-20T19:09:25.054Z",
+      "record": {
+        "restaurantId": "osm-node-5150087023-peter-s-pizzeria",
+        "name": "Peter's Pizzeria",
+        "sourceUrl": "https://www.peterspizzeriahfx.com/",
+        "observedAt": "2026-09-04T13:24:26.997Z",
+        "lastVerifiedAt": "2026-09-04T13:24:26.997Z",
+        "sourceKind": "official_website_structured_facts",
+        "reviewState": "verified_source",
+        "hours": {
+          "monday": [],
+          "tuesday": [],
+          "wednesday": [],
+          "thursday": [],
+          "friday": [],
+          "saturday": [],
+          "sunday": [
+            {
+              "open": "14:00",
+              "close": "23:00",
+              "overnight": false,
+              "sourceForm": "schema_openingHoursSpecification"
+            }
+          ]
+        },
+        "phone": "+ 9024256498",
+        "email": null,
+        "address": "5391 Inglis Street, Halifax, NS, B3H 1J6, CA",
+        "features": [
+          {
+            "feature": "catering",
+            "evidencePhrase": "Catering",
+            "sourceUrl": "https://www.peterspizzeriahfx.com/",
+            "observedAt": "2026-09-04T13:24:26.997Z",
+            "lastVerifiedAt": "2026-09-04T13:24:26.997Z",
+            "confidence": "official_source_explicit_text"
+          },
+          {
+            "feature": "takeout",
+            "evidencePhrase": "TAKE OUT",
+            "sourceUrl": "https://www.peterspizzeriahfx.com/",
+            "observedAt": "2026-09-04T13:24:26.997Z",
+            "lastVerifiedAt": "2026-09-04T13:24:26.997Z",
+            "confidence": "official_source_explicit_text"
+          }
+        ],
+        "menus": [
+          {
+            "menuType": "general",
+            "title": "Menu",
+            "url": "https://www.peterspizzeriahfx.com/menu-1",
+            "format": "html",
+            "locationSpecific": true,
+            "verifiedAt": "2026-09-04T12:51:02.533Z",
+            "source": "official_website_link",
+            "status": "verified_link"
+          },
+          {
+            "menuType": "general",
+            "title": "See Our Menu",
+            "url": "https://www.peterspizzeriahfx.com/order-online",
+            "format": "html",
+            "locationSpecific": true,
+            "verifiedAt": "2026-09-04T12:51:02.533Z",
+            "source": "official_website_link",
+            "status": "verified_link"
+          }
+        ],
+        "reservations": [],
+        "ordering": [
+          {
+            "provider": "restaurant_owned",
+            "url": "https://www.peterspizzeriahfx.com/online-ordering",
+            "locationSpecific": true,
+            "mode": "first_party_or_direct",
+            "observedAt": "2026-09-04T12:51:02.533Z",
+            "verifiedAt": "2026-09-04T12:51:02.533Z",
+            "status": "verified_link"
+          }
+        ]
+      }
+    },
+    {
+      "reason": "reviewed_hours_refresh_2026_10_20",
+      "retainedAt": "2026-10-20T19:09:25.054Z",
+      "record": {
+        "restaurantId": "osm-node-7139174640-kajohn-thai",
+        "name": "Kajohn Thai",
+        "sourceUrl": "https://www.kajohnthairestaurant.ca/",
+        "observedAt": "2026-09-04T13:24:29.198Z",
+        "lastVerifiedAt": "2026-09-04T13:24:29.198Z",
+        "sourceKind": "official_website_structured_facts",
+        "reviewState": "verified_source",
+        "hours": {
+          "monday": [],
+          "tuesday": [
+            {
+              "open": "11:00",
+              "close": "21:00",
+              "overnight": false,
+              "sourceForm": "schema_openingHoursSpecification"
+            }
+          ],
+          "wednesday": [
+            {
+              "open": "11:00",
+              "close": "21:00",
+              "overnight": false,
+              "sourceForm": "schema_openingHoursSpecification"
+            }
+          ],
+          "thursday": [
+            {
+              "open": "11:00",
+              "close": "21:00",
+              "overnight": false,
+              "sourceForm": "schema_openingHoursSpecification"
+            }
+          ],
+          "friday": [
+            {
+              "open": "11:00",
+              "close": "21:30",
+              "overnight": false,
+              "sourceForm": "schema_openingHoursSpecification"
+            }
+          ],
+          "saturday": [
+            {
+              "open": "11:00",
+              "close": "21:30",
+              "overnight": false,
+              "sourceForm": "schema_openingHoursSpecification"
+            }
+          ],
+          "sunday": []
+        },
+        "phone": "+1 (902) 443-8424",
+        "email": null,
+        "address": "6140 Young Street, Halifax, NS, B3K 0G2, CA",
+        "features": [
+          {
+            "feature": "takeout",
+            "evidencePhrase": "take-out",
+            "sourceUrl": "https://www.kajohnthairestaurant.ca/",
+            "observedAt": "2026-09-04T13:24:29.198Z",
+            "lastVerifiedAt": "2026-09-04T13:24:29.198Z",
+            "confidence": "official_source_explicit_text"
+          },
+          {
+            "feature": "delivery",
+            "evidencePhrase": "delivery",
+            "sourceUrl": "https://www.kajohnthairestaurant.ca/",
+            "observedAt": "2026-09-04T13:24:29.198Z",
+            "lastVerifiedAt": "2026-09-04T13:24:29.198Z",
+            "confidence": "official_source_explicit_text"
+          }
+        ],
+        "menus": [
+          {
+            "menuType": "general",
+            "title": "MENU",
+            "url": "https://www.kajohnthairestaurant.ca/menu",
+            "format": "html",
+            "locationSpecific": true,
+            "verifiedAt": "2026-09-04T12:50:55.653Z",
+            "source": "official_website_link",
+            "status": "verified_link"
+          }
+        ],
+        "reservations": [],
+        "ordering": []
+      }
+    },
+    {
+      "reason": "reviewed_hours_refresh_2026_10_20",
+      "retainedAt": "2026-10-20T19:09:25.054Z",
+      "record": {
+        "restaurantId": "osm-node-9099103643-the-bread-lounge",
+        "name": "The Bread Lounge",
+        "sourceUrl": "https://thebreadloungebakery.square.site/",
+        "observedAt": "2026-09-04T13:24:32.229Z",
+        "lastVerifiedAt": "2026-09-04T13:24:32.229Z",
+        "sourceKind": "official_website_structured_facts",
+        "reviewState": "verified_source",
+        "hours": {
+          "monday": [
+            {
+              "open": "07:00",
+              "close": "19:00",
+              "overnight": false,
+              "sourceForm": "schema_openingHoursSpecification"
+            }
+          ],
+          "tuesday": [
+            {
+              "open": "07:00",
+              "close": "19:00",
+              "overnight": false,
+              "sourceForm": "schema_openingHoursSpecification"
+            }
+          ],
+          "wednesday": [
+            {
+              "open": "07:00",
+              "close": "19:00",
+              "overnight": false,
+              "sourceForm": "schema_openingHoursSpecification"
+            }
+          ],
+          "thursday": [
+            {
+              "open": "07:00",
+              "close": "19:00",
+              "overnight": false,
+              "sourceForm": "schema_openingHoursSpecification"
+            }
+          ],
+          "friday": [
+            {
+              "open": "07:00",
+              "close": "19:00",
+              "overnight": false,
+              "sourceForm": "schema_openingHoursSpecification"
+            }
+          ],
+          "saturday": [
+            {
+              "open": "07:00",
+              "close": "19:00",
+              "overnight": false,
+              "sourceForm": "schema_openingHoursSpecification"
+            }
+          ],
+          "sunday": [
+            {
+              "open": "09:00",
+              "close": "17:00",
+              "overnight": false,
+              "sourceForm": "schema_openingHoursSpecification"
+            }
+          ]
+        },
+        "phone": "+19022103441",
+        "email": null,
+        "address": "5880 Demone Street, Halifax, NS, B3K 1X9, CA",
+        "features": [],
+        "menus": [],
+        "reservations": [],
+        "ordering": []
+      }
+    },
+    {
+      "reason": "reviewed_hours_refresh_2026_10_20",
+      "retainedAt": "2026-10-20T19:09:25.055Z",
+      "record": {
+        "restaurantId": "osm-way-512985217-look-ho-ho",
+        "name": "Look Ho Ho",
+        "sourceUrl": "https://www.lookhoho.com/",
+        "observedAt": "2026-09-04T13:24:33.726Z",
+        "lastVerifiedAt": "2026-09-04T13:24:33.726Z",
+        "sourceKind": "official_website_structured_facts",
+        "reviewState": "verified_source",
+        "hours": {
+          "monday": [],
+          "tuesday": [
+            {
+              "open": "11:30",
+              "close": "20:30",
+              "overnight": false,
+              "sourceForm": "schema_openingHoursSpecification"
+            }
+          ],
+          "wednesday": [
+            {
+              "open": "11:30",
+              "close": "20:30",
+              "overnight": false,
+              "sourceForm": "schema_openingHoursSpecification"
+            }
+          ],
+          "thursday": [
+            {
+              "open": "11:30",
+              "close": "20:30",
+              "overnight": false,
+              "sourceForm": "schema_openingHoursSpecification"
+            }
+          ],
+          "friday": [
+            {
+              "open": "11:30",
+              "close": "20:30",
+              "overnight": false,
+              "sourceForm": "schema_openingHoursSpecification"
+            }
+          ],
+          "saturday": [
+            {
+              "open": "11:30",
+              "close": "20:30",
+              "overnight": false,
+              "sourceForm": "schema_openingHoursSpecification"
+            }
+          ],
+          "sunday": [
+            {
+              "open": "11:30",
+              "close": "20:30",
+              "overnight": false,
+              "sourceForm": "schema_openingHoursSpecification"
+            }
+          ]
+        },
+        "phone": "9024555479",
+        "email": null,
+        "address": "6420 Bayers Road, Halifax, NS, B3L 2B1, CA",
+        "features": [
+          {
+            "feature": "takeout",
+            "evidencePhrase": "take-out",
+            "sourceUrl": "https://www.lookhoho.com/",
+            "observedAt": "2026-09-04T13:24:33.726Z",
+            "lastVerifiedAt": "2026-09-04T13:24:33.726Z",
+            "confidence": "official_source_explicit_text"
+          }
+        ],
+        "menus": [
+          {
+            "menuType": "general",
+            "title": "Full Menu",
+            "url": "https://www.lookhoho.com/fullmenu",
+            "format": "html",
+            "locationSpecific": true,
+            "verifiedAt": "2026-09-04T12:50:57.451Z",
+            "source": "official_website_link",
+            "status": "verified_link"
+          }
+        ],
+        "reservations": [],
+        "ordering": []
+      }
     }
   ],
   "reviewedFieldRejectionsAt": "2026-10-20"

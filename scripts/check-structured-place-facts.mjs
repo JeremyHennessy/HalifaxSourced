@@ -69,6 +69,9 @@ const localPolicyExcludedIds = new Set(
 );
 
 const allRecords = Array.isArray(facts.records) ? facts.records : [];
+for (const [key, value] of Object.entries({ records: allRecords.length, ...Object.fromEntries(["hours", "phone", "email", "address", "features", "menus", "reservations", "ordering"].map(field => [field, allRecords.filter(row => Array.isArray(row[field]) ? row[field].length > 0 : Boolean(row[field])).length])) })) {
+  if (facts.counts?.[key] !== undefined && facts.counts[key] !== value) errors.push(`stored_fact_count_mismatch:${key}`);
+}
 // Older accepted payloads predate collection receipts. New refreshes must keep
 // record totals, attempt states and carried provenance independently auditable.
 if (facts.refreshObservations) {
@@ -98,6 +101,7 @@ for (const record of publicRecords) {
 
   if (record.hours) {
     for (const day of DAYS) {
+      if (record.hours[day] === null && record.hoursUnknownDays?.includes(day)) continue;
       if (!Array.isArray(record.hours[day])) errors.push(`invalid_hours_day:${record.restaurantId}:${day}`);
       for (const interval of record.hours[day] || []) {
         if (!validTime(interval.open) || !validTime(interval.close) || typeof interval.overnight !== "boolean") errors.push(`invalid_hours_interval:${record.restaurantId}:${day}`);

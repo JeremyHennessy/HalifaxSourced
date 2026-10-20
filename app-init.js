@@ -31,12 +31,12 @@ function bindExploreActions() {
     state.sort = document.querySelector("#sortFilter")?.value || state.sort;
     state.page = 1;
     closeFilters();
-    renderExplore();
+    navigateDiscovery();
   };
   document.querySelector("[data-filter-apply]")?.addEventListener("click", apply);
-  document.querySelector("#sortFilter")?.addEventListener("change", (event) => { state.sort = event.target.value; state.page = 1; renderExplore(); });
-  document.querySelectorAll("[data-page]").forEach((button) => button.addEventListener("click", () => { state.page = Number(button.dataset.page) || 1; renderExplore(); }));
-  document.querySelectorAll("[data-clear-filters]").forEach((button) => button.addEventListener("click", () => { state.cuisine = "all"; state.neighbourhood = "all"; state.feature = "all"; state.query = ""; state.page = 1; globalSearch.value = ""; closeFilters(); renderExplore(); }));
+  document.querySelector("#sortFilter")?.addEventListener("change", (event) => { state.sort = event.target.value; state.page = 1; navigateDiscovery(); });
+  document.querySelectorAll("[data-page]").forEach((button) => button.addEventListener("click", () => { state.page = Number(button.dataset.page) || 1; navigateDiscovery(); }));
+  document.querySelectorAll("[data-clear-filters]").forEach((button) => button.addEventListener("click", () => { state.cuisine = "all"; state.neighbourhood = "all"; state.feature = "all"; state.query = ""; state.page = 1; globalSearch.value = ""; closeFilters(); navigateDiscovery({}, "explore", true); }));
 }
 
 function bindCommonActions() {
@@ -58,8 +58,8 @@ function bindCommonActions() {
       toast(state.saved.has(id) ? "Saved for later" : "Removed from saved");
     });
   });
-  document.querySelectorAll("[data-cuisine]").forEach((button) => button.addEventListener("click", () => { state.cuisine = button.dataset.cuisine; state.page = 1; navigate("#explore"); }));
-  document.querySelectorAll("[data-neighbourhood]").forEach((button) => button.addEventListener("click", () => { state.neighbourhood = button.dataset.neighbourhood; state.page = 1; navigate("#explore"); }));
+  document.querySelectorAll("[data-cuisine]").forEach((button) => button.addEventListener("click", () => { navigateDiscovery({ cuisine: button.dataset.cuisine }, "explore", true); }));
+  document.querySelectorAll("[data-neighbourhood]").forEach((button) => button.addEventListener("click", () => { navigateDiscovery({ neighbourhood: button.dataset.neighbourhood }, "explore", true); }));
   document.querySelectorAll("[data-map-result-id]").forEach((row) => row.addEventListener("click", (event) => {
     if (event.target.closest("a,button")) return;
     focusMapResult(row.dataset.mapResultId);
@@ -184,16 +184,12 @@ function toast(message) {
 
 searchForm?.addEventListener("submit", (event) => {
   event.preventDefault();
-  state.query = globalSearch.value.trim();
-  state.page = 1;
-  navigate(`#explore${state.query ? `?q=${encodeURIComponent(state.query)}` : ""}`);
+  navigateDiscovery({ query: globalSearch.value.trim() }, "explore", true);
 });
 
 globalSearch?.addEventListener("search", () => {
   if (!globalSearch.value && route().name === "explore") {
-    state.query = "";
-    state.page = 1;
-    renderExplore();
+    navigateDiscovery({ query: "", page: 1 });
   }
 });
 
@@ -223,7 +219,7 @@ document.querySelector("[data-mobile-more-close]")?.addEventListener("click", cl
 mobileMoreSheet?.addEventListener("click", (event) => { if (event.target.closest("a")) closeMobileMore(); });
 mobileMoreSheet?.addEventListener("keydown", (event) => { if (event.key === "Escape") { closeMobileMore(); mobileMoreButton?.focus(); } });
 
-document.querySelectorAll("[data-neighbourhood-link]").forEach((button) => button.addEventListener("click", () => { state.neighbourhood = button.dataset.neighbourhoodLink; navigate("#explore"); }));
+document.querySelectorAll("[data-neighbourhood-link]").forEach((button) => button.addEventListener("click", () => { navigateDiscovery({ neighbourhood: button.dataset.neighbourhoodLink }, "explore", true); }));
 
 window.addEventListener("hashchange", renderRoute);
 renderRoute();

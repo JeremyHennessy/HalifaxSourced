@@ -233,3 +233,7 @@ Manual promotion uses the same guardrails. Start `Promote Preview Artifacts` wit
 ## Deployment and quality gate
 
 GitHub Pages deployment is gated behind the `Quality Gate` workflow. Pull requests and `main` run JavaScript syntax checks, data-integrity gates, city-event scope validation, restaurant-discovery checks, thumbnail candidate checks, thumbnail coverage reporting, SQLite artifact generation, content-coverage generation, the Explore mini-map lifecycle regression, and Playwright UI verification. The gated Pages workflow deploys the exact `main` commit SHA that passed verification.
+
+### SQLite export scope
+
+`data/build/halifax_sourced.sqlite` is a partial research export, not a complete mirror of the app. Its `export_contract` table and `data/build/sqlite-export-contract.json` version the scope. Restaurant IDs and source coverage scores preserve catalog parity, including inactive records. The `events` and `specials` tables contain curated restaurant arrays only, not the structured city-event or offer datasets. Structured place facts and operating lifecycle are not included. Use the canonical JSON and source payloads for operating status, current hours, current offers, and complete event coverage. Unknown fields remain unknown; rebuild time is not source verification time.

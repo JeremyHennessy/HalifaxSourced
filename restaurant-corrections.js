@@ -54,7 +54,8 @@
     return records.map(record => {
       const rules = (payload.factFieldRejections || []).filter(rule =>
         rule.restaurantId === record.restaurantId && rule.reviewState === 'rejected');
-      if (!rules.length) return record;
+      const overrides = (payload.factFieldOverrides || []).filter(rule => rule.restaurantId === record.restaurantId && rule.reviewState === "verified");
+      if (!rules.length && !overrides.length) return record;
       const result = { ...record };
       const rejected = new Map((record.rejectedFactFields || []).map(item => [item.field, item]));
       for (const rule of rules) for (const field of rule.fields || []) {
@@ -62,7 +63,12 @@
         result[field] = null;
         rejected.set(field, { field, reviewId: rule.id, reason: rule.reason, reviewedAt: rule.reviewedAt });
       }
+      for (const override of overrides) {
+        Object.assign(result, override.fields);
+        for (const field of Object.keys(override.fields || {})) rejected.delete(field);
+      }
       if (rejected.size) result.rejectedFactFields = [...rejected.values()];
+      else delete result.rejectedFactFields;
       return result;
     });
   }
