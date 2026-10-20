@@ -147,7 +147,7 @@ await page.screenshot({ path: resolve("artifacts", "ui-check-desktop.png"), full
 // Inspect the actual decorative image/crop, not just its left background edge.
 // Include both sides of the former 1500px discontinuity and the reported viewport.
 const heroFrames = [];
-for (const width of [901, 1180, 1440, 1499, 1500, 1743]) {
+for (const width of [641, 768, 900, 901, 1180, 1440, 1499, 1500, 1743]) {
   await page.setViewportSize({ width, height: 833 });
   const frame = await page.locator(".home-hero").evaluate(async hero => {
     const artwork = hero.querySelector(".hero-artwork");
@@ -176,8 +176,6 @@ for (const width of [901, 1180, 1440, 1499, 1500, 1743]) {
 }
 const before=heroFrames.find(frame=>frame.viewport===1499),after=heroFrames.find(frame=>frame.viewport===1500);
 if (Math.abs(after.box.x-before.box.x)>2 || Math.abs(after.box.width-before.box.width)>2 || Math.abs(after.sourceTop-before.sourceTop)>1) throw new Error("Hero composition jumped at 1500px");
-await page.setViewportSize({width:900,height:844});
-await page.screenshot({path:resolve("artifacts","ui-hero-900.png"),fullPage:false});
 await page.setViewportSize({width:390,height:844});
 const mobileHero=await page.locator(".home-hero").evaluate(hero=>({artwork:getComputedStyle(hero.querySelector(".hero-artwork")).display,background:getComputedStyle(hero).backgroundImage,overflow:document.documentElement.scrollWidth>innerWidth}));
 if (mobileHero.artwork!=="none" || !mobileHero.background.includes("hero-mobile.webp") || mobileHero.overflow) throw new Error(`Mobile hero isolation failed: ${JSON.stringify(mobileHero)}`);
