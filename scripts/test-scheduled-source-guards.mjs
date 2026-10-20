@@ -23,6 +23,33 @@ try {
     assert(fetched.every(url=>url.startsWith('https://fixture.example/')),script+' fetched a quarantined source/destination: '+JSON.stringify(fetched));
     if(script==='check-source-links.mjs') assert(fetched.includes('https://fixture.example/reviewed-menu'),'Reviewed menu must exercise the same quarantine/redirect guard');
   }
+  // Reproduce Node exit 13 with unreferenced/hung fetch or body promises.
+  // The real collector must finish every attempted URL as inconclusive and
+  // release a domain's queue for its next URL, never manufacture a success.
+  const deadlineVenues = ['fetch', 'read', 'cancel', 'ok'].map(kind => ({id:kind,name:kind,website:`https://${kind}.fixture.example/`}));
+  deadlineVenues.push({id:'tail',name:'Same-domain tail',website:'https://read.fixture.example/healthy'});
+  await writeFile(join(root,'data/build/catalog.json'),JSON.stringify({restaurants:deadlineVenues}));
+  await writeFile(join(root,'deadline-runner.mjs'),`globalThis.fetch=async input=>{
+    const url=String(input);
+    if(url.includes('/healthy')||url.includes('ok.fixture'))return new Response('<html>Open normally.</html>',{headers:{'content-type':'text/html'}});
+    if(url.includes('fetch.fixture'))return new Promise(()=>{});
+    if(url.includes('read.fixture'))return {ok:true,status:200,url,headers:new Headers({'content-type':'text/html'}),body:{getReader:()=>({read:()=>new Promise(()=>{}),cancel:async()=>{}})}};
+    if(url.includes('cancel.fixture'))return {ok:true,status:200,url,headers:new Headers({'content-type':'application/pdf'}),body:{cancel:()=>new Promise(()=>{})}};
+    throw new Error('network-disabled:'+url);
+  };await import(${JSON.stringify(pathToFileURL(join(root,'scripts/check-source-links.mjs')).href)});`);
+  const deadlineResult=await new Promise((resolve,reject)=>{
+    const child=spawn(process.execPath,[join(root,'deadline-runner.mjs')],{cwd:root,env:{...process.env,LINK_HEALTH_SCOPE:'release',LINK_HEALTH_LIMIT:'0',LINK_HEALTH_TIMEOUT_MS:'30',LINK_HEALTH_CONCURRENCY:'5'},stdio:['ignore','pipe','pipe']});
+    let error='';child.stderr.on('data',chunk=>error+=chunk);child.stdout.resume();child.on('error',reject);child.on('close',code=>resolve({code,error}));
+  });
+  assert.equal(deadlineResult.code,0,'Hung source must be classified, not exit 13: '+deadlineResult.error);
+  const deadlineReport=JSON.parse(await readFile(join(root,'data/build/source-link-health-report.json')));
+  assert.equal(deadlineReport.complete,true);
+  assert.equal(deadlineReport.counts.checked,5);
+  assert.equal(deadlineReport.counts.transient,3);
+  assert.equal(deadlineReport.counts.ok,2);
+  assert.equal(deadlineReport.counts.broken,0);
+  for(const result of deadlineReport.results.filter(item=>item.state==='transient'))assert.equal(result.error,'timeout');
+  console.log('Collector deadline regression passed: hung fetch/read/cancel become explicit timeouts; same-domain tail completes.');
   // Catalogue-source consumers must keep the shared wrapper; API-only imports
   // use fixed endpoints and are outside this source-URL test.
   for(const name of await readdir(new URL('./',import.meta.url))) {

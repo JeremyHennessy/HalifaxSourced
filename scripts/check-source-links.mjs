@@ -1,4 +1,5 @@
 import { fetchGuardedSource as fetch } from './lib/fetch-public-source.mjs';
+import { withSourceDeadline } from './lib/fetch-public-source.mjs';
 import { classifyLifecycleLanguage, lifecycleText } from './lib/lifecycle-language.mjs';
 import { mkdir, readFile, writeFile } from 'node:fs/promises';
 import { reviewedLocationLinks } from './lib/reviewed-corrections.mjs';
@@ -45,18 +46,21 @@ async function inspect(item) {
   let last;
   for (let attempt = 1; attempt <= 2; attempt++) {
     try {
-      const response = await fetch(item.url, {method:'GET', headers:{'User-Agent':'HalifaxSourced/1.0 (+https://github.com/JeremyHennessy/HalifaxSourced)', Accept:'text/html,application/xhtml+xml,*/*;q=0.2'}, signal:AbortSignal.timeout(timeoutMs)});
-      const status = response.status;
-      const state = response.ok ? 'ok' : [404,410].includes(status) ? 'broken' : [401,403].includes(status) ? 'restricted' : [408,425,429,500,502,503,504].includes(status) ? 'transient' : 'http_error';
-      const lifecycle = [];
-      if (response.ok && item.kinds.has('official_website') && /html/i.test(response.headers.get('content-type') || '')) {
-        const reader = response.body?.getReader(); let bytes = 0, html = ''; const decoder = new TextDecoder();
-        if (reader) { while (bytes < 512000) { const chunk = await reader.read(); if (chunk.done) break; bytes += chunk.value.length; html += decoder.decode(chunk.value, {stream:true}); } await reader.cancel(); }
-        const text = lifecycleText(html);
-        const signals = classifyLifecycleLanguage(text);
-        for (const [kind, phrases] of Object.entries(signals)) for (const phrase of phrases) { const offset = text.toLowerCase().indexOf(phrase); lifecycle.push({kind, phrase, excerpt:text.slice(Math.max(0,offset-180), offset+400), reviewState:'candidate_requires_location_review'}); }
-      } else try { await response.body?.cancel(); } catch {}
-      last = {...base, status, state, finalUrl:response.url || item.url, attempt, lifecycle};
+      last = await withSourceDeadline(async signal => {
+        const response = await fetch(item.url, {method:'GET', headers:{'User-Agent':'HalifaxSourced/1.0 (+https://github.com/JeremyHennessy/HalifaxSourced)', Accept:'text/html,application/xhtml+xml,*/*;q=0.2'}, signal});
+        const status = response.status;
+        const state = response.ok ? 'ok' : [404,410].includes(status) ? 'broken' : [401,403].includes(status) ? 'restricted' : [408,425,429,500,502,503,504].includes(status) ? 'transient' : 'http_error';
+        const lifecycle = [];
+        if (response.ok && item.kinds.has('official_website') && /html/i.test(response.headers.get('content-type') || '')) {
+          const reader = response.body?.getReader(); let bytes = 0, html = ''; const decoder = new TextDecoder();
+          if (reader) { while (bytes < 512000) { const chunk = await reader.read(); if (chunk.done) break; bytes += chunk.value.length; html += decoder.decode(chunk.value, {stream:true}); } await reader.cancel(); }
+          const text = lifecycleText(html);
+          const signals = classifyLifecycleLanguage(text);
+          for (const [kind, phrases] of Object.entries(signals)) for (const phrase of phrases) { const offset = text.toLowerCase().indexOf(phrase); lifecycle.push({kind, phrase, excerpt:text.slice(Math.max(0,offset-180), offset+400), reviewState:'candidate_requires_location_review'}); }
+        } else try { await response.body?.cancel(); } catch {}
+        return {...base, status, state, finalUrl:response.url || item.url, attempt, lifecycle};
+      }, timeoutMs);
+      const state = last.state;
       // Confirm a hard 404/410 once; restrictions, rate limits and timeouts stay inconclusive.
       if (state !== 'broken' || attempt === 2) return {...last, confirmedBroken:state === 'broken' && attempt === 2};
     } catch (error) { return {...base, status:null, state:/quarantined/.test(error.message) ? 'quarantined' : 'transient', error:error.name === 'TimeoutError' ? 'timeout' : error.message, attempt, confirmedBroken:false, lifecycle:[]}; }
