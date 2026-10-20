@@ -111,7 +111,14 @@ function renderMapPage() {
     document.querySelector(".map-split")?.classList.toggle("mode-map", mapUiMode === "map");
     document.querySelector(".map-split")?.classList.toggle("mode-list", mapUiMode === "list");
     document.querySelectorAll("[data-map-mode]").forEach((item) => { item.classList.toggle("is-active", item.dataset.mapMode === mapUiMode); item.setAttribute("aria-pressed", String(item.dataset.mapMode === mapUiMode)); });
-    if (mapUiMode === "map") setTimeout(() => state.map?.invalidateSize?.(), 0);
+    if (mapUiMode === "map" && state.map) {
+      // A map initialized in the mobile list pane had zero-sized bounds.
+      // Re-measure the now-visible pane and refit this map's current markers.
+      state.map.invalidateSize({ animate: false });
+      if (state.neighbourhood !== "all" && state.mapMarkers?.size) {
+        state.map.fitBounds(L.latLngBounds([...state.mapMarkers.values()].map(marker => marker.getLatLng())), { padding: [30, 30], maxZoom: 15, animate: false });
+      }
+    }
   }));
   const element = document.querySelector("#mainMap");
   requestAnimationFrame(() => initMainMap(results, element));
