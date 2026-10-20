@@ -2,6 +2,9 @@
 const aliases = new Map([
   ['halifax mooseheads', 'halifax-mooseheads'], ['mooseheads', 'halifax-mooseheads'],
   ['rouyn noranda', 'rouyn-noranda'], ['rouyn noranda huskies', 'rouyn-noranda'],
+  ['cape breton', 'cape-breton'], ['cape breton eagles', 'cape-breton'],
+  ['charlottetown', 'charlottetown'], ['charlottetown islanders', 'charlottetown'],
+  ['saint john', 'saint-john'], ['saint john sea dogs', 'saint-john'],
   ['drummondville', 'drummondville'], ['drummondville voltigeurs', 'drummondville']
 ]);
 const normalize = value => String(value || '').toLowerCase().normalize('NFKD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9]+/g,' ').trim();

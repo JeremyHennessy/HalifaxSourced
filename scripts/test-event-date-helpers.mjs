@@ -175,7 +175,7 @@ const context = vm.createContext({
 context.window = context;
 context.HALIFAX_CITY_EVENTS = { events: cityEvents, failures: [] };
 
-for (const file of ["app-events.js", "app-event-pagination.js", "app-event-date-fixes.js", "app-event-local-sort-fixes.js"]) {
+for (const file of ["app-home.js", "app-events.js", "app-event-pagination.js", "app-event-date-fixes.js", "app-event-local-sort-fixes.js"]) {
   const source = await readFile(resolve(file), "utf8");
   vm.runInContext(source, context, { filename: file });
 }
@@ -207,6 +207,10 @@ const result = vm.runInContext(`(() => {
   const todayIds = cityEventsForWindow(window.HALIFAX_CITY_EVENTS.events).map((event) => event.id);
   const filteredTodayIds = filteredCityEvents(window.HALIFAX_CITY_EVENTS.events).map((event) => event.id);
   return {
+    homeIds: homeUpcomingCityEvents().map((event) => event.id),
+    homeDateOnly: homeEventWhen(dateOnly),
+    homeUtcMidnight: homeEventWhen(utcMidnight),
+    homeOngoing: homeEventWhen(ongoing),
     dateOnlyStart: debug.eventBoundaryKey(dateOnly, "startAt"),
     dateOnlyEnd: debug.eventBoundaryKey(dateOnly, "endAt"),
     utcMidnightStart: debug.eventBoundaryKey(utcMidnight, "startAt"),
@@ -285,6 +289,10 @@ if (!/<strong>4<\/strong>/.test(result.dateOnlyCard) || !/<strong>4<\/strong>/.t
 if (!/Ongoing through/.test(result.longRunningWhen) || !/ONGOING/.test(result.longRunningCard) || !/Long-running/.test(result.longRunningCard)) failures.push(`long-running event card should show ongoing range language: ${JSON.stringify(result)}`);
 if (result.dateOnlyTimeKind !== "all-day") failures.push(`date-only event should be all-day, got ${result.dateOnlyTimeKind}`);
 if (!["evening", "afternoon", "morning"].includes(result.timedTimeKind)) failures.push(`timed event should classify by Halifax clock time, got ${result.timedTimeKind}`);
+
+if (result.homeIds.includes("sports-season-summary") || result.homeIds.includes("long-running-exhibit") || result.homeIds.includes("past-event")) failures.push("Homepage must exclude expired events, season summaries and long-running records");
+if (!result.homeIds.includes("sports-local-game") || !result.homeIds.includes("ongoing-multiday")) failures.push("Homepage must retain real games and ongoing short events");
+if (result.homeDateOnly !== "SEP 4" || result.homeUtcMidnight !== "SEP 4" || result.homeOngoing !== "Ongoing") failures.push(`Homepage date labels incorrect: ${JSON.stringify(result)}`);
 
 if (failures.length) {
   throw new Error(failures.join("\n"));
