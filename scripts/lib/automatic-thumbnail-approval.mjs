@@ -80,7 +80,7 @@ export async function assessThumbnail(candidate, evidence, restaurant, root) {
     usageConditions: rights?.usageConditions, rightsVerificationNotes: rights?.notes,
     rightsExpiresAt: rights?.expiresAt || null
   };
-  if (explicitThumbnailHold(rights || {}) || !mediaPermitted({ ...rights, ...media })) reasons.push('incomplete_media_contract');
+  if (explicitThumbnailHold(rights || {}) || !mediaPermitted(media) || !mediaPermitted({ ...rights, ...media, reviewState: rights?.reviewState ?? 'approved' })) reasons.push('incomplete_media_contract');
   return { reasons: [...new Set(reasons)], media };
 }
 
