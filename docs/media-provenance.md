@@ -48,3 +48,12 @@ The thumbnail coverage report writes two operator handoff files under `data/buil
 - When rights are uncertain, leave the record unapproved; the site will use a branded cuisine fallback instead.
 
 This is intentionally conservative so imagery can be enriched without creating an undocumented copyright/provenance layer.
+
+## Licensed additions reviewed October 20, 2026
+
+Two separate location-specific Commons files, not members of the 99 unlicensed remote references, were reviewed and added to the production manifest. The original seven local licensed JPEGs and 99 unverified references were not removed, relicensed, modified, or republished.
+
+- **The Wooden Monkey — Halifax** (`osm-way-96322798-wooden-monkey`, 1707 Grafton Street): [Wikimedia file](https://commons.wikimedia.org/wiki/File:Wooden_Monkey_Restaurant,_Halifax,_Nova_Scotia_(25274647981).jpg), photographer Tony Webster, CC BY-SA 2.0, photographed September 24, 2015. This image is **not** the separate Dartmouth Wooden Monkey photograph. A remote 960-pixel Commons thumbnail was visually inspected; the original is not rehosted by this PR.
+- **Trident Booksellers & Cafe** (`osm-node-886747513-trident-booksellers-and-cafe`, 1256 Hollis Street): [Wikimedia file](https://commons.wikimedia.org/wiki/File:DSC07401_(7172975247).jpg), photographer Nicole Bratt, CC BY-SA 2.0, photographed June 9, 2012. The photograph depicts coffee at this venue; it is not an owner photograph or a claim of today's menu. A remote 960-pixel Commons thumbnail was visually inspected; the original is not rehosted by this PR.
+
+Both provenance pages explicitly record the Creative Commons terms, and the renderer retains source attribution linking back to them. Remote delivery remains subject to the image host: if it fails, the existing branded fallback applies. No CSS, media-rights predicate, identity linking, or unrelated image permissions changed. This is additive licensed coverage, **not restoration or authorization of the 99 unverified photos**.
