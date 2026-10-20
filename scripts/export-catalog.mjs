@@ -4,7 +4,7 @@ import { applyReviewedCorrections } from "./lib/reviewed-corrections.mjs";
 import { filterLocalRestaurantRecords, localRestaurantPolicy } from "./lib/local-restaurant-policy.mjs";
 
 const context = createContext({ window: {} });
-for (const file of ["../data/restaurants.js", "../data/osm-restaurants.js", "../data/ns-food-inspections.js", "../data/discovered-restaurants.js", "../data/discovery-source-supplements.js"]) {
+for (const file of ["../app-inspection-matching.js", "../data/restaurants.js", "../data/osm-restaurants.js", "../data/ns-food-inspections.js", "../data/discovered-restaurants.js", "../data/discovery-source-supplements.js"]) {
   const source = await readFile(new URL(file, import.meta.url), "utf8");
   new Script(source, { filename: file }).runInContext(context);
 }
@@ -25,14 +25,6 @@ try {
 
 function keyForName(name) {
   return String(name ?? "").toLowerCase().normalize("NFKD").replace(/[\u0300-\u036f]/g, "").replace(/\bthe\b/g, "").replace(/[^a-z0-9]+/g, "").trim();
-}
-
-function normalizeLookup(value) {
-  return String(value ?? "").toLowerCase().normalize("NFKD").replace(/[\u0300-\u036f]/g, "").replace(/\bthe\b/g, "").replace(/[^a-z0-9]+/g, "").trim();
-}
-
-function addressLookup(value) {
-  return String(value ?? "").toLowerCase().normalize("NFKD").replace(/[\u0300-\u036f]/g, "").replace(/\b(street|st|avenue|ave|road|rd|drive|dr|boulevard|blvd|lane|ln|nova scotia|halifax|dartmouth|bedford)\b/g, "").replace(/[^a-z0-9]+/g, "").trim();
 }
 
 function mergeSources(a = [], b = []) {
@@ -57,26 +49,8 @@ function excludedRecordsSummary(result, sourceLayer) {
   }));
 }
 
-const nsByName = new Map();
-for (const record of nsRecords) {
-  const key = normalizeLookup(record.name);
-  if (!key) continue;
-  if (!nsByName.has(key)) nsByName.set(key, []);
-  nsByName.get(key).push(record);
-}
-
 function inspectionMatches(restaurant) {
-  const nameKey = normalizeLookup(restaurant.name);
-  const addressKey = addressLookup(restaurant.address);
-  const exact = nsByName.get(nameKey) ?? [];
-  const candidates = nsRecords.filter((record) => {
-    const recordName = normalizeLookup(record.name);
-    const recordAddress = addressLookup(record.address);
-    const nameMatch = recordName === nameKey || (nameKey.length > 8 && recordName.includes(nameKey)) || (recordName.length > 8 && nameKey.includes(recordName));
-    const addressMatch = addressKey && recordAddress && (recordAddress.includes(addressKey.slice(0, 12)) || addressKey.includes(recordAddress.slice(0, 12)));
-    return nameMatch || (addressMatch && recordName.slice(0, 6) === nameKey.slice(0, 6));
-  });
-  return [...exact, ...candidates].filter((record, index, all) => all.findIndex((item) => item.id === record.id) === index).slice(0, 5);
+  return context.window.HalifaxInspectionMatching.matches(restaurant, nsRecords);
 }
 
 function withInspectionEvidence(restaurant) {
