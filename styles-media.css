@@ -137,6 +137,19 @@
   }
 }
 
+/* Desktop only: the portrait harbour image at 188% fills only a narrow strip
+   along the far right. Enlarge it toward the headline, keep the right edge filled,
+   and fade the white overlay earlier so the lighthouse is visible. */
+@media (min-width:901px){
+  .home-hero{
+    background-image:
+      linear-gradient(90deg,rgba(255,255,255,.99) 0%,rgba(255,255,255,.95) 38%,rgba(255,255,255,.22) 54%,rgba(255,255,255,0) 72%),
+      url("./assets/backgrounds/hero-mobile.webp");
+    background-size:cover,auto 290%;
+    background-position:center,right 66%;
+  }
+}
+
 @media (max-width:767px){
   .footer-brand-lockup img{width:52px;height:52px}
   .footer-brand-lockup>strong{font-size:17px}

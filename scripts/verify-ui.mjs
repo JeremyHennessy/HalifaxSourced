@@ -124,6 +124,23 @@ const currentOfferIntegrity = await page.evaluate(() => {
 if (currentOfferIntegrity.invalid.length || currentOfferIntegrity.advertised !== totals.verifiedCurrentSpecials) throw new Error(`Current-offer evidence mismatch: ${JSON.stringify(currentOfferIntegrity)}; totals=${JSON.stringify(totals)}.`);
 await page.screenshot({ path: resolve("artifacts", "ui-check-desktop.png"), fullPage: true });
 
+// Regression for the wide desktop hero: its right-aligned portrait artwork must
+// reach toward the headline, not occupy just a thin strip at the screen edge.
+await page.setViewportSize({ width: 1743, height: 900 });
+const heroArtwork = await page.locator(".home-hero").evaluate(async (hero) => {
+  const size = getComputedStyle(hero).backgroundSize;
+  const scale = /auto\s+([\d.]+)%/.exec(size);
+  if (!scale) return { size, imageWidth: 0, heroWidth: hero.getBoundingClientRect().width };
+  const image = new Image();
+  image.src = "./assets/backgrounds/hero-mobile.webp";
+  await image.decode();
+  const height = hero.getBoundingClientRect().height * Number(scale[1]) / 100;
+  return { size, imageWidth: Math.round(height * image.naturalWidth / image.naturalHeight), heroWidth: hero.getBoundingClientRect().width };
+});
+if (heroArtwork.imageWidth < heroArtwork.heroWidth * .45) throw new Error(`Desktop hero image leaves excessive blank space: ${JSON.stringify(heroArtwork)}`);
+await page.screenshot({ path: resolve("artifacts", "ui-check-desktop-wide-home.png"), fullPage: false });
+await page.setViewportSize({ width: 1440, height: 1000 });
+
 // Lifecycle regression: inactive places must fail closed in discovery but keep a
 // transparent historical detail page. Location-specific closures must not spill
 // onto a currently operating location from the same brand.
