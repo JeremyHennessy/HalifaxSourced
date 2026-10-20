@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-10-20T16:24:12.219Z",
-  "eventCount": 174,
-  "venueResolved": 126,
-  "organizerResolved": 152,
+  "generatedAt": "2026-10-20T21:43:59.926Z",
+  "eventCount": 173,
+  "venueResolved": 125,
+  "organizerResolved": 151,
   "restaurantResolved": 10,
   "unresolvedVenue": 48,
   "unresolvedOrganizer": 22,
@@ -114,50 +114,6 @@
       "venueBasis": "source_id",
       "organizerId": "halifax-convention-centre",
       "organizerBasis": "source_id",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "halifax-convention-centre-b1ce7c479f16433d",
-      "title": "Halifax Universities Career Fair 2026",
-      "sourceId": "halifax-convention-centre",
-      "venueId": "halifax-convention-centre",
-      "venueBasis": "source_id",
-      "organizerId": "halifax-convention-centre",
-      "organizerBasis": "source_id",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "woodlawn-library-events-3613417cb483df92",
-      "title": "Needle Niche",
-      "sourceId": "woodlawn-library-events",
-      "venueId": "woodlawn-library",
-      "venueBasis": "source_id",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "alderney-gate-library-events-aec8da1f979662da",
-      "title": "Alderney Ideas Seminar: Online & In-Person",
-      "sourceId": "alderney-gate-library-events",
-      "venueId": "alderney-gate-library",
-      "venueBasis": "source_id",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "alderney-gate-library-events-ba40b000e25d0c22",
-      "title": "Pre-teen Dungeons & Dragons",
-      "sourceId": "alderney-gate-library-events",
-      "venueId": "alderney-gate-library",
-      "venueBasis": "source_id",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
       "restaurantId": null,
       "restaurantBasis": null
     },
@@ -305,6 +261,17 @@
       "restaurantBasis": null
     },
     {
+      "eventId": "alderney-gate-library-events-ec0ca632d4bf24a5",
+      "title": "Meet Juno, a St. John Ambulance Therapy Dog",
+      "sourceId": "alderney-gate-library-events",
+      "venueId": "alderney-gate-library",
+      "venueBasis": "source_id",
+      "organizerId": "halifax-public-libraries",
+      "organizerBasis": "source_name_token",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
       "eventId": "alderney-gate-library-events-dd528c059fc415a5",
       "title": "Meet Juno, a St. John Ambulance Therapy Dog Meet Juno, a St. John Ambulance Therapy Dog",
       "sourceId": "alderney-gate-library-events",
@@ -334,6 +301,17 @@
       "venueBasis": null,
       "organizerId": null,
       "organizerBasis": null,
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
+      "eventId": "alderney-gate-library-events-4c5a519841422d6c",
+      "title": "Welcome Housing & Support Drop-in Clinic",
+      "sourceId": "alderney-gate-library-events",
+      "venueId": "alderney-gate-library",
+      "venueBasis": "source_id",
+      "organizerId": "halifax-public-libraries",
+      "organizerBasis": "source_name_token",
       "restaurantId": null,
       "restaurantBasis": null
     },
@@ -455,6 +433,17 @@
       "venueBasis": null,
       "organizerId": null,
       "organizerBasis": null,
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
+      "eventId": "woodlawn-library-events-99b128229833461f",
+      "title": "Family Drop-in",
+      "sourceId": "woodlawn-library-events",
+      "venueId": "woodlawn-library",
+      "venueBasis": "source_id",
+      "organizerId": "halifax-public-libraries",
+      "organizerBasis": "source_name_token",
       "restaurantId": null,
       "restaurantBasis": null
     },
