@@ -1,9 +1,9 @@
 window.HALIFAX_CITY_EVENTS = {
   "version": 4,
-  "generatedAt": "2026-10-20T11:46:21.199Z",
+  "generatedAt": "2026-10-20T16:22:10.808Z",
   "range": {
-    "start": "2026-10-20T05:46:11.204Z",
-    "end": "2027-11-24T11:46:11.204Z"
+    "start": "2026-10-20T10:22:05.636Z",
+    "end": "2027-11-24T16:22:05.636Z"
   },
   "eventCount": 174,
   "categoryCounts": {
@@ -25,90 +25,90 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "tourism-ns-events",
       "sourceName": "Tourism Nova Scotia Events",
       "mode": "tourism_event_crawl",
-      "observedAt": "2026-10-20T11:46:14.386Z",
+      "observedAt": "2026-10-20T16:22:07.899Z",
       "eventCount": 68,
-      "durationMs": 3182,
+      "durationMs": 2263,
       "status": "ok"
     },
     {
       "sourceId": "halifax-mooseheads-home",
       "sourceName": "Halifax Mooseheads Home Schedule",
       "mode": "mooseheads_home_table",
-      "observedAt": "2026-10-20T11:46:14.724Z",
+      "observedAt": "2026-10-20T16:22:08.097Z",
       "eventCount": 27,
-      "durationMs": 338,
+      "durationMs": 198,
       "status": "ok"
     },
     {
       "sourceId": "scotiabank-centre",
       "sourceName": "Scotiabank Centre",
       "mode": "scotiabank_calendar",
-      "observedAt": "2026-10-20T11:46:14.784Z",
+      "observedAt": "2026-10-20T16:22:08.128Z",
       "eventCount": 51,
-      "durationMs": 60,
+      "durationMs": 31,
       "status": "ok"
     },
     {
       "sourceId": "hfx-wanderers-home",
       "sourceName": "HFX Wanderers 2026 Home Schedule",
       "mode": "sports_bullet_schedule",
-      "observedAt": "2026-10-20T11:46:14.897Z",
+      "observedAt": "2026-10-20T16:22:08.157Z",
       "eventCount": 1,
-      "durationMs": 113,
+      "durationMs": 29,
       "status": "ok"
     },
     {
       "sourceId": "halifax-tides-home",
       "sourceName": "Halifax Tides 2026 Home Schedule",
       "mode": "sports_bullet_schedule",
-      "observedAt": "2026-10-20T11:46:14.961Z",
+      "observedAt": "2026-10-20T16:22:08.187Z",
       "eventCount": 0,
-      "durationMs": 64,
+      "durationMs": 29,
       "status": "ok"
     },
     {
       "sourceId": "light-house-arts-centre",
       "sourceName": "Light House Arts Centre",
       "mode": "lighthouse_index",
-      "observedAt": "2026-10-20T11:46:18.634Z",
+      "observedAt": "2026-10-20T16:22:08.921Z",
       "eventCount": 26,
-      "durationMs": 3673,
+      "durationMs": 734,
       "status": "ok"
     },
     {
       "sourceId": "the-carleton",
       "sourceName": "The Carleton",
       "mode": "html_calendar",
-      "observedAt": "2026-10-20T11:46:19.432Z",
+      "observedAt": "2026-10-20T16:22:09.545Z",
       "eventCount": 10,
-      "durationMs": 798,
+      "durationMs": 624,
       "status": "ok"
     },
     {
       "sourceId": "neptune-theatre",
       "sourceName": "Neptune Theatre",
       "mode": "neptune_season",
-      "observedAt": "2026-10-20T11:46:20.116Z",
+      "observedAt": "2026-10-20T16:22:09.876Z",
       "eventCount": 3,
-      "durationMs": 684,
+      "durationMs": 331,
       "status": "ok"
     },
     {
       "sourceId": "halifax-thunderbirds",
       "sourceName": "Halifax Thunderbirds",
       "mode": "embedded_event_data",
-      "observedAt": "2026-10-20T11:46:20.411Z",
+      "observedAt": "2026-10-20T16:22:10.414Z",
       "eventCount": 0,
-      "durationMs": 295,
+      "durationMs": 538,
       "status": "ok"
     },
     {
       "sourceId": "halifax-events-community",
       "sourceName": "HalifaxEvents.ca",
       "mode": "tribe_list_crawl",
-      "observedAt": "2026-10-20T11:46:21.184Z",
+      "observedAt": "2026-10-20T16:22:10.784Z",
       "eventCount": 0,
-      "durationMs": 773,
+      "durationMs": 370,
       "status": "ok"
     },
     {
@@ -116,48 +116,48 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Convention Centre",
       "status": "ok",
       "eventCount": 8,
-      "observedAt": "2026-10-20T11:46:22.134Z",
-      "durationMs": 796
+      "observedAt": "2026-10-20T16:22:11.722Z",
+      "durationMs": 783
     },
     {
       "sourceId": "symphony-nova-scotia",
       "sourceName": "Symphony Nova Scotia",
       "status": "ok",
       "eventCount": 33,
-      "observedAt": "2026-10-20T11:46:22.349Z",
-      "durationMs": 215
+      "observedAt": "2026-10-20T16:22:11.896Z",
+      "durationMs": 173
     },
     {
       "sourceId": "halifax-public-libraries",
       "sourceName": "Halifax Public Libraries",
       "status": "ok",
       "eventCount": 2,
-      "observedAt": "2026-10-20T11:48:56.246Z",
-      "durationMs": 153896
+      "observedAt": "2026-10-20T16:24:05.959Z",
+      "durationMs": 114063
     },
     {
       "sourceId": "alderney-gate-library-events",
       "sourceName": "Alderney Gate Public Library",
       "status": "ok",
       "eventCount": 10,
-      "observedAt": "2026-10-20T11:48:58.216Z",
-      "durationMs": 1970
+      "observedAt": "2026-10-20T16:24:08.557Z",
+      "durationMs": 2597
     },
     {
       "sourceId": "woodlawn-library-events",
       "sourceName": "Woodlawn Public Library",
       "status": "ok",
       "eventCount": 8,
-      "observedAt": "2026-10-20T11:49:00.230Z",
-      "durationMs": 2014
+      "observedAt": "2026-10-20T16:24:09.979Z",
+      "durationMs": 1422
     },
     {
       "sourceId": "bedford-library-events",
       "sourceName": "Bedford Public Library",
       "status": "ok",
       "eventCount": 6,
-      "observedAt": "2026-10-20T11:49:01.292Z",
-      "durationMs": 1062
+      "observedAt": "2026-10-20T16:24:11.613Z",
+      "durationMs": 1634
     },
     {
       "sourceId": "alderney-landing-events",
@@ -165,8 +165,8 @@ window.HALIFAX_CITY_EVENTS = {
       "status": "failed",
       "eventCount": 0,
       "reason": "http_403",
-      "observedAt": "2026-10-20T11:49:01.464Z",
-      "durationMs": 172
+      "observedAt": "2026-10-20T16:24:11.710Z",
+      "durationMs": 97
     },
     {
       "sourceId": "taste-asia-2026",
@@ -229,7 +229,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Alderney Landing",
       "url": "https://www.alderneylanding.com/events-directory/",
       "reason": "http_403",
-      "observedAt": "2026-10-20T11:49:01.464Z"
+      "observedAt": "2026-10-20T16:24:11.710Z"
     }
   ],
   "events": [
@@ -254,7 +254,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "tourism-ns-events",
       "sourceName": "Tourism Nova Scotia Events",
       "sourceKind": "official_tourism_calendar",
-      "observedAt": "2026-10-20T11:46:12.508Z",
+      "observedAt": "2026-10-20T16:22:06.704Z",
       "reviewState": "source-observed",
       "alternateSources": [
         {
@@ -287,7 +287,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "tourism-ns-events",
       "sourceName": "Tourism Nova Scotia Events",
       "sourceKind": "official_tourism_calendar",
-      "observedAt": "2026-10-20T11:46:12.850Z",
+      "observedAt": "2026-10-20T16:22:06.770Z",
       "reviewState": "source-observed",
       "alternateSources": [
         {
@@ -322,7 +322,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "tourism-ns-events",
       "sourceName": "Tourism Nova Scotia Events",
       "sourceKind": "official_tourism_calendar",
-      "observedAt": "2026-10-20T11:46:12.862Z",
+      "observedAt": "2026-10-20T16:22:06.778Z",
       "reviewState": "source-observed",
       "alternateSources": [
         {
@@ -353,7 +353,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "tourism-ns-events",
       "sourceName": "Tourism Nova Scotia Events",
       "sourceKind": "official_tourism_calendar",
-      "observedAt": "2026-10-20T11:46:12.965Z",
+      "observedAt": "2026-10-20T16:22:06.819Z",
       "reviewState": "source-observed",
       "alternateSources": [
         {
@@ -476,7 +476,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "tourism-ns-events",
       "sourceName": "Tourism Nova Scotia Events",
       "sourceKind": "official_tourism_calendar",
-      "observedAt": "2026-10-20T11:46:12.969Z",
+      "observedAt": "2026-10-20T16:22:06.823Z",
       "reviewState": "source-observed",
       "alternateSources": [
         {
@@ -508,7 +508,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "tourism-ns-events",
       "sourceName": "Tourism Nova Scotia Events",
       "sourceKind": "official_tourism_calendar",
-      "observedAt": "2026-10-20T11:46:13.026Z",
+      "observedAt": "2026-10-20T16:22:06.887Z",
       "reviewState": "source-observed",
       "alternateSources": [
         {
@@ -540,7 +540,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-20T11:46:23.443Z",
+      "observedAt": "2026-10-20T16:22:12.462Z",
       "reviewState": "source_observed",
       "venueId": "central-library-halifax",
       "neighbourhood": null,
@@ -567,7 +567,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-20T11:46:23.444Z",
+      "observedAt": "2026-10-20T16:22:12.463Z",
       "reviewState": "source_observed",
       "venueId": "central-library-halifax",
       "neighbourhood": null,
@@ -594,68 +594,12 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Convention Centre",
       "sourceKind": "official_venue_calendar",
       "sourceUrl": "https://www.halifaxconventioncentre.com/Events",
-      "observedAt": "2026-10-20T11:46:22.132Z",
+      "observedAt": "2026-10-20T16:22:11.720Z",
       "reviewState": "source_observed",
       "venueId": "halifax-convention-centre",
       "neighbourhood": "Downtown",
       "organizerId": "halifax-convention-centre",
       "organizerName": "Halifax Convention Centre"
-    },
-    {
-      "id": "bedford-library-events-749272b332400c2b",
-      "title": "Baby's First Books",
-      "startAt": "2026-10-20T13:30:00.000Z",
-      "endAt": "2026-10-20T14:30:00.000Z",
-      "allDay": false,
-      "venueName": "Bedford Public Library",
-      "address": "15 Dartmouth Road, Bedford, NS B4A 3X6",
-      "city": "Bedford",
-      "categories": [
-        "Community"
-      ],
-      "eventUrl": "https://halifax.bibliocommons.com/events/6a835f4bb2047800299383e0",
-      "ticketUrl": "https://www.halifaxpubliclibraries.ca/locations/bedford-public-library/",
-      "price": null,
-      "sourceId": "bedford-library-events",
-      "sourceName": "Bedford Public Library",
-      "sourceKind": "official_library_location_calendar",
-      "sourceUrl": "https://www.halifaxpubliclibraries.ca/locations/bedford-public-library/",
-      "observedAt": "2026-10-20T11:49:01.288Z",
-      "reviewState": "source_observed",
-      "latitude": 44.7314,
-      "longitude": -63.6571,
-      "venueId": "bedford-library",
-      "neighbourhood": null,
-      "organizerId": "halifax-public-libraries",
-      "organizerName": "Halifax Public Libraries"
-    },
-    {
-      "id": "alderney-gate-library-events-aae54e10cea1df87",
-      "title": "Shake, Rattle & Read",
-      "startAt": "2026-10-20T13:30:00.000Z",
-      "endAt": "2026-10-20T14:15:00.000Z",
-      "allDay": false,
-      "venueName": "Alderney Gate Public Library",
-      "address": "60 Alderney Drive, Dartmouth, NS B2Y 4P8",
-      "city": "Dartmouth",
-      "categories": [
-        "Community"
-      ],
-      "eventUrl": "https://halifax.bibliocommons.com/events/6a83651ca821f90037ee78db",
-      "ticketUrl": "https://www.halifaxpubliclibraries.ca/locations/alderney-gate-public-library/",
-      "price": null,
-      "sourceId": "alderney-gate-library-events",
-      "sourceName": "Alderney Gate Public Library",
-      "sourceKind": "official_library_location_calendar",
-      "sourceUrl": "https://www.halifaxpubliclibraries.ca/locations/alderney-gate-public-library/",
-      "observedAt": "2026-10-20T11:48:58.211Z",
-      "reviewState": "source_observed",
-      "latitude": 44.6665,
-      "longitude": -63.5684,
-      "venueId": "alderney-gate-library",
-      "neighbourhood": "Downtown Dartmouth",
-      "organizerId": "halifax-public-libraries",
-      "organizerName": "Halifax Public Libraries"
     },
     {
       "id": "halifax-convention-centre-b1ce7c479f16433d",
@@ -677,7 +621,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Convention Centre",
       "sourceKind": "official_venue_calendar",
       "sourceUrl": "https://www.halifaxconventioncentre.com/Events",
-      "observedAt": "2026-10-20T11:46:22.132Z",
+      "observedAt": "2026-10-20T16:22:11.720Z",
       "reviewState": "source_observed",
       "venueId": "halifax-convention-centre",
       "neighbourhood": "Downtown",
@@ -703,7 +647,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Woodlawn Public Library",
       "sourceKind": "official_library_location_calendar",
       "sourceUrl": "https://www.halifaxpubliclibraries.ca/locations/woodlawn-public-library/",
-      "observedAt": "2026-10-20T11:49:00.226Z",
+      "observedAt": "2026-10-20T16:24:09.974Z",
       "reviewState": "source_observed",
       "latitude": 44.6715,
       "longitude": -63.5316,
@@ -731,7 +675,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Alderney Gate Public Library",
       "sourceKind": "official_library_location_calendar",
       "sourceUrl": "https://www.halifaxpubliclibraries.ca/locations/alderney-gate-public-library/",
-      "observedAt": "2026-10-20T11:48:58.211Z",
+      "observedAt": "2026-10-20T16:24:08.552Z",
       "reviewState": "source_observed",
       "latitude": 44.6665,
       "longitude": -63.5684,
@@ -759,7 +703,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Alderney Gate Public Library",
       "sourceKind": "official_library_location_calendar",
       "sourceUrl": "https://www.halifaxpubliclibraries.ca/locations/alderney-gate-public-library/",
-      "observedAt": "2026-10-20T11:48:58.212Z",
+      "observedAt": "2026-10-20T16:24:08.552Z",
       "reviewState": "source_observed",
       "latitude": 44.6665,
       "longitude": -63.5684,
@@ -787,7 +731,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "tourism-ns-events",
       "sourceName": "Tourism Nova Scotia Events",
       "sourceKind": "official_tourism_calendar",
-      "observedAt": "2026-10-20T11:46:13.016Z",
+      "observedAt": "2026-10-20T16:22:06.878Z",
       "reviewState": "source-observed",
       "alternateSources": [
         {
@@ -819,7 +763,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Alderney Gate Public Library",
       "sourceKind": "official_library_location_calendar",
       "sourceUrl": "https://www.halifaxpubliclibraries.ca/locations/alderney-gate-public-library/",
-      "observedAt": "2026-10-20T11:48:58.212Z",
+      "observedAt": "2026-10-20T16:24:08.553Z",
       "reviewState": "source_observed",
       "latitude": 44.6665,
       "longitude": -63.5684,
@@ -902,7 +846,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Woodlawn Public Library",
       "sourceKind": "official_library_location_calendar",
       "sourceUrl": "https://www.halifaxpubliclibraries.ca/locations/woodlawn-public-library/",
-      "observedAt": "2026-10-20T11:49:00.226Z",
+      "observedAt": "2026-10-20T16:24:09.975Z",
       "reviewState": "source_observed",
       "latitude": 44.6715,
       "longitude": -63.5316,
@@ -930,7 +874,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Woodlawn Public Library",
       "sourceKind": "official_library_location_calendar",
       "sourceUrl": "https://www.halifaxpubliclibraries.ca/locations/woodlawn-public-library/",
-      "observedAt": "2026-10-20T11:49:00.227Z",
+      "observedAt": "2026-10-20T16:24:09.975Z",
       "reviewState": "source_observed",
       "latitude": 44.6715,
       "longitude": -63.5316,
@@ -958,7 +902,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Bedford Public Library",
       "sourceKind": "official_library_location_calendar",
       "sourceUrl": "https://www.halifaxpubliclibraries.ca/locations/bedford-public-library/",
-      "observedAt": "2026-10-20T11:49:01.288Z",
+      "observedAt": "2026-10-20T16:24:11.609Z",
       "reviewState": "source_observed",
       "latitude": 44.7314,
       "longitude": -63.6571,
@@ -987,7 +931,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Bedford Public Library",
       "sourceKind": "official_library_location_calendar",
       "sourceUrl": "https://www.halifaxpubliclibraries.ca/locations/bedford-public-library/",
-      "observedAt": "2026-10-20T11:49:01.289Z",
+      "observedAt": "2026-10-20T16:24:11.610Z",
       "reviewState": "source_observed",
       "latitude": 44.7314,
       "longitude": -63.6571,
@@ -1016,7 +960,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Woodlawn Public Library",
       "sourceKind": "official_library_location_calendar",
       "sourceUrl": "https://www.halifaxpubliclibraries.ca/locations/woodlawn-public-library/",
-      "observedAt": "2026-10-20T11:49:00.227Z",
+      "observedAt": "2026-10-20T16:24:09.976Z",
       "reviewState": "source_observed",
       "latitude": 44.6715,
       "longitude": -63.5316,
@@ -1045,7 +989,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Alderney Gate Public Library",
       "sourceKind": "official_library_location_calendar",
       "sourceUrl": "https://www.halifaxpubliclibraries.ca/locations/alderney-gate-public-library/",
-      "observedAt": "2026-10-20T11:48:58.213Z",
+      "observedAt": "2026-10-20T16:24:08.553Z",
       "reviewState": "source_observed",
       "latitude": 44.6665,
       "longitude": -63.5684,
@@ -1073,7 +1017,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Bedford Public Library",
       "sourceKind": "official_library_location_calendar",
       "sourceUrl": "https://www.halifaxpubliclibraries.ca/locations/bedford-public-library/",
-      "observedAt": "2026-10-20T11:49:01.289Z",
+      "observedAt": "2026-10-20T16:24:11.610Z",
       "reviewState": "source_observed",
       "latitude": 44.7314,
       "longitude": -63.6571,
@@ -1101,7 +1045,35 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Alderney Gate Public Library",
       "sourceKind": "official_library_location_calendar",
       "sourceUrl": "https://www.halifaxpubliclibraries.ca/locations/alderney-gate-public-library/",
-      "observedAt": "2026-10-20T11:48:58.213Z",
+      "observedAt": "2026-10-20T16:24:08.553Z",
+      "reviewState": "source_observed",
+      "latitude": 44.6665,
+      "longitude": -63.5684,
+      "venueId": "alderney-gate-library",
+      "neighbourhood": "Downtown Dartmouth",
+      "organizerId": "halifax-public-libraries",
+      "organizerName": "Halifax Public Libraries"
+    },
+    {
+      "id": "alderney-gate-library-events-7209a8416b44154d",
+      "title": "Teen Night",
+      "startAt": "2026-10-21T20:00:00.000Z",
+      "endAt": "2026-10-21T22:00:00.000Z",
+      "allDay": false,
+      "venueName": "Alderney Gate Public Library",
+      "address": "60 Alderney Drive, Dartmouth, NS B2Y 4P8",
+      "city": "Dartmouth",
+      "categories": [
+        "Community"
+      ],
+      "eventUrl": "https://halifax.bibliocommons.com/events/6a7387aae700090faa68b9ed",
+      "ticketUrl": "https://www.halifaxpubliclibraries.ca/locations/alderney-gate-public-library/",
+      "price": null,
+      "sourceId": "alderney-gate-library-events",
+      "sourceName": "Alderney Gate Public Library",
+      "sourceKind": "official_library_location_calendar",
+      "sourceUrl": "https://www.halifaxpubliclibraries.ca/locations/alderney-gate-public-library/",
+      "observedAt": "2026-10-20T16:24:08.554Z",
       "reviewState": "source_observed",
       "latitude": 44.6665,
       "longitude": -63.5684,
@@ -1129,7 +1101,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Bedford Public Library",
       "sourceKind": "official_library_location_calendar",
       "sourceUrl": "https://www.halifaxpubliclibraries.ca/locations/bedford-public-library/",
-      "observedAt": "2026-10-20T11:49:01.289Z",
+      "observedAt": "2026-10-20T16:24:11.610Z",
       "reviewState": "source_observed",
       "latitude": 44.7314,
       "longitude": -63.6571,
@@ -1157,7 +1129,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Alderney Gate Public Library",
       "sourceKind": "official_library_location_calendar",
       "sourceUrl": "https://www.halifaxpubliclibraries.ca/locations/alderney-gate-public-library/",
-      "observedAt": "2026-10-20T11:48:58.214Z",
+      "observedAt": "2026-10-20T16:24:08.554Z",
       "reviewState": "source_observed",
       "latitude": 44.6665,
       "longitude": -63.5684,
@@ -1185,7 +1157,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "scotiabank-centre",
       "sourceName": "Scotiabank Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-10-20T11:46:14.782Z",
+      "observedAt": "2026-10-20T16:22:08.125Z",
       "reviewState": "source-observed",
       "venueId": "scotiabank-centre-halifax",
       "neighbourhood": "Downtown",
@@ -1212,7 +1184,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "tourism-ns-events",
       "sourceName": "Tourism Nova Scotia Events",
       "sourceKind": "official_tourism_calendar",
-      "observedAt": "2026-10-20T11:46:13.023Z",
+      "observedAt": "2026-10-20T16:22:06.939Z",
       "reviewState": "source-observed",
       "alternateSources": [
         {
@@ -1241,7 +1213,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Woodlawn Public Library",
       "sourceKind": "official_library_location_calendar",
       "sourceUrl": "https://www.halifaxpubliclibraries.ca/locations/woodlawn-public-library/",
-      "observedAt": "2026-10-20T11:49:00.227Z",
+      "observedAt": "2026-10-20T16:24:09.976Z",
       "reviewState": "source_observed",
       "latitude": 44.6715,
       "longitude": -63.5316,
@@ -1270,7 +1242,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Convention Centre",
       "sourceKind": "official_venue_calendar",
       "sourceUrl": "https://www.halifaxconventioncentre.com/Events",
-      "observedAt": "2026-10-20T11:46:22.133Z",
+      "observedAt": "2026-10-20T16:22:11.721Z",
       "reviewState": "source_observed",
       "venueId": "halifax-convention-centre",
       "neighbourhood": "Downtown",
@@ -1297,7 +1269,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Convention Centre",
       "sourceKind": "official_venue_calendar",
       "sourceUrl": "https://www.halifaxconventioncentre.com/Events",
-      "observedAt": "2026-10-20T11:46:22.132Z",
+      "observedAt": "2026-10-20T16:22:11.721Z",
       "reviewState": "source_observed",
       "venueId": "halifax-convention-centre",
       "neighbourhood": "Downtown",
@@ -1324,7 +1296,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Convention Centre",
       "sourceKind": "official_venue_calendar",
       "sourceUrl": "https://www.halifaxconventioncentre.com/Events",
-      "observedAt": "2026-10-20T11:46:22.133Z",
+      "observedAt": "2026-10-20T16:22:11.721Z",
       "reviewState": "source_observed",
       "venueId": "halifax-convention-centre",
       "neighbourhood": "Downtown",
@@ -1351,7 +1323,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Alderney Gate Public Library",
       "sourceKind": "official_library_location_calendar",
       "sourceUrl": "https://www.halifaxpubliclibraries.ca/locations/alderney-gate-public-library/",
-      "observedAt": "2026-10-20T11:48:58.214Z",
+      "observedAt": "2026-10-20T16:24:08.555Z",
       "reviewState": "source_observed",
       "latitude": 44.6665,
       "longitude": -63.5684,
@@ -1379,7 +1351,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Bedford Public Library",
       "sourceKind": "official_library_location_calendar",
       "sourceUrl": "https://www.halifaxpubliclibraries.ca/locations/bedford-public-library/",
-      "observedAt": "2026-10-20T11:49:01.290Z",
+      "observedAt": "2026-10-20T16:24:11.611Z",
       "reviewState": "source_observed",
       "latitude": 44.7314,
       "longitude": -63.6571,
@@ -1407,7 +1379,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "tourism-ns-events",
       "sourceName": "Tourism Nova Scotia Events",
       "sourceKind": "official_tourism_calendar",
-      "observedAt": "2026-10-20T11:46:13.029Z",
+      "observedAt": "2026-10-20T16:22:06.947Z",
       "reviewState": "source-observed",
       "alternateSources": [
         {
@@ -1416,6 +1388,34 @@ window.HALIFAX_CITY_EVENTS = {
           "sourceUrl": "https://novascotia.com/event/spontaneity-spooky-spectacular/"
         }
       ]
+    },
+    {
+      "id": "bedford-library-events-207f47fa10b74fc0",
+      "title": "Newcomers Social",
+      "startAt": "2026-10-22T21:30:00.000Z",
+      "endAt": "2026-10-22T22:30:00.000Z",
+      "allDay": false,
+      "venueName": "Bedford Public Library",
+      "address": "15 Dartmouth Road, Bedford, NS B4A 3X6",
+      "city": "Bedford",
+      "categories": [
+        "Community"
+      ],
+      "eventUrl": "https://halifax.bibliocommons.com/events/6abebe41e06996003a8097cf",
+      "ticketUrl": "https://www.halifaxpubliclibraries.ca/locations/bedford-public-library/",
+      "price": null,
+      "sourceId": "bedford-library-events",
+      "sourceName": "Bedford Public Library",
+      "sourceKind": "official_library_location_calendar",
+      "sourceUrl": "https://www.halifaxpubliclibraries.ca/locations/bedford-public-library/",
+      "observedAt": "2026-10-20T16:24:11.611Z",
+      "reviewState": "source_observed",
+      "latitude": 44.7314,
+      "longitude": -63.6571,
+      "venueId": "bedford-library",
+      "neighbourhood": null,
+      "organizerId": "halifax-public-libraries",
+      "organizerName": "Halifax Public Libraries"
     },
     {
       "id": "the-carleton-1f70ffee982c43c0",
@@ -1438,7 +1438,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "the-carleton",
       "sourceName": "The Carleton",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-10-20T11:46:19.431Z",
+      "observedAt": "2026-10-20T16:22:09.543Z",
       "reviewState": "source-observed",
       "venueId": "the-carleton-halifax",
       "neighbourhood": "Downtown",
@@ -1465,7 +1465,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Woodlawn Public Library",
       "sourceKind": "official_library_location_calendar",
       "sourceUrl": "https://www.halifaxpubliclibraries.ca/locations/woodlawn-public-library/",
-      "observedAt": "2026-10-20T11:49:00.228Z",
+      "observedAt": "2026-10-20T16:24:09.977Z",
       "reviewState": "source_observed",
       "latitude": 44.6715,
       "longitude": -63.5316,
@@ -1533,7 +1533,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Convention Centre",
       "sourceKind": "official_venue_calendar",
       "sourceUrl": "https://www.halifaxconventioncentre.com/Events",
-      "observedAt": "2026-10-20T11:46:22.133Z",
+      "observedAt": "2026-10-20T16:22:11.722Z",
       "reviewState": "source_observed",
       "venueId": "halifax-convention-centre",
       "neighbourhood": "Downtown",
@@ -1559,12 +1559,8 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "halifax-mooseheads-home",
       "sourceName": "Halifax Mooseheads Home Schedule",
       "sourceKind": "official_sports_schedule",
-      "observedAt": "2026-10-20T11:46:14.723Z",
+      "observedAt": "2026-10-20T16:22:08.095Z",
       "reviewState": "source-observed",
-      "venueId": "scotiabank-centre-halifax",
-      "neighbourhood": "Downtown",
-      "organizerId": "halifax-mooseheads",
-      "organizerName": "Halifax Mooseheads",
       "sourceUrls": [
         "https://www.scotiabank-centre.com/events/2026-2027-halifax-mooseheads",
         "https://www.scotiabank-centre.com/premium-seating/eventcalendar"
@@ -1575,13 +1571,17 @@ window.HALIFAX_CITY_EVENTS = {
       ],
       "duplicateEventIds": [
         "scotiabank-centre-4cfab057e22445a7"
-      ]
+      ],
+      "venueId": "scotiabank-centre-halifax",
+      "neighbourhood": "Downtown",
+      "organizerId": "halifax-mooseheads",
+      "organizerName": "Halifax Mooseheads"
     },
     {
       "id": "symphony-nova-scotia-648004b43df2a1b3",
       "title": "Alex Cuba & Symphony Nova Scotia",
       "startAt": "2026-10-23T22:30:00.000Z",
-      "endAt": null,
+      "endAt": "2026-10-23T22:30:00.000Z",
       "allDay": false,
       "venueName": "Rebecca Cohn",
       "address": null,
@@ -1591,13 +1591,13 @@ window.HALIFAX_CITY_EVENTS = {
         "Arts"
       ],
       "eventUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/rebecca-cohn-auditorium/alex-cuba-symphony-nova-scotia/",
-      "ticketUrl": null,
+      "ticketUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
       "price": null,
-      "sourceId": "symphony-nova-scotia-reviewed-20261020",
+      "sourceId": "symphony-nova-scotia",
       "sourceName": "Symphony Nova Scotia",
-      "sourceKind": "official_event_page",
-      "sourceUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/rebecca-cohn-auditorium/alex-cuba-symphony-nova-scotia/",
-      "observedAt": "2026-10-20T15:17:37.656Z",
+      "sourceKind": "official_arts_calendar",
+      "sourceUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
+      "observedAt": "2026-10-20T16:22:11.887Z",
       "reviewState": "source_observed",
       "organizerId": "symphony-nova-scotia",
       "organizerName": "Symphony Nova Scotia",
@@ -1688,7 +1688,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "the-carleton",
       "sourceName": "The Carleton",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-10-20T11:46:19.431Z",
+      "observedAt": "2026-10-20T16:22:09.543Z",
       "reviewState": "source-observed",
       "venueId": "the-carleton-halifax",
       "neighbourhood": "Downtown",
@@ -1717,7 +1717,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "the-carleton",
       "sourceName": "The Carleton",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-10-20T11:46:19.431Z",
+      "observedAt": "2026-10-20T16:22:09.544Z",
       "reviewState": "source-observed",
       "venueId": "the-carleton-halifax",
       "neighbourhood": "Downtown",
@@ -1744,7 +1744,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "tourism-ns-events",
       "sourceName": "Tourism Nova Scotia Events",
       "sourceKind": "official_tourism_calendar",
-      "observedAt": "2026-10-20T11:46:13.317Z",
+      "observedAt": "2026-10-20T16:22:07.080Z",
       "reviewState": "source-observed",
       "alternateSources": [
         {
@@ -1773,12 +1773,8 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "halifax-mooseheads-home",
       "sourceName": "Halifax Mooseheads Home Schedule",
       "sourceKind": "official_sports_schedule",
-      "observedAt": "2026-10-20T11:46:14.723Z",
+      "observedAt": "2026-10-20T16:22:08.095Z",
       "reviewState": "source-observed",
-      "venueId": "scotiabank-centre-halifax",
-      "neighbourhood": "Downtown",
-      "organizerId": "halifax-mooseheads",
-      "organizerName": "Halifax Mooseheads",
       "sourceUrls": [
         "https://www.scotiabank-centre.com/events/2026-2027-halifax-mooseheads",
         "https://www.scotiabank-centre.com/premium-seating/eventcalendar"
@@ -1789,7 +1785,11 @@ window.HALIFAX_CITY_EVENTS = {
       ],
       "duplicateEventIds": [
         "scotiabank-centre-6f876a6c15e19412"
-      ]
+      ],
+      "venueId": "scotiabank-centre-halifax",
+      "neighbourhood": "Downtown",
+      "organizerId": "halifax-mooseheads",
+      "organizerName": "Halifax Mooseheads"
     },
     {
       "id": "rejigged-2026-10-24-ete-inn-echo",
@@ -1850,7 +1850,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "the-carleton",
       "sourceName": "The Carleton",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-10-20T11:46:19.431Z",
+      "observedAt": "2026-10-20T16:22:09.544Z",
       "reviewState": "source-observed",
       "venueId": "the-carleton-halifax",
       "neighbourhood": "Downtown",
@@ -1877,7 +1877,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "light-house-arts-centre",
       "sourceName": "Light House Arts Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-10-20T11:46:15.678Z",
+      "observedAt": "2026-10-20T16:22:08.335Z",
       "reviewState": "source-observed",
       "venueId": "light-house-arts-centre-halifax",
       "neighbourhood": "Downtown",
@@ -1904,7 +1904,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Convention Centre",
       "sourceKind": "official_venue_calendar",
       "sourceUrl": "https://www.halifaxconventioncentre.com/Events",
-      "observedAt": "2026-10-20T11:46:22.134Z",
+      "observedAt": "2026-10-20T16:22:11.722Z",
       "reviewState": "source_observed",
       "venueId": "halifax-convention-centre",
       "neighbourhood": "Downtown",
@@ -1931,7 +1931,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "the-carleton",
       "sourceName": "The Carleton",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-10-20T11:46:19.431Z",
+      "observedAt": "2026-10-20T16:22:09.544Z",
       "reviewState": "source-observed",
       "venueId": "the-carleton-halifax",
       "neighbourhood": "Downtown",
@@ -1958,7 +1958,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "hfx-wanderers-home",
       "sourceName": "HFX Wanderers 2026 Home Schedule",
       "sourceKind": "official_tourism_sports_schedule",
-      "observedAt": "2026-10-20T11:46:14.897Z",
+      "observedAt": "2026-10-20T16:22:08.157Z",
       "reviewState": "source-observed",
       "venueId": "wanderers-grounds-halifax",
       "neighbourhood": "Downtown",
@@ -1985,7 +1985,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "the-carleton",
       "sourceName": "The Carleton",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-10-20T11:46:19.432Z",
+      "observedAt": "2026-10-20T16:22:09.544Z",
       "reviewState": "source-observed",
       "venueId": "the-carleton-halifax",
       "neighbourhood": "Downtown",
@@ -2052,7 +2052,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "the-carleton",
       "sourceName": "The Carleton",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-10-20T11:46:19.432Z",
+      "observedAt": "2026-10-20T16:22:09.544Z",
       "reviewState": "source-observed",
       "venueId": "the-carleton-halifax",
       "neighbourhood": "Downtown",
@@ -2080,7 +2080,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Convention Centre",
       "sourceKind": "official_venue_calendar",
       "sourceUrl": "https://www.halifaxconventioncentre.com/Events",
-      "observedAt": "2026-10-20T11:46:22.134Z",
+      "observedAt": "2026-10-20T16:22:11.722Z",
       "reviewState": "source_observed",
       "venueId": "halifax-convention-centre",
       "neighbourhood": "Downtown",
@@ -2107,7 +2107,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "tourism-ns-events",
       "sourceName": "Tourism Nova Scotia Events",
       "sourceKind": "official_tourism_calendar",
-      "observedAt": "2026-10-20T11:46:13.314Z",
+      "observedAt": "2026-10-20T16:22:07.094Z",
       "reviewState": "source-observed",
       "alternateSources": [
         {
@@ -2137,7 +2137,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Symphony Nova Scotia",
       "sourceKind": "official_arts_calendar",
       "sourceUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
-      "observedAt": "2026-10-20T11:46:22.341Z",
+      "observedAt": "2026-10-20T16:22:11.888Z",
       "reviewState": "source_observed",
       "organizerId": "symphony-nova-scotia",
       "organizerName": "Symphony Nova Scotia"
@@ -2163,7 +2163,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "the-carleton",
       "sourceName": "The Carleton",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-10-20T11:46:19.432Z",
+      "observedAt": "2026-10-20T16:22:09.544Z",
       "reviewState": "source-observed",
       "venueId": "the-carleton-halifax",
       "neighbourhood": "Downtown",
@@ -2191,7 +2191,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "tourism-ns-events",
       "sourceName": "Tourism Nova Scotia Events",
       "sourceKind": "official_tourism_calendar",
-      "observedAt": "2026-10-20T11:46:13.320Z",
+      "observedAt": "2026-10-20T16:22:07.078Z",
       "reviewState": "source-observed",
       "alternateSources": [
         {
@@ -2222,7 +2222,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "the-carleton",
       "sourceName": "The Carleton",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-10-20T11:46:19.432Z",
+      "observedAt": "2026-10-20T16:22:09.545Z",
       "reviewState": "source-observed",
       "venueId": "the-carleton-halifax",
       "neighbourhood": "Downtown",
@@ -2250,7 +2250,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "light-house-arts-centre",
       "sourceName": "Light House Arts Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-10-20T11:46:15.580Z",
+      "observedAt": "2026-10-20T16:22:08.358Z",
       "reviewState": "source-observed",
       "venueId": "light-house-arts-centre-halifax",
       "neighbourhood": "Downtown",
@@ -2277,7 +2277,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Woodlawn Public Library",
       "sourceKind": "official_library_location_calendar",
       "sourceUrl": "https://www.halifaxpubliclibraries.ca/locations/woodlawn-public-library/",
-      "observedAt": "2026-10-20T11:49:00.228Z",
+      "observedAt": "2026-10-20T16:24:09.977Z",
       "reviewState": "source_observed",
       "latitude": 44.6715,
       "longitude": -63.5316,
@@ -2307,7 +2307,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "the-carleton",
       "sourceName": "The Carleton",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-10-20T11:46:19.432Z",
+      "observedAt": "2026-10-20T16:22:09.545Z",
       "reviewState": "source-observed",
       "venueId": "the-carleton-halifax",
       "neighbourhood": "Downtown",
@@ -2335,7 +2335,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "light-house-arts-centre",
       "sourceName": "Light House Arts Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-10-20T11:46:15.820Z",
+      "observedAt": "2026-10-20T16:22:08.349Z",
       "reviewState": "source-observed",
       "venueId": "light-house-arts-centre-halifax",
       "neighbourhood": "Downtown",
@@ -2362,7 +2362,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "tourism-ns-events",
       "sourceName": "Tourism Nova Scotia Events",
       "sourceKind": "official_tourism_calendar",
-      "observedAt": "2026-10-20T11:46:13.627Z",
+      "observedAt": "2026-10-20T16:22:07.263Z",
       "reviewState": "source-observed",
       "alternateSources": [
         {
@@ -2393,7 +2393,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "tourism-ns-events",
       "sourceName": "Tourism Nova Scotia Events",
       "sourceKind": "official_tourism_calendar",
-      "observedAt": "2026-10-20T11:46:13.624Z",
+      "observedAt": "2026-10-20T16:22:07.248Z",
       "reviewState": "source-observed",
       "alternateSources": [
         {
@@ -2423,7 +2423,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "tourism-ns-events",
       "sourceName": "Tourism Nova Scotia Events",
       "sourceKind": "official_tourism_calendar",
-      "observedAt": "2026-10-20T11:46:13.622Z",
+      "observedAt": "2026-10-20T16:22:07.244Z",
       "reviewState": "source-observed",
       "alternateSources": [
         {
@@ -2452,12 +2452,8 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "halifax-mooseheads-home",
       "sourceName": "Halifax Mooseheads Home Schedule",
       "sourceKind": "official_sports_schedule",
-      "observedAt": "2026-10-20T11:46:14.723Z",
+      "observedAt": "2026-10-20T16:22:08.096Z",
       "reviewState": "source-observed",
-      "venueId": "scotiabank-centre-halifax",
-      "neighbourhood": "Downtown",
-      "organizerId": "halifax-mooseheads",
-      "organizerName": "Halifax Mooseheads",
       "sourceUrls": [
         "https://www.scotiabank-centre.com/events/2026-2027-halifax-mooseheads",
         "https://www.scotiabank-centre.com/premium-seating/eventcalendar"
@@ -2468,7 +2464,11 @@ window.HALIFAX_CITY_EVENTS = {
       ],
       "duplicateEventIds": [
         "scotiabank-centre-0ef968ea58f5fd18"
-      ]
+      ],
+      "venueId": "scotiabank-centre-halifax",
+      "neighbourhood": "Downtown",
+      "organizerId": "halifax-mooseheads",
+      "organizerName": "Halifax Mooseheads"
     },
     {
       "id": "light-house-arts-centre-d85b861e6b284847",
@@ -2489,7 +2489,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "light-house-arts-centre",
       "sourceName": "Light House Arts Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-10-20T11:46:15.837Z",
+      "observedAt": "2026-10-20T16:22:08.360Z",
       "reviewState": "source-observed",
       "venueId": "light-house-arts-centre-halifax",
       "neighbourhood": "Downtown",
@@ -2515,12 +2515,8 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "halifax-mooseheads-home",
       "sourceName": "Halifax Mooseheads Home Schedule",
       "sourceKind": "official_sports_schedule",
-      "observedAt": "2026-10-20T11:46:14.723Z",
+      "observedAt": "2026-10-20T16:22:08.096Z",
       "reviewState": "source-observed",
-      "venueId": "scotiabank-centre-halifax",
-      "neighbourhood": "Downtown",
-      "organizerId": "halifax-mooseheads",
-      "organizerName": "Halifax Mooseheads",
       "sourceUrls": [
         "https://www.scotiabank-centre.com/events/2026-2027-halifax-mooseheads",
         "https://www.scotiabank-centre.com/premium-seating/eventcalendar"
@@ -2531,7 +2527,11 @@ window.HALIFAX_CITY_EVENTS = {
       ],
       "duplicateEventIds": [
         "scotiabank-centre-4aa74d0134a4c494"
-      ]
+      ],
+      "venueId": "scotiabank-centre-halifax",
+      "neighbourhood": "Downtown",
+      "organizerId": "halifax-mooseheads",
+      "organizerName": "Halifax Mooseheads"
     },
     {
       "id": "symphony-nova-scotia-44168ab3b63f800a",
@@ -2553,7 +2553,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Symphony Nova Scotia",
       "sourceKind": "official_arts_calendar",
       "sourceUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
-      "observedAt": "2026-10-20T11:46:22.342Z",
+      "observedAt": "2026-10-20T16:22:11.888Z",
       "reviewState": "source_observed",
       "organizerId": "symphony-nova-scotia",
       "organizerName": "Symphony Nova Scotia"
@@ -2577,7 +2577,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "neptune-theatre",
       "sourceName": "Neptune Theatre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-10-20T11:46:20.116Z",
+      "observedAt": "2026-10-20T16:22:09.875Z",
       "reviewState": "source-observed",
       "venueId": "neptune-theatre-halifax",
       "neighbourhood": "Downtown",
@@ -2669,7 +2669,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Symphony Nova Scotia",
       "sourceKind": "official_arts_calendar",
       "sourceUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
-      "observedAt": "2026-10-20T11:46:22.342Z",
+      "observedAt": "2026-10-20T16:22:11.888Z",
       "reviewState": "source_observed",
       "organizerId": "symphony-nova-scotia",
       "organizerName": "Symphony Nova Scotia"
@@ -2693,12 +2693,8 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "halifax-mooseheads-home",
       "sourceName": "Halifax Mooseheads Home Schedule",
       "sourceKind": "official_sports_schedule",
-      "observedAt": "2026-10-20T11:46:14.723Z",
+      "observedAt": "2026-10-20T16:22:08.096Z",
       "reviewState": "source-observed",
-      "venueId": "scotiabank-centre-halifax",
-      "neighbourhood": "Downtown",
-      "organizerId": "halifax-mooseheads",
-      "organizerName": "Halifax Mooseheads",
       "sourceUrls": [
         "https://www.scotiabank-centre.com/events/2026-2027-halifax-mooseheads",
         "https://www.scotiabank-centre.com/premium-seating/eventcalendar"
@@ -2709,7 +2705,11 @@ window.HALIFAX_CITY_EVENTS = {
       ],
       "duplicateEventIds": [
         "scotiabank-centre-35e094b8d4d906e1"
-      ]
+      ],
+      "venueId": "scotiabank-centre-halifax",
+      "neighbourhood": "Downtown",
+      "organizerId": "halifax-mooseheads",
+      "organizerName": "Halifax Mooseheads"
     },
     {
       "id": "halifax-mooseheads-home-536853c05094e224",
@@ -2730,12 +2730,8 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "halifax-mooseheads-home",
       "sourceName": "Halifax Mooseheads Home Schedule",
       "sourceKind": "official_sports_schedule",
-      "observedAt": "2026-10-20T11:46:14.723Z",
+      "observedAt": "2026-10-20T16:22:08.096Z",
       "reviewState": "source-observed",
-      "venueId": "scotiabank-centre-halifax",
-      "neighbourhood": "Downtown",
-      "organizerId": "halifax-mooseheads",
-      "organizerName": "Halifax Mooseheads",
       "sourceUrls": [
         "https://www.scotiabank-centre.com/events/2026-2027-halifax-mooseheads",
         "https://www.scotiabank-centre.com/premium-seating/eventcalendar"
@@ -2746,7 +2742,11 @@ window.HALIFAX_CITY_EVENTS = {
       ],
       "duplicateEventIds": [
         "scotiabank-centre-5fc3601b9887c6a8"
-      ]
+      ],
+      "venueId": "scotiabank-centre-halifax",
+      "neighbourhood": "Downtown",
+      "organizerId": "halifax-mooseheads",
+      "organizerName": "Halifax Mooseheads"
     },
     {
       "id": "symphony-nova-scotia-86eb93b9861b75f0",
@@ -2768,7 +2768,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Symphony Nova Scotia",
       "sourceKind": "official_arts_calendar",
       "sourceUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
-      "observedAt": "2026-10-20T11:46:22.342Z",
+      "observedAt": "2026-10-20T16:22:11.889Z",
       "reviewState": "source_observed",
       "organizerId": "symphony-nova-scotia",
       "organizerName": "Symphony Nova Scotia"
@@ -2792,7 +2792,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "light-house-arts-centre",
       "sourceName": "Light House Arts Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-10-20T11:46:15.657Z",
+      "observedAt": "2026-10-20T16:22:08.364Z",
       "reviewState": "source-observed",
       "venueId": "light-house-arts-centre-halifax",
       "neighbourhood": "Downtown",
@@ -2819,7 +2819,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Symphony Nova Scotia",
       "sourceKind": "official_arts_calendar",
       "sourceUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
-      "observedAt": "2026-10-20T11:46:22.342Z",
+      "observedAt": "2026-10-20T16:22:11.889Z",
       "reviewState": "source_observed",
       "organizerId": "symphony-nova-scotia",
       "organizerName": "Symphony Nova Scotia"
@@ -2843,7 +2843,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "scotiabank-centre",
       "sourceName": "Scotiabank Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-10-20T11:46:14.782Z",
+      "observedAt": "2026-10-20T16:22:08.126Z",
       "reviewState": "source-observed",
       "venueId": "scotiabank-centre-halifax",
       "neighbourhood": "Downtown",
@@ -2869,7 +2869,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "light-house-arts-centre",
       "sourceName": "Light House Arts Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-10-20T11:46:15.863Z",
+      "observedAt": "2026-10-20T16:22:08.393Z",
       "reviewState": "source-observed",
       "venueId": "light-house-arts-centre-halifax",
       "neighbourhood": "Downtown",
@@ -2896,7 +2896,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Symphony Nova Scotia",
       "sourceKind": "official_arts_calendar",
       "sourceUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
-      "observedAt": "2026-10-20T11:46:22.343Z",
+      "observedAt": "2026-10-20T16:22:11.889Z",
       "reviewState": "source_observed",
       "organizerId": "symphony-nova-scotia",
       "organizerName": "Symphony Nova Scotia"
@@ -2921,7 +2921,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "light-house-arts-centre",
       "sourceName": "Light House Arts Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-10-20T11:46:16.019Z",
+      "observedAt": "2026-10-20T16:22:08.391Z",
       "reviewState": "source-observed",
       "venueId": "light-house-arts-centre-halifax",
       "neighbourhood": "Downtown",
@@ -2947,12 +2947,8 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "halifax-mooseheads-home",
       "sourceName": "Halifax Mooseheads Home Schedule",
       "sourceKind": "official_sports_schedule",
-      "observedAt": "2026-10-20T11:46:14.723Z",
+      "observedAt": "2026-10-20T16:22:08.096Z",
       "reviewState": "source-observed",
-      "venueId": "scotiabank-centre-halifax",
-      "neighbourhood": "Downtown",
-      "organizerId": "halifax-mooseheads",
-      "organizerName": "Halifax Mooseheads",
       "sourceUrls": [
         "https://www.scotiabank-centre.com/events/2026-2027-halifax-mooseheads",
         "https://www.scotiabank-centre.com/premium-seating/eventcalendar"
@@ -2963,7 +2959,11 @@ window.HALIFAX_CITY_EVENTS = {
       ],
       "duplicateEventIds": [
         "scotiabank-centre-b65256d5b48b1e8a"
-      ]
+      ],
+      "venueId": "scotiabank-centre-halifax",
+      "neighbourhood": "Downtown",
+      "organizerId": "halifax-mooseheads",
+      "organizerName": "Halifax Mooseheads"
     },
     {
       "id": "symphony-nova-scotia-d9c8589b8effa43a",
@@ -2985,7 +2985,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Symphony Nova Scotia",
       "sourceKind": "official_arts_calendar",
       "sourceUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
-      "observedAt": "2026-10-20T11:46:22.343Z",
+      "observedAt": "2026-10-20T16:22:11.890Z",
       "reviewState": "source_observed",
       "organizerId": "symphony-nova-scotia",
       "organizerName": "Symphony Nova Scotia"
@@ -3075,7 +3075,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Symphony Nova Scotia",
       "sourceKind": "official_arts_calendar",
       "sourceUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
-      "observedAt": "2026-10-20T11:46:22.343Z",
+      "observedAt": "2026-10-20T16:22:11.890Z",
       "reviewState": "source_observed",
       "organizerId": "symphony-nova-scotia",
       "organizerName": "Symphony Nova Scotia"
@@ -3099,7 +3099,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "scotiabank-centre",
       "sourceName": "Scotiabank Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-10-20T11:46:14.782Z",
+      "observedAt": "2026-10-20T16:22:08.126Z",
       "reviewState": "source-observed",
       "venueId": "scotiabank-centre-halifax",
       "neighbourhood": "Downtown",
@@ -3125,12 +3125,8 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "halifax-mooseheads-home",
       "sourceName": "Halifax Mooseheads Home Schedule",
       "sourceKind": "official_sports_schedule",
-      "observedAt": "2026-10-20T11:46:14.723Z",
+      "observedAt": "2026-10-20T16:22:08.096Z",
       "reviewState": "source-observed",
-      "venueId": "scotiabank-centre-halifax",
-      "neighbourhood": "Downtown",
-      "organizerId": "halifax-mooseheads",
-      "organizerName": "Halifax Mooseheads",
       "sourceUrls": [
         "https://www.scotiabank-centre.com/events/2026-2027-halifax-mooseheads",
         "https://www.scotiabank-centre.com/premium-seating/eventcalendar"
@@ -3141,7 +3137,11 @@ window.HALIFAX_CITY_EVENTS = {
       ],
       "duplicateEventIds": [
         "scotiabank-centre-0342c403f89d593c"
-      ]
+      ],
+      "venueId": "scotiabank-centre-halifax",
+      "neighbourhood": "Downtown",
+      "organizerId": "halifax-mooseheads",
+      "organizerName": "Halifax Mooseheads"
     },
     {
       "id": "scotiabank-centre-b174de9bdc12e481",
@@ -3162,7 +3162,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "scotiabank-centre",
       "sourceName": "Scotiabank Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-10-20T11:46:14.782Z",
+      "observedAt": "2026-10-20T16:22:08.126Z",
       "reviewState": "source-observed",
       "venueId": "scotiabank-centre-halifax",
       "neighbourhood": "Downtown",
@@ -3189,7 +3189,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Symphony Nova Scotia",
       "sourceKind": "official_arts_calendar",
       "sourceUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
-      "observedAt": "2026-10-20T11:46:22.344Z",
+      "observedAt": "2026-10-20T16:22:11.890Z",
       "reviewState": "source_observed",
       "organizerId": "symphony-nova-scotia",
       "organizerName": "Symphony Nova Scotia"
@@ -3214,7 +3214,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Symphony Nova Scotia",
       "sourceKind": "official_arts_calendar",
       "sourceUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
-      "observedAt": "2026-10-20T11:46:22.344Z",
+      "observedAt": "2026-10-20T16:22:11.890Z",
       "reviewState": "source_observed",
       "organizerId": "symphony-nova-scotia",
       "organizerName": "Symphony Nova Scotia"
@@ -3240,7 +3240,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "light-house-arts-centre",
       "sourceName": "Light House Arts Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-10-20T11:46:15.867Z",
+      "observedAt": "2026-10-20T16:22:08.390Z",
       "reviewState": "source-observed",
       "alternateSources": [
         {
@@ -3274,7 +3274,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "scotiabank-centre",
       "sourceName": "Scotiabank Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-10-20T11:46:14.782Z",
+      "observedAt": "2026-10-20T16:22:08.126Z",
       "reviewState": "source-observed",
       "venueId": "scotiabank-centre-halifax",
       "neighbourhood": "Downtown",
@@ -3300,12 +3300,8 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "halifax-mooseheads-home",
       "sourceName": "Halifax Mooseheads Home Schedule",
       "sourceKind": "official_sports_schedule",
-      "observedAt": "2026-10-20T11:46:14.723Z",
+      "observedAt": "2026-10-20T16:22:08.096Z",
       "reviewState": "source-observed",
-      "venueId": "scotiabank-centre-halifax",
-      "neighbourhood": "Downtown",
-      "organizerId": "halifax-mooseheads",
-      "organizerName": "Halifax Mooseheads",
       "sourceUrls": [
         "https://www.scotiabank-centre.com/events/2026-2027-halifax-mooseheads",
         "https://www.scotiabank-centre.com/premium-seating/eventcalendar"
@@ -3316,7 +3312,11 @@ window.HALIFAX_CITY_EVENTS = {
       ],
       "duplicateEventIds": [
         "scotiabank-centre-601d54cd62df4b9e"
-      ]
+      ],
+      "venueId": "scotiabank-centre-halifax",
+      "neighbourhood": "Downtown",
+      "organizerId": "halifax-mooseheads",
+      "organizerName": "Halifax Mooseheads"
     },
     {
       "id": "light-house-arts-centre-2a66049e2ac3c182",
@@ -3339,7 +3339,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "light-house-arts-centre",
       "sourceName": "Light House Arts Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-10-20T11:46:15.868Z",
+      "observedAt": "2026-10-20T16:22:08.394Z",
       "reviewState": "source-observed",
       "venueId": "light-house-arts-centre-halifax",
       "neighbourhood": "Downtown",
@@ -3365,7 +3365,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "light-house-arts-centre",
       "sourceName": "Light House Arts Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-10-20T11:46:16.085Z",
+      "observedAt": "2026-10-20T16:22:08.417Z",
       "reviewState": "source-observed",
       "venueId": "light-house-arts-centre-halifax",
       "neighbourhood": "Downtown",
@@ -3391,7 +3391,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "light-house-arts-centre",
       "sourceName": "Light House Arts Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-10-20T11:46:16.085Z",
+      "observedAt": "2026-10-20T16:22:08.420Z",
       "reviewState": "source-observed",
       "venueId": "light-house-arts-centre-halifax",
       "neighbourhood": "Downtown",
@@ -3417,7 +3417,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "scotiabank-centre",
       "sourceName": "Scotiabank Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-10-20T11:46:14.782Z",
+      "observedAt": "2026-10-20T16:22:08.126Z",
       "reviewState": "source-observed",
       "venueId": "scotiabank-centre-halifax",
       "neighbourhood": "Downtown",
@@ -3443,7 +3443,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "light-house-arts-centre",
       "sourceName": "Light House Arts Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-10-20T11:46:16.089Z",
+      "observedAt": "2026-10-20T16:22:08.419Z",
       "reviewState": "source-observed",
       "venueId": "light-house-arts-centre-halifax",
       "neighbourhood": "Downtown",
@@ -3469,12 +3469,8 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "halifax-mooseheads-home",
       "sourceName": "Halifax Mooseheads Home Schedule",
       "sourceKind": "official_sports_schedule",
-      "observedAt": "2026-10-20T11:46:14.723Z",
+      "observedAt": "2026-10-20T16:22:08.096Z",
       "reviewState": "source-observed",
-      "venueId": "scotiabank-centre-halifax",
-      "neighbourhood": "Downtown",
-      "organizerId": "halifax-mooseheads",
-      "organizerName": "Halifax Mooseheads",
       "sourceUrls": [
         "https://www.scotiabank-centre.com/events/2026-2027-halifax-mooseheads",
         "https://www.scotiabank-centre.com/premium-seating/eventcalendar"
@@ -3485,7 +3481,11 @@ window.HALIFAX_CITY_EVENTS = {
       ],
       "duplicateEventIds": [
         "scotiabank-centre-0c1a1e33ba23dd60"
-      ]
+      ],
+      "venueId": "scotiabank-centre-halifax",
+      "neighbourhood": "Downtown",
+      "organizerId": "halifax-mooseheads",
+      "organizerName": "Halifax Mooseheads"
     },
     {
       "id": "light-house-arts-centre-13e2dc9aaac0deb1",
@@ -3506,7 +3506,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "light-house-arts-centre",
       "sourceName": "Light House Arts Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-10-20T11:46:16.087Z",
+      "observedAt": "2026-10-20T16:22:08.418Z",
       "reviewState": "source-observed",
       "venueId": "light-house-arts-centre-halifax",
       "neighbourhood": "Downtown",
@@ -3532,12 +3532,8 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "halifax-mooseheads-home",
       "sourceName": "Halifax Mooseheads Home Schedule",
       "sourceKind": "official_sports_schedule",
-      "observedAt": "2026-10-20T11:46:14.724Z",
+      "observedAt": "2026-10-20T16:22:08.096Z",
       "reviewState": "source-observed",
-      "venueId": "scotiabank-centre-halifax",
-      "neighbourhood": "Downtown",
-      "organizerId": "halifax-mooseheads",
-      "organizerName": "Halifax Mooseheads",
       "sourceUrls": [
         "https://www.scotiabank-centre.com/events/2026-2027-halifax-mooseheads",
         "https://www.scotiabank-centre.com/premium-seating/eventcalendar"
@@ -3548,7 +3544,11 @@ window.HALIFAX_CITY_EVENTS = {
       ],
       "duplicateEventIds": [
         "scotiabank-centre-12dc1b0fb5db979e"
-      ]
+      ],
+      "venueId": "scotiabank-centre-halifax",
+      "neighbourhood": "Downtown",
+      "organizerId": "halifax-mooseheads",
+      "organizerName": "Halifax Mooseheads"
     },
     {
       "id": "light-house-arts-centre-86086d309a5b774a",
@@ -3569,7 +3569,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "light-house-arts-centre",
       "sourceName": "Light House Arts Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-10-20T11:46:16.090Z",
+      "observedAt": "2026-10-20T16:22:08.423Z",
       "reviewState": "source-observed",
       "venueId": "light-house-arts-centre-halifax",
       "neighbourhood": "Downtown",
@@ -3595,7 +3595,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "light-house-arts-centre",
       "sourceName": "Light House Arts Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-10-20T11:46:16.239Z",
+      "observedAt": "2026-10-20T16:22:08.444Z",
       "reviewState": "source-observed",
       "venueId": "light-house-arts-centre-halifax",
       "neighbourhood": "Downtown",
@@ -3621,12 +3621,8 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "halifax-mooseheads-home",
       "sourceName": "Halifax Mooseheads Home Schedule",
       "sourceKind": "official_sports_schedule",
-      "observedAt": "2026-10-20T11:46:14.724Z",
+      "observedAt": "2026-10-20T16:22:08.096Z",
       "reviewState": "source-observed",
-      "venueId": "scotiabank-centre-halifax",
-      "neighbourhood": "Downtown",
-      "organizerId": "halifax-mooseheads",
-      "organizerName": "Halifax Mooseheads",
       "sourceUrls": [
         "https://www.scotiabank-centre.com/events/2026-2027-halifax-mooseheads",
         "https://www.scotiabank-centre.com/premium-seating/eventcalendar"
@@ -3637,7 +3633,11 @@ window.HALIFAX_CITY_EVENTS = {
       ],
       "duplicateEventIds": [
         "scotiabank-centre-5cd25f2f6fabf656"
-      ]
+      ],
+      "venueId": "scotiabank-centre-halifax",
+      "neighbourhood": "Downtown",
+      "organizerId": "halifax-mooseheads",
+      "organizerName": "Halifax Mooseheads"
     },
     {
       "id": "symphony-nova-scotia-6402d5cbf4fc933f",
@@ -3659,7 +3659,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Symphony Nova Scotia",
       "sourceKind": "official_arts_calendar",
       "sourceUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
-      "observedAt": "2026-10-20T11:46:22.344Z",
+      "observedAt": "2026-10-20T16:22:11.890Z",
       "reviewState": "source_observed",
       "organizerId": "symphony-nova-scotia",
       "organizerName": "Symphony Nova Scotia"
@@ -3683,7 +3683,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "scotiabank-centre",
       "sourceName": "Scotiabank Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-10-20T11:46:14.782Z",
+      "observedAt": "2026-10-20T16:22:08.127Z",
       "reviewState": "source-observed",
       "venueId": "scotiabank-centre-halifax",
       "neighbourhood": "Downtown",
@@ -3710,7 +3710,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Symphony Nova Scotia",
       "sourceKind": "official_arts_calendar",
       "sourceUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
-      "observedAt": "2026-10-20T11:46:22.344Z",
+      "observedAt": "2026-10-20T16:22:11.891Z",
       "reviewState": "source_observed",
       "organizerId": "symphony-nova-scotia",
       "organizerName": "Symphony Nova Scotia"
@@ -3735,7 +3735,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "light-house-arts-centre",
       "sourceName": "Light House Arts Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-10-20T11:46:16.255Z",
+      "observedAt": "2026-10-20T16:22:08.441Z",
       "reviewState": "source-observed",
       "venueId": "light-house-arts-centre-halifax",
       "neighbourhood": "Downtown",
@@ -3763,7 +3763,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "scotiabank-centre",
       "sourceName": "Scotiabank Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-10-20T11:46:14.783Z",
+      "observedAt": "2026-10-20T16:22:08.127Z",
       "reviewState": "source-observed",
       "venueId": "scotiabank-centre-halifax",
       "neighbourhood": "Downtown",
@@ -3791,7 +3791,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "scotiabank-centre",
       "sourceName": "Scotiabank Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-10-20T11:46:14.783Z",
+      "observedAt": "2026-10-20T16:22:08.127Z",
       "reviewState": "source-observed",
       "alternateSources": [
         {
@@ -3826,7 +3826,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "scotiabank-centre",
       "sourceName": "Scotiabank Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-10-20T11:46:14.783Z",
+      "observedAt": "2026-10-20T16:22:08.127Z",
       "reviewState": "source-observed",
       "alternateSources": [
         {
@@ -3859,12 +3859,8 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "halifax-mooseheads-home",
       "sourceName": "Halifax Mooseheads Home Schedule",
       "sourceKind": "official_sports_schedule",
-      "observedAt": "2026-10-20T11:46:14.724Z",
+      "observedAt": "2026-10-20T16:22:08.096Z",
       "reviewState": "source-observed",
-      "venueId": "scotiabank-centre-halifax",
-      "neighbourhood": "Downtown",
-      "organizerId": "halifax-mooseheads",
-      "organizerName": "Halifax Mooseheads",
       "sourceUrls": [
         "https://www.scotiabank-centre.com/events/2026-2027-halifax-mooseheads",
         "https://www.scotiabank-centre.com/premium-seating/eventcalendar"
@@ -3875,7 +3871,11 @@ window.HALIFAX_CITY_EVENTS = {
       ],
       "duplicateEventIds": [
         "scotiabank-centre-490e852f4c41382d"
-      ]
+      ],
+      "venueId": "scotiabank-centre-halifax",
+      "neighbourhood": "Downtown",
+      "organizerId": "halifax-mooseheads",
+      "organizerName": "Halifax Mooseheads"
     },
     {
       "id": "halifax-mooseheads-home-bc37448b281102d5",
@@ -3896,12 +3896,8 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "halifax-mooseheads-home",
       "sourceName": "Halifax Mooseheads Home Schedule",
       "sourceKind": "official_sports_schedule",
-      "observedAt": "2026-10-20T11:46:14.724Z",
+      "observedAt": "2026-10-20T16:22:08.096Z",
       "reviewState": "source-observed",
-      "venueId": "scotiabank-centre-halifax",
-      "neighbourhood": "Downtown",
-      "organizerId": "halifax-mooseheads",
-      "organizerName": "Halifax Mooseheads",
       "sourceUrls": [
         "https://www.scotiabank-centre.com/events/2026-2027-halifax-mooseheads",
         "https://www.scotiabank-centre.com/premium-seating/eventcalendar"
@@ -3912,7 +3908,11 @@ window.HALIFAX_CITY_EVENTS = {
       ],
       "duplicateEventIds": [
         "scotiabank-centre-ea565d75bdb9a37c"
-      ]
+      ],
+      "venueId": "scotiabank-centre-halifax",
+      "neighbourhood": "Downtown",
+      "organizerId": "halifax-mooseheads",
+      "organizerName": "Halifax Mooseheads"
     },
     {
       "id": "halifax-mooseheads-home-c2bc145d9b94d479",
@@ -3933,12 +3933,8 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "halifax-mooseheads-home",
       "sourceName": "Halifax Mooseheads Home Schedule",
       "sourceKind": "official_sports_schedule",
-      "observedAt": "2026-10-20T11:46:14.724Z",
+      "observedAt": "2026-10-20T16:22:08.096Z",
       "reviewState": "source-observed",
-      "venueId": "scotiabank-centre-halifax",
-      "neighbourhood": "Downtown",
-      "organizerId": "halifax-mooseheads",
-      "organizerName": "Halifax Mooseheads",
       "sourceUrls": [
         "https://www.scotiabank-centre.com/events/2026-2027-halifax-mooseheads",
         "https://www.scotiabank-centre.com/premium-seating/eventcalendar"
@@ -3949,7 +3945,11 @@ window.HALIFAX_CITY_EVENTS = {
       ],
       "duplicateEventIds": [
         "scotiabank-centre-1471efbe8cbbcdf8"
-      ]
+      ],
+      "venueId": "scotiabank-centre-halifax",
+      "neighbourhood": "Downtown",
+      "organizerId": "halifax-mooseheads",
+      "organizerName": "Halifax Mooseheads"
     },
     {
       "id": "scotiabank-centre-574e9eda4595efc5",
@@ -3971,7 +3971,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "scotiabank-centre",
       "sourceName": "Scotiabank Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-10-20T11:46:14.783Z",
+      "observedAt": "2026-10-20T16:22:08.127Z",
       "reviewState": "source-observed",
       "venueId": "scotiabank-centre-halifax",
       "neighbourhood": "Downtown",
@@ -3998,7 +3998,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "light-house-arts-centre",
       "sourceName": "Light House Arts Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-10-20T11:46:16.437Z",
+      "observedAt": "2026-10-20T16:22:08.449Z",
       "reviewState": "source-observed",
       "venueId": "light-house-arts-centre-halifax",
       "neighbourhood": "Downtown",
@@ -4024,12 +4024,8 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "halifax-mooseheads-home",
       "sourceName": "Halifax Mooseheads Home Schedule",
       "sourceKind": "official_sports_schedule",
-      "observedAt": "2026-10-20T11:46:14.724Z",
+      "observedAt": "2026-10-20T16:22:08.096Z",
       "reviewState": "source-observed",
-      "venueId": "scotiabank-centre-halifax",
-      "neighbourhood": "Downtown",
-      "organizerId": "halifax-mooseheads",
-      "organizerName": "Halifax Mooseheads",
       "sourceUrls": [
         "https://www.scotiabank-centre.com/events/2026-2027-halifax-mooseheads",
         "https://www.scotiabank-centre.com/premium-seating/eventcalendar"
@@ -4040,7 +4036,11 @@ window.HALIFAX_CITY_EVENTS = {
       ],
       "duplicateEventIds": [
         "scotiabank-centre-e265f6a1762591dc"
-      ]
+      ],
+      "venueId": "scotiabank-centre-halifax",
+      "neighbourhood": "Downtown",
+      "organizerId": "halifax-mooseheads",
+      "organizerName": "Halifax Mooseheads"
     },
     {
       "id": "symphony-nova-scotia-54a396697c4c17a5",
@@ -4062,7 +4062,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Symphony Nova Scotia",
       "sourceKind": "official_arts_calendar",
       "sourceUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
-      "observedAt": "2026-10-20T11:46:22.345Z",
+      "observedAt": "2026-10-20T16:22:11.891Z",
       "reviewState": "source_observed",
       "organizerId": "symphony-nova-scotia",
       "organizerName": "Symphony Nova Scotia"
@@ -4086,12 +4086,8 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "halifax-mooseheads-home",
       "sourceName": "Halifax Mooseheads Home Schedule",
       "sourceKind": "official_sports_schedule",
-      "observedAt": "2026-10-20T11:46:14.724Z",
+      "observedAt": "2026-10-20T16:22:08.096Z",
       "reviewState": "source-observed",
-      "venueId": "scotiabank-centre-halifax",
-      "neighbourhood": "Downtown",
-      "organizerId": "halifax-mooseheads",
-      "organizerName": "Halifax Mooseheads",
       "sourceUrls": [
         "https://www.scotiabank-centre.com/events/2026-2027-halifax-mooseheads",
         "https://www.scotiabank-centre.com/premium-seating/eventcalendar"
@@ -4102,7 +4098,11 @@ window.HALIFAX_CITY_EVENTS = {
       ],
       "duplicateEventIds": [
         "scotiabank-centre-ba5e825b077ced2a"
-      ]
+      ],
+      "venueId": "scotiabank-centre-halifax",
+      "neighbourhood": "Downtown",
+      "organizerId": "halifax-mooseheads",
+      "organizerName": "Halifax Mooseheads"
     },
     {
       "id": "scotiabank-centre-20a1feacf4e0b8e9",
@@ -4123,7 +4123,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "scotiabank-centre",
       "sourceName": "Scotiabank Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-10-20T11:46:14.783Z",
+      "observedAt": "2026-10-20T16:22:08.127Z",
       "reviewState": "source-observed",
       "venueId": "scotiabank-centre-halifax",
       "neighbourhood": "Downtown",
@@ -4150,7 +4150,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Symphony Nova Scotia",
       "sourceKind": "official_arts_calendar",
       "sourceUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
-      "observedAt": "2026-10-20T11:46:22.345Z",
+      "observedAt": "2026-10-20T16:22:11.891Z",
       "reviewState": "source_observed",
       "organizerId": "symphony-nova-scotia",
       "organizerName": "Symphony Nova Scotia"
@@ -4175,7 +4175,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Symphony Nova Scotia",
       "sourceKind": "official_arts_calendar",
       "sourceUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
-      "observedAt": "2026-10-20T11:46:22.345Z",
+      "observedAt": "2026-10-20T16:22:11.891Z",
       "reviewState": "source_observed",
       "organizerId": "symphony-nova-scotia",
       "organizerName": "Symphony Nova Scotia"
@@ -4199,12 +4199,8 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "halifax-mooseheads-home",
       "sourceName": "Halifax Mooseheads Home Schedule",
       "sourceKind": "official_sports_schedule",
-      "observedAt": "2026-10-20T11:46:14.724Z",
+      "observedAt": "2026-10-20T16:22:08.096Z",
       "reviewState": "source-observed",
-      "venueId": "scotiabank-centre-halifax",
-      "neighbourhood": "Downtown",
-      "organizerId": "halifax-mooseheads",
-      "organizerName": "Halifax Mooseheads",
       "sourceUrls": [
         "https://www.scotiabank-centre.com/events/2026-2027-halifax-mooseheads",
         "https://www.scotiabank-centre.com/premium-seating/eventcalendar"
@@ -4215,7 +4211,11 @@ window.HALIFAX_CITY_EVENTS = {
       ],
       "duplicateEventIds": [
         "scotiabank-centre-872fa2640326de2c"
-      ]
+      ],
+      "venueId": "scotiabank-centre-halifax",
+      "neighbourhood": "Downtown",
+      "organizerId": "halifax-mooseheads",
+      "organizerName": "Halifax Mooseheads"
     },
     {
       "id": "halifax-mooseheads-home-710b7ca4a4465b9e",
@@ -4236,12 +4236,8 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "halifax-mooseheads-home",
       "sourceName": "Halifax Mooseheads Home Schedule",
       "sourceKind": "official_sports_schedule",
-      "observedAt": "2026-10-20T11:46:14.724Z",
+      "observedAt": "2026-10-20T16:22:08.096Z",
       "reviewState": "source-observed",
-      "venueId": "scotiabank-centre-halifax",
-      "neighbourhood": "Downtown",
-      "organizerId": "halifax-mooseheads",
-      "organizerName": "Halifax Mooseheads",
       "sourceUrls": [
         "https://www.scotiabank-centre.com/events/2026-2027-halifax-mooseheads",
         "https://www.scotiabank-centre.com/premium-seating/eventcalendar"
@@ -4252,7 +4248,11 @@ window.HALIFAX_CITY_EVENTS = {
       ],
       "duplicateEventIds": [
         "scotiabank-centre-9e7b3b698e1d5ed3"
-      ]
+      ],
+      "venueId": "scotiabank-centre-halifax",
+      "neighbourhood": "Downtown",
+      "organizerId": "halifax-mooseheads",
+      "organizerName": "Halifax Mooseheads"
     },
     {
       "id": "symphony-nova-scotia-1b2a516112bd26f8",
@@ -4274,7 +4274,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Symphony Nova Scotia",
       "sourceKind": "official_arts_calendar",
       "sourceUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
-      "observedAt": "2026-10-20T11:46:22.345Z",
+      "observedAt": "2026-10-20T16:22:11.892Z",
       "reviewState": "source_observed",
       "organizerId": "symphony-nova-scotia",
       "organizerName": "Symphony Nova Scotia"
@@ -4298,12 +4298,8 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "halifax-mooseheads-home",
       "sourceName": "Halifax Mooseheads Home Schedule",
       "sourceKind": "official_sports_schedule",
-      "observedAt": "2026-10-20T11:46:14.724Z",
+      "observedAt": "2026-10-20T16:22:08.096Z",
       "reviewState": "source-observed",
-      "venueId": "scotiabank-centre-halifax",
-      "neighbourhood": "Downtown",
-      "organizerId": "halifax-mooseheads",
-      "organizerName": "Halifax Mooseheads",
       "sourceUrls": [
         "https://www.scotiabank-centre.com/events/2026-2027-halifax-mooseheads",
         "https://www.scotiabank-centre.com/premium-seating/eventcalendar"
@@ -4314,7 +4310,11 @@ window.HALIFAX_CITY_EVENTS = {
       ],
       "duplicateEventIds": [
         "scotiabank-centre-efe4236cc4e096f8"
-      ]
+      ],
+      "venueId": "scotiabank-centre-halifax",
+      "neighbourhood": "Downtown",
+      "organizerId": "halifax-mooseheads",
+      "organizerName": "Halifax Mooseheads"
     },
     {
       "id": "light-house-arts-centre-2db799520b52b84e",
@@ -4336,7 +4336,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "light-house-arts-centre",
       "sourceName": "Light House Arts Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-10-20T11:46:16.257Z",
+      "observedAt": "2026-10-20T16:22:08.451Z",
       "reviewState": "source-observed",
       "venueId": "light-house-arts-centre-halifax",
       "neighbourhood": "Downtown",
@@ -4362,12 +4362,8 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "halifax-mooseheads-home",
       "sourceName": "Halifax Mooseheads Home Schedule",
       "sourceKind": "official_sports_schedule",
-      "observedAt": "2026-10-20T11:46:14.724Z",
+      "observedAt": "2026-10-20T16:22:08.096Z",
       "reviewState": "source-observed",
-      "venueId": "scotiabank-centre-halifax",
-      "neighbourhood": "Downtown",
-      "organizerId": "halifax-mooseheads",
-      "organizerName": "Halifax Mooseheads",
       "sourceUrls": [
         "https://www.scotiabank-centre.com/events/2026-2027-halifax-mooseheads",
         "https://www.scotiabank-centre.com/premium-seating/eventcalendar"
@@ -4378,7 +4374,11 @@ window.HALIFAX_CITY_EVENTS = {
       ],
       "duplicateEventIds": [
         "scotiabank-centre-f7d9cb6a2ebda2f7"
-      ]
+      ],
+      "venueId": "scotiabank-centre-halifax",
+      "neighbourhood": "Downtown",
+      "organizerId": "halifax-mooseheads",
+      "organizerName": "Halifax Mooseheads"
     },
     {
       "id": "scotiabank-centre-22fc2c574fd24d6b",
@@ -4399,7 +4399,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "scotiabank-centre",
       "sourceName": "Scotiabank Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-10-20T11:46:14.783Z",
+      "observedAt": "2026-10-20T16:22:08.127Z",
       "reviewState": "source-observed",
       "venueId": "scotiabank-centre-halifax",
       "neighbourhood": "Downtown",
@@ -4426,7 +4426,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Symphony Nova Scotia",
       "sourceKind": "official_arts_calendar",
       "sourceUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
-      "observedAt": "2026-10-20T11:46:22.345Z",
+      "observedAt": "2026-10-20T16:22:11.892Z",
       "reviewState": "source_observed",
       "organizerId": "symphony-nova-scotia",
       "organizerName": "Symphony Nova Scotia"
@@ -4450,7 +4450,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "scotiabank-centre",
       "sourceName": "Scotiabank Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-10-20T11:46:14.783Z",
+      "observedAt": "2026-10-20T16:22:08.127Z",
       "reviewState": "source-observed",
       "venueId": "scotiabank-centre-halifax",
       "neighbourhood": "Downtown",
@@ -4476,12 +4476,8 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "halifax-mooseheads-home",
       "sourceName": "Halifax Mooseheads Home Schedule",
       "sourceKind": "official_sports_schedule",
-      "observedAt": "2026-10-20T11:46:14.724Z",
+      "observedAt": "2026-10-20T16:22:08.097Z",
       "reviewState": "source-observed",
-      "venueId": "scotiabank-centre-halifax",
-      "neighbourhood": "Downtown",
-      "organizerId": "halifax-mooseheads",
-      "organizerName": "Halifax Mooseheads",
       "sourceUrls": [
         "https://www.scotiabank-centre.com/events/2026-2027-halifax-mooseheads",
         "https://www.scotiabank-centre.com/premium-seating/eventcalendar"
@@ -4492,7 +4488,11 @@ window.HALIFAX_CITY_EVENTS = {
       ],
       "duplicateEventIds": [
         "scotiabank-centre-9c8c8b29cc55c12b"
-      ]
+      ],
+      "venueId": "scotiabank-centre-halifax",
+      "neighbourhood": "Downtown",
+      "organizerId": "halifax-mooseheads",
+      "organizerName": "Halifax Mooseheads"
     },
     {
       "id": "halifax-mooseheads-home-272919a6da116f6d",
@@ -4513,12 +4513,8 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "halifax-mooseheads-home",
       "sourceName": "Halifax Mooseheads Home Schedule",
       "sourceKind": "official_sports_schedule",
-      "observedAt": "2026-10-20T11:46:14.724Z",
+      "observedAt": "2026-10-20T16:22:08.097Z",
       "reviewState": "source-observed",
-      "venueId": "scotiabank-centre-halifax",
-      "neighbourhood": "Downtown",
-      "organizerId": "halifax-mooseheads",
-      "organizerName": "Halifax Mooseheads",
       "sourceUrls": [
         "https://www.scotiabank-centre.com/events/2026-2027-halifax-mooseheads",
         "https://www.scotiabank-centre.com/premium-seating/eventcalendar"
@@ -4529,7 +4525,11 @@ window.HALIFAX_CITY_EVENTS = {
       ],
       "duplicateEventIds": [
         "scotiabank-centre-99dd96c34eb42250"
-      ]
+      ],
+      "venueId": "scotiabank-centre-halifax",
+      "neighbourhood": "Downtown",
+      "organizerId": "halifax-mooseheads",
+      "organizerName": "Halifax Mooseheads"
     },
     {
       "id": "neptune-theatre-0234f7976c2b6015",
@@ -4551,7 +4551,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "neptune-theatre",
       "sourceName": "Neptune Theatre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-10-20T11:46:20.116Z",
+      "observedAt": "2026-10-20T16:22:09.876Z",
       "reviewState": "source-observed",
       "venueId": "neptune-theatre-halifax",
       "neighbourhood": "Downtown",
@@ -4577,7 +4577,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "scotiabank-centre",
       "sourceName": "Scotiabank Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-10-20T11:46:14.783Z",
+      "observedAt": "2026-10-20T16:22:08.127Z",
       "reviewState": "source-observed",
       "venueId": "scotiabank-centre-halifax",
       "neighbourhood": "Downtown",
@@ -4603,7 +4603,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "scotiabank-centre",
       "sourceName": "Scotiabank Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-10-20T11:46:14.783Z",
+      "observedAt": "2026-10-20T16:22:08.127Z",
       "reviewState": "source-observed",
       "venueId": "scotiabank-centre-halifax",
       "neighbourhood": "Downtown",
@@ -4629,7 +4629,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "light-house-arts-centre",
       "sourceName": "Light House Arts Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-10-20T11:46:16.643Z",
+      "observedAt": "2026-10-20T16:22:08.449Z",
       "reviewState": "source-observed",
       "venueId": "light-house-arts-centre-halifax",
       "neighbourhood": "Downtown",
@@ -4656,7 +4656,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "light-house-arts-centre",
       "sourceName": "Light House Arts Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-10-20T11:46:16.674Z",
+      "observedAt": "2026-10-20T16:22:08.478Z",
       "reviewState": "source-observed",
       "venueId": "light-house-arts-centre-halifax",
       "neighbourhood": "Downtown",
@@ -4683,7 +4683,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "light-house-arts-centre",
       "sourceName": "Light House Arts Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-10-20T11:46:16.677Z",
+      "observedAt": "2026-10-20T16:22:08.470Z",
       "reviewState": "source-observed",
       "venueId": "light-house-arts-centre-halifax",
       "neighbourhood": "Downtown",
@@ -4710,7 +4710,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Symphony Nova Scotia",
       "sourceKind": "official_arts_calendar",
       "sourceUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
-      "observedAt": "2026-10-20T11:46:22.346Z",
+      "observedAt": "2026-10-20T16:22:11.892Z",
       "reviewState": "source_observed",
       "organizerId": "symphony-nova-scotia",
       "organizerName": "Symphony Nova Scotia"
@@ -4734,12 +4734,8 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "halifax-mooseheads-home",
       "sourceName": "Halifax Mooseheads Home Schedule",
       "sourceKind": "official_sports_schedule",
-      "observedAt": "2026-10-20T11:46:14.724Z",
+      "observedAt": "2026-10-20T16:22:08.097Z",
       "reviewState": "source-observed",
-      "venueId": "scotiabank-centre-halifax",
-      "neighbourhood": "Downtown",
-      "organizerId": "halifax-mooseheads",
-      "organizerName": "Halifax Mooseheads",
       "sourceUrls": [
         "https://www.scotiabank-centre.com/events/2026-2027-halifax-mooseheads",
         "https://www.scotiabank-centre.com/premium-seating/eventcalendar"
@@ -4750,7 +4746,11 @@ window.HALIFAX_CITY_EVENTS = {
       ],
       "duplicateEventIds": [
         "scotiabank-centre-41fb95582d455d99"
-      ]
+      ],
+      "venueId": "scotiabank-centre-halifax",
+      "neighbourhood": "Downtown",
+      "organizerId": "halifax-mooseheads",
+      "organizerName": "Halifax Mooseheads"
     },
     {
       "id": "symphony-nova-scotia-4f27d4ab70426d48",
@@ -4772,7 +4772,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Symphony Nova Scotia",
       "sourceKind": "official_arts_calendar",
       "sourceUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
-      "observedAt": "2026-10-20T11:46:22.346Z",
+      "observedAt": "2026-10-20T16:22:11.892Z",
       "reviewState": "source_observed",
       "organizerId": "symphony-nova-scotia",
       "organizerName": "Symphony Nova Scotia"
@@ -4797,7 +4797,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "light-house-arts-centre",
       "sourceName": "Light House Arts Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-10-20T11:46:16.671Z",
+      "observedAt": "2026-10-20T16:22:08.473Z",
       "reviewState": "source-observed",
       "venueId": "light-house-arts-centre-halifax",
       "neighbourhood": "Downtown",
@@ -4824,7 +4824,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Symphony Nova Scotia",
       "sourceKind": "official_arts_calendar",
       "sourceUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
-      "observedAt": "2026-10-20T11:46:22.346Z",
+      "observedAt": "2026-10-20T16:22:11.893Z",
       "reviewState": "source_observed",
       "organizerId": "symphony-nova-scotia",
       "organizerName": "Symphony Nova Scotia"
@@ -4849,7 +4849,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "light-house-arts-centre",
       "sourceName": "Light House Arts Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-10-20T11:46:16.678Z",
+      "observedAt": "2026-10-20T16:22:08.475Z",
       "reviewState": "source-observed",
       "venueId": "light-house-arts-centre-halifax",
       "neighbourhood": "Downtown",
@@ -4875,12 +4875,8 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "halifax-mooseheads-home",
       "sourceName": "Halifax Mooseheads Home Schedule",
       "sourceKind": "official_sports_schedule",
-      "observedAt": "2026-10-20T11:46:14.724Z",
+      "observedAt": "2026-10-20T16:22:08.097Z",
       "reviewState": "source-observed",
-      "venueId": "scotiabank-centre-halifax",
-      "neighbourhood": "Downtown",
-      "organizerId": "halifax-mooseheads",
-      "organizerName": "Halifax Mooseheads",
       "sourceUrls": [
         "https://www.scotiabank-centre.com/events/2026-2027-halifax-mooseheads",
         "https://www.scotiabank-centre.com/premium-seating/eventcalendar"
@@ -4891,7 +4887,11 @@ window.HALIFAX_CITY_EVENTS = {
       ],
       "duplicateEventIds": [
         "scotiabank-centre-735804d76da46a08"
-      ]
+      ],
+      "venueId": "scotiabank-centre-halifax",
+      "neighbourhood": "Downtown",
+      "organizerId": "halifax-mooseheads",
+      "organizerName": "Halifax Mooseheads"
     },
     {
       "id": "scotiabank-centre-0076762e63d1444b",
@@ -4912,7 +4912,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "scotiabank-centre",
       "sourceName": "Scotiabank Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-10-20T11:46:14.783Z",
+      "observedAt": "2026-10-20T16:22:08.128Z",
       "reviewState": "source-observed",
       "venueId": "scotiabank-centre-halifax",
       "neighbourhood": "Downtown",
@@ -4938,7 +4938,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "light-house-arts-centre",
       "sourceName": "Light House Arts Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-10-20T11:46:16.833Z",
+      "observedAt": "2026-10-20T16:22:08.471Z",
       "reviewState": "source-observed",
       "venueId": "light-house-arts-centre-halifax",
       "neighbourhood": "Downtown",
@@ -4964,12 +4964,8 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "halifax-mooseheads-home",
       "sourceName": "Halifax Mooseheads Home Schedule",
       "sourceKind": "official_sports_schedule",
-      "observedAt": "2026-10-20T11:46:14.724Z",
+      "observedAt": "2026-10-20T16:22:08.097Z",
       "reviewState": "source-observed",
-      "venueId": "scotiabank-centre-halifax",
-      "neighbourhood": "Downtown",
-      "organizerId": "halifax-mooseheads",
-      "organizerName": "Halifax Mooseheads",
       "sourceUrls": [
         "https://www.scotiabank-centre.com/events/2026-2027-halifax-mooseheads",
         "https://www.scotiabank-centre.com/premium-seating/eventcalendar"
@@ -4980,7 +4976,11 @@ window.HALIFAX_CITY_EVENTS = {
       ],
       "duplicateEventIds": [
         "scotiabank-centre-a57288b7c79d52e7"
-      ]
+      ],
+      "venueId": "scotiabank-centre-halifax",
+      "neighbourhood": "Downtown",
+      "organizerId": "halifax-mooseheads",
+      "organizerName": "Halifax Mooseheads"
     },
     {
       "id": "symphony-nova-scotia-78b3932d33e95a2d",
@@ -5002,7 +5002,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Symphony Nova Scotia",
       "sourceKind": "official_arts_calendar",
       "sourceUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
-      "observedAt": "2026-10-20T11:46:22.346Z",
+      "observedAt": "2026-10-20T16:22:11.893Z",
       "reviewState": "source_observed",
       "organizerId": "symphony-nova-scotia",
       "organizerName": "Symphony Nova Scotia"
@@ -5027,7 +5027,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "light-house-arts-centre",
       "sourceName": "Light House Arts Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-10-20T11:46:16.865Z",
+      "observedAt": "2026-10-20T16:22:08.513Z",
       "reviewState": "source-observed",
       "venueId": "light-house-arts-centre-halifax",
       "neighbourhood": "Downtown",
@@ -5053,7 +5053,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "scotiabank-centre",
       "sourceName": "Scotiabank Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-10-20T11:46:14.783Z",
+      "observedAt": "2026-10-20T16:22:08.128Z",
       "reviewState": "source-observed",
       "venueId": "scotiabank-centre-halifax",
       "neighbourhood": "Downtown",
@@ -5080,7 +5080,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Symphony Nova Scotia",
       "sourceKind": "official_arts_calendar",
       "sourceUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
-      "observedAt": "2026-10-20T11:46:22.347Z",
+      "observedAt": "2026-10-20T16:22:11.893Z",
       "reviewState": "source_observed",
       "organizerId": "symphony-nova-scotia",
       "organizerName": "Symphony Nova Scotia"
@@ -5104,12 +5104,8 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "halifax-mooseheads-home",
       "sourceName": "Halifax Mooseheads Home Schedule",
       "sourceKind": "official_sports_schedule",
-      "observedAt": "2026-10-20T11:46:14.724Z",
+      "observedAt": "2026-10-20T16:22:08.097Z",
       "reviewState": "source-observed",
-      "venueId": "scotiabank-centre-halifax",
-      "neighbourhood": "Downtown",
-      "organizerId": "halifax-mooseheads",
-      "organizerName": "Halifax Mooseheads",
       "sourceUrls": [
         "https://www.scotiabank-centre.com/events/2026-2027-halifax-mooseheads",
         "https://www.scotiabank-centre.com/premium-seating/eventcalendar"
@@ -5120,7 +5116,11 @@ window.HALIFAX_CITY_EVENTS = {
       ],
       "duplicateEventIds": [
         "scotiabank-centre-34187c256f28a3c6"
-      ]
+      ],
+      "venueId": "scotiabank-centre-halifax",
+      "neighbourhood": "Downtown",
+      "organizerId": "halifax-mooseheads",
+      "organizerName": "Halifax Mooseheads"
     },
     {
       "id": "symphony-nova-scotia-48ccaaacda9c2e95",
@@ -5142,7 +5142,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Symphony Nova Scotia",
       "sourceKind": "official_arts_calendar",
       "sourceUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
-      "observedAt": "2026-10-20T11:46:22.347Z",
+      "observedAt": "2026-10-20T16:22:11.893Z",
       "reviewState": "source_observed",
       "organizerId": "symphony-nova-scotia",
       "organizerName": "Symphony Nova Scotia"
@@ -5166,7 +5166,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "scotiabank-centre",
       "sourceName": "Scotiabank Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-10-20T11:46:14.783Z",
+      "observedAt": "2026-10-20T16:22:08.128Z",
       "reviewState": "source-observed",
       "venueId": "scotiabank-centre-halifax",
       "neighbourhood": "Downtown",
@@ -5194,7 +5194,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Symphony Nova Scotia",
       "sourceKind": "official_arts_calendar",
       "sourceUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
-      "observedAt": "2026-10-20T11:46:22.347Z",
+      "observedAt": "2026-10-20T16:22:11.894Z",
       "reviewState": "source_observed",
       "organizerId": "symphony-nova-scotia",
       "organizerName": "Symphony Nova Scotia"
@@ -5218,7 +5218,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "scotiabank-centre",
       "sourceName": "Scotiabank Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-10-20T11:46:14.784Z",
+      "observedAt": "2026-10-20T16:22:08.128Z",
       "reviewState": "source-observed",
       "venueId": "scotiabank-centre-halifax",
       "neighbourhood": "Downtown",
@@ -5244,7 +5244,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "scotiabank-centre",
       "sourceName": "Scotiabank Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-10-20T11:46:14.784Z",
+      "observedAt": "2026-10-20T16:22:08.128Z",
       "reviewState": "source-observed",
       "venueId": "scotiabank-centre-halifax",
       "neighbourhood": "Downtown",
@@ -5271,7 +5271,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Symphony Nova Scotia",
       "sourceKind": "official_arts_calendar",
       "sourceUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
-      "observedAt": "2026-10-20T11:46:22.347Z",
+      "observedAt": "2026-10-20T16:22:11.894Z",
       "reviewState": "source_observed",
       "organizerId": "symphony-nova-scotia",
       "organizerName": "Symphony Nova Scotia"
@@ -5296,7 +5296,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Symphony Nova Scotia",
       "sourceKind": "official_arts_calendar",
       "sourceUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
-      "observedAt": "2026-10-20T11:46:22.348Z",
+      "observedAt": "2026-10-20T16:22:11.894Z",
       "reviewState": "source_observed",
       "organizerId": "symphony-nova-scotia",
       "organizerName": "Symphony Nova Scotia"
@@ -5321,7 +5321,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Symphony Nova Scotia",
       "sourceKind": "official_arts_calendar",
       "sourceUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
-      "observedAt": "2026-10-20T11:46:22.348Z",
+      "observedAt": "2026-10-20T16:22:11.894Z",
       "reviewState": "source_observed",
       "organizerId": "symphony-nova-scotia",
       "organizerName": "Symphony Nova Scotia"
@@ -5346,7 +5346,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Symphony Nova Scotia",
       "sourceKind": "official_arts_calendar",
       "sourceUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
-      "observedAt": "2026-10-20T11:46:22.349Z",
+      "observedAt": "2026-10-20T16:22:11.894Z",
       "reviewState": "source_observed",
       "organizerId": "symphony-nova-scotia",
       "organizerName": "Symphony Nova Scotia"
@@ -5371,7 +5371,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Symphony Nova Scotia",
       "sourceKind": "official_arts_calendar",
       "sourceUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
-      "observedAt": "2026-10-20T11:46:22.349Z",
+      "observedAt": "2026-10-20T16:22:11.895Z",
       "reviewState": "source_observed",
       "organizerId": "symphony-nova-scotia",
       "organizerName": "Symphony Nova Scotia"
@@ -5395,7 +5395,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "neptune-theatre",
       "sourceName": "Neptune Theatre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-10-20T11:46:20.116Z",
+      "observedAt": "2026-10-20T16:22:09.876Z",
       "reviewState": "source-observed",
       "venueId": "neptune-theatre-halifax",
       "neighbourhood": "Downtown",
@@ -5422,7 +5422,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Symphony Nova Scotia",
       "sourceKind": "official_arts_calendar",
       "sourceUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
-      "observedAt": "2026-10-20T11:46:22.349Z",
+      "observedAt": "2026-10-20T16:22:11.896Z",
       "reviewState": "source_observed",
       "organizerId": "symphony-nova-scotia",
       "organizerName": "Symphony Nova Scotia"
@@ -5447,7 +5447,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Symphony Nova Scotia",
       "sourceKind": "official_arts_calendar",
       "sourceUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
-      "observedAt": "2026-10-20T11:46:22.349Z",
+      "observedAt": "2026-10-20T16:22:11.896Z",
       "reviewState": "source_observed",
       "organizerId": "symphony-nova-scotia",
       "organizerName": "Symphony Nova Scotia"
@@ -5472,19 +5472,19 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Symphony Nova Scotia",
       "sourceKind": "official_arts_calendar",
       "sourceUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
-      "observedAt": "2026-10-20T11:46:22.349Z",
+      "observedAt": "2026-10-20T16:22:11.896Z",
       "reviewState": "source_observed",
       "organizerId": "symphony-nova-scotia",
       "organizerName": "Symphony Nova Scotia"
     }
   ],
-  "sanitizedAt": "2026-10-20T15:22:47.311Z",
+  "sanitizedAt": "2026-10-20T16:24:12.130Z",
   "scopeAudit": {
     "inputEvents": 174,
     "keptEvents": 174,
     "canonicalDuplicatesMerged": 0,
     "removedOutOfScope": 0,
-    "categoryReclassified": 0,
+    "categoryReclassified": 10,
     "allowedMunicipalities": [
       "Halifax",
       "Dartmouth",
@@ -5492,7 +5492,7 @@ window.HALIFAX_CITY_EVENTS = {
     ],
     "removedSample": []
   },
-  "supplementalAt": "2026-10-20T11:49:01.468Z",
+  "supplementalAt": "2026-10-20T16:24:11.713Z",
   "supplementalAudit": {
     "addedBeforeDedupe": 67,
     "sourceStats": [
@@ -5501,48 +5501,48 @@ window.HALIFAX_CITY_EVENTS = {
         "sourceName": "Halifax Convention Centre",
         "status": "ok",
         "eventCount": 8,
-        "observedAt": "2026-10-20T11:46:22.134Z",
-        "durationMs": 796
+        "observedAt": "2026-10-20T16:22:11.722Z",
+        "durationMs": 783
       },
       {
         "sourceId": "symphony-nova-scotia",
         "sourceName": "Symphony Nova Scotia",
         "status": "ok",
         "eventCount": 33,
-        "observedAt": "2026-10-20T11:46:22.349Z",
-        "durationMs": 215
+        "observedAt": "2026-10-20T16:22:11.896Z",
+        "durationMs": 173
       },
       {
         "sourceId": "halifax-public-libraries",
         "sourceName": "Halifax Public Libraries",
         "status": "ok",
         "eventCount": 2,
-        "observedAt": "2026-10-20T11:48:56.246Z",
-        "durationMs": 153896
+        "observedAt": "2026-10-20T16:24:05.959Z",
+        "durationMs": 114063
       },
       {
         "sourceId": "alderney-gate-library-events",
         "sourceName": "Alderney Gate Public Library",
         "status": "ok",
         "eventCount": 10,
-        "observedAt": "2026-10-20T11:48:58.216Z",
-        "durationMs": 1970
+        "observedAt": "2026-10-20T16:24:08.557Z",
+        "durationMs": 2597
       },
       {
         "sourceId": "woodlawn-library-events",
         "sourceName": "Woodlawn Public Library",
         "status": "ok",
         "eventCount": 8,
-        "observedAt": "2026-10-20T11:49:00.230Z",
-        "durationMs": 2014
+        "observedAt": "2026-10-20T16:24:09.979Z",
+        "durationMs": 1422
       },
       {
         "sourceId": "bedford-library-events",
         "sourceName": "Bedford Public Library",
         "status": "ok",
         "eventCount": 6,
-        "observedAt": "2026-10-20T11:49:01.292Z",
-        "durationMs": 1062
+        "observedAt": "2026-10-20T16:24:11.613Z",
+        "durationMs": 1634
       },
       {
         "sourceId": "alderney-landing-events",
@@ -5550,8 +5550,8 @@ window.HALIFAX_CITY_EVENTS = {
         "status": "failed",
         "eventCount": 0,
         "reason": "http_403",
-        "observedAt": "2026-10-20T11:49:01.464Z",
-        "durationMs": 172
+        "observedAt": "2026-10-20T16:24:11.710Z",
+        "durationMs": 97
       }
     ],
     "failures": [
@@ -5560,31 +5560,30 @@ window.HALIFAX_CITY_EVENTS = {
         "sourceName": "Alderney Landing",
         "url": "https://www.alderneylanding.com/events-directory/",
         "reason": "http_403",
-        "observedAt": "2026-10-20T11:49:01.464Z"
+        "observedAt": "2026-10-20T16:24:11.710Z"
       }
     ]
   },
   "manualAdditions": {
-    "appliedAt": "2026-10-20T15:22:47.175Z",
+    "appliedAt": "2026-10-20T16:24:11.862Z",
     "source": "data/build/city-event-additions.json",
     "eventCount": 9,
     "addedIds": [
-      "symphony-nova-scotia-648004b43df2a1b3",
-      "https://novascotia.com/event/craft-nova-scotia-designer-craft-show/#event",
-      "https://novascotia.com/event/halifax-international-wine-festival/#event"
-    ],
-    "mergedIds": [
       "taste-asia-2026-food-culture-festival",
       "maritime-museum-peggys-cove-talk-2026-10-20",
       "rejigged-2026-10-22-macgillivrays",
       "rejigged-2026-10-23-cassie-maggie-traverse",
       "rejigged-2026-10-24-ete-inn-echo",
-      "maritime-museum-sea-turtle-talk-2026-10-27"
+      "maritime-museum-sea-turtle-talk-2026-10-27",
+      "https://novascotia.com/event/craft-nova-scotia-designer-craft-show/#event",
+      "https://novascotia.com/event/halifax-international-wine-festival/#event"
+    ],
+    "mergedIds": [
+      "symphony-nova-scotia-648004b43df2a1b3"
     ]
   },
-  "refreshAnomalies": [],
   "entityResolution": {
-    "appliedAt": "2026-10-20T15:24:48.024Z",
+    "appliedAt": "2026-10-20T16:24:12.214Z",
     "venueRegistryVersion": 3,
     "organizerRegistryVersion": 2,
     "venueResolved": 126,

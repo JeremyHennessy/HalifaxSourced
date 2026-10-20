@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-20T15:24:48.035Z",
+  "generatedAt": "2026-10-20T16:24:12.219Z",
   "eventCount": 174,
   "venueResolved": 126,
   "organizerResolved": 152,
@@ -114,28 +114,6 @@
       "venueBasis": "source_id",
       "organizerId": "halifax-convention-centre",
       "organizerBasis": "source_id",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "bedford-library-events-749272b332400c2b",
-      "title": "Baby's First Books",
-      "sourceId": "bedford-library-events",
-      "venueId": "bedford-library",
-      "venueBasis": "source_id",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "alderney-gate-library-events-aae54e10cea1df87",
-      "title": "Shake, Rattle & Read",
-      "sourceId": "alderney-gate-library-events",
-      "venueId": "alderney-gate-library",
-      "venueBasis": "source_id",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
       "restaurantId": null,
       "restaurantBasis": null
     },
@@ -305,6 +283,17 @@
       "restaurantBasis": null
     },
     {
+      "eventId": "alderney-gate-library-events-7209a8416b44154d",
+      "title": "Teen Night",
+      "sourceId": "alderney-gate-library-events",
+      "venueId": "alderney-gate-library",
+      "venueBasis": "source_id",
+      "organizerId": "halifax-public-libraries",
+      "organizerBasis": "source_name_token",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
       "eventId": "bedford-library-events-d07e900ba609f409",
       "title": "Growing Up in the Scott Manor House",
       "sourceId": "bedford-library-events",
@@ -426,6 +415,17 @@
       "restaurantBasis": null
     },
     {
+      "eventId": "bedford-library-events-207f47fa10b74fc0",
+      "title": "Newcomers Social",
+      "sourceId": "bedford-library-events",
+      "venueId": "bedford-library",
+      "venueBasis": "source_id",
+      "organizerId": "halifax-public-libraries",
+      "organizerBasis": "source_name_token",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
       "eventId": "the-carleton-1f70ffee982c43c0",
       "title": "SOLD OUT: Shaggy Dog Story Night",
       "sourceId": "the-carleton",
@@ -483,11 +483,11 @@
     {
       "eventId": "symphony-nova-scotia-648004b43df2a1b3",
       "title": "Alex Cuba & Symphony Nova Scotia",
-      "sourceId": "symphony-nova-scotia-reviewed-20261020",
+      "sourceId": "symphony-nova-scotia",
       "venueId": null,
       "venueBasis": null,
       "organizerId": "symphony-nova-scotia",
-      "organizerBasis": "source_name_token",
+      "organizerBasis": "source_id",
       "restaurantId": null,
       "restaurantBasis": null
     },
