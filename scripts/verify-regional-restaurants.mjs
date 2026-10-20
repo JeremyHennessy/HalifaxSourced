@@ -9,7 +9,7 @@ const review = JSON.parse(await readFile(new URL('../data/reviewed-regional-rest
 await mkdir('artifacts', { recursive: true });
 try {
  for (const viewport of [{width:390,height:844},{width:1440,height:1000}]) {
-  const page=await browser.newPage({viewport});const errors=[];page.on('pageerror',error=>errors.push(error.message));
+  const page=await browser.newPage({viewport});const errors=[];page.on('pageerror',error=>errors.push(`${page.url()} ${viewport.width}: ${error.stack || error.message}`));
   await page.goto(url+'/#explore',{waitUntil:'domcontentloaded'});
   await page.waitForFunction(()=>typeof restaurants!=='undefined'&&restaurants.some(item=>item.id==='watermark-indian-harbour'));
   const state=await page.evaluate(()=>({
@@ -37,6 +37,23 @@ try {
   await page.locator('#mapNeighbourhood').selectOption('Downtown Dartmouth');
   await page.waitForFunction(()=>state.neighbourhood==='Downtown Dartmouth'&&state.mapMarkers?.size>0);
   assert(await page.evaluate(()=>[...state.mapMarkers.values()].every(marker=>state.map.getBounds().contains(marker.getLatLng()))));
+  // Rapid filter changes must not let an old queued initialization win.
+  await page.evaluate(()=>{
+   state.neighbourhood='North End';destroyMap();renderMapPage();
+   state.neighbourhood='Downtown Dartmouth';destroyMap();renderMapPage();
+  });
+  await page.waitForFunction(()=>state.mapMarkers?.size>0);
+  assert(await page.evaluate(()=>[...state.mapMarkers.keys()].every(id=>restaurants.find(r=>r.id===id)?.neighborhood==='Downtown Dartmouth')));
+  // Tear down after initialization but before the next Canvas draw frame.
+  await page.evaluate(async()=>{
+   for(let i=0;i<3;i++){
+    destroyMap();renderMapPage();
+    await new Promise(resolve=>requestAnimationFrame(resolve));
+    destroyMap();
+   }
+   renderMapPage();
+   await new Promise(resolve=>requestAnimationFrame(()=>requestAnimationFrame(resolve)));
+  });
   await page.goto(url+'/#restaurant/tuna-blue-hubbards',{waitUntil:'domcontentloaded'});
   await page.locator('.closure-notice').waitFor();
   assert.match(await page.locator('.closure-notice').innerText(),/Closed for the season/);

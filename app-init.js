@@ -84,12 +84,18 @@ function initMiniMap(items, element = document.querySelector("#exploreMiniMap"))
   state.map = map;
 }
 
-function initMainMap(items) {
-  const element = document.querySelector("#mainMap");
+function initMainMap(items, element = document.querySelector("#mainMap")) {
   if (!element || !window.L || !element.isConnected || element._leaflet_id) return;
   const map = L.map(element, { preferCanvas: true, zoomAnimation: false, fadeAnimation: false, markerZoomAnimation: false }).setView(MAP_DEFAULT, 12, { animate: false });
   L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", { maxZoom: 19, attribution: "&copy; OpenStreetMap contributors" }).addTo(map);
   hardenLeafletAttributionLinks(element);
+  // Fit before Canvas markers queue redraws. A synchronous fitBounds redraw can
+  // otherwise lose Leaflet's pending frame handle and outlive route teardown.
+  const located = items.filter(restaurant => restaurant.coordinates);
+  if (state.neighbourhood !== "all" && located.length) {
+    const bounds = L.latLngBounds(located.map(restaurant => [restaurant.coordinates.lat, restaurant.coordinates.lon]));
+    map.fitBounds(bounds, { padding: [30, 30], maxZoom: 15, animate: false });
+  }
   const renderer = L.canvas({ padding: 0.5 });
   const layer = L.layerGroup().addTo(map);
   state.mapMarkers = new Map();
@@ -102,10 +108,6 @@ function initMainMap(items) {
     marker.addTo(layer);
     state.mapMarkers.set(restaurant.id, marker);
     count += 1;
-  }
-  if (state.neighbourhood !== "all" && count) {
-    const bounds = L.latLngBounds([...state.mapMarkers.values()].map(marker => marker.getLatLng()));
-    map.fitBounds(bounds, { padding: [30, 30], maxZoom: 15, animate: false });
   }
   window.__halifaxMapMarkerCount = count;
   state.map = map;

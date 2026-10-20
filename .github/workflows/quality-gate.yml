@@ -86,6 +86,7 @@ jobs:
           node scripts/test-preview-coordinator.mjs
           node scripts/test-reviewed-fact-batch.mjs
           node scripts/test-regional-restaurants.mjs
+          node scripts/test-mainmap-lifecycle.mjs
 
       - name: Test source name decoding
         run: node scripts/test-dartmouth-directory-names.mjs
