@@ -7,7 +7,9 @@ import {pathToFileURL} from 'node:url';
 const root=await mkdtemp(join(tmpdir(),'halifax-scheduled-guard-'));
 try {
   await mkdir(join(root,'scripts','lib'),{recursive:true});await mkdir(join(root,'data','build'),{recursive:true});
-  for(const file of ['scripts/check-source-links.mjs','scripts/build-thumbnail-candidates.mjs','scripts/lib/fetch-public-source.mjs','scripts/lib/lifecycle-language.mjs','scripts/lib/media-rights-contract.mjs','app-media.js','source-integrity.js'])await copyFile(new URL('../'+file,import.meta.url),join(root,file));
+  for(const file of ['scripts/check-source-links.mjs','scripts/build-thumbnail-candidates.mjs','scripts/lib/fetch-public-source.mjs','scripts/lib/lifecycle-language.mjs','scripts/lib/media-rights-contract.mjs','scripts/lib/reviewed-corrections.mjs','restaurant-corrections.js','app-media.js','source-integrity.js'])await copyFile(new URL('../'+file,import.meta.url),join(root,file));
+  await writeFile(join(root,'data/reviewed-restaurant-corrections.js'),'window.HALIFAX_RESTAURANT_CORRECTIONS={records:[],aliases:[],additions:[]};');
+  await writeFile(join(root,'data/reviewed-place-resolutions.js'),'window.HALIFAX_REVIEWED_PLACE_RESOLUTIONS={records:[{restaurantId:"redirect",menuUrl:"https://fixture.example/reviewed-menu"}]};');
   const venues=[{id:'unsafe',name:'Unsafe venue',website:'https://www.glitterbeancafe.com/contact'},{id:'unsafe-dot',name:'Unsafe dotted venue',website:'https://glitterbeancafe.com./contact'},{id:'redirect',name:'Redirect venue',website:'https://fixture.example/contact'}];
   for(const [name,payload] of [['catalog',{restaurants:venues}],['first-party-sources',{records:[]}],['structured-place-facts',{records:[]}],['city-events',{events:[]}]])await writeFile(join(root,'data','build',name+'.json'),JSON.stringify(payload));
   const requests=[];
@@ -19,6 +21,7 @@ try {
     const fetched=JSON.parse(await readFile(log,'utf8'));requests.push(...fetched);
     assert(fetched.length>0,script+' must exercise a permitted source before a blocked redirect');
     assert(fetched.every(url=>url.startsWith('https://fixture.example/')),script+' fetched a quarantined source/destination: '+JSON.stringify(fetched));
+    if(script==='check-source-links.mjs') assert(fetched.includes('https://fixture.example/reviewed-menu'),'Reviewed menu must exercise the same quarantine/redirect guard');
   }
   // Catalogue-source consumers must keep the shared wrapper; API-only imports
   // use fixed endpoints and are outside this source-URL test.

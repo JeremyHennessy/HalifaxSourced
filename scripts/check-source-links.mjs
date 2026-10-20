@@ -1,6 +1,7 @@
 import { fetchGuardedSource as fetch } from './lib/fetch-public-source.mjs';
 import { classifyLifecycleLanguage, lifecycleText } from './lib/lifecycle-language.mjs';
 import { mkdir, readFile, writeFile } from 'node:fs/promises';
+import { reviewedLocationLinks } from './lib/reviewed-corrections.mjs';
 const load = async (name, fallback) => JSON.parse(await readFile(new URL('../data/build/' + name + '.json', import.meta.url), 'utf8').catch(() => JSON.stringify(fallback)));
 const catalog = await load('catalog', {restaurants:[]}), firstParty = await load('first-party-sources', {records:[]}), facts = await load('structured-place-facts', {records:[]}), city = await load('city-events', {events:[]});
 const release = process.env.LINK_HEALTH_SCOPE === 'release';
@@ -21,6 +22,7 @@ for (const item of catalog.restaurants) {
   add(item.website, 'official_website', item.id);
   if (!release) for (const source of item.sources || []) add(source.url, `place_source:${source.type || 'source'}`, item.id);
 }
+for (const link of reviewedLocationLinks(catalog.restaurants)) add(link.url, link.kind, link.restaurantId);
 for (const item of firstParty.records || []) {
   for (const source of item.socialProfiles || []) add(source.profileUrl || source.url, `social:${source.platform}`, item.restaurantId);
   for (const source of item.linkHubs || []) add(source.url, `link_hub:${source.platform}`, item.restaurantId);

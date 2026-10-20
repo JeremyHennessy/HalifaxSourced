@@ -33,6 +33,14 @@ for (const records of [app.restaurants, catalog.restaurants]) {
 }
 assert(active.has(larryId));
 assert(app.restaurants.find(record => record.id === larryId).menuLinks.some(link => link.url === 'https://larryssandwiches.com/order'));
+const marcoId = 'osm-node-4421124794-cafe-marco-polo';
+const marco = app.restaurants.find(record => record.id === marcoId);
+assert(marco && active.has(marcoId), 'Keep the existing Café Marco Polo identity active');
+assert.equal(app.restaurants.filter(record => record.id === marcoId).length, 1);
+assert(marco.menuLinks.some(link => link.url === 'https://cafemarcopolodartmouth.com/11-2/'), 'Publish the observed same-domain official menu, not an inferred URL');
+assert.equal(marco.coordinates.lat, 44.6643302, 'Preserve accepted source coordinates');
+assert.equal(marco.coordinates.lon, -63.5644001, 'Preserve accepted source coordinates');
+assert(marco.sources.some(source => source.type === 'openstreetmap'), 'Do not drop accepted source history');
 for (const item of reviewedCorrections.records) {
   const browserRecord = app.restaurants.find(record=>record.id === item.restaurantId);
   const exported = catalog.restaurants.find(record=>record.id === item.restaurantId);
