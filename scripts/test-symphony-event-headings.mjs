@@ -54,6 +54,8 @@ try {
     assert.equal(first.id, "symphony-nova-scotia-648004b43df2a1b3");
     assert.equal(first.eventUrl, "https://symphony.example/concerts/alex-cuba/");
     assert.equal(first.startAt, "2026-10-23T22:30:00.000Z");
+    assert.equal(first.endAt, null, "A listed start time is not a published end time");
+    assert(output.events.filter(event => event.sourceId === "symphony-nova-scotia").every(event => event.endAt === null), "Every start-only performance must retain an unknown end, including reruns");
     assert.deepEqual(output.events.filter(event => event.title === "Two Performances").map(event => event.startAt), [
       "2026-11-27T23:30:00.000Z", "2026-11-28T18:00:00.000Z"
     ]);

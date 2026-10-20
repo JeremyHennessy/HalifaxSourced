@@ -91,7 +91,8 @@ function makeEvent(source, raw) {
     id: `${source.id}-${hashId(raw.title, raw.startAt, raw.venueName || raw.address || "Halifax")}`,
     title: inline(raw.title).slice(0, 240),
     startAt: raw.startAt,
-    endAt: raw.endAt || raw.startAt,
+    // An explicitly unknown end is evidence, not a zero-duration performance.
+    endAt: Object.hasOwn(raw, "endAt") ? raw.endAt : raw.startAt,
     allDay: Boolean(raw.allDay),
     venueName: inline(raw.venueName || source.venueName || "") || null,
     address: inline(raw.address || source.venueAddress || "") || null,
@@ -253,7 +254,8 @@ async function importSymphony(source) {
       const month = monthNumber(dateMatch[3]);
       const { hour, minute } = timeParts(dateMatch[1], dateMatch[2]);
       const startAt = zonedIso(Number(dateMatch[5]), month, Number(dateMatch[4]), hour, minute);
-      const event = makeEvent(source, { title, startAt, endAt: startAt, venueName: venue[0], city: venue[1], categories: ["Music", "Arts"], eventUrl: absoluteUrl(link[1], page.resolvedUrl) });
+      // The index lists performance starts only; it supplies no running time.
+      const event = makeEvent(source, { title, startAt, endAt: null, venueName: venue[0], city: venue[1], categories: ["Music", "Arts"], eventUrl: absoluteUrl(link[1], page.resolvedUrl) });
       if (event) events.push(event);
     }
   }

@@ -1,10 +1,18 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-20T11:49:23.134Z",
+  "meaningfulChanges": [
+    "data/city-events.js",
+    "data/build/city-events.json",
+    "data/build/event-entity-resolution.json"
+  ],
+  "state": "prepared-for-review",
+  "reviewedAt": null,
+  "publishedAt": null,
+  "generatedAt": "2026-10-20T16:24:59.837Z",
   "artifactName": "city-events-preview",
-  "artifactRunId": "39417305655",
+  "artifactRunId": "39456782370",
   "sourceWorkflowName": "City Events Preview",
-  "sourceWorkflowRunUrl": "https://github.com/JeremyHennessy/HalifaxSourced/actions/runs/39417305655",
+  "sourceWorkflowRunUrl": "https://github.com/JeremyHennessy/HalifaxSourced/actions/runs/39456782370",
   "promotedFileCount": 3,
   "promotedFiles": [
     "data/build/city-events.json",
@@ -16,9 +24,5 @@
     "artifacts/city-event-integrity-report.json",
     "artifacts/city-event-source-drift-report.json",
     "artifacts/event-entity-resolution-report.json"
-  ],
-  "state": "reviewed-candidate",
-  "reviewedAt": "2026-10-20T15:33:02.336950+00:00",
-  "publishedAt": null,
-  "reviewNotes": "docs/event-recovery-2026-10-20.md"
+  ]
 }
