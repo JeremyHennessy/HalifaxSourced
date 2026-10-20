@@ -43,3 +43,4 @@ const productionReviewed = reviewedLocationLinks([
 for (const url of ['https://cafemarcopolodartmouth.com/11-2/','https://larryssandwiches.com/order']) assert(productionReviewed.some(item=>item.url===url),'Reviewed browser menu must be audited: '+url);
 console.log('Source integrity regression passed: future/unknown dates, metadata scope, offer expiry, location, unsafe domains and active reviewed-link audit coverage.');
 await import('./test-coverage-menu-sources.mjs');
+await import('./test-place-facts-history.mjs');
