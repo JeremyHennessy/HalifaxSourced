@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-11T14:46:59.391Z",
+  "generatedAt": "2026-10-20T11:49:23.134Z",
   "artifactName": "city-events-preview",
-  "artifactRunId": "34611906530",
+  "artifactRunId": "39417305655",
   "sourceWorkflowName": "City Events Preview",
-  "sourceWorkflowRunUrl": "https://github.com/JeremyHennessy/HalifaxSourced/actions/runs/34611906530",
+  "sourceWorkflowRunUrl": "https://github.com/JeremyHennessy/HalifaxSourced/actions/runs/39417305655",
   "promotedFileCount": 3,
   "promotedFiles": [
     "data/build/city-events.json",

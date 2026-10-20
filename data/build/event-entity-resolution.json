@@ -1,23 +1,12 @@
 {
-  "generatedAt": "2026-10-06T01:57:51.166Z",
-  "eventCount": 189,
-  "venueResolved": 136,
-  "organizerResolved": 166,
+  "generatedAt": "2026-10-20T11:49:01.854Z",
+  "eventCount": 199,
+  "venueResolved": 152,
+  "organizerResolved": 179,
   "restaurantResolved": 10,
-  "unresolvedVenue": 53,
-  "unresolvedOrganizer": 23,
+  "unresolvedVenue": 47,
+  "unresolvedOrganizer": 20,
   "resolutions": [
-    {
-      "eventId": "tourism-ns-events-8137fad6339a2db5",
-      "title": "Ta’n me’j Tel-keknuo’ltiek: How Unique We Still Are",
-      "sourceId": "tourism-ns-events",
-      "venueId": null,
-      "venueBasis": null,
-      "organizerId": null,
-      "organizerBasis": null,
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
     {
       "eventId": "https://novascotia.com/event/better-times-comedy/#event",
       "title": "Better Times Comedy",
@@ -30,7 +19,7 @@
       "restaurantBasis": null
     },
     {
-      "eventId": "tourism-ns-events-c089f9cfeae560fc",
+      "eventId": "tourism-ns-events-ab953759ccba7e25",
       "title": "Halifax Wanderers 2026 Season",
       "sourceId": "tourism-ns-events",
       "venueId": "wanderers-grounds-halifax",
@@ -41,7 +30,7 @@
       "restaurantBasis": null
     },
     {
-      "eventId": "tourism-ns-events-f16a9115082603e7",
+      "eventId": "tourism-ns-events-128b619c76c31253",
       "title": "Halifax Tides FC 2026 Season",
       "sourceId": "tourism-ns-events",
       "venueId": "wanderers-grounds-halifax",
@@ -52,30 +41,8 @@
       "restaurantBasis": null
     },
     {
-      "eventId": "https://novascotia.com/event/family-fun-at-the-fair/#event",
-      "title": "Family Fun at the Fair!",
-      "sourceId": "tourism-ns-events",
-      "venueId": null,
-      "venueBasis": null,
-      "organizerId": null,
-      "organizerBasis": null,
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "halifax-public-libraries-6ebdba26d0d1afc8",
-      "title": "Library Store",
-      "sourceId": "halifax-public-libraries",
-      "venueId": "central-library-halifax",
-      "venueBasis": "exact_normalized_venue_name",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "https://novascotia.com/event/the-halifax-fringe-festival/#event",
-      "title": "The Halifax Fringe Festival",
+      "eventId": "https://novascotia.com/event/tan-mej-tel-keknuoltiek-how-unique-we-still-are/#event",
+      "title": "Ta’n me’j Tel-keknuo’ltiek: How Unique We Still Are",
       "sourceId": "tourism-ns-events",
       "venueId": null,
       "venueBasis": null,
@@ -96,172 +63,62 @@
       "restaurantBasis": null
     },
     {
-      "eventId": "https://novascotia.com/event/festa-italiana-halifax/#event",
-      "title": "Festa Italiana Halifax – Experience Italy in the Heart of Halifax",
+      "eventId": "https://novascotia.com/event/halifax-mooseheads/#event",
+      "title": "Halifax Mooseheads",
       "sourceId": "tourism-ns-events",
-      "venueId": null,
-      "venueBasis": null,
+      "venueId": "scotiabank-centre-halifax",
+      "venueBasis": "exact_normalized_venue_name",
       "organizerId": null,
       "organizerBasis": null,
       "restaurantId": null,
       "restaurantBasis": null
     },
     {
-      "eventId": "https://novascotia.com/event/2026-international-gathering-of-clan-macneacail-flag-raising-welcome/#event",
-      "title": "2026 International Gathering of Clan MacNeacail – Flag Raising & Welcome",
+      "eventId": "https://novascotia.com/event/dracula-a-comedy-of-terrors/#event",
+      "title": "Dracula: A Comedy of Terrors",
       "sourceId": "tourism-ns-events",
-      "venueId": null,
-      "venueBasis": null,
+      "venueId": "neptune-theatre-halifax",
+      "venueBasis": "exact_normalized_venue_name",
       "organizerId": null,
       "organizerBasis": null,
       "restaurantId": null,
       "restaurantBasis": null
     },
     {
-      "eventId": "the-carleton-f4a3f267b7631e3a",
-      "title": "SOLD OUT: Ben Caplan – Friday",
-      "sourceId": "the-carleton",
-      "venueId": "the-carleton-halifax",
+      "eventId": "halifax-public-libraries-901ee50f7e2f073a",
+      "title": "Library Store",
+      "sourceId": "halifax-public-libraries",
+      "venueId": "central-library-halifax",
+      "venueBasis": "exact_normalized_venue_name",
+      "organizerId": "halifax-public-libraries",
+      "organizerBasis": "source_name_token",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
+      "eventId": "halifax-public-libraries-6334e0e412bd65c1",
+      "title": "In the Sunroom: Picturing Grief by Susan MacLeod & Savannah Tries",
+      "sourceId": "halifax-public-libraries",
+      "venueId": "central-library-halifax",
+      "venueBasis": "exact_normalized_venue_name",
+      "organizerId": "halifax-public-libraries",
+      "organizerBasis": "source_name_token",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
+      "eventId": "halifax-convention-centre-9e9d5734e8f58504",
+      "title": "CIMVHR Forum 2026",
+      "sourceId": "halifax-convention-centre",
+      "venueId": "halifax-convention-centre",
       "venueBasis": "source_id",
-      "organizerId": "the-carleton",
+      "organizerId": "halifax-convention-centre",
       "organizerBasis": "source_id",
-      "restaurantId": "osm-node-771690675-the-carleton",
-      "restaurantBasis": "exact_venue_place_name"
-    },
-    {
-      "eventId": "https://novascotia.com/event/nhl-street-harbour-fest-2026/#event",
-      "title": "NHL STREET Harbour Fest 2026",
-      "sourceId": "tourism-ns-events",
-      "venueId": null,
-      "venueBasis": null,
-      "organizerId": null,
-      "organizerBasis": null,
       "restaurantId": null,
       "restaurantBasis": null
     },
     {
-      "eventId": "bedford-library-events-9d546cdf8d7a5b14",
-      "title": "Family Drop-in",
-      "sourceId": "bedford-library-events",
-      "venueId": "bedford-library",
-      "venueBasis": "source_id",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "woodlawn-library-events-4373b2f8647f148b",
-      "title": "Stay Connected: Hearing Health, Technology & Accessibility",
-      "sourceId": "woodlawn-library-events",
-      "venueId": "woodlawn-library",
-      "venueBasis": "source_id",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "bedford-library-events-3af2ce9bfb754e48",
-      "title": "Super Saturday: Giant Games",
-      "sourceId": "bedford-library-events",
-      "venueId": "bedford-library",
-      "venueBasis": "source_id",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "woodlawn-library-events-9812d11350aa88a2",
-      "title": "Drama Llamas",
-      "sourceId": "woodlawn-library-events",
-      "venueId": "woodlawn-library",
-      "venueBasis": "source_id",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "the-carleton-ad0be22cf515a1d0",
-      "title": "Mike McKenna Jr. W/ Special Guests falllift",
-      "sourceId": "the-carleton",
-      "venueId": "the-carleton-halifax",
-      "venueBasis": "source_id",
-      "organizerId": "the-carleton",
-      "organizerBasis": "source_id",
-      "restaurantId": "osm-node-771690675-the-carleton",
-      "restaurantBasis": "exact_venue_place_name"
-    },
-    {
-      "eventId": "alderney-gate-library-events-54bcc65153f057dd",
-      "title": "Big Blue Blocks",
-      "sourceId": "alderney-gate-library-events",
-      "venueId": "alderney-gate-library",
-      "venueBasis": "source_id",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "bedford-library-events-67587ec6fdc505da",
-      "title": "Build & Play",
-      "sourceId": "bedford-library-events",
-      "venueId": "bedford-library",
-      "venueBasis": "source_id",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "woodlawn-library-events-d8f736a0d9411526",
-      "title": "Acoustic Song Circle",
-      "sourceId": "woodlawn-library-events",
-      "venueId": "woodlawn-library",
-      "venueBasis": "source_id",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "the-carleton-9afee6aa691c5a78",
-      "title": "Ariana Nasr",
-      "sourceId": "the-carleton",
-      "venueId": "the-carleton-halifax",
-      "venueBasis": "source_id",
-      "organizerId": "the-carleton",
-      "organizerBasis": "source_id",
-      "restaurantId": "osm-node-771690675-the-carleton",
-      "restaurantBasis": "exact_venue_place_name"
-    },
-    {
-      "eventId": "alderney-gate-library-events-e285b5f5f5a894b2",
-      "title": "Nova Scotia Legal Aid: Drop-in Support",
-      "sourceId": "alderney-gate-library-events",
-      "venueId": "alderney-gate-library",
-      "venueBasis": "source_id",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "alderney-gate-library-events-2b760351a0b407e4",
-      "title": "Pre-teen Dungeons & Dragons",
-      "sourceId": "alderney-gate-library-events",
-      "venueId": "alderney-gate-library",
-      "venueBasis": "source_id",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "bedford-library-events-aeb2f6a01c498e87",
+      "eventId": "bedford-library-events-749272b332400c2b",
       "title": "Baby's First Books",
       "sourceId": "bedford-library-events",
       "venueId": "bedford-library",
@@ -272,7 +129,7 @@
       "restaurantBasis": null
     },
     {
-      "eventId": "alderney-gate-library-events-eaf5a2e646e9b38a",
+      "eventId": "alderney-gate-library-events-aae54e10cea1df87",
       "title": "Shake, Rattle & Read",
       "sourceId": "alderney-gate-library-events",
       "venueId": "alderney-gate-library",
@@ -283,8 +140,8 @@
       "restaurantBasis": null
     },
     {
-      "eventId": "halifax-convention-centre-4b5125ab825eb1a5",
-      "title": "2026 Canadian Surgery Forum",
+      "eventId": "halifax-convention-centre-b1ce7c479f16433d",
+      "title": "Halifax Universities Career Fair 2026",
       "sourceId": "halifax-convention-centre",
       "venueId": "halifax-convention-centre",
       "venueBasis": "source_id",
@@ -294,7 +151,7 @@
       "restaurantBasis": null
     },
     {
-      "eventId": "woodlawn-library-events-9dfb33af9ad78879",
+      "eventId": "woodlawn-library-events-3613417cb483df92",
       "title": "Needle Niche",
       "sourceId": "woodlawn-library-events",
       "venueId": "woodlawn-library",
@@ -305,7 +162,7 @@
       "restaurantBasis": null
     },
     {
-      "eventId": "alderney-gate-library-events-a0a5cad09a007894",
+      "eventId": "alderney-gate-library-events-aec8da1f979662da",
       "title": "Alderney Ideas Seminar: Online & In-Person",
       "sourceId": "alderney-gate-library-events",
       "venueId": "alderney-gate-library",
@@ -316,7 +173,29 @@
       "restaurantBasis": null
     },
     {
-      "eventId": "alderney-gate-library-events-9c8031e751f682ed",
+      "eventId": "alderney-gate-library-events-ba40b000e25d0c22",
+      "title": "Pre-teen Dungeons & Dragons",
+      "sourceId": "alderney-gate-library-events",
+      "venueId": "alderney-gate-library",
+      "venueBasis": "source_id",
+      "organizerId": "halifax-public-libraries",
+      "organizerBasis": "source_name_token",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
+      "eventId": "https://novascotia.com/event/deepwater/#event",
+      "title": "Deepwater",
+      "sourceId": "tourism-ns-events",
+      "venueId": "neptune-theatre-halifax",
+      "venueBasis": "exact_normalized_venue_name",
+      "organizerId": null,
+      "organizerBasis": null,
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
+      "eventId": "alderney-gate-library-events-0571ecacc32ac0c5",
       "title": "Dartmouth Open Writing Group",
       "sourceId": "alderney-gate-library-events",
       "venueId": "alderney-gate-library",
@@ -327,8 +206,19 @@
       "restaurantBasis": null
     },
     {
-      "eventId": "woodlawn-library-events-6bb2261e0223bf8d",
-      "title": "Decode Your Dog: How to Identify Needs & Build a…",
+      "eventId": "maritime-museum-peggys-cove-talk-2026-10-20",
+      "title": "Beyond Peggy's Cove: Discovering Nova Scotia's Remarkable Places",
+      "sourceId": "maritime-museum-atlantic-2026",
+      "venueId": null,
+      "venueBasis": null,
+      "organizerId": null,
+      "organizerBasis": null,
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
+      "eventId": "woodlawn-library-events-ad90892c20ed33cf",
+      "title": "Food Gathers Us: Exploring Mi'kmaq Cuisine with Simon…",
       "sourceId": "woodlawn-library-events",
       "venueId": "woodlawn-library",
       "venueBasis": "source_id",
@@ -338,18 +228,7 @@
       "restaurantBasis": null
     },
     {
-      "eventId": "https://novascotia.com/event/atlantic-international-film-festival-aiff/#event",
-      "title": "Atlantic International Film Festival (AIFF)",
-      "sourceId": "tourism-ns-events",
-      "venueId": null,
-      "venueBasis": null,
-      "organizerId": null,
-      "organizerBasis": null,
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "woodlawn-library-events-5caa22ac87bcecad",
+      "eventId": "woodlawn-library-events-57c6e6227d9864f5",
       "title": "Baby's First Books",
       "sourceId": "woodlawn-library-events",
       "venueId": "woodlawn-library",
@@ -360,8 +239,8 @@
       "restaurantBasis": null
     },
     {
-      "eventId": "bedford-library-events-65173f76d873bab1",
-      "title": "Tinkering Toddlers",
+      "eventId": "bedford-library-events-7369b9d730c65757",
+      "title": "Puppet Show: Too Much Noise on Halloween Night",
       "sourceId": "bedford-library-events",
       "venueId": "bedford-library",
       "venueBasis": "source_id",
@@ -371,7 +250,7 @@
       "restaurantBasis": null
     },
     {
-      "eventId": "bedford-library-events-aa636e36c7acf6d5",
+      "eventId": "bedford-library-events-c5deb8d79109a155",
       "title": "Community Crafters",
       "sourceId": "bedford-library-events",
       "venueId": "bedford-library",
@@ -382,8 +261,19 @@
       "restaurantBasis": null
     },
     {
-      "eventId": "alderney-gate-library-events-b619c2f648fed0ab",
-      "title": "Makers Gonna Make Makers Gonna Make",
+      "eventId": "woodlawn-library-events-58d94e740ac62a68",
+      "title": "Movie: Practical Magic",
+      "sourceId": "woodlawn-library-events",
+      "venueId": "woodlawn-library",
+      "venueBasis": "source_id",
+      "organizerId": "halifax-public-libraries",
+      "organizerBasis": "source_name_token",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
+      "eventId": "alderney-gate-library-events-cdd13ad828d88f34",
+      "title": "Craft Club: Paper Pocket Folio",
       "sourceId": "alderney-gate-library-events",
       "venueId": "alderney-gate-library",
       "venueBasis": "source_id",
@@ -393,563 +283,46 @@
       "restaurantBasis": null
     },
     {
-      "eventId": "alderney-gate-library-events-6c854870e9ecfd52",
+      "eventId": "bedford-library-events-1a1904b4d4fa55e0",
+      "title": "After School Club: PS5",
+      "sourceId": "bedford-library-events",
+      "venueId": "bedford-library",
+      "venueBasis": "source_id",
+      "organizerId": "halifax-public-libraries",
+      "organizerBasis": "source_name_token",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
+      "eventId": "alderney-gate-library-events-21eb43d6b209a2c4",
+      "title": "Makers Gonna Make: Perler Beads",
+      "sourceId": "alderney-gate-library-events",
+      "venueId": "alderney-gate-library",
+      "venueBasis": "source_id",
+      "organizerId": "halifax-public-libraries",
+      "organizerBasis": "source_name_token",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
+      "eventId": "bedford-library-events-d07e900ba609f409",
+      "title": "Growing Up in the Scott Manor House",
+      "sourceId": "bedford-library-events",
+      "venueId": "bedford-library",
+      "venueBasis": "source_id",
+      "organizerId": "halifax-public-libraries",
+      "organizerBasis": "source_name_token",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
+      "eventId": "alderney-gate-library-events-dd528c059fc415a5",
       "title": "Meet Juno, a St. John Ambulance Therapy Dog Meet Juno, a St. John Ambulance Therapy Dog",
       "sourceId": "alderney-gate-library-events",
       "venueId": "alderney-gate-library",
       "venueBasis": "source_id",
       "organizerId": "halifax-public-libraries",
       "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "the-carleton-5a87dc94c0075bb7",
-      "title": "SOLD OUT: Eric Kane",
-      "sourceId": "the-carleton",
-      "venueId": "the-carleton-halifax",
-      "venueBasis": "source_id",
-      "organizerId": "the-carleton",
-      "organizerBasis": "source_id",
-      "restaurantId": "osm-node-771690675-the-carleton",
-      "restaurantBasis": "exact_venue_place_name"
-    },
-    {
-      "eventId": "https://novascotia.com/event/prairies-to-ports-paintings-by-jacqueline-faye-miller-peter-ollerhead/#event",
-      "title": "Prairies to Ports: Paintings by Jacqueline Faye Miller & Peter Ollerhead",
-      "sourceId": "tourism-ns-events",
-      "venueId": null,
-      "venueBasis": null,
-      "organizerId": null,
-      "organizerBasis": null,
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "halifax-convention-centre-f60e028d660d2f86",
-      "title": "Nova Scotia Seafood Alliance AGM 2026",
-      "sourceId": "halifax-convention-centre",
-      "venueId": "halifax-convention-centre",
-      "venueBasis": "source_id",
-      "organizerId": "halifax-convention-centre",
-      "organizerBasis": "source_id",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "the-carleton-199030685fdabd92",
-      "title": "Tyler Salsman: Growing Up Country",
-      "sourceId": "the-carleton",
-      "venueId": "the-carleton-halifax",
-      "venueBasis": "source_id",
-      "organizerId": "the-carleton",
-      "organizerBasis": "source_id",
-      "restaurantId": "osm-node-771690675-the-carleton",
-      "restaurantBasis": "exact_venue_place_name"
-    },
-    {
-      "eventId": "https://novascotia.com/event/combo-show-sept-18/#event",
-      "title": "Combo Show Sept 18",
-      "sourceId": "tourism-ns-events",
-      "venueId": null,
-      "venueBasis": null,
-      "organizerId": null,
-      "organizerBasis": null,
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "the-carleton-3dfcce6fdac89343",
-      "title": "Angelique Francis Band",
-      "sourceId": "the-carleton",
-      "venueId": "the-carleton-halifax",
-      "venueBasis": "source_id",
-      "organizerId": "the-carleton",
-      "organizerBasis": "source_id",
-      "restaurantId": "osm-node-771690675-the-carleton",
-      "restaurantBasis": "exact_venue_place_name"
-    },
-    {
-      "eventId": "light-house-arts-centre-92cc511a679f5160",
-      "title": "Tickets | Thunder From Down Under (Friday September 18 2026) | Halifax — Light House Arts Centre",
-      "sourceId": "light-house-arts-centre",
-      "venueId": "light-house-arts-centre-halifax",
-      "venueBasis": "source_id",
-      "organizerId": "light-house-arts-centre",
-      "organizerBasis": "source_id",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "symphony-nova-scotia-55824655816cb6f0",
-      "title": "Season 2025-2026",
-      "sourceId": "symphony-nova-scotia",
-      "venueId": null,
-      "venueBasis": null,
-      "organizerId": "symphony-nova-scotia",
-      "organizerBasis": "source_id",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "halifax-tides-home-33086c7ad705ed9e",
-      "title": "Halifax Tides FC vs. AFC Toronto",
-      "sourceId": "halifax-tides-home",
-      "venueId": "wanderers-grounds-halifax",
-      "venueBasis": "source_id",
-      "organizerId": "halifax-tides",
-      "organizerBasis": "source_id",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "halifax-mooseheads-home-8023463dc7bbbbbd",
-      "title": "Halifax Mooseheads vs Moncton",
-      "sourceId": "halifax-mooseheads-home",
-      "venueId": "scotiabank-centre-halifax",
-      "venueBasis": "source_id",
-      "organizerId": "halifax-mooseheads",
-      "organizerBasis": "source_id",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "scotiabank-centre-e647d8ab6e9fb73a",
-      "title": "Halifax Mooseheads vs Moncton Wildcats (Home Opener)",
-      "sourceId": "scotiabank-centre",
-      "venueId": "scotiabank-centre-halifax",
-      "venueBasis": "source_id",
-      "organizerId": "scotiabank-centre",
-      "organizerBasis": "source_id",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "the-carleton-8eba3064b3da5fff",
-      "title": "Newbridge W/ Jackson Weldon",
-      "sourceId": "the-carleton",
-      "venueId": "the-carleton-halifax",
-      "venueBasis": "source_id",
-      "organizerId": "the-carleton",
-      "organizerBasis": "source_id",
-      "restaurantId": "osm-node-771690675-the-carleton",
-      "restaurantBasis": "exact_venue_place_name"
-    },
-    {
-      "eventId": "light-house-arts-centre-c8acae6ecf4e62cf",
-      "title": "Tickets | Thunder From Down Under (Saturday September 19 2026) | Halifax — Light House Arts Centre",
-      "sourceId": "light-house-arts-centre",
-      "venueId": "light-house-arts-centre-halifax",
-      "venueBasis": "source_id",
-      "organizerId": "light-house-arts-centre",
-      "organizerBasis": "source_id",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "hfx-wanderers-home-ef9a4bae80ef976e",
-      "title": "HFX Wanderers FC vs Inter Toronto FC",
-      "sourceId": "hfx-wanderers-home",
-      "venueId": "wanderers-grounds-halifax",
-      "venueBasis": "source_id",
-      "organizerId": "hfx-wanderers",
-      "organizerBasis": "source_id",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "halifax-convention-centre-bcfbab763878d2a0",
-      "title": "NuMat2026: The Nuclear Materials Conference",
-      "sourceId": "halifax-convention-centre",
-      "venueId": "halifax-convention-centre",
-      "venueBasis": "source_id",
-      "organizerId": "halifax-convention-centre",
-      "organizerBasis": "source_id",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "halifax-convention-centre-14727fd321a78bc0",
-      "title": "BioPort 2026",
-      "sourceId": "halifax-convention-centre",
-      "venueId": "halifax-convention-centre",
-      "venueBasis": "source_id",
-      "organizerId": "halifax-convention-centre",
-      "organizerBasis": "source_id",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "https://novascotia.com/event/women-of-the-fur-trade/#event",
-      "title": "Women of the Fur Trade",
-      "sourceId": "tourism-ns-events",
-      "venueId": "neptune-theatre-halifax",
-      "venueBasis": "exact_normalized_venue_name",
-      "organizerId": null,
-      "organizerBasis": null,
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "the-carleton-4baca55598470cba",
-      "title": "Kim Churchill (Australia)",
-      "sourceId": "the-carleton",
-      "venueId": "the-carleton-halifax",
-      "venueBasis": "source_id",
-      "organizerId": "the-carleton",
-      "organizerBasis": "source_id",
-      "restaurantId": "osm-node-771690675-the-carleton",
-      "restaurantBasis": "exact_venue_place_name"
-    },
-    {
-      "eventId": "the-carleton-58c7ceb3c6abf199",
-      "title": "Craft Draught Showdown: Annapolis VS Tanner & Co.",
-      "sourceId": "the-carleton",
-      "venueId": "the-carleton-halifax",
-      "venueBasis": "source_id",
-      "organizerId": "the-carleton",
-      "organizerBasis": "source_id",
-      "restaurantId": "osm-node-771690675-the-carleton",
-      "restaurantBasis": "exact_venue_place_name"
-    },
-    {
-      "eventId": "scotiabank-centre-4bc8dd5de1e95de4",
-      "title": "Sabaton",
-      "sourceId": "scotiabank-centre",
-      "venueId": "scotiabank-centre-halifax",
-      "venueBasis": "source_id",
-      "organizerId": "scotiabank-centre",
-      "organizerBasis": "source_id",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "https://novascotia.com/event/magnetic-world-music-festival/#event",
-      "title": "Magnetic World Music Festival",
-      "sourceId": "tourism-ns-events",
-      "venueId": null,
-      "venueBasis": null,
-      "organizerId": null,
-      "organizerBasis": null,
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "the-carleton-77dd3e7575ea0742",
-      "title": "Private Event",
-      "sourceId": "the-carleton",
-      "venueId": "the-carleton-halifax",
-      "venueBasis": "source_id",
-      "organizerId": "the-carleton",
-      "organizerBasis": "source_id",
-      "restaurantId": "osm-node-771690675-the-carleton",
-      "restaurantBasis": "exact_venue_place_name"
-    },
-    {
-      "eventId": "https://novascotia.com/event/prismatic-arts-festival/#event",
-      "title": "Prismatic Arts Festival",
-      "sourceId": "tourism-ns-events",
-      "venueId": null,
-      "venueBasis": null,
-      "organizerId": null,
-      "organizerBasis": null,
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "https://novascotia.com/event/the-womens-show-wellness-lifestyle-beauty/#event",
-      "title": "The Women’s Show: Wellness, Lifestyle & Beauty",
-      "sourceId": "tourism-ns-events",
-      "venueId": null,
-      "venueBasis": null,
-      "organizerId": null,
-      "organizerBasis": null,
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "halifax-convention-centre-523cbf34f63b0fb8",
-      "title": "27th Annual Grocery Gala",
-      "sourceId": "halifax-convention-centre",
-      "venueId": "halifax-convention-centre",
-      "venueBasis": "source_id",
-      "organizerId": "halifax-convention-centre",
-      "organizerBasis": "source_id",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "halifax-convention-centre-6079e6359d9cfe21",
-      "title": "Canadian Society of Cardiology Technologists Symposium",
-      "sourceId": "halifax-convention-centre",
-      "venueId": "halifax-convention-centre",
-      "venueBasis": "source_id",
-      "organizerId": "halifax-convention-centre",
-      "organizerBasis": "source_id",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "hfx-wanderers-home-34df7fbf20c16478",
-      "title": "HFX Wanderers FC vs Atlético Ottawa FC",
-      "sourceId": "hfx-wanderers-home",
-      "venueId": "wanderers-grounds-halifax",
-      "venueBasis": "source_id",
-      "organizerId": "hfx-wanderers",
-      "organizerBasis": "source_id",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "halifax-convention-centre-88dab64b93446d74",
-      "title": "ISMS 2026",
-      "sourceId": "halifax-convention-centre",
-      "venueId": "halifax-convention-centre",
-      "venueBasis": "source_id",
-      "organizerId": "halifax-convention-centre",
-      "organizerBasis": "source_id",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "halifax-tides-home-59f89f492d1b73c7",
-      "title": "Halifax Tides FC vs. Montréal Roses FC",
-      "sourceId": "halifax-tides-home",
-      "venueId": "wanderers-grounds-halifax",
-      "venueBasis": "source_id",
-      "organizerId": "halifax-tides",
-      "organizerBasis": "source_id",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "light-house-arts-centre-e22e08a3e8ffa6c3",
-      "title": "Tickets | July Talk | Halifax | September 27 2026 — Light House Arts Centre",
-      "sourceId": "light-house-arts-centre",
-      "venueId": "light-house-arts-centre-halifax",
-      "venueBasis": "source_id",
-      "organizerId": "light-house-arts-centre",
-      "organizerBasis": "source_id",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "light-house-arts-centre-31c03196839b4542",
-      "title": "Josh Thomas Official Halifax Tickets | October 1 2026 | Comedy Show — Light House Arts Centre",
-      "sourceId": "light-house-arts-centre",
-      "venueId": "light-house-arts-centre-halifax",
-      "venueBasis": "source_id",
-      "organizerId": "light-house-arts-centre",
-      "organizerBasis": "source_id",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "tourism-ns-events-29eec1a52dea9a84",
-      "title": "Wine Fair Halifax",
-      "sourceId": "tourism-ns-events",
-      "venueId": "halifax-convention-centre",
-      "venueBasis": "exact_normalized_venue_name",
-      "organizerId": null,
-      "organizerBasis": null,
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "halifax-tides-home-3e53835f014e898e",
-      "title": "Halifax Tides FC vs. Calgary Wild FC",
-      "sourceId": "halifax-tides-home",
-      "venueId": "wanderers-grounds-halifax",
-      "venueBasis": "source_id",
-      "organizerId": "halifax-tides",
-      "organizerBasis": "source_id",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "symphony-nova-scotia-0bd0bb2bcfdb8e1f",
-      "title": "Flying On Your Own: A Tribute To Rita MacNeil",
-      "sourceId": "symphony-nova-scotia",
-      "venueId": null,
-      "venueBasis": null,
-      "organizerId": "symphony-nova-scotia",
-      "organizerBasis": "source_id",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "symphony-nova-scotia-1a9084f29adfdbc9",
-      "title": "Flying On Your Own: A Tribute To Rita MacNeil",
-      "sourceId": "symphony-nova-scotia",
-      "venueId": null,
-      "venueBasis": null,
-      "organizerId": "symphony-nova-scotia",
-      "organizerBasis": "source_id",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "halifax-mooseheads-home-2e9484941dbf4bd4",
-      "title": "Halifax Mooseheads vs Rouyn-Noranda",
-      "sourceId": "halifax-mooseheads-home",
-      "venueId": "scotiabank-centre-halifax",
-      "venueBasis": "source_id",
-      "organizerId": "halifax-mooseheads",
-      "organizerBasis": "source_id",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "halifax-mooseheads-home-b8cd97060b31415b",
-      "title": "Halifax Mooseheads vs Drummondville",
-      "sourceId": "halifax-mooseheads-home",
-      "venueId": "scotiabank-centre-halifax",
-      "venueBasis": "source_id",
-      "organizerId": "halifax-mooseheads",
-      "organizerBasis": "source_id",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "hfx-wanderers-home-315de978d06b24da",
-      "title": "HFX Wanderers FC vs Cavalry FC",
-      "sourceId": "hfx-wanderers-home",
-      "venueId": "wanderers-grounds-halifax",
-      "venueBasis": "source_id",
-      "organizerId": "hfx-wanderers",
-      "organizerBasis": "source_id",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "scotiabank-centre-54927ff18c4e1c83",
-      "title": "The Black Keys",
-      "sourceId": "scotiabank-centre",
-      "venueId": "scotiabank-centre-halifax",
-      "venueBasis": "source_id",
-      "organizerId": "scotiabank-centre",
-      "organizerBasis": "source_id",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "https://novascotia.com/event/nocturne-art-at-night/#event",
-      "title": "Nocturne: Art at Night",
-      "sourceId": "tourism-ns-events",
-      "venueId": null,
-      "venueBasis": null,
-      "organizerId": null,
-      "organizerBasis": null,
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "symphony-nova-scotia-a9508e21c9c78cb4",
-      "title": "Shadows & Light: Barber & Brahms",
-      "sourceId": "symphony-nova-scotia",
-      "venueId": null,
-      "venueBasis": null,
-      "organizerId": "symphony-nova-scotia",
-      "organizerBasis": "source_id",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "https://novascotia.com/event/halifax-paranormal-symposium/#event",
-      "title": "Halifax Paranormal Symposium",
-      "sourceId": "tourism-ns-events",
-      "venueId": null,
-      "venueBasis": null,
-      "organizerId": null,
-      "organizerBasis": null,
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "halifax-mooseheads-home-fd19871c9a8e2c98",
-      "title": "Halifax Mooseheads vs Val-d'Or",
-      "sourceId": "halifax-mooseheads-home",
-      "venueId": "scotiabank-centre-halifax",
-      "venueBasis": "source_id",
-      "organizerId": "halifax-mooseheads",
-      "organizerBasis": "source_id",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "scotiabank-centre-638412effa784c83",
-      "title": "Halifax Mooseheads vs Val-d'Or Foreurs",
-      "sourceId": "scotiabank-centre",
-      "venueId": "scotiabank-centre-halifax",
-      "venueBasis": "source_id",
-      "organizerId": "scotiabank-centre",
-      "organizerBasis": "source_id",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "light-house-arts-centre-3a0e66b18c091cd5",
-      "title": "Tickets | The Sheepdogs (Friday October 16 2026) | Halifax — Light House Arts Centre",
-      "sourceId": "light-house-arts-centre",
-      "venueId": "light-house-arts-centre-halifax",
-      "venueBasis": "source_id",
-      "organizerId": "light-house-arts-centre",
-      "organizerBasis": "source_id",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "halifax-tides-home-10fc07df1d74c80c",
-      "title": "Halifax Tides FC vs. Montréal Roses FC",
-      "sourceId": "halifax-tides-home",
-      "venueId": "wanderers-grounds-halifax",
-      "venueBasis": "source_id",
-      "organizerId": "halifax-tides",
-      "organizerBasis": "source_id",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "light-house-arts-centre-c7c2f523c32e4fd8",
-      "title": "Tickets | The Sheepdogs (Saturday October 17 2026) | Halifax — Light House Arts Centre",
-      "sourceId": "light-house-arts-centre",
-      "venueId": "light-house-arts-centre-halifax",
-      "venueBasis": "source_id",
-      "organizerId": "light-house-arts-centre",
-      "organizerBasis": "source_id",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "symphony-nova-scotia-fadc47c38f621776",
-      "title": "James Ehnes' 50th Birthday Recital",
-      "sourceId": "symphony-nova-scotia",
-      "venueId": null,
-      "venueBasis": null,
-      "organizerId": "symphony-nova-scotia",
-      "organizerBasis": "source_id",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "halifax-mooseheads-home-02f24f9892495cb4",
-      "title": "Halifax Mooseheads vs Shawinigan",
-      "sourceId": "halifax-mooseheads-home",
-      "venueId": "scotiabank-centre-halifax",
-      "venueBasis": "source_id",
-      "organizerId": "halifax-mooseheads",
-      "organizerBasis": "source_id",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "scotiabank-centre-46c40d7bc54876a2",
-      "title": "Halifax Mooseheads vs Shawinigan Cataractes",
-      "sourceId": "scotiabank-centre",
-      "venueId": "scotiabank-centre-halifax",
-      "venueBasis": "source_id",
-      "organizerId": "scotiabank-centre",
-      "organizerBasis": "source_id",
       "restaurantId": null,
       "restaurantBasis": null
     },
@@ -976,6 +349,127 @@
       "restaurantBasis": null
     },
     {
+      "eventId": "woodlawn-library-events-246e9e11fc736c47",
+      "title": "Tinkering Toddlers",
+      "sourceId": "woodlawn-library-events",
+      "venueId": "woodlawn-library",
+      "venueBasis": "source_id",
+      "organizerId": "halifax-public-libraries",
+      "organizerBasis": "source_name_token",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
+      "eventId": "halifax-convention-centre-42c306e2c5f35394",
+      "title": "2026 Live More Awards",
+      "sourceId": "halifax-convention-centre",
+      "venueId": "halifax-convention-centre",
+      "venueBasis": "source_id",
+      "organizerId": "halifax-convention-centre",
+      "organizerBasis": "source_id",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
+      "eventId": "halifax-convention-centre-be2729e8cb72a039",
+      "title": "79th ACELF Congrès",
+      "sourceId": "halifax-convention-centre",
+      "venueId": "halifax-convention-centre",
+      "venueBasis": "source_id",
+      "organizerId": "halifax-convention-centre",
+      "organizerBasis": "source_id",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
+      "eventId": "halifax-convention-centre-b4ca98fa51dffb8c",
+      "title": "Career Fair Canada",
+      "sourceId": "halifax-convention-centre",
+      "venueId": "halifax-convention-centre",
+      "venueBasis": "source_id",
+      "organizerId": "halifax-convention-centre",
+      "organizerBasis": "source_id",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
+      "eventId": "alderney-gate-library-events-9c2a2bb8d82fa25a",
+      "title": "Acoustic Song Circle: Nova Scotia Threshold Singers",
+      "sourceId": "alderney-gate-library-events",
+      "venueId": "alderney-gate-library",
+      "venueBasis": "source_id",
+      "organizerId": "halifax-public-libraries",
+      "organizerBasis": "source_name_token",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
+      "eventId": "bedford-library-events-f8a728819ebd2d51",
+      "title": "Bedford Chess Club: Preteens",
+      "sourceId": "bedford-library-events",
+      "venueId": "bedford-library",
+      "venueBasis": "source_id",
+      "organizerId": "halifax-public-libraries",
+      "organizerBasis": "source_name_token",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
+      "eventId": "https://novascotia.com/event/spontaneity-spooky-spectacular/#event",
+      "title": "Spontaneity: Spooky Spectacular",
+      "sourceId": "tourism-ns-events",
+      "venueId": null,
+      "venueBasis": null,
+      "organizerId": null,
+      "organizerBasis": null,
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
+      "eventId": "the-carleton-1f70ffee982c43c0",
+      "title": "SOLD OUT: Shaggy Dog Story Night",
+      "sourceId": "the-carleton",
+      "venueId": "the-carleton-halifax",
+      "venueBasis": "source_id",
+      "organizerId": "the-carleton",
+      "organizerBasis": "source_id",
+      "restaurantId": "osm-node-771690675-the-carleton",
+      "restaurantBasis": "exact_venue_place_name"
+    },
+    {
+      "eventId": "woodlawn-library-events-bcbd8a43299355d9",
+      "title": "Teen Night",
+      "sourceId": "woodlawn-library-events",
+      "venueId": "woodlawn-library",
+      "venueBasis": "source_id",
+      "organizerId": "halifax-public-libraries",
+      "organizerBasis": "source_name_token",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
+      "eventId": "rejigged-2026-10-22-macgillivrays",
+      "title": "ReJigged Festival: The MacGillivrays with Patricia Murray",
+      "sourceId": "rejigged-festival-2026",
+      "venueId": null,
+      "venueBasis": null,
+      "organizerId": null,
+      "organizerBasis": null,
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
+      "eventId": "halifax-convention-centre-829d5bb440393848",
+      "title": "CANS 2026 Award Gala",
+      "sourceId": "halifax-convention-centre",
+      "venueId": "halifax-convention-centre",
+      "venueBasis": "source_id",
+      "organizerId": "halifax-convention-centre",
+      "organizerBasis": "source_id",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
       "eventId": "halifax-mooseheads-home-ab1412cf5b77d85c",
       "title": "Halifax Mooseheads vs Cape Breton",
       "sourceId": "halifax-mooseheads-home",
@@ -998,13 +492,57 @@
       "restaurantBasis": null
     },
     {
-      "eventId": "symphony-nova-scotia-648004b43df2a1b3",
-      "title": "Alex Cuba & Symphony Nova Scotia",
+      "eventId": "rejigged-2026-10-23-cassie-maggie-traverse",
+      "title": "ReJigged Festival: Cassie and Maggie, Traverse with Nic Gareiss",
+      "sourceId": "rejigged-festival-2026",
+      "venueId": null,
+      "venueBasis": null,
+      "organizerId": null,
+      "organizerBasis": null,
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
+      "eventId": "symphony-nova-scotia-bb3a6bbed98574c5",
+      "title": "Season 2025-2026",
       "sourceId": "symphony-nova-scotia",
       "venueId": null,
       "venueBasis": null,
       "organizerId": "symphony-nova-scotia",
       "organizerBasis": "source_id",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
+      "eventId": "the-carleton-d2693c5a7b5c42a3",
+      "title": "SOLD OUT: Garnet Rogers – Friday",
+      "sourceId": "the-carleton",
+      "venueId": "the-carleton-halifax",
+      "venueBasis": "source_id",
+      "organizerId": "the-carleton",
+      "organizerBasis": "source_id",
+      "restaurantId": "osm-node-771690675-the-carleton",
+      "restaurantBasis": "exact_venue_place_name"
+    },
+    {
+      "eventId": "the-carleton-20aad502c22e9ce6",
+      "title": "SOLD OUT: Garnet Rogers – Saturday matinee",
+      "sourceId": "the-carleton",
+      "venueId": "the-carleton-halifax",
+      "venueBasis": "source_id",
+      "organizerId": "the-carleton",
+      "organizerBasis": "source_id",
+      "restaurantId": "osm-node-771690675-the-carleton",
+      "restaurantBasis": "exact_venue_place_name"
+    },
+    {
+      "eventId": "https://novascotia.com/event/spontaneity-duo-competition/#event",
+      "title": "Spontaneity: Duo Competition",
+      "sourceId": "tourism-ns-events",
+      "venueId": null,
+      "venueBasis": null,
+      "organizerId": null,
+      "organizerBasis": null,
       "restaurantId": null,
       "restaurantBasis": null
     },
@@ -1031,6 +569,61 @@
       "restaurantBasis": null
     },
     {
+      "eventId": "rejigged-2026-10-24-ete-inn-echo",
+      "title": "ReJigged Festival: É.T.É., Yaëlle Azoulay, Nic Gareiss and Inn Echo",
+      "sourceId": "rejigged-festival-2026",
+      "venueId": null,
+      "venueBasis": null,
+      "organizerId": null,
+      "organizerBasis": null,
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
+      "eventId": "the-carleton-74ee86152e5a2b63",
+      "title": "Lynn Miles",
+      "sourceId": "the-carleton",
+      "venueId": "the-carleton-halifax",
+      "venueBasis": "source_id",
+      "organizerId": "the-carleton",
+      "organizerBasis": "source_id",
+      "restaurantId": "osm-node-771690675-the-carleton",
+      "restaurantBasis": "exact_venue_place_name"
+    },
+    {
+      "eventId": "light-house-arts-centre-733fac2fcc9a9f40",
+      "title": "Critical Mass 2026 — Light House Arts Centre",
+      "sourceId": "light-house-arts-centre",
+      "venueId": "light-house-arts-centre-halifax",
+      "venueBasis": "source_id",
+      "organizerId": "light-house-arts-centre",
+      "organizerBasis": "source_id",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
+      "eventId": "halifax-convention-centre-c1126eb44b40aa03",
+      "title": "CDA 2026 Annual Conference and Trade Show",
+      "sourceId": "halifax-convention-centre",
+      "venueId": "halifax-convention-centre",
+      "venueBasis": "source_id",
+      "organizerId": "halifax-convention-centre",
+      "organizerBasis": "source_id",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
+      "eventId": "the-carleton-fa0e389bb8847767",
+      "title": "SOLD OUT: Hawai’i to Halifax: A Musical Tribute to J. Chalmers Doane",
+      "sourceId": "the-carleton",
+      "venueId": "the-carleton-halifax",
+      "venueBasis": "source_id",
+      "organizerId": "the-carleton",
+      "organizerBasis": "source_id",
+      "restaurantId": "osm-node-771690675-the-carleton",
+      "restaurantBasis": "exact_venue_place_name"
+    },
+    {
       "eventId": "hfx-wanderers-home-f09490b61552ad2d",
       "title": "HFX Wanderers FC vs FC Supra Du Quebec FC",
       "sourceId": "hfx-wanderers-home",
@@ -1038,6 +631,61 @@
       "venueBasis": "source_id",
       "organizerId": "hfx-wanderers",
       "organizerBasis": "source_id",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
+      "eventId": "the-carleton-4d414ffd3a0b3f43",
+      "title": "SOLD OUT: First Of Bells – Début Performance!",
+      "sourceId": "the-carleton",
+      "venueId": "the-carleton-halifax",
+      "venueBasis": "source_id",
+      "organizerId": "the-carleton",
+      "organizerBasis": "source_id",
+      "restaurantId": "osm-node-771690675-the-carleton",
+      "restaurantBasis": "exact_venue_place_name"
+    },
+    {
+      "eventId": "maritime-museum-sea-turtle-talk-2026-10-27",
+      "title": "Nova Scotia Vessels as Research Platforms: The Sea Turtle Story",
+      "sourceId": "maritime-museum-atlantic-2026",
+      "venueId": null,
+      "venueBasis": null,
+      "organizerId": null,
+      "organizerBasis": null,
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
+      "eventId": "the-carleton-230a988080d25aef",
+      "title": "SOLD OUT: Irish Mythen",
+      "sourceId": "the-carleton",
+      "venueId": "the-carleton-halifax",
+      "venueBasis": "source_id",
+      "organizerId": "the-carleton",
+      "organizerBasis": "source_id",
+      "restaurantId": "osm-node-771690675-the-carleton",
+      "restaurantBasis": "exact_venue_place_name"
+    },
+    {
+      "eventId": "halifax-convention-centre-3e57df27ef16b382",
+      "title": "SocialEast 2026",
+      "sourceId": "halifax-convention-centre",
+      "venueId": "halifax-convention-centre",
+      "venueBasis": "source_id",
+      "organizerId": "halifax-convention-centre",
+      "organizerBasis": "source_id",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
+      "eventId": "https://novascotia.com/event/creative-minds-music-and-storytelling-with-raymond-sewell/#event",
+      "title": "Creative Minds: Music and Storytelling with Raymond Sewell",
+      "sourceId": "tourism-ns-events",
+      "venueId": null,
+      "venueBasis": null,
+      "organizerId": null,
+      "organizerBasis": null,
       "restaurantId": null,
       "restaurantBasis": null
     },
@@ -1053,8 +701,74 @@
       "restaurantBasis": null
     },
     {
+      "eventId": "the-carleton-330dee86cb34d8be",
+      "title": "SOLD OUT: Roxy & T.U.S.S. Perform Amy Winehouse’s Back To Black – Thursday",
+      "sourceId": "the-carleton",
+      "venueId": "the-carleton-halifax",
+      "venueBasis": "source_id",
+      "organizerId": "the-carleton",
+      "organizerBasis": "source_id",
+      "restaurantId": "osm-node-771690675-the-carleton",
+      "restaurantBasis": "exact_venue_place_name"
+    },
+    {
+      "eventId": "https://novascotia.com/event/spontaneity-combo-show/#event",
+      "title": "Spontaneity: Combo Show",
+      "sourceId": "tourism-ns-events",
+      "venueId": null,
+      "venueBasis": null,
+      "organizerId": null,
+      "organizerBasis": null,
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
+      "eventId": "the-carleton-371d735731a22ac7",
+      "title": "SOLD OUT: Roxy & T.U.S.S. Perform Amy Winehouse’s Back To Black – Friday",
+      "sourceId": "the-carleton",
+      "venueId": "the-carleton-halifax",
+      "venueBasis": "source_id",
+      "organizerId": "the-carleton",
+      "organizerBasis": "source_id",
+      "restaurantId": "osm-node-771690675-the-carleton",
+      "restaurantBasis": "exact_venue_place_name"
+    },
+    {
       "eventId": "light-house-arts-centre-676e6ad4127520b7",
       "title": "Official Tickets | Jimmy Rankin - Song Dog: 25th Anniversary Tour | Halifax — Light House Arts Centre",
+      "sourceId": "light-house-arts-centre",
+      "venueId": "light-house-arts-centre-halifax",
+      "venueBasis": "source_id",
+      "organizerId": "light-house-arts-centre",
+      "organizerBasis": "source_id",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
+      "eventId": "woodlawn-library-events-563297028b16a69d",
+      "title": "Workshop Series: 2SLGBTQIA+ Improv for Anxiety Workshop Series: 2SLGBTQIA+ Improv for Anxiety",
+      "sourceId": "woodlawn-library-events",
+      "venueId": "woodlawn-library",
+      "venueBasis": "source_id",
+      "organizerId": "halifax-public-libraries",
+      "organizerBasis": "source_name_token",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
+      "eventId": "the-carleton-1a57ea58905aca14",
+      "title": "Broadway Brunch: Halloween Edition",
+      "sourceId": "the-carleton",
+      "venueId": "the-carleton-halifax",
+      "venueBasis": "source_id",
+      "organizerId": "the-carleton",
+      "organizerBasis": "source_id",
+      "restaurantId": "osm-node-771690675-the-carleton",
+      "restaurantBasis": "exact_venue_place_name"
+    },
+    {
+      "eventId": "light-house-arts-centre-63c1884c36bf4322",
+      "title": "Harbour of Horrors ft. Dave Summer — Light House Arts Centre",
       "sourceId": "light-house-arts-centre",
       "venueId": "light-house-arts-centre-halifax",
       "venueBasis": "source_id",
@@ -1069,6 +783,28 @@
       "sourceId": "tourism-ns-events",
       "venueId": "halifax-convention-centre",
       "venueBasis": "exact_normalized_venue_name",
+      "organizerId": null,
+      "organizerBasis": null,
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
+      "eventId": "https://novascotia.com/event/nova-scotia-art-and-craft-show/#event",
+      "title": "Nova Scotia Art and Craft Show",
+      "sourceId": "tourism-ns-events",
+      "venueId": null,
+      "venueBasis": null,
+      "organizerId": null,
+      "organizerBasis": null,
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
+      "eventId": "https://novascotia.com/event/agns-fall-2026-exhibition-celebration/#event",
+      "title": "AGNS Fall 2026 Exhibition Celebration",
+      "sourceId": "tourism-ns-events",
+      "venueId": null,
+      "venueBasis": null,
       "organizerId": null,
       "organizerBasis": null,
       "restaurantId": null,
@@ -1148,17 +884,6 @@
       "venueBasis": "source_id",
       "organizerId": "neptune-theatre",
       "organizerBasis": "source_id",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "https://novascotia.com/event/craft-nova-scotia-designer-craft-show/#event",
-      "title": "Craft Nova Scotia Designer Craft Show",
-      "sourceId": "tourism-ns-events",
-      "venueId": null,
-      "venueBasis": null,
-      "organizerId": null,
-      "organizerBasis": null,
       "restaurantId": null,
       "restaurantBasis": null
     },
@@ -1328,13 +1053,13 @@
       "restaurantBasis": null
     },
     {
-      "eventId": "https://novascotia.com/event/halifax-international-wine-festival/#event",
-      "title": "Halifax International Wine Festival",
-      "sourceId": "tourism-ns-events",
-      "venueId": "halifax-convention-centre",
-      "venueBasis": "exact_normalized_venue_name",
-      "organizerId": null,
-      "organizerBasis": null,
+      "eventId": "symphony-nova-scotia-835addd10bd661bf",
+      "title": "Merry Murdoch Mysteries in Concert",
+      "sourceId": "symphony-nova-scotia",
+      "venueId": null,
+      "venueBasis": null,
+      "organizerId": "symphony-nova-scotia",
+      "organizerBasis": "source_id",
       "restaurantId": null,
       "restaurantBasis": null
     },
@@ -1372,6 +1097,17 @@
       "restaurantBasis": null
     },
     {
+      "eventId": "scotiabank-centre-b174de9bdc12e481",
+      "title": "Halifax Thunderbirds vs Calgary Roughnecks (Home Opener)",
+      "sourceId": "scotiabank-centre",
+      "venueId": "scotiabank-centre-halifax",
+      "venueBasis": "source_id",
+      "organizerId": "scotiabank-centre",
+      "organizerBasis": "source_id",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
       "eventId": "symphony-nova-scotia-48c6b1fd847b77bd",
       "title": "The Nutcracker",
       "sourceId": "symphony-nova-scotia",
@@ -1389,6 +1125,17 @@
       "venueId": null,
       "venueBasis": null,
       "organizerId": "symphony-nova-scotia",
+      "organizerBasis": "source_id",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
+      "eventId": "light-house-arts-centre-94cfe3e5bbaccd9c",
+      "title": "A Celtic Family Christmas...PARTY! Natalie MacMaster & Donnell Leahy with special guest Mary Frances — Light House Arts Centre",
+      "sourceId": "light-house-arts-centre",
+      "venueId": "light-house-arts-centre-halifax",
+      "venueBasis": "source_id",
+      "organizerId": "light-house-arts-centre",
       "organizerBasis": "source_id",
       "restaurantId": null,
       "restaurantBasis": null
@@ -1427,8 +1174,30 @@
       "restaurantBasis": null
     },
     {
+      "eventId": "light-house-arts-centre-2a66049e2ac3c182",
+      "title": "A Celtic Family Christmas...PARTY! Natalie MacMaster & Donnell Leahy with special guest Mary Frances — Light House Arts Centre",
+      "sourceId": "light-house-arts-centre",
+      "venueId": "light-house-arts-centre-halifax",
+      "venueBasis": "source_id",
+      "organizerId": "light-house-arts-centre",
+      "organizerBasis": "source_id",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
       "eventId": "light-house-arts-centre-b99b2dbd32dc6778",
       "title": "Official Tickets for Lennie Gallant | Christmas Show in Halifax — Light House Arts Centre",
+      "sourceId": "light-house-arts-centre",
+      "venueId": "light-house-arts-centre-halifax",
+      "venueBasis": "source_id",
+      "organizerId": "light-house-arts-centre",
+      "organizerBasis": "source_id",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
+      "eventId": "light-house-arts-centre-38ef35ff27a05d6b",
+      "title": "An Evening with Adam Baldwin — Light House Arts Centre",
       "sourceId": "light-house-arts-centre",
       "venueId": "light-house-arts-centre-halifax",
       "venueBasis": "source_id",
@@ -1444,6 +1213,17 @@
       "venueId": "scotiabank-centre-halifax",
       "venueBasis": "source_id",
       "organizerId": "scotiabank-centre",
+      "organizerBasis": "source_id",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
+      "eventId": "light-house-arts-centre-01a6b5786a5f41bc",
+      "title": "An Evening with Adam Baldwin — Light House Arts Centre",
+      "sourceId": "light-house-arts-centre",
+      "venueId": "light-house-arts-centre-halifax",
+      "venueBasis": "source_id",
+      "organizerId": "light-house-arts-centre",
       "organizerBasis": "source_id",
       "restaurantId": null,
       "restaurantBasis": null
@@ -1471,6 +1251,17 @@
       "restaurantBasis": null
     },
     {
+      "eventId": "light-house-arts-centre-13e2dc9aaac0deb1",
+      "title": "An Evening with Adam Baldwin — Light House Arts Centre",
+      "sourceId": "light-house-arts-centre",
+      "venueId": "light-house-arts-centre-halifax",
+      "venueBasis": "source_id",
+      "organizerId": "light-house-arts-centre",
+      "organizerBasis": "source_id",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
       "eventId": "halifax-mooseheads-home-10bc587ce84dcc87",
       "title": "Halifax Mooseheads vs Saint John",
       "sourceId": "halifax-mooseheads-home",
@@ -1488,6 +1279,17 @@
       "venueId": "scotiabank-centre-halifax",
       "venueBasis": "source_id",
       "organizerId": "scotiabank-centre",
+      "organizerBasis": "source_id",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
+      "eventId": "light-house-arts-centre-86086d309a5b774a",
+      "title": "An Evening with Adam Baldwin (Sunday) — Light House Arts Centre",
+      "sourceId": "light-house-arts-centre",
+      "venueId": "light-house-arts-centre-halifax",
+      "venueBasis": "source_id",
+      "organizerId": "light-house-arts-centre",
       "organizerBasis": "source_id",
       "restaurantId": null,
       "restaurantBasis": null
@@ -1532,6 +1334,17 @@
       "venueId": null,
       "venueBasis": null,
       "organizerId": "symphony-nova-scotia",
+      "organizerBasis": "source_id",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
+      "eventId": "scotiabank-centre-b0fe4b16a4953d0d",
+      "title": "Halifax Thunderbirds vs Buffalo Bandits",
+      "sourceId": "scotiabank-centre",
+      "venueId": "scotiabank-centre-halifax",
+      "venueBasis": "source_id",
+      "organizerId": "scotiabank-centre",
       "organizerBasis": "source_id",
       "restaurantId": null,
       "restaurantBasis": null
@@ -1647,6 +1460,28 @@
       "restaurantBasis": null
     },
     {
+      "eventId": "scotiabank-centre-1471efbe8cbbcdf8",
+      "title": "Halifax Mooseheads vs Baie-Comeau Drakkar",
+      "sourceId": "scotiabank-centre",
+      "venueId": "scotiabank-centre-halifax",
+      "venueBasis": "source_id",
+      "organizerId": "scotiabank-centre",
+      "organizerBasis": "source_id",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
+      "eventId": "scotiabank-centre-574e9eda4595efc5",
+      "title": "Halifax Thunderbirds vs Toronto Rock",
+      "sourceId": "scotiabank-centre",
+      "venueId": "scotiabank-centre-halifax",
+      "venueBasis": "source_id",
+      "organizerId": "scotiabank-centre",
+      "organizerBasis": "source_id",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
       "eventId": "light-house-arts-centre-0ec9c156a5ca1dee",
       "title": "A Saucerful of Floyd | Pink Floyd Tribute in Halifax | Tickets — Light House Arts Centre",
       "sourceId": "light-house-arts-centre",
@@ -1669,6 +1504,17 @@
       "restaurantBasis": null
     },
     {
+      "eventId": "scotiabank-centre-e265f6a1762591dc",
+      "title": "Halifax Mooseheads vs Charlottetown Islanders",
+      "sourceId": "scotiabank-centre",
+      "venueId": "scotiabank-centre-halifax",
+      "venueBasis": "source_id",
+      "organizerId": "scotiabank-centre",
+      "organizerBasis": "source_id",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
       "eventId": "symphony-nova-scotia-54a396697c4c17a5",
       "title": "The Extraordinary Women Of Venice",
       "sourceId": "symphony-nova-scotia",
@@ -1686,6 +1532,28 @@
       "venueId": "scotiabank-centre-halifax",
       "venueBasis": "source_id",
       "organizerId": "halifax-mooseheads",
+      "organizerBasis": "source_id",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
+      "eventId": "scotiabank-centre-ba5e825b077ced2a",
+      "title": "Halifax Mooseheads vs Charlottetown Islanders",
+      "sourceId": "scotiabank-centre",
+      "venueId": "scotiabank-centre-halifax",
+      "venueBasis": "source_id",
+      "organizerId": "scotiabank-centre",
+      "organizerBasis": "source_id",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
+      "eventId": "scotiabank-centre-20a1feacf4e0b8e9",
+      "title": "Halifax Thunderbirds vs Vancouver Warriors",
+      "sourceId": "scotiabank-centre",
+      "venueId": "scotiabank-centre-halifax",
+      "venueBasis": "source_id",
+      "organizerId": "scotiabank-centre",
       "organizerBasis": "source_id",
       "restaurantId": null,
       "restaurantBasis": null
@@ -1724,12 +1592,34 @@
       "restaurantBasis": null
     },
     {
+      "eventId": "scotiabank-centre-872fa2640326de2c",
+      "title": "Halifax Mooseheads vs Saint John Sea Dogs",
+      "sourceId": "scotiabank-centre",
+      "venueId": "scotiabank-centre-halifax",
+      "venueBasis": "source_id",
+      "organizerId": "scotiabank-centre",
+      "organizerBasis": "source_id",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
       "eventId": "halifax-mooseheads-home-710b7ca4a4465b9e",
       "title": "Halifax Mooseheads vs Chicoutimi",
       "sourceId": "halifax-mooseheads-home",
       "venueId": "scotiabank-centre-halifax",
       "venueBasis": "source_id",
       "organizerId": "halifax-mooseheads",
+      "organizerBasis": "source_id",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
+      "eventId": "scotiabank-centre-9e7b3b698e1d5ed3",
+      "title": "Halifax Mooseheads vs Chicoutimi Sagueneens",
+      "sourceId": "scotiabank-centre",
+      "venueId": "scotiabank-centre-halifax",
+      "venueBasis": "source_id",
+      "organizerId": "scotiabank-centre",
       "organizerBasis": "source_id",
       "restaurantId": null,
       "restaurantBasis": null
@@ -1757,6 +1647,17 @@
       "restaurantBasis": null
     },
     {
+      "eventId": "scotiabank-centre-efe4236cc4e096f8",
+      "title": "Halifax Mooseheads vs Rimouski Oceanic",
+      "sourceId": "scotiabank-centre",
+      "venueId": "scotiabank-centre-halifax",
+      "venueBasis": "source_id",
+      "organizerId": "scotiabank-centre",
+      "organizerBasis": "source_id",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
       "eventId": "light-house-arts-centre-2db799520b52b84e",
       "title": "Official Tickets | Hells Bells AC/DC Tribute | February 5 2027 | Halifax — Light House Arts Centre",
       "sourceId": "light-house-arts-centre",
@@ -1774,6 +1675,17 @@
       "venueId": "scotiabank-centre-halifax",
       "venueBasis": "source_id",
       "organizerId": "halifax-mooseheads",
+      "organizerBasis": "source_id",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
+      "eventId": "scotiabank-centre-f7d9cb6a2ebda2f7",
+      "title": "Halifax Mooseheads vs Charlottetown Islanders",
+      "sourceId": "scotiabank-centre",
+      "venueId": "scotiabank-centre-halifax",
+      "venueBasis": "source_id",
+      "organizerId": "scotiabank-centre",
       "organizerBasis": "source_id",
       "restaurantId": null,
       "restaurantBasis": null
@@ -1801,12 +1713,34 @@
       "restaurantBasis": null
     },
     {
+      "eventId": "scotiabank-centre-4223e8b2206a0a7f",
+      "title": "Halifax Thunderbirds vs Saskatchewan Rush",
+      "sourceId": "scotiabank-centre",
+      "venueId": "scotiabank-centre-halifax",
+      "venueBasis": "source_id",
+      "organizerId": "scotiabank-centre",
+      "organizerBasis": "source_id",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
       "eventId": "halifax-mooseheads-home-2957947ea3d5600e",
       "title": "Halifax Mooseheads vs Cape Breton",
       "sourceId": "halifax-mooseheads-home",
       "venueId": "scotiabank-centre-halifax",
       "venueBasis": "source_id",
       "organizerId": "halifax-mooseheads",
+      "organizerBasis": "source_id",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
+      "eventId": "scotiabank-centre-9c8c8b29cc55c12b",
+      "title": "Halifax Mooseheads vs Cape Breton Eagles",
+      "sourceId": "scotiabank-centre",
+      "venueId": "scotiabank-centre-halifax",
+      "venueBasis": "source_id",
+      "organizerId": "scotiabank-centre",
       "organizerBasis": "source_id",
       "restaurantId": null,
       "restaurantBasis": null
@@ -1823,12 +1757,56 @@
       "restaurantBasis": null
     },
     {
+      "eventId": "scotiabank-centre-99dd96c34eb42250",
+      "title": "Halifax Mooseheads vs Moncton Wildcats",
+      "sourceId": "scotiabank-centre",
+      "venueId": "scotiabank-centre-halifax",
+      "venueBasis": "source_id",
+      "organizerId": "scotiabank-centre",
+      "organizerBasis": "source_id",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
       "eventId": "neptune-theatre-0234f7976c2b6015",
       "title": "Urinetown The Musical",
       "sourceId": "neptune-theatre",
       "venueId": "neptune-theatre-halifax",
       "venueBasis": "source_id",
       "organizerId": "neptune-theatre",
+      "organizerBasis": "source_id",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
+      "eventId": "scotiabank-centre-164783d19c07ec4a",
+      "title": "Simple Plan",
+      "sourceId": "scotiabank-centre",
+      "venueId": "scotiabank-centre-halifax",
+      "venueBasis": "source_id",
+      "organizerId": "scotiabank-centre",
+      "organizerBasis": "source_id",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
+      "eventId": "scotiabank-centre-9598d5b8ce9207d7",
+      "title": "WAR On The Catwalk",
+      "sourceId": "scotiabank-centre",
+      "venueId": "scotiabank-centre-halifax",
+      "venueBasis": "source_id",
+      "organizerId": "scotiabank-centre",
+      "organizerBasis": "source_id",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
+      "eventId": "light-house-arts-centre-80534d863a8047a7",
+      "title": "Cœur de Pirate — Light House Arts Centre",
+      "sourceId": "light-house-arts-centre",
+      "venueId": "light-house-arts-centre-halifax",
+      "venueBasis": "source_id",
+      "organizerId": "light-house-arts-centre",
       "organizerBasis": "source_id",
       "restaurantId": null,
       "restaurantBasis": null
@@ -1878,12 +1856,34 @@
       "restaurantBasis": null
     },
     {
+      "eventId": "scotiabank-centre-41fb95582d455d99",
+      "title": "Halifax Mooseheads vs Saint John Sea Dogs",
+      "sourceId": "scotiabank-centre",
+      "venueId": "scotiabank-centre-halifax",
+      "venueBasis": "source_id",
+      "organizerId": "scotiabank-centre",
+      "organizerBasis": "source_id",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
       "eventId": "symphony-nova-scotia-4f27d4ab70426d48",
       "title": "NSYO: Curtain Up",
       "sourceId": "symphony-nova-scotia",
       "venueId": null,
       "venueBasis": null,
       "organizerId": "symphony-nova-scotia",
+      "organizerBasis": "source_id",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
+      "eventId": "light-house-arts-centre-41257a2d46527c8d",
+      "title": "Choir! Choir! Choir! presents Landslide: An EPIC Fleetwood Mac Sing-Along - MATINEE SHOW — Light House Arts Centre",
+      "sourceId": "light-house-arts-centre",
+      "venueId": "light-house-arts-centre-halifax",
+      "venueBasis": "source_id",
+      "organizerId": "light-house-arts-centre",
       "organizerBasis": "source_id",
       "restaurantId": null,
       "restaurantBasis": null
@@ -1900,12 +1900,45 @@
       "restaurantBasis": null
     },
     {
+      "eventId": "light-house-arts-centre-e5a711edafd6f21f",
+      "title": "Choir! Choir! Choir! Presents Landslide: An EPIC Fleetwood Mac Sing-Along - EVENING SHOW — Light House Arts Centre",
+      "sourceId": "light-house-arts-centre",
+      "venueId": "light-house-arts-centre-halifax",
+      "venueBasis": "source_id",
+      "organizerId": "light-house-arts-centre",
+      "organizerBasis": "source_id",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
       "eventId": "halifax-mooseheads-home-9c675071041ace85",
       "title": "Halifax Mooseheads vs Sherbrooke",
       "sourceId": "halifax-mooseheads-home",
       "venueId": "scotiabank-centre-halifax",
       "venueBasis": "source_id",
       "organizerId": "halifax-mooseheads",
+      "organizerBasis": "source_id",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
+      "eventId": "scotiabank-centre-735804d76da46a08",
+      "title": "Halifax Mooseheads vs Sherbrooke Phoenix",
+      "sourceId": "scotiabank-centre",
+      "venueId": "scotiabank-centre-halifax",
+      "venueBasis": "source_id",
+      "organizerId": "scotiabank-centre",
+      "organizerBasis": "source_id",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
+      "eventId": "scotiabank-centre-0076762e63d1444b",
+      "title": "Halifax Thunderbirds vs Oshawa Firewolves",
+      "sourceId": "scotiabank-centre",
+      "venueId": "scotiabank-centre-halifax",
+      "venueBasis": "source_id",
+      "organizerId": "scotiabank-centre",
       "organizerBasis": "source_id",
       "restaurantId": null,
       "restaurantBasis": null
@@ -1933,6 +1966,17 @@
       "restaurantBasis": null
     },
     {
+      "eventId": "scotiabank-centre-a57288b7c79d52e7",
+      "title": "Halifax Mooseheads vs Victoriaville Tigres",
+      "sourceId": "scotiabank-centre",
+      "venueId": "scotiabank-centre-halifax",
+      "venueBasis": "source_id",
+      "organizerId": "scotiabank-centre",
+      "organizerBasis": "source_id",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
       "eventId": "symphony-nova-scotia-78b3932d33e95a2d",
       "title": "Postcards From Italy: Rossini & Mendelssohn",
       "sourceId": "symphony-nova-scotia",
@@ -1950,6 +1994,17 @@
       "venueId": "light-house-arts-centre-halifax",
       "venueBasis": "source_id",
       "organizerId": "light-house-arts-centre",
+      "organizerBasis": "source_id",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
+      "eventId": "scotiabank-centre-5493d8610178c0cd",
+      "title": "Halifax Thunderbirds vs Rochester Knighthawks",
+      "sourceId": "scotiabank-centre",
+      "venueId": "scotiabank-centre-halifax",
+      "venueBasis": "source_id",
+      "organizerId": "scotiabank-centre",
       "organizerBasis": "source_id",
       "restaurantId": null,
       "restaurantBasis": null
@@ -1977,6 +2032,17 @@
       "restaurantBasis": null
     },
     {
+      "eventId": "scotiabank-centre-34187c256f28a3c6",
+      "title": "Halifax Mooseheads vs Moncton Wildcats",
+      "sourceId": "scotiabank-centre",
+      "venueId": "scotiabank-centre-halifax",
+      "venueBasis": "source_id",
+      "organizerId": "scotiabank-centre",
+      "organizerBasis": "source_id",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
       "eventId": "symphony-nova-scotia-48ccaaacda9c2e95",
       "title": "Pranks, Jokes, & Hoaxes: Haydn & P.D.Q. Bach",
       "sourceId": "symphony-nova-scotia",
@@ -1988,12 +2054,45 @@
       "restaurantBasis": null
     },
     {
+      "eventId": "scotiabank-centre-a78a865b66a7ceea",
+      "title": "Halifax Thunderbirds vs Georgia Swarm",
+      "sourceId": "scotiabank-centre",
+      "venueId": "scotiabank-centre-halifax",
+      "venueBasis": "source_id",
+      "organizerId": "scotiabank-centre",
+      "organizerBasis": "source_id",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
       "eventId": "symphony-nova-scotia-80440eed13ff5713",
       "title": "Kitchen Party with Rum Ragged & Symphony Nova Scotia",
       "sourceId": "symphony-nova-scotia",
       "venueId": null,
       "venueBasis": null,
       "organizerId": "symphony-nova-scotia",
+      "organizerBasis": "source_id",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
+      "eventId": "scotiabank-centre-33b3d4cb199be527",
+      "title": "Harlem Globetrotters",
+      "sourceId": "scotiabank-centre",
+      "venueId": "scotiabank-centre-halifax",
+      "venueBasis": "source_id",
+      "organizerId": "scotiabank-centre",
+      "organizerBasis": "source_id",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
+      "eventId": "scotiabank-centre-25da7dde19ef647c",
+      "title": "Halifax Thunderbirds vs Las Vegas Desert Dogs",
+      "sourceId": "scotiabank-centre",
+      "venueId": "scotiabank-centre-halifax",
+      "venueBasis": "source_id",
+      "organizerId": "scotiabank-centre",
       "organizerBasis": "source_id",
       "restaurantId": null,
       "restaurantBasis": null
@@ -2077,6 +2176,17 @@
     },
     {
       "eventId": "symphony-nova-scotia-11061a8abc1e590f",
+      "title": "Lennie Gallant & Symphony Nova Scotia",
+      "sourceId": "symphony-nova-scotia",
+      "venueId": null,
+      "venueBasis": null,
+      "organizerId": "symphony-nova-scotia",
+      "organizerBasis": "source_id",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
+      "eventId": "symphony-nova-scotia-fdfd22b4fa4fb6b1",
       "title": "Lennie Gallant & Symphony Nova Scotia",
       "sourceId": "symphony-nova-scotia",
       "venueId": null,
