@@ -129,7 +129,7 @@ await page.screenshot({ path: resolve("artifacts", "ui-check-desktop.png"), full
 await page.setViewportSize({ width: 1743, height: 900 });
 const heroArtwork = await page.locator(".home-hero").evaluate(async (hero) => {
   const size = getComputedStyle(hero).backgroundSize;
-  const scale = /auto\\s+([\\d.]+)%/.exec(size);
+  const scale = /auto\s+([\d.]+)%/.exec(size);
   if (!scale) return { size, imageWidth: 0, heroWidth: hero.getBoundingClientRect().width };
   const image = new Image();
   image.src = "./assets/backgrounds/hero-mobile.webp";
