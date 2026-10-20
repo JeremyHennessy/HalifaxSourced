@@ -27,8 +27,9 @@ try {
   assert.equal(readFileSync(catalog, 'utf8'), 'release catalog must not be overwritten');
   const metadata = JSON.parse(readFileSync(join(destination, 'data/build/preview-promotion-metadata.json')));
   assert.equal(metadata.promotedFileCount, 25);
-  assert.equal(metadata.reviewOnlyArtifactFiles.length, 13);
+  assert.equal(metadata.reviewOnlyArtifactFiles.length, 14);
   assert.ok(!existsSync(join(destination, 'docs/thumbnail-coverage-attack-plan.md')));
+  assert.ok(!existsSync(join(destination, 'data/build/thumbnail-auto-approval-report.json')));
   assert.equal(readFileSync(join(destination, 'data/official-site-signals.js'), 'utf8'), 'fixture:data/official-site-signals.js\n');
   assertions += 6;
   const laneReceipt = join(destination, 'data/build/promotion-receipts/source-expansion-preview.json');

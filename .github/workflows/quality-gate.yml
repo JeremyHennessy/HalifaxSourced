@@ -114,7 +114,11 @@ jobs:
           node scripts/check-local-restaurant-policy.mjs
 
       - name: Build thumbnail candidates
-        run: node scripts/build-thumbnail-candidates.mjs
+        run: |
+          node scripts/test-automatic-thumbnail-approval.mjs
+          node scripts/build-thumbnail-candidates.mjs
+          node scripts/approve-eligible-thumbnails.mjs
+          node scripts/build-thumbnail-candidates.mjs
 
       - name: Run social platform sanitation regression
         run: node scripts/test-social-platform-registry.mjs
@@ -249,6 +253,7 @@ jobs:
           path: |
             artifacts/data-integrity-report.json
             artifacts/expanded-source-integrity-report.json
+            data/build/thumbnail-auto-approval-report.json
             artifacts/thumbnail-candidates-report.json
             artifacts/thumbnail-coverage-report.json
             artifacts/thumbnail-promotion-plan.json
