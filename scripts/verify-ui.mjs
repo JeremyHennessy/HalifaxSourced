@@ -505,6 +505,37 @@ for (const target of [
   }
 }
 
+// Public image previews must use only the exact retained source URL, without
+// changing the media permission predicate or the responsive card structure.
+await page.goto(`${url}/#restaurant/highwayman`, { waitUntil: "networkidle" });
+await page.locator('.restaurant-hero-photo[data-media-source="public_source_preview"]').waitFor();
+await page.waitForFunction(() => {
+  const image = document.querySelector('.restaurant-hero-photo[data-media-source="public_source_preview"]');
+  return image instanceof HTMLImageElement && image.complete && image.naturalWidth > 0;
+});
+const historicPreview = await page.evaluate(() => {
+  const restaurant = activeRestaurants.find(item => item.id === "highwayman");
+  const ref = window.HALIFAX_MEDIA_SOURCE_REFERENCES.records.find(item => item.restaurantId === "highwayman");
+  const image = document.querySelector('.restaurant-hero-photo');
+  const link = document.querySelector('.media-attribution');
+  return {
+    url: image?.getAttribute('src'), expected: ref?.url,
+    rights: image?.dataset.mediaRights,
+    referrerPolicy: image?.referrerPolicy,
+    source: link?.getAttribute('href'), expectedSource: ref?.sourceUrl,
+    label: link?.textContent,
+    unlicensed: !hasMediaPermission(ref), approvedImageAbsent: !permittedImageFor(restaurant),
+    fakeDenied: !sourcePreviewImageFor({ ...restaurant }),
+    overflow: document.documentElement.scrollWidth - innerWidth
+  };
+});
+if (historicPreview.url !== historicPreview.expected || historicPreview.source !== historicPreview.expectedSource ||
+    historicPreview.rights !== 'unverified' || historicPreview.referrerPolicy !== 'no-referrer' ||
+    !historicPreview.label?.includes('External photo source') || !historicPreview.unlicensed ||
+    !historicPreview.approvedImageAbsent || !historicPreview.fakeDenied || historicPreview.overflow > 2)
+  throw Error(`Public historical-source preview contract failed: ${JSON.stringify(historicPreview)}`);
+await captureIphone('external-source-preview');
+
 await page.goto(`${url}/#restaurant/the-narrows`, { waitUntil: "networkidle" });
 await page.locator(".restaurant-hero-photo").waitFor();
 await page.waitForFunction(() => {
