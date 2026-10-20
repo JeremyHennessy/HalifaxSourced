@@ -65,7 +65,7 @@ img{display:block;max-width:100%}
 .text-link{border:0;background:none;padding:0;color:var(--teal-700);font-weight:800}
 .eyebrow{text-transform:uppercase;letter-spacing:.11em;font-size:12px;font-weight:900;color:var(--teal-700)}
 
-.home-hero{min-height:520px;background-image:linear-gradient(90deg,rgba(255,255,255,.98) 0%,rgba(255,255,255,.92) 34%,rgba(255,255,255,.18) 65%,rgba(255,255,255,0) 100%),url("./assets/backgrounds/hero-desktop.webp");background-size:cover;background-position:center;display:flex;align-items:center;border-bottom:1px solid #eaf1f5}
+.home-hero{min-height:520px;background-image:linear-gradient(90deg,rgba(255,255,255,.98) 0%,rgba(255,255,255,.92) 34%,rgba(255,255,255,.18) 65%,rgba(255,255,255,0) 100%),url("./assets/backgrounds/hero-mobile.webp");background-size:cover;background-position:center;display:flex;align-items:center;border-bottom:1px solid #eaf1f5}
 .hero-content{display:flex;align-items:center;min-height:520px}
 .hero-copy{max-width:640px;padding-block:72px}
 .hero-copy h1{font-size:clamp(46px,5vw,72px);line-height:.98;letter-spacing:-.045em;margin:10px 0 22px;color:var(--navy-950)}
@@ -91,9 +91,9 @@ img{display:block;max-width:100%}
 .restaurant-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
 .restaurant-card{background:#fff;border:1px solid var(--border);border-radius:16px;overflow:hidden;box-shadow:var(--shadow-soft);min-width:0;transition:.16s ease}
 .restaurant-card:hover{transform:translateY(-2px);box-shadow:var(--shadow)}
-.card-media,.event-thumb,.special-image,.map-thumb{background-color:#dceff0;background-image:linear-gradient(135deg,rgba(6,43,80,.03),rgba(69,170,165,.04)),url("./assets/backgrounds/hero-desktop.webp");background-size:cover;background-position:var(--media-pos,55%) center;position:relative}
+.card-media,.event-thumb,.special-image,.map-thumb{background-color:#dceff0;background-image:linear-gradient(135deg,rgba(6,43,80,.03),rgba(69,170,165,.04)),url("./assets/backgrounds/hero-mobile.webp");background-size:cover;background-position:var(--media-pos,55%) center;position:relative}
 .card-media{height:176px}
-.media-bar{background-image:linear-gradient(135deg,rgba(6,43,80,.16),rgba(242,179,75,.1)),url("./assets/backgrounds/hero-desktop.webp")}
+.media-bar{background-image:linear-gradient(135deg,rgba(6,43,80,.16),rgba(242,179,75,.1)),url("./assets/backgrounds/hero-mobile.webp")}
 .media-cafe{background-position:73% center;filter:saturate(.88)}
 .media-asian{background-position:58% center;filter:saturate(1.04)}
 .media-dining{background-position:38% center}

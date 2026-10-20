@@ -130,24 +130,44 @@ const homeDiscovery = await page.evaluate(() => ({
 if (homeDiscovery.invalidEvents.length || homeDiscovery.adminLinks || homeDiscovery.setupCopy) throw new Error(`Public home discovery regression: ${JSON.stringify(homeDiscovery)}`);
 await page.screenshot({ path: resolve("artifacts", "ui-check-desktop.png"), fullPage: true });
 
-// Regression for the wide desktop hero: its right-aligned portrait artwork must
-// reach toward the headline, not occupy just a thin strip at the screen edge.
-await page.setViewportSize({ width: 1743, height: 900 });
-const heroArtwork = await page.locator(".home-hero").evaluate(async (hero) => {
-  const size = getComputedStyle(hero).backgroundSize;
-  const scale = /auto\s+([\d.]+)(%|px|vw)/.exec(size);
-  if (!scale) return { size, imageLeft: Infinity, heroWidth: hero.getBoundingClientRect().width };
-  const image = new Image();
-  image.src = "./assets/backgrounds/hero-mobile.webp";
-  await image.decode();
-  const heroBox = hero.getBoundingClientRect();
-  const height = scale[2] === "%" ? heroBox.height * Number(scale[1]) / 100 :
-    scale[2] === "vw" ? innerWidth * Number(scale[1]) / 100 : Number(scale[1]);
-  const imageWidth = height * image.naturalWidth / image.naturalHeight;
-  return { size, imageWidth: Math.round(imageWidth), imageLeft: Math.round(heroBox.width - imageWidth), heroWidth: heroBox.width };
-});
-if (heroArtwork.imageLeft > heroArtwork.heroWidth * .46) throw new Error(`Desktop hero artwork starts too far to the right: ${JSON.stringify(heroArtwork)}`);
-await page.screenshot({ path: resolve("artifacts", "ui-check-desktop-wide-home.png"), fullPage: false });
+// Inspect the actual decorative image/crop, not just its left background edge.
+// Include both sides of the former 1500px discontinuity and the reported viewport.
+const heroFrames = [];
+for (const width of [901, 1180, 1440, 1499, 1500, 1743]) {
+  await page.setViewportSize({ width, height: 833 });
+  const frame = await page.locator(".home-hero").evaluate(async hero => {
+    const artwork = hero.querySelector(".hero-artwork");
+    const image = artwork.querySelector("img");
+    await image.decode();
+    const rect = element => { const r=element.getBoundingClientRect(); return {x:r.x,y:r.y,width:r.width,height:r.height,right:r.right,bottom:r.bottom}; };
+    const box=rect(artwork), copy=rect(hero.querySelector(".hero-copy")), outer=rect(hero);
+    const scale=Math.max(box.width/image.naturalWidth,box.height/image.naturalHeight);
+    const position=getComputedStyle(image).objectPosition.split(" ").map(value=>parseFloat(value)/100);
+    const sourceTop=(image.naturalHeight*scale-box.height)*position[1]/scale;
+    return {viewport:innerWidth,box,copy,outer,naturalWidth:image.naturalWidth,naturalHeight:image.naturalHeight,
+      sourceTop,sourceBottom:sourceTop+box.height/scale,objectFit:getComputedStyle(image).objectFit,
+      feather:getComputedStyle(artwork,"::after").backgroundImage,
+      background:getComputedStyle(hero).backgroundImage,
+      overflow:document.documentElement.scrollWidth>innerWidth};
+  });
+  if (frame.naturalWidth!==540 || frame.naturalHeight!==959 || frame.objectFit!=="cover") throw new Error(`Hero active artwork must decode: ${JSON.stringify(frame)}`);
+  if (frame.box.x<frame.copy.right+24 || frame.box.right>frame.outer.right || frame.box.width>561 || frame.overflow) throw new Error(`Hero artwork/copy separation failed: ${JSON.stringify(frame)}`);
+  // The lighthouse starts at source y~475; skyline and coastal water reach y900.
+  // A crop beginning below470 or ending above900 is the prior giant-crop bug.
+  if (frame.sourceTop>470 || frame.sourceBottom<900 || frame.box.y<frame.outer.y-1 || frame.box.bottom>frame.outer.bottom+1) throw new Error(`Hero landmarks clipped: ${JSON.stringify(frame)}`);
+  if (frame.background!=="none" || !frame.feather.includes("linear-gradient")) throw new Error(`Hero edge must feather on its own layer: ${JSON.stringify(frame)}`);
+  heroFrames.push(frame);
+  await page.screenshot({path:resolve("artifacts",`ui-hero-${width}.png`),fullPage:false});
+  if (width===1743) await page.screenshot({path:resolve("artifacts","ui-check-desktop-wide-home.png"),fullPage:false});
+}
+const before=heroFrames.find(frame=>frame.viewport===1499),after=heroFrames.find(frame=>frame.viewport===1500);
+if (Math.abs(after.box.x-before.box.x)>2 || Math.abs(after.box.width-before.box.width)>2 || Math.abs(after.sourceTop-before.sourceTop)>1) throw new Error("Hero composition jumped at 1500px");
+await page.setViewportSize({width:900,height:844});
+await page.screenshot({path:resolve("artifacts","ui-hero-900.png"),fullPage:false});
+await page.setViewportSize({width:390,height:844});
+const mobileHero=await page.locator(".home-hero").evaluate(hero=>({artwork:getComputedStyle(hero.querySelector(".hero-artwork")).display,background:getComputedStyle(hero).backgroundImage,overflow:document.documentElement.scrollWidth>innerWidth}));
+if (mobileHero.artwork!=="none" || !mobileHero.background.includes("hero-mobile.webp") || mobileHero.overflow) throw new Error(`Mobile hero isolation failed: ${JSON.stringify(mobileHero)}`);
+await page.screenshot({path:resolve("artifacts","ui-hero-390.png"),fullPage:false});
 await page.setViewportSize({ width: 1440, height: 1000 });
 
 // Lifecycle regression: inactive places must fail closed in discovery but keep a

@@ -22,6 +22,7 @@ function renderHome() {
           </div>
           <div class="hero-proof"><span>✓</span> Source-backed local discovery</div>
         </div>
+        <div class="hero-artwork" aria-hidden="true"><img src="./assets/backgrounds/hero-mobile.webp" alt="" decoding="async" /></div>
       </div>
     </section>
 
