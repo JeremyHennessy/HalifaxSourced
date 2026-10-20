@@ -16,6 +16,22 @@ const app = JSON.parse(vm.runInContext('JSON.stringify({restaurants,active:activ
 const catalog = JSON.parse(await readFile(new URL('data/build/catalog.json',root)));
 assert.deepEqual(app.restaurants.map(item=>item.id).sort(),catalog.restaurants.map(item=>item.id).sort(),'Browser and export must use the same exact identities');
 const active = new Set(app.active);
+const evansId = 'evans-fresh-seafoods-dartmouth';
+for (const records of [app.restaurants, catalog.restaurants]) {
+  const matches = records.filter(record => record.id === evansId);
+  assert.equal(matches.length, 1, 'Three directory candidates must not create three Evan’s identities');
+  const evans = matches[0];
+  assert.equal(evans.address, '2 Ochterloney Street, Dartmouth, NS B2Y 1B2');
+  assert.equal(evans.phone, '902-466-2118');
+  assert.equal(evans.website, 'https://www.evansfreshseafoods.com/');
+  assert.equal(evans.openingHours, 'Mo-Su 11:00-20:00', 'Publish owner kitchen hours, not fish-counter hours or stale directory hours');
+  assert.equal(evans.coordinates, null, 'Do not borrow coordinates of another Alderney Landing tenant');
+  assert.equal(evans.specials.length, 0, 'A menu or weather-dependent beer garden is not a current offer');
+  assert.equal(evans.events.length, 0);
+  assert(evans.sources.some(source => source.type === 'menu' && source.url === 'https://www.evansfreshseafoods.com/menu/'));
+}
+assert(active.has(evansId));
+assert(app.restaurants.find(record => record.id === evansId).menuLinks.some(link => link.url === 'https://www.evansfreshseafoods.com/menu/'));
 const larryId = 'larrys-sandwiches-dartmouth';
 for (const records of [app.restaurants, catalog.restaurants]) {
   const matches = records.filter(record => record.id === larryId);

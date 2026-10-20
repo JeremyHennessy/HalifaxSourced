@@ -255,6 +255,37 @@ window.HALIFAX_RESTAURANT_CORRECTIONS = {
   ],
   "additions": [
     {
+      "id": "evans-fresh-seafoods-dartmouth",
+      "name": "Evan’s Fresh Seafoods & Restaurant",
+      "address": "2 Ochterloney Street, Dartmouth, NS B2Y 1B2",
+      "neighborhood": "Downtown Dartmouth",
+      "category": "Restaurant",
+      "website": "https://www.evansfreshseafoods.com/",
+      "phone": "902-466-2118",
+      "coordinates": null,
+      "openingHours": "Mo-Su 11:00-20:00",
+      "operatingStatus": "active",
+      "operatingStatusEvidence": {
+        "claim": "Owner contact page confirms the Dartmouth restaurant and 2026 kitchen hours, daily 11am–8pm. Separate fish-counter hours and weather-dependent beer garden are not restaurant hours or dated offers. Owner about page confirms local family operation; coordinates remain unverified.",
+        "sourceUrl": "https://www.evansfreshseafoods.com/contact/",
+        "observedAt": "2026-10-20T10:22:48.221Z",
+        "reviewState": "verified",
+        "location": "2 Ochterloney Street, Dartmouth, NS B2Y 1B2"
+      },
+      "cuisines": ["Seafood"],
+      "vibe": [],
+      "specials": [],
+      "events": [],
+      "socialProfiles": [],
+      "sources": [
+        { "type": "official_website", "label": "Owner Dartmouth contact and kitchen hours", "url": "https://www.evansfreshseafoods.com/contact/", "observedAt": "2026-10-20T10:22:48.221Z", "status": "verified" },
+        { "type": "official_website", "label": "Owner local family-operation evidence", "url": "https://www.evansfreshseafoods.com/about-us/", "observedAt": "2026-10-20T10:22:49.141Z", "status": "verified" },
+        { "type": "menu", "label": "Official 2026 restaurant menu", "url": "https://www.evansfreshseafoods.com/menu/", "observedAt": "2026-10-20T10:22:50.342Z", "status": "verified" }
+      ],
+      "evidenceStatus": "verified",
+      "sourceLayer": "reviewed_location_correction"
+    },
+    {
       "id": "larrys-sandwiches-dartmouth",
       "name": "Larry’s Sandwiches & Sides",
       "address": "63 Portland Street, Dartmouth, NS B2Y 1H1",

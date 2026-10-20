@@ -17,7 +17,8 @@ try {
     ['osm-node-7185511974-clay-west-bar-and-grill','replaced-clay-west'],
     ['sushi-square-scotia-square','current-sushi-square'],
     ['hux-halifax','current-hux'],
-    ['osm-node-4421124794-cafe-marco-polo','current-marco-polo']
+    ['osm-node-4421124794-cafe-marco-polo','current-marco-polo'],
+    ['evans-fresh-seafoods-dartmouth','current-evans-seafood']
   ]) {
     await page.goto(`${base}/#restaurant/${id}`,{waitUntil:'networkidle'});
     await page.locator('.restaurant-hero').waitFor();
@@ -26,6 +27,18 @@ try {
       return {active:isRestaurantActive(place),hours:place.openingHours,phone:place.phone,address:place.address,image:Boolean(permittedImageFor(place)),actions:place.menuLinks.length+place.orderingLinks.length+place.reservationLinks.length,overflow:document.documentElement.scrollWidth-innerWidth};
     },id);
     assert(model.overflow<=2,label+' horizontal overflow');
+    if (label === 'current-evans-seafood') {
+      assert(model.active);
+      assert.equal(model.hours, 'Mo-Su 11:00-20:00');
+      assert.equal(model.phone, '902-466-2118');
+      assert.equal(model.address, '2 Ochterloney Street, Dartmouth, NS B2Y 1B2');
+      const essentials = page.locator('#detailOverview .mobile-essential-facts');
+      assert(await essentials.isVisible());
+      const text = await essentials.innerText();
+      for (const fact of [model.hours, model.phone, model.address]) assert(text.includes(fact));
+      assert.equal(await page.locator('#detailMenu a[href="https://www.evansfreshseafoods.com/menu/"]').count(), 1);
+      assert.equal(model.image, false, 'Owner-site photos are not a reuse grant');
+    }
     if (label === 'current-marco-polo') {
       assert(model.active, 'Café Marco Polo must retain its existing active identity');
       assert.equal(model.hours, 'Mo-Fr 07:00-16:00; Sa-Su 08:00-16:00');
