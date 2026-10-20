@@ -137,6 +137,13 @@
   }
 }
 
+/* The portrait harbour art sits low when its background is enlarged for desktop.
+   Lift only that image's desktop crop so the lighthouse and skyline balance the
+   centered copy. Tablet and mobile backgrounds retain their existing positions. */
+@media (min-width:901px){
+  .home-hero{background-position:center, right 74%}
+}
+
 @media (max-width:767px){
   .footer-brand-lockup img{width:52px;height:52px}
   .footer-brand-lockup>strong{font-size:17px}
