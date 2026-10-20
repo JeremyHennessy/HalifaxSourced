@@ -23,3 +23,6 @@
 @media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important;animation:none!important}.button:hover,.restaurant-card:hover{transform:none}}
 
 .empty-brand-mark{display:block;width:90px;height:90px;background:url("./assets/brand/logo-emblem.webp") center/contain no-repeat}
+
+/* Tablet navigation must retain a route to saved places without changing hero sizing. */
+@media (min-width:641px) and (max-width:900px){.header-actions{display:flex;justify-self:end}}

@@ -53,7 +53,7 @@ function normalizeTime(value) {
   const raw = String(value ?? "").trim().toUpperCase();
   if (validTime(raw)) return raw;
   const m = raw.match(/^(\d{1,2})(?::(\d{2}))?\s*(AM|PM)$/);
-  if (!m) return null;
+  if (!m || Number(m[1]) < 1 || Number(m[1]) > 12 || Number(m[2] || 0) > 59) return null;
   let h = Number(m[1]) % 12; if (m[3] === "PM") h += 12;
   return `${String(h).padStart(2,"0")}:${m[2] || "00"}`;
 }
@@ -61,21 +61,34 @@ function dayName(value) {
   const raw = String(value ?? "").split("/").at(-1).toLowerCase().replace(/[^a-z]/g,"");
   return DAY_MAP.get(raw) || null;
 }
-function emptyWeekly() { return Object.fromEntries(DAYS.map((d)=>[d,[]])); }
+function emptyWeekly() { return Object.fromEntries(DAYS.map((d)=>[d,null])); }
 function addInterval(weekly, day, open, close, sourceForm) {
-  if (!day || !validTime(open) || !validTime(close)) return;
-  weekly[day].push({ open, close, overnight: close <= open && close !== "00:00", sourceForm });
+  if (!day || !validTime(open) || !validTime(close) || open === close) return;
+  weekly[day] ||= [];
+  weekly[day].push({ open, close, overnight: close < open, sourceForm });
+  return true;
+}
+function hasAmbiguousHours(weekly) {
+  for (const entries of Object.values(weekly)) {
+    const unique = [...new Map((entries || []).map(entry => [entry.open + "-" + entry.close, entry])).values()];
+    for (let i = 0; i < unique.length; i++) for (let j = i + 1; j < unique.length; j++) {
+      const a = unique[i], b = unique[j];
+      const minutes = value => Number(value.slice(0,2)) * 60 + Number(value.slice(3));
+      if (Math.max(minutes(a.open), minutes(b.open)) < Math.min(minutes(a.close) + (a.overnight ? 1440 : 0), minutes(b.close) + (b.overnight ? 1440 : 0))) return true;
+    }
+  }
+  return false;
 }
 function parseOpeningHoursSpecification(specs) {
   const weekly = emptyWeekly(); let count = 0;
   for (const spec of Array.isArray(specs) ? specs : [specs]) {
-    if (!spec || typeof spec !== "object") continue;
+    if (!spec || typeof spec !== "object") return null;
     const open = normalizeTime(spec.opens); const close = normalizeTime(spec.closes);
     const days = Array.isArray(spec.dayOfWeek) ? spec.dayOfWeek : [spec.dayOfWeek];
-    if (!open || !close) continue;
-    for (const d of days) { const day = dayName(d); if (day) { addInterval(weekly, day, open, close, "schema_openingHoursSpecification"); count += 1; } }
+    if (!open || !close || open === close || days.some(day => !dayName(day))) return null;
+    for (const d of days) { const day = dayName(d); if (day) { if (addInterval(weekly, day, open, close, "schema_openingHoursSpecification")) count += 1; } }
   }
-  return count ? weekly : null;
+  return count && !hasAmbiguousHours(weekly) ? weekly : null;
 }
 function rangeDays(start, end) {
   const a = DAYS.indexOf(start), b = DAYS.indexOf(end); if (a<0 || b<0) return [];
@@ -86,12 +99,12 @@ function parseOpeningHoursStrings(values) {
   for (const value of Array.isArray(values) ? values : [values]) {
     const text=String(value||"").trim();
     const m=text.match(/^([A-Za-z]{2,9})(?:\s*-\s*([A-Za-z]{2,9}))?\s+([^\s]+)\s*-\s*([^\s]+)$/);
-    if(!m) continue;
+    if(!m) return null;
     const start=dayName(m[1]), end=dayName(m[2]||m[1]); const open=normalizeTime(m[3]), close=normalizeTime(m[4]);
-    if(!start||!end||!open||!close) continue;
-    for(const day of rangeDays(start,end)){ addInterval(weekly,day,open,close,"schema_openingHours"); count+=1; }
+    if(!start||!end||!open||!close||open===close) return null;
+    for(const day of rangeDays(start,end)){ if(addInterval(weekly,day,open,close,"schema_openingHours")) count+=1; }
   }
-  return count ? weekly : null;
+  return count && !hasAmbiguousHours(weekly) ? weekly : null;
 }
 function structuredAddress(node) {
   const address=node?.address; if (!address) return null;
@@ -99,6 +112,12 @@ function structuredAddress(node) {
   if (typeof address !== "object") return null;
   const parts=[address.streetAddress,address.addressLocality,address.addressRegion,address.postalCode,address.addressCountry].filter(Boolean).map(String);
   return parts.length ? parts.join(", ") : null;
+}
+function schemaLocationConflicts(node, place) {
+  const observed = structuredAddress(node), expected = place?.address;
+  if (!observed || !expected) return false;
+  const streetKey = value => String(value).split(",")[0].toLowerCase().replace(/\bstreet\b/g,"st").replace(/\broad\b/g,"rd").replace(/\bdrive\b/g,"dr").replace(/\bavenue\b/g,"ave").replace(/[^a-z0-9]/g,"");
+  return streetKey(observed) !== streetKey(expected);
 }
 function provider(url, list) { for (const [name,re] of list) if (re.test(String(url||""))) return name; return null; }
 function menuType(label,url) {
@@ -131,7 +150,8 @@ async function worker(){ while(true){ const i=cursor++; if(i>=targets.length)ret
       if(!fetched.html){const failure={restaurantId:source.restaurantId,sourceUrl,reason:fetched.error,checkedAt:observedAt,attempted:!blocked}; failures.push(failure); if(!blocked&&blockedFactReason(fetched.error))accessRestrictions.push(failure); observations.push({restaurantId:source.restaurantId,state:blockedFactReason(fetched.error)?'blocked':'failed',reason:fetched.error,checkedAt:observedAt,attempted:!blocked}); continue;}
       observations.push({restaurantId:source.restaurantId,state:'refreshed',checkedAt:observedAt,attempted:true});
       const nodes=[]; for(const m of fetched.html.matchAll(/<script\b[^>]*type\s*=\s*["']application\/ld\+json["'][^>]*>([\s\S]*?)<\/script>/gi)){try{flattenJsonLd(JSON.parse(m[1].trim()),nodes);}catch{}} const fact={restaurantId:source.restaurantId,name:place.name,sourceUrl:fetched.url,observedAt,lastVerifiedAt:observedAt,sourceKind:"official_website_structured_facts",reviewState:"verified_source",hours:null,phone:null,email:null,address:null,features:[],menus:[],reservations:[],ordering:[]};
-      for(const node of nodes){ if(!fact.phone && node.telephone) fact.phone=String(node.telephone).trim(); if(!fact.email && node.email) fact.email=String(node.email).replace(/^mailto:/i,"").trim(); if(!fact.address) fact.address=structuredAddress(node); if(!fact.hours){ fact.hours=parseOpeningHoursSpecification(node.openingHoursSpecification)||parseOpeningHoursStrings(node.openingHours); } }
+      for(const node of nodes){ if(schemaLocationConflicts(node, place)) continue; if(!fact.phone && node.telephone) fact.phone=String(node.telephone).trim(); if(!fact.email && node.email) fact.email=String(node.email).replace(/^mailto:/i,"").trim(); if(!fact.address) fact.address=structuredAddress(node); if(!fact.hours){ fact.hours=node.openingHoursSpecification ? parseOpeningHoursSpecification(node.openingHoursSpecification) : parseOpeningHoursStrings(node.openingHours); } }
+      if (fact.hours) { fact.hoursUnknownDays = DAYS.filter(day => fact.hours[day] === null); fact.hoursVerifiedAt = observedAt; fact.hoursSourceUrl = fetched.url; }
       if(!fact.phone){ const tel=fetched.html.match(/href\s*=\s*["']tel:([^"']+)["']/i); if(tel)fact.phone=cleanText(tel[1]); }
       const text=cleanText(fetched.html); for(const [feature,re] of featurePatterns){ const match=text.match(re); if(match)fact.features.push({feature,evidencePhrase:match[0],sourceUrl:fetched.url,observedAt,lastVerifiedAt:observedAt,confidence:"official_source_explicit_text"}); }
       for(const page of verifiedByRestaurant.get(source.restaurantId)||[]){ const url=safeUrl(page.url||page.sourceUrl); if(!url)continue; const kind=String(page.kind||page.type||"").toLowerCase(); if(/menu/.test(kind)||/menu/i.test(`${page.label||""} ${url}`)) fact.menus.push({menuType:menuType(page.label,url),title:page.label||"Menu",url,format:/\.pdf(?:$|\?)/i.test(url)?"pdf":"html",locationSpecific:true,verifiedAt:page.verifiedAt||page.observedAt||observedAt,source:"verified_restaurant_owned_page",status:"verified"}); }

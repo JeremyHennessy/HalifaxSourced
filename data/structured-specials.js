@@ -1,13 +1,13 @@
 window.HALIFAX_STRUCTURED_SPECIALS = {
   "version": 3,
-  "generatedAt": "2026-10-06T01:26:37.669Z",
+  "generatedAt": "2026-10-20T19:18:08.867Z",
   "currentVerificationMaxAgeDays": 30,
-  "count": 160,
-  "verifiedCurrent": 0,
+  "count": 166,
+  "verifiedCurrent": 32,
   "recurringVerify": 5,
-  "sourceLeads": 100,
-  "stale": 55,
-  "expired": 0,
+  "sourceLeads": 39,
+  "stale": 27,
+  "expired": 63,
   "orphanSourceCount": 61,
   "orphanSources": [
     {
@@ -806,304 +806,50 @@ window.HALIFAX_STRUCTURED_SPECIALS = {
   ],
   "records": [
     {
-      "specialId": "highwayman-tom-collins-happy-hour-glass-486f7b1317",
-      "restaurantId": "highwayman",
-      "title": "Tom Collins happy-hour glass",
-      "specialType": "happy_hour",
-      "description": "Gin, lemon, sugar and soda.",
-      "dayOfWeek": [
-        "monday",
-        "tuesday",
-        "wednesday",
-        "thursday",
-        "friday",
-        "saturday",
-        "sunday"
-      ],
-      "startTime": "16:00",
-      "endTime": "17:00",
-      "validFrom": null,
-      "validTo": null,
-      "price": 12,
-      "currency": "CAD",
-      "recurrence": "Daily 4PM-5PM",
-      "sourceUrl": "https://www.highwaymanhfx.com/happyhour",
-      "sourceType": "reviewed_restaurant_owned_source",
-      "observedAt": "2026-08-29T00:00:00.000Z",
-      "verifiedAt": "2026-08-29T00:00:00.000Z",
-      "status": "stale"
-    },
-    {
-      "specialId": "highwayman-mojito-happy-hour-glass-f415b6aeea",
-      "restaurantId": "highwayman",
-      "title": "Mojito happy-hour glass",
-      "specialType": "happy_hour",
-      "description": "White rum, mint, lime and soda.",
-      "dayOfWeek": [
-        "monday",
-        "tuesday",
-        "wednesday",
-        "thursday",
-        "friday",
-        "saturday",
-        "sunday"
-      ],
-      "startTime": "16:00",
-      "endTime": "17:00",
-      "validFrom": null,
-      "validTo": null,
-      "price": 12,
-      "currency": "CAD",
-      "recurrence": "Daily 4PM-5PM",
-      "sourceUrl": "https://www.highwaymanhfx.com/happyhour",
-      "sourceType": "reviewed_restaurant_owned_source",
-      "observedAt": "2026-08-29T00:00:00.000Z",
-      "verifiedAt": "2026-08-29T00:00:00.000Z",
-      "status": "stale"
-    },
-    {
-      "specialId": "highwayman-americano-happy-hour-glass-e212088f96",
-      "restaurantId": "highwayman",
-      "title": "Americano happy-hour glass",
-      "specialType": "happy_hour",
-      "description": "Campari, sweet vermouth and soda.",
-      "dayOfWeek": [
-        "monday",
-        "tuesday",
-        "wednesday",
-        "thursday",
-        "friday",
-        "saturday",
-        "sunday"
-      ],
-      "startTime": "16:00",
-      "endTime": "17:00",
-      "validFrom": null,
-      "validTo": null,
-      "price": 10,
-      "currency": "CAD",
-      "recurrence": "Daily 4PM-5PM",
-      "sourceUrl": "https://www.highwaymanhfx.com/happyhour",
-      "sourceType": "reviewed_restaurant_owned_source",
-      "observedAt": "2026-08-29T00:00:00.000Z",
-      "verifiedAt": "2026-08-29T00:00:00.000Z",
-      "status": "stale"
-    },
-    {
-      "specialId": "highwayman-aperol-spritz-happy-hour-glass-29248bc420",
-      "restaurantId": "highwayman",
-      "title": "Aperol Spritz happy-hour glass",
-      "specialType": "happy_hour",
-      "description": "Aperol, sparkling wine and soda.",
-      "dayOfWeek": [
-        "monday",
-        "tuesday",
-        "wednesday",
-        "thursday",
-        "friday",
-        "saturday",
-        "sunday"
-      ],
-      "startTime": "16:00",
-      "endTime": "17:00",
-      "validFrom": null,
-      "validTo": null,
-      "price": 10,
-      "currency": "CAD",
-      "recurrence": "Daily 4PM-5PM",
-      "sourceUrl": "https://www.highwaymanhfx.com/happyhour",
-      "sourceType": "reviewed_restaurant_owned_source",
-      "observedAt": "2026-08-29T00:00:00.000Z",
-      "verifiedAt": "2026-08-29T00:00:00.000Z",
-      "status": "stale"
-    },
-    {
-      "specialId": "highwayman-white-wine-spritzer-happy-hour-glass-ac8a7287ff",
-      "restaurantId": "highwayman",
-      "title": "White Wine Spritzer happy-hour glass",
-      "specialType": "happy_hour",
-      "description": "White wine, vodka, lemon and soda.",
-      "dayOfWeek": [
-        "monday",
-        "tuesday",
-        "wednesday",
-        "thursday",
-        "friday",
-        "saturday",
-        "sunday"
-      ],
-      "startTime": "16:00",
-      "endTime": "17:00",
-      "validFrom": null,
-      "validTo": null,
-      "price": 10,
-      "currency": "CAD",
-      "recurrence": "Daily 4PM-5PM",
-      "sourceUrl": "https://www.highwaymanhfx.com/happyhour",
-      "sourceType": "reviewed_restaurant_owned_source",
-      "observedAt": "2026-08-29T00:00:00.000Z",
-      "verifiedAt": "2026-08-29T00:00:00.000Z",
-      "status": "stale"
-    },
-    {
-      "specialId": "highwayman-sangria-by-the-glass-2f9521b662",
-      "restaurantId": "highwayman",
-      "title": "Sangria by the glass",
-      "specialType": "happy_hour",
-      "description": null,
-      "dayOfWeek": [
-        "monday",
-        "tuesday",
-        "wednesday",
-        "thursday",
-        "friday",
-        "saturday",
-        "sunday"
-      ],
-      "startTime": "16:00",
-      "endTime": "17:00",
-      "validFrom": null,
-      "validTo": null,
-      "price": 12,
-      "currency": "CAD",
-      "recurrence": "Daily 4PM-5PM",
-      "sourceUrl": "https://www.highwaymanhfx.com/happyhour",
-      "sourceType": "reviewed_restaurant_owned_source",
-      "observedAt": "2026-08-29T00:00:00.000Z",
-      "verifiedAt": "2026-08-29T00:00:00.000Z",
-      "status": "stale"
-    },
-    {
-      "specialId": "highwayman-cava-by-the-glass-d82a323203",
-      "restaurantId": "highwayman",
-      "title": "Cava by the glass",
-      "specialType": "happy_hour",
-      "description": null,
-      "dayOfWeek": [
-        "monday",
-        "tuesday",
-        "wednesday",
-        "thursday",
-        "friday",
-        "saturday",
-        "sunday"
-      ],
-      "startTime": "16:00",
-      "endTime": "17:00",
-      "validFrom": null,
-      "validTo": null,
-      "price": 12,
-      "currency": "CAD",
-      "recurrence": "Daily 4PM-5PM",
-      "sourceUrl": "https://www.highwaymanhfx.com/happyhour",
-      "sourceType": "reviewed_restaurant_owned_source",
-      "observedAt": "2026-08-29T00:00:00.000Z",
-      "verifiedAt": "2026-08-29T00:00:00.000Z",
-      "status": "stale"
-    },
-    {
-      "specialId": "highwayman-happy-hour-oysters-1d7f82a15c",
-      "restaurantId": "highwayman",
-      "title": "Happy-hour oysters",
-      "specialType": "oyster_special",
-      "description": "Per oyster; minimum order of six.",
-      "dayOfWeek": [
-        "monday",
-        "tuesday",
-        "wednesday",
-        "thursday",
-        "friday",
-        "saturday",
-        "sunday"
-      ],
-      "startTime": "16:00",
-      "endTime": "17:00",
-      "validFrom": null,
-      "validTo": null,
-      "price": 3,
-      "currency": "CAD",
-      "recurrence": "Daily 4PM-5PM",
-      "sourceUrl": "https://www.highwaymanhfx.com/happyhour",
-      "sourceType": "reviewed_restaurant_owned_source",
-      "observedAt": "2026-08-29T00:00:00.000Z",
-      "verifiedAt": "2026-08-29T00:00:00.000Z",
-      "status": "stale"
-    },
-    {
-      "specialId": "highwayman-happy-hour-snack-platter-a905659b54",
-      "restaurantId": "highwayman",
-      "title": "Happy-hour snack platter",
-      "specialType": "happy_hour",
-      "description": "Chef's choice of house cured meats, cheese, pan con tomate and croquetas.",
-      "dayOfWeek": [
-        "monday",
-        "tuesday",
-        "wednesday",
-        "thursday",
-        "friday",
-        "saturday",
-        "sunday"
-      ],
-      "startTime": "16:00",
-      "endTime": "17:00",
-      "validFrom": null,
-      "validTo": null,
-      "price": 35,
-      "currency": "CAD",
-      "recurrence": "Daily 4PM-5PM",
-      "sourceUrl": "https://www.highwaymanhfx.com/happyhour",
-      "sourceType": "reviewed_restaurant_owned_source",
-      "observedAt": "2026-08-29T00:00:00.000Z",
-      "verifiedAt": "2026-08-29T00:00:00.000Z",
-      "status": "stale"
-    },
-    {
-      "specialId": "highwayman-happy-hour-seafood-platter-a671f727e1",
-      "restaurantId": "highwayman",
-      "title": "Happy-hour seafood platter",
-      "specialType": "happy_hour",
-      "description": "Half dozen oysters, two chilled seafood dishes and sides.",
-      "dayOfWeek": [
-        "monday",
-        "tuesday",
-        "wednesday",
-        "thursday",
-        "friday",
-        "saturday",
-        "sunday"
-      ],
-      "startTime": "16:00",
-      "endTime": "17:00",
-      "validFrom": null,
-      "validTo": null,
-      "price": 35,
-      "currency": "CAD",
-      "recurrence": "Daily 4PM-5PM",
-      "sourceUrl": "https://www.highwaymanhfx.com/happyhour",
-      "sourceType": "reviewed_restaurant_owned_source",
-      "observedAt": "2026-08-29T00:00:00.000Z",
-      "verifiedAt": "2026-08-29T00:00:00.000Z",
-      "status": "stale"
-    },
-    {
-      "specialId": "osm-node-11751560115-seaport-social-afternoon-tea-1efb04cbbc",
+      "specialId": "osm-node-11751560115-seaport-social-afternoon-tea-october-17-f8e754894e",
       "restaurantId": "osm-node-11751560115-seaport-social",
-      "title": "Afternoon Tea",
+      "title": "Afternoon Tea — October 17",
       "specialType": "daily_or_promotional_special",
       "description": "Savory selections and sweets; reservations required. Prosecco option is separately priced by the source.",
       "dayOfWeek": null,
       "startTime": "14:00",
       "endTime": "16:00",
-      "validFrom": "2026-08-29",
-      "validTo": "2026-10-17",
+      "validFrom": "2026-10-17T14:00:00-03:00",
+      "validTo": "2026-10-17T16:00:00-03:00",
       "price": 55,
       "currency": "CAD",
-      "recurrence": "August 29 and October 17, 2PM-4PM",
+      "recurrence": "October 17, 2PM–4PM",
       "sourceUrl": "https://www.seaportsocialhalifax.com/specials",
       "sourceType": "reviewed_restaurant_owned_source",
       "observedAt": "2026-08-29T00:00:00.000Z",
       "verifiedAt": "2026-08-29T00:00:00.000Z",
-      "status": "stale"
+      "status": "expired",
+      "expiresAt": "2026-10-17T19:00:00.000Z",
+      "reviewedAt": "2026-08-29T00:00:00.000Z",
+      "reviewDueAt": "2026-09-28T00:00:00.000Z"
+    },
+    {
+      "specialId": "osm-node-11751560115-seaport-social-afternoon-tea-november-14-cfda672282",
+      "restaurantId": "osm-node-11751560115-seaport-social",
+      "title": "Afternoon Tea — November 14",
+      "specialType": "daily_or_promotional_special",
+      "description": "Savory food and sweets; reservations required. $55 per person, or $57 with a glass of Prosecco. Tax and gratuity are extra.",
+      "dayOfWeek": null,
+      "startTime": "14:00",
+      "endTime": "16:00",
+      "validFrom": "2026-11-14T14:00:00-04:00",
+      "validTo": "2026-11-14T16:00:00-04:00",
+      "price": 55,
+      "currency": "CAD",
+      "recurrence": "November 14, 2PM–4PM",
+      "sourceUrl": "https://www.seaportsocialhalifax.com/specials",
+      "sourceType": "reviewed_restaurant_owned_source",
+      "observedAt": "2026-10-19",
+      "verifiedAt": "2026-10-19",
+      "status": "source_lead",
+      "expiresAt": "2026-11-14T20:00:00.000Z",
+      "reviewedAt": "2026-10-19",
+      "reviewDueAt": "2026-11-18T00:00:00.000Z"
     },
     {
       "specialId": "osm-node-11751560115-seaport-social-happy-hour-draught-cf56212df6",
@@ -1131,7 +877,10 @@ window.HALIFAX_STRUCTURED_SPECIALS = {
       "sourceType": "reviewed_restaurant_owned_source",
       "observedAt": "2026-08-29T00:00:00.000Z",
       "verifiedAt": "2026-08-29T00:00:00.000Z",
-      "status": "stale"
+      "status": "stale",
+      "expiresAt": null,
+      "reviewedAt": "2026-08-29T00:00:00.000Z",
+      "reviewDueAt": "2026-09-28T00:00:00.000Z"
     },
     {
       "specialId": "osm-node-11751560115-seaport-social-happy-hour-house-wine-57c0d73dd3",
@@ -1159,7 +908,10 @@ window.HALIFAX_STRUCTURED_SPECIALS = {
       "sourceType": "reviewed_restaurant_owned_source",
       "observedAt": "2026-08-29T00:00:00.000Z",
       "verifiedAt": "2026-08-29T00:00:00.000Z",
-      "status": "stale"
+      "status": "stale",
+      "expiresAt": null,
+      "reviewedAt": "2026-08-29T00:00:00.000Z",
+      "reviewDueAt": "2026-09-28T00:00:00.000Z"
     },
     {
       "specialId": "osm-node-11751560115-seaport-social-happy-hour-curated-menu-704e4c5eb6",
@@ -1187,347 +939,10 @@ window.HALIFAX_STRUCTURED_SPECIALS = {
       "sourceType": "reviewed_restaurant_owned_source",
       "observedAt": "2026-08-29T00:00:00.000Z",
       "verifiedAt": "2026-08-29T00:00:00.000Z",
-      "status": "stale"
-    },
-    {
-      "specialId": "osm-node-11726396167-rush-hour-pizza-pizza-and-donairs-combo-a6da3c8cbd",
-      "restaurantId": "osm-node-11726396167-rush-hour-pizza",
-      "title": "Pizza and donairs combo",
-      "specialType": "daily_or_promotional_special",
-      "description": "Medium 12-inch pizza with up to three toppings, two small donairs and two cans of pop.",
-      "dayOfWeek": null,
-      "startTime": null,
-      "endTime": null,
-      "validFrom": null,
-      "validTo": null,
-      "price": 23.95,
-      "currency": "CAD",
-      "recurrence": "Daily special",
-      "sourceUrl": "https://rushhourpizza.ca/specials",
-      "sourceType": "reviewed_restaurant_owned_source",
-      "observedAt": "2026-08-29T00:00:00.000Z",
-      "verifiedAt": "2026-08-29T00:00:00.000Z",
-      "status": "stale"
-    },
-    {
-      "specialId": "osm-node-11726396167-rush-hour-pizza-pizza-and-wings-combo-57e0e3d4af",
-      "restaurantId": "osm-node-11726396167-rush-hour-pizza",
-      "title": "Pizza and wings combo",
-      "specialType": "wing_night",
-      "description": "Medium 12-inch pizza with up to three toppings, ten wings and two cans of pop.",
-      "dayOfWeek": null,
-      "startTime": null,
-      "endTime": null,
-      "validFrom": null,
-      "validTo": null,
-      "price": 21.95,
-      "currency": "CAD",
-      "recurrence": "Daily special",
-      "sourceUrl": "https://rushhourpizza.ca/specials",
-      "sourceType": "reviewed_restaurant_owned_source",
-      "observedAt": "2026-08-29T00:00:00.000Z",
-      "verifiedAt": "2026-08-29T00:00:00.000Z",
-      "status": "stale"
-    },
-    {
-      "specialId": "osm-node-11726396167-rush-hour-pizza-pizza-and-donair-eggrolls-combo-f49ce825b5",
-      "restaurantId": "osm-node-11726396167-rush-hour-pizza",
-      "title": "Pizza and donair eggrolls combo",
-      "specialType": "daily_or_promotional_special",
-      "description": "Medium 12-inch pizza with up to three toppings, six donair eggrolls and two cans of pop.",
-      "dayOfWeek": null,
-      "startTime": null,
-      "endTime": null,
-      "validFrom": null,
-      "validTo": null,
-      "price": 23.95,
-      "currency": "CAD",
-      "recurrence": "Daily special",
-      "sourceUrl": "https://rushhourpizza.ca/specials",
-      "sourceType": "reviewed_restaurant_owned_source",
-      "observedAt": "2026-08-29T00:00:00.000Z",
-      "verifiedAt": "2026-08-29T00:00:00.000Z",
-      "status": "stale"
-    },
-    {
-      "specialId": "osm-node-11726396167-rush-hour-pizza-pizza-and-garlic-fingers-combo-3736d6a4a4",
-      "restaurantId": "osm-node-11726396167-rush-hour-pizza",
-      "title": "Pizza and garlic fingers combo",
-      "specialType": "daily_or_promotional_special",
-      "description": "Large 16-inch pizza, medium garlic fingers and two-litre pop.",
-      "dayOfWeek": null,
-      "startTime": null,
-      "endTime": null,
-      "validFrom": null,
-      "validTo": null,
-      "price": 29.95,
-      "currency": "CAD",
-      "recurrence": "Daily special",
-      "sourceUrl": "https://rushhourpizza.ca/specials",
-      "sourceType": "reviewed_restaurant_owned_source",
-      "observedAt": "2026-08-29T00:00:00.000Z",
-      "verifiedAt": "2026-08-29T00:00:00.000Z",
-      "status": "stale"
-    },
-    {
-      "specialId": "osm-node-11726396167-rush-hour-pizza-three-small-donairs-combo-d895adb001",
-      "restaurantId": "osm-node-11726396167-rush-hour-pizza",
-      "title": "Three small donairs combo",
-      "specialType": "daily_or_promotional_special",
-      "description": "Three small donairs and three cans of pop.",
-      "dayOfWeek": null,
-      "startTime": null,
-      "endTime": null,
-      "validFrom": null,
-      "validTo": null,
-      "price": 17.95,
-      "currency": "CAD",
-      "recurrence": "Daily special",
-      "sourceUrl": "https://rushhourpizza.ca/specials",
-      "sourceType": "reviewed_restaurant_owned_source",
-      "observedAt": "2026-08-29T00:00:00.000Z",
-      "verifiedAt": "2026-08-29T00:00:00.000Z",
-      "status": "stale"
-    },
-    {
-      "specialId": "osm-node-11726396167-rush-hour-pizza-large-five-topping-pizza-8179589a81",
-      "restaurantId": "osm-node-11726396167-rush-hour-pizza",
-      "title": "Large five-topping pizza",
-      "specialType": "daily_or_promotional_special",
-      "description": "Large 16-inch pizza with up to five regular toppings.",
-      "dayOfWeek": null,
-      "startTime": null,
-      "endTime": null,
-      "validFrom": null,
-      "validTo": null,
-      "price": 18.5,
-      "currency": "CAD",
-      "recurrence": "Daily special",
-      "sourceUrl": "https://rushhourpizza.ca/specials",
-      "sourceType": "reviewed_restaurant_owned_source",
-      "observedAt": "2026-08-29T00:00:00.000Z",
-      "verifiedAt": "2026-08-29T00:00:00.000Z",
-      "status": "stale"
-    },
-    {
-      "specialId": "osm-node-11726396167-rush-hour-pizza-two-large-five-topping-pizzas-e28a88539c",
-      "restaurantId": "osm-node-11726396167-rush-hour-pizza",
-      "title": "Two large five-topping pizzas",
-      "specialType": "daily_or_promotional_special",
-      "description": "Two large 16-inch pizzas with up to five regular toppings each.",
-      "dayOfWeek": null,
-      "startTime": null,
-      "endTime": null,
-      "validFrom": null,
-      "validTo": null,
-      "price": 34.95,
-      "currency": "CAD",
-      "recurrence": "Daily special",
-      "sourceUrl": "https://rushhourpizza.ca/specials",
-      "sourceType": "reviewed_restaurant_owned_source",
-      "observedAt": "2026-08-29T00:00:00.000Z",
-      "verifiedAt": "2026-08-29T00:00:00.000Z",
-      "status": "stale"
-    },
-    {
-      "specialId": "osm-node-11726396167-rush-hour-pizza-medium-five-topping-pizza-c0c93df9a8",
-      "restaurantId": "osm-node-11726396167-rush-hour-pizza",
-      "title": "Medium five-topping pizza",
-      "specialType": "daily_or_promotional_special",
-      "description": "Medium 12-inch pizza with up to five regular toppings.",
-      "dayOfWeek": null,
-      "startTime": null,
-      "endTime": null,
-      "validFrom": null,
-      "validTo": null,
-      "price": 14.95,
-      "currency": "CAD",
-      "recurrence": "Daily special",
-      "sourceUrl": "https://rushhourpizza.ca/specials",
-      "sourceType": "reviewed_restaurant_owned_source",
-      "observedAt": "2026-08-29T00:00:00.000Z",
-      "verifiedAt": "2026-08-29T00:00:00.000Z",
-      "status": "stale"
-    },
-    {
-      "specialId": "osm-node-11726396167-rush-hour-pizza-two-medium-five-topping-pizzas-37e4461cb6",
-      "restaurantId": "osm-node-11726396167-rush-hour-pizza",
-      "title": "Two medium five-topping pizzas",
-      "specialType": "daily_or_promotional_special",
-      "description": "Two medium 12-inch pizzas with up to five regular toppings each.",
-      "dayOfWeek": null,
-      "startTime": null,
-      "endTime": null,
-      "validFrom": null,
-      "validTo": null,
-      "price": 26.95,
-      "currency": "CAD",
-      "recurrence": "Daily special",
-      "sourceUrl": "https://rushhourpizza.ca/specials",
-      "sourceType": "reviewed_restaurant_owned_source",
-      "observedAt": "2026-08-29T00:00:00.000Z",
-      "verifiedAt": "2026-08-29T00:00:00.000Z",
-      "status": "stale"
-    },
-    {
-      "specialId": "osm-node-11726396167-rush-hour-pizza-small-five-topping-pizza-ba60c0851b",
-      "restaurantId": "osm-node-11726396167-rush-hour-pizza",
-      "title": "Small five-topping pizza",
-      "specialType": "daily_or_promotional_special",
-      "description": "Small 9-inch pizza with up to five regular toppings.",
-      "dayOfWeek": null,
-      "startTime": null,
-      "endTime": null,
-      "validFrom": null,
-      "validTo": null,
-      "price": 10.95,
-      "currency": "CAD",
-      "recurrence": "Daily special",
-      "sourceUrl": "https://rushhourpizza.ca/specials",
-      "sourceType": "reviewed_restaurant_owned_source",
-      "observedAt": "2026-08-29T00:00:00.000Z",
-      "verifiedAt": "2026-08-29T00:00:00.000Z",
-      "status": "stale"
-    },
-    {
-      "specialId": "osm-node-11726396167-rush-hour-pizza-two-small-five-topping-pizzas-82a46aa601",
-      "restaurantId": "osm-node-11726396167-rush-hour-pizza",
-      "title": "Two small five-topping pizzas",
-      "specialType": "daily_or_promotional_special",
-      "description": "Two small 9-inch pizzas with up to five regular toppings each.",
-      "dayOfWeek": null,
-      "startTime": null,
-      "endTime": null,
-      "validFrom": null,
-      "validTo": null,
-      "price": 19.95,
-      "currency": "CAD",
-      "recurrence": "Daily special",
-      "sourceUrl": "https://rushhourpizza.ca/specials",
-      "sourceType": "reviewed_restaurant_owned_source",
-      "observedAt": "2026-08-29T00:00:00.000Z",
-      "verifiedAt": "2026-08-29T00:00:00.000Z",
-      "status": "stale"
-    },
-    {
-      "specialId": "osm-node-11726396167-rush-hour-pizza-pickup-large-three-topping-pizza-896a6fc110",
-      "restaurantId": "osm-node-11726396167-rush-hour-pizza",
-      "title": "Pickup large three-topping pizza",
-      "specialType": "daily_or_promotional_special",
-      "description": "Large 16-inch pizza with up to three regular toppings; pickup only.",
-      "dayOfWeek": null,
-      "startTime": null,
-      "endTime": null,
-      "validFrom": null,
-      "validTo": null,
-      "price": 15.99,
-      "currency": "CAD",
-      "recurrence": "Daily pickup special",
-      "sourceUrl": "https://rushhourpizza.ca/specials",
-      "sourceType": "reviewed_restaurant_owned_source",
-      "observedAt": "2026-08-29T00:00:00.000Z",
-      "verifiedAt": "2026-08-29T00:00:00.000Z",
-      "status": "stale"
-    },
-    {
-      "specialId": "osm-node-11726396167-rush-hour-pizza-pickup-medium-three-topping-pizza-000c7dec58",
-      "restaurantId": "osm-node-11726396167-rush-hour-pizza",
-      "title": "Pickup medium three-topping pizza",
-      "specialType": "daily_or_promotional_special",
-      "description": "Medium 12-inch pizza with up to three regular toppings; pickup only.",
-      "dayOfWeek": null,
-      "startTime": null,
-      "endTime": null,
-      "validFrom": null,
-      "validTo": null,
-      "price": 11.99,
-      "currency": "CAD",
-      "recurrence": "Daily pickup special",
-      "sourceUrl": "https://rushhourpizza.ca/specials",
-      "sourceType": "reviewed_restaurant_owned_source",
-      "observedAt": "2026-08-29T00:00:00.000Z",
-      "verifiedAt": "2026-08-29T00:00:00.000Z",
-      "status": "stale"
-    },
-    {
-      "specialId": "osm-node-11726396167-rush-hour-pizza-pickup-small-three-topping-pizza-ccf9c80e5e",
-      "restaurantId": "osm-node-11726396167-rush-hour-pizza",
-      "title": "Pickup small three-topping pizza",
-      "specialType": "daily_or_promotional_special",
-      "description": "Small 9-inch pizza with up to three regular toppings; pickup only.",
-      "dayOfWeek": null,
-      "startTime": null,
-      "endTime": null,
-      "validFrom": null,
-      "validTo": null,
-      "price": 9.99,
-      "currency": "CAD",
-      "recurrence": "Daily pickup special",
-      "sourceUrl": "https://rushhourpizza.ca/specials",
-      "sourceType": "reviewed_restaurant_owned_source",
-      "observedAt": "2026-08-29T00:00:00.000Z",
-      "verifiedAt": "2026-08-29T00:00:00.000Z",
-      "status": "stale"
-    },
-    {
-      "specialId": "osm-node-11726396167-rush-hour-pizza-pickup-large-one-topping-pizza-6c8f6f28f0",
-      "restaurantId": "osm-node-11726396167-rush-hour-pizza",
-      "title": "Pickup large one-topping pizza",
-      "specialType": "daily_or_promotional_special",
-      "description": "Large 16-inch pizza with one regular topping; pickup only.",
-      "dayOfWeek": null,
-      "startTime": null,
-      "endTime": null,
-      "validFrom": null,
-      "validTo": null,
-      "price": 13.99,
-      "currency": "CAD",
-      "recurrence": "Daily pickup special",
-      "sourceUrl": "https://rushhourpizza.ca/specials",
-      "sourceType": "reviewed_restaurant_owned_source",
-      "observedAt": "2026-08-29T00:00:00.000Z",
-      "verifiedAt": "2026-08-29T00:00:00.000Z",
-      "status": "stale"
-    },
-    {
-      "specialId": "osm-node-11726396167-rush-hour-pizza-pickup-medium-one-topping-pizza-98c98807dd",
-      "restaurantId": "osm-node-11726396167-rush-hour-pizza",
-      "title": "Pickup medium one-topping pizza",
-      "specialType": "daily_or_promotional_special",
-      "description": "Medium 12-inch pizza with one regular topping; pickup only.",
-      "dayOfWeek": null,
-      "startTime": null,
-      "endTime": null,
-      "validFrom": null,
-      "validTo": null,
-      "price": 9.99,
-      "currency": "CAD",
-      "recurrence": "Daily pickup special",
-      "sourceUrl": "https://rushhourpizza.ca/specials",
-      "sourceType": "reviewed_restaurant_owned_source",
-      "observedAt": "2026-08-29T00:00:00.000Z",
-      "verifiedAt": "2026-08-29T00:00:00.000Z",
-      "status": "stale"
-    },
-    {
-      "specialId": "osm-node-11726396167-rush-hour-pizza-pickup-small-one-topping-pizza-6c69b8ded1",
-      "restaurantId": "osm-node-11726396167-rush-hour-pizza",
-      "title": "Pickup small one-topping pizza",
-      "specialType": "daily_or_promotional_special",
-      "description": "Small 9-inch pizza with one regular topping; pickup only.",
-      "dayOfWeek": null,
-      "startTime": null,
-      "endTime": null,
-      "validFrom": null,
-      "validTo": null,
-      "price": 7.99,
-      "currency": "CAD",
-      "recurrence": "Daily pickup special",
-      "sourceUrl": "https://rushhourpizza.ca/specials",
-      "sourceType": "reviewed_restaurant_owned_source",
-      "observedAt": "2026-08-29T00:00:00.000Z",
-      "verifiedAt": "2026-08-29T00:00:00.000Z",
-      "status": "stale"
+      "status": "stale",
+      "expiresAt": null,
+      "reviewedAt": "2026-08-29T00:00:00.000Z",
+      "reviewDueAt": "2026-09-28T00:00:00.000Z"
     },
     {
       "specialId": "osm-node-11506685695-kenny-s-pizza-two-small-pizzas-5616dd9686",
@@ -1547,7 +962,10 @@ window.HALIFAX_STRUCTURED_SPECIALS = {
       "sourceType": "reviewed_restaurant_owned_source",
       "observedAt": "2026-08-29T00:00:00.000Z",
       "verifiedAt": "2026-08-29T00:00:00.000Z",
-      "status": "stale"
+      "status": "stale",
+      "expiresAt": null,
+      "reviewedAt": "2026-08-29T00:00:00.000Z",
+      "reviewDueAt": "2026-09-28T00:00:00.000Z"
     },
     {
       "specialId": "osm-node-11506685695-kenny-s-pizza-two-medium-pizzas-4832dcfbd6",
@@ -1567,7 +985,10 @@ window.HALIFAX_STRUCTURED_SPECIALS = {
       "sourceType": "reviewed_restaurant_owned_source",
       "observedAt": "2026-08-29T00:00:00.000Z",
       "verifiedAt": "2026-08-29T00:00:00.000Z",
-      "status": "stale"
+      "status": "stale",
+      "expiresAt": null,
+      "reviewedAt": "2026-08-29T00:00:00.000Z",
+      "reviewDueAt": "2026-09-28T00:00:00.000Z"
     },
     {
       "specialId": "osm-node-11506685695-kenny-s-pizza-two-large-pizzas-a9273f8021",
@@ -1587,7 +1008,10 @@ window.HALIFAX_STRUCTURED_SPECIALS = {
       "sourceType": "reviewed_restaurant_owned_source",
       "observedAt": "2026-08-29T00:00:00.000Z",
       "verifiedAt": "2026-08-29T00:00:00.000Z",
-      "status": "stale"
+      "status": "stale",
+      "expiresAt": null,
+      "reviewedAt": "2026-08-29T00:00:00.000Z",
+      "reviewDueAt": "2026-09-28T00:00:00.000Z"
     },
     {
       "specialId": "osm-node-4797459277-downtown-pizza-combo-1-b35616c8d0",
@@ -1607,7 +1031,10 @@ window.HALIFAX_STRUCTURED_SPECIALS = {
       "sourceType": "reviewed_restaurant_owned_source",
       "observedAt": "2026-08-29T00:00:00.000Z",
       "verifiedAt": "2026-08-29T00:00:00.000Z",
-      "status": "stale"
+      "status": "stale",
+      "expiresAt": null,
+      "reviewedAt": "2026-08-29T00:00:00.000Z",
+      "reviewDueAt": "2026-09-28T00:00:00.000Z"
     },
     {
       "specialId": "osm-node-4797459277-downtown-pizza-combo-2-9939e030dc",
@@ -1627,7 +1054,10 @@ window.HALIFAX_STRUCTURED_SPECIALS = {
       "sourceType": "reviewed_restaurant_owned_source",
       "observedAt": "2026-08-29T00:00:00.000Z",
       "verifiedAt": "2026-08-29T00:00:00.000Z",
-      "status": "stale"
+      "status": "stale",
+      "expiresAt": null,
+      "reviewedAt": "2026-08-29T00:00:00.000Z",
+      "reviewDueAt": "2026-09-28T00:00:00.000Z"
     },
     {
       "specialId": "osm-node-4797459277-downtown-pizza-combo-3-ee224718c9",
@@ -1647,7 +1077,10 @@ window.HALIFAX_STRUCTURED_SPECIALS = {
       "sourceType": "reviewed_restaurant_owned_source",
       "observedAt": "2026-08-29T00:00:00.000Z",
       "verifiedAt": "2026-08-29T00:00:00.000Z",
-      "status": "stale"
+      "status": "stale",
+      "expiresAt": null,
+      "reviewedAt": "2026-08-29T00:00:00.000Z",
+      "reviewDueAt": "2026-09-28T00:00:00.000Z"
     },
     {
       "specialId": "osm-node-4797459277-downtown-pizza-desi-pizza-deal-1-23cddbfad4",
@@ -1667,7 +1100,10 @@ window.HALIFAX_STRUCTURED_SPECIALS = {
       "sourceType": "reviewed_restaurant_owned_source",
       "observedAt": "2026-08-29T00:00:00.000Z",
       "verifiedAt": "2026-08-29T00:00:00.000Z",
-      "status": "stale"
+      "status": "stale",
+      "expiresAt": null,
+      "reviewedAt": "2026-08-29T00:00:00.000Z",
+      "reviewDueAt": "2026-09-28T00:00:00.000Z"
     },
     {
       "specialId": "osm-node-4797459277-downtown-pizza-desi-pizza-deal-2-98165b4589",
@@ -1687,7 +1123,10 @@ window.HALIFAX_STRUCTURED_SPECIALS = {
       "sourceType": "reviewed_restaurant_owned_source",
       "observedAt": "2026-08-29T00:00:00.000Z",
       "verifiedAt": "2026-08-29T00:00:00.000Z",
-      "status": "stale"
+      "status": "stale",
+      "expiresAt": null,
+      "reviewedAt": "2026-08-29T00:00:00.000Z",
+      "reviewDueAt": "2026-09-28T00:00:00.000Z"
     },
     {
       "specialId": "osm-node-4797459277-downtown-pizza-desi-pizza-deal-3-6395f7df67",
@@ -1707,7 +1146,10 @@ window.HALIFAX_STRUCTURED_SPECIALS = {
       "sourceType": "reviewed_restaurant_owned_source",
       "observedAt": "2026-08-29T00:00:00.000Z",
       "verifiedAt": "2026-08-29T00:00:00.000Z",
-      "status": "stale"
+      "status": "stale",
+      "expiresAt": null,
+      "reviewedAt": "2026-08-29T00:00:00.000Z",
+      "reviewDueAt": "2026-09-28T00:00:00.000Z"
     },
     {
       "specialId": "osm-node-4797459277-downtown-pizza-dt-special-pizza-c0f865cdba",
@@ -1727,7 +1169,10 @@ window.HALIFAX_STRUCTURED_SPECIALS = {
       "sourceType": "reviewed_restaurant_owned_source",
       "observedAt": "2026-08-29T00:00:00.000Z",
       "verifiedAt": "2026-08-29T00:00:00.000Z",
-      "status": "stale"
+      "status": "stale",
+      "expiresAt": null,
+      "reviewedAt": "2026-08-29T00:00:00.000Z",
+      "reviewDueAt": "2026-09-28T00:00:00.000Z"
     },
     {
       "specialId": "osm-node-4797459277-downtown-pizza-pepperoni-pizza-special-104e302029",
@@ -1747,7 +1192,10 @@ window.HALIFAX_STRUCTURED_SPECIALS = {
       "sourceType": "reviewed_restaurant_owned_source",
       "observedAt": "2026-08-29T00:00:00.000Z",
       "verifiedAt": "2026-08-29T00:00:00.000Z",
-      "status": "stale"
+      "status": "stale",
+      "expiresAt": null,
+      "reviewedAt": "2026-08-29T00:00:00.000Z",
+      "reviewDueAt": "2026-09-28T00:00:00.000Z"
     },
     {
       "specialId": "osm-node-4797459277-downtown-pizza-the-maritimer-pizza-special-91390caf5a",
@@ -1767,7 +1215,10 @@ window.HALIFAX_STRUCTURED_SPECIALS = {
       "sourceType": "reviewed_restaurant_owned_source",
       "observedAt": "2026-08-29T00:00:00.000Z",
       "verifiedAt": "2026-08-29T00:00:00.000Z",
-      "status": "stale"
+      "status": "stale",
+      "expiresAt": null,
+      "reviewedAt": "2026-08-29T00:00:00.000Z",
+      "reviewDueAt": "2026-09-28T00:00:00.000Z"
     },
     {
       "specialId": "osm-node-4797459277-downtown-pizza-pesto-chicken-pizza-special-6d4b3d5e16",
@@ -1787,7 +1238,10 @@ window.HALIFAX_STRUCTURED_SPECIALS = {
       "sourceType": "reviewed_restaurant_owned_source",
       "observedAt": "2026-08-29T00:00:00.000Z",
       "verifiedAt": "2026-08-29T00:00:00.000Z",
-      "status": "stale"
+      "status": "stale",
+      "expiresAt": null,
+      "reviewedAt": "2026-08-29T00:00:00.000Z",
+      "reviewDueAt": "2026-09-28T00:00:00.000Z"
     },
     {
       "specialId": "osm-node-5188870965-donnini-s-pizza-medium-pepperoni-pizza-pickup-special-b390146fe1",
@@ -1807,7 +1261,10 @@ window.HALIFAX_STRUCTURED_SPECIALS = {
       "sourceType": "reviewed_restaurant_owned_source",
       "observedAt": "2026-08-29T00:00:00.000Z",
       "verifiedAt": "2026-08-29T00:00:00.000Z",
-      "status": "stale"
+      "status": "stale",
+      "expiresAt": null,
+      "reviewedAt": "2026-08-29T00:00:00.000Z",
+      "reviewDueAt": "2026-09-28T00:00:00.000Z"
     },
     {
       "specialId": "osm-node-5188870965-donnini-s-pizza-large-pepperoni-pizza-pickup-special-21eb40526a",
@@ -1827,7 +1284,10 @@ window.HALIFAX_STRUCTURED_SPECIALS = {
       "sourceType": "reviewed_restaurant_owned_source",
       "observedAt": "2026-08-29T00:00:00.000Z",
       "verifiedAt": "2026-08-29T00:00:00.000Z",
-      "status": "stale"
+      "status": "stale",
+      "expiresAt": null,
+      "reviewedAt": "2026-08-29T00:00:00.000Z",
+      "reviewDueAt": "2026-09-28T00:00:00.000Z"
     },
     {
       "specialId": "osm-node-5188870965-donnini-s-pizza-two-medium-pizzas-9e3bbc7e41",
@@ -1847,7 +1307,10 @@ window.HALIFAX_STRUCTURED_SPECIALS = {
       "sourceType": "reviewed_restaurant_owned_source",
       "observedAt": "2026-08-29T00:00:00.000Z",
       "verifiedAt": "2026-08-29T00:00:00.000Z",
-      "status": "stale"
+      "status": "stale",
+      "expiresAt": null,
+      "reviewedAt": "2026-08-29T00:00:00.000Z",
+      "reviewDueAt": "2026-09-28T00:00:00.000Z"
     },
     {
       "specialId": "osm-node-5188870965-donnini-s-pizza-two-large-pizzas-58c7386019",
@@ -1867,7 +1330,10 @@ window.HALIFAX_STRUCTURED_SPECIALS = {
       "sourceType": "reviewed_restaurant_owned_source",
       "observedAt": "2026-08-29T00:00:00.000Z",
       "verifiedAt": "2026-08-29T00:00:00.000Z",
-      "status": "stale"
+      "status": "stale",
+      "expiresAt": null,
+      "reviewedAt": "2026-08-29T00:00:00.000Z",
+      "reviewDueAt": "2026-09-28T00:00:00.000Z"
     },
     {
       "specialId": "osm-node-5188870965-donnini-s-pizza-large-works-pizza-combo-2cbe28cb89",
@@ -1887,7 +1353,858 @@ window.HALIFAX_STRUCTURED_SPECIALS = {
       "sourceType": "reviewed_restaurant_owned_source",
       "observedAt": "2026-08-29T00:00:00.000Z",
       "verifiedAt": "2026-08-29T00:00:00.000Z",
-      "status": "stale"
+      "status": "stale",
+      "expiresAt": null,
+      "reviewedAt": "2026-08-29T00:00:00.000Z",
+      "reviewDueAt": "2026-09-28T00:00:00.000Z"
+    },
+    {
+      "specialId": "highwayman-tom-collins-happy-hour-glass-486f7b1317",
+      "restaurantId": "highwayman",
+      "title": "Tom Collins happy-hour glass",
+      "specialType": "happy_hour",
+      "description": "Gin, lemon, sugar and soda. The page says daily happy hour but lists Monday–Saturday operation; Sunday is not confirmed.",
+      "dayOfWeek": [
+        "monday",
+        "tuesday",
+        "wednesday",
+        "thursday",
+        "friday",
+        "saturday"
+      ],
+      "startTime": "16:00",
+      "endTime": "17:00",
+      "validFrom": null,
+      "validTo": null,
+      "price": 12,
+      "currency": "CAD",
+      "recurrence": "16:00–17:00 on the published Monday–Saturday operating days; Sunday unconfirmed",
+      "sourceUrl": "https://www.highwaymanhfx.com/happyhour",
+      "sourceType": "reviewed_restaurant_owned_source",
+      "observedAt": "2026-10-20T19:04:52.689Z",
+      "verifiedAt": "2026-10-20T19:04:52.689Z",
+      "status": "verified_current",
+      "expiresAt": null,
+      "reviewedAt": "2026-10-20T19:04:52.689Z",
+      "reviewDueAt": "2026-11-19T19:04:52.689Z"
+    },
+    {
+      "specialId": "highwayman-mojito-happy-hour-glass-f415b6aeea",
+      "restaurantId": "highwayman",
+      "title": "Mojito happy-hour glass",
+      "specialType": "happy_hour",
+      "description": "White rum, mint, lime and soda. The page says daily happy hour but lists Monday–Saturday operation; Sunday is not confirmed.",
+      "dayOfWeek": [
+        "monday",
+        "tuesday",
+        "wednesday",
+        "thursday",
+        "friday",
+        "saturday"
+      ],
+      "startTime": "16:00",
+      "endTime": "17:00",
+      "validFrom": null,
+      "validTo": null,
+      "price": 12,
+      "currency": "CAD",
+      "recurrence": "16:00–17:00 on the published Monday–Saturday operating days; Sunday unconfirmed",
+      "sourceUrl": "https://www.highwaymanhfx.com/happyhour",
+      "sourceType": "reviewed_restaurant_owned_source",
+      "observedAt": "2026-10-20T19:04:52.689Z",
+      "verifiedAt": "2026-10-20T19:04:52.689Z",
+      "status": "verified_current",
+      "expiresAt": null,
+      "reviewedAt": "2026-10-20T19:04:52.689Z",
+      "reviewDueAt": "2026-11-19T19:04:52.689Z"
+    },
+    {
+      "specialId": "highwayman-americano-happy-hour-glass-e212088f96",
+      "restaurantId": "highwayman",
+      "title": "Americano happy-hour glass",
+      "specialType": "happy_hour",
+      "description": "Campari, sweet vermouth and soda. The page says daily happy hour but lists Monday–Saturday operation; Sunday is not confirmed.",
+      "dayOfWeek": [
+        "monday",
+        "tuesday",
+        "wednesday",
+        "thursday",
+        "friday",
+        "saturday"
+      ],
+      "startTime": "16:00",
+      "endTime": "17:00",
+      "validFrom": null,
+      "validTo": null,
+      "price": 10,
+      "currency": "CAD",
+      "recurrence": "16:00–17:00 on the published Monday–Saturday operating days; Sunday unconfirmed",
+      "sourceUrl": "https://www.highwaymanhfx.com/happyhour",
+      "sourceType": "reviewed_restaurant_owned_source",
+      "observedAt": "2026-10-20T19:04:52.689Z",
+      "verifiedAt": "2026-10-20T19:04:52.689Z",
+      "status": "verified_current",
+      "expiresAt": null,
+      "reviewedAt": "2026-10-20T19:04:52.689Z",
+      "reviewDueAt": "2026-11-19T19:04:52.689Z"
+    },
+    {
+      "specialId": "highwayman-aperol-spritz-happy-hour-glass-29248bc420",
+      "restaurantId": "highwayman",
+      "title": "Aperol Spritz happy-hour glass",
+      "specialType": "happy_hour",
+      "description": "Aperol, sparkling wine and soda. The page says daily happy hour but lists Monday–Saturday operation; Sunday is not confirmed.",
+      "dayOfWeek": [
+        "monday",
+        "tuesday",
+        "wednesday",
+        "thursday",
+        "friday",
+        "saturday"
+      ],
+      "startTime": "16:00",
+      "endTime": "17:00",
+      "validFrom": null,
+      "validTo": null,
+      "price": 10,
+      "currency": "CAD",
+      "recurrence": "16:00–17:00 on the published Monday–Saturday operating days; Sunday unconfirmed",
+      "sourceUrl": "https://www.highwaymanhfx.com/happyhour",
+      "sourceType": "reviewed_restaurant_owned_source",
+      "observedAt": "2026-10-20T19:04:52.689Z",
+      "verifiedAt": "2026-10-20T19:04:52.689Z",
+      "status": "verified_current",
+      "expiresAt": null,
+      "reviewedAt": "2026-10-20T19:04:52.689Z",
+      "reviewDueAt": "2026-11-19T19:04:52.689Z"
+    },
+    {
+      "specialId": "highwayman-white-wine-spritzer-happy-hour-glass-ac8a7287ff",
+      "restaurantId": "highwayman",
+      "title": "White Wine Spritzer happy-hour glass",
+      "specialType": "happy_hour",
+      "description": "White wine, vodka, lemon and soda. The page says daily happy hour but lists Monday–Saturday operation; Sunday is not confirmed.",
+      "dayOfWeek": [
+        "monday",
+        "tuesday",
+        "wednesday",
+        "thursday",
+        "friday",
+        "saturday"
+      ],
+      "startTime": "16:00",
+      "endTime": "17:00",
+      "validFrom": null,
+      "validTo": null,
+      "price": 10,
+      "currency": "CAD",
+      "recurrence": "16:00–17:00 on the published Monday–Saturday operating days; Sunday unconfirmed",
+      "sourceUrl": "https://www.highwaymanhfx.com/happyhour",
+      "sourceType": "reviewed_restaurant_owned_source",
+      "observedAt": "2026-10-20T19:04:52.689Z",
+      "verifiedAt": "2026-10-20T19:04:52.689Z",
+      "status": "verified_current",
+      "expiresAt": null,
+      "reviewedAt": "2026-10-20T19:04:52.689Z",
+      "reviewDueAt": "2026-11-19T19:04:52.689Z"
+    },
+    {
+      "specialId": "highwayman-sangria-by-the-glass-2f9521b662",
+      "restaurantId": "highwayman",
+      "title": "Sangria by the glass",
+      "specialType": "happy_hour",
+      "description": "The page says daily happy hour but lists Monday–Saturday operation; Sunday is not confirmed.",
+      "dayOfWeek": [
+        "monday",
+        "tuesday",
+        "wednesday",
+        "thursday",
+        "friday",
+        "saturday"
+      ],
+      "startTime": "16:00",
+      "endTime": "17:00",
+      "validFrom": null,
+      "validTo": null,
+      "price": 12,
+      "currency": "CAD",
+      "recurrence": "16:00–17:00 on the published Monday–Saturday operating days; Sunday unconfirmed",
+      "sourceUrl": "https://www.highwaymanhfx.com/happyhour",
+      "sourceType": "reviewed_restaurant_owned_source",
+      "observedAt": "2026-10-20T19:04:52.689Z",
+      "verifiedAt": "2026-10-20T19:04:52.689Z",
+      "status": "verified_current",
+      "expiresAt": null,
+      "reviewedAt": "2026-10-20T19:04:52.689Z",
+      "reviewDueAt": "2026-11-19T19:04:52.689Z"
+    },
+    {
+      "specialId": "highwayman-cava-by-the-glass-d82a323203",
+      "restaurantId": "highwayman",
+      "title": "Cava by the glass",
+      "specialType": "happy_hour",
+      "description": "The page says daily happy hour but lists Monday–Saturday operation; Sunday is not confirmed.",
+      "dayOfWeek": [
+        "monday",
+        "tuesday",
+        "wednesday",
+        "thursday",
+        "friday",
+        "saturday"
+      ],
+      "startTime": "16:00",
+      "endTime": "17:00",
+      "validFrom": null,
+      "validTo": null,
+      "price": 12,
+      "currency": "CAD",
+      "recurrence": "16:00–17:00 on the published Monday–Saturday operating days; Sunday unconfirmed",
+      "sourceUrl": "https://www.highwaymanhfx.com/happyhour",
+      "sourceType": "reviewed_restaurant_owned_source",
+      "observedAt": "2026-10-20T19:04:52.689Z",
+      "verifiedAt": "2026-10-20T19:04:52.689Z",
+      "status": "verified_current",
+      "expiresAt": null,
+      "reviewedAt": "2026-10-20T19:04:52.689Z",
+      "reviewDueAt": "2026-11-19T19:04:52.689Z"
+    },
+    {
+      "specialId": "highwayman-happy-hour-oysters-1d7f82a15c",
+      "restaurantId": "highwayman",
+      "title": "Happy-hour oysters",
+      "specialType": "oyster_special",
+      "description": "Per oyster; minimum order of six. The page says daily happy hour but lists Monday–Saturday operation; Sunday is not confirmed.",
+      "dayOfWeek": [
+        "monday",
+        "tuesday",
+        "wednesday",
+        "thursday",
+        "friday",
+        "saturday"
+      ],
+      "startTime": "16:00",
+      "endTime": "17:00",
+      "validFrom": null,
+      "validTo": null,
+      "price": 3,
+      "currency": "CAD",
+      "recurrence": "16:00–17:00 on the published Monday–Saturday operating days; Sunday unconfirmed",
+      "sourceUrl": "https://www.highwaymanhfx.com/happyhour",
+      "sourceType": "reviewed_restaurant_owned_source",
+      "observedAt": "2026-10-20T19:04:52.689Z",
+      "verifiedAt": "2026-10-20T19:04:52.689Z",
+      "status": "verified_current",
+      "expiresAt": null,
+      "reviewedAt": "2026-10-20T19:04:52.689Z",
+      "reviewDueAt": "2026-11-19T19:04:52.689Z"
+    },
+    {
+      "specialId": "highwayman-happy-hour-snack-platter-a905659b54",
+      "restaurantId": "highwayman",
+      "title": "Happy-hour snack platter",
+      "specialType": "happy_hour",
+      "description": "Chef's choice of house cured meats, cheese, pan con tomate and croquetas. The page says daily happy hour but lists Monday–Saturday operation; Sunday is not confirmed.",
+      "dayOfWeek": [
+        "monday",
+        "tuesday",
+        "wednesday",
+        "thursday",
+        "friday",
+        "saturday"
+      ],
+      "startTime": "16:00",
+      "endTime": "17:00",
+      "validFrom": null,
+      "validTo": null,
+      "price": 35,
+      "currency": "CAD",
+      "recurrence": "16:00–17:00 on the published Monday–Saturday operating days; Sunday unconfirmed",
+      "sourceUrl": "https://www.highwaymanhfx.com/happyhour",
+      "sourceType": "reviewed_restaurant_owned_source",
+      "observedAt": "2026-10-20T19:04:52.689Z",
+      "verifiedAt": "2026-10-20T19:04:52.689Z",
+      "status": "verified_current",
+      "expiresAt": null,
+      "reviewedAt": "2026-10-20T19:04:52.689Z",
+      "reviewDueAt": "2026-11-19T19:04:52.689Z"
+    },
+    {
+      "specialId": "highwayman-happy-hour-seafood-platter-a671f727e1",
+      "restaurantId": "highwayman",
+      "title": "Happy-hour seafood platter",
+      "specialType": "happy_hour",
+      "description": "Half dozen oysters, two chilled seafood dishes and sides. The page says daily happy hour but lists Monday–Saturday operation; Sunday is not confirmed.",
+      "dayOfWeek": [
+        "monday",
+        "tuesday",
+        "wednesday",
+        "thursday",
+        "friday",
+        "saturday"
+      ],
+      "startTime": "16:00",
+      "endTime": "17:00",
+      "validFrom": null,
+      "validTo": null,
+      "price": 35,
+      "currency": "CAD",
+      "recurrence": "16:00–17:00 on the published Monday–Saturday operating days; Sunday unconfirmed",
+      "sourceUrl": "https://www.highwaymanhfx.com/happyhour",
+      "sourceType": "reviewed_restaurant_owned_source",
+      "observedAt": "2026-10-20T19:04:52.689Z",
+      "verifiedAt": "2026-10-20T19:04:52.689Z",
+      "status": "verified_current",
+      "expiresAt": null,
+      "reviewedAt": "2026-10-20T19:04:52.689Z",
+      "reviewDueAt": "2026-11-19T19:04:52.689Z"
+    },
+    {
+      "specialId": "osm-node-11726396167-rush-hour-pizza-pizza-and-donairs-combo-a6da3c8cbd",
+      "restaurantId": "osm-node-11726396167-rush-hour-pizza",
+      "title": "Pizza and donairs combo",
+      "specialType": "daily_or_promotional_special",
+      "description": "Medium 12-inch pizza with up to three toppings, two small donairs and two cans of pop. Upgrade to medium donairs costs $4 more.",
+      "dayOfWeek": [],
+      "startTime": null,
+      "endTime": null,
+      "validFrom": null,
+      "validTo": null,
+      "price": 24.95,
+      "currency": "CAD",
+      "recurrence": "Daily special while listed; exact daily service times not stated",
+      "sourceUrl": "https://rushhourpizza.ca/specials",
+      "sourceType": "reviewed_restaurant_owned_source",
+      "observedAt": "2026-10-20T19:04:56.097Z",
+      "verifiedAt": "2026-10-20T19:04:56.097Z",
+      "status": "verified_current",
+      "expiresAt": null,
+      "reviewedAt": "2026-10-20T19:04:56.097Z",
+      "reviewDueAt": "2026-11-19T19:04:56.097Z"
+    },
+    {
+      "specialId": "osm-node-11726396167-rush-hour-pizza-pizza-and-wings-combo-57e0e3d4af",
+      "restaurantId": "osm-node-11726396167-rush-hour-pizza",
+      "title": "Pizza and wings combo",
+      "specialType": "daily_or_promotional_special",
+      "description": "Medium 12-inch pizza with up to three toppings, ten wings and two cans of pop.",
+      "dayOfWeek": [],
+      "startTime": null,
+      "endTime": null,
+      "validFrom": null,
+      "validTo": null,
+      "price": 22.95,
+      "currency": "CAD",
+      "recurrence": "Daily special while listed; exact daily service times not stated",
+      "sourceUrl": "https://rushhourpizza.ca/specials",
+      "sourceType": "reviewed_restaurant_owned_source",
+      "observedAt": "2026-10-20T19:04:56.097Z",
+      "verifiedAt": "2026-10-20T19:04:56.097Z",
+      "status": "verified_current",
+      "expiresAt": null,
+      "reviewedAt": "2026-10-20T19:04:56.097Z",
+      "reviewDueAt": "2026-11-19T19:04:56.097Z"
+    },
+    {
+      "specialId": "osm-node-11726396167-rush-hour-pizza-pizza-and-donair-eggrolls-combo-f49ce825b5",
+      "restaurantId": "osm-node-11726396167-rush-hour-pizza",
+      "title": "Pizza and donair eggrolls combo",
+      "specialType": "daily_or_promotional_special",
+      "description": "Medium 12-inch pizza with up to three toppings, six donair eggrolls and two cans of pop.",
+      "dayOfWeek": [],
+      "startTime": null,
+      "endTime": null,
+      "validFrom": null,
+      "validTo": null,
+      "price": 24.95,
+      "currency": "CAD",
+      "recurrence": "Daily special while listed; exact daily service times not stated",
+      "sourceUrl": "https://rushhourpizza.ca/specials",
+      "sourceType": "reviewed_restaurant_owned_source",
+      "observedAt": "2026-10-20T19:04:56.097Z",
+      "verifiedAt": "2026-10-20T19:04:56.097Z",
+      "status": "verified_current",
+      "expiresAt": null,
+      "reviewedAt": "2026-10-20T19:04:56.097Z",
+      "reviewDueAt": "2026-11-19T19:04:56.097Z"
+    },
+    {
+      "specialId": "osm-node-11726396167-rush-hour-pizza-pizza-and-garlic-fingers-combo-3736d6a4a4",
+      "restaurantId": "osm-node-11726396167-rush-hour-pizza",
+      "title": "Pizza and garlic fingers combo",
+      "specialType": "daily_or_promotional_special",
+      "description": "Large 16-inch pizza, medium garlic fingers and two-litre pop. Upgrade to large garlic fingers costs $5 more.",
+      "dayOfWeek": [],
+      "startTime": null,
+      "endTime": null,
+      "validFrom": null,
+      "validTo": null,
+      "price": 30.95,
+      "currency": "CAD",
+      "recurrence": "Daily special while listed; exact daily service times not stated",
+      "sourceUrl": "https://rushhourpizza.ca/specials",
+      "sourceType": "reviewed_restaurant_owned_source",
+      "observedAt": "2026-10-20T19:04:56.097Z",
+      "verifiedAt": "2026-10-20T19:04:56.097Z",
+      "status": "verified_current",
+      "expiresAt": null,
+      "reviewedAt": "2026-10-20T19:04:56.097Z",
+      "reviewDueAt": "2026-11-19T19:04:56.097Z"
+    },
+    {
+      "specialId": "osm-node-11726396167-rush-hour-pizza-large-five-topping-pizza-8179589a81",
+      "restaurantId": "osm-node-11726396167-rush-hour-pizza",
+      "title": "Large five-topping pizza",
+      "specialType": "daily_or_promotional_special",
+      "description": "Large 16-inch pizza with up to five regular toppings.",
+      "dayOfWeek": [],
+      "startTime": null,
+      "endTime": null,
+      "validFrom": null,
+      "validTo": null,
+      "price": 19.5,
+      "currency": "CAD",
+      "recurrence": "Daily special while listed; exact daily service times not stated",
+      "sourceUrl": "https://rushhourpizza.ca/specials",
+      "sourceType": "reviewed_restaurant_owned_source",
+      "observedAt": "2026-10-20T19:04:56.097Z",
+      "verifiedAt": "2026-10-20T19:04:56.097Z",
+      "status": "verified_current",
+      "expiresAt": null,
+      "reviewedAt": "2026-10-20T19:04:56.097Z",
+      "reviewDueAt": "2026-11-19T19:04:56.097Z"
+    },
+    {
+      "specialId": "osm-node-11726396167-rush-hour-pizza-two-large-five-topping-pizzas-e28a88539c",
+      "restaurantId": "osm-node-11726396167-rush-hour-pizza",
+      "title": "Two large five-topping pizzas",
+      "specialType": "daily_or_promotional_special",
+      "description": "Two large 16-inch pizzas with up to five regular toppings each.",
+      "dayOfWeek": [],
+      "startTime": null,
+      "endTime": null,
+      "validFrom": null,
+      "validTo": null,
+      "price": 35.95,
+      "currency": "CAD",
+      "recurrence": "Daily special while listed; exact daily service times not stated",
+      "sourceUrl": "https://rushhourpizza.ca/specials",
+      "sourceType": "reviewed_restaurant_owned_source",
+      "observedAt": "2026-10-20T19:04:56.097Z",
+      "verifiedAt": "2026-10-20T19:04:56.097Z",
+      "status": "verified_current",
+      "expiresAt": null,
+      "reviewedAt": "2026-10-20T19:04:56.097Z",
+      "reviewDueAt": "2026-11-19T19:04:56.097Z"
+    },
+    {
+      "specialId": "osm-node-11726396167-rush-hour-pizza-medium-five-topping-pizza-c0c93df9a8",
+      "restaurantId": "osm-node-11726396167-rush-hour-pizza",
+      "title": "Medium five-topping pizza",
+      "specialType": "daily_or_promotional_special",
+      "description": "Medium 12-inch pizza with up to five regular toppings.",
+      "dayOfWeek": [],
+      "startTime": null,
+      "endTime": null,
+      "validFrom": null,
+      "validTo": null,
+      "price": 15.95,
+      "currency": "CAD",
+      "recurrence": "Daily special while listed; exact daily service times not stated",
+      "sourceUrl": "https://rushhourpizza.ca/specials",
+      "sourceType": "reviewed_restaurant_owned_source",
+      "observedAt": "2026-10-20T19:04:56.097Z",
+      "verifiedAt": "2026-10-20T19:04:56.097Z",
+      "status": "verified_current",
+      "expiresAt": null,
+      "reviewedAt": "2026-10-20T19:04:56.097Z",
+      "reviewDueAt": "2026-11-19T19:04:56.097Z"
+    },
+    {
+      "specialId": "osm-node-11726396167-rush-hour-pizza-two-medium-five-topping-pizzas-37e4461cb6",
+      "restaurantId": "osm-node-11726396167-rush-hour-pizza",
+      "title": "Two medium five-topping pizzas",
+      "specialType": "daily_or_promotional_special",
+      "description": "Two medium 12-inch pizzas with up to five regular toppings each.",
+      "dayOfWeek": [],
+      "startTime": null,
+      "endTime": null,
+      "validFrom": null,
+      "validTo": null,
+      "price": 27.95,
+      "currency": "CAD",
+      "recurrence": "Daily special while listed; exact daily service times not stated",
+      "sourceUrl": "https://rushhourpizza.ca/specials",
+      "sourceType": "reviewed_restaurant_owned_source",
+      "observedAt": "2026-10-20T19:04:56.097Z",
+      "verifiedAt": "2026-10-20T19:04:56.097Z",
+      "status": "verified_current",
+      "expiresAt": null,
+      "reviewedAt": "2026-10-20T19:04:56.097Z",
+      "reviewDueAt": "2026-11-19T19:04:56.097Z"
+    },
+    {
+      "specialId": "osm-node-11726396167-rush-hour-pizza-small-five-topping-pizza-ba60c0851b",
+      "restaurantId": "osm-node-11726396167-rush-hour-pizza",
+      "title": "Small five-topping pizza",
+      "specialType": "daily_or_promotional_special",
+      "description": "Small 9-inch pizza with up to five regular toppings.",
+      "dayOfWeek": [],
+      "startTime": null,
+      "endTime": null,
+      "validFrom": null,
+      "validTo": null,
+      "price": 11.95,
+      "currency": "CAD",
+      "recurrence": "Daily special while listed; exact daily service times not stated",
+      "sourceUrl": "https://rushhourpizza.ca/specials",
+      "sourceType": "reviewed_restaurant_owned_source",
+      "observedAt": "2026-10-20T19:04:56.097Z",
+      "verifiedAt": "2026-10-20T19:04:56.097Z",
+      "status": "verified_current",
+      "expiresAt": null,
+      "reviewedAt": "2026-10-20T19:04:56.097Z",
+      "reviewDueAt": "2026-11-19T19:04:56.097Z"
+    },
+    {
+      "specialId": "osm-node-11726396167-rush-hour-pizza-two-small-five-topping-pizzas-82a46aa601",
+      "restaurantId": "osm-node-11726396167-rush-hour-pizza",
+      "title": "Two small five-topping pizzas",
+      "specialType": "daily_or_promotional_special",
+      "description": "Two small 9-inch pizzas with up to five regular toppings each.",
+      "dayOfWeek": [],
+      "startTime": null,
+      "endTime": null,
+      "validFrom": null,
+      "validTo": null,
+      "price": 20.95,
+      "currency": "CAD",
+      "recurrence": "Daily special while listed; exact daily service times not stated",
+      "sourceUrl": "https://rushhourpizza.ca/specials",
+      "sourceType": "reviewed_restaurant_owned_source",
+      "observedAt": "2026-10-20T19:04:56.097Z",
+      "verifiedAt": "2026-10-20T19:04:56.097Z",
+      "status": "verified_current",
+      "expiresAt": null,
+      "reviewedAt": "2026-10-20T19:04:56.097Z",
+      "reviewDueAt": "2026-11-19T19:04:56.097Z"
+    },
+    {
+      "specialId": "osm-node-11726396167-rush-hour-pizza-pickup-large-three-topping-pizza-896a6fc110",
+      "restaurantId": "osm-node-11726396167-rush-hour-pizza",
+      "title": "Pickup large three-topping pizza",
+      "specialType": "daily_or_promotional_special",
+      "description": "Large 16-inch pizza with up to three regular toppings; pickup only.",
+      "dayOfWeek": [],
+      "startTime": null,
+      "endTime": null,
+      "validFrom": null,
+      "validTo": null,
+      "price": 15.99,
+      "currency": "CAD",
+      "recurrence": "Daily special while listed; exact daily service times not stated",
+      "sourceUrl": "https://rushhourpizza.ca/specials",
+      "sourceType": "reviewed_restaurant_owned_source",
+      "observedAt": "2026-10-20T19:04:56.097Z",
+      "verifiedAt": "2026-10-20T19:04:56.097Z",
+      "status": "verified_current",
+      "expiresAt": null,
+      "reviewedAt": "2026-10-20T19:04:56.097Z",
+      "reviewDueAt": "2026-11-19T19:04:56.097Z"
+    },
+    {
+      "specialId": "osm-node-11726396167-rush-hour-pizza-pickup-medium-three-topping-pizza-000c7dec58",
+      "restaurantId": "osm-node-11726396167-rush-hour-pizza",
+      "title": "Pickup medium three-topping pizza",
+      "specialType": "daily_or_promotional_special",
+      "description": "Medium 12-inch pizza with up to three regular toppings; pickup only.",
+      "dayOfWeek": [],
+      "startTime": null,
+      "endTime": null,
+      "validFrom": null,
+      "validTo": null,
+      "price": 11.99,
+      "currency": "CAD",
+      "recurrence": "Daily special while listed; exact daily service times not stated",
+      "sourceUrl": "https://rushhourpizza.ca/specials",
+      "sourceType": "reviewed_restaurant_owned_source",
+      "observedAt": "2026-10-20T19:04:56.097Z",
+      "verifiedAt": "2026-10-20T19:04:56.097Z",
+      "status": "verified_current",
+      "expiresAt": null,
+      "reviewedAt": "2026-10-20T19:04:56.097Z",
+      "reviewDueAt": "2026-11-19T19:04:56.097Z"
+    },
+    {
+      "specialId": "osm-node-11726396167-rush-hour-pizza-pickup-small-three-topping-pizza-ccf9c80e5e",
+      "restaurantId": "osm-node-11726396167-rush-hour-pizza",
+      "title": "Pickup small three-topping pizza",
+      "specialType": "daily_or_promotional_special",
+      "description": "Small 9-inch pizza with up to three regular toppings; pickup only.",
+      "dayOfWeek": [],
+      "startTime": null,
+      "endTime": null,
+      "validFrom": null,
+      "validTo": null,
+      "price": 9.99,
+      "currency": "CAD",
+      "recurrence": "Daily special while listed; exact daily service times not stated",
+      "sourceUrl": "https://rushhourpizza.ca/specials",
+      "sourceType": "reviewed_restaurant_owned_source",
+      "observedAt": "2026-10-20T19:04:56.097Z",
+      "verifiedAt": "2026-10-20T19:04:56.097Z",
+      "status": "verified_current",
+      "expiresAt": null,
+      "reviewedAt": "2026-10-20T19:04:56.097Z",
+      "reviewDueAt": "2026-11-19T19:04:56.097Z"
+    },
+    {
+      "specialId": "osm-node-11726396167-rush-hour-pizza-pickup-large-one-topping-pizza-6c8f6f28f0",
+      "restaurantId": "osm-node-11726396167-rush-hour-pizza",
+      "title": "Pickup large one-topping pizza",
+      "specialType": "daily_or_promotional_special",
+      "description": "Large 16-inch pizza with one regular topping; pickup only.",
+      "dayOfWeek": [],
+      "startTime": null,
+      "endTime": null,
+      "validFrom": null,
+      "validTo": null,
+      "price": 13.99,
+      "currency": "CAD",
+      "recurrence": "Daily special while listed; exact daily service times not stated",
+      "sourceUrl": "https://rushhourpizza.ca/specials",
+      "sourceType": "reviewed_restaurant_owned_source",
+      "observedAt": "2026-10-20T19:04:56.097Z",
+      "verifiedAt": "2026-10-20T19:04:56.097Z",
+      "status": "verified_current",
+      "expiresAt": null,
+      "reviewedAt": "2026-10-20T19:04:56.097Z",
+      "reviewDueAt": "2026-11-19T19:04:56.097Z"
+    },
+    {
+      "specialId": "osm-node-11726396167-rush-hour-pizza-pickup-medium-one-topping-pizza-98c98807dd",
+      "restaurantId": "osm-node-11726396167-rush-hour-pizza",
+      "title": "Pickup medium one-topping pizza",
+      "specialType": "daily_or_promotional_special",
+      "description": "Medium 12-inch pizza with one regular topping; pickup only.",
+      "dayOfWeek": [],
+      "startTime": null,
+      "endTime": null,
+      "validFrom": null,
+      "validTo": null,
+      "price": 9.99,
+      "currency": "CAD",
+      "recurrence": "Daily special while listed; exact daily service times not stated",
+      "sourceUrl": "https://rushhourpizza.ca/specials",
+      "sourceType": "reviewed_restaurant_owned_source",
+      "observedAt": "2026-10-20T19:04:56.097Z",
+      "verifiedAt": "2026-10-20T19:04:56.097Z",
+      "status": "verified_current",
+      "expiresAt": null,
+      "reviewedAt": "2026-10-20T19:04:56.097Z",
+      "reviewDueAt": "2026-11-19T19:04:56.097Z"
+    },
+    {
+      "specialId": "osm-node-11726396167-rush-hour-pizza-pickup-small-one-topping-pizza-6c69b8ded1",
+      "restaurantId": "osm-node-11726396167-rush-hour-pizza",
+      "title": "Pickup small one-topping pizza",
+      "specialType": "daily_or_promotional_special",
+      "description": "Small 9-inch pizza with one regular topping; pickup only.",
+      "dayOfWeek": [],
+      "startTime": null,
+      "endTime": null,
+      "validFrom": null,
+      "validTo": null,
+      "price": 7.99,
+      "currency": "CAD",
+      "recurrence": "Daily special while listed; exact daily service times not stated",
+      "sourceUrl": "https://rushhourpizza.ca/specials",
+      "sourceType": "reviewed_restaurant_owned_source",
+      "observedAt": "2026-10-20T19:04:56.097Z",
+      "verifiedAt": "2026-10-20T19:04:56.097Z",
+      "status": "verified_current",
+      "expiresAt": null,
+      "reviewedAt": "2026-10-20T19:04:56.097Z",
+      "reviewDueAt": "2026-11-19T19:04:56.097Z"
+    },
+    {
+      "specialId": "hux-halifax-three-course-prix-fixe-0fb61d0421",
+      "restaurantId": "hux-halifax",
+      "title": "Three-course prix fixe",
+      "specialType": "prix_fixe",
+      "description": "Optional $25 wine pairing; some dishes carry a supplement.",
+      "dayOfWeek": [
+        "tuesday",
+        "wednesday",
+        "thursday"
+      ],
+      "startTime": null,
+      "endTime": null,
+      "validFrom": null,
+      "validTo": null,
+      "price": 55,
+      "currency": "CAD",
+      "recurrence": "Tuesday–Thursday evenings",
+      "sourceUrl": "https://www.huxhalifax.com/",
+      "sourceType": "reviewed_restaurant_owned_source",
+      "observedAt": "2026-10-20T19:04:52.269Z",
+      "verifiedAt": "2026-10-20T19:04:52.269Z",
+      "status": "verified_current",
+      "expiresAt": null,
+      "reviewedAt": "2026-10-20T19:04:52.269Z",
+      "reviewDueAt": "2026-11-19T19:04:52.269Z"
+    },
+    {
+      "specialId": "hux-halifax-happy-hour-classic-cocktails-487802247d",
+      "restaurantId": "hux-halifax",
+      "title": "Happy-hour classic cocktails",
+      "specialType": "happy_hour",
+      "description": "The official page lists happy hour 4–6pm and regular operation Tuesday–Sunday; Monday availability remains unconfirmed.",
+      "dayOfWeek": [
+        "tuesday",
+        "wednesday",
+        "thursday",
+        "friday",
+        "saturday",
+        "sunday"
+      ],
+      "startTime": "16:00",
+      "endTime": "18:00",
+      "validFrom": null,
+      "validTo": null,
+      "price": 10,
+      "currency": "CAD",
+      "recurrence": "4–6pm on listed operating days",
+      "sourceUrl": "https://www.huxhalifax.com/",
+      "sourceType": "reviewed_restaurant_owned_source",
+      "observedAt": "2026-10-20T19:04:52.269Z",
+      "verifiedAt": "2026-10-20T19:04:52.269Z",
+      "status": "verified_current",
+      "expiresAt": null,
+      "reviewedAt": "2026-10-20T19:04:52.269Z",
+      "reviewDueAt": "2026-11-19T19:04:52.269Z"
+    },
+    {
+      "specialId": "hux-halifax-happy-hour-draught-beer-4e93f4d12f",
+      "restaurantId": "hux-halifax",
+      "title": "Happy-hour draught beer",
+      "specialType": "happy_hour",
+      "description": "The official page lists happy hour 4–6pm and regular operation Tuesday–Sunday; Monday availability remains unconfirmed.",
+      "dayOfWeek": [
+        "tuesday",
+        "wednesday",
+        "thursday",
+        "friday",
+        "saturday",
+        "sunday"
+      ],
+      "startTime": "16:00",
+      "endTime": "18:00",
+      "validFrom": null,
+      "validTo": null,
+      "price": 6,
+      "currency": "CAD",
+      "recurrence": "4–6pm on listed operating days",
+      "sourceUrl": "https://www.huxhalifax.com/",
+      "sourceType": "reviewed_restaurant_owned_source",
+      "observedAt": "2026-10-20T19:04:52.269Z",
+      "verifiedAt": "2026-10-20T19:04:52.269Z",
+      "status": "verified_current",
+      "expiresAt": null,
+      "reviewedAt": "2026-10-20T19:04:52.269Z",
+      "reviewDueAt": "2026-11-19T19:04:52.269Z"
+    },
+    {
+      "specialId": "osm-way-512985217-look-ho-ho-lunch-special-c3-78473a2053",
+      "restaurantId": "osm-way-512985217-look-ho-ho",
+      "title": "Lunch special C3",
+      "specialType": "lunch_special",
+      "description": "Egg roll, chicken chop suey and beef fried rice.",
+      "dayOfWeek": [
+        "monday",
+        "tuesday",
+        "wednesday",
+        "thursday",
+        "friday",
+        "saturday",
+        "sunday"
+      ],
+      "startTime": "11:30",
+      "endTime": "14:30",
+      "validFrom": null,
+      "validTo": null,
+      "price": 14,
+      "currency": "CAD",
+      "recurrence": "Daily 11:30–14:30",
+      "sourceUrl": "https://www.lookhoho.com/",
+      "sourceType": "reviewed_restaurant_owned_source",
+      "observedAt": "2026-10-20T19:04:52.646Z",
+      "verifiedAt": "2026-10-20T19:04:52.646Z",
+      "status": "verified_current",
+      "expiresAt": null,
+      "reviewedAt": "2026-10-20T19:04:52.646Z",
+      "reviewDueAt": "2026-11-19T19:04:52.646Z"
+    },
+    {
+      "specialId": "osm-way-512985217-look-ho-ho-lunch-special-c2-deb6b6c6e3",
+      "restaurantId": "osm-way-512985217-look-ho-ho",
+      "title": "Lunch special C2",
+      "specialType": "lunch_special",
+      "description": "Egg roll, sweet and sour chicken and beef fried rice.",
+      "dayOfWeek": [
+        "monday",
+        "tuesday",
+        "wednesday",
+        "thursday",
+        "friday",
+        "saturday",
+        "sunday"
+      ],
+      "startTime": "11:30",
+      "endTime": "14:30",
+      "validFrom": null,
+      "validTo": null,
+      "price": 15,
+      "currency": "CAD",
+      "recurrence": "Daily 11:30–14:30",
+      "sourceUrl": "https://www.lookhoho.com/",
+      "sourceType": "reviewed_restaurant_owned_source",
+      "observedAt": "2026-10-20T19:04:52.646Z",
+      "verifiedAt": "2026-10-20T19:04:52.646Z",
+      "status": "verified_current",
+      "expiresAt": null,
+      "reviewedAt": "2026-10-20T19:04:52.646Z",
+      "reviewDueAt": "2026-11-19T19:04:52.646Z"
+    },
+    {
+      "specialId": "osm-way-512985217-look-ho-ho-lunch-special-c10-b320264733",
+      "restaurantId": "osm-way-512985217-look-ho-ho",
+      "title": "Lunch special C10",
+      "specialType": "lunch_special",
+      "description": "Spring roll, mixed vegetables and plain fried rice. Do not label vegan or allergen-free without further evidence.",
+      "dayOfWeek": [
+        "monday",
+        "tuesday",
+        "wednesday",
+        "thursday",
+        "friday",
+        "saturday",
+        "sunday"
+      ],
+      "startTime": "11:30",
+      "endTime": "14:30",
+      "validFrom": null,
+      "validTo": null,
+      "price": 15,
+      "currency": "CAD",
+      "recurrence": "Daily 11:30–14:30",
+      "sourceUrl": "https://www.lookhoho.com/",
+      "sourceType": "reviewed_restaurant_owned_source",
+      "observedAt": "2026-10-20T19:04:52.646Z",
+      "verifiedAt": "2026-10-20T19:04:52.646Z",
+      "status": "verified_current",
+      "expiresAt": null,
+      "reviewedAt": "2026-10-20T19:04:52.646Z",
+      "reviewDueAt": "2026-11-19T19:04:52.646Z"
     },
     {
       "specialId": "bar-kismet-rotating-bar-and-kitchen-specials-3a64a49042",
@@ -1905,9 +2222,12 @@ window.HALIFAX_STRUCTURED_SPECIALS = {
       "recurrence": "Changes frequently",
       "sourceUrl": "https://barkismet.com/",
       "sourceType": "restaurant_owned_or_reviewed_source",
-      "observedAt": "2026-08-29",
+      "observedAt": "2026-09-01",
       "verifiedAt": null,
-      "status": "stale"
+      "status": "stale",
+      "expiresAt": null,
+      "reviewedAt": null,
+      "reviewDueAt": null
     },
     {
       "specialId": "edna-brunch-menu-rotation-a93d0c2512",
@@ -1925,9 +2245,12 @@ window.HALIFAX_STRUCTURED_SPECIALS = {
       "recurrence": "Weekly",
       "sourceUrl": "https://www.ednarestaurant.com/menu",
       "sourceType": "restaurant_owned_or_reviewed_source",
-      "observedAt": "2026-08-29",
+      "observedAt": "2026-09-01",
       "verifiedAt": null,
-      "status": "stale"
+      "status": "stale",
+      "expiresAt": null,
+      "reviewedAt": null,
+      "reviewDueAt": null
     },
     {
       "specialId": "the-press-gang-oyster-and-bar-features-d06dd8e7c1",
@@ -1945,9 +2268,12 @@ window.HALIFAX_STRUCTURED_SPECIALS = {
       "recurrence": "Needs confirmation",
       "sourceUrl": "https://thepressgang.ca/",
       "sourceType": "restaurant_owned_or_reviewed_source",
-      "observedAt": "2026-08-29",
+      "observedAt": "2026-09-01",
       "verifiedAt": null,
-      "status": "likely_recurring_verify"
+      "status": "likely_recurring_verify",
+      "expiresAt": null,
+      "reviewedAt": null,
+      "reviewDueAt": null
     },
     {
       "specialId": "the-narrows-daily-pub-features-1c1aeb297b",
@@ -1965,9 +2291,12 @@ window.HALIFAX_STRUCTURED_SPECIALS = {
       "recurrence": "Needs confirmation",
       "sourceUrl": "https://www.thenarrowspublichouse.ca/",
       "sourceType": "restaurant_owned_or_reviewed_source",
-      "observedAt": "2026-08-29",
+      "observedAt": "2026-09-01",
       "verifiedAt": null,
-      "status": "likely_recurring_verify"
+      "status": "likely_recurring_verify",
+      "expiresAt": null,
+      "reviewedAt": null,
+      "reviewDueAt": null
     },
     {
       "specialId": "2-doors-down-lunch-and-seasonal-features-d5a03efda5",
@@ -1987,7 +2316,10 @@ window.HALIFAX_STRUCTURED_SPECIALS = {
       "sourceType": "restaurant_owned_or_reviewed_source",
       "observedAt": "2026-08-29",
       "verifiedAt": null,
-      "status": "likely_recurring_verify"
+      "status": "likely_recurring_verify",
+      "expiresAt": null,
+      "reviewedAt": null,
+      "reviewDueAt": null
     },
     {
       "specialId": "battery-park-beer-and-food-features-be7c36af4b",
@@ -2005,9 +2337,12 @@ window.HALIFAX_STRUCTURED_SPECIALS = {
       "recurrence": "Changes frequently",
       "sourceUrl": "https://batterypark.ca/",
       "sourceType": "restaurant_owned_or_reviewed_source",
-      "observedAt": "2026-08-29",
+      "observedAt": "2026-09-01",
       "verifiedAt": null,
-      "status": "likely_recurring_verify"
+      "status": "likely_recurring_verify",
+      "expiresAt": null,
+      "reviewedAt": null,
+      "reviewDueAt": null
     },
     {
       "specialId": "dear-friend-cocktail-features-07a6d3fd21",
@@ -2027,7 +2362,10 @@ window.HALIFAX_STRUCTURED_SPECIALS = {
       "sourceType": "restaurant_owned_or_reviewed_source",
       "observedAt": "2026-08-29",
       "verifiedAt": null,
-      "status": "likely_recurring_verify"
+      "status": "likely_recurring_verify",
+      "expiresAt": null,
+      "reviewedAt": null,
+      "reviewDueAt": null
     },
     {
       "specialId": "highwayman-happy-hour-and-snack-features-1b85dc9fd5",
@@ -2045,9 +2383,12 @@ window.HALIFAX_STRUCTURED_SPECIALS = {
       "recurrence": "Daily 4:00–5:00 PM",
       "sourceUrl": "https://www.highwaymanhfx.com/",
       "sourceType": "restaurant_owned_or_reviewed_source",
-      "observedAt": "2026-08-29",
+      "observedAt": "2026-09-01",
       "verifiedAt": null,
-      "status": "stale"
+      "status": "stale",
+      "expiresAt": null,
+      "reviewedAt": null,
+      "reviewDueAt": null
     },
     {
       "specialId": "magnolia-halifax-daily-happy-hour-042a67cba9",
@@ -2072,10 +2413,13 @@ window.HALIFAX_STRUCTURED_SPECIALS = {
       "currency": null,
       "recurrence": "Daily 5pm–7pm",
       "sourceUrl": "https://www.magnoliahfx.com/",
-      "sourceType": "reviewed_discovery_source",
+      "sourceType": "restaurant_owned_or_reviewed_source",
       "observedAt": "2026-08-28",
       "verifiedAt": null,
-      "status": "stale"
+      "status": "stale",
+      "expiresAt": null,
+      "reviewedAt": null,
+      "reviewDueAt": null
     },
     {
       "specialId": "side-hustle-snack-bar-dartmouth-weekday-happy-hour-0f5a31c4ae",
@@ -2094,10 +2438,13 @@ window.HALIFAX_STRUCTURED_SPECIALS = {
       "currency": null,
       "recurrence": "Tuesday–Friday 3pm–5pm",
       "sourceUrl": "https://www.sidehustlesnackbar.com/",
-      "sourceType": "reviewed_discovery_source",
+      "sourceType": "restaurant_owned_or_reviewed_source",
       "observedAt": "2026-08-29",
       "verifiedAt": null,
-      "status": "stale"
+      "status": "stale",
+      "expiresAt": null,
+      "reviewedAt": null,
+      "reviewDueAt": null
     },
     {
       "specialId": "lake-city-cider-dartmouth-5-taproom-happy-hour-e1e9e239af",
@@ -2116,10 +2463,13 @@ window.HALIFAX_STRUCTURED_SPECIALS = {
       "currency": null,
       "recurrence": "Monday–Wednesday 4pm–6pm",
       "sourceUrl": "https://lakecitycider.ca/pages/taproom",
-      "sourceType": "reviewed_discovery_source",
+      "sourceType": "restaurant_owned_or_reviewed_source",
       "observedAt": "2026-08-29",
       "verifiedAt": null,
-      "status": "stale"
+      "status": "stale",
+      "expiresAt": null,
+      "reviewedAt": null,
+      "reviewDueAt": null
     },
     {
       "specialId": "magnolia-halifax-weekly-specials-happy-hour-menu-d536d9b56c",
@@ -2139,7 +2489,10 @@ window.HALIFAX_STRUCTURED_SPECIALS = {
       "sourceType": "official_website_link",
       "observedAt": "2026-09-04T13:33:45.552Z",
       "verifiedAt": "2026-09-04T13:33:45.552Z",
-      "status": "source_lead"
+      "status": "source_lead",
+      "expiresAt": null,
+      "reviewedAt": "2026-09-04T13:33:45.552Z",
+      "reviewDueAt": "2026-10-04T13:33:45.552Z"
     },
     {
       "specialId": "osm-node-11552510567-tako-sushi-and-ramen-menu-f55f393293",
@@ -2159,7 +2512,10 @@ window.HALIFAX_STRUCTURED_SPECIALS = {
       "sourceType": "official_website_link",
       "observedAt": "2026-09-04T13:33:36.880Z",
       "verifiedAt": "2026-09-04T13:33:36.880Z",
-      "status": "source_lead"
+      "status": "source_lead",
+      "expiresAt": null,
+      "reviewedAt": "2026-09-04T13:33:36.880Z",
+      "reviewDueAt": "2026-10-04T13:33:36.880Z"
     },
     {
       "specialId": "osm-node-11552510567-tako-sushi-and-ramen-entrees-8f7bce956d",
@@ -2179,7 +2535,10 @@ window.HALIFAX_STRUCTURED_SPECIALS = {
       "sourceType": "official_website_link",
       "observedAt": "2026-09-04T13:33:36.880Z",
       "verifiedAt": "2026-09-04T13:33:36.880Z",
-      "status": "source_lead"
+      "status": "source_lead",
+      "expiresAt": null,
+      "reviewedAt": "2026-09-04T13:33:36.880Z",
+      "reviewDueAt": "2026-10-04T13:33:36.880Z"
     },
     {
       "specialId": "osm-node-11552510567-tako-sushi-and-ramen-lunch-special-4cd43b8e59",
@@ -2199,7 +2558,10 @@ window.HALIFAX_STRUCTURED_SPECIALS = {
       "sourceType": "official_website_link",
       "observedAt": "2026-09-04T13:33:36.880Z",
       "verifiedAt": "2026-09-04T13:33:36.880Z",
-      "status": "source_lead"
+      "status": "source_lead",
+      "expiresAt": null,
+      "reviewedAt": "2026-09-04T13:33:36.880Z",
+      "reviewDueAt": "2026-10-04T13:33:36.880Z"
     },
     {
       "specialId": "osm-node-1254843900-the-mic-mac-bar-and-grill-browse-our-specials-748d5ef4ab",
@@ -2219,7 +2581,10 @@ window.HALIFAX_STRUCTURED_SPECIALS = {
       "sourceType": "official_website_link",
       "observedAt": "2026-09-04T13:33:39.241Z",
       "verifiedAt": "2026-09-04T13:33:39.241Z",
-      "status": "source_lead"
+      "status": "source_lead",
+      "expiresAt": null,
+      "reviewedAt": "2026-09-04T13:33:39.241Z",
+      "reviewDueAt": "2026-10-04T13:33:39.241Z"
     },
     {
       "specialId": "osm-node-30825944-canton-garden-lunch-specials-combo-1-sweet-sour-chicken-chicken-fried-rice-and-egg-roll-16-25-15128bb5f8",
@@ -2239,7 +2604,10 @@ window.HALIFAX_STRUCTURED_SPECIALS = {
       "sourceType": "official_website_link",
       "observedAt": "2026-09-04T13:33:10.240Z",
       "verifiedAt": "2026-09-04T13:33:10.240Z",
-      "status": "source_lead"
+      "status": "source_lead",
+      "expiresAt": null,
+      "reviewedAt": "2026-09-04T13:33:10.240Z",
+      "reviewDueAt": "2026-10-04T13:33:10.240Z"
     },
     {
       "specialId": "osm-node-30825944-canton-garden-lunch-specials-combo-2-spicy-mixed-vegetables-vegetable-fried-rice-and-spring-roll-16-25-e0a4362619",
@@ -2259,7 +2627,10 @@ window.HALIFAX_STRUCTURED_SPECIALS = {
       "sourceType": "official_website_link",
       "observedAt": "2026-09-04T13:33:10.240Z",
       "verifiedAt": "2026-09-04T13:33:10.240Z",
-      "status": "source_lead"
+      "status": "source_lead",
+      "expiresAt": null,
+      "reviewedAt": "2026-09-04T13:33:10.240Z",
+      "reviewDueAt": "2026-10-04T13:33:10.240Z"
     },
     {
       "specialId": "osm-node-30825944-canton-garden-lunch-specials-combo-3-lemon-chicken-chicken-fried-rice-and-egg-roll-16-25-00e0b38fa2",
@@ -2279,7 +2650,10 @@ window.HALIFAX_STRUCTURED_SPECIALS = {
       "sourceType": "official_website_link",
       "observedAt": "2026-09-04T13:33:10.240Z",
       "verifiedAt": "2026-09-04T13:33:10.240Z",
-      "status": "source_lead"
+      "status": "source_lead",
+      "expiresAt": null,
+      "reviewedAt": "2026-09-04T13:33:10.240Z",
+      "reviewDueAt": "2026-10-04T13:33:10.240Z"
     },
     {
       "specialId": "osm-node-30825944-canton-garden-lunch-specials-combo-4-curried-chicken-steamed-rice-and-egg-roll-16-25-6b732efe32",
@@ -2299,7 +2673,10 @@ window.HALIFAX_STRUCTURED_SPECIALS = {
       "sourceType": "official_website_link",
       "observedAt": "2026-09-04T13:33:10.240Z",
       "verifiedAt": "2026-09-04T13:33:10.240Z",
-      "status": "source_lead"
+      "status": "source_lead",
+      "expiresAt": null,
+      "reviewedAt": "2026-09-04T13:33:10.240Z",
+      "reviewDueAt": "2026-10-04T13:33:10.240Z"
     },
     {
       "specialId": "osm-node-30825944-canton-garden-lunch-specials-combo-5-beef-broccoli-chicken-fried-rice-and-egg-roll-16-25-f2bab337fa",
@@ -2319,7 +2696,10 @@ window.HALIFAX_STRUCTURED_SPECIALS = {
       "sourceType": "official_website_link",
       "observedAt": "2026-09-04T13:33:10.240Z",
       "verifiedAt": "2026-09-04T13:33:10.240Z",
-      "status": "source_lead"
+      "status": "source_lead",
+      "expiresAt": null,
+      "reviewedAt": "2026-09-04T13:33:10.240Z",
+      "reviewDueAt": "2026-10-04T13:33:10.240Z"
     },
     {
       "specialId": "osm-node-30825944-canton-garden-lunch-specials-combo-6-chicken-chow-mein-and-sweet-sour-chicken-and-egg-roll-16-95-3348240f78",
@@ -2339,7 +2719,10 @@ window.HALIFAX_STRUCTURED_SPECIALS = {
       "sourceType": "official_website_link",
       "observedAt": "2026-09-04T13:33:10.240Z",
       "verifiedAt": "2026-09-04T13:33:10.240Z",
-      "status": "source_lead"
+      "status": "source_lead",
+      "expiresAt": null,
+      "reviewedAt": "2026-09-04T13:33:10.240Z",
+      "reviewDueAt": "2026-10-04T13:33:10.240Z"
     },
     {
       "specialId": "osm-way-372779851-sicilian-pizza-specialty-pizza-44acfa0ae4",
@@ -2359,7 +2742,10 @@ window.HALIFAX_STRUCTURED_SPECIALS = {
       "sourceType": "official_website_link",
       "observedAt": "2026-09-04T13:33:32.978Z",
       "verifiedAt": "2026-09-04T13:33:32.978Z",
-      "status": "source_lead"
+      "status": "source_lead",
+      "expiresAt": null,
+      "reviewedAt": "2026-09-04T13:33:32.978Z",
+      "reviewDueAt": "2026-10-04T13:33:32.978Z"
     },
     {
       "specialId": "2-doors-down-happy-hour-c36fc9d29c",
@@ -2396,7 +2782,10 @@ window.HALIFAX_STRUCTURED_SPECIALS = {
       "status": "source_lead",
       "reviewState": "source_signal",
       "matchMethod": "exact_name",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "expiresAt": null,
+      "reviewedAt": null,
+      "reviewDueAt": null
     },
     {
       "specialId": "osm-node-1139389702-five-fishermen-dine-around-2026-winters-harvest-0d9cffd06c",
@@ -2424,10 +2813,13 @@ window.HALIFAX_STRUCTURED_SPECIALS = {
       "rightsState": "requires_rights_review",
       "observedAt": "2026-09-04T13:32:30.604Z",
       "verifiedAt": null,
-      "status": "source_lead",
+      "status": "expired",
       "reviewState": "source_signal",
       "matchMethod": "street_address",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "expiresAt": "2026-02-28T00:00:00.000Z",
+      "reviewedAt": null,
+      "reviewDueAt": null
     },
     {
       "specialId": "osm-node-3790789371-agricola-street-brasserie-happy-hour-dcc19332ee",
@@ -2464,7 +2856,10 @@ window.HALIFAX_STRUCTURED_SPECIALS = {
       "status": "source_lead",
       "reviewState": "source_signal",
       "matchMethod": "exact_name",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "expiresAt": null,
+      "reviewedAt": null,
+      "reviewDueAt": null
     },
     {
       "specialId": "osm-node-7465073827-antojo-tacos-tequila-margarita-monday-77bbc57672",
@@ -2497,7 +2892,10 @@ window.HALIFAX_STRUCTURED_SPECIALS = {
       "status": "source_lead",
       "reviewState": "source_signal",
       "matchMethod": "exact_name",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "expiresAt": null,
+      "reviewedAt": null,
+      "reviewDueAt": null
     },
     {
       "specialId": "osm-node-7465073827-antojo-tacos-tequila-taco-tuesday-953c8834ed",
@@ -2530,7 +2928,10 @@ window.HALIFAX_STRUCTURED_SPECIALS = {
       "status": "source_lead",
       "reviewState": "source_signal",
       "matchMethod": "exact_name",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "expiresAt": null,
+      "reviewedAt": null,
+      "reviewDueAt": null
     },
     {
       "specialId": "osm-node-7465073827-antojo-tacos-tequila-dine-around-2026-antojo-dine-around-40-cddf957111",
@@ -2558,10 +2959,13 @@ window.HALIFAX_STRUCTURED_SPECIALS = {
       "rightsState": "requires_rights_review",
       "observedAt": "2026-09-04T13:32:30.604Z",
       "verifiedAt": null,
-      "status": "source_lead",
+      "status": "expired",
       "reviewState": "source_signal",
       "matchMethod": "exact_name",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "expiresAt": "2026-02-28T00:00:00.000Z",
+      "reviewedAt": null,
+      "reviewDueAt": null
     },
     {
       "specialId": "osm-node-12143582175-asia-restaurant-and-bar-dine-around-2026-prix-fixe-3-course-17fb1447c4",
@@ -2589,10 +2993,13 @@ window.HALIFAX_STRUCTURED_SPECIALS = {
       "rightsState": "requires_rights_review",
       "observedAt": "2026-09-04T13:32:30.604Z",
       "verifiedAt": null,
-      "status": "source_lead",
+      "status": "expired",
       "reviewState": "source_signal",
       "matchMethod": "unique_website_host",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "expiresAt": "2026-02-28T00:00:00.000Z",
+      "reviewedAt": null,
+      "reviewDueAt": null
     },
     {
       "specialId": "osm-node-9740307317-sofia-sunday-happy-hour-559deda3cf",
@@ -2625,7 +3032,10 @@ window.HALIFAX_STRUCTURED_SPECIALS = {
       "status": "source_lead",
       "reviewState": "source_signal",
       "matchMethod": "exact_name",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "expiresAt": null,
+      "reviewedAt": null,
+      "reviewDueAt": null
     },
     {
       "specialId": "osm-node-9740307317-sofia-dine-around-2026-dine-around-menu-40-c4d66f7e5b",
@@ -2653,10 +3063,13 @@ window.HALIFAX_STRUCTURED_SPECIALS = {
       "rightsState": "requires_rights_review",
       "observedAt": "2026-09-04T13:32:30.604Z",
       "verifiedAt": null,
-      "status": "source_lead",
+      "status": "expired",
       "reviewState": "source_signal",
       "matchMethod": "exact_name",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "expiresAt": "2026-02-28T00:00:00.000Z",
+      "reviewedAt": null,
+      "reviewDueAt": null
     },
     {
       "specialId": "osm-node-5125389651-baton-rouge-dine-around-2026-3-course-menu-e4dced1479",
@@ -2684,10 +3097,13 @@ window.HALIFAX_STRUCTURED_SPECIALS = {
       "rightsState": "requires_rights_review",
       "observedAt": "2026-09-04T13:32:30.604Z",
       "verifiedAt": null,
-      "status": "source_lead",
+      "status": "expired",
       "reviewState": "source_signal",
       "matchMethod": "street_address",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "expiresAt": "2026-02-28T00:00:00.000Z",
+      "reviewedAt": null,
+      "reviewDueAt": null
     },
     {
       "specialId": "osm-node-10038454787-bird-s-nest-cafe-dine-around-2026-breakfast-wrap-bundle-7a50767c21",
@@ -2715,10 +3131,13 @@ window.HALIFAX_STRUCTURED_SPECIALS = {
       "rightsState": "requires_rights_review",
       "observedAt": "2026-09-04T13:32:30.604Z",
       "verifiedAt": null,
-      "status": "source_lead",
+      "status": "expired",
       "reviewState": "source_signal",
       "matchMethod": "exact_name",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "expiresAt": "2026-02-28T00:00:00.000Z",
+      "reviewedAt": null,
+      "reviewDueAt": null
     },
     {
       "specialId": "osm-node-267592027-the-black-sheep-dine-around-2026-the-little-lamb-82a65c925f",
@@ -2746,10 +3165,13 @@ window.HALIFAX_STRUCTURED_SPECIALS = {
       "rightsState": "requires_rights_review",
       "observedAt": "2026-09-04T13:32:30.604Z",
       "verifiedAt": null,
-      "status": "source_lead",
+      "status": "expired",
       "reviewState": "source_signal",
       "matchMethod": "exact_name",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "expiresAt": "2026-02-28T00:00:00.000Z",
+      "reviewedAt": null,
+      "reviewDueAt": null
     },
     {
       "specialId": "osm-node-267592027-the-black-sheep-dine-around-2026-the-prize-ewe-21b779d08a",
@@ -2777,10 +3199,13 @@ window.HALIFAX_STRUCTURED_SPECIALS = {
       "rightsState": "requires_rights_review",
       "observedAt": "2026-09-04T13:32:30.604Z",
       "verifiedAt": null,
-      "status": "source_lead",
+      "status": "expired",
       "reviewState": "source_signal",
       "matchMethod": "exact_name",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "expiresAt": "2026-02-28T00:00:00.000Z",
+      "reviewedAt": null,
+      "reviewDueAt": null
     },
     {
       "specialId": "osm-node-11751643550-cafe-lunette-dine-around-2026-lunch-30-ad09afdbea",
@@ -2808,10 +3233,13 @@ window.HALIFAX_STRUCTURED_SPECIALS = {
       "rightsState": "requires_rights_review",
       "observedAt": "2026-09-04T13:32:30.604Z",
       "verifiedAt": null,
-      "status": "source_lead",
+      "status": "expired",
       "reviewState": "source_signal",
       "matchMethod": "street_address",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "expiresAt": "2026-02-28T00:00:00.000Z",
+      "reviewedAt": null,
+      "reviewDueAt": null
     },
     {
       "specialId": "osm-node-11751643550-cafe-lunette-dine-around-2026-dinner-40-a460aa0716",
@@ -2839,10 +3267,13 @@ window.HALIFAX_STRUCTURED_SPECIALS = {
       "rightsState": "requires_rights_review",
       "observedAt": "2026-09-04T13:32:30.604Z",
       "verifiedAt": null,
-      "status": "source_lead",
+      "status": "expired",
       "reviewState": "source_signal",
       "matchMethod": "street_address",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "expiresAt": "2026-02-28T00:00:00.000Z",
+      "reviewedAt": null,
+      "reviewDueAt": null
     },
     {
       "specialId": "osm-node-12938312911-churned-mini-sundae-6-50-8301127c03",
@@ -2872,10 +3303,13 @@ window.HALIFAX_STRUCTURED_SPECIALS = {
       "rightsState": null,
       "observedAt": "2026-09-04T13:32:30.604Z",
       "verifiedAt": null,
-      "status": "source_lead",
+      "status": "expired",
       "reviewState": "source_signal",
       "matchMethod": "exact_name",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "expiresAt": "2026-05-21T00:00:00.000Z",
+      "reviewedAt": null,
+      "reviewDueAt": null
     },
     {
       "specialId": "osm-node-13286456320-creme-dine-around-2026-breakfast-64d46caeb0",
@@ -2903,10 +3337,13 @@ window.HALIFAX_STRUCTURED_SPECIALS = {
       "rightsState": "requires_rights_review",
       "observedAt": "2026-09-04T13:32:30.604Z",
       "verifiedAt": null,
-      "status": "source_lead",
+      "status": "expired",
       "reviewState": "source_signal",
       "matchMethod": "unique_website_host",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "expiresAt": "2026-02-28T00:00:00.000Z",
+      "reviewedAt": null,
+      "reviewDueAt": null
     },
     {
       "specialId": "osm-node-13286456320-creme-dine-around-2026-dinner-b277390bec",
@@ -2934,10 +3371,13 @@ window.HALIFAX_STRUCTURED_SPECIALS = {
       "rightsState": "requires_rights_review",
       "observedAt": "2026-09-04T13:32:30.604Z",
       "verifiedAt": null,
-      "status": "source_lead",
+      "status": "expired",
       "reviewState": "source_signal",
       "matchMethod": "unique_website_host",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "expiresAt": "2026-02-28T00:00:00.000Z",
+      "reviewedAt": null,
+      "reviewDueAt": null
     },
     {
       "specialId": "osm-node-7674254025-shuck-seafood-raw-bar-dine-around-2026-three-courses-dinner-699b6eff9f",
@@ -2965,10 +3405,13 @@ window.HALIFAX_STRUCTURED_SPECIALS = {
       "rightsState": "requires_rights_review",
       "observedAt": "2026-09-04T13:32:30.604Z",
       "verifiedAt": null,
-      "status": "source_lead",
+      "status": "expired",
       "reviewState": "source_signal",
       "matchMethod": "street_address",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "expiresAt": "2026-02-28T00:00:00.000Z",
+      "reviewedAt": null,
+      "reviewDueAt": null
     },
     {
       "specialId": "osm-node-10916309830-darya-dine-around-2026-lunch-30-4edbf21e7e",
@@ -2996,10 +3439,13 @@ window.HALIFAX_STRUCTURED_SPECIALS = {
       "rightsState": "requires_rights_review",
       "observedAt": "2026-09-04T13:32:30.604Z",
       "verifiedAt": null,
-      "status": "source_lead",
+      "status": "expired",
       "reviewState": "source_signal",
       "matchMethod": "exact_name",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "expiresAt": "2026-02-28T00:00:00.000Z",
+      "reviewedAt": null,
+      "reviewDueAt": null
     },
     {
       "specialId": "osm-node-10916309830-darya-dine-around-2026-dinner-40-2f1035e2d1",
@@ -3027,10 +3473,13 @@ window.HALIFAX_STRUCTURED_SPECIALS = {
       "rightsState": "requires_rights_review",
       "observedAt": "2026-09-04T13:32:30.604Z",
       "verifiedAt": null,
-      "status": "source_lead",
+      "status": "expired",
       "reviewState": "source_signal",
       "matchMethod": "exact_name",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "expiresAt": "2026-02-28T00:00:00.000Z",
+      "reviewedAt": null,
+      "reviewDueAt": null
     },
     {
       "specialId": "dear-friend-buck-a-shuck-4335e6bd24",
@@ -3069,7 +3518,10 @@ window.HALIFAX_STRUCTURED_SPECIALS = {
       "status": "source_lead",
       "reviewState": "source_signal",
       "matchMethod": "exact_name",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "expiresAt": null,
+      "reviewedAt": null,
+      "reviewDueAt": null
     },
     {
       "specialId": "dear-friend-oysters-2-435a9d7c58",
@@ -3099,10 +3551,13 @@ window.HALIFAX_STRUCTURED_SPECIALS = {
       "rightsState": null,
       "observedAt": "2026-09-04T13:32:30.604Z",
       "verifiedAt": null,
-      "status": "source_lead",
+      "status": "expired",
       "reviewState": "source_signal",
       "matchMethod": "exact_name",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "expiresAt": "2026-05-21T00:00:00.000Z",
+      "reviewedAt": null,
+      "reviewDueAt": null
     },
     {
       "specialId": "osm-node-11551984275-doraku-chicken-cartilage-5-762ce45479",
@@ -3132,10 +3587,13 @@ window.HALIFAX_STRUCTURED_SPECIALS = {
       "rightsState": null,
       "observedAt": "2026-09-04T13:32:30.604Z",
       "verifiedAt": null,
-      "status": "source_lead",
+      "status": "expired",
       "reviewState": "source_signal",
       "matchMethod": "exact_name",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "expiresAt": "2026-05-21T00:00:00.000Z",
+      "reviewedAt": null,
+      "reviewDueAt": null
     },
     {
       "specialId": "osm-node-11551984275-doraku-beef-sukiyaki-don-10-ad40eebd41",
@@ -3165,10 +3623,13 @@ window.HALIFAX_STRUCTURED_SPECIALS = {
       "rightsState": null,
       "observedAt": "2026-09-04T13:32:30.604Z",
       "verifiedAt": null,
-      "status": "source_lead",
+      "status": "expired",
       "reviewState": "source_signal",
       "matchMethod": "exact_name",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "expiresAt": "2026-05-21T00:00:00.000Z",
+      "reviewedAt": null,
+      "reviewDueAt": null
     },
     {
       "specialId": "osm-node-10916309833-drift-dine-around-2026-lunch-30-62525576b0",
@@ -3196,10 +3657,13 @@ window.HALIFAX_STRUCTURED_SPECIALS = {
       "rightsState": "requires_rights_review",
       "observedAt": "2026-09-04T13:32:30.604Z",
       "verifiedAt": null,
-      "status": "source_lead",
+      "status": "expired",
       "reviewState": "source_signal",
       "matchMethod": "exact_name",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "expiresAt": "2026-02-28T00:00:00.000Z",
+      "reviewedAt": null,
+      "reviewDueAt": null
     },
     {
       "specialId": "osm-node-10916309833-drift-dine-around-2026-dinner-60-c6a70e0d2d",
@@ -3227,10 +3691,13 @@ window.HALIFAX_STRUCTURED_SPECIALS = {
       "rightsState": "requires_rights_review",
       "observedAt": "2026-09-04T13:32:30.604Z",
       "verifiedAt": null,
-      "status": "source_lead",
+      "status": "expired",
       "reviewState": "source_signal",
       "matchMethod": "exact_name",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "expiresAt": "2026-02-28T00:00:00.000Z",
+      "reviewedAt": null,
+      "reviewDueAt": null
     },
     {
       "specialId": "osm-node-37132580-durty-nelly-s-irish-pub-happy-hour-dc01c78fe8",
@@ -3267,7 +3734,10 @@ window.HALIFAX_STRUCTURED_SPECIALS = {
       "status": "source_lead",
       "reviewState": "source_signal",
       "matchMethod": "unique_website_host",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "expiresAt": null,
+      "reviewedAt": null,
+      "reviewDueAt": null
     },
     {
       "specialId": "osm-node-37132580-durty-nelly-s-irish-pub-dine-around-2026-nellys-cheesesteak-3116ac3734",
@@ -3295,10 +3765,13 @@ window.HALIFAX_STRUCTURED_SPECIALS = {
       "rightsState": "requires_rights_review",
       "observedAt": "2026-09-04T13:32:30.604Z",
       "verifiedAt": null,
-      "status": "source_lead",
+      "status": "expired",
       "reviewState": "source_signal",
       "matchMethod": "street_address",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "expiresAt": "2026-02-28T00:00:00.000Z",
+      "reviewedAt": null,
+      "reviewDueAt": null
     },
     {
       "specialId": "osm-node-37132569-economy-shoe-shop-happy-hour-a839df10f0",
@@ -3337,7 +3810,10 @@ window.HALIFAX_STRUCTURED_SPECIALS = {
       "status": "source_lead",
       "reviewState": "source_signal",
       "matchMethod": "exact_name",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "expiresAt": null,
+      "reviewedAt": null,
+      "reviewDueAt": null
     },
     {
       "specialId": "osm-node-37132569-economy-shoe-shop-dine-around-2026-economy-chopped-cheese-b1fd8e83d2",
@@ -3365,10 +3841,13 @@ window.HALIFAX_STRUCTURED_SPECIALS = {
       "rightsState": "requires_rights_review",
       "observedAt": "2026-09-04T13:32:30.604Z",
       "verifiedAt": null,
-      "status": "source_lead",
+      "status": "expired",
       "reviewState": "source_signal",
       "matchMethod": "exact_name",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "expiresAt": "2026-02-28T00:00:00.000Z",
+      "reviewedAt": null,
+      "reviewDueAt": null
     },
     {
       "specialId": "field-guide-happy-hour-c0ef11b2a5",
@@ -3406,7 +3885,10 @@ window.HALIFAX_STRUCTURED_SPECIALS = {
       "status": "source_lead",
       "reviewState": "source_signal",
       "matchMethod": "exact_name",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "expiresAt": null,
+      "reviewedAt": null,
+      "reviewDueAt": null
     },
     {
       "specialId": "osm-node-13122094789-latitude-44-dine-around-2026-2-course-meal-for-40-0029c0d636",
@@ -3434,10 +3916,13 @@ window.HALIFAX_STRUCTURED_SPECIALS = {
       "rightsState": "requires_rights_review",
       "observedAt": "2026-09-04T13:32:30.604Z",
       "verifiedAt": null,
-      "status": "source_lead",
+      "status": "expired",
       "reviewState": "source_signal",
       "matchMethod": "street_address",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "expiresAt": "2026-02-28T00:00:00.000Z",
+      "reviewedAt": null,
+      "reviewDueAt": null
     },
     {
       "specialId": "osm-node-11282329952-freeman-s-little-new-york-dine-around-2026-2-can-dine-for-40-7c8b4aa5d1",
@@ -3465,10 +3950,13 @@ window.HALIFAX_STRUCTURED_SPECIALS = {
       "rightsState": "requires_rights_review",
       "observedAt": "2026-09-04T13:32:30.604Z",
       "verifiedAt": null,
-      "status": "source_lead",
+      "status": "expired",
       "reviewState": "source_signal",
       "matchMethod": "unique_website_host",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "expiresAt": "2026-02-28T00:00:00.000Z",
+      "reviewedAt": null,
+      "reviewDueAt": null
     },
     {
       "specialId": "osm-node-7674194896-gahan-house-dine-around-2026-cajun-chicken-burrito-bowl-dessert-a97ac67269",
@@ -3496,10 +3984,13 @@ window.HALIFAX_STRUCTURED_SPECIALS = {
       "rightsState": "requires_rights_review",
       "observedAt": "2026-09-04T13:32:30.604Z",
       "verifiedAt": null,
-      "status": "source_lead",
+      "status": "expired",
       "reviewState": "source_signal",
       "matchMethod": "street_address",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "expiresAt": "2026-02-28T00:00:00.000Z",
+      "reviewedAt": null,
+      "reviewDueAt": null
     },
     {
       "specialId": "osm-node-7674194896-gahan-house-dine-around-2026-three-course-italian-night-d1f1343fd4",
@@ -3527,10 +4018,13 @@ window.HALIFAX_STRUCTURED_SPECIALS = {
       "rightsState": "requires_rights_review",
       "observedAt": "2026-09-04T13:32:30.604Z",
       "verifiedAt": null,
-      "status": "source_lead",
+      "status": "expired",
       "reviewState": "source_signal",
       "matchMethod": "street_address",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "expiresAt": "2026-02-28T00:00:00.000Z",
+      "reviewedAt": null,
+      "reviewDueAt": null
     },
     {
       "specialId": "osm-node-7674194896-gahan-house-dine-around-2026-chicken-sandys-draught-beer-for-two-7639ee4cd2",
@@ -3558,10 +4052,13 @@ window.HALIFAX_STRUCTURED_SPECIALS = {
       "rightsState": "requires_rights_review",
       "observedAt": "2026-09-04T13:32:30.604Z",
       "verifiedAt": null,
-      "status": "source_lead",
+      "status": "expired",
       "reviewState": "source_signal",
       "matchMethod": "street_address",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "expiresAt": "2026-02-28T00:00:00.000Z",
+      "reviewedAt": null,
+      "reviewDueAt": null
     },
     {
       "specialId": "osm-node-1139389557-gio-dine-around-2026-gio-dine-around-3-course-60-668ad25367",
@@ -3589,10 +4086,13 @@ window.HALIFAX_STRUCTURED_SPECIALS = {
       "rightsState": "requires_rights_review",
       "observedAt": "2026-09-04T13:32:30.604Z",
       "verifiedAt": null,
-      "status": "source_lead",
+      "status": "expired",
       "reviewState": "source_signal",
       "matchMethod": "exact_name",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "expiresAt": "2026-02-28T00:00:00.000Z",
+      "reviewedAt": null,
+      "reviewDueAt": null
     },
     {
       "specialId": "highwayman-happy-hour-46c3242f4b",
@@ -3631,7 +4131,10 @@ window.HALIFAX_STRUCTURED_SPECIALS = {
       "status": "source_lead",
       "reviewState": "source_signal",
       "matchMethod": "exact_name",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "expiresAt": null,
+      "reviewedAt": null,
+      "reviewDueAt": null
     },
     {
       "specialId": "osm-node-11239721834-humble-pie-kitchen-standard-pies-various-flavours-8-ae81cfc6a5",
@@ -3661,10 +4164,13 @@ window.HALIFAX_STRUCTURED_SPECIALS = {
       "rightsState": null,
       "observedAt": "2026-09-04T13:32:30.604Z",
       "verifiedAt": null,
-      "status": "source_lead",
+      "status": "expired",
       "reviewState": "source_signal",
       "matchMethod": "exact_name",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "expiresAt": "2026-05-21T00:00:00.000Z",
+      "reviewedAt": null,
+      "reviewDueAt": null
     },
     {
       "specialId": "osm-node-1139389702-five-fishermen-dine-around-2026-fondue-february-adbbf76519",
@@ -3692,10 +4198,13 @@ window.HALIFAX_STRUCTURED_SPECIALS = {
       "rightsState": "requires_rights_review",
       "observedAt": "2026-09-04T13:32:30.604Z",
       "verifiedAt": null,
-      "status": "source_lead",
+      "status": "expired",
       "reviewState": "source_signal",
       "matchMethod": "street_address",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "expiresAt": "2026-02-28T00:00:00.000Z",
+      "reviewedAt": null,
+      "reviewDueAt": null
     },
     {
       "specialId": "osm-node-37132565-lot-six-bar-and-restaurant-oyster-happy-hour-7ecc84583d",
@@ -3734,7 +4243,10 @@ window.HALIFAX_STRUCTURED_SPECIALS = {
       "status": "source_lead",
       "reviewState": "source_signal",
       "matchMethod": "exact_name",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "expiresAt": null,
+      "reviewedAt": null,
+      "reviewDueAt": null
     },
     {
       "specialId": "osm-node-26041175-maxwell-s-plum-happy-hour-33b5892256",
@@ -3771,7 +4283,10 @@ window.HALIFAX_STRUCTURED_SPECIALS = {
       "status": "source_lead",
       "reviewState": "source_signal",
       "matchMethod": "exact_name",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "expiresAt": null,
+      "reviewedAt": null,
+      "reviewDueAt": null
     },
     {
       "specialId": "osm-way-671922221-mckelvie-s-happy-hour-41404f6ab1",
@@ -3810,7 +4325,10 @@ window.HALIFAX_STRUCTURED_SPECIALS = {
       "status": "source_lead",
       "reviewState": "source_signal",
       "matchMethod": "exact_name",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "expiresAt": null,
+      "reviewedAt": null,
+      "reviewDueAt": null
     },
     {
       "specialId": "osm-way-671922221-mckelvie-s-dine-around-2026-mckelvies-dine-around-menu-0e87ebb473",
@@ -3838,10 +4356,13 @@ window.HALIFAX_STRUCTURED_SPECIALS = {
       "rightsState": "requires_rights_review",
       "observedAt": "2026-09-04T13:32:30.604Z",
       "verifiedAt": null,
-      "status": "source_lead",
+      "status": "expired",
       "reviewState": "source_signal",
       "matchMethod": "exact_name",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "expiresAt": "2026-02-28T00:00:00.000Z",
+      "reviewedAt": null,
+      "reviewDueAt": null
     },
     {
       "specialId": "osm-node-10916723936-pane-e-circo-dine-around-2026-breakfast-1f2f471f1d",
@@ -3869,10 +4390,13 @@ window.HALIFAX_STRUCTURED_SPECIALS = {
       "rightsState": "requires_rights_review",
       "observedAt": "2026-09-04T13:32:30.604Z",
       "verifiedAt": null,
-      "status": "source_lead",
+      "status": "expired",
       "reviewState": "source_signal",
       "matchMethod": "exact_name",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "expiresAt": "2026-02-28T00:00:00.000Z",
+      "reviewedAt": null,
+      "reviewDueAt": null
     },
     {
       "specialId": "osm-node-9099103635-pazzo-ristorante-and-enoteca-dine-around-2026-dine-around-2026-808a9c3a40",
@@ -3900,10 +4424,13 @@ window.HALIFAX_STRUCTURED_SPECIALS = {
       "rightsState": "requires_rights_review",
       "observedAt": "2026-09-04T13:32:30.604Z",
       "verifiedAt": null,
-      "status": "source_lead",
+      "status": "expired",
       "reviewState": "source_signal",
       "matchMethod": "street_address",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "expiresAt": "2026-02-28T00:00:00.000Z",
+      "reviewedAt": null,
+      "reviewDueAt": null
     },
     {
       "specialId": "osm-node-8376551845-portland-street-creperie-spicy-fiesta-sample-sized-crepe-10-6cb829637a",
@@ -3933,10 +4460,13 @@ window.HALIFAX_STRUCTURED_SPECIALS = {
       "rightsState": null,
       "observedAt": "2026-09-04T13:32:30.604Z",
       "verifiedAt": null,
-      "status": "source_lead",
+      "status": "expired",
       "reviewState": "source_signal",
       "matchMethod": "exact_name",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "expiresAt": "2026-05-21T00:00:00.000Z",
+      "reviewedAt": null,
+      "reviewDueAt": null
     },
     {
       "specialId": "osm-node-3801688860-revana-pizza-mini-donair-9-tax-in-a7cc893e06",
@@ -3966,10 +4496,13 @@ window.HALIFAX_STRUCTURED_SPECIALS = {
       "rightsState": null,
       "observedAt": "2026-09-04T13:32:30.604Z",
       "verifiedAt": null,
-      "status": "source_lead",
+      "status": "expired",
       "reviewState": "source_signal",
       "matchMethod": "exact_name",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "expiresAt": "2026-05-21T00:00:00.000Z",
+      "reviewedAt": null,
+      "reviewDueAt": null
     },
     {
       "specialId": "osm-node-3801688860-revana-pizza-mini-poutine-9-tax-in-1501a4307a",
@@ -3999,10 +4532,13 @@ window.HALIFAX_STRUCTURED_SPECIALS = {
       "rightsState": null,
       "observedAt": "2026-09-04T13:32:30.604Z",
       "verifiedAt": null,
-      "status": "source_lead",
+      "status": "expired",
       "reviewState": "source_signal",
       "matchMethod": "exact_name",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "expiresAt": "2026-05-21T00:00:00.000Z",
+      "reviewedAt": null,
+      "reviewDueAt": null
     },
     {
       "specialId": "osm-node-12960015819-salt-and-ash-dine-around-2026-dine-around-menu-30-e3425f903d",
@@ -4030,10 +4566,13 @@ window.HALIFAX_STRUCTURED_SPECIALS = {
       "rightsState": "requires_rights_review",
       "observedAt": "2026-09-04T13:32:30.604Z",
       "verifiedAt": null,
-      "status": "source_lead",
+      "status": "expired",
       "reviewState": "source_signal",
       "matchMethod": "exact_name",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "expiresAt": "2026-02-28T00:00:00.000Z",
+      "reviewedAt": null,
+      "reviewDueAt": null
     },
     {
       "specialId": "osm-node-12960015819-salt-and-ash-happy-hour-3065a263b5",
@@ -4072,7 +4611,10 @@ window.HALIFAX_STRUCTURED_SPECIALS = {
       "status": "source_lead",
       "reviewState": "source_signal",
       "matchMethod": "exact_name",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "expiresAt": null,
+      "reviewedAt": null,
+      "reviewDueAt": null
     },
     {
       "specialId": "osm-node-11751643550-cafe-lunette-dine-around-2026-menu-1-20-cef074ab04",
@@ -4100,10 +4642,13 @@ window.HALIFAX_STRUCTURED_SPECIALS = {
       "rightsState": "requires_rights_review",
       "observedAt": "2026-09-04T13:32:30.604Z",
       "verifiedAt": null,
-      "status": "source_lead",
+      "status": "expired",
       "reviewState": "source_signal",
       "matchMethod": "street_address",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "expiresAt": "2026-02-28T00:00:00.000Z",
+      "reviewedAt": null,
+      "reviewDueAt": null
     },
     {
       "specialId": "osm-node-11751643550-cafe-lunette-dine-around-2026-menu-2-30-6c0cce5a1d",
@@ -4131,10 +4676,13 @@ window.HALIFAX_STRUCTURED_SPECIALS = {
       "rightsState": "requires_rights_review",
       "observedAt": "2026-09-04T13:32:30.604Z",
       "verifiedAt": null,
-      "status": "source_lead",
+      "status": "expired",
       "reviewState": "source_signal",
       "matchMethod": "street_address",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "expiresAt": "2026-02-28T00:00:00.000Z",
+      "reviewedAt": null,
+      "reviewDueAt": null
     },
     {
       "specialId": "osm-node-475877047-sea-smoke-happy-maki-hour-fcf959026c",
@@ -4173,7 +4721,10 @@ window.HALIFAX_STRUCTURED_SPECIALS = {
       "status": "source_lead",
       "reviewState": "source_signal",
       "matchMethod": "exact_name",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "expiresAt": null,
+      "reviewedAt": null,
+      "reviewDueAt": null
     },
     {
       "specialId": "osm-node-475877047-sea-smoke-dine-around-2026-toki-apple-cider-7b1132f5a5",
@@ -4201,10 +4752,13 @@ window.HALIFAX_STRUCTURED_SPECIALS = {
       "rightsState": "requires_rights_review",
       "observedAt": "2026-09-04T13:32:30.604Z",
       "verifiedAt": null,
-      "status": "source_lead",
+      "status": "expired",
       "reviewState": "source_signal",
       "matchMethod": "unique_website_host",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "expiresAt": "2026-02-28T00:00:00.000Z",
+      "reviewedAt": null,
+      "reviewDueAt": null
     },
     {
       "specialId": "osm-node-475877047-sea-smoke-dine-around-2026-prix-fixe-3-course-9a9d275f0c",
@@ -4232,10 +4786,13 @@ window.HALIFAX_STRUCTURED_SPECIALS = {
       "rightsState": "requires_rights_review",
       "observedAt": "2026-09-04T13:32:30.604Z",
       "verifiedAt": null,
-      "status": "source_lead",
+      "status": "expired",
       "reviewState": "source_signal",
       "matchMethod": "unique_website_host",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "expiresAt": "2026-02-28T00:00:00.000Z",
+      "reviewedAt": null,
+      "reviewDueAt": null
     },
     {
       "specialId": "osm-node-11751560115-seaport-social-happy-hour-56a4ea9f62",
@@ -4274,7 +4831,10 @@ window.HALIFAX_STRUCTURED_SPECIALS = {
       "status": "source_lead",
       "reviewState": "source_signal",
       "matchMethod": "exact_name",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "expiresAt": null,
+      "reviewedAt": null,
+      "reviewDueAt": null
     },
     {
       "specialId": "osm-node-11751560115-seaport-social-dine-around-2026-3-course-menu-for-50-da1628967b",
@@ -4302,10 +4862,13 @@ window.HALIFAX_STRUCTURED_SPECIALS = {
       "rightsState": "requires_rights_review",
       "observedAt": "2026-09-04T13:32:30.604Z",
       "verifiedAt": null,
-      "status": "source_lead",
+      "status": "expired",
       "reviewState": "source_signal",
       "matchMethod": "exact_name",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "expiresAt": "2026-02-28T00:00:00.000Z",
+      "reviewedAt": null,
+      "reviewDueAt": null
     },
     {
       "specialId": "osm-node-7674254025-shuck-seafood-raw-bar-dine-around-2026-2-course-menu-511e186165",
@@ -4333,10 +4896,13 @@ window.HALIFAX_STRUCTURED_SPECIALS = {
       "rightsState": "requires_rights_review",
       "observedAt": "2026-09-04T13:32:30.604Z",
       "verifiedAt": null,
-      "status": "source_lead",
+      "status": "expired",
       "reviewState": "source_signal",
       "matchMethod": "street_address",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "expiresAt": "2026-02-28T00:00:00.000Z",
+      "reviewedAt": null,
+      "reviewDueAt": null
     },
     {
       "specialId": "osm-node-11701979069-sketti-and-ball-dine-around-2026-3-for-30-88fe096808",
@@ -4364,10 +4930,13 @@ window.HALIFAX_STRUCTURED_SPECIALS = {
       "rightsState": "requires_rights_review",
       "observedAt": "2026-09-04T13:32:30.604Z",
       "verifiedAt": null,
-      "status": "source_lead",
+      "status": "expired",
       "reviewState": "source_signal",
       "matchMethod": "unique_website_host",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "expiresAt": "2026-02-28T00:00:00.000Z",
+      "reviewedAt": null,
+      "reviewDueAt": null
     },
     {
       "specialId": "osm-node-13289252958-stardust-dine-around-2026-stardust-dine-around-menu-4a147c960f",
@@ -4395,10 +4964,13 @@ window.HALIFAX_STRUCTURED_SPECIALS = {
       "rightsState": "requires_rights_review",
       "observedAt": "2026-09-04T13:32:30.604Z",
       "verifiedAt": null,
-      "status": "source_lead",
+      "status": "expired",
       "reviewState": "source_signal",
       "matchMethod": "exact_name",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "expiresAt": "2026-02-28T00:00:00.000Z",
+      "reviewedAt": null,
+      "reviewDueAt": null
     },
     {
       "specialId": "osm-node-3205029165-stillwell-freehouse-happy-hour-695ebaf14e",
@@ -4437,7 +5009,10 @@ window.HALIFAX_STRUCTURED_SPECIALS = {
       "status": "source_lead",
       "reviewState": "source_signal",
       "matchMethod": "exact_name",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "expiresAt": null,
+      "reviewedAt": null,
+      "reviewDueAt": null
     },
     {
       "specialId": "osm-node-4428984290-stone-pizza-black-garlic-pepperoni-slice-6-fb12574bb0",
@@ -4467,10 +5042,13 @@ window.HALIFAX_STRUCTURED_SPECIALS = {
       "rightsState": null,
       "observedAt": "2026-09-04T13:32:30.604Z",
       "verifiedAt": null,
-      "status": "source_lead",
+      "status": "expired",
       "reviewState": "source_signal",
       "matchMethod": "exact_name",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "expiresAt": "2026-05-21T00:00:00.000Z",
+      "reviewedAt": null,
+      "reviewDueAt": null
     },
     {
       "specialId": "osm-node-4428984290-stone-pizza-grandma-slice-square-slice-limited-quantity-6-0d3c4cca71",
@@ -4500,10 +5078,13 @@ window.HALIFAX_STRUCTURED_SPECIALS = {
       "rightsState": null,
       "observedAt": "2026-09-04T13:32:30.604Z",
       "verifiedAt": null,
-      "status": "source_lead",
+      "status": "expired",
       "reviewState": "source_signal",
       "matchMethod": "exact_name",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "expiresAt": "2026-05-21T00:00:00.000Z",
+      "reviewedAt": null,
+      "reviewDueAt": null
     },
     {
       "specialId": "osm-node-4411880103-the-bg-dine-around-2026-social-dining-board-beer-pairing-fc0a578492",
@@ -4531,10 +5112,13 @@ window.HALIFAX_STRUCTURED_SPECIALS = {
       "rightsState": "requires_rights_review",
       "observedAt": "2026-09-04T13:32:30.604Z",
       "verifiedAt": null,
-      "status": "source_lead",
+      "status": "expired",
       "reviewState": "source_signal",
       "matchMethod": "unique_website_host",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "expiresAt": "2026-02-28T00:00:00.000Z",
+      "reviewedAt": null,
+      "reviewDueAt": null
     },
     {
       "specialId": "osm-node-13262236018-studio-east-oyster-happy-hour-82b464839e",
@@ -4573,7 +5157,10 @@ window.HALIFAX_STRUCTURED_SPECIALS = {
       "status": "source_lead",
       "reviewState": "source_signal",
       "matchMethod": "exact_name",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "expiresAt": null,
+      "reviewedAt": null,
+      "reviewDueAt": null
     },
     {
       "specialId": "osm-node-5155336323-tempo-food-drink-happy-hour-13d6afec15",
@@ -4612,7 +5199,10 @@ window.HALIFAX_STRUCTURED_SPECIALS = {
       "status": "source_lead",
       "reviewState": "source_signal",
       "matchMethod": "exact_name",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "expiresAt": null,
+      "reviewedAt": null,
+      "reviewDueAt": null
     },
     {
       "specialId": "osm-node-5155336323-tempo-food-drink-dine-around-2026-lunch-20-2-course-e19a9e3662",
@@ -4640,10 +5230,13 @@ window.HALIFAX_STRUCTURED_SPECIALS = {
       "rightsState": "requires_rights_review",
       "observedAt": "2026-09-04T13:32:30.604Z",
       "verifiedAt": null,
-      "status": "source_lead",
+      "status": "expired",
       "reviewState": "source_signal",
       "matchMethod": "street_address",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "expiresAt": "2026-02-28T00:00:00.000Z",
+      "reviewedAt": null,
+      "reviewDueAt": null
     },
     {
       "specialId": "osm-node-5155336323-tempo-food-drink-dine-around-2026-dinner-30-3-course-e7481bb284",
@@ -4671,10 +5264,13 @@ window.HALIFAX_STRUCTURED_SPECIALS = {
       "rightsState": "requires_rights_review",
       "observedAt": "2026-09-04T13:32:30.604Z",
       "verifiedAt": null,
-      "status": "source_lead",
+      "status": "expired",
       "reviewState": "source_signal",
       "matchMethod": "street_address",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "expiresAt": "2026-02-28T00:00:00.000Z",
+      "reviewedAt": null,
+      "reviewDueAt": null
     },
     {
       "specialId": "osm-node-3802480457-the-auction-house-thursday-happy-hour-9c5f3989d0",
@@ -4707,7 +5303,10 @@ window.HALIFAX_STRUCTURED_SPECIALS = {
       "status": "source_lead",
       "reviewState": "source_signal",
       "matchMethod": "exact_name",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "expiresAt": null,
+      "reviewedAt": null,
+      "reviewDueAt": null
     },
     {
       "specialId": "osm-node-12984673749-cannery-kitchen-and-social-dine-around-2026-cannery-kitchen-social-hollis-dine-around-2026-de157fc868",
@@ -4735,10 +5334,13 @@ window.HALIFAX_STRUCTURED_SPECIALS = {
       "rightsState": "requires_rights_review",
       "observedAt": "2026-09-04T13:32:30.604Z",
       "verifiedAt": null,
-      "status": "source_lead",
+      "status": "expired",
       "reviewState": "source_signal",
       "matchMethod": "exact_name",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "expiresAt": "2026-02-28T00:00:00.000Z",
+      "reviewedAt": null,
+      "reviewDueAt": null
     },
     {
       "specialId": "osm-node-771690675-the-carleton-dine-around-2026-2-course-meal-for-40-a60be01571",
@@ -4766,10 +5368,13 @@ window.HALIFAX_STRUCTURED_SPECIALS = {
       "rightsState": "requires_rights_review",
       "observedAt": "2026-09-04T13:32:30.604Z",
       "verifiedAt": null,
-      "status": "source_lead",
+      "status": "expired",
       "reviewState": "source_signal",
       "matchMethod": "exact_name",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "expiresAt": "2026-02-28T00:00:00.000Z",
+      "reviewedAt": null,
+      "reviewDueAt": null
     },
     {
       "specialId": "osm-node-6296953436-the-mercantile-social-dine-around-2026-three-course-meal-60937ae4f9",
@@ -4797,10 +5402,13 @@ window.HALIFAX_STRUCTURED_SPECIALS = {
       "rightsState": "requires_rights_review",
       "observedAt": "2026-09-04T13:32:30.604Z",
       "verifiedAt": null,
-      "status": "source_lead",
+      "status": "expired",
       "reviewState": "source_signal",
       "matchMethod": "exact_name",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "expiresAt": "2026-02-28T00:00:00.000Z",
+      "reviewedAt": null,
+      "reviewDueAt": null
     },
     {
       "specialId": "osm-node-1689418207-the-old-triangle-irish-pub-happy-hour-244e03d19d",
@@ -4837,7 +5445,10 @@ window.HALIFAX_STRUCTURED_SPECIALS = {
       "status": "source_lead",
       "reviewState": "source_signal",
       "matchMethod": "unique_website_host",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "expiresAt": null,
+      "reviewedAt": null,
+      "reviewDueAt": null
     },
     {
       "specialId": "osm-node-1689418207-the-old-triangle-irish-pub-dine-around-2026-2-course-dinner-for-30-c602ca2131",
@@ -4865,10 +5476,13 @@ window.HALIFAX_STRUCTURED_SPECIALS = {
       "rightsState": "requires_rights_review",
       "observedAt": "2026-09-04T13:32:30.604Z",
       "verifiedAt": null,
-      "status": "source_lead",
+      "status": "expired",
       "reviewState": "source_signal",
       "matchMethod": "street_address",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "expiresAt": "2026-02-28T00:00:00.000Z",
+      "reviewedAt": null,
+      "reviewDueAt": null
     },
     {
       "specialId": "the-press-gang-happy-hour-7f36ec84fb",
@@ -4907,7 +5521,10 @@ window.HALIFAX_STRUCTURED_SPECIALS = {
       "status": "source_lead",
       "reviewState": "source_signal",
       "matchMethod": "street_address",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "expiresAt": null,
+      "reviewedAt": null,
+      "reviewDueAt": null
     },
     {
       "specialId": "the-press-gang-dine-around-2026-3-course-dinner-for-60-c3aaa7ab97",
@@ -4935,10 +5552,13 @@ window.HALIFAX_STRUCTURED_SPECIALS = {
       "rightsState": "requires_rights_review",
       "observedAt": "2026-09-04T13:32:30.604Z",
       "verifiedAt": null,
-      "status": "source_lead",
+      "status": "expired",
       "reviewState": "source_signal",
       "matchMethod": "website_host_name",
-      "matchConfidence": "probable"
+      "matchConfidence": "probable",
+      "expiresAt": "2026-02-28T00:00:00.000Z",
+      "reviewedAt": null,
+      "reviewDueAt": null
     },
     {
       "specialId": "osm-node-4411880103-the-bg-happy-hour-61469965da",
@@ -4975,7 +5595,10 @@ window.HALIFAX_STRUCTURED_SPECIALS = {
       "status": "source_lead",
       "reviewState": "source_signal",
       "matchMethod": "unique_website_host",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "expiresAt": null,
+      "reviewedAt": null,
+      "reviewDueAt": null
     },
     {
       "specialId": "osm-node-4411880103-the-bg-margarita-monday-864e031265",
@@ -5008,7 +5631,10 @@ window.HALIFAX_STRUCTURED_SPECIALS = {
       "status": "source_lead",
       "reviewState": "source_signal",
       "matchMethod": "unique_website_host",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "expiresAt": null,
+      "reviewedAt": null,
+      "reviewDueAt": null
     },
     {
       "specialId": "osm-node-4411880103-the-bg-sangria-pitchers-7eed885bce",
@@ -5044,7 +5670,10 @@ window.HALIFAX_STRUCTURED_SPECIALS = {
       "status": "source_lead",
       "reviewState": "source_signal",
       "matchMethod": "unique_website_host",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "expiresAt": null,
+      "reviewedAt": null,
+      "reviewDueAt": null
     },
     {
       "specialId": "osm-way-96322798-wooden-monkey-dine-around-2026-dine-around-3-courses-50-4003c7cdbf",
@@ -5072,10 +5701,13 @@ window.HALIFAX_STRUCTURED_SPECIALS = {
       "rightsState": "requires_rights_review",
       "observedAt": "2026-09-04T13:32:30.604Z",
       "verifiedAt": null,
-      "status": "source_lead",
+      "status": "expired",
       "reviewState": "source_signal",
       "matchMethod": "unique_website_host",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "expiresAt": "2026-02-28T00:00:00.000Z",
+      "reviewedAt": null,
+      "reviewDueAt": null
     },
     {
       "specialId": "osm-way-96322798-wooden-monkey-happy-hour-915efddda6",
@@ -5112,7 +5744,10 @@ window.HALIFAX_STRUCTURED_SPECIALS = {
       "status": "source_lead",
       "reviewState": "source_signal",
       "matchMethod": "unique_website_host",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "expiresAt": null,
+      "reviewedAt": null,
+      "reviewDueAt": null
     },
     {
       "specialId": "osm-node-12984651963-toridori-dine-around-2026-lunch-30-64aa049849",
@@ -5140,10 +5775,13 @@ window.HALIFAX_STRUCTURED_SPECIALS = {
       "rightsState": "requires_rights_review",
       "observedAt": "2026-09-04T13:32:30.604Z",
       "verifiedAt": null,
-      "status": "source_lead",
+      "status": "expired",
       "reviewState": "source_signal",
       "matchMethod": "exact_name",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "expiresAt": "2026-02-28T00:00:00.000Z",
+      "reviewedAt": null,
+      "reviewDueAt": null
     },
     {
       "specialId": "osm-node-12984651963-toridori-dine-around-2026-dinner-40-6616597035",
@@ -5171,10 +5809,13 @@ window.HALIFAX_STRUCTURED_SPECIALS = {
       "rightsState": "requires_rights_review",
       "observedAt": "2026-09-04T13:32:30.604Z",
       "verifiedAt": null,
-      "status": "source_lead",
+      "status": "expired",
       "reviewState": "source_signal",
       "matchMethod": "exact_name",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "expiresAt": "2026-02-28T00:00:00.000Z",
+      "reviewedAt": null,
+      "reviewDueAt": null
     },
     {
       "specialId": "osm-node-3804189857-trattoria-vesso-dine-around-2026-menu-del-singolo-edaa22c54b",
@@ -5202,10 +5843,13 @@ window.HALIFAX_STRUCTURED_SPECIALS = {
       "rightsState": "requires_rights_review",
       "observedAt": "2026-09-04T13:32:30.604Z",
       "verifiedAt": null,
-      "status": "source_lead",
+      "status": "expired",
       "reviewState": "source_signal",
       "matchMethod": "exact_name",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "expiresAt": "2026-02-28T00:00:00.000Z",
+      "reviewedAt": null,
+      "reviewDueAt": null
     },
     {
       "specialId": "osm-node-3804189857-trattoria-vesso-dine-around-2026-menu-duo-5c4d619ed9",
@@ -5233,10 +5877,13 @@ window.HALIFAX_STRUCTURED_SPECIALS = {
       "rightsState": "requires_rights_review",
       "observedAt": "2026-09-04T13:32:30.604Z",
       "verifiedAt": null,
-      "status": "source_lead",
+      "status": "expired",
       "reviewState": "source_signal",
       "matchMethod": "exact_name",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "expiresAt": "2026-02-28T00:00:00.000Z",
+      "reviewedAt": null,
+      "reviewDueAt": null
     },
     {
       "specialId": "osm-node-771698137-waterfront-warehouse-dine-around-2026-savour-dine-around-2026-927c5ccc39",
@@ -5264,10 +5911,13 @@ window.HALIFAX_STRUCTURED_SPECIALS = {
       "rightsState": "requires_rights_review",
       "observedAt": "2026-09-04T13:32:30.604Z",
       "verifiedAt": null,
-      "status": "source_lead",
+      "status": "expired",
       "reviewState": "source_signal",
       "matchMethod": "exact_name",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "expiresAt": "2026-02-28T00:00:00.000Z",
+      "reviewedAt": null,
+      "reviewDueAt": null
     }
   ]
 };

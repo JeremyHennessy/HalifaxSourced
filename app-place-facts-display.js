@@ -15,8 +15,8 @@ function formatStructuredHours(restaurant, date = new Date()) {
   const facts = restaurant.structuredFacts;
   if (!facts?.hours) return null;
   const intervals = todaysStructuredHours(facts.hours, date);
-  const schedule = intervals.length ? intervals.map((item) => `${item.open}–${item.close}${item.overnight ? " next day" : ""}`).join(", ") : "Closed today";
-  if (!structuredFactFresh(facts.lastVerifiedAt || facts.observedAt)) return `${schedule} · check current hours`;
+  const schedule = intervals.length ? intervals.map((item) => `${item.open}–${item.close}${item.overnight ? " next day" : ""}`).join(", ") : Array.isArray(facts.hours[halifaxClockParts(date).day]) ? "Closed today" : "Today’s hours not confirmed";
+  if (!structuredFactFresh(facts.hoursVerifiedAt || facts.lastVerifiedAt || facts.observedAt)) return `${schedule} · check current hours`;
   const state = restaurantHoursState(facts.hours, date);
   if (state.state === "open") return `Open now · closes ${state.closesAt} · ${schedule}`;
   if (state.state === "closed" && state.opensLaterToday) return `Closed now · opens ${state.opensAt} · ${schedule}`;
@@ -31,6 +31,6 @@ for (const restaurant of restaurants) {
   if (facts.hours) {
     restaurant.previousOpeningHours = restaurant.openingHours || null;
     restaurant.openingHours = formatStructuredHours(restaurant);
-    restaurant.currentHoursState = structuredFactFresh(facts.lastVerifiedAt || facts.observedAt) ? restaurantHoursState(facts.hours, new Date()) : { state: "unknown", reason: "structured_hours_stale" };
+    restaurant.currentHoursState = structuredFactFresh(facts.hoursVerifiedAt || facts.lastVerifiedAt || facts.observedAt) ? restaurantHoursState(facts.hours, new Date()) : { state: "unknown", reason: "structured_hours_stale" };
   }
 }

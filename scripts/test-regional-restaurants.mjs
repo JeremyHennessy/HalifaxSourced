@@ -38,6 +38,8 @@ assert.equal(lifecycle.status({...seasonal,operatingStatus:'permanently_closed'}
 const root = new URL('../', import.meta.url);
 const catalog = JSON.parse(await readFile(new URL('data/build/catalog.json',root)));
 const regional = JSON.parse(await readFile(new URL('data/reviewed-regional-restaurants.json',root)));
+const enrichment = JSON.parse(await readFile(new URL('data/reviewed-regional-enrichment.json',root)));
+assert.equal(enrichment.records.length,47);
 const savedWrites=[];
 const context = vm.createContext({window:{},document:{querySelector:()=>({}),querySelectorAll:()=>[]},localStorage:{getItem:()=>JSON.stringify(['matadora-tapas-bar-halifax','osm-node-37132554-press-gang']),setItem:(key,value)=>savedWrites.push(value)},console,URL,Date,Intl,Set,Map});
 const html = await readFile(new URL('index.html',root),'utf8');
@@ -65,7 +67,9 @@ for(const accepted of regional.accepted){
   assert(published&&runtime,accepted.id);
   for(const field of ['name','address','website','operatingStatus','openingHours','coordinates']) assert.equal(JSON.stringify(runtime[field]),JSON.stringify(published[field]),accepted.id+':'+field);
   assert.equal(runtime.hasOpening,false,'Established restaurant is not a new-opening claim: '+accepted.id);
-  assert.equal(published.coordinates,null,'No guessed location centroid: '+accepted.id);
+  const evidence=enrichment.records.find(row=>row.id===accepted.id);assert(evidence);
+  assert.equal(JSON.stringify(published.coordinates),JSON.stringify(evidence.fields.coordinates.status==='verified'?evidence.fields.coordinates.value:null),'No guessed location centroid: '+accepted.id);
+  if(published.openingHours) assert.equal(published.openingHours,evidence.fields.hours.publishedText);
 }
 for(const name of ["Antoinette's Cheesecakes",'Apartment 3 Espresso Bar']) {
   const records=browser.filter(r=>r.name===name);assert.equal(records.length,name.startsWith('Antoinette')?3:2);assert.equal(new Set(records.map(r=>r.address)).size,records.length);

@@ -17,10 +17,10 @@ function addDays(date, days) { return new Date(date.getTime() + days * 86400000)
 function eventStart(event) { const d = new Date(event.startAt); return Number.isNaN(d.getTime()) ? null : d; }
 function richEventCard(event) {
   const start = eventStart(event); if (!start) return "";
-  const link = safeUrl(event.ticketUrl) || safeUrl(event.officialUrl) || safeUrl(event.sourceUrl) || safeUrl(event.eventUrl);
+  const link = canonicalEventUrl(event);
   const when = start.toLocaleString("en-CA", { timeZone: "America/Halifax", weekday: "short", month: "short", day: "numeric", hour: "numeric", minute: "2-digit" });
   const venue = event.venueName || event.city || "Halifax";
-  const inner = `<div class="event-card-body"><span class="eyebrow">${escapeHtml((event.categories || [event.category]).filter(Boolean)[0] || "Event")}</span><h3>${escapeHtml(event.title)}</h3><p>${escapeHtml(when)} · ${escapeHtml(venue)}</p>${event.free === true ? '<span class="card-tag">Free</span>' : ""}</div>`;
+  const inner = `<div class="event-card-body"><span class="eyebrow">${escapeHtml((event.categories || [event.category]).filter(Boolean)[0] || "Event")}</span><h3>${escapeHtml(eventDisplayTitle(event))}</h3><p>${escapeHtml(when)} · ${escapeHtml(venue)}</p>${event.free === true ? '<span class="card-tag">Free</span>' : ""}</div>`;
   return link ? `<a class="rich-event-card" href="${escapeHtml(link)}" target="_blank" rel="noreferrer">${inner}</a>` : `<div class="rich-event-card">${inner}</div>`;
 }
 function richSpecialCard(restaurant, special) {

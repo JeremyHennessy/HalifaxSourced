@@ -1,0 +1,13 @@
+import assert from 'node:assert/strict';
+import {isUpcoming,validCoordinates,placeFactCounts} from './lib/coverage-values.mjs';
+const now=Date.parse('2026-10-20T18:00:00Z');
+assert(isUpcoming('2026-10-21T12:00:00Z',null,now));
+assert(!isUpcoming('2026-10-19T12:00:00Z',null,now));
+assert(!isUpcoming(null,null,now));
+assert(validCoordinates({latitude:44.6,longitude:-63.5}));
+assert(validCoordinates({lat:44.6,lon:-63.5}));
+for(const v of [null,{}, {lat:null,lon:null},{lat:'',lon:''},{lat:91,lon:0}]) assert(!validCoordinates(v));
+const rows=[{hours:{monday:[]},menus:[1],features:[]},{}];
+assert.equal(placeFactCounts(rows).records,2);assert.equal(placeFactCounts(rows).menus,1);assert.equal(placeFactCounts(rows).features,0);
+assert.equal(placeFactCounts(rows.slice(1)).menus,0);
+console.log('Coverage values passed: null-ended dates, all coordinate forms and post-rejection counts.');

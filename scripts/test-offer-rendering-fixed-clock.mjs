@@ -37,6 +37,15 @@ try{
    if(name!=='valid')assert.match(await page.locator('#detailSpecials').innerText(),/Current availability is unverified/);
    evidence.push({viewport,name,currentRendered:name==='valid',passed:true});
   }
+  await page.evaluate(now=>{
+    const target=restaurants.find(r=>r.id==='side-hustle-snack-bar-dartmouth');
+    target.structuredSpecials=['First','Second'].map((label,index)=>({id:'multi-'+index,restaurantId:target.id,title:label+' distinct offer',status:'verified_current',sourceType:'reviewed_restaurant_owned_source',sourceUrl:'https://example.com/offer-'+index,verifiedAt:now,identityValidated:true,locationValidated:true}));
+    target.currentVerifiedSpecials=target.structuredSpecials.filter(currentStructuredSpecial);
+    Object.assign(specialsUiState,{query:'',neighbourhood:'all',kind:'verified',page:1});renderSpecials();
+  },now);
+  assert.deepEqual(await page.locator('.special-card.is-verified h2').allTextContents(),['First distinct offer','Second distinct offer']);
+  assert.deepEqual(await page.locator('.special-card.is-verified .text-link').evaluateAll(links=>links.map(link=>link.href)),['https://example.com/offer-0','https://example.com/offer-1']);
+  assert.match(await page.locator('.specials-control-panel').innerText(),/2 verified offers/);
   await page.waitForLoadState('networkidle');resources.assertClean();await context.close();
  }
  await mkdir(new URL('../artifacts/',import.meta.url),{recursive:true});await writeFile(new URL('../artifacts/offer-rendering-fixed-clock.json',import.meta.url),JSON.stringify({fixedTime:now,snapshot:{records:160,current:0,stale:55},evidence},null,2));console.log('Fixed-clock offer rendering passed: positive and nine negative cases at desktop/mobile; reviewed snapshot 0 current, 55 stale.');

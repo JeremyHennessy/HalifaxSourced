@@ -182,7 +182,7 @@ function homeEventWhen(event) {
 
 function cityEventLeadRow(event) {
   const category = event.categories?.[0] || "Event";
-  return `<article class="lead-row"><div class="date-token">${escapeHtml(homeEventWhen(event).toUpperCase())}</div><div><strong>${escapeHtml(event.title)}</strong><span>${escapeHtml(event.venueName || event.city || "Halifax")}</span><small>${escapeHtml(category)} · ${escapeHtml(event.sourceName || "Source")}</small></div><a href="#events">View</a></article>`;
+  return `<article class="lead-row"><div class="date-token">${escapeHtml(homeEventWhen(event).toUpperCase())}</div><div><strong>${escapeHtml(eventDisplayTitle(event))}</strong><span>${escapeHtml(event.venueName || event.city || "Halifax")}</span><small>${escapeHtml(category)} · ${escapeHtml(event.sourceName || "Source")}</small></div>${eventSourceButton(event, "View ↗", "text-link")}</article>`;
 }
 
 function specialLeadRow(restaurant) {

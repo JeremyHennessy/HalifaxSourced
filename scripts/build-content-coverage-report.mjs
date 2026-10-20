@@ -3,8 +3,11 @@ import vm from "node:vm";
 import integrity from "../source-integrity.js";
 import {mediaPermitted,referenceProblems} from "./lib/media-rights-contract.mjs";
 
+import { validCoordinates, isUpcoming as eventIsUpcoming } from "./lib/coverage-values.mjs";
+
 const DAY_MS = 24 * 60 * 60 * 1000;
-const now = Date.now();
+const now = Date.parse(process.env.COVERAGE_AS_OF || new Date().toISOString());
+if (!Number.isFinite(now)) throw new Error("Invalid COVERAGE_AS_OF");
 const SOCIAL_PLATFORMS = new Set(["instagram", "facebook", "tiktok", "threads", "x", "youtube", "linkedin", "bluesky", "pinterest", "snapchat"]);
 const LINK_HUB_PLATFORMS = new Set(["linktree", "beacons", "linkinbio", "campsite", "bento"]);
 
@@ -37,21 +40,13 @@ function validUrl(value) {
   catch { return false; }
 }
 
-function validCoordinates(value) {
-  const lat = Number(value?.lat ?? value?.latitude);
-  const lon = Number(value?.lon ?? value?.lng ?? value?.longitude);
-  return Number.isFinite(lat) && Number.isFinite(lon) && Math.abs(lat) <= 90 && Math.abs(lon) <= 180;
-}
 
 function dateStamp(value) {
   const stamp = Date.parse(String(value ?? ""));
   return Number.isFinite(stamp) ? stamp : null;
 }
 
-function isUpcoming(startAt, endAt = startAt) {
-  const end = dateStamp(endAt);
-  return end !== null && end >= now - 30 * 60 * 1000;
-}
+function isUpcoming(startAt, endAt) { return eventIsUpcoming(startAt, endAt, now); }
 
 function isFresh(value, days) {
   const stamp = dateStamp(value);
@@ -279,7 +274,7 @@ for (const event of currentCityEvents) {
   increment(cityBySource, event.sourceName || event.sourceId || "Unknown source");
   for (const category of event.categories || ["Other"]) increment(cityByCategory, category);
   increment(cityByMunicipality, event.city || "Unknown");
-  if (validCoordinates(event.coordinates) || (Number.isFinite(Number(event.lat)) && Number.isFinite(Number(event.lon)))) eventsWithCoordinates += 1;
+  if (validCoordinates(event.coordinates) || validCoordinates(event)) eventsWithCoordinates += 1;
   if (validUrl(event.ticketUrl)) eventsWithTicketLinks += 1;
   if (String(event.price || "").trim() || Number.isFinite(Number(event.priceMin)) || Number.isFinite(Number(event.priceMax))) eventsWithPrices += 1;
   if (event.free === true || /^\s*free\b/i.test(String(event.price || ""))) freeEvents += 1;

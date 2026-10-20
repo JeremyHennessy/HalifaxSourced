@@ -364,6 +364,7 @@ if (typeof halifaxAdminStatusBaseRenderRoute === "function") {
   window.renderRoute = function renderRouteWithAdminStatus() {
     const current = route();
     if (current.name === "admin" && current.id === "status") {
+      document.title = "Data status | Halifax Sourced";
       renderFreshnessStatusAdmin();
       return;
     }

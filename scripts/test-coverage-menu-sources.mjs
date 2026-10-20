@@ -7,7 +7,7 @@ import { execFileSync } from 'node:child_process';
 // Exercise the real offline builder, not a second implementation of its union.
 const root = await mkdtemp(join(tmpdir(), 'halifax-menu-coverage-'));
 try {
-  for (const file of ['scripts/build-content-coverage-report.mjs', 'scripts/reconcile-structured-coverage.mjs', 'scripts/lib/reviewed-corrections.mjs', 'restaurant-corrections.js', 'scripts/lib/media-rights-contract.mjs', 'source-integrity.js', 'app-media.js']) {
+  for (const file of ['scripts/build-content-coverage-report.mjs', 'scripts/reconcile-structured-coverage.mjs', 'scripts/lib/coverage-values.mjs', 'scripts/lib/reviewed-corrections.mjs', 'restaurant-corrections.js', 'scripts/lib/media-rights-contract.mjs', 'source-integrity.js', 'app-media.js']) {
     await mkdir(dirname(join(root, file)), { recursive: true });
     await copyFile(new URL('../' + file, import.meta.url), join(root, file));
   }
