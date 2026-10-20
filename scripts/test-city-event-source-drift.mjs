@@ -40,3 +40,8 @@ const recoveredCurrent = { ...current, sourceStats: [{ sourceId: "tourism-ns-eve
 const recovered = reconcileEventSourceDrift(recoveredCurrent, previous, { now, minimumPriorCount: 20 });
 assert(recovered.anomalies.length === 0 && recovered.carried.length === 0, "Non-zero source yield must not trigger anomaly carry-forward");
 console.log("City-event source drift regression passed: high-yield zero drops are bounded and labeled; small/old/non-zero cases are not carried.");
+
+// The production reconciliation step now additionally protects individual
+// accepted future records, including partial-success losses and small sources.
+await import("./test-event-refresh-safety.mjs");
+await import("./test-symphony-event-headings.mjs");

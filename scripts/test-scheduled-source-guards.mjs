@@ -50,11 +50,22 @@ try {
   assert.equal(deadlineReport.counts.broken,0);
   for(const result of deadlineReport.results.filter(item=>item.state==='transient'))assert.equal(result.error,'timeout');
   console.log('Collector deadline regression passed: hung fetch/read/cancel become explicit timeouts; same-domain tail completes.');
+  // The preview coordinator is an API-only reader, not a catalogue URL fetcher.
+  // An attacker-controlled API-root environment variable and redirect response
+  // must never move its existing token off the fixed GitHub API origin.
+  const apiLog=join(root,'coordinator-api-requests.json');
+  await writeFile(join(root,'api-runner.mjs'),`import {writeFile} from 'node:fs/promises';const requests=[];globalThis.fetch=async(input,options)=>{requests.push({url:String(input),method:options.method,redirect:options.redirect});return new Response(null,{status:302,headers:{location:'https://untrusted.example/steal-token'}});};process.on('beforeExit',()=>{});await import(${JSON.stringify(new URL('coordinate-preview-updates.mjs',import.meta.url).href)});await new Promise(resolve=>setImmediate(resolve));await writeFile(${JSON.stringify(apiLog)},JSON.stringify(requests));`);
+  const apiResult=await new Promise((resolve,reject)=>{const child=spawn(process.execPath,[join(root,'api-runner.mjs')],{cwd:root,env:{...process.env,GITHUB_REPOSITORY:'JeremyHennessy/HalifaxSourced',GH_TOKEN:'fixture-not-a-secret',GITHUB_API_URL:'https://untrusted.example',REQUESTED_RUN_ID:'',REQUESTED_ARTIFACT:'',GITHUB_OUTPUT:'',GITHUB_STEP_SUMMARY:'',PLAN_PATH:''},stdio:['ignore','pipe','pipe']});let error='';child.stderr.on('data',chunk=>error+=chunk);child.stdout.resume();child.on('error',reject);child.on('close',code=>resolve({code,error}));});
+  assert.equal(apiResult.code,1,'Redirect API response must stop reconciliation');
+  const apiRequests=JSON.parse(await readFile(apiLog,'utf8'));
+  assert.deepEqual(apiRequests,[{url:'https://api.github.com/repos/JeremyHennessy/HalifaxSourced/git/ref/heads/main',method:'GET',redirect:'error'}]);
+  console.log('Coordinator API boundary passed: fixed origin, GET only, no redirects.');
   // Catalogue-source consumers must keep the shared wrapper; API-only imports
   // use fixed endpoints and are outside this source-URL test.
   for(const name of await readdir(new URL('./',import.meta.url))) {
     if(!name.endsWith('.mjs')||name.startsWith('test-')||['import-meta-social.mjs','import-google-places.mjs','import-ns-food-inspections.mjs','import-osm-restaurants.mjs'].includes(name))continue;
     const source=await readFile(new URL(name,import.meta.url),'utf8');
+    if(name==='coordinate-preview-updates.mjs'){assert(source.includes("const apiRoot = 'https://api.github.com';"));assert(source.includes("method: 'GET', redirect: 'error'"));assert(!source.includes('process.env.GITHUB_API_URL'));assert(source.includes('AbortSignal.timeout(30_000)'));continue;}
     if(/\bfetch\(/.test(source))assert(source.includes('import { fetchGuardedSource as fetch }'),name+' has an unguarded source request');
   }
   console.log('Scheduled source guards passed offline: link checks and thumbnail discovery never request quarantined URLs or redirect destinations.');

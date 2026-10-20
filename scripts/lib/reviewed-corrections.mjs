@@ -5,6 +5,7 @@ const context = { window: {} };
 vm.runInNewContext(await readFile(new URL('../../data/reviewed-restaurant-corrections.js', import.meta.url), 'utf8'), context);
 export const reviewedCorrections = context.window.HALIFAX_RESTAURANT_CORRECTIONS;
 export function applyReviewedCorrections(records) { return corrections.apply(records, reviewedCorrections); }
+export function applyReviewedFactFieldRejections(records) { return corrections.applyFactFieldRejections(records, reviewedCorrections); }
 vm.runInNewContext(await readFile(new URL('../../data/reviewed-place-resolutions.js', import.meta.url), 'utf8'), context);
 export const reviewedPlaceResolutions = context.window.HALIFAX_REVIEWED_PLACE_RESOLUTIONS?.records || [];
 

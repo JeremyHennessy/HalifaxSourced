@@ -35,8 +35,8 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  promote:
-    name: Promote preview artifact
+  reconcile:
+    name: Reconcile retained preview queue
     if: >-
       github.event_name == 'workflow_dispatch' ||
       (
@@ -46,54 +46,87 @@ jobs:
         github.event.workflow_run.event != 'pull_request'
       )
     runs-on: ubuntu-latest
+    timeout-minutes: 15
+    outputs:
+      matrix: ${{ steps.plan.outputs.matrix }}
+      has_work: ${{ steps.plan.outputs.has_work }}
+    steps:
+      - name: Checkout coordinator from main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+      - name: Set up coordinator Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Reconcile all retained lanes
+        id: plan
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REQUESTED_RUN_ID: ${{ inputs.run_id }}
+          REQUESTED_ARTIFACT: ${{ inputs.artifact_name }}
+          PLAN_PATH: ${{ runner.temp }}/preview-queue-plan.json
+        run: node scripts/coordinate-preview-updates.mjs
+      - name: Preserve queue decision
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: preview-queue-plan
+          path: ${{ runner.temp }}/preview-queue-plan.json
+          if-no-files-found: warn
+          retention-days: 30
 
+  promote:
+    name: Promote ${{ matrix.artifact_name }} (source ${{ matrix.run_id }})
+    needs: reconcile
+    if: needs.reconcile.outputs.has_work == 'true'
+    strategy:
+      fail-fast: false
+      max-parallel: 1
+      matrix: ${{ fromJSON(needs.reconcile.outputs.matrix) }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
     steps:
       - name: Resolve preview artifact
         id: preview
+        env:
+          RUN_ID: ${{ matrix.run_id }}
+          ARTIFACT_NAME: ${{ matrix.artifact_name }}
+          WORKFLOW_NAME: ${{ matrix.workflow_name }}
+          SOURCE_RUN_URL: ${{ matrix.source_run_url }}
         shell: bash
         run: |
-          if [ "${{ github.event_name }}" = "workflow_run" ]; then
-            run_id="${{ github.event.workflow_run.id }}"
-            workflow_name="${{ github.event.workflow_run.name }}"
-            source_run_url="${{ github.event.workflow_run.html_url }}"
-
-            case "$workflow_name" in
-              "Source Expansion Preview") artifact_name="source-expansion-preview" ;;
-              "City Events Preview") artifact_name="city-events-preview" ;;
-              "Social Source Preview") artifact_name="social-source-preview" ;;
-              *)
-                echo "::error::Unsupported preview workflow: $workflow_name"
-                exit 1
-                ;;
-            esac
-          else
-            run_id="${{ inputs.run_id }}"
-            artifact_name="${{ inputs.artifact_name }}"
-            workflow_name="manual promotion"
-            source_run_url="${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ inputs.run_id }}"
-          fi
-
-          if [ -z "$run_id" ] || [ -z "$artifact_name" ]; then
-            echo "::error::run_id and artifact_name are required."
-            exit 1
-          fi
-
-          echo "run_id=$run_id" >> "$GITHUB_OUTPUT"
-          echo "artifact_name=$artifact_name" >> "$GITHUB_OUTPUT"
-          echo "workflow_name=$workflow_name" >> "$GITHUB_OUTPUT"
-          echo "source_run_url=$source_run_url" >> "$GITHUB_OUTPUT"
+          echo "run_id=$RUN_ID" >> "$GITHUB_OUTPUT"
+          echo "artifact_name=$ARTIFACT_NAME" >> "$GITHUB_OUTPUT"
+          echo "workflow_name=$WORKFLOW_NAME" >> "$GITHUB_OUTPUT"
+          echo "source_run_url=$SOURCE_RUN_URL" >> "$GITHUB_OUTPUT"
 
       - name: Checkout main
         uses: actions/checkout@v4
         with:
           ref: main
+          fetch-depth: 0
 
       - name: Set up Node
         uses: actions/setup-node@v4
         with:
           node-version: 20
 
+      - name: Recheck live review reservation
+        id: reservation
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REQUESTED_RUN_ID: ${{ matrix.run_id }}
+          REQUESTED_ARTIFACT: ${{ matrix.artifact_name }}
+          PLAN_PATH: ${{ runner.temp }}/preview-reservation.json
+        shell: bash
+        run: |
+          node scripts/coordinate-preview-updates.mjs --guard
+          checked_main="$(node -p "JSON.parse(require('fs').readFileSync(process.env.PLAN_PATH)).mainSha")"
+          test "$(git rev-parse HEAD)" = "$checked_main" || { echo "::error::Main advanced after checkout; retry reconciliation, never restore an old code tree."; exit 1; }
+
       - name: Download preview artifact
+        if: steps.reservation.outputs.allowed == 'true'
         uses: actions/download-artifact@v4
         with:
           github-token: ${{ github.token }}
@@ -102,15 +135,20 @@ jobs:
           path: ${{ runner.temp }}/preview-artifact
 
       - name: Promote allowlisted data files
+        if: steps.reservation.outputs.allowed == 'true'
         env:
+          PROMOTION_RESULT_PATH: ${{ runner.temp }}/promotion-result.json
           ARTIFACT_DIR: ${{ runner.temp }}/preview-artifact
           ARTIFACT_NAME: ${{ steps.preview.outputs.artifact_name }}
           ARTIFACT_RUN_ID: ${{ steps.preview.outputs.run_id }}
           SOURCE_WORKFLOW_NAME: ${{ steps.preview.outputs.workflow_name }}
           SOURCE_WORKFLOW_RUN_URL: ${{ steps.preview.outputs.source_run_url }}
-        run: node scripts/promote-preview-artifacts.mjs
+          SOURCE_RUN_CREATED_AT: ${{ matrix.source_run_created_at }}
+        run: |
+          BASE_COMMIT_SHA="$(git rev-parse HEAD)" node scripts/promote-preview-artifacts.mjs
 
       - name: Detect promoted data changes
+        if: steps.reservation.outputs.allowed == 'true'
         id: changes
         shell: bash
         run: |
@@ -127,6 +165,8 @@ jobs:
 
       - name: Commit promoted data
         id: commit
+        env:
+          GH_TOKEN: ${{ github.token }}
         if: steps.changes.outputs.changed == 'true'
         shell: bash
         run: |
@@ -135,30 +175,39 @@ jobs:
 
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          expected_sha=""
+          expected_sha="${{ steps.reservation.outputs.expected_sha }}"
+          actual_sha=""
           if git ls-remote --exit-code --heads origin "refs/heads/$branch" > "$RUNNER_TEMP/promotion-ref"; then
-            git fetch --no-tags --depth=1 origin "refs/heads/$branch:refs/remotes/origin/$branch"
-            expected_sha="$(git rev-parse "refs/remotes/origin/$branch")"
-            test "$expected_sha" = "$(cut -f1 "$RUNNER_TEMP/promotion-ref")" || { echo "::error::Promotion ref changed during fetch"; exit 1; }
+            actual_sha="$(cut -f1 "$RUNNER_TEMP/promotion-ref")"
           else
             ref_status=$?
             test "$ref_status" -eq 2 || exit "$ref_status"
           fi
-          git checkout -B "$branch"
-          git add data data/build
-
-          # Compare the complete proposed tree so a main-branch code change still
-          # refreshes the branch. Run metadata alone must not replace identical data.
+          test "$actual_sha" = "$expected_sha" || { echo "::error::Promotion reservation changed; no branch was replaced."; exit 1; }
           if [ -n "$expected_sha" ]; then
-            if git diff --cached --quiet "$expected_sha" -- . ':!data/build/preview-promotion-metadata.json'; then
-              echo "Promotion content is unchanged; keeping existing branch commit $expected_sha."
-              echo "branch=$branch" >> "$GITHUB_OUTPUT"
-              exit 0
-            else
-              diff_status=$?
-              test "$diff_status" -eq 1 || exit "$diff_status"
+            git fetch --no-tags origin "refs/heads/$branch:refs/remotes/origin/$branch"
+            test "$expected_sha" = "$(git rev-parse "refs/remotes/origin/$branch")" || { echo "::error::Promotion ref changed during fetch"; exit 1; }
+            if ! git merge-base --is-ancestor "$expected_sha" HEAD; then
+              released_sha="${{ steps.reservation.outputs.released_sha }}"
+              test -n "$released_sha" && test "$released_sha" = "$expected_sha" || { echo "::error::Unmerged owner branch is reserved; refusing overwrite."; exit 1; }
             fi
           fi
+          # A second read catches a review opened after the planner. Neither an
+          # existing PR nor its owner branch is ever edited by this job.
+          heads="$(gh pr list --base main --state open --json headRefName --jq '.[].headRefName')"
+          case "$artifact_name" in
+            city-events-preview) reserved_pattern='^codex/promote-city-events-preview$' ;;
+            *) reserved_pattern='^codex/promote-(source-expansion|social-source)-preview$' ;;
+          esac
+          if printf '%s\n' "$heads" | grep -Eq "$reserved_pattern"; then
+            echo "::error::An active review reserves this lane or its overlapping files."
+            exit 1
+          fi
+          checked_main="$(git rev-parse HEAD)"
+          remote_main="$(git ls-remote --exit-code --heads origin refs/heads/main | cut -f1)"
+          test "$checked_main" = "$remote_main" || { echo "::error::Main advanced before push; no branch was replaced."; exit 1; }
+          git checkout -B "$branch"
+          git add data data/build
 
           git commit -m "Promote ${artifact_name} data preview"
           git push --force-with-lease="refs/heads/$branch:$expected_sha" origin "HEAD:refs/heads/$branch"
@@ -197,16 +246,12 @@ jobs:
           if ! existing_pr="$(gh pr list --head "$branch" --base main --state open --json number --jq '.[0].number // empty' 2>"$RUNNER_TEMP/pr-list-error.log")"; then
             pr_error="$(cat "$RUNNER_TEMP/pr-list-error.log")"
           elif [ -n "$existing_pr" ]; then
-            if gh pr edit "$existing_pr" --title "$title" --body-file "$pr_body" 2>"$RUNNER_TEMP/pr-edit-error.log"; then
-              if ! pr_url="$(gh pr view "$existing_pr" --json url --jq '.url' 2>"$RUNNER_TEMP/pr-view-error.log")"; then
-                pr_error="$(cat "$RUNNER_TEMP/pr-view-error.log")"
-                pr_url=""
-              fi
-            else
-              pr_error="$(cat "$RUNNER_TEMP/pr-edit-error.log")"
+            if ! pr_url="$(gh pr view "$existing_pr" --json url --jq '.url' 2>"$RUNNER_TEMP/pr-view-error.log")"; then
+              pr_error="$(cat "$RUNNER_TEMP/pr-view-error.log")"
+              pr_url=""
             fi
           else
-            if gh pr create --base main --head "$branch" --title "$title" --body-file "$pr_body" >"$RUNNER_TEMP/pr-url.txt" 2>"$RUNNER_TEMP/pr-create-error.log"; then
+            if gh pr create --draft --base main --head "$branch" --title "$title" --body-file "$pr_body" >"$RUNNER_TEMP/pr-url.txt" 2>"$RUNNER_TEMP/pr-create-error.log"; then
               pr_url="$(cat "$RUNNER_TEMP/pr-url.txt")"
               existing_pr="${pr_url##*/}"
             else
@@ -233,7 +278,8 @@ jobs:
               echo ""
               echo "Review the branch and open a draft PR using existing repository access: ${compare_url}"
               echo ""
-              echo "After a PR exists, run Promote Preview Artifacts again with source run \`${artifact_run_id}\` and artifact \`${artifact_name}\`."
+              echo "Exact blocker: ${pr_error}"
+              echo "This branch now reserves the lane. Open/review its PR using existing access, then run Quality Gate for its exact head. Automatic reconciliation will not retry PR creation or overwrite the reservation."
             } >> "$GITHUB_STEP_SUMMARY"
             echo "number=" >> "$GITHUB_OUTPUT"
             echo "url=" >> "$GITHUB_OUTPUT"
@@ -276,3 +322,12 @@ jobs:
         run: |
           echo "::error::Promoted data is available on the branch, but no promotion PR was confirmed. Quality Gate was skipped. Review and open a draft PR: ${{ steps.pull-request.outputs.compare_url }}"
           exit 1
+
+      - name: Preserve promotion attempt receipt
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: promotion-attempt-receipt-${{ matrix.artifact_name }}
+          path: ${{ runner.temp }}/promotion-result.json
+          if-no-files-found: warn
+          retention-days: 30

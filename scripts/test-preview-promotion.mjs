@@ -31,6 +31,14 @@ try {
   assert.ok(!existsSync(join(destination, 'docs/thumbnail-coverage-attack-plan.md')));
   assert.equal(readFileSync(join(destination, 'data/official-site-signals.js'), 'utf8'), 'fixture:data/official-site-signals.js\n');
   assertions += 6;
+  const laneReceipt = join(destination, 'data/build/promotion-receipts/source-expansion-preview.json');
+  const firstReceipt = readFileSync(laneReceipt, 'utf8');
+  assert.equal(JSON.parse(firstReceipt).reviewedAt, null);
+  assert.equal(JSON.parse(firstReceipt).publishedAt, null);
+  result = promote(); assert.equal(result.status, 0, result.stderr);
+  assert.equal(readFileSync(laneReceipt, 'utf8'), firstReceipt);
+  assert.equal(readFileSync(join(destination, 'data/build/preview-promotion-metadata.json'), 'utf8'), JSON.stringify(metadata, null, 2) + '\n');
+  assertions += 5;
   put(join(artifact, 'unexpected.txt'), 'reject');
   result = promote(); assert.notEqual(result.status, 0); assert.match(result.stderr, /unexpected files/); assertions += 2;
   rmSync(join(artifact, 'unexpected.txt'));
@@ -53,6 +61,8 @@ try {
     'steps.preview.outputs.artifact_name': 'city-events-preview',
     'steps.preview.outputs.run_id': '12345',
     'steps.preview.outputs.source_run_url': 'https://github.com/JeremyHennessy/HalifaxSourced/actions/runs/12345',
+    'steps.reservation.outputs.expected_sha': '',
+    'steps.reservation.outputs.released_sha': '',
     'steps.commit.outputs.branch': 'codex/promote-city-events-preview'
   };
   const shellFor = (name, extra = {}) => step(name).split('        run: |\n')[1]
@@ -71,41 +81,40 @@ try {
   const realGit = execFileSync('which', ['git'], { encoding: 'utf8' }).trim();
   const shim = join(scratch, 'bin', 'git');
   put(shim, `#!/bin/bash\nif [ "$1" = push ] && [ -n "$RACE_SHA" ]; then\n  "${realGit}" --git-dir="$RACE_REMOTE" update-ref "${branch}" "$RACE_SHA"\nfi\nexec "${realGit}" "$@"\n`); chmodSync(shim, 0o755);
-  const run = (label, extra = {}, dataLabel = label) => {
+  const commitGh = join(scratch, 'commit-bin', 'gh');
+  put(commitGh, '#!/bin/bash\nprintf \"%s\\n\" \"$ACTIVE_HEADS\"\n'); chmodSync(commitGh, 0o755);
+  const run = (label, extra = {}, dataLabel = label, expectedSha = '') => {
     const cwd = join(scratch, label);
     git(scratch, 'clone', '--depth=1', '--branch=main', `file://${remote}`, cwd);
     put(join(cwd, 'data/change.json'), JSON.stringify({ label: dataLabel }));
     put(join(cwd, 'data/build/preview-promotion-metadata.json'), JSON.stringify({ artifactRunId: label }));
-    const result = spawnSync('bash', ['-e', '-o', 'pipefail', '-c', shell], {
-      cwd, encoding: 'utf8', env: { ...process.env, RUNNER_TEMP: scratch, GITHUB_OUTPUT: join(scratch, 'outputs'), ...extra }
+    const result = spawnSync('bash', ['-e', '-o', 'pipefail', '-c', shellFor('Commit promoted data', { 'steps.reservation.outputs.expected_sha': expectedSha })], {
+      cwd, encoding: 'utf8', env: { ...process.env, RUNNER_TEMP: scratch, GITHUB_OUTPUT: join(scratch, 'outputs'), PATH: dirname(commitGh) + ':' + process.env.PATH, ...extra }
     });
     return { ...result, cwd };
   };
   let pushed = run('initial'); assert.equal(pushed.status, 0, pushed.stderr); assertions++;
   const first = git(scratch, '--git-dir=' + remote, 'rev-parse', branch);
-  pushed = run('existing'); assert.equal(pushed.status, 0, pushed.stderr);
-  const existing = git(scratch, '--git-dir=' + remote, 'rev-parse', branch);
-  assert.notEqual(existing, first); assertions += 2;
-  pushed = run('same-data', {}, 'existing');
-  assert.equal(pushed.status, 0, pushed.stderr);
-  assert.equal(git(scratch, '--git-dir=' + remote, 'rev-parse', branch), existing);
-  assert.match(pushed.stdout, /keeping existing branch commit/);
-  assert.equal(git(scratch, '--git-dir=' + remote, 'show', `${branch}:data/build/preview-promotion-metadata.json`), '{"artifactRunId":"existing"}');
-  assertions += 4;
+  pushed = run('unplanned-replacement');
+  assert.notEqual(pushed.status, 0); assert.match(pushed.stdout, /reservation changed/); assertions += 2;
+  pushed = run('unmerged-owner', {}, 'other', first);
+  assert.notEqual(pushed.status, 0); assert.match(pushed.stdout, /Unmerged owner branch is reserved/);
+  assert.equal(git(scratch, '--git-dir=' + remote, 'rev-parse', branch), first); assertions += 3;
 
-  // Identical preview data must not preserve stale code when main has advanced.
-  put(join(seed, 'app.js'), '// main code update\n'); git(seed, 'add', '.'); git(seed, 'commit', '-m', 'main code update'); git(seed, 'push', 'origin', 'main');
-  pushed = run('main-changed', {}, 'existing');
+  // Only a branch already accepted into main can be safely reused.
+  git(seed, 'fetch', 'origin', branch); git(seed, 'merge', '--ff-only', 'FETCH_HEAD'); git(seed, 'push', 'origin', 'main');
+  pushed = run('active-review', { ACTIVE_HEADS: 'codex/promote-city-events-preview' }, 'other', first);
+  assert.notEqual(pushed.status, 0); assert.match(pushed.stdout, /active review reserves/); assertions += 2;
+  pushed = run('merged-branch', {}, 'new-data', first);
   assert.equal(pushed.status, 0, pushed.stderr);
-  assert.notEqual(git(scratch, '--git-dir=' + remote, 'rev-parse', branch), existing);
-  assert.equal(git(scratch, '--git-dir=' + remote, 'show', `${branch}:app.js`), '// main code update');
-  assertions += 3;
+  const accepted = git(scratch, '--git-dir=' + remote, 'rev-parse', branch);
+  assert.notEqual(accepted, first); assertions += 2;
+  git(seed, 'fetch', 'origin', branch); git(seed, 'merge', '--ff-only', 'FETCH_HEAD'); git(seed, 'push', 'origin', 'main');
   put(join(seed, 'data/racer.json'), '{}'); git(seed, 'add', '.'); git(seed, 'commit', '-m', 'competing writer'); git(seed, 'push', 'origin', 'HEAD:refs/heads/race-object');
   const raceSha = git(seed, 'rev-parse', 'HEAD');
-  pushed = run('race', { PATH: dirname(shim) + ':' + process.env.PATH, RACE_REMOTE: remote, RACE_SHA: raceSha });
+  pushed = run('race', { PATH: dirname(shim) + ':' + dirname(commitGh) + ':' + process.env.PATH, RACE_REMOTE: remote, RACE_SHA: raceSha }, 'race-data', accepted);
   assert.notEqual(pushed.status, 0); assert.match(pushed.stderr, /stale info/);
   assert.equal(git(scratch, '--git-dir=' + remote, 'rev-parse', branch), raceSha); assertions += 3;
-  pushed = run('retry'); assert.equal(pushed.status, 0, pushed.stderr); assertions++;
 
   // Run the real PR and Quality Gate shell with a local gh stub. In particular,
   // invoke the gate shell even on a blocked PR to exercise its fail-closed guard,
@@ -153,8 +162,8 @@ esac
       const separator = line.indexOf('='); return [line.slice(0, separator), line.slice(separator + 1)];
     }));
     assert.equal(outputs.compare_url, compareUrl); assertions++;
-    const hasPr = scenario === 'existing-pr' || scenario === 'new-pr';
-    assert.equal(outputs.url, hasPr ? `https://github.com/JeremyHennessy/HalifaxSourced/pull/${scenario === 'existing-pr' ? 17 : 18}` : ''); assertions++;
+    const hasPr = ['existing-pr', 'new-pr', 'edit-fails'].includes(scenario);
+    assert.equal(outputs.url, hasPr ? `https://github.com/JeremyHennessy/HalifaxSourced/pull/${scenario === 'new-pr' ? 18 : 17}` : ''); assertions++;
     result = execute(shellFor('Run Quality Gate for promotion branch'), {
       PROMOTION_PR_URL: outputs.url,
       PROMOTION_BRANCH: values['steps.commit.outputs.branch']
@@ -165,7 +174,8 @@ esac
     assert.equal(dispatches.length, hasPr ? 1 : 0, `${scenario}: ${ghCalls}`); assertions++;
     if (hasPr) {
       assert.equal(dispatches[0].trim(), 'workflow run Quality Gate --ref codex/promote-city-events-preview');
-      assert.ok(ghCalls.includes(scenario === 'existing-pr' ? 'pr edit 17 ' : 'pr create '));
+      assert.ok(ghCalls.includes(scenario === 'new-pr' ? 'pr create --draft ' : 'pr view 17 '));
+      assert.ok(!ghCalls.includes('pr edit '));
       assertions += 2;
     } else {
       const report = readFileSync(summary, 'utf8');
@@ -177,5 +187,5 @@ esac
       assert.ok(result.stdout.includes(compareUrl)); assertions += 5;
     }
   }
-  console.log(`Preview promotion: ${assertions} assertions passed (producer contract, review-only isolation, malformed artifacts, idempotent and leased branch updates, blocked/existing/new PR dispatch guards).`);
+  console.log(`Preview promotion: ${assertions} assertions passed (producer contract, review-only isolation, malformed artifacts, reserved and leased branch updates, blocked/existing/new PR dispatch guards).`);
 } finally { rmSync(scratch, { recursive: true, force: true }); }

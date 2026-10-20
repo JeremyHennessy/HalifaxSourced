@@ -1,6 +1,9 @@
 "use strict";
 const structuredPlaceFactsPayload = window.HALIFAX_STRUCTURED_PLACE_FACTS ?? null;
-const structuredPlaceFactRecords = Array.isArray(structuredPlaceFactsPayload?.records) ? structuredPlaceFactsPayload.records : [];
+const structuredPlaceFactRecords = HalifaxRestaurantCorrections.applyFactFieldRejections(
+  Array.isArray(structuredPlaceFactsPayload?.records) ? structuredPlaceFactsPayload.records : [],
+  reviewedRestaurantCorrections
+);
 const structuredFactsByRestaurant = new Map(structuredPlaceFactRecords.map((record) => [record.restaurantId, record]));
 
 function mergeActionLinks(existing = [], additions = [], labelFn = (item) => item.title || item.provider || "Official action") {

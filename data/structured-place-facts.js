@@ -24,7 +24,7 @@ window.HALIFAX_STRUCTURED_PLACE_FACTS = {
     "hours": 13,
     "phone": 78,
     "email": 10,
-    "address": 31,
+    "address": 30,
     "features": 132,
     "menus": 144,
     "reservations": 56,
@@ -10066,11 +10066,19 @@ window.HALIFAX_STRUCTURED_PLACE_FACTS = {
       "hours": null,
       "phone": null,
       "email": "info@sajhouse.ca",
-      "address": "433 World Trade Center, Gibraltar, GI",
+      "address": null,
       "features": [],
       "menus": [],
       "reservations": [],
-      "ordering": []
+      "ordering": [],
+      "rejectedFactFields": [
+        {
+          "field": "address",
+          "reviewId": "saj-house-foreign-address-20261020",
+          "reason": "The imported Gibraltar address is not location evidence for this Halifax entity. Hold source-derived addresses until an explicit location review resolves the conflict; preserve the existing local OSM address without treating it as a fresh owner verification.",
+          "reviewedAt": "2026-10-20"
+        }
+      ]
     },
     {
       "restaurantId": "osm-node-8600605850-barburrito",
@@ -12203,5 +12211,29 @@ window.HALIFAX_STRUCTURED_PLACE_FACTS = {
       ],
       "ordering": []
     }
-  ]
+  ],
+  "sourceHistory": [
+    {
+      "record": {
+        "restaurantId": "osm-node-8443747544-saj-house",
+        "name": "Saj House",
+        "sourceUrl": "https://www.sajhouse.ca/",
+        "observedAt": "2026-09-04T13:24:31.147Z",
+        "lastVerifiedAt": "2026-09-04T13:24:31.147Z",
+        "sourceKind": "official_website_structured_facts",
+        "reviewState": "verified_source",
+        "hours": null,
+        "phone": null,
+        "email": "info@sajhouse.ca",
+        "address": "433 World Trade Center, Gibraltar, GI",
+        "features": [],
+        "menus": [],
+        "reservations": [],
+        "ordering": []
+      },
+      "reason": "reviewed_field_rejection",
+      "retainedAt": "2026-10-20"
+    }
+  ],
+  "reviewedFieldRejectionsAt": "2026-10-20"
 };

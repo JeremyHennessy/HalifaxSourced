@@ -1,11 +1,19 @@
 import assert from 'node:assert/strict';
-import { readFile } from 'node:fs/promises';
+import { copyFile, mkdir, mkdtemp, readFile, rm, writeFile } from 'node:fs/promises';
+import { tmpdir } from 'node:os';
+import { join } from 'node:path';
+import { spawnSync } from 'node:child_process';
 import vm from 'node:vm';
 import integrity from '../source-integrity.js';
 import { localRestaurantPolicyDecision } from './lib/local-restaurant-policy.mjs';
 import { reviewedCorrections, applyReviewedCorrections } from './lib/reviewed-corrections.mjs';
 const root = new URL('../', import.meta.url);
-const context = vm.createContext({window:{}, document:{querySelector:()=>({}),querySelectorAll:()=>[]},localStorage:{getItem:()=>null,setItem:()=>{}}, console, URL, Date, Intl, Set, Map});
+const FIXTURE_NOW = '2026-10-20T16:00:00.000Z';
+class FixtureDate extends Date {
+  constructor(...args) { super(...(args.length ? args : [FIXTURE_NOW])); }
+  static now() { return Date.parse(FIXTURE_NOW); }
+}
+const context = vm.createContext({window:{}, document:{querySelector:()=>({}),querySelectorAll:()=>[]},localStorage:{getItem:()=>null,setItem:()=>{}}, console, URL, Date:FixtureDate, Intl, Set, Map});
 const html = await readFile(new URL('index.html',root),'utf8');
 for (const match of html.matchAll(/<script src="\.\/([^"?]+)[^\"]*"><\/script>/g)) {
   const file = match[1]; if (file.startsWith('vendor/')) continue;
@@ -122,8 +130,31 @@ assert(!integrity.currentPost(post,Date.parse('2026-06-25T12:00:00Z')),'Spring c
 assert(integrity.currentPost({...post,title:'Spring Garden restaurant update'},Date.parse('2026-06-25T12:00:00Z')),'A neighbourhood name is not a season');
 assert(!integrity.currentPost({...post,title:'Menu update',expiresAt:'2026-06-05'},Date.parse('2026-06-10')));
 assert(!integrity.currentPost({...post,publishedAt:'9897-01-01'},Date.parse('2026-10-19')));
-const specials = JSON.parse(await readFile(new URL('data/build/structured-specials.json',root)));
-for (const special of specials.records) if (special.validTo && Date.parse(special.validTo) < Date.now()) assert.equal(special.status,'expired',special.title);
+// Run the real builder against current reviewed inputs, but in a temporary
+// fixture with a fixed clock. A committed generated snapshot may predate the
+// source corrections, and wall-clock passage must not change this regression.
+const fixture = await mkdtemp(join(tmpdir(), 'halifax-reviewed-specials-'));
+let specials;
+try {
+  await mkdir(join(fixture, 'scripts'), { recursive: true });
+  await mkdir(join(fixture, 'data/build'), { recursive: true });
+  for (const file of ['scripts/build-structured-specials.mjs', 'data/build/catalog.json', 'data/build/first-party-sources.json', 'data/build/verified-source-pages.json', 'data/reviewed-structured-specials.json', 'data/build/public-special-source-leads.json', 'data/discovery-overrides.json']) {
+    await copyFile(new URL(file, root), join(fixture, file));
+  }
+  await writeFile(join(fixture, 'runner.mjs'), `
+    const RealDate=Date;
+    globalThis.Date=class extends RealDate {
+      constructor(...args){super(...(args.length?args:[${JSON.stringify(FIXTURE_NOW)}]));}
+      static now(){return RealDate.parse(${JSON.stringify(FIXTURE_NOW)});}
+    };
+    await import('./scripts/build-structured-specials.mjs');
+  `);
+  const result = spawnSync(process.execPath, [join(fixture, 'runner.mjs')], { cwd: fixture, encoding: 'utf8', timeout: 10000 });
+  assert.equal(result.status, 0, result.stderr);
+  specials = JSON.parse(await readFile(join(fixture, 'data/build/structured-specials.json')));
+  assert.equal(specials.generatedAt, FIXTURE_NOW);
+} finally { await rm(fixture, { recursive: true, force: true }); }
+for (const special of specials.records) if (special.validTo && Date.parse(special.validTo) < FixtureDate.now()) assert.equal(special.status,'expired',special.title);
 console.log(`Reviewed correction regression passed: ${app.restaurants.length} exact browser/export identities, ${reviewedCorrections.records.length} field/status corrections, ${reviewedCorrections.aliases.length} evidence-preserving merges, seasonal/future expiry.`);
 
 assert(localRestaurantPolicyDecision({name:'HEAL Wellness - Bayers Lake',website:'https://healwellness.ca/locations/'}).excluded,'National franchise must follow existing local-only policy');

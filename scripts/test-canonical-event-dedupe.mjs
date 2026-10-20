@@ -7,7 +7,7 @@ assert.equal(events.length,4);assert.equal(events[0].sourceUrls.length,2);assert
 assert.deepEqual(dedupeCanonicalEvents(events),events);
 console.log('Canonical event regression passed: aliases deduplicate, provenance and distinct events survive.');
 
-for (const [short, full] of [['Cape Breton', 'Cape Breton Eagles'], ['Charlottetown', 'Charlottetown Islanders'], ['Saint John', 'Saint John Sea Dogs'], ['Quebec', 'Québec Remparts'], ['Moncton', 'Moncton Wildcats'], ['Moncton', 'Moncton Wildcats (Home Opener)'], ["Val-d'Or", "Val-d’Or Foreurs"], ['Shawinigan', 'Shawinigan Cataractes'], ['Newfoundland', 'Newfoundland Regiment'], ['Blainville-Boisbriand', 'Blainville-Boisbriand Armada'], ['Gatineau', 'Gatineau Olympiques']]) {
+for (const [short, full] of [['Baie-Comeau', 'Baie-Comeau Drakkar'], ['Chicoutimi', 'Chicoutimi Sagueneens'], ['Rimouski', 'Rimouski Oceanic'], ['Sherbrooke', 'Sherbrooke Phoenix'], ['Victoriaville', 'Victoriaville Tigres'], ['Cape Breton', 'Cape Breton Eagles'], ['Charlottetown', 'Charlottetown Islanders'], ['Saint John', 'Saint John Sea Dogs'], ['Quebec', 'Québec Remparts'], ['Moncton', 'Moncton Wildcats'], ['Moncton', 'Moncton Wildcats (Home Opener)'], ["Val-d'Or", "Val-d’Or Foreurs"], ['Shawinigan', 'Shawinigan Cataractes'], ['Newfoundland', 'Newfoundland Regiment'], ['Blainville-Boisbriand', 'Blainville-Boisbriand Armada'], ['Gatineau', 'Gatineau Olympiques']]) {
   const first = {...game, title:`Halifax Mooseheads vs ${short}`};
   const second = {...duplicate, title:`Halifax Mooseheads vs ${full}`};
   const result = dedupeCanonicalEvents([first, second]);

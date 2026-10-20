@@ -16,6 +16,11 @@ jobs:
   data-integrity:
     runs-on: ubuntu-latest
     timeout-minutes: 45
+    env:
+      # Collection belongs to preview workflows. Release builds use accepted inputs.
+      THUMBNAIL_DISCOVERY_FETCH: "0"
+      THUMBNAIL_IMAGE_PROBE: "0"
+      THUMBNAIL_PROMOTION_APPLY: "0"
     steps:
       - name: Checkout
         uses: actions/checkout@v6
@@ -43,6 +48,9 @@ jobs:
       - name: Run network-disabled source verifier startup regression
         run: node scripts/test-source-verifier-startup.mjs
 
+      - name: Test fixed-snapshot release isolation
+        run: node scripts/test-release-source-isolation.mjs
+
       - name: Run source quarantine, local media and refresh regressions
         run: |
           node scripts/test-source-integrity.mjs
@@ -59,12 +67,10 @@ jobs:
         run: |
           node scripts/export-catalog.mjs
 
-      - name: Build public happy-hour source leads
-        env:
-          PUBLIC_SPECIAL_CAMPAIGN_LIMIT: 80
-          PUBLIC_SPECIAL_CAMPAIGN_CRAWL_DELAY_MS: 250
-          PUBLIC_SPECIAL_LEAD_TIMEOUT_MS: 10000
-        run: node scripts/import-public-special-source-leads.mjs
+      - name: Validate accepted public-special and patio snapshots
+        run: |
+          node scripts/check-public-special-source-leads.mjs
+          node scripts/check-patio-directory-facts.mjs
 
       - name: Build deterministic structured specials
         run: node scripts/build-structured-specials.mjs
@@ -72,15 +78,18 @@ jobs:
       - name: Test reviewed identities and expiry
         run: node scripts/test-reviewed-corrections.mjs
 
-      - name: Build patio directory facts
-        run: node scripts/import-patio-directory-facts.mjs
+      - name: Test update consistency and reviewed fact batch
+        run: |
+          node scripts/test-update-consistency.mjs
+          node scripts/test-promotion-semantic-noop.mjs
+          node scripts/test-preview-coordinator.mjs
+          node scripts/test-reviewed-fact-batch.mjs
 
       - name: Test source name decoding
         run: node scripts/test-dartmouth-directory-names.mjs
 
-      - name: Refresh review-directory discovery candidates
+      - name: Resolve accepted directory candidates without collection
         run: |
-          node scripts/import-review-directory-restaurants.mjs
           node scripts/resolve-place-candidates.mjs
           node scripts/check-place-source-resolution.mjs
 
@@ -195,6 +204,7 @@ jobs:
           node scripts/build-content-quality-report.mjs
           node scripts/report-missed-local-restaurants.mjs
           node scripts/build-deployment-metadata.mjs
+          node scripts/build-update-ledger.mjs
 
       - name: Build SQLite database artifacts
         run: python3 scripts/build-sqlite-db.py
@@ -276,6 +286,7 @@ jobs:
             docs/content-quality-report.md
             artifacts/missed-local-restaurant-candidates.json
             data/build/deployment-metadata.json
+            data/build/update-ledger.json
           if-no-files-found: ignore
 
   ui-verification:

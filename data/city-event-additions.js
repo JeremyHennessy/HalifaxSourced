@@ -2,7 +2,7 @@
 
 window.HALIFAX_CITY_EVENT_ADDITIONS = JSON.parse(`{
   "version": 1,
-  "generatedAt": "2026-10-19T21:28:09.893Z",
+  "generatedAt": "2026-10-20T15:21:54.246Z",
   "policy": "Curated city-event additions are source-backed records used when current official or local calendars have not yet been promoted into the primary city-events build.",
   "sources": [
     {
@@ -46,6 +46,36 @@ window.HALIFAX_CITY_EVENT_ADDITIONS = JSON.parse(`{
       "sourceName": "Discover Halifax",
       "sourceUrl": "https://discoverhalifaxns.com/events/",
       "authority": "local_tourism_directory"
+    },
+    {
+      "sourceId": "symphony-nova-scotia-reviewed-20261020",
+      "sourceName": "Symphony Nova Scotia",
+      "sourceUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/rebecca-cohn-auditorium/alex-cuba-symphony-nova-scotia/",
+      "authority": "official_primary"
+    },
+    {
+      "sourceId": "craft-nova-scotia-2026",
+      "sourceName": "Craft Nova Scotia",
+      "sourceUrl": "https://craftnovascotia.ca/whats-on/designer-craft-show-2026",
+      "authority": "official_primary"
+    },
+    {
+      "sourceId": "halifax-wine-festival-2026",
+      "sourceName": "Halifax International Wine Festival",
+      "sourceUrl": "https://www.hfxwinefest.ca/",
+      "authority": "official_primary"
+    },
+    {
+      "sourceId": "tourism-ns-events",
+      "sourceName": "Tourism Nova Scotia Events",
+      "sourceUrl": "https://novascotia.com/explore-nova-scotia/events/?region=29",
+      "authority": "official_tourism_calendar"
+    },
+    {
+      "sourceId": "symphony-nova-scotia",
+      "sourceName": "Symphony Nova Scotia",
+      "sourceUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
+      "authority": "official_primary"
     }
   ],
   "events": [
@@ -348,6 +378,188 @@ window.HALIFAX_CITY_EVENT_ADDITIONS = JSON.parse(`{
             "October 27, 2026, 6:30–7:30pm Halifax local time",
             "Kathleen Martin, Canadian Sea Turtle Network, Tuesday Night Talk",
             "Free admission 4–8pm on Tuesday"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "symphony-nova-scotia-648004b43df2a1b3",
+      "title": "Alex Cuba & Symphony Nova Scotia",
+      "startAt": "2026-10-23T22:30:00.000Z",
+      "endAt": null,
+      "allDay": false,
+      "venueName": "Rebecca Cohn",
+      "address": null,
+      "city": "Halifax",
+      "categories": [
+        "Music",
+        "Arts"
+      ],
+      "eventUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/rebecca-cohn-auditorium/alex-cuba-symphony-nova-scotia/",
+      "ticketUrl": null,
+      "price": null,
+      "sourceId": "symphony-nova-scotia-reviewed-20261020",
+      "sourceName": "Symphony Nova Scotia",
+      "sourceKind": "official_event_page",
+      "sourceUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/rebecca-cohn-auditorium/alex-cuba-symphony-nova-scotia/",
+      "observedAt": "2026-10-20T15:17:37.656Z",
+      "reviewState": "source_observed",
+      "organizerId": "symphony-nova-scotia",
+      "organizerName": "Symphony Nova Scotia",
+      "previousObservation": {
+        "sourceId": "symphony-nova-scotia",
+        "sourceName": "Symphony Nova Scotia",
+        "sourceUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
+        "observedAt": "2026-09-11T14:44:32.940Z"
+      },
+      "alternateSources": [
+        {
+          "sourceId": "symphony-nova-scotia",
+          "sourceName": "Symphony Nova Scotia",
+          "sourceUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/"
+        }
+      ],
+      "sourceEvidence": [
+        {
+          "sourceId": "symphony-nova-scotia-reviewed-20261020",
+          "sourceName": "Symphony Nova Scotia",
+          "sourceUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/rebecca-cohn-auditorium/alex-cuba-symphony-nova-scotia/",
+          "basis": "official_primary",
+          "observedAt": "2026-10-20T15:17:37.656Z",
+          "httpStatus": 200,
+          "observedFacts": [
+            "October 23, 2026, 7:30 pm America/Halifax (UTC-03:00); no end time published.",
+            "Alex Cuba & Symphony Nova Scotia at Rebecca Cohn, Halifax."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://novascotia.com/event/craft-nova-scotia-designer-craft-show/#event",
+      "title": "Craft Nova Scotia Designer Craft Show",
+      "startAt": "2026-11-13T16:00:00.000Z",
+      "endAt": "2026-11-15T20:00:00.000Z",
+      "allDay": false,
+      "venueName": "Pier 22 Pavilion",
+      "address": "1031 Marginal Road, Halifax, NS B3H 4P7",
+      "city": "Halifax",
+      "categories": [
+        "Arts",
+        "Markets",
+        "Community",
+        "Family"
+      ],
+      "price": "CA$5 daily admission; children 12 and under free",
+      "ticketUrl": null,
+      "eventUrl": "https://craftnovascotia.ca/whats-on/designer-craft-show-2026",
+      "sourceUrl": "https://craftnovascotia.ca/whats-on/designer-craft-show-2026",
+      "sourceId": "craft-nova-scotia-2026",
+      "sourceName": "Craft Nova Scotia",
+      "sourceKind": "official_event_page",
+      "observedAt": "2026-10-20T15:20:50.775Z",
+      "reviewState": "source_observed",
+      "alternateSources": [
+        {
+          "sourceId": "tourism-ns-events",
+          "sourceName": "Tourism Nova Scotia Events",
+          "sourceUrl": "https://novascotia.com/event/craft-nova-scotia-designer-craft-show/"
+        }
+      ],
+      "previousObservation": {
+        "sourceId": "tourism-ns-events",
+        "sourceName": "Tourism Nova Scotia Events",
+        "sourceUrl": "https://novascotia.com/event/craft-nova-scotia-designer-craft-show/",
+        "observedAt": "2026-09-11T14:44:24.142Z"
+      },
+      "sourceEvidence": [
+        {
+          "sourceId": "craft-nova-scotia-2026",
+          "sourceName": "Craft Nova Scotia",
+          "sourceUrl": "https://craftnovascotia.ca/whats-on/designer-craft-show-2026",
+          "basis": "official_primary",
+          "observedAt": "2026-10-20T15:20:50.775Z",
+          "httpStatus": 200,
+          "contentSha256": "df7c43b2813d36462d3a9a734cc73b9842452e48b3c293eaab451fdabca3aa8f",
+          "observedFacts": [
+            "November 13–15, 2026 at Pavilion 22, Halifax Seaport, 1031 Marginal Road, Halifax.",
+            "Daily hours in America/Halifax (UTC-04:00): November 13 noon–7 pm; November 14 10 am–5 pm; November 15 10 am–4 pm.",
+            "Daily admission CA$5; children 12 and under free."
+          ]
+        },
+        {
+          "sourceId": "tourism-ns-events",
+          "sourceName": "Tourism Nova Scotia Events",
+          "sourceUrl": "https://novascotia.com/event/craft-nova-scotia-designer-craft-show/",
+          "basis": "tourism_directory_corroboration",
+          "observedAt": "2026-10-20T15:17:34.173Z",
+          "httpStatus": 200,
+          "observedFacts": [
+            "Current official tourism listing confirms the 2026 event dates and Halifax venue."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://novascotia.com/event/halifax-international-wine-festival/#event",
+      "title": "Halifax International Wine Festival",
+      "startAt": "2026-11-28T18:00:00.000Z",
+      "endAt": "2026-11-29T02:00:00.000Z",
+      "allDay": false,
+      "venueName": "Halifax Convention Centre",
+      "address": "1650 Argyle Street, Halifax, NS, B3J 0E6, Canada, Halifax, NS, CA",
+      "city": "Halifax",
+      "categories": [
+        "Food & Drink",
+        "Festivals"
+      ],
+      "price": null,
+      "ticketUrl": "https://www.showpass.com/2026-halifax-international-wine-fest/",
+      "eventUrl": "https://www.hfxwinefest.ca/",
+      "sourceUrl": "https://www.hfxwinefest.ca/",
+      "sourceId": "halifax-wine-festival-2026",
+      "sourceName": "Halifax International Wine Festival",
+      "sourceKind": "official_event_page",
+      "observedAt": "2026-10-20T15:20:53.853Z",
+      "reviewState": "source_observed",
+      "alternateSources": [
+        {
+          "sourceId": "tourism-ns-events",
+          "sourceName": "Tourism Nova Scotia Events",
+          "sourceUrl": "https://novascotia.com/event/halifax-international-wine-festival/"
+        }
+      ],
+      "venueId": "halifax-convention-centre",
+      "neighbourhood": "Downtown",
+      "previousObservation": {
+        "sourceId": "tourism-ns-events",
+        "sourceName": "Tourism Nova Scotia Events",
+        "sourceUrl": "https://novascotia.com/event/halifax-international-wine-festival/",
+        "observedAt": "2026-09-11T14:44:24.136Z"
+      },
+      "sourceEvidence": [
+        {
+          "sourceId": "halifax-wine-festival-2026",
+          "sourceName": "Halifax International Wine Festival",
+          "sourceUrl": "https://www.hfxwinefest.ca/",
+          "basis": "official_primary",
+          "observedAt": "2026-10-20T15:20:53.853Z",
+          "httpStatus": 200,
+          "contentSha256": "9fec6b055824ee5b2f8b18102edce365b29bd1bc3106f19257c477a4fdb37863",
+          "observedFacts": [
+            "November 28, 2026 at Halifax Convention Centre.",
+            "Separate sessions in America/Halifax (UTC-04:00): afternoon VIP 2–5 pm and evening VIP 7–10 pm; general-admission sessions are 3–5 pm and 8–10 pm.",
+            "Current organizer ticket link points to Showpass for the 2026 event, not the historical 2025 registration page."
+          ]
+        },
+        {
+          "sourceId": "tourism-ns-events",
+          "sourceName": "Tourism Nova Scotia Events",
+          "sourceUrl": "https://novascotia.com/event/halifax-international-wine-festival/",
+          "basis": "tourism_directory_corroboration",
+          "observedAt": "2026-10-20T15:17:34.291Z",
+          "httpStatus": 200,
+          "observedFacts": [
+            "Current official tourism listing confirms the 2026 event dates and Halifax venue."
           ]
         }
       ]

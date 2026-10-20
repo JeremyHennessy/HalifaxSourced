@@ -2,6 +2,7 @@
 
 const ADMIN_STATUS_REPORT_FILES = {
   deployment: "data/build/deployment-metadata.json",
+  updateLedger: "data/build/update-ledger.json",
   preview: "data/build/preview-promotion-metadata.json",
   contentQuality: "data/build/content-quality-report.json",
   cityEvents: "data/build/city-events.json",
@@ -63,10 +64,12 @@ function loadAdminStatusReports() {
   if (adminStatusReportsPromise) return adminStatusReportsPromise;
   adminStatusReportsPromise = Promise.all([
     fetchAdminStatusJson(ADMIN_STATUS_REPORT_FILES.deployment),
-    fetchAdminStatusJson(ADMIN_STATUS_REPORT_FILES.preview)
-  ]).then(([deployment, preview]) => ({
+    fetchAdminStatusJson(ADMIN_STATUS_REPORT_FILES.preview),
+    fetchAdminStatusJson(ADMIN_STATUS_REPORT_FILES.updateLedger)
+  ]).then(([deployment, preview, updateLedger]) => ({
     deployment,
     preview,
+    updateLedger,
     quality: statusPayloadValue(() => contentQualityPayload(), window.HALIFAX_CONTENT_QUALITY_REPORT || {}),
     cityEvents: window.HALIFAX_CITY_EVENTS || {},
     thumbnails: statusPayloadValue(() => thumbnailCandidatesPayload(), window.HALIFAX_THUMBNAIL_CANDIDATES || {}),
@@ -238,6 +241,29 @@ function renderFailureExamples(reports) {
   }).join("")}</div>`;
 }
 
+function ledgerFreshnessNow(lane) {
+  const stamp = Date.parse(lane.oldestSuccessfulObservationAt || '');
+  const age = (Date.now() - stamp) / 3600000;
+  if (!Number.isFinite(age) || age < -1 || !(lane.targetHours > 0)) return 'unknown';
+  if (age > lane.targetHours * 2) return 'stale';
+  if (lane.unknownObservationCount || lane.freshness === 'unknown') return 'unknown';
+  if (age > lane.targetHours || lane.failures?.length || lane.freshness === 'warn') return 'warn';
+  return 'fresh';
+}
+function renderUpdateLedger(reports) {
+  const ledger = reports.updateLedger;
+  if (!ledger || ledger.__loadError) return `<section class="admin-status-block"><h2>Publication and observation ledger</h2><p>Ledger unavailable. Release age is not source freshness.</p></section>`;
+  if (ledger.sourceCommitSha !== reports.deployment?.sourceCommitSha) return `<section class="admin-status-block"><h2>Publication and observation ledger</h2><p>Release lineage mismatch. Do not treat these observations as verified for this release.</p></section>`;
+  const date = value => /^\d{4}-\d{2}-\d{2}$/.test(String(value || "")) ? `${value} (date only)` : value ? statusDateMeta(value).formatted : "Unknown / not recorded";
+  return `<section class="admin-status-block" data-update-ledger><h2>Publication and observation ledger</h2>
+    <p>${statusEscape(ledger.scope)}</p><p>Freshness ages with the current clock. Review timestamps are not inferred from a scrape or rebuild. “Included” means this served release, not the newest unpublished preview.</p>
+    <div class="admin-status-list">${(ledger.lanes || []).map(lane => `<article class="admin-status-row"><div>${statusPill(ledgerFreshnessNow(lane))}<strong>${statusEscape(lane.label)}</strong><span>Target ${statusNumber(lane.targetHours)} hours · ${statusNumber(lane.recordCount)} records</span><span>Last attempt: ${statusEscape(date(lane.lastAttemptAt))}</span><span>Latest successful observation: ${statusEscape(date(lane.lastSuccessfulObservationAt))}</span><span>Oldest successful observation: ${statusEscape(date(lane.oldestSuccessfulObservationAt))}</span><span>Reviewed: ${statusEscape(date(lane.reviewedAt))}</span><span>Published at: ${statusEscape(date(lane.publishedAt))}</span><span>Next due: ${statusEscape(date(lane.nextDueAt))}</span><span>${statusEscape(lane.publicationState)} · snapshot ${statusEscape(lane.semanticSha256?.slice(0,12))}</span>${(lane.sources || []).length ? `<details><summary>Per-source observations (${statusNumber(lane.sources.length)})</summary>${lane.sources.map(source=>`<p><strong>${statusEscape(source.id)}</strong> · ${statusEscape(source.status)} · ${statusEscape(ledgerFreshnessNow({...source,targetHours:lane.targetHours}))}<br>Attempt: ${statusEscape(date(source.lastAttemptAt))}<br>Successful observation: ${statusEscape(date(source.lastSuccessfulObservationAt))}</p>`).join("")}</details>` : ""}</div><a href="${statusEscape(statusSafeUrl(lane.workflowUrl))}" target="_blank" rel="noreferrer">Latest attempts / pending previews</a></article>`).join("")}</div>
+    <h3>Recorded review batches</h3><ul>${(ledger.reviewedBatches || []).map(batch=>`<li>${statusEscape(batch.id)} · ${statusEscape(date(batch.reviewedAt))} · ${statusEscape(batch.scope)}</li>`).join("")}</ul>
+    <h3>Prioritized publication queue</h3><p>${statusEscape(ledger.policy?.publicationCoordinator)}</p>
+    <div class="admin-status-list">${(ledger.queue || []).slice().sort((a,b)=>a.priority-b.priority).map(item=>`<article class="admin-status-row"><div><strong>${statusEscape(item.id)}</strong><span>${statusEscape(item.state)} · ${statusEscape(item.blocker)}</span><span>Resume when: ${statusEscape(item.retryWhen)}</span></div><a href="${statusEscape(statusSafeUrl(item.url))}" target="_blank" rel="noreferrer">Evidence / recovery</a></article>`).join("")}</div>
+  </section>`;
+}
+
 function renderAdminStatusMarkup(reports) {
   const metrics = adminStatusMetrics(reports);
   const deployment = reports.deployment || {};
@@ -272,8 +298,8 @@ function renderAdminStatusMarkup(reports) {
     </section>
     <section class="page-shell admin-status-panel" data-admin-status-panel>
       <div class="admin-status-summary" aria-label="Freshness status metrics">
-        ${statusMetricCard({ key: "deployed-data-age", label: "Deployed data age", value: metrics.deployedAge.label, detail: deployment.generatedAt ? `Generated ${metrics.deployedAge.formatted}` : "Deployment metadata missing", status: metrics.deployedAge.status, href: ADMIN_STATUS_REPORT_FILES.deployment })}
-        ${statusMetricCard({ key: "latest-preview-artifact-age", label: "Latest preview artifact age", value: metrics.previewAge.label, detail: preview.artifactRunId ? `${preview.artifactName || "preview"} run ${preview.artifactRunId}` : "No promoted preview metadata", status: metrics.previewAge.status, href: ADMIN_STATUS_REPORT_FILES.preview })}
+        ${statusMetricCard({ key: "deployed-data-age", label: "Release build age", value: metrics.deployedAge.label, detail: deployment.generatedAt ? `Generated ${metrics.deployedAge.formatted}` : "Deployment metadata missing", status: metrics.deployedAge.status, href: ADMIN_STATUS_REPORT_FILES.deployment })}
+        ${statusMetricCard({ key: "latest-preview-artifact-age", label: "Accepted preview preparation age", value: metrics.previewAge.label, detail: preview.artifactRunId ? `${preview.artifactName || "preview"} run ${preview.artifactRunId}` : "No promoted preview metadata", status: metrics.previewAge.status, href: ADMIN_STATUS_REPORT_FILES.preview })}
         ${statusMetricCard({ key: "source-failures", label: "Source failures", value: metrics.sourceFailures.toLocaleString(), detail: "Broken, restricted, transient, and adapter failures", status: metrics.sourceFailures ? "warn" : "fresh", href: "#admin/places" })}
         ${statusMetricCard({ key: "review-queue-count", label: "Review queue records", value: metrics.reviewQueueCount.toLocaleString(), detail: `${metrics.reviewRows.length.toLocaleString()} queue families`, status: metrics.reviewQueueCount ? "warn" : "fresh", href: "#admin/places" })}
       </div>
@@ -289,6 +315,7 @@ function renderAdminStatusMarkup(reports) {
           <a class="button tertiary" href="${ADMIN_STATUS_REPORT_FILES.cityEvents}" data-admin-report-link>City events</a>
         </div>
       </section>
+      ${renderUpdateLedger(reports)}
       <div class="admin-status-grid">
         <section class="admin-status-block" aria-label="Data product freshness">
           <div class="admin-section-heading"><div><h2>Data product ages</h2><p>${productRows.length.toLocaleString()} generated data products with report links.</p></div></div>

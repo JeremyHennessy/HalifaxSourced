@@ -10,6 +10,9 @@ function evidence(value) {
     .map(([key, item]) => [key, evidence(item)]));
   return value;
 }
+export function placeFactEvidenceKey(record) {
+  return JSON.stringify(evidence(record));
+}
 export function reconcilePlaceFacts({ previous, fresh, catalog, observations, checkedAt }) {
   const active = new Set(catalog.filter(place => !inactiveFactStatuses.has(place.operatingStatus)).map(place => place.id));
   const current = new Map(fresh.map(record => [record.restaurantId, record]));
@@ -29,7 +32,7 @@ export function reconcilePlaceFacts({ previous, fresh, catalog, observations, ch
       retainedRecords++;
       if (!attempts.has(id)) attempts.set(id, { restaurantId: id, state: 'not_attempted', reason: 'no_eligible_source_or_limit', checkedAt, attempted: false });
     } else {
-      const changed = JSON.stringify(evidence(record)) !== JSON.stringify(evidence(replacement));
+      const changed = placeFactEvidenceKey(record) !== placeFactEvidenceKey(replacement);
       attempts.get(id).state = changed ? 'changed' : 'unchanged';
       if (changed) remember(record, 'superseded_by_source_observation');
     }
