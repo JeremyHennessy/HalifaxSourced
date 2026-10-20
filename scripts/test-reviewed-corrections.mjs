@@ -16,6 +16,22 @@ const app = JSON.parse(vm.runInContext('JSON.stringify({restaurants,active:activ
 const catalog = JSON.parse(await readFile(new URL('data/build/catalog.json',root)));
 assert.deepEqual(app.restaurants.map(item=>item.id).sort(),catalog.restaurants.map(item=>item.id).sort(),'Browser and export must use the same exact identities');
 const active = new Set(app.active);
+const chanoeyId = 'chanoeys-pasta-dartmouth';
+for (const records of [app.restaurants, catalog.restaurants]) {
+  const matches = records.filter(record => record.id === chanoeyId);
+  assert.equal(matches.length, 1, 'One reviewed original Dartmouth location; no former-tenant merge');
+  const chanoey = matches[0];
+  assert.equal(chanoey.address, '41 Portland Street, Dartmouth, NS B2Y 1H1');
+  assert.equal(chanoey.phone, '902-405-2211');
+  assert.equal(chanoey.coordinates, null, 'Do not borrow former Subway coordinates');
+  assert.equal(chanoey.openingHours, 'Mo-Fr 11:00-20:00; Sa-Su 15:30-20:00');
+  assert.equal(chanoey.effectiveDatedHours.dateOverrides.length, 14);
+  assert.equal(chanoey.specials.length, 0, 'Do not turn a menu/cash offer into a verified promotion');
+  assert.equal(chanoey.events.length, 0, 'No invented reopening event');
+  assert(chanoey.sources.some(source => source.type === 'menu' && source.url === 'https://www.chanoeyspasta.com/menu'));
+}
+assert(active.has(chanoeyId), 'Time-limited closure is not permanent archive');
+assert(app.restaurants.find(record => record.id === chanoeyId).menuLinks.some(link => link.url === 'https://www.chanoeyspasta.com/menu'));
 const evansId = 'evans-fresh-seafoods-dartmouth';
 for (const records of [app.restaurants, catalog.restaurants]) {
   const matches = records.filter(record => record.id === evansId);

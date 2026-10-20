@@ -255,6 +255,132 @@ window.HALIFAX_RESTAURANT_CORRECTIONS = {
   ],
   "additions": [
     {
+      "id": "chanoeys-pasta-dartmouth",
+      "name": "Chanoey’s Pasta — Dartmouth",
+      "address": "41 Portland Street, Dartmouth, NS B2Y 1H1",
+      "neighborhood": "Downtown Dartmouth",
+      "category": "Restaurant",
+      "website": "https://www.chanoeyspasta.com/",
+      "phone": "902-405-2211",
+      "coordinates": null,
+      "openingHours": "Mo-Fr 11:00-20:00; Sa-Su 15:30-20:00",
+      "effectiveDatedHours": {
+        "dateOverrides": [
+          {
+            "date": "2026-10-09",
+            "hours": "Scheduled closure Oct 9–22, 2026"
+          },
+          {
+            "date": "2026-10-10",
+            "hours": "Scheduled closure Oct 9–22, 2026"
+          },
+          {
+            "date": "2026-10-11",
+            "hours": "Scheduled closure Oct 9–22, 2026"
+          },
+          {
+            "date": "2026-10-12",
+            "hours": "Scheduled closure Oct 9–22, 2026"
+          },
+          {
+            "date": "2026-10-13",
+            "hours": "Scheduled closure Oct 9–22, 2026"
+          },
+          {
+            "date": "2026-10-14",
+            "hours": "Scheduled closure Oct 9–22, 2026"
+          },
+          {
+            "date": "2026-10-15",
+            "hours": "Scheduled closure Oct 9–22, 2026"
+          },
+          {
+            "date": "2026-10-16",
+            "hours": "Scheduled closure Oct 9–22, 2026"
+          },
+          {
+            "date": "2026-10-17",
+            "hours": "Scheduled closure Oct 9–22, 2026"
+          },
+          {
+            "date": "2026-10-18",
+            "hours": "Scheduled closure Oct 9–22, 2026"
+          },
+          {
+            "date": "2026-10-19",
+            "hours": "Scheduled closure Oct 9–22, 2026"
+          },
+          {
+            "date": "2026-10-20",
+            "hours": "Scheduled closure Oct 9–22, 2026"
+          },
+          {
+            "date": "2026-10-21",
+            "hours": "Scheduled closure Oct 9–22, 2026"
+          },
+          {
+            "date": "2026-10-22",
+            "hours": "Scheduled closure Oct 9–22, 2026"
+          }
+        ]
+      },
+      "operatingStatus": "active",
+      "operatingStatusEvidence": {
+        "claim": "Official Dartmouth site publishes ordinary weekly hours and an October 9–22, 2026 scheduled closure. Date-specific display shows this closure rather than claiming normal service during the window. October 23 is the end of the announced closure period, not a verified reopening event. Original local independent business occupies a former Subway tenancy.",
+        "sourceUrl": "https://www.chanoeyspasta.com/",
+        "observedAt": "2026-10-20",
+        "reviewState": "verified",
+        "location": "41 Portland Street, Dartmouth, NS B2Y 1H1"
+      },
+      "cuisines": [
+        "Italian",
+        "Pasta"
+      ],
+      "vibe": [],
+      "specials": [],
+      "events": [],
+      "socialProfiles": [],
+      "sources": [
+        {
+          "type": "official_website",
+          "label": "Owner store hours and October 9–22 scheduled closure",
+          "url": "https://www.chanoeyspasta.com/",
+          "observedAt": "2026-10-20",
+          "status": "verified"
+        },
+        {
+          "type": "official_website",
+          "label": "Owner Dartmouth address and phone",
+          "url": "https://www.chanoeyspasta.com/contactus",
+          "observedAt": "2026-10-20",
+          "status": "verified"
+        },
+        {
+          "type": "menu",
+          "label": "Official restaurant menu; not a time-limited promotion",
+          "url": "https://www.chanoeyspasta.com/menu",
+          "observedAt": "2026-10-20",
+          "status": "verified"
+        },
+        {
+          "type": "official_website",
+          "label": "Owner independent business background",
+          "url": "https://www.chanoeyspasta.com/aboutus",
+          "observedAt": "2026-10-20",
+          "status": "verified"
+        },
+        {
+          "type": "local_news",
+          "label": "2020 owner interview on former Subway tenancy",
+          "url": "https://halifax.citynews.ca/2020/10/07/filipino-couples-dartmouth-restaurant-thrives-despite-hurdles-2774709/",
+          "observedAt": "2026-10-20",
+          "status": "verified"
+        }
+      ],
+      "evidenceStatus": "verified",
+      "sourceLayer": "reviewed_location_correction"
+    },
+    {
       "id": "evans-fresh-seafoods-dartmouth",
       "name": "Evan’s Fresh Seafoods & Restaurant",
       "address": "2 Ochterloney Street, Dartmouth, NS B2Y 1B2",

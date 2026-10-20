@@ -23,3 +23,12 @@ assert(context.__display(blackSheep, new Date("2026-11-14T16:00:00Z")).includes(
 assert(context.__display(blackSheep, new Date("2026-11-15T16:00:00Z")).includes("Sa 09:00-22:00"), "One-day November 14 early close must not persist");
 assert(context.__display({ openingHours: "unknown source hours" }, new Date("2026-11-14T16:00:00Z")) === "unknown source hours", "Unrelated restaurant hours must be unaffected");
 console.log("Official Black Sheep effective-dated hours regression passed.");
+
+const chanoey = correctionsContext.window.HALIFAX_RESTAURANT_CORRECTIONS.additions.find(item => item.id === 'chanoeys-pasta-dartmouth');
+assert(chanoey, 'Reviewed Dartmouth Chanoey source exists');
+assert(chanoey.effectiveDatedHours.dateOverrides.length === 14, 'Closed dates inclusive Oct 9–22');
+for (const date of ['2026-10-09T16:00:00Z','2026-10-20T16:00:00Z','2026-10-22T16:00:00Z'])
+  assert(context.__display(chanoey,new Date(date)) === 'Scheduled closure Oct 9–22, 2026', 'Closure takes priority over weekly hours '+date);
+assert(context.__display(chanoey,new Date('2026-10-23T16:00:00Z')) === chanoey.openingHours, 'Expired date exception must not hide future ordinary weekly hours');
+assert(context.__display(chanoey,new Date('2026-10-09T02:00:00Z')) === chanoey.openingHours, 'Use Halifax local midnight for closure start');
+console.log('Dartmouth Chanoey location closure-window regression passed.');
