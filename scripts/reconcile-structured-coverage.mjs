@@ -1,5 +1,6 @@
 import { readFile, writeFile } from "node:fs/promises";
 import vm from "node:vm";
+import integrity from "../source-integrity.js";
 
 const DAY_MS = 24 * 60 * 60 * 1000;
 const now = Date.now();
@@ -67,6 +68,15 @@ for (const item of catalog.restaurants || []) {
 }
 
 const baseMenuIds = new Set((verified.menuSources || []).map((item) => item.restaurantId));
+// These pointers are already counted by the base coverage builder. Include
+// them in its identity set so overlapping structured facts add no second place.
+for (const resolution of reviewedResolutions) {
+  try { if (["http:", "https:"].includes(new URL(resolution.menuUrl).protocol)) baseMenuIds.add(resolution.restaurantId); } catch { /* Unknown menu stays unknown. */ }
+}
+for (const item of catalog.restaurants || []) {
+  if (["temporarily_closed", "permanently_closed", "moved", "replaced"].includes(item.operatingStatus)) continue;
+  if ((item.sources || []).some(source => source.type === "menu" && integrity.safeSource(source.url))) baseMenuIds.add(item.id);
+}
 const baseSpecialIds = new Set((verified.specialSources || []).map((item) => item.restaurantId));
 const verifiedSpecialIds = new Set(baseSpecialIds);
 const baseReservationIds = new Set();

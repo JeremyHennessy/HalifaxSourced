@@ -177,6 +177,13 @@ const verifiedMenuIds = uniqueIds((verifiedPages.menuSources || []).map((source)
 const verifiedSpecialIds = uniqueIds((verifiedPages.specialSources || []).map((source) => source.restaurantId));
 const menuIds = new Set(verifiedMenuIds);
 for (const resolution of reviewedResolutions) if (validUrl(resolution.menuUrl)) menuIds.add(resolution.restaurantId);
+// Reviewed additions can render audited menus without a historical parser or
+// resolution-layer record. Count those canonical source pointers, not as new
+// parser-verified pages, and never resurrect an archived/quarantined action.
+for (const restaurant of canonical) {
+  if (inactiveLifecycleIds.has(restaurant.id) || ["temporarily_closed", "permanently_closed", "moved", "replaced"].includes(restaurant.operatingStatus)) continue;
+  if ((restaurant.sources || []).some(source => source.type === "menu" && validUrl(source.url) && integrity.safeSource(source.url))) menuIds.add(restaurant.id);
+}
 const specialIds = new Set(verifiedSpecialIds);
 const reservationIds = new Set();
 const orderingIds = new Set();
@@ -357,7 +364,7 @@ const report = {
   definitions: {
     canonicalPlaces: "Current user-facing merge of catalog restaurants plus reviewed discovery records, matching the app's existing name-based discovery merge behavior.",
     verifiedOfficialWebsite: "Official-site fetch returned a successful HTTP status or the first-party discovery layer successfully fetched the restaurant-owned site.",
-    menuLink: "Verified menu source, first-party menu action, or official-site menu candidate link. Verified menu is reported separately.",
+    menuLink: "Verified menu source, active canonical menu source pointer, reviewed location menu, first-party menu action, or official-site menu candidate link. Verified menu is reported separately.",
     specials: "Curated special, verified specials page, first-party specials-related action, or official-site specials signal. Exact terms are not assumed current unless separately structured.",
     socialCoverage: "Count of canonical places associated with at least one supported profile; link hubs are reported separately from social networks.",
     staleRestaurant: "Latest dated restaurant-specific source observation, excluding import/rebuild/freshnessDate timestamps, is more than 90 days old. Unknown dates are reported separately.",
