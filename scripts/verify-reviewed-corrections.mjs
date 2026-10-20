@@ -23,14 +23,20 @@ try {
     await page.locator('.restaurant-hero').waitFor();
     const model = await page.evaluate(id=>{
       const place=restaurants.find(item=>item.id===id);
-      return {active:isRestaurantActive(place),hours:place.openingHours,image:Boolean(permittedImageFor(place)),actions:place.menuLinks.length+place.orderingLinks.length+place.reservationLinks.length,overflow:document.documentElement.scrollWidth-innerWidth};
+      return {active:isRestaurantActive(place),hours:place.openingHours,phone:place.phone,address:place.address,image:Boolean(permittedImageFor(place)),actions:place.menuLinks.length+place.orderingLinks.length+place.reservationLinks.length,overflow:document.documentElement.scrollWidth-innerWidth};
     },id);
     assert(model.overflow<=2,label+' horizontal overflow');
     if (label === 'current-marco-polo') {
       assert(model.active, 'Café Marco Polo must retain its existing active identity');
       assert.equal(model.hours, 'Mo-Fr 07:00-16:00; Sa-Su 08:00-16:00');
-      assert((await page.locator('#detailInfo').innerText()).includes('902-406-0901'));
-      assert((await page.locator('#detailInfo').innerText()).includes('15 Kings Wharf Place'));
+      assert.equal(model.phone, '902-406-0901');
+      assert.equal(model.address, '15 Kings Wharf Place, Dartmouth, NS B2Y 0B4');
+      const essentials = page.locator('#detailOverview .mobile-essential-facts');
+      assert(await essentials.isVisible(), 'Assert the actual mobile surface, not the hidden desktop sidebar');
+      const essentialsText = await essentials.innerText();
+      assert(essentialsText.includes(model.phone));
+      assert(essentialsText.includes(model.address));
+      assert(essentialsText.includes(model.hours));
       assert.equal(await page.locator('#detailMenu a[href="https://cafemarcopolodartmouth.com/11-2/"]').count(), 1);
       assert.equal(model.image, false, 'A menu-page image is not a reuse grant');
     }
