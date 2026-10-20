@@ -19,7 +19,8 @@ try {
     ['hux-halifax','current-hux'],
     ['osm-node-4421124794-cafe-marco-polo','current-marco-polo'],
     ['evans-fresh-seafoods-dartmouth','current-evans-seafood'],
-    ['chanoeys-pasta-dartmouth','current-chanoeys-pasta']
+    ['chanoeys-pasta-dartmouth','current-chanoeys-pasta'],
+    ['osm-node-472054712-the-wooden-monkey','current-wooden-monkey-dartmouth']
   ]) {
     await page.goto(`${base}/#restaurant/${id}`,{waitUntil:'networkidle'});
     await page.locator('.restaurant-hero').waitFor();
@@ -28,6 +29,26 @@ try {
       return {active:isRestaurantActive(place),hours:place.openingHours,phone:place.phone,address:place.address,image:Boolean(permittedImageFor(place)),actions:place.menuLinks.length+place.orderingLinks.length+place.reservationLinks.length,overflow:document.documentElement.scrollWidth-innerWidth};
     },id);
     assert(model.overflow<=2,label+' horizontal overflow');
+    if (label === 'current-wooden-monkey-dartmouth') {
+      assert(model.active);
+      assert.equal(model.phone, '902-466-3100');
+      assert.equal(model.address, '40 Alderney Drive, #305, Level 2 Alderney Ferry Terminal, Dartmouth, NS B2Y 2N5');
+      assert.equal(model.hours, 'Mo-Th 11:30-21:00; Fr-Sa 11:30-21:30; Su 11:30-21:00');
+      const essentials = page.locator('#detailOverview .mobile-essential-facts');
+      assert(await essentials.isVisible());
+      const text = await essentials.innerText();
+      for (const fact of [model.phone, model.address, model.hours]) assert(text.includes(fact));
+      assert.equal(await page.locator('#detailMenu a[href="https://www.thewoodenmonkey.ca/main-menu"]').count(), 1);
+      const separate = await page.evaluate(() => {
+        const dartmouth = restaurants.find(record => record.id === 'osm-node-472054712-the-wooden-monkey');
+        const halifax = restaurants.find(record => record.id === 'osm-way-96322798-wooden-monkey');
+        return {differentIds:dartmouth.id!==halifax.id,halifaxPhone:halifax.phone,halifaxAddress:halifax.address,dartmouthImage:permittedImageFor(dartmouth)?.url,halifaxImage:permittedImageFor(halifax)?.url};
+      });
+      assert(separate.differentIds);
+      assert.equal(separate.halifaxPhone, '+1-902-444-3844');
+      assert.equal(separate.halifaxAddress, '1707 Grafton Street, Halifax');
+      if (separate.dartmouthImage) assert.notEqual(separate.dartmouthImage, separate.halifaxImage, 'Do not share a photographed Halifax-location image with Dartmouth');
+    }
     if (label === 'current-chanoeys-pasta') {
       assert(model.active);
       assert.equal(model.address, '41 Portland Street, Dartmouth, NS B2Y 1H1');

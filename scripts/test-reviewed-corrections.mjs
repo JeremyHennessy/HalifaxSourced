@@ -16,6 +16,26 @@ const app = JSON.parse(vm.runInContext('JSON.stringify({restaurants,active:activ
 const catalog = JSON.parse(await readFile(new URL('data/build/catalog.json',root)));
 assert.deepEqual(app.restaurants.map(item=>item.id).sort(),catalog.restaurants.map(item=>item.id).sort(),'Browser and export must use the same exact identities');
 const active = new Set(app.active);
+const woodenDartmouthId = 'osm-node-472054712-the-wooden-monkey';
+for (const records of [app.restaurants, catalog.restaurants]) {
+  const dartmouth = records.find(record => record.id === woodenDartmouthId);
+  const halifax = records.find(record => record.id === 'osm-way-96322798-wooden-monkey');
+  assert.equal(records.filter(record => record.id === woodenDartmouthId).length, 1);
+  assert.equal(dartmouth.phone, '902-466-3100');
+  assert.equal(dartmouth.address, '40 Alderney Drive, #305, Level 2 Alderney Ferry Terminal, Dartmouth, NS B2Y 2N5');
+  assert.equal(dartmouth.website, 'https://www.thewoodenmonkey.ca/');
+  assert.equal(dartmouth.openingHours, 'Mo-Th 11:30-21:00; Fr-Sa 11:30-21:30; Su 11:30-21:00');
+  assert.equal(dartmouth.coordinates.lat, 44.6638696);
+  assert.equal(dartmouth.coordinates.lon, -63.5694585);
+  assert(!dartmouth.effectiveDatedHours, 'Do not invent a current-year exception from stale holiday notices');
+  assert(dartmouth.sources.some(source => source.type === 'openstreetmap'));
+  assert.equal(halifax.address, '1707 Grafton Street, Halifax');
+  assert.equal(halifax.phone, '+1-902-444-3844', 'Never copy Dartmouth phone to Halifax');
+  assert.equal(halifax.coordinates.lat, 44.6470762);
+  assert(!dartmouth.aliasIds?.includes(halifax.id), 'These are separate locations, not duplicate identities');
+}
+assert(active.has(woodenDartmouthId));
+assert(app.restaurants.find(record => record.id === woodenDartmouthId).menuLinks.some(link => link.url === 'https://www.thewoodenmonkey.ca/main-menu'));
 const chanoeyId = 'chanoeys-pasta-dartmouth';
 for (const records of [app.restaurants, catalog.restaurants]) {
   const matches = records.filter(record => record.id === chanoeyId);

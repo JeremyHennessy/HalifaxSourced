@@ -4,6 +4,20 @@ window.HALIFAX_RESTAURANT_CORRECTIONS = {
   "policy": "Reviewed location evidence overrides stale imports; observation dates are retained and uncertain coordinates, hours, successor identities and closure day remain unknown.",
   "records": [
     {
+      "restaurantId": "osm-node-472054712-the-wooden-monkey",
+      "fields": {
+        "address": "40 Alderney Drive, #305, Level 2 Alderney Ferry Terminal, Dartmouth, NS B2Y 2N5",
+        "phone": "902-466-3100",
+        "website": "https://www.thewoodenmonkey.ca/",
+        "openingHours": "Mo-Th 11:30-21:00; Fr-Sa 11:30-21:30; Su 11:30-21:00"
+      },
+      "sourceUrl": "https://www.thewoodenmonkey.ca/hours-locations",
+      "claim": "Owner location and contact pages identify the Dartmouth venue at the Level 2 Alderney Ferry Terminal, 40 Alderney Drive #305, with phone 902-466-3100. Publish only its regular weekly hours; historical 2022 closures and year-ambiguous holiday notices are not current exceptions. Keep Halifax 1707 Grafton and its phone, coordinates and images separate.",
+      "observedAt": "2026-10-20T13:38:50Z",
+      "reviewedAt": "2026-10-20T13:38:50Z",
+      "reviewState": "verified"
+    },
+    {
       "restaurantId": "osm-node-11752614922-cafe-good-luck",
       "fields": {
         "website": "https://cafegoodluck.ca/goodluck",
