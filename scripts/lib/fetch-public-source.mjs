@@ -20,3 +20,20 @@ export async function fetchPublicSource(url, options, robotsAllows) {
 export function fetchGuardedSource(url, options = {}) {
   return fetchPublicSource(url, options, async () => true);
 }
+
+// AbortSignal.timeout alone is unreferenced in Node and cannot settle every
+// stalled body/cancel operation. Keep a bounded timer alive for the complete
+// request operation, and reject even if the underlying promise ignores abort.
+export async function withSourceDeadline(operation, timeoutMs) {
+  const controller = new AbortController();
+  let timer;
+  const deadline = new Promise((_, reject) => {
+    timer = setTimeout(() => {
+      const error = new DOMException('Source operation deadline exceeded', 'TimeoutError');
+      controller.abort(error);
+      reject(error);
+    }, timeoutMs);
+  });
+  try { return await Promise.race([Promise.resolve().then(() => operation(controller.signal)), deadline]); }
+  finally { clearTimeout(timer); }
+}
