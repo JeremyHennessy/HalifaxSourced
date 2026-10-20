@@ -155,6 +155,10 @@ function cityEventsForWindow(items) {
 function eventCityName(event) {
   const address = String(event.address || "").toLowerCase();
   const city = String(event.city || "").trim();
+  // A sourced municipality outranks city words in a street name (Dartmouth
+  // Road is in Bedford; Bedford Highway can be in Halifax).
+  const municipality = ["Halifax", "Dartmouth", "Bedford"].find(name => name.toLowerCase() === city.toLowerCase());
+  if (municipality) return municipality;
   const haystack = `${city} ${address}`.toLowerCase();
   if (haystack.includes("dartmouth")) return "Dartmouth";
   if (haystack.includes("bedford")) return "Bedford";
