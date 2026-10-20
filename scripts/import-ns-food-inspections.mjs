@@ -79,8 +79,11 @@ const sourceAsOf = {};
 for (const city of cities) {
   const result = await searchCity(city, observedAt);
   const previousCount = (old?.records || []).filter(record => record.city === city).length;
-  if (previousCount >= 20 && result.records.length < previousCount * 0.75) {
-    throw new Error('Inspection search for ' + city + ' unexpectedly fell from ' + previousCount + ' to ' + result.records.length + '; preserving accepted snapshot');
+  // The registry can repeat one facility under corporate and trading names.
+  // Compare the same unique-facility universe that is actually published.
+  const uniqueFacilityCount = new Set(result.records.map(record => record.facilityId)).size;
+  if (previousCount >= 20 && uniqueFacilityCount < previousCount * 0.75) {
+    throw new Error('Inspection search for ' + city + ' unexpectedly fell from ' + previousCount + ' to ' + uniqueFacilityCount + ' unique facilities; preserving accepted snapshot');
   }
   fresh.push(...result.records);
   sourceAsOf[city] = result.currentAsOf;
