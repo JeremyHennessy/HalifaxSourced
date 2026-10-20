@@ -58,6 +58,25 @@ try{for(const viewport of [{width:1440,height:1000},{width:390,height:844}]){
  for(const c of result.rendererChecks){assert.equal(c.eligible,false,JSON.stringify(c.denial));for(const [renderer,html] of Object.entries(c.markups)){assert(!/<img\b/i.test(html),renderer+JSON.stringify(c.denial));if(renderer!=='restaurant'){assert(html.includes('https://example.test/source'));assert(html.includes('Rights control'));}}}
  assert.equal(result.acceptedReferenceChecks.length,183);for(const c of result.acceptedReferenceChecks)assert.equal(c.images,0,c.restaurantId);
  for(const c of result.pathChecks)assert.equal(c.url,null,c.path);
- assert.equal(result.approvedAssets,9);assert.equal(result.positive,true);assert.equal(result.legacyRejected,false);await page.waitForLoadState('networkidle');assert.deepEqual(requests,[]);gate.assertClean();evidence.push({viewport,result,unlicensedRequests:requests});await context.close();
+ assert.equal(result.approvedAssets,9);
+ const publicPreview = await page.evaluate(() => {
+   const place = activeRestaurants.find(row=>row.id === "highwayman");
+   const unknown = activeRestaurants.find(row=>row.id === "evans-fresh-seafoods-dartmouth");
+   const record = window.HALIFAX_MEDIA_SOURCE_REFERENCES.records.find(row=>row.restaurantId === "highwayman");
+   if (!place || !record) throw Error("Missing historic preview fixture");
+   const image = sourcePreviewImageFor(place);
+   return {
+     previewUrl: image?.url, expectedUrl: record.url, attributed: mediaAttributionMarkup(place).includes("External photo source"),
+     markedUnknown: image?.rightsState === "unverified", permissionStillDenied: !hasMediaPermission(record),
+     canonicalOnly: !sourcePreviewImageFor({...place}), noInvented: !sourcePreviewImageFor(unknown),
+     html: mediaImageMarkup(place)
+   };
+ });
+ assert.equal(publicPreview.previewUrl, publicPreview.expectedUrl, 'Public preview uses exact retained URL');
+ assert(publicPreview.attributed && publicPreview.markedUnknown && publicPreview.permissionStillDenied && publicPreview.canonicalOnly && publicPreview.noInvented);
+ assert(publicPreview.html.includes('data-media-source="public_source_preview"') && publicPreview.html.includes('referrerpolicy="no-referrer"'));
+ assert.equal(result.positive,true);assert.equal(result.legacyRejected,false);await page.waitForLoadState('networkidle');assert(!requests.some(url=>url.includes('unlicensed-media.example')), 'Synthetic unlicensed image must never be requested');
+ assert(requests.every(url=>references.some(ref=>ref.url===url)), 'Only exact historical source previews may be requested');
+ gate.assertClean();evidence.push({viewport,result,unlicensedRequests:requests});await context.close();
 }await mkdir('artifacts',{recursive:true});await writeFile('artifacts/media-rights-controls.json',JSON.stringify(evidence,null,2));console.log('Media rights controls passed: denied/unknown images never requested; facts and source links retained; six consumer-eligible licensed assets preserved (Smittys excluded by existing local-restaurant policy).');}finally{await browser.close();}
 
