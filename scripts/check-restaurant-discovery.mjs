@@ -1,5 +1,6 @@
 import { readFile, writeFile, mkdir } from "node:fs/promises";
 import vm from "node:vm";
+import identity from "../app-restaurant-identity.js";
 
 async function loadWindow(path) {
   const source = await readFile(new URL(`../${path}`, import.meta.url), "utf8");
@@ -84,8 +85,9 @@ for (const restaurant of discovered) {
 const duplicateDiscoveryIds = duplicates(discovered, (restaurant) => restaurant.id);
 if (duplicateDiscoveryIds.length) failures.push({ type: "duplicate_discovered_ids", values: duplicateDiscoveryIds });
 
-const duplicateDiscoveryNames = duplicates(discovered, (restaurant) => normalize(restaurant.name));
-if (duplicateDiscoveryNames.length) failures.push({ type: "duplicate_discovered_names", values: duplicateDiscoveryNames });
+for (const [index, restaurant] of discovered.entries()) for (const other of discovered.slice(index + 1)) {
+  if (identity.decide(restaurant, other).state !== "distinct") failures.push({ type: "ambiguous_discovered_location", ids: [restaurant.id, other.id] });
+}
 
 for (const restaurant of discovered) {
   if (knownIds.has(restaurant.id)) warnings.push({ type: "discovered_id_already_in_catalog", id: restaurant.id, name: restaurant.name });

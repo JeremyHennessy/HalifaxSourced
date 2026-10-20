@@ -47,12 +47,8 @@ const reviewedWindow = await windowData("data/reviewed-place-resolutions.js");
 const reviewedResolutions = Array.isArray(reviewedWindow.HALIFAX_REVIEWED_PLACE_RESOLUTIONS?.records) ? reviewedWindow.HALIFAX_REVIEWED_PLACE_RESOLUTIONS.records : [];
 const total = Number(report.restaurantCoverage?.totalCanonicalPlaces || 0);
 const catalogById = new Map((catalog.restaurants || []).map((item) => [item.id, item]));
-const discoveredByName = new Map(discovered.map((item) => [normalize(item.name), item]));
-
-function mergedBase(item) {
-  const discovery = discoveredByName.get(normalize(item.name));
-  return discovery ? { ...item, phone: item.phone || discovery.phone, openingHours: item.openingHours || discovery.openingHours } : item;
-}
+// The exported catalog already contains location-resolved discovery fields.
+function mergedBase(item) { return item; }
 const basePhoneIds = new Set();
 const baseHoursIds = new Set();
 const basePatioIds = new Set();
@@ -74,7 +70,7 @@ for (const resolution of reviewedResolutions) {
   try { if (["http:", "https:"].includes(new URL(resolution.menuUrl).protocol)) baseMenuIds.add(resolution.restaurantId); } catch { /* Unknown menu stays unknown. */ }
 }
 for (const item of catalog.restaurants || []) {
-  if (["temporarily_closed", "permanently_closed", "moved", "replaced"].includes(item.operatingStatus)) continue;
+  if (["seasonally_closed", "temporarily_closed", "permanently_closed", "moved", "replaced"].includes(item.operatingStatus)) continue;
   if ((item.sources || []).some(source => source.type === "menu" && integrity.safeSource(source.url))) baseMenuIds.add(item.id);
 }
 const baseSpecialIds = new Set((verified.specialSources || []).map((item) => item.restaurantId));

@@ -13,22 +13,15 @@ function applyDiscoveryFlags(restaurant, discovered) {
 
 for (const discovered of discoveredRestaurantPayload) {
   if (!discovered?.id || !discovered?.name) continue;
-  const nameKey = normalize(discovered.name);
-  const existing = restaurants.find((restaurant) => normalize(restaurant.name) === nameKey);
-
-  if (existing) {
-    existing.category ||= discovered.category;
-    existing.cuisines = unique([...(existing.cuisines || []), ...(discovered.cuisines || [])]);
-    existing.vibe = unique([...(existing.vibe || []), ...(discovered.vibe || [])]);
-    existing.address ||= discovered.address;
-    existing.phone ||= discovered.phone;
-    existing.website ||= discovered.website;
-    existing.openingHours ||= discovered.openingHours;
-    existing.coordinates ||= discovered.coordinates;
-    existing.specials = [...(existing.specials || []), ...(discovered.specials || [])].filter((item, index, all) => all.findIndex((other) => `${other.title}|${other.cadence || ""}` === `${item.title}|${item.cadence || ""}`) === index);
-    existing.sources = mergeSources(existing.sources, discovered.sources);
-    existing.freshnessDate = [existing.freshnessDate, discovered.freshnessDate].filter(Boolean).sort().at(-1) || null;
-    applyReviewedPlaceResolution(existing);
+  const decision = window.HalifaxRestaurantIdentity.find(restaurants, discovered, window.HALIFAX_RESTAURANT_CORRECTIONS?.aliases || []);
+  if (decision.state === "review") {
+    window.__halifaxIdentityReviewQueue.push({ sourceId: discovered.id, name: discovered.name, reason: decision.reason, candidateIds: decision.candidateIds || [] });
+    continue;
+  }
+  if (decision.state === "match") {
+    const existing = decision.record;
+    window.HalifaxRestaurantIdentity.merge(existing, discovered, decision);
+    Object.assign(existing, enrichRestaurant(applyReviewedPlaceResolution(existing)));
     applyDiscoveryFlags(existing, discovered);
     continue;
   }

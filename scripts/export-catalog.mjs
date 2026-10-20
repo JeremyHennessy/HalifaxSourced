@@ -1,7 +1,9 @@
 import { readFile, writeFile, mkdir } from "node:fs/promises";
 import { Script, createContext } from "node:vm";
-import { applyReviewedCorrections } from "./lib/reviewed-corrections.mjs";
+import { applyReviewedCorrections, reviewedCorrections, reviewedPlaceResolutions } from "./lib/reviewed-corrections.mjs";
 import { filterLocalRestaurantRecords, localRestaurantPolicy } from "./lib/local-restaurant-policy.mjs";
+
+import identity from "../app-restaurant-identity.js";
 
 const context = createContext({ window: {} });
 for (const file of ["../app-inspection-matching.js", "../data/restaurants.js", "../data/osm-restaurants.js", "../data/ns-food-inspections.js", "../data/discovered-restaurants.js", "../data/discovery-source-supplements.js"]) {
@@ -64,25 +66,17 @@ function withInspectionEvidence(restaurant) {
   return { ...restaurant, inspectionRecords, sources: mergeSources(restaurant.sources, inspectionSources) };
 }
 
-const byName = new Map();
 const restaurants = curated.map((restaurant) => ({ ...restaurant, sourceLayer: "curated" }));
-restaurants.forEach((restaurant) => byName.set(keyForName(restaurant.name), restaurant));
-
+const curatedTargets = [...restaurants];
+const identityReviewQueue = [];
 for (const restaurant of osm) {
-  const match = byName.get(keyForName(restaurant.name));
-  if (!match) {
-    restaurants.push({ ...restaurant, sourceLayer: "openstreetmap" });
+  const decision = identity.find(curatedTargets, restaurant, reviewedCorrections.aliases || []);
+  if (decision.state === "review") {
+    identityReviewQueue.push({ sourceId: restaurant.id, name: restaurant.name, reason: decision.reason, candidateIds: decision.candidateIds || [] });
     continue;
   }
-  match.aliasIds = [...new Set([...(match.aliasIds || []), restaurant.id])];
-  match.category ??= restaurant.category;
-  match.address ??= restaurant.address;
-  match.phone ??= restaurant.phone;
-  match.website ??= restaurant.website;
-  match.openingHours ??= restaurant.openingHours;
-  match.coordinates ??= restaurant.coordinates;
-  match.sources = mergeSources(match.sources, restaurant.sources);
-  match.osm ??= restaurant.osm;
+  if (decision.state === "match") identity.merge(decision.record, restaurant, decision);
+  else restaurants.push({ ...restaurant, sourceLayer: "openstreetmap" });
 }
 
 const localPolicyExcluded = {
@@ -90,18 +84,18 @@ const localPolicyExcluded = {
   openStreetMap: osmPolicy.excluded.length,
   total: curatedPolicy.excluded.length + osmPolicy.excluded.length
 };
+for (const restaurant of restaurants) identity.applyResolution(restaurant, reviewedPlaceResolutions);
 for (const discovered of context.window.HALIFAX_DISCOVERED_RESTAURANTS || []) {
   if (filterLocalRestaurantRecords([discovered]).excluded.length) continue;
-  const existing = restaurants.find(item => item.id === discovered.id || keyForName(item.name) === keyForName(discovered.name));
-  if (!existing) restaurants.push({ ...discovered, sourceLayer: "local_discovery" });
-  else {
-    for (const field of ["address", "phone", "website", "openingHours", "coordinates", "neighborhood"]) existing[field] ||= discovered[field];
-    existing.sources = mergeSources(existing.sources, discovered.sources);
-  }
+  const decision = identity.find(restaurants, discovered, reviewedCorrections.aliases || []);
+  if (decision.state === "review") identityReviewQueue.push({ sourceId: discovered.id, name: discovered.name, reason: decision.reason, candidateIds: decision.candidateIds || [] });
+  else if (decision.state === "match") identity.merge(decision.record, discovered, decision);
+  else restaurants.push({ ...discovered, sourceLayer: "local_discovery" });
 }
-const enrichedRestaurants = applyReviewedCorrections(restaurants).map(withInspectionEvidence);
+const enrichedRestaurants = applyReviewedCorrections(restaurants.map(record => identity.applyResolution(record, reviewedPlaceResolutions))).map(withInspectionEvidence);
 const catalog = {
   generatedAt: new Date().toISOString(),
+  identityReviewQueue,
   sourceMeta: {
     openStreetMap: osmMeta,
     novaScotiaFoodInspections: nsFoodInspections,

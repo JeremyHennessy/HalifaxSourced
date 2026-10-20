@@ -6,7 +6,7 @@ import integrity from '../source-integrity.js';
 const json = async path => JSON.parse(await readFile(new URL('../' + path, import.meta.url), 'utf8'));
 const catalog = await json('data/build/catalog.json');
 const restaurants = applyReviewedCorrections(catalog.restaurants);
-const inactive = new Set(['temporarily_closed', 'permanently_closed', 'moved', 'replaced']);
+const inactive = new Set(['seasonally_closed', 'temporarily_closed', 'permanently_closed', 'moved', 'replaced']);
 const failures = [];
 const records = restaurants.map(restaurant => {
   const evidence = restaurant.operatingStatusEvidence || {};

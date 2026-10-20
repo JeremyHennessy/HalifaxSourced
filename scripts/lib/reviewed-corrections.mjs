@@ -12,7 +12,7 @@ export const reviewedPlaceResolutions = context.window.HALIFAX_REVIEWED_PLACE_RE
 // Review-backed links rendered by the browser are not necessarily present in
 // historical first-party/fact snapshots. Keep them in the same release audit.
 export function reviewedLocationLinks(restaurants, resolutions = reviewedPlaceResolutions) {
-  const inactive = new Set(['permanently_closed', 'temporarily_closed', 'moved', 'replaced']);
+  const inactive = new Set(['permanently_closed', 'seasonally_closed', 'temporarily_closed', 'moved', 'replaced']);
   const active = new Set(restaurants.filter(item => !inactive.has(item.operatingStatus)).map(item => item.id));
   const links = new Map();
   function add(value, kind, restaurantId) {

@@ -8,11 +8,9 @@ const reviewedSpecials = JSON.parse(await readFile(new URL("../data/reviewed-str
 const publicSpecialLeads = JSON.parse(await readFile(new URL("../data/build/public-special-source-leads.json", import.meta.url), "utf8").catch(() => "{\"records\":[]}"));
 const discoveryOverrides = JSON.parse(await readFile(new URL("../data/discovery-overrides.json", import.meta.url), "utf8").catch(() => "{\"approved\":[]}"));
 const discoveredRestaurants = Array.isArray(discoveryOverrides?.approved) ? discoveryOverrides.approved : [];
-function normalizeName(value) { return String(value || "").toLowerCase().normalize("NFKD").replace(/[\u0300-\u036f]/g, "").replace(/\bthe\b/g, "").replace(/[^a-z0-9]+/g, ""); }
-const catalogByName = new Map((catalog.restaurants || []).map((restaurant) => [normalizeName(restaurant.name), restaurant.id]));
-const discoveryIdAliases = new Map(discoveredRestaurants.map((restaurant) => [restaurant.id, catalogByName.get(normalizeName(restaurant.name)) || restaurant.id]));
-const canonicalRestaurantId = (restaurantId) => discoveryIdAliases.get(restaurantId) || restaurantId;
-const catalogIds = new Set([...(catalog.restaurants || []).map((restaurant) => restaurant.id), ...discoveryIdAliases.values()]);
+const discoveryIdAliases = new Map((catalog.restaurants || []).flatMap(restaurant => (restaurant.aliasIds || []).map(id => [id, restaurant.id])));
+const canonicalRestaurantId = restaurantId => discoveryIdAliases.get(restaurantId) || restaurantId;
+const catalogIds = new Set([...(catalog.restaurants || []).map(restaurant => restaurant.id), ...discoveredRestaurants.map(restaurant => canonicalRestaurantId(restaurant.id))]);
 const now = new Date().toISOString();
 const nowStamp = Date.parse(now);
 const CURRENT_VERIFY_DAYS = Number(process.env.STRUCTURED_SPECIAL_CURRENT_VERIFY_DAYS || 30);

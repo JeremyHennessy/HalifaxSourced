@@ -1,5 +1,5 @@
 // Collection timestamps describe this attempt, never the age of carried evidence.
-export const inactiveFactStatuses = new Set(['permanently_closed', 'temporarily_closed', 'moved', 'replaced']);
+export const inactiveFactStatuses = new Set(['permanently_closed', 'seasonally_closed', 'temporarily_closed', 'moved', 'replaced']);
 export function blockedFactReason(reason) {
   return /^(?:http_401|http_403|robots_disallow|quarantined_)/.test(String(reason || ''));
 }
