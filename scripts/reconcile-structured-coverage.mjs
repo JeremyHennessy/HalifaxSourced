@@ -1,6 +1,7 @@
 import { readFile, writeFile } from "node:fs/promises";
 import vm from "node:vm";
 import integrity from "../source-integrity.js";
+import { applyReviewedFactFieldRejections } from './lib/reviewed-corrections.mjs';
 
 const DAY_MS = 24 * 60 * 60 * 1000;
 const now = Date.now();
@@ -108,7 +109,7 @@ const orderingIds = new Set(baseOrderingIds);
 const specialIds = new Set(baseSpecialIds);
 const patioIds = new Set(basePatioIds);
 const accessibilityIds = new Set(baseAccessibilityIds);
-for (const fact of facts.records || []) {
+for (const fact of applyReviewedFactFieldRejections(facts.records || [])) {
   if (!catalogById.has(fact.restaurantId)) continue;
   if (String(fact.phone || "").trim()) phoneIds.add(fact.restaurantId);
   if (fact.hours && typeof fact.hours === "object") hoursIds.add(fact.restaurantId);

@@ -7,7 +7,7 @@ import { execFileSync } from 'node:child_process';
 // Exercise the real offline builder, not a second implementation of its union.
 const root = await mkdtemp(join(tmpdir(), 'halifax-menu-coverage-'));
 try {
-  for (const file of ['scripts/build-content-coverage-report.mjs', 'scripts/reconcile-structured-coverage.mjs', 'scripts/lib/media-rights-contract.mjs', 'source-integrity.js', 'app-media.js']) {
+  for (const file of ['scripts/build-content-coverage-report.mjs', 'scripts/reconcile-structured-coverage.mjs', 'scripts/lib/reviewed-corrections.mjs', 'restaurant-corrections.js', 'scripts/lib/media-rights-contract.mjs', 'source-integrity.js', 'app-media.js']) {
     await mkdir(dirname(join(root, file)), { recursive: true });
     await copyFile(new URL('../' + file, import.meta.url), join(root, file));
   }
@@ -34,10 +34,16 @@ try {
   assert.equal(report.restaurantCoverage.totalCanonicalPlaces, 5);
   assert.equal(report.restaurantCoverage.withMenuLink, 2, 'Count canonical menu sources once; exclude archived, unsafe, malformed and noncanonical evidence');
   assert.equal(report.restaurantCoverage.withVerifiedMenuLink, 1, 'Reviewed source pointers must not inflate separately parsed/verified menus');
-  await save('structured-place-facts', { records: [{ restaurantId: 'new-reviewed', menus: [{ url: 'https://local.example/new-menu' }] }] });
+  await writeFile(join(root, 'data/reviewed-restaurant-corrections.js'), 'window.HALIFAX_RESTAURANT_CORRECTIONS={factFieldRejections:[{id:"ambiguous-hours",restaurantId:"new-reviewed",fields:["hours"],reviewState:"rejected"}]};');
+  const hours = { monday: [{ open: '00:00', close: '24:00' }] };
+  await save('structured-place-facts', { records: [
+    { restaurantId: 'new-reviewed', hours, menus: [{ url: 'https://local.example/new-menu' }] },
+    { restaurantId: 'existing', hours }
+  ] });
   execFileSync(process.execPath, [join(root, 'scripts/reconcile-structured-coverage.mjs')], { cwd: root, stdio: 'pipe' });
   const reconciled = JSON.parse(await readFile(join(root, 'data/build/content-coverage-report.json')));
   assert.equal(reconciled.restaurantCoverage.withMenuLink, 2, 'Structured reconciliation must not count the same canonical menu place twice');
+  assert.equal(reconciled.restaurantCoverage.withStructuredOrSourceHours, 1, 'A rejected schedule must not inflate published hours coverage; unrelated hours remain eligible');
   console.log('Menu coverage builder regression passed: canonical reviewed sources included, duplicate/archived/unsafe/orphan evidence controlled, verified metric distinct.');
 } finally {
   await rm(root, { recursive: true, force: true });
