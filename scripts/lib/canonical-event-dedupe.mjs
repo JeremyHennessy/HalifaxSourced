@@ -5,6 +5,13 @@ const aliases = new Map([
   ['cape breton', 'cape-breton'], ['cape breton eagles', 'cape-breton'],
   ['charlottetown', 'charlottetown'], ['charlottetown islanders', 'charlottetown'],
   ['saint john', 'saint-john'], ['saint john sea dogs', 'saint-john'],
+  ['quebec', 'quebec'], ['quebec remparts', 'quebec'],
+  ['moncton', 'moncton'], ['moncton wildcats', 'moncton'], ['moncton wildcats home opener', 'moncton'],
+  ['val d or', 'val-d-or'], ['val d or foreurs', 'val-d-or'],
+  ['shawinigan', 'shawinigan'], ['shawinigan cataractes', 'shawinigan'],
+  ['newfoundland', 'newfoundland'], ['newfoundland regiment', 'newfoundland'],
+  ['blainville boisbriand', 'blainville-boisbriand'], ['blainville boisbriand armada', 'blainville-boisbriand'],
+  ['gatineau', 'gatineau'], ['gatineau olympiques', 'gatineau'],
   ['drummondville', 'drummondville'], ['drummondville voltigeurs', 'drummondville']
 ]);
 const normalize = value => String(value || '').toLowerCase().normalize('NFKD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9]+/g,' ').trim();
