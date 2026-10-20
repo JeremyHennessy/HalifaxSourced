@@ -74,6 +74,13 @@
     {
       "id": "alderney-landing-events",
       "name": "Alderney Landing",
+      "enabled": false,
+      "disabledReason": "http_403",
+      "accessReview": {
+        "lastAttemptAt": "2026-10-20T17:16:30.561Z",
+        "evidenceUrl": "https://github.com/JeremyHennessy/HalifaxSourced/actions/runs/39464423876/job/118771963703",
+        "resumeWhen": "Owner review confirms a permitted public collection interface. Elapsed time alone does not authorize another request."
+      },
       "kind": "official_venue_calendar",
       "mode": "eventon_jsonld_calendar",
       "url": "https://www.alderneylanding.com/events-directory/",
