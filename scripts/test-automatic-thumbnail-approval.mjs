@@ -36,6 +36,7 @@ try {
     e => { e.location.operatingStatus = 'unknown'; }, e => { e.location.address = 'Different branch'; }, e => { e.location.restaurantId = 'other'; },
     e => { e.rights.localReproductionPermitted = false; }, e => { e.rights.conditionsSatisfied = false; }, e => { e.rights.expiresAt = '2020-01-01'; }, e => { e.assessedAt = '2099-01-01'; },
     e => { e.rights.verified = false; }, e => { e.rights.permissionConfirmed = false; },
+    e => { e.rights.usageRights = 'denied'; }, e => { e.rights.ownerApproved = false; }, e => { e.rights.rightsState = 'unverified'; }, e => { e.rights.licence = 'restricted'; }, e => { e.rights.reviewState = 'REJECTED'; },
     e => { e.rights.attribution = ''; }, e => { e.rights.license = 'unknown'; },
     e => { e.sourceUrl = 'https://example.test/other'; }, e => { e.thumbnailUrl += '?changed'; },
     e => { e.assetPath = '../escape.jpg'; }, e => { e.assetPath = 'https://example.test/mutable.jpg'; }
