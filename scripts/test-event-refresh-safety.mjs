@@ -70,6 +70,9 @@ const ignored = [
   { ...event, id: "expired", startAt: "2026-10-01T12:00:00.000Z", endAt: "2026-10-01T13:00:00.000Z" },
   { ...event, id: "cancelled", eventStatus: "https://schema.org/EventCancelled" },
   { ...event, id: "superseded", reviewState: "superseded" },
+  { ...event, id: "scheduled-but-superseded", eventStatus: "https://schema.org/EventScheduled", reviewState: "superseded" },
+  { ...event, id: "scheduled-but-withdrawn", eventStatus: "https://schema.org/EventScheduled", status: "withdrawn" },
+  { ...event, id: "scheduled-but-cancelled", eventStatus: "https://schema.org/EventScheduled", status: "scheduled", cancelled: true },
   { ...event, id: "backwards", endAt: "2026-10-31T12:00:00.000Z" },
   { ...event, id: "invalid-day", startAt: "2026-02-30T12:00:00.000Z" },
   { ...event, id: "future-observation", observedAt: "2027-10-20T15:00:00.000Z" },
@@ -82,6 +85,33 @@ assert.equal(skipped.ignoredPrevious.length, ignored.length);
 const ongoing = reconcileFutureEventLosses(failed, { ...previous, events: [{ ...event, startAt: "2026-09-11T12:00:00.000Z", endAt: "2026-12-09T12:00:00.000Z" }] }, options);
 assert.equal(ongoing.retained.length, 0, "Do not revive possibly malformed stretched date ranges");
 assert.equal(ongoing.heldRemovals[0].reason, "missing_ongoing_event_requires_review");
+
+// CI regression: library events ending earlier today must not become held
+// future losses merely because the dataset retains a six-hour past grace.
+const ciNow = Date.parse("2026-10-20T15:41:29.000Z");
+const recentlyEnded = [
+  { ...event, id: "ended-one-hour-ago", startAt: "2026-10-20T13:41:29.000Z", endAt: "2026-10-20T14:41:29.000Z" },
+  { ...event, id: "babys-first-books", startAt: "2026-10-20T13:30:00.000Z", endAt: "2026-10-20T14:30:00.000Z" },
+  { ...event, id: "shake-rattle-read", startAt: "2026-10-20T13:15:00.000Z", endAt: "2026-10-20T14:15:00.000Z" }
+];
+for (const source of [failed, { ...partial, events: [] }]) {
+  const expired = reconcileFutureEventLosses(source, { ...previous, events: recentlyEnded }, { now: ciNow });
+  assert.equal(expired.blocked, false);
+  assert.equal(expired.retained.length, 0, "Already-ended events must not return after source failure");
+  assert.equal(expired.ignoredPrevious.length, recentlyEnded.length);
+  assert.ok(expired.ignoredPrevious.every(item => item.reason === "expired_previous_event"));
+  const stillRunning = { ...event, id: "ongoing-today", startAt: "2026-10-20T08:00:00.000Z", endAt: "2026-10-20T16:00:00.000Z" };
+  const protectedOngoing = reconcileFutureEventLosses(source, { ...previous, events: [stillRunning] }, { now: ciNow });
+  assert.equal(protectedOngoing.blocked, true, "True ongoing omissions must still require review");
+  assert.equal(protectedOngoing.heldRemovals[0].reason, "missing_ongoing_event_requires_review");
+}
+assert.equal(reconcileFutureEventLosses({ ...partial, events: [] }, previous, { now: ciNow }).blocked, true, "True future omissions remain held");
+assert.equal(reconcileFutureEventLosses(failed, previous, { now: ciNow }).retained.length, 1, "Failed-source future retention remains intact");
+const endingNow = { ...event, startAt: "2026-10-20T15:00:00.000Z", endAt: "2026-10-20T15:41:29.000Z" };
+assert.equal(reconcileFutureEventLosses({ ...partial, events: [] }, { ...previous, events: [endingNow] }, { now: ciNow }).blocked, true, "Expiry is strictly before the guard clock");
+const dateOnly = { ...event, startAt: "2026-10-20", endAt: "2026-10-20" };
+assert.equal(reconcileFutureEventLosses({ ...partial, events: [] }, { ...previous, events: [dateOnly] }, { now: Date.parse("2026-10-21T02:59:00.000Z") }).blocked, true, "Date-only events remain protected until their Halifax day ends");
+assert.equal(reconcileFutureEventLosses({ ...partial, events: [] }, { ...previous, events: [dateOnly] }, { now: Date.parse("2026-10-21T03:00:00.000Z") }).ignoredPrevious[0].reason, "expired_previous_event");
 
 // Integration: failed closed means a review receipt is written but neither
 // generated candidate file is overwritten by the reconciliation step.

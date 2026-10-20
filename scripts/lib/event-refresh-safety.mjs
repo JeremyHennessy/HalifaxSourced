@@ -3,7 +3,7 @@ import { canonicalEventKey } from "./canonical-event-dedupe.mjs";
 const DAY = 86400000;
 const normalize = value => String(value || "").normalize("NFKD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
 const cancelled = event => Boolean(event.cancelled || event.canceled || event.cancelledAt || event.canceledAt)
-  || /cancelled|canceled|withdrawn|superseded/i.test(String(event.eventStatus || event.status || event.reviewState || ""));
+  || [event.eventStatus, event.status, event.reviewState].some(value => /cancelled|canceled|withdrawn|superseded/i.test(String(value || "")));
 
 function timestamp(value) {
   const text = String(value || "");
@@ -28,6 +28,20 @@ function eventDates(event) {
   return { start: timestamp(event.startAt), end: timestamp(event.endAt || event.startAt) };
 }
 
+function hasEnded(event, end, now) {
+  const endValue = String(event.endAt || event.startAt);
+  if (/^\d{4}-\d{2}-\d{2}$/.test(endValue)) {
+    // A date-only listing remains unexpired throughout its Halifax calendar
+    // day. Do not treat its parsed UTC midnight as a precise ending time.
+    const parts = new Intl.DateTimeFormat("en-CA", {
+      timeZone: "America/Halifax", year: "numeric", month: "2-digit", day: "2-digit"
+    }).formatToParts(new Date(now));
+    const part = type => parts.find(item => item.type === type).value;
+    return endValue < `${part("year")}-${part("month")}-${part("day")}`;
+  }
+  return end < now;
+}
+
 function sameListing(previous, current) {
   const previousUrl = url(previous.eventUrl);
   if (!previousUrl || previousUrl !== url(current.eventUrl)) return false;
@@ -48,7 +62,7 @@ function sameListing(previous, current) {
 export function reconcileFutureEventLosses(current, previous, options = {}) {
   const now = options.now ?? Date.now();
   if (!Number.isFinite(now)) throw new Error("Invalid refresh guard clock");
-  const minTime = now - Number(options.pastGraceHours ?? 6) * 3600000;
+  const recentStartCutoff = now - Number(options.pastGraceHours ?? 6) * 3600000;
   const maxTime = now + Number(options.futureDays ?? 400) * DAY;
   const currentEvents = current.events || [];
   const previousEvents = previous.events || [];
@@ -81,15 +95,18 @@ export function reconcileFutureEventLosses(current, previous, options = {}) {
       ignoredPrevious.push({ ...details, reason: "invalid_previous_record" });
       continue;
     }
-    if (end < minTime || start > maxTime) {
-      ignoredPrevious.push({ ...details, reason: end < minTime ? "expired_previous_event" : "outside_future_horizon" });
+    // Dataset retention grace is not event expiry: an event that ended an
+    // hour ago is no longer a future-event loss, even if still in the dataset.
+    const expired = hasEnded(event, end, now);
+    if (expired || start > maxTime) {
+      ignoredPrevious.push({ ...details, reason: expired ? "expired_previous_event" : "outside_future_horizon" });
       continue;
     }
     const stat = sourceStats.get(event.sourceId);
     const failed = stat?.status === "failed" || (!stat && failureIds.has(event.sourceId));
     // Ongoing listings with an old start can contain mistaken, stretched end
     // dates. Hold for review instead of automatically reviving those records.
-    if (start < minTime) {
+    if (start < recentStartCutoff) {
       heldRemovals.push({ ...details, reason: "missing_ongoing_event_requires_review", currentSourceStatus: stat?.status || "missing" });
       continue;
     }
