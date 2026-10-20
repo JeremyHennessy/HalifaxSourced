@@ -247,11 +247,20 @@ const result = vm.runInContext(`(() => {
     longRunningCard: cityEventCard(longRunning),
     calendar: simpleCalendar([ongoing]),
     dateOnlyTimeKind: eventTimeKind(dateOnly),
-    timedTimeKind: eventTimeKind(timed)
+    timedTimeKind: eventTimeKind(timed),
+    explicitCityNames: [
+      eventCityName({city: "Bedford", address: "15 Dartmouth Road, Bedford, NS B4A 3X6"}),
+      eventCityName({city: " halifax ", address: "Bedford Highway, Halifax"}),
+      eventCityName({city: "Dartmouth", address: "Halifax Street, Dartmouth"}),
+      eventCityName({address: "60 Alderney Drive, Dartmouth, NS"})
+    ],
+    bedfordCard: cityEventCard({...timed, city: "Bedford", address: "15 Dartmouth Road, Bedford, NS B4A 3X6"})
   };
 })()`, context);
 
 const failures = [];
+if (JSON.stringify(result.explicitCityNames) !== JSON.stringify(["Bedford", "Halifax", "Dartmouth", "Dartmouth"])) failures.push(`Explicit municipality must outrank street names; absent-city fallback must remain: ${JSON.stringify(result.explicitCityNames)}`);
+if (!result.bedfordCard.includes("Bedford") || result.bedfordCard.includes(" - Dartmouth - ")) failures.push("Bedford event card must not be labeled Dartmouth because of Dartmouth Road");
 if (result.dateOnlyStart !== "2026-09-04" || result.dateOnlyEnd !== "2026-09-04") failures.push(`date-only boundary keys shifted: ${JSON.stringify(result)}`);
 if (result.utcMidnightStart !== "2026-09-04" || result.utcMidnightEnd !== "2026-09-04") failures.push(`UTC-midnight all-day boundary keys shifted: ${JSON.stringify(result)}`);
 if (result.ongoingStart !== "2026-09-02" || result.ongoingEnd !== "2026-09-06") failures.push(`multi-day boundary keys shifted: ${JSON.stringify(result)}`);
