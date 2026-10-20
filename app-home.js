@@ -1,12 +1,15 @@
 "use strict";
+function homeOpeningLeads(items = activeRestaurants) {
+  return items.filter((restaurant) => restaurant.hasOpening === true)
+    .sort((a, b) => String(b.freshnessDate || b.signal?.observedAt || "").localeCompare(String(a.freshnessDate || a.signal?.observedAt || "")))
+    .slice(0, 4);
+}
+
 function renderHome() {
   const featured = activeRestaurants.slice().sort((a, b) => (b.score || 0) - (a.score || 0)).slice(0, 5);
   const specialLeads = activeRestaurants.filter((restaurant) => restaurant.hasSpecial).slice(0, 4);
   const cityEventItems = homeUpcomingCityEvents().slice(0, 4);
-  const openingLeads = activeRestaurants
-    .filter((restaurant) => restaurant.sourceLayer === "local_discovery" || restaurant.hasOpening)
-    .sort((a, b) => String(b.freshnessDate || b.signal?.observedAt || "").localeCompare(String(a.freshnessDate || a.signal?.observedAt || "")))
-    .slice(0, 4);
+  const openingLeads = homeOpeningLeads();
   const neighbourhoodCards = ["Downtown", "North End", "Dartmouth", "Waterfront"];
 
   appView.innerHTML = `
@@ -53,7 +56,7 @@ function renderHome() {
         ${miniHeader("Current special leads", "#specials")}
         <div class="lead-list">${specialLeads.length ? specialLeads.map(specialLeadRow).join("") : emptyLead("No special-source leads are loaded yet.")}</div>
       </div>
-      <div class="panel-card">
+      <div class="panel-card" data-home-openings>
         ${miniHeader("New & opening", "#explore?feature=opening")}
         <div class="lead-list">${openingLeads.length ? openingLeads.map(openingLeadRow).join("") : emptyLead("New-opening discovery is refreshing.")}</div>
       </div>

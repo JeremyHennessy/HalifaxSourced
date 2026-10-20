@@ -45,6 +45,16 @@ try {
   await page.goto(url+'/#restaurant/osm-node-37132554-press-gang',{waitUntil:'domcontentloaded'});
   await page.locator('.restaurant-title h1').waitFor();
   assert.match(await page.locator('.restaurant-title h1').innerText(),/Press Gang/);
+  await page.goto(url+'/#home',{waitUntil:'domcontentloaded'});
+  await page.locator('[data-home-openings]').waitFor();
+  const openings=await page.evaluate(()=>({
+   actual:[...document.querySelectorAll('[data-home-openings] .lead-row>a')].map(a=>decodeURIComponent(a.hash.replace('#restaurant/',''))),
+   expected:homeOpeningLeads().map(r=>r.id)
+  }));
+  assert(openings.actual.length>0,'Existing explicit opening leads remain visible');
+  assert.deepEqual(openings.actual,openings.expected);
+  for(const row of review.accepted) assert(!openings.actual.includes(row.id),'Established addition incorrectly labeled NEW: '+row.id);
+  await page.screenshot({path:`artifacts/regional-home-openings-${viewport.width}.png`,fullPage:true});
   assert.deepEqual(errors,[]);await page.close();
  }
  console.log('Regional browser acceptance passed: desktop/mobile area filters, separate outlets, un-geocoded lists, regional map bounds, seasonal detail and legacy alias routes.');
