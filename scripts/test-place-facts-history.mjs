@@ -5,6 +5,8 @@ import { join } from 'node:path';
 import { spawnSync } from 'node:child_process';
 import vm from 'node:vm';
 
+const workflow = await readFile(new URL('../.github/workflows/structured-place-facts-preview.yml', import.meta.url), 'utf8');
+assert(workflow.indexOf('node scripts/export-catalog.mjs') >= 0 && workflow.indexOf('node scripts/export-catalog.mjs') < workflow.indexOf('node scripts/import-structured-place-facts.mjs'), 'Preview must collect against current reviewed catalog, not historical committed snapshot');
 const root = await mkdtemp(join(tmpdir(), 'halifax-facts-history-'));
 try {
   await mkdir(join(root, 'scripts/lib'), { recursive: true });
