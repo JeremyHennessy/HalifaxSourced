@@ -69,6 +69,20 @@ async function captureIphone(name) {
 await page.goto(`${url}/#home`, { waitUntil: "networkidle" });
 await page.locator(".brand-link img").waitFor();
 await page.locator("h1", { hasText: "Local flavour" }).waitFor();
+// Decode every local CSS artwork, including fallbacks on other routes. A valid
+// HTTP response or WebP extension is not proof the downloaded asset is intact.
+const decodedCssArtwork = await page.evaluate(async () => {
+  const urls=new Set();
+  const visit=rules=>{for(const rule of rules){
+    for(const match of (rule.cssText||"").matchAll(/url\(["']?([^"')]+\.webp)["']?\)/g)) urls.add(new URL(match[1],document.baseURI).href);
+    if(rule.cssRules)visit(rule.cssRules);
+  }};
+  for(const sheet of document.styleSheets)if(sheet.href && new URL(sheet.href).origin===location.origin)visit(sheet.cssRules);
+  for(const url of urls){const image=new Image();image.src=url;await image.decode();if(!image.naturalWidth)throw new Error(`Undecodable CSS artwork: ${url}`);}
+  return [...urls];
+});
+if(decodedCssArtwork.length<4)throw new Error("Expected decoded home, footer, pattern and brand CSS artwork");
+
 const homeCards = await page.locator(".restaurant-card").count();
 if (homeCards < 4) throw new Error(`Expected at least 4 home restaurant cards, found ${homeCards}.`);
 const totals = await page.evaluate(() => ({

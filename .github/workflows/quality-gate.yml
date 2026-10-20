@@ -60,6 +60,7 @@ jobs:
           node scripts/test-inspection-location-matching.mjs
           node scripts/test-robots-redirect-guards.mjs
           node scripts/test-local-media-repair.mjs
+          node scripts/test-media-reference-contract.mjs
           node scripts/test-event-refresh-dedupe.mjs
           node scripts/test-canonical-event-dedupe.mjs
 
