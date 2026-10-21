@@ -117,10 +117,10 @@ function makeEvent(source, raw) {
 
 function simpleEventCategories(title) {
   const text = String(title || "").toLowerCase();
-  if (/market/.test(text)) return ["Markets", "Community"];
-  if (/movie|film|documentary|author|art|gallery|theatre|drama|craft|stitch|knit/.test(text)) return ["Arts", "Community"];
-  if (/music|concert|sing|dance/.test(text)) return ["Music", "Arts"];
-  if (/food|cook|tea|cafe/.test(text)) return ["Food & Drink", "Community"];
+  if (/\bmarkets?\b/.test(text)) return ["Markets", "Community"];
+  if (/\b(?:movies?|films?|documentary|authors?|writing|arts?|gallery|theatre|drama|craft(?:s|ers|ing)?|stitch(?:ing)?|knit(?:ting)?)\b/.test(text)) return ["Arts", "Community"];
+  if (/\b(?:music|concerts?|sing(?:s|ing|ers?|along)?|songs?|dance|dancing)\b/.test(text)) return ["Music", "Arts"];
+  if (/\b(?:food|cook(?:ing)?|tea|cafe)\b/.test(text)) return ["Food & Drink", "Community"];
   return ["Community"];
 }
 

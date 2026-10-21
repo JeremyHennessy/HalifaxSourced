@@ -7302,9 +7302,12 @@
         "address": "12286 Peggy's Cove Road, Glen Haven, NS B3Z 2R6",
         "phone": "902-821-2133",
         "website": "https://www.labourdaypicnic.com/",
-        "openingHours": null,
+        "openingHours": "Mo closed; Tu closed; We 08:00–15:00; Th 08:00–15:00; Fr 08:00–15:00; Sa 09:00–16:00; Su 09:00–16:00",
         "openingStatus": null,
-        "coordinates": null,
+        "coordinates": {
+          "lat": 44.6439,
+          "lon": -63.90953
+        },
         "operatingStatus": "active",
         "operatingStatusEvidence": {
           "claim": "Related owner business Lure Caramel Co.'s freshly fetched homepage explicitly locates itself at Labour Day Picnic Cafe, gives the exact civic location, and publishes a weekly service schedule. NSCC's directly retrieved 2025 guide independently establishes lunch fare, baked goods, espresso, local co-owners and the cafe/Lure relationship. Discover Halifax directly confirms the exact address, phone and official domain.",
@@ -7388,9 +7391,68 @@
             ],
             "freshContentReceived": true,
             "method": "authoritative_location_specific_mailto"
+          },
+          "coordinates": {
+            "status": "verified",
+            "sourceUrls": [
+              "https://www.labourdaypicnic.com/"
+            ],
+            "observedAt": "2026-10-21T01:49:08.958074+00:00",
+            "observation": "Owner home application location-hours block map Config.location explicitly pairs latitude/longitude with 12286 Peggys Cove Road,Glen Haven NSB 3 Z 2 R 6. This is business location, not map viewport or derived geocode.",
+            "successfulSourceReceipts": [
+              {
+                "url": "https://www.labourdaypicnic.com/",
+                "fetchedAt": "2026-10-21T01:47:25.760870+00:00",
+                "httpStatus": 200,
+                "sha256": "0643b77d3f2524468f0e19e5123e43bc01d424cfa61feddb4e5be4d21b9ccf90"
+              }
+            ],
+            "freshContentReceived": true
+          },
+          "hours": {
+            "status": "verified",
+            "sourceUrls": [
+              "https://www.labourdaypicnic.com/"
+            ],
+            "observedAt": "2026-10-21T01:49:08.958074+00:00",
+            "observation": "Owner home location-hours block has hidden:false and explicit seven-day readable schedule. Historical May 4–19 closure notice says reopening May 20 with regular hours, not current Octoberclosure. No competing weekly schedule found in returned homepage.",
+            "successfulSourceReceipts": [
+              {
+                "url": "https://www.labourdaypicnic.com/",
+                "fetchedAt": "2026-10-21T01:47:25.760870+00:00",
+                "httpStatus": 200,
+                "sha256": "0643b77d3f2524468f0e19e5123e43bc01d424cfa61feddb4e5be4d21b9ccf90"
+              }
+            ],
+            "freshContentReceived": true,
+            "publishedText": "Mo closed; Tu closed; We 08:00–15:00; Th 08:00–15:00; Fr 08:00–15:00; Sa 09:00–16:00; Su 09:00–16:00"
+          },
+          "menu": {
+            "status": "held",
+            "sourceUrls": [
+              "https://www.labourdaypicnic.com/",
+              "https://www.labourdaypicnic.com/shop/online-menu/RVZ7BTNJ3ADAOQFBGW26TWCH"
+            ],
+            "observedAt": "2026-10-21T01:49:43.976675+00:00",
+            "observation": "Owner homepage commerce Links names this exact Online Menu category. Destination returned 200 and title Online Menu | Labour Day Picnic Cafe, but no dishes were exposed in received application data. Destination established, menu content not verified; do not publish as a content-verified menu.",
+            "successfulSourceReceipts": [
+              {
+                "url": "https://www.labourdaypicnic.com/shop/online-menu/RVZ7BTNJ3ADAOQFBGW26TWCH",
+                "fetchedAt": "2026-10-21T01:49:43.976675+00:00",
+                "httpStatus": 200,
+                "sha256": "fbb6cf933d2c6956a6afdffc8811967e1d4996badd3f0387d4e525b9408549d7"
+              }
+            ],
+            "freshContentReceived": true,
+            "candidateUrl": "https://www.labourdaypicnic.com/shop/online-menu/RVZ7BTNJ3ADAOQFBGW26TWCH",
+            "contentVerified": false
           }
         },
-        "email": "hey@labourdaypicnic.com"
+        "email": "hey@labourdaypicnic.com",
+        "menu": null,
+        "openingHoursVerifiedAt": "2026-10-21T01:49:08.958074+00:00",
+        "hoursScope": "restaurant",
+        "hoursValidThrough": null
       }
     },
     {
@@ -7574,6 +7636,240 @@
         },
         "contactUrl": "https://www.thefourthlock.ca/"
       }
+    },
+    {
+      "id": "acadian-enzo-hammonds-plains",
+      "decision": "accepted_location",
+      "name": "Acadian Fish & Chips and Enzo Pizzeria",
+      "community": "Hammonds Plains",
+      "address": "1990 Hammonds Plains Road, Hammonds Plains, NS B4B 1P4",
+      "ownershipEvidence": "Nova Scotia Legislature Hansard, March 25 2025, identifies Brendan Chahine as owner of this Hammonds Plains restaurant. Current owner website confirms same identity and public dining service.",
+      "operationEvidence": "Fresh official homepage advertises dine-in and takeout, published restaurant hours and location-specific menu. Uber Eats platform removal is not business closure.",
+      "sourceUrls": [
+        "https://www.acadianenzo.com/",
+        "https://www.acadianenzo.com/menu",
+        "https://nslegislature.ca/sites/default/files/pdfs/proceedings/hansard/65-1/h22mar25.pdf"
+      ],
+      "observedAt": "2026-10-21T01:49:43.978102+00:00",
+      "successfulSourceReceipts": [
+        {
+          "url": "https://www.acadianenzo.com/",
+          "fetchedAt": "2026-10-21T01:49:36.845417+00:00",
+          "httpStatus": 200,
+          "sha256": "10488cf6babd1e2418c7482ba944ce6d86866f6f43356a2d5fd1f26b8ce450b1"
+        },
+        {
+          "url": "https://www.acadianenzo.com/menu",
+          "fetchedAt": "2026-10-21T01:49:40.797501+00:00",
+          "httpStatus": 200,
+          "sha256": "4cd6929a1fb61e6e5cc083831dc79f55d7e2917eb72de005ab88ec5368d3b3fd"
+        }
+      ],
+      "publishedFields": {
+        "id": "acadian-enzo-hammonds-plains",
+        "name": "Acadian Fish & Chips and Enzo Pizzeria",
+        "address": "1990 Hammonds Plains Road, Hammonds Plains, NS B4B 1P4",
+        "neighborhood": "Hammonds Plains",
+        "category": "Restaurant",
+        "website": "https://www.acadianenzo.com/",
+        "phone": "902-475-7000",
+        "coordinates": {
+          "lat": 44.7336246,
+          "lon": -63.7799126
+        },
+        "openingHours": "Mo 11:00–19:00; Tu 11:00–19:00; We 11:00–19:00; Th 11:00–19:00; Fr 11:00–20:00; Sa 11:00–20:00; Su 11:00–19:00",
+        "menuUrl": "https://www.acadianenzo.com/menu",
+        "operatingStatus": "active",
+        "cuisines": [
+          "Seafood",
+          "Pizza"
+        ],
+        "vibe": [],
+        "freshnessDate": "2026-10-21",
+        "evidenceStatus": "verified",
+        "hasOpening": false,
+        "openingStatus": null,
+        "seasonality": null,
+        "specials": [],
+        "events": [],
+        "summary": "Locally owned fish and chips and pizzeria in Hammonds Plains, offering dine-in and takeout.",
+        "operatingStatusEvidence": {
+          "claim": "Fresh official homepage advertises dine-in and takeout, published restaurant hours and location-specific menu. Uber Eats platform removal is not business closure.",
+          "sourceUrl": "https://www.acadianenzo.com/",
+          "location": "1990 Hammonds Plains Road, Hammonds Plains, NS B4B 1P4",
+          "observedAt": "2026-10-21T01:49:43.978102+00:00",
+          "verifiedAt": "2026-10-21T01:49:43.978102+00:00",
+          "reviewState": "verified"
+        },
+        "ownershipEvidence": {
+          "claim": "Nova Scotia Legislature Hansard, March 25 2025, identifies Brendan Chahine as owner of this Hammonds Plains restaurant. Current owner website confirms same identity and public dining service.",
+          "confidence": "reviewed local-business evidence",
+          "sourceUrls": [
+            "https://www.acadianenzo.com/",
+            "https://www.acadianenzo.com/menu",
+            "https://nslegislature.ca/sites/default/files/pdfs/proceedings/hansard/65-1/h22mar25.pdf"
+          ],
+          "observedAt": "2026-10-21T01:49:43.978102+00:00"
+        },
+        "sources": [
+          {
+            "label": "Reviewed identity, ownership or operation source",
+            "type": "restaurant_site",
+            "url": "https://www.acadianenzo.com/",
+            "status": "verified",
+            "observedAt": "2026-10-21T01:49:43.978102+00:00"
+          },
+          {
+            "label": "Official location menu",
+            "type": "menu",
+            "url": "https://www.acadianenzo.com/menu",
+            "status": "verified",
+            "observedAt": "2026-10-21T01:49:43.978102+00:00"
+          },
+          {
+            "label": "Reviewed identity, ownership or operation source",
+            "type": "regional_review_source",
+            "url": "https://nslegislature.ca/sites/default/files/pdfs/proceedings/hansard/65-1/h22mar25.pdf",
+            "status": "verified",
+            "observedAt": "2026-10-21T01:49:43.978102+00:00"
+          }
+        ],
+        "reviewNote": "Visible official hours explicitly include Sunday through Thursday; JSON-LD omits Monday, but does not contradict or state closed. Exact location coordinates are explicit owner Restaurant JSON-LD, not derived geocoding. No daily specials/prices imported; no photograph rights inferred. Owner evidence is dated 2025, not a new current corporate-registry check.",
+        "fieldEvidence": {
+          "coordinates": {
+            "status": "verified",
+            "sourceUrls": [
+              "https://www.acadianenzo.com/"
+            ],
+            "observedAt": "2026-10-21T01:49:43.978102+00:00",
+            "observation": "Fresh official homepage advertises dine-in and takeout, published restaurant hours and location-specific menu. Uber Eats platform removal is not business closure.",
+            "successfulSourceReceipts": [
+              {
+                "url": "https://www.acadianenzo.com/",
+                "fetchedAt": "2026-10-21T01:49:36.845417+00:00",
+                "httpStatus": 200,
+                "sha256": "10488cf6babd1e2418c7482ba944ce6d86866f6f43356a2d5fd1f26b8ce450b1"
+              },
+              {
+                "url": "https://www.acadianenzo.com/menu",
+                "fetchedAt": "2026-10-21T01:49:40.797501+00:00",
+                "httpStatus": 200,
+                "sha256": "4cd6929a1fb61e6e5cc083831dc79f55d7e2917eb72de005ab88ec5368d3b3fd"
+              }
+            ],
+            "freshContentReceived": true
+          },
+          "hours": {
+            "status": "verified",
+            "sourceUrls": [
+              "https://www.acadianenzo.com/"
+            ],
+            "observedAt": "2026-10-21T01:49:43.978102+00:00",
+            "observation": "Visible official hours explicitly include Sunday through Thursday; JSON-LD omits Monday, but does not contradict or state closed.",
+            "successfulSourceReceipts": [
+              {
+                "url": "https://www.acadianenzo.com/",
+                "fetchedAt": "2026-10-21T01:49:36.845417+00:00",
+                "httpStatus": 200,
+                "sha256": "10488cf6babd1e2418c7482ba944ce6d86866f6f43356a2d5fd1f26b8ce450b1"
+              },
+              {
+                "url": "https://www.acadianenzo.com/menu",
+                "fetchedAt": "2026-10-21T01:49:40.797501+00:00",
+                "httpStatus": 200,
+                "sha256": "4cd6929a1fb61e6e5cc083831dc79f55d7e2917eb72de005ab88ec5368d3b3fd"
+              }
+            ],
+            "freshContentReceived": true,
+            "publishedText": "Mo 11:00–19:00; Tu 11:00–19:00; We 11:00–19:00; Th 11:00–19:00; Fr 11:00–20:00; Sa 11:00–20:00; Su 11:00–19:00"
+          },
+          "menu": {
+            "status": "verified",
+            "sourceUrls": [
+              "https://www.acadianenzo.com/menu"
+            ],
+            "observedAt": "2026-10-21T01:49:43.978102+00:00",
+            "observation": "Fresh official homepage advertises dine-in and takeout, published restaurant hours and location-specific menu. Uber Eats platform removal is not business closure.",
+            "successfulSourceReceipts": [
+              {
+                "url": "https://www.acadianenzo.com/",
+                "fetchedAt": "2026-10-21T01:49:36.845417+00:00",
+                "httpStatus": 200,
+                "sha256": "10488cf6babd1e2418c7482ba944ce6d86866f6f43356a2d5fd1f26b8ce450b1"
+              },
+              {
+                "url": "https://www.acadianenzo.com/menu",
+                "fetchedAt": "2026-10-21T01:49:40.797501+00:00",
+                "httpStatus": 200,
+                "sha256": "4cd6929a1fb61e6e5cc083831dc79f55d7e2917eb72de005ab88ec5368d3b3fd"
+              }
+            ],
+            "freshContentReceived": true
+          },
+          "phone": {
+            "status": "verified",
+            "sourceUrls": [
+              "https://www.acadianenzo.com/"
+            ],
+            "observedAt": "2026-10-21T01:49:43.978102+00:00",
+            "observation": "Fresh official homepage advertises dine-in and takeout, published restaurant hours and location-specific menu. Uber Eats platform removal is not business closure.",
+            "successfulSourceReceipts": [
+              {
+                "url": "https://www.acadianenzo.com/",
+                "fetchedAt": "2026-10-21T01:49:36.845417+00:00",
+                "httpStatus": 200,
+                "sha256": "10488cf6babd1e2418c7482ba944ce6d86866f6f43356a2d5fd1f26b8ce450b1"
+              },
+              {
+                "url": "https://www.acadianenzo.com/menu",
+                "fetchedAt": "2026-10-21T01:49:40.797501+00:00",
+                "httpStatus": 200,
+                "sha256": "4cd6929a1fb61e6e5cc083831dc79f55d7e2917eb72de005ab88ec5368d3b3fd"
+              }
+            ],
+            "freshContentReceived": true
+          },
+          "contact": {
+            "status": "verified",
+            "sourceUrls": [
+              "https://www.acadianenzo.com/"
+            ],
+            "observedAt": "2026-10-21T01:49:43.978102+00:00",
+            "observation": "Fresh official homepage advertises dine-in and takeout, published restaurant hours and location-specific menu. Uber Eats platform removal is not business closure.",
+            "successfulSourceReceipts": [
+              {
+                "url": "https://www.acadianenzo.com/",
+                "fetchedAt": "2026-10-21T01:49:36.845417+00:00",
+                "httpStatus": 200,
+                "sha256": "10488cf6babd1e2418c7482ba944ce6d86866f6f43356a2d5fd1f26b8ce450b1"
+              },
+              {
+                "url": "https://www.acadianenzo.com/menu",
+                "fetchedAt": "2026-10-21T01:49:40.797501+00:00",
+                "httpStatus": 200,
+                "sha256": "4cd6929a1fb61e6e5cc083831dc79f55d7e2917eb72de005ab88ec5368d3b3fd"
+              }
+            ],
+            "freshContentReceived": true
+          }
+        },
+        "openingHoursVerifiedAt": "2026-10-21T01:49:43.978102+00:00",
+        "hoursScope": "restaurant",
+        "hoursValidThrough": null
+      },
+      "caveats": [
+        "Visible official hours explicitly include Sunday through Thursday; JSON-LD omits Monday, but does not contradict or state closed.",
+        "Exact location coordinates are explicit owner Restaurant JSON-LD, not derived geocoding.",
+        "No daily specials/prices imported; no photograph rights inferred.",
+        "Owner evidence is dated 2025, not a new current corporate-registry check."
+      ],
+      "researchGroup": "remaining-regional-review",
+      "fieldCaveats": [
+        "Visible official hours explicitly include Sunday through Thursday; JSON-LD omits Monday, but does not contradict or state closed.",
+        "Exact location coordinates are explicit owner Restaurant JSON-LD, not derived geocoding.",
+        "No daily specials/prices imported; no photograph rights inferred.",
+        "Owner evidence is dated 2025, not a new current corporate-registry check."
+      ]
     }
   ],
   "held": [
@@ -7599,14 +7895,6 @@
     },
     {
       "researchGroup": "coastal",
-      "name": "Bubba Magoos Bistro / BubbaEATS",
-      "community": "Peggy's Cove",
-      "address": "48 Peggy's Point Road, Peggy's Cove, NS",
-      "website": "https://www.bubbamagoos.com/",
-      "evidence": "Official site explicitly open, prepared food, dine-in upstairs 19+ and all-ages takeout/patio; exact address and phone. Build Nova Scotia corroborates at https://visitpeggyscove.ca/visitor-information/. Ownership not yet checked. Do not conflate with canonical Bubba Ray’s Sports Bar."
-    },
-    {
-      "researchGroup": "coastal",
       "name": "Cow Bay Pizza and Variety",
       "community": "Eastern Passage / Cow Bay corridor",
       "address": "388 Cow Bay Road, Eastern Passage, NS",
@@ -7628,62 +7916,6 @@
       "address": "4144 Lawrencetown Road, East Lawrencetown, NS B2Z 1R1",
       "source": "https://novascotia.com/listing/lawrencetown-beach-cafe/",
       "evidence": "Tourism confirms cafe, breakfast/lunch and year-round operation, but direct business social page not inspected. Historic Heron’s Nest Tearoom tenant references should not be treated as current."
-    },
-    {
-      "researchGroup": "coastal",
-      "name": "Rhubarb Restaurant",
-      "community": "Indian Harbour",
-      "formerAddress": "8650 Peggy’s Cove Road",
-      "website": "https://www.rhubarbrestaurant.ca/",
-      "evidence": "Observed redirect to https://hazels.ca/ with Hazel’s at 343 Main Street, Liverpool. Hold due to website identity mismatch; this alone does NOT prove Rhubarb closed. Requires independent current corroboration before active listing.",
-      "recommendation": "hold_identity_review",
-      "decision": "historical_identity_replaced_not_current",
-      "reason": "Do not add Rhubarb as currently operating. Watermark is a new restaurant identity at the former site, not a same-ID name correction or a duplicate. Hazel's is outside the present HRM/nearby boundary recommendation and must not inherit the Indian Harbour location.",
-      "supersededPriorClaim": "The initial coastal hold described the redirected Hazel's site as unrelated. Owner evidence now establishes related former operators, but a different restaurant in Liverpool. Do not use the old description as a domain-takeover conclusion.",
-      "successorId": "watermark-indian-harbour",
-      "transitionEvidence": [
-        {
-          "url": "https://hazels.ca/about",
-          "type": "former operators' first-party site",
-          "supports": "Jim and Diane explicitly describe their next chapter in Liverpool after more than 13 years serving Indian Harbour; the story names Rhubarb and the artwork carried forward. This resolves operator continuity, not location continuity."
-        },
-        {
-          "url": "https://halifax.retales.ca/2026/01/up-downs/",
-          "type": "dated independent local reporting",
-          "supports": "January 17, 2026 report identifies former Rhubarb premises and Oceanstone-run Watermark successor."
-        },
-        {
-          "url": "https://halifax.retales.ca/2026/06/sams-says-goodbye-moktu-says-hello/",
-          "type": "dated independent local reporting",
-          "supports": "June 6, 2026 report identifies Watermark taking over Rhubarb's space. Used for succession corroboration, not exact opening-date assertion."
-        },
-        {
-          "url": "https://watermarkrestaurant.ca/",
-          "type": "current first-party site",
-          "supports": "Current restaurant identity, address, phone, public daily lunch/dinner service."
-        }
-      ]
-    },
-    {
-      "researchGroup": "northern",
-      "name": "Edible Matters",
-      "decision": "exclude_closed",
-      "address": "1345 Hammonds Plains Road",
-      "reason": "Official homepage says permanently closed May 23, 2025 following property sale, despite live tourism and delivery listings.",
-      "sources": [
-        "https://ediblematters.com/"
-      ]
-    },
-    {
-      "researchGroup": "northern",
-      "name": "Jam’s Burgers & Shakes",
-      "decision": "exclude_closed",
-      "address": "8 Jam Lane, West Bedford",
-      "reason": "Official menu page footer says location is now CLOSED. Mirrored January 31, 2026 announcement says closing February 2. Tourism and chamber/RANS leads are stale.",
-      "sources": [
-        "https://jamsburgers.ca/menu/",
-        "https://www.findglocal.com/CA/Halifax/637142659474660/Jam%27s-Burgers-%26-Shakes"
-      ]
     },
     {
       "researchGroup": "northern",
@@ -7711,24 +7943,6 @@
       ]
     },
     {
-      "researchGroup": "northern",
-      "name": "Acadian Fish & Chips and Enzo Pizzeria",
-      "decision": "hold_address_and_status_resolution",
-      "address": "1990 Hammonds Plains Road (corroborated delivery platform, not extracted official page)",
-      "reason": "Official food site appears active, but exact civic address missing from extracted text and Uber Eats says closed on that platform since May 25, 2026. Platform removal alone does not mean restaurant closed. Historical local ownership exists but needs contemporary corroboration.",
-      "sources": [
-        "https://www.acadianenzo.com/",
-        "https://www.skipthedishes.com/arcadian-fish-and-chips"
-      ]
-    },
-    {
-      "researchGroup": "northern",
-      "name": "Enfield/Goffs airport candidates",
-      "decision": "hold_ownership_or_boundary",
-      "reason": "Airport La Cocina/Pizza Box local ownership not verified; airport concessions can be corporate. Several Enfield village restaurants and Aroma Maya may be East Hants rather than HRM. No unsupported HRM/local-ownership claim made.",
-      "sources": []
-    },
-    {
       "researchGroup": "western",
       "name": "Finer Diner",
       "address": "9976 Peggys Cove Road, Hacketts Cove, NS",
@@ -7742,30 +7956,6 @@
         "https://www.thecoast.ca/news-opinion/finer-dining-960942/"
       ],
       "lifecycleNote": "Regional tourism describes year-round service. Homepage word Seasonal concerns its presentation/ingredients and is not adequate evidence of seasonal closure. Do not import historical owners as current."
-    },
-    {
-      "researchGroup": "western",
-      "name": "Porters Lake Pub & Grill",
-      "address": "5228 Highway 7, Porters Lake, NS B3E 1J8",
-      "website": "https://porterslakepub.ca/",
-      "reasonHeld": "Official exact location, full family menu and takeout service confirmed, plus local business-association listing. Named current owners and locally owned status not established beyond visitor reviews.",
-      "sources": [
-        "https://porterslakepub.ca/about-our-pub/",
-        "https://www.porterslakebusiness.com/business-directory"
-      ],
-      "lifecycleNote": "No closure inference. Hold is ownership verification, not evidence of inactivity."
-    },
-    {
-      "researchGroup": "western",
-      "name": "Cow Bay Pizza and Variety",
-      "address": "388 Cow Bay Road, Eastern Passage, NS",
-      "website": "https://cowbaypizza.com/",
-      "reasonHeld": "Official address, menu, telephone and regular-service signals confirmed; active delivery menu confirms prepared meals. Current local ownership not established. Legal employer name alone does not prove local beneficial ownership.",
-      "sources": [
-        "https://cowbaypizza.com/",
-        "https://www.skipthedishes.com/cow-bay-pizza-and-variety"
-      ],
-      "lifecycleNote": "No closure inference; preserve separation of kitchen and convenience-store hours."
     },
     {
       "researchGroup": "western",
@@ -7837,32 +8027,6 @@
         "https://openinformation.novascotia.ca/api/views/f3f7-h4mx/files/6d3bb00b-5629-468f-b7a2-c728efa1e759?filename=2016-02656-ENV_PublicPackage.pdf"
       ],
       "lifecycleNote": "Directory presence is not current-operation proof; no permanent-closure conclusion."
-    },
-    {
-      "researchGroup": "valley",
-      "name": "Reid's Restaurant & Bakery",
-      "locality": "Middle Musquodoboit",
-      "reportedAddress": "105 Elm Street, Middle Musquodoboit, NS B0N 1X0",
-      "phone": "902-384-2424",
-      "category": "Restaurant and bakery",
-      "disposition": "high-priority current-operation and exact-address review",
-      "evidence": [
-        {
-          "url": "https://musquodoboitvalley.ca/reids-restaurant-bakery/",
-          "type": "community directory",
-          "supports": "Local family ownership, restaurant/bakery identity, address and phone; links a business Facebook page, which was not scraped."
-        },
-        {
-          "url": "https://emplois.ca.indeed.com/q-%24-l-middle-musquodoboit%2C-ns-jobs.html",
-          "type": "search-discovered recruitment lead",
-          "supports": "October 18, 2026 search result displays a server vacancy under this business name; this is only supplemental current-operation evidence, not exact-location first-party proof."
-        }
-      ],
-      "unresolved": [
-        "Some third-party listings call the street Elm Drive; prefer an exact owner or inspection address before admission.",
-        "No readable location-specific owner page or current menu/hours was verified."
-      ],
-      "duplicateCheck": "No Reid's matching name found in the 578-record baseline or existing data files."
     },
     {
       "researchGroup": "valley",
@@ -8285,6 +8449,192 @@
       "resolvedAt": "2026-10-20T22:59:00Z",
       "resolution": "Exact-location owner and corroborating sources qualified identity and current operation; uncertain fields remain held.",
       "acceptedId": "the-fourth-lock-fall-river"
+    },
+    {
+      "previous": {
+        "researchGroup": "coastal",
+        "name": "Bubba Magoos Bistro / BubbaEATS",
+        "community": "Peggy's Cove",
+        "address": "48 Peggy's Point Road, Peggy's Cove, NS",
+        "website": "https://www.bubbamagoos.com/",
+        "evidence": "Official site explicitly open, prepared food, dine-in upstairs 19+ and all-ages takeout/patio; exact address and phone. Build Nova Scotia corroborates at https://visitpeggyscove.ca/visitor-information/. Ownership not yet checked. Do not conflate with canonical Bubba Ray’s Sports Bar."
+      },
+      "resolvedAt": "2026-10-21T01:49:43.978102+00:00",
+      "resolution": "Already represented by bubba-magoos-peggys-cove; do not add again.",
+      "disposition": "already_accepted",
+      "acceptedId": null
+    },
+    {
+      "previous": {
+        "researchGroup": "coastal",
+        "name": "Rhubarb Restaurant",
+        "community": "Indian Harbour",
+        "formerAddress": "8650 Peggy’s Cove Road",
+        "website": "https://www.rhubarbrestaurant.ca/",
+        "evidence": "Observed redirect to https://hazels.ca/ with Hazel’s at 343 Main Street, Liverpool. Hold due to website identity mismatch; this alone does NOT prove Rhubarb closed. Requires independent current corroboration before active listing.",
+        "recommendation": "hold_identity_review",
+        "decision": "historical_identity_replaced_not_current",
+        "reason": "Do not add Rhubarb as currently operating. Watermark is a new restaurant identity at the former site, not a same-ID name correction or a duplicate. Hazel's is outside the present HRM/nearby boundary recommendation and must not inherit the Indian Harbour location.",
+        "supersededPriorClaim": "The initial coastal hold described the redirected Hazel's site as unrelated. Owner evidence now establishes related former operators, but a different restaurant in Liverpool. Do not use the old description as a domain-takeover conclusion.",
+        "successorId": "watermark-indian-harbour",
+        "transitionEvidence": [
+          {
+            "url": "https://hazels.ca/about",
+            "type": "former operators' first-party site",
+            "supports": "Jim and Diane explicitly describe their next chapter in Liverpool after more than 13 years serving Indian Harbour; the story names Rhubarb and the artwork carried forward. This resolves operator continuity, not location continuity."
+          },
+          {
+            "url": "https://halifax.retales.ca/2026/01/up-downs/",
+            "type": "dated independent local reporting",
+            "supports": "January 17, 2026 report identifies former Rhubarb premises and Oceanstone-run Watermark successor."
+          },
+          {
+            "url": "https://halifax.retales.ca/2026/06/sams-says-goodbye-moktu-says-hello/",
+            "type": "dated independent local reporting",
+            "supports": "June 6, 2026 report identifies Watermark taking over Rhubarb's space. Used for succession corroboration, not exact opening-date assertion."
+          },
+          {
+            "url": "https://watermarkrestaurant.ca/",
+            "type": "current first-party site",
+            "supports": "Current restaurant identity, address, phone, public daily lunch/dinner service."
+          }
+        ]
+      },
+      "resolvedAt": "2026-10-21T01:49:43.978102+00:00",
+      "resolution": "Former Rhubarb identity replaced at same address by accepted watermark-indian-harbour. Preserve history, not current restaurant candidate.",
+      "disposition": "resolved_historical_replacement",
+      "acceptedId": null
+    },
+    {
+      "previous": {
+        "researchGroup": "northern",
+        "name": "Edible Matters",
+        "decision": "exclude_closed",
+        "address": "1345 Hammonds Plains Road",
+        "reason": "Official homepage says permanently closed May 23, 2025 following property sale, despite live tourism and delivery listings.",
+        "sources": [
+          "https://ediblematters.com/"
+        ]
+      },
+      "resolvedAt": "2026-10-21T01:49:43.978102+00:00",
+      "resolution": "Retain previously verified May 23,2025 closure/sale evidence. Current homepage unavailable; do not refresh closure observation timestamp.",
+      "disposition": "confirmed_closed_prior_evidence",
+      "acceptedId": null
+    },
+    {
+      "previous": {
+        "researchGroup": "northern",
+        "name": "Jam’s Burgers & Shakes",
+        "decision": "exclude_closed",
+        "address": "8 Jam Lane, West Bedford",
+        "reason": "Official menu page footer says location is now CLOSED. Mirrored January 31, 2026 announcement says closing February 2. Tourism and chamber/RANS leads are stale.",
+        "sources": [
+          "https://jamsburgers.ca/menu/",
+          "https://www.findglocal.com/CA/Halifax/637142659474660/Jam%27s-Burgers-%26-Shakes"
+        ]
+      },
+      "resolvedAt": "2026-10-21T01:49:43.978102+00:00",
+      "resolution": "Retain prior owner closure announcement effective February 2,2026. Current menu fetch timed out; no fresh closure receipt.",
+      "disposition": "confirmed_closed_prior_evidence",
+      "acceptedId": null
+    },
+    {
+      "previous": {
+        "researchGroup": "northern",
+        "name": "Acadian Fish & Chips and Enzo Pizzeria",
+        "decision": "hold_address_and_status_resolution",
+        "address": "1990 Hammonds Plains Road (corroborated delivery platform, not extracted official page)",
+        "reason": "Official food site appears active, but exact civic address missing from extracted text and Uber Eats says closed on that platform since May 25, 2026. Platform removal alone does not mean restaurant closed. Historical local ownership exists but needs contemporary corroboration.",
+        "sources": [
+          "https://www.acadianenzo.com/",
+          "https://www.skipthedishes.com/arcadian-fish-and-chips"
+        ]
+      },
+      "resolvedAt": "2026-10-21T01:49:43.978102+00:00",
+      "resolution": "Official Restaurant JSON-LD now resolves exact 1990 Hammonds Plains Road and coordinates; live menu/dine-in/takeout plus 2025 Legislature recognition naming owner Brendan Chahine establish qualified local restaurant. Delivery-platform exit not business closure.",
+      "disposition": "qualified_addition",
+      "acceptedId": "acadian-enzo-hammonds-plains"
+    },
+    {
+      "previous": {
+        "researchGroup": "northern",
+        "name": "Enfield/Goffs airport candidates",
+        "decision": "hold_ownership_or_boundary",
+        "reason": "Airport La Cocina/Pizza Box local ownership not verified; airport concessions can be corporate. Several Enfield village restaurants and Aroma Maya may be East Hants rather than HRM. No unsupported HRM/local-ownership claim made.",
+        "sources": []
+      },
+      "resolvedAt": "2026-10-21T01:49:43.978102+00:00",
+      "resolution": "Enfield/Goffsairportcandidates is a discovery bucket, not a single restaurant; require named exact-location HRM candidates and independent eligibility.",
+      "disposition": "research_group_not_business",
+      "acceptedId": null
+    },
+    {
+      "previous": {
+        "researchGroup": "western",
+        "name": "Porters Lake Pub & Grill",
+        "address": "5228 Highway 7, Porters Lake, NS B3E 1J8",
+        "website": "https://porterslakepub.ca/",
+        "reasonHeld": "Official exact location, full family menu and takeout service confirmed, plus local business-association listing. Named current owners and locally owned status not established beyond visitor reviews.",
+        "sources": [
+          "https://porterslakepub.ca/about-our-pub/",
+          "https://www.porterslakebusiness.com/business-directory"
+        ],
+        "lifecycleNote": "No closure inference. Hold is ownership verification, not evidence of inactivity."
+      },
+      "resolvedAt": "2026-10-21T01:49:43.978102+00:00",
+      "resolution": "Same Porters Lake Pub as row 4; resolve duplicate without creating/deleting public restaurant.",
+      "disposition": "duplicate_research_row",
+      "acceptedId": null
+    },
+    {
+      "previous": {
+        "researchGroup": "western",
+        "name": "Cow Bay Pizza and Variety",
+        "address": "388 Cow Bay Road, Eastern Passage, NS",
+        "website": "https://cowbaypizza.com/",
+        "reasonHeld": "Official address, menu, telephone and regular-service signals confirmed; active delivery menu confirms prepared meals. Current local ownership not established. Legal employer name alone does not prove local beneficial ownership.",
+        "sources": [
+          "https://cowbaypizza.com/",
+          "https://www.skipthedishes.com/cow-bay-pizza-and-variety"
+        ],
+        "lifecycleNote": "No closure inference; preserve separation of kitchen and convenience-store hours."
+      },
+      "resolvedAt": "2026-10-21T01:49:43.978102+00:00",
+      "resolution": "Same Cow Bay Pizza as row 3; resolve duplicate without adding public restaurant.",
+      "disposition": "duplicate_research_row",
+      "acceptedId": null
+    },
+    {
+      "previous": {
+        "researchGroup": "valley",
+        "name": "Reid's Restaurant & Bakery",
+        "locality": "Middle Musquodoboit",
+        "reportedAddress": "105 Elm Street, Middle Musquodoboit, NS B0N 1X0",
+        "phone": "902-384-2424",
+        "category": "Restaurant and bakery",
+        "disposition": "high-priority current-operation and exact-address review",
+        "evidence": [
+          {
+            "url": "https://musquodoboitvalley.ca/reids-restaurant-bakery/",
+            "type": "community directory",
+            "supports": "Local family ownership, restaurant/bakery identity, address and phone; links a business Facebook page, which was not scraped."
+          },
+          {
+            "url": "https://emplois.ca.indeed.com/q-%24-l-middle-musquodoboit%2C-ns-jobs.html",
+            "type": "search-discovered recruitment lead",
+            "supports": "October 18, 2026 search result displays a server vacancy under this business name; this is only supplemental current-operation evidence, not exact-location first-party proof."
+          }
+        ],
+        "unresolved": [
+          "Some third-party listings call the street Elm Drive; prefer an exact owner or inspection address before admission.",
+          "No readable location-specific owner page or current menu/hours was verified."
+        ],
+        "duplicateCheck": "No Reid's matching name found in the 578-record baseline or existing data files."
+      },
+      "resolvedAt": "2026-10-21T01:49:43.978102+00:00",
+      "resolution": "Duplicate Reids row 10, same 105 Elm Street. Keep one research subject.",
+      "disposition": "duplicate_research_row",
+      "acceptedId": null
     }
   ]
 }

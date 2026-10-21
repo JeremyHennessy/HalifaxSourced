@@ -9,6 +9,7 @@ const buildDir = join(root, "data", "build");
 await mkdir(scriptsDir, { recursive: true });
 await mkdir(buildDir, { recursive: true });
 await copyFile(new URL("./build-structured-specials.mjs", import.meta.url), join(scriptsDir, "build-structured-specials.mjs"));
+await copyFile(new URL("../source-integrity.js", import.meta.url), join(root, "source-integrity.js"));
 const recent = new Date().toISOString();
 const catalog = {
   restaurants: [{

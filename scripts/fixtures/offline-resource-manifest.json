@@ -1236,6 +1236,86 @@
       "category": "historical-public-source-preview",
       "fixture": "../../assets/restaurants/the-narrows-exterior.jpg",
       "declarationBasis": "Exact existing historical owner-site image reference from data/restaurant-media-references.js. Browser offline fixture only; permission remains unknown, not approved or rehosted; no wildcard or source crawl."
+    },
+    {
+      "url": "https://b.tile.openstreetmap.org/15/10578/11821.png",
+      "method": "GET",
+      "resourceType": "image",
+      "category": "map-tile",
+      "fixture": "synthetic-map-tile.png",
+      "declarationBasis": "Individually reviewed exact request in Quality Gate 39532042236 job119000862304 from new Acadian (44.7336246,-63.7799126) and Picnic (44.6439,-63.90953) mobile detail maps. Zoom15 tile coordinates independently checked against owner-declared points. Offline synthetic fixture only; no external tile fetch, wildcard or automatic inventory expansion."
+    },
+    {
+      "url": "https://c.tile.openstreetmap.org/15/10578/11822.png",
+      "method": "GET",
+      "resourceType": "image",
+      "category": "map-tile",
+      "fixture": "synthetic-map-tile.png",
+      "declarationBasis": "Individually reviewed exact request in Quality Gate 39532042236 job119000862304 from new Acadian (44.7336246,-63.7799126) and Picnic (44.6439,-63.90953) mobile detail maps. Zoom15 tile coordinates independently checked against owner-declared points. Offline synthetic fixture only; no external tile fetch, wildcard or automatic inventory expansion."
+    },
+    {
+      "url": "https://a.tile.openstreetmap.org/15/10577/11821.png",
+      "method": "GET",
+      "resourceType": "image",
+      "category": "map-tile",
+      "fixture": "synthetic-map-tile.png",
+      "declarationBasis": "Individually reviewed exact request in Quality Gate 39532042236 job119000862304 from new Acadian (44.7336246,-63.7799126) and Picnic (44.6439,-63.90953) mobile detail maps. Zoom15 tile coordinates independently checked against owner-declared points. Offline synthetic fixture only; no external tile fetch, wildcard or automatic inventory expansion."
+    },
+    {
+      "url": "https://c.tile.openstreetmap.org/15/10579/11821.png",
+      "method": "GET",
+      "resourceType": "image",
+      "category": "map-tile",
+      "fixture": "synthetic-map-tile.png",
+      "declarationBasis": "Individually reviewed exact request in Quality Gate 39532042236 job119000862304 from new Acadian (44.7336246,-63.7799126) and Picnic (44.6439,-63.90953) mobile detail maps. Zoom15 tile coordinates independently checked against owner-declared points. Offline synthetic fixture only; no external tile fetch, wildcard or automatic inventory expansion."
+    },
+    {
+      "url": "https://b.tile.openstreetmap.org/15/10577/11822.png",
+      "method": "GET",
+      "resourceType": "image",
+      "category": "map-tile",
+      "fixture": "synthetic-map-tile.png",
+      "declarationBasis": "Individually reviewed exact request in Quality Gate 39532042236 job119000862304 from new Acadian (44.7336246,-63.7799126) and Picnic (44.6439,-63.90953) mobile detail maps. Zoom15 tile coordinates independently checked against owner-declared points. Offline synthetic fixture only; no external tile fetch, wildcard or automatic inventory expansion."
+    },
+    {
+      "url": "https://a.tile.openstreetmap.org/15/10579/11822.png",
+      "method": "GET",
+      "resourceType": "image",
+      "category": "map-tile",
+      "fixture": "synthetic-map-tile.png",
+      "declarationBasis": "Individually reviewed exact request in Quality Gate 39532042236 job119000862304 from new Acadian (44.7336246,-63.7799126) and Picnic (44.6439,-63.90953) mobile detail maps. Zoom15 tile coordinates independently checked against owner-declared points. Offline synthetic fixture only; no external tile fetch, wildcard or automatic inventory expansion."
+    },
+    {
+      "url": "https://a.tile.openstreetmap.org/15/10566/11832.png",
+      "method": "GET",
+      "resourceType": "image",
+      "category": "map-tile",
+      "fixture": "synthetic-map-tile.png",
+      "declarationBasis": "Individually reviewed exact request in Quality Gate 39532042236 job119000862304 from new Acadian (44.7336246,-63.7799126) and Picnic (44.6439,-63.90953) mobile detail maps. Zoom15 tile coordinates independently checked against owner-declared points. Offline synthetic fixture only; no external tile fetch, wildcard or automatic inventory expansion."
+    },
+    {
+      "url": "https://b.tile.openstreetmap.org/15/10567/11832.png",
+      "method": "GET",
+      "resourceType": "image",
+      "category": "map-tile",
+      "fixture": "synthetic-map-tile.png",
+      "declarationBasis": "Individually reviewed exact request in Quality Gate 39532042236 job119000862304 from new Acadian (44.7336246,-63.7799126) and Picnic (44.6439,-63.90953) mobile detail maps. Zoom15 tile coordinates independently checked against owner-declared points. Offline synthetic fixture only; no external tile fetch, wildcard or automatic inventory expansion."
+    },
+    {
+      "url": "https://b.tile.openstreetmap.org/15/10566/11833.png",
+      "method": "GET",
+      "resourceType": "image",
+      "category": "map-tile",
+      "fixture": "synthetic-map-tile.png",
+      "declarationBasis": "Individually reviewed exact request in Quality Gate 39532042236 job119000862304 from new Acadian (44.7336246,-63.7799126) and Picnic (44.6439,-63.90953) mobile detail maps. Zoom15 tile coordinates independently checked against owner-declared points. Offline synthetic fixture only; no external tile fetch, wildcard or automatic inventory expansion."
+    },
+    {
+      "url": "https://c.tile.openstreetmap.org/15/10567/11833.png",
+      "method": "GET",
+      "resourceType": "image",
+      "category": "map-tile",
+      "fixture": "synthetic-map-tile.png",
+      "declarationBasis": "Individually reviewed exact request in Quality Gate 39532042236 job119000862304 from new Acadian (44.7336246,-63.7799126) and Picnic (44.6439,-63.90953) mobile detail maps. Zoom15 tile coordinates independently checked against owner-declared points. Offline synthetic fixture only; no external tile fetch, wildcard or automatic inventory expansion."
     }
   ]
 }

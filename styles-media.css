@@ -79,6 +79,12 @@
 }
 .media-badge,.save-button,.special-image>span{z-index:3}
 
+/* Category-card pastels cannot sit behind white detail-hero text. Keep this
+   fallback separate from licensed-photo treatment and guarantee contrast. */
+.restaurant-hero:not(.has-permitted-image){
+  background-image:linear-gradient(135deg,#062b50,#14565d);
+  filter:none;
+}
 .restaurant-hero.has-permitted-image{background-image:none}
 .restaurant-hero.has-permitted-image::before{
   content:"";

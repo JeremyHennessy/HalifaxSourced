@@ -142,8 +142,8 @@ const websiteIds = uniqueIds(canonical.filter((restaurant) => validUrl(restauran
 for (const id of verifiedWebsiteIds) if (!websiteIds.has(id)) verifiedWebsiteIds.delete(id);
 const inspectionIds = uniqueIds(canonical.filter((restaurant) => (restaurant.inspectionRecords || []).length > 0).map((restaurant) => restaurant.id));
 
-const verifiedMenuIds = uniqueIds((verifiedPages.menuSources || []).map((source) => source.restaurantId));
-const verifiedSpecialIds = uniqueIds((verifiedPages.specialSources || []).map((source) => source.restaurantId));
+const verifiedMenuIds = uniqueIds((verifiedPages.menuSources || []).filter(source => integrity.pointerSafe(source.restaurantId, 'menu', source.url)).map((source) => source.restaurantId));
+const verifiedSpecialIds = uniqueIds((verifiedPages.specialSources || []).filter(source => integrity.pointerSafe(source.restaurantId, 'special', source.url)).map((source) => source.restaurantId));
 const menuIds = new Set(verifiedMenuIds);
 for (const resolution of reviewedResolutions) if (validUrl(resolution.menuUrl)) menuIds.add(resolution.restaurantId);
 // Reviewed additions can render audited menus without a historical parser or

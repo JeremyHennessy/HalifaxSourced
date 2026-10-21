@@ -407,9 +407,9 @@ await page.setViewportSize({ width: 390, height: 844 });
 await page.goto(`${url}/#restaurant/magnolia-halifax`, { waitUntil: "networkidle" });
 const magnoliaSpecialState = await page.evaluate(() => {
   const restaurant = restaurants.find((item) => item.id === "magnolia-halifax");
-  return { exists: Boolean(restaurant), structuredSpecials: restaurant?.structuredSpecials?.length || 0 };
+  return { exists: Boolean(restaurant), specials: (restaurant?.structuredSpecials || []).map(item => ({title:item.title, sourceUrl:item.sourceUrl})) };
 });
-if (!magnoliaSpecialState.exists || magnoliaSpecialState.structuredSpecials < 2) throw new Error(`Expected Magnolia discovery specials to resolve into the canonical model, got ${JSON.stringify(magnoliaSpecialState)}.`);
+if (!magnoliaSpecialState.exists || !magnoliaSpecialState.specials.some(item => item.title === 'Daily Happy Hour' && item.sourceUrl === 'https://www.magnoliahfx.com/') || magnoliaSpecialState.specials.some(item => item.sourceUrl.includes('trianglemenu_sept25.pdf'))) throw new Error(`Expected Magnolia discovery specials to resolve into the canonical model, got ${JSON.stringify(magnoliaSpecialState)}.`);
 await page.goto(`${url}/#restaurant/osm-node-11751643550-cafe-lunette`, { waitUntil: "networkidle" });
 await page.locator("#detailUpdates .official-update-card").first().waitFor();
 if (await page.locator("#detailUpdates .official-update-card").count() < 3) throw new Error("Expected official Café Lunette feed updates on restaurant detail.");

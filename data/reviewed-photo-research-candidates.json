@@ -1,0 +1,41 @@
+{
+  "version": 1,
+  "policy": "Research candidates require separate exact-location, decoded-byte and image-specific license assessment before automatic approval.",
+  "candidates": [
+    {
+      "id": "thumb-d8605dfcb802726bd7",
+      "restaurantId": "the-chickenburger-bedford",
+      "restaurantName": "The Chickenburger",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9d/The_Chickenburger_-_Bedford%2C_Nova_Scotia_%2846689654224%29.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_Chickenburger_-_Bedford,_Nova_Scotia_(46689654224).jpg",
+      "postUrl": null,
+      "pageUrl": null,
+      "platform": null,
+      "sourceKind": "verified_open_license_research",
+      "extractionMethod": "file_specific_license_and_visual_review",
+      "width": null,
+      "height": null,
+      "imageProbe": null,
+      "imageHost": "upload.wikimedia.org",
+      "sourceHost": "commons.wikimedia.org",
+      "officialHosts": [],
+      "sourceHostValidation": null,
+      "reviewState": "candidate_review",
+      "rightsStatus": "requires_rights_review",
+      "permission": null,
+      "permissionConfirmed": false,
+      "rightsBasis": null,
+      "attribution": null,
+      "alt": "The Chickenburger",
+      "confidence": "verified_exact_location_dated_photo",
+      "observedAt": "2026-10-21T01:52:45.370Z",
+      "publishedAt": null,
+      "title": null,
+      "category": null,
+      "eligibleForProduction": false,
+      "qualityFlags": [],
+      "reviewPriority": 50,
+      "promotionReviewState": "needs_visual_review"
+    }
+  ]
+}

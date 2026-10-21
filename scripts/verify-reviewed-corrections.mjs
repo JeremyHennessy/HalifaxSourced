@@ -18,6 +18,10 @@ try {
     ['sushi-square-scotia-square','current-sushi-square'],
     ['osm-way-671922221-mckelvie-s','current-mckelvies'],
     ['dear-friend','current-dear-friend'],
+    ['the-chickenburger-bedford','current-chickenburger'],
+    ['acadian-enzo-hammonds-plains','current-acadian-enzo'],
+    ['labour-day-picnic-cafe-glen-haven','current-picnic'],
+    ['osm-node-11552234300-sushi-nami-royale','current-sushi-nami-bayers'],
     ['hux-halifax','current-hux'],
     ['osm-node-4421124794-cafe-marco-polo','current-marco-polo'],
     ['evans-fresh-seafoods-dartmouth','current-evans-seafood'],
@@ -31,6 +35,14 @@ try {
       return {active:isRestaurantActive(place),hours:place.openingHours,phone:place.phone,address:place.address,image:Boolean(permittedImageFor(place)),actions:place.menuLinks.length+place.orderingLinks.length+place.reservationLinks.length,overflow:document.documentElement.scrollWidth-innerWidth};
     },id);
     assert(model.overflow<=2,label+' horizontal overflow');
+    if (label === 'current-chickenburger') {
+      assert(model.image); assert.equal(await page.locator('img[src*="chickenburger-bedford.jpg"]').count(),1);
+      assert.match(await page.locator('.media-attribution').first().innerText(),/September 2018/);
+      assert.equal(await page.locator('.media-license').first().getAttribute('href'),'https://creativecommons.org/licenses/by-sa/2.0/');
+    }
+    if (label === 'current-acadian-enzo') { assert(model.active); assert.equal(model.phone,'902-475-7000'); assert.match(model.hours,/Mo 11:00–19:00/); }
+    if (label === 'current-picnic') { assert.match(await page.locator('.restaurant-hero').evaluate(node=>getComputedStyle(node).backgroundImage),/rgb\(6, 43, 80\)/); assert.match(model.hours,/We 08:00–15:00/); assert.equal(await page.evaluate(()=>restaurants.find(r=>r.id==='labour-day-picnic-cafe-glen-haven').coordinates.lat),44.6439); }
+    if (label === 'current-sushi-nami-bayers') { assert(await page.evaluate(()=>restaurants.find(r=>r.id==='osm-node-11552234300-sushi-nami-royale').menuLinks.every(link=>!/\/(?:downtown-halifax|bedford-highway)\//.test(link.url)))); }
     if (label === 'current-dear-friend') {
       assert.equal(await page.locator('img[src*="dearfriendbar.com/assets/images/share.jpg"]').count(),0);
       assert(!resources.evidence.requests.some(r=>r.url==='https://dearfriendbar.com/assets/images/share.jpg?v=0108bfbb'),'Known unavailable image must not be requested');

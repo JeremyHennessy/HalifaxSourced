@@ -46,6 +46,51 @@
         "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
       },
       "modificationNote": "Photographed April 2023. Wikimedia resized version; otherwise unchanged."
+    },
+    {
+      "candidateId": "thumb-d8605dfcb802726bd7",
+      "restaurantId": "the-chickenburger-bedford",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9d/The_Chickenburger_-_Bedford%2C_Nova_Scotia_%2846689654224%29.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_Chickenburger_-_Bedford,_Nova_Scotia_(46689654224).jpg",
+      "assessedAt": "2026-10-21T01:52:45.370Z",
+      "assessedBy": "Automated image and source verification",
+      "assetPath": "assets/restaurants/chickenburger-bedford.jpg",
+      "alt": "Chickenburger branded cups inside the diner at 1531 Bedford Highway, photographed September 2018",
+      "captureDate": "2018-09-01",
+      "location": {
+        "verified": true,
+        "operatingStatus": "active",
+        "restaurantId": "the-chickenburger-bedford",
+        "address": "1531 Bedford Highway, Bedford, NS B4A 1E5",
+        "sourceUrl": "https://chickenburger.com/contact-us/",
+        "notes": "Commons file-specific location and active official same-address diner establish exact business. Actual decoded image shows branded cups and recognizable diner setting."
+      },
+      "visual": {
+        "inspected": true,
+        "verdict": "usable",
+        "sha256": "dbd9ee4a1817eb36d7536157344a073de5a458a97e1891342e85fe82f4d93c69",
+        "width": 1200,
+        "height": 675,
+        "notes": "Original and resized JPEG decoded and visually reviewed. Sharp branded cups with diner interior context, no overlay or watermark; background people unfocused. Historic September 2018 capture explicitly disclosed, not a claim of current appearance. No material mismatch established."
+      },
+      "rights": {
+        "verified": true,
+        "permissionConfirmed": true,
+        "localReproductionPermitted": true,
+        "conditionsSatisfied": true,
+        "usageConditions": "Credit Coastal Elite, link source and CC BY-SA 2.0, disclose 2018 capture and resizing. Share-alike applies to adaptations.",
+        "evidenceUrl": "https://commons.wikimedia.org/wiki/File:The_Chickenburger_-_Bedford,_Nova_Scotia_(46689654224).jpg",
+        "verifiedAt": "2026-10-21T01:48:00Z",
+        "notes": "Commons file-specific grant and FlickreviewR confirmation dated 2019-05-01.",
+        "sourceType": "licensed",
+        "permission": "licensed",
+        "creator": "Coastal Elite",
+        "license": "CC BY-SA 2.0",
+        "rightsBasis": "File-specific CC BY-SA 2.0 grant confirmed by Commons and FlickreviewR; resized without cropping or other modification.",
+        "attribution": "Coastal Elite, via Wikimedia Commons",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/"
+      },
+      "modificationNote": "Photographed September 2018. Resized to 1200 pixels wide; no crop or other modification."
     }
   ]
 }

@@ -47,6 +47,8 @@ jobs:
           node scripts/test-discovery-route-state.mjs
           node scripts/test-coverage-values.mjs
           node scripts/test-review-trust-contracts.mjs
+          node scripts/test-event-title-categories.mjs
+          node scripts/test-menu-pointer-audit.mjs
           node scripts/test-reviewed-hours-refresh.mjs
 
       - name: Test preview promotion contract and branch leases

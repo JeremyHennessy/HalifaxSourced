@@ -143,6 +143,10 @@ const curatedWithoutOsmMatch = curatedMatches.filter((item) => item.matchCount =
 if (curatedWithoutOsmMatch.length) warnings.push({ type: "curated_without_osm_name_match", count: curatedWithoutOsmMatch.length, examples: curatedWithoutOsmMatch });
 
 const rawIds = new Set([...curated.map((item) => item.id), ...osm.map((item) => item.id)]);
+// Reviewed discovered places belong to the canonical catalog even when absent
+// from the older raw OSM/curated inputs. Keep raw IDs for historical references.
+const canonicalCatalog = JSON.parse(await readFile(resolve('data', 'build', 'catalog.json'), 'utf8'));
+const mediaRestaurantIds = new Set([...rawIds, ...(canonicalCatalog.restaurants || []).map(item => item.id)]);
 const orphanSignals = official.filter((signal) => signal.restaurantId && !rawIds.has(signal.restaurantId));
 if (orphanSignals.length) warnings.push({ type: "official_signal_orphans", count: orphanSignals.length, examples: orphanSignals.slice(0, 20).map(({ restaurantId, name, website }) => ({ restaurantId, name, website })) });
 
@@ -163,13 +167,13 @@ const allowedMediaSources = new Set(["owner", "owner_submission", "restaurant_ow
 const allowedMediaPermissions = new Set(["permitted", "owner_approved", "written_permission", "owner_submitted", "licensed"]);
 const duplicateMedia = duplicateValues(mediaRecords, (record) => record.restaurantId && record.url ? `${record.restaurantId}|${record.url}` : null);
 if (duplicateMedia.length) failures.push({ type: "duplicate_media_records", values: duplicateMedia.slice(0, 25) });
-const invalidApprovedMedia = mediaRecords.filter((record) => !mediaPermitted(record) || token(record.reviewState) !== "approved" || !rawIds.has(record.restaurantId) || !validMediaUrl(record.url) || !validHttpUrl(record.sourceUrl) || !allowedMediaSources.has(token(record.sourceType)) || !allowedMediaPermissions.has(token(record.permission)) || record.permissionConfirmed !== true || !String(record.rightsBasis ?? "").trim());
+const invalidApprovedMedia = mediaRecords.filter((record) => !mediaPermitted(record) || token(record.reviewState) !== "approved" || !mediaRestaurantIds.has(record.restaurantId) || !validMediaUrl(record.url) || !validHttpUrl(record.sourceUrl) || !allowedMediaSources.has(token(record.sourceType)) || !allowedMediaPermissions.has(token(record.permission)) || record.permissionConfirmed !== true || !String(record.rightsBasis ?? "").trim());
 if (invalidApprovedMedia.length) failures.push({ type: "production_media_missing_provenance", count: invalidApprovedMedia.length, examples: invalidApprovedMedia.slice(0, 20) });
 const duplicateReferences = duplicateValues(mediaReferences, record => `${record.restaurantId}|${record.url}`);
 if (duplicateReferences.length) failures.push({type:"duplicate_media_source_references",values:duplicateReferences});
 const conflictingRoles = mediaReferences.filter(record => mediaRecords.some(media => media.restaurantId === record.restaurantId && media.url === record.url));
 if (conflictingRoles.length) failures.push({type:"conflicting_media_record_roles",count:conflictingRoles.length});
-const invalidReferences = mediaReferences.filter(record => !rawIds.has(record.restaurantId) || referenceProblems(record).length);
+const invalidReferences = mediaReferences.filter(record => !mediaRestaurantIds.has(record.restaurantId) || referenceProblems(record).length);
 if (invalidReferences.length) failures.push({type:"invalid_media_source_references",count:invalidReferences.length,examples:invalidReferences.slice(0,20)});
 const pendingOwnerMedia = ownerSubmissions.flatMap((submission) => (submission.images ?? []).map((image) => ({ restaurantId: submission.restaurantId, name: submission.name, ...image }))).filter((image) => token(image.reviewState) !== "approved");
 if (pendingOwnerMedia.length) warnings.push({ type: "owner_media_pending_review", count: pendingOwnerMedia.length, examples: pendingOwnerMedia.slice(0, 20).map(({ restaurantId, name, url, sourceType, reviewState }) => ({ restaurantId, name, url, sourceType, reviewState })) });
@@ -188,7 +192,7 @@ const allowedVerifiedSourceKinds = new Set(["official_page", "official_outbound_
 const allowedVerificationMethods = new Set(["reachable_official_page", "reachable_official_pdf", "linked_from_official_site"]);
 const invalidVerifiedSources = verifiedSources.filter((record) => {
   const kind = token(record.kind);
-  return !rawIds.has(record.restaurantId) ||
+  return !mediaRestaurantIds.has(record.restaurantId) ||
     !["menu", "specials"].includes(kind) ||
     !String(record.label ?? "").trim() ||
     !validHttpUrl(record.url) ||

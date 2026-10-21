@@ -1,0 +1,125 @@
+{
+  "reviewedAt": "2026-10-21T01:48:00Z",
+  "scope": "Bounded targeted Commons category and landmark restaurant audit for Halifax, Dartmouth, Bedford and Peggy's Cove; not an exhaustive claim about all available photography.",
+  "readyForPublication": [
+    "the-chickenburger-bedford"
+  ],
+  "candidates": [
+    {
+      "restaurantId": "the-chickenburger-bedford",
+      "name": "The Chickenburger",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_Chickenburger_-_Bedford,_Nova_Scotia_(46689654224).jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9d/The_Chickenburger_-_Bedford%2C_Nova_Scotia_%2846689654224%29.jpg",
+      "captureDate": "2018-09-01",
+      "creator": "Coastal Elite",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "rightsVerified": true,
+      "licenseReview": "Commons file-specific grant and FlickreviewR confirmation dated 2019-05-01.",
+      "address": "1531 Bedford Highway, Bedford, NS B4A 1E5",
+      "metadataLocationVerified": true,
+      "coordinates": [
+        44.7315,
+        -63.6572
+      ],
+      "dimensions": [
+        5472,
+        3080
+      ],
+      "continuityEvidence": [
+        "https://chickenburger.com/",
+        "https://chickenburger.com/about-us/",
+        "https://chickenburger.com/contact-us/"
+      ],
+      "continuityNotes": "Official website describes 86 years of continuous local tradition from 1940, same Bedford address and nostalgic diner setting. Matching active canonical record already verified 2026-10-20.",
+      "visualInspected": true,
+      "disposition": "qualified_after_decoded_image_review",
+      "requiredBeforePublication": "Download and decode actual image, assess subject framing and current-material appearance mismatch. Credit Coastal Elite, link source and CC BY-SA 2.0, disclose capture date and any resizing/cropping. Same-year capture is not required if no material mismatch.",
+      "ownerComparisonImageUrl": "https://chickenburger.com/wp-content/uploads/2020/09/333.jpg",
+      "ownerComparisonNote": "Official contact-page image; not itself licensed for reuse and capture date unverified. Use only for comparison.",
+      "alternateSourceUrl": "https://commons.wikimedia.org/wiki/File:Inside_The_Chickenburger_(46479832615).jpg",
+      "alternateNotes": "Same creator, date, address and CC BY-SA 2.0; seating-area image. Metadata verified but not visually inspected.",
+      "assetSha256": "dbd9ee4a1817eb36d7536157344a073de5a458a97e1891342e85fe82f4d93c69"
+    },
+    {
+      "name": "Robert's Pizza Donairs & Subs",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Roberts_Pizza_%5E_Donairs_-_panoramio.jpg",
+      "captureDate": "2009-10-15",
+      "creator": "Larry LaRose",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "rightsVerified": true,
+      "coordinates": [
+        44.681005,
+        -63.595605
+      ],
+      "dimensions": [
+        4000,
+        3000
+      ],
+      "address": "364 Windmill Road, Dartmouth",
+      "disposition": "hold_pending_business_qualification_and_visual_review",
+      "notes": "Not in current 626-record catalog. Current ordering listing matches address but is not ownership proof. Sent lead to restaurant researcher; do not attach to an unrelated restaurant.",
+      "corroborationUrl": "https://order.online/store/robert-s-pizza-donairs-subs-windmill-road-616763"
+    },
+    {
+      "restaurantId": "souwester-peggys-cove",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sou%27wester_Restaurant_(15800238254).jpg",
+      "dimensions": [
+        3872,
+        2592
+      ],
+      "continuityEvidence": [
+        "https://shoppeggyscove.com/"
+      ],
+      "disposition": "hold_missing_file_specific_license_capture_date_and_visual_review",
+      "notes": "Indexed in Commons Coasts, Clouds and Houses of Nova Scotia categories. Exact file page inaccessible through web tool; category alone does not establish license. Official site confirms original-family operation and active restaurant but is not permission to reuse its images."
+    },
+    {
+      "restaurantId": "osm-node-1689418196-split-crow",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Split_crow_open_mic_(7914932082).jpg",
+      "captureDate": "2012-08-26",
+      "dimensions": [
+        2592,
+        1936
+      ],
+      "disposition": "hold_missing_file_specific_license_and_visual_review",
+      "notes": "Date supported by Commons category Canada photographs taken on 2012-08-26. Exact file page unavailable. Open-mic event image may not be a good primary restaurant thumbnail."
+    }
+  ],
+  "rejectedOrScreenedOut": [
+    {
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:King_of_Donairs.JPG",
+      "reason": "2006-07-29 SimonP image depicts old Pizza Corner location, not any current catalog location at Quinpool, Lacewood or Windmill. Wrong location."
+    },
+    {
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Richard_Rockhard.jpg",
+      "reason": "2023-10-15 Old Triangle drag-brunch portrait. Event/performer subject, not a useful primary business view; no approved asset."
+    },
+    {
+      "sourceUrl": "https://commons.wikimedia.org/wiki/Category:Alexander_Keith%27s_Brewery",
+      "reason": "Brewery landmark category does not map to an existing exact restaurant record. Do not substitute brewery exterior for adjacent or former restaurants."
+    },
+    {
+      "sourceUrl": "https://commons.wikimedia.org/wiki/Category:Restaurants_in_Dartmouth,_Nova_Scotia",
+      "reason": "Six indexed files: existing Smitty's/Wooden Monkey duplicates, general Alderney Landing, food-only image, national chain imagery and Robin's Donuts without exact location verification. No additional ready asset."
+    },
+    {
+      "sourceUrl": "https://commons.wikimedia.org/wiki/Category:Caf%C3%A9s_in_Halifax,_Nova_Scotia",
+      "reason": "Existing Trident duplicates and historical/uncertain café identities. No exact current-business candidate approved."
+    },
+    {
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Facade_(7643908068).jpg",
+      "reason": "Exact file fetch unavailable; restaurant identity and license not verified."
+    },
+    {
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:DSC07538_(7397616080).jpg",
+      "reason": "Exact file fetch unavailable; restaurant identity and license not verified."
+    }
+  ],
+  "preserveExistingDecisions": [
+    "Do not reinstate Dear Friend confirmed404 thumbnail.",
+    "Do not reinstate Boondocks2008 image with documented material exterior mismatch.",
+    "Do not mark official unlicensed photos reusable merely because website is noncommercial."
+  ]
+}

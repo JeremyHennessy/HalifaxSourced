@@ -7748,13 +7748,68 @@ window.HALIFAX_DISCOVERED_RESTAURANTS = [
         ],
         "freshContentReceived": true,
         "method": "authoritative_location_specific_mailto"
+      },
+      "coordinates": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.labourdaypicnic.com/"
+        ],
+        "observedAt": "2026-10-21T01:49:08.958074+00:00",
+        "observation": "Owner home application location-hours block map Config.location explicitly pairs latitude/longitude with 12286 Peggys Cove Road,Glen Haven NSB 3 Z 2 R 6. This is business location, not map viewport or derived geocode.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://www.labourdaypicnic.com/",
+            "fetchedAt": "2026-10-21T01:47:25.760870+00:00",
+            "httpStatus": 200,
+            "sha256": "0643b77d3f2524468f0e19e5123e43bc01d424cfa61feddb4e5be4d21b9ccf90"
+          }
+        ],
+        "freshContentReceived": true
+      },
+      "hours": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.labourdaypicnic.com/"
+        ],
+        "observedAt": "2026-10-21T01:49:08.958074+00:00",
+        "observation": "Owner home location-hours block has hidden:false and explicit seven-day readable schedule. Historical May 4–19 closure notice says reopening May 20 with regular hours, not current Octoberclosure. No competing weekly schedule found in returned homepage.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://www.labourdaypicnic.com/",
+            "fetchedAt": "2026-10-21T01:47:25.760870+00:00",
+            "httpStatus": 200,
+            "sha256": "0643b77d3f2524468f0e19e5123e43bc01d424cfa61feddb4e5be4d21b9ccf90"
+          }
+        ],
+        "freshContentReceived": true,
+        "publishedText": "Mo closed; Tu closed; We 08:00–15:00; Th 08:00–15:00; Fr 08:00–15:00; Sa 09:00–16:00; Su 09:00–16:00"
+      },
+      "menu": {
+        "status": "held",
+        "sourceUrls": [
+          "https://www.labourdaypicnic.com/",
+          "https://www.labourdaypicnic.com/shop/online-menu/RVZ7BTNJ3ADAOQFBGW26TWCH"
+        ],
+        "observedAt": "2026-10-21T01:49:43.976675+00:00",
+        "observation": "Owner homepage commerce Links names this exact Online Menu category. Destination returned 200 and title Online Menu | Labour Day Picnic Cafe, but no dishes were exposed in received application data. Destination established, menu content not verified; do not publish as a content-verified menu.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://www.labourdaypicnic.com/shop/online-menu/RVZ7BTNJ3ADAOQFBGW26TWCH",
+            "fetchedAt": "2026-10-21T01:49:43.976675+00:00",
+            "httpStatus": 200,
+            "sha256": "fbb6cf933d2c6956a6afdffc8811967e1d4996badd3f0387d4e525b9408549d7"
+          }
+        ],
+        "freshContentReceived": true,
+        "candidateUrl": "https://www.labourdaypicnic.com/shop/online-menu/RVZ7BTNJ3ADAOQFBGW26TWCH",
+        "contentVerified": false
       }
     },
-    "openingHoursVerifiedAt": null,
+    "openingHoursVerifiedAt": "2026-10-21T01:49:08.958074+00:00",
     "hoursValidThrough": null,
-    "hoursScope": null,
+    "hoursScope": "restaurant",
     "website": "https://www.labourdaypicnic.com/",
-    "openingHours": null,
+    "openingHours": "Mo closed; Tu closed; We 08:00–15:00; Th 08:00–15:00; Fr 08:00–15:00; Sa 09:00–16:00; Su 09:00–16:00",
     "operatingStatus": "active",
     "operatingStatusEvidence": {
       "claim": "Related owner business Lure Caramel Co.'s freshly fetched homepage explicitly locates itself at Labour Day Picnic Cafe, gives the exact civic location, and publishes a weekly service schedule. NSCC's directly retrieved 2025 guide independently establishes lunch fare, baked goods, espresso, local co-owners and the cafe/Lure relationship. Discover Halifax directly confirms the exact address, phone and official domain.",
@@ -7777,7 +7832,10 @@ window.HALIFAX_DISCOVERED_RESTAURANTS = [
       "observedAt": "2026-10-20T22:59:00Z"
     },
     "openingStatus": null,
-    "coordinates": null,
+    "coordinates": {
+      "lat": 44.6439,
+      "lon": -63.90953
+    },
     "socialProfiles": [],
     "summary": "Glen Haven cafe serving espresso, house-made baked goods, light lunches and Lure Caramel Co. chocolates.",
     "specials": [],
@@ -7978,6 +8036,207 @@ window.HALIFAX_DISCOVERED_RESTAURANTS = [
       "approvedByOverride": true,
       "sourceLeadObserved": false,
       "reviewNote": "This is Fall River, not Waverley proper. Do not relabel it to fill the Waverley gap. Owner homepage explicitly says closing hours depend on business volume and the kitchen usually stays open until 9pm. Do not turn 'usually' into a fixed daily closing time. Menu PDF is the owner's currently linked 2026 Summer Menu; do not label its prices or seasonal dishes as a guaranteed October menu. No named 2026 ownership-register confirmation obtained; preserve the 2022 provenance rather than claiming a fresh legal ownership audit. One restaurant record only. The B&B at the same address is not an additional restaurant. Phone withheld: visible homepage text 902-861-4454 conflicts with its own JSON-LD and malformed tel link 902-861-1334, also used by tourism. Do not choose one without resolution. Coordinates come explicitly from the named business location in the fresh owner Wix SEO context and match its exact civic address; no coordinates were invented."
+    }
+  },
+  {
+    "id": "acadian-enzo-hammonds-plains",
+    "name": "Acadian Fish & Chips and Enzo Pizzeria",
+    "neighborhood": "Hammonds Plains",
+    "category": "Restaurant",
+    "cuisines": [
+      "Seafood",
+      "Pizza"
+    ],
+    "vibe": [],
+    "qualityScore": null,
+    "freshnessDate": "2026-10-21",
+    "evidenceStatus": "verified",
+    "sourceLayer": "local_discovery",
+    "address": "1990 Hammonds Plains Road, Hammonds Plains, NS B4B 1P4",
+    "phone": "902-475-7000",
+    "email": null,
+    "contactUrl": null,
+    "contactScope": null,
+    "fieldEvidence": {
+      "coordinates": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.acadianenzo.com/"
+        ],
+        "observedAt": "2026-10-21T01:49:43.978102+00:00",
+        "observation": "Fresh official homepage advertises dine-in and takeout, published restaurant hours and location-specific menu. Uber Eats platform removal is not business closure.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://www.acadianenzo.com/",
+            "fetchedAt": "2026-10-21T01:49:36.845417+00:00",
+            "httpStatus": 200,
+            "sha256": "10488cf6babd1e2418c7482ba944ce6d86866f6f43356a2d5fd1f26b8ce450b1"
+          },
+          {
+            "url": "https://www.acadianenzo.com/menu",
+            "fetchedAt": "2026-10-21T01:49:40.797501+00:00",
+            "httpStatus": 200,
+            "sha256": "4cd6929a1fb61e6e5cc083831dc79f55d7e2917eb72de005ab88ec5368d3b3fd"
+          }
+        ],
+        "freshContentReceived": true
+      },
+      "hours": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.acadianenzo.com/"
+        ],
+        "observedAt": "2026-10-21T01:49:43.978102+00:00",
+        "observation": "Visible official hours explicitly include Sunday through Thursday; JSON-LD omits Monday, but does not contradict or state closed.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://www.acadianenzo.com/",
+            "fetchedAt": "2026-10-21T01:49:36.845417+00:00",
+            "httpStatus": 200,
+            "sha256": "10488cf6babd1e2418c7482ba944ce6d86866f6f43356a2d5fd1f26b8ce450b1"
+          },
+          {
+            "url": "https://www.acadianenzo.com/menu",
+            "fetchedAt": "2026-10-21T01:49:40.797501+00:00",
+            "httpStatus": 200,
+            "sha256": "4cd6929a1fb61e6e5cc083831dc79f55d7e2917eb72de005ab88ec5368d3b3fd"
+          }
+        ],
+        "freshContentReceived": true,
+        "publishedText": "Mo 11:00–19:00; Tu 11:00–19:00; We 11:00–19:00; Th 11:00–19:00; Fr 11:00–20:00; Sa 11:00–20:00; Su 11:00–19:00"
+      },
+      "menu": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.acadianenzo.com/menu"
+        ],
+        "observedAt": "2026-10-21T01:49:43.978102+00:00",
+        "observation": "Fresh official homepage advertises dine-in and takeout, published restaurant hours and location-specific menu. Uber Eats platform removal is not business closure.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://www.acadianenzo.com/",
+            "fetchedAt": "2026-10-21T01:49:36.845417+00:00",
+            "httpStatus": 200,
+            "sha256": "10488cf6babd1e2418c7482ba944ce6d86866f6f43356a2d5fd1f26b8ce450b1"
+          },
+          {
+            "url": "https://www.acadianenzo.com/menu",
+            "fetchedAt": "2026-10-21T01:49:40.797501+00:00",
+            "httpStatus": 200,
+            "sha256": "4cd6929a1fb61e6e5cc083831dc79f55d7e2917eb72de005ab88ec5368d3b3fd"
+          }
+        ],
+        "freshContentReceived": true
+      },
+      "phone": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.acadianenzo.com/"
+        ],
+        "observedAt": "2026-10-21T01:49:43.978102+00:00",
+        "observation": "Fresh official homepage advertises dine-in and takeout, published restaurant hours and location-specific menu. Uber Eats platform removal is not business closure.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://www.acadianenzo.com/",
+            "fetchedAt": "2026-10-21T01:49:36.845417+00:00",
+            "httpStatus": 200,
+            "sha256": "10488cf6babd1e2418c7482ba944ce6d86866f6f43356a2d5fd1f26b8ce450b1"
+          },
+          {
+            "url": "https://www.acadianenzo.com/menu",
+            "fetchedAt": "2026-10-21T01:49:40.797501+00:00",
+            "httpStatus": 200,
+            "sha256": "4cd6929a1fb61e6e5cc083831dc79f55d7e2917eb72de005ab88ec5368d3b3fd"
+          }
+        ],
+        "freshContentReceived": true
+      },
+      "contact": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.acadianenzo.com/"
+        ],
+        "observedAt": "2026-10-21T01:49:43.978102+00:00",
+        "observation": "Fresh official homepage advertises dine-in and takeout, published restaurant hours and location-specific menu. Uber Eats platform removal is not business closure.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://www.acadianenzo.com/",
+            "fetchedAt": "2026-10-21T01:49:36.845417+00:00",
+            "httpStatus": 200,
+            "sha256": "10488cf6babd1e2418c7482ba944ce6d86866f6f43356a2d5fd1f26b8ce450b1"
+          },
+          {
+            "url": "https://www.acadianenzo.com/menu",
+            "fetchedAt": "2026-10-21T01:49:40.797501+00:00",
+            "httpStatus": 200,
+            "sha256": "4cd6929a1fb61e6e5cc083831dc79f55d7e2917eb72de005ab88ec5368d3b3fd"
+          }
+        ],
+        "freshContentReceived": true
+      }
+    },
+    "openingHoursVerifiedAt": "2026-10-21T01:49:43.978102+00:00",
+    "hoursValidThrough": null,
+    "hoursScope": "restaurant",
+    "website": "https://www.acadianenzo.com/",
+    "openingHours": "Mo 11:00–19:00; Tu 11:00–19:00; We 11:00–19:00; Th 11:00–19:00; Fr 11:00–20:00; Sa 11:00–20:00; Su 11:00–19:00",
+    "operatingStatus": "active",
+    "operatingStatusEvidence": {
+      "claim": "Fresh official homepage advertises dine-in and takeout, published restaurant hours and location-specific menu. Uber Eats platform removal is not business closure.",
+      "sourceUrl": "https://www.acadianenzo.com/",
+      "location": "1990 Hammonds Plains Road, Hammonds Plains, NS B4B 1P4",
+      "observedAt": "2026-10-21T01:49:43.978102+00:00",
+      "verifiedAt": "2026-10-21T01:49:43.978102+00:00",
+      "reviewState": "verified"
+    },
+    "seasonality": null,
+    "lifecycleSchedule": null,
+    "ownershipEvidence": {
+      "claim": "Nova Scotia Legislature Hansard, March 25 2025, identifies Brendan Chahine as owner of this Hammonds Plains restaurant. Current owner website confirms same identity and public dining service.",
+      "confidence": "reviewed local-business evidence",
+      "sourceUrls": [
+        "https://www.acadianenzo.com/",
+        "https://www.acadianenzo.com/menu",
+        "https://nslegislature.ca/sites/default/files/pdfs/proceedings/hansard/65-1/h22mar25.pdf"
+      ],
+      "observedAt": "2026-10-21T01:49:43.978102+00:00"
+    },
+    "openingStatus": null,
+    "coordinates": {
+      "lat": 44.7336246,
+      "lon": -63.7799126
+    },
+    "socialProfiles": [],
+    "summary": "Locally owned fish and chips and pizzeria in Hammonds Plains, offering dine-in and takeout.",
+    "specials": [],
+    "events": [],
+    "sources": [
+      {
+        "label": "Reviewed identity, ownership or operation source",
+        "type": "restaurant_site",
+        "url": "https://www.acadianenzo.com/",
+        "status": "verified",
+        "observedAt": "2026-10-21T01:49:43.978102+00:00"
+      },
+      {
+        "label": "Official location menu",
+        "type": "menu",
+        "url": "https://www.acadianenzo.com/menu",
+        "status": "verified",
+        "observedAt": "2026-10-21T01:49:43.978102+00:00"
+      },
+      {
+        "label": "Reviewed identity, ownership or operation source",
+        "type": "regional_review_source",
+        "url": "https://nslegislature.ca/sites/default/files/pdfs/proceedings/hansard/65-1/h22mar25.pdf",
+        "status": "verified",
+        "observedAt": "2026-10-21T01:49:43.978102+00:00"
+      }
+    ],
+    "discoveryReview": {
+      "approvedByOverride": true,
+      "sourceLeadObserved": false,
+      "reviewNote": "Visible official hours explicitly include Sunday through Thursday; JSON-LD omits Monday, but does not contradict or state closed. Exact location coordinates are explicit owner Restaurant JSON-LD, not derived geocoding. No daily specials/prices imported; no photograph rights inferred. Owner evidence is dated 2025, not a new current corporate-registry check."
     }
   }
 ];

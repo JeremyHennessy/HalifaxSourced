@@ -1,0 +1,281 @@
+[
+  {
+    "restaurantId": "osm-node-11526163876-starbucks",
+    "kind": "menu",
+    "url": "https://dal.mydininghub.ca/en/account?section=my-menu",
+    "reason": "non_menu_or_special_destination",
+    "evidenceUrl": "https://dal.mydininghub.ca/en/account?section=my-menu",
+    "auditAttemptedAt": "2026-10-21T01:44:24.075Z",
+    "httpStatus": 200
+  },
+  {
+    "restaurantId": "osm-node-11526163877-fillings-bistro-32",
+    "kind": "menu",
+    "url": "https://dal.mydininghub.ca/en/account?section=my-menu",
+    "reason": "non_menu_or_special_destination",
+    "evidenceUrl": "https://dal.mydininghub.ca/en/account?section=my-menu",
+    "auditAttemptedAt": "2026-10-21T01:44:24.075Z",
+    "httpStatus": 200
+  },
+  {
+    "restaurantId": "osm-node-11526163878-tim-hortons",
+    "kind": "menu",
+    "url": "https://dal.mydininghub.ca/en/account?section=my-menu",
+    "reason": "non_menu_or_special_destination",
+    "evidenceUrl": "https://dal.mydininghub.ca/en/account?section=my-menu",
+    "auditAttemptedAt": "2026-10-21T01:44:24.075Z",
+    "httpStatus": 200
+  },
+  {
+    "restaurantId": "osm-node-11526163879-zoca",
+    "kind": "menu",
+    "url": "https://dal.mydininghub.ca/en/account?section=my-menu",
+    "reason": "non_menu_or_special_destination",
+    "evidenceUrl": "https://dal.mydininghub.ca/en/account?section=my-menu",
+    "auditAttemptedAt": "2026-10-21T01:44:24.075Z",
+    "httpStatus": 200
+  },
+  {
+    "restaurantId": "osm-node-11526163880-pizza-pizza",
+    "kind": "menu",
+    "url": "https://dal.mydininghub.ca/en/account?section=my-menu",
+    "reason": "non_menu_or_special_destination",
+    "evidenceUrl": "https://dal.mydininghub.ca/en/account?section=my-menu",
+    "auditAttemptedAt": "2026-10-21T01:44:24.075Z",
+    "httpStatus": 200
+  },
+  {
+    "restaurantId": "osm-node-11526163881-grille-works",
+    "kind": "menu",
+    "url": "https://dal.mydininghub.ca/en/account?section=my-menu",
+    "reason": "non_menu_or_special_destination",
+    "evidenceUrl": "https://dal.mydininghub.ca/en/account?section=my-menu",
+    "auditAttemptedAt": "2026-10-21T01:44:24.075Z",
+    "httpStatus": 200
+  },
+  {
+    "restaurantId": "osm-node-11526163882-brief-break",
+    "kind": "menu",
+    "url": "https://dal.mydininghub.ca/en/account?section=my-menu",
+    "reason": "non_menu_or_special_destination",
+    "evidenceUrl": "https://dal.mydininghub.ca/en/account?section=my-menu",
+    "auditAttemptedAt": "2026-10-21T01:44:24.075Z",
+    "httpStatus": 200
+  },
+  {
+    "restaurantId": "osm-node-11526163883-green-cafe",
+    "kind": "menu",
+    "url": "https://dal.mydininghub.ca/en/account?section=my-menu",
+    "reason": "non_menu_or_special_destination",
+    "evidenceUrl": "https://dal.mydininghub.ca/en/account?section=my-menu",
+    "auditAttemptedAt": "2026-10-21T01:44:24.075Z",
+    "httpStatus": 200
+  },
+  {
+    "restaurantId": "osm-node-11526163885-ground-zero",
+    "kind": "menu",
+    "url": "https://dal.mydininghub.ca/en/account?section=my-menu",
+    "reason": "non_menu_or_special_destination",
+    "evidenceUrl": "https://dal.mydininghub.ca/en/account?section=my-menu",
+    "auditAttemptedAt": "2026-10-21T01:44:24.075Z",
+    "httpStatus": 200
+  },
+  {
+    "restaurantId": "osm-node-11552234300-sushi-nami-royale",
+    "kind": "menu",
+    "url": "https://sushinami.ca/bedford-highway/lunch-menu/",
+    "reason": "explicit_wrong_branch_menu_shared_footer_false_match",
+    "evidenceUrl": "https://sushinami.ca/bedford-highway/lunch-menu/",
+    "auditAttemptedAt": "2026-10-21T01:44:45.399Z",
+    "httpStatus": 200
+  },
+  {
+    "restaurantId": "osm-node-11552234300-sushi-nami-royale",
+    "kind": "menu",
+    "url": "https://sushinami.ca/downtown-halifax/lunch-menu/",
+    "reason": "explicit_wrong_branch_menu_shared_footer_false_match",
+    "evidenceUrl": "https://sushinami.ca/downtown-halifax/lunch-menu/",
+    "auditAttemptedAt": "2026-10-21T01:45:29.152Z",
+    "httpStatus": 200
+  },
+  {
+    "restaurantId": "osm-node-11552234300-sushi-nami-royale",
+    "kind": "menu",
+    "url": "https://sushinami.ca/downtown-halifax/take-out/",
+    "reason": "explicit_wrong_branch_menu_shared_footer_false_match",
+    "evidenceUrl": "https://sushinami.ca/downtown-halifax/take-out/",
+    "auditAttemptedAt": "2026-10-21T01:45:32.253Z",
+    "httpStatus": 200
+  },
+  {
+    "restaurantId": "osm-node-267592735-bluenose-ii",
+    "kind": "menu",
+    "url": "https://bluenoseii.ca/wp-login.php?redirect_to=https%3A%2F%2Fbluenoseii.ca%2Fwp-admin%2Fnav-menus.php%3Faction%3Dlocations&reauth=1",
+    "reason": "administrative_login_not_menu",
+    "evidenceUrl": "https://bluenoseii.ca/wp-login.php?redirect_to=https%3A%2F%2Fbluenoseii.ca%2Fwp-admin%2Fnav-menus.php%3Faction%3Dlocations&reauth=1",
+    "auditAttemptedAt": "2026-10-21T01:44:51.140Z",
+    "httpStatus": 200
+  },
+  {
+    "restaurantId": "osm-node-3799422457-cora",
+    "kind": "menu",
+    "url": "https://www.chezcora.com/wp-content/uploads/2026/09/Allergenes-menu-2026-05_QC-EN.pdf",
+    "reason": "quebec_allergen_document_not_halifax_menu",
+    "evidenceUrl": "https://www.chezcora.com/wp-content/uploads/2026/09/Allergenes-menu-2026-05_QC-EN.pdf",
+    "auditAttemptedAt": "2026-10-21T01:44:56.826Z",
+    "httpStatus": 200
+  },
+  {
+    "restaurantId": "osm-node-3799422457-cora",
+    "kind": "menu",
+    "url": "https://www.chezcora.com/wp-content/uploads/2026/09/Allergenes-menu-2026-05_QC-FR.pdf",
+    "reason": "quebec_allergen_document_not_halifax_menu",
+    "evidenceUrl": "https://www.chezcora.com/wp-content/uploads/2026/09/Allergenes-menu-2026-05_QC-FR.pdf",
+    "auditAttemptedAt": "2026-10-21T01:44:57.510Z",
+    "httpStatus": 200
+  },
+  {
+    "restaurantId": "osm-node-4990340206-subway",
+    "kind": "menu",
+    "url": "https://www.subway.com/en-CA/MenuNutrition/Nutrition",
+    "reason": "non_menu_or_special_destination",
+    "evidenceUrl": "https://www.subway.com/en-CA/MenuNutrition/Nutrition",
+    "auditAttemptedAt": "2026-10-21T01:44:31.980Z",
+    "httpStatus": 200
+  },
+  {
+    "restaurantId": "osm-node-5161526522-sushi-nami-royale",
+    "kind": "menu",
+    "url": "https://sushinami.ca/bayers-lake/lunch-menu/",
+    "reason": "explicit_wrong_branch_menu_shared_footer_false_match",
+    "evidenceUrl": "https://sushinami.ca/bayers-lake/lunch-menu/",
+    "auditAttemptedAt": "2026-10-21T01:44:26.710Z",
+    "httpStatus": 200
+  },
+  {
+    "restaurantId": "osm-node-5161526522-sushi-nami-royale",
+    "kind": "menu",
+    "url": "https://sushinami.ca/bedford-highway/lunch-menu/",
+    "reason": "explicit_wrong_branch_menu_shared_footer_false_match",
+    "evidenceUrl": "https://sushinami.ca/bedford-highway/lunch-menu/",
+    "auditAttemptedAt": "2026-10-21T01:44:45.399Z",
+    "httpStatus": 200
+  },
+  {
+    "restaurantId": "osm-node-6296953436-the-mercantile-social",
+    "kind": "menu",
+    "url": "https://www.thebesthalifax.com/top-cocktail-bars-halifax/",
+    "reason": "third_party_editorial_list_not_official_menu",
+    "evidenceUrl": "https://www.thebesthalifax.com/top-cocktail-bars-halifax/",
+    "auditAttemptedAt": "2026-10-21T01:45:31.325Z",
+    "httpStatus": 200
+  },
+  {
+    "restaurantId": "osm-node-6910685885-mexi-s",
+    "kind": "menu",
+    "url": "https://www.mexicalirosas.com/moncton/dinner/",
+    "reason": "explicit_wrong_city_menu",
+    "evidenceUrl": "https://www.mexicalirosas.com/moncton/dinner/",
+    "auditAttemptedAt": "2026-10-21T01:45:33.582Z",
+    "httpStatus": null
+  },
+  {
+    "restaurantId": "osm-node-6910685885-mexi-s",
+    "kind": "menu",
+    "url": "https://www.mexicalirosas.com/moncton/kids/",
+    "reason": "explicit_wrong_city_menu",
+    "evidenceUrl": "https://www.mexicalirosas.com/moncton/kids/",
+    "auditAttemptedAt": "2026-10-21T01:45:33.583Z",
+    "httpStatus": null
+  },
+  {
+    "restaurantId": "osm-node-6910685885-mexi-s",
+    "kind": "menu",
+    "url": "https://www.mexicalirosas.com/moncton/lunch/",
+    "reason": "explicit_wrong_city_menu",
+    "evidenceUrl": "https://www.mexicalirosas.com/moncton/lunch/",
+    "auditAttemptedAt": "2026-10-21T01:45:33.583Z",
+    "httpStatus": null
+  },
+  {
+    "restaurantId": "osm-node-6910685885-mexi-s",
+    "kind": "menu",
+    "url": "https://www.mexicalirosas.com/ottawa/dinner/",
+    "reason": "explicit_wrong_city_menu",
+    "evidenceUrl": "https://www.mexicalirosas.com/ottawa/dinner/",
+    "auditAttemptedAt": "2026-10-21T01:45:33.583Z",
+    "httpStatus": null
+  },
+  {
+    "restaurantId": "osm-node-6910685885-mexi-s",
+    "kind": "menu",
+    "url": "https://www.mexicalirosas.com/ottawa/kids/",
+    "reason": "explicit_wrong_city_menu",
+    "evidenceUrl": "https://www.mexicalirosas.com/ottawa/kids/",
+    "auditAttemptedAt": "2026-10-21T01:45:33.584Z",
+    "httpStatus": null
+  },
+  {
+    "restaurantId": "osm-node-11552510567-tako-sushi-and-ramen",
+    "kind": "specials",
+    "url": "https://www.takosushiramen.ca/menu/chefs-special-rolls",
+    "reason": "regular_specialty_menu_not_promotional_special",
+    "evidenceUrl": "https://www.takosushiramen.ca/menu/chefs-special-rolls",
+    "auditAttemptedAt": "2026-10-21T01:44:41.185Z",
+    "httpStatus": 200
+  },
+  {
+    "restaurantId": "osm-node-11552510567-tako-sushi-and-ramen",
+    "kind": "specials",
+    "url": "https://www.takosushiramen.ca/menu/chefs-special-rolls/entrees",
+    "reason": "regular_specialty_menu_not_promotional_special",
+    "evidenceUrl": "https://www.takosushiramen.ca/menu/chefs-special-rolls/entrees",
+    "auditAttemptedAt": "2026-10-21T01:44:54.799Z",
+    "httpStatus": 200
+  },
+  {
+    "restaurantId": "osm-node-11752717941-east-cup-cafe",
+    "kind": "specials",
+    "url": "https://eastcupcafe.com/collections/specialty-blends",
+    "reason": "regular_specialty_menu_not_promotional_special",
+    "evidenceUrl": "https://eastcupcafe.com/collections/specialty-blends",
+    "auditAttemptedAt": "2026-10-21T01:46:14.070Z",
+    "httpStatus": 200
+  },
+  {
+    "restaurantId": "osm-node-2713247300-pizza-co",
+    "kind": "specials",
+    "url": "https://pzzaco.ca/specialty-pizzas/",
+    "reason": "regular_specialty_menu_not_promotional_special",
+    "evidenceUrl": "https://pzzaco.ca/specialty-pizzas/",
+    "auditAttemptedAt": "2026-10-21T01:44:56.410Z",
+    "httpStatus": 200
+  },
+  {
+    "restaurantId": "osm-node-2714920436-greco-pizza",
+    "kind": "specials",
+    "url": "https://greco.ca/newsletter/",
+    "reason": "non_menu_or_special_destination",
+    "evidenceUrl": "https://greco.ca/newsletter/",
+    "auditAttemptedAt": "2026-10-21T01:44:57.300Z",
+    "httpStatus": 200
+  },
+  {
+    "restaurantId": "osm-node-5631529440-hmcs-king-s-wardroom",
+    "kind": "specials",
+    "url": "https://ukings.ca/alumni/giving/support/special-projects/",
+    "reason": "university_fundraising_not_restaurant_special",
+    "evidenceUrl": "https://ukings.ca/alumni/giving/support/special-projects/",
+    "auditAttemptedAt": "2026-10-21T01:46:18.087Z",
+    "httpStatus": 200
+  },
+  {
+    "restaurantId": "osm-node-8636456775-booster-juice",
+    "kind": "specials",
+    "url": "https://boosterjuice.com/en-ca/collections/specialty-shots",
+    "reason": "regular_specialty_menu_not_promotional_special",
+    "evidenceUrl": "https://boosterjuice.com/en-ca/collections/specialty-shots",
+    "auditAttemptedAt": "2026-10-21T01:46:20.646Z",
+    "httpStatus": 200
+  }
+]

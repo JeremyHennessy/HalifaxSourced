@@ -1,0 +1,51 @@
+{
+  "id": "acadian-enzo-hammonds-plains",
+  "decision": "accepted_location",
+  "name": "Acadian Fish & Chips and Enzo Pizzeria",
+  "community": "Hammonds Plains",
+  "address": "1990 Hammonds Plains Road, Hammonds Plains, NS B4B 1P4",
+  "ownershipEvidence": "Nova Scotia Legislature Hansard, March 25 2025, identifies Brendan Chahine as owner of this Hammonds Plains restaurant. Current owner website confirms same identity and public dining service.",
+  "operationEvidence": "Fresh official homepage advertises dine-in and takeout, published restaurant hours and location-specific menu. Uber Eats platform removal is not business closure.",
+  "sourceUrls": [
+    "https://www.acadianenzo.com/",
+    "https://www.acadianenzo.com/menu",
+    "https://nslegislature.ca/sites/default/files/pdfs/proceedings/hansard/65-1/h22mar25.pdf"
+  ],
+  "observedAt": "2026-10-21T01:49:43.978102+00:00",
+  "successfulSourceReceipts": [
+    {
+      "url": "https://www.acadianenzo.com/",
+      "fetchedAt": "2026-10-21T01:49:36.845417+00:00",
+      "httpStatus": 200,
+      "sha256": "10488cf6babd1e2418c7482ba944ce6d86866f6f43356a2d5fd1f26b8ce450b1"
+    },
+    {
+      "url": "https://www.acadianenzo.com/menu",
+      "fetchedAt": "2026-10-21T01:49:40.797501+00:00",
+      "httpStatus": 200,
+      "sha256": "4cd6929a1fb61e6e5cc083831dc79f55d7e2917eb72de005ab88ec5368d3b3fd"
+    }
+  ],
+  "publishedFields": {
+    "id": "acadian-enzo-hammonds-plains",
+    "name": "Acadian Fish & Chips and Enzo Pizzeria",
+    "address": "1990 Hammonds Plains Road, Hammonds Plains, NS B4B 1P4",
+    "neighborhood": "Hammonds Plains",
+    "category": "Restaurant",
+    "website": "https://www.acadianenzo.com/",
+    "phone": "902-475-7000",
+    "coordinates": {
+      "lat": 44.7336246,
+      "lon": -63.7799126
+    },
+    "openingHours": "Mo 11:00–19:00; Tu 11:00–19:00; We 11:00–19:00; Th 11:00–19:00; Fr 11:00–20:00; Sa 11:00–20:00; Su 11:00–19:00",
+    "menuUrl": "https://www.acadianenzo.com/menu",
+    "operatingStatus": "active"
+  },
+  "caveats": [
+    "Visible official hours explicitly include Sunday through Thursday; JSON-LD omits Monday, but does not contradict or state closed.",
+    "Exact location coordinates are explicit owner Restaurant JSON-LD, not derived geocoding.",
+    "No daily specials/prices imported; no photograph rights inferred.",
+    "Owner evidence is dated 2025, not a new current corporate-registry check."
+  ]
+}
