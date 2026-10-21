@@ -59,8 +59,22 @@
 ]);
   function pointerSafe(restaurantId, kind, value) {
     try { const url = new URL(value); url.hash = '';
-      const branch = { 'osm-node-11552234300-sushi-nami-royale': 'bayers-lake', 'osm-node-5161526522-sushi-nami-royale': 'downtown-halifax' }[restaurantId];
-      if (branch && sourceHost(url) === 'sushinami.ca' && /^\/(?:bayers-lake|downtown-halifax|bedford-highway)\//.test(url.pathname) && !url.pathname.startsWith('/' + branch + '/')) return false;
+      // A shared header/footer address does not qualify another branch's menu
+      // or photo. Consumable pointers must name the catalog location in the
+      // first path segment; shared pages remain evidence, not location menus.
+      const branches = {
+        'osm-node-11552234300-sushi-nami-royale': 'bayers-lake',
+        'osm-node-5161526522-sushi-nami-royale': 'downtown-halifax',
+        'ns-food-2617563': 'bayers-lake', 'ns-food-2691532': 'downtown-halifax',
+        'ns-food-2851000': 'dartmouth-crossing', 'ns-food-2156028': 'bedford-highway'
+      };
+      const branch = branches[restaurantId];
+      if (branch && sourceHost(url) === 'sushinami.ca') {
+        const pathBranch = url.pathname.split('/').filter(Boolean)[0] || '';
+        const knownBranch = new Set(Object.values(branches)).has(pathBranch);
+        const consumable = ['menu', 'special', 'specials', 'image_preview'].includes(kind);
+        if ((knownBranch || consumable) && pathBranch !== branch) return false;
+      }
       if (restaurantId === 'osm-node-6910685885-mexi-s' && sourceHost(url) === 'mexicalirosas.com' && /^\/(?:moncton|ottawa)\//.test(url.pathname)) return false;
       return safeSource(value) && !rejectedPointerKeys.has(JSON.stringify([restaurantId, kind === 'specials' ? 'special' : kind, url.href])); } catch { return false; }
   }

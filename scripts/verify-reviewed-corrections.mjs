@@ -42,7 +42,13 @@ try {
     }
     if (label === 'current-acadian-enzo') { assert(model.active); assert.equal(model.phone,'902-475-7000'); assert.match(model.hours,/Mo 11:00–19:00/); }
     if (label === 'current-picnic') { assert.match(await page.locator('.restaurant-hero').evaluate(node=>getComputedStyle(node).backgroundImage),/rgb\(6, 43, 80\)/); assert.match(model.hours,/We 08:00–15:00/); assert.equal(await page.evaluate(()=>restaurants.find(r=>r.id==='labour-day-picnic-cafe-glen-haven').coordinates.lat),44.6439); }
-    if (label === 'current-sushi-nami-bayers') { assert(await page.evaluate(()=>restaurants.find(r=>r.id==='osm-node-11552234300-sushi-nami-royale').menuLinks.every(link=>!/\/(?:downtown-halifax|bedford-highway)\//.test(link.url)))); }
+    if (label === 'current-sushi-nami-bayers') {
+      assert(await page.evaluate(()=>{
+        const restaurant=restaurants.find(r=>r.id==='osm-node-11552234300-sushi-nami-royale');
+        const image=sourcePreviewImageFor(restaurant);
+        return restaurant.menuLinks.length > 0 && restaurant.menuLinks.every(link=>HalifaxDataIntegrity.pointerSafe(restaurant.id,'menu',link.url)) && (!image || HalifaxDataIntegrity.pointerSafe(restaurant.id,'image_preview',image.sourceUrl));
+      }));
+    }
     if (label === 'current-dear-friend') {
       assert.equal(await page.locator('img[src*="dearfriendbar.com/assets/images/share.jpg"]').count(),0);
       assert(!resources.evidence.requests.some(r=>r.url==='https://dearfriendbar.com/assets/images/share.jpg?v=0108bfbb'),'Known unavailable image must not be requested');
