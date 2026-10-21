@@ -1,3 +1,4 @@
+import { validSocialReviewState } from "./lib/social-fact-candidates.mjs";
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import vm from "node:vm";
 import { localRestaurantPolicyDecision } from "./lib/local-restaurant-policy.mjs";
@@ -218,7 +219,7 @@ for (const record of websitePageRecords) {
 const duplicateSocialSignals = duplicates(socialSignals, (signal) => `${signal.platform}|${signal.restaurantId}|${signal.postId}`);
 if (duplicateSocialSignals.length) failures.push({ type: "duplicate_social_signals", values: duplicateSocialSignals.slice(0, 30) });
 for (const signal of socialSignals) {
-  if (!restaurantIds.has(signal.restaurantId) || !["facebook", "instagram"].includes(signal.platform) || !validUrl(signal.profileUrl) || !validUrl(signal.postUrl) || !validDate(signal.publishedAt) || !validDate(signal.observedAt) || !hasSignalMatches(signal.signalMatches) || signal.reviewState !== "api_observed" || !String(signal.sourceKind || "").startsWith("meta_graph_api") || signal.associationBasis !== "unique_profile_link_from_official_website") {
+  if (!restaurantIds.has(signal.restaurantId) || !["facebook", "instagram"].includes(signal.platform) || !validUrl(signal.profileUrl) || !validUrl(signal.postUrl) || !validDate(signal.publishedAt) || !validDate(signal.observedAt) || !hasSignalMatches(signal.signalMatches) || !validSocialReviewState(signal) || !String(signal.sourceKind || "").startsWith("meta_graph_api") || signal.associationBasis !== "unique_profile_link_from_official_website") {
     failures.push({ type: "invalid_social_signal", restaurantId: signal.restaurantId, platform: signal.platform, postId: signal.postId });
   }
   if (hasForbiddenRawTextFields(signal)) failures.push({ type: "social_raw_post_text_retained", restaurantId: signal.restaurantId, platform: signal.platform, postId: signal.postId });
@@ -228,7 +229,7 @@ for (const signal of socialSignals) {
 const duplicateSocialPosts = duplicates(socialPosts, (post) => `${post.platform}|${post.restaurantId}|${post.postId || post.postUrl}`);
 if (duplicateSocialPosts.length) failures.push({ type: "duplicate_social_posts", values: duplicateSocialPosts.slice(0, 30) });
 for (const post of socialPosts) {
-  if (!restaurantIds.has(post.restaurantId) || !["facebook", "instagram"].includes(post.platform) || !validUrl(post.profileUrl) || !validUrl(post.postUrl) || !validDate(post.publishedAt) || !validDate(post.observedAt) || post.reviewState !== "api_observed" || !String(post.sourceKind || "").startsWith("meta_graph_api") || post.associationBasis !== "unique_profile_link_from_official_website") {
+  if (!restaurantIds.has(post.restaurantId) || !["facebook", "instagram"].includes(post.platform) || !validUrl(post.profileUrl) || !validUrl(post.postUrl) || !validDate(post.publishedAt) || !validDate(post.observedAt) || !validSocialReviewState(post) || !String(post.sourceKind || "").startsWith("meta_graph_api") || post.associationBasis !== "unique_profile_link_from_official_website") {
     failures.push({ type: "invalid_social_post", restaurantId: post.restaurantId, platform: post.platform, postId: post.postId });
   }
   if (post.mediaUrl && !validUrl(post.mediaUrl)) failures.push({ type: "invalid_social_post_media", restaurantId: post.restaurantId, mediaUrl: post.mediaUrl });

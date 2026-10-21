@@ -60,6 +60,8 @@ const records = recentRecords
     const id = String(post.id || post.postUrl || "");
     const decision = decisionMap.get(id) || decisionMap.get(post.postUrl || "");
     if (!approvedDecision(decision)) return null;
+    // Post approval is not verification of extracted dates, prices, terms or branch.
+    if (post.factCandidate != null || post.contentPolicy === "factual_candidates_no_caption_or_media") return null;
     const sourceUrl = validUrl(post.postUrl || post.profileUrl || post.feedUrl);
     if (!sourceUrl || !post.restaurantId || post.dateState !== "valid" || post.reviewState === "quarantined") return null;
     const reviewedAt = decision.approvedAt || decision.decidedAt || decision.reviewedAt || null;

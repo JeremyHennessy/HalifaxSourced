@@ -126,7 +126,9 @@ jobs:
           node scripts/build-thumbnail-candidates.mjs
 
       - name: Run social platform sanitation regression
-        run: node scripts/test-social-platform-registry.mjs
+        run: |
+          node scripts/test-social-platform-registry.mjs
+          node scripts/test-social-fact-candidates.mjs
 
       - name: Validate directory data
         run: node scripts/validate-data.mjs

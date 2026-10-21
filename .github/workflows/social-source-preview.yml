@@ -16,6 +16,7 @@ on:
       - scripts/sanitize-first-party-sources.mjs
       - scripts/import-first-party-feed-signals.mjs
       - scripts/import-meta-social.mjs
+      - scripts/lib/social-fact-candidates.mjs
       - scripts/build-recent-social-posts.mjs
       - data/thumbnail-assessments.json
       - scripts/approve-eligible-thumbnails.mjs
