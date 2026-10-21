@@ -117,6 +117,7 @@ function sourcePreviewImageFor(restaurant) {
     const url = publicMediaSourceUrl(reference.url);
     const sourceUrl = publicMediaSourceUrl(reference.sourceUrl);
     if (!url?.startsWith("https://") || !sourceUrl?.startsWith("https://")) continue;
+    if (!HalifaxDataIntegrity.pointerSafe(restaurant.id, "image_preview", sourceUrl)) continue;
     // No social-host scraping or image proxy: browsers fetch the exact archived
     // restaurant-site image directly, without a referring page.
     const host = new URL(url).hostname.toLowerCase();
