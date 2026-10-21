@@ -1,17 +1,17 @@
 window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
-  "generatedAt": "2026-09-04T13:18:37.970Z",
-  "count": 290,
+  "generatedAt": "2026-10-21T14:28:59.495Z",
+  "count": 225,
   "kindCounts": {
-    "menu": 165,
-    "specials": 111,
-    "events": 79,
-    "patio": 19,
-    "openings": 8,
-    "closures": 0,
-    "moves": 4,
-    "brunch": 37,
-    "reservations": 109,
-    "takeout": 89
+    "menu": 112,
+    "specials": 77,
+    "events": 68,
+    "patio": 16,
+    "openings": 4,
+    "closures": 5,
+    "moves": 2,
+    "brunch": 25,
+    "reservations": 82,
+    "takeout": 59
   },
   "signalGroups": {
     "menu": [
@@ -66,7 +66,13 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "closing our doors",
       "will close",
       "has closed",
-      "is now closed"
+      "is now closed",
+      "decision to close",
+      "decided to close",
+      "end of lockside canteen",
+      "temporarily closed",
+      "will be closed",
+      "closed for the season"
     ],
     "moves": [
       "we moved",
@@ -102,7 +108,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "name": "Bar Kismet",
       "website": "https://barkismet.com/",
       "status": 200,
-      "observedAt": "2026-09-04T13:17:34.120Z",
+      "observedAt": "2026-10-21T14:28:11.258Z",
       "keywordHits": [
         "menu",
         "cocktail",
@@ -128,7 +134,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "candidateLinks": [
         {
           "text": "MENU",
-          "href": "https://barkismet.com/wp-content/uploads/2026/09/CURRENT-MENU-190.pdf",
+          "href": "https://barkismet.com/wp-content/uploads/2026/09/CURRENT-MENU-192.pdf",
           "signalMatches": {
             "menu": [
               "menu"
@@ -171,7 +177,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "name": "The Bicycle Thief",
       "website": "https://bicyclethief.ca/",
       "status": 200,
-      "observedAt": "2026-09-04T13:17:34.168Z",
+      "observedAt": "2026-10-21T14:28:11.260Z",
       "keywordHits": [
         "menu",
         "offers",
@@ -259,7 +265,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "name": "EDNA",
       "website": "https://www.ednarestaurant.com/",
       "status": 200,
-      "observedAt": "2026-09-04T13:17:34.169Z",
+      "observedAt": "2026-10-21T14:28:11.260Z",
       "keywordHits": [
         "menu",
         "reservation",
@@ -366,7 +372,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "name": "The Press Gang",
       "website": "https://thepressgang.ca/",
       "status": 200,
-      "observedAt": "2026-09-04T13:17:34.170Z",
+      "observedAt": "2026-10-21T14:28:11.260Z",
       "keywordHits": [
         "menu",
         "reservation"
@@ -470,7 +476,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "name": "The Narrows Public House",
       "website": "https://www.thenarrowspublichouse.ca/",
       "status": 200,
-      "observedAt": "2026-09-04T13:17:34.170Z",
+      "observedAt": "2026-10-21T14:28:11.261Z",
       "keywordHits": [
         "menu",
         "live music",
@@ -522,7 +528,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "name": "2 Doors Down",
       "website": "https://go2doorsdown.com/",
       "status": 200,
-      "observedAt": "2026-09-04T13:17:34.171Z",
+      "observedAt": "2026-10-21T14:28:11.261Z",
       "keywordHits": [
         "menu",
         "cocktail",
@@ -612,8 +618,8 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
           }
         },
         {
-          "text": "Dinner Menu",
-          "href": "https://go2doorsdown.com/wp-content/uploads/2026/06/summer_dinner.pdf",
+          "text": "https://go2doorsdown.com/wp-content/uploads/2026/09/All_Day_Menu.pdf",
+          "href": "https://go2doorsdown.com/wp-content/uploads/2026/09/All_Day_Menu.pdf",
           "signalMatches": {
             "menu": [
               "menu"
@@ -630,44 +636,8 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
           }
         },
         {
-          "text": "https://go2doorsdown.com/wp-content/uploads/2026/02/Dessert_Menu_2026.pdf",
-          "href": "https://go2doorsdown.com/wp-content/uploads/2026/02/Dessert_Menu_2026.pdf",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Dessert Menu",
-          "href": "https://go2doorsdown.com/wp-content/uploads/2026/02/Dessert_Menu_2026.pdf",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Lunch Menu",
-          "href": "https://go2doorsdown.com/wp-content/uploads/2026/06/summer_lunch.pdf",
+          "text": "All Day Menu",
+          "href": "https://go2doorsdown.com/wp-content/uploads/2026/09/All_Day_Menu.pdf",
           "signalMatches": {
             "menu": [
               "menu"
@@ -746,7 +716,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "name": "Battery Park Beer Bar",
       "website": "https://batterypark.ca/",
       "status": 200,
-      "observedAt": "2026-09-04T13:17:34.172Z",
+      "observedAt": "2026-10-21T14:28:11.261Z",
       "keywordHits": [
         "special",
         "specials",
@@ -783,7 +753,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "name": "Dear Friend Bar",
       "website": "https://dearfriendbar.com/",
       "status": 200,
-      "observedAt": "2026-09-04T13:17:34.172Z",
+      "observedAt": "2026-10-21T14:28:11.261Z",
       "keywordHits": [
         "menu",
         "cocktail",
@@ -896,7 +866,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "name": "Highwayman",
       "website": "https://www.highwaymanhfx.com/",
       "status": 200,
-      "observedAt": "2026-09-04T13:17:34.417Z",
+      "observedAt": "2026-10-21T14:28:11.816Z",
       "keywordHits": [
         "menu",
         "food menu",
@@ -1103,7 +1073,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "name": "Field Guide",
       "website": "https://fieldguidehfx.com/",
       "error": "fetch failed",
-      "observedAt": "2026-09-04T13:17:34.430Z",
+      "observedAt": "2026-10-21T14:28:11.839Z",
       "sourceKind": "official_website",
       "reviewState": "cross-check"
     },
@@ -1112,7 +1082,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "name": "2 Crows Brewing",
       "website": "https://2crowsbrewing.com/",
       "status": 200,
-      "observedAt": "2026-09-04T13:17:34.594Z",
+      "observedAt": "2026-10-21T14:28:11.952Z",
       "keywordHits": [
         "special",
         "coming soon"
@@ -1142,12 +1112,13 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "name": "7 Peppers Grill",
       "website": "https://www.7peppersgrill.net/",
       "status": 200,
-      "observedAt": "2026-09-04T13:17:34.616Z",
+      "observedAt": "2026-10-21T14:28:12.016Z",
       "keywordHits": [
         "menu",
         "special",
         "event",
         "events",
+        "will be closed",
         "reserve",
         "delivery"
       ],
@@ -1164,7 +1135,9 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
         ],
         "patio": [],
         "openings": [],
-        "closures": [],
+        "closures": [
+          "will be closed"
+        ],
         "moves": [],
         "brunch": [],
         "reservations": [
@@ -1202,30 +1175,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "name": "9 + Nine",
       "website": "https://9plus9.ca/",
       "error": "fetch failed",
-      "observedAt": "2026-09-04T13:17:34.621Z",
-      "sourceKind": "official_website",
-      "reviewState": "cross-check"
-    },
-    {
-      "restaurantId": "osm-node-13944251182-a-and-w",
-      "name": "A&W",
-      "website": "https://web.aw.ca/en/locations/6012/dartmouth/240-victoria-rd",
-      "status": 200,
-      "observedAt": "2026-09-04T13:17:34.643Z",
-      "keywordHits": [],
-      "signalMatches": {
-        "menu": [],
-        "specials": [],
-        "events": [],
-        "patio": [],
-        "openings": [],
-        "closures": [],
-        "moves": [],
-        "brunch": [],
-        "reservations": [],
-        "takeout": []
-      },
-      "candidateLinks": [],
+      "observedAt": "2026-10-21T14:28:12.076Z",
       "sourceKind": "official_website",
       "reviewState": "cross-check"
     },
@@ -1234,7 +1184,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "name": "aFrite",
       "website": "https://afrite.ca/",
       "status": 200,
-      "observedAt": "2026-09-04T13:17:34.743Z",
+      "observedAt": "2026-10-21T14:28:12.127Z",
       "keywordHits": [
         "menu",
         "special",
@@ -1403,7 +1353,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "name": "Almonak",
       "website": "https://www.almonak.com/",
       "status": 200,
-      "observedAt": "2026-09-04T13:17:34.750Z",
+      "observedAt": "2026-10-21T14:28:12.142Z",
       "keywordHits": [
         "event",
         "book a table"
@@ -1471,23 +1421,22 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "name": "Antojo Tacos + Tequila",
       "website": "https://antojo.ca/",
       "status": 200,
-      "observedAt": "2026-09-04T13:17:34.854Z",
+      "observedAt": "2026-10-21T14:28:12.244Z",
       "keywordHits": [
         "menu",
         "drink menu",
-        "cocktail",
         "deal",
         "event",
         "events",
         "ticket",
         "show",
+        "brunch",
         "reserve"
       ],
       "signalMatches": {
         "menu": [
           "menu",
-          "drink menu",
-          "cocktail"
+          "drink menu"
         ],
         "specials": [
           "deal"
@@ -1502,7 +1451,9 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
         "openings": [],
         "closures": [],
         "moves": [],
-        "brunch": [],
+        "brunch": [
+          "brunch"
+        ],
         "reservations": [
           "reserve"
         ],
@@ -1565,7 +1516,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
         },
         {
           "text": "drink menu",
-          "href": "https://antojo.ca/wp-content/uploads/2026/08/Antojo_Beverage_Summer2026_Tall-2.pdf",
+          "href": "https://antojo.ca/wp-content/uploads/2026/09/Antojo_Beverage_Sept2026_Tall.pdf",
           "signalMatches": {
             "menu": [
               "menu",
@@ -1583,19 +1534,19 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
           }
         },
         {
-          "text": "🍹 WE’RE HIRING! 🌮 Know your way around a cocktail",
-          "href": "https://www.instagram.com/p/DcTuUgsxE55/",
+          "text": "Weekend Brunch is calling, and Molletes are the an",
+          "href": "https://www.instagram.com/reel/DdeEMgsRRIf/",
           "signalMatches": {
-            "menu": [
-              "cocktail"
-            ],
+            "menu": [],
             "specials": [],
             "events": [],
             "patio": [],
             "openings": [],
             "closures": [],
             "moves": [],
-            "brunch": [],
+            "brunch": [
+              "brunch"
+            ],
             "reservations": [],
             "takeout": []
           }
@@ -1627,7 +1578,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "name": "Ardmore Tea Room",
       "website": "https://www.ardmoretearoom.ca/",
       "status": 200,
-      "observedAt": "2026-09-04T13:17:34.900Z",
+      "observedAt": "2026-10-21T14:28:12.355Z",
       "keywordHits": [
         "menu",
         "features",
@@ -1724,7 +1675,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "name": "Arirang Korean & Japanese",
       "website": "https://arirang-restaurant.com/",
       "error": "fetch failed",
-      "observedAt": "2026-09-04T13:17:34.901Z",
+      "observedAt": "2026-10-21T14:28:12.396Z",
       "sourceKind": "official_website",
       "reviewState": "cross-check"
     },
@@ -1733,7 +1684,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "name": "Asia Restaurant & Bar",
       "website": "https://asiahalifax.com/",
       "error": "fetch failed",
-      "observedAt": "2026-09-04T13:17:34.985Z",
+      "observedAt": "2026-10-21T14:28:12.414Z",
       "sourceKind": "official_website",
       "reviewState": "cross-check"
     },
@@ -1742,133 +1693,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "name": "Bai Wei Grill Bar",
       "website": "http://baiweigrillbar.com/",
       "error": "fetch failed",
-      "observedAt": "2026-09-04T13:17:35.073Z",
-      "sourceKind": "official_website",
-      "reviewState": "cross-check"
-    },
-    {
-      "restaurantId": "osm-node-8600605850-barburrito",
-      "name": "BarBurrito",
-      "website": "https://www.barburrito.ca/location/dartmouth/",
-      "status": 200,
-      "observedAt": "2026-09-04T13:17:35.276Z",
-      "keywordHits": [
-        "menu",
-        "reserve",
-        "pickup",
-        "order online"
-      ],
-      "signalMatches": {
-        "menu": [
-          "menu"
-        ],
-        "specials": [],
-        "events": [],
-        "patio": [],
-        "openings": [],
-        "closures": [],
-        "moves": [],
-        "brunch": [],
-        "reservations": [
-          "reserve"
-        ],
-        "takeout": [
-          "pickup",
-          "order online"
-        ]
-      },
-      "candidateLinks": [
-        {
-          "text": "Order Online",
-          "href": "https://www.barburrito.ca/order",
-          "signalMatches": {
-            "menu": [],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": [
-              "order online"
-            ]
-          }
-        },
-        {
-          "text": "Menu",
-          "href": "https://www.barburrito.ca/#menu",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Order Online",
-          "href": "http://www.barburrito.ca/order",
-          "signalMatches": {
-            "menu": [],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": [
-              "order online"
-            ]
-          }
-        },
-        {
-          "text": "Order Pickup",
-          "href": "https://wwws-canada2.givex.com/cws5/barburrito/#/direct?outlet_id=400005073&order_type=pickup",
-          "signalMatches": {
-            "menu": [],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": [
-              "pickup"
-            ]
-          }
-        },
-        {
-          "text": "Uber Eats",
-          "href": "https://www.ubereats.com/ca/store/barburrito-50-tacoma-drive/eJZbW0TZRtySDgy__DQlOA?diningMode=DELIVERY&pl=JTdCJTIyYWRkcmVzcyUyMiUzQSUyMlVuaXZlcnNpdHklMjBvZiUyMEFsYmVydGElMjIlMkMlMjJyZWZlcmVuY2UlMjIlM0ElMjJDaElKb3hDUFlmVWhvRk1SRTdKWG1QSmxXOHMlMjIlMkMlMjJyZWZlcmVuY2VUeXBlJTIyJTNBJTIyZ29vZ2xlX3BsYWNlcyUyMiUyQyUyMmxhdGl0dWRlJTIyJTNBNTMuNTIzMjE4OSUyQyUyMmxvbmdpdHVkZSUyMiUzQS0xMTMuNTI2MzE4NiU3RA",
-          "signalMatches": {
-            "menu": [],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": [
-              "delivery"
-            ]
-          }
-        }
-      ],
+      "observedAt": "2026-10-21T14:28:12.465Z",
       "sourceKind": "official_website",
       "reviewState": "cross-check"
     },
@@ -1877,7 +1702,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "name": "Barrios Kitchen & Bar",
       "website": "https://barrioshfx.ca/",
       "status": 200,
-      "observedAt": "2026-09-04T13:17:35.291Z",
+      "observedAt": "2026-10-21T14:28:12.607Z",
       "keywordHits": [
         "menu",
         "cocktail",
@@ -2087,7 +1912,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "name": "Battery Park Beer Bar & Eatery",
       "website": "https://batterypark.ca/",
       "status": 200,
-      "observedAt": "2026-09-04T13:17:34.616Z",
+      "observedAt": "2026-10-21T14:28:12.106Z",
       "keywordHits": [
         "special",
         "specials",
@@ -2124,7 +1949,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "name": "Bedford Beer Garden",
       "website": "https://www.bedfordbeergarden.com/",
       "status": 200,
-      "observedAt": "2026-09-04T13:17:35.306Z",
+      "observedAt": "2026-10-21T14:28:12.644Z",
       "keywordHits": [
         "menu",
         "food menu",
@@ -2239,106 +2064,11 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "reviewState": "cross-check"
     },
     {
-      "restaurantId": "osm-node-10665783054-ben-and-florentine",
-      "name": "Ben & Florentine",
-      "website": "https://locations.benetflorentine.com/",
-      "status": 200,
-      "observedAt": "2026-09-04T13:17:35.338Z",
-      "keywordHits": [
-        "menu",
-        "breakfast",
-        "reserve",
-        "order online"
-      ],
-      "signalMatches": {
-        "menu": [
-          "menu"
-        ],
-        "specials": [],
-        "events": [],
-        "patio": [],
-        "openings": [],
-        "closures": [],
-        "moves": [],
-        "brunch": [
-          "breakfast"
-        ],
-        "reservations": [
-          "reserve"
-        ],
-        "takeout": [
-          "order online"
-        ]
-      },
-      "candidateLinks": [
-        {
-          "text": "Menu",
-          "href": "https://benetflorentine.com/en/menu",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "ORDER ONLINE",
-          "href": "https://benetflorentine.order-online.ai/en/?_gl=1*14maqhv*_ga*NTUwODUzMDkyLjE3MDY4MDA3MDI.*_ga_PJXXT66P1Z*MTcwNzEzNDQwNy45LjEuMTcwNzEzNDUyNC41NS4wLjA.#/?showItem=&amp;amp;_ga=2.190243565.738223456.1707134407-550853092.1706800702",
-          "signalMatches": {
-            "menu": [],
-            "specials": [],
-            "events": [
-              "show"
-            ],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": [
-              "order online"
-            ]
-          }
-        },
-        {
-          "text": "Order online",
-          "href": "https://benetflorentine.order-online.ai/en/?_gl=1*1rhmqpy*_ga*NTUwODUzMDkyLjE3MDY4MDA3MDI.*_ga_PJXXT66P1Z*MTcwNzEzNDQwNy45LjEuMTcwNzEzNTI5My41Mi4wLjA.#/?showItem=&amp;amp;_ga=2.201779671.738223456.1707134407-550853092.1706800702",
-          "signalMatches": {
-            "menu": [],
-            "specials": [],
-            "events": [
-              "show"
-            ],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": [
-              "order online"
-            ]
-          }
-        }
-      ],
-      "sourceKind": "official_website",
-      "reviewState": "cross-check"
-    },
-    {
       "restaurantId": "osm-node-1116387649-bicycle-thief",
       "name": "Bicycle Thief",
       "website": "https://bicyclethief.ca/",
       "status": 200,
-      "observedAt": "2026-09-04T13:17:34.719Z",
+      "observedAt": "2026-10-21T14:28:12.088Z",
       "keywordHits": [
         "menu",
         "offers",
@@ -2426,7 +2156,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "name": "Bird's Nest Cafe",
       "website": "https://www.birdsnesthalifax.com/",
       "status": 200,
-      "observedAt": "2026-09-04T13:17:35.722Z",
+      "observedAt": "2026-10-21T14:28:12.743Z",
       "keywordHits": [
         "menu",
         "special",
@@ -2497,31 +2227,49 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "name": "Bitter End Martini Bar & Restaurant",
       "website": "https://www.bitterend.ca/",
       "status": 200,
-      "observedAt": "2026-09-04T13:17:35.947Z",
+      "observedAt": "2026-10-21T14:28:12.955Z",
       "keywordHits": [
         "menu",
-        "reserve"
+        "food menu",
+        "drink menu",
+        "cocktail",
+        "happy hour",
+        "event",
+        "dj",
+        "reservation",
+        "reserve",
+        "book a table"
       ],
       "signalMatches": {
         "menu": [
-          "menu"
+          "menu",
+          "food menu",
+          "drink menu",
+          "cocktail"
         ],
-        "specials": [],
-        "events": [],
+        "specials": [
+          "happy hour"
+        ],
+        "events": [
+          "event",
+          "dj"
+        ],
         "patio": [],
         "openings": [],
         "closures": [],
         "moves": [],
         "brunch": [],
         "reservations": [
-          "reserve"
+          "reservation",
+          "reserve",
+          "book a table"
         ],
         "takeout": []
       },
       "candidateLinks": [
         {
-          "text": "Reserve",
-          "href": "https://www.bitterend.ca/reserve.html",
+          "text": "RESERVE",
+          "href": "https://www.bitterend.ca/#reserve",
           "signalMatches": {
             "menu": [],
             "specials": [],
@@ -2538,8 +2286,8 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
           }
         },
         {
-          "text": "menu",
-          "href": "https://www.bitterend.ca/menu.html",
+          "text": "MENU",
+          "href": "https://www.bitterend.ca/#menu-2",
           "signalMatches": {
             "menu": [
               "menu"
@@ -2564,13 +2312,17 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "name": "Bluenose II",
       "website": "https://bluenoseii.ca/",
       "status": 200,
-      "observedAt": "2026-09-04T13:17:36.030Z",
+      "observedAt": "2026-10-21T14:28:12.961Z",
       "keywordHits": [
         "menu",
         "special",
+        "features",
         "offers",
+        "event",
+        "events",
         "breakfast",
-        "reservation"
+        "reservation",
+        "takeout"
       ],
       "signalMatches": {
         "menu": [
@@ -2578,9 +2330,13 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
         ],
         "specials": [
           "special",
+          "features",
           "offers"
         ],
-        "events": [],
+        "events": [
+          "event",
+          "events"
+        ],
         "patio": [],
         "openings": [],
         "closures": [],
@@ -2591,12 +2347,14 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
         "reservations": [
           "reservation"
         ],
-        "takeout": []
+        "takeout": [
+          "takeout"
+        ]
       },
       "candidateLinks": [
         {
-          "text": "Please select a menu in this location",
-          "href": "https://bluenoseii.ca/wp-admin/nav-menus.php?action=locations",
+          "text": "Menu",
+          "href": "https://bluenoseii.ca/menu/",
           "signalMatches": {
             "menu": [
               "menu"
@@ -2609,6 +2367,190 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
             "moves": [],
             "brunch": [],
             "reservations": [],
+            "takeout": []
+          }
+        },
+        {
+          "text": "Best All Day Breakfast Downtown",
+          "href": "https://bluenoseii.ca/menu/#breakfast",
+          "signalMatches": {
+            "menu": [
+              "menu"
+            ],
+            "specials": [],
+            "events": [],
+            "patio": [],
+            "openings": [],
+            "closures": [],
+            "moves": [],
+            "brunch": [
+              "breakfast"
+            ],
+            "reservations": [],
+            "takeout": []
+          }
+        },
+        {
+          "text": "Burgers and Sandwiches",
+          "href": "https://bluenoseii.ca/menu/#burgers-sandwiches",
+          "signalMatches": {
+            "menu": [
+              "menu"
+            ],
+            "specials": [],
+            "events": [],
+            "patio": [],
+            "openings": [],
+            "closures": [],
+            "moves": [],
+            "brunch": [],
+            "reservations": [],
+            "takeout": []
+          }
+        },
+        {
+          "text": "Steaks and Surf &#038; Turf",
+          "href": "https://bluenoseii.ca/menu/#steaks-surf-turf",
+          "signalMatches": {
+            "menu": [
+              "menu"
+            ],
+            "specials": [],
+            "events": [],
+            "patio": [],
+            "openings": [],
+            "closures": [],
+            "moves": [],
+            "brunch": [],
+            "reservations": [],
+            "takeout": []
+          }
+        },
+        {
+          "text": "Pasta and Stir-fries",
+          "href": "https://bluenoseii.ca/menu/#pasta-stir-fries",
+          "signalMatches": {
+            "menu": [
+              "menu"
+            ],
+            "specials": [],
+            "events": [],
+            "patio": [],
+            "openings": [],
+            "closures": [],
+            "moves": [],
+            "brunch": [],
+            "reservations": [],
+            "takeout": []
+          }
+        },
+        {
+          "text": "Seafood",
+          "href": "https://bluenoseii.ca/menu/#seafood",
+          "signalMatches": {
+            "menu": [
+              "menu"
+            ],
+            "specials": [],
+            "events": [],
+            "patio": [],
+            "openings": [],
+            "closures": [],
+            "moves": [],
+            "brunch": [],
+            "reservations": [],
+            "takeout": []
+          }
+        },
+        {
+          "text": "A Taste of Greece",
+          "href": "https://bluenoseii.ca/menu/#greek",
+          "signalMatches": {
+            "menu": [
+              "menu"
+            ],
+            "specials": [],
+            "events": [],
+            "patio": [],
+            "openings": [],
+            "closures": [],
+            "moves": [],
+            "brunch": [],
+            "reservations": [],
+            "takeout": []
+          }
+        },
+        {
+          "text": "Bluenose &#8216;Diner&#8217; Specialties",
+          "href": "https://bluenoseii.ca/menu/#diner-specialties",
+          "signalMatches": {
+            "menu": [
+              "menu"
+            ],
+            "specials": [
+              "special"
+            ],
+            "events": [],
+            "patio": [],
+            "openings": [],
+            "closures": [],
+            "moves": [],
+            "brunch": [],
+            "reservations": [],
+            "takeout": []
+          }
+        },
+        {
+          "text": "Desserts",
+          "href": "https://bluenoseii.ca/menu/#desserts",
+          "signalMatches": {
+            "menu": [
+              "menu"
+            ],
+            "specials": [],
+            "events": [],
+            "patio": [],
+            "openings": [],
+            "closures": [],
+            "moves": [],
+            "brunch": [],
+            "reservations": [],
+            "takeout": []
+          }
+        },
+        {
+          "text": "Beverages and Drinks",
+          "href": "https://bluenoseii.ca/menu/#beverages-drinks",
+          "signalMatches": {
+            "menu": [
+              "menu"
+            ],
+            "specials": [],
+            "events": [],
+            "patio": [],
+            "openings": [],
+            "closures": [],
+            "moves": [],
+            "brunch": [],
+            "reservations": [],
+            "takeout": []
+          }
+        },
+        {
+          "text": "Reservations",
+          "href": "https://bluenoseii.ca/reservations/",
+          "signalMatches": {
+            "menu": [],
+            "specials": [],
+            "events": [],
+            "patio": [],
+            "openings": [],
+            "closures": [],
+            "moves": [],
+            "brunch": [],
+            "reservations": [
+              "reservation"
+            ],
             "takeout": []
           }
         },
@@ -2647,71 +2589,10 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
             ],
             "takeout": []
           }
-        }
-      ],
-      "sourceKind": "official_website",
-      "reviewState": "cross-check"
-    },
-    {
-      "restaurantId": "osm-node-4420916900-board-room-game-cafe",
-      "name": "Board Room Game Cafe",
-      "website": "https://boardroomgames.wixsite.com/tbrgc",
-      "status": 200,
-      "observedAt": "2026-09-04T13:17:36.050Z",
-      "keywordHits": [
-        "menu",
-        "special",
-        "event",
-        "events",
-        "trivia",
-        "reservation",
-        "book a table"
-      ],
-      "signalMatches": {
-        "menu": [
-          "menu"
-        ],
-        "specials": [
-          "special"
-        ],
-        "events": [
-          "event",
-          "events",
-          "trivia"
-        ],
-        "patio": [],
-        "openings": [],
-        "closures": [],
-        "moves": [],
-        "brunch": [],
-        "reservations": [
-          "reservation",
-          "book a table"
-        ],
-        "takeout": []
-      },
-      "candidateLinks": [
-        {
-          "text": "BOOK A TABLE",
-          "href": "https://tbdine.com/halifax/restaurants/the-boardroom-game-cafe",
-          "signalMatches": {
-            "menu": [],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [
-              "book a table"
-            ],
-            "takeout": []
-          }
         },
         {
-          "text": "Menus",
-          "href": "https://boardroomgames.wixsite.com/tbrgc/menu",
+          "text": "Our Menu",
+          "href": "https://bluenoseii.ca/menu/",
           "signalMatches": {
             "menu": [
               "menu"
@@ -2729,7 +2610,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
         },
         {
           "text": "Events",
-          "href": "https://boardroomgames.wixsite.com/tbrgc/upcoming-events",
+          "href": "https://bluenoseii.ca/reservations/",
           "signalMatches": {
             "menu": [],
             "specials": [],
@@ -2742,93 +2623,19 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
             "closures": [],
             "moves": [],
             "brunch": [],
-            "reservations": [],
+            "reservations": [
+              "reservation"
+            ],
             "takeout": []
           }
         },
         {
-          "text": "TTRPG Events",
-          "href": "https://boardroomgames.wixsite.com/tbrgc/info",
-          "signalMatches": {
-            "menu": [],
-            "specials": [],
-            "events": [
-              "event",
-              "events"
-            ],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Read More &gt;",
-          "href": "https://boardroomgames.wixsite.com/tbrgc/upcoming-events",
-          "signalMatches": {
-            "menu": [],
-            "specials": [],
-            "events": [
-              "event",
-              "events"
-            ],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        }
-      ],
-      "sourceKind": "official_website",
-      "reviewState": "cross-check"
-    },
-    {
-      "restaurantId": "osm-node-8636456775-booster-juice",
-      "name": "Booster Juice",
-      "website": "https://boosterjuice.com/en-ca",
-      "status": 200,
-      "observedAt": "2026-09-04T13:17:36.217Z",
-      "keywordHits": [
-        "menu",
-        "special",
-        "offers",
-        "promo",
-        "event"
-      ],
-      "signalMatches": {
-        "menu": [
-          "menu"
-        ],
-        "specials": [
-          "special",
-          "offers",
-          "promo"
-        ],
-        "events": [
-          "event"
-        ],
-        "patio": [],
-        "openings": [],
-        "closures": [],
-        "moves": [],
-        "brunch": [],
-        "reservations": [],
-        "takeout": []
-      },
-      "candidateLinks": [
-        {
-          "text": "SPECIALTY SHOTS",
-          "href": "https://boosterjuice.com/en-ca/collections/specialty-shots",
+          "text": "Features",
+          "href": "https://bluenoseii.ca/shortcodes/",
           "signalMatches": {
             "menu": [],
             "specials": [
-              "special"
+              "features"
             ],
             "events": [],
             "patio": [],
@@ -2841,361 +2648,12 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
           }
         },
         {
-          "text": "CURRENT PROMOTIONS",
-          "href": "https://boosterjuice.com/en-ca/blogs/current-promotions",
-          "signalMatches": {
-            "menu": [],
-            "specials": [
-              "promo"
-            ],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "CORPORATE & EVENT PROGRAM",
-          "href": "https://boosterjuice.com/en-ca/pages/catering",
-          "signalMatches": {
-            "menu": [],
-            "specials": [],
-            "events": [
-              "event"
-            ],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "FIND YOUR PERFECT SPECIALTY SHOT",
-          "href": "https://boosterjuice.com/en-ca/collections/specialty-shots",
-          "signalMatches": {
-            "menu": [],
-            "specials": [
-              "special"
-            ],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Current Promotions",
-          "href": "https://boosterjuice.com/en-ca/blogs/current-promotions",
-          "signalMatches": {
-            "menu": [],
-            "specials": [
-              "promo"
-            ],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Specialty Shots",
-          "href": "https://boosterjuice.com/en-ca/collections/specialty-shots",
-          "signalMatches": {
-            "menu": [],
-            "specials": [
-              "special"
-            ],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        }
-      ],
-      "sourceKind": "official_website",
-      "reviewState": "cross-check"
-    },
-    {
-      "restaurantId": "osm-way-393886756-boston-pizza",
-      "name": "Boston Pizza",
-      "website": "https://bostonpizza.com/en/index.html",
-      "status": 200,
-      "observedAt": "2026-09-04T13:17:36.410Z",
-      "keywordHits": [
-        "menu",
-        "offers",
-        "promo",
-        "live music",
-        "ticket",
-        "coming soon",
-        "reserve",
-        "takeout",
-        "order online",
-        "delivery"
-      ],
-      "signalMatches": {
-        "menu": [
-          "menu"
-        ],
-        "specials": [
-          "offers",
-          "promo"
-        ],
-        "events": [
-          "live music",
-          "ticket"
-        ],
-        "patio": [],
-        "openings": [
-          "coming soon"
-        ],
-        "closures": [],
-        "moves": [],
-        "brunch": [],
-        "reservations": [
-          "reserve"
-        ],
-        "takeout": [
-          "takeout",
-          "order online",
-          "delivery"
-        ]
-      },
-      "candidateLinks": [
-        {
-          "text": "Menu",
-          "href": "https://bostonpizza.com/en/menu.html",
+          "text": "Takeout Menu",
+          "href": "https://bluenoseii.ca/?page_id=283",
           "signalMatches": {
             "menu": [
               "menu"
             ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Promotions",
-          "href": "https://bostonpizza.com/en/promotions.html",
-          "signalMatches": {
-            "menu": [],
-            "specials": [
-              "promo"
-            ],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "KIDS EAT FREE",
-          "href": "https://bostonpizza.com/en/promotions/kids-eat-free.html",
-          "signalMatches": {
-            "menu": [],
-            "specials": [
-              "promo"
-            ],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "https://bostonpizza.com/en/promotions/kids-eat-free.html",
-          "href": "https://bostonpizza.com/en/promotions/kids-eat-free.html",
-          "signalMatches": {
-            "menu": [],
-            "specials": [
-              "promo"
-            ],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "https://bostonpizza.com/en/promotions/kidscard.html",
-          "href": "https://bostonpizza.com/en/promotions/kidscard.html",
-          "signalMatches": {
-            "menu": [],
-            "specials": [
-              "promo"
-            ],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "LIVE MUSIC",
-          "href": "https://bostonpizza.com/en/promotions/summer-promotion.html",
-          "signalMatches": {
-            "menu": [],
-            "specials": [
-              "promo"
-            ],
-            "events": [
-              "live music"
-            ],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "FEAST LIKE A HOCKEY GOD",
-          "href": "https://bostonpizza.com/en/promotions/playoff-feature-menu.html",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [
-              "promo"
-            ],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "VIEW MENU",
-          "href": "https://bostonpizza.com/en/promotions/winter-cravings.html",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [
-              "promo"
-            ],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "https://bostonpizza.com/en/promotions/summer-feature-menu.html",
-          "href": "https://bostonpizza.com/en/promotions/summer-feature-menu.html",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [
-              "promo"
-            ],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "View Lunch Menu",
-          "href": "https://bostonpizza.com/en/promotions/lunch-menu.html",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [
-              "promo"
-            ],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "VIEW LUNCH MENU",
-          "href": "https://bostonpizza.com/en/promotions/lunch-menu.html",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [
-              "promo"
-            ],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "ORDER ONLINE",
-          "href": "https://order.bostonpizza.com/en-ca/home",
-          "signalMatches": {
-            "menu": [],
             "specials": [],
             "events": [],
             "patio": [],
@@ -3205,217 +2663,38 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
             "brunch": [],
             "reservations": [],
             "takeout": [
-              "order online"
+              "takeout"
             ]
-          }
-        },
-        {
-          "text": "https://bostonpizza.com/en/promotions.html",
-          "href": "https://bostonpizza.com/en/promotions.html",
-          "signalMatches": {
-            "menu": [],
-            "specials": [
-              "promo"
-            ],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "https://bostonpizza.com/en/menu.html",
-          "href": "https://bostonpizza.com/en/menu.html",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "FIND MY BP OPEN LATE",
-          "href": "https://bostonpizza.com/en/promotions/late-night.html",
-          "signalMatches": {
-            "menu": [],
-            "specials": [
-              "promo"
-            ],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
           }
         }
       ],
       "sourceKind": "official_website",
       "reviewState": "cross-check"
+    },
+    {
+      "restaurantId": "osm-node-4420916900-board-room-game-cafe",
+      "name": "Board Room Game Cafe",
+      "website": "http://boardroomgames.ca/",
+      "error": "robots_disallow",
+      "observedAt": "2026-10-21T14:28:12.980Z",
+      "sourceKind": "official_website",
+      "reviewState": "restricted"
     },
     {
       "restaurantId": "osm-node-11752691591-bramble-cafe",
       "name": "Bramble Cafe",
       "website": "https://www.instagram.com/bramble.hfx",
       "error": "robots_disallow",
-      "observedAt": "2026-09-04T13:17:36.587Z",
+      "observedAt": "2026-10-21T14:28:13.139Z",
       "sourceKind": "official_website",
       "reviewState": "restricted"
     },
     {
       "restaurantId": "osm-node-7465111619-brawta-jamaican-jerk-joint",
       "name": "Brawta Jamaican Jerk Joint",
-      "website": "https://brawtajerk.ca/",
+      "website": "https://www.brawtajerk.ca/",
       "status": 200,
-      "observedAt": "2026-09-04T13:17:36.753Z",
-      "keywordHits": [
-        "menu",
-        "special",
-        "reserve"
-      ],
-      "signalMatches": {
-        "menu": [
-          "menu"
-        ],
-        "specials": [
-          "special"
-        ],
-        "events": [],
-        "patio": [],
-        "openings": [],
-        "closures": [],
-        "moves": [],
-        "brunch": [],
-        "reservations": [
-          "reserve"
-        ],
-        "takeout": []
-      },
-      "candidateLinks": [
-        {
-          "text": "Grafton St Menu",
-          "href": "https://brawtajerk.ca/menu",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Our Menu",
-          "href": "https://brawtajerk.ca/menu",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        }
-      ],
-      "sourceKind": "official_website",
-      "reviewState": "cross-check"
-    },
-    {
-      "restaurantId": "osm-node-11526163882-brief-break",
-      "name": "Brief Break",
-      "website": "https://dal.mydininghub.ca/en/locations",
-      "status": 200,
-      "observedAt": "2026-09-04T13:17:36.754Z",
-      "keywordHits": [
-        "menu"
-      ],
-      "signalMatches": {
-        "menu": [
-          "menu"
-        ],
-        "specials": [],
-        "events": [],
-        "patio": [],
-        "openings": [],
-        "closures": [],
-        "moves": [],
-        "brunch": [],
-        "reservations": [],
-        "takeout": []
-      },
-      "candidateLinks": [
-        {
-          "text": "My Menu",
-          "href": "https://dal.mydininghub.ca/en/account?section=my-menu",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Locations & Menus",
-          "href": "https://dal.mydininghub.ca/en/locations",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        }
-      ],
-      "sourceKind": "official_website",
-      "reviewState": "cross-check"
-    },
-    {
-      "restaurantId": "osm-node-9330955319-budapest-bisztro",
-      "name": "Budapest Bisztro",
-      "website": "https://budapestbisztro.ca/",
-      "status": 200,
-      "observedAt": "2026-09-04T13:17:36.798Z",
+      "observedAt": "2026-10-21T14:28:13.453Z",
       "keywordHits": [],
       "signalMatches": {
         "menu": [],
@@ -3434,11 +2713,29 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "reviewState": "cross-check"
     },
     {
+      "restaurantId": "osm-node-11526163882-brief-break",
+      "name": "Brief Break",
+      "website": "https://dal.campusdish.com/LocationsAndMenus/WeldonLawBuilding",
+      "error": "quarantined_cross_entity_redirect",
+      "observedAt": "2026-10-21T14:28:13.478Z",
+      "sourceKind": "official_website",
+      "reviewState": "cross-check"
+    },
+    {
+      "restaurantId": "osm-node-9330955319-budapest-bisztro",
+      "name": "Budapest Bisztro",
+      "website": "https://budapestbisztro.ca/",
+      "error": "fetch failed",
+      "observedAt": "2026-10-21T14:28:13.594Z",
+      "sourceKind": "official_website",
+      "reviewState": "cross-check"
+    },
+    {
       "restaurantId": "osm-node-3791528457-cabin-coffee",
       "name": "Cabin Coffee",
       "website": "https://cabincoffeehalifax.com/",
       "status": 200,
-      "observedAt": "2026-09-04T13:17:37.021Z",
+      "observedAt": "2026-10-21T14:28:13.756Z",
       "keywordHits": [],
       "signalMatches": {
         "menu": [],
@@ -3459,97 +2756,9 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
     {
       "restaurantId": "osm-node-11752614922-cafe-good-luck",
       "name": "Café Good Luck",
-      "website": "https://cafegoodluck.ca/goodluck",
-      "status": 200,
-      "observedAt": "2026-09-04T13:17:37.046Z",
-      "keywordHits": [
-        "menu",
-        "special",
-        "specials",
-        "event",
-        "events",
-        "brunch",
-        "breakfast"
-      ],
-      "signalMatches": {
-        "menu": [
-          "menu"
-        ],
-        "specials": [
-          "special",
-          "specials"
-        ],
-        "events": [
-          "event",
-          "events"
-        ],
-        "patio": [],
-        "openings": [],
-        "closures": [],
-        "moves": [],
-        "brunch": [
-          "brunch",
-          "breakfast"
-        ],
-        "reservations": [],
-        "takeout": []
-      },
-      "candidateLinks": [
-        {
-          "text": "https://www.instagram.com/p/DKefaKdJrPe/",
-          "href": "https://www.instagram.com/p/DKefaKdJrPe/",
-          "signalMatches": {
-            "menu": [],
-            "specials": [],
-            "events": [
-              "dj"
-            ],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "https://www.instagram.com/p/DJ_l3_ephLa/",
-          "href": "https://www.instagram.com/p/DJ_l3_ephLa/",
-          "signalMatches": {
-            "menu": [],
-            "specials": [],
-            "events": [
-              "dj"
-            ],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "https://www.instagram.com/p/DJ6cSRcpKkj/",
-          "href": "https://www.instagram.com/p/DJ6cSRcpKkj/",
-          "signalMatches": {
-            "menu": [],
-            "specials": [],
-            "events": [
-              "dj"
-            ],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        }
-      ],
+      "website": "https://www.manualfoodanddrinkco.com/goodluck",
+      "error": "quarantined_cross_entity_redirect",
+      "observedAt": "2026-10-21T14:28:13.815Z",
       "sourceKind": "official_website",
       "reviewState": "cross-check"
     },
@@ -3558,7 +2767,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "name": "Café Lara",
       "website": "https://cafelara.ca/",
       "error": "fetch failed",
-      "observedAt": "2026-09-04T13:17:37.126Z",
+      "observedAt": "2026-10-21T14:28:14.403Z",
       "sourceKind": "official_website",
       "reviewState": "cross-check"
     },
@@ -3567,7 +2776,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "name": "Café Lunette",
       "website": "https://www.cafelunette.com/",
       "status": 200,
-      "observedAt": "2026-09-04T13:17:37.192Z",
+      "observedAt": "2026-10-21T14:28:14.553Z",
       "keywordHits": [
         "menu",
         "wine list",
@@ -3582,8 +2791,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
         "reservation",
         "reserve",
         "book a table",
-        "opentable",
-        "order online"
+        "opentable"
       ],
       "signalMatches": {
         "menu": [
@@ -3615,9 +2823,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
           "book a table",
           "opentable"
         ],
-        "takeout": [
-          "order online"
-        ]
+        "takeout": []
       },
       "candidateLinks": [
         {
@@ -3711,26 +2917,6 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
           }
         },
         {
-          "text": "Order Online Grab + Go",
-          "href": "https://silverpay.app/cafelunette/menu",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": [
-              "order online"
-            ]
-          }
-        },
-        {
           "text": "reserve your table",
           "href": "https://www.opentable.ca/booking/restref/availability?lang=en-CA&#038;correlationId=a802e0e6-ee0e-4402-b5a5-aaca6d40dd38&#038;restRef=1226047&#038;otSource=Restaurant%20website",
           "signalMatches": {
@@ -3783,24 +2969,6 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
             "moves": [],
             "brunch": [],
             "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Wine Wednesdays, à la Lunette",
-          "href": "https://www.opentable.ca/booking/experiences-availability?rid=1226047&restref=1226047&experienceId=696902&utm_source=external&utm_medium=referral&utm_campaign=shared",
-          "signalMatches": {
-            "menu": [],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [
-              "opentable"
-            ],
             "takeout": []
           }
         },
@@ -3868,7 +3036,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "name": "Cafe Marco Polo",
       "website": "https://justuscoffee.com/locations/kings-wharf-dartmouth",
       "status": 404,
-      "observedAt": "2026-09-04T13:17:37.318Z",
+      "observedAt": "2026-10-21T14:28:14.642Z",
       "keywordHits": [
         "menu"
       ],
@@ -3893,430 +3061,9 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
     {
       "restaurantId": "osm-node-30825944-canton-garden",
       "name": "Canton Garden",
-      "website": "https://www.cantongardenns.com/yik8nsx2/restaurant/order-online?utm_source=redirect&utm_medium=cantongardenhalifax.com",
-      "status": 200,
-      "observedAt": "2026-09-04T13:17:37.452Z",
-      "keywordHits": [
-        "menu",
-        "special",
-        "order online"
-      ],
-      "signalMatches": {
-        "menu": [
-          "menu"
-        ],
-        "specials": [
-          "special"
-        ],
-        "events": [],
-        "patio": [],
-        "openings": [],
-        "closures": [],
-        "moves": [],
-        "brunch": [],
-        "reservations": [],
-        "takeout": [
-          "order online"
-        ]
-      },
-      "candidateLinks": [
-        {
-          "text": "All Day Menu",
-          "href": "https://www.cantongardenns.com/yik8nsx2/restaurant/order-online?menu=All+Day+Menu",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Lunch Menu",
-          "href": "https://www.cantongardenns.com/yik8nsx2/restaurant/order-online?menu=Lunch+Menu",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "🤩 POPULAR 1. Spring Roll (1pc) Pastry filled with vegetables. $ 3.50",
-          "href": "https://www.cantongardenns.com/yik8nsx2/restaurant/order-online/menus/all-day-menu/42050420?menu=All+Day+Menu&amp;category=Appetizers",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "1a. Shrimp Roll (4) $ 15.50",
-          "href": "https://www.cantongardenns.com/yik8nsx2/restaurant/order-online/menus/all-day-menu/42050421?menu=All+Day+Menu&amp;category=Appetizers",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "🤩 POPULAR 2. Egg Roll (1pc) Crispy fried roll filled with vegetables and served with a sweet chili sauce. $ 3.50",
-          "href": "https://www.cantongardenns.com/yik8nsx2/restaurant/order-online/menus/all-day-menu/42050422?menu=All+Day+Menu&amp;category=Appetizers",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "3. Fried Wontons (12) Crispy fried wontons with a delicate filling. $ 7.25",
-          "href": "https://www.cantongardenns.com/yik8nsx2/restaurant/order-online/menus/all-day-menu/42050423?menu=All+Day+Menu&amp;category=Appetizers",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "4. Spicy Fried Tofu $ 7.25",
-          "href": "https://www.cantongardenns.com/yik8nsx2/restaurant/order-online/menus/all-day-menu/42050424?menu=All+Day+Menu&amp;category=Appetizers",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "5. Pan Fried Dumplings (12 pcs) $ 16.50",
-          "href": "https://www.cantongardenns.com/yik8nsx2/restaurant/order-online/menus/all-day-menu/42050425?menu=All+Day+Menu&amp;category=Appetizers",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "6. Fried Chicken Wings Crispy fried chicken wings, served hot and ready to enjoy. $ 16.50",
-          "href": "https://www.cantongardenns.com/yik8nsx2/restaurant/order-online/menus/all-day-menu/42050426?menu=All+Day+Menu&amp;category=Appetizers",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "7. Deep Fried Shrimp Balls (12 pcs) $ 26.25",
-          "href": "https://www.cantongardenns.com/yik8nsx2/restaurant/order-online/menus/all-day-menu/42050427?menu=All+Day+Menu&amp;category=Appetizers",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "👍🏼 OFTEN LIKED 8. Moo Shu Pork (6 pcs) Tender pork, scrambled eggs, and vegetables wrapped in thin pancakes $ 17.25",
-          "href": "https://www.cantongardenns.com/yik8nsx2/restaurant/order-online/menus/all-day-menu/42050428?menu=All+Day+Menu&amp;category=Appetizers",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "9. Combination Appetizer Dumpling, Spare Ribs, Fried Meat Wonton, Spring Roll, BBQ Pork $ 35.95",
-          "href": "https://www.cantongardenns.com/yik8nsx2/restaurant/order-online/menus/all-day-menu/42050429?menu=All+Day+Menu&amp;category=Appetizers",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "10. Shrimp Wonton Noodle Soup $ 14.95",
-          "href": "https://www.cantongardenns.com/yik8nsx2/restaurant/order-online/menus/all-day-menu/42050430?menu=All+Day+Menu&amp;category=Soups",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "11. Hot and Sour Soup Classic comfort soup with a balance of spicy and tangy flavors in a rich broth. $ 6.75",
-          "href": "https://www.cantongardenns.com/yik8nsx2/restaurant/order-online/menus/all-day-menu/42050431?menu=All+Day+Menu&amp;category=Soups",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "12. Mushroom Egg Drop Soup $ 6.75",
-          "href": "https://www.cantongardenns.com/yik8nsx2/restaurant/order-online/menus/all-day-menu/42050432?menu=All+Day+Menu&amp;category=Soups",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "👍🏼 OFTEN LIKED 13. Wonton Soup Tender wontons, served in a light broth. $ 7.15",
-          "href": "https://www.cantongardenns.com/yik8nsx2/restaurant/order-online/menus/all-day-menu/42050433?menu=All+Day+Menu&amp;category=Soups",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "14. Chicken Corn Soup Tender chicken and sweet corn in a comforting, creamy broth. $ 15.75",
-          "href": "https://www.cantongardenns.com/yik8nsx2/restaurant/order-online/menus/all-day-menu/42050434?menu=All+Day+Menu&amp;category=Soups",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "15. West Lake Mince Beef Tofu Soup $ 18.50",
-          "href": "https://www.cantongardenns.com/yik8nsx2/restaurant/order-online/menus/all-day-menu/42050435?menu=All+Day+Menu&amp;category=Soups",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "16. Mixed Seafood Tofu Soup $ 23.25",
-          "href": "https://www.cantongardenns.com/yik8nsx2/restaurant/order-online/menus/all-day-menu/42050436?menu=All+Day+Menu&amp;category=Soups",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "17. Crab Meat Fish Maw Soup $ 28.25",
-          "href": "https://www.cantongardenns.com/yik8nsx2/restaurant/order-online/menus/all-day-menu/42050437?menu=All+Day+Menu&amp;category=Soups",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Menu",
-          "href": "https://www.cantongardenns.com/yik8nsx2/canton-garden-halifax-b3m-0h8/menu",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Start New Order",
-          "href": "https://www.cantongardenns.com/yik8nsx2/restaurant/order-online?utm_source=redirect&utm_medium=cantongardenhalifax.com#menu-section",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        }
-      ],
+      "website": "https://www.cantongardenhalifax.com/",
+      "error": "quarantined_cross_entity_redirect",
+      "observedAt": "2026-10-21T14:28:14.699Z",
       "sourceKind": "official_website",
       "reviewState": "cross-check"
     },
@@ -4325,7 +3072,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "name": "Castello Café",
       "website": "https://www.facebook.com/CastelloCafeCatering/",
       "error": "robots_disallow",
-      "observedAt": "2026-09-04T13:17:37.712Z",
+      "observedAt": "2026-10-21T14:28:14.731Z",
       "sourceKind": "official_website",
       "reviewState": "restricted"
     },
@@ -4334,7 +3081,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "name": "Cha Baa Thai",
       "website": "https://www.chabaathairestaurant.ca/",
       "error": "fetch failed",
-      "observedAt": "2026-09-04T13:17:37.765Z",
+      "observedAt": "2026-10-21T14:28:14.942Z",
       "sourceKind": "official_website",
       "reviewState": "cross-check"
     },
@@ -4343,7 +3090,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "name": "Chain Yard Urban Cidery",
       "website": "http://://www.chainyardcider.com",
       "error": "invalid_url",
-      "observedAt": "2026-09-04T13:17:34.119Z",
+      "observedAt": "2026-10-21T14:28:11.256Z",
       "sourceKind": "official_website",
       "reviewState": "cross-check"
     },
@@ -4352,7 +3099,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "name": "Charm School",
       "website": "https://unfuckingfiltered.com/",
       "status": 200,
-      "observedAt": "2026-09-04T13:17:37.804Z",
+      "observedAt": "2026-10-21T14:28:15.003Z",
       "keywordHits": [
         "menu"
       ],
@@ -4398,10 +3145,11 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "name": "Cheese Curds and Habaneros",
       "website": "https://cheesecurdsgourmetburgersandpoutinerie.unuhub.net/",
       "status": 200,
-      "observedAt": "2026-09-04T13:17:37.850Z",
+      "observedAt": "2026-10-21T14:28:15.288Z",
       "keywordHits": [
         "menu",
         "special",
+        "deal",
         "offers",
         "pickup",
         "pick up",
@@ -4414,6 +3162,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
         ],
         "specials": [
           "special",
+          "deal",
           "offers"
         ],
         "events": [],
@@ -4439,7 +3188,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "name": "Cheese Curds Burgers",
       "website": "https://www.cheesecurdsburgers.com/",
       "status": 200,
-      "observedAt": "2026-09-04T13:17:38.602Z",
+      "observedAt": "2026-10-21T14:28:15.349Z",
       "keywordHits": [
         "menu",
         "order online"
@@ -4578,7 +3327,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "name": "Cheese Curds Gourmet Burgers and Poutinerie/Habaneros Modern Taco Bar",
       "website": "https://www.cheesecurdsburgers.com/",
       "status": 200,
-      "observedAt": "2026-09-04T13:17:38.888Z",
+      "observedAt": "2026-10-21T14:28:15.631Z",
       "keywordHits": [
         "menu",
         "order online"
@@ -4717,7 +3466,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "name": "Chinatown",
       "website": "https://www.chinatownhalifax.com/",
       "status": 200,
-      "observedAt": "2026-09-04T13:17:38.681Z",
+      "observedAt": "2026-10-21T14:28:15.357Z",
       "keywordHits": [
         "menu",
         "reserve",
@@ -4884,7 +3633,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "name": "Chkn Chop",
       "website": "https://www.chknchop.com/",
       "status": 200,
-      "observedAt": "2026-09-04T13:17:38.739Z",
+      "observedAt": "2026-10-21T14:28:15.613Z",
       "keywordHits": [
         "menu"
       ],
@@ -4966,7 +3715,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "name": "Classic Pizza",
       "website": "https://classic-pizza.order-online.ai/",
       "status": 200,
-      "observedAt": "2026-09-04T13:17:38.909Z",
+      "observedAt": "2026-10-21T14:28:15.774Z",
       "keywordHits": [],
       "signalMatches": {
         "menu": [],
@@ -4989,7 +3738,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "name": "Clay West Bar & Grill",
       "website": "https://claywesthalifax.business.site/",
       "status": 404,
-      "observedAt": "2026-09-04T13:17:38.989Z",
+      "observedAt": "2026-10-21T14:28:15.861Z",
       "keywordHits": [],
       "signalMatches": {
         "menu": [],
@@ -5012,973 +3761,16 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "name": "Colleen's Pub",
       "website": "https://www.facebook.com/oldwrinkleranch/",
       "error": "robots_disallow",
-      "observedAt": "2026-09-04T13:17:37.917Z",
+      "observedAt": "2026-10-21T14:28:15.055Z",
       "sourceKind": "official_website",
       "reviewState": "restricted"
-    },
-    {
-      "restaurantId": "osm-node-3799422457-cora",
-      "name": "Cora",
-      "website": "https://www.chezcora.com/en/breakfast-lunch-restaurants/halifax-downtown/",
-      "status": 200,
-      "observedAt": "2026-09-04T13:17:39.045Z",
-      "keywordHits": [
-        "menu",
-        "special",
-        "offers",
-        "promo",
-        "patio",
-        "now open",
-        "breakfast",
-        "reserve",
-        "delivery"
-      ],
-      "signalMatches": {
-        "menu": [
-          "menu"
-        ],
-        "specials": [
-          "special",
-          "offers",
-          "promo"
-        ],
-        "events": [],
-        "patio": [
-          "patio"
-        ],
-        "openings": [
-          "now open"
-        ],
-        "closures": [],
-        "moves": [],
-        "brunch": [
-          "breakfast"
-        ],
-        "reservations": [
-          "reserve"
-        ],
-        "takeout": [
-          "delivery"
-        ]
-      },
-      "candidateLinks": [
-        {
-          "text": "Skip to content",
-          "href": "https://www.chezcora.com/en/breakfast-lunch-restaurants/halifax-downtown/#main",
-          "signalMatches": {
-            "menu": [],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [
-              "breakfast"
-            ],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Menu",
-          "href": "https://www.chezcora.com/en/menus/",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Promotions and contests",
-          "href": "https://www.chezcora.com/en/offers-and-contests/",
-          "signalMatches": {
-            "menu": [],
-            "specials": [
-              "offers",
-              "promo"
-            ],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Careers",
-          "href": "https://www.chezcora.com/en/breakfast-lunch-restaurants/halifax-downtown/#",
-          "signalMatches": {
-            "menu": [],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [
-              "breakfast"
-            ],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Reserve now",
-          "href": "https://widgets.libroreserve.com/WEB/AB017492181577/book",
-          "signalMatches": {
-            "menu": [],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [
-              "reserve"
-            ],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Cora Breakfast and Lunch",
-          "href": "https://www.chezcora.com/en",
-          "signalMatches": {
-            "menu": [],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [
-              "breakfast"
-            ],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Ben & Dictine",
-          "href": "https://www.chezcora.com/en/menu/eggs-ben-and-dictine/",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Beverages",
-          "href": "https://www.chezcora.com/en/menu/beverages/",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Skillets",
-          "href": "https://www.chezcora.com/en/menu/skillets/",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Crêpes",
-          "href": "https://www.chezcora.com/en/menu/crepes-fruits/",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Teen favourites",
-          "href": "https://www.chezcora.com/en/menu/teens-favorites/",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Fresh fruit",
-          "href": "https://www.chezcora.com/en/menu/fresh-fruits/",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Waffles",
-          "href": "https://www.chezcora.com/en/menu/waffles/",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Kids' menu",
-          "href": "https://www.chezcora.com/en/menu/kids-menu/",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Early Bird menu",
-          "href": "https://www.chezcora.com/en/menu/early-bird-menu/",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Eggs",
-          "href": "https://www.chezcora.com/en/menu/eggs/",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Omelettes and crêpomelettes",
-          "href": "https://www.chezcora.com/en/menu/omelettes/",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "French toast",
-          "href": "https://www.chezcora.com/en/menu/french-toast/",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Pancakes",
-          "href": "https://www.chezcora.com/en/menu/pancakes/",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Sandwiches",
-          "href": "https://www.chezcora.com/en/menu/sandwiches/",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Sweet 'n salty",
-          "href": "https://www.chezcora.com/en/menu/sweet-salty/",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Find a restaurant",
-          "href": "https://www.chezcora.com/en/breakfast-lunch-restaurants/",
-          "signalMatches": {
-            "menu": [],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [
-              "breakfast"
-            ],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Alergènes (FR)",
-          "href": "https://www.chezcora.com/wp-content/uploads/2026/09/Allergenes-menu-2026-05_QC-FR.pdf",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Allergens",
-          "href": "https://www.chezcora.com/wp-content/uploads/2026/09/Allergenes-menu-2026-05_QC-EN.pdf",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        }
-      ],
-      "sourceKind": "official_website",
-      "reviewState": "cross-check"
-    },
-    {
-      "restaurantId": "osm-node-11867490075-cora",
-      "name": "Cora",
-      "website": "https://www.chezcora.com/en/",
-      "status": 200,
-      "observedAt": "2026-09-04T13:17:40.370Z",
-      "keywordHits": [
-        "menu",
-        "special",
-        "offers",
-        "promo",
-        "breakfast",
-        "reserve"
-      ],
-      "signalMatches": {
-        "menu": [
-          "menu"
-        ],
-        "specials": [
-          "special",
-          "offers",
-          "promo"
-        ],
-        "events": [],
-        "patio": [],
-        "openings": [],
-        "closures": [],
-        "moves": [],
-        "brunch": [
-          "breakfast"
-        ],
-        "reservations": [
-          "reserve"
-        ],
-        "takeout": []
-      },
-      "candidateLinks": [
-        {
-          "text": "Menu",
-          "href": "https://www.chezcora.com/en/menus/",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Promotions and contests",
-          "href": "https://www.chezcora.com/en/offers-and-contests/",
-          "signalMatches": {
-            "menu": [],
-            "specials": [
-              "offers",
-              "promo"
-            ],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "See the menu",
-          "href": "https://www.chezcora.com/en/menus/",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "View all restaurants",
-          "href": "https://www.chezcora.com/en/breakfast-lunch-restaurants/",
-          "signalMatches": {
-            "menu": [],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [
-              "breakfast"
-            ],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "BC 12",
-          "href": "https://www.chezcora.com/en/breakfast-lunch-restaurants/?_filtre_province=colombie-britannique",
-          "signalMatches": {
-            "menu": [],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [
-              "breakfast"
-            ],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "AB 22",
-          "href": "https://www.chezcora.com/en/breakfast-lunch-restaurants/?_filtre_province=alberta",
-          "signalMatches": {
-            "menu": [],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [
-              "breakfast"
-            ],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "SK 2",
-          "href": "https://www.chezcora.com/en/breakfast-lunch-restaurants/?_filtre_province=saskatchewan",
-          "signalMatches": {
-            "menu": [],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [
-              "breakfast"
-            ],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "MB 4",
-          "href": "https://www.chezcora.com/en/breakfast-lunch-restaurants/?_filtre_province=manitoba",
-          "signalMatches": {
-            "menu": [],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [
-              "breakfast"
-            ],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "ON 35",
-          "href": "https://www.chezcora.com/en/breakfast-lunch-restaurants/?_filtre_province=ontario",
-          "signalMatches": {
-            "menu": [],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [
-              "breakfast"
-            ],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "QC 35",
-          "href": "https://www.chezcora.com/en/breakfast-lunch-restaurants/?_filtre_province=quebec",
-          "signalMatches": {
-            "menu": [],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [
-              "breakfast"
-            ],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "NB 5",
-          "href": "https://www.chezcora.com/en/breakfast-lunch-restaurants/?_filtre_province=nouveau-brunswick",
-          "signalMatches": {
-            "menu": [],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [
-              "breakfast"
-            ],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "NS 6",
-          "href": "https://www.chezcora.com/en/breakfast-lunch-restaurants/?_filtre_province=nouvelle-ecosse",
-          "signalMatches": {
-            "menu": [],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [
-              "breakfast"
-            ],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "NL 2",
-          "href": "https://www.chezcora.com/en/breakfast-lunch-restaurants/?_filtre_province=terre-neuve-et-labrador",
-          "signalMatches": {
-            "menu": [],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [
-              "breakfast"
-            ],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Ben & Dictine",
-          "href": "https://www.chezcora.com/en/menu/eggs-ben-and-dictine/",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Beverages",
-          "href": "https://www.chezcora.com/en/menu/beverages/",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Skillets",
-          "href": "https://www.chezcora.com/en/menu/skillets/",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Crêpes",
-          "href": "https://www.chezcora.com/en/menu/crepes-fruits/",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Teen favourites",
-          "href": "https://www.chezcora.com/en/menu/teens-favorites/",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Fresh fruit",
-          "href": "https://www.chezcora.com/en/menu/fresh-fruits/",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Waffles",
-          "href": "https://www.chezcora.com/en/menu/waffles/",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Kids' menu",
-          "href": "https://www.chezcora.com/en/menu/kids-menu/",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Early Bird menu",
-          "href": "https://www.chezcora.com/en/menu/early-bird-menu/",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Eggs",
-          "href": "https://www.chezcora.com/en/menu/eggs/",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Omelettes and crêpomelettes",
-          "href": "https://www.chezcora.com/en/menu/omelettes/",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        }
-      ],
-      "sourceKind": "official_website",
-      "reviewState": "cross-check"
     },
     {
       "restaurantId": "osm-node-1749780391-cousins-restaurant",
       "name": "Cousins Restaurant",
       "website": "https://cousinsrestaurant.webs.com/",
       "error": "fetch failed",
-      "observedAt": "2026-09-04T13:17:39.171Z",
+      "observedAt": "2026-10-21T14:28:15.909Z",
       "sourceKind": "official_website",
       "reviewState": "cross-check"
     },
@@ -5987,7 +3779,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "name": "Creative Cup Cafe",
       "website": "https://facebook.com/Creative-Cup-Cafe-112888013737872/",
       "error": "robots_disallow",
-      "observedAt": "2026-09-04T13:17:38.037Z",
+      "observedAt": "2026-10-21T14:28:15.175Z",
       "sourceKind": "official_website",
       "reviewState": "restricted"
     },
@@ -5996,7 +3788,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "name": "Crème",
       "website": "https://cremehalifax.com/",
       "status": 200,
-      "observedAt": "2026-09-04T13:17:39.309Z",
+      "observedAt": "2026-10-21T14:28:15.956Z",
       "keywordHits": [
         "menu",
         "cocktail",
@@ -6192,7 +3984,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "name": "Curry Village",
       "website": "https://www.curryvillage.ca/",
       "status": 526,
-      "observedAt": "2026-09-04T13:17:39.329Z",
+      "observedAt": "2026-10-21T14:28:16.104Z",
       "keywordHits": [],
       "signalMatches": {
         "menu": [],
@@ -6213,121 +4005,9 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
     {
       "restaurantId": "osm-node-703490468-cut-contemporary-steak-house-and-urban-grill",
       "name": "Cut Contemporary Steak House & Urban Grill",
-      "website": "https://www.rcr.ca/restaurants/cut-steakhouse/",
-      "status": 200,
-      "observedAt": "2026-09-04T13:17:39.391Z",
-      "keywordHits": [
-        "menu",
-        "cocktail",
-        "special",
-        "offers",
-        "promo",
-        "event",
-        "events",
-        "show",
-        "reservation",
-        "reserve"
-      ],
-      "signalMatches": {
-        "menu": [
-          "menu",
-          "cocktail"
-        ],
-        "specials": [
-          "special",
-          "offers",
-          "promo"
-        ],
-        "events": [
-          "event",
-          "events",
-          "show"
-        ],
-        "patio": [],
-        "openings": [],
-        "closures": [],
-        "moves": [],
-        "brunch": [],
-        "reservations": [
-          "reservation",
-          "reserve"
-        ],
-        "takeout": []
-      },
-      "candidateLinks": [
-        {
-          "text": "Dinner Menu",
-          "href": "https://www.rcr.ca/content/uploads/2018/02/CUT-Steakhouse-Menu-SUMMER-2026.pdf",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Desserts",
-          "href": "https://www.rcr.ca/content/uploads/2018/02/CUT-Dessert-Menu-Winter-2026.pdf",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Cocktails & BTG wines",
-          "href": "https://www.rcr.ca/content/uploads/2018/02/CUT-Steakhouse-Cocktails-Wine-BTG-SPRING-2026.pdf",
-          "signalMatches": {
-            "menu": [
-              "cocktail"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "The Cable Wharf",
-          "href": "https://www.rcr.ca/restaurants/cable-wharf-kitchen-patio/",
-          "signalMatches": {
-            "menu": [],
-            "specials": [],
-            "events": [],
-            "patio": [
-              "patio"
-            ],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        }
-      ],
+      "website": "https://www.cutsteakhouse.ca/",
+      "error": "quarantined_cross_entity_redirect",
+      "observedAt": "2026-10-21T14:28:16.322Z",
       "sourceKind": "official_website",
       "reviewState": "cross-check"
     },
@@ -6336,7 +4016,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "name": "Darrell's",
       "website": "https://darrellsrestaurants.com/",
       "status": 200,
-      "observedAt": "2026-09-04T13:17:39.483Z",
+      "observedAt": "2026-10-21T14:28:16.421Z",
       "keywordHits": [
         "menu",
         "features",
@@ -6412,7 +4092,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "name": "Dharma sushi",
       "website": "https://dharmasushi.ca/",
       "error": "fetch failed",
-      "observedAt": "2026-09-04T13:17:39.617Z",
+      "observedAt": "2026-10-21T14:28:16.656Z",
       "sourceKind": "official_website",
       "reviewState": "cross-check"
     },
@@ -6421,7 +4101,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "name": "Donnini's Pizza",
       "website": "https://donninispizza.com/",
       "status": 200,
-      "observedAt": "2026-09-04T13:17:39.712Z",
+      "observedAt": "2026-10-21T14:28:17.029Z",
       "keywordHits": [
         "menu",
         "special",
@@ -6535,7 +4215,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "name": "Dooly's",
       "website": "https://www.doolys.ca/",
       "status": 200,
-      "observedAt": "2026-09-04T13:17:39.753Z",
+      "observedAt": "2026-10-21T14:28:17.137Z",
       "keywordHits": [
         "promo"
       ],
@@ -6619,38 +4299,17 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "restaurantId": "osm-node-11551984275-doraku",
       "name": "Doraku",
       "website": "https://doraku.yolasite.com/",
-      "status": 200,
-      "observedAt": "2026-09-04T13:17:39.903Z",
-      "keywordHits": [
-        "reservation",
-        "pick up"
-      ],
-      "signalMatches": {
-        "menu": [],
-        "specials": [],
-        "events": [],
-        "patio": [],
-        "openings": [],
-        "closures": [],
-        "moves": [],
-        "brunch": [],
-        "reservations": [
-          "reservation"
-        ],
-        "takeout": [
-          "pick up"
-        ]
-      },
-      "candidateLinks": [],
+      "error": "robots_disallow",
+      "observedAt": "2026-10-21T14:28:17.284Z",
       "sourceKind": "official_website",
-      "reviewState": "cross-check"
+      "reviewState": "restricted"
     },
     {
       "restaurantId": "osm-node-4797459277-downtown-pizza",
       "name": "Downtown Pizza",
       "website": "https://downtownpizza.ca/",
       "status": 200,
-      "observedAt": "2026-09-04T13:17:40.189Z",
+      "observedAt": "2026-10-21T14:28:17.314Z",
       "keywordHits": [
         "menu",
         "special",
@@ -6930,7 +4589,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "name": "Durty Nelly's Irish Pub",
       "website": "https://durtynellys.ca/",
       "status": 200,
-      "observedAt": "2026-09-04T13:17:40.315Z",
+      "observedAt": "2026-10-21T14:28:17.716Z",
       "keywordHits": [
         "menu",
         "live music",
@@ -7131,7 +4790,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "name": "East Cup Cafe",
       "website": "https://eastcupcafe.com/",
       "status": 200,
-      "observedAt": "2026-09-04T13:17:40.542Z",
+      "observedAt": "2026-10-21T14:28:17.739Z",
       "keywordHits": [
         "special",
         "offers"
@@ -7179,7 +4838,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "name": "Efendy Turkish & Mediterranean Grill",
       "website": "http://www.efendyrestaurant.com/",
       "error": "fetch failed",
-      "observedAt": "2026-09-04T13:17:40.652Z",
+      "observedAt": "2026-10-21T14:28:17.811Z",
       "sourceKind": "official_website",
       "reviewState": "cross-check"
     },
@@ -7188,7 +4847,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "name": "Ela Greek Taverna",
       "website": "https://elagreektaverna.com/",
       "status": 200,
-      "observedAt": "2026-09-04T13:17:40.852Z",
+      "observedAt": "2026-10-21T14:28:18.292Z",
       "keywordHits": [
         "menu",
         "special",
@@ -7395,7 +5054,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "name": "ela! Greek Taverna",
       "website": "https://elagreektaverna.com/",
       "status": 200,
-      "observedAt": "2026-09-04T13:17:41.469Z",
+      "observedAt": "2026-10-21T14:28:18.963Z",
       "keywordHits": [
         "menu",
         "special",
@@ -7602,7 +5261,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "name": "Espresso 46",
       "website": "https://espresso46.com/",
       "error": "fetch failed",
-      "observedAt": "2026-09-04T13:17:40.949Z",
+      "observedAt": "2026-10-21T14:28:18.303Z",
       "sourceKind": "official_website",
       "reviewState": "cross-check"
     },
@@ -7611,7 +5270,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "name": "Fan's Chinese Restaurant",
       "website": "https://www.fansrestaurant.ca/",
       "status": 200,
-      "observedAt": "2026-09-04T13:17:41.022Z",
+      "observedAt": "2026-10-21T14:28:18.320Z",
       "keywordHits": [
         "menu",
         "special",
@@ -7769,71 +5428,16 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "name": "Fattoush Mediterranean Grill",
       "website": "https://m.facebook.com/FattoushMediterraneanGrill/",
       "error": "robots_disallow",
-      "observedAt": "2026-09-04T13:17:41.119Z",
+      "observedAt": "2026-10-21T14:28:18.615Z",
       "sourceKind": "official_website",
       "reviewState": "restricted"
     },
     {
       "restaurantId": "osm-node-11526163877-fillings-bistro-32",
       "name": "Fillings Bistro 32",
-      "website": "https://dal.mydininghub.ca/en/locations",
-      "status": 200,
-      "observedAt": "2026-09-04T13:17:37.382Z",
-      "keywordHits": [
-        "menu"
-      ],
-      "signalMatches": {
-        "menu": [
-          "menu"
-        ],
-        "specials": [],
-        "events": [],
-        "patio": [],
-        "openings": [],
-        "closures": [],
-        "moves": [],
-        "brunch": [],
-        "reservations": [],
-        "takeout": []
-      },
-      "candidateLinks": [
-        {
-          "text": "My Menu",
-          "href": "https://dal.mydininghub.ca/en/account?section=my-menu",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Locations & Menus",
-          "href": "https://dal.mydininghub.ca/en/locations",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        }
-      ],
+      "website": "https://dal.campusdish.com/LocationsAndMenus/FillingsBistroatDentistry",
+      "error": "quarantined_cross_entity_redirect",
+      "observedAt": "2026-10-21T14:28:13.968Z",
       "sourceKind": "official_website",
       "reviewState": "cross-check"
     },
@@ -7842,39 +5446,16 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "name": "Flynn's Dairy Bar",
       "website": "https://www.facebook.com/flynns711/",
       "error": "robots_disallow",
-      "observedAt": "2026-09-04T13:17:38.310Z",
+      "observedAt": "2026-10-21T14:28:15.459Z",
       "sourceKind": "official_website",
       "reviewState": "restricted"
-    },
-    {
-      "restaurantId": "osm-node-3802788957-food-court-of-spring-garden-place",
-      "name": "Food Court of Spring Garden Place",
-      "website": "https://www.starbucks.ca/store-locator/store/4085-255631/5640-spring-garden-road-5640-spring-garden-road-301-halifax-ns-b-3-j-3-m-7",
-      "status": 200,
-      "observedAt": "2026-09-04T13:17:41.134Z",
-      "keywordHits": [],
-      "signalMatches": {
-        "menu": [],
-        "specials": [],
-        "events": [],
-        "patio": [],
-        "openings": [],
-        "closures": [],
-        "moves": [],
-        "brunch": [],
-        "reservations": [],
-        "takeout": []
-      },
-      "candidateLinks": [],
-      "sourceKind": "official_website",
-      "reviewState": "cross-check"
     },
     {
       "restaurantId": "osm-node-11282329952-freeman-s-little-new-york",
       "name": "Freeman's Little New York",
       "website": "https://www.freemanspizza.ca/",
       "status": 200,
-      "observedAt": "2026-09-04T13:17:41.337Z",
+      "observedAt": "2026-10-21T14:28:18.662Z",
       "keywordHits": [
         "menu",
         "event",
@@ -8019,7 +5600,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "name": "Fries & Co.",
       "website": "http://www.facebook.com/pages/Fries-Co/339657883852",
       "error": "robots_disallow",
-      "observedAt": "2026-09-04T13:17:38.430Z",
+      "observedAt": "2026-10-21T14:28:15.580Z",
       "sourceKind": "official_website",
       "reviewState": "restricted"
     },
@@ -8028,7 +5609,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "name": "Fujiyama",
       "website": "http://www.sushifujiyama.com/",
       "status": 200,
-      "observedAt": "2026-09-04T13:17:41.420Z",
+      "observedAt": "2026-10-21T14:28:18.731Z",
       "keywordHits": [],
       "signalMatches": {
         "menu": [],
@@ -8051,7 +5632,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "name": "G-Street Pizza",
       "website": "https://gstreetpizza.ca/",
       "error": "fetch failed",
-      "observedAt": "2026-09-04T13:17:41.700Z",
+      "observedAt": "2026-10-21T14:28:18.769Z",
       "sourceKind": "official_website",
       "reviewState": "cross-check"
     },
@@ -8060,7 +5641,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "name": "Gahan House",
       "website": "https://gahan.ca/",
       "status": 200,
-      "observedAt": "2026-09-04T13:17:41.962Z",
+      "observedAt": "2026-10-21T14:28:18.876Z",
       "keywordHits": [
         "reserve"
       ],
@@ -8087,7 +5668,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "name": "Genji Sushi",
       "website": "http://www.genjisushi.ca/",
       "status": 200,
-      "observedAt": "2026-09-04T13:17:42.182Z",
+      "observedAt": "2026-10-21T14:28:19.060Z",
       "keywordHits": [
         "menu",
         "reservation",
@@ -8287,7 +5868,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "name": "Gingerbread Haus Bakery",
       "website": "https://www.gingerbreadhausbakery.com/",
       "status": 200,
-      "observedAt": "2026-09-04T13:17:42.516Z",
+      "observedAt": "2026-10-21T14:28:19.373Z",
       "keywordHits": [],
       "signalMatches": {
         "menu": [],
@@ -8309,56 +5890,36 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "restaurantId": "osm-node-4416774495-glitter-bean-cafe",
       "name": "Glitter Bean Cafe",
       "website": "https://www.glitterbeancafe.com/contact",
-      "status": 200,
-      "observedAt": "2026-09-04T13:17:42.517Z",
-      "keywordHits": [
-        "promo",
-        "event",
-        "show"
-      ],
-      "signalMatches": {
-        "menu": [],
-        "specials": [
-          "promo"
-        ],
-        "events": [
-          "event",
-          "show"
-        ],
-        "patio": [],
-        "openings": [],
-        "closures": [],
-        "moves": [],
-        "brunch": [],
-        "reservations": [],
-        "takeout": []
-      },
-      "candidateLinks": [],
+      "error": "robots_disallow",
+      "observedAt": "2026-10-21T14:28:19.489Z",
       "sourceKind": "official_website",
-      "reviewState": "cross-check"
+      "reviewState": "restricted"
     },
     {
       "restaurantId": "osm-node-5150122721-good-robot-brewing-company",
       "name": "Good Robot Brewing Company",
       "website": "https://goodrobotbrewing.ca/",
       "status": 200,
-      "observedAt": "2026-09-04T13:17:42.683Z",
+      "observedAt": "2026-10-21T14:28:19.610Z",
       "keywordHits": [
-        "promo",
+        "menu",
         "event",
         "events",
+        "beer garden",
         "delivery"
       ],
       "signalMatches": {
-        "menu": [],
-        "specials": [
-          "promo"
+        "menu": [
+          "menu"
         ],
+        "specials": [],
         "events": [
           "event",
           "events"
         ],
-        "patio": [],
+        "patio": [
+          "beer garden"
+        ],
         "openings": [],
         "closures": [],
         "moves": [],
@@ -8389,13 +5950,13 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
           }
         },
         {
-          "text": "Toque &#8211; Promo w/ Space Pine &#36; 19.51",
-          "href": "https://shop.goodrobotbrewing.ca/product/toque-promo-w-space-pine/",
+          "text": "Robie Street Taproom, Beer Store + The MouseTrap Closed until Wednesday at 4 PM Hours, menus, and details →",
+          "href": "https://goodrobotbrewing.ca/robie-street/",
           "signalMatches": {
-            "menu": [],
-            "specials": [
-              "promo"
+            "menu": [
+              "menu"
             ],
+            "specials": [],
             "events": [],
             "patio": [],
             "openings": [],
@@ -8407,8 +5968,48 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
           }
         },
         {
+          "text": "Commons Beer Garden + Good Robot Shop Closed until Thursday at 4 PM Hours, menus, and details →",
+          "href": "https://goodrobotbrewing.ca/commons/",
+          "signalMatches": {
+            "menu": [
+              "menu"
+            ],
+            "specials": [],
+            "events": [],
+            "patio": [
+              "beer garden"
+            ],
+            "openings": [],
+            "closures": [],
+            "moves": [],
+            "brunch": [],
+            "reservations": [],
+            "takeout": []
+          }
+        },
+        {
+          "text": "Elmsdale Beer Store & Beer Garden Closed until Wednesday at 12 PM Hours, menus, and details →",
+          "href": "https://goodrobotbrewing.ca/elmsdale/",
+          "signalMatches": {
+            "menu": [
+              "menu"
+            ],
+            "specials": [],
+            "events": [],
+            "patio": [
+              "beer garden"
+            ],
+            "openings": [],
+            "closures": [],
+            "moves": [],
+            "brunch": [],
+            "reservations": [],
+            "takeout": []
+          }
+        },
+        {
           "text": "Shipping & Delivery Policy",
-          "href": "https://shop.goodrobotbrewing.ca/shipping-delivery-policy/",
+          "href": "https://goodrobotbrewing.ca/shipping-delivery-policy/",
           "signalMatches": {
             "menu": [],
             "specials": [],
@@ -8433,7 +6034,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "name": "Great Wall Restaurant",
       "website": "https://www.thegreatwall.ca/",
       "status": 200,
-      "observedAt": "2026-09-04T13:17:43.084Z",
+      "observedAt": "2026-10-21T14:28:19.702Z",
       "keywordHits": [
         "menu",
         "brunch",
@@ -8503,430 +6104,29 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "reviewState": "cross-check"
     },
     {
-      "restaurantId": "osm-node-2714920436-greco-pizza",
-      "name": "Greco Pizza",
-      "website": "https://greco.ca/",
-      "status": 200,
-      "observedAt": "2026-09-04T13:17:43.194Z",
-      "keywordHits": [
-        "menu",
-        "deal",
-        "offers",
-        "reserve"
-      ],
-      "signalMatches": {
-        "menu": [
-          "menu"
-        ],
-        "specials": [
-          "deal",
-          "offers"
-        ],
-        "events": [],
-        "patio": [],
-        "openings": [],
-        "closures": [],
-        "moves": [],
-        "brunch": [],
-        "reservations": [
-          "reserve"
-        ],
-        "takeout": []
-      },
-      "candidateLinks": [
-        {
-          "text": "Menu",
-          "href": "https://greco.ca/ourmenu/",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Deals",
-          "href": "https://grecopizza.weborder.net/GetAddress",
-          "signalMatches": {
-            "menu": [],
-            "specials": [
-              "deal"
-            ],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Order now",
-          "href": "https://grecopizza.weborder.net/Item/New/deals-1024/eastcoastkitchenparty/",
-          "signalMatches": {
-            "menu": [],
-            "specials": [
-              "deal"
-            ],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "ORDER NOW",
-          "href": "https://grecopizza.weborder.net/Item/New/deals-1024/hattrick/",
-          "signalMatches": {
-            "menu": [],
-            "specials": [
-              "deal"
-            ],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "ORDER NOW",
-          "href": "https://grecopizza.weborder.net/Item/New/deals-1024/eastcoastkitchenparty/",
-          "signalMatches": {
-            "menu": [],
-            "specials": [
-              "deal"
-            ],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "https://greco.ca/ourmenu",
-          "href": "https://greco.ca/ourmenu",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Delicious Pizza & More",
-          "href": "https://greco.ca/ourmenu/",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Sign Up for Exclusive Offers",
-          "href": "https://greco.ca/newsletter",
-          "signalMatches": {
-            "menu": [],
-            "specials": [
-              "offers"
-            ],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Email Offers",
-          "href": "https://greco.ca/newsletter",
-          "signalMatches": {
-            "menu": [],
-            "specials": [
-              "offers"
-            ],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Menu",
-          "href": "https://grecopizza.weborder.net/Items/deals-1024/",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [
-              "deal"
-            ],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Deals",
-          "href": "https://grecopizza.weborder.net/Items/deals-1024/",
-          "signalMatches": {
-            "menu": [],
-            "specials": [
-              "deal"
-            ],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        }
-      ],
-      "sourceKind": "official_website",
-      "reviewState": "cross-check"
-    },
-    {
       "restaurantId": "osm-node-11526163883-green-cafe",
       "name": "Green Café",
-      "website": "https://dal.mydininghub.ca/en/locations",
-      "status": 200,
-      "observedAt": "2026-09-04T13:17:37.666Z",
-      "keywordHits": [
-        "menu"
-      ],
-      "signalMatches": {
-        "menu": [
-          "menu"
-        ],
-        "specials": [],
-        "events": [],
-        "patio": [],
-        "openings": [],
-        "closures": [],
-        "moves": [],
-        "brunch": [],
-        "reservations": [],
-        "takeout": []
-      },
-      "candidateLinks": [
-        {
-          "text": "My Menu",
-          "href": "https://dal.mydininghub.ca/en/account?section=my-menu",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Locations & Menus",
-          "href": "https://dal.mydininghub.ca/en/locations",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        }
-      ],
+      "website": "https://dal.campusdish.com/LocationsAndMenus/GreenCafeatRoweManagementBuilding",
+      "error": "quarantined_cross_entity_redirect",
+      "observedAt": "2026-10-21T14:28:14.121Z",
       "sourceKind": "official_website",
       "reviewState": "cross-check"
     },
     {
       "restaurantId": "osm-node-11526163881-grille-works",
       "name": "Grille Works",
-      "website": "https://dal.mydininghub.ca/en/locations",
-      "status": 200,
-      "observedAt": "2026-09-04T13:17:37.942Z",
-      "keywordHits": [
-        "menu"
-      ],
-      "signalMatches": {
-        "menu": [
-          "menu"
-        ],
-        "specials": [],
-        "events": [],
-        "patio": [],
-        "openings": [],
-        "closures": [],
-        "moves": [],
-        "brunch": [],
-        "reservations": [],
-        "takeout": []
-      },
-      "candidateLinks": [
-        {
-          "text": "My Menu",
-          "href": "https://dal.mydininghub.ca/en/account?section=my-menu",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Locations & Menus",
-          "href": "https://dal.mydininghub.ca/en/locations",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        }
-      ],
+      "website": "https://dal.campusdish.com/LocationsAndMenus/LifeSciencesCentre/GrilleWorks",
+      "error": "quarantined_cross_entity_redirect",
+      "observedAt": "2026-10-21T14:28:14.275Z",
       "sourceKind": "official_website",
       "reviewState": "cross-check"
     },
     {
       "restaurantId": "osm-node-11526163885-ground-zero",
       "name": "Ground Zero",
-      "website": "https://dal.mydininghub.ca/en/locations",
-      "status": 200,
-      "observedAt": "2026-09-04T13:17:38.213Z",
-      "keywordHits": [
-        "menu"
-      ],
-      "signalMatches": {
-        "menu": [
-          "menu"
-        ],
-        "specials": [],
-        "events": [],
-        "patio": [],
-        "openings": [],
-        "closures": [],
-        "moves": [],
-        "brunch": [],
-        "reservations": [],
-        "takeout": []
-      },
-      "candidateLinks": [
-        {
-          "text": "My Menu",
-          "href": "https://dal.mydininghub.ca/en/account?section=my-menu",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Locations & Menus",
-          "href": "https://dal.mydininghub.ca/en/locations",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        }
-      ],
+      "website": "https://dal.campusdish.com/LocationsAndMenus/GroundZero",
+      "error": "quarantined_cross_entity_redirect",
+      "observedAt": "2026-10-21T14:28:14.426Z",
       "sourceKind": "official_website",
       "reviewState": "cross-check"
     },
@@ -8935,7 +6135,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "name": "Hamachi Kita",
       "website": "https://www.hamachikita.com/",
       "status": 200,
-      "observedAt": "2026-09-04T13:17:43.371Z",
+      "observedAt": "2026-10-21T14:28:20.257Z",
       "keywordHits": [
         "menu",
         "special",
@@ -9009,126 +6209,9 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
     {
       "restaurantId": "osm-node-9152231317-harvest",
       "name": "HARVEST",
-      "website": "https://www.harvestcleaneats.ca/",
-      "status": 200,
-      "observedAt": "2026-09-04T13:17:43.618Z",
-      "keywordHits": [
-        "menu",
-        "breakfast",
-        "order online"
-      ],
-      "signalMatches": {
-        "menu": [
-          "menu"
-        ],
-        "specials": [],
-        "events": [],
-        "patio": [],
-        "openings": [],
-        "closures": [],
-        "moves": [],
-        "brunch": [
-          "breakfast"
-        ],
-        "reservations": [],
-        "takeout": [
-          "order online"
-        ]
-      },
-      "candidateLinks": [
-        {
-          "text": "Menu",
-          "href": "https://www.harvestcleaneats.ca/menu",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "ORDER ONLINE",
-          "href": "https://smooth.menu/harvest-clean-eats/menu/",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": [
-              "order online"
-            ]
-          }
-        },
-        {
-          "text": "TRY IT TODAY",
-          "href": "https://smooth.menu/harvest-clean-eats/menu/",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "TRY ONE TODAY",
-          "href": "https://smooth.menu/harvest-clean-eats/menu/",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "EXPLORE OUR MENU",
-          "href": "https://www.harvestcleaneats.ca/menu",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        }
-      ],
+      "website": "https://www.orderharvest.ca/",
+      "error": "quarantined_cross_entity_redirect",
+      "observedAt": "2026-10-21T14:28:20.592Z",
       "sourceKind": "official_website",
       "reviewState": "cross-check"
     },
@@ -9137,7 +6220,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "name": "Henry House",
       "website": "http://henryhouse.ca/",
       "status": 200,
-      "observedAt": "2026-09-04T13:17:43.651Z",
+      "observedAt": "2026-10-21T14:28:20.697Z",
       "keywordHits": [],
       "signalMatches": {
         "menu": [],
@@ -9160,27 +6243,73 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "name": "Heppy's Pie Lady",
       "website": "http://www.heppys.com/",
       "status": 200,
-      "observedAt": "2026-09-04T13:17:43.887Z",
+      "observedAt": "2026-10-21T14:28:21.013Z",
       "keywordHits": [
+        "menu",
+        "special",
+        "reserve",
         "pickup",
-        "delivery"
+        "order online"
       ],
       "signalMatches": {
-        "menu": [],
-        "specials": [],
+        "menu": [
+          "menu"
+        ],
+        "specials": [
+          "special"
+        ],
         "events": [],
         "patio": [],
         "openings": [],
         "closures": [],
         "moves": [],
         "brunch": [],
-        "reservations": [],
+        "reservations": [
+          "reserve"
+        ],
         "takeout": [
           "pickup",
-          "delivery"
+          "order online"
         ]
       },
-      "candidateLinks": [],
+      "candidateLinks": [
+        {
+          "text": "Order Online",
+          "href": "https://heppys-pie-lady.square.site/",
+          "signalMatches": {
+            "menu": [],
+            "specials": [],
+            "events": [],
+            "patio": [],
+            "openings": [],
+            "closures": [],
+            "moves": [],
+            "brunch": [],
+            "reservations": [],
+            "takeout": [
+              "order online"
+            ]
+          }
+        },
+        {
+          "text": "Order online →",
+          "href": "https://heppys-pie-lady.square.site/",
+          "signalMatches": {
+            "menu": [],
+            "specials": [],
+            "events": [],
+            "patio": [],
+            "openings": [],
+            "closures": [],
+            "moves": [],
+            "brunch": [],
+            "reservations": [],
+            "takeout": [
+              "order online"
+            ]
+          }
+        }
+      ],
       "sourceKind": "official_website",
       "reviewState": "cross-check"
     },
@@ -9189,7 +6318,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "name": "HMCS King’s Wardroom",
       "website": "https://ukings.ca/campus-community/student-life/the-wardroom/",
       "status": 200,
-      "observedAt": "2026-09-04T13:17:44.320Z",
+      "observedAt": "2026-10-21T14:28:21.254Z",
       "keywordHits": [
         "menu",
         "special",
@@ -9362,7 +6491,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "name": "Hop Sing Restaurant",
       "website": "https://hopsingrestaurant.ca/",
       "status": 200,
-      "observedAt": "2026-09-04T13:17:44.565Z",
+      "observedAt": "2026-10-21T14:28:21.289Z",
       "keywordHits": [
         "menu",
         "deal",
@@ -9467,31 +6596,17 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "restaurantId": "osm-node-4421959790-humani-t",
       "name": "Humani-T",
       "website": "https://humanitea.com/",
-      "status": 200,
-      "observedAt": "2026-09-04T13:17:44.581Z",
-      "keywordHits": [],
-      "signalMatches": {
-        "menu": [],
-        "specials": [],
-        "events": [],
-        "patio": [],
-        "openings": [],
-        "closures": [],
-        "moves": [],
-        "brunch": [],
-        "reservations": [],
-        "takeout": []
-      },
-      "candidateLinks": [],
+      "error": "robots_disallow",
+      "observedAt": "2026-10-21T14:28:21.348Z",
       "sourceKind": "official_website",
-      "reviewState": "cross-check"
+      "reviewState": "restricted"
     },
     {
       "restaurantId": "osm-node-11239721834-humble-pie-kitchen",
       "name": "Humble Pie Kitchen",
       "website": "https://humblepiekitchen.ca/",
       "status": 200,
-      "observedAt": "2026-09-04T13:17:44.660Z",
+      "observedAt": "2026-10-21T14:28:21.468Z",
       "keywordHits": [
         "menu",
         "take away"
@@ -9536,43 +6651,67 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "reviewState": "cross-check"
     },
     {
-      "restaurantId": "osm-node-9629211483-ihop",
-      "name": "IHOP",
-      "website": "https://ihop.ca/",
+      "restaurantId": "osm-node-7674251740-in-spring-asian-fusion-cuisine",
+      "name": "in spring asian fusion cuisine",
+      "website": "https://www.inspringhotpot.com/",
+      "error": "quarantined_cross_entity_redirect",
+      "observedAt": "2026-10-21T14:28:21.771Z",
+      "sourceKind": "official_website",
+      "reviewState": "cross-check"
+    },
+    {
+      "restaurantId": "osm-node-13141377001-india-paradise",
+      "name": "India Paradise",
+      "website": "https://www.indiaparadise.ca/halifax/downtown/home",
       "status": 200,
-      "observedAt": "2026-09-04T13:17:44.784Z",
+      "observedAt": "2026-10-21T14:28:21.779Z",
       "keywordHits": [
         "menu",
-        "features",
+        "food menu",
+        "special",
+        "deal",
         "event",
-        "dj",
+        "events",
         "show",
-        "breakfast",
+        "soft opening",
+        "new location",
+        "reservation",
+        "reserve",
+        "takeout",
         "pickup",
         "order online",
         "delivery"
       ],
       "signalMatches": {
         "menu": [
-          "menu"
+          "menu",
+          "food menu"
         ],
         "specials": [
-          "features"
+          "special",
+          "deal"
         ],
         "events": [
           "event",
-          "dj",
+          "events",
           "show"
         ],
         "patio": [],
-        "openings": [],
-        "closures": [],
-        "moves": [],
-        "brunch": [
-          "breakfast"
+        "openings": [
+          "soft opening",
+          "new location"
         ],
-        "reservations": [],
+        "closures": [],
+        "moves": [
+          "new location"
+        ],
+        "brunch": [],
+        "reservations": [
+          "reservation",
+          "reserve"
+        ],
         "takeout": [
+          "takeout",
           "pickup",
           "order online",
           "delivery"
@@ -9580,8 +6719,8 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       },
       "candidateLinks": [
         {
-          "text": "Order Online",
-          "href": "https://order.ihop.ca/",
+          "text": "10% OFF - ORDER ONLINE . 10% OFF - ORDER ONLINE . 10% OFF - ORDER ONLINE . 10% OFF - ORDER ONLINE . 10% OFF - ORDER ONLINE . 10% OFF - ORDER ONLINE . 10% OFF - ORDER ONLINE . 10% OFF - ORDER ONLINE .",
+          "href": "https://www.order.store/store/india-paradise-barrington-st/s_sycAWjVKqGHJUYoPCUpw",
           "signalMatches": {
             "menu": [],
             "specials": [],
@@ -9596,52 +6735,17 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
               "order online"
             ]
           }
-        }
-      ],
-      "sourceKind": "official_website",
-      "reviewState": "cross-check"
-    },
-    {
-      "restaurantId": "osm-node-7674251740-in-spring-asian-fusion-cuisine",
-      "name": "in spring asian fusion cuisine",
-      "website": "https://www.skipthedishes.com/?utm_source=inspringhotpot.com&utm_medium=microsites&utm_campaign=microsites",
-      "status": 200,
-      "observedAt": "2026-09-04T13:17:44.931Z",
-      "keywordHits": [
-        "dj",
-        "brunch",
-        "breakfast",
-        "delivery"
-      ],
-      "signalMatches": {
-        "menu": [],
-        "specials": [],
-        "events": [
-          "dj"
-        ],
-        "patio": [],
-        "openings": [],
-        "closures": [],
-        "moves": [],
-        "brunch": [
-          "brunch",
-          "breakfast"
-        ],
-        "reservations": [],
-        "takeout": [
-          "delivery"
-        ]
-      },
-      "candidateLinks": [
+        },
         {
-          "text": "https://app.adjust.com/xo9xwte?deeplink=skipthedishes%3A%2F%2F",
-          "href": "https://app.adjust.com/xo9xwte?deeplink=skipthedishes%3A%2F%2F",
+          "text": "Menu",
+          "href": "https://www.indiaparadise.ca/halifax/downtown/food",
           "signalMatches": {
-            "menu": [],
-            "specials": [],
-            "events": [
-              "dj"
+            "menu": [
+              "menu",
+              "food menu"
             ],
+            "specials": [],
+            "events": [],
             "patio": [],
             "openings": [],
             "closures": [],
@@ -9652,243 +6756,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
           }
         },
         {
-          "text": "https://wghq.adj.st/?adj_t=1680j6k0&amp;adj_fallback=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dcom.ncconsulting.skipthedishes_android%26hl%3Den%26gl%3DUS&amp;adj_redirect_macos=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dcom.ncconsulting.skipthedishes_android%26hl%3Den%26gl%3DUS&amp;adj_campaign=App_installs&amp;adj_adgroup=Playstore_button&amp;adj_creative=Download",
-          "href": "https://wghq.adj.st/?adj_t=1680j6k0&amp;adj_fallback=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dcom.ncconsulting.skipthedishes_android%26hl%3Den%26gl%3DUS&amp;adj_redirect_macos=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dcom.ncconsulting.skipthedishes_android%26hl%3Den%26gl%3DUS&amp;adj_campaign=App_installs&amp;adj_adgroup=Playstore_button&amp;adj_creative=Download",
-          "signalMatches": {
-            "menu": [],
-            "specials": [],
-            "events": [
-              "dj"
-            ],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Breakfast & Brunch",
-          "href": "https://www.skipthedishes.com/cuisines/breakfast&amp;brunch",
-          "signalMatches": {
-            "menu": [],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [
-              "brunch",
-              "breakfast"
-            ],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Pizza 73",
-          "href": "https://www.skipthedishes.com/brands/pizza-seventy-three",
-          "signalMatches": {
-            "menu": [],
-            "specials": [],
-            "events": [
-              "event"
-            ],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Another Wing by DJ Khaled",
-          "href": "https://www.skipthedishes.com/brands/another-wing-by-dj-khaled",
-          "signalMatches": {
-            "menu": [],
-            "specials": [],
-            "events": [
-              "dj"
-            ],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Stacked Pancake and Breakfast House",
-          "href": "https://www.skipthedishes.com/brands/stacked-pancake-and-breakfast-house",
-          "signalMatches": {
-            "menu": [],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [
-              "breakfast"
-            ],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "OEB Breakfast Co.",
-          "href": "https://www.skipthedishes.com/brands/oeb-breakfast-co",
-          "signalMatches": {
-            "menu": [],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [
-              "breakfast"
-            ],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Browse by City",
-          "href": "https://www.skipthedishes.com/canada-food-delivery",
-          "signalMatches": {
-            "menu": [],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": [
-              "delivery"
-            ]
-          }
-        },
-        {
-          "text": "Bakery Delivery",
-          "href": "https://www.skipthedishes.com/bakeries",
-          "signalMatches": {
-            "menu": [],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": [
-              "delivery"
-            ]
-          }
-        },
-        {
-          "text": "Convenience Store Delivery",
-          "href": "https://www.skipthedishes.com/convenience-stores",
-          "signalMatches": {
-            "menu": [],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": [
-              "delivery"
-            ]
-          }
-        },
-        {
-          "text": "Flowers Delivery",
-          "href": "https://www.skipthedishes.com/flower-shops",
-          "signalMatches": {
-            "menu": [],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": [
-              "delivery"
-            ]
-          }
-        }
-      ],
-      "sourceKind": "official_website",
-      "reviewState": "cross-check"
-    },
-    {
-      "restaurantId": "osm-node-13141377001-india-paradise",
-      "name": "India Paradise",
-      "website": "https://www.indiaparadise.ca/halifax/downtown/home",
-      "status": 200,
-      "observedAt": "2026-09-04T13:17:44.962Z",
-      "keywordHits": [
-        "menu",
-        "special",
-        "deal",
-        "event",
-        "events",
-        "calendar",
-        "grand opening",
-        "soft opening",
-        "new location",
-        "reserve",
-        "order online"
-      ],
-      "signalMatches": {
-        "menu": [
-          "menu"
-        ],
-        "specials": [
-          "special",
-          "deal"
-        ],
-        "events": [
-          "event",
-          "events",
-          "calendar"
-        ],
-        "patio": [],
-        "openings": [
-          "grand opening",
-          "soft opening",
-          "new location"
-        ],
-        "closures": [],
-        "moves": [
-          "new location"
-        ],
-        "brunch": [],
-        "reservations": [
-          "reserve"
-        ],
-        "takeout": [
-          "order online"
-        ]
-      },
-      "candidateLinks": [
-        {
-          "text": "Order Now",
+          "text": "Order Online",
           "href": "https://order.online/store/india-paradise-halifax-downtown-30667832?pickup=true",
           "signalMatches": {
             "menu": [],
@@ -9901,8 +6769,101 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
             "brunch": [],
             "reservations": [],
             "takeout": [
-              "pickup"
+              "pickup",
+              "order online"
             ]
+          }
+        },
+        {
+          "text": "Food Menu",
+          "href": "https://www.indiaparadise.ca/halifax/downtown/food",
+          "signalMatches": {
+            "menu": [
+              "menu",
+              "food menu"
+            ],
+            "specials": [],
+            "events": [],
+            "patio": [],
+            "openings": [],
+            "closures": [],
+            "moves": [],
+            "brunch": [],
+            "reservations": [],
+            "takeout": []
+          }
+        },
+        {
+          "text": "Drinks Menu",
+          "href": "https://www.indiaparadise.ca/london/drinks",
+          "signalMatches": {
+            "menu": [
+              "menu"
+            ],
+            "specials": [],
+            "events": [],
+            "patio": [],
+            "openings": [],
+            "closures": [],
+            "moves": [],
+            "brunch": [],
+            "reservations": [],
+            "takeout": []
+          }
+        },
+        {
+          "text": "October 21, 2025 Offer Halifax Downtown WEEKEND DOSA FEST @ $17.99 | Unlimited Dosa WEEKEND DOSA FEST AT INDIA PARADISE, DOWNTOWN! Saturday and Sunday just got a whole lot better! Enjoy our UNLIMITED DOSA DEAL for just $17.99! Available every Saturday and Sunday until March 31st! Time: Open to 3pm Dine like a king without breaking the bank!",
+          "href": "https://www.indiaparadise.ca/post/dosa-lovers-rejoice-unlimited-dosa-deal-2",
+          "signalMatches": {
+            "menu": [],
+            "specials": [
+              "deal"
+            ],
+            "events": [],
+            "patio": [],
+            "openings": [],
+            "closures": [],
+            "moves": [],
+            "brunch": [],
+            "reservations": [],
+            "takeout": []
+          }
+        },
+        {
+          "text": "News & Events",
+          "href": "http://indiaparadise.ca/halifax/downtown/home",
+          "signalMatches": {
+            "menu": [],
+            "specials": [],
+            "events": [
+              "event",
+              "events"
+            ],
+            "patio": [],
+            "openings": [],
+            "closures": [],
+            "moves": [],
+            "brunch": [],
+            "reservations": [],
+            "takeout": []
+          }
+        },
+        {
+          "text": "View Menu",
+          "href": "https://www.indiaparadise.ca/mississauga/food-menu",
+          "signalMatches": {
+            "menu": [
+              "menu"
+            ],
+            "specials": [],
+            "events": [],
+            "patio": [],
+            "openings": [],
+            "closures": [],
+            "moves": [],
+            "brunch": [],
+            "reservations": [],
+            "takeout": []
           }
         }
       ],
@@ -9914,7 +6875,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "name": "Jacky's Cafe",
       "website": "https://jackyscafehalifax.com/",
       "status": 200,
-      "observedAt": "2026-09-04T13:17:45.062Z",
+      "observedAt": "2026-10-21T14:28:21.942Z",
       "keywordHits": [
         "menu",
         "special",
@@ -10275,7 +7236,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "name": "Java Blend",
       "website": "https://javablendcoffee.com/contact",
       "status": 404,
-      "observedAt": "2026-09-04T13:17:45.398Z",
+      "observedAt": "2026-10-21T14:28:21.943Z",
       "keywordHits": [],
       "signalMatches": {
         "menu": [],
@@ -10298,7 +7259,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "name": "Jean's Chinese Restaurant",
       "website": "https://www.jeansrestaurant.ca/",
       "status": 200,
-      "observedAt": "2026-09-04T13:17:45.534Z",
+      "observedAt": "2026-10-21T14:28:22.493Z",
       "keywordHits": [
         "menu",
         "order online",
@@ -10387,7 +7348,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "name": "Jenny's Place",
       "website": "https://www.facebook.com/people/Jennys-Place-Pub/100028409456739/",
       "error": "robots_disallow",
-      "observedAt": "2026-09-04T13:17:38.619Z",
+      "observedAt": "2026-10-21T14:28:15.789Z",
       "sourceKind": "official_website",
       "reviewState": "restricted"
     },
@@ -10396,7 +7357,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "name": "Jim's Family Restaurant",
       "website": "https://www.jimsfamilyrestauranthalifax.com/cl",
       "error": "fetch failed",
-      "observedAt": "2026-09-04T13:17:45.536Z",
+      "observedAt": "2026-10-21T14:28:23.378Z",
       "sourceKind": "official_website",
       "reviewState": "cross-check"
     },
@@ -10404,8 +7365,22 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "restaurantId": "osm-node-4995047387-john-s-lunch",
       "name": "John's Lunch",
       "website": "https://johnslunch.com/",
-      "error": "fetch failed",
-      "observedAt": "2026-09-04T13:17:45.610Z",
+      "status": 200,
+      "observedAt": "2026-10-21T14:28:24.027Z",
+      "keywordHits": [],
+      "signalMatches": {
+        "menu": [],
+        "specials": [],
+        "events": [],
+        "patio": [],
+        "openings": [],
+        "closures": [],
+        "moves": [],
+        "brunch": [],
+        "reservations": [],
+        "takeout": []
+      },
+      "candidateLinks": [],
       "sourceKind": "official_website",
       "reviewState": "cross-check"
     },
@@ -10414,7 +7389,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "name": "Jukai",
       "website": "https://www.jukairestaurant.com/",
       "status": 200,
-      "observedAt": "2026-09-04T13:17:45.700Z",
+      "observedAt": "2026-10-21T14:28:24.163Z",
       "keywordHits": [
         "menu",
         "order online"
@@ -10483,7 +7458,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "name": "JUKAI Japanese & Thai",
       "website": "https://www.jukairestaurant.com/",
       "status": 200,
-      "observedAt": "2026-09-04T13:17:46.183Z",
+      "observedAt": "2026-10-21T14:28:25.117Z",
       "keywordHits": [
         "menu",
         "order online"
@@ -10551,479 +7526,17 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "restaurantId": "osm-node-8841366531-jungle-jim-s",
       "name": "Jungle Jim's",
       "website": "https://junglejims.ca/",
-      "status": 200,
-      "observedAt": "2026-09-04T13:17:45.847Z",
-      "keywordHits": [
-        "menu",
-        "promo",
-        "reserve",
-        "opentable",
-        "delivery"
-      ],
-      "signalMatches": {
-        "menu": [
-          "menu"
-        ],
-        "specials": [
-          "promo"
-        ],
-        "events": [],
-        "patio": [],
-        "openings": [],
-        "closures": [],
-        "moves": [],
-        "brunch": [],
-        "reservations": [
-          "reserve",
-          "opentable"
-        ],
-        "takeout": [
-          "delivery"
-        ]
-      },
-      "candidateLinks": [
-        {
-          "text": "Menu",
-          "href": "https://junglejims.ca/menu",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Bay Roberts, N.L.",
-          "href": "https://junglejims.ca/menu/bay-roberts",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "CBS (Manuels), N.L.",
-          "href": "https://junglejims.ca/menu/cbs-manuels",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Clarenville, N.L.",
-          "href": "https://junglejims.ca/menu/clarenville",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Corner Brook, N.L.",
-          "href": "https://junglejims.ca/menu/corner-brook",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Deer Lake, N.L.",
-          "href": "https://junglejims.ca/menu/deer-lake",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Fredericton, N.B.",
-          "href": "https://junglejims.ca/menu/fredericton",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Gander, N.L.",
-          "href": "https://junglejims.ca/menu/gander",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Goulds, N.L.",
-          "href": "https://junglejims.ca/menu/goulds",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Grand Falls-Windsor, N.L.",
-          "href": "https://junglejims.ca/menu/grand-falls-windsor",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Halifax (Bayers Lake), N.S.",
-          "href": "https://junglejims.ca/menu/halifax-bayers-lake",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Happy Valley-Goose Bay, LAB",
-          "href": "https://junglejims.ca/menu/happy-valley-goose-bay",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "L'Anse au Clair, LAB",
-          "href": "https://junglejims.ca/menu/lanse-au-clair",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Labrador City, LAB",
-          "href": "https://junglejims.ca/menu/labrador-city",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Lewisporte, N.L.",
-          "href": "https://junglejims.ca/menu/lewisporte",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Old Perlican, N.L.",
-          "href": "https://junglejims.ca/menu/old-perlican",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Oromocto, N.B.",
-          "href": "https://junglejims.ca/menu/oromocto",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Saint John, N.B.",
-          "href": "https://junglejims.ca/menu/saint-john",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "St. Anthony, N.L.",
-          "href": "https://junglejims.ca/menu/st-anthony",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "St. John’s (George Street), N.L.",
-          "href": "https://junglejims.ca/menu/st-johns-george-street",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "St. John’s (Topsail Road), N.L.",
-          "href": "https://junglejims.ca/menu/st-johns-topsail-road",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "St. John’s (Torbay Road), N.L.",
-          "href": "https://junglejims.ca/menu/st-johns-torbay-road",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Stellarton, N.S.",
-          "href": "https://junglejims.ca/menu/stellarton",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Yarmouth, N.S.",
-          "href": "https://junglejims.ca/menu/yarmouth",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        }
-      ],
+      "error": "robots_disallow",
+      "observedAt": "2026-10-21T14:28:24.224Z",
       "sourceKind": "official_website",
-      "reviewState": "cross-check"
+      "reviewState": "restricted"
     },
     {
       "restaurantId": "osm-node-7139174640-kajohn-thai",
       "name": "Kajohn Thai",
       "website": "https://www.kajohnthairestaurant.ca/",
       "status": 200,
-      "observedAt": "2026-09-04T13:17:45.883Z",
+      "observedAt": "2026-10-21T14:28:24.280Z",
       "keywordHits": [
         "menu",
         "features",
@@ -11095,7 +7608,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "name": "Kam-moon",
       "website": "https://kam-moon.com/",
       "error": "fetch failed",
-      "observedAt": "2026-09-04T13:17:45.888Z",
+      "observedAt": "2026-10-21T14:28:24.363Z",
       "sourceKind": "official_website",
       "reviewState": "cross-check"
     },
@@ -11104,7 +7617,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "name": "Kanpai Izakaya",
       "website": "https://kanpaiizakaya.com/",
       "status": 200,
-      "observedAt": "2026-09-04T13:17:46.081Z",
+      "observedAt": "2026-10-21T14:28:24.493Z",
       "keywordHits": [
         "menu",
         "reservation",
@@ -11155,16 +7668,16 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "name": "Kebab Kitchen",
       "website": "http://www.kebabkitchens.com/",
       "error": "fetch failed",
-      "observedAt": "2026-09-04T13:17:46.183Z",
+      "observedAt": "2026-10-21T14:28:24.660Z",
       "sourceKind": "official_website",
       "reviewState": "cross-check"
     },
     {
       "restaurantId": "osm-node-11506685695-kenny-s-pizza",
       "name": "Kenny's Pizza",
-      "website": "http://kennyspizzakearneylake.ca/",
+      "website": "https://kennyspizzakearneylake.ca/",
       "status": 200,
-      "observedAt": "2026-09-04T13:17:46.232Z",
+      "observedAt": "2026-10-21T14:28:24.694Z",
       "keywordHits": [
         "menu",
         "special",
@@ -11327,20 +7840,13 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "restaurantId": "osm-node-3104142670-king-of-donair",
       "name": "King of Donair",
       "website": "https://www.kingofdonair.ca/",
-      "status": 200,
-      "observedAt": "2026-09-04T13:17:46.233Z",
-      "keywordHits": [
-        "menu",
-        "dj"
-      ],
+      "status": 403,
+      "observedAt": "2026-10-21T14:28:24.730Z",
+      "keywordHits": [],
       "signalMatches": {
-        "menu": [
-          "menu"
-        ],
+        "menu": [],
         "specials": [],
-        "events": [
-          "dj"
-        ],
+        "events": [],
         "patio": [],
         "openings": [],
         "closures": [],
@@ -11349,35 +7855,16 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
         "reservations": [],
         "takeout": []
       },
-      "candidateLinks": [
-        {
-          "text": "Menu",
-          "href": "https://www.kingofdonair.ca/menu/",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        }
-      ],
+      "candidateLinks": [],
       "sourceKind": "official_website",
-      "reviewState": "cross-check"
+      "reviewState": "needs-review"
     },
     {
       "restaurantId": "osm-node-9128392205-king-of-donair",
       "name": "King of Donair",
       "website": "https://www.kingofdonair.ca/",
       "status": 200,
-      "observedAt": "2026-09-04T13:17:46.555Z",
+      "observedAt": "2026-10-21T14:28:25.383Z",
       "keywordHits": [
         "menu",
         "dj"
@@ -11426,7 +7913,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "name": "Kofuku Japanese and Thai",
       "website": "https://www.kofukujapaneseandthai.ca/",
       "status": 200,
-      "observedAt": "2026-09-04T13:17:46.382Z",
+      "observedAt": "2026-10-21T14:28:24.742Z",
       "keywordHits": [
         "special",
         "relocating",
@@ -11519,7 +8006,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "name": "Krave Burger",
       "website": "http://kraveburger.com/",
       "error": "timeout",
-      "observedAt": "2026-09-04T13:17:46.383Z",
+      "observedAt": "2026-10-21T14:28:24.833Z",
       "sourceKind": "official_website",
       "reviewState": "cross-check"
     },
@@ -11528,7 +8015,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "name": "Krave Burger",
       "website": "http://kraveburger.com/",
       "error": "timeout",
-      "observedAt": "2026-09-04T13:17:58.587Z",
+      "observedAt": "2026-10-21T14:28:37.228Z",
       "sourceKind": "official_website",
       "reviewState": "cross-check"
     },
@@ -11537,7 +8024,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "name": "La Piazza Ristorante",
       "website": "https://www.lapiazzarestocafe.com/",
       "error": "fetch failed",
-      "observedAt": "2026-09-04T13:17:46.398Z",
+      "observedAt": "2026-10-21T14:28:24.871Z",
       "sourceKind": "official_website",
       "reviewState": "cross-check"
     },
@@ -11546,7 +8033,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "name": "Lady Hammond Grill",
       "website": "https://chebuctoinn.com/lhg-diner/",
       "status": 200,
-      "observedAt": "2026-09-04T13:17:46.565Z",
+      "observedAt": "2026-10-21T14:28:24.883Z",
       "keywordHits": [
         "menu",
         "special",
@@ -11640,7 +8127,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "name": "Latitude 44°",
       "website": "https://www.lat44hfx.com/",
       "status": 200,
-      "observedAt": "2026-09-04T13:17:46.586Z",
+      "observedAt": "2026-10-21T14:28:25.292Z",
       "keywordHits": [
         "menu",
         "happy hour",
@@ -11720,32 +8207,46 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "name": "Layla's Mediterranean Cuisine",
       "website": "http://laylacuisine.ca/",
       "error": "fetch failed",
-      "observedAt": "2026-09-04T13:17:46.739Z",
+      "observedAt": "2026-10-21T14:28:26.438Z",
       "sourceKind": "official_website",
       "reviewState": "cross-check"
     },
     {
       "restaurantId": "osm-node-4420843802-le-bistro-by-liz",
       "name": "Le Bistro by Liz",
-      "website": "https://www.lebistrohalifax.com/",
+      "website": "https://lebistrohalifax.com/",
       "status": 200,
-      "observedAt": "2026-09-04T13:17:46.865Z",
+      "observedAt": "2026-10-21T14:28:27.232Z",
       "keywordHits": [
         "menu",
+        "cocktail",
         "wine list",
+        "special",
+        "specials",
         "features",
+        "event",
+        "events",
         "brunch",
-        "reservation"
+        "reservation",
+        "reserve",
+        "takeout",
+        "pickup"
       ],
       "signalMatches": {
         "menu": [
           "menu",
+          "cocktail",
           "wine list"
         ],
         "specials": [
+          "special",
+          "specials",
           "features"
         ],
-        "events": [],
+        "events": [
+          "event",
+          "events"
+        ],
         "patio": [],
         "openings": [],
         "closures": [],
@@ -11754,14 +8255,18 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
           "brunch"
         ],
         "reservations": [
-          "reservation"
+          "reservation",
+          "reserve"
         ],
-        "takeout": []
+        "takeout": [
+          "takeout",
+          "pickup"
+        ]
       },
       "candidateLinks": [
         {
-          "text": "Menus",
-          "href": "https://www.lebistrohalifax.com/#",
+          "text": "Menu",
+          "href": "https://lebistrohalifax.com/#menu",
           "signalMatches": {
             "menu": [
               "menu"
@@ -11778,8 +8283,26 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
           }
         },
         {
-          "text": "Brunch Menu",
-          "href": "https://www.lebistrohalifax.com/brunch-menu/",
+          "text": "VIEW OUR MENUS",
+          "href": "https://lebistrohalifax.com/#menu",
+          "signalMatches": {
+            "menu": [
+              "menu"
+            ],
+            "specials": [],
+            "events": [],
+            "patio": [],
+            "openings": [],
+            "closures": [],
+            "moves": [],
+            "brunch": [],
+            "reservations": [],
+            "takeout": []
+          }
+        },
+        {
+          "text": "Brunch Weekend favourites and bistro classics. View Menu →",
+          "href": "https://lebistrohalifax.com/#menu",
           "signalMatches": {
             "menu": [
               "menu"
@@ -11798,8 +8321,8 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
           }
         },
         {
-          "text": "Lunch &#038; Dinner Menu",
-          "href": "https://www.lebistrohalifax.com/lunch-dinner-menu/",
+          "text": "Lunch & Dinner Comfort food, seafood, and seasonal plates. View Menu →",
+          "href": "https://lebistrohalifax.com/#menu",
           "signalMatches": {
             "menu": [
               "menu"
@@ -11816,8 +8339,8 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
           }
         },
         {
-          "text": "Vegan Menu",
-          "href": "https://www.lebistrohalifax.com/vegan-menu/",
+          "text": "Dessert House-made sweets and classic finishes. View Menu →",
+          "href": "https://lebistrohalifax.com/#menu",
           "signalMatches": {
             "menu": [
               "menu"
@@ -11834,8 +8357,28 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
           }
         },
         {
-          "text": "Kids Menu",
-          "href": "https://www.lebistrohalifax.com/kids-menu/",
+          "text": "Wine List Wine, cocktails, beer, and spirits. View Menu →",
+          "href": "https://lebistrohalifax.com/#menu",
+          "signalMatches": {
+            "menu": [
+              "menu",
+              "cocktail",
+              "wine list"
+            ],
+            "specials": [],
+            "events": [],
+            "patio": [],
+            "openings": [],
+            "closures": [],
+            "moves": [],
+            "brunch": [],
+            "reservations": [],
+            "takeout": []
+          }
+        },
+        {
+          "text": "View All Menus →",
+          "href": "https://lebistrohalifax.com/#menu",
           "signalMatches": {
             "menu": [
               "menu"
@@ -11852,44 +8395,8 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
           }
         },
         {
-          "text": "Take-out",
-          "href": "https://www.lebistrohalifax.com/take-out-menu/",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "View Menus",
-          "href": "https://www.lebistrohalifax.com/menus/",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "View Menu",
-          "href": "https://www.lebistrohalifax.com/brunch-menu/",
+          "text": "Facebook GF — Gluten-Free · V — Vegetarian · VG — Vegan Please ask your server about dietary modifications. We're happy to accommodate. Brunch Café classics, baked goods, and weekend favourites. VIEW MENU →",
+          "href": "https://www.facebook.com/lebistrobyliz",
           "signalMatches": {
             "menu": [
               "menu"
@@ -11908,8 +8415,8 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
           }
         },
         {
-          "text": "View Menu",
-          "href": "https://www.lebistrohalifax.com/lunch-dinner-menu/",
+          "text": "Lunch & Dinner Bistro staples, seafood, and seasonal plates. VIEW MENU →",
+          "href": "https://lebistrohalifax.com/#menu-preview",
           "signalMatches": {
             "menu": [
               "menu"
@@ -11926,8 +8433,8 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
           }
         },
         {
-          "text": "View Menu",
-          "href": "https://www.lebistrohalifax.com/desserts/",
+          "text": "Vegan Plant-forward bistro favourites and seasonal plates. VIEW MENU →",
+          "href": "https://lebistrohalifax.com/#menu-preview",
           "signalMatches": {
             "menu": [
               "menu"
@@ -11944,8 +8451,8 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
           }
         },
         {
-          "text": "View Menu",
-          "href": "https://www.lebistrohalifax.com/wines/",
+          "text": "Kids Fun options for little guests VIEW MENU →",
+          "href": "https://lebistrohalifax.com/#menu-preview",
           "signalMatches": {
             "menu": [
               "menu"
@@ -11957,6 +8464,66 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
             "closures": [],
             "moves": [],
             "brunch": [],
+            "reservations": [],
+            "takeout": []
+          }
+        },
+        {
+          "text": "Desserts Sweet finishes and after-dinner treats. VIEW MENU →",
+          "href": "https://lebistrohalifax.com/#menu-preview",
+          "signalMatches": {
+            "menu": [
+              "menu"
+            ],
+            "specials": [],
+            "events": [],
+            "patio": [],
+            "openings": [],
+            "closures": [],
+            "moves": [],
+            "brunch": [],
+            "reservations": [],
+            "takeout": []
+          }
+        },
+        {
+          "text": "Drinks Wine, cocktails, beer, and spirits VIEW MENU →",
+          "href": "https://lebistrohalifax.com/#menu-preview",
+          "signalMatches": {
+            "menu": [
+              "menu",
+              "cocktail"
+            ],
+            "specials": [],
+            "events": [],
+            "patio": [],
+            "openings": [],
+            "closures": [],
+            "moves": [],
+            "brunch": [],
+            "reservations": [],
+            "takeout": []
+          }
+        },
+        {
+          "text": "View Brunch Menu → EVERY WEDNESDAY UnWINEd Wednesdays Every Wednesday, get an 8 oz pour at the 5 oz price. More wine, same great excuse to stay longer. View Wine List → Selected: HALIFAX'S BEST FRENCH RESTAURANT Our Story A quaint, cozy, full-of-life restaurant bringing old-world French charm right to the heart of Halifax, loved by locals since 2011. MEET OUR OWNER Liz Liz recreated Le Bistro in the exact same location she managed throughout the 90s. Haligonians were sad to see Le Bistro Café close in early 2002, when new owners changed many of its best-loved features. So Liz brought it back, her way. When she reopened in December 2011, many longtime regulars returned within days. Some had been waiting years. That's what Le Bistro has always been: a place people return to not just for the food, but for the feeling. Locals have been flocking to Le Bistro by Liz ever since. From the first cup of coffee to the last glass of wine, there's always something worth staying for. THE SPACE Charming French Bistro Décor The French-inspired décor is inviting and full of character: bistro tables topped with red and white checkered tablecloths, warm lighting, and a glassed-in atrium overflowing with greenery. From the moment you walk through the door, you're caught up in it: the unpretentious atmosphere, the buzz of friendly conversation, and the kind of genuine hospitality that's harder to find than it should be. THE KITCHEN Open Kitchen, Open Heart Our open-style kitchen means you can watch the magic happen. Chef Rabih Melhem brings classic French-inspired favourites alongside fresh, seasonal dishes. Comfort food with a French flair, made from scratch every day. From quick lunches to catch-up brunches and evenings you won't want to end, Le Bistro is the perfect spot for every occasion and every craving. Explore Our Menus",
+          "href": "https://lebistrohalifax.com/#menu",
+          "signalMatches": {
+            "menu": [
+              "menu",
+              "wine list"
+            ],
+            "specials": [
+              "features"
+            ],
+            "events": [],
+            "patio": [],
+            "openings": [],
+            "closures": [],
+            "moves": [],
+            "brunch": [
+              "brunch"
+            ],
             "reservations": [],
             "takeout": []
           }
@@ -11970,7 +8537,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "name": "Lion's Head Tavern",
       "website": "https://lionshead.ca/",
       "status": 200,
-      "observedAt": "2026-09-04T13:17:46.866Z",
+      "observedAt": "2026-10-21T14:28:27.420Z",
       "keywordHits": [
         "menu",
         "special",
@@ -12126,10 +8693,11 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "name": "Lockside Canteen",
       "website": "https://lemon.dog/",
       "status": 200,
-      "observedAt": "2026-09-04T13:17:46.899Z",
+      "observedAt": "2026-10-21T14:28:27.648Z",
       "keywordHits": [
         "menu",
-        "event"
+        "event",
+        "end of lockside canteen"
       ],
       "signalMatches": {
         "menu": [
@@ -12141,7 +8709,9 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
         ],
         "patio": [],
         "openings": [],
-        "closures": [],
+        "closures": [
+          "end of lockside canteen"
+        ],
         "moves": [],
         "brunch": [],
         "reservations": [],
@@ -12156,7 +8726,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "name": "Look Ho Ho",
       "website": "https://www.lookhoho.com/",
       "status": 200,
-      "observedAt": "2026-09-04T13:17:47.088Z",
+      "observedAt": "2026-10-21T14:28:28.508Z",
       "keywordHits": [
         "menu",
         "special",
@@ -12376,146 +8946,9 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
     {
       "restaurantId": "osm-node-12136077507-lou-pecou",
       "name": "Lou Pécou",
-      "website": "https://www.loupecou.com/",
-      "status": 200,
-      "observedAt": "2026-09-04T13:17:47.276Z",
-      "keywordHits": [
-        "menu",
-        "cocktail",
-        "reservation",
-        "reserve",
-        "book a table"
-      ],
-      "signalMatches": {
-        "menu": [
-          "menu",
-          "cocktail"
-        ],
-        "specials": [],
-        "events": [],
-        "patio": [],
-        "openings": [],
-        "closures": [],
-        "moves": [],
-        "brunch": [],
-        "reservations": [
-          "reservation",
-          "reserve",
-          "book a table"
-        ],
-        "takeout": []
-      },
-      "candidateLinks": [
-        {
-          "text": "EAT",
-          "href": "https://www.loupecou.com/menu",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "RESERVE",
-          "href": "https://www.loupecou.com/reserve",
-          "signalMatches": {
-            "menu": [],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [
-              "reserve"
-            ],
-            "takeout": []
-          }
-        },
-        {
-          "text": "MENU",
-          "href": "https://www.loupecou.com/s/Food-Menu-Jul-30.pdf",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Eat",
-          "href": "https://www.loupecou.com/menu",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Visit",
-          "href": "https://www.loupecou.com/reserve",
-          "signalMatches": {
-            "menu": [],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [
-              "reserve"
-            ],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Book a Table",
-          "href": "https://www.loupecou.com/reserve",
-          "signalMatches": {
-            "menu": [],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [
-              "reserve",
-              "book a table"
-            ],
-            "takeout": []
-          }
-        }
-      ],
+      "website": "https://www.lou-pecou.ca/",
+      "error": "quarantined_cross_entity_redirect",
+      "observedAt": "2026-10-21T14:28:28.564Z",
       "sourceKind": "official_website",
       "reviewState": "cross-check"
     },
@@ -12524,7 +8957,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "name": "Lucy's Hydrostone Cafe",
       "website": "https://lucyshydrostone.ca/",
       "status": 200,
-      "observedAt": "2026-09-04T13:17:47.404Z",
+      "observedAt": "2026-10-21T14:28:28.826Z",
       "keywordHits": [
         "menu",
         "special",
@@ -12608,7 +9041,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "name": "Manhattan Pizza",
       "website": "http://www.manhattanpizza.ca/locations.html",
       "error": "fetch failed",
-      "observedAt": "2026-09-04T13:17:47.680Z",
+      "observedAt": "2026-10-21T14:28:28.841Z",
       "sourceKind": "official_website",
       "reviewState": "cross-check"
     },
@@ -12617,10 +9050,11 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "name": "Marigold Kitchen",
       "website": "https://marigoldkitchen.ca/",
       "status": 200,
-      "observedAt": "2026-09-04T13:17:47.825Z",
+      "observedAt": "2026-10-21T14:28:28.994Z",
       "keywordHits": [
         "menu",
         "reserve",
+        "pickup",
         "order online",
         "delivery"
       ],
@@ -12639,6 +9073,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
           "reserve"
         ],
         "takeout": [
+          "pickup",
           "order online",
           "delivery"
         ]
@@ -12659,6 +9094,43 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
             "reservations": [],
             "takeout": [
               "order online"
+            ]
+          }
+        },
+        {
+          "text": "Pickup",
+          "href": "https://marigoldkitchen.ca/cart/?preferred_delivery=1",
+          "signalMatches": {
+            "menu": [],
+            "specials": [],
+            "events": [],
+            "patio": [],
+            "openings": [],
+            "closures": [],
+            "moves": [],
+            "brunch": [],
+            "reservations": [],
+            "takeout": [
+              "pickup",
+              "delivery"
+            ]
+          }
+        },
+        {
+          "text": "Delivery",
+          "href": "https://marigoldkitchen.ca/cart/?preferred_delivery=5",
+          "signalMatches": {
+            "menu": [],
+            "specials": [],
+            "events": [],
+            "patio": [],
+            "openings": [],
+            "closures": [],
+            "moves": [],
+            "brunch": [],
+            "reservations": [],
+            "takeout": [
+              "delivery"
             ]
           }
         },
@@ -12689,7 +9161,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "name": "Masala Delight",
       "website": "https://masaladelight.com/",
       "status": 200,
-      "observedAt": "2026-09-04T13:17:48.098Z",
+      "observedAt": "2026-10-21T14:28:29.022Z",
       "keywordHits": [],
       "signalMatches": {
         "menu": [],
@@ -12710,235 +9182,9 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
     {
       "restaurantId": "osm-node-2721720399-mashawee-mediterranean-grill",
       "name": "Mashawee Mediterranean Grill",
-      "website": "https://www.skipthedishes.com/?utm_source=mashaweemediterraneangrill.ca&utm_medium=microsites&utm_campaign=microsites",
-      "status": 200,
-      "observedAt": "2026-09-04T13:17:48.270Z",
-      "keywordHits": [
-        "dj",
-        "brunch",
-        "breakfast",
-        "delivery"
-      ],
-      "signalMatches": {
-        "menu": [],
-        "specials": [],
-        "events": [
-          "dj"
-        ],
-        "patio": [],
-        "openings": [],
-        "closures": [],
-        "moves": [],
-        "brunch": [
-          "brunch",
-          "breakfast"
-        ],
-        "reservations": [],
-        "takeout": [
-          "delivery"
-        ]
-      },
-      "candidateLinks": [
-        {
-          "text": "https://app.adjust.com/xo9xwte?deeplink=skipthedishes%3A%2F%2F",
-          "href": "https://app.adjust.com/xo9xwte?deeplink=skipthedishes%3A%2F%2F",
-          "signalMatches": {
-            "menu": [],
-            "specials": [],
-            "events": [
-              "dj"
-            ],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "https://wghq.adj.st/?adj_t=1680j6k0&amp;adj_fallback=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dcom.ncconsulting.skipthedishes_android%26hl%3Den%26gl%3DUS&amp;adj_redirect_macos=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dcom.ncconsulting.skipthedishes_android%26hl%3Den%26gl%3DUS&amp;adj_campaign=App_installs&amp;adj_adgroup=Playstore_button&amp;adj_creative=Download",
-          "href": "https://wghq.adj.st/?adj_t=1680j6k0&amp;adj_fallback=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dcom.ncconsulting.skipthedishes_android%26hl%3Den%26gl%3DUS&amp;adj_redirect_macos=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dcom.ncconsulting.skipthedishes_android%26hl%3Den%26gl%3DUS&amp;adj_campaign=App_installs&amp;adj_adgroup=Playstore_button&amp;adj_creative=Download",
-          "signalMatches": {
-            "menu": [],
-            "specials": [],
-            "events": [
-              "dj"
-            ],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Breakfast & Brunch",
-          "href": "https://www.skipthedishes.com/cuisines/breakfast&amp;brunch",
-          "signalMatches": {
-            "menu": [],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [
-              "brunch",
-              "breakfast"
-            ],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Pizza 73",
-          "href": "https://www.skipthedishes.com/brands/pizza-seventy-three",
-          "signalMatches": {
-            "menu": [],
-            "specials": [],
-            "events": [
-              "event"
-            ],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Another Wing by DJ Khaled",
-          "href": "https://www.skipthedishes.com/brands/another-wing-by-dj-khaled",
-          "signalMatches": {
-            "menu": [],
-            "specials": [],
-            "events": [
-              "dj"
-            ],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Stacked Pancake and Breakfast House",
-          "href": "https://www.skipthedishes.com/brands/stacked-pancake-and-breakfast-house",
-          "signalMatches": {
-            "menu": [],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [
-              "breakfast"
-            ],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "OEB Breakfast Co.",
-          "href": "https://www.skipthedishes.com/brands/oeb-breakfast-co",
-          "signalMatches": {
-            "menu": [],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [
-              "breakfast"
-            ],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Browse by City",
-          "href": "https://www.skipthedishes.com/canada-food-delivery",
-          "signalMatches": {
-            "menu": [],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": [
-              "delivery"
-            ]
-          }
-        },
-        {
-          "text": "Bakery Delivery",
-          "href": "https://www.skipthedishes.com/bakeries",
-          "signalMatches": {
-            "menu": [],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": [
-              "delivery"
-            ]
-          }
-        },
-        {
-          "text": "Convenience Store Delivery",
-          "href": "https://www.skipthedishes.com/convenience-stores",
-          "signalMatches": {
-            "menu": [],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": [
-              "delivery"
-            ]
-          }
-        },
-        {
-          "text": "Flowers Delivery",
-          "href": "https://www.skipthedishes.com/flower-shops",
-          "signalMatches": {
-            "menu": [],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": [
-              "delivery"
-            ]
-          }
-        }
-      ],
+      "website": "https://www.mashaweemediterraneangrill.ca/",
+      "error": "quarantined_cross_entity_redirect",
+      "observedAt": "2026-10-21T14:28:29.369Z",
       "sourceKind": "official_website",
       "reviewState": "cross-check"
     },
@@ -12947,7 +9193,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "name": "Matadora Tapas Bar",
       "website": "https://matadorahfx.ca/",
       "status": 200,
-      "observedAt": "2026-09-04T13:17:48.289Z",
+      "observedAt": "2026-10-21T14:28:29.539Z",
       "keywordHits": [
         "menu",
         "cocktail",
@@ -12994,7 +9240,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
         },
         {
           "text": "Dinner & DESSERT Menu",
-          "href": "http://matadorahfx.ca/wp-content/uploads/2026/05/Matadora-Food-Menu-Spring-2026-Final.pdf",
+          "href": "http://matadorahfx.ca/wp-content/uploads/2026/09/Matadora-Food-Menu-Fall-2026-Final.pdf",
           "signalMatches": {
             "menu": [
               "menu"
@@ -13055,7 +9301,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "name": "May Garden",
       "website": "https://maygarden.ca/",
       "status": 200,
-      "observedAt": "2026-09-04T13:17:48.665Z",
+      "observedAt": "2026-10-21T14:28:29.885Z",
       "keywordHits": [
         "menu",
         "special",
@@ -13208,83 +9454,11 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "reviewState": "cross-check"
     },
     {
-      "restaurantId": "osm-node-33078674-mcdonald-s",
-      "name": "McDonald's",
-      "website": "http://www.mcdonalds.ca/",
-      "error": "robots_disallow",
-      "observedAt": "2026-09-04T13:17:48.780Z",
-      "sourceKind": "official_website",
-      "reviewState": "restricted"
-    },
-    {
-      "restaurantId": "osm-node-478118760-mcdonald-s",
-      "name": "McDonald's",
-      "website": "http://www.mcdonalds.ca/",
-      "error": "robots_disallow",
-      "observedAt": "2026-09-04T13:17:49.248Z",
-      "sourceKind": "official_website",
-      "reviewState": "restricted"
-    },
-    {
-      "restaurantId": "osm-node-2712689447-mcdonald-s",
-      "name": "McDonald's",
-      "website": "http://www.mcdonalds.ca/",
-      "error": "robots_disallow",
-      "observedAt": "2026-09-04T13:17:49.382Z",
-      "sourceKind": "official_website",
-      "reviewState": "restricted"
-    },
-    {
-      "restaurantId": "osm-node-3034604253-mcdonald-s",
-      "name": "McDonald's",
-      "website": "http://www.mcdonalds.ca/",
-      "error": "robots_disallow",
-      "observedAt": "2026-09-04T13:17:49.501Z",
-      "sourceKind": "official_website",
-      "reviewState": "restricted"
-    },
-    {
-      "restaurantId": "osm-node-8593116375-mcdonald-s",
-      "name": "McDonald's",
-      "website": "http://www.mcdonalds.ca/",
-      "error": "robots_disallow",
-      "observedAt": "2026-09-04T13:17:49.634Z",
-      "sourceKind": "official_website",
-      "reviewState": "restricted"
-    },
-    {
-      "restaurantId": "osm-node-13141551801-mcdonald-s",
-      "name": "McDonald's",
-      "website": "https://www.mcdonalds.com/ca/en-ca.html",
-      "error": "timeout",
-      "observedAt": "2026-09-04T13:17:49.634Z",
-      "sourceKind": "official_website",
-      "reviewState": "cross-check"
-    },
-    {
-      "restaurantId": "osm-way-181621820-mcdonald-s",
-      "name": "McDonald's",
-      "website": "https://www.mcdonalds.com/ca/en-ca/location/halifax/halifax-kempt/3486-kempt-road/3141.html",
-      "error": "timeout",
-      "observedAt": "2026-09-04T13:18:09.778Z",
-      "sourceKind": "official_website",
-      "reviewState": "cross-check"
-    },
-    {
-      "restaurantId": "osm-way-364014694-mcdonald-s",
-      "name": "McDonald's",
-      "website": "http://www.mcdonalds.ca/",
-      "error": "robots_disallow",
-      "observedAt": "2026-09-04T13:17:49.757Z",
-      "sourceKind": "official_website",
-      "reviewState": "restricted"
-    },
-    {
       "restaurantId": "osm-node-1920618295-metro-pizza",
       "name": "Metro Pizza",
       "website": "https://metropizzahalifax.ca/",
       "status": 200,
-      "observedAt": "2026-09-04T13:17:49.859Z",
+      "observedAt": "2026-10-21T14:28:30.410Z",
       "keywordHits": [
         "menu",
         "reserve"
@@ -13350,520 +9524,17 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "restaurantId": "osm-node-6910685885-mexi-s",
       "name": "Mexi's",
       "website": "https://www.mexicalirosas.com/halifax/",
-      "status": 200,
-      "observedAt": "2026-09-04T13:17:49.881Z",
-      "keywordHits": [
-        "menu",
-        "book a table",
-        "order online"
-      ],
-      "signalMatches": {
-        "menu": [
-          "menu"
-        ],
-        "specials": [],
-        "events": [],
-        "patio": [],
-        "openings": [],
-        "closures": [],
-        "moves": [],
-        "brunch": [],
-        "reservations": [
-          "book a table"
-        ],
-        "takeout": [
-          "order online"
-        ]
-      },
-      "candidateLinks": [
-        {
-          "text": "Order Online",
-          "href": "https://online.skytab.com/f8e7a5b508e96a361e3c32f866d91ded",
-          "signalMatches": {
-            "menu": [],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": [
-              "order online"
-            ]
-          }
-        },
-        {
-          "text": "Dessert",
-          "href": "https://www.mexicalirosas.com/halifax/halifax-dessert-menu/",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Order Online Order Online",
-          "href": "https://online.skytab.com/f8e7a5b508e96a361e3c32f866d91ded",
-          "signalMatches": {
-            "menu": [],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": [
-              "order online"
-            ]
-          }
-        },
-        {
-          "text": "Book a Table Book a Table",
-          "href": "https://widgets.libroreserve.com/WEB/NS017164769976/book",
-          "signalMatches": {
-            "menu": [],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [
-              "reserve",
-              "book a table"
-            ],
-            "takeout": []
-          }
-        },
-        {
-          "text": "https://www.mexicalirosas.com/wp-content/uploads/2020/05/mexis_halifax_patio_bar.webp",
-          "href": "https://www.mexicalirosas.com/wp-content/uploads/2020/05/mexis_halifax_patio_bar.webp",
-          "signalMatches": {
-            "menu": [],
-            "specials": [],
-            "events": [],
-            "patio": [
-              "patio"
-            ],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Lunch Menu",
-          "href": "https://www.mexicalirosas.com/moncton/lunch",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Dinner Menu",
-          "href": "https://www.mexicalirosas.com/moncton/dinner/",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Kids Menu",
-          "href": "https://www.mexicalirosas.com/moncton/kids/",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Lunch Menu",
-          "href": "https://www.mexicalirosas.com/quispamsis/quispamsis-lunch-menu/",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Dinner Menu",
-          "href": "https://www.mexicalirosas.com/quispamsis/quispamsis-dinner-menu/",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Kids Menu",
-          "href": "https://www.mexicalirosas.com/quispamsis/quispamsis-kids-menu/",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Lunch Menu",
-          "href": "https://www.mexicalirosas.com/halifax/lunch",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Dinner Menu",
-          "href": "https://www.mexicalirosas.com/halifax/dinner/",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Kids Menu",
-          "href": "https://www.mexicalirosas.com/halifax/kids/",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Lunch Menu",
-          "href": "https://www.mexicalirosas.com/orleans/lunch",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Dinner Menu",
-          "href": "https://www.mexicalirosas.com/orleans/dinner/",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Kids Menu",
-          "href": "https://www.mexicalirosas.com/orleans/kids/",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Dinner Menu",
-          "href": "https://www.mexicalirosas.com/ottawa/dinner/",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Kids Menu",
-          "href": "https://www.mexicalirosas.com/ottawa/kids/",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Lunch Menu",
-          "href": "https://www.mexicalirosas.com/hunt-club/lunch",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Dinner Menu",
-          "href": "https://www.mexicalirosas.com/hunt-club/dinner/",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Kids Menu",
-          "href": "https://www.mexicalirosas.com/hunt-club/kids/",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Lunch Menu",
-          "href": "https://www.mexicalirosas.com/cornwall/lunch",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Dinner Menu",
-          "href": "https://www.mexicalirosas.com/cornwall/dinner/",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        }
-      ],
+      "error": "robots_disallow",
+      "observedAt": "2026-10-21T14:28:30.518Z",
       "sourceKind": "official_website",
-      "reviewState": "cross-check"
+      "reviewState": "restricted"
     },
     {
       "restaurantId": "osm-node-8636456776-mezza-lebanese-kitchen",
       "name": "Mezza Lebanese Kitchen",
-      "website": "https://www.ordermezza.com/",
-      "status": 200,
-      "observedAt": "2026-09-04T13:17:49.916Z",
-      "keywordHits": [
-        "menu",
-        "food menu",
-        "now open",
-        "reserve"
-      ],
-      "signalMatches": {
-        "menu": [
-          "menu",
-          "food menu"
-        ],
-        "specials": [],
-        "events": [],
-        "patio": [],
-        "openings": [
-          "now open"
-        ],
-        "closures": [],
-        "moves": [],
-        "brunch": [],
-        "reservations": [
-          "reserve"
-        ],
-        "takeout": []
-      },
-      "candidateLinks": [
-        {
-          "text": "Menu",
-          "href": "https://www.ordermezza.com/menu",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        }
-      ],
+      "website": "https://www.mezzalebanesekitchen.com/",
+      "error": "quarantined_cross_entity_redirect",
+      "observedAt": "2026-10-21T14:28:30.784Z",
       "sourceKind": "official_website",
       "reviewState": "cross-check"
     },
@@ -13872,7 +9543,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "name": "Mirchi Tandoor",
       "website": "https://mirchitandoor.com/",
       "status": 200,
-      "observedAt": "2026-09-04T13:17:50.165Z",
+      "observedAt": "2026-10-21T14:28:30.818Z",
       "keywordHits": [
         "menu",
         "reserve",
@@ -13943,8 +9614,8 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "restaurantId": "osm-node-11552509410-mizu-sushi",
       "name": "Mizu Sushi",
       "website": "https://mizutakeout.ca/",
-      "status": 200,
-      "observedAt": "2026-09-04T13:17:50.182Z",
+      "status": 403,
+      "observedAt": "2026-10-21T14:28:30.822Z",
       "keywordHits": [
         "takeout"
       ],
@@ -13964,14 +9635,14 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       },
       "candidateLinks": [],
       "sourceKind": "official_website",
-      "reviewState": "cross-check"
+      "reviewState": "needs-review"
     },
     {
       "restaurantId": "osm-node-11552529320-mizu-sushi",
       "name": "Mizu Sushi",
       "website": "https://mizutakeout.ca/",
-      "status": 200,
-      "observedAt": "2026-09-04T13:17:50.582Z",
+      "status": 403,
+      "observedAt": "2026-10-21T14:28:31.408Z",
       "keywordHits": [
         "takeout"
       ],
@@ -13991,23 +9662,14 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       },
       "candidateLinks": [],
       "sourceKind": "official_website",
-      "reviewState": "cross-check"
-    },
-    {
-      "restaurantId": "osm-node-8142450011-montana-s",
-      "name": "Montana's",
-      "website": "https://www.montanas.ca/en/locations/3617/halifax-chain-lake-dr.html",
-      "error": "robots_disallow",
-      "observedAt": "2026-09-04T13:17:50.412Z",
-      "sourceKind": "official_website",
-      "reviewState": "restricted"
+      "reviewState": "needs-review"
     },
     {
       "restaurantId": "osm-node-475879583-morris-east",
       "name": "Morris East",
       "website": "https://www.morriseast.com/",
       "status": 200,
-      "observedAt": "2026-09-04T13:17:50.638Z",
+      "observedAt": "2026-10-21T14:28:31.152Z",
       "keywordHits": [
         "menu",
         "cocktail",
@@ -14280,18 +9942,11 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "restaurantId": "osm-node-9165619005-mother-s-pizza",
       "name": "Mother's Pizza",
       "website": "https://motherspizzahalifax.ca/",
-      "status": 200,
-      "observedAt": "2026-09-04T13:17:50.683Z",
-      "keywordHits": [
-        "menu",
-        "reserve",
-        "order online",
-        "delivery"
-      ],
+      "status": 500,
+      "observedAt": "2026-10-21T14:28:31.436Z",
+      "keywordHits": [],
       "signalMatches": {
-        "menu": [
-          "menu"
-        ],
+        "menu": [],
         "specials": [],
         "events": [],
         "patio": [],
@@ -14299,619 +9954,19 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
         "closures": [],
         "moves": [],
         "brunch": [],
-        "reservations": [
-          "reserve"
-        ],
-        "takeout": [
-          "order online",
-          "delivery"
-        ]
+        "reservations": [],
+        "takeout": []
       },
-      "candidateLinks": [
-        {
-          "text": "Tripadvisor",
-          "href": "https://www.ubereats.com/ca/store/mothers-pizza/n8rHAFzESdugPVm_Dj2jaA",
-          "signalMatches": {
-            "menu": [],
-            "specials": [],
-            "events": [
-              "dj"
-            ],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Menu",
-          "href": "https://motherspizzahalifax.ca/menu-restaurant/",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Order Online",
-          "href": "https://www.clover.com/online-ordering/mothers-pizza-halifax-2",
-          "signalMatches": {
-            "menu": [],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": [
-              "order online"
-            ]
-          }
-        },
-        {
-          "text": "Online order and menu",
-          "href": "https://www.clover.com/online-ordering/mothers-pizza-halifax-2",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Menu",
-          "href": "https://www.clover.com/online-ordering/mothers-pizza-halifax-2",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Menu Restaurant",
-          "href": "https://motherspizzahalifax.ca/menu-restaurant/",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        }
-      ],
+      "candidateLinks": [],
       "sourceKind": "official_website",
-      "reviewState": "cross-check"
-    },
-    {
-      "restaurantId": "osm-node-7674175977-moxie-s",
-      "name": "Moxie's",
-      "website": "https://moxies.com/",
-      "status": 200,
-      "observedAt": "2026-09-04T13:17:50.745Z",
-      "keywordHits": [
-        "menu",
-        "cocktail",
-        "happy hour",
-        "special",
-        "offers",
-        "event",
-        "reservation",
-        "reserve",
-        "opentable",
-        "pickup",
-        "pick up",
-        "delivery"
-      ],
-      "signalMatches": {
-        "menu": [
-          "menu",
-          "cocktail"
-        ],
-        "specials": [
-          "happy hour",
-          "special",
-          "offers"
-        ],
-        "events": [
-          "event"
-        ],
-        "patio": [],
-        "openings": [],
-        "closures": [],
-        "moves": [],
-        "brunch": [],
-        "reservations": [
-          "reservation",
-          "reserve",
-          "opentable"
-        ],
-        "takeout": [
-          "pickup",
-          "pick up",
-          "delivery"
-        ]
-      },
-      "candidateLinks": [
-        {
-          "text": "Menu",
-          "href": "https://moxies.com/#elementor-action%3Aaction%3Dpopup%3Aopen%26settings%3DeyJpZCI6IjIyMzcwIiwidG9nZ2xlIjpmYWxzZX0%3D",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Book Event",
-          "href": "https://moxies.com/#",
-          "signalMatches": {
-            "menu": [],
-            "specials": [],
-            "events": [
-              "event"
-            ],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Reserve",
-          "href": "https://moxies.com/#",
-          "signalMatches": {
-            "menu": [],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [
-              "reserve"
-            ],
-            "takeout": []
-          }
-        },
-        {
-          "text": "RESERVE",
-          "href": "https://moxies.com/#",
-          "signalMatches": {
-            "menu": [],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [
-              "reserve"
-            ],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Reserve",
-          "href": "https://moxies.com/#elementor-action%3Aaction%3Dpopup%3Aopen%26settings%3DeyJpZCI6IjIyMzcwIiwidG9nZ2xlIjpmYWxzZX0%3D",
-          "signalMatches": {
-            "menu": [],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [
-              "reserve"
-            ],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Reserve Now",
-          "href": "https://moxies.com/#elementor-action%3Aaction%3Dpopup%3Aopen%26settings%3DeyJpZCI6IjIyMzcwIiwidG9nZ2xlIjpmYWxzZX0%3D",
-          "signalMatches": {
-            "menu": [],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [
-              "reserve"
-            ],
-            "takeout": []
-          }
-        },
-        {
-          "text": "VIEW MENUS",
-          "href": "https://moxies.com/#",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Open post by moxiesusa with ID 18131248420712152",
-          "href": "https://scontent-lax3-2.cdninstagram.com/v/t51.82787-15/774668668_18137497756608080_9217803171477205145_n.jpg?stp=dst-jpg_e35_tt6&#038;_nc_cat=106&#038;ccb=7-5&#038;_nc_sid=18de74&#038;efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&#038;_nc_ohc=foMDgWY-r6sQ7kNvwGTcS-t&#038;_nc_oc=AdqDWG3hWzvKDJANT-GJMRB2V-aSwfc94U9hKslTheJbSgjdTqI9sls7itchdKXFsH3qdUPeLgPQyXwVNv3nP2CB&#038;_nc_zt=23&#038;_nc_ht=scontent-lax3-2.cdninstagram.com&#038;edm=ANo9K5cEAAAA&#038;_nc_gid=wH63PpmGG8mLhqrYlJMyGA&#038;_nc_tpa=Q5bMBQJz4Ozf90Lu7kOPtCLO2x9T4uCmrqnvytJ13aSSGV7x6pmGZ1lTH90uqklnZz4GKjdQtM2fRiK8cQ&#038;oh=00_AQJn1XE0zxlNxgy5dQPRQGn3YV-JswH2L59eSa3DOMvyXQ&#038;oe=6A9FAD7F",
-          "signalMatches": {
-            "menu": [],
-            "specials": [],
-            "events": [
-              "dj"
-            ],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Terms of Use",
-          "href": "https://www.opentable.com/legal/terms-and-conditions",
-          "signalMatches": {
-            "menu": [],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [
-              "opentable"
-            ],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Privacy Policy",
-          "href": "https://www.opentable.com/legal/privacy-policy",
-          "signalMatches": {
-            "menu": [],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [
-              "opentable"
-            ],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Reserve",
-          "href": "https://moxies.com/#elementor-action%3Aaction%3Dpopup%3Aopen%26settings%3DeyJpZCI6IjY5OSIsInRvZ2dsZSI6ZmFsc2V9",
-          "signalMatches": {
-            "menu": [],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [
-              "reserve"
-            ],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Book Event",
-          "href": "https://moxies.com/restaurants/boston-seaport/group-bookings/#group-booking-form",
-          "signalMatches": {
-            "menu": [],
-            "specials": [],
-            "events": [
-              "event"
-            ],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Menus",
-          "href": "https://moxies.com/restaurants/boston-seaport/menus",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Pickup",
-          "href": "https://moxies.xdineapp.com/consumer#initOrder/regular/pickup/4653/Boston+Seaport?display=order",
-          "signalMatches": {
-            "menu": [],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": [
-              "pickup"
-            ]
-          }
-        },
-        {
-          "text": "Book Event",
-          "href": "https://moxies.com/restaurants/dallas-uptown/group-bookings/#group-booking-form",
-          "signalMatches": {
-            "menu": [],
-            "specials": [],
-            "events": [
-              "event"
-            ],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Menus",
-          "href": "https://moxies.com/restaurants/dallas-uptown/menus",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Pickup",
-          "href": "https://moxies.xdineapp.com/#initOrder/regular/pickup/3021/Dallas?display=order",
-          "signalMatches": {
-            "menu": [],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": [
-              "pickup"
-            ]
-          }
-        },
-        {
-          "text": "Book Event",
-          "href": "https://moxies.com/restaurants/fort-lauderdale/group-bookings/#group-booking-form",
-          "signalMatches": {
-            "menu": [],
-            "specials": [],
-            "events": [
-              "event"
-            ],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Menus",
-          "href": "https://moxies.com/restaurants/fort-lauderdale/menus",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Pickup",
-          "href": "https://moxies.xdineapp.com/consumer#initOrder/regular/pickup/4327/Fort%20Lauderdale?display=order",
-          "signalMatches": {
-            "menu": [],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": [
-              "pickup"
-            ]
-          }
-        },
-        {
-          "text": "Book Event",
-          "href": "https://moxies.com/restaurants/houston/group-bookings/#group-booking-form",
-          "signalMatches": {
-            "menu": [],
-            "specials": [],
-            "events": [
-              "event"
-            ],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Menus",
-          "href": "https://moxies.com/restaurants/houston/menus",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Pickup",
-          "href": "https://moxies.xdineapp.com/#initOrder/regular/pickup/3509/Houston?display=order",
-          "signalMatches": {
-            "menu": [],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": [
-              "pickup"
-            ]
-          }
-        },
-        {
-          "text": "Book Event",
-          "href": "https://moxies.com/restaurants/miami-mary-brickell/group-bookings/#group-booking-form",
-          "signalMatches": {
-            "menu": [],
-            "specials": [],
-            "events": [
-              "event"
-            ],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        }
-      ],
-      "sourceKind": "official_website",
-      "reviewState": "cross-check"
+      "reviewState": "needs-review"
     },
     {
       "restaurantId": "osm-node-2611276563-narrow-espresso",
       "name": "Narrow Espresso",
       "website": "http://narrowespresso.com/",
       "status": 200,
-      "observedAt": "2026-09-04T13:17:51.344Z",
+      "observedAt": "2026-10-21T14:28:31.613Z",
       "keywordHits": [],
       "signalMatches": {
         "menu": [],
@@ -14934,7 +9989,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "name": "New Asia",
       "website": "http://www.newasiahalifax.ca/",
       "error": "fetch failed",
-      "observedAt": "2026-09-04T13:17:51.633Z",
+      "observedAt": "2026-10-21T14:28:31.707Z",
       "sourceKind": "official_website",
       "reviewState": "cross-check"
     },
@@ -14943,7 +9998,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "name": "New Wing Wah",
       "website": "https://newwingwah.ca/",
       "status": 200,
-      "observedAt": "2026-09-04T13:17:51.766Z",
+      "observedAt": "2026-10-21T14:28:31.916Z",
       "keywordHits": [
         "menu",
         "special",
@@ -15049,7 +10104,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "name": "Noggins Coburg",
       "website": "https://nogginsfarm.ca/farm-markets/coburg-market/",
       "status": 200,
-      "observedAt": "2026-09-04T13:17:51.767Z",
+      "observedAt": "2026-10-21T14:28:32.139Z",
       "keywordHits": [
         "menu",
         "features"
@@ -15098,7 +10153,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "name": "Orso Pub & Grill",
       "website": "https://orsopub.ca/",
       "status": 200,
-      "observedAt": "2026-09-04T13:17:52.147Z",
+      "observedAt": "2026-10-21T14:28:32.156Z",
       "keywordHits": [
         "menu",
         "special",
@@ -15249,316 +10304,11 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "reviewState": "cross-check"
     },
     {
-      "restaurantId": "osm-node-11699344555-osmow-s",
-      "name": "Osmow's",
-      "website": "https://locations.osmows.com/ca/ns/halifax",
-      "status": 200,
-      "observedAt": "2026-09-04T13:17:52.300Z",
-      "keywordHits": [
-        "menu",
-        "reserve"
-      ],
-      "signalMatches": {
-        "menu": [
-          "menu"
-        ],
-        "specials": [],
-        "events": [],
-        "patio": [],
-        "openings": [],
-        "closures": [],
-        "moves": [],
-        "brunch": [],
-        "reservations": [
-          "reserve"
-        ],
-        "takeout": []
-      },
-      "candidateLinks": [
-        {
-          "text": "Menu",
-          "href": "https://locations.osmows.com/ca/ns/halifax#",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Menu",
-          "href": "https://osmows.com/fr/menu/",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        }
-      ],
-      "sourceKind": "official_website",
-      "reviewState": "cross-check"
-    },
-    {
-      "restaurantId": "osm-node-11867455433-papa-john-s",
-      "name": "Papa John's",
-      "website": "https://locations.papajohns.com/canada/ns/b2w-6c4/dartmouth/644-portland-street",
-      "status": 200,
-      "observedAt": "2026-09-04T13:17:52.432Z",
-      "keywordHits": [
-        "menu",
-        "special",
-        "specials",
-        "deal",
-        "offers",
-        "promo",
-        "event",
-        "events",
-        "delivery"
-      ],
-      "signalMatches": {
-        "menu": [
-          "menu"
-        ],
-        "specials": [
-          "special",
-          "specials",
-          "deal",
-          "offers",
-          "promo"
-        ],
-        "events": [
-          "event",
-          "events"
-        ],
-        "patio": [],
-        "openings": [],
-        "closures": [],
-        "moves": [],
-        "brunch": [],
-        "reservations": [],
-        "takeout": [
-          "delivery"
-        ]
-      },
-      "candidateLinks": [
-        {
-          "text": "Menu",
-          "href": "https://www.papajohns.com/order/viewStoreMenu/CARRYOUT/BUSINESS/13152",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Deals",
-          "href": "https://www.papajohns.com/order/viewStoreMenu/CARRYOUT/BUSINESS/13152?target=specials",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [
-              "special",
-              "specials",
-              "deal"
-            ],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "PAPA REWARDS",
-          "href": "https://www.papajohns.com/order/viewStoreMenu/CARRYOUT/BUSINESS/13152?target=papa-rewards",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Order Delivery",
-          "href": "https://www.papajohns.com/order/stores-near-me?searchType=DELIVERY",
-          "signalMatches": {
-            "menu": [],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": [
-              "delivery"
-            ]
-          }
-        },
-        {
-          "text": "Order Carryout",
-          "href": "https://www.papajohns.com/order/viewStoreMenu/CARRYOUT/BUSINESS/13152",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "VIEW ALL DEALS",
-          "href": "https://www.papajohns.com/order/viewStoreMenu/CARRYOUT/BUSINESS/13152?target=specials",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [
-              "special",
-              "specials",
-              "deal"
-            ],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Sign Up",
-          "href": "https://www.papajohns.com/order/create-account?target=/order/viewStoreMenu/CARRYOUT/BUSINESS/13152%3Ftarget%3Dpapa-rewards",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Sign In",
-          "href": "https://www.papajohns.com/order/sign-in?target=%2Forder%2FviewStoreMenu%2FCARRYOUT%2FBUSINESS%2F13152%3Ftarget%3Dpapa-rewards",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Text & Email Offers",
-          "href": "https://www.papajohns.com/promotional-offers/",
-          "signalMatches": {
-            "menu": [],
-            "specials": [
-              "offers",
-              "promo"
-            ],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Pizza Deals & Specials",
-          "href": "https://www.papajohns.com/specials/",
-          "signalMatches": {
-            "menu": [],
-            "specials": [
-              "special",
-              "specials",
-              "deal"
-            ],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        }
-      ],
-      "sourceKind": "official_website",
-      "reviewState": "cross-check"
-    },
-    {
       "restaurantId": "osm-node-4965917621-patrons-golf-and-lounge",
       "name": "Patrons Golf & Lounge",
       "website": "https://www.patronsgolflounge.ca/",
       "error": "fetch failed",
-      "observedAt": "2026-09-04T13:17:52.667Z",
+      "observedAt": "2026-10-21T14:28:32.256Z",
       "sourceKind": "official_website",
       "reviewState": "cross-check"
     },
@@ -15567,7 +10317,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "name": "Pazzo Ristorante & Enoteca",
       "website": "https://www.rcr.ca/restaurants/pazzo-italian-ristorante/",
       "status": 200,
-      "observedAt": "2026-09-04T13:17:52.830Z",
+      "observedAt": "2026-10-21T14:28:32.520Z",
       "keywordHits": [
         "menu",
         "cocktail",
@@ -15607,25 +10357,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "candidateLinks": [
         {
           "text": "Dinner Menu",
-          "href": "https://www.rcr.ca/content/uploads/2023/09/PAZZO-DINNER-JULY-2026.pdf",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Seasonal Tasting Menu",
-          "href": "https://www.rcr.ca/content/uploads/2023/09/Tasting-Menu-Southern-Italy-June-Aug-2026-4.pdf",
+          "href": "https://www.rcr.ca/content/uploads/2023/09/PAZZO-DINNER-SEPT-2026.pdf",
           "signalMatches": {
             "menu": [
               "menu"
@@ -15643,7 +10375,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
         },
         {
           "text": "Downstairs Bar & Cocktails",
-          "href": "https://www.rcr.ca/content/uploads/2023/09/PAZZO-BAR_JULY-2026-1.pdf",
+          "href": "https://www.rcr.ca/content/uploads/2023/09/PAZZO-BAR_SEPTEMBER-2026.pdf",
           "signalMatches": {
             "menu": [
               "cocktail"
@@ -15705,7 +10437,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "name": "Peter's Pizzeria",
       "website": "https://www.peterspizzeriahfx.com/",
       "status": 200,
-      "observedAt": "2026-09-04T13:17:52.846Z",
+      "observedAt": "2026-10-21T14:28:32.605Z",
       "keywordHits": [
         "menu",
         "promo",
@@ -15796,7 +10528,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "name": "PG Cafe and Grill",
       "website": "https://pgcafeandgrill.com/",
       "status": 200,
-      "observedAt": "2026-09-04T13:17:53.147Z",
+      "observedAt": "2026-10-21T14:28:32.943Z",
       "keywordHits": [
         "menu",
         "deal",
@@ -15855,7 +10587,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "name": "Phở Hoang Minh",
       "website": "https://phohoangminh.ca/",
       "status": 200,
-      "observedAt": "2026-09-04T13:17:53.434Z",
+      "observedAt": "2026-10-21T14:28:33.296Z",
       "keywordHits": [
         "features",
         "deal",
@@ -15889,164 +10621,9 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
     {
       "restaurantId": "osm-node-3789869157-piece-of-cake-bakery-and-cafe",
       "name": "Piece of Cake Bakery and Cafe",
-      "website": "http://harboursouth.ca/dining/piece-of-cake-fine-bakery-cafe/",
-      "status": 404,
-      "observedAt": "2026-09-04T13:17:53.549Z",
-      "keywordHits": [
-        "menu"
-      ],
-      "signalMatches": {
-        "menu": [
-          "menu"
-        ],
-        "specials": [],
-        "events": [],
-        "patio": [],
-        "openings": [],
-        "closures": [],
-        "moves": [],
-        "brunch": [],
-        "reservations": [],
-        "takeout": []
-      },
-      "candidateLinks": [],
-      "sourceKind": "official_website",
-      "reviewState": "needs-review"
-    },
-    {
-      "restaurantId": "osm-node-6393893025-pizza-hut",
-      "name": "Pizza Hut",
-      "website": "https://www.pizzahut.ca/huts/ca-1/R30103/",
-      "error": "timeout",
-      "observedAt": "2026-09-04T13:17:53.565Z",
-      "sourceKind": "official_website",
-      "reviewState": "cross-check"
-    },
-    {
-      "restaurantId": "osm-way-358577265-pizza-hut",
-      "name": "Pizza Hut",
-      "website": "https://www.pizzahut.ca/huts/ca-1/R30104/",
-      "error": "timeout",
-      "observedAt": "2026-09-04T13:18:13.707Z",
-      "sourceKind": "official_website",
-      "reviewState": "cross-check"
-    },
-    {
-      "restaurantId": "osm-node-9991598303-pizza-hut-delivery",
-      "name": "Pizza Hut Delivery",
-      "website": "https://www.pizzahut.ca/huts/ca-1/R30102/",
-      "error": "timeout",
-      "observedAt": "2026-09-04T13:18:25.834Z",
-      "sourceKind": "official_website",
-      "reviewState": "cross-check"
-    },
-    {
-      "restaurantId": "osm-node-5863968665-pizza-pizza",
-      "name": "Pizza Pizza",
-      "website": "https://www.pizzapizza.ca/",
-      "status": 200,
-      "observedAt": "2026-09-04T13:17:53.667Z",
-      "keywordHits": [],
-      "signalMatches": {
-        "menu": [],
-        "specials": [],
-        "events": [],
-        "patio": [],
-        "openings": [],
-        "closures": [],
-        "moves": [],
-        "brunch": [],
-        "reservations": [],
-        "takeout": []
-      },
-      "candidateLinks": [],
-      "sourceKind": "official_website",
-      "reviewState": "cross-check"
-    },
-    {
-      "restaurantId": "osm-node-11526163880-pizza-pizza",
-      "name": "Pizza Pizza",
-      "website": "https://dal.mydininghub.ca/en/locations",
-      "status": 200,
-      "observedAt": "2026-09-04T13:17:38.485Z",
-      "keywordHits": [
-        "menu"
-      ],
-      "signalMatches": {
-        "menu": [
-          "menu"
-        ],
-        "specials": [],
-        "events": [],
-        "patio": [],
-        "openings": [],
-        "closures": [],
-        "moves": [],
-        "brunch": [],
-        "reservations": [],
-        "takeout": []
-      },
-      "candidateLinks": [
-        {
-          "text": "My Menu",
-          "href": "https://dal.mydininghub.ca/en/account?section=my-menu",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Locations & Menus",
-          "href": "https://dal.mydininghub.ca/en/locations",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        }
-      ],
-      "sourceKind": "official_website",
-      "reviewState": "cross-check"
-    },
-    {
-      "restaurantId": "osm-node-13073162601-pizza-pizza",
-      "name": "Pizza Pizza",
-      "website": "https://www.pizzapizza.ca/",
-      "status": 200,
-      "observedAt": "2026-09-04T13:17:54.345Z",
-      "keywordHits": [],
-      "signalMatches": {
-        "menu": [],
-        "specials": [],
-        "events": [],
-        "patio": [],
-        "openings": [],
-        "closures": [],
-        "moves": [],
-        "brunch": [],
-        "reservations": [],
-        "takeout": []
-      },
-      "candidateLinks": [],
+      "website": "https://bishopslanding.com/dining/piece-of-cake-fine-bakery-cafe/",
+      "error": "quarantined_cross_entity_redirect",
+      "observedAt": "2026-10-21T14:28:33.616Z",
       "sourceKind": "official_website",
       "reviewState": "cross-check"
     },
@@ -16055,7 +10632,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "name": "Pizza.Co",
       "website": "https://pzzaco.ca/",
       "status": 200,
-      "observedAt": "2026-09-04T13:17:54.127Z",
+      "observedAt": "2026-10-21T14:28:33.622Z",
       "keywordHits": [
         "menu",
         "special",
@@ -16201,7 +10778,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "name": "Pleasant Street Diner",
       "website": "https://pleasantstdiner.com/",
       "status": 200,
-      "observedAt": "2026-09-04T13:17:54.632Z",
+      "observedAt": "2026-10-21T14:28:35.692Z",
       "keywordHits": [],
       "signalMatches": {
         "menu": [],
@@ -16223,22 +10800,8 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "restaurantId": "osm-node-8376551845-portland-street-creperie",
       "name": "Portland Street Creperie",
       "website": "http://www.portlandstreetcreperie.com/",
-      "status": 200,
-      "observedAt": "2026-09-04T13:17:54.714Z",
-      "keywordHits": [],
-      "signalMatches": {
-        "menu": [],
-        "specials": [],
-        "events": [],
-        "patio": [],
-        "openings": [],
-        "closures": [],
-        "moves": [],
-        "brunch": [],
-        "reservations": [],
-        "takeout": []
-      },
-      "candidateLinks": [],
+      "error": "fetch failed",
+      "observedAt": "2026-10-21T14:28:35.834Z",
       "sourceKind": "official_website",
       "reviewState": "cross-check"
     },
@@ -16246,22 +10809,8 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "restaurantId": "osm-node-4417927494-primal-kitchen",
       "name": "Primal Kitchen",
       "website": "https://www.primalhfx.ca/",
-      "status": 200,
-      "observedAt": "2026-09-04T13:17:55.032Z",
-      "keywordHits": [],
-      "signalMatches": {
-        "menu": [],
-        "specials": [],
-        "events": [],
-        "patio": [],
-        "openings": [],
-        "closures": [],
-        "moves": [],
-        "brunch": [],
-        "reservations": [],
-        "takeout": []
-      },
-      "candidateLinks": [],
+      "error": "fetch failed",
+      "observedAt": "2026-10-21T14:28:36.046Z",
       "sourceKind": "official_website",
       "reviewState": "cross-check"
     },
@@ -16270,7 +10819,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "name": "Public - Café, Bakery & Bar",
       "website": "https://www.rcr.ca/restaurants/public-cafe-bakery-bar/",
       "status": 200,
-      "observedAt": "2026-09-04T13:17:53.381Z",
+      "observedAt": "2026-10-21T14:28:32.987Z",
       "keywordHits": [
         "menu",
         "cocktail",
@@ -16317,7 +10866,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "candidateLinks": [
         {
           "text": "Happy Hour 4-6 daily",
-          "href": "https://www.rcr.ca/content/uploads/2025/10/Public-Happy-Hour-June-2026.pdf",
+          "href": "https://www.rcr.ca/content/uploads/2025/10/Public-Happy-Hour-August-2026.pdf",
           "signalMatches": {
             "menu": [],
             "specials": [
@@ -16352,6 +10901,24 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
           }
         },
         {
+          "text": "Group Menus",
+          "href": "https://www.rcr.ca/content/uploads/2025/10/Public-group-menus-Sept-2026.pdf",
+          "signalMatches": {
+            "menu": [
+              "menu"
+            ],
+            "specials": [],
+            "events": [],
+            "patio": [],
+            "openings": [],
+            "closures": [],
+            "moves": [],
+            "brunch": [],
+            "reservations": [],
+            "takeout": []
+          }
+        },
+        {
           "text": "The Cable Wharf",
           "href": "https://www.rcr.ca/restaurants/cable-wharf-kitchen-patio/",
           "signalMatches": {
@@ -16378,7 +10945,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "name": "Real Fake Meats",
       "website": "https://www.realfakemeats.com/",
       "status": 200,
-      "observedAt": "2026-09-04T13:17:57.013Z",
+      "observedAt": "2026-10-21T14:28:36.070Z",
       "keywordHits": [
         "menu",
         "pickup",
@@ -16467,26 +11034,41 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
     {
       "restaurantId": "osm-node-3802109750-rinaldo-s",
       "name": "Rinaldo’s",
-      "website": "https://www.rinaldos.ca/",
+      "website": "https://rinaldos.ca/",
       "status": 200,
-      "observedAt": "2026-09-04T13:17:57.775Z",
+      "observedAt": "2026-10-21T14:28:36.161Z",
       "keywordHits": [
+        "menu",
+        "special",
+        "specials",
+        "event",
+        "events",
         "reserve",
+        "book a table",
         "takeout",
         "order online",
         "delivery"
       ],
       "signalMatches": {
-        "menu": [],
-        "specials": [],
-        "events": [],
+        "menu": [
+          "menu"
+        ],
+        "specials": [
+          "special",
+          "specials"
+        ],
+        "events": [
+          "event",
+          "events"
+        ],
         "patio": [],
         "openings": [],
         "closures": [],
         "moves": [],
         "brunch": [],
         "reservations": [
-          "reserve"
+          "reserve",
+          "book a table"
         ],
         "takeout": [
           "takeout",
@@ -16496,8 +11078,44 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       },
       "candidateLinks": [
         {
-          "text": "Order Online",
-          "href": "https://order.online/business/~11847598",
+          "text": "Menus",
+          "href": "https://rinaldos.ca/menu/",
+          "signalMatches": {
+            "menu": [
+              "menu"
+            ],
+            "specials": [],
+            "events": [],
+            "patio": [],
+            "openings": [],
+            "closures": [],
+            "moves": [],
+            "brunch": [],
+            "reservations": [],
+            "takeout": []
+          }
+        },
+        {
+          "text": "Book a Table",
+          "href": "https://www.tbdine.com/book/restaurant/rinaldo%E2%80%99s?idApp=70285&amp;language=en-us",
+          "signalMatches": {
+            "menu": [],
+            "specials": [],
+            "events": [],
+            "patio": [],
+            "openings": [],
+            "closures": [],
+            "moves": [],
+            "brunch": [],
+            "reservations": [
+              "book a table"
+            ],
+            "takeout": []
+          }
+        },
+        {
+          "text": "ORDER ONLINE",
+          "href": "https://order.online/business/Rinaldos-11847598?utm_source=sdk&#038;visitorId=b4c7ae19fa98381412a75f8",
           "signalMatches": {
             "menu": [],
             "specials": [],
@@ -16514,8 +11132,44 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
           }
         },
         {
-          "text": "Reserve Now",
-          "href": "https://www.tbdine.com/book/restaurant/rinaldo%E2%80%99s?idApp=70285&language=en-us",
+          "text": "Order Online",
+          "href": "https://order.online/business/Rinaldos-11847598?utm_source=sdk&#038;visitorId=b4c7ae19fa98381412a75f8",
+          "signalMatches": {
+            "menu": [],
+            "specials": [],
+            "events": [],
+            "patio": [],
+            "openings": [],
+            "closures": [],
+            "moves": [],
+            "brunch": [],
+            "reservations": [],
+            "takeout": [
+              "order online"
+            ]
+          }
+        },
+        {
+          "text": "View Menus",
+          "href": "https://rinaldos.ca/menu",
+          "signalMatches": {
+            "menu": [
+              "menu"
+            ],
+            "specials": [],
+            "events": [],
+            "patio": [],
+            "openings": [],
+            "closures": [],
+            "moves": [],
+            "brunch": [],
+            "reservations": [],
+            "takeout": []
+          }
+        },
+        {
+          "text": "Book a Table",
+          "href": "https://www.tbdine.com/book/restaurant/rinaldo%E2%80%99s?idApp=70285&#038;language=en-us",
           "signalMatches": {
             "menu": [],
             "specials": [],
@@ -16526,8 +11180,62 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
             "moves": [],
             "brunch": [],
             "reservations": [
-              "reserve"
+              "book a table"
             ],
+            "takeout": []
+          }
+        },
+        {
+          "text": "View Pizza",
+          "href": "https://rinaldos.ca/menu/",
+          "signalMatches": {
+            "menu": [
+              "menu"
+            ],
+            "specials": [],
+            "events": [],
+            "patio": [],
+            "openings": [],
+            "closures": [],
+            "moves": [],
+            "brunch": [],
+            "reservations": [],
+            "takeout": []
+          }
+        },
+        {
+          "text": "View Heros",
+          "href": "https://rinaldos.ca/menu/",
+          "signalMatches": {
+            "menu": [
+              "menu"
+            ],
+            "specials": [],
+            "events": [],
+            "patio": [],
+            "openings": [],
+            "closures": [],
+            "moves": [],
+            "brunch": [],
+            "reservations": [],
+            "takeout": []
+          }
+        },
+        {
+          "text": "View Pasta",
+          "href": "https://rinaldos.ca/menu/",
+          "signalMatches": {
+            "menu": [
+              "menu"
+            ],
+            "specials": [],
+            "events": [],
+            "patio": [],
+            "openings": [],
+            "closures": [],
+            "moves": [],
+            "brunch": [],
+            "reservations": [],
             "takeout": []
           }
         }
@@ -16540,7 +11248,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "name": "Ristorante Amano",
       "website": "https://www.ristoranteamano.ca/",
       "status": 200,
-      "observedAt": "2026-09-04T13:17:57.776Z",
+      "observedAt": "2026-10-21T14:28:36.274Z",
       "keywordHits": [
         "reservation"
       ],
@@ -16586,7 +11294,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "name": "Rollz Ice Cream",
       "website": "https://rollzicecream.ca/",
       "status": 200,
-      "observedAt": "2026-09-04T13:17:57.841Z",
+      "observedAt": "2026-10-21T14:28:36.524Z",
       "keywordHits": [],
       "signalMatches": {
         "menu": [],
@@ -16609,7 +11317,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "name": "Rush Hour Pizza",
       "website": "https://rushhourpizza.ca/",
       "status": 200,
-      "observedAt": "2026-09-04T13:17:58.026Z",
+      "observedAt": "2026-10-21T14:28:36.542Z",
       "keywordHits": [
         "special",
         "specials",
@@ -16681,7 +11389,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "name": "Saffron Multi Cuisine Indian Restaurant",
       "website": "https://saffron-indian-restaurant.com/",
       "error": "fetch failed",
-      "observedAt": "2026-09-04T13:17:58.363Z",
+      "observedAt": "2026-10-21T14:28:37.028Z",
       "sourceKind": "official_website",
       "reviewState": "cross-check"
     },
@@ -16689,82 +11397,31 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "restaurantId": "osm-node-8443747544-saj-house",
       "name": "Saj House",
       "website": "https://www.sajhouse.ca/",
-      "status": 200,
-      "observedAt": "2026-09-04T13:17:58.410Z",
-      "keywordHits": [
-        "deal",
-        "promo",
-        "ticket",
-        "show",
-        "reserve"
-      ],
+      "status": 403,
+      "observedAt": "2026-10-21T14:28:37.077Z",
+      "keywordHits": [],
       "signalMatches": {
         "menu": [],
-        "specials": [
-          "deal",
-          "promo"
-        ],
-        "events": [
-          "ticket",
-          "show"
-        ],
+        "specials": [],
+        "events": [],
         "patio": [],
         "openings": [],
         "closures": [],
         "moves": [],
         "brunch": [],
-        "reservations": [
-          "reserve"
-        ],
+        "reservations": [],
         "takeout": []
       },
-      "candidateLinks": [
-        {
-          "text": "Promotions",
-          "href": "https://www.sajhouse.ca/go?source=sajhouse.ca",
-          "signalMatches": {
-            "menu": [],
-            "specials": [
-              "promo"
-            ],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Show all →",
-          "href": "https://www.sajhouse.ca/#",
-          "signalMatches": {
-            "menu": [],
-            "specials": [],
-            "events": [
-              "show"
-            ],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        }
-      ],
+      "candidateLinks": [],
       "sourceKind": "official_website",
-      "reviewState": "cross-check"
+      "reviewState": "needs-review"
     },
     {
       "restaurantId": "osm-node-2623077568-salvatore-s-pizzaiolo-trattoria",
       "name": "Salvatore's Pizzaiolo Trattoria",
       "website": "https://www.salvatorespizza.ca/",
       "status": 200,
-      "observedAt": "2026-09-04T13:17:58.464Z",
+      "observedAt": "2026-10-21T14:28:37.163Z",
       "keywordHits": [
         "delivery"
       ],
@@ -16791,7 +11448,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "name": "Sea Smoke",
       "website": "https://www.seasmokehalifax.com/",
       "status": 200,
-      "observedAt": "2026-09-04T13:17:58.581Z",
+      "observedAt": "2026-10-21T14:28:37.193Z",
       "keywordHits": [
         "menu",
         "reservation"
@@ -16858,14 +11515,12 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "name": "Seaport Social",
       "website": "https://www.seaportsocialhalifax.com/",
       "status": 200,
-      "observedAt": "2026-09-04T13:17:58.862Z",
+      "observedAt": "2026-10-21T14:28:37.205Z",
       "keywordHits": [
         "menu",
-        "cocktail",
         "happy hour",
         "special",
         "specials",
-        "features",
         "offers",
         "patio",
         "brunch",
@@ -16876,14 +11531,12 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       ],
       "signalMatches": {
         "menu": [
-          "menu",
-          "cocktail"
+          "menu"
         ],
         "specials": [
           "happy hour",
           "special",
           "specials",
-          "features",
           "offers"
         ],
         "events": [],
@@ -16906,7 +11559,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       },
       "candidateLinks": [
         {
-          "text": "Our Menus",
+          "text": "OUR MENUS",
           "href": "https://www.seaportsocialhalifax.com/our-menus",
           "signalMatches": {
             "menu": [
@@ -16924,7 +11577,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
           }
         },
         {
-          "text": "Specials",
+          "text": "SPECIALS",
           "href": "https://www.seaportsocialhalifax.com/specials",
           "signalMatches": {
             "menu": [],
@@ -16943,8 +11596,8 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
           }
         },
         {
-          "text": "booking widget BOOK A TABLE",
-          "href": "https://www.opentable.com/r/seaport-social-reservations-halifax?restref=1120705&lang=en-US&ot_source=Restaurant%20website",
+          "text": "BOOK A TABLE",
+          "href": "https://www.opentable.com/r/seaport-social-reservations-halifax?restref=1120705&amp;lang=en-US&amp;ot_source=Restaurant%20website",
           "signalMatches": {
             "menu": [],
             "specials": [],
@@ -16963,7 +11616,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
           }
         },
         {
-          "text": "View the Full Menu",
+          "text": "View the Full Menu Our Menus",
           "href": "https://www.seaportsocialhalifax.com/our-menus",
           "signalMatches": {
             "menu": [
@@ -16998,438 +11651,6 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
             "reservations": [],
             "takeout": []
           }
-        },
-        {
-          "text": "About Happy Hour",
-          "href": "https://www.seaportsocialhalifax.com/our-menus",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [
-              "happy hour"
-            ],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        }
-      ],
-      "sourceKind": "official_website",
-      "reviewState": "cross-check"
-    },
-    {
-      "restaurantId": "osm-node-11699344564-second-cup",
-      "name": "Second Cup",
-      "website": "https://secondcup.com/en/location/bayers-lake/",
-      "status": 200,
-      "observedAt": "2026-09-04T13:17:58.945Z",
-      "keywordHits": [
-        "menu",
-        "special",
-        "specials",
-        "features",
-        "offers",
-        "breakfast",
-        "reserve",
-        "order online"
-      ],
-      "signalMatches": {
-        "menu": [
-          "menu"
-        ],
-        "specials": [
-          "special",
-          "specials",
-          "features",
-          "offers"
-        ],
-        "events": [],
-        "patio": [],
-        "openings": [],
-        "closures": [],
-        "moves": [],
-        "brunch": [
-          "breakfast"
-        ],
-        "reservations": [
-          "reserve"
-        ],
-        "takeout": [
-          "order online"
-        ]
-      },
-      "candidateLinks": [
-        {
-          "text": "MENU +",
-          "href": "https://secondcup.com/en/location/bayers-lake/#",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "BEVERAGES",
-          "href": "https://secondcup.com/en/menu/beverages/",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "LATTES &#038; ESPRESSOS",
-          "href": "https://secondcup.com/en/menu/beverages/lattes-and-espressos/",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "ON ICE",
-          "href": "https://secondcup.com/en/menu/beverages/on-ice/",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "BLENDED",
-          "href": "https://secondcup.com/en/menu/beverages/ice-mixes/",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "FLASH COLD BREW",
-          "href": "https://secondcup.com/en/menu/beverages/cold-infusions/",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "BREWED COFFEE &#038; TEA",
-          "href": "https://secondcup.com/en/menu/beverages/brewed-coffees-and-teas/",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "TEA LATTES",
-          "href": "https://secondcup.com/en/menu/beverages/latte-teas/",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "HOT CHOCOLATES",
-          "href": "https://secondcup.com/en/menu/beverages/hot-chocolates/",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "SMOOTHIES",
-          "href": "https://secondcup.com/en/menu/smoothies/",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "FOOD",
-          "href": "https://secondcup.com/en/menu/food/",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "BAKED GOODS",
-          "href": "https://secondcup.com/en/menu/food/baked-goods/",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "BREAKFAST",
-          "href": "https://secondcup.com/en/menu/food/breakfast/",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [
-              "breakfast"
-            ],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "SEASONAL MENU",
-          "href": "https://secondcup.com/en/menu/seasonal-specials/",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [
-              "special",
-              "specials"
-            ],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "MENU",
-          "href": "https://secondcup.com/en/menu/",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "SEASONAL SPECIALS",
-          "href": "https://secondcup.com/en/?page_id=2527",
-          "signalMatches": {
-            "menu": [],
-            "specials": [
-              "special",
-              "specials"
-            ],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "ORDER NOW",
-          "href": "https://order.secondcup.com/1416/rewardsandoffers",
-          "signalMatches": {
-            "menu": [],
-            "specials": [
-              "offers"
-            ],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Order Online",
-          "href": "https://secondcup.com/en/location/bayers-lake/#",
-          "signalMatches": {
-            "menu": [],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": [
-              "order online"
-            ]
-          }
-        },
-        {
-          "text": "Skip the Dishes",
-          "href": "https://www.skipthedishes.com/menu-group/08488360-7f9b-452d-9023-0921ce990ab4/draft",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Join our CLUB",
-          "href": "https://order.secondcup.com/1416/rewardsandoffers?actionId=NavigateToRewardsAndOffers",
-          "signalMatches": {
-            "menu": [],
-            "specials": [
-              "offers"
-            ],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
         }
       ],
       "sourceKind": "official_website",
@@ -17440,7 +11661,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "name": "Shiraz",
       "website": "https://www.shirazhalifax.ca/",
       "error": "fetch failed",
-      "observedAt": "2026-09-04T13:17:59.232Z",
+      "observedAt": "2026-10-21T14:28:37.233Z",
       "sourceKind": "official_website",
       "reviewState": "cross-check"
     },
@@ -17449,7 +11670,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "name": "Shuck Seafood + Raw Bar",
       "website": "https://www.rcr.ca/restaurants/shuck-seafood-raw-bar/",
       "status": 200,
-      "observedAt": "2026-09-04T13:17:53.748Z",
+      "observedAt": "2026-10-21T14:28:33.180Z",
       "keywordHits": [
         "menu",
         "cocktail",
@@ -17590,7 +11811,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "name": "Sicilian Pizza",
       "website": "http://www.sicilian.ca/",
       "status": 200,
-      "observedAt": "2026-09-04T13:17:59.276Z",
+      "observedAt": "2026-10-21T14:28:37.568Z",
       "keywordHits": [
         "menu",
         "special",
@@ -17902,7 +12123,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "name": "Sketti and Ball",
       "website": "https://skettiandballco.ca/",
       "status": 200,
-      "observedAt": "2026-09-04T13:17:59.342Z",
+      "observedAt": "2026-10-21T14:28:37.906Z",
       "keywordHits": [
         "menu",
         "drink menu",
@@ -17973,13 +12194,31 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
         },
         {
           "text": "Food",
-          "href": "https://skettiandballco.ca/wp-content/uploads/2026/07/Sketti-Food-Menu-June-2026-with-pizzas.pdf",
+          "href": "https://skettiandballco.ca/wp-content/uploads/2026/09/Sketti-Menus-website-full-Sept-11.pdf",
           "signalMatches": {
             "menu": [
               "menu"
             ],
             "specials": [],
             "events": [],
+            "patio": [],
+            "openings": [],
+            "closures": [],
+            "moves": [],
+            "brunch": [],
+            "reservations": [],
+            "takeout": []
+          }
+        },
+        {
+          "text": "🍝🍂🍁🍕🍷🦃 Open Sunday &#8211; 11:30am with pizza & Sangria",
+          "href": "https://www.instagram.com/p/DeDJtIqPVno/",
+          "signalMatches": {
+            "menu": [],
+            "specials": [],
+            "events": [
+              "dj"
+            ],
             "patio": [],
             "openings": [],
             "closures": [],
@@ -18014,36 +12253,18 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
     {
       "restaurantId": "osm-node-3789756557-smiling-goat",
       "name": "Smiling Goat",
-      "website": "https://www.avia-pilott.com/",
-      "status": 200,
-      "observedAt": "2026-09-04T13:17:59.369Z",
-      "keywordHits": [
-        "features"
-      ],
-      "signalMatches": {
-        "menu": [],
-        "specials": [
-          "features"
-        ],
-        "events": [],
-        "patio": [],
-        "openings": [],
-        "closures": [],
-        "moves": [],
-        "brunch": [],
-        "reservations": [],
-        "takeout": []
-      },
-      "candidateLinks": [],
+      "website": "https://www.smilinggoat.ca/locations/",
+      "error": "robots_disallow",
+      "observedAt": "2026-10-21T14:28:37.944Z",
       "sourceKind": "official_website",
-      "reviewState": "cross-check"
+      "reviewState": "restricted"
     },
     {
       "restaurantId": "osm-node-8089843368-smokehouse-brewery",
       "name": "Smokehouse Brewery",
       "website": "https://smokehousebrewery.ca/",
       "status": 200,
-      "observedAt": "2026-09-04T13:17:59.861Z",
+      "observedAt": "2026-10-21T14:28:38.233Z",
       "keywordHits": [
         "menu",
         "event",
@@ -18102,709 +12323,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "name": "Springhouse Market",
       "website": "https://www.eatspringhouse.com/",
       "status": 200,
-      "observedAt": "2026-09-04T13:17:59.862Z",
-      "keywordHits": [],
-      "signalMatches": {
-        "menu": [],
-        "specials": [],
-        "events": [],
-        "patio": [],
-        "openings": [],
-        "closures": [],
-        "moves": [],
-        "brunch": [],
-        "reservations": [],
-        "takeout": []
-      },
-      "candidateLinks": [],
-      "sourceKind": "official_website",
-      "reviewState": "cross-check"
-    },
-    {
-      "restaurantId": "osm-node-4550004778-st-louis-bar-and-grill",
-      "name": "St. Louis Bar & Grill",
-      "website": "https://locations.stlouiswings.com/ns-dartmouth-2201/",
-      "status": 200,
-      "observedAt": "2026-09-04T13:18:00.895Z",
-      "keywordHits": [
-        "menu",
-        "cocktail",
-        "happy hour",
-        "deal",
-        "offers",
-        "reserve",
-        "delivery"
-      ],
-      "signalMatches": {
-        "menu": [
-          "menu",
-          "cocktail"
-        ],
-        "specials": [
-          "happy hour",
-          "deal",
-          "offers"
-        ],
-        "events": [],
-        "patio": [],
-        "openings": [],
-        "closures": [],
-        "moves": [],
-        "brunch": [],
-        "reservations": [
-          "reserve"
-        ],
-        "takeout": [
-          "delivery"
-        ]
-      },
-      "candidateLinks": [
-        {
-          "text": "Menu",
-          "href": "https://www.stlouiswings.com/select-store/",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        }
-      ],
-      "sourceKind": "official_website",
-      "reviewState": "cross-check"
-    },
-    {
-      "restaurantId": "osm-node-1672879768-starbucks",
-      "name": "Starbucks",
-      "website": "https://www.starbucks.ca/store-locator/store/6149-147151/5554-kaye-street-5554-kaye-street-halifax-ns-b-3-k-1-y-5-ca",
-      "status": 200,
-      "observedAt": "2026-09-04T13:17:41.619Z",
-      "keywordHits": [],
-      "signalMatches": {
-        "menu": [],
-        "specials": [],
-        "events": [],
-        "patio": [],
-        "openings": [],
-        "closures": [],
-        "moves": [],
-        "brunch": [],
-        "reservations": [],
-        "takeout": []
-      },
-      "candidateLinks": [],
-      "sourceKind": "official_website",
-      "reviewState": "cross-check"
-    },
-    {
-      "restaurantId": "osm-node-2702731868-starbucks",
-      "name": "Starbucks",
-      "website": "https://www.starbucks.ca/store-locator/store/4086-140770/20-parkland-dr-20-parkland-dr-halifax-ns-b-3-s-1-p-1-ca",
-      "status": 200,
-      "observedAt": "2026-09-04T13:17:41.964Z",
-      "keywordHits": [],
-      "signalMatches": {
-        "menu": [],
-        "specials": [],
-        "events": [],
-        "patio": [],
-        "openings": [],
-        "closures": [],
-        "moves": [],
-        "brunch": [],
-        "reservations": [],
-        "takeout": []
-      },
-      "candidateLinks": [],
-      "sourceKind": "official_website",
-      "reviewState": "cross-check"
-    },
-    {
-      "restaurantId": "osm-node-4416579191-starbucks",
-      "name": "Starbucks",
-      "website": "https://www.starbucks.ca/store-locator?map=57.751076,-101.645508,4z",
-      "status": 200,
-      "observedAt": "2026-09-04T13:17:42.282Z",
-      "keywordHits": [],
-      "signalMatches": {
-        "menu": [],
-        "specials": [],
-        "events": [],
-        "patio": [],
-        "openings": [],
-        "closures": [],
-        "moves": [],
-        "brunch": [],
-        "reservations": [],
-        "takeout": []
-      },
-      "candidateLinks": [],
-      "sourceKind": "official_website",
-      "reviewState": "cross-check"
-    },
-    {
-      "restaurantId": "osm-node-4550005602-starbucks",
-      "name": "Starbucks",
-      "website": "https://www.starbucks.ca/",
-      "status": 200,
-      "observedAt": "2026-09-04T13:17:42.633Z",
-      "keywordHits": [
-        "menu",
-        "reserve",
-        "pickup",
-        "delivery"
-      ],
-      "signalMatches": {
-        "menu": [
-          "menu"
-        ],
-        "specials": [],
-        "events": [],
-        "patio": [],
-        "openings": [],
-        "closures": [],
-        "moves": [],
-        "brunch": [],
-        "reservations": [
-          "reserve"
-        ],
-        "takeout": [
-          "pickup",
-          "delivery"
-        ]
-      },
-      "candidateLinks": [
-        {
-          "text": "Menu",
-          "href": "https://www.starbucks.ca/menu",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Start an order",
-          "href": "https://www.starbucks.ca/menu",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "See the pumpkin menu",
-          "href": "https://www.starbucks.ca/menu/the-latest/pumpkin-picks",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Order now",
-          "href": "https://www.starbucks.ca/menu/featured/",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Order on the Web",
-          "href": "https://www.starbucks.ca/menu",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Delivery",
-          "href": "https://www.starbucks.ca/delivery/",
-          "signalMatches": {
-            "menu": [],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": [
-              "delivery"
-            ]
-          }
-        },
-        {
-          "text": "Order and Pickup Options",
-          "href": "https://www.starbucks.ca/ways-to-order/",
-          "signalMatches": {
-            "menu": [],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": [
-              "pickup"
-            ]
-          }
-        }
-      ],
-      "sourceKind": "official_website",
-      "reviewState": "cross-check"
-    },
-    {
-      "restaurantId": "osm-node-5150371021-starbucks",
-      "name": "Starbucks",
-      "website": "https://www.starbucks.ca/",
-      "status": 200,
-      "observedAt": "2026-09-04T13:17:42.835Z",
-      "keywordHits": [
-        "menu",
-        "reserve",
-        "pickup",
-        "delivery"
-      ],
-      "signalMatches": {
-        "menu": [
-          "menu"
-        ],
-        "specials": [],
-        "events": [],
-        "patio": [],
-        "openings": [],
-        "closures": [],
-        "moves": [],
-        "brunch": [],
-        "reservations": [
-          "reserve"
-        ],
-        "takeout": [
-          "pickup",
-          "delivery"
-        ]
-      },
-      "candidateLinks": [
-        {
-          "text": "Menu",
-          "href": "https://www.starbucks.ca/menu",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Start an order",
-          "href": "https://www.starbucks.ca/menu",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "See the pumpkin menu",
-          "href": "https://www.starbucks.ca/menu/the-latest/pumpkin-picks",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Order now",
-          "href": "https://www.starbucks.ca/menu/featured/",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Order on the Web",
-          "href": "https://www.starbucks.ca/menu",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Delivery",
-          "href": "https://www.starbucks.ca/delivery/",
-          "signalMatches": {
-            "menu": [],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": [
-              "delivery"
-            ]
-          }
-        },
-        {
-          "text": "Order and Pickup Options",
-          "href": "https://www.starbucks.ca/ways-to-order/",
-          "signalMatches": {
-            "menu": [],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": [
-              "pickup"
-            ]
-          }
-        }
-      ],
-      "sourceKind": "official_website",
-      "reviewState": "cross-check"
-    },
-    {
-      "restaurantId": "osm-node-9520194451-starbucks",
-      "name": "Starbucks",
-      "website": "https://www.starbucks.ca/store-locator/store/65775-299863/atlantic-superstore-portland-s-650-portland-street-dartmouth-ns-b-2-w-2-m-7-ca",
-      "status": 200,
-      "observedAt": "2026-09-04T13:17:43.100Z",
-      "keywordHits": [],
-      "signalMatches": {
-        "menu": [],
-        "specials": [],
-        "events": [],
-        "patio": [],
-        "openings": [],
-        "closures": [],
-        "moves": [],
-        "brunch": [],
-        "reservations": [],
-        "takeout": []
-      },
-      "candidateLinks": [],
-      "sourceKind": "official_website",
-      "reviewState": "cross-check"
-    },
-    {
-      "restaurantId": "osm-node-10052207437-starbucks",
-      "name": "Starbucks",
-      "website": "https://www.starbucks.ca/store-locator/store/12465-151926/86-chain-lake-drive-86-chain-lake-drive-halifax-ns-b-3-s-1-a-2-ca",
-      "status": 200,
-      "observedAt": "2026-09-04T13:17:43.370Z",
-      "keywordHits": [],
-      "signalMatches": {
-        "menu": [],
-        "specials": [],
-        "events": [],
-        "patio": [],
-        "openings": [],
-        "closures": [],
-        "moves": [],
-        "brunch": [],
-        "reservations": [],
-        "takeout": []
-      },
-      "candidateLinks": [],
-      "sourceKind": "official_website",
-      "reviewState": "cross-check"
-    },
-    {
-      "restaurantId": "osm-node-11526163876-starbucks",
-      "name": "Starbucks",
-      "website": "https://dal.mydininghub.ca/en/locations",
-      "status": 200,
-      "observedAt": "2026-09-04T13:17:38.758Z",
-      "keywordHits": [
-        "menu"
-      ],
-      "signalMatches": {
-        "menu": [
-          "menu"
-        ],
-        "specials": [],
-        "events": [],
-        "patio": [],
-        "openings": [],
-        "closures": [],
-        "moves": [],
-        "brunch": [],
-        "reservations": [],
-        "takeout": []
-      },
-      "candidateLinks": [
-        {
-          "text": "My Menu",
-          "href": "https://dal.mydininghub.ca/en/account?section=my-menu",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Locations & Menus",
-          "href": "https://dal.mydininghub.ca/en/locations",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        }
-      ],
-      "sourceKind": "official_website",
-      "reviewState": "cross-check"
-    },
-    {
-      "restaurantId": "osm-node-11699350869-starbucks",
-      "name": "Starbucks",
-      "website": "https://www.starbucks.ca/store-locator/store/65774-300165/atlantic-superstore-chain-lake-210-chain-lake-drive-halifax-ns-b-3-s-1-c-5-ca",
-      "status": 200,
-      "observedAt": "2026-09-04T13:17:43.617Z",
-      "keywordHits": [],
-      "signalMatches": {
-        "menu": [],
-        "specials": [],
-        "events": [],
-        "patio": [],
-        "openings": [],
-        "closures": [],
-        "moves": [],
-        "brunch": [],
-        "reservations": [],
-        "takeout": []
-      },
-      "candidateLinks": [],
-      "sourceKind": "official_website",
-      "reviewState": "cross-check"
-    },
-    {
-      "restaurantId": "osm-node-12139021295-starbucks",
-      "name": "Starbucks",
-      "website": "https://www.starbucks.ca/store-locator/store/79117-307543/318-herring-cove-rd-318-herring-cove-rd-halifax-ns-b-3-r-1-v-4-ca",
-      "status": 200,
-      "observedAt": "2026-09-04T13:17:43.835Z",
-      "keywordHits": [],
-      "signalMatches": {
-        "menu": [],
-        "specials": [],
-        "events": [],
-        "patio": [],
-        "openings": [],
-        "closures": [],
-        "moves": [],
-        "brunch": [],
-        "reservations": [],
-        "takeout": []
-      },
-      "candidateLinks": [],
-      "sourceKind": "official_website",
-      "reviewState": "cross-check"
-    },
-    {
-      "restaurantId": "osm-node-12139024601-starbucks",
-      "name": "Starbucks",
-      "website": "https://www.starbucks.ca/store-locator/store/66230-300523/sobeys-clayton-park-644-287-lacewood-drive-halifax-ns-b-3-m-3-y-7-ca",
-      "status": 200,
-      "observedAt": "2026-09-04T13:17:44.149Z",
-      "keywordHits": [],
-      "signalMatches": {
-        "menu": [],
-        "specials": [],
-        "events": [],
-        "patio": [],
-        "openings": [],
-        "closures": [],
-        "moves": [],
-        "brunch": [],
-        "reservations": [],
-        "takeout": []
-      },
-      "candidateLinks": [],
-      "sourceKind": "official_website",
-      "reviewState": "cross-check"
-    },
-    {
-      "restaurantId": "osm-node-12139024637-starbucks",
-      "name": "Starbucks",
-      "website": "https://www.starbucks.ca/store-locator/store/61586-294956/atlantic-superstore-joseph-how-3601-joseph-howe-drive-halifax-ns-b-3-l-4-h-8-ca",
-      "status": 200,
-      "observedAt": "2026-09-04T13:17:44.377Z",
-      "keywordHits": [],
-      "signalMatches": {
-        "menu": [],
-        "specials": [],
-        "events": [],
-        "patio": [],
-        "openings": [],
-        "closures": [],
-        "moves": [],
-        "brunch": [],
-        "reservations": [],
-        "takeout": []
-      },
-      "candidateLinks": [],
-      "sourceKind": "official_website",
-      "reviewState": "cross-check"
-    },
-    {
-      "restaurantId": "osm-node-12139024647-starbucks",
-      "name": "Starbucks",
-      "website": "https://www.starbucks.ca/store-locator/store/23087-222344/675-windmill-road-11-cuddy-lane-dartmouth-ns-b-3-b-0-l-1-ca",
-      "status": 200,
-      "observedAt": "2026-09-04T13:17:44.602Z",
-      "keywordHits": [],
-      "signalMatches": {
-        "menu": [],
-        "specials": [],
-        "events": [],
-        "patio": [],
-        "openings": [],
-        "closures": [],
-        "moves": [],
-        "brunch": [],
-        "reservations": [],
-        "takeout": []
-      },
-      "candidateLinks": [],
-      "sourceKind": "official_website",
-      "reviewState": "cross-check"
-    },
-    {
-      "restaurantId": "osm-way-1268232345-starbucks",
-      "name": "Starbucks",
-      "website": "https://www.starbucks.ca/store-locator/store/20568-206464/halifax-shopping-centre-leve-7001-mumford-road-halifax-ns-b-3-l-4-t-8-ca",
-      "status": 200,
-      "observedAt": "2026-09-04T13:17:44.808Z",
+      "observedAt": "2026-10-21T14:28:38.312Z",
       "keywordHits": [],
       "signalMatches": {
         "menu": [],
@@ -18827,7 +12346,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "name": "Station 1 Lebanese Kitchen",
       "website": "https://station1lebanesekitchen.com/",
       "status": 200,
-      "observedAt": "2026-09-04T13:18:00.960Z",
+      "observedAt": "2026-10-21T14:28:38.475Z",
       "keywordHits": [
         "menu",
         "special"
@@ -18876,7 +12395,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "name": "Stillwell",
       "website": "https://www.barstillwell.com/",
       "status": 200,
-      "observedAt": "2026-09-04T13:18:01.246Z",
+      "observedAt": "2026-10-21T14:28:38.606Z",
       "keywordHits": [
         "offers",
         "promo",
@@ -18970,7 +12489,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "name": "Stone Pizza",
       "website": "https://stonepizza.ca/",
       "status": 200,
-      "observedAt": "2026-09-04T13:18:01.811Z",
+      "observedAt": "2026-10-21T14:28:38.627Z",
       "keywordHits": [
         "menu",
         "event",
@@ -19044,7 +12563,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "name": "Studio East Food+Drink",
       "website": "https://www.studioeastfood.ca/",
       "status": 200,
-      "observedAt": "2026-09-04T13:18:02.078Z",
+      "observedAt": "2026-10-21T14:28:39.217Z",
       "keywordHits": [
         "menu",
         "cocktail",
@@ -19365,965 +12884,11 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "reviewState": "cross-check"
     },
     {
-      "restaurantId": "osm-node-1202688542-subway",
-      "name": "Subway",
-      "website": "https://www.subway.com/en-ca",
-      "status": 200,
-      "observedAt": "2026-09-04T13:18:02.310Z",
-      "keywordHits": [
-        "menu",
-        "deal",
-        "promo"
-      ],
-      "signalMatches": {
-        "menu": [
-          "menu"
-        ],
-        "specials": [
-          "deal",
-          "promo"
-        ],
-        "events": [],
-        "patio": [],
-        "openings": [],
-        "closures": [],
-        "moves": [],
-        "brunch": [],
-        "reservations": [],
-        "takeout": []
-      },
-      "candidateLinks": [
-        {
-          "text": "https://www.subway.com/en-ca/locator?intcmp=HomepageLoggedOut:Owned:0:0:ExistingProduct_Sandwich_Offer_BOGOs_Buy1footlong,get150off:0:0:0:order-now:hero-carousel:nat-ca:0&#x26;segment_code=0&#x26;promoPLU=9",
-          "href": "https://www.subway.com/en-ca/locator?intcmp=HomepageLoggedOut:Owned:0:0:ExistingProduct_Sandwich_Offer_BOGOs_Buy1footlong,get150off:0:0:0:order-now:hero-carousel:nat-ca:0&#x26;segment_code=0&#x26;promoPLU=9",
-          "signalMatches": {
-            "menu": [],
-            "specials": [
-              "promo"
-            ],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Start Order",
-          "href": "https://www.subway.com/en-ca/menunutrition/menu",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Terms and Conditions Apply",
-          "href": "https://www.subway.com/content/subway/content-pages/ca/en_ca/modals/terms-and-conditions-promo-card-1.html",
-          "signalMatches": {
-            "menu": [],
-            "specials": [
-              "promo"
-            ],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "https://www.subway.com/en-ca/locator?intcmp=HomepageLoggedOut:Owned:0:0:ExistingProduct_Sandwich_Offer_FreeItem_Free6\"subwhenyoubuyaFootlongsubandadrink:0:0:0:order-now:promotion-cards:nat-ca:0&#x26;segment_code=0&#x26;promoPLU=931030185&#x26;promoID=29738&#x26;promoCode=FRE",
-          "href": "https://www.subway.com/en-ca/locator?intcmp=HomepageLoggedOut:Owned:0:0:ExistingProduct_Sandwich_Offer_FreeItem_Free6%22subwhenyoubuyaFootlongsubandadrink:0:0:0:order-now:promotion-cards:nat-ca:0&#x26;segment_code=0&#x26;promoPLU=931030185&#x26;promoID=29738&#x26;promoCode=FRE",
-          "signalMatches": {
-            "menu": [],
-            "specials": [
-              "promo"
-            ],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Terms and Conditions Apply",
-          "href": "https://www.subway.com/content/subway/content-pages/ca/en_ca/modals/terms-and-conditions-promo-card-2.html",
-          "signalMatches": {
-            "menu": [],
-            "specials": [
-              "promo"
-            ],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "https://www.buyatab.com/custom/subway/?intcmp=Rewards:Owned:0:0:OtherOffering_Giftcard_None_None_FALLGIFTCARD:0:0:0:order-now:promotion-cards:nat-ca:0&#x26;segment_code=0&#x26;promoID=29136",
-          "href": "https://www.buyatab.com/custom/subway/?intcmp=Rewards:Owned:0:0:OtherOffering_Giftcard_None_None_FALLGIFTCARD:0:0:0:order-now:promotion-cards:nat-ca:0&#x26;segment_code=0&#x26;promoID=29136",
-          "signalMatches": {
-            "menu": [],
-            "specials": [
-              "promo"
-            ],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        }
-      ],
-      "sourceKind": "official_website",
-      "reviewState": "cross-check"
-    },
-    {
-      "restaurantId": "osm-node-3800067659-subway",
-      "name": "Subway",
-      "website": "https://www.subway.com/en-ca",
-      "status": 200,
-      "observedAt": "2026-09-04T13:18:02.727Z",
-      "keywordHits": [
-        "menu",
-        "deal",
-        "promo"
-      ],
-      "signalMatches": {
-        "menu": [
-          "menu"
-        ],
-        "specials": [
-          "deal",
-          "promo"
-        ],
-        "events": [],
-        "patio": [],
-        "openings": [],
-        "closures": [],
-        "moves": [],
-        "brunch": [],
-        "reservations": [],
-        "takeout": []
-      },
-      "candidateLinks": [
-        {
-          "text": "https://www.subway.com/en-ca/locator?intcmp=HomepageLoggedOut:Owned:0:0:ExistingProduct_Sandwich_Offer_BOGOs_Buy1footlong,get150off:0:0:0:order-now:hero-carousel:nat-ca:0&#x26;segment_code=0&#x26;promoPLU=9",
-          "href": "https://www.subway.com/en-ca/locator?intcmp=HomepageLoggedOut:Owned:0:0:ExistingProduct_Sandwich_Offer_BOGOs_Buy1footlong,get150off:0:0:0:order-now:hero-carousel:nat-ca:0&#x26;segment_code=0&#x26;promoPLU=9",
-          "signalMatches": {
-            "menu": [],
-            "specials": [
-              "promo"
-            ],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Start Order",
-          "href": "https://www.subway.com/en-ca/menunutrition/menu",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Terms and Conditions Apply",
-          "href": "https://www.subway.com/content/subway/content-pages/ca/en_ca/modals/terms-and-conditions-promo-card-1.html",
-          "signalMatches": {
-            "menu": [],
-            "specials": [
-              "promo"
-            ],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "https://www.subway.com/en-ca/locator?intcmp=HomepageLoggedOut:Owned:0:0:ExistingProduct_Sandwich_Offer_FreeItem_Free6\"subwhenyoubuyaFootlongsubandadrink:0:0:0:order-now:promotion-cards:nat-ca:0&#x26;segment_code=0&#x26;promoPLU=931030185&#x26;promoID=29738&#x26;promoCode=FRE",
-          "href": "https://www.subway.com/en-ca/locator?intcmp=HomepageLoggedOut:Owned:0:0:ExistingProduct_Sandwich_Offer_FreeItem_Free6%22subwhenyoubuyaFootlongsubandadrink:0:0:0:order-now:promotion-cards:nat-ca:0&#x26;segment_code=0&#x26;promoPLU=931030185&#x26;promoID=29738&#x26;promoCode=FRE",
-          "signalMatches": {
-            "menu": [],
-            "specials": [
-              "promo"
-            ],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Terms and Conditions Apply",
-          "href": "https://www.subway.com/content/subway/content-pages/ca/en_ca/modals/terms-and-conditions-promo-card-2.html",
-          "signalMatches": {
-            "menu": [],
-            "specials": [
-              "promo"
-            ],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "https://www.buyatab.com/custom/subway/?intcmp=Rewards:Owned:0:0:OtherOffering_Giftcard_None_None_FALLGIFTCARD:0:0:0:order-now:promotion-cards:nat-ca:0&#x26;segment_code=0&#x26;promoID=29136",
-          "href": "https://www.buyatab.com/custom/subway/?intcmp=Rewards:Owned:0:0:OtherOffering_Giftcard_None_None_FALLGIFTCARD:0:0:0:order-now:promotion-cards:nat-ca:0&#x26;segment_code=0&#x26;promoID=29136",
-          "signalMatches": {
-            "menu": [],
-            "specials": [
-              "promo"
-            ],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        }
-      ],
-      "sourceKind": "official_website",
-      "reviewState": "cross-check"
-    },
-    {
-      "restaurantId": "osm-node-4990340206-subway",
-      "name": "Subway",
-      "website": "https://restaurants.subway.com/canada/ns/dartmouth/100-main-st",
-      "status": 200,
-      "observedAt": "2026-09-04T13:18:02.378Z",
-      "keywordHits": [
-        "menu",
-        "deal",
-        "breakfast",
-        "reserve",
-        "pickup",
-        "pick up",
-        "delivery"
-      ],
-      "signalMatches": {
-        "menu": [
-          "menu"
-        ],
-        "specials": [
-          "deal"
-        ],
-        "events": [],
-        "patio": [],
-        "openings": [],
-        "closures": [],
-        "moves": [],
-        "brunch": [
-          "breakfast"
-        ],
-        "reservations": [
-          "reserve"
-        ],
-        "takeout": [
-          "pickup",
-          "pick up",
-          "delivery"
-        ]
-      },
-      "candidateLinks": [
-        {
-          "text": "Rewards & Deals",
-          "href": "https://www.subway.com/en-CA/MyWayRewards",
-          "signalMatches": {
-            "menu": [],
-            "specials": [
-              "deal"
-            ],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Order Pick Up",
-          "href": "https://subway.com/en-ca/restaurant/13072-0/menu?intcmp=yext-local:owned:order:Order%20Pickup:fwh-no-value-w2-2020:0:button:0:orderpickup:hu:local-ca-en-v1&segment_code=0",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": [
-              "pickup",
-              "pick up"
-            ]
-          }
-        },
-        {
-          "text": "Order Delivery",
-          "href": "https://www.subway.com/en-ca/locator?mode=delivery?intcmp=yext-local:owned:order:Order%20Delivery:fwh-no-value-w2-2020:0:button:0:order-delivery:hu:local-ca-en-v1&segment_code=0",
-          "signalMatches": {
-            "menu": [],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": [
-              "delivery"
-            ]
-          }
-        },
-        {
-          "text": "Order Pick Up",
-          "href": "https://subway.com/en-ca/restaurant/13072-0/menu",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": [
-              "pick up"
-            ]
-          }
-        },
-        {
-          "text": "Order Delivery",
-          "href": "https://www.subway.com/en-ca/locator?mode=delivery",
-          "signalMatches": {
-            "menu": [],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": [
-              "delivery"
-            ]
-          }
-        },
-        {
-          "text": "Breakfast",
-          "href": "https://www.subway.com/en-CA/MenuNutrition/Menu/Breakfast?intcmp=yext-local:owned:0:Breakfast:fwh-no-value-w2-2020:0:link:0:breakfast:c1u2:local-ca-en-v1&segment_code=0",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [
-              "breakfast"
-            ],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Subway® Gift Cards",
-          "href": "https://www.subway.com/en-CA/SubwayCard?intcmp=yext-local:owned:newsAndOffers:Buy%20Now:fwh-no-value-w2-2020:0:button:0:buy-now:c2u1:local-ca-en-v1&amp;segment_code=0",
-          "signalMatches": {
-            "menu": [],
-            "specials": [
-              "offers"
-            ],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Buy Now",
-          "href": "https://www.subway.com/en-CA/SubwayCard?intcmp=yext-local:owned:newsAndOffers:Buy%20Now:fwh-no-value-w2-2020:0:button:0:buy-now:c2u1:local-ca-en-v1&amp;segment_code=0",
-          "signalMatches": {
-            "menu": [],
-            "specials": [
-              "offers"
-            ],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "See Catering Menu",
-          "href": "https://www.subway.com/en-ca/Catering/CateringProducts?intcmp=yext-local:owned:0:See%20Catering%20Menu:fwh-no-value-w2-2020:0:button:0:see-catering-menu:ter:local-ca-en-v1&segment_code=0",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "View National Menu",
-          "href": "https://www.subway.com/en-CA/MenuNutrition/Menu",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Nutrition",
-          "href": "https://www.subway.com/en-CA/MenuNutrition/Nutrition",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        }
-      ],
-      "sourceKind": "official_website",
-      "reviewState": "cross-check"
-    },
-    {
-      "restaurantId": "osm-node-8066235496-subway",
-      "name": "Subway",
-      "website": "https://www.subway.com/en-ca",
-      "status": 200,
-      "observedAt": "2026-09-04T13:18:02.955Z",
-      "keywordHits": [
-        "menu",
-        "deal",
-        "promo"
-      ],
-      "signalMatches": {
-        "menu": [
-          "menu"
-        ],
-        "specials": [
-          "deal",
-          "promo"
-        ],
-        "events": [],
-        "patio": [],
-        "openings": [],
-        "closures": [],
-        "moves": [],
-        "brunch": [],
-        "reservations": [],
-        "takeout": []
-      },
-      "candidateLinks": [
-        {
-          "text": "https://www.subway.com/en-ca/locator?intcmp=HomepageLoggedOut:Owned:0:0:ExistingProduct_Sandwich_Offer_BOGOs_Buy1footlong,get150off:0:0:0:order-now:hero-carousel:nat-ca:0&#x26;segment_code=0&#x26;promoPLU=9",
-          "href": "https://www.subway.com/en-ca/locator?intcmp=HomepageLoggedOut:Owned:0:0:ExistingProduct_Sandwich_Offer_BOGOs_Buy1footlong,get150off:0:0:0:order-now:hero-carousel:nat-ca:0&#x26;segment_code=0&#x26;promoPLU=9",
-          "signalMatches": {
-            "menu": [],
-            "specials": [
-              "promo"
-            ],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Start Order",
-          "href": "https://www.subway.com/en-ca/menunutrition/menu",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Terms and Conditions Apply",
-          "href": "https://www.subway.com/content/subway/content-pages/ca/en_ca/modals/terms-and-conditions-promo-card-1.html",
-          "signalMatches": {
-            "menu": [],
-            "specials": [
-              "promo"
-            ],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "https://www.subway.com/en-ca/locator?intcmp=HomepageLoggedOut:Owned:0:0:ExistingProduct_Sandwich_Offer_FreeItem_Free6\"subwhenyoubuyaFootlongsubandadrink:0:0:0:order-now:promotion-cards:nat-ca:0&#x26;segment_code=0&#x26;promoPLU=931030185&#x26;promoID=29738&#x26;promoCode=FRE",
-          "href": "https://www.subway.com/en-ca/locator?intcmp=HomepageLoggedOut:Owned:0:0:ExistingProduct_Sandwich_Offer_FreeItem_Free6%22subwhenyoubuyaFootlongsubandadrink:0:0:0:order-now:promotion-cards:nat-ca:0&#x26;segment_code=0&#x26;promoPLU=931030185&#x26;promoID=29738&#x26;promoCode=FRE",
-          "signalMatches": {
-            "menu": [],
-            "specials": [
-              "promo"
-            ],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Terms and Conditions Apply",
-          "href": "https://www.subway.com/content/subway/content-pages/ca/en_ca/modals/terms-and-conditions-promo-card-2.html",
-          "signalMatches": {
-            "menu": [],
-            "specials": [
-              "promo"
-            ],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "https://www.buyatab.com/custom/subway/?intcmp=Rewards:Owned:0:0:OtherOffering_Giftcard_None_None_FALLGIFTCARD:0:0:0:order-now:promotion-cards:nat-ca:0&#x26;segment_code=0&#x26;promoID=29136",
-          "href": "https://www.buyatab.com/custom/subway/?intcmp=Rewards:Owned:0:0:OtherOffering_Giftcard_None_None_FALLGIFTCARD:0:0:0:order-now:promotion-cards:nat-ca:0&#x26;segment_code=0&#x26;promoID=29136",
-          "signalMatches": {
-            "menu": [],
-            "specials": [
-              "promo"
-            ],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        }
-      ],
-      "sourceKind": "official_website",
-      "reviewState": "cross-check"
-    },
-    {
-      "restaurantId": "osm-node-9301607067-subway",
-      "name": "Subway",
-      "website": "https://www.subway.com/en-ca",
-      "status": 200,
-      "observedAt": "2026-09-04T13:18:03.159Z",
-      "keywordHits": [
-        "menu",
-        "deal",
-        "promo"
-      ],
-      "signalMatches": {
-        "menu": [
-          "menu"
-        ],
-        "specials": [
-          "deal",
-          "promo"
-        ],
-        "events": [],
-        "patio": [],
-        "openings": [],
-        "closures": [],
-        "moves": [],
-        "brunch": [],
-        "reservations": [],
-        "takeout": []
-      },
-      "candidateLinks": [
-        {
-          "text": "https://www.subway.com/en-ca/locator?intcmp=HomepageLoggedOut:Owned:0:0:ExistingProduct_Sandwich_Offer_BOGOs_Buy1footlong,get150off:0:0:0:order-now:hero-carousel:nat-ca:0&#x26;segment_code=0&#x26;promoPLU=9",
-          "href": "https://www.subway.com/en-ca/locator?intcmp=HomepageLoggedOut:Owned:0:0:ExistingProduct_Sandwich_Offer_BOGOs_Buy1footlong,get150off:0:0:0:order-now:hero-carousel:nat-ca:0&#x26;segment_code=0&#x26;promoPLU=9",
-          "signalMatches": {
-            "menu": [],
-            "specials": [
-              "promo"
-            ],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Start Order",
-          "href": "https://www.subway.com/en-ca/menunutrition/menu",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Terms and Conditions Apply",
-          "href": "https://www.subway.com/content/subway/content-pages/ca/en_ca/modals/terms-and-conditions-promo-card-1.html",
-          "signalMatches": {
-            "menu": [],
-            "specials": [
-              "promo"
-            ],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "https://www.subway.com/en-ca/locator?intcmp=HomepageLoggedOut:Owned:0:0:ExistingProduct_Sandwich_Offer_FreeItem_Free6\"subwhenyoubuyaFootlongsubandadrink:0:0:0:order-now:promotion-cards:nat-ca:0&#x26;segment_code=0&#x26;promoPLU=931030185&#x26;promoID=29738&#x26;promoCode=FRE",
-          "href": "https://www.subway.com/en-ca/locator?intcmp=HomepageLoggedOut:Owned:0:0:ExistingProduct_Sandwich_Offer_FreeItem_Free6%22subwhenyoubuyaFootlongsubandadrink:0:0:0:order-now:promotion-cards:nat-ca:0&#x26;segment_code=0&#x26;promoPLU=931030185&#x26;promoID=29738&#x26;promoCode=FRE",
-          "signalMatches": {
-            "menu": [],
-            "specials": [
-              "promo"
-            ],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Terms and Conditions Apply",
-          "href": "https://www.subway.com/content/subway/content-pages/ca/en_ca/modals/terms-and-conditions-promo-card-2.html",
-          "signalMatches": {
-            "menu": [],
-            "specials": [
-              "promo"
-            ],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "https://www.buyatab.com/custom/subway/?intcmp=Rewards:Owned:0:0:OtherOffering_Giftcard_None_None_FALLGIFTCARD:0:0:0:order-now:promotion-cards:nat-ca:0&#x26;segment_code=0&#x26;promoID=29136",
-          "href": "https://www.buyatab.com/custom/subway/?intcmp=Rewards:Owned:0:0:OtherOffering_Giftcard_None_None_FALLGIFTCARD:0:0:0:order-now:promotion-cards:nat-ca:0&#x26;segment_code=0&#x26;promoID=29136",
-          "signalMatches": {
-            "menu": [],
-            "specials": [
-              "promo"
-            ],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        }
-      ],
-      "sourceKind": "official_website",
-      "reviewState": "cross-check"
-    },
-    {
-      "restaurantId": "osm-node-11577869163-subway",
-      "name": "Subway",
-      "website": "https://www.subway.com/en-ca",
-      "status": 200,
-      "observedAt": "2026-09-04T13:18:03.371Z",
-      "keywordHits": [
-        "menu",
-        "deal",
-        "promo"
-      ],
-      "signalMatches": {
-        "menu": [
-          "menu"
-        ],
-        "specials": [
-          "deal",
-          "promo"
-        ],
-        "events": [],
-        "patio": [],
-        "openings": [],
-        "closures": [],
-        "moves": [],
-        "brunch": [],
-        "reservations": [],
-        "takeout": []
-      },
-      "candidateLinks": [
-        {
-          "text": "https://www.subway.com/en-ca/locator?intcmp=HomepageLoggedOut:Owned:0:0:ExistingProduct_Sandwich_Offer_BOGOs_Buy1footlong,get150off:0:0:0:order-now:hero-carousel:nat-ca:0&#x26;segment_code=0&#x26;promoPLU=9",
-          "href": "https://www.subway.com/en-ca/locator?intcmp=HomepageLoggedOut:Owned:0:0:ExistingProduct_Sandwich_Offer_BOGOs_Buy1footlong,get150off:0:0:0:order-now:hero-carousel:nat-ca:0&#x26;segment_code=0&#x26;promoPLU=9",
-          "signalMatches": {
-            "menu": [],
-            "specials": [
-              "promo"
-            ],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Start Order",
-          "href": "https://www.subway.com/en-ca/menunutrition/menu",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Terms and Conditions Apply",
-          "href": "https://www.subway.com/content/subway/content-pages/ca/en_ca/modals/terms-and-conditions-promo-card-1.html",
-          "signalMatches": {
-            "menu": [],
-            "specials": [
-              "promo"
-            ],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "https://www.subway.com/en-ca/locator?intcmp=HomepageLoggedOut:Owned:0:0:ExistingProduct_Sandwich_Offer_FreeItem_Free6\"subwhenyoubuyaFootlongsubandadrink:0:0:0:order-now:promotion-cards:nat-ca:0&#x26;segment_code=0&#x26;promoPLU=931030185&#x26;promoID=29738&#x26;promoCode=FRE",
-          "href": "https://www.subway.com/en-ca/locator?intcmp=HomepageLoggedOut:Owned:0:0:ExistingProduct_Sandwich_Offer_FreeItem_Free6%22subwhenyoubuyaFootlongsubandadrink:0:0:0:order-now:promotion-cards:nat-ca:0&#x26;segment_code=0&#x26;promoPLU=931030185&#x26;promoID=29738&#x26;promoCode=FRE",
-          "signalMatches": {
-            "menu": [],
-            "specials": [
-              "promo"
-            ],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Terms and Conditions Apply",
-          "href": "https://www.subway.com/content/subway/content-pages/ca/en_ca/modals/terms-and-conditions-promo-card-2.html",
-          "signalMatches": {
-            "menu": [],
-            "specials": [
-              "promo"
-            ],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "https://www.buyatab.com/custom/subway/?intcmp=Rewards:Owned:0:0:OtherOffering_Giftcard_None_None_FALLGIFTCARD:0:0:0:order-now:promotion-cards:nat-ca:0&#x26;segment_code=0&#x26;promoID=29136",
-          "href": "https://www.buyatab.com/custom/subway/?intcmp=Rewards:Owned:0:0:OtherOffering_Giftcard_None_None_FALLGIFTCARD:0:0:0:order-now:promotion-cards:nat-ca:0&#x26;segment_code=0&#x26;promoID=29136",
-          "signalMatches": {
-            "menu": [],
-            "specials": [
-              "promo"
-            ],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        }
-      ],
-      "sourceKind": "official_website",
-      "reviewState": "cross-check"
-    },
-    {
       "restaurantId": "osm-node-5003519268-sully-and-porter",
       "name": "Sully & Porter",
       "website": "https://sullyandporter.com/",
       "status": 200,
-      "observedAt": "2026-09-04T13:18:02.460Z",
+      "observedAt": "2026-10-21T14:28:39.554Z",
       "keywordHits": [
         "menu",
         "special",
@@ -20400,7 +12965,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "name": "Summit Cafe",
       "website": "https://www.thesummitcafe.ca/",
       "status": 200,
-      "observedAt": "2026-09-04T13:18:02.756Z",
+      "observedAt": "2026-10-21T14:28:39.557Z",
       "keywordHits": [
         "menu",
         "special",
@@ -20457,60 +13022,9 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
     {
       "restaurantId": "osm-node-11552069056-sushi-cove",
       "name": "Sushi Cove",
-      "website": "https://sushisquare.ca/",
-      "status": 200,
-      "observedAt": "2026-09-04T13:18:02.794Z",
-      "keywordHits": [
-        "menu",
-        "special",
-        "moving to",
-        "reservation",
-        "reserve",
-        "takeout"
-      ],
-      "signalMatches": {
-        "menu": [
-          "menu"
-        ],
-        "specials": [
-          "special"
-        ],
-        "events": [],
-        "patio": [],
-        "openings": [],
-        "closures": [],
-        "moves": [
-          "moving to"
-        ],
-        "brunch": [],
-        "reservations": [
-          "reservation",
-          "reserve"
-        ],
-        "takeout": [
-          "takeout"
-        ]
-      },
-      "candidateLinks": [
-        {
-          "text": "Menu",
-          "href": "https://sushisquare.ca/menu/",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        }
-      ],
+      "website": "https://sushicovehalifax.com/",
+      "error": "quarantined_cross_entity_redirect",
+      "observedAt": "2026-10-21T14:28:39.565Z",
       "sourceKind": "official_website",
       "reviewState": "cross-check"
     },
@@ -20519,7 +13033,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "name": "Sushi Jet",
       "website": "https://sushi-jet.com/location/dartmouth",
       "status": 404,
-      "observedAt": "2026-09-04T13:18:02.982Z",
+      "observedAt": "2026-10-21T14:28:39.583Z",
       "keywordHits": [],
       "signalMatches": {
         "menu": [],
@@ -20542,7 +13056,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "name": "Sushi Jet",
       "website": "https://sushi-jet.com/location/Halifax",
       "status": 404,
-      "observedAt": "2026-09-04T13:18:03.440Z",
+      "observedAt": "2026-10-21T14:28:40.434Z",
       "keywordHits": [],
       "signalMatches": {
         "menu": [],
@@ -20565,7 +13079,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "name": "Sushi Nami Royale",
       "website": "https://sushinami.ca/",
       "status": 200,
-      "observedAt": "2026-09-04T13:18:03.575Z",
+      "observedAt": "2026-10-21T14:28:40.354Z",
       "keywordHits": [
         "menu",
         "special",
@@ -20722,7 +13236,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "name": "Sushi Nami Royale",
       "website": "https://sushinami.ca/",
       "status": 200,
-      "observedAt": "2026-09-04T13:18:04.775Z",
+      "observedAt": "2026-10-21T14:28:41.816Z",
       "keywordHits": [
         "menu",
         "special",
@@ -20879,11 +13393,13 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "name": "Sushi Shige",
       "website": "https://www.shige.ca/",
       "status": 200,
-      "observedAt": "2026-09-04T13:18:03.644Z",
+      "observedAt": "2026-10-21T14:28:40.370Z",
       "keywordHits": [
         "menu",
         "special",
         "deal",
+        "decision to close",
+        "will be closed",
         "order online",
         "delivery"
       ],
@@ -20898,7 +13414,10 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
         "events": [],
         "patio": [],
         "openings": [],
-        "closures": [],
+        "closures": [
+          "decision to close",
+          "will be closed"
+        ],
         "moves": [],
         "brunch": [],
         "reservations": [],
@@ -20990,7 +13509,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "name": "Suzuki Japanese Restaurant",
       "website": "http://www.suzukirestaurant.ca/",
       "error": "fetch failed",
-      "observedAt": "2026-09-04T13:18:03.664Z",
+      "observedAt": "2026-10-21T14:28:40.466Z",
       "sourceKind": "official_website",
       "reviewState": "cross-check"
     },
@@ -20998,21 +13517,12 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "restaurantId": "osm-node-11612206582-swaad-sagaa-indian-cuisine-incorporated",
       "name": "Swaad Sagaa Indian Cuisine Incorporated",
       "website": "https://www.swaadsagaa.com/",
-      "status": 200,
-      "observedAt": "2026-09-04T13:18:03.823Z",
-      "keywordHits": [
-        "menu",
-        "offers",
-        "takeout",
-        "pick up"
-      ],
+      "status": 503,
+      "observedAt": "2026-10-21T14:28:40.567Z",
+      "keywordHits": [],
       "signalMatches": {
-        "menu": [
-          "menu"
-        ],
-        "specials": [
-          "offers"
-        ],
+        "menu": [],
+        "specials": [],
         "events": [],
         "patio": [],
         "openings": [],
@@ -21020,60 +13530,22 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
         "moves": [],
         "brunch": [],
         "reservations": [],
-        "takeout": [
-          "takeout",
-          "pick up"
-        ]
+        "takeout": []
       },
-      "candidateLinks": [
-        {
-          "text": "Offers & Updates",
-          "href": "https://whatsapp.com/channel/0029VaE7oCOJ3juwQFbnhR1C",
-          "signalMatches": {
-            "menu": [],
-            "specials": [
-              "offers"
-            ],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Call to place your order (Pick up)",
-          "href": "https://www.swaadsagaa.com/tel&#x3A;9023996229",
-          "signalMatches": {
-            "menu": [],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": [
-              "pick up"
-            ]
-          }
-        }
-      ],
+      "candidateLinks": [],
       "sourceKind": "official_website",
-      "reviewState": "cross-check"
+      "reviewState": "needs-review"
     },
     {
       "restaurantId": "osm-node-5018125658-sweet-and-sassy",
       "name": "Sweet & Sassy",
       "website": "https://sweetandsassy.ca/",
       "status": 200,
-      "observedAt": "2026-09-04T13:18:03.995Z",
+      "observedAt": "2026-10-21T14:28:40.605Z",
       "keywordHits": [
         "menu",
+        "event",
+        "events",
         "ticket",
         "breakfast",
         "reservation",
@@ -21085,6 +13557,8 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
         ],
         "specials": [],
         "events": [
+          "event",
+          "events",
           "ticket"
         ],
         "patio": [],
@@ -21140,6 +13614,25 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
           }
         },
         {
+          "text": "Private Events",
+          "href": "https://sweetandsassy.ca/private-events",
+          "signalMatches": {
+            "menu": [],
+            "specials": [],
+            "events": [
+              "event",
+              "events"
+            ],
+            "patio": [],
+            "openings": [],
+            "closures": [],
+            "moves": [],
+            "brunch": [],
+            "reservations": [],
+            "takeout": []
+          }
+        },
+        {
           "text": "https://www.yelp.com/biz/caribbean-bliss-and-breakfast-caf%C3%A9-halifax?osq=Caribbean+Bliss+%26+Breakfast+Caf%C3%A9",
           "href": "https://www.yelp.com/biz/caribbean-bliss-and-breakfast-caf%C3%A9-halifax?osq=Caribbean+Bliss+%26+Breakfast+Caf%C3%A9",
           "signalMatches": {
@@ -21184,281 +13677,8 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "restaurantId": "osm-node-11552510567-tako-sushi-and-ramen",
       "name": "Tako Sushi & Ramen",
       "website": "https://www.takosushiramen.ca/",
-      "status": 200,
-      "observedAt": "2026-09-04T13:18:04.292Z",
-      "keywordHits": [
-        "menu",
-        "special",
-        "delivery"
-      ],
-      "signalMatches": {
-        "menu": [
-          "menu"
-        ],
-        "specials": [
-          "special"
-        ],
-        "events": [],
-        "patio": [],
-        "openings": [],
-        "closures": [],
-        "moves": [],
-        "brunch": [],
-        "reservations": [],
-        "takeout": [
-          "delivery"
-        ]
-      },
-      "candidateLinks": [
-        {
-          "text": "Menu",
-          "href": "https://www.takosushiramen.ca/menu/chefs-special-rolls",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [
-              "special"
-            ],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Chef&#039;s special rolls",
-          "href": "https://www.takosushiramen.ca/menu/chefs-special-rolls",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [
-              "special"
-            ],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "https://www.takosushiramen.ca/menu/chefs-special-rolls",
-          "href": "https://www.takosushiramen.ca/menu/chefs-special-rolls",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [
-              "special"
-            ],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Tempura",
-          "href": "https://www.takosushiramen.ca/menu/appetizers/tempura",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "https://www.takosushiramen.ca/menu/appetizers/tempura",
-          "href": "https://www.takosushiramen.ca/menu/appetizers/tempura",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Entrees",
-          "href": "https://www.takosushiramen.ca/menu/chefs-special-rolls/entrees",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [
-              "special"
-            ],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "https://www.takosushiramen.ca/menu/chefs-special-rolls/entrees",
-          "href": "https://www.takosushiramen.ca/menu/chefs-special-rolls/entrees",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [
-              "special"
-            ],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Ramen",
-          "href": "https://www.takosushiramen.ca/menu/ramen",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "https://www.takosushiramen.ca/menu/ramen",
-          "href": "https://www.takosushiramen.ca/menu/ramen",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Party Tray",
-          "href": "https://www.takosushiramen.ca/menu/party-tray",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "https://www.takosushiramen.ca/menu/party-tray",
-          "href": "https://www.takosushiramen.ca/menu/party-tray",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Lunch Special",
-          "href": "https://www.takosushiramen.ca/menu/lunch-special",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [
-              "special"
-            ],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "https://www.takosushiramen.ca/menu/lunch-special",
-          "href": "https://www.takosushiramen.ca/menu/lunch-special",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [
-              "special"
-            ],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        }
-      ],
+      "error": "fetch failed",
+      "observedAt": "2026-10-21T14:28:40.895Z",
       "sourceKind": "official_website",
       "reviewState": "cross-check"
     },
@@ -21467,7 +13687,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "name": "Tarek's Cafe",
       "website": "http://www.tarekscafe.ca/",
       "error": "fetch failed",
-      "observedAt": "2026-09-04T13:18:04.872Z",
+      "observedAt": "2026-10-21T14:28:42.852Z",
       "sourceKind": "official_website",
       "reviewState": "cross-check"
     },
@@ -21476,7 +13696,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "name": "Terra Cafe",
       "website": "https://terracafe.ca/",
       "status": 200,
-      "observedAt": "2026-09-04T13:18:05.003Z",
+      "observedAt": "2026-10-21T14:28:42.958Z",
       "keywordHits": [
         "menu",
         "breakfast"
@@ -21599,7 +13819,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "name": "THE 5K CAFE",
       "website": "https://www.the5kcafe.ca/",
       "status": 200,
-      "observedAt": "2026-09-04T13:18:05.044Z",
+      "observedAt": "2026-10-21T14:28:42.978Z",
       "keywordHits": [
         "menu",
         "features",
@@ -21654,11 +13874,12 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "name": "The Armview Restaurant & Lounge",
       "website": "https://www.thearmview.com/",
       "status": 200,
-      "observedAt": "2026-09-04T13:18:05.342Z",
+      "observedAt": "2026-10-21T14:28:43.107Z",
       "keywordHits": [
         "menu",
         "event",
         "events",
+        "closed for the season",
         "breakfast",
         "reserve",
         "pick up",
@@ -21675,7 +13896,9 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
         ],
         "patio": [],
         "openings": [],
-        "closures": [],
+        "closures": [
+          "closed for the season"
+        ],
         "moves": [],
         "brunch": [
           "breakfast"
@@ -21881,7 +14104,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "name": "The Beaver's Den",
       "website": "https://thebeaversden.ca/",
       "status": 200,
-      "observedAt": "2026-09-04T13:18:05.490Z",
+      "observedAt": "2026-10-21T14:28:43.217Z",
       "keywordHits": [
         "menu",
         "cocktail",
@@ -21983,8 +14206,32 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "restaurantId": "osm-node-5151935621-the-bedford-basin-market",
       "name": "the Bedford Basin Market",
       "website": "https://www.bedfordbasinmarket.com/",
-      "error": "fetch failed",
-      "observedAt": "2026-09-04T13:18:05.805Z",
+      "status": 200,
+      "observedAt": "2026-10-21T14:28:43.300Z",
+      "keywordHits": [
+        "menu",
+        "promo",
+        "show"
+      ],
+      "signalMatches": {
+        "menu": [
+          "menu"
+        ],
+        "specials": [
+          "promo"
+        ],
+        "events": [
+          "show"
+        ],
+        "patio": [],
+        "openings": [],
+        "closures": [],
+        "moves": [],
+        "brunch": [],
+        "reservations": [],
+        "takeout": []
+      },
+      "candidateLinks": [],
       "sourceKind": "official_website",
       "reviewState": "cross-check"
     },
@@ -21993,7 +14240,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "name": "The BG",
       "website": "https://www.stubborngoat.ca/",
       "status": 200,
-      "observedAt": "2026-09-04T13:18:05.810Z",
+      "observedAt": "2026-10-21T14:28:43.353Z",
       "keywordHits": [
         "menu",
         "cocktail",
@@ -22002,7 +14249,6 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
         "events",
         "ticket",
         "show",
-        "patio",
         "brunch",
         "reserve"
       ],
@@ -22020,9 +14266,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
           "ticket",
           "show"
         ],
-        "patio": [
-          "patio"
-        ],
+        "patio": [],
         "openings": [],
         "closures": [],
         "moves": [],
@@ -22073,7 +14317,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
         },
         {
           "text": "Food",
-          "href": "https://www.stubborngoat.ca/wp-content/uploads/2026/08/Aug-22-Web-Menus-1.pdf",
+          "href": "https://www.stubborngoat.ca/wp-content/uploads/2026/10/2026-to-2027-Fall-Winter-Menu-SG-MAIN-PRINT.pdf",
           "signalMatches": {
             "menu": [
               "menu"
@@ -22091,7 +14335,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
         },
         {
           "text": "Drink",
-          "href": "https://www.stubborngoat.ca/wp-content/uploads/2026/05/2026-Summer-Drink-Menu-Second-Edit-2.pdf",
+          "href": "https://www.stubborngoat.ca/wp-content/uploads/2026/10/2026-to-2027-Fall-Winter-Drink-Menu-Main-Print.pdf-6-x-10-in.pdf",
           "signalMatches": {
             "menu": [
               "menu"
@@ -22099,24 +14343,6 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
             "specials": [],
             "events": [],
             "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "We’re throwing a FORE GOOD PATIO PARTY and you’re",
-          "href": "https://www.instagram.com/p/DcPCN2ms0xK/",
-          "signalMatches": {
-            "menu": [],
-            "specials": [],
-            "events": [],
-            "patio": [
-              "patio"
-            ],
             "openings": [],
             "closures": [],
             "moves": [],
@@ -22150,17 +14376,12 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
     {
       "restaurantId": "osm-node-8164476189-the-bitter-end",
       "name": "The Bitter End",
-      "website": "https://www.bitterend.ca/",
+      "website": "https://www.bitterend.ca/page-not-found",
       "status": 200,
-      "observedAt": "2026-09-04T13:17:36.285Z",
-      "keywordHits": [
-        "menu",
-        "reserve"
-      ],
+      "observedAt": "2026-10-21T14:28:14.628Z",
+      "keywordHits": [],
       "signalMatches": {
-        "menu": [
-          "menu"
-        ],
+        "menu": [],
         "specials": [],
         "events": [],
         "patio": [],
@@ -22168,49 +14389,10 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
         "closures": [],
         "moves": [],
         "brunch": [],
-        "reservations": [
-          "reserve"
-        ],
+        "reservations": [],
         "takeout": []
       },
-      "candidateLinks": [
-        {
-          "text": "Reserve",
-          "href": "https://www.bitterend.ca/reserve.html",
-          "signalMatches": {
-            "menu": [],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [
-              "reserve"
-            ],
-            "takeout": []
-          }
-        },
-        {
-          "text": "menu",
-          "href": "https://www.bitterend.ca/menu.html",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        }
-      ],
+      "candidateLinks": [],
       "sourceKind": "official_website",
       "reviewState": "cross-check"
     },
@@ -22219,11 +14401,12 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "name": "The Black Sheep",
       "website": "https://blacksheephalifax.com/",
       "status": 200,
-      "observedAt": "2026-09-04T13:18:05.959Z",
+      "observedAt": "2026-10-21T14:28:43.417Z",
       "keywordHits": [
         "menu",
         "event",
         "events",
+        "will be closed",
         "reservation",
         "reserve"
       ],
@@ -22238,7 +14421,9 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
         ],
         "patio": [],
         "openings": [],
-        "closures": [],
+        "closures": [
+          "will be closed"
+        ],
         "moves": [],
         "brunch": [],
         "reservations": [
@@ -22310,9 +14495,27 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
     {
       "restaurantId": "osm-node-9099103643-the-bread-lounge",
       "name": "The Bread Lounge",
-      "website": "https://thebreadloungebakery.square.site/",
-      "status": 200,
-      "observedAt": "2026-09-04T13:18:06.092Z",
+      "website": "https://breadlounge.ca/",
+      "error": "quarantined_cross_entity_redirect",
+      "observedAt": "2026-10-21T14:28:44.226Z",
+      "sourceKind": "official_website",
+      "reviewState": "cross-check"
+    },
+    {
+      "restaurantId": "osm-node-1921015225-the-brooklyn-warehouse",
+      "name": "The Brooklyn Warehouse",
+      "website": "https://brooklynwarehouse.ca/",
+      "error": "robots_disallow",
+      "observedAt": "2026-10-21T14:28:44.245Z",
+      "sourceKind": "official_website",
+      "reviewState": "restricted"
+    },
+    {
+      "restaurantId": "osm-node-5157477122-the-butcher-s-block-pub-and-eatery",
+      "name": "The Butcher's Block Pub and Eatery",
+      "website": "http://www.butchersblockpub.com/",
+      "status": 503,
+      "observedAt": "2026-10-21T14:28:44.391Z",
       "keywordHits": [],
       "signalMatches": {
         "menu": [],
@@ -22328,130 +14531,23 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       },
       "candidateLinks": [],
       "sourceKind": "official_website",
-      "reviewState": "cross-check"
-    },
-    {
-      "restaurantId": "osm-node-1921015225-the-brooklyn-warehouse",
-      "name": "The Brooklyn Warehouse",
-      "website": "https://brooklynwarehouse.ca/",
-      "error": "robots_disallow",
-      "observedAt": "2026-09-04T13:18:06.324Z",
-      "sourceKind": "official_website",
-      "reviewState": "restricted"
-    },
-    {
-      "restaurantId": "osm-node-5157477122-the-butcher-s-block-pub-and-eatery",
-      "name": "The Butcher's Block Pub and Eatery",
-      "website": "http://www.butchersblockpub.com/",
-      "error": "robots_disallow",
-      "observedAt": "2026-09-04T13:18:06.493Z",
-      "sourceKind": "official_website",
-      "reviewState": "restricted"
+      "reviewState": "needs-review"
     },
     {
       "restaurantId": "osm-node-11752688345-the-grounds-cafe-by-drift-coffee",
       "name": "The Grounds Cafe by Drift Coffee",
       "website": "https://www.instagram.com/driftcoffeehfx/",
       "error": "robots_disallow",
-      "observedAt": "2026-09-04T13:17:36.900Z",
+      "observedAt": "2026-10-21T14:28:13.474Z",
       "sourceKind": "official_website",
       "reviewState": "restricted"
     },
     {
       "restaurantId": "osm-node-3789835257-the-juice-press",
       "name": "The Juice Press",
-      "website": "http://harboursouth.ca/dining/juice-press-inc/",
-      "status": 404,
-      "observedAt": "2026-09-04T13:17:54.564Z",
-      "keywordHits": [
-        "menu"
-      ],
-      "signalMatches": {
-        "menu": [
-          "menu"
-        ],
-        "specials": [],
-        "events": [],
-        "patio": [],
-        "openings": [],
-        "closures": [],
-        "moves": [],
-        "brunch": [],
-        "reservations": [],
-        "takeout": []
-      },
-      "candidateLinks": [],
-      "sourceKind": "official_website",
-      "reviewState": "needs-review"
-    },
-    {
-      "restaurantId": "osm-node-5001886823-the-keg",
-      "name": "The Keg",
-      "website": "https://thekeg.com/en/locations/halifax",
-      "status": 200,
-      "observedAt": "2026-09-04T13:18:06.643Z",
-      "keywordHits": [
-        "menu",
-        "offers",
-        "reserve"
-      ],
-      "signalMatches": {
-        "menu": [
-          "menu"
-        ],
-        "specials": [
-          "offers"
-        ],
-        "events": [],
-        "patio": [],
-        "openings": [],
-        "closures": [],
-        "moves": [],
-        "brunch": [],
-        "reservations": [
-          "reserve"
-        ],
-        "takeout": []
-      },
-      "candidateLinks": [
-        {
-          "text": "Reserve Now",
-          "href": "https://www.opentable.ca/restref/client/?restref=269812&amp;lang=en-CA&amp;corrid=23ed6e1b-92ac-4ee2-b80a-63ca393a1432",
-          "signalMatches": {
-            "menu": [],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [
-              "reserve",
-              "opentable"
-            ],
-            "takeout": []
-          }
-        },
-        {
-          "text": "View menu",
-          "href": "https://thekeg.com/en/locations/halifax/menu",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        }
-      ],
+      "website": "https://bishopslanding.com/dining/juice-press-inc/",
+      "error": "quarantined_cross_entity_redirect",
+      "observedAt": "2026-10-21T14:28:35.815Z",
       "sourceKind": "official_website",
       "reviewState": "cross-check"
     },
@@ -22460,7 +14556,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "name": "The Loose Cannon",
       "website": "https://www.theloosecannon.ca/",
       "status": 200,
-      "observedAt": "2026-09-04T13:18:06.760Z",
+      "observedAt": "2026-10-21T14:28:44.527Z",
       "keywordHits": [
         "menu"
       ],
@@ -22506,7 +14602,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "name": "The Lower Deck",
       "website": "https://lowerdeck.ca/",
       "status": 200,
-      "observedAt": "2026-09-04T13:18:07.197Z",
+      "observedAt": "2026-10-21T14:28:44.731Z",
       "keywordHits": [
         "menu",
         "event",
@@ -22581,7 +14677,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "name": "The Mellow Mug",
       "website": "https://www.mellowmug.ca/",
       "status": 200,
-      "observedAt": "2026-09-04T13:18:07.393Z",
+      "observedAt": "2026-10-21T14:28:44.859Z",
       "keywordHits": [
         "menu",
         "special",
@@ -22652,48 +14748,9 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
     {
       "restaurantId": "osm-node-6296953436-the-mercantile-social",
       "name": "The Mercantile Social",
-      "website": "https://www.themercantilesocial.com/",
-      "status": 200,
-      "observedAt": "2026-09-04T13:18:07.650Z",
-      "keywordHits": [
-        "menu",
-        "cocktail"
-      ],
-      "signalMatches": {
-        "menu": [
-          "menu",
-          "cocktail"
-        ],
-        "specials": [],
-        "events": [],
-        "patio": [],
-        "openings": [],
-        "closures": [],
-        "moves": [],
-        "brunch": [],
-        "reservations": [],
-        "takeout": []
-      },
-      "candidateLinks": [
-        {
-          "text": "https://www.thebesthalifax.com/top-cocktail-bars-halifax/",
-          "href": "https://www.thebesthalifax.com/top-cocktail-bars-halifax/",
-          "signalMatches": {
-            "menu": [
-              "cocktail"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        }
-      ],
+      "website": "https://themercantilesocial.ca/",
+      "error": "quarantined_cross_entity_redirect",
+      "observedAt": "2026-10-21T14:28:45.295Z",
       "sourceKind": "official_website",
       "reviewState": "cross-check"
     },
@@ -22702,7 +14759,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "name": "The Mic Mac Bar and Grill",
       "website": "https://micmacbarandgrill.com/",
       "status": 200,
-      "observedAt": "2026-09-04T13:18:07.696Z",
+      "observedAt": "2026-10-21T14:28:45.429Z",
       "keywordHits": [
         "menu",
         "food menu",
@@ -22928,24 +14985,6 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
           }
         },
         {
-          "text": "Pasta Special FRI & SAT Ask Server Starting at 4 PM",
-          "href": "https://micmacbarandgrill.com/#",
-          "signalMatches": {
-            "menu": [],
-            "specials": [
-              "special"
-            ],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
           "text": "View Our Full Menu",
           "href": "https://micmacbarandgrill.com/menus/",
           "signalMatches": {
@@ -22970,388 +15009,9 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
     {
       "restaurantId": "osm-node-3801119557-the-middle-spoon-desserterie-and-bar",
       "name": "The Middle Spoon Desserterie & Bar",
-      "website": "https://themiddlespoon.com/",
-      "status": 200,
-      "observedAt": "2026-09-04T13:18:07.906Z",
-      "keywordHits": [
-        "menu",
-        "cocktail",
-        "special",
-        "deal",
-        "offers",
-        "event",
-        "events",
-        "trivia",
-        "ticket",
-        "reservation",
-        "reserve",
-        "book a table",
-        "takeout",
-        "pickup",
-        "order online",
-        "delivery"
-      ],
-      "signalMatches": {
-        "menu": [
-          "menu",
-          "cocktail"
-        ],
-        "specials": [
-          "special",
-          "deal",
-          "offers"
-        ],
-        "events": [
-          "event",
-          "events",
-          "trivia",
-          "ticket"
-        ],
-        "patio": [],
-        "openings": [],
-        "closures": [],
-        "moves": [],
-        "brunch": [],
-        "reservations": [
-          "reservation",
-          "reserve",
-          "book a table"
-        ],
-        "takeout": [
-          "takeout",
-          "pickup",
-          "order online",
-          "delivery"
-        ]
-      },
-      "candidateLinks": [
-        {
-          "text": "Menu",
-          "href": "https://themiddlespoon.com/menu",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Reservations",
-          "href": "https://themiddlespoon.com/reservations",
-          "signalMatches": {
-            "menu": [],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [
-              "reservation"
-            ],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Events",
-          "href": "https://themiddlespoon.com/events",
-          "signalMatches": {
-            "menu": [],
-            "specials": [],
-            "events": [
-              "event",
-              "events"
-            ],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Private Events",
-          "href": "https://themiddlespoon.com/private-events",
-          "signalMatches": {
-            "menu": [],
-            "specials": [],
-            "events": [
-              "event",
-              "events"
-            ],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Menu Desserts, cocktails & snacks",
-          "href": "https://themiddlespoon.com/menu",
-          "signalMatches": {
-            "menu": [
-              "menu",
-              "cocktail"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Reservations Book a table",
-          "href": "https://themiddlespoon.com/reservations",
-          "signalMatches": {
-            "menu": [],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [
-              "reservation",
-              "book a table"
-            ],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Order Takeout or delivery",
-          "href": "https://the-middle-spoon.orderwebsite.com/",
-          "signalMatches": {
-            "menu": [],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": [
-              "takeout",
-              "delivery"
-            ]
-          }
-        },
-        {
-          "text": "Events See what&#x27;s on",
-          "href": "https://themiddlespoon.com/events",
-          "signalMatches": {
-            "menu": [],
-            "specials": [],
-            "events": [
-              "event",
-              "events"
-            ],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Private Events Reserve a space",
-          "href": "https://themiddlespoon.com/private-events",
-          "signalMatches": {
-            "menu": [],
-            "specials": [],
-            "events": [
-              "event",
-              "events"
-            ],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [
-              "reserve"
-            ],
-            "takeout": []
-          }
-        },
-        {
-          "text": "All Events",
-          "href": "https://themiddlespoon.com/events",
-          "signalMatches": {
-            "menu": [],
-            "specials": [],
-            "events": [
-              "event",
-              "events"
-            ],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Explore the Menu",
-          "href": "https://themiddlespoon.com/menu",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Up to 60 guests Intimate A private space within The Middle Spoon — ideal for dinners, tastings, and close celebrations.",
-          "href": "https://themiddlespoon.com/private-events",
-          "signalMatches": {
-            "menu": [],
-            "specials": [
-              "deal"
-            ],
-            "events": [
-              "event",
-              "events"
-            ],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Up to 90 guests Social A curated area of the venue, designed for milestone moments and special occasions.",
-          "href": "https://themiddlespoon.com/private-events",
-          "signalMatches": {
-            "menu": [],
-            "specials": [
-              "special"
-            ],
-            "events": [
-              "event",
-              "events"
-            ],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Up to 150 guests Full Venue The entire Middle Spoon, reserved exclusively for your event.",
-          "href": "https://themiddlespoon.com/private-events",
-          "signalMatches": {
-            "menu": [],
-            "specials": [],
-            "events": [
-              "event",
-              "events"
-            ],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [
-              "reserve"
-            ],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Learn About Our Private Event Spaces",
-          "href": "https://themiddlespoon.com/private-events",
-          "signalMatches": {
-            "menu": [],
-            "specials": [],
-            "events": [
-              "event",
-              "events"
-            ],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "View the Menu",
-          "href": "https://themiddlespoon.com/menu",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Cocktail Subscription",
-          "href": "https://themiddlespoon.com/subscription",
-          "signalMatches": {
-            "menu": [
-              "cocktail"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        }
-      ],
+      "website": "https://www.themiddlespoon.ca/",
+      "error": "quarantined_cross_entity_redirect",
+      "observedAt": "2026-10-21T14:28:45.437Z",
       "sourceKind": "official_website",
       "reviewState": "cross-check"
     },
@@ -23360,7 +15020,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "name": "The Nook",
       "website": "http://www.thenookhfx.ca/",
       "status": 200,
-      "observedAt": "2026-09-04T13:18:08.104Z",
+      "observedAt": "2026-10-21T14:28:45.467Z",
       "keywordHits": [],
       "signalMatches": {
         "menu": [],
@@ -23383,7 +15043,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "name": "The Old Triangle Irish Pub",
       "website": "https://oldtriangle.com/welcome/",
       "status": 404,
-      "observedAt": "2026-09-04T13:18:08.408Z",
+      "observedAt": "2026-10-21T14:28:45.872Z",
       "keywordHits": [
         "menu",
         "event",
@@ -23535,7 +15195,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "name": "The Ostrich Club",
       "website": "https://theostrichclub.ca/",
       "status": 200,
-      "observedAt": "2026-09-04T13:18:08.544Z",
+      "observedAt": "2026-10-21T14:28:46.265Z",
       "keywordHits": [
         "menu",
         "cocktail",
@@ -23583,7 +15243,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "name": "Tilted Tap",
       "website": "https://www.tiltedtap.ca/",
       "status": 200,
-      "observedAt": "2026-09-04T13:18:08.876Z",
+      "observedAt": "2026-10-21T14:28:46.404Z",
       "keywordHits": [
         "menu",
         "drink menu",
@@ -23865,402 +15525,11 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "reviewState": "cross-check"
     },
     {
-      "restaurantId": "osm-node-31794073-tim-hortons",
-      "name": "Tim Hortons",
-      "website": "https://www.timhortons.ca/store-locator/store/restaurant_66914",
-      "status": 200,
-      "observedAt": "2026-09-04T13:18:09.225Z",
-      "keywordHits": [],
-      "signalMatches": {
-        "menu": [],
-        "specials": [],
-        "events": [],
-        "patio": [],
-        "openings": [],
-        "closures": [],
-        "moves": [],
-        "brunch": [],
-        "reservations": [],
-        "takeout": []
-      },
-      "candidateLinks": [],
-      "sourceKind": "official_website",
-      "reviewState": "cross-check"
-    },
-    {
-      "restaurantId": "osm-node-761848503-tim-hortons",
-      "name": "Tim Hortons",
-      "website": "https://www.timhortons.com/",
-      "status": 200,
-      "observedAt": "2026-09-04T13:18:09.306Z",
-      "keywordHits": [],
-      "signalMatches": {
-        "menu": [],
-        "specials": [],
-        "events": [],
-        "patio": [],
-        "openings": [],
-        "closures": [],
-        "moves": [],
-        "brunch": [],
-        "reservations": [],
-        "takeout": []
-      },
-      "candidateLinks": [],
-      "sourceKind": "official_website",
-      "reviewState": "cross-check"
-    },
-    {
-      "restaurantId": "osm-node-3275051476-tim-hortons",
-      "name": "Tim Hortons",
-      "website": "https://www.timhortons.com/",
-      "status": 200,
-      "observedAt": "2026-09-04T13:18:09.954Z",
-      "keywordHits": [],
-      "signalMatches": {
-        "menu": [],
-        "specials": [],
-        "events": [],
-        "patio": [],
-        "openings": [],
-        "closures": [],
-        "moves": [],
-        "brunch": [],
-        "reservations": [],
-        "takeout": []
-      },
-      "candidateLinks": [],
-      "sourceKind": "official_website",
-      "reviewState": "cross-check"
-    },
-    {
-      "restaurantId": "osm-node-11526163878-tim-hortons",
-      "name": "Tim Hortons",
-      "website": "https://dal.mydininghub.ca/en/locations",
-      "status": 200,
-      "observedAt": "2026-09-04T13:17:39.045Z",
-      "keywordHits": [
-        "menu"
-      ],
-      "signalMatches": {
-        "menu": [
-          "menu"
-        ],
-        "specials": [],
-        "events": [],
-        "patio": [],
-        "openings": [],
-        "closures": [],
-        "moves": [],
-        "brunch": [],
-        "reservations": [],
-        "takeout": []
-      },
-      "candidateLinks": [
-        {
-          "text": "My Menu",
-          "href": "https://dal.mydininghub.ca/en/account?section=my-menu",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Locations & Menus",
-          "href": "https://dal.mydininghub.ca/en/locations",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        }
-      ],
-      "sourceKind": "official_website",
-      "reviewState": "cross-check"
-    },
-    {
-      "restaurantId": "osm-way-88610789-tim-hortons",
-      "name": "Tim Hortons",
-      "website": "https://www.timhortons.com/",
-      "status": 200,
-      "observedAt": "2026-09-04T13:18:10.242Z",
-      "keywordHits": [],
-      "signalMatches": {
-        "menu": [],
-        "specials": [],
-        "events": [],
-        "patio": [],
-        "openings": [],
-        "closures": [],
-        "moves": [],
-        "brunch": [],
-        "reservations": [],
-        "takeout": []
-      },
-      "candidateLinks": [],
-      "sourceKind": "official_website",
-      "reviewState": "cross-check"
-    },
-    {
-      "restaurantId": "osm-way-170824377-tim-hortons",
-      "name": "Tim Hortons",
-      "website": "https://www.timhortons.com/",
-      "status": 200,
-      "observedAt": "2026-09-04T13:18:10.521Z",
-      "keywordHits": [],
-      "signalMatches": {
-        "menu": [],
-        "specials": [],
-        "events": [],
-        "patio": [],
-        "openings": [],
-        "closures": [],
-        "moves": [],
-        "brunch": [],
-        "reservations": [],
-        "takeout": []
-      },
-      "candidateLinks": [],
-      "sourceKind": "official_website",
-      "reviewState": "cross-check"
-    },
-    {
-      "restaurantId": "osm-way-180446788-tim-hortons",
-      "name": "Tim Hortons",
-      "website": "https://locations.timhortons.ca/en/ns/halifax/390-osborne-street/",
-      "status": 200,
-      "observedAt": "2026-09-04T13:18:09.779Z",
-      "keywordHits": [
-        "menu",
-        "special",
-        "features",
-        "breakfast",
-        "pickup",
-        "delivery"
-      ],
-      "signalMatches": {
-        "menu": [
-          "menu"
-        ],
-        "specials": [
-          "special",
-          "features"
-        ],
-        "events": [],
-        "patio": [],
-        "openings": [],
-        "closures": [],
-        "moves": [],
-        "brunch": [
-          "breakfast"
-        ],
-        "reservations": [],
-        "takeout": [
-          "pickup",
-          "delivery"
-        ]
-      },
-      "candidateLinks": [
-        {
-          "text": "Order Pickup",
-          "href": "https://timhortons.ca/menu?locale-selected=0&lang=en&store-number=100053&service-mode=TAKEOUT",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": [
-              "takeout",
-              "pickup"
-            ]
-          }
-        },
-        {
-          "text": "Order Delivery",
-          "href": "https://timhortons.ca/menu?locale-selected=0&lang=en&store-number=100053&service-mode=DELIVERY",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": [
-              "delivery"
-            ]
-          }
-        },
-        {
-          "text": "Order Now",
-          "href": "https://www.timhortons.ca/menu/picker-picker_7407",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Order Now",
-          "href": "https://timhortons.ca/menu?locale-selected=0&lang=en&store-number=105846&service-mode=TAKEOUT",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": [
-              "takeout"
-            ]
-          }
-        }
-      ],
-      "sourceKind": "official_website",
-      "reviewState": "cross-check"
-    },
-    {
-      "restaurantId": "osm-way-181617786-tim-hortons",
-      "name": "Tim Hortons",
-      "website": "https://www.timhortons.ca/store-locator/store/restaurant_67296",
-      "status": 200,
-      "observedAt": "2026-09-04T13:18:09.892Z",
-      "keywordHits": [],
-      "signalMatches": {
-        "menu": [],
-        "specials": [],
-        "events": [],
-        "patio": [],
-        "openings": [],
-        "closures": [],
-        "moves": [],
-        "brunch": [],
-        "reservations": [],
-        "takeout": []
-      },
-      "candidateLinks": [],
-      "sourceKind": "official_website",
-      "reviewState": "cross-check"
-    },
-    {
-      "restaurantId": "osm-way-181684255-tim-hortons",
-      "name": "Tim Hortons",
-      "website": "https://www.timhortons.ca/store-locator/store/restaurant_66291",
-      "status": 200,
-      "observedAt": "2026-09-04T13:18:10.211Z",
-      "keywordHits": [],
-      "signalMatches": {
-        "menu": [],
-        "specials": [],
-        "events": [],
-        "patio": [],
-        "openings": [],
-        "closures": [],
-        "moves": [],
-        "brunch": [],
-        "reservations": [],
-        "takeout": []
-      },
-      "candidateLinks": [],
-      "sourceKind": "official_website",
-      "reviewState": "cross-check"
-    },
-    {
-      "restaurantId": "osm-way-224130263-tim-hortons",
-      "name": "Tim Hortons",
-      "website": "https://www.timhortons.ca/",
-      "status": 200,
-      "observedAt": "2026-09-04T13:18:10.542Z",
-      "keywordHits": [],
-      "signalMatches": {
-        "menu": [],
-        "specials": [],
-        "events": [],
-        "patio": [],
-        "openings": [],
-        "closures": [],
-        "moves": [],
-        "brunch": [],
-        "reservations": [],
-        "takeout": []
-      },
-      "candidateLinks": [],
-      "sourceKind": "official_website",
-      "reviewState": "cross-check"
-    },
-    {
-      "restaurantId": "osm-way-452736023-tim-hortons",
-      "name": "Tim Hortons",
-      "website": "https://www.timhortons.ca/store-locator/store/restaurant_66191",
-      "status": 200,
-      "observedAt": "2026-09-04T13:18:11.349Z",
-      "keywordHits": [],
-      "signalMatches": {
-        "menu": [],
-        "specials": [],
-        "events": [],
-        "patio": [],
-        "openings": [],
-        "closures": [],
-        "moves": [],
-        "brunch": [],
-        "reservations": [],
-        "takeout": []
-      },
-      "candidateLinks": [],
-      "sourceKind": "official_website",
-      "reviewState": "cross-check"
-    },
-    {
       "restaurantId": "osm-node-7674206838-tokyo-roll",
       "name": "Tokyo Roll",
       "website": "https://www.tokyorollhalifax.com/",
       "status": 200,
-      "observedAt": "2026-09-04T13:18:10.054Z",
+      "observedAt": "2026-10-21T14:28:46.772Z",
       "keywordHits": [
         "menu",
         "reserve",
@@ -24330,7 +15599,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "name": "Tomavinos Pizzeria",
       "website": "https://www.tomavinos.ca/",
       "status": 200,
-      "observedAt": "2026-09-04T13:18:10.274Z",
+      "observedAt": "2026-10-21T14:28:47.061Z",
       "keywordHits": [
         "menu",
         "special",
@@ -24459,149 +15728,9 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
     {
       "restaurantId": "osm-node-1920996968-tony-s-pizza",
       "name": "Tony's Pizza",
-      "website": "https://www.tonysdonair.com/",
-      "status": 200,
-      "observedAt": "2026-09-04T13:18:10.357Z",
-      "keywordHits": [
-        "menu",
-        "special",
-        "specials",
-        "order online",
-        "delivery"
-      ],
-      "signalMatches": {
-        "menu": [
-          "menu"
-        ],
-        "specials": [
-          "special",
-          "specials"
-        ],
-        "events": [],
-        "patio": [],
-        "openings": [],
-        "closures": [],
-        "moves": [],
-        "brunch": [],
-        "reservations": [],
-        "takeout": [
-          "order online",
-          "delivery"
-        ]
-      },
-      "candidateLinks": [
-        {
-          "text": "Other Menu Items",
-          "href": "https://www.tonysdonair.com/other-items",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Specials",
-          "href": "https://www.tonysdonair.com/specials",
-          "signalMatches": {
-            "menu": [],
-            "specials": [
-              "special",
-              "specials"
-            ],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Order Online",
-          "href": "https://tonysdonair.brygid.online/",
-          "signalMatches": {
-            "menu": [],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": [
-              "order online"
-            ]
-          }
-        },
-        {
-          "text": "🍕 Order Online",
-          "href": "https://tonysdonair.brygid.online/",
-          "signalMatches": {
-            "menu": [],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": [
-              "order online"
-            ]
-          }
-        },
-        {
-          "text": "💸Pizza SpecialS💸",
-          "href": "https://tonysdonair.brygid.online/zgrid/proc/go.jsp?m=Specials",
-          "signalMatches": {
-            "menu": [],
-            "specials": [
-              "special",
-              "specials"
-            ],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "https://www.tonysdonair.com/specials",
-          "href": "https://www.tonysdonair.com/specials",
-          "signalMatches": {
-            "menu": [],
-            "specials": [
-              "special",
-              "specials"
-            ],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        }
-      ],
+      "website": "https://www.tonysdonair.ca/",
+      "error": "quarantined_cross_entity_redirect",
+      "observedAt": "2026-10-21T14:28:47.093Z",
       "sourceKind": "official_website",
       "reviewState": "cross-check"
     },
@@ -24610,11 +15739,12 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "name": "Trident Booksellers and Cafe",
       "website": "https://tridenthalifax.ca/",
       "status": 200,
-      "observedAt": "2026-09-04T13:18:10.722Z",
+      "observedAt": "2026-10-21T14:28:47.277Z",
       "keywordHits": [
         "event",
         "events",
         "live music",
+        "trivia",
         "calendar"
       ],
       "signalMatches": {
@@ -24624,6 +15754,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
           "event",
           "events",
           "live music",
+          "trivia",
           "calendar"
         ],
         "patio": [],
@@ -24655,27 +15786,8 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
           }
         },
         {
-          "text": "Live Music! Gourmet Club!",
-          "href": "https://tridenthalifax.ca/event/live-music-gourmet-club/",
-          "signalMatches": {
-            "menu": [],
-            "specials": [],
-            "events": [
-              "event",
-              "live music"
-            ],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Book Talk: Return of the 90s w/ Sean O&#8217;Brien &#038; Thomas Laughlin",
-          "href": "https://tridenthalifax.ca/event/book-talk-return-of-the-90s-w-eds-sean-obrien-thomas-laughlin/",
+          "text": "Book Launch &#8211; COADY",
+          "href": "https://tridenthalifax.ca/event/book-launch-coady/",
           "signalMatches": {
             "menu": [],
             "specials": [],
@@ -24692,8 +15804,8 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
           }
         },
         {
-          "text": "Live Music: Kate Ferguson!",
-          "href": "https://tridenthalifax.ca/event/live-music-kate-ferguson/",
+          "text": "Live Music &#8211; Lucy Wells &#038; Friends",
+          "href": "https://tridenthalifax.ca/event/live-music-lucy-wells-friends/",
           "signalMatches": {
             "menu": [],
             "specials": [],
@@ -24711,8 +15823,27 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
           }
         },
         {
-          "text": "Adam Otmar: Farewell to Nova Scotia (with Marlo Day)",
-          "href": "https://tridenthalifax.ca/event/adam-otmar-farewell-to-nova-scotia-with-marlo-day/",
+          "text": "DEEP CUTS Trivia",
+          "href": "https://tridenthalifax.ca/event/deep-cuts-trivia/",
+          "signalMatches": {
+            "menu": [],
+            "specials": [],
+            "events": [
+              "event",
+              "trivia"
+            ],
+            "patio": [],
+            "openings": [],
+            "closures": [],
+            "moves": [],
+            "brunch": [],
+            "reservations": [],
+            "takeout": []
+          }
+        },
+        {
+          "text": "Comedy Night &#8211; Neon Sign Comedy vol.X",
+          "href": "https://tridenthalifax.ca/event/comedy-night-neon-sign-comedy-vol-x/",
           "signalMatches": {
             "menu": [],
             "specials": [],
@@ -24755,82 +15886,27 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
     {
       "restaurantId": "osm-node-3791832157-turkish-delight",
       "name": "Turkish Delight",
-      "website": "https://turkishdelighthalifax.ca/",
-      "status": 200,
-      "observedAt": "2026-09-04T13:18:10.769Z",
-      "keywordHits": [
-        "special",
-        "deal",
-        "moving to",
-        "takeout",
-        "delivery"
-      ],
-      "signalMatches": {
-        "menu": [],
-        "specials": [
-          "special",
-          "deal"
-        ],
-        "events": [],
-        "patio": [],
-        "openings": [],
-        "closures": [],
-        "moves": [
-          "moving to"
-        ],
-        "brunch": [],
-        "reservations": [],
-        "takeout": [
-          "takeout",
-          "delivery"
-        ]
-      },
-      "candidateLinks": [],
+      "website": "https://www.turkishdelighthalifax.ca/contact-us",
+      "error": "robots_disallow",
+      "observedAt": "2026-10-21T14:28:47.369Z",
       "sourceKind": "official_website",
-      "reviewState": "cross-check"
+      "reviewState": "restricted"
     },
     {
       "restaurantId": "osm-node-4420631892-two-if-by-sea",
       "name": "Two if By Sea",
-      "website": "https://twoifbyseacafe.ca/",
-      "status": 200,
-      "observedAt": "2026-09-04T13:18:11.092Z",
-      "keywordHits": [
-        "menu",
-        "special",
-        "reserve",
-        "delivery"
-      ],
-      "signalMatches": {
-        "menu": [
-          "menu"
-        ],
-        "specials": [
-          "special"
-        ],
-        "events": [],
-        "patio": [],
-        "openings": [],
-        "closures": [],
-        "moves": [],
-        "brunch": [],
-        "reservations": [
-          "reserve"
-        ],
-        "takeout": [
-          "delivery"
-        ]
-      },
-      "candidateLinks": [],
+      "website": "https://www.twoifbyseacafe.ca/",
+      "error": "robots_disallow",
+      "observedAt": "2026-10-21T14:28:47.465Z",
       "sourceKind": "official_website",
-      "reviewState": "cross-check"
+      "reviewState": "restricted"
     },
     {
       "restaurantId": "osm-node-11466743651-uncommon-grounds",
       "name": "Uncommon Grounds",
       "website": "https://theuncommongroup.com/",
       "status": 200,
-      "observedAt": "2026-09-04T13:18:11.274Z",
+      "observedAt": "2026-10-21T14:28:47.489Z",
       "keywordHits": [
         "menu"
       ],
@@ -24857,7 +15933,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "name": "Vandal Doughnuts",
       "website": "https://vandaldoughnuts.ca/",
       "error": "fetch failed",
-      "observedAt": "2026-09-04T13:18:11.333Z",
+      "observedAt": "2026-10-21T14:28:47.587Z",
       "sourceKind": "official_website",
       "reviewState": "cross-check"
     },
@@ -24866,7 +15942,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "name": "Wasabi House",
       "website": "http://wasabihouse.ca/",
       "status": 200,
-      "observedAt": "2026-09-04T13:18:11.523Z",
+      "observedAt": "2026-10-21T14:28:47.988Z",
       "keywordHits": [
         "menu",
         "happy hour",
@@ -24945,7 +16021,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "name": "Water Polo",
       "website": "https://www.waterpolohfx.ca/",
       "status": 200,
-      "observedAt": "2026-09-04T13:18:11.673Z",
+      "observedAt": "2026-10-21T14:28:48.096Z",
       "keywordHits": [
         "menu",
         "features",
@@ -25103,7 +16179,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "name": "Waterfront Warehouse",
       "website": "https://www.rcr.ca/restaurants/waterfront-warehouse/",
       "status": 200,
-      "observedAt": "2026-09-04T13:17:53.964Z",
+      "observedAt": "2026-10-21T14:28:33.415Z",
       "keywordHits": [
         "menu",
         "wine list",
@@ -25243,853 +16319,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "name": "Way2Roll",
       "website": "https://way2roll.ca/",
       "error": "fetch failed",
-      "observedAt": "2026-09-04T13:18:11.679Z",
-      "sourceKind": "official_website",
-      "reviewState": "cross-check"
-    },
-    {
-      "restaurantId": "osm-node-2714150702-wendy-s",
-      "name": "Wendy's",
-      "website": "https://www.wendys.com/en-ca",
-      "status": 200,
-      "observedAt": "2026-09-04T13:18:11.774Z",
-      "keywordHits": [
-        "menu",
-        "offers",
-        "breakfast",
-        "pickup",
-        "delivery"
-      ],
-      "signalMatches": {
-        "menu": [
-          "menu"
-        ],
-        "specials": [
-          "offers"
-        ],
-        "events": [],
-        "patio": [],
-        "openings": [],
-        "closures": [],
-        "moves": [],
-        "brunch": [
-          "breakfast"
-        ],
-        "reservations": [],
-        "takeout": [
-          "pickup",
-          "delivery"
-        ]
-      },
-      "candidateLinks": [
-        {
-          "text": "Order Pickup",
-          "href": "https://order.wendys.com/ca/en/national/menu",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": [
-              "pickup"
-            ]
-          }
-        },
-        {
-          "text": "Order Delivery",
-          "href": "https://www.wendys.com/en-ca/delivery",
-          "signalMatches": {
-            "menu": [],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": [
-              "delivery"
-            ]
-          }
-        },
-        {
-          "text": "View Our Menu",
-          "href": "https://order.wendys.com/ca/en/national/menu",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Menu",
-          "href": "https://order.wendys.com/ca/en/national/menu",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "View Our Menu",
-          "href": "https://order.wendys.com/ca/en/",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "VIEW OUR MENU",
-          "href": "https://order.wendys.com/ca/en/",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Crave Away",
-          "href": "https://order.wendys.com/ca/en/national/menu/everyday-value",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Dave's Double Combo Combos",
-          "href": "https://order.wendys.com/ca/en/national/menu/combos",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Wendy's Fresh Never Frozen Beef Cheeseburgers",
-          "href": "https://order.wendys.com/ca/en/national/menu/cheeseburgers",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Wendy's Chicken Wraps & More Chicken, Wraps & More",
-          "href": "https://order.wendys.com/ca/en/national/menu/chicken-wraps-more",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Wendy's Apple Pecan Salad Fresh-Made Salads",
-          "href": "https://order.wendys.com/ca/en/national/menu/fresh-made-salads",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Wendy's Fries & Sides Fries & Sides",
-          "href": "https://order.wendys.com/ca/en/national/menu/fries-sides",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Wendy's Frosty Frosty®",
-          "href": "https://order.wendys.com/ca/en/national/menu/frosty",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Wendy's Breakfast Combos Breakfast Combos",
-          "href": "https://order.wendys.com/ca/en/national/menu/breakfast-combos",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [
-              "breakfast"
-            ],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Wendy's Croissant Breakfast Sandwiches Croissants",
-          "href": "https://order.wendys.com/ca/en/national/menu/croissants",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [
-              "breakfast"
-            ],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Wendy's Sausage, Egg & Cheese Biscuit Biscuits",
-          "href": "https://order.wendys.com/ca/en/national/menu/biscuits",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Wendy's Classic Breakfast Sandwiches Classics",
-          "href": "https://order.wendys.com/ca/en/national/menu/classics",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [
-              "breakfast"
-            ],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Wendy's Breakfast Sides & Sweets Sides & Sweets",
-          "href": "https://order.wendys.com/ca/en/national/menu/sides-sweets",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [
-              "breakfast"
-            ],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Wendy's Coffee Coffee",
-          "href": "https://order.wendys.com/ca/en/national/menu/coffee",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Wendy's Beverages Beverages",
-          "href": "https://order.wendys.com/ca/en/national/menu/beverages",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Wendy's Quality Choices Quality Choices",
-          "href": "https://order.wendys.com/ca/en/national/menu/quality-choices",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Wendy's Kids Meals Kids' Meals",
-          "href": "https://order.wendys.com/ca/en/national/menu/wendys-kids-meals",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Bring The Sauce",
-          "href": "https://order.wendys.com/ca/en/national/menu/chicken-wraps-more",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Sip your best life",
-          "href": "https://order.wendys.com/ca/en/national/menu/beverages",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        }
-      ],
-      "sourceKind": "official_website",
-      "reviewState": "cross-check"
-    },
-    {
-      "restaurantId": "osm-way-181624111-wendy-s",
-      "name": "Wendy's",
-      "website": "https://locations.wendys.com/canada/ns/halifax/3580-kempt-road",
-      "status": 200,
-      "observedAt": "2026-09-04T13:18:11.820Z",
-      "keywordHits": [
-        "menu",
-        "deal",
-        "breakfast",
-        "delivery"
-      ],
-      "signalMatches": {
-        "menu": [
-          "menu"
-        ],
-        "specials": [
-          "deal"
-        ],
-        "events": [],
-        "patio": [],
-        "openings": [],
-        "closures": [],
-        "moves": [],
-        "brunch": [
-          "breakfast"
-        ],
-        "reservations": [],
-        "takeout": [
-          "delivery"
-        ]
-      },
-      "candidateLinks": [
-        {
-          "text": "Order Delivery",
-          "href": "https://www.wendys.com/en-ca/delivery",
-          "signalMatches": {
-            "menu": [],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": [
-              "delivery"
-            ]
-          }
-        },
-        {
-          "text": "VIEW OUR MENU",
-          "href": "https://order.wendys.com/ca/en/select-restaurant",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Menu",
-          "href": "https://menu.wendys.com/",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "View Menu",
-          "href": "https://order.wendys.com/ca/en/national/menu",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Dave's Double®",
-          "href": "https://order.wendys.com/ca/en/national/menu/cheeseburgers/daves-double",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Learn More",
-          "href": "https://order.wendys.com/ca/en/national/menu/cheeseburgers/daves-double",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Apple Pecan Chicken Salad",
-          "href": "https://order.wendys.com/ca/en/national/menu/fresh-made-salads/apple-pecan-chicken-salad",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Learn More",
-          "href": "https://order.wendys.com/ca/en/national/menu/fresh-made-salads/apple-pecan-chicken-salad",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Spicy Chicken Sandwich",
-          "href": "https://order.wendys.com/ca/en/national/menu/chicken-wraps-more/spicy-chicken-sandwich",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Learn More",
-          "href": "https://order.wendys.com/ca/en/national/menu/chicken-wraps-more/spicy-chicken-sandwich",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Hot Coffee",
-          "href": "https://order.wendys.com/ca/en/national/menu/coffee/hot-coffee",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Learn More",
-          "href": "https://order.wendys.com/ca/en/national/menu/coffee/hot-coffee",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Vanilla Frosty®-ccino",
-          "href": "https://order.wendys.com/ca/en/national/menu/coffee/vanilla-frosty-ccino",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Learn More",
-          "href": "https://order.wendys.com/ca/en/national/menu/coffee/vanilla-frosty-ccino",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Breakfast Baconator™",
-          "href": "https://order.wendys.com/ca/en/national/menu/classics/breakfast-baconator",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [
-              "breakfast"
-            ],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Learn More",
-          "href": "https://order.wendys.com/ca/en/national/menu/classics/breakfast-baconator",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [
-              "breakfast"
-            ],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "menu website",
-          "href": "https://order.wendys.com/ca/en/national/menu",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Food",
-          "href": "https://order.wendys.com/ca/en/national/menu",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        }
-      ],
+      "observedAt": "2026-10-21T14:28:48.111Z",
       "sourceKind": "official_website",
       "reviewState": "cross-check"
     },
@@ -26098,7 +16328,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "name": "Wild Leek Food & Juice Bar",
       "website": "https://www.wildleek.ca/",
       "status": 200,
-      "observedAt": "2026-09-04T13:18:12.026Z",
+      "observedAt": "2026-10-21T14:28:48.144Z",
       "keywordHits": [
         "menu",
         "special",
@@ -26190,363 +16420,11 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
       "reviewState": "cross-check"
     },
     {
-      "restaurantId": "osm-node-10665823259-wing-n-it",
-      "name": "Wing 'n It",
-      "website": "https://wingnit.ca/",
-      "status": 200,
-      "observedAt": "2026-09-04T13:18:12.087Z",
-      "keywordHits": [
-        "menu",
-        "special",
-        "specials",
-        "promo",
-        "coming soon",
-        "pickup",
-        "order online"
-      ],
-      "signalMatches": {
-        "menu": [
-          "menu"
-        ],
-        "specials": [
-          "special",
-          "specials",
-          "promo"
-        ],
-        "events": [],
-        "patio": [],
-        "openings": [
-          "coming soon"
-        ],
-        "closures": [],
-        "moves": [],
-        "brunch": [],
-        "reservations": [],
-        "takeout": [
-          "pickup",
-          "order online"
-        ]
-      },
-      "candidateLinks": [
-        {
-          "text": "Menu",
-          "href": "https://wingnit.ca/menu",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Specials",
-          "href": "https://wingnit.ca/specials",
-          "signalMatches": {
-            "menu": [],
-            "specials": [
-              "special",
-              "specials"
-            ],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "https://wingnit.ca/#menu",
-          "href": "https://wingnit.ca/#menu",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Check It Out",
-          "href": "https://wingnit.ca/menu",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Appetizers Start things off right with Wing’n It’s crave-worthy appetizers! From crispy bites and cheesy classics to shareable platters and house-made dips.",
-          "href": "https://wingnit.ca/menu/appetizers",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Nachos Wing’n It’s nachos are piled high with bold flavours and crave-worthy toppings. Whether you’re flying solo or sharing with the table, our nachos are baked",
-          "href": "https://wingnit.ca/menu/nachos-",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Salad & Soup Fresh, crisp salads loaded with vibrant ingredients for a healthy and tasty choice.",
-          "href": "https://wingnit.ca/menu/salad-soup",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Sandwiches & Wraps",
-          "href": "https://wingnit.ca/menu/sandwiches-wraps",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Wings Our signature wings, sauced and seasoned to perfection, are a must-try.",
-          "href": "https://wingnit.ca/menu/wings",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Entrees Satisfy your hunger with our hearty and delicious entrees, crafted to perfection.",
-          "href": "https://wingnit.ca/menu/entrees",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Burgers All burgers are 100% Canadian beef and double stacked! Served on a brioche bun with fries.",
-          "href": "https://wingnit.ca/menu/burgers-",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Fries Golden, crispy fries served just the way you like them.",
-          "href": "https://wingnit.ca/menu/fries-",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Onion Rings Crunchy, golden onion rings with just the right amount of seasoning.",
-          "href": "https://wingnit.ca/menu/onion-rings-",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Kids Our Kids' Menu is specially designed for children 12 years and under, offering a variety of kid-friendly dishes that are nutritious and delicious!",
-          "href": "https://wingnit.ca/menu/kids",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [
-              "special"
-            ],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Beverages Sip, savour, and refresh with every drink—quench your thirst with Wing'n It’s unbeatable beverage lineup!",
-          "href": "https://wingnit.ca/menu/beverages",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Desserts End on a sweet note! Our desserts are the perfect finish to any feast—irresistibly delicious, every time!",
-          "href": "https://wingnit.ca/menu/desserts",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "View Full Menu",
-          "href": "https://wingnit.ca/menu",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        }
-      ],
-      "sourceKind": "official_website",
-      "reviewState": "cross-check"
-    },
-    {
       "restaurantId": "osm-way-96322798-wooden-monkey",
       "name": "Wooden Monkey",
       "website": "https://www.thewoodenmonkey.ca/",
       "status": 200,
-      "observedAt": "2026-09-04T13:18:12.233Z",
+      "observedAt": "2026-10-21T14:28:48.390Z",
       "keywordHits": [
         "menu",
         "special",
@@ -26656,7 +16534,7 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
         },
         {
           "text": "Live Music",
-          "href": "https://cdn.prod.website-files.com/5a9175138433cb00017eefdf/6a973b27e884ecfad8c7c02f_Copy%20of%20%40%20THEWOODENMONEKYRESTAURANTS%20(3).jpg",
+          "href": "https://cdn.prod.website-files.com/5a9175138433cb00017eefdf/6abe7d8286c326bbe1609eec_%40%20THEWOODENMONEKYRESTAURANTS%20(15)%20(1).pdf",
           "signalMatches": {
             "menu": [],
             "specials": [],
@@ -26735,64 +16613,9 @@ window.HALIFAX_OFFICIAL_SITE_SIGNALS = {
     {
       "restaurantId": "osm-node-11526163879-zoca",
       "name": "Zoca",
-      "website": "https://dal.mydininghub.ca/en/locations",
-      "status": 200,
-      "observedAt": "2026-09-04T13:17:39.330Z",
-      "keywordHits": [
-        "menu"
-      ],
-      "signalMatches": {
-        "menu": [
-          "menu"
-        ],
-        "specials": [],
-        "events": [],
-        "patio": [],
-        "openings": [],
-        "closures": [],
-        "moves": [],
-        "brunch": [],
-        "reservations": [],
-        "takeout": []
-      },
-      "candidateLinks": [
-        {
-          "text": "My Menu",
-          "href": "https://dal.mydininghub.ca/en/account?section=my-menu",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        },
-        {
-          "text": "Locations & Menus",
-          "href": "https://dal.mydininghub.ca/en/locations",
-          "signalMatches": {
-            "menu": [
-              "menu"
-            ],
-            "specials": [],
-            "events": [],
-            "patio": [],
-            "openings": [],
-            "closures": [],
-            "moves": [],
-            "brunch": [],
-            "reservations": [],
-            "takeout": []
-          }
-        }
-      ],
+      "website": "https://dal.campusdish.com/LocationsAndMenus/LifeSciencesCentre/Zoca",
+      "error": "quarantined_cross_entity_redirect",
+      "observedAt": "2026-10-21T14:28:14.578Z",
       "sourceKind": "official_website",
       "reviewState": "cross-check"
     }
