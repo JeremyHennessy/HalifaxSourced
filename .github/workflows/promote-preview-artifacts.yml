@@ -12,6 +12,11 @@ on:
       - main
   workflow_dispatch:
     inputs:
+      dry_run:
+        description: Read-only reconciliation report; do not create branches or pull requests.
+        required: false
+        type: boolean
+        default: false
       run_id:
         description: Workflow run ID containing the preview artifact to promote.
         required: true
@@ -79,7 +84,7 @@ jobs:
   promote:
     name: Promote ${{ matrix.artifact_name }} (source ${{ matrix.run_id }})
     needs: reconcile
-    if: needs.reconcile.outputs.has_work == 'true'
+    if: needs.reconcile.outputs.has_work == 'true' && (github.event_name != 'workflow_dispatch' || inputs.dry_run != true)
     strategy:
       fail-fast: false
       max-parallel: 1
@@ -171,7 +176,7 @@ jobs:
         shell: bash
         run: |
           artifact_name="${{ steps.preview.outputs.artifact_name }}"
-          branch="codex/promote-${artifact_name}"
+          branch="$(node scripts/preview-branch-policy.mjs target "$artifact_name")"
 
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -195,11 +200,8 @@ jobs:
           # A second read catches a review opened after the planner. Neither an
           # existing PR nor its owner branch is ever edited by this job.
           heads="$(gh pr list --base main --state open --json headRefName --jq '.[].headRefName')"
-          case "$artifact_name" in
-            city-events-preview) reserved_pattern='^codex/promote-city-events-preview$' ;;
-            *) reserved_pattern='^codex/promote-(source-expansion|social-source)-preview$' ;;
-          esac
-          if printf '%s\n' "$heads" | grep -Eq "$reserved_pattern"; then
+          reserved_heads="$(node scripts/preview-branch-policy.mjs peers "$artifact_name")"
+          if printf '%s\n' "$heads" | grep -Fxf <(printf '%s\n' "$reserved_heads"); then
             echo "::error::An active review reserves this lane or its overlapping files."
             exit 1
           fi

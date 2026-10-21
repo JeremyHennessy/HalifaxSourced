@@ -33,3 +33,11 @@ All 43 unique held identities are explicitly reconciled in `data/regional-held-d
 The 13 recently added listings (12 initially missing pins) are checked field-by-field in `data/regional-recent-field-audit.json`. One field improvement is published: Turkuaz's owner-linked structured contact widget explicitly supplies all seven days in 24-hour time. No meridiem or holiday behavior is inferred.
 
 Alexandra’s Hammonds Plains remains without a map pin. Its owner JSON-LD coordinate conflicts by about 3 km with an exact-address directory coordinate. Both pairs are retained only as audit evidence; neither is substituted for the missing verified location. All 12 initial pin gaps remain unpublished. Hours/menu uncertainties elsewhere remain explicit rather than being filled from neighboring branches or old PDFs.
+
+## Safe promotion-lane rotation
+
+The event and source-expansion replacement lanes use `codex/promote-city-events-preview-v2` and `codex/promote-source-expansion-preview-v2`. The social lane is unchanged. Shared policy drives both the planner and publisher; the former event/source branches remain preserved at their exact reviewed heads. A reopened old PR still reserves its lane, and any changed or missing preserved head fails closed for fresh review. Existing ancestry, SHA lease, accepted-source chronology, manual-run and bounded retry safeguards remain in force.
+
+Manual promotion dispatch has a `dry_run` option that runs read-only reconciliation and preserves its plan artifact while skipping the entire mutation job. Verify actual live queue decisions after this configuration reaches tested main before claiming a lane is operational. Rotation is not approval of source facts and does not merge or deploy generated previews.
+
+Closing obsolete drafts 122 and 131 remains pending explicit owner confirmation. They are still open and therefore still reserve the affected lanes, including their replacements. Tested lane configuration alone is not operational recovery.

@@ -1,10 +1,19 @@
 // Pure, read-only queue policy. GitHub branches, PRs and retained workflow runs
 // are the durable state; an Actions concurrency slot is never treated as a FIFO.
 export const LANES = [
-  { artifact: 'city-events-preview', workflow: 'City Events Preview', file: 'city-events-preview.yml', priority: 1, group: 'events' },
-  { artifact: 'source-expansion-preview', workflow: 'Source Expansion Preview', file: 'source-expansion-preview.yml', priority: 2, group: 'source-social' },
+  { artifact: 'city-events-preview', workflow: 'City Events Preview', file: 'city-events-preview.yml', priority: 1, group: 'events', branch: 'codex/promote-city-events-preview-v2', retiredBranches: [{branch:'codex/promote-city-events-preview', sha:'a0c4f28512269aace14da4c7d7efcd11ed9723e4'}] },
+  { artifact: 'source-expansion-preview', workflow: 'Source Expansion Preview', file: 'source-expansion-preview.yml', priority: 2, group: 'source-social', branch: 'codex/promote-source-expansion-preview-v2', retiredBranches: [{branch:'codex/promote-source-expansion-preview', sha:'f1af8dc099331a27f0da2528b3c86114c446ea5d'}] },
   { artifact: 'social-source-preview', workflow: 'Social Source Preview', file: 'social-source-preview.yml', priority: 3, group: 'source-social' }
-].map(lane => ({ ...lane, branch: `codex/promote-${lane.artifact}` }));
+].map(lane => ({ ...lane, branch: lane.branch || `codex/promote-${lane.artifact}`, retiredBranches: lane.retiredBranches || [] }));
+export function promotionLane(artifact) {
+  const lane=LANES.find(row=>row.artifact===artifact);
+  if(!lane) throw new Error('Unknown promotion artifact');
+  return lane;
+}
+export function reservedBranchNames(artifact) {
+  const lane=promotionLane(artifact);
+  return LANES.filter(peer=>peer.group===lane.group).flatMap(peer=>[peer.branch,...peer.retiredBranches.map(row=>row.branch)]);
+}
 export function laneForPath(path) {
   if (/^data\/(?:build\/)?(?:city-events|event-entity-resolution)\.(?:js|json)$/.test(path)) return 'events';
   if (/^data\/(?:build\/)?(?:official-site-signals|verified-source-pages|structured-events|patio-directory-facts|public-special-source-leads|first-party-sources|website-feed-signals|website-page-intelligence|social-signals|recent-social-posts|reviewed-social-posts|thumbnail-candidates|thumbnail-coverage-report)\.(?:js|json)$/.test(path)) return 'source-social';
@@ -25,8 +34,10 @@ export function laneReservation(lane, state) {
   const peers = LANES.filter(other => other.group === lane.group);
   for (const peer of peers) {
     const peerState = state.lanes?.[peer.artifact] || {};
-    const pr = (state.openPulls || []).find(item => item.head?.ref === peer.branch || item.headRefName === peer.branch || item.reservedGroups?.includes(lane.group));
+    const reservedNames=reservedBranchNames(peer.artifact);
+    const pr = (state.openPulls || []).find(item => reservedNames.includes(item.head?.ref || item.headRefName) || item.reservedGroups?.includes(lane.group));
     if (pr) return { reason: 'active-review', holder: peer.artifact, url: pr.html_url || pr.url || null };
+    if (peerState.retiredBranchConflicts?.length) return {reason:'retired-branch-changed',holder:peer.artifact,conflicts:peerState.retiredBranchConflicts,blocker:'A preserved preview head changed or disappeared; re-review ownership before using its replacement lane.'};
     if (peerState.branch?.sha && peerState.branch.aheadBy !== 0 && peerState.branch.mergedHeadSha !== peerState.branch.sha) {
       return { reason: 'prepared-branch-reserved', holder: peer.artifact, sha: peerState.branch.sha,
         sourceRunId: peerState.branch.receipt?.artifactRunId || peerState.branch.metadata?.artifactRunId || null,

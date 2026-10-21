@@ -50,6 +50,11 @@ async function collect({ manual = null } = {}) {
       const acceptedRun = await get(`actions/runs/${acceptedReceipt.artifactRunId}`, true);
       if (acceptedRun) acceptedReceipt.sourceRunCreatedAt = acceptedRun.created_at;
     }
+    const retiredBranchConflicts=[];
+    for(const retired of lane.retiredBranches) {
+      const oldRef=await get(`git/ref/heads/${retired.branch}`,true);
+      if(oldRef?.object?.sha!==retired.sha) retiredBranchConflicts.push({branch:retired.branch,expectedSha:retired.sha,actualSha:oldRef?.object?.sha||null});
+    }
     const ref = await get(`git/ref/heads/${lane.branch}`, true);
     let branch = null;
     if (ref) {
@@ -86,7 +91,7 @@ async function collect({ manual = null } = {}) {
         }
       }
     }
-    state.lanes[lane.artifact] = { acceptedReceipt, branch, runs, readBlocker };
+    state.lanes[lane.artifact] = { retiredBranchConflicts, acceptedReceipt, branch, runs, readBlocker };
   }
   // Retry counters survive runners in retained Actions job history. At most
   // three attempts per candidate within the last 30 days; no background sleep.
