@@ -47,3 +47,16 @@ assert.equal(dedupeCanonicalEvents([library,{...library,id:'fresh',title:'Meet J
 assert.deepEqual(dedupeCanonicalEvents([library,{...library,id:'fresh'}])[0].duplicateEventIds,['fresh']);
 assert.equal(dedupeCanonicalEvents([library,{...library,id:'other',startAt:'2026-10-22T21:30:00Z'}]).length,2);
 assert.equal(dedupeCanonicalEvents([library,{...library,id:'other',eventUrl:'https://halifax.bibliocommons.com/events/abcdef'}]).length,2);
+
+// A title cleanup must not invalidate saves keyed to the published occurrence ID.
+const publishedJunoId = 'alderney-gate-library-events-dd528c059fc415a5';
+const cleanedJunoAlias = 'alderney-gate-library-events-ec0ca632d4bf24a5';
+const junoOccurrence = context.window.HALIFAX_CITY_EVENTS.events.find(event =>
+  [event.id, ...(event.duplicateEventIds || [])].includes(publishedJunoId));
+if (junoOccurrence) {
+  assert.equal(junoOccurrence.id, publishedJunoId, 'Preserve published saved-event identity');
+  assert.equal(junoOccurrence.title, 'Meet Juno, a St. John Ambulance Therapy Dog');
+  assert.ok(junoOccurrence.duplicateEventIds.includes(cleanedJunoAlias));
+  const sanitized = dedupeCanonicalEvents(JSON.parse(JSON.stringify([junoOccurrence])));
+  assert.equal(sanitized[0].id, publishedJunoId, 'Release sanitation preserves published identity');
+}

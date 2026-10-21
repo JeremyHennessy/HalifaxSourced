@@ -803,7 +803,7 @@ window.HALIFAX_CITY_EVENTS = {
       "organizerName": "Halifax Public Libraries"
     },
     {
-      "id": "alderney-gate-library-events-ec0ca632d4bf24a5",
+      "id": "alderney-gate-library-events-dd528c059fc415a5",
       "title": "Meet Juno, a St. John Ambulance Therapy Dog",
       "startAt": "2026-10-21T21:30:00.000Z",
       "endAt": "2026-10-21T22:30:00.000Z",
@@ -833,7 +833,7 @@ window.HALIFAX_CITY_EVENTS = {
         "alderney-gate-library-events"
       ],
       "duplicateEventIds": [
-        "alderney-gate-library-events-dd528c059fc415a5"
+        "alderney-gate-library-events-ec0ca632d4bf24a5"
       ],
       "venueId": "alderney-gate-library",
       "neighbourhood": "Downtown Dartmouth",
