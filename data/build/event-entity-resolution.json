@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-21T18:35:11.467Z",
+  "generatedAt": "2026-10-21T21:49:28.918Z",
   "eventCount": 172,
   "venueResolved": 124,
   "organizerResolved": 150,
@@ -107,17 +107,6 @@
       "restaurantBasis": null
     },
     {
-      "eventId": "halifax-convention-centre-9e9d5734e8f58504",
-      "title": "CIMVHR Forum 2026",
-      "sourceId": "halifax-convention-centre",
-      "venueId": "halifax-convention-centre",
-      "venueBasis": "source_id",
-      "organizerId": "halifax-convention-centre",
-      "organizerBasis": "source_id",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
       "eventId": "https://novascotia.com/event/deepwater/#event",
       "title": "Deepwater",
       "sourceId": "tourism-ns-events",
@@ -136,28 +125,6 @@
       "venueBasis": null,
       "organizerId": null,
       "organizerBasis": null,
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "bedford-library-events-1a1904b4d4fa55e0",
-      "title": "After School Club: PS5",
-      "sourceId": "bedford-library-events",
-      "venueId": "bedford-library",
-      "venueBasis": "source_id",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "alderney-gate-library-events-21eb43d6b209a2c4",
-      "title": "Makers Gonna Make: Perler Beads",
-      "sourceId": "alderney-gate-library-events",
-      "venueId": "alderney-gate-library",
-      "venueBasis": "source_id",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
       "restaurantId": null,
       "restaurantBasis": null
     },
@@ -184,7 +151,7 @@
       "restaurantBasis": null
     },
     {
-      "eventId": "alderney-gate-library-events-dd528c059fc415a5",
+      "eventId": "alderney-gate-library-events-ec0ca632d4bf24a5",
       "title": "Meet Juno, a St. John Ambulance Therapy Dog",
       "sourceId": "alderney-gate-library-events",
       "venueId": "alderney-gate-library",
@@ -474,6 +441,17 @@
       "title": "No One Fights Alone: Cancer Support",
       "sourceId": "woodlawn-library-events",
       "venueId": "woodlawn-library",
+      "venueBasis": "source_id",
+      "organizerId": "halifax-public-libraries",
+      "organizerBasis": "source_name_token",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
+      "eventId": "bedford-library-events-20781097868f48be",
+      "title": "Puppet Show: Too Much Noise on Halloween Night",
+      "sourceId": "bedford-library-events",
+      "venueId": "bedford-library",
       "venueBasis": "source_id",
       "organizerId": "halifax-public-libraries",
       "organizerBasis": "source_name_token",
@@ -1422,6 +1400,28 @@
       "venueId": null,
       "venueBasis": null,
       "organizerId": "symphony-nova-scotia",
+      "organizerBasis": "source_id",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
+      "eventId": "scotiabank-centre-068615edd053e5c0",
+      "title": "Riverdance 30 - The New Generation",
+      "sourceId": "scotiabank-centre",
+      "venueId": "scotiabank-centre-halifax",
+      "venueBasis": "source_id",
+      "organizerId": "scotiabank-centre",
+      "organizerBasis": "source_id",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
+      "eventId": "scotiabank-centre-a1f53da4cf4092a0",
+      "title": "Riverdance 30 - The New Generation",
+      "sourceId": "scotiabank-centre",
+      "venueId": "scotiabank-centre-halifax",
+      "venueBasis": "source_id",
+      "organizerId": "scotiabank-centre",
       "organizerBasis": "source_id",
       "restaurantId": null,
       "restaurantBasis": null
