@@ -452,6 +452,39 @@ window.HALIFAX_RESTAURANT_CORRECTIONS = {
       "reviewedAt": "2026-10-21T00:51:30Z",
       "reviewState": "verified",
       "claim": "Owner homepage identifies McKelvie’s restaurant at 1680 Lower Water Street, Halifax, matching the existing canonical location and reviewed photo. Set the official website rather than treating an OpenStreetMap source record as an owner site. No other fields or historic evidence clocks changed."
+    },
+    {
+      "restaurantId": "osm-node-8142485078-blue-elephant-thai-restaurant",
+      "fields": {
+        "neighborhood": "Larry Uteck / Bedford South"
+      },
+      "sourceUrl": "https://blueelephantthai.ca/",
+      "claim": "Official restaurant address identifies 81 Peakview Way in Bedford. Correct the misleading Armdale / Fairview discovery label; this neighborhood label is not a legal municipal-boundary claim. Do not change coordinates, address, hours or lifecycle status.",
+      "observedAt": "2026-10-21T13:10:10.671Z",
+      "reviewedAt": "2026-10-21T13:10:10.671Z",
+      "reviewState": "verified"
+    },
+    {
+      "restaurantId": "osm-node-4810480322-happy-sushi",
+      "fields": {
+        "neighborhood": "Larry Uteck / Bedford South"
+      },
+      "sourceUrl": "https://www.crombie.ca/wp-content/uploads/2023/09/NS-Hemlock-Square-Site-09-13-2023.pdf",
+      "claim": "Landlord Hemlock Square plan places the existing Peakview Way sushi tenant in the Larry Uteck retail area. This is geographical corroboration only, not a fresh opening/ownership/renaming assertion. Correct the misleading Armdale / Fairview discovery label; this neighborhood label is not a legal municipal-boundary claim. Do not change coordinates, address, hours or lifecycle status.",
+      "observedAt": "2026-10-21T13:10:10.671Z",
+      "reviewedAt": "2026-10-21T13:10:10.671Z",
+      "reviewState": "verified"
+    },
+    {
+      "restaurantId": "osm-node-5152065724-cheese-curds-gourmet-burgers-and-poutinerie-habaneros-modern-taco-bar",
+      "fields": {
+        "neighborhood": "Larry Uteck / Bedford South"
+      },
+      "sourceUrl": "https://www.habaneros.biz/larry-uteck",
+      "claim": "Official location page identifies 507 Larry Uteck Boulevard and the shared Cheese Curds/Habaneros operation. Preserve the combined location and its stable ID. Correct the misleading Armdale / Fairview discovery label; this neighborhood label is not a legal municipal-boundary claim. Do not change coordinates, address, hours or lifecycle status.",
+      "observedAt": "2026-10-21T13:10:10.671Z",
+      "reviewedAt": "2026-10-21T13:10:10.671Z",
+      "reviewState": "verified"
     }
   ],
   "aliases": [

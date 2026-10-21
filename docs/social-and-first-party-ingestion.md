@@ -113,6 +113,7 @@ The importer classifies permitted API-returned post/caption text in memory and r
 - post/media permalink
 - publication/observation time
 - matched discovery keywords
+- bounded factual candidate tokens (dates, times, prices and standard condition flags) for deals/events
 
 It intentionally does not retain full Facebook messages, Instagram captions, comments, reactions, or media bodies for republishing.
 
@@ -138,3 +139,25 @@ Secrets are read from the Actions environment and are never written to build art
 - `api_observed` — an approved platform API returned a post/media object for a uniquely associated profile.
 
 A verified profile relationship does **not** make every post, special, event, hour, price, or opening claim current. Time-sensitive claims require their own source observation and freshness policy.
+
+## Fact-only deal and event candidates
+
+The Meta importer now classifies the available caption/message in memory, then discards it. It does not request or retain image/video URLs. Its title and summary are generated generic discovery labels, not copied captions. Image publication rights remain a completely separate workflow; extracting a factual candidate never grants image permission.
+
+`scripts/lib/social-fact-candidates.mjs` collects bounded literal date/time/price mentions and a small vocabulary of conditions. These are **candidates**, not a complete language understanding system or verified offers. Unknown conditions may be absent, dollar signs do not establish CAD, and relative dates are not resolved. The original post permalink and observation/publication timestamps remain attached. Missing exact post permalinks must not be presented as verified post evidence.
+
+Every candidate is explicitly non-publishable and requires exact-branch, timing, timezone, complete terms, expiry, freshness and cancellation checks. `America/Halifax` is the target-region timezone, not a statement that the post confirmed it. A unique website-linked handle is not exact-venue proof. Shared-brand profiles and non-active profile records are excluded from API attempts. Existing post approval decisions cannot publish these unresolved factual candidates.
+
+Stories are not collected by this importer. No Story endpoint, expired-Story recovery, OCR, media downloading, browser login, or HTML scraping fallback has been added. Content available only in artwork remains a coverage gap. An authorized source submission could supply facts later, but no such source or access is implied here.
+
+## Access and coverage audit, 2026-10-21
+
+The accepted first-party snapshot (generated 2026-10-06) contains 150 Facebook and 153 Instagram profile associations. After the existing local-restaurant policy filter, these become 125 Facebook and 129 Instagram associations. These are navigation/source-discovery relationships, not functioning content feeds. Examples include Battery Park, The Canteen, Bar Kismet, and separate Dartmouth/Halifax handles for 2 Doors Down; the latter illustrates why profile uniqueness must not resolve branch identity by itself.
+
+The accepted Meta snapshot (generated 2026-09-04) reports zero posts observed and missing Facebook/Instagram credentials. This historical snapshot does not prove current secret configuration. A fresh Metricool capability read on 2026-10-21 also reported no connected social network; its account analytics/scheduling connection is not a substitute for the Meta permissions required by this collector. No live Meta posts were newly collected in this change.
+
+Next access step: verify the existing authorized Meta application and the exact Page/Instagram permissions before configuring any credential. Persistent access changes require separate approval. Eligible public business websites, RSS/Atom feeds and linked public event/menu sources remain independent permitted sources, subject to their own access and identity checks. Linking a public Instagram/Facebook account does not authorize bypassing access controls or guarantee Stories coverage.
+
+Failed, missing-access and unattempted profile refreshes retain eligible, still-recent prior observations without changing their source timestamps. Retained legacy records are reduced to the same fact-only contract; captions and media URLs are not carried forward. `retainedPosts`, `profilesCompleted` and `observationState: retained_not_refreshed` distinguish history from newly observed content. Successful profile pulls replace that profile's bounded snapshot. No missing-access run becomes a fresh observation.
+
+The public runtime excludes fact-only candidates from current special/event flags, source links and official updates. The review builder also rejects all fact-only candidates, including malformed or older blanket approvals. A future explicit fact-verification workflow is required before these candidates can become published deals/events; this patch does not invent one.

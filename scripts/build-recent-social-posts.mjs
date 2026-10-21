@@ -207,6 +207,8 @@ function normalizePost(post, sourceFamily) {
     publicationDateBasis: post.publicationDateBasis || null,
     contentHash: createHash("sha256").update(`${title}|${summary}`).digest("hex"),
     rightsState: "public_reference_not_media_licence",
+    ...(post.factCandidate ? { factCandidate: post.factCandidate } : {}),
+    ...(post.contentPolicy ? { contentPolicy: post.contentPolicy } : {}),
     ageDays,
     isRecent: isRecent && integrity.currentPost({ ...post, title, publishedAt }, Date.now(), lookbackDays),
     lookbackDays,

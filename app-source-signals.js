@@ -141,7 +141,7 @@ for (const restaurant of restaurants) {
   restaurant.socialSignals = apiSignals;
   restaurant.currentSourceSignals = currentSignals;
   restaurant.officialUpdates = (normalizedPosts.length ? normalizedPosts : [...feedPosts, ...apiPosts])
-    .filter((signal) => safeUrl(signal?.postUrl) && HalifaxDataIntegrity.locationSafe(signal) && HalifaxDataIntegrity.publicationState(signal.publishedAt).dateState !== "future")
+    .filter((signal) => !HalifaxDataIntegrity.heldSocialFact(signal) && safeUrl(signal?.postUrl) && HalifaxDataIntegrity.locationSafe(signal) && HalifaxDataIntegrity.publicationState(signal.publishedAt).dateState !== "future")
     .filter((signal, index, all) => all.findIndex((item) => item.postUrl === signal.postUrl) === index)
     .sort((a, b) => String(b.publishedAt || b.observedAt || "").localeCompare(String(a.publishedAt || a.observedAt || "")));
   restaurant.socialProfiles = allProfiles;

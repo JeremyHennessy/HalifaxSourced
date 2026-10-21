@@ -107,8 +107,11 @@
     }
     return new Date(end).toISOString();
   }
+  function heldSocialFact(item) {
+    return item?.factCandidate != null || item?.contentPolicy === "factual_candidates_no_caption_or_media" || item?.reviewState === "needs_fact_review";
+  }
   function currentPost(item, now = Date.now(), maxDays = 60) {
-    if (!locationSafe(item) || !safeSource(item.postUrl || item.sourceUrl)) return false;
+    if (heldSocialFact(item) || !locationSafe(item) || !safeSource(item.postUrl || item.sourceUrl)) return false;
     if (!publicationState(item.publishedAt, now, maxDays).isRecent) return false;
     for (const value of [item.expiresAt, item.reviewDueAt, postExpiry(item, maxDays)]) if (value && (!Number.isFinite(Date.parse(value)) || Date.parse(value) <= now)) return false;
     return true;
@@ -147,7 +150,7 @@
     }
     return [...new Set(dates)].sort().reverse();
   }
-  const api = { pointerSafe, safeSource, sourceHost, publicationState, locationSafe, currentOffer, currentPost, postExpiry, publisherDates };
+  const api = { heldSocialFact, pointerSafe, safeSource, sourceHost, publicationState, locationSafe, currentOffer, currentPost, postExpiry, publisherDates };
   root.HalifaxDataIntegrity = api;
   if (typeof module !== 'undefined') module.exports = api;
 })(globalThis);

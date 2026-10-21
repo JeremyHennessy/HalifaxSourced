@@ -27,6 +27,7 @@ on:
       - scripts/import-first-party-feed-signals.mjs
       - scripts/import-official-page-intelligence.mjs
       - scripts/import-meta-social.mjs
+      - scripts/lib/social-fact-candidates.mjs
       - scripts/build-recent-social-posts.mjs
       - scripts/build-reviewed-social-posts.mjs
       - data/thumbnail-assessments.json
