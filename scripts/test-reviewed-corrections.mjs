@@ -164,7 +164,7 @@ let specials;
 try {
   await mkdir(join(fixture, 'scripts'), { recursive: true });
   await mkdir(join(fixture, 'data/build'), { recursive: true });
-  for (const file of ['scripts/build-structured-specials.mjs', 'data/build/catalog.json', 'data/build/first-party-sources.json', 'data/build/verified-source-pages.json', 'data/reviewed-structured-specials.json', 'data/build/public-special-source-leads.json', 'data/discovery-overrides.json']) {
+  for (const file of ['source-integrity.js', 'scripts/build-structured-specials.mjs', 'data/build/catalog.json', 'data/build/first-party-sources.json', 'data/build/verified-source-pages.json', 'data/reviewed-structured-specials.json', 'data/build/public-special-source-leads.json', 'data/discovery-overrides.json']) {
     await copyFile(new URL(file, root), join(fixture, file));
   }
   await writeFile(join(fixture, 'runner.mjs'), `
