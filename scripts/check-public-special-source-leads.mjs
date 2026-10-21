@@ -65,6 +65,10 @@ const records = rawRecords.filter((record) => !excludedByLocalPolicy(record, loc
 const localPolicyExcludedRecords = rawRecords.length - records.length;
 
 for (const record of records) {
+  if (record.refreshState === "retained_after_failure") {
+    if (!record.sourceFailure?.reason || !validDate(record.sourceFailure.lastAttemptAt ?? null)
+      || (record.sourceFailure.sourceUrl && !validUrl(record.sourceFailure.sourceUrl))) errors.push(`invalid_retention_receipt:${record.sourceRecordId}`);
+  }
   if (!record.sourceRecordId || seen.has(record.sourceRecordId)) errors.push(`invalid_or_duplicate_id:${record.sourceRecordId || "missing"}`);
   seen.add(record.sourceRecordId);
   if (!allowedSourceIds.has(record.sourceId || "")) errors.push(`invalid_source_id:${record.sourceRecordId}`);

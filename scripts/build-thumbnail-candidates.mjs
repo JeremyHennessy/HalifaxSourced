@@ -404,7 +404,8 @@ function publicSpecialImageCandidate(lead, restaurantName) {
     attribution: lead.sourceName || null,
     alt: lead.title ? `${lead.venueName || restaurantName}: ${lead.title}` : `${lead.venueName || restaurantName} special image candidate`,
     confidence: "public_special_source_media",
-    observedAt: lead.observedAt || generatedAt,
+    observedAt: lead.observedAt || (lead.refreshState === "retained_after_failure" ? null : generatedAt),
+    ...(lead.refreshState === "retained_after_failure" ? { refreshState: lead.refreshState, sourceFailure: lead.sourceFailure || null } : {}),
     publishedAt: lead.sourceUpdatedAt || null,
     title: lead.title || null,
     category: lead.specialType || null
@@ -522,12 +523,12 @@ function normalizeCandidate(candidate) {
     attribution: candidate.attribution || null,
     alt: String(candidate.alt || candidate.restaurantName || "Restaurant thumbnail").slice(0, 180),
     confidence: candidate.confidence,
-    observedAt: (candidate.recordKind === "source_reference" || candidate.sourceKind === "approved_restaurant_media") ? (candidate.observedAt || null) : (candidate.observedAt || generatedAt),
+    observedAt: (candidate.recordKind === "source_reference" || candidate.sourceKind === "approved_restaurant_media" || candidate.refreshState === "retained_after_failure") ? (candidate.observedAt || null) : (candidate.observedAt || generatedAt),
     publishedAt: candidate.publishedAt || null,
     title: candidate.title || null,
     category: candidate.category || null,
     eligibleForProduction: candidate.reviewState === "approved" && candidate.rightsStatus === "production_approved",
-    ...Object.fromEntries(["url", "sourceType", "creator", "license", "licence", "rightsState", "reviewStatus", "usageRights", "rights", "ownerApproved", "quarantined", "renderable", "recordKind", "permissionSource", "rightsNote"].filter(key => key in candidate).map(key => [key, candidate[key]]))
+    ...Object.fromEntries(["url", "sourceType", "creator", "license", "licence", "rightsState", "reviewStatus", "usageRights", "rights", "ownerApproved", "quarantined", "renderable", "recordKind", "permissionSource", "rightsNote", "refreshState", "sourceFailure"].filter(key => key in candidate).map(key => [key, candidate[key]]))
   };
   const reviewedDecision = reviewedThumbnailDecisionsById.get(normalized.id) || reviewedThumbnailDecisionsByImage.get(`${normalized.restaurantId}|${normalized.thumbnailUrl}`);
   if (reviewedDecision === "needs_source_check") normalized.reviewState = "source_check";

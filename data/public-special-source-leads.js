@@ -103,7 +103,13 @@ window.HALIFAX_PUBLIC_SPECIAL_SOURCE_LEADS = {
       "featured": false,
       "claimable": true,
       "matchMethod": "exact_name",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "refreshState": "retained_after_failure",
+      "sourceFailure": {
+        "reason": "api_http_401",
+        "lastAttemptAt": "2026-10-21T14:33:21.309Z",
+        "sourceUrl": "https://halifaxevents.ca/happy-hour"
+      }
     },
     {
       "sourceRecordId": "discover-halifax-dine-around-2026-5-fishermen-restaurant-dine-around-menu-winters-harvest-1379f60a3683",
@@ -192,7 +198,13 @@ window.HALIFAX_PUBLIC_SPECIAL_SOURCE_LEADS = {
       "featured": false,
       "claimable": true,
       "matchMethod": "exact_name",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "refreshState": "retained_after_failure",
+      "sourceFailure": {
+        "reason": "api_http_401",
+        "lastAttemptAt": "2026-10-21T14:33:21.309Z",
+        "sourceUrl": "https://halifaxevents.ca/happy-hour"
+      }
     },
     {
       "sourceRecordId": "halifax-events-happy-hour-antojo-margarita-monday-482f8d30a0e9",
@@ -234,7 +246,13 @@ window.HALIFAX_PUBLIC_SPECIAL_SOURCE_LEADS = {
       "featured": false,
       "claimable": true,
       "matchMethod": "exact_name",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "refreshState": "retained_after_failure",
+      "sourceFailure": {
+        "reason": "api_http_401",
+        "lastAttemptAt": "2026-10-21T14:33:21.309Z",
+        "sourceUrl": "https://halifaxevents.ca/happy-hour"
+      }
     },
     {
       "sourceRecordId": "halifax-events-happy-hour-antojo-taco-tuesday-ebddcbbf3c8a",
@@ -276,7 +294,13 @@ window.HALIFAX_PUBLIC_SPECIAL_SOURCE_LEADS = {
       "featured": false,
       "claimable": true,
       "matchMethod": "exact_name",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "refreshState": "retained_after_failure",
+      "sourceFailure": {
+        "reason": "api_http_401",
+        "lastAttemptAt": "2026-10-21T14:33:21.309Z",
+        "sourceUrl": "https://halifaxevents.ca/happy-hour"
+      }
     },
     {
       "sourceRecordId": "discover-halifax-dine-around-2026-antojo-tacos-tequila-dine-around-menu-antojo-dine-around-40-c639f30e7010",
@@ -404,7 +428,13 @@ window.HALIFAX_PUBLIC_SPECIAL_SOURCE_LEADS = {
       "featured": false,
       "claimable": true,
       "matchMethod": "exact_name",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "refreshState": "retained_after_failure",
+      "sourceFailure": {
+        "reason": "api_http_401",
+        "lastAttemptAt": "2026-10-21T14:33:21.309Z",
+        "sourceUrl": "https://halifaxevents.ca/happy-hour"
+      }
     },
     {
       "sourceRecordId": "discover-halifax-dine-around-2026-bar-sofia-dine-around-2026-dine-around-menu-40-b67eb8450be8",
@@ -749,7 +779,13 @@ window.HALIFAX_PUBLIC_SPECIAL_SOURCE_LEADS = {
       "featured": false,
       "claimable": false,
       "matchMethod": "exact_name",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "refreshState": "retained_after_failure",
+      "sourceFailure": {
+        "reason": "food_crawl_section_not_found",
+        "lastAttemptAt": "2026-10-21T14:33:21.309Z",
+        "sourceUrl": "https://www.downtowndartmouth.ca/foodcrawl"
+      }
     },
     {
       "sourceRecordId": "discover-halifax-dine-around-2026-creme-creme-dine-around-breakfast-22ad72c17054",
@@ -1012,7 +1048,13 @@ window.HALIFAX_PUBLIC_SPECIAL_SOURCE_LEADS = {
       "featured": false,
       "claimable": true,
       "matchMethod": "exact_name",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "refreshState": "retained_after_failure",
+      "sourceFailure": {
+        "reason": "api_http_401",
+        "lastAttemptAt": "2026-10-21T14:33:21.309Z",
+        "sourceUrl": "https://halifaxevents.ca/happy-hour"
+      }
     },
     {
       "sourceRecordId": "downtown-dartmouth-food-crawl-spring-2026-dear-friend-bar-oysters-2-0-3af69e295bdb",
@@ -1056,7 +1098,13 @@ window.HALIFAX_PUBLIC_SPECIAL_SOURCE_LEADS = {
       "featured": false,
       "claimable": false,
       "matchMethod": "exact_name",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "refreshState": "retained_after_failure",
+      "sourceFailure": {
+        "reason": "food_crawl_section_not_found",
+        "lastAttemptAt": "2026-10-21T14:33:21.309Z",
+        "sourceUrl": "https://www.downtowndartmouth.ca/foodcrawl"
+      }
     },
     {
       "sourceRecordId": "downtown-dartmouth-food-crawl-spring-2026-doraku-chicken-cartilage-5-0-d6080d52256e",
@@ -1100,7 +1148,13 @@ window.HALIFAX_PUBLIC_SPECIAL_SOURCE_LEADS = {
       "featured": false,
       "claimable": false,
       "matchMethod": "exact_name",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "refreshState": "retained_after_failure",
+      "sourceFailure": {
+        "reason": "food_crawl_section_not_found",
+        "lastAttemptAt": "2026-10-21T14:33:21.309Z",
+        "sourceUrl": "https://www.downtowndartmouth.ca/foodcrawl"
+      }
     },
     {
       "sourceRecordId": "downtown-dartmouth-food-crawl-spring-2026-doraku-beef-sukiyaki-don-10-1-1d76aa389851",
@@ -1144,7 +1198,13 @@ window.HALIFAX_PUBLIC_SPECIAL_SOURCE_LEADS = {
       "featured": false,
       "claimable": false,
       "matchMethod": "exact_name",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "refreshState": "retained_after_failure",
+      "sourceFailure": {
+        "reason": "food_crawl_section_not_found",
+        "lastAttemptAt": "2026-10-21T14:33:21.309Z",
+        "sourceUrl": "https://www.downtowndartmouth.ca/foodcrawl"
+      }
     },
     {
       "sourceRecordId": "discover-halifax-dine-around-2026-drift-dine-around-2026-lunch-30-f56acfbe04a0",
@@ -1276,7 +1336,13 @@ window.HALIFAX_PUBLIC_SPECIAL_SOURCE_LEADS = {
       "featured": false,
       "claimable": true,
       "matchMethod": "unique_website_host",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "refreshState": "retained_after_failure",
+      "sourceFailure": {
+        "reason": "api_http_401",
+        "lastAttemptAt": "2026-10-21T14:33:21.309Z",
+        "sourceUrl": "https://halifaxevents.ca/happy-hour"
+      }
     },
     {
       "sourceRecordId": "discover-halifax-dine-around-2026-durty-nellys-authentic-irish-pub-dine-around-menu-nellys-cheesesteak-d448b71c27a0",
@@ -1367,7 +1433,13 @@ window.HALIFAX_PUBLIC_SPECIAL_SOURCE_LEADS = {
       "featured": false,
       "claimable": true,
       "matchMethod": "exact_name",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "refreshState": "retained_after_failure",
+      "sourceFailure": {
+        "reason": "api_http_401",
+        "lastAttemptAt": "2026-10-21T14:33:21.309Z",
+        "sourceUrl": "https://halifaxevents.ca/happy-hour"
+      }
     },
     {
       "sourceRecordId": "discover-halifax-dine-around-2026-economy-shoe-shop-dine-around-menu-economy-chopped-cheese-202efed6c22d",
@@ -1457,7 +1529,13 @@ window.HALIFAX_PUBLIC_SPECIAL_SOURCE_LEADS = {
       "featured": false,
       "claimable": true,
       "matchMethod": "exact_name",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "refreshState": "retained_after_failure",
+      "sourceFailure": {
+        "reason": "api_http_401",
+        "lastAttemptAt": "2026-10-21T14:33:21.309Z",
+        "sourceUrl": "https://halifaxevents.ca/happy-hour"
+      }
     },
     {
       "sourceRecordId": "discover-halifax-dine-around-2026-four-points-by-sheraton-halifax-dine-around-menu-2-course-meal-for-40-485e165d64a3",
@@ -1763,7 +1841,13 @@ window.HALIFAX_PUBLIC_SPECIAL_SOURCE_LEADS = {
       "featured": true,
       "claimable": true,
       "matchMethod": "exact_name",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "refreshState": "retained_after_failure",
+      "sourceFailure": {
+        "reason": "api_http_401",
+        "lastAttemptAt": "2026-10-21T14:33:21.309Z",
+        "sourceUrl": "https://halifaxevents.ca/happy-hour"
+      }
     },
     {
       "sourceRecordId": "downtown-dartmouth-food-crawl-spring-2026-humble-pie-standard-pies-various-flavours-8-0-8b740e79be01",
@@ -1807,7 +1891,13 @@ window.HALIFAX_PUBLIC_SPECIAL_SOURCE_LEADS = {
       "featured": false,
       "claimable": false,
       "matchMethod": "exact_name",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "refreshState": "retained_after_failure",
+      "sourceFailure": {
+        "reason": "food_crawl_section_not_found",
+        "lastAttemptAt": "2026-10-21T14:33:21.309Z",
+        "sourceUrl": "https://www.downtowndartmouth.ca/foodcrawl"
+      }
     },
     {
       "sourceRecordId": "discover-halifax-dine-around-2026-little-fish-wine-bar-dine-around-menu-fondue-february-bc7960fcca8c",
@@ -1898,7 +1988,13 @@ window.HALIFAX_PUBLIC_SPECIAL_SOURCE_LEADS = {
       "featured": false,
       "claimable": true,
       "matchMethod": "exact_name",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "refreshState": "retained_after_failure",
+      "sourceFailure": {
+        "reason": "api_http_401",
+        "lastAttemptAt": "2026-10-21T14:33:21.309Z",
+        "sourceUrl": "https://halifaxevents.ca/happy-hour"
+      }
     },
     {
       "sourceRecordId": "halifax-events-happy-hour-maxwells-plum-happy-hour-46113824ee39",
@@ -1944,7 +2040,13 @@ window.HALIFAX_PUBLIC_SPECIAL_SOURCE_LEADS = {
       "featured": false,
       "claimable": true,
       "matchMethod": "exact_name",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "refreshState": "retained_after_failure",
+      "sourceFailure": {
+        "reason": "api_http_401",
+        "lastAttemptAt": "2026-10-21T14:33:21.309Z",
+        "sourceUrl": "https://halifaxevents.ca/happy-hour"
+      }
     },
     {
       "sourceRecordId": "halifax-events-happy-hour-mckelvies-happy-hour-4aca98c43953",
@@ -1992,7 +2094,13 @@ window.HALIFAX_PUBLIC_SPECIAL_SOURCE_LEADS = {
       "featured": false,
       "claimable": true,
       "matchMethod": "exact_name",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "refreshState": "retained_after_failure",
+      "sourceFailure": {
+        "reason": "api_http_401",
+        "lastAttemptAt": "2026-10-21T14:33:21.309Z",
+        "sourceUrl": "https://halifaxevents.ca/happy-hour"
+      }
     },
     {
       "sourceRecordId": "discover-halifax-dine-around-2026-mckelvies-restaurant-dine-around-2026-mckelvies-dine-around-menu-0e11e7def4bc",
@@ -2126,7 +2234,13 @@ window.HALIFAX_PUBLIC_SPECIAL_SOURCE_LEADS = {
       "featured": false,
       "claimable": true,
       "matchMethod": "unique_website_host",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "refreshState": "retained_after_failure",
+      "sourceFailure": {
+        "reason": "api_http_401",
+        "lastAttemptAt": "2026-10-21T14:33:21.309Z",
+        "sourceUrl": "https://halifaxevents.ca/happy-hour"
+      }
     },
     {
       "sourceRecordId": "halifax-events-happy-hour-moxies-nova-centre-happy-hour-ebecaf53cb2f",
@@ -2174,7 +2288,13 @@ window.HALIFAX_PUBLIC_SPECIAL_SOURCE_LEADS = {
       "featured": false,
       "claimable": true,
       "matchMethod": "unique_website_host",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "refreshState": "retained_after_failure",
+      "sourceFailure": {
+        "reason": "api_http_401",
+        "lastAttemptAt": "2026-10-21T14:33:21.309Z",
+        "sourceUrl": "https://halifaxevents.ca/happy-hour"
+      }
     },
     {
       "sourceRecordId": "discover-halifax-dine-around-2026-pane-e-circo-dine-around-2026-breakfast-d6ffb992044b",
@@ -2304,7 +2424,13 @@ window.HALIFAX_PUBLIC_SPECIAL_SOURCE_LEADS = {
       "featured": false,
       "claimable": false,
       "matchMethod": "exact_name",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "refreshState": "retained_after_failure",
+      "sourceFailure": {
+        "reason": "food_crawl_section_not_found",
+        "lastAttemptAt": "2026-10-21T14:33:21.309Z",
+        "sourceUrl": "https://www.downtowndartmouth.ca/foodcrawl"
+      }
     },
     {
       "sourceRecordId": "downtown-dartmouth-food-crawl-spring-2026-revana-pizza-mini-donair-9-tax-in-0-5b732e902986",
@@ -2348,7 +2474,13 @@ window.HALIFAX_PUBLIC_SPECIAL_SOURCE_LEADS = {
       "featured": false,
       "claimable": false,
       "matchMethod": "exact_name",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "refreshState": "retained_after_failure",
+      "sourceFailure": {
+        "reason": "food_crawl_section_not_found",
+        "lastAttemptAt": "2026-10-21T14:33:21.309Z",
+        "sourceUrl": "https://www.downtowndartmouth.ca/foodcrawl"
+      }
     },
     {
       "sourceRecordId": "downtown-dartmouth-food-crawl-spring-2026-revana-pizza-mini-poutine-9-tax-in-1-9b73e876eb9c",
@@ -2392,7 +2524,13 @@ window.HALIFAX_PUBLIC_SPECIAL_SOURCE_LEADS = {
       "featured": false,
       "claimable": false,
       "matchMethod": "exact_name",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "refreshState": "retained_after_failure",
+      "sourceFailure": {
+        "reason": "food_crawl_section_not_found",
+        "lastAttemptAt": "2026-10-21T14:33:21.309Z",
+        "sourceUrl": "https://www.downtowndartmouth.ca/foodcrawl"
+      }
     },
     {
       "sourceRecordId": "discover-halifax-dine-around-2026-salt-ash-dine-around-2026-dine-around-menu-30-89719936a2fd",
@@ -2483,7 +2621,13 @@ window.HALIFAX_PUBLIC_SPECIAL_SOURCE_LEADS = {
       "featured": false,
       "claimable": true,
       "matchMethod": "exact_name",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "refreshState": "retained_after_failure",
+      "sourceFailure": {
+        "reason": "api_http_401",
+        "lastAttemptAt": "2026-10-21T14:33:21.309Z",
+        "sourceUrl": "https://halifaxevents.ca/happy-hour"
+      }
     },
     {
       "sourceRecordId": "discover-halifax-dine-around-2026-sapori-italian-street-food-dine-around-2026-menu-1-20-00-f7236475686c",
@@ -2617,7 +2761,13 @@ window.HALIFAX_PUBLIC_SPECIAL_SOURCE_LEADS = {
       "featured": false,
       "claimable": true,
       "matchMethod": "exact_name",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "refreshState": "retained_after_failure",
+      "sourceFailure": {
+        "reason": "api_http_401",
+        "lastAttemptAt": "2026-10-21T14:33:21.309Z",
+        "sourceUrl": "https://halifaxevents.ca/happy-hour"
+      }
     },
     {
       "sourceRecordId": "discover-halifax-dine-around-2026-sea-smoke-restaurant-bar-sea-smoke-dine-around-toki-apple-cider-41b857b8e8c3",
@@ -2751,7 +2901,13 @@ window.HALIFAX_PUBLIC_SPECIAL_SOURCE_LEADS = {
       "featured": true,
       "claimable": true,
       "matchMethod": "exact_name",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "refreshState": "retained_after_failure",
+      "sourceFailure": {
+        "reason": "api_http_401",
+        "lastAttemptAt": "2026-10-21T14:33:21.309Z",
+        "sourceUrl": "https://halifaxevents.ca/happy-hour"
+      }
     },
     {
       "sourceRecordId": "discover-halifax-dine-around-2026-seaport-social-dine-around-menu-3-course-menu-for-50-d486027074dd",
@@ -2971,7 +3127,13 @@ window.HALIFAX_PUBLIC_SPECIAL_SOURCE_LEADS = {
       "featured": false,
       "claimable": true,
       "matchMethod": "exact_name",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "refreshState": "retained_after_failure",
+      "sourceFailure": {
+        "reason": "api_http_401",
+        "lastAttemptAt": "2026-10-21T14:33:21.309Z",
+        "sourceUrl": "https://halifaxevents.ca/happy-hour"
+      }
     },
     {
       "sourceRecordId": "downtown-dartmouth-food-crawl-spring-2026-stone-pizza-black-garlic-pepperoni-slice-6-0-54d96725c79c",
@@ -3015,7 +3177,13 @@ window.HALIFAX_PUBLIC_SPECIAL_SOURCE_LEADS = {
       "featured": false,
       "claimable": false,
       "matchMethod": "exact_name",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "refreshState": "retained_after_failure",
+      "sourceFailure": {
+        "reason": "food_crawl_section_not_found",
+        "lastAttemptAt": "2026-10-21T14:33:21.309Z",
+        "sourceUrl": "https://www.downtowndartmouth.ca/foodcrawl"
+      }
     },
     {
       "sourceRecordId": "downtown-dartmouth-food-crawl-spring-2026-stone-pizza-grandma-slice-square-slice-limited-quantity-6-1-54e680409fe8",
@@ -3059,7 +3227,13 @@ window.HALIFAX_PUBLIC_SPECIAL_SOURCE_LEADS = {
       "featured": false,
       "claimable": false,
       "matchMethod": "exact_name",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "refreshState": "retained_after_failure",
+      "sourceFailure": {
+        "reason": "food_crawl_section_not_found",
+        "lastAttemptAt": "2026-10-21T14:33:21.309Z",
+        "sourceUrl": "https://www.downtowndartmouth.ca/foodcrawl"
+      }
     },
     {
       "sourceRecordId": "discover-halifax-dine-around-2026-stubborn-goat-gastropub-dine-around-2026-social-dining-board-beer-pairing-d31d59fe26cd",
@@ -3150,7 +3324,13 @@ window.HALIFAX_PUBLIC_SPECIAL_SOURCE_LEADS = {
       "featured": false,
       "claimable": true,
       "matchMethod": "exact_name",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "refreshState": "retained_after_failure",
+      "sourceFailure": {
+        "reason": "api_http_401",
+        "lastAttemptAt": "2026-10-21T14:33:21.309Z",
+        "sourceUrl": "https://halifaxevents.ca/happy-hour"
+      }
     },
     {
       "sourceRecordId": "halifax-events-happy-hour-tempo-food-and-drink-happy-hour-03354fe17f1c",
@@ -3198,7 +3378,13 @@ window.HALIFAX_PUBLIC_SPECIAL_SOURCE_LEADS = {
       "featured": false,
       "claimable": true,
       "matchMethod": "exact_name",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "refreshState": "retained_after_failure",
+      "sourceFailure": {
+        "reason": "api_http_401",
+        "lastAttemptAt": "2026-10-21T14:33:21.309Z",
+        "sourceUrl": "https://halifaxevents.ca/happy-hour"
+      }
     },
     {
       "sourceRecordId": "discover-halifax-dine-around-2026-tempo-food-drink-at-the-barrington-hotel-dine-around-2026-lunch-20-2-course-651b0c8df9e9",
@@ -3326,7 +3512,13 @@ window.HALIFAX_PUBLIC_SPECIAL_SOURCE_LEADS = {
       "featured": false,
       "claimable": true,
       "matchMethod": "exact_name",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "refreshState": "retained_after_failure",
+      "sourceFailure": {
+        "reason": "api_http_401",
+        "lastAttemptAt": "2026-10-21T14:33:21.309Z",
+        "sourceUrl": "https://halifaxevents.ca/happy-hour"
+      }
     },
     {
       "sourceRecordId": "discover-halifax-dine-around-2026-the-hollis-hotel-the-cannery-kitchen-social-dine-around-2026-cannery-kitchen-social-hollis-dine-around-2026-3169327b991e",
@@ -3501,7 +3693,13 @@ window.HALIFAX_PUBLIC_SPECIAL_SOURCE_LEADS = {
       "featured": false,
       "claimable": true,
       "matchMethod": "unique_website_host",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "refreshState": "retained_after_failure",
+      "sourceFailure": {
+        "reason": "api_http_401",
+        "lastAttemptAt": "2026-10-21T14:33:21.309Z",
+        "sourceUrl": "https://halifaxevents.ca/happy-hour"
+      }
     },
     {
       "sourceRecordId": "discover-halifax-dine-around-2026-the-old-triangle-irish-alehouse-dine-around-menu-2-course-dinner-for-30-2c5caaad8be4",
@@ -3592,7 +3790,13 @@ window.HALIFAX_PUBLIC_SPECIAL_SOURCE_LEADS = {
       "featured": false,
       "claimable": true,
       "matchMethod": "street_address",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "refreshState": "retained_after_failure",
+      "sourceFailure": {
+        "reason": "api_http_401",
+        "lastAttemptAt": "2026-10-21T14:33:21.309Z",
+        "sourceUrl": "https://halifaxevents.ca/happy-hour"
+      }
     },
     {
       "sourceRecordId": "discover-halifax-dine-around-2026-the-press-gang-restaurant-and-oyster-bar-dine-around-menu-3-course-dinner-for-60-e8a09ddb348c",
@@ -3681,7 +3885,13 @@ window.HALIFAX_PUBLIC_SPECIAL_SOURCE_LEADS = {
       "featured": false,
       "claimable": true,
       "matchMethod": "unique_website_host",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "refreshState": "retained_after_failure",
+      "sourceFailure": {
+        "reason": "api_http_401",
+        "lastAttemptAt": "2026-10-21T14:33:21.309Z",
+        "sourceUrl": "https://halifaxevents.ca/happy-hour"
+      }
     },
     {
       "sourceRecordId": "halifax-events-happy-hour-the-stubborn-goat-margarita-monday-74217ba1112c",
@@ -3723,7 +3933,13 @@ window.HALIFAX_PUBLIC_SPECIAL_SOURCE_LEADS = {
       "featured": false,
       "claimable": true,
       "matchMethod": "unique_website_host",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "refreshState": "retained_after_failure",
+      "sourceFailure": {
+        "reason": "api_http_401",
+        "lastAttemptAt": "2026-10-21T14:33:21.309Z",
+        "sourceUrl": "https://halifaxevents.ca/happy-hour"
+      }
     },
     {
       "sourceRecordId": "halifax-events-happy-hour-the-stubborn-goat-sangria-pitchers-54e522f09db3",
@@ -3768,7 +3984,13 @@ window.HALIFAX_PUBLIC_SPECIAL_SOURCE_LEADS = {
       "featured": false,
       "claimable": true,
       "matchMethod": "unique_website_host",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "refreshState": "retained_after_failure",
+      "sourceFailure": {
+        "reason": "api_http_401",
+        "lastAttemptAt": "2026-10-21T14:33:21.309Z",
+        "sourceUrl": "https://halifaxevents.ca/happy-hour"
+      }
     },
     {
       "sourceRecordId": "discover-halifax-dine-around-2026-the-wooden-monkey-halifax-dine-around-2026-dine-around-3-courses-50-a0b757081aff",
@@ -3857,7 +4079,13 @@ window.HALIFAX_PUBLIC_SPECIAL_SOURCE_LEADS = {
       "featured": false,
       "claimable": true,
       "matchMethod": "unique_website_host",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "refreshState": "retained_after_failure",
+      "sourceFailure": {
+        "reason": "api_http_401",
+        "lastAttemptAt": "2026-10-21T14:33:21.309Z",
+        "sourceUrl": "https://halifaxevents.ca/happy-hour"
+      }
     },
     {
       "sourceRecordId": "halifax-events-happy-hour-wooden-monkey-downtown-happy-hour-169b63f25de9",
@@ -3903,7 +4131,13 @@ window.HALIFAX_PUBLIC_SPECIAL_SOURCE_LEADS = {
       "featured": false,
       "claimable": true,
       "matchMethod": "unique_website_host",
-      "matchConfidence": "high"
+      "matchConfidence": "high",
+      "refreshState": "retained_after_failure",
+      "sourceFailure": {
+        "reason": "api_http_401",
+        "lastAttemptAt": "2026-10-21T14:33:21.309Z",
+        "sourceUrl": "https://halifaxevents.ca/happy-hour"
+      }
     },
     {
       "sourceRecordId": "discover-halifax-dine-around-2026-toridori-dine-around-2026-lunch-30-59e4b42848e6",
@@ -4210,7 +4444,13 @@ window.HALIFAX_PUBLIC_SPECIAL_SOURCE_LEADS = {
       "reviewCandidates": [
         "osm-node-11751643550-cafe-lunette",
         "osm-node-12984675528-cafe-lunette"
-      ]
+      ],
+      "refreshState": "retained_after_failure",
+      "sourceFailure": {
+        "reason": "api_http_401",
+        "lastAttemptAt": "2026-10-21T14:33:21.309Z",
+        "sourceUrl": "https://halifaxevents.ca/happy-hour"
+      }
     },
     {
       "sourceRecordId": "halifax-events-happy-hour-cafe-lunette-apero-hour-7ae768369927",
@@ -4262,7 +4502,13 @@ window.HALIFAX_PUBLIC_SPECIAL_SOURCE_LEADS = {
       "reviewCandidates": [
         "osm-node-11751643550-cafe-lunette",
         "osm-node-12984675528-cafe-lunette"
-      ]
+      ],
+      "refreshState": "retained_after_failure",
+      "sourceFailure": {
+        "reason": "api_http_401",
+        "lastAttemptAt": "2026-10-21T14:33:21.309Z",
+        "sourceUrl": "https://halifaxevents.ca/happy-hour"
+      }
     },
     {
       "sourceRecordId": "downtown-dartmouth-food-crawl-spring-2026-chanoey-s-pasta-cheesy-penne-bolognese-7-tax-in-0-143c2f21af24",
@@ -4307,7 +4553,13 @@ window.HALIFAX_PUBLIC_SPECIAL_SOURCE_LEADS = {
       "claimable": false,
       "matchMethod": "unresolved",
       "matchConfidence": "needs_review",
-      "reviewCandidates": []
+      "reviewCandidates": [],
+      "refreshState": "retained_after_failure",
+      "sourceFailure": {
+        "reason": "food_crawl_section_not_found",
+        "lastAttemptAt": "2026-10-21T14:33:21.309Z",
+        "sourceUrl": "https://www.downtowndartmouth.ca/foodcrawl"
+      }
     },
     {
       "sourceRecordId": "downtown-dartmouth-food-crawl-spring-2026-chanoey-s-pasta-assorted-cookies-6pcs-5-1-6295719887c8",
@@ -4352,7 +4604,13 @@ window.HALIFAX_PUBLIC_SPECIAL_SOURCE_LEADS = {
       "claimable": false,
       "matchMethod": "unresolved",
       "matchConfidence": "needs_review",
-      "reviewCandidates": []
+      "reviewCandidates": [],
+      "refreshState": "retained_after_failure",
+      "sourceFailure": {
+        "reason": "food_crawl_section_not_found",
+        "lastAttemptAt": "2026-10-21T14:33:21.309Z",
+        "sourceUrl": "https://www.downtowndartmouth.ca/foodcrawl"
+      }
     },
     {
       "sourceRecordId": "halifax-events-happy-hour-chop-steakhouse-happy-hour-089b64a34ba1",
@@ -4401,7 +4659,13 @@ window.HALIFAX_PUBLIC_SPECIAL_SOURCE_LEADS = {
       "claimable": true,
       "matchMethod": "unresolved",
       "matchConfidence": "needs_review",
-      "reviewCandidates": []
+      "reviewCandidates": [],
+      "refreshState": "retained_after_failure",
+      "sourceFailure": {
+        "reason": "api_http_401",
+        "lastAttemptAt": "2026-10-21T14:33:21.309Z",
+        "sourceUrl": "https://halifaxevents.ca/happy-hour"
+      }
     },
     {
       "sourceRecordId": "discover-halifax-dine-around-2026-chop-steakhouse-bar-dine-around-menu-3-course-prix-fixe-menu-40-bb422c1ef97b",
@@ -4534,7 +4798,13 @@ window.HALIFAX_PUBLIC_SPECIAL_SOURCE_LEADS = {
       "claimable": false,
       "matchMethod": "unresolved",
       "matchConfidence": "needs_review",
-      "reviewCandidates": []
+      "reviewCandidates": [],
+      "refreshState": "retained_after_failure",
+      "sourceFailure": {
+        "reason": "food_crawl_section_not_found",
+        "lastAttemptAt": "2026-10-21T14:33:21.309Z",
+        "sourceUrl": "https://www.downtowndartmouth.ca/foodcrawl"
+      }
     },
     {
       "sourceRecordId": "downtown-dartmouth-food-crawl-spring-2026-early-at-elk-s-affogatos-6-50-0-6b4552f85c64",
@@ -4579,7 +4849,13 @@ window.HALIFAX_PUBLIC_SPECIAL_SOURCE_LEADS = {
       "claimable": false,
       "matchMethod": "unresolved",
       "matchConfidence": "needs_review",
-      "reviewCandidates": []
+      "reviewCandidates": [],
+      "refreshState": "retained_after_failure",
+      "sourceFailure": {
+        "reason": "food_crawl_section_not_found",
+        "lastAttemptAt": "2026-10-21T14:33:21.309Z",
+        "sourceUrl": "https://www.downtowndartmouth.ca/foodcrawl"
+      }
     },
     {
       "sourceRecordId": "halifax-events-happy-hour-eliot-and-vine-happy-hour-7e844e373904",
@@ -4628,7 +4904,13 @@ window.HALIFAX_PUBLIC_SPECIAL_SOURCE_LEADS = {
       "claimable": true,
       "matchMethod": "unresolved",
       "matchConfidence": "needs_review",
-      "reviewCandidates": []
+      "reviewCandidates": [],
+      "refreshState": "retained_after_failure",
+      "sourceFailure": {
+        "reason": "api_http_401",
+        "lastAttemptAt": "2026-10-21T14:33:21.309Z",
+        "sourceUrl": "https://halifaxevents.ca/happy-hour"
+      }
     },
     {
       "sourceRecordId": "downtown-dartmouth-food-crawl-spring-2026-evan-s-seafood-nacho-cheese-fries-gf-8-tax-in-0-edd5cc77f698",
@@ -4673,7 +4955,13 @@ window.HALIFAX_PUBLIC_SPECIAL_SOURCE_LEADS = {
       "claimable": false,
       "matchMethod": "unresolved",
       "matchConfidence": "needs_review",
-      "reviewCandidates": []
+      "reviewCandidates": [],
+      "refreshState": "retained_after_failure",
+      "sourceFailure": {
+        "reason": "food_crawl_section_not_found",
+        "lastAttemptAt": "2026-10-21T14:33:21.309Z",
+        "sourceUrl": "https://www.downtowndartmouth.ca/foodcrawl"
+      }
     },
     {
       "sourceRecordId": "discover-halifax-dine-around-2026-harbourstone-dine-around-2026-harbourstone-dine-around-2026-820e8b463a78",
@@ -4766,7 +5054,13 @@ window.HALIFAX_PUBLIC_SPECIAL_SOURCE_LEADS = {
       "claimable": true,
       "matchMethod": "unresolved",
       "matchConfidence": "needs_review",
-      "reviewCandidates": []
+      "reviewCandidates": [],
+      "refreshState": "retained_after_failure",
+      "sourceFailure": {
+        "reason": "api_http_401",
+        "lastAttemptAt": "2026-10-21T14:33:21.309Z",
+        "sourceUrl": "https://halifaxevents.ca/happy-hour"
+      }
     },
     {
       "sourceRecordId": "halifax-events-happy-hour-jacobs-lounge-wing-night-6bc9d3943c1c",
@@ -4809,7 +5103,13 @@ window.HALIFAX_PUBLIC_SPECIAL_SOURCE_LEADS = {
       "claimable": true,
       "matchMethod": "unresolved",
       "matchConfidence": "needs_review",
-      "reviewCandidates": []
+      "reviewCandidates": [],
+      "refreshState": "retained_after_failure",
+      "sourceFailure": {
+        "reason": "api_http_401",
+        "lastAttemptAt": "2026-10-21T14:33:21.309Z",
+        "sourceUrl": "https://halifaxevents.ca/happy-hour"
+      }
     },
     {
       "sourceRecordId": "downtown-dartmouth-food-crawl-spring-2026-lake-city-cider-handheld-charcuterie-boats-7-0-97ef7e91e8b8",
@@ -4854,7 +5154,13 @@ window.HALIFAX_PUBLIC_SPECIAL_SOURCE_LEADS = {
       "claimable": false,
       "matchMethod": "unresolved",
       "matchConfidence": "needs_review",
-      "reviewCandidates": []
+      "reviewCandidates": [],
+      "refreshState": "retained_after_failure",
+      "sourceFailure": {
+        "reason": "food_crawl_section_not_found",
+        "lastAttemptAt": "2026-10-21T14:33:21.309Z",
+        "sourceUrl": "https://www.downtowndartmouth.ca/foodcrawl"
+      }
     },
     {
       "sourceRecordId": "downtown-dartmouth-food-crawl-spring-2026-larry-s-sandwiches-and-sides-larry-s-cubano-sliders-5-0-e47db3fea820",
@@ -4899,7 +5205,13 @@ window.HALIFAX_PUBLIC_SPECIAL_SOURCE_LEADS = {
       "claimable": false,
       "matchMethod": "unresolved",
       "matchConfidence": "needs_review",
-      "reviewCandidates": []
+      "reviewCandidates": [],
+      "refreshState": "retained_after_failure",
+      "sourceFailure": {
+        "reason": "food_crawl_section_not_found",
+        "lastAttemptAt": "2026-10-21T14:33:21.309Z",
+        "sourceUrl": "https://www.downtowndartmouth.ca/foodcrawl"
+      }
     },
     {
       "sourceRecordId": "halifax-events-happy-hour-little-fish-oyster-bar-oyster-happy-hour-b36c9ecfcba9",
@@ -4948,7 +5260,13 @@ window.HALIFAX_PUBLIC_SPECIAL_SOURCE_LEADS = {
       "claimable": true,
       "matchMethod": "unresolved",
       "matchConfidence": "needs_review",
-      "reviewCandidates": []
+      "reviewCandidates": [],
+      "refreshState": "retained_after_failure",
+      "sourceFailure": {
+        "reason": "api_http_401",
+        "lastAttemptAt": "2026-10-21T14:33:21.309Z",
+        "sourceUrl": "https://halifaxevents.ca/happy-hour"
+      }
     },
     {
       "sourceRecordId": "downtown-dartmouth-food-crawl-spring-2026-little-pisa-any-pizza-slice-with-pop-5-0-347011d6e8d7",
@@ -4993,7 +5311,13 @@ window.HALIFAX_PUBLIC_SPECIAL_SOURCE_LEADS = {
       "claimable": false,
       "matchMethod": "unresolved",
       "matchConfidence": "needs_review",
-      "reviewCandidates": []
+      "reviewCandidates": [],
+      "refreshState": "retained_after_failure",
+      "sourceFailure": {
+        "reason": "food_crawl_section_not_found",
+        "lastAttemptAt": "2026-10-21T14:33:21.309Z",
+        "sourceUrl": "https://www.downtowndartmouth.ca/foodcrawl"
+      }
     },
     {
       "sourceRecordId": "discover-halifax-dine-around-2026-lot-six-bar-restaurant-lot-six-lot-six-74356e0c1321",
@@ -5082,7 +5406,13 @@ window.HALIFAX_PUBLIC_SPECIAL_SOURCE_LEADS = {
       "claimable": false,
       "matchMethod": "unresolved",
       "matchConfidence": "needs_review",
-      "reviewCandidates": []
+      "reviewCandidates": [],
+      "refreshState": "retained_after_failure",
+      "sourceFailure": {
+        "reason": "food_crawl_section_not_found",
+        "lastAttemptAt": "2026-10-21T14:33:21.309Z",
+        "sourceUrl": "https://www.downtowndartmouth.ca/foodcrawl"
+      }
     },
     {
       "sourceRecordId": "downtown-dartmouth-food-crawl-spring-2026-maria-s-pantry-cannoli-4-tax-in-1-7ed4f63ea389",
@@ -5127,7 +5457,13 @@ window.HALIFAX_PUBLIC_SPECIAL_SOURCE_LEADS = {
       "claimable": false,
       "matchMethod": "unresolved",
       "matchConfidence": "needs_review",
-      "reviewCandidates": []
+      "reviewCandidates": [],
+      "refreshState": "retained_after_failure",
+      "sourceFailure": {
+        "reason": "food_crawl_section_not_found",
+        "lastAttemptAt": "2026-10-21T14:33:21.309Z",
+        "sourceUrl": "https://www.downtowndartmouth.ca/foodcrawl"
+      }
     },
     {
       "sourceRecordId": "downtown-dartmouth-food-crawl-spring-2026-maria-s-pantry-lemon-olive-oil-cake-3-tax-in-2-f9b8247e0160",
@@ -5172,7 +5508,13 @@ window.HALIFAX_PUBLIC_SPECIAL_SOURCE_LEADS = {
       "claimable": false,
       "matchMethod": "unresolved",
       "matchConfidence": "needs_review",
-      "reviewCandidates": []
+      "reviewCandidates": [],
+      "refreshState": "retained_after_failure",
+      "sourceFailure": {
+        "reason": "food_crawl_section_not_found",
+        "lastAttemptAt": "2026-10-21T14:33:21.309Z",
+        "sourceUrl": "https://www.downtowndartmouth.ca/foodcrawl"
+      }
     },
     {
       "sourceRecordId": "discover-halifax-dine-around-2026-marys-african-cuisine-eat-yassa-with-mary-eat-yassa-with-mary-20-d448c2f3c75a",
@@ -5261,7 +5603,13 @@ window.HALIFAX_PUBLIC_SPECIAL_SOURCE_LEADS = {
       "claimable": false,
       "matchMethod": "unresolved",
       "matchConfidence": "needs_review",
-      "reviewCandidates": []
+      "reviewCandidates": [],
+      "refreshState": "retained_after_failure",
+      "sourceFailure": {
+        "reason": "food_crawl_section_not_found",
+        "lastAttemptAt": "2026-10-21T14:33:21.309Z",
+        "sourceUrl": "https://www.downtowndartmouth.ca/foodcrawl"
+      }
     },
     {
       "sourceRecordId": "halifax-events-happy-hour-niche-lounge-half-price-appetizers-dd4f88e970e8",
@@ -5308,7 +5656,13 @@ window.HALIFAX_PUBLIC_SPECIAL_SOURCE_LEADS = {
       "claimable": true,
       "matchMethod": "unresolved",
       "matchConfidence": "needs_review",
-      "reviewCandidates": []
+      "reviewCandidates": [],
+      "refreshState": "retained_after_failure",
+      "sourceFailure": {
+        "reason": "api_http_401",
+        "lastAttemptAt": "2026-10-21T14:33:21.309Z",
+        "sourceUrl": "https://halifaxevents.ca/happy-hour"
+      }
     },
     {
       "sourceRecordId": "halifax-events-happy-hour-niche-lounge-happy-hour-598da47d3feb",
@@ -5355,7 +5709,13 @@ window.HALIFAX_PUBLIC_SPECIAL_SOURCE_LEADS = {
       "claimable": true,
       "matchMethod": "unresolved",
       "matchConfidence": "needs_review",
-      "reviewCandidates": []
+      "reviewCandidates": [],
+      "refreshState": "retained_after_failure",
+      "sourceFailure": {
+        "reason": "api_http_401",
+        "lastAttemptAt": "2026-10-21T14:33:21.309Z",
+        "sourceUrl": "https://halifaxevents.ca/happy-hour"
+      }
     },
     {
       "sourceRecordId": "discover-halifax-dine-around-2026-niche-lounge-dine-around-menu-3-course-meal-for-40-c1eb752c9720",
@@ -5442,7 +5802,13 @@ window.HALIFAX_PUBLIC_SPECIAL_SOURCE_LEADS = {
       "claimable": true,
       "matchMethod": "unresolved",
       "matchConfidence": "needs_review",
-      "reviewCandidates": []
+      "reviewCandidates": [],
+      "refreshState": "retained_after_failure",
+      "sourceFailure": {
+        "reason": "api_http_401",
+        "lastAttemptAt": "2026-10-21T14:33:21.309Z",
+        "sourceUrl": "https://halifaxevents.ca/happy-hour"
+      }
     },
     {
       "sourceRecordId": "discover-halifax-dine-around-2026-obladee-a-wine-bar-dine-around-menu-3-courses-for-50-with-optional-wine-pairings-for-35-bbd7145fd2ce",
@@ -5531,7 +5897,13 @@ window.HALIFAX_PUBLIC_SPECIAL_SOURCE_LEADS = {
       "claimable": false,
       "matchMethod": "unresolved",
       "matchConfidence": "needs_review",
-      "reviewCandidates": []
+      "reviewCandidates": [],
+      "refreshState": "retained_after_failure",
+      "sourceFailure": {
+        "reason": "food_crawl_section_not_found",
+        "lastAttemptAt": "2026-10-21T14:33:21.309Z",
+        "sourceUrl": "https://www.downtowndartmouth.ca/foodcrawl"
+      }
     },
     {
       "sourceRecordId": "downtown-dartmouth-food-crawl-spring-2026-oxalis-restaurant-rhubarb-mint-spritz-8-1-8b772311dde3",
@@ -5576,7 +5948,13 @@ window.HALIFAX_PUBLIC_SPECIAL_SOURCE_LEADS = {
       "claimable": false,
       "matchMethod": "unresolved",
       "matchConfidence": "needs_review",
-      "reviewCandidates": []
+      "reviewCandidates": [],
+      "refreshState": "retained_after_failure",
+      "sourceFailure": {
+        "reason": "food_crawl_section_not_found",
+        "lastAttemptAt": "2026-10-21T14:33:21.309Z",
+        "sourceUrl": "https://www.downtowndartmouth.ca/foodcrawl"
+      }
     },
     {
       "sourceRecordId": "halifax-events-happy-hour-pazzo-happy-hour-2c6f6db4aa26",
@@ -5625,7 +6003,13 @@ window.HALIFAX_PUBLIC_SPECIAL_SOURCE_LEADS = {
       "claimable": true,
       "matchMethod": "unresolved",
       "matchConfidence": "needs_review",
-      "reviewCandidates": []
+      "reviewCandidates": [],
+      "refreshState": "retained_after_failure",
+      "sourceFailure": {
+        "reason": "api_http_401",
+        "lastAttemptAt": "2026-10-21T14:33:21.309Z",
+        "sourceUrl": "https://halifaxevents.ca/happy-hour"
+      }
     },
     {
       "sourceRecordId": "halifax-events-happy-hour-peacock-wine-bar-happy-hour-bb8267e480c2",
@@ -5674,7 +6058,13 @@ window.HALIFAX_PUBLIC_SPECIAL_SOURCE_LEADS = {
       "claimable": true,
       "matchMethod": "unresolved",
       "matchConfidence": "needs_review",
-      "reviewCandidates": []
+      "reviewCandidates": [],
+      "refreshState": "retained_after_failure",
+      "sourceFailure": {
+        "reason": "api_http_401",
+        "lastAttemptAt": "2026-10-21T14:33:21.309Z",
+        "sourceUrl": "https://halifaxevents.ca/happy-hour"
+      }
     },
     {
       "sourceRecordId": "discover-halifax-dine-around-2026-peacock-wine-bar-dine-around-2026-fondue-for-two-60-edd86bcc7f52",
@@ -5899,7 +6289,13 @@ window.HALIFAX_PUBLIC_SPECIAL_SOURCE_LEADS = {
       "claimable": true,
       "matchMethod": "unresolved",
       "matchConfidence": "needs_review",
-      "reviewCandidates": []
+      "reviewCandidates": [],
+      "refreshState": "retained_after_failure",
+      "sourceFailure": {
+        "reason": "api_http_401",
+        "lastAttemptAt": "2026-10-21T14:33:21.309Z",
+        "sourceUrl": "https://halifaxevents.ca/happy-hour"
+      }
     },
     {
       "sourceRecordId": "discover-halifax-dine-around-2026-ragazzi-restobar-dine-around-menu-2-3-course-meal-for-50-df4b6a42ebcd",
@@ -6036,7 +6432,13 @@ window.HALIFAX_PUBLIC_SPECIAL_SOURCE_LEADS = {
       "claimable": true,
       "matchMethod": "unresolved",
       "matchConfidence": "needs_review",
-      "reviewCandidates": []
+      "reviewCandidates": [],
+      "refreshState": "retained_after_failure",
+      "sourceFailure": {
+        "reason": "api_http_401",
+        "lastAttemptAt": "2026-10-21T14:33:21.309Z",
+        "sourceUrl": "https://halifaxevents.ca/happy-hour"
+      }
     },
     {
       "sourceRecordId": "downtown-dartmouth-food-crawl-spring-2026-side-hustle-snack-bar-half-grinder-8-tax-0-9fb1b6c9808b",
@@ -6081,7 +6483,13 @@ window.HALIFAX_PUBLIC_SPECIAL_SOURCE_LEADS = {
       "claimable": false,
       "matchMethod": "unresolved",
       "matchConfidence": "needs_review",
-      "reviewCandidates": []
+      "reviewCandidates": [],
+      "refreshState": "retained_after_failure",
+      "sourceFailure": {
+        "reason": "food_crawl_section_not_found",
+        "lastAttemptAt": "2026-10-21T14:33:21.309Z",
+        "sourceUrl": "https://www.downtowndartmouth.ca/foodcrawl"
+      }
     },
     {
       "sourceRecordId": "downtown-dartmouth-food-crawl-spring-2026-staggers-pub-grub-chicken-bacon-ranch-stuff-puffs-7-tax-0-27512458a35e",
@@ -6126,7 +6534,13 @@ window.HALIFAX_PUBLIC_SPECIAL_SOURCE_LEADS = {
       "claimable": false,
       "matchMethod": "unresolved",
       "matchConfidence": "needs_review",
-      "reviewCandidates": []
+      "reviewCandidates": [],
+      "refreshState": "retained_after_failure",
+      "sourceFailure": {
+        "reason": "food_crawl_section_not_found",
+        "lastAttemptAt": "2026-10-21T14:33:21.309Z",
+        "sourceUrl": "https://www.downtowndartmouth.ca/foodcrawl"
+      }
     },
     {
       "sourceRecordId": "halifax-events-happy-hour-the-barrington-steakhouse-oysters-and-cava-954048fe9124",
@@ -6174,7 +6588,13 @@ window.HALIFAX_PUBLIC_SPECIAL_SOURCE_LEADS = {
       "claimable": true,
       "matchMethod": "unresolved",
       "matchConfidence": "needs_review",
-      "reviewCandidates": []
+      "reviewCandidates": [],
+      "refreshState": "retained_after_failure",
+      "sourceFailure": {
+        "reason": "api_http_401",
+        "lastAttemptAt": "2026-10-21T14:33:21.309Z",
+        "sourceUrl": "https://halifaxevents.ca/happy-hour"
+      }
     },
     {
       "sourceRecordId": "downtown-dartmouth-food-crawl-spring-2026-the-beaver-s-den-dartmouth-flash-fried-crispy-chicken-bites-8-0-8a9d450d1b90",
@@ -6219,7 +6639,13 @@ window.HALIFAX_PUBLIC_SPECIAL_SOURCE_LEADS = {
       "claimable": false,
       "matchMethod": "unresolved",
       "matchConfidence": "needs_review",
-      "reviewCandidates": []
+      "reviewCandidates": [],
+      "refreshState": "retained_after_failure",
+      "sourceFailure": {
+        "reason": "food_crawl_section_not_found",
+        "lastAttemptAt": "2026-10-21T14:33:21.309Z",
+        "sourceUrl": "https://www.downtowndartmouth.ca/foodcrawl"
+      }
     },
     {
       "sourceRecordId": "halifax-events-happy-hour-the-brown-hound-public-house-happy-hour-60bcca5c1519",
@@ -6272,7 +6698,13 @@ window.HALIFAX_PUBLIC_SPECIAL_SOURCE_LEADS = {
         "osm-node-3789833657-the-brown-hound",
         "osm-node-8622604791-the-brown-hound",
         "osm-node-2624724240-the-brown-hound-public-house"
-      ]
+      ],
+      "refreshState": "retained_after_failure",
+      "sourceFailure": {
+        "reason": "api_http_401",
+        "lastAttemptAt": "2026-10-21T14:33:21.309Z",
+        "sourceUrl": "https://halifaxevents.ca/happy-hour"
+      }
     },
     {
       "sourceRecordId": "downtown-dartmouth-food-crawl-spring-2026-the-dahlia-by-jukai-fire-dragon-7-tax-in-0-cbe394d4f95c",
@@ -6317,7 +6749,13 @@ window.HALIFAX_PUBLIC_SPECIAL_SOURCE_LEADS = {
       "claimable": false,
       "matchMethod": "unresolved",
       "matchConfidence": "needs_review",
-      "reviewCandidates": []
+      "reviewCandidates": [],
+      "refreshState": "retained_after_failure",
+      "sourceFailure": {
+        "reason": "food_crawl_section_not_found",
+        "lastAttemptAt": "2026-10-21T14:33:21.309Z",
+        "sourceUrl": "https://www.downtowndartmouth.ca/foodcrawl"
+      }
     },
     {
       "sourceRecordId": "discover-halifax-dine-around-2026-the-empanada-shop-authentically-chilean-dine-around-menu-empanadas-dessert-7315f0632482",
@@ -6406,7 +6844,13 @@ window.HALIFAX_PUBLIC_SPECIAL_SOURCE_LEADS = {
       "claimable": false,
       "matchMethod": "unresolved",
       "matchConfidence": "needs_review",
-      "reviewCandidates": []
+      "reviewCandidates": [],
+      "refreshState": "retained_after_failure",
+      "sourceFailure": {
+        "reason": "food_crawl_section_not_found",
+        "lastAttemptAt": "2026-10-21T14:33:21.309Z",
+        "sourceUrl": "https://www.downtowndartmouth.ca/foodcrawl"
+      }
     },
     {
       "sourceRecordId": "downtown-dartmouth-food-crawl-spring-2026-tulipan-restaurant-pork-shoulder-taco-8-0-2f71f996fb84",
@@ -6451,8 +6895,36 @@ window.HALIFAX_PUBLIC_SPECIAL_SOURCE_LEADS = {
       "claimable": false,
       "matchMethod": "unresolved",
       "matchConfidence": "needs_review",
-      "reviewCandidates": []
+      "reviewCandidates": [],
+      "refreshState": "retained_after_failure",
+      "sourceFailure": {
+        "reason": "food_crawl_section_not_found",
+        "lastAttemptAt": "2026-10-21T14:33:21.309Z",
+        "sourceUrl": "https://www.downtowndartmouth.ca/foodcrawl"
+      }
     }
   ],
-  "failures": []
+  "failures": [
+    {
+      "sourceId": "halifax-events-happy-hour",
+      "sourceName": "HalifaxEvents.ca Happy Hour",
+      "sourceUrl": "https://halifaxevents.ca/happy-hour",
+      "reason": "api_http_401",
+      "observedAt": "2026-10-21T14:33:21.309Z"
+    },
+    {
+      "sourceId": "downtown-dartmouth-food-crawl-spring-2026",
+      "sourceName": "Downtown Dartmouth Spring Food Crawl 2026",
+      "sourceUrl": "https://www.downtowndartmouth.ca/foodcrawl",
+      "reason": "food_crawl_section_not_found",
+      "observedAt": "2026-10-21T14:33:21.309Z"
+    }
+  ],
+  "refreshReconciliation": {
+    "basis": "offline_failed_source_evidence_retention",
+    "sourceWorkflowRunUrl": "https://github.com/JeremyHennessy/HalifaxSourced/actions/runs/39617029686",
+    "sourceSnapshotCommit": "b60bdfa890a1bd05357976135af42ab1c68d0f93",
+    "retainedRecordCount": 75,
+    "note": "Prior observations retained after recorded collection failures; not a new source observation or confirmed withdrawal."
+  }
 };
