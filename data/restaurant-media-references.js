@@ -1260,7 +1260,12 @@ window.HALIFAX_MEDIA_SOURCE_REFERENCES = {
       "reviewState": "rights_review_required",
       "rightsState": "unverified",
       "recordKind": "source_reference",
-      "renderable": false
+      "renderable": false,
+      "quarantined": true,
+      "availabilityState": "unavailable",
+      "availabilityObservedAt": "2026-10-21T01:02:44Z",
+      "availabilityHttpStatus": 404,
+      "availabilityNote": "Exact retained image URL returns HTTP 404; historical source/rights evidence retained, browser preview suppressed until a new verified availability review."
     },
     {
       "restaurantId": "osm-node-10665783054-ben-and-florentine",

@@ -52,3 +52,7 @@ for(const url of ['https://www.openstreetmap.org/node/123','https://example.com/
  assert.equal(enriched.sources[0].url,url,'Keep the evidence link available as a source');
 }
 console.log('Official website actions require explicit website evidence; map/news sources remain source links.');
+
+assert.equal(vm.runInContext("sourcePreviewImageFor(restaurants.find(r=>r.id==='dear-friend'))",context),null,'Known unavailable reference must not cause repeat browser requests');
+const dearReference=context.window.HALIFAX_MEDIA_SOURCE_REFERENCES.records.find(r=>r.restaurantId==='dear-friend');
+assert.equal(dearReference.availabilityHttpStatus,404);assert.equal(dearReference.rightsState,'unverified');assert(dearReference.url.includes('share.jpg'),'Historical reference is retained');
