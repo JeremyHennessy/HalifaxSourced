@@ -1,6 +1,8 @@
 import { mkdir, readFile, writeFile } from "node:fs/promises";
+import { factOnlyPost } from "./lib/social-fact-candidates.mjs";
 
 const sourcePayload = JSON.parse(await readFile(new URL("../data/build/first-party-sources.json", import.meta.url), "utf8").catch(() => "{\"records\":[]}"));
+const previousPayload = JSON.parse(await readFile(new URL("../data/build/social-signals.json", import.meta.url), "utf8").catch(() => "{\"posts\":[]}"));
 const sourceRecords = Array.isArray(sourcePayload?.records) ? sourcePayload.records : [];
 const graphVersion = String(process.env.META_GRAPH_VERSION || "v25.0").replace(/^\/+|\/+$/g, "");
 const facebookToken = process.env.META_FB_ACCESS_TOKEN || "";
@@ -25,37 +27,24 @@ const signalGroups = {
 };
 
 function sleep(ms) { return new Promise((resolve) => setTimeout(resolve, ms)); }
-function summarize(value, maxChars = summaryChars) {
-  const text = String(value ?? "")
-    .replace(/https?:\/\/\S+/gi, " ")
-    .replace(/[#@][\w.-]+/g, (token) => token.length > 36 ? " " : token)
-    .replace(/\s+/g, " ")
-    .trim();
-  if (!text) return "";
-  return text.length > maxChars ? `${text.slice(0, maxChars - 3).trim()}...` : text;
-}
-function titleFromText(value, fallback) {
-  return summarize(value, 150).split(/\r?\n/)[0].trim() || fallback;
-}
 function classify(text) {
   const haystack = String(text ?? "").toLowerCase();
-  return Object.fromEntries(Object.entries(signalGroups).map(([kind, words]) => [kind, words.filter((word) => haystack.includes(word))]));
+  return Object.fromEntries(Object.entries(signalGroups).map(([kind, words]) => [kind, words.filter((word) => new RegExp(`\\b${word}\\b`, "i").test(haystack))]));
 }
 function matchedOnly(matches) {
   return Object.fromEntries(Object.entries(matches).filter(([, hits]) => hits.length > 0));
 }
 function recent(value) {
   const stamp = Date.parse(String(value ?? ""));
-  return Number.isFinite(stamp) && stamp >= cutoff;
+  return Number.isFinite(stamp) && stamp >= cutoff && stamp <= Date.now();
 }
 async function graphGet(path, params, token) {
   const url = new URL(`${graphBase}/${String(path).replace(/^\//, "")}`);
   for (const [key, value] of Object.entries(params || {})) if (value !== undefined && value !== null) url.searchParams.set(key, String(value));
-  url.searchParams.set("access_token", token);
-  const response = await fetch(url, { headers: { Accept: "application/json" }, redirect: "follow", signal: AbortSignal.timeout(timeoutMs) });
+  const response = await fetch(url, { headers: { Accept: "application/json", Authorization: `Bearer ${token}` }, redirect: "error", signal: AbortSignal.timeout(timeoutMs) });
   const body = await response.json().catch(() => ({}));
   if (!response.ok || body?.error) {
-    const message = body?.error?.message || `http_${response.status}`;
+    const message = `http_${response.status}`;
     const code = body?.error?.code || response.status;
     throw new Error(`${code}:${message}`);
   }
@@ -67,7 +56,7 @@ function profileTargetSet(platform) {
   const seen = new Set();
   for (const record of sourceRecords) {
     for (const profile of record.socialProfiles || []) {
-      if (profile.platform !== platform || profile.reviewState !== "verified_link" || !profile.handle) continue;
+      if (profile.platform !== platform || profile.reviewState !== "verified_link" || profile.status !== "active" || !profile.handle) continue;
       const handle = profile.handle.toLowerCase();
       const rowKey = `${record.restaurantId}|${handle}`;
       if (seen.has(rowKey)) continue;
@@ -83,14 +72,15 @@ function profileTargetSet(platform) {
   }
   const sharedHandles = new Set([...associations.entries()].filter(([, ids]) => ids.size > 1).map(([handle]) => handle));
   return {
-    targets: raw.filter((profile) => !sharedHandles.has(profile.normalizedHandle)),
-    sharedAssociationsSkipped: raw.filter((profile) => sharedHandles.has(profile.normalizedHandle)).length,
+    targets: raw.filter((profile) => !sharedHandles.has(profile.normalizedHandle) && !profile.sharedBrandProfile),
+    sharedAssociationsSkipped: raw.filter((profile) => (sharedHandles.has(profile.normalizedHandle) || profile.sharedBrandProfile)).length,
     sharedHandles: sharedHandles.size
   };
 }
 
 const facebookTargets = profileTargetSet("facebook");
 const instagramTargets = profileTargetSet("instagram");
+const completedProfiles = new Set();
 const signals = [];
 const posts = [];
 const failures = [];
@@ -103,12 +93,13 @@ if (facebookToken) {
     profilesAttempted += 1;
     try {
       const page = await graphGet(profile.handle, { fields: "id,name,link" }, facebookToken);
-      const pagePosts = await graphGet(`${page.id}/posts`, { fields: "id,message,created_time,permalink_url,full_picture", limit: postLimit }, facebookToken);
-      for (const post of pagePosts.data || []) {
-        if (!recent(post.created_time)) continue;
+      const pagePosts = await graphGet(`${page.id}/posts`, { fields: "id,message,created_time,permalink_url", limit: postLimit }, facebookToken);
+      if (!Array.isArray(pagePosts.data)) throw new Error("invalid_posts_response");
+      completedProfiles.add(`facebook|${profile.restaurantId}|${profile.normalizedHandle}`);
+      for (const post of pagePosts.data) {
+        if (!recent(post.created_time) || !post.permalink_url) continue;
         postsObserved += 1;
-        const summary = summarize(post.message);
-        const matches = matchedOnly(classify(summary));
+        const matches = matchedOnly(classify(String(post.message || "").slice(0, 20000)));
         const record = {
           restaurantId: profile.restaurantId,
           restaurantName: profile.restaurantName,
@@ -118,17 +109,18 @@ if (facebookToken) {
           platformObjectId: page.id,
           postId: post.id,
           postUrl: post.permalink_url || profile.url,
-          title: titleFromText(summary, "Facebook update"),
-          summary: summary || null,
-          mediaUrl: post.full_picture || null,
           publishedAt: new Date(post.created_time).toISOString(),
           observedAt: new Date().toISOString(),
           signalMatches: matches,
           sourceKind: "meta_graph_api",
           associationBasis: "unique_profile_link_from_official_website",
+          profileAssociationBasis: profile.associationBasis || null,
+          profileDiscoveredFrom: profile.discoveredFrom || null,
+          locationSpecific: profile.locationSpecific === true,
           confidence: "official_social_api_signal",
           reviewState: "api_observed"
         };
+        Object.assign(record, factOnlyPost(post.message, record));
         posts.push(record);
         if (Object.keys(matches).length) signals.push(record);
       }
@@ -145,15 +137,15 @@ if (instagramToken && instagramUserId) {
     if (delayMs > 0) await sleep(delayMs);
     profilesAttempted += 1;
     try {
-      const fields = `business_discovery.username(${profile.handle}){id,name,username,website,media.limit(${postLimit}){id,caption,media_type,media_url,thumbnail_url,permalink,timestamp}}`;
+      const fields = `business_discovery.username(${profile.handle}){id,name,username,website,media.limit(${postLimit}){id,caption,permalink,timestamp}}`;
       const body = await graphGet(instagramUserId, { fields }, instagramToken);
       const account = body.business_discovery;
-      if (!account) throw new Error("business_discovery_unavailable");
+      if (!account || !Array.isArray(account.media?.data)) throw new Error("business_discovery_unavailable");
+      completedProfiles.add(`instagram|${profile.restaurantId}|${profile.normalizedHandle}`);
       for (const media of account.media?.data || []) {
-        if (!recent(media.timestamp)) continue;
+        if (!recent(media.timestamp) || !media.permalink) continue;
         postsObserved += 1;
-        const summary = summarize(media.caption);
-        const matches = matchedOnly(classify(summary));
+        const matches = matchedOnly(classify(String(media.caption || "").slice(0, 20000)));
         const record = {
           restaurantId: profile.restaurantId,
           restaurantName: profile.restaurantName,
@@ -163,19 +155,18 @@ if (instagramToken && instagramUserId) {
           platformObjectId: account.id,
           postId: media.id,
           postUrl: media.permalink || profile.url,
-          title: titleFromText(summary, "Instagram update"),
-          summary: summary || null,
-          mediaType: media.media_type || null,
-          mediaUrl: media.media_url || null,
-          thumbnailUrl: media.thumbnail_url || null,
           publishedAt: new Date(media.timestamp).toISOString(),
           observedAt: new Date().toISOString(),
           signalMatches: matches,
           sourceKind: "meta_graph_api_business_discovery",
           associationBasis: "unique_profile_link_from_official_website",
+          profileAssociationBasis: profile.associationBasis || null,
+          profileDiscoveredFrom: profile.discoveredFrom || null,
+          locationSpecific: profile.locationSpecific === true,
           confidence: "official_social_api_signal",
           reviewState: "api_observed"
         };
+        Object.assign(record, factOnlyPost(media.caption, record));
         posts.push(record);
         if (Object.keys(matches).length) signals.push(record);
       }
@@ -188,13 +179,37 @@ if (instagramToken && instagramUserId) {
   if (!instagramUserId) failures.push({ platform: "instagram", reason: "META_IG_USER_ID_missing" });
 }
 
+// Failed or unattempted profiles do not erase history or invent fresh observations.
+// Keep only currently eligible profiles and sanitize legacy caption/media fields.
+const eligibleProfiles = new Set([...facebookTargets.targets, ...instagramTargets.targets].map(profile => `${profile.platform}|${profile.restaurantId}|${profile.normalizedHandle}`));
+let retainedPosts = 0;
+for (const previous of previousPayload.posts || []) {
+  const key = `${previous.platform}|${previous.restaurantId}|${String(previous.profileHandle || "").toLowerCase()}`;
+  if (!eligibleProfiles.has(key) || completedProfiles.has(key) || !recent(previous.publishedAt) || !previous.postUrl || !previous.observedAt) continue;
+  const record = Object.fromEntries(["restaurantId", "restaurantName", "platform", "profileHandle", "profileUrl", "platformObjectId", "postId", "postUrl", "publishedAt", "observedAt", "signalMatches", "sourceKind", "associationBasis", "profileAssociationBasis", "profileDiscoveredFrom", "locationSpecific", "confidence"].map(field => [field, previous[field] ?? null]));
+  const tokens = previous.factCandidate
+    ? ["dateMentions", "timeMentions", "priceMentions", "relativeDateMentions"].flatMap(field => Array.isArray(previous.factCandidate[field]) ? previous.factCandidate[field].slice(0, 12).filter(value => typeof value === "string").map(value => value.slice(0, 80)) : []).join(" ")
+    : previous.summary || previous.title || "";
+  Object.assign(record, factOnlyPost(tokens, record));
+  if (record.factCandidate && previous.factCandidate) {
+    const allowedConditions = new Set(["dine_in_only", "while_supplies_last", "reservation_required", "tax_extra", "age_restriction_19_plus", "limited_time"]);
+    record.factCandidate.conditionSignals = (Array.isArray(previous.factCandidate.conditionSignals) ? previous.factCandidate.conditionSignals : []).filter(value => allowedConditions.has(value));
+    if (["possible_cancellation", "possible_postponement", "possible_sold_out"].includes(previous.factCandidate.status)) record.factCandidate.status = previous.factCandidate.status;
+  }
+  record.observationState = "retained_not_refreshed";
+  posts.push(record); retainedPosts += 1;
+  if (Object.keys(record.signalMatches || {}).length) signals.push(record);
+}
+
 const uniqueSignals = signals.filter((signal, index, all) => all.findIndex((item) => item.platform === signal.platform && item.postId === signal.postId && item.restaurantId === signal.restaurantId) === index)
   .sort((a, b) => b.publishedAt.localeCompare(a.publishedAt));
 const uniquePosts = posts.filter((post, index, all) => all.findIndex((item) => item.platform === post.platform && item.postId === post.postId && item.restaurantId === post.restaurantId) === index)
   .sort((a, b) => b.publishedAt.localeCompare(a.publishedAt));
 
 const output = {
-  version: 3,
+  version: 4,
+  contentPolicy: "factual_candidates_no_caption_or_media",
+  storyCoverage: "not_supported_no_story_endpoint_or_archive",
   generatedAt: new Date().toISOString(),
   graphVersion,
   lookbackDays,
@@ -209,6 +224,8 @@ const output = {
   sharedProfileHandles: facebookTargets.sharedHandles + instagramTargets.sharedHandles,
   profilesAttempted,
   postsObserved,
+  retainedPosts,
+  profilesCompleted: completedProfiles.size,
   posts: uniquePosts,
   signals: uniqueSignals,
   failures: failures.slice(0, 200)
