@@ -73,3 +73,6 @@ assert(wings.status === "verified_current", `Recently observed source-verified s
 assert(Array.isArray(happy.dayOfWeek) && happy.dayOfWeek.length === 5, "Mon-Fri cadence should normalize to five weekdays.");
 console.log("Structured-special model regression passed: missing prices remain unknown and current verification requires special-specific evidence.");
 await rm(root, { recursive: true, force: true });
+
+// Failed source refreshes must never erase historical offer evidence.
+await import("./test-public-special-refresh-safety.mjs");

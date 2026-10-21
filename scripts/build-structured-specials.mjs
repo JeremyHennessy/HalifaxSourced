@@ -248,7 +248,7 @@ for (const lead of publicSpecialLeads.records || []) {
   const sourceUrl = safeUrl(lead.sourceUrl) || safeUrl(lead.sourcePageUrl);
   if (!sourceUrl || !lead.title) continue;
   const restaurantId = lead.restaurantId ? canonicalRestaurantId(lead.restaurantId) : null;
-  const observed = lead.observedAt || lead.sourceUpdatedAt || lead.lastVerifiedAt || null;
+  const observed = lead.refreshState === "retained_after_failure" ? (lead.observedAt || null) : (lead.observedAt || lead.sourceUpdatedAt || lead.lastVerifiedAt || null);
   push({
     specialId: specialId(restaurantId || `unresolved-${lead.sourceRecordId || lead.venueName || "special"}`, lead.title, sourceUrl),
     restaurantId,
@@ -275,8 +275,9 @@ for (const lead of publicSpecialLeads.records || []) {
     rightsState: lead.rightsState || null,
     observedAt: observed,
     verifiedAt: null,
-    status: "source_lead",
-    reviewState: lead.matchConfidence === "needs_review" || !restaurantId ? "needs_place_review" : "source_signal",
+    status: lead.refreshState === "retained_after_failure" ? "stale" : "source_lead",
+    ...(lead.refreshState === "retained_after_failure" ? { refreshState: lead.refreshState, sourceFailure: lead.sourceFailure || null } : {}),
+    reviewState: lead.refreshState === "retained_after_failure" ? "source_refresh_failed" : lead.matchConfidence === "needs_review" || !restaurantId ? "needs_place_review" : "source_signal",
     matchMethod: lead.matchMethod || null,
     matchConfidence: lead.matchConfidence || null
   });
@@ -297,6 +298,7 @@ for (const record of records) {
     title: record.title,
     sourceUrl: record.sourceUrl,
     sourceType: record.sourceType,
+    ...(record.refreshState ? { refreshState: record.refreshState, sourceFailure: record.sourceFailure || null } : {}),
     observedAt: record.observedAt || null,
     verifiedAt: record.verifiedAt || null,
     reason: "restaurant_id_not_in_canonical_catalog"

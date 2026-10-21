@@ -259,7 +259,7 @@ const publicSpecialPayload = await loadJson("../data/build/public-special-source
 const feedPosts = Array.isArray(feedPayload.posts) ? feedPayload.posts : (Array.isArray(feedPayload.signals) ? feedPayload.signals : []);
 const websitePagePosts = Array.isArray(websitePagePayload.records) ? websitePagePayload.records : (Array.isArray(websitePagePayload.signals) ? websitePagePayload.signals : []);
 const socialPosts = Array.isArray(socialPayload.posts) ? socialPayload.posts : (Array.isArray(socialPayload.signals) ? socialPayload.signals : []);
-const publicSpecialPosts = Array.isArray(publicSpecialPayload.records) ? publicSpecialPayload.records.filter((lead) => lead.restaurantId) : [];
+const publicSpecialPosts = Array.isArray(publicSpecialPayload.records) ? publicSpecialPayload.records.filter((lead) => lead.restaurantId && lead.refreshState !== "retained_after_failure") : [];
 const records = [
   ...feedPosts.map((post) => normalizePost(post, "feed")),
   ...websitePagePosts.map((post) => normalizePost(post, "website_page")),

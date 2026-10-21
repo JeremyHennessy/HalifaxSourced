@@ -1,3 +1,4 @@
+import { retainFailedPublicSpecialSources, readPreviousPublicSpecialRecords } from "./lib/public-special-refresh-safety.mjs";
 import { fetchGuardedSource as fetch } from "./lib/fetch-public-source.mjs";
 import { createHash } from "node:crypto";
 import { mkdir, readFile, writeFile } from "node:fs/promises";
@@ -22,6 +23,8 @@ const campaignLimit = Number(process.env.PUBLIC_SPECIAL_CAMPAIGN_LIMIT ?? 120);
 const campaignCrawlDelayMs = Number(process.env.PUBLIC_SPECIAL_CAMPAIGN_CRAWL_DELAY_MS ?? 250);
 const userAgent = "HalifaxSourced/0.8 (+https://github.com/JeremyHennessy/HalifaxSourced)";
 const observedAt = new Date().toISOString();
+
+const previousRecords = await readPreviousPublicSpecialRecords(new URL("../data/build/public-special-source-leads.json", import.meta.url));
 
 const catalog = JSON.parse(await readFile(new URL("../data/build/catalog.json", import.meta.url), "utf8"));
 
@@ -176,7 +179,8 @@ async function fetchHappyHours(client) {
   });
   if (!response.ok) throw new Error(`api_http_${response.status}`);
   const data = await response.json();
-  return Array.isArray(data) ? data : [];
+  if (!Array.isArray(data)) throw new Error("api_invalid_response_shape");
+  return data;
 }
 
 function normalizeTime(value) {
@@ -642,7 +646,9 @@ const happyHourRecords = rawRows.map((row) => {
 
 const dineAroundRecords = await fetchDineAroundLeads();
 const foodCrawlRecords = await fetchFoodCrawlLeads();
-const records = [...happyHourRecords, ...dineAroundRecords, ...foodCrawlRecords]
+const records = retainFailedPublicSpecialSources(
+  [...happyHourRecords, ...dineAroundRecords, ...foodCrawlRecords], previousRecords, failures
+)
   .sort((a, b) => (a.restaurantId ? 0 : 1) - (b.restaurantId ? 0 : 1) || String(a.venueName || "").localeCompare(String(b.venueName || "")));
 
 const counts = {
