@@ -24,7 +24,29 @@ permissions:
   contents: read
 
 jobs:
+  validate-pr:
+    if: ${{ github.event_name == 'pull_request' }}
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Validate accepted snapshots and fixtures without collection
+        env:
+          NODE_OPTIONS: --import ${{ github.workspace }}/scripts/lib/deny-source-network.mjs
+        run: |
+          node scripts/export-catalog.mjs
+          node scripts/test-structured-specials-model.mjs
+          node scripts/build-structured-specials.mjs
+          node scripts/check-public-special-source-leads.mjs
+          node scripts/check-structured-specials.mjs
+
   refresh:
+    if: ${{ github.event_name != 'pull_request' }}
     runs-on: ubuntu-24.04
     timeout-minutes: 25
     env:
