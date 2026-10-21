@@ -7,6 +7,7 @@
 HalifaxRestaurantCorrections.apply(restaurants, reviewedRestaurantCorrections);
 for (const restaurant of restaurants) {
   // Apply last: candidate/fact layers must not resurrect a rejected destination.
+  restaurant.relatedLinks = (restaurant.relatedLinks || []).filter(link => HalifaxDataIntegrity.pointerSafe(restaurant.id, link.kind, link.url));
   restaurant.menuLinks = (restaurant.menuLinks || []).filter(link => HalifaxDataIntegrity.pointerSafe(restaurant.id, 'menu', link.url));
   restaurant.specialLinks = (restaurant.specialLinks || []).filter(link => HalifaxDataIntegrity.pointerSafe(restaurant.id, 'special', link.url));
   restaurant.structuredSpecials = (restaurant.structuredSpecials || []).filter(item => HalifaxDataIntegrity.pointerSafe(restaurant.id, 'special', item.sourceUrl));

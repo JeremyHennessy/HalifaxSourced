@@ -18,6 +18,6 @@ for(const match of fs.readFileSync(new URL('../index.html',import.meta.url),'utf
  if(file==='app-lifecycle.js')break;
 }
 const restaurants=JSON.parse(vm.runInContext('JSON.stringify(restaurants)',context));
-for(const rule of rules){const r=restaurants.find(r=>r.id===rule.restaurantId);if(!r)continue;const links=rule.kind==='menu'?r.menuLinks:r.specialLinks;assert(!(links||[]).some(x=>x.url===rule.url),'Suppressed pointer returned through later enrichment: '+rule.url);}
+for(const rule of rules){const r=restaurants.find(r=>r.id===rule.restaurantId);if(!r)continue;const links=rule.kind==='menu'?r.menuLinks:r.specialLinks;assert(!(links||[]).some(x=>x.url===rule.url),'Suppressed pointer returned through later enrichment: '+rule.url);assert(!(r.relatedLinks||[]).some(x=>x.kind===rule.kind&&x.url===rule.url),'Related navigation resurrected pointer: '+rule.url);}
 const sushi=restaurants.find(r=>r.id==='osm-node-11552234300-sushi-nami-royale');assert(sushi.menuLinks.every(x=>!x.url.includes('/downtown-halifax/')));
 console.log('Final decorated browser state cannot resurrect audited mismatches.');

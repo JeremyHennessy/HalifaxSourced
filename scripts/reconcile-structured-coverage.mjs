@@ -65,7 +65,7 @@ for (const item of catalog.restaurants || []) {
   if (item.accessibility || Object.keys(tags).some((key) => /wheelchair|accessible|step_free|toilets:wheelchair/.test(key)) || /wheelchair|accessible/.test(tagText)) baseAccessibilityIds.add(item.id);
 }
 
-const baseMenuIds = new Set((verified.menuSources || []).map((item) => item.restaurantId));
+const baseMenuIds = new Set((verified.menuSources || []).filter(item => integrity.pointerSafe(item.restaurantId, 'menu', item.url)).map((item) => item.restaurantId));
 // These pointers are already counted by the base coverage builder. Include
 // them in its identity set so overlapping structured facts add no second place.
 for (const resolution of reviewedResolutions) {
@@ -75,7 +75,7 @@ for (const item of catalog.restaurants || []) {
   if (["seasonally_closed", "temporarily_closed", "permanently_closed", "moved", "replaced"].includes(item.operatingStatus)) continue;
   if ((item.sources || []).some(source => source.type === "menu" && integrity.safeSource(source.url))) baseMenuIds.add(item.id);
 }
-const baseSpecialIds = new Set((verified.specialSources || []).map((item) => item.restaurantId));
+const baseSpecialIds = new Set((verified.specialSources || []).filter(item => integrity.pointerSafe(item.restaurantId, 'special', item.url)).map((item) => item.restaurantId));
 const verifiedSpecialIds = new Set(baseSpecialIds);
 const baseReservationIds = new Set();
 const baseOrderingIds = new Set();
