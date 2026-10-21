@@ -1,4 +1,5 @@
-// Only explicit team aliases are collapsed. Same venue/time alone is never sufficient.
+// Collapse explicit team aliases or the same public-library detail URL and occurrence.
+// Same venue/time or similar title alone is never sufficient.
 const aliases = new Map([
   ['halifax mooseheads', 'halifax-mooseheads'], ['mooseheads', 'halifax-mooseheads'],
   ['rouyn noranda', 'rouyn-noranda'], ['rouyn noranda huskies', 'rouyn-noranda'],
@@ -25,6 +26,15 @@ const venueAliases = new Map([
   ['scotiabank center', 'scotiabank-centre-halifax']
 ]);
 export function canonicalEventKey(event) {
+  if (['official_library_location_calendar', 'public_library_calendar'].includes(event.sourceKind)) {
+    try {
+      const url = new URL(event.eventUrl);
+      const stamp = Date.parse(event.startAt);
+      if (url.hostname === 'halifax.bibliocommons.com' && /^\/events\/[a-f0-9]+\/?$/.test(url.pathname) && Number.isFinite(stamp)) {
+        return `library|${url.hostname}${url.pathname.replace(/\/$/,'')}|${stamp}`;
+      }
+    } catch { /* Unqualified URL: never infer identity from a title. */ }
+  }
   const teams=normalize(event.title).split(/\s+vs?\s+/).map(name=>aliases.get(name));
   const venue=event.venueId || venueAliases.get(normalize(event.venueName)) || normalize(event.venueName);
   const stamp=Date.parse(event.startAt);

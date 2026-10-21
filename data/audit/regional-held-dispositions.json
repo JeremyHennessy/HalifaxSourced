@@ -1,0 +1,890 @@
+{
+  "version": 1,
+  "reviewedAt": "2026-10-21T01:49:08.958074+00:00",
+  "baselineCommit": "90da4f492f419d34f9210315109d578861343eda",
+  "scope": "Disposition of all 31 historical held research rows, not 31 unique current restaurants. Qualified addition incorporated into the reviewed catalog; unresolved subjects remain held. Prior observations retain their dates.",
+  "counts": {
+    "unresolved": 18,
+    "already_accepted": 1,
+    "resolved_historical_replacement": 1,
+    "confirmed_closed_prior_evidence": 2,
+    "qualified_addition": 1,
+    "research_group_not_business": 1,
+    "duplicate_research_row": 3,
+    "unresolved_scope": 2,
+    "unresolved_location_scope": 1,
+    "unresolved_existing_identity": 1
+  },
+  "records": [
+    {
+      "rowIndex": 0,
+      "name": "Hong’s Kitchen",
+      "previousDecision": "held",
+      "disposition": "unresolved",
+      "reason": "Owner homepage fails; BIA civic address and historical menu do not establish current operation. No closure inferred.",
+      "priorEvidence": {
+        "researchGroup": "sackville-south",
+        "name": "Hong’s Kitchen",
+        "address": "584 Sackville Drive, Lower Sackville",
+        "reason": "Official homepage opens failed internally. Owner-domain PDFs and BIA provide identity, but no fresh owner weekly/current-operation verification was obtained. Do not infer closure.",
+        "sources": [
+          "https://hongskitchen.com/Hongs-Limited-Menu-sm.pdf",
+          "https://sackvillebusiness.com/shops-services/hongs-kitchen"
+        ]
+      },
+      "reviewedAt": "2026-10-21T01:49:08.958074+00:00",
+      "currentPassSources": [],
+      "integrationState": "held"
+    },
+    {
+      "rowIndex": 1,
+      "name": "Mishoo’s Take Out",
+      "previousDecision": "held",
+      "disposition": "unresolved",
+      "reason": "Tourism lists year-round takeout and exact Sambro location; official site previously returned 403. Current owner-specific operation/ownership still insufficient.",
+      "priorEvidence": {
+        "researchGroup": "sackville-south",
+        "name": "Mishoo’s Take Out",
+        "address": "1 W Pennant Road, Sambro, NS B3V 1E9",
+        "reason": "Official mishoos.ca returned 403. Tourism listing supports identity and year-round service, but owner source inaccessible; retain as a high-priority review lead, not blocked-source bypass.",
+        "sources": [
+          "https://www.mishoos.ca/",
+          "https://novascotia.com/listing/mishoos-take-out/"
+        ]
+      },
+      "reviewedAt": "2026-10-21T01:49:08.958074+00:00",
+      "currentPassSources": [],
+      "integrationState": "held"
+    },
+    {
+      "rowIndex": 2,
+      "name": "Bubba Magoos Bistro / BubbaEATS",
+      "previousDecision": "held",
+      "disposition": "already_accepted",
+      "reason": "Already represented by bubba-magoos-peggys-cove; do not add again.",
+      "priorEvidence": {
+        "researchGroup": "coastal",
+        "name": "Bubba Magoos Bistro / BubbaEATS",
+        "community": "Peggy's Cove",
+        "address": "48 Peggy's Point Road, Peggy's Cove, NS",
+        "website": "https://www.bubbamagoos.com/",
+        "evidence": "Official site explicitly open, prepared food, dine-in upstairs 19+ and all-ages takeout/patio; exact address and phone. Build Nova Scotia corroborates at https://visitpeggyscove.ca/visitor-information/. Ownership not yet checked. Do not conflate with canonical Bubba Ray’s Sports Bar."
+      },
+      "reviewedAt": "2026-10-21T01:49:08.958074+00:00",
+      "currentPassSources": [],
+      "integrationState": "resolved_research"
+    },
+    {
+      "rowIndex": 3,
+      "name": "Cow Bay Pizza and Variety",
+      "previousDecision": "held",
+      "disposition": "unresolved",
+      "reason": "Owner site establishes current food service, hours and 388 Cow Bay Road; current local ownership still not established. Primary row for duplicate 15.",
+      "priorEvidence": {
+        "researchGroup": "coastal",
+        "name": "Cow Bay Pizza and Variety",
+        "community": "Eastern Passage / Cow Bay corridor",
+        "address": "388 Cow Bay Road, Eastern Passage, NS",
+        "website": "https://cowbaypizza.com/",
+        "evidence": "Official site address, weekly hours and menu; https://www.skipthedishes.com/cow-bay-pizza-and-variety corroborates prepared food/address. Public Nova Scotia employer record identifies Cow Bay Variety Store Limited. Owner residency/current ownership not verified. Candidate for next batch; named business is not evidence of location in Cow Bay community proper."
+      },
+      "reviewedAt": "2026-10-21T01:49:08.958074+00:00",
+      "currentPassSources": [],
+      "integrationState": "held"
+    },
+    {
+      "rowIndex": 4,
+      "name": "Porters Lake Pub",
+      "previousDecision": "held",
+      "disposition": "unresolved",
+      "reason": "Owner site/about establishes public food service at 5228 Highway 7; present beneficial/operator ownership remains unsupported. Primary row for duplicate 14.",
+      "priorEvidence": {
+        "researchGroup": "coastal",
+        "name": "Porters Lake Pub",
+        "community": "Porters Lake",
+        "address": "5228 Highway 7, Porters Lake, NS B3E 1J8",
+        "website": "https://porterslakepub.ca/",
+        "evidence": "Official address, current weekly service and meal menu. Ownership not explicitly established in inspected pages."
+      },
+      "reviewedAt": "2026-10-21T01:49:08.958074+00:00",
+      "currentPassSources": [],
+      "integrationState": "held"
+    },
+    {
+      "rowIndex": 5,
+      "name": "Lawrencetown Beach Cafe",
+      "previousDecision": "held",
+      "disposition": "unresolved",
+      "reason": "Tourism year-round listing plus Farm Works client page and historical 2025 owner Sam Mc Kenna evidence; dated current first-party operation still not established.",
+      "priorEvidence": {
+        "researchGroup": "coastal",
+        "name": "Lawrencetown Beach Cafe",
+        "community": "East Lawrencetown",
+        "address": "4144 Lawrencetown Road, East Lawrencetown, NS B2Z 1R1",
+        "source": "https://novascotia.com/listing/lawrencetown-beach-cafe/",
+        "evidence": "Tourism confirms cafe, breakfast/lunch and year-round operation, but direct business social page not inspected. Historic Heron’s Nest Tearoom tenant references should not be treated as current."
+      },
+      "reviewedAt": "2026-10-21T01:49:08.958074+00:00",
+      "currentPassSources": [],
+      "integrationState": "held"
+    },
+    {
+      "rowIndex": 6,
+      "name": "Rhubarb Restaurant",
+      "previousDecision": "historical_identity_replaced_not_current",
+      "disposition": "resolved_historical_replacement",
+      "reason": "Former Rhubarb identity replaced at same address by accepted watermark-indian-harbour. Preserve history, not current restaurant candidate.",
+      "priorEvidence": {
+        "researchGroup": "coastal",
+        "name": "Rhubarb Restaurant",
+        "community": "Indian Harbour",
+        "formerAddress": "8650 Peggy’s Cove Road",
+        "website": "https://www.rhubarbrestaurant.ca/",
+        "evidence": "Observed redirect to https://hazels.ca/ with Hazel’s at 343 Main Street, Liverpool. Hold due to website identity mismatch; this alone does NOT prove Rhubarb closed. Requires independent current corroboration before active listing.",
+        "recommendation": "hold_identity_review",
+        "decision": "historical_identity_replaced_not_current",
+        "reason": "Do not add Rhubarb as currently operating. Watermark is a new restaurant identity at the former site, not a same-ID name correction or a duplicate. Hazel's is outside the present HRM/nearby boundary recommendation and must not inherit the Indian Harbour location.",
+        "supersededPriorClaim": "The initial coastal hold described the redirected Hazel's site as unrelated. Owner evidence now establishes related former operators, but a different restaurant in Liverpool. Do not use the old description as a domain-takeover conclusion.",
+        "successorId": "watermark-indian-harbour",
+        "transitionEvidence": [
+          {
+            "url": "https://hazels.ca/about",
+            "type": "former operators' first-party site",
+            "supports": "Jim and Diane explicitly describe their next chapter in Liverpool after more than 13 years serving Indian Harbour; the story names Rhubarb and the artwork carried forward. This resolves operator continuity, not location continuity."
+          },
+          {
+            "url": "https://halifax.retales.ca/2026/01/up-downs/",
+            "type": "dated independent local reporting",
+            "supports": "January 17, 2026 report identifies former Rhubarb premises and Oceanstone-run Watermark successor."
+          },
+          {
+            "url": "https://halifax.retales.ca/2026/06/sams-says-goodbye-moktu-says-hello/",
+            "type": "dated independent local reporting",
+            "supports": "June 6, 2026 report identifies Watermark taking over Rhubarb's space. Used for succession corroboration, not exact opening-date assertion."
+          },
+          {
+            "url": "https://watermarkrestaurant.ca/",
+            "type": "current first-party site",
+            "supports": "Current restaurant identity, address, phone, public daily lunch/dinner service."
+          }
+        ]
+      },
+      "reviewedAt": "2026-10-21T01:49:08.958074+00:00",
+      "currentPassSources": [],
+      "integrationState": "resolved_research"
+    },
+    {
+      "rowIndex": 7,
+      "name": "Edible Matters",
+      "previousDecision": "exclude_closed",
+      "disposition": "confirmed_closed_prior_evidence",
+      "reason": "Retain previously verified May 23,2025 closure/sale evidence. Current homepage unavailable; do not refresh closure observation timestamp.",
+      "priorEvidence": {
+        "researchGroup": "northern",
+        "name": "Edible Matters",
+        "decision": "exclude_closed",
+        "address": "1345 Hammonds Plains Road",
+        "reason": "Official homepage says permanently closed May 23, 2025 following property sale, despite live tourism and delivery listings.",
+        "sources": [
+          "https://ediblematters.com/"
+        ]
+      },
+      "reviewedAt": "2026-10-21T01:49:08.958074+00:00",
+      "currentPassSources": [],
+      "integrationState": "resolved_research"
+    },
+    {
+      "rowIndex": 8,
+      "name": "Jam’s Burgers & Shakes",
+      "previousDecision": "exclude_closed",
+      "disposition": "confirmed_closed_prior_evidence",
+      "reason": "Retain prior owner closure announcement effective February 2,2026. Current menu fetch timed out; no fresh closure receipt.",
+      "priorEvidence": {
+        "researchGroup": "northern",
+        "name": "Jam’s Burgers & Shakes",
+        "decision": "exclude_closed",
+        "address": "8 Jam Lane, West Bedford",
+        "reason": "Official menu page footer says location is now CLOSED. Mirrored January 31, 2026 announcement says closing February 2. Tourism and chamber/RANS leads are stale.",
+        "sources": [
+          "https://jamsburgers.ca/menu/",
+          "https://www.findglocal.com/CA/Halifax/637142659474660/Jam%27s-Burgers-%26-Shakes"
+        ]
+      },
+      "reviewedAt": "2026-10-21T01:49:08.958074+00:00",
+      "currentPassSources": [],
+      "integrationState": "resolved_research"
+    },
+    {
+      "rowIndex": 9,
+      "name": "Good Day Kitchen & Café",
+      "previousDecision": "hold_status_conflict",
+      "disposition": "unresolved",
+      "reason": "Owner site currently invites dining with full menu/hours 1480 Fall River Road. Secondary September 2026 social mirror suggests operation but does not independently settle earlier temporary-closure conflict; retain explicit status hold pending primary dated evidence.",
+      "priorEvidence": {
+        "researchGroup": "northern",
+        "name": "Good Day Kitchen & Café",
+        "decision": "hold_status_conflict",
+        "address": "1480 Fall River Road, Fall River",
+        "reason": "Official site has live menu/hours and local business association identifies owner, but current Restaurant Guru says temporarily closed. Do not label active until first-party status resolved.",
+        "sources": [
+          "https://www.thegooddaycafe.ca/",
+          "https://www.thegooddaycafe.ca/menu",
+          "https://www.fallriverbusiness.ca/showcase",
+          "https://restaurantguru.com/Good-Day-Kitchen-and-Cafe-Fall-River-Nova-Scotia"
+        ]
+      },
+      "reviewedAt": "2026-10-21T01:49:08.958074+00:00",
+      "currentPassSources": [
+        "https://www.thegooddaycafe.ca/"
+      ],
+      "integrationState": "held"
+    },
+    {
+      "rowIndex": 10,
+      "name": "Reid’s Restaurant & Bakery",
+      "previousDecision": "hold_current_first_party_operation",
+      "disposition": "unresolved",
+      "reason": "Community site identifies family bakery 105 Elm Street; historical and directory evidence alone cannot prove current operation. Primary row for duplicate 22.",
+      "priorEvidence": {
+        "researchGroup": "northern",
+        "name": "Reid’s Restaurant & Bakery",
+        "decision": "hold_current_first_party_operation",
+        "address": "105 Elm Street, Middle Musquodoboit, NS B0N 1X0",
+        "reason": "Valley association describes family-owned homestyle restaurant and bakery. Could not establish current 2026 first-party operation; Facebook extraction was insufficient. Do not publish from community directory alone.",
+        "sources": [
+          "https://musquodoboitvalley.ca/reids-restaurant-bakery/",
+          "https://www.facebook.com/p/Reids-Restaurant-Bakery-100057209599628/",
+          "https://discoverhalifaxns.com/itineraries/hidden-waterfalls-of-halifax/"
+        ]
+      },
+      "reviewedAt": "2026-10-21T01:49:08.958074+00:00",
+      "currentPassSources": [],
+      "integrationState": "held"
+    },
+    {
+      "rowIndex": 11,
+      "name": "Acadian Fish & Chips and Enzo Pizzeria",
+      "previousDecision": "hold_address_and_status_resolution",
+      "disposition": "qualified_addition",
+      "reason": "Official Restaurant JSON-LD now resolves exact 1990 Hammonds Plains Road and coordinates; live menu/dine-in/takeout plus 2025 Legislature recognition naming owner Brendan Chahine establish qualified local restaurant. Delivery-platform exit not business closure.",
+      "priorEvidence": {
+        "researchGroup": "northern",
+        "name": "Acadian Fish & Chips and Enzo Pizzeria",
+        "decision": "hold_address_and_status_resolution",
+        "address": "1990 Hammonds Plains Road (corroborated delivery platform, not extracted official page)",
+        "reason": "Official food site appears active, but exact civic address missing from extracted text and Uber Eats says closed on that platform since May 25, 2026. Platform removal alone does not mean restaurant closed. Historical local ownership exists but needs contemporary corroboration.",
+        "sources": [
+          "https://www.acadianenzo.com/",
+          "https://www.skipthedishes.com/arcadian-fish-and-chips"
+        ]
+      },
+      "reviewedAt": "2026-10-21T01:49:08.958074+00:00",
+      "currentPassSources": [
+        "https://www.acadianenzo.com/",
+        "https://www.acadianenzo.com/menu",
+        "https://nslegislature.ca/sites/default/files/pdfs/proceedings/hansard/65-1/h22mar25.pdf"
+      ],
+      "integrationState": "accepted"
+    },
+    {
+      "rowIndex": 12,
+      "name": "Enfield/Goffs airport candidates",
+      "previousDecision": "hold_ownership_or_boundary",
+      "disposition": "research_group_not_business",
+      "reason": "Enfield/Goffsairportcandidates is a discovery bucket, not a single restaurant; require named exact-location HRM candidates and independent eligibility.",
+      "priorEvidence": {
+        "researchGroup": "northern",
+        "name": "Enfield/Goffs airport candidates",
+        "decision": "hold_ownership_or_boundary",
+        "reason": "Airport La Cocina/Pizza Box local ownership not verified; airport concessions can be corporate. Several Enfield village restaurants and Aroma Maya may be East Hants rather than HRM. No unsupported HRM/local-ownership claim made.",
+        "sources": []
+      },
+      "reviewedAt": "2026-10-21T01:49:08.958074+00:00",
+      "currentPassSources": [],
+      "integrationState": "resolved_research"
+    },
+    {
+      "rowIndex": 13,
+      "name": "Finer Diner",
+      "previousDecision": "held",
+      "disposition": "unresolved",
+      "reason": "Official site confirms 9976 Peggys Cove Road/current foodservice; current local operator identity not proved by historical owners or visitor name Roman.",
+      "priorEvidence": {
+        "researchGroup": "western",
+        "name": "Finer Diner",
+        "address": "9976 Peggys Cove Road, Hacketts Cove, NS",
+        "website": "https://www.finerdiner.ca/",
+        "reasonHeld": "Exact official address, meal menu and reservation/current-service signals confirmed. Current local ownership remains insufficiently corroborated: original 2007 owners Peter MacPherson and Sarah Irwin are historical; 2026 visitor reviews name Roman but are not authoritative ownership evidence.",
+        "sources": [
+          "https://www.finerdiner.ca/contact",
+          "https://www.finerdiner.ca/menus?location=Finer+Diner",
+          "https://www.finerdiner.ca/about",
+          "https://peggyscoveregion.com/nova-scotia/things-to-do/?lid=46",
+          "https://www.thecoast.ca/news-opinion/finer-dining-960942/"
+        ],
+        "lifecycleNote": "Regional tourism describes year-round service. Homepage word Seasonal concerns its presentation/ingredients and is not adequate evidence of seasonal closure. Do not import historical owners as current."
+      },
+      "reviewedAt": "2026-10-21T01:49:08.958074+00:00",
+      "currentPassSources": [],
+      "integrationState": "held"
+    },
+    {
+      "rowIndex": 14,
+      "name": "Porters Lake Pub & Grill",
+      "previousDecision": "held",
+      "disposition": "duplicate_research_row",
+      "reason": "Same Porters Lake Pub as row 4; resolve duplicate without creating/deleting public restaurant.",
+      "priorEvidence": {
+        "researchGroup": "western",
+        "name": "Porters Lake Pub & Grill",
+        "address": "5228 Highway 7, Porters Lake, NS B3E 1J8",
+        "website": "https://porterslakepub.ca/",
+        "reasonHeld": "Official exact location, full family menu and takeout service confirmed, plus local business-association listing. Named current owners and locally owned status not established beyond visitor reviews.",
+        "sources": [
+          "https://porterslakepub.ca/about-our-pub/",
+          "https://www.porterslakebusiness.com/business-directory"
+        ],
+        "lifecycleNote": "No closure inference. Hold is ownership verification, not evidence of inactivity."
+      },
+      "reviewedAt": "2026-10-21T01:49:08.958074+00:00",
+      "currentPassSources": [],
+      "integrationState": "resolved_research"
+    },
+    {
+      "rowIndex": 15,
+      "name": "Cow Bay Pizza and Variety",
+      "previousDecision": "held",
+      "disposition": "duplicate_research_row",
+      "reason": "Same Cow Bay Pizza as row 3; resolve duplicate without adding public restaurant.",
+      "priorEvidence": {
+        "researchGroup": "western",
+        "name": "Cow Bay Pizza and Variety",
+        "address": "388 Cow Bay Road, Eastern Passage, NS",
+        "website": "https://cowbaypizza.com/",
+        "reasonHeld": "Official address, menu, telephone and regular-service signals confirmed; active delivery menu confirms prepared meals. Current local ownership not established. Legal employer name alone does not prove local beneficial ownership.",
+        "sources": [
+          "https://cowbaypizza.com/",
+          "https://www.skipthedishes.com/cow-bay-pizza-and-variety"
+        ],
+        "lifecycleNote": "No closure inference; preserve separation of kitchen and convenience-store hours."
+      },
+      "reviewedAt": "2026-10-21T01:49:08.958074+00:00",
+      "currentPassSources": [],
+      "integrationState": "resolved_research"
+    },
+    {
+      "rowIndex": 16,
+      "name": "Nineteen at The Links at Brunello",
+      "previousDecision": "held",
+      "disposition": "unresolved",
+      "reason": "Official Nineteen page confirms public kitchen 120 Brunello Blvd; golf/developer ownership cannot stand in for restaurant operator. Postal-code conflict remains.",
+      "priorEvidence": {
+        "researchGroup": "western",
+        "name": "Nineteen at The Links at Brunello",
+        "address": "120 Brunello Blvd, Timberlea, NS",
+        "website": "https://www.thelinksatbrunello.com/nineteen",
+        "reasonHeld": "Official restaurant, menu, public table bookings and exact civic address confirmed. Development group's official team identifies Robert and Glen Dexter, but direct restaurant operator/local ownership relationship is not explicit enough for the strongest batch.",
+        "sources": [
+          "https://www.thelinksatbrunello.com/nineteen",
+          "https://www.thelinksatbrunellorealestate.com/sales-management-team/management-team/",
+          "https://www.foodbuy.ca/resource-center/articles/the-links-at-brunello/"
+        ],
+        "lifecycleNote": "Official page lists kitchen hours; no season-end notice observed. Official footer conflicts between B3T 0J4 and B3T 0G9, so postcode withheld. Golf-course branding alone must not imply closed or members-only."
+      },
+      "reviewedAt": "2026-10-21T01:49:08.958074+00:00",
+      "currentPassSources": [],
+      "integrationState": "held"
+    },
+    {
+      "rowIndex": 17,
+      "name": "Timberlea Beverage Room / The TBR",
+      "previousDecision": "held",
+      "disposition": "unresolved",
+      "reason": "Official site confirms 1820 St Margarets Bay Road current food and telephone; long operating history not proof of current local ownership.",
+      "priorEvidence": {
+        "researchGroup": "western",
+        "name": "Timberlea Beverage Room / The TBR",
+        "address": "1820 St. Margaret's Bay Road, Timberlea, NS B3T 1B8",
+        "website": "https://timberleabeverageroom.ca/",
+        "reasonHeld": "Official full meal menu, takeout and civic address verified; RANS corroborates identity. Local current ownership not explicit in authoritative sources found.",
+        "sources": [
+          "https://timberleabeverageroom.ca/",
+          "https://rans.ca/restaurants/timberlea-beverage-room-22/"
+        ],
+        "lifecycleNote": "No closure inference. Official own domain is preferable to duplicate s4shops mirrors."
+      },
+      "reviewedAt": "2026-10-21T01:49:08.958074+00:00",
+      "currentPassSources": [],
+      "integrationState": "held"
+    },
+    {
+      "rowIndex": 18,
+      "name": "Granite Springs Golf Club Restaurant",
+      "previousDecision": "held",
+      "disposition": "unresolved",
+      "reason": "Official clubrestaurant exists 4441 Prospect Road; historical Chartwells/Compass contract prevents inferring local ownership of restaurant from local golf ownership.",
+      "priorEvidence": {
+        "researchGroup": "western",
+        "name": "Granite Springs Golf Club Restaurant",
+        "address": "4441 Prospect Road, Bayside, NS B3Z 1L6",
+        "website": "https://www.granitespringsgolf.com/club-restaurant",
+        "reasonHeld": "Official restaurant page and civic address confirmed, but menu/history are image-based and current restaurant operator not established. Historical June 2018 local reporting says Chartwells/Compass Canada operated food service, so cannot infer independent local restaurant ownership from local golf-course ownership.",
+        "sources": [
+          "https://www.granitespringsgolf.com/club-restaurant",
+          "https://www.granitespringsgolf.com/club-history",
+          "https://themastheadnews.ca/wp-content/uploads/2021/03/2018_06_27.pdf"
+        ],
+        "lifecycleNote": "Historical corporate operator is a verification warning, not proof of current ownership or closure."
+      },
+      "reviewedAt": "2026-10-21T01:49:08.958074+00:00",
+      "currentPassSources": [],
+      "integrationState": "held"
+    },
+    {
+      "rowIndex": 19,
+      "name": "Emileo's Snack Bar",
+      "previousDecision": "held",
+      "disposition": "unresolved",
+      "reason": "Undated Wix site/menu dated 2022 is insufficient fresh operation and local owner evidence at 3702 Prospect Road.",
+      "priorEvidence": {
+        "researchGroup": "western",
+        "name": "Emileo's Snack Bar",
+        "address": "3702 Prospect Road, Shad Bay, NS",
+        "website": "https://gfeniyanos.wixsite.com/emileossnackbar",
+        "reasonHeld": "First-party-style Wix site has menu/address/contact but menu image is dated 2022. Local current ownership and dated operation not sufficiently corroborated.",
+        "sources": [
+          "https://gfeniyanos.wixsite.com/emileossnackbar"
+        ],
+        "lifecycleNote": "Do not convert a stale menu into proof of current hours or assume closure."
+      },
+      "reviewedAt": "2026-10-21T01:49:08.958074+00:00",
+      "currentPassSources": [],
+      "integrationState": "held"
+    },
+    {
+      "rowIndex": 20,
+      "name": "The Baker's Apron",
+      "previousDecision": "held",
+      "disposition": "unresolved",
+      "reason": "Owner site lists 2287 Prospect Road Unit 4 and food retail offerings. Current local ownership and ready-to-eat restaurant scope unresolved; generic today-hours are not weekly hours.",
+      "priorEvidence": {
+        "researchGroup": "western",
+        "name": "The Baker's Apron",
+        "address": "2287 Prospect Road, Unit 4, Hatchet Lake, NS B3T 1S9",
+        "website": "https://bakersapron.ca/",
+        "reasonHeld": "Official bakery site lists soups, pies, lasagna and sausage rolls, plus exact contact address. Local ownership and ready-to-eat food-service scope versus baked/frozen retail require firmer evidence before adding as a restaurant/cafe.",
+        "sources": [
+          "https://bakersapron.ca/"
+        ],
+        "lifecycleNote": "No closure inference. Corporate-directory director names were not treated as verified current beneficial ownership."
+      },
+      "reviewedAt": "2026-10-21T01:49:08.958074+00:00",
+      "currentPassSources": [],
+      "integrationState": "held"
+    },
+    {
+      "rowIndex": 21,
+      "name": "Lakeside Family Restaurant & Pizza",
+      "previousDecision": "held",
+      "disposition": "unresolved",
+      "reason": "1594 St Margarets Bay Road evidence limited to directories/historical inspection; no owner source or current operation established.",
+      "priorEvidence": {
+        "researchGroup": "western",
+        "name": "Lakeside Family Restaurant & Pizza",
+        "address": "1594 St Margarets Bay Road, Lakeside, NS B3T 1B6",
+        "reasonHeld": "Directory and historical government inspection evidence found, but no current official website/menu or owner evidence sufficient for addition in this bounded pass.",
+        "sources": [
+          "https://www.allbiz.ca/lakeside-family-restaurant-902-876-7173",
+          "https://openinformation.novascotia.ca/api/views/f3f7-h4mx/files/6d3bb00b-5629-468f-b7a2-c728efa1e759?filename=2016-02656-ENV_PublicPackage.pdf"
+        ],
+        "lifecycleNote": "Directory presence is not current-operation proof; no permanent-closure conclusion."
+      },
+      "reviewedAt": "2026-10-21T01:49:08.958074+00:00",
+      "currentPassSources": [],
+      "integrationState": "held"
+    },
+    {
+      "rowIndex": 22,
+      "name": "Reid's Restaurant & Bakery",
+      "previousDecision": "held",
+      "disposition": "duplicate_research_row",
+      "reason": "Duplicate Reids row 10, same 105 Elm Street. Keep one research subject.",
+      "priorEvidence": {
+        "researchGroup": "valley",
+        "name": "Reid's Restaurant & Bakery",
+        "locality": "Middle Musquodoboit",
+        "reportedAddress": "105 Elm Street, Middle Musquodoboit, NS B0N 1X0",
+        "phone": "902-384-2424",
+        "category": "Restaurant and bakery",
+        "disposition": "high-priority current-operation and exact-address review",
+        "evidence": [
+          {
+            "url": "https://musquodoboitvalley.ca/reids-restaurant-bakery/",
+            "type": "community directory",
+            "supports": "Local family ownership, restaurant/bakery identity, address and phone; links a business Facebook page, which was not scraped."
+          },
+          {
+            "url": "https://emplois.ca.indeed.com/q-%24-l-middle-musquodoboit%2C-ns-jobs.html",
+            "type": "search-discovered recruitment lead",
+            "supports": "October 18, 2026 search result displays a server vacancy under this business name; this is only supplemental current-operation evidence, not exact-location first-party proof."
+          }
+        ],
+        "unresolved": [
+          "Some third-party listings call the street Elm Drive; prefer an exact owner or inspection address before admission.",
+          "No readable location-specific owner page or current menu/hours was verified."
+        ],
+        "duplicateCheck": "No Reid's matching name found in the 578-record baseline or existing data files."
+      },
+      "reviewedAt": "2026-10-21T01:49:08.958074+00:00",
+      "currentPassSources": [],
+      "integrationState": "resolved_research"
+    },
+    {
+      "rowIndex": 23,
+      "name": "Upper Musquodoboit Mini Mart / Pizza Twice",
+      "previousDecision": "held",
+      "disposition": "unresolved_scope",
+      "reason": "Brand official location page confirms 22 Hwy 336 Mini Mart; regional-franchise eligibility and local location owner unresolved, not presumed independent.",
+      "priorEvidence": {
+        "researchGroup": "valley",
+        "name": "Upper Musquodoboit Mini Mart / Pizza Twice",
+        "locality": "Upper Musquodoboit",
+        "reportedAddress": "22 Highway 336, Upper Musquodoboit, NS B0N 2M0",
+        "phone": "902-568-2999",
+        "category": "Grocery with pizza/takeout counter",
+        "disposition": "regional-franchise eligibility review; northern second-pass artifact supplies detailed brand review",
+        "evidence": [
+          {
+            "url": "https://musquodoboitvalley.ca/upper-musquodoboit-mini-mart/",
+            "type": "community directory",
+            "supports": "Locally operated grocery and pizza/takeout at the exact address."
+          },
+          {
+            "url": "https://www.pizzatwice.com/locations",
+            "type": "brand location directory",
+            "supports": "Exact Mini Mart location and phone. The page has repeated location blocks with conflicting hours, so none are accepted here."
+          },
+          {
+            "url": "https://www.mynslc.com/-/media/NSLC/PDFAbout/Licensee-page-docs/Agency-Docs/Agency-Store-List-Jan-2026.pdf?hash=09F90FA8B7F6F99591E0FB713B16DD85&la=en",
+            "type": "government agency-store list",
+            "supports": "Business/address corroboration only, not evidence of restaurant service or independent-restaurant eligibility."
+          }
+        ],
+        "unresolved": [
+          "A locally owned convenience store operating a regional pizza franchise is not automatically an independent restaurant under the preserved project scope.",
+          "Do not turn a negative chain-blocklist result into proof of local independent ownership."
+        ],
+        "duplicateCheck": "No matching identity found in baseline."
+      },
+      "reviewedAt": "2026-10-21T01:49:08.958074+00:00",
+      "currentPassSources": [],
+      "integrationState": "held"
+    },
+    {
+      "rowIndex": 24,
+      "name": "Lindsay Lake Farms & Lodge",
+      "previousDecision": "held",
+      "disposition": "unresolved_scope",
+      "reason": "Owner-operated Lindsay Lake Farms 211 Lindsay Lake Road has visitor daypass/German Brotzeit experiences; not verified as ordinary public restaurant. Do not publish projected 2025 opening as actual.",
+      "priorEvidence": {
+        "researchGroup": "valley",
+        "name": "Lindsay Lake Farms & Lodge",
+        "locality": "Lindsay Lake / Musquodoboit Valley",
+        "reportedAddress": "211 Lindsay Lake Road, Lindsay Lake, Middle Musquodoboit, NS B0N 1X0",
+        "phone": "902-891-0263",
+        "category": "Farm store, booked dining experiences and event food trailer",
+        "disposition": "scope hold, not verified as a normal public restaurant",
+        "evidence": [
+          {
+            "url": "https://www.lindsaylakefarms.com/",
+            "type": "owner",
+            "supports": "Christiane and Jan identify their family farm and current farm visits/dining experiences."
+          },
+          {
+            "url": "https://www.lindsaylakefarms.com/contact.html",
+            "type": "owner",
+            "supports": "Exact current contact address and phone."
+          },
+          {
+            "url": "https://www.lindsaylakefarms.com/food.html",
+            "type": "owner",
+            "supports": "Farm-store hours and a food trailer for private celebrations/events; these are not ordinary restaurant hours."
+          },
+          {
+            "url": "https://discoverhalifaxns.com/things-to-do/bison-tours-and-sustainable-farming-at-lindsay-lake-farms/",
+            "type": "destination tourism",
+            "supports": "Updated May 6, 2026 but still describes a restaurant anticipated for summer 2025. That dated future-tense claim cannot establish that a walk-in restaurant opened."
+          }
+        ],
+        "unresolved": [
+          "Do not reuse the farm-store Monday-Friday 10-4 / weekend 12-4 schedule as dining hours.",
+          "Do not label an anticipated 2025 restaurant as an actual new opening in 2026.",
+          "Owner contact address differs from older Moose River Road references; do not infer separate venues."
+        ],
+        "duplicateCheck": "No matching name in baseline."
+      },
+      "reviewedAt": "2026-10-21T01:49:08.958074+00:00",
+      "currentPassSources": [],
+      "integrationState": "held"
+    },
+    {
+      "rowIndex": 25,
+      "name": "The Farm Bakery",
+      "previousDecision": "held",
+      "disposition": "unresolved_location_scope",
+      "reason": "Current owner search-indexed homepage says storefront Westville, outside HRM, while old community directory gives 8611 Moose River Road. Do not assert former location closed or that same-name bakery moved without explicit identity bridge.",
+      "priorEvidence": {
+        "researchGroup": "valley",
+        "name": "The Farm Bakery",
+        "locality": "Musquodoboit Valley",
+        "reportedAddress": "8611 Moose River Road",
+        "category": "Home bakery",
+        "disposition": "scope and current-operation hold",
+        "evidence": [
+          {
+            "url": "https://musquodoboitvalley.ca/the-farm-bakery/",
+            "type": "community directory",
+            "supports": "Home bakery, named contact Taylor Newman, address and owner-site link."
+          },
+          {
+            "url": "https://www.thefarmbakery.ca/",
+            "type": "owner linked by community directory",
+            "supports": "Page title identifies sourdough bakery but readable body was unavailable to the web reader."
+          }
+        ],
+        "unresolved": [
+          "Public walk-in service, operating status and local restaurant/cafe scope are not established.",
+          "Do not silently merge with Lindsay Lake Farms based on older references to an on-farm bakery."
+        ],
+        "duplicateCheck": "No matching name in baseline."
+      },
+      "reviewedAt": "2026-10-21T01:49:08.958074+00:00",
+      "currentPassSources": [
+        "https://www.thefarmbakery.ca/",
+        "https://www.thefarmbakery.ca/locations"
+      ],
+      "integrationState": "held"
+    },
+    {
+      "rowIndex": 26,
+      "name": "River Oaks Golf Club kitchen and takeout",
+      "previousDecision": "held",
+      "disposition": "unresolved",
+      "reason": "Owner Wix configuration explicitly pairs 3909 NS 357 and 44.9162521,-63.23676680000001; useful address evidence, but visible prior 3856 conflict and restaurantoperator unresolved. No public addition.",
+      "priorEvidence": {
+        "researchGroup": "valley",
+        "name": "River Oaks Golf Club kitchen and takeout",
+        "locality": "Meaghers Grant",
+        "candidateAddresses": [
+          "3909 Highway 357, Meaghers Grant",
+          "3856 Meagher's Grant Road, Meaghers Grant"
+        ],
+        "restaurantPhone": "902-384-5371",
+        "clubPhone": "902-384-2033",
+        "category": "Public clubhouse restaurant and takeout",
+        "disposition": "location and current-ownership hold despite strong restaurant-service proof",
+        "evidence": [
+          {
+            "url": "https://www.riveroaksgolfclub.org/menu",
+            "type": "owner",
+            "supports": "Full meal menu, public access, kitchen/takeout phone, seasonal 11am-7pm service. Weekly days and season-end date not specified."
+          },
+          {
+            "url": "https://www.riveroaksgolfclub.org/our-history",
+            "type": "owner",
+            "supports": "Meaghers Grant identity; navigation advertises five years under new ownership, so older ownership attribution cannot simply be reused."
+          },
+          {
+            "url": "https://novascotia.com/listing/river-oaks-golf-club/",
+            "type": "provincial tourism",
+            "supports": "3856 address and licensed dining room, but mixes North/South courses and says nine-hole South Course closed this year."
+          },
+          {
+            "url": "https://fliphtml5.com/rzgzu/nymr/DEANS_Coastal_NS_Eastern_Guide_2024/",
+            "type": "regional tourism guide",
+            "supports": "3909 Highway 357 restaurant address and .org owner domain; differs from the provincial tourism lodge/South Course-style address."
+          }
+        ],
+        "unresolved": [
+          "Need definitive first-party civic location for the current public kitchen before adding a marker or assigning exact address.",
+          "Do not transfer 3856 lodge/South Course identity to the 3909 North Course restaurant.",
+          "Do not use the golf-course May-October availability as exact restaurant season dates.",
+          "Named family ownership evidence from 2020 predates the owner's stated ownership change."
+        ],
+        "duplicateCheck": "No River Oaks identity in baseline."
+      },
+      "reviewedAt": "2026-10-21T01:49:08.958074+00:00",
+      "currentPassSources": [
+        "https://www.riveroaksgolfclub.org/menu"
+      ],
+      "integrationState": "held"
+    },
+    {
+      "rowIndex": 27,
+      "name": "Mikhael's Cafe",
+      "previousDecision": "held",
+      "disposition": "unresolved",
+      "reason": "Historical RANS 12087 Hwy 224 listing insufficient current operation. mikhaelscafe.com is unrelated Greensboro NC; reject identity contamination.",
+      "priorEvidence": {
+        "researchGroup": "valley",
+        "name": "Mikhael's Cafe",
+        "locality": "Middle Musquodoboit",
+        "reportedAddress": "12087 Highway 224, Middle Musquodoboit",
+        "disposition": "operation and foreign-domain identity hold",
+        "evidence": [
+          {
+            "url": "https://rans.ca/restaurants/?page=5&sf_paged=18",
+            "type": "restaurant association directory",
+            "supports": "Historic/local candidate identity and street address; directory inclusion alone does not prove active operation."
+          },
+          {
+            "url": "https://www.mikhaelscafe.com/our-story",
+            "type": "unrelated owner site",
+            "supports": "This similarly named business is at 4214 Beechwood Drive, Greensboro, North Carolina. Explicitly reject it as a source for the Nova Scotia candidate."
+          }
+        ],
+        "unresolved": [
+          "No current owner operation proof for the Nova Scotia venue. Do not import an active-looking foreign website or its hours/menu.",
+          "Do not infer permanent closure solely from weak or stale third-party status markers."
+        ],
+        "duplicateCheck": "No matching name found in baseline."
+      },
+      "reviewedAt": "2026-10-21T01:49:08.958074+00:00",
+      "currentPassSources": [],
+      "integrationState": "held"
+    },
+    {
+      "rowIndex": 28,
+      "name": "Panada Pizza – Hammonds Plains",
+      "previousDecision": "held",
+      "disposition": "unresolved",
+      "reason": "Exact 1438 Hammonds Plains Unit 3 owner address still insufficient; fresh owner raw fetch 403, stopped. Delivery address alone not enough.",
+      "priorEvidence": {
+        "researchGroup": "panada",
+        "name": "Panada Pizza – Hammonds Plains",
+        "community": "Hammonds Plains",
+        "recommendation": "conditional_first_party_civic_address",
+        "address": "1438 Hammonds Plains Road, Unit 3, Hammonds Plains, NS B4B 1P6",
+        "phone": "902-423-7373",
+        "website": "https://www.panada-pizza.com/",
+        "menuUrl": "https://www.panada-pizza.com/menu/",
+        "foodService": "Pizza, donairs, garlic fingers, wings, seafood, Lebanese dishes and catering; pickup and delivery.",
+        "operationEvidence": "Official homepage/menu current and location-specific phone live. Uber Eats, Skip and Door Dash independently agree on 1438 Hammonds Plains Road; Uber Eats supplies Unit 3. Door Dash includes April 2026 order review.",
+        "ownershipConfidence": "Medium-high local regional brand, with founders Charlie/Marie named by official site. Current legal ownership not independently checked.",
+        "sources": [
+          {
+            "url": "https://www.panada-pizza.com/",
+            "supports": "Current Hammonds Plains location identity, phone, service and founders"
+          },
+          {
+            "url": "https://www.panada-pizza.com/menu/",
+            "supports": "First-party food menu"
+          },
+          {
+            "url": "https://www.ubereats.com/ca/store/panada-pizza-hammonds-plains/Zs0Hm136Tsul5yvUeF3_kg",
+            "supports": "1438 Hammonds Plains Road, Unit 3, B4B 1P6"
+          },
+          {
+            "url": "https://www.skipthedishes.com/panada-pizza-hammonds-plains-road",
+            "supports": "1438 civic address and food service"
+          },
+          {
+            "url": "https://www.doordash.com/store/panada-pizza---1438-hammonds-plains-rd-31802611/",
+            "supports": "1438 civic address and April 2026 customer order"
+          }
+        ],
+        "caveats": [
+          "Official website and browser-visible socials page do not expose a civic address; publish only if two merchant-platform confirmations satisfy address provenance policy. Otherwise hold for direct first-party address.",
+          "7:40 Restaurant is Unit 1 at same street address; Panada Unit 3 is distinct, not a duplicate.",
+          "Hours differ across official site and delivery platforms. Do not substitute delivery-window times for restaurant hours.",
+          "One older Door Dash locale snapshot says temporarily closed while another recent snapshot exposes ordering; platform availability is not evidence of permanent business closure."
+        ],
+        "openingHours": null,
+        "coordinates": null
+      },
+      "reviewedAt": "2026-10-21T01:49:08.958074+00:00",
+      "currentPassSources": [],
+      "integrationState": "held"
+    },
+    {
+      "rowIndex": 29,
+      "name": "Panada Pizza – Dartmouth",
+      "previousDecision": "held",
+      "disposition": "unresolved",
+      "reason": "68 Highfield Park Drive likely location but historical 6 Primrose/102 Albro ambiguity; owner raw 403. Do not repair nonsensical Sunday hours or merge by brand only.",
+      "priorEvidence": {
+        "researchGroup": "panada",
+        "name": "Panada Pizza – Dartmouth",
+        "community": "Dartmouth / Highfield Park",
+        "recommendation": "conditional_current_first_party_civic_address",
+        "address": "68 Highfield Park Drive, Dartmouth, NS",
+        "phone": "902-466-7171",
+        "website": "https://www.panada-pizza.com/",
+        "menuUrl": "https://www.panada-pizza.com/menu/",
+        "foodService": "Pizza, donairs, Lebanese dishes and related takeout meals; delivery and catering.",
+        "operationEvidence": "Official site actively presents Dartmouth food service and phone; business-branded Launchrock page gives same phone and 68 Highfield Park. Current merchant and review platforms corroborate this address.",
+        "ownershipConfidence": "Medium-high regional local brand. Official site names brand founders; BBB lists a historical owner for an inconsistent older address, so do not copy that ownership into this venue.",
+        "sources": [
+          {
+            "url": "https://www.panada-pizza.com/",
+            "supports": "Dartmouth identity, phone and current food service"
+          },
+          {
+            "url": "https://panadapizza.launchrock.com/",
+            "supports": "Business-branded landing page gives 68 Highfield Park Drive and matching phone; provenance/recency not fully established"
+          },
+          {
+            "url": "https://www.restaurantji.com/ns/dartmouth/panada-pizza-/",
+            "supports": "Current 68 Highfield Park address and same phone"
+          },
+          {
+            "url": "https://restaurantguru.com/Panada-Pizza-Dartmouth",
+            "supports": "Recent diner activity at 68 Highfield Park"
+          },
+          {
+            "url": "https://www.bbb.org/ca/ns/dartmouth/profile/restaurants/panada-pizza-0087-40008",
+            "supports": "Conflicting older-looking 102 Albro Lake Road address; historical ownership not copied"
+          },
+          {
+            "url": "https://www.tripadvisor.ca/Restaurant_Review-g154974-d974008-Reviews-Panada_Pizza-Dartmouth_Halifax_Regional_Municipality_Nova_Scotia.html",
+            "supports": "Conflicting 6 Primrose Street listing; not used as current location"
+          }
+        ],
+        "caveats": [
+          "Do not create additional outlets at 6 Primrose Street or 102 Albro Lake Road from directory residue. They share current Dartmouth phone and likely reflect historical locations, but relocation history is not conclusively established.",
+          "Official Sunday hours read 11 pm to 10 pm. Do not silently repair to 11 am or noon.",
+          "Postal codes conflict between directory sources; omit.",
+          "Conditional because first-party homepage/social links lack civic address and branded Launchrock page is undated."
+        ],
+        "openingHours": null,
+        "coordinates": null
+      },
+      "reviewedAt": "2026-10-21T01:49:08.958074+00:00",
+      "currentPassSources": [],
+      "integrationState": "held"
+    },
+    {
+      "rowIndex": 30,
+      "name": "Morris East Bedford",
+      "previousDecision": "hold_exact_osm_identity",
+      "disposition": "unresolved_existing_identity",
+      "reason": "Current official confirms 620 Nine Mile Dr Unit 109 and Bedfordphone 9024447671, but existing osm-node-2704746819-morris-east identity needs exact address match. Do not add duplicate or map by proximity. Official page Friday/Saturday 10 pm vs footer 9:30 pm conflict; hours remain held.",
+      "priorEvidence": {
+        "name": "Morris East Bedford",
+        "decision": "hold_exact_osm_identity",
+        "canonicalCandidateId": "osm-node-2704746819-morris-east",
+        "address": "620 Nine Mile Drive, Unit 109, Bedford, NS B4A 0H4",
+        "reason": "Owner and owner-linked ordering source confirm the address but provide no independently verified coordinate pin. Existing OSM record has only a name and coordinates. Do not add a duplicate or overwrite its location from proximity alone.",
+        "sources": [
+          "https://www.morriseast.com/",
+          "https://order.toasttab.com/online/morris-east-bedford-620-nine-mile-drive?diningOption=takeout"
+        ]
+      },
+      "reviewedAt": "2026-10-21T01:49:08.958074+00:00",
+      "currentPassSources": [
+        "https://www.morriseast.com/"
+      ],
+      "integrationState": "held"
+    }
+  ]
+}

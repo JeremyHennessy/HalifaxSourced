@@ -27,7 +27,7 @@ try {
     ] }
   ] });
   await save('restaurant-lifecycle-report', { catalogAudit: { records: [{ restaurantId: 'archived', status: 'permanently_closed' }] } });
-  await save('verified-source-pages', { menuSources: [{ restaurantId: 'existing' }, { restaurantId: 'outside-catalog' }] });
+  await save('verified-source-pages', { menuSources: [{ restaurantId: 'existing', url: 'https://local.example/menu' }, { restaurantId: 'outside-catalog', url: 'https://outside.example/menu' }] });
   await writeFile(join(root, 'data/reviewed-place-resolutions.js'), 'window.HALIFAX_REVIEWED_PLACE_RESOLUTIONS={records:[{restaurantId:"existing",menuUrl:"https://local.example/menu"}]};');
   execFileSync(process.execPath, [join(root, 'scripts/build-content-coverage-report.mjs')], { cwd: root, stdio: 'pipe' });
   const report = JSON.parse(await readFile(join(root, 'data/build/content-coverage-report.json')));

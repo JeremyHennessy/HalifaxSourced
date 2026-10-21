@@ -2,7 +2,7 @@
 
 Reviewed 2026-10-20. This is a bounded, source-reviewed expansion, not an exhaustive census.
 
-49 reviewed regional locations are represented; the canonical catalog has 626 locations, compared with 578 before this batch. 1 new location is closed for the season, not permanently closed. No new coordinates or hours were guessed.
+50 reviewed regional locations are represented; the canonical catalog has 627 locations, compared with 578 before this batch. 1 new location is closed for the season, not permanently closed. No new coordinates or hours were guessed.
 
 ## Accepted locations by community
 
@@ -15,7 +15,7 @@ Reviewed 2026-10-20. This is a bounded, source-reviewed expansion, not an exhaus
 - Glen Haven: 1
 - Grand Desert: 1
 - Halifax / Fairview: 1
-- Hammonds Plains: 3
+- Hammonds Plains: 4
 - Hatchet Lake: 2
 - Herring Cove: 1
 - Hubbards: 2
@@ -47,7 +47,7 @@ All 769 directory observations were reconciled, not automatically published. The
 
 ## What remains
 
-31 reviewed hold entries retain source-specific uncertainty. In particular, inland Musquodoboit Valley, Waverley proper and the airport/northern boundary still need exact-location, ownership or current-operation evidence. Morris East Bedford is not duplicated or relocated from proximity alone. Watermark is independently verified at the former Rhubarb site; the former operators' Hazel's is a separate Liverpool business. No old Rhubarb menu, hours, images or identity are transferred.
+22 reviewed hold entries retain source-specific uncertainty. In particular, inland Musquodoboit Valley, Waverley proper and the airport/northern boundary still need exact-location, ownership or current-operation evidence. Morris East Bedford is not duplicated or relocated from proximity alone. Watermark is independently verified at the former Rhubarb site; the former operators' Hazel's is a separate Liverpool business. No old Rhubarb menu, hours, images or identity are transferred.
 
 All 16 HRM district audit lanes and their practical subcommunity checklists remain partial. Existing neighborhood labels understate rural coverage, so zero accepted additions in an area is not proof that no restaurant is present there. Nearby Hubbards is included as a labeled surrounding community, not automatically assigned to HRM.
 
@@ -61,4 +61,4 @@ All 16 HRM district audit lanes and their practical subcommunity checklists rema
 
 ## Evidence and maintenance
 
-All 49 regional locations have per-field dispositions in [the enrichment ledger](../data/reviewed-regional-enrichment.json), with successful direct source receipts for published additions. Service-specific hours are labeled and uncertain fields remain unknown. Location-specific sources and field caveats are retained in [the reviewed batch](../data/reviewed-regional-restaurants.json). The [source matrix](../data/regional-restaurant-coverage.json) defines the finite audit baseline and residual source work. The [full reconciliation report](../data/build/regional-restaurant-coverage-report.json) accounts for every directory observation. Names, shared websites and shared building numbers are not sufficient to merge restaurants; ambiguous cases stay in review.
+All 50 regional locations have per-field dispositions in [the enrichment ledger](../data/reviewed-regional-enrichment.json), with successful direct source receipts for published additions. Service-specific hours are labeled and uncertain fields remain unknown. Location-specific sources and field caveats are retained in [the reviewed batch](../data/reviewed-regional-restaurants.json). The [source matrix](../data/regional-restaurant-coverage.json) defines the finite audit baseline and residual source work. The [full reconciliation report](../data/build/regional-restaurant-coverage-report.json) accounts for every directory observation. Names, shared websites and shared building numbers are not sufficient to merge restaurants; ambiguous cases stay in review.

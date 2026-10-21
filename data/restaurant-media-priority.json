@@ -1,7 +1,7 @@
 {
   "version": 1,
   "generatedAt": "2026-10-20",
-  "targetCount": 120,
+  "targetCount": 121,
   "policy": "Consumer media requires a specific reusable licence or documented owner grant. Public website references remain unverified until authorization evidence is reviewed.",
   "allowedSources": [
     "wikimedia_commons",
@@ -714,6 +714,13 @@
     {
       "restaurantId": "osm-way-671922221-mckelvie-s",
       "name": "McKelvie's",
+      "status": "approved",
+      "automaticApprovalPolicy": "verified-thumbnail-v1",
+      "previousPriorityRecord": null
+    },
+    {
+      "restaurantId": "the-chickenburger-bedford",
+      "name": "The Chickenburger",
       "status": "approved",
       "automaticApprovalPolicy": "verified-thumbnail-v1",
       "previousPriorityRecord": null

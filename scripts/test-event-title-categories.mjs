@@ -1,0 +1,16 @@
+import assert from 'node:assert/strict';
+import {readFileSync} from 'node:fs';
+import vm from 'node:vm';
+const source=readFileSync(new URL('./import-supplemental-city-events.mjs',import.meta.url),'utf8');
+const ctx=vm.createContext({});
+vm.runInContext(source.slice(source.indexOf('function simpleEventCategories'),source.indexOf('function locationPageWhen')),ctx);
+for(const title of ['Welcome Housing & Support Drop-in Clinic','Starting a Small Business','Research Help','Community Meeting']) assert.deepEqual([...ctx.simpleEventCategories(title)],['Community'],title);
+assert.deepEqual([...ctx.simpleEventCategories('Sing Along')],['Music','Arts']);
+assert.deepEqual([...ctx.simpleEventCategories('Knitting Circle')],['Arts','Community']);
+assert.deepEqual([...ctx.simpleEventCategories('Tea and Conversation')],['Food & Drink','Community']);
+const events=readFileSync(new URL('../app-events.js',import.meta.url),'utf8');
+vm.runInContext(events.slice(events.indexOf('function eventDisplayTitle'),events.indexOf('function eventSourceButton')),ctx);
+const title='Meet Juno, a St. John Ambulance Therapy Dog';
+assert.equal(ctx.eventDisplayTitle({title:`${title} ${title}`}),title);
+assert.equal(ctx.eventDisplayTitle({title:'Choir! Choir! Choir! presents Landslide'}),'Choir! Choir! Choir! presents Landslide');
+console.log('Event title and categories: word boundaries prevent housing/art substring errors; exact repeated title only.');

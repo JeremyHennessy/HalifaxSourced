@@ -1,7 +1,9 @@
+import integrity from '../../source-integrity.js';
 // Reachability and outbound ownership are not exact-location or content approval.
 export function sourcePageDisposition(candidate, details) {
   let url;
   try { url = new URL(details.url || candidate.url); } catch { return { state: 'rejected', reason: 'invalid_destination' }; }
+  if (!integrity.pointerSafe(candidate.restaurantId, candidate.kind, url.href)) return { state: 'rejected', reason: 'reviewed_wrong_location_or_content_pointer' };
   const host = url.hostname.toLowerCase().replace(/^www\./, '');
   if (['facebook.com','instagram.com','twitter.com','x.com','youtube.com','tiktok.com'].some(h => host === h || host.endsWith('.'+h))) {
     return { state: 'needs-review', reason: 'social_profile_is_not_verified_menu_or_special' };

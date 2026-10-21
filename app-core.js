@@ -97,7 +97,7 @@ function groupVerifiedSources(records) {
   for (const record of records) {
     if (!record?.restaurantId || !record?.url || record.reviewState !== "verified") continue;
     const url = safeUrl(record.url);
-    if (!url) continue;
+    if (!url || !HalifaxDataIntegrity.pointerSafe(record.restaurantId, record.kind, url)) continue;
     if (!grouped.has(record.restaurantId)) grouped.set(record.restaurantId, []);
     grouped.get(record.restaurantId).push({
       label: record.label || (record.kind === "menu" ? "Menu" : "Specials"),

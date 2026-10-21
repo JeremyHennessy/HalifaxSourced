@@ -6,6 +6,13 @@
 // Reapply reviewed fields after enrichment so stale facts cannot reopen a venue.
 HalifaxRestaurantCorrections.apply(restaurants, reviewedRestaurantCorrections);
 for (const restaurant of restaurants) {
+  // Apply last: candidate/fact layers must not resurrect a rejected destination.
+  restaurant.menuLinks = (restaurant.menuLinks || []).filter(link => HalifaxDataIntegrity.pointerSafe(restaurant.id, 'menu', link.url));
+  restaurant.specialLinks = (restaurant.specialLinks || []).filter(link => HalifaxDataIntegrity.pointerSafe(restaurant.id, 'special', link.url));
+  restaurant.structuredSpecials = (restaurant.structuredSpecials || []).filter(item => HalifaxDataIntegrity.pointerSafe(restaurant.id, 'special', item.sourceUrl));
+  restaurant.currentVerifiedSpecials = (restaurant.currentVerifiedSpecials || []).filter(item => HalifaxDataIntegrity.pointerSafe(restaurant.id, 'special', item.sourceUrl));
+  restaurant.hasMenu = restaurant.menuLinks.length > 0;
+  restaurant.hasSpecial = Boolean(restaurant.specialLinks.length || restaurant.structuredSpecials.length || restaurant.specials?.length);
   if (isRestaurantActive(restaurant)) continue;
   restaurant.menuLinks = [];
   restaurant.reservationLinks = [];

@@ -39,7 +39,7 @@ const credit=vm.runInContext("mediaAttributionMarkup(restaurants.find(r=>r.id===
 assert.match(credit,/Properpostman/);assert.match(credit,/class="media-license" href="https:\/\/creativecommons.org\/licenses\/by-sa\/4.0\/"/);
 assert.match(credit,/Photographed April 2023/);assert.match(credit,/otherwise unchanged/);
 const fourth=app.find(r=>r.id==='the-fourth-lock-fall-river');assert(fourth);assert.equal(fourth.phone,null);assert.equal(fourth.openingHours,null);assert.equal(fourth.coordinates.lat,44.8107358);assert(fourth.menuLinks.some(x=>x.url.includes('6c26fd8387e74fb8bc525f7654507433.pdf')));
-const picnic=app.find(r=>r.id==='labour-day-picnic-cafe-glen-haven');assert(picnic);assert.equal(picnic.coordinates,null);assert.equal(picnic.openingHours,null);assert.equal(picnic.phone,'902-821-2133');
+const picnic=app.find(r=>r.id==='labour-day-picnic-cafe-glen-haven');assert(picnic);assert.equal(picnic.coordinates.lat,44.6439);assert.equal(picnic.coordinates.lon,-63.90953);assert.match(picnic.openingHours,/We 08:00–15:00/);assert.equal(picnic.phone,'902-821-2133');
 console.log('New locations preserve uncertain fields; dated McKelvie photo renders creator, direct license, and modification disclosure.');
 
 assert.equal(tibs.hasReservation,false);assert.deepEqual(tibs.structuredFeatures,[]);
@@ -56,3 +56,5 @@ console.log('Official website actions require explicit website evidence; map/new
 assert.equal(vm.runInContext("sourcePreviewImageFor(restaurants.find(r=>r.id==='dear-friend'))",context),null,'Known unavailable reference must not cause repeat browser requests');
 const dearReference=context.window.HALIFAX_MEDIA_SOURCE_REFERENCES.records.find(r=>r.restaurantId==='dear-friend');
 assert.equal(dearReference.availabilityHttpStatus,404);assert.equal(dearReference.rightsState,'unverified');assert(dearReference.url.includes('share.jpg'),'Historical reference is retained');
+
+const acadian=app.find(r=>r.id==='acadian-enzo-hammonds-plains');assert(acadian);assert.equal(acadian.coordinates.lat,44.7336246);assert.equal(acadian.phone,'902-475-7000');assert(acadian.menuLinks.some(link=>link.url==='https://www.acadianenzo.com/menu'));

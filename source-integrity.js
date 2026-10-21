@@ -22,6 +22,48 @@
   "brawtajerk.ca/menu",
   "stardustbar.ca/reservations"
 ]);
+  // Exact restaurant + content kind + URL decisions. Raw historical observations
+  // remain in the audit ledger; a bad specials link can still be a valid menu.
+  const rejectedPointerKeys = new Set([
+  "[\"osm-node-11526163876-starbucks\",\"menu\",\"https://dal.mydininghub.ca/en/account?section=my-menu\"]",
+  "[\"osm-node-11526163877-fillings-bistro-32\",\"menu\",\"https://dal.mydininghub.ca/en/account?section=my-menu\"]",
+  "[\"osm-node-11526163878-tim-hortons\",\"menu\",\"https://dal.mydininghub.ca/en/account?section=my-menu\"]",
+  "[\"osm-node-11526163879-zoca\",\"menu\",\"https://dal.mydininghub.ca/en/account?section=my-menu\"]",
+  "[\"osm-node-11526163880-pizza-pizza\",\"menu\",\"https://dal.mydininghub.ca/en/account?section=my-menu\"]",
+  "[\"osm-node-11526163881-grille-works\",\"menu\",\"https://dal.mydininghub.ca/en/account?section=my-menu\"]",
+  "[\"osm-node-11526163882-brief-break\",\"menu\",\"https://dal.mydininghub.ca/en/account?section=my-menu\"]",
+  "[\"osm-node-11526163883-green-cafe\",\"menu\",\"https://dal.mydininghub.ca/en/account?section=my-menu\"]",
+  "[\"osm-node-11526163885-ground-zero\",\"menu\",\"https://dal.mydininghub.ca/en/account?section=my-menu\"]",
+  "[\"osm-node-11552234300-sushi-nami-royale\",\"menu\",\"https://sushinami.ca/bedford-highway/lunch-menu/\"]",
+  "[\"osm-node-11552234300-sushi-nami-royale\",\"menu\",\"https://sushinami.ca/downtown-halifax/lunch-menu/\"]",
+  "[\"osm-node-11552234300-sushi-nami-royale\",\"menu\",\"https://sushinami.ca/downtown-halifax/take-out/\"]",
+  "[\"osm-node-267592735-bluenose-ii\",\"menu\",\"https://bluenoseii.ca/wp-login.php?redirect_to=https%3A%2F%2Fbluenoseii.ca%2Fwp-admin%2Fnav-menus.php%3Faction%3Dlocations&reauth=1\"]",
+  "[\"osm-node-3799422457-cora\",\"menu\",\"https://www.chezcora.com/wp-content/uploads/2026/09/Allergenes-menu-2026-05_QC-EN.pdf\"]",
+  "[\"osm-node-3799422457-cora\",\"menu\",\"https://www.chezcora.com/wp-content/uploads/2026/09/Allergenes-menu-2026-05_QC-FR.pdf\"]",
+  "[\"osm-node-4990340206-subway\",\"menu\",\"https://www.subway.com/en-CA/MenuNutrition/Nutrition\"]",
+  "[\"osm-node-5161526522-sushi-nami-royale\",\"menu\",\"https://sushinami.ca/bayers-lake/lunch-menu/\"]",
+  "[\"osm-node-5161526522-sushi-nami-royale\",\"menu\",\"https://sushinami.ca/bedford-highway/lunch-menu/\"]",
+  "[\"osm-node-6296953436-the-mercantile-social\",\"menu\",\"https://www.thebesthalifax.com/top-cocktail-bars-halifax/\"]",
+  "[\"osm-node-6910685885-mexi-s\",\"menu\",\"https://www.mexicalirosas.com/moncton/dinner/\"]",
+  "[\"osm-node-6910685885-mexi-s\",\"menu\",\"https://www.mexicalirosas.com/moncton/kids/\"]",
+  "[\"osm-node-6910685885-mexi-s\",\"menu\",\"https://www.mexicalirosas.com/moncton/lunch/\"]",
+  "[\"osm-node-6910685885-mexi-s\",\"menu\",\"https://www.mexicalirosas.com/ottawa/dinner/\"]",
+  "[\"osm-node-6910685885-mexi-s\",\"menu\",\"https://www.mexicalirosas.com/ottawa/kids/\"]",
+  "[\"osm-node-11552510567-tako-sushi-and-ramen\",\"special\",\"https://www.takosushiramen.ca/menu/chefs-special-rolls\"]",
+  "[\"osm-node-11552510567-tako-sushi-and-ramen\",\"special\",\"https://www.takosushiramen.ca/menu/chefs-special-rolls/entrees\"]",
+  "[\"osm-node-11752717941-east-cup-cafe\",\"special\",\"https://eastcupcafe.com/collections/specialty-blends\"]",
+  "[\"osm-node-2713247300-pizza-co\",\"special\",\"https://pzzaco.ca/specialty-pizzas/\"]",
+  "[\"osm-node-2714920436-greco-pizza\",\"special\",\"https://greco.ca/newsletter/\"]",
+  "[\"osm-node-5631529440-hmcs-king-s-wardroom\",\"special\",\"https://ukings.ca/alumni/giving/support/special-projects/\"]",
+  "[\"osm-node-8636456775-booster-juice\",\"special\",\"https://boosterjuice.com/en-ca/collections/specialty-shots\"]"
+]);
+  function pointerSafe(restaurantId, kind, value) {
+    try { const url = new URL(value); url.hash = '';
+      const branch = { 'osm-node-11552234300-sushi-nami-royale': 'bayers-lake', 'osm-node-5161526522-sushi-nami-royale': 'downtown-halifax' }[restaurantId];
+      if (branch && sourceHost(url) === 'sushinami.ca' && /^\/(?:bayers-lake|downtown-halifax|bedford-highway)\//.test(url.pathname) && !url.pathname.startsWith('/' + branch + '/')) return false;
+      if (restaurantId === 'osm-node-6910685885-mexi-s' && sourceHost(url) === 'mexicalirosas.com' && /^\/(?:moncton|ottawa)\//.test(url.pathname)) return false;
+      return safeSource(value) && !rejectedPointerKeys.has(JSON.stringify([restaurantId, kind === 'specials' ? 'special' : kind, url.href])); } catch { return false; }
+  }
   function sourceHost(value) {
     try { return new URL(value).hostname.toLowerCase().replace(/\.+$/, '').replace(/^www\./, ''); } catch { return ''; }
   }
@@ -91,7 +133,7 @@
     }
     return [...new Set(dates)].sort().reverse();
   }
-  const api = { safeSource, sourceHost, publicationState, locationSafe, currentOffer, currentPost, postExpiry, publisherDates };
+  const api = { pointerSafe, safeSource, sourceHost, publicationState, locationSafe, currentOffer, currentPost, postExpiry, publisherDates };
   root.HalifaxDataIntegrity = api;
   if (typeof module !== 'undefined') module.exports = api;
 })(globalThis);

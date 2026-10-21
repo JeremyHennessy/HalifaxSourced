@@ -1,3 +1,4 @@
+import integrity from '../source-integrity.js';
 import { createHash } from "node:crypto";
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 
@@ -83,6 +84,7 @@ function statusFor({ sourceVerified, verifiedAt, validFrom, validTo, recurrence,
 const records = [];
 const seen = new Set();
 function push(record) {
+  if (!integrity.pointerSafe(record.restaurantId, 'special', record.sourceUrl)) return;
   // Expiry applies to every evidence tier, including unverified directory leads.
   const end = parsedStamp(record.validTo);
   record.expiresAt = end === null ? null : new Date(end).toISOString();

@@ -24,3 +24,9 @@ console.log('Review trust passed: preview is not rights, unseen/legacy approvals
 
 let exportedBlob;ctx.Blob=Blob;ctx.document={createElement:()=>({click(){},remove(){}}),body:{appendChild(){}}};ctx.toast=()=>{};ctx.URL.createObjectURL=blob=>{exportedBlob=blob;return 'blob:test'};ctx.URL.revokeObjectURL=()=>{};
 ctx.exportApprovedThumbnailMediaRecords();const exported=JSON.parse(await exportedBlob.text());assert.equal(exported.records.length,0);assert.match(exported.policy,/does not grant rights/);
+
+const longTitle = 'Meet Juno, a St. John Ambulance Therapy Dog';
+assert.equal(ctx.eventDisplayTitle({title: `${longTitle} ${longTitle}`}), longTitle);
+const dateOverride = readFileSync(new URL('../app-event-date-fixes.js',import.meta.url),'utf8');
+assert(!dateOverride.includes('escapeHtml(event.title)'), 'Late date renderer must not bypass display-title normalization');
+assert(dateOverride.includes('escapeHtml(eventDisplayTitle(event))'));

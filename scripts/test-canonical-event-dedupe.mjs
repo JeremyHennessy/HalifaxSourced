@@ -41,3 +41,9 @@ for (const group of groups.values()) if (group.length > 1) {
 // A refreshed source may already be deduplicated; zero pairs is valid.
 assert.ok(sourceGames.length > 0, 'Source fixture must include game listings');
 console.log(`All ${pairs} current source game pairs deduplicate without merging different dates or venues.`);
+
+const library = {id:'old', sourceKind:'official_library_location_calendar', sourceId:'library', title:'Meet Juno Meet Juno', eventUrl:'https://halifax.bibliocommons.com/events/6a8ddc4657c264087ad3ac1b', startAt:'2026-10-21T21:30:00Z'};
+assert.equal(dedupeCanonicalEvents([library,{...library,id:'fresh',title:'Meet Juno'}]).length,1);
+assert.deepEqual(dedupeCanonicalEvents([library,{...library,id:'fresh'}])[0].duplicateEventIds,['fresh']);
+assert.equal(dedupeCanonicalEvents([library,{...library,id:'other',startAt:'2026-10-22T21:30:00Z'}]).length,2);
+assert.equal(dedupeCanonicalEvents([library,{...library,id:'other',eventUrl:'https://halifax.bibliocommons.com/events/abcdef'}]).length,2);

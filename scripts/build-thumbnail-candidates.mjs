@@ -605,7 +605,8 @@ for (const lead of directoryPayload.records || []) {
   const candidate = directoryImageCandidate(lead, resolution, restaurant.name);
   if (candidate) candidates.push(candidate);
 }
-for (const candidate of existingThumbnailPayload.candidates || []) {
+const reviewedPhotoResearch = JSON.parse(await readFile(new URL('../data/reviewed-photo-research-candidates.json', import.meta.url), 'utf8'));
+for (const candidate of [...(existingThumbnailPayload.candidates || []), ...(reviewedPhotoResearch.candidates || [])]) {
   if (candidate?.restaurantId && !restaurantsById.has(candidate.restaurantId)) continue;
   if (!["approved_restaurant_media", "directory_source_image", "retained_media_reference"].includes(candidate?.sourceKind)) candidates.push(candidate);
 }
