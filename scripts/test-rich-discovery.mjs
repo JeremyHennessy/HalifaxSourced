@@ -1,4 +1,5 @@
 import { existsSync } from "node:fs";
+import { installOfflineResources } from "./lib/offline-browser-resources.mjs";
 
 const candidates = [
   process.env.PLAYWRIGHT_MODULE,
@@ -26,7 +27,9 @@ const executablePath = [
   "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe"
 ].filter(Boolean).find((path) => existsSync(path));
 const browser = await playwright.chromium.launch({ headless: true, executablePath });
-const page = await browser.newPage({ viewport: { width: 1440, height: 1000 } });
+const context = await browser.newContext({ viewport: { width: 1440, height: 1000 }, serviceWorkers: "block" });
+const resources = await installOfflineResources(context, url);
+const page = await context.newPage();
 const errors = [];
 const responseFailures = [];
 page.on("pageerror", (error) => errors.push(error.stack || error.message));
@@ -79,6 +82,7 @@ const state = await page.evaluate(() => {
     }
   };
 });
+resources.assertClean();
 if (errors.length) throw new Error(`Rich discovery emitted browser errors:\n${errors.join("\n")}`);
 if (responseFailures.length) throw new Error(`Rich discovery resource failures:\n${responseFailures.join("\n")}\nSTATE=${JSON.stringify(state)}`);
 if (state.readyState !== "complete") throw new Error(`Application never reached complete ready state: ${JSON.stringify(state)}`);

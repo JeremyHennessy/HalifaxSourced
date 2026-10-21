@@ -257,6 +257,15 @@
       "reason": "low_visual_quality_or_asset_like_metrics",
       "notes": "Visual review rejected for production thumbnail use. Metrics: 300x300, entropy 1.477, transparency 0.0.",
       "reviewedAt": "2026-09-03T13:08:09Z"
+    },
+    {
+      "restaurantId": "dear-friend",
+      "restaurantName": "Dear Friend",
+      "thumbnailUrl": "https://dearfriendbar.com/assets/images/share.jpg?v=0108bfbb",
+      "sourceUrl": "https://dearfriendbar.com/",
+      "reason": "unavailable_http_404",
+      "observedAt": "2026-10-21T01:02:44Z",
+      "notes": "Exact retained image URL returns HTTP 404; historical source/rights evidence retained, browser preview suppressed until a new verified availability review."
     }
   ]
 }

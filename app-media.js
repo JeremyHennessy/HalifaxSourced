@@ -111,7 +111,7 @@ function sourcePreviewImageFor(restaurant) {
   const records = window.HALIFAX_MEDIA_SOURCE_REFERENCES?.records;
   if (!Array.isArray(records)) return null;
   for (const reference of records) {
-    if (reference.restaurantId !== restaurant.id || referenceMediaProblems(reference).length) continue;
+    if (reference.restaurantId !== restaurant.id || reference.quarantined || reference.availabilityState === "unavailable" || referenceMediaProblems(reference).length) continue;
     if (reference.recordKind !== "source_reference" || reference.rightsState !== "unverified" ||
         reference.permissionConfirmed !== false || reference.license != null) continue;
     const url = publicMediaSourceUrl(reference.url);

@@ -16,6 +16,8 @@ try {
     ['osm-node-3789835257-the-juice-press','moved-juice-press'],
     ['osm-node-7185511974-clay-west-bar-and-grill','replaced-clay-west'],
     ['sushi-square-scotia-square','current-sushi-square'],
+    ['osm-way-671922221-mckelvie-s','current-mckelvies'],
+    ['dear-friend','current-dear-friend'],
     ['hux-halifax','current-hux'],
     ['osm-node-4421124794-cafe-marco-polo','current-marco-polo'],
     ['evans-fresh-seafoods-dartmouth','current-evans-seafood'],
@@ -29,6 +31,18 @@ try {
       return {active:isRestaurantActive(place),hours:place.openingHours,phone:place.phone,address:place.address,image:Boolean(permittedImageFor(place)),actions:place.menuLinks.length+place.orderingLinks.length+place.reservationLinks.length,overflow:document.documentElement.scrollWidth-innerWidth};
     },id);
     assert(model.overflow<=2,label+' horizontal overflow');
+    if (label === 'current-dear-friend') {
+      assert.equal(await page.locator('img[src*="dearfriendbar.com/assets/images/share.jpg"]').count(),0);
+      assert(!resources.evidence.requests.some(r=>r.url==='https://dearfriendbar.com/assets/images/share.jpg?v=0108bfbb'),'Known unavailable image must not be requested');
+      assert.equal(await page.evaluate(()=>sourcePreviewImageFor(restaurants.find(r=>r.id==='dear-friend'))),null);
+    }
+    if (label === 'current-mckelvies') {
+      const official=page.locator('.hero-actions a').filter({hasText:'Official site'});
+      assert.equal(await official.getAttribute('href'),'https://www.mckelvies.ca/');
+      assert.equal(await page.locator('.detail-official-actions a').filter({hasText:'Website'}).getAttribute('href'),'https://www.mckelvies.ca/');
+      assert.match(await page.locator('.media-attribution').first().innerText(),/April 2023/);
+      assert.equal(await page.locator('.media-license').first().getAttribute('href'),'https://creativecommons.org/licenses/by-sa/4.0/');
+    }
     if (label === 'current-wooden-monkey-dartmouth') {
       assert(model.active);
       assert.equal(model.phone, '902-466-3100');
