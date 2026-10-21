@@ -83,3 +83,35 @@ assert.equal(identity.decide({name:'Big Wedge',address:''},{name:'Big Wedge',add
 const builder=await readFile(new URL('scripts/build-discovered-restaurants.mjs',root),'utf8');assert(!builder.includes('item.vibe || ["new opening"]'));
 const explore=await readFile(new URL('app-explore.js',root),'utf8');assert(!explore.includes('liveNeighbourhoods.slice(0, 24)'));
 console.log('Regional regressions passed: branch/unit/city isolation, evidence aliases, ambiguous identity holds, lifecycle dates, runtime/export parity, bookmarks, and established discovery flags.');
+
+// The targeted Bedford audit must expand coverage without losing or relocating
+// old identities, hiding unpinned places, or reviving closed source-directory leads.
+const bedfordAudit = JSON.parse(await readFile(new URL('data/bedford-hammonds-coverage-audit.json',root)));
+const { createHash } = await import('node:crypto');
+const addedIds = new Set(bedfordAudit.acceptedIds);
+const preservedIds = bedfordAudit.baseline.canonicalIds.slice().sort();
+for (const id of preservedIds) assert(catalog.restaurants.some(row => row.id === id || row.aliasIds?.includes(id)), 'Baseline identity remains directly reachable or explicitly aliased: '+id);
+assert.equal(preservedIds.length, bedfordAudit.baseline.canonicalCount);
+assert.equal(createHash('sha256').update(JSON.stringify(preservedIds)).digest('hex'), bedfordAudit.baseline.canonicalIdsSha256, 'All baseline canonical IDs are preserved');
+assert.equal(bedfordAudit.completeCensus,false,'A targeted batch must not imply exhaustive coverage');
+for (const id of addedIds) {
+  const record = browser.find(row => row.id === id);
+  assert(record, id);
+  assert.equal(browser.filter(row => row.id === id).length,1,'One canonical record per addition');
+  context.bedfordTestArea = record.neighborhood;
+  const ids = JSON.parse(vm.runInContext('JSON.stringify(filteredRestaurants({query:"",neighbourhood:bedfordTestArea,cuisine:"all",feature:"all",sort:"name"}).map(row=>row.id))',context));
+  assert(ids.includes(id),'Area filter exposes accepted location even with unknown coordinates: '+id);
+  assert.equal(record.hasOpening,false,'Newly catalogued does not mean newly opened');
+}
+for (const correction of bedfordAudit.areaCorrections) {
+  const record = browser.find(row => row.id === correction.id);
+  assert.equal(record.neighborhood,correction.to);
+  context.bedfordTestArea=correction.to;
+  const ids=JSON.parse(vm.runInContext('JSON.stringify(filteredRestaurants({query:"",neighbourhood:bedfordTestArea,cuisine:"all",feature:"all",sort:"name"}).map(row=>row.id))',context));
+  assert(ids.includes(record.id),'Corrected Larry Uteck record is discoverable');
+}
+assert(!browser.some(row=>/^Sunnyside Restaurant$/i.test(row.name)),'Stale open website must not revive flood-closed Sunnyside');
+assert.equal(browser.find(row=>row.id==='makhani-bistro-bedford').openingHours,null,'Ambiguous Sunday midnight must not silently become noon');
+assert.equal(browser.find(row=>row.id==='mill-cove-brew-pub-bedford').hoursScope,'kitchen','Kitchen hours must not become bar hours');
+assert.equal(browser.filter(row=>row.id==='osm-node-2704746819-morris-east').length,1,'Held Morris East orphan stays intact');
+console.log(`Bedford audit passed: ${addedIds.size} additions, ${bedfordAudit.areaCorrections.length} area repairs, all ${preservedIds.length} baseline IDs retained.`);

@@ -8238,5 +8238,2556 @@ window.HALIFAX_DISCOVERED_RESTAURANTS = [
       "sourceLeadObserved": false,
       "reviewNote": "Visible official hours explicitly include Sunday through Thursday; JSON-LD omits Monday, but does not contradict or state closed. Exact location coordinates are explicit owner Restaurant JSON-LD, not derived geocoding. No daily specials/prices imported; no photograph rights inferred. Owner evidence is dated 2025, not a new current corporate-registry check."
     }
+  },
+  {
+    "id": "turkuaz-bedford",
+    "name": "Turkuaz Restaurant",
+    "neighborhood": "Bedford",
+    "category": "Restaurant",
+    "cuisines": [
+      "Turkish",
+      "Mediterranean"
+    ],
+    "vibe": [],
+    "qualityScore": null,
+    "freshnessDate": "2026-10-21",
+    "evidenceStatus": "verified",
+    "sourceLayer": "local_discovery",
+    "address": "827 Bedford Highway, Unit 102A, Bedford, NS B4A 0J1",
+    "phone": "902-405-5150",
+    "email": null,
+    "contactUrl": null,
+    "contactScope": null,
+    "fieldEvidence": {
+      "coordinates": {
+        "status": "unknown",
+        "sourceUrls": [
+          "https://turkuazrestaurant.ca/",
+          "https://turkuazrestaurant.ca/about-us",
+          "https://turkuazrestaurant.ca/menu"
+        ],
+        "observedAt": "2026-10-21T13:10:10.538180+00:00",
+        "observation": "Not sufficiently verified in this bounded review; no inferred value published."
+      },
+      "hours": {
+        "status": "unknown",
+        "sourceUrls": [
+          "https://turkuazrestaurant.ca/",
+          "https://turkuazrestaurant.ca/about-us",
+          "https://turkuazrestaurant.ca/menu"
+        ],
+        "observedAt": "2026-10-21T13:10:10.538180+00:00",
+        "observation": "Not sufficiently verified in this bounded review; no inferred value published."
+      },
+      "menu": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://turkuazrestaurant.ca/",
+          "https://turkuazrestaurant.ca/about-us",
+          "https://turkuazrestaurant.ca/menu"
+        ],
+        "observedAt": "2026-10-21T13:10:10.538180+00:00",
+        "observation": "Fresh official menu page linked by the location website; a pointer only, no prices or image reuse.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://turkuazrestaurant.ca/",
+            "fetchedAt": "2026-10-21T12:59:47.360808+00:00",
+            "httpStatus": 200,
+            "sha256": "cf8eaa707bfacf162d054afb5cebc79b8a19d3e5e9083e886ae837e6ed238a27"
+          },
+          {
+            "url": "https://turkuazrestaurant.ca/about-us",
+            "fetchedAt": "2026-10-21T12:59:47.361957+00:00",
+            "httpStatus": 200,
+            "sha256": "fadd11d10941101d1cab551419f3f0e83d68fbd3500463a56c1c21103eed903c"
+          },
+          {
+            "url": "https://turkuazrestaurant.ca/menu",
+            "fetchedAt": "2026-10-21T13:00:26.010166+00:00",
+            "httpStatus": 200,
+            "sha256": "0fe50d3983e73f6b6d49ccf6daf075075f251a0fd59237f422bdd62fd892255d"
+          }
+        ],
+        "freshContentReceived": true,
+        "url": "https://turkuazrestaurant.ca/menu"
+      },
+      "phone": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://turkuazrestaurant.ca/",
+          "https://turkuazrestaurant.ca/about-us",
+          "https://turkuazrestaurant.ca/menu"
+        ],
+        "observedAt": "2026-10-21T13:10:10.538180+00:00",
+        "observation": "Official location page gives the precise address and telephone and offers restaurant dining and takeaway.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://turkuazrestaurant.ca/",
+            "fetchedAt": "2026-10-21T12:59:47.360808+00:00",
+            "httpStatus": 200,
+            "sha256": "cf8eaa707bfacf162d054afb5cebc79b8a19d3e5e9083e886ae837e6ed238a27"
+          },
+          {
+            "url": "https://turkuazrestaurant.ca/about-us",
+            "fetchedAt": "2026-10-21T12:59:47.361957+00:00",
+            "httpStatus": 200,
+            "sha256": "fadd11d10941101d1cab551419f3f0e83d68fbd3500463a56c1c21103eed903c"
+          },
+          {
+            "url": "https://turkuazrestaurant.ca/menu",
+            "fetchedAt": "2026-10-21T13:00:26.010166+00:00",
+            "httpStatus": 200,
+            "sha256": "0fe50d3983e73f6b6d49ccf6daf075075f251a0fd59237f422bdd62fd892255d"
+          }
+        ],
+        "freshContentReceived": true
+      },
+      "contact": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://turkuazrestaurant.ca/",
+          "https://turkuazrestaurant.ca/about-us",
+          "https://turkuazrestaurant.ca/menu"
+        ],
+        "observedAt": "2026-10-21T13:10:10.538180+00:00",
+        "observation": "Official location page gives the precise address and telephone and offers restaurant dining and takeaway.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://turkuazrestaurant.ca/",
+            "fetchedAt": "2026-10-21T12:59:47.360808+00:00",
+            "httpStatus": 200,
+            "sha256": "cf8eaa707bfacf162d054afb5cebc79b8a19d3e5e9083e886ae837e6ed238a27"
+          },
+          {
+            "url": "https://turkuazrestaurant.ca/about-us",
+            "fetchedAt": "2026-10-21T12:59:47.361957+00:00",
+            "httpStatus": 200,
+            "sha256": "fadd11d10941101d1cab551419f3f0e83d68fbd3500463a56c1c21103eed903c"
+          },
+          {
+            "url": "https://turkuazrestaurant.ca/menu",
+            "fetchedAt": "2026-10-21T13:00:26.010166+00:00",
+            "httpStatus": 200,
+            "sha256": "0fe50d3983e73f6b6d49ccf6daf075075f251a0fd59237f422bdd62fd892255d"
+          }
+        ],
+        "freshContentReceived": true
+      }
+    },
+    "openingHoursVerifiedAt": null,
+    "hoursValidThrough": null,
+    "hoursScope": null,
+    "website": "https://turkuazrestaurant.ca/",
+    "openingHours": null,
+    "operatingStatus": "active",
+    "operatingStatusEvidence": {
+      "claim": "Official location page gives the precise address and telephone and offers restaurant dining and takeaway.",
+      "sourceUrl": "https://turkuazrestaurant.ca/",
+      "location": "827 Bedford Highway, Unit 102A, Bedford, NS B4A 0J1",
+      "observedAt": "2026-10-21T13:10:10.538180+00:00",
+      "verifiedAt": "2026-10-21T13:10:10.538180+00:00",
+      "reviewState": "verified"
+    },
+    "seasonality": null,
+    "lifecycleSchedule": null,
+    "ownershipEvidence": {
+      "claim": "Owner About page describes the chef-owner operating this Bedford Basin restaurant.",
+      "confidence": "reviewed local-business evidence",
+      "sourceUrls": [
+        "https://turkuazrestaurant.ca/",
+        "https://turkuazrestaurant.ca/about-us",
+        "https://turkuazrestaurant.ca/menu"
+      ],
+      "observedAt": "2026-10-21T13:10:10.538180+00:00"
+    },
+    "openingStatus": null,
+    "coordinates": null,
+    "socialProfiles": [],
+    "summary": "Turkuaz Restaurant serves Bedford at 827 Bedford Highway.",
+    "specials": [],
+    "events": [],
+    "sources": [
+      {
+        "label": "Reviewed location and local-business source",
+        "type": "restaurant_site",
+        "url": "https://turkuazrestaurant.ca/",
+        "status": "verified",
+        "observedAt": "2026-10-21T12:59:47.360808+00:00"
+      },
+      {
+        "label": "Reviewed location and local-business source",
+        "type": "restaurant_site",
+        "url": "https://turkuazrestaurant.ca/about-us",
+        "status": "verified",
+        "observedAt": "2026-10-21T12:59:47.361957+00:00"
+      },
+      {
+        "label": "Official location menu",
+        "type": "menu",
+        "url": "https://turkuazrestaurant.ca/menu",
+        "status": "verified",
+        "observedAt": "2026-10-21T13:00:26.010166+00:00"
+      }
+    ],
+    "discoveryReview": {
+      "approvedByOverride": true,
+      "sourceLeadObserved": false,
+      "reviewNote": "Only today’s dynamic hours are visible; no complete weekly schedule is inferred. Separate from Turkuaz Bistro on Washmill Lake Drive."
+    }
+  },
+  {
+    "id": "izzys-bagel-bedford",
+    "name": "Izzy’s Bagel Co.",
+    "neighborhood": "Bedford",
+    "category": "Restaurant",
+    "cuisines": [
+      "Bakery"
+    ],
+    "vibe": [],
+    "qualityScore": null,
+    "freshnessDate": "2026-10-21",
+    "evidenceStatus": "verified",
+    "sourceLayer": "local_discovery",
+    "address": "1180 Bedford Highway, Bedford, NS B4A 1C1",
+    "phone": "902-832-0028",
+    "email": null,
+    "contactUrl": null,
+    "contactScope": null,
+    "fieldEvidence": {
+      "coordinates": {
+        "status": "unknown",
+        "sourceUrls": [
+          "https://izzysbagel.com/",
+          "https://nslegislature.ca/sites/default/files/pdfs/proceedings/hansard/61-5/h13apr15.pdf"
+        ],
+        "observedAt": "2026-10-21T13:10:10.538180+00:00",
+        "observation": "Not sufficiently verified in this bounded review; no inferred value published."
+      },
+      "hours": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://izzysbagel.com/",
+          "https://nslegislature.ca/sites/default/files/pdfs/proceedings/hansard/61-5/h13apr15.pdf"
+        ],
+        "observedAt": "2026-10-21T13:10:10.538180+00:00",
+        "observation": "Complete owner-published weekly schedule. Ordinary weekly service; holiday exceptions not inferred.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://izzysbagel.com/",
+            "fetchedAt": "2026-10-21T13:00:02.792151+00:00",
+            "httpStatus": 200,
+            "sha256": "b3eed1595bdd4f183f5979d40f80929b89cca62f7524c6c4c2b654fc5b94f66d"
+          },
+          {
+            "url": "https://nslegislature.ca/sites/default/files/pdfs/proceedings/hansard/61-5/h13apr15.pdf",
+            "fetchedAt": "2026-10-21T13:02:52.366354+00:00",
+            "httpStatus": 200,
+            "sha256": "f07ba7a68af10294c6c8acaf796bb294430b2a8987efa93762e76c916b58c15f"
+          }
+        ],
+        "freshContentReceived": true,
+        "publishedText": "Mo-Tu 07:30-17:00; We 07:30-19:00; Th-Fr 07:30-17:00; Sa-Su 08:00-16:00"
+      },
+      "menu": {
+        "status": "unknown",
+        "sourceUrls": [
+          "https://izzysbagel.com/",
+          "https://nslegislature.ca/sites/default/files/pdfs/proceedings/hansard/61-5/h13apr15.pdf"
+        ],
+        "observedAt": "2026-10-21T13:10:10.538180+00:00",
+        "observation": "Not sufficiently verified in this bounded review; no inferred value published."
+      },
+      "phone": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://izzysbagel.com/",
+          "https://nslegislature.ca/sites/default/files/pdfs/proceedings/hansard/61-5/h13apr15.pdf"
+        ],
+        "observedAt": "2026-10-21T13:10:10.538180+00:00",
+        "observation": "Fresh owner homepage publishes bagel offerings, the Bedford address, phone and weekly schedule.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://izzysbagel.com/",
+            "fetchedAt": "2026-10-21T13:00:02.792151+00:00",
+            "httpStatus": 200,
+            "sha256": "b3eed1595bdd4f183f5979d40f80929b89cca62f7524c6c4c2b654fc5b94f66d"
+          },
+          {
+            "url": "https://nslegislature.ca/sites/default/files/pdfs/proceedings/hansard/61-5/h13apr15.pdf",
+            "fetchedAt": "2026-10-21T13:02:52.366354+00:00",
+            "httpStatus": 200,
+            "sha256": "f07ba7a68af10294c6c8acaf796bb294430b2a8987efa93762e76c916b58c15f"
+          }
+        ],
+        "freshContentReceived": true
+      },
+      "contact": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://izzysbagel.com/",
+          "https://nslegislature.ca/sites/default/files/pdfs/proceedings/hansard/61-5/h13apr15.pdf"
+        ],
+        "observedAt": "2026-10-21T13:10:10.538180+00:00",
+        "observation": "Fresh owner homepage publishes bagel offerings, the Bedford address, phone and weekly schedule.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://izzysbagel.com/",
+            "fetchedAt": "2026-10-21T13:00:02.792151+00:00",
+            "httpStatus": 200,
+            "sha256": "b3eed1595bdd4f183f5979d40f80929b89cca62f7524c6c4c2b654fc5b94f66d"
+          },
+          {
+            "url": "https://nslegislature.ca/sites/default/files/pdfs/proceedings/hansard/61-5/h13apr15.pdf",
+            "fetchedAt": "2026-10-21T13:02:52.366354+00:00",
+            "httpStatus": 200,
+            "sha256": "f07ba7a68af10294c6c8acaf796bb294430b2a8987efa93762e76c916b58c15f"
+          }
+        ],
+        "freshContentReceived": true
+      }
+    },
+    "openingHoursVerifiedAt": "2026-10-21T13:10:10.538180+00:00",
+    "hoursValidThrough": null,
+    "hoursScope": "restaurant",
+    "website": "https://izzysbagel.com/",
+    "openingHours": "Mo-Tu 07:30-17:00; We 07:30-19:00; Th-Fr 07:30-17:00; Sa-Su 08:00-16:00",
+    "operatingStatus": "active",
+    "operatingStatusEvidence": {
+      "claim": "Fresh owner homepage publishes bagel offerings, the Bedford address, phone and weekly schedule.",
+      "sourceUrl": "https://izzysbagel.com/",
+      "location": "1180 Bedford Highway, Bedford, NS B4A 1C1",
+      "observedAt": "2026-10-21T13:10:10.538180+00:00",
+      "verifiedAt": "2026-10-21T13:10:10.538180+00:00",
+      "reviewState": "verified"
+    },
+    "seasonality": null,
+    "lifecycleSchedule": null,
+    "ownershipEvidence": {
+      "claim": "Nova Scotia Legislature April 15 2013 resolution332 records the local founder creating the Bedford bagel business; the current owner site identifies the same local brand and address. Historical founder evidence is not a fresh corporate ownership check.",
+      "confidence": "reviewed local-business evidence",
+      "sourceUrls": [
+        "https://izzysbagel.com/",
+        "https://nslegislature.ca/sites/default/files/pdfs/proceedings/hansard/61-5/h13apr15.pdf"
+      ],
+      "observedAt": "2026-10-21T13:10:10.538180+00:00"
+    },
+    "openingStatus": null,
+    "coordinates": null,
+    "socialProfiles": [],
+    "summary": "Izzy’s Bagel Co. serves Bedford at 1180 Bedford Highway.",
+    "specials": [],
+    "events": [],
+    "sources": [
+      {
+        "label": "Reviewed location and local-business source",
+        "type": "restaurant_site",
+        "url": "https://izzysbagel.com/",
+        "status": "verified",
+        "observedAt": "2026-10-21T13:00:02.792151+00:00"
+      },
+      {
+        "label": "Reviewed location and local-business source",
+        "type": "regional_review_source",
+        "url": "https://nslegislature.ca/sites/default/files/pdfs/proceedings/hansard/61-5/h13apr15.pdf",
+        "status": "verified",
+        "observedAt": "2026-10-21T13:02:52.366354+00:00"
+      }
+    ],
+    "discoveryReview": {
+      "approvedByOverride": true,
+      "sourceLeadObserved": false,
+      "reviewNote": "Holiday hours must be confirmed separately. No complete sandwich menu or exact coordinate pin has been verified."
+    }
+  },
+  {
+    "id": "makhani-bistro-bedford",
+    "name": "Makhani Bistro",
+    "neighborhood": "Bedford",
+    "category": "Restaurant",
+    "cuisines": [
+      "Indian"
+    ],
+    "vibe": [],
+    "qualityScore": null,
+    "freshnessDate": "2026-10-21",
+    "evidenceStatus": "verified",
+    "sourceLayer": "local_discovery",
+    "address": "1595 Bedford Highway, Bedford, NS B4A 3Y4",
+    "phone": "902-407-5150",
+    "email": null,
+    "contactUrl": null,
+    "contactScope": null,
+    "fieldEvidence": {
+      "coordinates": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.makhanibistro.ca/hours-and-locations",
+          "https://www.makhanibistro.ca/about",
+          "https://www.makhanibistro.ca/menu"
+        ],
+        "observedAt": "2026-10-21T13:10:10.538180+00:00",
+        "observation": "Owner location HTML explicitly pairs businessLocationCoordinates with the same street address. Not geocoded from a community or map viewport.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://www.makhanibistro.ca/hours-and-locations",
+            "fetchedAt": "2026-10-21T12:59:47.363011+00:00",
+            "httpStatus": 200,
+            "sha256": "3e5ee14ca614336ae6d2c2b32530de23596c9e3ac84c324e59fc400705c885e5"
+          },
+          {
+            "url": "https://www.makhanibistro.ca/about",
+            "fetchedAt": "2026-10-21T12:59:57.123029+00:00",
+            "httpStatus": 200,
+            "sha256": "1e9a001a939426666e9361bb18692fde14ce4758482f608e82673a075e9eec64"
+          },
+          {
+            "url": "https://www.makhanibistro.ca/menu",
+            "fetchedAt": "2026-10-21T13:00:53.603363+00:00",
+            "httpStatus": 200,
+            "sha256": "72b1354eace67cab04a9a3005a7e75e5fa2cccb0a53f3554695ecf9fc051656d"
+          }
+        ],
+        "freshContentReceived": true,
+        "value": {
+          "lat": 44.73223869999999,
+          "lon": -63.65540530000001
+        },
+        "method": "owner_explicit_business_coordinates"
+      },
+      "hours": {
+        "status": "unknown",
+        "sourceUrls": [
+          "https://www.makhanibistro.ca/hours-and-locations",
+          "https://www.makhanibistro.ca/about",
+          "https://www.makhanibistro.ca/menu"
+        ],
+        "observedAt": "2026-10-21T13:10:10.538180+00:00",
+        "observation": "Not sufficiently verified in this bounded review; no inferred value published."
+      },
+      "menu": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.makhanibistro.ca/hours-and-locations",
+          "https://www.makhanibistro.ca/about",
+          "https://www.makhanibistro.ca/menu"
+        ],
+        "observedAt": "2026-10-21T13:10:10.538180+00:00",
+        "observation": "Fresh official menu page linked by the location website; a pointer only, no prices or image reuse.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://www.makhanibistro.ca/hours-and-locations",
+            "fetchedAt": "2026-10-21T12:59:47.363011+00:00",
+            "httpStatus": 200,
+            "sha256": "3e5ee14ca614336ae6d2c2b32530de23596c9e3ac84c324e59fc400705c885e5"
+          },
+          {
+            "url": "https://www.makhanibistro.ca/about",
+            "fetchedAt": "2026-10-21T12:59:57.123029+00:00",
+            "httpStatus": 200,
+            "sha256": "1e9a001a939426666e9361bb18692fde14ce4758482f608e82673a075e9eec64"
+          },
+          {
+            "url": "https://www.makhanibistro.ca/menu",
+            "fetchedAt": "2026-10-21T13:00:53.603363+00:00",
+            "httpStatus": 200,
+            "sha256": "72b1354eace67cab04a9a3005a7e75e5fa2cccb0a53f3554695ecf9fc051656d"
+          }
+        ],
+        "freshContentReceived": true,
+        "url": "https://www.makhanibistro.ca/menu"
+      },
+      "phone": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.makhanibistro.ca/hours-and-locations",
+          "https://www.makhanibistro.ca/about",
+          "https://www.makhanibistro.ca/menu"
+        ],
+        "observedAt": "2026-10-21T13:10:10.538180+00:00",
+        "observation": "Current official location page and menu identify its Sunnyside Mall address and food service.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://www.makhanibistro.ca/hours-and-locations",
+            "fetchedAt": "2026-10-21T12:59:47.363011+00:00",
+            "httpStatus": 200,
+            "sha256": "3e5ee14ca614336ae6d2c2b32530de23596c9e3ac84c324e59fc400705c885e5"
+          },
+          {
+            "url": "https://www.makhanibistro.ca/about",
+            "fetchedAt": "2026-10-21T12:59:57.123029+00:00",
+            "httpStatus": 200,
+            "sha256": "1e9a001a939426666e9361bb18692fde14ce4758482f608e82673a075e9eec64"
+          },
+          {
+            "url": "https://www.makhanibistro.ca/menu",
+            "fetchedAt": "2026-10-21T13:00:53.603363+00:00",
+            "httpStatus": 200,
+            "sha256": "72b1354eace67cab04a9a3005a7e75e5fa2cccb0a53f3554695ecf9fc051656d"
+          }
+        ],
+        "freshContentReceived": true
+      },
+      "contact": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.makhanibistro.ca/hours-and-locations",
+          "https://www.makhanibistro.ca/about",
+          "https://www.makhanibistro.ca/menu"
+        ],
+        "observedAt": "2026-10-21T13:10:10.538180+00:00",
+        "observation": "Current official location page and menu identify its Sunnyside Mall address and food service.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://www.makhanibistro.ca/hours-and-locations",
+            "fetchedAt": "2026-10-21T12:59:47.363011+00:00",
+            "httpStatus": 200,
+            "sha256": "3e5ee14ca614336ae6d2c2b32530de23596c9e3ac84c324e59fc400705c885e5"
+          },
+          {
+            "url": "https://www.makhanibistro.ca/about",
+            "fetchedAt": "2026-10-21T12:59:57.123029+00:00",
+            "httpStatus": 200,
+            "sha256": "1e9a001a939426666e9361bb18692fde14ce4758482f608e82673a075e9eec64"
+          },
+          {
+            "url": "https://www.makhanibistro.ca/menu",
+            "fetchedAt": "2026-10-21T13:00:53.603363+00:00",
+            "httpStatus": 200,
+            "sha256": "72b1354eace67cab04a9a3005a7e75e5fa2cccb0a53f3554695ecf9fc051656d"
+          }
+        ],
+        "freshContentReceived": true
+      }
+    },
+    "openingHoursVerifiedAt": null,
+    "hoursValidThrough": null,
+    "hoursScope": null,
+    "website": "https://www.makhanibistro.ca/",
+    "openingHours": null,
+    "operatingStatus": "active",
+    "operatingStatusEvidence": {
+      "claim": "Current official location page and menu identify its Sunnyside Mall address and food service.",
+      "sourceUrl": "https://www.makhanibistro.ca/hours-and-locations",
+      "location": "1595 Bedford Highway, Bedford, NS B4A 3Y4",
+      "observedAt": "2026-10-21T13:10:10.538180+00:00",
+      "verifiedAt": "2026-10-21T13:10:10.538180+00:00",
+      "reviewState": "verified"
+    },
+    "seasonality": null,
+    "lifecycleSchedule": null,
+    "ownershipEvidence": {
+      "claim": "Official About page explicitly describes a family-owned Bedford business.",
+      "confidence": "reviewed local-business evidence",
+      "sourceUrls": [
+        "https://www.makhanibistro.ca/hours-and-locations",
+        "https://www.makhanibistro.ca/about",
+        "https://www.makhanibistro.ca/menu"
+      ],
+      "observedAt": "2026-10-21T13:10:10.538180+00:00"
+    },
+    "openingStatus": null,
+    "coordinates": {
+      "lat": 44.73223869999999,
+      "lon": -63.65540530000001
+    },
+    "socialProfiles": [],
+    "summary": "Makhani Bistro serves Bedford at 1595 Bedford Highway.",
+    "specials": [],
+    "events": [],
+    "sources": [
+      {
+        "label": "Reviewed location and local-business source",
+        "type": "restaurant_site",
+        "url": "https://www.makhanibistro.ca/hours-and-locations",
+        "status": "verified",
+        "observedAt": "2026-10-21T12:59:47.363011+00:00"
+      },
+      {
+        "label": "Reviewed location and local-business source",
+        "type": "restaurant_site",
+        "url": "https://www.makhanibistro.ca/about",
+        "status": "verified",
+        "observedAt": "2026-10-21T12:59:57.123029+00:00"
+      },
+      {
+        "label": "Official location menu",
+        "type": "menu",
+        "url": "https://www.makhanibistro.ca/menu",
+        "status": "verified",
+        "observedAt": "2026-10-21T13:00:53.603363+00:00"
+      }
+    ],
+    "discoveryReview": {
+      "approvedByOverride": true,
+      "sourceLeadObserved": false,
+      "reviewNote": "Weekly hours held: owner Sunday start reads 12 am, not a safe basis to invent noon. Coordinates are explicit owner businessLocationCoordinates paired with this address."
+    }
+  },
+  {
+    "id": "resto-urban-dining-bedford",
+    "name": "Resto Urban Dining",
+    "neighborhood": "Bedford",
+    "category": "Restaurant",
+    "cuisines": [],
+    "vibe": [],
+    "qualityScore": null,
+    "freshnessDate": "2026-10-21",
+    "evidenceStatus": "verified",
+    "sourceLayer": "local_discovery",
+    "address": "1516 Bedford Highway, Bedford, NS B4A 1E5",
+    "phone": "902-832-1088",
+    "email": null,
+    "contactUrl": null,
+    "contactScope": null,
+    "fieldEvidence": {
+      "coordinates": {
+        "status": "unknown",
+        "sourceUrls": [
+          "https://www.restourbandining.com/contact-resto",
+          "https://www.restourbandining.com/menu",
+          "https://rans.ca/restaurants/resto-urban-dining-22/"
+        ],
+        "observedAt": "2026-10-21T13:10:10.538180+00:00",
+        "observation": "Not sufficiently verified in this bounded review; no inferred value published."
+      },
+      "hours": {
+        "status": "unknown",
+        "sourceUrls": [
+          "https://www.restourbandining.com/contact-resto",
+          "https://www.restourbandining.com/menu",
+          "https://rans.ca/restaurants/resto-urban-dining-22/"
+        ],
+        "observedAt": "2026-10-21T13:10:10.538180+00:00",
+        "observation": "Not sufficiently verified in this bounded review; no inferred value published."
+      },
+      "menu": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.restourbandining.com/contact-resto",
+          "https://www.restourbandining.com/menu",
+          "https://rans.ca/restaurants/resto-urban-dining-22/"
+        ],
+        "observedAt": "2026-10-21T13:10:10.538180+00:00",
+        "observation": "Fresh official menu page linked by the location website; a pointer only, no prices or image reuse.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://www.restourbandining.com/contact-resto",
+            "fetchedAt": "2026-10-21T13:00:48.870540+00:00",
+            "httpStatus": 200,
+            "sha256": "2e20ae62836998f9fd85cf539f746e2d7dbf283852ad47bee2f1d09cfb2240b1"
+          },
+          {
+            "url": "https://www.restourbandining.com/menu",
+            "fetchedAt": "2026-10-21T13:00:48.873613+00:00",
+            "httpStatus": 200,
+            "sha256": "dd55741e66f14649c416f48fc9a2a3e45952c58361742d903c38d994d02802ff"
+          },
+          {
+            "url": "https://rans.ca/restaurants/resto-urban-dining-22/",
+            "fetchedAt": "2026-10-21T13:01:34.918464+00:00",
+            "httpStatus": 200,
+            "sha256": "9d502939fdb8ddda4ad6dca7b7f1975352a315864c43b15da327b8a1ac0dea8f"
+          }
+        ],
+        "freshContentReceived": true,
+        "url": "https://www.restourbandining.com/menu"
+      },
+      "phone": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.restourbandining.com/contact-resto",
+          "https://www.restourbandining.com/menu",
+          "https://rans.ca/restaurants/resto-urban-dining-22/"
+        ],
+        "observedAt": "2026-10-21T13:10:10.538180+00:00",
+        "observation": "Fresh official contact page has address and phone; current menus page offers main and other menus.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://www.restourbandining.com/contact-resto",
+            "fetchedAt": "2026-10-21T13:00:48.870540+00:00",
+            "httpStatus": 200,
+            "sha256": "2e20ae62836998f9fd85cf539f746e2d7dbf283852ad47bee2f1d09cfb2240b1"
+          },
+          {
+            "url": "https://www.restourbandining.com/menu",
+            "fetchedAt": "2026-10-21T13:00:48.873613+00:00",
+            "httpStatus": 200,
+            "sha256": "dd55741e66f14649c416f48fc9a2a3e45952c58361742d903c38d994d02802ff"
+          },
+          {
+            "url": "https://rans.ca/restaurants/resto-urban-dining-22/",
+            "fetchedAt": "2026-10-21T13:01:34.918464+00:00",
+            "httpStatus": 200,
+            "sha256": "9d502939fdb8ddda4ad6dca7b7f1975352a315864c43b15da327b8a1ac0dea8f"
+          }
+        ],
+        "freshContentReceived": true
+      },
+      "contact": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.restourbandining.com/contact-resto",
+          "https://www.restourbandining.com/menu",
+          "https://rans.ca/restaurants/resto-urban-dining-22/"
+        ],
+        "observedAt": "2026-10-21T13:10:10.538180+00:00",
+        "observation": "Fresh official contact page has address and phone; current menus page offers main and other menus.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://www.restourbandining.com/contact-resto",
+            "fetchedAt": "2026-10-21T13:00:48.870540+00:00",
+            "httpStatus": 200,
+            "sha256": "2e20ae62836998f9fd85cf539f746e2d7dbf283852ad47bee2f1d09cfb2240b1"
+          },
+          {
+            "url": "https://www.restourbandining.com/menu",
+            "fetchedAt": "2026-10-21T13:00:48.873613+00:00",
+            "httpStatus": 200,
+            "sha256": "dd55741e66f14649c416f48fc9a2a3e45952c58361742d903c38d994d02802ff"
+          },
+          {
+            "url": "https://rans.ca/restaurants/resto-urban-dining-22/",
+            "fetchedAt": "2026-10-21T13:01:34.918464+00:00",
+            "httpStatus": 200,
+            "sha256": "9d502939fdb8ddda4ad6dca7b7f1975352a315864c43b15da327b8a1ac0dea8f"
+          }
+        ],
+        "freshContentReceived": true
+      }
+    },
+    "openingHoursVerifiedAt": null,
+    "hoursValidThrough": null,
+    "hoursScope": null,
+    "website": "https://www.restourbandining.com/",
+    "openingHours": null,
+    "operatingStatus": "active",
+    "operatingStatusEvidence": {
+      "claim": "Fresh official contact page has address and phone; current menus page offers main and other menus.",
+      "sourceUrl": "https://www.restourbandining.com/contact-resto",
+      "location": "1516 Bedford Highway, Bedford, NS B4A 1E5",
+      "observedAt": "2026-10-21T13:10:10.538180+00:00",
+      "verifiedAt": "2026-10-21T13:10:10.538180+00:00",
+      "reviewState": "verified"
+    },
+    "seasonality": null,
+    "lifecycleSchedule": null,
+    "ownershipEvidence": {
+      "claim": "Restaurant Association of Nova Scotia identifies this exact Bedford restaurant as family-run; current owner contact page names the same local operators.",
+      "confidence": "reviewed local-business evidence",
+      "sourceUrls": [
+        "https://www.restourbandining.com/contact-resto",
+        "https://www.restourbandining.com/menu",
+        "https://rans.ca/restaurants/resto-urban-dining-22/"
+      ],
+      "observedAt": "2026-10-21T13:10:10.538180+00:00"
+    },
+    "openingStatus": null,
+    "coordinates": null,
+    "socialProfiles": [],
+    "summary": "Resto Urban Dining serves Bedford at 1516 Bedford Highway.",
+    "specials": [],
+    "events": [],
+    "sources": [
+      {
+        "label": "Reviewed location and local-business source",
+        "type": "restaurant_site",
+        "url": "https://www.restourbandining.com/contact-resto",
+        "status": "verified",
+        "observedAt": "2026-10-21T13:00:48.870540+00:00"
+      },
+      {
+        "label": "Official location menu",
+        "type": "menu",
+        "url": "https://www.restourbandining.com/menu",
+        "status": "verified",
+        "observedAt": "2026-10-21T13:00:48.873613+00:00"
+      },
+      {
+        "label": "Reviewed location and local-business source",
+        "type": "regional_review_source",
+        "url": "https://rans.ca/restaurants/resto-urban-dining-22/",
+        "status": "verified",
+        "observedAt": "2026-10-21T13:01:34.918464+00:00"
+      }
+    ],
+    "discoveryReview": {
+      "approvedByOverride": true,
+      "sourceLeadObserved": false,
+      "reviewNote": "Owner schedule lacks am/pm labels; retain source as evidence rather than guess the complete weekly machine-readable schedule."
+    }
+  },
+  {
+    "id": "true-north-diner-bedford",
+    "name": "True North Diner",
+    "neighborhood": "Bedford",
+    "category": "Restaurant",
+    "cuisines": [
+      "Diner"
+    ],
+    "vibe": [],
+    "qualityScore": null,
+    "freshnessDate": "2026-10-21",
+    "evidenceStatus": "verified",
+    "sourceLayer": "local_discovery",
+    "address": "1658 Bedford Highway, Bedford, NS B4A 2X9",
+    "phone": "902-832-1950",
+    "email": null,
+    "contactUrl": null,
+    "contactScope": null,
+    "fieldEvidence": {
+      "coordinates": {
+        "status": "unknown",
+        "sourceUrls": [
+          "https://www.truenorthdiner.com/",
+          "https://www.truenorthdiner.com/main-menu/",
+          "https://www.graftonconnor.com/"
+        ],
+        "observedAt": "2026-10-21T13:10:10.538180+00:00",
+        "observation": "Not sufficiently verified in this bounded review; no inferred value published."
+      },
+      "hours": {
+        "status": "unknown",
+        "sourceUrls": [
+          "https://www.truenorthdiner.com/",
+          "https://www.truenorthdiner.com/main-menu/",
+          "https://www.graftonconnor.com/"
+        ],
+        "observedAt": "2026-10-21T13:10:10.538180+00:00",
+        "observation": "Not sufficiently verified in this bounded review; no inferred value published."
+      },
+      "menu": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.truenorthdiner.com/",
+          "https://www.truenorthdiner.com/main-menu/",
+          "https://www.graftonconnor.com/"
+        ],
+        "observedAt": "2026-10-21T13:10:10.538180+00:00",
+        "observation": "Fresh official menu page linked by the location website; a pointer only, no prices or image reuse.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://www.truenorthdiner.com/",
+            "fetchedAt": "2026-10-21T13:01:30.466485+00:00",
+            "httpStatus": 200,
+            "sha256": "fe10707baadda508625e05e866d1573ce24b59ee2fb863a718d7e6c845127e20"
+          },
+          {
+            "url": "https://www.truenorthdiner.com/main-menu/",
+            "fetchedAt": "2026-10-21T13:02:45.880928+00:00",
+            "httpStatus": 200,
+            "sha256": "585772bc8b8668b73e81a162133494d2b5a5861e2511eca3fc1e6e4b0612a288"
+          },
+          {
+            "url": "https://www.graftonconnor.com/",
+            "fetchedAt": "2026-10-21T13:00:19.703940+00:00",
+            "httpStatus": 200,
+            "sha256": "4fc43eef7ba2fd338c20a1731565cf457bea01ea30c75034fa52f8f82e601c55"
+          }
+        ],
+        "freshContentReceived": true,
+        "url": "https://www.truenorthdiner.com/main-menu/"
+      },
+      "phone": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.truenorthdiner.com/",
+          "https://www.truenorthdiner.com/main-menu/",
+          "https://www.graftonconnor.com/"
+        ],
+        "observedAt": "2026-10-21T13:10:10.538180+00:00",
+        "observation": "Fresh official homepage publishes the Bedford Place location, current menu and contact information.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://www.truenorthdiner.com/",
+            "fetchedAt": "2026-10-21T13:01:30.466485+00:00",
+            "httpStatus": 200,
+            "sha256": "fe10707baadda508625e05e866d1573ce24b59ee2fb863a718d7e6c845127e20"
+          },
+          {
+            "url": "https://www.truenorthdiner.com/main-menu/",
+            "fetchedAt": "2026-10-21T13:02:45.880928+00:00",
+            "httpStatus": 200,
+            "sha256": "585772bc8b8668b73e81a162133494d2b5a5861e2511eca3fc1e6e4b0612a288"
+          },
+          {
+            "url": "https://www.graftonconnor.com/",
+            "fetchedAt": "2026-10-21T13:00:19.703940+00:00",
+            "httpStatus": 200,
+            "sha256": "4fc43eef7ba2fd338c20a1731565cf457bea01ea30c75034fa52f8f82e601c55"
+          }
+        ],
+        "freshContentReceived": true
+      },
+      "contact": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.truenorthdiner.com/",
+          "https://www.truenorthdiner.com/main-menu/",
+          "https://www.graftonconnor.com/"
+        ],
+        "observedAt": "2026-10-21T13:10:10.538180+00:00",
+        "observation": "Fresh official homepage publishes the Bedford Place location, current menu and contact information.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://www.truenorthdiner.com/",
+            "fetchedAt": "2026-10-21T13:01:30.466485+00:00",
+            "httpStatus": 200,
+            "sha256": "fe10707baadda508625e05e866d1573ce24b59ee2fb863a718d7e6c845127e20"
+          },
+          {
+            "url": "https://www.truenorthdiner.com/main-menu/",
+            "fetchedAt": "2026-10-21T13:02:45.880928+00:00",
+            "httpStatus": 200,
+            "sha256": "585772bc8b8668b73e81a162133494d2b5a5861e2511eca3fc1e6e4b0612a288"
+          },
+          {
+            "url": "https://www.graftonconnor.com/",
+            "fetchedAt": "2026-10-21T13:00:19.703940+00:00",
+            "httpStatus": 200,
+            "sha256": "4fc43eef7ba2fd338c20a1731565cf457bea01ea30c75034fa52f8f82e601c55"
+          }
+        ],
+        "freshContentReceived": true
+      }
+    },
+    "openingHoursVerifiedAt": null,
+    "hoursValidThrough": null,
+    "hoursScope": null,
+    "website": "https://www.truenorthdiner.com/",
+    "openingHours": null,
+    "operatingStatus": "active",
+    "operatingStatusEvidence": {
+      "claim": "Fresh official homepage publishes the Bedford Place location, current menu and contact information.",
+      "sourceUrl": "https://www.truenorthdiner.com/",
+      "location": "1658 Bedford Highway, Bedford, NS B4A 2X9",
+      "observedAt": "2026-10-21T13:10:10.538180+00:00",
+      "verifiedAt": "2026-10-21T13:10:10.538180+00:00",
+      "reviewState": "verified"
+    },
+    "seasonality": null,
+    "lifecycleSchedule": null,
+    "ownershipEvidence": {
+      "claim": "Official restaurant site identifies membership in locally based Grafton Connor Group; the group lists this venue among its currently operated restaurants.",
+      "confidence": "reviewed local-business evidence",
+      "sourceUrls": [
+        "https://www.truenorthdiner.com/",
+        "https://www.truenorthdiner.com/main-menu/",
+        "https://www.graftonconnor.com/"
+      ],
+      "observedAt": "2026-10-21T13:10:10.538180+00:00"
+    },
+    "openingStatus": null,
+    "coordinates": null,
+    "socialProfiles": [],
+    "summary": "True North Diner serves Bedford at 1658 Bedford Highway.",
+    "specials": [],
+    "events": [],
+    "sources": [
+      {
+        "label": "Reviewed location and local-business source",
+        "type": "restaurant_site",
+        "url": "https://www.truenorthdiner.com/",
+        "status": "verified",
+        "observedAt": "2026-10-21T13:01:30.466485+00:00"
+      },
+      {
+        "label": "Official location menu",
+        "type": "menu",
+        "url": "https://www.truenorthdiner.com/main-menu/",
+        "status": "verified",
+        "observedAt": "2026-10-21T13:02:45.880928+00:00"
+      },
+      {
+        "label": "Reviewed location and local-business source",
+        "type": "regional_review_source",
+        "url": "https://www.graftonconnor.com/",
+        "status": "verified",
+        "observedAt": "2026-10-21T13:00:19.703940+00:00"
+      }
+    ],
+    "discoveryReview": {
+      "approvedByOverride": true,
+      "sourceLeadObserved": false,
+      "reviewNote": "Hours text 8:30-7:30 PM omits the opening meridiem; kept unknown instead of guessing. Distinct tenant from Bedford Neighbourhood Pub at the same mall address."
+    }
+  },
+  {
+    "id": "mill-cove-brew-pub-bedford",
+    "name": "Mill Cove Brew Pub",
+    "neighborhood": "Bedford",
+    "category": "Restaurant",
+    "cuisines": [
+      "Pub"
+    ],
+    "vibe": [],
+    "qualityScore": null,
+    "freshnessDate": "2026-10-21",
+    "evidenceStatus": "verified",
+    "sourceLayer": "local_discovery",
+    "address": "961 Bedford Highway, Bedford, NS B4A 1A9",
+    "phone": "902-832-0032",
+    "email": null,
+    "contactUrl": null,
+    "contactScope": null,
+    "fieldEvidence": {
+      "coordinates": {
+        "status": "unknown",
+        "sourceUrls": [
+          "https://millcovebrewpub.com/menu-3-col/",
+          "https://www.graftonconnor.com/"
+        ],
+        "observedAt": "2026-10-21T13:10:10.538180+00:00",
+        "observation": "Not sufficiently verified in this bounded review; no inferred value published."
+      },
+      "hours": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://millcovebrewpub.com/menu-3-col/",
+          "https://www.graftonconnor.com/"
+        ],
+        "observedAt": "2026-10-21T13:10:10.538180+00:00",
+        "observation": "Complete owner-published weekly schedule. Kitchen service only; not bar opening hours.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://millcovebrewpub.com/menu-3-col/",
+            "fetchedAt": "2026-10-21T13:01:30.467486+00:00",
+            "httpStatus": 200,
+            "sha256": "7ac100d568bd4421291a99aab27d2283958f75f80d3bb6d4b28285168c887e56"
+          },
+          {
+            "url": "https://www.graftonconnor.com/",
+            "fetchedAt": "2026-10-21T13:00:19.703940+00:00",
+            "httpStatus": 200,
+            "sha256": "4fc43eef7ba2fd338c20a1731565cf457bea01ea30c75034fa52f8f82e601c55"
+          }
+        ],
+        "freshContentReceived": true,
+        "publishedText": "Kitchen: Mo-Th 16:00-21:00; Fr-Sa 12:00-21:00; Su 16:00-21:00"
+      },
+      "menu": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://millcovebrewpub.com/menu-3-col/",
+          "https://www.graftonconnor.com/"
+        ],
+        "observedAt": "2026-10-21T13:10:10.538180+00:00",
+        "observation": "Fresh official menu page linked by the location website; a pointer only, no prices or image reuse.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://millcovebrewpub.com/menu-3-col/",
+            "fetchedAt": "2026-10-21T13:01:30.467486+00:00",
+            "httpStatus": 200,
+            "sha256": "7ac100d568bd4421291a99aab27d2283958f75f80d3bb6d4b28285168c887e56"
+          },
+          {
+            "url": "https://www.graftonconnor.com/",
+            "fetchedAt": "2026-10-21T13:00:19.703940+00:00",
+            "httpStatus": 200,
+            "sha256": "4fc43eef7ba2fd338c20a1731565cf457bea01ea30c75034fa52f8f82e601c55"
+          }
+        ],
+        "freshContentReceived": true,
+        "url": "https://millcovebrewpub.com/menu-3-col/"
+      },
+      "phone": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://millcovebrewpub.com/menu-3-col/",
+          "https://www.graftonconnor.com/"
+        ],
+        "observedAt": "2026-10-21T13:10:10.538180+00:00",
+        "observation": "Official menu/contact footer identifies the exact location, current public food service and separate kitchen hours.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://millcovebrewpub.com/menu-3-col/",
+            "fetchedAt": "2026-10-21T13:01:30.467486+00:00",
+            "httpStatus": 200,
+            "sha256": "7ac100d568bd4421291a99aab27d2283958f75f80d3bb6d4b28285168c887e56"
+          },
+          {
+            "url": "https://www.graftonconnor.com/",
+            "fetchedAt": "2026-10-21T13:00:19.703940+00:00",
+            "httpStatus": 200,
+            "sha256": "4fc43eef7ba2fd338c20a1731565cf457bea01ea30c75034fa52f8f82e601c55"
+          }
+        ],
+        "freshContentReceived": true
+      },
+      "contact": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://millcovebrewpub.com/menu-3-col/",
+          "https://www.graftonconnor.com/"
+        ],
+        "observedAt": "2026-10-21T13:10:10.538180+00:00",
+        "observation": "Official menu/contact footer identifies the exact location, current public food service and separate kitchen hours.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://millcovebrewpub.com/menu-3-col/",
+            "fetchedAt": "2026-10-21T13:01:30.467486+00:00",
+            "httpStatus": 200,
+            "sha256": "7ac100d568bd4421291a99aab27d2283958f75f80d3bb6d4b28285168c887e56"
+          },
+          {
+            "url": "https://www.graftonconnor.com/",
+            "fetchedAt": "2026-10-21T13:00:19.703940+00:00",
+            "httpStatus": 200,
+            "sha256": "4fc43eef7ba2fd338c20a1731565cf457bea01ea30c75034fa52f8f82e601c55"
+          }
+        ],
+        "freshContentReceived": true
+      }
+    },
+    "openingHoursVerifiedAt": "2026-10-21T13:10:10.538180+00:00",
+    "hoursValidThrough": null,
+    "hoursScope": "kitchen",
+    "website": "https://millcovebrewpub.com/",
+    "openingHours": "Kitchen: Mo-Th 16:00-21:00; Fr-Sa 12:00-21:00; Su 16:00-21:00",
+    "operatingStatus": "active",
+    "operatingStatusEvidence": {
+      "claim": "Official menu/contact footer identifies the exact location, current public food service and separate kitchen hours.",
+      "sourceUrl": "https://millcovebrewpub.com/menu-3-col/",
+      "location": "961 Bedford Highway, Bedford, NS B4A 1A9",
+      "observedAt": "2026-10-21T13:10:10.538180+00:00",
+      "verifiedAt": "2026-10-21T13:10:10.538180+00:00",
+      "reviewState": "verified"
+    },
+    "seasonality": null,
+    "lifecycleSchedule": null,
+    "ownershipEvidence": {
+      "claim": "Official website identifies Grafton Connor Group and the local group site lists Mill Cove Brew Pub among its operated venues.",
+      "confidence": "reviewed local-business evidence",
+      "sourceUrls": [
+        "https://millcovebrewpub.com/menu-3-col/",
+        "https://www.graftonconnor.com/"
+      ],
+      "observedAt": "2026-10-21T13:10:10.538180+00:00"
+    },
+    "openingStatus": null,
+    "coordinates": null,
+    "socialProfiles": [],
+    "summary": "Mill Cove Brew Pub serves Bedford at 961 Bedford Highway.",
+    "specials": [],
+    "events": [],
+    "sources": [
+      {
+        "label": "Official location menu",
+        "type": "menu",
+        "url": "https://millcovebrewpub.com/menu-3-col/",
+        "status": "verified",
+        "observedAt": "2026-10-21T13:01:30.467486+00:00"
+      },
+      {
+        "label": "Reviewed location and local-business source",
+        "type": "regional_review_source",
+        "url": "https://www.graftonconnor.com/",
+        "status": "verified",
+        "observedAt": "2026-10-21T13:00:19.703940+00:00"
+      }
+    ],
+    "discoveryReview": {
+      "approvedByOverride": true,
+      "sourceLeadObserved": false,
+      "reviewNote": "Published schedule is explicitly kitchen service, not the longer bar opening hours. Distinct from May Garden in the same shopping centre."
+    }
+  },
+  {
+    "id": "cha-baa-thai-bedford",
+    "name": "Cha Baa Thai – Bedford",
+    "neighborhood": "Bedford",
+    "category": "Restaurant",
+    "cuisines": [
+      "Thai"
+    ],
+    "vibe": [],
+    "qualityScore": null,
+    "freshnessDate": "2026-10-21",
+    "evidenceStatus": "verified",
+    "sourceLayer": "local_discovery",
+    "address": "1511 Bedford Highway, Bedford, NS B4A 1E3",
+    "phone": "902-446-8899",
+    "email": null,
+    "contactUrl": null,
+    "contactScope": null,
+    "fieldEvidence": {
+      "coordinates": {
+        "status": "unknown",
+        "sourceUrls": [
+          "https://chabaathai.ca/bedford/",
+          "https://chabaathai.ca/our-menu/",
+          "https://haligonia.ca/chaa-baa-thai-s-new-bedford-location-opens-78934/"
+        ],
+        "observedAt": "2026-10-21T13:10:10.538180+00:00",
+        "observation": "Not sufficiently verified in this bounded review; no inferred value published."
+      },
+      "hours": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://chabaathai.ca/bedford/",
+          "https://chabaathai.ca/our-menu/",
+          "https://haligonia.ca/chaa-baa-thai-s-new-bedford-location-opens-78934/"
+        ],
+        "observedAt": "2026-10-21T13:10:10.538180+00:00",
+        "observation": "Complete owner-published weekly schedule. Ordinary weekly service; holiday exceptions not inferred.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://chabaathai.ca/bedford/",
+            "fetchedAt": "2026-10-21T13:01:30.468560+00:00",
+            "httpStatus": 200,
+            "sha256": "70dae2ec69f217a7009423ff06ce9118dcb32ee06aec081c66aeeaee5c7d58a7"
+          },
+          {
+            "url": "https://chabaathai.ca/our-menu/",
+            "fetchedAt": "2026-10-21T13:02:45.881759+00:00",
+            "httpStatus": 200,
+            "sha256": "bef6b44a5b403658e5cb07eabca13d7a55dca052fc6ceebde3d2c89d940f8f21"
+          },
+          {
+            "url": "https://haligonia.ca/chaa-baa-thai-s-new-bedford-location-opens-78934/",
+            "fetchedAt": "2026-10-21T13:03:34.821050+00:00",
+            "httpStatus": 200,
+            "sha256": "e79abf45b7a3fb48851a0ff2ee6c468d3dba86bb891d4356a8c6bff56d035991"
+          }
+        ],
+        "freshContentReceived": true,
+        "publishedText": "Mo-Th 11:30-20:30; Fr-Sa 11:30-21:00; Su 11:30-20:30"
+      },
+      "menu": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://chabaathai.ca/bedford/",
+          "https://chabaathai.ca/our-menu/",
+          "https://haligonia.ca/chaa-baa-thai-s-new-bedford-location-opens-78934/"
+        ],
+        "observedAt": "2026-10-21T13:10:10.538180+00:00",
+        "observation": "Fresh official menu page linked by the location website; a pointer only, no prices or image reuse.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://chabaathai.ca/bedford/",
+            "fetchedAt": "2026-10-21T13:01:30.468560+00:00",
+            "httpStatus": 200,
+            "sha256": "70dae2ec69f217a7009423ff06ce9118dcb32ee06aec081c66aeeaee5c7d58a7"
+          },
+          {
+            "url": "https://chabaathai.ca/our-menu/",
+            "fetchedAt": "2026-10-21T13:02:45.881759+00:00",
+            "httpStatus": 200,
+            "sha256": "bef6b44a5b403658e5cb07eabca13d7a55dca052fc6ceebde3d2c89d940f8f21"
+          },
+          {
+            "url": "https://haligonia.ca/chaa-baa-thai-s-new-bedford-location-opens-78934/",
+            "fetchedAt": "2026-10-21T13:03:34.821050+00:00",
+            "httpStatus": 200,
+            "sha256": "e79abf45b7a3fb48851a0ff2ee6c468d3dba86bb891d4356a8c6bff56d035991"
+          }
+        ],
+        "freshContentReceived": true,
+        "url": "https://chabaathai.ca/our-menu/"
+      },
+      "phone": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://chabaathai.ca/bedford/",
+          "https://chabaathai.ca/our-menu/",
+          "https://haligonia.ca/chaa-baa-thai-s-new-bedford-location-opens-78934/"
+        ],
+        "observedAt": "2026-10-21T13:10:10.538180+00:00",
+        "observation": "Official Bedford-specific page gives exact address, telephone, full weekly hours and shared menu link.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://chabaathai.ca/bedford/",
+            "fetchedAt": "2026-10-21T13:01:30.468560+00:00",
+            "httpStatus": 200,
+            "sha256": "70dae2ec69f217a7009423ff06ce9118dcb32ee06aec081c66aeeaee5c7d58a7"
+          },
+          {
+            "url": "https://chabaathai.ca/our-menu/",
+            "fetchedAt": "2026-10-21T13:02:45.881759+00:00",
+            "httpStatus": 200,
+            "sha256": "bef6b44a5b403658e5cb07eabca13d7a55dca052fc6ceebde3d2c89d940f8f21"
+          },
+          {
+            "url": "https://haligonia.ca/chaa-baa-thai-s-new-bedford-location-opens-78934/",
+            "fetchedAt": "2026-10-21T13:03:34.821050+00:00",
+            "httpStatus": 200,
+            "sha256": "e79abf45b7a3fb48851a0ff2ee6c468d3dba86bb891d4356a8c6bff56d035991"
+          }
+        ],
+        "freshContentReceived": true
+      },
+      "contact": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://chabaathai.ca/bedford/",
+          "https://chabaathai.ca/our-menu/",
+          "https://haligonia.ca/chaa-baa-thai-s-new-bedford-location-opens-78934/"
+        ],
+        "observedAt": "2026-10-21T13:10:10.538180+00:00",
+        "observation": "Official Bedford-specific page gives exact address, telephone, full weekly hours and shared menu link.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://chabaathai.ca/bedford/",
+            "fetchedAt": "2026-10-21T13:01:30.468560+00:00",
+            "httpStatus": 200,
+            "sha256": "70dae2ec69f217a7009423ff06ce9118dcb32ee06aec081c66aeeaee5c7d58a7"
+          },
+          {
+            "url": "https://chabaathai.ca/our-menu/",
+            "fetchedAt": "2026-10-21T13:02:45.881759+00:00",
+            "httpStatus": 200,
+            "sha256": "bef6b44a5b403658e5cb07eabca13d7a55dca052fc6ceebde3d2c89d940f8f21"
+          },
+          {
+            "url": "https://haligonia.ca/chaa-baa-thai-s-new-bedford-location-opens-78934/",
+            "fetchedAt": "2026-10-21T13:03:34.821050+00:00",
+            "httpStatus": 200,
+            "sha256": "e79abf45b7a3fb48851a0ff2ee6c468d3dba86bb891d4356a8c6bff56d035991"
+          }
+        ],
+        "freshContentReceived": true
+      }
+    },
+    "openingHoursVerifiedAt": "2026-10-21T13:10:10.538180+00:00",
+    "hoursValidThrough": null,
+    "hoursScope": "restaurant",
+    "website": "https://chabaathai.ca/bedford/",
+    "openingHours": "Mo-Th 11:30-20:30; Fr-Sa 11:30-21:00; Su 11:30-20:30",
+    "operatingStatus": "active",
+    "operatingStatusEvidence": {
+      "claim": "Official Bedford-specific page gives exact address, telephone, full weekly hours and shared menu link.",
+      "sourceUrl": "https://chabaathai.ca/bedford/",
+      "location": "1511 Bedford Highway, Bedford, NS B4A 1E3",
+      "observedAt": "2026-10-21T13:10:10.538180+00:00",
+      "verifiedAt": "2026-10-21T13:10:10.538180+00:00",
+      "reviewState": "verified"
+    },
+    "seasonality": null,
+    "lifecycleSchedule": null,
+    "ownershipEvidence": {
+      "claim": "Owner site identifies Bedford as a branch of its Halifax regional restaurant group; its linked local opening report records the chef-owner and local founding locations.",
+      "confidence": "reviewed local-business evidence",
+      "sourceUrls": [
+        "https://chabaathai.ca/bedford/",
+        "https://chabaathai.ca/our-menu/",
+        "https://haligonia.ca/chaa-baa-thai-s-new-bedford-location-opens-78934/"
+      ],
+      "observedAt": "2026-10-21T13:10:10.538180+00:00"
+    },
+    "openingStatus": null,
+    "coordinates": null,
+    "socialProfiles": [],
+    "summary": "Cha Baa Thai – Bedford serves Bedford at 1511 Bedford Highway.",
+    "specials": [],
+    "events": [],
+    "sources": [
+      {
+        "label": "Reviewed location and local-business source",
+        "type": "restaurant_site",
+        "url": "https://chabaathai.ca/bedford/",
+        "status": "verified",
+        "observedAt": "2026-10-21T13:01:30.468560+00:00"
+      },
+      {
+        "label": "Official location menu",
+        "type": "menu",
+        "url": "https://chabaathai.ca/our-menu/",
+        "status": "verified",
+        "observedAt": "2026-10-21T13:02:45.881759+00:00"
+      },
+      {
+        "label": "Reviewed location and local-business source",
+        "type": "regional_review_source",
+        "url": "https://haligonia.ca/chaa-baa-thai-s-new-bedford-location-opens-78934/",
+        "status": "verified",
+        "observedAt": "2026-10-21T13:03:34.821050+00:00"
+      }
+    ],
+    "discoveryReview": {
+      "approvedByOverride": true,
+      "sourceLeadObserved": false,
+      "reviewNote": "Shared group menu is explicitly linked by Bedford branch. No coordinates copied from map viewport or other branch."
+    }
+  },
+  {
+    "id": "may-garden-mill-cove-bedford",
+    "name": "May Garden – Mill Cove",
+    "neighborhood": "Bedford",
+    "category": "Restaurant",
+    "cuisines": [
+      "Chinese"
+    ],
+    "vibe": [],
+    "qualityScore": null,
+    "freshnessDate": "2026-10-21",
+    "evidenceStatus": "verified",
+    "sourceLayer": "local_discovery",
+    "address": "961 Bedford Highway, Bedford, NS",
+    "phone": "902-832-8882",
+    "email": null,
+    "contactUrl": null,
+    "contactScope": null,
+    "fieldEvidence": {
+      "coordinates": {
+        "status": "unknown",
+        "sourceUrls": [
+          "https://maygarden.ca/",
+          "https://maygarden.ca/about-2/",
+          "https://maygarden.ca/contact-us-2/",
+          "https://www.crombie.ca/wp-content/uploads/2026/04/NS-Mill-Cove-Plaza-Site-04-08-2026.pdf"
+        ],
+        "observedAt": "2026-10-21T13:10:10.538180+00:00",
+        "observation": "Not sufficiently verified in this bounded review; no inferred value published."
+      },
+      "hours": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://maygarden.ca/",
+          "https://maygarden.ca/about-2/",
+          "https://maygarden.ca/contact-us-2/",
+          "https://www.crombie.ca/wp-content/uploads/2026/04/NS-Mill-Cove-Plaza-Site-04-08-2026.pdf"
+        ],
+        "observedAt": "2026-10-21T13:10:10.538180+00:00",
+        "observation": "Complete owner-published weekly schedule. Ordinary weekly service; holiday exceptions not inferred.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://maygarden.ca/",
+            "fetchedAt": "2026-10-21T13:00:19.708298+00:00",
+            "httpStatus": 200,
+            "sha256": "874c2bea779138d7fb174e3709d162b1da29b1c787c8f85f33f9e236045ea36c"
+          },
+          {
+            "url": "https://maygarden.ca/about-2/",
+            "fetchedAt": "2026-10-21T12:59:58.931241+00:00",
+            "httpStatus": 200,
+            "sha256": "1bcb312ab0f65e12a0f369caf9bae3b8cd763c38c388c7d2b200c2ceaae8503c"
+          },
+          {
+            "url": "https://maygarden.ca/contact-us-2/",
+            "fetchedAt": "2026-10-21T12:59:57.177086+00:00",
+            "httpStatus": 200,
+            "sha256": "89d492cfac89391bdecbbe457199613e4c9ce91da7c3cd542a3e1417be3f427f"
+          },
+          {
+            "url": "https://www.crombie.ca/wp-content/uploads/2026/04/NS-Mill-Cove-Plaza-Site-04-08-2026.pdf",
+            "fetchedAt": "2026-10-21T13:02:51.101906+00:00",
+            "httpStatus": 200,
+            "sha256": "bcad6aefeec4bb5e916c592df706d527c1995b55e5da84d15c160259ea263f61"
+          }
+        ],
+        "freshContentReceived": true,
+        "publishedText": "Mo-Tu 14:00-22:00; We 11:30-22:00; Th-Sa 11:30-23:00; Su 11:30-22:00"
+      },
+      "menu": {
+        "status": "unknown",
+        "sourceUrls": [
+          "https://maygarden.ca/",
+          "https://maygarden.ca/about-2/",
+          "https://maygarden.ca/contact-us-2/",
+          "https://www.crombie.ca/wp-content/uploads/2026/04/NS-Mill-Cove-Plaza-Site-04-08-2026.pdf"
+        ],
+        "observedAt": "2026-10-21T13:10:10.538180+00:00",
+        "observation": "Not sufficiently verified in this bounded review; no inferred value published."
+      },
+      "phone": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://maygarden.ca/",
+          "https://maygarden.ca/about-2/",
+          "https://maygarden.ca/contact-us-2/",
+          "https://www.crombie.ca/wp-content/uploads/2026/04/NS-Mill-Cove-Plaza-Site-04-08-2026.pdf"
+        ],
+        "observedAt": "2026-10-21T13:10:10.538180+00:00",
+        "observation": "Owner contact page specifically publishes active Mill Cove service and telephone; current shopping-centre owner plan corroborates exact civic address and distinct tenancy.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://maygarden.ca/",
+            "fetchedAt": "2026-10-21T13:00:19.708298+00:00",
+            "httpStatus": 200,
+            "sha256": "874c2bea779138d7fb174e3709d162b1da29b1c787c8f85f33f9e236045ea36c"
+          },
+          {
+            "url": "https://maygarden.ca/about-2/",
+            "fetchedAt": "2026-10-21T12:59:58.931241+00:00",
+            "httpStatus": 200,
+            "sha256": "1bcb312ab0f65e12a0f369caf9bae3b8cd763c38c388c7d2b200c2ceaae8503c"
+          },
+          {
+            "url": "https://maygarden.ca/contact-us-2/",
+            "fetchedAt": "2026-10-21T12:59:57.177086+00:00",
+            "httpStatus": 200,
+            "sha256": "89d492cfac89391bdecbbe457199613e4c9ce91da7c3cd542a3e1417be3f427f"
+          },
+          {
+            "url": "https://www.crombie.ca/wp-content/uploads/2026/04/NS-Mill-Cove-Plaza-Site-04-08-2026.pdf",
+            "fetchedAt": "2026-10-21T13:02:51.101906+00:00",
+            "httpStatus": 200,
+            "sha256": "bcad6aefeec4bb5e916c592df706d527c1995b55e5da84d15c160259ea263f61"
+          }
+        ],
+        "freshContentReceived": true
+      },
+      "contact": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://maygarden.ca/",
+          "https://maygarden.ca/about-2/",
+          "https://maygarden.ca/contact-us-2/",
+          "https://www.crombie.ca/wp-content/uploads/2026/04/NS-Mill-Cove-Plaza-Site-04-08-2026.pdf"
+        ],
+        "observedAt": "2026-10-21T13:10:10.538180+00:00",
+        "observation": "Owner contact page specifically publishes active Mill Cove service and telephone; current shopping-centre owner plan corroborates exact civic address and distinct tenancy.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://maygarden.ca/",
+            "fetchedAt": "2026-10-21T13:00:19.708298+00:00",
+            "httpStatus": 200,
+            "sha256": "874c2bea779138d7fb174e3709d162b1da29b1c787c8f85f33f9e236045ea36c"
+          },
+          {
+            "url": "https://maygarden.ca/about-2/",
+            "fetchedAt": "2026-10-21T12:59:58.931241+00:00",
+            "httpStatus": 200,
+            "sha256": "1bcb312ab0f65e12a0f369caf9bae3b8cd763c38c388c7d2b200c2ceaae8503c"
+          },
+          {
+            "url": "https://maygarden.ca/contact-us-2/",
+            "fetchedAt": "2026-10-21T12:59:57.177086+00:00",
+            "httpStatus": 200,
+            "sha256": "89d492cfac89391bdecbbe457199613e4c9ce91da7c3cd542a3e1417be3f427f"
+          },
+          {
+            "url": "https://www.crombie.ca/wp-content/uploads/2026/04/NS-Mill-Cove-Plaza-Site-04-08-2026.pdf",
+            "fetchedAt": "2026-10-21T13:02:51.101906+00:00",
+            "httpStatus": 200,
+            "sha256": "bcad6aefeec4bb5e916c592df706d527c1995b55e5da84d15c160259ea263f61"
+          }
+        ],
+        "freshContentReceived": true
+      }
+    },
+    "openingHoursVerifiedAt": "2026-10-21T13:10:10.538180+00:00",
+    "hoursValidThrough": null,
+    "hoursScope": "restaurant",
+    "website": "https://maygarden.ca/",
+    "openingHours": "Mo-Tu 14:00-22:00; We 11:30-22:00; Th-Sa 11:30-23:00; Su 11:30-22:00",
+    "operatingStatus": "active",
+    "operatingStatusEvidence": {
+      "claim": "Owner contact page specifically publishes active Mill Cove service and telephone; current shopping-centre owner plan corroborates exact civic address and distinct tenancy.",
+      "sourceUrl": "https://maygarden.ca/",
+      "location": "961 Bedford Highway, Bedford, NS",
+      "observedAt": "2026-10-21T13:10:10.538180+00:00",
+      "verifiedAt": "2026-10-21T13:10:10.538180+00:00",
+      "reviewState": "verified"
+    },
+    "seasonality": null,
+    "lifecycleSchedule": null,
+    "ownershipEvidence": {
+      "claim": "Official About page records the Yeung family’s locally founded and owned HRM group.",
+      "confidence": "reviewed local-business evidence",
+      "sourceUrls": [
+        "https://maygarden.ca/",
+        "https://maygarden.ca/about-2/",
+        "https://maygarden.ca/contact-us-2/",
+        "https://www.crombie.ca/wp-content/uploads/2026/04/NS-Mill-Cove-Plaza-Site-04-08-2026.pdf"
+      ],
+      "observedAt": "2026-10-21T13:10:10.538180+00:00"
+    },
+    "openingStatus": null,
+    "coordinates": null,
+    "socialProfiles": [],
+    "summary": "May Garden – Mill Cove serves Bedford at 961 Bedford Highway.",
+    "specials": [],
+    "events": [],
+    "sources": [
+      {
+        "label": "Reviewed location and local-business source",
+        "type": "restaurant_site",
+        "url": "https://maygarden.ca/",
+        "status": "verified",
+        "observedAt": "2026-10-21T13:00:19.708298+00:00"
+      },
+      {
+        "label": "Reviewed location and local-business source",
+        "type": "restaurant_site",
+        "url": "https://maygarden.ca/about-2/",
+        "status": "verified",
+        "observedAt": "2026-10-21T12:59:58.931241+00:00"
+      },
+      {
+        "label": "Reviewed location and local-business source",
+        "type": "restaurant_site",
+        "url": "https://maygarden.ca/contact-us-2/",
+        "status": "verified",
+        "observedAt": "2026-10-21T12:59:57.177086+00:00"
+      },
+      {
+        "label": "Reviewed location and local-business source",
+        "type": "regional_review_source",
+        "url": "https://www.crombie.ca/wp-content/uploads/2026/04/NS-Mill-Cove-Plaza-Site-04-08-2026.pdf",
+        "status": "verified",
+        "observedAt": "2026-10-21T13:02:51.101906+00:00"
+      }
+    ],
+    "discoveryReview": {
+      "approvedByOverride": true,
+      "sourceLeadObserved": false,
+      "reviewNote": "Address corroborated by landlord site plan rather than guessed from branch name. Old Bedford telephone 902-832-2226 in global header is not imported. Shared menu suitability remains held."
+    }
+  },
+  {
+    "id": "thai-ivory-bedford",
+    "name": "Thai Ivory Cuisine – Bedford",
+    "neighborhood": "Bedford",
+    "category": "Restaurant",
+    "cuisines": [
+      "Thai"
+    ],
+    "vibe": [],
+    "qualityScore": null,
+    "freshnessDate": "2026-10-21",
+    "evidenceStatus": "verified",
+    "sourceLayer": "local_discovery",
+    "address": "1149 Bedford Highway, Bedford, NS B4A 1B9",
+    "phone": "902-431-8424",
+    "email": null,
+    "contactUrl": null,
+    "contactScope": null,
+    "fieldEvidence": {
+      "coordinates": {
+        "status": "unknown",
+        "sourceUrls": [
+          "https://www.thaiivorycuisine.ca/home",
+          "https://www.thaiivorycuisine.ca/about-us",
+          "https://www.thaiivorycuisine.ca/menu"
+        ],
+        "observedAt": "2026-10-21T13:10:10.538180+00:00",
+        "observation": "Not sufficiently verified in this bounded review; no inferred value published."
+      },
+      "hours": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.thaiivorycuisine.ca/home",
+          "https://www.thaiivorycuisine.ca/about-us",
+          "https://www.thaiivorycuisine.ca/menu"
+        ],
+        "observedAt": "2026-10-21T13:10:10.538180+00:00",
+        "observation": "Complete owner-published weekly schedule. Ordinary weekly service; holiday exceptions not inferred.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://www.thaiivorycuisine.ca/home",
+            "fetchedAt": "2026-10-21T13:03:12.576671+00:00",
+            "httpStatus": 200,
+            "sha256": "7830beccc9ddb1b15f7a33a08f1b4bc0510a659e79d6ea4c2a52e56923d78b67"
+          },
+          {
+            "url": "https://www.thaiivorycuisine.ca/about-us",
+            "fetchedAt": "2026-10-21T13:03:34.817627+00:00",
+            "httpStatus": 200,
+            "sha256": "5d1e53c0ef9237f090cb9b3f3536dd7cc4884fd3d362e1f7c7dea7fc388836b7"
+          },
+          {
+            "url": "https://www.thaiivorycuisine.ca/menu",
+            "fetchedAt": "2026-10-21T13:03:34.820042+00:00",
+            "httpStatus": 200,
+            "sha256": "513ad0b8f0ab1bbb8247e48eb2c32feabc942438d0336d0a452ddc545c38acfb"
+          }
+        ],
+        "freshContentReceived": true,
+        "publishedText": "Mo-Th 11:00-21:00; Fr-Sa 11:00-21:30; Su 11:00-21:00"
+      },
+      "menu": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.thaiivorycuisine.ca/home",
+          "https://www.thaiivorycuisine.ca/about-us",
+          "https://www.thaiivorycuisine.ca/menu"
+        ],
+        "observedAt": "2026-10-21T13:10:10.538180+00:00",
+        "observation": "Fresh official menu page linked by the location website; a pointer only, no prices or image reuse.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://www.thaiivorycuisine.ca/home",
+            "fetchedAt": "2026-10-21T13:03:12.576671+00:00",
+            "httpStatus": 200,
+            "sha256": "7830beccc9ddb1b15f7a33a08f1b4bc0510a659e79d6ea4c2a52e56923d78b67"
+          },
+          {
+            "url": "https://www.thaiivorycuisine.ca/about-us",
+            "fetchedAt": "2026-10-21T13:03:34.817627+00:00",
+            "httpStatus": 200,
+            "sha256": "5d1e53c0ef9237f090cb9b3f3536dd7cc4884fd3d362e1f7c7dea7fc388836b7"
+          },
+          {
+            "url": "https://www.thaiivorycuisine.ca/menu",
+            "fetchedAt": "2026-10-21T13:03:34.820042+00:00",
+            "httpStatus": 200,
+            "sha256": "513ad0b8f0ab1bbb8247e48eb2c32feabc942438d0336d0a452ddc545c38acfb"
+          }
+        ],
+        "freshContentReceived": true,
+        "url": "https://www.thaiivorycuisine.ca/menu"
+      },
+      "phone": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.thaiivorycuisine.ca/home",
+          "https://www.thaiivorycuisine.ca/about-us",
+          "https://www.thaiivorycuisine.ca/menu"
+        ],
+        "observedAt": "2026-10-21T13:10:10.538180+00:00",
+        "observation": "Current owner site explicitly publishes the new Bedford address, telephone, full weekly hours and menu.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://www.thaiivorycuisine.ca/home",
+            "fetchedAt": "2026-10-21T13:03:12.576671+00:00",
+            "httpStatus": 200,
+            "sha256": "7830beccc9ddb1b15f7a33a08f1b4bc0510a659e79d6ea4c2a52e56923d78b67"
+          },
+          {
+            "url": "https://www.thaiivorycuisine.ca/about-us",
+            "fetchedAt": "2026-10-21T13:03:34.817627+00:00",
+            "httpStatus": 200,
+            "sha256": "5d1e53c0ef9237f090cb9b3f3536dd7cc4884fd3d362e1f7c7dea7fc388836b7"
+          },
+          {
+            "url": "https://www.thaiivorycuisine.ca/menu",
+            "fetchedAt": "2026-10-21T13:03:34.820042+00:00",
+            "httpStatus": 200,
+            "sha256": "513ad0b8f0ab1bbb8247e48eb2c32feabc942438d0336d0a452ddc545c38acfb"
+          }
+        ],
+        "freshContentReceived": true
+      },
+      "contact": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.thaiivorycuisine.ca/home",
+          "https://www.thaiivorycuisine.ca/about-us",
+          "https://www.thaiivorycuisine.ca/menu"
+        ],
+        "observedAt": "2026-10-21T13:10:10.538180+00:00",
+        "observation": "Current owner site explicitly publishes the new Bedford address, telephone, full weekly hours and menu.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://www.thaiivorycuisine.ca/home",
+            "fetchedAt": "2026-10-21T13:03:12.576671+00:00",
+            "httpStatus": 200,
+            "sha256": "7830beccc9ddb1b15f7a33a08f1b4bc0510a659e79d6ea4c2a52e56923d78b67"
+          },
+          {
+            "url": "https://www.thaiivorycuisine.ca/about-us",
+            "fetchedAt": "2026-10-21T13:03:34.817627+00:00",
+            "httpStatus": 200,
+            "sha256": "5d1e53c0ef9237f090cb9b3f3536dd7cc4884fd3d362e1f7c7dea7fc388836b7"
+          },
+          {
+            "url": "https://www.thaiivorycuisine.ca/menu",
+            "fetchedAt": "2026-10-21T13:03:34.820042+00:00",
+            "httpStatus": 200,
+            "sha256": "513ad0b8f0ab1bbb8247e48eb2c32feabc942438d0336d0a452ddc545c38acfb"
+          }
+        ],
+        "freshContentReceived": true
+      }
+    },
+    "openingHoursVerifiedAt": "2026-10-21T13:10:10.538180+00:00",
+    "hoursValidThrough": null,
+    "hoursScope": "restaurant",
+    "website": "https://www.thaiivorycuisine.ca/home",
+    "openingHours": "Mo-Th 11:00-21:00; Fr-Sa 11:00-21:30; Su 11:00-21:00",
+    "operatingStatus": "active",
+    "operatingStatusEvidence": {
+      "claim": "Current owner site explicitly publishes the new Bedford address, telephone, full weekly hours and menu.",
+      "sourceUrl": "https://www.thaiivorycuisine.ca/home",
+      "location": "1149 Bedford Highway, Bedford, NS B4A 1B9",
+      "observedAt": "2026-10-21T13:10:10.538180+00:00",
+      "verifiedAt": "2026-10-21T13:10:10.538180+00:00",
+      "reviewState": "verified"
+    },
+    "seasonality": null,
+    "lifecycleSchedule": null,
+    "ownershipEvidence": {
+      "claim": "Official About page identifies the group as founded in Bedford and expanded within HRM and Nova Scotia. It is a regional local restaurant group, not described here as a single independent operator.",
+      "confidence": "reviewed local-business evidence",
+      "sourceUrls": [
+        "https://www.thaiivorycuisine.ca/home",
+        "https://www.thaiivorycuisine.ca/about-us",
+        "https://www.thaiivorycuisine.ca/menu"
+      ],
+      "observedAt": "2026-10-21T13:10:10.538180+00:00"
+    },
+    "openingStatus": null,
+    "coordinates": null,
+    "socialProfiles": [],
+    "summary": "Thai Ivory Cuisine – Bedford serves Bedford at 1149 Bedford Highway.",
+    "specials": [],
+    "events": [],
+    "sources": [
+      {
+        "label": "Reviewed location and local-business source",
+        "type": "restaurant_site",
+        "url": "https://www.thaiivorycuisine.ca/home",
+        "status": "verified",
+        "observedAt": "2026-10-21T13:03:12.576671+00:00"
+      },
+      {
+        "label": "Reviewed location and local-business source",
+        "type": "restaurant_site",
+        "url": "https://www.thaiivorycuisine.ca/about-us",
+        "status": "verified",
+        "observedAt": "2026-10-21T13:03:34.817627+00:00"
+      },
+      {
+        "label": "Official location menu",
+        "type": "menu",
+        "url": "https://www.thaiivorycuisine.ca/menu",
+        "status": "verified",
+        "observedAt": "2026-10-21T13:03:34.820042+00:00"
+      }
+    ],
+    "discoveryReview": {
+      "approvedByOverride": true,
+      "sourceLeadObserved": false,
+      "reviewNote": "Owner new address1149 supersedes old tourism listing1067; no old location coordinates or phone transferred. No generic discount imported as a verified special."
+    }
+  },
+  {
+    "id": "on-the-wedge-bedford",
+    "name": "On The Wedge",
+    "neighborhood": "Bedford",
+    "category": "Restaurant",
+    "cuisines": [
+      "Pizza"
+    ],
+    "vibe": [],
+    "qualityScore": null,
+    "freshnessDate": "2026-10-21",
+    "evidenceStatus": "verified",
+    "sourceLayer": "local_discovery",
+    "address": "1595 Bedford Highway, Marketside, Sunnyside Mall, Bedford, NS",
+    "phone": "902-835-3864",
+    "email": null,
+    "contactUrl": null,
+    "contactScope": null,
+    "fieldEvidence": {
+      "coordinates": {
+        "status": "unknown",
+        "sourceUrls": [
+          "https://www.onthewedgepizza.com/",
+          "https://www.onthewedgepizza.com/pizza/"
+        ],
+        "observedAt": "2026-10-21T13:10:10.538180+00:00",
+        "observation": "Not sufficiently verified in this bounded review; no inferred value published."
+      },
+      "hours": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.onthewedgepizza.com/",
+          "https://www.onthewedgepizza.com/pizza/"
+        ],
+        "observedAt": "2026-10-21T13:10:10.538180+00:00",
+        "observation": "Complete owner-published weekly schedule. Ordinary weekly service; holiday exceptions not inferred.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://www.onthewedgepizza.com/",
+            "fetchedAt": "2026-10-21T13:06:40.739014+00:00",
+            "httpStatus": 200,
+            "sha256": "c72dd62906f49c3114e238851344129fc4b1362ee51620b6ab115e545c011499"
+          },
+          {
+            "url": "https://www.onthewedgepizza.com/pizza/",
+            "fetchedAt": "2026-10-21T13:06:40.740016+00:00",
+            "httpStatus": 200,
+            "sha256": "408353fa77001c98e3046c5231daba143cb9ac014fc709a2c37f003f7c58f2c5"
+          }
+        ],
+        "freshContentReceived": true,
+        "publishedText": "Mo-We 09:00-19:00; Th-Fr 09:00-20:00; Sa 09:00-19:00; Su 12:00-17:00"
+      },
+      "menu": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.onthewedgepizza.com/",
+          "https://www.onthewedgepizza.com/pizza/"
+        ],
+        "observedAt": "2026-10-21T13:10:10.538180+00:00",
+        "observation": "Fresh official menu page linked by the location website; a pointer only, no prices or image reuse.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://www.onthewedgepizza.com/",
+            "fetchedAt": "2026-10-21T13:06:40.739014+00:00",
+            "httpStatus": 200,
+            "sha256": "c72dd62906f49c3114e238851344129fc4b1362ee51620b6ab115e545c011499"
+          },
+          {
+            "url": "https://www.onthewedgepizza.com/pizza/",
+            "fetchedAt": "2026-10-21T13:06:40.740016+00:00",
+            "httpStatus": 200,
+            "sha256": "408353fa77001c98e3046c5231daba143cb9ac014fc709a2c37f003f7c58f2c5"
+          }
+        ],
+        "freshContentReceived": true,
+        "url": "https://www.onthewedgepizza.com/pizza/"
+      },
+      "phone": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.onthewedgepizza.com/",
+          "https://www.onthewedgepizza.com/pizza/"
+        ],
+        "observedAt": "2026-10-21T13:10:10.538180+00:00",
+        "observation": "Current homepage provides the specific Marketside location, phone, full weekly hours and food/menu service.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://www.onthewedgepizza.com/",
+            "fetchedAt": "2026-10-21T13:06:40.739014+00:00",
+            "httpStatus": 200,
+            "sha256": "c72dd62906f49c3114e238851344129fc4b1362ee51620b6ab115e545c011499"
+          },
+          {
+            "url": "https://www.onthewedgepizza.com/pizza/",
+            "fetchedAt": "2026-10-21T13:06:40.740016+00:00",
+            "httpStatus": 200,
+            "sha256": "408353fa77001c98e3046c5231daba143cb9ac014fc709a2c37f003f7c58f2c5"
+          }
+        ],
+        "freshContentReceived": true
+      },
+      "contact": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.onthewedgepizza.com/",
+          "https://www.onthewedgepizza.com/pizza/"
+        ],
+        "observedAt": "2026-10-21T13:10:10.538180+00:00",
+        "observation": "Current homepage provides the specific Marketside location, phone, full weekly hours and food/menu service.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://www.onthewedgepizza.com/",
+            "fetchedAt": "2026-10-21T13:06:40.739014+00:00",
+            "httpStatus": 200,
+            "sha256": "c72dd62906f49c3114e238851344129fc4b1362ee51620b6ab115e545c011499"
+          },
+          {
+            "url": "https://www.onthewedgepizza.com/pizza/",
+            "fetchedAt": "2026-10-21T13:06:40.740016+00:00",
+            "httpStatus": 200,
+            "sha256": "408353fa77001c98e3046c5231daba143cb9ac014fc709a2c37f003f7c58f2c5"
+          }
+        ],
+        "freshContentReceived": true
+      }
+    },
+    "openingHoursVerifiedAt": "2026-10-21T13:10:10.538180+00:00",
+    "hoursValidThrough": null,
+    "hoursScope": "restaurant",
+    "website": "https://www.onthewedgepizza.com/",
+    "openingHours": "Mo-We 09:00-19:00; Th-Fr 09:00-20:00; Sa 09:00-19:00; Su 12:00-17:00",
+    "operatingStatus": "active",
+    "operatingStatusEvidence": {
+      "claim": "Current homepage provides the specific Marketside location, phone, full weekly hours and food/menu service.",
+      "sourceUrl": "https://www.onthewedgepizza.com/",
+      "location": "1595 Bedford Highway, Marketside, Sunnyside Mall, Bedford, NS",
+      "observedAt": "2026-10-21T13:10:10.538180+00:00",
+      "verifiedAt": "2026-10-21T13:10:10.538180+00:00",
+      "reviewState": "verified"
+    },
+    "seasonality": null,
+    "lifecycleSchedule": null,
+    "ownershipEvidence": {
+      "claim": "Official homepage identifies Brendan and Lisa and their team serving this local community for30 years.",
+      "confidence": "reviewed local-business evidence",
+      "sourceUrls": [
+        "https://www.onthewedgepizza.com/",
+        "https://www.onthewedgepizza.com/pizza/"
+      ],
+      "observedAt": "2026-10-21T13:10:10.538180+00:00"
+    },
+    "openingStatus": null,
+    "coordinates": null,
+    "socialProfiles": [],
+    "summary": "On The Wedge serves Bedford at 1595 Bedford Highway.",
+    "specials": [],
+    "events": [],
+    "sources": [
+      {
+        "label": "Reviewed location and local-business source",
+        "type": "restaurant_site",
+        "url": "https://www.onthewedgepizza.com/",
+        "status": "verified",
+        "observedAt": "2026-10-21T13:06:40.739014+00:00"
+      },
+      {
+        "label": "Official location menu",
+        "type": "menu",
+        "url": "https://www.onthewedgepizza.com/pizza/",
+        "status": "verified",
+        "observedAt": "2026-10-21T13:06:40.740016+00:00"
+      }
+    ],
+    "discoveryReview": {
+      "approvedByOverride": true,
+      "sourceLeadObserved": false,
+      "reviewNote": "Same mall civic address is not a duplicate of il Mercato, Finbars, Buta Ramen or Makhani. No image or deal price republished."
+    }
+  },
+  {
+    "id": "alexandras-hammonds-plains",
+    "name": "Alexandra’s Pizza — Hammonds Plains",
+    "neighborhood": "Hammonds Plains",
+    "category": "Restaurant",
+    "cuisines": [
+      "Pizza"
+    ],
+    "vibe": [],
+    "qualityScore": null,
+    "freshnessDate": "2026-10-21",
+    "evidenceStatus": "verified",
+    "sourceLayer": "local_discovery",
+    "address": "1679 Hammonds Plains Road, Hammonds Plains, NS",
+    "phone": "902-425-1900",
+    "email": null,
+    "contactUrl": null,
+    "contactScope": null,
+    "fieldEvidence": {
+      "coordinates": {
+        "status": "unknown",
+        "sourceUrls": [
+          "https://www.alexandraspizza.com/locations/hammonds-plains-tantallon",
+          "https://www.alexandraspizza.com/our-story"
+        ],
+        "observedAt": "2026-10-21T13:10:10.538180+00:00",
+        "observation": "Not sufficiently verified in this bounded review; no inferred value published."
+      },
+      "hours": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.alexandraspizza.com/locations/hammonds-plains-tantallon",
+          "https://www.alexandraspizza.com/our-story"
+        ],
+        "observedAt": "2026-10-21T13:10:10.538180+00:00",
+        "observation": "Complete owner-published weekly schedule. Ordinary weekly service; holiday exceptions not inferred.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://www.alexandraspizza.com/locations/hammonds-plains-tantallon",
+            "fetchedAt": "2026-10-21T13:05:16.962518+00:00",
+            "httpStatus": 200,
+            "sha256": "774292ede4aa5587ee6966f244da85748704c1467c8a1cbfddbe605c1ead24c4"
+          },
+          {
+            "url": "https://www.alexandraspizza.com/our-story",
+            "fetchedAt": "2026-10-21T13:05:16.960300+00:00",
+            "httpStatus": 200,
+            "sha256": "c939d0fd7231fa8bef2b4e51058855b078bb4d2134320af6965b0aff8791ef48"
+          }
+        ],
+        "freshContentReceived": true,
+        "publishedText": "Mo-Th 11:00-23:00; Fr-Sa 11:00-02:00; Su 11:00-23:00"
+      },
+      "menu": {
+        "status": "unknown",
+        "sourceUrls": [
+          "https://www.alexandraspizza.com/locations/hammonds-plains-tantallon",
+          "https://www.alexandraspizza.com/our-story"
+        ],
+        "observedAt": "2026-10-21T13:10:10.538180+00:00",
+        "observation": "Not sufficiently verified in this bounded review; no inferred value published."
+      },
+      "phone": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.alexandraspizza.com/locations/hammonds-plains-tantallon",
+          "https://www.alexandraspizza.com/our-story"
+        ],
+        "observedAt": "2026-10-21T13:10:10.538180+00:00",
+        "observation": "Official branch page publishes exact civic address, takeout/delivery, hours and ordering.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://www.alexandraspizza.com/locations/hammonds-plains-tantallon",
+            "fetchedAt": "2026-10-21T13:05:16.962518+00:00",
+            "httpStatus": 200,
+            "sha256": "774292ede4aa5587ee6966f244da85748704c1467c8a1cbfddbe605c1ead24c4"
+          },
+          {
+            "url": "https://www.alexandraspizza.com/our-story",
+            "fetchedAt": "2026-10-21T13:05:16.960300+00:00",
+            "httpStatus": 200,
+            "sha256": "c939d0fd7231fa8bef2b4e51058855b078bb4d2134320af6965b0aff8791ef48"
+          }
+        ],
+        "freshContentReceived": true
+      },
+      "contact": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.alexandraspizza.com/locations/hammonds-plains-tantallon",
+          "https://www.alexandraspizza.com/our-story"
+        ],
+        "observedAt": "2026-10-21T13:10:10.538180+00:00",
+        "observation": "Official branch page publishes exact civic address, takeout/delivery, hours and ordering.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://www.alexandraspizza.com/locations/hammonds-plains-tantallon",
+            "fetchedAt": "2026-10-21T13:05:16.962518+00:00",
+            "httpStatus": 200,
+            "sha256": "774292ede4aa5587ee6966f244da85748704c1467c8a1cbfddbe605c1ead24c4"
+          },
+          {
+            "url": "https://www.alexandraspizza.com/our-story",
+            "fetchedAt": "2026-10-21T13:05:16.960300+00:00",
+            "httpStatus": 200,
+            "sha256": "c939d0fd7231fa8bef2b4e51058855b078bb4d2134320af6965b0aff8791ef48"
+          }
+        ],
+        "freshContentReceived": true
+      }
+    },
+    "openingHoursVerifiedAt": "2026-10-21T13:10:10.538180+00:00",
+    "hoursValidThrough": null,
+    "hoursScope": "restaurant",
+    "website": "https://www.alexandraspizza.com/locations/hammonds-plains-tantallon",
+    "openingHours": "Mo-Th 11:00-23:00; Fr-Sa 11:00-02:00; Su 11:00-23:00",
+    "operatingStatus": "active",
+    "operatingStatusEvidence": {
+      "claim": "Official branch page publishes exact civic address, takeout/delivery, hours and ordering.",
+      "sourceUrl": "https://www.alexandraspizza.com/locations/hammonds-plains-tantallon",
+      "location": "1679 Hammonds Plains Road, Hammonds Plains, NS",
+      "observedAt": "2026-10-21T13:10:10.538180+00:00",
+      "verifiedAt": "2026-10-21T13:10:10.538180+00:00",
+      "reviewState": "verified"
+    },
+    "seasonality": null,
+    "lifecycleSchedule": null,
+    "ownershipEvidence": {
+      "claim": "Official story explicitly says all franchise owners are local; founded in Halifax. Local regional franchise, not independent.",
+      "confidence": "reviewed local-business evidence",
+      "sourceUrls": [
+        "https://www.alexandraspizza.com/locations/hammonds-plains-tantallon",
+        "https://www.alexandraspizza.com/our-story"
+      ],
+      "observedAt": "2026-10-21T13:10:10.538180+00:00"
+    },
+    "openingStatus": null,
+    "coordinates": null,
+    "socialProfiles": [],
+    "summary": "Alexandra’s Pizza — Hammonds Plains serves Hammonds Plains at 1679 Hammonds Plains Road.",
+    "specials": [],
+    "events": [],
+    "sources": [
+      {
+        "label": "Reviewed location and local-business source",
+        "type": "restaurant_site",
+        "url": "https://www.alexandraspizza.com/locations/hammonds-plains-tantallon",
+        "status": "verified",
+        "observedAt": "2026-10-21T13:05:16.962518+00:00"
+      },
+      {
+        "label": "Reviewed location and local-business source",
+        "type": "restaurant_site",
+        "url": "https://www.alexandraspizza.com/our-story",
+        "status": "verified",
+        "observedAt": "2026-10-21T13:05:16.960300+00:00"
+      }
+    ],
+    "discoveryReview": {
+      "approvedByOverride": true,
+      "sourceLeadObserved": false,
+      "reviewNote": "Phone is centralized. Existing orphan Alexandra is South End, not this branch."
+    }
+  },
+  {
+    "id": "jessys-hammonds-plains",
+    "name": "Jessy’s Pizza — Hammonds Plains",
+    "neighborhood": "Hammonds Plains",
+    "category": "Restaurant",
+    "cuisines": [
+      "Pizza"
+    ],
+    "vibe": [],
+    "qualityScore": null,
+    "freshnessDate": "2026-10-21",
+    "evidenceStatus": "verified",
+    "sourceLayer": "local_discovery",
+    "address": "1 Kingswood Drive, Hammonds Plains, NS",
+    "phone": "902-407-2222",
+    "email": null,
+    "contactUrl": null,
+    "contactScope": null,
+    "fieldEvidence": {
+      "coordinates": {
+        "status": "unknown",
+        "sourceUrls": [
+          "https://jessyspizza.ca/",
+          "https://jessyspizza.ca/menu-nova-scotia/"
+        ],
+        "observedAt": "2026-10-21T13:10:10.538180+00:00",
+        "observation": "Not sufficiently verified in this bounded review; no inferred value published."
+      },
+      "hours": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://jessyspizza.ca/",
+          "https://jessyspizza.ca/menu-nova-scotia/"
+        ],
+        "observedAt": "2026-10-21T13:10:10.538180+00:00",
+        "observation": "Complete owner-published weekly schedule. Ordinary weekly service; holiday exceptions not inferred.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://jessyspizza.ca/",
+            "fetchedAt": "2026-10-21T13:05:16.963544+00:00",
+            "httpStatus": 200,
+            "sha256": "cd0b8d80ade548bcd7a53cb922cac39d31decf7720d21e90544feb1a0f1c67b8"
+          },
+          {
+            "url": "https://jessyspizza.ca/menu-nova-scotia/",
+            "fetchedAt": "2026-10-21T13:05:22.481680+00:00",
+            "httpStatus": 200,
+            "sha256": "0a3949219a4c4a6373b5f7ba3414bda931e89adff0ac6efa821c4b1c06917bba"
+          }
+        ],
+        "freshContentReceived": true,
+        "publishedText": "Mo-We 11:00-22:00; Th 11:00-23:00; Fr-Sa 11:00-00:00; Su 12:00-22:00"
+      },
+      "menu": {
+        "status": "unknown",
+        "sourceUrls": [
+          "https://jessyspizza.ca/",
+          "https://jessyspizza.ca/menu-nova-scotia/"
+        ],
+        "observedAt": "2026-10-21T13:10:10.538180+00:00",
+        "observation": "Not sufficiently verified in this bounded review; no inferred value published."
+      },
+      "phone": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://jessyspizza.ca/",
+          "https://jessyspizza.ca/menu-nova-scotia/"
+        ],
+        "observedAt": "2026-10-21T13:10:10.538180+00:00",
+        "observation": "Official Nova Scotia menu location selector supplies exact civic address, phone, hours and branch order link.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://jessyspizza.ca/",
+            "fetchedAt": "2026-10-21T13:05:16.963544+00:00",
+            "httpStatus": 200,
+            "sha256": "cd0b8d80ade548bcd7a53cb922cac39d31decf7720d21e90544feb1a0f1c67b8"
+          },
+          {
+            "url": "https://jessyspizza.ca/menu-nova-scotia/",
+            "fetchedAt": "2026-10-21T13:05:22.481680+00:00",
+            "httpStatus": 200,
+            "sha256": "0a3949219a4c4a6373b5f7ba3414bda931e89adff0ac6efa821c4b1c06917bba"
+          }
+        ],
+        "freshContentReceived": true
+      },
+      "contact": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://jessyspizza.ca/",
+          "https://jessyspizza.ca/menu-nova-scotia/"
+        ],
+        "observedAt": "2026-10-21T13:10:10.538180+00:00",
+        "observation": "Official Nova Scotia menu location selector supplies exact civic address, phone, hours and branch order link.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://jessyspizza.ca/",
+            "fetchedAt": "2026-10-21T13:05:16.963544+00:00",
+            "httpStatus": 200,
+            "sha256": "cd0b8d80ade548bcd7a53cb922cac39d31decf7720d21e90544feb1a0f1c67b8"
+          },
+          {
+            "url": "https://jessyspizza.ca/menu-nova-scotia/",
+            "fetchedAt": "2026-10-21T13:05:22.481680+00:00",
+            "httpStatus": 200,
+            "sha256": "0a3949219a4c4a6373b5f7ba3414bda931e89adff0ac6efa821c4b1c06917bba"
+          }
+        ],
+        "freshContentReceived": true
+      }
+    },
+    "openingHoursVerifiedAt": "2026-10-21T13:10:10.538180+00:00",
+    "hoursValidThrough": null,
+    "hoursScope": "restaurant",
+    "website": "https://jessyspizza.ca/",
+    "openingHours": "Mo-We 11:00-22:00; Th 11:00-23:00; Fr-Sa 11:00-00:00; Su 12:00-22:00",
+    "operatingStatus": "active",
+    "operatingStatusEvidence": {
+      "claim": "Official Nova Scotia menu location selector supplies exact civic address, phone, hours and branch order link.",
+      "sourceUrl": "https://jessyspizza.ca/",
+      "location": "1 Kingswood Drive, Hammonds Plains, NS",
+      "observedAt": "2026-10-21T13:10:10.538180+00:00",
+      "verifiedAt": "2026-10-21T13:10:10.538180+00:00",
+      "reviewState": "verified"
+    },
+    "seasonality": null,
+    "lifecycleSchedule": null,
+    "ownershipEvidence": {
+      "claim": "Homepage explicitly describes locally owned Nova Scotia franchise.",
+      "confidence": "reviewed local-business evidence",
+      "sourceUrls": [
+        "https://jessyspizza.ca/",
+        "https://jessyspizza.ca/menu-nova-scotia/"
+      ],
+      "observedAt": "2026-10-21T13:10:10.538180+00:00"
+    },
+    "openingStatus": null,
+    "coordinates": null,
+    "socialProfiles": [],
+    "summary": "Jessy’s Pizza — Hammonds Plains serves Hammonds Plains at 1 Kingswood Drive.",
+    "specials": [],
+    "events": [],
+    "sources": [
+      {
+        "label": "Reviewed location and local-business source",
+        "type": "restaurant_site",
+        "url": "https://jessyspizza.ca/",
+        "status": "verified",
+        "observedAt": "2026-10-21T13:05:16.963544+00:00"
+      },
+      {
+        "label": "Reviewed location and local-business source",
+        "type": "restaurant_site",
+        "url": "https://jessyspizza.ca/menu-nova-scotia/",
+        "status": "verified",
+        "observedAt": "2026-10-21T13:05:22.481680+00:00"
+      }
+    ],
+    "discoveryReview": {
+      "approvedByOverride": true,
+      "sourceLeadObserved": false,
+      "reviewNote": "Existing orphan pins are outside Hammonds Plains. Map embed includes viewport center, NOT safe exact venue coordinate."
+    }
+  },
+  {
+    "id": "woodfire-mezze-west-bedford",
+    "name": "WoodFire Mezze",
+    "neighborhood": "West Bedford",
+    "category": "Restaurant",
+    "cuisines": [
+      "Levantine",
+      "Middle Eastern"
+    ],
+    "vibe": [],
+    "qualityScore": null,
+    "freshnessDate": "2026-10-21",
+    "evidenceStatus": "verified",
+    "sourceLayer": "local_discovery",
+    "address": "11 Bloom Lane, Bedford, NS",
+    "phone": "902-445-4451",
+    "email": null,
+    "contactUrl": null,
+    "contactScope": null,
+    "fieldEvidence": {
+      "coordinates": {
+        "status": "unknown",
+        "sourceUrls": [
+          "https://www.woodfiremezze.ca/contact",
+          "https://www.woodfiremezze.ca/about",
+          "https://www.woodfiremezze.ca/assets/index-Rmgj6LiG.js",
+          "https://www.woodfiremezze.ca/menu"
+        ],
+        "observedAt": "2026-10-21T13:10:10.538180+00:00",
+        "observation": "Not sufficiently verified in this bounded review; no inferred value published."
+      },
+      "hours": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.woodfiremezze.ca/contact",
+          "https://www.woodfiremezze.ca/about",
+          "https://www.woodfiremezze.ca/assets/index-Rmgj6LiG.js",
+          "https://www.woodfiremezze.ca/menu"
+        ],
+        "observedAt": "2026-10-21T13:10:10.538180+00:00",
+        "observation": "Complete owner-published weekly schedule. Ordinary weekly service; holiday exceptions not inferred.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://www.woodfiremezze.ca/contact",
+            "fetchedAt": "2026-10-21T13:05:22.491311+00:00",
+            "httpStatus": 200,
+            "sha256": "30d7516d8a46591c00c7054382da02375acb3abc4a808dc10c30a5fa380a214d"
+          },
+          {
+            "url": "https://www.woodfiremezze.ca/assets/index-Rmgj6LiG.js",
+            "fetchedAt": "2026-10-21T13:05:52.905712+00:00",
+            "httpStatus": 200,
+            "sha256": "591e3d888249621c269d994d9fefe8160e4b4fccbec896ba84e29d7d86880ead"
+          },
+          {
+            "url": "https://www.woodfiremezze.ca/menu",
+            "fetchedAt": "2026-10-21T13:09:13.579445+00:00",
+            "httpStatus": 200,
+            "sha256": "30d7516d8a46591c00c7054382da02375acb3abc4a808dc10c30a5fa380a214d"
+          }
+        ],
+        "freshContentReceived": true,
+        "publishedText": "Mo-Th 10:00-21:00; Fr-Sa 10:00-22:00; Su 10:00-21:00"
+      },
+      "menu": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.woodfiremezze.ca/contact",
+          "https://www.woodfiremezze.ca/about",
+          "https://www.woodfiremezze.ca/assets/index-Rmgj6LiG.js",
+          "https://www.woodfiremezze.ca/menu"
+        ],
+        "observedAt": "2026-10-21T13:10:10.538180+00:00",
+        "observation": "Fresh official menu page linked by the location website; a pointer only, no prices or image reuse.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://www.woodfiremezze.ca/contact",
+            "fetchedAt": "2026-10-21T13:05:22.491311+00:00",
+            "httpStatus": 200,
+            "sha256": "30d7516d8a46591c00c7054382da02375acb3abc4a808dc10c30a5fa380a214d"
+          },
+          {
+            "url": "https://www.woodfiremezze.ca/assets/index-Rmgj6LiG.js",
+            "fetchedAt": "2026-10-21T13:05:52.905712+00:00",
+            "httpStatus": 200,
+            "sha256": "591e3d888249621c269d994d9fefe8160e4b4fccbec896ba84e29d7d86880ead"
+          },
+          {
+            "url": "https://www.woodfiremezze.ca/menu",
+            "fetchedAt": "2026-10-21T13:09:13.579445+00:00",
+            "httpStatus": 200,
+            "sha256": "30d7516d8a46591c00c7054382da02375acb3abc4a808dc10c30a5fa380a214d"
+          }
+        ],
+        "freshContentReceived": true,
+        "url": "https://www.woodfiremezze.ca/menu"
+      },
+      "phone": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.woodfiremezze.ca/contact",
+          "https://www.woodfiremezze.ca/about",
+          "https://www.woodfiremezze.ca/assets/index-Rmgj6LiG.js",
+          "https://www.woodfiremezze.ca/menu"
+        ],
+        "observedAt": "2026-10-21T13:10:10.538180+00:00",
+        "observation": "Official contact, menus and order links identify West Bedford address.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://www.woodfiremezze.ca/contact",
+            "fetchedAt": "2026-10-21T13:05:22.491311+00:00",
+            "httpStatus": 200,
+            "sha256": "30d7516d8a46591c00c7054382da02375acb3abc4a808dc10c30a5fa380a214d"
+          },
+          {
+            "url": "https://www.woodfiremezze.ca/assets/index-Rmgj6LiG.js",
+            "fetchedAt": "2026-10-21T13:05:52.905712+00:00",
+            "httpStatus": 200,
+            "sha256": "591e3d888249621c269d994d9fefe8160e4b4fccbec896ba84e29d7d86880ead"
+          },
+          {
+            "url": "https://www.woodfiremezze.ca/menu",
+            "fetchedAt": "2026-10-21T13:09:13.579445+00:00",
+            "httpStatus": 200,
+            "sha256": "30d7516d8a46591c00c7054382da02375acb3abc4a808dc10c30a5fa380a214d"
+          }
+        ],
+        "freshContentReceived": true
+      },
+      "contact": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.woodfiremezze.ca/contact",
+          "https://www.woodfiremezze.ca/about",
+          "https://www.woodfiremezze.ca/assets/index-Rmgj6LiG.js",
+          "https://www.woodfiremezze.ca/menu"
+        ],
+        "observedAt": "2026-10-21T13:10:10.538180+00:00",
+        "observation": "Official contact, menus and order links identify West Bedford address.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://www.woodfiremezze.ca/contact",
+            "fetchedAt": "2026-10-21T13:05:22.491311+00:00",
+            "httpStatus": 200,
+            "sha256": "30d7516d8a46591c00c7054382da02375acb3abc4a808dc10c30a5fa380a214d"
+          },
+          {
+            "url": "https://www.woodfiremezze.ca/assets/index-Rmgj6LiG.js",
+            "fetchedAt": "2026-10-21T13:05:52.905712+00:00",
+            "httpStatus": 200,
+            "sha256": "591e3d888249621c269d994d9fefe8160e4b4fccbec896ba84e29d7d86880ead"
+          },
+          {
+            "url": "https://www.woodfiremezze.ca/menu",
+            "fetchedAt": "2026-10-21T13:09:13.579445+00:00",
+            "httpStatus": 200,
+            "sha256": "30d7516d8a46591c00c7054382da02375acb3abc4a808dc10c30a5fa380a214d"
+          }
+        ],
+        "freshContentReceived": true
+      }
+    },
+    "openingHoursVerifiedAt": "2026-10-21T13:10:10.538180+00:00",
+    "hoursValidThrough": null,
+    "hoursScope": "restaurant",
+    "website": "https://www.woodfiremezze.ca/",
+    "openingHours": "Mo-Th 10:00-21:00; Fr-Sa 10:00-22:00; Su 10:00-21:00",
+    "operatingStatus": "active",
+    "operatingStatusEvidence": {
+      "claim": "Official contact, menus and order links identify West Bedford address.",
+      "sourceUrl": "https://www.woodfiremezze.ca/contact",
+      "location": "11 Bloom Lane, Bedford, NS",
+      "observedAt": "2026-10-21T13:10:10.538180+00:00",
+      "verifiedAt": "2026-10-21T13:10:10.538180+00:00",
+      "reviewState": "verified"
+    },
+    "seasonality": null,
+    "lifecycleSchedule": null,
+    "ownershipEvidence": {
+      "claim": "Official story describes this West Bedford restaurant’s family origins and Levantine heritage. The reviewed single local brand is not represented as a national chain; legal beneficial ownership has not been independently checked.",
+      "confidence": "reviewed local-business evidence",
+      "sourceUrls": [
+        "https://www.woodfiremezze.ca/contact",
+        "https://www.woodfiremezze.ca/about",
+        "https://www.woodfiremezze.ca/assets/index-Rmgj6LiG.js",
+        "https://www.woodfiremezze.ca/menu"
+      ],
+      "observedAt": "2026-10-21T13:10:10.538180+00:00"
+    },
+    "openingStatus": null,
+    "coordinates": null,
+    "socialProfiles": [],
+    "summary": "WoodFire Mezze serves West Bedford at 11 Bloom Lane.",
+    "specials": [],
+    "events": [],
+    "sources": [
+      {
+        "label": "Reviewed location and local-business source",
+        "type": "restaurant_site",
+        "url": "https://www.woodfiremezze.ca/contact",
+        "status": "verified",
+        "observedAt": "2026-10-21T13:05:22.491311+00:00"
+      },
+      {
+        "label": "Reviewed location and local-business source",
+        "type": "restaurant_site",
+        "url": "https://www.woodfiremezze.ca/about",
+        "status": "verified",
+        "observedAt": "2026-10-21T13:10:10.538180+00:00"
+      },
+      {
+        "label": "Reviewed location and local-business source",
+        "type": "restaurant_site",
+        "url": "https://www.woodfiremezze.ca/assets/index-Rmgj6LiG.js",
+        "status": "verified",
+        "observedAt": "2026-10-21T13:05:52.905712+00:00"
+      },
+      {
+        "label": "Official location menu",
+        "type": "menu",
+        "url": "https://www.woodfiremezze.ca/menu",
+        "status": "verified",
+        "observedAt": "2026-10-21T13:09:13.579445+00:00"
+      }
+    ],
+    "discoveryReview": {
+      "approvedByOverride": true,
+      "sourceLeadObserved": false,
+      "reviewNote": "Fresh site HTML is JS shell; linked JS bundle contains exact facts. Do not import Est2020 (conflicts reported2025 opening). Not Saj House Alma Crescent. Hours are explicit rendered contact/footer strings in the linked public application bundle; menu is a location-specific pointer, not copied image/prices."
+    }
   }
 ];
