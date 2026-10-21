@@ -7692,7 +7692,10 @@
       "address": "1180 Bedford Highway, Bedford, NS B4A 1C1",
       "website": "https://izzysbagel.com/",
       "phone": "902-832-0028",
-      "coordinates": null,
+      "coordinates": {
+        "lat": 44.7222574,
+        "lon": -63.6713184
+      },
       "openingHours": "Mo-Tu 07:30-17:00; We 07:30-19:00; Th-Fr 07:30-17:00; Sa-Su 08:00-16:00",
       "cuisines": [
         "Bakery"
@@ -7711,13 +7714,26 @@
       "summary": "Izzy’s Bagel Co. serves Bedford at 1180 Bedford Highway.",
       "fieldEvidence": {
         "coordinates": {
-          "status": "unknown",
+          "status": "verified",
+          "value": {
+            "lat": 44.7222574,
+            "lon": -63.6713184
+          },
           "sourceUrls": [
-            "https://izzysbagel.com/",
-            "https://nslegislature.ca/sites/default/files/pdfs/proceedings/hansard/61-5/h13apr15.pdf"
+            "https://izzysbagel.com/"
           ],
-          "observedAt": "2026-10-21T13:10:10.538180+00:00",
-          "observation": "Not sufficiently verified in this bounded review; no inferred value published."
+          "observedAt": "2026-10-21T17:58:37.758966+00:00",
+          "observation": "Owner Squarespace location object explicitly pairs markerLat 44.7222574 and markerLng -63.67131840000002 with Izzy’s Bagel Co., 1180 Bedford Hwy, Bedford, NS B4A 1C1, Canada. Marker fields, not map viewport fields, supply this pin. This is previously overlooked source evidence; the fresh body hash matches the earlier receipt.",
+          "method": "owner_explicit_location_marker",
+          "successfulSourceReceipts": [
+            {
+              "url": "https://izzysbagel.com/",
+              "fetchedAt": "2026-10-21T17:58:37.758966+00:00",
+              "httpStatus": 200,
+              "sha256": "b3eed1595bdd4f183f5979d40f80929b89cca62f7524c6c4c2b654fc5b94f66d"
+            }
+          ],
+          "freshContentReceived": true
         },
         "hours": {
           "status": "verified",
@@ -7802,7 +7818,7 @@
           "freshContentReceived": true
         }
       },
-      "reviewNote": "Holiday hours must be confirmed separately. No complete sandwich menu or exact coordinate pin has been verified.",
+      "reviewNote": "Holiday hours must be confirmed separately. No complete sandwich menu has been verified.",
       "operatingStatusEvidence": {
         "claim": "Fresh owner homepage publishes bagel offerings, the Bedford address, phone and weekly schedule.",
         "sourceUrl": "https://izzysbagel.com/",
