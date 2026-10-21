@@ -558,7 +558,7 @@ const historicPreview = await page.evaluate(() => {
   const restaurant = activeRestaurants.find(item => item.id === "highwayman");
   const ref = window.HALIFAX_MEDIA_SOURCE_REFERENCES.records.find(item => item.restaurantId === "highwayman");
   const image = document.querySelector('.restaurant-hero-photo');
-  const link = document.querySelector('.media-attribution');
+  const link = document.querySelector('.media-attribution .media-source');
   return {
     url: image?.getAttribute('src'), expected: ref?.url,
     rights: image?.dataset.mediaRights,
@@ -585,8 +585,8 @@ await page.waitForFunction(() => {
 });
 const attributionState = await page.evaluate(() => ({
   label: document.querySelector(".media-attribution")?.textContent || "",
-  href: document.querySelector(".media-attribution")?.getAttribute("href") || "",
-  target: document.querySelector(".media-attribution")?.getAttribute("target") || ""
+  href: document.querySelector(".media-attribution .media-source")?.getAttribute("href") || "",
+  target: document.querySelector(".media-attribution .media-source")?.getAttribute("target") || ""
 }));
 if (!/CC BY-SA|Wikimedia Commons/i.test(attributionState.label) || !/commons\.wikimedia\.org/.test(attributionState.href) || attributionState.target !== "_blank") throw new Error(`Expected visible, safely linked licensed-image attribution, got ${JSON.stringify(attributionState)}.`);
 await captureIphone("licensed-attribution");

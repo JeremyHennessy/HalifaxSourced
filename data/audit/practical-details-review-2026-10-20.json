@@ -1,0 +1,71 @@
+{
+  "version": 1,
+  "reviewedAt": "2026-10-20T22:56:28.273Z",
+  "scope": "Bounded existing-location practical-field verification and unrelated-domain quarantine",
+  "records": [
+    {
+      "restaurantId": "osm-node-1254843900-the-mic-mac-bar-and-grill",
+      "fields": [
+        "address",
+        "phone",
+        "openingHours",
+        "structuredHours"
+      ],
+      "receipt": {
+        "key": "micmac-contact",
+        "url": "https://micmacbarandgrill.com/contact-us/",
+        "attemptedAt": "2026-10-20T22:55:05.805348+00:00",
+        "status": 200,
+        "finalUrl": "https://micmacbarandgrill.com/contact-us/",
+        "sha256": "a2e6f907097217d741f0817f80667b78001b12f8a3d7d8139b8f762a8354e76d",
+        "fetchedAt": "2026-10-20T22:55:16.230667+00:00"
+      }
+    },
+    {
+      "restaurantId": "osm-node-7082566319-real-fake-meats",
+      "fields": [
+        "address",
+        "phone"
+      ],
+      "receipt": {
+        "key": "real-fake-contact",
+        "url": "https://www.realfakemeats.com/contact",
+        "attemptedAt": "2026-10-20T22:54:24.234275+00:00",
+        "status": 200,
+        "finalUrl": "https://www.realfakemeats.com/contact",
+        "sha256": "01c8106b6bdb31f515efd9abbbe9bb59ba9101048275cb0b4753d7df2a59bdba",
+        "fetchedAt": "2026-10-20T22:54:30.585357+00:00"
+      }
+    },
+    {
+      "restaurantId": "osm-node-4420631892-two-if-by-sea",
+      "fields": [
+        "website"
+      ],
+      "receipt": {
+        "key": "twoif-home",
+        "url": "https://www.twoifbyseacafe.ca/",
+        "attemptedAt": "2026-10-20T22:54:30.588895+00:00",
+        "status": 200,
+        "finalUrl": "https://twoifbyseacafe.ca/",
+        "sha256": "5df19ec3388e78605747279495b365cf495f691f58c3be6b3d3b5319609706be",
+        "fetchedAt": "2026-10-20T22:54:42.872334+00:00"
+      },
+      "lifecycleChanged": false
+    }
+  ],
+  "held": [
+    {
+      "name": "Rinaldo’s",
+      "reason": "Direct source retrieval returned503; no fresh hours or second-location admission published."
+    },
+    {
+      "name": "La Piazza",
+      "reason": "Direct source retrieval returned503; no field update."
+    },
+    {
+      "name": "Two If By Sea replacement domain",
+      "reason": "Search-discovered .cafe contact page contains placeholder212555phone and placeholder email; not accepted as verified replacement."
+    }
+  ]
+}

@@ -1,7 +1,11 @@
 "use strict";
 const structuredPlaceFactsPayload = window.HALIFAX_STRUCTURED_PLACE_FACTS ?? null;
 const structuredPlaceFactRecords = HalifaxRestaurantCorrections.applyFactFieldRejections(
-  Array.isArray(structuredPlaceFactsPayload?.records) ? structuredPlaceFactsPayload.records : [],
+  (Array.isArray(structuredPlaceFactsPayload?.records) ? structuredPlaceFactsPayload.records : []).map(record => {
+    if (!record.sourceUrl || safeUrl(record.sourceUrl)) return record;
+    // Retain the observation, but never derive current service claims from a quarantined source.
+    return { ...record, hours: null, phone: null, address: null, email: null, features: [], menus: [], reservations: [], ordering: [] };
+  }),
   reviewedRestaurantCorrections
 );
 const structuredFactsByRestaurant = new Map(structuredPlaceFactRecords.map((record) => [record.restaurantId, record]));

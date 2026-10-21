@@ -9,7 +9,7 @@ const root = await mkdtemp(join(tmpdir(), 'halifax-source-startup-'));
 try {
   await mkdir(join(root,'scripts','lib'),{recursive:true});
   await mkdir(join(root,'data','build'),{recursive:true});
-  for (const file of ['scripts/verify-official-source-pages.mjs','scripts/lib/fetch-public-source.mjs','source-integrity.js']) {
+  for (const file of ['scripts/verify-official-source-pages.mjs','scripts/lib/source-page-classification.mjs','scripts/lib/fetch-public-source.mjs','source-integrity.js']) {
     await copyFile(new URL('../'+file,import.meta.url),join(root,file));
   }
   const venue={id:'fixture-local',name:'Fixture Local',website:'https://fixture.example/',address:'1537 Barrington Street, Halifax'};
@@ -20,6 +20,7 @@ try {
     {href:'https://justitalymentone.com/menu',text:'Unsafe menu',signalMatches:{menu:['menu']}},
     {href:'file:///untrusted/catalog.js',text:'Untrusted file',signalMatches:{menu:['menu']}}
   ]}]}));
+  await writeFile(join(root,'data','build','verified-source-pages.json'),JSON.stringify({menuSources:[],specialSources:[]}));
   const networkLog=join(root,'network-log.json');
   await writeFile(join(root,'runner.mjs'),`
     import {writeFile} from 'node:fs/promises';
@@ -42,8 +43,10 @@ try {
   const requests=JSON.parse(await readFile(networkLog,'utf8'));
   assert.equal(result.code,0,`Collector startup failed. Requests=${JSON.stringify(requests)}\n${result.stderr}`);
   const output=JSON.parse(await readFile(join(root,'data','build','verified-source-pages.json'),'utf8'));
-  assert.equal(output.menuSources.length,1);
-  assert.equal(output.menuSources[0].restaurantId,venue.id);
+  assert.equal(output.menuSources.length,0);
+  assert.equal(output.candidateSources.length,1);
+  assert.equal(output.candidateSources[0].reviewState,'needs-review');
+  assert.equal(output.candidateSources[0].restaurantId,venue.id);
   assert.deepEqual(requests,['https://fixture.example/robots.txt','https://fixture.example/menu']);
   assert.equal(output.failures.length,1);
   assert.equal(output.failures[0].reason,'quarantined_identity_or_location');

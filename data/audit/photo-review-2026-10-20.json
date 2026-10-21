@@ -1,0 +1,22 @@
+{
+  "reviewedAt": "2026-10-20T23:02:00Z",
+  "accepted": [
+    {
+      "restaurantId": "osm-way-671922221-mckelvie-s",
+      "assessmentId": "thumb-e76b9ad71fab0be2f5",
+      "captureDate": "2023-04-15",
+      "decision": "Publish dated licensed image with creator, direct source/license links and modification disclosure. Current identity and historic building continuity confirmed; no claim of 2026 appearance.",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:1679_Bedford_Row.jpg",
+      "locationSource": "https://www.mckelvies.ca/"
+    }
+  ],
+  "held": [
+    {
+      "restaurantId": "boondocks-eastern-passage",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Eastern_Passage_2008_1.jpg",
+      "captureDate": "2008-08-18",
+      "reason": "Current owner-served front image shows materially changed entrance, statues and railings. Historical photo not approved as current primary thumbnail.",
+      "comparisonSource": "https://static.wixstatic.com/media/c4ccfa_5fd40d692d8d47439685104f641286a1~mv2.jpg"
+    }
+  ]
+}

@@ -23,7 +23,7 @@ const failures = [];
 const storedJson = JSON.parse(await readFile(new URL("../data/build/thumbnail-candidates.json", import.meta.url), "utf8"));
 if (JSON.stringify(storedJson) !== JSON.stringify(thumbnailPayload)) failures.push({type:"thumbnail_script_json_mismatch"});
 const warnings = [];
-const allowedSourceKinds = new Set(["retained_media_reference", "approved_restaurant_media", "official_feed_media", "meta_social_media", "official_page_thumbnail_candidate", "public_campaign_menu_image", "public_special_source_image", "directory_source_image", "owner_submitted_image"]);
+const allowedSourceKinds = new Set(["retained_media_reference", "approved_restaurant_media", "official_feed_media", "meta_social_media", "official_page_thumbnail_candidate", "public_campaign_menu_image", "public_special_source_image", "directory_source_image", "owner_submitted_image", "verified_open_license_research"]);
 const allowedReviewStates = new Set(["approved", "candidate_review", "source_check", "rejected"]);
 const allowedRightsStates = new Set(["production_approved", "requires_rights_review", "rejected"]);
 

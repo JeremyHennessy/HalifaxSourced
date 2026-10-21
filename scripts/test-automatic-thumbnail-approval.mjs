@@ -108,7 +108,7 @@ try {
     run('scripts/test-media-reference-contract.mjs');
     const published = await load('data/restaurant-media.js', 'HALIFAX_RESTAURANT_MEDIA');
     assert.equal(published.records.length, originalManifest.records.length + 1);
-    assert.equal(published.records.at(-1).restaurantId, place.id);
+    assert.equal(published.records.filter(row => row.restaurantId === place.id && row.assessmentId === injected.id).length, 1);
   }
   const rejectionPath = join(integration, 'data/thumbnail-rejected-candidates.json');
   const rejections = JSON.parse(await readFile(rejectionPath, 'utf8'));

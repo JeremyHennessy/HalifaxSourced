@@ -313,3 +313,4 @@
   .fresh-data-grid,
   .recent-post-grid { grid-template-columns: 1fr; }
 }
+.media-attribution a{color:inherit;text-decoration:underline;text-underline-offset:2px}.media-attribution .media-modification{display:block;margin-top:2px}

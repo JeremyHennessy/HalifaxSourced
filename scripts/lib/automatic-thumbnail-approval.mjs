@@ -74,6 +74,7 @@ export async function assessThumbnail(candidate, evidence, restaurant, root) {
     rightsBasis: rights?.rightsBasis, permission: rights?.permission,
     permissionConfirmed: rights?.permissionConfirmed === true,
     creator: rights?.creator, license: rights?.license, attribution: rights?.attribution,
+    licenseUrl: rights?.licenseUrl || null, modificationNote: evidence.modificationNote || null, captureDate: evidence.captureDate || null,
     reviewState: 'approved', approvalMethod: AUTOMATIC_THUMBNAIL_POLICY,
     assessmentId: evidence.candidateId, assessedAt: evidence.assessedAt,
     assetSha256: visual?.sha256, rightsEvidenceUrl: rights?.evidenceUrl,

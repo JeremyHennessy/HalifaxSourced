@@ -151,13 +151,13 @@ function inspectionMatches(restaurant) {
 }
 
 function signalHas(signal, kind) {
-  if (!signal) return false;
+  if (!signal || (signal.website && !safeUrl(signal.website))) return false;
   if ((signal.signalMatches?.[kind]?.length || 0) > 0) return true;
   return (signal.candidateLinks || []).some((link) => (link.signalMatches?.[kind]?.length || 0) > 0);
 }
 
 function signalLinks(signal, kind) {
-  if (!signal) return [];
+  if (!signal || (signal.website && !safeUrl(signal.website))) return [];
   const links = (signal.candidateLinks || [])
     .filter((link) => !kind || (link.signalMatches?.[kind]?.length || 0) > 0)
     .map((link) => ({ label: link.text || kind || "Official link", url: safeUrl(link.href) }))

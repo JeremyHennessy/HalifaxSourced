@@ -1,33 +1,33 @@
 {
   "version": 1,
   "reviewedAt": "2026-10-20",
-  "scope": "Bounded enrichment of all 47 reviewed regional locations. Unknown, held and blocked fields preserve prior values; source access does not imply image rights.",
+  "scope": "Bounded enrichment of all 49 reviewed regional locations. Unknown, held and blocked fields preserve prior values; source access does not imply image rights.",
   "summary": {
     "coordinates": {
-      "verified": 18,
-      "unknown": 19,
+      "verified": 19,
+      "unknown": 20,
       "blocked": 10
     },
     "hours": {
       "verified": 15,
-      "held": 29,
+      "held": 31,
       "unknown": 1,
       "blocked": 2
     },
     "menu": {
       "held": 12,
-      "verified": 19,
-      "unknown": 8,
+      "verified": 20,
+      "unknown": 9,
       "blocked": 8
     },
     "phone": {
-      "verified": 32,
-      "held": 9,
+      "verified": 33,
+      "held": 10,
       "unknown": 4,
       "blocked": 2
     },
     "contact": {
-      "verified": 34,
+      "verified": 36,
       "held": 8,
       "blocked": 3,
       "unknown": 2
@@ -6107,6 +6107,247 @@
             }
           ],
           "freshContentReceived": true
+        }
+      }
+    },
+    {
+      "id": "labour-day-picnic-cafe-glen-haven",
+      "name": "Labour Day Picnic Cafe",
+      "fields": {
+        "coordinates": {
+          "status": "unknown",
+          "value": null,
+          "sourceUrls": [
+            "https://www.lurecaramel.com/",
+            "https://discoverhalifaxns.com/listings/labour-day-picnic-cafe/"
+          ],
+          "observedAt": "2026-10-20T22:58:25.424250+00:00",
+          "observation": "Related owner homepage and destination listing give the exact address, but no explicit numeric venue coordinates were verified. Destination map link encodes only the civic address; do not geocode or infer a point.",
+          "successfulSourceReceipts": [
+            {
+              "url": "https://www.lurecaramel.com/",
+              "fetchedAt": "2026-10-20T22:58:25.400523+00:00",
+              "httpStatus": 200,
+              "sha256": "fdc9b3efb3bdfb36ea1da61d5f706fcfc2876e7ba6a5860e00ba43cf72386dff"
+            },
+            {
+              "url": "https://discoverhalifaxns.com/listings/labour-day-picnic-cafe/",
+              "fetchedAt": "2026-10-20T22:58:25.424250+00:00",
+              "httpStatus": 200,
+              "sha256": "e149b1e97af7d6ae2f3eb2eff98def7f82d1e9d5ae0b79e58b26a5ab42006d04"
+            }
+          ],
+          "freshContentReceived": true
+        },
+        "hours": {
+          "status": "held",
+          "value": null,
+          "sourceUrls": [
+            "https://www.lurecaramel.com/"
+          ],
+          "observedAt": "2026-10-20T22:58:25.400523+00:00",
+          "observation": "Lure Caramel Co. @ Labour Day Picnic Cafe lists Mon-Tue closed, Wed-Fri 8-3, Sat-Sun 9-4. It is not clear whether this is full cafe kitchen service or co-located retail/counter availability.",
+          "successfulSourceReceipts": [
+            {
+              "url": "https://www.lurecaramel.com/",
+              "fetchedAt": "2026-10-20T22:58:25.400523+00:00",
+              "httpStatus": 200,
+              "sha256": "fdc9b3efb3bdfb36ea1da61d5f706fcfc2876e7ba6a5860e00ba43cf72386dff"
+            }
+          ],
+          "freshContentReceived": true,
+          "reason": "ambiguous_venue_hours_scope"
+        },
+        "menu": {
+          "status": "unknown",
+          "value": null,
+          "sourceUrls": [],
+          "observedAt": "2026-10-20T22:59:00Z",
+          "observation": "The cafe /menu page yielded no readable body to the web reader. A separate Lure retail product list is not a verified cafe food menu.",
+          "successfulSourceReceipts": [],
+          "freshContentReceived": false,
+          "candidateUrls": [
+            "https://www.labourdaypicnic.com/menu"
+          ],
+          "reason": "no_readable_cafe_menu_verified"
+        },
+        "phone": {
+          "status": "verified",
+          "value": "902-821-2133",
+          "sourceUrls": [
+            "https://discoverhalifaxns.com/listings/labour-day-picnic-cafe/"
+          ],
+          "observedAt": "2026-10-20T22:58:25.424250+00:00",
+          "observation": "The current destination-marketing listing explicitly prints 9028212133 and uses a matching tel:9028212133 link for the cafe at 12286 Peggy's Cove Road.",
+          "successfulSourceReceipts": [
+            {
+              "url": "https://discoverhalifaxns.com/listings/labour-day-picnic-cafe/",
+              "fetchedAt": "2026-10-20T22:58:25.424250+00:00",
+              "httpStatus": 200,
+              "sha256": "e149b1e97af7d6ae2f3eb2eff98def7f82d1e9d5ae0b79e58b26a5ab42006d04"
+            }
+          ],
+          "freshContentReceived": true,
+          "method": "authoritative_location_specific_visible_and_tel"
+        },
+        "contact": {
+          "status": "verified",
+          "value": {
+            "email": "hey@labourdaypicnic.com"
+          },
+          "sourceUrls": [
+            "https://discoverhalifaxns.com/listings/labour-day-picnic-cafe/"
+          ],
+          "observedAt": "2026-10-20T22:58:25.424250+00:00",
+          "observation": "The exact cafe listing has an Email link with mailto:hey@labourdaypicnic.com. No unverified contact page or Lure owner retail email is assigned to the cafe.",
+          "successfulSourceReceipts": [
+            {
+              "url": "https://discoverhalifaxns.com/listings/labour-day-picnic-cafe/",
+              "fetchedAt": "2026-10-20T22:58:25.424250+00:00",
+              "httpStatus": 200,
+              "sha256": "e149b1e97af7d6ae2f3eb2eff98def7f82d1e9d5ae0b79e58b26a5ab42006d04"
+            }
+          ],
+          "freshContentReceived": true,
+          "method": "authoritative_location_specific_mailto"
+        }
+      }
+    },
+    {
+      "id": "the-fourth-lock-fall-river",
+      "name": "The Fourth Lock",
+      "fields": {
+        "coordinates": {
+          "status": "verified",
+          "value": {
+            "lat": 44.8107358,
+            "lon": -63.6078948
+          },
+          "sourceUrls": [
+            "https://www.thefourthlock.ca/",
+            "https://novascotia.com/listing/the-fourth-lock-bed-and-breakfast/"
+          ],
+          "observedAt": "2026-10-20T22:58:40.404384+00:00",
+          "observation": "Official homepage application/json#wix-viewer-model siteFeaturesConfigs.seo.context explicitly pairs businessName The Fourth Lock and businessLocationFormatted 3104 Highway 2, Fall River, NS, Canada with businessLocationCoordinates latitude 44.8107358, longitude -63.6078948. Provincial listing corroborates same civic address; its separate map link is nearby but not substituted.",
+          "successfulSourceReceipts": [
+            {
+              "url": "https://www.thefourthlock.ca/",
+              "fetchedAt": "2026-10-20T22:58:34.017209+00:00",
+              "httpStatus": 200,
+              "sha256": "b5d568d4c27ef226ad9625647bd80f465465dcb36623824aa6e69cb56ec57cfe"
+            },
+            {
+              "url": "https://novascotia.com/listing/the-fourth-lock-bed-and-breakfast/",
+              "fetchedAt": "2026-10-20T22:58:40.404384+00:00",
+              "httpStatus": 200,
+              "sha256": "9e93966dd7eafc2955db4210a2401c8201c7fa0ea4fb1b8aa2c028ec6dbc86ea"
+            }
+          ],
+          "freshContentReceived": true,
+          "method": "owner_explicit_business_location_coordinates",
+          "caveat": "Source location coordinates, not a viewport center or inferred geocode. No independent survey of entrance placement."
+        },
+        "hours": {
+          "status": "held",
+          "value": null,
+          "sourceUrls": [
+            "https://www.thefourthlock.ca/"
+          ],
+          "observedAt": "2026-10-20T22:58:34.017209+00:00",
+          "observation": "Visible restaurant text says opens Wed-Sun at 4:30pm, closing depends on business volume and kitchen usually remains open until 9pm. Hidden Wix businessSchedule instead has 17:00-22:00; do not choose hidden schedule over visible variable-closing text.",
+          "successfulSourceReceipts": [
+            {
+              "url": "https://www.thefourthlock.ca/",
+              "fetchedAt": "2026-10-20T22:58:34.017209+00:00",
+              "httpStatus": 200,
+              "sha256": "b5d568d4c27ef226ad9625647bd80f465465dcb36623824aa6e69cb56ec57cfe"
+            }
+          ],
+          "freshContentReceived": true,
+          "reason": "variable_closing_and_visible_hidden_schedule_conflict"
+        },
+        "menu": {
+          "status": "verified",
+          "value": {
+            "url": "https://www.thefourthlock.ca/_files/ugd/9ada1f_6c26fd8387e74fb8bc525f7654507433.pdf",
+            "format": "pdf",
+            "menuType": "general"
+          },
+          "sourceUrls": [
+            "https://www.thefourthlock.ca/",
+            "https://www.thefourthlock.ca/_files/ugd/9ada1f_6c26fd8387e74fb8bc525f7654507433.pdf"
+          ],
+          "observedAt": "2026-10-20T22:58:34.017209+00:00",
+          "observation": "Official homepage MENU link targets this same-domain one-page PDF. Fresh PDF bytes were downloaded, hashed and text-extracted with pdftotext; file metadata title is 2026 SUMMER MENU WEB & SOCIAL and content lists meal dishes.",
+          "successfulSourceReceipts": [
+            {
+              "url": "https://www.thefourthlock.ca/",
+              "fetchedAt": "2026-10-20T22:58:34.017209+00:00",
+              "httpStatus": 200,
+              "sha256": "b5d568d4c27ef226ad9625647bd80f465465dcb36623824aa6e69cb56ec57cfe"
+            },
+            {
+              "url": "https://www.thefourthlock.ca/_files/ugd/9ada1f_6c26fd8387e74fb8bc525f7654507433.pdf",
+              "fetchedAt": "2026-10-20T22:58:33.960605+00:00",
+              "httpStatus": 200,
+              "sha256": "614fdd200d2ba2503ff8c86a3efad16667b9046194a3df11ca3631da94d9e6af"
+            }
+          ],
+          "freshContentReceived": true,
+          "verificationScope": "owner_menu_destination_and_content",
+          "contentVerified": true,
+          "caveat": "Currently linked Summer 2026 menu; no October price or dish availability guarantee and no prices proposed for import."
+        },
+        "phone": {
+          "status": "held",
+          "value": null,
+          "sourceUrls": [
+            "https://www.thefourthlock.ca/",
+            "https://novascotia.com/listing/the-fourth-lock-bed-and-breakfast/"
+          ],
+          "observedAt": "2026-10-20T22:58:40.404384+00:00",
+          "observation": "Visible official contact text prints 902-861-4454, but the same page JSON-LD telephone and malformed tel anchor contain 9028611334. Provincial tourism also lists 902-861-1334. Same-source contradiction must be resolved rather than selecting by majority.",
+          "successfulSourceReceipts": [
+            {
+              "url": "https://www.thefourthlock.ca/",
+              "fetchedAt": "2026-10-20T22:58:34.017209+00:00",
+              "httpStatus": 200,
+              "sha256": "b5d568d4c27ef226ad9625647bd80f465465dcb36623824aa6e69cb56ec57cfe"
+            },
+            {
+              "url": "https://novascotia.com/listing/the-fourth-lock-bed-and-breakfast/",
+              "fetchedAt": "2026-10-20T22:58:40.404384+00:00",
+              "httpStatus": 200,
+              "sha256": "9e93966dd7eafc2955db4210a2401c8201c7fa0ea4fb1b8aa2c028ec6dbc86ea"
+            }
+          ],
+          "freshContentReceived": true,
+          "reason": "visible_phone_conflicts_with_structured_and_linked_phone",
+          "candidateValues": [
+            "902-861-4454",
+            "902-861-1334"
+          ]
+        },
+        "contact": {
+          "status": "verified",
+          "value": {
+            "contactUrl": "https://www.thefourthlock.ca/"
+          },
+          "sourceUrls": [
+            "https://www.thefourthlock.ca/"
+          ],
+          "observedAt": "2026-10-20T22:58:34.017209+00:00",
+          "observation": "Owner homepage includes a Contact Us form and restaurant service section. No form submitted. Link to the verified page itself, without inventing an anchor.",
+          "successfulSourceReceipts": [
+            {
+              "url": "https://www.thefourthlock.ca/",
+              "fetchedAt": "2026-10-20T22:58:34.017209+00:00",
+              "httpStatus": 200,
+              "sha256": "b5d568d4c27ef226ad9625647bd80f465465dcb36623824aa6e69cb56ec57cfe"
+            }
+          ],
+          "freshContentReceived": true,
+          "method": "owner_visible_contact_form"
         }
       }
     }

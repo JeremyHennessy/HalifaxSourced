@@ -2,7 +2,7 @@
 (function (root) {
   // The purported replacement also returned a cross-entity redirect during the
   // bounded repair. Keep it out of consumer navigation until independently repaired.
-  const blockedHosts = new Set(['justitalymentone.com', 'bowtiecreamery.com', 'glitterbeancafe.com', 'turkishdelighthalifax.ca', 'humanitea.com']);
+  const blockedHosts = new Set(['justitalymentone.com', 'bowtiecreamery.com', 'glitterbeancafe.com', 'turkishdelighthalifax.ca', 'humanitea.com', 'twoifbyseacafe.ca']);
   // Repeated 404 responses observed October 19; quarantine only these paths,
   // not the operating restaurants or their entire domains.
   const brokenPaths = new Set([

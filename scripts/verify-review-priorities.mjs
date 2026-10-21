@@ -14,7 +14,8 @@ try{
   await page.goto(url+'/#explore',{waitUntil:'load'});
   const savedLinks=page.locator('a[href="#saved"],#savedButton');let reachable=false;for(const link of await savedLinks.all())if(await link.isVisible())reachable=true;assert(reachable,'Saved reachable at '+width);
   await page.goto(url+'/#explore?neighbourhood=Bedford&sort=name');await page.waitForFunction(()=>state.neighbourhood==='Bedford');
-  await page.locator('#globalSearch').fill('Bar Kismet');await page.locator('#globalSearch').press('Enter');await page.waitForFunction(()=>location.hash==='#explore?q=Bar+Kismet');
+  await page.locator('#globalSearch').fill('Bar Kismet');await page.locator('#globalSearch').press('Enter');// Hash assignment is synchronous; the hashchange renderer runs afterward.
+  await page.waitForFunction(()=>location.hash==='#explore?q=Bar+Kismet' && state.query==='Bar Kismet' && state.neighbourhood==='all');
   assert.equal(await page.evaluate(()=>state.neighbourhood),'all');assert.match(await page.locator('#appView').innerText(),/Bar Kismet/);
   const beforeReload=await page.evaluate(()=>({url:location.href,query:state.query,ready:document.readyState}));
   await page.reload({waitUntil:'load'});

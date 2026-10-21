@@ -5281,6 +5281,21 @@
         "discoveryReason": "official_signal_candidate_link",
         "sourceLabel": "Mar 12, 2026 Calgary Offer CALGARY: FREE BIRYANI ALERT! CALGARY: FREE BIRYANI ALERT! 🚨🥘 To celebrate our Grand Opening, we’re giving away 25 FREE Biryanis every single day from our exclusive Chef Series! 📍 Where: India Paradise, 3131 27 St NE Unit #1, Calgary 🗓️ When: March 18th – March 22nd ⏰ The Deal: First 25 people only! 🥡 Note: Take-out only Set your alarms and get here early—once they’re gone, they’re gone!"
       }
+    },
+    {
+      "file": "reviewed-restaurant-corrections.js",
+      "reason": "wrong_entity_domain_content",
+      "reviewedAt": "2026-10-20T22:54:42.872334+00:00",
+      "record": {
+        "restaurantId": "osm-node-4420631892-two-if-by-sea",
+        "website": "https://www.twoifbyseacafe.ca/",
+        "resolvedUrl": "https://twoifbyseacafe.ca/",
+        "evidenceSha256": "5df19ec3388e78605747279495b365cf495f691f58c3be6b3d3b5319609706be",
+        "httpStatus": 200,
+        "observation": "Page identifies an unrelated fish market, not the Dartmouth cafe.",
+        "businessLifecycleChanged": false,
+        "replacementStatus": "unverified"
+      }
     }
   ]
 }

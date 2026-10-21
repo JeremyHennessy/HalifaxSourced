@@ -401,6 +401,46 @@ window.HALIFAX_RESTAURANT_CORRECTIONS = {
       "observedAt": "2026-10-20T19:04:52.646Z",
       "reviewedAt": "2026-10-20T19:04:52.646Z",
       "reviewState": "verified"
+    },
+    {
+      "restaurantId": "osm-node-1254843900-the-mic-mac-bar-and-grill",
+      "fields": {
+        "address": "219 Waverley Road, Dartmouth, NS B2X 2C3",
+        "phone": "902-434-7600",
+        "openingHours": "Mo-We 16:00-21:00; Th 10:00-21:00; Fr 10:00-21:30; Sa 09:00-21:30; Su 09:00-21:00",
+        "openingHoursVerifiedAt": "2026-10-20T22:55:16.230667+00:00"
+      },
+      "sourceUrl": "https://micmacbarandgrill.com/contact-us/",
+      "observedAt": "2026-10-20T22:55:16.230667+00:00",
+      "reviewedAt": "2026-10-20T22:55:16.230667+00:00",
+      "evidenceSha256": "a2e6f907097217d741f0817f80667b78001b12f8a3d7d8139b8f762a8354e76d",
+      "reviewState": "verified",
+      "claim": "Owner contact page confirms the exact Dartmouth civic address, phone and complete venue-hours schedule. No holiday exceptions or kitchen cutoff inferred. Existing mapped location remains unchanged."
+    },
+    {
+      "restaurantId": "osm-node-7082566319-real-fake-meats",
+      "fields": {
+        "address": "2278 Gottingen Street, Halifax, NS",
+        "phone": "902-405-2984"
+      },
+      "sourceUrl": "https://www.realfakemeats.com/contact",
+      "observedAt": "2026-10-20T22:54:30.585357+00:00",
+      "reviewedAt": "2026-10-20T22:54:30.585357+00:00",
+      "evidenceSha256": "01c8106b6bdb31f515efd9abbbe9bb59ba9101048275cb0b4753d7df2a59bdba",
+      "reviewState": "verified",
+      "claim": "Owner contact page confirms the existing Gottingen Street business, including Halifax locality and phone. No current hours or image-menu contents were inferred."
+    },
+    {
+      "restaurantId": "osm-node-4420631892-two-if-by-sea",
+      "fields": {
+        "website": null
+      },
+      "sourceUrl": "https://twoifbyseacafe.ca/",
+      "observedAt": "2026-10-20T22:54:42.872334+00:00",
+      "reviewedAt": "2026-10-20T22:54:42.872334+00:00",
+      "evidenceSha256": "5df19ec3388e78605747279495b365cf495f691f58c3be6b3d3b5319609706be",
+      "reviewState": "verified",
+      "claim": "The previously linked twoifbyseacafe.ca domain currently serves unrelated Two Sea Fish Market content rather than the Dartmouth cafe. Quarantine this website only; do not infer that the cafe is closed. A similarly named replacement remains unverified and is not substituted."
     }
   ],
   "aliases": [
@@ -1769,6 +1809,79 @@ window.HALIFAX_RESTAURANT_CORRECTIONS = {
       "reviewedAt": "2026-10-20T19:04:52.646Z",
       "reviewState": "verified",
       "evidenceSha256": "4ca9e6f1ba40991d86db587657362ec23afcbeedf9c61817cddb0c02f4a2de4a"
+    },
+    {
+      "id": "hours-review-2026-10-20-micmac-contact",
+      "restaurantId": "osm-node-1254843900-the-mic-mac-bar-and-grill",
+      "fields": {
+        "hours": {
+          "monday": [
+            {
+              "open": "16:00",
+              "close": "21:00",
+              "overnight": false,
+              "sourceForm": "reviewed_visible_official_hours"
+            }
+          ],
+          "tuesday": [
+            {
+              "open": "16:00",
+              "close": "21:00",
+              "overnight": false,
+              "sourceForm": "reviewed_visible_official_hours"
+            }
+          ],
+          "wednesday": [
+            {
+              "open": "16:00",
+              "close": "21:00",
+              "overnight": false,
+              "sourceForm": "reviewed_visible_official_hours"
+            }
+          ],
+          "thursday": [
+            {
+              "open": "10:00",
+              "close": "21:00",
+              "overnight": false,
+              "sourceForm": "reviewed_visible_official_hours"
+            }
+          ],
+          "friday": [
+            {
+              "open": "10:00",
+              "close": "21:30",
+              "overnight": false,
+              "sourceForm": "reviewed_visible_official_hours"
+            }
+          ],
+          "saturday": [
+            {
+              "open": "09:00",
+              "close": "21:30",
+              "overnight": false,
+              "sourceForm": "reviewed_visible_official_hours"
+            }
+          ],
+          "sunday": [
+            {
+              "open": "09:00",
+              "close": "21:00",
+              "overnight": false,
+              "sourceForm": "reviewed_visible_official_hours"
+            }
+          ]
+        },
+        "hoursVerifiedAt": "2026-10-20T22:55:16.230667+00:00",
+        "hoursSourceUrl": "https://micmacbarandgrill.com/contact-us/",
+        "hoursUnknownDays": [],
+        "hoursReviewEvidence": "Location-specific owner contact schedule; no contradictory venue-hours metadata found in the inspected document."
+      },
+      "sourceUrl": "https://micmacbarandgrill.com/contact-us/",
+      "observedAt": "2026-10-20T22:55:16.230667+00:00",
+      "reviewedAt": "2026-10-20T22:55:16.230667+00:00",
+      "evidenceSha256": "a2e6f907097217d741f0817f80667b78001b12f8a3d7d8139b8f762a8354e76d",
+      "reviewState": "verified"
     }
   ]
 };

@@ -92,6 +92,9 @@ function permittedImageFor(restaurant) {
       rightsBasis,
       creator,
       license,
+      licenseUrl: publicMediaSourceUrl(image.licenseUrl),
+      modificationNote: String(image.modificationNote ?? "").trim(),
+      captureDate: String(image.captureDate ?? "").trim(),
       attribution: String(image.attribution ?? "").trim() || null
     };
   }
@@ -205,7 +208,9 @@ function mediaAttributionMarkup(restaurant) {
   const image = restaurantDisplayImageFor(restaurant);
   if (!image?.sourceUrl || !image.attribution) return "";
   const label = image.externalPreview ? "External photo source" : "Photo";
-  return `<a class="media-attribution" href="${escapeHtml(image.sourceUrl)}" target="_blank" rel="noreferrer">${label}: ${escapeHtml(image.attribution)} ↗</a>`;
+  const license = image.licenseUrl ? ` · <a class="media-license" href="${escapeHtml(image.licenseUrl)}" target="_blank" rel="noreferrer">${escapeHtml(image.license)} ↗</a>` : "";
+  const detail = image.modificationNote ? `<span class="media-modification">${escapeHtml(image.modificationNote)}</span>` : "";
+  return `<span class="media-attribution"><a class="media-source" href="${escapeHtml(image.sourceUrl)}" target="_blank" rel="noreferrer">${label}: ${escapeHtml(image.attribution)} ↗</a>${license}${detail}</span>`;
 }
 
 function permittedImageClass(restaurant) {

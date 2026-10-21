@@ -9,6 +9,7 @@ for (const item of broken.records) {
   assert.equal(integrity.safeSource(item.url),false,item.url);
 }
 for (const url of ['https://www.magnoliahfx.com/','https://www.loupecou.com/','https://www.studioeastfood.ca/','https://www.brawtajerk.ca/','https://www.stardustbar.ca/']) assert.equal(integrity.safeSource(url),true,'Path quarantine must preserve official homepage');
+for(const url of ['https://www.twoifbyseacafe.ca/','https://twoifbyseacafe.ca/seafood','https://www.twoifbyseacafe.ca./']) assert.equal(integrity.safeSource(url),false,'Wrong-entity domain stays out of navigation/collection');
 const now=Date.parse('2026-10-06T12:00:00Z');
 assert.equal(integrity.publicationState('2026-10-06T12:00:01Z',now).isRecent,false);
 assert.equal(integrity.publicationState('2027-01-01',now).ageDays,null);
