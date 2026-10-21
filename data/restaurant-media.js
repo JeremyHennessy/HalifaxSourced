@@ -129,6 +129,31 @@ window.HALIFAX_RESTAURANT_MEDIA = {
       "attribution": "Nicole Bratt, CC BY-SA 2.0, via Wikimedia Commons (2012)",
       "reviewState": "approved",
       "reviewedAt": "2026-10-20"
+    },
+    {
+      "restaurantId": "osm-way-671922221-mckelvie-s",
+      "url": "assets/restaurants/mckelvies-exterior.jpg",
+      "alt": "McKelvie’s restaurant, Bedford Row side of 1680 Lower Water Street, photographed April 2023",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:1679_Bedford_Row.jpg",
+      "sourceType": "licensed",
+      "rightsBasis": "CC BY-SA 4.0; Credit Properpostman, link CC BY-SA 4.0, source and capture date; Wikimedia resized version, otherwise unchanged. Share-alike applies to adaptations.",
+      "permission": "licensed",
+      "permissionConfirmed": true,
+      "creator": "Properpostman",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Properpostman, via Wikimedia Commons",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "modificationNote": "Photographed April 2023. Wikimedia resized version; otherwise unchanged.",
+      "captureDate": "2023-04-15",
+      "reviewState": "approved",
+      "approvalMethod": "verified-thumbnail-v1",
+      "assessmentId": "thumb-e76b9ad71fab0be2f5",
+      "assessedAt": "2026-10-20T23:02:00Z",
+      "assetSha256": "96d8060487b9bd05f434a511e018c03dfd93a4fb41ab552f348dfaba900f50e6",
+      "rightsEvidenceUrl": "https://commons.wikimedia.org/wiki/File:1679_Bedford_Row.jpg",
+      "usageConditions": "Credit Properpostman, link CC BY-SA 4.0, source and capture date; Wikimedia resized version, otherwise unchanged. Share-alike applies to adaptations.",
+      "rightsVerificationNotes": "Explicit file-specific grant by original creator on Wikimedia Commons description page; not inferred from site-wide footer or public availability.",
+      "rightsExpiresAt": null
     }
   ]
 };

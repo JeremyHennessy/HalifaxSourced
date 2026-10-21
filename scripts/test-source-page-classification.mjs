@@ -1,0 +1,15 @@
+import assert from 'node:assert/strict';
+import {sourcePageDisposition as classify,preserveAcceptedSources as preserve} from './lib/source-page-classification.mjs';
+const c=url=>({restaurantId:'good-robot-robie',kind:'menu',url});
+for(const path of ['commons','elmsdale','robie-street']) assert.equal(classify(c('https://goodrobotbrewing.ca/'+path+'/'),{locationValidated:false,sourceKind:'official_page'}).state,'needs-review');
+assert.equal(classify(c('https://www.facebook.com/lebistrobyliz'),{sourceKind:'official_outbound_link'}).reason,'social_profile_is_not_verified_menu_or_special');
+assert.equal(classify(c('https://bluenoseii.ca/shortcodes/'),{locationValidated:true}).state,'rejected');
+assert.equal(classify(c('https://example.test/wp-login.php'),{locationValidated:true}).state,'rejected');
+assert.equal(classify(c('https://example.test/menu.pdf'),{locationValidated:null,sourceKind:'official_page'}).state,'needs-review');
+assert.equal(classify(c('https://example.test/locations/halifax/menu'),{locationValidated:true,sourceKind:'official_page'}).state,'verified');
+const old={...c('https://example.test/menu'),verifiedAt:'2026-09-04T00:00:00Z',observedAt:'2026-09-04T00:00:00Z'};
+assert.deepEqual(preserve([old],[]),[old],'A failed/limited crawl must not remove or rejuvenate accepted evidence.');
+const fresh={...old,observedAt:'2026-10-20T00:00:00Z',verifiedAt:'2026-10-20T00:00:00Z'};
+assert.deepEqual(preserve([old],[fresh]),[fresh]);
+assert.equal(preserve([old],[{...fresh,url:'https://example.test/new-menu'}]).length,2,'A new URL is not proof the old one was withdrawn.');
+console.log('Source-page classification: 11 offline assertions passed.');

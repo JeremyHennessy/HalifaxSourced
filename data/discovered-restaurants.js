@@ -7695,5 +7695,289 @@ window.HALIFAX_DISCOVERED_RESTAURANTS = [
       "sourceLeadObserved": false,
       "reviewNote": "Owner-linked OpenTable currently says 11:30–21:00. Prefer current first-party restaurant homepage if choosing to publish hours; otherwise hold this field. Never copy Rhubarb's old schedule. Do not add Rhubarb as currently operating. Watermark is a new restaurant identity at the former site, not a same-ID name correction or a duplicate. Hazel's is outside the present HRM/nearby boundary recommendation and must not inherit the Indian Harbour location."
     }
+  },
+  {
+    "id": "labour-day-picnic-cafe-glen-haven",
+    "name": "Labour Day Picnic Cafe",
+    "neighborhood": "Glen Haven",
+    "category": "Cafe",
+    "cuisines": [],
+    "vibe": [],
+    "qualityScore": null,
+    "freshnessDate": "2026-10-20",
+    "evidenceStatus": "verified",
+    "sourceLayer": "local_discovery",
+    "address": "12286 Peggy's Cove Road, Glen Haven, NS B3Z 2R6",
+    "phone": "902-821-2133",
+    "email": "hey@labourdaypicnic.com",
+    "contactUrl": null,
+    "contactScope": null,
+    "fieldEvidence": {
+      "phone": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://discoverhalifaxns.com/listings/labour-day-picnic-cafe/"
+        ],
+        "observedAt": "2026-10-20T22:58:25.424250+00:00",
+        "observation": "The current destination-marketing listing explicitly prints 9028212133 and uses a matching tel:9028212133 link for the cafe at 12286 Peggy's Cove Road.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://discoverhalifaxns.com/listings/labour-day-picnic-cafe/",
+            "fetchedAt": "2026-10-20T22:58:25.424250+00:00",
+            "httpStatus": 200,
+            "sha256": "e149b1e97af7d6ae2f3eb2eff98def7f82d1e9d5ae0b79e58b26a5ab42006d04"
+          }
+        ],
+        "freshContentReceived": true,
+        "method": "authoritative_location_specific_visible_and_tel"
+      },
+      "contact": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://discoverhalifaxns.com/listings/labour-day-picnic-cafe/"
+        ],
+        "observedAt": "2026-10-20T22:58:25.424250+00:00",
+        "observation": "The exact cafe listing has an Email link with mailto:hey@labourdaypicnic.com. No unverified contact page or Lure owner retail email is assigned to the cafe.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://discoverhalifaxns.com/listings/labour-day-picnic-cafe/",
+            "fetchedAt": "2026-10-20T22:58:25.424250+00:00",
+            "httpStatus": 200,
+            "sha256": "e149b1e97af7d6ae2f3eb2eff98def7f82d1e9d5ae0b79e58b26a5ab42006d04"
+          }
+        ],
+        "freshContentReceived": true,
+        "method": "authoritative_location_specific_mailto"
+      }
+    },
+    "openingHoursVerifiedAt": null,
+    "hoursValidThrough": null,
+    "hoursScope": null,
+    "website": "https://www.labourdaypicnic.com/",
+    "openingHours": null,
+    "operatingStatus": "active",
+    "operatingStatusEvidence": {
+      "claim": "Related owner business Lure Caramel Co.'s freshly fetched homepage explicitly locates itself at Labour Day Picnic Cafe, gives the exact civic location, and publishes a weekly service schedule. NSCC's directly retrieved 2025 guide independently establishes lunch fare, baked goods, espresso, local co-owners and the cafe/Lure relationship. Discover Halifax directly confirms the exact address, phone and official domain.",
+      "sourceUrl": "https://www.lurecaramel.com/",
+      "location": "12286 Peggy's Cove Road, Glen Haven, NS B3Z 2R6",
+      "observedAt": "2026-10-20T22:59:00Z",
+      "verifiedAt": "2026-10-20T22:59:00Z",
+      "reviewState": "verified"
+    },
+    "seasonality": null,
+    "lifecycleSchedule": null,
+    "ownershipEvidence": {
+      "claim": "NSCC's 2025 alumni-business guide explicitly names Kate Melvin and Gabe Beale as co-owners and frames the featured firms as local alumni businesses. The cafe and Lure Caramel Co. relationship is corroborated by NSCC and the related owner's own live store page. No corporate-register audit was performed.",
+      "confidence": "high for locally owned cafe identity; no legal ownership audit",
+      "sourceUrls": [
+        "https://www.lurecaramel.com/",
+        "https://www.nscc.ca/alumni/benefits-and-supports/shop-nscc/index.asp",
+        "https://discoverhalifaxns.com/listings/labour-day-picnic-cafe/"
+      ],
+      "observedAt": "2026-10-20T22:59:00Z"
+    },
+    "openingStatus": null,
+    "coordinates": null,
+    "socialProfiles": [],
+    "summary": "Glen Haven cafe serving espresso, house-made baked goods, light lunches and Lure Caramel Co. chocolates.",
+    "specials": [],
+    "events": [],
+    "sources": [
+      {
+        "label": "Reviewed identity, ownership or operation source",
+        "type": "regional_review_source",
+        "url": "https://www.lurecaramel.com/",
+        "status": "verified",
+        "observedAt": "2026-10-20T22:59:00Z"
+      },
+      {
+        "label": "Reviewed identity, ownership or operation source",
+        "type": "regional_review_source",
+        "url": "https://www.nscc.ca/alumni/benefits-and-supports/shop-nscc/index.asp",
+        "status": "verified",
+        "observedAt": "2026-10-20T22:59:00Z"
+      },
+      {
+        "label": "Reviewed identity, ownership or operation source",
+        "type": "regional_review_source",
+        "url": "https://discoverhalifaxns.com/listings/labour-day-picnic-cafe/",
+        "status": "verified",
+        "observedAt": "2026-10-20T22:59:00Z"
+      }
+    ],
+    "discoveryReview": {
+      "approvedByOverride": true,
+      "sourceLeadObserved": false,
+      "reviewNote": "Do not report the cafe's unreadable /menu page as a successfully parsed menu or publish item prices from it. The Lure @ Cafe schedule is Monday-Tuesday closed, Wednesday-Friday 8-3 and Saturday-Sunday 9-4, but it may encompass retail/counter service. Do not normalize it as full kitchen service without checking the field semantics. Phone and postal code are corroborated by Discover Halifax, not extracted from the cafe homepage. No coordinates or exact seasonal dates supplied. No new-opening flag recommended."
+    }
+  },
+  {
+    "id": "the-fourth-lock-fall-river",
+    "name": "The Fourth Lock",
+    "neighborhood": "Fall River",
+    "category": "Restaurant",
+    "cuisines": [],
+    "vibe": [],
+    "qualityScore": null,
+    "freshnessDate": "2026-10-20",
+    "evidenceStatus": "verified",
+    "sourceLayer": "local_discovery",
+    "address": "3104 Highway 2, Fall River, NS B2T 1J5",
+    "phone": null,
+    "email": null,
+    "contactUrl": "https://www.thefourthlock.ca/",
+    "contactScope": null,
+    "fieldEvidence": {
+      "coordinates": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.thefourthlock.ca/",
+          "https://novascotia.com/listing/the-fourth-lock-bed-and-breakfast/"
+        ],
+        "observedAt": "2026-10-20T22:58:40.404384+00:00",
+        "observation": "Official homepage application/json#wix-viewer-model siteFeaturesConfigs.seo.context explicitly pairs businessName The Fourth Lock and businessLocationFormatted 3104 Highway 2, Fall River, NS, Canada with businessLocationCoordinates latitude 44.8107358, longitude -63.6078948. Provincial listing corroborates same civic address; its separate map link is nearby but not substituted.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://www.thefourthlock.ca/",
+            "fetchedAt": "2026-10-20T22:58:34.017209+00:00",
+            "httpStatus": 200,
+            "sha256": "b5d568d4c27ef226ad9625647bd80f465465dcb36623824aa6e69cb56ec57cfe"
+          },
+          {
+            "url": "https://novascotia.com/listing/the-fourth-lock-bed-and-breakfast/",
+            "fetchedAt": "2026-10-20T22:58:40.404384+00:00",
+            "httpStatus": 200,
+            "sha256": "9e93966dd7eafc2955db4210a2401c8201c7fa0ea4fb1b8aa2c028ec6dbc86ea"
+          }
+        ],
+        "freshContentReceived": true,
+        "method": "owner_explicit_business_location_coordinates",
+        "caveat": "Source location coordinates, not a viewport center or inferred geocode. No independent survey of entrance placement."
+      },
+      "menu": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.thefourthlock.ca/",
+          "https://www.thefourthlock.ca/_files/ugd/9ada1f_6c26fd8387e74fb8bc525f7654507433.pdf"
+        ],
+        "observedAt": "2026-10-20T22:58:34.017209+00:00",
+        "observation": "Official homepage MENU link targets this same-domain one-page PDF. Fresh PDF bytes were downloaded, hashed and text-extracted with pdftotext; file metadata title is 2026 SUMMER MENU WEB & SOCIAL and content lists meal dishes.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://www.thefourthlock.ca/",
+            "fetchedAt": "2026-10-20T22:58:34.017209+00:00",
+            "httpStatus": 200,
+            "sha256": "b5d568d4c27ef226ad9625647bd80f465465dcb36623824aa6e69cb56ec57cfe"
+          },
+          {
+            "url": "https://www.thefourthlock.ca/_files/ugd/9ada1f_6c26fd8387e74fb8bc525f7654507433.pdf",
+            "fetchedAt": "2026-10-20T22:58:33.960605+00:00",
+            "httpStatus": 200,
+            "sha256": "614fdd200d2ba2503ff8c86a3efad16667b9046194a3df11ca3631da94d9e6af"
+          }
+        ],
+        "freshContentReceived": true,
+        "verificationScope": "owner_menu_destination_and_content",
+        "contentVerified": true,
+        "caveat": "Currently linked Summer 2026 menu; no October price or dish availability guarantee and no prices proposed for import."
+      },
+      "contact": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.thefourthlock.ca/"
+        ],
+        "observedAt": "2026-10-20T22:58:34.017209+00:00",
+        "observation": "Owner homepage includes a Contact Us form and restaurant service section. No form submitted. Link to the verified page itself, without inventing an anchor.",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://www.thefourthlock.ca/",
+            "fetchedAt": "2026-10-20T22:58:34.017209+00:00",
+            "httpStatus": 200,
+            "sha256": "b5d568d4c27ef226ad9625647bd80f465465dcb36623824aa6e69cb56ec57cfe"
+          }
+        ],
+        "freshContentReceived": true,
+        "method": "owner_visible_contact_form"
+      }
+    },
+    "openingHoursVerifiedAt": null,
+    "hoursValidThrough": null,
+    "hoursScope": null,
+    "website": "https://www.thefourthlock.ca/",
+    "openingHours": null,
+    "operatingStatus": "active",
+    "operatingStatusEvidence": {
+      "claim": "Current official homepage explicitly offers dine-in and pickup Wednesday-Sunday from 4:30pm, links a 2026 summer menu PDF, owner-linked Clover ordering and table reservations. Provincial tourism corroborates exact address and restaurant identity.",
+      "sourceUrl": "https://www.thefourthlock.ca/",
+      "location": "3104 Highway 2, Fall River, NS B2T 1J5",
+      "observedAt": "2026-10-20T22:59:00Z",
+      "verifiedAt": "2026-10-20T22:59:00Z",
+      "reviewState": "verified"
+    },
+    "seasonality": null,
+    "lifecycleSchedule": null,
+    "ownershipEvidence": {
+      "claim": "The Shubenacadie Canal Commission's location-specific November 23, 2022 interview identifies co-owner Jaro Schubert, his move to Fall River and founding the restaurant. Present-day first-party site and its 2026 menu continue the same restaurant identity. This establishes a local independent origin and continuing same-brand operation; it does not independently audit unchanged legal ownership in 2026.",
+      "confidence": "medium-high; local co-owner interview is dated 2022",
+      "sourceUrls": [
+        "https://www.thefourthlock.ca/",
+        "https://www.thefourthlock.ca/_files/ugd/9ada1f_6c26fd8387e74fb8bc525f7654507433.pdf",
+        "https://www.shubenacadiecanal.ca/blog-content/2022/11/21/explore-the-waterway-date-night-at-the-fourth-lock",
+        "https://novascotia.com/listing/the-fourth-lock-bed-and-breakfast/"
+      ],
+      "observedAt": "2026-10-20T22:59:00Z"
+    },
+    "openingStatus": null,
+    "coordinates": {
+      "lat": 44.8107358,
+      "lon": -63.6078948
+    },
+    "socialProfiles": [],
+    "summary": "Fall River restaurant and bar offering dine-in and pickup, with seafood, pizza, burgers and other dinner dishes.",
+    "specials": [],
+    "events": [],
+    "sources": [
+      {
+        "label": "Reviewed identity, ownership or operation source",
+        "type": "regional_review_source",
+        "url": "https://www.thefourthlock.ca/",
+        "status": "verified",
+        "observedAt": "2026-10-20T22:59:00Z"
+      },
+      {
+        "label": "Reviewed identity, ownership or operation source",
+        "type": "regional_review_source",
+        "url": "https://www.thefourthlock.ca/_files/ugd/9ada1f_6c26fd8387e74fb8bc525f7654507433.pdf",
+        "status": "verified",
+        "observedAt": "2026-10-20T22:59:00Z"
+      },
+      {
+        "label": "Reviewed identity, ownership or operation source",
+        "type": "regional_review_source",
+        "url": "https://www.shubenacadiecanal.ca/blog-content/2022/11/21/explore-the-waterway-date-night-at-the-fourth-lock",
+        "status": "verified",
+        "observedAt": "2026-10-20T22:59:00Z"
+      },
+      {
+        "label": "Reviewed identity, ownership or operation source",
+        "type": "regional_review_source",
+        "url": "https://novascotia.com/listing/the-fourth-lock-bed-and-breakfast/",
+        "status": "verified",
+        "observedAt": "2026-10-20T22:59:00Z"
+      },
+      {
+        "type": "menu",
+        "url": "https://www.thefourthlock.ca/_files/ugd/9ada1f_6c26fd8387e74fb8bc525f7654507433.pdf",
+        "label": "Owner-linked Summer 2026 menu; availability may vary",
+        "status": "verified",
+        "verifiedAt": "2026-10-20T22:58:34.017209+00:00",
+        "observedAt": "2026-10-20T22:58:34.017209+00:00"
+      }
+    ],
+    "discoveryReview": {
+      "approvedByOverride": true,
+      "sourceLeadObserved": false,
+      "reviewNote": "This is Fall River, not Waverley proper. Do not relabel it to fill the Waverley gap. Owner homepage explicitly says closing hours depend on business volume and the kitchen usually stays open until 9pm. Do not turn 'usually' into a fixed daily closing time. Menu PDF is the owner's currently linked 2026 Summer Menu; do not label its prices or seasonal dishes as a guaranteed October menu. No named 2026 ownership-register confirmation obtained; preserve the 2022 provenance rather than claiming a fresh legal ownership audit. One restaurant record only. The B&B at the same address is not an additional restaurant. Phone withheld: visible homepage text 902-861-4454 conflicts with its own JSON-LD and malformed tel link 902-861-1334, also used by tourism. Do not choose one without resolution. Coordinates come explicitly from the named business location in the fresh owner Wix SEO context and match its exact civic address; no coordinates were invented."
+    }
   }
 ];

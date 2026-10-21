@@ -1,5 +1,51 @@
 {
   "version": 1,
   "description": "Image-specific evidence from actual location, decoded-image and usage-rights verification. Empty until those checks are complete. Automated assessment does not require human approval, and public availability or historical approval labels are not a rights grant.",
-  "records": []
+  "records": [
+    {
+      "candidateId": "thumb-e76b9ad71fab0be2f5",
+      "restaurantId": "osm-way-671922221-mckelvie-s",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/1679_Bedford_Row.jpg/960px-1679_Bedford_Row.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:1679_Bedford_Row.jpg",
+      "assessedAt": "2026-10-20T23:02:00Z",
+      "assessedBy": "Automated image and source verification",
+      "assetPath": "assets/restaurants/mckelvies-exterior.jpg",
+      "alt": "McKelvie’s restaurant, Bedford Row side of 1680 Lower Water Street, photographed April 2023",
+      "captureDate": "2023-04-15",
+      "location": {
+        "verified": true,
+        "operatingStatus": "active",
+        "restaurantId": "osm-way-671922221-mckelvie-s",
+        "address": "1680 Lower Water Street, Halifax, Nova Scotia",
+        "sourceUrl": "https://www.mckelvies.ca/",
+        "notes": "Actual decoded image shows McKelvie’s name on the rooftop and entrance awning, Bedford Row street sign and complete historic firehall facade. Same restaurant is confirmed by owner current site at 1680 Lower Water Street; Bedford Row is the photographed side, not a different restaurant. Clear daylight exterior, no watermark or promotional overlay."
+      },
+      "visual": {
+        "inspected": true,
+        "verdict": "usable",
+        "sha256": "96d8060487b9bd05f434a511e018c03dfd93a4fb41ab552f348dfaba900f50e6",
+        "width": 960,
+        "height": 723,
+        "notes": "Actual decoded image shows McKelvie’s name on the rooftop and entrance awning, Bedford Row street sign and complete historic firehall facade. Same restaurant is confirmed by owner current site at 1680 Lower Water Street; Bedford Row is the photographed side, not a different restaurant. Clear daylight exterior, no watermark or promotional overlay. No material mismatch established. Date is explicitly disclosed; this is not a claim of current 2026 appearance."
+      },
+      "rights": {
+        "verified": true,
+        "permissionConfirmed": true,
+        "localReproductionPermitted": true,
+        "conditionsSatisfied": true,
+        "usageConditions": "Credit Properpostman, link CC BY-SA 4.0, source and capture date; Wikimedia resized version, otherwise unchanged. Share-alike applies to adaptations.",
+        "evidenceUrl": "https://commons.wikimedia.org/wiki/File:1679_Bedford_Row.jpg",
+        "verifiedAt": "2026-10-20T22:54:00Z",
+        "notes": "Explicit file-specific grant by original creator on Wikimedia Commons description page; not inferred from site-wide footer or public availability.",
+        "sourceType": "licensed",
+        "permission": "licensed",
+        "creator": "Properpostman",
+        "license": "CC BY-SA 4.0",
+        "rightsBasis": "CC BY-SA 4.0; Credit Properpostman, link CC BY-SA 4.0, source and capture date; Wikimedia resized version, otherwise unchanged. Share-alike applies to adaptations.",
+        "attribution": "Properpostman, via Wikimedia Commons",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "modificationNote": "Photographed April 2023. Wikimedia resized version; otherwise unchanged."
+    }
+  ]
 }

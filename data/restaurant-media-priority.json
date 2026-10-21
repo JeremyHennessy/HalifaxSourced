@@ -1,7 +1,7 @@
 {
   "version": 1,
   "generatedAt": "2026-10-20",
-  "targetCount": 119,
+  "targetCount": 120,
   "policy": "Consumer media requires a specific reusable licence or documented owner grant. Public website references remain unverified until authorization evidence is reviewed.",
   "allowedSources": [
     "wikimedia_commons",
@@ -710,6 +710,13 @@
       "rightsState": "licensed",
       "license": "CC BY-SA 2.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:DSC07401_(7172975247).jpg"
+    },
+    {
+      "restaurantId": "osm-way-671922221-mckelvie-s",
+      "name": "McKelvie's",
+      "status": "approved",
+      "automaticApprovalPolicy": "verified-thumbnail-v1",
+      "previousPriorityRecord": null
     }
   ]
 }

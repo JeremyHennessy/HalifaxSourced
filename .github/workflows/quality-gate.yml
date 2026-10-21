@@ -53,7 +53,10 @@ jobs:
         run: node scripts/test-preview-promotion.mjs
 
       - name: Run network-disabled source verifier startup regression
-        run: node scripts/test-source-verifier-startup.mjs
+        run: |
+          node scripts/test-source-verifier-startup.mjs
+          node scripts/test-source-page-classification.mjs
+          node scripts/test-practical-details-review.mjs
 
       - name: Test fixed-snapshot release isolation
         run: node scripts/test-release-source-isolation.mjs

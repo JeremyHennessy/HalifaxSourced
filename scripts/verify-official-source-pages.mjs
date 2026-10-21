@@ -1,3 +1,4 @@
+import { sourcePageDisposition, preserveAcceptedSources } from './lib/source-page-classification.mjs';
 import { fetchGuardedSource as fetch } from "./lib/fetch-public-source.mjs";
 import { fetchPublicSource } from "./lib/fetch-public-source.mjs";
 import integrity from "../source-integrity.js";
@@ -25,6 +26,9 @@ async function loadWindowScript(url) {
   return context.window;
 }
 
+// Accepted snapshots are not replaced by a partial crawl or inconclusive candidates.
+// Parse errors must fail closed instead of silently treating existing data as empty.
+const previous = JSON.parse(await readFile(outputJson, "utf8"));
 const payload = JSON.parse(await readFile(signalsPath, "utf8"));
 const signals = Array.isArray(payload?.results) ? payload.results : [];
 const curatedWindow = await loadWindowScript(new URL("../data/restaurants.js", import.meta.url));
@@ -184,6 +188,7 @@ const uniqueCandidates = candidates.filter((candidate, index, all) => all.findIn
 const menuSources = [];
 const specialSources = [];
 const failures = [];
+const candidateSources = [];
 let scannedPages = 0;
 
 function recordSource(candidate, details) {
@@ -201,6 +206,11 @@ function recordSource(candidate, details) {
     locationValidated: details.locationValidated ?? null,
     reviewState: "verified"
   };
+  const disposition = sourcePageDisposition(candidate, details);
+  if (disposition.state !== "verified") {
+    candidateSources.push({ ...record, verifiedAt: null, checkedAt: record.verifiedAt, reviewState: disposition.state, reason: disposition.reason });
+    return;
+  }
   (candidate.kind === "menu" ? menuSources : specialSources).push(record);
 }
 
@@ -277,8 +287,10 @@ const output = {
   failedPages: failures.length,
   candidateCount: uniqueCandidates.length,
   failures: failures.slice(0, 150),
-  menuSources: dedupe(menuSources),
-  specialSources: dedupe(specialSources)
+  candidateSources: dedupe(candidateSources),
+  retentionPolicy: "Prior accepted relationships retain original evidence clocks; failed or inconclusive refreshes are not removals. Explicit reviewed replacement or withdrawal is separate.",
+  menuSources: preserveAcceptedSources(previous.menuSources || [], dedupe(menuSources)),
+  specialSources: preserveAcceptedSources(previous.specialSources || [], dedupe(specialSources))
 };
 
 await writeFile(outputJson, JSON.stringify(output, null, 2));

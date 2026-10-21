@@ -1,0 +1,401 @@
+{
+  "version": 1,
+  "observedAt": "2026-10-20T22:59:00Z",
+  "scope": "Bounded residual review for northern/valley and western HRM restaurants. Research only; no production writes, no exhaustive coverage claim.",
+  "baseline": {
+    "reviewedAcceptedEntries": 47,
+    "catalogCount": 624,
+    "duplicateCheck": "No Labour Day Picnic, lurecaramel, The Fourth Lock, thefourthlock.ca, 12286 Peggy's Cove Road or 3104 Highway 2 identity found in the canonical catalog or existing accepted additions. Waverley Road matches were unrelated Dartmouth venues, not Waverley community evidence."
+  },
+  "recommendedCandidates": [
+    {
+      "id": "labour-day-picnic-cafe-glen-haven",
+      "name": "Labour Day Picnic Cafe",
+      "community": "Glen Haven",
+      "address": "12286 Peggy's Cove Road, Glen Haven, NS B3Z 2R6",
+      "website": "https://www.labourdaypicnic.com/",
+      "phone": "902-821-2133",
+      "category": "Cafe",
+      "cuisines": [],
+      "summary": "Glen Haven cafe serving espresso, house-made baked goods, light lunches and Lure Caramel Co. chocolates.",
+      "decision": "recommended_addition",
+      "ownershipEvidence": "NSCC's 2025 alumni-business guide explicitly names Kate Melvin and Gabe Beale as co-owners and frames the featured firms as local alumni businesses. The cafe and Lure Caramel Co. relationship is corroborated by NSCC and the related owner's own live store page. No corporate-register audit was performed.",
+      "ownershipConfidence": "high for locally owned cafe identity; no legal ownership audit",
+      "operationEvidence": "Related owner business Lure Caramel Co.'s freshly fetched homepage explicitly locates itself at Labour Day Picnic Cafe, gives the exact civic location, and publishes a weekly service schedule. NSCC's directly retrieved 2025 guide independently establishes lunch fare, baked goods, espresso, local co-owners and the cafe/Lure relationship. Discover Halifax directly confirms the exact address, phone and official domain.",
+      "previousHoldResolved": "The cafe homepage/menu still return empty readable bodies. That extraction limitation is no longer the sole location/service gap because the separate, corroborated owner site provides location and present service information. No access restriction was bypassed.",
+      "operatingStatus": "active",
+      "coordinates": null,
+      "openingHours": null,
+      "menuUrl": null,
+      "fieldCaveats": [
+        "Do not report the cafe's unreadable /menu page as a successfully parsed menu or publish item prices from it.",
+        "The Lure @ Cafe schedule is Monday-Tuesday closed, Wednesday-Friday 8-3 and Saturday-Sunday 9-4, but it may encompass retail/counter service. Do not normalize it as full kitchen service without checking the field semantics.",
+        "Phone and postal code are corroborated by Discover Halifax, not extracted from the cafe homepage.",
+        "No coordinates or exact seasonal dates supplied. No new-opening flag recommended."
+      ],
+      "sources": [
+        {
+          "url": "https://www.lurecaramel.com/",
+          "type": "restaurant_site",
+          "role": "Related owner site; exact cafe identity and civic address, live service schedule",
+          "retrievalMethod": "direct robots-aware HTTP GET; body saved and hashed",
+          "excerpt": "Lure Caramel Co. @ Labour Day Picnic Cafe",
+          "observation": "Owner homepage gives 12286 Peggy's Cove Road, Glen Haven, Nova Scotia and a weekly schedule beneath this heading. It sells handmade Nova Scotia caramels; product stock status is not a cafe-closure signal.",
+          "observedAt": "2026-10-20",
+          "status": "verified",
+          "httpStatus": 200,
+          "sha256": "fdc9b3efb3bdfb36ea1da61d5f706fcfc2876e7ba6a5860e00ba43cf72386dff",
+          "fetchedAt": "2026-10-20T22:58:25.400523+00:00"
+        },
+        {
+          "url": "https://www.nscc.ca/alumni/benefits-and-supports/shop-nscc/index.asp",
+          "type": "regional_review_source",
+          "role": "Named local co-owners, cafe/related business relationship and food-service scope",
+          "retrievalMethod": "direct robots-aware HTTP GET; body saved and hashed",
+          "excerpt": "Co-owned by alumni couple Kate Melvin",
+          "observation": "The 2025 Shop NSCC Alumni Gift Guide names Kate Melvin and Gabe Beale as co-owners of Labour Day Picnic Cafe in Glen Haven, and describes lunch fare, baked goods, espresso and Lure Caramel Co. chocolates.",
+          "observedAt": "2026-10-20",
+          "status": "verified",
+          "httpStatus": 200,
+          "sha256": "99735c40f907823e5d96febd0b1611a7c37a8e1b08c99a30f1cc5000af4bf2ff",
+          "fetchedAt": "2026-10-20T22:58:25.820529+00:00"
+        },
+        {
+          "url": "https://discoverhalifaxns.com/listings/labour-day-picnic-cafe/",
+          "type": "regional_review_source",
+          "role": "Exact address, postal code, phone, email and official website",
+          "retrievalMethod": "direct robots-aware HTTP GET; body saved and hashed",
+          "excerpt": "12286 Peggy's Cove Road",
+          "observation": "Fresh body contains cafe name, address, phone, official-site link and mailto. Prior search excerpt described food service, but this fetched page body does not; use direct NSCC text for that evidence.",
+          "observedAt": "2026-10-20",
+          "status": "verified",
+          "httpStatus": 200,
+          "sha256": "e149b1e97af7d6ae2f3eb2eff98def7f82d1e9d5ae0b79e58b26a5ab42006d04",
+          "fetchedAt": "2026-10-20T22:58:25.424250+00:00"
+        }
+      ],
+      "successfulSourceReceipts": [
+        {
+          "url": "https://www.lurecaramel.com/",
+          "fetchedAt": "2026-10-20T22:58:25.400523+00:00",
+          "httpStatus": 200,
+          "sha256": "fdc9b3efb3bdfb36ea1da61d5f706fcfc2876e7ba6a5860e00ba43cf72386dff"
+        },
+        {
+          "url": "https://www.nscc.ca/alumni/benefits-and-supports/shop-nscc/index.asp",
+          "fetchedAt": "2026-10-20T22:58:25.820529+00:00",
+          "httpStatus": 200,
+          "sha256": "99735c40f907823e5d96febd0b1611a7c37a8e1b08c99a30f1cc5000af4bf2ff"
+        },
+        {
+          "url": "https://discoverhalifaxns.com/listings/labour-day-picnic-cafe/",
+          "fetchedAt": "2026-10-20T22:58:25.424250+00:00",
+          "httpStatus": 200,
+          "sha256": "e149b1e97af7d6ae2f3eb2eff98def7f82d1e9d5ae0b79e58b26a5ab42006d04"
+        }
+      ],
+      "freshContentReceived": true
+    },
+    {
+      "id": "the-fourth-lock-fall-river",
+      "name": "The Fourth Lock",
+      "community": "Fall River",
+      "address": "3104 Highway 2, Fall River, NS B2T 1J5",
+      "website": "https://www.thefourthlock.ca/",
+      "phone": null,
+      "category": "Restaurant",
+      "cuisines": [],
+      "summary": "Fall River restaurant and bar offering dine-in and pickup, with seafood, pizza, burgers and other dinner dishes.",
+      "decision": "recommended_addition_with_dated_ownership_caveat",
+      "ownershipEvidence": "The Shubenacadie Canal Commission's location-specific November 23, 2022 interview identifies co-owner Jaro Schubert, his move to Fall River and founding the restaurant. Present-day first-party site and its 2026 menu continue the same restaurant identity. This establishes a local independent origin and continuing same-brand operation; it does not independently audit unchanged legal ownership in 2026.",
+      "ownershipConfidence": "medium-high; local co-owner interview is dated 2022",
+      "operationEvidence": "Current official homepage explicitly offers dine-in and pickup Wednesday-Sunday from 4:30pm, links a 2026 summer menu PDF, owner-linked Clover ordering and table reservations. Provincial tourism corroborates exact address and restaurant identity.",
+      "operatingStatus": "active",
+      "coordinates": {
+        "lat": 44.8107358,
+        "lon": -63.6078948
+      },
+      "openingHours": null,
+      "menuUrl": "https://www.thefourthlock.ca/_files/ugd/9ada1f_6c26fd8387e74fb8bc525f7654507433.pdf",
+      "fieldCaveats": [
+        "This is Fall River, not Waverley proper. Do not relabel it to fill the Waverley gap.",
+        "Owner homepage explicitly says closing hours depend on business volume and the kitchen usually stays open until 9pm. Do not turn 'usually' into a fixed daily closing time.",
+        "Menu PDF is the owner's currently linked 2026 Summer Menu; do not label its prices or seasonal dishes as a guaranteed October menu.",
+        "No named 2026 ownership-register confirmation obtained; preserve the 2022 provenance rather than claiming a fresh legal ownership audit.",
+        "One restaurant record only. The B&B at the same address is not an additional restaurant.",
+        "Phone withheld: visible homepage text 902-861-4454 conflicts with its own JSON-LD and malformed tel link 902-861-1334, also used by tourism. Do not choose one without resolution.",
+        "Coordinates come explicitly from the named business location in the fresh owner Wix SEO context and match its exact civic address; no coordinates were invented."
+      ],
+      "sources": [
+        {
+          "url": "https://www.thefourthlock.ca/",
+          "type": "restaurant_site",
+          "role": "Current dine-in/pickup service, phone, direct menu and booking links",
+          "retrievalMethod": "direct robots-aware HTTP GET; body saved and hashed",
+          "excerpt": "Dine-in and pick-up available",
+          "observation": "Contact section opens Wednesday-Sunday at 4:30pm, warns that closing time varies by demand, and supplies phone 902-861-4454.",
+          "observedAt": "2026-10-20",
+          "status": "verified",
+          "httpStatus": 200,
+          "sha256": "b5d568d4c27ef226ad9625647bd80f465465dcb36623824aa6e69cb56ec57cfe",
+          "fetchedAt": "2026-10-20T22:58:34.017209+00:00"
+        },
+        {
+          "url": "https://www.thefourthlock.ca/_files/ugd/9ada1f_6c26fd8387e74fb8bc525f7654507433.pdf",
+          "type": "menu",
+          "role": "Owner-linked readable menu and dated food-service evidence",
+          "retrievalMethod": "direct robots-aware HTTP GET; body saved and hashed",
+          "excerpt": "2026 SUMMER MENU WEB & SOCIAL",
+          "observation": "One-page owner-hosted menu lists fish and chips, seafood linguine, tacos, burgers, pizzas and dinner mains. No prices proposed for import.",
+          "observedAt": "2026-10-20",
+          "status": "verified",
+          "httpStatus": 200,
+          "sha256": "614fdd200d2ba2503ff8c86a3efad16667b9046194a3df11ca3631da94d9e6af",
+          "fetchedAt": "2026-10-20T22:58:33.960605+00:00"
+        },
+        {
+          "url": "https://www.shubenacadiecanal.ca/blog-content/2022/11/21/explore-the-waterway-date-night-at-the-fourth-lock",
+          "type": "regional_review_source",
+          "role": "Direct local co-owner interview",
+          "retrievalMethod": "direct robots-aware HTTP GET; body saved and hashed",
+          "excerpt": "For co-owner Jaro Schubert",
+          "observation": "November 23, 2022 tourism interview names the co-owner, describes his move to Fall River and the founding of this restaurant, and links the matching owner domain.",
+          "observedAt": "2026-10-20",
+          "status": "verified",
+          "httpStatus": 200,
+          "sha256": "e9e3b01b369b59db322c426bd091a495e782106473a9f83594e2fb2b6c9eab5f",
+          "fetchedAt": "2026-10-20T22:58:33.648380+00:00"
+        },
+        {
+          "url": "https://novascotia.com/listing/the-fourth-lock-bed-and-breakfast/",
+          "type": "regional_review_source",
+          "role": "Exact civic location and restaurant identity",
+          "retrievalMethod": "direct robots-aware HTTP GET; body saved and hashed",
+          "excerpt": "3104 Highway 2",
+          "observation": "Provincial tourism identifies The Fourth Lock Restaurant & Bed and Breakfast at 3104 Highway 2, Fall River, B2T 1J5 and links the matching owner site.",
+          "observedAt": "2026-10-20",
+          "status": "verified",
+          "httpStatus": 200,
+          "sha256": "9e93966dd7eafc2955db4210a2401c8201c7fa0ea4fb1b8aa2c028ec6dbc86ea",
+          "fetchedAt": "2026-10-20T22:58:40.404384+00:00"
+        }
+      ],
+      "successfulSourceReceipts": [
+        {
+          "url": "https://www.thefourthlock.ca/",
+          "fetchedAt": "2026-10-20T22:58:34.017209+00:00",
+          "httpStatus": 200,
+          "sha256": "b5d568d4c27ef226ad9625647bd80f465465dcb36623824aa6e69cb56ec57cfe"
+        },
+        {
+          "url": "https://www.thefourthlock.ca/_files/ugd/9ada1f_6c26fd8387e74fb8bc525f7654507433.pdf",
+          "fetchedAt": "2026-10-20T22:58:33.960605+00:00",
+          "httpStatus": 200,
+          "sha256": "614fdd200d2ba2503ff8c86a3efad16667b9046194a3df11ca3631da94d9e6af"
+        },
+        {
+          "url": "https://www.shubenacadiecanal.ca/blog-content/2022/11/21/explore-the-waterway-date-night-at-the-fourth-lock",
+          "fetchedAt": "2026-10-20T22:58:33.648380+00:00",
+          "httpStatus": 200,
+          "sha256": "e9e3b01b369b59db322c426bd091a495e782106473a9f83594e2fb2b6c9eab5f"
+        },
+        {
+          "url": "https://novascotia.com/listing/the-fourth-lock-bed-and-breakfast/",
+          "fetchedAt": "2026-10-20T22:58:40.404384+00:00",
+          "httpStatus": 200,
+          "sha256": "9e93966dd7eafc2955db4210a2401c8201c7fa0ea4fb1b8aa2c028ec6dbc86ea"
+        }
+      ],
+      "freshContentReceived": true,
+      "addressEvidence": "Fresh official LocalBusiness JSON-LD identifies 3104 Nova Scotia Trunk 2, Fall River, NS B2T 1J5, while the same owner Wix businessLocationFormatted says 3104 Highway 2, Fall River, NS, Canada. Provincial tourism independently corroborates 3104 Highway 2."
+    }
+  ],
+  "resolvedExclusionEvidence": [
+    {
+      "candidateGroup": "Firkin Hospitality Group concessions at Halifax Stanfield, Goffs",
+      "names": [
+        "The Pizza Box",
+        "Fine Company Gastropub",
+        "Connected Coffee",
+        "Firkin & Flyer",
+        "JJ's Burger Joint"
+      ],
+      "decision": "keep_out_of_local_independent_batch",
+      "reason": "The operator's own location page positively identifies the airport concepts as Firkin Hospitality Group operations. Its own corporate site presents a wider restaurant/franchise group, and an employer-controlled recruitment profile identifies Toronto as its base. Local food ingredients and Nova Scotia branding are not local-independent ownership proof.",
+      "sources": [
+        {
+          "url": "https://firkinhg.com/halifax-stanfield/",
+          "type": "owner",
+          "excerpt": "At YHZ we offer a wide variety of sit down and fast service options",
+          "observation": "Own operator page lists the five named airport concepts and their terminal locations."
+        },
+        {
+          "url": "https://firkinhg.com/",
+          "type": "owner",
+          "excerpt": "our franchise partners and their communities",
+          "observation": "Official group homepage links its broader restaurant brands and franchising program."
+        },
+        {
+          "url": "https://www.86network.com/employers/firkin-hospitality-group/about",
+          "type": "employer_profile",
+          "excerpt": "The Firkin Hospitality Group is a Toronto-based company",
+          "observation": "Employer profile describes Ontario operations and Halifax airport expansion."
+        }
+      ],
+      "fieldCaveats": [
+        "Do not infer exact opening or closure from the operator site's stale 'coming soon' copy for JJ's.",
+        "This is a scope disposition, not a closure finding or a proposal to change the global chain blocklist."
+      ]
+    },
+    {
+      "candidateGroup": "La Cocina Mexicana and Harbour Rocks, Halifax Stanfield",
+      "names": [
+        "La Cocina Mexicana",
+        "Harbour Rocks"
+      ],
+      "decision": "hold_nonlocal_operator_evidence",
+      "reason": "A current, dated recruitment post attributes both concepts to Firkin Hospitality Group, but the operator's inspected airport page omits these two names. Keep them unpublished in this independent batch; do not infer independent status from local branding.",
+      "sources": [
+        {
+          "url": "https://cornet-pigeon-jfgk.squarespace.com/job-board",
+          "type": "recruitment_partner",
+          "excerpt": "Date Posted: October 16, 2026",
+          "observation": "SEED job board reproduces Firkin's Host & Food Runner post for Goffs and says the group owns and operates the airport concepts, including La Cocina and Harbour Rocks."
+        },
+        {
+          "url": "https://www.86network.com/employers/firkin-hospitality-group/about",
+          "type": "employer_profile",
+          "observation": "Employer-controlled older profile also names La Cocina in the airport expansion; no fresh owner-controlled location entry found for Harbour Rocks."
+        }
+      ]
+    }
+  ],
+  "heldCandidates": [
+    {
+      "name": "Reid's Restaurant & Bakery",
+      "community": "Middle Musquodoboit",
+      "decision": "continue_exact_address_and_current_owner_operation_hold",
+      "newFinding": "RANS has a restaurant-specific, first-person family-business description and lists 105 Elm Drive, whereas the local valley directory says Elm Street. Its contact phone also differs. No current location-specific first-party service page or current inspection record was established.",
+      "sources": [
+        "https://rans.ca/restaurants/reids-restaurant-and-bakery/",
+        "https://musquodoboitvalley.ca/reids-restaurant-bakery/"
+      ],
+      "nextEvidenceNeeded": "Current owner or government inspection evidence tying the active restaurant to an unambiguous civic address. Do not select Street versus Drive by majority vote."
+    },
+    {
+      "name": "River Oaks Golf Club restaurant",
+      "community": "Meaghers Grant",
+      "decision": "continue_current_operator_and_kitchen_location_hold",
+      "newFinding": "Current official staff page names Graeme Burke as general manager, Andrew Isenor as head golf professional, and Dalton Sampson as superintendent; none is identified as owner. The co-located Clubhouse 24/7 site's River Oaks address independently supports 3909 NS-357, but it does not tie the public kitchen to that civic address conclusively. The prior 3856 versus 3909 conflict remains.",
+      "sources": [
+        "https://www.riveroaksgolfclub.org/our-team",
+        "https://www.riveroaksgolfclub.org/menu",
+        "https://www.clubhouse247golf.com/"
+      ],
+      "nextEvidenceNeeded": "Owner-confirmed restaurant civic address and current independent food-service operator. Do not promote a manager to beneficial owner."
+    },
+    {
+      "name": "Finer Diner",
+      "community": "Hacketts Cove",
+      "address": "9976 Peggys Cove Road, Hacketts Cove, NS",
+      "decision": "continue_current_ownership_hold",
+      "newFinding": "Reopened the official home/about content; current reservations and dining are visible, but no current owner identified. 2026 visitor reviews name Roman while 2007 reporting names the original founders. No authoritative bridge between them was found.",
+      "sources": [
+        "https://www.finerdiner.ca/",
+        "https://www.finerdiner.ca/about",
+        "https://www.thecoast.ca/news-opinion/finer-dining-960942/"
+      ],
+      "nextEvidenceNeeded": "Contemporary owner or authoritative owner interview. Do not import unrelated US businesses called Finer Diner, which dominated some broad search results."
+    },
+    {
+      "name": "The Baker's Apron",
+      "community": "Hatchet Lake",
+      "address": "2287 Prospect Road, Hatchet Lake, NS",
+      "decision": "continue_ownership_and_food_service_scope_hold",
+      "newFinding": "Current official bakery page supplies scratch-made baked products and the same civic location. It does not establish local ownership or clarify prepared-meal public service versus bakery/frozen retail enough to resolve the existing hold.",
+      "sources": [
+        "https://bakersapron.ca/"
+      ],
+      "nextEvidenceNeeded": "Owner identity/local operation and public ready-to-eat meal or cafe service evidence."
+    },
+    {
+      "name": "Emileo's Snack Bar",
+      "community": "Shad Bay",
+      "address": "3702 Prospect Road, Shad Bay, NS",
+      "decision": "continue_current_ownership_and_dated_operation_hold",
+      "newFinding": "The owner-style Wix site still links a menu image explicitly named September 2022. Directory/legal business labels and visitor comments do not independently establish current local ownership.",
+      "sources": [
+        "https://gfeniyanos.wixsite.com/emileossnackbar"
+      ],
+      "nextEvidenceNeeded": "Contemporary first-party operation and owner evidence; no closure conclusion."
+    },
+    {
+      "name": "Holt's Take Out & Cornerstore",
+      "community": "Hatchet Lake",
+      "address": "2290 Prospect Road, Hatchet Lake, NS",
+      "decision": "hold_primary_identity_and_operation",
+      "newFinding": "Restaurantji calls it local/family-owned, but that is a review-aggregation summary. Allbiz names an owner yet also includes manifestly unreliable contact names (fictional character names), so it is not ownership evidence. No readable first-party source was verified.",
+      "sources": [
+        "https://www.restaurantji.com/ns/hatchet-lake/holts-take-out-and-general-store-/",
+        "https://www.allbiz.ca/holts-take-out_4m-902-852-2466"
+      ],
+      "nextEvidenceNeeded": "Owner-controlled exact identity, current food service and ownership confirmation. Do not import all-day general-store hours as kitchen hours."
+    },
+    {
+      "name": "Encore and Oliver's Gastropub at Inn on the Lake",
+      "community": "Fall River",
+      "address": "3009 Highway 2, Fall River, NS B2T 1J5",
+      "decision": "hold_current_local_operator_reconciliation",
+      "newFinding": "Owner's site establishes exact location, two dining-room names, a May 2026 Mother's Day dining offer, and independent operation effective April 1, 2025. Its property-history page attributes the inn to Ron and Susan Nelson; current contact names different managers and a 2026 guest reports an ownership change. The guest report is not authoritative proof of a sale, but current local ownership should be reconciled before promoting a historical attribution.",
+      "sources": [
+        "https://www.innonthelake.com/the-inn",
+        "https://www.innonthelake.com/reserve-a-room",
+        "https://www.innonthelake.com/events/2017/1/23/valentines-package-starting-at-289-with-whirlpool-tub-nhwey-8fams",
+        "https://novascotia.com/listing/inn-on-the-lake/"
+      ],
+      "nextEvidenceNeeded": "Contemporary owner/operator statement, and a decision whether the two dining areas are one restaurant identity or genuinely distinct operations. Do not double count the inn."
+    }
+  ],
+  "remainingGeographicGaps": [
+    "Waverley proper: search still returns Fall River venues or Dartmouth's Waverley Road. Neither establishes a Waverley-proper addition or zero-restaurant count.",
+    "Goffs: airport concessions positively tied to a wider Ontario operator are unsuitable for this local-independent batch; broader off-airport inventory remains unfinished.",
+    "Musquodoboit Valley: no automatic additions cleared. Reid's and River Oaks remain high-priority evidence gaps.",
+    "Prospect/Terence Bay and Bayside: this bounded pass did not resolve all held operators and is not exhaustive."
+  ],
+  "sourceFailures": [
+    {
+      "url": "https://www.labourdaypicnic.com/",
+      "result": "No readable body returned by web reader",
+      "handling": "No closure inference. Separately discovered related owner site used with institutional corroboration."
+    },
+    {
+      "url": "https://www.labourdaypicnic.com/menu",
+      "result": "No readable body returned by web reader",
+      "handling": "Menu field intentionally withheld."
+    },
+    {
+      "url": "https://www.labourdaypicnic.com/upcoming-events",
+      "result": "No readable body returned by web reader",
+      "handling": "No events imported."
+    },
+    {
+      "url": "https://www.thefourthlock.ca/",
+      "target": "Owner-linked OpenTable booking URL",
+      "result": "Web reader internal error",
+      "handling": "Did not retry or rely on availability claims."
+    },
+    {
+      "url": "https://www.clover.com/online-ordering/TheFourthLock",
+      "result": "Title-only client-rendered body",
+      "handling": "Retain as observed owner link only; menu proof comes from official PDF."
+    }
+  ],
+  "safetyAndQualityNotes": [
+    "No Facebook or Instagram HTML scraping. No access-denial workaround, private account access or outreach.",
+    "No use of a negative national-chain blocklist result as independent/local ownership proof.",
+    "No guessed coordinates: Fourth Lock coordinates are explicit owner business-location data. No inferred normalized hours or menu prices imported.",
+    "Research artifacts only; parent reviewer should apply project-specific admission rules before production integration.",
+    "Excerpts are bounded; observations are paraphrases with explicit limitations."
+  ],
+  "fieldEvidenceLedger": "data/reviewed-regional-enrichment.json"
+}

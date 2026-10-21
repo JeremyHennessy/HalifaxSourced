@@ -1,27 +1,28 @@
 window.HALIFAX_THUMBNAIL_CANDIDATES = {
   "version": 1,
-  "generatedAt": "2026-10-06T04:12:47.434Z",
+  "generatedAt": "2026-10-20T23:03:07.766Z",
   "fetchOfficialPages": false,
   "pageLimit": 120,
   "pagesPerRestaurant": 3,
   "counts": {
-    "restaurants": 554,
-    "thumbnailCandidates": 2424,
-    "restaurantsWithApprovedThumbnail": 6,
-    "restaurantsWithAnyCandidate": 196,
-    "restaurantsMissingApprovedThumbnail": 548,
-    "restaurantsMissingAnyCandidate": 358,
+    "restaurants": 626,
+    "thumbnailCandidates": 2395,
+    "restaurantsWithApprovedThumbnail": 9,
+    "restaurantsWithAnyCandidate": 194,
+    "restaurantsMissingApprovedThumbnail": 617,
+    "restaurantsMissingAnyCandidate": 432,
     "sourceKindCounts": {
-      "approved_restaurant_media": 6,
-      "retained_media_reference": 84,
-      "official_page_thumbnail_candidate": 2235,
+      "approved_restaurant_media": 9,
+      "retained_media_reference": 82,
+      "official_page_thumbnail_candidate": 2204,
       "official_feed_media": 48,
       "public_campaign_menu_image": 40,
-      "directory_source_image": 11
+      "directory_source_image": 11,
+      "verified_open_license_research": 1
     },
     "reviewStateCounts": {
-      "approved": 6,
-      "candidate_review": 2345,
+      "approved": 9,
+      "candidate_review": 2313,
       "source_check": 56,
       "rejected": 17
     },
@@ -54,7 +55,7 @@ window.HALIFAX_THUMBNAIL_CANDIDATES = {
       "attribution": "Msact, CC BY-SA 4.0, via Wikimedia Commons",
       "alt": "The stone exterior of Henry House at 1222 Barrington Street in Halifax",
       "confidence": "approved_exact_restaurant_id",
-      "observedAt": "2026-10-06T04:12:47.434Z",
+      "observedAt": "2026-10-20T23:03:07.766Z",
       "publishedAt": null,
       "title": null,
       "category": null,
@@ -93,7 +94,7 @@ window.HALIFAX_THUMBNAIL_CANDIDATES = {
       "attribution": "Nicole Bratt, CC BY-SA 2.0, via Wikimedia Commons",
       "alt": "Look Ho Ho restaurant sign at 6420 Bayers Road in Halifax",
       "confidence": "approved_exact_restaurant_id",
-      "observedAt": "2026-10-06T04:12:47.434Z",
+      "observedAt": "2026-10-20T23:03:07.766Z",
       "publishedAt": null,
       "title": null,
       "category": null,
@@ -102,6 +103,45 @@ window.HALIFAX_THUMBNAIL_CANDIDATES = {
       "sourceType": "licensed",
       "creator": "Nicole Bratt",
       "license": "CC BY-SA 2.0",
+      "qualityFlags": [],
+      "reviewPriority": 100,
+      "promotionReviewState": "approved"
+    },
+    {
+      "id": "thumb-59054348400633ec46",
+      "restaurantId": "osm-way-671922221-mckelvie-s",
+      "restaurantName": "McKelvie's",
+      "thumbnailUrl": "./assets/restaurants/mckelvies-exterior.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:1679_Bedford_Row.jpg",
+      "postUrl": null,
+      "pageUrl": null,
+      "platform": null,
+      "sourceKind": "approved_restaurant_media",
+      "extractionMethod": "approved_media_manifest",
+      "width": null,
+      "height": null,
+      "imageProbe": null,
+      "imageHost": null,
+      "sourceHost": "commons.wikimedia.org",
+      "officialHosts": [],
+      "sourceHostValidation": null,
+      "reviewState": "approved",
+      "rightsStatus": "production_approved",
+      "permission": "licensed",
+      "permissionConfirmed": true,
+      "rightsBasis": "CC BY-SA 4.0; Credit Properpostman, link CC BY-SA 4.0, source and capture date; Wikimedia resized version, otherwise unchanged. Share-alike applies to adaptations.",
+      "attribution": "Properpostman, via Wikimedia Commons",
+      "alt": "McKelvie’s restaurant, Bedford Row side of 1680 Lower Water Street, photographed April 2023",
+      "confidence": "approved_exact_restaurant_id",
+      "observedAt": "2026-10-20T23:03:07.766Z",
+      "publishedAt": null,
+      "title": null,
+      "category": null,
+      "eligibleForProduction": true,
+      "url": "assets/restaurants/mckelvies-exterior.jpg",
+      "sourceType": "licensed",
+      "creator": "Properpostman",
+      "license": "CC BY-SA 4.0",
       "qualityFlags": [],
       "reviewPriority": 100,
       "promotionReviewState": "approved"
@@ -132,7 +172,7 @@ window.HALIFAX_THUMBNAIL_CANDIDATES = {
       "attribution": "Coastal Elite, CC BY-SA 2.0, via Wikimedia Commons",
       "alt": "Sicilian Pizza at Blowers and Grafton Streets in Halifax",
       "confidence": "approved_exact_restaurant_id",
-      "observedAt": "2026-10-06T04:12:47.434Z",
+      "observedAt": "2026-10-20T23:03:07.766Z",
       "publishedAt": null,
       "title": null,
       "category": null,
@@ -171,7 +211,7 @@ window.HALIFAX_THUMBNAIL_CANDIDATES = {
       "attribution": "JeffNS, CC BY-SA 4.0, via Wikimedia Commons",
       "alt": "The historic building housing The Narrows Public House at 2720 Gottingen Street in winter",
       "confidence": "approved_exact_restaurant_id",
-      "observedAt": "2026-10-06T04:12:47.434Z",
+      "observedAt": "2026-10-20T23:03:07.766Z",
       "publishedAt": null,
       "title": null,
       "category": null,
@@ -210,12 +250,90 @@ window.HALIFAX_THUMBNAIL_CANDIDATES = {
       "attribution": "Tony Webster, CC BY-SA 2.0, via Wikimedia Commons",
       "alt": "The Wooden Monkey restaurant at the Dartmouth Ferry Terminal on Halifax Harbour",
       "confidence": "approved_exact_restaurant_id",
-      "observedAt": "2026-10-06T04:12:47.434Z",
+      "observedAt": "2026-10-20T23:03:07.766Z",
       "publishedAt": null,
       "title": null,
       "category": null,
       "eligibleForProduction": true,
       "url": "assets/restaurants/wooden-monkey-dartmouth.jpg",
+      "sourceType": "licensed",
+      "creator": "Tony Webster",
+      "license": "CC BY-SA 2.0",
+      "qualityFlags": [],
+      "reviewPriority": 100,
+      "promotionReviewState": "approved"
+    },
+    {
+      "id": "thumb-282eb990d8e1315a18",
+      "restaurantId": "osm-node-886747513-trident-booksellers-and-cafe",
+      "restaurantName": "Trident Booksellers and Cafe",
+      "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/DSC07401_%287172975247%29.jpg/960px-DSC07401_%287172975247%29.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:DSC07401_(7172975247).jpg",
+      "postUrl": null,
+      "pageUrl": null,
+      "platform": null,
+      "sourceKind": "approved_restaurant_media",
+      "extractionMethod": "approved_media_manifest",
+      "width": null,
+      "height": null,
+      "imageProbe": null,
+      "imageHost": "thumb.wikimedia.org",
+      "sourceHost": "commons.wikimedia.org",
+      "officialHosts": [],
+      "sourceHostValidation": null,
+      "reviewState": "approved",
+      "rightsStatus": "production_approved",
+      "permission": "licensed",
+      "permissionConfirmed": true,
+      "rightsBasis": "Commons verified CC BY-SA 2.0 (7 July 2019); Wikimedia-hosted 960px preview of coffee photographed June 2012 at Trident; historical photo.",
+      "attribution": "Nicole Bratt, CC BY-SA 2.0, via Wikimedia Commons (2012)",
+      "alt": "Coffee photographed at Trident Booksellers & Cafe on Hollis Street in Halifax in 2012",
+      "confidence": "approved_exact_restaurant_id",
+      "observedAt": "2026-10-20T23:03:07.766Z",
+      "publishedAt": null,
+      "title": null,
+      "category": null,
+      "eligibleForProduction": true,
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/DSC07401_%287172975247%29.jpg/960px-DSC07401_%287172975247%29.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+      "sourceType": "licensed",
+      "creator": "Nicole Bratt",
+      "license": "CC BY-SA 2.0",
+      "qualityFlags": [],
+      "reviewPriority": 100,
+      "promotionReviewState": "approved"
+    },
+    {
+      "id": "thumb-c5933bdcab3cb4897e",
+      "restaurantId": "osm-way-96322798-wooden-monkey",
+      "restaurantName": "Wooden Monkey",
+      "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/Wooden_Monkey_Restaurant%2C_Halifax%2C_Nova_Scotia_%2825274647981%29.jpg/960px-Wooden_Monkey_Restaurant%2C_Halifax%2C_Nova_Scotia_%2825274647981%29.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wooden_Monkey_Restaurant,_Halifax,_Nova_Scotia_(25274647981).jpg",
+      "postUrl": null,
+      "pageUrl": null,
+      "platform": null,
+      "sourceKind": "approved_restaurant_media",
+      "extractionMethod": "approved_media_manifest",
+      "width": null,
+      "height": null,
+      "imageProbe": null,
+      "imageHost": "thumb.wikimedia.org",
+      "sourceHost": "commons.wikimedia.org",
+      "officialHosts": [],
+      "sourceHostValidation": null,
+      "reviewState": "approved",
+      "rightsStatus": "production_approved",
+      "permission": "licensed",
+      "permissionConfirmed": true,
+      "rightsBasis": "Commons verified CC BY-SA 2.0 (20 March 2016); Wikimedia-hosted 960px preview of September 2015 exterior; historical photo, not a claim of current appearance.",
+      "attribution": "Tony Webster, CC BY-SA 2.0, via Wikimedia Commons (2015)",
+      "alt": "The Wooden Monkey Halifax location at 1707 Grafton Street, photographed in 2015",
+      "confidence": "approved_exact_restaurant_id",
+      "observedAt": "2026-10-20T23:03:07.766Z",
+      "publishedAt": null,
+      "title": null,
+      "category": null,
+      "eligibleForProduction": true,
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/Wooden_Monkey_Restaurant%2C_Halifax%2C_Nova_Scotia_%2825274647981%29.jpg/960px-Wooden_Monkey_Restaurant%2C_Halifax%2C_Nova_Scotia_%2825274647981%29.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
       "sourceType": "licensed",
       "creator": "Tony Webster",
       "license": "CC BY-SA 2.0",
@@ -249,7 +367,7 @@ window.HALIFAX_THUMBNAIL_CANDIDATES = {
       "attribution": "Coastal Elite, CC BY-SA 2.0, via Wikimedia Commons",
       "alt": "Your Father's Moustache at 5686 Spring Garden Road in Halifax",
       "confidence": "approved_exact_restaurant_id",
-      "observedAt": "2026-10-06T04:12:47.434Z",
+      "observedAt": "2026-10-20T23:03:07.766Z",
       "publishedAt": null,
       "title": null,
       "category": null,
@@ -1588,391 +1706,6 @@ window.HALIFAX_THUMBNAIL_CANDIDATES = {
       "rightsBasis": null,
       "attribution": null,
       "alt": "Bedford Beer Garden thumbnail candidate",
-      "confidence": "same_host_official_page_image",
-      "observedAt": "2026-09-02T17:39:07.870Z",
-      "publishedAt": null,
-      "title": null,
-      "category": null,
-      "eligibleForProduction": false,
-      "qualityFlags": [],
-      "reviewPriority": 58,
-      "promotionReviewState": "needs_visual_review"
-    },
-    {
-      "id": "thumb-5b5407d7d60b15c50e",
-      "restaurantId": "osm-node-1116387649-bicycle-thief",
-      "restaurantName": "Bicycle Thief",
-      "thumbnailUrl": "https://bicyclethief.ca/wp-content/uploads/2017/09/upper-old-castle.jpg",
-      "sourceUrl": "https://bicyclethief.ca/",
-      "postUrl": null,
-      "pageUrl": "https://bicyclethief.ca/",
-      "platform": null,
-      "sourceKind": "official_page_thumbnail_candidate",
-      "extractionMethod": "html_img_content",
-      "width": 791,
-      "height": 402,
-      "imageProbe": null,
-      "imageHost": "bicyclethief.ca",
-      "sourceHost": "bicyclethief.ca",
-      "officialHosts": [],
-      "sourceHostValidation": null,
-      "reviewState": "candidate_review",
-      "rightsStatus": "requires_rights_review",
-      "permission": null,
-      "permissionConfirmed": false,
-      "rightsBasis": null,
-      "attribution": null,
-      "alt": "Bicycle Thief thumbnail candidate",
-      "confidence": "same_host_official_page_image",
-      "observedAt": "2026-09-02T17:39:07.870Z",
-      "publishedAt": null,
-      "title": null,
-      "category": null,
-      "eligibleForProduction": false,
-      "qualityFlags": [],
-      "reviewPriority": 58,
-      "promotionReviewState": "needs_visual_review"
-    },
-    {
-      "id": "thumb-9063c3206c3928a29d",
-      "restaurantId": "osm-node-1116387649-bicycle-thief",
-      "restaurantName": "Bicycle Thief",
-      "thumbnailUrl": "https://bicyclethief.ca/wp-content/uploads/2017/09/upper-number-kids.jpg",
-      "sourceUrl": "https://bicyclethief.ca/",
-      "postUrl": null,
-      "pageUrl": "https://bicyclethief.ca/",
-      "platform": null,
-      "sourceKind": "official_page_thumbnail_candidate",
-      "extractionMethod": "html_img_content",
-      "width": 791,
-      "height": 402,
-      "imageProbe": null,
-      "imageHost": "bicyclethief.ca",
-      "sourceHost": "bicyclethief.ca",
-      "officialHosts": [],
-      "sourceHostValidation": null,
-      "reviewState": "candidate_review",
-      "rightsStatus": "requires_rights_review",
-      "permission": null,
-      "permissionConfirmed": false,
-      "rightsBasis": null,
-      "attribution": null,
-      "alt": "Bicycle Thief thumbnail candidate",
-      "confidence": "same_host_official_page_image",
-      "observedAt": "2026-09-02T17:39:07.870Z",
-      "publishedAt": null,
-      "title": null,
-      "category": null,
-      "eligibleForProduction": false,
-      "qualityFlags": [],
-      "reviewPriority": 58,
-      "promotionReviewState": "needs_visual_review"
-    },
-    {
-      "id": "thumb-7c984e54a89e05c7e4",
-      "restaurantId": "osm-node-1116387649-bicycle-thief",
-      "restaurantName": "Bicycle Thief",
-      "thumbnailUrl": "https://bicyclethief.ca/wp-content/uploads/2017/09/upper-looking-at-bike.jpg",
-      "sourceUrl": "https://bicyclethief.ca/",
-      "postUrl": null,
-      "pageUrl": "https://bicyclethief.ca/",
-      "platform": null,
-      "sourceKind": "official_page_thumbnail_candidate",
-      "extractionMethod": "html_img_content",
-      "width": 791,
-      "height": 402,
-      "imageProbe": null,
-      "imageHost": "bicyclethief.ca",
-      "sourceHost": "bicyclethief.ca",
-      "officialHosts": [],
-      "sourceHostValidation": null,
-      "reviewState": "candidate_review",
-      "rightsStatus": "requires_rights_review",
-      "permission": null,
-      "permissionConfirmed": false,
-      "rightsBasis": null,
-      "attribution": null,
-      "alt": "Bicycle Thief thumbnail candidate",
-      "confidence": "same_host_official_page_image",
-      "observedAt": "2026-09-02T17:39:07.870Z",
-      "publishedAt": null,
-      "title": null,
-      "category": null,
-      "eligibleForProduction": false,
-      "qualityFlags": [],
-      "reviewPriority": 58,
-      "promotionReviewState": "needs_visual_review"
-    },
-    {
-      "id": "thumb-97c1fe76d51024d1d1",
-      "restaurantId": "osm-node-1116387649-bicycle-thief",
-      "restaurantName": "Bicycle Thief",
-      "thumbnailUrl": "https://bicyclethief.ca/wp-content/uploads/2017/09/upper-group-on-bikes.jpg",
-      "sourceUrl": "https://bicyclethief.ca/",
-      "postUrl": null,
-      "pageUrl": "https://bicyclethief.ca/",
-      "platform": null,
-      "sourceKind": "official_page_thumbnail_candidate",
-      "extractionMethod": "html_img_content",
-      "width": 791,
-      "height": 402,
-      "imageProbe": null,
-      "imageHost": "bicyclethief.ca",
-      "sourceHost": "bicyclethief.ca",
-      "officialHosts": [],
-      "sourceHostValidation": null,
-      "reviewState": "candidate_review",
-      "rightsStatus": "requires_rights_review",
-      "permission": null,
-      "permissionConfirmed": false,
-      "rightsBasis": null,
-      "attribution": null,
-      "alt": "Bicycle Thief thumbnail candidate",
-      "confidence": "same_host_official_page_image",
-      "observedAt": "2026-09-02T17:39:07.870Z",
-      "publishedAt": null,
-      "title": null,
-      "category": null,
-      "eligibleForProduction": false,
-      "qualityFlags": [],
-      "reviewPriority": 58,
-      "promotionReviewState": "needs_visual_review"
-    },
-    {
-      "id": "thumb-be51ff6c89296fbb09",
-      "restaurantId": "osm-node-1116387649-bicycle-thief",
-      "restaurantName": "Bicycle Thief",
-      "thumbnailUrl": "https://bicyclethief.ca/wp-content/uploads/2017/09/upper-big-gate.jpg",
-      "sourceUrl": "https://bicyclethief.ca/",
-      "postUrl": null,
-      "pageUrl": "https://bicyclethief.ca/",
-      "platform": null,
-      "sourceKind": "official_page_thumbnail_candidate",
-      "extractionMethod": "html_img_content",
-      "width": 791,
-      "height": 402,
-      "imageProbe": null,
-      "imageHost": "bicyclethief.ca",
-      "sourceHost": "bicyclethief.ca",
-      "officialHosts": [],
-      "sourceHostValidation": null,
-      "reviewState": "candidate_review",
-      "rightsStatus": "requires_rights_review",
-      "permission": null,
-      "permissionConfirmed": false,
-      "rightsBasis": null,
-      "attribution": null,
-      "alt": "Bicycle Thief thumbnail candidate",
-      "confidence": "same_host_official_page_image",
-      "observedAt": "2026-09-02T17:39:07.870Z",
-      "publishedAt": null,
-      "title": null,
-      "category": null,
-      "eligibleForProduction": false,
-      "qualityFlags": [],
-      "reviewPriority": 58,
-      "promotionReviewState": "needs_visual_review"
-    },
-    {
-      "id": "thumb-e3d6039c5e0fd9839a",
-      "restaurantId": "osm-node-1116387649-bicycle-thief",
-      "restaurantName": "Bicycle Thief",
-      "thumbnailUrl": "https://bicyclethief.ca/wp-content/uploads/2017/09/upper-at-the-beach.jpg",
-      "sourceUrl": "https://bicyclethief.ca/",
-      "postUrl": null,
-      "pageUrl": "https://bicyclethief.ca/",
-      "platform": null,
-      "sourceKind": "official_page_thumbnail_candidate",
-      "extractionMethod": "html_img_content",
-      "width": 791,
-      "height": 402,
-      "imageProbe": null,
-      "imageHost": "bicyclethief.ca",
-      "sourceHost": "bicyclethief.ca",
-      "officialHosts": [],
-      "sourceHostValidation": null,
-      "reviewState": "candidate_review",
-      "rightsStatus": "requires_rights_review",
-      "permission": null,
-      "permissionConfirmed": false,
-      "rightsBasis": null,
-      "attribution": null,
-      "alt": "Bicycle Thief thumbnail candidate",
-      "confidence": "same_host_official_page_image",
-      "observedAt": "2026-09-02T17:39:07.870Z",
-      "publishedAt": null,
-      "title": null,
-      "category": null,
-      "eligibleForProduction": false,
-      "qualityFlags": [],
-      "reviewPriority": 58,
-      "promotionReviewState": "needs_visual_review"
-    },
-    {
-      "id": "thumb-3cb330575e1e2ad7f3",
-      "restaurantId": "osm-node-1116387649-bicycle-thief",
-      "restaurantName": "Bicycle Thief",
-      "thumbnailUrl": "https://bicyclethief.ca/wp-content/uploads/2017/09/ut-north-american-food-italian-soul.png",
-      "sourceUrl": "https://bicyclethief.ca/",
-      "postUrl": null,
-      "pageUrl": "https://bicyclethief.ca/",
-      "platform": null,
-      "sourceKind": "official_page_thumbnail_candidate",
-      "extractionMethod": "html_img_content",
-      "width": 791,
-      "height": 402,
-      "imageProbe": null,
-      "imageHost": "bicyclethief.ca",
-      "sourceHost": "bicyclethief.ca",
-      "officialHosts": [],
-      "sourceHostValidation": null,
-      "reviewState": "candidate_review",
-      "rightsStatus": "requires_rights_review",
-      "permission": null,
-      "permissionConfirmed": false,
-      "rightsBasis": null,
-      "attribution": null,
-      "alt": "Bicycle Thief thumbnail candidate",
-      "confidence": "same_host_official_page_image",
-      "observedAt": "2026-09-02T17:39:07.870Z",
-      "publishedAt": null,
-      "title": null,
-      "category": null,
-      "eligibleForProduction": false,
-      "qualityFlags": [],
-      "reviewPriority": 58,
-      "promotionReviewState": "needs_visual_review"
-    },
-    {
-      "id": "thumb-7ad74d9c0e8fc10f16",
-      "restaurantId": "osm-node-1116387649-bicycle-thief",
-      "restaurantName": "Bicycle Thief",
-      "thumbnailUrl": "https://bicyclethief.ca/wp-content/themes/enfold-child/img/twitter-bicycle.png",
-      "sourceUrl": "https://bicyclethief.ca/reservations/",
-      "postUrl": null,
-      "pageUrl": "https://bicyclethief.ca/reservations/",
-      "platform": null,
-      "sourceKind": "official_page_thumbnail_candidate",
-      "extractionMethod": "html_img_content",
-      "width": null,
-      "height": null,
-      "imageProbe": null,
-      "imageHost": "bicyclethief.ca",
-      "sourceHost": "bicyclethief.ca",
-      "officialHosts": [],
-      "sourceHostValidation": null,
-      "reviewState": "candidate_review",
-      "rightsStatus": "requires_rights_review",
-      "permission": null,
-      "permissionConfirmed": false,
-      "rightsBasis": null,
-      "attribution": null,
-      "alt": "Bicycle Thief thumbnail candidate",
-      "confidence": "same_host_official_page_image",
-      "observedAt": "2026-09-02T17:39:07.870Z",
-      "publishedAt": null,
-      "title": null,
-      "category": null,
-      "eligibleForProduction": false,
-      "qualityFlags": [],
-      "reviewPriority": 58,
-      "promotionReviewState": "needs_visual_review"
-    },
-    {
-      "id": "thumb-c0f37ddd88dadf4217",
-      "restaurantId": "osm-node-1116387649-bicycle-thief",
-      "restaurantName": "Bicycle Thief",
-      "thumbnailUrl": "https://bicyclethief.ca/wp-content/themes/enfold-child/img/facebook-bicycle.png",
-      "sourceUrl": "https://bicyclethief.ca/reservations/",
-      "postUrl": null,
-      "pageUrl": "https://bicyclethief.ca/reservations/",
-      "platform": null,
-      "sourceKind": "official_page_thumbnail_candidate",
-      "extractionMethod": "html_img_content",
-      "width": null,
-      "height": null,
-      "imageProbe": null,
-      "imageHost": "bicyclethief.ca",
-      "sourceHost": "bicyclethief.ca",
-      "officialHosts": [],
-      "sourceHostValidation": null,
-      "reviewState": "candidate_review",
-      "rightsStatus": "requires_rights_review",
-      "permission": null,
-      "permissionConfirmed": false,
-      "rightsBasis": null,
-      "attribution": null,
-      "alt": "Bicycle Thief thumbnail candidate",
-      "confidence": "same_host_official_page_image",
-      "observedAt": "2026-09-02T17:39:07.870Z",
-      "publishedAt": null,
-      "title": null,
-      "category": null,
-      "eligibleForProduction": false,
-      "qualityFlags": [],
-      "reviewPriority": 58,
-      "promotionReviewState": "needs_visual_review"
-    },
-    {
-      "id": "thumb-43f188ff20b5b16a24",
-      "restaurantId": "osm-node-1116387649-bicycle-thief",
-      "restaurantName": "Bicycle Thief",
-      "thumbnailUrl": "https://bicyclethief.ca/wp-content/themes/enfold-child/img/instagram-bicycle.png",
-      "sourceUrl": "https://bicyclethief.ca/reservations/",
-      "postUrl": null,
-      "pageUrl": "https://bicyclethief.ca/reservations/",
-      "platform": null,
-      "sourceKind": "official_page_thumbnail_candidate",
-      "extractionMethod": "html_img_content",
-      "width": null,
-      "height": null,
-      "imageProbe": null,
-      "imageHost": "bicyclethief.ca",
-      "sourceHost": "bicyclethief.ca",
-      "officialHosts": [],
-      "sourceHostValidation": null,
-      "reviewState": "candidate_review",
-      "rightsStatus": "requires_rights_review",
-      "permission": null,
-      "permissionConfirmed": false,
-      "rightsBasis": null,
-      "attribution": null,
-      "alt": "Bicycle Thief thumbnail candidate",
-      "confidence": "same_host_official_page_image",
-      "observedAt": "2026-09-02T17:39:07.870Z",
-      "publishedAt": null,
-      "title": null,
-      "category": null,
-      "eligibleForProduction": false,
-      "qualityFlags": [],
-      "reviewPriority": 58,
-      "promotionReviewState": "needs_visual_review"
-    },
-    {
-      "id": "thumb-f1258d8ae1b3726c5e",
-      "restaurantId": "osm-node-1116387649-bicycle-thief",
-      "restaurantName": "Bicycle Thief",
-      "thumbnailUrl": "https://bicyclethief.ca/reservations/img/menu-big.gif",
-      "sourceUrl": "https://bicyclethief.ca/reservations/",
-      "postUrl": null,
-      "pageUrl": "https://bicyclethief.ca/reservations/",
-      "platform": null,
-      "sourceKind": "official_page_thumbnail_candidate",
-      "extractionMethod": "css_background_image",
-      "width": null,
-      "height": null,
-      "imageProbe": null,
-      "imageHost": "bicyclethief.ca",
-      "sourceHost": "bicyclethief.ca",
-      "officialHosts": [],
-      "sourceHostValidation": null,
-      "reviewState": "candidate_review",
-      "rightsStatus": "requires_rights_review",
-      "permission": null,
-      "permissionConfirmed": false,
-      "rightsBasis": null,
-      "attribution": null,
-      "alt": "Bicycle Thief thumbnail candidate",
       "confidence": "same_host_official_page_image",
       "observedAt": "2026-09-02T17:39:07.870Z",
       "publishedAt": null,
@@ -18329,41 +18062,6 @@ window.HALIFAX_THUMBNAIL_CANDIDATES = {
       "promotionReviewState": "needs_visual_review"
     },
     {
-      "id": "thumb-c0a732c84d825ed3dc",
-      "restaurantId": "osm-node-14139904501-battery-park-beer-bar-and-eatery",
-      "restaurantName": "Battery Park Beer Bar & Eatery",
-      "thumbnailUrl": "https://images.squarespace-cdn.com/content/v1/55917d39e4b0b8f716f2fe05/1609902059282-UVICAXQUWMUHHNKV9GR7/Battery+Park+%28Feb+26+16%29+%2820+of+28%29.jpg",
-      "sourceUrl": "https://batterypark.ca/",
-      "postUrl": "https://batterypark.ca/",
-      "pageUrl": null,
-      "platform": "official_page",
-      "sourceKind": "official_page_thumbnail_candidate",
-      "extractionMethod": "declared_post_media",
-      "width": null,
-      "height": null,
-      "imageProbe": null,
-      "imageHost": "images.squarespace-cdn.com",
-      "sourceHost": "batterypark.ca",
-      "officialHosts": [],
-      "sourceHostValidation": null,
-      "reviewState": "candidate_review",
-      "rightsStatus": "requires_rights_review",
-      "permission": null,
-      "permissionConfirmed": false,
-      "rightsBasis": null,
-      "attribution": null,
-      "alt": "Battery Park Beer Bar & Eatery: Battery Park",
-      "confidence": "official_page_source_media",
-      "observedAt": "2026-09-04T13:34:31.450Z",
-      "publishedAt": null,
-      "title": "Battery Park",
-      "category": "specials",
-      "eligibleForProduction": false,
-      "qualityFlags": [],
-      "reviewPriority": 54,
-      "promotionReviewState": "needs_visual_review"
-    },
-    {
       "id": "thumb-a74c9e54cdeaebadaf",
       "restaurantId": "osm-way-83552117-bedford-beer-garden",
       "restaurantName": "Bedford Beer Garden",
@@ -18393,216 +18091,6 @@ window.HALIFAX_THUMBNAIL_CANDIDATES = {
       "publishedAt": null,
       "title": "Bedford Basin Beer Garden | Waterfront Beer Garden in Bedford Highway, NS",
       "category": "events",
-      "eligibleForProduction": false,
-      "qualityFlags": [],
-      "reviewPriority": 54,
-      "promotionReviewState": "needs_visual_review"
-    },
-    {
-      "id": "thumb-57e6929dfec56ddf3f",
-      "restaurantId": "osm-node-1116387649-bicycle-thief",
-      "restaurantName": "Bicycle Thief",
-      "thumbnailUrl": "https://bertossigroup.com/in-the-news/canadas100best.png",
-      "sourceUrl": "https://bicyclethief.ca/contact-us-reservations/",
-      "postUrl": "https://bicyclethief.ca/contact-us-reservations/",
-      "pageUrl": null,
-      "platform": "official_page",
-      "sourceKind": "official_page_thumbnail_candidate",
-      "extractionMethod": "declared_post_media",
-      "width": null,
-      "height": null,
-      "imageProbe": null,
-      "imageHost": "bertossigroup.com",
-      "sourceHost": "bicyclethief.ca",
-      "officialHosts": [],
-      "sourceHostValidation": null,
-      "reviewState": "candidate_review",
-      "rightsStatus": "requires_rights_review",
-      "permission": null,
-      "permissionConfirmed": false,
-      "rightsBasis": null,
-      "attribution": null,
-      "alt": "Bicycle Thief: Contact Us / Reservations - Bicycle Thief",
-      "confidence": "official_page_source_media",
-      "observedAt": "2026-09-04T13:34:33.980Z",
-      "publishedAt": null,
-      "title": "Contact Us / Reservations - Bicycle Thief",
-      "category": "menu",
-      "eligibleForProduction": false,
-      "qualityFlags": [],
-      "reviewPriority": 54,
-      "promotionReviewState": "needs_visual_review"
-    },
-    {
-      "id": "thumb-223f0de36f4d9796bd",
-      "restaurantId": "osm-node-1116387649-bicycle-thief",
-      "restaurantName": "Bicycle Thief",
-      "thumbnailUrl": "https://bicyclethief.ca/wp-content/uploads/2021/07/OpeningPatios-3-845x684.jpg",
-      "sourceUrl": "https://bicyclethief.ca/reservations/",
-      "postUrl": "https://bicyclethief.ca/reservations/",
-      "pageUrl": null,
-      "platform": "official_page",
-      "sourceKind": "official_page_thumbnail_candidate",
-      "extractionMethod": "declared_post_media",
-      "width": null,
-      "height": null,
-      "imageProbe": null,
-      "imageHost": "bicyclethief.ca",
-      "sourceHost": "bicyclethief.ca",
-      "officialHosts": [],
-      "sourceHostValidation": null,
-      "reviewState": "candidate_review",
-      "rightsStatus": "requires_rights_review",
-      "permission": null,
-      "permissionConfirmed": false,
-      "rightsBasis": null,
-      "attribution": null,
-      "alt": "Bicycle Thief: Reservations - Bicycle Thief",
-      "confidence": "official_page_source_media",
-      "observedAt": "2026-09-04T13:34:33.761Z",
-      "publishedAt": null,
-      "title": "Reservations - Bicycle Thief",
-      "category": "menu",
-      "eligibleForProduction": false,
-      "qualityFlags": [],
-      "reviewPriority": 54,
-      "promotionReviewState": "needs_visual_review"
-    },
-    {
-      "id": "thumb-41d07bcd842cfc2c99",
-      "restaurantId": "osm-node-1116387649-bicycle-thief",
-      "restaurantName": "Bicycle Thief",
-      "thumbnailUrl": "https://bicyclethief.ca/wp-content/uploads/2017/09/upper-thief.jpg",
-      "sourceUrl": "https://bicyclethief.ca/",
-      "postUrl": "https://bicyclethief.ca/",
-      "pageUrl": null,
-      "platform": "official_page",
-      "sourceKind": "official_page_thumbnail_candidate",
-      "extractionMethod": "declared_post_media",
-      "width": null,
-      "height": null,
-      "imageProbe": null,
-      "imageHost": "bicyclethief.ca",
-      "sourceHost": "bicyclethief.ca",
-      "officialHosts": [],
-      "sourceHostValidation": null,
-      "reviewState": "candidate_review",
-      "rightsStatus": "requires_rights_review",
-      "permission": null,
-      "permissionConfirmed": false,
-      "rightsBasis": null,
-      "attribution": null,
-      "alt": "Bicycle Thief: Home - Bicycle Thief",
-      "confidence": "official_page_source_media",
-      "observedAt": "2026-09-04T13:34:33.587Z",
-      "publishedAt": null,
-      "title": "Home - Bicycle Thief",
-      "category": "specials",
-      "eligibleForProduction": false,
-      "qualityFlags": [],
-      "reviewPriority": 54,
-      "promotionReviewState": "needs_visual_review"
-    },
-    {
-      "id": "thumb-b648c1a5bd4da5fb9b",
-      "restaurantId": "osm-node-1116387649-bicycle-thief",
-      "restaurantName": "Bicycle Thief",
-      "thumbnailUrl": "https://bertossigroup.com/in-the-news/Best-of-Halifax-Generic-Gold-Black.png",
-      "sourceUrl": "https://bicyclethief.ca/reservations/",
-      "postUrl": null,
-      "pageUrl": "https://bicyclethief.ca/reservations/",
-      "platform": null,
-      "sourceKind": "official_page_thumbnail_candidate",
-      "extractionMethod": "html_img_content",
-      "width": null,
-      "height": null,
-      "imageProbe": null,
-      "imageHost": "bertossigroup.com",
-      "sourceHost": "bicyclethief.ca",
-      "officialHosts": [],
-      "sourceHostValidation": null,
-      "reviewState": "candidate_review",
-      "rightsStatus": "requires_rights_review",
-      "permission": null,
-      "permissionConfirmed": false,
-      "rightsBasis": null,
-      "attribution": null,
-      "alt": "Bicycle Thief thumbnail candidate",
-      "confidence": "official_page_declared_remote_image",
-      "observedAt": "2026-09-02T17:39:07.870Z",
-      "publishedAt": null,
-      "title": null,
-      "category": null,
-      "eligibleForProduction": false,
-      "qualityFlags": [],
-      "reviewPriority": 54,
-      "promotionReviewState": "needs_visual_review"
-    },
-    {
-      "id": "thumb-6cfb0d0fcc567f37fd",
-      "restaurantId": "osm-node-1116387649-bicycle-thief",
-      "restaurantName": "Bicycle Thief",
-      "thumbnailUrl": "https://bertossigroup.com/in-the-news/Best-of-Halifax-Generic-Silver-Black.png",
-      "sourceUrl": "https://bicyclethief.ca/reservations/",
-      "postUrl": null,
-      "pageUrl": "https://bicyclethief.ca/reservations/",
-      "platform": null,
-      "sourceKind": "official_page_thumbnail_candidate",
-      "extractionMethod": "html_img_content",
-      "width": null,
-      "height": null,
-      "imageProbe": null,
-      "imageHost": "bertossigroup.com",
-      "sourceHost": "bicyclethief.ca",
-      "officialHosts": [],
-      "sourceHostValidation": null,
-      "reviewState": "candidate_review",
-      "rightsStatus": "requires_rights_review",
-      "permission": null,
-      "permissionConfirmed": false,
-      "rightsBasis": null,
-      "attribution": null,
-      "alt": "Bicycle Thief thumbnail candidate",
-      "confidence": "official_page_declared_remote_image",
-      "observedAt": "2026-09-02T17:39:07.870Z",
-      "publishedAt": null,
-      "title": null,
-      "category": null,
-      "eligibleForProduction": false,
-      "qualityFlags": [],
-      "reviewPriority": 54,
-      "promotionReviewState": "needs_visual_review"
-    },
-    {
-      "id": "thumb-8a722ce2d0a3723be7",
-      "restaurantId": "osm-node-1116387649-bicycle-thief",
-      "restaurantName": "Bicycle Thief",
-      "thumbnailUrl": "https://bertossigroup.com/in-the-news/Best-of-Halifax-Generic-Bronze-Black.png",
-      "sourceUrl": "https://bicyclethief.ca/reservations/",
-      "postUrl": null,
-      "pageUrl": "https://bicyclethief.ca/reservations/",
-      "platform": null,
-      "sourceKind": "official_page_thumbnail_candidate",
-      "extractionMethod": "html_img_content",
-      "width": null,
-      "height": null,
-      "imageProbe": null,
-      "imageHost": "bertossigroup.com",
-      "sourceHost": "bicyclethief.ca",
-      "officialHosts": [],
-      "sourceHostValidation": null,
-      "reviewState": "candidate_review",
-      "rightsStatus": "requires_rights_review",
-      "permission": null,
-      "permissionConfirmed": false,
-      "rightsBasis": null,
-      "attribution": null,
-      "alt": "Bicycle Thief thumbnail candidate",
-      "confidence": "official_page_declared_remote_image",
-      "observedAt": "2026-09-02T17:39:07.870Z",
-      "publishedAt": null,
-      "title": null,
-      "category": null,
       "eligibleForProduction": false,
       "qualityFlags": [],
       "reviewPriority": 54,
@@ -49542,48 +49030,6 @@ window.HALIFAX_THUMBNAIL_CANDIDATES = {
       "promotionReviewState": "needs_visual_review"
     },
     {
-      "id": "thumb-0869bf5c7def1a88e1",
-      "restaurantId": "osm-node-14139904501-battery-park-beer-bar-and-eatery",
-      "restaurantName": "Battery Park Beer Bar & Eatery",
-      "thumbnailUrl": "https://images.squarespace-cdn.com/content/v1/55917d39e4b0b8f716f2fe05/1609902059282-UVICAXQUWMUHHNKV9GR7/Battery+Park+%28Feb+26+16%29+%2820+of+28%29.jpg",
-      "sourceUrl": "https://batterypark.ca/",
-      "postUrl": null,
-      "pageUrl": null,
-      "platform": null,
-      "sourceKind": "retained_media_reference",
-      "extractionMethod": "retained_public_reference",
-      "width": null,
-      "height": null,
-      "imageProbe": null,
-      "imageHost": "images.squarespace-cdn.com",
-      "sourceHost": "batterypark.ca",
-      "officialHosts": [],
-      "sourceHostValidation": null,
-      "reviewState": "candidate_review",
-      "rightsStatus": "requires_rights_review",
-      "permission": "unknown",
-      "permissionConfirmed": false,
-      "rightsBasis": "Public source reference retained; specific licence or owner grant not evidenced in the reviewed record.",
-      "attribution": "Battery Park Beer Bar & Eatery, official website",
-      "alt": "Battery Park Beer Bar & Eatery thumbnail candidate",
-      "confidence": "unverified_media_reference",
-      "observedAt": null,
-      "publishedAt": null,
-      "title": null,
-      "category": null,
-      "eligibleForProduction": false,
-      "url": "https://images.squarespace-cdn.com/content/v1/55917d39e4b0b8f716f2fe05/1609902059282-UVICAXQUWMUHHNKV9GR7/Battery+Park+%28Feb+26+16%29+%2820+of+28%29.jpg",
-      "sourceType": "public_reference",
-      "creator": "Battery Park Beer Bar & Eatery",
-      "license": null,
-      "rightsState": "unverified",
-      "renderable": false,
-      "recordKind": "source_reference",
-      "qualityFlags": [],
-      "reviewPriority": 50,
-      "promotionReviewState": "needs_visual_review"
-    },
-    {
       "id": "thumb-c6c93d098127dd2f97",
       "restaurantId": "osm-way-83552117-bedford-beer-garden",
       "restaurantName": "Bedford Beer Garden",
@@ -49617,48 +49063,6 @@ window.HALIFAX_THUMBNAIL_CANDIDATES = {
       "url": "https://images.squarespace-cdn.com/content/v1/68293776be1eab027773881e/17f12e90-23e4-4cc2-b711-bfa61b1b5211/Bedford+Beer+Garden+Container",
       "sourceType": "public_reference",
       "creator": "Bedford Beer Garden",
-      "license": null,
-      "rightsState": "unverified",
-      "renderable": false,
-      "recordKind": "source_reference",
-      "qualityFlags": [],
-      "reviewPriority": 50,
-      "promotionReviewState": "needs_visual_review"
-    },
-    {
-      "id": "thumb-50bf7eda09dcdcd76d",
-      "restaurantId": "osm-node-1116387649-bicycle-thief",
-      "restaurantName": "Bicycle Thief",
-      "thumbnailUrl": "https://bicyclethief.ca/wp-content/uploads/2017/09/upper-thief.jpg",
-      "sourceUrl": "https://bicyclethief.ca/",
-      "postUrl": null,
-      "pageUrl": null,
-      "platform": null,
-      "sourceKind": "retained_media_reference",
-      "extractionMethod": "retained_public_reference",
-      "width": null,
-      "height": null,
-      "imageProbe": null,
-      "imageHost": "bicyclethief.ca",
-      "sourceHost": "bicyclethief.ca",
-      "officialHosts": [],
-      "sourceHostValidation": null,
-      "reviewState": "candidate_review",
-      "rightsStatus": "requires_rights_review",
-      "permission": "unknown",
-      "permissionConfirmed": false,
-      "rightsBasis": "Public source reference retained; specific licence or owner grant not evidenced in the reviewed record.",
-      "attribution": "Bicycle Thief, official website",
-      "alt": "Bicycle Thief official website dining room image",
-      "confidence": "unverified_media_reference",
-      "observedAt": null,
-      "publishedAt": null,
-      "title": null,
-      "category": null,
-      "eligibleForProduction": false,
-      "url": "https://bicyclethief.ca/wp-content/uploads/2017/09/upper-thief.jpg",
-      "sourceType": "public_reference",
-      "creator": "Bicycle Thief",
       "license": null,
       "rightsState": "unverified",
       "renderable": false,
@@ -52564,6 +51968,41 @@ window.HALIFAX_THUMBNAIL_CANDIDATES = {
       "rightsState": "unverified",
       "renderable": false,
       "recordKind": "source_reference",
+      "qualityFlags": [],
+      "reviewPriority": 50,
+      "promotionReviewState": "needs_visual_review"
+    },
+    {
+      "id": "thumb-e76b9ad71fab0be2f5",
+      "restaurantId": "osm-way-671922221-mckelvie-s",
+      "restaurantName": "McKelvie’s",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/1679_Bedford_Row.jpg/960px-1679_Bedford_Row.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:1679_Bedford_Row.jpg",
+      "postUrl": null,
+      "pageUrl": null,
+      "platform": null,
+      "sourceKind": "verified_open_license_research",
+      "extractionMethod": "file_specific_license_and_visual_review",
+      "width": null,
+      "height": null,
+      "imageProbe": null,
+      "imageHost": "upload.wikimedia.org",
+      "sourceHost": "commons.wikimedia.org",
+      "officialHosts": [],
+      "sourceHostValidation": null,
+      "reviewState": "candidate_review",
+      "rightsStatus": "requires_rights_review",
+      "permission": null,
+      "permissionConfirmed": false,
+      "rightsBasis": null,
+      "attribution": null,
+      "alt": "Restaurant thumbnail",
+      "confidence": "verified_exact_location_dated_photo",
+      "observedAt": "2026-10-20T23:02:00Z",
+      "publishedAt": null,
+      "title": null,
+      "category": null,
+      "eligibleForProduction": false,
       "qualityFlags": [],
       "reviewPriority": 50,
       "promotionReviewState": "needs_visual_review"
@@ -56217,450 +55656,6 @@ window.HALIFAX_THUMBNAIL_CANDIDATES = {
       "eligibleForProduction": false,
       "qualityFlags": [
         "placeholder_image"
-      ],
-      "reviewPriority": 23,
-      "promotionReviewState": "low_quality_metadata"
-    },
-    {
-      "id": "thumb-42bfd965efa2e545dc",
-      "restaurantId": "osm-node-1116387649-bicycle-thief",
-      "restaurantName": "Bicycle Thief",
-      "thumbnailUrl": "https://bicyclethief.ca/wp-content/uploads/2017/09/lower-seniors.jpg",
-      "sourceUrl": "https://bicyclethief.ca/",
-      "postUrl": null,
-      "pageUrl": "https://bicyclethief.ca/",
-      "platform": null,
-      "sourceKind": "official_page_thumbnail_candidate",
-      "extractionMethod": "html_img_content",
-      "width": 791,
-      "height": 260,
-      "imageProbe": null,
-      "imageHost": "bicyclethief.ca",
-      "sourceHost": "bicyclethief.ca",
-      "officialHosts": [],
-      "sourceHostValidation": null,
-      "reviewState": "candidate_review",
-      "rightsStatus": "requires_rights_review",
-      "permission": null,
-      "permissionConfirmed": false,
-      "rightsBasis": null,
-      "attribution": null,
-      "alt": "Bicycle Thief thumbnail candidate",
-      "confidence": "same_host_official_page_image",
-      "observedAt": "2026-09-02T17:39:07.870Z",
-      "publishedAt": null,
-      "title": null,
-      "category": null,
-      "eligibleForProduction": false,
-      "qualityFlags": [
-        "awkward_thumbnail_aspect"
-      ],
-      "reviewPriority": 23,
-      "promotionReviewState": "low_quality_metadata"
-    },
-    {
-      "id": "thumb-0d9d26e002866712af",
-      "restaurantId": "osm-node-1116387649-bicycle-thief",
-      "restaurantName": "Bicycle Thief",
-      "thumbnailUrl": "https://bicyclethief.ca/wp-content/uploads/2017/09/lower-house-wine-door.jpg",
-      "sourceUrl": "https://bicyclethief.ca/",
-      "postUrl": null,
-      "pageUrl": "https://bicyclethief.ca/",
-      "platform": null,
-      "sourceKind": "official_page_thumbnail_candidate",
-      "extractionMethod": "html_img_content",
-      "width": 791,
-      "height": 260,
-      "imageProbe": null,
-      "imageHost": "bicyclethief.ca",
-      "sourceHost": "bicyclethief.ca",
-      "officialHosts": [],
-      "sourceHostValidation": null,
-      "reviewState": "candidate_review",
-      "rightsStatus": "requires_rights_review",
-      "permission": null,
-      "permissionConfirmed": false,
-      "rightsBasis": null,
-      "attribution": null,
-      "alt": "Bicycle Thief thumbnail candidate",
-      "confidence": "same_host_official_page_image",
-      "observedAt": "2026-09-02T17:39:07.870Z",
-      "publishedAt": null,
-      "title": null,
-      "category": null,
-      "eligibleForProduction": false,
-      "qualityFlags": [
-        "awkward_thumbnail_aspect"
-      ],
-      "reviewPriority": 23,
-      "promotionReviewState": "low_quality_metadata"
-    },
-    {
-      "id": "thumb-07da458d6ce5219b35",
-      "restaurantId": "osm-node-1116387649-bicycle-thief",
-      "restaurantName": "Bicycle Thief",
-      "thumbnailUrl": "https://bicyclethief.ca/wp-content/uploads/2017/09/lower-eating-and-farming.jpg",
-      "sourceUrl": "https://bicyclethief.ca/",
-      "postUrl": null,
-      "pageUrl": "https://bicyclethief.ca/",
-      "platform": null,
-      "sourceKind": "official_page_thumbnail_candidate",
-      "extractionMethod": "html_img_content",
-      "width": 791,
-      "height": 260,
-      "imageProbe": null,
-      "imageHost": "bicyclethief.ca",
-      "sourceHost": "bicyclethief.ca",
-      "officialHosts": [],
-      "sourceHostValidation": null,
-      "reviewState": "candidate_review",
-      "rightsStatus": "requires_rights_review",
-      "permission": null,
-      "permissionConfirmed": false,
-      "rightsBasis": null,
-      "attribution": null,
-      "alt": "Bicycle Thief thumbnail candidate",
-      "confidence": "same_host_official_page_image",
-      "observedAt": "2026-09-02T17:39:07.870Z",
-      "publishedAt": null,
-      "title": null,
-      "category": null,
-      "eligibleForProduction": false,
-      "qualityFlags": [
-        "awkward_thumbnail_aspect"
-      ],
-      "reviewPriority": 23,
-      "promotionReviewState": "low_quality_metadata"
-    },
-    {
-      "id": "thumb-bdd22ffadec2174096",
-      "restaurantId": "osm-node-1116387649-bicycle-thief",
-      "restaurantName": "Bicycle Thief",
-      "thumbnailUrl": "https://bicyclethief.ca/wp-content/uploads/2017/09/lower-bucket-and-staring.jpg",
-      "sourceUrl": "https://bicyclethief.ca/",
-      "postUrl": null,
-      "pageUrl": "https://bicyclethief.ca/",
-      "platform": null,
-      "sourceKind": "official_page_thumbnail_candidate",
-      "extractionMethod": "html_img_content",
-      "width": 791,
-      "height": 260,
-      "imageProbe": null,
-      "imageHost": "bicyclethief.ca",
-      "sourceHost": "bicyclethief.ca",
-      "officialHosts": [],
-      "sourceHostValidation": null,
-      "reviewState": "candidate_review",
-      "rightsStatus": "requires_rights_review",
-      "permission": null,
-      "permissionConfirmed": false,
-      "rightsBasis": null,
-      "attribution": null,
-      "alt": "Bicycle Thief thumbnail candidate",
-      "confidence": "same_host_official_page_image",
-      "observedAt": "2026-09-02T17:39:07.870Z",
-      "publishedAt": null,
-      "title": null,
-      "category": null,
-      "eligibleForProduction": false,
-      "qualityFlags": [
-        "awkward_thumbnail_aspect"
-      ],
-      "reviewPriority": 23,
-      "promotionReviewState": "low_quality_metadata"
-    },
-    {
-      "id": "thumb-47c0e315ea90ddac99",
-      "restaurantId": "osm-node-1116387649-bicycle-thief",
-      "restaurantName": "Bicycle Thief",
-      "thumbnailUrl": "https://bicyclethief.ca/wp-content/uploads/2017/09/lower-bike-kid.jpg",
-      "sourceUrl": "https://bicyclethief.ca/",
-      "postUrl": null,
-      "pageUrl": "https://bicyclethief.ca/",
-      "platform": null,
-      "sourceKind": "official_page_thumbnail_candidate",
-      "extractionMethod": "html_img_content",
-      "width": 791,
-      "height": 260,
-      "imageProbe": null,
-      "imageHost": "bicyclethief.ca",
-      "sourceHost": "bicyclethief.ca",
-      "officialHosts": [],
-      "sourceHostValidation": null,
-      "reviewState": "candidate_review",
-      "rightsStatus": "requires_rights_review",
-      "permission": null,
-      "permissionConfirmed": false,
-      "rightsBasis": null,
-      "attribution": null,
-      "alt": "Bicycle Thief thumbnail candidate",
-      "confidence": "same_host_official_page_image",
-      "observedAt": "2026-09-02T17:39:07.870Z",
-      "publishedAt": null,
-      "title": null,
-      "category": null,
-      "eligibleForProduction": false,
-      "qualityFlags": [
-        "awkward_thumbnail_aspect"
-      ],
-      "reviewPriority": 23,
-      "promotionReviewState": "low_quality_metadata"
-    },
-    {
-      "id": "thumb-bf9e13eeb687bde5b9",
-      "restaurantId": "osm-node-1116387649-bicycle-thief",
-      "restaurantName": "Bicycle Thief",
-      "thumbnailUrl": "https://bicyclethief.ca/wp-content/uploads/2017/09/lower-bike-and-shop.jpg",
-      "sourceUrl": "https://bicyclethief.ca/",
-      "postUrl": null,
-      "pageUrl": "https://bicyclethief.ca/",
-      "platform": null,
-      "sourceKind": "official_page_thumbnail_candidate",
-      "extractionMethod": "html_img_content",
-      "width": 791,
-      "height": 260,
-      "imageProbe": null,
-      "imageHost": "bicyclethief.ca",
-      "sourceHost": "bicyclethief.ca",
-      "officialHosts": [],
-      "sourceHostValidation": null,
-      "reviewState": "candidate_review",
-      "rightsStatus": "requires_rights_review",
-      "permission": null,
-      "permissionConfirmed": false,
-      "rightsBasis": null,
-      "attribution": null,
-      "alt": "Bicycle Thief thumbnail candidate",
-      "confidence": "same_host_official_page_image",
-      "observedAt": "2026-09-02T17:39:07.870Z",
-      "publishedAt": null,
-      "title": null,
-      "category": null,
-      "eligibleForProduction": false,
-      "qualityFlags": [
-        "awkward_thumbnail_aspect"
-      ],
-      "reviewPriority": 23,
-      "promotionReviewState": "low_quality_metadata"
-    },
-    {
-      "id": "thumb-ebafee5bdee233be68",
-      "restaurantId": "osm-node-1116387649-bicycle-thief",
-      "restaurantName": "Bicycle Thief",
-      "thumbnailUrl": "https://bicyclethief.ca/wp-content/uploads/2017/09/lower-bike-and-farming.jpg",
-      "sourceUrl": "https://bicyclethief.ca/",
-      "postUrl": null,
-      "pageUrl": "https://bicyclethief.ca/",
-      "platform": null,
-      "sourceKind": "official_page_thumbnail_candidate",
-      "extractionMethod": "html_img_content",
-      "width": 791,
-      "height": 260,
-      "imageProbe": null,
-      "imageHost": "bicyclethief.ca",
-      "sourceHost": "bicyclethief.ca",
-      "officialHosts": [],
-      "sourceHostValidation": null,
-      "reviewState": "candidate_review",
-      "rightsStatus": "requires_rights_review",
-      "permission": null,
-      "permissionConfirmed": false,
-      "rightsBasis": null,
-      "attribution": null,
-      "alt": "Bicycle Thief thumbnail candidate",
-      "confidence": "same_host_official_page_image",
-      "observedAt": "2026-09-02T17:39:07.870Z",
-      "publishedAt": null,
-      "title": null,
-      "category": null,
-      "eligibleForProduction": false,
-      "qualityFlags": [
-        "awkward_thumbnail_aspect"
-      ],
-      "reviewPriority": 23,
-      "promotionReviewState": "low_quality_metadata"
-    },
-    {
-      "id": "thumb-48bb4d961bb35c51e6",
-      "restaurantId": "osm-node-1116387649-bicycle-thief",
-      "restaurantName": "Bicycle Thief",
-      "thumbnailUrl": "https://bicyclethief.ca/wp-content/uploads/2017/09/home-logo.png",
-      "sourceUrl": "https://bicyclethief.ca/",
-      "postUrl": null,
-      "pageUrl": "https://bicyclethief.ca/",
-      "platform": null,
-      "sourceKind": "official_page_thumbnail_candidate",
-      "extractionMethod": "html_link_image",
-      "width": null,
-      "height": null,
-      "imageProbe": null,
-      "imageHost": "bicyclethief.ca",
-      "sourceHost": "bicyclethief.ca",
-      "officialHosts": [],
-      "sourceHostValidation": null,
-      "reviewState": "candidate_review",
-      "rightsStatus": "requires_rights_review",
-      "permission": null,
-      "permissionConfirmed": false,
-      "rightsBasis": null,
-      "attribution": null,
-      "alt": "Bicycle Thief thumbnail candidate",
-      "confidence": "same_host_official_page_image",
-      "observedAt": "2026-09-02T17:39:07.870Z",
-      "publishedAt": null,
-      "title": null,
-      "category": null,
-      "eligibleForProduction": false,
-      "qualityFlags": [
-        "logo_candidate"
-      ],
-      "reviewPriority": 23,
-      "promotionReviewState": "low_quality_metadata"
-    },
-    {
-      "id": "thumb-2e2bbfa55181244663",
-      "restaurantId": "osm-node-1116387649-bicycle-thief",
-      "restaurantName": "Bicycle Thief",
-      "thumbnailUrl": "https://bicyclethief.ca/wp-content/uploads/2025/10/logo-ViaCondotti.png",
-      "sourceUrl": "https://bicyclethief.ca/",
-      "postUrl": null,
-      "pageUrl": "https://bicyclethief.ca/",
-      "platform": null,
-      "sourceKind": "official_page_thumbnail_candidate",
-      "extractionMethod": "html_img_content",
-      "width": null,
-      "height": null,
-      "imageProbe": null,
-      "imageHost": "bicyclethief.ca",
-      "sourceHost": "bicyclethief.ca",
-      "officialHosts": [],
-      "sourceHostValidation": null,
-      "reviewState": "candidate_review",
-      "rightsStatus": "requires_rights_review",
-      "permission": null,
-      "permissionConfirmed": false,
-      "rightsBasis": null,
-      "attribution": null,
-      "alt": "Bicycle Thief thumbnail candidate",
-      "confidence": "same_host_official_page_image",
-      "observedAt": "2026-09-02T17:39:07.870Z",
-      "publishedAt": null,
-      "title": null,
-      "category": null,
-      "eligibleForProduction": false,
-      "qualityFlags": [
-        "logo_candidate"
-      ],
-      "reviewPriority": 23,
-      "promotionReviewState": "low_quality_metadata"
-    },
-    {
-      "id": "thumb-9de8e1f7a976b262f3",
-      "restaurantId": "osm-node-1116387649-bicycle-thief",
-      "restaurantName": "Bicycle Thief",
-      "thumbnailUrl": "https://bicyclethief.ca/wp-content/themes/enfold-child/img/restaurants/logo-bt.png",
-      "sourceUrl": "https://bicyclethief.ca/",
-      "postUrl": null,
-      "pageUrl": "https://bicyclethief.ca/",
-      "platform": null,
-      "sourceKind": "official_page_thumbnail_candidate",
-      "extractionMethod": "html_img_content",
-      "width": null,
-      "height": null,
-      "imageProbe": null,
-      "imageHost": "bicyclethief.ca",
-      "sourceHost": "bicyclethief.ca",
-      "officialHosts": [],
-      "sourceHostValidation": null,
-      "reviewState": "candidate_review",
-      "rightsStatus": "requires_rights_review",
-      "permission": null,
-      "permissionConfirmed": false,
-      "rightsBasis": null,
-      "attribution": null,
-      "alt": "Bicycle Thief thumbnail candidate",
-      "confidence": "same_host_official_page_image",
-      "observedAt": "2026-09-02T17:39:07.870Z",
-      "publishedAt": null,
-      "title": null,
-      "category": null,
-      "eligibleForProduction": false,
-      "qualityFlags": [
-        "logo_candidate"
-      ],
-      "reviewPriority": 23,
-      "promotionReviewState": "low_quality_metadata"
-    },
-    {
-      "id": "thumb-be5279bc2c9c3e0a00",
-      "restaurantId": "osm-node-1116387649-bicycle-thief",
-      "restaurantName": "Bicycle Thief",
-      "thumbnailUrl": "https://bicyclethief.ca/wp-content/themes/enfold-child/img/restaurants/logo-amano.png",
-      "sourceUrl": "https://bicyclethief.ca/reservations/",
-      "postUrl": null,
-      "pageUrl": "https://bicyclethief.ca/reservations/",
-      "platform": null,
-      "sourceKind": "official_page_thumbnail_candidate",
-      "extractionMethod": "html_img_content",
-      "width": null,
-      "height": null,
-      "imageProbe": null,
-      "imageHost": "bicyclethief.ca",
-      "sourceHost": "bicyclethief.ca",
-      "officialHosts": [],
-      "sourceHostValidation": null,
-      "reviewState": "candidate_review",
-      "rightsStatus": "requires_rights_review",
-      "permission": null,
-      "permissionConfirmed": false,
-      "rightsBasis": null,
-      "attribution": null,
-      "alt": "Bicycle Thief thumbnail candidate",
-      "confidence": "same_host_official_page_image",
-      "observedAt": "2026-09-02T17:39:07.870Z",
-      "publishedAt": null,
-      "title": null,
-      "category": null,
-      "eligibleForProduction": false,
-      "qualityFlags": [
-        "logo_candidate"
-      ],
-      "reviewPriority": 23,
-      "promotionReviewState": "low_quality_metadata"
-    },
-    {
-      "id": "thumb-24df0f35edcee13c12",
-      "restaurantId": "osm-node-1116387649-bicycle-thief",
-      "restaurantName": "Bicycle Thief",
-      "thumbnailUrl": "https://bicyclethief.ca/wp-content/themes/enfold-child/img/restaurants/logo-ilmercato.png",
-      "sourceUrl": "https://bicyclethief.ca/reservations/",
-      "postUrl": null,
-      "pageUrl": "https://bicyclethief.ca/reservations/",
-      "platform": null,
-      "sourceKind": "official_page_thumbnail_candidate",
-      "extractionMethod": "html_img_content",
-      "width": 135,
-      "height": null,
-      "imageProbe": null,
-      "imageHost": "bicyclethief.ca",
-      "sourceHost": "bicyclethief.ca",
-      "officialHosts": [],
-      "sourceHostValidation": null,
-      "reviewState": "candidate_review",
-      "rightsStatus": "requires_rights_review",
-      "permission": null,
-      "permissionConfirmed": false,
-      "rightsBasis": null,
-      "attribution": null,
-      "alt": "Bicycle Thief thumbnail candidate",
-      "confidence": "same_host_official_page_image",
-      "observedAt": "2026-09-02T17:39:07.870Z",
-      "publishedAt": null,
-      "title": null,
-      "category": null,
-      "eligibleForProduction": false,
-      "qualityFlags": [
-        "logo_candidate"
       ],
       "reviewPriority": 23,
       "promotionReviewState": "low_quality_metadata"
@@ -78053,44 +77048,6 @@ window.HALIFAX_THUMBNAIL_CANDIDATES = {
       "promotionReviewState": "low_quality_metadata"
     },
     {
-      "id": "thumb-1ac43058bc84f1b3d6",
-      "restaurantId": "osm-node-14139904501-battery-park-beer-bar-and-eatery",
-      "restaurantName": "Battery Park Beer Bar & Eatery",
-      "thumbnailUrl": "http://static1.squarespace.com/static/55917d39e4b0b8f716f2fe05/t/5c0e9cac88251b532ef4bc0d/1544461486192/BP+Logo+%28June+2017%29.jpg?format=1500w",
-      "sourceUrl": "https://batterypark.ca/",
-      "postUrl": null,
-      "pageUrl": "https://batterypark.ca/",
-      "platform": null,
-      "sourceKind": "official_page_thumbnail_candidate",
-      "extractionMethod": "html_meta_image",
-      "width": null,
-      "height": null,
-      "imageProbe": null,
-      "imageHost": "static1.squarespace.com",
-      "sourceHost": "batterypark.ca",
-      "officialHosts": [],
-      "sourceHostValidation": null,
-      "reviewState": "candidate_review",
-      "rightsStatus": "requires_rights_review",
-      "permission": null,
-      "permissionConfirmed": false,
-      "rightsBasis": null,
-      "attribution": null,
-      "alt": "Battery Park Beer Bar & Eatery thumbnail candidate",
-      "confidence": "official_page_declared_remote_image",
-      "observedAt": "2026-09-02T17:39:07.870Z",
-      "publishedAt": null,
-      "title": null,
-      "category": null,
-      "eligibleForProduction": false,
-      "qualityFlags": [
-        "insecure_thumbnail_url",
-        "logo_candidate"
-      ],
-      "reviewPriority": 15,
-      "promotionReviewState": "low_quality_metadata"
-    },
-    {
       "id": "thumb-8ec867a9ba5a3ce123",
       "restaurantId": "osm-node-7465111619-brawta-jamaican-jerk-joint",
       "restaurantName": "Brawta Jamaican Jerk Joint",
@@ -90873,13 +89830,13 @@ window.HALIFAX_THUMBNAIL_CANDIDATES = {
       "restaurantId": "battery-park",
       "name": "Battery Park Beer Bar",
       "website": "https://batterypark.ca/",
-      "neighborhood": "Dartmouth"
+      "neighborhood": "Downtown Dartmouth"
     },
     {
       "restaurantId": "dear-friend",
       "name": "Dear Friend Bar",
       "website": "https://dearfriendbar.com/",
-      "neighborhood": "Dartmouth"
+      "neighborhood": "Downtown Dartmouth"
     },
     {
       "restaurantId": "highwayman",
@@ -91086,12 +90043,6 @@ window.HALIFAX_THUMBNAIL_CANDIDATES = {
       "neighborhood": "Waterfront"
     },
     {
-      "restaurantId": "osm-node-14139904501-battery-park-beer-bar-and-eatery",
-      "name": "Battery Park Beer Bar & Eatery",
-      "website": "http://batterypark.ca",
-      "neighborhood": "Halifax Peninsula"
-    },
-    {
       "restaurantId": "osm-way-372779849-bearly-s-house-of-blues",
       "name": "Bearly's House of Blues",
       "website": null,
@@ -91126,12 +90077,6 @@ window.HALIFAX_THUMBNAIL_CANDIDATES = {
       "name": "Bi One",
       "website": null,
       "neighborhood": "South End"
-    },
-    {
-      "restaurantId": "osm-node-1116387649-bicycle-thief",
-      "name": "Bicycle Thief",
-      "website": "https://bicyclethief.ca/",
-      "neighborhood": "Waterfront"
     },
     {
       "restaurantId": "osm-node-9074868976-big-al-s-pizza",
@@ -91248,12 +90193,6 @@ window.HALIFAX_THUMBNAIL_CANDIDATES = {
       "neighborhood": "Downtown"
     },
     {
-      "restaurantId": "osm-node-2721726004-bubba-ray-s-sports-bar",
-      "name": "Bubba Ray's Sports Bar",
-      "website": null,
-      "neighborhood": "Downtown"
-    },
-    {
       "restaurantId": "osm-node-3789619357-bubba-ray-s-sports-bar",
       "name": "Bubba Ray's Sports Bar",
       "website": null,
@@ -91328,7 +90267,7 @@ window.HALIFAX_THUMBNAIL_CANDIDATES = {
     {
       "restaurantId": "osm-node-11752614922-cafe-good-luck",
       "name": "Café Good Luck",
-      "website": "https://www.manualfoodanddrinkco.com/goodluck",
+      "website": "https://cafegoodluck.ca/goodluck",
       "neighborhood": "Dartmouth"
     },
     {
@@ -91350,15 +90289,9 @@ window.HALIFAX_THUMBNAIL_CANDIDATES = {
       "neighborhood": "Waterfront"
     },
     {
-      "restaurantId": "osm-node-12984675528-cafe-lunette",
-      "name": "Café Lunette",
-      "website": null,
-      "neighborhood": "Downtown"
-    },
-    {
       "restaurantId": "osm-node-4421124794-cafe-marco-polo",
       "name": "Cafe Marco Polo",
-      "website": "https://justuscoffee.com/locations/kings-wharf-dartmouth",
+      "website": "https://cafemarcopolodartmouth.com/",
       "neighborhood": "Dartmouth"
     },
     {
@@ -91400,8 +90333,8 @@ window.HALIFAX_THUMBNAIL_CANDIDATES = {
     {
       "restaurantId": "osm-node-3800103657-celtic-corner-public-house",
       "name": "Celtic Corner Public House",
-      "website": null,
-      "neighborhood": "Dartmouth"
+      "website": "https://www.celticcorner.ca/",
+      "neighborhood": "Downtown Dartmouth"
     },
     {
       "restaurantId": "osm-node-7196212747-cempoal-de-la-calavera-negra",
@@ -91413,7 +90346,7 @@ window.HALIFAX_THUMBNAIL_CANDIDATES = {
       "restaurantId": "osm-node-2721708515-cha-baa-thai",
       "name": "Cha Baa Thai",
       "website": "https://www.chabaathairestaurant.ca/",
-      "neighborhood": "Downtown"
+      "neighborhood": "Spring Garden"
     },
     {
       "restaurantId": "osm-node-11609580961-cha-baa-thai",
@@ -91430,7 +90363,7 @@ window.HALIFAX_THUMBNAIL_CANDIDATES = {
     {
       "restaurantId": "osm-node-5134046822-chain-yard-urban-cidery",
       "name": "Chain Yard Urban Cidery",
-      "website": "http://://www.chainyardcider.com",
+      "website": "https://www.chainyardcider.com/",
       "neighborhood": "North End"
     },
     {
@@ -91509,7 +90442,7 @@ window.HALIFAX_THUMBNAIL_CANDIDATES = {
       "restaurantId": "osm-node-12938312911-churned",
       "name": "Churned",
       "website": null,
-      "neighborhood": "Halifax Peninsula"
+      "neighborhood": "Downtown Dartmouth"
     },
     {
       "restaurantId": "osm-node-12444860718-city-shawarma",
@@ -91713,7 +90646,7 @@ window.HALIFAX_THUMBNAIL_CANDIDATES = {
       "restaurantId": "osm-node-11551984275-doraku",
       "name": "Doraku",
       "website": "https://doraku.yolasite.com",
-      "neighborhood": "Dartmouth"
+      "neighborhood": "Downtown Dartmouth"
     },
     {
       "restaurantId": "osm-node-4797459277-downtown-pizza",
@@ -92162,14 +91095,14 @@ window.HALIFAX_THUMBNAIL_CANDIDATES = {
     {
       "restaurantId": "osm-node-4421959790-humani-t",
       "name": "Humani-T",
-      "website": "https://humanitea.com/",
+      "website": null,
       "neighborhood": "South End"
     },
     {
       "restaurantId": "osm-node-11239721834-humble-pie-kitchen",
       "name": "Humble Pie Kitchen",
       "website": "https://humblepiekitchen.ca/",
-      "neighborhood": "Dartmouth"
+      "neighborhood": "Downtown Dartmouth"
     },
     {
       "restaurantId": "osm-node-11577591866-hungry-bowl",
@@ -92222,7 +91155,7 @@ window.HALIFAX_THUMBNAIL_CANDIDATES = {
     {
       "restaurantId": "osm-node-2624400763-java-blend",
       "name": "Java Blend",
-      "website": "https://javablendcoffee.com/contact",
+      "website": "https://javablendcoffee.com/pages/contact-us",
       "neighborhood": "North End"
     },
     {
@@ -92349,7 +91282,7 @@ window.HALIFAX_THUMBNAIL_CANDIDATES = {
       "restaurantId": "osm-node-11552081912-kanpai-izakaya",
       "name": "Kanpai Izakaya",
       "website": "https://kanpaiizakaya.com",
-      "neighborhood": "Downtown"
+      "neighborhood": "Spring Garden"
     },
     {
       "restaurantId": "osm-node-2712744143-kebab-kitchen",
@@ -92421,7 +91354,7 @@ window.HALIFAX_THUMBNAIL_CANDIDATES = {
       "restaurantId": "osm-node-3791840157-krave-burger",
       "name": "Krave Burger",
       "website": "http://kraveburger.com",
-      "neighborhood": "Downtown"
+      "neighborhood": "Spring Garden"
     },
     {
       "restaurantId": "osm-node-12143325435-krave-burger",
@@ -92463,7 +91396,7 @@ window.HALIFAX_THUMBNAIL_CANDIDATES = {
       "restaurantId": "osm-node-4420843802-le-bistro-by-liz",
       "name": "Le Bistro by Liz",
       "website": "https://www.lebistrohalifax.com",
-      "neighborhood": "South End"
+      "neighborhood": "Spring Garden"
     },
     {
       "restaurantId": "osm-node-13289257109-le-french-fix",
@@ -92546,8 +91479,8 @@ window.HALIFAX_THUMBNAIL_CANDIDATES = {
     {
       "restaurantId": "osm-node-13262595504-mappatura-bistro",
       "name": "Mappatura Bistro",
-      "website": null,
-      "neighborhood": "South End"
+      "website": "https://mappaturabistro.ca/",
+      "neighborhood": "Spring Garden"
     },
     {
       "restaurantId": "osm-node-2716971770-marble-slab-creamery",
@@ -92608,12 +91541,6 @@ window.HALIFAX_THUMBNAIL_CANDIDATES = {
       "name": "May Garden",
       "website": "https://maygarden.ca",
       "neighborhood": "Dartmouth"
-    },
-    {
-      "restaurantId": "osm-way-671922221-mckelvie-s",
-      "name": "McKelvie's",
-      "website": null,
-      "neighborhood": "Waterfront"
     },
     {
       "restaurantId": "osm-node-1920618295-metro-pizza",
@@ -92988,12 +91915,6 @@ window.HALIFAX_THUMBNAIL_CANDIDATES = {
       "neighborhood": "Halifax Peninsula"
     },
     {
-      "restaurantId": "osm-node-37132554-press-gang",
-      "name": "Press Gang",
-      "website": null,
-      "neighborhood": "Downtown"
-    },
-    {
       "restaurantId": "osm-node-13262680652-presto-tea",
       "name": "Presto Tea",
       "website": null,
@@ -93015,7 +91936,7 @@ window.HALIFAX_THUMBNAIL_CANDIDATES = {
       "restaurantId": "osm-node-13262694122-public-cafe-bakery-and-bar",
       "name": "Public - Café, Bakery & Bar",
       "website": "https://www.rcr.ca/restaurants/public-cafe-bakery-bar/",
-      "neighborhood": "Downtown"
+      "neighborhood": "Spring Garden"
     },
     {
       "restaurantId": "osm-node-3097560161-quinn-s-arms",
@@ -93062,8 +91983,8 @@ window.HALIFAX_THUMBNAIL_CANDIDATES = {
     {
       "restaurantId": "osm-node-3801688860-revana-pizza",
       "name": "Revana Pizza",
-      "website": null,
-      "neighborhood": "Dartmouth"
+      "website": "https://dartmouth.revanapizza.ca/",
+      "neighborhood": "Downtown Dartmouth"
     },
     {
       "restaurantId": "osm-node-3802109750-rinaldo-s",
@@ -93351,7 +92272,7 @@ window.HALIFAX_THUMBNAIL_CANDIDATES = {
       "restaurantId": "osm-node-4428984290-stone-pizza",
       "name": "Stone Pizza",
       "website": "https://stonepizza.ca/",
-      "neighborhood": "Dartmouth"
+      "neighborhood": "Downtown Dartmouth"
     },
     {
       "restaurantId": "osm-node-475877099-stories",
@@ -93398,20 +92319,20 @@ window.HALIFAX_THUMBNAIL_CANDIDATES = {
     {
       "restaurantId": "osm-node-11552151862-sushi-jet",
       "name": "Sushi Jet",
-      "website": "https://sushi-jet.com/location/dartmouth",
+      "website": "https://www.sushijetdartmouth.ca/",
       "neighborhood": "Dartmouth"
     },
     {
       "restaurantId": "osm-node-11552180279-sushi-jet",
       "name": "Sushi Jet",
-      "website": "https://sushi-jet.com/location/Halifax",
+      "website": "https://www.sushijethalifax.com/",
       "neighborhood": "Downtown"
     },
     {
       "restaurantId": "osm-node-5161526522-sushi-nami-royale",
       "name": "Sushi Nami Royale",
       "website": "https://sushinami.ca",
-      "neighborhood": "Downtown"
+      "neighborhood": "Spring Garden"
     },
     {
       "restaurantId": "osm-node-11552234300-sushi-nami-royale",
@@ -93794,7 +92715,7 @@ window.HALIFAX_THUMBNAIL_CANDIDATES = {
     {
       "restaurantId": "osm-node-1689418207-the-old-triangle-irish-pub",
       "name": "The Old Triangle Irish Pub",
-      "website": "https://www.oldtriangle.com/welcome/",
+      "website": "https://oldtriangle.com/",
       "neighborhood": "Downtown"
     },
     {
@@ -93912,12 +92833,6 @@ window.HALIFAX_THUMBNAIL_CANDIDATES = {
       "neighborhood": "Downtown"
     },
     {
-      "restaurantId": "osm-node-886747513-trident-booksellers-and-cafe",
-      "name": "Trident Booksellers and Cafe",
-      "website": "https://tridenthalifax.ca/",
-      "neighborhood": "Waterfront"
-    },
-    {
       "restaurantId": "osm-node-11577591863-truly-tasty",
       "name": "Truly Tasty",
       "website": null,
@@ -93938,7 +92853,7 @@ window.HALIFAX_THUMBNAIL_CANDIDATES = {
     {
       "restaurantId": "osm-node-3791832157-turkish-delight",
       "name": "Turkish Delight",
-      "website": "https://www.turkishdelighthalifax.ca/contact-us",
+      "website": null,
       "neighborhood": "Downtown"
     },
     {
@@ -93950,7 +92865,7 @@ window.HALIFAX_THUMBNAIL_CANDIDATES = {
     {
       "restaurantId": "osm-node-4420631892-two-if-by-sea",
       "name": "Two if By Sea",
-      "website": "https://www.twoifbyseacafe.ca/",
+      "website": null,
       "neighborhood": "Dartmouth"
     },
     {
@@ -94035,7 +92950,7 @@ window.HALIFAX_THUMBNAIL_CANDIDATES = {
       "restaurantId": "osm-node-5043397987-whiskey-s-lounge",
       "name": "Whiskey's Lounge",
       "website": null,
-      "neighborhood": "Dartmouth"
+      "neighborhood": "Downtown Dartmouth"
     },
     {
       "restaurantId": "osm-node-3802169599-wild-leek-food-and-juice-bar",
@@ -94072,12 +92987,6 @@ window.HALIFAX_THUMBNAIL_CANDIDATES = {
       "name": "Wong's Palace Chinese Restaurant",
       "website": null,
       "neighborhood": "Dartmouth"
-    },
-    {
-      "restaurantId": "osm-way-96322798-wooden-monkey",
-      "name": "Wooden Monkey",
-      "website": "https://www.thewoodenmonkey.ca/",
-      "neighborhood": "Downtown"
     },
     {
       "restaurantId": "osm-way-363362542-woodside-tavern",
@@ -94126,6 +93035,468 @@ window.HALIFAX_THUMBNAIL_CANDIDATES = {
       "name": "Zoca",
       "website": "https://dal.campusdish.com/LocationsAndMenus/LifeSciencesCentre/Zoca",
       "neighborhood": "South End"
+    },
+    {
+      "restaurantId": "sakaba-halifax",
+      "name": "Sakaba",
+      "website": null,
+      "neighborhood": "Waterfront"
+    },
+    {
+      "restaurantId": "water-polo-halifax",
+      "name": "Water Polo Restaurant",
+      "website": "https://www.waterpolohfx.ca/",
+      "neighborhood": "Waterfront"
+    },
+    {
+      "restaurantId": "tribute-halifax",
+      "name": "Tribute",
+      "website": "https://www.tributerestaurant.ca/",
+      "neighborhood": "Waterfront"
+    },
+    {
+      "restaurantId": "stardust-bar-kitchen-halifax",
+      "name": "Stardust Bar + Kitchen",
+      "website": "https://www.stardustbar.ca/",
+      "neighborhood": "Downtown"
+    },
+    {
+      "restaurantId": "magnolia-halifax",
+      "name": "Magnolia",
+      "website": "https://www.magnoliahfx.com/",
+      "neighborhood": "Downtown"
+    },
+    {
+      "restaurantId": "darty-brewing-dartmouth",
+      "name": "Darty Brewing Co.",
+      "website": "https://www.dartybrewing.ca/",
+      "neighborhood": "Downtown Dartmouth"
+    },
+    {
+      "restaurantId": "marias-pantry-dartmouth",
+      "name": "Maria's Pantry",
+      "website": "https://www.mariaspantry.ca/",
+      "neighborhood": "Downtown Dartmouth"
+    },
+    {
+      "restaurantId": "canteen-on-portland-dartmouth",
+      "name": "The Canteen on Portland",
+      "website": "https://www.thecanteen.ca/",
+      "neighborhood": "Downtown Dartmouth"
+    },
+    {
+      "restaurantId": "oxalis-dartmouth",
+      "name": "Oxalis Restaurant",
+      "website": "https://www.oxalisrestaurant.com/",
+      "neighborhood": "Downtown Dartmouth"
+    },
+    {
+      "restaurantId": "side-hustle-snack-bar-dartmouth",
+      "name": "Side Hustle Snack Bar",
+      "website": "https://www.sidehustlesnackbar.com/",
+      "neighborhood": "Downtown Dartmouth"
+    },
+    {
+      "restaurantId": "lake-city-cider-dartmouth",
+      "name": "Lake City Cider",
+      "website": "https://lakecitycider.ca/",
+      "neighborhood": "Downtown Dartmouth"
+    },
+    {
+      "restaurantId": "kaisers-subs-lower-sackville",
+      "name": "Kaiser's Subs & Sandwich Shoppes",
+      "website": "https://kaisersubs.com/",
+      "neighborhood": "Lower Sackville"
+    },
+    {
+      "restaurantId": "toms-family-restaurant-lower-sackville",
+      "name": "Tom's Family Restaurant",
+      "website": "https://www.tomsfamilyrestaurant.ca/",
+      "neighborhood": "Lower Sackville"
+    },
+    {
+      "restaurantId": "mediterra-kitchen-lower-sackville",
+      "name": "MediTerra Kitchen",
+      "website": "https://mediterrakitchen.ca/",
+      "neighborhood": "Lower Sackville"
+    },
+    {
+      "restaurantId": "tap-timber-middle-sackville",
+      "name": "Tap & Timber Social",
+      "website": "https://tapandtimber.ca/",
+      "neighborhood": "Middle Sackville"
+    },
+    {
+      "restaurantId": "pink-piano-lower-sackville",
+      "name": "The Pink Piano Café & Lounge",
+      "website": "https://thepinkpianocafe.com/",
+      "neighborhood": "Lower Sackville"
+    },
+    {
+      "restaurantId": "fry-daddys-middle-sackville",
+      "name": "Fry Daddy's Sackville",
+      "website": "https://frydaddyssackville.com/",
+      "neighborhood": "Middle Sackville"
+    },
+    {
+      "restaurantId": "antoinettes-cheesecakes-lower-sackville",
+      "name": "Antoinette's Cheesecakes",
+      "website": "https://antoinettescheesecakes.ca/",
+      "neighborhood": "Lower Sackville"
+    },
+    {
+      "restaurantId": "antoinettes-cheesecakes-bedford",
+      "name": "Antoinette's Cheesecakes",
+      "website": "https://antoinettescheesecakes.ca/",
+      "neighborhood": "Bedford"
+    },
+    {
+      "restaurantId": "antoinettes-cheesecakes-dartmouth",
+      "name": "Antoinette's Cheesecakes",
+      "website": "https://antoinettescheesecakes.ca/",
+      "neighborhood": "Dartmouth"
+    },
+    {
+      "restaurantId": "apartment-3-lower-sackville",
+      "name": "Apartment 3 Espresso Bar",
+      "website": "https://apt3coffee.com/",
+      "neighborhood": "Lower Sackville"
+    },
+    {
+      "restaurantId": "apartment-3-south-park",
+      "name": "Apartment 3 Espresso Bar",
+      "website": "https://apt3coffee.com/",
+      "neighborhood": "South End"
+    },
+    {
+      "restaurantId": "pavia-herring-cove",
+      "name": "PAVIA Gallery – Espresso Bar & Café",
+      "website": "https://www.paviagallery.com/",
+      "neighborhood": "Herring Cove"
+    },
+    {
+      "restaurantId": "boondocks-eastern-passage",
+      "name": "Boondocks Restaurant",
+      "website": "https://www.boondocksrestaurant.ca/",
+      "neighborhood": "Eastern Passage"
+    },
+    {
+      "restaurantId": "palladium-cole-harbour",
+      "name": "Palladium Family Restaurant",
+      "website": "https://palladiumfamily.ca/",
+      "neighborhood": "Cole Harbour"
+    },
+    {
+      "restaurantId": "selbys-bunker-cole-harbour",
+      "name": "Selby's Bunker Coffee & Gifts",
+      "website": "https://selby.store/",
+      "neighborhood": "Cole Harbour"
+    },
+    {
+      "restaurantId": "better-vibe-lawrencetown",
+      "name": "Better Vibe Cafe",
+      "website": "https://www.bettervibe.ca/",
+      "neighborhood": "Lawrencetown"
+    },
+    {
+      "restaurantId": "rose-rooster-grand-desert",
+      "name": "Rose & Rooster Cafe",
+      "website": "https://roseandrooster.com/",
+      "neighborhood": "Grand Desert"
+    },
+    {
+      "restaurantId": "big-wedge-porters-lake",
+      "name": "The Big Wedge — Porters Lake",
+      "website": "https://www.thebigwedge.com/",
+      "neighborhood": "Porters Lake"
+    },
+    {
+      "restaurantId": "uprooted-musquodoboit-harbour",
+      "name": "Uprooted Market & Cafe",
+      "website": "https://www.uprootedmarketcafe.ca/",
+      "neighborhood": "Musquodoboit Harbour"
+    },
+    {
+      "restaurantId": "lupin-west-petpeswick",
+      "name": "Lupin Dining & Pantry",
+      "website": "https://lupindining.ca/",
+      "neighborhood": "West Petpeswick / Musquodoboit Harbour"
+    },
+    {
+      "restaurantId": "henley-house-sheet-harbour",
+      "name": "The Henley House Pub & Restaurant",
+      "website": "https://www.henleyhouse.ca/",
+      "neighborhood": "Sheet Harbour"
+    },
+    {
+      "restaurantId": "bike-bean-tantallon",
+      "name": "Train Station Bike & Bean",
+      "website": "https://bikeandbean.ca/",
+      "neighborhood": "Upper Tantallon"
+    },
+    {
+      "restaurantId": "cavicchis-upper-tantallon",
+      "name": "Cavicchi's Meats & Eatery",
+      "website": "https://cavicchismeats.com/",
+      "neighborhood": "Upper Tantallon"
+    },
+    {
+      "restaurantId": "souwester-peggys-cove",
+      "name": "Sou'Wester Gift & Restaurant",
+      "website": "https://shoppeggyscove.com/",
+      "neighborhood": "Peggy's Cove"
+    },
+    {
+      "restaurantId": "margarets-peggys-cove",
+      "name": "Margaret's Cafe",
+      "website": "https://www.margaretsns.ca/",
+      "neighborhood": "Peggy's Cove"
+    },
+    {
+      "restaurantId": "trellis-hubbards",
+      "name": "The Trellis Cafe",
+      "website": "https://www.thetrelliscafe.com/",
+      "neighborhood": "Hubbards"
+    },
+    {
+      "restaurantId": "tuna-blue-hubbards",
+      "name": "The Tuna Blue Restaurant",
+      "website": "https://www.tunablue.ca/",
+      "neighborhood": "Hubbards"
+    },
+    {
+      "restaurantId": "vernons-thunderbird-diner-hammonds-plains",
+      "name": "Vernon’s Thunderbird Diner",
+      "website": "https://vernonsdiner.ca/",
+      "neighborhood": "Hammonds Plains"
+    },
+    {
+      "restaurantId": "7-40-restaurant-hammonds-plains",
+      "name": "7:40 Restaurant",
+      "website": "https://www.740restaurant.ca/",
+      "neighborhood": "Hammonds Plains"
+    },
+    {
+      "restaurantId": "deerfield-pub-at-glen-arbour-hammonds-plains",
+      "name": "Deerfield Pub at Glen Arbour",
+      "website": "https://www.deerfieldpub.ca/",
+      "neighborhood": "Hammonds Plains"
+    },
+    {
+      "restaurantId": "beaver-bank-station-bar-grill-beaver-bank",
+      "name": "Beaver Bank Station Bar & Grill",
+      "website": "https://www.beaverbankstation.com/",
+      "neighborhood": "Beaver Bank"
+    },
+    {
+      "restaurantId": "the-turtleback-tap-grill-fall-river",
+      "name": "The Turtleback Tap & Grill",
+      "website": "https://www.theturtleback.ca/",
+      "neighborhood": "Fall River"
+    },
+    {
+      "restaurantId": "wellington-pizza-seafood-wellington",
+      "name": "Wellington Pizza & Seafood",
+      "website": "https://wellingtonpizza.com/",
+      "neighborhood": "Wellington"
+    },
+    {
+      "restaurantId": "the-chickenburger-bedford",
+      "name": "The Chickenburger",
+      "website": "https://chickenburger.com/",
+      "neighborhood": "Bedford"
+    },
+    {
+      "restaurantId": "millstone-public-house-bedford-west-bedford",
+      "name": "Millstone Public House – Bedford",
+      "website": "https://millstonepublichouse.com/",
+      "neighborhood": "West Bedford"
+    },
+    {
+      "restaurantId": "esquire-restaurant-bedford",
+      "name": "Esquire Restaurant",
+      "website": "https://www.esquirerestaurant.ca/home/",
+      "neighborhood": "Bedford"
+    },
+    {
+      "restaurantId": "il-mercato-trattoria-bedford",
+      "name": "il Mercato Trattoria",
+      "website": "https://www.il-mercato.ca/",
+      "neighborhood": "Bedford"
+    },
+    {
+      "restaurantId": "finbars-irish-pub-bedford",
+      "name": "Finbar’s Irish Pub",
+      "website": "https://www.finbars.ca/",
+      "neighborhood": "Bedford"
+    },
+    {
+      "restaurantId": "gs-pizza-hatchet-lake",
+      "name": "G's Pizza and Donair",
+      "website": "https://www.gspizza.ca/",
+      "neighborhood": "Hatchet Lake"
+    },
+    {
+      "restaurantId": "martins-kitchen-hatchet-lake",
+      "name": "Martin's Kitchen",
+      "website": "https://www.martinskitchenil.com/",
+      "neighborhood": "Hatchet Lake"
+    },
+    {
+      "restaurantId": "north-brewing-timberlea",
+      "name": "North Brewing Company — Timberlea",
+      "website": "https://northbrewing.ca/",
+      "neighborhood": "Timberlea"
+    },
+    {
+      "restaurantId": "bubba-magoos-peggys-cove",
+      "name": "Bubba Magoos Bistro & BubbaEATS",
+      "website": "https://www.bubbamagoos.com/",
+      "neighborhood": "Peggy's Cove"
+    },
+    {
+      "restaurantId": "white-sails-bakery-tantallon",
+      "name": "White Sails Bakery & Deli",
+      "website": "https://whitesailsbakery.com/",
+      "neighborhood": "Tantallon"
+    },
+    {
+      "restaurantId": "rustic-crust-upper-tantallon",
+      "name": "The Rustic Crust",
+      "website": "https://therusticcrustpizzeria.com/",
+      "neighborhood": "Upper Tantallon"
+    },
+    {
+      "restaurantId": "panada-pizza-fairview-halifax-fairview",
+      "name": "Panada Pizza – Fairview",
+      "website": "https://www.panadapizza.com/",
+      "neighborhood": "Halifax / Fairview"
+    },
+    {
+      "restaurantId": "panada-pizza-musquodoboit-harbour-musquodoboit-harbour",
+      "name": "Panada Pizza – Musquodoboit Harbour",
+      "website": "https://www.panadapizza.com/",
+      "neighborhood": "Musquodoboit Harbour"
+    },
+    {
+      "restaurantId": "watermark-indian-harbour",
+      "name": "Watermark Restaurant",
+      "website": "https://watermarkrestaurant.ca/",
+      "neighborhood": "Indian Harbour"
+    },
+    {
+      "restaurantId": "labour-day-picnic-cafe-glen-haven",
+      "name": "Labour Day Picnic Cafe",
+      "website": "https://www.labourdaypicnic.com/",
+      "neighborhood": "Glen Haven"
+    },
+    {
+      "restaurantId": "the-fourth-lock-fall-river",
+      "name": "The Fourth Lock",
+      "website": "https://www.thefourthlock.ca/",
+      "neighborhood": "Fall River"
+    },
+    {
+      "restaurantId": "casa-di-stefano-lower-sackville",
+      "name": "Casa di Stefano",
+      "website": "https://casadistefano.ca/",
+      "neighborhood": "Lower Sackville"
+    },
+    {
+      "restaurantId": "village-taphouse-west-bedford",
+      "name": "The Village Taphouse of West Bedford",
+      "website": "https://villagetaphouse.ca/",
+      "neighborhood": "West Bedford"
+    },
+    {
+      "restaurantId": "busan-korean-bbq-halifax",
+      "name": "Busan Korean BBQ",
+      "website": "https://www.busankoreanbbq.com/",
+      "neighborhood": "Quinpool"
+    },
+    {
+      "restaurantId": "buta-ramen-halifax",
+      "name": "Buta Ramen Halifax",
+      "website": "https://butaramen.ca/",
+      "neighborhood": "Downtown"
+    },
+    {
+      "restaurantId": "buta-ramen-dartmouth",
+      "name": "Buta Ramen Dartmouth",
+      "website": "https://butaramen.ca/",
+      "neighborhood": "Downtown Dartmouth"
+    },
+    {
+      "restaurantId": "buta-ramen-bedford",
+      "name": "Buta Ramen Bedford",
+      "website": "https://butaramen.ca/",
+      "neighborhood": "Bedford"
+    },
+    {
+      "restaurantId": "chanoeys-pasta-dartmouth",
+      "name": "Chanoey’s Pasta — Dartmouth",
+      "website": "https://www.chanoeyspasta.com/",
+      "neighborhood": "Downtown Dartmouth"
+    },
+    {
+      "restaurantId": "evans-fresh-seafoods-dartmouth",
+      "name": "Evan’s Fresh Seafoods & Restaurant",
+      "website": "https://www.evansfreshseafoods.com/",
+      "neighborhood": "Downtown Dartmouth"
+    },
+    {
+      "restaurantId": "larrys-sandwiches-dartmouth",
+      "name": "Larry’s Sandwiches & Sides",
+      "website": "https://larryssandwiches.com/",
+      "neighborhood": "Downtown Dartmouth"
+    },
+    {
+      "restaurantId": "big-leagues-bayers-lake",
+      "name": "Big Leagues Bayer’s Lake",
+      "website": "https://bigleagues.ca/",
+      "neighborhood": "Bayers Lake"
+    },
+    {
+      "restaurantId": "juice-press-dutch-village",
+      "name": "The Juice Press — Dutch Village Road",
+      "website": "https://juicepresshfx.myshopify.com/pages/ordering-pick-up-protocol",
+      "neighborhood": "Fairview"
+    },
+    {
+      "restaurantId": "sushi-square-scotia-square",
+      "name": "Sushi Square",
+      "website": "https://sushisquare.ca/",
+      "neighborhood": "Downtown Halifax"
+    },
+    {
+      "restaurantId": "tulipan-dartmouth",
+      "name": "Tulipan",
+      "website": "https://www.tulipanrestaurant.com/",
+      "neighborhood": "Downtown Dartmouth"
+    },
+    {
+      "restaurantId": "hux-halifax",
+      "name": "HUX Bar & Bistro",
+      "website": "https://www.huxhalifax.com/",
+      "neighborhood": "Downtown Halifax"
+    },
+    {
+      "restaurantId": "retas-gottingen",
+      "name": "Reta’s",
+      "website": "https://www.retasrestaurant.com/",
+      "neighborhood": "North End"
+    },
+    {
+      "restaurantId": "waaris-dartmouth",
+      "name": "The Waaris",
+      "website": "https://www.thewaaris.com/",
+      "neighborhood": "Dartmouth Crossing"
+    },
+    {
+      "restaurantId": "via-condotti-queen",
+      "name": "Via Condotti",
+      "website": "https://www.viacondotti.ca/",
+      "neighborhood": "Spring Garden"
     }
   ],
   "missingAnyCandidate": [
@@ -94376,12 +93747,6 @@ window.HALIFAX_THUMBNAIL_CANDIDATES = {
       "neighborhood": "Downtown"
     },
     {
-      "restaurantId": "osm-node-2721726004-bubba-ray-s-sports-bar",
-      "name": "Bubba Ray's Sports Bar",
-      "website": null,
-      "neighborhood": "Downtown"
-    },
-    {
       "restaurantId": "osm-node-3789619357-bubba-ray-s-sports-bar",
       "name": "Bubba Ray's Sports Bar",
       "website": null,
@@ -94466,15 +93831,9 @@ window.HALIFAX_THUMBNAIL_CANDIDATES = {
       "neighborhood": "West End"
     },
     {
-      "restaurantId": "osm-node-12984675528-cafe-lunette",
-      "name": "Café Lunette",
-      "website": null,
-      "neighborhood": "Downtown"
-    },
-    {
       "restaurantId": "osm-node-4421124794-cafe-marco-polo",
       "name": "Cafe Marco Polo",
-      "website": "https://justuscoffee.com/locations/kings-wharf-dartmouth",
+      "website": "https://cafemarcopolodartmouth.com/",
       "neighborhood": "Dartmouth"
     },
     {
@@ -94498,8 +93857,8 @@ window.HALIFAX_THUMBNAIL_CANDIDATES = {
     {
       "restaurantId": "osm-node-3800103657-celtic-corner-public-house",
       "name": "Celtic Corner Public House",
-      "website": null,
-      "neighborhood": "Dartmouth"
+      "website": "https://www.celticcorner.ca/",
+      "neighborhood": "Downtown Dartmouth"
     },
     {
       "restaurantId": "osm-node-7196212747-cempoal-de-la-calavera-negra",
@@ -94511,7 +93870,7 @@ window.HALIFAX_THUMBNAIL_CANDIDATES = {
       "restaurantId": "osm-node-2721708515-cha-baa-thai",
       "name": "Cha Baa Thai",
       "website": "https://www.chabaathairestaurant.ca/",
-      "neighborhood": "Downtown"
+      "neighborhood": "Spring Garden"
     },
     {
       "restaurantId": "osm-node-11609580961-cha-baa-thai",
@@ -94522,7 +93881,7 @@ window.HALIFAX_THUMBNAIL_CANDIDATES = {
     {
       "restaurantId": "osm-node-5134046822-chain-yard-urban-cidery",
       "name": "Chain Yard Urban Cidery",
-      "website": "http://://www.chainyardcider.com",
+      "website": "https://www.chainyardcider.com/",
       "neighborhood": "North End"
     },
     {
@@ -94565,7 +93924,7 @@ window.HALIFAX_THUMBNAIL_CANDIDATES = {
       "restaurantId": "osm-node-12938312911-churned",
       "name": "Churned",
       "website": null,
-      "neighborhood": "Halifax Peninsula"
+      "neighborhood": "Downtown Dartmouth"
     },
     {
       "restaurantId": "osm-node-12444860718-city-shawarma",
@@ -95002,7 +94361,7 @@ window.HALIFAX_THUMBNAIL_CANDIDATES = {
     {
       "restaurantId": "osm-node-4421959790-humani-t",
       "name": "Humani-T",
-      "website": "https://humanitea.com/",
+      "website": null,
       "neighborhood": "South End"
     },
     {
@@ -95044,7 +94403,7 @@ window.HALIFAX_THUMBNAIL_CANDIDATES = {
     {
       "restaurantId": "osm-node-2624400763-java-blend",
       "name": "Java Blend",
-      "website": "https://javablendcoffee.com/contact",
+      "website": "https://javablendcoffee.com/pages/contact-us",
       "neighborhood": "North End"
     },
     {
@@ -95248,8 +94607,8 @@ window.HALIFAX_THUMBNAIL_CANDIDATES = {
     {
       "restaurantId": "osm-node-13262595504-mappatura-bistro",
       "name": "Mappatura Bistro",
-      "website": null,
-      "neighborhood": "South End"
+      "website": "https://mappaturabistro.ca/",
+      "neighborhood": "Spring Garden"
     },
     {
       "restaurantId": "osm-node-2716971770-marble-slab-creamery",
@@ -95540,12 +94899,6 @@ window.HALIFAX_THUMBNAIL_CANDIDATES = {
       "neighborhood": "Halifax Peninsula"
     },
     {
-      "restaurantId": "osm-node-37132554-press-gang",
-      "name": "Press Gang",
-      "website": null,
-      "neighborhood": "Downtown"
-    },
-    {
       "restaurantId": "osm-node-13262680652-presto-tea",
       "name": "Presto Tea",
       "website": null,
@@ -95596,8 +94949,8 @@ window.HALIFAX_THUMBNAIL_CANDIDATES = {
     {
       "restaurantId": "osm-node-3801688860-revana-pizza",
       "name": "Revana Pizza",
-      "website": null,
-      "neighborhood": "Dartmouth"
+      "website": "https://dartmouth.revanapizza.ca/",
+      "neighborhood": "Downtown Dartmouth"
     },
     {
       "restaurantId": "osm-node-3791830257-rockbottom-brewery",
@@ -95794,13 +95147,13 @@ window.HALIFAX_THUMBNAIL_CANDIDATES = {
     {
       "restaurantId": "osm-node-11552151862-sushi-jet",
       "name": "Sushi Jet",
-      "website": "https://sushi-jet.com/location/dartmouth",
+      "website": "https://www.sushijetdartmouth.ca/",
       "neighborhood": "Dartmouth"
     },
     {
       "restaurantId": "osm-node-11552180279-sushi-jet",
       "name": "Sushi Jet",
-      "website": "https://sushi-jet.com/location/Halifax",
+      "website": "https://www.sushijethalifax.com/",
       "neighborhood": "Downtown"
     },
     {
@@ -96209,7 +95562,7 @@ window.HALIFAX_THUMBNAIL_CANDIDATES = {
       "restaurantId": "osm-node-5043397987-whiskey-s-lounge",
       "name": "Whiskey's Lounge",
       "website": null,
-      "neighborhood": "Dartmouth"
+      "neighborhood": "Downtown Dartmouth"
     },
     {
       "restaurantId": "osm-node-11612160985-willman-s-fish-and-chips",
@@ -96276,6 +95629,468 @@ window.HALIFAX_THUMBNAIL_CANDIDATES = {
       "name": "Yum Yum",
       "website": null,
       "neighborhood": "North End"
+    },
+    {
+      "restaurantId": "sakaba-halifax",
+      "name": "Sakaba",
+      "website": null,
+      "neighborhood": "Waterfront"
+    },
+    {
+      "restaurantId": "water-polo-halifax",
+      "name": "Water Polo Restaurant",
+      "website": "https://www.waterpolohfx.ca/",
+      "neighborhood": "Waterfront"
+    },
+    {
+      "restaurantId": "tribute-halifax",
+      "name": "Tribute",
+      "website": "https://www.tributerestaurant.ca/",
+      "neighborhood": "Waterfront"
+    },
+    {
+      "restaurantId": "stardust-bar-kitchen-halifax",
+      "name": "Stardust Bar + Kitchen",
+      "website": "https://www.stardustbar.ca/",
+      "neighborhood": "Downtown"
+    },
+    {
+      "restaurantId": "magnolia-halifax",
+      "name": "Magnolia",
+      "website": "https://www.magnoliahfx.com/",
+      "neighborhood": "Downtown"
+    },
+    {
+      "restaurantId": "darty-brewing-dartmouth",
+      "name": "Darty Brewing Co.",
+      "website": "https://www.dartybrewing.ca/",
+      "neighborhood": "Downtown Dartmouth"
+    },
+    {
+      "restaurantId": "marias-pantry-dartmouth",
+      "name": "Maria's Pantry",
+      "website": "https://www.mariaspantry.ca/",
+      "neighborhood": "Downtown Dartmouth"
+    },
+    {
+      "restaurantId": "canteen-on-portland-dartmouth",
+      "name": "The Canteen on Portland",
+      "website": "https://www.thecanteen.ca/",
+      "neighborhood": "Downtown Dartmouth"
+    },
+    {
+      "restaurantId": "oxalis-dartmouth",
+      "name": "Oxalis Restaurant",
+      "website": "https://www.oxalisrestaurant.com/",
+      "neighborhood": "Downtown Dartmouth"
+    },
+    {
+      "restaurantId": "side-hustle-snack-bar-dartmouth",
+      "name": "Side Hustle Snack Bar",
+      "website": "https://www.sidehustlesnackbar.com/",
+      "neighborhood": "Downtown Dartmouth"
+    },
+    {
+      "restaurantId": "lake-city-cider-dartmouth",
+      "name": "Lake City Cider",
+      "website": "https://lakecitycider.ca/",
+      "neighborhood": "Downtown Dartmouth"
+    },
+    {
+      "restaurantId": "kaisers-subs-lower-sackville",
+      "name": "Kaiser's Subs & Sandwich Shoppes",
+      "website": "https://kaisersubs.com/",
+      "neighborhood": "Lower Sackville"
+    },
+    {
+      "restaurantId": "toms-family-restaurant-lower-sackville",
+      "name": "Tom's Family Restaurant",
+      "website": "https://www.tomsfamilyrestaurant.ca/",
+      "neighborhood": "Lower Sackville"
+    },
+    {
+      "restaurantId": "mediterra-kitchen-lower-sackville",
+      "name": "MediTerra Kitchen",
+      "website": "https://mediterrakitchen.ca/",
+      "neighborhood": "Lower Sackville"
+    },
+    {
+      "restaurantId": "tap-timber-middle-sackville",
+      "name": "Tap & Timber Social",
+      "website": "https://tapandtimber.ca/",
+      "neighborhood": "Middle Sackville"
+    },
+    {
+      "restaurantId": "pink-piano-lower-sackville",
+      "name": "The Pink Piano Café & Lounge",
+      "website": "https://thepinkpianocafe.com/",
+      "neighborhood": "Lower Sackville"
+    },
+    {
+      "restaurantId": "fry-daddys-middle-sackville",
+      "name": "Fry Daddy's Sackville",
+      "website": "https://frydaddyssackville.com/",
+      "neighborhood": "Middle Sackville"
+    },
+    {
+      "restaurantId": "antoinettes-cheesecakes-lower-sackville",
+      "name": "Antoinette's Cheesecakes",
+      "website": "https://antoinettescheesecakes.ca/",
+      "neighborhood": "Lower Sackville"
+    },
+    {
+      "restaurantId": "antoinettes-cheesecakes-bedford",
+      "name": "Antoinette's Cheesecakes",
+      "website": "https://antoinettescheesecakes.ca/",
+      "neighborhood": "Bedford"
+    },
+    {
+      "restaurantId": "antoinettes-cheesecakes-dartmouth",
+      "name": "Antoinette's Cheesecakes",
+      "website": "https://antoinettescheesecakes.ca/",
+      "neighborhood": "Dartmouth"
+    },
+    {
+      "restaurantId": "apartment-3-lower-sackville",
+      "name": "Apartment 3 Espresso Bar",
+      "website": "https://apt3coffee.com/",
+      "neighborhood": "Lower Sackville"
+    },
+    {
+      "restaurantId": "apartment-3-south-park",
+      "name": "Apartment 3 Espresso Bar",
+      "website": "https://apt3coffee.com/",
+      "neighborhood": "South End"
+    },
+    {
+      "restaurantId": "pavia-herring-cove",
+      "name": "PAVIA Gallery – Espresso Bar & Café",
+      "website": "https://www.paviagallery.com/",
+      "neighborhood": "Herring Cove"
+    },
+    {
+      "restaurantId": "boondocks-eastern-passage",
+      "name": "Boondocks Restaurant",
+      "website": "https://www.boondocksrestaurant.ca/",
+      "neighborhood": "Eastern Passage"
+    },
+    {
+      "restaurantId": "palladium-cole-harbour",
+      "name": "Palladium Family Restaurant",
+      "website": "https://palladiumfamily.ca/",
+      "neighborhood": "Cole Harbour"
+    },
+    {
+      "restaurantId": "selbys-bunker-cole-harbour",
+      "name": "Selby's Bunker Coffee & Gifts",
+      "website": "https://selby.store/",
+      "neighborhood": "Cole Harbour"
+    },
+    {
+      "restaurantId": "better-vibe-lawrencetown",
+      "name": "Better Vibe Cafe",
+      "website": "https://www.bettervibe.ca/",
+      "neighborhood": "Lawrencetown"
+    },
+    {
+      "restaurantId": "rose-rooster-grand-desert",
+      "name": "Rose & Rooster Cafe",
+      "website": "https://roseandrooster.com/",
+      "neighborhood": "Grand Desert"
+    },
+    {
+      "restaurantId": "big-wedge-porters-lake",
+      "name": "The Big Wedge — Porters Lake",
+      "website": "https://www.thebigwedge.com/",
+      "neighborhood": "Porters Lake"
+    },
+    {
+      "restaurantId": "uprooted-musquodoboit-harbour",
+      "name": "Uprooted Market & Cafe",
+      "website": "https://www.uprootedmarketcafe.ca/",
+      "neighborhood": "Musquodoboit Harbour"
+    },
+    {
+      "restaurantId": "lupin-west-petpeswick",
+      "name": "Lupin Dining & Pantry",
+      "website": "https://lupindining.ca/",
+      "neighborhood": "West Petpeswick / Musquodoboit Harbour"
+    },
+    {
+      "restaurantId": "henley-house-sheet-harbour",
+      "name": "The Henley House Pub & Restaurant",
+      "website": "https://www.henleyhouse.ca/",
+      "neighborhood": "Sheet Harbour"
+    },
+    {
+      "restaurantId": "bike-bean-tantallon",
+      "name": "Train Station Bike & Bean",
+      "website": "https://bikeandbean.ca/",
+      "neighborhood": "Upper Tantallon"
+    },
+    {
+      "restaurantId": "cavicchis-upper-tantallon",
+      "name": "Cavicchi's Meats & Eatery",
+      "website": "https://cavicchismeats.com/",
+      "neighborhood": "Upper Tantallon"
+    },
+    {
+      "restaurantId": "souwester-peggys-cove",
+      "name": "Sou'Wester Gift & Restaurant",
+      "website": "https://shoppeggyscove.com/",
+      "neighborhood": "Peggy's Cove"
+    },
+    {
+      "restaurantId": "margarets-peggys-cove",
+      "name": "Margaret's Cafe",
+      "website": "https://www.margaretsns.ca/",
+      "neighborhood": "Peggy's Cove"
+    },
+    {
+      "restaurantId": "trellis-hubbards",
+      "name": "The Trellis Cafe",
+      "website": "https://www.thetrelliscafe.com/",
+      "neighborhood": "Hubbards"
+    },
+    {
+      "restaurantId": "tuna-blue-hubbards",
+      "name": "The Tuna Blue Restaurant",
+      "website": "https://www.tunablue.ca/",
+      "neighborhood": "Hubbards"
+    },
+    {
+      "restaurantId": "vernons-thunderbird-diner-hammonds-plains",
+      "name": "Vernon’s Thunderbird Diner",
+      "website": "https://vernonsdiner.ca/",
+      "neighborhood": "Hammonds Plains"
+    },
+    {
+      "restaurantId": "7-40-restaurant-hammonds-plains",
+      "name": "7:40 Restaurant",
+      "website": "https://www.740restaurant.ca/",
+      "neighborhood": "Hammonds Plains"
+    },
+    {
+      "restaurantId": "deerfield-pub-at-glen-arbour-hammonds-plains",
+      "name": "Deerfield Pub at Glen Arbour",
+      "website": "https://www.deerfieldpub.ca/",
+      "neighborhood": "Hammonds Plains"
+    },
+    {
+      "restaurantId": "beaver-bank-station-bar-grill-beaver-bank",
+      "name": "Beaver Bank Station Bar & Grill",
+      "website": "https://www.beaverbankstation.com/",
+      "neighborhood": "Beaver Bank"
+    },
+    {
+      "restaurantId": "the-turtleback-tap-grill-fall-river",
+      "name": "The Turtleback Tap & Grill",
+      "website": "https://www.theturtleback.ca/",
+      "neighborhood": "Fall River"
+    },
+    {
+      "restaurantId": "wellington-pizza-seafood-wellington",
+      "name": "Wellington Pizza & Seafood",
+      "website": "https://wellingtonpizza.com/",
+      "neighborhood": "Wellington"
+    },
+    {
+      "restaurantId": "the-chickenburger-bedford",
+      "name": "The Chickenburger",
+      "website": "https://chickenburger.com/",
+      "neighborhood": "Bedford"
+    },
+    {
+      "restaurantId": "millstone-public-house-bedford-west-bedford",
+      "name": "Millstone Public House – Bedford",
+      "website": "https://millstonepublichouse.com/",
+      "neighborhood": "West Bedford"
+    },
+    {
+      "restaurantId": "esquire-restaurant-bedford",
+      "name": "Esquire Restaurant",
+      "website": "https://www.esquirerestaurant.ca/home/",
+      "neighborhood": "Bedford"
+    },
+    {
+      "restaurantId": "il-mercato-trattoria-bedford",
+      "name": "il Mercato Trattoria",
+      "website": "https://www.il-mercato.ca/",
+      "neighborhood": "Bedford"
+    },
+    {
+      "restaurantId": "finbars-irish-pub-bedford",
+      "name": "Finbar’s Irish Pub",
+      "website": "https://www.finbars.ca/",
+      "neighborhood": "Bedford"
+    },
+    {
+      "restaurantId": "gs-pizza-hatchet-lake",
+      "name": "G's Pizza and Donair",
+      "website": "https://www.gspizza.ca/",
+      "neighborhood": "Hatchet Lake"
+    },
+    {
+      "restaurantId": "martins-kitchen-hatchet-lake",
+      "name": "Martin's Kitchen",
+      "website": "https://www.martinskitchenil.com/",
+      "neighborhood": "Hatchet Lake"
+    },
+    {
+      "restaurantId": "north-brewing-timberlea",
+      "name": "North Brewing Company — Timberlea",
+      "website": "https://northbrewing.ca/",
+      "neighborhood": "Timberlea"
+    },
+    {
+      "restaurantId": "bubba-magoos-peggys-cove",
+      "name": "Bubba Magoos Bistro & BubbaEATS",
+      "website": "https://www.bubbamagoos.com/",
+      "neighborhood": "Peggy's Cove"
+    },
+    {
+      "restaurantId": "white-sails-bakery-tantallon",
+      "name": "White Sails Bakery & Deli",
+      "website": "https://whitesailsbakery.com/",
+      "neighborhood": "Tantallon"
+    },
+    {
+      "restaurantId": "rustic-crust-upper-tantallon",
+      "name": "The Rustic Crust",
+      "website": "https://therusticcrustpizzeria.com/",
+      "neighborhood": "Upper Tantallon"
+    },
+    {
+      "restaurantId": "panada-pizza-fairview-halifax-fairview",
+      "name": "Panada Pizza – Fairview",
+      "website": "https://www.panadapizza.com/",
+      "neighborhood": "Halifax / Fairview"
+    },
+    {
+      "restaurantId": "panada-pizza-musquodoboit-harbour-musquodoboit-harbour",
+      "name": "Panada Pizza – Musquodoboit Harbour",
+      "website": "https://www.panadapizza.com/",
+      "neighborhood": "Musquodoboit Harbour"
+    },
+    {
+      "restaurantId": "watermark-indian-harbour",
+      "name": "Watermark Restaurant",
+      "website": "https://watermarkrestaurant.ca/",
+      "neighborhood": "Indian Harbour"
+    },
+    {
+      "restaurantId": "labour-day-picnic-cafe-glen-haven",
+      "name": "Labour Day Picnic Cafe",
+      "website": "https://www.labourdaypicnic.com/",
+      "neighborhood": "Glen Haven"
+    },
+    {
+      "restaurantId": "the-fourth-lock-fall-river",
+      "name": "The Fourth Lock",
+      "website": "https://www.thefourthlock.ca/",
+      "neighborhood": "Fall River"
+    },
+    {
+      "restaurantId": "casa-di-stefano-lower-sackville",
+      "name": "Casa di Stefano",
+      "website": "https://casadistefano.ca/",
+      "neighborhood": "Lower Sackville"
+    },
+    {
+      "restaurantId": "village-taphouse-west-bedford",
+      "name": "The Village Taphouse of West Bedford",
+      "website": "https://villagetaphouse.ca/",
+      "neighborhood": "West Bedford"
+    },
+    {
+      "restaurantId": "busan-korean-bbq-halifax",
+      "name": "Busan Korean BBQ",
+      "website": "https://www.busankoreanbbq.com/",
+      "neighborhood": "Quinpool"
+    },
+    {
+      "restaurantId": "buta-ramen-halifax",
+      "name": "Buta Ramen Halifax",
+      "website": "https://butaramen.ca/",
+      "neighborhood": "Downtown"
+    },
+    {
+      "restaurantId": "buta-ramen-dartmouth",
+      "name": "Buta Ramen Dartmouth",
+      "website": "https://butaramen.ca/",
+      "neighborhood": "Downtown Dartmouth"
+    },
+    {
+      "restaurantId": "buta-ramen-bedford",
+      "name": "Buta Ramen Bedford",
+      "website": "https://butaramen.ca/",
+      "neighborhood": "Bedford"
+    },
+    {
+      "restaurantId": "chanoeys-pasta-dartmouth",
+      "name": "Chanoey’s Pasta — Dartmouth",
+      "website": "https://www.chanoeyspasta.com/",
+      "neighborhood": "Downtown Dartmouth"
+    },
+    {
+      "restaurantId": "evans-fresh-seafoods-dartmouth",
+      "name": "Evan’s Fresh Seafoods & Restaurant",
+      "website": "https://www.evansfreshseafoods.com/",
+      "neighborhood": "Downtown Dartmouth"
+    },
+    {
+      "restaurantId": "larrys-sandwiches-dartmouth",
+      "name": "Larry’s Sandwiches & Sides",
+      "website": "https://larryssandwiches.com/",
+      "neighborhood": "Downtown Dartmouth"
+    },
+    {
+      "restaurantId": "big-leagues-bayers-lake",
+      "name": "Big Leagues Bayer’s Lake",
+      "website": "https://bigleagues.ca/",
+      "neighborhood": "Bayers Lake"
+    },
+    {
+      "restaurantId": "juice-press-dutch-village",
+      "name": "The Juice Press — Dutch Village Road",
+      "website": "https://juicepresshfx.myshopify.com/pages/ordering-pick-up-protocol",
+      "neighborhood": "Fairview"
+    },
+    {
+      "restaurantId": "sushi-square-scotia-square",
+      "name": "Sushi Square",
+      "website": "https://sushisquare.ca/",
+      "neighborhood": "Downtown Halifax"
+    },
+    {
+      "restaurantId": "tulipan-dartmouth",
+      "name": "Tulipan",
+      "website": "https://www.tulipanrestaurant.com/",
+      "neighborhood": "Downtown Dartmouth"
+    },
+    {
+      "restaurantId": "hux-halifax",
+      "name": "HUX Bar & Bistro",
+      "website": "https://www.huxhalifax.com/",
+      "neighborhood": "Downtown Halifax"
+    },
+    {
+      "restaurantId": "retas-gottingen",
+      "name": "Reta’s",
+      "website": "https://www.retasrestaurant.com/",
+      "neighborhood": "North End"
+    },
+    {
+      "restaurantId": "waaris-dartmouth",
+      "name": "The Waaris",
+      "website": "https://www.thewaaris.com/",
+      "neighborhood": "Dartmouth Crossing"
+    },
+    {
+      "restaurantId": "via-condotti-queen",
+      "name": "Via Condotti",
+      "website": "https://www.viacondotti.ca/",
+      "neighborhood": "Spring Garden"
     }
   ],
   "failures": [
