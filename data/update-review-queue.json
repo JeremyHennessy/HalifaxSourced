@@ -8,8 +8,8 @@
       "state": "verified",
       "blocker": null,
       "url": "https://github.com/JeremyHennessy/HalifaxSourced/actions/runs/39457128592",
-      "verifiedAt": "2026-10-20",
-      "evidence": "Coordinator run 39457128592 successfully created draft PRs 121 and 122; social lane reserved behind active source-expansion review. Creation success is not data approval. PR 121 remains independently reviewed; PR 122 remains held for identity/source review.",
+      "verifiedAt": "2026-10-21",
+      "evidence": "Coordinator run 39457128592 established PR creation. PR121 and PR116 are merged. Old drafts122/131 are reconciled in PR138 with candidate history preserved; the event/source replacement lanes require tested main and real read-only coordinator verification before being reported operational.",
       "receipts": [
         "https://github.com/JeremyHennessy/HalifaxSourced/pull/121",
         "https://github.com/JeremyHennessy/HalifaxSourced/pull/122"
@@ -28,10 +28,39 @@
       "id": "held-facts-preview",
       "lane": "restaurant-facts",
       "priority": 2,
-      "state": "needs-review",
-      "blocker": "Preview changes are not accepted facts until location-specific review; preserve prior accepted records on source failure.",
-      "retryWhen": "A source-linked bounded review batch has passed identity and history checks.",
-      "url": "https://github.com/JeremyHennessy/HalifaxSourced/pull/116"
+      "state": "verified",
+      "blocker": null,
+      "retryWhen": "PR116 is already merged; inspect a newer exact-location candidate before starting further fact review.",
+      "url": "https://github.com/JeremyHennessy/HalifaxSourced/pull/116",
+      "verifiedAt": "2026-10-21",
+      "evidence": "GitHub confirms PR116 closed and merged. Do not continue displaying this old preview as an outstanding approval."
+    },
+    {
+      "id": "regional-held-leads",
+      "lane": "restaurant-facts",
+      "priority": 2,
+      "state": "needs-evidence",
+      "blocker": "43 reviewed identities remain held. Planned regional footprints are not collected coverage; current owner operation, exact branch or local-business evidence remains incomplete.",
+      "retryWhen": "A bounded source receipt resolves a named identity blocker without guessing fields.",
+      "url": "https://github.com/JeremyHennessy/HalifaxSourced/blob/main/docs/regional-discovery-followup.md"
+    },
+    {
+      "id": "meta-live-access",
+      "lane": "social-sources",
+      "priority": 2,
+      "state": "blocked",
+      "blocker": "No live Facebook or Instagram access is established. Missing credentials do not count as attempted profiles or new content. Website feeds are independent.",
+      "retryWhen": "The authorized account/app access path and required permissions are verified; no automatic credential creation or denied-source retries.",
+      "url": "https://github.com/JeremyHennessy/HalifaxSourced/blob/main/docs/social-and-first-party-ingestion.md"
+    },
+    {
+      "id": "superseded-preview-closures",
+      "lane": "publication",
+      "priority": 1,
+      "state": "needs-owner-confirmation",
+      "blocker": "Obsolete drafts122 and131 are still open and reserve event/source lanes. Branches and candidate history must be preserved.",
+      "retryWhen": "Owner explicitly confirms closing these two superseded drafts; closing them does not approve their data.",
+      "url": "https://github.com/JeremyHennessy/HalifaxSourced/pull/138"
     }
   ]
 }

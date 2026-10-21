@@ -86,6 +86,9 @@ jobs:
           SOCIAL_PULL_TIMEOUT_MS: 10000
         run: node scripts/import-meta-social.mjs
 
+      - name: Report actual Meta collection outcome
+        run: node scripts/report-social-collection-health.mjs
+
       - name: Analyze and categorize recent posts
         run: node scripts/build-recent-social-posts.mjs
 
@@ -124,6 +127,7 @@ jobs:
             data/build/thumbnail-auto-approval-report.json
             data/build/thumbnail-coverage-report.json
             docs/thumbnail-coverage-report.md
+            artifacts/social-collection-health.json
             artifacts/expanded-source-integrity-report.json
             artifacts/thumbnail-candidates-report.json
             artifacts/thumbnail-coverage-report.json

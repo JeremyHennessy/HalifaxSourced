@@ -115,3 +115,17 @@ assert.equal(browser.find(row=>row.id==='makhani-bistro-bedford').openingHours,n
 assert.equal(browser.find(row=>row.id==='mill-cove-brew-pub-bedford').hoursScope,'kitchen','Kitchen hours must not become bar hours');
 assert.equal(browser.filter(row=>row.id==='osm-node-2704746819-morris-east').length,1,'Held Morris East orphan stays intact');
 console.log(`Bedford audit passed: ${addedIds.size} additions, ${bedfordAudit.areaCorrections.length} area repairs, all ${preservedIds.length} baseline IDs retained.`);
+
+const alexandraPin=regional.accepted.find(row=>row.id==='alexandras-hammonds-plains').publishedFields;
+assert.equal(alexandraPin.coordinates,null,'Conflicting owner/directory pin must remain unpublished');
+assert.equal(alexandraPin.fieldEvidence.coordinates.disposition,'held_conflicting_coordinates');
+assert.equal(alexandraPin.fieldEvidence.coordinates.successfulSourceReceipts[0].sha256,'774292ede4aa5587ee6966f244da85748704c1467c8a1cbfddbe605c1ead24c4');
+const turkuazHours=regional.accepted.find(row=>row.id==='turkuaz-bedford').publishedFields;
+assert.equal(turkuazHours.openingHours,'Mo-Th 12:00-22:00; Fr-Sa 11:00-23:00; Su 12:00-22:00');
+const heldDisposition=JSON.parse(await readFile(new URL('data/regional-held-dispositions.json',root)));
+assert.equal(heldDisposition.records.length,43);
+assert.equal(new Set(heldDisposition.records.map(row=>row.auditKey)).size,43);
+assert.deepEqual(heldDisposition.records.map(row=>row.name).sort(),regional.held.map(row=>row.name).sort());
+assert(heldDisposition.records.every(row=>row.disposition==='retain_hold'&&row.newListingApproved===false));
+assert(!JSON.stringify(heldDisposition).includes('/workspace/'),'Published audit must not leak local work paths');
+for(const row of heldDisposition.records)for(const receipt of row.sourceAttempts||[])if(/suspendedpage|unavailable/i.test(receipt.finalUrl||''))assert.notEqual(receipt.qualifiedContentReceived,true);

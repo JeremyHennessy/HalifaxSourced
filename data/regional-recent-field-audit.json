@@ -1,0 +1,865 @@
+{
+  "version": 1,
+  "reviewedAt": "2026-10-21T15:20:19.800810+00:00",
+  "scope": "13 recently admitted locations,12 initially missing coordinates. One verified hours improvement proposed. All12 pins remain unpublished, including one now explicitly held for a material owner-versus-directory coordinate conflict.",
+  "records": [
+    {
+      "id": "turkuaz-bedford",
+      "name": "Turkuaz Restaurant",
+      "priorFields": {
+        "coordinates": {
+          "status": "unknown",
+          "observation": "Not sufficiently verified in this bounded review; no inferred value published.",
+          "sourceUrls": [
+            "https://turkuazrestaurant.ca/",
+            "https://turkuazrestaurant.ca/about-us",
+            "https://turkuazrestaurant.ca/menu"
+          ],
+          "observedAt": "2026-10-21T13:10:10.538180+00:00"
+        },
+        "hours": {
+          "status": "unknown",
+          "observation": "Not sufficiently verified in this bounded review; no inferred value published.",
+          "sourceUrls": [
+            "https://turkuazrestaurant.ca/",
+            "https://turkuazrestaurant.ca/about-us",
+            "https://turkuazrestaurant.ca/menu"
+          ],
+          "observedAt": "2026-10-21T13:10:10.538180+00:00"
+        },
+        "menu": {
+          "status": "verified",
+          "observation": "Fresh official menu page linked by the location website; a pointer only, no prices or image reuse.",
+          "sourceUrls": [
+            "https://turkuazrestaurant.ca/",
+            "https://turkuazrestaurant.ca/about-us",
+            "https://turkuazrestaurant.ca/menu"
+          ],
+          "observedAt": "2026-10-21T13:10:10.538180+00:00"
+        },
+        "phone": {
+          "status": "verified",
+          "observation": "Official location page gives the precise address and telephone and offers restaurant dining and takeaway.",
+          "sourceUrls": [
+            "https://turkuazrestaurant.ca/",
+            "https://turkuazrestaurant.ca/about-us",
+            "https://turkuazrestaurant.ca/menu"
+          ],
+          "observedAt": "2026-10-21T13:10:10.538180+00:00"
+        },
+        "contact": {
+          "status": "verified",
+          "observation": "Official location page gives the precise address and telephone and offers restaurant dining and takeaway.",
+          "sourceUrls": [
+            "https://turkuazrestaurant.ca/",
+            "https://turkuazrestaurant.ca/about-us",
+            "https://turkuazrestaurant.ca/menu"
+          ],
+          "observedAt": "2026-10-21T13:10:10.538180+00:00"
+        }
+      },
+      "proposedChanges": {
+        "hours": {
+          "status": "verified",
+          "value": {
+            "monday": [
+              {
+                "open": "12:00",
+                "close": "22:00",
+                "overnight": false,
+                "sourceForm": "official_website_contact_widget_structured_hours"
+              }
+            ],
+            "tuesday": [
+              {
+                "open": "12:00",
+                "close": "22:00",
+                "overnight": false,
+                "sourceForm": "official_website_contact_widget_structured_hours"
+              }
+            ],
+            "wednesday": [
+              {
+                "open": "12:00",
+                "close": "22:00",
+                "overnight": false,
+                "sourceForm": "official_website_contact_widget_structured_hours"
+              }
+            ],
+            "thursday": [
+              {
+                "open": "12:00",
+                "close": "22:00",
+                "overnight": false,
+                "sourceForm": "official_website_contact_widget_structured_hours"
+              }
+            ],
+            "friday": [
+              {
+                "open": "11:00",
+                "close": "23:00",
+                "overnight": false,
+                "sourceForm": "official_website_contact_widget_structured_hours"
+              }
+            ],
+            "saturday": [
+              {
+                "open": "11:00",
+                "close": "23:00",
+                "overnight": false,
+                "sourceForm": "official_website_contact_widget_structured_hours"
+              }
+            ],
+            "sunday": [
+              {
+                "open": "12:00",
+                "close": "22:00",
+                "overnight": false,
+                "sourceForm": "official_website_contact_widget_structured_hours"
+              }
+            ]
+          },
+          "sourceUrls": [
+            "https://turkuazrestaurant.ca/",
+            "https://img1.wsimg.com/blobby/go/79a24e76-4851-4cec-bb8c-4389200588ff/gpub/8e7b2625af52af6c/script.js"
+          ],
+          "observedAt": "2026-10-21T15:11:07.122697+00:00",
+          "observation": "Homepage-linked public contact widget structuredHours explicitly contains every weekday and 24-hour opening/closing times. Today-only homepage display is not extrapolated. Ordinary weekly service, no holiday assumption.",
+          "method": "owner_contact_widget_structured_hours",
+          "successfulSourceReceipts": [
+            {
+              "url": "https://img1.wsimg.com/blobby/go/79a24e76-4851-4cec-bb8c-4389200588ff/gpub/8e7b2625af52af6c/script.js",
+              "fetchedAt": "2026-10-21T15:11:07.122697+00:00",
+              "httpStatus": 200,
+              "sha256": "d5010204584c04ed537762fccfa3542bc639f9160d0426989b845074782dea76"
+            }
+          ],
+          "freshContentReceived": true
+        }
+      },
+      "remainingCoordinateStatus": "unknown",
+      "coordinateReview": "No explicit owner target coordinate pair located. Reject map viewport/address-search coordinates; keep null."
+    },
+    {
+      "id": "izzys-bagel-bedford",
+      "name": "Izzy’s Bagel Co.",
+      "priorFields": {
+        "coordinates": {
+          "status": "unknown",
+          "observation": "Not sufficiently verified in this bounded review; no inferred value published.",
+          "sourceUrls": [
+            "https://izzysbagel.com/",
+            "https://nslegislature.ca/sites/default/files/pdfs/proceedings/hansard/61-5/h13apr15.pdf"
+          ],
+          "observedAt": "2026-10-21T13:10:10.538180+00:00"
+        },
+        "hours": {
+          "status": "verified",
+          "observation": "Complete owner-published weekly schedule. Ordinary weekly service; holiday exceptions not inferred.",
+          "sourceUrls": [
+            "https://izzysbagel.com/",
+            "https://nslegislature.ca/sites/default/files/pdfs/proceedings/hansard/61-5/h13apr15.pdf"
+          ],
+          "observedAt": "2026-10-21T13:10:10.538180+00:00"
+        },
+        "menu": {
+          "status": "unknown",
+          "observation": "Not sufficiently verified in this bounded review; no inferred value published.",
+          "sourceUrls": [
+            "https://izzysbagel.com/",
+            "https://nslegislature.ca/sites/default/files/pdfs/proceedings/hansard/61-5/h13apr15.pdf"
+          ],
+          "observedAt": "2026-10-21T13:10:10.538180+00:00"
+        },
+        "phone": {
+          "status": "verified",
+          "observation": "Fresh owner homepage publishes bagel offerings, the Bedford address, phone and weekly schedule.",
+          "sourceUrls": [
+            "https://izzysbagel.com/",
+            "https://nslegislature.ca/sites/default/files/pdfs/proceedings/hansard/61-5/h13apr15.pdf"
+          ],
+          "observedAt": "2026-10-21T13:10:10.538180+00:00"
+        },
+        "contact": {
+          "status": "verified",
+          "observation": "Fresh owner homepage publishes bagel offerings, the Bedford address, phone and weekly schedule.",
+          "sourceUrls": [
+            "https://izzysbagel.com/",
+            "https://nslegislature.ca/sites/default/files/pdfs/proceedings/hansard/61-5/h13apr15.pdf"
+          ],
+          "observedAt": "2026-10-21T13:10:10.538180+00:00"
+        }
+      },
+      "proposedChanges": {},
+      "remainingCoordinateStatus": "unknown",
+      "coordinateReview": "No explicit owner target coordinate pair located. Reject map viewport/address-search coordinates; keep null."
+    },
+    {
+      "id": "makhani-bistro-bedford",
+      "name": "Makhani Bistro",
+      "priorFields": {
+        "coordinates": {
+          "status": "verified",
+          "observation": "Owner location HTML explicitly pairs businessLocationCoordinates with the same street address. Not geocoded from a community or map viewport.",
+          "sourceUrls": [
+            "https://www.makhanibistro.ca/hours-and-locations",
+            "https://www.makhanibistro.ca/about",
+            "https://www.makhanibistro.ca/menu"
+          ],
+          "observedAt": "2026-10-21T13:10:10.538180+00:00"
+        },
+        "hours": {
+          "status": "unknown",
+          "observation": "Not sufficiently verified in this bounded review; no inferred value published.",
+          "sourceUrls": [
+            "https://www.makhanibistro.ca/hours-and-locations",
+            "https://www.makhanibistro.ca/about",
+            "https://www.makhanibistro.ca/menu"
+          ],
+          "observedAt": "2026-10-21T13:10:10.538180+00:00"
+        },
+        "menu": {
+          "status": "verified",
+          "observation": "Fresh official menu page linked by the location website; a pointer only, no prices or image reuse.",
+          "sourceUrls": [
+            "https://www.makhanibistro.ca/hours-and-locations",
+            "https://www.makhanibistro.ca/about",
+            "https://www.makhanibistro.ca/menu"
+          ],
+          "observedAt": "2026-10-21T13:10:10.538180+00:00"
+        },
+        "phone": {
+          "status": "verified",
+          "observation": "Current official location page and menu identify its Sunnyside Mall address and food service.",
+          "sourceUrls": [
+            "https://www.makhanibistro.ca/hours-and-locations",
+            "https://www.makhanibistro.ca/about",
+            "https://www.makhanibistro.ca/menu"
+          ],
+          "observedAt": "2026-10-21T13:10:10.538180+00:00"
+        },
+        "contact": {
+          "status": "verified",
+          "observation": "Current official location page and menu identify its Sunnyside Mall address and food service.",
+          "sourceUrls": [
+            "https://www.makhanibistro.ca/hours-and-locations",
+            "https://www.makhanibistro.ca/about",
+            "https://www.makhanibistro.ca/menu"
+          ],
+          "observedAt": "2026-10-21T13:10:10.538180+00:00"
+        }
+      },
+      "proposedChanges": {},
+      "remainingCoordinateStatus": "verified",
+      "coordinateReview": "Explicit owner coordinates paired with exact business address."
+    },
+    {
+      "id": "resto-urban-dining-bedford",
+      "name": "Resto Urban Dining",
+      "priorFields": {
+        "coordinates": {
+          "status": "unknown",
+          "observation": "Not sufficiently verified in this bounded review; no inferred value published.",
+          "sourceUrls": [
+            "https://www.restourbandining.com/contact-resto",
+            "https://www.restourbandining.com/menu",
+            "https://rans.ca/restaurants/resto-urban-dining-22/"
+          ],
+          "observedAt": "2026-10-21T13:10:10.538180+00:00"
+        },
+        "hours": {
+          "status": "unknown",
+          "observation": "Not sufficiently verified in this bounded review; no inferred value published.",
+          "sourceUrls": [
+            "https://www.restourbandining.com/contact-resto",
+            "https://www.restourbandining.com/menu",
+            "https://rans.ca/restaurants/resto-urban-dining-22/"
+          ],
+          "observedAt": "2026-10-21T13:10:10.538180+00:00"
+        },
+        "menu": {
+          "status": "verified",
+          "observation": "Fresh official menu page linked by the location website; a pointer only, no prices or image reuse.",
+          "sourceUrls": [
+            "https://www.restourbandining.com/contact-resto",
+            "https://www.restourbandining.com/menu",
+            "https://rans.ca/restaurants/resto-urban-dining-22/"
+          ],
+          "observedAt": "2026-10-21T13:10:10.538180+00:00"
+        },
+        "phone": {
+          "status": "verified",
+          "observation": "Fresh official contact page has address and phone; current menus page offers main and other menus.",
+          "sourceUrls": [
+            "https://www.restourbandining.com/contact-resto",
+            "https://www.restourbandining.com/menu",
+            "https://rans.ca/restaurants/resto-urban-dining-22/"
+          ],
+          "observedAt": "2026-10-21T13:10:10.538180+00:00"
+        },
+        "contact": {
+          "status": "verified",
+          "observation": "Fresh official contact page has address and phone; current menus page offers main and other menus.",
+          "sourceUrls": [
+            "https://www.restourbandining.com/contact-resto",
+            "https://www.restourbandining.com/menu",
+            "https://rans.ca/restaurants/resto-urban-dining-22/"
+          ],
+          "observedAt": "2026-10-21T13:10:10.538180+00:00"
+        }
+      },
+      "proposedChanges": {},
+      "remainingCoordinateStatus": "unknown",
+      "coordinateReview": "No explicit owner target coordinate pair located. Reject map viewport/address-search coordinates; keep null."
+    },
+    {
+      "id": "true-north-diner-bedford",
+      "name": "True North Diner",
+      "priorFields": {
+        "coordinates": {
+          "status": "unknown",
+          "observation": "Not sufficiently verified in this bounded review; no inferred value published.",
+          "sourceUrls": [
+            "https://www.truenorthdiner.com/",
+            "https://www.truenorthdiner.com/main-menu/",
+            "https://www.graftonconnor.com/"
+          ],
+          "observedAt": "2026-10-21T13:10:10.538180+00:00"
+        },
+        "hours": {
+          "status": "unknown",
+          "observation": "Not sufficiently verified in this bounded review; no inferred value published.",
+          "sourceUrls": [
+            "https://www.truenorthdiner.com/",
+            "https://www.truenorthdiner.com/main-menu/",
+            "https://www.graftonconnor.com/"
+          ],
+          "observedAt": "2026-10-21T13:10:10.538180+00:00"
+        },
+        "menu": {
+          "status": "verified",
+          "observation": "Fresh official menu page linked by the location website; a pointer only, no prices or image reuse.",
+          "sourceUrls": [
+            "https://www.truenorthdiner.com/",
+            "https://www.truenorthdiner.com/main-menu/",
+            "https://www.graftonconnor.com/"
+          ],
+          "observedAt": "2026-10-21T13:10:10.538180+00:00"
+        },
+        "phone": {
+          "status": "verified",
+          "observation": "Fresh official homepage publishes the Bedford Place location, current menu and contact information.",
+          "sourceUrls": [
+            "https://www.truenorthdiner.com/",
+            "https://www.truenorthdiner.com/main-menu/",
+            "https://www.graftonconnor.com/"
+          ],
+          "observedAt": "2026-10-21T13:10:10.538180+00:00"
+        },
+        "contact": {
+          "status": "verified",
+          "observation": "Fresh official homepage publishes the Bedford Place location, current menu and contact information.",
+          "sourceUrls": [
+            "https://www.truenorthdiner.com/",
+            "https://www.truenorthdiner.com/main-menu/",
+            "https://www.graftonconnor.com/"
+          ],
+          "observedAt": "2026-10-21T13:10:10.538180+00:00"
+        }
+      },
+      "proposedChanges": {},
+      "remainingCoordinateStatus": "unknown",
+      "coordinateReview": "No explicit owner target coordinate pair located. Reject map viewport/address-search coordinates; keep null."
+    },
+    {
+      "id": "mill-cove-brew-pub-bedford",
+      "name": "Mill Cove Brew Pub",
+      "priorFields": {
+        "coordinates": {
+          "status": "unknown",
+          "observation": "Not sufficiently verified in this bounded review; no inferred value published.",
+          "sourceUrls": [
+            "https://millcovebrewpub.com/menu-3-col/",
+            "https://www.graftonconnor.com/"
+          ],
+          "observedAt": "2026-10-21T13:10:10.538180+00:00"
+        },
+        "hours": {
+          "status": "verified",
+          "observation": "Complete owner-published weekly schedule. Kitchen service only; not bar opening hours.",
+          "sourceUrls": [
+            "https://millcovebrewpub.com/menu-3-col/",
+            "https://www.graftonconnor.com/"
+          ],
+          "observedAt": "2026-10-21T13:10:10.538180+00:00"
+        },
+        "menu": {
+          "status": "verified",
+          "observation": "Fresh official menu page linked by the location website; a pointer only, no prices or image reuse.",
+          "sourceUrls": [
+            "https://millcovebrewpub.com/menu-3-col/",
+            "https://www.graftonconnor.com/"
+          ],
+          "observedAt": "2026-10-21T13:10:10.538180+00:00"
+        },
+        "phone": {
+          "status": "verified",
+          "observation": "Official menu/contact footer identifies the exact location, current public food service and separate kitchen hours.",
+          "sourceUrls": [
+            "https://millcovebrewpub.com/menu-3-col/",
+            "https://www.graftonconnor.com/"
+          ],
+          "observedAt": "2026-10-21T13:10:10.538180+00:00"
+        },
+        "contact": {
+          "status": "verified",
+          "observation": "Official menu/contact footer identifies the exact location, current public food service and separate kitchen hours.",
+          "sourceUrls": [
+            "https://millcovebrewpub.com/menu-3-col/",
+            "https://www.graftonconnor.com/"
+          ],
+          "observedAt": "2026-10-21T13:10:10.538180+00:00"
+        }
+      },
+      "proposedChanges": {},
+      "remainingCoordinateStatus": "unknown",
+      "coordinateReview": "No explicit owner target coordinate pair located. Reject map viewport/address-search coordinates; keep null."
+    },
+    {
+      "id": "cha-baa-thai-bedford",
+      "name": "Cha Baa Thai – Bedford",
+      "priorFields": {
+        "coordinates": {
+          "status": "unknown",
+          "observation": "Not sufficiently verified in this bounded review; no inferred value published.",
+          "sourceUrls": [
+            "https://chabaathai.ca/bedford/",
+            "https://chabaathai.ca/our-menu/",
+            "https://haligonia.ca/chaa-baa-thai-s-new-bedford-location-opens-78934/"
+          ],
+          "observedAt": "2026-10-21T13:10:10.538180+00:00"
+        },
+        "hours": {
+          "status": "verified",
+          "observation": "Complete owner-published weekly schedule. Ordinary weekly service; holiday exceptions not inferred.",
+          "sourceUrls": [
+            "https://chabaathai.ca/bedford/",
+            "https://chabaathai.ca/our-menu/",
+            "https://haligonia.ca/chaa-baa-thai-s-new-bedford-location-opens-78934/"
+          ],
+          "observedAt": "2026-10-21T13:10:10.538180+00:00"
+        },
+        "menu": {
+          "status": "verified",
+          "observation": "Fresh official menu page linked by the location website; a pointer only, no prices or image reuse.",
+          "sourceUrls": [
+            "https://chabaathai.ca/bedford/",
+            "https://chabaathai.ca/our-menu/",
+            "https://haligonia.ca/chaa-baa-thai-s-new-bedford-location-opens-78934/"
+          ],
+          "observedAt": "2026-10-21T13:10:10.538180+00:00"
+        },
+        "phone": {
+          "status": "verified",
+          "observation": "Official Bedford-specific page gives exact address, telephone, full weekly hours and shared menu link.",
+          "sourceUrls": [
+            "https://chabaathai.ca/bedford/",
+            "https://chabaathai.ca/our-menu/",
+            "https://haligonia.ca/chaa-baa-thai-s-new-bedford-location-opens-78934/"
+          ],
+          "observedAt": "2026-10-21T13:10:10.538180+00:00"
+        },
+        "contact": {
+          "status": "verified",
+          "observation": "Official Bedford-specific page gives exact address, telephone, full weekly hours and shared menu link.",
+          "sourceUrls": [
+            "https://chabaathai.ca/bedford/",
+            "https://chabaathai.ca/our-menu/",
+            "https://haligonia.ca/chaa-baa-thai-s-new-bedford-location-opens-78934/"
+          ],
+          "observedAt": "2026-10-21T13:10:10.538180+00:00"
+        }
+      },
+      "proposedChanges": {},
+      "remainingCoordinateStatus": "unknown",
+      "coordinateReview": "No explicit owner target coordinate pair located. Reject map viewport/address-search coordinates; keep null."
+    },
+    {
+      "id": "may-garden-mill-cove-bedford",
+      "name": "May Garden – Mill Cove",
+      "priorFields": {
+        "coordinates": {
+          "status": "unknown",
+          "observation": "Not sufficiently verified in this bounded review; no inferred value published.",
+          "sourceUrls": [
+            "https://maygarden.ca/",
+            "https://maygarden.ca/about-2/",
+            "https://maygarden.ca/contact-us-2/",
+            "https://www.crombie.ca/wp-content/uploads/2026/04/NS-Mill-Cove-Plaza-Site-04-08-2026.pdf"
+          ],
+          "observedAt": "2026-10-21T13:10:10.538180+00:00"
+        },
+        "hours": {
+          "status": "verified",
+          "observation": "Complete owner-published weekly schedule. Ordinary weekly service; holiday exceptions not inferred.",
+          "sourceUrls": [
+            "https://maygarden.ca/",
+            "https://maygarden.ca/about-2/",
+            "https://maygarden.ca/contact-us-2/",
+            "https://www.crombie.ca/wp-content/uploads/2026/04/NS-Mill-Cove-Plaza-Site-04-08-2026.pdf"
+          ],
+          "observedAt": "2026-10-21T13:10:10.538180+00:00"
+        },
+        "menu": {
+          "status": "unknown",
+          "observation": "Not sufficiently verified in this bounded review; no inferred value published.",
+          "sourceUrls": [
+            "https://maygarden.ca/",
+            "https://maygarden.ca/about-2/",
+            "https://maygarden.ca/contact-us-2/",
+            "https://www.crombie.ca/wp-content/uploads/2026/04/NS-Mill-Cove-Plaza-Site-04-08-2026.pdf"
+          ],
+          "observedAt": "2026-10-21T13:10:10.538180+00:00"
+        },
+        "phone": {
+          "status": "verified",
+          "observation": "Owner contact page specifically publishes active Mill Cove service and telephone; current shopping-centre owner plan corroborates exact civic address and distinct tenancy.",
+          "sourceUrls": [
+            "https://maygarden.ca/",
+            "https://maygarden.ca/about-2/",
+            "https://maygarden.ca/contact-us-2/",
+            "https://www.crombie.ca/wp-content/uploads/2026/04/NS-Mill-Cove-Plaza-Site-04-08-2026.pdf"
+          ],
+          "observedAt": "2026-10-21T13:10:10.538180+00:00"
+        },
+        "contact": {
+          "status": "verified",
+          "observation": "Owner contact page specifically publishes active Mill Cove service and telephone; current shopping-centre owner plan corroborates exact civic address and distinct tenancy.",
+          "sourceUrls": [
+            "https://maygarden.ca/",
+            "https://maygarden.ca/about-2/",
+            "https://maygarden.ca/contact-us-2/",
+            "https://www.crombie.ca/wp-content/uploads/2026/04/NS-Mill-Cove-Plaza-Site-04-08-2026.pdf"
+          ],
+          "observedAt": "2026-10-21T13:10:10.538180+00:00"
+        }
+      },
+      "proposedChanges": {},
+      "remainingCoordinateStatus": "unknown",
+      "coordinateReview": "No explicit owner target coordinate pair located. Reject map viewport/address-search coordinates; keep null."
+    },
+    {
+      "id": "thai-ivory-bedford",
+      "name": "Thai Ivory Cuisine – Bedford",
+      "priorFields": {
+        "coordinates": {
+          "status": "unknown",
+          "observation": "Not sufficiently verified in this bounded review; no inferred value published.",
+          "sourceUrls": [
+            "https://www.thaiivorycuisine.ca/home",
+            "https://www.thaiivorycuisine.ca/about-us",
+            "https://www.thaiivorycuisine.ca/menu"
+          ],
+          "observedAt": "2026-10-21T13:10:10.538180+00:00"
+        },
+        "hours": {
+          "status": "verified",
+          "observation": "Complete owner-published weekly schedule. Ordinary weekly service; holiday exceptions not inferred.",
+          "sourceUrls": [
+            "https://www.thaiivorycuisine.ca/home",
+            "https://www.thaiivorycuisine.ca/about-us",
+            "https://www.thaiivorycuisine.ca/menu"
+          ],
+          "observedAt": "2026-10-21T13:10:10.538180+00:00"
+        },
+        "menu": {
+          "status": "verified",
+          "observation": "Fresh official menu page linked by the location website; a pointer only, no prices or image reuse.",
+          "sourceUrls": [
+            "https://www.thaiivorycuisine.ca/home",
+            "https://www.thaiivorycuisine.ca/about-us",
+            "https://www.thaiivorycuisine.ca/menu"
+          ],
+          "observedAt": "2026-10-21T13:10:10.538180+00:00"
+        },
+        "phone": {
+          "status": "verified",
+          "observation": "Current owner site explicitly publishes the new Bedford address, telephone, full weekly hours and menu.",
+          "sourceUrls": [
+            "https://www.thaiivorycuisine.ca/home",
+            "https://www.thaiivorycuisine.ca/about-us",
+            "https://www.thaiivorycuisine.ca/menu"
+          ],
+          "observedAt": "2026-10-21T13:10:10.538180+00:00"
+        },
+        "contact": {
+          "status": "verified",
+          "observation": "Current owner site explicitly publishes the new Bedford address, telephone, full weekly hours and menu.",
+          "sourceUrls": [
+            "https://www.thaiivorycuisine.ca/home",
+            "https://www.thaiivorycuisine.ca/about-us",
+            "https://www.thaiivorycuisine.ca/menu"
+          ],
+          "observedAt": "2026-10-21T13:10:10.538180+00:00"
+        }
+      },
+      "proposedChanges": {},
+      "remainingCoordinateStatus": "unknown",
+      "coordinateReview": "No explicit owner target coordinate pair located. Reject map viewport/address-search coordinates; keep null."
+    },
+    {
+      "id": "on-the-wedge-bedford",
+      "name": "On The Wedge",
+      "priorFields": {
+        "coordinates": {
+          "status": "unknown",
+          "observation": "Not sufficiently verified in this bounded review; no inferred value published.",
+          "sourceUrls": [
+            "https://www.onthewedgepizza.com/",
+            "https://www.onthewedgepizza.com/pizza/"
+          ],
+          "observedAt": "2026-10-21T13:10:10.538180+00:00"
+        },
+        "hours": {
+          "status": "verified",
+          "observation": "Complete owner-published weekly schedule. Ordinary weekly service; holiday exceptions not inferred.",
+          "sourceUrls": [
+            "https://www.onthewedgepizza.com/",
+            "https://www.onthewedgepizza.com/pizza/"
+          ],
+          "observedAt": "2026-10-21T13:10:10.538180+00:00"
+        },
+        "menu": {
+          "status": "verified",
+          "observation": "Fresh official menu page linked by the location website; a pointer only, no prices or image reuse.",
+          "sourceUrls": [
+            "https://www.onthewedgepizza.com/",
+            "https://www.onthewedgepizza.com/pizza/"
+          ],
+          "observedAt": "2026-10-21T13:10:10.538180+00:00"
+        },
+        "phone": {
+          "status": "verified",
+          "observation": "Current homepage provides the specific Marketside location, phone, full weekly hours and food/menu service.",
+          "sourceUrls": [
+            "https://www.onthewedgepizza.com/",
+            "https://www.onthewedgepizza.com/pizza/"
+          ],
+          "observedAt": "2026-10-21T13:10:10.538180+00:00"
+        },
+        "contact": {
+          "status": "verified",
+          "observation": "Current homepage provides the specific Marketside location, phone, full weekly hours and food/menu service.",
+          "sourceUrls": [
+            "https://www.onthewedgepizza.com/",
+            "https://www.onthewedgepizza.com/pizza/"
+          ],
+          "observedAt": "2026-10-21T13:10:10.538180+00:00"
+        }
+      },
+      "proposedChanges": {},
+      "remainingCoordinateStatus": "unknown",
+      "coordinateReview": "No explicit owner target coordinate pair located. Reject map viewport/address-search coordinates; keep null."
+    },
+    {
+      "id": "alexandras-hammonds-plains",
+      "name": "Alexandra’s Pizza — Hammonds Plains",
+      "priorFields": {
+        "coordinates": {
+          "status": "unknown",
+          "observation": "Not sufficiently verified in this bounded review; no inferred value published.",
+          "sourceUrls": [
+            "https://www.alexandraspizza.com/locations/hammonds-plains-tantallon",
+            "https://www.alexandraspizza.com/our-story"
+          ],
+          "observedAt": "2026-10-21T13:10:10.538180+00:00"
+        },
+        "hours": {
+          "status": "verified",
+          "observation": "Complete owner-published weekly schedule. Ordinary weekly service; holiday exceptions not inferred.",
+          "sourceUrls": [
+            "https://www.alexandraspizza.com/locations/hammonds-plains-tantallon",
+            "https://www.alexandraspizza.com/our-story"
+          ],
+          "observedAt": "2026-10-21T13:10:10.538180+00:00"
+        },
+        "menu": {
+          "status": "unknown",
+          "observation": "Not sufficiently verified in this bounded review; no inferred value published.",
+          "sourceUrls": [
+            "https://www.alexandraspizza.com/locations/hammonds-plains-tantallon",
+            "https://www.alexandraspizza.com/our-story"
+          ],
+          "observedAt": "2026-10-21T13:10:10.538180+00:00"
+        },
+        "phone": {
+          "status": "verified",
+          "observation": "Official branch page publishes exact civic address, takeout/delivery, hours and ordering.",
+          "sourceUrls": [
+            "https://www.alexandraspizza.com/locations/hammonds-plains-tantallon",
+            "https://www.alexandraspizza.com/our-story"
+          ],
+          "observedAt": "2026-10-21T13:10:10.538180+00:00"
+        },
+        "contact": {
+          "status": "verified",
+          "observation": "Official branch page publishes exact civic address, takeout/delivery, hours and ordering.",
+          "sourceUrls": [
+            "https://www.alexandraspizza.com/locations/hammonds-plains-tantallon",
+            "https://www.alexandraspizza.com/our-story"
+          ],
+          "observedAt": "2026-10-21T13:10:10.538180+00:00"
+        }
+      },
+      "proposedChanges": {
+        "coordinates": {
+          "status": "held",
+          "value": null,
+          "sourceUrls": [
+            "https://www.alexandraspizza.com/locations/hammonds-plains-tantallon",
+            "https://verview.com/biz/9123002-alexandras-pizza-hammonds-plains-nova-scotia"
+          ],
+          "observedAt": "2026-10-21T15:17:32.743688+00:00",
+          "observation": "Owner Restaurant JSON-LD explicitly pairs1679 Hammonds Plains Rd with44.7544,-63.7855, but the exact-business directory pairs the same civic address with44.7331801,-63.7617245. Approximately3km discrepancy is material. Neither coordinate published until current exact civic/owner pin is independently reconciled. Directory map dates to2018, so it is conflict evidence, not a replacement pin.",
+          "method": "conflicting_explicit_coordinate_sources",
+          "successfulSourceReceipts": [
+            {
+              "url": "https://www.alexandraspizza.com/locations/hammonds-plains-tantallon",
+              "fetchedAt": "2026-10-21T13:05:16.962518+00:00",
+              "httpStatus": 200,
+              "sha256": "774292ede4aa5587ee6966f244da85748704c1467c8a1cbfddbe605c1ead24c4"
+            },
+            {
+              "url": "https://verview.com/biz/9123002-alexandras-pizza-hammonds-plains-nova-scotia",
+              "fetchedAt": "2026-10-21T15:17:32.743688+00:00",
+              "httpStatus": 200,
+              "sha256": "11bdc1fdc3041d719f5b2eeaa45b8fc7eba19c77d990e77ee122626d8ba57566"
+            }
+          ],
+          "freshContentReceived": true
+        }
+      },
+      "remainingCoordinateStatus": "held",
+      "coordinateReview": "Owner Restaurant JSON-LD explicitly pairs1679 Hammonds Plains Rd with44.7544,-63.7855, but the exact-business directory pairs the same civic address with44.7331801,-63.7617245. Approximately3km discrepancy is material. Neither coordinate published until current exact civic/owner pin is independently reconciled. Directory map dates to2018, so it is conflict evidence, not a replacement pin."
+    },
+    {
+      "id": "jessys-hammonds-plains",
+      "name": "Jessy’s Pizza — Hammonds Plains",
+      "priorFields": {
+        "coordinates": {
+          "status": "unknown",
+          "observation": "Not sufficiently verified in this bounded review; no inferred value published.",
+          "sourceUrls": [
+            "https://jessyspizza.ca/",
+            "https://jessyspizza.ca/menu-nova-scotia/"
+          ],
+          "observedAt": "2026-10-21T13:10:10.538180+00:00"
+        },
+        "hours": {
+          "status": "verified",
+          "observation": "Complete owner-published weekly schedule. Ordinary weekly service; holiday exceptions not inferred.",
+          "sourceUrls": [
+            "https://jessyspizza.ca/",
+            "https://jessyspizza.ca/menu-nova-scotia/"
+          ],
+          "observedAt": "2026-10-21T13:10:10.538180+00:00"
+        },
+        "menu": {
+          "status": "unknown",
+          "observation": "Not sufficiently verified in this bounded review; no inferred value published.",
+          "sourceUrls": [
+            "https://jessyspizza.ca/",
+            "https://jessyspizza.ca/menu-nova-scotia/"
+          ],
+          "observedAt": "2026-10-21T13:10:10.538180+00:00"
+        },
+        "phone": {
+          "status": "verified",
+          "observation": "Official Nova Scotia menu location selector supplies exact civic address, phone, hours and branch order link.",
+          "sourceUrls": [
+            "https://jessyspizza.ca/",
+            "https://jessyspizza.ca/menu-nova-scotia/"
+          ],
+          "observedAt": "2026-10-21T13:10:10.538180+00:00"
+        },
+        "contact": {
+          "status": "verified",
+          "observation": "Official Nova Scotia menu location selector supplies exact civic address, phone, hours and branch order link.",
+          "sourceUrls": [
+            "https://jessyspizza.ca/",
+            "https://jessyspizza.ca/menu-nova-scotia/"
+          ],
+          "observedAt": "2026-10-21T13:10:10.538180+00:00"
+        }
+      },
+      "proposedChanges": {},
+      "remainingCoordinateStatus": "unknown",
+      "coordinateReview": "No explicit owner target coordinate pair located. Reject map viewport/address-search coordinates; keep null."
+    },
+    {
+      "id": "woodfire-mezze-west-bedford",
+      "name": "WoodFire Mezze",
+      "priorFields": {
+        "coordinates": {
+          "status": "unknown",
+          "observation": "Not sufficiently verified in this bounded review; no inferred value published.",
+          "sourceUrls": [
+            "https://www.woodfiremezze.ca/contact",
+            "https://www.woodfiremezze.ca/about",
+            "https://www.woodfiremezze.ca/assets/index-Rmgj6LiG.js",
+            "https://www.woodfiremezze.ca/menu"
+          ],
+          "observedAt": "2026-10-21T13:10:10.538180+00:00"
+        },
+        "hours": {
+          "status": "verified",
+          "observation": "Complete owner-published weekly schedule. Ordinary weekly service; holiday exceptions not inferred.",
+          "sourceUrls": [
+            "https://www.woodfiremezze.ca/contact",
+            "https://www.woodfiremezze.ca/about",
+            "https://www.woodfiremezze.ca/assets/index-Rmgj6LiG.js",
+            "https://www.woodfiremezze.ca/menu"
+          ],
+          "observedAt": "2026-10-21T13:10:10.538180+00:00"
+        },
+        "menu": {
+          "status": "verified",
+          "observation": "Fresh official menu page linked by the location website; a pointer only, no prices or image reuse.",
+          "sourceUrls": [
+            "https://www.woodfiremezze.ca/contact",
+            "https://www.woodfiremezze.ca/about",
+            "https://www.woodfiremezze.ca/assets/index-Rmgj6LiG.js",
+            "https://www.woodfiremezze.ca/menu"
+          ],
+          "observedAt": "2026-10-21T13:10:10.538180+00:00"
+        },
+        "phone": {
+          "status": "verified",
+          "observation": "Official contact, menus and order links identify West Bedford address.",
+          "sourceUrls": [
+            "https://www.woodfiremezze.ca/contact",
+            "https://www.woodfiremezze.ca/about",
+            "https://www.woodfiremezze.ca/assets/index-Rmgj6LiG.js",
+            "https://www.woodfiremezze.ca/menu"
+          ],
+          "observedAt": "2026-10-21T13:10:10.538180+00:00"
+        },
+        "contact": {
+          "status": "verified",
+          "observation": "Official contact, menus and order links identify West Bedford address.",
+          "sourceUrls": [
+            "https://www.woodfiremezze.ca/contact",
+            "https://www.woodfiremezze.ca/about",
+            "https://www.woodfiremezze.ca/assets/index-Rmgj6LiG.js",
+            "https://www.woodfiremezze.ca/menu"
+          ],
+          "observedAt": "2026-10-21T13:10:10.538180+00:00"
+        }
+      },
+      "proposedChanges": {},
+      "remainingCoordinateStatus": "unknown",
+      "coordinateReview": "No explicit owner target coordinate pair located. Reject map viewport/address-search coordinates; keep null."
+    }
+  ],
+  "baselineCommit": "879a4fb72bee1a6091ad1b85a6d42c3753fae745"
+}

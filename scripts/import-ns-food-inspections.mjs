@@ -4,7 +4,16 @@ const baseUrl = 'https://novascotia.ca/nse/food-protection/reports/';
 const sourceName = 'Government of Nova Scotia Food Establishment Inspection Reports';
 const jsonUrl = new URL('../data/build/ns-food-inspections.json', import.meta.url);
 const jsUrl = new URL('../data/ns-food-inspections.js', import.meta.url);
-const cities = [...new Set((process.env.NS_FOOD_CITIES ?? 'Halifax,Dartmouth,Bedford').split(',').map(city => city.trim()).filter(Boolean))];
+let selectedCities = process.env.NS_FOOD_CITIES;
+if (process.env.NS_FOOD_BATCH) {
+  if (selectedCities !== undefined) throw new Error('Choose NS_FOOD_BATCH or NS_FOOD_CITIES, not both');
+  const manifest = JSON.parse(await readFile(new URL('../data/regional-discovery-scope.json', import.meta.url),'utf8'));
+  const batch = manifest.inspections.batches.find(row => row.id === process.env.NS_FOOD_BATCH);
+  if (!batch) throw new Error('Unknown inspection locality batch');
+  selectedCities = batch.cities.join(',');
+}
+const cities = [...new Set((selectedCities ?? 'Halifax,Dartmouth,Bedford').split(',').map(city => city.trim()).filter(Boolean))];
+if (cities.length > 3) throw new Error('Inspection refresh is bounded to at most three explicit localities per run');
 const timeoutMs = Number(process.env.NS_FOOD_TIMEOUT_MS || 15000);
 const headers = { 'User-Agent': 'HalifaxSourced/0.1 (+https://github.com/JeremyHennessy/HalifaxSourced)' };
 

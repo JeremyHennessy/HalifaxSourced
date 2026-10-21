@@ -14,6 +14,7 @@ try {
   await mkdir(join(root, 'scripts'), {recursive:true});
   await mkdir(join(root, 'data', 'build'), {recursive:true});
   await copyFile(new URL('./import-ns-food-inspections.mjs',import.meta.url),join(root,'scripts','import-ns-food-inspections.mjs'));
+  await copyFile(new URL('../data/regional-discovery-scope.json',import.meta.url),join(root,'data','regional-discovery-scope.json'));
   await writeFile(join(root, 'runner.mjs'), [
     "import {readFile} from 'node:fs/promises';",
     "const s=JSON.parse(await readFile(new URL('./case.json',import.meta.url)));",
@@ -35,7 +36,7 @@ try {
   const run = async (s={},cities='Halifax,Dartmouth,Bedford') => {
     await writeFile(join(root,'case.json'),JSON.stringify({form,pages,...s}));
     return new Promise((resolve,reject)=>{
-      const child=spawn(process.execPath,[join(root,'runner.mjs')],{cwd:root,env:{...process.env,NS_FOOD_CITIES:cities,NS_FOOD_TIMEOUT_MS:'3000'},stdio:['ignore','pipe','pipe']});
+      const child=spawn(process.execPath,[join(root,'runner.mjs')],{cwd:root,env:{...process.env,NS_FOOD_BATCH:'',NS_FOOD_CITIES:cities,NS_FOOD_TIMEOUT_MS:'3000'},stdio:['ignore','pipe','pipe']});
       let error='';child.stderr.on('data',chunk=>error+=chunk);child.stdout.resume();child.on('error',reject);child.on('close',code=>resolve({code,error}));
     });
   };
@@ -49,6 +50,7 @@ try {
   };
 
   await save([record('1','Halifax'),record('31'),record('40','Dartmouth')]);
+  await fail({},'Halifax,Dartmouth,Bedford,Hammonds Plains',/at most three/);
   let result=await run();assert.equal(result.code,0,result.error);
   let fresh=JSON.parse(await readFile(snapshot,'utf8'));
   assert.equal(fresh.count,4);
@@ -57,6 +59,7 @@ try {
   assert(fresh.records.every(x=>x.observedAt&&x.currentAsOf));
   assert.match(await readFile(browserSnapshot,'utf8'),/^window\.HALIFAX_NS_FOOD_INSPECTIONS = /);
   await save([record('1','Halifax'),record('31'),record('40','Dartmouth')]);
+  await fail({},'Halifax,Dartmouth,Bedford,Hammonds Plains',/at most three/);
   result=await run({},'Halifax');assert.equal(result.code,0,result.error);
   fresh=JSON.parse(await readFile(snapshot,'utf8'));
   assert.equal(fresh.count,4);

@@ -1,0 +1,1996 @@
+{
+  "version": 1,
+  "reviewedAt": "2026-10-21T15:20:19.800810+00:00",
+  "scope": "All 43 held identities accounted for. Bounded review, not a census or 43 newly verified businesses. Successful HTTP receipts are not automatically current-operation/ownership proof.",
+  "counts": {
+    "heldReviewed": 43,
+    "accepted": 0,
+    "retained": 43
+  },
+  "records": [
+    {
+      "auditKey": "held-0cc8a2bc3a8c",
+      "name": "Hong’s Kitchen",
+      "community": "sackville-south",
+      "canonicalCandidateId": null,
+      "disposition": "retain_hold",
+      "priorDecision": "hold",
+      "reviewedAt": "2026-10-21T15:20:19.800810+00:00",
+      "reviewMode": "bounded_source_and_prior_evidence_review",
+      "observation": "Owner PDF URL returned HTTP200 but redirected to cgi-sys/suspendedpage.cgi with Account Suspended HTML, not a PDF or fresh menu. BIA access returned403. No new qualified owner content received. Suspension does not prove business closure.",
+      "priorReason": "Official homepage opens failed internally. Owner-domain PDFs and BIA provide identity, but no fresh owner weekly/current-operation verification was obtained. Do not infer closure.",
+      "sourceUrls": [
+        "https://hongskitchen.com/Hongs-Limited-Menu-sm.pdf",
+        "https://sackvillebusiness.com/shops-services/hongs-kitchen"
+      ],
+      "sourceAttempts": [
+        {
+          "url": "https://hongskitchen.com/Hongs-Limited-Menu-sm.pdf",
+          "attemptedAt": "2026-10-21T15:10:05.379942+00:00",
+          "httpStatus": 200,
+          "finalUrl": "https://hongskitchen.com/cgi-sys/suspendedpage.cgi",
+          "sha256": "ec885b893ab967c92fbc584ee0937f1fec7a834e76140bb0a1816990eb27bf29",
+          "fetchedAt": "2026-10-21T15:10:15.230646+00:00",
+          "responseReceived": true,
+          "qualifiedContentReceived": false,
+          "pageTitle": "Account Suspended",
+          "contentDisposition": "error_or_suspension_body"
+        },
+        {
+          "url": "https://sackvillebusiness.com/shops-services/hongs-kitchen",
+          "attemptedAt": "2026-10-21T15:10:20.295183+00:00",
+          "error": "HTTP Error 403: Forbidden",
+          "responseReceived": false,
+          "qualifiedContentReceived": false,
+          "contentDisposition": "fetch_failed_no_content"
+        }
+      ],
+      "newListingApproved": false,
+      "nextAction": "Resolve the remaining specific blocker using exact current owner or authoritative operator/location evidence; do not infer unknown fields.",
+      "responseReceived": true,
+      "qualifiedContentReceived": false
+    },
+    {
+      "auditKey": "held-39d6c8592f0e",
+      "name": "Mishoo’s Take Out",
+      "community": "sackville-south",
+      "canonicalCandidateId": null,
+      "disposition": "retain_hold",
+      "priorDecision": "hold",
+      "reviewedAt": "2026-10-21T15:20:19.800810+00:00",
+      "reviewMode": "bounded_source_and_prior_evidence_review",
+      "observation": "Prior owner-domain 403 respected, not retried. Provincial tourism page fetched successfully; that is corroboration, not a new first-party operation receipt.",
+      "priorReason": "Official mishoos.ca returned403. Tourism listing supports identity and year-round service, but owner source inaccessible; retain as a high-priority review lead, not blocked-source bypass.",
+      "sourceUrls": [
+        "https://www.mishoos.ca/",
+        "https://novascotia.com/listing/mishoos-take-out/"
+      ],
+      "sourceAttempts": [
+        {
+          "url": "https://novascotia.com/listing/mishoos-take-out/",
+          "attemptedAt": "2026-10-21T15:10:11.500493+00:00",
+          "httpStatus": 200,
+          "finalUrl": "https://novascotia.com/listing/mishoos-take-out/",
+          "sha256": "ee7713f14aefbd0b48d6374827e9c8aa453ae2cec2f7dd5487682681f0a9a6ef",
+          "fetchedAt": "2026-10-21T15:10:17.217528+00:00",
+          "responseReceived": true,
+          "qualifiedContentReceived": true,
+          "pageTitle": "Mishoo&#039;s Take Out - Tourism Nova Scotia",
+          "contentDisposition": "relevant_source_content_not_automatic_claim_verification"
+        }
+      ],
+      "newListingApproved": false,
+      "nextAction": "Resolve the remaining specific blocker using exact current owner or authoritative operator/location evidence; do not infer unknown fields.",
+      "responseReceived": true,
+      "qualifiedContentReceived": true
+    },
+    {
+      "auditKey": "held-1796a1d6ebf8",
+      "name": "Cow Bay Pizza and Variety",
+      "community": "Eastern Passage / Cow Bay corridor",
+      "canonicalCandidateId": null,
+      "disposition": "retain_hold",
+      "priorDecision": "hold",
+      "reviewedAt": "2026-10-21T15:20:19.800810+00:00",
+      "reviewMode": "bounded_source_and_prior_evidence_review",
+      "observation": "Fresh official homepage confirms 388 Cow Bay Road, current weekly schedule and menu navigation. It does not explicitly identify local current owners. No admission; retain ownership hold.",
+      "priorReason": "Official site address, weekly hours and menu; https://www.skipthedishes.com/cow-bay-pizza-and-variety corroborates prepared food/address. Public Nova Scotia employer record identifies Cow Bay Variety Store Limited. Owner residency/current ownership not verified. Candidate for next batch; named business is not evidence of location in Cow Bay community proper.",
+      "sourceUrls": [
+        "https://cowbaypizza.com/"
+      ],
+      "sourceAttempts": [
+        {
+          "url": "https://cowbaypizza.com/",
+          "attemptedAt": "2026-10-21T15:09:59.124123+00:00",
+          "httpStatus": 200,
+          "finalUrl": "https://cowbaypizza.com/",
+          "sha256": "ef5385b784c6167a7c44c1a01fad1720f3a04d408c23776574f669a53a1043e8",
+          "fetchedAt": "2026-10-21T15:10:05.357428+00:00",
+          "responseReceived": true,
+          "qualifiedContentReceived": true,
+          "pageTitle": "Cow Bay Pizza",
+          "contentDisposition": "relevant_source_content_not_automatic_claim_verification"
+        }
+      ],
+      "newListingApproved": false,
+      "nextAction": "Resolve the remaining specific blocker using exact current owner or authoritative operator/location evidence; do not infer unknown fields.",
+      "responseReceived": true,
+      "qualifiedContentReceived": true
+    },
+    {
+      "auditKey": "held-704a267ff938",
+      "name": "Porters Lake Pub",
+      "community": "Porters Lake",
+      "canonicalCandidateId": null,
+      "disposition": "retain_hold",
+      "priorDecision": "hold",
+      "reviewedAt": "2026-10-21T15:20:19.800810+00:00",
+      "reviewMode": "bounded_source_and_prior_evidence_review",
+      "observation": "Owner site returned 503. Earlier address/menu evidence is retained with its original observation, not relabeled fresh.",
+      "priorReason": "Official address, current weekly service and meal menu. Ownership not explicitly established in inspected pages.",
+      "sourceUrls": [
+        "https://porterslakepub.ca/"
+      ],
+      "sourceAttempts": [
+        {
+          "url": "https://porterslakepub.ca/",
+          "attemptedAt": "2026-10-21T15:10:17.218440+00:00",
+          "error": "HTTP Error 503: Service Unavailable",
+          "responseReceived": false,
+          "qualifiedContentReceived": false,
+          "contentDisposition": "fetch_failed_no_content"
+        }
+      ],
+      "newListingApproved": false,
+      "nextAction": "Resolve the remaining specific blocker using exact current owner or authoritative operator/location evidence; do not infer unknown fields.",
+      "responseReceived": false,
+      "qualifiedContentReceived": false
+    },
+    {
+      "auditKey": "held-dcf3b0cc83ed",
+      "name": "Lawrencetown Beach Cafe",
+      "community": "East Lawrencetown",
+      "canonicalCandidateId": null,
+      "disposition": "retain_hold",
+      "priorDecision": "hold",
+      "reviewedAt": "2026-10-21T15:20:19.800810+00:00",
+      "reviewMode": "bounded_source_and_prior_evidence_review",
+      "observation": "No new current first-party page verified. Preserve prior provincial tourism identity and year-round statement as directory evidence only.",
+      "priorReason": "Tourism confirms cafe, breakfast/lunch and year-round operation, but direct business social page not inspected. Historic Heron’s Nest Tearoom tenant references should not be treated as current.",
+      "sourceUrls": [
+        "https://novascotia.com/listing/lawrencetown-beach-cafe/"
+      ],
+      "sourceAttempts": [],
+      "newListingApproved": false,
+      "nextAction": "Resolve the remaining specific blocker using exact current owner or authoritative operator/location evidence; do not infer unknown fields.",
+      "responseReceived": false,
+      "qualifiedContentReceived": false
+    },
+    {
+      "auditKey": "held-d89575e93b57",
+      "name": "Good Day Kitchen & Café",
+      "community": "northern",
+      "canonicalCandidateId": null,
+      "disposition": "retain_hold",
+      "priorDecision": "hold_status_conflict",
+      "reviewedAt": "2026-10-21T15:20:19.800810+00:00",
+      "reviewMode": "bounded_source_and_prior_evidence_review",
+      "observation": "Owner homepage/menu freshly available with service hours; status conflict remains unresolved. Current BIA showcase page no longer exposes the prior owner item in visible text; do not refresh that historical owner evidence.",
+      "priorReason": "Official site has live menu/hours and local business association identifies owner, but current RestaurantGuru says temporarily closed. Do not label active until first-party status resolved.",
+      "sourceUrls": [
+        "https://www.thegooddaycafe.ca/",
+        "https://www.thegooddaycafe.ca/menu",
+        "https://www.fallriverbusiness.ca/showcase",
+        "https://restaurantguru.com/Good-Day-Kitchen-and-Cafe-Fall-River-Nova-Scotia"
+      ],
+      "sourceAttempts": [
+        {
+          "url": "https://www.thegooddaycafe.ca/",
+          "attemptedAt": "2026-10-21T15:10:40.205047+00:00",
+          "httpStatus": 200,
+          "finalUrl": "https://www.thegooddaycafe.ca/",
+          "sha256": "2aafe59bdc9e88744e9cab1d6db87fff79e7fd16f4dfd436b276849c8690af06",
+          "fetchedAt": "2026-10-21T15:10:45.280528+00:00",
+          "responseReceived": true,
+          "qualifiedContentReceived": true,
+          "pageTitle": "The Good Day Kitchen &amp; Café | Cafe",
+          "contentDisposition": "relevant_source_content_not_automatic_claim_verification"
+        },
+        {
+          "url": "https://www.thegooddaycafe.ca/menu",
+          "attemptedAt": "2026-10-21T15:10:40.411276+00:00",
+          "httpStatus": 200,
+          "finalUrl": "https://www.thegooddaycafe.ca/menu",
+          "sha256": "86cb4b08f5fd22722a76b3709eda6fc28aa65ef31ee79b9048fff83e403a23e9",
+          "fetchedAt": "2026-10-21T15:10:45.537783+00:00",
+          "responseReceived": true,
+          "qualifiedContentReceived": true,
+          "pageTitle": "Food &amp; Treats | The Good Day Kitchen &amp; Café",
+          "contentDisposition": "relevant_source_content_not_automatic_claim_verification"
+        },
+        {
+          "url": "https://www.fallriverbusiness.ca/showcase",
+          "attemptedAt": "2026-10-21T15:10:27.427133+00:00",
+          "httpStatus": 200,
+          "finalUrl": "https://www.fallriverbusiness.ca/showcase",
+          "sha256": "ba1887a8806ecc0636b5d076d5db5752b098177bfeb35d4f0d533632f5115ce5",
+          "fetchedAt": "2026-10-21T15:10:33.544841+00:00",
+          "responseReceived": true,
+          "qualifiedContentReceived": true,
+          "pageTitle": "Spotlight | FallRiverBiz",
+          "contentDisposition": "relevant_source_content_not_automatic_claim_verification"
+        }
+      ],
+      "newListingApproved": false,
+      "nextAction": "Resolve the remaining specific blocker using exact current owner or authoritative operator/location evidence; do not infer unknown fields.",
+      "responseReceived": true,
+      "qualifiedContentReceived": true
+    },
+    {
+      "auditKey": "held-8dd0bbdc51b3",
+      "name": "Reid’s Restaurant & Bakery",
+      "community": "northern",
+      "canonicalCandidateId": null,
+      "disposition": "retain_hold",
+      "priorDecision": "hold_current_first_party_operation",
+      "reviewedAt": "2026-10-21T15:20:19.800810+00:00",
+      "reviewMode": "bounded_source_and_prior_evidence_review",
+      "observation": "Community association again describes a family restaurant, but no newly verified current first-party operation. Do not infer closed from lack of fresh evidence.",
+      "priorReason": "Valley association describes family-owned homestyle restaurant and bakery. Could not establish current 2026 first-party operation; Facebook extraction was insufficient. Do not publish from community directory alone.",
+      "sourceUrls": [
+        "https://musquodoboitvalley.ca/reids-restaurant-bakery/",
+        "https://www.facebook.com/p/Reids-Restaurant-Bakery-100057209599628/",
+        "https://discoverhalifaxns.com/itineraries/hidden-waterfalls-of-halifax/"
+      ],
+      "sourceAttempts": [
+        {
+          "url": "https://musquodoboitvalley.ca/reids-restaurant-bakery/",
+          "attemptedAt": "2026-10-21T15:10:08.383468+00:00",
+          "httpStatus": 200,
+          "finalUrl": "https://musquodoboitvalley.ca/reids-restaurant-bakery/",
+          "sha256": "d95cebccad522752e337cfc170f0f5bf01645c8d5f4a53de7c451095add92b07",
+          "fetchedAt": "2026-10-21T15:10:14.523122+00:00",
+          "responseReceived": true,
+          "qualifiedContentReceived": true,
+          "pageTitle": "Musquodoboit Valley",
+          "contentDisposition": "relevant_source_content_not_automatic_claim_verification"
+        },
+        {
+          "url": "https://discoverhalifaxns.com/itineraries/hidden-waterfalls-of-halifax/",
+          "attemptedAt": "2026-10-21T15:09:59.124856+00:00",
+          "error": "HTTP Error 403: Forbidden",
+          "responseReceived": false,
+          "qualifiedContentReceived": false,
+          "contentDisposition": "fetch_failed_no_content"
+        }
+      ],
+      "newListingApproved": false,
+      "nextAction": "Resolve the remaining specific blocker using exact current owner or authoritative operator/location evidence; do not infer unknown fields.",
+      "responseReceived": true,
+      "qualifiedContentReceived": true
+    },
+    {
+      "auditKey": "held-d8744d54d373",
+      "name": "Finer Diner",
+      "community": "western",
+      "canonicalCandidateId": null,
+      "disposition": "retain_hold",
+      "priorDecision": "hold",
+      "reviewedAt": "2026-10-21T15:20:19.800810+00:00",
+      "reviewMode": "bounded_source_and_prior_evidence_review",
+      "observation": "Fresh owner about/contact/menu pages support public restaurant at existing held address. About page does not resolve current ownership. Historic founders remain historical only.",
+      "priorReason": "Exact official address, meal menu and reservation/current-service signals confirmed. Current local ownership remains insufficiently corroborated: original 2007 owners Peter MacPherson and Sarah Irwin are historical; 2026 visitor reviews name Roman but are not authoritative ownership evidence.",
+      "sourceUrls": [
+        "https://www.finerdiner.ca/contact",
+        "https://www.finerdiner.ca/menus?location=Finer+Diner",
+        "https://www.finerdiner.ca/about",
+        "https://peggyscoveregion.com/nova-scotia/things-to-do/?lid=46",
+        "https://www.thecoast.ca/news-opinion/finer-dining-960942/",
+        "https://www.finerdiner.ca/"
+      ],
+      "sourceAttempts": [
+        {
+          "url": "https://www.finerdiner.ca/contact",
+          "attemptedAt": "2026-10-21T15:10:30.198723+00:00",
+          "httpStatus": 200,
+          "finalUrl": "https://www.finerdiner.ca/contact",
+          "sha256": "12219c3f134e3a734fd1863a6805dc32a5e2cb23c3739e5d9202206fdd339235",
+          "fetchedAt": "2026-10-21T15:10:31.559933+00:00",
+          "responseReceived": true,
+          "qualifiedContentReceived": true,
+          "pageTitle": "Contact | Finer Diner",
+          "contentDisposition": "relevant_source_content_not_automatic_claim_verification"
+        },
+        {
+          "url": "https://www.finerdiner.ca/menus?location=Finer+Diner",
+          "attemptedAt": "2026-10-21T15:10:31.424071+00:00",
+          "httpStatus": 200,
+          "finalUrl": "https://www.finerdiner.ca/menus?location=Finer+Diner",
+          "sha256": "b275e7ec901463e07bf55950bb80543cdffc1a6dc3663c22e6caf04e0118de49",
+          "fetchedAt": "2026-10-21T15:10:35.998917+00:00",
+          "responseReceived": true,
+          "qualifiedContentReceived": true,
+          "pageTitle": "Menu | Finer Diner",
+          "contentDisposition": "relevant_source_content_not_automatic_claim_verification"
+        },
+        {
+          "url": "https://www.finerdiner.ca/about",
+          "attemptedAt": "2026-10-21T15:10:30.189586+00:00",
+          "httpStatus": 200,
+          "finalUrl": "https://www.finerdiner.ca/about",
+          "sha256": "a904f5a5545a6fefdee7995a049b8eac8a12464f6a6f07f4cf576eed36714af1",
+          "fetchedAt": "2026-10-21T15:10:31.647998+00:00",
+          "responseReceived": true,
+          "qualifiedContentReceived": true,
+          "pageTitle": "About | Finer Diner",
+          "contentDisposition": "relevant_source_content_not_automatic_claim_verification"
+        },
+        {
+          "url": "https://peggyscoveregion.com/nova-scotia/things-to-do/?lid=46",
+          "attemptedAt": "2026-10-21T15:10:17.048630+00:00",
+          "httpStatus": 200,
+          "finalUrl": "https://peggyscoveregion.com/nova-scotia/things-to-do/?lid=46",
+          "sha256": "88e1d6b5e9383ce64df2dbe63fdeed5a4ebe2c0c8bc73a549f2764876af6a626",
+          "fetchedAt": "2026-10-21T15:10:20.715175+00:00",
+          "responseReceived": true,
+          "qualifiedContentReceived": true,
+          "pageTitle": "The Finer Diner | Things to Do in Peggy's Cove Region",
+          "contentDisposition": "relevant_source_content_not_automatic_claim_verification"
+        },
+        {
+          "url": "https://www.thecoast.ca/news-opinion/finer-dining-960942/",
+          "attemptedAt": "2026-10-21T15:10:39.026234+00:00",
+          "httpStatus": 200,
+          "finalUrl": "https://www.thecoast.ca/news-opinion/finer-dining-960942/",
+          "sha256": "d2de711f7da990ce8889bdf161caecbf52dbdb410f2ee193a20e12d38dbae265",
+          "fetchedAt": "2026-10-21T15:10:43.245618+00:00",
+          "responseReceived": true,
+          "qualifiedContentReceived": true,
+          "pageTitle": "Finer dining",
+          "contentDisposition": "relevant_source_content_not_automatic_claim_verification"
+        },
+        {
+          "url": "https://www.finerdiner.ca/",
+          "attemptedAt": "2026-10-21T15:10:27.943592+00:00",
+          "httpStatus": 200,
+          "finalUrl": "https://www.finerdiner.ca/",
+          "sha256": "ccec036adb3a3cc50d55ac999a2063966955fcf3e91c48eedd17994c3545c43c",
+          "fetchedAt": "2026-10-21T15:10:32.908880+00:00",
+          "responseReceived": true,
+          "qualifiedContentReceived": true,
+          "pageTitle": "Finer Diner | peggys cove restaurant | 9976 Peggys Cove Road, Hacketts Cove, NS, Canada",
+          "contentDisposition": "relevant_source_content_not_automatic_claim_verification"
+        }
+      ],
+      "newListingApproved": false,
+      "nextAction": "Resolve the remaining specific blocker using exact current owner or authoritative operator/location evidence; do not infer unknown fields.",
+      "responseReceived": true,
+      "qualifiedContentReceived": true
+    },
+    {
+      "auditKey": "held-34ff6a17c172",
+      "name": "Nineteen at The Links at Brunello",
+      "community": "western",
+      "canonicalCandidateId": null,
+      "disposition": "retain_hold",
+      "priorDecision": "hold",
+      "reviewedAt": "2026-10-21T15:20:19.800810+00:00",
+      "reviewMode": "bounded_source_and_prior_evidence_review",
+      "observation": "Fresh official Nineteen page confirms kitchen service. Restaurant-operator relationship to development ownership remains unresolved; management source returned 403.",
+      "priorReason": "Official restaurant, menu, public table bookings and exact civic address confirmed. Development group's official team identifies Robert and Glen Dexter, but direct restaurant operator/local ownership relationship is not explicit enough for the strongest batch.",
+      "sourceUrls": [
+        "https://www.thelinksatbrunello.com/nineteen",
+        "https://www.thelinksatbrunellorealestate.com/sales-management-team/management-team/",
+        "https://www.foodbuy.ca/resource-center/articles/the-links-at-brunello/"
+      ],
+      "sourceAttempts": [
+        {
+          "url": "https://www.thelinksatbrunello.com/nineteen",
+          "attemptedAt": "2026-10-21T15:10:40.927715+00:00",
+          "httpStatus": 200,
+          "finalUrl": "https://www.thelinksatbrunello.com/nineteen",
+          "sha256": "5aec1f30c336f7c258c404ba47a5e8a797a028f61417be155e65f9f7bcf2414d",
+          "fetchedAt": "2026-10-21T15:10:46.593214+00:00",
+          "responseReceived": true,
+          "qualifiedContentReceived": true,
+          "pageTitle": "Nineteen - Restaurant in Timberlea at The Links at Brunello",
+          "contentDisposition": "relevant_source_content_not_automatic_claim_verification"
+        },
+        {
+          "url": "https://www.thelinksatbrunellorealestate.com/sales-management-team/management-team/",
+          "attemptedAt": "2026-10-21T15:10:41.618643+00:00",
+          "error": "HTTP Error 403: Forbidden",
+          "responseReceived": false,
+          "qualifiedContentReceived": false,
+          "contentDisposition": "fetch_failed_no_content"
+        },
+        {
+          "url": "https://www.foodbuy.ca/resource-center/articles/the-links-at-brunello/",
+          "attemptedAt": "2026-10-21T15:10:31.560564+00:00",
+          "error": "HTTP Error 403: Forbidden",
+          "responseReceived": false,
+          "qualifiedContentReceived": false,
+          "contentDisposition": "fetch_failed_no_content"
+        }
+      ],
+      "newListingApproved": false,
+      "nextAction": "Resolve the remaining specific blocker using exact current owner or authoritative operator/location evidence; do not infer unknown fields.",
+      "responseReceived": true,
+      "qualifiedContentReceived": true
+    },
+    {
+      "auditKey": "held-cee8ddb84cc5",
+      "name": "Timberlea Beverage Room / The TBR",
+      "community": "western",
+      "canonicalCandidateId": null,
+      "disposition": "retain_hold",
+      "priorDecision": "hold",
+      "reviewedAt": "2026-10-21T15:20:19.800810+00:00",
+      "reviewMode": "bounded_source_and_prior_evidence_review",
+      "observation": "Current official site and RANS fetches failed (403 and 503). Prior service/address evidence retained. No independent local-ownership resolution.",
+      "priorReason": "Official full meal menu, takeout and civic address verified; RANS corroborates identity. Local current ownership not explicit in authoritative sources found.",
+      "sourceUrls": [
+        "https://timberleabeverageroom.ca/",
+        "https://rans.ca/restaurants/timberlea-beverage-room-22/"
+      ],
+      "sourceAttempts": [
+        {
+          "url": "https://timberleabeverageroom.ca/",
+          "attemptedAt": "2026-10-21T15:10:27.088740+00:00",
+          "error": "HTTP Error 403: Forbidden",
+          "responseReceived": false,
+          "qualifiedContentReceived": false,
+          "contentDisposition": "fetch_failed_no_content"
+        },
+        {
+          "url": "https://rans.ca/restaurants/timberlea-beverage-room-22/",
+          "attemptedAt": "2026-10-21T15:10:19.419236+00:00",
+          "error": "HTTP Error 503: Service Unavailable",
+          "responseReceived": false,
+          "qualifiedContentReceived": false,
+          "contentDisposition": "fetch_failed_no_content"
+        }
+      ],
+      "newListingApproved": false,
+      "nextAction": "Resolve the remaining specific blocker using exact current owner or authoritative operator/location evidence; do not infer unknown fields.",
+      "responseReceived": false,
+      "qualifiedContentReceived": false
+    },
+    {
+      "auditKey": "held-b7c4c953f31e",
+      "name": "Granite Springs Golf Club Restaurant",
+      "community": "western",
+      "canonicalCandidateId": null,
+      "disposition": "retain_hold",
+      "priorDecision": "hold",
+      "reviewedAt": "2026-10-21T15:20:19.800810+00:00",
+      "reviewMode": "bounded_source_and_prior_evidence_review",
+      "observation": "Fresh official club restaurant/history pages received, but no verified named current restaurant operator. Historical Chartwells reference remains a warning, not a current corporate conclusion.",
+      "priorReason": "Official restaurant page and civic address confirmed, but menu/history are image-based and current restaurant operator not established. Historical June 2018 local reporting says Chartwells/Compass Canada operated food service, so cannot infer independent local restaurant ownership from local golf-course ownership.",
+      "sourceUrls": [
+        "https://www.granitespringsgolf.com/club-restaurant",
+        "https://www.granitespringsgolf.com/club-history",
+        "https://themastheadnews.ca/wp-content/uploads/2021/03/2018_06_27.pdf"
+      ],
+      "sourceAttempts": [
+        {
+          "url": "https://www.granitespringsgolf.com/club-restaurant",
+          "attemptedAt": "2026-10-21T15:10:31.623098+00:00",
+          "httpStatus": 200,
+          "finalUrl": "https://www.granitespringsgolf.com/club-restaurant",
+          "sha256": "2f34b0dd47391aa3ef67c31eb7c2d625669ad0377fac90e03d2bcf4cf341e78d",
+          "fetchedAt": "2026-10-21T15:10:35.161169+00:00",
+          "responseReceived": true,
+          "qualifiedContentReceived": true,
+          "pageTitle": "Club Restaurant | GS Golf Club",
+          "contentDisposition": "relevant_source_content_not_automatic_claim_verification"
+        },
+        {
+          "url": "https://www.granitespringsgolf.com/club-history",
+          "attemptedAt": "2026-10-21T15:10:31.600456+00:00",
+          "httpStatus": 200,
+          "finalUrl": "https://www.granitespringsgolf.com/club-history",
+          "sha256": "59008c00942784f678e950561cfabcba349ca1bcf4b66379878339a8a69f7f62",
+          "fetchedAt": "2026-10-21T15:10:35.151523+00:00",
+          "responseReceived": true,
+          "qualifiedContentReceived": true,
+          "pageTitle": "Club History | GS Golf Club",
+          "contentDisposition": "relevant_source_content_not_automatic_claim_verification"
+        },
+        {
+          "url": "https://themastheadnews.ca/wp-content/uploads/2021/03/2018_06_27.pdf",
+          "attemptedAt": "2026-10-21T15:10:26.472519+00:00",
+          "error": "HTTP Error 403: Forbidden",
+          "responseReceived": false,
+          "qualifiedContentReceived": false,
+          "contentDisposition": "fetch_failed_no_content"
+        }
+      ],
+      "newListingApproved": false,
+      "nextAction": "Resolve the remaining specific blocker using exact current owner or authoritative operator/location evidence; do not infer unknown fields.",
+      "responseReceived": true,
+      "qualifiedContentReceived": true
+    },
+    {
+      "auditKey": "held-676a733d8b89",
+      "name": "Emileo's Snack Bar",
+      "community": "western",
+      "canonicalCandidateId": null,
+      "disposition": "retain_hold",
+      "priorDecision": "hold",
+      "reviewedAt": "2026-10-21T15:20:19.800810+00:00",
+      "reviewMode": "bounded_source_and_prior_evidence_review",
+      "observation": "Fresh owner-style Wix page received. No verified dated current operation or current local-ownership proof added; do not treat stale menu artwork as fresh service.",
+      "priorReason": "First-party-style Wix site has menu/address/contact but menu image is dated 2022. Local current ownership and dated operation not sufficiently corroborated.",
+      "sourceUrls": [
+        "https://gfeniyanos.wixsite.com/emileossnackbar"
+      ],
+      "sourceAttempts": [
+        {
+          "url": "https://gfeniyanos.wixsite.com/emileossnackbar",
+          "attemptedAt": "2026-10-21T15:09:59.140577+00:00",
+          "httpStatus": 200,
+          "finalUrl": "https://gfeniyanos.wixsite.com/emileossnackbar",
+          "sha256": "630a4f41eb6541a8b462289b08763b060cbb1c6df815ab84f637abeff503ba24",
+          "fetchedAt": "2026-10-21T15:10:05.379505+00:00",
+          "responseReceived": true,
+          "qualifiedContentReceived": true,
+          "pageTitle": "Pizza Restaurant | Nova Scotia | Emilio's Snackbar",
+          "contentDisposition": "relevant_source_content_not_automatic_claim_verification"
+        }
+      ],
+      "newListingApproved": false,
+      "nextAction": "Resolve the remaining specific blocker using exact current owner or authoritative operator/location evidence; do not infer unknown fields.",
+      "responseReceived": true,
+      "qualifiedContentReceived": true
+    },
+    {
+      "auditKey": "held-3c671d6e5471",
+      "name": "The Baker's Apron",
+      "community": "western",
+      "canonicalCandidateId": null,
+      "disposition": "retain_hold",
+      "priorDecision": "hold",
+      "reviewedAt": "2026-10-21T15:20:19.800810+00:00",
+      "reviewMode": "bounded_source_and_prior_evidence_review",
+      "observation": "Fresh official bakery homepage received. Ready-to-eat public cafe scope and current local ownership still not established by product listings alone.",
+      "priorReason": "Official bakery site lists soups, pies, lasagna and sausage rolls, plus exact contact address. Local ownership and ready-to-eat food-service scope versus baked/frozen retail require firmer evidence before adding as a restaurant/cafe.",
+      "sourceUrls": [
+        "https://bakersapron.ca/"
+      ],
+      "sourceAttempts": [
+        {
+          "url": "https://bakersapron.ca/",
+          "attemptedAt": "2026-10-21T15:09:59.119492+00:00",
+          "httpStatus": 200,
+          "finalUrl": "https://bakersapron.ca/",
+          "sha256": "064606c9832623cb57b7fdbee7beefbd684a2193a31ab1606b7ad35d002c7164",
+          "fetchedAt": "2026-10-21T15:10:05.625733+00:00",
+          "responseReceived": true,
+          "qualifiedContentReceived": true,
+          "pageTitle": "The Bakers Apron",
+          "contentDisposition": "relevant_source_content_not_automatic_claim_verification"
+        }
+      ],
+      "newListingApproved": false,
+      "nextAction": "Resolve the remaining specific blocker using exact current owner or authoritative operator/location evidence; do not infer unknown fields.",
+      "responseReceived": true,
+      "qualifiedContentReceived": true
+    },
+    {
+      "auditKey": "held-b2f88957144d",
+      "name": "Lakeside Family Restaurant & Pizza",
+      "community": "western",
+      "canonicalCandidateId": null,
+      "disposition": "retain_hold",
+      "priorDecision": "hold",
+      "reviewedAt": "2026-10-21T15:20:19.800810+00:00",
+      "reviewMode": "bounded_source_and_prior_evidence_review",
+      "observation": "No current owner source resolved. Historic inspection archive is not a current operation receipt; third-party directory returned 403.",
+      "priorReason": "Directory and historical government inspection evidence found, but no current official website/menu or owner evidence sufficient for addition in this bounded pass.",
+      "sourceUrls": [
+        "https://www.allbiz.ca/lakeside-family-restaurant-902-876-7173",
+        "https://openinformation.novascotia.ca/api/views/f3f7-h4mx/files/6d3bb00b-5629-468f-b7a2-c728efa1e759?filename=2016-02656-ENV_PublicPackage.pdf"
+      ],
+      "sourceAttempts": [
+        {
+          "url": "https://www.allbiz.ca/lakeside-family-restaurant-902-876-7173",
+          "attemptedAt": "2026-10-21T15:10:27.364746+00:00",
+          "error": "HTTP Error 403: Forbidden",
+          "responseReceived": false,
+          "qualifiedContentReceived": false,
+          "contentDisposition": "fetch_failed_no_content"
+        },
+        {
+          "url": "https://openinformation.novascotia.ca/api/views/f3f7-h4mx/files/6d3bb00b-5629-468f-b7a2-c728efa1e759?filename=2016-02656-ENV_PublicPackage.pdf",
+          "attemptedAt": "2026-10-21T15:10:14.524050+00:00",
+          "httpStatus": 200,
+          "finalUrl": "https://openinformation.novascotia.ca/api/views/f3f7-h4mx/files/6d3bb00b-5629-468f-b7a2-c728efa1e759?filename=2016-02656-ENV_PublicPackage.pdf",
+          "sha256": "4c304924daf28cd6f8937dab30772f1c881987320eb6324e2624fcf9392c267a",
+          "fetchedAt": "2026-10-21T15:10:21.530821+00:00",
+          "responseReceived": true,
+          "qualifiedContentReceived": true,
+          "pageTitle": "",
+          "contentDisposition": "relevant_historical_document_not_current_operation"
+        }
+      ],
+      "newListingApproved": false,
+      "nextAction": "Resolve the remaining specific blocker using exact current owner or authoritative operator/location evidence; do not infer unknown fields.",
+      "responseReceived": true,
+      "qualifiedContentReceived": true
+    },
+    {
+      "auditKey": "held-c9f79973d63b",
+      "name": "Upper Musquodoboit Mini Mart / Pizza Twice",
+      "community": "Upper Musquodoboit",
+      "canonicalCandidateId": null,
+      "disposition": "retain_hold",
+      "priorDecision": "regional-franchise eligibility review; northern second-pass artifact supplies detailed brand review",
+      "reviewedAt": "2026-10-21T15:20:19.800810+00:00",
+      "reviewMode": "bounded_source_and_prior_evidence_review",
+      "observation": "Fresh valley directory explicitly calls grocery locally owned and operated, and offers pizza/takeout. Regional franchise restaurant eligibility remains separate; no new brand-source retry performed.",
+      "priorReason": [
+        {
+          "url": "https://musquodoboitvalley.ca/upper-musquodoboit-mini-mart/",
+          "type": "community directory",
+          "supports": "Locally operated grocery and pizza/takeout at the exact address."
+        },
+        {
+          "url": "https://www.pizzatwice.com/locations",
+          "type": "brand location directory",
+          "supports": "Exact Mini Mart location and phone. The page has repeated location blocks with conflicting hours, so none are accepted here."
+        },
+        {
+          "url": "https://www.mynslc.com/-/media/NSLC/PDFAbout/Licensee-page-docs/Agency-Docs/Agency-Store-List-Jan-2026.pdf?hash=09F90FA8B7F6F99591E0FB713B16DD85&la=en",
+          "type": "government agency-store list",
+          "supports": "Business/address corroboration only, not evidence of restaurant service or independent-restaurant eligibility."
+        }
+      ],
+      "sourceUrls": [
+        "https://musquodoboitvalley.ca/upper-musquodoboit-mini-mart/",
+        "https://www.pizzatwice.com/locations",
+        "https://www.mynslc.com/-/media/NSLC/PDFAbout/Licensee-page-docs/Agency-Docs/Agency-Store-List-Jan-2026.pdf?hash=09F90FA8B7F6F99591E0FB713B16DD85&la=en"
+      ],
+      "sourceAttempts": [
+        {
+          "url": "https://musquodoboitvalley.ca/upper-musquodoboit-mini-mart/",
+          "attemptedAt": "2026-10-21T15:10:09.793163+00:00",
+          "httpStatus": 200,
+          "finalUrl": "https://musquodoboitvalley.ca/upper-musquodoboit-mini-mart/",
+          "sha256": "2ce1b3ad3f72130ef8e5fe659b7277a72887ac5f1ca3bb14d3dcc599c6f9bbd2",
+          "fetchedAt": "2026-10-21T15:10:14.529589+00:00",
+          "responseReceived": true,
+          "qualifiedContentReceived": true,
+          "pageTitle": "Musquodoboit Valley",
+          "contentDisposition": "relevant_source_content_not_automatic_claim_verification"
+        },
+        {
+          "url": "https://www.mynslc.com/-/media/NSLC/PDFAbout/Licensee-page-docs/Agency-Docs/Agency-Store-List-Jan-2026.pdf?hash=09F90FA8B7F6F99591E0FB713B16DD85&la=en",
+          "attemptedAt": "2026-10-21T15:10:35.161702+00:00",
+          "error": "HTTP Error 403: Forbidden",
+          "responseReceived": false,
+          "qualifiedContentReceived": false,
+          "contentDisposition": "fetch_failed_no_content"
+        }
+      ],
+      "newListingApproved": false,
+      "nextAction": "Resolve the remaining specific blocker using exact current owner or authoritative operator/location evidence; do not infer unknown fields.",
+      "responseReceived": true,
+      "qualifiedContentReceived": true
+    },
+    {
+      "auditKey": "held-fa862739c6d2",
+      "name": "Lindsay Lake Farms & Lodge",
+      "community": "Lindsay Lake / Musquodoboit Valley",
+      "canonicalCandidateId": null,
+      "disposition": "retain_hold",
+      "priorDecision": "scope hold, not verified as a normal public restaurant",
+      "reviewedAt": "2026-10-21T15:20:19.800810+00:00",
+      "reviewMode": "bounded_source_and_prior_evidence_review",
+      "observation": "Fresh family-farm/contact/food pages received. Distinguish farm shop and booked experiences from ordinary walk-in restaurant; do not turn anticipated restaurant into confirmed opening.",
+      "priorReason": [
+        {
+          "url": "https://www.lindsaylakefarms.com/",
+          "type": "owner",
+          "supports": "Christiane and Jan identify their family farm and current farm visits/dining experiences."
+        },
+        {
+          "url": "https://www.lindsaylakefarms.com/contact.html",
+          "type": "owner",
+          "supports": "Exact current contact address and phone."
+        },
+        {
+          "url": "https://www.lindsaylakefarms.com/food.html",
+          "type": "owner",
+          "supports": "Farm-store hours and a food trailer for private celebrations/events; these are not ordinary restaurant hours."
+        },
+        {
+          "url": "https://discoverhalifaxns.com/things-to-do/bison-tours-and-sustainable-farming-at-lindsay-lake-farms/",
+          "type": "destination tourism",
+          "supports": "Updated May 6, 2026 but still describes a restaurant anticipated for summer 2025. That dated future-tense claim cannot establish that a walk-in restaurant opened."
+        }
+      ],
+      "sourceUrls": [
+        "https://www.lindsaylakefarms.com/",
+        "https://www.lindsaylakefarms.com/contact.html",
+        "https://www.lindsaylakefarms.com/food.html",
+        "https://discoverhalifaxns.com/things-to-do/bison-tours-and-sustainable-farming-at-lindsay-lake-farms/"
+      ],
+      "sourceAttempts": [
+        {
+          "url": "https://www.lindsaylakefarms.com/",
+          "attemptedAt": "2026-10-21T15:10:31.628236+00:00",
+          "httpStatus": 200,
+          "finalUrl": "https://www.lindsaylakefarms.com/",
+          "sha256": "403a56baf16abc58548b2b34f185dde61546f0c5c7b2b7ab818b8b9b740999de",
+          "fetchedAt": "2026-10-21T15:10:36.152364+00:00",
+          "responseReceived": true,
+          "qualifiedContentReceived": true,
+          "pageTitle": "Lindsay Lake Farms Nova Scotia",
+          "contentDisposition": "relevant_source_content_not_automatic_claim_verification"
+        },
+        {
+          "url": "https://www.lindsaylakefarms.com/contact.html",
+          "attemptedAt": "2026-10-21T15:10:31.649051+00:00",
+          "httpStatus": 200,
+          "finalUrl": "https://www.lindsaylakefarms.com/contact.html",
+          "sha256": "a0099f7119519fcce9ef89c1f5ce1642b2a9ce810e933542b8c3d7cdf50b1813",
+          "fetchedAt": "2026-10-21T15:10:36.102954+00:00",
+          "responseReceived": true,
+          "qualifiedContentReceived": true,
+          "pageTitle": "Contact | Lindsay Lake Farms",
+          "contentDisposition": "relevant_source_content_not_automatic_claim_verification"
+        },
+        {
+          "url": "https://www.lindsaylakefarms.com/food.html",
+          "attemptedAt": "2026-10-21T15:10:31.823582+00:00",
+          "httpStatus": 200,
+          "finalUrl": "https://www.lindsaylakefarms.com/food.html",
+          "sha256": "3601ebcb294393062230654ffcc661b5183f2a41c76c0e7561adc12a6fa70104",
+          "fetchedAt": "2026-10-21T15:10:36.106759+00:00",
+          "responseReceived": true,
+          "qualifiedContentReceived": true,
+          "pageTitle": "Food | Lindsay Lake Farms",
+          "contentDisposition": "relevant_source_content_not_automatic_claim_verification"
+        },
+        {
+          "url": "https://discoverhalifaxns.com/things-to-do/bison-tours-and-sustainable-farming-at-lindsay-lake-farms/",
+          "attemptedAt": "2026-10-21T15:09:59.125299+00:00",
+          "error": "HTTP Error 403: Forbidden",
+          "responseReceived": false,
+          "qualifiedContentReceived": false,
+          "contentDisposition": "fetch_failed_no_content"
+        }
+      ],
+      "newListingApproved": false,
+      "nextAction": "Resolve the remaining specific blocker using exact current owner or authoritative operator/location evidence; do not infer unknown fields.",
+      "responseReceived": true,
+      "qualifiedContentReceived": true
+    },
+    {
+      "auditKey": "held-5bcf41412cd8",
+      "name": "The Farm Bakery",
+      "community": "Musquodoboit Valley",
+      "canonicalCandidateId": null,
+      "disposition": "retain_hold",
+      "priorDecision": "scope and current-operation hold",
+      "reviewedAt": "2026-10-21T15:20:19.800810+00:00",
+      "reviewMode": "bounded_source_and_prior_evidence_review",
+      "observation": "Owner domain returns HTTP 200 with almost no readable body. Community page remains home-bakery discovery evidence; public walk-in cafe status still unknown.",
+      "priorReason": [
+        {
+          "url": "https://musquodoboitvalley.ca/the-farm-bakery/",
+          "type": "community directory",
+          "supports": "Home bakery, named contact Taylor Newman, address and owner-site link."
+        },
+        {
+          "url": "https://www.thefarmbakery.ca/",
+          "type": "owner linked by community directory",
+          "supports": "Page title identifies sourdough bakery but readable body was unavailable to the web reader."
+        }
+      ],
+      "sourceUrls": [
+        "https://musquodoboitvalley.ca/the-farm-bakery/",
+        "https://www.thefarmbakery.ca/"
+      ],
+      "sourceAttempts": [
+        {
+          "url": "https://musquodoboitvalley.ca/the-farm-bakery/",
+          "attemptedAt": "2026-10-21T15:10:08.593784+00:00",
+          "httpStatus": 200,
+          "finalUrl": "https://musquodoboitvalley.ca/the-farm-bakery/",
+          "sha256": "5601656270e90d1566a2172343de1a138042fa8c33844a9b5ffd1b2fc1e4eb1d",
+          "fetchedAt": "2026-10-21T15:10:14.680973+00:00",
+          "responseReceived": true,
+          "qualifiedContentReceived": true,
+          "pageTitle": "Musquodoboit Valley",
+          "contentDisposition": "relevant_source_content_not_automatic_claim_verification"
+        },
+        {
+          "url": "https://www.thefarmbakery.ca/",
+          "attemptedAt": "2026-10-21T15:10:39.306680+00:00",
+          "httpStatus": 200,
+          "finalUrl": "https://www.thefarmbakery.ca/",
+          "sha256": "99297be5378048ae4eaf07b60c83e771c4e16b7d4a7258cdd3802d2ce79a9754",
+          "fetchedAt": "2026-10-21T15:10:43.486508+00:00",
+          "responseReceived": true,
+          "qualifiedContentReceived": false,
+          "pageTitle": "Sourdough Bakery | The Farm Bakery",
+          "contentDisposition": "application_shell_no_verified_business_body"
+        }
+      ],
+      "newListingApproved": false,
+      "nextAction": "Resolve the remaining specific blocker using exact current owner or authoritative operator/location evidence; do not infer unknown fields.",
+      "responseReceived": true,
+      "qualifiedContentReceived": true
+    },
+    {
+      "auditKey": "held-96f02ad441a6",
+      "name": "River Oaks Golf Club kitchen and takeout",
+      "community": "Meaghers Grant",
+      "canonicalCandidateId": null,
+      "disposition": "retain_hold",
+      "priorDecision": "location and current-ownership hold despite strong restaurant-service proof",
+      "reviewedAt": "2026-10-21T15:20:19.800810+00:00",
+      "reviewMode": "bounded_source_and_prior_evidence_review",
+      "observation": "Fresh menu confirms public kitchen/takeout and phone. Exact 3909 versus 3856 civic address/operator conflict remains. Do not transfer lodge identity or golf season to restaurant.",
+      "priorReason": [
+        {
+          "url": "https://www.riveroaksgolfclub.org/menu",
+          "type": "owner",
+          "supports": "Full meal menu, public access, kitchen/takeout phone, seasonal 11am-7pm service. Weekly days and season-end date not specified."
+        },
+        {
+          "url": "https://www.riveroaksgolfclub.org/our-history",
+          "type": "owner",
+          "supports": "Meaghers Grant identity; navigation advertises five years under new ownership, so older ownership attribution cannot simply be reused."
+        },
+        {
+          "url": "https://novascotia.com/listing/river-oaks-golf-club/",
+          "type": "provincial tourism",
+          "supports": "3856 address and licensed dining room, but mixes North/South courses and says nine-hole South Course closed this year."
+        },
+        {
+          "url": "https://fliphtml5.com/rzgzu/nymr/DEANS_Coastal_NS_Eastern_Guide_2024/",
+          "type": "regional tourism guide",
+          "supports": "3909 Highway 357 restaurant address and .org owner domain; differs from the provincial tourism lodge/South Course-style address."
+        }
+      ],
+      "sourceUrls": [
+        "https://www.riveroaksgolfclub.org/menu",
+        "https://www.riveroaksgolfclub.org/our-history",
+        "https://novascotia.com/listing/river-oaks-golf-club/",
+        "https://fliphtml5.com/rzgzu/nymr/DEANS_Coastal_NS_Eastern_Guide_2024/"
+      ],
+      "sourceAttempts": [
+        {
+          "url": "https://www.riveroaksgolfclub.org/menu",
+          "attemptedAt": "2026-10-21T15:10:36.154731+00:00",
+          "httpStatus": 200,
+          "finalUrl": "https://www.riveroaksgolfclub.org/menu",
+          "sha256": "88a9b1c3aa103710697bb6a256e6268a88bdd4a65cf7e5e9cf062f79cf0c2a1a",
+          "fetchedAt": "2026-10-21T15:10:41.617241+00:00",
+          "responseReceived": true,
+          "qualifiedContentReceived": true,
+          "pageTitle": "Menu |  River Oaks",
+          "contentDisposition": "relevant_source_content_not_automatic_claim_verification"
+        },
+        {
+          "url": "https://www.riveroaksgolfclub.org/our-history",
+          "attemptedAt": "2026-10-21T15:10:37.684846+00:00",
+          "httpStatus": 200,
+          "finalUrl": "https://www.riveroaksgolfclub.org/our-history",
+          "sha256": "602b662b18a2c3353c60ec4258411c4a885344235e0e6e8d53de0ab48e334d29",
+          "fetchedAt": "2026-10-21T15:10:40.927148+00:00",
+          "responseReceived": true,
+          "qualifiedContentReceived": true,
+          "pageTitle": "OUR HISTORY |  River Oaks",
+          "contentDisposition": "relevant_source_content_not_automatic_claim_verification"
+        },
+        {
+          "url": "https://novascotia.com/listing/river-oaks-golf-club/",
+          "attemptedAt": "2026-10-21T15:10:11.508546+00:00",
+          "httpStatus": 200,
+          "finalUrl": "https://novascotia.com/listing/river-oaks-golf-club/",
+          "sha256": "3689271b5654cc658fc915f1cb4f392f628842228144bc3e433384934c63e0d3",
+          "fetchedAt": "2026-10-21T15:10:17.047284+00:00",
+          "responseReceived": true,
+          "qualifiedContentReceived": true,
+          "pageTitle": "River Oaks Golf Club - Tourism Nova Scotia",
+          "contentDisposition": "relevant_source_content_not_automatic_claim_verification"
+        },
+        {
+          "url": "https://fliphtml5.com/rzgzu/nymr/DEANS_Coastal_NS_Eastern_Guide_2024/",
+          "attemptedAt": "2026-10-21T15:09:59.132833+00:00",
+          "error": "HTTP Error 403: Forbidden",
+          "responseReceived": false,
+          "qualifiedContentReceived": false,
+          "contentDisposition": "fetch_failed_no_content"
+        }
+      ],
+      "newListingApproved": false,
+      "nextAction": "Resolve the remaining specific blocker using exact current owner or authoritative operator/location evidence; do not infer unknown fields.",
+      "responseReceived": true,
+      "qualifiedContentReceived": true
+    },
+    {
+      "auditKey": "held-cc43f243ca56",
+      "name": "Mikhael's Cafe",
+      "community": "Middle Musquodoboit",
+      "canonicalCandidateId": null,
+      "disposition": "retain_hold",
+      "priorDecision": "operation and foreign-domain identity hold",
+      "reviewedAt": "2026-10-21T15:20:19.800810+00:00",
+      "reviewMode": "bounded_source_and_prior_evidence_review",
+      "observation": "Same-name North Carolina domain received; explicitly rejected as unrelated. No new Nova Scotia owner operation evidence.",
+      "priorReason": [
+        {
+          "url": "https://rans.ca/restaurants/?page=5&sf_paged=18",
+          "type": "restaurant association directory",
+          "supports": "Historic/local candidate identity and street address; directory inclusion alone does not prove active operation."
+        },
+        {
+          "url": "https://www.mikhaelscafe.com/our-story",
+          "type": "unrelated owner site",
+          "supports": "This similarly named business is at 4214 Beechwood Drive, Greensboro, North Carolina. Explicitly reject it as a source for the Nova Scotia candidate."
+        }
+      ],
+      "sourceUrls": [
+        "https://rans.ca/restaurants/?page=5&sf_paged=18",
+        "https://www.mikhaelscafe.com/our-story"
+      ],
+      "sourceAttempts": [
+        {
+          "url": "https://rans.ca/restaurants/?page=5&sf_paged=18",
+          "attemptedAt": "2026-10-21T15:10:18.908013+00:00",
+          "error": "HTTP Error 503: Service Unavailable",
+          "responseReceived": false,
+          "qualifiedContentReceived": false,
+          "contentDisposition": "fetch_failed_no_content"
+        },
+        {
+          "url": "https://www.mikhaelscafe.com/our-story",
+          "attemptedAt": "2026-10-21T15:10:33.256662+00:00",
+          "httpStatus": 200,
+          "finalUrl": "https://www.mikhaelscafe.com/our-story",
+          "sha256": "9088ce8e72236d750156e6e2cdbb97d8b5a83e29890674f0f8ffbaa01318a000",
+          "fetchedAt": "2026-10-21T15:10:38.640836+00:00",
+          "responseReceived": true,
+          "qualifiedContentReceived": false,
+          "pageTitle": "Location | Visit Us Today! &mdash; Mikhael&#39;s Cafe &amp; Catering",
+          "contentDisposition": "wrong_country_identity_rejected"
+        }
+      ],
+      "newListingApproved": false,
+      "nextAction": "Resolve the remaining specific blocker using exact current owner or authoritative operator/location evidence; do not infer unknown fields.",
+      "responseReceived": true,
+      "qualifiedContentReceived": false
+    },
+    {
+      "auditKey": "held-9f54ac7e40a2",
+      "name": "Panada Pizza – Hammonds Plains",
+      "community": "Hammonds Plains",
+      "canonicalCandidateId": null,
+      "disposition": "retain_hold",
+      "priorDecision": "conditional_first_party_civic_address",
+      "reviewedAt": "2026-10-21T15:20:19.800810+00:00",
+      "reviewMode": "bounded_source_and_prior_evidence_review",
+      "observation": "Official homepage/menu fetches returned 403 this pass, no retries. Existing merchant agreement on 1438 Hammonds Plains Road is corroboration, not a new owner civic address receipt.",
+      "priorReason": [
+        "Official website and browser-visible socials page do not expose a civic address; publish only if two merchant-platform confirmations satisfy address provenance policy. Otherwise hold for direct first-party address.",
+        "7:40 Restaurant is Unit 1 at same street address; Panada Unit 3 is distinct, not a duplicate.",
+        "Hours differ across official site and delivery platforms. Do not substitute delivery-window times for restaurant hours.",
+        "One older DoorDash locale snapshot says temporarily closed while another recent snapshot exposes ordering; platform availability is not evidence of permanent business closure."
+      ],
+      "sourceUrls": [
+        "https://www.panada-pizza.com/",
+        "https://www.panada-pizza.com/menu/",
+        "https://www.ubereats.com/ca/store/panada-pizza-hammonds-plains/Zs0Hm136Tsul5yvUeF3_kg",
+        "https://www.skipthedishes.com/panada-pizza-hammonds-plains-road",
+        "https://www.doordash.com/store/panada-pizza---1438-hammonds-plains-rd-31802611/"
+      ],
+      "sourceAttempts": [
+        {
+          "url": "https://www.panada-pizza.com/",
+          "attemptedAt": "2026-10-21T15:10:35.275892+00:00",
+          "error": "HTTP Error 403: Forbidden",
+          "responseReceived": false,
+          "qualifiedContentReceived": false,
+          "contentDisposition": "fetch_failed_no_content"
+        },
+        {
+          "url": "https://www.panada-pizza.com/menu/",
+          "attemptedAt": "2026-10-21T15:10:35.999677+00:00",
+          "error": "HTTP Error 403: Forbidden",
+          "responseReceived": false,
+          "qualifiedContentReceived": false,
+          "contentDisposition": "fetch_failed_no_content"
+        }
+      ],
+      "newListingApproved": false,
+      "nextAction": "Resolve the remaining specific blocker using exact current owner or authoritative operator/location evidence; do not infer unknown fields.",
+      "responseReceived": false,
+      "qualifiedContentReceived": false
+    },
+    {
+      "auditKey": "held-84e067f4d40e",
+      "name": "Panada Pizza – Dartmouth",
+      "community": "Dartmouth / Highfield Park",
+      "canonicalCandidateId": null,
+      "disposition": "retain_hold",
+      "priorDecision": "conditional_current_first_party_civic_address",
+      "reviewedAt": "2026-10-21T15:20:19.800810+00:00",
+      "reviewMode": "bounded_source_and_prior_evidence_review",
+      "observation": "Official homepage/menu fetches returned 403 this pass. Preserve Dartmouth identity and address conflict without substituting Hammonds Plains evidence or customer reviews.",
+      "priorReason": [
+        "Do not create additional outlets at 6 Primrose Street or 102 Albro Lake Road from directory residue. They share current Dartmouth phone and likely reflect historical locations, but relocation history is not conclusively established.",
+        "Official Sunday hours read 11pm to 10pm. Do not silently repair to 11am or noon.",
+        "Postal codes conflict between directory sources; omit.",
+        "Conditional because first-party homepage/social links lack civic address and branded Launchrock page is undated."
+      ],
+      "sourceUrls": [
+        "https://www.panada-pizza.com/",
+        "https://panadapizza.launchrock.com/",
+        "https://www.restaurantji.com/ns/dartmouth/panada-pizza-/",
+        "https://restaurantguru.com/Panada-Pizza-Dartmouth",
+        "https://www.bbb.org/ca/ns/dartmouth/profile/restaurants/panada-pizza-0087-40008",
+        "https://www.tripadvisor.ca/Restaurant_Review-g154974-d974008-Reviews-Panada_Pizza-Dartmouth_Halifax_Regional_Municipality_Nova_Scotia.html"
+      ],
+      "sourceAttempts": [
+        {
+          "url": "https://www.panada-pizza.com/",
+          "attemptedAt": "2026-10-21T15:10:35.275892+00:00",
+          "error": "HTTP Error 403: Forbidden",
+          "responseReceived": false,
+          "qualifiedContentReceived": false,
+          "contentDisposition": "fetch_failed_no_content"
+        },
+        {
+          "url": "https://panadapizza.launchrock.com/",
+          "attemptedAt": "2026-10-21T15:10:14.681267+00:00",
+          "error": "HTTP Error 503: Service Unavailable",
+          "responseReceived": false,
+          "qualifiedContentReceived": false,
+          "contentDisposition": "fetch_failed_no_content"
+        },
+        {
+          "url": "https://www.restaurantji.com/ns/dartmouth/panada-pizza-/",
+          "attemptedAt": "2026-10-21T15:10:36.107644+00:00",
+          "error": "HTTP Error 403: Forbidden",
+          "responseReceived": false,
+          "qualifiedContentReceived": false,
+          "contentDisposition": "fetch_failed_no_content"
+        },
+        {
+          "url": "https://www.bbb.org/ca/ns/dartmouth/profile/restaurants/panada-pizza-0087-40008",
+          "attemptedAt": "2026-10-21T15:10:27.380309+00:00",
+          "httpStatus": 200,
+          "finalUrl": "https://www.bbb.org/ca/ns/dartmouth/profile/restaurants/panada-pizza-0087-40008",
+          "sha256": "3dc5737e6bd87b6d4cbc9db67af5dbd4fbd53028a95799b0df2c76fc42a0391b",
+          "fetchedAt": "2026-10-21T15:10:31.622576+00:00",
+          "responseReceived": true,
+          "qualifiedContentReceived": true,
+          "pageTitle": "Panada Pizza | BBB Business Profile",
+          "contentDisposition": "relevant_source_content_not_automatic_claim_verification"
+        },
+        {
+          "url": "https://www.tripadvisor.ca/Restaurant_Review-g154974-d974008-Reviews-Panada_Pizza-Dartmouth_Halifax_Regional_Municipality_Nova_Scotia.html",
+          "attemptedAt": "2026-10-21T15:10:42.319372+00:00",
+          "error": "HTTP Error 403: Forbidden",
+          "responseReceived": false,
+          "qualifiedContentReceived": false,
+          "contentDisposition": "fetch_failed_no_content"
+        }
+      ],
+      "newListingApproved": false,
+      "nextAction": "Resolve the remaining specific blocker using exact current owner or authoritative operator/location evidence; do not infer unknown fields.",
+      "responseReceived": true,
+      "qualifiedContentReceived": true
+    },
+    {
+      "auditKey": "held-c1702abb9854",
+      "name": "Morris East Bedford",
+      "community": null,
+      "canonicalCandidateId": "osm-node-2704746819-morris-east",
+      "disposition": "retain_hold",
+      "priorDecision": "hold_exact_osm_identity",
+      "reviewedAt": "2026-10-21T15:20:19.800810+00:00",
+      "reviewMode": "bounded_source_and_prior_evidence_review",
+      "observation": "Fresh Morris East owner homepage supports Bedford branch at 620 Nine Mile Drive Unit 109. No explicit owner coordinate pair located; Toast fetch returned 403. Existing addressless OSM node must not be overwritten or duplicated from proximity.",
+      "priorReason": "Owner and owner-linked ordering source confirm the address but provide no independently verified coordinate pin. Existing OSM record has only a name and coordinates. Do not add a duplicate or overwrite its location from proximity alone.",
+      "sourceUrls": [
+        "https://www.morriseast.com/",
+        "https://order.toasttab.com/online/morris-east-bedford-620-nine-mile-drive?diningOption=takeout"
+      ],
+      "sourceAttempts": [
+        {
+          "url": "https://www.morriseast.com/",
+          "attemptedAt": "2026-10-21T15:10:35.152088+00:00",
+          "httpStatus": 200,
+          "finalUrl": "https://www.morriseast.com/",
+          "sha256": "34a9eefc500ca15c29c8055b7ae5b2c3819724c42206683c779a8204bc3a35a8",
+          "fetchedAt": "2026-10-21T15:10:38.804646+00:00",
+          "responseReceived": true,
+          "qualifiedContentReceived": true,
+          "pageTitle": "morris east",
+          "contentDisposition": "relevant_source_content_not_automatic_claim_verification"
+        },
+        {
+          "url": "https://order.toasttab.com/online/morris-east-bedford-620-nine-mile-drive?diningOption=takeout",
+          "attemptedAt": "2026-10-21T15:10:14.675400+00:00",
+          "error": "HTTP Error 403: Forbidden",
+          "responseReceived": false,
+          "qualifiedContentReceived": false,
+          "contentDisposition": "fetch_failed_no_content"
+        }
+      ],
+      "newListingApproved": false,
+      "nextAction": "Resolve the remaining specific blocker using exact current owner or authoritative operator/location evidence; do not infer unknown fields.",
+      "responseReceived": true,
+      "qualifiedContentReceived": true
+    },
+    {
+      "auditKey": "held-f564a56e4897",
+      "name": "Peacock Modern Indian Cuisine",
+      "community": "Bedford",
+      "canonicalCandidateId": null,
+      "disposition": "retain_hold",
+      "priorDecision": "hold-fresh-receipt",
+      "reviewedAt": "2026-10-21T15:20:19.800810+00:00",
+      "reviewMode": "bounded_source_and_prior_evidence_review",
+      "observation": "Correct owner domain peacockhfx.ca returned 503. Search cache supports four locally settled owners and 27 Dellridge Lane, but is not a fresh body receipt. No borrowing neighboring Patrons coordinates.",
+      "priorReason": "Official cached page says RSNS Foods Inc is owned by four friends settled permanently in Nova Scotia. Official cached page gives restaurant, address, menu and phone. Fresh website503, cached evidence only; suite103 third-party corroboration, do not share Patrons suite105 pin.",
+      "sourceUrls": [
+        "https://peacockhfx.ca/"
+      ],
+      "sourceAttempts": [
+        {
+          "url": "https://peacockhfx.ca/",
+          "attemptedAt": "2026-10-21T15:10:15.886571+00:00",
+          "error": "HTTP Error 503: Service Unavailable",
+          "responseReceived": false,
+          "qualifiedContentReceived": false,
+          "contentDisposition": "fetch_failed_no_content"
+        }
+      ],
+      "newListingApproved": false,
+      "nextAction": "Resolve the remaining specific blocker using exact current owner or authoritative operator/location evidence; do not infer unknown fields.",
+      "responseReceived": false,
+      "qualifiedContentReceived": false
+    },
+    {
+      "auditKey": "held-de4f717e7db4",
+      "name": "Sushi Jet Express",
+      "community": "Bedford",
+      "canonicalCandidateId": null,
+      "disposition": "retain_hold",
+      "priorDecision": "hold_local_ownership_evidence",
+      "reviewedAt": "2026-10-21T15:20:19.800810+00:00",
+      "reviewMode": "bounded_source_and_prior_evidence_review",
+      "observation": "Fresh owner homepage supports Sushi Jet Express brand, exact 540 Southgate Unit103, current service and full hours. Ownership evidence unresolved in this pass. Do not import template founding-year/phone.",
+      "priorReason": "Regional brand with existing local catalog branches; no named current owner found. Fresh official homepage publishes exact address, phone, menu and pickup link. Homepage current branding is Sushi Jet Express; old /about has placeholder555 phone. Do not import founding year.",
+      "sourceUrls": [
+        "https://www.sushijetbedford.com/",
+        "https://novascotia.com/listing/sushi-jet-larry-uteck/"
+      ],
+      "sourceAttempts": [
+        {
+          "url": "https://www.sushijetbedford.com/",
+          "attemptedAt": "2026-10-21T15:10:38.805963+00:00",
+          "httpStatus": 200,
+          "finalUrl": "https://www.sushijetbedford.com/",
+          "sha256": "2618962ff84d8ce4f61686e4366d2be9cde6aa0a8f2192db95388a830cc75d7e",
+          "fetchedAt": "2026-10-21T15:10:42.395733+00:00",
+          "responseReceived": true,
+          "qualifiedContentReceived": true,
+          "pageTitle": "Home I Sushi Jet Bedford",
+          "contentDisposition": "relevant_source_content_not_automatic_claim_verification"
+        },
+        {
+          "url": "https://novascotia.com/listing/sushi-jet-larry-uteck/",
+          "attemptedAt": "2026-10-21T15:10:12.051773+00:00",
+          "httpStatus": 200,
+          "finalUrl": "https://novascotia.com/listing/sushi-jet-larry-uteck/",
+          "sha256": "01091180cacbcbc08337bba616cf12edb9888cef6f3f05e9dba2d5bcfdd7ef67",
+          "fetchedAt": "2026-10-21T15:10:15.886181+00:00",
+          "responseReceived": true,
+          "qualifiedContentReceived": true,
+          "pageTitle": "Sushi Jet Larry Uteck - Tourism Nova Scotia",
+          "contentDisposition": "relevant_source_content_not_automatic_claim_verification"
+        }
+      ],
+      "newListingApproved": false,
+      "nextAction": "Resolve the remaining specific blocker using exact current owner or authoritative operator/location evidence; do not infer unknown fields.",
+      "responseReceived": true,
+      "qualifiedContentReceived": true
+    },
+    {
+      "auditKey": "held-86790b542136",
+      "name": "Modern Orchid Asian Cuisine — Bedford",
+      "community": "West Bedford",
+      "canonicalCandidateId": null,
+      "disposition": "retain_hold",
+      "priorDecision": "hold_local_ownership_evidence",
+      "reviewedAt": "2026-10-21T15:20:19.800810+00:00",
+      "reviewMode": "bounded_source_and_prior_evidence_review",
+      "observation": "Two fresh owner/merchant pages agree 11 Bloom Lane Unit103 but disagree postcode B4B2E6 versus B4B1S8. Local ownership still not established; omit postcode when resolved.",
+      "priorReason": "Regional local brand; owner identity not established. Fresh official merchant location menu and owner reservations agree exact branch. Ordering temporarily closed at moment is not permanent closure.",
+      "sourceUrls": [
+        "https://modernorchiddartmouth.com/location/Bedford/",
+        "https://www.modernorchidbedford.ca/reservations"
+      ],
+      "sourceAttempts": [
+        {
+          "url": "https://modernorchiddartmouth.com/location/Bedford/",
+          "attemptedAt": "2026-10-21T15:10:08.268021+00:00",
+          "httpStatus": 200,
+          "finalUrl": "https://modernorchiddartmouth.com/location/Bedford/",
+          "sha256": "b9ade49240606835ad4f4cacebe8b826ec674ad4aa1760549d97b30b70af5fc5",
+          "fetchedAt": "2026-10-21T15:10:12.458890+00:00",
+          "responseReceived": true,
+          "qualifiedContentReceived": true,
+          "pageTitle": "Modern Orchid Southeast Asian Cuisine - Bedford | Asian, Thai - Bedford, Canada",
+          "contentDisposition": "relevant_source_content_not_automatic_claim_verification"
+        },
+        {
+          "url": "https://www.modernorchidbedford.ca/reservations",
+          "attemptedAt": "2026-10-21T15:10:33.546485+00:00",
+          "httpStatus": 200,
+          "finalUrl": "https://www.modernorchidbedford.ca/reservations",
+          "sha256": "2f6ea0084233a9db9e7920a575f326cbeef89ae74c397ebb5060907d20399680",
+          "fetchedAt": "2026-10-21T15:10:38.089642+00:00",
+          "responseReceived": true,
+          "qualifiedContentReceived": true,
+          "pageTitle": "Reservations | Modern Orchid BF",
+          "contentDisposition": "relevant_source_content_not_automatic_claim_verification"
+        }
+      ],
+      "newListingApproved": false,
+      "nextAction": "Resolve the remaining specific blocker using exact current owner or authoritative operator/location evidence; do not infer unknown fields.",
+      "responseReceived": true,
+      "qualifiedContentReceived": true
+    },
+    {
+      "auditKey": "held-ea800cb26269",
+      "name": "Seoul Korean Restaurant — Bedford",
+      "community": "West Bedford",
+      "canonicalCandidateId": null,
+      "disposition": "retain_hold",
+      "priorDecision": "hold-ownership",
+      "reviewedAt": "2026-10-21T15:20:19.800810+00:00",
+      "reviewMode": "bounded_source_and_prior_evidence_review",
+      "observation": "Fresh exact branch location/menu at 11 Bloom Lane Unit104, phone9024252237, full weekly hours; local ownership evidence remains unresolved. Do not confuse adjacent Modern Orchid Unit103.",
+      "priorReason": "Local restaurant website; no explicit ownership evidence located. Fresh merchant location/menu supplies exact branch address and phone. Omit postcode due source conflicts.",
+      "sourceUrls": [
+        "https://seoulkoreanbedford.com/location/",
+        "https://seoulkoreanbedford.com/menu/"
+      ],
+      "sourceAttempts": [
+        {
+          "url": "https://seoulkoreanbedford.com/location/",
+          "attemptedAt": "2026-10-21T15:10:20.715547+00:00",
+          "httpStatus": 200,
+          "finalUrl": "https://seoulkoreanbedford.com/location/",
+          "sha256": "b4a413e8201ec8825cad8f2cda34e02ff55a37ec9c7a6b31227bcdd702f17cf5",
+          "fetchedAt": "2026-10-21T15:10:27.364072+00:00",
+          "responseReceived": true,
+          "qualifiedContentReceived": true,
+          "pageTitle": "Location | Seoul Korean Restaurant (Bedford)",
+          "contentDisposition": "relevant_source_content_not_automatic_claim_verification"
+        },
+        {
+          "url": "https://seoulkoreanbedford.com/menu/",
+          "attemptedAt": "2026-10-21T15:10:21.544305+00:00",
+          "httpStatus": 200,
+          "finalUrl": "https://seoulkoreanbedford.com/menu/",
+          "sha256": "fae92fbb8a3ac4117b1d13c5ec47aa6b98f4503ad42c84f57564f0e18c437286",
+          "fetchedAt": "2026-10-21T15:10:27.943094+00:00",
+          "responseReceived": true,
+          "qualifiedContentReceived": true,
+          "pageTitle": "Menu | Seoul Korean Restaurant (Bedford)",
+          "contentDisposition": "relevant_source_content_not_automatic_claim_verification"
+        }
+      ],
+      "newListingApproved": false,
+      "nextAction": "Resolve the remaining specific blocker using exact current owner or authoritative operator/location evidence; do not infer unknown fields.",
+      "responseReceived": true,
+      "qualifiedContentReceived": true
+    },
+    {
+      "auditKey": "held-058a3bb689fe",
+      "name": "Nayya Pizza & Grill — Bedford",
+      "community": "Bedford",
+      "canonicalCandidateId": null,
+      "disposition": "retain_hold",
+      "priorDecision": "hold-current-address",
+      "reviewedAt": "2026-10-21T15:20:19.800810+00:00",
+      "reviewMode": "bounded_source_and_prior_evidence_review",
+      "observation": "Fresh owner site and ordering branch shell received. No readable exact current civic branch text or current owner resolved. Historic/brokerage address and West End orphan do not justify admission.",
+      "priorReason": "NS regional brand. Current owner not established. Owner site links current Bedford ordering branch; brokerage listing supports540Southgate but undated. Fresh ordering page is JS shell; direct current civic text still needed. Existing orphan is West End, not Bedford. /about chef names include placeholders.",
+      "sourceUrls": [
+        "https://nayyapizza.ca/",
+        "https://order.nayyapizza.ca/branch/bedford",
+        "https://twobridgesrealty.ca/3d-model/nayya-pizza/"
+      ],
+      "sourceAttempts": [
+        {
+          "url": "https://nayyapizza.ca/",
+          "attemptedAt": "2026-10-21T15:10:10.784967+00:00",
+          "httpStatus": 200,
+          "finalUrl": "https://nayyapizza.ca/",
+          "sha256": "100abb2c05f4606bdd3a204a975f048fa8b570eb04eaeb8ea00913c85311b6a9",
+          "fetchedAt": "2026-10-21T15:10:14.674823+00:00",
+          "responseReceived": true,
+          "qualifiedContentReceived": true,
+          "pageTitle": "Nayya Pizza &amp; Grill — Order from your local store",
+          "contentDisposition": "relevant_source_content_not_automatic_claim_verification"
+        },
+        {
+          "url": "https://order.nayyapizza.ca/branch/bedford",
+          "attemptedAt": "2026-10-21T15:10:14.531114+00:00",
+          "httpStatus": 200,
+          "finalUrl": "https://order.nayyapizza.ca/branch/bedford",
+          "sha256": "2e49a2d63b0a1de723a4b7010fb6d77448becb5fd1870694201c88665f8fc102",
+          "fetchedAt": "2026-10-21T15:10:19.418781+00:00",
+          "responseReceived": true,
+          "qualifiedContentReceived": false,
+          "pageTitle": "NayyaPizza App",
+          "contentDisposition": "application_shell_no_verified_business_body"
+        },
+        {
+          "url": "https://twobridgesrealty.ca/3d-model/nayya-pizza/",
+          "attemptedAt": "2026-10-21T15:10:27.359616+00:00",
+          "httpStatus": 200,
+          "finalUrl": "https://twobridgesrealty.ca/3d-model/nayya-pizza/",
+          "sha256": "413dfcf9431bf97f2370058e28b5e69fe0d005c64bc335e68824588f1e21b772",
+          "fetchedAt": "2026-10-21T15:10:31.822853+00:00",
+          "responseReceived": true,
+          "qualifiedContentReceived": true,
+          "pageTitle": "Nayya Pizza - Southgate Dr, Bedford NS - Restaurant For Sale  - $259,000 - Two Bridges Realty",
+          "contentDisposition": "relevant_source_content_not_automatic_claim_verification"
+        }
+      ],
+      "newListingApproved": false,
+      "nextAction": "Resolve the remaining specific blocker using exact current owner or authoritative operator/location evidence; do not infer unknown fields.",
+      "responseReceived": true,
+      "qualifiedContentReceived": true
+    },
+    {
+      "auditKey": "held-84762b76dd1e",
+      "name": "Tinápe Bakery & Café",
+      "community": "Bedford",
+      "canonicalCandidateId": null,
+      "disposition": "retain_hold",
+      "priorDecision": "hold_local_ownership_evidence",
+      "reviewedAt": "2026-10-21T15:20:19.800810+00:00",
+      "reviewMode": "bounded_source_and_prior_evidence_review",
+      "observation": "Fresh owner-participating RootedTale interview names Sundy Gernale and Sharon De Leon; publisher homepage testimonial confirms participation. JSON-LD gives 72 Gary Martin Dr, Bedford B4B1H3. Local family-operation evidence is meaningful; remaining blocker is independently current owner operation/location corroboration, not absence of owner names.",
+      "priorReason": "Firsthand founder interview with Sundy Gernale and Sharon DeLeon on local storyteller RootedTale; testimonial on storyteller homepage confirms owner participation. Interview identifies local cafe; current Skip merchant menu offers sandwiches and cafe food. Interview HTTP200 receipt7363f412c0e1. No owner domain identified.",
+      "sourceUrls": [
+        "https://www.rootedtale.com/story/tinape",
+        "https://www.rootedtale.com/",
+        "https://www.skipthedishes.com/tinape"
+      ],
+      "sourceAttempts": [
+        {
+          "url": "https://www.rootedtale.com/story/tinape",
+          "attemptedAt": "2026-10-21T15:10:38.647025+00:00",
+          "httpStatus": 200,
+          "finalUrl": "https://www.rootedtale.com/story/tinape",
+          "sha256": "cb7f73c671f31aa5a6604aced2521c26580bac708bfd4c4528a8bf2350ce7756",
+          "fetchedAt": "2026-10-21T15:10:43.320977+00:00",
+          "responseReceived": true,
+          "qualifiedContentReceived": true,
+          "pageTitle": "Tinápe Bakery Café - Halifax&#x27;s First Filipino Bakery | Rooted Tale",
+          "contentDisposition": "relevant_source_content_not_automatic_claim_verification"
+        },
+        {
+          "url": "https://www.rootedtale.com/",
+          "attemptedAt": "2026-10-21T15:10:38.091220+00:00",
+          "httpStatus": 200,
+          "finalUrl": "https://www.rootedtale.com/",
+          "sha256": "48901c106a81f3fb49f379d944181810a2c2be7d20a3ee04086e4fd081a04fe8",
+          "fetchedAt": "2026-10-21T15:10:42.318967+00:00",
+          "responseReceived": true,
+          "qualifiedContentReceived": true,
+          "pageTitle": "Rooted Tale | Stories of Nova Scotia&#x27;s Local Businesses &amp; Makers",
+          "contentDisposition": "relevant_source_content_not_automatic_claim_verification"
+        }
+      ],
+      "newListingApproved": false,
+      "nextAction": "Resolve the remaining specific blocker using exact current owner or authoritative operator/location evidence; do not infer unknown fields.",
+      "responseReceived": true,
+      "qualifiedContentReceived": true
+    },
+    {
+      "auditKey": "held-fc19c933f19d",
+      "name": "JUKAI Japanese & Thai — West Bedford",
+      "community": "West Bedford",
+      "canonicalCandidateId": null,
+      "disposition": "retain_hold",
+      "priorDecision": "hold-official-branch",
+      "reviewedAt": "2026-10-21T15:20:19.800810+00:00",
+      "reviewMode": "bounded_source_and_prior_evidence_review",
+      "observation": "Official legislative recognition supports 2024 West Bedford branch and chef, not current branch operation. Current merchant and local visit remain corroboration; no current owner branch address receipt verified.",
+      "priorReason": "Nova Scotia Legislature March22,2024 recognized Jan2024 second location and chefSam. Current merchant menu and local2025 firsthand visit substantiate branch. www.jukairestaurant.com only lists Dartmouth49KingsWharf; do not reuse that address/hours.",
+      "sourceUrls": [
+        "https://nslegislature.ca/sites/default/files/pdfs/proceedings/hansard/64-1/h106mar22.pdf",
+        "https://www.skipthedishes.com/jukai-restaurant-ella-ln/bento-combo",
+        "https://parkviewnews.ca/2025/12/bedford-west-plazas-has-it-all/"
+      ],
+      "sourceAttempts": [
+        {
+          "url": "https://nslegislature.ca/sites/default/files/pdfs/proceedings/hansard/64-1/h106mar22.pdf",
+          "attemptedAt": "2026-10-21T15:10:12.459321+00:00",
+          "httpStatus": 200,
+          "finalUrl": "https://nslegislature.ca/sites/default/files/pdfs/proceedings/hansard/64-1/h106mar22.pdf",
+          "sha256": "c9d18807ec825a4a0db647d29bdacdcf68d18ee2dee8a3217f6405312028b71e",
+          "fetchedAt": "2026-10-21T15:10:18.906969+00:00",
+          "responseReceived": true,
+          "qualifiedContentReceived": true,
+          "pageTitle": "",
+          "contentDisposition": "relevant_historical_document_not_current_operation"
+        },
+        {
+          "url": "https://parkviewnews.ca/2025/12/bedford-west-plazas-has-it-all/",
+          "attemptedAt": "2026-10-21T15:10:15.231151+00:00",
+          "error": "HTTP Error 503: Service Unavailable",
+          "responseReceived": false,
+          "qualifiedContentReceived": false,
+          "contentDisposition": "fetch_failed_no_content"
+        }
+      ],
+      "newListingApproved": false,
+      "nextAction": "Resolve the remaining specific blocker using exact current owner or authoritative operator/location evidence; do not infer unknown fields.",
+      "responseReceived": true,
+      "qualifiedContentReceived": true
+    },
+    {
+      "auditKey": "held-d1db398cbb3d",
+      "name": "Taquitos Cocina de México",
+      "community": "West Bedford",
+      "canonicalCandidateId": null,
+      "disposition": "retain_hold",
+      "priorDecision": "hold-official-branch",
+      "reviewedAt": "2026-10-21T15:20:19.800810+00:00",
+      "reviewMode": "bounded_source_and_prior_evidence_review",
+      "observation": "Fresh January2026 owner interview supports local ownership and financial stress, not closure. No fresh direct owner branch-address evidence verified; remain held.",
+      "priorReason": "Owner Daniela Alonso interviewed by CityNews Jan8,2026. Current merchant menu and2025 local firsthand visit; Jan2026 financial stress is not closure. Owner social needs current address verification.",
+      "sourceUrls": [
+        "https://halifax.citynews.ca/2026/01/08/halifax-area-eatery-turns-to-social-media-to-avoid-bankruptcy/",
+        "https://www.doordash.com/store/taquitos-cocina-de-m%C3%A9xico-bedford-27959370",
+        "https://parkviewnews.ca/2025/12/bedford-west-plazas-has-it-all/"
+      ],
+      "sourceAttempts": [
+        {
+          "url": "https://halifax.citynews.ca/2026/01/08/halifax-area-eatery-turns-to-social-media-to-avoid-bankruptcy/",
+          "attemptedAt": "2026-10-21T15:10:05.358606+00:00",
+          "httpStatus": 200,
+          "finalUrl": "https://halifax.citynews.ca/2026/01/08/halifax-area-eatery-turns-to-social-media-to-avoid-bankruptcy/",
+          "sha256": "2e4285dd9db07c563df3f3131417cc728b771414f8b5e888a63d83cb821d7a2d",
+          "fetchedAt": "2026-10-21T15:10:11.507992+00:00",
+          "responseReceived": true,
+          "qualifiedContentReceived": true,
+          "pageTitle": "Halifax-area eatery turns to social media to avoid bankruptcy",
+          "contentDisposition": "relevant_source_content_not_automatic_claim_verification"
+        },
+        {
+          "url": "https://parkviewnews.ca/2025/12/bedford-west-plazas-has-it-all/",
+          "attemptedAt": "2026-10-21T15:10:15.231151+00:00",
+          "error": "HTTP Error 503: Service Unavailable",
+          "responseReceived": false,
+          "qualifiedContentReceived": false,
+          "contentDisposition": "fetch_failed_no_content"
+        }
+      ],
+      "newListingApproved": false,
+      "nextAction": "Resolve the remaining specific blocker using exact current owner or authoritative operator/location evidence; do not infer unknown fields.",
+      "responseReceived": true,
+      "qualifiedContentReceived": true
+    },
+    {
+      "auditKey": "held-feea9d9169b3",
+      "name": "Goldey’s Crispy Chicken",
+      "community": "West Bedford",
+      "canonicalCandidateId": null,
+      "disposition": "retain_hold",
+      "priorDecision": "hold-ownership",
+      "reviewedAt": "2026-10-21T15:20:19.800810+00:00",
+      "reviewMode": "bounded_source_and_prior_evidence_review",
+      "observation": "Fresh official location/menu received. North America franchise solicitation is not itself nonlocal ownership, but current local ownership remains unverified.",
+      "priorReason": "Site solicits North America franchises; current local ownership not established. Fresh official site exact branch and menu. ",
+      "sourceUrls": [
+        "https://goldeys.ca/"
+      ],
+      "sourceAttempts": [
+        {
+          "url": "https://goldeys.ca/",
+          "attemptedAt": "2026-10-21T15:10:03.406716+00:00",
+          "httpStatus": 200,
+          "finalUrl": "https://goldeys.ca/",
+          "sha256": "979f13036917163404dff0d30c4853dacdb32cb64927fa2b39b61418cb68f05f",
+          "fetchedAt": "2026-10-21T15:10:08.267097+00:00",
+          "responseReceived": true,
+          "qualifiedContentReceived": true,
+          "pageTitle": "Goldeys crispy chicken",
+          "contentDisposition": "relevant_source_content_not_automatic_claim_verification"
+        }
+      ],
+      "newListingApproved": false,
+      "nextAction": "Resolve the remaining specific blocker using exact current owner or authoritative operator/location evidence; do not infer unknown fields.",
+      "responseReceived": true,
+      "qualifiedContentReceived": true
+    },
+    {
+      "auditKey": "held-fe7d22d0060b",
+      "name": "Sou’Wester in the City",
+      "community": "Bedford",
+      "canonicalCandidateId": null,
+      "disposition": "retain_hold",
+      "priorDecision": "hold-successor",
+      "reviewedAt": "2026-10-21T15:20:19.800810+00:00",
+      "reviewMode": "bounded_source_and_prior_evidence_review",
+      "observation": "Official homepage/contact returned503. Successor relationship to catalog Patrons remains unproved. Do not duplicate same suite/phone or infer Peggy’s Cove family ownership.",
+      "priorReason": "Do not infer Peggys Cove family ownership from name. Official cached contact/menus current restaurant and golf simulators. Likely successor to catalog Patrons same suite/phone; explicit transition evidence required before rename/add. Fresh503.",
+      "sourceUrls": [
+        "https://souwesterinthecity.ca/",
+        "https://souwesterinthecity.ca/contact/"
+      ],
+      "sourceAttempts": [
+        {
+          "url": "https://souwesterinthecity.ca/",
+          "attemptedAt": "2026-10-21T15:10:26.440111+00:00",
+          "error": "HTTP Error 503: Service Unavailable",
+          "responseReceived": false,
+          "qualifiedContentReceived": false,
+          "contentDisposition": "fetch_failed_no_content"
+        },
+        {
+          "url": "https://souwesterinthecity.ca/contact/",
+          "attemptedAt": "2026-10-21T15:10:26.460234+00:00",
+          "error": "HTTP Error 503: Service Unavailable",
+          "responseReceived": false,
+          "qualifiedContentReceived": false,
+          "contentDisposition": "fetch_failed_no_content"
+        }
+      ],
+      "newListingApproved": false,
+      "nextAction": "Resolve the remaining specific blocker using exact current owner or authoritative operator/location evidence; do not infer unknown fields.",
+      "responseReceived": false,
+      "qualifiedContentReceived": false
+    },
+    {
+      "auditKey": "held-ee8a088bfa70",
+      "name": "Shajeela’s Kitchen",
+      "community": "Bedford",
+      "canonicalCandidateId": null,
+      "disposition": "retain_hold",
+      "priorDecision": "hold-status",
+      "reviewedAt": "2026-10-21T15:20:19.800810+00:00",
+      "reviewMode": "bounded_source_and_prior_evidence_review",
+      "observation": "Official domain returned HTTP200 with a 195-byte Site Unavailable HTML body, not current restaurant content. Earlier owner menu/address evidence and third-party closure conflict remain unresolved. Do not declare active or closed.",
+      "priorReason": "Site describes chefs ShajeelaSubair and MohammedSubair Halifax journey; not explicit current owners. Official site still menu/address; third-party July2026 closure conflicts. Do not declare open or closed until resolved.",
+      "sourceUrls": [
+        "https://shajeelaskitchen.ca/",
+        "https://es.restaurantguru.com/Shajeelas-Kitchen-Bedford-Nova-Scotia"
+      ],
+      "sourceAttempts": [
+        {
+          "url": "https://shajeelaskitchen.ca/",
+          "attemptedAt": "2026-10-21T15:10:23.815643+00:00",
+          "httpStatus": 200,
+          "finalUrl": "https://shajeelaskitchen.ca/",
+          "sha256": "5b131ca14aa96311d3432b0062c7443d3b0e6346ec279bd376a75f0a76bcd5d7",
+          "fetchedAt": "2026-10-21T15:10:27.088409+00:00",
+          "responseReceived": true,
+          "qualifiedContentReceived": false,
+          "pageTitle": "Site Unavailable",
+          "contentDisposition": "error_or_suspension_body"
+        }
+      ],
+      "newListingApproved": false,
+      "nextAction": "Resolve the remaining specific blocker using exact current owner or authoritative operator/location evidence; do not infer unknown fields.",
+      "responseReceived": true,
+      "qualifiedContentReceived": false
+    },
+    {
+      "auditKey": "held-5f400fb857cd",
+      "name": "Lëvantic Bakery & Café",
+      "community": "Bedford",
+      "canonicalCandidateId": null,
+      "disposition": "retain_hold",
+      "priorDecision": "hold-ownership-current-address",
+      "reviewedAt": "2026-10-21T15:20:19.800810+00:00",
+      "reviewMode": "bounded_source_and_prior_evidence_review",
+      "observation": "Fresh linked Linktree and Square shell received. No readable owner civic-address/current ownership resolution. Do not label Hammonds Plains merely from nearby geography.",
+      "priorReason": "Local ownership not verified. Official linktree links Square ordering, bread schedule and map; social mirrors show2026activity. Bedford not Hammonds Plains. novascotiavacation.ca is NOT official Nova Scotia tourism authority.",
+      "sourceUrls": [
+        "https://linktr.ee/levanticbakery",
+        "https://levantic.square.site/"
+      ],
+      "sourceAttempts": [
+        {
+          "url": "https://linktr.ee/levanticbakery",
+          "attemptedAt": "2026-10-21T15:10:07.221534+00:00",
+          "httpStatus": 200,
+          "finalUrl": "https://linktr.ee/levanticbakery",
+          "sha256": "12f9dc10ddd354ab32f5145ad478a9db389474f0a3d093a2bf1b66a9dbff55d1",
+          "fetchedAt": "2026-10-21T15:10:12.050709+00:00",
+          "responseReceived": true,
+          "qualifiedContentReceived": true,
+          "pageTitle": "levanticbakery Restaurant - Visit to Find Food Options &amp; See levanticbakery Social Media &amp; Official Accounts | Linktree",
+          "contentDisposition": "relevant_source_content_not_automatic_claim_verification"
+        },
+        {
+          "url": "https://levantic.square.site/",
+          "attemptedAt": "2026-10-21T15:10:05.686590+00:00",
+          "httpStatus": 200,
+          "finalUrl": "https://levantic.square.site/",
+          "sha256": "dac8100651dbbb29ec16635ecbfaf359a5e85a46d683100caee3fd6b9f6e1d34",
+          "fetchedAt": "2026-10-21T15:10:11.272079+00:00",
+          "responseReceived": true,
+          "qualifiedContentReceived": false,
+          "pageTitle": "",
+          "contentDisposition": "application_shell_no_verified_business_body"
+        }
+      ],
+      "newListingApproved": false,
+      "nextAction": "Resolve the remaining specific blocker using exact current owner or authoritative operator/location evidence; do not infer unknown fields.",
+      "responseReceived": true,
+      "qualifiedContentReceived": true
+    },
+    {
+      "auditKey": "held-7a7f2ddc9135",
+      "name": "Peppertoni’s Pizza",
+      "community": "Hammonds Plains",
+      "canonicalCandidateId": null,
+      "disposition": "retain_hold",
+      "priorDecision": "hold-official-address",
+      "reviewedAt": "2026-10-21T15:20:19.800810+00:00",
+      "reviewMode": "bounded_source_and_prior_evidence_review",
+      "observation": "Official domain403 and ordering503. Community partner roster received but cannot replace owner civic address. No bypass/retry or order submission.",
+      "priorReason": "Local pizzeria described by VillageTaphouse; direct current owner evidence pending. Officialdomain redirects Moduurn ordering; Oct14,2026 BayTreasureChest communitypartner list supports current business. Owner ordering browserJS required to verify exact civic address directly.",
+      "sourceUrls": [
+        "https://www.peppertonispizza.ca/",
+        "https://peppertonispizza.moduurn.com/",
+        "https://baytreasurechest.ca/"
+      ],
+      "sourceAttempts": [
+        {
+          "url": "https://www.peppertonispizza.ca/",
+          "attemptedAt": "2026-10-21T15:10:36.104390+00:00",
+          "error": "HTTP Error 403: Forbidden",
+          "responseReceived": false,
+          "qualifiedContentReceived": false,
+          "contentDisposition": "fetch_failed_no_content"
+        },
+        {
+          "url": "https://peppertonispizza.moduurn.com/",
+          "attemptedAt": "2026-10-21T15:10:17.057120+00:00",
+          "error": "HTTP Error 503: Service Unavailable",
+          "responseReceived": false,
+          "qualifiedContentReceived": false,
+          "contentDisposition": "fetch_failed_no_content"
+        },
+        {
+          "url": "https://baytreasurechest.ca/",
+          "attemptedAt": "2026-10-21T15:09:59.120211+00:00",
+          "httpStatus": 200,
+          "finalUrl": "https://baytreasurechest.ca/",
+          "sha256": "de3186cdb10ace1492c416776da4ad416d549d12d856115b184b7df23d43085b",
+          "fetchedAt": "2026-10-21T15:10:08.382734+00:00",
+          "responseReceived": true,
+          "qualifiedContentReceived": true,
+          "pageTitle": "Bay Treasure Chest",
+          "contentDisposition": "relevant_source_content_not_automatic_claim_verification"
+        }
+      ],
+      "newListingApproved": false,
+      "nextAction": "Resolve the remaining specific blocker using exact current owner or authoritative operator/location evidence; do not infer unknown fields.",
+      "responseReceived": true,
+      "qualifiedContentReceived": true
+    },
+    {
+      "auditKey": "held-19f0a40ce70e",
+      "name": "Szechuan Restaurant",
+      "community": "Bedford",
+      "canonicalCandidateId": null,
+      "disposition": "retain_hold",
+      "priorDecision": "hold_local_ownership_evidence",
+      "reviewedAt": "2026-10-21T15:20:19.800810+00:00",
+      "reviewMode": "bounded_source_and_prior_evidence_review",
+      "observation": "Fresh official service page received; no local ownership resolution. Unusual overnight schedule remains unaccepted without clear interpretation.",
+      "priorReason": "Official exact address and service verified; ownership evidence not established. Owner hours also contain an unusual 02:00 closing needing clarification.",
+      "sourceUrls": [
+        "https://www.szechuanrestaurant.ca/"
+      ],
+      "sourceAttempts": [
+        {
+          "url": "https://www.szechuanrestaurant.ca/",
+          "attemptedAt": "2026-10-21T15:10:38.903368+00:00",
+          "httpStatus": 200,
+          "finalUrl": "https://www.szechuanrestaurant.ca/",
+          "sha256": "add479890a06f2176a631d28d0cefda1d523c51f4303c36fa100d529f20a3117",
+          "fetchedAt": "2026-10-21T15:10:44.232401+00:00",
+          "responseReceived": true,
+          "qualifiedContentReceived": true,
+          "pageTitle": "Szechuan Restaurant",
+          "contentDisposition": "relevant_source_content_not_automatic_claim_verification"
+        }
+      ],
+      "newListingApproved": false,
+      "nextAction": "Resolve the remaining specific blocker using exact current owner or authoritative operator/location evidence; do not infer unknown fields.",
+      "responseReceived": true,
+      "qualifiedContentReceived": true
+    },
+    {
+      "auditKey": "held-0509b8a5d1d2",
+      "name": "Atithi Indian Restaurant",
+      "community": "Bedford",
+      "canonicalCandidateId": null,
+      "disposition": "retain_hold",
+      "priorDecision": "hold_local_ownership_evidence",
+      "reviewedAt": "2026-10-21T15:20:19.800810+00:00",
+      "reviewMode": "bounded_source_and_prior_evidence_review",
+      "observation": "Fresh official site/merchant shell received. Placeholder text and Happy Hours heading prevent using advertised schedule as verified weekly opening hours; ownership still unresolved.",
+      "priorReason": "Official site and merchant branch list Bedford but local ownership evidence remains unverified. Do not reuse inconsistent directory phone or placeholder menu descriptions.",
+      "sourceUrls": [
+        "https://atithihalifax.com/",
+        "https://www.clover.com/online-ordering/atithi-indian-restaurant-bedford"
+      ],
+      "sourceAttempts": [
+        {
+          "url": "https://atithihalifax.com/",
+          "attemptedAt": "2026-10-21T15:09:59.118696+00:00",
+          "httpStatus": 200,
+          "finalUrl": "https://atithihalifax.com/",
+          "sha256": "52dca96bf6174297fc17c0925204b5ad692c9df5717a5aeba5377346801dd85c",
+          "fetchedAt": "2026-10-21T15:10:08.593332+00:00",
+          "responseReceived": true,
+          "qualifiedContentReceived": true,
+          "pageTitle": "Atithi Indian Restaurant &#8211; Atithi Indian Restaurant",
+          "contentDisposition": "relevant_source_content_not_automatic_claim_verification"
+        },
+        {
+          "url": "https://www.clover.com/online-ordering/atithi-indian-restaurant-bedford",
+          "attemptedAt": "2026-10-21T15:10:27.381679+00:00",
+          "httpStatus": 200,
+          "finalUrl": "https://www.clover.com/online-ordering/atithi-indian-restaurant-bedford",
+          "sha256": "095c2c3b8ceb1efc496dbdbecfa787492690449250e8db7d6df02e78fe6c11ab",
+          "fetchedAt": "2026-10-21T15:10:33.255580+00:00",
+          "responseReceived": true,
+          "qualifiedContentReceived": false,
+          "pageTitle": "Online Ordering | Clover",
+          "contentDisposition": "application_shell_no_verified_business_body"
+        }
+      ],
+      "newListingApproved": false,
+      "nextAction": "Resolve the remaining specific blocker using exact current owner or authoritative operator/location evidence; do not infer unknown fields.",
+      "responseReceived": true,
+      "qualifiedContentReceived": true
+    },
+    {
+      "auditKey": "held-734cc413cc0d",
+      "name": "Martha’s Pizza II – Bedford",
+      "community": "Bedford",
+      "canonicalCandidateId": null,
+      "disposition": "retain_hold",
+      "priorDecision": "hold_current_owner_source",
+      "reviewedAt": "2026-10-21T15:20:19.800810+00:00",
+      "reviewMode": "bounded_source_and_prior_evidence_review",
+      "observation": "Owner domain503. Provincial tourism fetched; prior owner interview remains historical. No fresh owner-location receipt, so hold retained.",
+      "priorReason": "Local ownership interview and exact 746 Bedford Highway directory listing found; owner website returned503, so no fresh accepted owner-location receipt.",
+      "sourceUrls": [
+        "https://huddle.today/2023/07/18/marthas-pizza-ii-opening-in-downtown-halifax/",
+        "https://novascotia.com/listing/marthas-pizza-ii/",
+        "https://www.marthaspizza2.com/"
+      ],
+      "sourceAttempts": [
+        {
+          "url": "https://huddle.today/2023/07/18/marthas-pizza-ii-opening-in-downtown-halifax/",
+          "attemptedAt": "2026-10-21T15:10:05.626188+00:00",
+          "error": "HTTP Error 403: Forbidden",
+          "responseReceived": false,
+          "qualifiedContentReceived": false,
+          "contentDisposition": "fetch_failed_no_content"
+        },
+        {
+          "url": "https://novascotia.com/listing/marthas-pizza-ii/",
+          "attemptedAt": "2026-10-21T15:10:11.272454+00:00",
+          "httpStatus": 200,
+          "finalUrl": "https://novascotia.com/listing/marthas-pizza-ii/",
+          "sha256": "c4f57a9e26388a478947da916b7c8fb48a1ced489f281f9d09ab75db64dd1cb2",
+          "fetchedAt": "2026-10-21T15:10:17.055945+00:00",
+          "responseReceived": true,
+          "qualifiedContentReceived": true,
+          "pageTitle": "Martha&#039;s Pizza II - Tourism Nova Scotia",
+          "contentDisposition": "relevant_source_content_not_automatic_claim_verification"
+        },
+        {
+          "url": "https://www.marthaspizza2.com/",
+          "attemptedAt": "2026-10-21T15:10:32.909905+00:00",
+          "error": "HTTP Error 503: Service Unavailable",
+          "responseReceived": false,
+          "qualifiedContentReceived": false,
+          "contentDisposition": "fetch_failed_no_content"
+        }
+      ],
+      "newListingApproved": false,
+      "nextAction": "Resolve the remaining specific blocker using exact current owner or authoritative operator/location evidence; do not infer unknown fields.",
+      "responseReceived": true,
+      "qualifiedContentReceived": true
+    },
+    {
+      "auditKey": "held-bcb691b7267d",
+      "name": "Bedford Neighbourhood Pub",
+      "community": "Bedford",
+      "canonicalCandidateId": null,
+      "disposition": "retain_hold",
+      "priorDecision": "hold_current_owner_source",
+      "reviewedAt": "2026-10-21T15:20:19.800810+00:00",
+      "reviewMode": "bounded_source_and_prior_evidence_review",
+      "observation": "Direct owner domain503, web reader content marked crawled two days earlier. Cached owner names/address/hours not relabeled freshly received. Landlord dining directory fetched.",
+      "priorReason": "Cached official page provides local owners and1658Bedford address; both direct host variants returned503. Keep unconfirmed fresh fields unpublished.",
+      "sourceUrls": [
+        "https://bedfordhood.com/",
+        "https://bedfordplacemall.com/dining.php"
+      ],
+      "sourceAttempts": [
+        {
+          "url": "https://bedfordhood.com/",
+          "attemptedAt": "2026-10-21T15:09:59.121045+00:00",
+          "error": "HTTP Error 503: Service Unavailable",
+          "responseReceived": false,
+          "qualifiedContentReceived": false,
+          "contentDisposition": "fetch_failed_no_content"
+        },
+        {
+          "url": "https://bedfordplacemall.com/dining.php",
+          "attemptedAt": "2026-10-21T15:09:59.123198+00:00",
+          "httpStatus": 200,
+          "finalUrl": "https://bedfordplacemall.com/dining.php",
+          "sha256": "7b4a33b2926d03405d463a96e5024b79dbc80811a9977a91a3e77a83be0bef64",
+          "fetchedAt": "2026-10-21T15:10:10.782727+00:00",
+          "responseReceived": true,
+          "qualifiedContentReceived": true,
+          "pageTitle": "Shopping, Groceries, Home Improvements | Bedford, Sackville | Bedford Place Mall",
+          "contentDisposition": "relevant_source_content_not_automatic_claim_verification"
+        }
+      ],
+      "newListingApproved": false,
+      "nextAction": "Resolve the remaining specific blocker using exact current owner or authoritative operator/location evidence; do not infer unknown fields.",
+      "responseReceived": true,
+      "qualifiedContentReceived": true
+    },
+    {
+      "auditKey": "held-ff091d51c12c",
+      "name": "Sakura Sushi House",
+      "community": "Bedford",
+      "canonicalCandidateId": null,
+      "disposition": "retain_hold",
+      "priorDecision": "hold_current_operation",
+      "reviewedAt": "2026-10-21T15:20:19.800810+00:00",
+      "reviewMode": "bounded_source_and_prior_evidence_review",
+      "observation": "RANS503; no fresh owner operation evidence. Merchant DNU string alone is not a closure declaration.",
+      "priorReason": "RANS records1475BedfordSuite111 but merchant result is marked DNU. Neither proves current closure or reopening.",
+      "sourceUrls": [
+        "https://rans.ca/restaurants/sakura-sushi-house-22/",
+        "https://www.skipthedishes.com/sakura-sushi-house?version=v2"
+      ],
+      "sourceAttempts": [
+        {
+          "url": "https://rans.ca/restaurants/sakura-sushi-house-22/",
+          "attemptedAt": "2026-10-21T15:10:19.409052+00:00",
+          "error": "HTTP Error 503: Service Unavailable",
+          "responseReceived": false,
+          "qualifiedContentReceived": false,
+          "contentDisposition": "fetch_failed_no_content"
+        }
+      ],
+      "newListingApproved": false,
+      "nextAction": "Resolve the remaining specific blocker using exact current owner or authoritative operator/location evidence; do not infer unknown fields.",
+      "responseReceived": false,
+      "qualifiedContentReceived": false
+    },
+    {
+      "auditKey": "held-0ea6dd512cc3",
+      "name": "Lemon Tree – Bedford",
+      "community": "Bedford",
+      "canonicalCandidateId": null,
+      "disposition": "retain_hold",
+      "priorDecision": "hold_current_owner_branch",
+      "reviewedAt": "2026-10-21T15:20:19.800810+00:00",
+      "reviewMode": "bounded_source_and_prior_evidence_review",
+      "observation": "Owner-style merchant domain403 this pass. Prior branch/Queen Street boilerplate and conflicting phones remain unresolved.",
+      "priorReason": "Merchant source lists805Bedford but also contains QueenStreet boilerplate and conflicting phone in independent directories. Current branch/local ownership reconciliation still needed.",
+      "sourceUrls": [
+        "https://lemontree-bedford.com/"
+      ],
+      "sourceAttempts": [
+        {
+          "url": "https://lemontree-bedford.com/",
+          "attemptedAt": "2026-10-21T15:10:05.631433+00:00",
+          "error": "HTTP Error 403: Forbidden",
+          "responseReceived": false,
+          "qualifiedContentReceived": false,
+          "contentDisposition": "fetch_failed_no_content"
+        }
+      ],
+      "newListingApproved": false,
+      "nextAction": "Resolve the remaining specific blocker using exact current owner or authoritative operator/location evidence; do not infer unknown fields.",
+      "responseReceived": false,
+      "qualifiedContentReceived": false
+    },
+    {
+      "auditKey": "held-4205233ab03e",
+      "name": "Tacoland – Bedford",
+      "community": "Bedford",
+      "canonicalCandidateId": null,
+      "disposition": "retain_hold",
+      "priorDecision": "hold_current_owner_branch",
+      "reviewedAt": "2026-10-21T15:20:19.800810+00:00",
+      "reviewMode": "bounded_source_and_prior_evidence_review",
+      "observation": "Fresh landlord dining directory received. Tenant listing alone does not resolve exact current owner branch and local eligibility.",
+      "priorReason": "Current landlord dining list and merchant service at1658Bedford are discovery evidence; precise owner branch and local eligibility remain unverified.",
+      "sourceUrls": [
+        "https://bedfordplacemall.com/dining.php"
+      ],
+      "sourceAttempts": [
+        {
+          "url": "https://bedfordplacemall.com/dining.php",
+          "attemptedAt": "2026-10-21T15:09:59.123198+00:00",
+          "httpStatus": 200,
+          "finalUrl": "https://bedfordplacemall.com/dining.php",
+          "sha256": "7b4a33b2926d03405d463a96e5024b79dbc80811a9977a91a3e77a83be0bef64",
+          "fetchedAt": "2026-10-21T15:10:10.782727+00:00",
+          "responseReceived": true,
+          "qualifiedContentReceived": true,
+          "pageTitle": "Shopping, Groceries, Home Improvements | Bedford, Sackville | Bedford Place Mall",
+          "contentDisposition": "relevant_source_content_not_automatic_claim_verification"
+        }
+      ],
+      "newListingApproved": false,
+      "nextAction": "Resolve the remaining specific blocker using exact current owner or authoritative operator/location evidence; do not infer unknown fields.",
+      "responseReceived": true,
+      "qualifiedContentReceived": true
+    },
+    {
+      "auditKey": "held-f1c3e3548bcf",
+      "name": "Su & Su Kitchen",
+      "community": "Bedford",
+      "canonicalCandidateId": null,
+      "disposition": "retain_hold",
+      "priorDecision": "hold_current_owner_branch",
+      "reviewedAt": "2026-10-21T15:20:19.800810+00:00",
+      "reviewMode": "bounded_source_and_prior_evidence_review",
+      "observation": "Fresh landlord dining directory received. No exact current owner-operated food-service evidence independently resolved.",
+      "priorReason": "Current landlord dining list identifies mall tenant, but exact current owner-operated food service has not been independently reviewed.",
+      "sourceUrls": [
+        "https://bedfordplacemall.com/dining.php"
+      ],
+      "sourceAttempts": [
+        {
+          "url": "https://bedfordplacemall.com/dining.php",
+          "attemptedAt": "2026-10-21T15:09:59.123198+00:00",
+          "httpStatus": 200,
+          "finalUrl": "https://bedfordplacemall.com/dining.php",
+          "sha256": "7b4a33b2926d03405d463a96e5024b79dbc80811a9977a91a3e77a83be0bef64",
+          "fetchedAt": "2026-10-21T15:10:10.782727+00:00",
+          "responseReceived": true,
+          "qualifiedContentReceived": true,
+          "pageTitle": "Shopping, Groceries, Home Improvements | Bedford, Sackville | Bedford Place Mall",
+          "contentDisposition": "relevant_source_content_not_automatic_claim_verification"
+        }
+      ],
+      "newListingApproved": false,
+      "nextAction": "Resolve the remaining specific blocker using exact current owner or authoritative operator/location evidence; do not infer unknown fields.",
+      "responseReceived": true,
+      "qualifiedContentReceived": true
+    }
+  ],
+  "evidenceDefinitions": {
+    "responseReceived": "HTTP200 response bytes only, including error pages or shells. Not fresh business evidence.",
+    "qualifiedContentReceived": "Relevant source body passed title, redirect, shell and identity gates. Does not establish current operation, ownership, hours or admissibility unless separately supported in observation.",
+    "reviewedAt": "Audit time, not a replacement for original evidence observation time."
+  }
+}

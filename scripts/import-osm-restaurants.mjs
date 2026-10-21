@@ -1,9 +1,18 @@
 import { isLocalRestaurantRecord } from "./lib/local-restaurant-policy.mjs";
 
-const scope = {
-  name: "Halifax peninsula, Dartmouth, Armdale, Fairview, and immediately surrounding areas",
-  bbox: { south: 44.575, west: -63.69, north: 44.705, east: -63.505 }
-};
+const { readFile } = await import("node:fs/promises");
+const manifest = JSON.parse(await readFile(new URL("../data/regional-discovery-scope.json", import.meta.url), "utf8"));
+const areaId = process.env.OSM_DISCOVERY_AREA || "urban-core";
+const scope = manifest.osm.areas.find(area => area.id === areaId);
+if (!scope) throw new Error(`Unknown named OSM discovery area: ${areaId}`);
+// The plan is inspectable offline. It is never proof that the area was collected.
+if (process.argv.includes("--plan")) {
+  console.log(JSON.stringify({area:scope, accessState:manifest.osm.accessState, reason:manifest.osm.reason, networkAttempted:false}, null, 2));
+  process.exit(0);
+}
+if (manifest.osm.accessState !== "allowed") throw new Error(`OSM discovery not attempted: ${manifest.osm.accessState}. ${manifest.osm.reason}`);
+// Regional results need a separate reviewed merge, not replacement of core IDs.
+if (areaId !== "urban-core") throw new Error("Regional discovery is plan-only until a reviewed additive snapshot merger is available; accepted core snapshot is preserved.");
 
 const amenityTypes = {
   restaurant: "Restaurant",
