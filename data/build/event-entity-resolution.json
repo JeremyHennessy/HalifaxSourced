@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-21T01:45:49.527Z",
+  "generatedAt": "2026-10-21T18:35:11.467Z",
   "eventCount": 172,
   "venueResolved": 124,
   "organizerResolved": 150,
@@ -129,17 +129,6 @@
       "restaurantBasis": null
     },
     {
-      "eventId": "alderney-gate-library-events-0571ecacc32ac0c5",
-      "title": "Dartmouth Open Writing Group",
-      "sourceId": "alderney-gate-library-events",
-      "venueId": "alderney-gate-library",
-      "venueBasis": "source_id",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
       "eventId": "maritime-museum-peggys-cove-talk-2026-10-20",
       "title": "Beyond Peggy's Cove: Discovering Nova Scotia's Remarkable Places",
       "sourceId": "maritime-museum-atlantic-2026",
@@ -147,72 +136,6 @@
       "venueBasis": null,
       "organizerId": null,
       "organizerBasis": null,
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "woodlawn-library-events-ad90892c20ed33cf",
-      "title": "Food Gathers Us: Exploring Mi'kmaq Cuisine with Simon…",
-      "sourceId": "woodlawn-library-events",
-      "venueId": "woodlawn-library",
-      "venueBasis": "source_id",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "woodlawn-library-events-57c6e6227d9864f5",
-      "title": "Baby's First Books",
-      "sourceId": "woodlawn-library-events",
-      "venueId": "woodlawn-library",
-      "venueBasis": "source_id",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "bedford-library-events-7369b9d730c65757",
-      "title": "Puppet Show: Too Much Noise on Halloween Night",
-      "sourceId": "bedford-library-events",
-      "venueId": "bedford-library",
-      "venueBasis": "source_id",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "bedford-library-events-c5deb8d79109a155",
-      "title": "Community Crafters",
-      "sourceId": "bedford-library-events",
-      "venueId": "bedford-library",
-      "venueBasis": "source_id",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "woodlawn-library-events-58d94e740ac62a68",
-      "title": "Movie: Practical Magic",
-      "sourceId": "woodlawn-library-events",
-      "venueId": "woodlawn-library",
-      "venueBasis": "source_id",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "alderney-gate-library-events-cdd13ad828d88f34",
-      "title": "Craft Club: Paper Pocket Folio",
-      "sourceId": "alderney-gate-library-events",
-      "venueId": "alderney-gate-library",
-      "venueBasis": "source_id",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
       "restaurantId": null,
       "restaurantBasis": null
     },
@@ -262,7 +185,7 @@
     },
     {
       "eventId": "alderney-gate-library-events-dd528c059fc415a5",
-      "title": "Meet Juno, a St. John Ambulance Therapy Dog Meet Juno, a St. John Ambulance Therapy Dog",
+      "title": "Meet Juno, a St. John Ambulance Therapy Dog",
       "sourceId": "alderney-gate-library-events",
       "venueId": "alderney-gate-library",
       "venueBasis": "source_id",
@@ -294,10 +217,43 @@
       "restaurantBasis": null
     },
     {
+      "eventId": "alderney-gate-library-events-4c5a519841422d6c",
+      "title": "Welcome Housing & Support Drop-in Clinic",
+      "sourceId": "alderney-gate-library-events",
+      "venueId": "alderney-gate-library",
+      "venueBasis": "source_id",
+      "organizerId": "halifax-public-libraries",
+      "organizerBasis": "source_name_token",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
+      "eventId": "alderney-gate-library-events-5f9b68d62afcb556",
+      "title": "Newcomer English Language Learning Group",
+      "sourceId": "alderney-gate-library-events",
+      "venueId": "alderney-gate-library",
+      "venueBasis": "source_id",
+      "organizerId": "halifax-public-libraries",
+      "organizerBasis": "source_name_token",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
       "eventId": "woodlawn-library-events-246e9e11fc736c47",
       "title": "Tinkering Toddlers",
       "sourceId": "woodlawn-library-events",
       "venueId": "woodlawn-library",
+      "venueBasis": "source_id",
+      "organizerId": "halifax-public-libraries",
+      "organizerBasis": "source_name_token",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
+      "eventId": "alderney-gate-library-events-4f632108aaec88d2",
+      "title": "Tinkering Toddlers",
+      "sourceId": "alderney-gate-library-events",
+      "venueId": "alderney-gate-library",
       "venueBasis": "source_id",
       "organizerId": "halifax-public-libraries",
       "organizerBasis": "source_name_token",
@@ -415,6 +371,28 @@
       "restaurantBasis": null
     },
     {
+      "eventId": "woodlawn-library-events-99b128229833461f",
+      "title": "Family Drop-in",
+      "sourceId": "woodlawn-library-events",
+      "venueId": "woodlawn-library",
+      "venueBasis": "source_id",
+      "organizerId": "halifax-public-libraries",
+      "organizerBasis": "source_name_token",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
+      "eventId": "bedford-library-events-1025ea0d8b163ffb",
+      "title": "PD Day: Halloween Haunt Party",
+      "sourceId": "bedford-library-events",
+      "venueId": "bedford-library",
+      "venueBasis": "source_id",
+      "organizerId": "halifax-public-libraries",
+      "organizerBasis": "source_name_token",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
       "eventId": "halifax-convention-centre-829d5bb440393848",
       "title": "CANS 2026 Award Gala",
       "sourceId": "halifax-convention-centre",
@@ -422,6 +400,28 @@
       "venueBasis": "source_id",
       "organizerId": "halifax-convention-centre",
       "organizerBasis": "source_id",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
+      "eventId": "bedford-library-events-8613f26616226661",
+      "title": "Cookies & Computers",
+      "sourceId": "bedford-library-events",
+      "venueId": "bedford-library",
+      "venueBasis": "source_id",
+      "organizerId": "halifax-public-libraries",
+      "organizerBasis": "source_name_token",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
+      "eventId": "woodlawn-library-events-2d52b0ef2b118f54",
+      "title": "Kids' Club",
+      "sourceId": "woodlawn-library-events",
+      "venueId": "woodlawn-library",
+      "venueBasis": "source_id",
+      "organizerId": "halifax-public-libraries",
+      "organizerBasis": "source_name_token",
       "restaurantId": null,
       "restaurantBasis": null
     },
@@ -468,6 +468,28 @@
       "organizerBasis": "source_id",
       "restaurantId": "osm-node-771690675-the-carleton",
       "restaurantBasis": "exact_venue_place_name"
+    },
+    {
+      "eventId": "woodlawn-library-events-99798233783b6b4a",
+      "title": "No One Fights Alone: Cancer Support",
+      "sourceId": "woodlawn-library-events",
+      "venueId": "woodlawn-library",
+      "venueBasis": "source_id",
+      "organizerId": "halifax-public-libraries",
+      "organizerBasis": "source_name_token",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
+      "eventId": "woodlawn-library-events-781108694489a263",
+      "title": "Books & Blocks",
+      "sourceId": "woodlawn-library-events",
+      "venueId": "woodlawn-library",
+      "venueBasis": "source_id",
+      "organizerId": "halifax-public-libraries",
+      "organizerBasis": "source_name_token",
+      "restaurantId": null,
+      "restaurantBasis": null
     },
     {
       "eventId": "the-carleton-20aad502c22e9ce6",
@@ -1874,28 +1896,6 @@
       "venueBasis": null,
       "organizerId": "symphony-nova-scotia",
       "organizerBasis": "source_id",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "alderney-gate-library-events-4c5a519841422d6c",
-      "title": "Welcome Housing & Support Drop-in Clinic",
-      "sourceId": "alderney-gate-library-events",
-      "venueId": "alderney-gate-library",
-      "venueBasis": "source_id",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "woodlawn-library-events-99b128229833461f",
-      "title": "Family Drop-in",
-      "sourceId": "woodlawn-library-events",
-      "venueId": "woodlawn-library",
-      "venueBasis": "source_id",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
       "restaurantId": null,
       "restaurantBasis": null
     }
