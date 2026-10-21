@@ -441,6 +441,17 @@ window.HALIFAX_RESTAURANT_CORRECTIONS = {
       "evidenceSha256": "5df19ec3388e78605747279495b365cf495f691f58c3be6b3d3b5319609706be",
       "reviewState": "verified",
       "claim": "The previously linked twoifbyseacafe.ca domain currently serves unrelated Two Sea Fish Market content rather than the Dartmouth cafe. Quarantine this website only; do not infer that the cafe is closed. A similarly named replacement remains unverified and is not substituted."
+    },
+    {
+      "restaurantId": "osm-way-671922221-mckelvie-s",
+      "fields": {
+        "website": "https://www.mckelvies.ca/"
+      },
+      "sourceUrl": "https://www.mckelvies.ca/",
+      "observedAt": "2026-10-21T00:51:30Z",
+      "reviewedAt": "2026-10-21T00:51:30Z",
+      "reviewState": "verified",
+      "claim": "Owner homepage identifies McKelvie’s restaurant at 1680 Lower Water Street, Halifax, matching the existing canonical location and reviewed photo. Set the official website rather than treating an OpenStreetMap source record as an owner site. No other fields or historic evidence clocks changed."
     }
   ],
   "aliases": [

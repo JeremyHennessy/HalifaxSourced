@@ -226,7 +226,8 @@ function enrichRestaurant(restaurant) {
   const eventLinks = signalLinks(signal, "events");
   const reservationLinks = signalLinks(signal, "reservations");
   const structuredRestaurantEvents = structuredEventsByRestaurant.get(restaurant.id) || [];
-  const website = safeUrl(restaurant.website) || safeUrl(signal?.website) || (restaurant.sources || []).map((s) => safeUrl(s.url)).find(Boolean) || null;
+  // Evidence sources (maps, directories, news) are not automatically an official business website.
+  const website = safeUrl(restaurant.website) || safeUrl(signal?.website) || null;
   const score = Number.isFinite(restaurant.qualityScore) ? restaurant.qualityScore : sourceCoverageScore(restaurant, signal, inspections);
   const active = isRestaurantActive(restaurant);
   return {

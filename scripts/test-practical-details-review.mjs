@@ -43,3 +43,12 @@ const picnic=app.find(r=>r.id==='labour-day-picnic-cafe-glen-haven');assert(picn
 console.log('New locations preserve uncertain fields; dated McKelvie photo renders creator, direct license, and modification disclosure.');
 
 assert.equal(tibs.hasReservation,false);assert.deepEqual(tibs.structuredFeatures,[]);
+
+assert.equal(app.find(r=>r.id==='osm-way-671922221-mckelvie-s').website,'https://www.mckelvies.ca/');
+for(const url of ['https://www.openstreetmap.org/node/123','https://example.com/news/restaurant']) {
+ context.sourceFixture={id:'source-only-fixture',name:'Source-only fixture',sources:[{type:'directory',url}]};
+ const enriched=JSON.parse(vm.runInContext('JSON.stringify(enrichRestaurant(sourceFixture))',context));
+ assert.equal(enriched.website,null,'An evidence source must not become an Official site action');
+ assert.equal(enriched.sources[0].url,url,'Keep the evidence link available as a source');
+}
+console.log('Official website actions require explicit website evidence; map/news sources remain source links.');
