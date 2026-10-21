@@ -41,3 +41,11 @@ The event and source-expansion replacement lanes use `codex/promote-city-events-
 Manual promotion dispatch has a `dry_run` option that runs read-only reconciliation and preserves its plan artifact while skipping the entire mutation job. Verify actual live queue decisions after this configuration reaches tested main before claiming a lane is operational. Rotation is not approval of source facts and does not merge or deploy generated previews.
 
 Closing obsolete drafts 122 and 131 remains pending explicit owner confirmation. They are still open and therefore still reserve the affected lanes, including their replacements. Tested lane configuration alone is not operational recovery.
+
+## Closure and bounded pin follow-up — 21 October, 17:58 UTC
+
+Owner-authorized closure of obsolete drafts 122 and 131 completed at 17:56 UTC. Both remain unmerged; their preserved branch heads match the exact SHA values above. A read-only coordinator evaluation at 17:58 UTC reports the events, source-expansion and social lanes ready. This is queue eligibility, not an executed promotion or newly published source data. The next scheduled city-event producer is nominally 18:23 UTC; its completion can trigger reconciliation, subject to GitHub scheduling and existing guards.
+
+A four-page robots-permitted owner-source review recovers one previously overlooked explicit map marker: Izzy’s Bagel Co., 1180 Bedford Highway. The owner’s Squarespace location object names the exact business/address and supplies markerLat/markerLng, rather than only map viewport coordinates. Its freshly fetched body hash matches the earlier receipt. The coordinate review is new; existing hours, ownership and operation clocks remain unchanged. Eleven of the original twelve missing pins remain unresolved; all 43 discovery leads remain held.
+
+Makhani’s Sunday “12 am”, Resto’s meridiem-free hour strings and True North’s ambiguous opening meridiem remain unaccepted. No guessed noon, evening close or current service inference was introduced. No denied source was retried, and no image rights or Meta access changed.

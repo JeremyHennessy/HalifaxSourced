@@ -861,5 +861,55 @@
       "coordinateReview": "No explicit owner target coordinate pair located. Reject map viewport/address-search coordinates; keep null."
     }
   ],
-  "baselineCommit": "879a4fb72bee1a6091ad1b85a6d42c3753fae745"
+  "baselineCommit": "879a4fb72bee1a6091ad1b85a6d42c3753fae745",
+  "followupReviews": [
+    {
+      "reviewedAt": "2026-10-21T17:58:37.758966+00:00",
+      "scope": "Four owner pages checked; one previously missing map pin verified. No admissions, hours changes or media approval. Earlier audit remains historical.",
+      "remainingMissingPins": 11,
+      "records": [
+        {
+          "id": "izzys-bagel-bedford",
+          "disposition": "publish_verified_coordinate",
+          "evidence": {
+            "status": "verified",
+            "value": {
+              "lat": 44.7222574,
+              "lon": -63.6713184
+            },
+            "sourceUrls": [
+              "https://izzysbagel.com/"
+            ],
+            "observedAt": "2026-10-21T17:58:37.758966+00:00",
+            "observation": "Owner Squarespace location object explicitly pairs markerLat 44.7222574 and markerLng -63.67131840000002 with Izzy’s Bagel Co., 1180 Bedford Hwy, Bedford, NS B4A 1C1, Canada. Marker fields, not map viewport fields, supply this pin. This is previously overlooked source evidence; the fresh body hash matches the earlier receipt.",
+            "method": "owner_explicit_location_marker",
+            "successfulSourceReceipts": [
+              {
+                "url": "https://izzysbagel.com/",
+                "fetchedAt": "2026-10-21T17:58:37.758966+00:00",
+                "httpStatus": 200,
+                "sha256": "b3eed1595bdd4f183f5979d40f80929b89cca62f7524c6c4c2b654fc5b94f66d"
+              }
+            ],
+            "freshContentReceived": true
+          }
+        },
+        {
+          "id": "makhani-bistro-bedford",
+          "disposition": "retain_hours_hold",
+          "reason": "Owner Sunday 12 am remains ambiguous; no noon substitution."
+        },
+        {
+          "id": "resto-urban-dining-bedford",
+          "disposition": "retain_hours_hold",
+          "reason": "Owner hour strings omit meridiem; not inferred."
+        },
+        {
+          "id": "true-north-diner-bedford",
+          "disposition": "retain_hours_hold",
+          "reason": "Owner 8:30-7:30 PM text does not explicitly establish opening meridiem."
+        }
+      ]
+    }
+  ]
 }

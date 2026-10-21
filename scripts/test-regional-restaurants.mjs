@@ -129,3 +129,12 @@ assert.deepEqual(heldDisposition.records.map(row=>row.name).sort(),regional.held
 assert(heldDisposition.records.every(row=>row.disposition==='retain_hold'&&row.newListingApproved===false));
 assert(!JSON.stringify(heldDisposition).includes('/workspace/'),'Published audit must not leak local work paths');
 for(const row of heldDisposition.records)for(const receipt of row.sourceAttempts||[])if(/suspendedpage|unavailable/i.test(receipt.finalUrl||''))assert.notEqual(receipt.qualifiedContentReceived,true);
+
+// Exact owner marker, not a guessed centroid or map viewport.
+const izzyPin=regional.accepted.find(row=>row.id==='izzys-bagel-bedford').publishedFields;
+assert.deepEqual(izzyPin.coordinates,{lat:44.7222574,lon:-63.6713184});
+assert.equal(izzyPin.fieldEvidence.coordinates.method,'owner_explicit_location_marker');
+assert.equal(izzyPin.fieldEvidence.coordinates.successfulSourceReceipts[0].sha256,'b3eed1595bdd4f183f5979d40f80929b89cca62f7524c6c4c2b654fc5b94f66d');
+assert.equal(izzyPin.openingHoursVerifiedAt,'2026-10-21T13:10:10.538180+00:00','Pin review must not refresh hours evidence');
+assert.equal(browser.find(row=>row.id==='resto-urban-dining-bedford').openingHours,null);
+assert.equal(browser.find(row=>row.id==='true-north-diner-bedford').openingHours,null);

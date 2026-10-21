@@ -8523,13 +8523,26 @@ window.HALIFAX_DISCOVERED_RESTAURANTS = [
     "contactScope": null,
     "fieldEvidence": {
       "coordinates": {
-        "status": "unknown",
+        "status": "verified",
+        "value": {
+          "lat": 44.7222574,
+          "lon": -63.6713184
+        },
         "sourceUrls": [
-          "https://izzysbagel.com/",
-          "https://nslegislature.ca/sites/default/files/pdfs/proceedings/hansard/61-5/h13apr15.pdf"
+          "https://izzysbagel.com/"
         ],
-        "observedAt": "2026-10-21T13:10:10.538180+00:00",
-        "observation": "Not sufficiently verified in this bounded review; no inferred value published."
+        "observedAt": "2026-10-21T17:58:37.758966+00:00",
+        "observation": "Owner Squarespace location object explicitly pairs markerLat 44.7222574 and markerLng -63.67131840000002 with Izzy’s Bagel Co., 1180 Bedford Hwy, Bedford, NS B4A 1C1, Canada. Marker fields, not map viewport fields, supply this pin. This is previously overlooked source evidence; the fresh body hash matches the earlier receipt.",
+        "method": "owner_explicit_location_marker",
+        "successfulSourceReceipts": [
+          {
+            "url": "https://izzysbagel.com/",
+            "fetchedAt": "2026-10-21T17:58:37.758966+00:00",
+            "httpStatus": 200,
+            "sha256": "b3eed1595bdd4f183f5979d40f80929b89cca62f7524c6c4c2b654fc5b94f66d"
+          }
+        ],
+        "freshContentReceived": true
       },
       "hours": {
         "status": "verified",
@@ -8640,7 +8653,10 @@ window.HALIFAX_DISCOVERED_RESTAURANTS = [
       "observedAt": "2026-10-21T13:10:10.538180+00:00"
     },
     "openingStatus": null,
-    "coordinates": null,
+    "coordinates": {
+      "lat": 44.7222574,
+      "lon": -63.6713184
+    },
     "socialProfiles": [],
     "summary": "Izzy’s Bagel Co. serves Bedford at 1180 Bedford Highway.",
     "specials": [],
@@ -8664,7 +8680,7 @@ window.HALIFAX_DISCOVERED_RESTAURANTS = [
     "discoveryReview": {
       "approvedByOverride": true,
       "sourceLeadObserved": false,
-      "reviewNote": "Holiday hours must be confirmed separately. No complete sandwich menu or exact coordinate pin has been verified."
+      "reviewNote": "Holiday hours must be confirmed separately. No complete sandwich menu has been verified."
     }
   },
   {
